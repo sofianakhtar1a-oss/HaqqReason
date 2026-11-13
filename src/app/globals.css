@@ -1083,9 +1083,11 @@ a.dossier:focus-visible {
   padding: 0.4rem;
   border-radius: 1rem;
   border: 1px solid var(--trait);
-  background: color-mix(in srgb, var(--fond) 82%, transparent);
+  /* Opaque : la barre passe au-dessus du texte pendant le défilement, elle doit rester nette. */
+  background: color-mix(in srgb, var(--fond) 96%, var(--encre) 4%);
   backdrop-filter: blur(18px) saturate(140%);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
+  box-shadow: 0 0.75rem 1.5rem -1rem rgba(0, 0, 0, 0.55);
 }
 .barre-separateur {
   width: 1px;
@@ -3179,4 +3181,73 @@ a.carte-lien:hover .carte-lien-lecture {
   margin-top: 0.2rem;
   color: var(--encre-douce);
   font-size: 0.9375rem;
+}
+
+/* ---------- Phase 10 : barre d'outils toujours à portée, poubelle sur les blocs ---------- */
+.zone-ecriture {
+  position: relative;
+}
+/* Rien ne doit rogner la barre collante : un overflow sur un ancêtre la décrocherait. */
+.zone-ecriture,
+.zone-ecriture > * {
+  overflow: visible;
+}
+.bloc-poubelle {
+  position: absolute;
+  z-index: 25;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.35rem;
+  border-radius: 0.65rem;
+  border: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 92%, var(--encre) 8%);
+  color: var(--encre-douce);
+  box-shadow: 0 0.5rem 1rem -0.5rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.bloc-poubelle:hover,
+.bloc-poubelle:focus-visible {
+  border-color: var(--danger);
+  color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 12%, var(--fond));
+}
+@media (pointer: coarse) {
+  /* Au doigt, la poubelle flottante gêne plus qu'elle n'aide : le panneau du bloc suffit. */
+  .bloc-poubelle {
+    display: none;
+  }
+}
+
+/*
+ * Colonne de réglages de l'éditeur : elle reste à l'écran et défile pour elle-même.
+ * Sans hauteur limitée, un panneau plus haut que la fenêtre finissait par remonter
+ * avec la page et obligeait à faire l'aller-retour.
+ */
+@media (min-width: 64rem) {
+  .colonne-reglages {
+    position: sticky;
+    top: 1.5rem;
+    max-height: calc(100vh - 3rem);
+    overflow-y: auto;
+    /* La molette s'arrête au bas du panneau au lieu d'emporter la page. */
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+    padding-right: 0.3rem;
+  }
+  .colonne-reglages::-webkit-scrollbar {
+    width: 0.55rem;
+  }
+  .colonne-reglages::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--encre) 22%, transparent);
+  }
+  .colonne-reglages::-webkit-scrollbar-thumb:hover {
+    background: color-mix(in srgb, var(--encre) 38%, transparent);
+  }
+  .colonne-reglages::-webkit-scrollbar-track {
+    background: transparent;
+  }
 }

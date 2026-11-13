@@ -243,6 +243,7 @@ Le thème clair reprend les mêmes teintes, assombries pour rester lisibles sur 
   - **Paramètres** : déconnexion automatique (5 minutes à 8 heures), durée maximale d'une session, session liée à l'appareil, taille maximale des fichiers.
   - **Sécurité** : session liée au navigateur, renvoi à l'accueil de toute adresse du créateur sans session, cookie périmé effacé.
 - **Phase 9 — Recherche par le sens** ✔ : vecteurs par morceau d'article, indexation automatique et incrémentale, page Outils avec avancement, encadré « Articles proches par le sens » quand les mots ne suffisent pas, bouton « Je n'ai pas trouvé ma réponse » qui remonte le sujet au créateur, limites de dépense par visiteur, interrupteur dans les Paramètres.
+- **Phase 10 — Confort d'écriture** ✔ : barre d'outils collée en haut pendant toute la descente de l'article (la barre et le texte partagent le même conteneur), et poubelle au survol de chaque bloc, qui supprime exactement le nœud visé (chaque apparence est reliée à son type) sans rien ajouter au document. La colonne de réglages est collante, bornée à la hauteur de la fenêtre et dotée de son propre défilement (`overscroll-behavior: contain`), pour que les deux colonnes se parcourent indépendamment.
 - **Mise en ligne** ✔ : guide pas à pas `docs/GUIDE-MISE-EN-LIGNE.md` (Supabase, Vercel, installation Android, Play Store).
 
 **Évolutions possibles ensuite** :

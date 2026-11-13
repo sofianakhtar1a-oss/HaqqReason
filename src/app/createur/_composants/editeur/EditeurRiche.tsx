@@ -19,6 +19,7 @@ import { BarreOutils } from "./BarreOutils";
 import { actionsSpeciales } from "./commandes";
 import { ListeSlash, MenuSlash } from "./MenuSlash";
 import { MenuBulle } from "./MenuBulle";
+import { OutilsBloc } from "./OutilsBloc";
 import { PanneauBloc } from "./PanneauBloc";
 import { VueCitationOuvrage, VueLienCarte, VueLogique, VueReference, VueSchema, VueSommaire, VueSophisme } from "./VuesBlocs";
 import { creerApercu } from "../../apercu-actions";
@@ -93,6 +94,7 @@ export function EditeurRiche({ article, visibilite, enLigne, actions }: Props) {
   const [mots, setMots] = useState(() => compterMots(texteDuDocument(article.contenu)));
   const [changementStatut, setChangementStatut] = useState(false);
   const [envoiEnCours, setEnvoiEnCours] = useState("");
+  const zoneEcriture = useRef<HTMLDivElement>(null);
   const choixImage = useRef<HTMLInputElement>(null);
   const choixPdf = useRef<HTMLInputElement>(null);
   const collerRef = useRef<(e: ClipboardEvent) => boolean>(() => false);
@@ -412,9 +414,14 @@ export function EditeurRiche({ article, visibilite, enLigne, actions }: Props) {
           placeholder="Le chapeau de l'article : de quelques phrases à plusieurs paragraphes. Affiché sous le titre, et en deux lignes dans les listes."
         />
 
-        <div className="mt-6">{editor && <BarreOutils editor={editor} />}</div>
-        <div className="mt-4">
-          <EditorContent editor={editor} />
+        {/* La barre et le texte partagent le même parent : la barre peut ainsi rester
+            collée en haut pendant toute la descente de l'article. */}
+        <div className="zone-ecriture mt-6" ref={zoneEcriture}>
+          {editor && <BarreOutils editor={editor} />}
+          <div className="mt-4">
+            <EditorContent editor={editor} />
+          </div>
+          {editor && <OutilsBloc editor={editor} conteneur={zoneEcriture} />}
         </div>
         {editor && <MenuBulle editor={editor} />}
         <input ref={choixImage} type="file" accept="image/jpeg,image/png,image/webp,image/gif" className="hidden" onChange={(e) => { void insererFichier(e.target.files?.[0], "image"); e.target.value = ""; }} />
@@ -481,7 +488,7 @@ export function EditeurRiche({ article, visibilite, enLigne, actions }: Props) {
         </div>
       </div>
 
-      <aside className="space-y-4 lg:sticky lg:top-6" aria-label="Réglages de l'article">
+      <aside className="colonne-reglages space-y-4" aria-label="Réglages de l'article">
         <section className="verre panneau space-y-4" aria-labelledby="titre-statut">
           <div className="flex items-center justify-between gap-3">
             <h2 id="titre-statut" className="text-lg font-bold">

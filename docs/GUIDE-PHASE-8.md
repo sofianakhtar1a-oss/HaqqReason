@@ -59,3 +59,15 @@ Deux conséquences à connaître :
 **Ce qui protégeait déjà le site, et qui reste en place :** mot de passe à 12 caractères minimum vérifié contre les fuites connues, double authentification, clé de récupération, blocage après plusieurs tentatives, cookie `httpOnly` + `SameSite=Strict` + préfixe `__Host-`, Content-Security-Policy avec nonce, en-têtes de sécurité (HSTS, nosniff, anti-cadre), règles de sécurité au niveau de la base (RLS) qui empêchent le public de lire un brouillon, stockage de fichiers privé, journal de sécurité et alerte en cas de connexion depuis un appareil inconnu.
 
 **Ce qu'aucun réglage ne remplace :** un mot de passe unique, la double authentification activée, et la clé de récupération notée sur papier.
+
+## Ajout : confort d'écriture
+
+**La barre d'outils suit le texte.** Elle reste collée en haut de l'écran pendant que tu descends dans l'article : plus besoin de remonter pour mettre un mot en gras ou insérer un bloc.
+
+**Une poubelle sur chaque bloc.** Passe la souris sur un encadré, un verset, un hadith, un schéma, une carte de lien ou une table des matières : une petite poubelle apparaît en haut à droite. Un clic, le bloc disparaît.
+
+À savoir : supprimer un encadré supprime aussi ce qu'il contient, puisque le contenu est à l'intérieur. Pour ne retirer que l'encadré en gardant le texte, sors d'abord le texte, ou utilise l'historique des versions pour revenir en arrière.
+
+Sur téléphone, la poubelle flottante ne s'affiche pas (elle gênerait la frappe) : sélectionne le bloc, le panneau de droite propose « Supprimer ce bloc ».
+
+**La colonne de droite défile pour elle-même.** Les réglages (Publication, bloc en cours, Navigation, Aperçu…) restent à l'écran quand tu descends dans l'article. Si cette colonne est plus haute que l'écran, la molette, souris posée dessus, la fait défiler sans bouger le texte — et inversement, la molette sur le texte ne déplace plus les réglages.
