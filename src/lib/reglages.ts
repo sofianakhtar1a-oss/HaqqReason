@@ -13,6 +13,8 @@ export type Reglages = {
   lier_appareil: boolean;
   /** Taille maximale d'un fichier envoyé (Mo). */
   taille_max_mo: number;
+  /** Proposer aux lecteurs les articles proches par le sens. */
+  recherche_sens: boolean;
 };
 
 export const REGLAGES_PAR_DEFAUT: Reglages = {
@@ -20,6 +22,7 @@ export const REGLAGES_PAR_DEFAUT: Reglages = {
   session_max_heures: 12,
   lier_appareil: true,
   taille_max_mo: 50,
+  recherche_sens: true,
 };
 
 /** Choix proposés dans la page Paramètres. Toute autre valeur est refusée par le serveur. */
@@ -37,6 +40,7 @@ export const LIBELLES: Record<keyof Reglages, string> = {
   session_max_heures: "Durée maximale d'une session",
   lier_appareil: "Session liée à l'appareil",
   taille_max_mo: "Taille maximale d'un fichier",
+  recherche_sens: "Recherche par le sens",
 };
 
 export function libelleDuree(minutes: number): string {
@@ -66,5 +70,6 @@ export function nettoyerReglages(brut: unknown): Reglages {
     session_max_heures: dansLaListe(o.session_max_heures, CHOIX.session_max_heures, REGLAGES_PAR_DEFAUT.session_max_heures),
     lier_appareil: o.lier_appareil === undefined ? REGLAGES_PAR_DEFAUT.lier_appareil : o.lier_appareil === true || o.lier_appareil === "true" || o.lier_appareil === "on",
     taille_max_mo: dansLaListe(o.taille_max_mo, CHOIX.taille_max_mo, REGLAGES_PAR_DEFAUT.taille_max_mo),
+    recherche_sens: o.recherche_sens === undefined ? REGLAGES_PAR_DEFAUT.recherche_sens : o.recherche_sens === true || o.recherche_sens === "true" || o.recherche_sens === "on",
   };
 }

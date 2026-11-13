@@ -2,6 +2,7 @@
 
 import { Bookmark, Check, ChevronDown, ChevronRight, LoaderCircle, Minus, RotateCcw, Search, Trash2 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { ParLeSens, PasTrouve } from "@/components/recherche/ParLeSens";
 import { CarteResultat } from "@/components/ResultatRecherche";
 import {
   memoriserRecherche,
@@ -518,6 +519,13 @@ export function RechercheAvancee({ criteres, premiers, filtres }: Props) {
           {erreur && <p className="message message-erreur mt-4">Vérifie que le fichier 005_recherche.sql a bien été exécuté dans Supabase, puis réessaie.</p>}
           {chaine && total === 0 && !erreur && !chargement && (
             <p className="mt-3 text-encre-douce">Essaie un mot plus court, retire un filtre, ou vérifie l&apos;orthographe.</p>
+          )}
+          {/* Quand les mots ne suffisent pas, on cherche par le sens : même sujet, autres mots. */}
+          {q.trim().length >= 3 && !erreur && !chargement && (total === 0 || approchants) && (
+            <>
+              <ParLeSens question={q} actif />
+              <PasTrouve question={q} />
+            </>
           )}
           <ul className="mt-5 grid gap-3">
             {resultats.map((r) => (

@@ -18,7 +18,7 @@ await db.exec(`create role anon nologin; create role authenticated nologin; crea
 // Ce que Supabase fournit d'office : le schéma « extensions » et la table des espaces de stockage.
 await db.exec(`create schema extensions; grant usage on schema extensions to anon, authenticated, service_role;
   create schema storage; create table storage.buckets (id text primary key, name text, public boolean, file_size_limit bigint, allowed_mime_types text[]);`);
-for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql"]) {
+for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql"]) {
   await db.exec(readFileSync(new URL(`../supabase/migrations/${fichier}`, import.meta.url), "utf8"));
 }
 
@@ -367,7 +367,7 @@ let refusEmpreinte = false; try { await db.exec(`update fichiers set empreinte =
 ok("empreinte de fichier contrôlée", refusEmpreinte || (await db.query(`select count(*)::int n from fichiers`)).rows[0].n === 0);
 
 // ---------------------------------------------------------------- Phase 8 : réglages
-ok("réglages : valeurs de départ en place", (await db.query(`select count(*)::int n from reglages`)).rows[0].n === 4);
+ok("réglages : valeurs de départ en place", (await db.query(`select count(*)::int n from reglages`)).rows[0].n === 5);
 ok("réglage inactivite_minutes = 30", (await db.query(`select valeur::text v from reglages where cle = 'inactivite_minutes'`)).rows[0].v === "30");
 await db.exec(`set role anon`);
 await refuse("[anon] ne voit aucun réglage", `select * from reglages`);
@@ -376,6 +376,34 @@ await db.exec(`reset role`);
 let cleRefusee = false;
 try { await db.exec(`insert into reglages (cle, valeur) values ('Clé Invalide !', '1'::jsonb)`); } catch { cleRefusee = true; }
 ok("clé de réglage contrôlée", cleRefusee);
+
+// ---------------------------------------------------------------- Phase 9 : recherche par le sens
+ok("similarité : vecteurs identiques = 1", Number((await db.query(`select public.similarite(array[0.6,0.8]::real[], array[0.6,0.8]::real[]) s`)).rows[0].s) > 0.999);
+ok("similarité : vecteurs opposés = -1", Number((await db.query(`select public.similarite(array[1,0]::real[], array[-1,0]::real[]) s`)).rows[0].s) < -0.999);
+ok("similarité : tailles différentes = 0 (pas d'erreur)", Number((await db.query(`select public.similarite(array[1,0]::real[], array[1,0,0]::real[]) s`)).rows[0].s) === 0);
+await db.exec(`
+  insert into vecteurs_articles (article_id, morceau, texte, vecteur, modele, empreinte) values
+    ('60000000-0000-0000-0000-0000000000a1', 0, 'Les signes de la prophetie', array[1,0,0,0,0,0,0,0]::real[], 'faux', repeat('a', 64)),
+    ('60000000-0000-0000-0000-0000000000a1', 1, 'Un autre passage', array[0,1,0,0,0,0,0,0]::real[], 'faux', repeat('b', 64)),
+    ('60000000-0000-0000-0000-0000000000a3', 0, 'Brouillon secret', array[1,0,0,0,0,0,0,0]::real[], 'faux', repeat('c', 64));
+`);
+const sens = (await db.query(`select id, score from rechercher_sens(array[1,0,0,0,0,0,0,0]::real[], 10, 0.2)`)).rows;
+ok("recherche par le sens : un article par résultat, meilleur morceau retenu", sens.length === 2 && Number(sens[0].score) > 0.99, JSON.stringify(sens));
+await db.exec(`set role anon`);
+const sensPublic = (await db.query(`select id from rechercher_sens(array[1,0,0,0,0,0,0,0]::real[], 10, 0.2)`)).rows;
+ok("[anon] la recherche par le sens ne remonte jamais un brouillon", sensPublic.length === 1 && sensPublic[0].id === "60000000-0000-0000-0000-0000000000a1", JSON.stringify(sensPublic));
+await refuse("[anon] ne peut pas écrire de vecteur", `insert into vecteurs_articles (article_id, morceau, texte, vecteur, modele, empreinte) values ('60000000-0000-0000-0000-0000000000a1', 9, 'x', array[1,0,0,0,0,0,0,0]::real[], 'faux', repeat('d', 64))`);
+await refuse("[anon] ne peut pas connaître l'état de l'indexation", `select * from etat_indexation()`);
+await db.exec(`reset role`);
+ok("état de l'indexation lisible par le serveur", Number((await db.query(`select morceaux from etat_indexation()`)).rows[0].morceaux) === 3);
+let vecteurRefuse = false;
+try { await db.exec(`insert into vecteurs_articles (article_id, morceau, texte, vecteur, modele, empreinte) values ('60000000-0000-0000-0000-0000000000a1', 5, 'x', array[1,0]::real[], 'faux', repeat('e', 64))`); } catch { vecteurRefuse = true; }
+ok("vecteur trop court refusé", vecteurRefuse);
+let empreinteRefusee = false;
+try { await db.exec(`insert into vecteurs_articles (article_id, morceau, texte, vecteur, modele, empreinte) values ('60000000-0000-0000-0000-0000000000a1', 6, 'x', array[1,0,0,0,0,0,0,0]::real[], 'faux', 'pas-une-empreinte')`); } catch { empreinteRefusee = true; }
+ok("empreinte de morceau contrôlée", empreinteRefusee);
+await db.exec(`delete from articles where id = '60000000-0000-0000-0000-0000000000a1'`);
+ok("les vecteurs disparaissent avec l'article", Number((await db.query(`select count(*)::int n from vecteurs_articles where article_id = '60000000-0000-0000-0000-0000000000a1'`)).rows[0].n) === 0);
 
 console.log(echecs === 0 ? "\nTous les tests SQL passent." : `\n${echecs} test(s) en échec.`);
 process.exit(echecs === 0 ? 0 : 1);

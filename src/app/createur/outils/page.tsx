@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BarChart3, BookOpen, DatabaseBackup, FileUp, Languages, LayoutTemplate, TriangleAlert } from "lucide-react";
+import { BarChart3, BookOpen, Compass, DatabaseBackup, FileUp, Languages, LayoutTemplate, TriangleAlert } from "lucide-react";
 import { FilAriane } from "@/components/FilAriane";
 import { exigerCreateur } from "@/lib/session";
 import { EnTeteCreateur } from "../_composants/EnTeteCreateur";
@@ -13,6 +13,7 @@ const OUTILS = [
   { href: "/createur/outils/sauvegardes", titre: "Sauvegardes", texte: "Exporter toute la bibliothèque, copies automatiques, restauration.", Icone: DatabaseBackup },
   { href: "/createur/qualite", titre: "Contrôle qualité", texte: "Sources manquantes, hadiths sans degré, liens cassés.", Icone: TriangleAlert },
   { href: "/createur/statistiques", titre: "Statistiques", texte: "Articles les plus lus, sujets cherchés sans résultat.", Icone: BarChart3 },
+  { href: "/createur/outils/recherche-sens", titre: "Recherche par le sens", texte: "Retrouver un article par son sujet, même avec d'autres mots.", Icone: Compass },
   { href: "/createur/synonymes", titre: "Synonymes de recherche", texte: "Relier des mots qui désignent la même chose.", Icone: Languages },
   { href: "/createur/modeles", titre: "Modèles d'articles", texte: "Tes structures d'articles réutilisables.", Icone: LayoutTemplate },
 ];

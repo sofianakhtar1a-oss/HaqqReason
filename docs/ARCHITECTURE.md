@@ -150,7 +150,16 @@ Aperçus de liens (`src/lib/apercu-lien.ts`) : la page est lue par le serveur av
 
 Sécurité des sessions : le jeton signé porte désormais la durée d'inactivité, la durée maximale et une empreinte de l'appareil (identifiant de cookie + navigateur, haché avec le secret du serveur). Un cookie recopié dans un autre navigateur ne correspond plus et n'ouvre rien. Toute requête non authentifiée vers l'espace créateur est renvoyée à l'accueil, sans conserver l'adresse demandée. Un réglage plus strict ferme les sessions ouvertes, qui portaient l'ancienne règle.
 
-`supabase/installation-complete.sql` réunit les fichiers 001 à 008 pour une nouvelle installation en une seule fois.
+**Ajouté en Phase 9** (`supabase/migrations/009_recherche_sens.sql`) :
+
+- `vecteurs_articles` : un vecteur par morceau d'article (tableau `real[]`, aucune extension requise), avec le modèle employé et l'empreinte du texte, pour ne recalculer que ce qui a changé.
+- `similarite(real[], real[])` : produit scalaire de deux vecteurs normalisés, donc leur cosinus.
+- `rechercher_sens(vecteur, limite, minimum)` : articles les plus proches, un seul par article (son meilleur morceau). Exécutée avec les droits de l'appelant : un brouillon ne remonte jamais au public.
+- `etat_indexation()` : avancement, réservé au serveur.
+
+Côté serveur, `src/lib/sens/` contient le découpage (module pur), l'appel au service d'« embeddings » (interface compatible OpenAI, interchangeable, inactif sans clé) et l'indexation. L'indexation d'un article a lieu après la réponse (`after()`) : l'écriture ne dépend jamais d'un service extérieur. La recherche par le sens n'est sollicitée que si la recherche par mots échoue, et elle est limitée par visiteur et par heure.
+
+`supabase/installation-complete.sql` réunit les fichiers 001 à 009 pour une nouvelle installation en une seule fois.
 
 ## 6. Arborescence du projet
 
@@ -233,6 +242,7 @@ Le thème clair reprend les mêmes teintes, assombries pour rester lisibles sur 
   - **Résumé** jusqu'à 6 000 caractères, avec compteur ; raccourci automatiquement dans les aperçus de partage.
   - **Paramètres** : déconnexion automatique (5 minutes à 8 heures), durée maximale d'une session, session liée à l'appareil, taille maximale des fichiers.
   - **Sécurité** : session liée au navigateur, renvoi à l'accueil de toute adresse du créateur sans session, cookie périmé effacé.
+- **Phase 9 — Recherche par le sens** ✔ : vecteurs par morceau d'article, indexation automatique et incrémentale, page Outils avec avancement, encadré « Articles proches par le sens » quand les mots ne suffisent pas, bouton « Je n'ai pas trouvé ma réponse » qui remonte le sujet au créateur, limites de dépense par visiteur, interrupteur dans les Paramètres.
 - **Mise en ligne** ✔ : guide pas à pas `docs/GUIDE-MISE-EN-LIGNE.md` (Supabase, Vercel, installation Android, Play Store).
 
 **Évolutions possibles ensuite** :

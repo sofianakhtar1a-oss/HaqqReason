@@ -79,4 +79,31 @@ ok("logique par défaut cohérente", (["validite", "demonstration", "syllogisme"
   ok("document : profondeur du sommaire bornée entre 2 et 4", NOEUDS.sommaire.profondeur(9) === 4 && NOEUDS.sommaire.profondeur(3) === 3 && NOEUDS.sommaire.profondeur("x") === 4);
 }
 
+
+// ---------------------------------------------------------------- Phase 9 : recherche par le sens
+{
+  const { decouperArticle, normaliser, vecteurValide, LIMITES_SENS } = await import("../src/lib/sens/decoupage");
+  const court = decouperArticle("Les signes de la prophétie", "Un résumé court.", "Un texte bref.");
+  ok("découpage : un article court tient en un morceau", court.length === 1 && court[0].includes("Les signes de la prophétie") && court[0].includes("Un texte bref."));
+
+  const long = decouperArticle("Titre", "Résumé", "Phrase de test. ".repeat(1200));
+  ok("découpage : un article long donne plusieurs morceaux", long.length > 1 && long.length <= LIMITES_SENS.morceaux);
+  ok("découpage : le titre n'est que dans le premier morceau", long[0].startsWith("Titre") && !long[1].includes("Titre\n"));
+  ok("découpage : aucun morceau ne dépasse la taille prévue", long.every((m) => m.length <= LIMITES_SENS.taille + 200), String(Math.max(...long.map((m) => m.length))));
+  ok("découpage : les morceaux se recouvrent un peu", long.length < 2 || long[1].length > LIMITES_SENS.recouvrement);
+  ok("découpage : un article vide ne produit que l'en-tête", decouperArticle("Titre seul", "", "").length === 1);
+
+  const n = normaliser([3, 4]);
+  ok("normalisation : longueur ramenée à 1", Math.abs(Math.hypot(...n) - 1) < 1e-9 && Math.abs(n[0] - 0.6) < 1e-9);
+  ok("normalisation : vecteur nul géré sans erreur", normaliser([0, 0]).every((x) => x === 0));
+  ok("vecteur : refuse ce qui n'en est pas un", !vecteurValide([1, 2]) && !vecteurValide(["a"]) && !vecteurValide(null) && vecteurValide(new Array(16).fill(0.1)));
+  ok("vecteur : refuse les nombres non finis", !vecteurValide([...new Array(15).fill(0.1), Number.NaN]));
+  ok("vecteur : contrôle la dimension attendue", vecteurValide(new Array(16).fill(0.1), 16) && !vecteurValide(new Array(16).fill(0.1), 32));
+}
+{
+  const { nettoyerReglages } = await import("../src/lib/reglages");
+  ok("réglages : recherche par le sens active par défaut", nettoyerReglages({}).recherche_sens === true);
+  ok("réglages : recherche par le sens désactivable", nettoyerReglages({ recherche_sens: false }).recherche_sens === false);
+}
+
 process.exit(e);

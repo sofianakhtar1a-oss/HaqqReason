@@ -23,15 +23,17 @@ export async function enregistrerReglages(_: EtatFormulaire, formData: FormData)
     session_max_heures: formData.get("session_max_heures"),
     lier_appareil: formData.get("lier_appareil"),
     taille_max_mo: formData.get("taille_max_mo"),
+    recherche_sens: formData.get("recherche_sens"),
   };
   // Toute valeur hors des listes autorisées est ramenée à l'ancienne ou à celle par défaut.
   const avant = await lireReglages();
-  const demande = nettoyerReglages({ ...brut, lier_appareil: brut.lier_appareil === "on" });
+  const demande = nettoyerReglages({ ...brut, lier_appareil: brut.lier_appareil === "on", recherche_sens: brut.recherche_sens === "on" });
   const valeurs: Reglages = {
     inactivite_minutes: CHOIX.inactivite_minutes.includes(Number(brut.inactivite_minutes) as never) ? demande.inactivite_minutes : avant.inactivite_minutes,
     session_max_heures: CHOIX.session_max_heures.includes(Number(brut.session_max_heures) as never) ? demande.session_max_heures : avant.session_max_heures,
     lier_appareil: demande.lier_appareil,
     taille_max_mo: CHOIX.taille_max_mo.includes(Number(brut.taille_max_mo) as never) ? demande.taille_max_mo : avant.taille_max_mo,
+    recherche_sens: demande.recherche_sens,
   };
 
   try {
@@ -62,6 +64,7 @@ export async function enregistrerReglages(_: EtatFormulaire, formData: FormData)
     session_max_heures: valeurs.session_max_heures,
     lier_appareil: valeurs.lier_appareil,
     taille_max_mo: valeurs.taille_max_mo,
+    recherche_sens: valeurs.recherche_sens,
   });
   revalidatePath("/createur/parametres");
   return {

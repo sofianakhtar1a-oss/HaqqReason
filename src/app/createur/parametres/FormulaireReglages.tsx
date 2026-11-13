@@ -61,6 +61,19 @@ export function FormulaireReglages({ reglages }: { reglages: Reglages }) {
       </div>
 
       <div className="reglage">
+        <label className="flex items-start gap-3">
+          <input type="checkbox" name="recherche_sens" defaultChecked={reglages.recherche_sens} className="mt-1 size-5 shrink-0 accent-[var(--accent)]" />
+          <span>
+            <span className="etiquette block">Proposer les articles proches par le sens</span>
+            <span className="reglage-aide mt-1 block">
+              Quand la recherche par mots ne donne rien, le site propose les articles qui parlent du même sujet, même sans mot commun. Demande un service
+              configuré (Outils → Recherche par le sens). Aucune réponse n&apos;est rédigée : seuls tes articles sont classés.
+            </span>
+          </span>
+        </label>
+      </div>
+
+      <div className="reglage">
         <label htmlFor="taille" className="etiquette">
           Taille maximale d&apos;un fichier
         </label>

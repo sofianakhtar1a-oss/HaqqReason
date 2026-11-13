@@ -1,6 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { after } from "next/server";
 import { redirect } from "next/navigation";
 import { journaliser } from "@/lib/audit";
 import { lireArticleAdmin, lireCategorieAdmin, type Statut } from "@/lib/contenu-admin";
@@ -12,6 +13,7 @@ import { MODELES_INTEGRES } from "@/lib/modeles-integres";
 import type { EtatFormulaire } from "@/lib/form-state";
 import { estIcone } from "@/lib/icones";
 import { extraireLiens } from "@/lib/liens";
+import { indexerArticle, oublierArticle } from "@/lib/sens/indexation";
 import { enregistrerReferences } from "@/lib/sources-donnees";
 import { sessionCreateur } from "@/lib/session";
 import { dbAdmin } from "@/lib/supabase";
@@ -58,6 +60,20 @@ function champsRecherche(contenu: unknown, etiquettes?: string[]) {
 async function majLiens(articleId: string, contenu: unknown): Promise<void> {
   await dbAdmin().rpc("enregistrer_liens", { p_source: articleId, p_cibles: extraireLiens(documentVersTexteBrut(contenu)) });
   await enregistrerReferences(articleId, contenu);
+}
+
+/**
+ * Met à jour la recherche par le sens, APRÈS la réponse : l'enregistrement de l'article
+ * ne doit jamais attendre un service extérieur, ni échouer à cause de lui.
+ */
+function majSens(articleId: string, titre: string, resume: string, texte: string): void {
+  after(async () => {
+    try {
+      await indexerArticle(articleId, titre, resume, texte);
+    } catch {
+      // Rattrapé au prochain enregistrement ou depuis la page Outils.
+    }
+  });
 }
 
 /** Rafraîchit toutes les pages après une modification (les pages sont rendues à la demande). */
@@ -368,6 +384,7 @@ export async function sauvegarderArticle(donnees: {
 
   await enregistrerEtiquettes(donnees.id, etiquettes);
   await majLiens(donnees.id, valide.document);
+  majSens(donnees.id, titre, resume, recherche.contenu_texte);
 
   if (donnees.manuel) {
     await creerVersion(donnees.id, "enregistrement");
@@ -411,6 +428,7 @@ export async function restaurerVersion(formData: FormData): Promise<void> {
     .update({ titre: version.titre, slug: slugifier(version.titre), resume: version.resume, contenu: version.contenu, ...champsRecherche(version.contenu) })
     .eq("id", version.article_id);
   await majLiens(version.article_id, version.contenu);
+  majSens(version.article_id, version.titre, version.resume, documentVersTexteBrut(version.contenu));
   await journaliser("version_restauree", { article: version.article_id, version: versionId });
   rafraichir();
   redirect(`/createur/article/${version.article_id}`);
@@ -442,6 +460,7 @@ export async function dupliquerArticle(formData: FormData): Promise<void> {
   if (!data) throw new Error("Duplication impossible.");
   await enregistrerEtiquettes(data.id, article.etiquettes);
   await majLiens(data.id, article.contenu);
+  majSens(data.id, titre, article.resume, documentVersTexteBrut(article.contenu));
   await journaliser("article_duplique", { source: id, copie: data.id });
   rafraichir();
   redirect(`/createur/article/${data.id}`);
@@ -501,6 +520,7 @@ export async function mettreArticleALaCorbeille(formData: FormData): Promise<voi
   const article = await lireArticleAdmin(id);
   if (!article) return;
   await dbAdmin().from("articles").update({ supprime_le: new Date().toISOString() }).eq("id", id);
+  await oublierArticle(id);
   await journaliser("article_mis_a_la_corbeille", { id, titre: article.titre });
   rafraichir();
   if (champ(formData, "retour") === "categorie") redirect(`/createur/categorie/${article.categorie_id}`);
@@ -510,7 +530,8 @@ export async function restaurerArticle(formData: FormData): Promise<void> {
   await exigerCreateurAction();
   const id = champ(formData, "id");
   if (!estUuid(id)) return;
-  await dbAdmin().from("articles").update({ supprime_le: null }).eq("id", id);
+  const { data: remis } = await dbAdmin().from("articles").update({ supprime_le: null }).eq("id", id).select("titre, resume, contenu_texte");
+  if (remis?.[0]) majSens(id, remis[0].titre as string, remis[0].resume as string, remis[0].contenu_texte as string);
   await journaliser("article_restaure", { id });
   rafraichir();
 }

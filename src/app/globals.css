@@ -3124,3 +3124,59 @@ a.carte-lien:hover .carte-lien-lecture {
 .reglage-resume strong {
   color: var(--encre);
 }
+
+/* ---------- Phase 9 : recherche par le sens ---------- */
+.par-le-sens {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--trait);
+  border-radius: 1.25rem;
+  background: color-mix(in srgb, var(--accent) 5%, var(--surface));
+}
+.par-le-sens-titre {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  font-weight: 700;
+}
+.par-le-sens-aide {
+  margin: 0.4rem 0 0.9rem;
+  color: var(--encre-douce);
+  font-size: 0.9375rem;
+}
+.par-le-sens-liste {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.par-le-sens-liste a {
+  display: block;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--trait);
+  border-radius: 0.9rem;
+  background: var(--fond);
+  text-decoration: none;
+}
+.par-le-sens-liste a:hover,
+.par-le-sens-liste a:focus-visible {
+  border-color: var(--accent);
+}
+.par-le-sens-article {
+  display: block;
+  font-weight: 700;
+  color: var(--encre);
+}
+.par-le-sens-resume {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-top: 0.2rem;
+  color: var(--encre-douce);
+  font-size: 0.9375rem;
+}
