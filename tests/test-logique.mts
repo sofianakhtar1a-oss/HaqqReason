@@ -106,4 +106,17 @@ ok("logique par défaut cohérente", (["validite", "demonstration", "syllogisme"
   ok("réglages : recherche par le sens désactivable", nettoyerReglages({ recherche_sens: false }).recherche_sens === false);
 }
 
+
+// ---------------------------------------------------------------- Lecteur PDF : messages d'erreur
+{
+  const { messageDouverture } = await import("../src/lib/client/pdf-erreurs");
+  const err = (name: string, message = "") => Object.assign(new Error(message), { name });
+  ok("PDF protégé : message explicite", /mot de passe/.test(messageDouverture(err("PasswordException"))));
+  ok("PDF abîmé : message explicite", /abîmé/.test(messageDouverture(err("InvalidPDFException"))));
+  ok("PDF introuvable : message explicite", /introuvable/.test(messageDouverture(err("MissingPDFException"))));
+  ok("connexion coupée : message explicite", /connexion/.test(messageDouverture(err("UnexpectedResponseException", "Failed to fetch"))));
+  ok("WebAssembly refusé : message explicite", /décoder/.test(messageDouverture(err("Error", "WebAssembly.instantiate refused"))));
+  ok("cause inconnue : message de repli utile", /télécharge/.test(messageDouverture(err("Error", "???"))));
+}
+
 process.exit(e);

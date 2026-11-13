@@ -71,3 +71,12 @@ Deux conséquences à connaître :
 Sur téléphone, la poubelle flottante ne s'affiche pas (elle gênerait la frappe) : sélectionne le bloc, le panneau de droite propose « Supprimer ce bloc ».
 
 **La colonne de droite défile pour elle-même.** Les réglages (Publication, bloc en cours, Navigation, Aperçu…) restent à l'écran quand tu descends dans l'article. Si cette colonne est plus haute que l'écran, la molette, souris posée dessus, la fait défiler sans bouger le texte — et inversement, la molette sur le texte ne déplace plus les réglages.
+
+## Correction : les PDF qui refusaient de s'ouvrir
+
+Certains PDF affichaient « Le document n'a pas pu être ouvert », en général des documents scannés. Deux causes, les deux corrigées :
+
+- Le lecteur décode certaines images (JPEG 2000, JBIG2) et les profils de couleur avec de petits modules WebAssembly. La politique de sécurité du site les refusait. Elle les autorise maintenant — uniquement WebAssembly, rien d'autre.
+- Le message était toujours le même, quelle que soit la cause. Il dit désormais ce qui se passe vraiment : document protégé par mot de passe, fichier abîmé, document introuvable, ou téléchargement interrompu par une connexion trop lente. Dans tous les cas, le bouton de téléchargement du lecteur permet d'ouvrir le document avec l'application habituelle du téléphone.
+
+Si un document résiste encore sur téléphone alors qu'il s'ouvre sur ordinateur, c'est en général sa taille : un gros scan demande beaucoup de mémoire. Le téléchargement reste la solution.

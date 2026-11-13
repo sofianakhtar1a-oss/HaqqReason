@@ -23,7 +23,11 @@ export async function proxy(request: NextRequest) {
   }
   const csp = [
     "default-src 'self'",
-    `script-src 'self' 'nonce-${nonce}' 'strict-dynamic'${dev ? " 'unsafe-eval'" : ""}`,
+    // 'wasm-unsafe-eval' : le lecteur PDF décode certaines images (JPEG 2000, JBIG2) et les
+    // profils de couleur avec des modules WebAssembly servis par l'application. Sans cette
+    // autorisation, ces documents-là refusent de s'ouvrir. Elle n'autorise QUE WebAssembly,
+    // jamais eval() ni l'exécution de code arbitraire.
+    `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'wasm-unsafe-eval'${dev ? " 'unsafe-eval'" : ""}`,
     "style-src 'self' 'unsafe-inline'",
     `img-src 'self' data: blob:${stockage}`,
     "font-src 'self' data:",

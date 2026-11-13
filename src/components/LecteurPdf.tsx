@@ -21,6 +21,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { creerAnnotation, modifierAnnotation, supprimerAnnotation, type Annotation } from "@/app/createur/fichiers-actions";
 import { COULEURS } from "@/lib/document-schema";
 import { chargerPdfjs, ouvrirPdf } from "@/lib/client/pdf";
+import { messageDouverture } from "@/lib/client/pdf-erreurs";
 import { normaliser } from "@/lib/recherche-texte";
 
 /*
@@ -42,6 +43,7 @@ type Props = {
 };
 
 const ZOOMS = [0.5, 0.75, 1, 1.25, 1.5, 2, 2.5, 3];
+
 
 export function LecteurPdf({ fichierId, nom, pageInitiale = 1, termes = [], annotations: initiales, createur = false }: Props) {
   const [documentPdf, setDocumentPdf] = useState<PDFDocumentProxy | null>(null);
@@ -84,8 +86,8 @@ export function LecteurPdf({ fichierId, nom, pageInitiale = 1, termes = [], anno
             setTailles((t) => t.map((x, j) => (j === i - 1 ? { largeur: vp.width, hauteur: vp.height } : x)));
           }
         }
-      } catch {
-        if (!annule) setErreur("Le document n'a pas pu être ouvert. Recharge la page.");
+      } catch (e) {
+        if (!annule) setErreur(messageDouverture(e));
       }
     })();
     return () => {
