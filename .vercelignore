@@ -1,0 +1,9 @@
+# Jamais envoyés vers Vercel
+.env
+.env.*
+!.env.example
+node_modules
+.next
+public/vendor
+tests
+*.zip
