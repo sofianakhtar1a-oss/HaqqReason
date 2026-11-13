@@ -1,7 +1,7 @@
 name: Installer le code
 on:
   push:
-    paths: ['source.zip']
+    paths: ['*.zip', '.github/workflows/installer.yml']
 permissions:
   contents: write
 jobs:
@@ -10,10 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: |
-          unzip -o -q source.zip
-          rm source.zip
+          shopt -s nullglob
+          for f in *.zip; do
+            unzip -o -q "$f"
+            rm "$f"
+          done
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
-          git commit -m "Code de HaqqReason"
-          git push
+          git diff --cached --quiet || (git commit -m "Mise a jour du code" && git push)
