@@ -45,4 +45,38 @@ ok("courbes : 2x^2 - 3x + 1 en 2 = 3", compiler("2x^2 - 3x + 1").f!(2) === 3 && 
 ok("courbes : expression invalide refusée", compiler("x +* 2").f === null && compiler("alert(1)").f === null);
 ok("YouTube : vidéo, court, playlist, minutage", infosYoutube("https://youtu.be/dQw4w9WgXcQ?t=1m5s")!.debut === 65 && infosYoutube("https://www.youtube.com/shorts/dQw4w9WgXcQ")!.video === "dQw4w9WgXcQ" && infosYoutube("https://www.youtube.com/playlist?list=PLabcdefghijkl")!.liste === "PLabcdefghijkl" && infosYoutube("https://example.com/watch?v=dQw4w9WgXcQ") === null);
 ok("logique par défaut cohérente", (["validite", "demonstration", "syllogisme", "coherence", "verite"] as const).every((g) => nettoyerLogique(logiqueParDefaut(g)).genre === g));
+
+// ---------------------------------------------------------------- Phase 8
+{
+  const { nettoyerReglages, CHOIX } = await import("../src/lib/reglages");
+  const r = nettoyerReglages({ inactivite_minutes: 7, session_max_heures: 999, lier_appareil: "on", taille_max_mo: 25 });
+  ok("réglages : une durée hors liste revient au défaut", r.inactivite_minutes === 30 && r.session_max_heures === 12);
+  ok("réglages : une durée de la liste est gardée", nettoyerReglages({ inactivite_minutes: 5 }).inactivite_minutes === 5);
+  ok("réglages : case cochée lue correctement", r.lier_appareil === true && nettoyerReglages({ lier_appareil: false }).lier_appareil === false);
+  ok("réglages : taille de fichier gardée", r.taille_max_mo === 25 && CHOIX.taille_max_mo.includes(50));
+}
+{
+  const { sommaireDuDocument } = await import("../src/lib/sommaire");
+  const doc = {
+    type: "doc",
+    content: [
+      { type: "heading", attrs: { level: 2 }, content: [{ type: "text", text: "Premier titre" }] },
+      { type: "sommaire", attrs: { titre: "", profondeur: 4 } },
+      { type: "heading", attrs: { level: 3 }, content: [{ type: "text", text: "Sous-titre [[Autre article|lien]]" }] },
+      { type: "paragraph", content: [{ type: "text", text: "Texte" }] },
+      { type: "heading", attrs: { level: 4 }, content: [{ type: "text", text: "Petit titre" }] },
+    ],
+  };
+  const s = sommaireDuDocument(doc);
+  ok("sommaire : un titre par entrée, dans l'ordre", s.length === 3 && s[0].id === "section-1" && s[2].id === "section-3");
+  ok("sommaire : niveaux conservés", s.map((e) => e.niveau).join(",") === "2,3,4");
+  ok("sommaire : les liens [[…]] sont remplacés par leur texte", s[1].texte === "Sous-titre lien");
+  ok("sommaire : le bloc lui-même n'est pas compté comme un titre", !s.some((e) => e.texte === ""));
+}
+{
+  const { NOEUDS } = await import("../src/lib/document-schema");
+  ok("document : le bloc sommaire est accepté", Object.hasOwn(NOEUDS, "sommaire"));
+  ok("document : profondeur du sommaire bornée entre 2 et 4", NOEUDS.sommaire.profondeur(9) === 4 && NOEUDS.sommaire.profondeur(3) === 3 && NOEUDS.sommaire.profondeur("x") === 4);
+}
+
 process.exit(e);

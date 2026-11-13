@@ -16,7 +16,10 @@ export const TYPES_FICHIERS: Record<string, { extension: string; libelle: string
   "text/plain": { extension: "txt", libelle: "Texte", famille: "document" },
 };
 
-/** 50 Mo : limite par fichier de l'offre gratuite de Supabase. */
+/**
+ * Limite de repli, utilisée avant que les réglages ne soient lus (page « Paramètres »).
+ * 50 Mo est le plafond par fichier de l'offre gratuite de Supabase.
+ */
 export const TAILLE_MAX = 50 * 1024 * 1024;
 
 /** Type déduit de l'extension (les navigateurs ne renseignent pas toujours le type). */

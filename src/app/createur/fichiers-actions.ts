@@ -5,7 +5,8 @@ import { revalidatePath } from "next/cache";
 import { journaliser } from "@/lib/audit";
 import { lireArticleAdmin, lireCategorieAdmin } from "@/lib/contenu-admin";
 import { COULEURS } from "@/lib/document-schema";
-import { signatureValide, TAILLE_MAX, TYPES_FICHIERS, typeDepuisNom } from "@/lib/fichiers";
+import { signatureValide, TYPES_FICHIERS, typeDepuisNom } from "@/lib/fichiers";
+import { lireReglages } from "@/lib/reglages-donnees";
 import { sessionCreateur } from "@/lib/session";
 import { creerLienEnvoi, lireDebut, supprimerObjets } from "@/lib/stockage";
 import { dbAdmin } from "@/lib/supabase";
@@ -49,7 +50,9 @@ export async function preparerEnvoi(donnees: {
   if (!typeMime) return { ok: false, message: `« ${nom} » : type de fichier non accepté. Formats possibles : PDF, images, Word, Excel, PowerPoint, OpenDocument, EPUB, texte.` };
   const taille = Number(donnees.taille);
   if (!Number.isFinite(taille) || taille <= 0) return { ok: false, message: `« ${nom} » est vide.` };
-  if (taille > TAILLE_MAX) return { ok: false, message: `« ${nom} » dépasse 50 Mo. Compresse-le ou découpe-le avant de l'envoyer.` };
+  const tailleMax = (await lireReglages()).taille_max_mo * 1024 * 1024;
+  if (taille > tailleMax)
+    return { ok: false, message: `« ${nom} » dépasse ${Math.round(tailleMax / (1024 * 1024))} Mo, la limite réglée dans Paramètres. Compresse-le, découpe-le, ou relève la limite.` };
 
   const existe = cible.type === "article" ? await lireArticleAdmin(cible.id) : await lireCategorieAdmin(cible.id);
   if (!existe || existe.supprime_le) return { ok: false, message: "Emplacement introuvable ou dans la corbeille." };

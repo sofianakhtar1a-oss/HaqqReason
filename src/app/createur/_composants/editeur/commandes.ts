@@ -89,6 +89,7 @@ export const COMMANDES: Commande[] = [
   { cle: "cases", libelle: "Liste de cases à cocher", description: "Points à vérifier", groupe: "Texte", motsCles: "cases cocher taches liste", appliquer: (c) => c.toggleTaskList() },
   { cle: "citation", libelle: "Citation", description: "Passage cité", groupe: "Texte", motsCles: "citation guillemets", appliquer: (c) => c.toggleBlockquote() },
   { cle: "separateur", libelle: "Séparateur", description: "Ornement entre deux parties", groupe: "Texte", motsCles: "separateur ligne ornement", appliquer: (c) => c.setHorizontalRule() },
+  { cle: "sommaire", libelle: "Table des matières", description: "La liste des titres de l'article, cliquables", groupe: "Texte", motsCles: "sommaire table matieres plan titres navigation", appliquer: (c) => c.insertContent({ type: "sommaire", attrs: { titre: "", profondeur: 4 } }) },
 
   { cle: "verset", libelle: "Verset coranique", description: "Arabe, traduction et référence", groupe: "Apologétique", motsCles: "verset coran sourate ayat arabe", appliquer: insererBloc(BLOCS.verset()) },
   { cle: "hadith", libelle: "Hadith", description: "Arabe, traduction, recueil et degré", groupe: "Apologétique", motsCles: "hadith sunna recueil degre bukhari muslim", appliquer: insererBloc(BLOCS.hadith()) },

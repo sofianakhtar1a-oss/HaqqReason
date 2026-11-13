@@ -34,6 +34,7 @@ const NOMS: Record<string, string> = {
   sophisme: "Sophisme identifié",
   reference: "Référence",
   citationOuvrage: "Citation d'un ouvrage",
+  sommaire: "Table des matières",
 };
 
 const RECUEILS = [
@@ -54,7 +55,7 @@ type Bloc = { type: string; pos: number; attrs: Record<string, unknown> } | null
 
 function blocCourant(editor: Editor): Bloc {
   const { selection } = editor.state;
-  if (selection instanceof NodeSelection && ["source", "note", "image", "documentPdf", "lienCarte", "schema", "logique", "sophisme", "reference", "citationOuvrage"].includes(selection.node.type.name)) {
+  if (selection instanceof NodeSelection && ["source", "note", "image", "documentPdf", "lienCarte", "schema", "logique", "sophisme", "reference", "citationOuvrage", "sommaire"].includes(selection.node.type.name)) {
     return { type: selection.node.type.name, pos: selection.from, attrs: { ...selection.node.attrs } };
   }
   const { $from } = selection;
@@ -65,13 +66,13 @@ function blocCourant(editor: Editor): Bloc {
   return null;
 }
 
-function Champ({ id, libelle, valeur, onChange, aide, liste, dir }: { id: string; libelle: string; valeur: string; onChange: (v: string) => void; aide?: string; liste?: string; dir?: "rtl" }) {
+function Champ({ id, libelle, valeur, onChange, aide, liste, dir, placeholder }: { id: string; libelle: string; valeur: string; onChange: (v: string) => void; aide?: string; liste?: string; dir?: "rtl"; placeholder?: string }) {
   return (
     <div>
       <label htmlFor={id} className="etiquette text-sm">
         {libelle}
       </label>
-      <input id={id} className="champ !min-h-10 !py-2" value={valeur} onChange={(e) => onChange(e.target.value)} list={liste} dir={dir} autoComplete="off" />
+      <input id={id} className="champ !min-h-10 !py-2" value={valeur} onChange={(e) => onChange(e.target.value)} list={liste} dir={dir} placeholder={placeholder} autoComplete="off" />
       {aide && <p className="aide mt-1 text-sm">{aide}</p>}
     </div>
   );
@@ -219,6 +220,23 @@ export function PanneauBloc({ editor }: { editor: Editor }) {
             {erreurLien && <p className="mt-1 text-sm text-danger">{erreurLien}</p>}
           </div>
           <p className="aide text-sm">La source est ajoutée automatiquement à la bibliographie en fin d&apos;article.</p>
+        </>
+      )}
+
+      {bloc.type === "sommaire" && (
+        <>
+          <Champ id="som-titre" libelle="Titre affiché" valeur={a("titre")} onChange={(v) => modifier({ titre: v })} placeholder="Table des matières" />
+          <div>
+            <label htmlFor="som-prof" className="etiquette text-sm">
+              Niveaux de titres à inclure
+            </label>
+            <select id="som-prof" className="champ" value={a("profondeur") || "4"} onChange={(e) => modifier({ profondeur: e.target.value })}>
+              <option value="2">Grands titres seulement</option>
+              <option value="3">Grands titres et titres moyens</option>
+              <option value="4">Tous les titres</option>
+            </select>
+            <p className="aide mt-1 text-sm">La liste se met à jour toute seule quand tu ajoutes ou renommes un titre.</p>
+          </div>
         </>
       )}
 

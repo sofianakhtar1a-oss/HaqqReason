@@ -3025,3 +3025,102 @@ a.carte-lien:hover .carte-lien-lecture {
 .bloc-atelier-apercu .schema-svg {
   max-height: 26rem;
 }
+
+/* ---------- Phase 8 : table des matières dans l'article, réglages ---------- */
+
+/* Table des matières insérée dans le corps de l'article (bloc « /sommaire »). */
+.table-matieres {
+  margin: 2.25rem 0;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--trait);
+  border-radius: 1.25rem;
+  background: color-mix(in srgb, var(--fond) 92%, var(--encre) 8%);
+}
+.table-matieres-titre {
+  margin: 0 0 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--encre);
+}
+:is(.document, .tiptap) .table-matieres ol,
+.table-matieres ol {
+  display: grid;
+  gap: 0.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+:is(.document, .tiptap) .table-matieres li + li {
+  margin-top: 0;
+}
+.table-matieres li[data-niveau="3"] {
+  padding-left: 1rem;
+}
+.table-matieres li[data-niveau="4"] {
+  padding-left: 2rem;
+}
+.table-matieres a,
+.table-matieres li > span {
+  display: block;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--encre-douce);
+  line-height: 1.4;
+  text-decoration: none;
+}
+.table-matieres a:hover,
+.table-matieres a:focus-visible {
+  color: var(--encre);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+.table-matieres-vide {
+  margin: 0;
+  color: var(--encre-douce);
+  font-size: 0.9375rem;
+}
+.table-matieres[data-selectionne] {
+  border-color: var(--accent);
+}
+/* Un titre visé depuis la table des matières ne doit pas se coller au bord de l'écran. */
+.lecture h2[id],
+.lecture h3[id],
+.lecture h4[id] {
+  scroll-margin-top: 5rem;
+}
+@media print {
+  .table-matieres {
+    break-inside: avoid;
+  }
+}
+
+/* Page Paramètres */
+.reglage {
+  display: grid;
+  gap: 0.5rem;
+}
+.reglage .champ {
+  max-width: 26rem;
+}
+.reglage-aide {
+  margin: 0;
+  max-width: 46rem;
+  color: var(--encre-douce);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+.reglage-resume {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--trait);
+  border-radius: 1rem;
+  color: var(--encre-douce);
+  font-size: 0.9375rem;
+  line-height: 1.45;
+}
+.reglage-resume strong {
+  color: var(--encre);
+}

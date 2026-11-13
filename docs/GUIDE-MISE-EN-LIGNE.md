@@ -7,7 +7,7 @@ Ce guide part de zéro. À la fin :
 
 Compte environ 45 minutes la première fois. Tout est gratuit pour démarrer : Supabase (base de données) et Vercel (hébergement) ont chacun une offre gratuite suffisante.
 
-Tu as déjà fait tourner HaqqReason sur ton ordinateur avec les guides des phases 1 à 7 ? Garde ta base Supabase, saute l'étape 2 (exécute seulement les fichiers `006_innovations.sql` puis `007_sources_navigation.sql` s'ils ne le sont pas encore), et commence à l'étape 4.
+Tu as déjà fait tourner HaqqReason sur ton ordinateur avec les guides des phases 1 à 8 ? Garde ta base Supabase, saute l'étape 2 (exécute seulement les fichiers qui manquent, dans l'ordre : `006_innovations.sql`, `007_sources_navigation.sql`, `008_reglages.sql`), et commence à l'étape 4.
 
 ---
 

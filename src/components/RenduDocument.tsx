@@ -3,6 +3,7 @@ import { partiesLien, RE_LIEN_INTERNE, type LiensResolus } from "@/lib/liens";
 import { DEGRES_HADITH, ENCADRES, libelleDe, lienSur, LIMITES_DOCUMENT, MARQUES, NOEUDS, type NoeudJSON } from "@/lib/document-schema";
 import type { DonneesLogique } from "@/lib/logique/bloc";
 import type { DonneesSchema } from "@/lib/schemas/modele";
+import { sommaireDuDocument, type EntreeSommaire } from "@/lib/sommaire";
 import { sophismeParCle } from "@/lib/sophismes";
 import { localisation, partiesReference, SOURCES_VIDES, statutSource, type DonneesSources, type OuvrageAffiche } from "@/lib/sources";
 import { CarteLien } from "./CarteLien";
@@ -24,6 +25,8 @@ type Contexte = {
   notes: string[];
   sources: Record<string, string>[];
   titres: number;
+  /** Titres de l'article, pour les blocs « table des matières ». */
+  sommaire: EntreeSommaire[];
 };
 
 const ALIGNEMENTS: Record<string, string> = { left: "text-left", center: "text-center", right: "text-right", justify: "text-justify" };
@@ -400,6 +403,24 @@ function rendre(n: NoeudJSON, ctx: Contexte, profondeur: number, cle: string): R
         </sup>
       );
     }
+    case "sommaire": {
+      const profondeur = Number(NOEUDS.sommaire.profondeur(a.profondeur)) || 4;
+      const entrees = ctx.sommaire.filter((e) => e.niveau <= profondeur);
+      if (entrees.length === 0) return null;
+      const intitule = chaine(NOEUDS.sommaire.titre(a.titre)) || "Table des matières";
+      return (
+        <nav key={cle} className="table-matieres" aria-label={intitule}>
+          <p className="table-matieres-titre">{intitule}</p>
+          <ol>
+            {entrees.map((e) => (
+              <li key={e.id} data-niveau={e.niveau}>
+                <a href={`#${e.id}`}>{e.texte}</a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      );
+    }
     case "citationOuvrage": {
       const citation = ctx.bibliotheque.citations[chaine(NOEUDS.citationOuvrage.citation(a.citation))];
       const ouvrage = citation ? ctx.bibliotheque.ouvrages[citation.ouvrage_id] : undefined;
@@ -479,7 +500,7 @@ function Reference({ auteur, ouvrage, edition, page, lien }: Record<string, stri
 /** Affiche le document, puis les notes et la bibliographie générées automatiquement. */
 export function RenduDocument({ document, liens = {}, sources = SOURCES_VIDES }: { document: unknown; liens?: LiensResolus; sources?: DonneesSources }) {
   const racine = document && typeof document === "object" ? (document as NoeudJSON) : { type: "doc" };
-  const ctx: Contexte = { liens, bibliotheque: sources, cites: [], notes: [], sources: [], titres: 0 };
+  const ctx: Contexte = { liens, bibliotheque: sources, cites: [], notes: [], sources: [], titres: 0, sommaire: sommaireDuDocument(racine) };
   const corps = (racine.content ?? []).map((n, i) => rendre(n, ctx, 1, `r-${i}`));
 
   return (

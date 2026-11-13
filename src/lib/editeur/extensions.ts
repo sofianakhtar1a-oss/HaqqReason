@@ -373,6 +373,12 @@ export const Schema = blocAtome("schema", "schema-bloc-editeur", { donnees: attr
 export const Logique = blocAtome("logique", "logique-bloc-editeur", { donnees: attributJson() }, () => "Atelier de logique");
 export const SophismeBloc = blocAtome("sophisme", "sophisme-bloc", { cle: attributData("cle", "ad-hominem"), commentaire: attributData("commentaire") }, (a) => `Sophisme : ${String(a.cle)}`);
 export const CitationOuvrage = blocAtome("citationOuvrage", "citation-ouvrage-bloc", { citation: attributData("citation") }, () => "Citation d'un ouvrage");
+export const SommaireBloc = blocAtome(
+  "sommaire",
+  "table-matieres-bloc",
+  { titre: attributData("titre"), profondeur: attributData("profondeur", "4") },
+  () => "Table des matières",
+);
 
 export const ReferenceSource = Node.create({
   name: "reference",
@@ -479,6 +485,7 @@ export function extensionsDocument(): AnyExtension[] {
     Logique,
     SophismeBloc,
     CitationOuvrage,
+    SommaireBloc,
     ReferenceSource,
     NavigationBlocs,
   ];

@@ -21,13 +21,15 @@ export async function generateMetadata({
   const { id } = await params;
   const article = estUuid(id) ? await lireArticle(id) : null;
   if (!article) return { title: "Article introuvable" };
+  // Les moteurs de recherche et les aperçus de partage ne gardent qu'environ 200 caractères.
+  const court = article.resume.length > 200 ? `${article.resume.slice(0, 197).trimEnd()}…` : article.resume;
   return {
     title: article.titre,
-    description: article.resume || undefined,
+    description: court || undefined,
     alternates: { canonical: `/explorer/article/${id}` },
     openGraph: {
       title: article.titre,
-      description: article.resume || undefined,
+      description: court || undefined,
       type: "article",
       siteName: "HaqqReason",
       locale: "fr_FR",
@@ -36,7 +38,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title: article.titre,
-      description: article.resume || undefined,
+      description: court || undefined,
     },
   };
 }

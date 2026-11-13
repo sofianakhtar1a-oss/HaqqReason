@@ -25,13 +25,23 @@ function empreinte(id: string): string {
   return createHmac("sha256", env("SESSION_SECRET")).update(`appareil:${id}`).digest("hex");
 }
 
-/** À appeler après chaque connexion réussie. Renvoie true si l'appareil était inconnu. */
-export async function noterConnexion(dejaConfirme = false): Promise<boolean> {
+/**
+ * Identifiant de cet appareil, posé s'il n'existe pas encore.
+ * Appelé avant d'ouvrir une session, pour que celle-ci puisse y être rattachée.
+ */
+export async function assurerIdAppareil(): Promise<string> {
   const pot = await cookies();
   let id = pot.get(NOM)?.value ?? "";
-  if (!/^[a-f0-9]{64}$/.test(id)) id = randomBytes(32).toString("hex");
-  pot.set(NOM, id, { httpOnly: true, secure: EN_PRODUCTION, sameSite: "lax", path: "/", maxAge: 400 * 24 * 60 * 60 });
+  if (!/^[a-f0-9]{64}$/.test(id)) {
+    id = randomBytes(32).toString("hex");
+    pot.set(NOM, id, { httpOnly: true, secure: EN_PRODUCTION, sameSite: "lax", path: "/", maxAge: 400 * 24 * 60 * 60 });
+  }
+  return id;
+}
 
+/** À appeler après chaque connexion réussie. Renvoie true si l'appareil était inconnu. */
+export async function noterConnexion(dejaConfirme = false): Promise<boolean> {
+  const id = await assurerIdAppareil();
   const cle = empreinte(id);
   const libelle = libelleAppareil((await headers()).get("user-agent") ?? "");
   const base = dbAdmin();

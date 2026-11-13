@@ -22,7 +22,7 @@ const STATUTS: Record<FichierResume["statut_texte"], string> = {
 };
 
 /** Dépôt et gestion des documents d'un article ou d'une catégorie (mode créateur). */
-export function GestionnaireFichiers({ cible, fichiers }: { cible: Cible; fichiers: FichierResume[] }) {
+export function GestionnaireFichiers({ cible, fichiers, tailleMaxMo = 50 }: { cible: Cible; fichiers: FichierResume[]; tailleMaxMo?: number }) {
   const router = useRouter();
   const [taches, setTaches] = useState<Tache[]>([]);
   const [survol, setSurvol] = useState(false);
@@ -97,7 +97,7 @@ export function GestionnaireFichiers({ cible, fichiers }: { cible: Cible; fichie
       >
         <Upload className="size-7 text-accent" strokeWidth={1.5} aria-hidden="true" />
         <span className="font-semibold text-encre">Dépose tes fichiers ici, ou clique pour les choisir</span>
-        <span className="text-sm">PDF, images, Word, Excel, PowerPoint, OpenDocument, EPUB, texte. 50 Mo au plus par fichier.</span>
+        <span className="text-sm">PDF, images, Word, Excel, PowerPoint, OpenDocument, EPUB, texte. {tailleMaxMo} Mo au plus par fichier.</span>
         <input
           ref={entree}
           type="file"

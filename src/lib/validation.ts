@@ -10,7 +10,7 @@ export const LIMITES = {
   titreCategorie: 200,
   descriptionCategorie: 600,
   titreArticle: 300,
-  resume: 1200,
+  resume: 6000,
   texte: 300_000,
   etiquette: 60,
   etiquettesParArticle: 20,

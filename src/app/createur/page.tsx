@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BarChart3, FileText, ShieldAlert, ShieldCheck, Smartphone, Trash2, TriangleAlert, Wrench } from "lucide-react";
+import { BarChart3, FileText, ShieldAlert, ShieldCheck, SlidersHorizontal, Smartphone, Trash2, TriangleAlert, Wrench } from "lucide-react";
 import { listerAppareils } from "@/lib/appareils";
 import { articlesParBloc, brouillonsEnAttente, liensCasses } from "@/lib/tableau-de-bord";
 import { confirmerAppareil, signalerAppareil } from "./actions";
 import { BadgeStatut } from "@/components/BadgeStatut";
 import { articlesRecents, listerBlocsAdmin } from "@/lib/contenu-admin";
 import { exigerCreateur } from "@/lib/session";
-import { minutesInactivite } from "@/lib/session-token";
+import { libelleDuree } from "@/lib/reglages";
+import { lireReglages } from "@/lib/reglages-donnees";
 import { dbAdmin } from "@/lib/supabase";
 import { EnTeteCreateur } from "./_composants/EnTeteCreateur";
 
@@ -26,7 +27,7 @@ function dateLongue(iso: string): string {
 
 export default async function EspaceCreateur() {
   const compte = await exigerCreateur();
-  const [appareils, parBloc, attente, casses] = await Promise.all([listerAppareils(), articlesParBloc(), brouillonsEnAttente(6), liensCasses()]);
+  const [appareils, parBloc, attente, casses, reglages] = await Promise.all([listerAppareils(), articlesParBloc(), brouillonsEnAttente(6), liensCasses(), lireReglages()]);
   const inconnus = appareils.filter((a) => !a.confirme);
   const [categories, articlesPublies, brouillons, blocs, recents, racines] = await Promise.all([
     compter("categories"),
@@ -176,6 +177,10 @@ export default async function EspaceCreateur() {
                 <Wrench className="size-6 text-or" aria-hidden="true" />
                 Importer, sauvegarder, synonymes
               </Link>
+              <Link href="/createur/parametres" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
+                <SlidersHorizontal className="size-6 text-or" aria-hidden="true" />
+                Paramètres
+              </Link>
             </nav>
             <section className="verre panneau" aria-labelledby="titre-securite">
               {compte.totp_actif ? (
@@ -188,7 +193,8 @@ export default async function EspaceCreateur() {
               </h2>
               <ul className="mt-3 space-y-1.5 text-encre-douce">
                 <li>Mot de passe défini le {dateLongue(compte.password_changed_at)}.</li>
-                <li>Déconnexion automatique après {minutesInactivite()} minutes sans activité.</li>
+                <li>Déconnexion automatique après {libelleDuree(reglages.inactivite_minutes)} sans activité.</li>
+                <li>{reglages.lier_appareil ? "Session liée à l'appareil : un cookie recopié ailleurs ne donne aucun accès." : "Session non liée à l'appareil (à réactiver dans les Paramètres)."}</li>
                 <li>{compte.totp_actif ? "Double authentification active." : "Double authentification désactivée : active-la."}</li>
               </ul>
               <Link href="/createur/securite" className="bouton bouton-discret mt-6">

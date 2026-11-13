@@ -1,5 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { NOM_COOKIE, optionsCookie, signerSession, verifierSession } from "@/lib/session-token";
+import { NOM_COOKIE, NOM_COOKIE_APPAREIL, optionsCookie, signerSession, verifierSession } from "@/lib/session-token";
 
 /** Pages du mode créateur accessibles sans être connecté. */
 const PAGES_OUVERTES = ["/createur/connexion", "/createur/configuration", "/createur/recuperation"];
@@ -40,13 +40,20 @@ export async function proxy(request: NextRequest) {
   ].join("; ");
 
   const chemin = request.nextUrl.pathname;
-  const session = await verifierSession(request.cookies.get(NOM_COOKIE)?.value);
+  const session = await verifierSession(request.cookies.get(NOM_COOKIE)?.value, {
+    idAppareil: request.cookies.get(NOM_COOKIE_APPAREIL)?.value,
+    userAgent: request.headers.get("user-agent"),
+  });
 
   const zoneCreateur = chemin === "/createur" || chemin.startsWith("/createur/");
   const pageOuverte = PAGES_OUVERTES.some((page) => chemin === page || chemin.startsWith(`${page}/`));
   if (zoneCreateur && !pageOuverte && !session) {
-    const redirection = NextResponse.redirect(new URL("/createur/connexion", request.url));
+    // Renvoi vers l'accueil, jamais vers la page demandée : une adresse d'article recopiée
+    // ailleurs ne révèle donc rien, et il faut repasser par le mot de passe.
+    const redirection = NextResponse.redirect(new URL("/", request.url));
     redirection.headers.set("Content-Security-Policy", csp);
+    // Un cookie périmé ou recopié est effacé tout de suite.
+    if (request.cookies.has(NOM_COOKIE)) redirection.cookies.set(NOM_COOKIE, "", { ...optionsCookie(), maxAge: 0 });
     return redirection;
   }
 
@@ -62,7 +69,7 @@ export async function proxy(request: NextRequest) {
 
   // Session glissante : uniquement sur les lectures, pour ne jamais interférer avec une déconnexion.
   if (session && request.method === "GET") {
-    reponse.cookies.set(NOM_COOKIE, await signerSession(session), optionsCookie());
+    reponse.cookies.set(NOM_COOKIE, await signerSession(session), optionsCookie(session.ina));
   }
   return reponse;
 }

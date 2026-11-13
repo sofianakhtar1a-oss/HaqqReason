@@ -6,6 +6,7 @@ import { BoutonEnvoi } from "@/components/BoutonEnvoi";
 import { FilAriane } from "@/components/FilAriane";
 import { ancetresAdmin, arbreCategories, categorieVisible, lireArticleAdmin, lireBlocAdmin, listerBlocsAdmin } from "@/lib/contenu-admin";
 import { nettoyerDocument } from "@/lib/document-schema";
+import { lireReglages } from "@/lib/reglages-donnees";
 import { exigerCreateur } from "@/lib/session";
 import { estUuid } from "@/lib/validation";
 import { destinations } from "../../_composants/destinations";
@@ -22,6 +23,7 @@ export const metadata: Metadata = { title: "Écrire un article", robots: { index
 
 export default async function EcrireArticle({ params }: PageProps<"/createur/article/[id]">) {
   await exigerCreateur();
+  const reglages = await lireReglages();
   const { id } = await params;
   if (!estUuid(id)) notFound();
   const article = await lireArticleAdmin(id);
@@ -135,7 +137,7 @@ export default async function EcrireArticle({ params }: PageProps<"/createur/art
                 Affichés sous l&apos;article. Pour placer une image ou un PDF au fil du texte, tape « /image » ou « /document » dans l&apos;éditeur.
               </p>
               <div className="mt-5">
-                <GestionnaireFichiers cible={{ type: "article", id: article.id }} fichiers={fichiers} />
+                <GestionnaireFichiers cible={{ type: "article", id: article.id }} fichiers={fichiers} tailleMaxMo={reglages.taille_max_mo} />
               </div>
             </section>
           </div>

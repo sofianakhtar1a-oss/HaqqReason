@@ -144,7 +144,13 @@ Moteurs purs, partagés entre serveur et navigateur (`src/lib/logique`, `src/lib
 
 Aperçus de liens (`src/lib/apercu-lien.ts`) : la page est lue par le serveur avec une protection contre les requêtes vers le réseau interne (résolution DNS, adresses privées refusées, ports 80 et 443 seulement, redirections contrôlées une à une, taille et durée limitées). La vignette est copiée dans le stockage privé : le lecteur ne contacte jamais le site d'origine avant d'avoir cliqué.
 
-`supabase/installation-complete.sql` réunit les fichiers 001 à 007 pour une nouvelle installation en une seule fois.
+**Ajouté en Phase 8** (`supabase/migrations/008_reglages.sql`) :
+
+- `reglages` : table clé / valeur des réglages du créateur (durée de déconnexion automatique, durée maximale d'une session, session liée à l'appareil, taille maximale d'un fichier). Lecture et écriture réservées au serveur ; la table est invisible pour le public.
+
+Sécurité des sessions : le jeton signé porte désormais la durée d'inactivité, la durée maximale et une empreinte de l'appareil (identifiant de cookie + navigateur, haché avec le secret du serveur). Un cookie recopié dans un autre navigateur ne correspond plus et n'ouvre rien. Toute requête non authentifiée vers l'espace créateur est renvoyée à l'accueil, sans conserver l'adresse demandée. Un réglage plus strict ferme les sessions ouvertes, qui portaient l'ancienne règle.
+
+`supabase/installation-complete.sql` réunit les fichiers 001 à 008 pour une nouvelle installation en une seule fois.
 
 ## 6. Arborescence du projet
 
@@ -222,6 +228,11 @@ Le thème clair reprend les mêmes teintes, assombries pour rester lisibles sur 
   - **Atelier de logique** : validité avec contre-exemple, démonstrations pas à pas vérifiées, syllogismes, cohérence et contradictions, tables de vérité ; prémisses reliées aux sources, conclusion reliée à un article ; bibliothèque de 37 sophismes.
   - **Sources** : auteurs, ouvrages, citations réutilisables, statuts de vérification, bibliographie automatique, traçabilité, doublons.
   - **Navigation** : multi-classement, prérequis, « Pour aller plus loin », articles liés, collections de favoris, historique de lecture, page Nouveautés ; doublons de fichiers signalés.
+- **Phase 8 — Lecture, réglages et sécurité** ✔ :
+  - **Table des matières** insérable dans un article (`/sommaire`), construite depuis les titres, mise à jour en direct dans l'éditeur, cliquable pour le lecteur ; choix des niveaux inclus.
+  - **Résumé** jusqu'à 6 000 caractères, avec compteur ; raccourci automatiquement dans les aperçus de partage.
+  - **Paramètres** : déconnexion automatique (5 minutes à 8 heures), durée maximale d'une session, session liée à l'appareil, taille maximale des fichiers.
+  - **Sécurité** : session liée au navigateur, renvoi à l'accueil de toute adresse du créateur sans session, cookie périmé effacé.
 - **Mise en ligne** ✔ : guide pas à pas `docs/GUIDE-MISE-EN-LIGNE.md` (Supabase, Vercel, installation Android, Play Store).
 
 **Évolutions possibles ensuite** :

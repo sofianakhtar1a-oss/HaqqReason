@@ -30,7 +30,7 @@ export default function Accueil() {
               <span className="mt-4 block font-display text-xl font-bold">Mode utilisateur</span>
               <span className="mt-1 block text-encre-douce">Lire la bibliothèque. Aucun mot de passe.</span>
             </Link>
-            <Link href="/createur" className="verre group rounded-3xl p-6 transition-colors hover:border-or">
+            <Link href="/createur/connexion" className="verre group rounded-3xl p-6 transition-colors hover:border-or">
               <PenLine className="size-7 text-or" strokeWidth={1.5} aria-hidden="true" />
               <span className="mt-4 block font-display text-xl font-bold">Mode créateur</span>
               <span className="mt-1 block text-encre-douce">Écrire, organiser, publier. Protégé par mot de passe.</span>

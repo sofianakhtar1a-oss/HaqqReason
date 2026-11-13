@@ -20,7 +20,7 @@ import { actionsSpeciales } from "./commandes";
 import { ListeSlash, MenuSlash } from "./MenuSlash";
 import { MenuBulle } from "./MenuBulle";
 import { PanneauBloc } from "./PanneauBloc";
-import { VueCitationOuvrage, VueLienCarte, VueLogique, VueReference, VueSchema, VueSophisme } from "./VuesBlocs";
+import { VueCitationOuvrage, VueLienCarte, VueLogique, VueReference, VueSchema, VueSommaire, VueSophisme } from "./VuesBlocs";
 import { creerApercu } from "../../apercu-actions";
 import { ChoixSource } from "../ateliers/ChoixSource";
 import { Modale } from "../ateliers/Modale";
@@ -33,6 +33,7 @@ const VUES: Record<string, (p: NodeViewProps) => React.ReactNode> = {
   sophisme: VueSophisme,
   reference: VueReference,
   citationOuvrage: VueCitationOuvrage,
+  sommaire: VueSommaire,
 };
 function avecVues(extensions: AnyExtension[]): AnyExtension[] {
   return extensions.map((e) => {
@@ -394,16 +395,21 @@ export function EditeurRiche({ article, visibilite, enLigne, actions }: Props) {
           className="w-full resize-none bg-transparent font-display text-[clamp(1.9rem,4vw,2.75rem)] font-extrabold leading-tight outline-none [field-sizing:content] placeholder:text-encre-douce"
           placeholder="Titre de l'article"
         />
-        <label htmlFor="art-resume" className="etiquette mt-4 text-sm text-encre-douce">
-          Résumé
-        </label>
+        <div className="mt-4 flex flex-wrap items-baseline justify-between gap-x-4">
+          <label htmlFor="art-resume" className="etiquette text-sm text-encre-douce">
+            Résumé
+          </label>
+          <span className="text-xs text-encre-douce" aria-live="polite">
+            {resume.length.toLocaleString("fr-FR")} / {LIMITES.resume.toLocaleString("fr-FR")} caractères
+          </span>
+        </div>
         <textarea
           id="art-resume"
           value={resume}
           maxLength={LIMITES.resume}
           onChange={(e) => modifierChamp("resume", e.target.value)}
-          className="champ min-h-20 [field-sizing:content]"
-          placeholder="Deux ou trois phrases, affichées sous le titre et dans la liste des articles."
+          className="champ min-h-24 max-h-[50vh] [field-sizing:content]"
+          placeholder="Le chapeau de l'article : de quelques phrases à plusieurs paragraphes. Affiché sous le titre, et en deux lignes dans les listes."
         />
 
         <div className="mt-6">{editor && <BarreOutils editor={editor} />}</div>

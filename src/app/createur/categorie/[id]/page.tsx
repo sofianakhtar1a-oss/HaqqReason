@@ -18,6 +18,7 @@ import {
   listerBlocsAdmin,
   listerCategoriesAdmin,
 } from "@/lib/contenu-admin";
+import { lireReglages } from "@/lib/reglages-donnees";
 import { exigerCreateur } from "@/lib/session";
 import { estUuid } from "@/lib/validation";
 import { destinations } from "../../_composants/destinations";
@@ -45,6 +46,7 @@ export const metadata: Metadata = { title: "Gérer une catégorie", robots: { in
 
 export default async function GererCategorie({ params, searchParams }: PageProps<"/createur/categorie/[id]">) {
   await exigerCreateur();
+  const reglages = await lireReglages();
   const { id } = await params;
   if (!estUuid(id)) notFound();
   const categorie = await lireCategorieAdmin(id);
@@ -210,7 +212,7 @@ export default async function GererCategorie({ params, searchParams }: PageProps
               </h2>
               <p className="mt-2 text-encre-douce">Livres, études, manuscrits, images… visibles par les lecteurs quand la catégorie est publiée.</p>
               <div className="mt-5">
-                <GestionnaireFichiers cible={{ type: "categorie", id: categorie.id }} fichiers={fichiers} />
+                <GestionnaireFichiers cible={{ type: "categorie", id: categorie.id }} fichiers={fichiers} tailleMaxMo={reglages.taille_max_mo} />
               </div>
             </section>
           </>

@@ -1,5 +1,6 @@
 "use client";
 
+import { sommaireDuDocument, type EntreeSommaire } from "@/lib/sommaire";
 import { NodeViewWrapper, type NodeViewProps } from "@tiptap/react";
 import { Brain, PenLine } from "lucide-react";
 import { useEffect, useId, useState } from "react";
@@ -172,6 +173,42 @@ export function VueCitationOuvrage({ node, selected }: NodeViewProps) {
             {statutSource(c?.statut ?? "").court}
           </span>
         </figcaption>
+      )}
+    </NodeViewWrapper>
+  );
+}
+
+/**
+ * Table des matières dans l'éditeur : les titres de l'article en cours, relus à chaque frappe.
+ * Les liens n'y sont pas actifs ; ils le deviennent pour le lecteur.
+ */
+export function VueSommaire({ node, editor, selected }: NodeViewProps) {
+  const profondeur = Number(node.attrs.profondeur ?? 4) || 4;
+  const intitule = String(node.attrs.titre ?? "") || "Table des matières";
+  // La liste se relit à chaque frappe : le créateur voit son plan se construire en direct.
+  const [titres, setTitres] = useState<EntreeSommaire[]>(() => sommaireDuDocument(editor.getJSON()));
+  useEffect(() => {
+    const relire = () => setTitres(sommaireDuDocument(editor.getJSON()));
+    relire();
+    editor.on("update", relire);
+    return () => {
+      editor.off("update", relire);
+    };
+  }, [editor]);
+  const entrees = titres.filter((e) => e.niveau <= profondeur);
+  return (
+    <NodeViewWrapper as="nav" className="table-matieres" data-selectionne={selected || undefined} data-drag-handle="" contentEditable={false}>
+      <p className="table-matieres-titre">{intitule}</p>
+      {entrees.length === 0 ? (
+        <p className="table-matieres-vide">Ajoute des titres dans l&apos;article : ils apparaîtront ici, et le lecteur pourra cliquer dessus.</p>
+      ) : (
+        <ol>
+          {entrees.map((e) => (
+            <li key={e.id} data-niveau={e.niveau}>
+              <span>{e.texte}</span>
+            </li>
+          ))}
+        </ol>
       )}
     </NodeViewWrapper>
   );

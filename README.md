@@ -5,8 +5,8 @@ Bibliothèque d'apologétique islamique : la véracité de l'islam, la défense 
 ## Par où commencer
 
 - **Mettre l'application en ligne et l'installer sur ton téléphone Android** : `docs/GUIDE-MISE-EN-LIGNE.md`. Il part de zéro, en une seule fois, avec le fichier `supabase/installation-complete.sql`.
-- **Tu as déjà installé une phase précédente** : `docs/GUIDE-PHASE-7.md` explique la mise à jour (exécuter `007_sources_navigation.sql`, et `006_innovations.sql` avant s'il manque).
-- **Découvrir chaque fonction** : `docs/GUIDE-PHASE-1.md` à `docs/GUIDE-PHASE-7.md`.
+- **Tu as déjà installé une phase précédente** : `docs/GUIDE-PHASE-8.md` explique la mise à jour (exécuter `008_reglages.sql`, précédé des fichiers manquants).
+- **Découvrir chaque fonction** : `docs/GUIDE-PHASE-1.md` à `docs/GUIDE-PHASE-8.md`.
 - **Liste de vérification de sécurité avant la mise en ligne** : `docs/SECURITE.md`.
 - **Comprendre comment c'est construit** : `docs/ARCHITECTURE.md`.
 

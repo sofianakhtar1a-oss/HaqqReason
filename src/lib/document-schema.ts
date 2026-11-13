@@ -195,6 +195,8 @@ export const NOEUDS: Record<string, Record<string, Validateur>> = {
   sophisme: { cle: enumere(SOPHISMES.map((x) => x.cle), "ad-hominem"), commentaire: texte(1000) },
   reference: { ouvrage: idFichier, citation: idFichier, page: texte(60), tome: texte(30) },
   citationOuvrage: { citation: idFichier },
+  /** Table des matières : construite à l'affichage à partir des titres de l'article. */
+  sommaire: { titre: texte(120), profondeur: entier(2, 4, 4) },
 };
 
 function lireJson(v: string): unknown {
