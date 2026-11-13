@@ -294,7 +294,7 @@ export function BarreOutils({ editor }: { editor: Editor }) {
         }
       >
         {(fermer) => (
-          <div className="w-80">
+          <div className="w-80 max-w-full">
             {GROUPES.map((g) => (
               <div key={g}>
                 <p className="choix-menu-groupe">{g}</p>

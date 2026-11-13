@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useId, useRef, useState } from "react";
+import { useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 
 type Props = {
   libelle: string;
@@ -15,6 +15,25 @@ export function Deroulant({ libelle, bouton, actif = false, aDroite = false, chi
   const [ouvert, setOuvert] = useState(false);
   const zone = useRef<HTMLDivElement>(null);
   const id = useId();
+  const panneau = useRef<HTMLDivElement>(null);
+
+  // Garde le panneau entièrement visible : s'il dépasse d'un bord de la fenêtre, on le décale.
+  useLayoutEffect(() => {
+    const el = panneau.current;
+    if (!ouvert || !el) return;
+    const recaler = () => {
+      el.style.transform = "";
+      const r = el.getBoundingClientRect();
+      const marge = 8;
+      let dx = 0;
+      if (r.left < marge) dx = marge - r.left;
+      else if (r.right > window.innerWidth - marge) dx = window.innerWidth - marge - r.right;
+      if (dx) el.style.transform = `translateX(${Math.round(dx)}px)`;
+    };
+    recaler();
+    window.addEventListener("resize", recaler);
+    return () => window.removeEventListener("resize", recaler);
+  }, [ouvert]);
 
   useEffect(() => {
     if (!ouvert) return;
@@ -48,7 +67,7 @@ export function Deroulant({ libelle, bouton, actif = false, aDroite = false, chi
         {bouton}
       </button>
       {ouvert && (
-        <div id={id} className={`panneau-flottant top-full mt-1.5 ${aDroite ? "right-0" : "left-0"}`}>
+        <div id={id} ref={panneau} style={{ maxWidth: "calc(100vw - 16px)" }} className={`panneau-flottant top-full mt-1.5 ${aDroite ? "right-0" : "left-0"}`}>
           {children(() => setOuvert(false))}
         </div>
       )}
