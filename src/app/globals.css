@@ -3251,3 +3251,347 @@ a.carte-lien:hover .carte-lien-lecture {
     background: transparent;
   }
 }
+
+/* ---------- Graphe : examiner un point avant de l'ouvrir ---------- */
+
+/* Le point choisi est cerclé : on voit d'un coup d'œil ce qu'on examine. */
+.sommet[data-choisi] circle {
+  stroke: var(--accent);
+  stroke-width: 3;
+  filter: drop-shadow(0 0 12px var(--accent));
+}
+.sommet[data-choisi] text {
+  fill: var(--encre);
+  font-weight: 800;
+}
+
+/* Pendant l'examen, les boutons de zoom passent à gauche : l'aperçu occupe la droite. */
+.graphe-cadre[data-apercu] .graphe-zoom {
+  right: auto;
+  left: 0.75rem;
+}
+.graphe-apercu {
+  position: absolute;
+  right: 0.75rem;
+  top: 0.75rem;
+  /* La bulle se règle sur ce qu'elle contient : un article court ne laisse pas un grand vide. */
+  max-height: calc(100% - 1.5rem);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  width: min(22rem, calc(100% - 1.5rem));
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--trait);
+  border-radius: 1.4rem;
+  background: color-mix(in srgb, var(--fond) 96%, var(--encre) 4%);
+  box-shadow: 0 1.5rem 3rem -1.5rem rgba(0, 0, 0, 0.6);
+  animation: apercu-entre 0.22s ease-out;
+}
+@keyframes apercu-entre {
+  from {
+    opacity: 0;
+    transform: translateX(0.75rem);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .graphe-apercu {
+    animation: none;
+  }
+}
+/* Le liseré reprend la couleur du bloc d'origine : l'aperçu reste rattaché visuellement au point. */
+.graphe-apercu::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  border-radius: 1.4rem 0 0 1.4rem;
+  background: var(--accent);
+}
+.graphe-apercu-fermer {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  color: var(--encre-douce);
+  cursor: pointer;
+}
+.graphe-apercu-fermer:hover,
+.graphe-apercu-fermer:focus-visible {
+  border-color: var(--trait);
+  color: var(--encre);
+}
+.graphe-apercu-nature {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0 2rem 0.35rem 0;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.graphe-apercu-titre {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.graphe-apercu-chiffres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.9rem;
+  margin: 0.5rem 0 0;
+  color: var(--encre-douce);
+  font-size: 0.85rem;
+}
+.graphe-apercu-attente {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.9rem 0 0;
+  color: var(--encre-douce);
+  font-size: 0.9rem;
+}
+/* L'extrait se parcourt dans sa fenêtre, sans emporter le graphe. */
+.graphe-apercu-texte {
+  flex: 1;
+  min-height: 3rem;
+  margin-top: 0.9rem;
+  padding-right: 0.4rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+/* Le texte ne s'efface vers le bas que s'il continue vraiment en dessous. */
+.graphe-apercu-texte[data-coulisse] {
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 2.5rem), transparent);
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 2.5rem), transparent);
+}
+.graphe-apercu-texte:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 0.5rem;
+}
+.graphe-apercu-resume {
+  margin: 0 0 0.6rem;
+  color: var(--encre);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.graphe-apercu-extrait {
+  margin: 0;
+  color: var(--encre-douce);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.graphe-apercu-texte::-webkit-scrollbar {
+  width: 0.4rem;
+}
+.graphe-apercu-texte::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--encre) 22%, transparent);
+}
+.graphe-apercu-ouvrir {
+  margin-top: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+.graphe-apercu-aide {
+  margin: 0.5rem 0 0;
+  color: var(--encre-douce);
+  font-size: 0.78rem;
+  text-align: center;
+}
+@keyframes apercu-monte {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
+}
+@media (max-width: 40rem) {
+  /* Sur téléphone, l'aperçu monte depuis le bas et laisse voir le graphe au-dessus. */
+  .graphe-apercu {
+    inset: auto 0.5rem 0.5rem;
+    width: auto;
+    max-height: 68%;
+    animation-name: apercu-monte;
+  }
+}
+
+/* ---------- Atelier d'image (capture collée) ---------- */
+.atelier-image {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 74rem;
+  margin-inline: auto;
+}
+@media (min-width: 1024px) {
+  .atelier-image {
+    grid-template-columns: minmax(0, 1.35fr) minmax(19rem, 0.65fr);
+    align-items: start;
+  }
+}
+.atelier-image-scene {
+  display: grid;
+  gap: 0.7rem;
+  place-items: center;
+  padding: 1rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--trait);
+  background:
+    linear-gradient(45deg, var(--surface) 25%, transparent 25%, transparent 75%, var(--surface) 75%) 0 0 / 1.5rem 1.5rem,
+    linear-gradient(45deg, var(--surface) 25%, transparent 25%, transparent 75%, var(--surface) 75%) 0.75rem 0.75rem / 1.5rem 1.5rem;
+}
+/* Pas de découpe ici : les poignées dépassent du cadre et doivent rester attrapables.
+   C'est l'image elle-même qui donne sa taille au cadre, pour que la zone gardée
+   (exprimée en pourcentages) tombe toujours pile sur l'image affichée. */
+.atelier-image-cadre {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  line-height: 0;
+  border-radius: 0.5rem;
+  touch-action: none;
+  user-select: none;
+}
+.atelier-image-source {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: min(38dvh, 22rem);
+  border-radius: 0.5rem;
+  pointer-events: none;
+}
+.atelier-image-voile {
+  position: absolute;
+  inset: 0;
+  background: rgb(5 8 25 / 0.58);
+  pointer-events: none;
+}
+.atelier-image-zone {
+  position: absolute;
+  cursor: move;
+  outline: 1px solid rgb(255 255 255 / 0.9);
+  box-shadow: 0 0 0 1px rgb(5 8 25 / 0.5);
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.28) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.28) 1px, transparent 1px);
+  background-size: 33.333% 33.333%;
+  backdrop-filter: brightness(1.9) saturate(1.05);
+}
+.atelier-image-poignee {
+  position: absolute;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 0.25rem;
+  background: var(--accent);
+  box-shadow: 0 0 0 2px rgb(5 8 25 / 0.55);
+}
+.poignee-nw {
+  top: -0.6rem;
+  left: -0.6rem;
+  cursor: nwse-resize;
+}
+.poignee-ne {
+  top: -0.6rem;
+  right: -0.6rem;
+  cursor: nesw-resize;
+}
+.poignee-sw {
+  bottom: -0.6rem;
+  left: -0.6rem;
+  cursor: nesw-resize;
+}
+.poignee-se {
+  bottom: -0.6rem;
+  right: -0.6rem;
+  cursor: nwse-resize;
+}
+.atelier-image-mesures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 1rem;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--encre-douce);
+}
+.atelier-image-reglages {
+  display: grid;
+  gap: 1.1rem;
+}
+.atelier-image-reglages > section {
+  padding: 0.9rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.atelier-titre {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.atelier-glissiere {
+  width: 100%;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+.atelier-teintes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.7rem;
+}
+.atelier-teinte {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.18);
+  transition: transform 0.12s ease;
+}
+.atelier-teinte:hover:not(:disabled) {
+  transform: scale(1.12);
+}
+.atelier-teinte[aria-pressed="true"] {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.atelier-teinte:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+/* L'aperçu du fichier réellement produit, sous la scène de recadrage. */
+.atelier-image-resultat {
+  display: grid;
+  justify-items: center;
+  gap: 0.4rem;
+  width: 100%;
+  margin-top: 0.4rem;
+  padding-top: 0.9rem;
+  border-top: 1px dashed var(--trait);
+}
+.atelier-image-resultat figcaption {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--encre-douce);
+}
+.atelier-image-resultat img {
+  display: block;
+  max-width: 100%;
+  max-height: min(22dvh, 13rem);
+  width: auto;
+  height: auto;
+}

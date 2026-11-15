@@ -52,8 +52,8 @@ export default async function PageGraphe() {
       <main className="mx-auto w-full max-w-7xl flex-1 px-5 pb-12 pt-4 sm:px-8">
         <h1 className="text-4xl font-extrabold md:text-5xl">Graphe de connaissances</h1>
         <p className="mt-3 max-w-[64ch] text-lg text-encre-douce">
-          Chaque point est un bloc, une catégorie, un article ou une étiquette. Les traits dorés relient les articles qui se citent. Survole un
-          point pour voir ses voisins, clique pour l&apos;ouvrir.
+          Chaque point est un bloc, une catégorie, un article ou une étiquette. Les traits dorés relient les articles qui se citent. Un premier
+          appui sur un point l&apos;isole et en donne un aperçu ; un deuxième appui l&apos;ouvre.
         </p>
         <GrapheConnaissances noeuds={noeuds} aretes={aretes.filter((a) => ids.has(a.source) && ids.has(a.cible))} />
       </main>

@@ -180,8 +180,10 @@ haqqreason/
    │     ├─ connexion/ configuration/ recuperation/ securite/
    │     ├─ actions.ts        Connexion, mot de passe, clé (côté serveur)
    │     └─ contenu-actions.ts  Toutes les modifications du contenu (côté serveur)
+   │     └─ _composants/ateliers/  Ateliers en fenêtre : schémas, logique, sources, image collée
    ├─ components/             Éléments d'interface réutilisables
    └─ lib/                    Chiffrement, session, limites, journal, accès à la base
+      └─ client/              Calculs faits dans le navigateur (atelier d'image, erreurs PDF)
 ```
 
 ## 7. Format des articles et sécurité du contenu
@@ -244,13 +246,15 @@ Le thème clair reprend les mêmes teintes, assombries pour rester lisibles sur 
   - **Sécurité** : session liée au navigateur, renvoi à l'accueil de toute adresse du créateur sans session, cookie périmé effacé.
 - **Phase 9 — Recherche par le sens** ✔ : vecteurs par morceau d'article, indexation automatique et incrémentale, page Outils avec avancement, encadré « Articles proches par le sens » quand les mots ne suffisent pas, bouton « Je n'ai pas trouvé ma réponse » qui remonte le sujet au créateur, limites de dépense par visiteur, interrupteur dans les Paramètres.
 - **Phase 10 — Confort d'écriture** ✔ : barre d'outils collée en haut pendant toute la descente de l'article (la barre et le texte partagent le même conteneur), et poubelle au survol de chaque bloc, qui supprime exactement le nœud visé (chaque apparence est reliée à son type) sans rien ajouter au document. La colonne de réglages est collante, bornée à la hauteur de la fenêtre et dotée de son propre défilement (`overscroll-behavior: contain`), pour que les deux colonnes se parcourent indépendamment. La Content-Security-Policy autorise `'wasm-unsafe-eval'` (et rien de plus) : le lecteur PDF décode les images JPEG 2000 et les profils ICC avec des modules WebAssembly servis par l'application. Les échecs d'ouverture d'un PDF sont traduits en messages distincts (`src/lib/client/pdf-erreurs.ts`).
+- **Phase 11 — Explorer et illustrer** ✔ :
+  - **Graphe en deux temps** : un premier appui sur un point le met en avant — les autres titres s'effacent le temps de l'examen — et ouvre une bulle qui dit vers quoi il mène (bloc, catégorie, article, étiquette), avec un aperçu du texte que l'on peut faire coulisser dans la bulle. Un deuxième appui sur le même point y conduit. Échap, la croix ou un appui dans le vide referment la bulle ; sur téléphone, la bulle devient un panneau en bas de l'écran. L'aperçu est lu par `/api/apercu-noeud`, qui emploie la base publique pour un lecteur et la base complète pour le créateur : un brouillon n'est donc jamais servi au public. Comme le svg capture le pointeur pour pouvoir être déplacé, c'est lui qui reçoit les appuis : le point visé est retrouvé avec `elementFromPoint`.
+  - **Atelier d'image au collage** : un Ctrl+V de capture d'écran dans un article ouvre un atelier (`AtelierImage`) où l'on recadre à la souris ou au doigt (quatre coins et déplacement de la zone gardée), choisit la largeur finale, l'arrondi des coins, l'épaisseur et la couleur du cadre, et l'ombre portée. Le fichier réellement produit est affiché en direct sous la scène de recadrage (« Ce qui sera inséré »), avec sa taille et son poids — cadre et place de l'ombre compris (`tailleFichier`). Les calculs sont isolés dans `src/lib/client/image-atelier.ts` (donc testables : bornes du recadrage, taille finale, rayon des coins) et le dessin se fait sur un canevas, en PNG pour garder la transparence des coins. C'est l'image retouchée qui est envoyée, jamais l'originale, et elle est posée à l'endroit exact où l'on avait collé.
 - **Mise en ligne** ✔ : guide pas à pas `docs/GUIDE-MISE-EN-LIGNE.md` (Supabase, Vercel, installation Android, Play Store).
 
 **Évolutions possibles ensuite** :
 - **Assistant IA** : résumés, suggestions d'objections, détection de sophismes. Laissé de côté pour l'instant : il demande une clé d'API payante et peut inventer des citations, ce qui est dangereux pour un site de sources.
 - **Cartes géographiques** et **logique des prédicats** dans les ateliers.
 - **Multilingue** : interface et articles en anglais, puis en arabe (avec la mise en page de droite à gauche). Chaque article pourrait avoir des traductions liées.
-- **Recherche par le sens** : trouver « les preuves de la prophétie » même si l'article parle de « signes de Muhammad ﷺ ». Cela passe par des représentations numériques du texte (« embeddings ») stockées dans Supabase (extension pgvector). Certains services de calcul de ces représentations sont payants.
 - **Clés d'accès (passkeys)** : se connecter avec l'empreinte digitale ou le visage du téléphone, en plus ou à la place du code TOTP.
 - **Publication sur le Google Play Store** : étapes déjà décrites dans le guide de mise en ligne (PWABuilder, Trusted Web Activity).
 - **Fiches de révision** : à partir des fiches Débat express, un entraînement à répétition espacée pour mémoriser les réponses.

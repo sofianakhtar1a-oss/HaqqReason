@@ -1,10 +1,11 @@
 "use client";
 
 import { forceCenter, forceCollide, forceLink, forceManyBody, forceSimulation, forceX, forceY, type SimulationLinkDatum, type SimulationNodeDatum } from "d3-force";
-import { Maximize, Minus, Plus, Search } from "lucide-react";
+import { ArrowRight, FileText, Folder, Hash, LoaderCircle, Maximize, Minus, Plus, Search, Tag, X } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { normaliser } from "@/lib/recherche-texte";
+import type { ApercuNoeud } from "@/app/api/apercu-noeud/route";
 
 export type Noeud = { id: string; type: "bloc" | "categorie" | "article" | "etiquette"; titre: string; accent: string; href: string };
 export type Arete = { source: string; cible: string; type: "rangement" | "etiquette" | "lien" };
@@ -14,12 +15,27 @@ type Lien = SimulationLinkDatum<Point> & { type: Arete["type"] };
 
 const RAYONS: Record<Noeud["type"], number> = { bloc: 22, categorie: 11, article: 6, etiquette: 4.5 };
 const LIBELLES: Record<Noeud["type"], string> = { bloc: "Blocs", categorie: "Catégories", article: "Articles", etiquette: "Étiquettes" };
+/** Ce vers quoi mène chaque point, dit en clair dans l'aperçu. */
+const NATURE: Record<Noeud["type"], string> = { bloc: "Bloc de la bibliothèque", categorie: "Catégorie", article: "Article", etiquette: "Étiquette" };
+const OUVRIR: Record<Noeud["type"], string> = { bloc: "Ouvrir le bloc", categorie: "Ouvrir la catégorie", article: "Lire l'article", etiquette: "Voir les articles" };
+const ICONES: Record<Noeud["type"], React.ReactNode> = {
+  bloc: <Hash className="size-4" aria-hidden="true" />,
+  categorie: <Folder className="size-4" aria-hidden="true" />,
+  article: <FileText className="size-4" aria-hidden="true" />,
+  etiquette: <Tag className="size-4" aria-hidden="true" />,
+};
 
 export function GrapheConnaissances({ noeuds, aretes }: { noeuds: Noeud[]; aretes: Arete[] }) {
   const router = useRouter();
   const svg = useRef<SVGSVGElement>(null);
   const [types, setTypes] = useState<Set<Noeud["type"]>>(new Set(["bloc", "categorie", "article", "etiquette"]));
   const [survol, setSurvol] = useState<string | null>(null);
+  // Premier appui : on choisit le point et on l'examine. Deuxième appui : on y va.
+  const [choisi, setChoisi] = useState<string | null>(null);
+  // null dans « donnees » = la réponse est arrivée mais vide ; tant que l'identifiant ne
+  // correspond pas au point choisi, c'est que la lecture est encore en cours.
+  const [apercu, setApercu] = useState<{ id: string; donnees: ApercuNoeud | null } | null>(null);
+  const texteApercu = useRef<HTMLDivElement>(null);
   const [q, setQ] = useState("");
   const [vue, setVue] = useState({ x: 0, y: 0, k: 1 });
   const pointeurs = useRef(new Map<number, { x: number; y: number }>());
@@ -57,6 +73,29 @@ export function GrapheConnaissances({ noeuds, aretes }: { noeuds: Noeud[]; arete
     }
     return m;
   }, [liens]);
+
+  // Aperçu du point choisi, chargé à la demande (rien n'est demandé tant qu'on n'a pas cliqué).
+  useEffect(() => {
+    const point = choisi ? points.find((p) => p.id === choisi) : undefined;
+    if (!point) return;
+    const controleur = new AbortController();
+    fetch(`/api/apercu-noeud?id=${encodeURIComponent(point.id)}&type=${point.type}`, { signal: controleur.signal })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d: ApercuNoeud | null) => setApercu({ id: point.id, donnees: d && !("erreur" in d) ? d : null }))
+      .catch(() => {
+        if (!controleur.signal.aborted) setApercu({ id: point.id, donnees: null });
+      });
+    return () => controleur.abort();
+  }, [choisi, points]);
+
+  // Échap referme l'examen en cours.
+  useEffect(() => {
+    const touche = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && choisi) setChoisi(null);
+    };
+    window.addEventListener("keydown", touche);
+    return () => window.removeEventListener("keydown", touche);
+  }, [choisi]);
 
   const trouves = useMemo(() => {
     const m = normaliser(q.trim());
@@ -101,10 +140,34 @@ export function GrapheConnaissances({ noeuds, aretes }: { noeuds: Noeud[]; arete
     return () => el.removeEventListener("wheel", roue);
   }, []);
 
-  const actif = survol;
+  /*
+   * Le dégradé du bas ne doit apparaître que si le texte continue vraiment en dessous.
+   * On marque donc l'élément lui-même, sans repasser par un état : rien à réafficher.
+   */
+  useEffect(() => {
+    const zone = texteApercu.current;
+    if (!zone) return;
+    zone.toggleAttribute("data-coulisse", zone.scrollHeight > zone.clientHeight + 4);
+  });
+
+  const actif = choisi ?? survol;
   const proches = actif ? voisins.get(actif) : null;
   const estAllume = (id: string) => (trouves ? trouves.has(id) : !actif || id === actif || Boolean(proches?.has(id)));
   const pointActif = points.find((p) => p.id === actif);
+  const pointChoisi = points.find((p) => p.id === choisi);
+  // L'aperçu n'est montré que s'il correspond bien au point examiné (une réponse en retard est ignorée).
+  const donnees = apercu && apercu.id === choisi ? apercu.donnees : null;
+  const lectureEnCours = Boolean(choisi) && apercu?.id !== choisi;
+
+  /*
+   * Un titre ne s'affiche que s'il a une raison d'être là. Pendant l'examen d'un point,
+   * seul le sien reste : c'est ce qui rend la lecture du graphe possible quand il est dense.
+   */
+  const titreVisible = (p: Point) => {
+    if (choisi) return p.id === choisi;
+    if (trouves?.has(p.id)) return true;
+    return p.type === "bloc" || (vue.k > 1.4 && p.type === "categorie") || p.id === actif;
+  };
 
   return (
     <div className="mt-8">
@@ -138,14 +201,17 @@ export function GrapheConnaissances({ noeuds, aretes }: { noeuds: Noeud[]; arete
         ))}
       </div>
 
-      <div className="graphe-cadre">
+      <div className="graphe-cadre" data-apercu={choisi ? "" : undefined}>
         <svg
           ref={svg}
           className="graphe"
           role="img"
           aria-label={`Graphe de ${points.length} éléments et ${liens.length} liens`}
           onPointerDown={(e) => {
-            (e.currentTarget as Element).setPointerCapture(e.pointerId);
+            // La capture peut être refusée (pointeur déjà relâché) : ce n'est pas une raison de tout arrêter.
+            try {
+              (e.currentTarget as Element).setPointerCapture(e.pointerId);
+            } catch {}
             pointeurs.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
             glisse.current = false;
           }}
@@ -168,7 +234,25 @@ export function GrapheConnaissances({ noeuds, aretes }: { noeuds: Noeud[]; arete
             }
             pointeurs.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
           }}
-          onPointerUp={(e) => pointeurs.current.delete(e.pointerId)}
+          onPointerUp={(e) => {
+            pointeurs.current.delete(e.pointerId);
+            if (glisse.current || pointeurs.current.size > 0) return;
+            /*
+             * Le svg capture le pointeur pour pouvoir être déplacé même quand le doigt
+             * en sort : les appuis arrivent donc tous sur le svg, jamais sur le point visé.
+             * On retrouve donc nous-mêmes le point qui se trouve sous le doigt.
+             */
+            const vise = document.elementFromPoint(e.clientX, e.clientY)?.closest(".sommet");
+            const id = vise instanceof SVGElement ? vise.dataset.id : undefined;
+            const point = id ? points.find((p) => p.id === id) : undefined;
+            // Appui dans le vide : on sort de l'examen.
+            if (!point) {
+              setChoisi(null);
+              return;
+            }
+            if (choisi === point.id) router.push(point.href);
+            else setChoisi(point.id);
+          }}
           onPointerCancel={(e) => pointeurs.current.delete(e.pointerId)}
         >
           <g transform={`translate(${vue.x} ${vue.y}) scale(${vue.k})`}>
@@ -183,25 +267,27 @@ export function GrapheConnaissances({ noeuds, aretes }: { noeuds: Noeud[]; arete
                 key={p.id}
                 transform={`translate(${p.x} ${p.y})`}
                 className="sommet"
+                data-id={p.id}
                 data-type={p.type}
                 data-accent={p.accent}
                 data-allume={estAllume(p.id)}
                 tabIndex={0}
                 role="link"
                 aria-label={`${p.titre} (${LIBELLES[p.type].toLowerCase().replace(/s$/, "")})`}
+                data-choisi={p.id === choisi || undefined}
+                aria-current={p.id === choisi ? "true" : undefined}
                 onPointerEnter={() => setSurvol(p.id)}
                 onPointerLeave={() => setSurvol((s) => (s === p.id ? null : s))}
                 onFocus={() => setSurvol(p.id)}
                 onBlur={() => setSurvol(null)}
-                onClick={() => {
-                  if (!glisse.current) router.push(p.href);
-                }}
                 onKeyDown={(e) => {
-                  if (e.key === "Enter") router.push(p.href);
+                  if (e.key !== "Enter") return;
+                  if (choisi === p.id) router.push(p.href);
+                  else setChoisi(p.id);
                 }}
               >
                 <circle r={RAYONS[p.type]} />
-                {(p.type === "bloc" || (vue.k > 1.4 && p.type === "categorie") || p.id === actif || trouves?.has(p.id)) && (
+                {titreVisible(p) && (
                   <text y={-RAYONS[p.type] - 6} textAnchor="middle" style={{ fontSize: `${Math.max(10, 13 / vue.k)}px` }}>
                     {p.titre.length > 48 ? `${p.titre.slice(0, 46)}…` : p.titre}
                   </text>
@@ -221,13 +307,60 @@ export function GrapheConnaissances({ noeuds, aretes }: { noeuds: Noeud[]; arete
             <Maximize className="size-4" aria-hidden="true" />
           </button>
         </div>
-        {pointActif && (
+        {pointActif && !choisi && (
           <p className="graphe-info" aria-live="polite">
             <strong>{pointActif.titre}</strong>
             <span>
               {LIBELLES[pointActif.type].replace(/s$/, "")}, {proches?.size ?? 0} lien{(proches?.size ?? 0) > 1 ? "s" : ""}
             </span>
           </p>
+        )}
+
+        {pointChoisi && (
+          <aside className="graphe-apercu" data-accent={pointChoisi.accent} aria-label={`Aperçu de ${pointChoisi.titre}`}>
+            <button type="button" className="graphe-apercu-fermer" aria-label="Fermer l'aperçu" onClick={() => setChoisi(null)}>
+              <X className="size-4" aria-hidden="true" />
+            </button>
+            <p className="graphe-apercu-nature">
+              {ICONES[pointChoisi.type]}
+              {NATURE[pointChoisi.type]}
+            </p>
+            <h2 className="graphe-apercu-titre">{pointChoisi.titre}</h2>
+
+            <p className="graphe-apercu-chiffres">
+              {donnees?.contexte ? <span>dans {donnees.contexte}</span> : null}
+              {donnees?.mots ? <span>{donnees.mots.toLocaleString("fr-FR")} mots</span> : null}
+              {donnees?.compte !== undefined ? (
+                <span>
+                  {donnees.compte} {pointChoisi.type === "bloc" ? "catégorie" : "article"}
+                  {donnees.compte > 1 ? "s" : ""}
+                </span>
+              ) : null}
+              <span>
+                {proches?.size ?? 0} lien{(proches?.size ?? 0) > 1 ? "s" : ""}
+              </span>
+            </p>
+
+            {lectureEnCours && (
+              <p className="graphe-apercu-attente" role="status">
+                <LoaderCircle className="size-4 animate-spin" aria-hidden="true" />
+                Lecture…
+              </p>
+            )}
+
+            {donnees && (donnees.resume || donnees.extrait) && (
+              <div ref={texteApercu} className="graphe-apercu-texte" tabIndex={0} role="region" aria-label="Aperçu du contenu">
+                {donnees.resume && <p className="graphe-apercu-resume">{donnees.resume}</p>}
+                {donnees.extrait && <p className="graphe-apercu-extrait">{donnees.extrait}</p>}
+              </div>
+            )}
+
+            <button type="button" className="bouton bouton-principal graphe-apercu-ouvrir" onClick={() => router.push(pointChoisi.href)}>
+              {OUVRIR[pointChoisi.type]}
+              <ArrowRight className="size-4" aria-hidden="true" />
+            </button>
+            <p className="graphe-apercu-aide">Appuie une deuxième fois sur le point pour l&apos;ouvrir.</p>
+          </aside>
         )}
       </div>
       {points.length <= 3 && (

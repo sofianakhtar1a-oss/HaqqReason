@@ -119,4 +119,43 @@ ok("logique par défaut cohérente", (["validite", "demonstration", "syllogisme"
   ok("cause inconnue : message de repli utile", /télécharge/.test(messageDouverture(err("Error", "???"))));
 }
 
+// ---------------------------------------------------------------- Atelier d'image : calculs
+{
+  const { bornerRecadrage, tailleFinale, rayonCoins, poidsLisible, nomPourCapture, RECADRAGE_ENTIER, REGLAGES_PAR_DEFAUT, LARGEUR_MAX } = await import("../src/lib/client/image-atelier");
+  const r = (x: number, y: number, largeur: number, hauteur: number) => bornerRecadrage({ x, y, largeur, hauteur });
+  ok("recadrage : l'image entière reste l'image entière", JSON.stringify(r(0, 0, 1, 1)) === JSON.stringify(RECADRAGE_ENTIER));
+  ok("recadrage : une zone qui sort à gauche est ramenée dedans", r(-0.4, 0, 0.5, 0.5).x === 0);
+  ok("recadrage : une zone qui sort à droite est ramenée dedans", r(0.9, 0, 0.5, 0.5).x === 0.5);
+  ok("recadrage : une zone plus grande que l'image est rabotée", r(0, 0, 3, 3).largeur === 1 && r(0, 0, 3, 3).hauteur === 1);
+  ok("recadrage : il reste toujours une zone utilisable", r(0, 0, 0, 0).largeur >= 0.02 && r(0, 0, -5, -5).hauteur >= 0.02);
+
+  const source = { largeur: 1600, hauteur: 900 };
+  const regler = (p: Partial<typeof REGLAGES_PAR_DEFAUT>) => tailleFinale(source, { ...REGLAGES_PAR_DEFAUT, ...p });
+  ok("taille : la largeur demandée est respectée", regler({ largeur: 800 }).largeur === 800);
+  ok("taille : les proportions sont gardées", regler({ largeur: 800 }).hauteur === 450);
+  ok("taille : on n'agrandit jamais au-delà de la source", regler({ largeur: 5000 }).largeur === 1600);
+  ok("taille : la largeur maximale est tenue", tailleFinale({ largeur: 9000, hauteur: 9000 }, { ...REGLAGES_PAR_DEFAUT, largeur: 9000 }).largeur === LARGEUR_MAX);
+  ok("taille : une largeur minuscule est relevée", regler({ largeur: 1 }).largeur === 80);
+  const coupe = tailleFinale(source, { ...REGLAGES_PAR_DEFAUT, largeur: 1600, recadrage: { x: 0.25, y: 0.25, largeur: 0.5, hauteur: 0.5 } });
+  ok("taille : le recadrage limite la largeur disponible", coupe.largeur === 800 && coupe.hauteur === 450);
+
+  const { tailleFichier } = await import("../src/lib/client/image-atelier");
+  const fichier = (p: Partial<typeof REGLAGES_PAR_DEFAUT>) => tailleFichier(source, { ...REGLAGES_PAR_DEFAUT, ...p });
+  ok("fichier : sans cadre ni ombre, c'est la taille de l'image", JSON.stringify(fichier({ largeur: 800 })) === JSON.stringify({ largeur: 800, hauteur: 450 }));
+  ok("fichier : le cadre s'ajoute des deux côtés", fichier({ largeur: 800, cadre: 6 }).largeur === 812);
+  ok("fichier : l'ombre réserve de la place autour", fichier({ largeur: 800, ombre: true }).largeur === 832);
+  ok("fichier : cadre et ombre se cumulent", fichier({ largeur: 800, cadre: 6, ombre: true }).hauteur === 494);
+
+  ok("coins : 0 % ne donne aucun arrondi", rayonCoins({ largeur: 800, hauteur: 400 }, 0) === 0);
+  ok("coins : l'arrondi suit le plus petit côté", rayonCoins({ largeur: 800, hauteur: 400 }, 10) === 40);
+  ok("coins : l'arrondi est plafonné à la moitié", rayonCoins({ largeur: 800, hauteur: 400 }, 200) === 200);
+
+  ok("poids : en octets", poidsLisible(900) === "900 o");
+  ok("poids : en kilo-octets", poidsLisible(40960) === "40 ko");
+  ok("poids : en méga-octets", poidsLisible(3 * 1024 * 1024) === "3.0 Mo");
+
+  const nom = nomPourCapture(() => new Date(2026, 10, 15, 9, 5, 3));
+  ok("nom de fichier : daté et lisible", nom === "capture-2026-11-15-090503.png", nom);
+}
+
 process.exit(e);

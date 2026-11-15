@@ -20,6 +20,7 @@ import { actionsSpeciales } from "./commandes";
 import { ListeSlash, MenuSlash } from "./MenuSlash";
 import { MenuBulle } from "./MenuBulle";
 import { OutilsBloc } from "./OutilsBloc";
+import { AtelierImage, type ResultatAtelier } from "../ateliers/AtelierImage";
 import { PanneauBloc } from "./PanneauBloc";
 import { VueCitationOuvrage, VueLienCarte, VueLogique, VueReference, VueSchema, VueSommaire, VueSophisme } from "./VuesBlocs";
 import { creerApercu } from "../../apercu-actions";
@@ -101,6 +102,8 @@ export function EditeurRiche({ article, visibilite, enLigne, actions }: Props) {
   const [demandeLien, setDemandeLien] = useState<{ youtube: boolean; position: number } | null>(null);
   const [adresse, setAdresse] = useState("");
   const [choixSource, setChoixSource] = useState<{ mode: "reference" | "citation"; position: number } | null>(null);
+  // Image collée en attente de retouche (capture d'écran, image copiée depuis une page).
+  const [imageCollee, setImageCollee] = useState<{ source: Blob; position: number } | null>(null);
 
   // Valeurs courantes lues par l'enregistrement (évite de travailler sur des valeurs périmées).
   const champs = useRef({ titre: article.titre, resume: article.resume, etiquettes: article.etiquettes });
@@ -272,6 +275,29 @@ export function EditeurRiche({ article, visibilite, enLigne, actions }: Props) {
     router.refresh();
   }
 
+  /** Insère l'image sortie de l'atelier : envoi, puis bloc image là où on avait collé. */
+  async function insererImageRetouchee({ fichier, largeur, legende, alt }: ResultatAtelier, position: number) {
+    if (!editor) return;
+    setImageCollee(null);
+    const r = await envoyerFichier(fichier, { type: "article", id: article.id }, {
+      dansListe: false,
+      suivi: (m, p) => setEnvoiEnCours(p !== undefined ? `${m} (${p} %)` : m),
+    });
+    if (!r.ok) {
+      setEnvoiEnCours("");
+      setMessage(r.message);
+      changerEtat("erreur");
+      return;
+    }
+    editor
+      .chain()
+      .focus()
+      .insertContentAt(Math.min(position, editor.state.doc.content.size), { type: "image", attrs: { fichier: r.id, legende, alt, largeur } })
+      .run();
+    setEnvoiEnCours("");
+    router.refresh();
+  }
+
   /** Prépare l'aperçu (titre, vignette) puis insère la carte du lien à la position donnée. */
   async function insererCarte(url: string, position: number, remplacerLigneVide: boolean) {
     if (!editor) return;
@@ -299,6 +325,15 @@ export function EditeurRiche({ article, visibilite, enLigne, actions }: Props) {
   useEffect(() => {
     collerRef.current = (e: ClipboardEvent) => {
       if (!editor) return false;
+
+      // Une image dans le presse-papiers (capture d'écran, image copiée) ouvre l'atelier.
+      const image = [...(e.clipboardData?.items ?? [])].find((i) => i.kind === "file" && i.type.startsWith("image/"));
+      const fichier = image?.getAsFile();
+      if (fichier && fichier.size > 0) {
+        setImageCollee({ source: fichier, position: editor.state.selection.from });
+        return true;
+      }
+
       const texte = e.clipboardData?.getData("text/plain")?.trim() ?? "";
       if (!/^https?:\/\/\S+$/.test(texte) || texte.length > 2000) return false;
       const { $from, empty } = editor.state.selection;
@@ -449,6 +484,13 @@ export function EditeurRiche({ article, visibilite, enLigne, actions }: Props) {
               </button>
             </form>
           </Modale>
+        )}
+        {imageCollee && (
+          <AtelierImage
+            source={imageCollee.source}
+            onFermer={() => setImageCollee(null)}
+            onValider={(r) => void insererImageRetouchee(r, imageCollee.position)}
+          />
         )}
         {choixSource && (
           <ChoixSource
