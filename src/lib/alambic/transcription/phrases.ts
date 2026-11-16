@@ -88,7 +88,7 @@ export function depuisWhisper(segments: SegmentBrut[], mots: { word: string; sta
   let repetitions = 0;
   for (const s of segments) {
     const texte = s.text.trim();
-    if (!texte) continue;
+    if (!normaliser(texte)) continue;
     const nbMots = texte.split(/\s+/).length;
     if ((s.no_speech_prob ?? 0) > 0.6 && (s.avg_logprob ?? 0) < -0.8) continue;
     if ((s.compression_ratio ?? 0) > 2.6) continue;

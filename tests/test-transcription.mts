@@ -2,6 +2,7 @@ import { aligner, construirePhrases, depuisWhisper, motA, normaliser, phraseA, r
 import { versSrt, versTexte, versVtt } from "../src/lib/alambic/transcription/exports";
 import { idYoutube } from "../src/lib/alambic/transcription/lien";
 import { texteDe } from "../src/lib/alambic/transcription/types";
+import { depuisVtt } from "../src/lib/alambic/transcription/vtt";
 
 let e = 0;
 const ok = (n: string, c: boolean, x: unknown = "") => {
@@ -82,6 +83,14 @@ ok(
   [`https://www.youtube.com/watch?v=${id}&t=42`, `https://youtu.be/${id}?si=x`, `youtube.com/shorts/${id}`, `https://m.youtube.com/watch?v=${id}`, `https://www.youtube.com/embed/${id}`, `https://www.youtube.com/live/${id}`, id].every((l) => idYoutube(l) === id),
 );
 ok("un lien étranger est refusé", idYoutube("https://vimeo.com/123456") === null && idYoutube("https://evil.com/watch?v=dQw4w9WgXcQ") === null);
+
+// ---------------------------------------------------------------- sous-titres YouTube (WebVTT)
+const auto = `WEBVTT\nKind: captions\nLanguage: en\n\n00:00:12.645 --> 00:00:14.015 align:start position:0%\n \nSo<00:00:12.900><c> in</c><00:00:13.200><c> college,</c>\n\n00:00:14.015 --> 00:00:14.025 align:start position:0%\nSo in college,\n \n\n00:00:14.025 --> 00:00:16.000 align:start position:0%\nSo in college,\nI<00:00:14.300><c> was</c><00:00:14.600><c> a</c>\n`;
+const fa = depuisVtt(auto);
+ok("sous-titres automatiques : chaque mot garde son instant, sans répétition", fa.map((f) => f.texte).join(" ") === "So in college, I was a" && fa[0].mots?.[1].d === 12.9, fa);
+const ecrit = `WEBVTT\n\n00:00:01.000 --> 00:00:03.500\nHello &amp; welcome.\n\n00:00:03.600 --> 00:00:06.000\n<i>This is</i> a talk.\n`;
+const fe = depuisVtt(ecrit);
+ok("sous-titres écrits : texte nettoyé et horodaté", fe.length === 2 && fe[0].texte === "Hello & welcome." && fe[1].texte === "This is a talk." && fe[1].d === 3.6, fe);
 
 console.log(e ? `\n${e} échec(s)` : "\nTout est bon.");
 process.exit(e ? 1 : 0);

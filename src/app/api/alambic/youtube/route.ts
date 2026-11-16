@@ -1,6 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { erreur, garder, reponseErreur, SANS_CACHE } from "@/lib/alambic/serveur/garde";
-import { apercu, sousTitres } from "@/lib/alambic/serveur/youtube";
+import { apercu, sousTitres, viaRelais } from "@/lib/alambic/serveur/youtube";
 import { idYoutube } from "@/lib/alambic/transcription/lien";
 
 /*
@@ -24,9 +24,18 @@ export async function GET(requete: NextRequest) {
   const refus = await garder(requete, "youtube");
   if (refus) return refus;
   const langue = parametres.get("langue");
+  const voulue = langue && ["en", "ar", "es"].includes(langue) ? langue : null;
+  // 1. Les relais publics (YouTube bloque les serveurs comme Vercel, pas eux).
   try {
-    const video = await sousTitres(id, langue && ["en", "ar", "es"].includes(langue) ? langue : null, requete.signal);
-    return NextResponse.json({ id, ...video }, { headers: SANS_CACHE });
+    const video = await viaRelais(id, voulue, requete.signal);
+    if (video) return NextResponse.json({ id, ...video }, { headers: SANS_CACHE });
+  } catch (e) {
+    if (requete.signal.aborted) return reponseErreur(e);
+  }
+  // 2. YouTube directement, au cas où il laisserait passer.
+  try {
+    const video = await sousTitres(id, voulue, requete.signal);
+    return NextResponse.json({ id, ...video, son: null }, { headers: SANS_CACHE });
   } catch (e) {
     return reponseErreur(e);
   }

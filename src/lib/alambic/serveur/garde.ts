@@ -17,7 +17,7 @@ const QUOTAS: Record<Usage, number> = {
   transcription: 60,
   traduction: 240,
   analyse: 400,
-  youtube: 60,
+  youtube: 120,
 };
 
 export const SANS_CACHE = { "Cache-Control": "private, no-store" };

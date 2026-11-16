@@ -42,4 +42,4 @@ Pour qu'un robot ne puisse pas vider ce quota, chaque visiteur a aussi sa limite
 - Routes : `src/app/api/alambic/{transcrire,traduire,analyser,youtube}`. La clé ne quitte jamais le serveur.
 - Moteur, sans dépendance à l'interface et testé (`npm run test:transcription`) : `src/lib/alambic/transcription/`.
 - Interface : `src/app/alambic/transcription/`.
-- Modèles par défaut : `whisper-large-v3`, `openai/gpt-oss-120b` pour les phrases, `openai/gpt-oss-20b` pour les mots. On peut les changer dans Vercel (voir `.env.example`), sans toucher au code.
+- Modèles par défaut : `whisper-large-v3`, `openai/gpt-oss-120b` pour les phrases et pour les mots. On peut les changer dans Vercel (voir `.env.example`), sans toucher au code.

@@ -12,8 +12,8 @@ const BASE = "https://api.groq.com/openai/v1";
 const MODELE_AUDIO = process.env.GROQ_MODELE_AUDIO || "whisper-large-v3";
 /** Traduction des phrases : le grand modèle (production chez Groq en novembre 2026). */
 export const MODELE_PHRASES = process.env.GROQ_MODELE_TEXTE || "openai/gpt-oss-120b";
-/** Sens des mots : le petit modèle, plus rapide, avec son propre quota gratuit. */
-export const MODELE_MOTS = process.env.GROQ_MODELE_MOTS || "openai/gpt-oss-20b";
+/** Sens des mots : le grand modèle aussi (le petit répondait parfois dans la langue d'origine). */
+export const MODELE_MOTS = process.env.GROQ_MODELE_MOTS || "openai/gpt-oss-120b";
 
 export class ErreurGroq extends Error {
   constructor(

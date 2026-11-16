@@ -38,7 +38,7 @@ export async function POST(requete: Request) {
     `Tu es un professeur d'${langue} qui explique une phrase à un francophone, mot par mot.`,
     "Entrée : une phrase transcrite d'un enregistrement, en mots numérotés [i, mot].",
     'Réponds uniquement en JSON : {"t": "traduction française naturelle de toute la phrase", "m": [[i, sens, nature, lemme' + (arabe ? ", racine" : "") + "], …]} avec UNE entrée par mot numéroté :",
-    "- sens : le sens du mot DANS CETTE PHRASE, en français, 1 à 5 mots ;",
+    "- sens : la TRADUCTION FRANÇAISE du mot dans cette phrase, 1 à 5 mots. Toujours en français, jamais recopié dans la langue d'origine (ex. pour « نور » : « lumière ») ;",
     "- nature : n (nom), v (verbe), a (adjectif), d (adverbe), p (pronom), r (préposition), c (conjonction), t (article), x (particule), np (nom propre) ;",
     "- lemme : forme de base dans la langue d'origine (infinitif, singulier, masculin) ;",
     arabe ? "- racine : 3 ou 4 lettres arabes séparées par des espaces, ou \"\" pour un mot outil ou un nom étranger. Un mot avec préfixe collé (و ف ب ل ك ال) reçoit le sens de l'ensemble." : "",
@@ -57,7 +57,8 @@ export async function POST(requete: Request) {
       if (!Array.isArray(ligne)) continue;
       const i = Number(ligne[0]);
       const sens = texte(ligne[1], 80);
-      if (!valides.has(i) || !sens) continue;
+      // Un « sens » resté en écriture arabe n'est pas une traduction : on l'écarte.
+      if (!valides.has(i) || !sens || /[\u0600-\u06FF]/.test(sens)) continue;
       const nature = texte(ligne[2], 12);
       gloses.push({ i, sens, nature: nature ? (NATURES[nature] ?? nature) : undefined, lemme: texte(ligne[3], 40), racine: arabe ? texte(ligne[4], 20) : undefined });
     }

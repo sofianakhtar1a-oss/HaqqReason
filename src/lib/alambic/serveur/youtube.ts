@@ -1,6 +1,8 @@
 import "server-only";
 import type { Fragment } from "../transcription/types";
+import { decoder, depuisVtt } from "../transcription/vtt";
 import { ErreurGroq } from "./groq";
+export { depuisVtt };
 
 /*
  * Vidéo YouTube : on lit les sous-titres qu'elle a déjà (écrits par l'auteur, ou automatiques).
@@ -67,15 +69,6 @@ function choisir(pistes: Piste[], voulue: string | null): Piste | undefined {
   }
   return voulue ? undefined : pistes.find((p) => p.kind !== "asr") ?? pistes[0];
 }
-
-const ENTITES: Record<string, string> = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", "#39": "'" };
-const decoder = (s: string) =>
-  s.replace(/&(#\d+|#x[0-9a-f]+|\w+);/gi, (m, e: string) => {
-    if (ENTITES[e]) return ENTITES[e];
-    if (e.startsWith("#x")) return String.fromCodePoint(Number.parseInt(e.slice(2), 16));
-    if (e.startsWith("#")) return String.fromCodePoint(Number(e.slice(1)));
-    return m;
-  });
 
 type Json3 = { events?: { tStartMs?: number; dDurationMs?: number; segs?: { utf8?: string; tOffsetMs?: number }[] }[] };
 
@@ -161,4 +154,92 @@ export async function apercu(id: string, signal?: AbortSignal): Promise<{ titre:
   } catch {
     return null;
   }
+}
+
+/* ---------- Relais Invidious : YouTube bloque les serveurs, pas ces relais publics ---------- */
+
+const RELAIS_SECOURS = ["yt.chocolatemoo53.com", "inv.nadeko.net", "invidious.nerdvpn.de", "invidious.tiekoetter.com"];
+let relaisCache: { liste: string[]; quand: number } | null = null;
+
+/** Relais en état de marche, du plus fiable au moins fiable (liste publique, gardée une heure). */
+export async function relais(): Promise<string[]> {
+  if (relaisCache && Date.now() - relaisCache.quand < 3600_000) return relaisCache.liste;
+  let publics: string[] = [];
+  try {
+    const r = await fetch("https://api.invidious.io/instances.json?sort_by=health", { signal: AbortSignal.timeout(5000) });
+    const j = (await r.json()) as [string, { type?: string; api?: boolean | null }][];
+    publics = j.filter(([, i]) => i.type === "https" && i.api !== false).map(([n]) => n);
+  } catch {
+    // La liste publique est indisponible : les relais connus suffisent.
+  }
+  const liste = [...new Set([...publics, ...RELAIS_SECOURS])].filter((h) => /^[a-z0-9.-]+$/i.test(h));
+  relaisCache = { liste, quand: Date.now() };
+  return liste;
+}
+
+type FormatAudio = { itag: string; type: string; clen: string; bitrate: string };
+type VideoInvidious = {
+  title?: string;
+  author?: string;
+  lengthSeconds?: number;
+  captions?: { label: string; languageCode: string; url: string }[];
+  adaptiveFormats?: FormatAudio[];
+};
+
+export type ResultatYoutube = {
+  titre: string;
+  auteur: string;
+  duree: number;
+  langue: string;
+  automatiques: boolean;
+  fragments: Fragment[];
+  /** Le son de la vidéo, pour que Whisper la transcrive (relais + format). */
+  son: { relais: string; itag: string; taille: number; type: string } | null;
+};
+
+export async function viaRelais(id: string, langueVoulue: string | null, signal?: AbortSignal): Promise<ResultatYoutube | null> {
+  for (const hote of (await relais()).slice(0, 6)) {
+    try {
+      const r = await fetch(`https://${hote}/api/v1/videos/${id}?local=true&fields=title,author,lengthSeconds,captions,adaptiveFormats`, { signal: signal ?? AbortSignal.timeout(9000) });
+      if (!r.ok) continue;
+      const v = (await r.json()) as VideoInvidious;
+      if (!v.title) continue;
+      // Son le plus léger (Opus de préférence) : il suffit largement à Whisper.
+      const sons = (v.adaptiveFormats ?? []).filter((f) => f.type?.startsWith("audio/") && Number(f.clen) > 0).sort((a, b) => Number(a.bitrate) - Number(b.bitrate));
+      const son = sons.find((f) => f.type.includes("opus")) ?? sons[0];
+      const pistes = (v.captions ?? []).map((c) => ({ ...c, auto: /auto/i.test(c.label), langue: c.languageCode.split("-")[0] }));
+      // Les sous-titres automatiques sont toujours dans la langue parlée ; les autres peuvent être des traductions.
+      const parlee = pistes.find((p) => p.auto)?.langue;
+      const ordre = langueVoulue ? [langueVoulue] : parlee ? [parlee] : ["ar", "en", "es"];
+      let piste: (typeof pistes)[number] | undefined;
+      for (const l of ordre) {
+        const dans = pistes.filter((p) => p.langue === l);
+        piste = dans.find((p) => !p.auto) ?? dans[0];
+        if (piste) break;
+      }
+      piste ??= langueVoulue ? undefined : (pistes.find((p) => !p.auto) ?? pistes[0]);
+      let fragments: Fragment[] = [];
+      if (piste) {
+        try {
+          const t = await fetch(`https://${hote}${piste.url}`, { signal: AbortSignal.timeout(9000) });
+          if (t.ok) fragments = depuisVtt(await t.text());
+        } catch {
+          // Sous-titres illisibles : le son prendra le relais.
+        }
+      }
+      if (!fragments.length && !son) continue;
+      return {
+        titre: v.title,
+        auteur: v.author ?? "",
+        duree: v.lengthSeconds ?? 0,
+        langue: piste?.langue ?? parlee ?? langueVoulue ?? "",
+        automatiques: piste?.auto ?? true,
+        fragments,
+        son: son ? { relais: hote, itag: son.itag, taille: Number(son.clen), type: son.type.split(";")[0] } : null,
+      };
+    } catch (e) {
+      if (signal?.aborted) throw e;
+    }
+  }
+  return null;
 }

@@ -83,7 +83,33 @@ export function analyserPhrase(langue: string, mots: string[], contexte: string,
 export type ApercuYoutube = { id: string; titre: string; auteur: string };
 export const apercuYoutube = (id: string, signal?: AbortSignal) => appeler<ApercuYoutube>(`/api/alambic/youtube?apercu=1&v=${id}`, {}, signal, 1);
 
-type ReponseYoutube = { id: string; titre: string; auteur: string; duree: number; langue: string; automatiques: boolean; fragments: Fragment[] };
+type SonYoutube = { relais: string; itag: string; taille: number; type: string };
+type ReponseYoutube = { id: string; titre: string; auteur: string; duree: number; langue: string; automatiques: boolean; fragments: Fragment[]; son: SonYoutube | null };
+
+/** Le son d'une vidéo, rapatrié par morceaux de 3,5 Mo à travers le relais de l'application. */
+async function telechargerSon(id: string, son: SonYoutube, avancer: (f: number) => void, signal?: AbortSignal): Promise<Blob> {
+  const MORCEAU = 3_500_000;
+  const parts: Blob[] = [];
+  for (let debut = 0; debut < son.taille; debut += MORCEAU) {
+    const fin = Math.min(son.taille, debut + MORCEAU) - 1;
+    const adresse = `/api/alambic/youtube/son?v=${id}&relais=${encodeURIComponent(son.relais)}&itag=${son.itag}&debut=${debut}&fin=${fin}`;
+    let morceau: Blob | null = null;
+    for (let essai = 0; essai < 3 && !morceau; essai++) {
+      try {
+        const r = await fetch(adresse, { signal, credentials: "same-origin" });
+        if (r.ok) morceau = await r.blob();
+        else if (r.status === 429) throw new ErreurService("Tu as atteint la limite de l'heure pour YouTube. Réessaie un peu plus tard.");
+      } catch (e) {
+        if (signal?.aborted || e instanceof ErreurService) throw e;
+      }
+      if (!morceau) await pause(1200 * (essai + 1), signal);
+    }
+    if (!morceau || !morceau.size) throw new ErreurService("Le son de la vidéo n'a pas pu être récupéré.");
+    parts.push(morceau);
+    avancer((fin + 1) / son.taille);
+  }
+  return new Blob(parts, { type: son.type });
+}
 
 /* ---------- Déroulé complet ---------- */
 
@@ -165,23 +191,37 @@ export async function transcrireFichier(fichier: File, langue: string | null, su
 }
 
 export async function transcrireYoutube(id: string, langue: string | null, suivi: Suivi, signal?: AbortSignal): Promise<Transcription> {
-  suivi.etape("distillation");
-  suivi.progression(0.2, { prets: 1, transcrits: 0, total: 1 });
+  suivi.etape("preparation");
+  suivi.progression(0.03, { prets: 0, transcrits: 0, total: 1 });
   const r = await appeler<ReponseYoutube>(`/api/alambic/youtube?v=${id}${langue ? `&langue=${langue}` : ""}`, {}, signal, 2);
-  suivi.distillat(r.fragments.flatMap((f) => f.texte.split(/\s+/)).slice(0, 80));
-  suivi.etape("mise-en-page");
-  const phrases = construirePhrases(recoller([{ decalage: 0, de: Number.NEGATIVE_INFINITY, a: Number.POSITIVE_INFINITY, fragments: r.fragments }]));
-  if (!phrases.length) throw new ErreurService("Les sous-titres de cette vidéo sont vides.");
-  suivi.progression(1, { prets: 1, transcrits: 1, total: 1 });
-  return {
-    id: nouvelId(),
-    titre: r.titre,
-    langue: r.langue,
-    duree: r.duree,
-    source: { type: "youtube", id, auteur: r.auteur },
-    phrases,
-    creeLe: Date.now(),
-    traductions: {},
-    analyses: {},
+  const source = { type: "youtube" as const, id, auteur: r.auteur };
+
+  const depuisSousTitres = (): Transcription => {
+    suivi.etape("mise-en-page");
+    suivi.distillat(r.fragments.flatMap((f) => f.texte.split(/\s+/)).slice(0, 80));
+    const phrases = construirePhrases(recoller([{ decalage: 0, de: Number.NEGATIVE_INFINITY, a: Number.POSITIVE_INFINITY, fragments: r.fragments }]));
+    if (!phrases.length) throw new ErreurService("Les sous-titres de cette vidéo sont vides.");
+    suivi.progression(1, { prets: 1, transcrits: 1, total: 1 });
+    return { id: nouvelId(), titre: r.titre, langue: r.langue || langue || "en", duree: r.duree, source, phrases, creeLe: Date.now(), traductions: {}, analyses: {} };
   };
+
+  // 1. Sous-titres écrits par l'auteur : les plus justes.
+  if (r.fragments.length && !r.automatiques) return depuisSousTitres();
+
+  // 2. Sinon, Whisper écoute le son de la vidéo (bien mieux que les sous-titres automatiques).
+  if (r.son) {
+    try {
+      const son = await telechargerSon(id, r.son, (f) => suivi.progression(f * 0.25, { prets: 0, transcrits: 0, total: 1 }), signal);
+      const fichier = new File([son], `${id}.${r.son.type.includes("webm") ? "webm" : "m4a"}`, { type: r.son.type });
+      const indice = langue ?? (["en", "ar", "es"].includes(r.langue) ? r.langue : null);
+      const t = await transcrireFichier(fichier, indice, { ...suivi, progression: (f, d) => suivi.progression(0.25 + f * 0.75, d) }, signal);
+      return { ...t, titre: r.titre, duree: r.duree || t.duree, source };
+    } catch (e) {
+      if (signal?.aborted || !r.fragments.length) throw e;
+    }
+  }
+
+  // 3. En dernier recours, les sous-titres automatiques.
+  if (r.fragments.length) return depuisSousTitres();
+  throw new ErreurService("Cette vidéo n'a ni sous-titres ni son accessible. Télécharge son audio et dépose le fichier ici.");
 }
