@@ -4911,6 +4911,10 @@ a.contrib-renvoi:focus-visible {
 @media (min-width: 64rem) {
   .alambic-outils {
     grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 88rem) {
+  .alambic-outils {
     position: sticky;
     top: 1rem;
   }
