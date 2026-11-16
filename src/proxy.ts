@@ -29,7 +29,10 @@ export async function proxy(request: NextRequest) {
     // jamais eval() ni l'exécution de code arbitraire.
     `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'wasm-unsafe-eval'${dev ? " 'unsafe-eval'" : ""}`,
     "style-src 'self' 'unsafe-inline'",
-    `img-src 'self' data: blob:${stockage}`,
+    // i.ytimg.com : vignettes des vidéos YouTube collées dans L'Alambic (outil « Transcrire »).
+    `img-src 'self' data: blob: https://i.ytimg.com${stockage}`,
+    // Lecteur YouTube officiel (domaine sans cookie), pour lire une vidéo comme un livre.
+    "frame-src https://www.youtube-nocookie.com https://www.youtube.com",
     // L'Alambic : aperçu des sons et vidéos de l'appareil (adresses blob: locales, rien ne sort).
     "media-src 'self' blob:",
     "font-src 'self' data:",

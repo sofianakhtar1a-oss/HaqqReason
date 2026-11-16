@@ -4852,6 +4852,11 @@ a.contrib-renvoi:focus-visible {
   font-weight: 600;
   color: var(--encre-douce);
 }
+.alambic-local[data-nuage] {
+  border-color: color-mix(in srgb, var(--amethyste) 40%, transparent);
+  background: color-mix(in srgb, var(--amethyste) 10%, transparent);
+  color: var(--amethyste);
+}
 .alambic-local {
   display: inline-flex;
   align-items: center;
@@ -4903,9 +4908,27 @@ a.contrib-renvoi:focus-visible {
   gap: 0.6rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
+/* Cinq outils : sur téléphone, le dernier prend toute la largeur ; sur tablette, ils tiennent sur une ligne. */
+.alambic-outils > :last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
 @media (min-width: 40rem) {
   .alambic-outils {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .alambic-outils > :last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+}
+@media (min-width: 40rem) and (max-width: 63.99rem) {
+  .alambic-tuile {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 0.85rem 0.5rem;
+  }
+  .alambic-tuile-nom {
+    font-size: 1rem;
   }
 }
 @media (min-width: 64rem) {

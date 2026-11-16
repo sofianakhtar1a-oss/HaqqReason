@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Layers, Scissors, ShieldCheck, Shuffle, WifiOff } from "lucide-react";
+import { Captions, Cloud, Layers, Scissors, ShieldCheck, Shuffle, WifiOff } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { BoutonTheme } from "@/components/BoutonTheme";
 import { Logo } from "@/components/Logo";
@@ -14,14 +14,16 @@ import { Fusion } from "./Fusion";
 import { Protection } from "./Protection";
 import type { Abonner } from "./reception";
 import { ICONES } from "./SelecteurFormat";
+import { Transcription } from "./transcription/Transcription";
 
-type Outil = "convertir" | "fusionner" | "decouper" | "proteger";
+type Outil = "convertir" | "fusionner" | "decouper" | "proteger" | "transcrire";
 
 const OUTILS: { id: Outil; nom: string; aide: string; Icone: typeof Layers }[] = [
   { id: "convertir", nom: "Convertir", aide: "D'un format à l'autre, dans les deux sens", Icone: Shuffle },
   { id: "fusionner", nom: "Fusionner", aide: "Plusieurs fichiers, un seul PDF", Icone: Layers },
   { id: "decouper", nom: "Découper", aide: "Des pages, ou un passage d'un son, d'une vidéo", Icone: Scissors },
   { id: "proteger", nom: "Protéger", aide: "Un mot de passe, chiffré en AES-256", Icone: ShieldCheck },
+  { id: "transcrire", nom: "Transcrire", aide: "Un son ou une vidéo devient un livre à lire", Icone: Captions },
 ];
 
 function outilDuLien(): Outil {
@@ -74,10 +76,17 @@ export function Alambic() {
           L&apos;Alambic
         </span>
         <span className="flex-1" />
-        <span className="alambic-local" title="Aucun fichier n'est envoyé : tout est calculé par ton appareil.">
-          <WifiOff className="size-4" aria-hidden="true" />
-          Rien ne quitte ton appareil
-        </span>
+        {outil === "transcrire" ? (
+          <span className="alambic-local" data-nuage="" title="Pour transcrire, le son est envoyé à Groq (Whisper). Le texte reste sur ton appareil.">
+            <Cloud className="size-4" aria-hidden="true" />
+            Le son passe par Groq
+          </span>
+        ) : (
+          <span className="alambic-local" title="Aucun fichier n'est envoyé : tout est calculé par ton appareil.">
+            <WifiOff className="size-4" aria-hidden="true" />
+            Rien ne quitte ton appareil
+          </span>
+        )}
         <BoutonTheme />
         {accesComplet && (
           <Link href="/utilisateur" className="calame-sortie">
@@ -104,6 +113,7 @@ export function Alambic() {
           {outil === "fusionner" && <Fusion abonner={abonner} />}
           {outil === "decouper" && <Decoupe capacites={capacites} abonner={abonner} />}
           {outil === "proteger" && <Protection abonner={abonner} />}
+          {outil === "transcrire" && <Transcription abonner={abonner} />}
         </div>
 
         <aside className="alambic-cotes" aria-label="À propos">
@@ -125,12 +135,21 @@ export function Alambic() {
               })}
             </ul>
           </div>
-          <div className="alambic-carte verre">
-            <p className="font-display text-lg font-bold">Tout se fait ici</p>
-            <p className="text-sm text-encre-douce">
-              Tes fichiers sont lus et transformés par ton propre appareil. Rien n&apos;est envoyé, rien n&apos;est gardé : ferme la page, il ne reste rien.
-            </p>
-          </div>
+          {outil === "transcrire" ? (
+            <div className="alambic-carte verre">
+              <p className="font-display text-lg font-bold">Une exception, annoncée</p>
+              <p className="text-sm text-encre-douce">
+                Pour transcrire, le son est allégé ici puis envoyé à Groq, qui l&apos;écoute avec Whisper. Les textes et leurs traductions restent sur ton appareil, dans ta bibliothèque.
+              </p>
+            </div>
+          ) : (
+            <div className="alambic-carte verre">
+              <p className="font-display text-lg font-bold">Tout se fait ici</p>
+              <p className="text-sm text-encre-douce">
+                Tes fichiers sont lus et transformés par ton propre appareil. Rien n&apos;est envoyé, rien n&apos;est gardé : ferme la page, il ne reste rien.
+              </p>
+            </div>
+          )}
           {(!capacites.aac || !capacites.h264) && (
             <div className="alambic-carte verre">
               <p className="text-sm text-encre-douce">
