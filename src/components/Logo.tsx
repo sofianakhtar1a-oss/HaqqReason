@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { LienAccueil } from "./LienAccueil";
 
 /** Le sceau à huit branches et le nom HaqqReason. */
 export function Sceau({ taille = 28 }: { taille?: number }) {
@@ -11,13 +11,14 @@ export function Sceau({ taille = 28 }: { taille?: number }) {
   );
 }
 
-export function Logo({ href = "/" }: { href?: string }) {
+/** Le logo mène à l'accueil, ou à la porte de l'espace en cours pour qui est arrivé par un lien direct. */
+export function Logo() {
   return (
-    <Link href={href} className="inline-flex items-center gap-2.5 font-display text-xl font-bold tracking-tight">
+    <LienAccueil className="inline-flex items-center gap-2.5 font-display text-xl font-bold tracking-tight">
       <span className="text-or">
         <Sceau />
       </span>
       HaqqReason
-    </Link>
+    </LienAccueil>
   );
 }

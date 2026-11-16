@@ -3,10 +3,12 @@ import { BookOpen, Heart, Lightbulb, MessagesSquare, Network, PenLine, Scale, Sp
 import { BoutonTheme } from "@/components/BoutonTheme";
 import { BoutonRecherche } from "@/components/PaletteRecherche";
 import { Rosace } from "@/components/Rosace";
+import { MarqueAccueil } from "@/lib/client/acces";
 
 export default function Accueil() {
   return (
     <main className="relative flex flex-1 flex-col overflow-hidden">
+      <MarqueAccueil />
       <div className="absolute right-5 top-5 z-10 flex gap-2 sm:right-8">
         <BoutonRecherche />
         <BoutonTheme />

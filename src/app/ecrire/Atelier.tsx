@@ -29,6 +29,7 @@ import { CoupuresDePage } from "./pages-extension";
 import { COMMANDE_TABLEAU, extensionsTableau, GROUPES_ECARTES_ATELIER } from "./tableaux";
 import { VueDocumentLocal, VueImageLocale } from "./VuesLocales";
 import { exporterDocx, exporterMarkdown, exporterPaquet, exporterPdf } from "./exporter";
+import { useAccesComplet } from "@/lib/client/acces";
 
 const VUES: Record<string, (p: NodeViewProps) => React.ReactNode> = {
   schema: VueSchema,
@@ -71,6 +72,7 @@ type Props = {
 };
 
 export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, surImporter, surListeChangee }: Props) {
+  const accesComplet = useAccesComplet();
   const [titre, setTitre] = useState(doc.titre);
   const [reglages, setReglages] = useState<ReglagesPage>(doc.reglages);
   const [etat, setEtat] = useState<"propre" | "modifie" | "enregistrement">("propre");
@@ -407,9 +409,11 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
           <PanelRight className="size-5" aria-hidden="true" />
           <span className="sr-only">Afficher ou cacher la colonne de droite</span>
         </button>
-        <Link href="/utilisateur" className="calame-sortie">
-          Quitter
-        </Link>
+        {accesComplet && (
+          <Link href="/utilisateur" className="calame-sortie">
+            Quitter
+          </Link>
+        )}
       </header>
 
       {coteOuvert && (

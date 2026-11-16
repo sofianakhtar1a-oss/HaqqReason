@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, BookOpen, Feather } from "lucide-react";
 import { EnTete } from "@/components/EnTete";
 import { Rosace } from "@/components/Rosace";
+import { MarqueAccueil } from "@/lib/client/acces";
 
 export const metadata: Metadata = {
   title: "Mode utilisateur",
@@ -35,6 +36,7 @@ const CHOIX = [
 export default function PageUtilisateur() {
   return (
     <>
+      <MarqueAccueil />
       <EnTete />
       <Rosace className="pointer-events-none absolute -right-[36vw] top-[8vw] w-[110vw] max-w-none opacity-30 md:-right-[16rem] md:top-24 md:w-[44rem] md:opacity-70" />
       <main className="relative mx-auto flex w-full max-w-5xl flex-1 flex-col justify-center px-5 pb-20 pt-6 sm:px-8">

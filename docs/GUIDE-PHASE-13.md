@@ -90,3 +90,16 @@ Deux choses ont été laissées de côté volontairement, et peuvent être ajout
 **Le PDF ne ressemble pas à l'écran.** Dans la fenêtre d'impression, vérifie que les marges sont sur « par défaut » et que « Graphiques d'arrière-plan » est coché. L'échelle doit rester à 100 %.
 
 **Un document a disparu.** Regarde dans la liste de gauche : il est peut-être simplement plus bas. Si tu as vidé les données du navigateur, seule une sauvegarde complète permet de le retrouver.
+
+## Deux espaces cloisonnés
+
+- Qui arrive par l'accueil (l'adresse du site seule, ou « Mode utilisateur ») circule entre Le Calame et la bibliothèque.
+- Qui arrive par un lien direct reste dans l'espace de ce lien, en mode utilisateur :
+  - un lien vers Le Calame n'affiche ni bouton « Quitter », ni lien vers l'accueil ou la bibliothèque ;
+  - un lien vers la bibliothèque (ou un article) : le logo ramène à la bibliothèque, jamais à l'accueil ni au Calame.
+- Le passage par l'accueil est retenu sur l'appareil ; rien n'est envoyé au serveur.
+- C'est un cloisonnement de la navigation, pas un verrou : quelqu'un qui tape lui-même l'adresse du site arrive sur l'accueil.
+
+## Confidentialité des documents
+
+Les documents du Calame sont enregistrés dans la mémoire du navigateur de l'appareil où ils ont été écrits, jamais sur le serveur. Un autre visiteur, sur un autre appareil ou un autre navigateur, ne peut ni les voir ni les retrouver. Seule précaution : une personne qui utilise le même ordinateur et le même navigateur que toi les verrait.

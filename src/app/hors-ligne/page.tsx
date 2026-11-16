@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { WifiOff } from "lucide-react";
+import { LienAccueil } from "@/components/LienAccueil";
 import { Logo } from "@/components/Logo";
 
 export const metadata: Metadata = { title: "Hors ligne", robots: { index: false } };
@@ -19,9 +20,7 @@ export default function HorsLigne() {
         <Link href="/favoris" className="bouton bouton-principal">
           Mes favoris
         </Link>
-        <Link href="/" className="bouton bouton-discret">
-          Accueil
-        </Link>
+        <LienAccueil className="bouton bouton-discret">Accueil</LienAccueil>
       </div>
     </main>
   );
