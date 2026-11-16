@@ -4,7 +4,7 @@ import type { Editor } from "@tiptap/core";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CornerDownLeft, Search } from "lucide-react";
 import { COMMANDES } from "../createur/_composants/editeur/commandes";
-import { COMMANDES_TABLEAU } from "./tableaux";
+import { COMMANDE_TABLEAU, COMMANDES_TABLEAU, GROUPES_ECARTES_ATELIER } from "./tableaux";
 
 export type ActionPalette = { cle: string; libelle: string; description: string; groupe: string; faire: () => void };
 
@@ -13,9 +13,6 @@ type Props = {
   actions: ActionPalette[];
   surFermer: () => void;
 };
-
-/** Les blocs qui n'ont pas de sens dans un document personnel. */
-const GROUPES_ECARTES = new Set(["Liens et sources"]);
 
 function sansAccents(texte: string): string {
   return texte
@@ -36,13 +33,17 @@ export function PaletteCommandes({ editor, actions, surFermer }: Props) {
 
   const toutes = useMemo<ActionPalette[]>(() => {
     const insertions: ActionPalette[] = editor
-      ? COMMANDES.filter((c) => !GROUPES_ECARTES.has(c.groupe)).map((c) => ({
+      ? COMMANDES.filter((c) => !GROUPES_ECARTES_ATELIER.has(c.groupe)).map((c) => ({
           cle: `inserer-${c.cle}`,
           libelle: c.libelle,
           description: c.description,
           groupe: `Insérer — ${c.groupe}`,
           faire: () => c.appliquer(editor.chain().focus()).run(),
         }))
+      : [];
+    // Insérer un nouveau tableau : à part, avant les commandes d'édition d'un tableau existant (qui ne font rien tant qu'on n'y est pas).
+    const nouveauTableau: ActionPalette[] = editor
+      ? [{ cle: `inserer-${COMMANDE_TABLEAU.cle}`, libelle: COMMANDE_TABLEAU.libelle, description: COMMANDE_TABLEAU.description, groupe: `Insérer — ${COMMANDE_TABLEAU.groupe}`, faire: () => COMMANDE_TABLEAU.appliquer(editor.chain().focus()).run() }]
       : [];
     const tableaux: ActionPalette[] = editor
       ? COMMANDES_TABLEAU.map((c) => ({
@@ -53,7 +54,7 @@ export function PaletteCommandes({ editor, actions, surFermer }: Props) {
           faire: () => c.appliquer(editor.chain().focus()).run(),
         }))
       : [];
-    return [...actions, ...tableaux, ...insertions];
+    return [...actions, ...nouveauTableau, ...tableaux, ...insertions];
   }, [actions, editor]);
 
   const resultats = useMemo(() => {

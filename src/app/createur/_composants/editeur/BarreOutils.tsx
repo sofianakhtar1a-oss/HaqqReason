@@ -26,7 +26,7 @@ import {
   Undo2,
 } from "lucide-react";
 import { EFFETS, STYLES_SOULIGNE } from "@/lib/document-schema";
-import { COMMANDES, executer } from "./commandes";
+import { COMMANDES, executer, type Commande } from "./commandes";
 import { Deroulant } from "./Deroulant";
 import { FormulaireLien, Pastilles } from "./outils-communs";
 
@@ -56,7 +56,15 @@ const STYLES_PARAGRAPHE = [
 
 const GROUPES = ["Texte", "Apologétique", "Schémas", "Logique", "Liens et sources", "Encadrés"] as const;
 
-export function BarreOutils({ editor }: { editor: Editor }) {
+type Props = {
+  editor: Editor;
+  /** Groupes à ne pas proposer dans « Insérer » (ex. les blocs liés à la bibliographie, hors sujet dans un document personnel). */
+  groupesEcartes?: ReadonlySet<string>;
+  /** Commandes propres au contexte (ex. les tableaux, propres à l'atelier d'écriture), ajoutées à la fin du menu. */
+  commandesSupplementaires?: readonly Commande[];
+};
+
+export function BarreOutils({ editor, groupesEcartes, commandesSupplementaires }: Props) {
   const e = useEditorState({
     editor,
     selector: ({ editor: ed }) => ({
@@ -293,32 +301,38 @@ export function BarreOutils({ editor }: { editor: Editor }) {
           </>
         }
       >
-        {(fermer) => (
-          <div className="w-80 max-w-full">
-            {GROUPES.map((g) => (
-              <div key={g}>
-                <p className="choix-menu-groupe">{g}</p>
-                {COMMANDES.filter((cmd) => cmd.groupe === g).map((cmd) => (
-                  <button
-                    key={cmd.cle}
-                    type="button"
-                    className="choix-menu"
-                    onMouseDown={(ev) => ev.preventDefault()}
-                    onClick={() => {
-                      executer(editor, cmd);
-                      fermer();
-                    }}
-                  >
-                    <span>
-                      <span className="block font-semibold">{cmd.libelle}</span>
-                      <span className="block text-sm text-encre-douce">{cmd.description}</span>
-                    </span>
-                  </button>
-                ))}
-              </div>
-            ))}
-          </div>
-        )}
+        {(fermer) => {
+          const extra = commandesSupplementaires ?? [];
+          const groupesBase = GROUPES.filter((g) => !groupesEcartes?.has(g));
+          const groupesSupplementaires = [...new Set(extra.map((c) => c.groupe))].filter((g) => !groupesBase.includes(g as (typeof GROUPES)[number]));
+          const groupes = [...groupesBase, ...groupesSupplementaires];
+          return (
+            <div className="w-80 max-w-full">
+              {groupes.map((g) => (
+                <div key={g}>
+                  <p className="choix-menu-groupe">{g}</p>
+                  {[...COMMANDES.filter((cmd) => cmd.groupe === g), ...extra.filter((cmd) => cmd.groupe === g)].map((cmd) => (
+                    <button
+                      key={cmd.cle}
+                      type="button"
+                      className="choix-menu"
+                      onMouseDown={(ev) => ev.preventDefault()}
+                      onClick={() => {
+                        executer(editor, cmd);
+                        fermer();
+                      }}
+                    >
+                      <span>
+                        <span className="block font-semibold">{cmd.libelle}</span>
+                        <span className="block text-sm text-encre-douce">{cmd.description}</span>
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              ))}
+            </div>
+          );
+        }}
       </Deroulant>
     </div>
   );

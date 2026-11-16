@@ -26,7 +26,7 @@ import { Inspecteur } from "./Inspecteur";
 import { PaletteCommandes, type ActionPalette } from "./PaletteCommandes";
 import { Papier } from "./Papier";
 import { CoupuresDePage } from "./pages-extension";
-import { extensionsTableau } from "./tableaux";
+import { COMMANDE_TABLEAU, extensionsTableau, GROUPES_ECARTES_ATELIER } from "./tableaux";
 import { VueDocumentLocal, VueImageLocale } from "./VuesLocales";
 import { exporterDocx, exporterMarkdown, exporterPaquet, exporterPdf } from "./exporter";
 
@@ -426,7 +426,9 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
       )}
 
       <main className="calame-centre" ref={scene}>
-        <div className="calame-outils sans-impression">{editor && <BarreOutils editor={editor} />}</div>
+        <div className="calame-outils sans-impression">
+          {editor && <BarreOutils editor={editor} groupesEcartes={GROUPES_ECARTES_ATELIER} commandesSupplementaires={[COMMANDE_TABLEAU]} />}
+        </div>
         {message && (
           <p className="message message-erreur sans-impression" role="alert" onClick={() => setMessage("")}>
             {message}

@@ -4324,7 +4324,11 @@ a.contrib-renvoi:focus-visible {
   display: flex;
   flex-direction: column;
   min-height: 0;
-  overflow: hidden;
+  /* Pas de overflow:hidden ici : ça rognerait le menu « + Insérer » et les autres
+     menus déroulants de la barre d'outils, qui doivent pouvoir déborder visuellement
+     par-dessus la colonne de gauche. Chaque enfant (scène, barre) gère déjà son propre
+     défilement. */
+  overflow: visible;
 }
 .calame-outils {
   padding: 0.4rem 0.75rem;
