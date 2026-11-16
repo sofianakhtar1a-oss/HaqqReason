@@ -7,6 +7,7 @@
 import { inspecter, morceaux } from "./decoupe";
 import { construirePhrases, type Morceau, recoller } from "./phrases";
 import type { Analyse, Fragment, Transcription } from "./types";
+import { choisirPistes, depuisVtt, RELAIS_CONNUS, type VideoInvidious } from "./vtt";
 
 export class ErreurService extends Error {}
 
@@ -83,8 +84,65 @@ export function analyserPhrase(langue: string, mots: string[], contexte: string,
 export type ApercuYoutube = { id: string; titre: string; auteur: string };
 export const apercuYoutube = (id: string, signal?: AbortSignal) => appeler<ApercuYoutube>(`/api/alambic/youtube?apercu=1&v=${id}`, {}, signal, 1);
 
-type SonYoutube = { relais: string; itag: string; taille: number; type: string };
+type SonYoutube = { relais: string; itag: string; taille: number; type: string; url?: string };
 type ReponseYoutube = { id: string; titre: string; auteur: string; duree: number; langue: string; automatiques: boolean; fragments: Fragment[]; son: SonYoutube | null };
+
+/** Les relais répondent au navigateur (pas aux serveurs) : on les interroge d'ici en premier. */
+async function viaRelaisNavigateur(id: string, langue: string | null, signal?: AbortSignal): Promise<ReponseYoutube | null> {
+  for (const hote of RELAIS_CONNUS) {
+    try {
+      const minuteur = AbortSignal.timeout(10000);
+      const s = signal ? AbortSignal.any([signal, minuteur]) : minuteur;
+      const r = await fetch(`https://${hote}/api/v1/videos/${id}?local=true&fields=title,author,lengthSeconds,captions,adaptiveFormats`, { signal: s });
+      if (!r.ok) continue;
+      const v = (await r.json()) as VideoInvidious;
+      if (!v.title) continue;
+      const { piste, son, langue: l } = choisirPistes(v, langue);
+      let fragments: Fragment[] = [];
+      if (piste) {
+        try {
+          const t = await fetch(`https://${hote}${piste.url}`, { signal: s });
+          if (t.ok) fragments = depuisVtt(await t.text());
+        } catch {
+          // Sous-titres illisibles : le son prendra le relais.
+        }
+      }
+      if (!fragments.length && !son) continue;
+      const url = son ? (son.url?.startsWith("http") ? son.url : `https://${hote}/latest_version?id=${id}&itag=${son.itag}&local=true`) : undefined;
+      return {
+        id,
+        titre: v.title,
+        auteur: v.author ?? "",
+        duree: v.lengthSeconds ?? 0,
+        langue: l,
+        automatiques: piste ? /auto/i.test(piste.label) : true,
+        fragments,
+        son: son ? { relais: hote, itag: son.itag, taille: Number(son.clen), type: son.type.split(";")[0], url } : null,
+      };
+    } catch (e) {
+      if (signal?.aborted) throw e;
+    }
+  }
+  return null;
+}
+
+/** Son récupéré directement au relais, avec l'avancement. */
+async function telechargerDirect(son: SonYoutube, avancer: (f: number) => void, signal?: AbortSignal): Promise<Blob> {
+  const r = await fetch(son.url!, { signal });
+  if (!r.ok || !r.body) throw new ErreurService("Le relais n'a pas livré le son.");
+  const lecteur = r.body.getReader();
+  const parts: BlobPart[] = [];
+  let recu = 0;
+  for (;;) {
+    const { done, value } = await lecteur.read();
+    if (done) break;
+    parts.push(value);
+    recu += value.length;
+    avancer(Math.min(1, recu / son.taille));
+  }
+  if (!recu) throw new ErreurService("Le son de la vidéo est vide.");
+  return new Blob(parts, { type: son.type });
+}
 
 /** Le son d'une vidéo, rapatrié par morceaux de 3,5 Mo à travers le relais de l'application. */
 async function telechargerSon(id: string, son: SonYoutube, avancer: (f: number) => void, signal?: AbortSignal): Promise<Blob> {
@@ -193,7 +251,7 @@ export async function transcrireFichier(fichier: File, langue: string | null, su
 export async function transcrireYoutube(id: string, langue: string | null, suivi: Suivi, signal?: AbortSignal): Promise<Transcription> {
   suivi.etape("preparation");
   suivi.progression(0.03, { prets: 0, transcrits: 0, total: 1 });
-  const r = await appeler<ReponseYoutube>(`/api/alambic/youtube?v=${id}${langue ? `&langue=${langue}` : ""}`, {}, signal, 2);
+  const r = (await viaRelaisNavigateur(id, langue, signal)) ?? (await appeler<ReponseYoutube>(`/api/alambic/youtube?v=${id}${langue ? `&langue=${langue}` : ""}`, {}, signal, 2));
   const source = { type: "youtube" as const, id, auteur: r.auteur };
 
   const depuisSousTitres = (): Transcription => {
@@ -211,7 +269,14 @@ export async function transcrireYoutube(id: string, langue: string | null, suivi
   // 2. Sinon, Whisper écoute le son de la vidéo (bien mieux que les sous-titres automatiques).
   if (r.son) {
     try {
-      const son = await telechargerSon(id, r.son, (f) => suivi.progression(f * 0.25, { prets: 0, transcrits: 0, total: 1 }), signal);
+      const avancer = (f: number) => suivi.progression(f * 0.25, { prets: 0, transcrits: 0, total: 1 });
+      let son: Blob;
+      try {
+        son = r.son.url ? await telechargerDirect(r.son, avancer, signal) : await telechargerSon(id, r.son, avancer, signal);
+      } catch (e) {
+        if (signal?.aborted || !r.son.url) throw e;
+        son = await telechargerSon(id, r.son, avancer, signal);
+      }
       const fichier = new File([son], `${id}.${r.son.type.includes("webm") ? "webm" : "m4a"}`, { type: r.son.type });
       const indice = langue ?? (["en", "ar", "es"].includes(r.langue) ? r.langue : null);
       const t = await transcrireFichier(fichier, indice, { ...suivi, progression: (f, d) => suivi.progression(0.25 + f * 0.75, d) }, signal);

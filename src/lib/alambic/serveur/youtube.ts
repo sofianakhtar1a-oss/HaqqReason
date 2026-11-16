@@ -1,6 +1,6 @@
 import "server-only";
 import type { Fragment } from "../transcription/types";
-import { decoder, depuisVtt } from "../transcription/vtt";
+import { choisirPistes, decoder, depuisVtt, RELAIS_CONNUS, type VideoInvidious } from "../transcription/vtt";
 import { ErreurGroq } from "./groq";
 export { depuisVtt };
 
@@ -158,7 +158,7 @@ export async function apercu(id: string, signal?: AbortSignal): Promise<{ titre:
 
 /* ---------- Relais Invidious : YouTube bloque les serveurs, pas ces relais publics ---------- */
 
-const RELAIS_SECOURS = ["yt.chocolatemoo53.com", "inv.nadeko.net", "invidious.nerdvpn.de", "invidious.tiekoetter.com"];
+const RELAIS_SECOURS = RELAIS_CONNUS;
 let relaisCache: { liste: string[]; quand: number } | null = null;
 
 /** Relais en état de marche, du plus fiable au moins fiable (liste publique, gardée une heure). */
@@ -176,15 +176,6 @@ export async function relais(): Promise<string[]> {
   relaisCache = { liste, quand: Date.now() };
   return liste;
 }
-
-type FormatAudio = { itag: string; type: string; clen: string; bitrate: string };
-type VideoInvidious = {
-  title?: string;
-  author?: string;
-  lengthSeconds?: number;
-  captions?: { label: string; languageCode: string; url: string }[];
-  adaptiveFormats?: FormatAudio[];
-};
 
 export type ResultatYoutube = {
   titre: string;
@@ -204,20 +195,7 @@ export async function viaRelais(id: string, langueVoulue: string | null, signal?
       if (!r.ok) continue;
       const v = (await r.json()) as VideoInvidious;
       if (!v.title) continue;
-      // Son le plus léger (Opus de préférence) : il suffit largement à Whisper.
-      const sons = (v.adaptiveFormats ?? []).filter((f) => f.type?.startsWith("audio/") && Number(f.clen) > 0).sort((a, b) => Number(a.bitrate) - Number(b.bitrate));
-      const son = sons.find((f) => f.type.includes("opus")) ?? sons[0];
-      const pistes = (v.captions ?? []).map((c) => ({ ...c, auto: /auto/i.test(c.label), langue: c.languageCode.split("-")[0] }));
-      // Les sous-titres automatiques sont toujours dans la langue parlée ; les autres peuvent être des traductions.
-      const parlee = pistes.find((p) => p.auto)?.langue;
-      const ordre = langueVoulue ? [langueVoulue] : parlee ? [parlee] : ["ar", "en", "es"];
-      let piste: (typeof pistes)[number] | undefined;
-      for (const l of ordre) {
-        const dans = pistes.filter((p) => p.langue === l);
-        piste = dans.find((p) => !p.auto) ?? dans[0];
-        if (piste) break;
-      }
-      piste ??= langueVoulue ? undefined : (pistes.find((p) => !p.auto) ?? pistes[0]);
+      const { piste, son, langue } = choisirPistes(v, langueVoulue);
       let fragments: Fragment[] = [];
       if (piste) {
         try {
@@ -232,7 +210,7 @@ export async function viaRelais(id: string, langueVoulue: string | null, signal?
         titre: v.title,
         auteur: v.author ?? "",
         duree: v.lengthSeconds ?? 0,
-        langue: piste?.langue ?? parlee ?? langueVoulue ?? "",
+        langue,
         automatiques: piste?.auto ?? true,
         fragments,
         son: son ? { relais: hote, itag: son.itag, taille: Number(son.clen), type: son.type.split(";")[0] } : null,

@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
+import { RELAIS_CONNUS } from "@/lib/alambic/transcription/vtt";
 import { NOM_COOKIE, NOM_COOKIE_APPAREIL, optionsCookie, signerSession, verifierSession } from "@/lib/session-token";
 
 /** Pages du mode créateur accessibles sans être connecté. */
@@ -38,7 +39,8 @@ export async function proxy(request: NextRequest) {
     "font-src 'self' data:",
     // data: : les encodeurs MP3 et FLAC de L'Alambic lisent leur moteur WebAssembly, intégré au code
     // lui-même. Une adresse data: ne sort jamais de la page : elle n'ouvre aucune connexion.
-    `connect-src 'self' data:${stockage}${dev ? " ws: wss:" : ""}`,
+    // Relais Invidious : L'Alambic y lit les sous-titres et le son d'une vidéo YouTube (YouTube bloque les serveurs).
+    `connect-src 'self' data:${stockage} ${RELAIS_CONNUS.map((h) => `https://${h}`).join(" ")}${dev ? " ws: wss:" : ""}`,
     // Lecteur PDF et reconnaissance de texte : leurs « workers » sont servis par l'application.
     "worker-src 'self' blob:",
     "object-src 'none'",

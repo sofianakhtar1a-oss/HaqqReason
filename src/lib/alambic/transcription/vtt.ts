@@ -58,3 +58,33 @@ export function depuisVtt(vtt: string): Fragment[] {
   return sortie;
 }
 
+
+/* ---------- Relais Invidious : choix des sous-titres et du son ---------- */
+
+/** Relais publics connus (la liste publique les complète). Ils servent aussi à la politique de sécurité. */
+export const RELAIS_CONNUS = ["yt.chocolatemoo53.com", "inv.nadeko.net", "invidious.nerdvpn.de", "invidious.tiekoetter.com"];
+
+export type VideoInvidious = {
+  title?: string;
+  author?: string;
+  lengthSeconds?: number;
+  captions?: { label: string; languageCode: string; url: string }[];
+  adaptiveFormats?: { itag: string; type: string; clen: string; bitrate: string; url?: string }[];
+};
+
+export function choisirPistes(v: VideoInvidious, langueVoulue: string | null) {
+  const sons = (v.adaptiveFormats ?? []).filter((f) => f.type?.startsWith("audio/") && Number(f.clen) > 0).sort((a, b) => Number(a.bitrate) - Number(b.bitrate));
+  const son = sons.find((f) => f.type.includes("opus")) ?? sons[0];
+  const pistes = (v.captions ?? []).map((c) => ({ ...c, auto: /auto/i.test(c.label), langue: c.languageCode.split("-")[0] }));
+  // Les sous-titres automatiques sont toujours dans la langue parlée ; les autres peuvent être des traductions.
+  const parlee = pistes.find((p) => p.auto)?.langue;
+  const ordre = langueVoulue ? [langueVoulue] : parlee ? [parlee] : ["ar", "en", "es"];
+  let piste: (typeof pistes)[number] | undefined;
+  for (const l of ordre) {
+    const dans = pistes.filter((p) => p.langue === l);
+    piste = dans.find((p) => !p.auto) ?? dans[0];
+    if (piste) break;
+  }
+  piste ??= langueVoulue ? undefined : (pistes.find((p) => !p.auto) ?? pistes[0]);
+  return { piste, son, langue: piste?.langue ?? parlee ?? langueVoulue ?? "" };
+}
