@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Captions, Cloud, Layers, Scissors, ShieldCheck, Shuffle, WifiOff } from "lucide-react";
+import { Captions, Cloud, Layers, MessageSquareQuote, Scissors, ShieldCheck, Shuffle, WifiOff } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { BoutonTheme } from "@/components/BoutonTheme";
 import { Logo } from "@/components/Logo";
@@ -15,8 +15,9 @@ import { Protection } from "./Protection";
 import type { Abonner } from "./reception";
 import { ICONES } from "./SelecteurFormat";
 import { Transcription } from "./transcription/Transcription";
+import { Interroger } from "./carnet/Interroger";
 
-type Outil = "convertir" | "fusionner" | "decouper" | "proteger" | "transcrire";
+type Outil = "convertir" | "fusionner" | "decouper" | "proteger" | "transcrire" | "interroger";
 
 const OUTILS: { id: Outil; nom: string; aide: string; Icone: typeof Layers }[] = [
   { id: "convertir", nom: "Convertir", aide: "D'un format à l'autre, dans les deux sens", Icone: Shuffle },
@@ -24,6 +25,7 @@ const OUTILS: { id: Outil; nom: string; aide: string; Icone: typeof Layers }[] =
   { id: "decouper", nom: "Découper", aide: "Des pages, ou un passage d'un son, d'une vidéo", Icone: Scissors },
   { id: "proteger", nom: "Protéger", aide: "Un mot de passe, chiffré en AES-256", Icone: ShieldCheck },
   { id: "transcrire", nom: "Transcrire", aide: "Un son ou une vidéo devient un livre à lire", Icone: Captions },
+  { id: "interroger", nom: "Interroger", aide: "Tes sources, un assistant qui cite tout", Icone: MessageSquareQuote },
 ];
 
 function outilDuLien(): Outil {
@@ -76,10 +78,10 @@ export function Alambic() {
           L&apos;Alambic
         </span>
         <span className="flex-1" />
-        {outil === "transcrire" ? (
-          <span className="alambic-local" data-nuage="" title="Pour transcrire, le son est envoyé à Groq (Whisper). Le texte reste sur ton appareil.">
+        {outil === "transcrire" || outil === "interroger" ? (
+          <span className="alambic-local" data-nuage="" title={outil === "interroger" ? "Les passages utiles de tes sources sont envoyés à Gemini pour rédiger la réponse. Les carnets restent sur ton appareil." : "Pour transcrire, le son est envoyé à Groq (Whisper). Le texte reste sur ton appareil."}>
             <Cloud className="size-4" aria-hidden="true" />
-            Le son passe par Groq
+            {outil === "interroger" ? "Les réponses passent par Gemini" : "Le son passe par Groq"}
           </span>
         ) : (
           <span className="alambic-local" title="Aucun fichier n'est envoyé : tout est calculé par ton appareil.">
@@ -114,6 +116,7 @@ export function Alambic() {
           {outil === "decouper" && <Decoupe capacites={capacites} abonner={abonner} />}
           {outil === "proteger" && <Protection abonner={abonner} />}
           {outil === "transcrire" && <Transcription abonner={abonner} />}
+          {outil === "interroger" && <Interroger />}
         </div>
 
         <aside className="alambic-cotes" aria-label="À propos">
@@ -135,7 +138,14 @@ export function Alambic() {
               })}
             </ul>
           </div>
-          {outil === "transcrire" ? (
+          {outil === "interroger" ? (
+            <div className="alambic-carte verre">
+              <p className="font-display text-lg font-bold">Une exception, annoncée</p>
+              <p className="text-sm text-encre-douce">
+                Tes documents sont lus et découpés ici. Seuls les passages utiles à ta question sont envoyés à Gemini, qui rédige la réponse. Les carnets et les conversations restent sur ton appareil.
+              </p>
+            </div>
+          ) : outil === "transcrire" ? (
             <div className="alambic-carte verre">
               <p className="font-display text-lg font-bold">Une exception, annoncée</p>
               <p className="text-sm text-encre-douce">

@@ -13,7 +13,8 @@
     "postinstall": "node scripts/copier-ressources.mjs",
     "test:logique": "tsx tests/test-logique.mts",
     "test:alambic": "tsx tests/test-alambic.mts",
-    "test:transcription": "tsx tests/test-transcription.mts"
+    "test:transcription": "tsx tests/test-transcription.mts",
+    "test:carnet": "tsx tests/test-carnet.mts"
   },
   "dependencies": {
     "@cantoo/pdf-lib": "^2.11.1",
@@ -44,6 +45,7 @@
     "@zip.js/zip.js": "^2.25.0",
     "d3-force": "^3.0.1",
     "diff": "^9.0.0",
+    "dompurify": "^3.4.18",
     "exceljs": "^4.4.0",
     "fflate": "^0.8.3",
     "gifenc": "^1.0.3",

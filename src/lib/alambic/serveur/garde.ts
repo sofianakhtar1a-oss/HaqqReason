@@ -10,7 +10,7 @@ import { ErreurGroq } from "./groq";
  * - chaque visiteur a un quota horaire, pour qu'un robot n'épuise pas le palier gratuit de Groq.
  */
 
-export type Usage = "transcription" | "traduction" | "analyse" | "youtube";
+export type Usage = "transcription" | "traduction" | "analyse" | "youtube" | "carnet" | "vecteurs";
 
 /** Appels permis par visiteur et par heure. Un morceau de transcription = 10 minutes de son. */
 const QUOTAS: Record<Usage, number> = {
@@ -18,6 +18,8 @@ const QUOTAS: Record<Usage, number> = {
   traduction: 240,
   analyse: 400,
   youtube: 120,
+  carnet: 60,
+  vecteurs: 300,
 };
 
 export const SANS_CACHE = { "Cache-Control": "private, no-store" };
