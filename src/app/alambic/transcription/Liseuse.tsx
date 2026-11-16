@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowDown, ArrowLeft, ArrowUp, Download, Languages, MoonStar, SunMedium, Type, X } from "lucide-react";
+import { ArrowDown, ArrowLeft, ArrowUp, Check, Copy, Download, Languages, MoonStar, SunMedium, Type, X } from "lucide-react";
 import { Fragment, memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { dureeLisible, versSrt, versTexte, versVtt } from "@/lib/alambic/transcription/exports";
@@ -76,6 +76,7 @@ export function Liseuse({ t, media, onFermer, onMaj, onRebrancher }: Props) {
   const [barreCachee, setBarreCachee] = useState(false);
   const [menu, setMenu] = useState<"affichage" | "export" | null>(null);
   const [glose, setGlose] = useState<Cible | null>(null);
+  const [copie, setCopie] = useState<"texte" | "bilingue" | "erreur" | null>(null);
   const defilement = useRef<HTMLElement>(null);
   const progres = useRef<HTMLSpanElement>(null);
   const racine = useRef<HTMLDivElement>(null);
@@ -291,6 +292,15 @@ export function Liseuse({ t, media, onFermer, onMaj, onRebrancher }: Props) {
 
   const sortieTexte = (avecTraduction: boolean) => telecharger(`${nomFichier(t.titre)}${avecTraduction ? " (bilingue)" : ""}.txt`, versTexte({ ...t, traductions }, avecTraduction), "text/plain");
   const nbTraduites = Object.keys(traductions).length;
+  const copier = async (avecTraduction: boolean) => {
+    try {
+      await navigator.clipboard.writeText(versTexte({ ...t, traductions }, avecTraduction));
+      setCopie(avecTraduction ? "bilingue" : "texte");
+    } catch {
+      setCopie("erreur");
+    }
+    setTimeout(() => setCopie(null), 2200);
+  };
   const phraseGlose = glose ? t.phrases[glose.phrase] : null;
 
   return createPortal(
@@ -366,6 +376,23 @@ export function Liseuse({ t, media, onFermer, onMaj, onRebrancher }: Props) {
           </button>
           {menu === "export" && (
             <div className="tr-menu tr-menu-export" role="menu" aria-label="Exporter">
+              <button type="button" role="menuitem" onClick={() => void copier(false)} data-copie={copie === "texte" || undefined}>
+                <span className="tr-export-ext">{copie === "texte" ? <Check className="size-4" aria-hidden="true" /> : <Copy className="size-4" aria-hidden="true" />}</span>
+                <span>
+                  {copie === "texte" ? "Copié !" : "Copier tout le texte"}
+                  <small>{copie === "erreur" ? "Le navigateur a refusé la copie" : `${t.phrases.length} phrases, prêtes à coller`}</small>
+                </span>
+              </button>
+              {nbTraduites > 0 && (
+                <button type="button" role="menuitem" onClick={() => void copier(true)} data-copie={copie === "bilingue" || undefined}>
+                  <span className="tr-export-ext">{copie === "bilingue" ? <Check className="size-4" aria-hidden="true" /> : <Languages className="size-4" aria-hidden="true" />}</span>
+                  <span>
+                    {copie === "bilingue" ? "Copié !" : "Copier avec la traduction"}
+                    <small>L&apos;original et le français, paragraphe par paragraphe</small>
+                  </span>
+                </button>
+              )}
+              <hr className="tr-menu-separation" />
               <button type="button" role="menuitem" onClick={() => sortieTexte(false)}>
                 <span className="tr-export-ext">TXT</span>
                 <span>

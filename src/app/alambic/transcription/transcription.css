@@ -731,6 +731,22 @@
   opacity: 0.45;
   cursor: not-allowed;
 }
+.tr-menu-separation {
+  margin: 0.3rem 0.6rem;
+  border: 0;
+  border-top: 1px solid var(--l-trait);
+}
+.tr-menu-export button[data-copie] .tr-export-ext {
+  border-color: var(--l-or);
+  background: var(--l-or);
+  color: var(--l-page);
+  animation: tr-coche 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.4) both;
+}
+@keyframes tr-coche {
+  from {
+    transform: scale(0.7);
+  }
+}
 .tr-menu-export small {
   display: block;
   font-size: 0.76rem;
