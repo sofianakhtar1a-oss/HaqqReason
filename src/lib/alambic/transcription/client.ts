@@ -89,7 +89,8 @@ type ReponseYoutube = { id: string; titre: string; auteur: string; duree: number
 
 /** Les relais répondent au navigateur (pas aux serveurs) : on les interroge d'ici en premier. */
 async function viaRelaisNavigateur(id: string, langue: string | null, signal?: AbortSignal): Promise<ReponseYoutube | null> {
-  for (const hote of RELAIS_CONNUS) {
+  // Chaque relais a droit à deux essais : ils ont des coupures passagères.
+  for (const hote of RELAIS_CONNUS.flatMap((h) => [h, h])) {
     try {
       const minuteur = AbortSignal.timeout(10000);
       const s = signal ? AbortSignal.any([signal, minuteur]) : minuteur;
@@ -121,6 +122,7 @@ async function viaRelaisNavigateur(id: string, langue: string | null, signal?: A
       };
     } catch (e) {
       if (signal?.aborted) throw e;
+      await pause(600, signal);
     }
   }
   return null;

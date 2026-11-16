@@ -2,7 +2,7 @@ import { aligner, construirePhrases, depuisWhisper, motA, normaliser, phraseA, r
 import { versSrt, versTexte, versVtt } from "../src/lib/alambic/transcription/exports";
 import { idYoutube } from "../src/lib/alambic/transcription/lien";
 import { texteDe } from "../src/lib/alambic/transcription/types";
-import { depuisVtt } from "../src/lib/alambic/transcription/vtt";
+import { choisirPistes, depuisVtt } from "../src/lib/alambic/transcription/vtt";
 
 let e = 0;
 const ok = (n: string, c: boolean, x: unknown = "") => {
@@ -91,6 +91,24 @@ ok("sous-titres automatiques : chaque mot garde son instant, sans répétition",
 const ecrit = `WEBVTT\n\n00:00:01.000 --> 00:00:03.500\nHello &amp; welcome.\n\n00:00:03.600 --> 00:00:06.000\n<i>This is</i> a talk.\n`;
 const fe = depuisVtt(ecrit);
 ok("sous-titres écrits : texte nettoyé et horodaté", fe.length === 2 && fe[0].texte === "Hello & welcome." && fe[1].texte === "This is a talk." && fe[1].d === 3.6, fe);
+
+const choix = choisirPistes(
+  {
+    title: "x",
+    captions: [
+      { label: "Arabic", language_code: "ar", url: "/a" },
+      { label: "English", language_code: "en", url: "/e" },
+      { label: "English (auto-generated)", language_code: "en", url: "/ea" },
+    ],
+    adaptiveFormats: [
+      { itag: "251", type: 'audio/webm; codecs="opus"', clen: "900", bitrate: "130000" },
+      { itag: "249", type: 'audio/webm; codecs="opus"', clen: "400", bitrate: "50000" },
+      { itag: "140", type: "audio/mp4", clen: "800", bitrate: "128000" },
+    ],
+  },
+  null,
+);
+ok("relais : la langue parlée l'emporte sur une traduction, et le son le plus léger est choisi", choix.piste?.url === "/e" && choix.son?.itag === "249" && choix.langue === "en", choix);
 
 console.log(e ? `\n${e} échec(s)` : "\nTout est bon.");
 process.exit(e ? 1 : 0);

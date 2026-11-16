@@ -68,14 +68,17 @@ export type VideoInvidious = {
   title?: string;
   author?: string;
   lengthSeconds?: number;
-  captions?: { label: string; languageCode: string; url: string }[];
+  captions?: { label: string; languageCode?: string; language_code?: string; url: string }[];
   adaptiveFormats?: { itag: string; type: string; clen: string; bitrate: string; url?: string }[];
 };
 
 export function choisirPistes(v: VideoInvidious, langueVoulue: string | null) {
-  const sons = (v.adaptiveFormats ?? []).filter((f) => f.type?.startsWith("audio/") && Number(f.clen) > 0).sort((a, b) => Number(a.bitrate) - Number(b.bitrate));
+  const sons = (v.adaptiveFormats ?? []).filter((f) => f?.type?.startsWith("audio/") && Number(f.clen) > 0).sort((a, b) => Number(a.bitrate) - Number(b.bitrate));
   const son = sons.find((f) => f.type.includes("opus")) ?? sons[0];
-  const pistes = (v.captions ?? []).map((c) => ({ ...c, auto: /auto/i.test(c.label), langue: c.languageCode.split("-")[0] }));
+  // Selon la version du relais, le code de langue s'appelle languageCode ou language_code.
+  const pistes = (v.captions ?? [])
+    .filter((c) => c?.url)
+    .map((c) => ({ ...c, auto: /auto/i.test(c.label ?? ""), langue: String(c.languageCode ?? c.language_code ?? "").split("-")[0] }));
   // Les sous-titres automatiques sont toujours dans la langue parlée ; les autres peuvent être des traductions.
   const parlee = pistes.find((p) => p.auto)?.langue;
   const ordre = langueVoulue ? [langueVoulue] : parlee ? [parlee] : ["ar", "en", "es"];
