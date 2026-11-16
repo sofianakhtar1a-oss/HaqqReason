@@ -158,4 +158,63 @@ ok("logique par défaut cohérente", (["validite", "demonstration", "syllogisme"
   ok("nom de fichier : daté et lisible", nom === "capture-2026-11-15-090503.png", nom);
 }
 
+// ---------------------------------------------------------------- Filtre de politesse des contributions
+{
+  const { analyser, analyserContribution, colle, enMots, partDeMajuscules, libelleMotifs } = await import("../src/lib/contributions/filtre");
+  const v = (t: string) => analyser(t).verdict;
+
+  // Ce qui doit passer sans encombre, y compris le vocabulaire propre au sujet du site.
+  const propres = [
+    "Il manque un article sur la préservation du Coran à travers les manuscrits anciens.",
+    "On pourrait citer le verset qui parle des singes et des porcs, et expliquer son contexte.",
+    "La viande de porc est interdite : un article là-dessus serait utile.",
+    "Le hadith du chien qui boit dans la mare mérite une explication.",
+    "Un mécréant m'a posé cette question et je n'ai pas su répondre.",
+    "Ce raisonnement demande une connaissance du contexte historique.",
+    "La conclusion de l'article pourrait être renforcée par un autre argument.",
+    "Il faudrait un concept clair de ce qu'est la prophétie.",
+    "La salle de prière de ma ville organise des débats sur ce thème.",
+  ];
+  for (const texte of propres) ok(`passe : « ${texte.slice(0, 42)}… »`, v(texte) === "propre", analyser(texte).motifs.join(","));
+
+  // Ce qui doit être refusé.
+  const refuses = [
+    "Vous êtes des connards et ce site ne vaut rien.",
+    "C'est de la merde, franchement.",
+    "ta gueule espèce de menteur",
+    "p.u.t.a.i.n mais quel article inutile",
+    "c o n n a r d",
+    "Quelle grosse cooooonnerie ce raisonnement",
+    "This is f u c k i n g wrong",
+    "sale arabe, voilà ce que je pense",
+    "l'enculé qui a écrit ça devrait avoir honte",
+    "Ce type est un fils de pute",
+  ];
+  for (const texte of refuses) ok(`refusé : « ${texte.slice(0, 42)}… »`, v(texte) === "refuse", JSON.stringify(analyser(texte)));
+
+  // Ce qui mérite un œil humain sans être une insulte.
+  ok("un lien attend une relecture", analyser("Regarde cette page https://exemple.com pour la suite").motifs.includes("lien"));
+  ok("une adresse e-mail attend une relecture", analyser("Écris-moi à salam@exemple.fr pour en discuter").motifs.includes("courriel"));
+  ok("un numéro de téléphone attend une relecture", analyser("Appelle-moi au 06 12 34 56 78 si tu veux en parler").motifs.includes("telephone"));
+  ok("un texte tout en majuscules attend une relecture", analyser("IL FAUT ABSOLUMENT PARLER DE CE SUJET MAINTENANT").motifs.includes("majuscules"));
+  ok("un ton dur attend une relecture", analyser("Cet argument est stupide et ne tient pas debout").verdict === "a_revoir");
+  ok("une ponctuation excessive attend une relecture", analyser("Il faut vraiment en parler !!!!!").motifs.includes("ponctuation"));
+  ok("des caractères répétés attendent une relecture", analyser("Suuuuuuper idée pour le site").motifs.includes("repetition"));
+  ok("un lien n'est jamais pris pour une insulte", analyser("https://exemple.com").verdict === "a_revoir");
+
+  // Les pièces de la contribution comptent toutes.
+  ok("le pseudo est filtré lui aussi", analyserContribution({ pseudo: "connard", titre: "Une idée très correcte", texte: "Un texte parfaitement poli et tranquille." }).verdict === "refuse");
+  ok("le titre est filtré lui aussi", analyserContribution({ titre: "Quelle grosse connerie", texte: "Un texte parfaitement poli et tranquille." }).verdict === "refuse");
+  ok("une contribution entièrement propre passe", analyserContribution({ pseudo: "Yacine", titre: "Un sujet sur les manuscrits", texte: "Il serait utile de parler des plus anciens manuscrits connus." }).verdict === "propre");
+  ok("le plus grave l'emporte sur le reste", analyserContribution({ titre: "Va te faire voir", texte: "Regarde https://exemple.com" }).verdict === "refuse");
+
+  // Les briques, prises une à une.
+  ok("les lettres isolées sont recollées", colle("c o n n a r d") === "conard", colle("c o n n a r d"));
+  ok("les lettres répétées sont ramenées à une", colle("puuutaaain") === "putain", colle("puuutaaain"));
+  ok("les mots restent séparés", colle("donc on ardent") === "donc on ardent", colle("donc on ardent"));
+  ok("les accents et les chiffres-lettres sont remis d'aplomb", enMots("Él3v4tion").trim() === "elevation", enMots("Él3v4tion"));
+  ok("un texte court n'est jamais traité comme un cri", partDeMajuscules("OK") === 0);
+  ok("les motifs se lisent en français", libelleMotifs(["lien", "majuscules"]) === "contient un lien, écrit en majuscules");
+}
+
 process.exit(e);

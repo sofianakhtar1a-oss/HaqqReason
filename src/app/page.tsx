@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BookOpen, Heart, MessagesSquare, Network, PenLine, Scale, Sparkles } from "lucide-react";
+import { BookOpen, Heart, Lightbulb, MessagesSquare, Network, PenLine, Scale, Sparkles } from "lucide-react";
 import { BoutonTheme } from "@/components/BoutonTheme";
 import { BoutonRecherche } from "@/components/PaletteRecherche";
 import { Rosace } from "@/components/Rosace";
@@ -52,6 +52,10 @@ export default function Accueil() {
             <Link href="/sophismes" className="puce-filtre">
               <Scale className="size-4" aria-hidden="true" />
               Sophismes
+            </Link>
+            <Link href="/contribuer" className="puce-filtre">
+              <Lightbulb className="size-4" aria-hidden="true" />
+              Contribuer
             </Link>
             <Link href="/nouveautes" className="puce-filtre">
               <Sparkles className="size-4" aria-hidden="true" />

@@ -7,6 +7,8 @@ import { FilAriane } from "@/components/FilAriane";
 import { ancetres, lireArticle, lireBloc } from "@/lib/content";
 import { porteJetonCreateur } from "@/lib/session";
 import { DocumentsJoints } from "@/components/DocumentsJoints";
+import { ApportsLecteurs } from "@/components/ApportsLecteurs";
+import { listerPourArticle } from "@/lib/contributions/donnees";
 import { listerFichiers } from "@/lib/fichiers-donnees";
 import { estUuid } from "@/lib/validation";
 import { after } from "next/server";
@@ -52,7 +54,7 @@ export default async function PageArticle({
   const article = await lireArticle(id);
   if (!article) notFound();
 
-  const [bloc, chemin, createur, fichiers, liens, retroliens] =
+  const [bloc, chemin, createur, fichiers, liens, retroliens, apports] =
     await Promise.all([
       lireBloc({ id: article.bloc_id }),
       ancetres(article.categorie_id),
@@ -60,6 +62,7 @@ export default async function PageArticle({
       listerFichiers({ type: "article", id }, "public"),
       lireLiens(id, "public"),
       lireRetroliens(id, "public"),
+      listerPourArticle(id),
     ]);
   const [sources, prerequis, suites, lies, aussi] = await Promise.all([
     sourcesDuDocument(article.contenu, "public"),
@@ -120,7 +123,12 @@ export default async function PageArticle({
             suites={suites}
             lies={lies.filter((l) => !retroliens.some((r) => r.id === l.id) && !suites.some((x) => x.id === l.id) && !prerequis.some((x) => x.id === l.id))}
             aussiDans={aussi}
-            apres={<DocumentsJoints fichiers={fichiers} />}
+            apres={
+              <>
+                <DocumentsJoints fichiers={fichiers} />
+                <ApportsLecteurs apports={apports} />
+              </>
+            }
             titre={article.titre}
             resume={article.resume}
             contenu={article.contenu}

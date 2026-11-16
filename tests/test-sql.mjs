@@ -18,7 +18,7 @@ await db.exec(`create role anon nologin; create role authenticated nologin; crea
 // Ce que Supabase fournit d'office : le schéma « extensions » et la table des espaces de stockage.
 await db.exec(`create schema extensions; grant usage on schema extensions to anon, authenticated, service_role;
   create schema storage; create table storage.buckets (id text primary key, name text, public boolean, file_size_limit bigint, allowed_mime_types text[]);`);
-for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql"]) {
+for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql", "010_contributions.sql"]) {
   await db.exec(readFileSync(new URL(`../supabase/migrations/${fichier}`, import.meta.url), "utf8"));
 }
 
@@ -367,7 +367,7 @@ let refusEmpreinte = false; try { await db.exec(`update fichiers set empreinte =
 ok("empreinte de fichier contrôlée", refusEmpreinte || (await db.query(`select count(*)::int n from fichiers`)).rows[0].n === 0);
 
 // ---------------------------------------------------------------- Phase 8 : réglages
-ok("réglages : valeurs de départ en place", (await db.query(`select count(*)::int n from reglages`)).rows[0].n === 5);
+ok("réglages : valeurs de départ en place", (await db.query(`select count(*)::int n from reglages`)).rows[0].n === 7);
 ok("réglage inactivite_minutes = 30", (await db.query(`select valeur::text v from reglages where cle = 'inactivite_minutes'`)).rows[0].v === "30");
 await db.exec(`set role anon`);
 await refuse("[anon] ne voit aucun réglage", `select * from reglages`);
@@ -404,6 +404,64 @@ try { await db.exec(`insert into vecteurs_articles (article_id, morceau, texte, 
 ok("empreinte de morceau contrôlée", empreinteRefusee);
 await db.exec(`delete from articles where id = '60000000-0000-0000-0000-0000000000a1'`);
 ok("les vecteurs disparaissent avec l'article", Number((await db.query(`select count(*)::int n from vecteurs_articles where article_id = '60000000-0000-0000-0000-0000000000a1'`)).rows[0].n) === 0);
+
+// ---------------------------------------------------------------- Contributions des lecteurs
+await db.exec(`reset role`);
+const idArticlePublic = (await db.query(`select id from articles where slug = 'a1'`)).rows[0].id;
+const idArticleCache = (await db.query(`select id from articles where slug = 'a2'`)).rows[0].id;
+const idBloc = (await db.query(`select id from blocs where slug = 'veracite-de-l-islam'`)).rows[0].id;
+await db.exec(`
+  insert into contributions (id, type, bloc_id, pseudo, titre, texte, statut, ip_hash) values
+    ('c0000000-0000-0000-0000-000000000001', 'idee', '${idBloc}', 'Yacine', 'Un sujet sur la préservation du Coran', 'Il manque un article sur la transmission du texte.', 'publiee', 'empreinte-secrete');
+  insert into contributions (id, type, bloc_id, article_id, titre, texte, statut, ip_hash) values
+    ('c0000000-0000-0000-0000-000000000002', 'argument', '${idBloc}', '${idArticlePublic}', 'Un argument de plus', 'On pourrait ajouter le témoignage des manuscrits anciens.', 'en_attente', 'x'),
+    ('c0000000-0000-0000-0000-000000000003', 'argument', null, null, 'Proposition refusée', 'Ce texte a été refusé par le filtre automatique du site.', 'refusee', 'x');
+`);
+ok("une idée de sujet doit porter sur un bloc", await (async () => {
+  try { await db.exec(`insert into contributions (type, titre, texte) values ('idee', 'Sans module', 'Un texte assez long pour passer la contrainte.')`); return false; } catch { return true; }
+})());
+ok("un argument peut n'être rattaché à aucun article", Number((await db.query(`select count(*)::int n from contributions where id = 'c0000000-0000-0000-0000-000000000003'`)).rows[0].n) === 1);
+let titreCourtRefuse = false;
+try { await db.exec(`insert into contributions (type, bloc_id, titre, texte) values ('idee', '${idBloc}', 'Hop', 'Un texte assez long pour passer la contrainte de longueur.')`); } catch { titreCourtRefuse = true; }
+ok("un titre trop court est refusé", titreCourtRefuse);
+let texteCourtRefuse = false;
+try { await db.exec(`insert into contributions (type, bloc_id, titre, texte) values ('idee', '${idBloc}', 'Un titre bien assez long', 'Trop court.')`); } catch { texteCourtRefuse = true; }
+ok("un texte trop court est refusé", texteCourtRefuse);
+let statutInvalide = false;
+try { await db.exec(`insert into contributions (type, bloc_id, titre, texte, statut) values ('idee', '${idBloc}', 'Un titre bien assez long', 'Un texte assez long pour passer la contrainte.', 'inventé')`); } catch { statutInvalide = true; }
+ok("un statut inventé est refusé", statutInvalide);
+
+await db.exec(`set role anon`);
+const vues = (await db.query(`select id from contributions`)).rows;
+ok("[anon] ne voit que les contributions publiées", vues.length === 1 && vues[0].id === "c0000000-0000-0000-0000-000000000001", JSON.stringify(vues));
+let empreinteCachee = false;
+try { await db.query(`select ip_hash from contributions`); } catch { empreinteCachee = true; }
+ok("[anon] ne peut pas lire l'empreinte d'adresse de l'auteur", empreinteCachee);
+let motifCache = false;
+try { await db.query(`select motif from contributions`); } catch { motifCache = true; }
+ok("[anon] ne peut pas lire le motif de refus", motifCache);
+await refuse("[anon] ne peut pas déposer une contribution directement", `insert into contributions (type, bloc_id, titre, texte) values ('idee', '${idBloc}', 'Un titre bien assez long', 'Un texte assez long pour passer la contrainte.')`);
+await refuse("[anon] ne peut pas publier une contribution en attente", `update contributions set statut = 'publiee' where id = 'c0000000-0000-0000-0000-000000000002'`);
+await refuse("[anon] ne peut pas effacer une contribution", `delete from contributions where id = 'c0000000-0000-0000-0000-000000000001'`);
+await refuse("[anon] ne voit pas qui a signalé quoi", `select * from contributions_signalements`);
+await refuse("[anon] ne peut pas compter les contributions en attente", `select * from etat_contributions()`);
+await db.exec(`reset role`);
+const etatContrib = (await db.query(`select * from etat_contributions()`)).rows[0];
+ok("le créateur compte ce qui attend, ce qui est publié et ce qui a été refusé",
+  Number(etatContrib.en_attente) === 1 && Number(etatContrib.publiees) === 1 && Number(etatContrib.refusees) === 1, JSON.stringify(etatContrib));
+await db.exec(`insert into contributions_signalements (contribution_id, ip_hash) values ('c0000000-0000-0000-0000-000000000001', 'voisin')`);
+let doubleSignalement = false;
+try { await db.exec(`insert into contributions_signalements (contribution_id, ip_hash) values ('c0000000-0000-0000-0000-000000000001', 'voisin')`); } catch { doubleSignalement = true; }
+ok("une même adresse ne signale pas deux fois la même contribution", doubleSignalement);
+ok("un article caché peut quand même être cité par une contribution en attente",
+  Number((await db.query(`select count(*)::int n from contributions where article_id = '${idArticleCache}'`)).rows[0].n) === 0);
+await db.exec(`delete from articles where slug = 'a1'`);
+ok("si l'article cité disparaît, la contribution reste sans lien",
+  (await db.query(`select article_id from contributions where id = 'c0000000-0000-0000-0000-000000000002'`)).rows[0].article_id === null);
+ok("les signalements disparaissent avec la contribution", await (async () => {
+  await db.exec(`delete from contributions where id = 'c0000000-0000-0000-0000-000000000001'`);
+  return Number((await db.query(`select count(*)::int n from contributions_signalements`)).rows[0].n) === 0;
+})());
 
 console.log(echecs === 0 ? "\nTous les tests SQL passent." : `\n${echecs} test(s) en échec.`);
 process.exit(echecs === 0 ? 0 : 1);

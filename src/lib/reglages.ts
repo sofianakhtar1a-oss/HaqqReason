@@ -15,6 +15,10 @@ export type Reglages = {
   taille_max_mo: number;
   /** Proposer aux lecteurs les articles proches par le sens. */
   recherche_sens: boolean;
+  /** Accepter les idées de sujet et les propositions d'arguments des lecteurs. */
+  contributions_ouvertes: boolean;
+  /** Attendre ta validation avant qu'une contribution paraisse, même si elle est propre. */
+  contributions_validation: boolean;
 };
 
 export const REGLAGES_PAR_DEFAUT: Reglages = {
@@ -23,6 +27,8 @@ export const REGLAGES_PAR_DEFAUT: Reglages = {
   lier_appareil: true,
   taille_max_mo: 50,
   recherche_sens: true,
+  contributions_ouvertes: true,
+  contributions_validation: false,
 };
 
 /** Choix proposés dans la page Paramètres. Toute autre valeur est refusée par le serveur. */
@@ -41,6 +47,8 @@ export const LIBELLES: Record<keyof Reglages, string> = {
   lier_appareil: "Session liée à l'appareil",
   taille_max_mo: "Taille maximale d'un fichier",
   recherche_sens: "Recherche par le sens",
+  contributions_ouvertes: "Contributions des lecteurs",
+  contributions_validation: "Relire avant publication",
 };
 
 export function libelleDuree(minutes: number): string {
@@ -61,6 +69,8 @@ export function libelleHeures(heures: number): string {
 /** Ramène des valeurs quelconques (base de données, formulaire) à des réglages sûrs. */
 export function nettoyerReglages(brut: unknown): Reglages {
   const o = (brut ?? {}) as Record<string, unknown>;
+  const oui = (valeur: unknown, defaut: boolean): boolean =>
+    valeur === undefined || valeur === null ? defaut : valeur === true || valeur === "true" || valeur === "on";
   const dansLaListe = <T extends number>(valeur: unknown, liste: readonly T[], defaut: T): T => {
     const n = Number(valeur);
     return liste.includes(n as T) ? (n as T) : defaut;
@@ -68,8 +78,10 @@ export function nettoyerReglages(brut: unknown): Reglages {
   return {
     inactivite_minutes: dansLaListe(o.inactivite_minutes, CHOIX.inactivite_minutes, REGLAGES_PAR_DEFAUT.inactivite_minutes),
     session_max_heures: dansLaListe(o.session_max_heures, CHOIX.session_max_heures, REGLAGES_PAR_DEFAUT.session_max_heures),
-    lier_appareil: o.lier_appareil === undefined ? REGLAGES_PAR_DEFAUT.lier_appareil : o.lier_appareil === true || o.lier_appareil === "true" || o.lier_appareil === "on",
+    lier_appareil: oui(o.lier_appareil, REGLAGES_PAR_DEFAUT.lier_appareil),
     taille_max_mo: dansLaListe(o.taille_max_mo, CHOIX.taille_max_mo, REGLAGES_PAR_DEFAUT.taille_max_mo),
-    recherche_sens: o.recherche_sens === undefined ? REGLAGES_PAR_DEFAUT.recherche_sens : o.recherche_sens === true || o.recherche_sens === "true" || o.recherche_sens === "on",
+    recherche_sens: oui(o.recherche_sens, REGLAGES_PAR_DEFAUT.recherche_sens),
+    contributions_ouvertes: oui(o.contributions_ouvertes, REGLAGES_PAR_DEFAUT.contributions_ouvertes),
+    contributions_validation: oui(o.contributions_validation, REGLAGES_PAR_DEFAUT.contributions_validation),
   };
 }

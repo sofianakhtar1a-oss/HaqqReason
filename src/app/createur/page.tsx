@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BarChart3, FileText, ShieldAlert, ShieldCheck, SlidersHorizontal, Smartphone, Trash2, TriangleAlert, Wrench } from "lucide-react";
+import { BarChart3, FileText, Lightbulb, ShieldAlert, ShieldCheck, SlidersHorizontal, Smartphone, Trash2, TriangleAlert, Wrench } from "lucide-react";
 import { listerAppareils } from "@/lib/appareils";
+import { etatContributions } from "@/lib/contributions/donnees";
 import { articlesParBloc, brouillonsEnAttente, liensCasses } from "@/lib/tableau-de-bord";
 import { confirmerAppareil, signalerAppareil } from "./actions";
 import { BadgeStatut } from "@/components/BadgeStatut";
@@ -27,7 +28,7 @@ function dateLongue(iso: string): string {
 
 export default async function EspaceCreateur() {
   const compte = await exigerCreateur();
-  const [appareils, parBloc, attente, casses, reglages] = await Promise.all([listerAppareils(), articlesParBloc(), brouillonsEnAttente(6), liensCasses(), lireReglages()]);
+  const [appareils, parBloc, attente, casses, reglages, contributions] = await Promise.all([listerAppareils(), articlesParBloc(), brouillonsEnAttente(6), liensCasses(), lireReglages(), etatContributions()]);
   const inconnus = appareils.filter((a) => !a.confirme);
   const [categories, articlesPublies, brouillons, blocs, recents, racines] = await Promise.all([
     compter("categories"),
@@ -176,6 +177,17 @@ export default async function EspaceCreateur() {
               <Link href="/createur/outils" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
                 <Wrench className="size-6 text-or" aria-hidden="true" />
                 Importer, sauvegarder, synonymes
+              </Link>
+              <Link href="/createur/contributions" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
+                <Lightbulb className="size-6 text-or" aria-hidden="true" />
+                <span>
+                  Contributions des lecteurs
+                  {contributions.en_attente > 0 && (
+                    <span className="block text-sm font-normal text-encre-douce">
+                      {contributions.en_attente} en attente de relecture
+                    </span>
+                  )}
+                </span>
               </Link>
               <Link href="/createur/parametres" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
                 <SlidersHorizontal className="size-6 text-or" aria-hidden="true" />

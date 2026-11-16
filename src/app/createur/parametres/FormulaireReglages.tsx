@@ -74,6 +74,31 @@ export function FormulaireReglages({ reglages }: { reglages: Reglages }) {
       </div>
 
       <div className="reglage">
+        <label className="flex items-start gap-3">
+          <input type="checkbox" name="contributions_ouvertes" defaultChecked={reglages.contributions_ouvertes} className="mt-1 size-5 shrink-0 accent-[var(--accent)]" />
+          <span>
+            <span className="etiquette block">Accepter les contributions des lecteurs</span>
+            <span className="reglage-aide mt-1 block">
+              La page « Contribuer » reste visible, mais les formulaires se ferment si tu décoches. Les contributions déjà publiées restent en place.
+            </span>
+          </span>
+        </label>
+      </div>
+
+      <div className="reglage">
+        <label className="flex items-start gap-3">
+          <input type="checkbox" name="contributions_validation" defaultChecked={reglages.contributions_validation} className="mt-1 size-5 shrink-0 accent-[var(--accent)]" />
+          <span>
+            <span className="etiquette block">Tout relire avant publication</span>
+            <span className="reglage-aide mt-1 block">
+              Décoché, ce qui passe le filtre de politesse paraît aussitôt et le reste t&apos;attend. Coché, rien ne paraît sans ton accord. Dans les deux
+              cas, une grossièreté n&apos;est jamais publiée.
+            </span>
+          </span>
+        </label>
+      </div>
+
+      <div className="reglage">
         <label htmlFor="taille" className="etiquette">
           Taille maximale d&apos;un fichier
         </label>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Heart, MessagesSquare, Network } from "lucide-react";
+import { Heart, Lightbulb, MessagesSquare, Network } from "lucide-react";
 import { BoutonTheme } from "./BoutonTheme";
 import { Logo } from "./Logo";
 import { BoutonRecherche } from "./PaletteRecherche";
@@ -7,6 +7,7 @@ import { BoutonRecherche } from "./PaletteRecherche";
 const OUTILS = [
   { href: "/debat", libelle: "Débat express", Icone: MessagesSquare },
   { href: "/graphe", libelle: "Graphe", Icone: Network, cache: "lien-outil-secondaire" },
+  { href: "/contribuer", libelle: "Contribuer", Icone: Lightbulb, cache: "lien-outil-secondaire" },
   { href: "/favoris", libelle: "Favoris", Icone: Heart },
 ];
 
