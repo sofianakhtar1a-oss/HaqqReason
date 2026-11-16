@@ -5,8 +5,8 @@ Bibliothèque d'apologétique islamique : la véracité de l'islam, la défense 
 ## Par où commencer
 
 - **Mettre l'application en ligne et l'installer sur ton téléphone Android** : `docs/GUIDE-MISE-EN-LIGNE.md`. Il part de zéro, en une seule fois, avec le fichier `supabase/installation-complete.sql`.
-- **Tu as déjà une version en ligne** : `docs/GUIDE-PHASE-12.md` explique la dernière mise à jour (un fichier SQL à exécuter : `010_contributions.sql`). Si tu n'avais pas encore fait les précédentes, `docs/GUIDE-PHASE-9.md` indique les fichiers SQL à passer avant.
-- **Découvrir chaque fonction** : `docs/GUIDE-PHASE-1.md` à `docs/GUIDE-PHASE-12.md`.
+- **Tu as déjà une version en ligne** : `docs/GUIDE-PHASE-13.md` explique la dernière mise à jour (aucun SQL à exécuter). Si tu n'avais pas encore fait les précédentes, `docs/GUIDE-PHASE-9.md` indique les fichiers SQL à passer avant.
+- **Découvrir chaque fonction** : `docs/GUIDE-PHASE-1.md` à `docs/GUIDE-PHASE-13.md`.
 - **Liste de vérification de sécurité avant la mise en ligne** : `docs/SECURITE.md`.
 - **Comprendre comment c'est construit** : `docs/ARCHITECTURE.md`.
 
@@ -20,7 +20,7 @@ Bibliothèque d'apologétique islamique : la véracité de l'islam, la défense 
 | `npx vercel --prod` | publie la dernière version en ligne |
 | `npm run test:sql` | vérifie les règles de sécurité de la base |
 
-État du chantier : les douze phases sont terminées.
+État du chantier : les treize phases sont terminées.
 - Phase 1 : socle et sécurité.
 - Phase 2 : organisation du contenu.
 - Phase 3 : éditeur riche.
@@ -33,5 +33,6 @@ Bibliothèque d'apologétique islamique : la véracité de l'islam, la défense 
 - Phase 10 : confort d'écriture (barre d'outils collante, poubelle par bloc, colonnes indépendantes).
 - Phase 11 : graphe en deux temps et atelier d'image au collage.
 - Phase 12 : contributions des lecteurs (idées de sujet, arguments) avec filtre de politesse.
+- Phase 13 : Le Calame, atelier d'écriture intégré (pages A4 réelles, styles globaux, exports PDF/Word/Markdown).
 
 Le site est en ligne et le guide de mise en ligne est fourni.

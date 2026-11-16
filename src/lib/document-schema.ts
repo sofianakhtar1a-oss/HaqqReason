@@ -197,6 +197,7 @@ export const NOEUDS: Record<string, Record<string, Validateur>> = {
   citationOuvrage: { citation: idFichier },
   /** Table des matières : construite à l'affichage à partir des titres de l'article. */
   sommaire: { titre: texte(120), profondeur: entier(2, 4, 4) },
+  sautPage: {},
 };
 
 function lireJson(v: string): unknown {

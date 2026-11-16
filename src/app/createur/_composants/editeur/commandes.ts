@@ -88,6 +88,7 @@ export const COMMANDES: Commande[] = [
   { cle: "numeros", libelle: "Liste numérotée", description: "Étapes, prémisses", groupe: "Texte", motsCles: "liste numerotee numeros etapes premisses", appliquer: (c) => c.toggleOrderedList() },
   { cle: "cases", libelle: "Liste de cases à cocher", description: "Points à vérifier", groupe: "Texte", motsCles: "cases cocher taches liste", appliquer: (c) => c.toggleTaskList() },
   { cle: "citation", libelle: "Citation", description: "Passage cité", groupe: "Texte", motsCles: "citation guillemets", appliquer: (c) => c.toggleBlockquote() },
+  { cle: "saut-page", libelle: "Saut de page", description: "La suite repart en haut de la page suivante", groupe: "Texte", motsCles: "saut page papier impression nouvelle page", appliquer: (c) => c.insertContent({ type: "sautPage" }) },
   { cle: "separateur", libelle: "Séparateur", description: "Ornement entre deux parties", groupe: "Texte", motsCles: "separateur ligne ornement", appliquer: (c) => c.setHorizontalRule() },
   { cle: "sommaire", libelle: "Table des matières", description: "La liste des titres de l'article, cliquables", groupe: "Texte", motsCles: "sommaire table matieres plan titres navigation", appliquer: (c) => c.insertContent({ type: "sommaire", attrs: { titre: "", profondeur: 4 } }) },
 

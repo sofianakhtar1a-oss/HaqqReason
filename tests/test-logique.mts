@@ -217,4 +217,100 @@ ok("logique par défaut cohérente", (["validite", "demonstration", "syllogisme"
   ok("les motifs se lisent en français", libelleMotifs(["lien", "majuscules"]) === "contient un lien, écrit en majuscules");
 }
 
+// ---------------------------------------------------------------- Le Calame : papier, pagination, exports
+{
+  const { geometrie, nettoyerReglages, remplirLigne, REGLAGES_PAR_DEFAUT, tailleDuPapier, variablesDeStyle, MM } = await import("../src/lib/atelier/modele");
+  const { paginer, pageDuBloc, pageAuPoint, pagesEstimees } = await import("../src/lib/atelier/pagination");
+  const { enMarkdown } = await import("../src/lib/atelier/markdown");
+  const { construireDocx } = await import("../src/lib/atelier/docx");
+  const { unzipSync, strFromU8 } = await import("fflate");
+
+  // --- la géométrie du papier
+  const a4 = geometrie(REGLAGES_PAR_DEFAUT);
+  ok("A4 : 210 mm de large une fois converti en pixels", Math.round(a4.page.largeur) === Math.round(210 * MM), String(a4.page.largeur));
+  ok("A4 : 297 mm de haut", Math.round(a4.page.hauteur) === Math.round(297 * MM));
+  ok("la zone de texte retire les marges", Math.round(a4.zone.largeur) === Math.round((210 - 50) * MM) && Math.round(a4.zone.hauteur) === Math.round((297 - 50) * MM));
+  const paysage = tailleDuPapier("a4", "paysage");
+  ok("le paysage retourne la feuille", paysage.largeur === 297 && paysage.hauteur === 210);
+
+  // --- les réglages sont bornés
+  const abusif = nettoyerReglages({ format: "inventé", orientation: "diagonale", marges: { haut: 9999, bas: -50, gauche: 20, droite: 20 }, styles: { corps: { taille: 900, interligne: 0.1 } }, entete: "x".repeat(500) });
+  ok("un format inconnu retombe sur A4", abusif.format === "a4");
+  ok("une marge démesurée est ramenée dans la page", abusif.marges.haut <= (297 - 30) / 2, String(abusif.marges.haut));
+  ok("une marge négative est ramenée à zéro", abusif.marges.bas === 0);
+  ok("une taille de police absurde est bornée", abusif.styles.corps.taille === 72, String(abusif.styles.corps.taille));
+  ok("un interligne trop serré est relevé", abusif.styles.corps.interligne === 1);
+  ok("un en-tête interminable est coupé", abusif.entete.length === 160);
+  ok("les styles absents reprennent ceux d'origine", abusif.styles.titre1.taille === REGLAGES_PAR_DEFAUT.styles.titre1.taille);
+
+  // --- en-tête et pied
+  const ligne = remplirLigne("{titre} — page {page} sur {pages}", { titre: "Essai", page: 3, pages: 7 });
+  ok("les jetons de l'en-tête se remplacent", ligne === "Essai — page 3 sur 7", ligne);
+  ok("les variables de style portent la géométrie", variablesDeStyle(REGLAGES_PAR_DEFAUT)["--zone-hauteur"].endsWith("px"));
+
+  // --- la pagination
+  const suite = (nombre: number, hauteur: number) => Array.from({ length: nombre }, (_, i) => ({ id: String(i), haut: i * hauteur, hauteur, insecable: true }));
+  const vide = paginer([], 900);
+  ok("un document vide tient sur une page", vide.pages.length === 1);
+  const dix = paginer(suite(10, 100), 450);
+  ok("dix blocs de 100 sur des pages de 450 : trois pages", dix.pages.length === 3, JSON.stringify(dix.pages.map((p) => p.blocs.length)));
+  ok("une page ne reçoit que ce qui y tient", dix.pages[0].blocs.length === 4 && dix.pages[1].blocs.length === 4 && dix.pages[2].blocs.length === 2);
+  ok("chaque page repart du haut du bloc qui l'ouvre", dix.pages[1].debut === 400);
+  ok("on retrouve la page d'un bloc", pageDuBloc(dix, "5") === 2 && pageDuBloc(dix, "9") === 3);
+  ok("on retrouve la page d'un point du texte", pageAuPoint(dix, 10) === 1 && pageAuPoint(dix, 500) === 2);
+
+  const geant = paginer([{ id: "a", haut: 0, hauteur: 2000, insecable: true }, { id: "b", haut: 2000, hauteur: 50, insecable: true }], 500);
+  ok("un bloc plus haut qu'une page la traverse au lieu de disparaître", geant.pages.length >= 4 && geant.pages[0].blocs[0] === "a", JSON.stringify(geant.pages.map((p) => p.blocs)));
+
+  const saut = paginer([{ id: "a", haut: 0, hauteur: 50 }, { id: "b", haut: 50, hauteur: 50, sautAvant: true }], 900);
+  ok("un saut de page demandé ouvre bien une page", saut.pages.length === 2 && saut.pages[1].blocs[0] === "b");
+  ok("le saut ne fait rien en tête de document", paginer([{ id: "a", haut: 0, hauteur: 50, sautAvant: true }], 900).pages.length === 1);
+  ok("une page de hauteur absurde ne bloque pas le calcul", paginer(suite(3, 100), 0).pages.length >= 1);
+  ok("l'estimation de pages suit le nombre de mots", pagesEstimees(0) === 1 && pagesEstimees(1200) === 3);
+
+  // --- Markdown
+  const document = {
+    type: "doc",
+    content: [
+      { type: "heading", attrs: { level: 2 }, content: [{ type: "text", text: "La preuve" }] },
+      { type: "paragraph", content: [{ type: "text", text: "Un texte " }, { type: "text", marks: [{ type: "bold" }], text: "important" }, { type: "text", text: " et " }, { type: "text", marks: [{ type: "italic" }], text: "nuancé" }] },
+      { type: "bulletList", content: [{ type: "listItem", content: [{ type: "paragraph", content: [{ type: "text", text: "Premier point" }] }] }, { type: "listItem", content: [{ type: "paragraph", content: [{ type: "text", text: "Second point" }] }] }] },
+      { type: "blockquote", content: [{ type: "paragraph", content: [{ type: "text", text: "Une citation" }] }] },
+      { type: "table", content: [{ type: "tableRow", content: [{ type: "tableHeader", content: [{ type: "paragraph", content: [{ type: "text", text: "Thèse" }] }] }, { type: "tableHeader", content: [{ type: "paragraph", content: [{ type: "text", text: "Réponse" }] }] }] }, { type: "tableRow", content: [{ type: "tableCell", content: [{ type: "paragraph", content: [{ type: "text", text: "A" }] }] }, { type: "tableCell", content: [{ type: "paragraph", content: [{ type: "text", text: "B" }] }] }] }] },
+      { type: "verset", attrs: { reference: "2:255" }, content: [{ type: "paragraph", content: [{ type: "text", text: "Allah, point de divinité à part Lui" }] }] },
+      { type: "sautPage" },
+    ],
+  };
+  const md = enMarkdown(document, "Mon document");
+  ok("le Markdown commence par le titre", md.startsWith("# Mon document"), md.slice(0, 40));
+  ok("les titres de partie deviennent des dièses", md.includes("## La preuve"));
+  ok("le gras et l'italique sont rendus", md.includes("**important**") && md.includes("*nuancé*"));
+  ok("les listes deviennent des tirets", md.includes("- Premier point") && md.includes("- Second point"));
+  ok("les citations deviennent des chevrons", md.includes("> Une citation"));
+  ok("le tableau est écrit au format Markdown", md.includes("| Thèse | Réponse |") && md.includes("| --- | --- |"));
+  ok("un verset garde sa référence", md.includes("Coran — 2:255"));
+  ok("un saut de page laisse une trace discrète", md.includes("Saut de page"));
+
+  // --- Word
+  const octets = construireDocx({ titre: "Mon document", contenu: document, reglages: REGLAGES_PAR_DEFAUT });
+  ok("le .docx est bien une archive", octets[0] === 0x50 && octets[1] === 0x4b);
+  const pieces = unzipSync(octets);
+  for (const attendu of ["[Content_Types].xml", "_rels/.rels", "word/document.xml", "word/styles.xml", "word/numbering.xml", "word/_rels/document.xml.rels"]) {
+    ok(`le .docx contient ${attendu}`, pieces[attendu] !== undefined);
+  }
+  const xmlDocument = strFromU8(pieces["word/document.xml"]);
+  ok("le titre figure dans le document Word", xmlDocument.includes("Mon document"));
+  ok("les titres de partie deviennent un style Word", xmlDocument.includes('w:pStyle w:val="Titre1"'));
+  ok("le gras est transmis à Word", xmlDocument.includes("<w:b/>"));
+  ok("la liste à puces est numérotée par Word", xmlDocument.includes("<w:numPr>"));
+  ok("le tableau devient un vrai tableau Word", xmlDocument.includes("<w:tbl>") && xmlDocument.includes("<w:tc>"));
+  ok("le saut de page est un vrai saut Word", xmlDocument.includes('w:br w:type="page"'));
+  ok("le format de la page est transmis", xmlDocument.includes("<w:pgSz") && xmlDocument.includes("<w:pgMar"));
+  ok("les caractères spéciaux sont échappés", construireDocx({ titre: "A < B & C", contenu: { type: "doc", content: [] }, reglages: REGLAGES_PAR_DEFAUT }).length > 0);
+  const avecPied = construireDocx({ titre: "T", contenu: { type: "doc", content: [] }, reglages: { ...REGLAGES_PAR_DEFAUT, entete: "Mon en-tête", pied: "Mon pied" } });
+  const piecesPied = unzipSync(avecPied);
+  ok("l'en-tête et le pied deviennent des pièces du .docx", piecesPied["word/header1.xml"] !== undefined && piecesPied["word/footer1.xml"] !== undefined);
+  ok("la numérotation des pages est un champ Word", strFromU8(piecesPied["word/footer1.xml"]).includes("PAGE"));
+}
+
 process.exit(e);

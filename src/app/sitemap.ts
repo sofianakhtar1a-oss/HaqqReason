@@ -8,7 +8,7 @@ export const revalidate = 3600;
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const site = adresseDuSite();
   const url = (chemin: string) => new URL(chemin, site).toString();
-  const fixes: MetadataRoute.Sitemap = ["/", "/explorer", "/recherche", "/debat", "/graphe", "/sophismes", "/nouveautes", "/contribuer"].map((c) => ({ url: url(c), changeFrequency: "weekly", priority: c === "/" ? 1 : 0.6 }));
+  const fixes: MetadataRoute.Sitemap = ["/", "/explorer", "/recherche", "/debat", "/graphe", "/sophismes", "/nouveautes", "/contribuer", "/utilisateur"].map((c) => ({ url: url(c), changeFrequency: "weekly", priority: c === "/" ? 1 : 0.6 }));
   try {
     const db = dbPublic();
     const [blocs, categories, articles] = await Promise.all([

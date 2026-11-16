@@ -292,6 +292,21 @@ const Image = Node.create({
   },
 });
 
+/** Saut de page : l'auteur décide lui-même où le papier se termine. */
+const SautPage = Node.create({
+  name: "sautPage",
+  group: "block",
+  atom: true,
+  selectable: true,
+  draggable: true,
+  parseHTML() {
+    return [{ tag: "div.saut-page" }];
+  },
+  renderHTML({ HTMLAttributes }) {
+    return ["div", mergeAttributes(HTMLAttributes, { class: "saut-page", "data-saut": "page" }), ["span", {}, "Saut de page"]];
+  },
+});
+
 const DocumentPdf = Node.create({
   name: "documentPdf",
   group: "block",
@@ -480,6 +495,7 @@ export function extensionsDocument(): AnyExtension[] {
     Note,
     Image,
     DocumentPdf,
+    SautPage,
     LienCarte,
     Schema,
     Logique,

@@ -25,10 +25,10 @@ export default function Accueil() {
           </p>
 
           <nav aria-label="Choix du mode" className="mt-10 grid gap-4 sm:grid-cols-2">
-            <Link href="/explorer" className="verre group rounded-3xl p-6 transition-colors hover:border-or">
+            <Link href="/utilisateur" className="verre group rounded-3xl p-6 transition-colors hover:border-or">
               <BookOpen className="size-7 text-or" strokeWidth={1.5} aria-hidden="true" />
               <span className="mt-4 block font-display text-xl font-bold">Mode utilisateur</span>
-              <span className="mt-1 block text-encre-douce">Lire la bibliothèque. Aucun mot de passe.</span>
+              <span className="mt-1 block text-encre-douce">Écrire ses propres textes, ou lire la bibliothèque. Aucun mot de passe.</span>
             </Link>
             <Link href="/createur/connexion" className="verre group rounded-3xl p-6 transition-colors hover:border-or">
               <PenLine className="size-7 text-or" strokeWidth={1.5} aria-hidden="true" />

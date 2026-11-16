@@ -3974,3 +3974,846 @@ a.contrib-renvoi:focus-visible {
   color: var(--encre-douce);
   font-style: italic;
 }
+
+/* ==========================================================================
+   Mode utilisateur : les deux espaces
+   ========================================================================== */
+.carte-choix {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 0.6rem;
+  padding: 2rem;
+  border-radius: 1.75rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  overflow: hidden;
+  transition:
+    transform 0.25s cubic-bezier(0.2, 0.7, 0.3, 1),
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.carte-choix::after {
+  content: "";
+  position: absolute;
+  inset: auto -30% -60% -30%;
+  height: 70%;
+  background: radial-gradient(60% 100% at 50% 100%, color-mix(in srgb, var(--accent) 26%, transparent), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.carte-choix:hover,
+.carte-choix:focus-visible {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 1.5rem 3rem -1.5rem color-mix(in srgb, var(--accent) 60%, transparent);
+}
+.carte-choix:hover::after,
+.carte-choix:focus-visible::after {
+  opacity: 1;
+}
+.carte-choix-marque {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.8;
+}
+.carte-choix-sur {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--encre-douce);
+}
+.carte-choix-titre {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+.carte-choix-texte {
+  max-width: 44ch;
+  color: var(--encre-douce);
+}
+.carte-choix-pied {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* ==========================================================================
+   Le Calame — atelier d'écriture
+   ========================================================================== */
+.calame {
+  display: grid;
+  grid-template-columns: 0 minmax(0, 1fr) 0;
+  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-areas:
+    "barre barre barre"
+    "cote centre inspecteur";
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--fond);
+}
+.calame[data-cote] {
+  grid-template-columns: 17rem minmax(0, 1fr) 0;
+}
+.calame[data-inspecteur] {
+  grid-template-columns: 0 minmax(0, 1fr) 19rem;
+}
+.calame[data-cote][data-inspecteur] {
+  grid-template-columns: 17rem minmax(0, 1fr) 19rem;
+}
+@media (max-width: 70rem) {
+  .calame[data-cote],
+  .calame[data-inspecteur],
+  .calame[data-cote][data-inspecteur] {
+    grid-template-columns: 0 minmax(0, 1fr) 0;
+  }
+  .calame-cote,
+  .calame-inspecteur {
+    position: fixed;
+    inset: 3.5rem 0 0 0;
+    z-index: 30;
+    width: min(22rem, 100%);
+  }
+  .calame-inspecteur {
+    left: auto;
+    right: 0;
+  }
+}
+
+.calame-barre {
+  grid-area: barre;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 92%, var(--encre) 8%);
+}
+.calame-titre {
+  flex: 1;
+  min-width: 0;
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.6rem;
+  border: 1px solid transparent;
+  background: transparent;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--encre);
+}
+.calame-titre:hover {
+  border-color: var(--trait);
+}
+.calame-titre:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+.calame-etat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+  white-space: nowrap;
+}
+@media (max-width: 48rem) {
+  .calame-etat {
+    display: none;
+  }
+}
+.calame-icone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.65rem;
+  border: 1px solid transparent;
+  color: var(--encre-douce);
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+.calame-icone:hover {
+  background: var(--surface);
+  color: var(--encre);
+}
+.calame-icone[aria-pressed="true"] {
+  border-color: var(--trait);
+  background: var(--surface);
+  color: var(--accent);
+}
+.calame-sortie {
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.calame-sortie:hover {
+  color: var(--encre);
+  border-color: var(--accent);
+}
+
+/* ---------- colonnes ---------- */
+.calame-cote {
+  grid-area: cote;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  border-right: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 94%, var(--encre) 6%);
+}
+.calame-inspecteur {
+  grid-area: inspecteur;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+  border-left: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 94%, var(--encre) 6%);
+}
+.calame-onglets {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--trait);
+}
+.calame-onglet {
+  display: inline-flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.5rem;
+  border-radius: 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.calame-onglet:hover {
+  background: var(--surface);
+}
+.calame-onglet[aria-selected="true"] {
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+  color: var(--encre);
+}
+.calame-cote-corps,
+.calame-inspecteur-corps {
+  display: grid;
+  align-content: start;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  min-width: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+}
+.calame-cote-corps > *,
+.calame-inspecteur-corps > * {
+  min-width: 0;
+}
+.calame-vide {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--encre-douce);
+}
+
+.calame-documents {
+  display: grid;
+  gap: 0.25rem;
+}
+.calame-documents li {
+  position: relative;
+}
+.calame-document {
+  display: grid;
+  gap: 0.15rem;
+  width: 100%;
+  padding: 0.55rem 2rem 0.55rem 0.6rem;
+  border-radius: 0.7rem;
+  text-align: left;
+}
+.calame-document:hover {
+  background: var(--surface);
+}
+.calame-document[aria-current="true"] {
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+  box-shadow: inset 2px 0 0 var(--accent);
+}
+.calame-document-titre {
+  font-weight: 600;
+  line-height: 1.25;
+}
+.calame-document-detail {
+  font-size: 0.78rem;
+  color: var(--encre-douce);
+}
+.calame-document-poubelle {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.4rem;
+  padding: 0.25rem;
+  border-radius: 0.4rem;
+  color: var(--encre-douce);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+.calame-documents li:hover .calame-document-poubelle,
+.calame-document-poubelle:focus-visible {
+  opacity: 1;
+}
+.calame-document-poubelle:hover {
+  color: var(--danger, #e06c6c);
+}
+.calame-document-confirme {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.6rem 0.6rem;
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}
+
+.calame-plan {
+  display: grid;
+  gap: 0.1rem;
+}
+.calame-plan button {
+  width: 100%;
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--encre-douce);
+  border-left: 2px solid transparent;
+}
+.calame-plan button:hover {
+  background: var(--surface);
+  color: var(--encre);
+  border-left-color: var(--accent);
+}
+.calame-plan li[data-niveau="2"] button {
+  font-weight: 650;
+  color: var(--encre);
+}
+.calame-plan li[data-niveau="3"] button {
+  padding-left: 1.4rem;
+}
+.calame-plan li[data-niveau="4"] button {
+  padding-left: 2.2rem;
+  font-size: 0.85rem;
+}
+
+/* ---------- la scène et le papier ---------- */
+.calame-centre {
+  grid-area: centre;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+.calame-outils {
+  padding: 0.4rem 0.75rem;
+  border-bottom: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 92%, var(--encre) 8%);
+}
+.calame-outils .barre-outils {
+  position: static;
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+.calame-scene {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 2.5rem 1.5rem 6rem;
+  display: flex;
+  justify-content: center;
+  background:
+    radial-gradient(80% 60% at 50% 0%, color-mix(in srgb, var(--accent) 7%, transparent), transparent 70%),
+    var(--fond);
+}
+.calame-flux {
+  position: relative;
+  flex: none;
+  max-width: 100%;
+}
+.calame-feuilles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.calame-feuille {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-radius: 2px;
+  background: #fdfcfa;
+  box-shadow:
+    0 1px 2px rgb(5 8 25 / 0.25),
+    0 1.5rem 2.5rem -1.5rem rgb(5 8 25 / 0.55);
+}
+.calame-flux[data-sombre] .calame-feuille {
+  background: #15182a;
+}
+.calame-marges {
+  position: absolute;
+  border: 1px dashed color-mix(in srgb, var(--or) 45%, transparent);
+  opacity: 0;
+  pointer-events: none;
+}
+.calame-flux[data-reperes] .calame-marges {
+  opacity: 0.55;
+}
+.calame-entete,
+.calame-pied {
+  position: absolute;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 9pt;
+  color: #6b7390;
+}
+.calame-flux[data-sombre] .calame-entete,
+.calame-flux[data-sombre] .calame-pied {
+  color: #8d94b4;
+}
+.calame-entete {
+  justify-content: flex-end;
+}
+.calame-numero {
+  font-variant-numeric: tabular-nums;
+  margin-left: auto;
+}
+.calame-texte {
+  position: relative;
+  z-index: 1;
+}
+.calame-coupure {
+  position: relative;
+  width: 100%;
+  user-select: none;
+}
+.calame-coupure-numero {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--fond) 80%, transparent);
+  border: 1px solid var(--trait);
+  font-family: var(--font-corps, inherit);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--encre-douce);
+}
+
+/* ---------- la typographie du document, pilotée par les jetons ---------- */
+.calame-texte .tiptap {
+  position: relative;
+  min-height: 2rem;
+  font-family: var(--corps-police);
+  font-size: var(--corps-taille);
+  line-height: var(--corps-interligne);
+  font-weight: var(--corps-graisse);
+  color: var(--corps-couleur);
+  outline: none;
+}
+.calame-flux[data-sombre] .calame-texte .tiptap {
+  color: #e7e9f5;
+}
+.calame-texte .tiptap > * {
+  margin-top: var(--corps-avant);
+  margin-bottom: var(--corps-apres);
+}
+.calame-texte .tiptap h2,
+.calame-texte .tiptap h3,
+.calame-texte .tiptap h4 {
+  font-family: var(--titre1-police);
+}
+.calame-texte .tiptap h2 {
+  font-size: var(--titre1-taille);
+  line-height: var(--titre1-interligne);
+  font-weight: var(--titre1-graisse);
+  color: var(--titre1-couleur);
+  margin-top: var(--titre1-avant);
+  margin-bottom: var(--titre1-apres);
+}
+.calame-texte .tiptap h3 {
+  font-size: var(--titre2-taille);
+  line-height: var(--titre2-interligne);
+  font-weight: var(--titre2-graisse);
+  color: var(--titre2-couleur);
+  margin-top: var(--titre2-avant);
+  margin-bottom: var(--titre2-apres);
+}
+.calame-texte .tiptap h4 {
+  font-size: var(--titre3-taille);
+  line-height: var(--titre3-interligne);
+  font-weight: var(--titre3-graisse);
+  color: var(--titre3-couleur);
+  margin-top: var(--titre3-avant);
+  margin-bottom: var(--titre3-apres);
+}
+.calame-texte .tiptap blockquote {
+  font-family: var(--citation-police);
+  font-size: var(--citation-taille);
+  line-height: var(--citation-interligne);
+  color: var(--citation-couleur);
+  margin-top: var(--citation-avant);
+  margin-bottom: var(--citation-apres);
+  padding-left: 1rem;
+  border-left: 2px solid color-mix(in srgb, var(--or) 60%, transparent);
+}
+.calame-flux[data-sombre] .calame-texte .tiptap h2,
+.calame-flux[data-sombre] .calame-texte .tiptap h3,
+.calame-flux[data-sombre] .calame-texte .tiptap h4 {
+  color: #f1e9d2;
+}
+.calame-titre-impression {
+  display: none;
+}
+
+/* Le saut de page, tel qu'on le voit en écrivant */
+.saut-page {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--encre-douce);
+  user-select: none;
+}
+.saut-page::before,
+.saut-page::after {
+  content: "";
+  flex: 1;
+  border-top: 1px dashed color-mix(in srgb, var(--or) 55%, transparent);
+}
+
+.image-absente {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px dashed var(--trait);
+  color: var(--encre-douce);
+}
+.image-legende-champ {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  text-align: center;
+  font-size: 0.85em;
+  color: inherit;
+  outline: none;
+}
+
+/* ---------- inspecteur ---------- */
+.inspecteur-reglage {
+  display: grid;
+  gap: 0.3rem;
+}
+.inspecteur-libelle {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.inspecteur-valeur {
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+}
+.inspecteur-choix {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.inspecteur-aide {
+  display: block;
+  overflow-wrap: anywhere;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--encre-douce);
+}
+.inspecteur-aide svg {
+  display: inline;
+  vertical-align: -0.15em;
+  margin-right: 0.3rem;
+}
+.inspecteur-aide code {
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+  background: var(--surface);
+  font-size: 0.95em;
+}
+.inspecteur-bascule {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+}
+.inspecteur-bascule input {
+  accent-color: var(--accent);
+  width: 1.05rem;
+  height: 1.05rem;
+}
+.inspecteur-couleur {
+  width: 2.6rem;
+  height: 2.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--trait);
+  background: transparent;
+  cursor: pointer;
+}
+.inspecteur-jeton {
+  border-radius: 0.8rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  overflow: hidden;
+}
+.inspecteur-jeton-tete {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+}
+.inspecteur-jeton-corps {
+  display: grid;
+  gap: 0.7rem;
+  padding: 0 0.75rem 0.75rem;
+}
+.inspecteur-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.inspecteur-stats > div {
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.inspecteur-stats dt {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--encre-douce);
+}
+.inspecteur-stats dd {
+  font-size: 1.15rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- barre de commande ---------- */
+.calame-palette-fond {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  justify-content: center;
+  padding: 10vh 1rem 1rem;
+  background: rgb(5 8 25 / 0.55);
+  backdrop-filter: blur(3px);
+}
+.calame-palette {
+  display: flex;
+  flex-direction: column;
+  width: min(42rem, 100%);
+  max-height: 70vh;
+  border-radius: 1.25rem;
+  border: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 96%, var(--encre) 4%);
+  box-shadow: 0 2rem 4rem -1rem rgb(5 8 25 / 0.7);
+  overflow: hidden;
+}
+.calame-palette-champ {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 1.1rem;
+  border-bottom: 1px solid var(--trait);
+}
+.calame-touche {
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--trait);
+  font-size: 0.7rem;
+  color: var(--encre-douce);
+}
+.calame-palette-liste {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0.4rem;
+}
+.calame-palette-liste button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.6rem;
+  text-align: left;
+}
+.calame-palette-liste [aria-selected="true"] button {
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+}
+.calame-palette-groupe {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 0.72rem;
+  color: var(--encre-douce);
+}
+.calame-attente {
+  display: grid;
+  place-items: center;
+  gap: 0.75rem;
+  height: 100dvh;
+  color: var(--encre-douce);
+}
+
+/* ---------- impression : le navigateur pagine, avec la même géométrie ---------- */
+@media print {
+  .calame {
+    display: block;
+    height: auto;
+    overflow: visible;
+    background: #fff;
+  }
+  .calame-cote,
+  .calame-inspecteur,
+  .calame-barre,
+  .calame-outils,
+  .calame-feuilles,
+  .calame-coupure,
+  .barre-outils,
+  .sans-impression {
+    display: none !important;
+  }
+  .calame-centre,
+  .calame-scene {
+    display: block;
+    overflow: visible;
+    padding: 0;
+    background: #fff;
+  }
+  .calame-flux {
+    width: auto !important;
+    height: auto !important;
+  }
+  .calame-texte {
+    padding: 0 !important;
+  }
+  .calame-titre-impression {
+    display: block;
+    font-family: var(--titre1-police);
+    font-size: calc(var(--titre1-taille) * 1.2);
+    font-weight: 800;
+    color: #0d1640;
+    margin-bottom: 1rem;
+  }
+  .calame-texte .tiptap {
+    color: #16192b;
+  }
+  .calame-texte .tiptap > * {
+    break-inside: avoid;
+  }
+  .calame-texte .tiptap table,
+  .calame-texte .tiptap figure,
+  .calame-texte .tiptap .encadre,
+  .calame-texte .tiptap .verset,
+  .calame-texte .tiptap .hadith,
+  .calame-texte .tiptap blockquote {
+    break-inside: avoid;
+  }
+  .calame-texte .tiptap h2,
+  .calame-texte .tiptap h3,
+  .calame-texte .tiptap h4 {
+    break-after: avoid;
+  }
+  .saut-page {
+    break-after: page;
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+  }
+}
+
+/* Tableaux de l'atelier d'écriture */
+.calame-texte .tiptap table.calame-tableau {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 0.8em 0;
+  overflow: hidden;
+}
+.calame-texte .tiptap table.calame-tableau td,
+.calame-texte .tiptap table.calame-tableau th {
+  position: relative;
+  padding: 0.4em 0.6em;
+  border: 1px solid #c3c8dd;
+  vertical-align: top;
+  min-width: 3em;
+}
+.calame-texte .tiptap table.calame-tableau th {
+  background: #eef0f8;
+  font-weight: 700;
+  text-align: left;
+}
+.calame-flux[data-sombre] .calame-texte .tiptap table.calame-tableau td,
+.calame-flux[data-sombre] .calame-texte .tiptap table.calame-tableau th {
+  border-color: #3a4068;
+}
+.calame-flux[data-sombre] .calame-texte .tiptap table.calame-tableau th {
+  background: #222742;
+}
+.calame-texte .tiptap table.calame-tableau .selectedCell::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: color-mix(in srgb, var(--or) 22%, transparent);
+  pointer-events: none;
+}
+.calame-texte .tiptap table.calame-tableau .column-resize-handle {
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  right: -2px;
+  width: 4px;
+  background: var(--or);
+  cursor: col-resize;
+}
+.calame-texte .tiptap .tableWrapper {
+  overflow-x: auto;
+}
