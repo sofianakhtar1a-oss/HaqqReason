@@ -8,7 +8,8 @@ import { ErreurGroq as ErreurService } from "./groq";
  */
 
 const BASE = "https://generativelanguage.googleapis.com/v1beta";
-export const MODELE_CHAT = process.env.GEMINI_MODELE || "gemini-2.5-flash";
+/** Modèle par défaut (novembre 2026). Si Google le retire, le serveur suit sa recommandation tout seul. */
+let modeleChat = process.env.GEMINI_MODELE || "gemini-3.8-flash";
 const MODELE_VECTEURS = process.env.GEMINI_MODELE_VECTEURS || "gemini-embedding-001";
 export const DIMENSIONS = 256;
 
@@ -40,16 +41,27 @@ export type Tour = { role: "user" | "model"; texte: string };
  * Gemini parle en « Server-Sent Events » ; on n'en garde que le texte.
  */
 export async function discuterEnFlux(systeme: string, tours: Tour[], signal?: AbortSignal): Promise<ReadableStream<Uint8Array>> {
-  const r = await fetch(`${BASE}/models/${MODELE_CHAT}:streamGenerateContent?alt=sse`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json", "x-goog-api-key": cle() },
-    body: JSON.stringify({
-      systemInstruction: { parts: [{ text: systeme }] },
-      contents: tours.map((t) => ({ role: t.role, parts: [{ text: t.texte }] })),
-      generationConfig: { temperature: 0.35, maxOutputTokens: 32768, thinkingConfig: { thinkingBudget: 2048 } },
-    }),
-    signal,
-  });
+  const appeler = (modele: string) =>
+    fetch(`${BASE}/models/${modele}:streamGenerateContent?alt=sse`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "x-goog-api-key": cle() },
+      body: JSON.stringify({
+        systemInstruction: { parts: [{ text: systeme }] },
+        contents: tours.map((t) => ({ role: t.role, parts: [{ text: t.texte }] })),
+        generationConfig: { temperature: 0.35, maxOutputTokens: 32768 },
+      }),
+      signal,
+    });
+  let r = await appeler(modeleChat);
+  // Modèle retiré : Google indique son successeur dans le message d'erreur ; on le suit une fois.
+  if (r.status === 404 || r.status === 400) {
+    const corps = await r.clone().text();
+    const successeur = /use (?:models\/)?(gemini-[\w.-]+)/i.exec(corps)?.[1];
+    if (successeur && successeur !== modeleChat) {
+      modeleChat = successeur;
+      r = await appeler(modeleChat);
+    }
+  }
   if (!r.ok || !r.body) await echec(r);
   const encodeur = new TextEncoder();
   const decodeur = new TextDecoder();
