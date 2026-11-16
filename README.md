@@ -20,7 +20,7 @@ Bibliothèque d'apologétique islamique : la véracité de l'islam, la défense 
 | `npx vercel --prod` | publie la dernière version en ligne |
 | `npm run test:sql` | vérifie les règles de sécurité de la base |
 
-État du chantier : les treize phases sont terminées.
+État du chantier : les quatorze phases sont terminées.
 - Phase 1 : socle et sécurité.
 - Phase 2 : organisation du contenu.
 - Phase 3 : éditeur riche.
@@ -34,5 +34,6 @@ Bibliothèque d'apologétique islamique : la véracité de l'islam, la défense 
 - Phase 11 : graphe en deux temps et atelier d'image au collage.
 - Phase 12 : contributions des lecteurs (idées de sujet, arguments) avec filtre de politesse.
 - Phase 13 : Le Calame, atelier d'écriture intégré (pages A4 réelles, styles globaux, exports PDF/Word/Markdown).
+- Phase 14 : L'Alambic, studio de fichiers (conversion entre 36 formats, fusion, découpe, protection AES-256, tout dans le navigateur).
 
 Le site est en ligne et le guide de mise en ligne est fourni.

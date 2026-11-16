@@ -1,0 +1,389 @@
+"use client";
+
+import { FileUp, LoaderCircle, Scissors, X } from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { FORMATS, format, tailleLisible } from "@/lib/alambic/formats";
+import { verdict, type Capacites } from "@/lib/alambic/graphe";
+import type { Resultat } from "@/lib/alambic/navigateur/moteur";
+import { CarteResultat } from "./CarteResultat";
+import { ChampProtection } from "./ChampProtection";
+import { useReception, type Abonner } from "./reception";
+
+type DocPdf = Awaited<ReturnType<typeof import("@/lib/alambic/navigateur/pdf").ouvrir>>;
+type Mode = "un" | "chaque" | "images";
+
+function enPlages(pages: number[]): string {
+  const triees = [...pages].sort((a, b) => a - b);
+  const morceaux: string[] = [];
+  for (let i = 0; i < triees.length; i++) {
+    let j = i;
+    while (j + 1 < triees.length && triees[j + 1] === triees[j] + 1) j++;
+    morceaux.push(j > i ? `${triees[i]}-${triees[j]}` : String(triees[i]));
+    i = j;
+  }
+  return morceaux.join(", ");
+}
+
+function horloge(s: number): string {
+  if (!Number.isFinite(s)) return "0:00";
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  const sec = s % 60;
+  const ss = sec.toFixed(1).padStart(4, "0").replace(".", ",");
+  return h ? `${h}:${String(m).padStart(2, "0")}:${ss}` : `${m}:${ss}`;
+}
+
+function Vignette({ doc, numero, choisie, onBasculer }: { doc: DocPdf["doc"]; numero: number; choisie: boolean; onBasculer: () => void }) {
+  const [url, setUrl] = useState<string | null>(null);
+  const ref = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    // Rendu seulement quand la vignette approche de l'écran : un PDF de 500 pages reste fluide.
+    const el = ref.current;
+    if (!el) return;
+    let fait = false;
+    let lien: string | null = null;
+    const obs = new IntersectionObserver(
+      async (entrees) => {
+        if (fait || !entrees.some((e) => e.isIntersecting)) return;
+        fait = true;
+        obs.disconnect();
+        const { vignettePage } = await import("@/lib/alambic/navigateur/pdf");
+        try {
+          lien = await vignettePage(doc, numero, 140);
+          setUrl(lien);
+        } catch {}
+      },
+      { rootMargin: "400px" },
+    );
+    obs.observe(el);
+    return () => {
+      obs.disconnect();
+      if (lien) URL.revokeObjectURL(lien);
+    };
+  }, [doc, numero]);
+  return (
+    <button ref={ref} type="button" className="alambic-page" aria-pressed={choisie} onClick={onBasculer} aria-label={`Page ${numero}${choisie ? ", gardée" : ""}`}>
+      {/* eslint-disable-next-line @next/next/no-img-element -- image locale (blob:), rien à optimiser */}
+      <span className="alambic-page-image">{url ? <img src={url} alt="" /> : <LoaderCircle className="size-5 animate-spin text-encre-douce" aria-hidden="true" />}</span>
+      <span className="alambic-page-numero">{numero}</span>
+    </button>
+  );
+}
+
+export function Decoupe({ capacites, abonner }: { capacites: Capacites; abonner: Abonner }) {
+  const [fichier, setFichier] = useState<File | null>(null);
+  const [fmt, setFmt] = useState<string | null>(null);
+  const [pdf, setPdf] = useState<DocPdf | null>(null);
+  const [choisies, setChoisies] = useState<number[]>([]);
+  const [plages, setPlages] = useState("");
+  const [mode, setMode] = useState<Mode>("un");
+  const [media, setMedia] = useState<{ url: string; duree: number } | null>(null);
+  const [debut, setDebut] = useState(0);
+  const [fin, setFin] = useState(0);
+  const [cibleMedia, setCibleMedia] = useState<string | null>(null);
+  const [proteger, setProteger] = useState(false);
+  const [motDePasse, setMotDePasse] = useState("");
+  const [travail, setTravail] = useState<{ avancement: number | null; etape: string } | null>(null);
+  const [resultat, setResultat] = useState<Resultat | null>(null);
+  const [erreur, setErreur] = useState("");
+  const choix = useRef<HTMLInputElement>(null);
+  const lecteur = useRef<HTMLVideoElement & HTMLAudioElement>(null);
+
+  const total = pdf?.doc.numPages ?? 0;
+  const estMedia = fmt ? ["audio", "video"].includes(format(fmt).famille) : false;
+
+  const vider = () => {
+    void pdf?.fermer();
+    if (media) URL.revokeObjectURL(media.url);
+    setPdf(null);
+    setMedia(null);
+    setFichier(null);
+    setFmt(null);
+    setResultat(null);
+    setErreur("");
+  };
+
+  const charger = async (f: File) => {
+    vider();
+    const { reconnaitre } = await import("@/lib/alambic/navigateur/moteur");
+    const id = await reconnaitre(f);
+    if (!id || !(id === "pdf" || ["audio", "video"].includes(format(id).famille)) || id === "avi") {
+      setErreur(id === "avi" ? "L'AVI ne se lit pas dans un navigateur : il ne peut pas être découpé ici." : "La découpe porte sur un PDF (pages) ou sur un son ou une vidéo (extrait).");
+      return;
+    }
+    setFichier(f);
+    setFmt(id);
+    if (id === "pdf") {
+      try {
+        const { ouvrir } = await import("@/lib/alambic/navigateur/pdf");
+        const o = await ouvrir(new Uint8Array(await f.arrayBuffer()));
+        setPdf(o);
+        setChoisies([]);
+        setPlages("");
+      } catch (e) {
+        setErreur((e as Error).message);
+      }
+    } else {
+      const url = URL.createObjectURL(f);
+      setMedia({ url, duree: 0 });
+      setCibleMedia(id);
+    }
+  };
+
+  useReception(abonner, (fichiers) => void charger(fichiers[0]));
+
+  const basculer = (n: number) => {
+    setResultat(null);
+    setChoisies((c) => {
+      const s = c.includes(n) ? c.filter((x) => x !== n) : [...c, n].sort((a, b) => a - b);
+      setPlages(enPlages(s));
+      return s;
+    });
+  };
+
+  const destinationsMedia = useMemo(() => (fmt && estMedia ? FORMATS.filter((f) => (f.id === fmt || verdict(fmt, f.id, capacites).possible) && ["audio", "video"].includes(f.famille) || (f.id === "gif" && format(fmt).famille === "video")).map((f) => f.id) : []), [fmt, estMedia, capacites]);
+
+  const decouper = async () => {
+    if (!fichier || !fmt) return;
+    setErreur("");
+    setResultat(null);
+    try {
+      let r: Resultat;
+      const base = fichier.name.replace(/\.[^.]+$/, "");
+      if (fmt === "pdf") {
+        if (!choisies.length) throw new Error("Choisis au moins une page.");
+        const { extraire, pageEnImage } = await import("@/lib/alambic/navigateur/pdf");
+        const { ecrireArchive } = await import("@/lib/alambic/navigateur/archives");
+        const octets = new Uint8Array(await fichier.arrayBuffer());
+        if (mode === "un") {
+          setTravail({ avancement: null, etape: `Extraction de ${choisies.length} page${choisies.length > 1 ? "s" : ""}` });
+          const sortie = await extraire(octets, choisies);
+          r = { nom: `${base} (pages ${enPlages(choisies)}).pdf`.replace(/[\\/:*?"<>|]/g, "-"), blob: new Blob([sortie.slice().buffer], { type: "application/pdf" }), format: "pdf", avertissements: [] };
+        } else {
+          const fichiers = [];
+          for (let i = 0; i < choisies.length; i++) {
+            const p = choisies[i];
+            setTravail({ avancement: i / choisies.length, etape: `Page ${p}` });
+            if (mode === "chaque") {
+              const sortie = await extraire(octets, [p]);
+              fichiers.push({ nom: `${base} - page ${p}.pdf`, blob: new Blob([sortie.slice().buffer], { type: "application/pdf" }) });
+            } else fichiers.push({ nom: `${base} - page ${p}.png`, blob: await pageEnImage(pdf!.doc, p, "png") });
+          }
+          if (fichiers.length === 1) r = { nom: fichiers[0].nom, blob: fichiers[0].blob, format: mode === "chaque" ? "pdf" : "png", avertissements: [] };
+          else {
+            setTravail({ avancement: 0.95, etape: "Rangement dans un ZIP" });
+            r = { nom: `${base} - ${fichiers.length} pages.zip`, blob: await ecrireArchive(fichiers, "zip", () => {}), format: "zip", avertissements: [`${fichiers.length} fichiers, réunis dans un ZIP.`] };
+          }
+        }
+      } else {
+        if (fin - debut < 0.1) throw new Error("L'extrait est trop court : place la fin après le début.");
+        const { convertir } = await import("@/lib/alambic/navigateur/moteur");
+        const cible = cibleMedia ?? fmt;
+        const meme = cible === fmt;
+        // Même format : on passe par une conversion vers lui-même, avec l'extrait.
+        if (meme) {
+          const { convertirMedia } = await import("@/lib/alambic/navigateur/medias");
+          setTravail({ avancement: 0, etape: "Découpe" });
+          const sortie = await convertirMedia(fichier, cible, { qualite: null, extrait: { debut, fin } }, (a) => setTravail({ avancement: a, etape: "Découpe" }));
+          r = { nom: `${base} (extrait).${format(cible).extensions[0]}`, blob: sortie.blob, format: cible, avertissements: sortie.avertissements };
+        } else {
+          r = await convertir({ nom: fichier.name, blob: fichier, format: fmt }, cible, { qualite: 0.8, separateur: ";", extrait: { debut, fin } }, capacites, (a, etape) => setTravail({ avancement: a, etape }));
+          r = { ...r, nom: r.nom.replace(/(\.[^.]+)$/, " (extrait)$1") };
+        }
+      }
+      if (proteger && motDePasse) {
+        const { proteger: chiffrer } = await import("@/lib/alambic/navigateur/moteur");
+        r = await chiffrer(r, motDePasse, (a, etape) => setTravail({ avancement: a, etape }));
+      }
+      setResultat(r);
+    } catch (e) {
+      setErreur((e as Error).message);
+    } finally {
+      setTravail(null);
+    }
+  };
+
+  const sortiePdf = fmt === "pdf" ? mode !== "images" && (mode === "un" || choisies.length === 1) : cibleMedia === "pdf";
+
+  return (
+    <section className="alambic-outil" aria-labelledby="titre-decoupe">
+      <header className="alambic-outil-tete">
+        <Scissors className="size-7 text-or" strokeWidth={1.4} aria-hidden="true" />
+        <div>
+          <h2 id="titre-decoupe" className="font-display text-2xl font-bold">
+            Découper et extraire
+          </h2>
+          <p className="text-encre-douce">Garde les pages voulues d&apos;un PDF, ou un passage précis d&apos;un son ou d&apos;une vidéo.</p>
+        </div>
+      </header>
+
+      <input
+        ref={choix}
+        type="file"
+        accept=".pdf,audio/*,video/*"
+        className="sr-only"
+        tabIndex={-1}
+        onChange={(e) => {
+          const f = e.target.files?.[0];
+          if (f) void charger(f);
+          e.target.value = "";
+        }}
+      />
+
+      {fichier ? (
+        <div className="alambic-fichier">
+          <span className="min-w-0 flex-1">
+            <span className="block truncate font-semibold">{fichier.name}</span>
+            <span className="text-sm text-encre-douce">
+              {tailleLisible(fichier.size)}
+              {total ? `, ${total} page${total > 1 ? "s" : ""}` : ""}
+              {media?.duree ? `, ${horloge(media.duree)}` : ""}
+            </span>
+          </span>
+          <button type="button" className="bouton-icone" aria-label="Retirer le fichier" onClick={vider}>
+            <X className="size-5" aria-hidden="true" />
+          </button>
+        </div>
+      ) : (
+        <button
+          type="button"
+          className="alambic-depot"
+          onClick={() => choix.current?.click()}
+          onDragOver={(e) => e.preventDefault()}
+          onDrop={(e) => {
+            e.preventDefault();
+            const f = e.dataTransfer.files[0];
+            if (f) void charger(f);
+          }}
+        >
+          <FileUp className="size-8 text-or" strokeWidth={1.4} aria-hidden="true" />
+          <span className="font-display text-xl font-bold">Dépose un PDF, un son ou une vidéo</span>
+          <span className="text-encre-douce">ou clique pour le choisir.</span>
+        </button>
+      )}
+
+      {pdf && (
+        <>
+          <div className="alambic-plages">
+            <label className="alambic-option flex-1">
+              <span>Pages</span>
+              <input
+                className="champ"
+                value={plages}
+                placeholder="par exemple 1-3, 7, 10-fin"
+                onChange={async (e) => {
+                  setPlages(e.target.value);
+                  setResultat(null);
+                  const { lirePlages } = await import("@/lib/alambic/navigateur/pdf");
+                  setChoisies(lirePlages(e.target.value, total).sort((a, b) => a - b));
+                }}
+              />
+            </label>
+            <div className="flex flex-wrap gap-2">
+              <button type="button" className="bouton bouton-discret !min-h-10" onClick={() => { const t = Array.from({ length: total }, (_, i) => i + 1); setChoisies(t); setPlages(enPlages(t)); }}>
+                Toutes
+              </button>
+              <button type="button" className="bouton bouton-discret !min-h-10" onClick={() => { const t = Array.from({ length: total }, (_, i) => i + 1).filter((n) => !choisies.includes(n)); setChoisies(t); setPlages(enPlages(t)); }}>
+                Inverser
+              </button>
+              <button type="button" className="bouton bouton-discret !min-h-10" onClick={() => { setChoisies([]); setPlages(""); }}>
+                Aucune
+              </button>
+            </div>
+          </div>
+          <p className="text-sm text-encre-douce">{choisies.length ? `${choisies.length} page${choisies.length > 1 ? "s" : ""} gardée${choisies.length > 1 ? "s" : ""} sur ${total}. Pour retirer des pages, choisis-les puis « Inverser ».` : "Clique sur les pages à garder, ou écris-les ci-dessus."}</p>
+          <div className="alambic-pages">
+            {Array.from({ length: total }, (_, i) => (
+              <Vignette key={i} doc={pdf.doc} numero={i + 1} choisie={choisies.includes(i + 1)} onBasculer={() => basculer(i + 1)} />
+            ))}
+          </div>
+          <div className="alambic-option" role="radiogroup" aria-label="Ce qu'on obtient">
+            <span>Résultat</span>
+            <div className="alambic-segments">
+              <button type="button" role="radio" aria-checked={mode === "un"} onClick={() => setMode("un")}>
+                Un seul PDF
+              </button>
+              <button type="button" role="radio" aria-checked={mode === "chaque"} onClick={() => setMode("chaque")}>
+                Un PDF par page
+              </button>
+              <button type="button" role="radio" aria-checked={mode === "images"} onClick={() => setMode("images")}>
+                Une image par page
+              </button>
+            </div>
+          </div>
+        </>
+      )}
+
+      {media && fmt && (
+        <>
+          {format(fmt).famille === "video" ? (
+            <video ref={lecteur} src={media.url} controls className="alambic-lecteur" onLoadedMetadata={(e) => { const d = e.currentTarget.duration; setMedia({ ...media, duree: d }); setDebut(0); setFin(d); }} />
+          ) : (
+            <audio ref={lecteur} src={media.url} controls className="w-full" onLoadedMetadata={(e) => { const d = e.currentTarget.duration; setMedia({ ...media, duree: d }); setDebut(0); setFin(d); }} />
+          )}
+          {media.duree > 0 && (
+            <div className="alambic-extrait">
+              <div className="alambic-frise" style={{ ["--debut" as string]: `${(debut / media.duree) * 100}%`, ["--fin" as string]: `${(fin / media.duree) * 100}%` }}>
+                <input type="range" min={0} max={media.duree} step={0.1} value={debut} aria-label="Début de l'extrait" aria-valuetext={horloge(debut)} onChange={(e) => { setDebut(Math.min(Number(e.target.value), fin - 0.1)); setResultat(null); }} />
+                <input type="range" min={0} max={media.duree} step={0.1} value={fin} aria-label="Fin de l'extrait" aria-valuetext={horloge(fin)} onChange={(e) => { setFin(Math.max(Number(e.target.value), debut + 0.1)); setResultat(null); }} />
+              </div>
+              <div className="alambic-bornes">
+                <button type="button" className="bouton bouton-discret !min-h-10" onClick={() => lecteur.current && setDebut(Math.min(lecteur.current.currentTime, fin - 0.1))}>
+                  Début ici
+                </button>
+                <span className="tabular-nums">
+                  {horloge(debut)} → {horloge(fin)} <span className="text-encre-douce">({horloge(fin - debut)})</span>
+                </span>
+                <button type="button" className="bouton bouton-discret !min-h-10" onClick={() => lecteur.current && setFin(Math.max(lecteur.current.currentTime, debut + 0.1))}>
+                  Fin ici
+                </button>
+              </div>
+            </div>
+          )}
+          <label className="alambic-option">
+            <span>Format de l&apos;extrait</span>
+            <select className="champ" value={cibleMedia ?? fmt} onChange={(e) => { setCibleMedia(e.target.value); setResultat(null); }}>
+              {destinationsMedia.map((id) => (
+                <option key={id} value={id}>
+                  {format(id).nom}
+                  {id === fmt ? " (même format)" : ""}
+                </option>
+              ))}
+            </select>
+          </label>
+        </>
+      )}
+
+      {fichier && (pdf || media) && (
+        <>
+          <ChampProtection actif={proteger} onActif={setProteger} motDePasse={motDePasse} onMotDePasse={setMotDePasse} formatPdf={proteger ? sortiePdf : null} />
+          <div className="alambic-actions">
+            {travail ? (
+              <>
+                <div className="alambic-progression" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={travail.avancement === null ? undefined : Math.round(travail.avancement * 100)} aria-label={travail.etape}>
+                  <span style={travail.avancement === null ? undefined : { width: `${travail.avancement * 100}%` }} data-indetermine={travail.avancement === null || undefined} />
+                </div>
+                <p className="alambic-etape">
+                  <LoaderCircle className="size-4 animate-spin" aria-hidden="true" />
+                  {travail.etape}
+                </p>
+              </>
+            ) : (
+              <button type="button" className="bouton bouton-principal alambic-lancer" disabled={(pdf ? !choisies.length : !media?.duree) || (proteger && !motDePasse)} onClick={() => void decouper()}>
+                <Scissors className="size-5" aria-hidden="true" />
+                {pdf ? (choisies.length ? `Extraire ${choisies.length} page${choisies.length > 1 ? "s" : ""}` : "Choisis des pages") : "Extraire ce passage"}
+              </button>
+            )}
+          </div>
+        </>
+      )}
+
+      {erreur && (
+        <p className="message message-erreur" role="alert">
+          {erreur}
+        </p>
+      )}
+      {resultat && <CarteResultat resultat={resultat} tailleAvant={fichier?.size} protege={proteger && Boolean(motDePasse)} />}
+    </section>
+  );
+}

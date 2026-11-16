@@ -9,7 +9,8 @@ import { useEffect, useSyncExternalStore } from "react";
  * Qui arrive par l'accueil (« / » ou « /utilisateur ») circule partout.
  * Qui arrive par un lien direct reste dans l'espace de ce lien :
  *   - un lien vers Le Calame (/ecrire) ne mène ni à l'accueil ni à la bibliothèque ;
- *   - un lien vers la bibliothèque ne mène ni à l'accueil ni au Calame.
+ *   - un lien vers L'Alambic (/alambic) ne mène ni à l'accueil ni aux deux autres espaces ;
+ *   - un lien vers la bibliothèque ne mène ni à l'accueil ni aux deux autres espaces.
  * Ce passage par l'accueil est retenu sur l'appareil (localStorage), rien n'est envoyé au serveur.
  *
  * C'est un cloisonnement de la navigation, pas un verrou : l'adresse de l'accueil
@@ -17,6 +18,8 @@ import { useEffect, useSyncExternalStore } from "react";
  */
 
 const CLE = "haqqreason-accueil";
+/** Les espaces qui ont leur propre porte (tout le reste appartient à la bibliothèque). */
+const ESPACES_FERMES = ["/ecrire", "/alambic"];
 const EVENEMENT = "haqqreason:acces";
 
 function lire(): boolean {
@@ -46,7 +49,8 @@ export function useAdresseAccueil(): string {
   const complet = useAccesComplet();
   const chemin = usePathname() ?? "/";
   if (complet) return "/";
-  return chemin === "/ecrire" || chemin.startsWith("/ecrire/") ? "/ecrire" : "/explorer";
+  for (const espace of ESPACES_FERMES) if (chemin === espace || chemin.startsWith(`${espace}/`)) return espace;
+  return "/explorer";
 }
 
 /** Posé sur l'accueil : ce visiteur a l'adresse de l'accueil, il circule partout. */

@@ -4821,3 +4821,1105 @@ a.contrib-renvoi:focus-visible {
 .calame-texte .tiptap .tableWrapper {
   overflow-x: auto;
 }
+
+/* =====================================================================
+   L'Alambic — studio de fichiers
+   Une seule pièce forte : le sceau à huit branches, qui inverse et qui mesure.
+   Tout le reste reste calme : verre sombre, filets fins, or en signal.
+   ===================================================================== */
+.alambic {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(70rem 40rem at 50% -10%, color-mix(in srgb, var(--or) 9%, transparent), transparent 70%),
+    radial-gradient(40rem 30rem at 100% 100%, color-mix(in srgb, var(--amethyste) 7%, transparent), transparent 70%),
+    var(--fond);
+}
+.alambic-tete {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem clamp(1rem, 3vw, 2rem);
+  border-bottom: 1px solid var(--trait);
+}
+.alambic-tete-titre {
+  padding-left: 0.85rem;
+  margin-left: 0.15rem;
+  border-left: 1px solid var(--trait);
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.alambic-local {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--emeraude) 40%, transparent);
+  background: color-mix(in srgb, var(--emeraude) 10%, transparent);
+  color: var(--emeraude);
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+@media (max-width: 40rem) {
+  .alambic-tete-titre,
+  .alambic-local {
+    display: none;
+  }
+}
+
+/* ---------- la grille ---------- */
+.alambic-grille {
+  flex: 1;
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  max-width: 92rem;
+  margin: 0 auto;
+  padding: clamp(1rem, 2.5vw, 1.75rem);
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "outils" "scene" "cotes";
+  align-items: start;
+}
+@media (min-width: 64rem) {
+  .alambic-grille {
+    grid-template-columns: 15rem minmax(0, 1fr);
+    grid-template-areas: "outils scene" "cotes scene";
+  }
+}
+@media (min-width: 88rem) {
+  .alambic-grille {
+    grid-template-columns: 15rem minmax(0, 1fr) 17rem;
+    grid-template-areas: "outils scene cotes";
+  }
+}
+.alambic-outils {
+  grid-area: outils;
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (min-width: 40rem) {
+  .alambic-outils {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (min-width: 64rem) {
+  .alambic-outils {
+    grid-template-columns: 1fr;
+    position: sticky;
+    top: 1rem;
+  }
+}
+.alambic-tuile {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 0.75rem;
+  row-gap: 0.15rem;
+  padding: 0.95rem 1rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  text-align: left;
+  color: var(--encre-douce);
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+.alambic-tuile svg {
+  grid-row: span 2;
+}
+.alambic-tuile:hover {
+  color: var(--encre);
+  border-color: color-mix(in srgb, var(--or) 45%, var(--trait));
+}
+.alambic-tuile[aria-pressed="true"] {
+  color: var(--encre);
+  border-color: var(--or);
+  background: color-mix(in srgb, var(--or) 12%, var(--surface));
+}
+.alambic-tuile[aria-pressed="true"] svg {
+  color: var(--or);
+}
+.alambic-tuile-nom {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--encre);
+}
+.alambic-tuile-aide {
+  font-size: 0.82rem;
+  line-height: 1.3;
+}
+@media (max-width: 63.99rem) {
+  .alambic-tuile-aide {
+    display: none;
+  }
+  .alambic-tuile svg {
+    grid-row: auto;
+  }
+}
+.alambic-scene {
+  grid-area: scene;
+  border-radius: 2rem;
+  padding: clamp(1.1rem, 3vw, 2.25rem);
+  min-width: 0;
+}
+.alambic-cotes {
+  grid-area: cotes;
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+@media (min-width: 40rem) and (max-width: 87.99rem) {
+  .alambic-cotes {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+}
+@media (min-width: 64rem) and (max-width: 87.99rem) {
+  .alambic-cotes {
+    grid-template-columns: 1fr;
+  }
+}
+.alambic-carte {
+  display: grid;
+  gap: 0.6rem;
+  padding: 1.25rem;
+  border-radius: 1.5rem;
+}
+.alambic-chiffre {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--or);
+}
+.alambic-chiffre span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--encre);
+}
+.alambic-familles {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.92rem;
+}
+.alambic-familles li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+/* ---------- convertir ---------- */
+.alambic-convertir,
+.alambic-outil {
+  position: relative;
+  display: grid;
+  gap: 1.25rem;
+}
+.alambic-convertir[data-glisse]::after {
+  content: "Lâche le fichier";
+  position: absolute;
+  inset: -0.75rem;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  border-radius: 1.5rem;
+  border: 2px dashed var(--or);
+  background: color-mix(in srgb, var(--fond) 80%, transparent);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--or);
+  pointer-events: none;
+}
+.alambic-depot {
+  display: grid;
+  justify-items: center;
+  gap: 0.5rem;
+  padding: clamp(1.5rem, 4vw, 2.5rem) 1.25rem;
+  border-radius: 1.5rem;
+  border: 1.5px dashed color-mix(in srgb, var(--or) 45%, var(--trait));
+  background: color-mix(in srgb, var(--or) 4%, transparent);
+  text-align: center;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+.alambic-depot > span:last-child {
+  max-width: 52ch;
+}
+.alambic-depot:hover,
+.alambic-depot:focus-visible {
+  border-color: var(--or);
+  background: color-mix(in srgb, var(--or) 9%, transparent);
+}
+.alambic-depot-compact {
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9rem 1rem;
+}
+.alambic-fichier {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0.75rem 0.75rem 1rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+
+/* Les deux formats et le sceau */
+.alambic-alambic {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: stretch;
+  gap: clamp(0.5rem, 2vw, 1.5rem);
+}
+@media (max-width: 40rem) {
+  .alambic-alambic {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: stretch;
+  }
+  .alambic-sceau {
+    justify-self: center;
+  }
+  .alambic-bloc {
+    min-height: 0;
+  }
+  .alambic-fichier .bouton {
+    display: none;
+  }
+  .alambic-sceau-axe {
+    transform: rotate(90deg);
+  }
+}
+.alambic-bloc {
+  --teinte: var(--or);
+  position: relative;
+  display: grid;
+  align-content: start;
+  min-height: 12.5rem;
+  padding: 1.25rem 1.35rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--trait);
+  background:
+    radial-gradient(120% 90% at 0% 0%, color-mix(in srgb, var(--teinte) 13%, transparent), transparent 60%),
+    var(--surface-forte);
+  text-align: left;
+  overflow: hidden;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+.alambic-bloc[data-famille="donnees"] {
+  --teinte: var(--emeraude);
+}
+.alambic-bloc[data-famille="image"] {
+  --teinte: #7cc4ff;
+}
+.alambic-bloc[data-famille="audio"],
+.alambic-bloc[data-famille="video"] {
+  --teinte: var(--amethyste);
+}
+.alambic-bloc[data-famille="archive"] {
+  --teinte: var(--encre-douce);
+}
+.alambic-bloc:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--teinte) 60%, var(--trait));
+}
+.alambic-bloc:disabled {
+  cursor: default;
+}
+.alambic-bloc[data-vide] {
+  border-style: dashed;
+  background: transparent;
+}
+.alambic-bloc-role {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.alambic-bloc-contenu {
+  display: grid;
+  gap: 0.2rem;
+  margin-top: 0.6rem;
+  animation: alambic-apparition 0.35s cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+.alambic-bloc[data-role="destination"] .alambic-bloc-contenu {
+  animation-name: alambic-apparition-droite;
+}
+@keyframes alambic-apparition {
+  from {
+    opacity: 0;
+    transform: translateX(1.25rem);
+  }
+}
+@keyframes alambic-apparition-droite {
+  from {
+    opacity: 0;
+    transform: translateX(-1.25rem);
+  }
+}
+.alambic-bloc-icone {
+  width: 1.75rem;
+  height: 1.75rem;
+  color: var(--teinte);
+}
+.alambic-bloc-nom {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.2vw, 3.1rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  overflow-wrap: anywhere;
+}
+.alambic-bloc-ext {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--teinte);
+}
+.alambic-bloc-aide {
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  color: var(--encre-douce);
+}
+.alambic-bloc-vide {
+  margin-top: 1.25rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.alambic-bloc-chevron {
+  position: absolute;
+  top: 1.15rem;
+  right: 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  color: var(--encre-douce);
+}
+.alambic-pastille {
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--emeraude) 18%, transparent);
+  color: var(--emeraude);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+/* Le sceau : inverse, puis mesure l'avancement */
+.alambic-sceau {
+  position: relative;
+  align-self: center;
+  display: grid;
+  place-items: center;
+  width: clamp(5.5rem, 9vw, 7.5rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  color: var(--encre);
+  transition:
+    transform 0.25s cubic-bezier(0.2, 0.7, 0.3, 1),
+    filter 0.25s ease;
+}
+.alambic-sceau-axe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.alambic-sceau-dessin {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.alambic-sceau:hover:not(:disabled) {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 1.1rem color-mix(in srgb, var(--or) 45%, transparent));
+}
+.alambic-sceau:active:not(:disabled) {
+  transform: scale(0.97);
+}
+.alambic-sceau:disabled:not([data-en-cours]) {
+  opacity: 0.45;
+  cursor: default;
+}
+.alambic-sceau:focus-visible {
+  outline: 2px solid var(--or);
+  outline-offset: 4px;
+}
+.alambic-sceau-fond {
+  fill: color-mix(in srgb, var(--or) 10%, var(--fond));
+}
+.alambic-sceau-trace {
+  fill: none;
+  stroke: color-mix(in srgb, var(--or) 55%, transparent);
+  stroke-width: 1.4;
+  stroke-linejoin: round;
+}
+.alambic-sceau-jauge {
+  fill: none;
+  stroke: var(--or);
+  stroke-width: 3.2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 100;
+  transition: stroke-dashoffset 0.3s ease;
+  filter: drop-shadow(0 0 3px color-mix(in srgb, var(--or) 70%, transparent));
+}
+.alambic-sceau-jauge[data-indetermine] {
+  stroke-dasharray: 22 78;
+  animation: alambic-ronde 1.4s linear infinite;
+}
+@keyframes alambic-ronde {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+.alambic-sceau-fleche {
+  fill: none;
+  stroke: var(--or);
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.alambic-sceau[data-en-cours] .alambic-sceau-fleche {
+  opacity: 0.18;
+}
+.alambic-sceau-pourcent {
+  position: absolute;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--encre);
+}
+
+/* Le verdict de la conversion */
+.alambic-verdict {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.75rem;
+  margin: -0.25rem 0 0;
+  color: var(--encre-douce);
+  line-height: 1.5;
+}
+.alambic-verdict-etiquette {
+  flex: none;
+  padding: 0.1rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.alambic-verdict[data-fidelite="fidele"] .alambic-verdict-etiquette {
+  background: color-mix(in srgb, var(--emeraude) 16%, transparent);
+  color: var(--emeraude);
+}
+.alambic-verdict[data-fidelite="partielle"] .alambic-verdict-etiquette {
+  background: color-mix(in srgb, var(--amethyste) 18%, transparent);
+  color: var(--amethyste);
+}
+.alambic-verdict[data-fidelite="impossible"] .alambic-verdict-etiquette {
+  background: color-mix(in srgb, var(--danger) 16%, transparent);
+  color: var(--danger);
+}
+
+/* Options */
+.alambic-options {
+  display: grid;
+  gap: 1rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--trait);
+}
+.alambic-option {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1rem;
+}
+.alambic-option > span:first-child {
+  min-width: 7rem;
+  font-weight: 600;
+}
+.alambic-option input[type="range"] {
+  flex: 1;
+  min-width: 10rem;
+  accent-color: var(--or);
+}
+.alambic-option .champ {
+  flex: 1;
+  min-width: 12rem;
+}
+.alambic-segments {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.alambic-segments button {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.alambic-segments button[aria-checked="true"] {
+  background: var(--or);
+  color: var(--sur-or);
+}
+
+/* Interrupteur et mot de passe */
+.alambic-protection {
+  display: grid;
+  gap: 0.9rem;
+}
+.alambic-interrupteur {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+.alambic-interrupteur input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+.alambic-interrupteur-piste {
+  position: relative;
+  flex: none;
+  width: 2.75rem;
+  height: 1.6rem;
+  margin-top: 0.1rem;
+  border-radius: 999px;
+  background: var(--surface-forte);
+  border: 1px solid var(--trait);
+  transition: background-color 0.2s ease;
+}
+.alambic-interrupteur-piste::after {
+  content: "";
+  position: absolute;
+  top: 0.18rem;
+  left: 0.2rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 50%;
+  background: var(--encre-douce);
+  transition:
+    transform 0.2s cubic-bezier(0.2, 0.7, 0.3, 1),
+    background-color 0.2s ease;
+}
+.alambic-interrupteur input:checked + .alambic-interrupteur-piste {
+  background: color-mix(in srgb, var(--or) 30%, transparent);
+  border-color: var(--or);
+}
+.alambic-interrupteur input:checked + .alambic-interrupteur-piste::after {
+  transform: translateX(1.15rem);
+  background: var(--or);
+}
+.alambic-interrupteur input:focus-visible + .alambic-interrupteur-piste {
+  outline: 2px solid var(--or);
+  outline-offset: 2px;
+}
+.alambic-mdp {
+  display: grid;
+  gap: 0.75rem;
+}
+.alambic-mdp-champ {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.35rem 0.3rem 0.9rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface-forte);
+}
+.alambic-mdp-champ:focus-within {
+  border-color: var(--or);
+}
+.alambic-mdp-champ input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.55rem 0.25rem;
+  background: transparent;
+  font-size: 1.02rem;
+  letter-spacing: 0.02em;
+  outline: none;
+}
+.alambic-force {
+  display: grid;
+  gap: 0.35rem;
+}
+.alambic-force-barres {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.3rem;
+}
+.alambic-force-barres span {
+  height: 0.35rem;
+  border-radius: 999px;
+  background: var(--surface-forte);
+  transition: background-color 0.25s ease;
+}
+.alambic-force[data-niveau="0"] [data-allume] {
+  background: var(--danger);
+}
+.alambic-force[data-niveau="1"] [data-allume] {
+  background: color-mix(in srgb, var(--danger) 55%, var(--or));
+}
+.alambic-force[data-niveau="2"] [data-allume] {
+  background: var(--or);
+}
+.alambic-force[data-niveau="3"] [data-allume] {
+  background: color-mix(in srgb, var(--or) 40%, var(--succes));
+}
+.alambic-force[data-niveau="4"] [data-allume] {
+  background: var(--succes);
+}
+
+/* Lancer, avancer */
+.alambic-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+.alambic-lancer {
+  min-height: 3.25rem;
+  padding-inline: 1.6rem;
+  font-size: 1.05rem;
+}
+.alambic-progression {
+  position: relative;
+  flex: 1 1 100%;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: var(--surface-forte);
+  overflow: hidden;
+}
+.alambic-progression span {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--or) 60%, transparent), var(--or));
+  transition: width 0.3s ease;
+}
+.alambic-progression span[data-indetermine] {
+  width: 35%;
+  animation: alambic-va-vient 1.3s ease-in-out infinite;
+}
+@keyframes alambic-va-vient {
+  from {
+    left: -35%;
+  }
+  to {
+    left: 100%;
+  }
+}
+.alambic-etape {
+  display: inline-flex;
+  flex: 1;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--encre-douce);
+}
+.alambic-resultat {
+  display: grid;
+  gap: 0.85rem;
+  padding: 1.1rem 1.2rem;
+  border-radius: 1.4rem;
+  border: 1px solid color-mix(in srgb, var(--emeraude) 45%, var(--trait));
+  background: color-mix(in srgb, var(--emeraude) 7%, var(--surface));
+  animation: alambic-apparition-haut 0.35s cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+@keyframes alambic-apparition-haut {
+  from {
+    opacity: 0;
+    transform: translateY(0.6rem);
+  }
+}
+.alambic-resultat-tete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+.alambic-avertissements {
+  display: grid;
+  gap: 0.4rem;
+  font-size: 0.92rem;
+  color: var(--encre-douce);
+}
+.alambic-avertissements li {
+  display: flex;
+  gap: 0.5rem;
+}
+.alambic-avertissements svg {
+  margin-top: 0.2rem;
+  color: var(--amethyste);
+}
+.alambic-retour {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--or);
+}
+.alambic-retour:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Le choix d'un format */
+.alambic-choix-fond {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgb(4 7 22 / 0.6);
+  backdrop-filter: blur(3px);
+}
+.alambic-choix {
+  display: flex;
+  flex-direction: column;
+  width: min(54rem, 100%);
+  max-height: min(48rem, 92dvh);
+  border-radius: 1.75rem;
+  background: color-mix(in srgb, var(--fond) 88%, var(--encre) 4%);
+  box-shadow: 0 2rem 5rem -1.5rem rgb(0 0 0 / 0.7);
+  overflow: hidden;
+  animation: alambic-apparition-haut 0.25s cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+.alambic-choix-tete {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.25rem 0.75rem 1.5rem;
+}
+.alambic-choix-recherche {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 1.25rem 0.5rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.alambic-choix-recherche:focus-within {
+  border-color: var(--or);
+}
+.alambic-choix-recherche input {
+  flex: 1;
+  background: transparent;
+  outline: none;
+}
+.alambic-choix-corps {
+  display: grid;
+  gap: 1.1rem 1.5rem;
+  padding: 0.75rem 1.5rem 1.5rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+@media (min-width: 46rem) {
+  .alambic-choix-corps {
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+  }
+}
+.alambic-famille h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.alambic-formats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.alambic-format {
+  position: relative;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 0.85rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+.alambic-format:hover {
+  border-color: var(--or);
+}
+.alambic-format[aria-pressed="true"] {
+  border-color: var(--or);
+  background: color-mix(in srgb, var(--or) 18%, transparent);
+}
+.alambic-format-nom {
+  font-weight: 700;
+}
+.alambic-format-ext {
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}
+.alambic-format[data-partiel]::after {
+  content: "";
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--amethyste);
+}
+.alambic-format[data-impossible] {
+  opacity: 0.42;
+  border-style: dashed;
+}
+.alambic-format[data-impossible]:hover {
+  border-color: var(--trait);
+  opacity: 0.6;
+}
+.alambic-format-cadenas {
+  width: 0.8rem;
+  height: 0.8rem;
+  align-self: center;
+}
+.alambic-raison {
+  margin-top: 0.55rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.85rem;
+  background: color-mix(in srgb, var(--danger) 10%, transparent);
+  font-size: 0.9rem;
+  color: var(--encre);
+}
+
+/* Outils : en-tête, listes, pages, extrait */
+.alambic-outil-tete {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+.alambic-outil-tete p {
+  max-width: 62ch;
+}
+.alambic-liste-zone {
+  display: grid;
+  gap: 0.75rem;
+}
+.alambic-pieces {
+  display: grid;
+  gap: 0.5rem;
+}
+.alambic-piece {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.6rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface-forte);
+  touch-action: none;
+}
+.alambic-piece[data-glisse] {
+  position: relative;
+  z-index: 2;
+  border-color: var(--or);
+  box-shadow: 0 1rem 2rem -1rem rgb(0 0 0 / 0.6);
+}
+.alambic-poignee {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2.5rem;
+  border-radius: 0.6rem;
+  color: var(--encre-douce);
+  cursor: grab;
+}
+.alambic-poignee:active {
+  cursor: grabbing;
+}
+.alambic-piece-rang {
+  min-width: 1.5rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--or);
+  text-align: center;
+}
+.alambic-piece-vignette {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 3rem;
+  height: 3.6rem;
+  border-radius: 0.5rem;
+  background: var(--surface);
+  overflow: hidden;
+}
+.alambic-piece-vignette img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.alambic-plages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+.alambic-pages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6.75rem, 1fr));
+  gap: 0.75rem;
+  max-height: 32rem;
+  padding: 0.25rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.alambic-page {
+  position: relative;
+  display: grid;
+  gap: 0.3rem;
+  justify-items: center;
+  padding: 0.4rem;
+  border-radius: 0.9rem;
+  border: 2px solid transparent;
+  transition: border-color 0.15s ease;
+}
+.alambic-page:hover {
+  border-color: var(--trait);
+}
+.alambic-page[aria-pressed="true"] {
+  border-color: var(--or);
+  background: color-mix(in srgb, var(--or) 10%, transparent);
+}
+.alambic-page-image {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 1 / 1.414;
+  border-radius: 0.35rem;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 0.4rem 0.8rem -0.5rem rgb(0 0 0 / 0.5);
+}
+.alambic-page-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.alambic-page:not([aria-pressed="true"]) .alambic-page-image {
+  opacity: 0.75;
+}
+.alambic-page-numero {
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.alambic-page[aria-pressed="true"] .alambic-page-numero {
+  color: var(--or);
+}
+.alambic-lecteur {
+  width: 100%;
+  max-height: 22rem;
+  border-radius: 1rem;
+  background: #000;
+}
+.alambic-extrait {
+  display: grid;
+  gap: 0.6rem;
+}
+.alambic-frise {
+  position: relative;
+  height: 2.5rem;
+}
+.alambic-frise::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 0.45rem;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    var(--surface-forte) var(--debut),
+    var(--or) var(--debut),
+    var(--or) var(--fin),
+    var(--surface-forte) var(--fin)
+  );
+}
+.alambic-frise input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  appearance: none;
+  background: none;
+  pointer-events: none;
+}
+.alambic-frise input::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.3rem;
+  height: 1.9rem;
+  border-radius: 0.45rem;
+  border: 2px solid var(--fond);
+  background: var(--or);
+  cursor: ew-resize;
+  pointer-events: auto;
+}
+.alambic-frise input::-moz-range-thumb {
+  width: 1.1rem;
+  height: 1.7rem;
+  border-radius: 0.45rem;
+  border: 2px solid var(--fond);
+  background: var(--or);
+  cursor: ew-resize;
+  pointer-events: auto;
+}
+.alambic-frise input:focus-visible::-webkit-slider-thumb {
+  outline: 2px solid var(--encre);
+  outline-offset: 2px;
+}
+.alambic-bornes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .alambic-bloc-contenu,
+  .alambic-resultat,
+  .alambic-choix {
+    animation: none;
+  }
+  .alambic-sceau-jauge[data-indetermine],
+  .alambic-progression span[data-indetermine] {
+    animation-duration: 4s;
+  }
+}

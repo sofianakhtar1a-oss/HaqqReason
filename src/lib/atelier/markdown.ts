@@ -163,5 +163,5 @@ function bloc(noeuds: Noeud[], profondeur: number): string {
 export function enMarkdown(contenu: unknown, titre: string): string {
   const racine = (contenu ?? {}) as Noeud;
   const corps = bloc(racine.content ?? [], 0);
-  return `# ${titre}\n\n${corps}\n`;
+  return titre.trim() ? `# ${titre}\n\n${corps}\n` : `${corps}\n`;
 }

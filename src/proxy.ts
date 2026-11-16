@@ -30,8 +30,12 @@ export async function proxy(request: NextRequest) {
     `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'wasm-unsafe-eval'${dev ? " 'unsafe-eval'" : ""}`,
     "style-src 'self' 'unsafe-inline'",
     `img-src 'self' data: blob:${stockage}`,
+    // L'Alambic : aperçu des sons et vidéos de l'appareil (adresses blob: locales, rien ne sort).
+    "media-src 'self' blob:",
     "font-src 'self' data:",
-    `connect-src 'self'${stockage}${dev ? " ws: wss:" : ""}`,
+    // data: : les encodeurs MP3 et FLAC de L'Alambic lisent leur moteur WebAssembly, intégré au code
+    // lui-même. Une adresse data: ne sort jamais de la page : elle n'ouvre aucune connexion.
+    `connect-src 'self' data:${stockage}${dev ? " ws: wss:" : ""}`,
     // Lecteur PDF et reconnaissance de texte : leurs « workers » sont servis par l'application.
     "worker-src 'self' blob:",
     "object-src 'none'",

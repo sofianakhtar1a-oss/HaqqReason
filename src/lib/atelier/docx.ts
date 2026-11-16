@@ -232,8 +232,9 @@ export function construireDocx(options: { titre: string; contenu: unknown; regla
   const avecEntete = entete !== "";
   const avecPied = pied !== "" || reglages.numeroter;
 
+  // Un titre vide (conversion d'un fichier qui a déjà ses propres titres) n'ajoute pas de grand titre en tête.
   const corps =
-    paragraphe(`<w:r><w:rPr><w:b/><w:sz w:val="${demiPoints(reglages.styles.titre1.taille + 4)}"/></w:rPr><w:t xml:space="preserve">${xml(titre)}</w:t></w:r>`, { style: "Titre1" }) +
+    (titre.trim() ? paragraphe(`<w:r><w:rPr><w:b/><w:sz w:val="${demiPoints(reglages.styles.titre1.taille + 4)}"/></w:rPr><w:t xml:space="preserve">${xml(titre)}</w:t></w:r>`, { style: "Titre1" }) : "") +
     corpsDuDocument(racine.content ?? [], parId, largeurZone);
 
   const document = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
