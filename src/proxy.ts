@@ -80,6 +80,13 @@ export async function proxy(request: NextRequest) {
     reponse.headers.set("Cache-Control", "no-store");
   }
 
+  // Entrer dans le mode créateur par sa porte (« Mode créateur ») ferme toute session ouverte :
+  // le mot de passe est redemandé à chaque fois, même si l'on s'était connecté peu avant.
+  if (chemin === "/createur/connexion" && request.method === "GET") {
+    if (request.cookies.has(NOM_COOKIE)) reponse.cookies.set(NOM_COOKIE, "", { ...optionsCookie(), maxAge: 0 });
+    return reponse;
+  }
+
   // Session glissante : uniquement sur les lectures, pour ne jamais interférer avec une déconnexion.
   if (session && request.method === "GET") {
     reponse.cookies.set(NOM_COOKIE, await signerSession(session), optionsCookie(session.ina));
