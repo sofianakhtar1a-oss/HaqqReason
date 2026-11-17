@@ -1,0 +1,382 @@
+import type { Lecon } from "./types";
+
+/* La Cité des mots — niveaux C1 et C2. */
+
+export const GRAMMAIRE_C: Lecon[] = [
+  /* ===================== C1 ===================== */
+  {
+    id: "metamorphes-quelque",
+    niveau: "C1",
+    titre: "Les métamorphes",
+    notion: "Quelque, quel que, quoique, quoi que",
+    heros: "🌀",
+    declic: {
+      scene: "🌀 🎭 🌀",
+      image: "« Quelque » change de forme selon sa mission : collé, il veut dire « quelques-uns » ou « environ » ; séparé en « quel que », il veut dire « peu importe ».",
+      sens: "Quelques amis (un petit nombre). Quelque vingt ans (environ). Quelle que soit ta décision (peu importe). Et ses cousins : quoique (bien que) et quoi que (peu importe ce que).",
+    },
+    demo: {
+      legende: { x: "le métamorphe" },
+      etapes: [
+        { p: "J'ai [x:quelques] amis.", n: "Quelques = un petit nombre : accord." },
+        { p: "Il y a [x:quelque] vingt ans.", n: "Quelque = environ (devant un nombre) : invariable." },
+        { p: "[x:Quelle que] soit ta décision…", n: "Quel que + être au subjonctif : accord avec le sujet (ta décision → quelle)." },
+        { p: "[x:Quelque] grands qu'ils soient…", n: "Quelque + adjectif + que = si… que : invariable." },
+        { p: "[x:Quoi que] tu fasses… / [x:Quoique] tu sois fatigué…", n: "Quoi que = peu importe ce que ; quoique = bien que." },
+      ],
+    },
+    defi: [
+      { q: "___ soient tes raisons, je t'écoute.", o: ["Quelles que", "Quelques", "Quel que"], i: "Peu importe tes raisons (féminin pluriel).", e: "Quelles que soient tes raisons." },
+      { q: "J'ai lu ___ livres.", o: ["quelques", "quelque", "quels que"], i: "Un petit nombre.", e: "Quelques livres." },
+      { q: "Il a ___ cinquante ans.", o: ["quelque", "quelques", "quel que"], i: "Environ cinquante ans.", e: "Quelque cinquante ans (invariable)." },
+      { q: "___ tu dises, je reste.", o: ["Quoi que", "Quoique", "Quoi qu'"], i: "Peu importe ce que tu dises.", e: "Quoi que tu dises." },
+      { q: "___ il pleuve, je sors.", o: ["Quoiqu'", "Quoi qu'", "Quel qu'"], i: "Bien qu'il pleuve.", e: "Quoiqu'il pleuve." },
+    ],
+    secret: {
+      titre: "Le test « bien que »",
+      texte: "Quoique ou quoi que ? Remplace par « bien que ». Si ça marche : quoique, en un mot. Sinon, c'est « quoi que » (peu importe ce que). Et « quel que » est toujours suivi du verbe être (ou pouvoir être) au subjonctif ; il s'accorde avec le sujet de ce verbe.",
+      formule: "quoique = bien que · quoi que = peu importe ce que",
+    },
+  },
+  {
+    id: "juges",
+    niveau: "C1",
+    titre: "Les juges",
+    notion: "Même, aucun, chaque et chacun",
+    heros: "⚖️",
+    declic: {
+      scene: "⚖️ 👨‍⚖️ 📜",
+      image: "Ces mots sont des juges : selon leur place, ils changent de sens et de costume.",
+      sens: "« Les mêmes idées » (identiques : accord) mais « même les rois pleurent » (aussi : invariable). « Aucun » se met au pluriel seulement devant un nom qui n'a pas de singulier (aucuns frais). « Chaque » vit devant un nom, « chacun » vit seul.",
+    },
+    demo: {
+      legende: { x: "le juge" },
+      etapes: [
+        { p: "les [x:mêmes] personnes · elles-[x:mêmes]", n: "Adjectif (identique) ou après un pronom : accord." },
+        { p: "[x:Même] les enfants ont ri.", n: "Adverbe (aussi, jusqu'à) : invariable." },
+        { p: "[x:Aucun] élève · [x:aucune] idée", n: "Aucun s'accorde en genre, presque jamais en nombre… sauf devant un nom sans singulier : aucuns frais." },
+        { p: "[x:Chaque] élève · [x:chacun] d'eux", n: "Chaque devant un nom, chacun tout seul. « 10 euros chacun », jamais « 10 euros chaque »." },
+      ],
+    },
+    defi: [
+      { q: "Ils ont les ___ chaussures.", o: ["mêmes", "même", "mème"], i: "Identiques : accord.", e: "Les mêmes chaussures." },
+      { q: "___ les plus forts ont échoué.", o: ["Même", "Mêmes", "Les mêmes"], i: "Même = aussi, jusqu'aux plus forts : invariable.", e: "Même les plus forts ont échoué." },
+      { q: "Je n'ai ___ idée.", o: ["aucune", "aucunes", "aucun"], i: "« idée » est féminin, et aucun reste au singulier.", e: "Aucune idée." },
+      { q: "Ces livres coûtent 10 euros ___ .", o: ["chacun", "chaque", "chacuns"], i: "Seul, en fin de phrase.", e: "10 euros chacun." },
+      { q: "Elles l'ont fait elles-___ .", r: ["mêmes"], i: "Après un pronom pluriel.", e: "Elles-mêmes." },
+    ],
+    secret: {
+      titre: "« Même » à la loupe",
+      texte: "Pour savoir si « même » s'accorde, remplace-le par « aussi » ou « jusqu'à ». Si ça marche, c'est un adverbe : invariable. « Même les rois pleurent » = « Jusqu'aux rois pleurent » ✓. « Les mêmes idées » = « les idées identiques » → adjectif, accord.",
+      formule: "même = aussi → invariable",
+    },
+  },
+  {
+    id: "double-identite",
+    niveau: "C1",
+    titre: "La double identité",
+    notion: "L'adjectif verbal et le participe présent (fatigant / fatiguant)",
+    heros: "🎭",
+    declic: {
+      scene: "🎭 🪪 🪪",
+      image: "Certains mots ont deux identités : l'adjectif qui décrit (un travail fatigant) et le participe qui agit (en fatiguant tout le monde). Leur orthographe trahit leur identité.",
+      sens: "Fatigant / fatiguant, convaincant / convainquant, négligent / négligeant, précédent / précédant, différent / différant, excellent / excellant. L'adjectif s'accorde ; le participe, jamais.",
+    },
+    demo: {
+      legende: { j: "l'adjectif (il décrit)", v: "le participe (il agit)" },
+      etapes: [
+        { p: "un exercice [j:fatigant]", n: "Adjectif : il décrit (on peut dire « très fatigant »)." },
+        { p: "[v:Fatiguant] ses élèves, le prof s'arrêta.", n: "Participe : il agit, souvent suivi d'un complément." },
+        { p: "un discours [j:convaincant] / [v:convainquant] le public", n: "-cant (adjectif) / -quant (participe)." },
+        { p: "un homme [j:négligent] / [v:négligeant] ses devoirs", n: "-ent (adjectif) / -eant (participe)." },
+        { p: "[j:précédent], [j:excellent], [j:différent] / [v:précédant], [v:excellant], [v:différant]", n: "-ent (adjectif) / -ant (participe)." },
+      ],
+    },
+    defi: [
+      { q: "Ce voyage était très ___ .", o: ["fatigant", "fatiguant", "fatiguent"], i: "« Très » : c'est un adjectif.", e: "Très fatigant." },
+      { q: "___ ses amis, il les a fait rire.", o: ["Provoquant", "Provocant", "Provoquent"], i: "Il agit sur ses amis : participe.", e: "Provoquant ses amis." },
+      { q: "Un argument ___ .", o: ["convaincant", "convainquant", "convaincquant"], i: "Il décrit l'argument.", e: "Un argument convaincant." },
+      { q: "La semaine ___ son départ.", o: ["précédant", "précédente", "précédent"], i: "Il agit : la semaine précède son départ.", e: "La semaine précédant son départ." },
+      { q: "Une personne ___ .", o: ["négligente", "négligeante", "négligeant"], i: "Adjectif, féminin.", e: "Une personne négligente." },
+    ],
+    secret: {
+      titre: "Le test du « très »",
+      texte: "Peux-tu placer « très » devant ? Alors c'est un adjectif : fatigant, convaincant, négligent, différent. Le mot a un complément, ou peut être remplacé par « qui + verbe » ? C'est le participe : fatiguant (qui fatigue) ses élèves. Et le participe ne s'accorde jamais.",
+      formule: "très … → adjectif · qui … → participe",
+    },
+  },
+  {
+    id: "ruban",
+    niveau: "C1",
+    titre: "Le ruban",
+    notion: "Le « ne » explétif et le « ne » littéraire",
+    heros: "🎀",
+    declic: {
+      scene: "🎁 🎀 ✨",
+      image: "Le « ne » explétif est un ruban décoratif : il ne nie rien, il orne la phrase. « J'ai peur qu'il ne pleuve » veut dire « j'ai peur qu'il pleuve ».",
+      sens: "On le trouve après craindre, avoir peur, éviter que, empêcher que, avant que, à moins que et après un comparatif. Son cousin, le « ne » littéraire, nie vraiment, mais seul, sans « pas » : je ne sais, je n'ose, il ne cesse.",
+    },
+    demo: {
+      legende: { x: "le ruban (ne explétif)" },
+      etapes: [
+        { p: "Je crains qu'il [x:ne] pleuve.", n: "Après craindre, avoir peur, éviter que, empêcher que : ruban facultatif." },
+        { p: "Pars avant qu'il [x:ne] soit trop tard.", n: "Après avant que, à moins que." },
+        { p: "Il est plus grand que je [x:ne] pensais.", n: "Après un comparatif d'inégalité." },
+        { p: "Je [k:ne] sais si je viendrai. · Je [k:n']ose le dire. · Il [k:ne] cesse de parler.", n: "Le « ne » seul, littéraire : avec savoir, oser, pouvoir, cesser, il nie sans « pas »." },
+      ],
+    },
+    defi: [
+      { q: "« Je crains qu'il ne vienne. » Cela veut dire :", o: ["J'ai peur qu'il vienne.", "J'ai peur qu'il ne vienne pas.", "Je suis sûr qu'il ne viendra pas."], i: "Le « ne » explétif est un ruban : il ne nie rien.", e: "J'ai peur qu'il vienne." },
+      { q: "« Je ne saurais vous dire. » Cela veut dire :", o: ["Je ne peux pas vous dire.", "Je pourrais vous dire.", "Je vais vous dire."], i: "Le « ne » littéraire nie, sans « pas ».", e: "Je ne peux pas vous dire." },
+      { q: "Dans quelle phrase « ne » est-il explétif ?", o: ["Évite qu'il ne tombe.", "Il ne tombe pas.", "Il ne tombe jamais."], i: "Lequel n'a ni « pas » ni « jamais » et ne nie rien ?", e: "Évite qu'il ne tombe = évite qu'il tombe." },
+      { q: "« Il est plus malin que tu ne crois. »", o: ["ne explétif", "négation", "faute"], i: "Après un comparatif.", e: "Ne explétif : tu crois qu'il est moins malin." },
+      { q: "« Il n'a cessé de pleuvoir. » Cela veut dire :", o: ["Il a plu sans arrêt.", "Il n'a pas plu.", "Il a arrêté de pleuvoir."], i: "Ne cesser = ne pas arrêter.", e: "Il a plu sans arrêt." },
+    ],
+    secret: {
+      titre: "Le ruban est facultatif",
+      texte: "Le « ne » explétif suit avant que et à moins que, mais jamais « après que » (encore lui !), et la langue soignée l'évite après « sans que ». Surtout, tu peux toujours l'omettre : il est élégant, jamais obligatoire. Dans le doute, retire-le : la phrase reste juste.",
+      formule: "avant qu'il ne parte ✓ · avant qu'il parte ✓",
+    },
+  },
+  {
+    id: "sujet-recule",
+    niveau: "C1",
+    titre: "Le sujet qui recule",
+    notion: "L'inversion du sujet",
+    heros: "🔄",
+    declic: {
+      scene: "🧍 🔄 🌟",
+      image: "Dans certaines phrases, le sujet recule derrière le verbe, comme un acteur qui laisse passer la star : après « peut-être », « sans doute », « à peine », et dans les dialogues (« dit-il »).",
+      sens: "« Je viens », dit-il. Peut-être viendra-t-il. À peine était-il arrivé qu'il repartit. Mais avec « que », pas d'inversion : peut-être qu'il viendra.",
+    },
+    demo: {
+      legende: { k: "le mot qui fait reculer" },
+      etapes: [
+        { p: "« Je viens », [v:dit]-[s:il].", n: "Dans un dialogue, après la réplique." },
+        { p: "[k:Peut-être] [v:viendra]-t-[s:il].", n: "Peut-être, sans doute, ainsi, aussi (= donc) en tête : inversion." },
+        { p: "[k:À peine] [v:était]-[s:il] arrivé qu'il repartit.", n: "À peine… que." },
+        { p: "[k:Peut-être qu']il viendra.", n: "Avec « que », pas d'inversion." },
+        { p: "[k:Aussi] [v:faut]-[s:il] partir.", n: "« Aussi » en tête = « c'est pourquoi »." },
+      ],
+    },
+    defi: [
+      { q: "« Je suis fatigué », ___ .", o: ["soupira-t-il", "il soupira", "soupira il"], i: "Dans un dialogue écrit, après la réplique.", e: "« Je suis fatigué », soupira-t-il." },
+      { q: "Peut-être ___ en retard.", o: ["est-il", "il est", "est il"], i: "« Peut-être » en tête, sans « que ».", e: "Peut-être est-il en retard." },
+      { q: "À peine ___ sorti qu'il pleuvait.", o: ["était-il", "il était", "était il"], i: "« À peine » en tête.", e: "À peine était-il sorti." },
+      { q: "Sans doute ___ raison.", o: ["a-t-il", "il a", "a il"], i: "Inversion + t magique.", e: "Sans doute a-t-il raison." },
+      { q: "Peut-être ___ elle viendra.", o: ["qu'", "que", "est-ce qu'"], i: "Avec « que », pas d'inversion.", e: "Peut-être qu'elle viendra." },
+    ],
+    secret: {
+      titre: "« Aussi », le faux ami",
+      texte: "En tête de phrase et suivi d'une inversion, « aussi » ne veut pas dire « également » mais « c'est pourquoi » : « Il pleuvait ; aussi resta-t-il chez lui. » Beaucoup le confondent, les correcteurs le remarquent. Toi, tu le manies.",
+      formule: "Aussi + inversion = c'est pourquoi",
+    },
+  },
+  {
+    id: "pluriels-mysterieux",
+    niveau: "C1",
+    titre: "Les pluriels mystérieux",
+    notion: "Cieux, yeux, aïeux, amours, délices, orgues, gens",
+    heros: "🔮",
+    declic: {
+      scene: "🔮 ✨ 🌌",
+      image: "Certains mots changent de visage au pluriel, et quelques-uns changent même de genre : amour, délice et orgue sont masculins au singulier, féminins au pluriel.",
+      sens: "Un ciel → les cieux (poétique) ou des ciels (de peinture). Un œil → des yeux. Un aïeul → des aïeux (les ancêtres). Et « gens » : féminin devant (de vieilles gens), masculin après (des gens heureux).",
+    },
+    demo: {
+      legende: { x: "le mystère" },
+      etapes: [
+        { p: "un ciel → les [x:cieux] / des [x:ciels] de lit", n: "Cieux : le ciel immense, poétique. Ciels : les ciels de peinture, de lit." },
+        { p: "un œil → des [x:yeux] / des [x:œils]-de-bœuf", n: "Les œils-de-bœuf sont des fenêtres rondes." },
+        { p: "un aïeul → mes [x:aïeuls] (grands-parents) / nos [x:aïeux] (ancêtres)", n: "Deux pluriels, deux sens." },
+        { p: "un [j:grand] amour → de [j:grandes] amours · les [j:grandes] orgues", n: "Masculin au singulier, féminin au pluriel (style soutenu)." },
+        { p: "de [j:vieilles] gens / des gens [j:heureux]", n: "Gens : féminin devant, masculin après !" },
+      ],
+    },
+    defi: [
+      { q: "Les ___ étaient étoilés.", o: ["cieux", "ciels", "ciel"], i: "Le ciel immense et poétique.", e: "Les cieux étaient étoilés." },
+      { q: "Ses premières ___ .", o: ["amours", "amour", "amoures"], i: "Amour devient féminin au pluriel (littéraire).", e: "Ses premières amours." },
+      { q: "Les ___ de la cathédrale.", o: ["grandes orgues", "grands orgues", "grande orgue"], i: "« Orgue » au pluriel, pour un seul instrument majestueux, devient féminin.", e: "Les grandes orgues." },
+      { q: "Ce sont de ___ gens.", o: ["bonnes", "bons", "bon"], i: "Devant « gens » : féminin.", e: "De bonnes gens." },
+      { q: "Des gens ___ .", o: ["courageux", "courageuses", "courageuse"], i: "Après « gens » : masculin.", e: "Des gens courageux." },
+    ],
+    secret: {
+      titre: "Les trois amoureux",
+      texte: "Amour, délice et orgue : masculins au singulier, féminins au pluriel. Retiens : « Un amour fou, des amours folles ; un délice exquis, des délices exquises ; un orgue ancien, les grandes orgues. » Trois mots seulement font ce tour de magie.",
+      formule: "amour · délice · orgue",
+    },
+  },
+  {
+    id: "majuscules",
+    niveau: "C1",
+    titre: "Le langage des majuscules",
+    notion: "Majuscule ou minuscule ?",
+    heros: "🔠",
+    declic: {
+      scene: "🔠 👑 🔡",
+      image: "La majuscule est une couronne : elle ne se pose que sur les noms propres et les débuts de phrase. Encore faut-il savoir qui est roi.",
+      sens: "Les Français (les habitants) parlent le français (la langue) et mangent un fromage français (l'adjectif). La tour Eiffel (nom commun + nom propre). L'État (le pays) / un état (une situation).",
+    },
+    demo: {
+      legende: { x: "la couronne" },
+      etapes: [
+        { p: "les [x:F]rançais aiment le français.", n: "Les habitants : majuscule. La langue : minuscule." },
+        { p: "un vin français · un [x:P]arisien", n: "Adjectif : minuscule. Habitant : majuscule." },
+        { p: "la tour [x:E]iffel · la mer [x:M]éditerranée", n: "Le nom commun reste petit ; le nom propre prend la couronne." },
+        { p: "l'[x:É]tat (le pays) / un état (une situation)", n: "La majuscule change le sens." },
+        { p: "le nord de la France / l'Amérique du [x:N]ord", n: "Point cardinal : minuscule, sauf dans un nom de lieu." },
+      ],
+    },
+    defi: [
+      { q: "Elle parle ___ .", o: ["français", "Français", "Française"], i: "La langue.", e: "Elle parle français." },
+      { q: "Les ___ sont accueillants.", o: ["Marocains", "marocains", "Marocain"], i: "Les habitants.", e: "Les Marocains." },
+      { q: "Il visite la ___ .", o: ["tour Eiffel", "Tour Eiffel", "tour eiffel"], i: "Le nom commun reste petit.", e: "La tour Eiffel." },
+      { q: "Je vais dans le ___ de l'Espagne.", o: ["sud", "Sud", "SUD"], i: "Une simple direction.", e: "Le sud de l'Espagne." },
+      { q: "Le chef de l'___ .", o: ["État", "état", "Etat"], i: "Le pays, avec une majuscule… accentuée !", e: "L'État : les majuscules prennent leurs accents." },
+    ],
+    secret: {
+      titre: "Les majuscules ont des accents",
+      texte: "On croit souvent que les majuscules perdent leurs accents. Faux ! L'Académie française et l'Imprimerie nationale sont formelles : État, École, À bientôt, Ève. Un accent oublié peut même changer le sens : « UN POLICIER TUÉ » ou « UN POLICIER TUE » ?",
+      formule: "É · È · À · Ç",
+    },
+  },
+
+  /* ===================== C2 ===================== */
+  {
+    id: "double-vie",
+    niveau: "C2",
+    titre: "Les mots à double vie",
+    notion: "Les noms qui changent de sens selon le genre",
+    heros: "🕴️",
+    declic: {
+      scene: "🕴️ 🎭 💃",
+      image: "Certains mots mènent une double vie : au masculin, ils sont une chose ; au féminin, une autre.",
+      sens: "Un livre (à lire) / une livre (500 grammes). Le tour (du monde) / la tour (Eiffel). Un voile (sur le visage) / une voile (de bateau). Un mode (d'emploi) / la mode. Un poste / la poste. Le mémoire / la mémoire. Le manche / la manche.",
+    },
+    demo: {
+      legende: { d: "le genre qui décide" },
+      etapes: [
+        { p: "[d:un] livre (à lire) / [d:une] livre (500 g, monnaie)", n: "Même mot, deux vies." },
+        { p: "[d:le] tour (du monde) / [d:la] tour (Eiffel)", n: "Un parcours / un bâtiment." },
+        { p: "[d:un] voile (sur le visage) / [d:une] voile (de bateau)", n: "Un tissu léger / une toile qui prend le vent." },
+        { p: "[d:un] mode (d'emploi) / [d:la] mode (les vêtements)", n: "Une manière / une tendance." },
+        { p: "[d:le] mémoire (de fin d'études) / [d:la] mémoire (les souvenirs) · [d:le] manche (du couteau) / [d:la] manche (de la chemise)", n: "Et bien d'autres : le poste / la poste, le moule / la moule, le page / la page." },
+      ],
+    },
+    defi: [
+      { q: "Il a hissé ___ voile du bateau.", o: ["la", "le"], i: "La toile qui prend le vent.", e: "La voile." },
+      { q: "J'ai acheté ___ livre de cerises.", o: ["une", "un"], i: "Un poids.", e: "Une livre de cerises." },
+      { q: "Elle suit toujours ___ mode.", o: ["la", "le"], i: "Les vêtements de la saison.", e: "La mode." },
+      { q: "Il a rédigé ___ mémoire de fin d'études.", o: ["un", "une"], i: "Un long travail écrit.", e: "Un mémoire." },
+      { q: "Tiens ___ manche du balai.", o: ["le", "la"], i: "La partie qu'on tient.", e: "Le manche du balai." },
+      { q: "Il fait ___ tour du lac.", o: ["le", "la"], i: "Un parcours en rond.", e: "Le tour du lac." },
+    ],
+    secret: {
+      titre: "Les deux genres permis",
+      texte: "Quelques mots acceptent les deux genres sans changer de sens : un ou une après-midi, un ou une perce-neige. Et « hymne » : un hymne national, mais une hymne dans la langue religieuse. La langue a ses caprices ; l'expert les collectionne.",
+      formule: "le livre / la livre · le tour / la tour",
+    },
+  },
+  {
+    id: "mots-figes",
+    niveau: "C2",
+    titre: "Les mots qui se figent",
+    notion: "Excepté, ci-joint, vu, compris, feu, possible",
+    heros: "🧊",
+    declic: {
+      scene: "💧 ❄️ 🧊",
+      image: "Certains mots gèlent quand ils passent devant le nom : excepté, ci-joint, vu, compris deviennent des glaçons immobiles. Après le nom, ils fondent et redeviennent des adjectifs vivants qui s'accordent.",
+      sens: "« Excepté les enfants » (figé) / « les enfants exceptés » (accordé). « Ci-joint la facture » / « la facture ci-jointe ». Et « possible » reste figé après « le plus » ou « le moins ».",
+    },
+    demo: {
+      legende: { x: "le glaçon (figé)", j: "l'adjectif vivant" },
+      etapes: [
+        { p: "[x:Excepté] les enfants · les enfants [j:exceptés]", n: "Avant : invariable. Après : accord. Idem pour vu, compris, passé, étant donné." },
+        { p: "[x:Ci-joint] la facture · la facture [j:ci-jointe]", n: "Même règle." },
+        { p: "[x:feu] la reine · la [j:feue] reine", n: "Feu (= défunt) : accord seulement entre le déterminant et le nom." },
+        { p: "le plus de gens [x:possible]", n: "Après le plus / le moins, possible reste invariable." },
+        { p: "tous les cas [j:possibles]", n: "Ailleurs, il s'accorde." },
+      ],
+    },
+    defi: [
+      { q: "___ les plus jeunes, tous ont réussi.", o: ["Excepté", "Exceptés", "Exceptées"], i: "Avant le nom : figé.", e: "Excepté les plus jeunes." },
+      { q: "Veuillez trouver ___ les documents.", o: ["ci-joint", "ci-joints", "ci-jointes"], i: "Avant le nom.", e: "Veuillez trouver ci-joint les documents." },
+      { q: "Faites le moins d'erreurs ___ .", o: ["possible", "possibles"], i: "Après « le moins ».", e: "Le moins d'erreurs possible." },
+      { q: "Les photos ___ .", o: ["ci-jointes", "ci-joint", "ci-joints"], i: "Après le nom : accord.", e: "Les photos ci-jointes." },
+      { q: "La ___ reine était aimée.", o: ["feue", "feu", "feux"], i: "Entre le déterminant et le nom.", e: "La feue reine (mais « feu la reine »)." },
+    ],
+    secret: {
+      titre: "Étant donné",
+      texte: "« Étant donné les circonstances » ou « étant données les circonstances » ? Les deux sont admis, mais l'invariabilité avant le nom est aujourd'hui recommandée. Retiens la règle d'or de ces mots : avant = glaçon figé ; après = adjectif qui s'accorde.",
+      formule: "avant → figé · après → accord",
+    },
+  },
+  {
+    id: "orfevre",
+    niveau: "C2",
+    titre: "La ponctuation de l'orfèvre",
+    notion: "Point-virgule, deux-points, guillemets, virgules",
+    heros: "💎",
+    declic: {
+      scene: "🫁 💎 ✍️",
+      image: "La ponctuation, c'est la respiration du texte : la virgule est un souffle, le point-virgule une pause, le deux-points une porte qui s'ouvre, le point une respiration complète.",
+      sens: "Bien placée, elle guide le lecteur sans qu'il s'en rende compte. Mal placée, elle peut changer complètement le sens d'une phrase.",
+    },
+    demo: {
+      legende: { x: "le signe" },
+      etapes: [
+        { p: "Il pleut[x: ;] le match est annulé.", n: "Point-virgule : deux idées liées, une pause plus longue qu'une virgule." },
+        { p: "Il n'a qu'un rêve[x: :] voyager.", n: "Deux-points : une explication ou une annonce." },
+        { p: "Il a dit[x: : «] Je reviens[x: »].", n: "Guillemets français, avec des espaces à l'intérieur." },
+        { p: "Mon frère[x:,] qui vit à Lyon[x:,] arrive demain.", n: "Les virgules encadrent une information qu'on peut retirer : j'ai un seul frère." },
+        { p: "Mon frère qui vit à Lyon arrive demain.", n: "Sans virgules : j'ai plusieurs frères, et je parle de celui de Lyon !" },
+      ],
+    },
+    defi: [
+      { q: "Quelle phrase utilise bien le deux-points ?", o: ["Il a tout oublié : ses clés, son sac, son téléphone.", "Il a tout : oublié ses clés.", "Il : a tout oublié."], i: "Le deux-points annonce une liste ou une explication.", e: "Il a tout oublié : ses clés, son sac, son téléphone." },
+      { q: "« Les élèves, qui étaient fatigués, sont partis. » Qui est parti ?", o: ["tous les élèves", "seulement les fatigués"], i: "Les virgules encadrent une information sur TOUS les élèves.", e: "Tous les élèves (et ils étaient tous fatigués)." },
+      { q: "« Les élèves qui étaient fatigués sont partis. » Qui est parti ?", o: ["seulement les fatigués", "tous les élèves"], i: "Sans virgules, la relative trie.", e: "Seulement les élèves fatigués." },
+      { q: "Quels guillemets en français ?", o: ["« Bonjour »", "\"Bonjour\"", "«Bonjour»"], i: "Des chevrons, avec des espaces à l'intérieur.", e: "« Bonjour »." },
+      { q: "Où placer le point-virgule ?", o: ["Il est tard ; je rentre.", "Il est ; tard je rentre.", "Il ; est tard je rentre."], i: "Entre deux propositions liées.", e: "Il est tard ; je rentre." },
+    ],
+    secret: {
+      titre: "La virgule qui sauve des vies",
+      texte: "« On mange, les enfants ! » et « On mange les enfants ! » : une seule virgule sépare un dîner d'un film d'horreur. Avant d'envoyer un texte important, relis-le à voix haute en respirant aux virgules : si ta voix trébuche, la ponctuation aussi.",
+      formule: "Une virgule peut tout changer.",
+    },
+  },
+  {
+    id: "pieges-elite",
+    niveau: "C2",
+    titre: "Les pièges de l'élite",
+    notion: "Se rappeler, pallier, davantage, censé, pis",
+    heros: "🎯",
+    declic: {
+      scene: "🎯 🏹 🏅",
+      image: "Le dernier niveau : les pièges dans lesquels tombent même les journalistes, les avocats et les ministres. Les éviter, c'est rejoindre l'élite.",
+      sens: "Se rappeler quelque chose (sans « de »), pallier un problème (sans « à »), davantage (= plus) ou d'avantage (= de bénéfice), censé (= supposé) ou sensé (= raisonnable), tant pis (et non « tant pire »).",
+    },
+    demo: {
+      legende: { x: "le piège" },
+      etapes: [
+        { p: "Je [x:me rappelle] cette histoire. / Je [x:me souviens de] cette histoire.", n: "Se rappeler quelque chose (sans de), se souvenir DE quelque chose." },
+        { p: "[x:pallier] un problème", n: "Pallier est direct : pallier un manque, jamais « pallier à »." },
+        { p: "Il travaille [x:davantage]. / Il n'a pas [x:d'avantage] à le faire.", n: "Davantage = plus ; un avantage = un bénéfice." },
+        { p: "Il est [x:censé] venir. / Un choix [x:sensé].", n: "Censé = supposé ; sensé = qui a du bon sens." },
+        { p: "Tant [x:pis] ! · De mal en [x:pis].", n: "« Pis » est l'adverbe (contraire de mieux), « pire » l'adjectif (contraire de meilleur)." },
+      ],
+    },
+    defi: [
+      { q: "Je ___ ce jour-là.", o: ["me rappelle", "me rappelle de", "me souviens"], i: "Se rappeler quelque chose, sans « de ».", e: "Je me rappelle ce jour-là (ou : je me souviens de ce jour-là)." },
+      { q: "Il faut ___ ce problème.", o: ["pallier", "pallier à", "palier"], i: "Pallier est un verbe direct.", e: "Pallier ce problème." },
+      { q: "Il est ___ être là à 8 h.", o: ["censé", "sensé", "sencé"], i: "Supposé être là.", e: "Il est censé être là." },
+      { q: "Elle mange ___ de légumes.", o: ["davantage", "d'avantage", "d'avantages"], i: "= plus de légumes.", e: "Davantage de légumes." },
+      { q: "Tant ___ pour lui !", o: ["pis", "pire", "pie"], i: "L'expression figée.", e: "Tant pis !" },
+    ],
+    secret: {
+      titre: "La marque de l'élite",
+      texte: "Ces pièges ne s'apprennent pas par la logique mais par l'usage. Fais-en ta collection : chaque fois que tu en croises un dans un journal, souris. Tu viens de rejoindre le petit cercle de ceux qui savent. Et souviens-toi : même les meilleurs vérifient. Le dictionnaire n'est pas une béquille, c'est l'arme des experts.",
+      formule: "se rappeler qqch · se souvenir de qqch · pallier qqch",
+    },
+  },
+];
