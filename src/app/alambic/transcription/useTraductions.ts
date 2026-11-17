@@ -5,7 +5,7 @@ import { analyserPhrase, traduireLot } from "@/lib/alambic/transcription/client"
 import { type Analyse, texteDe, type Transcription } from "@/lib/alambic/transcription/types";
 
 /*
- * Traductions françaises, à la demande :
+ * Traductions (en français, ou en anglais pour un texte français), à la demande :
  * - des lots de phrases consécutives (celles qu'on voit à l'écran), un lot à la fois ;
  * - l'analyse mot à mot d'une phrase, quand on survole ou touche un de ses mots.
  * Tout est gardé avec la transcription : une phrase n'est jamais traduite deux fois.
@@ -13,7 +13,7 @@ import { type Analyse, texteDe, type Transcription } from "@/lib/alambic/transcr
 
 const LOT = 18;
 
-export function useTraductions(t: Transcription, enregistrer: (maj: Pick<Transcription, "traductions" | "analyses">) => void) {
+export function useTraductions(t: Transcription, enregistrer: (maj: Pick<Transcription, "traductions" | "analyses">) => void, vers: "fr" | "en" = "fr") {
   const [traductions, setTraductions] = useState(t.traductions);
   const [analyses, setAnalyses] = useState(t.analyses);
   const [erreur, setErreur] = useState<string | null>(null);
@@ -42,7 +42,7 @@ export function useTraductions(t: Transcription, enregistrer: (maj: Pick<Transcr
         lot.forEach((id) => file.current.delete(id));
         try {
           const contexte = lot[0] > 0 ? texteDe(t.phrases[lot[0] - 1]) : "";
-          const r = await traduireLot(t.langue, lot.map((id) => texteDe(t.phrases[id])), contexte, controle.current.signal);
+          const r = await traduireLot(t.langue, lot.map((id) => texteDe(t.phrases[id])), contexte, controle.current.signal, vers);
           setTraductions((avant) => ({ ...avant, ...Object.fromEntries(lot.map((id, k) => [id, r[k]])) }));
           setErreur(null);
         } catch (e) {
@@ -56,7 +56,7 @@ export function useTraductions(t: Transcription, enregistrer: (maj: Pick<Transcr
     } finally {
       enVol.current = false;
     }
-  }, [t.langue, t.phrases]);
+  }, [t.langue, t.phrases, vers]);
 
   const traduire = useCallback(
     (ids: number[]) => {
@@ -82,6 +82,7 @@ export function useTraductions(t: Transcription, enregistrer: (maj: Pick<Transcr
         t.phrases[id].mots.map((m) => m.t),
         contexte,
         controle.current.signal,
+        vers,
       )
         .then((a: Analyse) => {
           setAnalyses((avant) => ({ ...avant, [id]: a }));
@@ -96,7 +97,7 @@ export function useTraductions(t: Transcription, enregistrer: (maj: Pick<Transcr
         })
         .finally(() => analysesEnCours.current.delete(id));
     },
-    [analyses, t.langue, t.phrases],
+    [analyses, t.langue, t.phrases, vers],
   );
 
   // Sauvegarde sur l'appareil, groupée.
