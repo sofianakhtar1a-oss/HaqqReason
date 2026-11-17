@@ -21,12 +21,21 @@ function contexte(c: OffscreenCanvas | HTMLCanvasElement) {
 }
 
 async function svgEnImage(blob: Blob): Promise<HTMLImageElement> {
-  const url = URL.createObjectURL(blob);
+  // Le navigateur ne dessine un SVG que s'il est annoncé comme tel : un fichier sans type (glissé depuis
+  // certains dossiers, renommé, reçu d'une autre application) échouait. On le réétiquette, et on ajoute
+  // l'espace de noms SVG s'il manque.
+  let texte = await blob.text();
+  if (!/<svg[^>]*\sxmlns=/i.test(texte)) texte = texte.replace(/<svg\b/i, '<svg xmlns="http://www.w3.org/2000/svg"');
+  const url = URL.createObjectURL(new Blob([texte], { type: "image/svg+xml" }));
   try {
     const img = new Image();
     img.decoding = "async";
     img.src = url;
-    await img.decode();
+    try {
+      await img.decode();
+    } catch {
+      throw new Error("Ce SVG ne peut pas être dessiné : il est peut-être abîmé, ou s'appuie sur des fichiers externes.");
+    }
     return img;
   } finally {
     setTimeout(() => URL.revokeObjectURL(url), 1000);
