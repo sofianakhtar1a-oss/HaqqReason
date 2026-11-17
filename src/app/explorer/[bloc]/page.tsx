@@ -8,6 +8,7 @@ import { EnTete } from "@/components/EnTete";
 import { FilAriane } from "@/components/FilAriane";
 import { compterContenus, lireBloc, listerCategories } from "@/lib/content";
 import { porteJetonCreateur } from "@/lib/session";
+import { racineEspace } from "@/lib/espaces";
 
 export async function generateMetadata({ params }: PageProps<"/explorer/[bloc]">): Promise<Metadata> {
   const { bloc: slug } = await params;
@@ -46,7 +47,7 @@ export default async function PageBloc({ params }: PageProps<"/explorer/[bloc]">
       <main className="mx-auto w-full max-w-6xl flex-1 px-5 pb-16 pt-4 sm:px-8">
         <FilAriane
           etapes={[
-            { href: "/explorer", libelle: "La bibliothèque" },
+            racineEspace(bloc.donnees.espace, "public"),
             { href: `/explorer/${bloc.donnees.slug}`, libelle: bloc.donnees.titre },
           ]}
         />
