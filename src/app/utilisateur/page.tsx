@@ -11,6 +11,7 @@ import {
 import { EnTete } from "@/components/EnTete";
 import { Rosace } from "@/components/Rosace";
 import { MarqueAccueil } from "@/lib/client/acces";
+import { exigerCompte } from "@/lib/compte/session";
 import { chargerModule } from "@/lib/modules/page";
 import { BandeauApercu } from "@/lib/modules/textes-client";
 
@@ -49,6 +50,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function PageUtilisateur({ searchParams }: Props) {
+  await exigerCompte("/utilisateur");
   const { resolu, apercu } = await chargerModule("accueil", searchParams);
   const cartes = (resolu.listes.cartes ?? []).filter((c) => c.id in LIENS);
   return (
