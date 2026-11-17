@@ -179,6 +179,15 @@
     display: none;
   }
 }
+/* Six onglets : la pastille des langues cède sa place sur les écrans moyens. */
+@media (min-width: 64rem) and (max-width: 84rem) {
+  .lg-langues {
+    display: none;
+  }
+  .lg-onglet {
+    padding-inline: 0.75rem;
+  }
+}
 .lg-chargement {
   height: 50vh;
 }

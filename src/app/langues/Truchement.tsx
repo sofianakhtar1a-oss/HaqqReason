@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { BookMarked, BookOpenText, Headphones, House, Layers } from "lucide-react";
+import { BookMarked, BookOpenText, Headphones, House, Layers, Sparkles } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { BoutonTheme } from "@/components/BoutonTheme";
 import { Logo } from "@/components/Logo";
@@ -12,6 +12,7 @@ import { useDonnees } from "./donnees";
 import { Dictionnaire } from "./Dictionnaire";
 import { Ecouter } from "./Ecouter";
 import { Lire } from "./Lire";
+import { Regles } from "./regles/Regles";
 import { type Lancement, Seance } from "./Seance";
 import { Vocabulaire } from "./Vocabulaire";
 import "../alambic/transcription/transcription.css";
@@ -21,14 +22,14 @@ import "@fontsource-variable/literata/opsz-italic.css";
 
 /*
  * Le Truchement : apprendre l'anglais (d'abord) depuis le français.
- * Cinq onglets, adressés par le fragment de l'URL (#vocabulaire/famille, #ecouter/<id>…),
+ * Six onglets, adressés par le fragment de l'URL (#vocabulaire/famille, #ecouter/<id>…),
  * pour que le bouton « retour » du téléphone et les favoris fonctionnent.
  */
 
-type Onglet = "accueil" | "vocabulaire" | "ecouter" | "lire" | "dictionnaire";
+type Onglet = "accueil" | "vocabulaire" | "ecouter" | "lire" | "dictionnaire" | "regles";
 
-const ICONES_ONGLETS: Record<Onglet, typeof House> = { accueil: House, vocabulaire: Layers, ecouter: Headphones, lire: BookOpenText, dictionnaire: BookMarked };
-const TOUS: Onglet[] = ["accueil", "vocabulaire", "ecouter", "lire", "dictionnaire"];
+const ICONES_ONGLETS: Record<Onglet, typeof House> = { accueil: House, vocabulaire: Layers, ecouter: Headphones, lire: BookOpenText, dictionnaire: BookMarked, regles: Sparkles };
+const TOUS: Onglet[] = ["accueil", "vocabulaire", "ecouter", "lire", "dictionnaire", "regles"];
 
 type Route = { onglet: Onglet; detail: string | null };
 
@@ -96,6 +97,16 @@ export function Truchement() {
   const ouvrirTheme = useCallback((id: string | null) => detail("vocabulaire")(id), [detail]);
   const ouvrirMedia = useCallback((id: string | null) => detail("ecouter")(id), [detail]);
   const ouvrirDocument = useCallback((id: string | null) => detail("lire")(id), [detail]);
+  const ouvrirRegles = useCallback((id: string | null) => detail("regles")(id), [detail]);
+  /** Dans les Règles, passer d'une leçon à la carte ou à la leçon suivante remplace l'écran au lieu de l'empiler. */
+  const remplacerRegles = useCallback(
+    (chemin: string) => {
+      history.replaceState(null, "", `#regles/${chemin}`);
+      setRoute(lireRoute(ONGLETS));
+      window.scrollTo({ top: 0 });
+    },
+    [ONGLETS],
+  );
 
   const immersif = (route.onglet === "ecouter" || route.onglet === "lire") && Boolean(route.detail);
 
@@ -142,6 +153,7 @@ export function Truchement() {
             {route.onglet === "ecouter" && <Ecouter ouvert={route.detail} onOuvrir={ouvrirMedia} />}
             {route.onglet === "lire" && <Lire ouvert={route.detail} onOuvrir={ouvrirDocument} />}
             {route.onglet === "dictionnaire" && <Dictionnaire lancer={setSeance} />}
+            {route.onglet === "regles" && <Regles detail={route.detail} onOuvrir={ouvrirRegles} onRemplacer={remplacerRegles} />}
           </>
         )}
       </main>
