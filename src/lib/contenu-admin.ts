@@ -1,4 +1,5 @@
 import "server-only";
+import type { Espace } from "./espaces";
 import { dbAdmin } from "./supabase";
 
 /*
@@ -8,7 +9,7 @@ import { dbAdmin } from "./supabase";
 
 export type Statut = "brouillon" | "publie";
 
-export type BlocAdmin = { id: string; slug: string; titre: string; description: string; accent: "or" | "emeraude" | "amethyste" };
+export type BlocAdmin = { id: string; slug: string; titre: string; description: string; accent: "or" | "emeraude" | "amethyste"; espace: Espace };
 
 export type CategorieAdmin = {
   id: string;
@@ -52,12 +53,15 @@ function verifier<T>(resultat: { data: T | null; error: { message: string } | nu
   return resultat.data as T;
 }
 
-export async function listerBlocsAdmin(): Promise<BlocAdmin[]> {
-  return verifier(await dbAdmin().from("blocs").select("id, slug, titre, description, accent").order("ordre"), "Lecture des blocs");
+/** Blocs ; sans espace, ceux des deux modules (déplacements, corbeille, import). */
+export async function listerBlocsAdmin(espace?: Espace): Promise<BlocAdmin[]> {
+  let requete = dbAdmin().from("blocs").select("id, slug, titre, description, accent, espace");
+  if (espace) requete = requete.eq("espace", espace);
+  return verifier(await requete.order("ordre"), "Lecture des blocs");
 }
 
 export async function lireBlocAdmin(critere: { slug: string } | { id: string }): Promise<BlocAdmin | null> {
-  let requete = dbAdmin().from("blocs").select("id, slug, titre, description, accent");
+  let requete = dbAdmin().from("blocs").select("id, slug, titre, description, accent, espace");
   requete = "slug" in critere ? requete.eq("slug", critere.slug) : requete.eq("id", critere.id);
   return verifier(await requete.maybeSingle(), "Lecture du bloc");
 }
@@ -212,12 +216,11 @@ export async function tailleSousArbre(categorieId: string): Promise<{ categories
   return { categories: Number(lignes[0]?.categories ?? 0), articles: Number(lignes[0]?.articles ?? 0) };
 }
 
-export async function articlesRecents(limite = 8): Promise<(ArticleResume & { categorie_id: string })[]> {
+export async function articlesRecents(limite = 8, blocIds?: string[]): Promise<(ArticleResume & { categorie_id: string })[]> {
+  let requete = dbAdmin().from("articles").select("id, titre, resume, statut, ordre, updated_at, categorie_id").is("supprime_le", null);
+  if (blocIds) requete = requete.in("bloc_id", blocIds);
   return verifier(
-    await dbAdmin()
-      .from("articles")
-      .select("id, titre, resume, statut, ordre, updated_at, categorie_id")
-      .is("supprime_le", null)
+    await requete
       .order("updated_at", { ascending: false })
       .limit(limite),
     "Lecture des articles récents",
