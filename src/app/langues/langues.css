@@ -2439,3 +2439,125 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ---- Composer ma séance : les trois filtres de l'accueil du vocabulaire ---- */
+.lg-composer {
+  display: grid;
+  gap: 0.9rem;
+  margin-bottom: 1.75rem;
+  padding: 1.25rem 1.35rem 1.1rem;
+  border: 1px solid var(--trait);
+  border-radius: 1.35rem;
+  background: var(--surface);
+}
+.lg-composer-tete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+}
+.lg-composer-titre {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.lg-composer-compte {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  color: var(--encre-douce);
+  font-size: 0.9rem;
+}
+.lg-composer-compte strong {
+  color: var(--azur);
+  font-size: 1.6rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.lg-composer-ligne {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  align-items: start;
+  gap: 0.5rem 1rem;
+}
+.lg-composer-ligne .lg-filtres {
+  margin-bottom: 0;
+}
+.lg-composer-libelle {
+  padding-top: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.lg-composer-themes {
+  display: block;
+}
+.lg-composer-themes > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0;
+  cursor: pointer;
+  list-style: none;
+}
+.lg-composer-themes > summary::-webkit-details-marker {
+  display: none;
+}
+.lg-composer-themes > summary::after {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 0.18s ease;
+}
+.lg-composer-themes[open] > summary::after {
+  transform: rotate(-135deg) translateY(-1px);
+}
+.lg-composer-themes[open] > .lg-filtres {
+  margin-top: 0.5rem;
+}
+.lg-composer-resume {
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  background: var(--azur-doux);
+  color: var(--azur);
+  font-size: 0.78rem;
+}
+.lg-composer-pied {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--trait);
+}
+.lg-theme[data-eteint] {
+  opacity: 0.55;
+}
+.lg-filtre:focus-visible,
+.lg-composer-themes > summary:focus-visible {
+  outline: 2px solid var(--azur);
+  outline-offset: 2px;
+}
+.bouton:disabled,
+.lg-lancement:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+@media (max-width: 40rem) {
+  .lg-composer-ligne {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+  .lg-composer-libelle {
+    padding-top: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lg-composer-themes > summary::after {
+    transition: none;
+  }
+}

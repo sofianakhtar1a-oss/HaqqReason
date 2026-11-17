@@ -6,7 +6,7 @@ import { elementDEntree, nouveauMot } from "@/lib/langues/dictionnaire";
 import { estDue, type Maitrise, maitrise } from "@/lib/langues/srs";
 import { THEMES } from "@/lib/langues/themes/index";
 import { useResolu, useTextes } from "@/lib/modules/textes-client";
-import { type Carte, NIVEAUX, type Nature, type Niveau, type Theme } from "@/lib/langues/types";
+import { type Carte, type Entree, NIVEAUX, type Nature, type Niveau, type Theme } from "@/lib/langues/types";
 import { parler, voixDisponible } from "@/lib/langues/voix";
 import { ajouterMot, useDonnees } from "./donnees";
 import type { Lancement } from "./Seance";
@@ -77,12 +77,35 @@ function Themes({ onOuvrir, lancer }: Pick<Props, "onOuvrir" | "lancer">) {
   const { cartes } = useDonnees();
   const themes = useThemes();
   const t = useTextes("langues");
+  const [choisis, setChoisis] = useState<Set<string>>(() => new Set());
+  const [niveaux, setNiveaux] = useState<Set<Niveau>>(() => new Set());
+  const [affichage, setAffichage] = useState<Affichage>("tous");
+
   const toutes = themes.flatMap((x) => x.entrees);
-  const global = progresDe(
-    toutes.map((e) => e.id),
+  const correspond = (e: Entree) => {
+    if (niveaux.size && !niveaux.has(e.niveau)) return false;
+    if (affichage === "tous") return true;
+    const nouveau = maitrise(cartes.get(e.id)) === "nouveau";
+    return affichage === "nouveaux" ? nouveau : !nouveau;
+  };
+  const visibles = choisis.size ? themes.filter((x) => choisis.has(x.id)) : themes;
+  const selection = visibles.flatMap((x) => x.entrees.filter(correspond));
+  const filtre = choisis.size > 0 || niveaux.size > 0 || affichage !== "tous";
+  const p = progresDe(
+    selection.map((e) => e.id),
     cartes,
   );
-  const tout = toutes.map(elementDEntree);
+  const elements = selection.map(elementDEntree);
+  const reserve = visibles.flatMap((x) => x.entrees).map(elementDEntree);
+  const titre = filtre ? "Ma sélection" : "Tous les thèmes";
+  const vide = selection.length === 0;
+  const parNiveau = (n: Niveau) => visibles.reduce((k, x) => k + x.entrees.filter((e) => e.niveau === n).length, 0);
+  const effacer = () => {
+    setChoisis(new Set());
+    setNiveaux(new Set());
+    setAffichage("tous");
+  };
+
   return (
     <section aria-labelledby="titre-vocabulaire">
       <div className="lg-section-tete">
@@ -94,39 +117,114 @@ function Themes({ onOuvrir, lancer }: Pick<Props, "onOuvrir" | "lancer">) {
             {t("vocabulaire.chapo", { mots: toutes.length, themes: themes.length })}
           </p>
         </div>
-        <div className="lg-section-actions">
-          <button type="button" className="bouton" onClick={() => lancer({ titre: "Tous les thèmes", elements: tout, mode: "cartes" })}>
-            <Layers className="size-4" aria-hidden="true" />
-            Cartes mémoire
-          </button>
-          <button type="button" className="bouton bouton-principal" onClick={() => lancer({ titre: "Tous les thèmes", elements: tout, mode: "guidee" })}>
-            <Play className="size-4" fill="currentColor" aria-hidden="true" />
-            {global.dus ? `Réviser ${global.dus} mot${global.dus > 1 ? "s" : ""}` : "Séance du jour"}
-          </button>
+      </div>
+
+      <div className="lg-composer" role="region" aria-labelledby="titre-composer">
+        <div className="lg-composer-tete">
+          <h3 id="titre-composer" className="lg-composer-titre">
+            Composer ma séance
+          </h3>
+          <p className="lg-composer-compte" aria-live="polite">
+            <strong>{selection.length}</strong> {selection.length > 1 ? "mots retenus" : "mot retenu"}
+            {p.dus > 0 && <span className="lg-badge">{p.dus} à revoir</span>}
+          </p>
         </div>
+
+        <div className="lg-composer-ligne">
+          <span className="lg-composer-libelle" id="lib-mots">
+            Mots
+          </span>
+          <div className="lg-filtres" role="group" aria-labelledby="lib-mots">
+            {AFFICHAGES.map(([valeur, libelle]) => (
+              <button key={valeur} type="button" className="lg-filtre" aria-pressed={affichage === valeur} onClick={() => setAffichage(valeur)}>
+                {libelle}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="lg-composer-ligne">
+          <span className="lg-composer-libelle" id="lib-niveaux">
+            Niveaux
+          </span>
+          <div className="lg-filtres" role="group" aria-labelledby="lib-niveaux">
+            <button type="button" className="lg-filtre" aria-pressed={niveaux.size === 0} onClick={() => setNiveaux(new Set())}>
+              Tous
+            </button>
+            {NIVEAUX.map((n) => (
+              <button key={n} type="button" className="lg-filtre" aria-pressed={niveaux.has(n)} onClick={() => setNiveaux((x) => bascule(x, n))}>
+                {n}
+                <small>{parNiveau(n)}</small>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <details className="lg-composer-ligne lg-composer-themes">
+          <summary className="lg-composer-libelle">
+            Thèmes
+            <span className="lg-composer-resume">{choisis.size ? `${choisis.size} choisi${choisis.size > 1 ? "s" : ""}` : "tous"}</span>
+          </summary>
+          <div className="lg-filtres" role="group" aria-label="Thèmes">
+            <button type="button" className="lg-filtre" aria-pressed={choisis.size === 0} onClick={() => setChoisis(new Set())}>
+              Tous les thèmes
+            </button>
+            {themes.map((x) => {
+              const Icone = ICONES_THEMES[x.icone] ?? Layers;
+              return (
+                <button key={x.id} type="button" className="lg-filtre" aria-pressed={choisis.has(x.id)} onClick={() => setChoisis((c) => bascule(c, x.id))}>
+                  <Icone className="size-3.5" aria-hidden="true" />
+                  {x.nom}
+                </button>
+              );
+            })}
+          </div>
+        </details>
+
+        <div className="lg-composer-pied">
+          {filtre ? (
+            <button type="button" className="lg-retour-lien" onClick={effacer}>
+              Effacer les filtres
+            </button>
+          ) : (
+            <span />
+          )}
+          <div className="lg-section-actions">
+            <button type="button" className="bouton" disabled={vide} onClick={() => lancer({ titre, elements, reserve, mode: "cartes" })}>
+              <Layers className="size-4" aria-hidden="true" />
+              Cartes mémoire
+            </button>
+            <button type="button" className="bouton bouton-principal" disabled={vide} onClick={() => lancer({ titre, elements, reserve, mode: "guidee" })}>
+              <Play className="size-4" fill="currentColor" aria-hidden="true" />
+              {p.dus ? `Réviser ${p.dus} mot${p.dus > 1 ? "s" : ""}` : filtre ? "Lancer ma séance" : "Séance du jour"}
+            </button>
+          </div>
+        </div>
+        {vide && <p className="lg-legende">Aucun mot ne correspond à ces filtres.</p>}
       </div>
 
       <ul className="lg-themes">
-        {themes.map((t) => {
-          const p = progresDe(
+        {visibles.map((t) => {
+          const pt = progresDe(
             t.entrees.map((e) => e.id),
             cartes,
           );
+          const retenus = filtre ? t.entrees.filter(correspond).length : null;
           const Icone = ICONES_THEMES[t.icone] ?? Layers;
-          const vus = p.total - p.nouveau;
+          const vus = pt.total - pt.nouveau;
           return (
             <li key={t.id}>
-              <button type="button" className="lg-theme" onClick={() => onOuvrir(t.id)}>
+              <button type="button" className="lg-theme" data-eteint={retenus === 0 || undefined} onClick={() => onOuvrir(t.id)}>
                 <span className="lg-theme-icone" aria-hidden="true">
                   <Icone className="size-6" strokeWidth={1.5} />
                 </span>
                 <span className="lg-theme-nom">{t.nom}</span>
                 <span className="lg-theme-desc">{t.description}</span>
                 <span className="lg-theme-pied">
-                  <BarreProgres p={p} fine />
+                  <BarreProgres p={pt} fine />
                   <span className="lg-theme-chiffres">
-                    {vus ? `${p.appris + p.maitrise}/${p.total} appris` : `${p.total} mots`}
-                    {p.dus > 0 && <span className="lg-badge">{p.dus} à revoir</span>}
+                    {retenus !== null ? `${retenus} / ${pt.total} mots retenus` : vus ? `${pt.appris + pt.maitrise}/${pt.total} appris` : `${pt.total} mots`}
+                    {pt.dus > 0 && <span className="lg-badge">{pt.dus} à revoir</span>}
                   </span>
                 </span>
               </button>
@@ -136,6 +234,14 @@ function Themes({ onOuvrir, lancer }: Pick<Props, "onOuvrir" | "lancer">) {
       </ul>
     </section>
   );
+}
+
+/** Ajoute ou retire une valeur d'une sélection à cases multiples. */
+function bascule<T>(s: Set<T>, v: T): Set<T> {
+  const r = new Set(s);
+  if (r.has(v)) r.delete(v);
+  else r.add(v);
+  return r;
 }
 
 /** Quels mots afficher : les nouveaux, ceux en cours de révision (répétition espacée), ou les deux. */
