@@ -3,14 +3,13 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { CadreCreateur } from "@/components/CadreCreateur";
 import { lireCompteCreateur } from "@/lib/auth-store";
-import { sessionCreateur } from "@/lib/session";
 import { FormulaireConnexion } from "./FormulaireConnexion";
 
 export const metadata: Metadata = { title: "Connexion créateur", robots: { index: false } };
 
 export default async function PageConnexion() {
   if (!(await lireCompteCreateur())) redirect("/createur/configuration");
-  if (await sessionCreateur()) redirect("/createur");
+  // Pas de raccourci : même déjà connecté, on redemande le mot de passe (la session est fermée par le proxy).
 
   return (
     <CadreCreateur>
