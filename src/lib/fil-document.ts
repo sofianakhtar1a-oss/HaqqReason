@@ -1,7 +1,7 @@
 import "server-only";
 import type { Etape } from "@/components/FilAriane";
 import type { FichierDetail } from "./fichiers-donnees";
-import { racineEspace } from "./espaces";
+import { etapesBloc, racineEspace } from "./espaces";
 import { dbAdmin, dbPublic } from "./supabase";
 
 /** Fil d'Ariane et couleur d'un document, d'après l'article ou la catégorie qui le contient. */
@@ -25,8 +25,7 @@ export async function contexteDocument(
   if (parent.type === "categorie") parent.titre = ancetres[ancetres.length - 1]?.titre ?? "";
 
   const etapes: Etape[] = [
-    racineEspace(bloc?.espace, mode),
-    ...(bloc ? [{ href: mode === "public" ? `/explorer/${bloc.slug}` : `/createur/bloc/${bloc.slug}`, libelle: bloc.titre }] : []),
+    ...(bloc ? etapesBloc(bloc, mode) : [racineEspace(undefined, mode)]),
     ...ancetres.map((c) => ({ href: `${racine}/categorie/${c.id}`, libelle: c.titre })),
     ...(f.article_id ? [{ href: `${racine}/article/${f.article_id}`, libelle: parent.titre }] : []),
     { href: `${racine}/document/${f.id}`, libelle: f.nom },
