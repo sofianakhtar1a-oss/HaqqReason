@@ -224,6 +224,7 @@ export async function confirmerAppareil(formData: FormData): Promise<void> {
   await journaliser("appareil_confirme");
   revalidatePath("/createur");
   revalidatePath("/createur/bibliotheque");
+  revalidatePath("/createur/islam");
 }
 
 /** « Ce n'est pas moi » : l'appareil est oublié et toutes les AUTRES sessions sont fermées. */
