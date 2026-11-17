@@ -165,7 +165,7 @@ function Demo({ lecon, onSuite }: { lecon: Lecon; onSuite: () => void }) {
       <ol className="rg-demo-etapes">
         {etapes.slice(0, vues).map((e, i) => (
           <li key={i} className="rg-demo-etape" data-derniere={i === vues - 1 || undefined}>
-            <p className="rg-demo-phrase" lang="fr">
+            <p className="rg-demo-phrase" lang="en">
               <Phrase p={e.p} anime={i === vues - 1} />
             </p>
             <p className="rg-demo-note">{e.n}</p>
@@ -186,8 +186,8 @@ function Demo({ lecon, onSuite }: { lecon: Lecon; onSuite: () => void }) {
         <>
           {lecon.demo.machine && (
             <div className="rg-demo-machine">
-              <p className="rg-demo-machine-titre">À toi de piloter : change de verbe, de passagers, d&apos;époque.</p>
-              <Machine temps={lecon.demo.machine.temps} verbes={lecon.demo.machine.verbes} />
+              <p className="rg-demo-machine-titre">À toi de piloter : change de verbe, de passager, de temps, et passe à la négation ou à la question.</p>
+              <Machine temps={lecon.demo.machine.temps} verbes={lecon.demo.machine.verbes} mode={lecon.demo.machine.mode} />
             </div>
           )}
           <div className="rg-actions">
@@ -241,14 +241,37 @@ function Defi({ questions, onFini }: { questions: Question[]; onFini: (b: { erre
 
 type Statut = "attente" | "piste" | "reussi" | "revele";
 
-const normaliser = (s: string) =>
-  s
+/** Les contractions courantes, pour accepter « don't » comme « do not ». */
+const CONTRACTIONS: [RegExp, string][] = [
+  [/\bwon't\b/g, "will not"],
+  [/\bcan't\b/g, "cannot"],
+  [/\bshan't\b/g, "shall not"],
+  [/\blet's\b/g, "let us"],
+  [/n't\b/g, " not"],
+  [/'m\b/g, " am"],
+  [/'re\b/g, " are"],
+  [/'ve\b/g, " have"],
+  [/'ll\b/g, " will"],
+];
+const normaliser = (s: string) => {
+  let t = s
     .trim()
     .replace(/[’‘`]/g, "'")
+    .replace(/[.!?…]+$/g, "")
+    .replace(/[,;:]/g, " ")
     .replace(/\s+/g, " ")
-    .replace(/\s*'\s*/g, "'")
     .toLowerCase();
-const sansAccents = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "");
+  for (const [re, par] of CONTRACTIONS) t = t.replace(re, par);
+  return t.replace(/\bcan not\b/g, "cannot").replace(/\s+/g, " ").trim();
+};
+/** Le nombre de lettres à changer pour passer d'un mot à l'autre. */
+function ecart(a: string, b: string) {
+  const d = Array.from({ length: a.length + 1 }, (_, i) => [i, ...Array<number>(b.length).fill(0)]);
+  for (let j = 1; j <= b.length; j++) d[0][j] = j;
+  for (let i = 1; i <= a.length; i++)
+    for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  return d[a.length][b.length];
+}
 
 function QuestionVue({ question, derniere, onResultat, onSuite }: { question: Question; derniere: boolean; onResultat: (r: { erreurs: number; xp: number }) => void; onSuite: () => void }) {
   const [statut, setStatut] = useState<Statut>("attente");
@@ -366,7 +389,7 @@ function VueChoix({ question, statut, onReussi, onRate }: { question: Choix; sta
           key={o}
           type="button"
           className="rg-option"
-          lang="fr"
+          lang="en"
           data-etat={fini && o === bonne ? "bonne" : pistes.includes(o) ? "piste" : undefined}
           disabled={fini || pistes.includes(o)}
           onClick={() => {
@@ -392,9 +415,9 @@ function VueEcrire({ question, statut, onReussi, onRate }: { question: Ecrire; s
     const v = normaliser(valeur);
     if (!v) return;
     if (question.r.some((r) => normaliser(r) === v)) return onReussi();
-    if (!presque && question.r.some((r) => sansAccents(normaliser(r)) === sansAccents(v))) {
+    if (!presque && v.length > 3 && question.r.some((r) => ecart(normaliser(r), v) === 1)) {
       setPresque(true);
-      return onRate("Les lettres sont bonnes ! Regarde seulement les accents.", false);
+      return onRate("Tu y es presque : une seule lettre est à corriger. Regarde bien l'orthographe (une lettre doublée, un e, un y ?).", false);
     }
     onRate(question.i);
   };
@@ -411,7 +434,7 @@ function VueEcrire({ question, statut, onReussi, onRate }: { question: Ecrire; s
         value={fini && statut === "revele" ? question.r[0] : valeur}
         onChange={(e) => setValeur(e.target.value)}
         disabled={fini}
-        lang="fr"
+        lang="en"
         aria-label="Ta réponse"
         placeholder="Écris ta réponse"
         autoCapitalize="off"
@@ -444,7 +467,7 @@ function VueToucher({ question, statut, onReussi, onRate }: { question: Toucher;
   };
   return (
     <div className="rg-toucher">
-      <p className="rg-toucher-phrase" lang="fr">
+      <p className="rg-toucher-phrase" lang="en">
         {mots.map((m, i) => (
           <span key={i}>
             <button
@@ -515,7 +538,7 @@ function Secret({
         <h3 className="rg-coffre-titre">{lecon.secret.titre}</h3>
         <p className="rg-coffre-texte">{lecon.secret.texte}</p>
         {lecon.secret.formule && (
-          <p className="rg-formule" lang="fr">
+          <p className="rg-formule">
             {lecon.secret.formule}
           </p>
         )}

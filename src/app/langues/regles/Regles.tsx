@@ -10,8 +10,9 @@ import { Phrase } from "./Phrase";
 import "./regles.css";
 
 /*
- * Les Règles du français : deux mondes, la Conjugaison (la Machine à voyager dans le temps)
- * et la Grammaire (la Cité des mots), du niveau A1 au niveau C2.
+ * Les Règles de l'anglais : deux mondes, la Conjugaison (la Machine à voyager dans le temps)
+ * et la Grammaire (la Cité des mots), du niveau A1 au niveau C2. Les explications sont en français,
+ * tout ce qu'on apprend est en anglais.
  * Adresses : #regles, #regles/conjugaison, #regles/conjugaison/<leçon>, #regles/machine.
  */
 
@@ -56,9 +57,9 @@ function Portes({ onOuvrir }: { onOuvrir: (chemin: string) => void }) {
       <div className="lg-section-tete">
         <div>
           <h2 id="titre-regles" className="lg-titre">
-            Les règles du français
+            Les règles de l&apos;anglais
           </h2>
-          <p className="lg-chapo">Deux mondes à explorer, du tout premier pas (A1) jusqu&apos;à l&apos;excellence (C2). Ici, les mots sont des personnages, les règles des aventures, et chaque erreur un indice qui te fait avancer.</p>
+          <p className="lg-chapo">Deux mondes pour maîtriser l&apos;anglais, du tout premier pas (A1) jusqu&apos;à l&apos;excellence (C2). Les explications sont en français, tout le reste est en anglais. Ici, les mots sont des personnages, les règles des aventures, et chaque erreur un indice qui te fait avancer.</p>
         </div>
         {xpTotal > 0 && (
           <p className="rg-total" aria-label={`${xpTotal} points d'expérience au total`}>
@@ -113,7 +114,7 @@ function Portes({ onOuvrir }: { onOuvrir: (chemin: string) => void }) {
         <Clock className="size-6 shrink-0" aria-hidden="true" />
         <span>
           <strong>La Machine à voyager dans le temps</strong>
-          <span>Embarque n&apos;importe quel verbe parmi plus de 270 et regarde-le changer de costume à toutes les époques, dans les quatre mondes.</span>
+          <span>Embarque un verbe anglais parmi plus de 570 et regarde-le traverser les 12 temps, le conditionnel et le passif, à l&apos;affirmative, à la négative et en question.</span>
         </span>
       </button>
     </section>
@@ -126,17 +127,17 @@ function RubanTemps() {
     <div className="rg-ruban">
       <span className="rg-ruban-ligne" />
       <span className="rg-ruban-curseur" />
-      <span className="rg-ruban-forme" style={{ "--i": 0 } as React.CSSProperties}>
-        <small>hier</small>
-        <Phrase p="je [r:chant][t:ais]" />
+      <span className="rg-ruban-forme" lang="en" style={{ "--i": 0 } as React.CSSProperties}>
+        <small>yesterday</small>
+        <Phrase p="I [r:walk][t:ed]" />
       </span>
-      <span className="rg-ruban-forme" data-ici style={{ "--i": 1 } as React.CSSProperties}>
-        <small>maintenant</small>
-        <Phrase p="je [r:chant][t:e]" />
+      <span className="rg-ruban-forme" lang="en" data-ici style={{ "--i": 1 } as React.CSSProperties}>
+        <small>now</small>
+        <Phrase p="I [a:am] [r:walk][t:ing]" />
       </span>
-      <span className="rg-ruban-forme" style={{ "--i": 2 } as React.CSSProperties}>
-        <small>demain</small>
-        <Phrase p="je [r:chante][t:rai]" />
+      <span className="rg-ruban-forme" lang="en" style={{ "--i": 2 } as React.CSSProperties}>
+        <small>tomorrow</small>
+        <Phrase p="I [a:will] [r:walk]" />
       </span>
     </div>
   );
@@ -145,16 +146,16 @@ function RubanTemps() {
 /** Grammaire : une rue où chaque mot est un immeuble de sa couleur. */
 function SilhouetteCite() {
   const mots: [string, string, number][] = [
-    ["d", "Les", 38],
-    ["n", "chats", 72],
-    ["j", "noirs", 56],
-    ["v", "dorment", 88],
-    ["k", "sur", 30],
-    ["d", "le", 42],
-    ["n", "toit", 64],
+    ["d", "The", 38],
+    ["j", "black", 56],
+    ["n", "cats", 72],
+    ["v", "sleep", 88],
+    ["k", "on", 30],
+    ["d", "the", 42],
+    ["n", "roof", 64],
   ];
   return (
-    <div className="rg-cite">
+    <div className="rg-cite" lang="en">
       {mots.map(([c, m, h], i) => (
         <span key={i} className="rg-immeuble" data-code={c} style={{ "--h": `${h}%`, "--i": i } as React.CSSProperties}>
           <span>{m}</span>
@@ -271,7 +272,7 @@ function PageMachine({ onRetour }: { onRetour: () => void }) {
           <h2 id="titre-machine" className="lg-titre">
             La Machine à voyager dans le temps
           </h2>
-          <p className="lg-chapo">Choisis un verbe, un monde, une époque : les six passagers l&apos;habillent sous tes yeux. Le corps du verbe est en bleu, son costume en or, le moteur des temps composés en violet.</p>
+          <p className="lg-chapo">Choisis un verbe anglais, puis une case de la grille : une époque (passé, présent, futur) croisée avec une façon de voir l&apos;action. Les six passagers l&apos;habillent sous tes yeux : la base du verbe en bleu, la terminaison en or, le moteur (auxiliaire) en violet, la forme irrégulière en rose.</p>
         </div>
       </div>
       <Machine />

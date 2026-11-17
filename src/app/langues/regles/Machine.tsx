@@ -3,22 +3,26 @@
 import { Search } from "lucide-react";
 import { useEffect, useId, useMemo, useState } from "react";
 import {
-  auxiliaireDe,
+  ASPECTS,
   chargerVerbes,
   conjuguer,
-  formesSansPersonne,
-  lireVerbe,
+  EPOQUES,
+  ETATS,
+  formesDeReference,
+  type ModePhrase,
   type Monde,
   MONDES,
-  PRONOMINAUX,
   TEMPS,
   type TempsId,
+  type Verbes,
 } from "@/lib/regles/conjugueur";
 import { CODE_DU_ROLE, collage, Legende } from "./Phrase";
 
 /*
- * La Machine à voyager dans le temps : un verbe, une époque, un monde, et les six passagers
- * qui l'habillent sous tes yeux (le corps en bleu, le costume en or, le moteur en violet).
+ * La Machine à voyager dans le temps : un verbe anglais, une époque, une façon de voir l'action,
+ * et les six passagers (I, you, he/she/it, we, you, they) qui l'habillent sous tes yeux.
+ * La base du verbe est en bleu, sa terminaison en or, le moteur (auxiliaire) en violet,
+ * la forme irrégulière en rose.
  */
 
 type Props = {
@@ -26,20 +30,30 @@ type Props = {
   temps?: TempsId[];
   /** Les verbes proposés en raccourci. */
   verbes?: string[];
+  /** La forme de phrase au départ. */
+  mode?: ModePhrase;
 };
 
-const SEULEMENT_PRONOMINAUX = new Set(["souvenir", "repentir", "évanouir"]);
-const VERBES_DEPART = ["chanter", "finir", "être", "avoir", "aller", "faire", "prendre", "venir", "se laver"];
+const VERBES_DEPART = ["walk", "play", "study", "stop", "be", "have", "go", "do", "eat", "write"];
+const MODES: { id: ModePhrase; nom: string }[] = [
+  { id: "affirmative", nom: "Affirmative" },
+  { id: "negative", nom: "Négative" },
+  { id: "question", nom: "Question" },
+];
+const NOTES = ["", "= tu", "", "", "= vous", ""];
+const NOTES_IMPERATIF = ["à toi ou à vous", "à nous (let's = let us)"];
 
-export function Machine({ temps: tempsLecon, verbes: verbesLecon }: Props) {
+export function Machine({ temps: tempsLecon, verbes: verbesLecon, mode: modeLecon }: Props) {
   const complete = !tempsLecon;
   const raccourcis = verbesLecon ?? VERBES_DEPART;
-  const [base, setBase] = useState<Awaited<ReturnType<typeof chargerVerbes>> | null>(null);
+  const [base, setBase] = useState<Verbes | null>(null);
   const [verbe, setVerbe] = useState(raccourcis[0]);
   const [saisie, setSaisie] = useState("");
   const [monde, setMonde] = useState<Monde>("reel");
-  const [temps, setTemps] = useState<TempsId>(tempsLecon?.[0] ?? "present");
-  const [feminin, setFeminin] = useState(false);
+  const [temps, setTemps] = useState<TempsId>(tempsLecon?.[0] ?? "presentSimple");
+  const [troisieme, setTroisieme] = useState<"he" | "she" | "it">("he");
+  const [mode, setMode] = useState<ModePhrase>(modeLecon ?? "affirmative");
+  const [contractions, setContractions] = useState(false);
   const [inconnu, setInconnu] = useState<string | null>(null);
   const liste = useId();
 
@@ -51,22 +65,19 @@ export function Machine({ temps: tempsLecon, verbes: verbesLecon }: Props) {
     };
   }, []);
 
-  // Les verbes qui n'existent qu'avec « se » ne sont proposés que sous leur forme pronominale.
-  const tousLesVerbes = useMemo(
-    () => (base ? [...[...base.keys()].filter((x) => !SEULEMENT_PRONOMINAUX.has(x)), ...PRONOMINAUX].sort((a, b) => a.localeCompare(b, "fr")) : []),
-    [base],
-  );
-  const tempsVisibles = complete ? TEMPS.filter((t) => t.monde === monde) : TEMPS.filter((t) => tempsLecon.includes(t.id));
+  const tousLesVerbes = useMemo(() => (base ? [...base.keys()].sort() : []), [base]);
   const infoTemps = TEMPS.find((t) => t.id === temps);
-  const formes = base ? conjuguer(base, verbe, temps, { feminin }) : [];
-  const sans = base ? formesSansPersonne(base, verbe) : null;
-  const v = lireVerbe(verbe);
+  const formes = base ? conjuguer(base, verbe, temps, { troisieme, mode, contractions }) : [];
+  const ref = base ? formesDeReference(base, verbe) : null;
+  const imperatif = temps === "imperative";
+  const continu = /Continuous/.test(temps);
+  const grille = complete && monde === "reel";
+  const tempsVisibles = complete ? TEMPS.filter((t) => t.monde === monde) : TEMPS.filter((t) => tempsLecon.includes(t.id));
 
   const choisir = (s: string) => {
-    const propre = s.trim().toLowerCase().replace(/’/g, "'");
+    const propre = s.trim().toLowerCase().replace(/^to\s+/, "");
     if (!propre) return;
-    const lu = lireVerbe(propre);
-    if (base && !base.has(lu.base)) {
+    if (base && !base.has(propre)) {
       setInconnu(propre);
       return;
     }
@@ -77,19 +88,30 @@ export function Machine({ temps: tempsLecon, verbes: verbesLecon }: Props) {
 
   const changerMonde = (m: Monde) => {
     setMonde(m);
-    const premier = TEMPS.find((t) => t.monde === m && (m !== "reel" || t.id === "present")) ?? TEMPS.find((t) => t.monde === m);
+    const premier = m === "reel" ? TEMPS.find((t) => t.id === "presentSimple") : TEMPS.find((t) => t.monde === m);
     if (premier) setTemps(premier.id);
   };
+
+  const bouton = (t: (typeof TEMPS)[number]) => (
+    <button key={t.id} type="button" role="radio" aria-checked={temps === t.id} className="rg-epoque" data-maintenant={t.id === "presentSimple" || undefined} onClick={() => setTemps(t.id)}>
+      <span className="rg-epoque-point" aria-hidden="true" />
+      <span className="rg-epoque-nom" lang="en">
+        {t.nom}
+      </span>
+      {complete && <span className="rg-epoque-niveau">{t.niveau}</span>}
+    </button>
+  );
 
   return (
     <section className="rg-machine" data-complete={complete || undefined} aria-label="La Machine à voyager dans le temps">
       <div className="rg-machine-verbe">
-        <span className="rg-machine-infinitif" lang="fr">
-          {verbe}
+        <span className="rg-machine-infinitif" lang="en">
+          to {verbe}
         </span>
+        {ref && <span className="rg-machine-sorte">{ref.irregulier ? "irrégulier" : "régulier"}</span>}
         <div className="rg-machine-raccourcis" role="group" aria-label="Choisir un verbe">
           {raccourcis.map((x) => (
-            <button key={x} type="button" className="rg-puce" aria-pressed={x === verbe} onClick={() => choisir(x)}>
+            <button key={x} type="button" className="rg-puce" lang="en" aria-pressed={x === verbe} onClick={() => choisir(x)}>
               {x}
             </button>
           ))}
@@ -107,8 +129,9 @@ export function Machine({ temps: tempsLecon, verbes: verbesLecon }: Props) {
             list={liste}
             value={saisie}
             onChange={(e) => setSaisie(e.target.value)}
-            placeholder={complete ? `Un verbe parmi ${tousLesVerbes.length || "270"}` : "Essaie un autre verbe"}
-            aria-label="Écris un verbe à l'infinitif"
+            placeholder={complete ? `Un verbe parmi ${tousLesVerbes.length || "570"}` : "Un autre verbe"}
+            aria-label="Écris un verbe anglais (sa base : walk, go, write…)"
+            lang="en"
             autoCapitalize="off"
             autoCorrect="off"
             spellCheck={false}
@@ -124,7 +147,7 @@ export function Machine({ temps: tempsLecon, verbes: verbesLecon }: Props) {
         </form>
         {inconnu && (
           <p className="rg-machine-inconnu" role="status">
-            « {inconnu} » n&apos;est pas encore à bord. Vérifie qu&apos;il est à l&apos;infinitif (manger, finir, prendre…).
+            « {inconnu} » n&apos;est pas encore à bord. Écris la base du verbe, sans terminaison (go, write, study…).
           </p>
         )}
       </div>
@@ -140,23 +163,39 @@ export function Machine({ temps: tempsLecon, verbes: verbesLecon }: Props) {
         </div>
       )}
 
-      <div className="rg-epoques" role="radiogroup" aria-label="L'époque">
-        {complete && monde === "reel" && (
-          <span className="rg-epoques-axe" aria-hidden="true">
-            <span>le passé</span>
-            <span>le futur</span>
-          </span>
-        )}
-        <div className="rg-epoques-rail" data-monde={complete ? monde : undefined}>
-          {tempsVisibles.map((t) => (
-            <button key={t.id} type="button" role="radio" aria-checked={temps === t.id} className="rg-epoque" data-maintenant={t.id === "present" || undefined} onClick={() => setTemps(t.id)}>
-              <span className="rg-epoque-point" aria-hidden="true" />
-              <span className="rg-epoque-nom">{t.nom}</span>
-              {complete && <span className="rg-epoque-niveau">{t.id === "present" ? `maintenant · ${t.niveau}` : t.niveau}</span>}
-            </button>
+      {grille ? (
+        <div className="rg-grille" role="radiogroup" aria-label="Le temps : une époque et une façon de voir l'action">
+          <span aria-hidden="true" />
+          {EPOQUES.map((e) => (
+            <span key={e.id} className="rg-grille-epoque" data-maintenant={e.id === "present" || undefined}>
+              {e.nom}
+            </span>
+          ))}
+          {ASPECTS.map((a) => (
+            <div key={a.id} className="rg-grille-ligne">
+              <span className="rg-grille-aspect">
+                <strong lang="en">{a.nom}</strong>
+                <small>{a.recette}</small>
+              </span>
+              {EPOQUES.map((e) => {
+                const t = TEMPS.find((x) => x.monde === "reel" && x.epoque === e.id && x.aspect === a.id)!;
+                return (
+                  <button key={t.id} type="button" role="radio" aria-checked={temps === t.id} className="rg-case" data-maintenant={t.id === "presentSimple" || undefined} onClick={() => setTemps(t.id)}>
+                    <span lang="en">{t.nom}</span>
+                    <small>{t.niveau}</small>
+                  </button>
+                );
+              })}
+            </div>
           ))}
         </div>
-      </div>
+      ) : (
+        <div className="rg-epoques" role="radiogroup" aria-label="Le temps">
+          <div className="rg-epoques-rail" data-monde={complete ? monde : undefined}>
+            {tempsVisibles.map(bouton)}
+          </div>
+        </div>
+      )}
 
       {infoTemps && (
         <p className="rg-machine-image" aria-live="polite">
@@ -165,29 +204,43 @@ export function Machine({ temps: tempsLecon, verbes: verbesLecon }: Props) {
       )}
 
       <div className="rg-sieges-tete">
-        <div className="rg-bascule" role="group" aria-label="Les passagers">
-          <button type="button" aria-pressed={!feminin} onClick={() => setFeminin(false)}>
-            il, ils
-          </button>
-          <button type="button" aria-pressed={feminin} onClick={() => setFeminin(true)}>
-            elle, elles
-          </button>
+        <div className="rg-bascule" role="group" aria-label="La forme de la phrase">
+          {MODES.map((m) => (
+            <button key={m.id} type="button" aria-pressed={mode === m.id} onClick={() => setMode(m.id)}>
+              {m.nom}
+            </button>
+          ))}
         </div>
-        {(temps === "passeCompose" || temps === "plusQueParfait" || temps.endsWith("Anterieur") || temps === "conditionnelPasse" || temps.endsWith("Passe") || temps === "subjonctifPlusQueParfait") && (
-          <span className="rg-moteur">
-            Moteur : <strong>{auxiliaireDe(v)}</strong>
-            {auxiliaireDe(v) === "être" ? " · l'aimant du participe est allumé" : ""}
-          </span>
-        )}
+        <div className="rg-bascules">
+          {!imperatif && (
+            <div className="rg-bascule" role="group" aria-label="Le troisième passager">
+              {(["he", "she", "it"] as const).map((x) => (
+                <button key={x} type="button" lang="en" aria-pressed={troisieme === x} onClick={() => setTroisieme(x)}>
+                  {x}
+                </button>
+              ))}
+            </div>
+          )}
+          <label className="rg-interrupteur">
+            <input type="checkbox" checked={contractions} onChange={(e) => setContractions(e.target.checked)} />
+            <span>Contractions (I&apos;m, don&apos;t)</span>
+          </label>
+        </div>
       </div>
 
-      <ol className="rg-sieges" data-trois={temps.startsWith("imperatif") || undefined} aria-live="polite">
+      {continu && ETATS.has(verbe) && (
+        <p className="rg-machine-alerte" role="note">
+          Attention : <strong lang="en">{verbe}</strong> est un verbe d&apos;état. On dit presque toujours la forme simple (<span lang="en">I {verbe}</span>), pas la forme en -ing. La Machine te la montre quand même, pour comparer.
+        </p>
+      )}
+
+      <ol className="rg-sieges" data-deux={imperatif || undefined} aria-live="polite">
         {!base
           ? Array.from({ length: 6 }, (_, i) => <li key={i} className="rg-siege" data-attente />)
           : formes.map((f, i) => (
-              <li key={`${verbe}-${temps}-${feminin}-${i}`} className="rg-siege" data-vide={!f || undefined} style={{ "--i": i } as React.CSSProperties}>
+              <li key={`${verbe}-${temps}-${mode}-${contractions}-${troisieme}-${i}`} className="rg-siege" data-vide={!f || undefined} style={{ "--i": i } as React.CSSProperties}>
                 {f ? (
-                  <span className="rg-forme" lang="fr">
+                  <span className="rg-forme" lang="en">
                     {f.map((m, k, tout) => (
                       <span key={k} className="rg-mot" data-code={CODE_DU_ROLE[m.role]} {...collage(tout.map((x) => x.texte), k)}>
                         {m.texte}
@@ -195,40 +248,43 @@ export function Machine({ temps: tempsLecon, verbes: verbesLecon }: Props) {
                     ))}
                   </span>
                 ) : (
-                  <span className="rg-forme-vide" title="Cette forme n'existe pas pour ce verbe">
-                    n&apos;existe pas
-                  </span>
+                  <span className="rg-forme-vide">{imperatif ? "pas de question à l'impératif" : "n'existe pas : ce verbe n'a pas de complément, donc pas de passif"}</span>
                 )}
+                {(imperatif ? NOTES_IMPERATIF[i] : NOTES[i]) && <span className="rg-siege-note">{imperatif ? NOTES_IMPERATIF[i] : NOTES[i]}</span>}
               </li>
             ))}
       </ol>
 
       <Legende
-        codes={["s", "r", "t", "a", "p"]}
-        libelles={{ s: "le passager", r: "le corps (radical)", t: "le costume (terminaison)", a: "le moteur (auxiliaire)", p: "la valise souvenir (participe)" }}
+        codes={["s", "a", "r", "t", "p", "k"]}
+        libelles={{ s: "le passager (sujet)", a: "le moteur (auxiliaire)", r: "la base du verbe", t: "la terminaison (-s, -ed, -ing)", p: "la forme irrégulière", k: "le mot-lien (not, to…)" }}
       />
 
-      {sans && complete && (
-        <dl className="rg-sans-personne">
+      {ref && complete && (
+        <dl className="rg-sans-personne" lang="en">
           <div>
-            <dt>Participe présent</dt>
-            <dd lang="fr">{sans.participePresent ?? "—"}</dd>
+            <dt>Base (infinitive)</dt>
+            <dd>to {ref.base}</dd>
           </div>
           <div>
-            <dt>Gérondif</dt>
-            <dd lang="fr">{sans.gerondif ?? "—"}</dd>
+            <dt>Avec he, she, it</dt>
+            <dd>{ref.troisieme}</dd>
           </div>
           <div>
-            <dt>Participe passé</dt>
-            <dd lang="fr">{sans.participePasse ?? "—"}</dd>
+            <dt>Past simple</dt>
+            <dd>{ref.passe}</dd>
           </div>
           <div>
-            <dt>Moteur des temps composés</dt>
-            <dd>{sans.auxiliaire}</dd>
+            <dt>Past participle</dt>
+            <dd>{ref.participe}</dd>
+          </div>
+          <div>
+            <dt>Forme en -ing</dt>
+            <dd>{ref.ing}</dd>
           </div>
         </dl>
       )}
-      {complete && <p className="rg-credit">Conjugaisons issues du Lefff (licence LGPL-LR), vérifiées et corrigées à la main.</p>}
+      {complete && <p className="rg-credit">Orthographe britannique, celle des manuels européens (travelled). En anglais américain : traveled.</p>}
     </section>
   );
 }

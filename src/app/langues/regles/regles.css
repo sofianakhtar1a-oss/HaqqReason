@@ -1173,10 +1173,10 @@
     grid-template-rows: repeat(3, auto);
     grid-template-columns: 1fr 1fr;
   }
-  .rg-sieges[data-trois] {
+  .rg-sieges[data-deux] {
     grid-auto-flow: row;
     grid-template-rows: none;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .rg-siege {
@@ -1236,6 +1236,139 @@
 .rg-credit {
   margin-top: 1rem;
   font-size: 0.75rem;
+  color: var(--encre-douce);
+}
+
+/* ---------- La Machine anglaise : la grille des 12 temps ---------- */
+.rg-machine-sorte {
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.rg-grille {
+  display: grid;
+  grid-template-columns: minmax(6.5rem, 0.9fr) repeat(3, minmax(0, 1fr));
+  gap: 0.35rem;
+  margin-top: 1.25rem;
+}
+.rg-grille-ligne {
+  display: contents;
+}
+.rg-grille-epoque {
+  padding: 0.2rem 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--encre-douce);
+}
+.rg-grille-epoque[data-maintenant] {
+  color: var(--amethyste);
+}
+.rg-grille-aspect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 0.25rem;
+  line-height: 1.2;
+}
+.rg-grille-aspect strong {
+  font-size: 0.82rem;
+}
+.rg-grille-aspect small {
+  font-size: 0.7rem;
+  color: var(--encre-douce);
+}
+.rg-case {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1rem;
+  min-height: 3.4rem;
+  padding: 0.4rem 0.3rem;
+  border-radius: 0.85rem;
+  border: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 40%, transparent);
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+.rg-case small {
+  font-size: 0.66rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.rg-case[data-maintenant] {
+  border-color: color-mix(in srgb, var(--amethyste) 45%, var(--trait));
+}
+.rg-case:hover {
+  border-color: var(--amethyste);
+}
+.rg-case[aria-checked="true"] {
+  border-color: var(--amethyste);
+  background: var(--amethyste);
+  color: var(--fond);
+  box-shadow: 0 0 1.1rem color-mix(in srgb, var(--amethyste) 45%, transparent);
+}
+.rg-case[aria-checked="true"] small {
+  color: inherit;
+  opacity: 0.85;
+}
+@media (max-width: 30rem) {
+  .rg-grille {
+    grid-template-columns: 4.6rem repeat(3, minmax(0, 1fr));
+    gap: 0.25rem;
+  }
+  .rg-grille-aspect small {
+    display: none;
+  }
+  .rg-case {
+    font-size: 0.7rem;
+  }
+}
+.rg-bascules {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.9rem;
+}
+.rg-interrupteur {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+  cursor: pointer;
+}
+.rg-interrupteur input {
+  width: 1.05rem;
+  height: 1.05rem;
+  accent-color: var(--amethyste);
+}
+.rg-machine-alerte {
+  margin-top: 0.85rem;
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.9rem;
+  border: 1px dashed color-mix(in srgb, var(--rg-piste) 60%, var(--trait));
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.rg-siege {
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.rg-siege-note {
+  flex-shrink: 0;
+  font-size: 0.74rem;
+  font-weight: 700;
   color: var(--encre-douce);
 }
 

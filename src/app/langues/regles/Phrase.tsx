@@ -72,14 +72,12 @@ export function Legende({ codes, libelles }: { codes: Code[]; libelles?: Partial
 }
 
 /** Les rôles de la Machine, dans les couleurs des leçons. */
-export const CODE_DU_ROLE: Record<Role, Code> = {
+export const CODE_DU_ROLE: Record<Role, Code | undefined> = {
   pronom: "s",
-  que: "k",
-  reflexif: "o",
   auxiliaire: "a",
   radical: "r",
   terminaison: "t",
-  participe: "p",
+  irregulier: "p",
   lien: "k",
-  infinitif: "v",
+  signe: undefined,
 };
