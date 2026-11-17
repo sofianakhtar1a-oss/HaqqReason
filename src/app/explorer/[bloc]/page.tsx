@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { FolderOpen } from "lucide-react";
 import { BaseIndisponible } from "@/components/BaseIndisponible";
 import { Dossier } from "@/components/Dossier";
@@ -31,6 +31,8 @@ export default async function PageBloc({ params }: PageProps<"/explorer/[bloc]">
     );
   }
   if (!bloc.donnees) notFound();
+  // « L'Islam authentique » n'a qu'un bloc : sa page est celle du module.
+  if (bloc.donnees.espace === "islam") redirect("/islam");
 
   const [categories, createur] = await Promise.all([listerCategories(bloc.donnees.id, null), porteJetonCreateur()]);
   const compteurs = await compterContenus(categories.map((c) => c.id));
