@@ -73,8 +73,8 @@ const ACCUEIL: DefModule = {
       titre: "En-tête de la page",
       champs: [
         { cle: "titre", libelle: "Titre", defaut: "Par où veux-tu commencer ?" },
-        { cle: "intro", libelle: "Introduction", defaut: "Quatre espaces : écrire, transformer tes fichiers, apprendre une langue, lire. Tu passes de l'un à l'autre quand tu veux.", long: true },
-        { cle: "meta.description", libelle: "Description pour Google", defaut: "Quatre espaces : Le Calame pour écrire, L'Alambic pour convertir ses fichiers, Le Truchement pour apprendre une langue, et la bibliothèque des preuves de la véracité de l'islam.", long: true },
+        { cle: "intro", libelle: "Introduction", defaut: "Cinq espaces : écrire, transformer tes fichiers, apprendre une langue, lire, et comprendre l'islam en vidéo. Tu passes de l'un à l'autre quand tu veux.", long: true },
+        { cle: "meta.description", libelle: "Description pour Google", defaut: "Cinq espaces : Le Calame pour écrire, L'Alambic pour convertir ses fichiers, Le Truchement pour apprendre une langue, la bibliothèque des preuves de la véracité de l'islam, et L'Islam authentique en vidéos.", long: true },
       ],
     },
   ],
@@ -125,6 +125,15 @@ const ACCUEIL: DefModule = {
             soustitre: "La bibliothèque",
             marque: "Lire",
             texte: "Les trois grands ensembles de la bibliothèque : la véracité de l'islam, la défense de l'islam et la réfutation des autres croyances. Articles, dossiers, sources et outils de lecture.",
+          },
+        },
+        {
+          id: "islam",
+          valeurs: {
+            titre: "L'Islam authentique",
+            soustitre: "Vidéos",
+            marque: "Regarder",
+            texte: "Des vidéos qui expliquent chaque aspect de l'islam selon le Coran, la Sunna et la compréhension des pieux prédécesseurs : la croyance, les actes d'adoration et le comportement.",
           },
         },
       ],
