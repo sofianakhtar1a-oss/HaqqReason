@@ -1846,6 +1846,11 @@
 .lg-st-seule {
   color: var(--encre);
 }
+/* Traduction touchable : ses mots gardent la couleur de la ligne. */
+.lg-st-fr .lg-st-mot,
+.lg-st-seule .lg-st-mot {
+  color: inherit;
+}
 .lg-st-seule[data-vide] {
   color: var(--encre-douce);
   font-size: calc(1.05rem * var(--st-echelle));
