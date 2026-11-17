@@ -1,6 +1,7 @@
 import "server-only";
 import type { Etape } from "@/components/FilAriane";
 import type { FichierDetail } from "./fichiers-donnees";
+import { racineEspace } from "./espaces";
 import { dbAdmin, dbPublic } from "./supabase";
 
 /** Fil d'Ariane et couleur d'un document, d'après l'article ou la catégorie qui le contient. */
@@ -19,12 +20,12 @@ export async function contexteDocument(
   }
   const { data: chemin } = categorieId ? await base.rpc("ancetres_categorie", { p_categorie: categorieId }) : { data: [] };
   const { data: categorie } = categorieId ? await base.from("categories").select("bloc_id").eq("id", categorieId).maybeSingle() : { data: null };
-  const { data: bloc } = categorie ? await base.from("blocs").select("slug, titre, accent").eq("id", categorie.bloc_id).maybeSingle() : { data: null };
+  const { data: bloc } = categorie ? await base.from("blocs").select("slug, titre, accent, espace").eq("id", categorie.bloc_id).maybeSingle() : { data: null };
   const ancetres = (chemin ?? []) as { id: string; titre: string }[];
   if (parent.type === "categorie") parent.titre = ancetres[ancetres.length - 1]?.titre ?? "";
 
   const etapes: Etape[] = [
-    mode === "public" ? { href: "/explorer", libelle: "La bibliothèque" } : { href: "/createur/bibliotheque", libelle: "Les preuves" },
+    racineEspace(bloc?.espace, mode),
     ...(bloc ? [{ href: mode === "public" ? `/explorer/${bloc.slug}` : `/createur/bloc/${bloc.slug}`, libelle: bloc.titre }] : []),
     ...ancetres.map((c) => ({ href: `${racine}/categorie/${c.id}`, libelle: c.titre })),
     ...(f.article_id ? [{ href: `${racine}/article/${f.article_id}`, libelle: parent.titre }] : []),
