@@ -1,25 +1,37 @@
 "use client";
 
-import { useActionState, useState } from "react";
-import { CheckCircle2, Lightbulb, Lock, ShieldCheck, Sparkles } from "lucide-react";
+import { useActionState, useEffect, useState } from "react";
+import { Bug, CheckCircle2, Inbox, Lightbulb, Lock, ShieldCheck, Sparkles, Wrench } from "lucide-react";
 import { BoutonEnvoi } from "@/components/BoutonEnvoi";
 import { MessageFormulaire } from "@/components/MessageFormulaire";
-import { LIMITES_CONTRIBUTION, type ContributionPublique, type TypeContribution } from "@/lib/contributions/modele";
+import { LIMITES_CONTRIBUTION, type ContributionPublique, type NatureSite, type TypeContribution } from "@/lib/contributions/modele";
 import { ETAT_INITIAL } from "@/lib/form-state";
 import { envoyerContribution } from "./actions";
 import { CarteContribution } from "./CarteContribution";
 import { ChoixArticle, type BlocSimple } from "./ChoixArticle";
+import { MesMessages, useConversations } from "./MesMessages";
+import { ajouterJeton } from "./suivi";
 
 const SECTIONS: { type: TypeContribution; onglet: string; titre: string }[] = [
   { type: "idee", onglet: "Idées de sujet", titre: "Proposer un sujet à traiter" },
   { type: "argument", onglet: "Renforcer un article", titre: "Apporter un argument de plus" },
+  { type: "site", onglet: "Amélioration du site", titre: "Proposer une fonctionnalité ou signaler un bug" },
 ];
+
+type Onglet = TypeContribution | "messages";
 
 function Formulaire({ type, blocs, ouvertes, onFini }: { type: TypeContribution; blocs: BlocSimple[]; ouvertes: boolean; onFini: () => void }) {
   const [etat, action] = useActionState(envoyerContribution, ETAT_INITIAL);
   // Pour une idée, le rattachement à un article est facultatif ; pour un argument, c'est la première question.
   const [lie, setLie] = useState<"" | "oui" | "non">(type === "idee" ? "non" : "");
+  const [nature, setNature] = useState<NatureSite | "">("");
   const [texte, setTexte] = useState("");
+
+  // Le jeton de suivi reçu à l'envoi ouvre « Mes messages » sur cet appareil.
+  const jeton = etat.statut === "succes" ? etat.cle : undefined;
+  useEffect(() => {
+    if (jeton) ajouterJeton(jeton);
+  }, [jeton]);
 
   if (!ouvertes) {
     return (
@@ -39,6 +51,89 @@ function Formulaire({ type, blocs, ouvertes, onFini }: { type: TypeContribution;
           Envoyer une autre proposition
         </button>
       </div>
+    );
+  }
+
+  if (type === "site") {
+    return (
+      <form action={action} className="contrib-formulaire">
+        <input type="hidden" name="type" value="site" />
+        <input type="text" name="site" tabIndex={-1} autoComplete="off" aria-hidden="true" className="champ-piege" />
+
+        <fieldset className="contrib-bloc-champ">
+          <legend className="etiquette">De quoi s&apos;agit-il ?</legend>
+          <div className="contrib-oui-non">
+            {(
+              [
+                ["fonctionnalite", "Une idée de fonctionnalité"],
+                ["bug", "Un bug sur le site"],
+              ] as const
+            ).map(([valeur, libelle]) => (
+              <label key={valeur} className="contrib-radio">
+                <input type="radio" name="nature" value={valeur} checked={nature === valeur} onChange={() => setNature(valeur)} />
+                <span>{libelle}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+
+        {nature !== "" && (
+          <>
+            <div className="contrib-bloc-champ">
+              <label htmlFor="titre-site" className="etiquette">
+                {nature === "bug" ? "Le problème en une phrase" : "Ton idée en une phrase"}
+              </label>
+              <input
+                id="titre-site"
+                name="titre"
+                required
+                minLength={LIMITES_CONTRIBUTION.titreMin}
+                maxLength={LIMITES_CONTRIBUTION.titre}
+                className="champ"
+                placeholder={nature === "bug" ? "Par exemple : la vidéo ne se lance pas dans Le Truchement" : "Par exemple : pouvoir télécharger un article en PDF"}
+              />
+            </div>
+            <div className="contrib-bloc-champ">
+              <label htmlFor="texte-site" className="etiquette">
+                {nature === "bug" ? "Que s'est-il passé ?" : "Explique ton idée"}
+              </label>
+              <textarea
+                id="texte-site"
+                name="texte"
+                required
+                rows={7}
+                minLength={LIMITES_CONTRIBUTION.texteMin}
+                maxLength={LIMITES_CONTRIBUTION.texte}
+                className="champ"
+                value={texte}
+                onChange={(e) => setTexte(e.target.value)}
+                placeholder={
+                  nature === "bug"
+                    ? "La page ou l'outil concerné, ce que tu as fait, ce qui s'est passé, et ton appareil (téléphone, ordinateur, navigateur)."
+                    : "Ce que la fonctionnalité permettrait, à quel endroit du site, et pourquoi elle te serait utile."
+                }
+              />
+              <p className="contrib-compteur">
+                {texte.length} / {LIMITES_CONTRIBUTION.texte} caractères
+              </p>
+            </div>
+            <div className="contrib-bloc-champ">
+              <label htmlFor="pseudo-site" className="etiquette">
+                Ton prénom ou ton pseudo <span className="font-normal text-encre-douce">— facultatif</span>
+              </label>
+              <input id="pseudo-site" name="pseudo" maxLength={LIMITES_CONTRIBUTION.pseudo} className="champ" placeholder="Laisse vide pour rester anonyme" autoComplete="off" />
+            </div>
+            <MessageFormulaire etat={etat} />
+            <BoutonEnvoi enCours="Envoi…" className="bouton bouton-principal w-full sm:w-auto">
+              Envoyer
+            </BoutonEnvoi>
+            <p className="contrib-note">
+              <ShieldCheck className="size-4 shrink-0 text-accent" aria-hidden="true" />
+              Ton message m&apos;arrive directement. Il n&apos;est rendu public que si je le décide ; ma réponse t&apos;attendra dans « Mes messages ».
+            </p>
+          </>
+        )}
+      </form>
     );
   }
 
@@ -158,16 +253,19 @@ export function Contribuer({
   blocs,
   idees,
   propositions,
+  ameliorations,
   ouvertes,
 }: {
   blocs: BlocSimple[];
   idees: ContributionPublique[];
   propositions: ContributionPublique[];
+  ameliorations: ContributionPublique[];
   ouvertes: boolean;
 }) {
-  const [onglet, setOnglet] = useState<TypeContribution>("idee");
+  const [onglet, setOnglet] = useState<Onglet>("idee");
   const [cle, setCle] = useState(0);
-  const liste = onglet === "idee" ? idees : propositions;
+  const { conversations, nonLus, recharger } = useConversations();
+  const liste = onglet === "idee" ? idees : onglet === "argument" ? propositions : ameliorations;
 
   return (
     <>
@@ -183,16 +281,53 @@ export function Contribuer({
             className="contrib-onglet"
             onClick={() => setOnglet(s.type)}
           >
-            {s.type === "idee" ? <Lightbulb className="size-5" aria-hidden="true" /> : <Sparkles className="size-5" aria-hidden="true" />}
+            {s.type === "idee" ? (
+              <Lightbulb className="size-5" aria-hidden="true" />
+            ) : s.type === "argument" ? (
+              <Sparkles className="size-5" aria-hidden="true" />
+            ) : (
+              <Wrench className="size-5" aria-hidden="true" />
+            )}
             {s.onglet}
           </button>
         ))}
+        <button
+          role="tab"
+          type="button"
+          id="onglet-messages"
+          aria-selected={onglet === "messages"}
+          aria-controls="section-messages"
+          className="contrib-onglet"
+          onClick={() => setOnglet("messages")}
+        >
+          <Inbox className="size-5" aria-hidden="true" />
+          Mes messages
+          {nonLus > 0 && <span className="messagerie-pastille" aria-label={`${nonLus} nouvelle${nonLus > 1 ? "s" : ""} réponse${nonLus > 1 ? "s" : ""}`}>{nonLus}</span>}
+        </button>
       </div>
+
+      {onglet === "messages" ? (
+        <section id="section-messages" role="tabpanel" aria-labelledby="onglet-messages" className="mt-8">
+          <MesMessages conversations={conversations} onChange={recharger} />
+        </section>
+      ) : (
 
       <section id={`section-${onglet}`} role="tabpanel" aria-labelledby={`onglet-${onglet}`} className="mt-8">
         <div className="contrib-explication">
-          <h2 className="contrib-explication-titre">{onglet === "idee" ? "À quoi sert cette section ?" : "À quoi sert cette section ?"}</h2>
-          {onglet === "idee" ? (
+          <h2 className="contrib-explication-titre">À quoi sert cette section ?</h2>
+          {onglet === "site" ? (
+            <>
+              <p>
+                Une fonctionnalité te manque sur le site, un outil pourrait être plus simple, ou quelque chose ne marche pas comme prévu ? Dis-le
+                ici. Choisis s&apos;il s&apos;agit d&apos;une idée ou d&apos;un bug, puis explique en quelques lignes.
+              </p>
+              <p>
+                <Bug className="mr-1 inline size-4 text-accent" aria-hidden="true" />
+                Pour un bug, précise la page ou l&apos;outil, ce que tu as fait et ton appareil : c&apos;est ce qui permet de le corriger vite. Ma
+                réponse arrivera dans « Mes messages ».
+              </p>
+            </>
+          ) : onglet === "idee" ? (
             <>
               <p>
                 Une question est restée sans réponse, un doute revient souvent autour de toi, une objection n&apos;est traitée nulle part sur le site ?
@@ -227,7 +362,7 @@ export function Contribuer({
 
           <div className="contrib-colonne-liste">
             <h2 className="text-xl font-bold">
-              {onglet === "idee" ? "Les idées déjà proposées" : "Les apports déjà proposés"}
+              {onglet === "idee" ? "Les idées déjà proposées" : onglet === "argument" ? "Les apports déjà proposés" : "Les améliorations retenues"}
               <span className="ml-2 text-base font-normal text-encre-douce">{liste.length}</span>
             </h2>
             {liste.length === 0 ? (
@@ -242,6 +377,7 @@ export function Contribuer({
           </div>
         </div>
       </section>
+      )}
     </>
   );
 }
