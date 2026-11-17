@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BarChart3, BookOpen, Feather, FlaskConical, Languages, LayoutTemplate, Lightbulb, ShieldAlert, ShieldCheck, SlidersHorizontal, Smartphone, Wrench } from "lucide-react";
+import { ArrowRight, BarChart3, BookOpen, BookOpenText, Feather, FlaskConical, Languages, LayoutTemplate, Lightbulb, ShieldAlert, ShieldCheck, SlidersHorizontal, Smartphone, Wrench } from "lucide-react";
 import { listerAppareils } from "@/lib/appareils";
 import { etatContributions } from "@/lib/contributions/donnees";
 import { resumeModules } from "@/lib/modules/donnees";
@@ -27,8 +27,14 @@ export default async function EspaceCreateur() {
     listerAppareils(),
     resumeModules(["accueil", "calame", "alambic", "langues"]),
     etatContributions(),
-    dbAdmin().from("articles").select("id", { count: "exact", head: true }).is("supprime_le", null),
+    Promise.all(
+      (["preuves", "islam"] as const).map((e) =>
+        dbAdmin().from("articles").select("id, blocs!inner(espace)", { count: "exact", head: true }).is("supprime_le", null).eq("blocs.espace", e),
+      ),
+    ),
   ]);
+  const parEspace = { preuves: articles[0].count ?? 0, islam: articles[1].count ?? 0 };
+  const nbArticles = (n: number) => `${n} article${n > 1 ? "s" : ""}`;
   const inconnus = appareils.filter((a) => !a.confirme);
 
   const statut = (id: string) => {
@@ -39,7 +45,8 @@ export default async function EspaceCreateur() {
   };
 
   const modules = [
-    { href: "/createur/bibliotheque", titre: "Les preuves de la véracité de l'islam", sur: "La bibliothèque", texte: "Blocs, catégories et articles : écrire, réorganiser, publier.", Icone: BookOpen, accent: "emeraude", etat: `${articles.count ?? 0} article${(articles.count ?? 0) > 1 ? "s" : ""}`, attente: false },
+    { href: "/createur/bibliotheque", titre: "Les preuves de la véracité de l'islam", sur: "La bibliothèque", texte: "Blocs, catégories et articles : écrire, réorganiser, publier.", Icone: BookOpen, accent: "emeraude", etat: nbArticles(parEspace.preuves), attente: false },
+    { href: "/createur/islam", titre: "L'Islam authentique", sur: "Vidéos", texte: "Les vidéos sur la croyance, l'adoration et la voie des pieux prédécesseurs : écrire, réorganiser, publier.", Icone: BookOpenText, accent: "azur", etat: nbArticles(parEspace.islam), attente: false },
     { href: "/createur/module/calame", titre: "Le Calame", sur: "Atelier d'écriture", texte: "Les textes de l'atelier : présentation, colonne de gauche, messages.", Icone: Feather, accent: "or", etat: statut("calame"), attente: etats.calame?.enAttente },
     { href: "/createur/module/alambic", titre: "L'Alambic", sur: "Studio de fichiers", texte: "Les outils (noms, aide, ordre, présence) et les textes de présentation.", Icone: FlaskConical, accent: "amethyste", etat: statut("alambic"), attente: etats.alambic?.enAttente },
     { href: "/createur/module/langues", titre: "Le Truchement", sur: "Apprendre les langues", texte: "Les thèmes et les mots, les onglets, l'objectif du jour et tous les textes.", Icone: Languages, accent: "azur", etat: statut("langues"), attente: etats.langues?.enAttente },
