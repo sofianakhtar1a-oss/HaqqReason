@@ -7,7 +7,7 @@ import { FilAriane } from "@/components/FilAriane";
 import { contexteDocument } from "@/lib/fil-document";
 import { lireAnnotations, lireFichier } from "@/lib/fichiers-donnees";
 import { motsDeRequete } from "@/lib/recherche-texte";
-import { sessionCreateur } from "@/lib/session";
+import { sessionCreateurVisible } from "@/lib/session";
 import { estUuid } from "@/lib/validation";
 
 export async function generateMetadata({ params }: PageProps<"/explorer/document/[id]">): Promise<Metadata> {
@@ -23,7 +23,7 @@ export default async function PageDocument({ params, searchParams }: PageProps<"
   // Lecteur : seulement un document rattaché à un contenu publié. Le créateur connecté peut aussi prévisualiser les autres.
   let mode: "public" | "createur" = "public";
   let fichier = await lireFichier(id, "public");
-  const createur = (await sessionCreateur()) !== null;
+  const createur = (await sessionCreateurVisible()) !== null;
   if (!fichier && createur) {
     fichier = await lireFichier(id, "createur");
     mode = "createur";
