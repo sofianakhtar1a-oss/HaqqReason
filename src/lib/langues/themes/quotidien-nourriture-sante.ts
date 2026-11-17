@@ -2,7 +2,7 @@ import { theme } from "./outil";
 
 export const QUOTIDIEN = theme(
   "quotidien",
-  "La vie quotidienne",
+  "Vie quotidienne et habitat",
   "Les gestes de chaque jour, du réveil au coucher.",
   "Sun",
   `
@@ -21,12 +21,12 @@ to do the laundry | faire la lessive | expr | A2 | /duː ðə ˈlɔːndri/ | I d
 to go shopping | faire les courses | expr | A1 | /ɡoʊ ˈʃɑːpɪŋ/ | We go shopping on Friday evening. | Nous faisons les courses le vendredi soir.
 grocery store | épicerie, supermarché | n | A2 | /ˈɡroʊsəri stɔːr/ | The grocery store closes at eight. | L'épicerie ferme à vingt heures.
 to commute | faire le trajet domicile-travail | v | B1 | /kəˈmjuːt/ | He commutes by train every day. | Il fait le trajet en train tous les jours.
-to be late | être en retard | expr | A1 | /bi leɪt/ | Sorry, I'm late. | Désolé, je suis en retard.
+to be late | être en retard | expr | A1 | /bi leɪt/ | Sorry, I'll be late tonight. | Désolé, je vais être en retard ce soir.
 on time | à l'heure | expr | A2 | /ɑːn taɪm/ | The bus is never on time. | Le bus n'est jamais à l'heure.
 to rest | se reposer | v | A2 | /rest/ | I need to rest a little. | J'ai besoin de me reposer un peu.
 to take a nap | faire une sieste | expr | A2 | /teɪk ə næp/ | Grandpa takes a nap after lunch. | Grand-père fait une sieste après le déjeuner.
 to go to bed | aller se coucher | expr | A1 | /ɡoʊ tə bed/ | I go to bed at ten. | Je vais me coucher à vingt-deux heures.
-to fall asleep | s'endormir | v | A2 | /fɔːl əˈsliːp/ | I fell asleep on the sofa. | Je me suis endormi sur le canapé.
+to fall asleep | s'endormir | v | A2 | /fɔːl əˈsliːp/ | Don't fall asleep on the sofa. | Ne t'endors pas sur le canapé.
 alarm clock | réveil | n | A2 | /əˈlɑːrm klɑːk/ | My alarm clock didn't ring. | Mon réveil n'a pas sonné.
 routine | routine | n | B1 | /ruːˈtiːn/ | A good routine helps me focus. | Une bonne routine m'aide à me concentrer.
 usually | d'habitude | adv | A1 | /ˈjuːʒuəli/ | I usually walk to work. | D'habitude, je vais au travail à pied.
@@ -52,7 +52,7 @@ to run errands | faire des courses (démarches) | expr | B2 | /rʌn ˈerəndz/ |
 to take out the rubbish | sortir les poubelles | expr | B1 | /teɪk aʊt ðə ˈrʌbɪʃ/ | Can you take out the rubbish? | Tu peux sortir les poubelles ?
 busy | occupé | adj | A1 | /ˈbɪzi/ | I'm busy this afternoon. | Je suis occupé cet après-midi.
 free time | temps libre | n | A2 | /friː taɪm/ | What do you do in your free time? | Que fais-tu de ton temps libre ?
-to hang out | traîner, passer du temps (ensemble) | v | B1 | /hæŋ aʊt/ | We hung out at the café. | Nous avons passé du temps au café.
+to hang out | traîner, passer du temps (ensemble) | v | B1 | /hæŋ aʊt/ | We often hang out at the café. | Nous traînons souvent au café.
 to get ready | se préparer | expr | A2 | /ɡet ˈredi/ | It takes me ten minutes to get ready. | Il me faut dix minutes pour me préparer.
 to run late | être en retard (sur l'horaire) | expr | B2 | /rʌn leɪt/ | I'm running late, start without me. | J'ai du retard, commencez sans moi.
 weekend | week-end | n | A1 | /ˈwiːkend/ | What are you doing this weekend? | Que fais-tu ce week-end ?
@@ -61,7 +61,7 @@ weekend | week-end | n | A1 | /ˈwiːkend/ | What are you doing this weekend? | 
 
 export const NOURRITURE = theme(
   "nourriture",
-  "La nourriture",
+  "Alimentation et gastronomie",
   "Les aliments, les repas, le restaurant et la cuisine.",
   "UtensilsCrossed",
   `
@@ -97,7 +97,7 @@ meal | repas | n | A2 | /miːl/ | We share a meal every evening. | Nous partageo
 dish | plat | n | A2 | /dɪʃ/ | Tagine is a traditional dish. | Le tajine est un plat traditionnel.
 recipe | recette | n | A2 | /ˈresəpi/ | Can you give me the recipe? | Peux-tu me donner la recette ?
 to boil | faire bouillir | v | A2 | /bɔɪl/ | Boil the water first. | Fais d'abord bouillir l'eau.
-to fry | faire frire | v | A2 | /fraɪ/ | She fried the fish in a pan. | Elle a fait frire le poisson à la poêle.
+to fry | faire frire | v | A2 | /fraɪ/ | Don't fry the onions too long. | Ne fais pas frire les oignons trop longtemps.
 to bake | faire cuire au four | v | A2 | /beɪk/ | We baked a cake for Eid. | Nous avons fait un gâteau pour l'Aïd.
 to chop | couper, hacher | v | B1 | /tʃɑːp/ | Chop the parsley finely. | Hache finement le persil.
 to taste | goûter ; avoir le goût de | v | A2 | /teɪst/ | Taste the sauce before serving. | Goûte la sauce avant de servir.
@@ -110,7 +110,7 @@ dessert | dessert | n | A1 | /dɪˈzɜːrt/ | What's for dessert? | Qu'y a-t-il 
 leftovers | restes | n | B1 | /ˈleftoʊvərz/ | We ate the leftovers for lunch. | Nous avons mangé les restes au déjeuner.
 vegetarian | végétarien | adj | A2 | /ˌvedʒəˈteriən/ | Do you have a vegetarian option? | Avez-vous une option végétarienne ?
 ingredients | ingrédients | n | A2 | /ɪnˈɡriːdiənts/ | Check the ingredients for gelatine. | Vérifie s'il y a de la gélatine dans les ingrédients.
-to be full | avoir assez mangé, être rassasié | expr | A2 | /bi fʊl/ | No more, thanks, I'm full. | Plus rien, merci, je suis rassasié.
+to be full | avoir assez mangé, être rassasié | expr | A2 | /bi fʊl/ | No more, thanks, I'll be full. | Merci, je ne veux plus rien, je vais être rassasié.
 homemade | fait maison | adj | B1 | /ˌhoʊmˈmeɪd/ | Nothing beats homemade bread. | Rien ne vaut le pain fait maison.
 to fast | jeûner | v | B1 | /fæst/ | Muslims fast during Ramadan. | Les musulmans jeûnent pendant le Ramadan.
 healthy | sain, bon pour la santé | adj | A2 | /ˈhelθi/ | She eats a healthy diet. | Elle a une alimentation saine.
@@ -120,7 +120,7 @@ a pinch of | une pincée de | expr | B1 | /ə pɪntʃ əv/ | Add a pinch of salt
 
 export const SANTE = theme(
   "sante",
-  "La santé",
+  "Santé et bien-être",
   "Le corps, les symptômes, le médecin et la pharmacie.",
   "HeartPulse",
   `
@@ -151,7 +151,7 @@ arm | bras | n | A1 | /ɑːrm/ | She broke her arm skiing. | Elle s'est cassé l
 leg | jambe | n | A1 | /leɡ/ | My legs are tired after the walk. | Mes jambes sont fatiguées après la marche.
 blood | sang | n | A2 | /blʌd/ | He gave blood last week. | Il a donné son sang la semaine dernière.
 injury | blessure | n | B1 | /ˈɪndʒəri/ | The player has a knee injury. | Le joueur a une blessure au genou.
-to break | casser, se casser | v | A2 | /breɪk/ | He broke his leg playing football. | Il s'est cassé la jambe en jouant au football.
+to break | casser, se casser | v | A2 | /breɪk/ | Be careful not to break the glass. | Fais attention de ne pas casser le verre.
 prescription | ordonnance | n | B1 | /prɪˈskrɪpʃən/ | You need a prescription for this. | Il faut une ordonnance pour ceci.
 pill | comprimé, cachet | n | A2 | /pɪl/ | Take one pill after each meal. | Prends un comprimé après chaque repas.
 to recover | se rétablir, guérir | v | B1 | /rɪˈkʌvər/ | She recovered quickly after the operation. | Elle s'est vite rétablie après l'opération.

@@ -2,7 +2,7 @@ import { theme } from "./outil";
 
 export const MAISON = theme(
   "maison",
-  "La maison",
+  "Logement",
   "Les pièces, les meubles, les objets du foyer.",
   "House",
   `
@@ -41,7 +41,6 @@ heating | chauffage | n | B1 | /ˈhiːtɪŋ/ | Turn the heating down a little. |
 to move house | déménager | expr | B1 | /muːv haʊs/ | We're moving house next month. | Nous déménageons le mois prochain.
 neighbour | voisin | n | A2 | /ˈneɪbər/ | Our neighbours are very friendly. | Nos voisins sont très sympathiques.
 landlord | propriétaire (bailleur) | n | B1 | /ˈlændlɔːrd/ | The landlord raised the rent. | Le propriétaire a augmenté le loyer.
-rent | loyer | n | B1 | /rent/ | The rent is due on the first. | Le loyer est dû le premier du mois.
 to furnish | meubler | v | B2 | /ˈfɜːrnɪʃ/ | The flat is fully furnished. | L'appartement est entièrement meublé.
 to repair | réparer | v | A2 | /rɪˈper/ | My father repaired the door. | Mon père a réparé la porte.
 to turn on | allumer | v | A2 | /tɜːrn ɑːn/ | Turn on the light, please. | Allume la lumière, s'il te plaît.
@@ -61,7 +60,7 @@ to sweep | balayer | v | B1 | /swiːp/ | She sweeps the courtyard every morning.
 
 export const EMOTIONS = theme(
   "emotions",
-  "Les émotions",
+  "Émotions et sentiments",
   "Dire ce que l'on ressent, avec nuance.",
   "Smile",
   `
@@ -96,15 +95,14 @@ joy | joie | n | B1 | /dʒɔɪ/ | Her face lit up with joy. | Son visage s'est i
 anger | colère | n | B1 | /ˈæŋɡər/ | Control your anger. | Maîtrise ta colère.
 sadness | tristesse | n | B1 | /ˈsædnəs/ | There was sadness in his voice. | Il y avait de la tristesse dans sa voix.
 love | amour | n | A1 | /lʌv/ | A mother's love has no limits. | L'amour d'une mère n'a pas de limites.
-to cry | pleurer | v | A2 | /kraɪ/ | The baby cried all night. | Le bébé a pleuré toute la nuit.
+to cry | pleurer | v | A2 | /kraɪ/ | Don't cry, the baby is asleep. | Ne pleure pas, le bébé dort.
 to laugh | rire | v | A1 | /læf/ | We laughed until we cried. | Nous avons ri aux larmes.
 to smile | sourire | v | A1 | /smaɪl/ | Smiling at your brother is charity. | Sourire à ton frère est une aumône.
 to feel | ressentir, se sentir | v | A2 | /fiːl/ | How do you feel today? | Comment te sens-tu aujourd'hui ?
-to miss | manquer à (quelqu'un) | v | B1 | /mɪs/ | I miss my family. | Ma famille me manque.
 to calm down | se calmer | v | B1 | /kɑːm daʊn/ | Calm down, everything will be fine. | Calme-toi, tout ira bien.
 to cheer up | remonter le moral | v | B1 | /tʃɪr ʌp/ | Cheer up, it's not the end of the world! | Courage, ce n'est pas la fin du monde !
 to look forward to | avoir hâte de | expr | B1 | /lʊk ˈfɔːrwərd tuː/ | I look forward to seeing you. | J'ai hâte de te voir.
-to be fed up with | en avoir assez de | expr | B1 | /bi fed ʌp wɪð/ | I'm fed up with this noise. | J'en ai assez de ce bruit.
+to be fed up with | en avoir assez de | expr | B1 | /bi fed ʌp wɪð/ | I'll be fed up with this noise soon. | Je vais finir par en avoir assez de ce bruit.
 mood | humeur | n | B1 | /muːd/ | He's in a good mood today. | Il est de bonne humeur aujourd'hui.
 overwhelmed | submergé, dépassé | adj | B2 | /ˌoʊvərˈwelmd/ | She felt overwhelmed by the work. | Elle se sentait submergée par le travail.
 content | satisfait, serein | adj | B2 | /kənˈtent/ | He is content with little. | Il se contente de peu.
@@ -120,7 +118,7 @@ peace of mind | tranquillité d'esprit | expr | B2 | /piːs əv maɪnd/ | Prayer
 
 export const METEO = theme(
   "meteo",
-  "Le temps qu'il fait",
+  "Le temps",
   "La météo, les saisons, le ciel et le climat.",
   "CloudSun",
   `
@@ -128,14 +126,12 @@ weather | temps (météo) | n | A1 | /ˈweðər/ | What's the weather like today
 sun | soleil | n | A1 | /sʌn/ | The sun is shining. | Le soleil brille.
 sunny | ensoleillé | adj | A1 | /ˈsʌni/ | It's sunny this morning. | Il fait beau ce matin.
 rain | pluie | n | A1 | /reɪn/ | The rain stopped at noon. | La pluie s'est arrêtée à midi.
-to rain | pleuvoir | v | A1 | /reɪn/ | It's raining again. | Il pleut encore.
 rainy | pluvieux | adj | A1 | /ˈreɪni/ | It's a rainy day. | C'est une journée pluvieuse.
 cloud | nuage | n | A1 | /klaʊd/ | There isn't a cloud in the sky. | Il n'y a pas un nuage dans le ciel.
 cloudy | nuageux | adj | A1 | /ˈklaʊdi/ | It will be cloudy tomorrow. | Il fera nuageux demain.
 wind | vent | n | A1 | /wɪnd/ | The wind is very strong. | Le vent est très fort.
 windy | venteux | adj | A2 | /ˈwɪndi/ | It's too windy for a picnic. | Il y a trop de vent pour un pique-nique.
 snow | neige | n | A1 | /snoʊ/ | The mountains are covered in snow. | Les montagnes sont couvertes de neige.
-to snow | neiger | v | A1 | /snoʊ/ | It rarely snows here. | Il neige rarement ici.
 storm | tempête, orage | n | A2 | /stɔːrm/ | A storm is coming. | Un orage approche.
 thunder | tonnerre | n | B1 | /ˈθʌndər/ | Did you hear the thunder? | As-tu entendu le tonnerre ?
 lightning | éclair(s) | n | B1 | /ˈlaɪtnɪŋ/ | Lightning struck the old tree. | La foudre a frappé le vieil arbre.
@@ -143,7 +139,6 @@ fog | brouillard | n | A2 | /fɑːɡ/ | Drive slowly in the fog. | Roule douceme
 foggy | brumeux | adj | A2 | /ˈfɑːɡi/ | It was foggy this morning. | Il y avait du brouillard ce matin.
 hot | chaud | adj | A1 | /hɑːt/ | It's very hot in July. | Il fait très chaud en juillet.
 warm | doux, chaud (agréable) | adj | A1 | /wɔːrm/ | The evenings are warm in spring. | Les soirées sont douces au printemps.
-cold | froid | adj | A1 | /koʊld/ | It's cold outside, take a coat. | Il fait froid dehors, prends un manteau.
 cool | frais | adj | A2 | /kuːl/ | The morning air is cool. | L'air du matin est frais.
 freezing | glacial | adj | A2 | /ˈfriːzɪŋ/ | It's freezing today! | Il fait un froid glacial aujourd'hui !
 temperature | température | n | A2 | /ˈtemprətʃər/ | The temperature dropped to zero. | La température est descendue à zéro.

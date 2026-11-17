@@ -274,7 +274,7 @@ const LANGUES: DefModule = {
         {
           cle: "vocabulaire.chapo",
           libelle: "Introduction",
-          defaut: "{mots} mots et expressions du quotidien, en {themes} thèmes, du niveau A1 au B2. Chaque mot revient au moment où ta mémoire allait le perdre.",
+          defaut: "{mots} mots et expressions du quotidien, en {themes} thèmes, du niveau A1 au C2. Chaque mot revient au moment où ta mémoire allait le perdre.",
           long: true,
           aide: "{mots} et {themes} sont remplacés par les nombres réels.",
         },
@@ -328,8 +328,8 @@ const LANGUES: DefModule = {
 export const MODULES: Record<ModuleId, DefModule> = { accueil: ACCUEIL, calame: CALAME, alambic: ALAMBIC, langues: LANGUES };
 export const estModule = (id: string): id is ModuleId => (IDS_MODULES as string[]).includes(id);
 
-export const ICONES_DISPONIBLES = ["Users", "Plane", "Briefcase", "Sun", "UtensilsCrossed", "HeartPulse", "House", "Smile", "CloudSun", "GraduationCap", "Building2", "Trees", "BookOpen", "Moon", "Star", "Globe", "Music", "Car", "ShoppingBag", "Dumbbell", "Landmark", "Laptop", "Leaf", "Heart"];
-export const NIVEAUX_MOTS: Niveau[] = ["A1", "A2", "B1", "B2"];
+export const ICONES_DISPONIBLES = ["Users", "Plane", "Briefcase", "Sun", "UtensilsCrossed", "HeartPulse", "House", "Smile", "CloudSun", "GraduationCap", "Building2", "Trees", "BookOpen", "Moon", "Star", "Globe", "Music", "Car", "ShoppingBag", "Dumbbell", "Landmark", "Laptop", "Leaf", "Heart", "Clapperboard", "Coffee", "Cpu", "Factory", "Hammer", "Lightbulb", "MapPin", "Newspaper", "Plug", "ShieldCheck", "Sparkles", "Sprout", "Tent", "Trophy", "UserRound", "Vote", "Wallet", "Zap"];
+export const NIVEAUX_MOTS: Niveau[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
 export const NATURES_MOTS = ["nom", "verbe", "adjectif", "adverbe", "expression", "préposition", "pronom", "conjonction"] as const;
 
 export const themesDOrigine = (): ThemeEdite[] => THEMES.map((t) => ({ id: t.id, nom: t.nom, description: t.description, icone: t.icone, visible: true, entrees: t.entrees }));

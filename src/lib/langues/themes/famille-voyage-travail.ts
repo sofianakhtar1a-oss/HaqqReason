@@ -2,7 +2,7 @@ import { theme } from "./outil";
 
 export const FAMILLE = theme(
   "famille",
-  "La famille",
+  "Famille et relations sociales",
   "Les proches, les liens, les moments partagés.",
   "Users",
   `
@@ -37,7 +37,7 @@ to marry | épouser | v | A2 | /ˈmæri/ | They married in June. | Ils se sont m
 wedding | mariage (cérémonie) | n | A2 | /ˈwedɪŋ/ | The wedding was simple and beautiful. | Le mariage était simple et beau.
 divorce | divorce | n | B1 | /dɪˈvɔːrs/ | Divorce is hard for children. | Le divorce est difficile pour les enfants.
 to raise | élever (un enfant) | v | B1 | /reɪz/ | She raised four children alone. | Elle a élevé seule quatre enfants.
-to grow up | grandir | v | A2 | /ɡroʊ ʌp/ | I grew up in a small town. | J'ai grandi dans une petite ville.
+to grow up | grandir | v | A2 | /ɡroʊ ʌp/ | Children grow up fast in a small town. | Les enfants grandissent vite dans une petite ville.
 to look after | s'occuper de | v | A2 | /lʊk ˈæftər/ | He looks after his little sister. | Il s'occupe de sa petite sœur.
 to get along with | bien s'entendre avec | expr | B1 | /ɡet əˈlɔːŋ wɪð/ | I get along with my brother. | Je m'entends bien avec mon frère.
 to take after | ressembler à (un parent) | expr | B1 | /teɪk ˈæftər/ | She takes after her father. | Elle tient de son père.
@@ -61,7 +61,7 @@ family gathering | réunion de famille | n | B1 | /ˈfæməli ˈɡæðərɪŋ/ |
 
 export const VOYAGE = theme(
   "voyage",
-  "Le voyage",
+  "Transports, voyages et géographie",
   "Partir, se déplacer, se loger, se débrouiller ailleurs.",
   "Plane",
   `
@@ -102,7 +102,7 @@ to exchange | échanger, changer | v | B1 | /ɪksˈtʃeɪndʒ/ | I need to excha
 delay | retard | n | B1 | /dɪˈleɪ/ | There is a two-hour delay. | Il y a un retard de deux heures.
 to miss | rater (un transport) | v | A2 | /mɪs/ | Hurry, or we will miss the bus! | Dépêche-toi, sinon on va rater le bus !
 destination | destination | n | B1 | /ˌdestɪˈneɪʃən/ | Istanbul is a popular destination. | Istanbul est une destination prisée.
-to get lost | se perdre | expr | A2 | /ɡet lɔːst/ | We got lost in the old streets. | Nous nous sommes perdus dans les vieilles rues.
+to get lost | se perdre | expr | A2 | /ɡet lɔːst/ | We could get lost in the old streets. | Nous pourrions nous perdre dans les vieilles rues.
 directions | indications (chemin) | n | A2 | /dəˈrekʃənz/ | Can you give me directions to the station? | Pouvez-vous m'indiquer le chemin de la gare ?
 straight on | tout droit | expr | A2 | /streɪt ɑːn/ | Go straight on, then turn left. | Allez tout droit, puis tournez à gauche.
 to turn left | tourner à gauche | expr | A1 | /tɜːrn left/ | Turn left at the traffic lights. | Tournez à gauche au feu.
@@ -120,13 +120,12 @@ off the beaten track | hors des sentiers battus | expr | B2 | /ɔːf ðə ˈbiː
 
 export const TRAVAIL = theme(
   "travail",
-  "Le travail",
+  "Travail et vie professionnelle",
   "Le métier, l'entreprise, les collègues et les réunions.",
   "Briefcase",
   `
 job | emploi, travail | n | A1 | /dʒɑːb/ | She found a new job. | Elle a trouvé un nouvel emploi.
 work | travail | n | A1 | /wɜːrk/ | I go to work by bus. | Je vais au travail en bus.
-to work | travailler | v | A1 | /wɜːrk/ | He works from home on Mondays. | Il travaille de chez lui le lundi.
 office | bureau (lieu) | n | A1 | /ˈɔːfɪs/ | Our office is on the third floor. | Notre bureau est au troisième étage.
 desk | bureau (meuble) | n | A1 | /desk/ | My desk is near the window. | Mon bureau est près de la fenêtre.
 colleague | collègue | n | A2 | /ˈkɑːliːɡ/ | My colleagues are very helpful. | Mes collègues sont très serviables.
@@ -162,7 +161,7 @@ promotion | promotion (avancement) | n | B1 | /prəˈmoʊʃən/ | She got a prom
 contract | contrat | n | B1 | /ˈkɑːntrækt/ | Read the contract before you sign. | Lis le contrat avant de signer.
 to sign | signer | v | A2 | /saɪn/ | Please sign here. | Veuillez signer ici.
 schedule | emploi du temps, planning | n | B1 | /ˈskedʒuːl/ | My schedule is very busy this week. | Mon planning est très chargé cette semaine.
-to be in charge of | être responsable de | expr | B1 | /bi ɪn tʃɑːrdʒ əv/ | She is in charge of the accounts. | Elle est responsable de la comptabilité.
+to be in charge of | être responsable de | expr | B1 | /bi ɪn tʃɑːrdʒ əv/ | She will be in charge of the accounts. | Elle sera responsable des comptes.
 to run a business | diriger une entreprise | expr | B1 | /rʌn ə ˈbɪznəs/ | They run a family business. | Ils dirigent une entreprise familiale.
 profit | bénéfice | n | B1 | /ˈprɑːfɪt/ | The shop made a good profit this year. | La boutique a fait un bon bénéfice cette année.
 invoice | facture | n | B2 | /ˈɪnvɔɪs/ | I sent the invoice yesterday. | J'ai envoyé la facture hier.

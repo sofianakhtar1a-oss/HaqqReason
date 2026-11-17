@@ -15,6 +15,7 @@
     "test:alambic": "tsx tests/test-alambic.mts",
     "test:transcription": "tsx tests/test-transcription.mts",
     "test:langues": "tsx tests/test-langues.mts",
+    "test:vocabulaire": "tsx tests/test-vocabulaire.mts",
     "test:modules": "tsx tests/test-modules.mts",
     "test:compte": "tsx --conditions=react-server tests/test-compte.mts"
   },

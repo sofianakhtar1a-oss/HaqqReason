@@ -318,7 +318,7 @@ export function EditeurModule({ id, etatInitial }: { id: ModuleId; etatInitial: 
               onOrigine={() =>
                 setConfirmer({
                   titre: "Reprendre le vocabulaire d'origine ?",
-                  texte: "Les 12 thèmes et 600 mots d'origine remplacent le vocabulaire du brouillon. La version actuelle reste dans l'historique une fois publiée, et « Annuler les modifications » la ramène tant que rien n'est publié.",
+                  texte: "Les 33 thèmes et les 2 589 mots d'origine remplacent le vocabulaire du brouillon. La version actuelle reste dans l'historique une fois publiée, et « Annuler les modifications » la ramène tant que rien n'est publié.",
                   bouton: "Reprendre l'origine",
                   action: () => modifier((c) => ({ ...c, themes: undefined })),
                 })

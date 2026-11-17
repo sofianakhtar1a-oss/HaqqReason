@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, BookmarkCheck, BookmarkPlus, BookOpen, Briefcase, Building2, Car, CloudSun, Dumbbell, Globe, GraduationCap, Heart, HeartPulse, House, Landmark, Laptop, Layers, Leaf, type LucideIcon, Moon, Music, Plane, Play, ShoppingBag, Shuffle, Smile, Star, Sun, Trees, Users, UtensilsCrossed, Volume2 } from "lucide-react";
+import { ArrowLeft, BookmarkCheck, BookmarkPlus, BookOpen, Briefcase, Building2, Car, Clapperboard, Coffee, CloudSun, Cpu, Dumbbell, Factory, Globe, GraduationCap, Hammer, Heart, HeartPulse, House, Landmark, Laptop, Layers, Leaf, Lightbulb, type LucideIcon, MapPin, Moon, Music, Newspaper, Plane, Play, Plug, ShieldCheck, ShoppingBag, Shuffle, Smile, Sparkles, Sprout, Star, Sun, Tent, Trees, Trophy, UserRound, Users, UtensilsCrossed, Vote, Volume2, Wallet, Zap } from "lucide-react";
 import { useMemo, useState } from "react";
 import { elementDEntree, nouveauMot } from "@/lib/langues/dictionnaire";
 import { estDue, type Maitrise, maitrise } from "@/lib/langues/srs";
@@ -14,6 +14,7 @@ import type { Lancement } from "./Seance";
 export const ICONES_THEMES: Record<string, LucideIcon> = {
   Users, Plane, Briefcase, Sun, UtensilsCrossed, HeartPulse, House, Smile, CloudSun, GraduationCap, Building2, Trees,
   BookOpen, Moon, Star, Globe, Music, Car, ShoppingBag, Dumbbell, Landmark, Laptop, Leaf, Heart,
+  Clapperboard, Coffee, Cpu, Factory, Hammer, Lightbulb, MapPin, Newspaper, Plug, ShieldCheck, Sparkles, Sprout, Tent, Trophy, UserRound, Vote, Wallet, Zap,
 };
 
 /** Les thèmes publiés par le créateur (ou ceux d'origine). */
@@ -137,10 +138,37 @@ function Themes({ onOuvrir, lancer }: Pick<Props, "onOuvrir" | "lancer">) {
   );
 }
 
+/** Quels mots afficher : les nouveaux, ceux en cours de révision (répétition espacée), ou les deux. */
+type Affichage = "tous" | "nouveaux" | "revision";
+const AFFICHAGES: [Affichage, string][] = [
+  ["tous", "Les deux"],
+  ["nouveaux", "Nouveaux mots"],
+  ["revision", "En révision"],
+];
+
+/** Ajoute ou retire un niveau de la sélection (plusieurs niveaux peuvent être cochés à la fois). */
+function basculer(s: Set<Niveau>, n: Niveau): Set<Niveau> {
+  const r = new Set(s);
+  if (r.has(n)) r.delete(n);
+  else r.add(n);
+  return r;
+}
+
 function DetailTheme({ theme, onRetour, lancer }: { theme: Theme; onRetour: () => void; lancer: (l: Lancement) => void }) {
   const { cartes, mots } = useDonnees();
-  const [niveau, setNiveau] = useState<Niveau | null>(null);
-  const entrees = useMemo(() => theme.entrees.filter((e) => !niveau || e.niveau === niveau), [theme, niveau]);
+  const [niveaux, setNiveaux] = useState<Set<Niveau>>(() => new Set());
+  const [affichage, setAffichage] = useState<Affichage>("tous");
+  const entrees = useMemo(
+    () =>
+      theme.entrees.filter((e) => {
+        if (niveaux.size && !niveaux.has(e.niveau)) return false;
+        const m = maitrise(cartes.get(e.id));
+        if (affichage === "nouveaux") return m === "nouveau";
+        if (affichage === "revision") return m !== "nouveau";
+        return true;
+      }),
+    [theme, niveaux, affichage, cartes],
+  );
   const p = progresDe(
     entrees.map((e) => e.id),
     cartes,
@@ -148,7 +176,8 @@ function DetailTheme({ theme, onRetour, lancer }: { theme: Theme; onRetour: () =
   const Icone = ICONES_THEMES[theme.icone] ?? Layers;
   const elements = entrees.map(elementDEntree);
   const reserve = theme.entrees.map(elementDEntree);
-  const titre = niveau ? `${theme.nom} (${niveau})` : theme.nom;
+  const titre = niveaux.size ? `${theme.nom} (${NIVEAUX.filter((n) => niveaux.has(n)).join(", ")})` : theme.nom;
+  const vide = entrees.length === 0;
   const dansDico = new Set(mots.map((m) => m.en.toLowerCase()));
 
   return (
@@ -179,21 +208,21 @@ function DetailTheme({ theme, onRetour, lancer }: { theme: Theme; onRetour: () =
       </div>
 
       <div className="lg-lancements">
-        <button type="button" className="lg-lancement" data-principal="" onClick={() => lancer({ titre, elements, reserve, mode: "guidee" })}>
+        <button type="button" className="lg-lancement" data-principal="" disabled={vide} onClick={() => lancer({ titre, elements, reserve, mode: "guidee" })}>
           <Play className="size-5" fill="currentColor" aria-hidden="true" />
           <span>
             <strong>Séance guidée</strong>
             <small>{p.dus ? `${p.dus} à revoir, puis de nouveaux mots` : p.nouveau ? "Découvrir 5 nouveaux mots, puis les exercer" : "Tout est à jour"}</small>
           </span>
         </button>
-        <button type="button" className="lg-lancement" onClick={() => lancer({ titre, elements, reserve, mode: "cartes" })}>
+        <button type="button" className="lg-lancement" disabled={vide} onClick={() => lancer({ titre, elements, reserve, mode: "cartes" })}>
           <Layers className="size-5" aria-hidden="true" />
           <span>
             <strong>Cartes mémoire</strong>
             <small>Recto anglais, verso français, à toi de juger</small>
           </span>
         </button>
-        <button type="button" className="lg-lancement" onClick={() => lancer({ titre, elements, reserve, mode: "guidee", libre: true })}>
+        <button type="button" className="lg-lancement" disabled={vide} onClick={() => lancer({ titre, elements, reserve, mode: "guidee", libre: true })}>
           <Shuffle className="size-5" aria-hidden="true" />
           <span>
             <strong>Entraînement libre</strong>
@@ -202,14 +231,21 @@ function DetailTheme({ theme, onRetour, lancer }: { theme: Theme; onRetour: () =
         </button>
       </div>
 
-      <div className="lg-filtres" role="group" aria-label="Niveau">
-        <button type="button" className="lg-filtre" aria-pressed={niveau === null} onClick={() => setNiveau(null)}>
+      <div className="lg-filtres" role="group" aria-label="Niveaux CECRL">
+        <button type="button" className="lg-filtre" aria-pressed={niveaux.size === 0} onClick={() => setNiveaux(new Set())}>
           Tous niveaux
         </button>
         {NIVEAUX.map((n) => (
-          <button key={n} type="button" className="lg-filtre" aria-pressed={niveau === n} onClick={() => setNiveau(niveau === n ? null : n)}>
+          <button key={n} type="button" className="lg-filtre" aria-pressed={niveaux.has(n)} onClick={() => setNiveaux((s) => basculer(s, n))}>
             {n}
             <small>{theme.entrees.filter((e) => e.niveau === n).length}</small>
+          </button>
+        ))}
+      </div>
+      <div className="lg-filtres" role="group" aria-label="Type de mots">
+        {AFFICHAGES.map(([valeur, libelle]) => (
+          <button key={valeur} type="button" className="lg-filtre" aria-pressed={affichage === valeur} onClick={() => setAffichage(valeur)}>
+            {libelle}
           </button>
         ))}
       </div>
@@ -252,6 +288,7 @@ function DetailTheme({ theme, onRetour, lancer }: { theme: Theme; onRetour: () =
           );
         })}
       </ul>
+      {vide && <p className="lg-legende">Aucun mot ne correspond à ces filtres.</p>}
     </section>
   );
 }

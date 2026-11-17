@@ -2,7 +2,7 @@ import { theme } from "./outil";
 
 export const ECOLE = theme(
   "ecole",
-  "L'école et les études",
+  "Éducation, savoir et apprentissage",
   "La classe, les matières, les examens et l'université.",
   "GraduationCap",
   `
@@ -12,7 +12,6 @@ student | élève, étudiant | n | A1 | /ˈstuːdənt/ | Every student has a loc
 classroom | salle de classe | n | A1 | /ˈklæsruːm/ | The classroom is on the ground floor. | La salle de classe est au rez-de-chaussée.
 lesson | leçon, cours | n | A1 | /ˈlesən/ | Today's lesson is about verbs. | La leçon d'aujourd'hui porte sur les verbes.
 homework | devoirs | n | A1 | /ˈhoʊmwɜːrk/ | Have you done your homework? | As-tu fait tes devoirs ?
-book | livre | n | A1 | /bʊk/ | Open your book at page ten. | Ouvrez votre livre à la page dix.
 notebook | cahier | n | A1 | /ˈnoʊtbʊk/ | Write the words in your notebook. | Écris les mots dans ton cahier.
 pen | stylo | n | A1 | /pen/ | Can I borrow your pen? | Puis-je emprunter ton stylo ?
 pencil | crayon | n | A1 | /ˈpensəl/ | Draw it with a pencil first. | Dessine-le d'abord au crayon.
@@ -34,10 +33,8 @@ to understand | comprendre | v | A1 | /ˌʌndərˈstænd/ | I don't understand t
 to explain | expliquer | v | A2 | /ɪkˈspleɪn/ | Can you explain it again? | Peux-tu l'expliquer encore ?
 question | question | n | A1 | /ˈkwestʃən/ | May I ask a question? | Puis-je poser une question ?
 answer | réponse | n | A1 | /ˈænsər/ | Write your answer on the board. | Écris ta réponse au tableau.
-board | tableau | n | A2 | /bɔːrd/ | The teacher wrote on the board. | Le professeur a écrit au tableau.
 library | bibliothèque | n | A2 | /ˈlaɪbreri/ | I study at the library. | J'étudie à la bibliothèque.
 university | université | n | A2 | /ˌjuːnɪˈvɜːrsəti/ | He goes to university in Rennes. | Il va à l'université à Rennes.
-degree | diplôme (universitaire) | n | B1 | /dɪˈɡriː/ | She has a degree in law. | Elle a un diplôme de droit.
 to graduate | obtenir son diplôme | v | B1 | /ˈɡrædʒueɪt/ | He graduated last June. | Il a obtenu son diplôme en juin dernier.
 scholarship | bourse d'études | n | B2 | /ˈskɑːlərʃɪp/ | She won a scholarship to study abroad. | Elle a obtenu une bourse pour étudier à l'étranger.
 knowledge | savoir, connaissance | n | B1 | /ˈnɑːlɪdʒ/ | Seeking knowledge is a duty. | La quête du savoir est un devoir.
@@ -46,7 +43,6 @@ essay | dissertation, rédaction | n | B1 | /ˈeseɪ/ | I have to write an essay
 mistake | erreur, faute | n | A2 | /mɪˈsteɪk/ | Everyone makes mistakes. | Tout le monde fait des erreurs.
 to correct | corriger | v | A2 | /kəˈrekt/ | The teacher corrected our tests. | Le professeur a corrigé nos contrôles.
 timetable | emploi du temps | n | A2 | /ˈtaɪmteɪbəl/ | Check the timetable for Monday. | Regarde l'emploi du temps de lundi.
-break | récréation, pause | n | A2 | /breɪk/ | We have a break at ten. | Nous avons une pause à dix heures.
 to pay attention | faire attention | expr | A2 | /peɪ əˈtenʃən/ | Pay attention to the instructions. | Fais attention aux consignes.
 to take notes | prendre des notes | expr | B1 | /teɪk noʊts/ | Take notes during the lecture. | Prends des notes pendant le cours.
 lecture | cours magistral, conférence | n | B1 | /ˈlektʃər/ | The lecture was about logic. | Le cours portait sur la logique.
@@ -61,7 +57,7 @@ to cheat | tricher | v | B1 | /tʃiːt/ | Cheating in exams is forbidden. | Tric
 
 export const VILLE = theme(
   "ville",
-  "La ville",
+  "La vie en ville",
   "Les lieux, les transports, se repérer et faire ses courses.",
   "Building2",
   `
@@ -104,7 +100,6 @@ quiet | calme, silencieux | adj | A1 | /ˈkwaɪət/ | We live in a quiet area. |
 neighbourhood | quartier | n | B1 | /ˈneɪbərhʊd/ | It's a friendly neighbourhood. | C'est un quartier convivial.
 suburbs | banlieue | n | B1 | /ˈsʌbɜːrbz/ | Many families live in the suburbs. | Beaucoup de familles vivent en banlieue.
 city centre | centre-ville | n | A2 | /ˈsɪti ˈsentər/ | The city centre is closed to cars. | Le centre-ville est fermé aux voitures.
-to park | se garer | v | A2 | /pɑːrk/ | It's hard to park here. | C'est difficile de se garer ici.
 car park | parking | n | A2 | /kɑːr pɑːrk/ | The car park is full. | Le parking est complet.
 shopping centre | centre commercial | n | A2 | /ˈʃɑːpɪŋ ˈsentər/ | The shopping centre opens at ten. | Le centre commercial ouvre à dix heures.
 to get on | monter (dans un transport) | v | A2 | /ɡet ɑːn/ | Get on the bus at the front. | Monte dans le bus par l'avant.
@@ -113,14 +108,14 @@ pedestrian | piéton | n | B1 | /pəˈdestriən/ | This street is for pedestrian
 roundabout | rond-point | n | B1 | /ˈraʊndəbaʊt/ | Take the second exit at the roundabout. | Prends la deuxième sortie au rond-point.
 rush hour | heure de pointe | n | B1 | /rʌʃ aʊər/ | Avoid the underground at rush hour. | Évite le métro aux heures de pointe.
 landmark | monument, point de repère | n | B2 | /ˈlændmɑːrk/ | The old tower is the city's main landmark. | La vieille tour est le principal monument de la ville.
-to be located | se situer | expr | B1 | /bi ˈloʊkeɪtɪd/ | The hotel is located in the old town. | L'hôtel se situe dans la vieille ville.
+to be located | se situer | expr | B1 | /bi ˈloʊkeɪtɪd/ | The hotel will be located in the old town. | L'hôtel sera situé dans la vieille ville.
 how do I get to | comment aller à | expr | A2 | /haʊ duː aɪ ɡet tuː/ | Excuse me, how do I get to the station? | Excusez-moi, comment aller à la gare ?
 `,
 );
 
 export const NATURE = theme(
   "nature",
-  "La nature",
+  "Nature, animaux et environnement",
   "Les paysages, les animaux, les plantes et l'environnement.",
   "Trees",
   `

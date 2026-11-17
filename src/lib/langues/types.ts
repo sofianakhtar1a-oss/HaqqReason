@@ -1,6 +1,6 @@
 /* Le Truchement : vocabulaire commun (données, moteur, interface, tests). */
 
-export type Niveau = "A1" | "A2" | "B1" | "B2";
+export type Niveau = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
 export type Nature = "nom" | "verbe" | "adjectif" | "adverbe" | "expression" | "préposition" | "pronom" | "conjonction";
 
 /** Un mot ou une expression d'un thème. */
@@ -75,4 +75,5 @@ export type MotPerso = {
   ajouteLe: number;
 };
 
-export const NIVEAUX: Niveau[] = ["A1", "A2", "B1", "B2"];
+/** Les six niveaux du Cadre européen (CECRL), du plus simple au plus avancé. */
+export const NIVEAUX: Niveau[] = ["A1", "A2", "B1", "B2", "C1", "C2"];

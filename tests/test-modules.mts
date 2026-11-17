@@ -13,7 +13,7 @@ const ok = (nom: string, cond: boolean, detail?: unknown) => {
 // Sans rien de publié : exactement les textes d'origine.
 const r0 = resoudre("alambic", null);
 ok("textes d'origine sans publication", r0.textes["tete.titre"] === "L'Alambic" && r0.listes.outils.length === 5 && r0.listes.outils[0].valeurs.nom === "Convertir");
-ok("vocabulaire d'origine", resoudre("langues", null).themes?.length === 12);
+ok("vocabulaire d'origine", resoudre("langues", null).themes?.length === 33);
 
 // Un texte modifié, un outil renommé, déplacé, un autre masqué, un troisième supprimé.
 const c = nettoyerContenu("alambic", {
@@ -36,8 +36,8 @@ const themes = themesDOrigine();
 themes[0] = { ...themes[0], entrees: [{ id: "famille:mot-ab12", en: "niece", fr: "nièce", nature: "nom", niveau: "A2", api: "/niːs/", exEn: "", exFr: "" }, { id: "x:y", en: "", fr: "vide", nature: "nom", niveau: "A1", api: "", exEn: "", exFr: "" }, ...themes[0].entrees] };
 const cv = nettoyerContenu("langues", { themes: [...themes, { id: "", nom: "" }, { id: "Nouveau Thème!", nom: "Mon thème", icone: "Pirate", entrees: [] }] });
 ok("mot ajouté gardé, mot incomplet refusé", cv.themes![0].entrees[0].en === "niece" && cv.themes![0].entrees.length === 51);
-ok("thème sans nom refusé, identifiant et icône assainis", cv.themes!.length === 13 && cv.themes![12].id === "nouveau-theme" && cv.themes![12].icone === "BookOpen");
-ok("thème masqué absent pour les visiteurs", resoudre("langues", { ...cv, themes: cv.themes!.map((t, i) => (i === 1 ? { ...t, visible: false } : t)) }).themes!.length === 12);
+ok("thème sans nom refusé, identifiant et icône assainis", cv.themes!.length === 34 && cv.themes![33].id === "nouveau-theme" && cv.themes![33].icone === "BookOpen");
+ok("thème masqué absent pour les visiteurs", resoudre("langues", { ...cv, themes: cv.themes!.map((t, i) => (i === 1 ? { ...t, visible: false } : t)) }).themes!.length === 33);
 
 // Nombres bornés, textes remplis.
 ok("objectif borné", nettoyerContenu("langues", { textes: { objectif: "5000" } }).textes.objectif === "200");

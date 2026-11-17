@@ -88,11 +88,11 @@ const libre = composerSeance({ elements: els, cartes: new Map([...cartes].map(([
 ok("révision libre : on peut s'entraîner même sans échéance", libre.length > 0);
 
 // ---------------------------------------------------------------- contenu des thèmes
-ok("12 thèmes de 50 mots", THEMES.length === 12 && THEMES.every((t) => t.entrees.length === 50), THEMES.map((t) => `${t.id}:${t.entrees.length}`));
+ok("33 thèmes, chacun d'au moins 40 mots", THEMES.length === 33 && THEMES.every((t) => t.entrees.length >= 40), THEMES.map((t) => `${t.id}:${t.entrees.length}`));
 const ids = TOUTES_LES_ENTREES.map((x) => x.id);
 ok("aucun identifiant en double", new Set(ids).size === ids.length, ids.filter((x, i) => ids.indexOf(x) !== i));
 ok("tous les champs remplis, prononciation entre barres obliques", TOUTES_LES_ENTREES.every((x) => x.en && x.fr && x.exEn && x.exFr && /^\/.+\/$/.test(x.api)));
-ok("tous les niveaux représentés", ["A1", "A2", "B1", "B2"].every((n) => TOUTES_LES_ENTREES.some((x) => x.niveau === n)));
+ok("les six niveaux CECRL représentés", ["A1", "A2", "B1", "B2", "C1", "C2"].every((n) => TOUTES_LES_ENTREES.some((x) => x.niveau === n)));
 const sansTrou = TOUTES_LES_ENTREES.filter((x) => !trouDans(x));
 console.log(`   (texte à trous possible pour ${TOUTES_LES_ENTREES.length - sansTrou.length}/${TOUTES_LES_ENTREES.length} mots)`);
 if (sansTrou.length) console.log("   sans trou :", sansTrou.map((x) => x.en).join(", "));
