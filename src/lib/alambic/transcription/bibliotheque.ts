@@ -1,9 +1,13 @@
 "use client";
 
 /*
- * Bibliothèque des transcriptions, gardée sur l'appareil (IndexedDB) : rien n'est envoyé.
- * Le son ou la vidéo d'origine est gardé à côté (jusqu'à 400 Mo) pour réécouter plus tard.
+ * Bibliothèque des transcriptions, écrite d'abord sur l'appareil (IndexedDB).
+ * Avec un compte, les textes (et leurs traductions) sont recopiés sur le compte et suivent la personne.
+ * Le son ou la vidéo d'origine est gardé à côté (jusqu'à 400 Mo) pour réécouter plus tard :
+ * lui reste sur l'appareil, il est trop lourd pour voyager.
  */
+import { tiroir } from "@/lib/client/compte";
+import { noter } from "@/lib/client/synchro/journal";
 import type { Transcription } from "./types";
 
 const BASE = "haqqreason-transcriptions";
@@ -17,7 +21,7 @@ let ouverture: Promise<IDBDatabase> | null = null;
 
 function base(): Promise<IDBDatabase> {
   ouverture ??= new Promise((resolve, reject) => {
-    const r = indexedDB.open(BASE, 1);
+    const r = indexedDB.open(tiroir(BASE), 1);
     r.onupgradeneeded = () => {
       r.result.createObjectStore(TEXTES, { keyPath: "id" });
       r.result.createObjectStore(MEDIAS);
@@ -54,7 +58,16 @@ export async function lister(): Promise<Resume[]> {
 }
 
 export const lire = (id: string) => operation<Transcription | undefined>(TEXTES, "readonly", (s) => s.get(id));
-export const enregistrer = (t: Transcription) => operation(TEXTES, "readwrite", (s) => s.put(t));
+export const listerTout = () => operation<Transcription[]>(TEXTES, "readonly", (s) => s.getAll());
+/* Sans rien noter au journal : réservés à la synchronisation. */
+export const enregistrerBrut = (t: Transcription) => operation(TEXTES, "readwrite", (s) => s.put(t));
+export const supprimerBrut = (id: string) => operation(TEXTES, "readwrite", (s) => s.delete(id));
+
+export async function enregistrer(t: Transcription) {
+  const cle = await enregistrerBrut(t);
+  await noter("transcriptions", t.id);
+  return cle;
+}
 export const lireMedia = (id: string) => operation<Blob | undefined>(MEDIAS, "readonly", (s) => s.get(id)).catch(() => undefined);
 
 export async function enregistrerMedia(id: string, blob: Blob) {
@@ -69,6 +82,7 @@ export async function enregistrerMedia(id: string, blob: Blob) {
 }
 
 export async function supprimer(id: string) {
-  await operation(TEXTES, "readwrite", (s) => s.delete(id));
+  await supprimerBrut(id);
+  await noter("transcriptions", id);
   await operation(MEDIAS, "readwrite", (s) => s.delete(id)).catch(() => undefined);
 }
