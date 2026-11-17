@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BarChart3, BookOpen, BookOpenText, Feather, FlaskConical, Languages, LayoutTemplate, Lightbulb, ShieldAlert, ShieldCheck, SlidersHorizontal, Smartphone, Wrench } from "lucide-react";
+import { ArrowRight, BarChart3, Eye, BookOpen, BookOpenText, Feather, FlaskConical, Languages, LayoutTemplate, Lightbulb, ShieldAlert, ShieldCheck, SlidersHorizontal, Smartphone, Wrench } from "lucide-react";
 import { listerAppareils } from "@/lib/appareils";
 import { etatContributions } from "@/lib/contributions/donnees";
 import { resumeModules } from "@/lib/modules/donnees";
@@ -58,6 +58,17 @@ export default async function EspaceCreateur() {
       <main className="mx-auto w-full max-w-6xl flex-1 px-5 pb-16 pt-6 sm:px-8">
         <h1 className="text-4xl font-extrabold md:text-5xl">Espace créateur</h1>
         <p className="mt-3 max-w-[58ch] text-lg text-encre-douce">Quel module veux-tu modifier ?</p>
+
+        <form method="post" action="/createur/vue-utilisateur" className="mt-6">
+          <button type="submit" className="verre flex w-full items-center gap-4 rounded-3xl p-5 text-left hover:border-or">
+            <Eye className="size-6 shrink-0 text-or" aria-hidden="true" />
+            <span className="min-w-0 flex-1">
+              <span className="block font-semibold">Voir le site comme un utilisateur</span>
+              <span className="block text-sm text-encre-douce">Tu navigues exactement comme un visiteur. Un bouton, tout en haut, te ramène ici sans redemander ton mot de passe.</span>
+            </span>
+            <ArrowRight className="size-5 shrink-0 text-encre-douce" aria-hidden="true" />
+          </button>
+        </form>
 
         {inconnus.map((a) => (
           <section key={a.empreinte} role="alert" className="alerte-appareil mt-8" aria-label="Nouvel appareil">
