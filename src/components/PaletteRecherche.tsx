@@ -19,6 +19,7 @@ type Element = { cle: string; titre: string; sousTitre?: string; href: string; r
 
 const RACCOURCIS: Element[] = [
   { cle: "biblio", titre: "La bibliothèque", href: "/explorer" },
+  { cle: "islam", titre: "L'Islam authentique", href: "/islam" },
   { cle: "veracite", titre: "La véracité de l'islam", href: "/explorer/veracite-de-l-islam" },
   { cle: "defense", titre: "La défense de l'islam", href: "/explorer/defense-de-l-islam" },
   { cle: "refutation", titre: "La réfutation des autres croyances", href: "/explorer/refutation-des-autres-croyances" },
