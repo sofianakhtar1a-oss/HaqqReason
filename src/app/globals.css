@@ -3981,6 +3981,142 @@ a.contrib-renvoi:focus-visible {
   font-style: italic;
 }
 
+/* Messagerie des contributions (lecteur et créateur) */
+.contrib-gestion[data-non-lue] {
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--or) 45%, transparent);
+}
+.messagerie-pastille {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.4rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: var(--or);
+  color: var(--fond);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.messagerie-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+.messagerie-type {
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  font-size: 0.85rem;
+  color: var(--encre-douce);
+}
+.messagerie-type[aria-pressed="true"] {
+  border-color: var(--or);
+  color: var(--encre);
+  background: color-mix(in srgb, var(--or) 14%, transparent);
+}
+.messagerie-fil {
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  overflow: hidden;
+}
+.messagerie-fil[data-nouveau] {
+  border-color: color-mix(in srgb, var(--or) 60%, transparent);
+}
+.messagerie-entete {
+  display: grid;
+  gap: 0.3rem;
+  width: 100%;
+  padding: 0.9rem 1.1rem;
+  text-align: left;
+}
+.messagerie-entete:hover {
+  background: var(--surface-forte);
+}
+.messagerie-entete-haut {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.messagerie-titre {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.messagerie-corps {
+  display: grid;
+  gap: 0.6rem;
+  padding: 0 1.1rem 1.1rem;
+}
+.contrib-gestion .messagerie-corps {
+  padding: 0;
+}
+.messagerie-bulle {
+  max-width: 85%;
+  padding: 0.7rem 0.95rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  line-height: 1.55;
+}
+.messagerie-bulle-lecteur {
+  justify-self: start;
+  background: var(--surface-forte);
+  border-bottom-left-radius: 0.3rem;
+}
+.messagerie-bulle-createur {
+  justify-self: end;
+  background: color-mix(in srgb, var(--or) 13%, transparent);
+  border-color: color-mix(in srgb, var(--or) 40%, transparent);
+  border-bottom-right-radius: 0.3rem;
+}
+.messagerie-qui {
+  margin-bottom: 0.2rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.messagerie-effacer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  color: var(--encre-douce);
+}
+.messagerie-effacer:hover {
+  color: var(--danger, #e06c6c);
+}
+.messagerie-reponse {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+.contrib-nature {
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+.contrib-reponse {
+  margin-top: 0.75rem;
+  padding: 0.7rem 0.9rem;
+  border-left: 3px solid var(--or);
+  border-radius: 0.6rem;
+  background: color-mix(in srgb, var(--or) 9%, transparent);
+  line-height: 1.55;
+}
+.contrib-reponse-qui {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--or);
+}
+
 /* ==========================================================================
    Mode utilisateur : les deux espaces
    ========================================================================== */
