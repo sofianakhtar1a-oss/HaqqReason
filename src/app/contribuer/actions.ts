@@ -1,7 +1,17 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { deposerContribution, LIMITES_CONTRIBUTION, signalerContribution, type TypeContribution } from "@/lib/contributions/donnees";
+import {
+  deposerContribution,
+  lireSuivies,
+  LIMITES_CONTRIBUTION,
+  marquerReponsesLues,
+  repondreLecteur,
+  signalerContribution,
+  type ContributionSuivie,
+  type NatureSite,
+  type TypeContribution,
+} from "@/lib/contributions/donnees";
 import type { EtatFormulaire } from "@/lib/form-state";
 import { infosRequete } from "@/lib/request-info";
 import { dbPublic } from "@/lib/supabase";
@@ -22,7 +32,11 @@ export async function envoyerContribution(_: EtatFormulaire, formData: FormData)
   if (String(formData.get("site") ?? "") !== "") return { statut: "succes", message: "Merci !" };
 
   const type = String(formData.get("type") ?? "") as TypeContribution;
-  if (type !== "idee" && type !== "argument") return { statut: "erreur", message: "Formulaire inconnu." };
+  if (type !== "idee" && type !== "argument" && type !== "site") return { statut: "erreur", message: "Formulaire inconnu." };
+  const nature = String(formData.get("nature") ?? "") as NatureSite;
+  if (type === "site" && nature !== "fonctionnalite" && nature !== "bug") {
+    return { statut: "erreur", message: "Dis d'abord s'il s'agit d'une idée de fonctionnalité ou d'un bug." };
+  }
 
   const titre = texteDe(formData, "titre", LIMITES_CONTRIBUTION.titre);
   const texte = texteDe(formData, "texte", LIMITES_CONTRIBUTION.texte);
@@ -41,7 +55,9 @@ export async function envoyerContribution(_: EtatFormulaire, formData: FormData)
   // L'article cité doit exister et être publié : la base publique ne montre que ceux-là.
   let articleId: string | null = null;
   let blocId: string | null = null;
-  if (lie) {
+  if (type === "site") {
+    // « Amélioration du site » ne se rattache à aucun module.
+  } else if (lie) {
     if (!articleDemande) return { statut: "erreur", message: "Choisis l'article dont tu veux parler, ou indique que ta proposition n'en concerne aucun." };
     const { data } = await dbPublic().from("articles").select("id, bloc_id").eq("id", articleDemande).maybeSingle();
     if (!data) return { statut: "erreur", message: "Cet article est introuvable. Choisis-en un autre dans la liste." };
@@ -49,7 +65,7 @@ export async function envoyerContribution(_: EtatFormulaire, formData: FormData)
     blocId = (data as { bloc_id: string }).bloc_id;
   }
 
-  if (!blocId) {
+  if (!blocId && type !== "site") {
     if (!blocDemande) {
       return {
         statut: "erreur",
@@ -62,11 +78,13 @@ export async function envoyerContribution(_: EtatFormulaire, formData: FormData)
   }
 
   const { ipHash } = await infosRequete();
-  const resultat = await deposerContribution({ type, blocId, articleId, pseudo, titre, texte }, ipHash);
+  const resultat = await deposerContribution({ type, nature: type === "site" ? nature : "", blocId, articleId, pseudo, titre, texte }, ipHash);
   if (!resultat.ok) return { statut: "erreur", message: resultat.message };
 
   revalidatePath("/contribuer");
-  return { statut: "succes", message: resultat.message };
+  revalidatePath("/createur/contributions");
+  // Le jeton (« cle ») est gardé par le navigateur : c'est lui qui ouvre « Mes messages ».
+  return { statut: "succes", message: resultat.message, cle: resultat.jeton };
 }
 
 /** Un lecteur signale une proposition qui lui paraît déplacée. */
@@ -76,5 +94,26 @@ export async function signaler(_: EtatFormulaire, formData: FormData): Promise<E
   const { ipHash } = await infosRequete();
   const resultat = await signalerContribution(id, ipHash);
   revalidatePath("/contribuer");
+  return { statut: "succes", message: resultat.message };
+}
+
+/** « Mes messages » : les contributions dont ce navigateur garde le jeton, avec leurs réponses. */
+export async function mesConversations(jetons: string[]): Promise<ContributionSuivie[]> {
+  if (!Array.isArray(jetons)) return [];
+  return lireSuivies(jetons.map(String));
+}
+
+/** L'auteur a ouvert sa conversation : les réponses du créateur sont lues. */
+export async function marquerLu(jeton: string): Promise<void> {
+  await marquerReponsesLues(String(jeton));
+}
+
+/** L'auteur répond au créateur. */
+export async function repondre(_: EtatFormulaire, formData: FormData): Promise<EtatFormulaire> {
+  const jeton = String(formData.get("jeton") ?? "");
+  const texte = String(formData.get("texte") ?? "");
+  const resultat = await repondreLecteur(jeton, texte);
+  if (!resultat.ok) return { statut: "erreur", message: resultat.message };
+  revalidatePath("/createur/contributions");
   return { statut: "succes", message: resultat.message };
 }
