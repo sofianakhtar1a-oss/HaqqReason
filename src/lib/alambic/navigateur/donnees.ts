@@ -26,10 +26,14 @@ function valeurExcel(v: unknown): Valeur {
   if (typeof v === "number" || typeof v === "boolean" || typeof v === "string") return v;
   if (typeof v === "object") {
     const o = v as Record<string, unknown>;
-    if ("result" in o) return valeurExcel(o.result);
+    if ("result" in o && o.result !== undefined) return valeurExcel(o.result);
+    // Formule jamais calculée (fichier produit par un programme, pas par Excel) : on garde la formule elle-même.
+    if (typeof o.formula === "string" || typeof o.sharedFormula === "string") return `=${String(o.formula ?? o.sharedFormula)}`;
     if ("richText" in o && Array.isArray(o.richText)) return (o.richText as { text: string }[]).map((r) => r.text).join("");
     if ("text" in o) return String(o.text);
     if ("error" in o) return String(o.error);
+    if ("hyperlink" in o) return String(o.hyperlink);
+    return null;
   }
   return String(v);
 }
