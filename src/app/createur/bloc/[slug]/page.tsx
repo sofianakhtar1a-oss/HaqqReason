@@ -9,6 +9,7 @@ import { EnTeteCreateur } from "../../_composants/EnTeteCreateur";
 import { FormulaireCreation } from "../../_composants/FormulaireCreation";
 import { ListeDossiers } from "../../_composants/ListeDossiers";
 import { creerCategorie } from "../../contenu-actions";
+import { racineEspace } from "@/lib/espaces";
 
 export const metadata: Metadata = { title: "Gérer un bloc", robots: { index: false } };
 
@@ -27,7 +28,7 @@ export default async function GererBloc({ params }: PageProps<"/createur/bloc/[s
       <main className="mx-auto w-full max-w-6xl flex-1 px-5 pb-16 pt-4 sm:px-8">
         <FilAriane
           etapes={[
-            { href: "/createur/bibliotheque", libelle: "Les preuves" },
+            racineEspace(bloc.espace, "createur"),
             { href: `/createur/bloc/${bloc.slug}`, libelle: bloc.titre },
           ]}
         />
