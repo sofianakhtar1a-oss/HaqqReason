@@ -28,11 +28,19 @@ type Props = {
   onMot: (i: number, el: HTMLElement) => void;
   /** Vidéo : reprendre la lecture à partir du mot. */
   onEcouter?: (t: number) => void;
+  /** Langue du texte touché : l'anglais (traduit en français) ou le français (traduit en anglais). */
+  langue?: "en" | "fr";
 };
 
 /** Ce que l'on range dans le dictionnaire pour le mot touché. */
-export function motDeLaGlose(phrase: Phrase, i: number, analyse: Analyse | undefined, traduction: string | undefined, origine: OrigineMot) {
+export function motDeLaGlose(phrase: Phrase, i: number, analyse: Analyse | undefined, traduction: string | undefined, origine: OrigineMot, langue: "en" | "fr" = "en") {
   const g = analyse?.mots.find((x) => x.i === i);
+  if (langue === "fr") {
+    // Texte français : le mot anglais est la traduction donnée, le français est le mot touché.
+    const francais = (g?.lemme || phrase.mots[i]?.t || "").replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, "");
+    const anglais = (g?.sens ?? "").replace(/[.!]$/, "");
+    return nouveauMot({ en: anglais, fr: francais, nature: g?.nature, phrase: traduction, phraseFr: texteDe(phrase) }, origine);
+  }
   // Un nom propre garde sa majuscule (London, Ramadan).
   const propre = /propre/.test(g?.nature ?? "");
   const nu = (s: string) => s.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N}]+$/gu, "");
@@ -44,9 +52,10 @@ export function motDeLaGlose(phrase: Phrase, i: number, analyse: Analyse | undef
 
 export function GloseMot(p: Props) {
   const { mots } = useDonnees();
-  const mot = motDeLaGlose(p.phrase, p.cible.mot, p.analyse, p.traduction, p.origine);
-  const deja = mots.some((m) => m.id === mot.id || m.id === idMot(mot.forme ?? ""));
-  const pret = Boolean(mot.fr);
+  const langue = p.langue ?? "en";
+  const mot = motDeLaGlose(p.phrase, p.cible.mot, p.analyse, p.traduction, p.origine, langue);
+  const deja = mots.some((m) => m.id === mot.id || (mot.forme ? m.id === idMot(mot.forme) : false));
+  const pret = Boolean(mot.fr && mot.en);
   const [enCours, setEnCours] = useState(false);
 
   /* Le sens donné est celui du mot dans sa phrase (« would happen » : « se produirait »).
@@ -54,7 +63,7 @@ export function GloseMot(p: Props) {
   const ajouter = async () => {
     let m = mot;
     // Un verbe est toujours repris à l'infinitif : « would happen » donnerait sinon « se produirait ».
-    if (m.lemme && m.forme && (m.nature === "verbe" || m.lemme.toLowerCase() !== m.forme.toLowerCase())) {
+    if (langue === "en" && m.lemme && m.forme && (m.nature === "verbe" || m.lemme.toLowerCase() !== m.forme.toLowerCase())) {
       setEnCours(true);
       try {
         const [base] = await traduireLot("en", [m.nature === "verbe" ? `to ${m.lemme}` : m.lemme], "");
@@ -92,7 +101,7 @@ export function GloseMot(p: Props) {
   const commun = {
     cible: p.cible,
     phrase: p.phrase,
-    langue: "en",
+    langue,
     rtl: false,
     analyse: p.analyse,
     traduction: p.traduction,
