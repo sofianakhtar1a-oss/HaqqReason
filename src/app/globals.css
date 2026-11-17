@@ -1079,7 +1079,7 @@ a.dossier:focus-visible {
 
 .barre-outils {
   position: sticky;
-  top: 0.75rem;
+  top: calc(0.75rem + var(--barre-vue));
   z-index: 20;
   display: flex;
   flex-wrap: wrap;
@@ -1708,7 +1708,7 @@ kbd {
 }
 .livre-barre {
   position: sticky;
-  top: 0;
+  top: var(--barre-vue);
   z-index: 10;
   display: flex;
   flex-wrap: wrap;
@@ -2139,6 +2139,12 @@ kbd {
 }
 @media (max-width: 639px) {
   .lien-outil.lien-outil-secondaire {
+    display: none;
+  }
+}
+/* Sur un petit téléphone, la pastille du compte prend la place du raccourci le moins utile. */
+@media (max-width: 440px) {
+  .lien-outil.lien-outil-etroit {
     display: none;
   }
 }
@@ -2835,7 +2841,7 @@ a.carte-lien:hover .carte-lien-lecture {
   }
   .atelier-apercu {
     position: sticky;
-    top: 0;
+    top: var(--barre-vue);
   }
 }
 .choix-carte {
@@ -3235,7 +3241,7 @@ a.carte-lien:hover .carte-lien-lecture {
 @media (min-width: 64rem) {
   .colonne-reglages {
     position: sticky;
-    top: 1.5rem;
+    top: calc(1.5rem + var(--barre-vue));
     max-height: calc(100vh - 3rem);
     overflow-y: auto;
     /* La molette s'arrête au bas du panneau au lieu d'emporter la page. */
@@ -4201,7 +4207,7 @@ a.contrib-renvoi:focus-visible {
   grid-template-areas:
     "barre barre barre"
     "cote centre inspecteur";
-  height: 100dvh;
+  height: calc(100dvh - var(--barre-vue));
   overflow: hidden;
   background: var(--fond);
 }
@@ -4845,7 +4851,7 @@ a.contrib-renvoi:focus-visible {
   display: grid;
   place-items: center;
   gap: 0.75rem;
-  height: 100dvh;
+  height: calc(100dvh - var(--barre-vue));
   color: var(--encre-douce);
 }
 
@@ -4970,7 +4976,7 @@ a.contrib-renvoi:focus-visible {
    Tout le reste reste calme : verre sombre, filets fins, or en signal.
    ===================================================================== */
 .alambic {
-  min-height: 100dvh;
+  min-height: calc(100dvh - var(--barre-vue));
   display: flex;
   flex-direction: column;
   background:
@@ -5081,7 +5087,7 @@ a.contrib-renvoi:focus-visible {
 @media (min-width: 88rem) {
   .alambic-outils {
     position: sticky;
-    top: 1rem;
+    top: calc(1rem + var(--barre-vue));
   }
 }
 .alambic-tuile {
@@ -6096,7 +6102,7 @@ a.contrib-renvoi:focus-visible {
 /* Le bandeau « aperçu » des pages publiques. */
 .bandeau-apercu {
   position: sticky;
-  top: 0;
+  top: var(--barre-vue);
   z-index: 90;
   display: flex;
   flex-wrap: wrap;
@@ -6111,4 +6117,141 @@ a.contrib-renvoi:focus-visible {
 }
 .bandeau-apercu a {
   text-decoration: underline;
+}
+
+/* ---------- Comptes des utilisateurs ---------- */
+
+/* La pastille du compte, dans l'en-tête : l'initiale, et un point qui dit si tout est enregistré. */
+.pastille-compte,
+.pastille-compte-vide {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+}
+.pastille-compte {
+  background: color-mix(in srgb, var(--or) 18%, transparent);
+  border: 1px solid color-mix(in srgb, var(--or) 55%, transparent);
+  color: var(--encre);
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1;
+}
+.pastille-compte:hover {
+  background: color-mix(in srgb, var(--or) 30%, transparent);
+}
+.pastille-compte-etat {
+  position: absolute;
+  right: -0.1rem;
+  bottom: -0.1rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 999px;
+  border: 2px solid var(--fond);
+  background: var(--encre-douce);
+}
+.pastille-compte[data-etat="a-jour"] .pastille-compte-etat {
+  background: var(--succes);
+}
+.pastille-compte[data-etat="hors-ligne"] .pastille-compte-etat,
+.pastille-compte[data-etat="erreur"] .pastille-compte-etat,
+.pastille-compte[data-etat="deconnecte"] .pastille-compte-etat {
+  background: var(--or);
+}
+.pastille-compte[data-etat="en-cours"] .pastille-compte-etat,
+.pastille-compte[data-etat="attente"] .pastille-compte-etat {
+  background: var(--azur);
+}
+
+.liste-compte {
+  display: grid;
+  gap: 0.35rem;
+  padding-left: 1.1rem;
+  list-style: disc;
+}
+.jauge-compte {
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--surface-forte);
+  border: 1px solid var(--trait);
+  overflow: hidden;
+}
+.jauge-compte > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--emeraude);
+}
+.jauge-compte > span[data-plein] {
+  background: var(--danger);
+}
+
+/* « Voir comme un utilisateur » : la barre du créateur, seule différence avec ce que voit un visiteur. */
+.barre-vue {
+  position: sticky;
+  top: 0;
+  z-index: 95;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  height: var(--barre-vue);
+  padding: 0 0.75rem;
+  white-space: nowrap;
+  background: var(--or);
+  color: var(--sur-or);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.barre-vue-texte {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.barre-vue-bouton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2rem;
+  padding: 0.2rem 0.9rem;
+  border-radius: 999px;
+  background: var(--sur-or);
+  color: var(--or);
+  font-weight: 700;
+}
+.barre-vue-bouton:hover {
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--sur-or) 45%, transparent);
+}
+html {
+  --barre-vue: 0rem;
+}
+html[data-vue="utilisateur"] {
+  --barre-vue: 2.75rem;
+}
+
+/* Dans les barres compactes des espaces (Calame, Alambic, Truchement), la pastille prend la taille des autres boutons. */
+.calame-barre .pastille-compte,
+.alambic-tete .pastille-compte,
+.lg-tete .pastille-compte,
+.calame-barre .pastille-compte-vide,
+.alambic-tete .pastille-compte-vide,
+.lg-tete .pastille-compte-vide {
+  width: 2.25rem;
+  height: 2.25rem;
+  font-size: 0.9rem;
+}
+@media (max-width: 30rem) {
+  .calame-barre {
+    gap: 0.2rem;
+    padding-inline: 0.4rem;
+  }
+  .calame-barre .calame-sortie {
+    padding-inline: 0.6rem;
+  }
 }

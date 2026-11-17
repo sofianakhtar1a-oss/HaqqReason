@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { BookOpen, Heart, Lightbulb, MessagesSquare, Network, PenLine, Scale, Sparkles } from "lucide-react";
 import { BoutonTheme } from "@/components/BoutonTheme";
+import { BoutonCompte } from "@/components/compte/BoutonCompte";
 import { BoutonRecherche } from "@/components/PaletteRecherche";
 import { Rosace } from "@/components/Rosace";
 import { MarqueAccueil } from "@/lib/client/acces";
+import { googleConfigure } from "@/lib/compte/jeton";
 
 export default function Accueil() {
   return (
@@ -12,6 +14,7 @@ export default function Accueil() {
       <div className="absolute right-5 top-5 z-10 flex gap-2 sm:right-8">
         <BoutonRecherche />
         <BoutonTheme />
+        <BoutonCompte />
       </div>
 
       <Rosace className="pointer-events-none absolute -right-[38vw] -top-[22vw] w-[120vw] max-w-none opacity-45 md:-right-[14rem] md:top-1/2 md:w-[52rem] md:-translate-y-1/2 md:opacity-90" />
@@ -30,7 +33,11 @@ export default function Accueil() {
             <Link href="/utilisateur" className="verre group rounded-3xl p-6 transition-colors hover:border-or">
               <BookOpen className="size-7 text-or" strokeWidth={1.5} aria-hidden="true" />
               <span className="mt-4 block font-display text-xl font-bold">Mode utilisateur</span>
-              <span className="mt-1 block text-encre-douce">Écrire, convertir ses fichiers, ou lire la bibliothèque. Aucun mot de passe.</span>
+              <span className="mt-1 block text-encre-douce">
+                {googleConfigure()
+                  ? "Écrire, apprendre, convertir ses fichiers, lire la bibliothèque. Avec ton compte Google : ton travail te suit partout."
+                  : "Écrire, apprendre, convertir ses fichiers, ou lire la bibliothèque. Aucun mot de passe."}
+              </span>
             </Link>
             <Link href="/createur/connexion" className="verre group rounded-3xl p-6 transition-colors hover:border-or">
               <PenLine className="size-7 text-or" strokeWidth={1.5} aria-hidden="true" />
