@@ -319,6 +319,7 @@ const LANGUES: DefModule = {
         { id: "ecouter", valeurs: { nom: "Écouter" } },
         { id: "lire", valeurs: { nom: "Lire" } },
         { id: "dictionnaire", valeurs: { nom: "Dictionnaire" } },
+        { id: "regles", valeurs: { nom: "Règles" } },
       ],
     },
   ],
