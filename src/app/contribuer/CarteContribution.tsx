@@ -2,8 +2,8 @@
 
 import { useActionState } from "react";
 import Link from "next/link";
-import { ArrowRight, Flag, Quote } from "lucide-react";
-import type { ContributionPublique } from "@/lib/contributions/modele";
+import { ArrowRight, Flag, MessageCircleReply, Quote } from "lucide-react";
+import { NOM_NATURE, type ContributionPublique } from "@/lib/contributions/modele";
 import { ETAT_INITIAL } from "@/lib/form-state";
 import { signaler } from "./actions";
 
@@ -29,8 +29,19 @@ export function CarteContribution({ contribution }: { contribution: Contribution
         </time>
       </header>
 
+      {contribution.type === "site" && contribution.nature && <p className="contrib-nature">{NOM_NATURE[contribution.nature]}</p>}
       <h3 className="contrib-carte-titre">{contribution.titre}</h3>
       <p className="contrib-carte-texte">{contribution.texte}</p>
+
+      {contribution.reponses.map((r) => (
+        <div key={r.id} className="contrib-reponse">
+          <p className="contrib-reponse-qui">
+            <MessageCircleReply className="size-4 shrink-0" aria-hidden="true" />
+            Réponse de HaqqReason
+          </p>
+          <p className="whitespace-pre-wrap">{r.texte}</p>
+        </div>
+      ))}
 
       {article ? (
         <Link href={`/explorer/article/${article.id}`} className="contrib-renvoi">
