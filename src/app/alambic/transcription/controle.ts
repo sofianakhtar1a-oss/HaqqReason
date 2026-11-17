@@ -63,6 +63,7 @@ type JoueurYt = {
   seekTo(t: number, autoriser: boolean): void;
   setPlaybackRate(v: number): void;
   destroy(): void;
+  unloadModule?(nom: string): void;
 };
 
 type ApiYt = {
@@ -101,6 +102,16 @@ function apiYoutube(): Promise<ApiYt> {
   return chargement;
 }
 
+/** Nos propres sous-titres s'affichent sous la vidéo : ceux de YouTube (souvent traduits automatiquement) sont retirés. */
+function sansSousTitres(j: JoueurYt) {
+  try {
+    j.unloadModule?.("captions");
+    j.unloadModule?.("cc");
+  } catch {
+    // Lecteur pas encore prêt.
+  }
+}
+
 export async function controleYoutube(hote: HTMLElement, id: string): Promise<Controle & { detruire(): void }> {
   const api = await apiYoutube();
   const abonnes = new Set<() => void>();
@@ -110,14 +121,18 @@ export async function controleYoutube(hote: HTMLElement, id: string): Promise<Co
     const j = new api.Player(hote, {
       videoId: id,
       host: "https://www.youtube-nocookie.com",
-      playerVars: { playsinline: 1, rel: 0, modestbranding: 1, iv_load_policy: 3, controls: 0, disablekb: 1, cc_load_policy: 0, fs: 0 },
+      playerVars: { playsinline: 1, rel: 0, modestbranding: 1, iv_load_policy: 3, controls: 0, disablekb: 1, cc_load_policy: 0, cc_lang_pref: "en", fs: 0 },
       events: {
         onReady: () => {
           pret = true;
+          sansSousTitres(j);
           resolve(j);
           prevenir();
         },
-        onStateChange: prevenir,
+        onStateChange: () => {
+          sansSousTitres(j);
+          prevenir();
+        },
       },
     });
   });
