@@ -97,7 +97,7 @@ const ACCUEIL: DefModule = {
             titre: "Le Calame",
             soustitre: "Atelier d'écriture",
             marque: "Écrire",
-            texte: "Un traitement de texte complet, dans ton navigateur : pages A4 réelles, styles, tableaux, images, PDF, frises chronologiques et cartes mentales. Tes documents restent sur ton appareil, et s'exportent en PDF, Word ou Markdown.",
+            texte: "Un traitement de texte complet, dans ton navigateur : pages A4 réelles, styles, tableaux, images, PDF, frises chronologiques et cartes mentales. Tes documents s'enregistrent tout seuls, te suivent sur tous tes appareils avec ton compte, et s'exportent en PDF, Word ou Markdown.",
           },
         },
         {
@@ -115,7 +115,7 @@ const ACCUEIL: DefModule = {
             titre: "Le Truchement",
             soustitre: "Apprendre les langues",
             marque: "Apprendre",
-            texte: "L'anglais pour commencer : 600 mots en douze thèmes révisés au bon moment, des vidéos et des PDF où chaque mot se traduit d'un toucher, et ton propre dictionnaire. Ta progression reste sur ton appareil.",
+            texte: "L'anglais pour commencer : 600 mots en douze thèmes révisés au bon moment, des vidéos et des PDF où chaque mot se traduit d'un toucher, et ton propre dictionnaire. Ta progression te suit sur tous tes appareils avec ton compte.",
           },
         },
         {
@@ -152,7 +152,7 @@ const CALAME: DefModule = {
       titre: "Présentation",
       champs: [
         { cle: "meta.titre", libelle: "Titre de l'onglet du navigateur", defaut: "Le Calame — atelier d'écriture" },
-        { cle: "meta.description", libelle: "Description pour Google", defaut: "Un traitement de texte complet dans le navigateur : pages A4 réelles, styles, tableaux, images, frises et cartes mentales. Les documents restent sur ton appareil.", long: true },
+        { cle: "meta.description", libelle: "Description pour Google", defaut: "Un traitement de texte complet dans le navigateur : pages A4 réelles, styles, tableaux, images, frises et cartes mentales. Les documents te suivent sur tous tes appareils.", long: true },
         { cle: "premier", libelle: "Titre du tout premier document", defaut: "Mon premier document" },
       ],
     },
@@ -208,7 +208,7 @@ const ALAMBIC: DefModule = {
         { cle: "local.titre", libelle: "Carte « tout se fait ici » : titre", defaut: "Tout se fait ici" },
         { cle: "local.texte", libelle: "Carte « tout se fait ici » : texte", defaut: "Tes fichiers sont lus et transformés par ton propre appareil. Rien n'est envoyé, rien n'est gardé : ferme la page, il ne reste rien.", long: true },
         { cle: "nuage.titre", libelle: "Carte de Transcrire : titre", defaut: "Une exception, annoncée" },
-        { cle: "nuage.texte", libelle: "Carte de Transcrire : texte", defaut: "Pour transcrire, le son est allégé ici puis envoyé à Groq, qui l'écoute avec Whisper. Les textes et leurs traductions restent sur ton appareil, dans ta bibliothèque.", long: true },
+        { cle: "nuage.texte", libelle: "Carte de Transcrire : texte", defaut: "Pour transcrire, le son est allégé ici puis envoyé à Groq, qui l'écoute avec Whisper. Les textes et leurs traductions sont rangés dans ta bibliothèque, qui te suit avec ton compte.", long: true },
       ],
     },
   ],
@@ -248,7 +248,7 @@ const LANGUES: DefModule = {
         {
           cle: "meta.description",
           libelle: "Description pour Google",
-          defaut: "Apprendre l'anglais depuis le français : 600 mots en douze thèmes révisés au bon moment, des vidéos et des PDF où chaque mot se traduit d'un toucher, et ton dictionnaire personnel. Ta progression reste sur ton appareil.",
+          defaut: "Apprendre l'anglais depuis le français : 600 mots en douze thèmes révisés au bon moment, des vidéos et des PDF où chaque mot se traduit d'un toucher, et ton dictionnaire personnel. Ta progression te suit sur tous tes appareils.",
           long: true,
         },
         { cle: "tete.titre", libelle: "Nom dans la barre du haut", defaut: "Le Truchement" },
