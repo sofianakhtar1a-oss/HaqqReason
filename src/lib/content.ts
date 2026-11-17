@@ -1,4 +1,5 @@
 import "server-only";
+import type { Espace } from "./espaces";
 import { dbPublic } from "./supabase";
 
 /*
@@ -8,7 +9,7 @@ import { dbPublic } from "./supabase";
 
 export type Accent = "or" | "emeraude" | "amethyste";
 
-export type Bloc = { id: string; slug: string; titre: string; description: string; accent: Accent };
+export type Bloc = { id: string; slug: string; titre: string; description: string; accent: Accent; espace: Espace };
 
 export type Categorie = {
   id: string;
@@ -35,14 +36,19 @@ export const ARTICLES_PAR_PAGE = 30;
 
 const CHAMPS_CATEGORIE = "id, bloc_id, parent_id, titre, description, icone";
 
-export async function listerBlocs(): Promise<Resultat<Bloc[]>> {
-  const { data, error } = await dbPublic().from("blocs").select("id, slug, titre, description, accent").order("ordre");
+const CHAMPS_BLOC = "id, slug, titre, description, accent, espace";
+
+/** Blocs publiés ; sans espace, ceux des deux modules. */
+export async function listerBlocs(espace?: Espace): Promise<Resultat<Bloc[]>> {
+  let requete = dbPublic().from("blocs").select(CHAMPS_BLOC);
+  if (espace) requete = requete.eq("espace", espace);
+  const { data, error } = await requete.order("ordre");
   if (error) return { ok: false };
   return { ok: true, donnees: data as Bloc[] };
 }
 
 export async function lireBloc(critere: { slug: string } | { id: string }): Promise<Resultat<Bloc | null>> {
-  let requete = dbPublic().from("blocs").select("id, slug, titre, description, accent");
+  let requete = dbPublic().from("blocs").select(CHAMPS_BLOC);
   requete = "slug" in critere ? requete.eq("slug", critere.slug) : requete.eq("id", critere.id);
   const { data, error } = await requete.maybeSingle();
   if (error) return { ok: false };
