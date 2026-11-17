@@ -62,20 +62,22 @@ export function transcrireMorceau(blob: Blob, nom: string, langue: string | null
   return appeler<ReponseMorceau>("/api/alambic/transcrire", { method: "POST", body: f }, signal);
 }
 
-export async function traduireLot(langue: string, phrases: string[], contexte: string, signal?: AbortSignal): Promise<string[]> {
+/** Traduit des phrases vers le français (par défaut) ou vers l'anglais (« vers » = "en"). */
+export async function traduireLot(langue: string, phrases: string[], contexte: string, signal?: AbortSignal, vers: "fr" | "en" = "fr"): Promise<string[]> {
   const r = await appeler<{ traductions: string[] }>(
     "/api/alambic/traduire",
-    { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ langue, phrases, contexte }) },
+    { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ langue, phrases, contexte, vers }) },
     signal,
     3,
   );
   return r.traductions;
 }
 
-export function analyserPhrase(langue: string, mots: string[], contexte: string, signal?: AbortSignal) {
+/** Analyse mot à mot : sens en français (par défaut) ou en anglais (« vers » = "en"). */
+export function analyserPhrase(langue: string, mots: string[], contexte: string, signal?: AbortSignal, vers: "fr" | "en" = "fr") {
   return appeler<Analyse>(
     "/api/alambic/analyser",
-    { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ langue, mots, contexte }) },
+    { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ langue, mots, contexte, vers }) },
     signal,
     3,
   );
