@@ -34,10 +34,13 @@ export function melanger<T>(liste: T[], alea: Alea = Math.random): T[] {
 export function leurres(el: Element, reserve: Element[], champ: "en" | "fr", alea: Alea, nombre = 3): string[] {
   const bonne = el[champ].toLowerCase();
   const vus = new Set([bonne]);
+  // Les leurres crédibles viennent du même thème (« famille: »), puis de la même nature.
+  const theme = el.id.includes(":") ? el.id.slice(0, el.id.indexOf(":") + 1) : "";
+  const score = (x: Element) => (theme && x.id.startsWith(theme) ? 2 : 0) + (x.nature === el.nature ? 1 : 0);
   const candidats = melanger(
     reserve.filter((x) => x.id !== el.id),
     alea,
-  ).sort((a, b) => Number(b.nature === el.nature) - Number(a.nature === el.nature));
+  ).sort((a, b) => score(b) - score(a));
   const sortie: string[] = [];
   for (const c of candidats) {
     const v = c[champ];
