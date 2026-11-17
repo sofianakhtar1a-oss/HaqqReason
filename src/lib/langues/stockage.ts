@@ -1,11 +1,18 @@
 "use client";
 
 /*
- * Le Truchement garde tout sur l'appareil, dans IndexedDB :
+ * Le Truchement écrit d'abord sur l'appareil, dans IndexedDB :
  * les cartes de révision, le dictionnaire personnel, les vidéos et sons transcrits,
  * les PDF lus (leur texte et la page où l'on s'est arrêté) et le journal des jours d'étude.
+ *
+ * Avec un compte, chaque écriture est notée au journal de synchronisation : tout cela suit
+ * alors la personne d'un appareil à l'autre. Seuls les fichiers son et vidéo d'origine
+ * (magasin « blobs ») restent sur l'appareil où ils ont été ajoutés : ils sont trop lourds.
  */
 import type { Analyse, Transcription } from "@/lib/alambic/transcription/types";
+import { tiroir } from "@/lib/client/compte";
+import { noter } from "@/lib/client/synchro/journal";
+import type { NomMagasin } from "@/lib/compte/limites";
 import type { Carte, MotPerso } from "./types";
 
 const BASE = "haqqreason-langues";
@@ -37,7 +44,7 @@ let ouverture: Promise<IDBDatabase> | null = null;
 
 function base(): Promise<IDBDatabase> {
   ouverture ??= new Promise((resolve, reject) => {
-    const r = indexedDB.open(BASE, VERSION);
+    const r = indexedDB.open(tiroir(BASE), VERSION);
     r.onupgradeneeded = () => {
       const db = r.result;
       if (!db.objectStoreNames.contains("cartes")) db.createObjectStore("cartes", { keyPath: "id" });
@@ -71,14 +78,48 @@ async function operation<T>(magasin: Magasin, mode: IDBTransactionMode, faire: (
 
 export const tout = <T>(magasin: Magasin) => operation<T[]>(magasin, "readonly", (s) => s.getAll());
 export const lireUn = <T>(magasin: Magasin, cle: string) => operation<T | undefined>(magasin, "readonly", (s) => s.get(cle));
-export const ecrire = (magasin: Magasin, valeur: unknown) => operation<void>(magasin, "readwrite", (s) => s.put(valeur));
-export const effacer = (magasin: Magasin, cle: string) => operation<void>(magasin, "readwrite", (s) => s.delete(cle));
+
+/* Les mêmes gestes sans rien noter au journal : réservés à la synchronisation. */
+export const ecrireBrut = (magasin: Magasin, valeur: unknown) => operation<void>(magasin, "readwrite", (s) => s.put(valeur));
+export const effacerBrut = (magasin: Magasin, cle: string) => operation<void>(magasin, "readwrite", (s) => s.delete(cle));
+
+/** Ce qui part sur le compte quand on touche à un magasin (les fichiers « blobs » n'y vont pas). */
+const SUIVIS: Partial<Record<Magasin, NomMagasin>> = {
+  cartes: "langues-cartes",
+  dictionnaire: "langues-dictionnaire",
+  journal: "langues-journal",
+  medias: "langues-medias",
+  documents: "langues-documents",
+};
+
+/** La clé de reprise d'un média ou d'un PDF : où l'on s'est arrêté, rangé à part car cela change sans cesse. */
+export const cleReprise = (magasin: "medias" | "documents", id: string) => `${magasin === "medias" ? "media" : "document"}:${id}`;
+
+async function noterChangement(magasin: Magasin, cle: unknown) {
+  const suivi = SUIVIS[magasin];
+  if (!suivi || typeof cle !== "string" || !cle) return;
+  await noter(suivi, cle);
+  if (magasin === "medias" || magasin === "documents") await noter("reprise", cleReprise(magasin, cle));
+}
+
+const cleDe = (magasin: Magasin, valeur: unknown) => (valeur as Record<string, unknown> | null)?.[magasin === "journal" ? "jour" : "id"];
+
+export async function ecrire(magasin: Magasin, valeur: unknown) {
+  await ecrireBrut(magasin, valeur);
+  await noterChangement(magasin, cleDe(magasin, valeur));
+}
+
+export async function effacer(magasin: Magasin, cle: string) {
+  await effacerBrut(magasin, cle);
+  await noterChangement(magasin, cle);
+}
 
 export async function ecrireBeaucoup(magasin: Magasin, valeurs: unknown[]) {
   if (!valeurs.length) return;
   await operation<void>(magasin, "readwrite", (s) => {
     for (const v of valeurs) s.put(v);
   });
+  for (const v of valeurs) await noterChangement(magasin, cleDe(magasin, v));
 }
 
 export const lireBlob = (id: string) => operation<Blob | undefined>("blobs", "readonly", (s) => s.get(id)).catch(() => undefined);
