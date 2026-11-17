@@ -26,6 +26,10 @@ export type DocumentLangue = {
   /** Traduction de chaque phrase, par « page:phrase ». */
   traductions: Record<string, string>;
   analyses: Record<string, Analyse>;
+  /** Langue du PDF : l'anglais (par défaut) ou le français. */
+  langue?: "en" | "fr";
+  /** Texte affiché : celui du PDF, ou sa traduction (dont chaque mot se traduit à son tour). */
+  affiche?: "original" | "traduction";
 };
 export type Jour = { jour: string; revues: number; justes: number; nouveaux: number };
 
