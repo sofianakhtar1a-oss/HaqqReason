@@ -5,13 +5,14 @@ import { diffWords } from "diff";
 import { BoutonConfirmation } from "@/components/BoutonConfirmation";
 import { FilAriane } from "@/components/FilAriane";
 import { RenduDocument } from "@/components/RenduDocument";
-import { lireArticleAdmin } from "@/lib/contenu-admin";
+import { lireArticleAdmin, lireBlocAdmin } from "@/lib/contenu-admin";
 import { documentVersTexteAere } from "@/lib/document";
 import { exigerCreateur } from "@/lib/session";
 import { dbAdmin } from "@/lib/supabase";
 import { estUuid } from "@/lib/validation";
 import { EnTeteCreateur } from "../../../_composants/EnTeteCreateur";
 import { restaurerVersion } from "../../../contenu-actions";
+import { racineEspace } from "@/lib/espaces";
 
 export const metadata: Metadata = { title: "Historique des versions", robots: { index: false } };
 
@@ -68,6 +69,7 @@ export default async function Versions({ params, searchParams }: PageProps<"/cre
     ? await dbAdmin().from("versions_articles").select("id, titre, resume, contenu, motif, created_at").eq("id", choisie).eq("article_id", id).maybeSingle()
     : { data: null };
 
+  const bloc = await lireBlocAdmin({ id: article.bloc_id });
   const date = (iso: string) => new Date(iso).toLocaleString("fr-FR", { dateStyle: "medium", timeStyle: "short", timeZone: "Europe/Paris" });
 
   return (
@@ -76,7 +78,7 @@ export default async function Versions({ params, searchParams }: PageProps<"/cre
       <main className="mx-auto w-full max-w-7xl flex-1 px-5 pb-16 pt-4 sm:px-8">
         <FilAriane
           etapes={[
-            { href: "/createur/bibliotheque", libelle: "Les preuves" },
+            racineEspace(bloc?.espace, "createur"),
             { href: `/createur/article/${id}`, libelle: article.titre },
             { href: `/createur/article/${id}/versions`, libelle: "Historique" },
           ]}
