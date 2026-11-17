@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, Inbox, MessageSquarePlus, ShieldCheck } from "lucide-react";
+import { ArrowLeft, Inbox, Mail, MessageSquarePlus, ShieldCheck } from "lucide-react";
 import { EnTete } from "@/components/EnTete";
 import { etatContributions, listerPourCreateur } from "@/lib/contributions/donnees";
 import { lireReglages } from "@/lib/reglages-donnees";
 import { exigerCreateur } from "@/lib/session";
 import { Gestion } from "./Gestion";
 
-export const metadata: Metadata = { title: "Contributions des lecteurs", robots: { index: false } };
+export const metadata: Metadata = { title: "Boîte de réception des contributions", robots: { index: false } };
 
 export const dynamic = "force-dynamic";
 
@@ -23,16 +23,23 @@ export default async function PageContributions() {
           <ArrowLeft className="size-4" aria-hidden="true" />
           Espace créateur
         </Link>
-        <h1 className="mt-6 text-4xl font-extrabold md:text-5xl">Contributions des lecteurs</h1>
+        <h1 className="mt-6 text-4xl font-extrabold md:text-5xl">Boîte de réception</h1>
         <p className="mt-4 max-w-2xl text-lg text-encre-douce">
-          Les idées de sujet et les arguments proposés depuis la page{" "}
+          Tout ce qui arrive de la page{" "}
           <Link href="/contribuer" className="lien-interne">
             Contribuer
           </Link>
-          . Tout passe d&apos;abord par un filtre de politesse : une grossièreté n&apos;est jamais publiée.
+          {" "}: idées de sujet, arguments, idées de fonctionnalités et bugs. Réponds à chacun : l&apos;auteur lit ta réponse dans « Mes messages » et peut
+          te répondre. « Répondre et publier » rend la proposition publique, avec ta réponse en dessous.
         </p>
 
-        <div className="mt-8 grid gap-3 sm:grid-cols-3">
+        <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <p className="reglage-resume">
+            <Mail className="size-5 text-accent" aria-hidden="true" />
+            <span>
+              <strong>{etat.non_lues}</strong>{" "}non lue{etat.non_lues > 1 ? "s" : ""}
+            </span>
+          </p>
           <p className="reglage-resume">
             <Inbox className="size-5 text-accent" aria-hidden="true" />
             <span>
