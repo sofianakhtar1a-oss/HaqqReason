@@ -1,51 +1,48 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BarChart3, FileText, Lightbulb, ShieldAlert, ShieldCheck, SlidersHorizontal, Smartphone, Trash2, TriangleAlert, Wrench } from "lucide-react";
+import { ArrowRight, BarChart3, BookOpen, Feather, FlaskConical, Languages, LayoutTemplate, Lightbulb, ShieldAlert, ShieldCheck, SlidersHorizontal, Smartphone, Wrench } from "lucide-react";
 import { listerAppareils } from "@/lib/appareils";
 import { etatContributions } from "@/lib/contributions/donnees";
-import { articlesParBloc, brouillonsEnAttente, liensCasses } from "@/lib/tableau-de-bord";
-import { confirmerAppareil, signalerAppareil } from "./actions";
-import { BadgeStatut } from "@/components/BadgeStatut";
-import { articlesRecents, listerBlocsAdmin } from "@/lib/contenu-admin";
+import { resumeModules } from "@/lib/modules/donnees";
 import { exigerCreateur } from "@/lib/session";
-import { libelleDuree } from "@/lib/reglages";
-import { lireReglages } from "@/lib/reglages-donnees";
 import { dbAdmin } from "@/lib/supabase";
+import { confirmerAppareil, signalerAppareil } from "./actions";
 import { EnTeteCreateur } from "./_composants/EnTeteCreateur";
 
 export const metadata: Metadata = { title: "Espace créateur", robots: { index: false } };
 
-async function compter(table: "categories" | "articles", statut?: "publie" | "brouillon"): Promise<number> {
-  let requete = dbAdmin().from(table).select("id", { count: "exact", head: true }).is("supprime_le", null);
-  if (statut) requete = requete.eq("statut", statut);
-  const { count } = await requete;
-  return count ?? 0;
+function dateCourte(iso: string | null): string {
+  if (!iso || iso === "origine") return "";
+  return new Date(iso).toLocaleDateString("fr-FR", { day: "numeric", month: "long", timeZone: "Europe/Paris" });
 }
 
-function dateLongue(iso: string): string {
-  return new Date(iso).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Paris" });
-}
-
+/*
+ * L'entrée du mode créateur : on choisit d'abord le module à modifier.
+ * La bibliothèque garde son éditeur complet ; les trois autres espaces (et la page qui les présente)
+ * ont l'éditeur de modules : textes, listes, vocabulaire, brouillon puis publication.
+ */
 export default async function EspaceCreateur() {
   const compte = await exigerCreateur();
-  const [appareils, parBloc, attente, casses, reglages, contributions] = await Promise.all([listerAppareils(), articlesParBloc(), brouillonsEnAttente(6), liensCasses(), lireReglages(), etatContributions()]);
-  const inconnus = appareils.filter((a) => !a.confirme);
-  const [categories, articlesPublies, brouillons, blocs, recents, racines] = await Promise.all([
-    compter("categories"),
-    compter("articles", "publie"),
-    compter("articles", "brouillon"),
-    listerBlocsAdmin(),
-    articlesRecents(8),
-    dbAdmin().from("categories").select("bloc_id").is("parent_id", null).is("supprime_le", null),
+  const [appareils, etats, contributions, articles] = await Promise.all([
+    listerAppareils(),
+    resumeModules(["accueil", "calame", "alambic", "langues"]),
+    etatContributions(),
+    dbAdmin().from("articles").select("id", { count: "exact", head: true }).is("supprime_le", null),
   ]);
-  const racinesParBloc = new Map<string, number>();
-  for (const r of racines.data ?? []) racinesParBloc.set(r.bloc_id, (racinesParBloc.get(r.bloc_id) ?? 0) + 1);
+  const inconnus = appareils.filter((a) => !a.confirme);
 
-  const chiffres = [
-    { valeur: 3, libelle: "blocs" },
-    { valeur: categories, libelle: categories > 1 ? "catégories" : "catégorie" },
-    { valeur: articlesPublies, libelle: articlesPublies > 1 ? "articles publiés" : "article publié" },
-    { valeur: brouillons, libelle: brouillons > 1 ? "brouillons" : "brouillon" },
+  const statut = (id: string) => {
+    const e = etats[id];
+    if (!e) return "";
+    if (e.enAttente) return "Modifications à publier";
+    return e.publieLe ? `Publié le ${dateCourte(e.publieLe)}` : "Textes d'origine";
+  };
+
+  const modules = [
+    { href: "/createur/bibliotheque", titre: "Les preuves de la véracité de l'islam", sur: "La bibliothèque", texte: "Blocs, catégories et articles : écrire, réorganiser, publier.", Icone: BookOpen, accent: "emeraude", etat: `${articles.count ?? 0} article${(articles.count ?? 0) > 1 ? "s" : ""}`, attente: false },
+    { href: "/createur/module/calame", titre: "Le Calame", sur: "Atelier d'écriture", texte: "Les textes de l'atelier : présentation, colonne de gauche, messages.", Icone: Feather, accent: "or", etat: statut("calame"), attente: etats.calame?.enAttente },
+    { href: "/createur/module/alambic", titre: "L'Alambic", sur: "Studio de fichiers", texte: "Les outils (noms, aide, ordre, présence) et les textes de présentation.", Icone: FlaskConical, accent: "amethyste", etat: statut("alambic"), attente: etats.alambic?.enAttente },
+    { href: "/createur/module/langues", titre: "Le Truchement", sur: "Apprendre les langues", texte: "Les thèmes et les mots, les onglets, l'objectif du jour et tous les textes.", Icone: Languages, accent: "azur", etat: statut("langues"), attente: etats.langues?.enAttente },
   ];
 
   return (
@@ -53,9 +50,7 @@ export default async function EspaceCreateur() {
       <EnTeteCreateur />
       <main className="mx-auto w-full max-w-6xl flex-1 px-5 pb-16 pt-6 sm:px-8">
         <h1 className="text-4xl font-extrabold md:text-5xl">Espace créateur</h1>
-        <p className="mt-3 max-w-[58ch] text-lg text-encre-douce">
-          Tu es connecté en tant que créateur. Toi seul peux modifier HaqqReason.
-        </p>
+        <p className="mt-3 max-w-[58ch] text-lg text-encre-douce">Quel module veux-tu modifier ?</p>
 
         {inconnus.map((a) => (
           <section key={a.empreinte} role="alert" className="alerte-appareil mt-8" aria-label="Nouvel appareil">
@@ -86,139 +81,56 @@ export default async function EspaceCreateur() {
           </section>
         ))}
 
-        <dl className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
-          {chiffres.map((chiffre) => (
-            <div key={chiffre.libelle} className="verre rounded-3xl p-5">
-              <dd className="font-display text-4xl font-extrabold text-or">{chiffre.valeur}</dd>
-              <dt className="mt-1 text-encre-douce">{chiffre.libelle}</dt>
-            </div>
-          ))}
-        </dl>
-
-        <section className="mt-14" aria-labelledby="titre-blocs">
-          <h2 id="titre-blocs" className="text-2xl font-bold">
-            Les trois blocs
-          </h2>
-          <ul className="mt-6 grid gap-x-5 gap-y-6 md:grid-cols-3">
-            {blocs.map((bloc) => {
-              const n = racinesParBloc.get(bloc.id) ?? 0;
-              return (
-                <li key={bloc.id} data-accent={bloc.accent}>
-                  <Link href={`/createur/bloc/${bloc.slug}`} className="dossier">
-                    <h3 className="text-xl font-bold">{bloc.titre}</h3>
-                    <p className="mt-auto pt-5 text-sm font-semibold text-accent">
-                      {n === 0 ? "Aucune catégorie" : n === 1 ? "1 catégorie" : `${n} catégories`}
-                      {(() => {
-                        const c = parBloc.get(bloc.id);
-                        const total = (c?.publies ?? 0) + (c?.brouillons ?? 0);
-                        return total > 0 ? `, ${total} article${total > 1 ? "s" : ""} (${c?.publies ?? 0} publié${(c?.publies ?? 0) > 1 ? "s" : ""})` : "";
-                      })()}
-                    </p>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </section>
-
-        <div className="mt-14 grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_22rem]">
-          <section className="verre panneau" aria-labelledby="titre-recents">
-            <h2 id="titre-recents" className="text-2xl font-bold">
-              Derniers articles modifiés
-            </h2>
-            {recents.length > 0 ? (
-              <ol className="mt-4 space-y-1">
-                {recents.map((a) => (
-                  <li key={a.id} className="rangee !px-2">
-                    <FileText className="size-5 shrink-0 text-or" aria-hidden="true" />
-                    <Link href={`/createur/article/${a.id}`} className="min-w-0 flex-1 font-semibold hover:underline hover:underline-offset-4">
-                      <span className="block truncate">{a.titre}</span>
-                    </Link>
-                    <BadgeStatut statut={a.statut} />
-                  </li>
-                ))}
-              </ol>
-            ) : (
-              <p className="mt-3 text-encre-douce">
-                Aucun article pour l&apos;instant. Ouvre un bloc, crée une catégorie, puis ton premier article.
-              </p>
-            )}
-          </section>
-
-          <div className="space-y-6">
-            {attente.length > 0 && (
-              <section className="verre panneau" aria-labelledby="titre-brouillons">
-                <h2 id="titre-brouillons" className="text-xl font-bold">
-                  Brouillons en attente
-                </h2>
-                <ul className="mt-3 space-y-1.5">
-                  {attente.map((a) => (
-                    <li key={a.id}>
-                      <Link href={`/createur/article/${a.id}`} className="block truncate hover:underline hover:underline-offset-4">
-                        {a.titre}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            )}
-            <nav className="grid gap-3" aria-label="Outils du créateur">
-              <Link href="/createur/qualite" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
-                <TriangleAlert className="size-6 text-or" aria-hidden="true" />
-                <span>
-                  Contrôle qualité
-                  {casses.length > 0 && <span className="block text-sm font-normal text-encre-douce">{casses.length} lien{casses.length > 1 ? "s" : ""} cassé{casses.length > 1 ? "s" : ""}</span>}
-                </span>
-              </Link>
-              <Link href="/createur/statistiques" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
-                <BarChart3 className="size-6 text-or" aria-hidden="true" />
-                Statistiques de lecture
-              </Link>
-              <Link href="/createur/outils" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
-                <Wrench className="size-6 text-or" aria-hidden="true" />
-                Importer, sauvegarder, synonymes
-              </Link>
-              <Link href="/createur/contributions" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
-                <Lightbulb className="size-6 text-or" aria-hidden="true" />
-                <span>
-                  Contributions des lecteurs
-                  {contributions.en_attente > 0 && (
-                    <span className="block text-sm font-normal text-encre-douce">
-                      {contributions.en_attente} en attente de relecture
-                    </span>
-                  )}
-                </span>
-              </Link>
-              <Link href="/createur/parametres" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
-                <SlidersHorizontal className="size-6 text-or" aria-hidden="true" />
-                Paramètres
-              </Link>
-            </nav>
-            <section className="verre panneau" aria-labelledby="titre-securite">
-              {compte.totp_actif ? (
-                <ShieldCheck className="size-8 text-emeraude" strokeWidth={1.5} aria-hidden="true" />
-              ) : (
-                <ShieldAlert className="size-8 text-or" strokeWidth={1.5} aria-hidden="true" />
-              )}
-              <h2 id="titre-securite" className="mt-4 text-2xl font-bold">
-                Sécurité
-              </h2>
-              <ul className="mt-3 space-y-1.5 text-encre-douce">
-                <li>Mot de passe défini le {dateLongue(compte.password_changed_at)}.</li>
-                <li>Déconnexion automatique après {libelleDuree(reglages.inactivite_minutes)} sans activité.</li>
-                <li>{reglages.lier_appareil ? "Session liée à l'appareil : un cookie recopié ailleurs ne donne aucun accès." : "Session non liée à l'appareil (à réactiver dans les Paramètres)."}</li>
-                <li>{compte.totp_actif ? "Double authentification active." : "Double authentification désactivée : active-la."}</li>
-              </ul>
-              <Link href="/createur/securite" className="bouton bouton-discret mt-6">
-                Gérer la sécurité
-              </Link>
-            </section>
-            <Link href="/createur/corbeille" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
-              <Trash2 className="size-6 text-encre-douce" aria-hidden="true" />
-              Ouvrir la corbeille
+        <nav aria-label="Les modules" className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {modules.map(({ href, titre, sur, texte, Icone, accent, etat, attente }) => (
+            <Link key={href} href={href} className="carte-choix" data-accent={accent}>
+              {attente && <span className="carte-choix-marque">À publier</span>}
+              <Icone className="size-9 text-accent" strokeWidth={1.4} aria-hidden="true" />
+              <span className="carte-choix-sur">{sur}</span>
+              <span className="carte-choix-titre">{titre}</span>
+              <span className="carte-choix-texte">{texte}</span>
+              <span className="carte-choix-pied">
+                {etat || "Modifier"}
+                <ArrowRight className="size-4" aria-hidden="true" />
+              </span>
             </Link>
-          </div>
-        </div>
+          ))}
+        </nav>
+
+        <Link href="/createur/module/accueil" className="verre mt-5 flex items-center gap-4 rounded-3xl p-5 hover:border-or">
+          <LayoutTemplate className="size-6 shrink-0 text-or" aria-hidden="true" />
+          <span className="min-w-0 flex-1">
+            <span className="block font-semibold">La page « Par où veux-tu commencer ? »</span>
+            <span className="block text-sm text-encre-douce">Son titre, son introduction, et la carte de chaque espace (texte, ordre, présence).</span>
+          </span>
+          <span className="text-sm font-semibold text-encre-douce">{statut("accueil")}</span>
+        </Link>
+
+        <nav aria-label="Réglages du site" className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <Link href="/createur/parametres" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
+            <SlidersHorizontal className="size-6 text-or" aria-hidden="true" />
+            Paramètres
+          </Link>
+          <Link href="/createur/securite" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
+            {compte.totp_actif ? <ShieldCheck className="size-6 text-emeraude" aria-hidden="true" /> : <ShieldAlert className="size-6 text-or" aria-hidden="true" />}
+            Sécurité
+          </Link>
+          <Link href="/createur/statistiques" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
+            <BarChart3 className="size-6 text-or" aria-hidden="true" />
+            Statistiques de lecture
+          </Link>
+          <Link href="/createur/outils" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
+            <Wrench className="size-6 text-or" aria-hidden="true" />
+            Importer, sauvegarder, synonymes
+          </Link>
+          <Link href="/createur/contributions" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
+            <Lightbulb className="size-6 text-or" aria-hidden="true" />
+            <span>
+              Contributions des lecteurs
+              {contributions.en_attente > 0 && <span className="block text-sm font-normal text-encre-douce">{contributions.en_attente} en attente de relecture</span>}
+            </span>
+          </Link>
+        </nav>
       </main>
     </>
   );

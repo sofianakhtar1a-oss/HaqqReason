@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { Captions, Cloud, Layers, Scissors, ShieldCheck, Shuffle, WifiOff } from "lucide-react";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BoutonTheme } from "@/components/BoutonTheme";
 import { Logo } from "@/components/Logo";
 import { FAMILLES, FORMATS } from "@/lib/alambic/formats";
 import { CAPACITES_PAR_DEFAUT, type Capacites } from "@/lib/alambic/graphe";
 import { useAccesComplet } from "@/lib/client/acces";
+import { useResolu, useTextes } from "@/lib/modules/textes-client";
 import { Convertisseur } from "./Convertisseur";
 import { Decoupe } from "./Decoupe";
 import { Fusion } from "./Fusion";
@@ -18,22 +19,29 @@ import { Transcription } from "./transcription/Transcription";
 
 type Outil = "convertir" | "fusionner" | "decouper" | "proteger" | "transcrire";
 
-const OUTILS: { id: Outil; nom: string; aide: string; Icone: typeof Layers }[] = [
-  { id: "convertir", nom: "Convertir", aide: "D'un format à l'autre, dans les deux sens", Icone: Shuffle },
-  { id: "fusionner", nom: "Fusionner", aide: "Plusieurs fichiers, un seul PDF", Icone: Layers },
-  { id: "decouper", nom: "Découper", aide: "Des pages, ou un passage d'un son, d'une vidéo", Icone: Scissors },
-  { id: "proteger", nom: "Protéger", aide: "Un mot de passe, chiffré en AES-256", Icone: ShieldCheck },
-  { id: "transcrire", nom: "Transcrire", aide: "Un son ou une vidéo devient un livre à lire", Icone: Captions },
-];
+const ICONES_OUTILS: Record<Outil, typeof Layers> = { convertir: Shuffle, fusionner: Layers, decouper: Scissors, proteger: ShieldCheck, transcrire: Captions };
+const TOUS: Outil[] = ["convertir", "fusionner", "decouper", "proteger", "transcrire"];
 
-function outilDuLien(): Outil {
-  if (typeof window === "undefined") return "convertir";
+/** Les outils dans l'ordre et sous les noms choisis par le créateur (mode créateur › L'Alambic). */
+function useOutils() {
+  const resolu = useResolu("alambic");
+  return useMemo(() => {
+    const liste = (resolu?.listes.outils ?? TOUS.map((id) => ({ id, valeurs: {} as Record<string, string> }))).filter((o): o is { id: Outil; valeurs: Record<string, string> } => TOUS.includes(o.id as Outil));
+    return liste.map((o) => ({ id: o.id, nom: o.valeurs.nom ?? o.id, aide: o.valeurs.aide ?? "", Icone: ICONES_OUTILS[o.id] }));
+  }, [resolu]);
+}
+
+function outilDuLien(outils: { id: Outil }[]): Outil {
+  const premier = outils[0]?.id ?? "convertir";
+  if (typeof window === "undefined") return premier;
   const h = window.location.hash.slice(1);
-  return (OUTILS.find((o) => o.id === h)?.id ?? "convertir") as Outil;
+  return outils.find((o) => o.id === h)?.id ?? premier;
 }
 
 export function Alambic() {
-  const [outil, setOutil] = useState<Outil>("convertir");
+  const OUTILS = useOutils();
+  const t = useTextes("alambic");
+  const [outil, setOutil] = useState<Outil>(OUTILS[0]?.id ?? "convertir");
   const [capacites, setCapacites] = useState<Capacites>(CAPACITES_PAR_DEFAUT);
   // Fichiers collés (Ctrl+V) : remis à l'outil ouvert, qui s'y est abonné.
   const reception = useRef<((fichiers: File[]) => void) | null>(null);
@@ -43,12 +51,12 @@ export function Alambic() {
   const accesComplet = useAccesComplet();
 
   useEffect(() => {
-    const lire = () => setOutil(outilDuLien());
+    const lire = () => setOutil(outilDuLien(OUTILS));
     lire();
     window.addEventListener("hashchange", lire);
     void import("@/lib/alambic/navigateur/medias").then((m) => m.capacites()).then(setCapacites);
     return () => window.removeEventListener("hashchange", lire);
-  }, []);
+  }, [OUTILS]);
 
   useEffect(() => {
     const coller = (e: ClipboardEvent) => {
@@ -65,7 +73,7 @@ export function Alambic() {
 
   const choisir = (o: Outil) => {
     setOutil(o);
-    history.replaceState(null, "", o === "convertir" ? window.location.pathname : `#${o}`);
+    history.replaceState(null, "", o === OUTILS[0]?.id ? window.location.pathname : `#${o}`);
   };
 
   return (
@@ -73,18 +81,18 @@ export function Alambic() {
       <header className="alambic-tete sans-impression">
         <Logo />
         <span className="alambic-tete-titre" aria-hidden="true">
-          L&apos;Alambic
+          {t("tete.titre")}
         </span>
         <span className="flex-1" />
         {outil === "transcrire" ? (
           <span className="alambic-local" data-nuage="" title="Pour transcrire, le son est envoyé à Groq (Whisper). Le texte reste sur ton appareil.">
             <Cloud className="size-4" aria-hidden="true" />
-            Le son passe par Groq
+            {t("badge.nuage")}
           </span>
         ) : (
           <span className="alambic-local" title="Aucun fichier n'est envoyé : tout est calculé par ton appareil.">
             <WifiOff className="size-4" aria-hidden="true" />
-            Rien ne quitte ton appareil
+            {t("badge.local")}
           </span>
         )}
         <BoutonTheme />
@@ -96,7 +104,7 @@ export function Alambic() {
       </header>
 
       <main className="alambic-grille">
-        <h1 className="sr-only">L&apos;Alambic, studio de fichiers</h1>
+        <h1 className="sr-only">{t("meta.titre")}</h1>
 
         <nav className="alambic-outils" aria-label="Outils">
           {OUTILS.map(({ id, nom, aide, Icone }) => (
@@ -120,7 +128,7 @@ export function Alambic() {
           <div className="alambic-carte verre">
             <p className="alambic-chiffre">
               {FORMATS.length}
-              <span> formats</span>
+              <span> {t("formats")}</span>
             </p>
             <ul className="alambic-familles">
               {FAMILLES.map((f) => {
@@ -137,17 +145,13 @@ export function Alambic() {
           </div>
           {outil === "transcrire" ? (
             <div className="alambic-carte verre">
-              <p className="font-display text-lg font-bold">Une exception, annoncée</p>
-              <p className="text-sm text-encre-douce">
-                Pour transcrire, le son est allégé ici puis envoyé à Groq, qui l&apos;écoute avec Whisper. Les textes et leurs traductions restent sur ton appareil, dans ta bibliothèque.
-              </p>
+              <p className="font-display text-lg font-bold">{t("nuage.titre")}</p>
+              <p className="text-sm text-encre-douce">{t("nuage.texte")}</p>
             </div>
           ) : (
             <div className="alambic-carte verre">
-              <p className="font-display text-lg font-bold">Tout se fait ici</p>
-              <p className="text-sm text-encre-douce">
-                Tes fichiers sont lus et transformés par ton propre appareil. Rien n&apos;est envoyé, rien n&apos;est gardé : ferme la page, il ne reste rien.
-              </p>
+              <p className="font-display text-lg font-bold">{t("local.titre")}</p>
+              <p className="text-sm text-encre-douce">{t("local.texte")}</p>
             </div>
           )}
           {(!capacites.aac || !capacites.h264) && (

@@ -71,7 +71,7 @@ export default async function GererCategorie({ params, searchParams }: PageProps
   const enCorbeille = Boolean(categorie.supprime_le);
 
   const etapes = [
-    { href: "/createur", libelle: "Espace créateur" },
+    { href: "/createur/bibliotheque", libelle: "Les preuves" },
     { href: `/createur/bloc/${bloc.slug}`, libelle: bloc.titre },
     ...chemin.map((c) => ({ href: `/createur/categorie/${c.id}`, libelle: c.titre })),
   ];

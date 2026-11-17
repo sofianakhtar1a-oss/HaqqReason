@@ -1,12 +1,21 @@
 import type { Metadata } from "next";
+import { chargerModule } from "@/lib/modules/page";
+import { BandeauApercu, TextesModule } from "@/lib/modules/textes-client";
 import { Truchement } from "./Truchement";
 
-export const metadata: Metadata = {
-  title: "Le Truchement, apprendre l'anglais",
-  description:
-    "Apprendre l'anglais depuis le français : 600 mots en douze thèmes révisés au bon moment, des vidéos et des PDF où chaque mot se traduit d'un toucher, et ton dictionnaire personnel. Ta progression reste sur ton appareil.",
-};
+type Props = { searchParams: Promise<Record<string, string | string[] | undefined>> };
 
-export default function PageLangues() {
-  return <Truchement />;
+export async function generateMetadata(): Promise<Metadata> {
+  const { resolu } = await chargerModule("langues");
+  return { title: resolu.textes["meta.titre"], description: resolu.textes["meta.description"] };
+}
+
+export default async function PageLangues({ searchParams }: Props) {
+  const { resolu, apercu } = await chargerModule("langues", searchParams);
+  return (
+    <TextesModule id="langues" resolu={resolu}>
+      {apercu && <BandeauApercu id="langues" />}
+      <Truchement />
+    </TextesModule>
+  );
 }

@@ -1,0 +1,395 @@
+/* Éditeur des modules (mode créateur). */
+.em {
+  flex: 1;
+  width: 100%;
+}
+.em-barre {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  border-bottom: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 86%, transparent);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  backdrop-filter: blur(18px) saturate(140%);
+}
+.em-barre-dedans {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0.6rem clamp(1rem, 3vw, 2rem);
+}
+.em-retour {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  color: var(--encre-douce);
+}
+.em-retour:hover {
+  background: var(--surface-forte);
+  color: var(--encre);
+}
+.em-nom {
+  overflow: hidden;
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.em-statut {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  color: var(--encre-douce);
+}
+.em-statut[data-etat="erreur"] {
+  color: var(--danger);
+}
+.em-statut button {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.em-bouton {
+  min-height: 2.6rem;
+  padding: 0.45rem 1.05rem;
+}
+.em-grille {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 1.5rem clamp(1rem, 3vw, 2rem) 4rem;
+  grid-template-columns: minmax(0, 1fr);
+}
+@media (min-width: 64rem) {
+  .em-grille {
+    grid-template-columns: 14rem minmax(0, 1fr);
+  }
+}
+.em-sommaire {
+  display: none;
+}
+@media (min-width: 64rem) {
+  .em-sommaire {
+    position: sticky;
+    top: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    align-self: start;
+  }
+}
+.em-sommaire a,
+.em-sommaire button {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.7rem;
+  border-radius: 0.7rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+  text-align: left;
+  cursor: pointer;
+}
+.em-sommaire a:hover,
+.em-sommaire button:hover:not(:disabled) {
+  background: var(--surface-forte);
+  color: var(--encre);
+}
+.em-sommaire button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.em-sommaire hr {
+  margin: 0.6rem 0.7rem;
+  border-color: var(--trait);
+}
+.em-contenu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  min-width: 0;
+}
+.em-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.em-carte {
+  scroll-margin-top: 5.5rem;
+  padding: clamp(1.1rem, 3vw, 1.6rem);
+  border-radius: 1.5rem;
+}
+.em-titre {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.em-aide {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--encre-douce);
+}
+.em-vide {
+  margin-top: 0.75rem;
+  color: var(--encre-douce);
+}
+.em-champs {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.em-champs-theme {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+}
+.em-large {
+  grid-column: 1 / -1;
+}
+.em-champ {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.em-libelle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+.em-champ input,
+.em-champ textarea,
+.em-champ select,
+.em-mot input,
+.em-mot select {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.8rem;
+  border: 1.5px solid var(--trait);
+  background: var(--fond);
+  color: var(--encre);
+  font: inherit;
+}
+.em-champ textarea {
+  resize: vertical;
+  line-height: 1.5;
+}
+.em-champ input:focus,
+.em-champ textarea:focus,
+.em-champ select:focus,
+.em-mot input:focus,
+.em-mot select:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+.em-champ[data-modifie] input,
+.em-champ[data-modifie] textarea {
+  border-color: color-mix(in srgb, var(--accent) 50%, var(--trait));
+}
+.em-badge {
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.em-badge-gris {
+  background: var(--surface-forte);
+  color: var(--encre-douce);
+}
+.em-origine {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: auto;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+  cursor: pointer;
+}
+.em-origine:hover {
+  color: var(--encre);
+}
+.em-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.em-element {
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.em-element[data-masque] .em-element-nom > span:first-of-type {
+  opacity: 0.55;
+}
+.em-element-tete {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.3rem 0.4rem 0.3rem 0.2rem;
+}
+.em-element-nom {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  padding: 0.45rem 0.5rem;
+  border-radius: 0.7rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+.em-element-nom:hover {
+  background: var(--surface-forte);
+}
+.em-chevron {
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+  rotate: -90deg;
+}
+.em-element-nom[aria-expanded="true"] .em-chevron {
+  rotate: 0deg;
+}
+.em-compte {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--encre-douce);
+  white-space: nowrap;
+}
+.em-element-corps {
+  padding: 0 1rem 1rem;
+  border-top: 1px solid var(--trait);
+}
+.em-element-corps.em-champs {
+  padding-top: 1rem;
+}
+.em-recherche {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0 0.9rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--trait);
+  color: var(--encre-douce);
+}
+.em-recherche input {
+  flex: 1;
+  padding: 0.6rem 0;
+  background: transparent;
+  color: var(--encre);
+  outline: none;
+}
+.em-trouves {
+  margin-top: 0.5rem;
+  max-height: 16rem;
+  overflow-y: auto;
+}
+.em-trouves button {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.6rem;
+  text-align: left;
+  cursor: pointer;
+}
+.em-trouves button:hover {
+  background: var(--surface-forte);
+}
+.em-mots {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+.em-mot {
+  display: grid;
+  gap: 0.4rem;
+  padding: 0.6rem;
+  border-radius: 0.9rem;
+  border: 1px solid var(--trait);
+  background: var(--fond);
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.2fr) 8rem 4.5rem minmax(0, 1fr) 2.5rem;
+  scroll-margin-top: 7rem;
+}
+.em-mot[data-incomplet] {
+  border-color: color-mix(in srgb, var(--danger) 55%, transparent);
+}
+.em-mot input,
+.em-mot select {
+  padding: 0.4rem 0.55rem;
+  border-radius: 0.6rem;
+  font-size: 0.9rem;
+}
+.em-mot-en {
+  font-weight: 700;
+}
+.em-mot-ex {
+  grid-column: span 3;
+  font-style: italic;
+}
+@media (max-width: 52rem) {
+  .em-mot {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+  .em-mot-ex {
+    grid-column: 1 / -1;
+  }
+}
+.em-corbeille {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.9rem;
+}
+.em-corbeille li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.45rem 0.45rem 0.45rem 0.8rem;
+  border-radius: 0.9rem;
+  border: 1px solid var(--trait);
+}
+.em-type {
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+  background: var(--surface-forte);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.em-lien-danger {
+  margin-top: 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--danger);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.em-fond {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.45);
+}
+.em-dialogue {
+  width: min(30rem, 100%);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  border: 1px solid var(--trait);
+  background: var(--fond-haut);
+}
+

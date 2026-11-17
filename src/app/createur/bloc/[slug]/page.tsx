@@ -27,7 +27,7 @@ export default async function GererBloc({ params }: PageProps<"/createur/bloc/[s
       <main className="mx-auto w-full max-w-6xl flex-1 px-5 pb-16 pt-4 sm:px-8">
         <FilAriane
           etapes={[
-            { href: "/createur", libelle: "Espace créateur" },
+            { href: "/createur/bibliotheque", libelle: "Les preuves" },
             { href: `/createur/bloc/${bloc.slug}`, libelle: bloc.titre },
           ]}
         />

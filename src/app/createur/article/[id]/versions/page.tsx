@@ -76,7 +76,7 @@ export default async function Versions({ params, searchParams }: PageProps<"/cre
       <main className="mx-auto w-full max-w-7xl flex-1 px-5 pb-16 pt-4 sm:px-8">
         <FilAriane
           etapes={[
-            { href: "/createur", libelle: "Espace créateur" },
+            { href: "/createur/bibliotheque", libelle: "Les preuves" },
             { href: `/createur/article/${id}`, libelle: article.titre },
             { href: `/createur/article/${id}/versions`, libelle: "Historique" },
           ]}

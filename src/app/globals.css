@@ -5956,3 +5956,23 @@ a.contrib-renvoi:focus-visible {
     animation-duration: 4s;
   }
 }
+
+/* Le bandeau « aperçu » des pages publiques. */
+.bandeau-apercu {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--or);
+  color: var(--sur-or);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-align: center;
+}
+.bandeau-apercu a {
+  text-decoration: underline;
+}

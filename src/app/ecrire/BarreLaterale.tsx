@@ -5,6 +5,7 @@ import { FilePlus2, FileText, ListTree, Search, Trash2, Upload } from "lucide-re
 import type { EntreeSommaire } from "@/lib/sommaire";
 import type { DocumentAtelier } from "@/lib/atelier/modele";
 import { pagesEstimees } from "@/lib/atelier/pagination";
+import { useTextes } from "@/lib/modules/textes-client";
 
 type Props = {
   documents: DocumentAtelier[];
@@ -30,6 +31,7 @@ export function BarreLaterale({ documents, actif, plan, surOuvrir, surNouveau, s
   const [vue, setVue] = useState<"documents" | "plan">("documents");
   const [recherche, setRecherche] = useState("");
   const [aSupprimer, setASupprimer] = useState<string | null>(null);
+  const t = useTextes("calame");
 
   const filtres = documents.filter((d) => d.titre.toLowerCase().includes(recherche.trim().toLowerCase()));
 
@@ -38,12 +40,12 @@ export function BarreLaterale({ documents, actif, plan, surOuvrir, surNouveau, s
       <div className="calame-onglets" role="tablist">
         <button type="button" role="tab" aria-selected={vue === "documents"} className="calame-onglet" onClick={() => setVue("documents")}>
           <FileText className="size-4" aria-hidden="true" />
-          Documents
+          {t("onglet.documents")}
           <span className="text-sm text-encre-douce">{documents.length}</span>
         </button>
         <button type="button" role="tab" aria-selected={vue === "plan"} className="calame-onglet" onClick={() => setVue("plan")}>
           <ListTree className="size-4" aria-hidden="true" />
-          Plan
+          {t("onglet.plan")}
         </button>
       </div>
 
@@ -52,7 +54,7 @@ export function BarreLaterale({ documents, actif, plan, surOuvrir, surNouveau, s
           <div className="flex gap-2">
             <button type="button" className="bouton bouton-principal bouton-petit flex-1" onClick={surNouveau}>
               <FilePlus2 className="size-4" aria-hidden="true" />
-              Nouveau
+              {t("nouveau")}
             </button>
             <label className="bouton bouton-discret bouton-petit cursor-pointer" title="Ouvrir une sauvegarde .calame">
               <Upload className="size-4" aria-hidden="true" />
@@ -72,14 +74,14 @@ export function BarreLaterale({ documents, actif, plan, surOuvrir, surNouveau, s
 
           <label className="contrib-recherche">
             <Search className="size-4 shrink-0 text-encre-douce" aria-hidden="true" />
-            <input value={recherche} onChange={(e) => setRecherche(e.target.value)} placeholder="Chercher un document…" aria-label="Chercher un document" className="w-full bg-transparent outline-none" />
+            <input value={recherche} onChange={(e) => setRecherche(e.target.value)} placeholder={t("recherche")} aria-label="Chercher un document" className="w-full bg-transparent outline-none" />
           </label>
 
           <ul className="calame-documents">
             {filtres.map((d) => (
               <li key={d.id}>
                 <button type="button" className="calame-document" aria-current={d.id === actif} onClick={() => surOuvrir(d.id)}>
-                  <span className="calame-document-titre">{d.titre || "Sans titre"}</span>
+                  <span className="calame-document-titre">{d.titre || t("sansTitre")}</span>
                   <span className="calame-document-detail">
                     {quand(d.modifie)} · {d.mots.toLocaleString("fr-FR")} mots · {pagesEstimees(d.mots)} p.
                   </span>
@@ -102,21 +104,19 @@ export function BarreLaterale({ documents, actif, plan, surOuvrir, surNouveau, s
                 )}
               </li>
             ))}
-            {filtres.length === 0 && <li className="calame-vide">Aucun document à ce nom.</li>}
+            {filtres.length === 0 && <li className="calame-vide">{t("recherche.vide")}</li>}
           </ul>
         </div>
       ) : (
         <div className="calame-cote-corps">
           {plan.length === 0 ? (
-            <p className="calame-vide">
-              Le plan se remplit tout seul : donne des titres à tes parties (Grand titre, Titre moyen…) et elles apparaîtront ici.
-            </p>
+            <p className="calame-vide">{t("plan.vide")}</p>
           ) : (
             <ol className="calame-plan">
               {plan.map((entree) => (
                 <li key={entree.id} data-niveau={entree.niveau}>
                   <button type="button" onClick={() => surAllerAu(entree)}>
-                    {entree.texte || "Sans titre"}
+                    {entree.texte || t("sansTitre")}
                   </button>
                 </li>
               ))}

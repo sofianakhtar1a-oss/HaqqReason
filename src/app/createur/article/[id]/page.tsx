@@ -54,7 +54,7 @@ export default async function EcrireArticle({ params }: PageProps<"/createur/art
       <main className="mx-auto w-full max-w-7xl flex-1 px-5 pb-16 pt-4 sm:px-8">
         <FilAriane
           etapes={[
-            { href: "/createur", libelle: "Espace créateur" },
+            { href: "/createur/bibliotheque", libelle: "Les preuves" },
             { href: `/createur/bloc/${bloc.slug}`, libelle: bloc.titre },
             ...chemin.map((c) => ({ href: `/createur/categorie/${c.id}`, libelle: c.titre })),
             { href: `/createur/article/${article.id}`, libelle: article.titre },

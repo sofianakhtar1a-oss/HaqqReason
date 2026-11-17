@@ -15,7 +15,7 @@ export async function lireReglages(): Promise<Reglages> {
   if (cache && cache.expire > Date.now()) return cache.valeurs;
   let brut: Record<string, unknown> = {};
   try {
-    const { data } = await dbAdmin().from("reglages").select("cle, valeur");
+    const { data } = await dbAdmin().from("reglages").select("cle, valeur").not("cle", "like", "module%");
     for (const ligne of (data ?? []) as { cle: string; valeur: unknown }[]) brut[ligne.cle] = ligne.valeur;
   } catch {
     // Base inaccessible ou migration 008 pas encore exécutée : on garde les valeurs par défaut.

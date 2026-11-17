@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Feather, LoaderCircle } from "lucide-react";
 import {
   ajouterFichier,
@@ -11,6 +11,7 @@ import {
   supprimerDocument,
 } from "@/lib/atelier/depot";
 import { documentVide, type DocumentAtelier } from "@/lib/atelier/modele";
+import { useTextes } from "@/lib/modules/textes-client";
 import { Atelier } from "./Atelier";
 import { blobDuFichierPaquet, lirePaquet } from "./exporter";
 
@@ -28,6 +29,8 @@ export function Calame() {
   const [actif, setActif] = useState<DocumentAtelier | null>(null);
   const [etat, setEtat] = useState<"chargement" | "pret" | "impossible">("chargement");
   const [message, setMessage] = useState("");
+  const t = useTextes("calame");
+  const premierTitre = useRef(t("premier"));
 
   useEffect(() => {
     let vivant = true;
@@ -35,7 +38,7 @@ export function Calame() {
       try {
         let liste = await listerDocuments();
         if (liste.length === 0) {
-          const premier = documentVide(nouvelIdentifiant(), "Mon premier document");
+          const premier = documentVide(nouvelIdentifiant(), premierTitre.current);
           await ecrireDocument(premier);
           liste = [premier];
         }
@@ -117,7 +120,7 @@ export function Calame() {
     return (
       <p className="calame-attente">
         <LoaderCircle className="size-6 animate-spin text-accent" aria-hidden="true" />
-        Ouverture de l&apos;atelier…
+        {t("attente")}
       </p>
     );
   }
@@ -126,10 +129,7 @@ export function Calame() {
     return (
       <div className="calame-attente">
         <Feather className="size-8 text-accent" aria-hidden="true" />
-        <p className="max-w-[52ch] text-center">
-          Cet atelier garde tes documents dans la mémoire du navigateur, et ce navigateur ne le permet pas — souvent à cause d&apos;une navigation
-          privée ou d&apos;un réglage de confidentialité. Rouvre la page dans une fenêtre ordinaire.
-        </p>
+        <p className="max-w-[52ch] text-center">{t("impossible")}</p>
       </div>
     );
   }

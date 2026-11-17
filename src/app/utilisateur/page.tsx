@@ -1,84 +1,98 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BookOpen, Feather, FlaskConical, Languages } from "lucide-react";
+import {
+  ArrowRight,
+  BookOpen,
+  Feather,
+  FlaskConical,
+  Languages,
+} from "lucide-react";
 import { EnTete } from "@/components/EnTete";
 import { Rosace } from "@/components/Rosace";
 import { MarqueAccueil } from "@/lib/client/acces";
+import { chargerModule } from "@/lib/modules/page";
+import { BandeauApercu } from "@/lib/modules/textes-client";
 
-export const metadata: Metadata = {
-  title: "Mode utilisateur",
-  description: "Quatre espaces : Le Calame pour écrire, L'Alambic pour convertir ses fichiers, Le Truchement pour apprendre une langue, et la bibliothèque des preuves de la véracité de l'islam.",
+const ICONES = {
+  calame: Feather,
+  alambic: FlaskConical,
+  langues: Languages,
+  bibliotheque: BookOpen,
+} as const;
+const LIENS = {
+  calame: "/ecrire",
+  alambic: "/alambic",
+  langues: "/langues",
+  bibliotheque: "/explorer",
+} as const;
+const ACCENTS = {
+  calame: "or",
+  alambic: "amethyste",
+  langues: "azur",
+  bibliotheque: "emeraude",
+} as const;
+
+type Props = {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
 };
 
-const CHOIX = [
-  {
-    href: "/ecrire",
-    titre: "Le Calame",
-    soustitre: "Atelier d'écriture",
-    texte:
-      "Un traitement de texte complet, dans ton navigateur : pages A4 réelles, styles, tableaux, images, PDF, frises chronologiques et cartes mentales. Tes documents restent sur ton appareil, et s'exportent en PDF, Word ou Markdown.",
-    Icone: Feather,
-    accent: "or",
-    marque: "Écrire",
-  },
-  {
-    href: "/alambic",
-    titre: "L'Alambic",
-    soustitre: "Studio de fichiers",
-    texte:
-      "Convertir d'un format à l'autre (documents, tableurs, images, sons, vidéos, archives), fusionner, découper et protéger par mot de passe. Tout se fait dans ton navigateur : aucun fichier n'est envoyé.",
-    Icone: FlaskConical,
-    accent: "amethyste",
-    marque: "Transformer",
-  },
-  {
-    href: "/langues",
-    titre: "Le Truchement",
-    soustitre: "Apprendre les langues",
-    texte:
-      "L'anglais pour commencer : 600 mots en douze thèmes révisés au bon moment, des vidéos et des PDF où chaque mot se traduit d'un toucher, et ton propre dictionnaire. Ta progression reste sur ton appareil.",
-    Icone: Languages,
-    accent: "azur",
-    marque: "Apprendre",
-  },
-  {
-    href: "/explorer",
-    titre: "Les preuves de la véracité de l'islam",
-    soustitre: "La bibliothèque",
-    texte:
-      "Les trois grands ensembles de la bibliothèque : la véracité de l'islam, la défense de l'islam et la réfutation des autres croyances. Articles, dossiers, sources et outils de lecture.",
-    Icone: BookOpen,
-    accent: "emeraude",
-    marque: "Lire",
-  },
-] as const;
+export async function generateMetadata(): Promise<Metadata> {
+  const { resolu } = await chargerModule("accueil");
+  return {
+    title: "Mode utilisateur",
+    description: resolu.textes["meta.description"],
+  };
+}
 
-export default function PageUtilisateur() {
+export default async function PageUtilisateur({ searchParams }: Props) {
+  const { resolu, apercu } = await chargerModule("accueil", searchParams);
+  const cartes = (resolu.listes.cartes ?? []).filter((c) => c.id in LIENS);
   return (
     <>
       <MarqueAccueil />
+      {apercu && <BandeauApercu id="accueil" />}
       <EnTete />
       <Rosace className="pointer-events-none absolute -right-[36vw] top-[8vw] w-[110vw] max-w-none opacity-30 md:-right-[16rem] md:top-24 md:w-[44rem] md:opacity-70" />
       <main className="relative mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-5 pb-20 pt-6 sm:px-8">
-        <h1 className="text-4xl font-extrabold md:text-5xl">Par où veux-tu commencer ?</h1>
+        <h1 className="text-4xl font-extrabold md:text-5xl">
+          {resolu.textes.titre}
+        </h1>
         <p className="mt-3 max-w-[58ch] text-lg text-encre-douce">
-          Quatre espaces : écrire, transformer tes fichiers, apprendre une langue, lire. Tu passes de l&apos;un à l&apos;autre quand tu veux.
+          {resolu.textes.intro}
         </p>
 
-        <nav aria-label="Les quatre espaces" className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          {CHOIX.map(({ href, titre, soustitre, texte, Icone, accent, marque }) => (
-            <Link key={href} href={href} className="carte-choix" data-accent={accent}>
-              <span className="carte-choix-marque">{marque}</span>
-              <Icone className="size-9 text-accent" strokeWidth={1.4} aria-hidden="true" />
-              <span className="carte-choix-sur">{soustitre}</span>
-              <span className="carte-choix-titre">{titre}</span>
-              <span className="carte-choix-texte">{texte}</span>
-              <span className="carte-choix-pied">
-                Entrer
-                <ArrowRight className="size-4" aria-hidden="true" />
-              </span>
-            </Link>
-          ))}
+        <nav
+          aria-label="Les espaces"
+          className={`mt-10 grid gap-5 md:grid-cols-2 ${cartes.length >= 4 ? "xl:grid-cols-4" : "xl:grid-cols-3"}`}
+        >
+          {cartes.map(
+            ({ id, valeurs: { titre, soustitre, texte, marque } }) => {
+              const cle = id as keyof typeof LIENS;
+              const Icone = ICONES[cle];
+              return (
+                <Link
+                  key={id}
+                  href={LIENS[cle]}
+                  className="carte-choix"
+                  data-accent={ACCENTS[cle]}
+                >
+                  <span className="carte-choix-marque">{marque}</span>
+                  <Icone
+                    className="size-9 text-accent"
+                    strokeWidth={1.4}
+                    aria-hidden="true"
+                  />
+                  <span className="carte-choix-sur">{soustitre}</span>
+                  <span className="carte-choix-titre">{titre}</span>
+                  <span className="carte-choix-texte">{texte}</span>
+                  <span className="carte-choix-pied">
+                    Entrer
+                    <ArrowRight className="size-4" aria-hidden="true" />
+                  </span>
+                </Link>
+              );
+            },
+          )}
         </nav>
       </main>
     </>

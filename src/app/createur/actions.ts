@@ -223,6 +223,7 @@ export async function confirmerAppareil(formData: FormData): Promise<void> {
   await dbAdmin().from("appareils_connus").update({ confirme: true }).eq("empreinte", cle);
   await journaliser("appareil_confirme");
   revalidatePath("/createur");
+  revalidatePath("/createur/bibliotheque");
 }
 
 /** « Ce n'est pas moi » : l'appareil est oublié et toutes les AUTRES sessions sont fermées. */

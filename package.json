@@ -14,7 +14,8 @@
     "test:logique": "tsx tests/test-logique.mts",
     "test:alambic": "tsx tests/test-alambic.mts",
     "test:transcription": "tsx tests/test-transcription.mts",
-    "test:langues": "tsx tests/test-langues.mts"
+    "test:langues": "tsx tests/test-langues.mts",
+    "test:modules": "tsx tests/test-modules.mts"
   },
   "dependencies": {
     "@cantoo/pdf-lib": "^2.11.1",

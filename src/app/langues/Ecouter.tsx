@@ -8,6 +8,7 @@ import { dureeLisible } from "@/lib/alambic/transcription/exports";
 import { idYoutube } from "@/lib/alambic/transcription/lien";
 import { ecrire, ecrireBlob, listerMedias, lireUn, type MediaLangue, supprimerMedia } from "@/lib/langues/stockage";
 import { BoutonSupprimer } from "./communs";
+import { useTextes } from "@/lib/modules/textes-client";
 import { Immersion } from "./Immersion";
 
 /*
@@ -28,6 +29,7 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
   const [erreur, setErreur] = useState<string | null>(null);
   const [survol, setSurvol] = useState(false);
   const annulation = useRef<AbortController | null>(null);
+  const t = useTextes("langues");
 
   const recharger = useCallback(() => void listerMedias().then(setMedias).catch(() => setMedias([])), []);
   useEffect(recharger, [recharger]);
@@ -98,9 +100,9 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
       <div className="lg-section-tete">
         <div>
           <h2 id="titre-ecouter" className="lg-titre">
-            Écouter
+            {t("ecouter.titre")}
           </h2>
-          <p className="lg-chapo">Une vidéo ou un son en anglais devient une leçon : sous-titres synchronisés, chaque mot traduit d&apos;un toucher, et les mots utiles rangés dans ton dictionnaire.</p>
+          <p className="lg-chapo">{t("ecouter.chapo")}</p>
         </div>
       </div>
 
@@ -135,7 +137,7 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
             }}
           >
             <Link2 className="size-5 shrink-0 text-accent" aria-hidden="true" />
-            <input value={lien} onChange={(e) => setLien(e.target.value)} placeholder="Colle un lien YouTube en anglais" aria-label="Lien YouTube" inputMode="url" autoComplete="off" />
+            <input value={lien} onChange={(e) => setLien(e.target.value)} placeholder={t("ecouter.lien")} aria-label="Lien YouTube" inputMode="url" autoComplete="off" />
             <button type="submit" className="bouton bouton-principal" disabled={!lien.trim()}>
               Préparer
             </button>
@@ -176,7 +178,7 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
       ) : medias.length === 0 ? (
         <div className="lg-vide">
           <Clapperboard className="size-8" strokeWidth={1.3} aria-hidden="true" />
-          <p>Rien pour l&apos;instant. Commence par une vidéo courte (5 à 10 minutes) que tu aimerais comprendre : une conférence, un reportage, un entretien.</p>
+          <p>{t("ecouter.vide")}</p>
         </div>
       ) : (
         <ul className="lg-bibliotheque">

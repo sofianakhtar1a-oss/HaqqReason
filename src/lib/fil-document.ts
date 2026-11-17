@@ -24,7 +24,7 @@ export async function contexteDocument(
   if (parent.type === "categorie") parent.titre = ancetres[ancetres.length - 1]?.titre ?? "";
 
   const etapes: Etape[] = [
-    mode === "public" ? { href: "/explorer", libelle: "La bibliothèque" } : { href: "/createur", libelle: "Espace créateur" },
+    mode === "public" ? { href: "/explorer", libelle: "La bibliothèque" } : { href: "/createur/bibliotheque", libelle: "Les preuves" },
     ...(bloc ? [{ href: mode === "public" ? `/explorer/${bloc.slug}` : `/createur/bloc/${bloc.slug}`, libelle: bloc.titre }] : []),
     ...ancetres.map((c) => ({ href: `${racine}/categorie/${c.id}`, libelle: c.titre })),
     ...(f.article_id ? [{ href: `${racine}/article/${f.article_id}`, libelle: parent.titre }] : []),

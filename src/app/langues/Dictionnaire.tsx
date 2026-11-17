@@ -11,6 +11,7 @@ import { parler, voixDisponible } from "@/lib/langues/voix";
 import { BoutonSupprimer, telecharger } from "./communs";
 import { ajouterMot, charger, modifierMot, supprimerMot, useDonnees } from "./donnees";
 import type { Lancement } from "./Seance";
+import { useTextes } from "@/lib/modules/textes-client";
 import { Pastille } from "./Vocabulaire";
 
 /*
@@ -48,6 +49,7 @@ export function Dictionnaire({ lancer }: { lancer: (l: Lancement) => void }) {
   const [menu, setMenu] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const fichier = useRef<HTMLInputElement>(null);
+  const t = useTextes("langues");
   const [maintenant] = useState(() => Date.now());
 
   const filtres = useMemo(() => {
@@ -95,7 +97,7 @@ export function Dictionnaire({ lancer }: { lancer: (l: Lancement) => void }) {
       <div className="lg-section-tete">
         <div>
           <h2 id="titre-dictionnaire" className="lg-titre">
-            Mon dictionnaire
+            {t("dico.titre")}
           </h2>
           <p className="lg-chapo">
             {mots.length ? `${mots.length} mot${mots.length > 1 ? "s" : ""} et passage${mots.length > 1 ? "s" : ""} rangés${dus ? `, dont ${dus} à revoir aujourd'hui` : ""}.` : "Les mots que tu ranges depuis les vidéos, les PDF et les thèmes arrivent ici."}
@@ -207,7 +209,7 @@ export function Dictionnaire({ lancer }: { lancer: (l: Lancement) => void }) {
       ) : mots.length === 0 ? (
         <div className="lg-vide">
           <BookMarked className="size-8" strokeWidth={1.3} aria-hidden="true" />
-          <p>Ton dictionnaire est vide. Dans une vidéo ou un PDF, touche un mot puis « Ajouter au dictionnaire » ; dans un thème, utilise le signet à côté de chaque mot.</p>
+          <p>{t("dico.vide")}</p>
         </div>
       ) : filtres.length === 0 ? (
         <p className="lg-vide">Aucun mot ne correspond.</p>

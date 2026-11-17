@@ -6,20 +6,21 @@ import { dureeLisible } from "@/lib/alambic/transcription/exports";
 import { elementDe, elementDEntree } from "@/lib/langues/dictionnaire";
 import { cleJour, estDue } from "@/lib/langues/srs";
 import { type DocumentLangue, listerDocuments, listerMedias, type MediaLangue } from "@/lib/langues/stockage";
-import { THEMES, TOUTES_LES_ENTREES } from "@/lib/langues/themes/index";
+import type { Entree } from "@/lib/langues/types";
+import { useTextes } from "@/lib/modules/textes-client";
 import { parler, voixDisponible } from "@/lib/langues/voix";
-import { OBJECTIF_JOUR, resumeJournal, useDonnees } from "./donnees";
+import { resumeJournal, useDonnees } from "./donnees";
 import type { Lancement } from "./Seance";
-import { BarreProgres, ICONES_THEMES, progresDe } from "./Vocabulaire";
+import { BarreProgres, ICONES_THEMES, progresDe, useThemes } from "./Vocabulaire";
 
 type Props = { lancer: (l: Lancement) => void; aller: (hash: string) => void };
 
 /** Le même mot pour tout le monde, chaque jour. */
-function motDuJour(maintenant: number) {
+function motDuJour(maintenant: number, entrees: Entree[]) {
   const cle = cleJour(maintenant);
   let h = 0;
   for (const c of cle) h = (h * 31 + c.charCodeAt(0)) >>> 0;
-  return TOUTES_LES_ENTREES[h % TOUTES_LES_ENTREES.length];
+  return entrees.length ? entrees[h % entrees.length] : null;
 }
 
 export function Accueil({ lancer, aller }: Props) {
@@ -31,21 +32,26 @@ export function Accueil({ lancer, aller }: Props) {
     void Promise.all([listerMedias().catch(() => []), listerDocuments().catch(() => [])]).then(([m, d]) => setRecents({ media: m[0], document: d[0] }));
   }, []);
 
-  const mot = motDuJour(maintenant);
+  const themes = useThemes();
+  const t = useTextes("langues");
+  const OBJECTIF_JOUR = Math.max(1, Number(t("objectif")) || 20);
+  const toutes = useMemo(() => themes.flatMap((x) => x.entrees), [themes]);
+  const mot = motDuJour(maintenant, toutes);
   const r = resumeJournal(journal, maintenant);
-  const elements = useMemo(() => [...TOUTES_LES_ENTREES.map(elementDEntree), ...mots.filter((m) => !m.passage).map(elementDe)], [mots]);
+  const elements = useMemo(() => [...toutes.map(elementDEntree), ...mots.filter((m) => !m.passage).map(elementDe)], [mots, toutes]);
   const dus = elements.filter((e) => estDue(cartes.get(e.id), maintenant)).length;
   const fait = Math.min(1, r.aujourdhui / OBJECTIF_JOUR);
   const maxSemaine = Math.max(OBJECTIF_JOUR, ...r.semaine.map((j) => j.revues));
-  const enCours = THEMES.map((t) => ({ t, p: progresDe(t.entrees.map((e) => e.id), cartes, maintenant) }))
+  const enCours = themes.map((x) => ({ t: x, p: progresDe(x.entrees.map((e) => e.id), cartes, maintenant) }))
     .sort((a, b) => b.p.dus - a.p.dus || b.p.total - b.p.nouveau - (a.p.total - a.p.nouveau))
     .slice(0, 4);
 
   return (
     <div className="lg-accueil">
+      {mot && (
       <section className="lg-mot-du-jour" aria-labelledby="titre-mot-jour">
         <p id="titre-mot-jour" className="lg-etiquette">
-          Le mot du jour
+          {t("accueil.motDuJour")}
         </p>
         <p className="lg-mdj-en" lang="en">
           {mot.en}
@@ -65,10 +71,11 @@ export function Accueil({ lancer, aller }: Props) {
           <figcaption>{mot.exFr}</figcaption>
         </figure>
       </section>
+      )}
 
       <section className="lg-journee" aria-labelledby="titre-journee">
         <h2 id="titre-journee" className="lg-etiquette">
-          Ta journée
+          {t("accueil.journee")}
         </h2>
         <div className="lg-journee-haut">
           <div className="lg-anneau" style={{ ["--fait" as string]: fait }} role="img" aria-label={`${r.aujourdhui} révisions sur ${OBJECTIF_JOUR} aujourd'hui`}>
@@ -108,7 +115,7 @@ export function Accueil({ lancer, aller }: Props) {
       {(recents.media || recents.document) && (
         <section className="lg-reprendre" aria-labelledby="titre-reprendre">
           <h2 id="titre-reprendre" className="lg-sous-titre">
-            Reprendre
+            {t("accueil.reprendre")}
           </h2>
           <div className="lg-reprendre-grille">
             {recents.media && (
@@ -140,10 +147,10 @@ export function Accueil({ lancer, aller }: Props) {
       <section className="lg-accueil-themes" aria-labelledby="titre-themes-accueil">
         <div className="flex items-baseline justify-between gap-3">
           <h2 id="titre-themes-accueil" className="lg-sous-titre">
-            Tes thèmes
+            {t("accueil.themes")}
           </h2>
           <button type="button" className="lg-lien" onClick={() => aller("vocabulaire")}>
-            Les {THEMES.length} thèmes
+            Les {themes.length} thèmes
           </button>
         </div>
         <ul className="lg-mini-themes">
@@ -169,9 +176,9 @@ export function Accueil({ lancer, aller }: Props) {
         <BookMarked className="size-6 text-accent" strokeWidth={1.4} aria-hidden="true" />
         <div className="min-w-0 flex-1">
           <h2 id="titre-dico-accueil" className="font-display text-lg font-bold">
-            Mon dictionnaire
+            {t("accueil.dico")}
           </h2>
-          <p className="text-sm text-encre-douce">{mots.length ? `${mots.length} mot${mots.length > 1 ? "s" : ""} rangé${mots.length > 1 ? "s" : ""} depuis tes vidéos, tes lectures et les thèmes.` : "Range ici les mots rencontrés dans les vidéos et les PDF."}</p>
+          <p className="text-sm text-encre-douce">{mots.length ? `${mots.length} mot${mots.length > 1 ? "s" : ""} rangé${mots.length > 1 ? "s" : ""} depuis tes vidéos, tes lectures et les thèmes.` : t("accueil.dicoVide")}</p>
         </div>
         <button type="button" className="bouton" onClick={() => aller("dictionnaire")}>
           Ouvrir

@@ -1,16 +1,26 @@
 "use client";
 
-import { ArrowLeft, BookmarkCheck, BookmarkPlus, Briefcase, Building2, CloudSun, GraduationCap, HeartPulse, House, Layers, type LucideIcon, Plane, Play, Shuffle, Smile, Sun, Trees, Users, UtensilsCrossed, Volume2 } from "lucide-react";
+import { ArrowLeft, BookmarkCheck, BookmarkPlus, BookOpen, Briefcase, Building2, Car, CloudSun, Dumbbell, Globe, GraduationCap, Heart, HeartPulse, House, Landmark, Laptop, Layers, Leaf, type LucideIcon, Moon, Music, Plane, Play, ShoppingBag, Shuffle, Smile, Star, Sun, Trees, Users, UtensilsCrossed, Volume2 } from "lucide-react";
 import { useMemo, useState } from "react";
 import { elementDEntree, nouveauMot } from "@/lib/langues/dictionnaire";
 import { estDue, type Maitrise, maitrise } from "@/lib/langues/srs";
-import { THEMES, themeDe, TOUTES_LES_ENTREES } from "@/lib/langues/themes/index";
+import { THEMES } from "@/lib/langues/themes/index";
+import { useResolu, useTextes } from "@/lib/modules/textes-client";
 import { type Carte, NIVEAUX, type Niveau, type Theme } from "@/lib/langues/types";
 import { parler, voixDisponible } from "@/lib/langues/voix";
 import { ajouterMot, useDonnees } from "./donnees";
 import type { Lancement } from "./Seance";
 
-export const ICONES_THEMES: Record<string, LucideIcon> = { Users, Plane, Briefcase, Sun, UtensilsCrossed, HeartPulse, House, Smile, CloudSun, GraduationCap, Building2, Trees };
+export const ICONES_THEMES: Record<string, LucideIcon> = {
+  Users, Plane, Briefcase, Sun, UtensilsCrossed, HeartPulse, House, Smile, CloudSun, GraduationCap, Building2, Trees,
+  BookOpen, Moon, Star, Globe, Music, Car, ShoppingBag, Dumbbell, Landmark, Laptop, Leaf, Heart,
+};
+
+/** Les thèmes publiés par le créateur (ou ceux d'origine). */
+export function useThemes(): Theme[] {
+  const r = useResolu("langues");
+  return r?.themes ?? THEMES;
+}
 
 export type Progres = { total: number; nouveau: number; enCours: number; appris: number; maitrise: number; dus: number };
 
@@ -56,27 +66,31 @@ export function Pastille({ m }: { m: Maitrise }) {
 type Props = { themeId: string | null; onOuvrir: (id: string | null) => void; lancer: (l: Lancement) => void };
 
 export function Vocabulaire({ themeId, onOuvrir, lancer }: Props) {
-  const theme = themeId ? themeDe(themeId) : undefined;
+  const themes = useThemes();
+  const theme = themeId ? themes.find((t) => t.id === themeId) : undefined;
   if (theme) return <DetailTheme theme={theme} onRetour={() => onOuvrir(null)} lancer={lancer} />;
   return <Themes onOuvrir={onOuvrir} lancer={lancer} />;
 }
 
 function Themes({ onOuvrir, lancer }: Pick<Props, "onOuvrir" | "lancer">) {
   const { cartes } = useDonnees();
+  const themes = useThemes();
+  const t = useTextes("langues");
+  const toutes = themes.flatMap((x) => x.entrees);
   const global = progresDe(
-    TOUTES_LES_ENTREES.map((e) => e.id),
+    toutes.map((e) => e.id),
     cartes,
   );
-  const tout = TOUTES_LES_ENTREES.map(elementDEntree);
+  const tout = toutes.map(elementDEntree);
   return (
     <section aria-labelledby="titre-vocabulaire">
       <div className="lg-section-tete">
         <div>
           <h2 id="titre-vocabulaire" className="lg-titre">
-            Vocabulaire
+            {t("vocabulaire.titre")}
           </h2>
           <p className="lg-chapo">
-            {TOUTES_LES_ENTREES.length} mots et expressions du quotidien, en {THEMES.length} thèmes, du niveau A1 au B2. Chaque mot revient au moment où ta mémoire allait le perdre.
+            {t("vocabulaire.chapo", { mots: toutes.length, themes: themes.length })}
           </p>
         </div>
         <div className="lg-section-actions">
@@ -92,7 +106,7 @@ function Themes({ onOuvrir, lancer }: Pick<Props, "onOuvrir" | "lancer">) {
       </div>
 
       <ul className="lg-themes">
-        {THEMES.map((t) => {
+        {themes.map((t) => {
           const p = progresDe(
             t.entrees.map((e) => e.id),
             cartes,

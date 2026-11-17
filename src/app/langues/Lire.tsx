@@ -4,6 +4,7 @@ import { BookOpenText, FileText, LoaderCircle, Upload } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import { type DocumentLangue, ecrire, effacer, listerDocuments, lireUn } from "@/lib/langues/stockage";
 import { BoutonSupprimer } from "./communs";
+import { useTextes } from "@/lib/modules/textes-client";
 import { LiseusePdf } from "./LiseusePdf";
 
 /*
@@ -19,6 +20,7 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
   const [lecture, setLecture] = useState<{ nom: string; progression: number } | null>(null);
   const [erreur, setErreur] = useState<string | null>(null);
   const [survol, setSurvol] = useState(false);
+  const t = useTextes("langues");
 
   const recharger = useCallback(() => void listerDocuments().then(setDocuments).catch(() => setDocuments([])), []);
   useEffect(recharger, [recharger]);
@@ -73,9 +75,9 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
       <div className="lg-section-tete">
         <div>
           <h2 id="titre-lire" className="lg-titre">
-            Lire
+            {t("lire.titre")}
           </h2>
-          <p className="lg-chapo">Un livre, un article ou un cours en PDF, mis en page pour la lecture. Touche un mot pour sa traduction, sélectionne un passage pour le traduire en entier.</p>
+          <p className="lg-chapo">{t("lire.chapo")}</p>
         </div>
       </div>
 
@@ -108,7 +110,7 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
         >
           <Upload className="size-6 text-accent" aria-hidden="true" />
           <span>
-            <strong>Choisis ou dépose un PDF en anglais</strong>
+            <strong>{t("lire.depot")}</strong>
             <small>Le texte est lu sur ton appareil. Les PDF scannés (images seules) ne sont pas lisibles.</small>
           </span>
           <input type="file" accept="application/pdf,.pdf" className="sr-only" onChange={(e) => e.target.files?.[0] && void importer(e.target.files[0])} />
@@ -126,7 +128,7 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
       ) : documents.length === 0 ? (
         <div className="lg-vide">
           <BookOpenText className="size-8" strokeWidth={1.3} aria-hidden="true" />
-          <p>Aucune lecture pour l&apos;instant. Un texte un peu en dessous de ton niveau est idéal : tu comprends l&apos;essentiel, et chaque mot nouveau se retient mieux.</p>
+          <p>{t("lire.vide")}</p>
         </div>
       ) : (
         <ul className="lg-bibliotheque">

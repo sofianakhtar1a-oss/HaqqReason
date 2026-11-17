@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { BookMarked, BookOpenText, Headphones, House, Layers } from "lucide-react";
-import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { BoutonTheme } from "@/components/BoutonTheme";
 import { Logo } from "@/components/Logo";
 import { useAccesComplet } from "@/lib/client/acces";
+import { useResolu, useTextes } from "@/lib/modules/textes-client";
 import { Accueil } from "./Accueil";
 import { useDonnees } from "./donnees";
 import { Dictionnaire } from "./Dictionnaire";
@@ -26,20 +27,15 @@ import "@fontsource-variable/literata/opsz-italic.css";
 
 type Onglet = "accueil" | "vocabulaire" | "ecouter" | "lire" | "dictionnaire";
 
-const ONGLETS: { id: Onglet; nom: string; Icone: typeof House }[] = [
-  { id: "accueil", nom: "Aujourd'hui", Icone: House },
-  { id: "vocabulaire", nom: "Vocabulaire", Icone: Layers },
-  { id: "ecouter", nom: "Écouter", Icone: Headphones },
-  { id: "lire", nom: "Lire", Icone: BookOpenText },
-  { id: "dictionnaire", nom: "Dictionnaire", Icone: BookMarked },
-];
+const ICONES_ONGLETS: Record<Onglet, typeof House> = { accueil: House, vocabulaire: Layers, ecouter: Headphones, lire: BookOpenText, dictionnaire: BookMarked };
+const TOUS: Onglet[] = ["accueil", "vocabulaire", "ecouter", "lire", "dictionnaire"];
 
 type Route = { onglet: Onglet; detail: string | null };
 
-function lireRoute(): Route {
+function lireRoute(onglets: { id: Onglet }[]): Route {
   const [o, ...reste] = decodeURIComponent(window.location.hash.slice(1)).split("/");
-  const onglet = (ONGLETS.find((x) => x.id === o)?.id ?? "accueil") as Onglet;
-  return { onglet, detail: reste.join("/") || null };
+  const trouve = onglets.find((x) => x.id === o)?.id;
+  return { onglet: trouve ?? onglets[0]?.id ?? "accueil", detail: trouve ? reste.join("/") || null : null };
 }
 
 const sAbonner = () => () => undefined;
@@ -50,22 +46,31 @@ export function Truchement() {
     () => true,
     () => false,
   );
-  const [route, setRoute] = useState<Route>({ onglet: "accueil", detail: null });
+  const resolu = useResolu("langues");
+  const t = useTextes("langues");
+  // Les onglets dans l'ordre et sous les noms choisis par le créateur ; au moins un reste toujours.
+  const ONGLETS = useMemo(() => {
+    const liste = (resolu?.listes.onglets ?? TOUS.map((id) => ({ id, valeurs: {} as Record<string, string> }))).filter((o): o is { id: Onglet; valeurs: Record<string, string> } => TOUS.includes(o.id as Onglet));
+    const sortie = liste.map((o) => ({ id: o.id, nom: o.valeurs.nom ?? o.id, Icone: ICONES_ONGLETS[o.id] }));
+    return sortie.length ? sortie : [{ id: "accueil" as Onglet, nom: "Aujourd'hui", Icone: House }];
+  }, [resolu]);
+  const premier = ONGLETS[0].id;
+  const [route, setRoute] = useState<Route>({ onglet: premier, detail: null });
   const [seance, setSeance] = useState<Lancement | null>(null);
   const accesComplet = useAccesComplet();
   const { erreur } = useDonnees();
 
   useEffect(() => {
-    const lire = () => setRoute(lireRoute());
+    const lire = () => setRoute(lireRoute(ONGLETS));
     lire();
     window.addEventListener("hashchange", lire);
     return () => window.removeEventListener("hashchange", lire);
-  }, []);
+  }, [ONGLETS]);
 
   /** Change d'écran ; un écran de détail s'empile dans l'historique (le « retour » du téléphone le ferme). */
   const empile = useRef(false);
   const aller = useCallback((hash: string) => {
-    const vide = hash === "accueil" || hash === "";
+    const vide = hash === premier || hash === "";
     const url = vide ? window.location.pathname : `#${hash}`;
     if (hash.includes("/")) {
       history.pushState(null, "", url);
@@ -74,9 +79,9 @@ export function Truchement() {
       history.replaceState(null, "", url);
       empile.current = false;
     }
-    setRoute(lireRoute());
+    setRoute(lireRoute(ONGLETS));
     window.scrollTo({ top: 0 });
-  }, []);
+  }, [ONGLETS, premier]);
 
   const detail = useCallback(
     (onglet: Onglet) => (id: string | null) => {
@@ -99,10 +104,10 @@ export function Truchement() {
       <header className="lg-tete sans-impression">
         <Logo />
         <span className="lg-tete-titre" aria-hidden="true">
-          Le Truchement
+          {t("tete.titre")}
         </span>
         <span className="lg-langues" title="Tu apprends l'anglais depuis le français">
-          Anglais <span aria-hidden="true">›</span> français
+          {t("tete.langues")}
         </span>
         <span className="flex-1" />
         <nav className="lg-onglets" aria-label="Le Truchement">
@@ -122,7 +127,7 @@ export function Truchement() {
       </header>
 
       <main className="lg-scene">
-        <h1 className="sr-only">Le Truchement, apprendre l&apos;anglais</h1>
+        <h1 className="sr-only">{t("meta.titre")}</h1>
         {erreur && (
           <p className="lg-erreur" role="alert">
             {erreur}
@@ -141,7 +146,7 @@ export function Truchement() {
         )}
       </main>
 
-      <nav className="lg-barre-bas sans-impression" aria-label="Le Truchement">
+      <nav className="lg-barre-bas sans-impression" aria-label="Le Truchement" style={{ gridTemplateColumns: `repeat(${ONGLETS.length}, 1fr)` }}>
         {ONGLETS.map(({ id, nom, Icone }) => (
           <button key={id} type="button" aria-current={route.onglet === id ? "page" : undefined} onClick={() => aller(id)}>
             <Icone className="size-5" strokeWidth={route.onglet === id ? 2.2 : 1.7} aria-hidden="true" />
