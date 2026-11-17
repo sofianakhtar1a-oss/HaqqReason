@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, Captions, FileUp, ListVideo, Maximize2, MousePointerClick, Pause, Play, Repeat, SkipBack, SkipForward } from "lucide-react";
+import { ArrowLeft, Captions, FileUp, ListVideo, Maximize2, Type, MousePointerClick, Pause, Play, Repeat, SkipBack, SkipForward } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { dureeLisible } from "@/lib/alambic/transcription/exports";
 import { motA, phraseA } from "@/lib/alambic/transcription/phrases";
@@ -22,19 +22,22 @@ import { GloseMot } from "./GloseMot";
  * « traduction » (uniquement la traduction).
  */
 type Affichage = "source" | "deux" | "traduction";
-type Reglages = { affichage: Affichage; pauseAuMot: boolean; boucle: boolean; vitesse: number; texte: boolean; taille: number };
+type Reglages = { affichage: Affichage; pauseAuMot: boolean; boucle: boolean; vitesse: number; texte: boolean; taille: number; tailleSt: number };
 const CLE = "haqqreason-truchement-immersion";
 const VITESSES = [0.75, 0.9, 1];
 const TAILLE_MIN = 35;
+const TAILLE_ST_MIN = 60;
+const TAILLE_ST_MAX = 180;
 
 function reglagesInitiaux(): Reglages {
-  const defaut: Reglages = { affichage: "deux", pauseAuMot: true, boucle: false, vitesse: 1, texte: true, taille: 100 };
+  const defaut: Reglages = { affichage: "deux", pauseAuMot: true, boucle: false, vitesse: 1, texte: true, taille: 100, tailleSt: 100 };
   try {
     const lu = JSON.parse(localStorage.getItem(CLE) ?? "{}") as Partial<Reglages> & { francais?: boolean };
     // Réglage d'avant : « Français » coché ou non.
     const affichage: Affichage = lu.affichage ?? (lu.francais === false ? "source" : "deux");
     const taille = Math.min(100, Math.max(TAILLE_MIN, Number(lu.taille) || 100));
-    return { ...defaut, ...lu, affichage, taille, boucle: false };
+    const tailleSt = Math.min(TAILLE_ST_MAX, Math.max(TAILLE_ST_MIN, Number(lu.tailleSt) || 100));
+    return { ...defaut, ...lu, affichage, taille, tailleSt, boucle: false };
   } catch {
     return defaut;
   }
@@ -327,7 +330,12 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
             )}
           </div>
 
-          <div className="lg-soustitres" aria-live="off" data-affichage={reglages.affichage}>
+          <div
+            className="lg-soustitres"
+            aria-live="off"
+            data-affichage={reglages.affichage}
+            style={{ "--st-echelle": reglages.tailleSt / 100 } as React.CSSProperties}
+          >
             {precedente && (
               <p className="lg-st-voisine" lang={reglages.affichage === "traduction" && traductions[precedente.id] ? autre : langue}>
                 <button type="button" onClick={() => aller(precedente.debut)}>
@@ -460,6 +468,20 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
                 <span className="lg-taille-valeur">{reglages.taille} %</span>
               </label>
             )}
+            <label className="lg-taille">
+              <Type className="size-4 shrink-0" aria-hidden="true" />
+              <span className="lg-taille-titre">Taille des sous-titres</span>
+              <input
+                type="range"
+                min={TAILLE_ST_MIN}
+                max={TAILLE_ST_MAX}
+                step={10}
+                value={reglages.tailleSt}
+                onChange={(e) => setReglages((r) => ({ ...r, tailleSt: Number(e.target.value) }))}
+                aria-valuetext={`${reglages.tailleSt} %`}
+              />
+              <span className="lg-taille-valeur">{reglages.tailleSt} %</span>
+            </label>
           </div>
         </div>
 
