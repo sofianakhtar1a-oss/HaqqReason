@@ -53,7 +53,8 @@ export function GloseMot(p: Props) {
      Pour le dictionnaire, une forme conjuguée ou accordée reçoit aussi le sens de sa forme de base. */
   const ajouter = async () => {
     let m = mot;
-    if (m.lemme && m.forme && m.lemme.toLowerCase() !== m.forme.toLowerCase()) {
+    // Un verbe est toujours repris à l'infinitif : « would happen » donnerait sinon « se produirait ».
+    if (m.lemme && m.forme && (m.nature === "verbe" || m.lemme.toLowerCase() !== m.forme.toLowerCase())) {
       setEnCours(true);
       try {
         const [base] = await traduireLot("en", [m.nature === "verbe" ? `to ${m.lemme}` : m.lemme], "");
