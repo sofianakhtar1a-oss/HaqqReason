@@ -319,7 +319,10 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
                 </button>
               </p>
             )}
-            <PhraseCliquable phrase={ph} actif={actif.phrase === ph.id ? actif.mot : -1} onMot={(i, el, doigt) => toucherMot(ph.id, i, el, doigt)} glose={glose?.phrase === ph.id ? glose.mot : -1} />
+            <PhraseCliquable phrase={ph} actif={actif.phrase === ph.id ? actif.mot : -1} onMot={(i, el, doigt) => toucherMot(ph.id, i, el, doigt)}
+              onAppui={() => reglages.pauseAuMot && controleRef.current.pause()}
+              glose={glose?.phrase === ph.id ? glose.mot : -1}
+            />
             {reglages.francais && (
               <p className="lg-st-fr" data-vide={!traductions[ph.id] || undefined}>
                 {traductions[ph.id] ?? (erreur ? erreur : " ")}
@@ -439,11 +442,19 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
   );
 }
 
-function PhraseCliquable({ phrase, actif, glose, onMot }: { phrase: Phrase; actif: number; glose: number; onMot: (i: number, el: HTMLElement, doigt: boolean) => void }) {
+function PhraseCliquable({ phrase, actif, glose, onMot, onAppui }: { phrase: Phrase; actif: number; glose: number; onMot: (i: number, el: HTMLElement, doigt: boolean) => void; onAppui: () => void }) {
   const pointeur = useRef("mouse");
   const mots = useMemo(() => phrase.mots, [phrase]);
   return (
-    <p className="lg-st-courante" lang="en" onPointerDown={(e) => (pointeur.current = e.pointerType)}>
+    <p
+      className="lg-st-courante"
+      lang="en"
+      onPointerDown={(e) => {
+        pointeur.current = e.pointerType;
+        // La phrase se fige dès l'appui : elle ne change pas sous le doigt avant le clic.
+        if ((e.target as HTMLElement).closest(".lg-st-mot")) onAppui();
+      }}
+    >
       {mots.map((m, i) => (
         <span key={i}>
           <button
