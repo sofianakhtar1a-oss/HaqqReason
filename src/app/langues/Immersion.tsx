@@ -3,8 +3,9 @@
 import { ArrowLeft, Captions, FileUp, ListVideo, Maximize2, Type, MousePointerClick, Pause, Play, Repeat, SkipBack, SkipForward } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { dureeLisible } from "@/lib/alambic/transcription/exports";
+import { analyserPhrase } from "@/lib/alambic/transcription/client";
 import { motA, phraseA } from "@/lib/alambic/transcription/phrases";
-import { type Phrase, texteDe, type Transcription } from "@/lib/alambic/transcription/types";
+import { type Analyse, type Phrase, texteDe, type Transcription } from "@/lib/alambic/transcription/types";
 import { ecrire, ecrireBlob, lireBlob, type MediaLangue } from "@/lib/langues/stockage";
 import { type Controle, controleElement, controleVide, controleYoutube, Horloge } from "../alambic/transcription/controle";
 import type { Cible } from "../alambic/transcription/Glose";
@@ -59,6 +60,11 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
   const actifRef = useRef(actif);
   const [lecture, setLecture] = useState(false);
   const [glose, setGlose] = useState<Cible | null>(null);
+  // Le mot touché est-il dans la traduction (et non dans la phrase de la vidéo) ?
+  const [gloseTr, setGloseTr] = useState(false);
+  const [analysesTr, setAnalysesTr] = useState<Record<number, Analyse>>({});
+  const [erreurTr, setErreurTr] = useState<string | null>(null);
+  const analysesTrEnCours = useRef(new Set<number>());
   const [tactile, setTactile] = useState(false);
   const element = useRef<HTMLVideoElement & HTMLAudioElement>(null);
   const hoteYt = useRef<HTMLDivElement>(null);
@@ -177,9 +183,40 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
     traduire([courante - 1, courante, courante + 1, courante + 2, courante + 3].filter((x) => x >= 0 && x < t.phrases.length));
   }, [courante, avecTraduction, traduire, t.phrases.length]);
 
+  // La traduction affichée, découpée en mots touchables (même horodatage que la phrase d'origine).
+  const phraseTraduite = useCallback(
+    (id: number): Phrase | null => {
+      const p = t.phrases[id];
+      const texte = traductions[id];
+      if (!p || !texte) return null;
+      return { id, debut: p.debut, fin: p.fin, paragraphe: p.paragraphe, mots: texte.split(/\s+/).filter(Boolean).map((m) => ({ t: m, d: p.debut, f: p.fin })) };
+    },
+    [t.phrases, traductions],
+  );
+
+  // Un mot de la traduction s'explique dans la langue de la vidéo (anglais → français, français → anglais).
+  const analyserTraduction = useCallback(
+    (id: number) => {
+      const p = phraseTraduite(id);
+      if (!p || analysesTr[id] || analysesTrEnCours.current.has(id)) return;
+      analysesTrEnCours.current.add(id);
+      const contexte = id > 0 ? (traductions[id - 1] ?? "") : "";
+      analyserPhrase(autre, p.mots.map((m) => m.t), contexte, undefined, langue)
+        .then((a: Analyse) => {
+          setAnalysesTr((avant) => ({ ...avant, [id]: a }));
+          setErreurTr(null);
+        })
+        .catch((e) => setErreurTr(e instanceof Error ? e.message : "L'analyse a échoué."))
+        .finally(() => analysesTrEnCours.current.delete(id));
+    },
+    [phraseTraduite, analysesTr, traductions, autre, langue],
+  );
+
   useEffect(() => {
-    if (glose) analyser(glose.phrase);
-  }, [glose, analyser]);
+    if (!glose) return;
+    if (gloseTr) analyserTraduction(glose.phrase);
+    else analyser(glose.phrase);
+  }, [glose, gloseTr, analyser, analyserTraduction]);
 
   // Le texte complet suit la voix.
   useEffect(() => {
@@ -266,8 +303,9 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
     return () => window.removeEventListener("pointerdown", dehors);
   }, [glose, tactile]);
 
-  const toucherMot = (phrase: number, mot: number, el: HTMLElement, viaDoigt: boolean) => {
+  const toucherMot = (phrase: number, mot: number, el: HTMLElement, viaDoigt: boolean, dansTraduction = false) => {
     setTactile(viaDoigt);
+    setGloseTr(dansTraduction);
     if (reglages.pauseAuMot) controleRef.current.pause();
     setGlose({ phrase, mot, el, via: "toucher" });
   };
@@ -276,7 +314,8 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
   const precedente = actif.phrase > 0 ? t.phrases[actif.phrase - 1] : null;
   const suivante = t.phrases[(actif.phrase < 0 ? 0 : actif.phrase) + 1] ?? null;
   const video = media?.type === "youtube" || (media?.type === "fichier" && media.video);
-  const phraseGlose = glose ? t.phrases[glose.phrase] : null;
+  const phraseGlose = glose ? (gloseTr ? phraseTraduite(glose.phrase) : t.phrases[glose.phrase]) : null;
+  const phTr = phraseTraduite(ph.id);
   const duree = t.duree || controle.duree();
 
   return (
@@ -344,9 +383,21 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
               </p>
             )}
             {reglages.affichage === "traduction" ? (
-              <p className="lg-st-courante lg-st-seule" lang={autre} data-vide={!traductions[ph.id] || undefined}>
-                {traductions[ph.id] ?? (erreur ? erreur : "Traduction en cours…")}
-              </p>
+              phTr ? (
+                <PhraseCliquable
+                  phrase={phTr}
+                  langue={autre}
+                  actif={-1}
+                  className="lg-st-courante lg-st-seule"
+                  onMot={(i, el, doigt) => toucherMot(ph.id, i, el, doigt, true)}
+                  onAppui={() => reglages.pauseAuMot && controleRef.current.pause()}
+                  glose={glose?.phrase === ph.id && gloseTr ? glose.mot : -1}
+                />
+              ) : (
+                <p className="lg-st-courante lg-st-seule" lang={autre} data-vide>
+                  {erreur ? erreur : "Traduction en cours…"}
+                </p>
+              )
             ) : (
               <PhraseCliquable
                 phrase={ph}
@@ -354,14 +405,25 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
                 actif={actif.phrase === ph.id ? actif.mot : -1}
                 onMot={(i, el, doigt) => toucherMot(ph.id, i, el, doigt)}
                 onAppui={() => reglages.pauseAuMot && controleRef.current.pause()}
-                glose={glose?.phrase === ph.id ? glose.mot : -1}
+                glose={glose?.phrase === ph.id && !gloseTr ? glose.mot : -1}
               />
             )}
-            {reglages.affichage === "deux" && (
-              <p className="lg-st-fr" lang={autre} data-vide={!traductions[ph.id] || undefined}>
-                {traductions[ph.id] ?? (erreur ? erreur : " ")}
-              </p>
-            )}
+            {reglages.affichage === "deux" &&
+              (phTr ? (
+                <PhraseCliquable
+                  phrase={phTr}
+                  langue={autre}
+                  actif={-1}
+                  className="lg-st-fr"
+                  onMot={(i, el, doigt) => toucherMot(ph.id, i, el, doigt, true)}
+                  onAppui={() => reglages.pauseAuMot && controleRef.current.pause()}
+                  glose={glose?.phrase === ph.id && gloseTr ? glose.mot : -1}
+                />
+              ) : (
+                <p className="lg-st-fr" lang={autre} data-vide>
+                  {erreur ? erreur : " "}
+                </p>
+              ))}
             {suivante && (
               <p className="lg-st-voisine" lang={reglages.affichage === "traduction" && traductions[suivante.id] ? autre : langue}>
                 <button type="button" onClick={() => aller(suivante.debut)}>
@@ -510,12 +572,12 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
         <GloseMot
           cible={glose}
           phrase={phraseGlose}
-          analyse={analyses[glose.phrase]}
-          traduction={traductions[glose.phrase]}
-          erreur={erreur}
+          analyse={gloseTr ? analysesTr[glose.phrase] : analyses[glose.phrase]}
+          traduction={gloseTr ? texteDe(t.phrases[glose.phrase]) : traductions[glose.phrase]}
+          erreur={gloseTr ? erreurTr : erreur}
           origine={{ type: "video", titre: t.titre, ref: t.id, t: phraseGlose.debut }}
           tactile={tactile}
-          langue={langue}
+          langue={gloseTr ? autre : langue}
           onFermer={() => setGlose(null)}
           onMot={(i, el) => setGlose({ phrase: glose.phrase, mot: i, el, via: "toucher" })}
           onEcouter={(s) => {
@@ -535,11 +597,13 @@ function PhraseCliquable({
   glose,
   onMot,
   onAppui,
+  className = "lg-st-courante",
 }: {
   phrase: Phrase;
   langue: "en" | "fr";
   actif: number;
   glose: number;
+  className?: string;
   onMot: (i: number, el: HTMLElement, doigt: boolean) => void;
   onAppui: () => void;
 }) {
@@ -547,7 +611,7 @@ function PhraseCliquable({
   const mots = useMemo(() => phrase.mots, [phrase]);
   return (
     <p
-      className="lg-st-courante"
+      className={className}
       lang={langue}
       onPointerDown={(e) => {
         pointeur.current = e.pointerType;
