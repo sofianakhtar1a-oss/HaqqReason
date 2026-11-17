@@ -18,7 +18,7 @@ await db.exec(`create role anon nologin; create role authenticated nologin; crea
 // Ce que Supabase fournit d'office : le schéma « extensions » et la table des espaces de stockage.
 await db.exec(`create schema extensions; grant usage on schema extensions to anon, authenticated, service_role;
   create schema storage; create table storage.buckets (id text primary key, name text, public boolean, file_size_limit bigint, allowed_mime_types text[]);`);
-for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql", "010_contributions.sql", "011_espaces.sql", "011_espaces.sql", "012_islam_un_bloc.sql", "012_islam_un_bloc.sql", "013_messagerie.sql", "013_messagerie.sql"]) {
+for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql", "010_contributions.sql", "011_espaces.sql", "011_espaces.sql", "012_islam_un_bloc.sql", "012_islam_un_bloc.sql", "013_messagerie.sql", "013_messagerie.sql", "014_comptes.sql", "014_comptes.sql"]) {
   await db.exec(readFileSync(new URL(`../supabase/migrations/${fichier}`, import.meta.url), "utf8"));
 }
 
@@ -499,6 +499,51 @@ ok("[anon] lit la nature d'une amélioration publiée", (await db.query(`select 
 await db.exec(`reset role`);
 await db.exec(`delete from contributions where id = 'c0000000-0000-0000-0000-000000000010'`);
 ok("013 : la conversation disparaît avec la contribution", Number((await db.query(`select count(*)::int n from contributions_messages`)).rows[0].n) === 0);
+
+// 014 : comptes des utilisateurs et données rangées par compte
+{
+  const a = (await db.query(`select * from compte_ouvrir('google-1', 'a@exemple.fr', 'Aïcha')`)).rows[0];
+  const a2 = (await db.query(`select * from compte_ouvrir('google-1', 'a@exemple.fr', 'Aïcha B.')`)).rows[0];
+  const b = (await db.query(`select * from compte_ouvrir('google-2', 'b@exemple.fr', 'Bilal')`)).rows[0];
+  ok("014 : la première connexion crée le compte, la suivante le retrouve", a.nouveau === true && a2.nouveau === false && a2.id === a.id && a2.nom === "Aïcha B." && b.id !== a.id);
+  const ecrire = async (uid, e, plafond = 1000000) => (await db.query(`select donnees_ecrire($1, $2::jsonb, $3) r`, [uid, JSON.stringify(e), plafond])).rows[0].r;
+  const lire = async (uid, depuis = 0, limite = 100, octets = 1000000) => (await db.query(`select * from donnees_lire($1, $2, $3, $4)`, [uid, depuis, limite, octets])).rows;
+  await ecrire(a.id, [{ m: "regles", c: "lecon-1", v: { etoiles: 2 }, q: 1000 }, { m: "calame-documents", c: "d1", v: { titre: "Un" }, q: 1000 }]);
+  await ecrire(a.id, [{ m: "regles", c: "lecon-1", v: { etoiles: 1 }, q: 900 }]);
+  ok("014 : une modification plus ancienne ne remplace pas la plus récente", (await lire(a.id)).find((l) => l.cle === "lecon-1").valeur.etoiles === 2);
+  const avant = Math.max(...(await lire(a.id)).map((l) => Number(l.maj)));
+  await ecrire(a.id, [{ m: "regles", c: "lecon-1", v: { etoiles: 3 }, q: 2000 }]);
+  const apres = await lire(a.id, avant);
+  ok("014 : un appareil ne reçoit que ce qui a changé depuis sa dernière visite", apres.length === 1 && apres[0].valeur.etoiles === 3);
+  await ecrire(a.id, [{ m: "calame-documents", c: "d1", v: null, q: 3000 }]);
+  const supprime = (await lire(a.id)).find((l) => l.cle === "d1");
+  ok("014 : une suppression laisse une trace pour les autres appareils", supprime && supprime.valeur === null);
+  ok("014 : chaque compte ne lit que ses données", (await lire(b.id)).length === 0);
+  const r = await ecrire(a.id, [{ m: "regles", c: "gros", v: { texte: "x".repeat(500) }, q: 1 }], 100);
+  ok("014 : au-delà du plafond du compte, l'écriture est refusée et signalée", r.refusees.length === 1 && !(await lire(a.id)).some((l) => l.cle === "gros"));
+  for (let i = 0; i < 5; i++) await ecrire(b.id, [{ m: "regles", c: `l${i}`, v: { t: "y".repeat(200) }, q: 1 }]);
+  ok("014 : la lecture est bornée en poids, la suite se redemande", (await lire(b.id, 0, 100, 450)).length === 3 && (await lire(b.id, 0, 2, 100000)).length === 2);
+  let magasinRefuse = false;
+  try { await ecrire(a.id, [{ m: "Pas Valide", c: "x", v: 1, q: 1 }]); } catch { magasinRefuse = true; }
+  ok("014 : un nom de magasin fantaisiste est refusé", magasinRefuse);
+  let inconnu = false;
+  try { await ecrire("00000000-0000-0000-0000-000000000000", [{ m: "regles", c: "x", v: 1, q: 1 }]); } catch { inconnu = true; }
+  ok("014 : on n'écrit pas pour un compte qui n'existe pas", inconnu);
+  await db.exec(`insert into fichiers_utilisateur (utilisateur_id, id, taille) values ('${a.id}', 'f1', 1234)`);
+  const place = (await db.query(`select * from compte_place($1)`, [a.id])).rows[0];
+  ok("014 : la place occupée compte les données et les fichiers", Number(place.fichiers) === 1234 && Number(place.donnees) > 0 && Number(place.nb_fichiers) === 1);
+  for (const role of ["anon", "authenticated"]) {
+    await db.exec(`set role ${role}`);
+    await refuse(`[${role}] ne lit pas les comptes`, `select * from utilisateurs`);
+    await refuse(`[${role}] ne lit pas les données des comptes`, `select * from donnees_utilisateur`);
+    await refuse(`[${role}] ne lit pas les fichiers des comptes`, `select * from fichiers_utilisateur`);
+    await refuse(`[${role}] n'appelle pas la lecture des données`, `select * from donnees_lire('${a.id}', 0, 10, 100000)`);
+    await refuse(`[${role}] n'ouvre pas de compte`, `select * from compte_ouvrir('pirate', 'p@x.fr', 'P')`);
+    await db.exec(`reset role`);
+  }
+  await db.exec(`delete from utilisateurs where id = '${a.id}'`);
+  ok("014 : supprimer un compte efface toutes ses données", Number((await db.query(`select count(*)::int n from donnees_utilisateur where utilisateur_id = '${a.id}'`)).rows[0].n) === 0 && Number((await db.query(`select count(*)::int n from fichiers_utilisateur`)).rows[0].n) === 0);
+}
 
 console.log(echecs === 0 ? "\nTous les tests SQL passent." : `\n${echecs} test(s) en échec.`);
 process.exit(echecs === 0 ? 0 : 1);
