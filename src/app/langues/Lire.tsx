@@ -3,12 +3,12 @@
 import { BookOpenText, FileText, LoaderCircle, Upload } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import { type DocumentLangue, ecrire, effacer, listerDocuments, lireUn } from "@/lib/langues/stockage";
-import { BoutonSupprimer } from "./communs";
+import { BoutonSupprimer, ChoixLangue } from "./communs";
 import { useTextes } from "@/lib/modules/textes-client";
 import { LiseusePdf } from "./LiseusePdf";
 
 /*
- * Lire : un PDF en anglais devient un livre où chaque mot se traduit.
+ * Lire : un PDF en anglais ou en français devient un livre où chaque mot se traduit dans l'autre langue.
  * Le texte est extrait ici, dans le navigateur ; seules les phrases à traduire sont envoyées.
  */
 
@@ -20,6 +20,7 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
   const [lecture, setLecture] = useState<{ nom: string; progression: number } | null>(null);
   const [erreur, setErreur] = useState<string | null>(null);
   const [survol, setSurvol] = useState(false);
+  const [langue, setLangue] = useState<"en" | "fr">("en");
   const t = useTextes("langues");
 
   const recharger = useCallback(() => void listerDocuments().then(setDocuments).catch(() => setDocuments([])), []);
@@ -57,6 +58,8 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
         vu: Date.now(),
         traductions: {},
         analyses: {},
+        langue,
+        affiche: "original",
       };
       await ecrire("documents", d);
       recharger();
@@ -93,6 +96,8 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
           </span>
         </div>
       ) : (
+        <div className="lg-import lg-import-pdf">
+        <ChoixLangue valeur={langue} onChange={setLangue} quoi="Le PDF est en" />
         <label
           className="lg-import-fichier lg-import-grand"
           data-survol={survol || undefined}
@@ -115,6 +120,7 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
           </span>
           <input type="file" accept="application/pdf,.pdf" className="sr-only" onChange={(e) => e.target.files?.[0] && void importer(e.target.files[0])} />
         </label>
+        </div>
       )}
       {erreur && (
         <p className="lg-erreur" role="alert">
@@ -143,7 +149,7 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
                     {x.titre}
                   </span>
                   <span className="lg-element-infos">
-                    {x.pages.length} pages · page {x.page}
+                    {x.langue === "fr" ? "Français" : "Anglais"} · {x.pages.length} pages · page {x.page}
                   </span>
                   <span className="lg-element-avancee">
                     <span style={{ transform: `scaleX(${x.page / Math.max(1, x.pages.length)})` }} />
