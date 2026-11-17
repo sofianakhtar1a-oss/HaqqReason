@@ -3,6 +3,7 @@ import Link from "next/link";
 import {
   ArrowRight,
   BookOpen,
+  BookOpenText,
   Feather,
   FlaskConical,
   Languages,
@@ -18,18 +19,21 @@ const ICONES = {
   alambic: FlaskConical,
   langues: Languages,
   bibliotheque: BookOpen,
+  islam: BookOpenText,
 } as const;
 const LIENS = {
   calame: "/ecrire",
   alambic: "/alambic",
   langues: "/langues",
   bibliotheque: "/explorer",
+  islam: "/islam",
 } as const;
 const ACCENTS = {
   calame: "or",
   alambic: "amethyste",
   langues: "azur",
   bibliotheque: "emeraude",
+  islam: "or",
 } as const;
 
 type Props = {
@@ -63,7 +67,7 @@ export default async function PageUtilisateur({ searchParams }: Props) {
 
         <nav
           aria-label="Les espaces"
-          className={`mt-10 grid gap-5 md:grid-cols-2 ${cartes.length >= 4 ? "xl:grid-cols-4" : "xl:grid-cols-3"}`}
+          className={`mt-10 grid gap-5 md:grid-cols-2 ${cartes.length === 4 ? "xl:grid-cols-4" : "xl:grid-cols-3"}`}
         >
           {cartes.map(
             ({ id, valeurs: { titre, soustitre, texte, marque } }) => {
