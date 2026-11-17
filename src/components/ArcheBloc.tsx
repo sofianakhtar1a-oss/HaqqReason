@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { Scale, ShieldCheck, Sun } from "lucide-react";
+import { BookOpenText, Footprints, HandHeart, Scale, ShieldCheck, Sun } from "lucide-react";
 import { motion, useMotionValue, useReducedMotion, useSpring } from "motion/react";
 
 const EMBLEMES = { or: Sun, emeraude: ShieldCheck, amethyste: Scale } as const;
+const EMBLEMES_ISLAM = { or: BookOpenText, emeraude: HandHeart, amethyste: Footprints } as const;
 
 export type Accent = keyof typeof EMBLEMES;
 
@@ -14,14 +15,15 @@ type Props = {
   description: string;
   accent: Accent;
   pied: string;
+  espace?: "preuves" | "islam";
 };
 
 /** Une « porte » vers l'un des trois blocs. Elle s'incline légèrement vers le pointeur. */
-export function ArcheBloc({ href, titre, description, accent, pied }: Props) {
+export function ArcheBloc({ href, titre, description, accent, pied, espace = "preuves" }: Props) {
   const sansMouvement = useReducedMotion();
   const inclinaisonX = useSpring(useMotionValue(0), { stiffness: 180, damping: 18 });
   const inclinaisonY = useSpring(useMotionValue(0), { stiffness: 180, damping: 18 });
-  const Embleme = EMBLEMES[accent];
+  const Embleme = (espace === "islam" ? EMBLEMES_ISLAM : EMBLEMES)[accent];
 
   function suivre(evenement: React.PointerEvent<HTMLDivElement>) {
     if (sansMouvement || evenement.pointerType !== "mouse") return;
