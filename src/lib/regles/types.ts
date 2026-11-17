@@ -1,4 +1,4 @@
-import type { TempsId } from "./conjugueur";
+import type { ModePhrase, TempsId } from "./conjugueur";
 
 /*
  * Une leçon des Règles : quatre étapes, toujours dans le même ordre.
@@ -8,8 +8,8 @@ import type { TempsId } from "./conjugueur";
  * 4. Le secret d'expert : le truc pour ne plus jamais tomber dans le piège.
  *
  * Phrases colorées : [code:texte]. Codes et couleurs :
- * s sujet (vert) · v verbe (corail) · r radical, le corps (azur) · t terminaison, le costume (or)
- * a auxiliaire, le moteur (violet) · p participe (rose) · n nom (azur) · d déterminant (cyan)
+ * s sujet (vert) · v verbe (corail) · r base du verbe (azur) · t terminaison -s, -ed, -ing (or)
+ * a auxiliaire, le moteur : do, be, have, will (violet) · p forme irrégulière ou participe (rose) · n nom (azur) · d déterminant (cyan)
  * j adjectif (rose) · c complément (or) · o pronom (cyan) · k mot-lien (violet)
  * x le piège (souligné) · m lettre muette (pâle)
  */
@@ -52,7 +52,7 @@ export type Lecon = {
     legende?: Partial<Record<Code, string>>;
     etapes: { p: string; n: string }[];
     /** La Machine à voyager dans le temps, réglée pour la leçon. */
-    machine?: { temps: TempsId[]; verbes: string[] };
+    machine?: { temps: TempsId[]; verbes: string[]; mode?: ModePhrase };
   };
   defi: Question[];
   secret: { titre: string; texte: string; formule?: string };
@@ -71,16 +71,16 @@ export type Section = {
 export const LEGENDE_DEFAUT: Record<Code, string> = {
   s: "le sujet, celui qui agit",
   v: "le verbe, l'action",
-  r: "le corps du verbe (radical)",
-  t: "son costume (terminaison)",
-  a: "le moteur (auxiliaire)",
-  p: "le participe",
+  r: "la base du verbe",
+  t: "la terminaison (-s, -ed, -ing)",
+  a: "le moteur (auxiliaire : do, be, have, will)",
+  p: "la forme irrégulière, le participe",
   n: "le nom",
   d: "le petit mot devant (déterminant)",
   j: "l'adjectif, le mot qui décrit",
   c: "le complément",
   o: "le pronom, le remplaçant",
-  k: "le mot-lien",
+  k: "le mot-lien (not, to, and…)",
   x: "le piège",
   m: "la lettre muette",
 };

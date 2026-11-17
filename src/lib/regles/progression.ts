@@ -10,7 +10,7 @@ import { useSyncExternalStore } from "react";
 export type Resultat = { etoiles: number; xp: number; fini: number };
 type Etat = { lecons: Record<string, Resultat> };
 
-const CLE = "haqqreason-regles";
+const CLE = "haqqreason-regles-anglais";
 const vide: Etat = { lecons: {} };
 let etat: Etat | null = null;
 const abonnes = new Set<() => void>();

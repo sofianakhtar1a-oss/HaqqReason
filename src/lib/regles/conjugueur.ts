@@ -1,282 +1,396 @@
 /*
- * Le moteur de la Machine à voyager dans le temps.
- * Les temps simples viennent de la base (Lefff, corrigée) ; les temps composés, le futur proche,
- * le passé récent, les verbes pronominaux et les accords sont calculés ici.
- * Chaque forme est découpée en morceaux colorés : pronom, auxiliaire (le moteur), radical (le corps),
- * terminaison (le costume), participe.
+ * Le moteur de la Machine à voyager dans le temps, version anglaise.
+ * Les verbes irréguliers viennent d'une liste (verbes-a), les réguliers se calculent avec les règles
+ * d'orthographe (-s, -ed, -ing, consonne doublée). Chaque forme est découpée en morceaux colorés :
+ * le sujet, l'auxiliaire (le moteur : do, be, have, will, would), la base du verbe, sa terminaison,
+ * la forme irrégulière, le mot-lien (not, to, going to).
  */
 
-export type Role = "pronom" | "que" | "reflexif" | "auxiliaire" | "radical" | "terminaison" | "participe" | "lien" | "infinitif";
+export type Role = "pronom" | "auxiliaire" | "radical" | "terminaison" | "irregulier" | "lien" | "signe";
 export type Morceau = { texte: string; role: Role };
 export type Forme = Morceau[] | null;
 
 export type TempsId =
-  | "present"
-  | "imparfait"
-  | "passeSimple"
-  | "futur"
-  | "passeCompose"
-  | "plusQueParfait"
-  | "passeAnterieur"
-  | "futurAnterieur"
-  | "futurProche"
-  | "passeRecent"
-  | "conditionnel"
-  | "conditionnelPasse"
-  | "subjonctif"
-  | "subjonctifPasse"
-  | "subjonctifImparfait"
-  | "subjonctifPlusQueParfait"
-  | "imperatif"
-  | "imperatifPasse";
+  | "presentSimple"
+  | "presentContinuous"
+  | "presentPerfect"
+  | "presentPerfectContinuous"
+  | "pastSimple"
+  | "pastContinuous"
+  | "pastPerfect"
+  | "pastPerfectContinuous"
+  | "futureSimple"
+  | "futureContinuous"
+  | "futurePerfect"
+  | "futurePerfectContinuous"
+  | "conditional"
+  | "conditionalContinuous"
+  | "conditionalPerfect"
+  | "conditionalPerfectContinuous"
+  | "passivePresent"
+  | "passivePresentContinuous"
+  | "passivePast"
+  | "passivePastContinuous"
+  | "passivePresentPerfect"
+  | "passivePastPerfect"
+  | "passiveFuture"
+  | "passiveGoingTo"
+  | "passiveConditional"
+  | "passiveConditionalPerfect"
+  | "goingTo"
+  | "usedTo"
+  | "imperative";
 
-export type Monde = "reel" | "reve" | "souhait" | "ordre";
+export type Monde = "reel" | "reve" | "passif" | "tournures";
+export type Epoque = "passe" | "present" | "futur";
+export type Aspect = "simple" | "continu" | "parfait" | "parfaitContinu";
+export type ModePhrase = "affirmative" | "negative" | "question";
 
 export type Temps = {
   id: TempsId;
   monde: Monde;
+  /** Le nom anglais, celui des manuels. */
   nom: string;
   /** Ce que le temps raconte, en mots simples. */
   image: string;
   niveau: "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
+  epoque?: Epoque;
+  aspect?: Aspect;
 };
 
 export const TEMPS: Temps[] = [
-  { id: "passeSimple", monde: "reel", nom: "Passé simple", image: "Il était une fois… : le temps des contes et des livres d'histoire", niveau: "C1" },
-  { id: "passeAnterieur", monde: "reel", nom: "Passé antérieur", image: "Juste avant une action des contes", niveau: "C2" },
-  { id: "plusQueParfait", monde: "reel", nom: "Plus-que-parfait", image: "Le passé du passé : c'était déjà fait avant", niveau: "B1" },
-  { id: "imparfait", monde: "reel", nom: "Imparfait", image: "Le décor du passé, le film qui tourne en fond", niveau: "A2" },
-  { id: "passeCompose", monde: "reel", nom: "Passé composé", image: "La photo souvenir : une action finie", niveau: "A2" },
-  { id: "passeRecent", monde: "reel", nom: "Passé récent", image: "Ça vient juste d'arriver, il y a deux secondes", niveau: "A1" },
-  { id: "present", monde: "reel", nom: "Présent", image: "Maintenant, ici, en direct", niveau: "A1" },
-  { id: "futurProche", monde: "reel", nom: "Futur proche", image: "Ça va arriver tout de suite", niveau: "A1" },
-  { id: "futur", monde: "reel", nom: "Futur simple", image: "Plus tard, demain, un jour", niveau: "A2" },
-  { id: "futurAnterieur", monde: "reel", nom: "Futur antérieur", image: "Dans le futur, ce sera déjà fini", niveau: "B1" },
-  { id: "conditionnel", monde: "reve", nom: "Conditionnel présent", image: "La bulle de rêve : si… alors…, et la politesse", niveau: "B1" },
-  { id: "conditionnelPasse", monde: "reve", nom: "Conditionnel passé", image: "Le regret : ce qui aurait pu arriver", niveau: "B2" },
-  { id: "subjonctif", monde: "souhait", nom: "Subjonctif présent", image: "Le monde des envies, des peurs et des obligations", niveau: "B1" },
-  { id: "subjonctifPasse", monde: "souhait", nom: "Subjonctif passé", image: "Une envie à propos d'une chose déjà faite", niveau: "B2" },
-  { id: "subjonctifImparfait", monde: "souhait", nom: "Subjonctif imparfait", image: "Le subjonctif des grands écrivains", niveau: "C2" },
-  { id: "subjonctifPlusQueParfait", monde: "souhait", nom: "Subjonctif plus-que-parfait", image: "Le regret des grands écrivains", niveau: "C2" },
-  { id: "imperatif", monde: "ordre", nom: "Impératif présent", image: "La télécommande : un ordre, un conseil", niveau: "A1" },
-  { id: "imperatifPasse", monde: "ordre", nom: "Impératif passé", image: "Un ordre à finir avant un moment précis", niveau: "C1" },
+  { id: "pastSimple", monde: "reel", nom: "Past simple", image: "Une action terminée, à un moment précis du passé (yesterday, last week, in 2010).", niveau: "A2", epoque: "passe", aspect: "simple" },
+  { id: "pastContinuous", monde: "reel", nom: "Past continuous", image: "« J'étais en train de… » : le décor d'une histoire passée.", niveau: "A2", epoque: "passe", aspect: "continu" },
+  { id: "pastPerfect", monde: "reel", nom: "Past perfect", image: "Le passé du passé : c'était déjà fait avant un autre moment passé.", niveau: "B1", epoque: "passe", aspect: "parfait" },
+  { id: "pastPerfectContinuous", monde: "reel", nom: "Past perfect continuous", image: "Ça durait déjà depuis un moment, avant un autre moment passé.", niveau: "B2", epoque: "passe", aspect: "parfaitContinu" },
+  { id: "presentSimple", monde: "reel", nom: "Present simple", image: "Les habitudes et les vérités : ce qui est vrai en général.", niveau: "A1", epoque: "present", aspect: "simple" },
+  { id: "presentContinuous", monde: "reel", nom: "Present continuous", image: "« Je suis en train de… » : ce qui se passe en ce moment même.", niveau: "A1", epoque: "present", aspect: "continu" },
+  { id: "presentPerfect", monde: "reel", nom: "Present perfect", image: "Le pont entre passé et présent : une expérience de vie, un résultat visible maintenant.", niveau: "B1", epoque: "present", aspect: "parfait" },
+  { id: "presentPerfectContinuous", monde: "reel", nom: "Present perfect continuous", image: "Ça a commencé avant et ça dure encore : le « depuis » français.", niveau: "B1", epoque: "present", aspect: "parfaitContinu" },
+  { id: "futureSimple", monde: "reel", nom: "Future (will)", image: "Une décision prise sur le moment, une prédiction, une promesse.", niveau: "A2", epoque: "futur", aspect: "simple" },
+  { id: "futureContinuous", monde: "reel", nom: "Future continuous", image: "« Je serai en train de… » à un moment précis du futur.", niveau: "B2", epoque: "futur", aspect: "continu" },
+  { id: "futurePerfect", monde: "reel", nom: "Future perfect", image: "Dans le futur, ce sera déjà fini (by tomorrow, by 2030).", niveau: "B2", epoque: "futur", aspect: "parfait" },
+  { id: "futurePerfectContinuous", monde: "reel", nom: "Future perfect continuous", image: "À un moment futur, ça durera déjà depuis un certain temps.", niveau: "C1", epoque: "futur", aspect: "parfaitContinu" },
+
+  { id: "conditional", monde: "reve", nom: "Conditional (would)", image: "La bulle de rêve : ce qui arriverait si…, et la politesse (I would like).", niveau: "B1" },
+  { id: "conditionalContinuous", monde: "reve", nom: "Conditional continuous", image: "Ce qu'on serait en train de faire, dans un monde imaginaire.", niveau: "B2" },
+  { id: "conditionalPerfect", monde: "reve", nom: "Conditional perfect", image: "Le regret : ce qui serait arrivé si… (mais ce n'est pas arrivé).", niveau: "B2" },
+  { id: "conditionalPerfectContinuous", monde: "reve", nom: "Conditional perfect continuous", image: "Ce qu'on aurait été en train de faire, si les choses avaient été différentes.", niveau: "C1" },
+
+  { id: "passivePresent", monde: "passif", nom: "Present simple passive", image: "L'action tombe sur le sujet, en général : English is spoken here.", niveau: "B1" },
+  { id: "passivePresentContinuous", monde: "passif", nom: "Present continuous passive", image: "L'action tombe sur le sujet en ce moment : the road is being repaired.", niveau: "B2" },
+  { id: "passivePast", monde: "passif", nom: "Past simple passive", image: "L'action est tombée sur le sujet dans le passé : it was built in 1889.", niveau: "B1" },
+  { id: "passivePastContinuous", monde: "passif", nom: "Past continuous passive", image: "Le sujet était en train de subir l'action : the car was being washed.", niveau: "B2" },
+  { id: "passivePresentPerfect", monde: "passif", nom: "Present perfect passive", image: "Le résultat est là maintenant : my bike has been stolen!", niveau: "B1" },
+  { id: "passivePastPerfect", monde: "passif", nom: "Past perfect passive", image: "C'était déjà subi avant un autre moment passé.", niveau: "B2" },
+  { id: "passiveFuture", monde: "passif", nom: "Future passive (will)", image: "Le sujet subira l'action : the results will be announced tomorrow.", niveau: "B1" },
+  { id: "passiveGoingTo", monde: "passif", nom: "Going to passive", image: "C'est prévu, le sujet va subir l'action.", niveau: "B2" },
+  { id: "passiveConditional", monde: "passif", nom: "Conditional passive", image: "Le sujet subirait l'action, si…", niveau: "B2" },
+  { id: "passiveConditionalPerfect", monde: "passif", nom: "Conditional perfect passive", image: "Le sujet aurait subi l'action, si…", niveau: "C1" },
+
+  { id: "imperative", monde: "tournures", nom: "Imperative", image: "La télécommande : un ordre, un conseil, une invitation.", niveau: "A1" },
+  { id: "goingTo", monde: "tournures", nom: "Be going to", image: "Le projet déjà décidé, ou ce qu'on voit arriver (look at those clouds!).", niveau: "A2" },
+  { id: "usedTo", monde: "tournures", nom: "Used to", image: "Les habitudes d'autrefois, qui n'existent plus aujourd'hui.", niveau: "A2" },
 ];
 
 export const MONDES: { id: Monde; nom: string; image: string }[] = [
-  { id: "reel", nom: "Le monde réel", image: "Ce qui arrive vraiment (l'indicatif)" },
-  { id: "reve", nom: "Le monde des rêves", image: "Ce qui arriverait si… (le conditionnel)" },
-  { id: "souhait", nom: "Le monde des souhaits", image: "Ce qu'on veut, craint ou exige (le subjonctif)" },
-  { id: "ordre", nom: "La télécommande", image: "Ce qu'on ordonne (l'impératif)" },
+  { id: "reel", nom: "Le monde réel", image: "Les 12 temps : 3 époques × 4 façons de voir l'action" },
+  { id: "reve", nom: "Le monde des rêves", image: "Ce qui arriverait si… (would)" },
+  { id: "passif", nom: "Le monde à l'envers", image: "Le sujet subit l'action (le passif)" },
+  { id: "tournures", nom: "Les tournures", image: "L'ordre, le projet, l'habitude d'avant" },
+];
+
+export const EPOQUES: { id: Epoque; nom: string; anglais: string }[] = [
+  { id: "passe", nom: "Le passé", anglais: "past" },
+  { id: "present", nom: "Le présent", anglais: "present" },
+  { id: "futur", nom: "Le futur", anglais: "future" },
+];
+
+export const ASPECTS: { id: Aspect; nom: string; recette: string }[] = [
+  { id: "simple", nom: "Simple", recette: "le verbe tout seul" },
+  { id: "continu", nom: "Continuous", recette: "be + -ing" },
+  { id: "parfait", nom: "Perfect", recette: "have + participe" },
+  { id: "parfaitContinu", nom: "Perfect continuous", recette: "have been + -ing" },
 ];
 
 /* ---------- La base ---------- */
 
-type Base = { P?: (string | null)[]; I?: (string | null)[]; J?: (string | null)[]; F?: (string | null)[]; C?: (string | null)[]; S?: (string | null)[]; T?: (string | null)[]; Y?: (string | null)[]; G?: (string | null)[]; K?: (string | null)[] };
-const ORDRE = ["P", "I", "J", "F", "C", "S", "T", "Y", "G", "K"] as const;
+export type InfoVerbe = { base: string; passe: string[]; participe: string[]; irregulier: boolean };
+export type Verbes = Map<string, InfoVerbe>;
 
-let cache: Map<string, Base> | null = null;
-let promesse: Promise<Map<string, Base>> | null = null;
-
-function decoder(texte: string, m: Map<string, Base>) {
-  for (const ligne of texte.split("\n")) {
-    const deux = ligne.indexOf(":");
-    const verbe = ligne.slice(0, deux);
-    const parts = ligne.slice(deux + 1).split(";");
-    const b: Base = {};
-    ORDRE.forEach((t, k) => {
-      const p = parts[k];
-      if (!p) return;
-      const [pre, suf] = p.split("|");
-      b[t] = suf.split(",").map((s) => (s === "-" ? null : pre + s));
-    });
-    m.set(verbe, b);
-  }
-}
+let cache: Verbes | null = null;
+let promesse: Promise<Verbes> | null = null;
 
 /** Charge la base (deux morceaux, séparés du reste du site). */
-export function chargerVerbes(): Promise<Map<string, Base>> {
+export function chargerVerbes(): Promise<Verbes> {
   if (cache) return Promise.resolve(cache);
   promesse ??= Promise.all([import("./verbes-a"), import("./verbes-b")]).then(([a, b]) => {
-    const m = new Map<string, Base>();
-    decoder(a.VERBES, m);
-    decoder(b.VERBES, m);
+    const m: Verbes = new Map();
+    for (const ligne of a.IRREGULIERS.split("\n")) {
+      const [base, passe, participe] = ligne.trim().split(" ");
+      if (base) m.set(base, { base, passe: passe.split("/"), participe: participe.split("/"), irregulier: true });
+    }
+    for (const base of b.REGULIERS.split(/\s+/)) {
+      if (!base || m.has(base)) continue;
+      const ed = formeEd(base).join("");
+      m.set(base, { base, passe: [ed], participe: [ed], irregulier: false });
+    }
     cache = m;
     return m;
   });
   return promesse;
 }
 
-/* ---------- Les règles ---------- */
+/* ---------- L'orthographe ---------- */
 
-/** Verbes qui voyagent avec le moteur « être » aux temps composés (la maison d'être). */
-export const VERBES_ETRE = new Set([
-  "aller", "venir", "devenir", "revenir", "parvenir", "intervenir", "arriver", "partir", "rester", "tomber", "naître", "mourir",
-  "entrer", "rentrer", "sortir", "monter", "descendre", "retourner", "passer", "apparaître", "éclore",
+/** Les verbes de plusieurs syllabes qui doublent leur consonne finale (accent sur la fin, ou -l britannique). */
+const DOUBLENT = new Set([
+  "admit", "commit", "control", "occur", "permit", "prefer", "refer", "regret", "transfer", "travel", "cancel", "label", "quarrel",
+  "equip", "compel", "expel", "patrol", "forget", "begin", "upset", "forbid", "quit", "beget", "outrun", "overrun", "underlet",
 ]);
-const H_ASPIRE = new Set(["haïr", "hurler", "hacher", "hisser", "heurter", "hanter", "harceler", "hausser", "hâter"]);
 
-export type VerbeChoisi = { infinitif: string; base: string; pronominal: boolean };
-
-export function lireVerbe(saisie: string): VerbeChoisi {
-  const s = saisie.trim().toLowerCase();
-  const m = /^(?:se |s')(.+)$/.exec(s);
-  return m ? { infinitif: s, base: m[1], pronominal: true } : { infinitif: s, base: s, pronominal: false };
+export function doubleSaConsonne(b: string) {
+  if (DOUBLENT.has(b)) return true;
+  const syllabes = b.match(/[aeiou]+/g)?.length ?? 0;
+  return syllabes === 1 && /[^aeiou][aeiou][^aeiouwxy]$/.test(b);
 }
 
-const voyelle = (mot: string, base: string) => /^[aeiouyàâäéèêëîïôöùûüœæ]/i.test(mot) || (/^h/i.test(mot) && !H_ASPIRE.has(base));
+/** La 3e personne : [base, terminaison] (study → stud + ies). */
+export function formeS(b: string): [string, string] {
+  if (/[^aeiou]y$/.test(b)) return [b.slice(0, -1), "ies"];
+  if (/(s|x|z|ch|sh)$/.test(b) || /[^aeiou]o$/.test(b)) return [b, "es"];
+  return [b, "s"];
+}
 
-const PRONOMS = ["je", "tu", "il", "nous", "vous", "ils"];
-const PRONOMS_F = ["je", "tu", "elle", "nous", "vous", "elles"];
-const REFLEXIFS = ["me", "te", "se", "nous", "vous", "se"];
+/** Le -ed régulier : [base, terminaison] (stop → stop + ped). */
+export function formeEd(b: string): [string, string] {
+  if (/e$/.test(b)) return [b, "d"];
+  if (/[^aeiou]y$/.test(b)) return [b.slice(0, -1), "ied"];
+  if (/c$/.test(b)) return [b, "ked"];
+  if (doubleSaConsonne(b)) return [b, b.slice(-1) + "ed"];
+  return [b, "ed"];
+}
 
-type Simple = "P" | "I" | "J" | "F" | "C" | "S" | "T" | "Y";
-const TERMINAISONS: Record<Simple, string[][]> = {
-  P: [["ai", "e", "s", "x"], ["es", "as", "s", "x"], ["e", "t", "d", "a", "c"], ["ons", "mes"], ["ez", "es"], ["ent", "ont"]],
-  I: [["ais"], ["ais"], ["ait"], ["ions"], ["iez"], ["aient"]],
-  J: [["ai", "is", "us", "ins"], ["as", "is", "us", "ins"], ["a", "it", "ut", "int"], ["âmes", "îmes", "ûmes", "înmes"], ["âtes", "îtes", "ûtes", "întes"], ["èrent", "irent", "urent", "inrent"]],
-  F: [["rai"], ["ras"], ["ra"], ["rons"], ["rez"], ["ront"]],
-  C: [["rais"], ["rais"], ["rait"], ["rions"], ["riez"], ["raient"]],
-  S: [["e", "s"], ["es", "s"], ["e", "t"], ["ions", "yons"], ["iez", "yez"], ["ent"]],
-  T: [["sse"], ["sses"], ["ât", "ît", "ût", "înt"], ["ssions"], ["ssiez"], ["ssent"]],
-  Y: [["e", "s", "x", "a"], ["ons"], ["ez", "es"]],
+/** La forme en -ing : [base, terminaison] (make → mak + ing, die → d + ying). */
+export function formeIng(b: string): [string, string] {
+  if (b === "be") return ["be", "ing"];
+  if (/ie$/.test(b)) return [b.slice(0, -2), "ying"];
+  if (/[^eoy]e$/.test(b)) return [b.slice(0, -1), "ing"];
+  if (/c$/.test(b)) return [b, "king"];
+  if (doubleSaConsonne(b)) return [b, b.slice(-1) + "ing"];
+  return [b, "ing"];
+}
+
+/* ---------- Les catégories utiles ---------- */
+
+/** Verbes sans complément d'objet : pas de passif. */
+export const INTRANSITIFS = new Set([
+  "be", "have", "arrive", "come", "go", "die", "happen", "exist", "fall", "sleep", "lie", "rise", "sit", "smile", "laugh", "cry", "yawn",
+  "appear", "disappear", "vanish", "belong", "seem", "become", "occur", "remain", "stay", "depend", "consist", "rely", "succeed", "suffer",
+  "agree", "disagree", "apologise", "complain", "retire", "wait", "jog", "nod", "pray", "queue", "rain", "snow", "kneel", "flow", "float",
+  "glow", "gaze", "sail", "march", "behave", "exist", "cough", "matter", "flee", "creep", "arise", "awake", "oversleep", "lean", "cling",
+]);
+
+/** Verbes d'état : ils refusent presque toujours la forme en -ing. */
+export const ETATS = new Set([
+  "know", "like", "love", "hate", "want", "need", "prefer", "believe", "understand", "remember", "forget", "belong", "own", "possess",
+  "seem", "mean", "recognise", "suppose", "contain", "consist", "deserve", "matter", "owe", "realise", "doubt", "dislike", "wish",
+]);
+
+/* ---------- Les morceaux ---------- */
+
+type Mot = { m: Morceau[]; aux?: string };
+
+const PRESENT_BE = ["am", "are", "is", "are", "are", "are"];
+const PASSE_BE = ["was", "were", "was", "were", "were", "were"];
+
+const mot = (texte: string, role: Role, aux?: string): Mot => ({ m: [{ texte, role }], aux });
+const coupe = ([r, t]: [string, string]): Mot => ({ m: [{ texte: r, role: "radical" }, ...(t ? [{ texte: t, role: "terminaison" as Role }] : [])] });
+
+const beAux = (p: number, passe = false) => {
+  const f = (passe ? PASSE_BE : PRESENT_BE)[p];
+  return mot(f, "auxiliaire", f);
+};
+const haveAux = (p: number, passe = false) => {
+  const f = passe ? "had" : p === 2 ? "has" : "have";
+  return mot(f, "auxiliaire", f);
+};
+const doAux = (p: number, passe = false) => {
+  const f = passe ? "did" : p === 2 ? "does" : "do";
+  return mot(f, "auxiliaire", f);
+};
+const lien = (t: string) => mot(t, "lien");
+
+const baseDe = (v: InfoVerbe): Mot => mot(v.base, "radical");
+const ingDe = (v: InfoVerbe): Mot => coupe(formeIng(v.base));
+const participeDe = (v: InfoVerbe): Mot => (v.irregulier ? mot(v.participe[0], "irregulier") : coupe(formeEd(v.base)));
+const passeDe = (v: InfoVerbe, p: number): Mot => {
+  if (v.base === "be") return mot(PASSE_BE[p], "irregulier", PASSE_BE[p]);
+  return v.irregulier ? mot(v.passe[0], "irregulier") : coupe(formeEd(v.base));
+};
+const presentDe = (v: InfoVerbe, p: number): Mot => {
+  if (v.base === "be") return mot(PRESENT_BE[p], "irregulier", PRESENT_BE[p]);
+  if (p !== 2) return baseDe(v);
+  if (v.base === "have") return mot("has", "irregulier");
+  return coupe(formeS(v.base));
 };
 
-/** Le corps (radical) et le costume (terminaison) d'une forme simple. */
-export function decouper(forme: string, temps: Simple, personne: number): Morceau[] {
-  const possibles = [...(TERMINAISONS[temps][personne] ?? [])].sort((a, b) => b.length - a.length);
-  const t = possibles.find((x) => forme.endsWith(x) && forme.length > x.length) ?? possibles.find((x) => forme.endsWith(x)) ?? "";
-  const r = forme.slice(0, forme.length - t.length);
-  const sortie: Morceau[] = [];
-  if (r) sortie.push({ texte: r, role: "radical" });
-  if (t) sortie.push({ texte: t, role: "terminaison" });
-  return sortie;
-}
+type Chaine = { mots: Mot[]; avecDo?: { passe: boolean; suite: Mot[] } };
 
-type Options = { feminin: boolean };
-
-const SIMPLE: Partial<Record<TempsId, Simple>> = {
-  present: "P",
-  imparfait: "I",
-  passeSimple: "J",
-  futur: "F",
-  conditionnel: "C",
-  subjonctif: "S",
-  subjonctifImparfait: "T",
-};
-const COMPOSE: Partial<Record<TempsId, Simple>> = {
-  passeCompose: "P",
-  plusQueParfait: "I",
-  passeAnterieur: "J",
-  futurAnterieur: "F",
-  conditionnelPasse: "C",
-  subjonctifPasse: "S",
-  subjonctifPlusQueParfait: "T",
-};
-
-export function auxiliaireDe(v: VerbeChoisi) {
-  return v.pronominal || VERBES_ETRE.has(v.base) ? "être" : "avoir";
-}
-
-/** Le participe passé accordé (ms, mp, fs, fp) ; avec avoir, il reste au masculin singulier. */
-function participe(b: Base, avecEtre: boolean, personne: number, o: Options) {
-  const k = b.K ?? [];
-  if (!avecEtre) return k[0] ?? "";
-  const pluriel = personne >= 3;
-  return k[(o.feminin ? 2 : 0) + (pluriel ? 1 : 0)] ?? k[0] ?? "";
-}
-
-/** Le sujet, l'éventuel « que » du subjonctif, le pronom réfléchi : avec élision devant une voyelle. */
-function devant(personne: number, suite: string, base: string, v: VerbeChoisi, o: Options, subjonctif: boolean): Morceau[] {
-  const sortie: Morceau[] = [];
-  const pronom = (o.feminin ? PRONOMS_F : PRONOMS)[personne];
-  const apres = v.pronominal ? REFLEXIFS[personne] : suite;
-  if (subjonctif) sortie.push({ texte: personne === 2 || personne === 5 ? "qu'" : "que ", role: "que" });
-  if (personne === 0 && voyelle(apres, base)) sortie.push({ texte: "j'", role: "pronom" });
-  else sortie.push({ texte: pronom + " ", role: "pronom" });
-  if (v.pronominal) {
-    const r = REFLEXIFS[personne];
-    if (personne !== 3 && personne !== 4 && voyelle(suite, base)) sortie.push({ texte: r[0] + "'", role: "reflexif" });
-    else sortie.push({ texte: r + " ", role: "reflexif" });
+function chaine(temps: TempsId, v: InfoVerbe, p: number): Chaine | null {
+  const estBe = v.base === "be";
+  const pp = participeDe(v);
+  const ing = ingDe(v);
+  const be = mot("be", "auxiliaire");
+  const been = mot("been", "auxiliaire");
+  const being = mot("being", "auxiliaire");
+  const have = mot("have", "auxiliaire");
+  const will = mot("will", "auxiliaire", "will");
+  const would = mot("would", "auxiliaire", "would");
+  if (temps.startsWith("passive") && INTRANSITIFS.has(v.base)) return null;
+  switch (temps) {
+    case "presentSimple":
+      return estBe ? { mots: [presentDe(v, p)] } : { mots: [presentDe(v, p)], avecDo: { passe: false, suite: [baseDe(v)] } };
+    case "pastSimple":
+      return estBe ? { mots: [passeDe(v, p)] } : { mots: [passeDe(v, p)], avecDo: { passe: true, suite: [baseDe(v)] } };
+    case "presentContinuous":
+      return { mots: [beAux(p), ing] };
+    case "pastContinuous":
+      return { mots: [beAux(p, true), ing] };
+    case "presentPerfect":
+      return { mots: [haveAux(p), pp] };
+    case "pastPerfect":
+      return { mots: [haveAux(p, true), pp] };
+    case "presentPerfectContinuous":
+      return { mots: [haveAux(p), been, ing] };
+    case "pastPerfectContinuous":
+      return { mots: [haveAux(p, true), been, ing] };
+    case "futureSimple":
+      return { mots: [will, baseDe(v)] };
+    case "futureContinuous":
+      return { mots: [will, be, ing] };
+    case "futurePerfect":
+      return { mots: [will, have, pp] };
+    case "futurePerfectContinuous":
+      return { mots: [will, have, been, ing] };
+    case "conditional":
+      return { mots: [would, baseDe(v)] };
+    case "conditionalContinuous":
+      return { mots: [would, be, ing] };
+    case "conditionalPerfect":
+      return { mots: [would, have, pp] };
+    case "conditionalPerfectContinuous":
+      return { mots: [would, have, been, ing] };
+    case "goingTo":
+      return { mots: [beAux(p), lien("going"), lien("to"), baseDe(v)] };
+    case "usedTo":
+      return { mots: [coupe(["use", "d"]), lien("to"), baseDe(v)], avecDo: { passe: true, suite: [mot("use", "radical"), lien("to"), baseDe(v)] } };
+    case "passivePresent":
+      return { mots: [beAux(p), pp] };
+    case "passivePresentContinuous":
+      return { mots: [beAux(p), being, pp] };
+    case "passivePast":
+      return { mots: [beAux(p, true), pp] };
+    case "passivePastContinuous":
+      return { mots: [beAux(p, true), being, pp] };
+    case "passivePresentPerfect":
+      return { mots: [haveAux(p), been, pp] };
+    case "passivePastPerfect":
+      return { mots: [haveAux(p, true), been, pp] };
+    case "passiveFuture":
+      return { mots: [will, be, pp] };
+    case "passiveGoingTo":
+      return { mots: [beAux(p), lien("going"), lien("to"), be, pp] };
+    case "passiveConditional":
+      return { mots: [would, be, pp] };
+    case "passiveConditionalPerfect":
+      return { mots: [would, have, been, pp] };
+    default:
+      return null;
   }
+}
+
+/* ---------- Les contractions ---------- */
+
+const CONTRACTE: Record<string, string> = { am: "'m", are: "'re", is: "'s", have: "'ve", has: "'s", had: "'d", will: "'ll", would: "'d" };
+const NEGATIF: Record<string, [string, string]> = {
+  is: ["is", "n't"], are: ["are", "n't"], was: ["was", "n't"], were: ["were", "n't"], have: ["have", "n't"], has: ["has", "n't"], had: ["had", "n't"],
+  do: ["do", "n't"], does: ["does", "n't"], did: ["did", "n't"], will: ["wo", "n't"], would: ["would", "n't"],
+};
+
+/** Met les mots bout à bout : un espace entre deux mots, rien à l'intérieur d'un mot. */
+function assembler(mots: Mot[]): Morceau[] {
+  const sortie: Morceau[] = [];
+  mots.forEach((w, i) => {
+    w.m.forEach((x, k) => sortie.push({ ...x, texte: x.texte + (k === w.m.length - 1 && i < mots.length - 1 ? " " : "") }));
+  });
   return sortie;
 }
+
+export type Options = { troisieme: "he" | "she" | "it"; mode: ModePhrase; contractions: boolean };
+
+export const SUJETS = (troisieme: string) => ["I", "you", troisieme, "we", "you", "they"];
 
 /**
- * Les six formes d'un temps (trois à l'impératif). null : la forme n'existe pas
- * (« il faut » n'a qu'une personne, « clore » n'a pas de « nous »).
+ * Les six formes d'un temps (deux à l'impératif : you et let's).
+ * null : la forme n'existe pas (le passif d'un verbe sans complément, une question à l'impératif).
  */
-export function conjuguer(verbes: Map<string, Base>, saisie: string, temps: TempsId, o: Options): Forme[] {
-  const v = lireVerbe(saisie);
-  const b = verbes.get(v.base);
-  if (!b) return [];
-  const aux = auxiliaireDe(v);
-  const ba = verbes.get(aux === "être" ? "être" : "avoir");
+export function conjuguer(verbes: Verbes, saisie: string, temps: TempsId, o: Options): Forme[] {
+  const v = verbes.get(saisie.trim().toLowerCase());
+  if (!v) return [];
 
-  if (temps === "imperatif" || temps === "imperatifPasse") {
-    const reflexifs = ["toi", "nous", "vous"];
-    return [0, 1, 2].map((k) => {
-      if (temps === "imperatif") {
-        const f = b.Y?.[k];
-        if (!f) return null;
-        const sortie = decouper(f, "Y", k);
-        if (v.pronominal) sortie.push({ texte: "-" + reflexifs[k], role: "reflexif" });
-        return sortie;
-      }
-      const fa = ba?.Y?.[k];
-      if (!fa || v.pronominal) return null;
-      return [
-        { texte: fa + " ", role: "auxiliaire" },
-        { texte: participe(b, aux === "être", k === 0 ? 0 : 3, o), role: "participe" },
-      ];
-    });
+  if (temps === "imperative") {
+    if (o.mode === "question") return [null, null];
+    const neg = o.mode === "negative";
+    const toi: Mot[] = neg ? (o.contractions ? [{ m: [{ texte: "do", role: "auxiliaire" }, { texte: "n't", role: "lien" }] }, baseDe(v)] : [mot("do", "auxiliaire"), lien("not"), baseDe(v)]) : [baseDe(v)];
+    const nous: Mot[] = [{ m: [{ texte: "let", role: "auxiliaire" }, { texte: "'s", role: "pronom" }] }, ...(neg ? [lien("not")] : []), baseDe(v)];
+    return [assembler(toi), assembler(nous)];
   }
 
-  return [0, 1, 2, 3, 4, 5].map((p) => {
-    const sub = temps.startsWith("subjonctif");
-    const simple = SIMPLE[temps];
-    if (simple) {
-      const f = b[simple]?.[p];
-      if (!f) return null;
-      return [...devant(p, f, v.base, v, o, sub), ...decouper(f, simple, p)];
+  const sujets = SUJETS(o.troisieme);
+  return sujets.map((s, p) => {
+    const c = chaine(temps, v, p);
+    if (!c) return null;
+    const sujet = mot(s, "pronom");
+    let mots = c.mots;
+    const doSupport = c.avecDo && o.mode !== "affirmative";
+    if (doSupport) mots = [doAux(p, c.avecDo!.passe), ...c.avecDo!.suite];
+    const [premier, ...reste] = mots;
+
+    if (o.mode === "question") {
+      const [tete, ...suite] = assembler([premier, sujet, ...reste]);
+      return [{ ...tete, texte: tete.texte.charAt(0).toUpperCase() + tete.texte.slice(1) }, ...suite, { texte: "?", role: "signe" }];
     }
-    const compose = COMPOSE[temps];
-    if (compose) {
-      const fa = ba?.[compose]?.[p];
-      if (!fa || !b.K?.[0]) return null;
-      // Un verbe à une seule personne (il faut, il pleut) garde ses trous.
-      if (!b.P?.[p] && !b.I?.[p] && !b.F?.[p]) return null;
-      return [...devant(p, fa, aux, v, o, sub), { texte: fa + " ", role: "auxiliaire" }, { texte: participe(b, aux === "être", p, o), role: "participe" }];
-    }
-    if (temps === "futurProche" || temps === "passeRecent") {
-      const outil = verbes.get(temps === "futurProche" ? "aller" : "venir")?.P?.[p];
-      if (!outil || (!b.P?.[p] && !b.F?.[p])) return null;
-      const sortie: Morceau[] = [...devant(p, outil, temps === "futurProche" ? "aller" : "venir", { ...v, pronominal: false }, o, false), { texte: outil + " ", role: "auxiliaire" }];
-      if (temps === "passeRecent") sortie.push({ texte: voyelle(v.pronominal ? REFLEXIFS[p] : v.base, v.base) ? "d'" : "de ", role: "lien" });
-      if (v.pronominal) {
-        const r = REFLEXIFS[p];
-        sortie.push({ texte: p !== 3 && p !== 4 && voyelle(v.base, v.base) ? r[0] + "'" : r + " ", role: "reflexif" });
+    if (o.mode === "negative") {
+      if (o.contractions && premier.aux === "am") {
+        return assembler([{ m: [...sujet.m, { texte: "'m", role: "auxiliaire" }] }, lien("not"), ...reste]);
       }
-      sortie.push({ texte: v.base, role: "infinitif" });
-      return sortie;
+      if (o.contractions && premier.aux && NEGATIF[premier.aux]) {
+        const [a, n] = NEGATIF[premier.aux];
+        const role = premier.m[0].role;
+        return assembler([sujet, { m: [{ texte: a, role }, { texte: n, role: "lien" }] }, ...reste]);
+      }
+      return assembler([sujet, premier, lien("not"), ...reste]);
     }
-    return null;
+    if (o.contractions && premier.aux && CONTRACTE[premier.aux]) {
+      return assembler([{ m: [...sujet.m, { texte: CONTRACTE[premier.aux], role: premier.m[0].role }] }, ...reste]);
+    }
+    return assembler([sujet, ...mots]);
   });
 }
 
-/** Les formes sans personne : participe présent, gérondif, participe passé. */
-export function formesSansPersonne(verbes: Map<string, Base>, saisie: string) {
-  const v = lireVerbe(saisie);
-  const b = verbes.get(v.base);
-  if (!b) return null;
-  const g = b.G?.[0] ?? null;
-  const pron = v.pronominal ? (voyelle(g ?? "", v.base) ? "s'" : "se ") : "";
-  return { participePresent: g ? pron + g : null, gerondif: g ? `en ${pron}${g}` : null, participePasse: b.K?.[0] ?? null, auxiliaire: auxiliaireDe(v) };
+/** Les formes de référence d'un verbe : celles qu'on apprend par cœur. */
+export function formesDeReference(verbes: Verbes, saisie: string) {
+  const v = verbes.get(saisie.trim().toLowerCase());
+  if (!v) return null;
+  return {
+    base: v.base,
+    troisieme: v.base === "be" ? "is" : v.base === "have" ? "has" : formeS(v.base).join(""),
+    passe: v.passe.join(" / "),
+    participe: v.participe.join(" / "),
+    ing: formeIng(v.base).join(""),
+    irregulier: v.irregulier,
+  };
 }
-
-/** Les verbes proposés dans la Machine, avec les pronominaux courants. */
-export const PRONOMINAUX = [
-  "se laver", "se lever", "se coucher", "se réveiller", "se dépêcher", "s'habiller", "s'appeler", "se promener", "se souvenir",
-  "se taire", "s'asseoir", "se rappeler", "se tromper", "se moquer", "s'évanouir", "se repentir", "s'ennuyer",
-];
 
 export const texteDe = (f: Forme) => (f ? f.map((m) => m.texte).join("") : "");
