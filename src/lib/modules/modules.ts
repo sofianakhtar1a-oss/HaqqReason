@@ -284,8 +284,8 @@ const LANGUES: DefModule = {
       titre: "Écouter",
       champs: [
         { cle: "ecouter.titre", libelle: "Titre", defaut: "Écouter" },
-        { cle: "ecouter.chapo", libelle: "Introduction", defaut: "Une vidéo ou un son en anglais devient une leçon : sous-titres synchronisés, chaque mot traduit d'un toucher, et les mots utiles rangés dans ton dictionnaire.", long: true },
-        { cle: "ecouter.lien", libelle: "Champ du lien", defaut: "Colle un lien YouTube en anglais" },
+        { cle: "ecouter.chapo", libelle: "Introduction", defaut: "Une vidéo ou un son en anglais ou en français devient une leçon : sous-titres synchronisés, chaque mot traduit d'un toucher dans l'autre langue, et les mots utiles rangés dans ton dictionnaire.", long: true },
+        { cle: "ecouter.lien", libelle: "Champ du lien", defaut: "Colle un lien YouTube" },
         { cle: "ecouter.vide", libelle: "Aucune vidéo", defaut: "Rien pour l'instant. Commence par une vidéo courte (5 à 10 minutes) que tu aimerais comprendre : une conférence, un reportage, un entretien.", long: true },
       ],
     },
@@ -294,7 +294,7 @@ const LANGUES: DefModule = {
       champs: [
         { cle: "lire.titre", libelle: "Titre", defaut: "Lire" },
         { cle: "lire.chapo", libelle: "Introduction", defaut: "Un livre, un article ou un cours en PDF, mis en page pour la lecture. Touche un mot pour sa traduction, sélectionne un passage pour le traduire en entier.", long: true },
-        { cle: "lire.depot", libelle: "Zone de dépôt", defaut: "Choisis ou dépose un PDF en anglais" },
+        { cle: "lire.depot", libelle: "Zone de dépôt", defaut: "Choisis ou dépose un PDF" },
         { cle: "lire.vide", libelle: "Aucune lecture", defaut: "Aucune lecture pour l'instant. Un texte un peu en dessous de ton niveau est idéal : tu comprends l'essentiel, et chaque mot nouveau se retient mieux.", long: true },
       ],
     },
