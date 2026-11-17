@@ -1,0 +1,1259 @@
+/* =====================================================================
+   Les Règles du français — Conjugaison (la Machine du temps, améthyste)
+   et Grammaire (la Cité des mots, émeraude).
+   Les exemples en français s'écrivent en Literata, comme le reste du Truchement.
+   ===================================================================== */
+
+.lg {
+  --rg-s: var(--emeraude);
+  --rg-v: #ff8f70;
+  --rg-r: var(--azur);
+  --rg-t: var(--or);
+  --rg-a: var(--amethyste);
+  --rg-p: #ff9ccf;
+  --rg-d: #6fe0e6;
+  --rg-piste: #f2b84b;
+}
+[data-theme="light"] .lg {
+  --rg-v: #b4431f;
+  --rg-p: #b0306f;
+  --rg-d: #0b7480;
+  --rg-piste: #9a5b00;
+}
+.rg,
+.rg-lecon {
+  --rg-accent: var(--azur);
+}
+[data-section="conjugaison"] {
+  --rg-accent: var(--amethyste);
+}
+[data-section="grammaire"] {
+  --rg-accent: var(--emeraude);
+}
+
+/* ---------- Les mots colorés ---------- */
+[data-code="s"] { --c: var(--rg-s); }
+[data-code="v"] { --c: var(--rg-v); }
+[data-code="r"],
+[data-code="n"] { --c: var(--rg-r); }
+[data-code="t"],
+[data-code="c"] { --c: var(--rg-t); }
+[data-code="a"],
+[data-code="k"] { --c: var(--rg-a); }
+[data-code="p"],
+[data-code="j"] { --c: var(--rg-p); }
+[data-code="d"],
+[data-code="o"] { --c: var(--rg-d); }
+[data-code="x"] { --c: var(--danger); }
+[data-code="m"] { --c: var(--encre-douce); }
+
+.rg-mot {
+  padding: 0.02em 0.14em;
+  border-radius: 0.32em;
+  background: color-mix(in srgb, var(--c) 15%, transparent);
+  color: var(--c);
+  font-weight: 600;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.rg-mot[data-colle-g] {
+  padding-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.rg-mot[data-colle-d] {
+  padding-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rg-mot[data-code="x"] {
+  background: color-mix(in srgb, var(--c) 10%, transparent);
+  text-decoration: underline wavy color-mix(in srgb, var(--c) 70%, transparent);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.2em;
+}
+.rg-mot[data-code="m"] {
+  background: none;
+  opacity: 0.55;
+  font-weight: 400;
+  text-decoration: line-through;
+  text-decoration-color: color-mix(in srgb, var(--c) 60%, transparent);
+}
+.rg-phrase[data-anime] .rg-mot {
+  display: inline-block;
+  animation: rg-entree 0.5s cubic-bezier(0.2, 0.9, 0.3, 1.25) both;
+  animation-delay: calc(var(--i) * 140ms);
+}
+@keyframes rg-entree {
+  from {
+    opacity: 0;
+    transform: translateY(0.45em) scale(0.85);
+  }
+}
+
+.rg-legende {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  margin: 0 0 1.25rem;
+  font-size: 0.84rem;
+  color: var(--encre-douce);
+}
+.rg-legende li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.rg-pastille {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 0.25rem;
+  background: var(--c);
+}
+
+/* ---------- Commun ---------- */
+.rg-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+.lg .rg-lecon .bouton-principal,
+.lg .rg-porte .bouton-principal,
+.lg .rg-carte .bouton-principal {
+  background: var(--rg-accent);
+  box-shadow: 0 0.5rem 2rem -0.9rem var(--rg-accent);
+}
+.rg-compte {
+  font-size: 0.85rem;
+  color: var(--encre-douce);
+}
+.rg-retour {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 1.25rem;
+  padding: 0.4rem 0.85rem 0.4rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.rg-retour:hover {
+  color: var(--encre);
+}
+.rg-puce {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.rg-puce:hover:not(:disabled) {
+  color: var(--encre);
+}
+.rg-puce[aria-pressed="true"] {
+  border-color: var(--rg-accent);
+  background: color-mix(in srgb, var(--rg-accent) 18%, transparent);
+  color: var(--encre);
+}
+.rg-puce:disabled {
+  opacity: 0.5;
+}
+.rg-total {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--or) 16%, transparent);
+  color: var(--or);
+  font-weight: 700;
+}
+
+/* ---------- Les deux portes ---------- */
+.rg-portes {
+  display: grid;
+  gap: 1.25rem;
+}
+@media (min-width: 56rem) {
+  .rg-portes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.rg-porte {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 1.6rem;
+  border: 1px solid color-mix(in srgb, var(--rg-accent) 30%, var(--trait));
+  background:
+    radial-gradient(120% 70% at 0% 0%, color-mix(in srgb, var(--rg-accent) 13%, transparent), transparent 65%),
+    var(--surface);
+}
+.rg-porte .rg-actions {
+  margin-top: auto;
+  padding-top: 1.25rem;
+}
+.rg-porte-visuel {
+  height: 8.5rem;
+  margin: -0.25rem -0.25rem 1.25rem;
+  border-radius: 1.1rem;
+  background: color-mix(in srgb, var(--fond) 55%, transparent);
+  border: 1px solid var(--trait);
+  overflow: hidden;
+}
+.rg-porte-section {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--rg-accent);
+}
+.rg-porte-univers {
+  margin-top: 0.2rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 3vw, 1.85rem);
+  font-weight: 800;
+  line-height: 1.15;
+}
+.rg-porte-accroche {
+  margin-top: 0.6rem;
+  color: var(--encre-douce);
+}
+.rg-porte-progres {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.9rem;
+  margin-top: 1.1rem;
+  font-size: 0.86rem;
+  color: var(--encre-douce);
+}
+.rg-barre {
+  position: relative;
+  flex: 1 1 8rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: var(--surface-forte);
+  overflow: hidden;
+}
+.rg-barre::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--p);
+  min-width: 0.45rem;
+  border-radius: inherit;
+  background: var(--rg-accent);
+}
+.rg-porte-etoiles {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--or);
+  font-weight: 700;
+}
+.rg-porte-grade {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+/* Le ruban du temps (Conjugaison) */
+.rg-ruban {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  height: 100%;
+  padding: 0 0.75rem;
+  font-family: var(--lg-police);
+}
+.rg-ruban-ligne {
+  position: absolute;
+  inset: 50% 1.25rem auto;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--rg-accent) 60%, transparent) 15% 85%, transparent);
+}
+.rg-ruban-curseur {
+  position: absolute;
+  top: calc(50% - 0.45rem);
+  left: 1.25rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background: var(--rg-accent);
+  box-shadow: 0 0 0 0.35rem color-mix(in srgb, var(--rg-accent) 25%, transparent), 0 0 1.5rem var(--rg-accent);
+  animation: rg-voyage 7s ease-in-out infinite;
+}
+@keyframes rg-voyage {
+  0%,
+  8% {
+    left: 1.25rem;
+  }
+  42%,
+  58% {
+    left: calc(50% - 0.45rem);
+  }
+  92%,
+  100% {
+    left: calc(100% - 2.15rem);
+  }
+}
+.rg-ruban-forme {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.9rem;
+  font-size: clamp(0.92rem, 2.2vw, 1.1rem);
+  white-space: nowrap;
+}
+.rg-ruban-forme small {
+  font-family: var(--font-sans, inherit);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.rg-ruban-forme[data-ici] small {
+  color: var(--rg-accent);
+}
+
+/* La rue de la Cité (Grammaire) */
+.rg-cite {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.35rem;
+  height: 100%;
+  padding: 0.9rem 0.9rem 0;
+  font-family: var(--lg-police);
+}
+.rg-immeuble {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+  height: var(--h);
+  padding-top: 0.35rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border-top: 3px solid var(--c);
+  background:
+    repeating-linear-gradient(180deg, transparent 0 0.9rem, color-mix(in srgb, var(--c) 10%, transparent) 0.9rem 1.15rem),
+    color-mix(in srgb, var(--c) 18%, transparent);
+  color: var(--c);
+  font-size: clamp(0.72rem, 1.8vw, 0.92rem);
+  font-weight: 600;
+  transform-origin: bottom;
+  animation: rg-pousse 0.7s cubic-bezier(0.2, 0.9, 0.3, 1.15) both;
+  animation-delay: calc(var(--i) * 70ms);
+}
+@keyframes rg-pousse {
+  from {
+    transform: scaleY(0.2);
+    opacity: 0;
+  }
+}
+
+.rg-bandeau-machine {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1.25rem;
+  padding: 1.1rem 1.35rem;
+  border-radius: 1.25rem;
+  border: 1px dashed color-mix(in srgb, var(--amethyste) 55%, var(--trait));
+  background: color-mix(in srgb, var(--amethyste) 7%, transparent);
+  color: var(--amethyste);
+  text-align: left;
+}
+.rg-bandeau-machine > span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.rg-bandeau-machine strong {
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  color: var(--encre);
+}
+.rg-bandeau-machine span span {
+  font-size: 0.9rem;
+  color: var(--encre-douce);
+}
+.rg-bandeau-machine:hover {
+  background: color-mix(in srgb, var(--amethyste) 12%, transparent);
+}
+
+/* ---------- La carte des niveaux ---------- */
+.rg-carte-bilan {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.rg-carte-bilan span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  font-size: 0.86rem;
+  font-weight: 600;
+}
+.rg-lien-machine {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: -0.5rem 0 1.5rem;
+  font-weight: 600;
+  color: var(--amethyste);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.rg-niveau {
+  margin-top: 1.75rem;
+}
+.rg-niveau-tete {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+.rg-niveau-code {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--rg-accent) 45%, var(--trait));
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--rg-accent);
+}
+.rg-niveau[data-fini] .rg-niveau-code {
+  background: var(--rg-accent);
+  color: var(--fond);
+}
+.rg-niveau-nom {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.rg-niveau-grade {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.84rem;
+  color: var(--encre-douce);
+}
+.rg-chemin {
+  position: relative;
+  display: grid;
+  gap: 0.5rem;
+}
+@media (min-width: 56rem) {
+  .rg-chemin {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.rg-station {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.9rem;
+  width: 100%;
+  padding: 0.75rem 0.95rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  text-align: left;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+.rg-station:hover {
+  border-color: color-mix(in srgb, var(--rg-accent) 50%, var(--trait));
+  background: var(--surface-forte);
+}
+.rg-station-heros {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--rg-accent) 12%, transparent);
+  font-size: 1.35rem;
+}
+[data-faite] .rg-station-heros {
+  background: color-mix(in srgb, var(--rg-accent) 32%, transparent);
+}
+[data-prochaine] .rg-station {
+  border-color: var(--rg-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--rg-accent) 20%, transparent);
+}
+.rg-station-texte {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.rg-station-titre {
+  font-weight: 700;
+  line-height: 1.25;
+}
+.rg-station-notion {
+  font-size: 0.82rem;
+  color: var(--encre-douce);
+}
+.rg-station-etoiles {
+  display: inline-flex;
+  gap: 0.1rem;
+  color: color-mix(in srgb, var(--encre-douce) 45%, transparent);
+}
+.rg-station-etoiles [data-pleine] {
+  color: var(--or);
+  fill: currentColor;
+}
+.rg-station-ici {
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--rg-accent);
+  color: var(--fond);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+/* ---------- La leçon ---------- */
+.rg-lecon {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.rg-lecon-tete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+}
+.rg-lecon-tete .rg-retour {
+  margin: 0;
+}
+.rg-etapes {
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.rg-etapes ol {
+  display: flex;
+  gap: 0.3rem;
+}
+.rg-etape {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--encre-douce);
+}
+.rg-etape[data-faite] {
+  color: var(--rg-accent);
+}
+.rg-etape[aria-current="step"] {
+  background: color-mix(in srgb, var(--rg-accent) 18%, transparent);
+  color: var(--encre);
+}
+.rg-etape:disabled {
+  opacity: 0.4;
+}
+@media (max-width: 40rem) {
+  .rg-etape:not([aria-current="step"]) span {
+    display: none;
+  }
+}
+.rg-lecon-titre {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.rg-heros {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 1.2rem;
+  background: color-mix(in srgb, var(--rg-accent) 16%, transparent);
+  font-size: 2rem;
+}
+.rg-lecon-niveau {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--rg-accent);
+}
+.rg-lecon-nom {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 4.5vw, 2.3rem);
+  font-weight: 800;
+  line-height: 1.12;
+  outline: none;
+}
+.lg .rg-lecon-nom:focus-visible {
+  outline: none;
+}
+.rg-lecon-notion {
+  margin-top: 0.3rem;
+  font-size: 0.88rem;
+  color: var(--encre-douce);
+}
+
+/* 1. Le déclic */
+.rg-declic {
+  padding: clamp(1.25rem, 4vw, 2.25rem);
+  border-radius: 1.6rem;
+  border: 1px solid color-mix(in srgb, var(--rg-accent) 30%, var(--trait));
+  background:
+    radial-gradient(90% 80% at 50% 0%, color-mix(in srgb, var(--rg-accent) 14%, transparent), transparent 70%),
+    var(--surface);
+}
+.rg-scene {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25em;
+  margin-bottom: 1.5rem;
+  font-size: clamp(2.6rem, 9vw, 4.25rem);
+  line-height: 1.1;
+}
+.rg-scene span {
+  display: inline-block;
+  animation: rg-surgit 0.6s cubic-bezier(0.2, 0.9, 0.3, 1.4) both;
+  animation-delay: calc(0.15s + var(--i) * 0.28s);
+}
+@keyframes rg-surgit {
+  from {
+    opacity: 0;
+    transform: translateY(0.4em) scale(0.5) rotate(-8deg);
+  }
+}
+.rg-declic-image {
+  max-width: 34ch;
+  margin: 0 auto;
+  font-family: var(--lg-police);
+  font-size: clamp(1.3rem, 3.6vw, 1.75rem);
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  text-wrap: balance;
+}
+.rg-declic-sens {
+  max-width: 58ch;
+  margin: 1.25rem auto 0;
+  color: var(--encre-douce);
+  text-align: center;
+}
+.rg-declic .rg-actions {
+  justify-content: center;
+}
+
+/* 2. La démonstration */
+.rg-demo-etapes {
+  display: grid;
+  gap: 0.75rem;
+}
+.rg-demo-etape {
+  padding: 1rem 1.2rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  animation: rg-apparait 0.35s ease both;
+}
+.rg-demo-etape[data-derniere] {
+  border-color: color-mix(in srgb, var(--rg-accent) 40%, var(--trait));
+}
+@keyframes rg-apparait {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+}
+.rg-demo-phrase {
+  font-family: var(--lg-police);
+  font-size: clamp(1.15rem, 3.2vw, 1.5rem);
+  line-height: 1.7;
+}
+.rg-demo-note {
+  margin-top: 0.35rem;
+  font-size: 0.93rem;
+  color: var(--encre-douce);
+}
+.rg-demo-machine {
+  margin-top: 1.5rem;
+}
+.rg-demo-machine-titre {
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+/* 3. Le défi */
+.rg-defi-tete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+.rg-points {
+  display: flex;
+  gap: 0.35rem;
+}
+.rg-points li {
+  width: 1.6rem;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: var(--surface-forte);
+}
+.rg-points li[data-etat="fait"] {
+  background: var(--rg-accent);
+}
+.rg-points li[data-etat="ici"] {
+  background: color-mix(in srgb, var(--rg-accent) 50%, var(--surface-forte));
+}
+.rg-xp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 700;
+  color: var(--or);
+}
+.rg-question {
+  padding: clamp(1.15rem, 4vw, 1.75rem);
+  border-radius: 1.5rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.rg-question-enonce {
+  margin-bottom: 1.25rem;
+  font-family: var(--lg-police);
+  font-size: clamp(1.15rem, 3.2vw, 1.4rem);
+  line-height: 1.55;
+}
+.rg-trou {
+  display: inline-block;
+  width: 3.2em;
+  height: 1em;
+  margin: 0 0.15em;
+  vertical-align: -0.12em;
+  border-bottom: 2.5px dashed var(--rg-accent);
+}
+.rg-options {
+  display: grid;
+  gap: 0.6rem;
+}
+@media (min-width: 40rem) {
+  .rg-options {
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  }
+}
+.rg-option {
+  padding: 0.85rem 1rem;
+  border-radius: 1rem;
+  border: 1.5px solid var(--trait);
+  background: var(--surface-forte);
+  font-family: var(--lg-police);
+  font-size: 1.08rem;
+  text-align: center;
+  transition:
+    border-color 0.15s ease,
+    transform 0.1s ease;
+}
+.rg-option:hover:not(:disabled) {
+  border-color: var(--rg-accent);
+}
+.rg-option:active:not(:disabled) {
+  transform: scale(0.98);
+}
+.rg-option[data-etat="piste"] {
+  border-color: color-mix(in srgb, var(--rg-piste) 60%, transparent);
+  background: color-mix(in srgb, var(--rg-piste) 10%, transparent);
+  color: var(--encre-douce);
+}
+.rg-option[data-etat="bonne"] {
+  border-color: var(--succes);
+  background: color-mix(in srgb, var(--succes) 16%, transparent);
+  color: var(--encre);
+  font-weight: 600;
+  animation: rg-victoire 0.45s ease;
+}
+.rg-option:disabled:not([data-etat]) {
+  opacity: 0.55;
+}
+@keyframes rg-victoire {
+  40% {
+    transform: scale(1.04);
+  }
+}
+.rg-ecrire {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.rg-ecrire input {
+  flex: 1 1 12rem;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  border: 1.5px solid var(--trait);
+  background: var(--surface-forte);
+  font-family: var(--lg-police);
+  font-size: 1.15rem;
+  color: var(--encre);
+}
+.rg-ecrire input:focus {
+  border-color: var(--rg-accent);
+  outline: none;
+}
+.rg-ecrire input[data-etat="bonne"] {
+  border-color: var(--succes);
+  background: color-mix(in srgb, var(--succes) 14%, transparent);
+}
+.rg-ecrire input[data-etat="revele"] {
+  border-color: var(--azur);
+}
+.rg-toucher-phrase {
+  font-family: var(--lg-police);
+  font-size: clamp(1.2rem, 3.4vw, 1.5rem);
+  line-height: 2.1;
+}
+.rg-toucher-mot {
+  padding: 0.05em 0.25em;
+  border-radius: 0.4em;
+  border-bottom: 2px dotted color-mix(in srgb, var(--encre-douce) 45%, transparent);
+}
+.rg-toucher-mot:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--rg-accent) 12%, transparent);
+}
+.rg-toucher-mot[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--rg-accent) 25%, transparent);
+  border-bottom-color: var(--rg-accent);
+}
+.rg-toucher-mot[data-etat="piste"] {
+  background: color-mix(in srgb, var(--rg-piste) 14%, transparent);
+  border-bottom-color: var(--rg-piste);
+}
+.rg-toucher-mot[data-etat="bonne"] {
+  background: color-mix(in srgb, var(--succes) 18%, transparent);
+  border-bottom-color: var(--succes);
+  font-weight: 600;
+}
+.rg-retour-question:empty {
+  display: none;
+}
+.rg-indice,
+.rg-bravo,
+.rg-revele {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1.1rem;
+  padding: 0.9rem 1.05rem;
+  border-radius: 1rem;
+  animation: rg-apparait 0.3s ease both;
+}
+.rg-indice {
+  background: color-mix(in srgb, var(--rg-piste) 13%, transparent);
+  color: var(--encre);
+}
+.rg-indice svg {
+  color: var(--rg-piste);
+}
+.rg-bravo {
+  background: color-mix(in srgb, var(--succes) 14%, transparent);
+}
+.rg-bravo svg {
+  color: var(--succes);
+}
+.rg-revele {
+  background: color-mix(in srgb, var(--azur) 13%, transparent);
+}
+.rg-revele svg {
+  color: var(--azur);
+}
+
+/* 4. Le secret d'expert */
+.rg-recompense {
+  text-align: center;
+}
+.rg-etoiles {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  color: color-mix(in srgb, var(--encre-douce) 35%, transparent);
+}
+.rg-etoiles [data-pleine] {
+  color: var(--or);
+  fill: currentColor;
+  animation: rg-etoile 0.6s cubic-bezier(0.2, 0.9, 0.3, 1.5) both;
+  animation-delay: calc(0.2s + var(--i) * 0.25s);
+}
+@keyframes rg-etoile {
+  from {
+    opacity: 0;
+    transform: scale(0.2) rotate(-40deg);
+  }
+}
+.rg-recompense-texte {
+  max-width: 46ch;
+  margin: 0.75rem auto 0;
+  color: var(--encre-douce);
+}
+.rg-recompense-xp {
+  font-weight: 700;
+  color: var(--or);
+  white-space: nowrap;
+}
+.rg-coffre {
+  margin-top: 1.75rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border-radius: 1.6rem;
+  border: 1.5px solid color-mix(in srgb, var(--or) 50%, transparent);
+  background:
+    radial-gradient(100% 90% at 100% 0%, color-mix(in srgb, var(--or) 14%, transparent), transparent 70%),
+    var(--surface);
+}
+.rg-coffre-etiquette {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--or);
+}
+.rg-coffre-titre {
+  margin-top: 0.4rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3.6vw, 1.7rem);
+  font-weight: 800;
+}
+.rg-coffre-texte {
+  margin-top: 0.75rem;
+  max-width: 62ch;
+  line-height: 1.65;
+}
+.rg-formule {
+  margin-top: 1.25rem;
+  padding: 0.85rem 1.1rem;
+  border-radius: 0.9rem;
+  background: color-mix(in srgb, var(--fond) 60%, transparent);
+  border: 1px solid var(--trait);
+  font-family: var(--lg-police);
+  font-size: 1.12rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ---------- La Machine ---------- */
+.rg-machine {
+  --rg-accent: var(--amethyste);
+  padding: clamp(1rem, 3vw, 1.6rem);
+  border-radius: 1.6rem;
+  border: 1px solid color-mix(in srgb, var(--amethyste) 35%, var(--trait));
+  background:
+    radial-gradient(80% 60% at 100% 0%, color-mix(in srgb, var(--amethyste) 12%, transparent), transparent 70%),
+    var(--surface);
+}
+.rg-machine-verbe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+.rg-machine-infinitif {
+  font-family: var(--lg-police);
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--amethyste);
+}
+.rg-machine-raccourcis {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.rg-machine-cherche {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1 1 100%;
+  padding: 0.3rem 0.35rem 0.3rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: var(--surface-forte);
+  color: var(--encre-douce);
+}
+.rg-machine-cherche input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.35rem 0;
+  background: none;
+  color: var(--encre);
+  font-size: 0.98rem;
+  outline: none;
+}
+.rg-machine-inconnu {
+  flex-basis: 100%;
+  font-size: 0.88rem;
+  color: var(--rg-piste);
+}
+.rg-mondes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.45rem;
+  margin-top: 1.25rem;
+}
+@media (min-width: 48rem) {
+  .rg-mondes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.rg-monde {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.65rem 0.8rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  text-align: left;
+}
+.rg-monde[aria-selected="true"] {
+  border-color: var(--amethyste);
+  background: color-mix(in srgb, var(--amethyste) 16%, transparent);
+}
+.rg-monde-nom {
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+.rg-monde-image {
+  font-size: 0.78rem;
+  color: var(--encre-douce);
+}
+.rg-epoques {
+  margin-top: 1.25rem;
+}
+.rg-epoques-axe {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+  padding: 0 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.rg-epoques-rail {
+  position: relative;
+  display: flex;
+  gap: 0.25rem;
+  overflow-x: auto;
+  padding: 0.25rem 0.1rem 0.5rem;
+  scrollbar-width: thin;
+}
+.rg-epoques-rail::before {
+  content: "";
+  position: absolute;
+  top: 1.05rem;
+  left: 0.75rem;
+  right: 0.75rem;
+  height: 2px;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--amethyste) 30%, transparent), var(--amethyste), color-mix(in srgb, var(--amethyste) 30%, transparent));
+}
+.rg-epoque {
+  position: relative;
+  flex: 1 0 6.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.3rem 0.45rem;
+  border-radius: 0.9rem;
+  text-align: center;
+}
+.rg-epoque-point {
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  border: 2px solid var(--amethyste);
+  background: var(--fond);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.rg-epoque[data-maintenant] .rg-epoque-point {
+  border-width: 3px;
+}
+.rg-epoque[data-maintenant] .rg-epoque-niveau {
+  color: var(--amethyste);
+}
+.rg-epoque[aria-checked="true"] {
+  background: color-mix(in srgb, var(--amethyste) 14%, transparent);
+}
+.rg-epoque[aria-checked="true"] .rg-epoque-point {
+  background: var(--amethyste);
+  transform: scale(1.35);
+  box-shadow: 0 0 0 0.3rem color-mix(in srgb, var(--amethyste) 25%, transparent), 0 0 1rem var(--amethyste);
+}
+.rg-epoque-nom {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.rg-epoque-niveau {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.rg-machine-image {
+  margin-top: 0.6rem;
+  font-family: var(--lg-police);
+  font-style: italic;
+  color: var(--encre-douce);
+  text-align: center;
+}
+.rg-sieges-tete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin-top: 1.25rem;
+}
+.rg-bascule {
+  display: inline-flex;
+  padding: 0.2rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.rg-bascule button {
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.rg-bascule button[aria-pressed="true"] {
+  background: var(--amethyste);
+  color: var(--fond);
+}
+.rg-moteur {
+  font-size: 0.86rem;
+  color: var(--encre-douce);
+}
+.rg-moteur strong {
+  color: var(--rg-a);
+}
+.rg-sieges {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0.85rem 0 1.25rem;
+}
+@media (min-width: 40rem) {
+  .rg-sieges {
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr 1fr;
+  }
+  .rg-sieges[data-trois] {
+    grid-auto-flow: row;
+    grid-template-rows: none;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.rg-siege {
+  min-height: 3.25rem;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 0.95rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 45%, transparent);
+  animation: rg-apparait 0.3s ease both;
+  animation-delay: calc(var(--i, 0) * 45ms);
+}
+.rg-siege[data-attente] {
+  background: var(--surface);
+  animation: rg-pulse 1.2s ease-in-out infinite alternate;
+}
+@keyframes rg-pulse {
+  to {
+    opacity: 0.5;
+  }
+}
+.rg-forme {
+  font-family: var(--lg-police);
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
+}
+.rg-forme .rg-mot[data-code="s"],
+.rg-forme .rg-mot[data-code="k"],
+.rg-forme .rg-mot[data-code="o"] {
+  background: none;
+  font-weight: 500;
+}
+.rg-forme-vide {
+  font-size: 0.86rem;
+  font-style: italic;
+  color: var(--encre-douce);
+}
+.rg-sans-personne {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.5rem;
+}
+.rg-sans-personne div {
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.9rem;
+  border: 1px solid var(--trait);
+}
+.rg-sans-personne dt {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.rg-sans-personne dd {
+  font-family: var(--lg-police);
+  font-size: 1.05rem;
+}
+.rg-credit {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: var(--encre-douce);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rg-phrase[data-anime] .rg-mot,
+  .rg-scene span,
+  .rg-immeuble,
+  .rg-demo-etape,
+  .rg-option[data-etat="bonne"],
+  .rg-etoiles [data-pleine],
+  .rg-siege,
+  .rg-indice,
+  .rg-bravo,
+  .rg-revele {
+    animation: none;
+  }
+  .rg-ruban-curseur {
+    animation: none;
+    left: calc(50% - 0.45rem);
+  }
+}
