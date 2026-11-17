@@ -20,7 +20,7 @@ export async function POST(requete: Request) {
   const refus = await garder(requete, "analyse");
   if (refus) return refus;
 
-  let corps: { langue?: unknown; mots?: unknown; contexte?: unknown };
+  let corps: { langue?: unknown; mots?: unknown; contexte?: unknown; vers?: unknown };
   try {
     corps = await requete.json();
   } catch {
@@ -34,16 +34,30 @@ export async function POST(requete: Request) {
   const contexte = String(corps.contexte ?? "").slice(0, 500);
   const numerotes = mots.map((t, i) => [i, t] as const).filter(([, t]) => normaliser(t));
 
-  const systeme = [
-    `Tu es un professeur d'${langue} qui explique une phrase à un francophone, mot par mot.`,
-    "Entrée : une phrase transcrite d'un enregistrement, en mots numérotés [i, mot].",
-    'Réponds uniquement en JSON : {"t": "traduction française naturelle de toute la phrase", "m": [[i, sens, nature, lemme' + (arabe ? ", racine" : "") + "], …]} avec UNE entrée par mot numéroté :",
-    "- sens : la TRADUCTION FRANÇAISE du mot dans cette phrase, 1 à 5 mots. Toujours en français, jamais recopié dans la langue d'origine (ex. pour « نور » : « lumière ») ;",
-    "- nature : n (nom), v (verbe), a (adjectif), d (adverbe), p (pronom), r (préposition), c (conjonction), t (article), x (particule), np (nom propre) ;",
-    "- lemme : forme de base dans la langue d'origine (infinitif, singulier, masculin) ;",
-    arabe ? "- racine : 3 ou 4 lettres arabes séparées par des espaces, ou \"\" pour un mot outil ou un nom étranger. Un mot avec préfixe collé (و ف ب ل ك ال) reçoit le sens de l'ensemble." : "",
-    "Termes islamiques : formes françaises usuelles (Allah, sourate, hadith, Prophète ﷺ).",
-  ]
+  // Un texte français s'explique en anglais (on apprend l'anglais à partir du français) ; le reste, en français.
+  const versAnglais = corps.vers === "en";
+  const systeme = (
+    versAnglais
+      ? [
+          "Tu aides un francophone qui apprend l'anglais : il lit une phrase en français et veut, pour chaque mot, sa traduction anglaise.",
+          "Entrée : une phrase en mots numérotés [i, mot].",
+          'Réponds uniquement en JSON : {"t": "traduction anglaise naturelle de toute la phrase", "m": [[i, sens, nature, lemme], …]} avec UNE entrée par mot numéroté :',
+          "- sens : la TRADUCTION ANGLAISE du mot dans cette phrase, 1 à 5 mots. Toujours en anglais (ex. pour « lumière » : « light »). Pour un verbe, la forme de base anglaise suffit (« mangeaient » : « were eating ») ;",
+          "- nature : n (nom), v (verbe), a (adjectif), d (adverbe), p (pronom), r (préposition), c (conjonction), t (article), x (particule), np (nom propre) ;",
+          "- lemme : forme de base du mot français (infinitif, singulier, masculin) ;",
+          "Termes islamiques : formes anglaises usuelles (Allah, surah, hadith, the Prophet ﷺ).",
+        ]
+      : [
+          `Tu es un professeur d'${langue} qui explique une phrase à un francophone, mot par mot.`,
+          "Entrée : une phrase transcrite d'un enregistrement, en mots numérotés [i, mot].",
+          'Réponds uniquement en JSON : {"t": "traduction française naturelle de toute la phrase", "m": [[i, sens, nature, lemme' + (arabe ? ", racine" : "") + "], …]} avec UNE entrée par mot numéroté :",
+          "- sens : la TRADUCTION FRANÇAISE du mot dans cette phrase, 1 à 5 mots. Toujours en français, jamais recopié dans la langue d'origine (ex. pour « نور » : « lumière ») ;",
+          "- nature : n (nom), v (verbe), a (adjectif), d (adverbe), p (pronom), r (préposition), c (conjonction), t (article), x (particule), np (nom propre) ;",
+          "- lemme : forme de base dans la langue d'origine (infinitif, singulier, masculin) ;",
+          arabe ? "- racine : 3 ou 4 lettres arabes séparées par des espaces, ou \"\" pour un mot outil ou un nom étranger. Un mot avec préfixe collé (و ف ب ل ك ال) reçoit le sens de l'ensemble." : "",
+          "Termes islamiques : formes françaises usuelles (Allah, sourate, hadith, Prophète ﷺ).",
+        ]
+  )
     .filter(Boolean)
     .join("\n");
   const utilisateur = JSON.stringify({ avant: contexte || undefined, mots: numerotes });
