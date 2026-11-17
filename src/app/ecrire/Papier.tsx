@@ -42,25 +42,33 @@ export function Papier({ editor, reglages, titre, surPages }: Props) {
     const zone = flux.current?.querySelector<HTMLElement>(".tiptap");
     if (!zone || !editor) return;
 
-    // Les blancs déjà posés faussent les positions : on les retranche pour
-    // raisonner toujours dans le texte « à plat », ce qui rend le calcul stable.
-    let blancs = 0;
-    let index = 0;
-    const blocs: BlocMesure[] = [];
-    for (const enfant of Array.from(zone.children) as HTMLElement[]) {
-      if (enfant.dataset.blanc === "page") {
-        blancs += enfant.offsetHeight;
-        continue;
-      }
-      blocs.push({
-        id: String(index),
-        haut: enfant.offsetTop - blancs,
-        hauteur: enfant.offsetHeight,
-        insecable: true,
-        sautAvant: enfant.classList.contains("saut-page"),
-      });
-      index++;
-    }
+    /*
+     * Les unités que l'on peut envoyer à la page suivante : chaque bloc du texte,
+     * et, dans une liste, chaque puce — sinon une longue liste, d'un seul tenant,
+     * déborderait dans la marge du bas.
+     * Les blancs déjà posés faussent les positions : on les retranche pour
+     * raisonner toujours dans le texte « à plat », ce qui rend le calcul stable.
+     */
+    const LISTES = ["bulletList", "orderedList", "taskList"];
+    const sansBlancs = (el: Element) => (Array.from(el.children) as HTMLElement[]).filter((e) => e.dataset.blanc !== "page");
+    const domBlocs = sansBlancs(zone);
+    const unites: { pos: number; el: HTMLElement; saut: boolean }[] = [];
+    editor.state.doc.forEach((noeud, offset, i) => {
+      const el = domBlocs[i];
+      if (!el) return;
+      const puces = LISTES.includes(noeud.type.name) ? sansBlancs(el) : [];
+      if (puces.length === noeud.childCount && puces.length > 1) {
+        noeud.forEach((_, o, j) => unites.push({ pos: offset + 1 + o, el: puces[j], saut: j === 0 && el.classList.contains("saut-page") }));
+      } else unites.push({ pos: offset, el, saut: el.classList.contains("saut-page") });
+    });
+    const origine = zone.getBoundingClientRect().top;
+    const blancs = (Array.from(zone.querySelectorAll('[data-blanc="page"]')) as HTMLElement[]).map((b) => ({ haut: b.getBoundingClientRect().top - origine, hauteur: b.offsetHeight }));
+    const blocs: BlocMesure[] = unites.map((u, index) => {
+      const r = u.el.getBoundingClientRect();
+      const haut = r.top - origine;
+      const avant = blancs.reduce((s, b) => (b.haut < haut - 0.5 ? s + b.hauteur : s), 0);
+      return { id: String(index), haut: haut - avant, hauteur: r.height, insecable: true, sautAvant: u.saut };
+    });
 
     const pagination = paginer(blocs, g.zone.hauteur);
     const coupures: Coupure[] = [];
@@ -74,7 +82,7 @@ export function Papier({ editor, reglages, titre, surPages }: Props) {
       if (!bloc || bloc.haut < page.debut - 0.5) continue;
       const cible = i * (g.page.hauteur + ECART);
       const hauteur = Math.max(0, Math.round(cible - (page.debut + cumul)));
-      coupures.push({ bloc: Number(premier), hauteur, numero: i + 1 });
+      coupures.push({ pos: unites[Number(premier)].pos, hauteur, numero: i + 1 });
       cumul += hauteur;
     }
 
