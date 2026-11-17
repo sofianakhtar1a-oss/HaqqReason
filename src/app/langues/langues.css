@@ -1773,6 +1773,7 @@
 
 /* Les sous-titres, sous la vidéo. */
 .lg-soustitres {
+  --st-echelle: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1784,10 +1785,10 @@
 .lg-st-voisine {
   max-width: 48rem;
   font-family: var(--lg-police);
-  font-size: 0.98rem;
   line-height: 1.45;
   color: var(--encre-douce);
   opacity: 0.6;
+  font-size: calc(0.98rem * var(--st-echelle));
 }
 .lg-st-voisine button {
   text-align: center;
@@ -1800,7 +1801,7 @@
 .lg-st-courante {
   max-width: 50rem;
   font-family: var(--lg-police);
-  font-size: clamp(1.35rem, 3.3vw, 2.05rem);
+  font-size: calc(clamp(1.35rem, 3.3vw, 2.05rem) * var(--st-echelle));
   font-weight: 450;
   line-height: 1.5;
   text-wrap: balance;
@@ -1834,7 +1835,7 @@
 .lg-st-fr {
   max-width: 46rem;
   min-height: 1.6em;
-  font-size: 1.05rem;
+  font-size: calc(1.05rem * var(--st-echelle));
   font-style: italic;
   color: var(--azur);
   animation: lg-apparition 0.3s ease both;
@@ -1847,7 +1848,7 @@
 }
 .lg-st-seule[data-vide] {
   color: var(--encre-douce);
-  font-size: 1.05rem;
+  font-size: calc(1.05rem * var(--st-echelle));
 }
 .lg-commandes {
   padding: 0.9rem 1rem 1rem;
@@ -1966,6 +1967,7 @@
   color: var(--encre-douce);
 }
 .lg-taille-titre {
+  min-width: 9.5rem;
   white-space: nowrap;
 }
 .lg-taille input {
