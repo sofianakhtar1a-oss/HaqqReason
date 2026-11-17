@@ -2,6 +2,7 @@
 
 import { BookOpenText, FileText, LoaderCircle, Upload } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
+import { useArrivees } from "@/lib/client/synchro/useArrivees";
 import { type DocumentLangue, ecrire, effacer, listerDocuments, lireUn } from "@/lib/langues/stockage";
 import { BoutonSupprimer, ChoixLangue } from "./communs";
 import { useTextes } from "@/lib/modules/textes-client";
@@ -14,6 +15,8 @@ import { LiseusePdf } from "./LiseusePdf";
 
 const nouvelId = () => (typeof crypto !== "undefined" && "randomUUID" in crypto ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`);
 
+const MAGASINS_DOCUMENTS = ["langues-documents", "reprise"] as const;
+
 export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (id: string | null) => void }) {
   const [documents, setDocuments] = useState<DocumentLangue[] | null>(null);
   const [courant, setCourant] = useState<DocumentLangue | null>(null);
@@ -25,6 +28,7 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
 
   const recharger = useCallback(() => void listerDocuments().then(setDocuments).catch(() => setDocuments([])), []);
   useEffect(recharger, [recharger]);
+  useArrivees(MAGASINS_DOCUMENTS, recharger);
 
   useEffect(() => {
     if (!ouvert) return;

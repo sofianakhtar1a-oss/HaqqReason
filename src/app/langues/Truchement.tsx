@@ -4,6 +4,7 @@ import Link from "next/link";
 import { BookMarked, BookOpenText, Headphones, House, Layers, Sparkles } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { BoutonTheme } from "@/components/BoutonTheme";
+import { BoutonCompte } from "@/components/compte/BoutonCompte";
 import { Logo } from "@/components/Logo";
 import { useAccesComplet } from "@/lib/client/acces";
 import { useResolu, useTextes } from "@/lib/modules/textes-client";
@@ -130,6 +131,7 @@ export function Truchement() {
           ))}
         </nav>
         <BoutonTheme />
+        <BoutonCompte />
         {accesComplet && (
           <Link href="/utilisateur" className="calame-sortie">
             Quitter

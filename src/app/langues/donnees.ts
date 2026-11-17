@@ -5,6 +5,7 @@
  * Chargé une fois depuis l'appareil, tenu en mémoire, et réécrit à chaque changement.
  */
 import { useSyncExternalStore } from "react";
+import { EVENEMENT_RECU } from "@/lib/client/synchro/journal";
 import { cleJour, nouvelleCarte, reviser, serie } from "@/lib/langues/srs";
 import { effacer, ecrire, type Jour, tout } from "@/lib/langues/stockage";
 import type { Carte, MotPerso, Note } from "@/lib/langues/types";
@@ -46,8 +47,20 @@ export function charger(force = false) {
   return chargement;
 }
 
+/** Des cartes, des mots ou des jours d'étude arrivent d'un autre appareil : on relit l'appareil. */
+let aLEcoute = false;
+function ecouterLeCompte() {
+  if (aLEcoute || typeof window === "undefined") return;
+  aLEcoute = true;
+  window.addEventListener(EVENEMENT_RECU, (e) => {
+    const magasins = (e as CustomEvent<string[]>).detail;
+    if (Array.isArray(magasins) && magasins.some((m) => m === "langues-cartes" || m === "langues-dictionnaire" || m === "langues-journal")) void charger(true);
+  });
+}
+
 function abonner(cb: () => void) {
   abonnes.add(cb);
+  ecouterLeCompte();
   void charger();
   return () => {
     abonnes.delete(cb);

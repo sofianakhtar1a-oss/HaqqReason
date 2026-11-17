@@ -132,7 +132,7 @@ export function Dictionnaire({ lancer }: { lancer: (l: Lancement) => void }) {
                   <strong>
                     <FileUp className="inline size-4" aria-hidden="true" /> Importer une sauvegarde
                   </strong>
-                  <small>Pour retrouver ta progression sur un autre appareil</small>
+                  <small>Pour reprendre une sauvegarde gardée dans un fichier</small>
                 </button>
               </div>
             )}

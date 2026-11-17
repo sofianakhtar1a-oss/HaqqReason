@@ -55,7 +55,7 @@
 .lg-espace {
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
+  min-height: calc(100dvh - var(--barre-vue, 0rem));
   background:
     radial-gradient(60rem 34rem at 15% -12%, color-mix(in srgb, var(--azur) 11%, transparent), transparent 70%),
     radial-gradient(40rem 30rem at 100% 100%, color-mix(in srgb, var(--or) 5%, transparent), transparent 70%),
@@ -63,7 +63,7 @@
 }
 .lg-tete {
   position: sticky;
-  top: 0;
+  top: var(--barre-vue, 0rem);
   z-index: 30;
   display: flex;
   align-items: center;
@@ -855,7 +855,7 @@
 }
 .lg-seance-tete {
   position: sticky;
-  top: 0;
+  top: var(--barre-vue, 0rem);
   z-index: 2;
   display: flex;
   align-items: center;
@@ -1696,8 +1696,8 @@
   }
   .lg-immersion[data-texte] .lg-transcript {
     position: sticky;
-    top: 5rem;
-    height: calc(100dvh - 7rem);
+    top: calc(5rem + var(--barre-vue, 0rem));
+    height: calc(100dvh - 7rem - var(--barre-vue, 0rem));
   }
 }
 .lg-immersion-principal {

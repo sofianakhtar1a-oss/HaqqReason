@@ -6,6 +6,7 @@ import { POIDS_MEDIA_MAX } from "@/lib/alambic/transcription/bibliotheque";
 import { ErreurService, type Etape, transcrireFichier, transcrireYoutube } from "@/lib/alambic/transcription/client";
 import { dureeLisible } from "@/lib/alambic/transcription/exports";
 import { idYoutube } from "@/lib/alambic/transcription/lien";
+import { useArrivees } from "@/lib/client/synchro/useArrivees";
 import { ecrire, ecrireBlob, listerMedias, lireUn, type MediaLangue, supprimerMedia } from "@/lib/langues/stockage";
 import { BoutonSupprimer, ChoixLangue } from "./communs";
 import { useTextes } from "@/lib/modules/textes-client";
@@ -21,6 +22,8 @@ const ETAPES: Record<Etape, string> = { preparation: "Préparation du son", dist
 
 type Travail = { nom: string; etape: Etape; progression: number; apercu: string[] };
 
+const MAGASINS_MEDIAS = ["langues-medias", "reprise"] as const;
+
 export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (id: string | null) => void }) {
   const [medias, setMedias] = useState<MediaLangue[] | null>(null);
   const [courant, setCourant] = useState<MediaLangue | null>(null);
@@ -35,6 +38,7 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
 
   const recharger = useCallback(() => void listerMedias().then(setMedias).catch(() => setMedias([])), []);
   useEffect(recharger, [recharger]);
+  useArrivees(MAGASINS_MEDIAS, recharger);
   useEffect(() => () => annulation.current?.abort(), []);
 
   useEffect(() => {
