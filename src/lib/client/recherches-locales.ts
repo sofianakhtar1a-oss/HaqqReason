@@ -1,7 +1,10 @@
 /*
  * Recherches récentes et recherches sauvegardées, gardées sur l'appareil (stockage du navigateur).
- * Rien n'est envoyé au serveur. Si le stockage est indisponible (navigation privée stricte), on s'en passe.
+ * Les recherches sauvegardées sont aussi recopiées sur le compte quand on est connecté ; les récentes
+ * restent propres à l'appareil. Si le stockage est indisponible (navigation privée stricte), on s'en passe.
  */
+import { tiroir } from "./compte";
+import { noter } from "./synchro/journal";
 
 const RECENTES = "hr-recherches-recentes";
 const SAUVEGARDEES = "hr-recherches-sauvegardees";
@@ -10,7 +13,7 @@ export type RechercheSauvegardee = { nom: string; parametres: string };
 
 function lire<T>(cle: string): T[] {
   try {
-    const brut = localStorage.getItem(cle);
+    const brut = localStorage.getItem(tiroir(cle));
     const valeur = brut ? JSON.parse(brut) : [];
     return Array.isArray(valeur) ? valeur : [];
   } catch {
@@ -20,7 +23,7 @@ function lire<T>(cle: string): T[] {
 
 function ecrire(cle: string, valeur: unknown) {
   try {
-    localStorage.setItem(cle, JSON.stringify(valeur));
+    localStorage.setItem(tiroir(cle), JSON.stringify(valeur));
   } catch {
     // Stockage indisponible : la fonction reste utilisable pendant la visite.
   }
@@ -48,8 +51,15 @@ export function sauvegarderRecherche(nom: string, parametres: string) {
   const propre = nom.trim().slice(0, 80);
   if (!propre) return;
   ecrire(SAUVEGARDEES, [{ nom: propre, parametres }, ...recherchesSauvegardees().filter((x) => x.nom !== propre)].slice(0, 30));
+  void noter("reglages", "recherches");
 }
 
 export function supprimerRechercheSauvegardee(nom: string) {
   ecrire(SAUVEGARDEES, recherchesSauvegardees().filter((x) => x.nom !== nom));
+  void noter("reglages", "recherches");
+}
+
+/** Pour la synchronisation : range les recherches sauvegardées venues d'un autre appareil. */
+export function rangerRecherchesSauvegardees(liste: unknown) {
+  ecrire(SAUVEGARDEES, Array.isArray(liste) ? liste.slice(0, 30) : []);
 }

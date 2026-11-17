@@ -1,14 +1,17 @@
 /**
- * Favoris du lecteur : gardés dans cet appareil seulement (rien n'est envoyé au serveur).
+ * Favoris du lecteur : gardés sur l'appareil, et recopiés sur son compte quand il est connecté.
  * Chaque favori est aussi mis de côté par le service hors-ligne pour rester lisible sans connexion.
  */
+import { tiroir } from "./compte";
+import { noter } from "./synchro/journal";
+
 export type Favori = { id: string; titre: string; resume: string; ajoute: string };
-const CLE = "hr-favoris";
+const cle = () => tiroir("hr-favoris");
 export const EVENEMENT_FAVORIS = "haqqreason:favoris";
 
 export function lireFavoris(): Favori[] {
   try {
-    const brut = JSON.parse(localStorage.getItem(CLE) ?? "[]");
+    const brut = JSON.parse(localStorage.getItem(cle()) ?? "[]");
     return Array.isArray(brut) ? brut.filter((f) => f && typeof f.id === "string" && typeof f.titre === "string") : [];
   } catch {
     return [];
@@ -17,7 +20,7 @@ export function lireFavoris(): Favori[] {
 
 function ecrire(liste: Favori[]): void {
   try {
-    localStorage.setItem(CLE, JSON.stringify(liste.slice(0, 500)));
+    localStorage.setItem(cle(), JSON.stringify(liste.slice(0, 500)));
   } catch {
     /* stockage plein ou désactivé */
   }
@@ -36,11 +39,27 @@ export function basculerFavori(f: Omit<Favori, "ajoute">): boolean {
   if (present) {
     ecrire(liste.filter((x) => x.id !== f.id));
     garderHorsLigne([url], true);
+    void noter("favoris", f.id);
     return false;
   }
   ecrire([{ ...f, ajoute: new Date().toISOString() }, ...liste]);
   garderHorsLigne([url]);
+  void noter("favoris", f.id);
   return true;
+}
+
+/** Pour la synchronisation : range (ou retire) un favori venu d'un autre appareil, sans rien noter au journal. */
+export function rangerFavori(id: string, f: Favori | null): void {
+  const liste = lireFavoris().filter((x) => x.id !== id);
+  const url = `/explorer/article/${id}`;
+  if (f && typeof f.titre === "string") {
+    const range: Favori = { id, titre: f.titre, resume: String(f.resume ?? ""), ajoute: String(f.ajoute ?? new Date().toISOString()) };
+    ecrire([...liste, range].sort((a, b) => b.ajoute.localeCompare(a.ajoute)));
+    garderHorsLigne([url]);
+  } else {
+    ecrire(liste);
+    garderHorsLigne([url], true);
+  }
 }
 
 // Lecture « réactive » des favoris, pour useSyncExternalStore.
@@ -49,7 +68,7 @@ let listeEnCache: Favori[] = [];
 export function instantaneFavoris(): Favori[] {
   let brut = "[]";
   try {
-    brut = localStorage.getItem(CLE) ?? "[]";
+    brut = localStorage.getItem(cle()) ?? "[]";
   } catch {
     /* stockage désactivé */
   }
