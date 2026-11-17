@@ -57,3 +57,10 @@
 - **Journal** de toutes les actions sensibles, et alerte de nouvel appareil.
 - **Sauvegardes** : une copie automatique chaque nuit, plus un export complet à la demande.
 - **Statistiques anonymes** : aucune donnée personnelle des lecteurs n'est collectée.
+- **Comptes des utilisateurs (connexion Google)** :
+  - le site ne reçoit de Google que le nom et l'adresse e-mail, jamais de mot de passe, et vérifie la signature de Google à chaque connexion (état, nonce et PKCE contre le détournement de la réponse) ;
+  - la session d'un utilisateur est un cookie signé, illisible par le JavaScript de la page ; elle est totalement séparée de celle du créateur : un compte utilisateur n'ouvre jamais le mode créateur ;
+  - les données de chaque compte sont dans des tables réservées au serveur (aucun droit pour la clé publique), et chaque requête est rattachée au compte de la session : personne ne peut lire ou écrire pour un autre ;
+  - les fichiers joints sont dans un espace de stockage privé, servi par des liens temporaires de 10 minutes ;
+  - « Déconnecter tous mes appareils » et « Supprimer mon compte » sont à la main de chaque utilisateur.
+- **Vue utilisateur du créateur** : elle ne donne aucun droit de plus, elle en retire à l'affichage. Elle n'existe que pour un créateur déjà connecté, et s'éteint dès qu'il revient dans son espace ou que sa session expire.
