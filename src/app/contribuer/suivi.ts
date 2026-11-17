@@ -1,15 +1,18 @@
 /**
- * Les jetons de suivi des contributions envoyées depuis ce navigateur.
- * Ils restent sur l'appareil : c'est la seule clé de « Mes messages », sans compte ni adresse.
+ * Les jetons de suivi des contributions envoyées depuis ce navigateur : c'est la seule clé
+ * de « Mes messages ». Ils restent sur l'appareil et, avec un compte, le suivent d'un appareil à l'autre.
  */
+import { tiroir } from "@/lib/client/compte";
+import { noter } from "@/lib/client/synchro/journal";
 import { SUIVIS_MAX } from "@/lib/contributions/modele";
 
-const CLE = "haqqreason-contributions-suivies";
+const NOM = "haqqreason-contributions-suivies";
+const cle = () => tiroir(NOM);
 const EVENEMENT = "haqqreason-suivis";
 
 export function lireJetons(): string[] {
   try {
-    const brut = JSON.parse(localStorage.getItem(CLE) ?? "[]");
+    const brut = JSON.parse(localStorage.getItem(cle()) ?? "[]");
     return Array.isArray(brut) ? brut.filter((j): j is string => typeof j === "string") : [];
   } catch {
     return [];
@@ -19,8 +22,9 @@ export function lireJetons(): string[] {
 export function ajouterJeton(jeton: string): void {
   try {
     const jetons = [jeton, ...lireJetons().filter((j) => j !== jeton)].slice(0, SUIVIS_MAX);
-    localStorage.setItem(CLE, JSON.stringify(jetons));
+    localStorage.setItem(cle(), JSON.stringify(jetons));
     window.dispatchEvent(new Event(EVENEMENT));
+    void noter("reglages", "contributions");
   } catch {
     // Stockage indisponible (navigation privée stricte) : la contribution part quand même.
   }
@@ -28,7 +32,19 @@ export function ajouterJeton(jeton: string): void {
 
 export function oublierJeton(jeton: string): void {
   try {
-    localStorage.setItem(CLE, JSON.stringify(lireJetons().filter((j) => j !== jeton)));
+    localStorage.setItem(cle(), JSON.stringify(lireJetons().filter((j) => j !== jeton)));
+    window.dispatchEvent(new Event(EVENEMENT));
+    void noter("reglages", "contributions");
+  } catch {
+    // rien à faire
+  }
+}
+
+/** Pour la synchronisation : range les jetons venus d'un autre appareil, sans rien noter au journal. */
+export function rangerJetons(jetons: unknown): void {
+  try {
+    const propres = Array.isArray(jetons) ? jetons.filter((j): j is string => typeof j === "string").slice(0, SUIVIS_MAX) : [];
+    localStorage.setItem(cle(), JSON.stringify(propres));
     window.dispatchEvent(new Event(EVENEMENT));
   } catch {
     // rien à faire
@@ -39,7 +55,7 @@ export function oublierJeton(jeton: string): void {
 export function surChangement(rappel: () => void): () => void {
   const local = () => rappel();
   const autre = (e: StorageEvent) => {
-    if (e.key === CLE) rappel();
+    if (e.key === cle()) rappel();
   };
   window.addEventListener(EVENEMENT, local);
   window.addEventListener("storage", autre);
