@@ -60,7 +60,7 @@ export function ListeFavoris() {
       {onglet === "historique" ? (
         <div className="mt-6">
           {!historique || historique.length === 0 ? (
-            <p className="verre rounded-3xl p-6 text-encre-douce">Aucun article lu sur cet appareil pour l&apos;instant.</p>
+            <p className="verre rounded-3xl p-6 text-encre-douce">Aucun article lu pour l&apos;instant.</p>
           ) : (
             <>
               <ol className="grid gap-2">
