@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { Heart, Lightbulb, MessagesSquare, Network } from "lucide-react";
 import { BoutonTheme } from "./BoutonTheme";
+import { BoutonCompte } from "./compte/BoutonCompte";
 import { Logo } from "./Logo";
 import { BoutonRecherche } from "./PaletteRecherche";
 
 const OUTILS = [
-  { href: "/debat", libelle: "Débat express", Icone: MessagesSquare },
+  { href: "/debat", libelle: "Débat express", Icone: MessagesSquare, cache: "lien-outil-etroit" },
   { href: "/graphe", libelle: "Graphe", Icone: Network, cache: "lien-outil-secondaire" },
   { href: "/contribuer", libelle: "Contribuer", Icone: Lightbulb, cache: "lien-outil-secondaire" },
   { href: "/favoris", libelle: "Favoris", Icone: Heart },
@@ -14,9 +15,12 @@ const OUTILS = [
 export function EnTete({
   children,
   outils = true,
+  compte = true,
 }: {
   children?: React.ReactNode;
   outils?: boolean;
+  /** La pastille du compte utilisateur ; l'espace créateur, qui a sa propre session, ne l'affiche pas. */
+  compte?: boolean;
 }) {
   return (
     <header className="sans-impression mx-auto flex w-full max-w-6xl items-center justify-between gap-3 px-5 py-5 sm:px-8">
@@ -40,6 +44,7 @@ export function EnTete({
         <BoutonRecherche />
         {children}
         <BoutonTheme />
+        {compte && <BoutonCompte />}
       </div>
     </header>
   );
