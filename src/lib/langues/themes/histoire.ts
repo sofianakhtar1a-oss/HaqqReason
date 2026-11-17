@@ -86,5 +86,66 @@ to invade | envahir | v | B2 | /ɪnˈveɪd/ | The Vikings invaded the coast. | L
 queen | reine | n | A2 | /kwiːn/ | The queen visited the village. | La reine a visité le village.
 king | roi | n | A2 | /kɪŋ/ | The king lived in a grand palace. | Le roi vivait dans un palais somptueux.
 sultan | sultan | n | C1 | /ˈsʌltən/ | The sultan ruled from the palace. | Le sultan gouvernait depuis le palais.
+historian | historien | n | B1 | /hɪˈstɔːriən/ | The historian studied old letters. | L'historien a étudié de vieilles lettres.
+Middle Ages | Moyen Âge | n | B1 | /ˌmɪdl ˈeɪdʒɪz/ | Castles were built in the Middle Ages. | Les châteaux ont été construits au Moyen Âge.
+Antiquity | Antiquité | n | B2 | /ænˈtɪkwəti/ | Rome was a great city in Antiquity. | Rome était une grande ville dans l'Antiquité.
+golden age | âge d'or | n | B2 | /ˌɡəʊldən ˈeɪdʒ/ | Baghdad had a golden age of science. | Bagdad a connu un âge d'or scientifique.
+civilisation | civilisation | n | B2 | /ˌsɪvəlaɪˈzeɪʃn/ | Ancient Egypt was a great civilisation. | L'Égypte ancienne était une grande civilisation.
+caliphate | califat | n | C1 | /ˈkælɪfeɪt/ | The caliphate stretched from Spain to India. | Le califat s'étendait de l'Espagne à l'Inde.
+caliph | calife | n | C1 | /ˈkeɪlɪf/ | The caliph built a great library. | Le calife a bâti une grande bibliothèque.
+Ottoman Empire | Empire ottoman | n | B2 | /ˌɒtəmən ˈempaɪər/ | The Ottoman Empire lasted six centuries. | L'Empire ottoman a duré six siècles.
+Andalusia | Andalousie | n | B2 | /ˌændəˈluːsiə/ | Cordoba was the jewel of Andalusia. | Cordoue était le joyau d'Al-Andalus.
+world war | guerre mondiale | n | B1 | /ˌwɜːld ˈwɔːr/ | My great-grandfather fought in the world war. | Mon arrière-grand-père a combattu pendant la guerre mondiale.
+war | guerre | n | A2 | /wɔːr/ | The war lasted four years. | La guerre a duré quatre ans.
+peace | paix | n | A2 | /piːs/ | Everyone wants peace. | Tout le monde veut la paix.
+peace treaty | traité de paix | n | B2 | /ˈpiːs ˌtriːti/ | They signed a peace treaty. | Ils ont signé un traité de paix.
+army | armée | n | A2 | /ˈɑːmi/ | The army crossed the river. | L'armée a traversé le fleuve.
+navy | marine (militaire) | n | B2 | /ˈneɪvi/ | He served in the navy. | Il a servi dans la marine.
+battle | bataille | n | B1 | /ˈbætl/ | The battle lasted three days. | La bataille a duré trois jours.
+weapon | arme | n | B1 | /ˈwepən/ | Knights fought with swords and other weapons. | Les chevaliers combattaient à l'épée et avec d'autres armes.
+sword | épée | n | B1 | /sɔːd/ | The museum has an old sword. | Le musée a une vieille épée.
+armour | armure | n | B2 | /ˈɑːmər/ | The knight wore heavy armour. | Le chevalier portait une lourde armure.
+general | général | n | B1 | /ˈdʒenrəl/ | The general led his troops. | Le général a mené ses troupes.
+troops | troupes | n | B2 | /truːps/ | Troops were sent to the border. | Des troupes ont été envoyées à la frontière.
+occupation | occupation | n | B2 | /ˌɒkjuˈpeɪʃn/ | The town suffered during the occupation. | La ville a souffert pendant l'occupation.
+resistance | résistance | n | B2 | /rɪˈzɪstəns/ | The resistance fought the invaders. | La résistance a combattu les envahisseurs.
+independence | indépendance | n | B1 | /ˌɪndɪˈpendəns/ | Algeria gained independence in 1962. | L'Algérie a obtenu son indépendance en 1962.
+colonisation | colonisation | n | C1 | /ˌkɒlənaɪˈzeɪʃn/ | Colonisation left deep scars. | La colonisation a laissé de profondes cicatrices.
+decolonisation | décolonisation | n | C1 | /ˌdiːkɒlənaɪˈzeɪʃn/ | Decolonisation changed the map of Africa. | La décolonisation a changé la carte de l'Afrique.
+slavery | esclavage | n | B2 | /ˈsleɪvəri/ | Slavery was abolished in the nineteenth century. | L'esclavage a été aboli au dix-neuvième siècle.
+slave | esclave | n | B2 | /sleɪv/ | Bilal was a freed slave. | Bilal était un esclave affranchi.
+palace | palais | n | A2 | /ˈpæləs/ | The palace has a beautiful garden. | Le palais a un beau jardin.
+reign | règne ; régner | n | C1 | /reɪn/ | The king's reign lasted forty years. | Le règne du roi a duré quarante ans.
+crown | couronne | n | B1 | /kraʊn/ | The queen wore a golden crown. | La reine portait une couronne d'or.
+prince | prince | n | A2 | /prɪns/ | The prince married a princess. | Le prince a épousé une princesse.
+princess | princesse | n | A2 | /prɪnˈses/ | The princess lived in a castle. | La princesse vivait dans un château.
+heritage site | site patrimonial | n | B2 | /ˈherɪtɪdʒ saɪt/ | The old city is a heritage site. | La vieille ville est un site patrimonial.
+museum piece | pièce de musée | n | C1 | /mjuˈziːəm piːs/ | This old radio is a real museum piece. | Cette vieille radio est une vraie pièce de musée.
+historical | historique (lié à l'histoire) | adj | B1 | /hɪˈstɒrɪkl/ | It's a historical novel. | C'est un roman historique.
+primary source | source primaire | n | C1 | /ˌpraɪməri ˈsɔːs/ | Historians prefer a primary source. | Les historiens préfèrent une source primaire.
+oral tradition | tradition orale | n | C1 | /ˌɔːrəl trəˈdɪʃn/ | The story survived through oral tradition. | L'histoire a survécu grâce à la tradition orale.
+date back | remonter (à une époque) | v | B2 | /ˌdeɪt ˈbæk/ | These walls date back to the tenth century. | Ces murs remontent au dixième siècle.
+found | fonder | v | B2 | /faʊnd/ | The city was founded in 670. | La ville a été fondée en 670.
+collapse | effondrement ; s'effondrer | n | B2 | /kəˈlæps/ | The collapse of the empire took centuries. | L'effondrement de l'empire a pris des siècles.
+decline | déclin | n | C1 | /dɪˈklaɪn/ | The decline of Rome was slow. | Le déclin de Rome a été lent.
+rise | essor, ascension | n | B2 | /raɪz/ | The rise of Islam changed the world. | L'essor de l'islam a changé le monde.
+Silk Road | route de la soie | n | B2 | /ˌsɪlk ˈrəʊd/ | Merchants travelled along the Silk Road. | Les marchands parcouraient la route de la soie.
+caravan | caravane | n | B2 | /ˈkærəvæn/ | A caravan of camels crossed the desert. | Une caravane de chameaux a traversé le désert.
+merchant | marchand | n | B2 | /ˈmɜːtʃənt/ | The merchant sold spices and silk. | Le marchand vendait des épices et de la soie.
+astrolabe | astrolabe | n | C2 | /ˈæstrəleɪb/ | Muslim scientists perfected the astrolabe. | Les savants musulmans ont perfectionné l'astrolabe.
+Hijra | Hégire | n | B2 | /ˈhɪdʒrə/ | The Islamic calendar starts with the Hijra. | Le calendrier musulman commence avec l'Hégire.
+biography | biographie | n | B1 | /baɪˈɒɡrəfi/ | I read a biography of the Prophet. | J'ai lu une biographie du Prophète.
+memoir | mémoires | n | C1 | /ˈmemwɑːr/ | The general wrote his memoir. | Le général a écrit ses mémoires.
+ancestor worship | culte des ancêtres | n | C2 | /ˈænsestə ˌwɜːʃɪp/ | Ancestor worship existed in ancient China. | Le culte des ancêtres existait dans la Chine ancienne.
+nomadic | nomade | adj | C1 | /nəʊˈmædɪk/ | The Bedouins lived a nomadic life. | Les Bédouins menaient une vie nomade.
+Bedouin | bédouin | n | B2 | /ˈbeduɪn/ | The Bedouin welcomed us into his tent. | Le Bédouin nous a accueillis sous sa tente.
+tribal | tribal | adj | C1 | /ˈtraɪbl/ | Tribal wars divided Arabia. | Des guerres tribales divisaient l'Arabie.
+ancient Egypt | Égypte ancienne | n | B1 | /ˌeɪnʃənt ˈiːdʒɪpt/ | Ancient Egypt built huge temples. | L'Égypte ancienne a bâti d'immenses temples.
+Roman Empire | Empire romain | n | B1 | /ˌrəʊmən ˈempaɪər/ | The Roman Empire ruled North Africa. | L'Empire romain dominait l'Afrique du Nord.
+Byzantine | byzantin | adj | C1 | /bɪˈzæntaɪn/ | Constantinople was the Byzantine capital. | Constantinople était la capitale byzantine.
+Persian Empire | Empire perse | n | B2 | /ˌpɜːʃn ˈempaɪər/ | The Persian Empire was vast. | L'Empire perse était immense.
+hegemony | hégémonie | n | C2 | /hɪˈɡeməni/ | Rome's hegemony lasted centuries. | L'hégémonie de Rome a duré des siècles.
+vestige | vestige | n | C2 | /ˈvestɪdʒ/ | A vestige of the old wall remains. | Il reste un vestige de l'ancien rempart.
+annals | annales | n | C2 | /ˈænlz/ | The battle is recorded in the annals. | La bataille est consignée dans les annales.
 `,
 );

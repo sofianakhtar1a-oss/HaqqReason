@@ -22,8 +22,11 @@ for (const f of fichiers) {
   for (const v of Object.values(mod)) if (v && typeof v === "object" && "entrees" in v) themes.push(v as Theme);
 }
 
-/* Les 12 thèmes d'origine : leurs mots sont déjà présents, le lot nouveau est le reste. */
-const ORIGINE = new Set(["famille", "quotidien", "nourriture", "maison", "voyage", "ville", "travail", "ecole", "sante", "emotions", "meteo", "nature"]);
+/*
+ * Volume attendu : 589 mots d'origine, puis deux lots ajoutés sans doublon
+ * (2 000 mots, puis 4 000 mots) : 6 589 entrées en tout.
+ */
+const TOTAL_ATTENDU = 589 + 2000 + 4000;
 
 /** Forme de comparaison d'un mot : sans « to », sans casse, sans ponctuation finale. */
 const cle = (en: string) =>
@@ -41,7 +44,7 @@ const vus = new Map<string, string[]>();
 for (const x of toutes) vus.set(cle(x.en), [...(vus.get(cle(x.en)) ?? []), `${x.theme}:${x.en}`]);
 const doublons = [...vus.entries()].filter(([, l]) => l.length > 1);
 
-ok(`33 thèmes (${themes.length} trouvés)`, themes.length === 33, themes.map((t) => t.id));
+ok(`45 thèmes (${themes.length} trouvés)`, themes.length === 45, themes.map((t) => t.id));
 ok(`aucun mot en double dans tout le site (${toutes.length} entrées)`, doublons.length === 0, doublons);
 ok("aucun identifiant de thème en double", new Set(themes.map((t) => t.id)).size === themes.length);
 ok("toutes les prononciations entre barres obliques", toutes.every((x) => /^\/.+\/$/.test(x.api)), toutes.filter((x) => !/^\/.+\/$/.test(x.api)).map((x) => x.en));
@@ -57,11 +60,10 @@ const sansMot = toutes.filter((x) => {
 });
 ok(`chaque exemple contient le mot (${sansMot.length} à corriger)`, sansMot.length === 0, sansMot.map((x) => `${x.en} → ${x.exEn}`));
 
-const lot = toutes.filter((x) => !ORIGINE.has(x.theme));
-const repartition = Object.fromEntries(NIVEAUX.map((n) => [n, lot.filter((x) => x.niveau === n).length]));
-ok(`lot nouveau de exactement 2 000 mots (${lot.length})`, lot.length === 2000, lot.length);
-console.log(`   lot nouveau : ${lot.length} mots · ${JSON.stringify(repartition)}`);
-for (const t of themes.filter((t) => !ORIGINE.has(t.id))) console.log(`   ${t.id.padEnd(16)} ${t.entrees.length}`);
+ok(`exactement ${TOTAL_ATTENDU} mots en tout (${toutes.length})`, toutes.length === TOTAL_ATTENDU, toutes.length);
+const repartition = Object.fromEntries(NIVEAUX.map((n) => [n, toutes.filter((x) => x.niveau === n).length]));
+console.log(`   ${toutes.length} mots · ${JSON.stringify(repartition)}`);
+for (const t of [...themes].sort((a, b) => a.entrees.length - b.entrees.length)) console.log(`   ${t.id.padEnd(18)} ${t.entrees.length}`);
 
 console.log(e ? `\n${e} échec(s)` : "\nTout est bon.");
 process.exit(e ? 1 : 0);

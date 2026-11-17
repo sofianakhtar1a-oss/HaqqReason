@@ -108,5 +108,41 @@ horizon | horizon | n | B2 | /həˈraɪzn/ | The sun sank below the horizon. | L
 reef | récif | n | C1 | /riːf/ | Divers explore the coral reef. | Les plongeurs explorent le récif de corail.
 to erode | éroder | v | C1 | /ɪˈrəʊd/ | Waves erode the cliff over time. | Les vagues érodent la falaise au fil du temps.
 lantern | lanterne | n | B1 | /ˈlæntərn/ | We lit a lantern for the camp. | Nous avons allumé une lanterne pour le camp.
+summer holidays | grandes vacances | n | A1 | /ˌsʌmə ˈhɒlədeɪz/ | We go to Algeria for the summer holidays. | Nous allons en Algérie pour les grandes vacances.
+go on holiday | partir en vacances | expr | A1 | /ˌɡəʊ ɒn ˈhɒlədeɪ/ | We go on holiday in August. | Nous partons en vacances en août.
+holiday home | maison de vacances | n | B1 | /ˈhɒlədeɪ həʊm/ | They have a holiday home by the sea. | Ils ont une maison de vacances au bord de la mer.
+villa | villa | n | B1 | /ˈvɪlə/ | We rented a villa with a pool. | Nous avons loué une villa avec piscine.
+swimming costume | maillot de bain | n | A2 | /ˈswɪmɪŋ ˌkɒstjuːm/ | Don't forget your swimming costume. | N'oublie pas ton maillot de bain.
+burkini | burkini | n | B2 | /bɜːˈkiːni/ | She swims in a burkini. | Elle nage en burkini.
+beach umbrella | parasol | n | A2 | /ˌbiːtʃ ʌmˈbrelə/ | We sat under a beach umbrella. | Nous nous sommes assis sous un parasol.
+sunhat | chapeau de soleil | n | A2 | /ˈsʌnhæt/ | Put on your sunhat. | Mets ton chapeau de soleil.
+waves | vagues | n | A2 | /weɪvz/ | The waves are big today. | Les vagues sont grosses aujourd'hui.
+pier | jetée | n | B2 | /pɪər/ | We walked to the end of the pier. | Nous avons marché jusqu'au bout de la jetée.
+marina | port de plaisance | n | B2 | /məˈriːnə/ | Yachts are moored in the marina. | Des yachts sont amarrés au port de plaisance.
+promenade | promenade (front de mer) | n | B2 | /ˌprɒməˈnɑːd/ | We walked along the promenade. | Nous nous sommes promenés sur le front de mer.
+boat trip | excursion en bateau | n | A2 | /ˈbəʊt trɪp/ | We took a boat trip to the island. | Nous avons fait une excursion en bateau jusqu'à l'île.
+hotel room | chambre d'hôtel | n | A1 | /həʊˈtel ruːm/ | Our hotel room has a sea view. | Notre chambre d'hôtel a vue sur la mer.
+sea view | vue sur la mer | n | A2 | /ˌsiː ˈvjuː/ | I'd like a room with a sea view. | Je voudrais une chambre avec vue sur la mer.
+room service | service en chambre | n | B1 | /ˈruːm ˌsɜːvɪs/ | We ordered breakfast from room service. | Nous avons commandé le petit déjeuner en chambre.
+half board | demi-pension | n | B2 | /ˌhɑːf ˈbɔːd/ | We booked half board. | Nous avons réservé en demi-pension.
+full board | pension complète | n | B2 | /ˌfʊl ˈbɔːd/ | Full board includes all meals. | La pension complète comprend tous les repas.
+reception desk | réception | n | A2 | /rɪˈsepʃn desk/ | Leave your key at the reception desk. | Laisse ta clé à la réception.
+local cuisine | cuisine locale | n | B1 | /ˌləʊkl kwɪˈziːn/ | Try the local cuisine! | Goûte la cuisine locale !
+market day | jour de marché | n | A2 | /ˈmɑːkɪt deɪ/ | Saturday is market day in the village. | Le samedi, c'est jour de marché au village.
+travel diary | carnet de voyage | n | B1 | /ˈtrævl ˌdaɪəri/ | She keeps a travel diary. | Elle tient un carnet de voyage.
+photo album | album photo | n | A2 | /ˈfəʊtəʊ ˌælbəm/ | We made a photo album of the trip. | Nous avons fait un album photo du voyage.
+memories | souvenirs (mémoire) | n | B1 | /ˈmeməriz/ | We have great memories of that summer. | Nous avons de beaux souvenirs de cet été-là.
+umrah | omra | n | B2 | /ˈʊmrə/ | They went to Mecca for umrah. | Ils sont allés à La Mecque pour la omra.
+hajj | hajj (grand pèlerinage) | n | B2 | /hædʒ/ | My grandfather performed the hajj. | Mon grand-père a accompli le hajj.
+travel light | voyager léger | expr | B2 | /ˌtrævl ˈlaɪt/ | I always travel light. | Je voyage toujours léger.
+hire a bike | louer un vélo | expr | B1 | /ˌhaɪər ə ˈbaɪk/ | You can hire a bike at the station. | On peut louer un vélo à la gare.
+must-see | incontournable | n | B2 | /ˈmʌst siː/ | The Alhambra is a must-see. | L'Alhambra est incontournable.
+tourist trap | attrape-touristes | n | B2 | /ˈtʊərɪst træp/ | That restaurant is a tourist trap. | Ce restaurant est un attrape-touristes.
+off-season | basse saison | n | B2 | /ˌɒf ˈsiːzn/ | Prices are lower in the off-season. | Les prix sont plus bas en basse saison.
+high season | haute saison | n | B2 | /ˌhaɪ ˈsiːzn/ | Book early for the high season. | Réserve tôt pour la haute saison.
+fully booked | complet | adj | B1 | /ˌfʊli ˈbʊkt/ | The hotel is fully booked. | L'hôtel est complet.
+holiday season | période des fêtes | n | B1 | /ˈhɒlədeɪ ˌsiːzn/ | Shops are busy in the holiday season. | Les magasins sont bondés pendant les fêtes.
+travel bag | sac de voyage | n | A2 | /ˈtrævl bæɡ/ | Pack your travel bag the night before. | Prépare ton sac de voyage la veille.
+holiday resort | station balnéaire | n | B1 | /ˈhɒlədeɪ rɪˌzɔːt/ | The holiday resort is crowded in August. | La station balnéaire est bondée en août.
 `,
 );

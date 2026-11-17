@@ -52,6 +52,91 @@ fluent | qui parle couramment | adj | B1 | /ˈfluːənt/ | He is fluent in Spani
 vocabulary | vocabulaire | n | B1 | /voʊˈkæbjəleri/ | Reading builds your vocabulary. | La lecture enrichit le vocabulaire.
 to look up | chercher (dans un dictionnaire) | v | B1 | /lʊk ʌp/ | Look the word up in the dictionary. | Cherche le mot dans le dictionnaire.
 to cheat | tricher | v | B1 | /tʃiːt/ | Cheating in exams is forbidden. | Tricher aux examens est interdit.
+headteacher | directeur d'école | n | B1 | /ˌhedˈtiːtʃər/ | The headteacher spoke to the parents. | Le directeur a parlé aux parents.
+nursery school | école maternelle | n | A2 | /ˈnɜːsəri skuːl/ | My son starts nursery school in September. | Mon fils entre à la maternelle en septembre.
+secondary school | collège, lycée | n | A2 | /ˈsekəndri skuːl/ | She goes to secondary school in town. | Elle va au collège en ville.
+high school | lycée | n | A2 | /ˈhaɪ skuːl/ | He finished high school last year. | Il a fini le lycée l'an dernier.
+boarding school | internat | n | B1 | /ˈbɔːdɪŋ skuːl/ | He was sent to boarding school. | On l'a envoyé en internat.
+term | trimestre | n | B1 | /tɜːm/ | The spring term starts in January. | Le trimestre de printemps commence en janvier.
+semester | semestre | n | B1 | /sɪˈmestər/ | I study abroad next semester. | J'étudie à l'étranger le semestre prochain.
+school year | année scolaire | n | A2 | /ˌskuːl ˈjɪər/ | The school year ends in July. | L'année scolaire se termine en juillet.
+break time | récréation | n | A2 | /ˈbreɪk taɪm/ | We play football at break time. | Nous jouons au foot à la récré.
+blackboard | tableau noir | n | A2 | /ˈblækbɔːd/ | The teacher wrote on the blackboard. | Le professeur a écrit au tableau noir.
+chalk | craie | n | B1 | /tʃɔːk/ | A piece of chalk fell on the floor. | Un morceau de craie est tombé par terre.
+rubber | gomme | n | A2 | /ˈrʌbər/ | Can I borrow your rubber? | Je peux emprunter ta gomme ?
+pencil case | trousse | n | A2 | /ˈpensl keɪs/ | My pencil case is full of pens. | Ma trousse est pleine de stylos.
+schoolbag | cartable | n | A2 | /ˈskuːlbæɡ/ | His schoolbag is too heavy. | Son cartable est trop lourd.
+textbook | manuel scolaire | n | B1 | /ˈtekstbʊk/ | Open your textbook at page twelve. | Ouvrez votre manuel à la page douze.
+dictionary | dictionnaire | n | A2 | /ˈdɪkʃənri/ | Look up the word in the dictionary. | Cherche le mot dans le dictionnaire.
+exercise book | cahier d'exercices | n | A2 | /ˈeksəsaɪz bʊk/ | Write the answers in your exercise book. | Écris les réponses dans ton cahier d'exercices.
+calculator | calculatrice | n | A2 | /ˈkælkjuleɪtər/ | You can't use a calculator in this test. | Tu ne peux pas utiliser de calculatrice pour ce contrôle.
+physics | physique | n | B1 | /ˈfɪzɪks/ | Physics is my favourite subject. | La physique est ma matière préférée.
+biology | biologie | n | B1 | /baɪˈɒlədʒi/ | In biology we study cells. | En biologie, nous étudions les cellules.
+art class | cours d'arts plastiques | n | A2 | /ˈɑːt klɑːs/ | We painted in art class. | Nous avons peint en cours d'arts plastiques.
+PE | EPS | n | A2 | /ˌpiː ˈiː/ | We have PE on Tuesday. | Nous avons EPS le mardi.
+philosophy | philosophie | n | B1 | /fəˈlɒsəfi/ | Philosophy teaches us to think. | La philosophie nous apprend à penser.
+economics | économie (matière) | n | B2 | /ˌiːkəˈnɒmɪks/ | She studies economics at university. | Elle étudie l'économie à l'université.
+computer science | informatique | n | B1 | /kəmˌpjuːtə ˈsaɪəns/ | He has a degree in computer science. | Il a un diplôme d'informatique.
+foreign language | langue étrangère | n | A2 | /ˌfɒrən ˈlæŋɡwɪdʒ/ | Learning a foreign language opens doors. | Apprendre une langue étrangère ouvre des portes.
+grammar | grammaire | n | A2 | /ˈɡræmər/ | English grammar is quite logical. | La grammaire anglaise est assez logique.
+spelling | orthographe | n | A2 | /ˈspelɪŋ/ | Check your spelling. | Vérifie ton orthographe.
+pronunciation | prononciation | n | B1 | /prəˌnʌnsiˈeɪʃn/ | Her pronunciation is excellent. | Sa prononciation est excellente.
+reading | lecture | n | A1 | /ˈriːdɪŋ/ | Reading improves your vocabulary. | La lecture améliore le vocabulaire.
+writing | écriture | n | A1 | /ˈraɪtɪŋ/ | Her writing is very neat. | Son écriture est très soignée.
+handwriting | écriture (manuscrite) | n | B1 | /ˈhændraɪtɪŋ/ | I can't read your handwriting. | Je n'arrive pas à lire ton écriture.
+quiz | quiz, interrogation | n | A2 | /kwɪz/ | The teacher gave us a quick quiz. | Le professeur nous a fait une petite interrogation.
+mark | note | n | A2 | /mɑːk/ | I got a good mark in English. | J'ai eu une bonne note en anglais.
+report card | bulletin scolaire | n | B1 | /rɪˈpɔːt kɑːd/ | My report card was excellent. | Mon bulletin était excellent.
+certificate | certificat, diplôme | n | B1 | /səˈtɪfɪkət/ | She received a certificate at the end of the course. | Elle a reçu un certificat à la fin du cours.
+diploma | diplôme | n | B1 | /dɪˈpləʊmə/ | He framed his diploma. | Il a encadré son diplôme.
+degree course | cursus universitaire | n | B2 | /dɪˈɡriː kɔːs/ | It's a four-year degree course. | C'est un cursus de quatre ans.
+bachelor's degree | licence | n | B2 | /ˈbætʃələz dɪˌɡriː/ | She has a bachelor's degree in law. | Elle a une licence en droit.
+master's degree | master | n | B2 | /ˈmɑːstəz dɪˌɡriː/ | He is doing a master's degree. | Il prépare un master.
+PhD | doctorat | n | C1 | /ˌpiː eɪtʃ ˈdiː/ | She is writing her PhD thesis. | Elle rédige sa thèse de doctorat.
+thesis | thèse, mémoire | n | C1 | /ˈθiːsɪs/ | His thesis is about Arabic poetry. | Sa thèse porte sur la poésie arabe.
+campus | campus | n | B1 | /ˈkæmpəs/ | The campus has a big library. | Le campus a une grande bibliothèque.
+tuition fees | frais de scolarité | n | B2 | /tjuˈɪʃn fiːz/ | Tuition fees are high in England. | Les frais de scolarité sont élevés en Angleterre.
+lecturer | maître de conférences | n | B2 | /ˈlektʃərər/ | The lecturer spoke for two hours. | Le maître de conférences a parlé deux heures.
+professor | professeur (d'université) | n | B1 | /prəˈfesər/ | The professor published a new book. | Le professeur a publié un nouveau livre.
+tutorial | travaux dirigés | n | B2 | /tjuːˈtɔːriəl/ | We have a tutorial on Thursday. | Nous avons des TD le jeudi.
+seminar | séminaire | n | B2 | /ˈsemɪnɑːr/ | The seminar is about Islamic history. | Le séminaire porte sur l'histoire islamique.
+assignment | devoir, travail à rendre | n | B1 | /əˈsaɪnmənt/ | The assignment is due on Friday. | Le devoir est à rendre vendredi.
+coursework | travaux notés | n | B2 | /ˈkɔːswɜːk/ | Coursework counts for half the grade. | Les travaux notés comptent pour moitié dans la note.
+attendance | assiduité, présence | n | B2 | /əˈtendəns/ | Attendance is compulsory. | La présence est obligatoire.
+compulsory | obligatoire | adj | B2 | /kəmˈpʌlsəri/ | School is compulsory until sixteen. | L'école est obligatoire jusqu'à seize ans.
+optional | facultatif | adj | B1 | /ˈɒpʃənl/ | The art class is optional. | Le cours d'art est facultatif.
+enrol | s'inscrire | v | B2 | /ɪnˈrəʊl/ | I want to enrol in an evening class. | Je veux m'inscrire à un cours du soir.
+attend | assister à | v | B1 | /əˈtend/ | Did you attend the lecture? | As-tu assisté au cours magistral ?
+concentrate | se concentrer | v | B1 | /ˈkɒnsntreɪt/ | I can't concentrate with this noise. | Je n'arrive pas à me concentrer avec ce bruit.
+repeat | répéter | v | A1 | /rɪˈpiːt/ | Can you repeat the question? | Peux-tu répéter la question ?
+translate | traduire | v | A2 | /trænsˈleɪt/ | Translate this sentence into French. | Traduis cette phrase en français.
+rote learning | apprentissage par cœur | n | C1 | /ˌrəʊt ˈlɜːnɪŋ/ | Rote learning is not enough to understand. | L'apprentissage par cœur ne suffit pas pour comprendre.
+literacy | alphabétisation | n | C1 | /ˈlɪtərəsi/ | Literacy rates have improved. | Le taux d'alphabétisation s'est amélioré.
+illiterate | analphabète | adj | C1 | /ɪˈlɪtərət/ | Her grandmother was illiterate but very wise. | Sa grand-mère était analphabète mais très sage.
+schoolteacher | instituteur | n | B1 | /ˈskuːltiːtʃər/ | My mother was a schoolteacher. | Ma mère était institutrice.
+detention | retenue, colle | n | B1 | /dɪˈtenʃn/ | He got detention for being late. | Il a eu une colle pour son retard.
+expel | renvoyer (d'une école) | v | C1 | /ɪkˈspel/ | The school may expel him. | L'école pourrait le renvoyer.
+school trip | sortie scolaire | n | A2 | /ˈskuːl trɪp/ | We went on a school trip to the museum. | Nous sommes allés au musée en sortie scolaire.
+parents' evening | réunion parents-professeurs | n | B1 | /ˈpeərənts ˌiːvnɪŋ/ | Parents' evening is next Tuesday. | La réunion parents-professeurs a lieu mardi prochain.
+canteen | cantine | n | A2 | /kænˈtiːn/ | We eat lunch in the canteen. | Nous déjeunons à la cantine.
+gymnasium | gymnase | n | B1 | /dʒɪmˈneɪziəm/ | PE takes place in the gymnasium. | L'EPS a lieu au gymnase.
+locker | casier | n | B1 | /ˈlɒkər/ | Leave your coat in your locker. | Laisse ton manteau dans ton casier.
+Quran school | école coranique | n | B1 | /kəˈrɑːn skuːl/ | He learned to read at a Quran school. | Il a appris à lire dans une école coranique.
+memorisation | mémorisation | n | C1 | /ˌmeməraɪˈzeɪʃn/ | Memorisation of the Qur'an takes years. | La mémorisation du Coran prend des années.
+revision | révisions | n | B1 | /rɪˈvɪʒn/ | I do my revision in the library. | Je fais mes révisions à la bibliothèque.
+flashcard | fiche, carte mémoire | n | B1 | /ˈflæʃkɑːd/ | I learn vocabulary with flashcards. | J'apprends le vocabulaire avec des cartes mémoire.
+learner | apprenant | n | B1 | /ˈlɜːnər/ | This course is for adult learners. | Ce cours est destiné aux apprenants adultes.
+beginner | débutant | n | A2 | /bɪˈɡɪnər/ | This class is for beginners. | Ce cours est pour les débutants.
+intermediate | intermédiaire | adj | B1 | /ˌɪntəˈmiːdiət/ | She is at an intermediate level. | Elle a un niveau intermédiaire.
+advanced | avancé | adj | B1 | /ədˈvɑːnst/ | He takes an advanced English class. | Il suit un cours d'anglais avancé.
+level | niveau | n | A2 | /ˈlevl/ | What level is your English? | Quel est ton niveau d'anglais ?
+progress | progrès | n | B1 | /ˈprəʊɡres/ | You've made great progress. | Tu as fait de grands progrès.
+feedback | retour, commentaires | n | B2 | /ˈfiːdbæk/ | The teacher gave helpful feedback. | Le professeur a fait des remarques utiles.
+online course | cours en ligne | n | B1 | /ˌɒnlaɪn ˈkɔːs/ | I'm taking an online course in Arabic. | Je suis un cours d'arabe en ligne.
+e-learning | apprentissage en ligne | n | B2 | /ˈiː ˌlɜːnɪŋ/ | E-learning is flexible. | L'apprentissage en ligne est flexible.
+self-study | apprentissage autonome | n | B2 | /ˌself ˈstʌdi/ | Self-study needs discipline. | L'apprentissage autonome demande de la discipline.
+education system | système éducatif | n | B2 | /ˌedʒuˈkeɪʃn ˌsɪstəm/ | The education system is changing. | Le système éducatif évolue.
+headmistress | directrice d'école | n | B1 | /ˌhedˈmɪstrəs/ | The headmistress welcomed the parents. | La directrice a accueilli les parents.
 `,
 );
 
@@ -110,6 +195,67 @@ rush hour | heure de pointe | n | B1 | /rʌʃ aʊər/ | Avoid the underground at
 landmark | monument, point de repère | n | B2 | /ˈlændmɑːrk/ | The old tower is the city's main landmark. | La vieille tour est le principal monument de la ville.
 to be located | se situer | expr | B1 | /bi ˈloʊkeɪtɪd/ | The hotel will be located in the old town. | L'hôtel sera situé dans la vieille ville.
 how do I get to | comment aller à | expr | A2 | /haʊ duː aɪ ɡet tuː/ | Excuse me, how do I get to the station? | Excusez-moi, comment aller à la gare ?
+village | village | n | A1 | /ˈvɪlɪdʒ/ | My grandparents live in a small village. | Mes grands-parents vivent dans un petit village.
+capital city | capitale | n | A2 | /ˌkæpɪtl ˈsɪti/ | Rabat is the capital city of Morocco. | Rabat est la capitale du Maroc.
+library card | carte de bibliothèque | n | B1 | /ˈlaɪbrəri kɑːd/ | You need a library card to borrow books. | Il faut une carte de bibliothèque pour emprunter des livres.
+theatre | théâtre | n | A2 | /ˈθɪətər/ | The theatre is next to the park. | Le théâtre est à côté du parc.
+restaurant | restaurant | n | A1 | /ˈrestrɒnt/ | We had dinner at a Lebanese restaurant. | Nous avons dîné dans un restaurant libanais.
+café | café (lieu) | n | A1 | /ˈkæfeɪ/ | Let's meet at the café. | Retrouvons-nous au café.
+fire station | caserne de pompiers | n | A2 | /ˈfaɪə ˌsteɪʃn/ | The fire station is near the school. | La caserne de pompiers est près de l'école.
+bus station | gare routière | n | A2 | /ˈbʌs ˌsteɪʃn/ | The coach leaves from the bus station. | Le car part de la gare routière.
+metro | métro | n | A1 | /ˈmetrəʊ/ | Take the metro to the city centre. | Prends le métro jusqu'au centre-ville.
+skyscraper | gratte-ciel | n | B1 | /ˈskaɪskreɪpər/ | Dubai is full of skyscrapers. | Dubaï est pleine de gratte-ciel.
+tower | tour | n | A2 | /ˈtaʊər/ | The tower is 300 metres high. | La tour fait 300 mètres de haut.
+block of flats | immeuble | n | B1 | /ˌblɒk əv ˈflæts/ | We live in a block of flats. | Nous habitons dans un immeuble.
+street light | réverbère | n | B1 | /ˈstriːt laɪt/ | A street light lit the corner. | Un réverbère éclairait le coin de la rue.
+zebra crossing | passage piéton | n | B1 | /ˌzebrə ˈkrɒsɪŋ/ | Cross at the zebra crossing. | Traverse au passage piéton.
+cycle lane | piste cyclable | n | B1 | /ˈsaɪkl leɪn/ | The new cycle lane is safer. | La nouvelle piste cyclable est plus sûre.
+one-way street | rue à sens unique | n | B1 | /ˌwʌn weɪ ˈstriːt/ | You can't turn here, it's a one-way street. | Tu ne peux pas tourner ici, c'est un sens unique.
+dead end | impasse | n | B2 | /ˌded ˈend/ | This road is a dead end. | Cette route est une impasse.
+high street | rue principale | n | B1 | /ˈhaɪ striːt/ | The high street is full of shops. | La rue principale est pleine de magasins.
+market square | place du marché | n | A2 | /ˌmɑːkɪt ˈskweər/ | The market square is busy on Saturdays. | La place du marché est animée le samedi.
+old town | vieille ville | n | A2 | /ˌəʊld ˈtaʊn/ | The old town has narrow streets. | La vieille ville a des rues étroites.
+medina | médina | n | B1 | /məˈdiːnə/ | We got lost in the medina of Fes. | Nous nous sommes perdus dans la médina de Fès.
+industrial area | zone industrielle | n | B2 | /ɪnˌdʌstriəl ˈeəriə/ | The factory is in the industrial area. | L'usine est dans la zone industrielle.
+housing estate | lotissement, cité | n | B2 | /ˈhaʊzɪŋ ɪˌsteɪt/ | They grew up on a housing estate. | Ils ont grandi dans une cité.
+inner city | quartiers défavorisés du centre | n | C1 | /ˌɪnə ˈsɪti/ | Many inner city schools need more teachers. | Beaucoup d'écoles des quartiers du centre manquent d'enseignants.
+urban sprawl | étalement urbain | n | C1 | /ˌɜːbən ˈsprɔːl/ | Urban sprawl destroys farmland. | L'étalement urbain détruit les terres agricoles.
+town planning | urbanisme | n | C1 | /ˌtaʊn ˈplænɪŋ/ | Good town planning makes cities pleasant. | Un bon urbanisme rend les villes agréables.
+municipal | municipal | adj | C1 | /mjuːˈnɪsɪpl/ | The municipal library is free. | La bibliothèque municipale est gratuite.
+council | conseil municipal, mairie | n | B2 | /ˈkaʊnsl/ | The council will repair the road. | La mairie va réparer la route.
+public transport | transports en commun | n | B1 | /ˌpʌblɪk ˈtrænspɔːt/ | Public transport is cheap here. | Les transports en commun sont bon marché ici.
+taxi rank | station de taxis | n | B1 | /ˈtæksi ræŋk/ | There's a taxi rank outside the station. | Il y a une station de taxis devant la gare.
+signpost | panneau indicateur | n | B1 | /ˈsaɪnpəʊst/ | Follow the signpost to the beach. | Suis le panneau vers la plage.
+graffiti | graffitis | n | B1 | /ɡrəˈfiːti/ | The wall was covered in graffiti. | Le mur était couvert de graffitis.
+noise | bruit | n | A2 | /nɔɪz/ | The noise of traffic kept me awake. | Le bruit de la circulation m'a empêché de dormir.
+busy street | rue animée | n | A2 | /ˌbɪzi ˈstriːt/ | They live on a busy street. | Ils habitent une rue animée.
+peaceful | paisible | adj | B1 | /ˈpiːsfl/ | It's a peaceful neighbourhood. | C'est un quartier paisible.
+dangerous | dangereux | adj | A2 | /ˈdeɪndʒərəs/ | This crossroads is dangerous. | Ce carrefour est dangereux.
+safe | sûr | adj | A2 | /seɪf/ | Is this area safe at night? | Ce quartier est-il sûr la nuit ?
+modern | moderne | adj | A2 | /ˈmɒdn/ | The city has a modern tram. | La ville a un tramway moderne.
+ancient city | cité antique | n | B1 | /ˌeɪnʃənt ˈsɪti/ | Carthage was an ancient city. | Carthage était une cité antique.
+historic centre | centre historique | n | B1 | /hɪˌstɒrɪk ˈsentər/ | The historic centre is closed to cars. | Le centre historique est fermé aux voitures.
+walk around | se promener, faire le tour | v | A2 | /ˌwɔːk əˈraʊnd/ | Let's walk around the old town. | Faisons le tour de la vieille ville.
+turn right | tourner à droite | expr | A1 | /ˌtɜːn ˈraɪt/ | Turn right at the bank. | Tourne à droite à la banque.
+go past | passer devant | v | A2 | /ˌɡəʊ ˈpɑːst/ | Go past the church and turn left. | Passe devant l'église et tourne à gauche.
+at the end of the street | au bout de la rue | expr | A2 | /ət ði ˌend əv ðə ˈstriːt/ | The bakery is at the end of the street. | La boulangerie est au bout de la rue.
+on the corner | au coin | expr | A2 | /ɒn ðə ˈkɔːnər/ | There's a café on the corner. | Il y a un café au coin.
+around the corner | tout près | expr | B1 | /əˌraʊnd ðə ˈkɔːnər/ | The school is just around the corner. | L'école est juste à côté.
+within walking distance | accessible à pied | expr | B2 | /wɪˌðɪn ˈwɔːkɪŋ ˌdɪstəns/ | Everything is within walking distance. | Tout est accessible à pied.
+city dweller | citadin | n | C1 | /ˈsɪti ˌdwelər/ | City dwellers often dream of the countryside. | Les citadins rêvent souvent de la campagne.
+townhouse | maison de ville | n | B2 | /ˈtaʊnhaʊs/ | They live in a narrow townhouse. | Ils habitent une étroite maison de ville.
+bus lane | voie de bus | n | B1 | /ˈbʌs leɪn/ | Taxis can use the bus lane. | Les taxis peuvent emprunter la voie de bus.
+parking meter | parcmètre | n | B1 | /ˈpɑːkɪŋ ˌmiːtər/ | Put a coin in the parking meter. | Mets une pièce dans le parcmètre.
+traffic warden | contractuel | n | B2 | /ˈtræfɪk ˌwɔːdn/ | The traffic warden gave me a ticket. | Le contractuel m'a mis une contravention.
+parking ticket | contravention (stationnement) | n | B1 | /ˈpɑːkɪŋ ˌtɪkɪt/ | I got a parking ticket. | J'ai eu une contravention.
+underpass | passage souterrain | n | B2 | /ˈʌndəpɑːs/ | Use the underpass to cross the road. | Prends le passage souterrain pour traverser.
+footbridge | passerelle | n | B2 | /ˈfʊtbrɪdʒ/ | A footbridge crosses the railway. | Une passerelle enjambe la voie ferrée.
+tram stop | arrêt de tram | n | A2 | /ˈtræm stɒp/ | Get off at the next tram stop. | Descends au prochain arrêt de tram.
+bike sharing | vélos en libre-service | n | B2 | /ˈbaɪk ˌʃeərɪŋ/ | The city has a bike sharing scheme. | La ville a des vélos en libre-service.
+nightlife | vie nocturne | n | B2 | /ˈnaɪtlaɪf/ | The city's nightlife is quiet. | La vie nocturne de la ville est calme.
+city hall | hôtel de ville | n | B1 | /ˌsɪti ˈhɔːl/ | The wedding took place at city hall. | Le mariage a eu lieu à l'hôtel de ville.
+courthouse | palais de justice | n | B2 | /ˈkɔːthaʊs/ | The courthouse is on the main square. | Le palais de justice est sur la place principale.
+cemetery | cimetière | n | B1 | /ˈsemətri/ | We visited the cemetery on Friday. | Nous sommes allés au cimetière vendredi.
 `,
 );
 
@@ -169,5 +315,76 @@ countryside | campagne | n | A2 | /ˈkʌntrisaɪd/ | I prefer the countryside to
 to go for a walk | aller se promener | expr | A2 | /ɡoʊ fɔːr ə wɔːk/ | Let's go for a walk by the river. | Allons nous promener au bord de la rivière.
 harvest | récolte | n | B2 | /ˈhɑːrvɪst/ | The olive harvest begins in November. | La récolte des olives commence en novembre.
 breathtaking | à couper le souffle | adj | B2 | /ˈbreθteɪkɪŋ/ | The view from the top was breathtaking. | La vue du sommet était à couper le souffle.
+woods | bois | n | A2 | /wʊdz/ | We went for a walk in the woods. | Nous nous sommes promenés dans les bois.
+bush | buisson | n | A2 | /bʊʃ/ | A rabbit hid under a bush. | Un lapin s'est caché sous un buisson.
+log | bûche, rondin | n | B1 | /lɒɡ/ | Put another log on the fire. | Mets une autre bûche dans le feu.
+oak | chêne | n | B1 | /əʊk/ | The old oak is three hundred years old. | Le vieux chêne a trois cents ans.
+palm tree | palmier | n | A2 | /ˈpɑːm triː/ | Palm trees line the beach. | Des palmiers bordent la plage.
+date palm | palmier dattier | n | B2 | /ˈdeɪt pɑːm/ | The oasis is full of date palms. | L'oasis est pleine de palmiers dattiers.
+olive tree | olivier | n | B1 | /ˈɒlɪv triː/ | My grandfather planted this olive tree. | Mon grand-père a planté cet olivier.
+rose | rose | n | A2 | /rəʊz/ | She grows red roses. | Elle cultive des roses rouges.
+tulip | tulipe | n | B1 | /ˈtjuːlɪp/ | Tulips bloom in spring. | Les tulipes fleurissent au printemps.
+daisy | marguerite | n | B1 | /ˈdeɪzi/ | The field was full of daisies. | Le champ était plein de marguerites.
+sunflower | tournesol | n | A2 | /ˈsʌnflaʊər/ | Sunflowers turn towards the sun. | Les tournesols se tournent vers le soleil.
+jasmine | jasmin | n | B2 | /ˈdʒæzmɪn/ | The garden smells of jasmine at night. | Le jardin sent le jasmin la nuit.
+petal | pétale | n | B1 | /ˈpetl/ | A petal fell from the rose. | Un pétale est tombé de la rose.
+thorn | épine | n | B2 | /θɔːn/ | Be careful of the thorns. | Attention aux épines.
+bloom | fleurir | v | B2 | /bluːm/ | The cherry trees bloom in April. | Les cerisiers fleurissent en avril.
+wither | se faner | v | C1 | /ˈwɪðər/ | Flowers wither without water. | Les fleurs se fanent sans eau.
+soil | terre, sol | n | B1 | /sɔɪl/ | Plant the seeds in good soil. | Plante les graines dans une bonne terre.
+mud | boue | n | A2 | /mʌd/ | The children came home covered in mud. | Les enfants sont rentrés couverts de boue.
+sand | sable | n | A1 | /sænd/ | The sand is hot at noon. | Le sable est brûlant à midi.
+rock | rocher | n | A2 | /rɒk/ | We sat on a rock by the sea. | Nous nous sommes assis sur un rocher au bord de la mer.
+creek | ruisseau | n | B2 | /kriːk/ | Children played in the creek. | Les enfants jouaient dans le ruisseau.
+shore | rivage | n | B1 | /ʃɔːr/ | We walked along the shore. | Nous avons marché le long du rivage.
+current | courant | n | B1 | /ˈkʌrənt/ | The current is strong here. | Le courant est fort ici.
+galaxy | galaxie | n | B2 | /ˈɡæləksi/ | Our galaxy is called the Milky Way. | Notre galaxie s'appelle la Voie lactée.
+universe | univers | n | B1 | /ˈjuːnɪvɜːs/ | The universe is unimaginably vast. | L'univers est d'une immensité inimaginable.
+comet | comète | n | B2 | /ˈkɒmɪt/ | A comet crossed the sky. | Une comète a traversé le ciel.
+eclipse | éclipse | n | B2 | /ɪˈklɪps/ | We watched the solar eclipse. | Nous avons regardé l'éclipse solaire.
+crescent moon | croissant de lune | n | B1 | /ˌkresnt ˈmuːn/ | The crescent moon marks the new month. | Le croissant de lune marque le nouveau mois.
+full moon | pleine lune | n | A2 | /ˌfʊl ˈmuːn/ | The full moon lit up the desert. | La pleine lune éclairait le désert.
+constellation | constellation | n | C1 | /ˌkɒnstəˈleɪʃn/ | Can you name this constellation? | Sais-tu nommer cette constellation ?
+outdoors | dehors, en plein air | adv | B1 | /ˌaʊtˈdɔːz/ | We spend a lot of time outdoors. | Nous passons beaucoup de temps en plein air.
+nature reserve | réserve naturelle | n | B1 | /ˈneɪtʃə rɪˌzɜːv/ | The lake is part of a nature reserve. | Le lac fait partie d'une réserve naturelle.
+national park | parc national | n | B1 | /ˌnæʃnəl ˈpɑːk/ | We camped in a national park. | Nous avons campé dans un parc national.
+footpath | sentier | n | B1 | /ˈfʊtpɑːθ/ | Follow the footpath to the lake. | Suis le sentier jusqu'au lac.
+vegetation | végétation | n | B2 | /ˌvedʒəˈteɪʃn/ | The vegetation is thick near the river. | La végétation est dense près de la rivière.
+flora | flore | n | C1 | /ˈflɔːrə/ | The island's flora is unique. | La flore de l'île est unique.
+fauna | faune | n | C1 | /ˈfɔːnə/ | The local fauna includes rare birds. | La faune locale compte des oiseaux rares.
+natural resources | ressources naturelles | n | B2 | /ˌnætʃrəl rɪˈzɔːsɪz/ | The country is rich in natural resources. | Le pays est riche en ressources naturelles.
+renewable resource | ressource renouvelable | n | C1 | /rɪˌnjuːəbl rɪˈzɔːs/ | Wood is a renewable resource. | Le bois est une ressource renouvelable.
+conservationist | défenseur de la nature | n | C1 | /ˌkɒnsəˈveɪʃənɪst/ | A conservationist works to protect forests. | Un défenseur de la nature s'emploie à protéger les forêts.
+mineral | minéral | n | B2 | /ˈmɪnərəl/ | The water is rich in minerals. | L'eau est riche en minéraux.
+crystal | cristal | n | B2 | /ˈkrɪstl/ | Snowflakes are ice crystals. | Les flocons sont des cristaux de glace.
+diamond | diamant | n | B1 | /ˈdaɪəmənd/ | Diamonds are found deep underground. | Les diamants se trouvent profondément sous terre.
+gold | or | n | A2 | /ɡəʊld/ | They found gold in the river. | Ils ont trouvé de l'or dans la rivière.
+silver | argent (métal) | n | A2 | /ˈsɪlvər/ | The ring is made of silver. | La bague est en argent.
+copper | cuivre | n | B2 | /ˈkɒpər/ | Copper pots are beautiful. | Les casseroles en cuivre sont belles.
+wild flowers | fleurs sauvages | n | A2 | /ˌwaɪld ˈflaʊəz/ | Wild flowers grow by the road. | Des fleurs sauvages poussent au bord de la route.
+bud | bourgeon | n | B2 | /bʌd/ | The first buds appear in March. | Les premiers bourgeons apparaissent en mars.
+stem | tige | n | B2 | /stem/ | Cut the stem of the rose. | Coupe la tige de la rose.
+pollen | pollen | n | B2 | /ˈpɒlən/ | Bees carry pollen from flower to flower. | Les abeilles transportent le pollen de fleur en fleur.
+cactus | cactus | n | A2 | /ˈkæktəs/ | A cactus needs little water. | Un cactus a besoin de peu d'eau.
+bamboo | bambou | n | B1 | /ˌbæmˈbuː/ | Pandas eat bamboo. | Les pandas mangent du bambou.
+reed | roseau | n | C1 | /riːd/ | Reeds grow along the river. | Des roseaux poussent le long de la rivière.
+waterlily | nénuphar | n | C1 | /ˈwɔːtəlɪli/ | Frogs sit on the waterlilies. | Les grenouilles se posent sur les nénuphars.
+mushroom picking | cueillette des champignons | n | B2 | /ˈmʌʃrʊm ˌpɪkɪŋ/ | We went mushroom picking in October. | Nous sommes allés aux champignons en octobre.
+acorn | gland | n | C1 | /ˈeɪkɔːn/ | The squirrel buried an acorn. | L'écureuil a enterré un gland.
+pine cone | pomme de pin | n | B1 | /ˈpaɪn kəʊn/ | The children collected pine cones. | Les enfants ont ramassé des pommes de pin.
+twig | brindille | n | C1 | /twɪɡ/ | Birds build nests with twigs. | Les oiseaux construisent leurs nids avec des brindilles.
+hilltop | sommet de colline | n | B1 | /ˈhɪltɒp/ | We had a picnic on the hilltop. | Nous avons pique-niqué au sommet de la colline.
+riverbank | rive | n | B1 | /ˈrɪvəbæŋk/ | We sat on the riverbank. | Nous nous sommes assis sur la rive.
+cave painting | peinture rupestre | n | B2 | /ˈkeɪv ˌpeɪntɪŋ/ | We saw an old cave painting. | Nous avons vu une ancienne peinture rupestre.
+scenic | pittoresque | adj | B2 | /ˈsiːnɪk/ | We took the scenic route. | Nous avons pris la route pittoresque.
+untouched | intact, préservé | adj | C1 | /ʌnˈtʌtʃt/ | The island is untouched by tourism. | L'île est préservée du tourisme.
+lush | luxuriant | adj | C1 | /lʌʃ/ | The valley is lush and green. | La vallée est luxuriante et verte.
+dense | dense | adj | B2 | /dens/ | The forest is very dense. | La forêt est très dense.
+earthworm | ver de terre | n | B1 | /ˈɜːθwɜːm/ | Earthworms are good for the soil. | Les vers de terre sont bons pour le sol.
+food chain | chaîne alimentaire | n | B2 | /ˈfuːd tʃeɪn/ | The lion is at the top of the food chain. | Le lion est au sommet de la chaîne alimentaire.
+photosynthesis | photosynthèse | n | C1 | /ˌfəʊtəʊˈsɪnθəsɪs/ | Plants make food by photosynthesis. | Les plantes fabriquent leur nourriture par photosynthèse.
+evaporate | s'évaporer | v | B2 | /ɪˈvæpəreɪt/ | Water evaporates in the sun. | L'eau s'évapore au soleil.
+water cycle | cycle de l'eau | n | B1 | /ˈwɔːtə ˌsaɪkl/ | We studied the water cycle at school. | Nous avons étudié le cycle de l'eau à l'école.
+rainwater | eau de pluie | n | B1 | /ˈreɪnwɔːtər/ | We collect rainwater for the garden. | Nous récupérons l'eau de pluie pour le jardin.
 `,
 );

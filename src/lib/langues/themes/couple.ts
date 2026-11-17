@@ -116,5 +116,39 @@ to engage | fiancer | v | C1 | /ɪnˈɡeɪdʒ/ | They got engaged in the spring.
 reconciliation | réconciliation | n | C1 | /ˌrekənsɪliˈeɪʃn/ | Their reconciliation took several months. | Leur réconciliation a pris plusieurs mois.
 to kiss | embrasser | v | A2 | /kɪs/ | They kissed under the stars. | Ils se sont embrassés sous les étoiles.
 to quarrel | se disputer | v | B2 | /ˈkwɒrəl/ | The couple quarrelled over money. | Le couple s'est disputé à propos d'argent.
+husband and wife | mari et femme | n | A2 | /ˌhʌzbənd ənd ˈwaɪf/ | They have been husband and wife for forty years. | Ils sont mari et femme depuis quarante ans.
+marriage | mariage (union) | n | B1 | /ˈmærɪdʒ/ | Their marriage is very happy. | Leur mariage est très heureux.
+marriage contract | contrat de mariage | n | B2 | /ˈmærɪdʒ ˌkɒntrækt/ | They signed a marriage contract. | Ils ont signé un contrat de mariage.
+dowry | dot | n | C1 | /ˈdaʊri/ | The groom gave a dowry to the bride. | Le marié a offert une dot à la mariée.
+wedding ring | alliance | n | A2 | /ˈwedɪŋ rɪŋ/ | He never takes off his wedding ring. | Il n'enlève jamais son alliance.
+engagement ring | bague de fiançailles | n | B1 | /ɪnˈɡeɪdʒmənt rɪŋ/ | She showed us her engagement ring. | Elle nous a montré sa bague de fiançailles.
+fiancée | fiancée | n | B1 | /fiˈɒnseɪ/ | He introduced his fiancée to his parents. | Il a présenté sa fiancée à ses parents.
+wedding dress | robe de mariée | n | A2 | /ˈwedɪŋ dres/ | Her wedding dress was white and gold. | Sa robe de mariée était blanche et or.
+guest list | liste des invités | n | B1 | /ˈɡest lɪst/ | The guest list has two hundred names. | La liste des invités compte deux cents noms.
+relationship | relation | n | B1 | /rɪˈleɪʃnʃɪp/ | They have a strong relationship. | Ils ont une relation solide.
+in love | amoureux | expr | A2 | /ɪn ˈlʌv/ | They are very much in love. | Ils sont très amoureux.
+love letter | lettre d'amour | n | A2 | /ˈlʌv ˌletər/ | She kept every love letter. | Elle a gardé chaque lettre d'amour.
+darling | chéri | n | B1 | /ˈdɑːlɪŋ/ | Good morning, darling. | Bonjour, chéri.
+sweetheart | mon cœur, chéri | n | B2 | /ˈswiːthɑːt/ | Thank you, sweetheart. | Merci, mon cœur.
+make peace | faire la paix | expr | B1 | /ˌmeɪk ˈpiːs/ | It's time to make peace. | Il est temps de faire la paix.
+communication | communication | n | B1 | /kəˌmjuːnɪˈkeɪʃn/ | Communication is key in a marriage. | La communication est essentielle dans un mariage.
+understanding | compréhensif | adj | B2 | /ˌʌndəˈstændɪŋ/ | My wife is very understanding. | Ma femme est très compréhensive.
+supportive | d'un grand soutien | adj | B2 | /səˈpɔːtɪv/ | He is a supportive husband. | C'est un mari qui la soutient beaucoup.
+loving | aimant | adj | B1 | /ˈlʌvɪŋ/ | They are a loving couple. | C'est un couple aimant.
+long-distance relationship | relation à distance | n | B2 | /ˌlɒŋ ˌdɪstəns rɪˈleɪʃnʃɪp/ | A long-distance relationship is hard. | Une relation à distance est difficile.
+blind date | rendez-vous arrangé | n | B2 | /ˌblaɪnd ˈdeɪt/ | They met on a blind date. | Ils se sont rencontrés à un rendez-vous arrangé.
+arranged marriage | mariage arrangé | n | B2 | /əˌreɪndʒd ˈmærɪdʒ/ | Their parents suggested an arranged marriage. | Leurs parents ont proposé un mariage arrangé.
+matchmaker | marieur | n | C1 | /ˈmætʃmeɪkər/ | Her aunt acted as matchmaker. | Sa tante a joué les marieuses.
+divorced | divorcé | adj | B1 | /dɪˈvɔːst/ | Her parents are divorced. | Ses parents sont divorcés.
+remarry | se remarier | v | B2 | /ˌriːˈmæri/ | He decided to remarry after ten years. | Il a décidé de se remarier au bout de dix ans.
+romance novel | roman d'amour | n | B1 | /rəʊˈmæns ˌnɒvl/ | She reads a romance novel every week. | Elle lit un roman d'amour chaque semaine.
+true love | grand amour | n | B1 | /ˌtruː ˈlʌv/ | They found true love. | Ils ont trouvé le grand amour.
+first love | premier amour | n | B1 | /ˌfɜːst ˈlʌv/ | You never forget your first love. | On n'oublie jamais son premier amour.
+lovesick | malade d'amour | adj | C1 | /ˈlʌvsɪk/ | The lovesick boy wrote poems. | Le garçon malade d'amour écrivait des poèmes.
+wedding anniversary | anniversaire de mariage | n | B1 | /ˌwedɪŋ ˌænɪˈvɜːsəri/ | Today is their wedding anniversary. | C'est aujourd'hui leur anniversaire de mariage.
+mutual respect | respect mutuel | n | B2 | /ˌmjuːtʃuəl rɪˈspekt/ | A good marriage needs mutual respect. | Un bon mariage exige le respect mutuel.
+marital | conjugal | adj | C1 | /ˈmærɪtl/ | They had marital problems. | Ils ont eu des problèmes conjugaux.
+husband-to-be | futur mari | n | B2 | /ˌhʌzbənd tə ˈbiː/ | She introduced her husband-to-be. | Elle a présenté son futur mari.
+bride-to-be | future mariée | n | B2 | /ˌbraɪd tə ˈbiː/ | The bride-to-be chose her dress. | La future mariée a choisi sa robe.
 `,
 );

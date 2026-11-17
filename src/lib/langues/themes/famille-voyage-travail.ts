@@ -56,6 +56,74 @@ to respect | respecter | v | A2 | /rɪˈspekt/ | We must respect our parents. | 
 to argue | se disputer | v | B1 | /ˈɑːrɡjuː/ | The children argue about everything. | Les enfants se disputent pour tout.
 to forgive | pardonner | v | B1 | /fərˈɡɪv/ | A good brother knows how to forgive. | Un bon frère sait pardonner.
 family gathering | réunion de famille | n | B1 | /ˈfæməli ˈɡæðərɪŋ/ | We have a big family gathering every summer. | Nous avons une grande réunion de famille chaque été.
+grandparents | grands-parents | n | A1 | /ˈɡrænpeərənts/ | My grandparents live in the country. | Mes grands-parents vivent à la campagne.
+grandson | petit-fils | n | A2 | /ˈɡrænsʌn/ | Her grandson visits every Sunday. | Son petit-fils vient tous les dimanches.
+granddaughter | petite-fille | n | A2 | /ˈɡrændɔːtər/ | Their granddaughter is three. | Leur petite-fille a trois ans.
+grandma | mamie | n | A1 | /ˈɡrænmɑː/ | Grandma makes the best couscous. | Mamie fait le meilleur couscous.
+grandpa | papi | n | A1 | /ˈɡrænpɑː/ | Grandpa tells us old stories. | Papi nous raconte de vieilles histoires.
+mum | maman | n | A1 | /mʌm/ | My mum is a teacher. | Ma mère est enseignante.
+dad | papa | n | A1 | /dæd/ | My dad works at night. | Mon père travaille de nuit.
+daughter-in-law | belle-fille | n | B1 | /ˈdɔːtər ɪn lɔː/ | Her daughter-in-law is very kind. | Sa belle-fille est très gentille.
+son-in-law | gendre | n | B1 | /ˈsʌn ɪn lɔː/ | He gets on well with his son-in-law. | Il s'entend bien avec son gendre.
+father-in-law | beau-père | n | B1 | /ˈfɑːðər ɪn lɔː/ | My father-in-law is a farmer. | Mon beau-père est agriculteur.
+brother-in-law | beau-frère | n | B1 | /ˈbrʌðər ɪn lɔː/ | My brother-in-law lives in Lyon. | Mon beau-frère habite à Lyon.
+sister-in-law | belle-sœur | n | B1 | /ˈsɪstər ɪn lɔː/ | My sister-in-law is a nurse. | Ma belle-sœur est infirmière.
+stepbrother | demi-frère (par alliance) | n | B1 | /ˈstepbrʌðər/ | I share a room with my stepbrother. | Je partage une chambre avec mon demi-frère.
+stepsister | demi-sœur (par alliance) | n | B1 | /ˈstepsɪstər/ | My stepsister is younger than me. | Ma demi-sœur est plus jeune que moi.
+half-brother | demi-frère | n | B1 | /ˈhɑːf brʌðər/ | My half-brother has the same father as me. | Mon demi-frère a le même père que moi.
+stepson | beau-fils | n | B2 | /ˈstepsʌn/ | He raised his stepson as his own. | Il a élevé son beau-fils comme le sien.
+godfather | parrain | n | B1 | /ˈɡɒdfɑːðər/ | My godfather gave me a watch. | Mon parrain m'a offert une montre.
+orphan | orphelin | n | B1 | /ˈɔːfn/ | The orphan was adopted at two. | L'orphelin a été adopté à deux ans.
+adopted | adopté | adj | B1 | /əˈdɒptɪd/ | Their adopted son is from Mali. | Leur fils adopté vient du Mali.
+foster family | famille d'accueil | n | B2 | /ˈfɒstə ˌfæməli/ | She grew up in a foster family. | Elle a grandi dans une famille d'accueil.
+single parent | parent isolé | n | B1 | /ˌsɪŋɡl ˈpeərənt/ | Being a single parent is hard work. | Être parent isolé, c'est beaucoup de travail.
+eldest | aîné | adj | B1 | /ˈeldɪst/ | She is the eldest of five children. | C'est l'aînée de cinq enfants.
+youngest | cadet, le plus jeune | adj | A2 | /ˈjʌŋɡɪst/ | The youngest child is spoilt. | Le plus jeune enfant est gâté.
+older | plus âgé | adj | A1 | /ˈəʊldər/ | My older brother is twenty. | Mon frère aîné a vingt ans.
+younger | plus jeune | adj | A1 | /ˈjʌŋɡər/ | I have a younger sister. | J'ai une petite sœur.
+triplets | triplés | n | B2 | /ˈtrɪpləts/ | Our neighbours had triplets. | Nos voisins ont eu des triplés.
+newborn | nouveau-né | n | B1 | /ˈnjuːbɔːn/ | The newborn slept all day. | Le nouveau-né a dormi toute la journée.
+pregnant | enceinte | adj | B1 | /ˈpreɡnənt/ | My sister is pregnant with twins. | Ma sœur est enceinte de jumeaux.
+pregnancy | grossesse | n | B2 | /ˈpreɡnənsi/ | She felt tired during her pregnancy. | Elle était fatiguée pendant sa grossesse.
+give birth | accoucher | v | B1 | /ˌɡɪv ˈbɜːθ/ | She will give birth in May. | Elle va accoucher en mai.
+birth | naissance | n | A2 | /bɜːθ/ | The birth of their son changed everything. | La naissance de leur fils a tout changé.
+born | né | adj | A1 | /bɔːn/ | I was born in Algiers. | Je suis né à Alger.
+birthday | anniversaire | n | A1 | /ˈbɜːθdeɪ/ | Happy birthday, Grandma! | Joyeux anniversaire, Mamie !
+breastfeed | allaiter | v | B2 | /ˈbrestfiːd/ | She chose to breastfeed her baby. | Elle a choisi d'allaiter son bébé.
+cradle | berceau | n | B2 | /ˈkreɪdl/ | The baby sleeps in a wooden cradle. | Le bébé dort dans un berceau en bois.
+pram | landau | n | B2 | /præm/ | She pushed the pram through the park. | Elle poussait le landau dans le parc.
+lullaby | berceuse | n | B2 | /ˈlʌləbaɪ/ | Mum sang a lullaby. | Maman a chanté une berceuse.
+bedtime story | histoire du soir | n | B1 | /ˈbedtaɪm ˌstɔːri/ | Dad reads a bedtime story every night. | Papa lit une histoire chaque soir.
+kinship | parenté | n | C1 | /ˈkɪnʃɪp/ | Kinship is important in many cultures. | La parenté est importante dans beaucoup de cultures.
+descendant | descendant | n | C1 | /dɪˈsendənt/ | He is a descendant of a famous scholar. | Il est le descendant d'un savant célèbre.
+lineage | lignée | n | C2 | /ˈlɪniɪdʒ/ | The family can trace its lineage back centuries. | La famille peut remonter sa lignée sur des siècles.
+offspring | progéniture | n | C1 | /ˈɒfsprɪŋ/ | Parents want the best for their offspring. | Les parents veulent le meilleur pour leur progéniture.
+dependant | personne à charge | n | C1 | /dɪˈpendənt/ | He has three dependants. | Il a trois personnes à charge.
+breadwinner | soutien de famille | n | C1 | /ˈbredwɪnər/ | She is the main breadwinner. | C'est elle qui fait vivre la famille.
+housewife | femme au foyer | n | B1 | /ˈhaʊswaɪf/ | My mother was a housewife. | Ma mère était femme au foyer.
+stay-at-home dad | père au foyer | n | B2 | /ˌsteɪ ət həʊm ˈdæd/ | He became a stay-at-home dad. | Il est devenu père au foyer.
+family name | nom de famille | n | A2 | /ˈfæməli neɪm/ | Our family name comes from a village. | Notre nom de famille vient d'un village.
+maiden name | nom de jeune fille | n | B2 | /ˈmeɪdn neɪm/ | She kept her maiden name. | Elle a gardé son nom de jeune fille.
+family reunion | réunion de famille | n | B1 | /ˈfæməli riːˌjuːniən/ | We have a family reunion every summer. | Nous avons une réunion de famille chaque été.
+resemble | ressembler à | v | B2 | /rɪˈzembl/ | You resemble your mother. | Tu ressembles à ta mère.
+resemblance | ressemblance | n | C1 | /rɪˈzembləns/ | There's a strong family resemblance. | Il y a une forte ressemblance familiale.
+brotherly | fraternel | adj | C1 | /ˈbrʌðəli/ | He gave me some brotherly advice. | Il m'a donné un conseil fraternel.
+motherhood | maternité | n | C1 | /ˈmʌðəhʊd/ | Motherhood changed her life. | La maternité a changé sa vie.
+fatherhood | paternité | n | C1 | /ˈfɑːðəhʊd/ | He enjoys fatherhood. | Il apprécie d'être père.
+parenting | éducation des enfants | n | B2 | /ˈpeərəntɪŋ/ | There are many books on parenting. | Il existe de nombreux livres sur l'éducation des enfants.
+discipline | discipline | n | B2 | /ˈdɪsəplɪn/ | Children need love and discipline. | Les enfants ont besoin d'amour et de discipline.
+spoil | gâter | v | B1 | /spɔɪl/ | Grandparents love to spoil their grandchildren. | Les grands-parents adorent gâter leurs petits-enfants.
+reunite | réunir | v | B2 | /ˌriːjuːˈnaɪt/ | The war finally ended and families could reunite. | La guerre s'est enfin terminée et les familles ont pu se réunir.
+visit relatives | rendre visite à la famille | expr | A2 | /ˈvɪzɪt ˈrelətɪvz/ | We visit relatives during Eid. | Nous rendons visite à la famille pendant l'Aïd.
+take care of | prendre soin de | expr | A2 | /teɪk ˈkeər əv/ | She has to take care of her sick mother. | Elle doit prendre soin de sa mère malade.
+family life | vie de famille | n | A2 | /ˌfæməli ˈlaɪf/ | Family life is very important to us. | La vie de famille est très importante pour nous.
+family meal | repas de famille | n | A2 | /ˌfæməli ˈmiːl/ | We have a family meal every Friday. | Nous avons un repas de famille chaque vendredi.
+extended family | famille élargie | n | B2 | /ɪkˌstendɪd ˈfæməli/ | The extended family meets for Eid. | La famille élargie se réunit pour l'Aïd.
+nuclear family | famille nucléaire | n | C1 | /ˌnjuːkliə ˈfæməli/ | The nuclear family is small in Europe. | La famille nucléaire est petite en Europe.
+large family | famille nombreuse | n | B1 | /ˌlɑːdʒ ˈfæməli/ | She comes from a large family. | Elle vient d'une famille nombreuse.
+family ties | liens familiaux | n | B2 | /ˈfæməli taɪz/ | Islam values strong family ties. | L'islam valorise les liens familiaux forts.
+great-grandfather | arrière-grand-père | n | B1 | /ˌɡreɪt ˈɡrænfɑːðər/ | My great-grandfather came from Kabylia. | Mon arrière-grand-père venait de Kabylie.
+great-grandmother | arrière-grand-mère | n | B1 | /ˌɡreɪt ˈɡrænmʌðər/ | My great-grandmother lived to a hundred. | Mon arrière-grand-mère a vécu jusqu'à cent ans.
 `,
 );
 
@@ -115,6 +183,79 @@ accommodation | hébergement | n | B1 | /əˌkɑːməˈdeɪʃən/ | Accommodatio
 to set off | se mettre en route | v | B2 | /set ɔːf/ | We set off at dawn. | Nous nous sommes mis en route à l'aube.
 pilgrimage | pèlerinage | n | B2 | /ˈpɪlɡrɪmɪdʒ/ | He went on pilgrimage to Mecca. | Il est parti en pèlerinage à La Mecque.
 off the beaten track | hors des sentiers battus | expr | B2 | /ɔːf ðə ˈbiːtən træk/ | We love places off the beaten track. | Nous aimons les lieux hors des sentiers battus.
+car | voiture | n | A1 | /kɑːr/ | We went to Spain by car. | Nous sommes allés en Espagne en voiture.
+plane | avion | n | A1 | /pleɪn/ | The plane lands at noon. | L'avion atterrit à midi.
+boat | bateau | n | A1 | /bəʊt/ | We crossed the river by boat. | Nous avons traversé la rivière en bateau.
+ship | navire | n | A2 | /ʃɪp/ | The ship sailed at dawn. | Le navire a pris la mer à l'aube.
+motorbike | moto | n | A2 | /ˈməʊtəbaɪk/ | He rides a motorbike to work. | Il va au travail à moto.
+bicycle | vélo | n | A1 | /ˈbaɪsɪkl/ | I go to school by bicycle. | Je vais à l'école à vélo.
+tram | tramway | n | A2 | /træm/ | The tram stops in front of the station. | Le tram s'arrête devant la gare.
+van | camionnette | n | A2 | /væn/ | They moved house with a van. | Ils ont déménagé avec une camionnette.
+lorry | camion | n | A2 | /ˈlɒri/ | A lorry blocked the road. | Un camion bloquait la route.
+helicopter | hélicoptère | n | A2 | /ˈhelɪkɒptər/ | A helicopter landed on the roof. | Un hélicoptère s'est posé sur le toit.
+motorway | autoroute | n | B1 | /ˈməʊtəweɪ/ | Take the motorway to Lyon. | Prends l'autoroute pour Lyon.
+toll | péage | n | B2 | /təʊl/ | We paid the toll on the motorway. | Nous avons payé le péage sur l'autoroute.
+petrol tank | réservoir d'essence | n | B1 | /ˈpetrəl tæŋk/ | The petrol tank is almost empty. | Le réservoir d'essence est presque vide.
+driving licence | permis de conduire | n | A2 | /ˈdraɪvɪŋ ˌlaɪsns/ | She got her driving licence at eighteen. | Elle a eu son permis de conduire à dix-huit ans.
+drive | conduire | v | A1 | /draɪv/ | Can you drive? | Tu sais conduire ?
+sail away | partir en bateau | v | B1 | /ˌseɪl əˈweɪ/ | The ship will sail away at dawn. | Le navire partira à l'aube.
+arrive | arriver | v | A1 | /əˈraɪv/ | We arrive in Paris at nine. | Nous arrivons à Paris à neuf heures.
+leave | partir | v | A1 | /liːv/ | The bus will leave in five minutes. | Le bus part dans cinq minutes.
+depart | partir (moyen de transport) | v | B1 | /dɪˈpɑːt/ | The train will depart from platform two. | Le train partira du quai deux.
+arrival | arrivée | n | A2 | /əˈraɪvl/ | Check the arrival time. | Vérifie l'heure d'arrivée.
+fare | prix du billet | n | B1 | /feər/ | The bus fare is two euros. | Le ticket de bus coûte deux euros.
+single ticket | aller simple | n | A2 | /ˈsɪŋɡl ˌtɪkɪt/ | A single ticket to Rennes, please. | Un aller simple pour Rennes, s'il vous plaît.
+seat | siège, place | n | A1 | /siːt/ | Is this seat free? | Cette place est-elle libre ?
+aisle seat | place côté couloir | n | B1 | /ˈaɪl siːt/ | I prefer an aisle seat. | Je préfère une place côté couloir.
+carriage | voiture (de train) | n | B1 | /ˈkærɪdʒ/ | Our seats are in carriage seven. | Nos places sont dans la voiture sept.
+cabin | cabine | n | B1 | /ˈkæbɪn/ | We slept in a cabin on the ferry. | Nous avons dormi dans une cabine sur le ferry.
+crew | équipage | n | B1 | /kruː/ | The crew welcomed us on board. | L'équipage nous a accueillis à bord.
+passenger | passager | n | A2 | /ˈpæsɪndʒər/ | All passengers must show their tickets. | Tous les passagers doivent montrer leur billet.
+on board | à bord | expr | B1 | /ɒn ˈbɔːd/ | Welcome on board! | Bienvenue à bord !
+hand luggage | bagage à main | n | B1 | /ˈhænd ˌlʌɡɪdʒ/ | You can take one piece of hand luggage. | Vous pouvez prendre un bagage à main.
+baggage claim | retrait des bagages | n | B1 | /ˈbæɡɪdʒ kleɪm/ | Meet me at baggage claim. | Retrouve-moi au retrait des bagages.
+security check | contrôle de sécurité | n | B1 | /sɪˈkjʊərəti tʃek/ | The security check took an hour. | Le contrôle de sécurité a duré une heure.
+duty-free | hors taxes | adj | B1 | /ˌdjuːti ˈfriː/ | She bought perfume in the duty-free shop. | Elle a acheté du parfum en boutique hors taxes.
+connecting flight | correspondance (vol) | n | B2 | /kəˌnektɪŋ ˈflaɪt/ | I missed my connecting flight. | J'ai raté ma correspondance.
+runway | piste (d'aéroport) | n | B2 | /ˈrʌnweɪ/ | The plane is waiting on the runway. | L'avion attend sur la piste.
+turbulence | turbulences | n | B2 | /ˈtɜːbjələns/ | Fasten your seatbelt during turbulence. | Attachez votre ceinture pendant les turbulences.
+seasick | qui a le mal de mer | adj | B1 | /ˈsiːsɪk/ | I get seasick on boats. | J'ai le mal de mer en bateau.
+carsick | qui a le mal des transports | adj | B2 | /ˈkɑːsɪk/ | The children get carsick on long trips. | Les enfants ont mal au cœur en voiture lors des longs trajets.
+road trip | voyage en voiture | n | B1 | /ˈrəʊd trɪp/ | We went on a road trip across Morocco. | Nous avons fait un voyage en voiture à travers le Maroc.
+traveller | voyageur | n | B1 | /ˈtrævələr/ | The traveller asked for directions. | Le voyageur a demandé son chemin.
+backpacker | routard | n | B1 | /ˈbækpækər/ | The hostel is full of backpackers. | L'auberge est pleine de routards.
+travel agency | agence de voyages | n | B1 | /ˈtrævl ˌeɪdʒənsi/ | We booked through a travel agency. | Nous avons réservé par une agence de voyages.
+travel insurance | assurance voyage | n | B2 | /ˈtrævl ɪnˌʃʊərəns/ | Always buy travel insurance. | Prends toujours une assurance voyage.
+round trip | aller-retour | n | B1 | /ˌraʊnd ˈtrɪp/ | A round trip costs a hundred euros. | Un aller-retour coûte cent euros.
+journey time | durée du trajet | n | B1 | /ˈdʒɜːni taɪm/ | The journey time is three hours. | La durée du trajet est de trois heures.
+route | itinéraire, trajet | n | B1 | /ruːt/ | Which route is the fastest? | Quel est l'itinéraire le plus rapide ?
+detour | détour | n | B2 | /ˈdiːtʊər/ | We made a detour to see the castle. | Nous avons fait un détour pour voir le château.
+shortcut | raccourci | n | B1 | /ˈʃɔːtkʌt/ | Let's take a shortcut through the park. | Prenons un raccourci par le parc.
+sat nav | GPS | n | B1 | /ˈsæt næv/ | The sat nav sent us the wrong way. | Le GPS nous a envoyés dans la mauvaise direction.
+hitch a ride | faire de l'auto-stop | expr | B2 | /ˌhɪtʃ ə ˈraɪd/ | We tried to hitch a ride to the village. | Nous avons essayé de faire du stop jusqu'au village.
+breakdown | panne | n | B1 | /ˈbreɪkdaʊn/ | We had a breakdown on the motorway. | Nous sommes tombés en panne sur l'autoroute.
+flat tyre | pneu crevé | n | B1 | /ˌflæt ˈtaɪər/ | We got a flat tyre in the desert. | Nous avons crevé dans le désert.
+speed limit | limitation de vitesse | n | B1 | /ˈspiːd ˌlɪmɪt/ | The speed limit here is fifty. | La vitesse est limitée à cinquante ici.
+embassy | ambassade | n | B2 | /ˈembəsi/ | Go to the embassy for a new passport. | Va à l'ambassade pour un nouveau passeport.
+expedition | expédition | n | B2 | /ˌekspəˈdɪʃn/ | They went on an expedition to the Sahara. | Ils sont partis en expédition au Sahara.
+wanderlust | envie de voyager | n | C2 | /ˈwɒndəlʌst/ | Her wanderlust took her to forty countries. | Son envie de voyager l'a menée dans quarante pays.
+visa application | demande de visa | n | B2 | /ˈviːzə ˌæplɪˌkeɪʃn/ | My visa application was accepted. | Ma demande de visa a été acceptée.
+border control | contrôle aux frontières | n | B2 | /ˈbɔːdə kənˌtrəʊl/ | We queued at border control. | Nous avons fait la queue au contrôle aux frontières.
+passport control | contrôle des passeports | n | B1 | /ˈpɑːspɔːt kənˌtrəʊl/ | Passport control took ten minutes. | Le contrôle des passeports a pris dix minutes.
+departure lounge | salle d'embarquement | n | B1 | /dɪˈpɑːtʃə laʊndʒ/ | We waited in the departure lounge. | Nous avons attendu dans la salle d'embarquement.
+arrivals hall | hall des arrivées | n | B1 | /əˈraɪvlz hɔːl/ | I'll meet you in the arrivals hall. | Je t'attendrai dans le hall des arrivées.
+check-in desk | comptoir d'enregistrement | n | B1 | /ˈtʃek ɪn desk/ | Go to the check-in desk. | Va au comptoir d'enregistrement.
+excess baggage | excédent de bagages | n | B2 | /ˌekses ˈbæɡɪdʒ/ | We paid for excess baggage. | Nous avons payé un excédent de bagages.
+jetlagged | qui souffre du décalage horaire | adj | B2 | /ˈdʒetlæɡd/ | I'm jetlagged after the flight. | Je souffre du décalage horaire après le vol.
+overnight train | train de nuit | n | B1 | /ˌəʊvənaɪt ˈtreɪn/ | We took the overnight train to Rome. | Nous avons pris le train de nuit pour Rome.
+sleeper car | wagon-lit | n | B2 | /ˈsliːpə kɑːr/ | We booked a sleeper car. | Nous avons réservé un wagon-lit.
+ticket office | guichet | n | A2 | /ˈtɪkɪt ˌɒfɪs/ | Buy your ticket at the ticket office. | Achète ton billet au guichet.
+left luggage | consigne | n | B2 | /ˌleft ˈlʌɡɪdʒ/ | We put our bags in left luggage. | Nous avons mis nos sacs à la consigne.
+travel sickness | mal des transports | n | B2 | /ˈtrævl ˌsɪknəs/ | Take a tablet for travel sickness. | Prends un comprimé contre le mal des transports.
+hitchhiking | auto-stop | n | B2 | /ˈhɪtʃhaɪkɪŋ/ | Hitchhiking can be dangerous. | L'auto-stop peut être dangereux.
+car hire | location de voiture | n | B1 | /ˈkɑː haɪər/ | Car hire is cheap here. | La location de voiture est bon marché ici.
+ferry crossing | traversée en ferry | n | B1 | /ˈferi ˌkrɒsɪŋ/ | The ferry crossing takes two hours. | La traversée en ferry dure deux heures.
+port | port | n | A2 | /pɔːt/ | The ship arrived at the port. | Le navire est arrivé au port.
 `,
 );
 
@@ -173,5 +314,70 @@ overtime | heures supplémentaires | n | B1 | /ˈoʊvərtaɪm/ | He often works 
 self-employed | indépendant, à son compte | adj | B2 | /ˌself ɪmˈplɔɪd/ | My parents are self-employed. | Mes parents sont indépendants.
 to take a day off | prendre un jour de congé | expr | B1 | /teɪk ə deɪ ɔːf/ | I'm taking a day off on Friday. | Je prends un jour de congé vendredi.
 career | carrière | n | B1 | /kəˈrɪr/ | She has had a brilliant career. | Elle a fait une brillante carrière.
+work from home | télétravailler | expr | A2 | /ˌwɜːk frəm ˈhəʊm/ | I work from home on Fridays. | Je télétravaille le vendredi.
+remote work | télétravail | n | B1 | /rɪˌməʊt ˈwɜːk/ | Remote work has become common. | Le télétravail est devenu courant.
+coworker | collègue | n | B1 | /ˈkəʊwɜːkər/ | My coworker helped me with the report. | Mon collègue m'a aidé avec le rapport.
+staff meeting | réunion du personnel | n | B1 | /ˈstɑːf ˌmiːtɪŋ/ | There's a staff meeting at nine. | Il y a une réunion du personnel à neuf heures.
+agenda | ordre du jour | n | B2 | /əˈdʒendə/ | What's on the agenda today? | Qu'y a-t-il à l'ordre du jour ?
+minutes | compte rendu (de réunion) | n | C1 | /ˈmɪnɪts/ | Who is taking the minutes? | Qui rédige le compte rendu ?
+presentation | présentation, exposé | n | B1 | /ˌpreznˈteɪʃn/ | She gave a great presentation. | Elle a fait une excellente présentation.
+email | e-mail, courriel | n | A1 | /ˈiːmeɪl/ | I'll send you an email. | Je t'enverrai un e-mail.
+phone call | appel téléphonique | n | A2 | /ˈfəʊn kɔːl/ | I have an important phone call at ten. | J'ai un appel important à dix heures.
+conference call | conférence téléphonique | n | B2 | /ˈkɒnfərəns kɔːl/ | We have a conference call with Tokyo. | Nous avons une conférence téléphonique avec Tokyo.
+video call | appel vidéo | n | A2 | /ˈvɪdiəʊ kɔːl/ | Let's have a video call tomorrow. | Faisons un appel vidéo demain.
+business trip | voyage d'affaires | n | B1 | /ˈbɪznəs trɪp/ | He's on a business trip in Dubai. | Il est en voyage d'affaires à Dubaï.
+annual leave | congés annuels | n | B2 | /ˌænjuəl ˈliːv/ | I have five weeks of annual leave. | J'ai cinq semaines de congés annuels.
+maternity leave | congé maternité | n | B2 | /məˈtɜːnəti liːv/ | She is on maternity leave. | Elle est en congé maternité.
+sick pay | indemnités maladie | n | C1 | /ˈsɪk peɪ/ | Do you get sick pay? | Touches-tu des indemnités maladie ?
+pay rise | augmentation de salaire | n | B1 | /ˈpeɪ raɪz/ | I asked for a pay rise. | J'ai demandé une augmentation.
+payslip | fiche de paie | n | B2 | /ˈpeɪslɪp/ | Check your payslip every month. | Vérifie ta fiche de paie chaque mois.
+working hours | horaires de travail | n | B1 | /ˈwɜːkɪŋ ˌaʊəz/ | My working hours are flexible. | Mes horaires de travail sont flexibles.
+flexible | flexible | adj | B1 | /ˈfleksəbl/ | The company offers flexible hours. | L'entreprise propose des horaires flexibles.
+nine-to-five | horaires de bureau | adj | B2 | /ˌnaɪn tə ˈfaɪv/ | He hates his nine-to-five job. | Il déteste son boulot de bureau.
+night shift | équipe de nuit | n | B1 | /ˈnaɪt ʃɪft/ | Nurses often work the night shift. | Les infirmières travaillent souvent de nuit.
+job offer | offre d'emploi | n | B1 | /ˈdʒɒb ˌɒfər/ | I accepted the job offer. | J'ai accepté l'offre d'emploi.
+job advert | annonce d'emploi | n | B1 | /ˈdʒɒb ˌædvɜːt/ | I saw the job advert online. | J'ai vu l'annonce en ligne.
+applicant | candidat | n | B2 | /ˈæplɪkənt/ | There were fifty applicants for the job. | Il y avait cinquante candidats pour le poste.
+application | candidature | n | B1 | /ˌæplɪˈkeɪʃn/ | Send your application by Friday. | Envoie ta candidature avant vendredi.
+cover letter | lettre de motivation | n | B1 | /ˈkʌvə ˌletər/ | Write a short cover letter. | Rédige une courte lettre de motivation.
+reference | référence | n | B2 | /ˈrefrəns/ | My old boss wrote me a reference. | Mon ancien patron m'a écrit une lettre de référence.
+qualification | diplôme, qualification | n | B1 | /ˌkwɒlɪfɪˈkeɪʃn/ | You need a nursing qualification. | Il te faut un diplôme d'infirmier.
+probation period | période d'essai | n | B2 | /prəˈbeɪʃn ˌpɪəriəd/ | The probation period lasts three months. | La période d'essai dure trois mois.
+permanent | permanent, en CDI | adj | B1 | /ˈpɜːmənənt/ | She finally got a permanent job. | Elle a enfin obtenu un CDI.
+temporary | temporaire | adj | B1 | /ˈtemprəri/ | It's only a temporary contract. | Ce n'est qu'un contrat temporaire.
+temp | intérimaire | n | B2 | /temp/ | The company hired a temp for the summer. | L'entreprise a embauché un intérimaire pour l'été.
+job hunting | recherche d'emploi | n | B1 | /ˈdʒɒb ˌhʌntɪŋ/ | Job hunting can be stressful. | La recherche d'emploi peut être stressante.
+career path | parcours professionnel | n | B2 | /kəˈrɪə pɑːθ/ | He changed his career path at forty. | Il a changé de parcours professionnel à quarante ans.
+prospects | perspectives | n | C1 | /ˈprɒspekts/ | The job has good prospects. | Le poste offre de bonnes perspectives.
+achievement | réussite | n | B1 | /əˈtʃiːvmənt/ | Finishing the project was a great achievement. | Terminer le projet a été une belle réussite.
+responsibility | responsabilité | n | B1 | /rɪˌspɒnsəˈbɪləti/ | It's my responsibility to check the accounts. | C'est ma responsabilité de vérifier les comptes.
+duties | fonctions, tâches | n | B2 | /ˈdjuːtiz/ | What are your main duties? | Quelles sont tes principales fonctions ?
+department | service, département | n | B1 | /dɪˈpɑːtmənt/ | She works in the sales department. | Elle travaille au service commercial.
+human resources | ressources humaines | n | B2 | /ˌhjuːmən rɪˈzɔːsɪz/ | Talk to human resources about your leave. | Parle aux ressources humaines de ton congé.
+headhunter | chasseur de têtes | n | C1 | /ˈhedhʌntər/ | A headhunter called her about a new job. | Un chasseur de têtes l'a appelée pour un nouveau poste.
+open-plan office | open space | n | B2 | /ˌəʊpən plæn ˈɒfɪs/ | It's noisy in an open-plan office. | C'est bruyant dans un open space.
+photocopier | photocopieuse | n | B1 | /ˈfəʊtəʊkɒpiər/ | The photocopier is broken again. | La photocopieuse est encore en panne.
+printer | imprimante | n | A2 | /ˈprɪntər/ | The printer has no paper. | L'imprimante n'a plus de papier.
+stapler | agrafeuse | n | B1 | /ˈsteɪplər/ | Can I borrow your stapler? | Je peux emprunter ton agrafeuse ?
+folder | dossier, chemise | n | A2 | /ˈfəʊldər/ | Put the documents in a blue folder. | Mets les documents dans une chemise bleue.
+file | dossier, fichier | n | A2 | /faɪl/ | Save the file before closing. | Enregistre le fichier avant de fermer.
+paperwork | paperasse | n | B2 | /ˈpeɪpəwɜːk/ | I hate doing paperwork. | Je déteste la paperasse.
+multitask | faire plusieurs choses à la fois | v | C1 | /ˌmʌltiˈtɑːsk/ | Mothers can multitask all day. | Les mères savent faire plusieurs choses à la fois toute la journée.
+delegate | déléguer | v | C1 | /ˈdelɪɡeɪt/ | A good manager knows how to delegate. | Un bon manager sait déléguer.
+burnout | épuisement professionnel | n | C1 | /ˈbɜːnaʊt/ | Too much overtime can lead to burnout. | Trop d'heures supplémentaires peuvent mener à l'épuisement professionnel.
+work-life balance | équilibre vie pro-vie perso | n | B2 | /ˌwɜːk laɪf ˈbæləns/ | I want a better work-life balance. | Je veux un meilleur équilibre entre vie pro et vie perso.
+office hours | heures de bureau | n | A2 | /ˈɒfɪs ˌaʊəz/ | Call during office hours. | Appelle pendant les heures de bureau.
+shift | équipe, poste (horaire) | n | B1 | /ʃɪft/ | My shift starts at six. | Mon poste commence à six heures.
+clock in | pointer (à l'arrivée) | v | B2 | /klɒk ɪn/ | Workers clock in at eight. | Les ouvriers pointent à huit heures.
+leadership | leadership, direction | n | B2 | /ˈliːdəʃɪp/ | She showed strong leadership. | Elle a fait preuve d'un grand leadership.
+teamwork | travail d'équipe | n | B1 | /ˈtiːmwɜːk/ | Teamwork makes the job easier. | Le travail d'équipe facilite la tâche.
+productive | productif | adj | B2 | /prəˈdʌktɪv/ | I'm more productive in the morning. | Je suis plus productif le matin.
+skilled | qualifié | adj | B2 | /skɪld/ | We need skilled workers. | Nous avons besoin d'ouvriers qualifiés.
+unskilled | non qualifié | adj | B2 | /ʌnˈskɪld/ | Unskilled jobs pay less. | Les emplois non qualifiés paient moins.
+retirement | retraite | n | B1 | /rɪˈtaɪəmənt/ | My father enjoys his retirement. | Mon père profite de sa retraite.
+resignation | démission | n | B2 | /ˌrezɪɡˈneɪʃn/ | She handed in her resignation. | Elle a remis sa démission.
+dismissal | licenciement | n | C1 | /dɪsˈmɪsl/ | He contested his dismissal. | Il a contesté son licenciement.
+notice period | préavis | n | C1 | /ˈnəʊtɪs ˌpɪəriəd/ | The notice period is one month. | Le préavis est d'un mois.
+workplace | lieu de travail | n | B2 | /ˈwɜːkpleɪs/ | Safety in the workplace is essential. | La sécurité sur le lieu de travail est essentielle.
 `,
 );

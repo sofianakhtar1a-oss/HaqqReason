@@ -109,5 +109,30 @@ pothole | nid-de-poule | n | B2 | /ˈpɒthoʊl/ | The car hit a deep pothole. | 
 parking space | place de parking | n | A2 | /ˈpɑːrkɪŋ speɪs/ | There isn't a parking space near the church. | Il n'y a pas de place de parking près de l'église.
 to overtake | dépasser | v | B2 | /ˌoʊvərˈteɪk/ | It's dangerous to overtake on a bend. | C'est dangereux de dépasser dans un virage.
 vending machine | distributeur automatique | n | B1 | /ˈvendɪŋ məˈʃiːn/ | Buy a drink from the vending machine. | Achète une boisson au distributeur automatique.
+people | gens | n | A1 | /ˈpiːpl/ | Many people visit the old town. | Beaucoup de gens visitent la vieille ville.
+person | personne | n | A1 | /ˈpɜːsn/ | She is a very kind person. | C'est une personne très gentille.
+man | homme | n | A1 | /mæn/ | A man asked me the time. | Un homme m'a demandé l'heure.
+woman | femme | n | A1 | /ˈwʊmən/ | The woman smiled at us. | La femme nous a souri.
+gentleman | monsieur | n | A2 | /ˈdʒentlmən/ | This gentleman is waiting for you. | Ce monsieur vous attend.
+lady | dame | n | A2 | /ˈleɪdi/ | An old lady sat on the bench. | Une vieille dame était assise sur le banc.
+neighbourly | de bon voisinage | adj | C1 | /ˈneɪbəli/ | It was a neighbourly gesture. | C'était un geste de bon voisinage.
+foreigner | étranger | n | B1 | /ˈfɒrənər/ | Foreigners are welcome here. | Les étrangers sont les bienvenus ici.
+street vendor | vendeur ambulant | n | B2 | /ˈstriːt ˌvendər/ | A street vendor sold grilled corn. | Un vendeur ambulant vendait du maïs grillé.
+beggar | mendiant | n | B2 | /ˈbeɡər/ | He gave money to a beggar. | Il a donné de l'argent à un mendiant.
+busker | musicien de rue | n | C1 | /ˈbʌskər/ | A busker played the violin. | Un musicien de rue jouait du violon.
+queue up | faire la queue | v | B1 | /ˌkjuː ˈʌp/ | We had to queue up for an hour. | Nous avons dû faire la queue une heure.
+smile at | sourire à | v | A2 | /ˈsmaɪl æt/ | Smile at people, it costs nothing. | Souris aux gens, ça ne coûte rien.
+make friends | se faire des amis | expr | A2 | /ˌmeɪk ˈfrendz/ | It's easy to make friends here. | C'est facile de se faire des amis ici.
+friendship | amitié | n | B1 | /ˈfrendʃɪp/ | Their friendship lasted fifty years. | Leur amitié a duré cinquante ans.
+friend | ami | n | A1 | /frend/ | He is my best friend. | C'est mon meilleur ami.
+best friend | meilleur ami | n | A1 | /ˌbest ˈfrend/ | My best friend lives next door. | Mon meilleur ami habite à côté.
+neighbourhood watch | surveillance de quartier | n | C1 | /ˌneɪbəhʊd ˈwɒtʃ/ | The neighbourhood watch keeps streets safe. | La surveillance de quartier rend les rues plus sûres.
+meeting place | lieu de rendez-vous | n | B1 | /ˈmiːtɪŋ pleɪs/ | The fountain is our meeting place. | La fontaine est notre lieu de rendez-vous.
+host family | famille d'accueil | n | B1 | /ˈhəʊst ˌfæməli/ | She stayed with a host family in London. | Elle a séjourné dans une famille d'accueil à Londres.
+hospitality | hospitalité | n | B2 | /ˌhɒspɪˈtæləti/ | Arab hospitality is famous. | L'hospitalité arabe est célèbre.
+welcoming | accueillant | adj | B1 | /ˈwelkəmɪŋ/ | The villagers are very welcoming. | Les villageois sont très accueillants.
+hostile | hostile | adj | C1 | /ˈhɒstaɪl/ | The crowd became hostile. | La foule est devenue hostile.
+public place | lieu public | n | B1 | /ˌpʌblɪk ˈpleɪs/ | Smoking is banned in public places. | Il est interdit de fumer dans les lieux publics.
+private property | propriété privée | n | B1 | /ˌpraɪvət ˈprɒpəti/ | This is private property. | C'est une propriété privée.
 `,
 );

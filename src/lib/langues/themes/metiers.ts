@@ -119,5 +119,51 @@ florist | fleuriste | n | A2 | /ˈflɒrɪst/ | The florist arranged the roses be
 cobbler | cordonnier | n | B2 | /ˈkɒblər/ | The cobbler repaired my boots. | Le cordonnier a réparé mes bottes.
 glassblower | souffleur de verre | n | C1 | /ˈɡlɑːsbləʊər/ | The glassblower shaped a vase from molten glass. | Le souffleur de verre a façonné un vase dans du verre fondu.
 potter | potier | n | B2 | /ˈpɒtər/ | The potter shapes clay on a wheel. | Le potier façonne l'argile sur un tour.
+profession | profession | n | B1 | /prəˈfeʃn/ | Teaching is a noble profession. | L'enseignement est une noble profession.
+nurse's aide | aide-soignant | n | B2 | /ˌnɜːsɪz ˈeɪd/ | She works as a nurse's aide. | Elle travaille comme aide-soignante.
+paediatrician | pédiatre | n | C1 | /ˌpiːdiəˈtrɪʃn/ | Take the baby to the paediatrician. | Emmène le bébé chez le pédiatre.
+cardiologist | cardiologue | n | C1 | /ˌkɑːdiˈɒlədʒɪst/ | The cardiologist checked his heart. | Le cardiologue a examiné son cœur.
+dermatologist | dermatologue | n | C1 | /ˌdɜːməˈtɒlədʒɪst/ | See a dermatologist about that rash. | Va voir un dermatologue pour ces rougeurs.
+psychiatrist | psychiatre | n | C1 | /saɪˈkaɪətrɪst/ | The psychiatrist listened carefully. | Le psychiatre a écouté attentivement.
+web developer | développeur web | n | B1 | /ˈweb dɪˌveləpər/ | She works as a web developer. | Elle travaille comme développeuse web.
+software engineer | ingénieur logiciel | n | B2 | /ˈsɒftweər ˌendʒɪˈnɪər/ | He is a software engineer in Paris. | Il est ingénieur logiciel à Paris.
+data scientist | data scientist | n | C1 | /ˈdeɪtə ˌsaɪəntɪst/ | Data scientists analyse huge datasets. | Les data scientists analysent d'énormes jeux de données.
+graphic designer | graphiste | n | B2 | /ˌɡræfɪk dɪˈzaɪnər/ | A graphic designer made our logo. | Un graphiste a créé notre logo.
+editor in chief | rédacteur en chef | n | C1 | /ˌedɪtər ɪn ˈtʃiːf/ | The editor in chief approved the article. | Le rédacteur en chef a validé l'article.
+real estate agent | agent immobilier | n | B2 | /ˈrɪəl ɪˌsteɪt ˌeɪdʒənt/ | The real estate agent showed us the flat. | L'agent immobilier nous a fait visiter l'appartement.
+insurance agent | agent d'assurances | n | B2 | /ɪnˈʃʊərəns ˌeɪdʒənt/ | Call your insurance agent after the accident. | Appelle ton assureur après l'accident.
+consultant | consultant | n | B2 | /kənˈsʌltənt/ | The company hired a consultant. | L'entreprise a engagé un consultant.
+salesman | vendeur, commercial | n | B1 | /ˈseɪlzmən/ | The salesman showed us new cars. | Le vendeur nous a montré des voitures neuves.
+estate agent | agent immobilier | n | B2 | /ɪˈsteɪt ˌeɪdʒənt/ | The estate agent found us a house. | L'agent immobilier nous a trouvé une maison.
+taxi driver | chauffeur de taxi | n | A2 | /ˈtæksi ˌdraɪvər/ | The taxi driver knew a shortcut. | Le chauffeur de taxi connaissait un raccourci.
+delivery driver | livreur | n | B1 | /dɪˈlɪvəri ˌdraɪvər/ | The delivery driver left the parcel. | Le livreur a laissé le colis.
+pastry chef | pâtissier | n | B1 | /ˈpeɪstri ʃef/ | The pastry chef made a wedding cake. | Le pâtissier a fait une pièce montée.
+security officer | agent de sécurité | n | B1 | /sɪˈkjʊərəti ˌɒfɪsər/ | A security officer checked our tickets. | Un agent de sécurité a contrôlé nos billets.
+customs officer | douanier | n | B2 | /ˈkʌstəmz ˌɒfɪsər/ | The customs officer opened my suitcase. | Le douanier a ouvert ma valise.
+air hostess | hôtesse de l'air | n | B1 | /ˈeə ˌhəʊstəs/ | The air hostess served drinks. | L'hôtesse de l'air a servi des boissons.
+flight attendant | steward, hôtesse de l'air | n | B1 | /ˈflaɪt əˌtendənt/ | The flight attendant showed the exits. | Le steward a montré les sorties.
+fishmonger | poissonnier | n | B2 | /ˈfɪʃmʌŋɡər/ | The fishmonger cleaned the fish for us. | Le poissonnier nous a vidé le poisson.
+barber | barbier, coiffeur pour hommes | n | B1 | /ˈbɑːbər/ | I go to the barber every month. | Je vais chez le barbier tous les mois.
+dressmaker | couturière | n | B2 | /ˈdresmeɪkər/ | The dressmaker made my wedding dress. | La couturière a fait ma robe de mariée.
+jeweller | bijoutier | n | B2 | /ˈdʒuːələr/ | The jeweller repaired my ring. | Le bijoutier a réparé ma bague.
+watchmaker | horloger | n | C1 | /ˈwɒtʃmeɪkər/ | The watchmaker fixed my old watch. | L'horloger a réparé ma vieille montre.
+blacksmith | forgeron | n | B2 | /ˈblæksmɪθ/ | The blacksmith shaped the hot iron. | Le forgeron façonnait le fer chaud.
+painter and decorator | peintre en bâtiment | n | B2 | /ˌpeɪntər ənd ˈdekəreɪtər/ | A painter and decorator redid our kitchen. | Un peintre en bâtiment a refait notre cuisine.
+roofer | couvreur | n | C1 | /ˈruːfər/ | The roofer fixed the tiles. | Le couvreur a réparé les tuiles.
+tiler | carreleur | n | C1 | /ˈtaɪlər/ | The tiler laid the bathroom floor. | Le carreleur a posé le sol de la salle de bains.
+factory worker | ouvrier d'usine | n | A2 | /ˈfæktəri ˌwɜːkər/ | He is a factory worker in Lille. | Il est ouvrier d'usine à Lille.
+labourer | manœuvre, ouvrier | n | B2 | /ˈleɪbərər/ | Labourers worked on the road. | Des ouvriers travaillaient sur la route.
+technician | technicien | n | B1 | /tekˈnɪʃn/ | A technician repaired the internet. | Un technicien a réparé internet.
+social media manager | community manager | n | B2 | /ˌsəʊʃl ˈmiːdiə ˌmænɪdʒər/ | The brand hired a social media manager. | La marque a engagé un community manager.
+head chef | chef cuisinier | n | B1 | /ˌhed ˈʃef/ | The head chef created a new menu. | Le chef a créé un nouveau menu.
+job title | intitulé de poste | n | B2 | /ˈdʒɒb ˌtaɪtl/ | What's your job title? | Quel est l'intitulé de ton poste ?
+earn a living | gagner sa vie | expr | B1 | /ˌɜːn ə ˈlɪvɪŋ/ | It's hard to earn a living as an artist. | C'est dur de gagner sa vie comme artiste.
+make a living | gagner sa vie | expr | B1 | /ˌmeɪk ə ˈlɪvɪŋ/ | He wants to make a living selling clothes. | Il veut gagner sa vie en vendant des vêtements.
+retired | retraité | adj | A2 | /rɪˈtaɪəd/ | My grandfather is retired. | Mon grand-père est à la retraite.
+employed | employé, salarié | adj | B1 | /ɪmˈplɔɪd/ | She is employed by a bank. | Elle est employée par une banque.
+career change | reconversion | n | B2 | /kəˈrɪə tʃeɪndʒ/ | At forty, he made a career change. | À quarante ans, il s'est reconverti.
+vocation | vocation | n | C1 | /vəʊˈkeɪʃn/ | Teaching is her true vocation. | L'enseignement est sa véritable vocation.
+on-the-job training | formation sur le terrain | n | C1 | /ˌɒn ðə ˌdʒɒb ˈtreɪnɪŋ/ | The company offers on-the-job training. | L'entreprise propose une formation sur le terrain.
+job satisfaction | satisfaction au travail | n | B2 | /ˈdʒɒb ˌsætɪsˌfækʃn/ | Nurses often have high job satisfaction. | Les infirmières sont souvent très satisfaites de leur travail.
 `,
 );

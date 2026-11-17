@@ -120,5 +120,35 @@ gust | rafale | n | C1 | /ɡʌst/ | A sudden gust blew my hat away. | Une rafale
 snowflake | flocon de neige | n | B1 | /ˈsnəʊfleɪk/ | Each snowflake has a unique shape. | Chaque flocon de neige a une forme unique.
 to freeze | geler | v | A2 | /friːz/ | The lake will freeze in January. | Le lac va geler en janvier.
 spade | pelle | n | B1 | /speɪd/ | Use a spade to dig the hole. | Utilise une pelle pour creuser le trou.
+farm | ferme | n | A1 | /fɑːm/ | My uncle has a farm in the mountains. | Mon oncle a une ferme dans la montagne.
+farmer's market | marché fermier | n | A2 | /ˈfɑːməz ˌmɑːkɪt/ | We buy eggs at the farmer's market. | Nous achetons des œufs au marché fermier.
+agriculture | agriculture | n | B1 | /ˈæɡrɪkʌltʃər/ | Agriculture employs half the population. | L'agriculture emploie la moitié de la population.
+farming | agriculture, élevage | n | B1 | /ˈfɑːmɪŋ/ | Farming is hard work. | L'agriculture est un travail dur.
+harvest time | période des récoltes | n | B1 | /ˈhɑːvɪst taɪm/ | Everyone helps at harvest time. | Tout le monde aide pendant les récoltes.
+grain | grain, céréale | n | B1 | /ɡreɪn/ | The barn is full of grain. | La grange est pleine de grain.
+rice field | rizière | n | B1 | /ˈraɪs fiːld/ | Women worked in the rice field. | Des femmes travaillaient dans la rizière.
+olive grove | oliveraie | n | B2 | /ˈɒlɪv ɡrəʊv/ | We walked through an olive grove. | Nous avons traversé une oliveraie.
+date harvest | récolte des dattes | n | B2 | /ˈdeɪt ˌhɑːvɪst/ | The date harvest begins in autumn. | La récolte des dattes commence en automne.
+well | puits | n | B1 | /wel/ | The village gets water from a well. | Le village tire son eau d'un puits.
+irrigation | irrigation | n | C1 | /ˌɪrɪˈɡeɪʃn/ | Irrigation brought water to the desert. | L'irrigation a apporté l'eau dans le désert.
+drought-resistant | résistant à la sécheresse | adj | C1 | /ˈdraʊt rɪˌzɪstənt/ | Olive trees are drought-resistant. | Les oliviers résistent à la sécheresse.
+seedling | semis, jeune plant | n | C1 | /ˈsiːdlɪŋ/ | Water the seedlings every morning. | Arrose les jeunes plants chaque matin.
+sprout | germer, pousser | v | B2 | /spraʊt/ | The beans began to sprout. | Les haricots ont commencé à germer.
+ripe | mûr | adj | B1 | /raɪp/ | The figs are ripe. | Les figues sont mûres.
+unripe | pas mûr | adj | B2 | /ʌnˈraɪp/ | Don't eat unripe fruit. | Ne mange pas de fruits pas mûrs.
+pick fruit | cueillir des fruits | expr | A2 | /ˌpɪk ˈfruːt/ | We pick fruit in the orchard. | Nous cueillons des fruits dans le verger.
+milk a cow | traire une vache | expr | B1 | /ˌmɪlk ə ˈkaʊ/ | Grandma taught me to milk a cow. | Mamie m'a appris à traire une vache.
+shear | tondre (un mouton) | v | C1 | /ʃɪər/ | They shear the sheep in spring. | On tond les moutons au printemps.
+egg-laying hen | poule pondeuse | n | B2 | /ˈeɡ leɪɪŋ hen/ | We keep ten egg-laying hens. | Nous avons dix poules pondeuses.
+cowshed | étable | n | B2 | /ˈkaʊʃed/ | The cows sleep in the cowshed. | Les vaches dorment dans l'étable.
+mud hut | case en terre | n | B2 | /ˈmʌd hʌt/ | They live in a mud hut. | Ils vivent dans une case en terre.
+countryman | campagnard | n | C1 | /ˈkʌntrimən/ | He is a true countryman. | C'est un vrai campagnard.
+dirt road | chemin de terre | n | B2 | /ˈdɜːt rəʊd/ | A dirt road leads to the farm. | Un chemin de terre mène à la ferme.
+country lane | petite route de campagne | n | B2 | /ˌkʌntri ˈleɪn/ | We cycled along a country lane. | Nous avons fait du vélo sur une petite route de campagne.
+fresh air | air pur | n | A2 | /ˌfreʃ ˈeər/ | I love the fresh air of the countryside. | J'adore l'air pur de la campagne.
+haystack | meule de foin | n | B2 | /ˈheɪstæk/ | Like a needle in a haystack. | Comme une aiguille dans une botte de foin.
+watermill | moulin à eau | n | C1 | /ˈwɔːtəmɪl/ | The old watermill still turns. | Le vieux moulin à eau tourne encore.
+windmill | moulin à vent | n | B1 | /ˈwɪndmɪl/ | There's a windmill on the hill. | Il y a un moulin à vent sur la colline.
+farm animal | animal de ferme | n | A2 | /ˈfɑːm ˌænɪml/ | The children fed the farm animals. | Les enfants ont nourri les animaux de la ferme.
 `,
 );

@@ -83,5 +83,40 @@ pylon | pylône | n | C1 | /ˈpaɪlɒn/ | The pylon carries power lines across t
 substation | poste électrique | n | C2 | /ˈsʌbsteɪʃn/ | The substation supplies the whole district. | Le poste électrique alimente tout le quartier.
 to ration | rationner | v | C1 | /ˈræʃn/ | They had to ration water during the drought. | Ils ont dû rationner l'eau pendant la sécheresse.
 hot water | eau chaude | n | A2 | /hɒt ˈwɔːtər/ | There is no hot water this morning. | Il n'y a pas d'eau chaude ce matin.
+LED bulb | ampoule LED | n | B1 | /ˌel iː ˈdiː bʌlb/ | LED bulbs use less electricity. | Les ampoules LED consomment moins d'électricité.
+energy bill | facture d'énergie | n | B1 | /ˈenədʒi bɪl/ | Our energy bill doubled this winter. | Notre facture d'énergie a doublé cet hiver.
+electricity bill | facture d'électricité | n | B1 | /ɪˌlekˈtrɪsəti bɪl/ | The electricity bill arrives every month. | La facture d'électricité arrive chaque mois.
+power plant | centrale électrique | n | B2 | /ˈpaʊə plɑːnt/ | The power plant supplies the whole region. | La centrale alimente toute la région.
+nuclear reactor | réacteur nucléaire | n | C1 | /ˌnjuːkliə riˈæktər/ | The nuclear reactor was shut down. | Le réacteur nucléaire a été arrêté.
+uranium | uranium | n | C1 | /juˈreɪniəm/ | Uranium is used as nuclear fuel. | L'uranium sert de combustible nucléaire.
+radioactive waste | déchets radioactifs | n | C1 | /ˌreɪdiəʊˌæktɪv ˈweɪst/ | Radioactive waste is stored underground. | Les déchets radioactifs sont stockés sous terre.
+oil field | gisement de pétrole | n | B2 | /ˈɔɪl fiːld/ | The country discovered a new oil field. | Le pays a découvert un nouveau gisement de pétrole.
+gas pipeline | gazoduc | n | C1 | /ˈɡæs ˌpaɪplaɪn/ | A gas pipeline crosses the desert. | Un gazoduc traverse le désert.
+refinery | raffinerie | n | C1 | /rɪˈfaɪnəri/ | Oil is processed at the refinery. | Le pétrole est traité à la raffinerie.
+shale gas | gaz de schiste | n | C2 | /ˌʃeɪl ˈɡæs/ | Shale gas extraction is controversial. | L'extraction du gaz de schiste est controversée.
+coal mine | mine de charbon | n | B2 | /ˈkəʊl maɪn/ | His grandfather worked in a coal mine. | Son grand-père travaillait dans une mine de charbon.
+solar energy | énergie solaire | n | B1 | /ˌsəʊlər ˈenədʒi/ | Solar energy is free and clean. | L'énergie solaire est gratuite et propre.
+wind energy | énergie éolienne | n | B1 | /ˈwɪnd ˌenədʒi/ | Wind energy is growing in Europe. | L'énergie éolienne se développe en Europe.
+hydropower | hydroélectricité | n | C1 | /ˈhaɪdrəʊpaʊər/ | Norway relies on hydropower. | La Norvège s'appuie sur l'hydroélectricité.
+energy transition | transition énergétique | n | C1 | /ˈenədʒi trænˌzɪʃn/ | The energy transition will take decades. | La transition énergétique prendra des décennies.
+electric car | voiture électrique | n | A2 | /ɪˌlektrɪk ˈkɑːr/ | We bought an electric car. | Nous avons acheté une voiture électrique.
+charging station | borne de recharge | n | B2 | /ˈtʃɑːdʒɪŋ ˌsteɪʃn/ | There's a charging station in the car park. | Il y a une borne de recharge sur le parking.
+rechargeable | rechargeable | adj | B1 | /ˌriːˈtʃɑːdʒəbl/ | Use rechargeable batteries. | Utilise des piles rechargeables.
+power bank | batterie externe | n | B1 | /ˈpaʊə bæŋk/ | Take a power bank for your phone. | Prends une batterie externe pour ton téléphone.
+extension lead | rallonge électrique | n | B2 | /ɪkˈstenʃn liːd/ | We need an extension lead for the lamp. | Il nous faut une rallonge pour la lampe.
+short circuit | court-circuit | n | B2 | /ˌʃɔːt ˈsɜːkɪt/ | A short circuit caused the fire. | Un court-circuit a provoqué l'incendie.
+energy-efficient | économe en énergie | adj | B2 | /ˈenədʒi ɪˌfɪʃnt/ | Buy an energy-efficient fridge. | Achète un frigo économe en énergie.
+power consumption | consommation électrique | n | C1 | /ˈpaʊə kənˌsʌmpʃn/ | Reduce your power consumption at night. | Réduis ta consommation électrique la nuit.
+energy crisis | crise énergétique | n | B2 | /ˈenədʒi ˌkraɪsɪs/ | The energy crisis raised prices. | La crise énergétique a fait monter les prix.
+self-sufficient | autonome | adj | C1 | /ˌself səˈfɪʃnt/ | The farm is self-sufficient in energy. | La ferme est autonome en énergie.
+off-grid | hors réseau | adj | C1 | /ˌɒf ˈɡrɪd/ | They live off-grid in the mountains. | Ils vivent hors réseau dans la montagne.
+low-energy | basse consommation | adj | B2 | /ˌləʊ ˈenədʒi/ | Use low-energy bulbs. | Utilise des ampoules basse consommation.
+energy source | source d'énergie | n | B1 | /ˈenədʒi sɔːs/ | The sun is a clean energy source. | Le soleil est une source d'énergie propre.
+solar farm | centrale solaire | n | B2 | /ˈsəʊlə fɑːm/ | Morocco built a huge solar farm. | Le Maroc a construit une immense centrale solaire.
+electricity grid | réseau électrique | n | B2 | /ɪˌlekˈtrɪsəti ɡrɪd/ | The electricity grid is overloaded. | Le réseau électrique est surchargé.
+candle | bougie | n | A2 | /ˈkændl/ | We lit a candle during the power cut. | Nous avons allumé une bougie pendant la coupure.
+firewood | bois de chauffage | n | B1 | /ˈfaɪəwʊd/ | We collected firewood for winter. | Nous avons ramassé du bois de chauffage pour l'hiver.
+woodburner | poêle à bois | n | C1 | /ˈwʊdbɜːnər/ | The woodburner keeps the house warm. | Le poêle à bois garde la maison au chaud.
+gas cylinder | bouteille de gaz | n | B1 | /ˈɡæs ˌsɪlɪndər/ | The gas cylinder is empty. | La bouteille de gaz est vide.
 `,
 );

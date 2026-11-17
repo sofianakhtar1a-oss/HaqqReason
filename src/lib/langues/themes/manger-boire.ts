@@ -144,5 +144,53 @@ tip | pourboire | n | A2 | /tɪp/ | Leave a small tip for the waiter. | Laisse u
 kettle | bouilloire | n | A2 | /ˈketl/ | Boil the kettle for the tea. | Fais chauffer la bouilloire pour le thé.
 saucepan | casserole | n | A2 | /ˈsɔːspən/ | Heat the soup in a saucepan. | Réchauffe la soupe dans une casserole.
 ladle | louche | n | B2 | /ˈleɪdl/ | Use a ladle to serve the soup. | Utilise une louche pour servir la soupe.
+mint tea | thé à la menthe | n | A2 | /ˌmɪnt ˈtiː/ | We drink mint tea after dinner. | Nous buvons du thé à la menthe après le dîner.
+mint | menthe | n | A2 | /mɪnt/ | Add fresh mint to the tea. | Ajoute de la menthe fraîche au thé.
+parsley | persil | n | B1 | /ˈpɑːsli/ | Chop some parsley for the salad. | Hache du persil pour la salade.
+coriander | coriandre | n | B1 | /ˌkɒriˈændər/ | Coriander gives the soup a fresh taste. | La coriandre donne un goût frais à la soupe.
+cumin | cumin | n | B1 | /ˈkjuːmɪn/ | Cumin is used in many Moroccan dishes. | Le cumin est utilisé dans beaucoup de plats marocains.
+saffron | safran | n | B2 | /ˈsæfrən/ | Saffron is the most expensive spice. | Le safran est l'épice la plus chère.
+paprika | paprika | n | B1 | /ˈpæprɪkə/ | Sprinkle paprika on the eggs. | Saupoudre du paprika sur les œufs.
+chilli | piment | n | A2 | /ˈtʃɪli/ | This sauce has too much chilli. | Cette sauce a trop de piment.
+harissa | harissa | n | B1 | /həˈriːsə/ | He puts harissa on everything. | Il met de la harissa partout.
+hummus | houmous | n | A2 | /ˈhʊməs/ | We had hummus and bread. | Nous avons mangé du houmous avec du pain.
+falafel | falafel | n | A2 | /fəˈlɑːfl/ | Falafel is made from chickpeas. | Le falafel est fait de pois chiches.
+kebab | kebab | n | A2 | /kɪˈbæb/ | Let's get a kebab after the match. | Prenons un kebab après le match.
+tagine | tajine | n | B1 | /təˈʒiːn/ | Mum made a chicken tagine. | Maman a fait un tajine au poulet.
+baklava | baklava | n | B1 | /ˈbækləvɑː/ | Baklava is sweet and crunchy. | Le baklava est sucré et croustillant.
+iftar | iftar | n | B1 | /ɪfˈtɑːr/ | The whole family meets for iftar. | Toute la famille se retrouve pour l'iftar.
+suhoor | sahûr | n | B2 | /sʊˈhʊər/ | We eat suhoor before dawn. | Nous prenons le sahûr avant l'aube.
+feast | festin | n | B2 | /fiːst/ | Eid is a time to share a feast. | L'Aïd est l'occasion de partager un festin.
+banquet | banquet | n | C1 | /ˈbæŋkwɪt/ | The wedding banquet was huge. | Le banquet de mariage était immense.
+picnic basket | panier de pique-nique | n | A2 | /ˈpɪknɪk ˌbɑːskɪt/ | Pack the picnic basket. | Prépare le panier de pique-nique.
+table manners | bonnes manières à table | n | B1 | /ˈteɪbl ˌmænəz/ | Children learn table manners at home. | Les enfants apprennent les bonnes manières à table à la maison.
+help yourself | sers-toi | expr | A2 | /ˌhelp jɔːˈself/ | Help yourself to some cake. | Sers-toi du gâteau.
+enjoy your meal | bon appétit | expr | A1 | /ɪnˌdʒɔɪ jɔː ˈmiːl/ | Here's your food. Enjoy your meal! | Voici votre plat. Bon appétit !
+cheers | santé, merci | expr | A2 | /tʃɪəz/ | Cheers for the coffee! | Merci pour le café !
+the bill, please | l'addition, s'il vous plaît | expr | A1 | /ðə ˈbɪl pliːz/ | Excuse me, the bill, please. | Excusez-moi, l'addition, s'il vous plaît.
+takeaway | plat à emporter | n | A2 | /ˈteɪkəweɪ/ | Let's order a takeaway tonight. | Commandons à emporter ce soir.
+fast food | restauration rapide | n | A2 | /ˌfɑːst ˈfuːd/ | Fast food is not healthy. | La restauration rapide n'est pas saine.
+street food | cuisine de rue | n | B1 | /ˈstriːt fuːd/ | Istanbul has amazing street food. | Istanbul a une cuisine de rue incroyable.
+food stall | stand de nourriture | n | B1 | /ˈfuːd stɔːl/ | We ate at a food stall in the market. | Nous avons mangé à un stand du marché.
+portion | portion | n | B1 | /ˈpɔːʃn/ | The portions are huge here. | Les portions sont énormes ici.
+second helping | deuxième portion | n | B2 | /ˌsekənd ˈhelpɪŋ/ | Can I have a second helping? | Je peux me resservir ?
+overeat | trop manger | v | B2 | /ˌəʊvərˈiːt/ | It's easy to overeat during Eid. | C'est facile de trop manger pendant l'Aïd.
+bland | fade | adj | B2 | /blænd/ | The soup is a bit bland. | La soupe est un peu fade.
+overcooked | trop cuit | adj | B2 | /ˌəʊvəˈkʊkt/ | The rice is overcooked. | Le riz est trop cuit.
+undercooked | pas assez cuit | adj | B2 | /ˌʌndəˈkʊkt/ | The chicken is undercooked. | Le poulet n'est pas assez cuit.
+well done | bien cuit | adj | A2 | /ˌwel ˈdʌn/ | I like my meat well done. | J'aime la viande bien cuite.
+rare | saignant | adj | B1 | /reər/ | He likes his steak rare. | Il aime son steak saignant.
+mouth-watering | appétissant | adj | B2 | /ˈmaʊθ ˌwɔːtərɪŋ/ | The smell was mouth-watering. | L'odeur était appétissante.
+water bottle | gourde | n | A2 | /ˈwɔːtə ˌbɒtl/ | Take a water bottle on the hike. | Prends une gourde pour la randonnée.
+sparkling water | eau gazeuse | n | A2 | /ˌspɑːklɪŋ ˈwɔːtər/ | Still or sparkling water? | Eau plate ou gazeuse ?
+still water | eau plate | n | A2 | /ˌstɪl ˈwɔːtər/ | A bottle of still water, please. | Une bouteille d'eau plate, s'il vous plaît.
+tap water | eau du robinet | n | A2 | /ˈtæp ˌwɔːtər/ | Tap water is safe to drink here. | L'eau du robinet est potable ici.
+soft drink | boisson non alcoolisée | n | A2 | /ˌsɒft ˈdrɪŋk/ | The restaurant only serves soft drinks. | Le restaurant ne sert que des boissons sans alcool.
+smoothie | smoothie | n | A2 | /ˈsmuːði/ | I make a banana smoothie every morning. | Je fais un smoothie à la banane chaque matin.
+herbal tea | tisane | n | B1 | /ˌhɜːbl ˈtiː/ | I drink herbal tea before bed. | Je bois une tisane avant de dormir.
+straw | paille | n | A2 | /strɔː/ | Can I have a straw, please? | Je peux avoir une paille, s'il vous plaît ?
+napkin | serviette de table | n | A2 | /ˈnæpkɪn/ | Put a napkin on your lap. | Mets une serviette sur tes genoux.
+tablecloth | nappe | n | B1 | /ˈteɪblklɒθ/ | She spread a white tablecloth. | Elle a étendu une nappe blanche.
+chopsticks | baguettes | n | B1 | /ˈtʃɒpstɪks/ | Can you eat with chopsticks? | Sais-tu manger avec des baguettes ?
 `,
 );

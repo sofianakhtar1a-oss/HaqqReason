@@ -90,5 +90,69 @@ to conduct | conduire (l'électricité) | v | B2 | /kənˈdʌkt/ | Copper conduc
 solid | solide | adj | B1 | /ˈsɒlɪd/ | Ice is solid at low temperatures. | La glace est solide à basse température.
 liquid | liquide | n | B1 | /ˈlɪkwɪd/ | Water is a liquid at room temperature. | L'eau est un liquide à température ambiante.
 vapour | vapeur | n | B2 | /ˈveɪpər/ | Water vapour rises from the pan. | La vapeur d'eau s'élève de la casserole.
+scientific | scientifique | adj | B1 | /ˌsaɪənˈtɪfɪk/ | We need scientific proof. | Il nous faut une preuve scientifique.
+research centre | centre de recherche | n | B2 | /rɪˈsɜːtʃ ˌsentər/ | She works at a research centre. | Elle travaille dans un centre de recherche.
+data analysis | analyse de données | n | B2 | /ˌdeɪtə əˈnæləsɪs/ | Data analysis takes weeks. | L'analyse de données prend des semaines.
+result | résultat | n | A2 | /rɪˈzʌlt/ | The results surprised the team. | Les résultats ont surpris l'équipe.
+findings | conclusions, résultats | n | C1 | /ˈfaɪndɪŋz/ | They published their findings. | Ils ont publié leurs conclusions.
+breakthrough | percée, avancée | n | C1 | /ˈbreɪkθruː/ | It was a major medical breakthrough. | Ce fut une avancée médicale majeure.
+discovery | découverte | n | B1 | /dɪˈskʌvəri/ | The discovery of penicillin saved lives. | La découverte de la pénicilline a sauvé des vies.
+invention | invention | n | B1 | /ɪnˈvenʃn/ | The printing press was a key invention. | L'imprimerie fut une invention capitale.
+inventor | inventeur | n | B1 | /ɪnˈventər/ | The inventor showed his new machine. | L'inventeur a présenté sa nouvelle machine.
+engineering | ingénierie | n | B2 | /ˌendʒɪˈnɪərɪŋ/ | She studies civil engineering. | Elle étudie le génie civil.
+technology | technologie | n | B1 | /tekˈnɒlədʒi/ | Technology changes quickly. | La technologie évolue vite.
+device | appareil | n | B1 | /dɪˈvaɪs/ | This device measures your heart rate. | Cet appareil mesure ton rythme cardiaque.
+smartphone | smartphone | n | A2 | /ˈsmɑːtfəʊn/ | Everyone has a smartphone now. | Tout le monde a un smartphone maintenant.
+laptop | ordinateur portable | n | A2 | /ˈlæptɒp/ | I work on my laptop. | Je travaille sur mon ordinateur portable.
+computer | ordinateur | n | A1 | /kəmˈpjuːtər/ | The computer is very slow. | L'ordinateur est très lent.
+keyboard | clavier | n | A2 | /ˈkiːbɔːd/ | This keyboard has Arabic letters. | Ce clavier a des lettres arabes.
+screen | écran | n | A2 | /skriːn/ | The screen is too bright. | L'écran est trop lumineux.
+app | application | n | A2 | /æp/ | Download the app to learn English. | Télécharge l'application pour apprendre l'anglais.
+internet | internet | n | A1 | /ˈɪntənet/ | The internet is down. | Internet ne marche pas.
+Wi-Fi | wifi | n | A2 | /ˈwaɪ faɪ/ | What's the Wi-Fi password? | Quel est le mot de passe du wifi ?
+offline | hors ligne | adv | B1 | /ˌɒfˈlaɪn/ | The app works offline. | L'application fonctionne hors ligne.
+search engine | moteur de recherche | n | B1 | /ˈsɜːtʃ ˌendʒɪn/ | Type the question into a search engine. | Tape la question dans un moteur de recherche.
+cloud storage | stockage en ligne | n | B2 | /ˌklaʊd ˈstɔːrɪdʒ/ | Save your photos in cloud storage. | Enregistre tes photos dans le stockage en ligne.
+install | installer | v | B1 | /ɪnˈstɔːl/ | Install the update tonight. | Installe la mise à jour ce soir.
+click | cliquer | v | A2 | /klɪk/ | Click on the link. | Clique sur le lien.
+type | taper (au clavier) | v | A2 | /taɪp/ | Type your name here. | Tape ton nom ici.
+delete | supprimer | v | A2 | /dɪˈliːt/ | Delete the old photos. | Supprime les vieilles photos.
+reboot | redémarrer | v | B2 | /ˌriːˈbuːt/ | Reboot your computer. | Redémarre ton ordinateur.
+username | nom d'utilisateur | n | A2 | /ˈjuːzəneɪm/ | Enter your username and password. | Saisis ton nom d'utilisateur et ton mot de passe.
+account | compte | n | A2 | /əˈkaʊnt/ | Create an account to continue. | Crée un compte pour continuer.
+privacy | vie privée, confidentialité | n | B2 | /ˈprɪvəsi/ | Protect your privacy online. | Protège ta vie privée en ligne.
+coding | programmation | n | B1 | /ˈkəʊdɪŋ/ | Kids are learning coding at school. | Les enfants apprennent la programmation à l'école.
+robot | robot | n | A2 | /ˈrəʊbɒt/ | A robot cleans the floor. | Un robot nettoie le sol.
+robotics | robotique | n | C1 | /rəʊˈbɒtɪks/ | Robotics is changing factories. | La robotique transforme les usines.
+machine learning | apprentissage automatique | n | C1 | /məˈʃiːn ˌlɜːnɪŋ/ | Machine learning powers this app. | L'apprentissage automatique fait tourner cette application.
+chatbot | agent conversationnel | n | B2 | /ˈtʃætbɒt/ | The bank uses a chatbot. | La banque utilise un agent conversationnel.
+satellite | satellite | n | B1 | /ˈsætəlaɪt/ | The satellite sends weather data. | Le satellite envoie des données météo.
+rocket | fusée | n | A2 | /ˈrɒkɪt/ | The rocket took off at dawn. | La fusée a décollé à l'aube.
+spacecraft | vaisseau spatial | n | B2 | /ˈspeɪskrɑːft/ | The spacecraft landed on Mars. | Le vaisseau spatial s'est posé sur Mars.
+orbit | orbite | n | B2 | /ˈɔːbɪt/ | The moon is in orbit around the earth. | La lune est en orbite autour de la Terre.
+astronomy | astronomie | n | B2 | /əˈstrɒnəmi/ | Muslim scholars advanced astronomy. | Les savants musulmans ont fait progresser l'astronomie.
+physicist | physicien | n | B2 | /ˈfɪzɪsɪst/ | The physicist won a prize. | Le physicien a remporté un prix.
+chemist | chimiste | n | B2 | /ˈkemɪst/ | The chemist mixed two liquids. | Le chimiste a mélangé deux liquides.
+biologist | biologiste | n | B2 | /baɪˈɒlədʒɪst/ | The biologist studies whales. | Le biologiste étudie les baleines.
+mathematician | mathématicien | n | B2 | /ˌmæθəməˈtɪʃn/ | Al-Khwarizmi was a great mathematician. | Al-Khwarizmi était un grand mathématicien.
+algebra | algèbre | n | B2 | /ˈældʒɪbrə/ | The word algebra comes from Arabic. | Le mot algèbre vient de l'arabe.
+geometry | géométrie | n | B2 | /dʒiˈɒmətri/ | Islamic art uses complex geometry. | L'art islamique utilise une géométrie complexe.
+statistics | statistiques | n | B2 | /stəˈtɪstɪks/ | Statistics show that crime is falling. | Les statistiques montrent que la criminalité baisse.
+probability | probabilité | n | C1 | /ˌprɒbəˈbɪləti/ | The probability of rain is high. | La probabilité de pluie est élevée.
+variable | variable | n | C1 | /ˈveəriəbl/ | Change one variable at a time. | Change une variable à la fois.
+sample size | taille de l'échantillon | n | C1 | /ˈsɑːmpl saɪz/ | The sample size was too small. | La taille de l'échantillon était trop petite.
+peer review | évaluation par les pairs | n | C2 | /ˌpɪə rɪˈvjuː/ | The study passed peer review. | L'étude a passé l'évaluation par les pairs.
+science fair | salon des sciences | n | B1 | /ˈsaɪəns feər/ | Her project won the science fair. | Son projet a gagné le salon des sciences.
+lab coat | blouse de laboratoire | n | B1 | /ˈlæb kəʊt/ | Wear a lab coat during experiments. | Porte une blouse pendant les expériences.
+test tube | éprouvette | n | B1 | /ˈtest tjuːb/ | Pour the liquid into the test tube. | Verse le liquide dans l'éprouvette.
+magnifying glass | loupe | n | B1 | /ˈmæɡnɪfaɪɪŋ ɡlɑːs/ | Look at the insect with a magnifying glass. | Regarde l'insecte à la loupe.
+lens | lentille, objectif | n | B2 | /lenz/ | The camera has a powerful lens. | L'appareil a un objectif puissant.
+boiling point | point d'ébullition | n | B2 | /ˈbɔɪlɪŋ pɔɪnt/ | Water's boiling point is 100 degrees. | Le point d'ébullition de l'eau est de 100 degrés.
+evolution | évolution | n | B2 | /ˌiːvəˈluːʃn/ | The theory of evolution is debated. | La théorie de l'évolution est débattue.
+gene | gène | n | B2 | /dʒiːn/ | Eye colour depends on our genes. | La couleur des yeux dépend de nos gènes.
+genetics | génétique | n | C1 | /dʒəˈnetɪks/ | She studies genetics. | Elle étudie la génétique.
+neuroscience | neurosciences | n | C1 | /ˈnjʊərəʊˌsaɪəns/ | Neuroscience studies the brain. | Les neurosciences étudient le cerveau.
+quantum | quantique | adj | C2 | /ˈkwɒntəm/ | Quantum physics is hard to understand. | La physique quantique est difficile à comprendre.
+big bang | big bang | n | B2 | /ˌbɪɡ ˈbæŋ/ | The universe began with the big bang. | L'univers a commencé avec le big bang.
 `,
 );

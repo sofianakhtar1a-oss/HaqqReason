@@ -90,5 +90,106 @@ cause | cause | n | B1 | /kɔːz/ | The cause of the fire is unknown. | La cause
 evil | mal | n | B2 | /ˈiːvl/ | Good and evil are old questions. | Le bien et le mal sont des questions anciennes.
 to imagine | imaginer | v | B1 | /ɪˈmædʒɪn/ | Imagine a world without money. | Imagine un monde sans argent.
 to exist | exister | v | B1 | /ɪɡˈzɪst/ | Does God exist? | Dieu existe-t-il ?
+God | Dieu | n | A1 | /ɡɒd/ | Many people pray to God every day. | Beaucoup de gens prient Dieu chaque jour.
+Creator | Créateur | n | B1 | /kriˈeɪtər/ | They believe in one Creator. | Ils croient en un seul Créateur.
+creation | création | n | B1 | /kriˈeɪʃn/ | The beauty of creation inspires wonder. | La beauté de la création suscite l'émerveillement.
+divine | divin | adj | B2 | /dɪˈvaɪn/ | They see the universe as a divine sign. | Ils voient l'univers comme un signe divin.
+revelation | révélation | n | B2 | /ˌrevəˈleɪʃn/ | Muslims believe the Qur'an is a revelation. | Les musulmans croient que le Coran est une révélation.
+prophet | prophète | n | B1 | /ˈprɒfɪt/ | Abraham is honoured as a prophet. | Abraham est honoré comme prophète.
+messenger | messager | n | B1 | /ˈmesɪndʒər/ | A messenger brings a message from God. | Un messager apporte un message de Dieu.
+prophecy | prophétie | n | C1 | /ˈprɒfəsi/ | The prophecy came true. | La prophétie s'est réalisée.
+monotheism | monothéisme | n | C1 | /ˈmɒnəʊθiːɪzəm/ | Islam is a strict monotheism. | L'islam est un monothéisme strict.
+polytheism | polythéisme | n | C1 | /ˈpɒliθiːɪzəm/ | Ancient Greece practised polytheism. | La Grèce antique pratiquait le polythéisme.
+idolatry | idolâtrie | n | C1 | /aɪˈdɒlətri/ | The prophets warned against idolatry. | Les prophètes ont mis en garde contre l'idolâtrie.
+idol | idole | n | B2 | /ˈaɪdl/ | The people worshipped stone idols. | Le peuple adorait des idoles de pierre.
+Trinity | Trinité | n | C1 | /ˈtrɪnəti/ | The Trinity is a Christian doctrine. | La Trinité est une doctrine chrétienne.
+incarnation | incarnation | n | C2 | /ˌɪnkɑːˈneɪʃn/ | The incarnation is debated by theologians. | L'incarnation est débattue par les théologiens.
+resurrection | résurrection | n | C1 | /ˌrezəˈrekʃn/ | Believers await the resurrection. | Les croyants attendent la résurrection.
+Day of Judgement | Jour du Jugement | n | B2 | /ˌdeɪ əv ˈdʒʌdʒmənt/ | Everyone will be accountable on the Day of Judgement. | Chacun rendra des comptes le Jour du Jugement.
+paradise | paradis | n | B1 | /ˈpærədaɪs/ | Paradise is described as a garden. | Le paradis est décrit comme un jardin.
+hell | enfer | n | B1 | /hel/ | Scripture warns of hell. | Les Écritures mettent en garde contre l'enfer.
+angel | ange | n | A2 | /ˈeɪndʒl/ | The angel Gabriel brought the revelation. | L'ange Gabriel a apporté la révélation.
+devil | diable | n | B1 | /ˈdevl/ | The devil whispers evil thoughts. | Le diable souffle de mauvaises pensées.
+sin | péché | n | B1 | /sɪn/ | Lying is a sin. | Le mensonge est un péché.
+repentance | repentir | n | C1 | /rɪˈpentəns/ | The door of repentance is always open. | La porte du repentir est toujours ouverte.
+repent | se repentir | v | C1 | /rɪˈpent/ | It's never too late to repent. | Il n'est jamais trop tard pour se repentir.
+forgiveness | pardon | n | B2 | /fəˈɡɪvnəs/ | He asked God for forgiveness. | Il a demandé pardon à Dieu.
+mercy | miséricorde | n | B2 | /ˈmɜːsi/ | God's mercy is vast. | La miséricorde de Dieu est immense.
+merciful | miséricordieux | adj | B2 | /ˈmɜːsɪfl/ | God is the Most Merciful. | Dieu est le Très Miséricordieux.
+faith | foi | n | B1 | /feɪθ/ | Her faith gave her strength. | Sa foi lui a donné de la force.
+believer | croyant | n | B1 | /bɪˈliːvər/ | Every believer prays for guidance. | Chaque croyant prie pour être guidé.
+disbeliever | mécréant, incroyant | n | C1 | /ˌdɪsbɪˈliːvər/ | The disbeliever demanded a sign. | L'incroyant exigeait un signe.
+atheist | athée | n | B2 | /ˈeɪθiɪst/ | An atheist denies the existence of God. | Un athée nie l'existence de Dieu.
+atheism | athéisme | n | C1 | /ˈeɪθiɪzəm/ | Atheism became popular in the twentieth century. | L'athéisme s'est répandu au vingtième siècle.
+agnostic | agnostique | adj | C1 | /æɡˈnɒstɪk/ | He calls himself agnostic. | Il se dit agnostique.
+theism | théisme | n | C2 | /ˈθiːɪzəm/ | Classical theism holds that God is perfect. | Le théisme classique soutient que Dieu est parfait.
+deism | déisme | n | C2 | /ˈdeɪɪzəm/ | Deism rejects revelation. | Le déisme rejette la révélation.
+theology | théologie | n | C1 | /θiˈɒlədʒi/ | She studies Islamic theology. | Elle étudie la théologie islamique.
+theologian | théologien | n | C1 | /ˌθiːəˈləʊdʒən/ | The theologian wrote a famous treatise. | Le théologien a écrit un traité célèbre.
+scholar | savant, érudit | n | B2 | /ˈskɒlər/ | He is a respected Islamic scholar. | C'est un savant musulman respecté.
+interpretation | interprétation | n | B2 | /ɪnˌtɜːprɪˈteɪʃn/ | This verse has one clear interpretation. | Ce verset a une interprétation claire.
+exegesis | exégèse | n | C2 | /ˌeksɪˈdʒiːsɪs/ | Classical exegesis explains each verse. | L'exégèse classique explique chaque verset.
+chapter | chapitre, sourate | n | A2 | /ˈtʃæptər/ | The first chapter of the Qur'an is short. | Le premier chapitre du Coran est court.
+Gospel | Évangile | n | B2 | /ˈɡɒspl/ | The Gospel tells the story of Jesus. | L'Évangile raconte l'histoire de Jésus.
+Torah | Torah | n | B2 | /ˈtɔːrə/ | The Torah was revealed to Moses. | La Torah a été révélée à Moïse.
+Psalms | Psaumes | n | C1 | /sɑːmz/ | The Psalms were given to David. | Les Psaumes ont été donnés à David.
+apostle | apôtre | n | C1 | /əˈpɒsl/ | Paul was not one of the twelve apostles. | Paul n'était pas l'un des douze apôtres.
+disciple | disciple | n | B2 | /dɪˈsaɪpl/ | The disciples followed their master. | Les disciples suivaient leur maître.
+miracle | miracle | n | B1 | /ˈmɪrəkl/ | The Qur'an is described as a lasting miracle. | Le Coran est décrit comme un miracle durable.
+fasting | jeûne | n | B1 | /ˈfɑːstɪŋ/ | Fasting in Ramadan teaches patience. | Le jeûne du ramadan enseigne la patience.
+almsgiving | aumône | n | C1 | /ˈɑːmzɡɪvɪŋ/ | Almsgiving purifies wealth. | L'aumône purifie les biens.
+synagogue | synagogue | n | B2 | /ˈsɪnəɡɒɡ/ | The synagogue is near the old market. | La synagogue est près du vieux marché.
+imam | imam | n | B1 | /ɪˈmɑːm/ | The imam led the prayer. | L'imam a dirigé la prière.
+rabbi | rabbin | n | B2 | /ˈræbaɪ/ | The rabbi taught the Torah. | Le rabbin enseignait la Torah.
+monk | moine | n | B2 | /mʌŋk/ | The monk lived in silence. | Le moine vivait dans le silence.
+nun | religieuse | n | B2 | /nʌn/ | The nun worked in a hospital. | La religieuse travaillait dans un hôpital.
+convert | se convertir ; converti | v | B2 | /kənˈvɜːt/ | Many people convert after reading the Qur'an. | Beaucoup de gens se convertissent après avoir lu le Coran.
+conversion | conversion | n | C1 | /kənˈvɜːʃn/ | His conversion surprised his friends. | Sa conversion a surpris ses amis.
+heresy | hérésie | n | C1 | /ˈherəsi/ | The council declared it a heresy. | Le concile l'a déclaré hérésie.
+orthodox | orthodoxe | adj | C1 | /ˈɔːθədɒks/ | He follows the orthodox view. | Il suit la position orthodoxe.
+sect | secte, courant | n | C1 | /sekt/ | The sect split from the main group. | La secte s'est séparée du groupe principal.
+spiritual | spirituel | adj | B2 | /ˈspɪrɪtʃuəl/ | Prayer is a spiritual practice. | La prière est une pratique spirituelle.
+spirituality | spiritualité | n | C1 | /ˌspɪrɪtʃuˈæləti/ | She is interested in spirituality. | Elle s'intéresse à la spiritualité.
+piety | piété | n | C1 | /ˈpaɪəti/ | His piety impressed the villagers. | Sa piété impressionnait les villageois.
+pious | pieux | adj | C1 | /ˈpaɪəs/ | His grandmother was a pious woman. | Sa grand-mère était une femme pieuse.
+righteous | vertueux, juste | adj | C1 | /ˈraɪtʃəs/ | The righteous will be rewarded. | Les justes seront récompensés.
+oneness | unicité | n | C1 | /ˈwʌnnəs/ | The oneness of God is the heart of Islam. | L'unicité de Dieu est au cœur de l'islam.
+attribute | attribut | n | C1 | /ˈætrɪbjuːt/ | Mercy is one attribute of God. | La miséricorde est l'un des attributs de Dieu.
+transcendent | transcendant | adj | C2 | /trænˈsendənt/ | God is transcendent, beyond creation. | Dieu est transcendant, au-delà de la création.
+omnipotent | tout-puissant | adj | C2 | /ɒmˈnɪpətənt/ | Believers describe God as omnipotent. | Les croyants décrivent Dieu comme tout-puissant.
+omniscient | omniscient | adj | C2 | /ɒmˈnɪsiənt/ | An omniscient being knows everything. | Un être omniscient sait tout.
+infinite | infini | adj | B2 | /ˈɪnfɪnət/ | Can a chain of causes be infinite? | Une chaîne de causes peut-elle être infinie ?
+finite | fini, limité | adj | C1 | /ˈfaɪnaɪt/ | The universe had a beginning, so it is finite in time. | L'univers a eu un commencement, il est donc fini dans le temps.
+contingent | contingent | adj | C2 | /kənˈtɪndʒənt/ | A contingent thing could have not existed. | Une chose contingente aurait pu ne pas exister.
+necessary being | être nécessaire | n | C2 | /ˌnesəsəri ˈbiːɪŋ/ | Philosophers argue for a necessary being. | Des philosophes défendent l'existence d'un être nécessaire.
+first cause | cause première | n | C1 | /ˌfɜːst ˈkɔːz/ | The argument leads to a first cause. | L'argument mène à une cause première.
+fine-tuning | réglage fin | n | C2 | /ˌfaɪn ˈtjuːnɪŋ/ | The fine-tuning of the universe puzzles scientists. | Le réglage fin de l'univers intrigue les scientifiques.
+metaphysics | métaphysique | n | C1 | /ˌmetəˈfɪzɪks/ | Metaphysics studies the nature of being. | La métaphysique étudie la nature de l'être.
+epistemology | épistémologie | n | C2 | /ɪˌpɪstəˈmɒlədʒi/ | Epistemology asks how we know things. | L'épistémologie se demande comment nous savons les choses.
+ontology | ontologie | n | C2 | /ɒnˈtɒlədʒi/ | Ontology is the study of existence. | L'ontologie est l'étude de l'existence.
+empiricism | empirisme | n | C2 | /ɪmˈpɪrɪsɪzəm/ | Empiricism trusts experience above all. | L'empirisme fait confiance avant tout à l'expérience.
+rationalism | rationalisme | n | C2 | /ˈræʃnəlɪzəm/ | Rationalism trusts reason above all. | Le rationalisme fait confiance avant tout à la raison.
+syllogism | syllogisme | n | C2 | /ˈsɪlədʒɪzəm/ | A syllogism has two premises and a conclusion. | Un syllogisme a deux prémisses et une conclusion.
+contradiction | contradiction | n | B2 | /ˌkɒntrəˈdɪkʃn/ | There is a contradiction in his argument. | Il y a une contradiction dans son argument.
+contradict | contredire | v | B2 | /ˌkɒntrəˈdɪkt/ | These two claims contradict each other. | Ces deux affirmations se contredisent.
+coherent | cohérent | adj | C1 | /kəʊˈhɪərənt/ | Her argument is clear and coherent. | Son argument est clair et cohérent.
+valid | valide | adj | B2 | /ˈvælɪd/ | The argument is valid but the premise is false. | L'argument est valide mais la prémisse est fausse.
+circular reasoning | raisonnement circulaire | n | C2 | /ˌsɜːkjələ ˈriːzənɪŋ/ | Assuming the conclusion is circular reasoning. | Supposer la conclusion, c'est un raisonnement circulaire.
+straw man | homme de paille | n | C2 | /ˌstrɔː ˈmæn/ | He attacked a straw man, not my real view. | Il a attaqué un homme de paille, pas ma vraie position.
+burden of proof | charge de la preuve | n | C1 | /ˌbɜːdn əv ˈpruːf/ | The burden of proof lies with the one who claims. | La charge de la preuve incombe à celui qui affirme.
+conclusion | conclusion | n | B1 | /kənˈkluːʒn/ | What is your conclusion? | Quelle est ta conclusion ?
+sophistry | sophistique | n | C2 | /ˈsɒfɪstri/ | His argument was pure sophistry. | Son argument relevait de la pure sophistique.
+dialectic | dialectique | n | C2 | /ˌdaɪəˈlektɪk/ | Hegel developed a dialectic of history. | Hegel a développé une dialectique de l'histoire.
+teleology | téléologie | n | C2 | /ˌteliˈɒlədʒi/ | Teleology studies purpose in nature. | La téléologie étudie la finalité dans la nature.
+a priori | a priori | adv | C2 | /ˌeɪ praɪˈɔːraɪ/ | Mathematics is known a priori. | Les mathématiques sont connues a priori.
+a posteriori | a posteriori | adv | C2 | /ˌeɪ pɒsteriˈɔːraɪ/ | Science works a posteriori. | La science procède a posteriori.
+ad hominem | ad hominem | adj | C2 | /ˌæd ˈhɒmɪnem/ | That was an ad hominem attack. | C'était une attaque ad hominem.
+non sequitur | non-sequitur | n | C2 | /ˌnɒn ˈsekwɪtər/ | His conclusion is a non sequitur. | Sa conclusion ne découle pas des prémisses.
+tautology | tautologie | n | C2 | /tɔːˈtɒlədʒi/ | "A free gift" is a tautology. | « Un cadeau gratuit » est une tautologie.
+axiomatic | axiomatique, évident | adj | C2 | /ˌæksiəˈmætɪk/ | It's axiomatic that injustice is wrong. | Il va de soi que l'injustice est mauvaise.
+self-evident | évident | adj | C1 | /ˌself ˈevɪdənt/ | Some truths are self-evident. | Certaines vérités sont évidentes.
+irrefutable | irréfutable | adj | C2 | /ˌɪrɪˈfjuːtəbl/ | The evidence was irrefutable. | Les preuves étaient irréfutables.
+fallacious | fallacieux | adj | C2 | /fəˈleɪʃəs/ | The reasoning is fallacious. | Le raisonnement est fallacieux.
+cogent | convaincant | adj | C2 | /ˈkəʊdʒənt/ | She made a cogent argument. | Elle a présenté un argument convaincant.
 `,
 );

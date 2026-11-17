@@ -55,6 +55,84 @@ to share a flat | partager un appartement, être en colocation | expr | B1 | /ʃ
 doorbell | sonnette | n | B1 | /ˈdɔːrbel/ | The doorbell rang twice. | La sonnette a retenti deux fois.
 broom | balai | n | B1 | /bruːm/ | Use the broom to sweep the floor. | Utilise le balai pour balayer le sol.
 to sweep | balayer | v | B1 | /swiːp/ | She sweeps the courtyard every morning. | Elle balaie la cour chaque matin.
+apartment | appartement | n | A1 | /əˈpɑːtmənt/ | They live in a small apartment. | Ils habitent un petit appartement.
+dining room | salle à manger | n | A1 | /ˈdaɪnɪŋ ruːm/ | We eat in the dining room on Fridays. | Nous mangeons dans la salle à manger le vendredi.
+hall | entrée, couloir | n | A2 | /hɔːl/ | Leave your shoes in the hall. | Laisse tes chaussures dans l'entrée.
+attic | grenier | n | B1 | /ˈætɪk/ | Old toys are stored in the attic. | Les vieux jouets sont rangés au grenier.
+cellar | cave | n | B1 | /ˈselər/ | We keep potatoes in the cellar. | Nous gardons les pommes de terre à la cave.
+basement | sous-sol | n | B1 | /ˈbeɪsmənt/ | The washing machine is in the basement. | La machine à laver est au sous-sol.
+lift | ascenseur | n | A2 | /lɪft/ | Take the lift to the fifth floor. | Prends l'ascenseur jusqu'au cinquième étage.
+ground floor | rez-de-chaussée | n | A2 | /ˌɡraʊnd ˈflɔːr/ | We live on the ground floor. | Nous habitons au rez-de-chaussée.
+first floor | premier étage | n | A2 | /ˌfɜːst ˈflɔːr/ | The bedrooms are on the first floor. | Les chambres sont au premier étage.
+corridor | couloir | n | B1 | /ˈkɒrɪdɔːr/ | The bathroom is at the end of the corridor. | La salle de bains est au bout du couloir.
+lawn | pelouse | n | B1 | /lɔːn/ | Don't walk on the lawn. | Ne marche pas sur la pelouse.
+chimney | cheminée (conduit) | n | B1 | /ˈtʃɪmni/ | Smoke rose from the chimney. | De la fumée sortait de la cheminée.
+fireplace | cheminée (foyer) | n | B1 | /ˈfaɪəpleɪs/ | We sat by the fireplace. | Nous nous sommes assis près de la cheminée.
+armchair | fauteuil | n | A2 | /ˈɑːmtʃeər/ | Grandpa sleeps in his armchair. | Papi dort dans son fauteuil.
+cushion | coussin | n | A2 | /ˈkʊʃn/ | Put a cushion behind your back. | Mets un coussin derrière ton dos.
+pillow | oreiller | n | A2 | /ˈpɪləʊ/ | I need a softer pillow. | J'ai besoin d'un oreiller plus moelleux.
+blanket | couverture | n | A2 | /ˈblæŋkɪt/ | Take an extra blanket, it's cold. | Prends une couverture de plus, il fait froid.
+sheet | drap | n | A2 | /ʃiːt/ | Change the sheets every week. | Change les draps chaque semaine.
+duvet | couette | n | B1 | /ˈduːveɪ/ | This duvet is very warm. | Cette couette est très chaude.
+curtains | rideaux | n | A2 | /ˈkɜːtnz/ | Close the curtains, please. | Ferme les rideaux, s'il te plaît.
+rug | tapis | n | B1 | /rʌɡ/ | A Persian rug covers the floor. | Un tapis persan couvre le sol.
+bookcase | bibliothèque (meuble) | n | A2 | /ˈbʊkkeɪs/ | The bookcase is full of novels. | La bibliothèque est pleine de romans.
+chest of drawers | commode | n | B1 | /ˌtʃest əv ˈdrɔːz/ | My socks are in the chest of drawers. | Mes chaussettes sont dans la commode.
+bedside table | table de chevet | n | B1 | /ˈbedsaɪd ˌteɪbl/ | My phone is on the bedside table. | Mon téléphone est sur la table de chevet.
+desk lamp | lampe de bureau | n | A2 | /ˈdesk læmp/ | Turn on the desk lamp to read. | Allume la lampe de bureau pour lire.
+microwave | micro-ondes | n | A2 | /ˈmaɪkrəweɪv/ | Heat the soup in the microwave. | Réchauffe la soupe au micro-ondes.
+cooker | cuisinière | n | A2 | /ˈkʊkər/ | We bought a new gas cooker. | Nous avons acheté une nouvelle cuisinière à gaz.
+freezer | congélateur | n | A2 | /ˈfriːzər/ | Put the ice cream in the freezer. | Mets la glace au congélateur.
+toaster | grille-pain | n | A2 | /ˈtəʊstər/ | The toaster burnt my bread. | Le grille-pain a brûlé mon pain.
+frying pan | poêle | n | B1 | /ˈfraɪɪŋ pæn/ | Heat oil in a frying pan. | Fais chauffer de l'huile dans une poêle.
+pot | marmite, casserole | n | A2 | /pɒt/ | The soup is in the big pot. | La soupe est dans la grande marmite.
+tray | plateau | n | B1 | /treɪ/ | She brought tea on a tray. | Elle a apporté le thé sur un plateau.
+teapot | théière | n | A2 | /ˈtiːpɒt/ | The teapot is still hot. | La théière est encore chaude.
+mug | mug, grande tasse | n | A2 | /mʌɡ/ | I drink my coffee from a big mug. | Je bois mon café dans un grand mug.
+plug | prise (mâle), bonde | n | B1 | /plʌɡ/ | Pull out the plug before cleaning. | Débranche la prise avant de nettoyer.
+switch | interrupteur | n | B1 | /swɪtʃ/ | The light switch is by the door. | L'interrupteur est près de la porte.
+light bulb | ampoule | n | A2 | /ˈlaɪt bʌlb/ | We need to change the light bulb. | Il faut changer l'ampoule.
+air conditioning | climatisation | n | B1 | /ˈeə kənˌdɪʃənɪŋ/ | The flat has air conditioning. | L'appartement est climatisé.
+tile | carreau, tuile | n | B1 | /taɪl/ | A tile fell off the roof. | Une tuile est tombée du toit.
+brick | brique | n | B1 | /brɪk/ | The house is made of red brick. | La maison est en brique rouge.
+staircase | escalier | n | B1 | /ˈsteəkeɪs/ | A wooden staircase leads upstairs. | Un escalier en bois mène à l'étage.
+landing | palier | n | B2 | /ˈlændɪŋ/ | The bathroom is on the landing. | La salle de bains est sur le palier.
+porch | porche | n | B2 | /pɔːtʃ/ | We sat on the porch in the evening. | Nous nous asseyions sous le porche le soir.
+doormat | paillasson | n | B1 | /ˈdɔːmæt/ | The key is under the doormat. | La clé est sous le paillasson.
+letterbox | boîte aux lettres | n | A2 | /ˈletəbɒks/ | There's a parcel in the letterbox. | Il y a un colis dans la boîte aux lettres.
+detached house | maison individuelle | n | B1 | /dɪˌtætʃt ˈhaʊs/ | They live in a detached house. | Ils habitent une maison individuelle.
+semi-detached house | maison jumelée | n | B2 | /ˌsemi dɪˌtætʃt ˈhaʊs/ | Our semi-detached house shares one wall. | Notre maison jumelée a un mur mitoyen.
+terraced house | maison mitoyenne (en rangée) | n | B2 | /ˌterəst ˈhaʊs/ | The street is lined with terraced houses. | La rue est bordée de maisons mitoyennes.
+studio flat | studio | n | B1 | /ˈstjuːdiəʊ flæt/ | He rents a studio flat in town. | Il loue un studio en ville.
+housing | logement | n | B2 | /ˈhaʊzɪŋ/ | Housing is expensive in Paris. | Le logement est cher à Paris.
+rent out | louer (en tant que propriétaire) | v | B2 | /ˌrent ˈaʊt/ | They rent out their flat in summer. | Ils louent leur appartement l'été.
+decorate | décorer, refaire | v | B1 | /ˈdekəreɪt/ | We want to decorate the living room. | Nous voulons refaire le salon.
+wallpaper | papier peint | n | B1 | /ˈwɔːlpeɪpər/ | The wallpaper is peeling off. | Le papier peint se décolle.
+renovate | rénover | v | B2 | /ˈrenəveɪt/ | They renovated the old farmhouse. | Ils ont rénové la vieille ferme.
+homeowner | propriétaire (de son logement) | n | B2 | /ˈhəʊməʊnər/ | More young people want to become homeowners. | De plus en plus de jeunes veulent devenir propriétaires.
+household appliance | appareil électroménager | n | B2 | /ˌhaʊshəʊld əˈplaɪəns/ | A fridge is an essential household appliance. | Un frigo est un appareil électroménager essentiel.
+key ring | porte-clés | n | A2 | /ˈkiː rɪŋ/ | I have a key ring from Morocco. | J'ai un porte-clés du Maroc.
+handle | poignée | n | B1 | /ˈhændl/ | The door handle is loose. | La poignée de porte est desserrée.
+shutters | volets | n | B1 | /ˈʃʌtəz/ | Close the shutters at night. | Ferme les volets la nuit.
+windowsill | rebord de fenêtre | n | B2 | /ˈwɪndəʊsɪl/ | The cat sleeps on the windowsill. | Le chat dort sur le rebord de la fenêtre.
+blinds | stores | n | B1 | /blaɪndz/ | Pull down the blinds, it's sunny. | Baisse les stores, il y a du soleil.
+bunk bed | lits superposés | n | B1 | /ˈbʌŋk bed/ | The boys sleep in a bunk bed. | Les garçons dorment dans des lits superposés.
+cot | lit de bébé | n | B1 | /kɒt/ | The baby sleeps in a cot. | Le bébé dort dans un lit à barreaux.
+mattress | matelas | n | B1 | /ˈmætrəs/ | This mattress is too hard. | Ce matelas est trop dur.
+dressing table | coiffeuse | n | B2 | /ˈdresɪŋ ˌteɪbl/ | Her perfume is on the dressing table. | Son parfum est sur la coiffeuse.
+coffee table | table basse | n | B1 | /ˈkɒfi ˌteɪbl/ | Put the cups on the coffee table. | Pose les tasses sur la table basse.
+coat hook | patère | n | B1 | /ˈkəʊt hʊk/ | Hang your coat on the coat hook. | Accroche ton manteau à la patère.
+shoe rack | range-chaussures | n | B1 | /ˈʃuː ræk/ | Put your shoes on the shoe rack. | Mets tes chaussures sur le range-chaussures.
+prayer mat | tapis de prière | n | B1 | /ˈpreə mæt/ | He rolled out his prayer mat. | Il a déroulé son tapis de prière.
+bath | baignoire, bain | n | A1 | /bɑːθ/ | The bath is full of hot water. | La baignoire est pleine d'eau chaude.
+washbasin | lavabo | n | B1 | /ˈwɒʃbeɪsn/ | Wash your face at the washbasin. | Lave-toi le visage au lavabo.
+toilet seat | abattant des toilettes | n | B1 | /ˈtɔɪlət siːt/ | Put the toilet seat down. | Baisse l'abattant des toilettes.
+bathroom cabinet | armoire de toilette | n | B1 | /ˈbɑːθruːm ˌkæbɪnət/ | The medicine is in the bathroom cabinet. | Le médicament est dans l'armoire de toilette.
+worktop | plan de travail | n | B2 | /ˈwɜːktɒp/ | Wipe the worktop after cooking. | Essuie le plan de travail après avoir cuisiné.
+extractor fan | hotte, aérateur | n | C1 | /ɪkˈstræktə fæn/ | Turn on the extractor fan. | Allume la hotte.
+spare room | chambre d'amis | n | B1 | /ˌspeə ˈruːm/ | You can sleep in the spare room. | Tu peux dormir dans la chambre d'amis.
+utility room | buanderie | n | B2 | /juːˈtɪləti ruːm/ | The washing machine is in the utility room. | La machine à laver est dans la buanderie.
+patio | patio, terrasse | n | B1 | /ˈpætiəʊ/ | We eat on the patio in summer. | Nous mangeons sur la terrasse l'été.
 `,
 );
 
@@ -113,6 +191,82 @@ to feel down | avoir le moral à zéro | expr | B2 | /fiːl daʊn/ | I've been f
 over the moon | aux anges | expr | B2 | /ˈoʊvər ðə muːn/ | She was over the moon with the news. | Elle était aux anges en apprenant la nouvelle.
 to lose your temper | perdre son calme | expr | B2 | /luːz jɔːr ˈtempər/ | He lost his temper with the children. | Il s'est emporté contre les enfants.
 peace of mind | tranquillité d'esprit | expr | B2 | /piːs əv maɪnd/ | Prayer gives me peace of mind. | La prière me donne la tranquillité d'esprit.
+feeling | sentiment | n | A2 | /ˈfiːlɪŋ/ | I have a good feeling about this. | J'ai un bon pressentiment.
+emotion | émotion | n | B1 | /ɪˈməʊʃn/ | He finds it hard to show emotion. | Il a du mal à montrer ses émotions.
+glad | content | adj | A2 | /ɡlæd/ | I'm glad you came. | Je suis content que tu sois venu.
+pleased | ravi, satisfait | adj | A2 | /pliːzd/ | She was pleased with her results. | Elle était satisfaite de ses résultats.
+delighted | enchanté, ravi | adj | B1 | /dɪˈlaɪtɪd/ | We're delighted to see you. | Nous sommes ravis de te voir.
+thrilled | ravi, aux anges | adj | B2 | /θrɪld/ | The kids were thrilled with their gifts. | Les enfants étaient ravis de leurs cadeaux.
+ecstatic | fou de joie | adj | C1 | /ɪkˈstætɪk/ | The fans were ecstatic after the win. | Les supporters étaient fous de joie après la victoire.
+unhappy | malheureux | adj | A2 | /ʌnˈhæpi/ | He was unhappy at his old school. | Il était malheureux dans son ancienne école.
+miserable | malheureux, misérable | adj | B1 | /ˈmɪzrəbl/ | I felt miserable with the flu. | Je me sentais misérable avec la grippe.
+depressed | déprimé | adj | B1 | /dɪˈprest/ | He felt depressed after losing his job. | Il s'est senti déprimé après avoir perdu son travail.
+devastated | anéanti | adj | B2 | /ˈdevəsteɪtɪd/ | She was devastated by the news. | Elle a été anéantie par la nouvelle.
+grief | chagrin, deuil | n | B2 | /ɡriːf/ | Grief takes time to heal. | Le chagrin met du temps à guérir.
+grieve | être en deuil | v | C1 | /ɡriːv/ | It's normal to grieve for a loved one. | Il est normal de pleurer un être cher.
+sorrow | peine, tristesse | n | C1 | /ˈsɒrəʊ/ | She hid her sorrow behind a smile. | Elle cachait sa peine derrière un sourire.
+furious | furieux | adj | B1 | /ˈfjʊəriəs/ | Dad was furious about the broken window. | Papa était furieux à cause de la vitre cassée.
+annoyed | agacé | adj | B1 | /əˈnɔɪd/ | I'm annoyed with myself. | Je m'en veux.
+irritated | irrité | adj | B2 | /ˈɪrɪteɪtɪd/ | She sounded irritated on the phone. | Elle avait l'air irritée au téléphone.
+frustrated | frustré | adj | B1 | /frʌˈstreɪtɪd/ | I get frustrated when the computer crashes. | Je suis frustré quand l'ordinateur plante.
+fed up | ras-le-bol | adj | B1 | /ˌfed ˈʌp/ | I'm fed up of waiting. | J'en ai marre d'attendre.
+terrified | terrifié | adj | B1 | /ˈterɪfaɪd/ | She is terrified of spiders. | Elle a une peur bleue des araignées.
+frightened | effrayé | adj | B1 | /ˈfraɪtnd/ | The child was frightened by the storm. | L'enfant avait peur de l'orage.
+panic-stricken | pris de panique | adj | C1 | /ˈpænɪk ˌstrɪkən/ | The panic-stricken crowd ran away. | La foule prise de panique s'est enfuie.
+uneasy | mal à l'aise | adj | B2 | /ʌnˈiːzi/ | I feel uneasy in big crowds. | Je me sens mal à l'aise dans la foule.
+tense | tendu | adj | B2 | /tens/ | The atmosphere was tense. | L'atmosphère était tendue.
+relaxed | détendu | adj | A2 | /rɪˈlækst/ | You look relaxed after your holiday. | Tu as l'air détendu après tes vacances.
+amazed | stupéfait | adj | B1 | /əˈmeɪzd/ | I was amazed by the view. | J'ai été stupéfait par la vue.
+astonished | étonné | adj | B2 | /əˈstɒnɪʃt/ | We were astonished at the price. | Nous étions étonnés du prix.
+shocked | choqué | adj | B1 | /ʃɒkt/ | Everyone was shocked by the accident. | Tout le monde a été choqué par l'accident.
+confused | perplexe | adj | A2 | /kənˈfjuːzd/ | I'm confused by the instructions. | Les instructions me laissent perplexe.
+interested | intéressé | adj | A2 | /ˈɪntrəstɪd/ | Are you interested in history? | Est-ce que l'histoire t'intéresse ?
+enthusiastic | enthousiaste | adj | B1 | /ɪnˌθjuːziˈæstɪk/ | The students are enthusiastic about the trip. | Les élèves sont enthousiastes à l'idée du voyage.
+eager | impatient, désireux | adj | B2 | /ˈiːɡər/ | She is eager to start her new job. | Elle a hâte de commencer son nouveau travail.
+hopeful | plein d'espoir | adj | B1 | /ˈhəʊpfl/ | We are hopeful about the future. | Nous avons bon espoir pour l'avenir.
+hopeless | désespéré | adj | B1 | /ˈhəʊpləs/ | The situation seemed hopeless. | La situation semblait désespérée.
+desperate | désespéré | adj | B1 | /ˈdespərət/ | He was desperate for a job. | Il cherchait désespérément un travail.
+guilt | culpabilité | n | B2 | /ɡɪlt/ | She felt a pang of guilt. | Elle a ressenti une pointe de culpabilité.
+shame | honte | n | B1 | /ʃeɪm/ | He hid his face in shame. | Il a caché son visage de honte.
+regret | regretter ; regret | v | B1 | /rɪˈɡret/ | I regret saying that. | Je regrette d'avoir dit ça.
+envy | envie, jalousie | n | B2 | /ˈenvi/ | She looked at his car with envy. | Elle regardait sa voiture avec envie.
+envious | envieux | adj | C1 | /ˈenviəs/ | Don't be envious of others. | Ne sois pas envieux des autres.
+gratitude | gratitude | n | B2 | /ˈɡrætɪtjuːd/ | I want to express my gratitude. | Je veux exprimer ma gratitude.
+thankful | reconnaissant | adj | B1 | /ˈθæŋkfl/ | I'm thankful for my family. | Je suis reconnaissant pour ma famille.
+loneliness | solitude | n | B2 | /ˈləʊnlinəs/ | Loneliness is hard for the elderly. | La solitude est difficile pour les personnes âgées.
+homesick | qui a le mal du pays | adj | B1 | /ˈhəʊmsɪk/ | She felt homesick in London. | Elle avait le mal du pays à Londres.
+nostalgic | nostalgique | adj | B2 | /nɒˈstældʒɪk/ | Old songs make me nostalgic. | Les vieilles chansons me rendent nostalgique.
+nostalgia | nostalgie | n | C1 | /nɒˈstældʒə/ | He spoke of his childhood with nostalgia. | Il parlait de son enfance avec nostalgie.
+touched | touché, ému | adj | B2 | /tʌtʃt/ | I was touched by her letter. | J'ai été touché par sa lettre.
+satisfied | satisfait | adj | B1 | /ˈsætɪsfaɪd/ | Are you satisfied with the service? | Êtes-vous satisfait du service ?
+disgusted | dégoûté | adj | B1 | /dɪsˈɡʌstɪd/ | I was disgusted by the smell. | J'ai été dégoûté par l'odeur.
+offended | vexé | adj | B2 | /əˈfendɪd/ | She was offended by his remark. | Elle a été vexée par sa remarque.
+insecure | qui manque d'assurance | adj | B2 | /ˌɪnsɪˈkjʊər/ | Teenagers often feel insecure. | Les adolescents manquent souvent d'assurance.
+self-conscious | complexé, gêné | adj | B2 | /ˌself ˈkɒnʃəs/ | He is self-conscious about his height. | Il est complexé par sa taille.
+at ease | à l'aise | expr | B2 | /ət ˈiːz/ | I feel at ease with you. | Je me sens à l'aise avec toi.
+on edge | à cran | expr | C1 | /ɒn ˈedʒ/ | Everyone was on edge before the results. | Tout le monde était à cran avant les résultats.
+in a good mood | de bonne humeur | expr | A2 | /ɪn ə ˌɡʊd ˈmuːd/ | The boss is in a good mood today. | Le patron est de bonne humeur aujourd'hui.
+in a bad mood | de mauvaise humeur | expr | A2 | /ɪn ə ˌbæd ˈmuːd/ | Don't talk to him, he's in a bad mood. | Ne lui parle pas, il est de mauvaise humeur.
+burst into tears | fondre en larmes | expr | B2 | /ˌbɜːst ˈɪntə ˈtɪəz/ | She began to burst into tears at the news. | Elle s'est mise à fondre en larmes à la nouvelle.
+burst out laughing | éclater de rire | expr | B2 | /ˌbɜːst aʊt ˈlɑːfɪŋ/ | We burst out laughing at his joke. | Nous avons éclaté de rire à sa blague.
+mixed feelings | sentiments partagés | n | B2 | /ˌmɪkst ˈfiːlɪŋz/ | I have mixed feelings about moving. | J'ai des sentiments partagés sur le déménagement.
+excitement | excitation, enthousiasme | n | B1 | /ɪkˈsaɪtmənt/ | The children couldn't hide their excitement. | Les enfants ne pouvaient pas cacher leur excitation.
+happiness | bonheur | n | B1 | /ˈhæpinəs/ | Money can't buy happiness. | L'argent ne fait pas le bonheur.
+pleasure | plaisir | n | B1 | /ˈpleʒər/ | It's a pleasure to meet you. | C'est un plaisir de vous rencontrer.
+delight | joie, ravissement | n | B2 | /dɪˈlaɪt/ | The children shouted with delight. | Les enfants ont crié de joie.
+worry | inquiétude ; s'inquiéter | n | A2 | /ˈwʌri/ | Don't worry, everything will be fine. | Ne t'inquiète pas, tout ira bien.
+anxiety | anxiété | n | B2 | /æŋˈzaɪəti/ | Exams cause a lot of anxiety. | Les examens causent beaucoup d'anxiété.
+calmness | calme, sérénité | n | C1 | /ˈkɑːmnəs/ | Prayer gives me calmness. | La prière m'apporte de la sérénité.
+serenity | sérénité | n | C1 | /səˈrenəti/ | The garden has an air of serenity. | Le jardin dégage une impression de sérénité.
+contentment | contentement | n | C1 | /kənˈtentmənt/ | True wealth is contentment. | La vraie richesse, c'est le contentement.
+despair | désespoir | n | C1 | /dɪˈspeər/ | Never give in to despair. | Ne cède jamais au désespoir.
+rage | rage, fureur | n | C1 | /reɪdʒ/ | He shook with rage. | Il tremblait de rage.
+boredom | ennui | n | B2 | /ˈbɔːdəm/ | Boredom made the children noisy. | L'ennui rendait les enfants bruyants.
+surprise | surprise | n | A2 | /səˈpraɪz/ | What a nice surprise! | Quelle belle surprise !
+disappointment | déception | n | B1 | /ˌdɪsəˈpɔɪntmənt/ | The result was a big disappointment. | Le résultat a été une grosse déception.
+embarrassment | embarras, gêne | n | B2 | /ɪmˈbærəsmənt/ | She turned red with embarrassment. | Elle a rougi d'embarras.
+confidence | confiance en soi | n | B1 | /ˈkɒnfɪdəns/ | Sport gives children confidence. | Le sport donne confiance aux enfants.
+shyness | timidité | n | B2 | /ˈʃaɪnəs/ | His shyness disappeared with time. | Sa timidité a disparu avec le temps.
 `,
 );
 
@@ -169,5 +323,59 @@ mild | doux (climat) | adj | B1 | /maɪld/ | We had a mild winter. | Nous avons 
 gloomy | sombre, maussade | adj | B2 | /ˈɡluːmi/ | What a gloomy day! | Quelle journée maussade !
 ice | glace, verglas | n | A2 | /aɪs/ | Be careful, there's ice on the road. | Attention, il y a du verglas sur la route.
 sunset | coucher de soleil | n | A2 | /ˈsʌnset/ | We prayed at sunset. | Nous avons prié au coucher du soleil.
+rain shower | averse | n | B1 | /ˈreɪn ˌʃaʊər/ | A rain shower caught us in the park. | Une averse nous a surpris dans le parc.
+downpour | trombe d'eau | n | B2 | /ˈdaʊnpɔːr/ | We got soaked in the downpour. | Nous avons été trempés par la trombe d'eau.
+hail | grêle | n | B1 | /heɪl/ | Hail damaged the crops. | La grêle a abîmé les récoltes.
+sleet | neige fondue | n | C1 | /sliːt/ | Rain turned to sleet in the evening. | La pluie s'est transformée en neige fondue le soir.
+blizzard | tempête de neige | n | B2 | /ˈblɪzəd/ | A blizzard closed the roads. | Une tempête de neige a fermé les routes.
+thunderstorm | orage | n | B1 | /ˈθʌndəstɔːm/ | A thunderstorm woke us up. | Un orage nous a réveillés.
+tornado | tornade | n | B1 | /tɔːˈneɪdəʊ/ | The tornado destroyed several houses. | La tornade a détruit plusieurs maisons.
+cyclone | cyclone | n | B2 | /ˈsaɪkləʊn/ | A cyclone hit the island. | Un cyclone a frappé l'île.
+typhoon | typhon | n | C1 | /taɪˈfuːn/ | The typhoon brought heavy rain. | Le typhon a apporté de fortes pluies.
+monsoon | mousson | n | C1 | /mɒnˈsuːn/ | The monsoon arrives in June. | La mousson arrive en juin.
+sandstorm | tempête de sable | n | B2 | /ˈsændstɔːm/ | A sandstorm blew across the desert. | Une tempête de sable a balayé le désert.
+mist | brume | n | B1 | /mɪst/ | Mist covered the valley at dawn. | La brume couvrait la vallée à l'aube.
+dew | rosée | n | B2 | /djuː/ | The grass was wet with dew. | L'herbe était mouillée de rosée.
+overcast | couvert | adj | B2 | /ˌəʊvəˈkɑːst/ | The sky is overcast today. | Le ciel est couvert aujourd'hui.
+drizzly | bruineux | adj | C1 | /ˈdrɪzli/ | It was a cold, drizzly morning. | C'était une matinée froide et bruineuse.
+stormy | orageux | adj | B1 | /ˈstɔːmi/ | The sea was stormy. | La mer était démontée.
+showery | pluvieux, à averses | adj | C1 | /ˈʃaʊəri/ | Tomorrow will be showery. | Demain, il y aura des averses.
+chilly | frais, froid | adj | B1 | /ˈtʃɪli/ | It's chilly this morning. | Il fait frais ce matin.
+boiling | brûlant, très chaud | adj | B1 | /ˈbɔɪlɪŋ/ | It's boiling in here! | Il fait une chaleur étouffante ici !
+scorching | torride | adj | C1 | /ˈskɔːtʃɪŋ/ | It was a scorching summer day. | C'était une journée d'été torride.
+muggy | lourd, moite | adj | C1 | /ˈmʌɡi/ | The air is muggy before the storm. | L'air est lourd avant l'orage.
+damp | humide | adj | B1 | /dæmp/ | The house is cold and damp. | La maison est froide et humide.
+frosty | givré, glacial | adj | B2 | /ˈfrɒsti/ | It was a frosty morning. | C'était un matin glacial.
+icy | verglacé | adj | B1 | /ˈaɪsi/ | Be careful, the roads are icy. | Attention, les routes sont verglacées.
+snowy | enneigé | adj | A2 | /ˈsnəʊi/ | We love snowy days. | Nous adorons les jours de neige.
+bright | lumineux, ensoleillé | adj | A2 | /braɪt/ | It's a bright and sunny day. | C'est une journée lumineuse et ensoleillée.
+clear sky | ciel dégagé | n | A2 | /ˌklɪə ˈskaɪ/ | Under a clear sky we saw the stars. | Sous un ciel dégagé, nous avons vu les étoiles.
+weather forecast | bulletin météo | n | A2 | /ˈweðə ˌfɔːkɑːst/ | Check the weather forecast before you go. | Consulte la météo avant de partir.
+meteorologist | météorologue | n | C1 | /ˌmiːtiəˈrɒlədʒɪst/ | The meteorologist predicted snow. | Le météorologue a prévu de la neige.
+Celsius | Celsius | n | B1 | /ˈselsiəs/ | Water freezes at zero degrees Celsius. | L'eau gèle à zéro degré Celsius.
+below zero | en dessous de zéro | expr | A2 | /bɪˌləʊ ˈzɪərəʊ/ | It was ten below zero last night. | Il faisait moins dix cette nuit.
+cold spell | vague de froid | n | B2 | /ˈkəʊld spel/ | A cold spell hit Europe in January. | Une vague de froid a touché l'Europe en janvier.
+dry season | saison sèche | n | B1 | /ˈdraɪ ˌsiːzn/ | Rivers dry up in the dry season. | Les rivières s'assèchent pendant la saison sèche.
+rainy season | saison des pluies | n | B1 | /ˈreɪni ˌsiːzn/ | The rainy season starts in May. | La saison des pluies commence en mai.
+gale | coup de vent | n | C1 | /ɡeɪl/ | A gale blew down the trees. | Un coup de vent a abattu les arbres.
+blow | souffler | v | A2 | /bləʊ/ | The wind began to blow hard. | Le vent s'est mis à souffler fort.
+shine | briller | v | A2 | /ʃaɪn/ | The sun will shine all week. | Le soleil va briller toute la semaine.
+snowfall | chute de neige | n | B1 | /ˈsnəʊfɔːl/ | Heavy snowfall closed the schools. | De fortes chutes de neige ont fermé les écoles.
+get soaked | se faire tremper | expr | B1 | /ˌɡet ˈsəʊkt/ | Take an umbrella or you'll get soaked. | Prends un parapluie ou tu vas te faire tremper.
+soaked | trempé | adj | B1 | /səʊkt/ | My shoes are soaked. | Mes chaussures sont trempées.
+rainfall | précipitations | n | B2 | /ˈreɪnfɔːl/ | Rainfall was low this year. | Les précipitations ont été faibles cette année.
+humidity | humidité | n | B2 | /hjuːˈmɪdəti/ | Humidity makes the heat worse. | L'humidité rend la chaleur plus pénible.
+atmosphere | atmosphère | n | B1 | /ˈætməsfɪər/ | The atmosphere protects the earth. | L'atmosphère protège la Terre.
+weather warning | alerte météo | n | B1 | /ˈweðə ˌwɔːnɪŋ/ | There's a weather warning for storms. | Il y a une alerte météo aux orages.
+weather conditions | conditions météorologiques | n | B2 | /ˈweðə kənˌdɪʃnz/ | The flight was cancelled due to weather conditions. | Le vol a été annulé en raison des conditions météo.
+sunshine | soleil, ensoleillement | n | A2 | /ˈsʌnʃaɪn/ | Enjoy the sunshine! | Profite du soleil !
+cloudless | sans nuages | adj | B2 | /ˈklaʊdləs/ | The sky was cloudless. | Le ciel était sans nuages.
+sweltering | étouffant | adj | C1 | /ˈsweltərɪŋ/ | It was a sweltering afternoon. | C'était un après-midi étouffant.
+bitterly cold | glacial | adj | B2 | /ˌbɪtəli ˈkəʊld/ | It's bitterly cold outside. | Il fait un froid glacial dehors.
+freezing point | point de congélation | n | B2 | /ˈfriːzɪŋ pɔɪnt/ | Water reaches freezing point at zero. | L'eau atteint son point de congélation à zéro.
+ice storm | tempête de verglas | n | C1 | /ˈaɪs stɔːm/ | An ice storm hit the north. | Une tempête de verglas a frappé le nord.
+heavy rain | fortes pluies | n | A2 | /ˌhevi ˈreɪn/ | Heavy rain caused floods. | De fortes pluies ont provoqué des inondations.
+light rain | pluie fine | n | A2 | /ˌlaɪt ˈreɪn/ | There was light rain in the morning. | Il y a eu une pluie fine le matin.
+strong wind | vent fort | n | A2 | /ˌstrɒŋ ˈwɪnd/ | A strong wind blew all night. | Un vent fort a soufflé toute la nuit.
 `,
 );

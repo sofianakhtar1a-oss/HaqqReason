@@ -93,5 +93,66 @@ senator | sénateur | n | B2 | /ˈsenətər/ | The senator spoke in favour of th
 political | politique | adj | B1 | /pəˈlɪtɪkl/ | It was a political decision. | C'était une décision politique.
 to appeal | faire appel | v | C1 | /əˈpiːl/ | They decided to appeal the verdict. | Ils ont décidé de faire appel du verdict.
 verdict | verdict | n | B2 | /ˈvɜːrdɪkt/ | The verdict surprised everyone. | Le verdict a surpris tout le monde.
+society | société | n | B1 | /səˈsaɪəti/ | We live in a diverse society. | Nous vivons dans une société diverse.
+social | social | adj | B1 | /ˈsəʊʃl/ | Unemployment is a social problem. | Le chômage est un problème social.
+president | président | n | A2 | /ˈprezɪdənt/ | The president gave a speech. | Le président a fait un discours.
+prime minister | Premier ministre | n | B1 | /ˌpraɪm ˈmɪnɪstər/ | The prime minister resigned. | Le Premier ministre a démissionné.
+leader | dirigeant, chef | n | B1 | /ˈliːdər/ | The leaders met in Brussels. | Les dirigeants se sont réunis à Bruxelles.
+politics | politique (domaine) | n | B1 | /ˈpɒlətɪks/ | He's not interested in politics. | La politique ne l'intéresse pas.
+left-wing | de gauche | adj | B2 | /ˌleft ˈwɪŋ/ | She votes for a left-wing party. | Elle vote pour un parti de gauche.
+right-wing | de droite | adj | B2 | /ˌraɪt ˈwɪŋ/ | The right-wing candidate won. | Le candidat de droite a gagné.
+debate | débat | n | B1 | /dɪˈbeɪt/ | The TV debate lasted two hours. | Le débat télévisé a duré deux heures.
+speech | discours | n | B1 | /spiːtʃ/ | The mayor gave a short speech. | Le maire a prononcé un court discours.
+manifesto | programme (politique) | n | C1 | /ˌmænɪˈfestəʊ/ | The party published its manifesto. | Le parti a publié son programme.
+polling station | bureau de vote | n | B2 | /ˈpəʊlɪŋ ˌsteɪʃn/ | The polling station opens at eight. | Le bureau de vote ouvre à huit heures.
+abstain | s'abstenir | v | C1 | /əbˈsteɪn/ | Many young people abstain from voting. | Beaucoup de jeunes s'abstiennent de voter.
+term of office | mandat | n | C1 | /ˌtɜːm əv ˈɒfɪs/ | His term of office ends in May. | Son mandat se termine en mai.
+public opinion | opinion publique | n | B2 | /ˌpʌblɪk əˈpɪnjən/ | Public opinion is divided. | L'opinion publique est divisée.
+freedom of speech | liberté d'expression | n | B2 | /ˌfriːdəm əv ˈspiːtʃ/ | Freedom of speech is a basic right. | La liberté d'expression est un droit fondamental.
+freedom of religion | liberté de culte | n | B2 | /ˌfriːdəm əv rɪˈlɪdʒən/ | The constitution protects freedom of religion. | La Constitution protège la liberté de culte.
+secularism | laïcité | n | C1 | /ˈsekjələrɪzəm/ | Secularism is debated in France. | La laïcité fait débat en France.
+secular | laïque | adj | C1 | /ˈsekjələr/ | France is a secular state. | La France est un État laïque.
+racism | racisme | n | B1 | /ˈreɪsɪzəm/ | We must fight racism. | Nous devons combattre le racisme.
+prejudice | préjugé | n | B2 | /ˈpredʒudɪs/ | Prejudice comes from ignorance. | Les préjugés naissent de l'ignorance.
+stereotype | stéréotype | n | B2 | /ˈsteriətaɪp/ | Don't believe every stereotype. | Ne crois pas tous les stéréotypes.
+Islamophobia | islamophobie | n | C1 | /ɪzˌlɑːməˈfəʊbiə/ | The report studied Islamophobia in Europe. | Le rapport a étudié l'islamophobie en Europe.
+homeless | sans-abri | adj | B1 | /ˈhəʊmləs/ | Volunteers feed homeless people. | Des bénévoles nourrissent des sans-abri.
+homelessness | sans-abrisme | n | C1 | /ˈhəʊmləsnəs/ | Homelessness rises in winter. | Le nombre de sans-abri augmente en hiver.
+social worker | assistant social | n | B1 | /ˈsəʊʃl ˌwɜːkər/ | A social worker helped the family. | Un assistant social a aidé la famille.
+benefits | allocations, aides sociales | n | B2 | /ˈbenɪfɪts/ | He lives on benefits. | Il vit des aides sociales.
+pensioner | retraité | n | B2 | /ˈpenʃənər/ | Pensioners travel free on buses. | Les retraités voyagent gratuitement en bus.
+generation gap | fossé des générations | n | B2 | /ˌdʒenəˈreɪʃn ɡæp/ | There's a generation gap in our family. | Il y a un fossé des générations dans notre famille.
+gender equality | égalité des sexes | n | B2 | /ˌdʒendər iˈkwɒləti/ | The law promotes gender equality. | La loi favorise l'égalité des sexes.
+NGO | ONG | n | B2 | /ˌen dʒiː ˈəʊ/ | She works for an NGO in Africa. | Elle travaille pour une ONG en Afrique.
+non-profit | à but non lucratif | adj | C1 | /ˌnɒn ˈprɒfɪt/ | It's a non-profit association. | C'est une association à but non lucratif.
+association | association | n | B1 | /əˌsəʊsiˈeɪʃn/ | He joined a sports association. | Il a rejoint une association sportive.
+fundraising | collecte de fonds | n | B2 | /ˈfʌndreɪzɪŋ/ | We organised fundraising for the mosque. | Nous avons organisé une collecte de fonds pour la mosquée.
+petition | pétition | n | B2 | /pəˈtɪʃn/ | Thousands signed the petition. | Des milliers de personnes ont signé la pétition.
+activist | militant | n | B2 | /ˈæktɪvɪst/ | Activists marched for climate action. | Des militants ont défilé pour le climat.
+riot | émeute | n | B2 | /ˈraɪət/ | The riot lasted two nights. | L'émeute a duré deux nuits.
+unrest | troubles, agitation | n | C1 | /ʌnˈrest/ | There is social unrest in the capital. | Il y a des troubles sociaux dans la capitale.
+consensus | consensus | n | C1 | /kənˈsensəs/ | They reached a consensus. | Ils sont parvenus à un consensus.
+authority | autorité | n | B2 | /ɔːˈθɒrəti/ | The local authority runs the schools. | La collectivité locale gère les écoles.
+state school | école publique | n | B1 | /ˌsteɪt ˈskuːl/ | Most children go to a state school. | La plupart des enfants vont à l'école publique.
+middle class | classe moyenne | n | B2 | /ˌmɪdl ˈklɑːs/ | The middle class is shrinking. | La classe moyenne se réduit.
+working class | classe ouvrière | n | B2 | /ˌwɜːkɪŋ ˈklɑːs/ | He comes from a working class family. | Il vient d'une famille ouvrière.
+social media | réseaux sociaux | n | A2 | /ˌsəʊʃl ˈmiːdiə/ | Teenagers spend hours on social media. | Les ados passent des heures sur les réseaux sociaux.
+well-off | aisé | adj | B2 | /ˌwel ˈɒf/ | They are quite well-off. | Ils sont plutôt aisés.
+underprivileged | défavorisé | adj | C1 | /ˌʌndəˈprɪvəlɪdʒd/ | The charity helps underprivileged children. | L'association aide les enfants défavorisés.
+inclusion | inclusion | n | C1 | /ɪnˈkluːʒn/ | The school promotes inclusion. | L'école promeut l'inclusion.
+community centre | centre social | n | B1 | /kəˈmjuːnəti ˌsentər/ | The community centre offers free classes. | Le centre social propose des cours gratuits.
+social justice | justice sociale | n | B2 | /ˌsəʊʃl ˈdʒʌstɪs/ | Islam calls for social justice. | L'islam appelle à la justice sociale.
+human dignity | dignité humaine | n | C1 | /ˌhjuːmən ˈdɪɡnəti/ | Every law must respect human dignity. | Toute loi doit respecter la dignité humaine.
+civil rights | droits civiques | n | B2 | /ˌsɪvl ˈraɪts/ | Malcolm X fought for civil rights. | Malcolm X s'est battu pour les droits civiques.
+vote for | voter pour | v | A2 | /ˈvəʊt fɔːr/ | Who will you vote for? | Pour qui vas-tu voter ?
+election campaign | campagne électorale | n | B1 | /ɪˈlekʃn kæmˌpeɪn/ | The election campaign lasted months. | La campagne électorale a duré des mois.
+local elections | élections municipales | n | B2 | /ˌləʊkl ɪˈlekʃnz/ | Local elections are in March. | Les élections municipales ont lieu en mars.
+head of state | chef d'État | n | B2 | /ˌhed əv ˈsteɪt/ | The head of state visited the region. | Le chef d'État a visité la région.
+social cohesion | cohésion sociale | n | C1 | /ˌsəʊʃl kəʊˈhiːʒn/ | Sport helps social cohesion. | Le sport favorise la cohésion sociale.
+living together | vivre-ensemble | n | B2 | /ˌlɪvɪŋ təˈɡeðər/ | Schools teach the values of living together. | L'école enseigne les valeurs du vivre-ensemble.
+disenfranchised | privé de ses droits | adj | C2 | /ˌdɪsɪnˈfræntʃaɪzd/ | Many disenfranchised citizens feel ignored. | Beaucoup de citoyens privés de leurs droits se sentent ignorés.
+grassroots | de terrain, citoyen | adj | C1 | /ˌɡrɑːsˈruːts/ | It started as a grassroots movement. | Cela a commencé comme un mouvement citoyen.
+marginalised | marginalisé | adj | C1 | /ˈmɑːdʒɪnəlaɪzd/ | The charity helps marginalised families. | L'association aide les familles marginalisées.
+polarisation | polarisation | n | C2 | /ˌpəʊləraɪˈzeɪʃn/ | Social media increases polarisation. | Les réseaux sociaux accentuent la polarisation.
 `,
 );

@@ -117,5 +117,29 @@ shop assistant | vendeur | n | A2 | /ʃɒp əˈsɪstənt/ | The shop assistant h
 window shopping | lèche-vitrines | expr | B1 | /ˈwɪndəʊ ˈʃɒpɪŋ/ | We went window shopping on Saturday. | Nous avons fait du lèche-vitrines samedi.
 grocer | épicier | n | B2 | /ˈɡrəʊsər/ | The grocer sells fruit, eggs and bread. | L'épicier vend des fruits, des œufs et du pain.
 greengrocer | marchand de fruits et légumes | n | C1 | /ˈɡriːnɡrəʊsər/ | The greengrocer sells the best local apples. | Le marchand de fruits et légumes vend les meilleures pommes locales.
+store | magasin | n | A1 | /stɔːr/ | There's a big store in the centre. | Il y a un grand magasin au centre.
+department store | grand magasin | n | A2 | /dɪˈpɑːtmənt stɔːr/ | We went to a department store in Paris. | Nous sommes allés dans un grand magasin à Paris.
+shopping mall | centre commercial | n | A2 | /ˈʃɒpɪŋ mɔːl/ | The shopping mall is huge. | Le centre commercial est immense.
+open | ouvert | adj | A1 | /ˈəʊpən/ | Is the pharmacy open on Sunday? | La pharmacie est-elle ouverte le dimanche ?
+closed | fermé | adj | A1 | /kləʊzd/ | The shop is closed today. | Le magasin est fermé aujourd'hui.
+opening hours | heures d'ouverture | n | A2 | /ˈəʊpənɪŋ ˌaʊəz/ | Check the opening hours online. | Vérifie les horaires en ligne.
+how much | combien | expr | A1 | /ˌhaʊ ˈmʌtʃ/ | How much is this jacket? | Combien coûte cette veste ?
+item | article | n | B1 | /ˈaɪtəm/ | This item is on sale. | Cet article est en promotion.
+special offer | offre spéciale | n | A2 | /ˌspeʃl ˈɒfər/ | There's a special offer on rice. | Il y a une offre spéciale sur le riz.
+buy one get one free | un acheté, un offert | expr | B1 | /ˌbaɪ wʌn ˌɡet wʌn ˈfriː/ | This week it's buy one get one free. | Cette semaine, c'est un acheté, un offert.
+sold out | épuisé | adj | B1 | /ˌsəʊld ˈaʊt/ | The tickets are sold out. | Les billets sont épuisés.
+salesperson | vendeur | n | B1 | /ˈseɪlzpɜːsn/ | Ask the salesperson for help. | Demande de l'aide au vendeur.
+display | vitrine, présentoir | n | B2 | /dɪˈspleɪ/ | The window display is beautiful. | La vitrine est magnifique.
+shop window | vitrine | n | A2 | /ˌʃɒp ˈwɪndəʊ/ | I saw a nice dress in the shop window. | J'ai vu une jolie robe en vitrine.
+contactless payment | paiement sans contact | n | B1 | /ˌkɒntæktləs ˈpeɪmənt/ | Contactless payment is quick. | Le paiement sans contact est rapide.
+self-service | libre-service | n | B1 | /ˌself ˈsɜːvɪs/ | The café is self-service. | Le café est en libre-service.
+gift shop | boutique de cadeaux | n | A2 | /ˈɡɪft ʃɒp/ | We bought souvenirs in the gift shop. | Nous avons acheté des souvenirs à la boutique de cadeaux.
+bookshop | librairie | n | A2 | /ˈbʊkʃɒp/ | There's a great bookshop near the mosque. | Il y a une superbe librairie près de la mosquée.
+chemist's | pharmacie | n | A2 | /ˈkemɪsts/ | Buy some aspirin at the chemist's. | Achète de l'aspirine à la pharmacie.
+newsagent | marchand de journaux | n | B1 | /ˈnjuːzeɪdʒənt/ | The newsagent sells sweets too. | Le marchand de journaux vend aussi des bonbons.
+hardware shop | quincaillerie | n | B1 | /ˈhɑːdweə ʃɒp/ | Get some nails from the hardware shop. | Prends des clous à la quincaillerie.
+toy shop | magasin de jouets | n | A2 | /ˈtɔɪ ʃɒp/ | The children love the toy shop. | Les enfants adorent le magasin de jouets.
+shoe shop | magasin de chaussures | n | A2 | /ˈʃuː ʃɒp/ | We bought trainers at the shoe shop. | Nous avons acheté des baskets au magasin de chaussures.
+butcher's shop | boucherie | n | A2 | /ˈbʊtʃəz ʃɒp/ | The halal butcher's shop is on the corner. | La boucherie halal est au coin.
 `,
 );

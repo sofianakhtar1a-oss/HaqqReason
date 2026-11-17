@@ -1,0 +1,190 @@
+/* Le Truchement : thème « Géographie et monde » (vocabulaire anglais → français). */
+import { theme } from "./outil";
+
+export const GEOGRAPHIE = theme(
+  "geographie",
+  "Géographie et monde",
+  "Les pays, les reliefs, les océans, les cartes et les peuples.",
+  "Globe",
+  `
+world | monde | n | A1 | /wɜːld/ | I want to travel around the world. | Je veux faire le tour du monde.
+country | pays | n | A1 | /ˈkʌntri/ | Which country are you from? | De quel pays viens-tu ?
+continent | continent | n | A2 | /ˈkɒntɪnənt/ | Africa is a huge continent. | L'Afrique est un immense continent.
+border | frontière | n | A2 | /ˈbɔːdər/ | We crossed the border at night. | Nous avons franchi la frontière de nuit.
+region | région | n | A2 | /ˈriːdʒən/ | This region is famous for its cheese. | Cette région est célèbre pour son fromage.
+north | nord | n | A1 | /nɔːθ/ | Lille is in the north of France. | Lille est dans le nord de la France.
+south | sud | n | A1 | /saʊθ/ | We spend summer in the south. | Nous passons l'été dans le sud.
+east | est | n | A1 | /iːst/ | The sun rises in the east. | Le soleil se lève à l'est.
+west | ouest | n | A1 | /west/ | The sun sets in the west. | Le soleil se couche à l'ouest.
+northern | du nord | adj | B1 | /ˈnɔːðən/ | Northern towns are colder. | Les villes du nord sont plus froides.
+southern | du sud | adj | B1 | /ˈsʌðən/ | Southern Spain is very hot. | Le sud de l'Espagne est très chaud.
+ocean | océan | n | A2 | /ˈəʊʃn/ | The Pacific is the largest ocean. | Le Pacifique est le plus grand océan.
+Mediterranean | Méditerranée | n | B1 | /ˌmedɪtəˈreɪniən/ | We swam in the Mediterranean. | Nous avons nagé dans la Méditerranée.
+Atlantic | Atlantique | n | B1 | /ətˈlæntɪk/ | They sailed across the Atlantic. | Ils ont traversé l'Atlantique à la voile.
+equator | équateur | n | B2 | /ɪˈkweɪtər/ | It's hot all year near the equator. | Il fait chaud toute l'année près de l'équateur.
+pole | pôle | n | B1 | /pəʊl/ | Explorers reached the South Pole. | Des explorateurs ont atteint le pôle Sud.
+hemisphere | hémisphère | n | C1 | /ˈhemɪsfɪər/ | Australia is in the southern hemisphere. | L'Australie est dans l'hémisphère sud.
+latitude | latitude | n | C1 | /ˈlætɪtjuːd/ | Paris lies at a latitude of 48 degrees. | Paris se trouve à une latitude de 48 degrés.
+longitude | longitude | n | C1 | /ˈlɒndʒɪtjuːd/ | Find the longitude on the map. | Trouve la longitude sur la carte.
+atlas | atlas | n | B1 | /ˈætləs/ | Look up the country in the atlas. | Cherche le pays dans l'atlas.
+globe | globe | n | B1 | /ɡləʊb/ | The teacher spun the globe. | Le professeur a fait tourner le globe.
+compass | boussole | n | B1 | /ˈkʌmpəs/ | We used a compass in the forest. | Nous avons utilisé une boussole en forêt.
+population | population | n | B1 | /ˌpɒpjuˈleɪʃn/ | The population of the city is growing. | La population de la ville augmente.
+inhabitant | habitant | n | B1 | /ɪnˈhæbɪtənt/ | The village has 300 inhabitants. | Le village compte 300 habitants.
+densely populated | densément peuplé | adj | C1 | /ˌdensli ˈpɒpjuleɪtɪd/ | Hong Kong is densely populated. | Hong Kong est densément peuplé.
+mountain range | chaîne de montagnes | n | B1 | /ˈmaʊntɪn reɪndʒ/ | The Alps are a mountain range. | Les Alpes sont une chaîne de montagnes.
+peak | sommet | n | B1 | /piːk/ | Snow covers the peak all year. | La neige couvre le sommet toute l'année.
+summit | sommet | n | B2 | /ˈsʌmɪt/ | We reached the summit at dawn. | Nous avons atteint le sommet à l'aube.
+plateau | plateau | n | C1 | /ˈplætəʊ/ | The village sits on a high plateau. | Le village est perché sur un haut plateau.
+gorge | gorge (relief) | n | C1 | /ɡɔːdʒ/ | The river flows through a deep gorge. | La rivière coule dans une gorge profonde.
+waterfall | cascade | n | A2 | /ˈwɔːtəfɔːl/ | We swam under the waterfall. | Nous avons nagé sous la cascade.
+estuary | estuaire | n | C1 | /ˈestʃuəri/ | Birds feed in the estuary. | Les oiseaux se nourrissent dans l'estuaire.
+delta | delta | n | C1 | /ˈdeltə/ | The Nile delta is very fertile. | Le delta du Nil est très fertile.
+bay | baie | n | B1 | /beɪ/ | The boats are anchored in the bay. | Les bateaux sont ancrés dans la baie.
+gulf | golfe | n | B2 | /ɡʌlf/ | Oil is drilled in the Gulf. | On fore du pétrole dans le Golfe.
+strait | détroit | n | C1 | /streɪt/ | Ships pass through the Strait of Gibraltar. | Les navires passent par le détroit de Gibraltar.
+archipelago | archipel | n | C2 | /ˌɑːkɪˈpeləɡəʊ/ | Indonesia is a vast archipelago. | L'Indonésie est un vaste archipel.
+rainforest | forêt tropicale | n | B1 | /ˈreɪnfɒrɪst/ | The Amazon rainforest is shrinking. | La forêt amazonienne se réduit.
+jungle | jungle | n | A2 | /ˈdʒʌŋɡl/ | Tigers live in the jungle. | Les tigres vivent dans la jungle.
+savannah | savane | n | B2 | /səˈvænə/ | Lions roam the savannah. | Les lions parcourent la savane.
+tundra | toundra | n | C1 | /ˈtʌndrə/ | Few trees grow in the tundra. | Peu d'arbres poussent dans la toundra.
+terrain | terrain, relief | n | C1 | /təˈreɪn/ | The terrain is rocky and steep. | Le terrain est rocailleux et escarpé.
+landmass | masse continentale | n | C2 | /ˈlændmæs/ | Asia is the largest landmass. | L'Asie est la plus grande masse continentale.
+coastline | littoral | n | B2 | /ˈkəʊstlaɪn/ | Brittany has a beautiful coastline. | La Bretagne a un beau littoral.
+inland | à l'intérieur des terres | adv | B2 | /ˌɪnˈlænd/ | The town is fifty kilometres inland. | La ville est à cinquante kilomètres à l'intérieur des terres.
+overseas | outre-mer, à l'étranger | adv | B2 | /ˌəʊvəˈsiːz/ | She studied overseas for a year. | Elle a étudié à l'étranger pendant un an.
+tropical | tropical | adj | B1 | /ˈtrɒpɪkl/ | They live on a tropical island. | Ils vivent sur une île tropicale.
+arid | aride | adj | C1 | /ˈærɪd/ | Little grows in this arid region. | Peu de choses poussent dans cette région aride.
+mountainous | montagneux | adj | B2 | /ˈmaʊntənəs/ | Switzerland is a mountainous country. | La Suisse est un pays montagneux.
+landlocked | enclavé | adj | C1 | /ˈlændlɒkt/ | Mali is a landlocked country. | Le Mali est un pays enclavé.
+urban | urbain | adj | B2 | /ˈɜːbən/ | Urban areas are growing fast. | Les zones urbaines grandissent vite.
+native | natal ; autochtone | adj | B1 | /ˈneɪtɪv/ | He returned to his native country. | Il est retourné dans son pays natal.
+ethnic group | groupe ethnique | n | B2 | /ˈeθnɪk ɡruːp/ | Many ethnic groups live in Nigeria. | De nombreux groupes ethniques vivent au Nigeria.
+emigrate | émigrer | v | B2 | /ˈemɪɡreɪt/ | His parents emigrated to Canada. | Ses parents ont émigré au Canada.
+expatriate | expatrié | n | C1 | /eksˈpætriət/ | Many expatriates live in Dubai. | De nombreux expatriés vivent à Dubaï.
+Europe | Europe | n | A1 | /ˈjʊərəp/ | France is in Europe. | La France est en Europe.
+Africa | Afrique | n | A1 | /ˈæfrɪkə/ | Algeria is in North Africa. | L'Algérie est en Afrique du Nord.
+Asia | Asie | n | A1 | /ˈeɪʒə/ | China is the biggest country in Asia. | La Chine est le plus grand pays d'Asie.
+Middle East | Moyen-Orient | n | B1 | /ˌmɪdl ˈiːst/ | Mecca is in the Middle East. | La Mecque est au Moyen-Orient.
+Arabic | arabe (langue) | n | A2 | /ˈærəbɪk/ | She speaks Arabic and French. | Elle parle arabe et français.
+English | anglais | n | A1 | /ˈɪŋɡlɪʃ/ | I'm learning English. | J'apprends l'anglais.
+French | français | n | A1 | /frentʃ/ | French is spoken in many countries. | Le français est parlé dans de nombreux pays.
+Spanish | espagnol | n | A1 | /ˈspænɪʃ/ | Spanish is easy to pronounce. | L'espagnol est facile à prononcer.
+German | allemand | n | A1 | /ˈdʒɜːmən/ | My cousin studies German. | Mon cousin étudie l'allemand.
+Chinese | chinois | n | A2 | /ˌtʃaɪˈniːz/ | Chinese has thousands of characters. | Le chinois compte des milliers de caractères.
+Turkish | turc | n | A2 | /ˈtɜːkɪʃ/ | He learned Turkish in Istanbul. | Il a appris le turc à Istanbul.
+America | Amérique | n | A1 | /əˈmerɪkə/ | They flew to America last summer. | Ils sont partis en Amérique l'été dernier.
+Oceania | Océanie | n | B1 | /ˌəʊʃiˈɑːniə/ | Australia is the largest country in Oceania. | L'Australie est le plus grand pays d'Océanie.
+Antarctica | Antarctique | n | B1 | /ænˈtɑːktɪkə/ | Nobody lives in Antarctica all year. | Personne ne vit toute l'année en Antarctique.
+Arctic | Arctique | n | B1 | /ˈɑːktɪk/ | Polar bears live in the Arctic. | Les ours polaires vivent en Arctique.
+England | Angleterre | n | A1 | /ˈɪŋɡlənd/ | London is in England. | Londres est en Angleterre.
+Britain | Grande-Bretagne | n | A2 | /ˈbrɪtn/ | Tea is very popular in Britain. | Le thé est très populaire en Grande-Bretagne.
+United Kingdom | Royaume-Uni | n | A2 | /juˌnaɪtɪd ˈkɪŋdəm/ | The United Kingdom includes Scotland. | Le Royaume-Uni comprend l'Écosse.
+United States | États-Unis | n | A1 | /juˌnaɪtɪd ˈsteɪts/ | She lives in the United States. | Elle vit aux États-Unis.
+Scotland | Écosse | n | A2 | /ˈskɒtlənd/ | Scotland is famous for its castles. | L'Écosse est célèbre pour ses châteaux.
+Ireland | Irlande | n | A2 | /ˈaɪələnd/ | Ireland is very green. | L'Irlande est très verte.
+Wales | pays de Galles | n | B1 | /weɪlz/ | Wales has its own language. | Le pays de Galles a sa propre langue.
+Spain | Espagne | n | A1 | /speɪn/ | We drove to Spain. | Nous sommes allés en Espagne en voiture.
+Germany | Allemagne | n | A1 | /ˈdʒɜːməni/ | Germany borders France. | L'Allemagne est frontalière de la France.
+Italy | Italie | n | A1 | /ˈɪtəli/ | Italy is shaped like a boot. | L'Italie a la forme d'une botte.
+Belgium | Belgique | n | A2 | /ˈbeldʒəm/ | Brussels is the capital of Belgium. | Bruxelles est la capitale de la Belgique.
+Switzerland | Suisse | n | A2 | /ˈswɪtsələnd/ | Switzerland is known for its chocolate. | La Suisse est connue pour son chocolat.
+Morocco | Maroc | n | A2 | /məˈrɒkəʊ/ | Morocco has beautiful markets. | Le Maroc a de magnifiques marchés.
+Algeria | Algérie | n | A2 | /ælˈdʒɪəriə/ | Algeria is the largest country in Africa. | L'Algérie est le plus grand pays d'Afrique.
+Tunisia | Tunisie | n | A2 | /tjuːˈnɪziə/ | We spent a week in Tunisia. | Nous avons passé une semaine en Tunisie.
+Egypt | Égypte | n | A2 | /ˈiːdʒɪpt/ | The pyramids are in Egypt. | Les pyramides sont en Égypte.
+Saudi Arabia | Arabie saoudite | n | B1 | /ˌsaʊdi əˈreɪbiə/ | Millions of pilgrims travel to Saudi Arabia. | Des millions de pèlerins se rendent en Arabie saoudite.
+Senegal | Sénégal | n | B1 | /ˌsenɪˈɡɔːl/ | Dakar is the capital of Senegal. | Dakar est la capitale du Sénégal.
+India | Inde | n | A2 | /ˈɪndiə/ | India has more than a billion people. | L'Inde compte plus d'un milliard d'habitants.
+Japan | Japon | n | A2 | /dʒəˈpæn/ | Japan is made of many islands. | Le Japon est composé de nombreuses îles.
+China | Chine | n | A1 | /ˈtʃaɪnə/ | The Great Wall is in China. | La Grande Muraille est en Chine.
+Russia | Russie | n | A2 | /ˈrʌʃə/ | Russia is the biggest country in the world. | La Russie est le plus grand pays du monde.
+Canada | Canada | n | A2 | /ˈkænədə/ | They speak French in parts of Canada. | On parle français dans certaines régions du Canada.
+Brazil | Brésil | n | A2 | /brəˈzɪl/ | Brazil is famous for football. | Le Brésil est célèbre pour son football.
+Indonesia | Indonésie | n | B1 | /ˌɪndəˈniːʒə/ | Indonesia has the largest Muslim population. | L'Indonésie a la plus grande population musulmane.
+Pakistan | Pakistan | n | B1 | /ˌpɑːkɪˈstɑːn/ | Urdu is spoken in Pakistan. | L'ourdou est parlé au Pakistan.
+Palestine | Palestine | n | B1 | /ˈpæləstaɪn/ | Jerusalem has a long history in Palestine. | Jérusalem a une longue histoire en Palestine.
+European | européen | adj | A2 | /ˌjʊərəˈpiːən/ | Many European countries use the euro. | Beaucoup de pays européens utilisent l'euro.
+African | africain | adj | A2 | /ˈæfrɪkən/ | She loves African music. | Elle adore la musique africaine.
+Asian | asiatique | adj | A2 | /ˈeɪʒn/ | We cooked an Asian dish. | Nous avons cuisiné un plat asiatique.
+American | américain | adj | A1 | /əˈmerɪkən/ | He watches American films. | Il regarde des films américains.
+British | britannique | adj | A2 | /ˈbrɪtɪʃ/ | Her husband is British. | Son mari est britannique.
+Moroccan | marocain | adj | A2 | /məˈrɒkən/ | We had Moroccan tea. | Nous avons bu du thé marocain.
+Algerian | algérien | adj | A2 | /ælˈdʒɪəriən/ | My neighbour is Algerian. | Mon voisin est algérien.
+Arab | arabe (personne) | adj | B1 | /ˈærəb/ | Arab countries share a language. | Les pays arabes partagent une langue.
+Muslim world | monde musulman | n | B2 | /ˌmʊzlɪm ˈwɜːld/ | The Muslim world stretches from Morocco to Indonesia. | Le monde musulman s'étend du Maroc à l'Indonésie.
+developing country | pays en développement | n | B2 | /dɪˌveləpɪŋ ˈkʌntri/ | Many developing countries lack clean water. | Beaucoup de pays en développement manquent d'eau potable.
+superpower | superpuissance | n | C1 | /ˈsuːpəpaʊər/ | China is becoming a superpower. | La Chine devient une superpuissance.
+nation | nation | n | B1 | /ˈneɪʃn/ | The whole nation watched the final. | Toute la nation a regardé la finale.
+state | État | n | B1 | /steɪt/ | Texas is a large American state. | Le Texas est un grand État américain.
+province | province | n | B2 | /ˈprɒvɪns/ | Quebec is a Canadian province. | Le Québec est une province canadienne.
+territory | territoire | n | B2 | /ˈterətri/ | The country lost part of its territory. | Le pays a perdu une partie de son territoire.
+frontier | frontière (zone) | n | C1 | /ˈfrʌntɪər/ | Soldiers guarded the frontier. | Des soldats gardaient la frontière.
+time zone | fuseau horaire | n | B1 | /ˈtaɪm zəʊn/ | Russia has eleven time zones. | La Russie a onze fuseaux horaires.
+sea level | niveau de la mer | n | B2 | /ˈsiː ˌlevl/ | The city is below sea level. | La ville est sous le niveau de la mer.
+altitude | altitude | n | B2 | /ˈæltɪtjuːd/ | At high altitude it's hard to breathe. | En haute altitude, on respire mal.
+cartography | cartographie | n | C2 | /kɑːˈtɒɡrəfi/ | Cartography has changed with satellites. | La cartographie a changé avec les satellites.
+geographical | géographique | adj | B2 | /ˌdʒiːəˈɡræfɪkl/ | The country has a unique geographical position. | Le pays a une position géographique unique.
+remote island | île isolée | n | B2 | /rɪˌməʊt ˈaɪlənd/ | They live on a remote island. | Ils vivent sur une île isolée.
+mainland | continent (terre ferme) | n | C1 | /ˈmeɪnlænd/ | The ferry connects the island to the mainland. | Le ferry relie l'île au continent.
+cape | cap | n | C1 | /keɪp/ | The lighthouse stands on the cape. | Le phare se dresse sur le cap.
+fjord | fjord | n | C1 | /fjɔːd/ | Norway is famous for its fjords. | La Norvège est célèbre pour ses fjords.
+steppe | steppe | n | C2 | /step/ | Horses run across the steppe. | Des chevaux galopent à travers la steppe.
+basin | bassin (fluvial) | n | C1 | /ˈbeɪsn/ | The Amazon basin is enormous. | Le bassin amazonien est immense.
+tributary | affluent | n | C2 | /ˈtrɪbjətri/ | The river has many tributaries. | Le fleuve a de nombreux affluents.
+Spaniard | Espagnol (personne) | n | B1 | /ˈspænjəd/ | A Spaniard opened a café here. | Un Espagnol a ouvert un café ici.
+Italian | italien | adj | A1 | /ɪˈtæliən/ | We love Italian food. | Nous adorons la cuisine italienne.
+Portuguese | portugais | adj | A2 | /ˌpɔːtʃʊˈɡiːz/ | Portuguese is spoken in Brazil. | Le portugais est parlé au Brésil.
+Russian | russe | adj | A2 | /ˈrʌʃn/ | He is learning Russian. | Il apprend le russe.
+Japanese | japonais | adj | A2 | /ˌdʒæpəˈniːz/ | Japanese food is very healthy. | La cuisine japonaise est très saine.
+Indian | indien | adj | A2 | /ˈɪndiən/ | We ate at an Indian restaurant. | Nous avons mangé dans un restaurant indien.
+Egyptian | égyptien | adj | A2 | /iˈdʒɪpʃn/ | The Egyptian pyramids are ancient. | Les pyramides égyptiennes sont anciennes.
+Tunisian | tunisien | adj | A2 | /tjuːˈnɪziən/ | My friend is Tunisian. | Mon ami est tunisien.
+Senegalese | sénégalais | adj | B1 | /ˌsenɪɡəˈliːz/ | Senegalese music is joyful. | La musique sénégalaise est joyeuse.
+Malian | malien | adj | B1 | /ˈmɑːliən/ | Our Malian neighbours invited us to dinner. | Nos voisins maliens nous ont invités à dîner.
+Lebanese | libanais | adj | B1 | /ˌlebəˈniːz/ | Lebanese cuisine is famous. | La cuisine libanaise est célèbre.
+Syrian | syrien | adj | B1 | /ˈsɪriən/ | Syrian refugees arrived last year. | Des réfugiés syriens sont arrivés l'an dernier.
+Iraqi | irakien | adj | B1 | /ɪˈrɑːki/ | Baghdad is the Iraqi capital. | Bagdad est la capitale irakienne.
+Iranian | iranien | adj | B1 | /ɪˈreɪniən/ | Iranian carpets are beautiful. | Les tapis iraniens sont magnifiques.
+Pakistani | pakistanais | adj | B1 | /ˌpɑːkɪˈstɑːni/ | The Pakistani team won the match. | L'équipe pakistanaise a gagné le match.
+Indonesian | indonésien | adj | B1 | /ˌɪndəˈniːʒn/ | Indonesian islands are very green. | Les îles indonésiennes sont très vertes.
+Malaysian | malaisien | adj | B1 | /məˈleɪʒn/ | Malaysian food is spicy. | La cuisine malaisienne est épicée.
+Saudi | saoudien | adj | B1 | /ˈsaʊdi/ | Saudi dates are famous. | Les dattes saoudiennes sont célèbres.
+Palestinian | palestinien | adj | B1 | /ˌpæləˈstɪniən/ | Palestinian embroidery is very fine. | La broderie palestinienne est très fine.
+Belgian | belge | adj | A2 | /ˈbeldʒən/ | Belgian chocolate is delicious. | Le chocolat belge est délicieux.
+Swiss | suisse | adj | A2 | /swɪs/ | He works for a Swiss bank. | Il travaille pour une banque suisse.
+Canadian | canadien | adj | A2 | /kəˈneɪdiən/ | She married a Canadian doctor. | Elle a épousé un médecin canadien.
+Brazilian | brésilien | adj | A2 | /brəˈzɪliən/ | Brazilian football is famous. | Le football brésilien est célèbre.
+Mexican | mexicain | adj | A2 | /ˈmeksɪkən/ | Mexican food is spicy. | La cuisine mexicaine est épicée.
+Australian | australien | adj | A2 | /ɒˈstreɪliən/ | The Australian coast is beautiful. | La côte australienne est magnifique.
+Scottish | écossais | adj | A2 | /ˈskɒtɪʃ/ | He has a Scottish accent. | Il a l'accent écossais.
+Irish | irlandais | adj | A2 | /ˈaɪrɪʃ/ | Irish music is lively. | La musique irlandaise est entraînante.
+Dutch | néerlandais | adj | A2 | /dʌtʃ/ | Dutch people ride bikes everywhere. | Les Néerlandais font du vélo partout.
+Greek | grec | adj | A2 | /ɡriːk/ | Greek islands are popular in summer. | Les îles grecques sont populaires l'été.
+Persian | persan | adj | B2 | /ˈpɜːʃn/ | Persian poetry is very old. | La poésie persane est très ancienne.
+Urdu | ourdou | n | B2 | /ˈʊəduː/ | Urdu is written in Arabic script. | L'ourdou s'écrit en alphabet arabe.
+Hebrew | hébreu | n | B2 | /ˈhiːbruː/ | The Torah was written in Hebrew. | La Torah a été écrite en hébreu.
+Berber | berbère | adj | B2 | /ˈbɜːbər/ | Berber villages cling to the mountains. | Des villages berbères s'accrochent aux montagnes.
+Netherlands | Pays-Bas | n | A2 | /ˈneðələndz/ | The Netherlands is very flat. | Les Pays-Bas sont très plats.
+Portugal | Portugal | n | A2 | /ˈpɔːtʃʊɡl/ | Portugal has beautiful beaches. | Le Portugal a de belles plages.
+Greece | Grèce | n | A2 | /ɡriːs/ | We sailed around Greece. | Nous avons navigué autour de la Grèce.
+Mexico | Mexique | n | A2 | /ˈmeksɪkəʊ/ | Mexico City is huge. | Mexico est immense.
+Australia | Australie | n | A2 | /ɒˈstreɪliə/ | Kangaroos live in Australia. | Les kangourous vivent en Australie.
+Iran | Iran | n | B1 | /ɪˈrɑːn/ | Iran has a long history. | L'Iran a une longue histoire.
+Iraq | Irak | n | B1 | /ɪˈrɑːk/ | The Tigris flows through Iraq. | Le Tigre traverse l'Irak.
+Syria | Syrie | n | B1 | /ˈsɪriə/ | Damascus is the capital of Syria. | Damas est la capitale de la Syrie.
+Lebanon | Liban | n | B1 | /ˈlebənən/ | Lebanon has cedar trees. | Le Liban a des cèdres.
+Jordan | Jordanie | n | B1 | /ˈdʒɔːdn/ | Petra is in Jordan. | Pétra est en Jordanie.
+Malaysia | Malaisie | n | B1 | /məˈleɪʒə/ | Kuala Lumpur is in Malaysia. | Kuala Lumpur est en Malaisie.
+Mali | Mali | n | B1 | /ˈmɑːli/ | Timbuktu is a city in Mali. | Tombouctou est une ville du Mali.
+Nigeria | Nigeria | n | B1 | /naɪˈdʒɪəriə/ | Nigeria is the most populous country in Africa. | Le Nigeria est le pays le plus peuplé d'Afrique.
+South Africa | Afrique du Sud | n | B1 | /ˌsaʊθ ˈæfrɪkə/ | Cape Town is in South Africa. | Le Cap est en Afrique du Sud.
+Sahara | Sahara | n | B1 | /səˈhɑːrə/ | We crossed the Sahara by jeep. | Nous avons traversé le Sahara en jeep.
+Nile | Nil | n | B1 | /naɪl/ | The Nile is the longest river in Africa. | Le Nil est le plus long fleuve d'Afrique.
+Alps | Alpes | n | B1 | /ælps/ | We went skiing in the Alps. | Nous sommes allés skier dans les Alpes.
+Himalayas | Himalaya | n | B2 | /ˌhɪməˈleɪəz/ | Everest is in the Himalayas. | L'Everest est dans l'Himalaya.
+Pacific | Pacifique | n | B1 | /pəˈsɪfɪk/ | They crossed the Pacific by boat. | Ils ont traversé le Pacifique en bateau.
+Indian Ocean | océan Indien | n | B1 | /ˌɪndiən ˈəʊʃn/ | Madagascar is in the Indian Ocean. | Madagascar est dans l'océan Indien.
+Red Sea | mer Rouge | n | B1 | /ˌred ˈsiː/ | We went diving in the Red Sea. | Nous sommes allés plonger en mer Rouge.
+`,
+);

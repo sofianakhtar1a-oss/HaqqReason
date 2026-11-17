@@ -83,5 +83,64 @@ risk | risque | n | B1 | /rɪsk/ | There is a risk of flooding this week. | Il y
 avalanche | avalanche | n | C1 | /ˈævəlɑːntʃ/ | The avalanche buried the road. | L'avalanche a enseveli la route.
 earthquake | tremblement de terre | n | A2 | /ˈɜːrθkweɪk/ | The earthquake shook the whole city. | Le tremblement de terre a secoué toute la ville.
 hurricane | ouragan | n | B1 | /ˈhʌrɪkən/ | The hurricane destroyed the harbour. | L'ouragan a détruit le port.
+safety | sécurité (protection) | n | B1 | /ˈseɪfti/ | Safety comes first. | La sécurité d'abord.
+police | police | n | A1 | /pəˈliːs/ | Call the police! | Appelle la police !
+police car | voiture de police | n | A2 | /pəˈliːs kɑːr/ | A police car stopped outside. | Une voiture de police s'est arrêtée devant.
+emergency services | services d'urgence | n | B1 | /ɪˈmɜːdʒənsi ˌsɜːvɪsɪz/ | Call the emergency services at once. | Appelle immédiatement les secours.
+emergency number | numéro d'urgence | n | A2 | /ɪˈmɜːdʒənsi ˌnʌmbər/ | The emergency number in Europe is 112. | Le numéro d'urgence en Europe est le 112.
+accident | accident | n | A2 | /ˈæksɪdənt/ | There was an accident on the motorway. | Il y a eu un accident sur l'autoroute.
+crash | accident (de voiture) ; s'écraser | n | B1 | /kræʃ/ | Nobody was hurt in the crash. | Personne n'a été blessé dans l'accident.
+collision | collision | n | B2 | /kəˈlɪʒn/ | The collision damaged both cars. | La collision a endommagé les deux voitures.
+fire alarm | alarme incendie | n | A2 | /ˈfaɪər əˌlɑːm/ | The fire alarm went off at noon. | L'alarme incendie s'est déclenchée à midi.
+fire escape | escalier de secours | n | B2 | /ˈfaɪər ɪˌskeɪp/ | Use the fire escape in an emergency. | Utilise l'escalier de secours en cas d'urgence.
+assembly point | point de rassemblement | n | B2 | /əˈsembli pɔɪnt/ | Go to the assembly point after the alarm. | Rends-toi au point de rassemblement après l'alarme.
+safety glasses | lunettes de protection | n | B2 | /ˈseɪfti ˌɡlɑːsɪz/ | Wear safety glasses in the workshop. | Porte des lunettes de protection à l'atelier.
+hard hat | casque de chantier | n | B2 | /ˌhɑːd ˈhæt/ | Wear a hard hat on the building site. | Porte un casque sur le chantier.
+high-visibility vest | gilet fluorescent | n | B2 | /ˌhaɪ vɪzəˈbɪləti vest/ | Keep a high-visibility vest in your car. | Garde un gilet fluorescent dans ta voiture.
+life jacket | gilet de sauvetage | n | B1 | /ˈlaɪf ˌdʒækɪt/ | Put on a life jacket in the boat. | Mets un gilet de sauvetage dans le bateau.
+lifeboat | canot de sauvetage | n | B2 | /ˈlaɪfbəʊt/ | Passengers climbed into the lifeboats. | Les passagers sont montés dans les canots de sauvetage.
+password | mot de passe | n | A2 | /ˈpɑːswɜːd/ | Choose a strong password. | Choisis un mot de passe solide.
+security guard | agent de sécurité | n | B1 | /sɪˈkjʊərəti ɡɑːd/ | A security guard checked our bags. | Un agent de sécurité a fouillé nos sacs.
+CCTV | vidéosurveillance | n | B2 | /ˌsiː siː tiː ˈviː/ | The station is covered by CCTV. | La gare est sous vidéosurveillance.
+camera | caméra | n | A2 | /ˈkæmərə/ | A camera filmed the thief. | Une caméra a filmé le voleur.
+pickpocket | pickpocket | n | B2 | /ˈpɪkpɒkɪt/ | Watch out for pickpockets on the metro. | Attention aux pickpockets dans le métro.
+mugging | agression (pour voler) | n | C1 | /ˈmʌɡɪŋ/ | There was a mugging near the station. | Il y a eu une agression près de la gare.
+scam | arnaque | n | B2 | /skæm/ | That email is a scam. | Cet e-mail est une arnaque.
+scammer | arnaqueur | n | B2 | /ˈskæmər/ | A scammer called pretending to be my bank. | Un arnaqueur a appelé en se faisant passer pour ma banque.
+phishing | hameçonnage | n | C1 | /ˈfɪʃɪŋ/ | Never click on phishing links. | Ne clique jamais sur des liens d'hameçonnage.
+identity theft | usurpation d'identité | n | C1 | /aɪˈdentəti θeft/ | Identity theft is a growing problem. | L'usurpation d'identité est un problème croissant.
+report a crime | signaler un crime | expr | B1 | /rɪˌpɔːt ə ˈkraɪm/ | You should report a crime to the police. | Il faut signaler un crime à la police.
+emergency call | appel d'urgence | n | B1 | /ɪˈmɜːdʒənsi kɔːl/ | She made an emergency call. | Elle a passé un appel d'urgence.
+first responder | premier intervenant | n | C1 | /ˌfɜːst rɪˈspɒndər/ | The first responder gave him oxygen. | Le premier intervenant lui a donné de l'oxygène.
+paramedic | ambulancier, secouriste | n | B2 | /ˌpærəˈmedɪk/ | The paramedic treated the injured man. | L'ambulancier a soigné le blessé.
+CPR | réanimation cardio-pulmonaire | n | C1 | /ˌsiː piː ˈɑːr/ | She learned CPR at work. | Elle a appris la réanimation cardio-pulmonaire au travail.
+defibrillator | défibrillateur | n | C1 | /diːˈfɪbrɪleɪtər/ | There's a defibrillator at the entrance. | Il y a un défibrillateur à l'entrée.
+recovery position | position latérale de sécurité | n | C1 | /rɪˈkʌvəri pəˌzɪʃn/ | Put him in the recovery position. | Mets-le en position latérale de sécurité.
+choke | s'étouffer | v | B2 | /tʃəʊk/ | Cut the grapes so the baby doesn't choke. | Coupe le raisin pour que le bébé ne s'étouffe pas.
+drown | se noyer | v | B2 | /draʊn/ | Children can drown in shallow water. | Les enfants peuvent se noyer dans peu d'eau.
+slippery | glissant | adj | B1 | /ˈslɪpəri/ | Careful, the floor is slippery. | Attention, le sol est glissant.
+flammable | inflammable | adj | C1 | /ˈflæməbl/ | Keep flammable products away from heat. | Tiens les produits inflammables loin de la chaleur.
+fragile | fragile | adj | B1 | /ˈfrædʒaɪl/ | The box says "Fragile". | La boîte indique « Fragile ».
+childproof | sécurité enfant | adj | C1 | /ˈtʃaɪldpruːf/ | The bottle has a childproof cap. | La bouteille a un bouchon sécurité enfant.
+safety rules | consignes de sécurité | n | B1 | /ˈseɪfti ruːlz/ | Read the safety rules carefully. | Lis attentivement les consignes de sécurité.
+risk assessment | évaluation des risques | n | C1 | /ˈrɪsk əˌsesmənt/ | We did a risk assessment before the trip. | Nous avons fait une évaluation des risques avant le voyage.
+threat | menace | n | B2 | /θret/ | The storm is a threat to the coast. | La tempête est une menace pour la côte.
+threaten | menacer | v | B2 | /ˈθretn/ | Floods threaten the village. | Les inondations menacent le village.
+terrorism | terrorisme | n | B2 | /ˈterərɪzəm/ | All religions condemn terrorism. | Toutes les religions condamnent le terrorisme.
+bomb | bombe | n | B1 | /bɒm/ | The police found a fake bomb. | La police a trouvé une fausse bombe.
+explosion | explosion | n | B1 | /ɪkˈspləʊʒn/ | We heard a loud explosion. | Nous avons entendu une forte explosion.
+lockdown | confinement | n | B2 | /ˈlɒkdaʊn/ | The school went into lockdown. | L'école a été confinée.
+road safety | sécurité routière | n | B1 | /ˈrəʊd ˌseɪfti/ | Road safety is taught at school. | La sécurité routière est enseignée à l'école.
+child seat | siège auto | n | B1 | /ˈtʃaɪld siːt/ | Put the baby in the child seat. | Mets le bébé dans le siège auto.
+airbag | coussin gonflable | n | B2 | /ˈeəbæɡ/ | The airbag saved his life. | L'airbag lui a sauvé la vie.
+cycle helmet | casque de vélo | n | B1 | /ˈsaɪkl ˌhelmɪt/ | Always wear a cycle helmet. | Porte toujours un casque de vélo.
+reflective jacket | veste réfléchissante | n | B2 | /rɪˌflektɪv ˈdʒækɪt/ | Cyclists wear a reflective jacket at night. | Les cyclistes portent une veste réfléchissante la nuit.
+lock the door | fermer la porte à clé | expr | A2 | /ˌlɒk ðə ˈdɔːr/ | Don't forget to lock the door. | N'oublie pas de fermer la porte à clé.
+security code | code de sécurité | n | B1 | /sɪˈkjʊərəti kəʊd/ | Enter the security code. | Saisis le code de sécurité.
+two-factor authentication | double authentification | n | C1 | /ˌtuː ˌfæktər ɔːˌθentɪˈkeɪʃn/ | Turn on two-factor authentication. | Active la double authentification.
+data breach | fuite de données | n | C1 | /ˈdeɪtə briːtʃ/ | The company suffered a data breach. | L'entreprise a subi une fuite de données.
+virus scan | analyse antivirus | n | B2 | /ˈvaɪrəs skæn/ | Run a virus scan every week. | Lance une analyse antivirus chaque semaine.
+emergency kit | trousse d'urgence | n | B2 | /ɪˈmɜːdʒənsi kɪt/ | Keep an emergency kit at home. | Garde une trousse d'urgence à la maison.
+torch | lampe de poche | n | A2 | /tɔːtʃ/ | Take a torch in case of a power cut. | Prends une lampe de poche en cas de coupure.
 `,
 );

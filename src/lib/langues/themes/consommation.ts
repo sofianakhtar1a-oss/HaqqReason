@@ -105,5 +105,46 @@ fair trade | commerce équitable | n | B2 | /feər treɪd/ | I prefer coffee sol
 to donate | faire un don | v | B1 | /dəʊˈneɪt/ | We donated old clothes to charity. | Nous avons fait don de vieux vêtements à une association.
 refillable | à recharge | adj | C1 | /riːˈfɪləbl/ | Buy refillable bottles to save plastic. | Achète des bouteilles à recharge pour économiser le plastique.
 to hoard | accumuler | v | C1 | /hɔːrd/ | He hoards old newspapers. | Il accumule de vieux journaux.
+money | argent | n | A1 | /ˈmʌni/ | I don't have much money. | Je n'ai pas beaucoup d'argent.
+change | monnaie | n | A2 | /tʃeɪndʒ/ | Keep the change. | Gardez la monnaie.
+free of charge | gratuit | expr | B2 | /ˌfriː əv ˈtʃɑːdʒ/ | Delivery is free of charge. | La livraison est gratuite.
+free | gratuit | adj | A1 | /friː/ | Entry is free for children. | L'entrée est gratuite pour les enfants.
+value for money | bon rapport qualité-prix | n | B2 | /ˌvæljuː fə ˈmʌni/ | This hotel is good value for money. | Cet hôtel offre un bon rapport qualité-prix.
+rip-off | arnaque, vol | n | B2 | /ˈrɪp ɒf/ | Ten euros for a coffee? What a rip-off! | Dix euros pour un café ? C'est du vol !
+spend money | dépenser de l'argent | expr | A2 | /ˌspend ˈmʌni/ | Don't spend money on things you don't need. | Ne dépense pas d'argent pour des choses inutiles.
+saving | économie (somme épargnée) | n | B1 | /ˈseɪvɪŋ/ | That's a saving of twenty euros. | Ça fait une économie de vingt euros.
+household budget | budget du ménage | n | B2 | /ˌhaʊshəʊld ˈbʌdʒɪt/ | Food is a big part of the household budget. | L'alimentation pèse lourd dans le budget du ménage.
+cost a fortune | coûter une fortune | expr | B2 | /ˌkɒst ə ˈfɔːtʃuːn/ | That car must cost a fortune. | Cette voiture doit coûter une fortune.
+fortune | fortune | n | B2 | /ˈfɔːtʃuːn/ | He made a fortune in trade. | Il a fait fortune dans le commerce.
+millionaire | millionnaire | n | B1 | /ˌmɪljəˈneər/ | He became a millionaire at thirty. | Il est devenu millionnaire à trente ans.
+broke | fauché | adj | B1 | /brəʊk/ | I'm broke until payday. | Je suis fauché jusqu'au jour de paie.
+payday | jour de paie | n | B2 | /ˈpeɪdeɪ/ | Payday is on the last Friday of the month. | Le jour de paie est le dernier vendredi du mois.
+consumer rights | droits du consommateur | n | C1 | /kənˌsjuːmə ˈraɪts/ | Know your consumer rights. | Connais tes droits de consommateur.
+complaint | réclamation, plainte | n | B1 | /kəmˈpleɪnt/ | I made a complaint about the service. | J'ai déposé une réclamation sur le service.
+complain | se plaindre | v | B1 | /kəmˈpleɪn/ | Customers complain about the prices. | Les clients se plaignent des prix.
+advertising | publicité | n | B1 | /ˈædvətaɪzɪŋ/ | Advertising pushes us to buy more. | La publicité nous pousse à acheter plus.
+consume | consommer | v | B2 | /kənˈsjuːm/ | We consume too much energy. | Nous consommons trop d'énergie.
+mass consumption | consommation de masse | n | C1 | /ˌmæs kənˈsʌmpʃn/ | Mass consumption harms the planet. | La consommation de masse nuit à la planète.
+locally sourced | d'origine locale | adj | C1 | /ˌləʊkəli ˈsɔːst/ | The restaurant uses locally sourced food. | Le restaurant utilise des produits locaux.
+organic | biologique | adj | B1 | /ɔːˈɡænɪk/ | We buy organic vegetables. | Nous achetons des légumes bio.
+best-before date | date de consommation | n | B2 | /ˌbest bɪˈfɔː deɪt/ | Check the best-before date. | Vérifie la date de consommation.
+expire | expirer, se périmer | v | B2 | /ɪkˈspaɪər/ | The milk will expire tomorrow. | Le lait sera périmé demain.
+out of date | périmé | adj | B1 | /ˌaʊt əv ˈdeɪt/ | This yoghurt is out of date. | Ce yaourt est périmé.
+price rise | hausse des prix | n | B1 | /ˈpraɪs raɪz/ | Everyone is talking about the price rise. | Tout le monde parle de la hausse des prix.
+price war | guerre des prix | n | C1 | /ˈpraɪs wɔːr/ | The supermarkets are in a price war. | Les supermarchés se livrent une guerre des prix.
+second-hand shop | boutique d'occasion | n | B1 | /ˌsekənd hænd ˈʃɒp/ | I found this coat in a second-hand shop. | J'ai trouvé ce manteau dans une boutique d'occasion.
+charity shop | boutique solidaire | n | B1 | /ˈtʃærəti ʃɒp/ | We give old clothes to the charity shop. | Nous donnons nos vieux vêtements à la boutique solidaire.
+swap | échanger | v | B1 | /swɒp/ | Let's swap books when we finish. | Échangeons nos livres quand nous aurons fini.
+rent a car | louer une voiture | expr | A2 | /ˌrent ə ˈkɑːr/ | We will rent a car at the airport. | Nous allons louer une voiture à l'aéroport.
+membership fee | cotisation | n | B2 | /ˈmembəʃɪp fiː/ | The membership fee is twenty euros a year. | La cotisation est de vingt euros par an.
+fee | frais, honoraires | n | B1 | /fiː/ | There is a small fee for the service. | Il y a de petits frais pour le service.
+cost price | prix coûtant | n | C1 | /ˈkɒst praɪs/ | He sold it at cost price. | Il l'a vendu à prix coûtant.
+shopping habits | habitudes d'achat | n | B2 | /ˈʃɒpɪŋ ˌhæbɪts/ | Our shopping habits are changing. | Nos habitudes d'achat évoluent.
+impulse buying | achat compulsif | n | C1 | /ˈɪmpʌls ˌbaɪɪŋ/ | Impulse buying wastes money. | Les achats compulsifs gaspillent de l'argent.
+must-have | indispensable | n | B2 | /ˈmʌst hæv/ | This phone is the latest must-have. | Ce téléphone est le dernier indispensable.
+customer loyalty | fidélité des clients | n | C1 | /ˌkʌstəmə ˈlɔɪəlti/ | Good service builds customer loyalty. | Un bon service fidélise les clients.
+counterfeit | contrefait | adj | C1 | /ˈkaʊntəfɪt/ | Don't buy counterfeit goods. | N'achète pas de produits contrefaits.
+planned obsolescence | obsolescence programmée | n | C2 | /ˌplænd ˌɒbsəˈlesns/ | Planned obsolescence forces us to buy again. | L'obsolescence programmée nous pousse à racheter.
+repair café | café réparation | n | C1 | /rɪˈpeə ˌkæfeɪ/ | I fixed my toaster at a repair café. | J'ai réparé mon grille-pain dans un café réparation.
 `,
 );

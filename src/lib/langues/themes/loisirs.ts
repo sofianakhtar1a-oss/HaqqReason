@@ -102,5 +102,57 @@ pilates | pilates | n | B2 | /pɪˈlɑːtiːz/ | Pilates strengthens the core mu
 to work out | faire de l'exercice | expr | B1 | /wɜːrk aʊt/ | I work out at home before breakfast. | Je fais de l'exercice à la maison avant le petit-déjeuner.
 knitting | tricot | n | A2 | /ˈnɪtɪŋ/ | Knitting helps me relax. | Le tricot m'aide à me détendre.
 kayaking | kayak | n | B1 | /ˈkaɪækɪŋ/ | Kayaking on the lake is fun. | Le kayak sur le lac est amusant.
+club | club | n | A2 | /klʌb/ | She joined a chess club. | Elle s'est inscrite à un club d'échecs.
+member | membre | n | A2 | /ˈmembər/ | He is a member of the sports club. | Il est membre du club de sport.
+join | rejoindre, s'inscrire à | v | A2 | /dʒɔɪn/ | You can join the club for free. | Tu peux t'inscrire au club gratuitement.
+amusement park | parc d'attractions | n | A2 | /əˈmjuːzmənt pɑːk/ | We spent the day at an amusement park. | Nous avons passé la journée dans un parc d'attractions.
+roller coaster | montagnes russes | n | B1 | /ˈrəʊlə ˌkəʊstər/ | The roller coaster was terrifying. | Les montagnes russes étaient terrifiantes.
+funfair | fête foraine | n | B1 | /ˈfʌnfeər/ | The funfair comes to town every summer. | La fête foraine vient en ville chaque été.
+water park | parc aquatique | n | A2 | /ˈwɔːtə pɑːk/ | The kids loved the water park. | Les enfants ont adoré le parc aquatique.
+bowling alley | bowling (lieu) | n | B1 | /ˈbəʊlɪŋ ˌæli/ | We met at the bowling alley. | Nous nous sommes retrouvés au bowling.
+escape room | escape game | n | B1 | /ɪˈskeɪp ruːm/ | We solved the escape room in fifty minutes. | Nous avons résolu l'escape game en cinquante minutes.
+gardening | jardinage | n | A2 | /ˈɡɑːdnɪŋ/ | Gardening relaxes my father. | Le jardinage détend mon père.
+DIY | bricolage | n | B1 | /ˌdiː aɪ ˈwaɪ/ | He spends his weekends doing DIY. | Il passe ses week-ends à bricoler.
+cooking class | cours de cuisine | n | A2 | /ˈkʊkɪŋ klɑːs/ | We took a cooking class in Marrakech. | Nous avons suivi un cours de cuisine à Marrakech.
+photography | photographie | n | A2 | /fəˈtɒɡrəfi/ | Photography is her passion. | La photographie est sa passion.
+take photos | prendre des photos | expr | A1 | /ˌteɪk ˈfəʊtəʊz/ | I love to take photos of nature. | J'adore prendre des photos de la nature.
+calligraphy | calligraphie | n | B2 | /kəˈlɪɡrəfi/ | He practises Arabic calligraphy. | Il pratique la calligraphie arabe.
+scrapbooking | scrapbooking | n | B2 | /ˈskræpbʊkɪŋ/ | Scrapbooking is a creative hobby. | Le scrapbooking est un loisir créatif.
+model making | maquettisme | n | C1 | /ˈmɒdl ˌmeɪkɪŋ/ | Model making needs patience. | Le maquettisme demande de la patience.
+birdwatching | observation des oiseaux | n | B2 | /ˈbɜːdwɒtʃɪŋ/ | Birdwatching is popular in spring. | L'observation des oiseaux est populaire au printemps.
+stargazing | observation des étoiles | n | B2 | /ˈstɑːɡeɪzɪŋ/ | The desert is perfect for stargazing. | Le désert est parfait pour observer les étoiles.
+binge-watch | regarder en rafale | v | B2 | /ˈbɪndʒ wɒtʃ/ | We binge-watch series at the weekend. | Nous regardons des séries en rafale le week-end.
+cards | cartes (jeu) | n | A1 | /kɑːdz/ | Let's play cards. | Jouons aux cartes.
+dominoes | dominos | n | B1 | /ˈdɒmɪnəʊz/ | Grandpa plays dominoes at the café. | Papi joue aux dominos au café.
+riddle | devinette | n | B1 | /ˈrɪdl/ | Can you solve this riddle? | Sais-tu résoudre cette devinette ?
+quiz night | soirée quiz | n | B1 | /ˈkwɪz naɪt/ | We won the quiz night! | Nous avons gagné la soirée quiz !
+day trip | excursion d'une journée | n | A2 | /ˈdeɪ trɪp/ | We took a day trip to the coast. | Nous avons fait une excursion d'une journée sur la côte.
+walk | promenade | n | A1 | /wɔːk/ | Let's go for a walk after dinner. | Allons faire une promenade après le dîner.
+hiking boots | chaussures de randonnée | n | B1 | /ˈhaɪkɪŋ buːts/ | Wear good hiking boots. | Porte de bonnes chaussures de randonnée.
+horse ride | promenade à cheval | n | A2 | /ˈhɔːs raɪd/ | We went on a horse ride along the beach. | Nous avons fait une balade à cheval sur la plage.
+bike ride | balade à vélo | n | A2 | /ˈbaɪk raɪd/ | Let's go for a bike ride. | Allons faire un tour à vélo.
+sightseeing tour | visite guidée | n | B1 | /ˈsaɪtsiːɪŋ tʊər/ | We booked a sightseeing tour. | Nous avons réservé une visite guidée.
+amateur dramatics | théâtre amateur | n | C1 | /ˌæmətə drəˈmætɪks/ | She does amateur dramatics on Thursdays. | Elle fait du théâtre amateur le jeudi.
+volunteering | bénévolat | n | B2 | /ˌvɒlənˈtɪərɪŋ/ | Volunteering gives meaning to my weekends. | Le bénévolat donne du sens à mes week-ends.
+socialise | voir du monde, sortir | v | B2 | /ˈsəʊʃəlaɪz/ | It's important to socialise. | C'est important de voir du monde.
+get together | se réunir | v | B1 | /ˌɡet təˈɡeðər/ | Let's get together on Saturday. | Retrouvons-nous samedi.
+have fun | s'amuser | expr | A1 | /ˌhæv ˈfʌn/ | Have fun at the party! | Amuse-toi bien à la fête !
+enjoy yourself | bien s'amuser | expr | A2 | /ɪnˌdʒɔɪ jɔːˈself/ | Go and enjoy yourself! | Va bien t'amuser !
+kill time | tuer le temps | expr | B1 | /ˌkɪl ˈtaɪm/ | We played cards to kill time. | Nous avons joué aux cartes pour tuer le temps.
+take up a hobby | se mettre à un passe-temps | expr | B1 | /ˌteɪk ʌp ə ˈhɒbi/ | You should take up a hobby. | Tu devrais te mettre à un passe-temps.
+keen on | passionné par | expr | B1 | /ˈkiːn ɒn/ | She is very keen on painting. | Elle est passionnée de peinture.
+entertaining | divertissant | adj | B1 | /ˌentəˈteɪnɪŋ/ | The show was very entertaining. | Le spectacle était très divertissant.
+fun | amusant | adj | A1 | /fʌn/ | The trip was really fun. | Le voyage était vraiment amusant.
+exciting | passionnant | adj | A2 | /ɪkˈsaɪtɪŋ/ | The match was exciting. | Le match était passionnant.
+listen to music | écouter de la musique | expr | A1 | /ˌlɪsn tə ˈmjuːzɪk/ | I listen to music on the train. | J'écoute de la musique dans le train.
+play an instrument | jouer d'un instrument | expr | A2 | /ˌpleɪ ən ˈɪnstrəmənt/ | Do you play an instrument? | Joues-tu d'un instrument ?
+go fishing | aller à la pêche | expr | A2 | /ˌɡəʊ ˈfɪʃɪŋ/ | We go fishing at the lake. | Nous allons à la pêche au lac.
+go swimming | aller nager | expr | A1 | /ˌɡəʊ ˈswɪmɪŋ/ | Let's go swimming on Saturday. | Allons nager samedi.
+go cycling | faire du vélo | expr | A1 | /ˌɡəʊ ˈsaɪklɪŋ/ | We go cycling by the river. | Nous faisons du vélo au bord de la rivière.
+fishing rod | canne à pêche | n | B1 | /ˈfɪʃɪŋ rɒd/ | He bought a new fishing rod. | Il a acheté une nouvelle canne à pêche.
+kite | cerf-volant | n | A2 | /kaɪt/ | The children flew a kite on the beach. | Les enfants ont fait voler un cerf-volant sur la plage.
+sandpit | bac à sable | n | B1 | /ˈsændpɪt/ | The toddlers play in the sandpit. | Les petits jouent dans le bac à sable.
+paddling pool | pataugeoire | n | B1 | /ˈpædlɪŋ puːl/ | We filled the paddling pool in the garden. | Nous avons rempli la pataugeoire dans le jardin.
+trampoline | trampoline | n | B1 | /ˈtræmpəliːn/ | The kids jump on the trampoline. | Les enfants sautent sur le trampoline.
 `,
 );

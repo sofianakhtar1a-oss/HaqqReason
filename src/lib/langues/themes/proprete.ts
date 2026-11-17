@@ -92,5 +92,36 @@ sanitary | sanitaire | adj | B2 | /ˈsænɪtəri/ | Keep the kitchen sanitary. |
 cleanser | nettoyant | n | B2 | /ˈklenzər/ | This cleanser removes grease. | Ce nettoyant enlève la graisse.
 to wring | essorer | v | C1 | /rɪŋ/ | Wring out the cloth before using it. | Essore le chiffon avant de l'utiliser.
 to hang out the washing | étendre le linge | expr | B1 | /hæŋ aʊt ðə ˈwɒʃɪŋ/ | I hang out the washing every Monday. | J'étends le linge chaque lundi.
+washing-up liquid | liquide vaisselle | n | B1 | /ˌwɒʃɪŋ ˈʌp ˌlɪkwɪd/ | We've run out of washing-up liquid. | Nous n'avons plus de liquide vaisselle.
+tea towel | torchon | n | B1 | /ˈtiː ˌtaʊəl/ | Dry the glasses with a tea towel. | Essuie les verres avec un torchon.
+paper towel | essuie-tout | n | B1 | /ˈpeɪpə ˌtaʊəl/ | Wipe it up with a paper towel. | Essuie avec de l'essuie-tout.
+rubber gloves | gants en caoutchouc | n | B1 | /ˌrʌbə ˈɡlʌvz/ | Wear rubber gloves when you clean. | Porte des gants en caoutchouc pour nettoyer.
+duster | chiffon à poussière | n | B1 | /ˈdʌstər/ | Use a duster on the shelves. | Passe un chiffon sur les étagères.
+air freshener | désodorisant | n | B2 | /ˈeə ˌfreʃənər/ | The bathroom smells of air freshener. | La salle de bains sent le désodorisant.
+washing powder | lessive en poudre | n | B1 | /ˈwɒʃɪŋ ˌpaʊdər/ | Add a scoop of washing powder. | Ajoute une dose de lessive.
+fabric softener | adoucissant | n | B2 | /ˈfæbrɪk ˌsɒfnər/ | Fabric softener makes towels soft. | L'adoucissant rend les serviettes douces.
+clothes line | corde à linge | n | B1 | /ˈkləʊðz laɪn/ | Hang the sheets on the clothes line. | Étends les draps sur la corde à linge.
+clothes peg | pince à linge | n | B1 | /ˈkləʊðz peɡ/ | I need more clothes pegs. | Il me faut plus de pinces à linge.
+tumble dryer | sèche-linge | n | B1 | /ˌtʌmbl ˈdraɪər/ | Put the towels in the tumble dryer. | Mets les serviettes dans le sèche-linge.
+ironing board | planche à repasser | n | B1 | /ˈaɪənɪŋ bɔːd/ | Set up the ironing board. | Installe la planche à repasser.
+dirty laundry | linge sale | n | A2 | /ˌdɜːti ˈlɔːndri/ | Put your dirty laundry in the basket. | Mets ton linge sale dans le panier.
+sparkling clean | étincelant de propreté | adj | B2 | /ˌspɑːklɪŋ ˈkliːn/ | The kitchen is sparkling clean. | La cuisine est d'une propreté étincelante.
+dusty | poussiéreux | adj | B1 | /ˈdʌsti/ | The attic is very dusty. | Le grenier est très poussiéreux.
+stained | taché | adj | B1 | /steɪnd/ | His shirt is stained with coffee. | Sa chemise est tachée de café.
+smelly | malodorant | adj | B1 | /ˈsmeli/ | Take out those smelly socks! | Sors ces chaussettes qui puent !
+hand sanitiser | gel hydroalcoolique | n | B1 | /ˈhænd ˌsænɪtaɪzər/ | Use hand sanitiser before eating. | Utilise du gel hydroalcoolique avant de manger.
+wet wipe | lingette | n | B1 | /ˌwet ˈwaɪp/ | Clean the baby's hands with a wet wipe. | Nettoie les mains du bébé avec une lingette.
+toothpaste | dentifrice | n | A2 | /ˈtuːθpeɪst/ | We need more toothpaste. | Il nous faut du dentifrice.
+toothbrush | brosse à dents | n | A2 | /ˈtuːθbrʌʃ/ | Change your toothbrush every three months. | Change de brosse à dents tous les trois mois.
+shampoo | shampooing | n | A2 | /ʃæmˈpuː/ | This shampoo smells of apples. | Ce shampooing sent la pomme.
+towel | serviette | n | A1 | /ˈtaʊəl/ | Take a clean towel from the cupboard. | Prends une serviette propre dans le placard.
+ablution | ablutions | n | C1 | /əˈbluːʃn/ | He made his ablution before prayer. | Il a fait ses ablutions avant la prière.
+purity | pureté | n | C1 | /ˈpjʊərəti/ | Purity is half of faith, says the hadith. | La pureté est la moitié de la foi, dit le hadith.
+spring clean | grand ménage de printemps | n | B2 | /ˌsprɪŋ ˈkliːn/ | We do a spring clean every April. | Nous faisons le grand ménage chaque avril.
+neat | soigné, net | adj | B1 | /niːt/ | Keep your room neat. | Garde ta chambre bien rangée.
+clean the windows | laver les vitres | expr | A2 | /ˌkliːn ðə ˈwɪndəʊz/ | We clean the windows in spring. | Nous lavons les vitres au printemps.
+take out the bins | sortir les poubelles | expr | A2 | /ˌteɪk aʊt ðə ˈbɪnz/ | Can you take out the bins tonight? | Tu peux sortir les poubelles ce soir ?
+make a mess | mettre le désordre | expr | A2 | /ˌmeɪk ə ˈmes/ | The kids always make a mess. | Les enfants mettent toujours le désordre.
+mess | désordre | n | A2 | /mes/ | What a mess! | Quel désordre !
 `,
 );

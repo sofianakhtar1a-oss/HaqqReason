@@ -127,5 +127,30 @@ chubby | potelé | adj | B2 | /ˈtʃʌbi/ | The baby is round and chubby. | Le b
 eye contact | contact visuel | n | B1 | /aɪ ˈkɒntækt/ | Make eye contact with your audience. | Établis un contact visuel avec ton public.
 posture | posture | n | B2 | /ˈpɒstʃər/ | Good posture makes you look confident. | Une bonne posture donne une impression d'assurance.
 to blush | rougir | v | B2 | /blʌʃ/ | She blushed when they praised her. | Elle a rougi quand ils l'ont félicitée.
+introduce myself | me présenter | expr | A1 | /ˌɪntrəˈdjuːs maɪˈself/ | Let me introduce myself: I'm Sofian. | Permettez-moi de me présenter : je m'appelle Sofian.
+pleased to meet you | ravi de vous rencontrer | expr | A1 | /ˌpliːzd tə ˈmiːt juː/ | Pleased to meet you, Mr Smith. | Ravi de vous rencontrer, monsieur Smith.
+how are you | comment vas-tu | expr | A1 | /ˌhaʊ ə ˈjuː/ | Hi Karim, how are you? | Salut Karim, comment vas-tu ?
+goodbye | au revoir | expr | A1 | /ɡʊdˈbaɪ/ | Goodbye, see you tomorrow. | Au revoir, à demain.
+age group | tranche d'âge | n | B2 | /ˈeɪdʒ ɡruːp/ | What age group are you in? | Dans quelle tranche d'âge es-tu ?
+address | adresse | n | A1 | /əˈdres/ | What's your address? | Quelle est ton adresse ?
+phone number | numéro de téléphone | n | A1 | /ˈfəʊn ˌnʌmbər/ | Can I have your phone number? | Je peux avoir ton numéro ?
+email address | adresse e-mail | n | A1 | /ˈiːmeɪl əˌdres/ | Write your email address here. | Écris ton adresse e-mail ici.
+date of birth | date de naissance | n | A2 | /ˌdeɪt əv ˈbɜːθ/ | Write your date of birth. | Écris ta date de naissance.
+place of birth | lieu de naissance | n | A2 | /ˌpleɪs əv ˈbɜːθ/ | My place of birth is Oran. | Mon lieu de naissance est Oran.
+marital status | situation de famille | n | B2 | /ˌmærɪtl ˈsteɪtəs/ | Please state your marital status. | Veuillez indiquer votre situation de famille.
+strengths and weaknesses | qualités et défauts | n | B1 | /ˌstreŋθs ənd ˈwiːknəsɪz/ | Talk about your strengths and weaknesses. | Parle de tes qualités et de tes défauts.
+goal in life | but dans la vie | n | B1 | /ˌɡəʊl ɪn ˈlaɪf/ | What is your goal in life? | Quel est ton but dans la vie ?
+dream | rêve | n | A2 | /driːm/ | My dream is to write a book. | Mon rêve est d'écrire un livre.
+ambition | ambition | n | B1 | /æmˈbɪʃn/ | Her ambition is to become a doctor. | Son ambition est de devenir médecin.
+talent | talent | n | B1 | /ˈtælənt/ | He has a talent for languages. | Il a un don pour les langues.
+gifted | doué | adj | B2 | /ˈɡɪftɪd/ | She is a gifted artist. | C'est une artiste douée.
+experienced | expérimenté | adj | B1 | /ɪkˈspɪəriənst/ | He is an experienced teacher. | C'est un enseignant expérimenté.
+fluent in | qui parle couramment | expr | B1 | /ˈfluːənt ɪn/ | She is fluent in three languages. | Elle parle couramment trois langues.
+mother tongue | langue maternelle | n | B1 | /ˌmʌðə ˈtʌŋ/ | My mother tongue is Arabic. | Ma langue maternelle est l'arabe.
+come to the point | en venir au fait | expr | B2 | /ˌkʌm tə ðə ˈpɔɪnt/ | Please come to the point. | Viens-en au fait, s'il te plaît.
+speaker | orateur, intervenant | n | B1 | /ˈspiːkər/ | The speaker thanked the audience. | L'intervenant a remercié le public.
+public speaking | prise de parole en public | n | B2 | /ˌpʌblɪk ˈspiːkɪŋ/ | Public speaking makes me nervous. | Parler en public me rend nerveux.
+stage fright | trac | n | B2 | /ˈsteɪdʒ fraɪt/ | She has stage fright before every talk. | Elle a le trac avant chaque exposé.
+take questions | répondre aux questions | expr | B2 | /ˌteɪk ˈkwestʃənz/ | I'll take questions at the end. | Je répondrai aux questions à la fin.
 `,
 );

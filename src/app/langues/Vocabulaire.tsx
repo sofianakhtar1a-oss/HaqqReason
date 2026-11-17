@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, BookmarkCheck, BookmarkPlus, BookOpen, Briefcase, Building2, Car, Clapperboard, Coffee, CloudSun, Cpu, Dumbbell, Factory, Globe, GraduationCap, Hammer, Heart, HeartPulse, House, Landmark, Laptop, Layers, Leaf, Lightbulb, type LucideIcon, MapPin, Moon, Music, Newspaper, Plane, Play, Plug, ShieldCheck, ShoppingBag, Shuffle, Smile, Sparkles, Sprout, Star, Sun, Tent, Trees, Trophy, UserRound, Users, UtensilsCrossed, Vote, Volume2, Wallet, Zap } from "lucide-react";
+import { ArrowLeft, BookmarkCheck, BookmarkPlus, BookOpen, Brain, Briefcase, Building2, Car, Clapperboard, Clock, CloudSun, Coffee, Cpu, Dumbbell, Factory, Globe, GraduationCap, Hammer, Heart, HeartPulse, House, Landmark, Laptop, Layers, Leaf, Lightbulb, Link2, type LucideIcon, MapPin, Moon, Music, Newspaper, PawPrint, PersonStanding, Plane, Play, Plug, Puzzle, Quote, Scale, ShieldCheck, Shirt, ShoppingBag, Shuffle, Smile, Sparkles, Sprout, Star, Sun, Tent, Trees, TrendingUp, Trophy, UserRound, Users, UtensilsCrossed, Volume2, Vote, Wallet, Zap } from "lucide-react";
 import { useMemo, useState } from "react";
 import { elementDEntree, nouveauMot } from "@/lib/langues/dictionnaire";
 import { estDue, type Maitrise, maitrise } from "@/lib/langues/srs";
@@ -15,6 +15,7 @@ export const ICONES_THEMES: Record<string, LucideIcon> = {
   Users, Plane, Briefcase, Sun, UtensilsCrossed, HeartPulse, House, Smile, CloudSun, GraduationCap, Building2, Trees,
   BookOpen, Moon, Star, Globe, Music, Car, ShoppingBag, Dumbbell, Landmark, Laptop, Leaf, Heart,
   Clapperboard, Coffee, Cpu, Factory, Hammer, Lightbulb, MapPin, Newspaper, Plug, ShieldCheck, Sparkles, Sprout, Tent, Trophy, UserRound, Vote, Wallet, Zap,
+  PersonStanding, Shirt, PawPrint, Scale, TrendingUp, Brain, Clock, Puzzle, Quote, Link2,
 };
 
 /** Les thèmes publiés par le créateur (ou ceux d'origine). */

@@ -118,5 +118,66 @@ plot | intrigue | n | B1 | /plɒt/ | The plot of the film is confusing. | L'intr
 character | personnage | n | A2 | /ˈkærəktər/ | Who is your favourite character? | Quel est ton personnage préféré ?
 audition | audition | n | B2 | /ɔːˈdɪʃn/ | She had an audition for the musical. | Elle a passé une audition pour la comédie musicale.
 choir | chorale | n | B1 | /ˈkwaɪər/ | The choir sang at the village church. | La chorale a chanté à l'église du village.
+art | art | n | A1 | /ɑːt/ | She loves modern art. | Elle adore l'art moderne.
+artist | artiste | n | A2 | /ˈɑːtɪst/ | The artist signed the painting. | L'artiste a signé le tableau.
+drawing | dessin | n | A1 | /ˈdrɔːɪŋ/ | The child showed me his drawing. | L'enfant m'a montré son dessin.
+illustration | illustration | n | B1 | /ˌɪləˈstreɪʃn/ | The book has beautiful illustrations. | Le livre a de belles illustrations.
+abstract art | art abstrait | n | B2 | /ˌæbstrækt ˈɑːt/ | Islamic art is often abstract art. | L'art islamique est souvent un art abstrait.
+arabesque | arabesque | n | C1 | /ˌærəˈbesk/ | The ceiling is covered with arabesques. | Le plafond est couvert d'arabesques.
+geometric pattern | motif géométrique | n | B2 | /ˌdʒiːəˌmetrɪk ˈpætn/ | The tiles have a geometric pattern. | Les carreaux ont un motif géométrique.
+architecture | architecture | n | B1 | /ˈɑːkɪtektʃər/ | Andalusian architecture is stunning. | L'architecture andalouse est magnifique.
+dome | coupole, dôme | n | B2 | /dəʊm/ | The mosque has a golden dome. | La mosquée a une coupole dorée.
+minaret | minaret | n | B2 | /ˌmɪnəˈret/ | The call to prayer comes from the minaret. | L'appel à la prière vient du minaret.
+arch | arc, arche | n | B2 | /ɑːtʃ/ | We walked under a stone arch. | Nous sommes passés sous une arche de pierre.
+column | colonne | n | B2 | /ˈkɒləm/ | Marble columns hold up the roof. | Des colonnes de marbre soutiennent le toit.
+marble | marbre | n | B2 | /ˈmɑːbl/ | The floor is made of white marble. | Le sol est en marbre blanc.
+clay | argile | n | B2 | /kleɪ/ | The children made pots out of clay. | Les enfants ont fait des pots en argile.
+music | musique | n | A1 | /ˈmjuːzɪk/ | What kind of music do you like? | Quel genre de musique aimes-tu ?
+song | chanson | n | A1 | /sɒŋ/ | This song is very popular. | Cette chanson est très populaire.
+sing | chanter | v | A1 | /sɪŋ/ | The children sing in the choir. | Les enfants chantent dans la chorale.
+band | groupe (musique) | n | A2 | /bænd/ | The band played until midnight. | Le groupe a joué jusqu'à minuit.
+album | album | n | A2 | /ˈælbəm/ | Their new album comes out tomorrow. | Leur nouvel album sort demain.
+recording | enregistrement | n | B1 | /rɪˈkɔːdɪŋ/ | This is an old recording of the song. | C'est un vieil enregistrement de la chanson.
+voice | voix | n | A2 | /vɔɪs/ | She has a lovely voice. | Elle a une jolie voix.
+nasheed | nasheed (chant) | n | C1 | /nəˈʃiːd/ | The children sang a nasheed. | Les enfants ont chanté un nasheed.
+oud | oud | n | C1 | /uːd/ | He plays the oud beautifully. | Il joue magnifiquement de l'oud.
+tune | air, mélodie | n | B1 | /tjuːn/ | I can't get this tune out of my head. | Je n'arrive pas à me sortir cet air de la tête.
+note | note (de musique) | n | B1 | /nəʊt/ | She sang the high note perfectly. | Elle a chanté la note aiguë à la perfection.
+movie | film | n | A1 | /ˈmuːvi/ | The movie was too long. | Le film était trop long.
+actress | actrice | n | A2 | /ˈæktrəs/ | The actress won an award. | L'actrice a remporté un prix.
+role | rôle | n | B1 | /rəʊl/ | He plays the main role. | Il joue le rôle principal.
+fame | célébrité, renommée | n | B2 | /feɪm/ | Fame changed him. | La célébrité l'a changé.
+famous | célèbre | adj | A2 | /ˈfeɪməs/ | He is a famous writer. | C'est un écrivain célèbre.
+award | prix, récompense | n | B1 | /əˈwɔːd/ | The film won an award. | Le film a remporté un prix.
+storyteller | conteur | n | B2 | /ˈstɔːriˌtelər/ | The storyteller captivated the children. | Le conteur a captivé les enfants.
+tale | conte | n | B1 | /teɪl/ | Grandma told us an old tale. | Mamie nous a raconté un vieux conte.
+fairy tale | conte de fées | n | A2 | /ˈfeəri teɪl/ | Children love fairy tales. | Les enfants adorent les contes de fées.
+legend | légende | n | B1 | /ˈledʒənd/ | The legend says a treasure is hidden here. | La légende dit qu'un trésor est caché ici.
+fable | fable | n | B2 | /ˈfeɪbl/ | Every fable has a moral. | Chaque fable a une morale.
+novelist | romancier | n | B2 | /ˈnɒvəlɪst/ | The novelist wrote ten books. | Le romancier a écrit dix livres.
+bestseller | best-seller | n | B1 | /ˌbestˈselər/ | Her first book was a bestseller. | Son premier livre a été un best-seller.
+publisher | éditeur (maison) | n | B2 | /ˈpʌblɪʃər/ | The publisher accepted her novel. | L'éditeur a accepté son roman.
+page | page | n | A1 | /peɪdʒ/ | Turn to page ten. | Va à la page dix.
+title | titre | n | A2 | /ˈtaɪtl/ | What's the title of the book? | Quel est le titre du livre ?
+heroine | héroïne | n | B2 | /ˈherəʊɪn/ | The heroine saves the village. | L'héroïne sauve le village.
+villain | méchant (personnage) | n | B2 | /ˈvɪlən/ | The villain is caught at the end. | Le méchant est arrêté à la fin.
+ending | fin, dénouement | n | B1 | /ˈendɪŋ/ | I didn't like the ending. | Je n'ai pas aimé la fin.
+happy ending | fin heureuse | n | B1 | /ˌhæpi ˈendɪŋ/ | Children's stories usually have a happy ending. | Les histoires pour enfants finissent généralement bien.
+setting | cadre (d'une histoire) | n | B2 | /ˈsetɪŋ/ | The setting of the novel is Cairo. | Le roman se déroule au Caire.
+art gallery | galerie d'art | n | A2 | /ˈɑːt ˌɡæləri/ | We visited an art gallery. | Nous avons visité une galerie d'art.
+work of art | œuvre d'art | n | B1 | /ˌwɜːk əv ˈɑːt/ | This mosque is a work of art. | Cette mosquée est une œuvre d'art.
+artwork | œuvre | n | B2 | /ˈɑːtwɜːk/ | The artwork was sold for millions. | L'œuvre a été vendue des millions.
+creativity | créativité | n | B2 | /ˌkriːeɪˈtɪvəti/ | The project shows great creativity. | Le projet témoigne d'une grande créativité.
+inspiration | inspiration | n | B2 | /ˌɪnspəˈreɪʃn/ | Nature is her inspiration. | La nature est son inspiration.
+inspire | inspirer | v | B2 | /ɪnˈspaɪər/ | Her story will inspire many people. | Son histoire va inspirer beaucoup de gens.
+talented | talentueux | adj | B1 | /ˈtæləntɪd/ | He is a talented musician. | C'est un musicien talentueux.
+style | style | n | B1 | /staɪl/ | I love her writing style. | J'adore son style d'écriture.
+genre | genre | n | B2 | /ˈʒɒnrə/ | What genre of music do you like? | Quel genre de musique aimes-tu ?
+rhyme | rime | n | B1 | /raɪm/ | The poem has a simple rhyme. | Le poème a une rime simple.
+recite | réciter | v | B2 | /rɪˈsaɪt/ | She can recite long poems. | Elle sait réciter de longs poèmes.
+recitation | récitation | n | B2 | /ˌresɪˈteɪʃn/ | His Qur'an recitation is beautiful. | Sa récitation du Coran est magnifique.
+calligrapher | calligraphe | n | C1 | /kəˈlɪɡrəfər/ | The calligrapher wrote the verse in gold. | Le calligraphe a écrit le verset en or.
+handicraft | artisanat | n | B2 | /ˈhændikrɑːft/ | The market sells local handicraft. | Le marché vend de l'artisanat local.
+weaving | tissage | n | B2 | /ˈwiːvɪŋ/ | Carpet weaving is an old art. | Le tissage de tapis est un art ancien.
 `,
 );

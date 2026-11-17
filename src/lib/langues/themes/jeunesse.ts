@@ -80,5 +80,46 @@ to yawn | bâiller | v | A2 | /jɔːn/ | He yawned during the lesson. | Il a bâ
 pacifier | tétine | n | B2 | /ˈpæsɪfaɪər/ | The baby sucks a pacifier. | Le bébé suce une tétine.
 to burp | faire faire son rot | v | B2 | /bɜːrp/ | The baby burped after the bottle. | Le bébé a fait son rot après le biberon.
 to teethe | faire ses dents | v | C1 | /tiːð/ | The baby is teething and cries at night. | Le bébé fait ses dents et pleure la nuit.
+kid | enfant, gamin | n | A1 | /kɪd/ | The kids are playing in the garden. | Les enfants jouent dans le jardin.
+boy | garçon | n | A1 | /bɔɪ/ | The boy is ten years old. | Le garçon a dix ans.
+girl | fille | n | A1 | /ɡɜːl/ | The girl reads a lot. | La fille lit beaucoup.
+young | jeune | adj | A1 | /jʌŋ/ | She is too young to drive. | Elle est trop jeune pour conduire.
+youth | jeunesse | n | B1 | /juːθ/ | He spent his youth in Tunis. | Il a passé sa jeunesse à Tunis.
+teen | ado | n | B1 | /tiːn/ | The film is for teens. | Le film est pour les ados.
+student life | vie étudiante | n | B1 | /ˌstjuːdnt ˈlaɪf/ | Student life is full of new experiences. | La vie étudiante est pleine de nouvelles expériences.
+first job | premier emploi | n | B1 | /ˌfɜːst ˈdʒɒb/ | She got her first job at sixteen. | Elle a eu son premier emploi à seize ans.
+summer job | job d'été | n | B1 | /ˈsʌmə dʒɒb/ | I have a summer job at the pool. | J'ai un job d'été à la piscine.
+part-time job | petit boulot | n | B1 | /ˌpɑːt taɪm ˈdʒɒb/ | Many students have a part-time job. | Beaucoup d'étudiants ont un petit boulot.
+sleepover | soirée pyjama | n | B1 | /ˈsliːpəʊvər/ | My daughter is going to a sleepover. | Ma fille va à une soirée pyjama.
+hide and seek | cache-cache | n | A2 | /ˌhaɪd ən ˈsiːk/ | The children played hide and seek. | Les enfants ont joué à cache-cache.
+skipping rope | corde à sauter | n | B1 | /ˈskɪpɪŋ rəʊp/ | She jumps with a skipping rope. | Elle saute à la corde.
+swing | balançoire | n | A2 | /swɪŋ/ | The kids love the swing in the park. | Les enfants adorent la balançoire du parc.
+slide | toboggan | n | A2 | /slaɪd/ | He went down the slide. | Il est descendu par le toboggan.
+doll | poupée | n | A1 | /dɒl/ | She has a doll with long hair. | Elle a une poupée aux longs cheveux.
+teddy bear | ours en peluche | n | A1 | /ˈtedi beər/ | He sleeps with his teddy bear. | Il dort avec son ours en peluche.
+video game | jeu vidéo | n | A2 | /ˈvɪdiəʊ ɡeɪm/ | He plays video games too much. | Il joue trop aux jeux vidéo.
+games console | console de jeux | n | B1 | /ˈɡeɪmz ˌkɒnsəʊl/ | He got a games console for Eid. | Il a reçu une console de jeux pour l'Aïd.
+screen time | temps d'écran | n | B1 | /ˈskriːn taɪm/ | Limit your children's screen time. | Limitez le temps d'écran de vos enfants.
+peer pressure | pression des pairs | n | B2 | /ˈpɪə ˌpreʃər/ | Teenagers often give in to peer pressure. | Les adolescents cèdent souvent à la pression du groupe.
+identity crisis | crise d'identité | n | C1 | /aɪˈdentəti ˌkraɪsɪs/ | He went through an identity crisis at sixteen. | Il a traversé une crise d'identité à seize ans.
+acne | acné | n | B2 | /ˈækni/ | Many teenagers suffer from acne. | Beaucoup d'adolescents souffrent d'acné.
+growth spurt | poussée de croissance | n | C1 | /ˈɡrəʊθ spɜːt/ | He had a growth spurt this summer. | Il a eu une poussée de croissance cet été.
+come of age | atteindre la majorité | expr | C1 | /ˌkʌm əv ˈeɪdʒ/ | In France you come of age at eighteen. | En France, on devient majeur à dix-huit ans.
+adulthood | âge adulte | n | B2 | /ˈædʌlthʊd/ | The transition to adulthood is hard. | Le passage à l'âge adulte est difficile.
+adult | adulte | n | A2 | /ˈædʌlt/ | Children must be with an adult. | Les enfants doivent être accompagnés d'un adulte.
+minor | mineur | n | C1 | /ˈmaɪnər/ | Alcohol is not sold to minors. | L'alcool n'est pas vendu aux mineurs.
+underage | mineur | adj | C1 | /ˌʌndərˈeɪdʒ/ | Underage drivers were stopped. | Des conducteurs mineurs ont été arrêtés.
+student loan | prêt étudiant | n | B2 | /ˌstjuːdnt ˈləʊn/ | He is still paying his student loan. | Il rembourse encore son prêt étudiant.
+flatmate | colocataire | n | B1 | /ˈflætmeɪt/ | My flatmate is from Senegal. | Mon colocataire vient du Sénégal.
+leave the nest | quitter le nid | expr | C1 | /ˌliːv ðə ˈnest/ | It's hard to see children leave the nest. | C'est dur de voir les enfants quitter le nid.
+role-play | jeu de rôle | n | B2 | /ˈrəʊl pleɪ/ | We did a role-play in English class. | Nous avons fait un jeu de rôle en cours d'anglais.
+youth worker | animateur jeunesse | n | B2 | /ˈjuːθ ˌwɜːkər/ | The youth worker organised a trip. | L'animateur jeunesse a organisé une sortie.
+summer camp | colonie de vacances | n | A2 | /ˈsʌmə kæmp/ | The kids went to summer camp. | Les enfants sont partis en colonie de vacances.
+scout | scout | n | B1 | /skaʊt/ | He has been a scout for years. | Il est scout depuis des années.
+graduation | remise des diplômes | n | B1 | /ˌɡrædʒuˈeɪʃn/ | Her parents came to her graduation. | Ses parents sont venus à sa remise de diplôme.
+prom | bal de fin d'année | n | B2 | /prɒm/ | They didn't go to the prom. | Ils ne sont pas allés au bal de fin d'année.
+driving lesson | leçon de conduite | n | A2 | /ˈdraɪvɪŋ ˌlesn/ | I have a driving lesson on Monday. | J'ai une leçon de conduite lundi.
+generation Z | génération Z | n | B2 | /ˌdʒenəˈreɪʃn ˈzed/ | Generation Z grew up with phones. | La génération Z a grandi avec les téléphones.
+coming-of-age story | récit d'apprentissage | n | C1 | /ˌkʌmɪŋ əv ˈeɪdʒ ˌstɔːri/ | The film is a coming-of-age story. | Le film est un récit d'apprentissage.
 `,
 );

@@ -71,5 +71,51 @@ to melt | fondre | v | B1 | /melt/ | The ice melts faster every summer. | La gla
 wildlife | faune sauvage | n | B2 | /ˈwaɪldlaɪf/ | Wildlife is disappearing from the valley. | La faune sauvage disparaît de la vallée.
 to poison | empoisonner | v | B2 | /ˈpɔɪzn/ | The chemicals poisoned the fish in the river. | Les produits chimiques ont empoisonné les poissons de la rivière.
 untreated | non traité | adj | C1 | /ʌnˈtriːtɪd/ | Untreated sewage flows into the bay. | Les eaux usées non traitées se déversent dans la baie.
+plastic waste | déchets plastiques | n | B1 | /ˌplæstɪk ˈweɪst/ | Plastic waste ends up in the ocean. | Les déchets plastiques finissent dans l'océan.
+microplastics | microplastiques | n | C1 | /ˈmaɪkrəʊˌplæstɪks/ | Microplastics have been found in fish. | On a trouvé des microplastiques dans les poissons.
+single-use | à usage unique | adj | B2 | /ˌsɪŋɡl ˈjuːs/ | Single-use bags are banned here. | Les sacs à usage unique sont interdits ici.
+packaging waste | déchets d'emballage | n | B2 | /ˈpækɪdʒɪŋ weɪst/ | Supermarkets produce a lot of packaging waste. | Les supermarchés produisent beaucoup de déchets d'emballage.
+household waste | ordures ménagères | n | B2 | /ˌhaʊshəʊld ˈweɪst/ | Household waste is collected on Mondays. | Les ordures ménagères sont ramassées le lundi.
+waste collection | ramassage des ordures | n | B2 | /ˈweɪst kəˌlekʃn/ | Waste collection was delayed by the strike. | Le ramassage des ordures a été retardé par la grève.
+recycling bin | bac de recyclage | n | B1 | /riːˈsaɪklɪŋ bɪn/ | Put the bottles in the recycling bin. | Mets les bouteilles dans le bac de recyclage.
+bottle bank | conteneur à verre | n | B2 | /ˈbɒtl bæŋk/ | Take the jars to the bottle bank. | Apporte les bocaux au conteneur à verre.
+reuse | réutiliser | v | B1 | /ˌriːˈjuːz/ | Reuse your bags when you shop. | Réutilise tes sacs pour faire les courses.
+reduce | réduire | v | B1 | /rɪˈdjuːs/ | We must reduce our waste. | Nous devons réduire nos déchets.
+upcycle | surcycler | v | C1 | /ˈʌpsaɪkl/ | She likes to upcycle old furniture. | Elle aime surcycler les vieux meubles.
+zero waste | zéro déchet | n | B2 | /ˌzɪərəʊ ˈweɪst/ | They try to live zero waste. | Ils essaient de vivre zéro déchet.
+air quality | qualité de l'air | n | B2 | /ˈeə ˌkwɒləti/ | Air quality is poor in the city today. | La qualité de l'air est mauvaise en ville aujourd'hui.
+water pollution | pollution de l'eau | n | B1 | /ˈwɔːtə pəˌluːʃn/ | Factories cause water pollution. | Les usines causent la pollution de l'eau.
+soil pollution | pollution des sols | n | B2 | /ˈsɔɪl pəˌluːʃn/ | Pesticides lead to soil pollution. | Les pesticides entraînent la pollution des sols.
+plastic pollution | pollution plastique | n | B1 | /ˈplæstɪk pəˌluːʃn/ | Plastic pollution kills sea turtles. | La pollution plastique tue les tortues de mer.
+litter bin | poubelle publique | n | B1 | /ˈlɪtə bɪn/ | Throw your rubbish in the litter bin. | Jette tes déchets dans la poubelle.
+fly-tipping | dépôt sauvage | n | C1 | /ˈflaɪ ˌtɪpɪŋ/ | Fly-tipping is illegal. | Les dépôts sauvages sont illégaux.
+clean-up | nettoyage | n | B1 | /ˈkliːn ʌp/ | We joined a beach clean-up. | Nous avons participé à un nettoyage de plage.
+oil rig | plate-forme pétrolière | n | C1 | /ˈɔɪl rɪɡ/ | An oil rig leaked into the sea. | Une plate-forme pétrolière a fui dans la mer.
+chemicals | produits chimiques | n | B1 | /ˈkemɪklz/ | Don't pour chemicals down the drain. | Ne verse pas de produits chimiques dans l'évier.
+heavy metals | métaux lourds | n | C1 | /ˌhevi ˈmetlz/ | Heavy metals poison rivers. | Les métaux lourds empoisonnent les rivières.
+lead | plomb | n | B2 | /led/ | Old pipes may contain lead. | Les vieux tuyaux peuvent contenir du plomb.
+mercury | mercure | n | C1 | /ˈmɜːkjəri/ | Some fish contain mercury. | Certains poissons contiennent du mercure.
+asbestos | amiante | n | C1 | /æsˈbestɒs/ | The building was full of asbestos. | Le bâtiment était plein d'amiante.
+smoke | fumée | n | A2 | /sməʊk/ | Black smoke rose from the factory. | Une fumée noire s'élevait de l'usine.
+dust cloud | nuage de poussière | n | B2 | /ˈdʌst klaʊd/ | A dust cloud covered the town. | Un nuage de poussière a recouvert la ville.
+stink | puer | v | B2 | /stɪŋk/ | The river stinks in summer. | La rivière pue en été.
+harmful | nocif | adj | B1 | /ˈhɑːmfl/ | Smoke is harmful to your lungs. | La fumée est nocive pour les poumons.
+harmless | inoffensif | adj | B1 | /ˈhɑːmləs/ | This spider is harmless. | Cette araignée est inoffensive.
+dirty | sale | adj | A1 | /ˈdɜːti/ | The beach was dirty after the festival. | La plage était sale après le festival.
+clean energy | énergie propre | n | B1 | /ˌkliːn ˈenədʒi/ | Clean energy reduces pollution. | L'énergie propre réduit la pollution.
+environmentalist | écologiste | n | C1 | /ɪnˌvaɪrənˈmentəlɪst/ | The environmentalist spoke at the summit. | L'écologiste a pris la parole au sommet.
+environmental | environnemental | adj | B2 | /ɪnˌvaɪrənˈmentl/ | We face serious environmental problems. | Nous faisons face à de graves problèmes environnementaux.
+green | écologique, vert | adj | B1 | /ɡriːn/ | Green policies are popular with young voters. | Les politiques écologiques plaisent aux jeunes électeurs.
+carbon neutral | neutre en carbone | adj | C1 | /ˌkɑːbən ˈnjuːtrəl/ | The company aims to be carbon neutral by 2030. | L'entreprise vise la neutralité carbone d'ici 2030.
+offset | compenser | v | C1 | /ˈɒfset/ | Plant trees to offset your emissions. | Plante des arbres pour compenser tes émissions.
+rising sea levels | montée des eaux | n | C1 | /ˌraɪzɪŋ ˈsiː ˌlevlz/ | Rising sea levels threaten coastal towns. | La montée des eaux menace les villes côtières.
+ice cap | calotte glaciaire | n | C1 | /ˈaɪs kæp/ | The polar ice cap is shrinking. | La calotte polaire rétrécit.
+heat island | îlot de chaleur | n | C2 | /ˈhiːt ˌaɪlənd/ | Cities create a heat island in summer. | Les villes créent un îlot de chaleur en été.
+desertification | désertification | n | C2 | /dɪˌzɜːtɪfɪˈkeɪʃn/ | Desertification is spreading in the Sahel. | La désertification progresse au Sahel.
+overfishing | surpêche | n | C1 | /ˌəʊvəˈfɪʃɪŋ/ | Overfishing empties the oceans. | La surpêche vide les océans.
+overpopulation | surpopulation | n | C1 | /ˌəʊvəˌpɒpjuˈleɪʃn/ | Overpopulation puts pressure on resources. | La surpopulation pèse sur les ressources.
+environmental impact | impact environnemental | n | C1 | /ɪnˌvaɪrənˌmentl ˈɪmpækt/ | Every product has an environmental impact. | Chaque produit a un impact environnemental.
+green belt | ceinture verte | n | C1 | /ˈɡriːn belt/ | Building on the green belt is forbidden. | Il est interdit de construire sur la ceinture verte.
+greenwashing | écoblanchiment | n | C2 | /ˈɡriːnwɒʃɪŋ/ | The advert was pure greenwashing. | La publicité relevait du pur écoblanchiment.
 `,
 );

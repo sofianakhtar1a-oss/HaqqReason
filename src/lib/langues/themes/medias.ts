@@ -94,5 +94,50 @@ commentator | commentateur | n | C1 | /ˈkɒmənteɪtər/ | The commentator desc
 to comment | commenter | v | B1 | /ˈkɒment/ | Several experts commented on the decision. | Plusieurs experts ont commenté la décision.
 stock footage | images d'archives | n | C1 | /stɒk ˈfʊtɪdʒ/ | The documentary used stock footage from 1968. | Le documentaire utilisait des images d'archives de 1968.
 broadcasting | radiodiffusion | n | C1 | /ˈbrɔːdkɑːstɪŋ/ | Broadcasting has changed a lot in ten years. | La radiodiffusion a beaucoup changé en dix ans.
+news | informations, nouvelles | n | A1 | /njuːz/ | Did you hear the news? | Tu as entendu la nouvelle ?
+newspaper | journal | n | A1 | /ˈnjuːspeɪpər/ | My father reads the newspaper every day. | Mon père lit le journal tous les jours.
+article | article | n | A2 | /ˈɑːtɪkl/ | I read an interesting article. | J'ai lu un article intéressant.
+radio | radio | n | A1 | /ˈreɪdiəʊ/ | We listen to the radio in the car. | Nous écoutons la radio en voiture.
+television | télévision | n | A1 | /ˈtelɪvɪʒn/ | The children watch too much television. | Les enfants regardent trop la télévision.
+TV programme | émission de télé | n | A2 | /ˌtiː ˈviː ˌprəʊɡræm/ | What's your favourite TV programme? | Quelle est ton émission préférée ?
+news bulletin | bulletin d'informations | n | B2 | /ˈnjuːz ˌbʊlətɪn/ | The news bulletin starts at eight. | Le journal commence à vingt heures.
+breaking news | dernière minute | n | B1 | /ˌbreɪkɪŋ ˈnjuːz/ | Breaking news: the bridge has collapsed. | Dernière minute : le pont s'est effondré.
+current affairs | actualité | n | B2 | /ˌkʌrənt əˈfeəz/ | She follows current affairs closely. | Elle suit l'actualité de près.
+talk show | talk-show | n | B1 | /ˈtɔːk ʃəʊ/ | He appeared on a talk show. | Il est passé dans un talk-show.
+reality TV | téléréalité | n | B1 | /riˈæləti ˌtiː viː/ | Reality TV is very popular. | La téléréalité est très populaire.
+presenter | présentateur | n | B1 | /prɪˈzentər/ | The presenter introduced the guests. | Le présentateur a présenté les invités.
+audience figures | audience (chiffres) | n | C1 | /ˈɔːdiəns ˌfɪɡəz/ | Audience figures were record-breaking. | Les chiffres d'audience ont battu des records.
+media | médias | n | B1 | /ˈmiːdiə/ | The media covered the story. | Les médias ont couvert l'affaire.
+mass media | médias de masse | n | B2 | /ˌmæs ˈmiːdiə/ | Mass media shape public opinion. | Les médias de masse façonnent l'opinion publique.
+press | presse | n | B1 | /pres/ | The press was not allowed inside. | La presse n'a pas été autorisée à entrer.
+freedom of the press | liberté de la presse | n | B2 | /ˌfriːdəm əv ðə ˈpres/ | Freedom of the press is essential. | La liberté de la presse est essentielle.
+investigative journalism | journalisme d'investigation | n | C1 | /ɪnˌvestɪɡətɪv ˈdʒɜːnəlɪzəm/ | Investigative journalism takes months. | Le journalisme d'investigation prend des mois.
+fact-check | vérifier les faits | v | C1 | /ˈfækt tʃek/ | Always fact-check before you share. | Vérifie toujours les faits avant de partager.
+clickbait | piège à clics | n | B2 | /ˈklɪkbeɪt/ | That headline is pure clickbait. | Ce titre est un pur piège à clics.
+like | aimer (un contenu) | v | A1 | /laɪk/ | Please like and share this post. | Merci d'aimer et de partager cette publication.
+comment section | espace commentaires | n | B2 | /ˈkɒment ˌsekʃn/ | Don't read the comment section. | Ne lis pas les commentaires.
+profile | profil | n | B1 | /ˈprəʊfaɪl/ | Update your profile picture. | Mets à jour ta photo de profil.
+selfie | selfie | n | A2 | /ˈselfi/ | Let's take a selfie! | Prenons un selfie !
+livestream | diffusion en direct | n | B2 | /ˈlaɪvstriːm/ | The lecture is on livestream tonight. | La conférence est diffusée en direct ce soir.
+content creator | créateur de contenu | n | B2 | /ˈkɒntent kriˌeɪtər/ | She is a successful content creator. | C'est une créatrice de contenu à succès.
+video channel | chaîne vidéo | n | B1 | /ˈvɪdiəʊ ˌtʃænl/ | He started a video channel about Islam. | Il a lancé une chaîne vidéo sur l'islam.
+press photographer | photographe de presse | n | B2 | /ˈpres fəˌtɒɡrəfər/ | A press photographer took the picture. | Un photographe de presse a pris la photo.
+paparazzi | paparazzi | n | B2 | /ˌpæpəˈrætsi/ | The paparazzi followed the star. | Les paparazzis suivaient la star.
+newsroom | salle de rédaction | n | C1 | /ˈnjuːzruːm/ | The newsroom was busy all night. | La salle de rédaction a été animée toute la nuit.
+quote | citation ; citer | n | B1 | /kwəʊt/ | The article opens with a quote. | L'article s'ouvre sur une citation.
+anonymous | anonyme | adj | B2 | /əˈnɒnɪməs/ | An anonymous source gave the information. | Une source anonyme a donné l'information.
+biased | partial, orienté | adj | C1 | /ˈbaɪəst/ | This channel is very biased. | Cette chaîne est très orientée.
+manipulate | manipuler | v | C1 | /məˈnɪpjuleɪt/ | Some images are manipulated. | Certaines images sont manipulées.
+TV channel | chaîne de télé | n | A2 | /ˌtiː ˈviː ˌtʃænl/ | Change the TV channel, please. | Change de chaîne, s'il te plaît.
+remote control | télécommande | n | A2 | /rɪˌməʊt kənˈtrəʊl/ | Where is the remote control? | Où est la télécommande ?
+headlines | gros titres | n | B1 | /ˈhedlaɪnz/ | Read the headlines this morning. | Lis les gros titres ce matin.
+news agency | agence de presse | n | B2 | /ˈnjuːz ˌeɪdʒənsi/ | The news agency confirmed the story. | L'agence de presse a confirmé l'information.
+weekly magazine | hebdomadaire | n | B1 | /ˌwiːkli ˌmæɡəˈziːn/ | She reads a weekly magazine. | Elle lit un hebdomadaire.
+daily newspaper | quotidien (journal) | n | B1 | /ˌdeɪli ˈnjuːspeɪpər/ | He buys a daily newspaper. | Il achète un quotidien.
+mute | couper le son | v | B1 | /mjuːt/ | Mute your microphone. | Coupe ton micro.
+go viral | devenir viral | expr | B1 | /ˌɡəʊ ˈvaɪrəl/ | Her video began to go viral. | Sa vidéo a commencé à devenir virale.
+troll | troll | n | B2 | /trəʊl/ | Don't feed the troll. | Ne nourris pas le troll.
+cyberbullying | cyberharcèlement | n | B2 | /ˈsaɪbəbʊliɪŋ/ | Cyberbullying hurts many teenagers. | Le cyberharcèlement fait souffrir beaucoup d'adolescents.
+screen addiction | dépendance aux écrans | n | B2 | /ˌskriːn əˈdɪkʃn/ | Screen addiction worries parents. | La dépendance aux écrans inquiète les parents.
 `,
 );
