@@ -4,7 +4,7 @@
  * - Les favoris sont mis de côté dans un espace à part, jamais effacé automatiquement.
  * - L'espace créateur, les API et les fichiers ne sont JAMAIS mis en cache.
  */
-const VERSION = "hr-v6-1";
+const VERSION = "hr-v6-2";
 const PAGES = `${VERSION}-pages`;
 const STATIQUE = `${VERSION}-statique`;
 const GARDE = "hr-favoris";
@@ -30,7 +30,7 @@ self.addEventListener("activate", (e) => {
 });
 
 const INTERDIT = /^\/(createur|api|fichiers|_next\/image|_next\/data)(\/|$)/;
-const PUBLIC = /^\/($|explorer|debat|graphe|favoris|recherche|hors-ligne|langues)/;
+const PUBLIC = /^\/($|explorer|islam|debat|graphe|favoris|recherche|hors-ligne|langues)/;
 
 async function limiter(nom, max) {
   const cache = await caches.open(nom);
