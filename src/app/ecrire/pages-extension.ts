@@ -17,7 +17,8 @@ import { Decoration, DecorationSet } from "@tiptap/pm/view";
  * enregistré, et disparaissent de l'export comme de l'impression.
  */
 
-export type Coupure = { bloc: number; hauteur: number; numero: number };
+/** pos : position dans le document, juste avant le bloc (ou l'élément de liste) qui ouvre la page. */
+export type Coupure = { pos: number; hauteur: number; numero: number };
 
 const CLE = new PluginKey<{ coupures: Coupure[] }>("coupuresCalame");
 
@@ -29,42 +30,41 @@ export const CoupuresDePage = Extension.create({
         key: CLE,
         state: {
           init: () => ({ coupures: [] as Coupure[] }),
-          apply: (tr, valeur) => (tr.getMeta(CLE) as { coupures: Coupure[] } | undefined) ?? valeur,
+          apply: (tr, valeur) => {
+            const meta = tr.getMeta(CLE) as { coupures: Coupure[] } | undefined;
+            if (meta) return meta;
+            // Le texte a bougé avant la prochaine mesure : les blancs suivent leur bloc.
+            return tr.docChanged ? { coupures: valeur.coupures.map((c) => ({ ...c, pos: tr.mapping.map(c.pos, -1) })) } : valeur;
+          },
         },
         props: {
           decorations(etat) {
             const { coupures } = CLE.getState(etat) ?? { coupures: [] };
             if (coupures.length === 0) return DecorationSet.empty;
-            const parBloc = new Map(coupures.map((c) => [c.bloc, c]));
             const decorations: Decoration[] = [];
-            let position = 0;
-            let index = 0;
-            etat.doc.forEach((noeud) => {
-              const coupure = parBloc.get(index);
-              if (coupure) {
-                decorations.push(
-                  Decoration.widget(
-                    position,
-                    () => {
-                      const blanc = document.createElement("div");
-                      blanc.className = "calame-coupure";
-                      blanc.setAttribute("contenteditable", "false");
-                      blanc.setAttribute("data-blanc", "page");
-                      blanc.setAttribute("aria-hidden", "true");
-                      blanc.style.height = `${Math.max(0, coupure.hauteur)}px`;
-                      const etiquette = document.createElement("span");
-                      etiquette.className = "calame-coupure-numero";
-                      etiquette.textContent = `Page ${coupure.numero}`;
-                      blanc.appendChild(etiquette);
-                      return blanc;
-                    },
-                    { side: -1, key: `coupure-${coupure.bloc}-${Math.round(coupure.hauteur)}` },
-                  ),
-                );
-              }
-              position += noeud.nodeSize;
-              index++;
-            });
+            const max = etat.doc.content.size;
+            for (const coupure of coupures) {
+              if (coupure.pos < 0 || coupure.pos > max) continue;
+              decorations.push(
+                Decoration.widget(
+                  coupure.pos,
+                  () => {
+                    const blanc = document.createElement("div");
+                    blanc.className = "calame-coupure";
+                    blanc.setAttribute("contenteditable", "false");
+                    blanc.setAttribute("data-blanc", "page");
+                    blanc.setAttribute("aria-hidden", "true");
+                    blanc.style.height = `${Math.max(0, coupure.hauteur)}px`;
+                    const etiquette = document.createElement("span");
+                    etiquette.className = "calame-coupure-numero";
+                    etiquette.textContent = `Page ${coupure.numero}`;
+                    blanc.appendChild(etiquette);
+                    return blanc;
+                  },
+                  { side: -1, key: `coupure-${coupure.pos}-${Math.round(coupure.hauteur)}` },
+                ),
+              );
+            }
             return DecorationSet.create(etat.doc, decorations);
           },
         },
@@ -78,7 +78,7 @@ export function appliquerCoupures(editor: Editor, coupures: Coupure[]): void {
   const actuelles = CLE.getState(editor.state)?.coupures ?? [];
   const memeChose =
     actuelles.length === coupures.length &&
-    actuelles.every((c, i) => c.bloc === coupures[i].bloc && Math.abs(c.hauteur - coupures[i].hauteur) < 0.5);
+    actuelles.every((c, i) => c.pos === coupures[i].pos && Math.abs(c.hauteur - coupures[i].hauteur) < 0.5);
   if (memeChose) return;
   const tr = editor.state.tr.setMeta(CLE, { coupures });
   tr.setMeta("addToHistory", false);
