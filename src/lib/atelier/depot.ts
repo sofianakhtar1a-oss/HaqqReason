@@ -3,18 +3,21 @@
 /**
  * Le Calame — dépôt local.
  *
- * Tout reste sur l'appareil de l'auteur, dans la base du navigateur (IndexedDB) :
- * aucun compte, aucune adresse e-mail, rien qui parte sur un serveur. Les
- * documents, les images, les PDF et l'historique des versions y vivent ensemble,
- * et l'auteur peut à tout moment tout exporter dans un fichier.
+ * L'auteur écrit d'abord sur son appareil, dans la base du navigateur (IndexedDB) :
+ * aucune latence réseau, et ça fonctionne hors ligne. Les documents, les images,
+ * les PDF et l'historique des versions y vivent ensemble.
  *
- * Deux conséquences qu'il faut assumer et dire clairement :
- *   • le travail ne suit pas d'un appareil à l'autre — c'est l'export qui sert
- *     de pont ;
- *   • vider les données du site efface aussi les documents.
- * En échange : aucune latence réseau, aucun quota, et ça fonctionne hors ligne.
+ * Quand il est connecté à son compte, chaque écriture est aussi notée dans le journal
+ * de synchronisation (lib/client/synchro) : les documents et leurs fichiers joints sont
+ * alors recopiés sur son compte, et le suivent d'un appareil à l'autre. Vider les données
+ * du site n'efface donc plus son travail.
+ *
+ * Ce qui reste propre à chaque appareil : l'historique des versions, et les fichiers
+ * joints trop lourds pour le compte (voir lib/compte/limites.ts).
  */
 
+import { compteLocal, tiroir } from "@/lib/client/compte";
+import { noter } from "@/lib/client/synchro/journal";
 import { documentVide, nettoyerReglages, type DocumentAtelier, type VersionAtelier, LIMITES_ATELIER } from "./modele";
 
 const BASE = "haqqreason-calame";
@@ -24,6 +27,10 @@ const FICHIERS = "fichiers";
 const VERSIONS = "versions";
 
 export type FichierLocal = { id: string; nom: string; type: string; taille: number; blob: Blob; ajoute: string };
+/** La fiche d'un fichier joint, sans son contenu : c'est elle qui voyage avec le compte. */
+export type FicheFichier = Omit<FichierLocal, "blob">;
+/** Sur l'appareil, un fichier venu d'un autre appareil n'a d'abord que sa fiche ; son contenu arrive à la première lecture. */
+type FichierRange = FicheFichier & { blob: Blob | null };
 
 let promesse: Promise<IDBDatabase> | null = null;
 
@@ -34,7 +41,7 @@ function ouvrir(): Promise<IDBDatabase> {
       rejeter(new Error("Ce navigateur ne sait pas garder de documents hors ligne."));
       return;
     }
-    const demande = indexedDB.open(BASE, VERSION_BASE);
+    const demande = indexedDB.open(tiroir(BASE), VERSION_BASE);
     demande.onupgradeneeded = () => {
       const db = demande.result;
       if (!db.objectStoreNames.contains(DOCUMENTS)) db.createObjectStore(DOCUMENTS, { keyPath: "id" });
@@ -97,13 +104,25 @@ export async function lireDocument(id: string): Promise<DocumentAtelier | null> 
 }
 
 export async function ecrireDocument(doc: DocumentAtelier): Promise<void> {
-  await enPromesse((await magasin(DOCUMENTS, "readwrite")).put(remettreDAplomb(doc)));
+  await ecrireDocumentBrut(doc);
+  await noter("calame-documents", doc.id);
 }
 
 export async function supprimerDocument(id: string): Promise<void> {
+  await supprimerDocumentBrut(id);
+  await noter("calame-documents", id);
+  await nettoyerFichiersOrphelins();
+}
+
+/* Les mêmes gestes sans rien noter au journal : réservés à la synchronisation, qui range ce qui arrive du compte. */
+
+export async function ecrireDocumentBrut(doc: unknown): Promise<void> {
+  await enPromesse((await magasin(DOCUMENTS, "readwrite")).put(remettreDAplomb(doc)));
+}
+
+export async function supprimerDocumentBrut(id: string): Promise<void> {
   await enPromesse((await magasin(DOCUMENTS, "readwrite")).delete(id));
   for (const v of await listerVersions(id)) await enPromesse((await magasin(VERSIONS, "readwrite")).delete(v.id));
-  await nettoyerFichiersOrphelins();
 }
 
 // ---------------------------------------------------------------------------
@@ -140,12 +159,74 @@ export async function ajouterFichier(blob: Blob, nom: string): Promise<FichierLo
     ajoute: new Date().toISOString(),
   };
   await enPromesse((await magasin(FICHIERS, "readwrite")).put(fichier));
+  await noter("calame-fichiers", fichier.id);
   return fichier;
 }
 
+const telechargements = new Map<string, Promise<Blob | null>>();
+
+/** Va chercher sur le compte le contenu d'un fichier ajouté depuis un autre appareil. */
+function telecharger(id: string): Promise<Blob | null> {
+  const enCours = telechargements.get(id);
+  if (enCours) return enCours;
+  const promesse = (async () => {
+    try {
+      if (!compteLocal()) return null;
+      const lien = await fetch(`/api/compte/fichiers/${encodeURIComponent(id)}`, { cache: "no-store" });
+      if (!lien.ok) return null;
+      const { url } = (await lien.json()) as { url?: string };
+      if (!url) return null;
+      const contenu = await fetch(url, { cache: "no-store" });
+      return contenu.ok ? await contenu.blob() : null;
+    } catch {
+      return null;
+    } finally {
+      telechargements.delete(id);
+    }
+  })();
+  telechargements.set(id, promesse);
+  return promesse;
+}
+
 export async function lireFichier(id: string): Promise<FichierLocal | null> {
-  const trouve = await enPromesse((await magasin(FICHIERS, "readonly")).get(id));
-  return (trouve as FichierLocal) ?? null;
+  const trouve = (await enPromesse((await magasin(FICHIERS, "readonly")).get(id))) as FichierRange | undefined;
+  if (!trouve) return null;
+  if (trouve.blob) return trouve as FichierLocal;
+  const blob = await telecharger(id);
+  if (!blob) return null;
+  const complet: FichierLocal = { ...trouve, blob: trouve.type && blob.type !== trouve.type ? new Blob([blob], { type: trouve.type }) : blob };
+  await enPromesse((await magasin(FICHIERS, "readwrite")).put(complet)).catch(() => undefined);
+  return complet;
+}
+
+/* Pour la synchronisation : les fiches, sans jamais charger les contenus. */
+
+export async function listerFichesLocales(): Promise<FicheFichier[]> {
+  const tous = (await enPromesse((await magasin(FICHIERS, "readonly")).getAll())) as FichierRange[];
+  return tous.filter((f) => f.blob).map(({ id, nom, type, taille, ajoute }) => ({ id, nom, type, taille, ajoute }));
+}
+
+/** Le fichier tel qu'il est sur l'appareil, sans téléchargement. */
+export async function lireFichierLocal(id: string): Promise<FichierLocal | null> {
+  const trouve = (await enPromesse((await magasin(FICHIERS, "readonly")).get(id))) as FichierRange | undefined;
+  return trouve?.blob ? (trouve as FichierLocal) : null;
+}
+
+/** Range la fiche d'un fichier ajouté ailleurs ; son contenu sera téléchargé quand un document l'affichera. */
+export async function rangerFiche(fiche: FicheFichier): Promise<void> {
+  const deja = (await enPromesse((await magasin(FICHIERS, "readonly")).get(fiche.id))) as FichierRange | undefined;
+  if (deja?.blob) return;
+  const range: FichierRange = { id: fiche.id, nom: String(fiche.nom ?? "").slice(0, 200), type: String(fiche.type || "application/octet-stream"), taille: Number(fiche.taille) || 0, ajoute: String(fiche.ajoute ?? ""), blob: null };
+  await enPromesse((await magasin(FICHIERS, "readwrite")).put(range));
+}
+
+export async function supprimerFichierBrut(id: string): Promise<void> {
+  await enPromesse((await magasin(FICHIERS, "readwrite")).delete(id));
+  const url = urls.get(id);
+  if (url) {
+    URL.revokeObjectURL(url);
+    urls.delete(id);
+  }
 }
 
 /** Adresse locale d'un fichier, fabriquée une seule fois et gardée en mémoire. */
@@ -183,16 +264,14 @@ export async function nettoyerFichiersOrphelins(): Promise<number> {
   const documents = await listerDocuments();
   const cites = new Set<string>();
   for (const doc of documents) for (const id of fichiersCites(doc.contenu)) cites.add(id);
-  const tous = (await enPromesse((await magasin(FICHIERS, "readonly")).getAll())) as FichierLocal[];
+  const tous = (await enPromesse((await magasin(FICHIERS, "readonly")).getAll())) as FichierRange[];
   let effaces = 0;
   for (const fichier of tous) {
-    if (cites.has(fichier.id)) continue;
-    await enPromesse((await magasin(FICHIERS, "readwrite")).delete(fichier.id));
-    const url = urls.get(fichier.id);
-    if (url) {
-      URL.revokeObjectURL(url);
-      urls.delete(fichier.id);
-    }
+    // Une simple fiche (contenu resté sur un autre appareil) n'est jamais effacée d'ici :
+    // le document qui la cite est peut-être encore en route.
+    if (cites.has(fichier.id) || !fichier.blob) continue;
+    await supprimerFichierBrut(fichier.id);
+    await noter("calame-fichiers", fichier.id);
     effaces++;
   }
   return effaces;
@@ -201,7 +280,7 @@ export async function nettoyerFichiersOrphelins(): Promise<number> {
 /** Place occupée sur l'appareil, et place encore disponible si le navigateur la connaît. */
 export async function placeOccupee(): Promise<{ documents: number; fichiers: number; octets: number; disponible: number | null }> {
   const documents = await listerDocuments();
-  const tous = (await enPromesse((await magasin(FICHIERS, "readonly")).getAll())) as FichierLocal[];
+  const tous = (await enPromesse((await magasin(FICHIERS, "readonly")).getAll())) as FichierRange[];
   const octets = tous.reduce((total, f) => total + f.taille, 0) + documents.reduce((total, d) => total + JSON.stringify(d.contenu).length, 0);
   let disponible: number | null = null;
   try {
