@@ -7,7 +7,7 @@ import { ErreurService, type Etape, transcrireFichier, transcrireYoutube } from 
 import { dureeLisible } from "@/lib/alambic/transcription/exports";
 import { idYoutube } from "@/lib/alambic/transcription/lien";
 import { ecrire, ecrireBlob, listerMedias, lireUn, type MediaLangue, supprimerMedia } from "@/lib/langues/stockage";
-import { BoutonSupprimer } from "./communs";
+import { BoutonSupprimer, ChoixLangue } from "./communs";
 import { useTextes } from "@/lib/modules/textes-client";
 import { Immersion } from "./Immersion";
 
@@ -28,6 +28,8 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
   const [travail, setTravail] = useState<Travail | null>(null);
   const [erreur, setErreur] = useState<string | null>(null);
   const [survol, setSurvol] = useState(false);
+  // La langue parlée dans la vidéo : l'anglais (traduit en français) ou le français (traduit en anglais).
+  const [langue, setLangue] = useState<"en" | "fr">("en");
   const annulation = useRef<AbortController | null>(null);
   const t = useTextes("langues");
 
@@ -78,7 +80,7 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
       setErreur("Ce lien n'est pas une vidéo YouTube. Colle l'adresse complète (youtube.com/watch?v=… ou youtu.be/…).");
       return;
     }
-    void lancer(async (signal, suivi) => ({ ...(await transcrireYoutube(id, "en", suivi, signal)), vu: Date.now() }), "Vidéo YouTube");
+    void lancer(async (signal, suivi) => ({ ...(await transcrireYoutube(id, langue, suivi, signal)), langue, vu: Date.now() }), "Vidéo YouTube");
   };
 
   const depuisFichier = (f: File) => {
@@ -87,9 +89,9 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
       return;
     }
     void lancer(async (signal, suivi) => {
-      const t = await transcrireFichier(f, "en", suivi, signal);
+      const t = await transcrireFichier(f, langue, suivi, signal);
       if (f.size <= POIDS_MEDIA_MAX) await ecrireBlob(t.id, f).catch(() => undefined);
-      return { ...t, vu: Date.now() };
+      return { ...t, langue, vu: Date.now() };
     }, f.name);
   };
 
@@ -129,6 +131,7 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
         </div>
       ) : (
         <div className="lg-import">
+          <ChoixLangue valeur={langue} onChange={setLangue} quoi="La vidéo ou le son est en" />
           <form
             className="lg-import-lien"
             onSubmit={(e) => {
@@ -198,7 +201,7 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
                     {m.titre}
                   </span>
                   <span className="lg-element-infos">
-                    {m.source.type === "youtube" ? "YouTube" : <><FileAudio className="inline size-3.5" aria-hidden="true" /> Fichier</>} · {dureeLisible(m.duree)} · {m.phrases.length} phrases
+                    {m.langue === "fr" ? "Français" : "Anglais"} · {m.source.type === "youtube" ? "YouTube" : <><FileAudio className="inline size-3.5" aria-hidden="true" /> Fichier</>} · {dureeLisible(m.duree)} · {m.phrases.length} phrases
                     {m.position ? ` · repris à ${dureeLisible(m.position)}` : ""}
                   </span>
                   {m.duree > 0 && (
