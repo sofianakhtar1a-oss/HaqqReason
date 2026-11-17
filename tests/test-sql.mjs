@@ -18,8 +18,17 @@ await db.exec(`create role anon nologin; create role authenticated nologin; crea
 // Ce que Supabase fournit d'office : le schéma « extensions » et la table des espaces de stockage.
 await db.exec(`create schema extensions; grant usage on schema extensions to anon, authenticated, service_role;
   create schema storage; create table storage.buckets (id text primary key, name text, public boolean, file_size_limit bigint, allowed_mime_types text[]);`);
-for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql", "010_contributions.sql"]) {
+for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql", "010_contributions.sql", "011_espaces.sql", "011_espaces.sql"]) {
   await db.exec(readFileSync(new URL(`../supabase/migrations/${fichier}`, import.meta.url), "utf8"));
+}
+
+// 011 : deux espaces, la migration se relance sans rien casser
+{
+  const r = await db.query("select espace, count(*)::int as n from blocs group by espace order by espace");
+  ok("011 : 3 blocs « islam » et 3 blocs « preuves »", JSON.stringify(r.rows) === JSON.stringify([{ espace: "islam", n: 3 }, { espace: "preuves", n: 3 }]));
+  let refuseEspace = false;
+  try { await db.exec("insert into blocs (slug, titre, accent, espace) values ('x-y', 'X', 'or', 'autre')"); } catch { refuseEspace = true; }
+  ok("011 : un espace inconnu est refusé", refuseEspace);
 }
 
 // Données de test créées par le « serveur »
@@ -47,7 +56,7 @@ try { await db.exec(`insert into creator_auth (password_hash, recovery_hash) val
 for (const role of ["anon", "authenticated"]) {
   await db.exec(`set role ${role}`);
   const blocs = await db.query(`select titre from blocs order by ordre`);
-  ok(`[${role}] lit les 3 blocs`, blocs.rows.length === 3);
+  ok(`[${role}] lit les 6 blocs (3 preuves, 3 islam)`, blocs.rows.length === 6);
   const cats = await db.query(`select slug from categories`);
   ok(`[${role}] ne voit que la catégorie publiée (pas le brouillon ni l'enfant d'un brouillon)`, cats.rows.length === 1 && cats.rows[0].slug === "publiee");
   const arts = await db.query(`select slug from articles`);
