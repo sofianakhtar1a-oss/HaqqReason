@@ -44,9 +44,8 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
     setErreur(null);
     setLecture({ nom: f.name, progression: 0 });
     try {
-      const { lirePdf } = await import("@/lib/alambic/carnet/extraction");
-      const segments = await lirePdf(f, (progression) => setLecture((l) => l && { ...l, progression }));
-      const pages = segments.map((s, i) => ({ page: s.page ?? i + 1, texte: s.texte }));
+      const { lirePdf } = await import("@/lib/langues/pdf");
+      const pages = await lirePdf(f, (progression) => setLecture((l) => l && { ...l, progression }));
       const d: DocumentLangue = {
         id: nouvelId(),
         titre: f.name.replace(/\.pdf$/i, "").replace(/[_-]+/g, " ").trim() || "Sans titre",
