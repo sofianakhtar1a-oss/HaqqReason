@@ -45,12 +45,10 @@ export async function articlesParBloc(): Promise<Map<string, { publies: number; 
   return compte;
 }
 
-export async function brouillonsEnAttente(limite = 8): Promise<{ id: string; titre: string; updated_at: string }[]> {
-  const { data } = await dbAdmin()
-    .from("articles")
-    .select("id, titre, updated_at")
-    .is("supprime_le", null)
-    .eq("statut", "brouillon")
+export async function brouillonsEnAttente(limite = 8, blocIds?: string[]): Promise<{ id: string; titre: string; updated_at: string }[]> {
+  let requete = dbAdmin().from("articles").select("id, titre, updated_at").is("supprime_le", null).eq("statut", "brouillon");
+  if (blocIds) requete = requete.in("bloc_id", blocIds);
+  const { data } = await requete
     .order("updated_at", { ascending: false })
     .limit(limite);
   return (data ?? []) as { id: string; titre: string; updated_at: string }[];
