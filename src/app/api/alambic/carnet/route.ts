@@ -1,5 +1,6 @@
-import { erreur, garder, reponseErreur } from "@/lib/alambic/serveur/garde";
-import { discuterEnFlux, type Tour } from "@/lib/alambic/serveur/gemini";
+import { erreur, garder } from "@/lib/alambic/serveur/garde";
+import { discuter, type Tour } from "@/lib/alambic/serveur/gemini";
+import { ErreurGroq } from "@/lib/alambic/serveur/groq";
 import { CONSIGNES_ACTIONS, SYSTEME_CARNET } from "@/lib/alambic/serveur/prompt-carnet";
 import type { Action } from "@/lib/alambic/carnet/types";
 
@@ -56,10 +57,33 @@ export async function POST(requete: Request) {
   const consigne = action ? CONSIGNES_ACTIONS[action] + (question ? `\n\nPrécision de l'utilisateur : ${question}` : "") : question;
   const message = `<mode>${mode}</mode>\n<sources>\n${sources || "(aucune source cochée)"}\n</sources>\n\n<demande>\n${consigne}\n</demande>`;
 
-  try {
-    const flux = await discuterEnFlux(SYSTEME_CARNET, [...historique, { role: "user", texte: message }], requete.signal);
-    return new Response(flux, { headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff" } });
-  } catch (e) {
-    return reponseErreur(e);
-  }
+  // Le flux s'ouvre tout de suite : un battement invisible (U+200B) toutes les 8 s tant que Gemini réfléchit,
+  // puis le texte. Une erreur s'écrit dans le flux, précédée du caractère U+0000.
+  const encodeur = new TextEncoder();
+  const flux = new ReadableStream<Uint8Array>({
+    async start(controle) {
+      const envoyer = (t: string) => {
+        try {
+          controle.enqueue(encodeur.encode(t));
+        } catch {
+          // flux déjà fermé
+        }
+      };
+      envoyer("\u200b");
+      const battement = setInterval(() => envoyer("\u200b"), 8000);
+      try {
+        await discuter(SYSTEME_CARNET, [...historique, { role: "user", texte: message }], envoyer, requete.signal);
+      } catch (e) {
+        if (!requete.signal.aborted) envoyer(`\u0000${e instanceof ErreurGroq ? e.message : "La réponse a échoué. Réessaie."}`);
+      } finally {
+        clearInterval(battement);
+        try {
+          controle.close();
+        } catch {
+          // déjà fermé
+        }
+      }
+    },
+  });
+  return new Response(flux, { headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store", "X-Content-Type-Options": "nosniff", "X-Accel-Buffering": "no" } });
 }

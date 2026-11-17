@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BookOpen, Feather, FlaskConical } from "lucide-react";
+import { ArrowRight, BookOpen, Feather, FlaskConical, Languages } from "lucide-react";
 import { EnTete } from "@/components/EnTete";
 import { Rosace } from "@/components/Rosace";
 import { MarqueAccueil } from "@/lib/client/acces";
 
 export const metadata: Metadata = {
   title: "Mode utilisateur",
-  description: "Trois espaces : Le Calame pour écrire, L'Alambic pour convertir ses fichiers, et la bibliothèque des preuves de la véracité de l'islam.",
+  description: "Quatre espaces : Le Calame pour écrire, L'Alambic pour convertir ses fichiers, Le Truchement pour apprendre une langue, et la bibliothèque des preuves de la véracité de l'islam.",
 };
 
 const CHOIX = [
@@ -32,6 +32,16 @@ const CHOIX = [
     marque: "Transformer",
   },
   {
+    href: "/langues",
+    titre: "Le Truchement",
+    soustitre: "Apprendre les langues",
+    texte:
+      "L'anglais pour commencer : 600 mots en douze thèmes révisés au bon moment, des vidéos et des PDF où chaque mot se traduit d'un toucher, et ton propre dictionnaire. Ta progression reste sur ton appareil.",
+    Icone: Languages,
+    accent: "azur",
+    marque: "Apprendre",
+  },
+  {
     href: "/explorer",
     titre: "Les preuves de la véracité de l'islam",
     soustitre: "La bibliothèque",
@@ -52,10 +62,10 @@ export default function PageUtilisateur() {
       <main className="relative mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-5 pb-20 pt-6 sm:px-8">
         <h1 className="text-4xl font-extrabold md:text-5xl">Par où veux-tu commencer ?</h1>
         <p className="mt-3 max-w-[58ch] text-lg text-encre-douce">
-          Trois espaces : écrire, transformer tes fichiers, lire. Tu passes de l&apos;un à l&apos;autre quand tu veux.
+          Quatre espaces : écrire, transformer tes fichiers, apprendre une langue, lire. Tu passes de l&apos;un à l&apos;autre quand tu veux.
         </p>
 
-        <nav aria-label="Les trois espaces" className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <nav aria-label="Les quatre espaces" className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {CHOIX.map(({ href, titre, soustitre, texte, Icone, accent, marque }) => (
             <Link key={href} href={href} className="carte-choix" data-accent={accent}>
               <span className="carte-choix-marque">{marque}</span>

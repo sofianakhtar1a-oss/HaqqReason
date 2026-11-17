@@ -25,7 +25,7 @@ export function typeDe(f: File): TypeSource | null {
 
 export type Extraction = { morceaux: Morceau[]; complement: Partial<Source> };
 
-async function lirePdf(f: File, avancer: (x: number) => void): Promise<Segment[]> {
+export async function lirePdf(f: File, avancer: (x: number) => void): Promise<Segment[]> {
   const { chargerPdfjs } = await import("@/lib/client/pdf");
   const pdfjs = await chargerPdfjs();
   const tache = pdfjs.getDocument({

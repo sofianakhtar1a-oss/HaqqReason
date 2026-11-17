@@ -30,7 +30,7 @@ self.addEventListener("activate", (e) => {
 });
 
 const INTERDIT = /^\/(createur|api|fichiers|_next\/image|_next\/data)(\/|$)/;
-const PUBLIC = /^\/($|explorer|debat|graphe|favoris|recherche|hors-ligne)/;
+const PUBLIC = /^\/($|explorer|debat|graphe|favoris|recherche|hors-ligne|langues)/;
 
 async function limiter(nom, max) {
   const cache = await caches.open(nom);

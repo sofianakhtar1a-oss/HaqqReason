@@ -4,13 +4,14 @@ import { usePathname } from "next/navigation";
 import { useEffect, useSyncExternalStore } from "react";
 
 /*
- * Les deux espaces du mode utilisateur, cloisonnés.
+ * Les espaces du mode utilisateur, cloisonnés.
  *
  * Qui arrive par l'accueil (« / » ou « /utilisateur ») circule partout.
  * Qui arrive par un lien direct reste dans l'espace de ce lien :
  *   - un lien vers Le Calame (/ecrire) ne mène ni à l'accueil ni à la bibliothèque ;
- *   - un lien vers L'Alambic (/alambic) ne mène ni à l'accueil ni aux deux autres espaces ;
- *   - un lien vers la bibliothèque ne mène ni à l'accueil ni aux deux autres espaces.
+ *   - un lien vers L'Alambic (/alambic) ne mène ni à l'accueil ni aux autres espaces ;
+ *   - un lien vers Le Truchement (/langues) ne mène ni à l'accueil ni aux autres espaces ;
+ *   - un lien vers la bibliothèque ne mène ni à l'accueil ni aux autres espaces.
  * Ce passage par l'accueil est retenu sur l'appareil (localStorage), rien n'est envoyé au serveur.
  *
  * C'est un cloisonnement de la navigation, pas un verrou : l'adresse de l'accueil
@@ -19,7 +20,7 @@ import { useEffect, useSyncExternalStore } from "react";
 
 const CLE = "haqqreason-accueil";
 /** Les espaces qui ont leur propre porte (tout le reste appartient à la bibliothèque). */
-const ESPACES_FERMES = ["/ecrire", "/alambic"];
+const ESPACES_FERMES = ["/ecrire", "/alambic", "/langues"];
 const EVENEMENT = "haqqreason:acces";
 
 function lire(): boolean {

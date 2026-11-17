@@ -31,7 +31,12 @@ export async function discuter(
   for (;;) {
     const { done, value } = await lecteur.read();
     if (done) break;
-    surTexte(decodeur.decode(value, { stream: true }));
+    const brut = decodeur.decode(value, { stream: true });
+    // U+0000 annonce une erreur du serveur ; U+200B est un battement qui garde la connexion ouverte.
+    const coupure = brut.indexOf("\u0000");
+    const texte = (coupure >= 0 ? brut.slice(0, coupure) : brut).replace(/\u200b/g, "");
+    if (texte) surTexte(texte);
+    if (coupure >= 0) throw new ErreurCarnet(brut.slice(coupure + 1).trim() || "La réponse a échoué.");
   }
 }
 

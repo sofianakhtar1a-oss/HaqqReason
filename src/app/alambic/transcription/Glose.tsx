@@ -1,7 +1,7 @@
 "use client";
 
 import { Play, X } from "lucide-react";
-import { useLayoutEffect, useRef, useState } from "react";
+import { type ReactNode, useLayoutEffect, useRef, useState } from "react";
 import type { Analyse, Glose as TypeGlose, Phrase } from "@/lib/alambic/transcription/types";
 
 export type Cible = { phrase: number; mot: number; el: HTMLElement; via: "survol" | "toucher" };
@@ -19,8 +19,13 @@ type Props = {
   onEntrer: () => void;
   onSortir: () => void;
   onFermer: () => void;
-  onEcouter: (t: number) => void;
+  /** Absent : pas de bouton « Écouter » (texte sans son, comme un PDF). */
+  onEcouter?: (t: number) => void;
   onMot: (i: number, el: HTMLElement) => void;
+  /** Boutons en plus, sous la traduction (Le Truchement : écouter le mot, l'ajouter au dictionnaire). */
+  actions?: ReactNode;
+  /** Remplace l'astuce du bas de la carte flottante ; null pour la masquer. */
+  astuce?: string | null;
 };
 
 function Contenu({ phrase, cible, langue, analyse, traduction, erreur }: Pick<Props, "phrase" | "cible" | "langue" | "analyse" | "traduction" | "erreur">) {
@@ -106,7 +111,8 @@ export function Popover(p: Props) {
       onPointerLeave={p.onSortir}
     >
       <Contenu {...p} />
-      <p className="tr-glose-astuce">Clic sur un mot : écouter à partir de là</p>
+      {p.actions && <div className="tr-glose-actions">{p.actions}</div>}
+      {p.astuce !== null && <p className="tr-glose-astuce">{p.astuce ?? "Clic sur un mot : écouter à partir de là"}</p>}
     </div>
   );
 }
@@ -132,10 +138,13 @@ export function Tiroir(p: Props) {
             </span>
           ))}
         </p>
-        <button type="button" className="bouton bouton-principal w-full" onClick={() => p.onEcouter(p.phrase.mots[p.cible.mot]?.d ?? p.phrase.debut)}>
-          <Play className="size-4" fill="currentColor" aria-hidden="true" />
-          Écouter à partir de ce mot
-        </button>
+        {p.actions && <div className="tr-glose-actions tr-tiroir-actions">{p.actions}</div>}
+        {p.onEcouter && (
+          <button type="button" className="bouton bouton-principal w-full" onClick={() => p.onEcouter?.(p.phrase.mots[p.cible.mot]?.d ?? p.phrase.debut)}>
+            <Play className="size-4" fill="currentColor" aria-hidden="true" />
+            Écouter à partir de ce mot
+          </button>
+        )}
       </div>
     </div>
   );

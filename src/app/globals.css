@@ -20,6 +20,7 @@
   --sur-or: #221803;
   --emeraude: #45d3a6;
   --amethyste: #b49cff;
+  --azur: #7cc8f2;
   --danger: #ff9a9a;
   --succes: #7ce0b9;
   --motif-opacite: 0.07;
@@ -38,6 +39,7 @@
   --sur-or: #ffffff;
   --emeraude: #0a7355;
   --amethyste: #5438c8;
+  --azur: #0b5f8c;
   --danger: #b3261e;
   --succes: #0a7355;
   --motif-opacite: 0.09;
@@ -70,6 +72,9 @@
 }
 [data-accent="amethyste"] {
   --accent: var(--amethyste);
+}
+[data-accent="azur"] {
+  --accent: var(--azur);
 }
 
 html {
@@ -1845,6 +1850,7 @@ kbd {
     --or: #8a5e06;
     --emeraude: #0a7355;
     --amethyste: #5438c8;
+    --azur: #0b5f8c;
   }
   .livre-couverture {
     min-height: 25cm;

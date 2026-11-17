@@ -1487,6 +1487,15 @@
 .tr-glose-phrase p {
   animation: tr-apparition 0.3s ease both;
 }
+.tr-glose-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+.tr-tiroir-actions {
+  margin: 0 0 0.9rem;
+}
 .tr-glose-astuce {
   margin-top: 0.6rem;
   font-size: 0.7rem;
