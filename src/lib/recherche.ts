@@ -1,5 +1,5 @@
 import "server-only";
-import { sessionCreateur } from "./session";
+import { sessionCreateurVisible } from "./session";
 import { dbAdmin, dbPublic } from "./supabase";
 import { estUuid } from "./validation";
 
@@ -67,7 +67,7 @@ export function lireCriteres(p: URLSearchParams): Criteres {
 }
 
 export async function rechercher(c: Criteres, limite = PAR_PAGE): Promise<{ resultats: Resultat[]; total: number; createur: boolean; erreur: boolean }> {
-  const createur = (await sessionCreateur()) !== null;
+  const createur = (await sessionCreateurVisible()) !== null;
   const vide = !c.q.trim() && c.blocs.length + c.categories.length + c.etiquettes.length === 0 && !c.depuis && !c.jusqua && c.types.length === 0;
   if (vide) return { resultats: [], total: 0, createur, erreur: false };
 

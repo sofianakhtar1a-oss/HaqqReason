@@ -4,6 +4,7 @@ import { redirect } from "next/navigation";
 import { assurerIdAppareil } from "./appareils";
 import { lireCompteCreateur, type CompteCreateur } from "./auth-store";
 import { lireReglages } from "./reglages-donnees";
+import { NOM_COOKIE_VUE } from "./compte/jeton";
 import { empreinteAppareil, NOM_COOKIE, NOM_COOKIE_APPAREIL, optionsCookie, signerSession, verifierSession } from "./session-token";
 
 /** Contexte de l'appareil courant, pour vérifier qu'un cookie n'a pas été recopié ailleurs. */
@@ -59,9 +60,25 @@ export async function exigerCreateur(): Promise<CompteCreateur> {
 }
 
 /**
+ * Le créateur a choisi de regarder le site « comme un utilisateur » : hors de son espace,
+ * plus rien ne doit le distinguer d'un visiteur (ni raccourci « Modifier », ni brouillon).
+ */
+export async function vueUtilisateur(): Promise<boolean> {
+  return (await cookies()).get(NOM_COOKIE_VUE)?.value === "1";
+}
+
+/** Pour les pages publiques : la session du créateur, sauf s'il regarde le site comme un utilisateur. */
+export async function sessionCreateurVisible(): Promise<CompteCreateur | null> {
+  if (await vueUtilisateur()) return null;
+  return sessionCreateur();
+}
+
+/**
  * Indique seulement si le navigateur porte un jeton créateur valide (sans interroger la base).
  * Sert à AFFICHER des raccourcis « Modifier » côté lecteur ; les pages et actions du créateur revérifient tout.
+ * Faux dans la vue utilisateur.
  */
 export async function porteJetonCreateur(): Promise<boolean> {
+  if (await vueUtilisateur()) return false;
   return (await verifierSession((await cookies()).get(NOM_COOKIE)?.value, await contexteAppareil())) !== null;
 }
