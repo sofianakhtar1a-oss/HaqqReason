@@ -3,8 +3,9 @@
  * - Les pages publiques consultées sont gardées : elles restent lisibles sans connexion.
  * - Les favoris sont mis de côté dans un espace à part, jamais effacé automatiquement.
  * - L'espace créateur, les API et les fichiers ne sont JAMAIS mis en cache.
+ * - Une page qui renvoie vers la connexion n'est jamais gardée à la place de la page demandée.
  */
-const VERSION = "hr-v6-2";
+const VERSION = "hr-v6-3";
 const PAGES = `${VERSION}-pages`;
 const STATIQUE = `${VERSION}-statique`;
 const GARDE = "hr-favoris";
@@ -15,7 +16,7 @@ self.addEventListener("install", (e) => {
   e.waitUntil(
     caches
       .open(PAGES)
-      .then((c) => Promise.allSettled(PRECHARGE.map((u) => fetch(u, { credentials: "same-origin" }).then((r) => r.ok && c.put(u, r)))))
+      .then((c) => Promise.allSettled(PRECHARGE.map((u) => fetch(u, { credentials: "same-origin" }).then((r) => r.ok && !r.redirected && c.put(u, r)))))
       .then(() => self.skipWaiting()),
   );
 });
