@@ -18,7 +18,7 @@ import { listerFichiers } from "@/lib/fichiers-donnees";
 import { categoriesSecondaires, lirePrerequis } from "@/lib/navigation-donnees";
 import { ReglagesNavigation } from "../../_composants/ReglagesNavigation";
 import { deplacerArticle, dupliquerArticle, mettreArticleALaCorbeille, restaurerArticle } from "../../contenu-actions";
-import { racineEspace } from "@/lib/espaces";
+import { etapesBloc } from "@/lib/espaces";
 
 export const metadata: Metadata = { title: "Écrire un article", robots: { index: false } };
 
@@ -55,8 +55,7 @@ export default async function EcrireArticle({ params }: PageProps<"/createur/art
       <main className="mx-auto w-full max-w-7xl flex-1 px-5 pb-16 pt-4 sm:px-8">
         <FilAriane
           etapes={[
-            racineEspace(bloc.espace, "createur"),
-            { href: `/createur/bloc/${bloc.slug}`, libelle: bloc.titre },
+            ...etapesBloc(bloc, "createur"),
             ...chemin.map((c) => ({ href: `/createur/categorie/${c.id}`, libelle: c.titre })),
             { href: `/createur/article/${article.id}`, libelle: article.titre },
           ]}
