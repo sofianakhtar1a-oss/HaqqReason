@@ -133,8 +133,8 @@ export default async function EspaceCreateur() {
           <Link href="/createur/contributions" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
             <Lightbulb className="size-6 text-or" aria-hidden="true" />
             <span>
-              Contributions des lecteurs
-              {contributions.en_attente > 0 && <span className="block text-sm font-normal text-encre-douce">{contributions.en_attente} en attente de relecture</span>}
+              Boîte de réception des contributions
+              {(contributions.en_attente > 0 || contributions.non_lues > 0) && <span className="block text-sm font-normal text-encre-douce">{contributions.non_lues > 0 ? `${contributions.non_lues} non lue${contributions.non_lues > 1 ? "s" : ""}, ` : ""}{contributions.en_attente} en attente de relecture</span>}
             </span>
           </Link>
         </nav>
