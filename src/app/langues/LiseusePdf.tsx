@@ -150,7 +150,13 @@ export function LiseusePdf({ document: d, onFermer }: { document: DocumentLangue
       if (!s || s.isCollapsed || !texte.current) return setSelection(null);
       const r = s.getRangeAt(0);
       if (!texte.current.contains(r.commonAncestorContainer)) return setSelection(null);
-      const t = s.toString().replace(/\s+/g, " ").trim();
+      // Un mot coupé par la sélection est pris en entier.
+      const debut = (r.startContainer.parentElement ?? null)?.closest(".lg-pdf-mot");
+      const fin = (r.endContainer.parentElement ?? null)?.closest(".lg-pdf-mot");
+      const etendue = r.cloneRange();
+      if (debut) etendue.setStartBefore(debut);
+      if (fin) etendue.setEndAfter(fin);
+      const t = etendue.toString().replace(/\s+/g, " ").trim();
       if (t.length < 2 || !/\s/.test(t)) return setSelection(null);
       const b = r.getBoundingClientRect();
       setSelection({ texte: t.slice(0, 5000), rect: { top: b.top, left: b.left, bottom: b.bottom, width: b.width } });
