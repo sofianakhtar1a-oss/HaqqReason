@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { exigerCompte } from "@/lib/compte/session";
 import { chargerModule } from "@/lib/modules/page";
 import { BandeauApercu, TextesModule } from "@/lib/modules/textes-client";
 import { Alambic } from "./Alambic";
@@ -11,6 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function PageAlambic({ searchParams }: Props) {
+  await exigerCompte("/alambic");
   const { resolu, apercu } = await chargerModule("alambic", searchParams);
   return (
     <TextesModule id="alambic" resolu={resolu}>

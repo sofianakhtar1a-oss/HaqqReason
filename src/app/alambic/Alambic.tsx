@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Captions, Cloud, Layers, Scissors, ShieldCheck, Shuffle, WifiOff } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BoutonTheme } from "@/components/BoutonTheme";
+import { BoutonCompte } from "@/components/compte/BoutonCompte";
 import { Logo } from "@/components/Logo";
 import { FAMILLES, FORMATS } from "@/lib/alambic/formats";
 import { CAPACITES_PAR_DEFAUT, type Capacites } from "@/lib/alambic/graphe";
@@ -85,7 +86,7 @@ export function Alambic() {
         </span>
         <span className="flex-1" />
         {outil === "transcrire" ? (
-          <span className="alambic-local" data-nuage="" title="Pour transcrire, le son est envoyé à Groq (Whisper). Le texte reste sur ton appareil.">
+          <span className="alambic-local" data-nuage="" title="Pour transcrire, le son est envoyé à Groq (Whisper). Le texte est rangé dans ta bibliothèque.">
             <Cloud className="size-4" aria-hidden="true" />
             {t("badge.nuage")}
           </span>
@@ -96,6 +97,7 @@ export function Alambic() {
           </span>
         )}
         <BoutonTheme />
+        <BoutonCompte />
         {accesComplet && (
           <Link href="/utilisateur" className="calame-sortie">
             Quitter

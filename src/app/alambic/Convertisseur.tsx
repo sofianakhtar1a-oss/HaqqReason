@@ -132,7 +132,7 @@ export function Convertisseur({ capacites, abonner }: { capacites: Capacites; ab
       doc.signes = texte.length;
       await depot.ecrireDocument(doc);
       try {
-        window.localStorage.setItem("calame-dernier-document", doc.id);
+        window.localStorage.setItem((await import("@/lib/client/compte")).tiroir("calame-dernier-document"), doc.id);
       } catch {}
       router.push("/ecrire");
     } catch (e) {
