@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, Captions, FileUp, Languages, ListVideo, MousePointerClick, Pause, Play, Repeat, SkipBack, SkipForward } from "lucide-react";
+import { ArrowLeft, Captions, FileUp, ListVideo, Maximize2, MousePointerClick, Pause, Play, Repeat, SkipBack, SkipForward } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { dureeLisible } from "@/lib/alambic/transcription/exports";
 import { motA, phraseA } from "@/lib/alambic/transcription/phrases";
@@ -17,18 +17,30 @@ import { GloseMot } from "./GloseMot";
  * Le texte complet suit la voix, et chaque phrase y ramène.
  */
 
-type Reglages = { francais: boolean; pauseAuMot: boolean; boucle: boolean; vitesse: number; texte: boolean };
+/**
+ * Sous-titres : « source » (la langue de la vidéo, un mot touché se traduit), « deux » (la phrase et sa traduction dessous),
+ * « traduction » (uniquement la traduction).
+ */
+type Affichage = "source" | "deux" | "traduction";
+type Reglages = { affichage: Affichage; pauseAuMot: boolean; boucle: boolean; vitesse: number; texte: boolean; taille: number };
 const CLE = "haqqreason-truchement-immersion";
 const VITESSES = [0.75, 0.9, 1];
+const TAILLE_MIN = 35;
 
 function reglagesInitiaux(): Reglages {
-  const defaut: Reglages = { francais: true, pauseAuMot: true, boucle: false, vitesse: 1, texte: true };
+  const defaut: Reglages = { affichage: "deux", pauseAuMot: true, boucle: false, vitesse: 1, texte: true, taille: 100 };
   try {
-    return { ...defaut, ...(JSON.parse(localStorage.getItem(CLE) ?? "{}") as Partial<Reglages>), boucle: false };
+    const lu = JSON.parse(localStorage.getItem(CLE) ?? "{}") as Partial<Reglages> & { francais?: boolean };
+    // Réglage d'avant : « Français » coché ou non.
+    const affichage: Affichage = lu.affichage ?? (lu.francais === false ? "source" : "deux");
+    const taille = Math.min(100, Math.max(TAILLE_MIN, Number(lu.taille) || 100));
+    return { ...defaut, ...lu, affichage, taille, boucle: false };
   } catch {
     return defaut;
   }
 }
+
+const NOM_LANGUE = { en: "Anglais", fr: "Français" } as const;
 
 type Media = { type: "fichier"; url: string; video: boolean } | { type: "youtube"; id: string } | null;
 
@@ -59,7 +71,10 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
     dernier.current = { ...dernier.current, ...maj };
     void ecrire("medias", dernier.current).catch(() => undefined);
   }, []);
-  const { traductions, analyses, erreur, traduire, analyser } = useTraductions(t, enregistrer);
+  // Une vidéo française se traduit en anglais ; une vidéo anglaise, en français.
+  const langue: "en" | "fr" = t.langue === "fr" ? "fr" : "en";
+  const autre: "en" | "fr" = langue === "fr" ? "en" : "fr";
+  const { traductions, analyses, erreur, traduire, analyser } = useTraductions(t, enregistrer, autre);
 
   // Le son ou la vidéo d'un fichier : gardé sur l'appareil.
   useEffect(() => {
@@ -153,10 +168,11 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
 
   // Traduction de la phrase en cours et des voisines, par petits lots.
   const courante = Math.max(0, actif.phrase);
+  const avecTraduction = reglages.affichage !== "source";
   useEffect(() => {
-    if (!reglages.francais) return;
+    if (!avecTraduction) return;
     traduire([courante - 1, courante, courante + 1, courante + 2, courante + 3].filter((x) => x >= 0 && x < t.phrases.length));
-  }, [courante, reglages.francais, traduire, t.phrases.length]);
+  }, [courante, avecTraduction, traduire, t.phrases.length]);
 
   useEffect(() => {
     if (glose) analyser(glose.phrase);
@@ -274,7 +290,7 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
 
       <div className="lg-immersion-grille">
         <div className="lg-immersion-principal">
-          <div className="lg-ecran" data-video={video || undefined}>
+          <div className="lg-ecran" data-video={video || undefined} style={video ? { width: `${reglages.taille}%` } : undefined}>
             {media?.type === "fichier" &&
               (media.video ? (
                 <video ref={element} src={media.url} playsInline preload="metadata" onClick={basculer} />
@@ -311,27 +327,37 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
             )}
           </div>
 
-          <div className="lg-soustitres" aria-live="off">
+          <div className="lg-soustitres" aria-live="off" data-affichage={reglages.affichage}>
             {precedente && (
-              <p className="lg-st-voisine" lang="en">
+              <p className="lg-st-voisine" lang={reglages.affichage === "traduction" && traductions[precedente.id] ? autre : langue}>
                 <button type="button" onClick={() => aller(precedente.debut)}>
-                  {texteDe(precedente)}
+                  {reglages.affichage === "traduction" ? (traductions[precedente.id] ?? texteDe(precedente)) : texteDe(precedente)}
                 </button>
               </p>
             )}
-            <PhraseCliquable phrase={ph} actif={actif.phrase === ph.id ? actif.mot : -1} onMot={(i, el, doigt) => toucherMot(ph.id, i, el, doigt)}
-              onAppui={() => reglages.pauseAuMot && controleRef.current.pause()}
-              glose={glose?.phrase === ph.id ? glose.mot : -1}
-            />
-            {reglages.francais && (
-              <p className="lg-st-fr" data-vide={!traductions[ph.id] || undefined}>
+            {reglages.affichage === "traduction" ? (
+              <p className="lg-st-courante lg-st-seule" lang={autre} data-vide={!traductions[ph.id] || undefined}>
+                {traductions[ph.id] ?? (erreur ? erreur : "Traduction en cours…")}
+              </p>
+            ) : (
+              <PhraseCliquable
+                phrase={ph}
+                langue={langue}
+                actif={actif.phrase === ph.id ? actif.mot : -1}
+                onMot={(i, el, doigt) => toucherMot(ph.id, i, el, doigt)}
+                onAppui={() => reglages.pauseAuMot && controleRef.current.pause()}
+                glose={glose?.phrase === ph.id ? glose.mot : -1}
+              />
+            )}
+            {reglages.affichage === "deux" && (
+              <p className="lg-st-fr" lang={autre} data-vide={!traductions[ph.id] || undefined}>
                 {traductions[ph.id] ?? (erreur ? erreur : " ")}
               </p>
             )}
             {suivante && (
-              <p className="lg-st-voisine" lang="en">
+              <p className="lg-st-voisine" lang={reglages.affichage === "traduction" && traductions[suivante.id] ? autre : langue}>
                 <button type="button" onClick={() => aller(suivante.debut)}>
-                  {texteDe(suivante)}
+                  {reglages.affichage === "traduction" ? (traductions[suivante.id] ?? texteDe(suivante)) : texteDe(suivante)}
                 </button>
               </p>
             )}
@@ -384,10 +410,6 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
                 <span className="lg-option-vitesse">{String(reglages.vitesse).replace(".", ",")}×</span>
                 Vitesse
               </button>
-              <button type="button" className="lg-option" aria-pressed={reglages.francais} onClick={() => setReglages((r) => ({ ...r, francais: !r.francais }))} title="Traduction française de la phrase">
-                <Languages className="size-4" aria-hidden="true" />
-                Français
-              </button>
               <button type="button" className="lg-option" aria-pressed={reglages.pauseAuMot} onClick={() => setReglages((r) => ({ ...r, pauseAuMot: !r.pauseAuMot }))} title="Mettre en pause quand on touche un mot">
                 <MousePointerClick className="size-4" aria-hidden="true" />
                 Pause au mot
@@ -397,6 +419,47 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
                 Texte
               </button>
             </div>
+            <div className="lg-reglages-st" role="radiogroup" aria-label="Sous-titres">
+              <span className="lg-reglages-st-titre">
+                <Captions className="size-4" aria-hidden="true" />
+                Sous-titres
+              </span>
+              {(
+                [
+                  ["source", `${NOM_LANGUE[langue]}`, `${NOM_LANGUE[langue]} seul : touche un mot pour sa traduction en ${NOM_LANGUE[autre].toLowerCase()}`],
+                  ["deux", `${NOM_LANGUE[langue]} + ${NOM_LANGUE[autre].toLowerCase()}`, `La phrase en ${NOM_LANGUE[langue].toLowerCase()}, sa traduction dessous`],
+                  ["traduction", `${NOM_LANGUE[autre]}`, `Uniquement la traduction en ${NOM_LANGUE[autre].toLowerCase()}`],
+                ] as const
+              ).map(([valeur, libelle, aide]) => (
+                <button
+                  key={valeur}
+                  type="button"
+                  role="radio"
+                  aria-checked={reglages.affichage === valeur}
+                  className="lg-st-choix"
+                  title={aide}
+                  onClick={() => setReglages((r) => ({ ...r, affichage: valeur }))}
+                >
+                  {libelle}
+                </button>
+              ))}
+            </div>
+            {video && (
+              <label className="lg-taille">
+                <Maximize2 className="size-4 shrink-0" aria-hidden="true" />
+                <span className="lg-taille-titre">Taille de l&apos;image</span>
+                <input
+                  type="range"
+                  min={TAILLE_MIN}
+                  max={100}
+                  step={5}
+                  value={reglages.taille}
+                  onChange={(e) => setReglages((r) => ({ ...r, taille: Number(e.target.value) }))}
+                  aria-valuetext={`${reglages.taille} %`}
+                />
+                <span className="lg-taille-valeur">{reglages.taille} %</span>
+              </label>
+            )}
           </div>
         </div>
 
@@ -412,7 +475,7 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
                 <li key={p.id} data-id={p.id} data-actif={p.id === actif.phrase || undefined}>
                   <button type="button" onClick={() => aller(p.debut)}>
                     <span className="lg-transcript-t">{dureeLisible(p.debut)}</span>
-                    <span lang="en">{texteDe(p)}</span>
+                    <span lang={langue}>{texteDe(p)}</span>
                   </button>
                 </li>
               ))}
@@ -430,6 +493,7 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
           erreur={erreur}
           origine={{ type: "video", titre: t.titre, ref: t.id, t: phraseGlose.debut }}
           tactile={tactile}
+          langue={langue}
           onFermer={() => setGlose(null)}
           onMot={(i, el) => setGlose({ phrase: glose.phrase, mot: i, el, via: "toucher" })}
           onEcouter={(s) => {
@@ -442,13 +506,27 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
   );
 }
 
-function PhraseCliquable({ phrase, actif, glose, onMot, onAppui }: { phrase: Phrase; actif: number; glose: number; onMot: (i: number, el: HTMLElement, doigt: boolean) => void; onAppui: () => void }) {
+function PhraseCliquable({
+  phrase,
+  langue,
+  actif,
+  glose,
+  onMot,
+  onAppui,
+}: {
+  phrase: Phrase;
+  langue: "en" | "fr";
+  actif: number;
+  glose: number;
+  onMot: (i: number, el: HTMLElement, doigt: boolean) => void;
+  onAppui: () => void;
+}) {
   const pointeur = useRef("mouse");
   const mots = useMemo(() => phrase.mots, [phrase]);
   return (
     <p
       className="lg-st-courante"
-      lang="en"
+      lang={langue}
       onPointerDown={(e) => {
         pointeur.current = e.pointerType;
         // La phrase se fige dès l'appui : elle ne change pas sous le doigt avant le clic.
