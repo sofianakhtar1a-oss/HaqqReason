@@ -32,3 +32,13 @@ export function racineEspace(espace: unknown, mode: "public" | "createur"): { hr
   const e = ESPACES[espaceValide(espace)];
   return mode === "public" ? { href: e.public, libelle: e.libellePublic } : { href: e.createur, libelle: e.libelleCreateur };
 }
+
+/**
+ * Début du fil d'Ariane jusqu'au bloc compris. « L'Islam authentique » n'a qu'un bloc, invisible :
+ * ses catégories sont rangées directement sous le module.
+ */
+export function etapesBloc(bloc: { espace: unknown; slug: string; titre: string }, mode: "public" | "createur"): { href: string; libelle: string }[] {
+  const racine = racineEspace(bloc.espace, mode);
+  if (espaceValide(bloc.espace) === "islam") return [racine];
+  return [racine, { href: mode === "public" ? `/explorer/${bloc.slug}` : `/createur/bloc/${bloc.slug}`, libelle: bloc.titre }];
+}
