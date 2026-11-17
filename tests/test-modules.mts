@@ -45,5 +45,21 @@ ok("valeur égale à l'origine non stockée", Object.keys(nettoyerContenu("calam
 ok("remplissage des variables", remplir("{mots} mots, {themes} thèmes", { mots: 600, themes: 12 }) === "600 mots, 12 thèmes");
 ok("contenu vide sûr pour tous les modules", (["accueil", "calame", "alambic", "langues"] as const).every((id) => resoudre(id, contenuVide()).textes && resoudre(id, nettoyerContenu(id, "n'importe quoi")).textes));
 
+// Vocabulaire publié puis code enrichi : les mots ajoutés au code apparaissent, les retraits volontaires restent retirés.
+const origine = themesDOrigine();
+const totalOrigine = origine.reduce((n, t) => n + t.entrees.length, 0);
+const fige = origine.slice(0, 5).map((t) => ({ ...t, entrees: t.entrees.slice(0, 10) }));
+const publieAncien = nettoyerContenu("langues", { themes: fige });
+const vu = resoudre("langues", publieAncien).themes!;
+ok("mots et thèmes ajoutés au code depuis la publication visibles", vu.length === origine.length && vu.reduce((n, t) => n + t.entrees.length, 0) === totalOrigine, `${vu.length} thèmes, ${vu.reduce((n, t) => n + t.entrees.length, 0)} mots`);
+const motRetire = origine[0].entrees[0].id;
+const avecRetrait = nettoyerContenu("langues", { themes: [{ ...origine[0], entrees: origine[0].entrees.slice(1) }], retires: [motRetire, origine[1].id, "pas valable !"] });
+const vu2 = resoudre("langues", avecRetrait).themes!;
+ok("mot retiré exprès absent, même corbeille vide", !vu2[0].entrees.some((x) => x.id === motRetire));
+ok("thème retiré exprès absent", !vu2.some((t) => t.id === origine[1].id) && vu2.length === origine.length - 1);
+ok("identifiants de retrait assainis", avecRetrait.retires?.length === 2);
+ok("modification du créateur prioritaire sur le code", resoudre("langues", nettoyerContenu("langues", { themes: [{ ...origine[0], nom: "Ma famille" }] })).themes![0].nom === "Ma famille");
+ok("carte du Truchement : nombres remplis", remplir(resoudre("accueil", null).listes.cartes.find((x) => x.id === "langues")!.valeurs.texte, { mots: "6 589", themes: 45 }).includes("6 589 mots en 45 thèmes"));
+
 console.log(e ? `\n${e} échec(s)` : "\nTout est bon.");
 process.exit(e ? 1 : 0);

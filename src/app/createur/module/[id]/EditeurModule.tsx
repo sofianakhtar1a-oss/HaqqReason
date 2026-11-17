@@ -17,6 +17,7 @@ import {
   NIVEAUX_MOTS,
   type Supprime,
   type ThemeEdite,
+  themesComplets,
   themesDOrigine,
   valeurElement,
 } from "@/lib/modules/modules";
@@ -41,6 +42,8 @@ const slug = (s: string) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "")
     .slice(0, 40) || "x";
+/** Note qu'un thème ou un mot d'origine a été retiré exprès (il ne reviendra pas avec les mises à jour du code). */
+const ajouterRetire = (r: string[] | undefined, id: string) => [...new Set([...(r ?? []), id])];
 /** L'heure courante (hors du rendu : appelée seulement dans les gestionnaires). */
 const maintenant = () => Date.now();
 const heure = (t: number) => new Date(t).toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
@@ -129,20 +132,22 @@ export function EditeurModule({ id, etatInitial }: { id: ModuleId; etatInitial: 
 
   /* ---------- Vocabulaire ---------- */
 
-  const themes = contenu.themes ?? themesDOrigine();
-  const changerThemes = (f: (t: ThemeEdite[]) => ThemeEdite[]) => modifier((c) => ({ ...c, themes: f(c.themes ?? themesDOrigine()) }));
+  const themes = themesComplets(contenu);
+  const origine = themesDOrigine();
+  const motsDOrigine = origine.reduce((n, t) => n + t.entrees.length, 0);
+  const changerThemes = (f: (t: ThemeEdite[]) => ThemeEdite[]) => modifier((c) => ({ ...c, themes: f(themesComplets(c)) }));
 
   const supprimerTheme = (index: number) =>
     modifier((c) => {
-      const liste = c.themes ?? themesDOrigine();
+      const liste = themesComplets(c);
       const t = liste[index];
       if (!t) return c;
-      return { ...c, themes: liste.filter((_, i) => i !== index), corbeille: [...c.corbeille, { id: idUnique(), type: "theme", libelle: t.nom, le: maintenant(), donnees: t, position: index }] };
+      return { ...c, themes: liste.filter((_, i) => i !== index), retires: ajouterRetire(c.retires, t.id), corbeille: [...c.corbeille, { id: idUnique(), type: "theme", libelle: t.nom, le: maintenant(), donnees: t, position: index }] };
     });
 
   const supprimerMot = (themeId: string, motId: string) =>
     modifier((c) => {
-      const liste = c.themes ?? themesDOrigine();
+      const liste = themesComplets(c);
       const t = liste.find((x) => x.id === themeId);
       const position = t?.entrees.findIndex((e) => e.id === motId) ?? -1;
       if (!t || position < 0) return c;
@@ -150,6 +155,7 @@ export function EditeurModule({ id, etatInitial }: { id: ModuleId; etatInitial: 
       return {
         ...c,
         themes: liste.map((x) => (x.id === themeId ? { ...x, entrees: x.entrees.filter((e) => e.id !== motId) } : x)),
+        retires: ajouterRetire(c.retires, motId),
         corbeille: [...c.corbeille, { id: idUnique(), type: "mot", theme: themeId, libelle: `${mot.en} (${t.nom})`, le: maintenant(), donnees: mot, position }],
       };
     });
@@ -166,12 +172,14 @@ export function EditeurModule({ id, etatInitial }: { id: ModuleId; etatInitial: 
         els.splice(Math.min(s.position, els.length), 0, s.donnees);
         return { ...c, corbeille, listes: { ...c.listes, [l.id]: els } };
       }
-      const liste = [...(c.themes ?? themesDOrigine())];
+      const retires = (c.retires ?? []).filter((x) => x !== s.donnees.id);
+      // Calculé avant la remise : l'élément est encore en corbeille, donc la fusion ne le rajoute pas en double.
+      const liste = [...themesComplets(c)];
       if (s.type === "theme") {
         let th = s.donnees;
         if (liste.some((x) => x.id === th.id)) th = { ...th, id: `${th.id}-${slug(idUnique()).slice(0, 4)}` };
         liste.splice(Math.min(s.position, liste.length), 0, th);
-        return { ...c, corbeille, themes: liste };
+        return { ...c, corbeille, retires, themes: liste };
       }
       let t = liste.findIndex((x) => x.id === s.theme);
       if (t < 0) {
@@ -182,7 +190,7 @@ export function EditeurModule({ id, etatInitial }: { id: ModuleId; etatInitial: 
       const entrees = liste[t].entrees.filter((e) => e.id !== s.donnees.id);
       entrees.splice(Math.min(s.position, entrees.length), 0, s.donnees);
       liste[t] = { ...liste[t], entrees };
-      return { ...c, corbeille, themes: liste };
+      return { ...c, corbeille, retires, themes: liste };
     });
 
   /* ---------- Rendu ---------- */
@@ -318,9 +326,9 @@ export function EditeurModule({ id, etatInitial }: { id: ModuleId; etatInitial: 
               onOrigine={() =>
                 setConfirmer({
                   titre: "Reprendre le vocabulaire d'origine ?",
-                  texte: "Les 33 thèmes et les 2 589 mots d'origine remplacent le vocabulaire du brouillon. La version actuelle reste dans l'historique une fois publiée, et « Annuler les modifications » la ramène tant que rien n'est publié.",
+                  texte: `Les ${origine.length} thèmes et les ${motsDOrigine.toLocaleString("fr-FR")} mots d'origine remplacent le vocabulaire du brouillon. La version actuelle reste dans l'historique une fois publiée, et « Annuler les modifications » la ramène tant que rien n'est publié.`,
                   bouton: "Reprendre l'origine",
-                  action: () => modifier((c) => ({ ...c, themes: undefined })),
+                  action: () => modifier((c) => ({ ...c, themes: undefined, retires: undefined })),
                 })
               }
             />
@@ -456,6 +464,7 @@ function ChampTexte({ champ, valeur, modifie, onChange }: { champ: Champ; valeur
       ) : (
         <input value={valeur} inputMode={champ.nombre ? "numeric" : undefined} type={champ.nombre ? "number" : "text"} min={champ.nombre?.min} max={champ.nombre?.max} onChange={(e) => onChange(e.target.value)} />
       )}
+      {champ.cle.startsWith("meta.") && <span className="em-aide">N&apos;apparaît pas dans la page : {champ.cle === "meta.titre" ? "c'est le nom de l'onglet du navigateur" : "c'est le résumé que Google affiche sous le lien du site"}.</span>}
       {champ.aide && <span className="em-aide">{champ.aide}</span>}
     </label>
   );
@@ -515,7 +524,7 @@ function EditeurListe({ def, elements, onChange, onSupprimer }: { def: DefListe;
                 <div className="em-champs em-element-corps">
                   {def.champs.map((ch) => {
                     const origine = def.elements.find((d) => d.id === e.id)?.valeurs[ch.cle] ?? "";
-                    const champ: Champ = { cle: ch.cle, libelle: ch.libelle, defaut: origine, long: ch.long };
+                    const champ: Champ = { cle: ch.cle, libelle: ch.libelle, defaut: origine, long: ch.long, aide: ch.aide };
                     return (
                       <ChampTexte
                         key={ch.cle}

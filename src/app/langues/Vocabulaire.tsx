@@ -114,7 +114,7 @@ function Themes({ onOuvrir, lancer }: Pick<Props, "onOuvrir" | "lancer">) {
             {t("vocabulaire.titre")}
           </h2>
           <p className="lg-chapo">
-            {t("vocabulaire.chapo", { mots: toutes.length, themes: themes.length })}
+            {t("vocabulaire.chapo", { mots: toutes.length.toLocaleString("fr-FR"), themes: themes.length })}
           </p>
         </div>
       </div>

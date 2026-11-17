@@ -22,7 +22,7 @@ export type DefListe = {
   titre: string;
   aide: string;
   /** Les champs modifiables de chaque élément. */
-  champs: { cle: string; libelle: string; long?: boolean }[];
+  champs: { cle: string; libelle: string; long?: boolean; aide?: string }[];
   /** Les éléments d'origine, avec leurs valeurs. */
   elements: { id: string; valeurs: Record<string, string> }[];
   /** Le champ qui nomme l'élément dans l'éditeur. */
@@ -53,8 +53,10 @@ export type Contenu = {
   /** Seuls les textes changés sont gardés ; les autres suivent la valeur d'origine. */
   textes: Record<string, string>;
   listes: Record<string, ElementListe[]>;
-  /** Absent : le vocabulaire d'origine. */
+  /** Absent : le vocabulaire d'origine. Présent : les thèmes modifiés ; les mots ajoutés au code depuis s'y ajoutent à l'affichage. */
   themes?: ThemeEdite[];
+  /** Thèmes (« id ») et mots (« theme:mot ») d'origine retirés exprès : ils ne reviennent pas, même corbeille vidée. */
+  retires?: string[];
   corbeille: Supprime[];
 };
 
@@ -88,7 +90,7 @@ const ACCUEIL: DefModule = {
         { cle: "marque", libelle: "Petit mot en haut à droite" },
         { cle: "soustitre", libelle: "Sur-titre" },
         { cle: "titre", libelle: "Titre" },
-        { cle: "texte", libelle: "Texte", long: true },
+        { cle: "texte", libelle: "Texte", long: true, aide: "Dans la carte du Truchement, {mots} et {themes} sont remplacés par les nombres réels du vocabulaire." },
       ],
       elements: [
         {
@@ -115,7 +117,7 @@ const ACCUEIL: DefModule = {
             titre: "Le Truchement",
             soustitre: "Apprendre les langues",
             marque: "Apprendre",
-            texte: "L'anglais pour commencer : 600 mots en douze thèmes révisés au bon moment, des vidéos et des PDF où chaque mot se traduit d'un toucher, et ton propre dictionnaire. Ta progression te suit sur tous tes appareils avec ton compte.",
+            texte: "L'anglais pour commencer : {mots} mots en {themes} thèmes, du niveau A1 au C2, révisés au bon moment, des vidéos et des PDF où chaque mot se traduit d'un toucher, et ton propre dictionnaire. Ta progression te suit sur tous tes appareils avec ton compte.",
           },
         },
         {
@@ -248,7 +250,8 @@ const LANGUES: DefModule = {
         {
           cle: "meta.description",
           libelle: "Description pour Google",
-          defaut: "Apprendre l'anglais depuis le français : 600 mots en douze thèmes révisés au bon moment, des vidéos et des PDF où chaque mot se traduit d'un toucher, et ton dictionnaire personnel. Ta progression te suit sur tous tes appareils.",
+          defaut: "Apprendre l'anglais depuis le français : {mots} mots en {themes} thèmes, du niveau A1 au C2, révisés au bon moment, des vidéos et des PDF où chaque mot se traduit d'un toucher, et ton dictionnaire personnel. Ta progression te suit sur tous tes appareils.",
+          aide: "{mots} et {themes} sont remplacés par les nombres réels.",
           long: true,
         },
         { cle: "tete.titre", libelle: "Nom dans la barre du haut", defaut: "Le Truchement" },
@@ -334,6 +337,31 @@ export const NATURES_MOTS = ["nom", "verbe", "adjectif", "adverbe", "expression"
 
 export const themesDOrigine = (): ThemeEdite[] => THEMES.map((t) => ({ id: t.id, nom: t.nom, description: t.description, icone: t.icone, visible: true, entrees: t.entrees }));
 
+/**
+ * Le vocabulaire tel qu'il s'affiche : les thèmes modifiés par le créateur, complétés des thèmes et des mots
+ * ajoutés au code depuis leur publication. Ce qui a été retiré exprès (liste « retires », ou corbeille) ne revient pas.
+ */
+export function themesComplets(c: Contenu): ThemeEdite[] {
+  const origine = themesDOrigine();
+  if (!c.themes) return origine;
+  const retires = new Set(c.retires ?? []);
+  for (const s of c.corbeille) {
+    if (s.type === "theme") retires.add(s.donnees.id);
+    else if (s.type === "mot") retires.add(s.donnees.id);
+  }
+  const parId = new Map(origine.map((t) => [t.id, t]));
+  const sortie = c.themes.map((t) => {
+    const o = parId.get(t.id);
+    if (!o) return t;
+    const presents = new Set(t.entrees.map((e) => e.id));
+    const ajouts = o.entrees.filter((e) => !presents.has(e.id) && !retires.has(e.id));
+    return ajouts.length ? { ...t, entrees: [...t.entrees, ...ajouts] } : t;
+  });
+  const connus = new Set(c.themes.map((t) => t.id));
+  for (const o of origine) if (!connus.has(o.id) && !retires.has(o.id)) sortie.push(o);
+  return sortie;
+}
+
 /* ---------- Résolution : ce que voit le visiteur ---------- */
 
 export type Resolu = {
@@ -369,7 +397,7 @@ export function resoudre(id: ModuleId, c: Contenu | null): Resolu {
   }
   const r: Resolu = { textes, listes };
   if (def.vocabulaire) {
-    r.themes = (contenu.themes ?? themesDOrigine()).filter((t) => t.visible).map((t) => ({ id: t.id, nom: t.nom, description: t.description, icone: t.icone, entrees: t.entrees }));
+    r.themes = themesComplets(contenu).filter((t) => t.visible).map((t) => ({ id: t.id, nom: t.nom, description: t.description, icone: t.icone, entrees: t.entrees }));
   }
   return r;
 }
@@ -416,7 +444,7 @@ function nettoyerTheme(brut: unknown): ThemeEdite | null {
   if (!id || !nom) return null;
   const vus = new Set<string>();
   const entrees: Entree[] = [];
-  for (const e of Array.isArray(o.entrees) ? o.entrees.slice(0, 2000) : []) {
+  for (const e of Array.isArray(o.entrees) ? o.entrees.slice(0, 3000) : []) {
     const n = nettoyerEntree(e, id);
     if (!n || vus.has(n.id)) continue;
     vus.add(n.id);
@@ -470,6 +498,10 @@ export function nettoyerContenu(id: ModuleId, brut: unknown): Contenu {
       .slice(0, 80)
       .map(nettoyerTheme)
       .filter((x): x is ThemeEdite => x !== null && !vus.has(x.id) && Boolean(vus.add(x.id)));
+  }
+  if (def.vocabulaire && Array.isArray(o.retires)) {
+    const r = [...new Set((o.retires as unknown[]).filter((x): x is string => typeof x === "string" && /^[a-z0-9-]+(:[a-z0-9-]+)?$/.test(x)))].slice(0, 10000);
+    if (r.length) c.retires = r;
   }
   for (const s of Array.isArray(o.corbeille) ? (o.corbeille as unknown[]).slice(-300) : []) {
     const x = (s ?? {}) as Record<string, unknown>;

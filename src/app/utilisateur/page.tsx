@@ -12,7 +12,8 @@ import { EnTete } from "@/components/EnTete";
 import { Rosace } from "@/components/Rosace";
 import { MarqueAccueil } from "@/lib/client/acces";
 import { exigerCompte } from "@/lib/compte/session";
-import { chargerModule } from "@/lib/modules/page";
+import { remplir } from "@/lib/modules/modules";
+import { chargerModule, chiffresVocabulaire } from "@/lib/modules/page";
 import { BandeauApercu } from "@/lib/modules/textes-client";
 
 const ICONES = {
@@ -42,16 +43,16 @@ type Props = {
 };
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { resolu } = await chargerModule("accueil");
+  const [{ resolu }, chiffres] = await Promise.all([chargerModule("accueil"), chiffresVocabulaire()]);
   return {
     title: "Mode utilisateur",
-    description: resolu.textes["meta.description"],
+    description: remplir(resolu.textes["meta.description"], chiffres),
   };
 }
 
 export default async function PageUtilisateur({ searchParams }: Props) {
   await exigerCompte("/utilisateur");
-  const { resolu, apercu } = await chargerModule("accueil", searchParams);
+  const [{ resolu, apercu }, chiffres] = await Promise.all([chargerModule("accueil", searchParams), chiffresVocabulaire()]);
   const cartes = (resolu.listes.cartes ?? []).filter((c) => c.id in LIENS);
   return (
     <>
@@ -64,7 +65,7 @@ export default async function PageUtilisateur({ searchParams }: Props) {
           {resolu.textes.titre}
         </h1>
         <p className="mt-3 max-w-[58ch] text-lg text-encre-douce">
-          {resolu.textes.intro}
+          {remplir(resolu.textes.intro, chiffres)}
         </p>
 
         <nav
@@ -90,7 +91,7 @@ export default async function PageUtilisateur({ searchParams }: Props) {
                   />
                   <span className="carte-choix-sur">{soustitre}</span>
                   <span className="carte-choix-titre">{titre}</span>
-                  <span className="carte-choix-texte">{texte}</span>
+                  <span className="carte-choix-texte">{remplir(texte, chiffres)}</span>
                   <span className="carte-choix-pied">
                     Entrer
                     <ArrowRight className="size-4" aria-hidden="true" />

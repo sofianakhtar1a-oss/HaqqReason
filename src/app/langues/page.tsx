@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { exigerCompte } from "@/lib/compte/session";
-import { chargerModule } from "@/lib/modules/page";
+import { remplir } from "@/lib/modules/modules";
+import { chargerModule, chiffresDe } from "@/lib/modules/page";
 import { BandeauApercu, TextesModule } from "@/lib/modules/textes-client";
 import { Truchement } from "./Truchement";
 
@@ -8,7 +9,7 @@ type Props = { searchParams: Promise<Record<string, string | string[] | undefine
 
 export async function generateMetadata(): Promise<Metadata> {
   const { resolu } = await chargerModule("langues");
-  return { title: resolu.textes["meta.titre"], description: resolu.textes["meta.description"] };
+  return { title: resolu.textes["meta.titre"], description: remplir(resolu.textes["meta.description"], chiffresDe(resolu)) };
 }
 
 export default async function PageLangues({ searchParams }: Props) {
