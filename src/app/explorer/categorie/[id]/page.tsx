@@ -14,6 +14,7 @@ import { listerFichiers } from "@/lib/fichiers-donnees";
 import { estUuid } from "@/lib/validation";
 import { Printer } from "lucide-react";
 import { BoutonPartage } from "@/components/lecture/BoutonPartage";
+import { racineEspace } from "@/lib/espaces";
 
 export async function generateMetadata({ params }: PageProps<"/explorer/categorie/[id]">): Promise<Metadata> {
   const { id } = await params;
@@ -61,7 +62,7 @@ export default async function PageCategorie({ params, searchParams }: PageProps<
       <main className="mx-auto w-full max-w-6xl flex-1 px-5 pb-16 pt-4 sm:px-8">
         <FilAriane
           etapes={[
-            { href: "/explorer", libelle: "La bibliothèque" },
+            racineEspace(bloc.donnees.espace, "public"),
             { href: `/explorer/${bloc.donnees.slug}`, libelle: bloc.donnees.titre },
             ...chemin.map((c) => ({ href: `/explorer/categorie/${c.id}`, libelle: c.titre })),
           ]}
