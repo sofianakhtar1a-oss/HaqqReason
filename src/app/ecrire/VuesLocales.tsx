@@ -39,7 +39,7 @@ export function VueImageLocale(props: NodeViewProps) {
       ) : (
         <span className="image-absente">
           <ImageOff className="size-5" aria-hidden="true" />
-          Image introuvable sur cet appareil
+          Image introuvable : elle est peut-être restée sur un autre appareil
         </span>
       )}
       <figcaption>
@@ -80,7 +80,7 @@ export function VueDocumentLocal(props: NodeViewProps) {
       <span className="min-w-0">
         <span className="block font-semibold">{attrs.nom || "Document"}</span>
         <span className="block text-sm text-encre-douce">
-          {poids !== null ? `${(poids / 1024 / 1024).toFixed(1)} Mo` : "Document joint"} · gardé sur cet appareil
+          {poids !== null ? `${(poids / 1024 / 1024).toFixed(1)} Mo` : "Document joint"} · joint au document
         </span>
       </span>
       {url && (

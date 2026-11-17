@@ -5,12 +5,14 @@ import { Node as NoeudTiptap, type AnyExtension } from "@tiptap/core";
 import type { Node as ProseMirrorNode } from "@tiptap/pm/model";
 import { ReactNodeViewRenderer, useEditor, type NodeViewProps } from "@tiptap/react";
 import { Placeholder } from "@tiptap/extensions";
-import { Check, Command, LoaderCircle, PanelLeft, PanelRight, Printer } from "lucide-react";
+import { Command, LoaderCircle, PanelLeft, PanelRight, Printer } from "lucide-react";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { compterMots, texteDuDocument } from "@/lib/document-schema";
 import { extensionsDocument } from "@/lib/editeur/extensions";
 import { sommaireDuDocument, type EntreeSommaire } from "@/lib/sommaire";
+import { BoutonCompte } from "@/components/compte/BoutonCompte";
+import { EtatEnregistre } from "@/components/compte/EtatEnregistre";
 import { ajouterFichier, ajouterVersion, ecrireDocument } from "@/lib/atelier/depot";
 import { geometrie, LIMITES_ATELIER, nettoyerReglages, tailleDuPapier, type DocumentAtelier, type ReglagesPage } from "@/lib/atelier/modele";
 import { BarreOutils } from "../createur/_composants/editeur/BarreOutils";
@@ -391,9 +393,7 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
           ) : etat === "modifie" ? (
             "Modifié"
           ) : (
-            <>
-              <Check className="size-4 text-emeraude" aria-hidden="true" /> Enregistré sur cet appareil
-            </>
+            <EtatEnregistre />
           )}
         </span>
 
@@ -409,6 +409,7 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
           <PanelRight className="size-5" aria-hidden="true" />
           <span className="sr-only">Afficher ou cacher la colonne de droite</span>
         </button>
+        <BoutonCompte />
         {accesComplet && (
           <Link href="/utilisateur" className="calame-sortie">
             Quitter

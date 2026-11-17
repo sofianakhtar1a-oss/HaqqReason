@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { exigerCompte } from "@/lib/compte/session";
 import { chargerModule } from "@/lib/modules/page";
 import { BandeauApercu, TextesModule } from "@/lib/modules/textes-client";
 import { Calame } from "./Calame";
@@ -11,6 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function PageEcrire({ searchParams }: Props) {
+  await exigerCompte("/ecrire");
   const { resolu, apercu } = await chargerModule("calame", searchParams);
   return (
     <TextesModule id="calame" resolu={resolu}>

@@ -271,8 +271,8 @@ export function Inspecteur({ reglages, surReglages, stats, surExport, enCours }:
               {enCours === "calame" ? "Préparation…" : "Sauvegarde complète (.calame)"}
             </button>
             <p className="inspecteur-aide">
-              La sauvegarde complète contient le texte, la mise en page et les images : c&apos;est elle qui permet de reprendre un document sur un autre
-              appareil.
+              La sauvegarde complète contient le texte, la mise en page et les images : un fichier à garder ou à transmettre à quelqu&apos;un. Avec ton
+              compte, tes documents te suivent déjà d&apos;un appareil à l&apos;autre.
             </p>
           </>
         )}

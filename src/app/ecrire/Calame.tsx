@@ -11,11 +11,17 @@ import {
   supprimerDocument,
 } from "@/lib/atelier/depot";
 import { documentVide, type DocumentAtelier } from "@/lib/atelier/modele";
+import { tiroir } from "@/lib/client/compte";
+import { attendreSynchro, EVENEMENT_RECU } from "@/lib/client/synchro/journal";
 import { useTextes } from "@/lib/modules/textes-client";
 import { Atelier } from "./Atelier";
 import { blobDuFichierPaquet, lirePaquet } from "./exporter";
 
-const DERNIER = "calame-dernier-document";
+/** Le dernier document ouvert, pour ce compte et sur cet appareil. */
+const dernier = {
+  lire: () => (typeof localStorage !== "undefined" ? localStorage.getItem(tiroir("calame-dernier-document")) : null),
+  ecrire: (id: string) => localStorage.setItem(tiroir("calame-dernier-document"), id),
+};
 
 /**
  * Le Calame — la coque.
@@ -36,6 +42,9 @@ export function Calame() {
     let vivant = true;
     void (async () => {
       try {
+        // Avec un compte : on laisse d'abord arriver les documents écrits sur un autre appareil,
+        // pour ne pas ouvrir une page blanche à leur place.
+        await attendreSynchro();
         let liste = await listerDocuments();
         if (liste.length === 0) {
           const premier = documentVide(nouvelIdentifiant(), premierTitre.current);
@@ -43,7 +52,7 @@ export function Calame() {
           liste = [premier];
         }
         if (!vivant) return;
-        const memorise = typeof localStorage !== "undefined" ? localStorage.getItem(DERNIER) : null;
+        const memorise = dernier.lire();
         const ouvert = liste.find((d) => d.id === memorise) ?? liste[0];
         setDocuments(liste);
         setActif(ouvert);
@@ -57,10 +66,27 @@ export function Calame() {
     };
   }, []);
 
+  // Des documents arrivent d'un autre appareil pendant qu'on est là : la liste se met à jour.
+  // Celui qui est ouvert n'est rechargé que s'il a disparu (supprimé ailleurs) : on ne touche jamais
+  // au texte en cours de frappe.
+  useEffect(() => {
+    const surReception = (e: Event) => {
+      const magasins = (e as CustomEvent<string[]>).detail;
+      if (!Array.isArray(magasins) || !magasins.includes("calame-documents")) return;
+      void listerDocuments().then((liste) => {
+        if (liste.length === 0) return;
+        setDocuments(liste);
+        setActif((courant) => (courant && liste.some((d) => d.id === courant.id) ? courant : liste[0]));
+      });
+    };
+    window.addEventListener(EVENEMENT_RECU, surReception);
+    return () => window.removeEventListener(EVENEMENT_RECU, surReception);
+  }, []);
+
   const ouvrir = useCallback(async (id: string) => {
     const doc = await lireDocument(id);
     if (!doc) return;
-    localStorage.setItem(DERNIER, id);
+    dernier.ecrire(id);
     setActif(doc);
   }, []);
 
@@ -68,7 +94,7 @@ export function Calame() {
     const doc = documentVide(nouvelIdentifiant());
     await ecrireDocument(doc);
     setDocuments((liste) => [doc, ...liste]);
-    localStorage.setItem(DERNIER, doc.id);
+    dernier.ecrire(doc.id);
     setActif(doc);
   }, []);
 
@@ -85,7 +111,7 @@ export function Calame() {
           setActif(doc);
         } else {
           setActif(liste[0]);
-          localStorage.setItem(DERNIER, liste[0].id);
+          dernier.ecrire(liste[0].id);
         }
       }
     },
@@ -104,7 +130,7 @@ export function Calame() {
       const doc: DocumentAtelier = { ...paquet.document, id: nouvelIdentifiant(), modifie: new Date().toISOString() };
       await ecrireDocument(doc);
       setDocuments(await listerDocuments());
-      localStorage.setItem(DERNIER, doc.id);
+      dernier.ecrire(doc.id);
       setActif(doc);
       setMessage("");
     } catch {
