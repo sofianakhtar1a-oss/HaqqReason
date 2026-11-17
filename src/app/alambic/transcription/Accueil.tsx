@@ -184,7 +184,7 @@ export function Accueil({ fichier, onFichier, onLancer, bibliotheque, onOuvrir, 
         </button>
         <p className="tr-note">
           <Cloud className="size-4 shrink-0" aria-hidden="true" />
-          Pour cet outil, le son part chez Groq, qui le transcrit avec Whisper. Le texte, lui, reste sur ton appareil.
+          Pour cet outil, le son part chez Groq, qui le transcrit avec Whisper. Le texte, lui, est rangé dans ta bibliothèque.
         </p>
       </div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useArrivees } from "@/lib/client/synchro/useArrivees";
 import { enregistrer, enregistrerMedia, lire, lireMedia, lister, type Resume, supprimer } from "@/lib/alambic/transcription/bibliotheque";
 import { type Etape, transcrireFichier, transcrireYoutube } from "@/lib/alambic/transcription/client";
 import type { Langue, Transcription as TypeTranscription } from "@/lib/alambic/transcription/types";
@@ -18,6 +19,8 @@ type Phase =
 
 const LIEN_LECTURE = "lire";
 
+const MAGASINS_TRANSCRIPTIONS = ["transcriptions"] as const;
+
 export function Transcription({ abonner }: { abonner: Abonner }) {
   const [phase, setPhase] = useState<Phase>({ nom: "accueil" });
   const [fichier, setFichier] = useState<File | null>(null);
@@ -28,6 +31,7 @@ export function Transcription({ abonner }: { abonner: Abonner }) {
 
   const rafraichir = useCallback(() => void lister().then(setBiblio), []);
   useEffect(rafraichir, [rafraichir]);
+  useArrivees(MAGASINS_TRANSCRIPTIONS, rafraichir);
 
   useReception(abonner, (fichiers) => {
     if (phase.nom !== "accueil") return;
