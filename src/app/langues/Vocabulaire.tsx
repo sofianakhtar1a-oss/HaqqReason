@@ -6,7 +6,7 @@ import { elementDEntree, nouveauMot } from "@/lib/langues/dictionnaire";
 import { estDue, type Maitrise, maitrise } from "@/lib/langues/srs";
 import { THEMES } from "@/lib/langues/themes/index";
 import { useResolu, useTextes } from "@/lib/modules/textes-client";
-import { type Carte, NIVEAUX, type Niveau, type Theme } from "@/lib/langues/types";
+import { type Carte, NIVEAUX, type Nature, type Niveau, type Theme } from "@/lib/langues/types";
 import { parler, voixDisponible } from "@/lib/langues/voix";
 import { ajouterMot, useDonnees } from "./donnees";
 import type { Lancement } from "./Seance";
@@ -146,6 +146,16 @@ const AFFICHAGES: [Affichage, string][] = [
   ["revision", "En révision"],
 ];
 
+const NATURES_AFFICHEES: Nature[] = ["nom", "verbe", "adjectif", "adverbe", "expression", "préposition", "pronom", "conjonction"];
+
+/** Ajoute ou retire une nature de la sélection (plusieurs natures peuvent être cochées). */
+function basculerNature(s: Set<Nature>, n: Nature): Set<Nature> {
+  const r = new Set(s);
+  if (r.has(n)) r.delete(n);
+  else r.add(n);
+  return r;
+}
+
 /** Ajoute ou retire un niveau de la sélection (plusieurs niveaux peuvent être cochés à la fois). */
 function basculer(s: Set<Niveau>, n: Niveau): Set<Niveau> {
   const r = new Set(s);
@@ -158,16 +168,20 @@ function DetailTheme({ theme, onRetour, lancer }: { theme: Theme; onRetour: () =
   const { cartes, mots } = useDonnees();
   const [niveaux, setNiveaux] = useState<Set<Niveau>>(() => new Set());
   const [affichage, setAffichage] = useState<Affichage>("tous");
+  const [natures, setNatures] = useState<Set<Nature>>(() => new Set());
+  const naturesDuTheme = useMemo(() => NATURES_AFFICHEES.filter((n) => theme.entrees.some((e) => e.nature === n)), [theme]);
+  const filtre = niveaux.size > 0 || natures.size > 0 || affichage !== "tous";
   const entrees = useMemo(
     () =>
       theme.entrees.filter((e) => {
         if (niveaux.size && !niveaux.has(e.niveau)) return false;
+        if (natures.size && !natures.has(e.nature)) return false;
         const m = maitrise(cartes.get(e.id));
         if (affichage === "nouveaux") return m === "nouveau";
         if (affichage === "revision") return m !== "nouveau";
         return true;
       }),
-    [theme, niveaux, affichage, cartes],
+    [theme, niveaux, natures, affichage, cartes],
   );
   const p = progresDe(
     entrees.map((e) => e.id),
@@ -249,6 +263,27 @@ function DetailTheme({ theme, onRetour, lancer }: { theme: Theme; onRetour: () =
           </button>
         ))}
       </div>
+      <div className="lg-filtres" role="group" aria-label="Nature du mot">
+        {naturesDuTheme.map((n) => (
+          <button key={n} type="button" className="lg-filtre" aria-pressed={natures.has(n)} onClick={() => setNatures((s) => basculerNature(s, n))}>
+            {n}
+            <small>{theme.entrees.filter((e) => e.nature === n).length}</small>
+          </button>
+        ))}
+      </div>
+      {filtre && (
+        <button
+          type="button"
+          className="lg-retour-lien"
+          onClick={() => {
+            setNiveaux(new Set());
+            setNatures(new Set());
+            setAffichage("tous");
+          }}
+        >
+          Effacer les filtres
+        </button>
+      )}
 
       <ul className="lg-liste-mots">
         {entrees.map((e) => {
