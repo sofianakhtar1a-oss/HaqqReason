@@ -33,6 +33,7 @@ import { GestionnaireFichiers } from "../../_composants/GestionnaireFichiers";
 import { listerFichiers } from "@/lib/fichiers-donnees";
 import { MODELES_INTEGRES } from "@/lib/modeles-integres";
 import { dbAdmin } from "@/lib/supabase";
+import { racineEspace } from "@/lib/espaces";
 import {
   creerArticle,
   creerCategorie,
@@ -71,7 +72,7 @@ export default async function GererCategorie({ params, searchParams }: PageProps
   const enCorbeille = Boolean(categorie.supprime_le);
 
   const etapes = [
-    { href: "/createur/bibliotheque", libelle: "Les preuves" },
+    racineEspace(bloc.espace, "createur"),
     { href: `/createur/bloc/${bloc.slug}`, libelle: bloc.titre },
     ...chemin.map((c) => ({ href: `/createur/categorie/${c.id}`, libelle: c.titre })),
   ];
