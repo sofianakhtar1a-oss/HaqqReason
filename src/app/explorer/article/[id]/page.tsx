@@ -16,6 +16,7 @@ import { lireLiens, lireRetroliens } from "@/lib/liens-donnees";
 import { dbAdmin } from "@/lib/supabase";
 import { sourcesDuDocument } from "@/lib/sources-donnees";
 import { articlesLies, categoriesSecondaires, lirePrerequis, lireSuites } from "@/lib/navigation-donnees";
+import { racineEspace } from "@/lib/espaces";
 
 export async function generateMetadata({
   params,
@@ -97,7 +98,7 @@ export default async function PageArticle({
         <div className="masque-immersif">
           <FilAriane
             etapes={[
-              { href: "/explorer", libelle: "La bibliothèque" },
+              racineEspace(bloc.donnees.espace, "public"),
               {
                 href: `/explorer/${bloc.donnees.slug}`,
                 libelle: bloc.donnees.titre,
