@@ -1,5 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { sessionCreateur } from "@/lib/session";
+import { sessionCreateurVisible } from "@/lib/session";
 import { lienLecture } from "@/lib/stockage";
 import { dbAdmin, dbPublic } from "@/lib/supabase";
 import { estUuid } from "@/lib/validation";
@@ -14,7 +14,7 @@ export async function GET(requete: NextRequest, { params }: RouteContext<"/fichi
 
   // La clé publique ne voit que les fichiers rattachés à un contenu publié (règles de la base).
   let { data: fichier } = await dbPublic().from("fichiers").select("chemin, nom").eq("id", id).maybeSingle();
-  if (!fichier && (await sessionCreateur())) {
+  if (!fichier && (await sessionCreateurVisible())) {
     ({ data: fichier } = await dbAdmin().from("fichiers").select("chemin, nom").eq("id", id).maybeSingle());
   }
   if (!fichier) return new NextResponse("Fichier introuvable.", { status: 404 });
