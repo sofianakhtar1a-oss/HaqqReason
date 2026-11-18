@@ -4,7 +4,7 @@
  *   2. le texte de chaque page avec pdf.js (les ressources sont servies par le site) ;
  *   3. pour un document scanné (pages sans texte), la reconnaissance de caractères (OCR) en
  *      français, arabe et anglais, page par page ;
- *   4. le tout sous la forme « [Page N] … », pour que Claude puisse citer ses pages.
+ *   4. le tout sous la forme « [Page N] … », pour que l'IA puisse citer ses pages.
  * Le fichier ne quitte jamais l'appareil : seul son texte est envoyé au serveur.
  */
 import { texteDesPages } from "@/lib/assistant/contexte";

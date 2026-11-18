@@ -7,7 +7,7 @@ import { Assistant } from "./Assistant";
 /*
  * Le Vizir, l'assistant IA : « Chat général » et « ChatPDF ».
  * La page ne lit aucune donnée : l'interface interroge /api/assistant/*, qui ne répond
- * qu'au compte Google connecté et appelle Claude avec la clé de ce compte.
+ * qu'au compte Google connecté et passe par la passerelle IA du site : aucune clé à fournir.
  */
 
 type Props = { searchParams: Promise<Record<string, string | string[] | undefined>> };

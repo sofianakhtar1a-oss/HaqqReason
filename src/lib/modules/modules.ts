@@ -144,7 +144,7 @@ const ACCUEIL: DefModule = {
             titre: "Le Vizir",
             soustitre: "Assistant IA",
             marque: "Demander",
-            texte: "Claude, ChatGPT ou Gemini, au choix, pour discuter librement ou interroger tes PDF : résumés, comparaisons, citations avec leurs pages, vérifiables d'un clic. Il fonctionne avec ta propre clé : chaque réponse est facturée sur ton compte, jamais sur celui du site.",
+            texte: "Claude, ChatGPT ou Gemini, au choix, pour discuter librement ou interroger tes PDF : résumés, comparaisons, citations avec leurs pages, vérifiables d'un clic. Gratuit : il suffit de ton compte Google.",
           },
         },
       ],
@@ -340,7 +340,7 @@ const LANGUES: DefModule = {
 const ASSISTANT: DefModule = {
   id: "assistant",
   nom: "Le Vizir",
-  description: "L'assistant IA (Claude, ChatGPT, Gemini) : chat général et ChatPDF. Ses textes : présentation, onglets, accueil de chaque espace, explication des clés.",
+  description: "L'assistant IA (Claude, ChatGPT, Gemini) : chat général et ChatPDF. Ses textes : présentation, onglets, accueil de chaque espace.",
   adresse: "/assistant",
   accent: "amethyste",
   sections: [
@@ -351,11 +351,11 @@ const ASSISTANT: DefModule = {
         {
           cle: "meta.description",
           libelle: "Description pour Google",
-          defaut: "Discute avec Claude, ChatGPT ou Gemini et interroge tes PDF : résumés, comparaisons, citations avec leurs pages. Chaque réponse est facturée sur ta propre clé.",
+          defaut: "Discute avec Claude, ChatGPT ou Gemini et interroge tes PDF : résumés, comparaisons, citations avec leurs pages. Gratuit, avec ton compte Google.",
           long: true,
         },
         { cle: "tete.titre", libelle: "Nom dans la barre du haut", defaut: "Le Vizir" },
-        { cle: "tete.pastille", libelle: "Mention sous la liste des conversations", defaut: "Facturé sur tes propres clés" },
+        { cle: "tete.pastille", libelle: "Mention sous la liste des conversations", defaut: "Gratuit, avec ton compte Google" },
       ],
     },
     {
@@ -375,18 +375,6 @@ const ASSISTANT: DefModule = {
           cle: "pdf.texte",
           libelle: "ChatPDF : texte d'accueil",
           defaut: "Importe un ou plusieurs PDF, puis demande un résumé, une comparaison ou un argument précis. Chaque réponse cite ses pages : un clic sur une référence affiche la page.",
-          long: true,
-        },
-      ],
-    },
-    {
-      titre: "La clé de l'utilisateur",
-      champs: [
-        { cle: "cle.titre", libelle: "Titre", defaut: "Choisis ton IA et relie ta clé" },
-        {
-          cle: "cle.texte",
-          libelle: "Explication",
-          defaut: "Le Vizir fonctionne avec Claude (Anthropic), ChatGPT (OpenAI) ou Gemini (Google), et avec TA clé : chaque réponse est facturée sur ton compte, dans tes limites, jamais sur celui du site. Tu peux relier une, deux ou les trois IA ; chaque clé est chiffrée, liée à ton compte, et jamais réaffichée.",
           long: true,
         },
       ],

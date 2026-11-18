@@ -1,13 +1,12 @@
 import "server-only";
 import { dbAdmin } from "@/lib/supabase";
-import { chiffrerCle, dechiffrerCle } from "./chiffrement";
-import { EFFORT_PAR_DEFAUT, MODELE_PAR_DEFAUT, effortValide, fournisseurValide, masquerCle, modeleValide, type Effort, type Fournisseur, type IdModele, type Usage } from "./modeles";
+import { iaDuReglage, type Fournisseur, type Usage } from "./modeles";
 import type { EtatMessage } from "./protocole";
 
 /*
  * Les données de l'Assistant. À n'appeler qu'APRÈS avoir vérifié la session (lib/compte/session.ts) :
  * CHAQUE requête est filtrée par l'identifiant du compte, même quand l'identifiant de l'objet suffirait.
- * Un compte ne peut donc ni lire, ni modifier, ni utiliser la clé, les conversations ou les PDF d'un autre.
+ * Un compte ne peut donc ni lire, ni modifier les conversations ou les PDF d'un autre.
  */
 
 export class ErreurDonnees extends Error {
@@ -30,75 +29,30 @@ function echec(e: ErreurPostgrest): never {
 
 const db = () => dbAdmin();
 
-/* ---------- Les clés (une par IA) et les réglages ---------- */
+/* ---------- Les réglages : l'IA choisie ---------- */
 
-export type FicheCle = { fournisseur: Fournisseur; apercu: string; statut: "valide" | "invalide"; verifieeLe: string; lisible?: boolean };
-export type Reglages = { modele: IdModele; effort: Effort; plafond: number | null };
-export const REGLAGES_PAR_DEFAUT: Reglages = { modele: MODELE_PAR_DEFAUT, effort: EFFORT_PAR_DEFAUT, plafond: null };
+export type Reglages = { ia: Fournisseur };
 
-type LigneCle = { fournisseur: string; cle_chiffree: string; apercu: string; statut: string; verifiee_le: string };
-const COLONNES_CLE = "fournisseur, cle_chiffree, apercu, statut, verifiee_le";
-
-function fiche(l: LigneCle, utilisateur: string): { fiche: FicheCle; cle: string | null } {
-  const f = fournisseurValide(l.fournisseur) ?? "anthropic";
-  const cle = dechiffrerCle(l.cle_chiffree, utilisateur, f);
-  return { cle, fiche: { fournisseur: f, apercu: l.apercu, statut: l.statut === "invalide" ? "invalide" : "valide", verifieeLe: l.verifiee_le, lisible: cle !== null } };
-}
-
-/** Les fiches des clés du compte (sans les clés). */
-export async function lireCles(utilisateur: string): Promise<FicheCle[]> {
-  const { data, error } = await db().from("assistant_cles").select(COLONNES_CLE).eq("utilisateur_id", utilisateur);
-  if (error) echec(error);
-  return (data as LigneCle[]).map((l) => fiche(l, utilisateur).fiche);
-}
-
-/** La clé déchiffrée pour une IA, pour un appel. Elle ne quitte jamais le serveur. */
-export async function lireCle(utilisateur: string, fournisseur: Fournisseur): Promise<{ cle: string | null; fiche: FicheCle } | null> {
-  const { data, error } = await db().from("assistant_cles").select(COLONNES_CLE).eq("utilisateur_id", utilisateur).eq("fournisseur", fournisseur).maybeSingle();
-  if (error) echec(error);
-  return data ? fiche(data as LigneCle, utilisateur) : null;
-}
-
-export async function enregistrerCle(utilisateur: string, fournisseur: Fournisseur, cle: string): Promise<FicheCle> {
-  const maintenant = new Date().toISOString();
-  const ligne = { utilisateur_id: utilisateur, fournisseur, cle_chiffree: chiffrerCle(cle, utilisateur, fournisseur), apercu: masquerCle(cle), statut: "valide", verifiee_le: maintenant, maj: maintenant };
-  const { data, error } = await db().from("assistant_cles").upsert(ligne, { onConflict: "utilisateur_id,fournisseur" }).select(COLONNES_CLE).single();
-  if (error || !data) echec(error);
-  return fiche(data as LigneCle, utilisateur).fiche;
-}
-
-/** L'IA a refusé la clé (révoquée) : on le note, l'utilisateur la remplacera. */
-export async function marquerCleInvalide(utilisateur: string, fournisseur: Fournisseur): Promise<void> {
-  await db().from("assistant_cles").update({ statut: "invalide", maj: new Date().toISOString() }).eq("utilisateur_id", utilisateur).eq("fournisseur", fournisseur);
-}
-
-export async function supprimerCle(utilisateur: string, fournisseur: Fournisseur): Promise<void> {
-  const { error } = await db().from("assistant_cles").delete().eq("utilisateur_id", utilisateur).eq("fournisseur", fournisseur);
-  if (error) echec(error);
-}
-
-export async function noterVerification(utilisateur: string, reussie: boolean): Promise<void> {
-  await db().from("assistant_verifications").insert({ utilisateur_id: utilisateur, reussie });
-}
-
-type LigneReglages = { modele: string; effort: string; plafond_mensuel_usd: number | string | null };
-const reglages = (l: LigneReglages | null): Reglages =>
-  l ? { modele: modeleValide(l.modele) ?? MODELE_PAR_DEFAUT, effort: effortValide(l.effort) ?? EFFORT_PAR_DEFAUT, plafond: l.plafond_mensuel_usd === null ? null : Number(l.plafond_mensuel_usd) } : { ...REGLAGES_PAR_DEFAUT };
-
+/** L'IA est rangée dans la colonne « modele » (« openai ») ; les anciens réglages y ont un modèle (« gpt-6-luna »). */
 export async function lireReglages(utilisateur: string): Promise<Reglages> {
-  const { data, error } = await db().from("assistant_reglages").select("modele, effort, plafond_mensuel_usd").eq("utilisateur_id", utilisateur).maybeSingle();
+  const { data, error } = await db().from("assistant_reglages").select("modele").eq("utilisateur_id", utilisateur).maybeSingle();
   if (error) echec(error);
-  return reglages(data as LigneReglages | null);
+  return { ia: iaDuReglage((data as { modele?: string } | null)?.modele) };
 }
 
-export async function reglerReglages(utilisateur: string, choix: { modele?: IdModele; effort?: Effort; plafond?: number | null }): Promise<Reglages> {
-  const champs: Record<string, unknown> = { utilisateur_id: utilisateur, maj: new Date().toISOString() };
-  if (choix.modele) champs.modele = choix.modele;
-  if (choix.effort) champs.effort = choix.effort;
-  if (choix.plafond !== undefined) champs.plafond_mensuel_usd = choix.plafond;
-  const { data, error } = await db().from("assistant_reglages").upsert(champs, { onConflict: "utilisateur_id" }).select("modele, effort, plafond_mensuel_usd").single();
+export async function reglerReglages(utilisateur: string, ia: Fournisseur): Promise<Reglages> {
+  const { data, error } = await db()
+    .from("assistant_reglages")
+    .upsert({ utilisateur_id: utilisateur, modele: ia, maj: new Date().toISOString() }, { onConflict: "utilisateur_id" })
+    .select("modele")
+    .single();
   if (error || !data) echec(error);
-  return reglages(data as LigneReglages);
+  return { ia: iaDuReglage((data as { modele: string }).modele) };
+}
+
+/** Les clés d'IA d'avant (quand chacun reliait la sienne) : le site ne s'en sert plus, on les efface. */
+export async function effacerAnciennesCles(utilisateur: string): Promise<void> {
+  await db().from("assistant_cles").delete().eq("utilisateur_id", utilisateur);
 }
 
 /* ---------- Le bilan : rythme, dépense du mois, place ---------- */

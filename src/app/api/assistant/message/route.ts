@@ -1,5 +1,4 @@
 import { after, type NextRequest } from "next/server";
-import { demarrer, type Demande, type ErreurIA } from "@/lib/assistant/ia";
 import { consigneGenerale, consignePdf, questionAvecExtraits } from "@/lib/assistant/consignes";
 import { construireContexte, historiquePourApi } from "@/lib/assistant/contexte";
 import {
@@ -7,11 +6,9 @@ import {
   bilan,
   documentsActifs,
   journaliserUsage,
-  lireCle,
   lireConversation,
   lireMessages,
   lireReglages,
-  marquerCleInvalide,
   modifierConversation,
   supprimerMessages,
   toucherConversation,
@@ -19,44 +16,41 @@ import {
 } from "@/lib/assistant/donnees";
 import { entree, erreurDonnees, lireCorps, refus, texteLibre } from "@/lib/assistant/http";
 import { LIMITES } from "@/lib/assistant/limites";
-import { coutEstime, EFFORTS, effortValide, estimerJetons, formaterCout, infoFournisseur, modele as ficheModele, modeleValide, USAGE_VIDE, type Usage } from "@/lib/assistant/modeles";
+import { estimerJetons, fournisseurValide, infoFournisseur, MAX_JETONS_REPONSE, USAGE_VIDE, type Usage } from "@/lib/assistant/modeles";
+import { coutReponse, demarrer, type Demande, type ErreurIA } from "@/lib/assistant/passerelle";
 import type { EtatMessage, EvenementFlux, InfoContexte } from "@/lib/assistant/protocole";
 
 /*
- * POST { conversationId, texte, modele?, effort? } — ou { conversationId, reessayer: true } pour
- * reprendre la dernière question — : la réponse de Claude, relayée au fil de l'eau (NDJSON).
+ * POST { conversationId, texte, ia? } — ou { conversationId, reessayer: true } pour reprendre la
+ * dernière question — : la réponse de l'IA choisie, relayée au fil de l'eau (NDJSON).
  *
- * Isolation et facturation :
- *   • le compte vient de la session Google vérifiée en base ; la conversation, l'historique, les PDF
- *     et la clé sont tous lus AVEC l'identifiant de ce compte : impossible d'utiliser ceux d'un autre ;
- *   • l'appel part vers l'IA du modèle choisi (Claude, ChatGPT ou Gemini) avec LA CLÉ DE CE COMPTE pour
- *     cette IA, déchiffrée en mémoire le temps de l'appel : les jetons sont facturés sur son compte,
- *     dans ses propres limites. Le site n'a de clé chez aucune IA : sans clé reliée, rien n'est envoyé ;
- *   • chaque appel est journalisé (jetons, coût estimé) pour que l'utilisateur suive sa dépense,
- *     avec un plafond mensuel facultatif qu'il fixe lui-même.
+ *   • le compte vient de la session Google vérifiée en base ; la conversation, l'historique et les PDF
+ *     sont tous lus AVEC l'identifiant de ce compte : impossible d'utiliser ceux d'un autre ;
+ *   • l'appel passe par la passerelle IA de Vercel, sans aucune clé (passerelle.ts) : il est pris
+ *     sur le crédit gratuit du site, et chaque compte a son quota (questions par jour, part du
+ *     crédit par mois), vérifié ici avant d'envoyer quoi que ce soit ;
+ *   • chaque réponse est journalisée (jetons, coût estimé) : c'est ce qui compte le quota.
  */
 
 export const maxDuration = 300;
 
 /** Au-delà, la réponse est arrêtée proprement (et gardée) avant la limite de la fonction. */
 const DUREE_MAX_MS = 270_000;
-/** Sous ce poids, l'historique n'est pas mis en cache (l'écriture en cache coûte 25 % de plus). */
-const HISTORIQUE_A_CACHER = 1_500;
 
-type Corps = { conversationId?: unknown; texte?: unknown; modele?: unknown; effort?: unknown; reessayer?: unknown };
+type Corps = { conversationId?: unknown; texte?: unknown; ia?: unknown; reessayer?: unknown };
 
 export async function POST(requete: NextRequest) {
   const e = await entree(requete);
   if ("refus" in e) return e.refus;
   const u = e.compte.id;
-  const corps = await lireCorps<Corps>(requete, 600_000);
+  const corps = await lireCorps<Corps>(requete, 200_000);
   if (!corps) return refus(400, "illisible");
   const conversationId = typeof corps.conversationId === "string" ? corps.conversationId : "";
   const reessayer = corps.reessayer === true;
   const saisie = reessayer ? null : texteLibre(corps.texte, LIMITES.questionMax);
-  if (!reessayer && !saisie) return refus(400, "question", "La question est vide, ou trop longue (100 000 caractères au plus).");
+  if (!reessayer && !saisie) return refus(400, "question", `La question est vide, ou trop longue (${LIMITES.questionMax.toLocaleString("fr-FR")} caractères au plus).`);
 
-  /* ---------- 1. Le compte : ses réglages, son rythme, sa conversation, la clé de l'IA choisie ---------- */
+  /* ---------- 1. Le compte : son IA, son quota, sa conversation ---------- */
   let reglages: Awaited<ReturnType<typeof lireReglages>>;
   let b: Awaited<ReturnType<typeof bilan>>;
   let conversation: Awaited<ReturnType<typeof lireConversation>>;
@@ -66,27 +60,16 @@ export async function POST(requete: NextRequest) {
     return erreurDonnees(err);
   }
   if (!conversation) return refus(404, "absent", "Cette conversation n'existe plus.");
-  const modele = modeleValide(corps.modele) ?? reglages.modele;
-  const effort = effortValide(corps.effort) ?? reglages.effort;
-  const fournisseur = ficheModele(modele).fournisseur;
+  const fournisseur = fournisseurValide(corps.ia) ?? reglages.ia;
   const ia = infoFournisseur(fournisseur);
-  let cle: Awaited<ReturnType<typeof lireCle>>;
-  try {
-    cle = await lireCle(u, fournisseur);
-  } catch (err) {
-    return erreurDonnees(err);
-  }
-  const surIa = { fournisseur };
-  if (!cle) return refus(409, "sans_cle", `Relie d'abord ta clé ${ia.nom} (${ia.entreprise}) : chaque réponse est facturée sur ton propre compte.`, surIa);
-  if (!cle.cle) return refus(409, "cle_illisible", `Ta clé ${ia.nom} enregistrée ne peut plus être lue (le secret du site a changé). Colle-la de nouveau dans les réglages.`, surIa);
-  if (cle.fiche.statut === "invalide") return refus(409, "cle_invalide", `${ia.entreprise} a refusé ta clé ${ia.nom} (révoquée ou supprimée). Colle une nouvelle clé dans les réglages.`, surIa);
   if (b.dixMinutes >= LIMITES.appelsDixMinutes) return refus(429, "rythme", "Beaucoup de questions en peu de temps : attends quelques minutes avant la suivante.");
-  if (b.aujourdhui >= LIMITES.appelsJour) return refus(429, "jour", `Tu as atteint la limite de ${LIMITES.appelsJour} questions par jour sur ce site. Elle se remet à zéro à minuit.`);
-  if (reglages.plafond !== null && b.moisCout >= reglages.plafond) {
-    return refus(402, "plafond", `Tu as atteint le plafond mensuel que tu t'es fixé (${formaterCout(reglages.plafond)}, estimation du site). Relève-le dans les réglages pour continuer.`);
+  if (b.aujourdhui >= LIMITES.questionsJour) {
+    return refus(429, "quota_jour", `Tu as utilisé tes ${LIMITES.questionsJour} questions gratuites d'aujourd'hui. Elles reviennent à minuit.`);
+  }
+  if (b.moisCout >= LIMITES.budgetMoisCompte) {
+    return refus(429, "quota_mois", "Tu as utilisé ta part du crédit gratuit de ce mois-ci. Elle revient le 1er du mois prochain.");
   }
   const conv = conversation;
-  const cleApi = cle.cle;
 
   /* ---------- 2. L'historique, les PDF, la question ---------- */
   let historique: Message[];
@@ -96,7 +79,7 @@ export async function POST(requete: NextRequest) {
   } catch (err) {
     return erreurDonnees(err);
   }
-  if (conv.espace === "pdf" && documents.length === 0) return refus(400, "sans_document", "Importe ou coche au moins un PDF : c'est lui que Claude va lire.");
+  if (conv.espace === "pdf" && documents.length === 0) return refus(400, "sans_document", "Importe ou coche au moins un PDF : c'est lui que l'IA va lire.");
 
   let question: string;
   let questionId: string;
@@ -128,8 +111,8 @@ export async function POST(requete: NextRequest) {
   if (conv.espace === "pdf") {
     const ctx = construireContexte(documents, question, { integrale: conv.lecture === "integrale", questionPrecedente });
     consigne = consignePdf({ fournisseur, mode: ctx.mode, documents: documents.map((d) => ({ numero: d.numero, nom: d.nom, pages: d.pages })) });
-    // Lecture complète : les documents entiers, juste après la consigne, relus depuis le cache à la question suivante.
-    // Extraits : ils voyagent avec la question ; la consigne et l'historique restent en cache.
+    // Lecture complète : les documents entiers, juste après la consigne (début stable, gardé en cache par l'IA).
+    // Extraits : ils voyagent avec la question.
     if (ctx.mode === "complet") documentsComplets = ctx.texte;
     else contenuQuestion = questionAvecExtraits(ctx.texte, question);
     infoContexte = { mode: ctx.mode, jetons: ctx.jetons, documents: ctx.documents.map(({ numero, nom, pages }) => ({ numero, nom, pages })), integraleImpossible: ctx.integraleImpossible };
@@ -141,18 +124,14 @@ export async function POST(requete: NextRequest) {
     [...historique.filter((m) => m.etat !== "erreur").map((m) => ({ role: m.role, contenu: m.contenu })), { role: "user" as const, contenu: question }],
     LIMITES.jetonsHistorique,
   );
-  const poidsHistorique = echanges.slice(0, -1).reduce((s, m) => s + estimerJetons(m.contenu), 0);
   const demande: Demande = {
-    modele,
     consigne,
     documents: documentsComplets,
-    // Point de cache sur le dernier échange passé : la question suivante relira tout ce début depuis le cache.
-    messages: echanges.map((m, i) => ({ role: m.role, texte: i === echanges.length - 1 ? contenuQuestion : m.contenu, cache: i === echanges.length - 2 && poidsHistorique >= HISTORIQUE_A_CACHER })),
-    maxJetons: EFFORTS.find((x) => x.id === effort)?.maxJetons ?? 16_000,
-    effort,
+    messages: echanges.map((m, i) => ({ role: m.role, texte: i === echanges.length - 1 ? contenuQuestion : m.contenu })),
+    maxJetons: MAX_JETONS_REPONSE,
   };
 
-  /* ---------- 4. L'appel, avec la clé de l'utilisateur pour cette IA ---------- */
+  /* ---------- 4. L'appel, par la passerelle ---------- */
   const controleur = new AbortController();
   let dureeDepassee = false;
   const minuteur = setTimeout(() => {
@@ -166,22 +145,19 @@ export async function POST(requete: NextRequest) {
     requete.signal.removeEventListener("abort", quitter);
   };
 
-  const ouverture = await demarrer(fournisseur, cleApi, demande, controleur.signal);
+  const ouverture = await demarrer(fournisseur, demande, controleur.signal);
   if (!ouverture.ok) {
     nettoyer();
     const erreur = ouverture.erreur;
     try {
-      await Promise.all([
-        ajouterMessage(u, conv.id, { role: "assistant", contenu: erreur.message, modele, etat: "erreur" }),
-        journaliserUsage(u, conv.id, modele, USAGE_VIDE, 0, "erreur"),
-        erreur.code === "cle_invalide" ? marquerCleInvalide(u, fournisseur) : Promise.resolve(),
-        toucherConversation(u, conv.id),
-      ]);
+      // Rien n'a été produit : la question reste, avec l'erreur en guise de réponse ; le quota n'est pas touché.
+      await Promise.all([ajouterMessage(u, conv.id, { role: "assistant", contenu: erreur.message, modele: ouverture.modele ?? "", etat: "erreur" }), toucherConversation(u, conv.id)]);
     } catch {
       // La question reste enregistrée ; l'erreur s'affiche quand même.
     }
     return refus(erreur.code === "limite_debit" ? 429 : 502, erreur.code, erreur.message, { questionId, fournisseur, reessayerDans: erreur.reessayerDans });
   }
+  const modele = ouverture.modele;
 
   /* ---------- 5. Le relais, au fil de l'eau ---------- */
   let finir: () => void = () => {};
@@ -203,11 +179,12 @@ export async function POST(requete: NextRequest) {
       };
       let texte = "";
       let usage: Usage = { ...USAGE_VIDE };
+      let coutDonne: number | null = null;
       let raison = "";
       let erreur: ErreurIA | null = null;
       let reflexion = false;
 
-      envoyer({ t: "debut", questionId, modele, effort, contexte: infoContexte });
+      envoyer({ t: "debut", questionId, modele, contexte: infoContexte });
       try {
         for await (const ev of ouverture.evenements) {
           if (ev.type === "texte") {
@@ -216,29 +193,32 @@ export async function POST(requete: NextRequest) {
           } else if (ev.type === "reflexion") {
             if (!reflexion) envoyer({ t: "reflexion" });
             reflexion = true;
-          } else if (ev.type === "usage") usage = ev.usage;
-          else if (ev.type === "arret") raison = ev.raison;
+          } else if (ev.type === "usage") {
+            usage = ev.usage;
+            coutDonne = ev.cout;
+          } else if (ev.type === "arret") raison = ev.raison;
           else if (ev.type === "erreur") erreur = ev.erreur;
         }
       } catch {
-        if (!controleur.signal.aborted) erreur ??= { code: "reseau", statut: 0, message: `La connexion avec ${ia.entreprise} a été coupée pendant la réponse.` };
+        if (!controleur.signal.aborted) erreur ??= { code: "reseau", statut: 0, message: `La connexion avec ${ia.nom} a été coupée pendant la réponse.` };
       }
       nettoyer();
 
       const coupe = controleur.signal.aborted;
       if (dureeDepassee) raison = "duree";
-      // Réponse arrêtée en route : Anthropic facture ce qui a été produit, on l'estime sur le texte reçu.
+      // Réponse arrêtée en route : ce qui a été produit compte quand même, on l'estime sur le texte reçu.
       if (coupe && texte && usage.sortie < estimerJetons(texte)) usage = { ...usage, sortie: estimerJetons(texte) };
       const etat: EtatMessage = erreur && !texte ? "erreur" : coupe || erreur ? "interrompu" : "complet";
-      const cout = coutEstime(modele, usage);
+      const cout = coutReponse(modele, usage, coupe ? null : coutDonne);
+      const consomme = usage.entree + usage.sortie + usage.lectureCache + usage.ecritureCache > 0;
       let id: string | null = null;
       try {
         const m = await ajouterMessage(u, conv.id, { role: "assistant", contenu: etat === "erreur" ? (erreur?.message ?? "Erreur.") : texte || "(réponse vide)", modele, etat, usage, cout });
         id = m.id;
         await Promise.all([
-          journaliserUsage(u, conv.id, modele, usage, cout, etat === "complet" ? "ok" : etat),
+          // Une erreur sans rien produit ne compte pas dans le quota.
+          etat !== "erreur" || consomme ? journaliserUsage(u, conv.id, modele, usage, cout, etat === "complet" ? "ok" : etat) : Promise.resolve(),
           toucherConversation(u, conv.id),
-          erreur?.code === "cle_invalide" ? marquerCleInvalide(u, fournisseur) : Promise.resolve(),
         ]);
       } catch {
         // Base momentanément indisponible : la réponse a quand même été affichée.

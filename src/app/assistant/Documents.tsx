@@ -25,12 +25,12 @@ function etiquetteEnvoi(e: Envoi): string {
   return e.message ?? "Échec";
 }
 
-/** Ce que Claude lira pour la prochaine question, selon le poids des documents cochés. */
+/** Ce que l'IA lira pour la prochaine question, selon le poids des documents cochés. */
 function lectureAnnoncee(jetons: number, integrale: boolean): string {
-  if (jetons === 0) return "Coche au moins un document : Claude ne lit que les documents cochés.";
-  if (jetons <= BUDGET_COMPLET_AUTO) return `Claude lit le texte intégral (≈ ${formaterJetons(jetons)} jetons), relu depuis le cache pour les questions suivantes.`;
-  if (integrale && jetons <= BUDGET_INTEGRAL) return `Lecture intégrale (≈ ${formaterJetons(jetons)} jetons par question, en grande partie depuis le cache) : la plus précise, et la plus coûteuse.`;
-  return `Documents longs (≈ ${formaterJetons(jetons)} jetons) : Claude lit, pour chaque question, les passages les plus utiles (≈ ${formaterJetons(integrale ? BUDGET_EXTRAITS_LARGE : BUDGET_EXTRAITS)} jetons).`;
+  if (jetons === 0) return "Coche au moins un document : l'IA ne lit que les documents cochés.";
+  if (jetons <= BUDGET_COMPLET_AUTO) return `L'IA lit le texte intégral (≈ ${formaterJetons(jetons)} jetons) à chaque question.`;
+  if (integrale && jetons <= BUDGET_INTEGRAL) return `Lecture intégrale (≈ ${formaterJetons(jetons)} jetons par question) : la plus précise, mais elle use plus vite ta part du crédit gratuit.`;
+  return `Documents longs (≈ ${formaterJetons(jetons)} jetons) : l'IA lit, pour chaque question, les passages les plus utiles (≈ ${formaterJetons(integrale ? BUDGET_EXTRAITS_LARGE : BUDGET_EXTRAITS)} jetons).`;
 }
 
 export function Documents({
@@ -193,7 +193,7 @@ export function Documents({
               <input type="checkbox" checked={lecture === "integrale"} onChange={(e) => onLecture(e.target.checked ? "integrale" : "auto")} />
               <span>
                 Lecture intégrale
-                <span className="aia-interrupteur-aide">Jusqu&apos;à {formaterJetons(BUDGET_INTEGRAL)} jetons : Claude lit tout, à chaque question.</span>
+                <span className="aia-interrupteur-aide">Jusqu&apos;à {formaterJetons(BUDGET_INTEGRAL)} jetons : l&apos;IA lit tout, à chaque question.</span>
               </span>
             </label>
           )}

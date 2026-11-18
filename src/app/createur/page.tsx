@@ -50,7 +50,7 @@ export default async function EspaceCreateur() {
     { href: "/createur/module/calame", titre: "Le Calame", sur: "Atelier d'écriture", texte: "Les textes de l'atelier : présentation, colonne de gauche, messages.", Icone: Feather, accent: "or", etat: statut("calame"), attente: etats.calame?.enAttente },
     { href: "/createur/module/alambic", titre: "L'Alambic", sur: "Studio de fichiers", texte: "Les outils (noms, aide, ordre, présence) et les textes de présentation.", Icone: FlaskConical, accent: "amethyste", etat: statut("alambic"), attente: etats.alambic?.enAttente },
     { href: "/createur/module/langues", titre: "Le Truchement", sur: "Apprendre les langues", texte: "Les thèmes et les mots, les onglets, l'objectif du jour et tous les textes.", Icone: Languages, accent: "azur", etat: statut("langues"), attente: etats.langues?.enAttente },
-    { href: "/createur/module/assistant", titre: "Le Vizir", sur: "Assistant IA", texte: "Les textes de l'assistant : présentation, onglets, accueil du chat et de ChatPDF, explication de la clé.", Icone: MessagesSquare, accent: "amethyste", etat: statut("assistant"), attente: etats.assistant?.enAttente },
+    { href: "/createur/module/assistant", titre: "Le Vizir", sur: "Assistant IA", texte: "Les textes de l'assistant : présentation, onglets, accueil du chat et de ChatPDF.", Icone: MessagesSquare, accent: "amethyste", etat: statut("assistant"), attente: etats.assistant?.enAttente },
   ];
 
   return (

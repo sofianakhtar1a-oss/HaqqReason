@@ -6,8 +6,8 @@ import {
   Check,
   Copy,
   FileStack,
-  KeyRound,
   LoaderCircle,
+  LogIn,
   MessageSquareText,
   MessagesSquare,
   PanelLeft,
@@ -15,7 +15,6 @@ import {
   Plus,
   RotateCcw,
   SendHorizontal,
-  Settings2,
   Square,
   Trash2,
   X,
@@ -25,12 +24,11 @@ import { BoutonTheme } from "@/components/BoutonTheme";
 import { BoutonCompte } from "@/components/compte/BoutonCompte";
 import { Logo } from "@/components/Logo";
 import { LIMITES } from "@/lib/assistant/limites";
-import { EFFORTS, FOURNISSEURS, formaterCout, formaterJetons, infoFournisseur, modele as ficheModele, modeleConseille, modelesDe, nomModele, USAGE_VIDE, type Effort, type Fournisseur, type IdModele } from "@/lib/assistant/modeles";
+import { FOURNISSEURS, IA_PAR_DEFAUT, infoFournisseur, nomModele, USAGE_VIDE, type Fournisseur } from "@/lib/assistant/modeles";
 import { noteArret, type EvenementFlux, type InfoContexte } from "@/lib/assistant/protocole";
 import { useAccesComplet } from "@/lib/client/acces";
 import { useTextes } from "@/lib/modules/textes-client";
-import { api, envoyerQuestion, ErreurApi, type Conversation, type Espace, type Etat, type FicheCle, type FicheDocument, type Message } from "./api";
-import { Reglages, RelierCle } from "./Cle";
+import { api, envoyerQuestion, ErreurApi, type Conversation, type Espace, type Etat, type FicheDocument, type Message } from "./api";
 import { Documents, type Envoi } from "./Documents";
 import { estPdf, lirePdfPourAssistant } from "./extraction";
 import { Lutrin } from "./Lutrin";
@@ -41,11 +39,11 @@ import "@fontsource-variable/literata/opsz-italic.css";
 
 type MessageLocal = Message & { contexte?: InfoContexte | null; raison?: string };
 type Detail = { conversation: Conversation; messages: MessageLocal[]; documents: FicheDocument[] };
-type Direct = { conversationId: string; texte: string; reflexion: boolean; contexte: InfoContexte | null; modele: IdModele };
+/** La réponse en cours : l'IA interrogée, puis le modèle qui répond (connu au début du flux). */
+type Direct = { conversationId: string; texte: string; reflexion: boolean; contexte: InfoContexte | null; ia: Fournisseur; modele: string };
 type Alerte = { code: string; message: string; fournisseur?: Fournisseur };
 
 const ESPACES: Espace[] = ["general", "pdf"];
-const CODES_CLE = ["sans_cle", "cle_illisible", "cle_invalide"];
 
 const SUGGESTIONS_GENERAL = [
   "Explique-moi le raisonnement par l'absurde, avec un exemple simple.",
@@ -87,6 +85,14 @@ function ligneLecture(c: InfoContexte): string {
   return `${c.integraleImpossible ? "Trop long pour la lecture intégrale : " : ""}lu, les passages les plus utiles : ${liste || "aucun passage trouvé"}.`;
 }
 
+/** Sous la saisie : ce qu'il reste de questions gratuites aujourd'hui. */
+function ligneQuota(q: Etat["quota"] | null): string {
+  if (!q) return "Gratuit avec ton compte Google";
+  if (q.partMois >= 1) return "Ta part du crédit gratuit de ce mois-ci est utilisée";
+  if (q.questionsRestantes <= 0) return "Plus de question gratuite aujourd'hui : elles reviennent à minuit";
+  return `Gratuit · ${q.questionsRestantes} question${q.questionsRestantes > 1 ? "s" : ""} restante${q.questionsRestantes > 1 ? "s" : ""} aujourd'hui`;
+}
+
 export function Assistant() {
   const t = useTextes("assistant");
   const accesComplet = useAccesComplet();
@@ -100,7 +106,6 @@ export function Assistant() {
   const [direct, setDirect] = useState<Direct | null>(null);
   const [saisie, setSaisie] = useState("");
   const [alerte, setAlerte] = useState<Alerte | null>(null);
-  const [reglages, setReglages] = useState(false);
   const [lutrin, setLutrin] = useState<{ doc: FicheDocument; page: number } | null>(null);
   const [envois, setEnvois] = useState<Envoi[]>([]);
   const [coteOuvert, setCoteOuvert] = useState(false);
@@ -110,8 +115,7 @@ export function Assistant() {
   const [copie, setCopie] = useState<string | null>(null);
   const [lit, setLit] = useState(false);
   const [annonce, setAnnonce] = useState("");
-  const [modele, setModele] = useState<IdModele>("claude-sonnet-5-5");
-  const [effort, setEffort] = useState<Effort>("medium");
+  const [fournisseur, setFournisseur] = useState<Fournisseur>(IA_PAR_DEFAUT);
 
   const arret = useRef<AbortController | null>(null);
   const lecture = useRef<AbortController | null>(null);
@@ -121,11 +125,11 @@ export function Assistant() {
   const convCourante = useRef<string | null>(null);
   const annulerRenommer = useRef(false);
 
-  const fournisseur: Fournisseur = ficheModele(modele).fournisseur;
   const ia = infoFournisseur(fournisseur);
-  const cles = etat?.cles ?? [];
-  const cle = cles.find((c) => c.fournisseur === fournisseur) ?? null;
-  const cleUtilisable = Boolean(cle && cle.statut === "valide" && cle.lisible !== false);
+  const quota = etat?.quota ?? null;
+  const indisponibles = etat?.indisponibles ?? [];
+  /** Une autre IA à proposer quand celle-ci n'est pas servie par l'offre gratuite. */
+  const autreIa = FOURNISSEURS.find((f) => f.id !== fournisseur && !indisponibles.includes(f.id)) ?? null;
   const noms = useMemo(() => new Map((detail?.documents ?? []).map((d) => [d.numero, d.nom])), [detail?.documents]);
   const conversations = listes[espace];
 
@@ -182,11 +186,7 @@ export function Assistant() {
         if (!vivant) return;
         setEtat(reponse);
         setEspace(e);
-        // Le modèle par défaut ; s'il appartient à une IA sans clé, celui d'une IA reliée.
-        const relie = reponse.cles.find((c) => c.statut === "valide" && c.lisible !== false);
-        const prefere = ficheModele(reponse.reglages.modele);
-        setModele(relie && !reponse.cles.some((c) => c.fournisseur === prefere.fournisseur) ? modeleConseille(relie.fournisseur).id : prefere.id);
-        setEffort(reponse.reglages.effort);
+        setFournisseur(reponse.reglages.ia);
         void chargerListe(e);
         if (c && /^[0-9a-f-]{36}$/i.test(c)) void ouvrir(c);
       })
@@ -262,8 +262,8 @@ export function Assistant() {
     if (direct) return;
     const texte = (texteBrut ?? saisie).trim();
     if (!reessayer && !texte) return;
-    if (!cleUtilisable) {
-      setAlerte({ code: cle ? "cle_invalide" : "sans_cle", message: cle ? `Ta clé ${ia.nom} doit être remplacée avant de continuer.` : `Relie d'abord ta clé ${ia.nom} pour lui poser des questions.` });
+    if (quota && quota.questionsRestantes <= 0) {
+      setAlerte({ code: "quota_jour", message: `Tu as utilisé tes ${quota.questionsJour} questions gratuites d'aujourd'hui. Elles reviennent à minuit.` });
       return;
     }
     if (texte.length > LIMITES.questionMax) {
@@ -271,7 +271,7 @@ export function Assistant() {
       return;
     }
     if (espace === "pdf" && !detail?.documents.some((x) => x.actif)) {
-      setAlerte({ code: "sans_document", message: "Ajoute ou coche au moins un PDF : c'est lui que Claude va lire." });
+      setAlerte({ code: "sans_document", message: "Ajoute ou coche au moins un PDF : c'est lui que l'IA va lire." });
       return;
     }
     let d: Detail;
@@ -284,6 +284,7 @@ export function Assistant() {
 
     const idTemp = idLocal("local");
     const idConv = d.conversation.id;
+    const iaEnvoi = fournisseur;
     /** Ne touche qu'à CETTE conversation, même si l'on en a ouvert une autre entre-temps. */
     const majConv = (f: (x: Detail) => Detail) => setDetail((x) => (x && x.conversation.id === idConv ? f(x) : x));
     setAlerte(null);
@@ -300,18 +301,19 @@ export function Assistant() {
 
     const controleur = new AbortController();
     arret.current = controleur;
-    setDirect({ conversationId: idConv, texte: "", reflexion: false, contexte: null, modele });
+    setDirect({ conversationId: idConv, texte: "", reflexion: false, contexte: null, ia: iaEnvoi, modele: "" });
     setAnnonce("");
-    const recu: { texte: string; contexte: InfoContexte | null; fin: Extract<EvenementFlux, { t: "fin" }> | null; erreur: Alerte | null } = { texte: "", contexte: null, fin: null, erreur: null };
+    const recu: { texte: string; modele: string; contexte: InfoContexte | null; fin: Extract<EvenementFlux, { t: "fin" }> | null; erreur: Alerte | null } = { texte: "", modele: "", contexte: null, fin: null, erreur: null };
 
     try {
       await envoyerQuestion(
-        { conversationId: d.conversation.id, texte: reessayer ? undefined : texte, modele, effort, reessayer },
+        { conversationId: d.conversation.id, texte: reessayer ? undefined : texte, ia: iaEnvoi, reessayer },
         (ev) => {
           if (ev.t === "debut") {
             recu.contexte = ev.contexte;
+            recu.modele = ev.modele;
             majConv((x) => ({ ...x, messages: x.messages.map((m) => (m.id === idTemp ? { ...m, id: ev.questionId } : m)) }));
-            setDirect((v) => v && { ...v, contexte: ev.contexte });
+            setDirect((v) => v && { ...v, contexte: ev.contexte, modele: ev.modele });
           } else if (ev.t === "reflexion") setDirect((v) => v && { ...v, reflexion: true });
           else if (ev.t === "texte") {
             recu.texte += ev.v;
@@ -327,18 +329,18 @@ export function Assistant() {
       const questionId = typeof e.extra.questionId === "string" ? e.extra.questionId : null;
       if (questionId) {
         // La question est enregistrée, avec l'erreur en guise de réponse (comme après un rechargement).
-        majConv((x) => ({ ...x, messages: [...x.messages.map((m) => (m.id === idTemp ? { ...m, id: questionId } : m)), { id: idLocal("erreur"), role: "assistant", contenu: e.message, modele, etat: "erreur", usage: USAGE_VIDE, cout: 0, creeLe: maintenant() }] }));
+        majConv((x) => ({ ...x, messages: [...x.messages.map((m) => (m.id === idTemp ? { ...m, id: questionId } : m)), { id: idLocal("erreur"), role: "assistant", contenu: e.message, modele: "", etat: "erreur", usage: USAGE_VIDE, cout: 0, creeLe: maintenant() }] }));
         remonter(d.conversation.id, titreProvisoire(texte));
       } else if (!reessayer) {
-        // Refusée avant d'être enregistrée (clé, rythme, plafond) : la question revient dans la zone de saisie.
+        // Refusée avant d'être enregistrée (quota, rythme) : la question revient dans la zone de saisie.
         majConv((x) => ({ ...x, messages: x.messages.filter((m) => m.id !== idTemp) }));
         if (convCourante.current === idConv) setSaisie(texte);
       }
-      if (CODES_CLE.includes(e.code)) {
-        const f = (e.extra.fournisseur as Fournisseur | undefined) ?? fournisseur;
-        setEtat((x) => x && { ...x, cles: e.code === "sans_cle" ? x.cles.filter((c) => c.fournisseur !== f) : x.cles.map((c) => (c.fournisseur === f ? { ...c, statut: e.code === "cle_invalide" ? "invalide" : c.statut, lisible: e.code === "cle_illisible" ? false : c.lisible } : c)) });
-      }
-      setAlerte({ code: e.code, message: e.message, fournisseur: (e.extra.fournisseur as Fournisseur | undefined) ?? fournisseur });
+      const f = (e.extra.fournisseur as Fournisseur | undefined) ?? iaEnvoi;
+      if (e.code === "modele_indisponible") setEtat((x) => x && { ...x, indisponibles: [...new Set([...x.indisponibles, f])] });
+      if (e.code === "quota_jour") setEtat((x) => x && { ...x, quota: { ...x.quota, questionsRestantes: 0 } });
+      if (e.code === "quota_mois") setEtat((x) => x && { ...x, quota: { ...x.quota, partMois: 1 } });
+      setAlerte({ code: e.code, message: e.message, fournisseur: f });
       setDirect(null);
       arret.current = null;
       return;
@@ -351,7 +353,7 @@ export function Assistant() {
       id: fin?.id ?? idLocal("local-r"),
       role: "assistant",
       contenu: etatReponse === "erreur" ? (recu.erreur?.message ?? "Erreur.") : recu.texte,
-      modele,
+      modele: recu.modele,
       etat: etatReponse,
       usage: fin?.usage ?? USAGE_VIDE,
       cout: fin?.cout ?? 0,
@@ -361,13 +363,11 @@ export function Assistant() {
     };
     majConv((x) => ({ ...x, messages: [...x.messages, reponse], conversation: { ...x.conversation, titre: x.conversation.titre || titreProvisoire(texte) } }));
     remonter(d.conversation.id, titreProvisoire(texte));
-    if (fin) {
-      setEtat((x) => x && { ...x, bilan: { ...x.bilan, moisCout: x.bilan.moisCout + fin.cout, moisAppels: x.bilan.moisAppels + 1, moisJetons: x.bilan.moisJetons + fin.usage.entree + fin.usage.sortie + fin.usage.ecritureCache + fin.usage.lectureCache, dixMinutes: x.bilan.dixMinutes + 1 } });
-      if (recu.erreur?.code === "cle_invalide") setEtat((x) => x && { ...x, cles: x.cles.map((c) => (c.fournisseur === fournisseur ? { ...c, statut: "invalide" } : c)) });
-    }
+    if (fin && fin.etat !== "erreur") setEtat((x) => x && { ...x, quota: { ...x.quota, questionsRestantes: Math.max(0, x.quota.questionsRestantes - 1) } });
+    if (recu.erreur?.code === "modele_indisponible") setEtat((x) => x && { ...x, indisponibles: [...new Set([...x.indisponibles, iaEnvoi])] });
     setDirect(null);
     arret.current = null;
-    setAnnonce(etatReponse === "complet" ? "Réponse de Claude terminée." : etatReponse === "interrompu" ? "Réponse interrompue." : "La réponse a échoué.");
+    setAnnonce(etatReponse === "complet" ? `Réponse de ${infoFournisseur(iaEnvoi).nom} terminée.` : etatReponse === "interrompu" ? "Réponse interrompue." : "La réponse a échoué.");
     // Arrêtée avant la fin : le serveur a gardé la réponse partielle ; on relit pour avoir son identifiant.
     if (coupe) window.setTimeout(() => convCourante.current === idConv && void ouvrir(idConv), 1500);
   };
@@ -500,30 +500,14 @@ export function Assistant() {
     }
   };
 
-  const choisirModele = (m: IdModele) => {
-    setModele(m);
+  /** Choisir une IA : elle reste choisie pour ce compte, sur tous ses appareils. */
+  const choisirIA = (f: Fournisseur) => {
+    setFournisseur(f);
     setAlerte(null);
     void api
-      .regler({ modele: m })
+      .regler(f)
       .then((r) => setEtat((x) => x && { ...x, reglages: r.reglages }))
       .catch(() => undefined);
-  };
-  /** Choisir une IA : son modèle conseillé (ou celui des réglages s'il est de cette IA). */
-  const choisirIA = (f: Fournisseur) => {
-    const prefere = etat ? ficheModele(etat.reglages.modele) : null;
-    choisirModele(prefere?.fournisseur === f ? prefere.id : modeleConseille(f).id);
-  };
-  const choisirEffort = (ef: Effort) => {
-    setEffort(ef);
-    void api
-      .regler({ effort: ef })
-      .then((r) => setEtat((x) => x && { ...x, reglages: r.reglages }))
-      .catch(() => undefined);
-  };
-  const [reglagesSur, setReglagesSur] = useState<Fournisseur | null>(null);
-  const ouvrirReglages = (sur: Fournisseur | null = null) => {
-    setReglagesSur(sur);
-    setReglages(true);
   };
 
   const copier = async (id: string, texte: string) => {
@@ -559,7 +543,6 @@ export function Assistant() {
     }
   };
 
-  const onFermerReglages = useCallback(() => setReglages(false), []);
   const onFermerLutrin = useCallback(() => setLutrin(null), []);
 
   /* ---------- Affichage ---------- */
@@ -592,7 +575,7 @@ export function Assistant() {
         docs.some((d) => d.actif) ? (
           <div className="aia-suggestions" role="group" aria-label="Actions rapides">
             {ACTIONS_PDF.map((a) => (
-              <button key={a.nom} type="button" className="aia-suggestion" onClick={() => void envoyer(a.texte)} disabled={!cleUtilisable}>
+              <button key={a.nom} type="button" className="aia-suggestion" onClick={() => void envoyer(a.texte)}>
                 <span className="aia-suggestion-nom">{a.nom}</span>
                 <span className="aia-suggestion-texte">{a.texte}</span>
               </button>
@@ -631,25 +614,19 @@ export function Assistant() {
   );
 
   const actionAlerte = (a: Alerte) => {
-    if (CODES_CLE.includes(a.code) || a.code === "plafond") {
-      return (
-        <button type="button" className="aia-lien" onClick={() => ouvrirReglages(a.code === "plafond" ? null : (a.fournisseur ?? fournisseur))}>
-          {a.code === "plafond" ? "Régler le plafond" : "Ouvrir les réglages de la clé"}
+    if (a.code === "modele_indisponible") {
+      const autre = FOURNISSEURS.find((f) => f.id !== (a.fournisseur ?? fournisseur) && !indisponibles.includes(f.id));
+      return autre ? (
+        <button type="button" className="aia-lien" onClick={() => choisirIA(autre.id)}>
+          Prendre {autre.nom}
         </button>
-      );
+      ) : null;
     }
     if (a.code === "deconnecte") {
       return (
         <Link className="aia-lien" href="/connexion?retour=%2Fassistant">
           Se reconnecter
         </Link>
-      );
-    }
-    if (a.code === "credit_epuise") {
-      return (
-        <a className="aia-lien" href={infoFournisseur(a.fournisseur ?? fournisseur).pageCredit} target="_blank" rel="noopener noreferrer">
-          Recharger mon crédit
-        </a>
       );
     }
     return null;
@@ -661,9 +638,9 @@ export function Assistant() {
       <div className="aia-etat-page">
         {erreurEtat.code === "deconnecte" ? (
           <>
-            <KeyRound className="aia-accueil-icone" strokeWidth={1.2} aria-hidden="true" />
+            <LogIn className="aia-accueil-icone" strokeWidth={1.2} aria-hidden="true" />
             <h2 className="aia-accueil-titre">Connecte-toi pour utiliser l&apos;assistant</h2>
-            <p className="aia-accueil-texte">Tes conversations, tes PDF et ta clé sont rangés avec ton compte Google : personne d&apos;autre n&apos;y a accès.</p>
+            <p className="aia-accueil-texte">Il suffit de ton compte Google. Tes conversations et tes PDF sont rangés avec lui : personne d&apos;autre n&apos;y a accès.</p>
             <Link className="bouton bouton-principal" href="/connexion?retour=%2Fassistant">
               Se connecter avec Google
             </Link>
@@ -684,20 +661,6 @@ export function Assistant() {
       <div className="aia-etat-page" role="status">
         <LoaderCircle className="size-6 animate-spin text-encre-douce" aria-hidden="true" />
         <p className="aia-accueil-texte">Ouverture de l&apos;assistant…</p>
-      </div>
-    );
-  } else if (cles.length === 0 && !detail) {
-    centre = (
-      <div className="aia-fil aia-fil-cle">
-        <RelierCle
-          titre={t("cle.titre")}
-          texte={t("cle.texte")}
-          fournisseurInitial={fournisseur}
-          onRelie={(f) => {
-            setEtat((x) => x && { ...x, cles: [...x.cles.filter((c) => c.fournisseur !== f.fournisseur), f] });
-            if (ficheModele(modele).fournisseur !== f.fournisseur) choisirModele(modeleConseille(f.fournisseur).id);
-          }}
-        />
       </div>
     );
   } else {
@@ -723,14 +686,7 @@ export function Assistant() {
                     {m.contexte && <p className="aia-reponse-lecture">{ligneLecture(m.contexte)}</p>}
                     {noteArret(m.raison ?? "", m.etat) && <p className="aia-reponse-note">{noteArret(m.raison ?? "", m.etat)}</p>}
                     <footer className="aia-reponse-pied">
-                      {m.etat !== "erreur" && (
-                        <span
-                          className="aia-reponse-conso"
-                          title={`Entrée : ${m.usage.entree.toLocaleString("fr-FR")} jetons · cache relu : ${m.usage.lectureCache.toLocaleString("fr-FR")} · cache écrit : ${m.usage.ecritureCache.toLocaleString("fr-FR")} · sortie : ${m.usage.sortie.toLocaleString("fr-FR")}. Coût estimé par le site ; la facture qui fait foi est celle d'Anthropic.`}
-                        >
-                          {nomModele(m.modele)} · {formaterJetons(m.usage.entree + m.usage.lectureCache + m.usage.ecritureCache)} lus, {formaterJetons(m.usage.sortie)} écrits · ≈ {formaterCout(m.cout)}
-                        </span>
-                      )}
+                      {m.etat !== "erreur" && m.modele && <span className="aia-reponse-conso">{nomModele(m.modele)}</span>}
                       <span className="flex-1" />
                       {m.etat !== "erreur" && (
                         <button type="button" className="aia-pied-bouton" onClick={() => void copier(m.id, m.contenu)}>
@@ -738,7 +694,7 @@ export function Assistant() {
                           {copie === m.id ? "Copié" : "Copier"}
                         </button>
                       )}
-                      {m.id === derniereReponse?.id && !direct && cleUtilisable && (
+                      {m.id === derniereReponse?.id && !direct && (
                         <button type="button" className="aia-pied-bouton" onClick={() => void envoyer(undefined, true)}>
                           <RotateCcw className="size-3.5" aria-hidden="true" />
                           {m.etat === "complet" ? "Régénérer" : "Réessayer"}
@@ -756,7 +712,7 @@ export function Assistant() {
                 ) : (
                   <p className="aia-reflexion" role="status">
                     <span className="aia-astrolabe" aria-hidden="true" />
-                    {direct.reflexion ? "Claude réfléchit…" : direct.contexte ? "Claude lit tes documents…" : "Claude lit ta question…"}
+                    {`${infoFournisseur(direct.ia).nom} ${direct.reflexion ? "réfléchit…" : direct.contexte ? "lit tes documents…" : "lit ta question…"}`}
                   </p>
                 )}
                 {direct.contexte && <p className="aia-reponse-lecture">{ligneLecture(direct.contexte)}</p>}
@@ -778,18 +734,14 @@ export function Assistant() {
               </button>
             </div>
           )}
-          {etat && !cleUtilisable && !alerte && (
+          {etat && indisponibles.includes(fournisseur) && !alerte && (
             <div className="message aia-alerte aia-alerte-ia" role="status">
-              <span className="flex-1">
-                {!cle
-                  ? `Pour poser tes questions à ${ia.nom}, relie ta clé ${ia.entreprise} (facturée sur ton compte).`
-                  : cle.lisible === false
-                    ? `Ta clé ${ia.nom} ne peut plus être lue : colle-la de nouveau.`
-                    : `${ia.entreprise} a refusé ta clé ${ia.nom} : remplace-la pour continuer.`}
-              </span>
-              <button type="button" className="aia-lien" onClick={() => ouvrirReglages(fournisseur)}>
-                {cle ? "Remplacer la clé" : `Relier ma clé ${ia.nom}`}
-              </button>
+              <span className="flex-1">{ia.nom} n&apos;est pas compris dans l&apos;offre gratuite du Vizir pour le moment.</span>
+              {autreIa && (
+                <button type="button" className="aia-lien" onClick={() => choisirIA(autreIa.id)}>
+                  Prendre {autreIa.nom}
+                </button>
+              )}
             </div>
           )}
           <form
@@ -823,27 +775,7 @@ export function Assistant() {
                   {FOURNISSEURS.map((f) => (
                     <option key={f.id} value={f.id}>
                       {f.nom}
-                      {cles.some((c) => c.fournisseur === f.id) ? "" : " (clé à relier)"}
-                    </option>
-                  ))}
-                </select>
-              </label>
-              <label className="aia-choix">
-                <span className="sr-only">Modèle</span>
-                <select value={modele} onChange={(e) => choisirModele(e.target.value as IdModele)}>
-                  {modelesDe(fournisseur).map((m) => (
-                    <option key={m.id} value={m.id}>
-                      {m.nom.replace(/^(Claude|Gemini) /, "")}
-                    </option>
-                  ))}
-                </select>
-              </label>
-              <label className="aia-choix">
-                <span className="sr-only">Réflexion</span>
-                <select value={effort} onChange={(e) => choisirEffort(e.target.value as Effort)}>
-                  {EFFORTS.map((ef) => (
-                    <option key={ef.id} value={ef.id}>
-                      {ef.nom}
+                      {indisponibles.includes(f.id) ? " (indisponible)" : ""}
                     </option>
                   ))}
                 </select>
@@ -854,14 +786,14 @@ export function Assistant() {
                   PDF ({docs.filter((d) => d.actif).length}/{docs.length})
                 </button>
               )}
-              <span className="aia-saisie-facture">{cle ? `Facturé sur ta clé ${ia.nom} ${cle.apercu}` : `${ia.nom} : clé à relier`}</span>
+              <span className="aia-saisie-facture">{ligneQuota(quota)}</span>
               </div>
               {direct ? (
                 <button type="button" className="aia-envoyer" data-arret="" onClick={arreter} aria-label="Arrêter la réponse">
                   <Square className="size-4" fill="currentColor" aria-hidden="true" />
                 </button>
               ) : (
-                <button type="submit" className="aia-envoyer" disabled={!saisie.trim() || !cleUtilisable} aria-label="Envoyer">
+                <button type="submit" className="aia-envoyer" disabled={!saisie.trim()} aria-label="Envoyer">
                   <SendHorizontal className="size-4" aria-hidden="true" />
                 </button>
               )}
@@ -899,16 +831,6 @@ export function Assistant() {
           ))}
         </nav>
         <span className="flex-1" />
-        {etat && (cles.length > 0 || etat.bilan.moisAppels > 0) && (
-          <button type="button" className="aia-depense" onClick={() => ouvrirReglages()} title="Ta dépense estimée ce mois-ci, sur ta clé">
-            <span className="aia-depense-libelle">Ce mois</span> {formaterCout(etat.bilan.moisCout)}
-          </button>
-        )}
-        {etat && (
-          <button type="button" className="bouton-icone" onClick={() => ouvrirReglages()} aria-label="Réglages de l'assistant">
-            <Settings2 className="size-5" aria-hidden="true" />
-          </button>
-        )}
         <BoutonTheme />
         <BoutonCompte />
         {accesComplet && (
@@ -991,10 +913,7 @@ export function Assistant() {
               </li>
             ))}
           </ul>
-          <p className="aia-cote-pied">
-            {t("tete.pastille")}
-            {cles.length ? ` · ${cles.map((c) => infoFournisseur(c.fournisseur).nom).join(", ")}` : ""}
-          </p>
+          <p className="aia-cote-pied">{t("tete.pastille")}</p>
         </aside>
         {coteOuvert && <button type="button" className="aia-voile" aria-label="Fermer la liste" onClick={() => setCoteOuvert(false)} />}
 
@@ -1021,25 +940,6 @@ export function Assistant() {
         )}
       </div>
 
-      {reglages && etat && (
-        <Reglages
-          cles={cles}
-          reglages={etat.reglages}
-          bilan={etat.bilan}
-          ouvrirSur={reglagesSur}
-          onCle={(f: FicheCle) => {
-            setEtat((x) => x && { ...x, cles: [...x.cles.filter((c) => c.fournisseur !== f.fournisseur), f] });
-            setAlerte(null);
-          }}
-          onOublie={(f) => setEtat((x) => x && { ...x, cles: x.cles.filter((c) => c.fournisseur !== f) })}
-          onReglages={(r) => {
-            setEtat((x) => x && { ...x, reglages: r });
-            setModele(r.modele);
-            setEffort(r.effort);
-          }}
-          onFermer={onFermerReglages}
-        />
-      )}
       {lutrin && <Lutrin document={lutrin.doc} page={lutrin.page} onPage={(n) => setLutrin((l) => l && { ...l, page: n })} onFermer={onFermerLutrin} />}
     </div>
   );

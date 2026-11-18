@@ -1,8 +1,8 @@
 /*
- * ChatPDF : comment le texte des PDF entre dans la demande faite à Claude.
+ * ChatPDF : comment le texte des PDF entre dans la demande faite à l'IA.
  *
  *   • Lecture complète : si les documents cochés tiennent dans le budget, leur texte entier est
- *     envoyé, page par page, dans la consigne système, marquée pour le cache de l'API. Les
+ *     envoyé, page par page, dans la consigne système, que l'IA garde en cache. Les
  *     questions suivantes relisent ce texte depuis le cache : environ 20 fois moins cher
  *     (et plus rapide), tant que l'on reste actif quelques minutes.
  *   • Lecture par extraits : au-delà, les documents sont découpés en passages d'environ
@@ -15,7 +15,7 @@
  */
 import { estimerJetons } from "./modeles";
 
-/** numero : le « Doc N » que Claude cite (stable dans la conversation). */
+/** numero : le « Doc N » que l'IA cite (stable dans la conversation). */
 export type DocumentContexte = { id: string; numero: number; nom: string; pages: number; texte: string };
 
 export type Passage = { doc: number; pageDebut: number; pageFin: number; texte: string; jetons: number };
@@ -33,13 +33,17 @@ export type Contexte = {
   integraleImpossible: boolean;
 };
 
-/** Au-dessous, tout le texte est envoyé sans rien demander. */
-export const BUDGET_COMPLET_AUTO = 150_000;
-/** Lecture intégrale demandée : jusqu'à 700 000 jetons (la fenêtre des modèles est d'un million). */
-export const BUDGET_INTEGRAL = 700_000;
+/*
+ * Les budgets restent modestes : chaque question est prise sur le crédit gratuit du site, et chaque
+ * compte n'en a qu'une petite part par mois (limites.ts).
+ */
+/** Au-dessous, tout le texte est envoyé sans rien demander (une centaine de pages). */
+export const BUDGET_COMPLET_AUTO = 60_000;
+/** Lecture intégrale demandée : jusqu'à 250 000 jetons (quelques centaines de pages). */
+export const BUDGET_INTEGRAL = 250_000;
 /** Extraits : ce que l'on garde par question. */
-export const BUDGET_EXTRAITS = 60_000;
-export const BUDGET_EXTRAITS_LARGE = 250_000;
+export const BUDGET_EXTRAITS = 25_000;
+export const BUDGET_EXTRAITS_LARGE = 80_000;
 
 const TAILLE_PASSAGE = 2_600;
 

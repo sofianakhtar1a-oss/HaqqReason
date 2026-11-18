@@ -1,6 +1,6 @@
 /*
- * Les consignes données à Claude (le « prompt système »), pour chacun des deux espaces.
- * Elles restent identiques d'une question à l'autre dans une même journée : l'API peut donc
+ * Les consignes données à l'IA (le « prompt système »), pour chacun des deux espaces.
+ * Elles restent identiques d'une question à l'autre dans une même journée : l'IA peut donc
  * les garder en cache avec le texte des documents.
  */
 

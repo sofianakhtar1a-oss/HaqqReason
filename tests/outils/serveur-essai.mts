@@ -1,15 +1,15 @@
 /*
- * Pour essayer l'Assistant dans un navigateur, sans clé ni base réelles : le site de production
- * (npm run build) démarre avec une base PostgreSQL locale (toutes les migrations) et une fausse
- * API Anthropic. Les cookies de comptes d'essai sont écrits dans le fichier donné en argument.
+ * Pour essayer l'Assistant dans un navigateur, sans base ni passerelle réelles : le site de
+ * production (npm run build) démarre avec une base PostgreSQL locale (toutes les migrations) et une
+ * fausse passerelle IA (Claude y est refusé, comme dans l'offre gratuite). Les cookies de comptes
+ * d'essai sont écrits dans le fichier donné en argument.
  *   npx tsx tests/outils/serveur-essai.mts /tmp/assistant-essai.json [port]
- * Clés d'essai acceptées par la fausse API : toute clé « sk-ant-api03-… » (voir anthropic-factice.mjs).
  */
 import { spawn } from "node:child_process";
 import { writeFileSync } from "node:fs";
 import { SignJWT } from "jose";
 import { ouvrirBase, servirPostgrest } from "./postgrest-pglite.mjs";
-import { servirAnthropic } from "./anthropic-factice.mjs";
+import { JETON_ESSAI, servirPasserelle } from "./passerelle-factice.mjs";
 
 const sortie = process.argv[2] ?? "/tmp/assistant-essai.json";
 const port = Number(process.argv[3] ?? 3110);
@@ -17,7 +17,7 @@ const SECRET = "essai-".repeat(8);
 
 const db = await ouvrirBase();
 await servirPostgrest(db, 9931);
-await servirAnthropic(9932);
+await servirPasserelle(9932, { refuses: ["anthropic/claude-haiku-5.5"] });
 
 const comptes: Record<string, { id: string; jeton: string }> = {};
 for (const [sub, nom] of [
@@ -44,9 +44,8 @@ const serveur = spawn("npx", ["next", "start", "-p", String(port), "-H", "127.0.
     SUPABASE_SECRET_KEY: "sb_secret_essai",
     SESSION_SECRET: SECRET,
     SETUP_TOKEN: "0123456789abcdef",
-    ASSISTANT_ANTHROPIC_BASE: "http://127.0.0.1:9932",
-    ASSISTANT_OPENAI_BASE: "http://127.0.0.1:9932",
-    ASSISTANT_GOOGLE_BASE: "http://127.0.0.1:9932",
+    ASSISTANT_PASSERELLE_BASE: "http://127.0.0.1:9932/v1",
+    AI_GATEWAY_API_KEY: JETON_ESSAI,
   },
   stdio: "inherit",
 });

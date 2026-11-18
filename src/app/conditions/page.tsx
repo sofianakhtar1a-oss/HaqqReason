@@ -13,7 +13,7 @@ const SECTIONS: SectionTexte[] = [
   {
     titre: "Le service",
     paragraphes: [
-      "HaqqReason est une bibliothèque d'apologétique islamique, gratuite, accompagnée d'outils personnels : un traitement de texte (Le Calame), des outils de fichiers et de transcription (L'Alambic), un module d'apprentissage de l'anglais (Le Truchement) et un assistant IA (Le Vizir), qui fonctionne avec Claude, ChatGPT ou Gemini et la clé API de chaque utilisateur, à ses frais.",
+      "HaqqReason est une bibliothèque d'apologétique islamique, gratuite, accompagnée d'outils personnels : un traitement de texte (Le Calame), des outils de fichiers et de transcription (L'Alambic), un module d'apprentissage de l'anglais (Le Truchement) et un assistant IA (Le Vizir), qui donne accès gratuitement à Claude, ChatGPT ou Gemini, dans la limite d'un nombre de questions par jour.",
       "La bibliothèque se lit sans compte. Le mode utilisateur demande une connexion avec un compte Google, pour que ton travail soit enregistré sur ton compte et te suive d'un appareil à l'autre.",
     ],
   },
