@@ -3,6 +3,7 @@
 import { useActionState, useEffect, useState } from "react";
 import { Bug, CheckCircle2, Inbox, Lightbulb, Lock, ShieldCheck, Sparkles, Wrench } from "lucide-react";
 import { BoutonEnvoi } from "@/components/BoutonEnvoi";
+import { EtoileVide } from "@/components/EtoileVide";
 import { MessageFormulaire } from "@/components/MessageFormulaire";
 import { LIMITES_CONTRIBUTION, type ContributionPublique, type NatureSite, type TypeContribution } from "@/lib/contributions/modele";
 import { ETAT_INITIAL } from "@/lib/form-state";
@@ -366,7 +367,10 @@ export function Contribuer({
               <span className="ml-2 text-base font-normal text-encre-douce">{liste.length}</span>
             </h2>
             {liste.length === 0 ? (
-              <p className="contrib-vide">Rien pour l&apos;instant. La première proposition pourrait être la tienne.</p>
+              <p className="contrib-vide">
+                <EtoileVide />
+                Rien pour l&apos;instant. La première proposition pourrait être la tienne.
+              </p>
             ) : (
               <div className="contrib-cartes">
                 {liste.map((c) => (

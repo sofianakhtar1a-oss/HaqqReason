@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ArrowRight, Search, Shuffle } from "lucide-react";
 import { useMemo, useState, type ReactNode } from "react";
+import { EtoileVide } from "@/components/EtoileVide";
 import { normaliser } from "@/lib/recherche-texte";
 
 type Fiche = { cle: string; articleId: string; articleTitre: string; blocId: string; objection: string; recherche: string; reponse: ReactNode };
@@ -37,6 +38,7 @@ export function DebatExpress({ fiches, blocs }: Props) {
   if (fiches.length === 0) {
     return (
       <p className="verre mt-10 rounded-3xl p-6 text-encre-douce">
+        <EtoileVide />
         Aucune fiche pour l&apos;instant. Elles apparaissent dès qu&apos;un article publié contient un bloc « Objection → Réponse ».
       </p>
     );

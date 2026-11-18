@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { Heart, Lightbulb, MessagesSquare, Network } from "lucide-react";
 import { BoutonTheme } from "./BoutonTheme";
 import { BoutonCompte } from "./compte/BoutonCompte";
+import { LienOutil } from "./LienOutil";
 import { Logo } from "./Logo";
 import { BoutonRecherche } from "./PaletteRecherche";
 
@@ -29,7 +29,7 @@ export function EnTete({
         {outils && (
           <nav aria-label="Outils" className="flex items-center gap-1">
             {OUTILS.map(({ href, libelle, Icone, cache }) => (
-              <Link
+              <LienOutil
                 key={href}
                 href={href}
                 className={cache ? `lien-outil ${cache}` : "lien-outil"}
@@ -37,7 +37,7 @@ export function EnTete({
               >
                 <Icone className="size-5" aria-hidden="true" />
                 <span className="sr-only lg:not-sr-only">{libelle}</span>
-              </Link>
+              </LienOutil>
             ))}
           </nav>
         )}

@@ -1,6 +1,7 @@
 import { ArcheBloc } from "@/components/ArcheBloc";
 import { BaseIndisponible } from "@/components/BaseIndisponible";
 import { EnTete } from "@/components/EnTete";
+import { EtoileVide } from "@/components/EtoileVide";
 import { compterCategoriesParBloc, listerBlocs } from "@/lib/content";
 import type { Espace } from "@/lib/espaces";
 
@@ -37,7 +38,10 @@ export async function PorteEspace({ espace, titre, intro }: { espace: Espace; ti
               ))}
             </ul>
           ) : (
-            <p className="verre panneau mt-10 max-w-2xl text-encre-douce">Ce module ouvre bientôt ses portes.</p>
+            <p className="verre panneau mt-10 max-w-2xl text-encre-douce">
+              <EtoileVide />
+              Ce module ouvre bientôt ses portes.
+            </p>
           )
         ) : (
           <BaseIndisponible />

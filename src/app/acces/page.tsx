@@ -26,7 +26,7 @@ export default async function PageAcces({ searchParams }: Props) {
 
   return (
     <CadreCreateur>
-      <span className="grid size-12 place-items-center rounded-2xl bg-[color-mix(in_srgb,var(--or)_18%,transparent)] text-or">
+      <span className="cadenas-porte grid size-12 place-items-center rounded-2xl bg-[color-mix(in_srgb,var(--or)_18%,transparent)] text-or">
         <LockKeyhole className="size-6" strokeWidth={1.7} aria-hidden="true" />
       </span>
       <h1 className="mt-5 text-3xl font-extrabold">Module réservé</h1>

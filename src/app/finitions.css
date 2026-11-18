@@ -1,0 +1,727 @@
+/* =====================================================================
+   HaqqReason — les finitions, jusque dans les recoins du site
+   Passées au crible d'Impeccable : les surfaces du navigateur prennent
+   les couleurs du manuscrit, un fil d'or se tire pendant les passages,
+   la lampe du copiste allume la trame sous le curseur, chaque titre de
+   page s'écrit à l'or puis sèche en encre, les états vides reçoivent leur
+   étoile, les portes s'éclairent, les pages de texte ont leur fil de
+   lecture et leur colophon.
+   Rien n'est retiré : tout s'ajoute. On anime surtout transform et
+   opacity ; tout se calme avec « réduire les animations » (fin du
+   fichier), et rien ne s'imprime.
+   ===================================================================== */
+
+/* L'étoile à huit branches (deux carrés croisés), en masque : elle se peint de n'importe quelle couleur. */
+:root {
+  --etoile-huit: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 5h14v14H5zM12 2.1 21.9 12 12 21.9 2.1 12z'/%3E%3C/svg%3E");
+}
+
+/* ---------- Les surfaces du navigateur : sélection, curseur de saisie, barres, chiffres ---------- */
+@layer base {
+  :root {
+    accent-color: var(--or);
+  }
+  :where(input, textarea, [contenteditable]) {
+    caret-color: var(--or);
+  }
+  :where(time, td, th, output, meter, progress) {
+    font-variant-numeric: tabular-nums;
+  }
+}
+/* La barre de défilement de la page : une réglette d'or éteint sur le bleu de la nuit. */
+html {
+  scrollbar-color: color-mix(in srgb, var(--or) 42%, var(--fond)) color-mix(in srgb, var(--fond-haut) 40%, var(--fond));
+}
+/* Ces panneaux dessinent déjà leur propre barre (voir globals.css) : on la leur laisse. */
+.graphe-apercu-texte {
+  scrollbar-color: auto;
+}
+@media (min-width: 64rem) {
+  .colonne-reglages {
+    scrollbar-color: auto;
+  }
+}
+
+/* ---------- Le fil d'or : un passage d'une page à l'autre (voir scene/FilDOr.tsx) ---------- */
+.fil-or {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 1250;
+  height: 2px;
+  pointer-events: none;
+  visibility: hidden;
+  clip-path: inset(-8px 0 -8px 0);
+}
+.fil-or[data-actif] {
+  visibility: visible;
+}
+.fil-or-trait {
+  position: absolute;
+  inset: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--or) 20%, transparent), var(--or) 72%, #fff2d2);
+  box-shadow: 0 1px 8px color-mix(in srgb, var(--or) 55%, transparent);
+}
+/* La pointe : une petite étoile qui tourne au bout du fil. Le rail fait toute la largeur,
+   pour que sa translation (en %) suive exactement la longueur du fil. */
+.fil-or-rail {
+  position: absolute;
+  inset: 0;
+}
+.fil-or-tete {
+  position: absolute;
+  left: -6px;
+  top: -3px;
+  width: 12px;
+  height: 12px;
+  filter: drop-shadow(0 0 4px var(--or));
+}
+.fil-or-tete::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #fff6de;
+  -webkit-mask: var(--etoile-huit) center / contain no-repeat;
+  mask: var(--etoile-huit) center / contain no-repeat;
+}
+.fil-or[data-actif] .fil-or-tete::before {
+  animation: tourner 1.6s linear infinite;
+}
+[data-theme="light"] .fil-or-trait {
+  background: linear-gradient(90deg, color-mix(in srgb, var(--or) 20%, transparent), var(--or));
+}
+[data-theme="light"] .fil-or-tete::before {
+  background: var(--or);
+}
+
+/* ---------- La lampe du copiste (voir scene/Lampe.tsx) ----------
+   Là où passe le curseur, la trame à huit branches du fond accroche la lumière, comme un motif
+   doré sous la flamme. La lampe glisse d'un bloc (transform) ; la trame, à l'intérieur, glisse en
+   sens inverse pour rester calée sur celle du fond : rien n'est repeint pendant le mouvement. */
+.lampe {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 480px;
+  height: 480px;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--or) 12%, transparent), transparent);
+  -webkit-mask-image: radial-gradient(closest-side, #000 0%, rgba(0, 0, 0, 0.55) 42%, transparent 100%);
+  mask-image: radial-gradient(closest-side, #000 0%, rgba(0, 0, 0, 0.55) 42%, transparent 100%);
+  will-change: transform;
+}
+.lampe[data-allumee] {
+  opacity: 1;
+}
+.lampe-trame {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.34;
+  background-color: var(--or);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96' fill='none' stroke='black' stroke-width='1'%3E%3Cpath d='M48 14 82 48 48 82 14 48Z'/%3E%3Cpath d='M24 24h48v48H24z'/%3E%3Cpath d='M0 48h14M82 48h14M48 0v14M48 82v14'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96' fill='none' stroke='black' stroke-width='1'%3E%3Cpath d='M48 14 82 48 48 82 14 48Z'/%3E%3Cpath d='M24 24h48v48H24z'/%3E%3Cpath d='M0 48h14M82 48h14M48 0v14M48 82v14'/%3E%3C/svg%3E");
+  -webkit-mask-size: 96px 96px;
+  mask-size: 96px 96px;
+  will-change: transform;
+}
+[data-theme="light"] .lampe-trame {
+  opacity: 0.3;
+}
+
+/* ---------- Les titres de page : écrits à l'or, ils sèchent en encre ----------
+   Une plume passe de gauche à droite (clip-path), l'or du trait vire à l'encre, et un filet d'or
+   se trace dessous : c'est l'ouverture de chaque page. L'accueil, les titres déjà animés et ceux
+   des liseuses gardent leur propre entrée. */
+main h1:not(.sr-only, .titre-lettres, .apparait, .livre-titre, .tr-livre-titre, .calame-titre-impression) {
+  position: relative;
+  /* Une décélération plus douce que --courbe-sortie : la plume se voit passer. */
+  animation:
+    titre-ecrit 0.85s cubic-bezier(0.33, 0.7, 0.25, 1) 0.05s backwards,
+    titre-seche 1.8s ease-out 0.05s backwards;
+}
+main h1:not(.sr-only, .titre-lettres, .apparait, .livre-titre, .tr-livre-titre, .calame-titre-impression)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.16em);
+  width: min(6rem, 40%);
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  transform-origin: left;
+  pointer-events: none;
+  animation: trait-or 1.1s var(--courbe-sortie) 0.5s backwards;
+}
+:is(.text-center, .text-center *) > h1:not(.sr-only)::after,
+main h1.text-center::after {
+  left: 50%;
+  translate: -50% 0;
+  transform-origin: center;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+@keyframes titre-ecrit {
+  from {
+    clip-path: inset(-0.3em 100% -0.45em -0.3em);
+  }
+  to {
+    clip-path: inset(-0.3em -0.3em -0.45em -0.3em);
+  }
+}
+@keyframes titre-seche {
+  from {
+    color: var(--or);
+  }
+}
+
+/* ---------- L'en-tête : la page où l'on est, et un filet d'or au survol ---------- */
+.lien-outil {
+  position: relative;
+}
+.lien-outil::before {
+  content: "";
+  position: absolute;
+  left: 28%;
+  right: 28%;
+  bottom: 0.4rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--or), transparent);
+  transform: scaleX(0);
+  transition: transform 0.35s var(--courbe-sortie);
+  pointer-events: none;
+}
+.lien-outil:not([aria-current]):hover::before {
+  transform: scaleX(1);
+}
+/* La page ouverte : son icône passe à l'or, un point d'or se pose dessous. */
+.lien-outil::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0.28rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  margin-left: -0.15rem;
+  border-radius: 50%;
+  background: var(--or);
+  box-shadow: 0 0 0.5rem color-mix(in srgb, var(--or) 70%, transparent);
+  opacity: 0;
+  transform: scale(0);
+  transition:
+    transform 0.35s var(--courbe-sortie),
+    opacity 0.2s ease;
+  pointer-events: none;
+}
+.lien-outil[aria-current="page"] {
+  color: var(--encre);
+}
+.lien-outil[aria-current="page"] svg {
+  color: var(--or);
+}
+.lien-outil[aria-current="page"]::after {
+  opacity: 1;
+  transform: scale(1);
+}
+.pastille-compte[aria-current="page"] {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--or) 28%, transparent);
+}
+
+/* ---------- Les boutons d'or : une feuille d'or qui accroche la lumière au survol ---------- */
+.bouton-principal {
+  background-image: linear-gradient(110deg, transparent 43%, rgba(255, 250, 238, 0.55) 50%, transparent 57%);
+  background-repeat: no-repeat;
+  background-size: 250% 100%;
+  /* Le reflet attend juste à gauche du bouton (97 %) et le traverse au survol jusqu'à sa droite (3 %). */
+  background-position: 97% 0;
+}
+[data-theme="light"] .bouton-principal {
+  background-image: linear-gradient(110deg, transparent 43%, rgba(255, 255, 255, 0.34) 50%, transparent 57%);
+}
+/* Au toucher, le même reflet sert de réponse au geste ; le bouton garde ensuite le reflet hors de vue. */
+.bouton-principal:hover:not(:disabled) {
+  background-position: 3% 0;
+  transition:
+    transform 0.15s ease,
+    background-color 0.15s ease,
+    box-shadow 0.15s ease,
+    background-position 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---------- Les messages des formulaires arrivent, ils ne surgissent pas ---------- */
+.message {
+  animation: message-arrive 0.38s var(--courbe-sortie) backwards;
+}
+@keyframes message-arrive {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -6px, 0);
+  }
+}
+
+/* ---------- Les portes d'accès (connexion, module réservé, mode créateur) ----------
+   À l'arrivée, une lumière fait une fois le tour du cadre ; quand on y écrit, le cadre s'éclaire. */
+@property --tour-cadre {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+.cadre-porte {
+  position: relative;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.cadre-porte::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  padding: 1px;
+  border-radius: inherit;
+  pointer-events: none;
+  background: conic-gradient(from var(--tour-cadre), transparent 0deg 240deg, color-mix(in srgb, var(--or) 90%, transparent) 320deg, transparent 360deg);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box exclude,
+    linear-gradient(#000 0 0);
+  animation: cadre-tour 2.6s cubic-bezier(0.45, 0.05, 0.25, 1) 0.35s both;
+}
+@keyframes cadre-tour {
+  from {
+    --tour-cadre: 0deg;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  to {
+    --tour-cadre: 360deg;
+    opacity: 0;
+  }
+}
+.cadre-porte:focus-within {
+  border-color: color-mix(in srgb, var(--or) 50%, var(--trait));
+  box-shadow: 0 1.5rem 4rem -2.5rem color-mix(in srgb, var(--or) 55%, transparent);
+}
+/* Un mot de passe refusé : le champ fait « non » de la tête. */
+.cadre-porte form:has(.message-erreur) div:has(> .champ) {
+  animation: champ-refuse 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.cadre-porte form:has(.message-erreur) .champ {
+  border-color: color-mix(in srgb, var(--danger) 60%, var(--trait));
+}
+@keyframes champ-refuse {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+/* Le cadenas du module réservé : il se balance une fois, et deux ondes d'or s'en échappent. */
+.cadenas-porte {
+  position: relative;
+}
+.cadenas-porte::before,
+.cadenas-porte::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid color-mix(in srgb, var(--or) 60%, transparent);
+  opacity: 0;
+  pointer-events: none;
+  animation: cadenas-onde 2.4s var(--courbe-sortie) 0.5s 3;
+}
+.cadenas-porte::after {
+  animation-delay: 1.3s;
+}
+.cadenas-porte svg {
+  transform-origin: 50% 18%;
+  animation: cadenas-balance 1.2s var(--courbe-sortie) 0.15s backwards;
+}
+@keyframes cadenas-onde {
+  from {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.9);
+  }
+}
+@keyframes cadenas-balance {
+  0% {
+    opacity: 0;
+    transform: rotate(-16deg) scale(0.85);
+  }
+  55% {
+    opacity: 1;
+    transform: rotate(7deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+}
+
+/* ---------- Les états vides : une étoile se trace, pour dire « tout commence ici » ---------- */
+.etoile-vide {
+  display: block;
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-bottom: 0.9rem;
+  color: var(--accent);
+  overflow: visible;
+  animation: etoile-vide-pose 1.4s var(--courbe-sortie) backwards;
+}
+.etoile-vide [pathLength] {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: tracer 1.5s var(--courbe-sortie) forwards;
+}
+.etoile-vide [pathLength]:nth-child(2) {
+  animation-delay: 0.18s;
+}
+.etoile-vide [pathLength]:nth-child(3) {
+  animation-delay: 0.42s;
+}
+@keyframes etoile-vide-pose {
+  from {
+    opacity: 0;
+    transform: rotate(-45deg) scale(0.75);
+  }
+}
+
+/* ---------- La page « hors ligne » : le signal cherche, puis la connexion revient ---------- */
+.signal-perdu {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 4.75rem;
+  height: 4.75rem;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--or) 10%, transparent);
+}
+.signal-perdu::before,
+.signal-perdu::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid color-mix(in srgb, var(--or) 55%, transparent);
+  opacity: 0;
+  pointer-events: none;
+  animation: signal-cherche 2.8s var(--courbe-sortie) 0.4s 6;
+}
+.signal-perdu::after {
+  animation-delay: 1.8s;
+}
+@keyframes signal-cherche {
+  from {
+    opacity: 0.85;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 0;
+    transform: scale(2.1);
+  }
+}
+.retour-connexion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  border-radius: 1.25rem;
+  border: 1px solid color-mix(in srgb, var(--succes) 50%, var(--trait));
+  background: color-mix(in srgb, var(--succes) 9%, var(--surface));
+  color: var(--encre);
+  animation: retour-connexion 0.6s var(--courbe-sortie) backwards;
+}
+.retour-connexion svg {
+  color: var(--succes);
+}
+.retour-connexion p {
+  flex: 1;
+  min-width: 12rem;
+  font-weight: 600;
+}
+@keyframes retour-connexion {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0) scale(0.98);
+  }
+}
+
+/* ---------- La page d'erreur : l'astrolabe hésite, puis attend qu'on réessaie ---------- */
+.panne {
+  width: 7.5rem;
+  margin-inline: 0;
+}
+.panne > .rosace {
+  opacity: 0.75;
+}
+.panne .perdu-aiguille {
+  animation: panne-hesite 3.4s var(--courbe-porte) 0.6s 3 both;
+}
+@keyframes panne-hesite {
+  0%,
+  100% {
+    transform: rotate(38deg);
+  }
+  30% {
+    transform: rotate(58deg);
+  }
+  55% {
+    transform: rotate(26deg);
+  }
+  75% {
+    transform: rotate(44deg);
+  }
+}
+
+/* ---------- Mon compte : le point qui dit si tout est enregistré respire pendant l'envoi ---------- */
+.pastille-compte[data-etat="en-cours"] .pastille-compte-etat::after,
+.pastille-compte[data-etat="attente"] .pastille-compte-etat::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  border: 2px solid var(--azur);
+  pointer-events: none;
+  animation: pastille-onde 1.5s var(--courbe-sortie) 6;
+}
+.pastille-compte[data-etat="a-jour"] .pastille-compte-etat {
+  animation: pastille-pose 0.55s var(--courbe-sortie);
+}
+@keyframes pastille-onde {
+  from {
+    opacity: 0.9;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 0;
+    transform: scale(2.3);
+  }
+}
+@keyframes pastille-pose {
+  from {
+    transform: scale(1.9);
+  }
+}
+/* Les jauges de place se remplissent à l'arrivée. */
+.jauge-compte > span {
+  transform-origin: left;
+  animation: jauge-monte 1.3s var(--courbe-sortie) 0.35s backwards;
+}
+@keyframes jauge-monte {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+/* ---------- Les pages de texte (conditions, confidentialité) ----------
+   Le cadre prend le monde du manuscrit : un fil de lecture dans la marge, une étoile devant
+   chaque section, un colophon à la fin. La colonne de lecture, elle, reste calme. */
+.page-texte h2::before {
+  content: "";
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  margin-right: 0.55em;
+  vertical-align: 0.05em;
+  background: var(--or);
+  -webkit-mask: var(--etoile-huit) center / contain no-repeat;
+  mask: var(--etoile-huit) center / contain no-repeat;
+}
+.fil-lecture {
+  display: none;
+}
+.colophon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 4.5rem;
+  color: var(--or);
+}
+.colophon-filet {
+  width: min(7rem, 22vw);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--or));
+  transform-origin: right;
+  animation: trait-or 1.3s var(--courbe-sortie) 0.5s backwards;
+}
+.colophon-filet:last-child {
+  background: linear-gradient(90deg, var(--or), transparent);
+  transform-origin: left;
+}
+.colophon .etoile-vide {
+  margin: 0;
+  color: var(--or);
+}
+/* Le colophon se trace quand on arrive au bout du texte, pas avant. */
+html.scene .colophon:not([data-vu]) :is(.colophon-filet, .etoile-vide, [pathLength]) {
+  animation-play-state: paused;
+}
+@supports (animation-timeline: scroll()) {
+  .fil-lecture {
+    display: block;
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 40;
+    height: 2px;
+    pointer-events: none;
+  }
+  .fil-lecture::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--or) 30%, transparent), var(--or));
+    animation: fil-lecture-x linear both;
+    animation-timeline: scroll(root block);
+  }
+  .fil-lecture-tete {
+    display: none;
+  }
+  /* Sur grand écran, le fil descend dans la marge, une étoile à sa pointe qui tourne en lisant. */
+  @media (min-width: 72rem) {
+    .fil-lecture {
+      inset: 7rem auto 4rem calc(50% - 27rem);
+      width: 1px;
+      height: auto;
+      background: var(--trait);
+    }
+    .fil-lecture::after {
+      transform: scaleY(0);
+      transform-origin: 50% 0;
+      background: linear-gradient(180deg, color-mix(in srgb, var(--or) 25%, transparent), var(--or));
+      animation-name: fil-lecture-y;
+    }
+    .fil-lecture-tete {
+      display: block;
+      position: absolute;
+      inset: 0;
+      animation: fil-lecture-tete linear both;
+      animation-timeline: scroll(root block);
+    }
+    .fil-lecture-tete::before {
+      content: "";
+      position: absolute;
+      left: -6px;
+      top: -6px;
+      width: 13px;
+      height: 13px;
+      background: var(--or);
+      -webkit-mask: var(--etoile-huit) center / contain no-repeat;
+      mask: var(--etoile-huit) center / contain no-repeat;
+      animation: tourner linear both;
+      animation-timeline: scroll(root block);
+    }
+  }
+  /* L'étoile du colophon tourne d'un huitième de tour pendant qu'on la fait défiler. */
+  .colophon {
+    view-timeline: --colophon block;
+  }
+  .colophon .etoile-vide {
+    animation:
+      etoile-vide-pose 1.4s var(--courbe-sortie) backwards,
+      colophon-tourne linear both;
+    animation-timeline: auto, --colophon;
+  }
+}
+@supports (animation-timeline: view()) {
+  /* L'étoile d'une section tourne et se pose quand la section entre à l'écran. */
+  .page-texte h2 {
+    view-timeline: --section block;
+  }
+  .page-texte h2::before {
+    animation: etoile-section linear both;
+    animation-timeline: --section;
+    animation-range: entry 0% cover 35%;
+  }
+}
+@keyframes fil-lecture-x {
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes fil-lecture-y {
+  to {
+    transform: scaleY(1);
+  }
+}
+@keyframes fil-lecture-tete {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+@keyframes colophon-tourne {
+  from {
+    rotate: -45deg;
+  }
+}
+@keyframes etoile-section {
+  from {
+    opacity: 0.25;
+    transform: rotate(-135deg) scale(0.45);
+  }
+}
+
+/* ---------- Impression : rien de tout cela ne sort sur le papier ---------- */
+@media print {
+  .fil-or,
+  .lampe,
+  .fil-lecture,
+  .colophon,
+  .etoile-vide {
+    display: none !important;
+  }
+  main h1::after {
+    display: none !important;
+  }
+}
+
+/* ---------- Réduire les animations : la même page, immobile ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .lampe,
+  .cadre-porte::before {
+    display: none;
+  }
+  .fil-or[data-actif] .fil-or-tete::before,
+  .page-texte h2::before,
+  .colophon .etoile-vide,
+  .fil-lecture-tete::before {
+    animation: none !important;
+  }
+  /* Le fil de lecture suit le défilement, il ne bouge pas tout seul : on le garde. */
+  .fil-lecture::after,
+  .fil-lecture-tete {
+    animation-duration: auto !important;
+  }
+}

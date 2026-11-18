@@ -43,7 +43,7 @@ export function BoutonCompte() {
   const initiale = (compte.nom || compte.email || "?").trim().charAt(0).toUpperCase();
   const libelle = LIBELLES[etat.phase];
   return (
-    <a href="/compte" className="pastille-compte" data-etat={etat.phase} title={`Mon compte : ${compte.nom || compte.email}${libelle ? `\n${libelle}` : ""}`} aria-label={`Mon compte (${compte.nom || compte.email})${libelle ? `. ${libelle}` : ""}`}>
+    <a href="/compte" className="pastille-compte" data-etat={etat.phase} aria-current={chemin === "/compte" ? "page" : undefined} title={`Mon compte : ${compte.nom || compte.email}${libelle ? `\n${libelle}` : ""}`} aria-label={`Mon compte (${compte.nom || compte.email})${libelle ? `. ${libelle}` : ""}`}>
       <span aria-hidden="true">{initiale}</span>
       <span className="pastille-compte-etat" aria-hidden="true" />
     </a>

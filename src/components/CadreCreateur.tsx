@@ -7,7 +7,7 @@ export function CadreCreateur({ children }: { children: React.ReactNode }) {
       <div className="sans-impression mb-6">
         <Logo />
       </div>
-      <div className="verre panneau">{children}</div>
+      <div className="verre panneau cadre-porte">{children}</div>
     </main>
   );
 }

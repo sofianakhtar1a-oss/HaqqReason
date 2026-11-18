@@ -5,6 +5,7 @@ import { FolderPlus, Heart, History, Trash2, WifiOff } from "lucide-react";
 import { useEffect, useState, useSyncExternalStore } from "react";
 import { abonnerConnexion, abonnerFavoris, basculerFavori, garderHorsLigne, instantaneFavoris, lireFavoris } from "@/lib/client/favoris";
 import { abonnerCollections, ecrireCollections, effacerHistorique, lireCollections, lireHistorique, type Collections, type Visite } from "@/lib/client/historique";
+import { EtoileVide } from "@/components/EtoileVide";
 
 const AUCUNE: Collections = {};
 
@@ -60,7 +61,10 @@ export function ListeFavoris() {
       {onglet === "historique" ? (
         <div className="mt-6">
           {!historique || historique.length === 0 ? (
-            <p className="verre rounded-3xl p-6 text-encre-douce">Aucun article lu pour l&apos;instant.</p>
+            <p className="verre rounded-3xl p-6 text-encre-douce">
+              <EtoileVide />
+              Aucun article lu pour l&apos;instant.
+            </p>
           ) : (
             <>
               <ol className="grid gap-2">
@@ -87,7 +91,10 @@ export function ListeFavoris() {
           )}
         </div>
       ) : favoris.length === 0 ? (
-        <p className="verre mt-6 rounded-3xl p-6 text-encre-douce">Aucun favori pour l&apos;instant. Ouvre un article et touche « Ajouter aux favoris ».</p>
+        <p className="verre mt-6 rounded-3xl p-6 text-encre-douce">
+          <EtoileVide />
+          Aucun favori pour l&apos;instant. Ouvre un article et touche « Ajouter aux favoris ».
+        </p>
       ) : (
         <>
           <div className="mt-6 flex flex-wrap items-center gap-2" role="group" aria-label="Collections">

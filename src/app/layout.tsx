@@ -7,11 +7,14 @@ import "@fontsource/amiri/700.css";
 import "./globals.css";
 import "./scene.css";
 import "./modules.css";
+import "./finitions.css";
 import { BarreVueUtilisateur } from "@/components/compte/BarreVueUtilisateur";
 import { Synchronisation } from "@/components/compte/Synchronisation";
 import { InstallationRequise } from "@/components/InstallationRequise";
 import { PaletteRecherche } from "@/components/PaletteRecherche";
 import { ServiceHorsLigne } from "@/components/ServiceHorsLigne";
+import { FilDOr } from "@/components/scene/FilDOr";
+import { Lampe } from "@/components/scene/Lampe";
 import { Mouvements } from "@/components/scene/Mouvements";
 import { Portail } from "@/components/scene/Portail";
 import { Ouverture, SCRIPT_OUVERTURE } from "@/components/scene/Ouverture";
@@ -78,6 +81,8 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
         <ServiceHorsLigne />
         {manquantes.length === 0 && <Portail />}
         {manquantes.length === 0 && <Ouverture />}
+        {manquantes.length === 0 && <FilDOr />}
+        <Lampe />
         <Mouvements />
       </body>
     </html>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EnTete } from "@/components/EnTete";
+import { EtoileVide } from "@/components/EtoileVide";
 import { dbPublic } from "@/lib/supabase";
 
 export const metadata: Metadata = { title: "Nouveautés", description: "Les derniers articles publiés et mis à jour dans HaqqReason." };
@@ -17,7 +18,10 @@ export default async function Nouveautes() {
         <h1 className="text-4xl font-extrabold md:text-5xl">Nouveautés</h1>
         <p className="mt-3 text-lg text-encre-douce">Les articles publiés ou enrichis récemment.</p>
         {articles.length === 0 ? (
-          <p className="verre mt-8 rounded-3xl p-6 text-encre-douce">Aucun article publié pour l&apos;instant.</p>
+          <p className="verre mt-8 rounded-3xl p-6 text-encre-douce">
+            <EtoileVide />
+            Aucun article publié pour l&apos;instant.
+          </p>
         ) : (
           <ol className="mt-8 grid gap-3">
             {articles.map((a) => {
