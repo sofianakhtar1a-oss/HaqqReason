@@ -22,7 +22,7 @@ function contenu(sousCategories: number, articles: number): string {
 /** Une catégorie, présentée comme un dossier à onglet. */
 export function Dossier({ href, titre, description, icone, sousCategories, articles, badge }: Props) {
   return (
-    <Link href={href} className="dossier">
+    <Link href={href} className="dossier" data-revele>
       <div className="flex items-start justify-between gap-3">
         <span className="dossier-icone">
           <IconeCategorie icone={icone} />

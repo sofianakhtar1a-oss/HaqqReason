@@ -116,7 +116,7 @@ export default async function PageCategorie({ params, searchParams }: PageProps<
             <ul className="mt-6 grid max-w-3xl gap-3">
               {articles.map((a) => (
                 <li key={a.id}>
-                  <Link href={`/explorer/article/${a.id}`} className="carte-article">
+                  <Link href={`/explorer/article/${a.id}`} className="carte-article" data-revele>
                     <h3 className="text-lg font-bold">{a.titre}</h3>
                     {a.resume && <p className="mt-1.5 line-clamp-2 text-encre-douce">{a.resume}</p>}
                   </Link>
@@ -135,7 +135,7 @@ export default async function PageCategorie({ params, searchParams }: PageProps<
             <ul className="mt-6 grid max-w-3xl gap-3">
               {aussi.map((a) => (
                 <li key={a.id}>
-                  <Link href={`/explorer/article/${a.id}`} className="carte-article">
+                  <Link href={`/explorer/article/${a.id}`} className="carte-article" data-revele>
                     <h3 className="text-lg font-bold">{a.titre}</h3>
                     {a.resume && <p className="mt-1.5 line-clamp-2 text-encre-douce">{a.resume}</p>}
                   </Link>

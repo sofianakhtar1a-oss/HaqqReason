@@ -198,7 +198,7 @@ export function Truchement() {
         <BoutonTheme />
         <BoutonCompte />
         {accesComplet && (
-          <Link href="/utilisateur" className="calame-sortie">
+          <Link href="/utilisateur" className="calame-sortie" data-portail="Les espaces" data-portail-sur="Mode utilisateur" data-portail-accent="or">
             Quitter
           </Link>
         )}

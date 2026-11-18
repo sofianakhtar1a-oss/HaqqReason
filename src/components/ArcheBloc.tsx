@@ -47,7 +47,7 @@ export function ArcheBloc({ href, titre, description, accent, pied, espace = "pr
       onPointerMove={suivre}
       onPointerLeave={relacher}
     >
-      <Link href={href} className="arche">
+      <Link href={href} className="arche" data-revele>
         <span className="arche-embleme">
           <Embleme className="size-8" strokeWidth={1.5} aria-hidden="true" />
         </span>

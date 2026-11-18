@@ -5,11 +5,14 @@ import "@fontsource-variable/instrument-sans";
 import "@fontsource/amiri/400.css";
 import "@fontsource/amiri/700.css";
 import "./globals.css";
+import "./scene.css";
 import { BarreVueUtilisateur } from "@/components/compte/BarreVueUtilisateur";
 import { Synchronisation } from "@/components/compte/Synchronisation";
 import { InstallationRequise } from "@/components/InstallationRequise";
 import { PaletteRecherche } from "@/components/PaletteRecherche";
 import { ServiceHorsLigne } from "@/components/ServiceHorsLigne";
+import { Mouvements } from "@/components/scene/Mouvements";
+import { Portail } from "@/components/scene/Portail";
 import { googleConfigure } from "@/lib/compte/jeton";
 import { compteCourant } from "@/lib/compte/session";
 import { variablesManquantes } from "@/lib/env";
@@ -59,11 +62,19 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="flex min-h-dvh flex-col antialiased">
         <script nonce={nonce} dangerouslySetInnerHTML={{ __html: SCRIPT_THEME }} suppressHydrationWarning />
+        {/* L'atmosphère : trois nappes de lumière qui dérivent lentement, et un grain de vélin. */}
+        <div className="atmosphere" aria-hidden="true">
+          <span className="atmosphere-nappe" />
+          <span className="atmosphere-nappe" />
+          <span className="atmosphere-nappe" />
+        </div>
         {vueUtilisateur && <BarreVueUtilisateur />}
         {compte && <Synchronisation />}
         {manquantes.length > 0 ? <InstallationRequise manquantes={manquantes} /> : children}
         {manquantes.length === 0 && <PaletteRecherche />}
         <ServiceHorsLigne />
+        {manquantes.length === 0 && <Portail />}
+        <Mouvements />
       </body>
     </html>
   );

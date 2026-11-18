@@ -11,7 +11,8 @@ import {
 } from "lucide-react";
 import { aAccesModules } from "@/lib/acces-modules";
 import { EnTete } from "@/components/EnTete";
-import { Rosace } from "@/components/Rosace";
+import { Astrolabe } from "@/components/scene/Astrolabe";
+import { Ciel } from "@/components/scene/Ciel";
 import { MarqueAccueil } from "@/lib/client/acces";
 import { exigerCompte } from "@/lib/compte/session";
 import { remplir } from "@/lib/modules/modules";
@@ -64,12 +65,27 @@ export default async function PageUtilisateur({ searchParams }: Props) {
       <MarqueAccueil />
       {apercu && <BandeauApercu id="accueil" />}
       <EnTete />
-      <Rosace className="pointer-events-none absolute -right-[36vw] top-[8vw] w-[110vw] max-w-none opacity-30 md:-right-[16rem] md:top-24 md:w-[44rem] md:opacity-70" />
+      <Ciel nombre={26} graine={23} className="ciel-fixe" />
+      {/* Le décor déborde à droite : on le coupe au bord de l'écran, sinon la page glisse de côté sur téléphone. */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+        <Astrolabe
+          viseur={false}
+          couche="9,7"
+          className="pointer-events-none absolute -right-[36vw] top-[8vw] w-[110vw] max-w-none opacity-30 md:-right-[16rem] md:top-24 md:w-[44rem] md:opacity-70"
+        />
+      </div>
       <main className="relative mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-5 pb-20 pt-6 sm:px-8">
-        <h1 className="text-4xl font-extrabold md:text-5xl">
+        {/* Chaque porte colore la salle quand on s'en approche. */}
+        <div className="halos" aria-hidden="true">
+          <span className="halo" data-accent="or" />
+          <span className="halo" data-accent="emeraude" />
+          <span className="halo" data-accent="amethyste" />
+          <span className="halo" data-accent="azur" />
+        </div>
+        <h1 className="apparait text-4xl font-extrabold md:text-5xl">
           {resolu.textes.titre}
         </h1>
-        <p className="mt-3 max-w-[58ch] text-lg text-encre-douce">
+        <p className="apparait mt-3 max-w-[58ch] text-lg text-encre-douce" style={{ "--delai": "0.08s" } as React.CSSProperties}>
           {remplir(resolu.textes.intro, chiffres)}
         </p>
 
@@ -78,16 +94,21 @@ export default async function PageUtilisateur({ searchParams }: Props) {
           className={`mt-10 grid gap-5 md:grid-cols-2 ${cartes.length === 4 ? "xl:grid-cols-4" : "xl:grid-cols-3"}`}
         >
           {cartes.map(
-            ({ id, valeurs: { titre, soustitre, texte, marque } }) => {
+            ({ id, valeurs: { titre, soustitre, texte, marque } }, rang) => {
               const cle = id as keyof typeof LIENS;
               const Icone = ICONES[cle];
               return (
                 <Link
                   key={id}
                   href={LIENS[cle]}
-                  className="carte-choix"
+                  className="carte-choix carte-vivante apparait"
+                  style={{ "--delai": `${0.16 + rang * 0.08}s` } as React.CSSProperties}
                   data-accent={ACCENTS[cle]}
+                  data-inclinaison="7"
+                  data-portail={titre}
+                  data-portail-sur={soustitre}
                 >
+                  <span className="carte-lueur" aria-hidden="true" />
                   <span className="carte-choix-marque">
                     {reserve(id) ? (
                       <span className="inline-flex items-center gap-1.5">
@@ -99,7 +120,7 @@ export default async function PageUtilisateur({ searchParams }: Props) {
                     )}
                   </span>
                   <Icone
-                    className="size-9 text-accent"
+                    className="carte-icone size-9 text-accent"
                     strokeWidth={1.4}
                     aria-hidden="true"
                   />

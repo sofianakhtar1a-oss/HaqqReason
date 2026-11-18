@@ -1,0 +1,790 @@
+/* =====================================================================
+   HaqqReason — la scène : lumière, profondeur et passages
+   L'astrolabe en mouvement : orbites lentes, éclats d'or, alidade qui vise,
+   portes de lumière d'un espace à l'autre.
+   Règles du jeu : on n'anime que transform et opacity ; tout s'arrête
+   avec « réduire les animations » (voir la fin de ce fichier).
+   ===================================================================== */
+
+:root {
+  /* Courbes : arrivées franches, départs nets, passages amples, petit rebond. */
+  --courbe-sortie: cubic-bezier(0.16, 1, 0.3, 1);
+  --courbe-entree: cubic-bezier(0.7, 0, 0.84, 0);
+  --courbe-porte: cubic-bezier(0.76, 0, 0.24, 1);
+  --courbe-ressort: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duree-breve: 180ms;
+  --duree-moyenne: 420ms;
+  --duree-longue: 900ms;
+  /* Les lumières de l'atmosphère */
+  --aurore-1: color-mix(in srgb, var(--or) 15%, transparent);
+  --aurore-2: color-mix(in srgb, #3b52d8 32%, transparent);
+  --aurore-3: color-mix(in srgb, var(--emeraude) 9%, transparent);
+  --grain-opacite: 0.06;
+}
+/* La trame à huit branches devient visible (voir body plus bas) : on la garde discrète. */
+:root,
+[data-theme="dark"] {
+  --motif-opacite: 0.04;
+}
+[data-theme="light"] {
+  --motif-opacite: 0.055;
+  --aurore-1: color-mix(in srgb, #e9be6a 22%, transparent);
+  --aurore-2: color-mix(in srgb, #6d7fe8 16%, transparent);
+  --aurore-3: color-mix(in srgb, #45d3a6 10%, transparent);
+  --grain-opacite: 0.04;
+}
+
+/* Le corps devient une scène : la trame à huit branches et l'atmosphère se peignent
+   au-dessus de son fond, et sous le contenu. */
+body {
+  isolation: isolate;
+}
+
+/* ---------- L'atmosphère : aurore lente et grain de vélin ---------- */
+.atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+}
+.atmosphere-nappe {
+  position: absolute;
+  width: 64vmax;
+  height: 64vmax;
+  border-radius: 50%;
+  will-change: transform;
+}
+.atmosphere-nappe:nth-child(1) {
+  top: -34vmax;
+  right: -22vmax;
+  background: radial-gradient(closest-side, var(--aurore-1), transparent);
+  animation: derive-1 46s ease-in-out infinite alternate;
+}
+.atmosphere-nappe:nth-child(2) {
+  top: -8vmax;
+  left: -32vmax;
+  background: radial-gradient(closest-side, var(--aurore-2), transparent);
+  animation: derive-2 58s ease-in-out infinite alternate;
+}
+.atmosphere-nappe:nth-child(3) {
+  bottom: -40vmax;
+  left: 20vw;
+  background: radial-gradient(closest-side, var(--aurore-3), transparent);
+  animation: derive-3 64s ease-in-out infinite alternate;
+}
+/* L'aurore ne dérive que sur les pages de scène (accueil, espaces, page introuvable) :
+   ailleurs, elle reste immobile pour ne rien coûter pendant la lecture ou l'écriture.
+   Sur téléphone, elle ne bouge jamais. */
+html:not([data-scene-vive]) .atmosphere-nappe {
+  animation-play-state: paused;
+}
+@media (pointer: coarse) {
+  .atmosphere > .atmosphere-nappe {
+    animation: none;
+  }
+}
+@keyframes derive-1 {
+  to {
+    transform: translate3d(-14vmax, 10vmax, 0) scale(1.15);
+  }
+}
+@keyframes derive-2 {
+  to {
+    transform: translate3d(16vmax, 8vmax, 0) scale(0.9);
+  }
+}
+@keyframes derive-3 {
+  to {
+    transform: translate3d(-10vmax, -12vmax, 0) scale(1.2);
+  }
+}
+/* Un grain très fin, comme celui d'un vélin : fixe, il ne coûte rien au défilement. */
+.atmosphere::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: var(--grain-opacite);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 1.6 -0.45'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+/* ---------- Révélations au défilement (posées par Mouvements) ---------- */
+html.scene [data-revele]:not([data-vu]) {
+  opacity: 0;
+}
+html.scene [data-revele][data-vu="1"] {
+  animation: revele 0.85s var(--courbe-sortie) backwards;
+  animation-delay: calc(var(--rang-vu, 0) * 70ms);
+}
+@keyframes revele {
+  from {
+    opacity: 0;
+    translate: 0 26px;
+    scale: 0.98;
+  }
+}
+
+/* ---------- Entrées en scène, sans attendre le JavaScript ---------- */
+.apparait {
+  animation: apparait 0.95s var(--courbe-sortie) backwards;
+  animation-delay: var(--delai, 0s);
+}
+@keyframes apparait {
+  from {
+    opacity: 0;
+    translate: 0 20px;
+  }
+}
+.apparait-doux {
+  animation: apparait-doux 1.4s ease backwards;
+  animation-delay: var(--delai, 0s);
+}
+@keyframes apparait-doux {
+  from {
+    opacity: 0;
+  }
+}
+
+/* ---------- Les cartes vivantes : inclinaison, reflet, bordure de lumière ---------- */
+.carte-vivante {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  transition:
+    transform 0.7s var(--courbe-sortie),
+    border-color 0.3s ease,
+    box-shadow 0.45s ease,
+    background-color 0.3s ease;
+}
+.carte-vivante,
+.carte-vivante:hover,
+.carte-vivante:focus-visible {
+  transform: perspective(1100px) rotateX(var(--incl-x, 0deg)) rotateY(var(--incl-y, 0deg)) translate3d(0, var(--incl-leve, 0px), 0);
+}
+.carte-vivante:hover,
+.carte-vivante:focus-visible {
+  --incl-leve: -6px;
+}
+.carte-vivante:active {
+  --incl-leve: -2px;
+}
+.carte-vivante[data-survol] {
+  transition:
+    transform 0.18s ease-out,
+    border-color 0.3s ease,
+    box-shadow 0.45s ease,
+    background-color 0.3s ease;
+}
+/* Le reflet suit le curseur, comme la lumière sur une plaque de laiton. */
+.carte-vivante::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 30rem;
+  height: 30rem;
+  margin: -15rem 0 0 -15rem;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--accent, var(--or)) 22%, rgba(255, 255, 255, 0.06)), transparent 72%);
+  opacity: 0;
+  transform: translate3d(var(--mx, 0px), var(--my, 0px), 0);
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+.carte-vivante[data-survol]::before {
+  opacity: 1;
+}
+/* Un liseré de lumière court le long du bord, là où passe le curseur. */
+.carte-lueur {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  padding: 1px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.carte-lueur::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16rem;
+  height: 16rem;
+  margin: -8rem 0 0 -8rem;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, var(--accent, var(--or)), transparent);
+  transform: translate3d(var(--mx, 0px), var(--my, 0px), 0);
+}
+.carte-vivante[data-survol] .carte-lueur {
+  opacity: 1;
+}
+/* L'icône flotte doucement quand on s'en approche. */
+.carte-vivante[data-survol] .carte-icone {
+  animation: flotte 2.6s ease-in-out infinite;
+}
+@keyframes flotte {
+  50% {
+    transform: translate3d(0, -4px, 0) rotate(-5deg);
+  }
+}
+/* La flèche « Entrer » avance quand la carte est survolée. */
+.carte-choix-pied svg {
+  transition: transform 0.45s var(--courbe-ressort);
+}
+.carte-choix:hover .carte-choix-pied svg,
+.carte-choix:focus-visible .carte-choix-pied svg {
+  transform: translate3d(5px, 0, 0);
+}
+
+/* Les puces s'éclairent au survol, d'un léger mouvement. */
+.puce-filtre {
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease,
+    background-color 0.25s ease,
+    transform 0.35s var(--courbe-sortie);
+}
+.puce-filtre:hover {
+  border-color: color-mix(in srgb, var(--accent, var(--or)) 55%, transparent);
+  transform: translate3d(0, -2px, 0);
+}
+
+/* ---------- Le ciel : des étoiles qui scintillent ---------- */
+.ciel {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+/* Un ciel fixe, derrière tout le contenu de la page. */
+.ciel-fixe {
+  position: fixed;
+  z-index: -1;
+}
+.etoile-ciel {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: var(--encre);
+  opacity: 0;
+  animation: scintiller var(--duree, 5s) ease-in-out var(--delai, 0s) infinite;
+}
+.etoile-ciel[data-grande] {
+  width: 3px;
+  height: 3px;
+  background: var(--or);
+  box-shadow: 0 0 8px 1px color-mix(in srgb, var(--or) 60%, transparent);
+}
+[data-theme="light"] .etoile-ciel:not([data-grande]) {
+  background: var(--encre-douce);
+}
+@keyframes scintiller {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}
+
+/* ---------- L'astrolabe : alidade qui vise, planètes en orbite ---------- */
+.astrolabe-scene {
+  position: absolute;
+  pointer-events: none;
+}
+.astrolabe-scene > .rosace {
+  width: 100%;
+}
+.viseur-entree {
+  position: absolute;
+  inset: 0;
+}
+/* L'alidade : la règle de visée de l'astrolabe. Sans souris, elle tourne lentement ;
+   avec une souris, elle suit le curseur et vise la carte survolée (voir Mouvements). */
+.viseur {
+  position: absolute;
+  inset: 0;
+  animation: tourner 70s linear infinite;
+}
+.viseur[data-pilote] {
+  animation: none;
+}
+.viseur::before {
+  content: "";
+  position: absolute;
+  inset: 4%;
+  border-radius: 50%;
+  background: conic-gradient(from -20deg, transparent 0deg, color-mix(in srgb, var(--or) 22%, transparent) 20deg, transparent 40deg);
+  mask: radial-gradient(closest-side, transparent 12%, #000 30%, #000 84%, transparent 100%);
+}
+.viseur svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  color: var(--or);
+}
+.orbite {
+  --orbite-delai: 1.4s;
+  --orbite-tour: 40s;
+  position: absolute;
+  inset: 2.5%;
+  border-radius: 50%;
+  animation:
+    apparait-doux 1.2s ease var(--orbite-delai) backwards,
+    tourner var(--orbite-tour) linear infinite;
+}
+.orbite::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  margin-left: -5px;
+  border-radius: 50%;
+  background: var(--or);
+  box-shadow:
+    0 0 12px 3px color-mix(in srgb, var(--or) 70%, transparent),
+    0 0 40px 10px color-mix(in srgb, var(--or) 22%, transparent);
+}
+.orbite-lune {
+  --orbite-delai: 1.8s;
+  --orbite-tour: 26s;
+  inset: 8.5%;
+  animation-direction: normal, reverse;
+}
+.orbite-lune::before {
+  top: -3px;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background: var(--emeraude);
+  box-shadow: 0 0 10px 2px color-mix(in srgb, var(--emeraude) 60%, transparent);
+}
+
+/* ---------- L'accueil : le titre se pose lettre à lettre ---------- */
+.titre-lettres {
+  perspective: 600px;
+  white-space: nowrap;
+}
+.lettre {
+  display: inline-block;
+  animation: lettre-monte 1s var(--courbe-sortie) backwards;
+  animation-delay: calc(0.1s + var(--i, 0) * 48ms);
+}
+@keyframes lettre-monte {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0.5em, 0) rotateX(-75deg);
+  }
+}
+.mot-or {
+  position: relative;
+  display: inline-block;
+  perspective: 600px;
+}
+/* Des éclats d'or s'allument sur le titre, comme une feuille d'or qui accroche la lumière. */
+.etincelle {
+  position: absolute;
+  width: 0.34em;
+  height: 0.34em;
+  background: radial-gradient(circle, #fffaf0 0%, var(--or) 42%, transparent 70%);
+  clip-path: polygon(50% 0, 58% 42%, 100% 50%, 58% 58%, 50% 100%, 42% 58%, 0 50%, 42% 42%);
+  opacity: 0;
+  transform: scale(0);
+  animation: etinceler var(--cycle, 7.5s) ease-in-out var(--delai, 2s) infinite;
+  pointer-events: none;
+}
+@keyframes etinceler {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+  }
+  5% {
+    opacity: 1;
+    transform: scale(1) rotate(45deg);
+  }
+  11%,
+  100% {
+    opacity: 0;
+    transform: scale(0.2) rotate(110deg);
+  }
+}
+/* Une fine ligne d'or se trace sous la devise. */
+.trait-or {
+  display: block;
+  width: 7rem;
+  height: 1px;
+  margin-top: 1.4rem;
+  background: linear-gradient(90deg, var(--or), transparent);
+  transform-origin: left;
+  animation: trait-or 1.2s var(--courbe-sortie) 0.75s backwards;
+}
+@keyframes trait-or {
+  from {
+    transform: scaleX(0);
+  }
+}
+/* Au retour sur l'accueil pendant la visite, l'entrée se rejoue en accéléré. */
+html[data-deja-venu] .accueil .lettre {
+  animation-duration: 0.7s;
+  animation-delay: calc(var(--i, 0) * 16ms);
+}
+html[data-deja-venu] .accueil .apparait {
+  animation-duration: 0.7s;
+  animation-delay: calc(var(--delai, 0s) * 0.3);
+}
+html[data-deja-venu] .accueil .trait-or {
+  animation-delay: 0.2s;
+}
+
+/* ---------- Les espaces : la salle prend la couleur de la porte que l'on approche ---------- */
+.halos {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.halo {
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  width: 78rem;
+  height: 50rem;
+  margin: -25rem 0 0 -39rem;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--accent) 20%, transparent), transparent);
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+main:has(.carte-choix[data-accent="or"]:hover, .carte-choix[data-accent="or"]:focus-visible) .halo[data-accent="or"],
+main:has(.carte-choix[data-accent="emeraude"]:hover, .carte-choix[data-accent="emeraude"]:focus-visible) .halo[data-accent="emeraude"],
+main:has(.carte-choix[data-accent="amethyste"]:hover, .carte-choix[data-accent="amethyste"]:focus-visible) .halo[data-accent="amethyste"],
+main:has(.carte-choix[data-accent="azur"]:hover, .carte-choix[data-accent="azur"]:focus-visible) .halo[data-accent="azur"] {
+  opacity: 1;
+}
+
+/* ---------- La porte : le passage d'un espace à l'autre ---------- */
+.portail {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow: hidden;
+  pointer-events: none;
+  color: var(--accent);
+}
+.portail-disque {
+  position: absolute;
+  top: var(--porte-y, 50%);
+  left: var(--porte-x, 50%);
+  width: 160px;
+  height: 160px;
+  margin: -80px 0 0 -80px;
+  border-radius: 50%;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--accent) 16%, var(--fond)) 0%,
+    color-mix(in srgb, var(--accent) 5%, var(--fond)) 36%,
+    var(--fond) 70%,
+    var(--fond) 86%,
+    color-mix(in srgb, var(--accent) 60%, var(--fond)) 92%,
+    color-mix(in srgb, var(--accent) 25%, transparent) 96%,
+    transparent 100%
+  );
+  transform: scale(0.02);
+  will-change: transform;
+  animation: portail-ouvre 0.74s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+@keyframes portail-ouvre {
+  to {
+    transform: scale(var(--porte-echelle, 40));
+  }
+}
+.portail-coeur {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+/* Une lueur aux couleurs de l'espace, derrière l'astrolabe. */
+.portail-coeur::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(120vmin, 60rem);
+  height: min(120vmin, 60rem);
+  margin: calc(min(120vmin, 60rem) / -2) 0 0 calc(min(120vmin, 60rem) / -2);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--accent) 18%, transparent), transparent);
+  opacity: 0;
+  animation: lueur-porte 0.9s ease 0.2s forwards;
+}
+@keyframes lueur-porte {
+  to {
+    opacity: 1;
+  }
+}
+.portail-rosace {
+  width: min(64vmin, 27rem);
+  color: var(--accent);
+  opacity: 0;
+  transform: scale(0.8) rotate(-14deg);
+  animation:
+    portail-rosace 0.8s var(--courbe-sortie) 0.12s forwards,
+    respire 3.4s ease-in-out 1s infinite;
+}
+.portail .rosace [pathLength] {
+  animation-duration: 0.62s;
+  animation-delay: calc(0.12s + var(--rang, 0) * 0.03s);
+}
+@keyframes portail-rosace {
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes respire {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.035);
+  }
+}
+.portail-textes {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+.portail-sur {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0;
+  animation: portail-texte 0.7s var(--courbe-sortie) 0.32s forwards;
+}
+.portail-titre {
+  max-width: min(90vw, 18ch);
+  font-family: var(--font-display);
+  font-size: clamp(2.1rem, 6.5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  color: var(--encre);
+  text-shadow: 0 0 2.5rem color-mix(in srgb, var(--accent) 50%, transparent);
+  opacity: 0;
+  animation: portail-texte 0.8s var(--courbe-sortie) 0.4s forwards;
+}
+@keyframes portail-texte {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 16px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+/* La porte s'efface : on traverse l'astrolabe, l'espace apparaît derrière. */
+.portail[data-phase="ferme"] {
+  animation: portail-ferme 0.58s ease forwards;
+}
+.portail[data-phase="ferme"] .portail-rosace {
+  animation: portail-rosace-part 0.58s var(--courbe-sortie) forwards;
+}
+.portail[data-phase="ferme"] .portail-textes {
+  animation: portail-textes-part 0.5s var(--courbe-sortie) forwards;
+}
+@keyframes portail-ferme {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes portail-rosace-part {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.6) rotate(22deg);
+  }
+}
+@keyframes portail-textes-part {
+  to {
+    opacity: 0;
+    transform: translate3d(0, -14px, 0) scale(1.04);
+  }
+}
+/* Tant que la porte couvre l'écran, la page qui arrive retient ses entrées : elles se jouent à l'ouverture. */
+html[data-portail-arret] body > :not(.portail, .atmosphere),
+html[data-portail-arret] body > :not(.portail, .atmosphere) * {
+  animation-play-state: paused !important;
+}
+
+/* ---------- Le graphe : le point choisi bat, ses liens s'animent ---------- */
+.sommet circle {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.sommet[data-choisi] circle,
+.sommet:hover circle,
+.sommet:focus-visible circle {
+  animation: pouls 1.7s ease-in-out infinite;
+}
+@keyframes pouls {
+  50% {
+    transform: scale(1.22);
+  }
+}
+.graphe:has(.sommet:hover, .sommet:focus-visible, .sommet[data-choisi]) .arete[data-allume="true"] {
+  stroke-dasharray: 5 5;
+  animation: flux 0.9s linear infinite;
+}
+@keyframes flux {
+  to {
+    stroke-dashoffset: -10;
+  }
+}
+
+/* ---------- La page introuvable : l'astrolabe a perdu le nord ---------- */
+.perdu {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: min(74vw, 20rem);
+  aspect-ratio: 1;
+  margin-inline: auto;
+}
+.perdu > .rosace {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0.85;
+}
+.perdu-aiguille {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  animation: chercher-le-nord 6s var(--courbe-porte) infinite;
+}
+.perdu-aiguille::before {
+  content: "";
+  width: 5px;
+  height: 52%;
+  border-radius: 5px;
+  background: linear-gradient(var(--or) 0 50%, color-mix(in srgb, var(--encre-douce) 55%, transparent) 50% 100%);
+  box-shadow: 0 0 18px color-mix(in srgb, var(--or) 45%, transparent);
+}
+@keyframes chercher-le-nord {
+  0% {
+    transform: rotate(-30deg);
+  }
+  20% {
+    transform: rotate(150deg);
+  }
+  34% {
+    transform: rotate(100deg);
+  }
+  58% {
+    transform: rotate(255deg);
+  }
+  74% {
+    transform: rotate(215deg);
+  }
+  100% {
+    transform: rotate(330deg);
+  }
+}
+.perdu-code {
+  position: absolute;
+  bottom: -4%;
+  font-family: var(--font-display);
+  font-size: clamp(4.25rem, 15vw, 7rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--fond);
+  -webkit-text-stroke: 3px var(--or);
+  paint-order: stroke fill;
+  text-shadow: 0 0 3.5rem color-mix(in srgb, var(--or) 30%, transparent);
+}
+
+/* ---------- Impression : rien ne bouge, tout est visible ---------- */
+@media print {
+  .atmosphere,
+  .portail,
+  .halos,
+  .ciel {
+    display: none !important;
+  }
+  html.scene [data-revele] {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+}
+
+/* ---------- Réduire les animations : une version sobre et immobile ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .atmosphere-nappe,
+  .viseur,
+  .orbite,
+  .etoile-ciel,
+  .etincelle,
+  .perdu-aiguille,
+  .carte-vivante[data-survol] .carte-icone {
+    animation: none !important;
+  }
+  .orbite {
+    opacity: 0.7;
+  }
+  .etoile-ciel {
+    opacity: 0.45;
+  }
+  .viseur {
+    transform: rotate(-38deg);
+  }
+  .carte-vivante,
+  .carte-vivante:hover,
+  .carte-vivante:focus-visible {
+    transform: none;
+  }
+  .portail {
+    display: none;
+  }
+  html.scene [data-revele]:not([data-vu]) {
+    opacity: 1;
+  }
+}
