@@ -12,7 +12,7 @@ export const revalidate = 3600;
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const site = adresseDuSite();
   const url = (chemin: string) => new URL(chemin, site).toString();
-  return ["/", "/sophismes", "/contribuer", "/utilisateur", "/alambic", "/langues", "/assistant", "/confidentialite", "/conditions"]
+  return ["/", "/sophismes", "/contribuer", "/utilisateur", "/alambic", "/langues", "/confidentialite", "/conditions"]
     .filter((c) => !cheminReserve(c))
     .map((c) => ({ url: url(c), changeFrequency: "weekly", priority: c === "/" ? 1 : 0.6 }));
 }

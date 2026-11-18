@@ -20,7 +20,7 @@ const SECTIONS: SectionTexte[] = [
   {
     titre: "Ce que le site reçoit de Google",
     paragraphes: [
-      "Le mode utilisateur (Le Calame, L'Alambic, Le Truchement, Le Vizir, tes favoris) s'ouvre avec ton compte Google. Google transmet au site quatre informations seulement : un identifiant de compte, ton nom, ton adresse e-mail et l'adresse de ta photo de profil.",
+      "Le mode utilisateur (Le Calame, L'Alambic, Le Truchement, tes favoris) s'ouvre avec ton compte Google. Google transmet au site quatre informations seulement : un identifiant de compte, ton nom, ton adresse e-mail et l'adresse de ta photo de profil.",
       "Le site n'a accès ni à tes e-mails, ni à tes fichiers Google, ni à ton carnet d'adresses, et il ne connaît jamais ton mot de passe.",
     ],
   },
@@ -36,14 +36,6 @@ const SECTIONS: SectionTexte[] = [
     paragraphes: [
       "Dans Le Truchement, chaque bonne réponse d'une séance de vocabulaire te rapporte des points. Ils sont calculés par le serveur et gardés sur ton compte, avec ta série de bonnes réponses et tes jours d'affilée.",
       "Tu n'apparais dans le classement que si tu le rejoins toi-même. Les autres apprenants connectés voient alors ton prénom suivi de l'initiale de ton nom, ta photo Google, tes points et tes jours d'affilée, jamais ton adresse e-mail. Tu peux quitter le classement à tout moment (« Comment gagner des points ? », puis « Quitter le classement ») : tu en disparais aussitôt, et tes points restent visibles de toi seul.",
-    ],
-  },
-  {
-    titre: "L'assistant (Le Vizir)",
-    paragraphes: [
-      "Le Vizir donne accès à Claude (Anthropic), ChatGPT (OpenAI) ou Gemini (Google), au choix et gratuitement : il suffit d'être connecté avec ton compte Google, sans aucune clé à fournir. Le site transmet chaque question à l'IA choisie par la passerelle IA de Vercel, son hébergeur, sur un crédit gratuit partagé entre tous les utilisateurs. C'est pourquoi chaque compte a un nombre limité de questions par jour et une part limitée de ce crédit par mois.",
-      "Sont envoyés à l'IA choisie, par la passerelle de Vercel, pour chaque réponse : ta question, les échanges précédents de la conversation et, dans ChatPDF, le texte des documents cochés (en entier ou par passages). Ni ton nom ni ton adresse e-mail ne sont envoyés. Tes PDF sont lus par ton navigateur : le fichier lui-même ne quitte pas ton appareil, seul son texte est envoyé au site puis à l'IA. Vercel et l'entreprise de l'IA traitent ces échanges selon leurs propres conditions.",
-      "Sont gardés sur ton compte : l'IA que tu as choisie, tes conversations, le texte de tes PDF, et pour chaque réponse le nombre de jetons et un coût estimé, qui servent à compter ton quota. Supprimer une conversation efface ses messages et ses PDF.",
     ],
   },
   {
@@ -66,7 +58,7 @@ const SECTIONS: SectionTexte[] = [
     titre: "Effacer tes données",
     paragraphes: [
       <>
-        Depuis la page <Link href="/compte" className={lien}>Mon compte</Link>, tu peux te déconnecter, effacer ce qui est sur l&apos;appareil, déconnecter tous tes appareils, ou <strong>supprimer ton compte</strong>. La suppression efface ton compte et toutes ses données, documents, fichiers joints et points compris. Elle est définitive, et emporte aussi tes conversations avec l&apos;assistant.
+        Depuis la page <Link href="/compte" className={lien}>Mon compte</Link>, tu peux te déconnecter, effacer ce qui est sur l&apos;appareil, déconnecter tous tes appareils, ou <strong>supprimer ton compte</strong>. La suppression efface ton compte et toutes ses données, documents, fichiers joints et points compris. Elle est définitive.
       </>,
       "Tu peux aussi retirer l'accès de HaqqReason à ton compte Google à tout moment, dans les réglages de ton compte Google (« Sécurité », puis « Vos connexions à des applications et services tiers »).",
     ],

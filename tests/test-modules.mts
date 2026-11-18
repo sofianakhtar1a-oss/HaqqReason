@@ -43,13 +43,12 @@ ok("thème masqué absent pour les visiteurs", resoudre("langues", { ...cv, them
 ok("objectif borné", nettoyerContenu("langues", { textes: { objectif: "5000" } }).textes.objectif === "200");
 ok("valeur égale à l'origine non stockée", Object.keys(nettoyerContenu("calame", { textes: { nouveau: "Nouveau" } }).textes).length === 0);
 ok("remplissage des variables", remplir("{mots} mots, {themes} thèmes", { mots: 600, themes: 12 }) === "600 mots, 12 thèmes");
-ok("contenu vide sûr pour tous les modules", (["accueil", "calame", "alambic", "langues", "assistant"] as const).every((id) => resoudre(id, contenuVide()).textes && resoudre(id, nettoyerContenu(id, "n'importe quoi")).textes));
-ok("l'assistant : ses textes d'origine (onglets, clé)", resoudre("assistant", null).textes["onglet.general"] === "Chat général" && resoudre("assistant", null).textes["onglet.pdf"] === "ChatPDF" && resoudre("assistant", null).textes["tete.titre"] === "Le Vizir");
-ok("l'accueil présente six espaces, dont l'assistant", resoudre("accueil", null).listes.cartes.map((x) => x.id).join() === "calame,alambic,langues,bibliotheque,islam,assistant");
+ok("contenu vide sûr pour tous les modules", (["accueil", "calame", "alambic", "langues"] as const).every((id) => resoudre(id, contenuVide()).textes && resoudre(id, nettoyerContenu(id, "n'importe quoi")).textes));
+ok("l'accueil présente cinq espaces", resoudre("accueil", null).listes.cartes.map((x) => x.id).join() === "calame,alambic,langues,bibliotheque,islam");
 {
-  // Une liste de cartes enregistrée AVANT l'assistant le reçoit quand même, à la fin.
-  const ancienne = nettoyerContenu("accueil", { textes: {}, listes: { cartes: [{ id: "islam", visible: true, valeurs: {} }, { id: "calame", visible: true, valeurs: {} }] } });
-  ok("carte de l'assistant ajoutée à une liste déjà réglée", resoudre("accueil", ancienne).listes.cartes.map((x) => x.id).at(-1) === "assistant");
+  // Une liste de cartes enregistrée avec l'ancienne carte de l'assistant : elle n'apparaît plus.
+  const ancienne = nettoyerContenu("accueil", { textes: {}, listes: { cartes: [{ id: "islam", visible: true, valeurs: {} }, { id: "assistant", visible: true, valeurs: {} }] } });
+  ok("ancienne carte de l'assistant ignorée", !resoudre("accueil", ancienne).listes.cartes.some((x) => x.id === "assistant"));
 }
 
 // Vocabulaire publié puis code enrichi : les mots ajoutés au code apparaissent, les retraits volontaires restent retirés.

@@ -18,9 +18,7 @@
     "test:vocabulaire": "tsx tests/test-vocabulaire.mts",
     "test:modules": "tsx tests/test-modules.mts",
     "test:compte": "tsx --conditions=react-server tests/test-compte.mts",
-    "test:acces": "tsx tests/test-acces.mts",
-    "test:assistant": "tsx --conditions=react-server tests/test-assistant.mts",
-    "test:assistant:e2e": "tsx tests/test-assistant-bout-en-bout.mts"
+    "test:acces": "tsx tests/test-acces.mts"
   },
   "dependencies": {
     "@cantoo/pdf-lib": "^2.11.1",
@@ -48,7 +46,6 @@
     "@tiptap/react": "^3.33.1",
     "@tiptap/starter-kit": "^3.33.1",
     "@tiptap/suggestion": "^3.33.1",
-    "@vercel/oidc": "^4.0.9",
     "@zip.js/zip.js": "^2.25.0",
     "d3-force": "^3.0.1",
     "diff": "^9.0.0",

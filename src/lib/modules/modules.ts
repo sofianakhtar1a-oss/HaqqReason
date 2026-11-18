@@ -12,8 +12,8 @@
 import { THEMES } from "@/lib/langues/themes/index";
 import type { Entree, Niveau, Theme } from "@/lib/langues/types";
 
-export type ModuleId = "accueil" | "calame" | "alambic" | "langues" | "assistant";
-export const IDS_MODULES: ModuleId[] = ["accueil", "calame", "alambic", "langues", "assistant"];
+export type ModuleId = "accueil" | "calame" | "alambic" | "langues";
+export const IDS_MODULES: ModuleId[] = ["accueil", "calame", "alambic", "langues"];
 
 export type Champ = { cle: string; libelle: string; defaut: string; long?: boolean; aide?: string; nombre?: { min: number; max: number } };
 export type Section = { titre: string; champs: Champ[] };
@@ -75,8 +75,8 @@ const ACCUEIL: DefModule = {
       titre: "En-tête de la page",
       champs: [
         { cle: "titre", libelle: "Titre", defaut: "Par où veux-tu commencer ?" },
-        { cle: "intro", libelle: "Introduction", defaut: "Six espaces : écrire, transformer tes fichiers, apprendre une langue, questionner tes PDF avec l'assistant, lire, et comprendre l'islam en vidéo. Tu passes de l'un à l'autre quand tu veux.", long: true },
-        { cle: "meta.description", libelle: "Description pour Google", defaut: "Six espaces : Le Calame pour écrire, L'Alambic pour convertir ses fichiers, Le Truchement pour apprendre une langue, Le Vizir, l'assistant IA (Claude, ChatGPT ou Gemini) qui lit tes PDF, la bibliothèque des preuves de la véracité de l'islam, et L'Islam authentique en vidéos.", long: true },
+        { cle: "intro", libelle: "Introduction", defaut: "Cinq espaces : écrire, transformer tes fichiers, apprendre une langue, lire, et comprendre l'islam en vidéo. Tu passes de l'un à l'autre quand tu veux.", long: true },
+        { cle: "meta.description", libelle: "Description pour Google", defaut: "Cinq espaces : Le Calame pour écrire, L'Alambic pour convertir ses fichiers, Le Truchement pour apprendre une langue, la bibliothèque des preuves de la véracité de l'islam, et L'Islam authentique en vidéos.", long: true },
       ],
     },
   ],
@@ -136,15 +136,6 @@ const ACCUEIL: DefModule = {
             soustitre: "Vidéos",
             marque: "Regarder",
             texte: "Des vidéos qui expliquent chaque aspect de l'islam selon le Coran, la Sunna et la compréhension des pieux prédécesseurs : la croyance, les actes d'adoration et le comportement.",
-          },
-        },
-        {
-          id: "assistant",
-          valeurs: {
-            titre: "Le Vizir",
-            soustitre: "Assistant IA",
-            marque: "Demander",
-            texte: "Claude, ChatGPT ou Gemini, au choix, pour discuter librement ou interroger tes PDF : résumés, comparaisons, citations avec leurs pages, vérifiables d'un clic. Gratuit : il suffit de ton compte Google.",
           },
         },
       ],
@@ -337,53 +328,7 @@ const LANGUES: DefModule = {
   ],
 };
 
-const ASSISTANT: DefModule = {
-  id: "assistant",
-  nom: "Le Vizir",
-  description: "L'assistant IA (Claude, ChatGPT, Gemini) : chat général et ChatPDF. Ses textes : présentation, onglets, accueil de chaque espace.",
-  adresse: "/assistant",
-  accent: "amethyste",
-  sections: [
-    {
-      titre: "Présentation",
-      champs: [
-        { cle: "meta.titre", libelle: "Titre de l'onglet du navigateur", defaut: "Le Vizir, assistant IA" },
-        {
-          cle: "meta.description",
-          libelle: "Description pour Google",
-          defaut: "Discute avec Claude, ChatGPT ou Gemini et interroge tes PDF : résumés, comparaisons, citations avec leurs pages. Gratuit, avec ton compte Google.",
-          long: true,
-        },
-        { cle: "tete.titre", libelle: "Nom dans la barre du haut", defaut: "Le Vizir" },
-        { cle: "tete.pastille", libelle: "Mention sous la liste des conversations", defaut: "Gratuit, avec ton compte Google" },
-      ],
-    },
-    {
-      titre: "Les deux espaces",
-      champs: [
-        { cle: "onglet.general", libelle: "Onglet du chat libre", defaut: "Chat général" },
-        { cle: "onglet.pdf", libelle: "Onglet des PDF", defaut: "ChatPDF" },
-        { cle: "general.titre", libelle: "Chat général : titre d'accueil", defaut: "Que veux-tu demander ?" },
-        {
-          cle: "general.texte",
-          libelle: "Chat général : texte d'accueil",
-          defaut: "Écrire, comprendre, réviser, traduire, raisonner : choisis Claude, ChatGPT ou Gemini en bas, puis pose ta question. Tes conversations te suivent sur tous tes appareils.",
-          long: true,
-        },
-        { cle: "pdf.titre", libelle: "ChatPDF : titre d'accueil", defaut: "Interroge tes PDF" },
-        {
-          cle: "pdf.texte",
-          libelle: "ChatPDF : texte d'accueil",
-          defaut: "Importe un ou plusieurs PDF, puis demande un résumé, une comparaison ou un argument précis. Chaque réponse cite ses pages : un clic sur une référence affiche la page.",
-          long: true,
-        },
-      ],
-    },
-  ],
-  listes: [],
-};
-
-export const MODULES: Record<ModuleId, DefModule> = { accueil: ACCUEIL, calame: CALAME, alambic: ALAMBIC, langues: LANGUES, assistant: ASSISTANT };
+export const MODULES: Record<ModuleId, DefModule> = { accueil: ACCUEIL, calame: CALAME, alambic: ALAMBIC, langues: LANGUES };
 export const estModule = (id: string): id is ModuleId => (IDS_MODULES as string[]).includes(id);
 
 export const ICONES_DISPONIBLES = ["Users", "Plane", "Briefcase", "Sun", "UtensilsCrossed", "HeartPulse", "House", "Smile", "CloudSun", "GraduationCap", "Building2", "Trees", "BookOpen", "Moon", "Star", "Globe", "Music", "Car", "ShoppingBag", "Dumbbell", "Landmark", "Laptop", "Leaf", "Heart", "Clapperboard", "Coffee", "Cpu", "Factory", "Hammer", "Lightbulb", "MapPin", "Newspaper", "Plug", "ShieldCheck", "Sparkles", "Sprout", "Tent", "Trophy", "UserRound", "Vote", "Wallet", "Zap", "PersonStanding", "Shirt", "PawPrint", "Scale", "TrendingUp", "Brain", "Clock", "Puzzle", "Quote", "Link2", "Activity", "Palette", "Feather", "Blocks", "Shapes", "Gauge", "Gem"];
