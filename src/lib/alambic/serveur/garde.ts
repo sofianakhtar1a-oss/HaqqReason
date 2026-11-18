@@ -1,5 +1,5 @@
 import "server-only";
-import { NextResponse } from "next/server";
+import { after, NextResponse } from "next/server";
 import { infosRequete } from "@/lib/request-info";
 import { dbAdmin } from "@/lib/supabase";
 import { ErreurGroq } from "./groq";
@@ -15,8 +15,10 @@ export type Usage = "transcription" | "traduction" | "analyse" | "youtube";
 /** Appels permis par visiteur et par heure. Un morceau de transcription = 10 minutes de son. */
 const QUOTAS: Record<Usage, number> = {
   transcription: 60,
-  traduction: 240,
-  analyse: 400,
+  // Les pages se traduisent en lots plus courts, envoyés en parallèle : plus d'appels, chacun plus rapide.
+  traduction: 600,
+  // Les phrases survolées s'analysent d'avance (le clic devient instantané).
+  analyse: 700,
   youtube: 120,
 };
 
@@ -51,7 +53,10 @@ export async function garder(requete: Request, usage: Usage): Promise<NextRespon
       .eq("ip_hash", ipHash)
       .gte("created_at", depuis);
     if ((count ?? 0) >= QUOTAS[usage]) return erreur("Tu as atteint la limite de l'heure pour cet outil. Réessaie un peu plus tard.", 429, 600);
-    await dbAdmin().from("audit_log").insert({ action: `alambic_${usage}`, details: {}, ip_hash: ipHash, user_agent: "" });
+    // L'appel est noté après la réponse : la traduction n'attend pas cette écriture.
+    after(async () => {
+      await dbAdmin().from("audit_log").insert({ action: `alambic_${usage}`, details: {}, ip_hash: ipHash, user_agent: "" });
+    });
   } catch {
     // Base indisponible : le quota de Groq reste le dernier garde-fou.
   }

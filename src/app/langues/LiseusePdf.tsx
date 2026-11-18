@@ -9,7 +9,7 @@ import { nouveauMot } from "@/lib/langues/dictionnaire";
 import { type DocumentLangue, ecrire, ecrireBlob, lireBlob } from "@/lib/langues/stockage";
 import { cleOriginal, OPTIONS_PDFJS } from "@/lib/langues/pdf";
 import { chargerPdfjs } from "@/lib/client/pdf";
-import { decouperPage, lotsDePassage } from "@/lib/langues/texte";
+import { decouperPage, lotsDePassage, type PageDecoupee } from "@/lib/langues/texte";
 import { parler, voixDisponible } from "@/lib/langues/voix";
 import type { Cible } from "../alambic/transcription/Glose";
 import { ajouterMot, useDonnees } from "./donnees";
@@ -24,8 +24,13 @@ import "@fontsource-variable/literata/opsz.css";
  */
 
 const TAILLES = [1, 1.1, 1.22, 1.36];
-/** Zoom de la page d'origine, pour les mêmes crans : le deuxième cran montre la page à la largeur de l'écran. */
-const ZOOMS = [0.8, 1, 1.25, 1.5];
+/** Zoom de la page d'origine, en pour cent : 100 % = la page à la largeur de la colonne de lecture. */
+const CLE_ZOOM = "haqqreason-truchement-pdf-zoom";
+const ZOOM_MIN = 25;
+const ZOOM_MAX = 300;
+/** Traduction d'une page : des lots courts, envoyés plusieurs à la fois (la page arrive bien plus vite). */
+const PHRASES_PAR_LOT = 10;
+const LOTS_EN_PARALLELE = 3;
 const CLE = "haqqreason-truchement-pdf";
 /** La vue choisie : la page telle qu'elle a été composée, ou le texte seul (mis en page pour la lecture). */
 const CLE_VUE = "haqqreason-truchement-pdf-vue";
@@ -63,6 +68,18 @@ export function LiseusePdf({ document: d, onFermer }: { document: DocumentLangue
   const [selection, setSelection] = useState<Selection | null>(null);
   const [passage, setPassage] = useState<Passage | null>(null);
   const [copie, setCopie] = useState(false);
+  const [zoomPage, setZoomPage] = useState(() => {
+    try {
+      const z = Number(localStorage.getItem(CLE_ZOOM));
+      return z >= ZOOM_MIN && z <= ZOOM_MAX ? z : 100;
+    } catch {
+      return 100;
+    }
+  });
+  // Le curseur répond tout de suite ; la page n'est redessinée qu'une fois le geste fini.
+  const [zoomRendu, setZoomRendu] = useState(zoomPage);
+  const pageSoumise = useRef(false);
+  const [saisiePage, setSaisiePage] = useState(String(Math.min(Math.max(1, d.page || 1), d.pages.length)));
   const [vue, setVue] = useState<"page" | "texte">(() => {
     try {
       return localStorage.getItem(CLE_VUE) === "texte" ? "texte" : "page";
@@ -128,6 +145,16 @@ export function LiseusePdf({ document: d, onFermer }: { document: DocumentLangue
       // Navigation privée.
     }
   }, [vue]);
+  useEffect(() => {
+    const m = window.setTimeout(() => setZoomRendu(zoomPage), 160);
+    try {
+      localStorage.setItem(CLE_ZOOM, String(zoomPage));
+    } catch {
+      // Navigation privée.
+    }
+    return () => window.clearTimeout(m);
+  }, [zoomPage]);
+  useEffect(() => setSaisiePage(String(page)), [page]);
 
   /** Retrouver la mise en page : le même PDF, choisi à nouveau (importé ailleurs, ou avant cette fonction). */
   const rattacher = async (f: File) => {
@@ -210,31 +237,66 @@ export function LiseusePdf({ document: d, onFermer }: { document: DocumentLangue
     if (glose) analyser(glose.phrase);
   }, [glose, analyser]);
 
-  // Traduction de toute la page, paragraphe par paragraphe, par lots.
-  const traduirePage = useCallback(async () => {
-    const manquantes = decoupe.phrases.filter((p) => !traductions[cle(p.id)]);
-    if (!manquantes.length) return;
-    setTraductionPage("attente");
-    try {
-      for (let k = 0; k < manquantes.length; k += 20) {
-        const lot = manquantes.slice(k, k + 20);
-        const contexte = lot[0].id > 0 ? texteDe(decoupe.phrases[lot[0].id - 1]) : "";
-        const r = await traduireLot(langue, lot.map(texteDe), contexte, annulation.current.signal, autre);
-        setTraductions((x) => ({ ...x, ...Object.fromEntries(lot.map((p, n) => [cle(p.id), r[n]])) }));
+  // Traduction d'une page entière : des lots courts envoyés en parallèle, affichés dès qu'ils arrivent.
+  const traductionsConnues = useRef(traductions);
+  traductionsConnues.current = traductions;
+  const pagesEnTraduction = useRef(new Set<number>());
+  const traduireLaPage = useCallback(
+    async (n: number, visible: boolean) => {
+      if (n < 1 || n > d.pages.length || pagesEnTraduction.current.has(n)) return;
+      const dec: PageDecoupee = n === page ? decoupe : decouperPage(d.pages[n - 1]?.texte ?? "");
+      const manquantes = dec.phrases.filter((p) => !traductionsConnues.current[`${n}:${p.id}`]);
+      if (!manquantes.length) return;
+      pagesEnTraduction.current.add(n);
+      if (visible) setTraductionPage("attente");
+      const lots: Phrase[][] = [];
+      for (let k = 0; k < manquantes.length; k += PHRASES_PAR_LOT) lots.push(manquantes.slice(k, k + PHRASES_PAR_LOT));
+      let suivant = 0;
+      const ouvrier = async () => {
+        while (suivant < lots.length) {
+          const lot = lots[suivant++];
+          const contexte = lot[0].id > 0 ? texteDe(dec.phrases[lot[0].id - 1]) : "";
+          const r = await traduireLot(langue, lot.map(texteDe), contexte, annulation.current.signal, autre);
+          setTraductions((x) => ({ ...x, ...Object.fromEntries(lot.map((p, m) => [`${n}:${p.id}`, r[m]])) }));
+        }
+      };
+      try {
+        // La page affichée part en plusieurs lots à la fois ; la page suivante, en arrière-plan, un lot à la fois.
+        await Promise.all(Array.from({ length: Math.min(visible ? LOTS_EN_PARALLELE : 1, lots.length) }, ouvrier));
+        if (visible) setErreur(null);
+      } catch (e) {
+        if (visible && !annulation.current.signal.aborted) setErreur(e instanceof Error ? e.message : "La traduction a échoué.");
+      } finally {
+        pagesEnTraduction.current.delete(n);
+        if (visible) setTraductionPage(null);
       }
-      setErreur(null);
-    } catch (e) {
-      if (!annulation.current.signal.aborted) setErreur(e instanceof Error ? e.message : "La traduction a échoué.");
-    } finally {
-      setTraductionPage(null);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [decoupe, page, traductions]);
+    },
+    [decoupe, page, d.pages, langue, autre],
+  );
 
-  // Lire la traduction, ou la voir sous chaque paragraphe : la page se traduit d'abord.
+  // Lire la traduction, ou la voir en regard : la page se traduit d'abord, puis la suivante se prépare.
   useEffect(() => {
-    if (enRegard || affiche === "traduction") void traduirePage();
+    if (!(enRegard || affiche === "traduction")) return;
+    void traduireLaPage(page, true).then(() => traduireLaPage(page + 1, false));
   }, [enRegard, affiche, page]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Un mot sur lequel la souris s'arrête un instant : sa phrase s'analyse d'avance, le clic sera instantané.
+  const survolMot = useRef<{ cle: string; minuteur: number } | null>(null);
+  const survoler = useCallback(
+    (phrase: number | null, mot = 0) => {
+      const cle = phrase === null ? "" : `${phrase}:${mot}`;
+      if (survolMot.current?.cle === cle) return;
+      if (survolMot.current) window.clearTimeout(survolMot.current.minuteur);
+      survolMot.current = phrase === null ? null : { cle, minuteur: window.setTimeout(() => analyser(phrase), 450) };
+    },
+    [analyser],
+  );
+  useEffect(
+    () => () => {
+      if (survolMot.current) window.clearTimeout(survolMot.current.minuteur);
+    },
+    [],
+  );
 
   // La sélection d'un passage fait apparaître « Traduire ce passage ».
   useEffect(() => {
@@ -394,14 +456,40 @@ export function LiseusePdf({ document: d, onFermer }: { document: DocumentLangue
               ))}
             </span>
           )}
-          <span className="lg-tailles" role="group" aria-label={pageDOrigine ? "Zoom" : "Taille du texte"}>
-            <button type="button" className="bouton-icone" aria-label={pageDOrigine ? "Zoom arrière" : "Texte plus petit"} disabled={taille === 0} onClick={() => setTaille((t) => t - 1)}>
-              <Minus className="size-4" aria-hidden="true" />
-            </button>
-            <button type="button" className="bouton-icone" aria-label={pageDOrigine ? "Zoom avant" : "Texte plus grand"} disabled={taille === TAILLES.length - 1} onClick={() => setTaille((t) => t + 1)}>
-              <Plus className="size-4" aria-hidden="true" />
-            </button>
-          </span>
+          {pageDOrigine ? (
+            <span className="lg-zoom" role="group" aria-label="Zoom de la page">
+              <button type="button" className="bouton-icone" aria-label="Dézoomer" disabled={zoomPage <= ZOOM_MIN} onClick={() => setZoomPage((z) => Math.max(ZOOM_MIN, Math.ceil(z / 10) * 10 - 10))}>
+                <Minus className="size-4" aria-hidden="true" />
+              </button>
+              <input
+                type="range"
+                className="lg-zoom-curseur"
+                min={ZOOM_MIN}
+                max={ZOOM_MAX}
+                step={5}
+                value={zoomPage}
+                aria-label="Zoom"
+                aria-valuetext={`${zoomPage} %`}
+                style={{ ["--lg-zoom" as string]: `${((zoomPage - ZOOM_MIN) / (ZOOM_MAX - ZOOM_MIN)) * 100}%` }}
+                onChange={(e) => setZoomPage(Number(e.target.value))}
+              />
+              <button type="button" className="bouton-icone" aria-label="Zoomer" disabled={zoomPage >= ZOOM_MAX} onClick={() => setZoomPage((z) => Math.min(ZOOM_MAX, Math.floor(z / 10) * 10 + 10))}>
+                <Plus className="size-4" aria-hidden="true" />
+              </button>
+              <button type="button" className="lg-zoom-valeur" title="Revenir à 100 % : la page à la largeur de l'écran" onClick={() => setZoomPage(100)}>
+                {zoomPage} %
+              </button>
+            </span>
+          ) : (
+            <span className="lg-tailles" role="group" aria-label="Taille du texte">
+              <button type="button" className="bouton-icone" aria-label="Texte plus petit" disabled={taille === 0} onClick={() => setTaille((t) => t - 1)}>
+                <Minus className="size-4" aria-hidden="true" />
+              </button>
+              <button type="button" className="bouton-icone" aria-label="Texte plus grand" disabled={taille === TAILLES.length - 1} onClick={() => setTaille((t) => t + 1)}>
+                <Plus className="size-4" aria-hidden="true" />
+              </button>
+            </span>
+          )}
         </div>
       </div>
 
@@ -436,11 +524,12 @@ export function LiseusePdf({ document: d, onFermer }: { document: DocumentLangue
                 paragraphes={decoupe.paragraphes}
                 phrasesTraduites={phrasesTraduites}
                 version={affiche}
-                zoom={ZOOMS[taille]}
+                zoom={zoomRendu / 100}
                 interactive
                 glose={glose ? { phrase: glose.phrase, mot: glose.mot } : null}
                 langue={langue}
                 onMot={toucherMot}
+                onSurvol={survoler}
                 onRien={() => {
                   setGlose(null);
                   setPassage(null);
@@ -456,7 +545,7 @@ export function LiseusePdf({ document: d, onFermer }: { document: DocumentLangue
                   paragraphes={decoupe.paragraphes}
                   phrasesTraduites={phrasesTraduites}
                   version={affiche === "original" ? "traduction" : "original"}
-                  zoom={ZOOMS[taille]}
+                  zoom={zoomRendu / 100}
                   interactive={false}
                   glose={null}
                   langue={langue}
@@ -475,7 +564,19 @@ export function LiseusePdf({ document: d, onFermer }: { document: DocumentLangue
         <p className="lg-pdf-folio">
           Page {page} <span>sur {d.pages.length}</span>
         </p>
-        <div ref={texte} className="lg-pdf-texte" lang={lu} onClick={surClic} onPointerDown={(e) => (pointeur.current = e.pointerType)}>
+        <div
+          ref={texte}
+          className="lg-pdf-texte"
+          lang={lu}
+          onClick={surClic}
+          onPointerDown={(e) => (pointeur.current = e.pointerType)}
+          onPointerOver={(e) => {
+            if (e.pointerType !== "mouse") return;
+            const m = (e.target as HTMLElement).closest<HTMLElement>(".lg-pdf-mot");
+            survoler(m ? Number(m.dataset.p) : null, m ? Number(m.dataset.i) : 0);
+          }}
+          onPointerLeave={() => survoler(null)}
+        >
           {decoupe.paragraphes.length === 0 && <p className="text-encre-douce">Cette page ne contient pas de texte (image, page blanche ou scan).</p>}
           {decoupe.paragraphes.map((ids, n) => (
             <div key={`${page}-${n}`} className="lg-pdf-para">
@@ -514,20 +615,44 @@ export function LiseusePdf({ document: d, onFermer }: { document: DocumentLangue
           <ChevronLeft className="size-4" aria-hidden="true" />
           <span className="max-sm:sr-only">Précédente</span>
         </button>
-        <label className="lg-pdf-aller">
-          <span className="sr-only">Aller à la page</span>
-          <input
-            type="number"
-            min={1}
-            max={d.pages.length}
-            value={page}
-            onChange={(e) => {
-              const n = Number(e.target.value);
-              if (n >= 1 && n <= d.pages.length) changerPage(n);
-            }}
-          />
+        {/* Tape un numéro de page puis Entrée (ou quitte le champ) : la page s'ouvre. */}
+        <form
+          className="lg-pdf-aller"
+          onSubmit={(e) => {
+            e.preventDefault();
+            const n = Number(saisiePage);
+            if (n >= 1) changerPage(Math.min(n, d.pages.length));
+            else setSaisiePage(String(page));
+            pageSoumise.current = true;
+            (e.currentTarget.elements.namedItem("page") as HTMLInputElement | null)?.blur();
+          }}
+        >
+          <label>
+            <span className="sr-only">Aller à la page (tape le numéro puis Entrée)</span>
+            <input
+              name="page"
+              type="text"
+              inputMode="numeric"
+              autoComplete="off"
+              enterKeyHint="go"
+              title="Tape un numéro de page, puis Entrée"
+              value={saisiePage}
+              style={{ width: `${Math.max(3, String(d.pages.length).length + 1.5)}ch` }}
+              onFocus={(e) => e.currentTarget.select()}
+              onChange={(e) => setSaisiePage(e.target.value.replace(/\D/g, "").slice(0, 6))}
+              onBlur={() => {
+                if (pageSoumise.current) {
+                  pageSoumise.current = false;
+                  return;
+                }
+                const n = Number(saisiePage);
+                if (n >= 1 && n !== page) changerPage(Math.min(n, d.pages.length));
+                else setSaisiePage(String(page));
+              }}
+            />
+          </label>
           <span>/ {d.pages.length}</span>
-        </label>
+        </form>
         <button type="button" className="bouton" onClick={() => changerPage(page + 1)} disabled={page >= d.pages.length}>
           <span className="max-sm:sr-only">Suivante</span>
           <ChevronRight className="size-4" aria-hidden="true" />

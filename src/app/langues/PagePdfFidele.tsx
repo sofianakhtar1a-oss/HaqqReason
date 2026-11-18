@@ -169,6 +169,8 @@ export function PagePdfFidele(p: {
   onMot?: (phrase: number, mot: number, el: HTMLElement) => void;
   /** Un toucher à côté des mots (marge, image) : la carte de traduction se ferme. */
   onRien?: () => void;
+  /** La souris passe sur un mot (phrase, mot), ou ne survole plus aucun mot (null). */
+  onSurvol?: (phrase: number | null, mot?: number) => void;
 }) {
   const cadre = useRef<HTMLDivElement>(null);
   const toile = useRef<HTMLCanvasElement>(null);
@@ -210,16 +212,21 @@ export function PagePdfFidele(p: {
         const vue = page.getViewport({ scale: echelle });
         let ratio = Math.min(window.devicePixelRatio || 1, 2);
         if (vue.width * vue.height * ratio * ratio > MARGE_TOILE) ratio = Math.sqrt(MARGE_TOILE / (vue.width * vue.height));
+        // La page se dessine à part, puis remplace l'ancienne d'un coup : aucun blanc pendant un zoom.
+        const hors = document.createElement("canvas");
+        hors.width = Math.floor(vue.width * ratio);
+        hors.height = Math.floor(vue.height * ratio);
+        tache = page.render({ canvas: hors, viewport: vue, transform: ratio !== 1 ? [ratio, 0, 0, ratio, 0, 0] : undefined });
+        const [contenu] = await Promise.all([page.getTextContent(), tache.promise]);
+        if (annule || !couche.current || !toile.current) return;
         const c = toile.current;
-        // Le cadre prend tout de suite la taille de la page : la couche de texte s'y place au pixel près.
+        // Le cadre prend la taille de la page : la couche de texte s'y place au pixel près.
         if (cadre.current) Object.assign(cadre.current.style, { width: `${vue.width}px`, height: `${vue.height}px` });
-        c.width = Math.floor(vue.width * ratio);
-        c.height = Math.floor(vue.height * ratio);
+        c.width = hors.width;
+        c.height = hors.height;
         c.style.width = `${vue.width}px`;
         c.style.height = `${vue.height}px`;
-        tache = page.render({ canvas: c, viewport: vue, transform: ratio !== 1 ? [ratio, 0, 0, ratio, 0, 0] : undefined });
-        const [contenu] = await Promise.all([page.getTextContent(), tache.promise]);
-        if (annule || !couche.current) return;
+        c.getContext("2d")?.drawImage(hors, 0, 0);
 
         const pdfjs = await chargerPdfjs();
         const zone = couche.current;
@@ -347,6 +354,12 @@ export function PagePdfFidele(p: {
       tache?.cancel();
     };
   }, [p.pdf, p.numero, p.zoom, largeurDispo, p.phrases]);
+
+  // Zoomée au-delà de la colonne, la page se montre par son milieu.
+  useEffect(() => {
+    const col = cadre.current?.parentElement;
+    if (col && col.scrollWidth > col.clientWidth) col.scrollTo({ left: (col.scrollWidth - col.clientWidth) / 2 });
+  }, [geo?.largeur]);
 
   // Version traduite : les paragraphes de la page, découpés en cadres (colonnes, retours à la ligne).
   const blocs = useMemo<Bloc[]>(() => {
@@ -514,6 +527,25 @@ export function PagePdfFidele(p: {
     p.onMot?.(mot.p, mot.i, marqueur.current);
   };
 
+  const survolEnAttente = useRef(0);
+  const surMouvement = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (!p.interactive || !p.onSurvol || e.pointerType !== "mouse" || !geo || survolEnAttente.current) return;
+    const { clientX, clientY, target } = e;
+    survolEnAttente.current = requestAnimationFrame(() => {
+      survolEnAttente.current = 0;
+      const traduit = (target as HTMLElement).closest?.<HTMLElement>(".lg-pdf-mot");
+      if (traduit) return p.onSurvol?.(Number(traduit.dataset.p), Number(traduit.dataset.i));
+      if (p.version !== "original" || !cadre.current) return p.onSurvol?.(null);
+      const b = cadre.current.getBoundingClientRect();
+      const x = clientX - b.left;
+      const y = clientY - b.top;
+      const k = geo.jetons.findIndex((j) => j.rects.some((r) => x >= r.x && x <= r.x + r.l && y >= r.y && y <= r.y + r.h));
+      const mot = k >= 0 ? geo.versMot.get(k) : undefined;
+      p.onSurvol?.(mot ? mot.p : null, mot?.i);
+    });
+  };
+  useEffect(() => () => cancelAnimationFrame(survolEnAttente.current), []);
+
   // La phrase du mot touché se surligne doucement, le mot plus franchement.
   const surlignes = useMemo(() => {
     if (!geo || !p.glose || p.version !== "original") return [];
@@ -532,6 +564,8 @@ export function PagePdfFidele(p: {
       data-version={p.version}
       style={{ width: geo?.largeur, height: geo?.hauteur, ["--lg-fond-page" as string]: geo?.fond, ["--lg-encre-page" as string]: geo?.encre }}
       onClick={surClic}
+      onPointerMove={surMouvement}
+      onPointerLeave={() => p.onSurvol?.(null)}
     >
       <canvas ref={toile} className="lg-fidele-toile" aria-hidden="true" />
       <div ref={couche} className="textLayer" lang={p.langue} />
