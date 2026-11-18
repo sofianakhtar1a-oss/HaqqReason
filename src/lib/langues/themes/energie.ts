@@ -209,5 +209,15 @@ colliery | houillère, mine de charbon | n | C2 | /ˈkɒliəri/ | His grandfathe
 tonnage | tonnage | n | C2 | /ˈtʌnɪdʒ/ | The ship's tonnage is huge. | Le tonnage du navire est énorme.
 smelter | fonderie | n | C2 | /ˈsmeltə/ | The aluminium smelter employs hundreds. | La fonderie d'aluminium emploie des centaines de personnes.
 desalination | dessalement | n | C2 | /ˌdiːsælɪˈneɪʃn/ | Saudi Arabia relies on desalination. | L'Arabie saoudite dépend du dessalement.
+octane | octane | n | C2 | /ˈɒkteɪn/ | High-octane fuel is used in racing cars. | Les voitures de course utilisent un carburant à fort indice d'octane.
+electrification | électrification | n | C2 | /ɪˌlektrɪfɪˈkeɪʃn/ | The electrification of the railway took years. | L'électrification du chemin de fer a pris des années.
+onshore | terrestre, à terre | adj | C1 | /ˈɒnʃɔː/ | Onshore wind farms are cheaper to build. | Les éoliennes terrestres coûtent moins cher à construire.
+green energy | énergie verte | n | B1 | /ˌɡriːn ˈenədʒi/ | Our electricity comes from green energy. | Notre électricité provient d'énergie verte.
+hydroelectric power | énergie hydroélectrique | n | B2 | /ˌhaɪdrəʊɪˌlektrɪk ˈpaʊə/ | Norway produces most of its electricity from hydroelectric power. | La Norvège produit l'essentiel de son électricité grâce à l'hydroélectricité.
+power grid | réseau électrique | n | B2 | /ˈpaʊə ɡrɪd/ | The storm damaged the power grid. | La tempête a endommagé le réseau électrique.
+electricity pylon | pylône électrique | n | B2 | /ɪlekˈtrɪsəti ˌpaɪlən/ | Electricity pylons cross the valley. | Des pylônes électriques traversent la vallée.
+energy supply | approvisionnement énergétique | n | B2 | /ˈenədʒi səˌplaɪ/ | Europe wants a secure energy supply. | L'Europe veut un approvisionnement énergétique sûr.
+gas field | gisement de gaz | n | C1 | /ˈɡæs fiːld/ | A huge gas field was discovered offshore. | Un énorme gisement de gaz a été découvert en mer.
+open-cast mine | mine à ciel ouvert | n | C1 | /ˌəʊpən kɑːst ˈmaɪn/ | The open-cast mine scarred the landscape. | La mine à ciel ouvert a défiguré le paysage.
 `,
 );

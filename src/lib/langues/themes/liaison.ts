@@ -262,5 +262,33 @@ thereof | de cela, en (soutenu) | adv | C2 | /ˌðeərˈɒv/ | Any breach thereo
 hereby | par la présente | adv | C2 | /ˌhɪəˈbaɪ/ | I hereby resign from my post. | Par la présente, je démissionne de mon poste.
 whereupon | sur quoi, après quoi | conj | C2 | /ˌweərəˈpɒn/ | He insulted her, whereupon she left. | Il l'a insultée, sur quoi elle est partie.
 ergo | donc, par conséquent | adv | C2 | /ˈɜːɡəʊ/ | He was absent; ergo, he can't vote. | Il était absent, donc il ne peut pas voter.
+to put it simply | pour faire simple | expr | B2 | /tə ˌpʊt ɪt ˈsɪmpli/ | To put it simply, we don't have enough money. | Pour faire simple, nous n'avons pas assez d'argent.
+generally speaking | d'une manière générale | adv | B1 | /ˌdʒenrəli ˈspiːkɪŋ/ | Generally speaking, the British drink more tea than coffee. | D'une manière générale, les Britanniques boivent plus de thé que de café.
+for one thing | d'abord, pour commencer | expr | B2 | /fə ˈwʌn θɪŋ/ | I can't come: for one thing, I have no car. | Je ne peux pas venir : d'abord, je n'ai pas de voiture.
+what's more | de plus, en plus | expr | B1 | /ˌwɒts ˈmɔː/ | The flat is cheap and, what's more, it's near the station. | L'appartement est bon marché et, en plus, il est près de la gare.
+believe it or not | crois-le ou non | expr | B1 | /bɪˌliːv ɪt ɔː ˈnɒt/ | Believe it or not, he's never seen the sea. | Crois-le ou non, il n'a jamais vu la mer.
+as I said | comme je l'ai dit | expr | A2 | /əz ˌaɪ ˈsed/ | As I said, the meeting starts at nine. | Comme je l'ai dit, la réunion commence à neuf heures.
+to some extent | dans une certaine mesure | expr | B2 | /tə ˌsʌm ɪkˈstent/ | To some extent, you're right. | Dans une certaine mesure, tu as raison.
+so to speak | pour ainsi dire | expr | B2 | /ˌsəʊ tə ˈspiːk/ | He's the head of the family, so to speak. | C'est le chef de famille, pour ainsi dire.
+if so | si c'est le cas, dans ce cas | expr | B1 | /ɪf ˈsəʊ/ | Is it raining? If so, take an umbrella. | Il pleut ? Si c'est le cas, prends un parapluie.
+if not | sinon, dans le cas contraire | expr | B1 | /ɪf ˈnɒt/ | Are you coming? If not, let me know. | Tu viens ? Sinon, préviens-moi.
+in theory | en théorie | adv | B1 | /ɪn ˈθɪəri/ | In theory, the train arrives at nine. | En théorie, le train arrive à neuf heures.
+in practice | en pratique | adv | B1 | /ɪn ˈpræktɪs/ | In practice, it's always late. | En pratique, il est toujours en retard.
+at best | au mieux | adv | B2 | /ət ˈbest/ | The repairs will take a week at best. | Les réparations prendront une semaine au mieux.
+at worst | au pire | adv | B2 | /ət ˈwɜːst/ | At worst, we'll take a taxi. | Au pire, on prendra un taxi.
+in turn | à son tour | adv | B2 | /ɪn ˈtɜːn/ | Each child spoke in turn. | Chaque enfant a parlé à tour de rôle.
+in a way | d'une certaine façon | adv | B1 | /ɪn ə ˈweɪ/ | In a way, I'm glad it's over. | D'une certaine façon, je suis content que ce soit fini.
+it is widely believed that | on pense généralement que | expr | B2 | /ɪt ɪz ˌwaɪdli bɪˈliːvd ðət/ | It is widely believed that breakfast is the most important meal. | On pense généralement que le petit-déjeuner est le repas le plus important.
+it could be argued that | on pourrait soutenir que | expr | C1 | /ɪt kʊd bi ˈɑːɡjuːd ðət/ | It could be argued that the town needs more parks. | On pourrait soutenir que la ville a besoin de davantage de parcs.
+there is no doubt that | il ne fait aucun doute que | expr | B1 | /ðeər ɪz ˌnəʊ ˈdaʊt ðət/ | There is no doubt that smoking damages your health. | Il ne fait aucun doute que le tabac nuit à la santé.
+it is worth noting that | il convient de noter que | expr | C1 | /ɪt ɪz ˌwɜːθ ˈnəʊtɪŋ ðət/ | It is worth noting that prices have doubled since 2010. | Il convient de noter que les prix ont doublé depuis 2010.
+in the case of | dans le cas de | prep | B2 | /ɪn ðə ˈkeɪs əv/ | In the case of young children, the dose is smaller. | Dans le cas des jeunes enfants, la dose est plus faible.
+with the exception of | à l'exception de | prep | B2 | /wɪð ði ɪkˈsepʃn əv/ | The museum is open every day with the exception of Monday. | Le musée est ouvert tous les jours à l'exception du lundi.
+in response to | en réponse à | prep | B2 | /ɪn rɪˈspɒns tə/ | The law was changed in response to public pressure. | La loi a été modifiée en réponse à la pression de l'opinion.
+in addition to | en plus de, outre | prep | B1 | /ɪn əˈdɪʃn tə/ | In addition to English, she speaks Arabic and Turkish. | En plus de l'anglais, elle parle arabe et turc.
+to a lesser extent | dans une moindre mesure | expr | C1 | /tʊ ə ˌlesər ɪkˈstent/ | The storm hit the north and, to a lesser extent, the east. | La tempête a frappé le nord et, dans une moindre mesure, l'est.
+strictly speaking | à proprement parler | expr | C1 | /ˌstrɪktli ˈspiːkɪŋ/ | Strictly speaking, a tomato is a fruit. | À proprement parler, la tomate est un fruit.
+the fact that | le fait que | expr | B2 | /ðə ˈfækt ðət/ | The fact that he lied surprised everyone. | Le fait qu'il ait menti a surpris tout le monde.
+the reason why | la raison pour laquelle | expr | B1 | /ðə ˈriːzn waɪ/ | That's the reason why I came. | C'est la raison pour laquelle je suis venu.
 `,
 );

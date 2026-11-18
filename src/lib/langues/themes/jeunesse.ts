@@ -227,5 +227,8 @@ stroller | poussette | n | B2 | /ˈstrəʊlə/ | She pushes the baby in a stroll
 rascal | coquin, garnement | n | C1 | /ˈrɑːskl/ | Come here, you little rascal! | Viens ici, petit coquin !
 tomboy | garçon manqué | n | C1 | /ˈtɒmbɔɪ/ | She was a tomboy as a child. | Enfant, c'était un garçon manqué.
 tricycle | tricycle | n | B1 | /ˈtraɪsɪkl/ | The toddler rides a tricycle. | Le bambin fait du tricycle.
+Girl Guide | éclaireuse, guide | n | B2 | /ˌɡɜːl ˈɡaɪd/ | She was a Girl Guide when she was young. | Elle était guide quand elle était jeune.
+to disobey | désobéir à | v | B2 | /ˌdɪsəˈbeɪ/ | Children who disobey the rules will be punished. | Les enfants qui désobéissent au règlement seront punis.
+badly behaved | mal élevé, indiscipliné | adj | B1 | /ˌbædli bɪˈheɪvd/ | The badly behaved pupils stayed after school. | Les élèves indisciplinés sont restés après les cours.
 `,
 );

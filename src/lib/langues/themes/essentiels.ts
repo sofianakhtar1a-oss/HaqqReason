@@ -161,6 +161,15 @@ amid | au milieu de, parmi | prep | C1 | /əˈmɪd/ | The talks took place amid 
 vis-à-vis | vis-à-vis de, par rapport à | prep | C2 | /ˌviːz ɑː ˈviː/ | What is our position vis-à-vis the new law? | Quelle est notre position vis-à-vis de la nouvelle loi ?
 thyself | toi-même (archaïque) | pron | C2 | /ðaɪˈself/ | "Know thyself," said the philosopher. | « Connais-toi toi-même », disait le philosophe.
 whosoever | quiconque | pron | C2 | /ˌhuːsəʊˈevə/ | Whosoever does an atom's weight of good will see it. | Quiconque fait le poids d'un atome de bien le verra.
+nay | voire ; non (vieilli) | adv | C2 | /neɪ/ | It was difficult, nay impossible. | C'était difficile, voire impossible.
+ditto | idem | adv | B2 | /ˈdɪtəʊ/ | He loves football; ditto his brother. | Il adore le football ; idem pour son frère.
+whatnot | et tout le reste, et cetera | n | C1 | /ˈwɒtnɒt/ | The drawer is full of pens, keys and whatnot. | Le tiroir est plein de stylos, de clés et de choses du même genre.
+a great deal of | beaucoup de, une grande quantité de | det | B2 | /ə ˌɡreɪt ˈdiːl əv/ | She spends a great deal of time on her studies. | Elle consacre beaucoup de temps à ses études.
+a large number of | un grand nombre de | det | B1 | /ə ˌlɑːdʒ ˈnʌmbər əv/ | A large number of people came to the meeting. | Un grand nombre de personnes sont venues à la réunion.
+a growing number of | un nombre croissant de | det | B2 | /ə ˌɡrəʊɪŋ ˈnʌmbər əv/ | A growing number of young people work from home. | Un nombre croissant de jeunes travaillent depuis chez eux.
+a handful of | une poignée de | det | B2 | /ə ˈhændfʊl əv/ | Only a handful of pupils came to the club. | Seule une poignée d'élèves est venue au club.
+loads of | plein de, des tas de (familier) | det | A2 | /ˈləʊdz əv/ | We've got loads of time before the train. | On a plein de temps avant le train.
+a number of | un certain nombre de | det | B2 | /ə ˈnʌmbər əv/ | A number of shops have closed this year. | Un certain nombre de magasins ont fermé cette année.
 `,
 );
 
@@ -1534,6 +1543,25 @@ demonstrably | manifestement | adv | C2 | /dɪˈmɒnstrəbli/ | The claim is dem
 mightily | puissamment, énormément | adv | C2 | /ˈmaɪtɪli/ | We were mightily relieved. | Nous avons été énormément soulagés.
 energetically | énergiquement | adv | C1 | /ˌenəˈdʒetɪkli/ | She campaigned energetically. | Elle a fait campagne énergiquement.
 speedily | rapidement, promptement | adv | C1 | /ˈspiːdɪli/ | The matter was speedily resolved. | L'affaire a été rapidement réglée.
+miserably | misérablement, lamentablement | adv | B2 | /ˈmɪzrəbli/ | They failed miserably. | Ils ont échoué lamentablement.
+ethnically | ethniquement | adv | C1 | /ˈeθnɪkli/ | The city is ethnically diverse. | La ville est très diverse sur le plan ethnique.
+democratically | démocratiquement | adv | C1 | /ˌdeməˈkrætɪkli/ | The leader was democratically elected. | Le dirigeant a été élu démocratiquement.
+romantically | romantiquement, sentimentalement | adv | B2 | /rəʊˈmæntɪkli/ | They are not romantically involved. | Ils n'ont pas de liaison amoureuse.
+predictably | comme on pouvait s'y attendre | adv | C1 | /prɪˈdɪktəbli/ | Predictably, the train was late. | Comme on pouvait s'y attendre, le train était en retard.
+militarily | militairement | adv | C1 | /ˌmɪlɪˈterəli/ | The country is militarily weak. | Le pays est militairement faible.
+uncontrollably | de façon incontrôlable | adv | B2 | /ˌʌnkənˈtrəʊləbli/ | She laughed uncontrollably. | Elle riait sans pouvoir s'arrêter.
+allegedly | prétendument, soi-disant | adv | C1 | /əˈledʒɪdli/ | The man allegedly stole three cars. | L'homme aurait volé trois voitures.
+dreadfully | terriblement, affreusement | adv | C1 | /ˈdredfəli/ | I'm dreadfully sorry for the delay. | Je suis terriblement désolé pour le retard.
+comparatively | relativement, comparativement | adv | C1 | /kəmˈpærətɪvli/ | The flat is comparatively cheap for London. | L'appartement est relativement bon marché pour Londres.
+sincerely | sincèrement | adv | B2 | /sɪnˈsɪəli/ | I sincerely hope you get better soon. | J'espère sincèrement que tu iras vite mieux.
+seemingly | apparemment, en apparence | adv | C1 | /ˈsiːmɪŋli/ | The problem was seemingly simple. | Le problème était simple en apparence.
+fundamentally | fondamentalement | adv | C1 | /ˌfʌndəˈmentəli/ | The two ideas are fundamentally different. | Les deux idées sont fondamentalement différentes.
+chiefly | principalement, surtout | adv | C1 | /ˈtʃiːfli/ | The museum is visited chiefly by tourists. | Le musée est surtout visité par des touristes.
+consistently | systématiquement, avec constance | adv | B2 | /kənˈsɪstəntli/ | She has consistently good marks. | Elle a constamment de bonnes notes.
+coldly | froidement | adv | B2 | /ˈkəʊldli/ | "No," she replied coldly. | « Non », a-t-elle répondu froidement.
+gladly | volontiers, avec plaisir | adv | B2 | /ˈɡlædli/ | I'll gladly help you move house. | Je t'aiderai volontiers à déménager.
+theoretically | théoriquement, en théorie | adv | C1 | /ˌθɪəˈretɪkli/ | Theoretically, the plan should work. | En théorie, le plan devrait marcher.
+efficiently | efficacement | adv | B2 | /ɪˈfɪʃntli/ | The new boiler heats the house more efficiently. | La nouvelle chaudière chauffe la maison plus efficacement.
 `,
 );
 

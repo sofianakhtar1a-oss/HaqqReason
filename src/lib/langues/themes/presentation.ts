@@ -229,5 +229,37 @@ first-name terms | tutoiement, appeler par le prénom | n | B2 | /ˌfɜːst neɪ
 first language | langue maternelle | n | B2 | /ˌfɜːst ˈlæŋɡwɪdʒ/ | Her first language is Arabic. | Sa langue maternelle est l'arabe.
 namesake | homonyme | n | C2 | /ˈneɪmseɪk/ | He was named after his namesake grandfather. | Il porte le prénom de son grand-père.
 moniker | surnom | n | C2 | /ˈmɒnɪkə/ | He earned the moniker "the Lion". | Il a hérité du surnom « le Lion ».
+ladies and gentlemen | mesdames et messieurs | expr | A2 | /ˌleɪdiz ən ˈdʒentlmən/ | Ladies and gentlemen, welcome aboard. | Mesdames et messieurs, bienvenue à bord.
+have a nice day | bonne journée | expr | A1 | /hæv ə ˌnaɪs ˈdeɪ/ | Thank you, have a nice day! | Merci, bonne journée !
+good luck | bonne chance | expr | A1 | /ˌɡʊd ˈlʌk/ | Good luck with your exam! | Bonne chance pour ton examen !
+congratulations | félicitations | expr | A1 | /kənˌɡrætʃuˈleɪʃnz/ | Congratulations on your new baby! | Félicitations pour la naissance de votre bébé !
+bless you | à tes souhaits, à vos souhaits | expr | A2 | /ˈbles juː/ | When someone sneezes, the British say "bless you". | Quand quelqu'un éternue, les Britanniques disent « à tes souhaits ».
+no problem | pas de problème ; de rien | expr | A1 | /ˌnəʊ ˈprɒbləm/ | Thanks for your help! — No problem. | Merci pour ton aide ! — De rien.
+don't mention it | il n'y a pas de quoi | expr | A2 | /ˌdəʊnt ˈmenʃn ɪt/ | Thank you so much! — Don't mention it. | Merci beaucoup ! — Il n'y a pas de quoi.
+what do you do | qu'est-ce que vous faites dans la vie ? | expr | A1 | /ˌwɒt də juː ˈduː/ | What do you do? — I'm a nurse. | Qu'est-ce que vous faites dans la vie ? — Je suis infirmière.
+where are you from | d'où venez-vous ? | expr | A1 | /ˌweər ɑː juː ˈfrɒm/ | Where are you from? — I'm from Lyon. | D'où venez-vous ? — Je viens de Lyon.
+how old are you | quel âge as-tu ? | expr | A1 | /ˌhaʊ ˈəʊld ɑː juː/ | How old are you? — I'm twelve. | Quel âge as-tu ? — J'ai douze ans.
+what's your name | comment tu t'appelles ? | expr | A1 | /ˌwɒts jə ˈneɪm/ | Hi! What's your name? | Salut ! Comment tu t'appelles ?
+after you | après vous | expr | A2 | /ˈɑːftə juː/ | After you, madam. | Après vous, madame.
+here you are | voici, tenez | expr | A1 | /ˈhɪə juː ɑː/ | Can I have the salt? — Here you are. | Tu peux me passer le sel ? — Tiens.
+there you go | et voilà | expr | B1 | /ˈðeə juː ɡəʊ/ | There you go: one coffee and a croissant. | Et voilà : un café et un croissant.
+just a moment | un instant | expr | A2 | /ˌdʒʌst ə ˈməʊmənt/ | Just a moment, I'll check for you. | Un instant, je vais vérifier.
+happy birthday | joyeux anniversaire | expr | A1 | /ˌhæpi ˈbɜːθdeɪ/ | Happy birthday, Grandma! | Joyeux anniversaire, mamie !
+Merry Christmas | joyeux Noël | expr | A1 | /ˌmeri ˈkrɪsməs/ | We wish you a Merry Christmas. | Nous vous souhaitons un joyeux Noël.
+Happy New Year | bonne année | expr | A1 | /ˌhæpi njuː ˈjɪə/ | Happy New Year! Let's hope it's a good one. | Bonne année ! Espérons qu'elle sera bonne.
+sweet dreams | fais de beaux rêves | expr | A2 | /ˌswiːt ˈdriːmz/ | Good night, darling, sweet dreams. | Bonne nuit, mon chéri, fais de beaux rêves.
+welcome back | bon retour, content de te revoir | expr | A2 | /ˌwelkəm ˈbæk/ | Welcome back! How was your holiday? | Bon retour ! Comment étaient tes vacances ?
+what's up | quoi de neuf ? ; qu'est-ce qui ne va pas ? | expr | A2 | /ˌwɒts ˈʌp/ | Hi Tom, what's up? | Salut Tom, quoi de neuf ?
+how's it going | comment ça va ? | expr | A2 | /ˌhaʊz ɪt ˈɡəʊɪŋ/ | Hey, how's it going? | Salut, comment ça va ?
+not bad | pas mal | expr | A1 | /ˌnɒt ˈbæd/ | How are you? — Not bad, thanks. | Comment ça va ? — Pas mal, merci.
+so-so | couci-couça | expr | A2 | /ˈsəʊ səʊ/ | How was the film? — So-so. | C'était comment, le film ? — Couci-couça.
+same to you | pareillement, à toi aussi | expr | A2 | /ˈseɪm tə juː/ | Have a good weekend! — Same to you! | Bon week-end ! — À toi aussi !
+all the best | bonne continuation, tous mes vœux | expr | B1 | /ˌɔːl ðə ˈbest/ | All the best in your new job! | Bonne continuation dans ton nouveau poste !
+best wishes | meilleurs vœux, amitiés | expr | A2 | /ˌbest ˈwɪʃɪz/ | Best wishes for a speedy recovery. | Meilleurs vœux de prompt rétablissement.
+to say sorry | s'excuser, demander pardon | expr | A2 | /seɪ ˈsɒri/ | Go and say sorry to your sister. | Va demander pardon à ta sœur.
+at your service | à votre service | expr | B1 | /ət jə ˈsɜːvɪs/ | If you need anything, I'm at your service. | Si vous avez besoin de quoi que ce soit, je suis à votre service.
+at your disposal | à votre disposition | expr | B2 | /ət jə dɪˈspəʊzl/ | A car will be at your disposal during your stay. | Une voiture sera à votre disposition pendant votre séjour.
+strong accent | fort accent | n | B1 | /ˌstrɒŋ ˈæksənt/ | He speaks English with a strong French accent. | Il parle anglais avec un fort accent français.
+to wave goodbye | faire au revoir de la main | expr | A2 | /weɪv ɡʊdˈbaɪ/ | The children waved goodbye from the window. | Les enfants ont fait au revoir de la main depuis la fenêtre.
 `,
 );

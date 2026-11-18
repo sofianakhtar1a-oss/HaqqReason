@@ -315,5 +315,58 @@ chiffon | mousseline | n | C2 | /ˈʃɪfɒn/ | She wore a chiffon scarf. | Elle 
 lapel | revers (de veste) | n | C2 | /ləˈpel/ | He wore a badge on his lapel. | Il portait un badge au revers de sa veste.
 skimpy | étriqué, minuscule | adj | C2 | /ˈskɪmpi/ | Islam recommends modest rather than skimpy clothes. | L'islam recommande des vêtements pudiques plutôt qu'étriqués.
 stretchy | élastique, extensible | adj | B2 | /ˈstretʃi/ | The fabric is stretchy. | Le tissu est extensible.
+nail varnish | vernis à ongles | n | A2 | /ˈneɪl ˌvɑːnɪʃ/ | She was wearing red nail varnish. | Elle portait du vernis à ongles rouge.
+cagoule | coupe-vent (léger, à capuche) | n | B2 | /kəˈɡuːl/ | Pack a cagoule in case it rains. | Emporte un coupe-vent au cas où il pleuvrait.
+mac | imperméable | n | B2 | /mæk/ | Take your mac, it looks like rain. | Prends ton imperméable, on dirait qu'il va pleuvoir.
+duffel coat | duffel-coat | n | B2 | /ˈdʌfl kəʊt/ | Paddington Bear wears a blue duffel coat. | L'ours Paddington porte un duffel-coat bleu.
+dinner jacket | smoking | n | B2 | /ˈdɪnə ˌdʒækɪt/ | The invitation says dinner jacket. | L'invitation précise : smoking exigé.
+buttonhole | boutonnière | n | B2 | /ˈbʌtnhəʊl/ | The groom wore a rose in his buttonhole. | Le marié portait une rose à la boutonnière.
+chinos | pantalon chino | n | B1 | /ˈtʃiːnəʊz/ | He wore chinos and a white shirt. | Il portait un chino et une chemise blanche.
+cargo trousers | pantalon cargo, treillis | n | B2 | /ˈkɑːɡəʊ ˌtraʊzəz/ | Cargo trousers have big side pockets. | Le pantalon cargo a de grandes poches latérales.
+plimsolls | tennis (chaussures de toile) | n | B2 | /ˈplɪmsəlz/ | The children wore plimsolls for PE. | Les enfants portaient des tennis en sport.
+stilettos | talons aiguilles | n | B2 | /stɪˈletəʊz/ | It's hard to walk on cobbles in stilettos. | C'est difficile de marcher sur des pavés en talons aiguilles.
+ankle boots | bottines | n | B1 | /ˈæŋkl buːts/ | She bought some black ankle boots. | Elle a acheté des bottines noires.
+lace-ups | chaussures à lacets | n | B2 | /ˈleɪs ʌps/ | He prefers lace-ups to slip-ons. | Il préfère les chaussures à lacets aux mocassins.
+nightie | chemise de nuit | n | B1 | /ˈnaɪti/ | She put on her nightie and went to bed. | Elle a mis sa chemise de nuit et s'est couchée.
+bobble hat | bonnet à pompon | n | B1 | /ˈbɒbl hæt/ | He wore a woolly bobble hat. | Il portait un bonnet en laine à pompon.
+shoulder bag | sac à bandoulière | n | B1 | /ˈʃəʊldə bæɡ/ | A shoulder bag leaves your hands free. | Un sac à bandoulière laisse les mains libres.
+clutch bag | pochette (sac) | n | B2 | /ˈklʌtʃ bæɡ/ | She carried a small silver clutch bag. | Elle tenait une petite pochette argentée.
+scrunchie | chouchou (pour cheveux) | n | B2 | /ˈskrʌntʃi/ | She tied her hair back with a scrunchie. | Elle s'est attaché les cheveux avec un chouchou.
+eyeliner | eye-liner, crayon pour les yeux | n | B1 | /ˈaɪlaɪnə/ | She wears black eyeliner. | Elle porte de l'eye-liner noir.
+blusher | fard à joues | n | B1 | /ˈblʌʃə/ | A touch of blusher gives you colour. | Une touche de fard à joues donne bonne mine.
+corduroy | velours côtelé | n | B2 | /ˈkɔːdərɔɪ/ | He wore a brown corduroy jacket. | Il portait une veste en velours côtelé marron.
+lacy | en dentelle | adj | B2 | /ˈleɪsi/ | She wore a lacy white blouse. | Elle portait un chemisier blanc en dentelle.
+serge | serge | n | C2 | /sɜːdʒ/ | His uniform was made of blue serge. | Son uniforme était en serge bleue.
+flannel | flanelle ; gant de toilette | n | B2 | /ˈflænl/ | Wash your face with a flannel. | Lave-toi le visage avec un gant de toilette.
+perm | permanente | n | B2 | /pɜːm/ | My mother had a perm in the eighties. | Ma mère avait une permanente dans les années quatre-vingt.
+wearer | porteur (d'un vêtement, de lunettes) | n | C1 | /ˈweərə/ | The coat keeps the wearer warm and dry. | Le manteau garde celui qui le porte au chaud et au sec.
+brim | bord (d'un chapeau, d'un verre) | n | C1 | /brɪm/ | The hat had a wide brim. | Le chapeau avait de larges bords.
+ascot | lavallière | n | C2 | /ˈæskət/ | He wore a silk ascot at his throat. | Il portait une lavallière en soie au cou.
+ruff | fraise (col plissé) | n | C2 | /rʌf/ | Elizabethan nobles wore a ruff around the neck. | Les nobles élisabéthains portaient une fraise autour du cou.
+garb | tenue, costume | n | C2 | /ɡɑːb/ | The monks were dressed in religious garb. | Les moines portaient l'habit religieux.
+unisex | unisexe | adj | B2 | /ˈjuːnɪseks/ | The shop sells unisex clothes. | La boutique vend des vêtements unisexes.
+headband | bandeau, serre-tête | n | B1 | /ˈhedbænd/ | She wore a headband to keep her hair back. | Elle portait un serre-tête pour retenir ses cheveux.
+size chart | guide des tailles | n | B1 | /ˈsaɪz tʃɑːt/ | Check the size chart before ordering. | Consulte le guide des tailles avant de commander.
+made to measure | sur mesure | adj | B2 | /ˌmeɪd tə ˈmeʒə/ | His suits are made to measure. | Ses costumes sont faits sur mesure.
+off the peg | prêt-à-porter | adj | C1 | /ˌɒf ðə ˈpeɡ/ | She bought an off-the-peg dress for the wedding. | Elle a acheté une robe de prêt-à-porter pour le mariage.
+rayon | rayonne, viscose | n | C2 | /ˈreɪɒn/ | The blouse is made of rayon. | Le chemisier est en viscose.
+visor | visière | n | B2 | /ˈvaɪzə/ | The helmet has a tinted visor. | Le casque a une visière teintée.
+bib | bavoir ; dossard | n | B1 | /bɪb/ | Put a bib on the baby before lunch. | Mets un bavoir au bébé avant le déjeuner.
+mackintosh | imperméable | n | C1 | /ˈmækɪntɒʃ/ | He wore an old mackintosh and a hat. | Il portait un vieil imperméable et un chapeau.
+tracksuit top | veste de survêtement | n | B1 | /ˈtræksuːt tɒp/ | He zipped up his tracksuit top. | Il a remonté la fermeture de sa veste de survêtement.
+running shoes | chaussures de course | n | A2 | /ˈrʌnɪŋ ʃuːz/ | Good running shoes protect your knees. | De bonnes chaussures de course protègent les genoux.
+walking boots | chaussures de randonnée | n | A2 | /ˈwɔːkɪŋ buːts/ | You'll need walking boots for the mountains. | Il te faudra des chaussures de randonnée pour la montagne.
+full-length | (manteau, miroir) long, en pied ; (film) long métrage | adj | B2 | /ˌfʊl ˈleŋθ/ | She checked her outfit in the full-length mirror. | Elle a vérifié sa tenue dans le miroir en pied.
+to do your nails | se faire les ongles | expr | B1 | /duː jə ˈneɪlz/ | She's doing her nails before the party. | Elle se fait les ongles avant la fête.
+washable | lavable | adj | B2 | /ˈwɒʃəbl/ | This jumper is machine washable. | Ce pull est lavable en machine.
+undershirt | maillot de corps (US) | n | B2 | /ˈʌndəʃɜːt/ | He wore a white undershirt under his shirt. | Il portait un maillot de corps blanc sous sa chemise.
+pantyhose | collants (US) | n | B2 | /ˈpæntihəʊz/ | She wore black pantyhose with her dress. | Elle portait des collants noirs avec sa robe.
+in fashion | à la mode | adj | A2 | /ɪn ˈfæʃn/ | Wide trousers are back in fashion. | Les pantalons larges reviennent à la mode.
+out of fashion | démodé | adj | B1 | /ˌaʊt əv ˈfæʃn/ | That style went out of fashion years ago. | Ce style est passé de mode il y a des années.
+waistband | ceinture (d'un vêtement) | n | C1 | /ˈweɪstbænd/ | These trousers have an elastic waistband. | Ce pantalon a une ceinture élastique.
+shoulder pad | épaulette | n | B2 | /ˈʃəʊldə pæd/ | Jackets with shoulder pads were fashionable in the eighties. | Les vestes à épaulettes étaient à la mode dans les années quatre-vingt.
+belt loop | passant de ceinture | n | B2 | /ˈbelt luːp/ | One of the belt loops has come off. | L'un des passants de ceinture s'est décousu.
+insole | semelle intérieure | n | B2 | /ˈɪnsəʊl/ | Put an insole in your boots to keep your feet warm. | Mets une semelle dans tes bottes pour avoir les pieds au chaud.
+ready-to-wear | prêt-à-porter | adj | B2 | /ˌredi tə ˈweə/ | The designer launched a ready-to-wear collection. | Le créateur a lancé une collection de prêt-à-porter.
 `,
 );

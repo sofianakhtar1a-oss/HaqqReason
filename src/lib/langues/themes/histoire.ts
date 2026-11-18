@@ -360,5 +360,33 @@ dynastic | dynastique | adj | C2 | /dɪˈnæstɪk/ | There were dynastic struggl
 hunter-gatherer | chasseur-cueilleur | n | C1 | /ˌhʌntə ˈɡæðərə/ | Early humans were hunter-gatherers. | Les premiers humains étaient des chasseurs-cueilleurs.
 barbarism | barbarie | n | C2 | /ˈbɑːbərɪzəm/ | The attack was an act of barbarism. | L'attaque était un acte de barbarie.
 kingship | royauté | n | C2 | /ˈkɪŋʃɪp/ | Ibn Khaldun wrote about kingship. | Ibn Khaldoun a écrit sur la royauté.
+artillery | artillerie | n | C1 | /ɑːˈtɪləri/ | The town was shelled by heavy artillery. | La ville a été bombardée par l'artillerie lourde.
+squadron | escadron, escadrille | n | C1 | /ˈskwɒdrən/ | A squadron of fighter planes flew over. | Une escadrille d'avions de chasse est passée.
+admiralty | amirauté | n | C2 | /ˈædmərəlti/ | Orders came directly from the Admiralty. | Les ordres venaient directement de l'Amirauté.
+ordnance | matériel d'artillerie, munitions | n | C2 | /ˈɔːdnəns/ | Unexploded ordnance was found on the beach. | Des munitions non explosées ont été trouvées sur la plage.
+ensign | pavillon ; enseigne (grade) | n | C2 | /ˈensən/ | The ship flew the white ensign. | Le navire arborait le pavillon blanc.
+Cretaceous | crétacé | adj | C2 | /krɪˈteɪʃəs/ | Dinosaurs died out at the end of the Cretaceous period. | Les dinosaures ont disparu à la fin du crétacé.
+shilling | shilling | n | C1 | /ˈʃɪlɪŋ/ | There were twenty shillings in a pound. | Il y avait vingt shillings dans une livre.
+tsar | tsar | n | C1 | /zɑː/ | The last tsar of Russia was Nicholas II. | Le dernier tsar de Russie fut Nicolas II.
+imperialist | impérialiste | adj | C1 | /ɪmˈpɪəriəlɪst/ | The novel criticises imperialist attitudes. | Le roman critique les mentalités impérialistes.
+adjutant | adjudant-major | n | C2 | /ˈædʒʊtənt/ | The adjutant read out the orders. | L'adjudant-major a lu les ordres.
+federalist | fédéraliste | adj | C2 | /ˈfedərəlɪst/ | The federalist party wanted a strong central state. | Le parti fédéraliste voulait un État central fort.
+scaffold | échafaud | n | C1 | /ˈskæfəʊld/ | The king was led to the scaffold. | Le roi a été conduit à l'échafaud.
+rune | rune | n | C2 | /ruːn/ | The stone is carved with ancient runes. | La pierre est gravée de runes anciennes.
+Puritan | puritain | n | C2 | /ˈpjʊərɪtən/ | The Puritans sailed to America in 1620. | Les puritains sont partis pour l'Amérique en 1620.
+aggressor | agresseur | n | C1 | /əˈɡresə/ | The country was seen as the aggressor. | Le pays était considéré comme l'agresseur.
+sphinx | sphinx | n | C1 | /sfɪŋks/ | We visited the Sphinx near Cairo. | Nous avons visité le Sphinx près du Caire.
+regimental | régimentaire, du régiment | adj | C2 | /ˌredʒɪˈmentl/ | The regimental band played at the parade. | La fanfare du régiment a joué au défilé.
+peacetime | temps de paix | n | C1 | /ˈpiːstaɪm/ | Soldiers are trained in peacetime. | Les soldats sont formés en temps de paix.
+guillotine | guillotine | n | B2 | /ˈɡɪlətiːn/ | The guillotine was used during the French Revolution. | La guillotine a été utilisée pendant la Révolution française.
+internment | internement | n | C2 | /ɪnˈtɜːnmənt/ | Thousands were held in internment camps. | Des milliers de personnes ont été détenues dans des camps d'internement.
+forerunner | précurseur, ancêtre | n | C1 | /ˈfɔːrʌnə/ | The telegraph was the forerunner of the telephone. | Le télégraphe fut l'ancêtre du téléphone.
+noose | nœud coulant | n | C1 | /nuːs/ | The cowboy threw the noose over the calf. | Le cow-boy a lancé le nœud coulant sur le veau.
+invader | envahisseur | n | B2 | /ɪnˈveɪdə/ | The castle was built to keep out invaders. | Le château a été construit pour repousser les envahisseurs.
+fatherland | patrie | n | C1 | /ˈfɑːðəlænd/ | The soldiers swore to defend the fatherland. | Les soldats ont juré de défendre la patrie.
+listed building | bâtiment classé | n | C1 | /ˌlɪstɪd ˈbɪldɪŋ/ | You can't change the windows of a listed building. | On ne peut pas changer les fenêtres d'un bâtiment classé.
+to make war | faire la guerre | expr | B2 | /meɪk ˈwɔː/ | The two kingdoms used to make war every summer. | Les deux royaumes se faisaient la guerre chaque été.
+to take power | prendre le pouvoir | expr | B2 | /teɪk ˈpaʊə/ | The general wanted to take power by force. | Le général voulait prendre le pouvoir par la force.
+at war | en guerre | adj | B1 | /ət ˈwɔː/ | The two countries were at war for ten years. | Les deux pays ont été en guerre pendant dix ans.
 `,
 );

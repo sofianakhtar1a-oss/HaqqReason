@@ -319,5 +319,105 @@ hiker | randonneur | n | B2 | /ˈhaɪkə/ | The hikers reached the summit. | Les
 matador | matador | n | C2 | /ˈmætədɔː/ | The matador faced the bull. | Le matador a affronté le taureau.
 ringside | bord du ring | n | C2 | /ˈrɪŋsaɪd/ | We had ringside seats. | Nous avions des places au bord du ring.
 bareback | à cru, sans selle | adv | C2 | /ˈbeəbæk/ | He rides the horse bareback. | Il monte le cheval à cru.
+netball | netball (sorte de basket) | n | B2 | /ˈnetbɔːl/ | Netball is popular in British girls' schools. | Le netball est très pratiqué dans les écoles de filles britanniques.
+half marathon | semi-marathon | n | B1 | /ˌhɑːf ˈmærəθən/ | She ran her first half marathon in two hours. | Elle a couru son premier semi-marathon en deux heures.
+water skiing | ski nautique | n | B1 | /ˈwɔːtə ˌskiːɪŋ/ | We tried water skiing on the lake. | Nous avons essayé le ski nautique sur le lac.
+rollerblading | roller (en ligne) | n | B1 | /ˈrəʊləbleɪdɪŋ/ | They go rollerblading along the seafront. | Ils font du roller le long du front de mer.
+orienteering | course d'orientation | n | B2 | /ˌɔːriənˈtɪərɪŋ/ | Orienteering involves finding your way with a map and compass. | La course d'orientation consiste à se repérer avec une carte et une boussole.
+show jumping | concours hippique, saut d'obstacles | n | B2 | /ˈʃəʊ ˌdʒʌmpɪŋ/ | She competes in show jumping on her pony. | Elle fait du saut d'obstacles avec son poney.
+press-up | pompe (exercice) | n | B1 | /ˈpres ʌp/ | He does fifty press-ups every morning. | Il fait cinquante pompes tous les matins.
+lunge | fente (exercice) | n | B2 | /lʌndʒ/ | Do ten lunges on each leg. | Fais dix fentes sur chaque jambe.
+freestyle | nage libre | n | B2 | /ˈfriːstaɪl/ | She won gold in the 100 metres freestyle. | Elle a gagné l'or au cent mètres nage libre.
+qualifier | match de qualification ; qualifié | n | B2 | /ˈkwɒlɪfaɪə/ | They won the World Cup qualifier. | Ils ont gagné le match de qualification pour la Coupe du monde.
+on horseback | à cheval | expr | B1 | /ɒn ˈhɔːsbæk/ | The police patrolled the park on horseback. | La police patrouillait dans le parc à cheval.
+spinner | lanceur à effet (cricket) ; toupie | n | C1 | /ˈspɪnə/ | The spinner took three wickets. | Le lanceur à effet a éliminé trois batteurs.
+sportsman | sportif | n | B1 | /ˈspɔːtsmən/ | He was a great sportsman in his youth. | C'était un grand sportif dans sa jeunesse.
+invitational | sur invitation (tournoi) | adj | C2 | /ˌɪnvɪˈteɪʃənl/ | She played in an invitational tournament. | Elle a joué dans un tournoi sur invitation.
+putt | putt (golf) | n | C1 | /pʌt/ | He sank a long putt to win the match. | Il a réussi un long putt pour gagner la partie.
+finisher | coureur à l'arrivée ; buteur | n | C1 | /ˈfɪnɪʃə/ | Every finisher received a medal. | Chaque coureur arrivé a reçu une médaille.
+slalom | slalom | n | B2 | /ˈslɑːləm/ | She won the giant slalom. | Elle a gagné le slalom géant.
+rower | rameur | n | B2 | /ˈrəʊə/ | The rowers trained on the river at dawn. | Les rameurs s'entraînaient sur la rivière à l'aube.
+medallion | médaillon | n | C1 | /məˈdæliən/ | He wore a gold medallion round his neck. | Il portait un médaillon en or autour du cou.
+dugout | banc de touche abrité | n | C1 | /ˈdʌɡaʊt/ | The manager shouted from the dugout. | L'entraîneur criait depuis le banc de touche.
+skydiving | parachutisme | n | B1 | /ˈskaɪdaɪvɪŋ/ | For her birthday she went skydiving. | Pour son anniversaire, elle a fait du parachutisme.
+positional | de position, positionnel | adj | C2 | /pəˈzɪʃənl/ | The coach made a positional change. | L'entraîneur a modifié le placement des joueurs.
+swimming lesson | cours de natation | n | A2 | /ˈswɪmɪŋ ˌlesn/ | The children have swimming lessons at school. | Les enfants ont des cours de natation à l'école.
+springboard | tremplin | n | C1 | /ˈsprɪŋbɔːd/ | The job was a springboard to a political career. | Le poste a servi de tremplin à une carrière politique.
+to lob | lober, lancer en cloche | v | C1 | /lɒb/ | He lobbed the ball over the goalkeeper. | Il a lobé le gardien.
+captaincy | capitanat, rôle de capitaine | n | C1 | /ˈkæptənsi/ | He was given the captaincy of the team. | On lui a confié le brassard de capitaine.
+football boots | chaussures de foot, crampons | n | A2 | /ˈfʊtbɔːl buːts/ | Clean your football boots after the match. | Nettoie tes chaussures de foot après le match.
+football pitch | terrain de football | n | A2 | /ˈfʊtbɔːl pɪtʃ/ | The football pitch was flooded. | Le terrain de football était inondé.
+football club | club de football | n | A2 | /ˈfʊtbɔːl klʌb/ | He has supported the same football club all his life. | Il soutient le même club de football depuis toujours.
+goalpost | poteau (de but) | n | B1 | /ˈɡəʊlpəʊst/ | The ball hit the goalpost. | Le ballon a heurté le poteau.
+penalty area | surface de réparation | n | B2 | /ˈpenəlti ˌeəriə/ | He was fouled inside the penalty area. | Il a été victime d'une faute dans la surface de réparation.
+penalty spot | point de penalty | n | B2 | /ˈpenəlti spɒt/ | The referee pointed to the penalty spot. | L'arbitre a désigné le point de penalty.
+touchline | ligne de touche | n | B2 | /ˈtʌtʃlaɪn/ | The coach paced up and down the touchline. | L'entraîneur arpentait la ligne de touche.
+corner flag | drapeau de corner | n | B2 | /ˈkɔːnə flæɡ/ | He celebrated by the corner flag. | Il a célébré son but près du drapeau de corner.
+shin guards | protège-tibias | n | B1 | /ˈʃɪn ɡɑːdz/ | Players must wear shin guards. | Les joueurs doivent porter des protège-tibias.
+tennis racket | raquette de tennis | n | A2 | /ˈtenɪs ˌrækɪt/ | She bought a new tennis racket. | Elle a acheté une nouvelle raquette de tennis.
+tennis court | court de tennis | n | A2 | /ˈtenɪs kɔːt/ | The hotel has two tennis courts. | L'hôtel a deux courts de tennis.
+golf buggy | voiturette de golf | n | B2 | /ˈɡɒlf ˌbʌɡi/ | They drove round the course in a golf buggy. | Ils ont fait le parcours en voiturette.
+ski slope | piste de ski | n | A2 | /ˈskiː sləʊp/ | The ski slopes were crowded. | Les pistes de ski étaient bondées.
+ski pass | forfait de ski | n | B1 | /ˈskiː pɑːs/ | A six-day ski pass is expensive. | Un forfait de ski de six jours coûte cher.
+ski boots | chaussures de ski | n | A2 | /ˈskiː buːts/ | My ski boots are too tight. | Mes chaussures de ski me serrent trop.
+ice skates | patins à glace | n | A2 | /ˈaɪs skeɪts/ | You can hire ice skates at the rink. | On peut louer des patins à la patinoire.
+swimming goggles | lunettes de natation | n | A2 | /ˈswɪmɪŋ ˌɡɒɡlz/ | Wear swimming goggles to protect your eyes. | Porte des lunettes de natation pour protéger tes yeux.
+diving board | plongeoir | n | B1 | /ˈdaɪvɪŋ bɔːd/ | He jumped off the top diving board. | Il a sauté du plus haut plongeoir.
+deep end | grand bain | n | B1 | /ˌdiːp ˈend/ | Don't go in the deep end if you can't swim. | Ne va pas dans le grand bain si tu ne sais pas nager.
+shallow end | petit bain | n | B1 | /ˌʃæləʊ ˈend/ | The children played in the shallow end. | Les enfants jouaient dans le petit bain.
+armbands | brassards (de natation) | n | A2 | /ˈɑːmbændz/ | The little boy swam with armbands. | Le petit garçon nageait avec des brassards.
+rubber ring | bouée | n | A2 | /ˌrʌbə ˈrɪŋ/ | She floated on a rubber ring. | Elle flottait sur une bouée.
+gym membership | abonnement à la salle de sport | n | B1 | /ˈdʒɪm ˌmembəʃɪp/ | I cancelled my gym membership. | J'ai résilié mon abonnement à la salle.
+rowing machine | rameur (appareil) | n | B1 | /ˈrəʊɪŋ məˌʃiːn/ | Ten minutes on the rowing machine is hard work. | Dix minutes de rameur, c'est dur.
+cross trainer | vélo elliptique | n | B2 | /ˈkrɒs ˌtreɪnə/ | The cross trainer is easy on the knees. | Le vélo elliptique ménage les genoux.
+barbell | barre (d'haltères) | n | B2 | /ˈbɑːbel/ | He lifted a heavy barbell. | Il a soulevé une lourde barre.
+kettlebell | kettlebell | n | B2 | /ˈketlbel/ | Swing the kettlebell between your legs. | Balance le kettlebell entre tes jambes.
+yoga mat | tapis de yoga | n | A2 | /ˈjəʊɡə mæt/ | Bring your own yoga mat to the class. | Apporte ton propre tapis de yoga au cours.
+punchbag | sac de frappe | n | B2 | /ˈpʌntʃbæɡ/ | He hit the punchbag for twenty minutes. | Il a frappé le sac pendant vingt minutes.
+boxing gloves | gants de boxe | n | B1 | /ˈbɒksɪŋ ɡlʌvz/ | He laced up his boxing gloves. | Il a lacé ses gants de boxe.
+boxing ring | ring de boxe | n | B1 | /ˈbɒksɪŋ rɪŋ/ | The two fighters stepped into the boxing ring. | Les deux boxeurs sont montés sur le ring.
+finishing line | ligne d'arrivée | n | A2 | /ˈfɪnɪʃɪŋ laɪn/ | She was first across the finishing line. | Elle a franchi la ligne d'arrivée en première.
+starting block | starting-block | n | B2 | /ˈstɑːtɪŋ blɒk/ | The sprinters crouched in the starting blocks. | Les sprinteurs se sont accroupis dans les starting-blocks.
+starting gun | pistolet du starter | n | B2 | /ˈstɑːtɪŋ ɡʌn/ | The runners waited for the starting gun. | Les coureurs attendaient le coup de pistolet du départ.
+running track | piste d'athlétisme | n | B1 | /ˈrʌnɪŋ træk/ | They train on the running track every evening. | Ils s'entraînent sur la piste tous les soirs.
+pit stop | arrêt aux stands ; pause rapide | n | B2 | /ˈpɪt stɒp/ | The car lost time in the pit stop. | La voiture a perdu du temps lors de l'arrêt aux stands.
+chequered flag | drapeau à damier | n | C1 | /ˌtʃekəd ˈflæɡ/ | He took the chequered flag in first place. | Il a franchi la ligne en tête sous le drapeau à damier.
+pole position | pole position ; position de tête | n | C1 | /ˈpəʊl pəˌzɪʃn/ | The champion starts from pole position. | Le champion part en pole position.
+home team | équipe qui reçoit | n | B1 | /ˌhəʊm ˈtiːm/ | The home team won three-nil. | L'équipe qui recevait a gagné trois à zéro.
+away team | équipe visiteuse | n | B1 | /əˌweɪ ˈtiːm/ | The away team scored in the last minute. | L'équipe visiteuse a marqué à la dernière minute.
+home ground | stade (de l'équipe), terrain | n | B2 | /ˌhəʊm ˈɡraʊnd/ | They haven't lost at their home ground this season. | Ils n'ont pas perdu à domicile cette saison.
+top scorer | meilleur buteur | n | B1 | /ˌtɒp ˈskɔːrə/ | He finished the season as top scorer. | Il a terminé la saison meilleur buteur.
+transfer fee | indemnité de transfert | n | C1 | /ˈtrænsfɜː fiː/ | The club paid a record transfer fee. | Le club a payé une indemnité de transfert record.
+cycling helmet | casque de vélo | n | A2 | /ˈsaɪklɪŋ ˌhelmɪt/ | Always wear a cycling helmet. | Porte toujours un casque de vélo.
+paddleboard | planche de paddle | n | B2 | /ˈpædlbɔːd/ | We hired paddleboards at the lake. | Nous avons loué des planches de paddle au lac.
+climbing wall | mur d'escalade | n | B1 | /ˈklaɪmɪŋ wɔːl/ | The school has an indoor climbing wall. | L'école a un mur d'escalade couvert.
+bungee jump | saut à l'élastique | n | B1 | /ˈbʌndʒi dʒʌmp/ | He did a bungee jump from a bridge. | Il a fait un saut à l'élastique depuis un pont.
+record-breaking | record, qui bat tous les records | adj | B2 | /ˈrekɔːd ˌbreɪkɪŋ/ | It was a record-breaking summer for tourism. | Ce fut un été record pour le tourisme.
+to make a comeback | faire un retour, revenir | expr | B2 | /meɪk ə ˈkʌmbæk/ | The singer is trying to make a comeback. | Le chanteur essaie de faire son retour.
+to take the lead | prendre la tête, mener | expr | B1 | /teɪk ðə ˈliːd/ | Our team needs to take the lead before half-time. | Notre équipe doit prendre la tête avant la mi-temps.
+to come first | arriver premier | expr | A2 | /kʌm ˈfɜːst/ | She always comes first in the school race. | Elle arrive toujours première à la course de l'école.
+to set a record | établir un record | expr | B2 | /set ə ˈrekɔːd/ | She set a new world record in the marathon. | Elle a établi un nouveau record du monde au marathon.
+to do yoga | faire du yoga | expr | A2 | /duː ˈjəʊɡə/ | I do yoga twice a week to relax. | Je fais du yoga deux fois par semaine pour me détendre.
+in shape | en forme | adj | B1 | /ɪn ˈʃeɪp/ | I walk every day to stay in shape. | Je marche tous les jours pour rester en forme.
+out of shape | pas en forme | adj | B1 | /ˌaʊt əv ˈʃeɪp/ | I'm out of shape after the holidays. | Je ne suis pas en forme après les vacances.
+goal kick | coup de pied de but, six mètres | n | B2 | /ˈɡəʊl kɪk/ | The ball went out, so it's a goal kick. | Le ballon est sorti, donc c'est un six mètres.
+throw-in | rentrée de touche | n | B1 | /ˈθrəʊ ɪn/ | The referee gave a throw-in to the blue team. | L'arbitre a accordé une touche à l'équipe bleue.
+centre-back | défenseur central | n | B2 | /ˌsentə ˈbæk/ | He plays as a centre-back for his club. | Il joue défenseur central dans son club.
+backhand | revers | n | B2 | /ˈbækhænd/ | Her backhand is her best shot. | Son revers est son meilleur coup.
+forehand | coup droit | n | B2 | /ˈfɔːhænd/ | He hit a powerful forehand down the line. | Il a frappé un puissant coup droit le long de la ligne.
+tie-break | jeu décisif | n | B2 | /ˈtaɪ breɪk/ | She won the first set on a tie-break. | Elle a gagné le premier set au jeu décisif.
+ball boy | ramasseur de balles | n | B1 | /ˈbɔːl bɔɪ/ | The ball boy ran to pick up the ball. | Le ramasseur de balles a couru ramasser la balle.
+backstroke | dos crawlé | n | B1 | /ˈbækstrəʊk/ | She won the 100 metres backstroke. | Elle a gagné le 100 mètres dos.
+butterfly stroke | brasse papillon | n | B2 | /ˈbʌtəflaɪ strəʊk/ | The butterfly stroke is the hardest to learn. | La brasse papillon est la nage la plus difficile à apprendre.
+black belt | ceinture noire | n | B1 | /ˌblæk ˈbelt/ | My sister has a black belt in judo. | Ma sœur est ceinture noire de judo.
+curling | curling | n | B2 | /ˈkɜːlɪŋ/ | Curling is very popular in Scotland and Canada. | Le curling est très populaire en Écosse et au Canada.
+caddie | caddie (golf) | n | B2 | /ˈkædi/ | The caddie carried the golfer's clubs. | Le caddie portait les clubs du golfeur.
+stirrup | étrier | n | B2 | /ˈstɪrəp/ | Put your foot in the stirrup and climb up. | Mets le pied dans l'étrier et monte.
+peloton | peloton | n | C1 | /ˈpelətɒn/ | The peloton is ten minutes behind the leaders. | Le peloton a dix minutes de retard sur les échappés.
+time trial | contre-la-montre | n | B2 | /ˈtaɪm ˌtraɪəl/ | He won the time trial by eight seconds. | Il a gagné le contre-la-montre avec huit secondes d'avance.
+staunch supporter | fidèle partisan, supporter inconditionnel | n | C1 | /ˌstɔːntʃ səˈpɔːtə/ | She has always been a staunch supporter of the club. | Elle a toujours été une supportrice inconditionnelle du club.
+playoff | match de barrage ; phase finale | n | B2 | /ˈpleɪɒf/ | The team reached the playoffs for the first time. | L'équipe s'est qualifiée pour la phase finale pour la première fois.
+rookie | débutant, bleu | n | B2 | /ˈrʊki/ | The rookie scored in his first game. | Le débutant a marqué dès son premier match.
+home run | coup de circuit (baseball) | n | B2 | /ˌhəʊm ˈrʌn/ | He hit a home run in the last inning. | Il a réussi un coup de circuit à la dernière manche.
 `,
 );

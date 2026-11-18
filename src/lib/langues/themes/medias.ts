@@ -315,5 +315,159 @@ syndication | syndication, diffusion simultanée | n | C2 | /ˌsɪndɪˈkeɪʃn/
 megaphone | mégaphone | n | C1 | /ˈmeɡəfəʊn/ | The organiser spoke through a megaphone. | L'organisateur parlait dans un mégaphone.
 tidings | nouvelles | n | C2 | /ˈtaɪdɪŋz/ | The messenger brought glad tidings. | Le messager a apporté de bonnes nouvelles.
 suspenseful | plein de suspense | adj | C1 | /səˈspensfl/ | The film is very suspenseful. | Le film est plein de suspense.
+phone case | coque de téléphone | n | A2 | /ˈfəʊn keɪs/ | My phone case saved the screen when I dropped it. | Ma coque a sauvé l'écran quand j'ai fait tomber mon téléphone.
+screen protector | protection d'écran | n | B1 | /ˈskriːn prəˌtektə/ | Put a screen protector on your new phone. | Mets une protection d'écran sur ton nouveau téléphone.
+phone charger | chargeur de téléphone | n | A2 | /ˈfəʊn ˌtʃɑːdʒə/ | Have you seen my phone charger? | Tu as vu mon chargeur de téléphone ?
+charging cable | câble de charge | n | B1 | /ˈtʃɑːdʒɪŋ ˌkeɪbl/ | This charging cable is too short. | Ce câble de charge est trop court.
+SIM card | carte SIM | n | A2 | /ˈsɪm kɑːd/ | I bought a local SIM card at the airport. | J'ai acheté une carte SIM locale à l'aéroport.
+memory card | carte mémoire | n | A2 | /ˈmeməri kɑːd/ | The camera's memory card is full. | La carte mémoire de l'appareil photo est pleine.
+landline | téléphone fixe, ligne fixe | n | B1 | /ˈlændlaɪn/ | Call me on the landline, the signal is bad here. | Appelle-moi sur le fixe, il n'y a pas de réseau ici.
+area code | indicatif (régional) | n | B1 | /ˈeəriə kəʊd/ | What's the area code for Manchester? | Quel est l'indicatif de Manchester ?
+answerphone | répondeur | n | B1 | /ˈɑːnsəfəʊn/ | I left a message on her answerphone. | J'ai laissé un message sur son répondeur.
+voice message | message vocal | n | A2 | /ˈvɔɪs ˌmesɪdʒ/ | She sent me a long voice message. | Elle m'a envoyé un long message vocal.
+contact list | liste de contacts | n | A2 | /ˈkɒntækt lɪst/ | Add my number to your contact list. | Ajoute mon numéro à ta liste de contacts.
+home screen | écran d'accueil | n | B1 | /ˈhəʊm skriːn/ | Move the app to your home screen. | Déplace l'application sur ton écran d'accueil.
+lock screen | écran de verrouillage | n | B1 | /ˈlɒk skriːn/ | A photo of her cat is on her lock screen. | Une photo de son chat est sur son écran de verrouillage.
+passcode | code d'accès | n | B1 | /ˈpɑːskəʊd/ | Enter your six-digit passcode. | Saisis ton code à six chiffres.
+face recognition | reconnaissance faciale | n | B2 | /ˈfeɪs rekəɡˌnɪʃn/ | The phone unlocks with face recognition. | Le téléphone se déverrouille par reconnaissance faciale.
+app store | boutique d'applications | n | B1 | /ˈæp stɔː/ | Download the game from the app store. | Télécharge le jeu sur la boutique d'applications.
+software update | mise à jour logicielle | n | B1 | /ˈsɒftweər ˌʌpdeɪt/ | Install the software update tonight. | Installe la mise à jour ce soir.
+operating system | système d'exploitation | n | B2 | /ˈɒpəreɪtɪŋ ˌsɪstəm/ | Which operating system does your laptop run? | Quel système d'exploitation ton portable utilise-t-il ?
+user account | compte utilisateur | n | B1 | /ˈjuːzər əˌkaʊnt/ | Create a user account to save your progress. | Crée un compte utilisateur pour enregistrer ta progression.
+junk mail | courrier indésirable, prospectus | n | B1 | /ˈdʒʌŋk meɪl/ | The letterbox is full of junk mail. | La boîte aux lettres est pleine de prospectus.
+spam folder | dossier des indésirables | n | B1 | /ˈspæm ˌfəʊldə/ | Check your spam folder if the email hasn't arrived. | Regarde dans tes indésirables si le mail n'est pas arrivé.
+reply all | répondre à tous | n | B1 | /rɪˌplaɪ ˈɔːl/ | Don't click reply all unless everyone needs to know. | Ne clique pas sur « répondre à tous » sauf si tout le monde doit savoir.
+subject line | objet (d'un courriel) | n | B1 | /ˈsʌbdʒɪkt laɪn/ | Write a clear subject line. | Écris un objet clair.
+mailing list | liste de diffusion | n | B2 | /ˈmeɪlɪŋ lɪst/ | Sign up to our mailing list for news. | Inscris-toi à notre liste de diffusion pour les nouvelles.
+search bar | barre de recherche | n | A2 | /ˈsɜːtʃ bɑː/ | Type the name into the search bar. | Tape le nom dans la barre de recherche.
+search results | résultats de recherche | n | B1 | /ˈsɜːtʃ rɪˌzʌlts/ | Our shop appears first in the search results. | Notre boutique apparaît en premier dans les résultats de recherche.
+web browser | navigateur internet | n | B1 | /ˈweb ˌbraʊzə/ | Open the link in your web browser. | Ouvre le lien dans ton navigateur.
+browser history | historique de navigation | n | B2 | /ˈbraʊzə ˌhɪstəri/ | You can delete your browser history. | Tu peux effacer ton historique de navigation.
+drop-down menu | menu déroulant | n | B1 | /ˌdrɒp daʊn ˈmenjuː/ | Choose your country from the drop-down menu. | Choisis ton pays dans le menu déroulant.
+toolbar | barre d'outils | n | B1 | /ˈtuːlbɑː/ | The save button is on the toolbar. | Le bouton d'enregistrement est dans la barre d'outils.
+scroll bar | barre de défilement | n | B2 | /ˈskrəʊl bɑː/ | Drag the scroll bar down. | Fais glisser la barre de défilement vers le bas.
+tick box | case à cocher | n | B1 | /ˈtɪk bɒks/ | Click the tick box to accept the conditions. | Coche la case pour accepter les conditions.
+dialog box | boîte de dialogue | n | B2 | /ˈdaɪəlɒɡ bɒks/ | A dialog box asked me to confirm. | Une boîte de dialogue m'a demandé de confirmer.
+error message | message d'erreur | n | B1 | /ˈerə ˌmesɪdʒ/ | I keep getting an error message. | J'ai sans arrêt un message d'erreur.
+file name | nom de fichier | n | A2 | /ˈfaɪl neɪm/ | Give the document a clear file name. | Donne un nom de fichier clair au document.
+file format | format de fichier | n | B2 | /ˈfaɪl ˌfɔːmæt/ | Save it in a file format everyone can open. | Enregistre-le dans un format que tout le monde peut ouvrir.
+word processor | logiciel de traitement de texte | n | B2 | /ˈwɜːd ˌprəʊsesə/ | She typed her essay on a word processor. | Elle a tapé sa dissertation sur un traitement de texte.
+screen saver | économiseur d'écran | n | B1 | /ˈskriːn ˌseɪvə/ | The screen saver shows photos of the sea. | L'économiseur d'écran montre des photos de la mer.
+desktop computer | ordinateur de bureau | n | A2 | /ˌdesktɒp kəmˈpjuːtə/ | I work on a desktop computer at the office. | Au bureau, je travaille sur un ordinateur fixe.
+docking station | station d'accueil | n | B2 | /ˈdɒkɪŋ ˌsteɪʃn/ | Plug your laptop into the docking station. | Branche ton portable sur la station d'accueil.
+external hard drive | disque dur externe | n | B1 | /ɪkˌstɜːnl ˈhɑːd draɪv/ | Back up your photos on an external hard drive. | Sauvegarde tes photos sur un disque dur externe.
+flash drive | clé USB | n | B1 | /ˈflæʃ draɪv/ | Copy the files onto a flash drive. | Copie les fichiers sur une clé USB.
+ink cartridge | cartouche d'encre | n | A2 | /ˈɪŋk ˌkɑːtrɪdʒ/ | The printer needs a new ink cartridge. | L'imprimante a besoin d'une nouvelle cartouche d'encre.
+earbuds | écouteurs intra-auriculaires | n | B1 | /ˈɪəbʌdz/ | She listens to podcasts with her earbuds. | Elle écoute des podcasts avec ses écouteurs.
+noise-cancelling headphones | casque à réduction de bruit | n | B2 | /ˌnɔɪz ˌkænsəlɪŋ ˈhedfəʊnz/ | Noise-cancelling headphones are great on planes. | Un casque à réduction de bruit, c'est génial en avion.
+sound system | sono, chaîne hi-fi | n | B1 | /ˈsaʊnd ˌsɪstəm/ | The hall has a powerful sound system. | La salle a une sono puissante.
+smart speaker | enceinte connectée | n | B1 | /ˌsmɑːt ˈspiːkə/ | Ask the smart speaker what the weather will be. | Demande à l'enceinte connectée quel temps il fera.
+smart TV | télévision connectée | n | B1 | /ˌsmɑːt tiː ˈviː/ | You can watch streaming services on a smart TV. | On peut regarder des plateformes de streaming sur une télé connectée.
+TV licence | redevance audiovisuelle | n | B2 | /ˌtiː ˈviː ˌlaɪsns/ | In Britain, you need a TV licence to watch live TV. | Au Royaume-Uni, il faut payer la redevance pour regarder la télé en direct.
+season finale | dernier épisode de la saison | n | B2 | /ˈsiːzn fɪˌnɑːli/ | The season finale ended on a cliffhanger. | Le dernier épisode de la saison s'est terminé sur un suspense.
+reality show | émission de téléréalité | n | B1 | /riˈæləti ʃəʊ/ | She was a contestant on a reality show. | Elle a participé à une émission de téléréalité.
+talent show | concours de talents | n | B1 | /ˈtælənt ʃəʊ/ | He won a singing talent show at fifteen. | Il a gagné un concours de chant à quinze ans.
+cookery programme | émission de cuisine | n | B1 | /ˈkʊkəri ˌprəʊɡræm/ | My mum loves cookery programmes. | Ma mère adore les émissions de cuisine.
+newsflash | flash d'information | n | B2 | /ˈnjuːzflæʃ/ | A newsflash interrupted the film. | Un flash d'information a interrompu le film.
+agony aunt | courrier du cœur (rubrique) | n | C1 | /ˈæɡəni ɑːnt/ | She wrote to the agony aunt for advice. | Elle a écrit au courrier du cœur pour avoir des conseils.
+crossword puzzle | mots croisés | n | A2 | /ˈkrɒswɜːd ˌpʌzl/ | My grandfather does the crossword puzzle every day. | Mon grand-père fait les mots croisés tous les jours.
+comic strip | bande dessinée (en quelques cases) | n | B1 | /ˈkɒmɪk strɪp/ | The newspaper has a comic strip on the back page. | Le journal publie une bande dessinée en dernière page.
+photo opportunity | occasion de se faire photographier | n | C1 | /ˈfəʊtəʊ ɒpəˌtjuːnəti/ | The visit was just a photo opportunity for the minister. | La visite n'était qu'une séance photo pour le ministre.
+red carpet | tapis rouge | n | B1 | /ˌred ˈkɑːpɪt/ | The stars walked down the red carpet. | Les vedettes ont monté les marches du tapis rouge.
+social network | réseau social | n | A2 | /ˌsəʊʃl ˈnetwɜːk/ | Which social network do you use most? | Quel réseau social utilises-tu le plus ?
+friend request | demande d'ami | n | A2 | /ˈfrend rɪˌkwest/ | I got a friend request from an old classmate. | J'ai reçu une demande d'ami d'un ancien camarade.
+viral video | vidéo virale | n | B1 | /ˌvaɪrəl ˈvɪdiəʊ/ | His dancing cat became a viral video. | Son chat qui danse est devenu une vidéo virale.
+trending topic | sujet tendance | n | B2 | /ˌtrendɪŋ ˈtɒpɪk/ | The match was the top trending topic all evening. | Le match a été le premier sujet tendance de la soirée.
+password reset | réinitialisation du mot de passe | n | B1 | /ˈpɑːswɜːd ˌriːset/ | Click the link to request a password reset. | Clique sur le lien pour réinitialiser ton mot de passe.
+deepfake | hypertrucage, deepfake | n | C1 | /ˈdiːpfeɪk/ | The video of the president was a deepfake. | La vidéo du président était un hypertrucage.
+fibre optic | fibre optique | adj | B2 | /ˌfaɪbər ˈɒptɪk/ | We've just had fibre optic broadband installed. | On vient de nous installer la fibre optique.
+mobile data | données mobiles | n | B1 | /ˌməʊbaɪl ˈdeɪtə/ | Turn off your mobile data abroad. | Désactive tes données mobiles à l'étranger.
+roaming charges | frais d'itinérance | n | B2 | /ˈrəʊmɪŋ ˌtʃɑːdʒɪz/ | Watch out for roaming charges outside Europe. | Attention aux frais d'itinérance hors d'Europe.
+pay-as-you-go | prépayé, sans abonnement | adj | B1 | /ˌpeɪ əz jə ˈɡəʊ/ | I have a pay-as-you-go phone. | J'ai un téléphone avec carte prépayée.
+flight mode | mode avion | n | A2 | /ˈflaɪt məʊd/ | Switch your phone to flight mode. | Mets ton téléphone en mode avion.
+silent mode | mode silencieux | n | A2 | /ˈsaɪlənt məʊd/ | Put your phone on silent mode during the film. | Mets ton téléphone en mode silencieux pendant le film.
+battery life | autonomie (de la batterie) | n | B1 | /ˈbætəri laɪf/ | This phone has excellent battery life. | Ce téléphone a une excellente autonomie.
+factory reset | réinitialisation d'usine | n | B2 | /ˈfæktəri ˌriːset/ | Do a factory reset before selling your phone. | Fais une réinitialisation d'usine avant de vendre ton téléphone.
+cracked screen | écran fissuré | n | A2 | /ˌkrækt ˈskriːn/ | I can still use it despite the cracked screen. | Je peux encore m'en servir malgré l'écran fissuré.
+ringtone | sonnerie (de téléphone) | n | A2 | /ˈrɪŋtəʊn/ | I don't like your new ringtone. | Je n'aime pas ta nouvelle sonnerie.
+missed call | appel manqué | n | A2 | /ˌmɪst ˈkɔːl/ | I have three missed calls from my mum. | J'ai trois appels manqués de ma mère.
+chat room | salon de discussion | n | B1 | /ˈtʃæt ruːm/ | They met in an online chat room. | Ils se sont rencontrés dans un salon de discussion en ligne.
+forum | forum | n | B1 | /ˈfɔːrəm/ | I asked the question on a cycling forum. | J'ai posé la question sur un forum de cyclisme.
+mouse mat | tapis de souris | n | A2 | /ˈmaʊs mæt/ | The mouse works better on a mouse mat. | La souris marche mieux sur un tapis.
+adaptor | adaptateur | n | B1 | /əˈdæptə/ | You'll need an adaptor for British sockets. | Il te faudra un adaptateur pour les prises britanniques.
+spam | pourriel, spam | n | B1 | /spæm/ | Most of my emails are spam. | La plupart de mes courriels sont des pourriels.
+settings | réglages, paramètres | n | A2 | /ˈsetɪŋz/ | Change the language in the settings. | Change la langue dans les paramètres.
+to unsubscribe | se désabonner | v | B1 | /ˌʌnsəbˈskraɪb/ | Click here to unsubscribe from the newsletter. | Clique ici pour te désabonner de la lettre d'information.
+to restart | redémarrer | v | A2 | /ˌriːˈstɑːt/ | Restart your computer after the update. | Redémarre ton ordinateur après la mise à jour.
+tab | onglet | n | B1 | /tæb/ | I have twenty tabs open in my browser. | J'ai vingt onglets ouverts dans mon navigateur.
+memory stick | clé USB | n | A2 | /ˈmeməri stɪk/ | Save the presentation on a memory stick. | Enregistre la présentation sur une clé USB.
+smartwatch | montre connectée | n | A2 | /ˈsmɑːtwɒtʃ/ | My smartwatch counts my steps. | Ma montre connectée compte mes pas.
+3D printer | imprimante 3D | n | B1 | /ˌθriː ˈdiː ˌprɪntə/ | The school has bought a 3D printer. | L'école a acheté une imprimante 3D.
+augmented reality | réalité augmentée | n | B2 | /ɔːɡˌmentɪd riˈæləti/ | The museum uses augmented reality to bring history to life. | Le musée utilise la réalité augmentée pour faire revivre l'histoire.
+telegraph | télégraphe | n | B2 | /ˈtelɪɡrɑːf/ | News used to travel by telegraph. | Autrefois, les nouvelles voyageaient par télégraphe.
+to dub | doubler (un film) ; surnommer | v | B2 | /dʌb/ | The film was dubbed into French. | Le film a été doublé en français.
+fax | fax, télécopie | n | A2 | /fæks/ | Send me the contract by fax. | Envoie-moi le contrat par fax.
+cache | cache, mémoire cache ; cachette | n | C1 | /kæʃ/ | Clear the cache if the page doesn't load. | Vide le cache si la page ne se charge pas.
+telegram | télégramme | n | B1 | /ˈtelɪɡræm/ | She received a telegram announcing his arrival. | Elle a reçu un télégramme annonçant son arrivée.
+cassette | cassette | n | A2 | /kəˈset/ | He still listens to music on cassette. | Il écoute encore de la musique sur cassette.
+modem | modem | n | B1 | /ˈməʊdem/ | Restart the modem if the internet is slow. | Redémarre le modem si internet est lent.
+informational | informatif, d'information | adj | C1 | /ˌɪnfəˈmeɪʃənl/ | The leaflet is purely informational. | La brochure est purement informative.
+byte | octet | n | B2 | /baɪt/ | A byte is made up of eight bits. | Un octet est composé de huit bits.
+miniseries | mini-série | n | B2 | /ˈmɪnisɪəriːz/ | The novel was adapted into a miniseries. | Le roman a été adapté en mini-série.
+videotape | cassette vidéo | n | B1 | /ˈvɪdiəʊteɪp/ | We have hours of family films on videotape. | Nous avons des heures de films de famille sur cassette vidéo.
+telecast | émission télévisée | n | C2 | /ˈtelɪkɑːst/ | The match was shown in a live telecast. | Le match a été retransmis en direct à la télévision.
+sidebar | encadré ; barre latérale | n | C1 | /ˈsaɪdbɑː/ | The links are in the sidebar on the left. | Les liens sont dans la barre latérale à gauche.
+flak | critiques ; tirs antiaériens | n | C1 | /flæk/ | The minister took a lot of flak for the decision. | Le ministre a essuyé beaucoup de critiques pour cette décision.
+stylus | stylet | n | C1 | /ˈstaɪləs/ | You can draw on the tablet with a stylus. | On peut dessiner sur la tablette avec un stylet.
+sandbox | bac à sable ; environnement de test | n | C1 | /ˈsændbɒks/ | Developers test new code in a sandbox. | Les développeurs testent le nouveau code dans un environnement isolé.
+usability | facilité d'utilisation, ergonomie | n | C1 | /ˌjuːzəˈbɪləti/ | The new website was tested for usability. | On a testé l'ergonomie du nouveau site.
+episodic | épisodique ; en épisodes | adj | C2 | /ˌepɪˈsɒdɪk/ | The series has an episodic structure. | La série a une structure en épisodes.
+privacy policy | politique de confidentialité | n | B2 | /ˈprɪvəsi ˌpɒləsi/ | Read the privacy policy before you sign up. | Lis la politique de confidentialité avant de t'inscrire.
+mainframe | ordinateur central | n | C2 | /ˈmeɪnfreɪm/ | The bank's data is stored on a mainframe. | Les données de la banque sont stockées sur un ordinateur central.
+to parse | analyser (grammaticalement, informatiquement) | v | C2 | /pɑːz/ | The program parses the text into words. | Le programme analyse le texte et le découpe en mots.
+misrepresentation | déformation (des faits), présentation trompeuse | n | C1 | /ˌmɪsreprɪzenˈteɪʃn/ | The article was a misrepresentation of my views. | L'article déformait mes opinions.
+communicator | communicant | n | C1 | /kəˈmjuːnɪkeɪtə/ | She is an excellent communicator. | C'est une excellente communicante.
+emulator | émulateur | n | C2 | /ˈemjuleɪtə/ | He plays old games on an emulator. | Il joue à de vieux jeux sur un émulateur.
+printable | imprimable | adj | B2 | /ˈprɪntəbl/ | Download the printable version of the form. | Télécharge la version imprimable du formulaire.
+tuner | tuner, syntoniseur ; accordeur | n | C1 | /ˈtjuːnə/ | A piano tuner comes once a year. | Un accordeur de piano vient une fois par an.
+e-book | livre numérique | n | A2 | /ˈiː bʊk/ | I read e-books on my tablet. | Je lis des livres numériques sur ma tablette.
+audiobook | livre audio | n | A2 | /ˈɔːdiəʊbʊk/ | I listen to audiobooks in the car. | J'écoute des livres audio en voiture.
+book review | critique littéraire | n | B1 | /ˈbʊk rɪˌvjuː/ | She writes book reviews for a newspaper. | Elle écrit des critiques littéraires pour un journal.
+hands-free | mains libres | adj | B1 | /ˌhændz ˈfriː/ | Use a hands-free kit when you drive. | Utilise un kit mains libres quand tu conduis.
+high-profile | très médiatisé, en vue | adj | C1 | /ˌhaɪ ˈprəʊfaɪl/ | It was a high-profile court case. | C'était un procès très médiatisé.
+to top up your phone | recharger son forfait, son crédit | expr | B1 | /tɒp ʌp jə ˈfəʊn/ | I need to top up my phone before the trip. | Je dois recharger mon crédit avant le voyage.
+to return a call | rappeler (quelqu'un) | expr | B1 | /rɪˌtɜːn ə ˈkɔːl/ | I'm sorry I didn't return your call yesterday. | Désolé de ne pas t'avoir rappelé hier.
+to leave a message | laisser un message | expr | A2 | /liːv ə ˈmesɪdʒ/ | Please leave a message after the tone. | Veuillez laisser un message après le bip.
+to surf the internet | surfer sur internet | expr | A2 | /sɜːf ði ˈɪntənet/ | He spends hours surfing the internet. | Il passe des heures à surfer sur internet.
+to change the channel | changer de chaîne | expr | A2 | /tʃeɪndʒ ðə ˈtʃænl/ | Don't change the channel, I'm watching this! | Ne change pas de chaîne, je regarde ça !
+to turn up the volume | monter le son | expr | A2 | /tɜːn ʌp ðə ˈvɒljuːm/ | Turn up the volume, I can't hear. | Monte le son, je n'entends rien.
+to turn down the volume | baisser le son | expr | A2 | /tɜːn daʊn ðə ˈvɒljuːm/ | Please turn down the volume, the baby's asleep. | Baisse le son, s'il te plaît, le bébé dort.
+to make an announcement | faire une annonce | expr | B1 | /meɪk ən əˈnaʊnsmənt/ | The captain will make an announcement shortly. | Le commandant va faire une annonce sous peu.
+to save a file | enregistrer un fichier | expr | A2 | /seɪv ə ˈfaɪl/ | Don't forget to save the file before closing it. | N'oublie pas d'enregistrer le fichier avant de le fermer.
+to gain access | accéder à, obtenir l'accès | expr | B2 | /ɡeɪn ˈækses/ | The hackers managed to gain access to the files. | Les pirates ont réussi à accéder aux fichiers.
+to post a photo | publier une photo | expr | A2 | /pəʊst ə ˈfəʊtəʊ/ | Please don't post a photo of me online. | S'il te plaît, ne publie pas de photo de moi en ligne.
+speaking | c'est moi (au téléphone) | expr | B1 | /ˈspiːkɪŋ/ | Can I speak to Sarah, please? — Speaking. | Je pourrais parler à Sarah, s'il vous plaît ? — C'est moi.
+who's calling | c'est de la part de qui ? | expr | B1 | /ˌhuːz ˈkɔːlɪŋ/ | May I ask who's calling? | C'est de la part de qui ?
+can I take a message | je peux prendre un message ? | expr | B1 | /kən aɪ ˌteɪk ə ˈmesɪdʒ/ | She's out at the moment; can I take a message? | Elle est sortie pour le moment ; je peux prendre un message ?
+I'll put you through | je vous le passe, je vous mets en relation | expr | B2 | /aɪl ˌpʊt juː ˈθruː/ | Hold on, I'll put you through to the sales department. | Ne quittez pas, je vous passe le service commercial.
+the line is busy | la ligne est occupée | expr | B1 | /ðə ˈlaɪn ɪz ˈbɪzi/ | I tried to call, but the line is busy. | J'ai essayé d'appeler, mais la ligne est occupée.
+wrong number | faux numéro | n | A2 | /ˌrɒŋ ˈnʌmbə/ | Sorry, you've got the wrong number. | Désolé, vous avez fait un faux numéro.
+misprint | coquille, faute d'impression | n | C1 | /ˈmɪsprɪnt/ | There's a misprint on the first page. | Il y a une coquille à la première page.
+to rename | renommer | v | B1 | /ˌriːˈneɪm/ | Right-click on the file to rename it. | Fais un clic droit sur le fichier pour le renommer.
+cell phone | téléphone portable (US) | n | A1 | /ˈsel fəʊn/ | Please turn off your cell phone during the show. | Merci d'éteindre votre portable pendant le spectacle.
+toll-free | gratuit (numéro de téléphone) (US) | adj | B2 | /ˌtəʊl ˈfriː/ | Call our toll-free number. | Appelez notre numéro gratuit.
+freephone | numéro vert, appel gratuit | adj | B2 | /ˈfriːfəʊn/ | Call the freephone number for advice. | Appelez le numéro vert pour obtenir des conseils.
+hold the line | ne quittez pas | expr | B1 | /ˌhəʊld ðə ˈlaɪn/ | Please hold the line, I'll put you through. | Ne quittez pas, je vous mets en relation.
+to get in touch | prendre contact | expr | B1 | /ɡet ɪn ˈtʌtʃ/ | Get in touch if you need anything. | Contacte-moi si tu as besoin de quoi que ce soit.
+on the phone | au téléphone | adv | A1 | /ɒn ðə ˈfəʊn/ | Sorry, I'm on the phone. | Désolé, je suis au téléphone.
+on TV | à la télé | adv | A1 | /ɒn ˌtiː ˈviː/ | What's on TV tonight? | Qu'est-ce qu'il y a à la télé ce soir ?
+on the radio | à la radio | adv | A1 | /ɒn ðə ˈreɪdiəʊ/ | I heard the news on the radio. | J'ai entendu la nouvelle à la radio.
+on hold | en attente | adj | B2 | /ɒn ˈhəʊld/ | I've been on hold for twenty minutes! | Ça fait vingt minutes que je suis en attente !
+in the spotlight | sous les projecteurs | adj | B2 | /ɪn ðə ˈspɒtlaɪt/ | After the final, the young player was in the spotlight. | Après la finale, le jeune joueur était sous les projecteurs.
+out of print | épuisé (livre) | adj | C1 | /ˌaʊt əv ˈprɪnt/ | This book has been out of print for years. | Ce livre est épuisé depuis des années.
+by post | par la poste | adv | A2 | /baɪ ˈpəʊst/ | We'll send you the tickets by post. | Nous vous enverrons les billets par la poste.
+CD | CD, disque compact | n | A1 | /ˌsiː ˈdiː/ | I bought her a CD for her birthday. | Je lui ai acheté un CD pour son anniversaire.
+printout | impression, sortie papier | n | B1 | /ˈprɪntaʊt/ | Bring a printout of your ticket. | Apportez une impression de votre billet.
+dialogue | dialogue | n | B1 | /ˈdaɪəlɒɡ/ | The film has very little dialogue. | Le film comporte très peu de dialogues.
 `,
 );

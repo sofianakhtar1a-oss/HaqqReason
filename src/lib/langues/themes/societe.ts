@@ -455,5 +455,67 @@ plebiscite | plébiscite | n | C2 | /ˈplebɪsaɪt/ | The people voted in a pleb
 stratification | stratification | n | C2 | /ˌstrætɪfɪˈkeɪʃn/ | Social stratification is rigid there. | La stratification sociale y est rigide.
 traditionalist | traditionaliste | n | C2 | /trəˈdɪʃənəlɪst/ | Traditionalists opposed the reform. | Les traditionalistes se sont opposés à la réforme.
 tripartite | tripartite | adj | C2 | /traɪˈpɑːtaɪt/ | They signed a tripartite agreement. | Ils ont signé un accord tripartite.
+ballot box | urne | n | B1 | /ˈbælət bɒks/ | The voters put their papers in the ballot box. | Les électeurs ont glissé leur bulletin dans l'urne.
+hung parliament | parlement sans majorité | n | C1 | /ˌhʌŋ ˈpɑːləmənt/ | The election produced a hung parliament. | Les élections ont donné un parlement sans majorité.
+backbencher | simple député | n | C1 | /ˌbækˈbentʃə/ | Several backbenchers voted against the government. | Plusieurs simples députés ont voté contre le gouvernement.
+Secretary of State | ministre (britannique), secrétaire d'État (américain) | n | C1 | /ˌsekrətri əv ˈsteɪt/ | The Secretary of State for Education announced new reforms. | Le ministre de l'Éducation a annoncé de nouvelles réformes.
+Member of Parliament | député | n | B2 | /ˌmembər əv ˈpɑːləmənt/ | She was elected Member of Parliament at thirty. | Elle a été élue députée à trente ans.
+House of Commons | Chambre des communes | n | B2 | /ˌhaʊs əv ˈkɒmənz/ | The bill was debated in the House of Commons. | Le projet de loi a été débattu à la Chambre des communes.
+think tank | groupe de réflexion | n | C1 | /ˈθɪŋk tæŋk/ | A think tank published a report on housing. | Un groupe de réflexion a publié un rapport sur le logement.
+by-election | élection partielle | n | C1 | /ˈbaɪ ɪˌlekʃn/ | A by-election was held after the MP resigned. | Une élection partielle a eu lieu après la démission du député.
+general election | élections législatives | n | B2 | /ˌdʒenrəl ɪˈlekʃn/ | A general election must be held every five years. | Des élections législatives doivent avoir lieu tous les cinq ans.
+floating voter | électeur indécis | n | C1 | /ˌfləʊtɪŋ ˈvəʊtə/ | Both parties are chasing the floating voters. | Les deux partis courtisent les électeurs indécis.
+socialist | socialiste | n | B2 | /ˈsəʊʃəlɪst/ | He was a lifelong socialist. | Il a été socialiste toute sa vie.
+communist | communiste | n | B2 | /ˈkɒmjənɪst/ | Her grandfather was a communist in his youth. | Son grand-père était communiste dans sa jeunesse.
+naturalisation | naturalisation | n | C1 | /ˌnætʃrəlaɪˈzeɪʃn/ | She applied for naturalisation after ten years. | Elle a demandé la naturalisation au bout de dix ans.
+ministry | ministère | n | B2 | /ˈmɪnɪstri/ | She works at the Ministry of Health. | Elle travaille au ministère de la Santé.
+chamber | chambre (assemblée, salle) | n | B2 | /ˈtʃeɪmbə/ | The bill passed in both chambers of parliament. | Le projet de loi a été adopté par les deux chambres.
+democrat | démocrate | n | B2 | /ˈdeməkræt/ | He describes himself as a convinced democrat. | Il se décrit comme un démocrate convaincu.
+inauguration | investiture, inauguration | n | C1 | /ɪˌnɔːɡjəˈreɪʃn/ | The president's inauguration takes place in January. | L'investiture du président a lieu en janvier.
+prefecture | préfecture | n | C1 | /ˈpriːfektʃə/ | Japan is divided into forty-seven prefectures. | Le Japon est divisé en quarante-sept préfectures.
+alderman | conseiller municipal (anciennement) | n | C2 | /ˈɔːldəmən/ | The alderman opened the new library. | Le conseiller municipal a inauguré la nouvelle bibliothèque.
+plenary | plénier | adj | C2 | /ˈpliːnəri/ | The decision was taken at a plenary session. | La décision a été prise en séance plénière.
+unitary | unitaire | adj | C2 | /ˈjuːnɪtri/ | France is a unitary state. | La France est un État unitaire.
+rabble | populace, cohue | n | C2 | /ˈræbl/ | A rabble gathered outside the palace. | Une cohue s'est rassemblée devant le palais.
+cannibalism | cannibalisme | n | C2 | /ˈkænɪbəlɪzəm/ | The explorers wrote about cannibalism. | Les explorateurs ont écrit sur le cannibalisme.
+to rehabilitate | réhabiliter, réinsérer | v | C1 | /ˌriːəˈbɪlɪteɪt/ | Prisons should try to rehabilitate offenders. | Les prisons devraient chercher à réinsérer les délinquants.
+authoritarianism | autoritarisme | n | C2 | /ɔːˌθɒrɪˈteəriənɪzəm/ | The writer warns against authoritarianism. | L'écrivain met en garde contre l'autoritarisme.
+birth certificate | acte de naissance | n | B1 | /ˈbɜːθ səˌtɪfɪkət/ | You need a copy of your birth certificate. | Il te faut une copie de ton acte de naissance.
+death certificate | acte de décès | n | B2 | /ˈdeθ səˌtɪfɪkət/ | The doctor signed the death certificate. | Le médecin a signé l'acte de décès.
+marriage certificate | acte de mariage | n | B2 | /ˈmærɪdʒ səˌtɪfɪkət/ | Bring your marriage certificate to the appointment. | Apporte ton acte de mariage au rendez-vous.
+passport photo | photo d'identité | n | A2 | /ˈpɑːspɔːt ˌfəʊtəʊ/ | You can get passport photos taken at the post office. | On peut faire des photos d'identité à la poste.
+proof of address | justificatif de domicile | n | B1 | /ˌpruːf əv əˈdres/ | The bank asked for proof of address. | La banque a demandé un justificatif de domicile.
+registration form | formulaire d'inscription | n | A2 | /ˌredʒɪˈstreɪʃn fɔːm/ | Fill in the registration form online. | Remplis le formulaire d'inscription en ligne.
+deterrence | dissuasion | n | C1 | /dɪˈterəns/ | Nuclear deterrence kept the peace for decades. | La dissuasion nucléaire a maintenu la paix pendant des décennies.
+senatorial | sénatorial | adj | C2 | /ˌsenəˈtɔːriəl/ | He ran in the senatorial election. | Il s'est présenté aux élections sénatoriales.
+proletariat | prolétariat | n | C2 | /ˌprəʊləˈteəriət/ | Marx wrote about the proletariat. | Marx a écrit sur le prolétariat.
+mistreatment | mauvais traitements | n | C1 | /ˌmɪsˈtriːtmənt/ | The charity fights the mistreatment of animals. | L'association lutte contre la maltraitance animale.
+misogynistic | misogyne | adj | C1 | /mɪˌsɒdʒɪˈnɪstɪk/ | The comedian was criticised for misogynistic jokes. | L'humoriste a été critiqué pour ses blagues misogynes.
+federalism | fédéralisme | n | C2 | /ˈfedərəlɪzəm/ | Federalism gives power to the regions. | Le fédéralisme donne du pouvoir aux régions.
+old-age | de la vieillesse | adj | B2 | /ˌəʊld ˈeɪdʒ/ | She lives on her old-age pension. | Elle vit de sa pension de retraite.
+Green Party | parti écologiste | n | B2 | /ˌɡriːn ˈpɑːti/ | She votes for the Green Party. | Elle vote pour les écologistes.
+to pay your respects | présenter ses condoléances, rendre un dernier hommage | expr | C1 | /peɪ jə rɪˈspekts/ | Hundreds came to pay their respects to the old imam. | Des centaines de personnes sont venues rendre un dernier hommage au vieil imam.
+to pay tribute to | rendre hommage à | expr | B2 | /peɪ ˈtrɪbjuːt tə/ | The film pays tribute to the nurses of the pandemic. | Le film rend hommage aux infirmières de la pandémie.
+to win votes | gagner des voix | expr | B2 | /wɪn ˈvəʊts/ | The party is trying to win votes in the countryside. | Le parti essaie de gagner des voix à la campagne.
+to raise awareness | sensibiliser | expr | B2 | /reɪz əˈweənəs/ | The campaign aims to raise awareness of food waste. | La campagne vise à sensibiliser au gaspillage alimentaire.
+Thanksgiving | Thanksgiving, fête de l'Action de grâce (US) | n | B1 | /ˌθæŋksˈɡɪvɪŋ/ | Americans eat turkey at Thanksgiving. | Les Américains mangent de la dinde à Thanksgiving.
+Halloween | Halloween | n | A2 | /ˌhæləʊˈiːn/ | The children dressed up as ghosts for Halloween. | Les enfants se sont déguisés en fantômes pour Halloween.
+Independence Day | fête de l'Indépendance (US, 4 juillet) | n | B1 | /ˌɪndɪˈpendəns deɪ/ | There are fireworks everywhere on Independence Day. | Il y a des feux d'artifice partout le jour de la fête de l'Indépendance.
+religious freedom | liberté religieuse | n | B2 | /rɪˌlɪdʒəs ˈfriːdəm/ | The constitution guarantees religious freedom. | La constitution garantit la liberté religieuse.
+to hold an election | organiser une élection | expr | B2 | /həʊld ən ɪˈlekʃn/ | The country will hold an election in May. | Le pays organisera une élection en mai.
+to sign a petition | signer une pétition | expr | B1 | /saɪn ə pəˈtɪʃn/ | Thousands of people signed a petition to save the park. | Des milliers de personnes ont signé une pétition pour sauver le parc.
+to launch a campaign | lancer une campagne | expr | B2 | /lɔːntʃ ə kæmˈpeɪn/ | The charity launched a campaign against food waste. | L'association a lancé une campagne contre le gaspillage alimentaire.
+to take the floor | prendre la parole | expr | C1 | /teɪk ðə ˈflɔː/ | The mayor will take the floor after lunch. | Le maire prendra la parole après le déjeuner.
+to take a vote | procéder à un vote | expr | B2 | /teɪk ə ˈvəʊt/ | Let's take a vote on the new name. | Votons pour le nouveau nom.
+to take office | entrer en fonction | expr | C1 | /teɪk ˈɒfɪs/ | The new president will take office in January. | Le nouveau président entrera en fonction en janvier.
+in favour of | en faveur de, pour | prep | B1 | /ɪn ˈfeɪvər əv/ | Most people are in favour of the new park. | La plupart des gens sont pour le nouveau parc.
+in public | en public | adv | B1 | /ɪn ˈpʌblɪk/ | He's shy and hates speaking in public. | Il est timide et déteste parler en public.
+in private | en privé | adv | B1 | /ɪn ˈpraɪvət/ | Can I speak to you in private? | Je peux te parler en privé ?
+vast majority | grande majorité | n | B2 | /ˌvɑːst məˈdʒɒrəti/ | The vast majority of students passed. | La grande majorité des élèves a réussi.
+key role | rôle clé | n | B2 | /ˌkiː ˈrəʊl/ | Teachers have a key role in society. | Les enseignants ont un rôle clé dans la société.
+to conduct a survey | réaliser une enquête | expr | B2 | /kənˌdʌkt ə ˈsɜːveɪ/ | The council will conduct a survey of local residents. | La mairie va réaliser une enquête auprès des habitants.
+to have an impact on | avoir un impact sur | expr | B2 | /hæv ən ˈɪmpækt ɒn/ | Social media have a big impact on young people. | Les réseaux sociaux ont un grand impact sur les jeunes.
+to bridge the gap | combler le fossé | expr | C1 | /ˌbrɪdʒ ðə ˈɡæp/ | The project aims to bridge the gap between rich and poor. | Le projet vise à combler le fossé entre riches et pauvres.
+to make a contribution | apporter sa contribution | expr | B2 | /meɪk ə ˌkɒntrɪˈbjuːʃn/ | Everyone can make a contribution to the project. | Chacun peut apporter sa contribution au projet.
 `,
 );

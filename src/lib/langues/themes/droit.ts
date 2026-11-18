@@ -384,5 +384,97 @@ adjudication | jugement, arbitrage | n | C2 | /əˌdʒuːdɪˈkeɪʃn/ | The cas
 culpability | culpabilité | n | C2 | /ˌkʌlpəˈbɪləti/ | He admitted his culpability. | Il a reconnu sa culpabilité.
 domicile | domicile | n | C2 | /ˈdɒmɪsaɪl/ | Please state your place of domicile. | Veuillez indiquer votre lieu de domicile.
 to quash | annuler, casser ; étouffer | v | C2 | /kwɒʃ/ | The court quashed the conviction. | La cour a annulé la condamnation.
+hit-and-run | délit de fuite | n | B2 | /ˌhɪt ən ˈrʌn/ | The police are investigating a hit-and-run. | La police enquête sur un délit de fuite.
+drink-driving | conduite en état d'ivresse | n | B2 | /ˌdrɪŋk ˈdraɪvɪŋ/ | Drink-driving causes many deaths on the roads. | La conduite en état d'ivresse cause de nombreux morts sur les routes.
+speeding | excès de vitesse | n | B1 | /ˈspiːdɪŋ/ | He was fined for speeding. | Il a eu une amende pour excès de vitesse.
+penalty points | points de pénalité (sur le permis) | n | B2 | /ˈpenəlti pɔɪnts/ | Speeding means three penalty points on your licence. | Un excès de vitesse, c'est trois points en moins sur le permis.
+beyond reasonable doubt | au-delà de tout doute raisonnable | expr | C1 | /bɪˌjɒnd ˌriːznəbl ˈdaʊt/ | The prosecution must prove guilt beyond reasonable doubt. | L'accusation doit prouver la culpabilité au-delà de tout doute raisonnable.
+litigant | partie (à un procès), plaideur | n | C2 | /ˈlɪtɪɡənt/ | Each litigant presented their own evidence. | Chaque partie a présenté ses propres preuves.
+injunction | injonction, ordonnance | n | C1 | /ɪnˈdʒʌŋkʃn/ | The court issued an injunction to stop the building work. | Le tribunal a rendu une ordonnance pour arrêter les travaux.
+small claims court | tribunal des petits litiges | n | C1 | /ˌsmɔːl ˈkleɪmz kɔːt/ | He took the builder to the small claims court. | Il a poursuivi l'artisan devant le tribunal des petits litiges.
+magistrates' court | tribunal de première instance | n | C1 | /ˈmædʒɪstreɪts kɔːt/ | Minor offences are heard in a magistrates' court. | Les délits mineurs sont jugés par un tribunal de première instance.
+criminal record | casier judiciaire | n | B2 | /ˌkrɪmɪnl ˈrekɔːd/ | He has no criminal record. | Il a un casier judiciaire vierge.
+hijacking | détournement (d'avion, de véhicule) | n | B2 | /ˈhaɪdʒækɪŋ/ | The hijacking of the plane lasted ten hours. | Le détournement de l'avion a duré dix heures.
+stalking | harcèlement (traque) | n | B2 | /ˈstɔːkɪŋ/ | Stalking is a serious criminal offence. | Le harcèlement par traque est une infraction pénale grave.
+copyright infringement | violation du droit d'auteur | n | C1 | /ˈkɒpiraɪt ɪnˌfrɪndʒmənt/ | Sharing films online can be copyright infringement. | Partager des films en ligne peut constituer une violation du droit d'auteur.
+custody battle | bataille pour la garde (des enfants) | n | C1 | /ˈkʌstədi ˌbætl/ | Their divorce turned into a bitter custody battle. | Leur divorce s'est transformé en âpre bataille pour la garde.
+divorce settlement | accord de divorce | n | C1 | /dɪˈvɔːs ˌsetlmənt/ | She kept the house in the divorce settlement. | Elle a gardé la maison dans l'accord de divorce.
+prenuptial agreement | contrat de mariage | n | C1 | /priːˌnʌpʃl əˈɡriːmənt/ | They signed a prenuptial agreement before the wedding. | Ils ont signé un contrat de mariage avant la cérémonie.
+tenancy agreement | bail, contrat de location | n | B2 | /ˈtenənsi əˌɡriːmənt/ | Read the tenancy agreement before you sign. | Lis le contrat de location avant de signer.
+repossession | saisie (d'un bien) | n | C1 | /ˌriːpəˈzeʃn/ | They faced the repossession of their home. | Ils étaient menacés de saisie de leur maison.
+law enforcement | forces de l'ordre, application de la loi | n | C1 | /ˈlɔː ɪnˌfɔːsmənt/ | Law enforcement agencies are working together. | Les services chargés de faire respecter la loi travaillent ensemble.
+herein | ci-inclus, dans les présentes | adv | C2 | /ˌhɪərˈɪn/ | The conditions stated herein apply to all users. | Les conditions énoncées ici s'appliquent à tous les utilisateurs.
+writ | assignation, ordonnance | n | C2 | /rɪt/ | He was served with a writ for libel. | Il a reçu une assignation pour diffamation.
+to nab | pincer, choper | v | C1 | /næb/ | The police nabbed the thief at the station. | La police a pincé le voleur à la gare.
+custodial sentence | peine de prison ferme | n | C2 | /kʌˌstəʊdiəl ˈsentəns/ | He was given a custodial sentence. | Il a été condamné à de la prison ferme.
+criminology | criminologie | n | C1 | /ˌkrɪmɪˈnɒlədʒi/ | She studied criminology at university. | Elle a étudié la criminologie à l'université.
+enforcer | personne chargée de faire respecter (la loi, les règles) | n | C2 | /ɪnˈfɔːsə/ | The referee is the enforcer of the rules. | L'arbitre est celui qui fait respecter les règles.
+confiscation | confiscation | n | C1 | /ˌkɒnfɪˈskeɪʃn/ | The court ordered the confiscation of his assets. | Le tribunal a ordonné la confiscation de ses biens.
+accuser | accusateur | n | C1 | /əˈkjuːzə/ | The accused never met his accuser. | L'accusé n'a jamais rencontré son accusateur.
+constabulary | police (d'un comté) | n | C2 | /kənˈstæbjələri/ | The local constabulary investigated the theft. | La police du comté a enquêté sur le vol.
+clemency | clémence, grâce | n | C2 | /ˈklemənsi/ | The prisoner appealed for clemency. | Le prisonnier a demandé la grâce.
+constitutionality | constitutionnalité | n | C2 | /ˌkɒnstɪˌtjuːʃəˈnæləti/ | The court will rule on the law's constitutionality. | La cour se prononcera sur la constitutionnalité de la loi.
+building regulations | normes de construction | n | C1 | /ˈbɪldɪŋ reɡjʊˌleɪʃnz/ | The extension must meet building regulations. | L'extension doit respecter les normes de construction.
+planning permission | permis de construire | n | B2 | /ˈplænɪŋ pəˌmɪʃn/ | We need planning permission for the garage. | Il nous faut un permis de construire pour le garage.
+crime scene | scène de crime | n | B2 | /ˈkraɪm siːn/ | Nobody is allowed near the crime scene. | Personne n'a le droit d'approcher de la scène de crime.
+crime wave | vague de criminalité | n | C1 | /ˈkraɪm weɪv/ | The town is suffering a crime wave. | La ville connaît une vague de criminalité.
+armed robbery | vol à main armée | n | B2 | /ˌɑːmd ˈrɒbəri/ | He was jailed for armed robbery. | Il a été emprisonné pour vol à main armée.
+bank robbery | braquage de banque | n | B1 | /ˈbæŋk ˌrɒbəri/ | The film is about a bank robbery. | Le film raconte un braquage de banque.
+car theft | vol de voiture | n | B1 | /ˈkɑː θeft/ | Car theft has fallen in recent years. | Les vols de voitures ont baissé ces dernières années.
+knife crime | délits commis à l'arme blanche | n | C1 | /ˈnaɪf kraɪm/ | Knife crime is rising among teenagers. | Les violences à l'arme blanche augmentent chez les adolescents.
+street crime | délinquance de rue | n | B2 | /ˈstriːt kraɪm/ | More police patrols reduced street crime. | Davantage de patrouilles ont fait reculer la délinquance de rue.
+petty crime | petite délinquance | n | C1 | /ˌpeti ˈkraɪm/ | Most petty crime goes unpunished. | La plupart des petits délits restent impunis.
+organised crime | crime organisé | n | B2 | /ˌɔːɡənaɪzd ˈkraɪm/ | The police are fighting organised crime. | La police lutte contre le crime organisé.
+white-collar crime | délinquance en col blanc | n | C1 | /ˌwaɪt kɒlə ˈkraɪm/ | Fraud is a typical white-collar crime. | La fraude est un délit typique de la délinquance en col blanc.
+identity fraud | usurpation d'identité | n | B2 | /aɪˈdentəti frɔːd/ | Shred your old bank statements to prevent identity fraud. | Déchiquette tes vieux relevés pour éviter l'usurpation d'identité.
+insurance fraud | fraude à l'assurance | n | C1 | /ɪnˈʃʊərəns frɔːd/ | He was jailed for insurance fraud. | Il a été emprisonné pour fraude à l'assurance.
+tax fraud | fraude fiscale | n | B2 | /ˈtæks frɔːd/ | The businessman was accused of tax fraud. | L'homme d'affaires a été accusé de fraude fiscale.
+drug dealer | trafiquant de drogue, dealer | n | B1 | /ˈdrʌɡ ˌdiːlə/ | The drug dealer was arrested outside the school. | Le dealer a été arrêté devant l'école.
+getaway car | voiture des fuyards | n | B2 | /ˈɡetəweɪ kɑː/ | The robbers fled in a getaway car. | Les braqueurs se sont enfuis en voiture.
+informer | indicateur, informateur | n | C1 | /ɪnˈfɔːmə/ | A police informer gave them the address. | Un indicateur leur a donné l'adresse.
+prime suspect | suspect numéro un | n | B2 | /ˌpraɪm ˈsʌspekt/ | The husband became the prime suspect. | Le mari est devenu le suspect numéro un.
+identity parade | séance d'identification | n | C1 | /aɪˈdentəti pəˌreɪd/ | The witness picked him out at an identity parade. | Le témoin l'a reconnu lors d'une séance d'identification.
+mugshot | photo d'identité judiciaire | n | B2 | /ˈmʌɡʃɒt/ | His mugshot was shown on the news. | Sa photo d'identité judiciaire a été diffusée au journal.
+house arrest | assignation à résidence | n | C1 | /ˈhaʊs əˌrest/ | The opposition leader is under house arrest. | Le chef de l'opposition est assigné à résidence.
+electronic tag | bracelet électronique | n | C1 | /ɪˌlektrɒnɪk ˈtæɡ/ | He has to wear an electronic tag. | Il doit porter un bracelet électronique.
+suspended sentence | peine avec sursis | n | C1 | /səˌspendɪd ˈsentəns/ | She was given a suspended sentence. | Elle a été condamnée à une peine avec sursis.
+prison sentence | peine de prison | n | B2 | /ˈprɪzn ˌsentəns/ | He faces a long prison sentence. | Il risque une longue peine de prison.
+prison cell | cellule (de prison) | n | B1 | /ˈprɪzn sel/ | He spent ten years in a prison cell. | Il a passé dix ans dans une cellule.
+prison officer | surveillant de prison | n | B2 | /ˈprɪzn ˌɒfɪsə/ | The prison officer locked the door. | Le surveillant a verrouillé la porte.
+cellmate | codétenu | n | C1 | /ˈselmeɪt/ | He became friends with his cellmate. | Il s'est lié d'amitié avec son codétenu.
+jailbreak | évasion (de prison) | n | C1 | /ˈdʒeɪlbreɪk/ | Three prisoners escaped in a daring jailbreak. | Trois détenus se sont évadés lors d'une évasion audacieuse.
+parole board | commission des libérations conditionnelles | n | C2 | /pəˈrəʊl bɔːd/ | The parole board refused his release. | La commission a refusé sa libération conditionnelle.
+probation officer | agent de probation | n | C1 | /prəˈbeɪʃn ˌɒfɪsə/ | He meets his probation officer every week. | Il voit son agent de probation chaque semaine.
+young offender | jeune délinquant | n | C1 | /ˌjʌŋ əˈfendə/ | Young offenders are given a second chance. | Les jeunes délinquants ont droit à une seconde chance.
+youth court | tribunal pour enfants | n | C1 | /ˈjuːθ kɔːt/ | The fifteen-year-old appeared in a youth court. | L'adolescent de quinze ans a comparu devant le tribunal pour enfants.
+legal fees | frais d'avocat, frais de justice | n | B2 | /ˌliːɡl ˈfiːz/ | The legal fees cost more than the house. | Les frais de justice ont coûté plus cher que la maison.
+court case | affaire (judiciaire), procès | n | B1 | /ˈkɔːt keɪs/ | The court case lasted two years. | Le procès a duré deux ans.
+court hearing | audience (au tribunal) | n | B2 | /ˈkɔːt ˌhɪərɪŋ/ | The next court hearing is in March. | La prochaine audience a lieu en mars.
+witness box | barre des témoins | n | C1 | /ˈwɪtnəs bɒks/ | She stepped into the witness box. | Elle s'est présentée à la barre des témoins.
+public gallery | tribune du public | n | C1 | /ˌpʌblɪk ˈɡæləri/ | Journalists sat in the public gallery. | Les journalistes étaient assis dans la tribune du public.
+defence team | équipe de la défense | n | B2 | /dɪˈfens tiːm/ | The defence team asked for more time. | La défense a demandé un délai supplémentaire.
+closing speech | plaidoirie finale, réquisitoire | n | C1 | /ˌkləʊzɪŋ ˈspiːtʃ/ | The lawyer gave a powerful closing speech. | L'avocat a prononcé une plaidoirie finale percutante.
+sentencing | prononcé de la peine | n | C1 | /ˈsentənsɪŋ/ | Sentencing will take place next week. | La peine sera prononcée la semaine prochaine.
+wrongful arrest | arrestation abusive | n | C1 | /ˌrɒŋfl əˈrest/ | He sued the police for wrongful arrest. | Il a poursuivi la police pour arrestation abusive.
+false imprisonment | séquestration, détention arbitraire | n | C2 | /ˌfɔːls ɪmˈprɪznmənt/ | He was accused of false imprisonment. | Il a été accusé de séquestration.
+compensation claim | demande d'indemnisation | n | C1 | /kɒmpenˈseɪʃn kleɪm/ | She made a compensation claim after the accident. | Elle a déposé une demande d'indemnisation après l'accident.
+restraining order | ordonnance d'éloignement | n | C1 | /rɪˈstreɪnɪŋ ˌɔːdə/ | The judge issued a restraining order against him. | Le juge a prononcé une ordonnance d'éloignement contre lui.
+police caution | avertissement (de la police), rappel à la loi | n | C1 | /pəˌliːs ˈkɔːʃn/ | First-time offenders may get a police caution. | Les primo-délinquants peuvent recevoir un simple rappel à la loi.
+remand centre | centre de détention provisoire | n | C2 | /rɪˈmɑːnd ˌsentə/ | He was held in a remand centre before the trial. | Il a été placé en détention provisoire avant le procès.
+to make a complaint | porter plainte, faire une réclamation | expr | B1 | /meɪk ə kəmˈpleɪnt/ | I'd like to make a complaint about the noise. | Je voudrais faire une réclamation au sujet du bruit.
+to do time | faire de la prison | expr | C1 | /duː ˈtaɪm/ | He had to do time for fraud. | Il a dû faire de la prison pour fraude.
+to break the law | enfreindre la loi | expr | B1 | /breɪk ðə ˈlɔː/ | Driving without insurance is breaking the law. | Conduire sans assurance, c'est enfreindre la loi.
+to break the rules | enfreindre le règlement | expr | B1 | /breɪk ðə ˈruːlz/ | Players who break the rules are sent off. | Les joueurs qui enfreignent le règlement sont expulsés.
+to pay a fine | payer une amende | expr | B1 | /peɪ ə ˈfaɪn/ | You'll have to pay a fine if you park here. | Tu devras payer une amende si tu te gares ici.
+law and order | ordre public | expr | B2 | /ˌlɔːr ən ˈɔːdə/ | The new mayor promised to restore law and order. | Le nouveau maire a promis de rétablir l'ordre public.
+to pass a law | voter une loi | expr | B2 | /pɑːs ə ˈlɔː/ | Parliament passed a law against plastic bags. | Le Parlement a voté une loi contre les sacs plastique.
+to pass judgement | porter un jugement | expr | C1 | /pɑːs ˈdʒʌdʒmənt/ | Don't pass judgement until you know the facts. | Ne porte pas de jugement avant de connaître les faits.
+to commit a crime | commettre un crime | expr | B1 | /kəˈmɪt ə ˈkraɪm/ | He was too young to commit a crime alone. | Il était trop jeune pour commettre un crime seul.
+to take effect | prendre effet, entrer en vigueur | expr | B2 | /teɪk ɪˈfekt/ | The new rules take effect in January. | Les nouvelles règles entrent en vigueur en janvier.
+to take an oath | prêter serment | expr | C1 | /teɪk ən ˈəʊθ/ | Witnesses must take an oath before speaking. | Les témoins doivent prêter serment avant de parler.
+against the law | illégal, interdit par la loi | adj | B1 | /əˌɡenst ðə ˈlɔː/ | Using your phone while driving is against the law. | Téléphoner en conduisant est interdit par la loi.
+in prison | en prison | adv | A2 | /ɪn ˈprɪzn/ | He spent five years in prison. | Il a passé cinq ans en prison.
+on the run | en fuite, en cavale | adj | B2 | /ɒn ðə ˈrʌn/ | The prisoner has been on the run for a month. | Le prisonnier est en cavale depuis un mois.
+under arrest | en état d'arrestation | adj | B1 | /ˌʌndər əˈrest/ | You're under arrest! | Vous êtes en état d'arrestation !
 `,
 );

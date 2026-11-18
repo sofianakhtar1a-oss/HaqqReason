@@ -589,5 +589,137 @@ permeable | perméable | adj | C2 | /ˈpɜːmiəbl/ | Sandy soil is permeable. |
 spaceflight | vol spatial | n | C2 | /ˈspeɪsflaɪt/ | Human spaceflight is expensive. | Les vols spatiaux habités coûtent cher.
 supercomputer | superordinateur | n | C1 | /ˈsuːpəkəmpjuːtə/ | The forecast is run on a supercomputer. | Les prévisions sont calculées sur un superordinateur.
 mineralogy | minéralogie | n | C2 | /ˌmɪnəˈrælədʒi/ | Al-Biruni wrote about mineralogy. | Al-Biruni a écrit sur la minéralogie.
+mitochondrion | mitochondrie | n | C1 | /ˌmaɪtəʊˈkɒndriən/ | Each mitochondrion produces energy for the cell. | Chaque mitochondrie produit de l'énergie pour la cellule.
+cell membrane | membrane cellulaire | n | B2 | /ˈsel ˌmembreɪn/ | The cell membrane controls what enters the cell. | La membrane cellulaire contrôle ce qui entre dans la cellule.
+cytoplasm | cytoplasme | n | C1 | /ˈsaɪtəʊplæzəm/ | The nucleus floats in the cytoplasm. | Le noyau baigne dans le cytoplasme.
+ribosome | ribosome | n | C2 | /ˈraɪbəsəʊm/ | Proteins are made by the ribosomes. | Les protéines sont fabriquées par les ribosomes.
+reproductive system | appareil reproducteur | n | B2 | /ˌriːprəˈdʌktɪv ˌsɪstəm/ | Pupils study the human reproductive system in biology. | En biologie, les élèves étudient l'appareil reproducteur humain.
+stamen | étamine | n | C1 | /ˈsteɪmən/ | The stamen produces the pollen. | L'étamine produit le pollen.
+sepal | sépale | n | C2 | /ˈsepl/ | The sepals protect the flower bud. | Les sépales protègent le bouton floral.
+invertebrate | invertébré | n | B2 | /ɪnˈvɜːtɪbrət/ | Worms and insects are invertebrates. | Les vers et les insectes sont des invertébrés.
+marsupial | marsupial | n | C1 | /mɑːˈsuːpiəl/ | Kangaroos and koalas are marsupials. | Les kangourous et les koalas sont des marsupiaux.
+pupa | nymphe, chrysalide | n | C1 | /ˈpjuːpə/ | The caterpillar turns into a pupa. | La chenille se transforme en chrysalide.
+heredity | hérédité | n | C1 | /həˈredəti/ | Heredity explains why children look like their parents. | L'hérédité explique pourquoi les enfants ressemblent à leurs parents.
+symbiosis | symbiose | n | C1 | /ˌsɪmbaɪˈəʊsɪs/ | The clownfish lives in symbiosis with the anemone. | Le poisson-clown vit en symbiose avec l'anémone.
+decomposer | décomposeur | n | C1 | /ˌdiːkəmˈpəʊzə/ | Fungi are decomposers that break down dead plants. | Les champignons sont des décomposeurs qui dégradent les plantes mortes.
+solute | soluté | n | C2 | /ˈsɒljuːt/ | Salt is the solute and water is the solvent. | Le sel est le soluté et l'eau le solvant.
+litmus paper | papier de tournesol | n | B2 | /ˈlɪtməs ˌpeɪpə/ | Litmus paper turns red in acid. | Le papier de tournesol rougit dans un acide.
+reactant | réactif | n | C1 | /riˈæktənt/ | The reactants are mixed in a test tube. | Les réactifs sont mélangés dans une éprouvette.
+ion | ion | n | C1 | /ˈaɪɒn/ | An ion is an atom with an electric charge. | Un ion est un atome porteur d'une charge électrique.
+isotope | isotope | n | C1 | /ˈaɪsətəʊp/ | Carbon-14 is a radioactive isotope. | Le carbone 14 est un isotope radioactif.
+valency | valence | n | C2 | /ˈveɪlənsi/ | Oxygen has a valency of two. | L'oxygène a une valence de deux.
+covalent bond | liaison covalente | n | C1 | /kəʊˌveɪlənt ˈbɒnd/ | Atoms in a water molecule share a covalent bond. | Les atomes d'une molécule d'eau partagent une liaison covalente.
+ionic bond | liaison ionique | n | C1 | /aɪˌɒnɪk ˈbɒnd/ | Salt is held together by ionic bonds. | Le sel est maintenu par des liaisons ioniques.
+non-metal | non-métal | n | B2 | /ˌnɒn ˈmetl/ | Sulphur is a non-metal. | Le soufre est un non-métal.
+joule | joule | n | C1 | /dʒuːl/ | Energy is measured in joules. | L'énergie se mesure en joules.
+newton | newton | n | C1 | /ˈnjuːtn/ | Force is measured in newtons. | La force se mesure en newtons.
+ampere | ampère | n | C1 | /ˈæmpeə/ | Electric current is measured in amperes. | Le courant électrique se mesure en ampères.
+insulator | isolant | n | B2 | /ˈɪnsjuleɪtə/ | Rubber is a good insulator. | Le caoutchouc est un bon isolant.
+electromagnet | électroaimant | n | C1 | /ɪˌlektrəʊˈmæɡnət/ | An electromagnet only works when the current is on. | Un électroaimant ne fonctionne que si le courant passe.
+sound wave | onde sonore | n | B2 | /ˈsaʊnd weɪv/ | Sound waves travel faster in water than in air. | Les ondes sonores vont plus vite dans l'eau que dans l'air.
+nuclear fission | fission nucléaire | n | C1 | /ˌnjuːkliə ˈfɪʃn/ | Power stations use nuclear fission to make heat. | Les centrales utilisent la fission nucléaire pour produire de la chaleur.
+nuclear fusion | fusion nucléaire | n | C1 | /ˌnjuːkliə ˈfjuːʒn/ | The sun's energy comes from nuclear fusion. | L'énergie du soleil vient de la fusion nucléaire.
+half-life | demi-vie, période radioactive | n | C1 | /ˈhɑːf laɪf/ | The half-life of this isotope is ten years. | La demi-vie de cet isotope est de dix ans.
+loop | boucle | n | B1 | /luːp/ | Tie the string in a loop. | Fais une boucle avec la ficelle.
+alien | extraterrestre | n | B1 | /ˈeɪliən/ | The film is about aliens landing on Earth. | Le film raconte l'arrivée d'extraterrestres sur Terre.
+experimental | expérimental | adj | B2 | /ɪkˌsperɪˈmentl/ | The drug is still at the experimental stage. | Le médicament en est encore au stade expérimental.
+arc | arc (de cercle) | n | B2 | /ɑːk/ | The ball flew through the air in a high arc. | Le ballon a décrit un grand arc dans les airs.
+echo | écho | n | B1 | /ˈekəʊ/ | We heard the echo of our voices in the cave. | Nous entendions l'écho de nos voix dans la grotte.
+reliability | fiabilité | n | B2 | /rɪˌlaɪəˈbɪləti/ | The reliability of the data is uncertain. | La fiabilité des données est incertaine.
+pod | cosse ; capsule | n | B2 | /pɒd/ | Peas grow in pods. | Les petits pois poussent dans des cosses.
+substrate | substrat | n | C2 | /ˈsʌbstreɪt/ | The mushrooms grow on a substrate of straw. | Les champignons poussent sur un substrat de paille.
+rotary | rotatif | adj | C1 | /ˈrəʊtəri/ | Old phones had a rotary dial. | Les vieux téléphones avaient un cadran rotatif.
+biomedical | biomédical | adj | C1 | /ˌbaɪəʊˈmedɪkl/ | She works in biomedical research. | Elle travaille dans la recherche biomédicale.
+instrumentation | instrumentation | n | C2 | /ˌɪnstrəmenˈteɪʃn/ | The aircraft's instrumentation was checked. | L'instrumentation de l'avion a été vérifiée.
+radial | radial | adj | C2 | /ˈreɪdiəl/ | The roads spread out in a radial pattern. | Les routes partent en étoile.
+sectional | partiel ; en coupe | adj | C2 | /ˈsekʃənl/ | The sectional drawing shows the inside of the engine. | Le dessin en coupe montre l'intérieur du moteur.
+rotor | rotor | n | C1 | /ˈrəʊtə/ | The helicopter's rotor began to turn. | Le rotor de l'hélicoptère s'est mis à tourner.
+chloride | chlorure | n | C1 | /ˈklɔːraɪd/ | Sodium chloride is ordinary salt. | Le chlorure de sodium, c'est le sel ordinaire.
+directional | directionnel | adj | C1 | /daɪˈrekʃənl/ | A directional microphone picks up sound from one side. | Un micro directionnel capte le son d'un seul côté.
+payload | charge utile | n | C1 | /ˈpeɪləʊd/ | The rocket carried a payload of satellites. | La fusée transportait une charge utile de satellites.
+spectroscopy | spectroscopie | n | C2 | /spekˈtrɒskəpi/ | Spectroscopy reveals what stars are made of. | La spectroscopie révèle la composition des étoiles.
+transverse | transversal | adj | C2 | /ˈtrænzvɜːs/ | The bridge rests on transverse beams. | Le pont repose sur des poutres transversales.
+silica | silice | n | C2 | /ˈsɪlɪkə/ | Glass is made mainly of silica. | Le verre est fait principalement de silice.
+chevron | chevron | n | C2 | /ˈʃevrən/ | Chevrons on the road show the safe distance between cars. | Des chevrons sur la route indiquent la distance de sécurité.
+tubular | tubulaire | adj | C2 | /ˈtjuːbjələ/ | The chair has a tubular steel frame. | La chaise a une structure en tubes d'acier.
+segmentation | segmentation | n | C2 | /ˌseɡmenˈteɪʃn/ | Market segmentation helps target customers. | La segmentation du marché aide à cibler les clients.
+rotational | de rotation, rotatif | adj | C2 | /rəʊˈteɪʃənl/ | The Earth's rotational speed is slowing very slightly. | La vitesse de rotation de la Terre ralentit très légèrement.
+vertex | sommet (d'un angle, d'une figure) | n | C2 | /ˈvɜːteks/ | A cube has eight vertices. | Un cube a huit sommets.
+medial | médian | adj | C2 | /ˈmiːdiəl/ | The medial ligament of the knee was torn. | Le ligament latéral interne du genou était déchiré.
+topology | topologie | n | C2 | /təˈpɒlədʒi/ | Topology is a branch of mathematics. | La topologie est une branche des mathématiques.
+tracer | traceur | n | C2 | /ˈtreɪsə/ | A radioactive tracer showed the blood flow. | Un traceur radioactif a montré la circulation du sang.
+selector | sélecteur | n | C1 | /sɪˈlektə/ | Turn the selector to the right setting. | Tourne le sélecteur sur le bon réglage.
+palladium | palladium | n | C2 | /pəˈleɪdiəm/ | Palladium is used in catalytic converters. | Le palladium est utilisé dans les pots catalytiques.
+hardness | dureté | n | B2 | /ˈhɑːdnəs/ | Diamond has the highest hardness of any mineral. | Le diamant est le minéral le plus dur.
+capacitor | condensateur | n | C2 | /kəˈpæsɪtə/ | The capacitor stores electrical charge. | Le condensateur stocke la charge électrique.
+dynamo | dynamo | n | B2 | /ˈdaɪnəməʊ/ | The bike lamp is powered by a dynamo. | La lampe du vélo est alimentée par une dynamo.
+cyclic | cyclique | adj | C1 | /ˈsaɪklɪk/ | The economy goes through cyclic changes. | L'économie connaît des variations cycliques.
+supersonic | supersonique | adj | B2 | /ˌsuːpəˈsɒnɪk/ | Concorde was a supersonic aircraft. | Le Concorde était un avion supersonique.
+morphological | morphologique | adj | C2 | /ˌmɔːfəˈlɒdʒɪkl/ | They studied the morphological changes in the fossils. | Ils ont étudié les changements morphologiques des fossiles.
+impedance | impédance | n | C2 | /ɪmˈpiːdns/ | The speaker has an impedance of eight ohms. | L'enceinte a une impédance de huit ohms.
+axial | axial | adj | C2 | /ˈæksiəl/ | The axial tilt of the Earth causes the seasons. | L'inclinaison de l'axe de la Terre provoque les saisons.
+acetate | acétate | n | C2 | /ˈæsɪteɪt/ | The slides were printed on acetate. | Les diapositives étaient imprimées sur acétate.
+conductivity | conductivité | n | C2 | /ˌkɒndʌkˈtɪvəti/ | Copper has high electrical conductivity. | Le cuivre a une grande conductivité électrique.
+chromium | chrome | n | C2 | /ˈkrəʊmiəm/ | Stainless steel contains chromium. | L'acier inoxydable contient du chrome.
+peroxide | peroxyde ; eau oxygénée | n | C1 | /pəˈrɒksaɪd/ | She bleached her hair with peroxide. | Elle s'est décoloré les cheveux à l'eau oxygénée.
+tungsten | tungstène | n | C2 | /ˈtʌŋstən/ | The filament of the bulb is made of tungsten. | Le filament de l'ampoule est en tungstène.
+predictor | prédicteur, indicateur | n | C2 | /prɪˈdɪktə/ | Exam results are a poor predictor of success. | Les résultats d'examens prédisent mal la réussite.
+amplification | amplification | n | C2 | /ˌæmplɪfɪˈkeɪʃn/ | The sound needs some amplification. | Le son a besoin d'un peu d'amplification.
+polynomial | polynôme | n | C2 | /ˌpɒliˈnəʊmiəl/ | Solve the polynomial equation. | Résous l'équation polynomiale.
+manganese | manganèse | n | C2 | /ˈmæŋɡəniːz/ | Manganese is used to make steel. | Le manganèse sert à fabriquer l'acier.
+hologram | hologramme | n | B2 | /ˈhɒləɡræm/ | Banknotes have a hologram to stop forgery. | Les billets portent un hologramme contre la contrefaçon.
+thermodynamics | thermodynamique | n | C2 | /ˌθɜːməʊdaɪˈnæmɪks/ | The laws of thermodynamics describe energy. | Les lois de la thermodynamique décrivent l'énergie.
+sine | sinus (trigonométrie) | n | C2 | /saɪn/ | Calculate the sine of the angle. | Calcule le sinus de l'angle.
+humanoid | humanoïde | adj | C1 | /ˈhjuːmənɔɪd/ | The company builds humanoid robots. | L'entreprise construit des robots humanoïdes.
+conical | conique | adj | C1 | /ˈkɒnɪkl/ | The tent has a conical shape. | La tente a une forme conique.
+percentile | centile | n | C2 | /pəˈsentaɪl/ | His height is in the ninetieth percentile. | Sa taille se situe au quatre-vingt-dixième centile.
+aeronautical | aéronautique | adj | C1 | /ˌeərəˈnɔːtɪkl/ | She studied aeronautical engineering. | Elle a étudié l'ingénierie aéronautique.
+subgroup | sous-groupe | n | C1 | /ˈsʌbɡruːp/ | The results were analysed by subgroup. | Les résultats ont été analysés par sous-groupe.
+transponder | transpondeur | n | C2 | /trænˈspɒndə/ | The plane's transponder was switched off. | Le transpondeur de l'avion était éteint.
+maximal | maximal | adj | C2 | /ˈmæksɪml/ | The machine runs at maximal speed. | La machine tourne à vitesse maximale.
+hertz | hertz | n | C1 | /hɜːts/ | The frequency is measured in hertz. | La fréquence se mesure en hertz.
+ester | ester | n | C2 | /ˈestə/ | Esters give fruit their smell. | Les esters donnent leur odeur aux fruits.
+diode | diode | n | C2 | /ˈdaɪəʊd/ | A light-emitting diode is called an LED. | Une diode électroluminescente s'appelle une LED.
+phenotype | phénotype | n | C2 | /ˈfiːnətaɪp/ | Eye colour is part of the phenotype. | La couleur des yeux fait partie du phénotype.
+holographic | holographique | adj | C2 | /ˌhɒləˈɡræfɪk/ | The card has a holographic image. | La carte porte une image holographique.
+diffraction | diffraction | n | C2 | /dɪˈfrækʃn/ | Diffraction makes light spread out after a narrow gap. | La diffraction fait s'étaler la lumière après une fente étroite.
+magneto | magnéto | n | C2 | /mæɡˈniːtəʊ/ | Old engines were started by a magneto. | Les vieux moteurs démarraient grâce à une magnéto.
+tensor | tenseur | n | C2 | /ˈtensə/ | Physicists use tensors to describe space-time. | Les physiciens utilisent des tenseurs pour décrire l'espace-temps.
+invariant | invariant | adj | C2 | /ɪnˈveəriənt/ | The speed of light is invariant. | La vitesse de la lumière est invariable.
+excitation | excitation (physique) | n | C2 | /ˌeksaɪˈteɪʃn/ | The electrons move to a higher level after excitation. | Les électrons passent à un niveau supérieur après excitation.
+agar | gélose, agar-agar | n | C2 | /ˈeɪɡɑː/ | Bacteria were grown on agar in a dish. | Les bactéries ont été cultivées sur gélose.
+sharpness | netteté ; tranchant | n | B2 | /ˈʃɑːpnəs/ | Adjust the sharpness of the image. | Règle la netteté de l'image.
+resistor | résistance (composant) | n | C2 | /rɪˈzɪstə/ | Add a resistor to limit the current. | Ajoute une résistance pour limiter le courant.
+ohm | ohm | n | C2 | /əʊm/ | Resistance is measured in ohms. | La résistance se mesure en ohms.
+numeric | numérique (en chiffres) | adj | C1 | /njuːˈmerɪk/ | Your password must contain a numeric character. | Ton mot de passe doit contenir un chiffre.
+granular | granuleux, granulaire | adj | C2 | /ˈɡrænjʊlə/ | The sugar has a granular texture. | Le sucre a une texture granuleuse.
+telemetry | télémétrie | n | C2 | /təˈlemətri/ | Telemetry data was sent back from the probe. | Des données de télémétrie ont été renvoyées par la sonde.
+synchronous | synchrone | adj | C2 | /ˈsɪŋkrənəs/ | The two signals are synchronous. | Les deux signaux sont synchrones.
+gestation | gestation | n | C2 | /dʒeˈsteɪʃn/ | An elephant's gestation lasts almost two years. | La gestation de l'éléphante dure presque deux ans.
+Milky Way | Voie lactée | n | B1 | /ˌmɪlki ˈweɪ/ | On a clear night, you can see the Milky Way. | Par une nuit claire, on voit la Voie lactée.
+space shuttle | navette spatiale | n | B1 | /ˈspeɪs ˌʃʌtl/ | The space shuttle carried astronauts into orbit. | La navette spatiale emmenait les astronautes en orbite.
+lunar eclipse | éclipse de lune | n | B2 | /ˌluːnər ɪˈklɪps/ | During a lunar eclipse, the moon turns red. | Pendant une éclipse de lune, la lune devient rouge.
+solar eclipse | éclipse de soleil | n | B2 | /ˌsəʊlər ɪˈklɪps/ | Never look directly at a solar eclipse. | Ne regarde jamais une éclipse de soleil directement.
+nucleic acid | acide nucléique | n | C2 | /njuːˌkliːɪk ˈæsɪd/ | DNA is a nucleic acid. | L'ADN est un acide nucléique.
+quadratic equation | équation du second degré | n | C1 | /kwɒˌdrætɪk ɪˈkweɪʒn/ | Solve the quadratic equation for x. | Résous l'équation du second degré pour trouver x.
+to solidify | (se) solidifier | v | C1 | /səˈlɪdɪfaɪ/ | The lava solidified as it cooled. | La lave s'est solidifiée en refroidissant.
+to smelt | fondre (un minerai) | v | C2 | /smelt/ | Iron ore is smelted in a blast furnace. | Le minerai de fer est fondu dans un haut fourneau.
+maturation | maturation | n | C2 | /ˌmætʃʊˈreɪʃn/ | The cheese needs a long maturation. | Le fromage a besoin d'un long affinage.
+astrophysics | astrophysique | n | C1 | /ˌæstrəʊˈfɪzɪks/ | She has a doctorate in astrophysics. | Elle a un doctorat d'astrophysique.
+methanol | méthanol | n | C2 | /ˈmeθənɒl/ | Methanol is poisonous. | Le méthanol est toxique.
+conduction | conduction | n | C2 | /kənˈdʌkʃn/ | Heat travels through metal by conduction. | La chaleur se propage dans le métal par conduction.
+buoyant | qui flotte ; (fig.) optimiste, ferme | adj | C1 | /ˈbɔɪənt/ | Salt water makes you more buoyant. | L'eau salée aide à flotter.
+polyethylene | polyéthylène | n | C2 | /ˌpɒliˈeθəliːn/ | Plastic bags are made of polyethylene. | Les sacs plastiques sont en polyéthylène.
+centrifugal | centrifuge | adj | C2 | /ˌsentrɪˈfjuːɡl/ | Centrifugal force pushes you outwards. | La force centrifuge te pousse vers l'extérieur.
+blip | bip, signal ; (fig.) petit accroc | n | C1 | /blɪp/ | Last month's fall in sales was just a blip. | La baisse des ventes du mois dernier n'était qu'un accroc passager.
+anaerobic | anaérobie | adj | C2 | /ˌænəˈrəʊbɪk/ | Sprinting is an anaerobic exercise. | Le sprint est un effort anaérobie.
+bionic | bionique | adj | C1 | /baɪˈɒnɪk/ | He was fitted with a bionic arm. | On lui a posé un bras bionique.
+electrostatic | électrostatique | adj | C2 | /ɪˌlektrəʊˈstætɪk/ | Rubbing a balloon creates an electrostatic charge. | Frotter un ballon crée une charge électrostatique.
+selenium | sélénium | n | C2 | /səˈliːniəm/ | Brazil nuts are rich in selenium. | Les noix du Brésil sont riches en sélénium.
+asexual | asexué | adj | C2 | /eɪˈsekʃuəl/ | Some plants use asexual reproduction. | Certaines plantes se reproduisent de manière asexuée.
+determinant | déterminant (facteur) | n | C2 | /dɪˈtɜːmɪnənt/ | Income is a key determinant of health. | Le revenu est un déterminant majeur de la santé.
+cutting-edge | de pointe | adj | B2 | /ˌkʌtɪŋ ˈedʒ/ | The lab uses cutting-edge technology. | Le laboratoire utilise une technologie de pointe.
+low-tech | rudimentaire, peu technologique | adj | C1 | /ˌləʊ ˈtek/ | It's a low-tech solution, but it works. | C'est une solution rudimentaire, mais elle fonctionne.
+to do an experiment | faire une expérience | expr | A2 | /duː ən ɪkˈsperɪmənt/ | We're doing an experiment with magnets. | Nous faisons une expérience avec des aimants.
 `,
 );

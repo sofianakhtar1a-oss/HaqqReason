@@ -1758,5 +1758,124 @@ restful | reposant | adj | C1 | /ˈrestfl/ | We spent a restful weekend in the c
 spiky | hérissé, pointu | adj | C1 | /ˈspaɪki/ | The cactus has spiky leaves. | Le cactus a des feuilles pointues.
 unguarded | non surveillé ; irréfléchi | adj | C2 | /ʌnˈɡɑːdɪd/ | In an unguarded moment, he told the truth. | Dans un moment d'inattention, il a dit la vérité.
 punchy | percutant | adj | C1 | /ˈpʌntʃi/ | Write a punchy headline. | Écris un titre percutant.
+defensive | défensif ; sur la défensive | adj | B2 | /dɪˈfensɪv/ | He gets very defensive when you criticise him. | Il se met tout de suite sur la défensive quand on le critique.
+upcoming | prochain, à venir | adj | B2 | /ˈʌpkʌmɪŋ/ | Here are the dates of our upcoming concerts. | Voici les dates de nos prochains concerts.
+collective | collectif | adj | B2 | /kəˈlektɪv/ | It was a collective decision. | C'était une décision collective.
+dual | double | adj | B2 | /ˈdjuːəl/ | She has dual nationality. | Elle a la double nationalité.
+respective | respectif | adj | B2 | /rɪˈspektɪv/ | They went back to their respective homes. | Ils sont rentrés chacun chez soi.
+institutional | institutionnel | adj | C1 | /ˌɪnstɪˈtjuːʃənl/ | The report points to institutional failures. | Le rapport pointe des défaillances institutionnelles.
+laden with | chargé de | expr | C1 | /ˈleɪdn wɪð/ | The trees were laden with fruit. | Les arbres croulaient sous les fruits.
+needless | inutile, superflu | adj | B2 | /ˈniːdləs/ | The delay caused needless worry. | Le retard a causé une inquiétude inutile.
+unreal | irréel ; incroyable | adj | B2 | /ˌʌnˈrɪəl/ | The whole day felt unreal. | Toute la journée m'a paru irréelle.
+affirmative | affirmatif | adj | C1 | /əˈfɜːmətɪv/ | He gave an affirmative answer. | Il a donné une réponse affirmative.
+quasi | quasi | adj | C2 | /ˈkweɪzaɪ/ | It's a quasi-religious ceremony. | C'est une cérémonie quasi religieuse.
+bouncy | rebondissant ; plein d'entrain | adj | B2 | /ˈbaʊnsi/ | The children jumped on the bouncy castle. | Les enfants sautaient sur le château gonflable.
+hyperbolic | hyperbolique ; exagéré | adj | C2 | /ˌhaɪpəˈbɒlɪk/ | His praise was hyperbolic. | Ses éloges étaient exagérés.
+discriminating | averti, qui a du goût | adj | C1 | /dɪˈskrɪmɪneɪtɪŋ/ | The shop caters for discriminating customers. | La boutique s'adresse à une clientèle avertie.
+cuddly | câlin ; en peluche | adj | B1 | /ˈkʌdli/ | The baby loves her cuddly toy rabbit. | Le bébé adore son lapin en peluche.
+pointy | pointu | adj | B2 | /ˈpɔɪnti/ | The elf had pointy ears. | Le lutin avait les oreilles pointues.
+groovy | super, cool (années 60) | adj | B2 | /ˈɡruːvi/ | My dad still says everything is groovy. | Mon père dit encore que tout est « super cool ».
+jerky | saccadé | adj | C1 | /ˈdʒɜːki/ | The old film has jerky movements. | Le vieux film a des mouvements saccadés.
+steamy | embué, humide | adj | C1 | /ˈstiːmi/ | The bathroom mirror was steamy. | Le miroir de la salle de bains était embué.
+trashy | de mauvaise qualité, vulgaire | adj | B2 | /ˈtræʃi/ | She likes reading trashy novels on holiday. | Elle aime lire des romans de gare en vacances.
+forbidding | rébarbatif, menaçant | adj | C1 | /fəˈbɪdɪŋ/ | The castle looked dark and forbidding. | Le château avait l'air sombre et menaçant.
+teeny | minuscule, tout petit | adj | B2 | /ˈtiːni/ | Just a teeny bit of cake for me, please. | Juste un tout petit bout de gâteau pour moi, s'il te plaît.
+asymmetrical | asymétrique | adj | C1 | /ˌeɪsɪˈmetrɪkl/ | She has an asymmetrical haircut. | Elle a une coupe de cheveux asymétrique.
+squishy | mou, spongieux | adj | B2 | /ˈskwɪʃi/ | The tomatoes have gone squishy. | Les tomates sont devenues molles.
+sleazy | louche, sordide | adj | C1 | /ˈsliːzi/ | They stayed in a sleazy hotel near the port. | Ils ont logé dans un hôtel louche près du port.
+halting | hésitant | adj | C1 | /ˈhɔːltɪŋ/ | He spoke in halting English. | Il parlait un anglais hésitant.
+discerning | averti, perspicace | adj | C1 | /dɪˈsɜːnɪŋ/ | The restaurant attracts discerning diners. | Le restaurant attire une clientèle avertie.
+sparing | économe, mesuré | adj | C1 | /ˈspeərɪŋ/ | Be sparing with the salt. | Sois économe avec le sel.
+snappy | vif, rapide ; chic | adj | C1 | /ˈsnæpi/ | We need a snappy title for the article. | Il nous faut un titre accrocheur pour l'article.
+irreplaceable | irremplaçable | adj | B2 | /ˌɪrɪˈpleɪsəbl/ | The old photos are irreplaceable. | Les vieilles photos sont irremplaçables.
+headless | sans tête | adj | B2 | /ˈhedləs/ | The legend tells of a headless horseman. | La légende parle d'un cavalier sans tête.
+greenish | verdâtre | adj | B2 | /ˈɡriːnɪʃ/ | The water had a greenish colour. | L'eau avait une couleur verdâtre.
+drab | terne, morne | adj | C1 | /dræb/ | The office walls were a drab grey. | Les murs du bureau étaient d'un gris terne.
+dissimilar | différent, dissemblable | adj | C1 | /dɪˈsɪmɪlə/ | The two cases are not dissimilar. | Les deux cas ne sont pas si différents.
+whiteness | blancheur | n | B2 | /ˈwaɪtnəs/ | The whiteness of the snow hurt our eyes. | La blancheur de la neige nous faisait mal aux yeux.
+tasteful | de bon goût | adj | B2 | /ˈteɪstfl/ | The room was decorated in a tasteful way. | La pièce était décorée avec goût.
+silvery | argenté | adj | B2 | /ˈsɪlvəri/ | The lake shone silvery in the moonlight. | Le lac brillait d'un éclat argenté au clair de lune.
+monolithic | monolithique | adj | C2 | /ˌmɒnəˈlɪθɪk/ | The company is a monolithic organisation. | L'entreprise est une organisation monolithique.
+indiscriminate | aveugle, sans distinction | adj | C1 | /ˌɪndɪˈskrɪmɪnət/ | The indiscriminate use of pesticides harms wildlife. | L'usage aveugle des pesticides nuit à la faune.
+whitish | blanchâtre | adj | B2 | /ˈwaɪtɪʃ/ | The sky was a whitish grey. | Le ciel était d'un gris blanchâtre.
+unscathed | indemne | adj | C1 | /ʌnˈskeɪðd/ | The driver escaped unscathed. | Le conducteur s'en est sorti indemne.
+rigidity | rigidité | n | C1 | /rɪˈdʒɪdəti/ | The rigidity of the rules annoyed staff. | La rigidité des règles agaçait le personnel.
+minuscule | minuscule | adj | C1 | /ˈmɪnəskjuːl/ | The print was minuscule. | Les caractères étaient minuscules.
+infrequent | peu fréquent, rare | adj | C1 | /ɪnˈfriːkwənt/ | His visits became increasingly infrequent. | Ses visites se sont faites de plus en plus rares.
+ugliness | laideur | n | B2 | /ˈʌɡlinəs/ | The ugliness of the building shocked visitors. | La laideur du bâtiment choquait les visiteurs.
+nonsensical | absurde, insensé | adj | C1 | /nɒnˈsensɪkl/ | The instructions were nonsensical. | Les instructions étaient absurdes.
+gory | sanglant, gore | adj | C1 | /ˈɡɔːri/ | The film is too gory for children. | Le film est trop sanglant pour les enfants.
+fragility | fragilité | n | C1 | /frəˈdʒɪləti/ | The crisis showed the fragility of the economy. | La crise a montré la fragilité de l'économie.
+faceless | anonyme, sans visage | adj | C1 | /ˈfeɪsləs/ | Decisions are made by faceless bureaucrats. | Les décisions sont prises par des bureaucrates anonymes.
+demented | dément, fou | adj | C1 | /dɪˈmentɪd/ | He was running around like a demented man. | Il courait partout comme un fou.
+avoidable | évitable | adj | B2 | /əˈvɔɪdəbl/ | Most of these accidents were avoidable. | La plupart de ces accidents étaient évitables.
+controllable | contrôlable, maîtrisable | adj | C1 | /kənˈtrəʊləbl/ | The fire is now controllable. | L'incendie est désormais maîtrisable.
+user-friendly | facile à utiliser, convivial | adj | B1 | /ˌjuːzə ˈfrendli/ | The new app is very user-friendly. | La nouvelle appli est très facile à utiliser.
+child-friendly | adapté aux enfants | adj | B1 | /ˌtʃaɪld ˈfrendli/ | We're looking for a child-friendly restaurant. | Nous cherchons un restaurant adapté aux enfants.
+family-friendly | familial, adapté aux familles | adj | B1 | /ˌfæməli ˈfrendli/ | The hotel offers family-friendly activities. | L'hôtel propose des activités pour toute la famille.
+dog-friendly | qui accepte les chiens | adj | B1 | /ˌdɒɡ ˈfrendli/ | The café is dog-friendly. | Le café accepte les chiens.
+time-consuming | qui prend du temps, chronophage | adj | B1 | /ˈtaɪm kənˌsjuːmɪŋ/ | Ironing is very time-consuming. | Le repassage prend énormément de temps.
+labour-saving | qui épargne du travail | adj | C1 | /ˈleɪbə ˌseɪvɪŋ/ | The kitchen is full of labour-saving devices. | La cuisine est pleine d'appareils qui facilitent le travail.
+money-saving | économique, pour économiser | adj | B1 | /ˈmʌni ˌseɪvɪŋ/ | Here are some money-saving tips. | Voici quelques astuces pour économiser.
+life-changing | qui change la vie | adj | B2 | /ˈlaɪf ˌtʃeɪndʒɪŋ/ | Travelling alone was a life-changing experience. | Voyager seul a été une expérience qui m'a transformé.
+mind-blowing | époustouflant | adj | B2 | /ˈmaɪnd ˌbləʊɪŋ/ | The view from the top was mind-blowing. | La vue d'en haut était époustouflante.
+eye-catching | accrocheur, qui attire l'œil | adj | B2 | /ˈaɪ ˌkætʃɪŋ/ | The shop has an eye-catching window display. | La boutique a une vitrine qui attire l'œil.
+eye-watering | exorbitant ; à pleurer | adj | C1 | /ˈaɪ ˌwɔːtərɪŋ/ | The bill came to an eye-watering sum. | La facture s'élevait à une somme exorbitante.
+jaw-dropping | stupéfiant, à couper le souffle | adj | B2 | /ˈdʒɔː ˌdrɒpɪŋ/ | The film has some jaw-dropping special effects. | Le film a des effets spéciaux stupéfiants.
+hair-raising | à faire dresser les cheveux sur la tête | adj | C1 | /ˈheə ˌreɪzɪŋ/ | We had a hair-raising drive down the mountain. | La descente de la montagne en voiture a été terrifiante.
+spine-chilling | à glacer le sang | adj | C1 | /ˈspaɪn ˌtʃɪlɪŋ/ | She told a spine-chilling ghost story. | Elle a raconté une histoire de fantômes à glacer le sang.
+awe-inspiring | impressionnant, grandiose | adj | C1 | /ˈɔː ɪnˌspaɪərɪŋ/ | The cathedral is an awe-inspiring sight. | La cathédrale est un spectacle grandiose.
+thought-provoking | qui fait réfléchir | adj | B2 | /ˈθɔːt prəˌvəʊkɪŋ/ | It's a thought-provoking documentary. | C'est un documentaire qui fait réfléchir.
+world-famous | mondialement connu | adj | B1 | /ˌwɜːld ˈfeɪməs/ | The museum has a world-famous collection. | Le musée possède une collection mondialement connue.
+world-class | de niveau mondial, de classe internationale | adj | B2 | /ˌwɜːld ˈklɑːs/ | The city has world-class universities. | La ville a des universités de niveau mondial.
+first-class | de première classe, excellent | adj | B1 | /ˌfɜːst ˈklɑːs/ | The service was first-class. | Le service était excellent.
+second-rate | médiocre, de second ordre | adj | C1 | /ˌsekənd ˈreɪt/ | The hotel turned out to be second-rate. | L'hôtel s'est révélé médiocre.
+high-quality | de haute qualité | adj | B1 | /ˌhaɪ ˈkwɒləti/ | They only use high-quality ingredients. | Ils n'utilisent que des ingrédients de haute qualité.
+trouble-free | sans problème | adj | B2 | /ˌtrʌbl ˈfriː/ | The car has been trouble-free for years. | La voiture n'a posé aucun problème depuis des années.
+hand-picked | trié sur le volet ; cueilli à la main | adj | C1 | /ˌhænd ˈpɪkt/ | The team was hand-picked by the director. | L'équipe a été triée sur le volet par le directeur.
+well-earned | bien mérité | adj | B2 | /ˌwel ˈɜːnd/ | After the exams, we took a well-earned break. | Après les examens, nous avons pris un repos bien mérité.
+well-deserved | bien mérité | adj | B2 | /ˌwel dɪˈzɜːvd/ | It was a well-deserved victory. | C'était une victoire bien méritée.
+age-old | séculaire, ancestral | adj | C1 | /ˌeɪdʒ ˈəʊld/ | It's an age-old tradition. | C'est une tradition ancestrale.
+long-lasting | durable, qui dure longtemps | adj | B2 | /ˌlɒŋ ˈlɑːstɪŋ/ | The war had long-lasting effects. | La guerre a eu des effets durables.
+short-lived | de courte durée, éphémère | adj | B2 | /ˌʃɔːt ˈlɪvd/ | Their happiness was short-lived. | Leur bonheur a été de courte durée.
+full-size | grandeur nature, normal | adj | B1 | /ˌfʊl ˈsaɪz/ | It's a full-size copy of the statue. | C'est une copie grandeur nature de la statue.
+full-scale | de grande envergure, total | adj | C1 | /ˌfʊl ˈskeɪl/ | The protest turned into a full-scale riot. | La manifestation a dégénéré en véritable émeute.
+large-scale | à grande échelle | adj | B2 | /ˌlɑːdʒ ˈskeɪl/ | The company is planning large-scale job cuts. | L'entreprise prévoit des suppressions d'emplois à grande échelle.
+small-scale | à petite échelle | adj | B2 | /ˌsmɔːl ˈskeɪl/ | They run a small-scale family farm. | Ils tiennent une petite exploitation familiale.
+low-key | discret, sobre | adj | C1 | /ˌləʊ ˈkiː/ | They had a low-key wedding with a few friends. | Ils ont fait un mariage discret avec quelques amis.
+two-way | à double sens, bilatéral | adj | B2 | /ˌtuː ˈweɪ/ | Communication should be a two-way process. | La communication devrait aller dans les deux sens.
+bad at | mauvais en, nul en | adj | A2 | /ˈbæd ət/ | I'm really bad at maths. | Je suis vraiment nul en maths.
+good with | doué avec, qui sait s'y prendre avec | adj | B1 | /ˈɡʊd wɪð/ | She's very good with children. | Elle sait très bien s'y prendre avec les enfants.
+familiar with | qui connaît bien, familiarisé avec | adj | B2 | /fəˈmɪliə wɪð/ | Are you familiar with this software? | Tu connais bien ce logiciel ?
+critical of | critique envers | adj | C1 | /ˈkrɪtɪkl əv/ | The report is very critical of the government. | Le rapport est très critique envers le gouvernement.
+tried and tested | éprouvé, qui a fait ses preuves | expr | C1 | /ˌtraɪd ən ˈtestɪd/ | This is a tried and tested recipe. | C'est une recette qui a fait ses preuves.
+sky blue | bleu ciel | adj | A2 | /ˌskaɪ ˈbluː/ | She painted the bedroom sky blue. | Elle a peint la chambre en bleu ciel.
+olive green | vert olive | adj | B1 | /ˌɒlɪv ˈɡriːn/ | He wore an olive green jacket. | Il portait une veste vert olive.
+mauve | mauve | adj | B2 | /məʊv/ | The bridesmaids wore mauve dresses. | Les demoiselles d'honneur portaient des robes mauves.
+hot pink | rose vif, rose fuchsia | adj | B1 | /ˌhɒt ˈpɪŋk/ | She bought a pair of hot pink trainers. | Elle s'est acheté des baskets rose vif.
+royal blue | bleu roi | adj | B1 | /ˌrɔɪəl ˈbluː/ | The team plays in royal blue shirts. | L'équipe joue en maillot bleu roi.
+bottle green | vert bouteille | adj | B2 | /ˌbɒtl ˈɡriːn/ | The front door is bottle green. | La porte d'entrée est vert bouteille.
+lime green | vert citron, vert anis | adj | B1 | /ˌlaɪm ˈɡriːn/ | The cyclists wore lime green vests. | Les cyclistes portaient des gilets vert anis.
+mint green | vert menthe, vert d'eau | adj | B1 | /ˌmɪnt ˈɡriːn/ | Our kitchen is painted mint green. | Notre cuisine est peinte en vert d'eau.
+lemon yellow | jaune citron | adj | B1 | /ˌlemən ˈjeləʊ/ | A lemon yellow car stopped outside. | Une voiture jaune citron s'est arrêtée devant la maison.
+chocolate brown | marron chocolat | adj | B1 | /ˌtʃɒklət ˈbraʊn/ | The puppy has big chocolate brown eyes. | Le chiot a de grands yeux marron chocolat.
+pitch black | noir complet, noir d'encre | adj | B2 | /ˌpɪtʃ ˈblæk/ | During the power cut the house was pitch black. | Pendant la coupure de courant, il faisait noir complet dans la maison.
+off-white | blanc cassé | adj | B1 | /ˌɒf ˈwaɪt/ | The walls are painted off-white. | Les murs sont peints en blanc cassé.
+multicoloured | multicolore | adj | B1 | /ˌmʌltiˈkʌləd/ | The children made multicoloured kites. | Les enfants ont fabriqué des cerfs-volants multicolores.
+salmon pink | rose saumon | adj | B2 | /ˌsæmən ˈpɪŋk/ | The hotel was painted salmon pink. | L'hôtel était peint en rose saumon.
+unavoidable | inévitable | adj | B2 | /ˌʌnəˈvɔɪdəbl/ | Some delays are unavoidable. | Certains retards sont inévitables.
+crystal clear | clair comme de l'eau de roche, limpide | adj | B2 | /ˌkrɪstl ˈklɪə/ | The instructions are crystal clear. | Les consignes sont claires comme de l'eau de roche.
+highly recommended | vivement recommandé | adj | B2 | /ˌhaɪli ˌrekəˈmendɪd/ | This restaurant comes highly recommended. | Ce restaurant est vivement recommandé.
+fully aware | parfaitement conscient | adj | B2 | /ˌfʊli əˈweə/ | I'm fully aware of the risks. | Je suis parfaitement conscient des risques.
+badly damaged | gravement endommagé | adj | B1 | /ˌbædli ˈdæmɪdʒd/ | The bridge was badly damaged by the flood. | Le pont a été gravement endommagé par l'inondation.
+perfectly normal | tout à fait normal | adj | B1 | /ˌpɜːfɪktli ˈnɔːml/ | It's perfectly normal to feel nervous before an exam. | C'est tout à fait normal d'être nerveux avant un examen.
+utterly ridiculous | complètement ridicule | adj | C1 | /ˌʌtəli rɪˈdɪkjələs/ | The idea is utterly ridiculous. | L'idée est complètement ridicule.
+painfully slow | d'une lenteur désespérante | adj | C1 | /ˌpeɪnfəli ˈsləʊ/ | The internet is painfully slow today. | Internet est d'une lenteur désespérante aujourd'hui.
+highly unlikely | très peu probable | adj | B2 | /ˌhaɪli ʌnˈlaɪkli/ | It's highly unlikely that it will snow in May. | Il est très peu probable qu'il neige en mai.
+closely related | étroitement lié, proche parent | adj | B2 | /ˌkləʊsli rɪˈleɪtɪd/ | Spanish and Italian are closely related. | L'espagnol et l'italien sont étroitement apparentés.
+never-ending | interminable | adj | B2 | /ˌnevər ˈendɪŋ/ | The meeting felt never-ending. | La réunion semblait interminable.
+made-up | inventé ; maquillé | adj | B2 | /ˌmeɪd ˈʌp/ | It's a made-up story to scare children. | C'est une histoire inventée pour faire peur aux enfants.
+clear-cut | net, tranché | adj | C1 | /ˌklɪə ˈkʌt/ | There's no clear-cut answer to this question. | Il n'y a pas de réponse tranchée à cette question.
+one-sided | partial, déséquilibré | adj | C1 | /ˌwʌn ˈsaɪdɪd/ | The article gives a very one-sided view. | L'article donne un point de vue très partial.
 `,
 );

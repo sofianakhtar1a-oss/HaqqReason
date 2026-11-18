@@ -894,5 +894,54 @@ wise up | ouvrir les yeux, se rendre compte | v | C1 | /waɪz ˈʌp/ | It's time
 worm out of | soutirer ; se défiler | v | C1 | /ˈwɜːm ˈaʊt əv/ | She wormed the secret out of him. | Elle lui a soutiré le secret.
 write back | répondre (par écrit) | v | A2 | /raɪt ˈbæk/ | Please write back soon. | Réponds-moi vite, s'il te plaît.
 yearn for | aspirer à, désirer ardemment | v | C1 | /ˈjɜːn fə/ | The believer yearns for Paradise. | Le croyant aspire ardemment au Paradis.
+to bear up | tenir le coup | v | C1 | /beər ˈʌp/ | She's bearing up well after the funeral. | Elle tient bien le coup depuis les obsèques.
+to come in for | s'attirer, faire l'objet de (critiques) | v | C1 | /kʌm ˈɪn fə/ | The plan has come in for a lot of criticism. | Le projet s'est attiré beaucoup de critiques.
+to finish off | terminer, achever | v | B1 | /ˌfɪnɪʃ ˈɒf/ | Let me finish off this email first. | Laisse-moi d'abord terminer ce courriel.
+to get back to | recontacter, revenir vers | v | B1 | /ˌɡet ˈbæk tə/ | I'll get back to you tomorrow with an answer. | Je reviens vers toi demain avec une réponse.
+to hook up | brancher, relier | v | B2 | /ˌhʊk ˈʌp/ | Hook the laptop up to the projector. | Branche l'ordinateur au projecteur.
+to keep in | garder (en retenue, à l'intérieur) | v | B2 | /ˌkiːp ˈɪn/ | The teacher will keep him in after school. | Le professeur va le garder en retenue après les cours.
+to lay on | organiser, fournir | v | C1 | /ˌleɪ ˈɒn/ | The hotel will lay on a bus to the airport. | L'hôtel mettra un bus à disposition jusqu'à l'aéroport.
+to pack in | laisser tomber, arrêter | v | C1 | /ˌpæk ˈɪn/ | He packed in his job to travel the world. | Il a laissé tomber son travail pour faire le tour du monde.
+to play along | entrer dans le jeu | v | B2 | /ˌpleɪ əˈlɒŋ/ | I knew it was a joke, but I played along. | Je savais que c'était une blague, mais je suis entré dans le jeu.
+to pull ahead | prendre la tête, se détacher | v | B2 | /ˌpʊl əˈhed/ | The runner pulled ahead in the last lap. | Le coureur s'est détaché dans le dernier tour.
+to push around | donner des ordres à, malmener | v | B2 | /ˌpʊʃ əˈraʊnd/ | Don't let your boss push you around. | Ne laisse pas ton patron te marcher dessus.
+to put by | mettre de côté | v | C1 | /ˌpʊt ˈbaɪ/ | She puts a little money by every month. | Elle met un peu d'argent de côté chaque mois.
+to preside over | présider, diriger | v | C1 | /prɪˈzaɪd ˌəʊvə/ | The judge presided over the trial. | Le juge a présidé le procès.
+pay for | payer (quelque chose) | v | A2 | /ˈpeɪ fə/ | It's my turn to pay for lunch. | C'est mon tour de payer le déjeuner.
+think of | penser de ; penser à, avoir l'idée de | v | A2 | /ˈθɪŋk əv/ | What do you think of my new haircut? | Qu'est-ce que tu penses de ma nouvelle coupe ?
+complain about | se plaindre de | v | B1 | /kəmˈpleɪn əˌbaʊt/ | The neighbours complain about the noise. | Les voisins se plaignent du bruit.
+approve of | approuver, être d'accord avec | v | B2 | /əˈpruːv əv/ | My parents don't approve of my tattoo. | Mes parents n'approuvent pas mon tatouage.
+suffer from | souffrir de | v | B1 | /ˈsʌfə frəm/ | Many people suffer from back pain. | Beaucoup de gens souffrent de mal de dos.
+prevent from | empêcher de | v | B2 | /prɪˈvent frəm/ | The rain prevented us from going out. | La pluie nous a empêchés de sortir.
+borrow from | emprunter à | v | B1 | /ˈbɒrəʊ frəm/ | I borrowed this book from the library. | J'ai emprunté ce livre à la bibliothèque.
+arrive at | arriver à (un lieu précis) | v | A2 | /əˈraɪv ət/ | We arrived at the airport two hours early. | Nous sommes arrivés à l'aéroport avec deux heures d'avance.
+arrive in | arriver à, en (une ville, un pays) | v | A2 | /əˈraɪv ɪn/ | They arrive in London tomorrow. | Ils arrivent à Londres demain.
+shout at | crier sur | v | B1 | /ˈʃaʊt ət/ | Please don't shout at the children. | S'il te plaît, ne crie pas sur les enfants.
+aim at | viser ; s'adresser à | v | B2 | /ˈeɪm ət/ | The advert is aimed at teenagers. | La publicité s'adresse aux adolescents.
+congratulate on | féliciter pour | v | B1 | /kənˈɡrætʃuleɪt ɒn/ | We congratulated her on her new job. | Nous l'avons félicitée pour son nouveau poste.
+comment on | commenter, faire des commentaires sur | v | B2 | /ˈkɒment ɒn/ | The minister refused to comment on the rumours. | Le ministre a refusé de commenter les rumeurs.
+spend on | dépenser pour, consacrer à | v | B1 | /ˈspend ɒn/ | How much do you spend on food each week? | Combien dépenses-tu pour la nourriture chaque semaine ?
+object to | s'opposer à, voir un inconvénient à | v | C1 | /əbˈdʒekt tə/ | Do you object to my opening the window? | Ça te dérange que j'ouvre la fenêtre ?
+happen to | arriver à (quelqu'un) | v | A2 | /ˈhæpən tə/ | What happened to your arm? | Qu'est-ce qui est arrivé à ton bras ?
+explain to | expliquer à | v | A2 | /ɪkˈspleɪn tə/ | Can you explain to me how it works? | Tu peux m'expliquer comment ça marche ?
+translate into | traduire en | v | B1 | /trænzˈleɪt ˌɪntə/ | The book has been translated into thirty languages. | Le livre a été traduit en trente langues.
+divide into | diviser en, répartir en | v | B1 | /dɪˈvaɪd ˌɪntə/ | Divide the class into four groups. | Répartis la classe en quatre groupes.
+crash into | percuter, rentrer dans | v | B1 | /ˈkræʃ ˌɪntə/ | A van crashed into the bus shelter. | Une camionnette a percuté l'abribus.
+result in | entraîner, aboutir à | v | B2 | /rɪˈzʌlt ɪn/ | The storm resulted in power cuts. | La tempête a entraîné des coupures de courant.
+cope with | faire face à, supporter | v | B2 | /ˈkəʊp wɪð/ | She's learning to cope with stress. | Elle apprend à faire face au stress.
+provide with | fournir (quelque chose) à | v | B2 | /prəˈvaɪd wɪð/ | The hotel provides guests with towels. | L'hôtel fournit des serviettes aux clients.
+hear about | entendre parler de | v | A2 | /ˈhɪər əˌbaʊt/ | Have you heard about the new mosque? | Tu as entendu parler de la nouvelle mosquée ?
+warn about | avertir de, mettre en garde contre | v | B2 | /ˈwɔːn əˌbaʊt/ | The doctor warned him about smoking. | Le médecin l'a mis en garde contre le tabac.
+remind of | rappeler, faire penser à | v | B1 | /rɪˈmaɪnd əv/ | You remind me of your father. | Tu me rappelles ton père.
+attend to | s'occuper de | v | C1 | /əˈtend tə/ | A nurse will attend to you shortly. | Une infirmière va s'occuper de vous sous peu.
+switch to | passer à, changer pour | v | B2 | /ˈswɪtʃ tə/ | We've switched to a cheaper energy supplier. | Nous sommes passés à un fournisseur d'énergie moins cher.
+long for | désirer ardemment, avoir très envie de | v | C1 | /ˈlɒŋ fə/ | After a week of rain, we longed for sunshine. | Après une semaine de pluie, nous rêvions de soleil.
+mistake for | prendre pour, confondre avec | v | B2 | /mɪˈsteɪk fə/ | People often mistake him for his brother. | On le prend souvent pour son frère.
+exchange for | échanger contre | v | B1 | /ɪksˈtʃeɪndʒ fə/ | Can I exchange this shirt for a bigger size? | Je peux échanger cette chemise contre une taille au-dessus ?
+interfere with | gêner, perturber ; toucher à | v | C1 | /ˌɪntəˈfɪə wɪð/ | Don't let your phone interfere with your sleep. | Ne laisse pas ton téléphone perturber ton sommeil.
+charge with | inculper de | v | C1 | /ˈtʃɑːdʒ wɪð/ | He has been charged with theft. | Il a été inculpé de vol.
+die of | mourir de | v | B1 | /ˈdaɪ əv/ | My grandfather died of old age. | Mon grand-père est mort de vieillesse.
+smell of | sentir (une odeur) | v | B1 | /ˈsmel əv/ | The kitchen smells of fresh bread. | La cuisine sent le pain frais.
+taste of | avoir un goût de | v | B1 | /ˈteɪst əv/ | This yoghurt tastes of nothing. | Ce yaourt n'a aucun goût.
 `,
 );

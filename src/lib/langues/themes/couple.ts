@@ -231,5 +231,24 @@ sensuality | sensualité | n | C2 | /ˌsenʃuˈæləti/ | The poem is full of se
 chaste | chaste, pudique | adj | C2 | /tʃeɪst/ | She gave him a chaste kiss. | Elle lui a donné un baiser chaste.
 flirtatious | aguicheur, charmeur | adj | C2 | /flɜːˈteɪʃəs/ | She disliked his flirtatious manner. | Elle n'aimait pas ses manières aguicheuses.
 amorous | amoureux | adj | C2 | /ˈæmərəs/ | He wrote amorous letters. | Il écrivait des lettres d'amour.
+mistress | maîtresse ; maîtresse de maison | n | B2 | /ˈmɪstrəs/ | She was mistress of a large household. | Elle était maîtresse d'une grande maison.
+spat | prise de bec, chamaillerie | n | C1 | /spæt/ | The couple had a spat over money. | Le couple a eu une prise de bec à propos d'argent.
+tiff | prise de bec, petite brouille | n | C1 | /tɪf/ | They had a tiff about the washing-up. | Ils se sont chamaillés pour la vaisselle.
+amour | liaison amoureuse | n | C2 | /əˈmʊə/ | The film tells of a secret amour. | Le film raconte une liaison secrète.
+faithfulness | fidélité | n | C1 | /ˈfeɪθflnəs/ | Faithfulness is important in a marriage. | La fidélité est importante dans un mariage.
+golden wedding | noces d'or | n | B2 | /ˌɡəʊldən ˈwedɪŋ/ | My grandparents celebrated their golden wedding. | Mes grands-parents ont fêté leurs noces d'or.
+silver wedding | noces d'argent | n | B2 | /ˌsɪlvə ˈwedɪŋ/ | They celebrated their silver wedding in Paris. | Ils ont fêté leurs noces d'argent à Paris.
+engagement party | fête de fiançailles | n | B1 | /ɪnˈɡeɪdʒmənt ˌpɑːti/ | They invited us to their engagement party. | Ils nous ont invités à leur fête de fiançailles.
+wedding reception | réception de mariage | n | B1 | /ˈwedɪŋ rɪˌsepʃn/ | The wedding reception was held in a castle. | La réception de mariage a eu lieu dans un château.
+page boy | garçon d'honneur | n | B2 | /ˈpeɪdʒ bɔɪ/ | Her nephew was the page boy at the wedding. | Son neveu était garçon d'honneur au mariage.
+amicable | à l'amiable, cordial | adj | C1 | /ˈæmɪkəbl/ | They reached an amicable agreement. | Ils sont parvenus à un accord à l'amiable.
+to have an argument | se disputer | expr | B1 | /hæv ən ˈɑːɡjumənt/ | They often have an argument about money. | Ils se disputent souvent pour des questions d'argent.
+to win an argument | avoir le dernier mot | expr | B2 | /wɪn ən ˈɑːɡjumənt/ | He always has to win an argument. | Il faut toujours qu'il ait le dernier mot.
+arm in arm | bras dessus bras dessous | adv | B2 | /ˌɑːm ɪn ˈɑːm/ | The old couple walked arm in arm along the beach. | Le vieux couple marchait bras dessus bras dessous sur la plage.
+absence makes the heart grow fonder | l'éloignement renforce l'affection | expr | B2 | /ˌæbsəns meɪks ðə ˈhɑːt ɡrəʊ ˈfɒndə/ | They live apart during the week; absence makes the heart grow fonder. | Ils vivent séparés en semaine ; l'éloignement renforce l'affection.
+broken heart | cœur brisé | n | B1 | /ˌbrəʊkən ˈhɑːt/ | Time will heal your broken heart. | Le temps guérira ton cœur brisé.
+old flame | ancien amour | n | C1 | /ˌəʊld ˈfleɪm/ | She met an old flame at the wedding. | Elle a revu un ancien amour au mariage.
+puppy love | amourette, amour de jeunesse | n | C1 | /ˈpʌpi lʌv/ | It wasn't real love, just puppy love. | Ce n'était pas le grand amour, juste une amourette.
+to blow a kiss | envoyer un baiser | expr | B2 | /bləʊ ə ˈkɪs/ | Blow a kiss to Grandma before we leave. | Envoie un baiser à mamie avant qu'on parte.
 `,
 );

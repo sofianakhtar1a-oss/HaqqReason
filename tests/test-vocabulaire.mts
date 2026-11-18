@@ -23,10 +23,10 @@ for (const f of fichiers) {
 }
 
 /*
- * Volume attendu : 589 mots d'origine, puis quatre lots ajoutés sans doublon
- * (2 000, 4 000, 5 000, puis 9 000 mots) : 20 589 entrées en tout.
+ * Volume attendu : 589 mots d'origine, puis cinq lots ajoutés sans doublon
+ * (2 000, 4 000, 5 000, 9 000, puis 3 313 mots) : 23 902 entrées en tout.
  */
-const TOTAL_ATTENDU = 589 + 2000 + 4000 + 5000 + 9000;
+const TOTAL_ATTENDU = 589 + 2000 + 4000 + 5000 + 9000 + 3313;
 
 /** Forme de comparaison d'un mot : sans « to », sans casse, sans ponctuation finale. */
 const cle = (en: string) =>

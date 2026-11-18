@@ -252,5 +252,7 @@ impecunious | impécunieux, désargenté | adj | C2 | /ˌɪmpɪˈkjuːniəs/ | H
 penurious | indigent, misérable | adj | C2 | /pəˈnjʊəriəs/ | They lived in penurious conditions. | Ils vivaient dans la misère.
 arrears | arriérés | n | C2 | /əˈrɪəz/ | He is three months in arrears with his rent. | Il a trois mois de retard de loyer.
 big spender | gros dépensier | n | C1 | /ˌbɪɡ ˈspendə/ | He's a big spender. | C'est un gros dépensier.
+short of | à court de | adj | B1 | /ˈʃɔːt əv/ | We're a bit short of money this month. | Nous sommes un peu à court d'argent ce mois-ci.
+every little helps | chaque petit geste compte | expr | B1 | /ˌevri ˈlɪtl ˈhelps/ | Turn off the lights when you leave: every little helps. | Éteins la lumière en partant : chaque petit geste compte.
 `,
 );

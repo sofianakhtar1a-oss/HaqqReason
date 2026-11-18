@@ -336,5 +336,54 @@ brawn | muscle, force physique | n | C2 | /brɔːn/ | The job needs brains, not 
 sternum | sternum | n | C2 | /ˈstɜːnəm/ | The ribs are attached to the sternum. | Les côtes sont attachées au sternum.
 synapse | synapse | n | C2 | /ˈsaɪnæps/ | Signals cross the synapse. | Les signaux traversent la synapse.
 mandible | mandibule | n | C2 | /ˈmændɪbl/ | Ants have strong mandibles. | Les fourmis ont de fortes mandibules.
+platelet | plaquette (sanguine) | n | C1 | /ˈpleɪtlət/ | Platelets help the blood to clot. | Les plaquettes aident le sang à coaguler.
+ventricle | ventricule | n | C1 | /ˈventrɪkl/ | The left ventricle pumps blood around the body. | Le ventricule gauche envoie le sang dans tout le corps.
+trachea | trachée | n | C1 | /trəˈkiːə/ | Air passes down the trachea into the lungs. | L'air descend par la trachée jusqu'aux poumons.
+gullet | œsophage, gosier | n | C1 | /ˈɡʌlɪt/ | A fish bone got stuck in his gullet. | Une arête s'est coincée dans son gosier.
+femur | fémur | n | C1 | /ˈfiːmə/ | The femur is the longest bone in the body. | Le fémur est l'os le plus long du corps.
+fibula | péroné | n | C1 | /ˈfɪbjʊlə/ | He broke his fibula playing football. | Il s'est cassé le péroné en jouant au football.
+larynx | larynx | n | C1 | /ˈlærɪŋks/ | The larynx contains the vocal cords. | Le larynx contient les cordes vocales.
+vocal cords | cordes vocales | n | B2 | /ˈvəʊkl kɔːdz/ | Shouting can damage your vocal cords. | Crier peut abîmer les cordes vocales.
+spinal cord | moelle épinière | n | B2 | /ˌspaɪnl ˈkɔːd/ | The spinal cord carries messages from the brain. | La moelle épinière transmet les messages du cerveau.
+brain stem | tronc cérébral | n | C1 | /ˈbreɪn stem/ | The brain stem controls breathing. | Le tronc cérébral contrôle la respiration.
+cerebellum | cervelet | n | C1 | /ˌserəˈbeləm/ | The cerebellum controls balance. | Le cervelet contrôle l'équilibre.
+dorsal | dorsal | adj | C2 | /ˈdɔːsl/ | The shark's dorsal fin cut through the water. | L'aileron dorsal du requin fendait l'eau.
+cervical | cervical | adj | C2 | /ˈsɜːvɪkl/ | He injured a cervical vertebra. | Il s'est blessé une vertèbre cervicale.
+urinary | urinaire | adj | C1 | /ˈjʊərɪnəri/ | She has a urinary infection. | Elle a une infection urinaire.
+lymph | lymphe | n | C2 | /lɪmf/ | Lymph carries white blood cells. | La lymphe transporte les globules blancs.
+backside | derrière, postérieur | n | B2 | /ˈbæksaɪd/ | Get off your backside and help me! | Bouge-toi et viens m'aider !
+curvy | aux formes généreuses ; sinueux | adj | B2 | /ˈkɜːvi/ | The road is curvy and narrow. | La route est sinueuse et étroite.
+retinal | rétinien | adj | C2 | /ˈretɪnl/ | A retinal scan can identify a person. | Un scan rétinien peut identifier une personne.
+hunk | beau mec ; gros morceau | n | B2 | /hʌŋk/ | He cut a hunk of bread. | Il a coupé un gros morceau de pain.
+ventral | ventral | adj | C2 | /ˈventrəl/ | The fish has a ventral fin. | Le poisson a une nageoire ventrale.
+cortical | cortical | adj | C2 | /ˈkɔːtɪkl/ | The study measured cortical activity. | L'étude a mesuré l'activité corticale.
+thoracic | thoracique | adj | C2 | /θɔːˈræsɪk/ | He had thoracic surgery last year. | Il a subi une opération du thorax l'an dernier.
+ruddy | rougeaud, coloré | adj | C2 | /ˈrʌdi/ | The farmer had a ruddy face. | Le fermier avait le visage rougeaud.
+extremity | extrémité | n | C1 | /ɪkˈstreməti/ | The cold made his extremities numb. | Le froid lui engourdissait les extrémités.
+adrenal gland | glande surrénale | n | C2 | /əˈdriːnl ɡlænd/ | Adrenaline is made by the adrenal glands. | L'adrénaline est produite par les glandes surrénales.
+pectoral muscle | muscle pectoral | n | C1 | /ˌpektərəl ˈmʌsl/ | Press-ups strengthen the pectoral muscles. | Les pompes renforcent les pectoraux.
+carotid artery | artère carotide | n | C2 | /kəˌrɒtɪd ˈɑːtəri/ | The carotid artery carries blood to the brain. | L'artère carotide irrigue le cerveau.
+connective tissue | tissu conjonctif | n | C2 | /kəˌnektɪv ˈtɪʃuː/ | Tendons are made of connective tissue. | Les tendons sont faits de tissu conjonctif.
+cranial | crânien | adj | C2 | /ˈkreɪniəl/ | He suffered a cranial injury. | Il a subi un traumatisme crânien.
+bushy | touffu, broussailleux | adj | B2 | /ˈbʊʃi/ | He has bushy eyebrows. | Il a des sourcils broussailleux.
+snot | morve | n | B2 | /snɒt/ | Wipe the snot off your nose! | Essuie-toi le nez !
+septum | cloison nasale | n | C2 | /ˈseptəm/ | He broke his septum playing rugby. | Il s'est cassé la cloison nasale au rugby.
+goose pimples | chair de poule | n | B1 | /ˈɡuːs ˌpɪmplz/ | The cold wind gave me goose pimples. | Le vent froid m'a donné la chair de poule.
+pins and needles | fourmis (dans les membres) | n | B2 | /ˌpɪnz ən ˈniːdlz/ | I've got pins and needles in my foot. | J'ai des fourmis dans le pied.
+dry skin | peau sèche | n | A2 | /ˌdraɪ ˈskɪn/ | This cream is good for dry skin. | Cette crème convient aux peaux sèches.
+sensitive skin | peau sensible | n | B1 | /ˌsensətɪv ˈskɪn/ | Use a mild soap if you have sensitive skin. | Utilise un savon doux si tu as la peau sensible.
+to break into a sweat | se mettre à transpirer | expr | C1 | /breɪk ˌɪntʊ ə ˈswet/ | Just thinking about the exam makes me break into a sweat. | Rien que de penser à l'examen, je me mets à transpirer.
+auburn | auburn, châtain roux | adj | B2 | /ˈɔːbən/ | She has long auburn hair. | Elle a de longs cheveux auburn.
+jet black | noir de jais | adj | B2 | /ˌdʒet ˈblæk/ | He has jet black hair and blue eyes. | Il a les cheveux noir de jais et les yeux bleus.
+to hold your breath | retenir son souffle | expr | B1 | /həʊld jə ˈbreθ/ | Can you hold your breath under water for a minute? | Tu peux retenir ton souffle sous l'eau pendant une minute ?
+blue-eyed | aux yeux bleus | adj | B1 | /ˌbluː ˈaɪd/ | She has a blue-eyed baby boy. | Elle a un petit garçon aux yeux bleus.
+fair-haired | blond, aux cheveux clairs | adj | B1 | /ˌfeə ˈheəd/ | The fair-haired boy is my nephew. | Le garçon blond est mon neveu.
+to roll your eyes | lever les yeux au ciel | expr | B2 | /rəʊl jər ˈaɪz/ | Don't roll your eyes at me! | Ne lève pas les yeux au ciel quand je te parle !
+to fold your arms | croiser les bras | expr | B2 | /fəʊld jər ˈɑːmz/ | He folded his arms and waited. | Il a croisé les bras et a attendu.
+to cross your legs | croiser les jambes | expr | B1 | /krɒs jə ˈleɡz/ | It's bad for your back to cross your legs. | C'est mauvais pour le dos de croiser les jambes.
+to bite your nails | se ronger les ongles | expr | B1 | /baɪt jə ˈneɪlz/ | Stop biting your nails! | Arrête de te ronger les ongles !
+to crack your knuckles | faire craquer ses doigts | expr | C1 | /kræk jə ˈnʌklz/ | Please don't crack your knuckles at the table. | S'il te plaît, ne fais pas craquer tes doigts à table.
+to clear your throat | s'éclaircir la voix | expr | B2 | /klɪə jə ˈθrəʊt/ | The speaker cleared his throat and began. | L'orateur s'est éclairci la voix et a commencé.
+to clap your hands | taper dans ses mains | expr | A2 | /klæp jə ˈhændz/ | Clap your hands to the music! | Tapez dans vos mains en rythme !
 `,
 );

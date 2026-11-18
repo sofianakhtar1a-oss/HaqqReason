@@ -541,5 +541,104 @@ showman | homme de spectacle, bateleur | n | C2 | /ˈʃəʊmən/ | He's a natura
 obelisk | obélisque | n | C2 | /ˈɒbəlɪsk/ | The obelisk came from Luxor. | L'obélisque vient de Louxor.
 lifelike | réaliste, plus vrai que nature | adj | C2 | /ˈlaɪflaɪk/ | The statue is lifelike. | La statue est plus vraie que nature.
 understudy | doublure (au théâtre) | n | C2 | /ˈʌndəstʌdi/ | The understudy took the lead role. | La doublure a repris le rôle principal.
+canon | canon (œuvres de référence) | n | C2 | /ˈkænən/ | The novel is now part of the literary canon. | Le roman fait désormais partie du canon littéraire.
+architectural | architectural | adj | B2 | /ˌɑːkɪˈtektʃərəl/ | The cathedral is an architectural masterpiece. | La cathédrale est un chef-d'œuvre architectural.
+triad | triade ; accord parfait | n | C2 | /ˈtraɪæd/ | A triad is a chord of three notes. | Un accord parfait est un accord de trois notes.
+opus | opus, œuvre | n | C2 | /ˈəʊpəs/ | This symphony is his greatest opus. | Cette symphonie est son œuvre majeure.
+skit | sketch, parodie | n | C1 | /skɪt/ | The students performed a skit about their teachers. | Les élèves ont joué un sketch sur leurs professeurs.
+sax | saxo | n | B2 | /sæks/ | He plays the sax in a jazz band. | Il joue du saxo dans un groupe de jazz.
+omnibus | recueil ; (TV) rediffusion intégrale | n | C2 | /ˈɒmnɪbəs/ | I watch the omnibus edition on Sunday. | Je regarde la rediffusion intégrale le dimanche.
+sonata | sonate | n | C1 | /səˈnɑːtə/ | She played a Beethoven sonata. | Elle a joué une sonate de Beethoven.
+soulful | émouvant, plein d'âme | adj | C1 | /ˈsəʊlfl/ | He sang a soulful ballad. | Il a chanté une ballade émouvante.
+folio | folio, feuillet | n | C2 | /ˈfəʊliəʊ/ | The poem is written on folio twelve. | Le poème est écrit au feuillet douze.
+violinist | violoniste | n | B1 | /ˌvaɪəˈlɪnɪst/ | The violinist played a solo. | Le violoniste a joué un solo.
+sampler | échantillonneur ; canevas brodé | n | C2 | /ˈsɑːmplə/ | She stitched a sampler with the alphabet. | Elle a brodé un canevas avec l'alphabet.
+burlesque | burlesque | n | C2 | /bɜːˈlesk/ | The play is a burlesque of court life. | La pièce est une parodie burlesque de la vie de cour.
+ballerina | ballerine | n | B2 | /ˌbæləˈriːnə/ | The ballerina danced on the tips of her toes. | La ballerine dansait sur les pointes.
+haiku | haïku | n | C1 | /ˈhaɪkuː/ | A haiku has only three lines. | Un haïku ne compte que trois vers.
+revue | revue (spectacle) | n | C2 | /rɪˈvjuː/ | The students put on a comic revue. | Les étudiants ont monté une revue comique.
+limerick | limerick (petit poème humoristique) | n | C1 | /ˈlɪmərɪk/ | He wrote a funny limerick about his cat. | Il a écrit un petit poème comique sur son chat.
+stave | portée (musique) | n | C2 | /steɪv/ | Write the notes on the stave. | Écris les notes sur la portée.
+piccolo | piccolo | n | C1 | /ˈpɪkələʊ/ | The piccolo is a small, high-pitched flute. | Le piccolo est une petite flûte aiguë.
+typography | typographie | n | C1 | /taɪˈpɒɡrəfi/ | Good typography makes a text easy to read. | Une bonne typographie rend un texte facile à lire.
+rhapsody | rhapsodie | n | C2 | /ˈræpsədi/ | The orchestra played a Hungarian rhapsody. | L'orchestre a joué une rhapsodie hongroise.
+overture | ouverture (musique) ; avance | n | C1 | /ˈəʊvətʃʊə/ | The orchestra played the overture to the opera. | L'orchestre a joué l'ouverture de l'opéra.
+coloration | coloration | n | C2 | /ˌkʌləˈreɪʃn/ | The bird's bright coloration attracts a mate. | Les couleurs vives de l'oiseau attirent un partenaire.
+soloist | soliste | n | C1 | /ˈsəʊləʊɪst/ | The soloist received a standing ovation. | Le soliste a été ovationné debout.
+pantomime | spectacle de Noël ; mime | n | B2 | /ˈpæntəmaɪm/ | We took the children to a pantomime. | Nous avons emmené les enfants voir un spectacle de Noël.
+open mic night | scène ouverte | n | B2 | /ˌəʊpən ˈmaɪk naɪt/ | He played guitar at an open mic night. | Il a joué de la guitare à une scène ouverte.
+choir practice | répétition de chorale | n | B1 | /ˈkwaɪə ˌpræktɪs/ | She has choir practice on Thursday evenings. | Elle a répétition de chorale le jeudi soir.
+music lesson | cours de musique | n | A1 | /ˈmjuːzɪk ˌlesn/ | She has a music lesson every Tuesday. | Elle a un cours de musique tous les mardis.
+piano lesson | cours de piano | n | A2 | /piˈænəʊ ˌlesn/ | I took piano lessons as a child. | J'ai pris des cours de piano étant enfant.
+baritone | baryton | n | C1 | /ˈbærɪtəʊn/ | He sings baritone in the choir. | Il chante baryton dans la chorale.
+naturalistic | naturaliste, réaliste | adj | C2 | /ˌnætʃrəˈlɪstɪk/ | The painting is very naturalistic. | Le tableau est très réaliste.
+chromatic | chromatique | adj | C2 | /krəʊˈmætɪk/ | He played a chromatic scale. | Il a joué une gamme chromatique.
+Arabic script | écriture arabe | n | B1 | /ˌærəbɪk ˈskrɪpt/ | Arabic script is written from right to left. | L'écriture arabe se lit de droite à gauche.
+grand piano | piano à queue | n | B1 | /ˌɡrænd piˈænəʊ/ | A grand piano stood in the middle of the hall. | Un piano à queue trônait au milieu de la salle.
+drum kit | batterie | n | B1 | /ˈdrʌm kɪt/ | He practises on his drum kit in the garage. | Il s'entraîne à la batterie dans le garage.
+bass guitar | guitare basse | n | B1 | /ˌbeɪs ɡɪˈtɑː/ | She plays bass guitar in a rock band. | Elle joue de la basse dans un groupe de rock.
+electric guitar | guitare électrique | n | A2 | /ɪˌlektrɪk ɡɪˈtɑː/ | He got an electric guitar for his birthday. | Il a eu une guitare électrique pour son anniversaire.
+acoustic guitar | guitare acoustique | n | B1 | /əˌkuːstɪk ɡɪˈtɑː/ | She sang with an acoustic guitar. | Elle chantait en s'accompagnant à la guitare acoustique.
+plectrum | médiator | n | C1 | /ˈplektrəm/ | He lost his plectrum on stage. | Il a perdu son médiator sur scène.
+sheet music | partition | n | B1 | /ˈʃiːt ˌmjuːzɪk/ | She can't play without sheet music. | Elle ne peut pas jouer sans partition.
+music stand | pupitre | n | B1 | /ˈmjuːzɪk stænd/ | Put the score on the music stand. | Mets la partition sur le pupitre.
+tuning fork | diapason | n | C1 | /ˈtjuːnɪŋ fɔːk/ | The teacher struck a tuning fork. | Le professeur a frappé un diapason.
+metronome | métronome | n | B2 | /ˈmetrənəʊm/ | Practise slowly with a metronome. | Travaille lentement avec un métronome.
+ukulele | ukulélé | n | B1 | /ˌjuːkəˈleɪli/ | He strummed a ukulele on the beach. | Il grattait un ukulélé sur la plage.
+tambourine | tambourin | n | B1 | /ˌtæmbəˈriːn/ | The child shook a tambourine. | L'enfant agitait un tambourin.
+xylophone | xylophone | n | B1 | /ˈzaɪləfəʊn/ | My little brother has a toy xylophone. | Mon petit frère a un xylophone en jouet.
+cymbal | cymbale | n | B2 | /ˈsɪmbl/ | The drummer crashed the cymbals. | Le batteur a frappé les cymbales.
+bagpipes | cornemuse | n | B1 | /ˈbæɡpaɪps/ | A piper played the bagpipes at the castle. | Un joueur jouait de la cornemuse au château.
+double bass | contrebasse | n | B2 | /ˌdʌbl ˈbeɪs/ | The double bass is the largest string instrument. | La contrebasse est le plus grand instrument à cordes.
+French horn | cor (d'harmonie) | n | B2 | /ˌfrentʃ ˈhɔːn/ | He plays the French horn in the orchestra. | Il joue du cor dans l'orchestre.
+oboe | hautbois | n | B2 | /ˈəʊbəʊ/ | The oboe gives the orchestra its note. | Le hautbois donne la note à l'orchestre.
+bassoon | basson | n | C1 | /bəˈsuːn/ | The bassoon has a deep, warm sound. | Le basson a un son grave et chaud.
+panpipes | flûte de Pan | n | B2 | /ˈpænpaɪps/ | A street musician was playing the panpipes. | Un musicien de rue jouait de la flûte de Pan.
+orchestra pit | fosse d'orchestre | n | C1 | /ˈɔːkɪstrə pɪt/ | The musicians sat in the orchestra pit. | Les musiciens étaient installés dans la fosse.
+recording studio | studio d'enregistrement | n | B1 | /rɪˈkɔːdɪŋ ˌstjuːdiəʊ/ | The band spent a month in the recording studio. | Le groupe a passé un mois en studio.
+backing singer | choriste | n | B2 | /ˈbækɪŋ ˌsɪŋə/ | She started as a backing singer. | Elle a commencé comme choriste.
+lead singer | chanteur principal | n | B1 | /ˌliːd ˈsɪŋə/ | The lead singer also writes the songs. | Le chanteur principal écrit aussi les chansons.
+tribute band | groupe hommage | n | B2 | /ˈtrɪbjuːt bænd/ | We saw a Beatles tribute band. | Nous avons vu un groupe qui reprend les Beatles.
+cover version | reprise (chanson) | n | B2 | /ˈkʌvə ˌvɜːʃn/ | Her cover version is better than the original. | Sa reprise est meilleure que l'originale.
+debut album | premier album | n | B2 | /ˈdeɪbjuː ˌælbəm/ | Their debut album went straight to number one. | Leur premier album s'est directement classé numéro un.
+greatest hits | meilleurs succès, compilation | n | B1 | /ˌɡreɪtɪst ˈhɪts/ | My dad only listens to greatest hits albums. | Mon père n'écoute que des compilations de tubes.
+record label | maison de disques | n | B2 | /ˈrekɔːd ˌleɪbl/ | The band signed with a big record label. | Le groupe a signé avec une grande maison de disques.
+music video | clip (vidéo) | n | A2 | /ˈmjuːzɪk ˌvɪdiəʊ/ | The music video was filmed in the desert. | Le clip a été tourné dans le désert.
+sound check | balance (avant un concert) | n | B2 | /ˈsaʊnd tʃek/ | The band did a sound check at five. | Le groupe a fait la balance à cinq heures.
+curtain call | rappel (au théâtre) | n | C1 | /ˈkɜːtn kɔːl/ | The actors took three curtain calls. | Les acteurs ont eu trois rappels.
+dress rehearsal | répétition générale | n | B2 | /ˈdres rɪˌhɜːsl/ | The dress rehearsal went badly. | La répétition générale s'est mal passée.
+opening night | soir de la première | n | B1 | /ˌəʊpənɪŋ ˈnaɪt/ | The critics came on opening night. | Les critiques sont venus le soir de la première.
+leading role | rôle principal | n | B1 | /ˌliːdɪŋ ˈrəʊl/ | She plays the leading role in the film. | Elle tient le rôle principal du film.
+film set | plateau de tournage | n | B1 | /ˈfɪlm set/ | Visitors are not allowed on the film set. | Les visiteurs ne sont pas admis sur le plateau.
+film crew | équipe de tournage | n | B1 | /ˈfɪlm kruː/ | A film crew was shooting in the street. | Une équipe de tournage filmait dans la rue.
+film star | vedette de cinéma | n | A2 | /ˈfɪlm stɑː/ | She looks like a film star. | Elle a l'air d'une vedette de cinéma.
+film festival | festival de cinéma | n | A2 | /ˈfɪlm ˌfestɪvl/ | The film won a prize at the film festival. | Le film a remporté un prix au festival.
+remake | remake, nouvelle version | n | B2 | /ˈriːmeɪk/ | The remake isn't as good as the original. | Le remake n'est pas aussi bon que l'original.
+art exhibition | exposition d'art | n | A2 | /ˈɑːt eksɪˌbɪʃn/ | We went to an art exhibition in London. | Nous sommes allés à une exposition d'art à Londres.
+private view | vernissage | n | C1 | /ˌpraɪvət ˈvjuː/ | The artist invited us to the private view. | L'artiste nous a invités au vernissage.
+poetry reading | lecture de poèmes | n | B1 | /ˈpəʊətri ˌriːdɪŋ/ | The café hosts a poetry reading every month. | Le café organise une lecture de poèmes chaque mois.
+book signing | séance de dédicaces | n | B1 | /ˈbʊk ˌsaɪnɪŋ/ | Hundreds of fans came to the book signing. | Des centaines de fans sont venus à la séance de dédicaces.
+page-turner | livre captivant | n | B2 | /ˈpeɪdʒ ˌtɜːnə/ | The thriller is a real page-turner. | Ce polar se lit d'une traite.
+plot twist | rebondissement | n | B1 | /ˈplɒt twɪst/ | The film has a brilliant plot twist. | Le film a un rebondissement génial.
+main character | personnage principal | n | A2 | /ˌmeɪn ˈkærəktə/ | The main character is a young doctor. | Le personnage principal est un jeune médecin.
+crime writer | auteur de romans policiers | n | B2 | /ˈkraɪm ˌraɪtə/ | Agatha Christie was a famous crime writer. | Agatha Christie était une célèbre romancière policière.
+crime novel | roman policier | n | B1 | /ˈkraɪm ˌnɒvl/ | I'm reading a gripping crime novel. | Je lis un roman policier captivant.
+rock and roll | rock'n'roll | n | A2 | /ˌrɒk ən ˈrəʊl/ | My grandparents loved dancing to rock and roll. | Mes grands-parents adoraient danser sur du rock'n'roll.
+ruby | rubis | n | B2 | /ˈruːbi/ | The ring has a ruby in the middle. | La bague a un rubis au centre.
+movie theater | cinéma (US) | n | A2 | /ˈmuːvi ˌθɪətə/ | The new movie theater has twelve screens. | Le nouveau cinéma a douze salles.
+on display | exposé | adj | B2 | /ɒn dɪˈspleɪ/ | Her paintings are on display at the town hall. | Ses tableaux sont exposés à la mairie.
+in tune | juste (musique) | adj | B2 | /ɪn ˈtjuːn/ | Is the guitar in tune? | La guitare est-elle accordée ?
+out of tune | faux (musique) | adj | B2 | /ˌaʊt əv ˈtjuːn/ | The piano is out of tune. | Le piano sonne faux.
+bass | basse | n | B1 | /beɪs/ | He plays bass in a jazz band. | Il joue de la basse dans un groupe de jazz.
+backing vocals | chœurs | n | B2 | /ˌbækɪŋ ˈvəʊklz/ | Her sister sang backing vocals on the album. | Sa sœur a fait les chœurs sur l'album.
+keyboard player | claviériste | n | B1 | /ˈkiːbɔːd ˌpleɪə/ | The band is looking for a keyboard player. | Le groupe cherche un claviériste.
+flautist | flûtiste | n | B2 | /ˈflɔːtɪst/ | The flautist played a beautiful solo. | La flûtiste a joué un magnifique solo.
+trumpeter | trompettiste | n | B1 | /ˈtrʌmpɪtə/ | The trumpeter played the opening notes of the concert. | Le trompettiste a joué les premières notes du concert.
+saxophonist | saxophoniste | n | B1 | /sækˈsɒfənɪst/ | The saxophonist closed his eyes while he played. | Le saxophoniste fermait les yeux en jouant.
+harpist | harpiste | n | B2 | /ˈhɑːpɪst/ | A harpist played at the wedding. | Une harpiste a joué au mariage.
+treble clef | clé de sol | n | B2 | /ˌtrebl ˈklef/ | The melody is written in the treble clef. | La mélodie est écrite en clé de sol.
+bass clef | clé de fa | n | B2 | /ˌbeɪs ˈklef/ | The left hand usually reads the bass clef. | La main gauche lit généralement la clé de fa.
+record player | tourne-disque | n | A2 | /ˈrekɔːd ˌpleɪə/ | My dad still has his old record player. | Mon père a encore son vieux tourne-disque.
+has-been | star déchue, gloire passée | n | C1 | /ˈhæz biːn/ | Critics called the old singer a has-been. | Les critiques ont qualifié le vieux chanteur de star déchue.
 `,
 );

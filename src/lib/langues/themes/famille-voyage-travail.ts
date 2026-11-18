@@ -248,6 +248,44 @@ condolences | condoléances | n | B2 | /kənˈdəʊlənsɪz/ | Please accept my 
 headstone | pierre tombale | n | C1 | /ˈhedstəʊn/ | The headstone bears only his name. | La pierre tombale ne porte que son nom.
 chaperone | chaperon | n | C2 | /ˈʃæpərəʊn/ | A chaperone accompanied the students. | Un chaperon accompagnait les étudiants.
 interment | inhumation | n | C2 | /ɪnˈtɜːmənt/ | The interment took place the same day. | L'inhumation a eu lieu le jour même.
+baby monitor | babyphone, écoute-bébé | n | B1 | /ˈbeɪbi ˌmɒnɪtə/ | We heard her crying on the baby monitor. | Nous l'avons entendue pleurer dans le babyphone.
+playgroup | halte-garderie | n | B2 | /ˈpleɪɡruːp/ | Our son goes to playgroup twice a week. | Notre fils va à la halte-garderie deux fois par semaine.
+tot | bambin, petit enfant | n | C1 | /tɒt/ | The pool has a special area for tots. | La piscine a un espace réservé aux tout-petits.
+singleton | célibataire ; enfant unique (d'une naissance) | n | C2 | /ˈsɪŋɡltən/ | The holiday is aimed at young singletons. | Le séjour s'adresse aux jeunes célibataires.
+baby shower | fête prénatale | n | B2 | /ˈbeɪbi ˌʃaʊə/ | Her friends threw her a baby shower. | Ses amies lui ont organisé une fête pour l'arrivée du bébé.
+christening | baptême | n | B2 | /ˈkrɪsnɪŋ/ | The whole family came to the christening. | Toute la famille est venue au baptême.
+memorial service | cérémonie commémorative | n | B2 | /məˈmɔːriəl ˌsɜːvɪs/ | A memorial service was held for the victims. | Une cérémonie a été organisée à la mémoire des victimes.
+sympathy card | carte de condoléances | n | B2 | /ˈsɪmpəθi kɑːd/ | We sent a sympathy card to the family. | Nous avons envoyé une carte de condoléances à la famille.
+deathbed | lit de mort | n | C1 | /ˈdeθbed/ | On his deathbed, he asked to see his son. | Sur son lit de mort, il a demandé à voir son fils.
+baby bottle | biberon | n | A2 | /ˈbeɪbi ˌbɒtl/ | Warm the baby bottle in hot water. | Fais chauffer le biberon dans de l'eau chaude.
+baby food | petits pots, alimentation pour bébé | n | A2 | /ˈbeɪbi fuːd/ | She makes her own baby food. | Elle prépare elle-même les repas de son bébé.
+baby wipes | lingettes pour bébé | n | A2 | /ˈbeɪbi waɪps/ | Always carry baby wipes in the bag. | Aie toujours des lingettes dans le sac.
+sleepsuit | grenouillère | n | B2 | /ˈsliːpsuːt/ | The baby wore a white sleepsuit. | Le bébé portait une grenouillère blanche.
+disposable nappy | couche jetable | n | B1 | /dɪˌspəʊzəbl ˈnæpi/ | Disposable nappies create a lot of waste. | Les couches jetables produisent beaucoup de déchets.
+nappy rash | érythème fessier | n | B2 | /ˈnæpi ræʃ/ | This cream helps with nappy rash. | Cette crème soulage les rougeurs du siège.
+changing mat | matelas à langer | n | B1 | /ˈtʃeɪndʒɪŋ mæt/ | Lay the baby on the changing mat. | Allonge le bébé sur le matelas à langer.
+Moses basket | couffin | n | B2 | /ˈməʊzɪz ˌbɑːskɪt/ | The newborn sleeps in a Moses basket. | Le nouveau-né dort dans un couffin.
+baby carrier | porte-bébé | n | B1 | /ˈbeɪbi ˌkæriə/ | He carries the baby in a baby carrier. | Il porte le bébé dans un porte-bébé.
+playpen | parc (pour bébé) | n | B1 | /ˈpleɪpen/ | Put the baby in the playpen while you cook. | Mets le bébé dans son parc pendant que tu cuisines.
+stair gate | barrière d'escalier | n | B1 | /ˈsteə ɡeɪt/ | Fit a stair gate to keep the toddler safe. | Installe une barrière d'escalier pour protéger le petit.
+baby walker | trotteur | n | B2 | /ˈbeɪbi ˌwɔːkə/ | The baby zoomed around in her baby walker. | Le bébé filait dans son trotteur.
+teething ring | anneau de dentition | n | B2 | /ˈtiːðɪŋ rɪŋ/ | Give her a cold teething ring. | Donne-lui un anneau de dentition froid.
+potty | pot (de bébé) | n | B1 | /ˈpɒti/ | She's learning to use the potty. | Elle apprend à aller sur le pot.
+potty training | apprentissage de la propreté | n | B2 | /ˈpɒti ˌtreɪnɪŋ/ | Potty training can take months. | L'apprentissage de la propreté peut prendre des mois.
+child benefit | allocations familiales | n | C1 | /ˌtʃaɪld ˈbenɪfɪt/ | Parents can claim child benefit. | Les parents peuvent toucher les allocations familiales.
+adoptive parents | parents adoptifs | n | B2 | /əˌdɒptɪv ˈpeərənts/ | Her adoptive parents supported her search for her birth mother. | Ses parents adoptifs l'ont soutenue dans la recherche de sa mère biologique.
+birth mother | mère biologique | n | B2 | /ˈbɜːθ ˌmʌðə/ | At eighteen, he traced his birth mother. | À dix-huit ans, il a retrouvé sa mère biologique.
+distant relative | parent éloigné | n | B1 | /ˌdɪstənt ˈrelətɪv/ | The house was left to a distant relative. | La maison a été léguée à un parent éloigné.
+godchild | filleul | n | B2 | /ˈɡɒdtʃaɪld/ | She sends her godchild a present every birthday. | Elle envoie un cadeau à son filleul à chaque anniversaire.
+head of the family | chef de famille | n | B2 | /ˌhed əv ðə ˈfæməli/ | My grandmother is the head of the family. | Ma grand-mère est la cheffe de famille.
+to have a baby | avoir un bébé | expr | A2 | /hæv ə ˈbeɪbi/ | My sister is going to have a baby in June. | Ma sœur va avoir un bébé en juin.
+married to | marié à, marié avec | adj | A2 | /ˈmærid tə/ | She's married to a doctor. | Elle est mariée à un médecin.
+great-grandson | arrière-petit-fils | n | B1 | /ˌɡreɪt ˈɡrænsʌn/ | My grandmother has just met her first great-grandson. | Ma grand-mère vient de rencontrer son premier arrière-petit-fils.
+great-granddaughter | arrière-petite-fille | n | B1 | /ˌɡreɪt ˈɡrændɔːtə/ | He takes his great-granddaughter to the park. | Il emmène son arrière-petite-fille au parc.
+great-aunt | grand-tante | n | B1 | /ˌɡreɪt ˈɑːnt/ | My great-aunt lived to a hundred. | Ma grand-tante a vécu jusqu'à cent ans.
+great-uncle | grand-oncle | n | B1 | /ˌɡreɪt ˈʌŋkl/ | My great-uncle fought in the war. | Mon grand-oncle a fait la guerre.
+second cousin | cousin issu de germain | n | B2 | /ˌsekənd ˈkʌzn/ | She's my second cousin: our grandparents were brothers. | C'est ma cousine issue de germain : nos grands-parents étaient frères.
+heavily pregnant | en fin de grossesse | adj | C1 | /ˌhevɪli ˈpreɡnənt/ | She was heavily pregnant with her third child. | Elle était en fin de grossesse de son troisième enfant.
 `,
 );
 
@@ -564,6 +602,191 @@ transcontinental | transcontinental | adj | C2 | /ˌtrænzkɒntɪˈnentl/ | They
 bulkhead | cloison étanche | n | C2 | /ˈbʌlkhed/ | Water broke through the bulkhead. | L'eau a traversé la cloison étanche.
 minibus | minibus | n | B1 | /ˈmɪnibʌs/ | A minibus took us to the airport. | Un minibus nous a conduits à l'aéroport.
 sunroof | toit ouvrant | n | B2 | /ˈsʌnruːf/ | The car has a sunroof. | La voiture a un toit ouvrant.
+handlebars | guidon | n | B1 | /ˈhændlbɑːz/ | Keep both hands on the handlebars. | Garde les deux mains sur le guidon.
+brake lever | levier de frein | n | B2 | /ˈbreɪk ˌliːvə/ | Squeeze the brake lever gently. | Serre doucement le levier de frein.
+mudguard | garde-boue | n | B2 | /ˈmʌdɡɑːd/ | Without a mudguard, you'll get splashed. | Sans garde-boue, tu vas te faire éclabousser.
+pannier | sacoche (de vélo) | n | C1 | /ˈpæniə/ | She carries her laptop in a bike pannier. | Elle transporte son ordinateur dans une sacoche de vélo.
+bike lock | antivol (de vélo) | n | A2 | /ˈbaɪk lɒk/ | Never leave your bike without a bike lock. | Ne laisse jamais ton vélo sans antivol.
+bike rack | support à vélos, porte-vélos | n | B1 | /ˈbaɪk ræk/ | Leave your bike in the bike rack outside the station. | Laisse ton vélo au support devant la gare.
+kickstand | béquille (de vélo, de moto) | n | B2 | /ˈkɪkstænd/ | Put the kickstand down so the bike doesn't fall. | Baisse la béquille pour que le vélo ne tombe pas.
+inner tube | chambre à air | n | B2 | /ˈɪnə tjuːb/ | I carry a spare inner tube when I cycle. | J'emporte une chambre à air de rechange quand je fais du vélo.
+bicycle pump | pompe à vélo | n | A2 | /ˈbaɪsɪkl pʌmp/ | Pump up the tyres with the bicycle pump. | Gonfle les pneus avec la pompe à vélo.
+spoke | rayon (de roue) | n | B2 | /spəʊk/ | One of the spokes on my front wheel is broken. | Un des rayons de ma roue avant est cassé.
+cycle path | piste cyclable | n | A2 | /ˈsaɪkl pɑːθ/ | Take the cycle path along the river. | Prends la piste cyclable le long de la rivière.
+roof rack | galerie (de toit) | n | B2 | /ˈruːf ræk/ | We tied the canoe to the roof rack. | Nous avons attaché le canoë sur la galerie.
+tow bar | attelage, boule de remorquage | n | C1 | /ˈtəʊ bɑː/ | You need a tow bar to pull a caravan. | Il faut un attelage pour tracter une caravane.
+people carrier | monospace | n | B2 | /ˈpiːpl ˌkæriə/ | With four children, they drive a people carrier. | Avec quatre enfants, ils roulent en monospace.
+estate car | break | n | B2 | /ɪˈsteɪt kɑː/ | An estate car has a big boot for luggage. | Un break a un grand coffre pour les bagages.
+hatchback | voiture à hayon, cinq portes | n | B2 | /ˈhætʃbæk/ | A small hatchback is ideal in town. | Une petite cinq-portes est idéale en ville.
+sports car | voiture de sport | n | A2 | /ˈspɔːts kɑː/ | He dreams of owning a red sports car. | Il rêve d'avoir une voiture de sport rouge.
+four-wheel drive | quatre-quatre | n | B1 | /ˌfɔː wiːl ˈdraɪv/ | You need a four-wheel drive on these mountain roads. | Il faut un quatre-quatre sur ces routes de montagne.
+second-hand car | voiture d'occasion | n | A2 | /ˌsekənd hænd ˈkɑː/ | We bought a second-hand car from a neighbour. | Nous avons acheté une voiture d'occasion à un voisin.
+car dealer | concessionnaire automobile | n | B2 | /ˈkɑː ˌdiːlə/ | The car dealer offered us a discount. | Le concessionnaire nous a proposé une remise.
+test drive | essai sur route | n | B1 | /ˈtest draɪv/ | Always take a car for a test drive before buying it. | Fais toujours un essai avant d'acheter une voiture.
+sun visor | pare-soleil | n | B2 | /ˈsʌn ˌvaɪzə/ | Pull down the sun visor if the sun is in your eyes. | Baisse le pare-soleil si le soleil t'éblouit.
+cup holder | porte-gobelet | n | B1 | /ˈkʌp ˌhəʊldə/ | Put your drink in the cup holder. | Mets ta boisson dans le porte-gobelet.
+dashcam | caméra embarquée | n | B2 | /ˈdæʃkæm/ | The dashcam recorded the accident. | La caméra embarquée a enregistré l'accident.
+speedometer | compteur de vitesse | n | B2 | /spiːˈdɒmɪtə/ | Keep an eye on the speedometer in town. | Garde un œil sur le compteur de vitesse en ville.
+mileometer | compteur kilométrique (en miles) | n | C1 | /maɪˈlɒmɪtə/ | The mileometer shows over 100,000 miles. | Le compteur affiche plus de cent mille miles.
+fuel gauge | jauge de carburant | n | B2 | /ˈfjuːəl ɡeɪdʒ/ | The fuel gauge is almost on empty. | La jauge de carburant est presque à zéro.
+warning light | voyant d'alerte | n | B2 | /ˈwɔːnɪŋ laɪt/ | A red warning light came on on the dashboard. | Un voyant rouge s'est allumé sur le tableau de bord.
+hazard lights | feux de détresse, warnings | n | B2 | /ˈhæzəd laɪts/ | Put your hazard lights on if you break down. | Mets tes feux de détresse si tu tombes en panne.
+fog lights | feux antibrouillard | n | B2 | /ˈfɒɡ laɪts/ | Switch on your fog lights in thick fog. | Allume tes feux antibrouillard par brouillard épais.
+full beam | pleins phares, feux de route | n | C1 | /ˌfʊl ˈbiːm/ | Dip your lights instead of driving on full beam. | Baisse tes phares au lieu de rouler en pleins phares.
+brake lights | feux stop | n | B2 | /ˈbreɪk laɪts/ | One of your brake lights isn't working. | Un de tes feux stop ne marche pas.
+number plate | plaque d'immatriculation | n | B1 | /ˈnʌmbə pleɪt/ | The witness remembered the number plate. | Le témoin s'est souvenu de la plaque d'immatriculation.
+registration number | numéro d'immatriculation | n | B2 | /ˌredʒɪˈstreɪʃn ˌnʌmbə/ | Write down the registration number of the van. | Note le numéro d'immatriculation de la camionnette.
+handbrake | frein à main | n | B1 | /ˈhændbreɪk/ | Don't forget to put the handbrake on. | N'oublie pas de mettre le frein à main.
+manual car | voiture à boîte manuelle | n | B1 | /ˌmænjuəl ˈkɑː/ | In Britain, most people learn to drive in a manual car. | Au Royaume-Uni, on apprend surtout à conduire en boîte manuelle.
+cruise control | régulateur de vitesse | n | B2 | /ˈkruːz kənˌtrəʊl/ | Cruise control is useful on the motorway. | Le régulateur de vitesse est pratique sur l'autoroute.
+power steering | direction assistée | n | B2 | /ˌpaʊə ˈstɪərɪŋ/ | Old cars didn't have power steering. | Les vieilles voitures n'avaient pas de direction assistée.
+central locking | verrouillage centralisé | n | B2 | /ˌsentrəl ˈlɒkɪŋ/ | Central locking opens every door at once. | Le verrouillage centralisé ouvre toutes les portes d'un coup.
+spare wheel | roue de secours | n | B1 | /ˌspeə ˈwiːl/ | The spare wheel is under the boot floor. | La roue de secours est sous le plancher du coffre.
+wheel clamp | sabot (de Denver) | n | C1 | /ˈwiːl klæmp/ | He came back to find a wheel clamp on his car. | En revenant, il a trouvé un sabot sur sa voiture.
+hubcap | enjoliveur | n | B2 | /ˈhʌbkæp/ | We lost a hubcap on the way home. | Nous avons perdu un enjoliveur en rentrant.
+tyre pressure | pression des pneus | n | B2 | /ˈtaɪə ˌpreʃə/ | Check the tyre pressure before a long journey. | Vérifie la pression des pneus avant un long trajet.
+breakdown cover | assistance dépannage | n | C1 | /ˈbreɪkdaʊn ˌkʌvə/ | Our insurance includes breakdown cover. | Notre assurance comprend l'assistance dépannage.
+jump leads | câbles de démarrage | n | C1 | /ˈdʒʌmp liːdz/ | A neighbour started our car with jump leads. | Un voisin a fait démarrer notre voiture avec des câbles.
+antifreeze | antigel | n | B2 | /ˈæntifriːz/ | Add antifreeze to the radiator before winter. | Ajoute de l'antigel dans le radiateur avant l'hiver.
+petrol pump | pompe à essence | n | B1 | /ˈpetrəl pʌmp/ | Pull up at petrol pump number four. | Arrête-toi à la pompe numéro quatre.
+paintwork | peinture (d'une voiture) | n | B2 | /ˈpeɪntwɜːk/ | The paintwork was scratched in the car park. | La peinture a été rayée sur le parking.
+grille | calandre, grille | n | C1 | /ɡrɪl/ | The car has a shiny chrome grille. | La voiture a une calandre chromée brillante.
+tailgate | hayon | n | C1 | /ˈteɪlɡeɪt/ | Lift the tailgate to load the shopping. | Lève le hayon pour charger les courses.
+silencer | silencieux (de pot d'échappement) | n | C1 | /ˈsaɪlənsə/ | The car is noisy because the silencer has a hole. | La voiture est bruyante parce que le silencieux est percé.
+spark plug | bougie d'allumage | n | C1 | /ˈspɑːk plʌɡ/ | The mechanic changed the spark plugs. | Le mécanicien a changé les bougies.
+oil filter | filtre à huile | n | C1 | /ˈɔɪl ˌfɪltə/ | Replace the oil filter at every service. | Remplace le filtre à huile à chaque révision.
+dipstick | jauge (à huile) | n | C1 | /ˈdɪpstɪk/ | Pull out the dipstick to check the oil level. | Tire la jauge pour vérifier le niveau d'huile.
+key fob | télécommande de clé | n | B2 | /ˈkiː fɒb/ | Press the key fob to unlock the car. | Appuie sur la télécommande pour déverrouiller la voiture.
+traffic cone | cône de signalisation, plot | n | B1 | /ˈtræfɪk kəʊn/ | Traffic cones closed one lane of the road. | Des cônes fermaient une voie de la route.
+crash barrier | glissière de sécurité | n | B2 | /ˈkræʃ ˌbæriə/ | The lorry hit the crash barrier. | Le camion a heurté la glissière de sécurité.
+central reservation | terre-plein central | n | C1 | /ˌsentrəl rezəˈveɪʃn/ | Trees grow on the central reservation. | Des arbres poussent sur le terre-plein central.
+cat's eyes | catadioptres (sur la chaussée) | n | C1 | /ˈkæts aɪz/ | Cat's eyes shine in your headlights at night. | Les catadioptres brillent dans les phares la nuit.
+double yellow lines | lignes jaunes (stationnement interdit) | n | B2 | /ˌdʌbl ˌjeləʊ ˈlaɪnz/ | You can't park on double yellow lines. | On ne peut pas se garer sur les doubles lignes jaunes.
+box junction | carrefour à damier jaune | n | C1 | /ˈbɒks ˌdʒʌŋkʃn/ | Don't stop inside a box junction. | Ne t'arrête pas sur un carrefour à damier jaune.
+mini roundabout | mini rond-point | n | B2 | /ˌmɪni ˈraʊndəbaʊt/ | Turn left at the mini roundabout. | Tourne à gauche au mini rond-point.
+tailback | bouchon, file de voitures | n | C1 | /ˈteɪlbæk/ | There's a five-mile tailback on the motorway. | Il y a un bouchon de huit kilomètres sur l'autoroute.
+toll road | route à péage | n | B2 | /ˈtəʊl rəʊd/ | We avoided the toll road to save money. | Nous avons évité la route à péage pour économiser.
+level crossing | passage à niveau | n | B1 | /ˌlevl ˈkrɒsɪŋ/ | Wait at the level crossing until the train has passed. | Attends au passage à niveau que le train soit passé.
+cattle grid | grille à bétail (sur la route) | n | C1 | /ˈkætl ɡrɪd/ | Drive slowly over the cattle grid. | Roule doucement sur la grille à bétail.
+motorway services | aire de service | n | B1 | /ˈməʊtəweɪ ˌsɜːvɪsɪz/ | Let's stop at the next motorway services. | Arrêtons-nous à la prochaine aire de service.
+park and ride | parking relais | n | B2 | /ˌpɑːk ən ˈraɪd/ | Use the park and ride and take the bus into town. | Prends le parking relais puis le bus jusqu'au centre.
+minicab | taxi (sur réservation), VTC | n | B2 | /ˈmɪnikæb/ | We booked a minicab to the airport. | Nous avons réservé une voiture avec chauffeur pour l'aéroport.
+black cab | taxi londonien | n | B2 | /ˌblæk ˈkæb/ | We hailed a black cab outside the theatre. | Nous avons hélé un taxi londonien devant le théâtre.
+bus pass | carte de bus, abonnement | n | A2 | /ˈbʌs pɑːs/ | Show your bus pass to the driver. | Montre ta carte de bus au chauffeur.
+fare dodger | fraudeur (dans les transports) | n | C1 | /ˈfeə ˌdɒdʒə/ | Fare dodgers can be fined on the spot. | Les fraudeurs peuvent être verbalisés sur-le-champ.
+ticket barrier | portillon (d'accès) | n | B2 | /ˈtɪkɪt ˌbæriə/ | Put your ticket in the ticket barrier. | Insère ton billet dans le portillon.
+buffet car | voiture-bar | n | B2 | /ˈbʊfeɪ kɑː/ | Sandwiches are sold in the buffet car. | On vend des sandwichs à la voiture-bar.
+night bus | bus de nuit | n | A2 | /ˈnaɪt bʌs/ | We took the night bus home after the concert. | Nous avons pris le bus de nuit après le concert.
+lift share | covoiturage | n | B2 | /ˈlɪft ʃeə/ | We arranged a lift share with colleagues. | Nous avons organisé un covoiturage avec des collègues.
+slip road | bretelle d'accès | n | B2 | /ˈslɪp rəʊd/ | Take the slip road to join the motorway. | Prends la bretelle pour rejoindre l'autoroute.
+hard shoulder | bande d'arrêt d'urgence | n | B2 | /ˌhɑːd ˈʃəʊldə/ | He stopped on the hard shoulder with a flat tyre. | Il s'est arrêté sur la bande d'arrêt d'urgence avec un pneu crevé.
+speed camera | radar (routier) | n | B1 | /ˈspiːd ˌkæmərə/ | Slow down, there's a speed camera ahead. | Ralentis, il y a un radar devant.
+speed bump | ralentisseur, dos-d'âne | n | B1 | /ˈspiːd bʌmp/ | Drive slowly over the speed bumps. | Passe doucement sur les ralentisseurs.
+roadworks | travaux (sur la route) | n | B1 | /ˈrəʊdwɜːks/ | Roadworks are causing long delays. | Les travaux provoquent de longs retards.
+spare tyre | pneu de secours | n | B1 | /ˌspeə ˈtaɪə/ | Check the spare tyre is pumped up. | Vérifie que le pneu de secours est gonflé.
+jack | cric | n | B2 | /dʒæk/ | Use the jack to lift the car. | Utilise le cric pour soulever la voiture.
+wing mirror | rétroviseur extérieur | n | B1 | /ˈwɪŋ ˌmɪrə/ | A cyclist knocked my wing mirror. | Un cycliste a heurté mon rétroviseur extérieur.
+rear-view mirror | rétroviseur (intérieur) | n | B1 | /ˌrɪə vjuː ˈmɪrə/ | Check your rear-view mirror before you brake. | Regarde dans ton rétroviseur avant de freiner.
+gear stick | levier de vitesse | n | B1 | /ˈɡɪə stɪk/ | Put the gear stick in neutral. | Mets le levier de vitesse au point mort.
+glove compartment | boîte à gants | n | B1 | /ˈɡlʌv kəmˌpɑːtmənt/ | The documents are in the glove compartment. | Les papiers sont dans la boîte à gants.
+exhaust pipe | pot d'échappement | n | B1 | /ɪɡˈzɔːst paɪp/ | Black smoke was coming out of the exhaust pipe. | De la fumée noire sortait du pot d'échappement.
+MOT | contrôle technique | n | B2 | /ˌem əʊ ˈtiː/ | My car failed its MOT. | Ma voiture a raté son contrôle technique.
+driving test | examen du permis de conduire | n | A2 | /ˈdraɪvɪŋ test/ | She passed her driving test first time. | Elle a eu son permis du premier coup.
+L-plates | plaques « apprenti conducteur » | n | B2 | /ˈel pleɪts/ | Learner drivers must display L-plates. | Les apprentis conducteurs doivent afficher des plaques « L ».
+road tax | vignette automobile, taxe de circulation | n | B2 | /ˈrəʊd tæks/ | Have you paid the road tax this year? | As-tu payé la taxe de circulation cette année ?
+to give way | céder le passage | v | B1 | /ɡɪv ˈweɪ/ | You must give way to traffic on the right. | Il faut céder le passage aux véhicules venant de droite.
+double-decker | bus à impériale | n | A2 | /ˌdʌbl ˈdekə/ | We sat upstairs on a red double-decker. | Nous étions à l'étage d'un bus rouge à impériale.
+season ticket | abonnement | n | B1 | /ˈsiːzn ˌtɪkɪt/ | A season ticket is cheaper if you travel every day. | Un abonnement revient moins cher si tu voyages tous les jours.
+departure board | tableau des départs | n | B1 | /dɪˈpɑːtʃə bɔːd/ | Check the platform on the departure board. | Vérifie le quai sur le tableau des départs.
+baggage reclaim | retrait des bagages | n | B1 | /ˈbæɡɪdʒ rɪˌkleɪm/ | We waited ages at baggage reclaim. | Nous avons attendu une éternité au retrait des bagages.
+hold luggage | bagages en soute | n | B2 | /ˈhəʊld ˌlʌɡɪdʒ/ | Liquids must go in your hold luggage. | Les liquides doivent aller dans les bagages en soute.
+overhead locker | coffre à bagages (en cabine) | n | B2 | /ˌəʊvəhed ˈlɒkə/ | Put your bag in the overhead locker. | Mets ton sac dans le coffre à bagages.
+return flight | vol retour | n | A2 | /rɪˈtɜːn flaɪt/ | Our return flight leaves at seven. | Notre vol retour part à sept heures.
+travel-sick | qui a le mal des transports | adj | B1 | /ˈtrævl sɪk/ | My son gets travel-sick on long journeys. | Mon fils a le mal des transports sur les longs trajets.
+control tower | tour de contrôle | n | B1 | /kənˈtrəʊl ˌtaʊə/ | The pilot spoke to the control tower. | Le pilote a parlé à la tour de contrôle.
+budget airline | compagnie aérienne à bas prix | n | B1 | /ˌbʌdʒɪt ˈeəlaɪn/ | Budget airlines charge extra for luggage. | Les compagnies à bas prix font payer les bagages en plus.
+frequent flyer | grand voyageur (en avion) | n | B2 | /ˌfriːkwənt ˈflaɪə/ | As a frequent flyer, he collects air miles. | En grand voyageur, il cumule les miles.
+maiden voyage | voyage inaugural | n | C1 | /ˌmeɪdn ˈvɔɪɪdʒ/ | The Titanic sank on its maiden voyage. | Le Titanic a coulé lors de son voyage inaugural.
+inbound | à l'arrivée, entrant | adj | C1 | /ˈɪnbaʊnd/ | Inbound flights were delayed by fog. | Les vols à l'arrivée ont été retardés par le brouillard.
+transporter | camion porte-voitures, transporteur | n | C1 | /trænˈspɔːtə/ | A car transporter was parked outside the garage. | Un camion porte-voitures était garé devant le garage.
+overdrive | surmultipliée ; (fig.) suractivité | n | C1 | /ˈəʊvədraɪv/ | Before the wedding, she went into overdrive. | Avant le mariage, elle s'est mise à fonctionner à plein régime.
+aeroplane | avion | n | A1 | /ˈeərəpleɪn/ | The children waved at the aeroplane. | Les enfants faisaient signe à l'avion.
+intercontinental | intercontinental | adj | C1 | /ˌɪntəˌkɒntɪˈnentl/ | They took an intercontinental flight to Sydney. | Ils ont pris un vol intercontinental pour Sydney.
+spar | espar, mât | n | C2 | /spɑː/ | A wooden spar was washed up on the beach. | Un espar en bois s'était échoué sur la plage.
+main line | grande ligne (ferroviaire) | n | C2 | /ˈmeɪn laɪn/ | The town is on the main line to London. | La ville est sur la grande ligne de Londres.
+clipper | clipper (voilier rapide) | n | C2 | /ˈklɪpə/ | Tea clippers raced from China to London. | Les clippers du thé faisaient la course de la Chine à Londres.
+vehicular | automobile, de véhicules | adj | C2 | /vɪˈhɪkjʊlə/ | The bridge is closed to vehicular traffic. | Le pont est fermé à la circulation automobile.
+eastbound | en direction de l'est | adj | C1 | /ˈiːstbaʊnd/ | The eastbound platform is closed. | Le quai en direction de l'est est fermé.
+to toot | klaxonner | v | B2 | /tuːt/ | The driver tooted his horn. | Le conducteur a klaxonné.
+steamboat | bateau à vapeur | n | B2 | /ˈstiːmbəʊt/ | Steamboats once carried passengers down the Mississippi. | Des bateaux à vapeur transportaient autrefois des passagers sur le Mississippi.
+schooner | goélette | n | C2 | /ˈskuːnə/ | A two-masted schooner sailed into the harbour. | Une goélette à deux mâts est entrée dans le port.
+to veer | virer, dévier | v | C1 | /vɪə/ | The car veered off the road. | La voiture a fait une embardée et a quitté la route.
+portage | portage | n | C2 | /ˈpɔːtɪdʒ/ | We carried the canoe over a long portage. | Nous avons porté le canoë sur un long portage.
+outbound | (vol, trajet) aller | adj | C1 | /ˈaʊtbaʊnd/ | The outbound flight was delayed. | Le vol aller a été retardé.
+buoy | bouée | n | B2 | /bɔɪ/ | The boat was tied to a buoy. | Le bateau était amarré à une bouée.
+to alight | descendre (d'un véhicule) | v | C2 | /əˈlaɪt/ | Passengers may alight at the next stop. | Les passagers peuvent descendre au prochain arrêt.
+delivery van | camionnette de livraison | n | B1 | /dɪˈlɪvəri væn/ | A delivery van was blocking the road. | Une camionnette de livraison bloquait la route.
+sleigh | traîneau | n | B2 | /sleɪ/ | Reindeer pulled the sleigh through the snow. | Des rennes tiraient le traîneau dans la neige.
+navigational | de navigation | adj | C1 | /ˌnævɪˈɡeɪʃənl/ | The ship's navigational equipment failed. | L'équipement de navigation du navire est tombé en panne.
+gasket | joint (d'étanchéité) | n | C2 | /ˈɡæskɪt/ | The mechanic replaced the head gasket. | Le mécanicien a remplacé le joint de culasse.
+bottleneck | goulet d'étranglement | n | C1 | /ˈbɒtlnek/ | Roadworks created a bottleneck near the bridge. | Les travaux ont créé un goulet d'étranglement près du pont.
+rowing boat | barque | n | A2 | /ˈrəʊɪŋ bəʊt/ | They took a rowing boat out on the lake. | Ils sont partis en barque sur le lac.
+sailing boat | voilier | n | A2 | /ˈseɪlɪŋ bəʊt/ | A sailing boat drifted past the harbour. | Un voilier est passé au large du port.
+high-speed | à grande vitesse | adj | B1 | /ˌhaɪ ˈspiːd/ | We took a high-speed train to Paris. | Nous avons pris un train à grande vitesse pour Paris.
+broken-down | en panne ; délabré | adj | B2 | /ˌbrəʊkən ˈdaʊn/ | A broken-down lorry was blocking the road. | Un camion en panne bloquait la route.
+off-road | tout-terrain | adj | B2 | /ˌɒf ˈrəʊd/ | We hired an off-road vehicle in the desert. | Nous avons loué un véhicule tout-terrain dans le désert.
+boarding card | carte d'embarquement | n | A2 | /ˈbɔːdɪŋ kɑːd/ | Show your boarding card at the gate. | Présente ta carte d'embarquement à la porte.
+transit lounge | salle de transit | n | B2 | /ˈtrænzɪt laʊndʒ/ | We waited three hours in the transit lounge. | Nous avons attendu trois heures en salle de transit.
+body scanner | scanner corporel | n | B2 | /ˈbɒdi ˌskænə/ | Passengers walk through a body scanner. | Les passagers passent dans un scanner corporel.
+excess luggage | excédent de bagages | n | B1 | /ˌekses ˈlʌɡɪdʒ/ | I had to pay for excess luggage. | J'ai dû payer un excédent de bagages.
+luggage tag | étiquette à bagages | n | A2 | /ˈlʌɡɪdʒ tæɡ/ | Write your address on the luggage tag. | Écris ton adresse sur l'étiquette à bagages.
+delayed flight | vol retardé | n | A2 | /dɪˌleɪd ˈflaɪt/ | We got a refund for the delayed flight. | Nous avons été remboursés pour le vol retardé.
+flight number | numéro de vol | n | A2 | /ˈflaɪt ˌnʌmbə/ | What's your flight number? | Quel est ton numéro de vol ?
+legroom | place pour les jambes | n | B1 | /ˈleɡruːm/ | There's very little legroom on this plane. | Il y a très peu de place pour les jambes dans cet avion.
+tray table | tablette (de siège) | n | B1 | /ˈtreɪ ˌteɪbl/ | Please fold away your tray table for landing. | Veuillez replier votre tablette pour l'atterrissage.
+life vest | gilet de sauvetage | n | B1 | /ˈlaɪf vest/ | Your life vest is under your seat. | Votre gilet de sauvetage se trouve sous votre siège.
+in-flight meal | repas à bord | n | B1 | /ˌɪn flaɪt ˈmiːl/ | The in-flight meal was surprisingly good. | Le repas à bord était étonnamment bon.
+cabin bag | bagage cabine | n | A2 | /ˈkæbɪn bæɡ/ | You can take one cabin bag on board. | Vous pouvez prendre un bagage cabine à bord.
+wheelie case | valise à roulettes | n | B1 | /ˈwiːli keɪs/ | She pulled her wheelie case through the station. | Elle tirait sa valise à roulettes dans la gare.
+travel pillow | coussin de voyage | n | A2 | /ˈtrævl ˌpɪləʊ/ | A travel pillow helps you sleep on the plane. | Un coussin de voyage aide à dormir dans l'avion.
+money belt | ceinture porte-billets | n | B1 | /ˈmʌni belt/ | He kept his passport in a money belt. | Il gardait son passeport dans une ceinture porte-billets.
+travel adaptor | adaptateur de voyage | n | A2 | /ˈtrævl əˌdæptə/ | Don't forget a travel adaptor for the plugs. | N'oublie pas un adaptateur pour les prises.
+culture shock | choc culturel | n | B1 | /ˈkʌltʃə ʃɒk/ | Moving to Japan was a real culture shock. | Partir vivre au Japon a été un vrai choc culturel.
+language barrier | barrière de la langue | n | B1 | /ˈlæŋɡwɪdʒ ˌbæriə/ | The language barrier made shopping difficult. | La barrière de la langue compliquait les courses.
+hybrid vehicle | véhicule hybride | n | B2 | /ˌhaɪbrɪd ˈviːəkl/ | Hybrid vehicles use both petrol and electricity. | Les véhicules hybrides utilisent à la fois l'essence et l'électricité.
+business class | classe affaires | n | B1 | /ˈbɪznəs klɑːs/ | The director always flies business class. | Le directeur voyage toujours en classe affaires.
+to get on the bus | monter dans le bus | expr | A1 | /ɡet ɒn ðə ˈbʌs/ | Get on the bus at the front door. | Monte dans le bus par la porte avant.
+to get off the bus | descendre du bus | expr | A1 | /ɡet ɒf ðə ˈbʌs/ | We get off the bus at the next stop. | Nous descendons du bus au prochain arrêt.
+to take a taxi | prendre un taxi | expr | A1 | /teɪk ə ˈtæksi/ | It's late; let's take a taxi. | Il est tard, prenons un taxi.
+to hail a taxi | héler un taxi | expr | B2 | /heɪl ə ˈtæksi/ | She stepped into the road to hail a taxi. | Elle s'est avancée sur la chaussée pour héler un taxi.
+to give someone a lift | emmener quelqu'un en voiture | expr | A2 | /ɡɪv ˌsʌmwʌn ə ˈlɪft/ | Can you give me a lift to the station? | Tu peux m'emmener à la gare ?
+to park the car | garer la voiture | expr | A1 | /pɑːk ðə ˈkɑː/ | I'll park the car and meet you inside. | Je gare la voiture et je te rejoins à l'intérieur.
+is this seat taken | cette place est-elle prise ? | expr | A2 | /ɪz ˌðɪs ˈsiːt ˈteɪkən/ | Excuse me, is this seat taken? | Excusez-moi, cette place est-elle prise ?
+safe journey | bon voyage, bonne route | expr | B1 | /ˌseɪf ˈdʒɜːni/ | Goodbye, and safe journey! | Au revoir, et bonne route !
+freeway | autoroute (US) | n | B1 | /ˈfriːweɪ/ | Traffic on the freeway was very slow. | La circulation sur l'autoroute était très lente.
+windshield | pare-brise (US) | n | B1 | /ˈwɪndʃiːld/ | A stone hit the windshield. | Une pierre a heurté le pare-brise.
+license plate | plaque d'immatriculation (US) | n | B1 | /ˈlaɪsns pleɪt/ | The police wrote down the license plate. | La police a noté le numéro d'immatriculation.
+driver's license | permis de conduire (US) | n | A2 | /ˈdraɪvəz ˌlaɪsns/ | Can I see your driver's license, please? | Puis-je voir votre permis de conduire, s'il vous plaît ?
+fender | aile (de voiture) (US) | n | C1 | /ˈfendə/ | The accident dented the front fender. | L'accident a cabossé l'aile avant.
+muffler | silencieux, pot d'échappement (US) | n | C1 | /ˈmʌflə/ | The car needs a new muffler. | La voiture a besoin d'un nouveau silencieux.
+gas tank | réservoir d'essence (US) | n | B1 | /ˈɡæs tæŋk/ | The gas tank is almost empty. | Le réservoir d'essence est presque vide.
+to take the wheel | prendre le volant | expr | B2 | /teɪk ðə ˈwiːl/ | I'm tired; can you take the wheel? | Je suis fatigué ; tu peux prendre le volant ?
+to take a shortcut | prendre un raccourci | expr | B1 | /teɪk ə ˈʃɔːtkʌt/ | Let's take a shortcut through the park. | Prenons un raccourci par le parc.
+to take a detour | faire un détour | expr | B1 | /teɪk ə ˈdiːtʊə/ | We had to take a detour because of the roadworks. | Nous avons dû faire un détour à cause des travaux.
+to take a trip | faire un voyage, une excursion | expr | A2 | /teɪk ə ˈtrɪp/ | We're planning to take a trip to Scotland. | Nous prévoyons de faire un voyage en Écosse.
+on foot | à pied | adv | A1 | /ɒn ˈfʊt/ | The station is ten minutes away on foot. | La gare est à dix minutes à pied.
+at sea | en mer | adv | B1 | /ət ˈsiː/ | The fishermen spent three days at sea. | Les pêcheurs ont passé trois jours en mer.
+on the move | en mouvement, en déplacement | adj | B2 | /ɒn ðə ˈmuːv/ | With her job, she's always on the move. | Avec son travail, elle est toujours en déplacement.
+by car | en voiture | adv | A1 | /baɪ ˈkɑː/ | It takes an hour by car. | Il faut une heure en voiture.
+by train | en train | adv | A1 | /baɪ ˈtreɪn/ | We travelled to Edinburgh by train. | Nous sommes allés à Édimbourg en train.
+by plane | en avion | adv | A1 | /baɪ ˈpleɪn/ | It's quicker by plane, but more expensive. | C'est plus rapide en avion, mais plus cher.
+by bike | à vélo | adv | A1 | /baɪ ˈbaɪk/ | I go to school by bike. | Je vais à l'école à vélo.
+at full speed | à toute vitesse | adv | B1 | /ət ˌfʊl ˈspiːd/ | The ambulance went past at full speed. | L'ambulance est passée à toute vitesse.
+to drive carefully | conduire prudemment | expr | A2 | /draɪv ˈkeəfəli/ | Drive carefully, the roads are icy. | Conduis prudemment, les routes sont verglacées.
+heavy traffic | circulation dense | n | B1 | /ˌhevi ˈtræfɪk/ | We were stuck in heavy traffic for an hour. | Nous sommes restés coincés une heure dans une circulation dense.
+sedan | berline (US) | n | B2 | /sɪˈdæn/ | They drive a grey four-door sedan. | Ils roulent dans une berline grise à quatre portes.
+minivan | monospace (US) | n | B2 | /ˈmɪnivæn/ | A minivan is perfect for a big family. | Un monospace est idéal pour une famille nombreuse.
+streetcar | tramway (US) | n | B2 | /ˈstriːtkɑː/ | Take the streetcar to the city centre. | Prends le tramway pour aller au centre-ville.
 `,
 );
 
@@ -905,5 +1128,127 @@ hedge trimmer | taille-haie | n | C1 | /ˈhedʒ ˌtrɪmə/ | He cut the hedge wi
 auger | tarière | n | C2 | /ˈɔːɡə/ | He drilled a hole with an auger. | Il a percé un trou à la tarière.
 flywheel | volant (d'inertie) | n | C2 | /ˈflaɪwiːl/ | The engine has a heavy flywheel. | Le moteur a un volant lourd.
 furlough | congé (temporaire), chômage partiel | n | C2 | /ˈfɜːləʊ/ | Workers were put on furlough. | Les employés ont été mis au chômage partiel.
+paper jam | bourrage papier | n | B2 | /ˈpeɪpə dʒæm/ | There's a paper jam in the photocopier again. | Il y a encore un bourrage papier dans la photocopieuse.
+covering letter | lettre de motivation | n | B2 | /ˈkʌvərɪŋ ˌletə/ | Send your CV with a short covering letter. | Envoie ton CV avec une courte lettre de motivation.
+job application | candidature | n | B1 | /ˈdʒɒb æplɪˌkeɪʃn/ | I've sent off ten job applications this week. | J'ai envoyé dix candidatures cette semaine.
+trial period | période d'essai | n | B1 | /ˈtraɪəl ˌpɪəriəd/ | There's a three-month trial period. | Il y a une période d'essai de trois mois.
+to be made redundant | être licencié (économique) | expr | B2 | /meɪd rɪˈdʌndənt/ | Two hundred workers will be made redundant. | Deux cents employés vont être licenciés.
+to hand in your notice | donner sa démission, poser son préavis | expr | B2 | /hænd ɪn jə ˈnəʊtɪs/ | She handed in her notice on Friday. | Elle a donné sa démission vendredi.
+National Insurance | cotisations sociales (au Royaume-Uni) | n | C1 | /ˌnæʃnəl ɪnˈʃʊərəns/ | National Insurance is taken from your salary. | Les cotisations sociales sont prélevées sur ton salaire.
+company car | voiture de fonction | n | B1 | /ˌkʌmpəni ˈkɑː/ | The job comes with a company car. | Le poste comprend une voiture de fonction.
+remote working | télétravail | n | B1 | /rɪˌməʊt ˈwɜːkɪŋ/ | Remote working became normal during the pandemic. | Le télétravail est devenu normal pendant la pandémie.
+swivel chair | fauteuil pivotant | n | B2 | /ˈswɪvl tʃeə/ | He spun round on his swivel chair. | Il a pivoté sur son fauteuil.
+filing cabinet | classeur à tiroirs, meuble de classement | n | B1 | /ˈfaɪlɪŋ ˌkæbɪnət/ | The contracts are in the filing cabinet. | Les contrats sont dans le meuble de classement.
+in-tray | corbeille du courrier à traiter | n | C1 | /ˈɪn treɪ/ | My in-tray is overflowing. | Ma corbeille de courrier à traiter déborde.
+video conference | visioconférence | n | B1 | /ˈvɪdiəʊ ˌkɒnfərəns/ | We hold a video conference every Monday. | Nous faisons une visioconférence tous les lundis.
+line manager | supérieur hiérarchique direct | n | B2 | /ˈlaɪn ˌmænɪdʒə/ | Ask your line manager for a day off. | Demande un jour de congé à ton supérieur direct.
+training course | stage de formation | n | B1 | /ˈtreɪnɪŋ kɔːs/ | I'm going on a training course next week. | Je pars en formation la semaine prochaine.
+personal assistant | assistant de direction | n | B1 | /ˌpɜːsənl əˈsɪstənt/ | The director's personal assistant answered the phone. | L'assistante du directeur a répondu au téléphone.
+production line | chaîne de production | n | B2 | /prəˈdʌkʃn laɪn/ | The cars are assembled on a production line. | Les voitures sont assemblées sur une chaîne de production.
+voluntary work | bénévolat | n | B1 | /ˈvɒləntri wɜːk/ | She does voluntary work at the hospital. | Elle fait du bénévolat à l'hôpital.
+draft | brouillon, ébauche | n | B2 | /drɑːft/ | This is only a first draft of the report. | Ce n'est qu'un premier jet du rapport.
+demo | démonstration ; maquette | n | B1 | /ˈdeməʊ/ | The salesman gave us a demo of the new software. | Le vendeur nous a fait une démonstration du nouveau logiciel.
+enquiry | demande de renseignements ; enquête | n | B2 | /ɪnˈkwaɪəri/ | We received hundreds of enquiries about the job. | Nous avons reçu des centaines de demandes de renseignements sur le poste.
+chairperson | président (de séance) | n | B2 | /ˈtʃeəpɜːsn/ | The chairperson opened the meeting. | La présidente a ouvert la séance.
+consultative | consultatif | adj | C2 | /kənˈsʌltətɪv/ | The committee has a purely consultative role. | Le comité a un rôle purement consultatif.
+staffer | membre du personnel | n | C1 | /ˈstɑːfə/ | A White House staffer leaked the memo. | Un membre du personnel de la Maison-Blanche a divulgué la note.
+loader | chargeur (machine) ; manutentionnaire | n | C1 | /ˈləʊdə/ | A loader moved the gravel. | Une chargeuse a déplacé le gravier.
+toner | toner, encre (d'imprimante laser) | n | C1 | /ˈtəʊnə/ | The printer is out of toner. | L'imprimante n'a plus d'encre.
+wildcat strike | grève sauvage | n | C2 | /ˌwaɪldkæt ˈstraɪk/ | A wildcat strike stopped production. | Une grève sauvage a stoppé la production.
+to outperform | surpasser, faire mieux que | v | C1 | /ˌaʊtpəˈfɔːm/ | Girls outperform boys at school. | Les filles réussissent mieux que les garçons à l'école.
+cog | dent (d'engrenage) ; rouage | n | C1 | /kɒɡ/ | He felt like a small cog in a big machine. | Il avait l'impression d'être un petit rouage d'une grande machine.
+actionable | exploitable, concret | adj | C2 | /ˈækʃənəbl/ | The report gives actionable advice. | Le rapport donne des conseils concrets.
+leaving party | pot de départ | n | B1 | /ˈliːvɪŋ ˌpɑːti/ | We had a leaving party for our manager. | Nous avons organisé un pot de départ pour notre responsable.
+reinstatement | réintégration | n | C2 | /ˌriːɪnˈsteɪtmənt/ | The union demanded his reinstatement. | Le syndicat a exigé sa réintégration.
+leeway | marge de manœuvre | n | C1 | /ˈliːweɪ/ | Managers have some leeway in setting prices. | Les responsables ont une certaine marge de manœuvre pour fixer les prix.
+chairmanship | présidence | n | C1 | /ˈtʃeəmənʃɪp/ | The committee met under her chairmanship. | Le comité s'est réuni sous sa présidence.
+deadlock | impasse | n | C1 | /ˈdedlɒk/ | The talks ended in deadlock. | Les négociations ont abouti à une impasse.
+marketer | spécialiste du marketing | n | C1 | /ˈmɑːkɪtə/ | Marketers target young consumers online. | Les spécialistes du marketing ciblent les jeunes en ligne.
+to enquire | se renseigner | v | B2 | /ɪnˈkwaɪə/ | I'm writing to enquire about the job. | Je vous écris pour me renseigner sur le poste.
+parental leave | congé parental | n | B2 | /pəˌrentl ˈliːv/ | He took three months' parental leave. | Il a pris trois mois de congé parental.
+high-powered | influent ; puissant | adj | C1 | /ˌhaɪ ˈpaʊəd/ | She has a high-powered job in the city. | Elle occupe un poste important dans la finance.
+low-paid | mal payé | adj | B2 | /ˌləʊ ˈpeɪd/ | Many carers are low-paid. | Beaucoup d'aides-soignants sont mal payés.
+on-site | sur place | adj | B2 | /ˌɒn ˈsaɪt/ | The factory has an on-site canteen. | L'usine a une cantine sur place.
+in-house | interne, maison | adj | C1 | /ˌɪn ˈhaʊs/ | The company has an in-house lawyer. | L'entreprise a un juriste interne.
+out-of-work | sans emploi | adj | B2 | /ˌaʊt əv ˈwɜːk/ | He plays an out-of-work actor. | Il joue un acteur sans emploi.
+reception area | (espace d')accueil | n | B1 | /rɪˈsepʃn ˌeəriə/ | Please wait in the reception area. | Veuillez patienter à l'accueil.
+business partner | associé | n | B1 | /ˈbɪznəs ˌpɑːtnə/ | He founded the firm with a business partner. | Il a fondé l'entreprise avec un associé.
+sales target | objectif de vente | n | B1 | /ˈseɪlz ˌtɑːɡɪt/ | We hit our sales target a month early. | Nous avons atteint notre objectif de vente avec un mois d'avance.
+sales pitch | argumentaire de vente | n | B2 | /ˈseɪlz pɪtʃ/ | He gave us his sales pitch on the doorstep. | Il nous a fait son baratin de vendeur sur le pas de la porte.
+pay freeze | gel des salaires | n | C1 | /ˈpeɪ friːz/ | Public sector workers faced a pay freeze. | Les fonctionnaires ont subi un gel des salaires.
+pay cut | baisse de salaire | n | B2 | /ˈpeɪ kʌt/ | Staff accepted a pay cut to save jobs. | Les employés ont accepté une baisse de salaire pour sauver des emplois.
+pay gap | écart de salaire | n | B2 | /ˈpeɪ ɡæp/ | The pay gap between men and women persists. | L'écart de salaire entre hommes et femmes persiste.
+living wage | salaire décent | n | C1 | /ˌlɪvɪŋ ˈweɪdʒ/ | Campaigners want every worker to earn a living wage. | Les militants veulent que chaque travailleur gagne un salaire décent.
+wage packet | paie, enveloppe de paie | n | C1 | /ˈweɪdʒ ˌpækɪt/ | Rising prices eat into your wage packet. | La hausse des prix grignote la paie.
+job share | partage de poste | n | C1 | /ˈdʒɒb ʃeə/ | Two mothers do the job as a job share. | Deux mères se partagent le poste.
+career move | évolution de carrière | n | B2 | /kəˈrɪə muːv/ | Moving to London was a good career move. | Partir à Londres a été un bon choix de carrière.
+work experience | stage (en entreprise), expérience professionnelle | n | B1 | /ˈwɜːk ɪkˌspɪəriəns/ | She did two weeks' work experience at a bank. | Elle a fait un stage de deux semaines dans une banque.
+work placement | stage (dans le cadre d'études) | n | B2 | /ˈwɜːk ˌpleɪsmənt/ | The course includes a six-month work placement. | La formation comprend un stage de six mois.
+work permit | permis de travail | n | B2 | /ˈwɜːk ˌpɜːmɪt/ | Foreign students need a work permit. | Les étudiants étrangers ont besoin d'un permis de travail.
+work ethic | éthique du travail, ardeur au travail | n | B2 | /ˈwɜːk ˌeθɪk/ | She has a strong work ethic. | Elle a beaucoup d'ardeur au travail.
+workmate | collègue | n | B1 | /ˈwɜːkmeɪt/ | I went for lunch with a workmate. | Je suis allé déjeuner avec un collègue.
+working week | semaine de travail | n | B1 | /ˌwɜːkɪŋ ˈwiːk/ | Some firms are trying a four-day working week. | Certaines entreprises testent la semaine de quatre jours.
+working conditions | conditions de travail | n | B1 | /ˈwɜːkɪŋ kənˌdɪʃnz/ | The union fought for better working conditions. | Le syndicat s'est battu pour de meilleures conditions de travail.
+office party | fête de bureau | n | B1 | /ˈɒfɪs ˌpɑːti/ | The office party is on Friday. | La fête du bureau a lieu vendredi.
+branch office | succursale, agence | n | B2 | /ˈbrɑːntʃ ˌɒfɪs/ | She works at the company's Leeds branch office. | Elle travaille à l'agence de Leeds.
+staff training | formation du personnel | n | B1 | /ˈstɑːf ˌtreɪnɪŋ/ | The firm invests in staff training. | L'entreprise investit dans la formation du personnel.
+team building | renforcement de l'esprit d'équipe | n | B2 | /ˈtiːm ˌbɪldɪŋ/ | We went rafting as a team-building exercise. | Nous avons fait du rafting pour souder l'équipe.
+brainstorming session | séance de remue-méninges | n | B2 | /ˈbreɪnstɔːmɪŋ ˌseʃn/ | The idea came up in a brainstorming session. | L'idée est née lors d'une séance de remue-méninges.
+progress report | rapport d'avancement | n | B2 | /ˈprəʊɡres rɪˌpɔːt/ | Send me a progress report every Friday. | Envoie-moi un point d'avancement chaque vendredi.
+action points | points à traiter, actions à mener | n | C1 | /ˈækʃn pɔɪnts/ | The minutes list three action points. | Le compte rendu énumère trois actions à mener.
+conference room | salle de conférence | n | B1 | /ˈkɒnfərəns ruːm/ | The meeting is in conference room B. | La réunion a lieu dans la salle de conférence B.
+keynote speech | discours d'ouverture, allocution principale | n | C1 | /ˈkiːnəʊt spiːtʃ/ | The minister gave the keynote speech. | Le ministre a prononcé le discours d'ouverture.
+guest speaker | intervenant invité | n | B1 | /ˌɡest ˈspiːkə/ | Our guest speaker is a famous scientist. | Notre intervenant invité est un scientifique célèbre.
+union rep | délégué syndical | n | C1 | /ˈjuːniən rep/ | Talk to your union rep about the problem. | Parle du problème à ton délégué syndical.
+code of conduct | code de conduite | n | B2 | /ˌkəʊd əv ˈkɒndʌkt/ | Employees must follow the code of conduct. | Les employés doivent respecter le code de conduite.
+company policy | politique de l'entreprise | n | B1 | /ˌkʌmpəni ˈpɒləsi/ | Company policy forbids personal calls. | La politique de l'entreprise interdit les appels personnels.
+disciplinary action | sanction disciplinaire | n | C1 | /ˌdɪsəˈplɪnəri ˌækʃn/ | He faces disciplinary action for lateness. | Il risque une sanction disciplinaire pour ses retards.
+grievance procedure | procédure de réclamation | n | C2 | /ˈɡriːvns prəˌsiːdʒə/ | She started a formal grievance procedure. | Elle a engagé une procédure de réclamation officielle.
+exit interview | entretien de départ | n | C1 | /ˈeksɪt ˌɪntəvjuː/ | HR held an exit interview before she left. | Le service du personnel a mené un entretien de départ avant qu'elle parte.
+golden handshake | parachute doré, prime de départ | n | C1 | /ˌɡəʊldən ˈhændʃeɪk/ | The retiring director received a golden handshake. | Le directeur partant a touché un parachute doré.
+early retirement | préretraite, retraite anticipée | n | B2 | /ˌɜːli rɪˈtaɪəmənt/ | He took early retirement at fifty-five. | Il a pris une retraite anticipée à cinquante-cinq ans.
+pension scheme | régime de retraite | n | B2 | /ˈpenʃn skiːm/ | All employees join the company pension scheme. | Tous les salariés adhèrent au régime de retraite de l'entreprise.
+state pension | retraite de l'État | n | B2 | /ˌsteɪt ˈpenʃn/ | You can claim the state pension at sixty-six. | On peut toucher la retraite de l'État à soixante-six ans.
+to do overtime | faire des heures supplémentaires | expr | B1 | /duː ˈəʊvətaɪm/ | I do overtime when we're busy. | Je fais des heures supplémentaires quand il y a beaucoup de travail.
+to have a word with someone | toucher un mot à quelqu'un | expr | B2 | /hæv ə ˈwɜːd wɪð ˌsʌmwʌn/ | I'll have a word with the manager. | Je vais en toucher un mot au responsable.
+to have a meeting | avoir une réunion | expr | A2 | /hæv ə ˈmiːtɪŋ/ | We have a meeting every Monday morning. | Nous avons une réunion tous les lundis matin.
+to gain experience | acquérir de l'expérience | expr | B1 | /ɡeɪn ɪkˈspɪəriəns/ | An internship is a good way to gain experience. | Un stage est un bon moyen d'acquérir de l'expérience.
+kind regards | cordialement | expr | B1 | /ˌkaɪnd rɪˈɡɑːdz/ | End the email with "Kind regards". | Termine l'e-mail par « Cordialement ».
+yours sincerely | veuillez agréer mes salutations distinguées (destinataire nommé) | expr | B1 | /ˌjɔːz sɪnˈsɪəli/ | If you begin "Dear Mr Brown", end with "Yours sincerely". | Si la lettre commence par le nom du destinataire, elle se termine par cette formule.
+yours faithfully | veuillez agréer mes salutations distinguées (destinataire inconnu) | expr | B1 | /ˌjɔːz ˈfeɪθfəli/ | A letter to "Dear Sir or Madam" ends with "Yours faithfully". | Une lettre qui commence par « Madame, Monsieur » se termine par cette formule.
+Dear Sir or Madam | Madame, Monsieur | expr | B1 | /ˌdɪə ˌsɜːr ɔː ˈmædəm/ | Dear Sir or Madam, I am writing to complain about my order. | Madame, Monsieur, je vous écris pour me plaindre de ma commande.
+to whom it may concern | à qui de droit | expr | B2 | /tə ˌhuːm ɪt meɪ kənˈsɜːn/ | The reference letter began "To whom it may concern". | La lettre de recommandation commençait par « À qui de droit ».
+top dog | chef, numéro un | n | C1 | /ˌtɒp ˈdɒɡ/ | After years of hard work, she's finally top dog. | Après des années de travail acharné, elle est enfin numéro un.
+to meet expectations | répondre aux attentes | expr | B2 | /miːt ˌekspekˈteɪʃnz/ | The results did not meet expectations. | Les résultats n'ont pas répondu aux attentes.
+to reach an agreement | parvenir à un accord | expr | B2 | /riːtʃ ən əˈɡriːmənt/ | After long talks, they reached an agreement. | Après de longues négociations, ils sont parvenus à un accord.
+to set a goal | se fixer un objectif | expr | B1 | /set ə ˈɡəʊl/ | Set a goal for each week. | Fixe-toi un objectif pour chaque semaine.
+to sign a contract | signer un contrat | expr | B1 | /saɪn ə ˈkɒntrækt/ | Read everything before you sign a contract. | Lis tout avant de signer un contrat.
+to submit an application | déposer une candidature, un dossier | expr | B2 | /səbˈmɪt ən ˌæplɪˈkeɪʃn/ | You must submit an application before Friday. | Tu dois déposer ta candidature avant vendredi.
+to fill in a form | remplir un formulaire | expr | A2 | /fɪl ɪn ə ˈfɔːm/ | Please fill in this form in capital letters. | Merci de remplir ce formulaire en majuscules.
+to keep a record | tenir un registre, garder une trace | expr | B2 | /kiːp ə ˈrekɔːd/ | Keep a record of all your expenses. | Garde une trace de toutes tes dépenses.
+to take time off | prendre des congés | expr | B1 | /teɪk ˌtaɪm ˈɒf/ | I'm going to take time off in August. | Je vais prendre des congés en août.
+to take a breather | souffler un peu, faire une pause | expr | C1 | /teɪk ə ˈbriːðə/ | Let's take a breather before we carry on. | Soufflons un peu avant de continuer.
+on behalf of | au nom de, de la part de | prep | B2 | /ɒn bɪˈhɑːf əv/ | I'm writing on behalf of my father. | J'écris au nom de mon père.
+on business | pour affaires | adv | B1 | /ɒn ˈbɪznəs/ | He often goes to Spain on business. | Il va souvent en Espagne pour affaires.
+at work | au travail | adv | A1 | /ət ˈwɜːk/ | My mother is still at work. | Ma mère est encore au travail.
+on duty | de service, de garde | adj | B1 | /ɒn ˈdjuːti/ | Which doctor is on duty tonight? | Quel médecin est de garde ce soir ?
+off duty | qui n'est pas de service | adj | B2 | /ˌɒf ˈdjuːti/ | The police officer was off duty when he saw the robbery. | Le policier n'était pas en service quand il a vu le vol.
+behind schedule | en retard (sur le planning) | adj | B2 | /bɪˌhaɪnd ˈʃedjuːl/ | The building work is behind schedule. | Les travaux sont en retard sur le planning.
+ahead of schedule | en avance (sur le planning) | adj | B2 | /əˌhed əv ˈʃedjuːl/ | We finished the project ahead of schedule. | Nous avons terminé le projet en avance.
+in writing | par écrit | adv | B1 | /ɪn ˈraɪtɪŋ/ | Please confirm your answer in writing. | Merci de confirmer votre réponse par écrit.
+to apply for a job | postuler à un emploi | expr | A2 | /əˌplaɪ fər ə ˈdʒɒb/ | She wants to apply for a job at the hospital. | Elle veut postuler à un emploi à l'hôpital.
+temporary contract | contrat à durée déterminée, CDD | n | B2 | /ˌtemprəri ˈkɒntrækt/ | He's on a six-month temporary contract. | Il est en CDD de six mois.
+sticky note | pense-bête autocollant, papillon adhésif | n | A2 | /ˈstɪki nəʊt/ | She left a sticky note on my screen. | Elle a laissé un pense-bête sur mon écran.
+out of office | absent du bureau ; message d'absence | adj | B1 | /ˌaʊt əv ˈɒfɪs/ | Don't forget to set your out of office before the holidays. | N'oublie pas d'activer ton message d'absence avant les vacances.
+highly skilled | hautement qualifié | adj | B2 | /ˌhaɪli ˈskɪld/ | The factory needs highly skilled workers. | L'usine a besoin d'ouvriers hautement qualifiés.
+badly paid | mal payé | adj | B1 | /ˌbædli ˈpeɪd/ | Many care workers are badly paid. | Beaucoup d'aides-soignants sont mal payés.
+to work hard | travailler dur | expr | A2 | /wɜːk ˈhɑːd/ | If you work hard, you'll succeed. | Si tu travailles dur, tu réussiras.
+hard work | travail acharné | n | A2 | /ˌhɑːd ˈwɜːk/ | Her success is the result of hard work. | Sa réussite est le fruit d'un travail acharné.
+know-how | savoir-faire | n | B2 | /ˈnəʊ haʊ/ | The company has the technical know-how. | L'entreprise a le savoir-faire technique.
+stopgap | bouche-trou, solution provisoire | n | C1 | /ˈstɒpɡæp/ | The new teacher is only a stopgap until June. | Le nouveau professeur n'est qu'une solution provisoire jusqu'en juin.
+to address an issue | aborder une question, traiter un problème | expr | C1 | /əˌdres ən ˈɪʃuː/ | The meeting will address the issue of parking. | La réunion abordera la question du stationnement.
+to tackle a problem | s'attaquer à un problème | expr | B2 | /ˌtækl ə ˈprɒbləm/ | The government must tackle the problem of homelessness. | Le gouvernement doit s'attaquer au problème des sans-abri.
+to achieve a goal | atteindre un objectif | expr | B1 | /əˌtʃiːv ə ˈɡəʊl/ | To achieve a goal, you need a plan. | Pour atteindre un objectif, il faut un plan.
+roster | tableau de service, planning | n | B2 | /ˈrɒstə/ | Check the roster to see when you're working. | Consulte le planning pour voir quand tu travailles.
 `,
 );

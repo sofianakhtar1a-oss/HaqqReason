@@ -333,6 +333,232 @@ pewter | étain | n | C2 | /ˈpjuːtə/ | They drank from pewter mugs. | Ils buv
 flue | conduit (de cheminée) | n | C2 | /fluː/ | Clean the chimney flue every year. | Ramone le conduit de cheminée chaque année.
 renter | locataire | n | C1 | /ˈrentə/ | Renters have rights too. | Les locataires ont aussi des droits.
 ice scraper | grattoir à givre | n | C1 | /ˈaɪs ˌskreɪpə/ | Use an ice scraper on the windscreen. | Utilise un grattoir sur le pare-brise.
+wooden spoon | cuillère en bois | n | A2 | /ˌwʊdn ˈspuːn/ | Stir the sauce with a wooden spoon. | Remue la sauce avec une cuillère en bois.
+tin opener | ouvre-boîte | n | A2 | /ˈtɪn ˌəʊpnə/ | I can't find the tin opener anywhere. | Je ne trouve l'ouvre-boîte nulle part.
+bottle opener | décapsuleur | n | A2 | /ˈbɒtl ˌəʊpnə/ | Is there a bottle opener in this drawer? | Y a-t-il un décapsuleur dans ce tiroir ?
+kitchen roll | essuie-tout | n | A2 | /ˈkɪtʃɪn rəʊl/ | Wipe it up with some kitchen roll. | Essuie ça avec de l'essuie-tout.
+cling film | film alimentaire, film étirable | n | B1 | /ˈklɪŋ fɪlm/ | Cover the bowl with cling film. | Couvre le saladier de film alimentaire.
+tin foil | papier d'aluminium | n | A2 | /ˌtɪn ˈfɔɪl/ | Wrap the fish in tin foil before baking it. | Enveloppe le poisson dans du papier d'aluminium avant de le cuire.
+egg cup | coquetier | n | A2 | /ˈeɡ kʌp/ | She put the boiled egg in an egg cup. | Elle a mis l'œuf à la coque dans un coquetier.
+egg timer | minuteur, sablier de cuisine | n | B1 | /ˈeɡ ˌtaɪmə/ | Set the egg timer for four minutes. | Règle le minuteur sur quatre minutes.
+sugar bowl | sucrier | n | A2 | /ˈʃʊɡə bəʊl/ | Could you pass me the sugar bowl? | Tu peux me passer le sucrier ?
+milk jug | pot à lait | n | A2 | /ˈmɪlk dʒʌɡ/ | The milk jug is empty again. | Le pot à lait est encore vide.
+cake tin | moule à gâteau, boîte à gâteaux | n | B1 | /ˈkeɪk tɪn/ | Grease the cake tin with a little butter. | Graisse le moule à gâteau avec un peu de beurre.
+measuring jug | verre doseur | n | B1 | /ˈmeʒərɪŋ dʒʌɡ/ | Pour the milk into a measuring jug. | Verse le lait dans un verre doseur.
+toast rack | porte-toasts | n | B2 | /ˈtəʊst ræk/ | The hotel served breakfast with a silver toast rack. | L'hôtel servait le petit-déjeuner avec un porte-toasts en argent.
+bread bin | boîte à pain | n | A2 | /ˈbred bɪn/ | Put the loaf back in the bread bin. | Remets le pain dans la boîte à pain.
+serviette | serviette de table (en papier) | n | B1 | /ˌsɜːviˈet/ | Each guest had a paper serviette. | Chaque invité avait une serviette en papier.
+coaster | dessous de verre | n | B1 | /ˈkəʊstə/ | Please use a coaster on the wooden table. | Utilise un dessous de verre sur la table en bois, s'il te plaît.
+salt cellar | salière | n | B1 | /ˈsɔːlt ˌselə/ | The salt cellar is on the windowsill. | La salière est sur le rebord de la fenêtre.
+pepper mill | moulin à poivre | n | B1 | /ˈpepə mɪl/ | The waiter came over with a huge pepper mill. | Le serveur est venu avec un énorme moulin à poivre.
+butter dish | beurrier | n | B1 | /ˈbʌtə dɪʃ/ | Keep the butter dish out of the fridge so it stays soft. | Laisse le beurrier hors du frigo pour que le beurre reste mou.
+fish slice | spatule (pour retourner) | n | B2 | /ˈfɪʃ slaɪs/ | Turn the pancake over with a fish slice. | Retourne la crêpe avec une spatule.
+potato masher | presse-purée | n | B1 | /pəˈteɪtəʊ ˌmæʃə/ | Use a potato masher for a smoother mash. | Utilise un presse-purée pour une purée plus lisse.
+garlic press | presse-ail | n | B1 | /ˈɡɑːlɪk pres/ | Crush two cloves with the garlic press. | Écrase deux gousses avec le presse-ail.
+juicer | presse-agrumes, centrifugeuse | n | B1 | /ˈdʒuːsə/ | I make fresh orange juice with my juicer. | Je fais du jus d'orange frais avec ma centrifugeuse.
+coffee maker | cafetière (électrique) | n | A2 | /ˈkɒfi ˌmeɪkə/ | The coffee maker switches itself off. | La cafetière s'éteint toute seule.
+slow cooker | mijoteuse | n | B1 | /ˈsləʊ ˌkʊkə/ | The stew has been in the slow cooker all day. | Le ragoût est dans la mijoteuse depuis ce matin.
+pressure cooker | autocuiseur, cocotte-minute | n | B1 | /ˈpreʃə ˌkʊkə/ | Beans cook much faster in a pressure cooker. | Les haricots cuisent bien plus vite dans un autocuiseur.
+rice cooker | cuiseur à riz | n | B1 | /ˈraɪs ˌkʊkə/ | The rice cooker keeps the rice warm for hours. | Le cuiseur à riz garde le riz chaud pendant des heures.
+steamer | cuit-vapeur | n | B1 | /ˈstiːmə/ | I cook my vegetables in a steamer. | Je cuis mes légumes à la vapeur dans un cuit-vapeur.
+roasting tin | plat à rôtir | n | B1 | /ˈrəʊstɪŋ tɪn/ | Place the chicken in a large roasting tin. | Mets le poulet dans un grand plat à rôtir.
+baking tin | moule (à pâtisserie) | n | B1 | /ˈbeɪkɪŋ tɪn/ | Line the baking tin with paper. | Tapisse le moule de papier sulfurisé.
+muffin tin | moule à muffins | n | B1 | /ˈmʌfɪn tɪn/ | Fill each hole of the muffin tin halfway. | Remplis chaque alvéole du moule à muffins à moitié.
+cooling rack | grille de refroidissement | n | B2 | /ˈkuːlɪŋ ræk/ | Leave the biscuits on a cooling rack. | Laisse les biscuits sur une grille pour qu'ils refroidissent.
+pastry brush | pinceau de cuisine | n | B2 | /ˈpeɪstri brʌʃ/ | Brush the pie with egg using a pastry brush. | Badigeonne la tourte d'œuf avec un pinceau de cuisine.
+cookie cutter | emporte-pièce | n | B1 | /ˈkʊki ˌkʌtə/ | The children used a star-shaped cookie cutter. | Les enfants ont utilisé un emporte-pièce en forme d'étoile.
+piping bag | poche à douille | n | B2 | /ˈpaɪpɪŋ bæɡ/ | Decorate the cake with a piping bag. | Décore le gâteau avec une poche à douille.
+kitchen scales | balance de cuisine | n | A2 | /ˈkɪtʃɪn skeɪlz/ | Weigh the flour on the kitchen scales. | Pèse la farine sur la balance de cuisine.
+ice cube | glaçon | n | A2 | /ˈaɪs kjuːb/ | Would you like an ice cube in your water? | Tu veux un glaçon dans ton eau ?
+ice cube tray | bac à glaçons | n | B1 | /ˈaɪs kjuːb treɪ/ | Refill the ice cube tray, please. | Remplis le bac à glaçons, s'il te plaît.
+freezer bag | sac de congélation | n | B1 | /ˈfriːzə bæɡ/ | Put the leftovers in a freezer bag. | Mets les restes dans un sac de congélation.
+sandwich bag | sachet (à sandwich) | n | B1 | /ˈsænwɪdʒ bæɡ/ | He packed his lunch in a sandwich bag. | Il a emballé son déjeuner dans un sachet.
+vacuum flask | bouteille isotherme, thermos | n | B1 | /ˈvækjuːm flɑːsk/ | She brought hot tea in a vacuum flask. | Elle a apporté du thé chaud dans une bouteille isotherme.
+carafe | carafe | n | B1 | /kəˈræf/ | They ordered a carafe of water. | Ils ont commandé une carafe d'eau.
+skewer | brochette, pique | n | B1 | /ˈskjuːə/ | Thread the vegetables onto a skewer. | Enfile les légumes sur une pique.
+tongs | pince (de cuisine) | n | B1 | /tɒŋz/ | Turn the sausages with the tongs. | Retourne les saucisses avec la pince.
+oven mitt | gant de cuisine, manique | n | A2 | /ˈʌvn mɪt/ | Always use an oven mitt to take the dish out. | Utilise toujours une manique pour sortir le plat.
+draining board | égouttoir | n | B1 | /ˈdreɪnɪŋ bɔːd/ | Leave the plates on the draining board. | Laisse les assiettes sur l'égouttoir.
+dish rack | égouttoir à vaisselle | n | B1 | /ˈdɪʃ ræk/ | The clean glasses are in the dish rack. | Les verres propres sont dans l'égouttoir à vaisselle.
+kitchen sink | évier | n | A2 | /ˌkɪtʃɪn ˈsɪŋk/ | The kitchen sink is full of dirty dishes. | L'évier est rempli de vaisselle sale.
+matchstick | allumette | n | B1 | /ˈmætʃstɪk/ | He built a tiny house out of matchsticks. | Il a construit une petite maison en allumettes.
+pepper pot | poivrière | n | B1 | /ˈpepə pɒt/ | The salt is in the pepper pot by mistake. | Le sel est dans la poivrière par erreur.
+waste-paper basket | corbeille à papier | n | A2 | /ˌweɪst ˈpeɪpə ˌbɑːskɪt/ | Throw it in the waste-paper basket. | Jette-le dans la corbeille à papier.
+tea set | service à thé | n | B1 | /ˈtiː set/ | My grandmother gave me her china tea set. | Ma grand-mère m'a offert son service à thé en porcelaine.
+dinner set | service de table | n | B1 | /ˈdɪnə set/ | They received a dinner set as a wedding present. | Ils ont reçu un service de table en cadeau de mariage.
+cutlery drawer | tiroir à couverts | n | B1 | /ˈkʌtləri drɔː/ | The teaspoons are in the cutlery drawer. | Les petites cuillères sont dans le tiroir à couverts.
+place setting | couvert (mis à table) | n | B2 | /ˈpleɪs ˌsetɪŋ/ | There was a place setting for every guest. | Il y avait un couvert pour chaque invité.
+shower curtain | rideau de douche | n | A2 | /ˈʃaʊə ˌkɜːtn/ | Close the shower curtain or the floor will get wet. | Ferme le rideau de douche, sinon le sol sera mouillé.
+bath mat | tapis de bain | n | A2 | /ˈbɑːθ mæt/ | Step onto the bath mat when you get out. | Pose le pied sur le tapis de bain en sortant.
+towel rail | porte-serviettes | n | B1 | /ˈtaʊəl reɪl/ | Hang your towel on the heated towel rail. | Suspends ta serviette au porte-serviettes chauffant.
+bathroom scales | pèse-personne | n | A2 | /ˈbɑːθruːm skeɪlz/ | I weighed myself on the bathroom scales. | Je me suis pesé sur le pèse-personne.
+hot-water bottle | bouillotte | n | B1 | /ˌhɒt ˈwɔːtə ˌbɒtl/ | She took a hot-water bottle to bed. | Elle s'est couchée avec une bouillotte.
+coat stand | portemanteau (sur pied) | n | B1 | /ˈkəʊt stænd/ | Hang your jacket on the coat stand. | Accroche ta veste au portemanteau.
+doorstop | butoir de porte, cale-porte | n | B1 | /ˈdɔːstɒp/ | Put the doorstop there so the door stays open. | Mets le cale-porte là pour que la porte reste ouverte.
+door handle | poignée de porte | n | A2 | /ˈdɔː ˌhændl/ | The door handle is loose. | La poignée de porte a du jeu.
+door frame | encadrement de porte, chambranle | n | B1 | /ˈdɔː freɪm/ | He measured the door frame before buying the door. | Il a mesuré l'encadrement avant d'acheter la porte.
+window frame | châssis de fenêtre | n | B1 | /ˈwɪndəʊ freɪm/ | The window frames need painting. | Les châssis de fenêtre ont besoin d'un coup de peinture.
+ceiling fan | ventilateur de plafond | n | B1 | /ˈsiːlɪŋ fæn/ | The ceiling fan keeps the room cool. | Le ventilateur de plafond rafraîchit la pièce.
+light switch | interrupteur | n | A2 | /ˈlaɪt swɪtʃ/ | The light switch is next to the door. | L'interrupteur est à côté de la porte.
+dimmer switch | variateur de lumière | n | B2 | /ˈdɪmə swɪtʃ/ | A dimmer switch lets you soften the light. | Un variateur permet de tamiser la lumière.
+electricity meter | compteur électrique | n | B1 | /ɪlekˈtrɪsəti ˌmiːtə/ | Someone came to read the electricity meter. | Quelqu'un est venu relever le compteur électrique.
+storage heater | radiateur à accumulation | n | C1 | /ˈstɔːrɪdʒ ˌhiːtə/ | Storage heaters use cheap electricity at night. | Les radiateurs à accumulation utilisent l'électricité bon marché de la nuit.
+loft insulation | isolation des combles | n | B2 | /ˈlɒft ɪnsjuˌleɪʃn/ | Good loft insulation cuts heating bills. | Une bonne isolation des combles réduit les factures de chauffage.
+burst pipe | tuyau éclaté | n | B2 | /ˌbɜːst ˈpaɪp/ | A burst pipe flooded the kitchen. | Un tuyau éclaté a inondé la cuisine.
+odd jobs | petits travaux, bricoles | n | B2 | /ˌɒd ˈdʒɒbz/ | He does odd jobs around the house at weekends. | Il fait des petits travaux dans la maison le week-end.
+home improvements | travaux d'aménagement | n | B2 | /ˌhəʊm ɪmˈpruːvmənts/ | They spent their savings on home improvements. | Ils ont dépensé leurs économies en travaux dans la maison.
+loft conversion | aménagement des combles | n | C1 | /ˈlɒft kənˌvɜːʃn/ | The loft conversion gave them an extra bedroom. | L'aménagement des combles leur a donné une chambre de plus.
+flat-pack furniture | meubles en kit | n | B2 | /ˌflæt pæk ˈfɜːnɪtʃə/ | Assembling flat-pack furniture takes patience. | Monter des meubles en kit demande de la patience.
+Allen key | clé Allen, clé six pans | n | B2 | /ˈælən kiː/ | The wardrobe comes with an Allen key. | L'armoire est livrée avec une clé Allen.
+stepladder | escabeau | n | B1 | /ˈsteplædə/ | Stand on the stepladder to reach the shelf. | Monte sur l'escabeau pour atteindre l'étagère.
+drill bit | foret, mèche | n | B2 | /ˈdrɪl bɪt/ | You need a masonry drill bit for brick walls. | Il faut un foret à béton pour les murs en brique.
+mallet | maillet | n | B2 | /ˈmælɪt/ | Tap the tent pegs in with a rubber mallet. | Enfonce les sardines avec un maillet en caoutchouc.
+crowbar | pied-de-biche | n | B2 | /ˈkrəʊbɑː/ | They forced the crate open with a crowbar. | Ils ont forcé la caisse avec un pied-de-biche.
+hacksaw | scie à métaux | n | B2 | /ˈhæksɔː/ | Cut the pipe with a hacksaw. | Coupe le tuyau avec une scie à métaux.
+penknife | canif | n | B1 | /ˈpennaɪf/ | He cut the string with his penknife. | Il a coupé la ficelle avec son canif.
+craft knife | cutter | n | B2 | /ˈkrɑːft naɪf/ | Cut the cardboard carefully with a craft knife. | Découpe le carton avec précaution au cutter.
+wire cutters | pince coupante | n | B2 | /ˈwaɪə ˌkʌtəz/ | Snip the cable with wire cutters. | Coupe le câble avec une pince coupante.
+nuts and bolts | écrous et boulons ; (fig.) détails pratiques | n | B2 | /ˌnʌts ən ˈbəʊlts/ | Let's talk about the nuts and bolts of the project. | Parlons des détails pratiques du projet.
+wall plug | cheville (murale) | n | B2 | /ˈwɔːl plʌɡ/ | Push a wall plug into the hole before the screw. | Enfonce une cheville dans le trou avant la vis.
+masking tape | ruban de masquage | n | B2 | /ˈmɑːskɪŋ teɪp/ | Put masking tape around the window before painting. | Mets du ruban de masquage autour de la fenêtre avant de peindre.
+duct tape | ruban adhésif toilé, chatterton | n | B1 | /ˈdʌkt teɪp/ | He fixed the broken bag with duct tape. | Il a réparé le sac déchiré avec du ruban adhésif toilé.
+superglue | colle forte, super glu | n | B1 | /ˈsuːpəɡluː/ | I mended the vase with superglue. | J'ai recollé le vase avec de la colle forte.
+filler | enduit de rebouchage | n | B2 | /ˈfɪlə/ | Fill the cracks with filler before painting. | Rebouche les fissures avec de l'enduit avant de peindre.
+sealant | mastic d'étanchéité | n | C1 | /ˈsiːlənt/ | Put fresh sealant around the bath. | Remets du mastic d'étanchéité autour de la baignoire.
+grout | joint (de carrelage) | n | C1 | /ɡraʊt/ | The grout between the tiles has gone black. | Les joints du carrelage ont noirci.
+paint tin | pot de peinture | n | B1 | /ˈpeɪnt tɪn/ | Open the paint tin with a screwdriver. | Ouvre le pot de peinture avec un tournevis.
+undercoat | sous-couche | n | C1 | /ˈʌndəkəʊt/ | Apply an undercoat before the gloss. | Applique une sous-couche avant la laque.
+gloss paint | peinture brillante, laque | n | B2 | /ˈɡlɒs peɪnt/ | Gloss paint is easy to wipe clean. | La peinture brillante se nettoie facilement.
+dust sheet | bâche de protection | n | B2 | /ˈdʌst ʃiːt/ | Cover the sofa with a dust sheet while you paint. | Couvre le canapé d'une bâche pendant que tu peins.
+wallpaper paste | colle à papier peint | n | B2 | /ˈwɔːlpeɪpə peɪst/ | Brush the wallpaper paste onto the back of the paper. | Étale la colle au dos du papier peint.
+laminate flooring | parquet stratifié | n | B2 | /ˈlæmɪnət ˌflɔːrɪŋ/ | Laminate flooring is cheaper than real wood. | Le stratifié coûte moins cher que le vrai bois.
+underlay | sous-couche (de moquette) | n | C1 | /ˈʌndəleɪ/ | Thick underlay makes the carpet feel softer. | Une sous-couche épaisse rend la moquette plus moelleuse.
+lino | linoléum, lino | n | B2 | /ˈlaɪnəʊ/ | The kitchen floor is covered with old lino. | Le sol de la cuisine est recouvert d'un vieux lino.
+parquet | parquet | n | B2 | /ˈpɑːkeɪ/ | The hall has a beautiful oak parquet floor. | L'entrée a un beau parquet en chêne.
+entryphone | interphone | n | B2 | /ˈentrifəʊn/ | Press the button on the entryphone to let them in. | Appuie sur le bouton de l'interphone pour leur ouvrir.
+peephole | judas | n | B2 | /ˈpiːphəʊl/ | Look through the peephole before you open the door. | Regarde par le judas avant d'ouvrir la porte.
+garden shed | abri de jardin, cabane | n | B1 | /ˌɡɑːdn ˈʃed/ | The bikes are kept in the garden shed. | Les vélos sont rangés dans l'abri de jardin.
+leaf blower | souffleur de feuilles | n | B2 | /ˈliːf ˌbləʊə/ | The noise of the leaf blower woke me up. | Le bruit du souffleur de feuilles m'a réveillé.
+strimmer | débroussailleuse | n | C1 | /ˈstrɪmə/ | Cut the long grass by the fence with the strimmer. | Coupe les hautes herbes le long de la clôture avec la débroussailleuse.
+water butt | récupérateur d'eau de pluie | n | C1 | /ˈwɔːtə bʌt/ | We collect rainwater in a water butt. | Nous recueillons l'eau de pluie dans un récupérateur.
+rockery | rocaille | n | C1 | /ˈrɒkəri/ | Small alpine plants grow in the rockery. | De petites plantes alpines poussent dans la rocaille.
+hanging basket | suspension fleurie | n | B2 | /ˌhæŋɪŋ ˈbɑːskɪt/ | Hanging baskets full of flowers lined the street. | Des suspensions fleuries bordaient la rue.
+window box | jardinière (de fenêtre) | n | B1 | /ˈwɪndəʊ bɒks/ | She grows herbs in a window box. | Elle fait pousser des herbes dans une jardinière.
+flowerpot | pot de fleurs | n | A2 | /ˈflaʊəpɒt/ | The key is under the flowerpot. | La clé est sous le pot de fleurs.
+seed tray | caissette de semis | n | C1 | /ˈsiːd treɪ/ | Sow the tomatoes in a seed tray in March. | Sème les tomates en caissette en mars.
+potting compost | terreau | n | B2 | /ˈpɒtɪŋ ˌkɒmpɒst/ | Fill the pots with fresh potting compost. | Remplis les pots de terreau frais.
+weedkiller | désherbant | n | B2 | /ˈwiːdkɪlə/ | We stopped using weedkiller in the garden. | Nous n'utilisons plus de désherbant au jardin.
+slug pellets | granulés anti-limaces | n | C1 | /ˈslʌɡ ˌpelɪts/ | Slug pellets can harm hedgehogs. | Les granulés anti-limaces peuvent nuire aux hérissons.
+garden gnome | nain de jardin | n | B1 | /ˌɡɑːdn ˈnəʊm/ | There's a garden gnome by the pond. | Il y a un nain de jardin près de la mare.
+patio heater | chauffage d'extérieur, parasol chauffant | n | B2 | /ˈpætiəʊ ˌhiːtə/ | The café has patio heaters for the winter. | Le café a des chauffages d'extérieur pour l'hiver.
+decking | terrasse en bois | n | B2 | /ˈdekɪŋ/ | We sat out on the decking in the evening sun. | Nous nous sommes installés sur la terrasse en bois au soleil couchant.
+pergola | pergola | n | C1 | /ˈpɜːɡələ/ | Roses climb over the wooden pergola. | Des rosiers grimpent sur la pergola en bois.
+trellis | treillage, treillis | n | C1 | /ˈtrelɪs/ | Train the clematis up the trellis. | Fais grimper la clématite sur le treillage.
+summer house | pavillon de jardin | n | B2 | /ˈsʌmə haʊs/ | She writes in a little summer house at the end of the garden. | Elle écrit dans un petit pavillon au fond du jardin.
+letting agent | agence de location | n | B2 | /ˈletɪŋ ˌeɪdʒənt/ | We found the flat through a letting agent. | Nous avons trouvé l'appartement par une agence de location.
+house-hunting | recherche de logement | n | B2 | /ˈhaʊs ˌhʌntɪŋ/ | We spent the weekend house-hunting. | Nous avons passé le week-end à chercher un logement.
+first-time buyer | primo-accédant | n | B2 | /ˌfɜːst taɪm ˈbaɪə/ | Prices are too high for first-time buyers. | Les prix sont trop élevés pour les primo-accédants.
+council house | logement social, HLM | n | B2 | /ˈkaʊnsl haʊs/ | She grew up in a council house. | Elle a grandi dans un logement social.
+circuit breaker | disjoncteur | n | B2 | /ˈsɜːkɪt ˌbreɪkə/ | The circuit breaker tripped during the storm. | Le disjoncteur a sauté pendant l'orage.
+tubing | tuyauterie, tube souple | n | C1 | /ˈtjuːbɪŋ/ | Connect the pump with plastic tubing. | Raccorde la pompe avec un tube en plastique.
+slider | curseur ; mini-burger | n | C1 | /ˈslaɪdə/ | Move the slider to adjust the volume. | Déplace le curseur pour régler le volume.
+ratchet | cliquet, clé à cliquet | n | C2 | /ˈrætʃɪt/ | Tighten the nut with a ratchet. | Serre l'écrou avec une clé à cliquet.
+ply | épaisseur, pli | n | C2 | /plaɪ/ | Three-ply tissues are softer. | Les mouchoirs à trois épaisseurs sont plus doux.
+grating | grille, caillebotis | n | C1 | /ˈɡreɪtɪŋ/ | The keys fell through a metal grating. | Les clés sont tombées à travers une grille métallique.
+planter | jardinière, bac à plantes | n | C1 | /ˈplɑːntə/ | Herbs grow in a planter on the balcony. | Des herbes poussent dans une jardinière sur le balcon.
+epoxy | époxy, résine époxy | n | C2 | /ɪˈpɒksi/ | Fix the crack with epoxy glue. | Répare la fissure avec de la colle époxy.
+stopper | bouchon | n | C1 | /ˈstɒpə/ | Put the glass stopper back in the bottle. | Remets le bouchon en verre sur le flacon.
+pane | vitre, carreau | n | B2 | /peɪn/ | A ball broke a pane of glass. | Un ballon a cassé une vitre.
+beater | batteur, fouet | n | C1 | /ˈbiːtə/ | Use an electric beater for the cream. | Utilise un batteur électrique pour la crème.
+crock | pot en terre | n | C2 | /krɒk/ | She kept butter in an earthenware crock. | Elle gardait le beurre dans un pot en terre.
+glazing | vitrage | n | C1 | /ˈɡleɪzɪŋ/ | The windows have triple glazing. | Les fenêtres ont un triple vitrage.
+candlelight | lumière des bougies | n | B2 | /ˈkændllaɪt/ | They had dinner by candlelight. | Ils ont dîné aux chandelles.
+wicker | osier | n | C1 | /ˈwɪkə/ | We sat in wicker chairs on the porch. | Nous étions assis dans des fauteuils en osier sous le porche.
+sill | rebord, appui (de fenêtre) | n | C1 | /sɪl/ | A cat sat on the window sill. | Un chat était assis sur le rebord de la fenêtre.
+utility bill | facture (gaz, eau, électricité) | n | B1 | /juːˈtɪləti bɪl/ | A recent utility bill will do as proof of address. | Une facture récente servira de justificatif de domicile.
+storage unit | box de stockage, garde-meubles | n | B2 | /ˈstɔːrɪdʒ ˌjuːnɪt/ | We put our furniture in a storage unit. | Nous avons mis nos meubles dans un garde-meubles.
+extension cable | rallonge (électrique) | n | B1 | /ɪkˈstenʃn ˌkeɪbl/ | Use an extension cable to reach the socket. | Utilise une rallonge pour atteindre la prise.
+deep-fat fryer | friteuse | n | B2 | /ˌdiːp fæt ˈfraɪə/ | Chips taste best from a deep-fat fryer. | Les frites sont meilleures à la friteuse.
+plumb line | fil à plomb | n | C2 | /ˈplʌm laɪn/ | Use a plumb line to check the wall is straight. | Utilise un fil à plomb pour vérifier que le mur est droit.
+tarpaulin | bâche | n | C1 | /tɑːˈpɔːlɪn/ | Cover the firewood with a tarpaulin. | Couvre le bois de chauffage avec une bâche.
+cask | fût, tonneau | n | C1 | /kɑːsk/ | The vinegar matures in oak casks. | Le vinaigre vieillit dans des fûts de chêne.
+sander | ponceuse | n | C1 | /ˈsændə/ | Smooth the door with an electric sander. | Ponce la porte avec une ponceuse électrique.
+damper | registre (de cheminée) ; étouffoir | n | C2 | /ˈdæmpə/ | Close the damper when the fire is out. | Ferme le registre quand le feu est éteint.
+nightlight | veilleuse | n | B1 | /ˈnaɪtlaɪt/ | My son sleeps with a nightlight on. | Mon fils dort avec une veilleuse allumée.
+built-in | encastré, intégré | adj | B1 | /ˌbɪlt ˈɪn/ | The bedroom has built-in wardrobes. | La chambre a des placards encastrés.
+front garden | jardin de devant | n | A2 | /ˌfrʌnt ˈɡɑːdn/ | Roses grow in the front garden. | Des rosiers poussent dans le jardin de devant.
+back garden | jardin de derrière | n | A2 | /ˌbæk ˈɡɑːdn/ | The children play in the back garden. | Les enfants jouent dans le jardin de derrière.
+front room | salon (donnant sur la rue) | n | B1 | /ˌfrʌnt ˈruːm/ | We keep the front room for visitors. | Nous réservons le salon aux invités.
+living space | espace de vie | n | B2 | /ˈlɪvɪŋ speɪs/ | The flat has plenty of living space. | L'appartement offre beaucoup d'espace de vie.
+open-plan kitchen | cuisine ouverte | n | B1 | /ˌəʊpən plæn ˈkɪtʃɪn/ | They knocked down a wall to make an open-plan kitchen. | Ils ont abattu un mur pour faire une cuisine ouverte.
+fitted kitchen | cuisine équipée | n | B1 | /ˌfɪtɪd ˈkɪtʃɪn/ | The flat comes with a fitted kitchen. | L'appartement est livré avec une cuisine équipée.
+kitchen island | îlot central | n | B2 | /ˌkɪtʃɪn ˈaɪlənd/ | We eat breakfast at the kitchen island. | Nous prenons le petit-déjeuner sur l'îlot central.
+breakfast bar | comptoir (de cuisine), bar | n | B2 | /ˈbrekfəst bɑː/ | She sat on a stool at the breakfast bar. | Elle s'est assise sur un tabouret au comptoir de la cuisine.
+guest room | chambre d'amis | n | A2 | /ˈɡest ruːm/ | You can sleep in the guest room. | Tu peux dormir dans la chambre d'amis.
+en-suite bathroom | salle de bains attenante | n | B2 | /ˌɒn swiːt ˈbɑːθruːm/ | Every bedroom has an en-suite bathroom. | Chaque chambre a sa salle de bains attenante.
+dressing room | dressing ; loge (d'artiste) | n | B1 | /ˈdresɪŋ ruːm/ | The actor waited in his dressing room. | L'acteur attendait dans sa loge.
+games room | salle de jeux | n | B1 | /ˈɡeɪmz ruːm/ | The hotel has a games room with a pool table. | L'hôtel a une salle de jeux avec un billard.
+roof terrace | toit-terrasse | n | B2 | /ˌruːf ˈterəs/ | The flat has a roof terrace with a view. | L'appartement a un toit-terrasse avec vue.
+roof garden | jardin sur le toit | n | B2 | /ˌruːf ˈɡɑːdn/ | The office has a roof garden. | Le bureau a un jardin sur le toit.
+basement flat | appartement en sous-sol | n | B2 | /ˈbeɪsmənt flæt/ | Basement flats can be dark and damp. | Les appartements en sous-sol peuvent être sombres et humides.
+studio apartment | studio | n | A2 | /ˌstjuːdiəʊ əˈpɑːtmənt/ | He rents a small studio apartment. | Il loue un petit studio.
+beach house | maison au bord de la plage | n | A2 | /ˈbiːtʃ haʊs/ | They spend the summer at their beach house. | Ils passent l'été dans leur maison au bord de la plage.
+manor house | manoir | n | B2 | /ˈmænə haʊs/ | The village has an old manor house. | Le village a un vieux manoir.
+stately home | château, demeure seigneuriale | n | C1 | /ˌsteɪtli ˈhəʊm/ | Many stately homes are open to the public. | Beaucoup de demeures seigneuriales sont ouvertes au public.
+end-of-terrace | (maison) en bout de rangée | adj | C1 | /ˌend əv ˈterəs/ | They live in an end-of-terrace house. | Ils habitent une maison en bout de rangée.
+semi | maison jumelée | n | B2 | /ˈsemi/ | They bought a three-bedroom semi. | Ils ont acheté une maison jumelée de trois chambres.
+detached | (maison) individuelle | adj | B1 | /dɪˈtætʃt/ | They live in a large detached house. | Ils habitent une grande maison individuelle.
+high-rise flat | appartement dans une tour | n | B2 | /ˌhaɪ raɪz ˈflæt/ | She grew up in a high-rise flat. | Elle a grandi dans un appartement en tour.
+new-build | (logement) neuf | n | B2 | /ˈnjuː bɪld/ | They bought a new-build on the edge of town. | Ils ont acheté un logement neuf à la sortie de la ville.
+period property | maison ancienne (de caractère) | n | C1 | /ˈpɪəriəd ˌprɒpəti/ | They restored a Victorian period property. | Ils ont restauré une maison ancienne de l'époque victorienne.
+building plot | terrain à bâtir | n | B2 | /ˈbɪldɪŋ plɒt/ | They bought a building plot by the river. | Ils ont acheté un terrain à bâtir près de la rivière.
+load-bearing wall | mur porteur | n | C1 | /ˌləʊd beərɪŋ ˈwɔːl/ | You can't remove a load-bearing wall. | On ne peut pas supprimer un mur porteur.
+partition wall | cloison | n | B2 | /pɑːˈtɪʃn wɔːl/ | A thin partition wall divides the room. | Une fine cloison divise la pièce.
+cavity wall | mur creux | n | C2 | /ˈkævəti wɔːl/ | Cavity wall insulation keeps the house warm. | L'isolation des murs creux garde la maison au chaud.
+roof tile | tuile | n | B1 | /ˈruːf taɪl/ | The storm blew several roof tiles off. | La tempête a arraché plusieurs tuiles.
+slate roof | toit en ardoise | n | B2 | /ˌsleɪt ˈruːf/ | Welsh cottages often have slate roofs. | Les cottages gallois ont souvent des toits en ardoise.
+flat roof | toit plat, toit-terrasse | n | B1 | /ˌflæt ˈruːf/ | Flat roofs can leak in heavy rain. | Les toits plats peuvent fuir sous de fortes pluies.
+dormer window | lucarne | n | C1 | /ˈdɔːmə ˌwɪndəʊ/ | The attic room has a dormer window. | La chambre mansardée a une lucarne.
+bay window | fenêtre en saillie, bow-window | n | B2 | /ˌbeɪ ˈwɪndəʊ/ | She sat reading in the bay window. | Elle lisait assise dans le bow-window.
+sash window | fenêtre à guillotine | n | C1 | /ˈsæʃ ˌwɪndəʊ/ | Old London houses have sash windows. | Les vieilles maisons londoniennes ont des fenêtres à guillotine.
+French windows | porte-fenêtre | n | B2 | /ˌfrentʃ ˈwɪndəʊz/ | The French windows open onto the garden. | La porte-fenêtre donne sur le jardin.
+patio doors | baie vitrée coulissante | n | B2 | /ˈpætiəʊ dɔːz/ | Slide open the patio doors. | Fais coulisser la baie vitrée.
+porch light | lumière de l'entrée | n | B1 | /ˈpɔːtʃ laɪt/ | Leave the porch light on for me. | Laisse la lumière de l'entrée allumée pour moi.
+garden gate | portillon du jardin | n | A2 | /ˌɡɑːdn ˈɡeɪt/ | Close the garden gate behind you. | Referme le portillon du jardin derrière toi.
+garden wall | mur du jardin | n | A2 | /ˌɡɑːdn ˈwɔːl/ | A cat was sitting on the garden wall. | Un chat était assis sur le mur du jardin.
+picket fence | palissade (en bois peint) | n | B2 | /ˈpɪkɪt fens/ | The cottage has a white picket fence. | Le cottage a une palissade blanche.
+garden path | allée du jardin | n | A2 | /ˌɡɑːdn ˈpɑːθ/ | Weeds grow between the stones of the garden path. | Des mauvaises herbes poussent entre les pierres de l'allée.
+paving stone | dalle, pavé | n | B2 | /ˈpeɪvɪŋ stəʊn/ | She tripped on a loose paving stone. | Elle a trébuché sur une dalle descellée.
+flagstone | dalle (de pierre) | n | C1 | /ˈflæɡstəʊn/ | The kitchen has a stone flagstone floor. | La cuisine a un sol en dalles de pierre.
+crazy paving | dallage irrégulier | n | C1 | /ˌkreɪzi ˈpeɪvɪŋ/ | The patio is laid with crazy paving. | La terrasse est recouverte d'un dallage irrégulier.
+drainpipe | tuyau de descente, gouttière verticale | n | B2 | /ˈdreɪnpaɪp/ | The burglar climbed up the drainpipe. | Le cambrioleur a grimpé par la gouttière.
+water tank | réservoir d'eau, cuve | n | B1 | /ˈwɔːtə tæŋk/ | The water tank is in the attic. | Le réservoir d'eau est au grenier.
+chimney pot | mitron (de cheminée) | n | C1 | /ˈtʃɪmni pɒt/ | A bird is nesting in the chimney pot. | Un oiseau niche dans le haut de la cheminée.
+lift shaft | cage d'ascenseur | n | C1 | /ˈlɪft ʃɑːft/ | The keys fell down the lift shaft. | Les clés sont tombées dans la cage d'ascenseur.
+sliding door | porte coulissante | n | B1 | /ˌslaɪdɪŋ ˈdɔː/ | The wardrobe has sliding doors. | L'armoire a des portes coulissantes.
+bike shed | abri à vélos | n | B1 | /ˈbaɪk ʃed/ | Lock your bike in the bike shed. | Attache ton vélo dans l'abri à vélos.
+communal garden | jardin commun | n | B2 | /kəˌmjuːnl ˈɡɑːdn/ | The flats share a communal garden. | Les appartements partagent un jardin commun.
+to save space | gagner de la place | expr | B1 | /seɪv ˈspeɪs/ | A folding table saves space in a small kitchen. | Une table pliante fait gagner de la place dans une petite cuisine.
+cobweb | toile d'araignée (poussiéreuse) | n | B2 | /ˈkɒbweb/ | The attic was full of cobwebs. | Le grenier était plein de toiles d'araignée.
+faucet | robinet (US) | n | B1 | /ˈfɔːsɪt/ | The kitchen faucet is dripping. | Le robinet de la cuisine goutte.
+zip code | code postal (US) | n | A2 | /ˈzɪp kəʊd/ | Please write your zip code on the form. | Merci d'indiquer votre code postal sur le formulaire.
+mailbox | boîte aux lettres (US) | n | A2 | /ˈmeɪlbɒks/ | There's a package in the mailbox. | Il y a un colis dans la boîte aux lettres.
+drapes | rideaux (épais) (US) | n | B2 | /dreɪps/ | Close the drapes, the sun is too bright. | Ferme les rideaux, le soleil est trop fort.
+nightstand | table de chevet (US) | n | B1 | /ˈnaɪtstænd/ | My glasses are on the nightstand. | Mes lunettes sont sur la table de chevet.
+countertop | plan de travail (US) | n | B2 | /ˈkaʊntətɒp/ | Leave the bags on the kitchen countertop. | Laisse les sacs sur le plan de travail de la cuisine.
+condo | appartement en copropriété (US) | n | B2 | /ˈkɒndəʊ/ | They bought a condo near the beach. | Ils ont acheté un appartement près de la plage.
+to draw the curtains | tirer les rideaux | expr | B1 | /drɔː ðə ˈkɜːtnz/ | Can you draw the curtains? The sun is in my eyes. | Tu peux tirer les rideaux ? J'ai le soleil dans les yeux.
+to do the gardening | jardiner, s'occuper du jardin | expr | A2 | /duː ðə ˈɡɑːdnɪŋ/ | My father does the gardening at the weekend. | Mon père s'occupe du jardin le week-end.
+to take the stairs | prendre l'escalier | expr | A2 | /teɪk ðə ˈsteəz/ | The lift is broken, so take the stairs. | L'ascenseur est en panne, alors prends l'escalier.
+for rent | à louer | adj | B1 | /fə ˈrent/ | There's a flat for rent above the bakery. | Il y a un appartement à louer au-dessus de la boulangerie.
+at home | à la maison, chez soi | adv | A1 | /ət ˈhəʊm/ | I'm staying at home this evening. | Je reste à la maison ce soir.
+in bed | au lit | adv | A1 | /ɪn ˈbed/ | The children are already in bed. | Les enfants sont déjà au lit.
+by candlelight | à la lueur des bougies | adv | B2 | /baɪ ˈkændllaɪt/ | During the power cut we ate by candlelight. | Pendant la coupure de courant, nous avons dîné à la lueur des bougies.
+hosepipe | tuyau d'arrosage | n | B2 | /ˈhəʊzpaɪp/ | Water the garden with the hosepipe. | Arrose le jardin avec le tuyau.
+trowel | transplantoir ; truelle | n | B2 | /ˈtraʊəl/ | Use a trowel to plant the bulbs. | Utilise un transplantoir pour planter les bulbes.
+secateurs | sécateur | n | B2 | /ˌsekəˈtɜːz/ | Cut the dead roses with secateurs. | Coupe les roses fanées avec un sécateur.
+vegetable patch | potager | n | B1 | /ˈvedʒtəbl pætʃ/ | We grow tomatoes in our vegetable patch. | Nous cultivons des tomates dans notre potager.
+air-conditioned | climatisé | adj | B1 | /ˈeə kənˌdɪʃnd/ | All the rooms are air-conditioned. | Toutes les chambres sont climatisées.
 `,
 );
 
@@ -733,6 +959,67 @@ turn on the waterworks | se mettre à pleurer (pour attendrir) | expr | C2 | /t�
 aggravation | agacement ; aggravation | n | C2 | /ˌæɡrəˈveɪʃn/ | I don't need this aggravation. | Je n'ai pas besoin de ces tracas.
 irritability | irritabilité | n | C2 | /ˌɪrɪtəˈbɪləti/ | Lack of sleep causes irritability. | Le manque de sommeil provoque de l'irritabilité.
 hilarity | hilarité | n | C2 | /hɪˈlærəti/ | His joke caused great hilarity. | Sa blague a provoqué l'hilarité générale.
+freak | phénomène, monstre ; fana | n | B2 | /friːk/ | He's a health freak who never eats sugar. | C'est un fana de la santé qui ne mange jamais de sucre.
+in a huff | vexé, de mauvaise humeur | expr | B2 | /ɪn ə ˈhʌf/ | She left in a huff. | Elle est partie vexée.
+craziness | folie | n | B2 | /ˈkreɪzinəs/ | I needed a break from the craziness of the city. | J'avais besoin d'une pause loin de la folie de la ville.
+gratifying | gratifiant | adj | C1 | /ˈɡrætɪfaɪɪŋ/ | It's gratifying to see the students succeed. | C'est gratifiant de voir les élèves réussir.
+downer | déprime, rabat-joie | n | C1 | /ˈdaʊnə/ | Losing the final was a real downer. | Perdre la finale a été un vrai coup au moral.
+perplexed | perplexe | adj | C1 | /pəˈplekst/ | She looked perplexed by the question. | La question semblait la laisser perplexe.
+to go berserk | devenir fou furieux | expr | C1 | /ɡəʊ bəˈzɜːk/ | The fans will go berserk when the band comes on. | Les fans vont devenir fous quand le groupe arrivera.
+gusto | enthousiasme, entrain | n | C1 | /ˈɡʌstəʊ/ | They sang with great gusto. | Ils ont chanté avec beaucoup d'entrain.
+awkwardness | gêne, maladresse | n | B2 | /ˈɔːkwədnəs/ | There was some awkwardness at first. | Il y a eu une certaine gêne au début.
+taken aback | décontenancé, interloqué | adj | C1 | /ˌteɪkən əˈbæk/ | I was taken aback by his rudeness. | Sa grossièreté m'a décontenancé.
+tearful | en larmes, larmoyant | adj | B2 | /ˈtɪəfl/ | She gave a tearful goodbye. | Elle a fait des adieux émus, les larmes aux yeux.
+impatience | impatience | n | B2 | /ɪmˈpeɪʃns/ | He tapped his foot with impatience. | Il tapait du pied d'impatience.
+enchantment | enchantement | n | C1 | /ɪnˈtʃɑːntmənt/ | The garden had an air of enchantment. | Le jardin avait un air enchanteur.
+nerve-racking | stressant, angoissant | adj | B2 | /ˈnɜːv ˌrækɪŋ/ | Waiting for the results was nerve-racking. | Attendre les résultats était angoissant.
+stress-free | sans stress | adj | B1 | /ˌstres ˈfriː/ | We want a stress-free holiday. | Nous voulons des vacances sans stress.
+burnt-out | épuisé (professionnellement) ; incendié | adj | B2 | /ˌbɜːnt ˈaʊt/ | After ten years in the job, he felt burnt-out. | Après dix ans à ce poste, il était épuisé.
+to pay someone a compliment | faire un compliment à quelqu'un | expr | B1 | /peɪ ˌsʌmwʌn ə ˈkɒmplɪmənt/ | He always pays her a compliment on her cooking. | Il lui fait toujours un compliment sur sa cuisine.
+to make an impression | faire impression | expr | B1 | /meɪk ən ɪmˈpreʃn/ | She wants to make an impression at her interview. | Elle veut faire bonne impression à son entretien.
+to take offence | s'offenser, se vexer | expr | B2 | /teɪk əˈfens/ | Don't take offence; it was only a joke. | Ne te vexe pas, ce n'était qu'une blague.
+to take pride in | être fier de, mettre un point d'honneur à | expr | B2 | /teɪk ˈpraɪd ɪn/ | He takes pride in his work. | Il est fier de son travail.
+to take it personally | le prendre personnellement | expr | B2 | /teɪk ɪt ˈpɜːsənəli/ | Don't take it personally; he's rude to everyone. | Ne le prends pas personnellement, il est grossier avec tout le monde.
+to have a conversation | avoir une conversation | expr | A2 | /hæv ə ˌkɒnvəˈseɪʃn/ | We need to have a conversation about money. | Il faut qu'on ait une conversation au sujet de l'argent.
+to have a feeling | avoir l'impression, le pressentiment | expr | B1 | /hæv ə ˈfiːlɪŋ/ | I have a feeling it's going to rain. | J'ai l'impression qu'il va pleuvoir.
+to keep calm | garder son calme | expr | A2 | /kiːp ˈkɑːm/ | Keep calm and follow the instructions. | Gardez votre calme et suivez les consignes.
+to lose interest | perdre tout intérêt, se désintéresser | expr | B1 | /luːz ˈɪntrəst/ | Children quickly lose interest in new toys. | Les enfants se désintéressent vite des nouveaux jouets.
+to lose patience | perdre patience | expr | B1 | /luːz ˈpeɪʃns/ | The teacher is starting to lose patience with us. | Le professeur commence à perdre patience avec nous.
+to lose hope | perdre espoir | expr | B1 | /luːz ˈhəʊp/ | Never lose hope. | Ne perds jamais espoir.
+to gain confidence | prendre de l'assurance | expr | B2 | /ɡeɪn ˈkɒnfɪdəns/ | Public speaking helps you gain confidence. | Parler en public aide à prendre de l'assurance.
+to raise your voice | hausser le ton | expr | B1 | /reɪz jə ˈvɔɪs/ | There's no need to raise your voice. | Inutile de hausser le ton.
+interested in | intéressé par, qui s'intéresse à | adj | A2 | /ˈɪntrəstɪd ɪn/ | Are you interested in history? | Tu t'intéresses à l'histoire ?
+angry with | fâché contre, en colère contre | adj | A2 | /ˈæŋɡri wɪð/ | Are you still angry with me? | Tu es encore fâché contre moi ?
+crazy about | fou de, dingue de | adj | B1 | /ˈkreɪzi əˌbaʊt/ | My son is crazy about dinosaurs. | Mon fils est fou de dinosaures.
+excited about | impatient de, tout excité à l'idée de | adj | A2 | /ɪkˈsaɪtɪd əˌbaʊt/ | The kids are excited about the trip. | Les enfants sont tout excités à l'idée du voyage.
+worried about | inquiet pour, inquiet au sujet de | adj | A2 | /ˈwʌrid əˌbaʊt/ | I'm worried about my exam. | Je suis inquiet pour mon examen.
+disappointed with | déçu par, déçu de | adj | B1 | /ˌdɪsəˈpɔɪntɪd wɪð/ | I was disappointed with my results. | J'ai été déçu par mes résultats.
+pleased with | content de, satisfait de | adj | A2 | /ˈpliːzd wɪð/ | The teacher is pleased with your work. | Le professeur est content de ton travail.
+suspicious of | méfiant envers, qui se méfie de | adj | B2 | /səˈspɪʃəs əv/ | Cats are often suspicious of strangers. | Les chats se méfient souvent des inconnus.
+passionate about | passionné de, passionné par | adj | B1 | /ˈpæʃənət əˌbaʊt/ | He's passionate about old cars. | Il est passionné de vieilles voitures.
+absorbed in | absorbé par, plongé dans | adj | C1 | /əbˈzɔːbd ɪn/ | She was so absorbed in her book that she missed her stop. | Elle était tellement plongée dans son livre qu'elle a raté son arrêt.
+think highly of | avoir une haute opinion de | expr | C1 | /θɪŋk ˈhaɪli əv/ | Her boss thinks highly of her. | Son patron a une haute opinion d'elle.
+make fun of | se moquer de | expr | B1 | /meɪk ˈfʌn əv/ | It's not nice to make fun of people. | Ce n'est pas gentil de se moquer des gens.
+heart-to-heart | conversation à cœur ouvert | n | C1 | /ˌhɑːt tə ˈhɑːt/ | It's time we had a heart-to-heart. | Il est temps qu'on ait une conversation à cœur ouvert.
+green with envy | vert de jalousie | expr | B2 | /ˌɡriːn wɪð ˈenvi/ | My friends were green with envy when they saw my new bike. | Mes amis étaient verts de jalousie en voyant mon nouveau vélo.
+misery loves company | le malheur aime la compagnie | expr | C1 | /ˌmɪzəri ˌlʌvz ˈkʌmpəni/ | He only calls me to complain; misery loves company. | Il ne m'appelle que pour se plaindre ; le malheur aime la compagnie.
+time heals all wounds | le temps guérit toutes les blessures | expr | B1 | /ˌtaɪm ˈhiːlz ˌɔːl ˈwuːndz/ | It hurts now, but time heals all wounds. | Ça fait mal maintenant, mais le temps guérit toutes les blessures.
+to lose your mind | perdre la tête | expr | B2 | /luːz jə ˈmaɪnd/ | I'm so tired I'm losing my mind. | Je suis tellement fatigué que je perds la tête.
+to take by surprise | prendre au dépourvu, surprendre | expr | B2 | /teɪk baɪ səˈpraɪz/ | Exam questions can take you by surprise. | Les questions d'examen peuvent te prendre au dépourvu.
+in tears | en larmes | adj | B1 | /ɪn ˈtɪəz/ | She came out of the room in tears. | Elle est sortie de la pièce en larmes.
+ill at ease | mal à l'aise | adj | C1 | /ˌɪl ət ˈiːz/ | He felt ill at ease among so many strangers. | Il se sentait mal à l'aise parmi tant d'inconnus.
+in a state | dans tous ses états | adj | B2 | /ɪn ə ˈsteɪt/ | She was in a state because she'd lost her passport. | Elle était dans tous ses états parce qu'elle avait perdu son passeport.
+at peace | en paix | adj | B1 | /ət ˈpiːs/ | After the prayer, I felt at peace. | Après la prière, je me sentais en paix.
+deeply moved | profondément ému | adj | B2 | /ˌdiːpli ˈmuːvd/ | We were deeply moved by his story. | Nous avons été profondément émus par son histoire.
+bitterly disappointed | amèrement déçu | adj | C1 | /ˌbɪtəli ˌdɪsəˈpɔɪntɪd/ | The fans were bitterly disappointed by the result. | Les supporters ont été amèrement déçus par le résultat.
+greatly appreciated | très apprécié | adj | B2 | /ˌɡreɪtli əˈpriːʃieɪtɪd/ | Your help is greatly appreciated. | Votre aide est très appréciée.
+to deeply regret | regretter profondément | expr | B2 | /ˌdiːpli rɪˈɡret/ | I deeply regret what I said. | Je regrette profondément ce que j'ai dit.
+to cry bitterly | pleurer à chaudes larmes | expr | C1 | /kraɪ ˈbɪtəli/ | The little girl began to cry bitterly when her cat died. | La petite fille s'est mise à pleurer à chaudes larmes quand son chat est mort.
+high hopes | grands espoirs | n | B2 | /ˌhaɪ ˈhəʊps/ | We have high hopes for our son. | Nous fondons de grands espoirs sur notre fils.
+false hope | faux espoir | n | B2 | /ˌfɔːls ˈhəʊp/ | Don't give him false hope. | Ne lui donne pas de faux espoirs.
+tongue-tied | muet (de timidité), sans voix | adj | C1 | /ˈtʌŋ taɪd/ | I always get tongue-tied when I meet someone famous. | Je perds toujours mes moyens quand je rencontre une célébrité.
+mixed-up | perturbé, déboussolé | adj | B2 | /ˌmɪkst ˈʌp/ | He's a mixed-up teenager. | C'est un adolescent déboussolé.
+to fulfil a dream | réaliser un rêve | expr | B2 | /fʊlˌfɪl ə ˈdriːm/ | She finally fulfilled her dream of visiting Medina. | Elle a enfin réalisé son rêve de visiter Médine.
 `,
 );
 
@@ -937,5 +1224,21 @@ choppy | agité (mer) | adj | C1 | /ˈtʃɒpi/ | The sea is choppy today. | La m
 southerly | du sud | adj | C1 | /ˈsʌðəli/ | A warm southerly wind blew. | Un vent chaud du sud soufflait.
 windward | au vent | adj | C2 | /ˈwɪndwəd/ | The windward side of the island is wet. | Le côté au vent de l'île est humide.
 autumnal | automnal | adj | C2 | /ɔːˈtʌmnəl/ | The trees took on autumnal colours. | Les arbres ont pris des couleurs automnales.
+de-icer | dégivrant | n | C1 | /ˌdiː ˈaɪsə/ | Spray some de-icer on the frozen windscreen. | Vaporise du dégivrant sur le pare-brise gelé.
+lashing | (pluie) battante | adj | C1 | /ˈlæʃɪŋ/ | We walked home in lashing rain. | Nous sommes rentrés sous une pluie battante.
+hoar frost | givre | n | C1 | /ˈhɔː frɒst/ | The trees were white with hoar frost. | Les arbres étaient blancs de givre.
+whiteout | jour blanc, tempête de neige aveuglante | n | C2 | /ˈwaɪtaʊt/ | The climbers were trapped in a whiteout. | Les alpinistes ont été pris dans un jour blanc.
+thunderclap | coup de tonnerre | n | B2 | /ˈθʌndəklæp/ | A thunderclap woke the baby. | Un coup de tonnerre a réveillé le bébé.
+lightning bolt | éclair, coup de foudre | n | B1 | /ˈlaɪtnɪŋ bəʊlt/ | A lightning bolt struck the church tower. | La foudre a frappé le clocher.
+storm warning | avis de tempête | n | B1 | /ˈstɔːm ˌwɔːnɪŋ/ | A storm warning has been issued for the coast. | Un avis de tempête a été émis pour le littoral.
+weather map | carte météo | n | A2 | /ˈweðə mæp/ | The presenter pointed to the weather map. | La présentatrice a montré la carte météo.
+frigid | glacial | adj | C2 | /ˈfrɪdʒɪd/ | We woke to a frigid morning. | Nous nous sommes réveillés par un matin glacial.
+extreme weather | phénomènes météorologiques extrêmes | n | B2 | /ɪkˌstriːm ˈweðə/ | Extreme weather is becoming more common. | Les phénomènes météo extrêmes deviennent plus fréquents.
+sunny spells | éclaircies | n | B2 | /ˌsʌni ˈspelz/ | Tomorrow: showers with sunny spells. | Demain : averses et éclaircies.
+in the shade | à l'ombre | adv | A2 | /ɪn ðə ˈʃeɪd/ | It's thirty degrees in the shade. | Il fait trente degrés à l'ombre.
+in the sun | au soleil | adv | A1 | /ɪn ðə ˈsʌn/ | Don't stay too long in the sun. | Ne reste pas trop longtemps au soleil.
+in the rain | sous la pluie | adv | A2 | /ɪn ðə ˈreɪn/ | We waited for the bus in the rain. | Nous avons attendu le bus sous la pluie.
+thick fog | brouillard épais | n | B1 | /ˌθɪk ˈfɒɡ/ | The flights were cancelled because of thick fog. | Les vols ont été annulés à cause d'un épais brouillard.
+gentle breeze | brise légère | n | B2 | /ˌdʒentl ˈbriːz/ | A gentle breeze was blowing from the sea. | Une brise légère soufflait de la mer.
 `,
 );

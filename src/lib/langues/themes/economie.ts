@@ -369,5 +369,78 @@ to liquidate | liquider | v | C2 | /ˈlɪkwɪdeɪt/ | The company was liquidated
 actuarial | actuariel | adj | C2 | /ˌæktʃuˈeəriəl/ | Insurers use actuarial tables. | Les assureurs utilisent des tables actuarielles.
 uptick | légère hausse | n | C2 | /ˈʌptɪk/ | There's been an uptick in sales. | Il y a eu une légère hausse des ventes.
 indebtedness | endettement | n | C2 | /ɪnˈdetɪdnəs/ | Household indebtedness is rising. | L'endettement des ménages augmente.
+joint account | compte joint | n | B1 | /ˌdʒɔɪnt əˈkaʊnt/ | They opened a joint account after the wedding. | Ils ont ouvert un compte joint après le mariage.
+bank statement | relevé bancaire | n | B1 | /ˈbæŋk ˌsteɪtmənt/ | Check your bank statement every month. | Vérifie ton relevé bancaire tous les mois.
+direct debit | prélèvement automatique | n | B2 | /dəˌrekt ˈdebɪt/ | I pay my phone bill by direct debit. | Je paie ma facture de téléphone par prélèvement.
+standing order | virement permanent | n | C1 | /ˌstændɪŋ ˈɔːdə/ | The rent goes out by standing order. | Le loyer part par virement permanent.
+bank transfer | virement bancaire | n | B1 | /ˈbæŋk ˌtrænsfɜː/ | You can pay by bank transfer. | Vous pouvez payer par virement.
+chequebook | chéquier | n | B1 | /ˈtʃekbʊk/ | Hardly anyone uses a chequebook now. | Presque plus personne n'utilise de chéquier.
+piggy bank | tirelire | n | A2 | /ˈpɪɡi bæŋk/ | The little boy saved his coins in a piggy bank. | Le petit garçon mettait ses pièces dans une tirelire.
+phone bill | facture de téléphone | n | A2 | /ˈfəʊn bɪl/ | My phone bill was huge after the holiday. | Ma facture de téléphone était énorme après les vacances.
+council tax | taxe d'habitation | n | B2 | /ˈkaʊnsl tæks/ | Students don't usually pay council tax. | Les étudiants ne paient généralement pas la taxe d'habitation.
+treasury | trésor public, ministère des Finances | n | C1 | /ˈtreʒəri/ | The Treasury announced new spending cuts. | Le ministère des Finances a annoncé de nouvelles coupes budgétaires.
+differential | écart, différentiel | n | C1 | /ˌdɪfəˈrenʃl/ | The pay differential between men and women is shrinking. | L'écart de salaire entre hommes et femmes se réduit.
+on the dole | au chômage | expr | B2 | /ɒn ðə ˈdəʊl/ | He's been on the dole for six months. | Il est au chômage depuis six mois.
+quid | livre (sterling, familier) | n | B2 | /kwɪd/ | Can you lend me ten quid? | Tu peux me prêter dix livres ?
+ballpark figure | chiffre approximatif | n | C1 | /ˈbɔːlpɑːk ˌfɪɡə/ | Can you give me a ballpark figure for the repairs? | Tu peux me donner un ordre de grandeur pour les réparations ?
+payer | payeur | n | C1 | /ˈpeɪə/ | Late payers will be charged interest. | Les mauvais payeurs devront payer des intérêts.
+franc | franc (monnaie) | n | B2 | /fræŋk/ | Switzerland still uses the franc. | La Suisse utilise toujours le franc.
+comptroller | contrôleur financier | n | C2 | /kənˈtrəʊlə/ | The comptroller audits public spending. | Le contrôleur financier vérifie les dépenses publiques.
+risk-averse | réticent au risque, frileux | adj | C1 | /ˈrɪsk əˌvɜːs/ | Banks have become very risk-averse. | Les banques sont devenues très frileuses.
+ticker | téléscripteur ; bandeau d'informations | n | C2 | /ˈtɪkə/ | Share prices scrolled across the ticker. | Les cours des actions défilaient sur le bandeau.
+financier | financier | n | C1 | /faɪˈnænsiə/ | The project was backed by a wealthy financier. | Le projet était soutenu par un riche financier.
+peso | peso | n | C1 | /ˈpeɪsəʊ/ | The meal cost two hundred pesos. | Le repas a coûté deux cents pesos.
+backer | bailleur de fonds, soutien | n | C1 | /ˈbækə/ | The film lost its financial backers. | Le film a perdu ses bailleurs de fonds.
+tax bracket | tranche d'imposition | n | C1 | /ˈtæks ˌbrækɪt/ | His pay rise put him in a higher tax bracket. | Son augmentation l'a fait passer dans une tranche d'imposition supérieure.
+tax rebate | remboursement d'impôt | n | C1 | /ˈtæks ˌriːbeɪt/ | I got a tax rebate of two hundred pounds. | J'ai obtenu un remboursement d'impôt de deux cents livres.
+bank details | coordonnées bancaires | n | B1 | /ˈbæŋk ˌdiːteɪlz/ | Never give your bank details over the phone. | Ne donne jamais tes coordonnées bancaires par téléphone.
+sort code | code guichet (banque britannique) | n | C1 | /ˈsɔːt kəʊd/ | Enter the sort code and account number. | Saisis le code guichet et le numéro de compte.
+account number | numéro de compte | n | A2 | /əˈkaʊnt ˌnʌmbə/ | What is your account number? | Quel est ton numéro de compte ?
+underdeveloped | sous-développé | adj | C1 | /ˌʌndədɪˈveləpt/ | The region's roads are underdeveloped. | Le réseau routier de la région est sous-développé.
+lira | lire (monnaie) | n | C1 | /ˈlɪərə/ | Turkey's currency is the lira. | La monnaie de la Turquie est la livre turque.
+to recoup | récupérer (des pertes), rentrer dans ses frais | v | C1 | /rɪˈkuːp/ | The film failed to recoup its costs. | Le film n'a pas réussi à rentrer dans ses frais.
+allowable | admissible, déductible | adj | C2 | /əˈlaʊəbl/ | Travel costs are an allowable expense. | Les frais de déplacement sont des dépenses déductibles.
+tax-free | exonéré d'impôt, hors taxes | adj | B2 | /ˌtæks ˈfriː/ | The first part of your income is tax-free. | La première tranche de revenus est exonérée d'impôt.
+interest-free | sans intérêts | adj | B2 | /ˌɪntrəst ˈfriː/ | They offered us an interest-free loan. | Ils nous ont proposé un prêt sans intérêts.
+risk-free | sans risque | adj | B2 | /ˌrɪsk ˈfriː/ | No investment is completely risk-free. | Aucun placement n'est totalement sans risque.
+debt-ridden | criblé de dettes | adj | C1 | /ˈdet ˌrɪdn/ | The debt-ridden company went bankrupt. | L'entreprise criblée de dettes a fait faillite.
+out of pocket | de sa poche, perdant (financièrement) | expr | C1 | /ˌaʊt əv ˈpɒkɪt/ | After paying for everyone, I was fifty pounds out of pocket. | Après avoir payé pour tout le monde, j'en étais de cinquante livres de ma poche.
+foreign currency | devises étrangères | n | B1 | /ˌfɒrən ˈkʌrənsi/ | You can buy foreign currency at the post office. | On peut acheter des devises étrangères à la poste.
+annual report | rapport annuel | n | B2 | /ˌænjuəl rɪˈpɔːt/ | The company published its annual report. | L'entreprise a publié son rapport annuel.
+business model | modèle économique | n | B2 | /ˈbɪznəs ˌmɒdl/ | Their business model relies on advertising. | Leur modèle économique repose sur la publicité.
+sales figures | chiffres de vente | n | B1 | /ˈseɪlz ˌfɪɡəz/ | The sales figures for May were excellent. | Les chiffres de vente de mai étaient excellents.
+market leader | leader du marché | n | B2 | /ˈmɑːkɪt ˌliːdə/ | The firm is the market leader in sports shoes. | L'entreprise est leader du marché de la chaussure de sport.
+target market | marché cible | n | B2 | /ˈtɑːɡɪt ˌmɑːkɪt/ | Students are our target market. | Les étudiants sont notre marché cible.
+running costs | frais de fonctionnement | n | B2 | /ˈrʌnɪŋ kɒsts/ | Electric cars have low running costs. | Les voitures électriques ont de faibles coûts d'utilisation.
+budget cuts | coupes budgétaires | n | B2 | /ˈbʌdʒɪt kʌts/ | Budget cuts forced the library to close. | Les coupes budgétaires ont obligé la bibliothèque à fermer.
+cost-cutting | réduction des coûts | n | B2 | /ˈkɒst ˌkʌtɪŋ/ | The new boss introduced cost-cutting measures. | Le nouveau patron a introduit des mesures d'économie.
+trade fair | salon professionnel, foire commerciale | n | B2 | /ˈtreɪd feə/ | We met new clients at the trade fair. | Nous avons rencontré de nouveaux clients au salon professionnel.
+to make money | gagner de l'argent | expr | A2 | /meɪk ˈmʌni/ | He wants to make money fast. | Il veut gagner de l'argent rapidement.
+to do business | faire des affaires | expr | B1 | /duː ˈbɪznəs/ | It's a pleasure to do business with you. | C'est un plaisir de faire affaire avec vous.
+to make an offer | faire une offre | expr | B1 | /meɪk ən ˈɒfə/ | We'd like to make an offer on the house. | Nous aimerions faire une offre sur la maison.
+to make a fortune | faire fortune | expr | B1 | /meɪk ə ˈfɔːtʃuːn/ | He hopes to make a fortune selling software. | Il espère faire fortune en vendant des logiciels.
+to make a profit | faire un bénéfice | expr | B1 | /meɪk ə ˈprɒfɪt/ | The shop hopes to make a profit next year. | La boutique espère faire des bénéfices l'an prochain.
+to make a loss | être en déficit, perdre de l'argent | expr | B2 | /meɪk ə ˈlɒs/ | The airline expects to make a loss this year. | La compagnie s'attend à être en déficit cette année.
+to make a deal | conclure un marché | expr | B1 | /meɪk ə ˈdiːl/ | Let's make a deal: you cook, I wash up. | Marché conclu : tu cuisines, je fais la vaisselle.
+to do the accounts | faire les comptes | expr | B2 | /duː ði əˈkaʊnts/ | My mother does the accounts for the family shop. | Ma mère fait les comptes de la boutique familiale.
+to raise money | collecter des fonds | expr | B1 | /reɪz ˈmʌni/ | The school is raising money for a new library. | L'école collecte des fonds pour une nouvelle bibliothèque.
+to raise prices | augmenter les prix | expr | B1 | /reɪz ˈpraɪsɪz/ | The baker had to raise prices again. | Le boulanger a dû augmenter ses prix encore une fois.
+to undervalue | sous-évaluer | v | C1 | /ˌʌndəˈvæljuː/ | I think you undervalue your own work. | Je pense que tu sous-estimes la valeur de ton travail.
+payable | payable, à payer | adj | C1 | /ˈpeɪəbl/ | The rent is payable on the first of the month. | Le loyer est payable le premier du mois.
+checking account | compte courant (US) | n | B2 | /ˈtʃekɪŋ əˌkaʊnt/ | My salary goes into my checking account. | Mon salaire est versé sur mon compte courant.
+ATM | distributeur de billets (US) | n | A2 | /ˌeɪ tiː ˈem/ | Is there an ATM near here? | Il y a un distributeur de billets près d'ici ?
+dime | pièce de dix cents (US) | n | B1 | /daɪm/ | I found a dime under the sofa. | J'ai trouvé une pièce de dix cents sous le canapé.
+buck | dollar (US, familier) | n | B1 | /bʌk/ | Can you lend me ten bucks? | Tu peux me prêter dix dollars ?
+money talks | l'argent ouvre toutes les portes | expr | B2 | /ˌmʌni ˈtɔːks/ | He got the best table at once; money talks. | Il a eu la meilleure table tout de suite ; l'argent ouvre toutes les portes.
+there's no such thing as a free lunch | rien n'est gratuit en ce bas monde | expr | B2 | /ðeəz ˌnəʊ ˈsʌtʃ θɪŋ əz ə ˌfriː ˈlʌntʃ/ | The app is free, but there's no such thing as a free lunch. | L'application est gratuite, mais rien n'est gratuit en ce bas monde.
+to meet the needs of | répondre aux besoins de | expr | B2 | /miːt ðə ˈniːdz əv/ | The new school will meet the needs of the village. | La nouvelle école répondra aux besoins du village.
+on loan | prêté, en prêt | adj | C1 | /ɒn ˈləʊn/ | The painting is on loan from a museum in Madrid. | Le tableau est prêté par un musée de Madrid.
+in debt | endetté | adj | B1 | /ɪn ˈdet/ | Many students are in debt when they finish university. | Beaucoup d'étudiants sont endettés à la fin de leurs études.
+in short supply | rare, qui manque | adj | C1 | /ɪn ˌʃɔːt səˈplaɪ/ | Fresh water is in short supply on the island. | L'eau douce est rare sur l'île.
+by cheque | par chèque | adv | B1 | /baɪ ˈtʃek/ | Can I pay by cheque? | Je peux payer par chèque ?
+credit limit | plafond de crédit | n | B2 | /ˈkredɪt ˌlɪmɪt/ | I've reached my credit limit. | J'ai atteint mon plafond de crédit.
+small change | petite monnaie | n | B1 | /ˌsmɔːl ˈtʃeɪndʒ/ | Have you got any small change for the parking meter? | Tu as de la petite monnaie pour le parcmètre ?
+rough estimate | estimation approximative | n | B2 | /ˌrʌf ˈestɪmət/ | The builder gave us a rough estimate. | Le maçon nous a donné une estimation approximative.
+bold move | initiative audacieuse | n | C1 | /ˌbəʊld ˈmuːv/ | Opening a shop in a crisis was a bold move. | Ouvrir une boutique en pleine crise, c'était une initiative audacieuse.
 `,
 );

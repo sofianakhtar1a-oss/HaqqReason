@@ -279,5 +279,69 @@ spoonful | cuillerée | n | B1 | /ˈspuːnfʊl/ | Add a spoonful of honey. | Ajo
 potable | potable | adj | C2 | /ˈpəʊtəbl/ | The water is not potable. | L'eau n'est pas potable.
 eatery | petit restaurant | n | C1 | /ˈiːtəri/ | There's a popular eatery near the souk. | Il y a un petit restaurant populaire près du souk.
 froth | mousse, écume | n | C2 | /frɒθ/ | The coffee has a thick froth. | Le café a une mousse épaisse.
+tea bag | sachet de thé | n | A2 | /ˈtiː bæɡ/ | Leave the tea bag in for two minutes. | Laisse le sachet de thé infuser deux minutes.
+orange squash | sirop d'orange | n | A2 | /ˌɒrɪndʒ ˈskwɒʃ/ | Dilute the orange squash with cold water. | Dilue le sirop d'orange avec de l'eau froide.
+iced tea | thé glacé | n | A2 | /ˌaɪst ˈtiː/ | A glass of iced tea is lovely in summer. | Un verre de thé glacé, c'est agréable en été.
+green tea | thé vert | n | A2 | /ˌɡriːn ˈtiː/ | She drinks green tea every morning. | Elle boit du thé vert chaque matin.
+black coffee | café noir | n | A2 | /ˌblæk ˈkɒfi/ | A black coffee, no sugar, please. | Un café noir, sans sucre, s'il vous plaît.
+white coffee | café au lait | n | A2 | /ˌwaɪt ˈkɒfi/ | Do you take your coffee black or white? | Tu prends ton café noir ou au lait ?
+decaf | déca, café décaféiné | n | B1 | /ˈdiːkæf/ | I only drink decaf after six. | Après dix-huit heures, je ne bois que du déca.
+cappuccino | cappuccino | n | A2 | /ˌkæpʊˈtʃiːnəʊ/ | Two cappuccinos and a tea, please. | Deux cappuccinos et un thé, s'il vous plaît.
+filter coffee | café filtre | n | B1 | /ˈfɪltə ˌkɒfi/ | The office machine only makes filter coffee. | La machine du bureau ne fait que du café filtre.
+instant coffee | café soluble | n | A2 | /ˌɪnstənt ˈkɒfi/ | A jar of instant coffee lasts me a month. | Un pot de café soluble me dure un mois.
+chaser | boisson qu'on prend après une autre | n | C2 | /ˈtʃeɪsə/ | He drank a glass of water as a chaser. | Il a bu un verre d'eau juste après.
+table for two | une table pour deux | expr | A1 | /ˌteɪbl fə ˈtuː/ | A table for two, please. | Une table pour deux, s'il vous plaît.
+today's special | plat du jour | n | A2 | /təˌdeɪz ˈspeʃl/ | Today's special is lamb curry. | Le plat du jour est un curry d'agneau.
+side order | accompagnement (commandé à part) | n | B1 | /ˈsaɪd ˌɔːdə/ | Can we have a side order of chips? | On peut avoir une portion de frites en plus ?
+dessert menu | carte des desserts | n | A2 | /dɪˈzɜːt ˌmenjuː/ | Could we see the dessert menu? | Pourrions-nous voir la carte des desserts ?
+cheese board | plateau de fromages | n | B1 | /ˈtʃiːz bɔːd/ | We finished with a cheese board. | Nous avons terminé par un plateau de fromages.
+bread basket | corbeille à pain | n | A2 | /ˈbred ˌbɑːskɪt/ | The waiter refilled the bread basket. | Le serveur a rempli de nouveau la corbeille à pain.
+doggy bag | sac pour emporter les restes | n | B2 | /ˈdɒɡi bæɡ/ | Can I have a doggy bag for the rest of my pizza? | Je peux emporter le reste de ma pizza ?
+service charge | service (compris) | n | B1 | /ˈsɜːvɪs tʃɑːdʒ/ | A twelve per cent service charge is added to the bill. | Douze pour cent de service sont ajoutés à l'addition.
+cover charge | prix du couvert | n | B2 | /ˈkʌvə tʃɑːdʒ/ | Some Italian restaurants add a cover charge. | Certains restaurants italiens facturent le couvert.
+to split the bill | partager l'addition | expr | B1 | /splɪt ðə ˈbɪl/ | Shall we split the bill? | On partage l'addition ?
+to pay separately | payer séparément | expr | A2 | /peɪ ˈseprətli/ | Can we pay separately, please? | Pouvons-nous payer séparément, s'il vous plaît ?
+food hygiene rating | note d'hygiène alimentaire | n | C1 | /ˌfuːd ˈhaɪdʒiːn ˌreɪtɪŋ/ | The café has a five-star food hygiene rating. | Le café a obtenu la meilleure note d'hygiène.
+allergy information | informations sur les allergènes | n | B1 | /ˈælədʒi ɪnfəˌmeɪʃn/ | Ask the staff for allergy information. | Demandez au personnel les informations sur les allergènes.
+vegetarian option | plat végétarien (au menu) | n | A2 | /ˌvedʒəˈteəriən ˌɒpʃn/ | Is there a vegetarian option? | Y a-t-il un plat végétarien ?
+kids' menu | menu enfant | n | A2 | /ˈkɪdz ˌmenjuː/ | The kids' menu comes with a drink. | Le menu enfant est servi avec une boisson.
+outdoor seating | terrasse | n | B1 | /ˌaʊtdɔː ˈsiːtɪŋ/ | The café has outdoor seating in summer. | Le café a une terrasse en été.
+takeaway menu | carte des plats à emporter | n | A2 | /ˈteɪkəweɪ ˌmenjuː/ | A takeaway menu came through the letterbox. | Une carte de plats à emporter a été glissée dans la boîte aux lettres.
+food delivery | livraison de repas | n | A2 | /ˈfuːd dɪˌlɪvəri/ | Food delivery apps are very popular. | Les applications de livraison de repas sont très populaires.
+fast-food chain | chaîne de restauration rapide | n | B1 | /ˌfɑːst fuːd ˈtʃeɪn/ | A fast-food chain opened near the school. | Une chaîne de restauration rapide s'est installée près de l'école.
+kebab shop | restaurant de kebabs | n | A2 | /kɪˈbæb ʃɒp/ | We grabbed a wrap at the kebab shop. | Nous avons pris un sandwich roulé au kebab.
+chip shop | friterie (poisson-frites) | n | B1 | /ˈtʃɪp ʃɒp/ | We bought dinner at the chip shop. | Nous avons acheté le dîner à la friterie.
+brasserie | brasserie | n | B2 | /ˈbræsəri/ | We had lunch at a little brasserie. | Nous avons déjeuné dans une petite brasserie.
+tearoom | salon de thé | n | B1 | /ˈtiːruːm/ | We had scones in a village tearoom. | Nous avons mangé des scones dans un salon de thé de village.
+coffee shop | café (établissement) | n | A2 | /ˈkɒfi ʃɒp/ | Let's meet at the coffee shop on the corner. | Retrouvons-nous au café du coin.
+juice bar | bar à jus | n | B1 | /ˈdʒuːs bɑː/ | The juice bar does great smoothies. | Le bar à jus fait de super smoothies.
+sandwich bar | sandwicherie | n | B1 | /ˈsænwɪdʒ bɑː/ | I get my lunch from a sandwich bar. | J'achète mon déjeuner dans une sandwicherie.
+salad bar | bar à salades | n | A2 | /ˈsæləd bɑː/ | Help yourself at the salad bar. | Servez-vous au bar à salades.
+carvery | buffet de viandes rôties | n | C1 | /ˈkɑːvəri/ | The pub does a Sunday carvery. | Le pub propose un buffet de rôtis le dimanche.
+all-you-can-eat buffet | buffet à volonté | n | B1 | /ˌɔːl jə kən ˈiːt ˌbʊfeɪ/ | The hotel has an all-you-can-eat buffet. | L'hôtel propose un buffet à volonté.
+food truck | camion de cuisine de rue | n | B1 | /ˈfuːd trʌk/ | A food truck was selling tacos. | Un camion vendait des tacos.
+ice-cream parlour | glacier (boutique) | n | B1 | /ˌaɪs ˈkriːm ˌpɑːlə/ | We queued at the ice-cream parlour. | Nous avons fait la queue chez le glacier.
+to have a snack | prendre un en-cas, grignoter | expr | A2 | /hæv ə ˈsnæk/ | Let's have a snack before the film. | Prenons un en-cas avant le film.
+to make a cup of tea | faire une tasse de thé | expr | A2 | /meɪk ə ˌkʌp əv ˈtiː/ | I'll make a cup of tea for everyone. | Je vais faire du thé pour tout le monde.
+to put the kettle on | mettre l'eau à chauffer | expr | B1 | /pʊt ðə ˈketl ɒn/ | Come in, I'll put the kettle on. | Entre, je mets l'eau à chauffer.
+to order a takeaway | commander à emporter | expr | A2 | /ˌɔːdər ə ˈteɪkəweɪ/ | We're too tired to cook; let's order a takeaway. | Nous sommes trop fatigués pour cuisiner ; commandons à emporter.
+to have a drink | prendre un verre | expr | A2 | /hæv ə ˈdrɪŋk/ | Let's have a drink after work. | Allons prendre un verre après le travail.
+to have lunch | déjeuner | expr | A1 | /hæv ˈlʌntʃ/ | We usually have lunch at one o'clock. | Nous déjeunons généralement à 13 heures.
+to have dinner | dîner | expr | A1 | /hæv ˈdɪnə/ | Would you like to have dinner with us? | Voulez-vous dîner avec nous ?
+salt and pepper | sel et poivre ; poivre et sel (cheveux) | expr | A2 | /ˌsɔːlt ən ˈpepə/ | Could you pass the salt and pepper, please? | Tu peux me passer le sel et le poivre, s'il te plaît ?
+to wine and dine | inviter au restaurant, recevoir avec faste | expr | C1 | /ˌwaɪn ən ˈdaɪn/ | The company wined and dined its best clients. | L'entreprise a reçu ses meilleurs clients avec faste.
+sweet and sour | aigre-doux | adj | B1 | /ˌswiːt ən ˈsaʊə/ | I'll have the sweet and sour chicken. | Je prendrai le poulet aigre-doux.
+are you ready to order | vous avez choisi ? | expr | A2 | /ɑː juː ˌredi tʊ ˈɔːdə/ | Are you ready to order, or do you need more time? | Vous avez choisi, ou il vous faut encore un peu de temps ?
+I'd like to book a table | je voudrais réserver une table | expr | A2 | /aɪd ˌlaɪk tə ˌbʊk ə ˈteɪbl/ | Hello, I'd like to book a table for four tonight. | Bonjour, je voudrais réserver une table pour quatre ce soir.
+entrée | plat principal (US) | n | B2 | /ˈɒntreɪ/ | In America, the entrée is the main course, not the starter. | Aux États-Unis, l'« entrée » est le plat principal, pas l'entrée.
+pitcher | pichet, carafe (US) ; lanceur (baseball) | n | B1 | /ˈpɪtʃə/ | Could we have a pitcher of water, please? | Pourrions-nous avoir une carafe d'eau, s'il vous plaît ?
+to take a sip | boire une gorgée | expr | B1 | /teɪk ə ˈsɪp/ | Take a sip and tell me if it's too sweet. | Bois une gorgée et dis-moi si c'est trop sucré.
+to take a bite | prendre une bouchée | expr | B1 | /teɪk ə ˈbaɪt/ | Can I take a bite of your sandwich? | Je peux prendre une bouchée de ton sandwich ?
+corkscrew | tire-bouchon | n | B1 | /ˈkɔːkskruː/ | We couldn't open the bottle without a corkscrew. | Nous n'avons pas pu ouvrir la bouteille sans tire-bouchon.
+light meal | repas léger | n | B1 | /ˌlaɪt ˈmiːl/ | I just want a light meal this evening. | Je veux juste un repas léger ce soir.
+strong coffee | café fort, café serré | n | A2 | /ˌstrɒŋ ˈkɒfi/ | I need a strong coffee to wake up. | J'ai besoin d'un café fort pour me réveiller.
+weak tea | thé léger | n | B1 | /ˌwiːk ˈtiː/ | She likes weak tea with lots of milk. | Elle aime le thé léger avec beaucoup de lait.
+sweet tooth | goût pour les sucreries | n | B2 | /ˌswiːt ˈtuːθ/ | My dad has a real sweet tooth. | Mon père adore les sucreries.
+freshly squeezed | fraîchement pressé | adj | B1 | /ˌfreʃli ˈskwiːzd/ | A glass of freshly squeezed orange juice, please. | Un verre de jus d'orange fraîchement pressé, s'il vous plaît.
 `,
 );

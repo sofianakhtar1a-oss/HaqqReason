@@ -146,5 +146,34 @@ shaver | rasoir électrique | n | B2 | /ˈʃeɪvə/ | He trims his beard with a 
 urinal | urinoir | n | C2 | /jʊəˈraɪnl/ | Many mosques have no urinals. | Beaucoup de mosquées n'ont pas d'urinoirs.
 tweezers | pince à épiler | n | B2 | /ˈtwiːzəz/ | Use tweezers to remove the splinter. | Utilise une pince à épiler pour enlever l'écharde.
 soapy | savonneux | adj | B2 | /ˈsəʊpi/ | Wash the dishes in soapy water. | Lave la vaisselle à l'eau savonneuse.
+scourer | tampon à récurer | n | B1 | /ˈskaʊərə/ | Use a scourer on the burnt pan. | Utilise un tampon à récurer sur la casserole brûlée.
+plughole | bonde, trou d'évacuation | n | B1 | /ˈplʌɡhəʊl/ | Hair has blocked the plughole again. | Des cheveux ont encore bouché l'évacuation.
+toilet roll | rouleau de papier toilette | n | A2 | /ˈtɔɪlət rəʊl/ | We need to buy more toilet rolls. | Il faut racheter des rouleaux de papier toilette.
+mouthwash | bain de bouche | n | B1 | /ˈmaʊθwɒʃ/ | Rinse with mouthwash after brushing. | Rince-toi avec un bain de bouche après le brossage.
+shaving foam | mousse à raser | n | B1 | /ˈʃeɪvɪŋ fəʊm/ | He ran out of shaving foam this morning. | Il n'avait plus de mousse à raser ce matin.
+shower gel | gel douche | n | A2 | /ˈʃaʊə dʒel/ | This shower gel smells of lemon. | Ce gel douche sent le citron.
+aftershave | après-rasage | n | B1 | /ˈɑːftəʃeɪv/ | His aftershave smells of wood and spice. | Son après-rasage sent le bois et les épices.
+moisturiser | crème hydratante | n | B1 | /ˈmɔɪstʃəraɪzə/ | Apply moisturiser after washing your face. | Applique une crème hydratante après t'être lavé le visage.
+lip balm | baume à lèvres | n | B1 | /ˈlɪp bɑːm/ | Lip balm stops your lips from cracking. | Le baume à lèvres empêche les lèvres de gercer.
+nail clippers | coupe-ongles | n | B1 | /ˈneɪl ˌklɪpəz/ | Can I borrow your nail clippers? | Je peux t'emprunter ton coupe-ongles ?
+nail file | lime à ongles | n | B1 | /ˈneɪl faɪl/ | She smoothed her nails with a nail file. | Elle s'est limé les ongles avec une lime.
+cotton wool | coton hydrophile | n | B1 | /ˌkɒtn ˈwʊl/ | Clean the cut with cotton wool and warm water. | Nettoie la coupure avec du coton et de l'eau tiède.
+cotton bud | coton-tige | n | B1 | /ˈkɒtn bʌd/ | Never put a cotton bud inside your ear. | Ne mets jamais de coton-tige dans ton oreille.
+washing line | corde à linge | n | A2 | /ˈwɒʃɪŋ laɪn/ | Hang the sheets on the washing line. | Étends les draps sur la corde à linge.
+clothes horse | étendoir à linge | n | B1 | /ˈkləʊðz hɔːs/ | Put the clothes horse by the radiator. | Mets l'étendoir à linge près du radiateur.
+laundry detergent | lessive | n | B1 | /ˈlɔːndri dɪˌtɜːdʒənt/ | This laundry detergent works at low temperatures. | Cette lessive fonctionne à basse température.
+fabric conditioner | assouplissant | n | B1 | /ˈfæbrɪk kənˌdɪʃənə/ | Add fabric conditioner to make the towels softer. | Ajoute de l'assouplissant pour que les serviettes soient plus douces.
+stain remover | détachant | n | B1 | /ˈsteɪn rɪˌmuːvə/ | Try some stain remover on the coffee mark. | Essaie un peu de détachant sur la tache de café.
+furniture polish | encaustique, produit pour les meubles | n | B2 | /ˈfɜːnɪtʃə ˌpɒlɪʃ/ | The room smelt of furniture polish. | La pièce sentait l'encaustique.
+feather duster | plumeau | n | B1 | /ˌfeðə ˈdʌstə/ | Dust the lampshades with a feather duster. | Dépoussière les abat-jour avec un plumeau.
+squeegee | raclette (pour vitres) | n | C1 | /ˈskwiːdʒiː/ | Wipe the shower screen with a squeegee. | Essuie la paroi de douche avec une raclette.
+bin liner | sac poubelle | n | B1 | /ˈbɪn ˌlaɪnə/ | Put a new bin liner in the kitchen bin. | Mets un nouveau sac dans la poubelle de la cuisine.
+pedal bin | poubelle à pédale | n | B2 | /ˈpedl bɪn/ | Step on the pedal bin to open the lid. | Appuie sur la pédale pour ouvrir la poubelle.
+hand cream | crème pour les mains | n | A2 | /ˈhænd kriːm/ | I put hand cream on after washing up. | Je mets de la crème pour les mains après la vaisselle.
+to have a haircut | se faire couper les cheveux | expr | A2 | /hæv ə ˈheəkʌt/ | You need to have a haircut before the wedding. | Tu dois te faire couper les cheveux avant le mariage.
+to blow-dry your hair | se sécher les cheveux au sèche-cheveux | expr | B1 | /ˈbləʊ draɪ jə ˈheə/ | I blow-dry my hair every morning. | Je me sèche les cheveux tous les matins.
+tidiness | ordre, propreté | n | B2 | /ˈtaɪdinəs/ | The hotel was praised for its tidiness. | L'hôtel a été félicité pour sa propreté.
+trash can | poubelle (US) | n | A2 | /ˈtræʃ kæn/ | Throw it in the trash can. | Jette-le à la poubelle.
+scouring pad | tampon à récurer | n | B2 | /ˈskaʊərɪŋ pæd/ | Clean the burnt pan with a scouring pad. | Nettoie la casserole brûlée avec un tampon à récurer.
 `,
 );

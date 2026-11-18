@@ -299,5 +299,121 @@ hookah | narguilé, chicha | n | C1 | /ˈhʊkə/ | Smoking a hookah harms the lu
 blindfold | bandeau (sur les yeux) | n | C1 | /ˈblaɪndfəʊld/ | The children played with a blindfold. | Les enfants jouaient les yeux bandés.
 multiplex | multiplexe | n | C1 | /ˈmʌltipleks/ | We saw the film at the multiplex. | Nous avons vu le film au multiplexe.
 snowmobile | motoneige | n | B2 | /ˈsnəʊməbiːl/ | They crossed the frozen lake on a snowmobile. | Ils ont traversé le lac gelé en motoneige.
+climbing frame | cage à grimper | n | B1 | /ˈklaɪmɪŋ freɪm/ | The children played on the climbing frame. | Les enfants jouaient sur la cage à grimper.
+film buff | cinéphile | n | B2 | /ˈfɪlm bʌf/ | My uncle is a real film buff. | Mon oncle est un vrai cinéphile.
+sketching | croquis, dessin à main levée | n | B1 | /ˈsketʃɪŋ/ | She took up sketching in the park. | Elle s'est mise à faire des croquis dans le parc.
+playing cards | cartes à jouer | n | A2 | /ˈpleɪɪŋ kɑːdz/ | Bring a pack of playing cards for the train. | Apporte un jeu de cartes pour le train.
+angling | pêche à la ligne | n | B2 | /ˈæŋɡlɪŋ/ | Angling is one of Britain's most popular hobbies. | La pêche à la ligne est l'un des loisirs préférés des Britanniques.
+cheat code | code de triche | n | B1 | /ˈtʃiːt kəʊd/ | He used a cheat code to get extra lives. | Il a utilisé un code de triche pour avoir des vies en plus.
+wizard | magicien, sorcier ; as, génie | n | B1 | /ˈwɪzəd/ | She's a wizard with computers. | C'est une as de l'informatique.
+disco | discothèque, disco | n | A2 | /ˈdɪskəʊ/ | The school is holding a disco on Friday. | L'école organise une soirée dansante vendredi.
+joker | farceur ; joker | n | B1 | /ˈdʒəʊkə/ | He's the joker of the class. | C'est le farceur de la classe.
+tandem | tandem | n | B2 | /ˈtændəm/ | They rode a tandem along the coast. | Ils ont fait du tandem le long de la côte.
+playable | jouable | adj | B2 | /ˈpleɪəbl/ | The pitch was too wet to be playable. | Le terrain était trop mouillé pour être praticable.
+finder | personne qui trouve | n | B2 | /ˈfaɪndə/ | Finders keepers! | Qui le trouve le garde !
+sprite | lutin | n | C2 | /spraɪt/ | The story tells of a water sprite. | L'histoire parle d'un lutin des eaux.
+marquee | grande tente, chapiteau | n | C1 | /mɑːˈkiː/ | The reception was held in a marquee in the garden. | La réception a eu lieu sous un chapiteau dans le jardin.
+pixie | lutin, farfadet | n | B2 | /ˈpɪksi/ | She has a pixie haircut. | Elle a une coupe de cheveux à la garçonne.
+cyclops | cyclope | n | C1 | /ˈsaɪklɒps/ | The cyclops had a single eye in his forehead. | Le cyclope avait un seul œil au milieu du front.
+ogre | ogre | n | B2 | /ˈəʊɡə/ | The ogre lived in a castle on the hill. | L'ogre vivait dans un château sur la colline.
+jig | gigue (danse) | n | C1 | /dʒɪɡ/ | They danced an Irish jig. | Ils ont dansé une gigue irlandaise.
+avenger | vengeur | n | C1 | /əˈvendʒə/ | He saw himself as the avenger of his family. | Il se voyait comme le vengeur de sa famille.
+blaster | pistolet laser (de science-fiction) | n | C2 | /ˈblɑːstə/ | The robot fired its blaster. | Le robot a tiré avec son pistolet laser.
+woodworking | menuiserie, travail du bois | n | B2 | /ˈwʊdwɜːkɪŋ/ | He took up woodworking when he retired. | Il s'est mis à la menuiserie à la retraite.
+streamer | serpentin ; diffuseur en direct | n | B2 | /ˈstriːmə/ | The room was decorated with paper streamers. | La pièce était décorée de serpentins en papier.
+Scrabble | Scrabble | n | B1 | /ˈskræbl/ | We played Scrabble all evening. | Nous avons joué au Scrabble toute la soirée.
+goody bag | pochette-surprise | n | B2 | /ˈɡʊdi bæɡ/ | Each child left the party with a goody bag. | Chaque enfant est reparti de la fête avec une pochette-surprise.
+bunting | guirlande de fanions | n | C1 | /ˈbʌntɪŋ/ | The street was decorated with bunting. | La rue était décorée de guirlandes de fanions.
+wraith | spectre, fantôme | n | C2 | /reɪθ/ | A pale wraith appeared at the window. | Un spectre pâle apparut à la fenêtre.
+watcher | observateur | n | C1 | /ˈwɒtʃə/ | Bird watchers gathered at the lake. | Des observateurs d'oiseaux se sont réunis au lac.
+jukebox | juke-box | n | B1 | /ˈdʒuːkbɒks/ | He put a coin in the jukebox. | Il a mis une pièce dans le juke-box.
+solitaire | réussite (jeu de cartes) ; solitaire (bijou) | n | C1 | /ˌsɒlɪˈteə/ | He played solitaire on his computer. | Il jouait au solitaire sur son ordinateur.
+hula hoop | cerceau | n | B1 | /ˈhuːlə huːp/ | She can keep a hula hoop spinning for ages. | Elle arrive à faire tourner un cerceau très longtemps.
+decal | décalcomanie, autocollant | n | C1 | /ˈdiːkæl/ | He stuck a decal on his skateboard. | Il a collé un autocollant sur son skate.
+catapult | lance-pierre ; catapulte | n | B2 | /ˈkætəpʌlt/ | The boy broke a window with his catapult. | Le garçon a cassé une vitre avec son lance-pierre.
+coven | assemblée de sorcières | n | C2 | /ˈkʌvn/ | In the story, a coven of witches meets at midnight. | Dans l'histoire, une assemblée de sorcières se réunit à minuit.
+house-warming party | pendaison de crémaillère | n | B1 | /ˈhaʊs ˌwɔːmɪŋ ˌpɑːti/ | We're having a house-warming party on Saturday. | Nous pendons la crémaillère samedi.
+birthday party | fête d'anniversaire | n | A1 | /ˈbɜːθdeɪ ˌpɑːti/ | My son is going to a birthday party. | Mon fils va à une fête d'anniversaire.
+surprise party | fête surprise | n | A2 | /səˈpraɪz ˌpɑːti/ | We're planning a surprise party for Dad. | Nous préparons une fête surprise pour papa.
+fancy dress | déguisement | n | B1 | /ˌfænsi ˈdres/ | Everyone came to the party in fancy dress. | Tout le monde est venu déguisé à la fête.
+dinner party | dîner (entre amis) | n | B1 | /ˈdɪnə ˌpɑːti/ | They're having a dinner party for eight. | Ils reçoivent huit personnes à dîner.
+garden party | garden-party | n | B1 | /ˈɡɑːdn ˌpɑːti/ | The queen used to hold garden parties every summer. | La reine donnait des garden-parties chaque été.
+birthday card | carte d'anniversaire | n | A1 | /ˈbɜːθdeɪ kɑːd/ | Don't forget to sign the birthday card. | N'oublie pas de signer la carte d'anniversaire.
+greetings card | carte de vœux, carte de circonstance | n | B1 | /ˈɡriːtɪŋz kɑːd/ | The shop sells greetings cards for every occasion. | La boutique vend des cartes pour toutes les occasions.
+thank-you card | carte de remerciement | n | A2 | /ˈθæŋk juː kɑːd/ | She sent a thank-you card after the wedding. | Elle a envoyé une carte de remerciement après le mariage.
+gift box | coffret cadeau | n | A2 | /ˈɡɪft bɒks/ | The perfume comes in a gift box. | Le parfum est présenté dans un coffret cadeau.
+party bag | sachet de fête (pour les enfants) | n | B1 | /ˈpɑːti bæɡ/ | Each guest took home a party bag. | Chaque invité est reparti avec un sachet de fête.
+party hat | chapeau de fête | n | A2 | /ˈpɑːti hæt/ | The children wore paper party hats. | Les enfants portaient des chapeaux de fête en papier.
+sparkler | cierge magique | n | B1 | /ˈspɑːklə/ | The children waved sparklers in the dark. | Les enfants agitaient des cierges magiques dans le noir.
+firework display | feu d'artifice | n | A2 | /ˈfaɪəwɜːk dɪˌspleɪ/ | We watched the firework display from the bridge. | Nous avons regardé le feu d'artifice depuis le pont.
+street party | fête de quartier | n | B1 | /ˈstriːt ˌpɑːti/ | The neighbours organised a street party. | Les voisins ont organisé une fête de quartier.
+Ferris wheel | grande roue | n | A2 | /ˈferɪs wiːl/ | We rode the Ferris wheel at the fair. | Nous sommes montés dans la grande roue à la fête foraine.
+dodgems | autos tamponneuses | n | B1 | /ˈdɒdʒəmz/ | The kids spent all their money on the dodgems. | Les enfants ont dépensé tout leur argent aux autos tamponneuses.
+helter-skelter | toboggan en spirale | n | C1 | /ˌheltə ˈskeltə/ | They slid down the helter-skelter on mats. | Ils ont descendu le toboggan géant sur des tapis.
+coconut shy | jeu de massacre (aux noix de coco) | n | C1 | /ˈkəʊkənʌt ʃaɪ/ | He won a teddy bear at the coconut shy. | Il a gagné un ours en peluche au jeu de massacre.
+craft fair | marché artisanal | n | B1 | /ˈkrɑːft feə/ | She sells her pottery at craft fairs. | Elle vend ses poteries sur les marchés artisanaux.
+charity event | événement caritatif | n | B1 | /ˈtʃærəti ɪˌvent/ | The singer performed at a charity event. | Le chanteur s'est produit lors d'un événement caritatif.
+raffle ticket | billet de tombola | n | B1 | /ˈræfl ˌtɪkɪt/ | I bought five raffle tickets and won nothing. | J'ai acheté cinq billets de tombola et je n'ai rien gagné.
+tombola | tombola | n | B2 | /tɒmˈbəʊlə/ | The first prize in the tombola is a bike. | Le premier lot de la tombola est un vélo.
+dance class | cours de danse | n | A2 | /ˈdɑːns klɑːs/ | My daughter goes to a dance class on Saturdays. | Ma fille va à un cours de danse le samedi.
+cookery class | cours de cuisine | n | A2 | /ˈkʊkəri klɑːs/ | We took a cookery class in Tuscany. | Nous avons suivi un cours de cuisine en Toscane.
+warlock | sorcier | n | C1 | /ˈwɔːlɒk/ | The warlock cast a spell on the village. | Le sorcier a jeté un sort au village.
+checkmate | échec et mat | n | B2 | /ˈtʃekmeɪt/ | She won the game with a checkmate in ten moves. | Elle a gagné la partie par un échec et mat en dix coups.
+front row | premier rang | n | A2 | /ˌfrʌnt ˈrəʊ/ | We had seats in the front row. | Nous avions des places au premier rang.
+colouring book | livre de coloriage | n | A2 | /ˈkʌlərɪŋ bʊk/ | The child was busy with a colouring book. | L'enfant était occupé avec un livre de coloriage.
+fishing net | filet de pêche | n | A2 | /ˈfɪʃɪŋ net/ | The children caught crabs with a fishing net. | Les enfants ont attrapé des crabes avec une épuisette.
+adventure playground | aire de jeux (d'aventure) | n | B1 | /ədˈventʃə ˌpleɪɡraʊnd/ | The park has a big adventure playground. | Le parc a une grande aire de jeux d'aventure.
+soft play | aire de jeux (intérieure, rembourrée) | n | B2 | /ˈsɒft pleɪ/ | We took the toddlers to soft play. | Nous avons emmené les petits dans une aire de jeux couverte.
+bouncy castle | château gonflable | n | A2 | /ˌbaʊnsi ˈkɑːsl/ | There was a bouncy castle at the party. | Il y avait un château gonflable à la fête.
+crazy golf | minigolf | n | B1 | /ˌkreɪzi ˈɡɒlf/ | We played crazy golf on the seafront. | Nous avons fait un minigolf sur le front de mer.
+go-karting | karting | n | B1 | /ˈɡəʊ kɑːtɪŋ/ | We went go-karting for his birthday. | Nous avons fait du karting pour son anniversaire.
+paintball | paintball | n | B1 | /ˈpeɪntbɔːl/ | The office team played paintball in the woods. | L'équipe du bureau a fait du paintball dans les bois.
+laser tag | laser game | n | B1 | /ˈleɪzə tæɡ/ | The kids love playing laser tag. | Les enfants adorent jouer au laser game.
+soft toy | peluche | n | A2 | /ˌsɒft ˈtɔɪ/ | He can't sleep without his soft toy. | Il ne peut pas dormir sans sa peluche.
+building blocks | cubes (de construction) | n | A2 | /ˈbɪldɪŋ blɒks/ | The toddler stacked his building blocks. | Le petit empilait ses cubes.
+toy box | coffre à jouets | n | A2 | /ˈtɔɪ bɒks/ | Put your toys back in the toy box. | Range tes jouets dans le coffre.
+doll's house | maison de poupée | n | A2 | /ˈdɒlz haʊs/ | She played with her doll's house for hours. | Elle jouait des heures avec sa maison de poupée.
+rocking horse | cheval à bascule | n | B1 | /ˈrɒkɪŋ hɔːs/ | Grandpa made a wooden rocking horse. | Papi a fabriqué un cheval à bascule en bois.
+train set | train électrique (jouet) | n | B1 | /ˈtreɪn set/ | He set up the train set in the attic. | Il a installé le train électrique au grenier.
+play dough | pâte à modeler | n | A2 | /ˈpleɪ dəʊ/ | The children made animals out of play dough. | Les enfants ont fait des animaux en pâte à modeler.
+finger painting | peinture au doigt | n | B1 | /ˈfɪŋɡə ˌpeɪntɪŋ/ | Finger painting is very messy. | La peinture au doigt, ça salit beaucoup.
+sticker book | album d'autocollants | n | A2 | /ˈstɪkə bʊk/ | He filled his sticker book in a week. | Il a rempli son album d'autocollants en une semaine.
+picture book | album illustré | n | A2 | /ˈpɪktʃə bʊk/ | We read a picture book before bed. | Nous lisons un album illustré avant de dormir.
+nursery rhyme | comptine | n | B1 | /ˈnɜːsəri raɪm/ | The children sang a nursery rhyme. | Les enfants ont chanté une comptine.
+monkey bars | échelle horizontale (jeu) | n | B1 | /ˈmʌŋki bɑːz/ | She swung across the monkey bars. | Elle a traversé l'échelle horizontale à la force des bras.
+musical chairs | jeu des chaises musicales | n | A2 | /ˌmjuːzɪkl ˈtʃeəz/ | We played musical chairs at the party. | Nous avons joué aux chaises musicales à la fête.
+pass the parcel | jeu du colis (on fait passer un paquet) | n | B2 | /ˌpɑːs ðə ˈpɑːsl/ | The children played pass the parcel. | Les enfants ont joué au jeu du colis.
+Easter egg hunt | chasse aux œufs | n | A2 | /ˈiːstər eɡ ˌhʌnt/ | There's an Easter egg hunt in the garden. | Il y a une chasse aux œufs dans le jardin.
+face painting | maquillage pour enfants | n | A2 | /ˈfeɪs ˌpeɪntɪŋ/ | There was face painting at the fair. | Il y avait un stand de maquillage à la kermesse.
+playdate | après-midi de jeu (entre enfants) | n | B1 | /ˈpleɪdeɪt/ | My son has a playdate with his friend. | Mon fils a rendez-vous pour jouer chez son copain.
+all-night | qui dure toute la nuit, de nuit | adj | B2 | /ˌɔːl ˈnaɪt/ | There's an all-night café near the station. | Il y a un café ouvert toute la nuit près de la gare.
+to take a photo | prendre une photo | expr | A1 | /teɪk ə ˈfəʊtəʊ/ | Can you take a photo of us? | Tu peux nous prendre en photo ?
+to go for a swim | aller se baigner | expr | A2 | /ɡəʊ fər ə ˈswɪm/ | Let's go for a swim before lunch. | Allons nous baigner avant le déjeuner.
+to go for a drive | faire un tour en voiture | expr | A2 | /ɡəʊ fər ə ˈdraɪv/ | We could go for a drive in the countryside. | On pourrait faire un tour en voiture à la campagne.
+to go out for a meal | aller au restaurant | expr | A2 | /ɡəʊ aʊt fər ə ˈmiːl/ | Let's go out for a meal on Friday. | Allons au restaurant vendredi.
+to have friends round | recevoir des amis chez soi | expr | B1 | /hæv ˌfrendz ˈraʊnd/ | We often have friends round at the weekend. | Nous recevons souvent des amis le week-end.
+to throw a party | organiser une fête | expr | B1 | /θrəʊ ə ˈpɑːti/ | They're going to throw a party for her birthday. | Ils vont organiser une fête pour son anniversaire.
+to have a good time | bien s'amuser, passer un bon moment | expr | A1 | /hæv ə ɡʊd ˈtaɪm/ | Did you have a good time at the party? | Tu t'es bien amusé à la fête ?
+to tell a joke | raconter une blague | expr | A2 | /tel ə ˈdʒəʊk/ | He loves to tell a joke at dinner. | Il adore raconter une blague au dîner.
+to keep a diary | tenir un journal | expr | B1 | /kiːp ə ˈdaɪəri/ | She keeps a diary and writes in it every night. | Elle tient un journal et y écrit tous les soirs.
+to win a prize | gagner un prix | expr | A2 | /wɪn ə ˈpraɪz/ | She hopes to win a prize for her painting. | Elle espère gagner un prix pour son tableau.
+to win the lottery | gagner au loto | expr | A2 | /wɪn ðə ˈlɒtəri/ | Everyone dreams of winning the lottery. | Tout le monde rêve de gagner au loto.
+out and about | dehors, en vadrouille | expr | B2 | /ˌaʊt ənd əˈbaʊt/ | It's good to see you out and about again after your illness. | Ça fait plaisir de te revoir dehors après ta maladie.
+to replay | rejouer, repasser | v | B1 | /ˌriːˈpleɪ/ | The match will be replayed next Tuesday. | Le match sera rejoué mardi prochain.
+to tell a story | raconter une histoire | expr | A2 | /tel ə ˈstɔːri/ | Grandpa, tell us a story! | Papi, raconte-nous une histoire !
+to pass the time | passer le temps | expr | B1 | /pɑːs ðə ˈtaɪm/ | We played cards to pass the time on the train. | Nous avons joué aux cartes pour passer le temps dans le train.
+to do a puzzle | faire un puzzle | expr | A2 | /duː ə ˈpʌzl/ | The children are doing a puzzle on the floor. | Les enfants font un puzzle par terre.
+to do a crossword | faire des mots croisés | expr | B1 | /duː ə ˈkrɒswɜːd/ | My grandmother does a crossword every morning. | Ma grand-mère fait des mots croisés tous les matins.
+to play chess | jouer aux échecs | expr | A2 | /pleɪ ˈtʃes/ | Do you know how to play chess? | Tu sais jouer aux échecs ?
+to play a trick on | jouer un tour à | expr | B1 | /pleɪ ə ˈtrɪk ɒn/ | The pupils played a trick on their teacher. | Les élèves ont joué un tour à leur professeur.
+to take a dip | faire trempette, piquer une tête | expr | B2 | /teɪk ə ˈdɪp/ | Shall we take a dip in the lake? | On pique une tête dans le lac ?
+in the open air | en plein air | adv | B1 | /ɪn ði ˌəʊpən ˈeə/ | We had lunch in the open air. | Nous avons déjeuné en plein air.
+knitting needle | aiguille à tricoter | n | B2 | /ˈnɪtɪŋ ˌniːdl/ | She keeps her knitting needles in a basket. | Elle range ses aiguilles à tricoter dans un panier.
+sewing machine | machine à coudre | n | A2 | /ˈsəʊɪŋ məˌʃiːn/ | My mother made my dress on her sewing machine. | Ma mère a fait ma robe avec sa machine à coudre.
+thimble | dé à coudre | n | C1 | /ˈθɪmbl/ | Wear a thimble to protect your finger. | Mets un dé à coudre pour protéger ton doigt.
+crochet hook | crochet (aiguille) | n | C1 | /ˈkrəʊʃeɪ hʊk/ | You need a thicker crochet hook for this wool. | Il te faut un crochet plus épais pour cette laine.
+needlework | couture, travaux d'aiguille | n | B2 | /ˈniːdlwɜːk/ | My grandmother taught me needlework. | Ma grand-mère m'a appris la couture.
+pincushion | pelote à épingles | n | C1 | /ˈpɪnkʊʃn/ | Put the pins back in the pincushion. | Remets les épingles dans la pelote.
+avid reader | grand lecteur, lecteur passionné | n | B2 | /ˌævɪd ˈriːdə/ | My son is an avid reader. | Mon fils est un grand lecteur.
 `,
 );

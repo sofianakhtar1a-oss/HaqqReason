@@ -233,5 +233,46 @@ dinghy | canot, dériveur | n | C1 | /ˈdɪŋi/ | We rowed the dinghy to the sho
 lido | piscine en plein air | n | C2 | /ˈliːdəʊ/ | We swam at the lido. | Nous avons nagé à la piscine en plein air.
 beachfront | front de mer | n | C1 | /ˈbiːtʃfrʌnt/ | We rented a beachfront apartment. | Nous avons loué un appartement en front de mer.
 hideaway | refuge, retraite | n | C2 | /ˈhaɪdəweɪ/ | They have a mountain hideaway. | Ils ont un refuge à la montagne.
+camper | campeur ; camping-car | n | B1 | /ˈkæmpə/ | The campers lit a fire by the lake. | Les campeurs ont allumé un feu au bord du lac.
+public holiday | jour férié | n | B1 | /ˌpʌblɪk ˈhɒlədeɪ/ | The banks are closed on public holidays. | Les banques sont fermées les jours fériés.
+school holidays | vacances scolaires | n | A2 | /ˈskuːl ˌhɒlədeɪz/ | Prices go up during the school holidays. | Les prix augmentent pendant les vacances scolaires.
+package tour | voyage organisé | n | B1 | /ˈpækɪdʒ tʊə/ | They went on a package tour of Italy. | Ils ont fait un voyage organisé en Italie.
+coach trip | excursion en car | n | A2 | /ˈkəʊtʃ trɪp/ | The club organised a coach trip to the coast. | Le club a organisé une excursion en car sur la côte.
+tent peg | sardine (de tente) | n | B2 | /ˈtent peɡ/ | We lost two tent pegs in the wind. | Nous avons perdu deux sardines dans le vent.
+guy rope | hauban (de tente) | n | C1 | /ˈɡaɪ rəʊp/ | Don't trip over the guy ropes. | Attention à ne pas trébucher sur les haubans.
+groundsheet | tapis de sol | n | C1 | /ˈɡraʊndʃiːt/ | Spread the groundsheet before putting up the tent. | Étale le tapis de sol avant de monter la tente.
+air mattress | matelas pneumatique | n | B1 | /ˈeə ˌmætrəs/ | The air mattress went flat in the night. | Le matelas pneumatique s'est dégonflé pendant la nuit.
+head torch | lampe frontale | n | B1 | /ˈhed tɔːtʃ/ | Take a head torch for the night walk. | Prends une lampe frontale pour la randonnée de nuit.
+hiking trail | sentier de randonnée | n | A2 | /ˈhaɪkɪŋ treɪl/ | The hiking trail follows the coast. | Le sentier de randonnée longe la côte.
+picnic blanket | couverture de pique-nique | n | A2 | /ˈpɪknɪk ˌblæŋkɪt/ | We spread a picnic blanket under the tree. | Nous avons étendu une couverture de pique-nique sous l'arbre.
+cool bag | sac isotherme | n | B1 | /ˈkuːl bæɡ/ | Keep the drinks in a cool bag. | Garde les boissons dans un sac isotherme.
+beach ball | ballon de plage | n | A1 | /ˈbiːtʃ bɔːl/ | The children threw a beach ball around. | Les enfants se lançaient un ballon de plage.
+self-catering | en location (sans repas), en gestion libre | adj | B2 | /ˌself ˈkeɪtərɪŋ/ | We rented a self-catering cottage. | Nous avons loué un gîte en gestion libre.
+hotel lobby | hall d'hôtel | n | A2 | /həʊˈtel ˌlɒbi/ | Let's meet in the hotel lobby at eight. | Retrouvons-nous dans le hall de l'hôtel à huit heures.
+room key | clé de chambre | n | A1 | /ˈruːm kiː/ | Leave your room key at reception. | Laissez votre clé de chambre à la réception.
+safe deposit box | coffre-fort (d'hôtel, de banque) | n | B2 | /ˈseɪf dɪˌpɒzɪt bɒks/ | Keep your passport in the safe deposit box. | Garde ton passeport dans le coffre-fort.
+luggage rack | porte-bagages | n | B1 | /ˈlʌɡɪdʒ ræk/ | Put your case on the luggage rack. | Pose ta valise sur le porte-bagages.
+family room | chambre familiale | n | A2 | /ˈfæməli ruːm/ | We booked a family room for four. | Nous avons réservé une chambre familiale pour quatre.
+honeymoon suite | suite nuptiale | n | B1 | /ˈhʌnimuːn swiːt/ | The couple stayed in the honeymoon suite. | Le couple a séjourné dans la suite nuptiale.
+check-out time | heure de libération de la chambre | n | A2 | /ˈtʃek aʊt taɪm/ | Check-out time is eleven o'clock. | Il faut libérer la chambre avant onze heures.
+booking reference | numéro de réservation | n | B1 | /ˈbʊkɪŋ ˌrefrəns/ | Have your booking reference ready. | Prépare ton numéro de réservation.
+cancellation fee | frais d'annulation | n | B1 | /ˌkænsəˈleɪʃn fiː/ | There's no cancellation fee before Friday. | Pas de frais d'annulation avant vendredi.
+no-show | client qui ne se présente pas | n | B2 | /ˌnəʊ ˈʃəʊ/ | The hotel charges no-shows for the first night. | L'hôtel facture la première nuit aux clients qui ne viennent pas.
+room rate | prix de la chambre | n | B1 | /ˈruːm reɪt/ | The room rate includes breakfast. | Le prix de la chambre inclut le petit-déjeuner.
+holiday cottage | gîte | n | A2 | /ˌhɒlədeɪ ˈkɒtɪdʒ/ | We rented a holiday cottage in Wales. | Nous avons loué un gîte au pays de Galles.
+holiday camp | village de vacances | n | B1 | /ˈhɒlədeɪ kæmp/ | They spent a week at a holiday camp. | Ils ont passé une semaine dans un village de vacances.
+travel guide | guide de voyage | n | A2 | /ˈtrævl ɡaɪd/ | I bought a travel guide to Morocco. | J'ai acheté un guide de voyage sur le Maroc.
+travel writer | écrivain voyageur | n | B2 | /ˈtrævl ˌraɪtə/ | She works as a travel writer. | Elle est écrivaine voyageuse.
+tour group | groupe de touristes | n | A2 | /ˈtʊə ɡruːp/ | A large tour group filled the museum. | Un grand groupe de touristes remplissait le musée.
+walking tour | visite à pied | n | A2 | /ˈwɔːkɪŋ tʊə/ | We joined a free walking tour of the old town. | Nous avons suivi une visite gratuite de la vieille ville à pied.
+river cruise | croisière fluviale | n | B1 | /ˈrɪvə kruːz/ | My parents went on a river cruise. | Mes parents ont fait une croisière fluviale.
+audio guide | audioguide | n | B1 | /ˈɔːdiəʊ ɡaɪd/ | Hire an audio guide at the entrance. | Loue un audioguide à l'entrée.
+entrance fee | droit d'entrée | n | A2 | /ˈentrəns fiː/ | There's no entrance fee for children. | L'entrée est gratuite pour les enfants.
+visitor centre | centre d'accueil des visiteurs | n | B1 | /ˈvɪzɪtə ˌsentə/ | Maps are available at the visitor centre. | Des cartes sont disponibles au centre d'accueil.
+tourist office | office de tourisme | n | A2 | /ˈtʊərɪst ˌɒfɪs/ | Ask at the tourist office for a map. | Demande un plan à l'office de tourisme.
+I have a reservation | j'ai une réservation | expr | A2 | /aɪ hæv ə ˌrezəˈveɪʃn/ | Good evening, I have a reservation in the name of Martin. | Bonsoir, j'ai une réservation au nom de Martin.
+do you have any vacancies | avez-vous des chambres libres ? | expr | B1 | /də juː hæv ˌeni ˈveɪkənsiz/ | Do you have any vacancies for tonight? | Avez-vous des chambres libres pour ce soir ?
+out of season | hors saison | adv | B1 | /ˌaʊt əv ˈsiːzn/ | Hotels are much cheaper out of season. | Les hôtels sont beaucoup moins chers hors saison.
+five-star | cinq étoiles | adj | A2 | /ˌfaɪv ˈstɑː/ | They stayed in a five-star hotel. | Ils ont séjourné dans un hôtel cinq étoiles.
 `,
 );

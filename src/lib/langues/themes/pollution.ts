@@ -250,5 +250,25 @@ unsustainable | non durable, insoutenable | adj | C1 | /ˌʌnsəˈsteɪnəbl/ | 
 wasteland | terrain vague ; désert | n | C1 | /ˈweɪstlænd/ | The factory left a toxic wasteland. | L'usine a laissé un terrain vague toxique.
 emissions | émissions | n | B2 | /ɪˈmɪʃnz/ | We must cut carbon emissions. | Nous devons réduire les émissions de carbone.
 land reclamation | assèchement, récupération de terres | n | C2 | /ˌlænd ˌrekləˈmeɪʃn/ | Land reclamation created new islands. | La récupération de terres a créé de nouvelles îles.
+reclamation | réhabilitation (de terrain), assèchement | n | C2 | /ˌrekləˈmeɪʃn/ | Land reclamation turned the marsh into farmland. | L'assèchement a transformé le marais en terres agricoles.
+carbon sequestration | séquestration du carbone | n | C2 | /ˌkɑːbən ˌsiːkwəˈstreɪʃn/ | Forests play a role in carbon sequestration. | Les forêts jouent un rôle dans la séquestration du carbone.
+smoke-free | non-fumeur, sans tabac | adj | B2 | /ˌsməʊk ˈfriː/ | All restaurants are now smoke-free. | Tous les restaurants sont désormais non-fumeurs.
+man-made | artificiel, fabriqué par l'homme | adj | B2 | /ˌmæn ˈmeɪd/ | The lake is man-made. | Le lac est artificiel.
+carbon emissions | émissions de carbone | n | B2 | /ˌkɑːbən ɪˈmɪʃnz/ | The country has promised to cut carbon emissions. | Le pays a promis de réduire ses émissions de carbone.
+tree planting | plantation d'arbres | n | B1 | /ˈtriː ˌplɑːntɪŋ/ | The school organised a day of tree planting. | L'école a organisé une journée de plantation d'arbres.
+habitat loss | destruction des habitats | n | C1 | /ˈhæbɪtæt lɒs/ | Habitat loss threatens many birds. | La destruction des habitats menace de nombreux oiseaux.
+single-use plastic | plastique à usage unique | n | B2 | /ˌsɪŋɡl juːs ˈplæstɪk/ | The café has banned single-use plastic. | Le café a banni le plastique à usage unique.
+plastic straw | paille en plastique | n | A2 | /ˌplæstɪk ˈstrɔː/ | Plastic straws are being replaced by paper ones. | Les pailles en plastique sont remplacées par des pailles en papier.
+landfill site | décharge (centre d'enfouissement) | n | B2 | /ˈlændfɪl saɪt/ | Most of our rubbish ends up in a landfill site. | La plupart de nos déchets finissent en décharge.
+rubbish dump | décharge (publique), dépotoir | n | B1 | /ˈrʌbɪʃ dʌmp/ | They took the old fridge to the rubbish dump. | Ils ont emmené le vieux frigo à la décharge.
+litter picking | ramassage des déchets | n | B1 | /ˈlɪtə ˌpɪkɪŋ/ | Volunteers did some litter picking on the beach. | Des bénévoles ont ramassé les déchets sur la plage.
+water shortage | pénurie d'eau | n | B1 | /ˈwɔːtə ˌʃɔːtɪdʒ/ | The drought caused a serious water shortage. | La sécheresse a provoqué une grave pénurie d'eau.
+air pollution | pollution de l'air | n | A2 | /ˈeə pəˌluːʃn/ | Air pollution is bad for children's lungs. | La pollution de l'air nuit aux poumons des enfants.
+climate activist | militant pour le climat | n | B2 | /ˈklaɪmət ˌæktɪvɪst/ | Young climate activists marched through the city. | De jeunes militants pour le climat ont défilé dans la ville.
+environmental group | association écologiste | n | B2 | /ɪnˌvaɪrənmentl ˈɡruːp/ | An environmental group opposed the new road. | Une association écologiste s'est opposée à la nouvelle route.
+eco-warrior | militant écologiste radical | n | C1 | /ˈiːkəʊ ˌwɒriə/ | Eco-warriors camped in the trees to stop the felling. | Des militants écologistes ont campé dans les arbres pour empêcher l'abattage.
+sustainable development | développement durable | n | B2 | /səˌsteɪnəbl dɪˈveləpmənt/ | The summit focused on sustainable development. | Le sommet était consacré au développement durable.
+emissions target | objectif de réduction des émissions | n | C1 | /ɪˈmɪʃnz ˌtɑːɡɪt/ | The government missed its emissions target. | Le gouvernement n'a pas atteint son objectif de réduction des émissions.
+growing concern | inquiétude croissante | n | B2 | /ˌɡrəʊɪŋ kənˈsɜːn/ | There is growing concern about air pollution. | La pollution de l'air suscite une inquiétude croissante.
 `,
 );

@@ -332,5 +332,37 @@ millionth | millionième | adj | C1 | /ˈmɪljənθ/ | It's the millionth visito
 bicentenary | bicentenaire | n | C2 | /ˌbaɪsenˈtiːnəri/ | The town celebrates its bicentenary. | La ville fête son bicentenaire.
 furlong | furlong (201 mètres) | n | C2 | /ˈfɜːlɒŋ/ | The horse led by a furlong. | Le cheval menait d'un furlong.
 bushel | boisseau | n | C2 | /ˈbʊʃl/ | They sold wheat by the bushel. | Ils vendaient le blé au boisseau.
+midsummer | plein été, solstice d'été | n | C1 | /ˌmɪdˈsʌmə/ | The festival is held at midsummer. | La fête a lieu au cœur de l'été.
+quart | quart de gallon (≈ 1,14 l) | n | C1 | /kwɔːt/ | You can't put a quart into a pint pot. | On ne fait pas entrer un litre dans un verre.
+lunar month | mois lunaire | n | B2 | /ˌluːnə ˈmʌnθ/ | Ramadan is the ninth lunar month. | Le ramadan est le neuvième mois lunaire.
+all-day | qui dure toute la journée | adj | B1 | /ˌɔːl ˈdeɪ/ | The pub serves an all-day breakfast. | Le pub sert un petit-déjeuner toute la journée.
+year-round | toute l'année | adj | B2 | /ˌjɪə ˈraʊnd/ | The island is a year-round destination. | L'île est une destination prisée toute l'année.
+back-to-back | à la suite, d'affilée | adj | C1 | /ˌbæk tə ˈbæk/ | I've got back-to-back meetings all day. | J'ai des réunions à la chaîne toute la journée.
+to tell the time | lire l'heure | expr | A2 | /tel ðə ˈtaɪm/ | My son is learning to tell the time. | Mon fils apprend à lire l'heure.
+to lose count | perdre le compte | expr | B2 | /luːz ˈkaʊnt/ | I've lost count of the times I've told you! | J'ai perdu le compte des fois où je te l'ai dit !
+late for | en retard à, en retard pour | adj | A1 | /ˈleɪt fə/ | Hurry up, we're late for school! | Dépêche-toi, on est en retard pour l'école !
+day by day | jour après jour | adv | B1 | /ˌdeɪ baɪ ˈdeɪ/ | Day by day, the patient is getting stronger. | Jour après jour, le patient reprend des forces.
+again and again | à maintes reprises, encore et encore | adv | A2 | /əˌɡen ən əˈɡen/ | I've told you again and again! | Je te l'ai répété encore et encore !
+at night | la nuit | adv | A1 | /ət ˈnaɪt/ | I can't sleep at night. | Je n'arrive pas à dormir la nuit.
+in the morning | le matin | adv | A1 | /ɪn ðə ˈmɔːnɪŋ/ | I drink coffee in the morning. | Je bois du café le matin.
+in the afternoon | l'après-midi | adv | A1 | /ɪn ði ˌɑːftəˈnuːn/ | The shop opens again in the afternoon. | La boutique rouvre l'après-midi.
+in the evening | le soir | adv | A1 | /ɪn ði ˈiːvnɪŋ/ | We watch the news in the evening. | Nous regardons les informations le soir.
+in those days | à cette époque, en ce temps-là | adv | B1 | /ɪn ˌðəʊz ˈdeɪz/ | In those days, nobody had a mobile phone. | À cette époque, personne n'avait de téléphone portable.
+just now | à l'instant | adv | A2 | /ˌdʒʌst ˈnaʊ/ | Your mother called just now. | Ta mère a appelé à l'instant.
+from now on | désormais, dorénavant | adv | B1 | /frəm ˌnaʊ ˈɒn/ | From now on, I'll get up earlier. | Désormais, je me lèverai plus tôt.
+in advance | à l'avance | adv | B1 | /ɪn ədˈvɑːns/ | Book your tickets in advance. | Réservez vos billets à l'avance.
+at times | parfois, par moments | adv | B2 | /ət ˈtaɪmz/ | The work can be stressful at times. | Le travail peut être stressant par moments.
+any minute now | d'une minute à l'autre | adv | B1 | /ˌeni ˈmɪnɪt naʊ/ | The guests will be here any minute now. | Les invités vont arriver d'une minute à l'autre.
+before long | sous peu, bientôt | adv | B2 | /bɪˌfɔː ˈlɒŋ/ | Before long, the children were asleep. | Bientôt, les enfants se sont endormis.
+a while ago | il y a un moment | adv | A2 | /ə ˈwaɪl əˌɡəʊ/ | I saw him a while ago in the market. | Je l'ai vu il y a un moment au marché.
+long ago | il y a longtemps | adv | A2 | /ˌlɒŋ əˈɡəʊ/ | Long ago, this land was covered by the sea. | Il y a longtemps, cette terre était recouverte par la mer.
+in the near future | dans un avenir proche | adv | B1 | /ɪn ðə ˌnɪə ˈfjuːtʃə/ | Prices will rise in the near future. | Les prix vont augmenter dans un avenir proche.
+at the weekend | le week-end | adv | A1 | /ət ðə ˌwiːkˈend/ | What are you doing at the weekend? | Qu'est-ce que tu fais ce week-end ?
+on weekdays | en semaine | adv | A2 | /ɒn ˈwiːkdeɪz/ | The library closes at six on weekdays. | La bibliothèque ferme à 18 heures en semaine.
+once a week | une fois par semaine | adv | A1 | /ˌwʌns ə ˈwiːk/ | I go swimming once a week. | Je vais nager une fois par semaine.
+what time is it | quelle heure est-il ? | expr | A1 | /ˌwɒt ˈtaɪm ɪz ɪt/ | Excuse me, what time is it? | Excusez-moi, quelle heure est-il ?
+to take ages | prendre un temps fou | expr | B1 | /teɪk ˈeɪdʒɪz/ | The bus always takes ages to come. | Le bus met toujours un temps fou à arriver.
+on average | en moyenne | adv | B1 | /ɒn ˈævərɪdʒ/ | On average, I sleep seven hours a night. | En moyenne, je dors sept heures par nuit.
+anytime | n'importe quand | adv | A2 | /ˈenitaɪm/ | Call me anytime you need help. | Appelle-moi n'importe quand si tu as besoin d'aide.
 `,
 );

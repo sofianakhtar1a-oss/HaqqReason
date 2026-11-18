@@ -359,5 +359,126 @@ to allude to | faire allusion à | v | C2 | /əˈluːd tə/ | He alluded to his 
 rhetorical | rhétorique | adj | C2 | /rɪˈtɒrɪkl/ | It was a rhetorical question. | C'était une question rhétorique.
 verisimilitude | vraisemblance | n | C2 | /ˌverɪsɪˈmɪlɪtjuːd/ | The novel lacks verisimilitude. | Le roman manque de vraisemblance.
 synthesis | synthèse | n | C2 | /ˈsɪnθəsɪs/ | The book is a synthesis of many ideas. | Le livre est une synthèse de nombreuses idées.
+abeyance | suspens (en suspens) | n | C2 | /əˈbeɪəns/ | The plans are in abeyance until the funding is found. | Les projets sont en suspens tant que le financement n'est pas trouvé.
+to allay | apaiser, dissiper (une crainte) | v | C2 | /əˈleɪ/ | The doctor tried to allay her fears. | Le médecin a essayé de dissiper ses craintes.
+anodyne | anodin, insipide | adj | C2 | /ˈænədaɪn/ | His speech was polite but anodyne. | Son discours était poli mais insipide.
+aplomb | aplomb, assurance | n | C2 | /əˈplɒm/ | She handled the tricky questions with great aplomb. | Elle a géré les questions délicates avec beaucoup d'aplomb.
+apposite | pertinent, à propos | adj | C2 | /ˈæpəzɪt/ | He ended with an apposite quotation. | Il a terminé par une citation fort à propos.
+to disabuse | détromper | v | C2 | /ˌdɪsəˈbjuːz/ | Let me disabuse you of that idea. | Permets-moi de te détromper sur ce point.
+fervid | ardent, fervent | adj | C2 | /ˈfɜːvɪd/ | He was a fervid supporter of reform. | C'était un partisan ardent de la réforme.
+impudent | impudent, effronté | adj | C2 | /ˈɪmpjʊdənt/ | The impudent boy laughed at the teacher. | Le garçon effronté s'est moqué du professeur.
+iniquity | iniquité, injustice | n | C2 | /ɪˈnɪkwəti/ | The novel denounces the iniquity of the system. | Le roman dénonce l'iniquité du système.
+laudable | louable | adj | C2 | /ˈlɔːdəbl/ | Their aims are laudable, but the plan is unrealistic. | Leurs objectifs sont louables, mais le projet est irréaliste.
+opprobrium | opprobre | n | C2 | /əˈprəʊbriəm/ | The decision brought public opprobrium on the company. | La décision a jeté l'opprobre sur l'entreprise.
+prescient | prémonitoire, clairvoyant | adj | C2 | /ˈpresiənt/ | Her warnings now seem remarkably prescient. | Ses avertissements paraissent aujourd'hui remarquablement prémonitoires.
+to propitiate | apaiser, se concilier | v | C2 | /prəˈpɪʃieɪt/ | They offered gifts to propitiate the gods. | Ils faisaient des offrandes pour apaiser les dieux.
+punctilious | pointilleux, méticuleux | adj | C2 | /pʌŋkˈtɪliəs/ | He is punctilious about answering every letter. | Il met un point d'honneur à répondre à chaque lettre.
+pusillanimous | pusillanime, timoré | adj | C2 | /ˌpjuːsɪˈlænɪməs/ | The government's response was pusillanimous. | La réponse du gouvernement a été timorée.
+recondite | abscons, obscur | adj | C2 | /ˈrekəndaɪt/ | The lecture was full of recondite references. | La conférence était truffée de références obscures.
+apogee | apogée | n | C2 | /ˈæpədʒiː/ | The empire reached its apogee in the second century. | L'empire a atteint son apogée au IIe siècle.
+to arrogate | s'arroger | v | C2 | /ˈærəɡeɪt/ | The council arrogated to itself the right to decide. | Le conseil s'est arrogé le droit de décider.
+assiduity | assiduité | n | C2 | /ˌæsɪˈdjuːəti/ | She studied with great assiduity. | Elle a étudié avec une grande assiduité.
+augury | présage, augure | n | C2 | /ˈɔːɡjʊri/ | The first sales figures are a good augury. | Les premiers chiffres de vente sont de bon augure.
+avuncular | paternel, bienveillant | adj | C2 | /əˈvʌŋkjʊlə/ | He has an avuncular manner with young players. | Il a des manières paternelles avec les jeunes joueurs.
+bilious | bilieux, acariâtre | adj | C2 | /ˈbɪliəs/ | The critic wrote a bilious review of the play. | Le critique a écrit un compte rendu acerbe de la pièce.
+calumny | calomnie | n | C2 | /ˈkæləmni/ | He was the victim of calumny and lies. | Il a été victime de calomnies et de mensonges.
+canard | canard, fausse nouvelle | n | C2 | /kəˈnɑːd/ | The story turned out to be an old canard. | L'histoire s'est révélée n'être qu'une vieille rumeur infondée.
+captious | chicaneur, pointilleux | adj | C2 | /ˈkæpʃəs/ | His captious remarks annoyed everyone. | Ses remarques chicanières agaçaient tout le monde.
+chimerical | chimérique | adj | C2 | /kaɪˈmerɪkl/ | The plan for world peace seemed chimerical. | Le projet de paix mondiale semblait chimérique.
+coeval | contemporain (de même époque) | adj | C2 | /kəʊˈiːvl/ | The two manuscripts are coeval. | Les deux manuscrits sont de la même époque.
+contumacious | rebelle, insoumis | adj | C2 | /ˌkɒntjʊˈmeɪʃəs/ | The contumacious witness refused to answer. | Le témoin récalcitrant a refusé de répondre.
+coterie | coterie, petit cercle | n | C2 | /ˈkəʊtəri/ | He shared his plans only with a small coterie of friends. | Il ne confiait ses projets qu'à un petit cercle d'amis.
+dalliance | flirt, liaison passagère ; badinage | n | C2 | /ˈdæliəns/ | His brief dalliance with politics ended badly. | Sa brève incursion en politique s'est mal terminée.
+to demur | émettre des réserves, objecter | v | C2 | /dɪˈmɜː/ | When asked to work late, she politely demurred. | Quand on lui a demandé de rester tard, elle a poliment objecté.
+denouement | dénouement | n | C2 | /deɪˈnuːmɒ̃/ | The novel's denouement surprised every reader. | Le dénouement du roman a surpris tous les lecteurs.
+dilettante | dilettante | n | C2 | /ˌdɪləˈtænti/ | He's a dilettante who never finishes a project. | C'est un dilettante qui ne termine jamais rien.
+effulgent | resplendissant, éclatant | adj | C2 | /ɪˈfʌldʒənt/ | An effulgent sunset lit up the sky. | Un coucher de soleil éclatant illuminait le ciel.
+to excoriate | fustiger, éreinter | v | C2 | /ɪkˈskɔːrieɪt/ | The report excoriates the management. | Le rapport fustige la direction.
+execrable | exécrable | adj | C2 | /ˈeksɪkrəbl/ | The food was execrable. | La nourriture était exécrable.
+hoary | chenu ; éculé, rebattu | adj | C2 | /ˈhɔːri/ | He told the same hoary old jokes. | Il racontait les mêmes vieilles blagues éculées.
+imprecation | imprécation, malédiction | n | C2 | /ˌɪmprɪˈkeɪʃn/ | He muttered imprecations under his breath. | Il marmonnait des imprécations entre ses dents.
+ineluctable | inéluctable | adj | C2 | /ˌɪnɪˈlʌktəbl/ | Change is ineluctable. | Le changement est inéluctable.
+insouciant | insouciant, désinvolte | adj | C2 | /ɪnˈsuːsiənt/ | He gave an insouciant shrug. | Il a haussé les épaules avec désinvolture.
+internecine | fratricide, intestin (conflit) | adj | C2 | /ˌɪntəˈniːsaɪn/ | The party was torn apart by internecine struggles. | Le parti a été déchiré par des luttes fratricides.
+invidious | injuste, odieux ; délicat | adj | C2 | /ɪnˈvɪdiəs/ | It would be invidious to single out one person. | Il serait injuste de désigner une seule personne.
+jejune | puéril, naïf ; insipide | adj | C2 | /dʒɪˈdʒuːn/ | His arguments were rather jejune. | Ses arguments étaient assez puérils.
+to lionise | encenser, porter aux nues | v | C2 | /ˈlaɪənaɪz/ | The young poet was lionised by London society. | Le jeune poète était encensé par la bonne société londonienne.
+mawkish | mièvre, larmoyant | adj | C2 | /ˈmɔːkɪʃ/ | The film's ending is mawkish. | La fin du film est mièvre.
+mellifluous | mélodieux, doucereux | adj | C2 | /məˈlɪfluəs/ | She has a deep, mellifluous voice. | Elle a une voix grave et mélodieuse.
+mendicant | mendiant (religieux) | n | C2 | /ˈmendɪkənt/ | Mendicants used to beg at the abbey gate. | Des mendiants demandaient l'aumône à la porte de l'abbaye.
+meretricious | clinquant, tape-à-l'œil | adj | C2 | /ˌmerəˈtrɪʃəs/ | The hotel's décor was meretricious. | La décoration de l'hôtel était tape-à-l'œil.
+minatory | menaçant | adj | C2 | /ˈmɪnətəri/ | He sent a minatory letter to his rivals. | Il a envoyé une lettre menaçante à ses rivaux.
+noisome | nauséabond, fétide | adj | C2 | /ˈnɔɪsəm/ | A noisome smell rose from the drain. | Une odeur nauséabonde montait de l'égout.
+nugatory | futile, sans valeur | adj | C2 | /ˈnjuːɡətəri/ | The effect of the new rule was nugatory. | L'effet de la nouvelle règle a été nul.
+obloquy | opprobre, blâme public | n | C2 | /ˈɒbləkwi/ | He endured years of obloquy. | Il a subi des années d'opprobre.
+to officiate | officier, présider (une cérémonie) | v | C2 | /əˈfɪʃieɪt/ | The imam officiated at the wedding. | L'imam a présidé le mariage.
+to ossify | (se) scléroser, (s')ossifier | v | C2 | /ˈɒsɪfaɪ/ | Old institutions tend to ossify. | Les vieilles institutions ont tendance à se scléroser.
+otiose | superflu, oiseux | adj | C2 | /ˈəʊtiəʊs/ | Most of the footnotes are otiose. | La plupart des notes de bas de page sont superflues.
+parsimony | parcimonie, avarice | n | C2 | /ˈpɑːsɪməni/ | The council was criticised for its parsimony. | Le conseil a été critiqué pour sa parcimonie.
+peccadillo | peccadille, broutille | n | C2 | /ˌpekəˈdɪləʊ/ | The press exaggerated his youthful peccadilloes. | La presse a exagéré ses peccadilles de jeunesse.
+pellucid | limpide, transparent | adj | C2 | /pəˈluːsɪd/ | She writes in pellucid prose. | Elle écrit dans une prose limpide.
+penury | pénurie, misère | n | C2 | /ˈpenjʊri/ | The artist died in penury. | L'artiste est mort dans la misère.
+peremptory | péremptoire, impérieux | adj | C2 | /pəˈremptəri/ | He gave a peremptory order to leave. | Il a donné l'ordre péremptoire de partir.
+perspicuous | clair, intelligible | adj | C2 | /pəˈspɪkjuəs/ | The rules are set out in a perspicuous way. | Les règles sont exposées de façon claire.
+pithy | lapidaire, concis | adj | C2 | /ˈpɪθi/ | She made a pithy comment that summed it all up. | Elle a fait un commentaire lapidaire qui résumait tout.
+plaudits | éloges, louanges | n | C2 | /ˈplɔːdɪts/ | The film won plaudits from the critics. | Le film a reçu les éloges de la critique.
+plenitude | plénitude | n | C2 | /ˈplenɪtjuːd/ | The garden was in the plenitude of summer. | Le jardin était dans la plénitude de l'été.
+portent | présage, augure | n | C2 | /ˈpɔːtent/ | The dark clouds seemed a portent of disaster. | Les nuages sombres semblaient annoncer un désastre.
+preternatural | surnaturel, extraordinaire | adj | C2 | /ˌpriːtəˈnætʃrəl/ | She had a preternatural calm. | Elle avait un calme extraordinaire.
+profligacy | prodigalité ; débauche | n | C2 | /ˈprɒflɪɡəsi/ | The government was accused of financial profligacy. | Le gouvernement a été accusé de gaspillage financier.
+propinquity | proximité, parenté | n | C2 | /prəˈpɪŋkwəti/ | Propinquity often leads to friendship. | La proximité mène souvent à l'amitié.
+pulchritude | beauté (physique) | n | C2 | /ˈpʌlkrɪtjuːd/ | The poem praises the pulchritude of the queen. | Le poème célèbre la beauté de la reine.
+punctilio | point d'étiquette, formalisme | n | C2 | /pʌŋkˈtɪliəʊ/ | He observed every punctilio of court life. | Il respectait chaque point d'étiquette de la cour.
+raconteur | conteur (habile) | n | C2 | /ˌrækɒnˈtɜː/ | My uncle is a witty raconteur. | Mon oncle est un conteur plein d'esprit.
+recrimination | récrimination | n | C2 | /rɪˌkrɪmɪˈneɪʃn/ | The meeting ended in bitter recriminations. | La réunion s'est terminée en récriminations amères.
+refractory | réfractaire, rebelle | adj | C2 | /rɪˈfræktəri/ | Refractory pupils were sent to the head. | Les élèves récalcitrants étaient envoyés chez le directeur.
+rapprochement | rapprochement (diplomatique) | n | C2 | /ræˈprɒʃmɒ̃/ | There has been a rapprochement between the two countries. | Il y a eu un rapprochement entre les deux pays.
+restive | rétif, agité | adj | C2 | /ˈrestɪv/ | The crowd grew restive as the wait went on. | La foule s'agitait à mesure que l'attente se prolongeait.
+sapient | sage, savant | adj | C2 | /ˈseɪpiənt/ | The old judge gave a sapient ruling. | Le vieux juge a rendu une décision pleine de sagesse.
+scurrilous | calomnieux, injurieux | adj | C2 | /ˈskʌrələs/ | The magazine printed scurrilous rumours. | Le magazine a publié des rumeurs calomnieuses.
+sententious | sentencieux, moralisateur | adj | C2 | /senˈtenʃəs/ | His sententious advice annoyed his students. | Ses conseils sentencieux agaçaient ses élèves.
+solecism | solécisme, impair | n | C2 | /ˈsɒlɪsɪzəm/ | Using the wrong fork was a social solecism. | Prendre la mauvaise fourchette était un impair.
+stentorian | de stentor, tonitruant | adj | C2 | /stenˈtɔːriən/ | He called the class to order in a stentorian voice. | Il a rappelé la classe à l'ordre d'une voix de stentor.
+stolid | flegmatique, impassible | adj | C2 | /ˈstɒlɪd/ | He remained stolid under pressure. | Il est resté impassible sous la pression.
+to sublimate | sublimer | v | C2 | /ˈsʌblɪmeɪt/ | She sublimated her grief into her painting. | Elle a sublimé son chagrin dans sa peinture.
+supercilious | hautain, dédaigneux | adj | C2 | /ˌsuːpəˈsɪliəs/ | The waiter gave us a supercilious look. | Le serveur nous a jeté un regard dédaigneux.
+sybarite | sybarite, bon vivant | n | C2 | /ˈsɪbəraɪt/ | He lives like a sybarite in his villa. | Il vit en sybarite dans sa villa.
+tendentious | tendancieux | adj | C2 | /tenˈdenʃəs/ | The article is highly tendentious. | L'article est très tendancieux.
+to transmute | transmuer, transformer | v | C2 | /trænzˈmjuːt/ | The alchemists hoped to transmute lead into gold. | Les alchimistes espéraient transmuer le plomb en or.
+unassailable | inattaquable, imprenable | adj | C2 | /ˌʌnəˈseɪləbl/ | The team now has an unassailable lead. | L'équipe a désormais une avance inattaquable.
+vagary | caprice, aléa | n | C2 | /ˈveɪɡəri/ | Farmers depend on the vagaries of the weather. | Les agriculteurs dépendent des caprices du temps.
+to vitiate | vicier, invalider | v | C2 | /ˈvɪʃieɪt/ | One error can vitiate the whole experiment. | Une seule erreur peut invalider toute l'expérience.
+vituperative | injurieux, virulent | adj | C2 | /vɪˈtjuːpərətɪv/ | He launched a vituperative attack on his critics. | Il a lancé une attaque virulente contre ses détracteurs.
+voluble | volubile | adj | C2 | /ˈvɒljʊbl/ | The voluble guest talked all evening. | L'invité volubile a parlé toute la soirée.
+desiccated | desséché | adj | C2 | /ˈdesɪkeɪtɪd/ | The desiccated leaves crumbled in his hand. | Les feuilles desséchées s'effritaient dans sa main.
+felicity | félicité ; justesse (d'expression) | n | C2 | /fəˈlɪsəti/ | He writes with great felicity of phrase. | Il écrit avec une grande justesse d'expression.
+jest | plaisanterie, badinage | n | C2 | /dʒest/ | It was said in jest. | C'était dit pour plaisanter.
+aegis | égide | n | C2 | /ˈiːdʒɪs/ | The talks took place under the aegis of the UN. | Les négociations ont eu lieu sous l'égide de l'ONU.
+morn | matin (poétique) | n | C2 | /mɔːn/ | They set off at break of morn. | Ils sont partis au point du jour.
+crux | point crucial, nœud | n | C1 | /krʌks/ | The crux of the problem is money. | Le nœud du problème, c'est l'argent.
+sufficiency | suffisance (quantité suffisante) | n | C2 | /səˈfɪʃnsi/ | The country aims at self-sufficiency in food. | Le pays vise l'autosuffisance alimentaire.
+travesty | parodie, simulacre | n | C2 | /ˈtrævəsti/ | The trial was a travesty of justice. | Le procès était une parodie de justice.
+onus | charge, responsabilité | n | C2 | /ˈəʊnəs/ | The onus is on the seller to prove it. | C'est au vendeur d'en apporter la preuve.
+juggernaut | mastodonte ; poids lourd | n | C1 | /ˈdʒʌɡənɔːt/ | The company has become a retail juggernaut. | L'entreprise est devenue un mastodonte de la distribution.
+totality | totalité | n | C1 | /təʊˈtæləti/ | The plan must be seen in its totality. | Le projet doit être considéré dans sa totalité.
+meritorious | méritoire | adj | C2 | /ˌmerɪˈtɔːriəs/ | She received an award for meritorious service. | Elle a été décorée pour services méritoires.
+dishonour | déshonneur | n | C1 | /dɪsˈɒnə/ | He brought dishonour on his family. | Il a jeté le déshonneur sur sa famille.
+to displease | déplaire à, contrarier | v | C1 | /dɪsˈpliːz/ | His answer seemed to displease the judge. | Sa réponse a semblé déplaire au juge.
+to constrain | contraindre, limiter | v | C1 | /kənˈstreɪn/ | Lack of money constrains our choices. | Le manque d'argent limite nos choix.
+to reside | résider | v | C1 | /rɪˈzaɪd/ | He resides in Geneva for most of the year. | Il réside à Genève la majeure partie de l'année.
+far-reaching | de grande portée, aux conséquences importantes | adj | C1 | /ˌfɑː ˈriːtʃɪŋ/ | The new law will have far-reaching effects. | La nouvelle loi aura des conséquences importantes.
+on the basis of | sur la base de | prep | B2 | /ɒn ðə ˈbeɪsɪs əv/ | Pupils are selected on the basis of their marks. | Les élèves sont sélectionnés sur la base de leurs notes.
+by means of | au moyen de | prep | C1 | /baɪ ˈmiːnz əv/ | The water is pumped by means of a small engine. | L'eau est pompée au moyen d'un petit moteur.
+in the event of | en cas de | prep | C1 | /ɪn ði ɪˈvent əv/ | In the event of a fire, do not use the lift. | En cas d'incendie, n'utilisez pas l'ascenseur.
+in conjunction with | conjointement avec, en association avec | prep | C1 | /ɪn kənˈdʒʌŋkʃn wɪð/ | The course is run in conjunction with the local university. | La formation est organisée conjointement avec l'université locale.
+in the absence of | en l'absence de | prep | C1 | /ɪn ði ˈæbsəns əv/ | In the absence of the manager, his assistant signs the letters. | En l'absence du directeur, son assistant signe les lettres.
+in the presence of | en présence de | prep | B2 | /ɪn ðə ˈprezns əv/ | The will was signed in the presence of two witnesses. | Le testament a été signé en présence de deux témoins.
+at the expense of | aux dépens de, au détriment de | prep | C1 | /ət ði ɪkˈspens əv/ | He became rich at the expense of his workers. | Il s'est enrichi aux dépens de ses ouvriers.
+by virtue of | en vertu de, en raison de | prep | C2 | /baɪ ˈvɜːtʃuː əv/ | She got the job by virtue of her experience. | Elle a obtenu le poste en raison de son expérience.
+by way of | en guise de | prep | C1 | /baɪ ˈweɪ əv/ | He sent me flowers by way of apology. | Il m'a envoyé des fleurs en guise d'excuse.
+the extent to which | la mesure dans laquelle | expr | C1 | /ði ɪkˈstent tə wɪtʃ/ | We studied the extent to which diet affects sleep. | Nous avons étudié la mesure dans laquelle l'alimentation influe sur le sommeil.
+to bear the brunt of | subir le plus gros de, essuyer | expr | C1 | /beə ðə ˈbrʌnt əv/ | Coastal towns will bear the brunt of the storm. | Les villes côtières subiront le plus gros de la tempête.
+to stand someone in good stead | être très utile à quelqu'un | expr | C2 | /stænd ˌsʌmwʌn ɪn ˌɡʊd ˈsted/ | Your languages will stand you in good stead in your career. | Tes langues te seront très utiles dans ta carrière.
+to avail yourself of | profiter de, tirer parti de | expr | C2 | /əˈveɪl jəˌself əv/ | Guests may avail themselves of the hotel gym. | Les clients peuvent profiter de la salle de sport de l'hôtel.
 `,
 );

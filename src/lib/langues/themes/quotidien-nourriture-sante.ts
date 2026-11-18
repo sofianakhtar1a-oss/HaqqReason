@@ -172,6 +172,28 @@ wick | mèche (de bougie) | n | C2 | /wɪk/ | Trim the wick of the candle. | Cou
 stationery | fournitures de bureau, papeterie | n | B2 | /ˈsteɪʃənri/ | We sell books and stationery. | Nous vendons des livres et des fournitures de bureau.
 nozzle | embout, buse | n | C2 | /ˈnɒzl/ | Clean the nozzle of the hose. | Nettoie l'embout du tuyau.
 slumber | sommeil (littéraire) | n | C2 | /ˈslʌmbə/ | She fell into a deep slumber. | Elle est tombée dans un profond sommeil.
+school run | trajet pour emmener les enfants à l'école | n | B2 | /ˈskuːl rʌn/ | I do the school run every morning before work. | J'emmène les enfants à l'école tous les matins avant le travail.
+mishap | mésaventure, incident | n | C1 | /ˈmɪshæp/ | The trip passed without mishap. | Le voyage s'est déroulé sans incident.
+dud | (objet) défectueux, qui ne marche pas | n | C1 | /dʌd/ | One of the batteries was a dud. | Une des piles ne marchait pas.
+to do the cleaning | faire le ménage | expr | A2 | /duː ðə ˈkliːnɪŋ/ | I do the cleaning on Saturday mornings. | Je fais le ménage le samedi matin.
+to do the cooking | faire la cuisine | expr | A2 | /duː ðə ˈkʊkɪŋ/ | My husband does the cooking during the week. | Mon mari fait la cuisine en semaine.
+to lay the table | mettre la table | expr | A2 | /leɪ ðə ˈteɪbl/ | Can you lay the table for dinner? | Tu peux mettre la table pour le dîner ?
+to empty the dishwasher | vider le lave-vaisselle | expr | A2 | /ˌempti ðə ˈdɪʃwɒʃə/ | It's your turn to empty the dishwasher. | C'est ton tour de vider le lave-vaisselle.
+to put the bins out | sortir les poubelles | expr | B1 | /pʊt ðə ˈbɪnz aʊt/ | Don't forget to put the bins out tonight. | N'oublie pas de sortir les poubelles ce soir.
+to mow the lawn | tondre la pelouse | expr | B1 | /məʊ ðə ˈlɔːn/ | I mow the lawn every Sunday in summer. | Je tonds la pelouse tous les dimanches l'été.
+to run a bath | faire couler un bain | expr | B1 | /rʌn ə ˈbɑːθ/ | I'll run a bath for the children. | Je vais faire couler un bain pour les enfants.
+to skip breakfast | sauter le petit-déjeuner | expr | B1 | /skɪp ˈbrekfəst/ | Try not to skip breakfast. | Essaie de ne pas sauter le petit-déjeuner.
+to have a dream | faire un rêve | expr | A2 | /hæv ə ˈdriːm/ | I often have the same dream about flying. | Je fais souvent le même rêve : je vole.
+to have a nightmare | faire un cauchemar | expr | B1 | /hæv ə ˈnaɪtmeə/ | Children often have a nightmare after a scary film. | Les enfants font souvent un cauchemar après un film qui fait peur.
+to keep busy | s'occuper | expr | B1 | /kiːp ˈbɪzi/ | Since retiring, he keeps busy in the garden. | Depuis sa retraite, il s'occupe au jardin.
+in a hurry | pressé | adj | A2 | /ɪn ə ˈhʌri/ | Sorry, I can't stop, I'm in a hurry. | Désolé, je ne peux pas m'arrêter, je suis pressé.
+fast asleep | profondément endormi | adj | B2 | /ˌfɑːst əˈsliːp/ | The children were fast asleep by eight. | À huit heures, les enfants dormaient profondément.
+wide awake | bien réveillé | adj | B2 | /ˌwaɪd əˈweɪk/ | It was midnight, but I was wide awake. | Il était minuit, mais j'étais bien réveillé.
+to sleep soundly | dormir à poings fermés | expr | B2 | /sliːp ˈsaʊndli/ | After the long walk, we all slept soundly. | Après la longue marche, nous avons tous dormi à poings fermés.
+deep sleep | sommeil profond | n | B1 | /ˌdiːp ˈsliːp/ | He fell into a deep sleep. | Il a sombré dans un sommeil profond.
+bad habit | mauvaise habitude | n | A2 | /ˌbæd ˈhæbɪt/ | Biting your nails is a bad habit. | Se ronger les ongles est une mauvaise habitude.
+heavy sleeper | personne au sommeil lourd | n | B2 | /ˌhevi ˈsliːpə/ | I'm a heavy sleeper; nothing wakes me up. | J'ai le sommeil lourd ; rien ne me réveille.
+light sleeper | personne au sommeil léger | n | B2 | /ˌlaɪt ˈsliːpə/ | My wife is a light sleeper. | Ma femme a le sommeil léger.
 `,
 );
 
@@ -556,6 +578,198 @@ boneless | désossé | adj | C1 | /ˈbəʊnləs/ | Buy boneless chicken breasts.
 loin | longe, filet | n | C2 | /lɔɪn/ | We had a loin of lamb. | Nous avons mangé une longe d'agneau.
 marinade | marinade | n | B2 | /ˌmærɪˈneɪd/ | Leave the chicken in the marinade overnight. | Laisse le poulet dans la marinade toute la nuit.
 scallop | coquille Saint-Jacques | n | C1 | /ˈskɒləp/ | Scallops are popular in Brittany. | Les coquilles Saint-Jacques sont populaires en Bretagne.
+sugar cube | morceau de sucre | n | A2 | /ˈʃʊɡə kjuːb/ | He takes two sugar cubes in his coffee. | Il prend deux morceaux de sucre dans son café.
+stock cube | cube de bouillon | n | B1 | /ˈstɒk kjuːb/ | Dissolve a stock cube in hot water. | Dissous un cube de bouillon dans de l'eau chaude.
+food colouring | colorant alimentaire | n | B1 | /ˈfuːd ˌkʌlərɪŋ/ | Add a drop of red food colouring. | Ajoute une goutte de colorant alimentaire rouge.
+mixed herbs | herbes de Provence, mélange d'herbes | n | B1 | /ˌmɪkst ˈhɜːbz/ | Sprinkle some mixed herbs on the pizza. | Saupoudre un peu d'herbes sur la pizza.
+glacé cherry | cerise confite | n | B2 | /ˌɡlæseɪ ˈtʃeri/ | She put a glacé cherry on each cake. | Elle a mis une cerise confite sur chaque gâteau.
+desiccated coconut | noix de coco râpée | n | B2 | /ˌdesɪkeɪtɪd ˈkəʊkənʌt/ | Roll the balls in desiccated coconut. | Roule les boules dans la noix de coco râpée.
+ground almonds | poudre d'amandes | n | B1 | /ˌɡraʊnd ˈɑːməndz/ | The recipe uses ground almonds instead of flour. | La recette utilise de la poudre d'amandes à la place de la farine.
+chopped tomatoes | tomates concassées | n | B1 | /ˌtʃɒpt təˈmɑːtəʊz/ | Open a tin of chopped tomatoes. | Ouvre une boîte de tomates concassées.
+tomato purée | concentré de tomate | n | B1 | /təˈmɑːtəʊ ˌpjʊəreɪ/ | Stir in a spoonful of tomato purée. | Incorpore une cuillerée de concentré de tomate.
+passata | coulis de tomate | n | B2 | /pəˈsɑːtə/ | I use passata for my pasta sauce. | J'utilise du coulis de tomate pour ma sauce.
+pesto | pesto | n | B1 | /ˈpestəʊ/ | We had pasta with green pesto. | Nous avons mangé des pâtes au pesto vert.
+chilli sauce | sauce piquante | n | A2 | /ˈtʃɪli sɔːs/ | This chilli sauce is far too hot for me. | Cette sauce piquante est bien trop forte pour moi.
+brown sauce | sauce brune (condiment anglais) | n | B2 | /ˌbraʊn ˈsɔːs/ | He puts brown sauce on everything. | Il met de la sauce brune sur tout.
+tartare sauce | sauce tartare | n | B1 | /ˌtɑːtə ˈsɔːs/ | The fish comes with tartare sauce. | Le poisson est servi avec de la sauce tartare.
+mint sauce | sauce à la menthe | n | B1 | /ˌmɪnt ˈsɔːs/ | Roast lamb is traditionally served with mint sauce. | L'agneau rôti se sert traditionnellement avec une sauce à la menthe.
+apple sauce | compote de pommes | n | A2 | /ˈæpl sɔːs/ | The baby loves apple sauce. | Le bébé adore la compote de pommes.
+cranberry sauce | sauce aux canneberges | n | B2 | /ˈkrænbəri sɔːs/ | Turkey is often eaten with cranberry sauce. | La dinde se mange souvent avec une sauce aux canneberges.
+horseradish | raifort | n | B2 | /ˈhɔːsrædɪʃ/ | Horseradish has a strong, hot taste. | Le raifort a un goût fort et piquant.
+chutney | chutney, condiment aigre-doux | n | B2 | /ˈtʃʌtni/ | Try the cheese with a little mango chutney. | Goûte le fromage avec un peu de chutney de mangue.
+gherkin | cornichon | n | B1 | /ˈɡɜːkɪn/ | There's a gherkin in my burger. | Il y a un cornichon dans mon burger.
+sauerkraut | choucroute | n | B2 | /ˈsaʊəkraʊt/ | Sauerkraut is made from fermented cabbage. | La choucroute est faite de chou fermenté.
+coleslaw | salade de chou cru | n | B1 | /ˈkəʊlslɔː/ | The chicken came with chips and coleslaw. | Le poulet était servi avec des frites et une salade de chou.
+potato salad | salade de pommes de terre | n | A2 | /pəˈteɪtəʊ ˌsæləd/ | I've made a potato salad for the picnic. | J'ai fait une salade de pommes de terre pour le pique-nique.
+guacamole | guacamole | n | B1 | /ˌɡwɑːkəˈməʊli/ | Guacamole is made from mashed avocado. | Le guacamole est fait d'avocat écrasé.
+rice cake | galette de riz | n | B1 | /ˈraɪs keɪk/ | I had a rice cake with honey. | J'ai mangé une galette de riz au miel.
+breadstick | gressin | n | B1 | /ˈbredstɪk/ | The children were nibbling breadsticks. | Les enfants grignotaient des gressins.
+crouton | croûton | n | B1 | /ˈkruːtɒn/ | Add a few croutons to the soup. | Ajoute quelques croûtons dans la soupe.
+garlic bread | pain à l'ail | n | A2 | /ˌɡɑːlɪk ˈbred/ | We ordered garlic bread as a starter. | Nous avons pris du pain à l'ail en entrée.
+rye bread | pain de seigle | n | B1 | /ˈraɪ bred/ | Rye bread is dark and dense. | Le pain de seigle est foncé et dense.
+brown bread | pain complet, pain bis | n | A2 | /ˌbraʊn ˈbred/ | Would you like white or brown bread? | Tu veux du pain blanc ou du pain complet ?
+bread roll | petit pain | n | A2 | /ˌbred ˈrəʊl/ | Each guest got a warm bread roll. | Chaque invité a eu un petit pain chaud.
+hot cross bun | brioche aux raisins (de Pâques) | n | B2 | /ˌhɒt krɒs ˈbʌn/ | Bakeries sell hot cross buns in spring. | Les boulangeries vendent des brioches aux raisins au printemps.
+Danish pastry | viennoiserie danoise | n | B1 | /ˌdeɪnɪʃ ˈpeɪstri/ | I'll have a coffee and a Danish pastry. | Je prendrai un café et une viennoiserie.
+sponge cake | génoise, gâteau éponge | n | B1 | /ˈspʌndʒ keɪk/ | She baked a light sponge cake. | Elle a fait une génoise légère.
+fruit cake | cake aux fruits confits | n | B1 | /ˈfruːt keɪk/ | A slice of fruit cake goes well with tea. | Une part de cake aux fruits accompagne bien le thé.
+carrot cake | gâteau aux carottes | n | B1 | /ˈkærət keɪk/ | The carrot cake has a creamy topping. | Le gâteau aux carottes a un glaçage crémeux.
+Swiss roll | gâteau roulé | n | B1 | /ˌswɪs ˈrəʊl/ | A Swiss roll is a sponge rolled up with jam. | Un gâteau roulé est une génoise enroulée avec de la confiture.
+jam tart | tartelette à la confiture | n | B1 | /ˌdʒæm ˈtɑːt/ | The children made jam tarts. | Les enfants ont fait des tartelettes à la confiture.
+apple pie | tarte aux pommes (couverte) | n | A2 | /ˌæpl ˈpaɪ/ | Grandma's apple pie is the best. | La tarte aux pommes de mamie est la meilleure.
+rice pudding | riz au lait | n | A2 | /ˌraɪs ˈpʊdɪŋ/ | Rice pudding is a classic school dessert. | Le riz au lait est un dessert de cantine classique.
+ice lolly | glace à l'eau, sucette glacée | n | A2 | /ˈaɪs ˌlɒli/ | The kids bought an ice lolly each. | Les enfants ont acheté une glace à l'eau chacun.
+choc ice | esquimau | n | B1 | /ˈtʃɒk aɪs/ | A choc ice is ice cream covered in chocolate. | Un esquimau est une glace enrobée de chocolat.
+fish fingers | bâtonnets de poisson pané | n | A2 | /ˌfɪʃ ˈfɪŋɡəz/ | The children had fish fingers and peas. | Les enfants ont mangé des bâtonnets de poisson et des petits pois.
+fish and chips | poisson-frites | n | A2 | /ˌfɪʃ ən ˈtʃɪps/ | We ate fish and chips by the sea. | Nous avons mangé un poisson-frites au bord de la mer.
+chicken nugget | croquette de poulet | n | A2 | /ˌtʃɪkɪn ˈnʌɡɪt/ | He only eats chicken nuggets. | Il ne mange que des croquettes de poulet.
+veggie burger | burger végétarien | n | A2 | /ˈvedʒi ˌbɜːɡə/ | The café does a great veggie burger. | Le café fait un excellent burger végétarien.
+jacket potato | pomme de terre au four (en robe des champs) | n | A2 | /ˌdʒækɪt pəˈteɪtəʊ/ | I had a jacket potato with cheese and beans. | J'ai pris une pomme de terre au four avec du fromage et des haricots.
+mashed potato | purée de pommes de terre | n | A2 | /ˌmæʃt pəˈteɪtəʊ/ | Serve the fish with mashed potato. | Sers le poisson avec de la purée.
+roast potatoes | pommes de terre rôties | n | A2 | /ˌrəʊst pəˈteɪtəʊz/ | Nobody makes roast potatoes like my mum. | Personne ne fait les pommes de terre rôties comme ma mère.
+potato wedges | quartiers de pommes de terre au four | n | B1 | /pəˈteɪtəʊ ˌwedʒɪz/ | Potato wedges are baked, not fried. | Les quartiers de pommes de terre sont cuits au four, pas frits.
+Yorkshire pudding | Yorkshire pudding (petit pain soufflé) | n | B2 | /ˌjɔːkʃə ˈpʊdɪŋ/ | Yorkshire pudding is part of a Sunday roast. | Le Yorkshire pudding fait partie du rôti du dimanche.
+shepherd's pie | hachis Parmentier (à l'agneau) | n | B1 | /ˌʃepədz ˈpaɪ/ | Shepherd's pie is minced lamb topped with mashed potato. | Ce plat, c'est de l'agneau haché recouvert de purée.
+cottage pie | hachis Parmentier (au bœuf) | n | B2 | /ˌkɒtɪdʒ ˈpaɪ/ | Cottage pie is made with beef rather than lamb. | Ce hachis se fait avec du bœuf plutôt que de l'agneau.
+beans on toast | haricots blancs à la tomate sur pain grillé | n | B1 | /ˌbiːnz ɒn ˈtəʊst/ | Beans on toast is a quick and cheap meal. | Les haricots sur toast, c'est un repas rapide et bon marché.
+cheese on toast | toast au fromage fondu | n | A2 | /ˌtʃiːz ɒn ˈtəʊst/ | I made cheese on toast for lunch. | J'ai fait des toasts au fromage pour le déjeuner.
+boiled sweets | bonbons durs, berlingots | n | B1 | /ˌbɔɪld ˈswiːts/ | She always kept boiled sweets in her handbag. | Elle avait toujours des bonbons durs dans son sac à main.
+fruit salad | salade de fruits | n | A1 | /ˌfruːt ˈsæləd/ | For dessert there is fruit salad. | Comme dessert, il y a une salade de fruits.
+sandwich filling | garniture de sandwich | n | B1 | /ˈsænwɪdʒ ˌfɪlɪŋ/ | Egg and cress is my favourite sandwich filling. | Œuf et cresson, c'est ma garniture de sandwich préférée.
+club sandwich | club-sandwich | n | A2 | /ˌklʌb ˈsænwɪdʒ/ | I ordered a club sandwich from room service. | J'ai commandé un club-sandwich au service d'étage.
+Sunday roast | rôti du dimanche | n | B1 | /ˌsʌndeɪ ˈrəʊst/ | The whole family meets for a Sunday roast. | Toute la famille se retrouve pour le rôti du dimanche.
+side salad | salade d'accompagnement | n | A2 | /ˌsaɪd ˈsæləd/ | Would you like a side salad with that? | Vous voulez une salade en accompagnement ?
+ready meal | plat préparé, plat cuisiné | n | B1 | /ˌredi ˈmiːl/ | He lives on ready meals and takeaways. | Il vit de plats préparés et de plats à emporter.
+frozen food | surgelés | n | A2 | /ˌfrəʊzn ˈfuːd/ | The frozen food is in aisle nine. | Les surgelés sont au rayon neuf.
+convenience food | produits tout prêts | n | B2 | /kənˈviːniəns fuːd/ | Convenience food is quick but often salty. | Les produits tout prêts sont rapides, mais souvent salés.
+comfort food | plat réconfortant | n | B2 | /ˈkʌmfət fuːd/ | Soup is my favourite comfort food in winter. | La soupe est mon plat réconfortant préféré en hiver.
+finger food | amuse-bouches, bouchées à manger avec les doigts | n | B1 | /ˈfɪŋɡə fuːd/ | We served finger food at the party. | Nous avons servi des bouchées à la fête.
+health food | aliments diététiques, produits bio | n | B1 | /ˈhelθ fuːd/ | There's a health food shop on the high street. | Il y a un magasin de produits diététiques dans la grand-rue.
+superfood | super-aliment | n | B2 | /ˈsuːpəfuːd/ | Blueberries are often called a superfood. | On dit souvent que la myrtille est un super-aliment.
+home cooking | cuisine maison | n | B1 | /ˌhəʊm ˈkʊkɪŋ/ | Nothing beats good home cooking. | Rien ne vaut une bonne cuisine maison.
+free-range eggs | œufs de poules élevées en plein air | n | B1 | /ˌfriː reɪndʒ ˈeɡz/ | We only buy free-range eggs. | Nous n'achetons que des œufs de poules élevées en plein air.
+eggshell | coquille d'œuf | n | B1 | /ˈeɡʃel/ | There's a bit of eggshell in the omelette. | Il y a un bout de coquille dans l'omelette.
+chicken breast | blanc de poulet | n | A2 | /ˌtʃɪkɪn ˈbrest/ | Grill the chicken breast for ten minutes. | Fais griller le blanc de poulet dix minutes.
+chicken wing | aile de poulet | n | A2 | /ˌtʃɪkɪn ˈwɪŋ/ | We shared a plate of spicy chicken wings. | Nous avons partagé une assiette d'ailes de poulet épicées.
+drumstick | pilon (de volaille) | n | B1 | /ˈdrʌmstɪk/ | The children fought over the chicken drumsticks. | Les enfants se disputaient les pilons de poulet.
+beef mince | bœuf haché | n | B1 | /ˌbiːf ˈmɪns/ | Brown the beef mince with an onion. | Fais revenir le bœuf haché avec un oignon.
+sirloin | aloyau, faux-filet | n | B2 | /ˈsɜːlɔɪn/ | He ordered a sirloin steak, medium rare. | Il a commandé un faux-filet, à point.
+brisket | poitrine de bœuf | n | C1 | /ˈbrɪskɪt/ | The brisket was cooked slowly for eight hours. | La poitrine de bœuf a cuit doucement pendant huit heures.
+leg of lamb | gigot d'agneau | n | B1 | /ˌleɡ əv ˈlæm/ | We roasted a leg of lamb with garlic and rosemary. | Nous avons rôti un gigot d'agneau à l'ail et au romarin.
+smoked salmon | saumon fumé | n | A2 | /ˌsməʊkt ˈsæmən/ | Smoked salmon on brown bread is delicious. | Le saumon fumé sur du pain complet, c'est délicieux.
+fish cake | croquette de poisson | n | B1 | /ˈfɪʃ keɪk/ | The fish cakes are made with salmon and potato. | Les croquettes de poisson sont faites de saumon et de pomme de terre.
+prawn cocktail | cocktail de crevettes | n | B1 | /ˌprɔːn ˈkɒkteɪl/ | Prawn cocktail used to be a popular starter. | Le cocktail de crevettes était une entrée très prisée.
+scampi | scampi, langoustines panées | n | B2 | /ˈskæmpi/ | He ordered scampi and chips. | Il a commandé des scampi avec des frites.
+self-raising flour | farine à levure incorporée | n | B1 | /ˌself reɪzɪŋ ˈflaʊə/ | Use self-raising flour so the cake rises. | Utilise de la farine avec levure pour que le gâteau monte.
+bicarbonate of soda | bicarbonate de soude | n | B2 | /baɪˌkɑːbənət əv ˈsəʊdə/ | Add half a teaspoon of bicarbonate of soda. | Ajoute une demi-cuillère à café de bicarbonate de soude.
+caster sugar | sucre en poudre (fin) | n | B1 | /ˈkɑːstə ˌʃʊɡə/ | Whisk the eggs with the caster sugar. | Fouette les œufs avec le sucre en poudre.
+icing sugar | sucre glace | n | B1 | /ˈaɪsɪŋ ˌʃʊɡə/ | Dust the cake with icing sugar. | Saupoudre le gâteau de sucre glace.
+brown sugar | sucre roux | n | A2 | /ˌbraʊn ˈʃʊɡə/ | I put brown sugar on my porridge. | Je mets du sucre roux sur mon porridge.
+golden syrup | mélasse claire, sirop de sucre | n | B2 | /ˌɡəʊldən ˈsɪrəp/ | Flapjacks are made with oats and golden syrup. | Ces barres se font avec des flocons d'avoine et du sirop de sucre.
+maple syrup | sirop d'érable | n | A2 | /ˌmeɪpl ˈsɪrəp/ | Pour maple syrup over the pancakes. | Verse du sirop d'érable sur les pancakes.
+peanut butter | beurre de cacahuète | n | A2 | /ˌpiːnʌt ˈbʌtə/ | He loves peanut butter on toast. | Il adore le beurre de cacahuète sur du pain grillé.
+cream cheese | fromage frais à tartiner | n | A2 | /ˌkriːm ˈtʃiːz/ | Spread the bagel with cream cheese. | Tartine le bagel de fromage frais.
+cottage cheese | fromage blanc granuleux | n | B1 | /ˌkɒtɪdʒ ˈtʃiːz/ | Cottage cheese is low in fat. | Ce fromage frais est pauvre en matières grasses.
+sour cream | crème aigre | n | B1 | /ˌsaʊə ˈkriːm/ | Serve the soup with a spoonful of sour cream. | Sers la soupe avec une cuillerée de crème aigre.
+double cream | crème entière épaisse | n | B1 | /ˌdʌbl ˈkriːm/ | Whip the double cream until it is thick. | Fouette la crème épaisse jusqu'à ce qu'elle soit ferme.
+single cream | crème liquide | n | B1 | /ˌsɪŋɡl ˈkriːm/ | Pour a little single cream over the fruit. | Verse un peu de crème liquide sur les fruits.
+whipped cream | crème fouettée, chantilly | n | A2 | /ˌwɪpt ˈkriːm/ | Strawberries with whipped cream, please. | Des fraises à la chantilly, s'il vous plaît.
+crumpet | petite crêpe épaisse (à griller) | n | B2 | /ˈkrʌmpɪt/ | Hot buttered crumpets are perfect on a cold day. | Ces petites crêpes chaudes et beurrées, c'est parfait par temps froid.
+flapjack | barre aux flocons d'avoine | n | B2 | /ˈflæpdʒæk/ | She baked flapjacks for the school fair. | Elle a fait des barres d'avoine pour la kermesse.
+shortbread | sablé (écossais) | n | B1 | /ˈʃɔːtbred/ | Scottish shortbread is rich and buttery. | Le sablé écossais est riche en beurre.
+wholemeal bread | pain complet | n | B1 | /ˈhəʊlmiːl bred/ | Wholemeal bread has more fibre than white bread. | Le pain complet contient plus de fibres que le pain blanc.
+sliced bread | pain de mie en tranches | n | A2 | /ˌslaɪst ˈbred/ | Buy a loaf of sliced bread on your way home. | Achète un pain de mie en tranches en rentrant.
+breadcrumbs | chapelure | n | B1 | /ˈbredkrʌmz/ | Coat the fish in breadcrumbs. | Enrobe le poisson de chapelure.
+toastie | croque-monsieur, sandwich grillé | n | B1 | /ˈtəʊsti/ | I had a cheese and tomato toastie. | J'ai mangé un sandwich grillé fromage-tomate.
+pitta bread | pain pita | n | A2 | /ˈpɪtə bred/ | Fill the pitta bread with salad and falafel. | Garnis le pain pita de salade et de falafels.
+cornflakes | pétales de maïs | n | A2 | /ˈkɔːnfleɪks/ | I have cornflakes for breakfast. | Je mange des pétales de maïs au petit-déjeuner.
+poached egg | œuf poché | n | B1 | /ˌpəʊtʃt ˈeɡ/ | She had a poached egg on toast. | Elle a pris un œuf poché sur du pain grillé.
+lamb chop | côtelette d'agneau | n | A2 | /ˌlæm ˈtʃɒp/ | Grill the lamb chops for five minutes each side. | Fais griller les côtelettes d'agneau cinq minutes de chaque côté.
+roast chicken | poulet rôti | n | A1 | /ˌrəʊst ˈtʃɪkɪn/ | We're having roast chicken tonight. | Ce soir, nous mangeons du poulet rôti.
+pasty | chausson (à la viande et aux légumes) | n | B2 | /ˈpæsti/ | A Cornish pasty is filled with beef and vegetables. | Un chausson de Cornouailles est garni de bœuf et de légumes.
+quiche | quiche | n | A2 | /kiːʃ/ | There's spinach quiche for lunch. | Il y a une quiche aux épinards pour le déjeuner.
+sunflower oil | huile de tournesol | n | A2 | /ˈsʌnflaʊər ɔɪl/ | Fry the onions in a little sunflower oil. | Fais revenir les oignons dans un peu d'huile de tournesol.
+lollipop | sucette | n | A2 | /ˈlɒlipɒp/ | The doctor gave the child a lollipop. | Le médecin a donné une sucette à l'enfant.
+marshmallow | guimauve | n | B1 | /ˌmɑːʃˈmæləʊ/ | We toasted marshmallows over the fire. | Nous avons fait griller des guimauves sur le feu.
+sultana | raisin sec (blond) | n | B1 | /sʌlˈtɑːnə/ | The scones are full of sultanas. | Les scones sont pleins de raisins secs.
+redcurrant | groseille | n | B1 | /ˌredˈkʌrənt/ | Redcurrants are small, red and sour. | Les groseilles sont petites, rouges et acides.
+spring onion | oignon nouveau, cébette | n | A2 | /ˌsprɪŋ ˈʌnjən/ | Chop two spring onions for the salad. | Émince deux oignons nouveaux pour la salade.
+shallot | échalote | n | B1 | /ʃəˈlɒt/ | Fry a finely chopped shallot in butter. | Fais revenir une échalote finement hachée dans du beurre.
+butternut squash | courge musquée | n | B1 | /ˌbʌtənʌt ˈskwɒʃ/ | Roast the butternut squash with a little honey. | Fais rôtir la courge musquée avec un peu de miel.
+kidney bean | haricot rouge | n | B1 | /ˈkɪdni biːn/ | Add a tin of kidney beans to the chilli. | Ajoute une boîte de haricots rouges au chili.
+baked beans | haricots blancs à la sauce tomate | n | A2 | /ˌbeɪkt ˈbiːnz/ | A tin of baked beans is a cheap meal. | Une boîte de haricots à la tomate, c'est un repas bon marché.
+broad bean | fève | n | B1 | /ˈbrɔːd biːn/ | Broad beans grow well in a cool spring. | Les fèves poussent bien lors d'un printemps frais.
+runner bean | haricot d'Espagne | n | B2 | /ˈrʌnə biːn/ | My grandfather grows runner beans in his garden. | Mon grand-père cultive des haricots d'Espagne dans son jardin.
+salad dressing | vinaigrette, sauce pour salade | n | A2 | /ˈsæləd ˌdresɪŋ/ | Shake the salad dressing before using it. | Secoue la vinaigrette avant de l'utiliser.
+tinned | en conserve | adj | A2 | /tɪnd/ | Tinned fruit keeps for a long time. | Les fruits en conserve se gardent longtemps.
+oatcake | galette d'avoine | n | B2 | /ˈəʊtkeɪk/ | Oatcakes are delicious with cheese. | Les galettes d'avoine sont délicieuses avec du fromage.
+French bread | baguette | n | A2 | /ˌfrentʃ ˈbred/ | We bought a stick of French bread. | Nous avons acheté une baguette.
+granary bread | pain aux céréales | n | B2 | /ˈɡrænəri bred/ | Granary bread has whole grains in it. | Le pain aux céréales contient des grains entiers.
+cream cake | gâteau à la crème | n | A2 | /ˌkriːm ˈkeɪk/ | We treated ourselves to a cream cake. | Nous nous sommes offert un gâteau à la crème.
+frozen yoghurt | yaourt glacé | n | B1 | /ˌfrəʊzn ˈjɒɡət/ | Frozen yoghurt is lighter than ice cream. | Le yaourt glacé est plus léger que la crème glacée.
+beefburger | steak haché (en burger) | n | A2 | /ˈbiːfbɜːɡə/ | He put two beefburgers on the barbecue. | Il a mis deux steaks hachés sur le barbecue.
+oven chips | frites au four | n | B1 | /ˈʌvn tʃɪps/ | Oven chips are less greasy than fried ones. | Les frites au four sont moins grasses que les frites classiques.
+chicken thigh | haut de cuisse de poulet | n | B1 | /ˌtʃɪkɪn ˈθaɪ/ | Chicken thighs are cheaper than breasts. | Les hauts de cuisse sont moins chers que les blancs.
+rump steak | rumsteck | n | B2 | /ˌrʌmp ˈsteɪk/ | Rump steak has plenty of flavour. | Le rumsteck a beaucoup de goût.
+stewing steak | bœuf à braiser | n | B2 | /ˈstjuːɪŋ steɪk/ | Stewing steak needs to cook for hours. | Le bœuf à braiser doit cuire des heures.
+cod fillet | filet de cabillaud | n | B1 | /ˌkɒd ˈfɪlɪt/ | Bake the cod fillets with lemon and herbs. | Fais cuire les filets de cabillaud au four avec du citron et des herbes.
+tuna steak | pavé de thon | n | B1 | /ˈtjuːnə steɪk/ | Sear the tuna steak quickly on both sides. | Saisis rapidement le pavé de thon des deux côtés.
+gravy granules | sauce instantanée (en granulés) | n | C1 | /ˈɡreɪvi ˌɡrænjuːlz/ | Stir the gravy granules into boiling water. | Incorpore la sauce instantanée dans de l'eau bouillante.
+custard powder | crème anglaise en poudre | n | B2 | /ˈkʌstəd ˌpaʊdə/ | Mix the custard powder with a little milk. | Délaye la crème anglaise en poudre dans un peu de lait.
+mixed spice | mélange d'épices (pour pâtisserie) | n | B2 | /ˌmɪkst ˈspaɪs/ | Add a teaspoon of mixed spice to the dough. | Ajoute une cuillère à café de mélange d'épices à la pâte.
+roe | œufs de poisson | n | C1 | /rəʊ/ | Cod roe is a delicacy in some countries. | Les œufs de cabillaud sont un mets raffiné dans certains pays.
+malt | malt | n | C1 | /mɔːlt/ | Malt is made from germinated barley. | Le malt est fait d'orge germée.
+goo | substance gluante | n | B2 | /ɡuː/ | His hands were covered in sticky goo. | Ses mains étaient couvertes d'une substance gluante.
+salt shaker | salière (à trous) | n | B1 | /ˈsɔːlt ˌʃeɪkə/ | The salt shaker is empty. | La salière est vide.
+spelt | épeautre | n | C2 | /spelt/ | This bread is made with spelt flour. | Ce pain est fait avec de la farine d'épeautre.
+wrapper | emballage, papier | n | B1 | /ˈræpə/ | Don't drop your sweet wrappers on the floor. | Ne jette pas tes papiers de bonbons par terre.
+caviar | caviar | n | B2 | /ˈkæviɑː/ | Caviar is the eggs of the sturgeon. | Le caviar, ce sont les œufs d'esturgeon.
+cheeseburger | cheeseburger | n | A2 | /ˈtʃiːzbɜːɡə/ | I'll have a cheeseburger and chips. | Je prendrai un cheeseburger et des frites.
+macaroni | macaronis | n | A2 | /ˌmækəˈrəʊni/ | The children love macaroni cheese. | Les enfants adorent les macaronis au fromage.
+soya bean | graine de soja | n | B2 | /ˈsɔɪə biːn/ | Tofu is made from soya beans. | Le tofu est fait à partir de graines de soja.
+shank | jarret | n | C2 | /ʃæŋk/ | Lamb shank is cooked slowly with vegetables. | Le jarret d'agneau cuit lentement avec des légumes.
+rump | croupe ; culotte (de bœuf) | n | C1 | /rʌmp/ | The horse had a white patch on its rump. | Le cheval avait une tache blanche sur la croupe.
+beet | betterave | n | B2 | /biːt/ | Sugar is made from sugar beet. | Le sucre est fait à partir de la betterave sucrière.
+yolk | jaune d'œuf | n | B1 | /jəʊk/ | Separate the yolk from the white. | Sépare le jaune du blanc.
+flavoured | aromatisé | adj | B1 | /ˈfleɪvəd/ | I bought some lemon-flavoured water. | J'ai acheté de l'eau aromatisée au citron.
+corn on the cob | épi de maïs | n | B1 | /ˌkɔːn ɒn ðə ˈkɒb/ | We grilled corn on the cob on the barbecue. | Nous avons grillé des épis de maïs au barbecue.
+nachos | nachos | n | B1 | /ˈnætʃəʊz/ | We shared a plate of nachos with cheese. | Nous avons partagé une assiette de nachos au fromage.
+mouthful | bouchée ; gorgée | n | B2 | /ˈmaʊθfʊl/ | He took a mouthful of soup. | Il a pris une cuillerée de soupe.
+meaty | charnu, de viande ; substantiel | adj | B2 | /ˈmiːti/ | It's a meaty role for a young actor. | C'est un rôle substantiel pour un jeune acteur.
+crusty | croustillant | adj | B2 | /ˈkrʌsti/ | Serve the soup with crusty bread. | Sers la soupe avec du pain croustillant.
+sustenance | subsistance, nourriture | n | C2 | /ˈsʌstənəns/ | The soldiers relied on rice for sustenance. | Les soldats se nourrissaient de riz pour subsister.
+luscious | succulent, appétissant | adj | C1 | /ˈlʌʃəs/ | The market sells luscious ripe peaches. | Le marché vend des pêches mûres et succulentes.
+fleshy | charnu | adj | C1 | /ˈfleʃi/ | Mangoes have fleshy fruit. | Les mangues ont une chair épaisse.
+pretzel | bretzel | n | B1 | /ˈpretsl/ | We bought warm pretzels at the market. | Nous avons acheté des bretzels chauds au marché.
+taro | taro | n | C2 | /ˈtɑːrəʊ/ | Taro is a root vegetable eaten in the Pacific. | Le taro est un légume racine consommé dans le Pacifique.
+buttery | beurré, au goût de beurre | adj | B2 | /ˈbʌtəri/ | The croissants were warm and buttery. | Les croissants étaient chauds et pleins de beurre.
+steakhouse | grill, restaurant de grillades | n | B2 | /ˈsteɪkhaʊs/ | They booked a table at a steakhouse. | Ils ont réservé une table dans un restaurant de grillades.
+fat-free | sans matières grasses | adj | B1 | /ˌfæt ˈfriː/ | I bought fat-free yoghurt. | J'ai acheté du yaourt sans matières grasses.
+sun-dried | séché au soleil | adj | B2 | /ˌsʌn ˈdraɪd/ | Add some sun-dried tomatoes to the salad. | Ajoute des tomates séchées à la salade.
+drive-through | (restaurant) au volant, service à l'auto | adj | B1 | /ˈdraɪv θruː/ | We stopped at a drive-through restaurant. | Nous nous sommes arrêtés dans un drive.
+nutritional information | valeurs nutritionnelles | n | B2 | /njuːˌtrɪʃənl ɪnfəˈmeɪʃn/ | Check the nutritional information on the packet. | Regarde les valeurs nutritionnelles sur le paquet.
+food label | étiquette alimentaire | n | B1 | /ˈfuːd ˌleɪbl/ | Learn to read a food label. | Apprends à lire une étiquette alimentaire.
+organic food | alimentation biologique | n | A2 | /ɔːˌɡænɪk ˈfuːd/ | Organic food is often more expensive. | Les produits bio sont souvent plus chers.
+processed food | aliments transformés | n | B2 | /ˌprəʊsest ˈfuːd/ | Try to eat less processed food. | Essaie de manger moins d'aliments transformés.
+anchovy | anchois | n | B1 | /ˈæntʃəvi/ | I'd like a pizza without anchovies, please. | Je voudrais une pizza sans anchois, s'il vous plaît.
+swordfish | espadon | n | B1 | /ˈsɔːdfɪʃ/ | We had grilled swordfish for dinner. | Nous avons mangé de l'espadon grillé au dîner.
+fries | frites (US) | n | A1 | /fraɪz/ | Do you want fries with your burger? | Tu veux des frites avec ton burger ?
+eggplant | aubergine (US) | n | A2 | /ˈeɡplɑːnt/ | Slice the eggplant and fry it in olive oil. | Coupe l'aubergine en tranches et fais-la frire dans l'huile d'olive.
+zucchini | courgette (US) | n | A2 | /zuˈkiːni/ | Add the zucchini to the soup. | Ajoute la courgette à la soupe.
+cilantro | coriandre fraîche (US) | n | B2 | /sɪˈlæntrəʊ/ | Sprinkle fresh cilantro over the rice. | Parsème le riz de coriandre fraîche.
+arugula | roquette (US) | n | B2 | /əˈruːɡjʊlə/ | I'd like a salad with arugula and tomatoes. | Je voudrais une salade de roquette et de tomates.
+scallion | oignon vert, cébette (US) | n | B2 | /ˈskæliən/ | Chop two scallions for the omelette. | Hache deux cébettes pour l'omelette.
+ground beef | bœuf haché (US) | n | B1 | /ˌɡraʊnd ˈbiːf/ | Buy a pound of ground beef for the burgers. | Achète une livre de bœuf haché pour les burgers.
+in season | de saison | adj | B1 | /ɪn ˈsiːzn/ | Strawberries are in season in June. | Les fraises sont de saison en juin.
+deep-fried | frit (dans un bain d'huile) | adj | B1 | /ˌdiːp ˈfraɪd/ | Deep-fried food is bad for your heart. | La friture est mauvaise pour le cœur.
+stir-fried | sauté (au wok) | adj | B2 | /ˈstɜː fraɪd/ | I'll have the stir-fried vegetables. | Je prendrai les légumes sautés au wok.
+meat-free | sans viande | adj | B1 | /ˌmiːt ˈfriː/ | We have a meat-free day every Monday. | Nous faisons une journée sans viande tous les lundis.
+low-calorie | hypocalorique, allégé | adj | B1 | /ˌləʊ ˈkæləri/ | She drinks low-calorie fizzy drinks. | Elle boit des sodas allégés.
+high-protein | riche en protéines | adj | B2 | /ˌhaɪ ˈprəʊtiːn/ | Eggs are a good high-protein food. | Les œufs sont un bon aliment riche en protéines.
+full-fat | entier, non allégé | adj | B1 | /ˌfʊl ˈfæt/ | Babies need full-fat milk. | Les bébés ont besoin de lait entier.
+semi-skimmed | demi-écrémé | adj | B1 | /ˌsemi ˈskɪmd/ | A pint of semi-skimmed milk, please. | Un demi-litre de lait demi-écrémé, s'il vous plaît.
+skimmed | écrémé | adj | B1 | /skɪmd/ | I drink skimmed milk in my coffee. | Je mets du lait écrémé dans mon café.
+fry-up | assiette de fritures (petit-déjeuner anglais) | n | B2 | /ˈfraɪ ʌp/ | On Sundays we have a fry-up with eggs and beans. | Le dimanche, nous mangeons une assiette de fritures avec des œufs et des haricots.
 `,
 );
 
@@ -1118,5 +1332,130 @@ osteoarthritis | arthrose | n | C2 | /ˌɒstiəʊɑːˈθraɪtɪs/ | My grandmot
 scalpel | scalpel | n | C2 | /ˈskælpəl/ | The surgeon picked up a scalpel. | Le chirurgien a pris un scalpel.
 typhus | typhus | n | C2 | /ˈtaɪfəs/ | Typhus spread through the camp. | Le typhus s'est propagé dans le camp.
 post-mortem | autopsie | n | C1 | /ˌpəʊst ˈmɔːtəm/ | A post-mortem revealed the cause of death. | Une autopsie a révélé la cause du décès.
+high temperature | forte fièvre | n | A2 | /ˌhaɪ ˈtemprətʃə/ | The baby has a high temperature. | Le bébé a une forte fièvre.
+swelling | gonflement, enflure | n | B1 | /ˈswelɪŋ/ | Put ice on it to reduce the swelling. | Mets de la glace pour réduire le gonflement.
+insect bite | piqûre d'insecte | n | A2 | /ˈɪnsekt baɪt/ | This cream soothes insect bites. | Cette crème apaise les piqûres d'insectes.
+chickenpox | varicelle | n | B1 | /ˈtʃɪkɪnpɒks/ | Most children catch chickenpox at some point. | La plupart des enfants attrapent la varicelle un jour ou l'autre.
+indigestion | indigestion | n | B1 | /ˌɪndɪˈdʒestʃən/ | Eating too fast gives me indigestion. | Manger trop vite me donne une indigestion.
+cough syrup | sirop contre la toux | n | A2 | /ˈkɒf ˌsɪrəp/ | Take a spoonful of cough syrup before bed. | Prends une cuillerée de sirop contre la toux avant de te coucher.
+eye drops | collyre, gouttes pour les yeux | n | B1 | /ˈaɪ drɒps/ | The doctor prescribed eye drops for the infection. | Le médecin a prescrit un collyre contre l'infection.
+inpatient | patient hospitalisé | n | C1 | /ˈɪnpeɪʃnt/ | He was treated as an inpatient for a week. | Il a été hospitalisé une semaine.
+poorly | souffrant, patraque | adj | B1 | /ˈpɔːli/ | Grandma has been poorly all week. | Mamie est souffrante depuis le début de la semaine.
+to make an appointment | prendre rendez-vous | expr | A2 | /meɪk ən əˈpɔɪntmənt/ | I need to make an appointment with the dentist. | Je dois prendre rendez-vous chez le dentiste.
+to keep fit | garder la forme, s'entretenir | expr | A2 | /kiːp ˈfɪt/ | She swims every day to keep fit. | Elle nage tous les jours pour garder la forme.
+healthy eating | alimentation saine | n | A2 | /ˌhelθi ˈiːtɪŋ/ | The school promotes healthy eating. | L'école encourage une alimentation saine.
+sleepwalker | somnambule | n | B2 | /ˈsliːpwɔːkə/ | The sleepwalker was found in the garden at 3 a.m. | On a retrouvé le somnambule dans le jardin à trois heures du matin.
+tooth decay | carie dentaire | n | B1 | /ˈtuːθ dɪˌkeɪ/ | Sugar is the main cause of tooth decay. | Le sucre est la cause principale des caries.
+gum disease | maladie des gencives | n | B2 | /ˈɡʌm dɪˌziːz/ | Smoking increases the risk of gum disease. | Fumer augmente le risque de maladie des gencives.
+long-sighted | hypermétrope, presbyte | adj | B2 | /ˌlɒŋ ˈsaɪtɪd/ | He's long-sighted, so he needs glasses to read. | Il est presbyte, il lui faut des lunettes pour lire.
+colour-blind | daltonien | adj | B1 | /ˈkʌlə blaɪnd/ | He can't tell red from green because he's colour-blind. | Il ne distingue pas le rouge du vert parce qu'il est daltonien.
+metabolic | métabolique | adj | C1 | /ˌmetəˈbɒlɪk/ | Diabetes is a metabolic disorder. | Le diabète est un trouble métabolique.
+sclerosis | sclérose | n | C2 | /skləˈrəʊsɪs/ | Multiple sclerosis affects the nervous system. | La sclérose en plaques touche le système nerveux.
+truss | bandage herniaire ; ferme (charpente) | n | C2 | /trʌs/ | The roof is supported by wooden trusses. | Le toit est soutenu par des fermes en bois.
+lipid | lipide | n | C2 | /ˈlɪpɪd/ | Fats and oils are lipids. | Les graisses et les huiles sont des lipides.
+catheter | cathéter, sonde | n | C2 | /ˈkæθɪtə/ | The nurse inserted a catheter. | L'infirmière a posé une sonde.
+castor oil | huile de ricin | n | C1 | /ˌkɑːstər ˈɔɪl/ | Castor oil was once a common remedy. | L'huile de ricin était autrefois un remède courant.
+prenatal | prénatal | adj | C1 | /ˌpriːˈneɪtl/ | She goes to prenatal classes every week. | Elle suit des cours de préparation à l'accouchement chaque semaine.
+menopause | ménopause | n | C1 | /ˈmenəpɔːz/ | Many women have hot flushes during the menopause. | Beaucoup de femmes ont des bouffées de chaleur pendant la ménopause.
+pathologist | médecin légiste ; pathologiste | n | C1 | /pəˈθɒlədʒɪst/ | The pathologist examined the body. | Le médecin légiste a examiné le corps.
+carcinoma | carcinome | n | C2 | /ˌkɑːsɪˈnəʊmə/ | The biopsy showed a small carcinoma. | La biopsie a révélé un petit carcinome.
+cancerous | cancéreux | adj | C1 | /ˈkænsərəs/ | The tumour was not cancerous. | La tumeur n'était pas cancéreuse.
+throbbing | lancinant | adj | C1 | /ˈθrɒbɪŋ/ | I woke up with a throbbing headache. | Je me suis réveillé avec un mal de tête lancinant.
+lancet | lancette | n | C2 | /ˈlɑːnsɪt/ | The nurse pricked his finger with a lancet. | L'infirmière lui a piqué le doigt avec une lancette.
+cystic fibrosis | mucoviscidose | n | C2 | /ˌsɪstɪk faɪˈbrəʊsɪs/ | Cystic fibrosis affects the lungs. | La mucoviscidose touche les poumons.
+whiplash | coup du lapin | n | C1 | /ˈwɪplæʃ/ | She suffered whiplash in the car crash. | Elle a été victime du coup du lapin dans l'accident.
+hepatic | hépatique | adj | C2 | /hɪˈpætɪk/ | The patient has hepatic failure. | Le patient souffre d'insuffisance hépatique.
+ulcer | ulcère | n | B2 | /ˈʌlsə/ | Stress can make a stomach ulcer worse. | Le stress peut aggraver un ulcère à l'estomac.
+sepsis | septicémie | n | C2 | /ˈsepsɪs/ | Sepsis must be treated very quickly. | La septicémie doit être traitée très vite.
+progesterone | progestérone | n | C2 | /prəʊˈdʒestərəʊn/ | Progesterone is a female hormone. | La progestérone est une hormone féminine.
+pox | vérole, variole | n | C2 | /pɒks/ | Smallpox killed millions of people. | La variole a tué des millions de personnes.
+implantation | implantation | n | C2 | /ˌɪmplɑːnˈteɪʃn/ | The embryo's implantation took place a week later. | L'implantation de l'embryon a eu lieu une semaine plus tard.
+glaucoma | glaucome | n | C2 | /ɡlɔːˈkəʊmə/ | Glaucoma can lead to blindness. | Le glaucome peut entraîner la cécité.
+soreness | douleur, endolorissement | n | C1 | /ˈsɔːnəs/ | Muscle soreness is normal after exercise. | Les courbatures sont normales après l'effort.
+narcotic | stupéfiant | n | C1 | /nɑːˈkɒtɪk/ | He was arrested for smuggling narcotics. | Il a été arrêté pour trafic de stupéfiants.
+lisp | zézaiement, cheveu sur la langue | n | C1 | /lɪsp/ | He speaks with a slight lisp. | Il a un léger cheveu sur la langue.
+leprosy | lèpre | n | C1 | /ˈleprəsi/ | Leprosy can now be cured. | La lèpre se soigne aujourd'hui.
+hernia | hernie | n | C1 | /ˈhɜːniə/ | Lifting heavy boxes gave him a hernia. | Soulever de lourdes caisses lui a provoqué une hernie.
+blockage | obstruction, blocage | n | C1 | /ˈblɒkɪdʒ/ | A blockage in the artery caused the heart attack. | Une obstruction de l'artère a provoqué l'infarctus.
+consent form | formulaire de consentement | n | B2 | /kənˈsent fɔːm/ | Parents must sign a consent form for the trip. | Les parents doivent signer une autorisation pour la sortie.
+circadian rhythm | rythme circadien | n | C2 | /sɜːˌkeɪdiən ˈrɪðəm/ | Jet lag upsets your circadian rhythm. | Le décalage horaire dérègle le rythme circadien.
+lactic acid | acide lactique | n | C1 | /ˌlæktɪk ˈæsɪd/ | Lactic acid builds up in tired muscles. | L'acide lactique s'accumule dans les muscles fatigués.
+senile | sénile | adj | C1 | /ˈsiːnaɪl/ | He worried that he was becoming senile. | Il avait peur de devenir sénile.
+sedative | sédatif, calmant | n | C1 | /ˈsedətɪv/ | The vet gave the dog a mild sedative. | Le vétérinaire a donné un léger calmant au chien.
+osteoporosis | ostéoporose | n | C2 | /ˌɒstiəʊpəˈrəʊsɪs/ | Osteoporosis makes bones fragile. | L'ostéoporose fragilise les os.
+ingestion | ingestion | n | C2 | /ɪnˈdʒestʃən/ | Ingestion of the plant can be fatal. | L'ingestion de cette plante peut être mortelle.
+hypothermia | hypothermie | n | C1 | /ˌhaɪpəʊˈθɜːmiə/ | The climbers were suffering from hypothermia. | Les alpinistes souffraient d'hypothermie.
+clinician | clinicien | n | C2 | /klɪˈnɪʃn/ | The study was carried out by experienced clinicians. | L'étude a été menée par des cliniciens expérimentés.
+ailment | affection, maladie (bénigne) | n | C1 | /ˈeɪlmənt/ | Honey is a traditional cure for many ailments. | Le miel est un remède traditionnel contre bien des maux.
+cataract | cataracte | n | C1 | /ˈkætərækt/ | She had an operation to remove a cataract. | Elle s'est fait opérer de la cataracte.
+first aider | secouriste | n | B2 | /ˌfɜːst ˈeɪdə/ | Every office should have a trained first aider. | Chaque bureau devrait avoir un secouriste formé.
+oxygen mask | masque à oxygène | n | B1 | /ˈɒksɪdʒən mɑːsk/ | Put on your own oxygen mask first. | Mets d'abord ton propre masque à oxygène.
+blood group | groupe sanguin | n | B1 | /ˈblʌd ɡruːp/ | What blood group are you? | Quel est ton groupe sanguin ?
+blood sugar | glycémie, taux de sucre dans le sang | n | B2 | /ˈblʌd ˌʃʊɡə/ | Check your blood sugar before meals. | Contrôle ta glycémie avant les repas.
+medical history | antécédents médicaux | n | B2 | /ˌmedɪkl ˈhɪstri/ | The doctor asked about my medical history. | Le médecin m'a interrogé sur mes antécédents médicaux.
+health check | bilan de santé | n | B1 | /ˈhelθ tʃek/ | Over-forties are offered a free health check. | Un bilan de santé gratuit est proposé aux plus de quarante ans.
+eye test | examen de la vue | n | A2 | /ˈaɪ test/ | You should have an eye test every two years. | Il faudrait faire un examen de la vue tous les deux ans.
+hearing test | test auditif | n | B1 | /ˈhɪərɪŋ test/ | The hearing test showed some hearing loss. | Le test auditif a révélé une légère perte d'audition.
+pregnancy test | test de grossesse | n | B1 | /ˈpreɡnənsi test/ | The pregnancy test was positive. | Le test de grossesse était positif.
+maternity ward | maternité (service) | n | B1 | /məˈtɜːnəti wɔːd/ | Visitors to the maternity ward must wash their hands. | Les visiteurs de la maternité doivent se laver les mains.
+nursing home | maison de retraite médicalisée | n | B1 | /ˈnɜːsɪŋ həʊm/ | Her grandfather lives in a nursing home. | Son grand-père vit en maison de retraite.
+health visitor | infirmière puéricultrice (à domicile) | n | C1 | /ˈhelθ ˌvɪzɪtə/ | The health visitor weighed the baby. | La puéricultrice a pesé le bébé.
+district nurse | infirmière à domicile | n | B2 | /ˌdɪstrɪkt ˈnɜːs/ | A district nurse comes to dress his wound. | Une infirmière vient à domicile pour panser sa plaie.
+junior doctor | interne (en médecine) | n | B2 | /ˌdʒuːniə ˈdɒktə/ | Junior doctors often work very long shifts. | Les internes font souvent des gardes très longues.
+family doctor | médecin de famille | n | A2 | /ˌfæməli ˈdɒktə/ | Our family doctor has known us for years. | Notre médecin de famille nous connaît depuis des années.
+waiting list | liste d'attente | n | B1 | /ˈweɪtɪŋ lɪst/ | There's a six-month waiting list for the operation. | Il y a six mois de liste d'attente pour l'opération.
+operating table | table d'opération | n | B2 | /ˈɒpəreɪtɪŋ ˌteɪbl/ | The patient was lying on the operating table. | Le patient était allongé sur la table d'opération.
+recovery room | salle de réveil | n | B2 | /rɪˈkʌvəri ruːm/ | She woke up in the recovery room. | Elle s'est réveillée en salle de réveil.
+allergic reaction | réaction allergique | n | B1 | /əˌlɜːdʒɪk riˈækʃn/ | He had an allergic reaction to the penicillin. | Il a fait une réaction allergique à la pénicilline.
+panic attack | crise d'angoisse | n | B2 | /ˈpænɪk əˌtæk/ | She had a panic attack in the lift. | Elle a fait une crise d'angoisse dans l'ascenseur.
+nervous breakdown | dépression nerveuse | n | B2 | /ˌnɜːvəs ˈbreɪkdaʊn/ | Overwork led to a nervous breakdown. | Le surmenage a provoqué une dépression nerveuse.
+mental illness | maladie mentale | n | B2 | /ˌmentl ˈɪlnəs/ | Mental illness affects one person in four. | Les maladies mentales touchent une personne sur quatre.
+short-term memory | mémoire à court terme | n | B2 | /ˌʃɔːt tɜːm ˈmeməri/ | Lack of sleep affects short-term memory. | Le manque de sommeil altère la mémoire à court terme.
+memory loss | perte de mémoire | n | B2 | /ˈmeməri lɒs/ | The accident caused temporary memory loss. | L'accident a provoqué une perte de mémoire temporaire.
+hearing loss | perte auditive | n | B2 | /ˈhɪərɪŋ lɒs/ | Loud music can cause hearing loss. | La musique forte peut provoquer une perte auditive.
+back pain | mal de dos | n | A2 | /ˈbæk peɪn/ | Sitting all day gives me back pain. | Rester assis toute la journée me donne mal au dos.
+chest pain | douleur thoracique | n | B1 | /ˈtʃest peɪn/ | Call an ambulance if you have chest pain. | Appelle une ambulance si tu as une douleur à la poitrine.
+growing pains | douleurs de croissance ; difficultés de démarrage | n | C1 | /ˈɡrəʊɪŋ peɪnz/ | The new company is going through growing pains. | La jeune entreprise connaît des difficultés de démarrage.
+morning sickness | nausées matinales | n | B2 | /ˈmɔːnɪŋ ˌsɪknəs/ | She suffered from morning sickness for months. | Elle a eu des nausées matinales pendant des mois.
+motion sickness | mal des transports | n | B2 | /ˈməʊʃn ˌsɪknəs/ | Take these tablets for motion sickness. | Prends ces comprimés contre le mal des transports.
+altitude sickness | mal des montagnes | n | B2 | /ˈæltɪtjuːd ˌsɪknəs/ | Climbers can suffer from altitude sickness. | Les alpinistes peuvent souffrir du mal des montagnes.
+sleeping pill | somnifère | n | B1 | /ˈsliːpɪŋ pɪl/ | He can't sleep without a sleeping pill. | Il ne peut pas dormir sans somnifère.
+pain relief | soulagement de la douleur, antalgique | n | B2 | /ˈpeɪn rɪˌliːf/ | The nurse gave him pain relief. | L'infirmière lui a donné un antalgique.
+hot flush | bouffée de chaleur | n | B2 | /ˌhɒt ˈflʌʃ/ | She keeps having hot flushes. | Elle a sans cesse des bouffées de chaleur.
+cold sweat | sueurs froides | n | B2 | /ˌkəʊld ˈswet/ | I woke up in a cold sweat. | Je me suis réveillé en sueurs froides.
+black eye | œil au beurre noir | n | B1 | /ˌblæk ˈaɪ/ | He came home with a black eye. | Il est rentré avec un œil au beurre noir.
+nosebleed | saignement de nez | n | B1 | /ˈnəʊzbliːd/ | Lean forward if you have a nosebleed. | Penche-toi en avant si tu saignes du nez.
+life-threatening | qui met la vie en danger, potentiellement mortel | adj | B2 | /ˈlaɪf ˌθretnɪŋ/ | His injuries are not life-threatening. | Ses blessures ne mettent pas sa vie en danger.
+pain-free | indolore, sans douleur | adj | B2 | /ˌpeɪn ˈfriː/ | The dentist promised it would be pain-free. | Le dentiste a promis que ce serait indolore.
+walk-in | sans rendez-vous ; (placard) dans lequel on peut entrer | adj | B2 | /ˈwɔːk ɪn/ | There's a walk-in clinic in the shopping centre. | Il y a un centre de soins sans rendez-vous dans le centre commercial.
+drug addict | toxicomane | n | B2 | /ˈdrʌɡ ˌædɪkt/ | The centre helps drug addicts to recover. | Le centre aide les toxicomanes à s'en sortir.
+to take a deep breath | respirer profondément | expr | A2 | /teɪk ə ˌdiːp ˈbreθ/ | Take a deep breath and relax. | Respire profondément et détends-toi.
+to take medicine | prendre des médicaments | expr | A2 | /teɪk ˈmedsn/ | Take this medicine twice a day. | Prends ce médicament deux fois par jour.
+to have a headache | avoir mal à la tête | expr | A2 | /hæv ə ˈhedeɪk/ | I have a headache; can you turn off the music? | J'ai mal à la tête ; tu peux éteindre la musique ?
+to have a cold | être enrhumé | expr | A2 | /hæv ə ˈkəʊld/ | I can't come; I have a cold. | Je ne peux pas venir, je suis enrhumé.
+to have an operation | se faire opérer | expr | B1 | /hæv ən ˌɒpəˈreɪʃn/ | My grandfather has to have an operation on his knee. | Mon grand-père doit se faire opérer du genou.
+to save lives | sauver des vies | expr | A2 | /seɪv ˈlaɪvz/ | Seat belts save lives. | Les ceintures de sécurité sauvent des vies.
+as right as rain | en pleine forme | expr | C1 | /əz ˌraɪt əz ˈreɪn/ | After a good night's sleep, you'll be as right as rain. | Après une bonne nuit de sommeil, tu seras en pleine forme.
+cold turkey | du jour au lendemain (arrêter le tabac, une drogue) | expr | C1 | /ˌkəʊld ˈtɜːki/ | He gave up smoking cold turkey. | Il a arrêté de fumer du jour au lendemain.
+to fall ill | tomber malade | expr | B1 | /fɔːl ˈɪl/ | If you fall ill abroad, call this number. | Si tu tombes malade à l'étranger, appelle ce numéro.
+to run a temperature | avoir de la fièvre | expr | B2 | /rʌn ə ˈtemprətʃə/ | The baby is running a temperature. | Le bébé a de la fièvre.
+to take its toll | faire des ravages, laisser des traces | expr | C1 | /teɪk ɪts ˈtəʊl/ | Years of night shifts are starting to take their toll. | Des années de travail de nuit commencent à laisser des traces.
+out of danger | hors de danger | adj | B1 | /ˌaʊt əv ˈdeɪndʒə/ | The doctors say she is now out of danger. | Les médecins disent qu'elle est maintenant hors de danger.
+in hospital | à l'hôpital | adv | A2 | /ɪn ˈhɒspɪtl/ | My uncle has been in hospital for a week. | Mon oncle est à l'hôpital depuis une semaine.
+in shock | en état de choc | adj | B2 | /ɪn ˈʃɒk/ | The driver was in shock after the accident. | Le conducteur était en état de choc après l'accident.
+out of breath | essoufflé, hors d'haleine | adj | B1 | /ˌaʊt əv ˈbreθ/ | I ran for the bus and now I'm out of breath. | J'ai couru pour attraper le bus et maintenant je suis essoufflé.
+to cancel an appointment | annuler un rendez-vous | expr | B1 | /ˈkænsl ən əˈpɔɪntmənt/ | I had to cancel an appointment with the dentist. | J'ai dû annuler un rendez-vous chez le dentiste.
+flu jab | vaccin contre la grippe | n | B2 | /ˈfluː dʒæb/ | Older people should have a flu jab every autumn. | Les personnes âgées devraient se faire vacciner contre la grippe chaque automne.
+over the counter | sans ordonnance | adv | B2 | /ˌəʊvə ðə ˈkaʊntə/ | You can buy this medicine over the counter. | Ce médicament est en vente libre, sans ordonnance.
+on prescription | sur ordonnance | adv | B2 | /ɒn prɪˈskrɪpʃn/ | Antibiotics are only available on prescription. | Les antibiotiques ne sont délivrés que sur ordonnance.
+to take your temperature | prendre sa température | expr | A2 | /teɪk jə ˈtemprətʃə/ | The nurse will take your temperature. | L'infirmière va prendre votre température.
+stiff neck | torticolis | n | B1 | /ˌstɪf ˈnek/ | I woke up with a stiff neck. | Je me suis réveillé avec un torticolis.
+to twist your ankle | se tordre la cheville | expr | B1 | /twɪst jər ˈæŋkl/ | Be careful on the stairs, you could twist your ankle. | Fais attention dans l'escalier, tu pourrais te tordre la cheville.
+seriously ill | gravement malade | adj | B1 | /ˌsɪəriəsli ˈɪl/ | Her father is seriously ill in hospital. | Son père est gravement malade à l'hôpital.
+minor injury | blessure légère | n | B1 | /ˌmaɪnər ˈɪndʒəri/ | The driver escaped with minor injuries. | Le conducteur s'en est tiré avec des blessures légères.
+sharp pain | douleur vive | n | B2 | /ˌʃɑːp ˈpeɪn/ | I felt a sharp pain in my back. | J'ai ressenti une vive douleur dans le dos.
+dull pain | douleur sourde | n | B2 | /ˌdʌl ˈpeɪn/ | He has a dull pain in his knee. | Il a une douleur sourde au genou.
+heavy smoker | gros fumeur | n | B2 | /ˌhevi ˈsməʊkə/ | My grandfather was a heavy smoker. | Mon grand-père était un gros fumeur.
+intake | consommation, apport | n | C1 | /ˈɪnteɪk/ | Try to reduce your sugar intake. | Essaie de réduire ta consommation de sucre.
 `,
 );

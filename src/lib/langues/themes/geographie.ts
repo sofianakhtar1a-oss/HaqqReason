@@ -360,5 +360,37 @@ outcrop | affleurement (rocheux) | n | C2 | /ˈaʊtkrɒp/ | We sat on a rocky ou
 precipice | précipice | n | C2 | /ˈpresəpɪs/ | The economy is on the edge of a precipice. | L'économie est au bord du précipice.
 sinkhole | doline, effondrement | n | C2 | /ˈsɪŋkhəʊl/ | A sinkhole opened in the road. | Un trou s'est ouvert dans la chaussée.
 swampy | marécageux | adj | C1 | /ˈswɒmpi/ | The ground is swampy. | Le terrain est marécageux.
+shale | schiste | n | C1 | /ʃeɪl/ | Shale gas is extracted by fracking. | Le gaz de schiste est extrait par fracturation hydraulique.
+brink | bord (d'un précipice) | n | C1 | /brɪŋk/ | The country was on the brink of war. | Le pays était au bord de la guerre.
+firth | estuaire (en Écosse) | n | C2 | /fɜːθ/ | Edinburgh lies on the Firth of Forth. | Édimbourg se trouve sur l'estuaire du Forth.
+garnet | grenat | n | C2 | /ˈɡɑːnɪt/ | She wore a ring with a deep red garnet. | Elle portait une bague ornée d'un grenat rouge foncé.
+sedimentary | sédimentaire | adj | C2 | /ˌsedɪˈmentri/ | Limestone is a sedimentary rock. | Le calcaire est une roche sédimentaire.
+topographic | topographique | adj | C2 | /ˌtɒpəˈɡræfɪk/ | Hikers use topographic maps. | Les randonneurs utilisent des cartes topographiques.
+geophysical | géophysique | adj | C2 | /ˌdʒiːəʊˈfɪzɪkl/ | They carried out a geophysical survey. | Ils ont réalisé une étude géophysique.
+amethyst | améthyste | n | C2 | /ˈæməθɪst/ | She wore an amethyst pendant. | Elle portait un pendentif en améthyste.
+mountain pass | col (de montagne) | n | B1 | /ˈmaʊntɪn pɑːs/ | The mountain pass is closed in winter. | Le col est fermé en hiver.
+rock face | paroi rocheuse | n | B2 | /ˈrɒk feɪs/ | Climbers were scaling the rock face. | Des grimpeurs escaladaient la paroi rocheuse.
+moorland | lande | n | B2 | /ˈmʊələnd/ | The road crosses miles of open moorland. | La route traverse des kilomètres de lande.
+heathland | lande (de bruyère) | n | C1 | /ˈhiːθlənd/ | Heathland is home to rare birds. | La lande abrite des oiseaux rares.
+marshland | marécage | n | B2 | /ˈmɑːʃlənd/ | The river flows through flat marshland. | La rivière traverse des marécages plats.
+towpath | chemin de halage | n | C1 | /ˈtəʊpɑːθ/ | We cycled along the canal towpath. | Nous avons pédalé le long du chemin de halage.
+river bed | lit de la rivière | n | B2 | /ˈrɪvə bed/ | In summer, the river bed dries up. | En été, le lit de la rivière s'assèche.
+river mouth | embouchure | n | B2 | /ˈrɪvə maʊθ/ | The town lies at the river mouth. | La ville se trouve à l'embouchure du fleuve.
+sand dune | dune de sable | n | A2 | /ˈsænd djuːn/ | The children rolled down the sand dunes. | Les enfants dévalaient les dunes en roulant.
+shingle | galets | n | C1 | /ˈʃɪŋɡl/ | Brighton has a shingle beach. | Brighton a une plage de galets.
+tidal wave | raz-de-marée | n | B2 | /ˈtaɪdl weɪv/ | A tidal wave swept away the village. | Un raz-de-marée a emporté le village.
+undertow | ressac, contre-courant | n | C1 | /ˈʌndətəʊ/ | Swimmers were warned about the strong undertow. | On a averti les nageurs du fort contre-courant.
+rip current | courant d'arrachement, baïne | n | C1 | /ˈrɪp ˌkʌrənt/ | Don't swim against a rip current. | Ne nage pas contre un courant d'arrachement.
+coral reef | récif corallien | n | B1 | /ˈkɒrəl riːf/ | The Great Barrier Reef is the largest coral reef in the world. | La Grande Barrière est le plus grand récif corallien du monde.
+headland | promontoire, cap | n | C1 | /ˈhedlənd/ | A lighthouse stands on the headland. | Un phare se dresse sur le promontoire.
+inlet | crique, bras de mer | n | C1 | /ˈɪnlet/ | The boat sheltered in a narrow inlet. | Le bateau s'est abrité dans une crique étroite.
+aftershock | réplique (sismique) | n | C1 | /ˈɑːftəʃɒk/ | Several aftershocks followed the earthquake. | Plusieurs répliques ont suivi le séisme.
+mudslide | coulée de boue | n | B2 | /ˈmʌdslaɪd/ | Heavy rain caused a mudslide. | Des pluies diluviennes ont provoqué une coulée de boue.
+flood plain | plaine inondable | n | C1 | /ˈflʌd pleɪn/ | Houses built on the flood plain are at risk. | Les maisons construites en zone inondable sont exposées.
+onyx | onyx | n | C2 | /ˈɒnɪks/ | The table top is made of black onyx. | Le plateau de la table est en onyx noir.
+mica | mica | n | C2 | /ˈmaɪkə/ | Mica glitters in the rock. | Le mica scintille dans la roche.
+Jerusalem | Jérusalem | n | A2 | /dʒəˈruːsələm/ | Jerusalem is holy to Jews, Christians and Muslims. | Jérusalem est une ville sainte pour les juifs, les chrétiens et les musulmans.
+Aramaic | araméen | n | C1 | /ˌærəˈmeɪɪk/ | Jesus probably spoke Aramaic. | Jésus parlait probablement araméen.
+Latin | latin | n | A2 | /ˈlætɪn/ | Many English words come from Latin. | Beaucoup de mots anglais viennent du latin.
 `,
 );

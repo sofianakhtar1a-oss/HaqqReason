@@ -246,5 +246,17 @@ sorghum | sorgho | n | C2 | /ˈsɔːɡəm/ | Farmers grow sorghum in Sudan. | Le
 alfalfa | luzerne | n | C2 | /ælˈfælfə/ | The cows eat alfalfa. | Les vaches mangent de la luzerne.
 potash | potasse | n | C2 | /ˈpɒtæʃ/ | Farmers use potash as fertiliser. | Les agriculteurs utilisent la potasse comme engrais.
 hacienda | hacienda | n | C2 | /ˌhæsiˈendə/ | They stayed at an old hacienda in Mexico. | Ils ont séjourné dans une vieille hacienda au Mexique.
+verge | bas-côté, accotement | n | B2 | /vɜːdʒ/ | Wild flowers grow on the grass verge. | Des fleurs sauvages poussent sur le bas-côté herbeux.
+horticultural | horticole | adj | C2 | /ˌhɔːtɪˈkʌltʃərəl/ | She won a prize at the horticultural show. | Elle a gagné un prix au concours horticole.
+muck | boue ; fumier ; saletés | n | B2 | /mʌk/ | His boots were covered in muck. | Ses bottes étaient couvertes de boue.
+corral | enclos, corral | n | C2 | /kəˈrɑːl/ | The horses were kept in a corral. | Les chevaux étaient gardés dans un enclos.
+grower | producteur, cultivateur | n | C1 | /ˈɡrəʊə/ | Coffee growers are paid very little. | Les producteurs de café sont très mal payés.
+paddy field | rizière | n | B2 | /ˈpædi fiːld/ | Farmers were planting rice in the paddy fields. | Les paysans plantaient du riz dans les rizières.
+cornfield | champ de blé | n | B1 | /ˈkɔːnfiːld/ | Poppies grew at the edge of the cornfield. | Des coquelicots poussaient au bord du champ de blé.
+fish farm | élevage de poissons | n | B2 | /ˈfɪʃ fɑːm/ | Most salmon in shops comes from fish farms. | La plupart des saumons vendus viennent d'élevages.
+harrow | herse | n | C2 | /ˈhærəʊ/ | The farmer pulled a harrow across the field. | L'agriculteur tirait une herse dans le champ.
+fruit picker | cueilleur de fruits | n | B2 | /ˈfruːt ˌpɪkə/ | Students work as fruit pickers in the summer. | Des étudiants travaillent comme cueilleurs de fruits l'été.
+manger | mangeoire ; crèche | n | C1 | /ˈmeɪndʒə/ | The baby was laid in a manger. | L'enfant fut déposé dans une mangeoire.
+in the middle of nowhere | au milieu de nulle part | adv | B1 | /ɪn ðə ˌmɪdl əv ˈnəʊweə/ | The car broke down in the middle of nowhere. | La voiture est tombée en panne au milieu de nulle part.
 `,
 );

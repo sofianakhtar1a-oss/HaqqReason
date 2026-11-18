@@ -377,5 +377,86 @@ critter | bestiole | n | C2 | /ˈkrɪtə/ | Some little critter ate the tomatoes
 warbler | fauvette | n | C2 | /ˈwɔːblə/ | A warbler sang in the reeds. | Une fauvette chantait dans les roseaux.
 midge | moucheron | n | C2 | /mɪdʒ/ | The midges bite in the evening. | Les moucherons piquent le soir.
 salamander | salamandre | n | C2 | /ˈsæləmændə/ | A salamander hid under the log. | Une salamandre se cachait sous la bûche.
+bird table | mangeoire (sur pied) | n | B2 | /ˈbɜːd ˌteɪbl/ | Sparrows gather round the bird table every morning. | Les moineaux se rassemblent autour de la mangeoire chaque matin.
+birdbath | bain d'oiseaux | n | B2 | /ˈbɜːdbɑːθ/ | A blackbird was splashing in the birdbath. | Un merle s'ébrouait dans le bain d'oiseaux.
+nesting box | nichoir | n | B2 | /ˈnestɪŋ bɒks/ | Blue tits have moved into our nesting box. | Des mésanges bleues se sont installées dans notre nichoir.
+stoat | hermine | n | C1 | /stəʊt/ | A stoat's fur turns white in winter. | Le pelage de l'hermine devient blanc en hiver.
+wallaby | wallaby | n | B2 | /ˈwɒləbi/ | A wallaby looks like a small kangaroo. | Un wallaby ressemble à un petit kangourou.
+platypus | ornithorynque | n | B2 | /ˈplætɪpəs/ | The platypus is a mammal that lays eggs. | L'ornithorynque est un mammifère qui pond des œufs.
+armadillo | tatou | n | B2 | /ˌɑːməˈdɪləʊ/ | The armadillo rolls itself into a ball. | Le tatou se roule en boule.
+anteater | fourmilier | n | B2 | /ˈæntiːtə/ | The anteater catches ants with its long tongue. | Le fourmilier attrape les fourmis avec sa longue langue.
+meerkat | suricate | n | B1 | /ˈmɪəkæt/ | A meerkat stood on its back legs to keep watch. | Un suricate se dressait sur ses pattes arrière pour monter la garde.
+mongoose | mangouste | n | B2 | /ˈmɒŋɡuːs/ | A mongoose can kill a cobra. | Une mangouste peut tuer un cobra.
+warthog | phacochère | n | B2 | /ˈwɔːthɒɡ/ | A warthog was drinking at the waterhole. | Un phacochère buvait au point d'eau.
+lemur | lémurien | n | B2 | /ˈliːmə/ | Lemurs are only found in Madagascar. | Les lémuriens ne vivent qu'à Madagascar.
+yak | yack | n | B2 | /jæk/ | Yaks carry loads high in the Himalayas. | Les yacks transportent des charges dans l'Himalaya.
+colt | poulain (mâle) | n | B2 | /kəʊlt/ | The colt stayed close to its mother. | Le poulain restait près de sa mère.
+cygnet | jeune cygne | n | C1 | /ˈsɪɡnət/ | A swan was swimming with six grey cygnets. | Un cygne nageait avec six petits gris.
+finch | pinson | n | B2 | /fɪntʃ/ | A finch was singing in the hedge. | Un pinson chantait dans la haie.
+blue tit | mésange bleue | n | B2 | /ˌbluː ˈtɪt/ | A blue tit is nesting in the box. | Une mésange bleue niche dans le nichoir.
+rook | freux (corbeau) | n | C1 | /rʊk/ | Rooks nest in noisy colonies at the tops of trees. | Les freux nichent en colonies bruyantes à la cime des arbres.
+jackdaw | choucas | n | C1 | /ˈdʒækdɔː/ | A jackdaw stole a shiny ring. | Un choucas a volé une bague brillante.
+jay | geai | n | C1 | /dʒeɪ/ | A jay buries acorns to eat in winter. | Le geai enterre des glands pour l'hiver.
+kestrel | faucon crécerelle | n | C1 | /ˈkestrəl/ | A kestrel hovered above the motorway verge. | Un faucon crécerelle faisait du surplace au-dessus du bas-côté.
+puffin | macareux | n | B2 | /ˈpʌfɪn/ | Puffins have colourful beaks. | Les macareux ont un bec coloré.
+emu | émeu | n | B2 | /ˈiːmjuː/ | The emu is a large bird that cannot fly. | L'émeu est un grand oiseau qui ne vole pas.
+lark | alouette | n | B2 | /lɑːk/ | A lark sang high above the field. | Une alouette chantait haut au-dessus du champ.
+cuckoo | coucou | n | B1 | /ˈkʊkuː/ | We heard the first cuckoo of spring. | Nous avons entendu le premier coucou du printemps.
+grouse | lagopède, grouse | n | C1 | /ɡraʊs/ | Grouse live on the moors of Scotland. | Les grouses vivent dans les landes écossaises.
+gerbil | gerbille | n | B1 | /ˈdʒɜːbɪl/ | My sister keeps two gerbils as pets. | Ma sœur a deux gerbilles comme animaux de compagnie.
+adder | vipère péliade | n | C1 | /ˈædə/ | The adder is Britain's only venomous snake. | La vipère péliade est le seul serpent venimeux de Grande-Bretagne.
+boa constrictor | boa constricteur | n | B2 | /ˈbəʊə kənˌstrɪktə/ | A boa constrictor squeezes its prey. | Le boa constricteur étouffe sa proie.
+carp | carpe | n | B1 | /kɑːp/ | They caught a huge carp in the lake. | Ils ont pêché une énorme carpe dans le lac.
+plaice | carrelet, plie | n | C1 | /pleɪs/ | Plaice is a flat fish with orange spots. | Le carrelet est un poisson plat à taches orange.
+porpoise | marsouin | n | B2 | /ˈpɔːpəs/ | A porpoise is smaller than a dolphin. | Le marsouin est plus petit que le dauphin.
+gnat | moucheron | n | B2 | /næt/ | Gnats were dancing above the river. | Des moucherons dansaient au-dessus de la rivière.
+locust | criquet (migrateur), sauterelle | n | B2 | /ˈləʊkəst/ | A swarm of locusts destroyed the crops. | Une nuée de criquets a détruit les récoltes.
+louse | pou | n | B2 | /laʊs/ | A single louse can lay many eggs. | Un seul pou peut pondre de nombreux œufs.
+antler | bois (de cerf) | n | B2 | /ˈæntlə/ | The stag has huge antlers. | Le cerf a des bois immenses.
+pup | chiot ; petit (de phoque, de loup) | n | B2 | /pʌp/ | The seal pup lay on the beach. | Le bébé phoque était allongé sur la plage.
+to spawn | frayer ; engendrer | v | C1 | /spɔːn/ | Salmon swim upriver to spawn. | Les saumons remontent la rivière pour frayer.
+to coo | roucouler | v | C1 | /kuː/ | Pigeons were cooing on the roof. | Des pigeons roucoulaient sur le toit.
+to yelp | glapir, japper | v | C1 | /jelp/ | The dog yelped when I stepped on its tail. | Le chien a glapi quand je lui ai marché sur la queue.
+greyhound | lévrier | n | B2 | /ˈɡreɪhaʊnd/ | The greyhound is the fastest dog. | Le lévrier est le chien le plus rapide.
+horseshoe | fer à cheval | n | B1 | /ˈhɔːsʃuː/ | A horseshoe is said to bring good luck. | On dit qu'un fer à cheval porte bonheur.
+mink | vison | n | C1 | /mɪŋk/ | She refused to wear a mink coat. | Elle a refusé de porter un manteau de vison.
+filly | pouliche | n | C1 | /ˈfɪli/ | The filly won her first race. | La pouliche a gagné sa première course.
+pug | carlin | n | B2 | /pʌɡ/ | Their pug snores loudly. | Leur carlin ronfle fort.
+praying mantis | mante religieuse | n | B2 | /ˌpreɪɪŋ ˈmæntɪs/ | A praying mantis was hiding in the grass. | Une mante religieuse se cachait dans l'herbe.
+snipe | bécassine | n | C2 | /snaɪp/ | A snipe flew up from the marsh. | Une bécassine s'est envolée du marais.
+gnu | gnou | n | C1 | /nuː/ | Herds of gnu cross the river each year. | Des troupeaux de gnous traversent la rivière chaque année.
+zoological | zoologique | adj | C1 | /ˌzəʊəˈlɒdʒɪkl/ | The zoological gardens are open every day. | Le parc zoologique est ouvert tous les jours.
+poodle | caniche | n | B1 | /ˈpuːdl/ | Her poodle has a pink collar. | Son caniche porte un collier rose.
+moray eel | murène | n | C2 | /ˌmɒreɪ ˈiːl/ | A moray eel was hiding in the rocks. | Une murène se cachait dans les rochers.
+marlin | marlin | n | C2 | /ˈmɑːlɪn/ | The fishermen hooked a huge marlin. | Les pêcheurs ont ferré un énorme marlin.
+bovine | bovin | adj | C2 | /ˈbəʊvaɪn/ | Bovine diseases can spread through herds. | Les maladies bovines peuvent se propager dans les troupeaux.
+snapper | vivaneau | n | C2 | /ˈsnæpə/ | Red snapper is a popular fish in the Caribbean. | Le vivaneau rouge est un poisson très apprécié aux Caraïbes.
+to roost | se percher (pour dormir) | v | C1 | /ruːst/ | The hens roost in the barn at night. | La nuit, les poules se perchent dans la grange.
+gull | goéland, mouette | n | B2 | /ɡʌl/ | Gulls followed the fishing boat. | Des mouettes suivaient le bateau de pêche.
+fowl | volaille | n | C1 | /faʊl/ | The farm keeps chickens, ducks and other fowl. | La ferme élève des poules, des canards et d'autres volailles.
+golden retriever | golden retriever (chien) | n | B2 | /ˌɡəʊldən rɪˈtriːvə/ | Their golden retriever loves swimming. | Leur retriever adore nager.
+mullet | mulet (poisson) | n | C2 | /ˈmʌlɪt/ | Grey mullet swim in the harbour. | Des mulets nagent dans le port.
+impala | impala | n | C1 | /ɪmˈpɑːlə/ | A herd of impala grazed near the river. | Un troupeau d'impalas broutait près de la rivière.
+sable | zibeline | n | C2 | /ˈseɪbl/ | Sable fur was once very valuable. | La fourrure de zibeline valait autrefois très cher.
+to hoot | hululer ; klaxonner | v | B2 | /huːt/ | An owl hooted in the dark. | Une chouette hululait dans le noir.
+thoroughbred | pur-sang | n | C1 | /ˈθʌrəbred/ | The stable breeds thoroughbreds for racing. | L'écurie élève des pur-sang de course.
+collie | colley | n | B2 | /ˈkɒli/ | The collie rounded up the sheep. | Le colley a rassemblé les moutons.
+caribou | caribou | n | C1 | /ˈkærɪbuː/ | Caribou migrate across the tundra. | Les caribous migrent à travers la toundra.
+anaconda | anaconda | n | B2 | /ˌænəˈkɒndə/ | The anaconda is one of the biggest snakes. | L'anaconda est l'un des plus grands serpents.
+chimp | chimpanzé | n | B2 | /tʃɪmp/ | The chimp used a stick to catch ants. | Le chimpanzé utilisait un bâton pour attraper des fourmis.
+joey | bébé kangourou | n | C1 | /ˈdʒəʊi/ | The joey stays in its mother's pouch for months. | Le petit du kangourou reste des mois dans la poche de sa mère.
+to oink | grogner (cochon) | v | B1 | /ɔɪŋk/ | The pigs oinked when the farmer arrived. | Les cochons ont grogné à l'arrivée du fermier.
+to cluck | glousser, caqueter | v | B2 | /klʌk/ | The hens clucked in the farmyard. | Les poules gloussaient dans la cour de la ferme.
+stinger | dard, aiguillon | n | B2 | /ˈstɪŋə/ | The bee left its stinger in my arm. | L'abeille a laissé son dard dans mon bras.
+drake | canard (mâle) | n | C1 | /dreɪk/ | The drake has a shiny green head. | Le canard mâle a la tête d'un vert brillant.
+gander | jars | n | C1 | /ˈɡændə/ | The gander protected the geese from the dog. | Le jars protégeait les oies du chien.
+tigress | tigresse | n | B1 | /ˈtaɪɡrəs/ | The tigress hid her cubs in the long grass. | La tigresse a caché ses petits dans les hautes herbes.
+terrapin | tortue d'eau douce | n | C1 | /ˈterəpɪn/ | We keep a terrapin in a tank at school. | Nous avons une tortue d'eau douce dans un aquarium à l'école.
+millipede | iule, mille-pattes | n | C1 | /ˈmɪlɪpiːd/ | A millipede curled up under the stone. | Un iule s'est enroulé sous la pierre.
+tarantula | tarentule, mygale | n | B1 | /təˈræntʃələ/ | The tarantula is big and hairy but rarely dangerous. | La mygale est grosse et poilue, mais rarement dangereuse.
+orca | orque, épaulard | n | B1 | /ˈɔːkə/ | We saw a group of orcas from the boat. | Nous avons vu un groupe d'orques depuis le bateau.
+pike | brochet | n | B2 | /paɪk/ | My grandfather caught a pike in the lake. | Mon grand-père a pêché un brochet dans le lac.
+woodlouse | cloporte | n | B2 | /ˈwʊdlaʊs/ | There was a woodlouse under the flowerpot. | Il y avait un cloporte sous le pot de fleurs.
+glow-worm | ver luisant | n | B2 | /ˈɡləʊ wɜːm/ | On summer nights you can see glow-worms in the grass. | Les soirs d'été, on voit des vers luisants dans l'herbe.
 `,
 );

@@ -222,5 +222,77 @@ unsold | invendu | adj | C1 | /ˌʌnˈsəʊld/ | Unsold food is given to charity
 freebie | cadeau, truc gratuit | n | C1 | /ˈfriːbi/ | The shop gives out freebies. | Le magasin distribue des cadeaux.
 hawker | colporteur, marchand ambulant | n | C2 | /ˈhɔːkə/ | Hawkers sell food in the streets of Dakar. | Des marchands ambulants vendent de la nourriture dans les rues de Dakar.
 knockdown price | prix sacrifié | n | C1 | /ˌnɒkdaʊn ˈpraɪs/ | They sell rugs at knockdown prices. | Ils vendent des tapis à prix sacrifiés.
+online banking | banque en ligne | n | B1 | /ˌɒnlaɪn ˈbæŋkɪŋ/ | Online banking lets you pay bills from your phone. | La banque en ligne permet de payer ses factures depuis son téléphone.
+delivery slot | créneau de livraison | n | B2 | /dɪˈlɪvəri slɒt/ | Choose a delivery slot between eight and ten. | Choisis un créneau de livraison entre huit et dix heures.
+parcel locker | consigne à colis | n | B2 | /ˈpɑːsl ˌlɒkə/ | Collect your order from the parcel locker. | Récupère ta commande à la consigne à colis.
+home delivery | livraison à domicile | n | A2 | /ˌhəʊm dɪˈlɪvəri/ | The supermarket offers home delivery. | Le supermarché propose la livraison à domicile.
+delivery charge | frais de livraison | n | B1 | /dɪˈlɪvəri tʃɑːdʒ/ | There's no delivery charge on orders over fifty pounds. | Pas de frais de livraison au-delà de cinquante livres.
+return label | étiquette de retour | n | B1 | /rɪˈtɜːn ˌleɪbl/ | Print the return label and stick it on the box. | Imprime l'étiquette de retour et colle-la sur le carton.
+store card | carte de magasin | n | B2 | /ˈstɔː kɑːd/ | Paying with a store card can be very expensive. | Payer avec une carte de magasin peut coûter très cher.
+discount code | code promo | n | B1 | /ˈdɪskaʊnt kəʊd/ | Enter the discount code at the checkout. | Saisis le code promo au moment de payer.
+customer review | avis client | n | B1 | /ˌkʌstəmə rɪˈvjuː/ | Read the customer reviews before you buy. | Lis les avis clients avant d'acheter.
+shopping basket | panier (d'achat) | n | A2 | /ˈʃɒpɪŋ ˌbɑːskɪt/ | Your shopping basket contains three items. | Ton panier contient trois articles.
+premium | prime (d'assurance) ; de qualité supérieure | n | C1 | /ˈpriːmiəm/ | My insurance premium has gone up again. | Ma prime d'assurance a encore augmenté.
+merchandising | marchandisage, produits dérivés | n | C1 | /ˈmɜːtʃəndaɪzɪŋ/ | The band earns more from merchandising than from records. | Le groupe gagne plus avec les produits dérivés qu'avec les disques.
+labelling | étiquetage | n | C1 | /ˈleɪbəlɪŋ/ | Food labelling must show the ingredients. | L'étiquetage alimentaire doit indiquer les ingrédients.
+carat | carat | n | C1 | /ˈkærət/ | The ring is made of eighteen-carat gold. | La bague est en or dix-huit carats.
+stub | talon (de billet, de chèque) ; mégot | n | C1 | /stʌb/ | Keep the ticket stub. | Garde le talon du billet.
+bootleg | pirate, de contrebande | adj | C1 | /ˈbuːtleɡ/ | They sold bootleg DVDs at the market. | Ils vendaient des DVD pirates au marché.
+wad | liasse ; tampon | n | C1 | /wɒd/ | He pulled a wad of notes from his pocket. | Il a sorti une liasse de billets de sa poche.
+shipper | expéditeur, transporteur | n | C1 | /ˈʃɪpə/ | The shipper is responsible for the goods. | Le transporteur est responsable des marchandises.
+jumble sale | vente de charité (d'objets d'occasion) | n | B2 | /ˈdʒʌmbl seɪl/ | The church is holding a jumble sale. | La paroisse organise une vente d'objets d'occasion.
+garage sale | vide-grenier (devant chez soi) | n | B1 | /ˈɡærɑːʒ seɪl/ | We found this lamp at a garage sale. | Nous avons trouvé cette lampe dans un vide-grenier.
+shop front | devanture, vitrine | n | B1 | /ˈʃɒp frʌnt/ | The shop front was painted bright blue. | La devanture était peinte en bleu vif.
+stockroom | réserve (d'un magasin) | n | B2 | /ˈstɒkruːm/ | I'll check if there are any more in the stockroom. | Je vais voir s'il en reste dans la réserve.
+till receipt | ticket de caisse | n | A2 | /ˈtɪl rɪˌsiːt/ | Keep your till receipt in case you need to return it. | Garde ton ticket de caisse au cas où tu devrais le rapporter.
+paper bag | sac en papier | n | A2 | /ˈpeɪpə bæɡ/ | The baker put the rolls in a paper bag. | Le boulanger a mis les petits pains dans un sac en papier.
+shopping trolley | caddie, chariot | n | A2 | /ˈʃɒpɪŋ ˌtrɒli/ | You need a coin to get a shopping trolley. | Il faut une pièce pour prendre un chariot.
+opening times | horaires d'ouverture | n | A2 | /ˈəʊpənɪŋ taɪmz/ | Check the opening times before you go. | Vérifie les horaires d'ouverture avant d'y aller.
+money-back guarantee | satisfait ou remboursé | n | B2 | /ˌmʌni bæk ɡærənˈtiː/ | All our products come with a money-back guarantee. | Tous nos produits sont garantis « satisfait ou remboursé ».
+back in stock | de nouveau disponible | expr | B1 | /ˌbæk ɪn ˈstɒk/ | The trainers will be back in stock next week. | Les baskets seront de nouveau disponibles la semaine prochaine.
+flagship store | magasin phare | n | C1 | /ˈflæɡʃɪp stɔː/ | The brand opened a flagship store in London. | La marque a ouvert un magasin phare à Londres.
+covered market | marché couvert, halles | n | B1 | /ˌkʌvəd ˈmɑːkɪt/ | We bought cheese at the covered market. | Nous avons acheté du fromage aux halles.
+DIY store | magasin de bricolage | n | B1 | /ˌdiː aɪ ˈwaɪ stɔː/ | I need to go to the DIY store for paint. | Il faut que j'aille au magasin de bricolage acheter de la peinture.
+sweet shop | confiserie | n | A2 | /ˈswiːt ʃɒp/ | The old sweet shop sells sweets by weight. | La vieille confiserie vend les bonbons au poids.
+bookstall | étal de livres, kiosque à journaux | n | B2 | /ˈbʊkstɔːl/ | I bought a magazine at the station bookstall. | J'ai acheté un magazine au kiosque de la gare.
+newsstand | kiosque à journaux | n | B1 | /ˈnjuːzstænd/ | Newspapers are sold at the newsstand. | Les journaux sont vendus au kiosque.
+registered post | envoi recommandé | n | B2 | /ˌredʒɪstəd ˈpəʊst/ | Send the documents by registered post. | Envoie les documents en recommandé.
+recorded delivery | envoi avec accusé de réception | n | B2 | /rɪˌkɔːdɪd dɪˈlɪvəri/ | The letter was sent by recorded delivery. | La lettre a été envoyée avec accusé de réception.
+first-class stamp | timbre au tarif rapide | n | B1 | /ˌfɜːst klɑːs ˈstæmp/ | Put a first-class stamp on the card. | Mets un timbre au tarif rapide sur la carte.
+PO box | boîte postale | n | B2 | /ˌpiː ˈəʊ bɒks/ | Write to us at our PO box. | Écrivez-nous à notre boîte postale.
+window display | vitrine, étalage | n | B1 | /ˈwɪndəʊ dɪˌspleɪ/ | The window displays are lovely at Christmas. | Les vitrines sont magnifiques à Noël.
+vintage shop | friperie, boutique vintage | n | B1 | /ˈvɪntɪdʒ ʃɒp/ | I found this leather jacket in a vintage shop. | J'ai trouvé ce blouson en cuir dans une friperie.
+loyalty points | points de fidélité | n | B1 | /ˈlɔɪəlti pɔɪnts/ | You collect loyalty points every time you shop. | On cumule des points de fidélité à chaque achat.
+store credit | avoir (en magasin) | n | B2 | /ˈstɔː ˌkredɪt/ | They didn't refund me; they gave me store credit. | On ne m'a pas remboursé, on m'a donné un avoir.
+returns policy | politique de retour | n | B2 | /rɪˈtɜːnz ˌpɒləsi/ | Their returns policy gives you thirty days. | Leur politique de retour accorde trente jours.
+instruction manual | mode d'emploi | n | A2 | /ɪnˈstrʌkʃn ˌmænjuəl/ | Read the instruction manual before using the machine. | Lis le mode d'emploi avant d'utiliser l'appareil.
+user guide | guide d'utilisation | n | B1 | /ˈjuːzə ɡaɪd/ | The user guide is available online. | Le guide d'utilisation est disponible en ligne.
+assembly instructions | notice de montage | n | B1 | /əˈsembli ɪnˌstrʌkʃnz/ | The assembly instructions were missing from the box. | La notice de montage manquait dans le carton.
+spare part | pièce de rechange | n | B1 | /ˌspeə ˈpɑːt/ | They no longer make spare parts for this model. | On ne fabrique plus de pièces de rechange pour ce modèle.
+low-cost | à bas prix, à bas coût | adj | B1 | /ˌləʊ ˈkɒst/ | We flew with a low-cost airline. | Nous avons voyagé avec une compagnie à bas prix.
+cut-price | à prix réduit, au rabais | adj | C1 | /ˌkʌt ˈpraɪs/ | The shop sells cut-price electrical goods. | Le magasin vend de l'électroménager à prix cassés.
+door-to-door | porte-à-porte ; de porte à porte | adj | B2 | /ˌdɔː tə ˈdɔː/ | He used to be a door-to-door salesman. | Il était autrefois vendeur en porte-à-porte.
+out-of-town | à la périphérie (de la ville) | adj | B2 | /ˌaʊt əv ˈtaʊn/ | Out-of-town shopping centres are killing the high street. | Les centres commerciaux périphériques tuent les commerces du centre.
+card machine | terminal de paiement | n | A2 | /ˈkɑːd məˌʃiːn/ | The waiter brought the card machine to the table. | Le serveur a apporté le terminal de paiement à table.
+cake shop | pâtisserie (boutique) | n | A2 | /ˈkeɪk ʃɒp/ | The cake shop sells beautiful birthday cakes. | La pâtisserie vend de magnifiques gâteaux d'anniversaire.
+cheese counter | rayon fromage (à la coupe) | n | B1 | /ˈtʃiːz ˌkaʊntə/ | Ask at the cheese counter for a sample. | Demande à goûter au rayon fromage.
+fish counter | rayon poissonnerie | n | B1 | /ˈfɪʃ ˌkaʊntə/ | The fish counter has fresh mackerel today. | Le rayon poissonnerie a du maquereau frais aujourd'hui.
+self-service checkout | caisse automatique | n | B1 | /ˌself sɜːvɪs ˈtʃekaʊt/ | I prefer the self-service checkout. | Je préfère la caisse automatique.
+bag for life | sac réutilisable | n | B1 | /ˌbæɡ fə ˈlaɪf/ | Bring a bag for life to the supermarket. | Apporte un sac réutilisable au supermarché.
+sell-by date | date limite de vente | n | B1 | /ˈsel baɪ deɪt/ | This yoghurt is past its sell-by date. | Ce yaourt a dépassé sa date limite de vente.
+how much is it | c'est combien ? | expr | A1 | /ˌhaʊ ˈmʌtʃ ɪz ɪt/ | I like this scarf. How much is it? | J'aime bien cette écharpe. C'est combien ?
+can I help you | je peux vous aider ? | expr | A1 | /kən aɪ ˈhelp juː/ | Good morning, can I help you? | Bonjour, je peux vous aider ?
+I'm just looking | je regarde seulement | expr | A2 | /aɪm ˌdʒʌst ˈlʊkɪŋ/ | No thanks, I'm just looking. | Non merci, je regarde seulement.
+keep the change | gardez la monnaie | expr | A2 | /ˌkiːp ðə ˈtʃeɪndʒ/ | Here's ten pounds; keep the change. | Voici dix livres ; gardez la monnaie.
+to unwrap | déballer | v | B1 | /ʌnˈræp/ | The children couldn't wait to unwrap their presents. | Les enfants avaient hâte de déballer leurs cadeaux.
+drugstore | pharmacie, drugstore (US) | n | A2 | /ˈdrʌɡstɔː/ | You can buy aspirin at the drugstore. | On peut acheter de l'aspirine à la pharmacie.
+to sell like hot cakes | se vendre comme des petits pains | expr | B2 | /sel laɪk ˌhɒt ˈkeɪks/ | The new phone is selling like hot cakes. | Le nouveau téléphone se vend comme des petits pains.
+on offer | en promotion | adj | B1 | /ɒn ˈɒfə/ | Strawberries are on offer this week. | Les fraises sont en promotion cette semaine.
+on sale | en vente ; en solde (US) | adj | A2 | /ɒn ˈseɪl/ | Tickets go on sale on Monday. | Les billets seront mis en vente lundi.
+ironmonger's | quincaillerie | n | C1 | /ˈaɪənmʌŋɡəz/ | You'll find nails at the ironmonger's. | Tu trouveras des clous à la quincaillerie.
+stationer's | papeterie | n | B2 | /ˈsteɪʃənəz/ | I bought some envelopes at the stationer's. | J'ai acheté des enveloppes à la papeterie.
+off-licence | magasin de vins et spiritueux | n | B2 | /ˈɒf laɪsns/ | The corner shop used to be an off-licence. | L'épicerie du coin était autrefois un magasin de vins et spiritueux.
+wide range | large éventail, grand choix | n | B2 | /ˌwaɪd ˈreɪndʒ/ | The shop sells a wide range of spices. | La boutique propose un grand choix d'épices.
+bookstore | librairie (US) | n | A2 | /ˈbʊkstɔː/ | There's a bookstore next to the university. | Il y a une librairie à côté de l'université.
 `,
 );

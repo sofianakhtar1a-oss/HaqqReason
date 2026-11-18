@@ -607,5 +607,46 @@ upstanding | intègre, droit | adj | C2 | /ʌpˈstændɪŋ/ | He's an upstanding
 wilful | délibéré ; obstiné | adj | C2 | /ˈwɪlfl/ | It was wilful damage. | C'étaient des dégradations volontaires.
 oddball | original, excentrique | n | C2 | /ˈɒdbɔːl/ | He's a bit of an oddball. | C'est un peu un excentrique.
 brainless | écervelé | adj | C2 | /ˈbreɪnləs/ | That was a brainless thing to do. | C'était un geste écervelé.
+idiotic | idiot, stupide | adj | B2 | /ˌɪdiˈɒtɪk/ | That was an idiotic thing to say. | C'était idiot de dire ça.
+gall | culot, toupet | n | C2 | /ɡɔːl/ | He had the gall to ask for more money. | Il a eu le culot de demander plus d'argent.
+nerdy | ringard, intello | adj | B2 | /ˈnɜːdi/ | He wears nerdy glasses. | Il porte des lunettes d'intello.
+brooding | sombre, ténébreux | adj | C1 | /ˈbruːdɪŋ/ | The hero is a brooding, silent man. | Le héros est un homme ténébreux et silencieux.
+coy | faussement timide ; évasif | adj | C2 | /kɔɪ/ | She gave a coy smile. | Elle a souri d'un air faussement timide.
+prudential | prudentiel, de prudence | adj | C2 | /pruːˈdenʃl/ | Banks must meet prudential rules. | Les banques doivent respecter des règles prudentielles.
+cheery | gai, enjoué | adj | B2 | /ˈtʃɪəri/ | She gave us a cheery wave. | Elle nous a fait un signe de la main enjoué.
+pushy | insistant, arriviste | adj | B2 | /ˈpʊʃi/ | The salesman was too pushy. | Le vendeur était trop insistant.
+foxy | rusé | adj | C1 | /ˈfɒksi/ | He gave me a foxy grin. | Il m'a fait un sourire rusé.
+Scrooge | grippe-sou, avare | n | C1 | /skruːdʒ/ | Don't be such a Scrooge – buy a round of drinks! | Ne sois pas si radin, offre une tournée !
+narcissist | narcissique | n | C1 | /ˈnɑːsɪsɪst/ | He's a narcissist who only talks about himself. | C'est un narcissique qui ne parle que de lui.
+self-made | qui s'est fait tout seul | adj | B2 | /ˌself ˈmeɪd/ | He's a self-made millionaire. | C'est un millionnaire qui s'est fait tout seul.
+well-travelled | qui a beaucoup voyagé | adj | B2 | /ˌwel ˈtrævld/ | My aunt is very well-travelled. | Ma tante a beaucoup voyagé.
+well-informed | bien informé | adj | B2 | /ˌwel ɪnˈfɔːmd/ | Readers of the paper are well-informed. | Les lecteurs du journal sont bien informés.
+well-meaning | bien intentionné | adj | C1 | /ˌwel ˈmiːnɪŋ/ | She's well-meaning but she interferes too much. | Elle est bien intentionnée, mais elle se mêle de tout.
+quick-witted | vif d'esprit | adj | C1 | /ˌkwɪk ˈwɪtɪd/ | A quick-witted reply saved the situation. | Une réplique pleine d'esprit a sauvé la situation.
+single-minded | résolu, obstiné | adj | C1 | /ˌsɪŋɡl ˈmaɪndɪd/ | She was single-minded in her pursuit of success. | Elle poursuivait la réussite avec une détermination sans faille.
+half-hearted | sans conviction, tiède | adj | C1 | /ˌhɑːf ˈhɑːtɪd/ | He made a half-hearted attempt to apologise. | Il a tenté de s'excuser sans grande conviction.
+hot-headed | impétueux, tête brûlée | adj | C1 | /ˌhɒt ˈhedɪd/ | The hot-headed player was sent off. | Le joueur impulsif a été expulsé.
+thick-skinned | qui a la peau dure, insensible aux critiques | adj | C1 | /ˌθɪk ˈskɪnd/ | Politicians have to be thick-skinned. | Les hommes politiques doivent avoir la peau dure.
+thin-skinned | susceptible | adj | C1 | /ˌθɪn ˈskɪnd/ | Don't tease him, he's very thin-skinned. | Ne le taquine pas, il est très susceptible.
+to take a joke | accepter la plaisanterie | expr | B2 | /teɪk ə ˈdʒəʊk/ | Relax, can't you take a joke? | Détends-toi, tu ne sais pas rire ?
+responsible for | responsable de, chargé de | adj | B1 | /rɪˈspɒnsəbl fə/ | Who is responsible for the accounts? | Qui est chargé des comptes ?
+kind to | gentil avec | adj | A2 | /ˈkaɪnd tə/ | Be kind to your little brother. | Sois gentil avec ton petit frère.
+rude to | impoli envers, grossier avec | adj | B1 | /ˈruːd tə/ | Don't be rude to the waiter. | Ne sois pas impoli avec le serveur.
+serious about | sérieux dans, déterminé à | adj | B2 | /ˈsɪəriəs əˌbaʊt/ | If you're serious about music, practise every day. | Si tu prends la musique au sérieux, entraîne-toi tous les jours.
+prim and proper | collet monté | expr | C2 | /ˌprɪm ən ˈprɒpə/ | My aunt is very prim and proper. | Ma tante est très collet monté.
+as stubborn as a mule | têtu comme une mule | expr | B1 | /əz ˌstʌbən əz ə ˈmjuːl/ | My little brother is as stubborn as a mule. | Mon petit frère est têtu comme une mule.
+still waters run deep | les gens discrets cachent souvent une grande profondeur | expr | C1 | /ˌstɪl ˈwɔːtəz ˌrʌn ˈdiːp/ | She rarely speaks, but still waters run deep. | Elle parle peu, mais les gens discrets cachent souvent une grande profondeur.
+patience is a virtue | la patience est une vertu | expr | B1 | /ˌpeɪʃns ɪz ə ˈvɜːtʃuː/ | Wait your turn; patience is a virtue. | Attends ton tour ; la patience est une vertu.
+to set an example | donner l'exemple | expr | B2 | /set ən ɪɡˈzɑːmpl/ | Parents should set an example for their children. | Les parents devraient donner l'exemple à leurs enfants.
+to earn respect | gagner le respect | expr | B2 | /ɜːn rɪˈspekt/ | A good teacher earns respect through fairness. | Un bon professeur gagne le respect par son équité.
+to speak your mind | dire ce qu'on pense | expr | C1 | /spiːk jə ˈmaɪnd/ | My grandmother always speaks her mind. | Ma grand-mère dit toujours ce qu'elle pense.
+firm believer | fervent partisan | n | C1 | /ˌfɜːm bɪˈliːvə/ | I'm a firm believer in fresh food. | Je suis un fervent partisan des produits frais.
+cold-blooded | sans pitié, de sang-froid ; à sang froid | adj | C1 | /ˌkəʊld ˈblʌdɪd/ | Snakes are cold-blooded animals. | Les serpents sont des animaux à sang froid.
+pig-headed | entêté, buté | adj | C1 | /ˌpɪɡ ˈhedɪd/ | Don't be so pig-headed; listen to us! | Ne sois pas si buté, écoute-nous !
+like-minded | qui partage les mêmes idées | adj | C1 | /ˌlaɪk ˈmaɪndɪd/ | The club is a great place to meet like-minded people. | Le club est l'endroit idéal pour rencontrer des gens qui partagent les mêmes idées.
+fair-minded | impartial, juste | adj | C1 | /ˌfeə ˈmaɪndɪd/ | We need a fair-minded referee. | Il nous faut un arbitre impartial.
+soft-spoken | à la voix douce | adj | C1 | /ˌsɒft ˈspəʊkən/ | The new teacher is gentle and soft-spoken. | La nouvelle institutrice est douce et parle d'une voix posée.
+well-spoken | qui s'exprime bien | adj | C1 | /ˌwel ˈspəʊkən/ | The candidate was polite and well-spoken. | Le candidat était poli et s'exprimait bien.
+stuck-up | prétentieux, snob | adj | B2 | /ˌstʌk ˈʌp/ | She seems stuck-up, but she's just shy. | Elle a l'air prétentieuse, mais elle est juste timide.
 `,
 );

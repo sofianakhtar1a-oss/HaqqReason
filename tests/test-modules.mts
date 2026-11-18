@@ -59,7 +59,7 @@ ok("mot retiré exprès absent, même corbeille vide", !vu2[0].entrees.some((x) 
 ok("thème retiré exprès absent", !vu2.some((t) => t.id === origine[1].id) && vu2.length === origine.length - 1);
 ok("identifiants de retrait assainis", avecRetrait.retires?.length === 2);
 ok("modification du créateur prioritaire sur le code", resoudre("langues", nettoyerContenu("langues", { themes: [{ ...origine[0], nom: "Ma famille" }] })).themes![0].nom === "Ma famille");
-ok("carte du Truchement : nombres remplis", remplir(resoudre("accueil", null).listes.cartes.find((x) => x.id === "langues")!.valeurs.texte, { mots: "20 589", themes: 52 }).includes("20 589 mots en 52 thèmes"));
+ok("carte du Truchement : nombres remplis", remplir(resoudre("accueil", null).listes.cartes.find((x) => x.id === "langues")!.valeurs.texte, { mots: "23 902", themes: 52 }).includes("23 902 mots en 52 thèmes"));
 
 console.log(e ? `\n${e} échec(s)` : "\nTout est bon.");
 process.exit(e ? 1 : 0);

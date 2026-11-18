@@ -304,5 +304,36 @@ doorman | portier | n | C1 | /ˈdɔːmən/ | The doorman opened the door. | Le p
 technologist | technologue | n | C2 | /tekˈnɒlədʒɪst/ | A food technologist tests the recipes. | Un technologue alimentaire teste les recettes.
 oncologist | oncologue | n | C2 | /ɒŋˈkɒlədʒɪst/ | She sees an oncologist every month. | Elle consulte un oncologue chaque mois.
 machinist | machiniste, opérateur | n | C2 | /məˈʃiːnɪst/ | He works as a machinist. | Il travaille comme opérateur sur machine.
+car mechanic | mécanicien automobile | n | A2 | /ˈkɑː məˌkænɪk/ | The car mechanic found the problem quickly. | Le mécanicien a trouvé la panne rapidement.
+lieutenant | lieutenant | n | B2 | /lefˈtenənt/ | The lieutenant gave the order to advance. | Le lieutenant a donné l'ordre d'avancer.
+commissioner | commissaire, haut fonctionnaire | n | C1 | /kəˈmɪʃənə/ | The police commissioner held a press conference. | Le préfet de police a tenu une conférence de presse.
+colonel | colonel | n | B2 | /ˈkɜːnl/ | The colonel inspected the troops. | Le colonel a passé les troupes en revue.
+operative | agent, ouvrier | n | C1 | /ˈɒpərətɪv/ | A secret operative was sent to the city. | Un agent secret a été envoyé dans la ville.
+trooper | soldat de cavalerie ; (US) policier | n | C2 | /ˈtruːpə/ | He swears like a trooper. | Il jure comme un charretier.
+removal man | déménageur | n | B2 | /rɪˈmuːvl mæn/ | The removal men carried the piano upstairs. | Les déménageurs ont monté le piano à l'étage.
+valet | valet ; voiturier | n | C1 | /ˈvæleɪ/ | A valet parked our car at the hotel. | Un voiturier a garé notre voiture à l'hôtel.
+digger | pelleteuse ; chercheur (d'or) | n | B2 | /ˈdɪɡə/ | A digger was clearing the building site. | Une pelleteuse déblayait le chantier.
+auctioneer | commissaire-priseur | n | C1 | /ˌɔːkʃəˈnɪə/ | The auctioneer brought down his hammer. | Le commissaire-priseur a abattu son marteau.
+postmaster | receveur des postes | n | C2 | /ˈpəʊstmɑːstə/ | The village postmaster knew everyone by name. | Le receveur des postes du village connaissait tout le monde par son nom.
+padre | aumônier (militaire) | n | C2 | /ˈpɑːdreɪ/ | The padre visited the wounded soldiers. | L'aumônier a rendu visite aux soldats blessés.
+supermodel | top-modèle | n | B2 | /ˈsuːpəmɒdl/ | She became a supermodel at eighteen. | Elle est devenue top-modèle à dix-huit ans.
+sexton | sacristain, bedeau | n | C2 | /ˈsekstən/ | The sexton rang the church bell. | Le sacristain a sonné la cloche.
+matron | infirmière-chef, intendante | n | C1 | /ˈmeɪtrən/ | The school matron looked after sick boarders. | L'intendante de l'école soignait les pensionnaires malades.
+fitter | monteur, ajusteur | n | C1 | /ˈfɪtə/ | A gas fitter came to install the boiler. | Un installateur est venu poser la chaudière.
+key cutting | reproduction de clés | n | B2 | /ˈkiː ˌkʌtɪŋ/ | The shoe repair shop also does key cutting. | Le cordonnier fait aussi la reproduction de clés.
+shoe repair | cordonnerie | n | B1 | /ˈʃuː rɪˌpeə/ | Take your boots to the shoe repair shop. | Apporte tes bottes chez le cordonnier.
+sorting office | centre de tri (postal) | n | C1 | /ˈsɔːtɪŋ ˌɒfɪs/ | Collect your parcel from the sorting office. | Récupère ton colis au centre de tri.
+mailbag | sac postal | n | B2 | /ˈmeɪlbæɡ/ | The postman emptied his mailbag. | Le facteur a vidé son sac postal.
+postwoman | factrice | n | A2 | /ˈpəʊstwʊmən/ | The postwoman brought a parcel. | La factrice a apporté un colis.
+forester | garde forestier, forestier | n | C1 | /ˈfɒrɪstə/ | The forester marked the trees to be cut. | Le forestier a marqué les arbres à abattre.
+aviator | aviateur | n | C1 | /ˈeɪvieɪtə/ | Amelia Earhart was a famous aviator. | Amelia Earhart était une aviatrice célèbre.
+constructor | constructeur | n | C1 | /kənˈstrʌktə/ | The team won the constructors' championship. | L'écurie a remporté le championnat des constructeurs.
+chimney sweep | ramoneur | n | B2 | /ˈtʃɪmni swiːp/ | The chimney sweep comes every autumn. | Le ramoneur passe chaque automne.
+head waiter | maître d'hôtel | n | B1 | /ˌhed ˈweɪtə/ | The head waiter showed us to our table. | Le maître d'hôtel nous a conduits à notre table.
+sous-chef | second de cuisine, sous-chef | n | B2 | /ˈsuː ʃef/ | The sous-chef runs the kitchen on Mondays. | Le second de cuisine dirige la cuisine le lundi.
+food critic | critique gastronomique | n | B1 | /ˈfuːd ˌkrɪtɪk/ | A famous food critic praised the restaurant. | Un célèbre critique gastronomique a encensé le restaurant.
+coal miner | mineur de charbon | n | B2 | /ˈkəʊl ˌmaɪnə/ | His grandfather was a coal miner in Wales. | Son grand-père était mineur de charbon au pays de Galles.
+mailman | facteur (US) | n | A2 | /ˈmeɪlmæn/ | The mailman comes at ten every morning. | Le facteur passe tous les matins à dix heures.
+realtor | agent immobilier (US) | n | B2 | /ˈriːəltə/ | Our realtor found us a house in two weeks. | Notre agent immobilier nous a trouvé une maison en deux semaines.
 `,
 );

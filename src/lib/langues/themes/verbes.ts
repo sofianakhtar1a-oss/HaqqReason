@@ -1097,5 +1097,91 @@ to ascribe | attribuer | v | C2 | /əˈskraɪb/ | This saying is wrongly ascribe
 to clothe | vêtir, habiller | v | C2 | /kləʊð/ | The charity clothes and feeds orphans. | L'association habille et nourrit des orphelins.
 to ricochet | ricocher | v | C2 | /ˈrɪkəʃeɪ/ | The ball ricochets off the wall. | La balle ricoche sur le mur.
 to waver | vaciller, hésiter | v | C1 | /ˈweɪvə/ | His faith never wavers. | Sa foi ne vacille jamais.
+to dodge | esquiver, éviter | v | B2 | /dɒdʒ/ | He dodged the question. | Il a esquivé la question.
+to trim | tailler, rafraîchir ; réduire | v | B2 | /trɪm/ | I need to trim the hedge. | Il faut que je taille la haie.
+to tow | remorquer | v | B2 | /təʊ/ | The car was towed away by the police. | La voiture a été emmenée à la fourrière.
+to smack | donner une tape, gifler | v | B2 | /smæk/ | Parents shouldn't smack their children. | Les parents ne devraient pas donner de fessées à leurs enfants.
+to crank | tourner (une manivelle) | v | C1 | /kræŋk/ | He cranked the old engine into life. | Il a démarré le vieux moteur à la manivelle.
+to swat | écraser (un insecte) | v | C1 | /swɒt/ | He swatted the fly with a newspaper. | Il a écrasé la mouche avec un journal.
+to parry | parer, esquiver | v | C1 | /ˈpæri/ | She parried his questions with a smile. | Elle a esquivé ses questions avec un sourire.
+to tack | punaiser ; louvoyer | v | C1 | /tæk/ | She tacked the notice to the board. | Elle a punaisé l'avis au tableau.
+to dab | tamponner, appliquer par petites touches | v | B2 | /dæb/ | She dabbed her eyes with a tissue. | Elle s'est tamponné les yeux avec un mouchoir.
+to taper | (s')effiler, diminuer progressivement | v | C1 | /ˈteɪpə/ | The trousers taper at the ankle. | Le pantalon s'affine à la cheville.
+to tout | racoler ; vanter | v | C1 | /taʊt/ | Taxi drivers touted for business outside the station. | Les chauffeurs de taxi racolaient les clients devant la gare.
+to hone | aiguiser, perfectionner | v | C1 | /həʊn/ | She honed her skills in a top restaurant. | Elle a perfectionné son savoir-faire dans un grand restaurant.
+to lug | traîner, trimballer | v | C1 | /lʌɡ/ | I had to lug my suitcase up five floors. | J'ai dû trimballer ma valise sur cinq étages.
+to pry | fouiner ; forcer (une ouverture) | v | C1 | /praɪ/ | I didn't mean to pry into your private life. | Je ne voulais pas fouiner dans ta vie privée.
+to snort | grogner, renifler bruyamment | v | C1 | /snɔːt/ | She snorted with laughter. | Elle a pouffé de rire bruyamment.
+to yank | tirer d'un coup sec | v | B2 | /jæŋk/ | She yanked the door open. | Elle a ouvert la porte d'un coup sec.
+to stifle | étouffer, réprimer | v | C1 | /ˈstaɪfl/ | She stifled a yawn. | Elle a étouffé un bâillement.
+to stonewall | faire de l'obstruction, éluder | v | C2 | /ˈstəʊnwɔːl/ | The minister stonewalled every question. | Le ministre a éludé toutes les questions.
+to nestle | (se) nicher, se blottir | v | C1 | /ˈnesl/ | The village nestles in the valley. | Le village est niché dans la vallée.
+to frustrate | contrarier, faire échouer | v | B2 | /frʌˈstreɪt/ | The bad weather frustrated our plans. | Le mauvais temps a contrarié nos projets.
+to taint | entacher, contaminer | v | C1 | /teɪnt/ | The scandal tainted his reputation. | Le scandale a entaché sa réputation.
+to outnumber | être plus nombreux que | v | C1 | /ˌaʊtˈnʌmbə/ | Women outnumber men in the class. | Les femmes sont plus nombreuses que les hommes dans la classe.
+to flatten | aplatir, raser | v | B2 | /ˈflætn/ | The storm flattened the crops. | La tempête a couché les cultures.
+to make an effort | faire un effort | expr | A2 | /meɪk ən ˈefət/ | You must make an effort to be on time. | Tu dois faire un effort pour être à l'heure.
+to make a choice | faire un choix | expr | A2 | /meɪk ə ˈtʃɔɪs/ | It's hard to make a choice between them. | C'est difficile de choisir entre eux.
+to make progress | faire des progrès | expr | A2 | /meɪk ˈprəʊɡres/ | You're making great progress in English. | Tu fais de gros progrès en anglais.
+to make a difference | faire la différence, changer les choses | expr | B1 | /meɪk ə ˈdɪfrəns/ | Small actions can make a difference. | Les petits gestes peuvent changer les choses.
+to spend time | passer du temps | expr | A1 | /spend ˈtaɪm/ | I like to spend time with my family. | J'aime passer du temps avec ma famille.
+to take a look | jeter un coup d'œil | expr | A2 | /teɪk ə ˈlʊk/ | Can you take a look at my car? | Tu peux jeter un coup d'œil à ma voiture ?
+to give advice | donner des conseils | expr | A2 | /ɡɪv ədˈvaɪs/ | My grandmother loves to give advice. | Ma grand-mère adore donner des conseils.
+to give a speech | faire un discours | expr | B1 | /ɡɪv ə ˈspiːtʃ/ | The best man has to give a speech. | Le témoin doit faire un discours.
+to keep a secret | garder un secret | expr | A2 | /kiːp ə ˈsiːkrət/ | Can you keep a secret? | Tu sais garder un secret ?
+to ask a favour | demander un service | expr | B1 | /ɑːsk ə ˈfeɪvə/ | Can I ask a favour? | Je peux te demander un service ?
+to do someone a favour | rendre service à quelqu'un | expr | B1 | /duː ˌsʌmwʌn ə ˈfeɪvə/ | Could you do me a favour and post this letter? | Tu peux me rendre service et poster cette lettre ?
+to do damage | causer des dégâts | expr | B2 | /duː ˈdæmɪdʒ/ | Strong winds can do a lot of damage to roofs. | Les vents violents peuvent causer beaucoup de dégâts aux toits.
+to do good | faire du bien | expr | B1 | /duː ˈɡʊd/ | A holiday will do you good. | Des vacances te feront du bien.
+to make a suggestion | faire une suggestion | expr | A2 | /meɪk ə səˈdʒestʃən/ | Can I make a suggestion? | Je peux faire une suggestion ?
+to make an excuse | trouver une excuse | expr | B1 | /meɪk ən ɪkˈskjuːs/ | He always makes an excuse to leave early. | Il trouve toujours une excuse pour partir tôt.
+to make a promise | faire une promesse | expr | A2 | /meɪk ə ˈprɒmɪs/ | Don't make a promise you can't keep. | Ne fais pas de promesse que tu ne peux pas tenir.
+to make plans | faire des projets, prévoir | expr | A2 | /meɪk ˈplænz/ | Let's make plans for the weekend. | Faisons des projets pour le week-end.
+to make a wish | faire un vœu | expr | A2 | /meɪk ə ˈwɪʃ/ | Blow out the candles and make a wish. | Souffle les bougies et fais un vœu.
+to make a noise | faire du bruit | expr | A1 | /meɪk ə ˈnɔɪz/ | Try not to make a noise when you come in. | Essaie de ne pas faire de bruit en rentrant.
+to make room | faire de la place | expr | B1 | /meɪk ˈruːm/ | Can you make room for one more? | Tu peux faire de la place pour une personne de plus ?
+to make way for | céder la place à | expr | B2 | /meɪk ˈweɪ fə/ | The old houses were demolished to make way for a road. | Les vieilles maisons ont été démolies pour faire place à une route.
+to make a start | commencer, s'y mettre | expr | B1 | /meɪk ə ˈstɑːt/ | Let's make a start on the cleaning. | Mettons-nous au ménage.
+to make an exception | faire une exception | expr | B1 | /meɪk ən ɪkˈsepʃn/ | We don't usually do this, but we'll make an exception. | D'habitude, on ne fait pas ça, mais on va faire une exception.
+to make a point | souligner, faire une remarque | expr | B2 | /meɪk ə ˈpɔɪnt/ | You make a good point about the costs. | Tu soulèves un point important sur les coûts.
+to make arrangements | prendre des dispositions | expr | B2 | /meɪk əˈreɪndʒmənts/ | We need to make arrangements for the funeral. | Il faut prendre des dispositions pour les obsèques.
+to make contact | prendre contact | expr | B2 | /meɪk ˈkɒntækt/ | The rescuers are trying to make contact with the climbers. | Les secouristes essaient d'établir le contact avec les alpinistes.
+to take action | agir, prendre des mesures | expr | B1 | /teɪk ˈækʃn/ | We must take action now. | Nous devons agir maintenant.
+to take advantage of | profiter de | expr | B1 | /teɪk ədˈvɑːntɪdʒ əv/ | Take advantage of the good weather. | Profite du beau temps.
+to take risks | prendre des risques | expr | B1 | /teɪk ˈrɪsks/ | Successful people are not afraid to take risks. | Les gens qui réussissent n'ont pas peur de prendre des risques.
+to take a chance | tenter sa chance | expr | B1 | /teɪk ə ˈtʃɑːns/ | Take a chance and apply for the job. | Tente ta chance et postule.
+to take responsibility | assumer la responsabilité | expr | B2 | /teɪk rɪˌspɒnsəˈbɪləti/ | You must take responsibility for your actions. | Tu dois assumer la responsabilité de tes actes.
+to take control | prendre le contrôle | expr | B1 | /teɪk kənˈtrəʊl/ | It's time to take control of your life. | Il est temps de prendre ta vie en main.
+to take charge | prendre les choses en main | expr | B2 | /teɪk ˈtʃɑːdʒ/ | When the boss is away, she takes charge. | Quand la patronne est absente, elle prend les choses en main.
+to take steps | prendre des mesures | expr | B2 | /teɪk ˈsteps/ | The council is taking steps to reduce traffic. | La mairie prend des mesures pour réduire la circulation.
+to take a stand | prendre position | expr | C1 | /teɪk ə ˈstænd/ | It's time to take a stand against bullying. | Il est temps de prendre position contre le harcèlement.
+to take the blame | endosser la responsabilité | expr | B2 | /teɪk ðə ˈbleɪm/ | Why should I take the blame for your mistake? | Pourquoi devrais-je porter le chapeau pour ton erreur ?
+to take the credit | s'attribuer le mérite | expr | B2 | /teɪk ðə ˈkredɪt/ | He always takes the credit for our work. | Il s'attribue toujours le mérite de notre travail.
+to make a request | faire une demande | expr | B1 | /meɪk ə rɪˈkwest/ | You can make a request by email. | Vous pouvez faire une demande par e-mail.
+to take a step | faire un pas | expr | A2 | /teɪk ə ˈstep/ | Take a step forward, please. | Faites un pas en avant, s'il vous plaît.
+to have a think | réfléchir (un moment) | expr | B2 | /hæv ə ˈθɪŋk/ | Let me have a think and I'll call you back. | Laisse-moi réfléchir et je te rappelle.
+to keep still | rester immobile, ne pas bouger | expr | B1 | /kiːp ˈstɪl/ | Keep still while I take the photo. | Ne bouge pas pendant que je prends la photo.
+to catch sight of | apercevoir | expr | B2 | /kætʃ ˈsaɪt əv/ | We waited at the window to catch sight of the parade. | Nous attendions à la fenêtre pour apercevoir le défilé.
+to break the silence | rompre le silence | expr | B2 | /breɪk ðə ˈsaɪləns/ | A child's laugh was the first thing to break the silence. | Le rire d'un enfant a été le premier à rompre le silence.
+to pay the price | en payer le prix | expr | B2 | /peɪ ðə ˈpraɪs/ | If you don't sleep, you'll pay the price tomorrow. | Si tu ne dors pas, tu en paieras le prix demain.
+to lose control | perdre le contrôle | expr | B1 | /luːz kənˈtrəʊl/ | The driver lost control of the car on the ice. | Le conducteur a perdu le contrôle de la voiture sur le verglas.
+to raise a question | soulever une question | expr | B2 | /reɪz ə ˈkwestʃən/ | Your report raises an important question. | Ton rapport soulève une question importante.
+to draw a conclusion | tirer une conclusion | expr | B2 | /drɔː ə kənˈkluːʒn/ | It's too early to draw a conclusion. | Il est trop tôt pour tirer une conclusion.
+to draw attention to | attirer l'attention sur | expr | B2 | /drɔː əˈtenʃn tə/ | The report draws attention to the lack of doctors. | Le rapport attire l'attention sur le manque de médecins.
+to tell the difference | faire la différence, distinguer | expr | B1 | /tel ðə ˈdɪfrəns/ | I can't tell the difference between the twins. | Je n'arrive pas à distinguer les jumeaux.
+to play a role | jouer un rôle | expr | B1 | /pleɪ ə ˈrəʊl/ | Sleep plays a big role in your health. | Le sommeil joue un grand rôle dans la santé.
+to miss an opportunity | rater une occasion | expr | B1 | /mɪs ən ˌɒpəˈtjuːnəti/ | Don't miss this opportunity to travel. | Ne rate pas cette occasion de voyager.
+to seize the opportunity | saisir l'occasion | expr | B2 | /siːz ði ˌɒpəˈtjuːnəti/ | She seized the opportunity to study abroad. | Elle a saisi l'occasion d'étudier à l'étranger.
+to take notice of | prêter attention à, tenir compte de | expr | B2 | /teɪk ˈnəʊtɪs əv/ | Nobody takes notice of the warning signs. | Personne ne prête attention aux panneaux d'avertissement.
+to take shape | prendre forme | expr | B2 | /teɪk ˈʃeɪp/ | The new building is starting to take shape. | Le nouveau bâtiment commence à prendre forme.
+to take into account | prendre en compte | expr | B2 | /teɪk ˌɪntʊ əˈkaʊnt/ | We must take the weather into account. | Nous devons prendre la météo en compte.
+to take a guess | essayer de deviner | expr | B1 | /teɪk ə ˈɡes/ | Take a guess: how old is she? | Devine : quel âge a-t-elle ?
+to insert | insérer | v | B2 | /ɪnˈsɜːt/ | Insert your card and enter your code. | Insérez votre carte et composez votre code.
+to firmly believe | croire fermement | expr | B2 | /ˌfɜːmli bɪˈliːv/ | I firmly believe that education is the key. | Je crois fermement que l'éducation est la clé.
+to vaguely remember | se souvenir vaguement | expr | B2 | /ˌveɪɡli rɪˈmembə/ | I vaguely remember meeting him once. | Je me souviens vaguement de l'avoir rencontré une fois.
+quick question | petite question | n | B1 | /ˌkwɪk ˈkwestʃən/ | Can I ask you a quick question? | Je peux te poser une petite question ?
+rough idea | idée approximative | n | B2 | /ˌrʌf aɪˈdɪə/ | Can you give me a rough idea of the price? | Tu peux me donner une idée approximative du prix ?
+tough decision | décision difficile | n | B1 | /ˌtʌf dɪˈsɪʒn/ | Leaving home was a tough decision. | Quitter la maison a été une décision difficile.
+to solve a problem | résoudre un problème | expr | A2 | /ˌsɒlv ə ˈprɒbləm/ | Can you help me solve this problem? | Tu peux m'aider à résoudre ce problème ?
 `,
 );

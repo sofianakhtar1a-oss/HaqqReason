@@ -370,5 +370,51 @@ pre-emptive | préventif | adj | C2 | /priˈemptɪv/ | They launched a pre-empti
 scuffle | bagarre, échauffourée | n | C1 | /ˈskʌfl/ | A scuffle broke out outside. | Une bagarre a éclaté dehors.
 strangulation | strangulation | n | C2 | /ˌstræŋɡjuˈleɪʃn/ | The victim died by strangulation. | La victime est morte par strangulation.
 battlefront | front | n | C2 | /ˈbætlfrʌnt/ | News came from the battlefront. | Des nouvelles sont arrivées du front.
+fire blanket | couverture anti-feu | n | B2 | /ˈfaɪə ˌblæŋkɪt/ | Every kitchen should have a fire blanket. | Chaque cuisine devrait avoir une couverture anti-feu.
+door chain | chaîne de sûreté | n | B2 | /ˈdɔː tʃeɪn/ | She opened the door with the door chain on. | Elle a ouvert la porte en laissant la chaîne de sûreté.
+deadbolt | verrou de sécurité | n | C1 | /ˈdedbəʊlt/ | We fitted a deadbolt on the back door. | Nous avons posé un verrou de sécurité sur la porte de derrière.
+security light | éclairage à détecteur | n | B2 | /sɪˈkjʊərəti laɪt/ | The security light comes on when someone walks past. | L'éclairage à détecteur s'allume quand quelqu'un passe.
+CCTV camera | caméra de vidéosurveillance | n | B2 | /ˌsiː siː tiː ˈviː ˌkæmərə/ | A CCTV camera filmed the whole incident. | Une caméra de vidéosurveillance a filmé tout l'incident.
+car alarm | alarme de voiture | n | A2 | /ˈkɑːr əˌlɑːm/ | A car alarm went off in the middle of the night. | Une alarme de voiture s'est déclenchée en pleine nuit.
+car seat | siège auto | n | A2 | /ˈkɑː siːt/ | Babies must travel in a car seat. | Les bébés doivent voyager dans un siège auto.
+booster seat | rehausseur | n | B2 | /ˈbuːstə siːt/ | My daughter still needs a booster seat. | Ma fille a encore besoin d'un rehausseur.
+cyber attack | cyberattaque | n | B2 | /ˈsaɪbər əˌtæk/ | The hospital was hit by a cyber attack. | L'hôpital a subi une cyberattaque.
+raid | raid, descente (de police) | n | B2 | /reɪd/ | The police carried out a dawn raid. | La police a mené une descente à l'aube.
+launcher | lanceur, lance-roquettes | n | C1 | /ˈlɔːntʃə/ | The rocket launcher was hidden in a lorry. | Le lance-roquettes était caché dans un camion.
+crossfire | tirs croisés | n | C1 | /ˈkrɒsfaɪə/ | The journalist was caught in the crossfire. | Le journaliste a été pris entre deux feux.
+ejection seat | siège éjectable | n | C1 | /ɪˈdʒekʃn siːt/ | The pilot escaped using his ejection seat. | Le pilote s'en est sorti grâce à son siège éjectable.
+reflector | catadioptre, réflecteur | n | B2 | /rɪˈflektə/ | Bikes must have a rear reflector. | Les vélos doivent avoir un catadioptre arrière.
+booby trap | piège (explosif) ; farce piégée | n | C1 | /ˈbuːbi træp/ | The soldiers found a booby trap in the road. | Les soldats ont trouvé un engin piégé sur la route.
+precautionary | préventif, de précaution | adj | C1 | /prɪˈkɔːʃənəri/ | The school was closed as a precautionary measure. | L'école a été fermée par mesure de précaution.
+to detonate | faire exploser, détoner | v | C1 | /ˈdetəneɪt/ | The bomb was detonated by remote control. | La bombe a été déclenchée à distance.
+sprinkler system | système d'extinction automatique | n | B2 | /ˈsprɪŋklə ˌsɪstəm/ | The sprinkler system put out the fire. | Le système d'extinction automatique a éteint le feu.
+fire door | porte coupe-feu | n | B2 | /ˈfaɪə dɔː/ | Keep fire doors closed at all times. | Garde les portes coupe-feu toujours fermées.
+swipe card | carte magnétique | n | B2 | /ˈswaɪp kɑːd/ | You need a swipe card to enter the building. | Il faut une carte magnétique pour entrer dans l'immeuble.
+fire hydrant | bouche d'incendie | n | B2 | /ˈfaɪə ˌhaɪdrənt/ | Don't park in front of the fire hydrant. | Ne te gare pas devant la bouche d'incendie.
+police van | fourgon de police | n | B1 | /pəˈliːs væn/ | The suspects were taken away in a police van. | Les suspects ont été emmenés dans un fourgon de police.
+police dog | chien policier | n | B1 | /pəˈliːs dɒɡ/ | A police dog found the drugs. | Un chien policier a trouvé la drogue.
+police custody | garde à vue | n | C1 | /pəˌliːs ˈkʌstədi/ | He spent the night in police custody. | Il a passé la nuit en garde à vue.
+police cordon | cordon de police | n | C1 | /pəˈliːs ˌkɔːdn/ | Reporters waited behind the police cordon. | Les journalistes attendaient derrière le cordon de police.
+night watchman | veilleur de nuit | n | B2 | /ˌnaɪt ˈwɒtʃmən/ | The night watchman heard a noise. | Le veilleur de nuit a entendu un bruit.
+on the beat | en patrouille (à pied) | expr | C1 | /ɒn ðə ˈbiːt/ | We need more police officers on the beat. | Il faut plus de policiers en patrouille dans les rues.
+plain-clothes | en civil | adj | B2 | /ˌpleɪn ˈkləʊðz/ | Two plain-clothes officers followed him. | Deux policiers en civil l'ont suivi.
+truncheon | matraque | n | C1 | /ˈtrʌntʃən/ | The officer drew his truncheon. | Le policier a sorti sa matraque.
+riot shield | bouclier antiémeute | n | C1 | /ˈraɪət ʃiːld/ | Police lined up behind riot shields. | Les policiers se sont alignés derrière leurs boucliers.
+tear gas | gaz lacrymogène | n | B2 | /ˈtɪə ɡæs/ | The police fired tear gas at the crowd. | La police a tiré des gaz lacrymogènes sur la foule.
+rubber bullet | balle en caoutchouc | n | C1 | /ˌrʌbə ˈbʊlɪt/ | A protester was hit by a rubber bullet. | Un manifestant a été touché par une balle en caoutchouc.
+water cannon | canon à eau | n | C1 | /ˈwɔːtə ˌkænən/ | Water cannon were used to break up the riot. | Des canons à eau ont été utilisés pour disperser l'émeute.
+fire safety | sécurité incendie | n | B1 | /ˈfaɪə ˌseɪfti/ | All staff get fire safety training. | Tout le personnel suit une formation à la sécurité incendie.
+safe from | à l'abri de | adj | B1 | /ˈseɪf frəm/ | The children are safe from the storm inside. | À l'intérieur, les enfants sont à l'abri de la tempête.
+to set fire to | mettre le feu à | expr | B1 | /set ˈfaɪə tə/ | Someone tried to set fire to the old barn. | Quelqu'un a essayé de mettre le feu à la vieille grange.
+to take cover | se mettre à l'abri | expr | B2 | /teɪk ˈkʌvə/ | Take cover, the storm is coming! | Mettez-vous à l'abri, l'orage arrive !
+to take someone hostage | prendre quelqu'un en otage | expr | B2 | /teɪk ˌsʌmwʌn ˈhɒstɪdʒ/ | The robbers threatened to take the staff hostage. | Les braqueurs ont menacé de prendre le personnel en otage.
+in danger | en danger | adj | A2 | /ɪn ˈdeɪndʒə/ | Many animals are in danger because of hunting. | De nombreux animaux sont en danger à cause de la chasse.
+on fire | en feu | adj | A2 | /ɒn ˈfaɪə/ | Call the fire brigade, the house is on fire! | Appelle les pompiers, la maison est en feu !
+on the loose | en liberté (et dangereux) | adj | C1 | /ɒn ðə ˈluːs/ | A lion is on the loose after escaping from the zoo. | Un lion est en liberté après s'être échappé du zoo.
+off limits | interdit d'accès | adj | B2 | /ˌɒf ˈlɪmɪts/ | The roof is off limits to pupils. | Le toit est interdit d'accès aux élèves.
+fatal accident | accident mortel | n | B2 | /ˌfeɪtl ˈæksɪdənt/ | There was a fatal accident on the motorway. | Il y a eu un accident mortel sur l'autoroute.
+narrow escape | fait de l'échapper belle | n | C1 | /ˌnærəʊ ɪˈskeɪp/ | We had a narrow escape when the tree fell. | Nous l'avons échappé belle quand l'arbre est tombé.
+top-secret | strictement confidentiel, top secret | adj | B2 | /ˌtɒp ˈsiːkrət/ | The documents were top-secret. | Les documents étaient strictement confidentiels.
+to pose a threat | représenter une menace | expr | C1 | /ˌpəʊz ə ˈθret/ | Rising sea levels pose a threat to coastal towns. | La montée des eaux représente une menace pour les villes côtières.
 `,
 );

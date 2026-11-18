@@ -423,6 +423,77 @@ postscript | post-scriptum | n | C1 | /ˈpəʊstskrɪpt/ | She added a postscrip
 readability | lisibilité | n | C1 | /ˌriːdəˈbɪləti/ | Short sentences improve readability. | Les phrases courtes améliorent la lisibilité.
 rubric | consignes ; grille d'évaluation | n | C2 | /ˈruːbrɪk/ | Read the rubric before answering. | Lis les consignes avant de répondre.
 schoolmaster | maître d'école | n | C2 | /ˈskuːlmɑːstə/ | The old schoolmaster taught three generations. | Le vieux maître d'école a instruit trois générations.
+to take the register | faire l'appel | expr | B1 | /teɪk ðə ˈredʒɪstə/ | The teacher takes the register at nine. | Le professeur fait l'appel à neuf heures.
+pencil sharpener | taille-crayon | n | A1 | /ˈpensl ˌʃɑːpənə/ | Can I borrow your pencil sharpener? | Je peux t'emprunter ton taille-crayon ?
+biro | stylo-bille, bic | n | B1 | /ˈbaɪrəʊ/ | Fill in the form in black biro. | Remplis le formulaire au stylo noir.
+fountain pen | stylo plume | n | A2 | /ˈfaʊntən pen/ | She writes her letters with a fountain pen. | Elle écrit ses lettres au stylo plume.
+ring binder | classeur (à anneaux) | n | B1 | /ˈrɪŋ ˌbaɪndə/ | Keep your notes in a ring binder. | Range tes notes dans un classeur.
+hole punch | perforatrice | n | B1 | /ˈhəʊl pʌntʃ/ | Use the hole punch before filing the sheets. | Utilise la perforatrice avant de classer les feuilles.
+paper clip | trombone | n | A2 | /ˈpeɪpə klɪp/ | Hold the pages together with a paper clip. | Attache les pages avec un trombone.
+drawing pin | punaise | n | A2 | /ˈdrɔːɪŋ pɪn/ | Pin the poster up with four drawing pins. | Fixe l'affiche avec quatre punaises.
+sticky tape | ruban adhésif, scotch | n | A2 | /ˈstɪki teɪp/ | Wrap the present and close it with sticky tape. | Emballe le cadeau et ferme-le avec du ruban adhésif.
+interactive whiteboard | tableau blanc interactif | n | B1 | /ˌɪntəræktɪv ˈwaɪtbɔːd/ | Every classroom has an interactive whiteboard. | Chaque classe a un tableau blanc interactif.
+pass mark | moyenne (note minimale pour réussir) | n | B2 | /ˈpɑːs mɑːk/ | The pass mark is fifty per cent. | Il faut cinquante pour cent pour réussir.
+form tutor | professeur principal | n | B2 | /ˈfɔːm ˌtjuːtə/ | Talk to your form tutor if you have a problem. | Parle à ton professeur principal si tu as un problème.
+fresher | étudiant de première année | n | B2 | /ˈfreʃə/ | Freshers' week is full of parties and events. | La semaine d'intégration est pleine de fêtes et d'activités.
+students' union | association des étudiants, foyer étudiant | n | B2 | /ˌstjuːdnts ˈjuːniən/ | Let's meet in the students' union bar. | Retrouvons-nous au foyer des étudiants.
+bursary | bourse (d'études) | n | C1 | /ˈbɜːsəri/ | She received a bursary to cover her fees. | Elle a obtenu une bourse pour payer ses frais de scolarité.
+sixth form | classes de première et terminale | n | B2 | /ˈsɪksθ fɔːm/ | He's in the sixth form, studying for his final exams. | Il est au lycée et prépare ses examens de fin d'études.
+public school | école privée prestigieuse (en Angleterre) | n | C1 | /ˌpʌblɪk ˈskuːl/ | In England, a public school is in fact a private one. | En Angleterre, une « public school » est en réalité une école privée.
+computing | informatique (matière) | n | B1 | /kəmˈpjuːtɪŋ/ | She's doing a degree in computing. | Elle fait une licence d'informatique.
+times table | table de multiplication | n | A2 | /ˈtaɪmz ˌteɪbl/ | The children are learning their seven times table. | Les enfants apprennent leur table de sept.
+invigilator | surveillant d'examen | n | C1 | /ɪnˈvɪdʒɪleɪtə/ | The invigilator told us to stop writing. | Le surveillant nous a dit de poser nos stylos.
+exam paper | sujet d'examen, copie | n | B1 | /ɪɡˈzæm ˌpeɪpə/ | Read the whole exam paper before you start. | Lis tout le sujet avant de commencer.
+answer sheet | feuille de réponses | n | B1 | /ˈɑːnsə ʃiːt/ | Write your name at the top of the answer sheet. | Écris ton nom en haut de la feuille de réponses.
+multiple choice | à choix multiples | adj | B1 | /ˌmʌltɪpl ˈtʃɔɪs/ | The test is multiple choice. | Le test est un questionnaire à choix multiples.
+adjunct | accessoire ; complément (grammaire) | n | C2 | /ˈædʒʌŋkt/ | In this sentence, "yesterday" is an adjunct. | Dans cette phrase, « hier » est un complément circonstanciel.
+provost | doyen, recteur | n | C2 | /ˈprɒvəst/ | The provost welcomed the new students. | Le doyen a accueilli les nouveaux étudiants.
+exclamation | exclamation | n | B2 | /ˌekskləˈmeɪʃn/ | She gave an exclamation of surprise. | Elle a poussé une exclamation de surprise.
+nib | plume (d'un stylo) | n | C1 | /nɪb/ | The nib of my fountain pen is bent. | La plume de mon stylo est tordue.
+crayon | crayon de couleur (gras) | n | A2 | /ˈkreɪən/ | The children drew with wax crayons. | Les enfants ont dessiné avec des crayons gras.
+stipend | allocation, traitement | n | C2 | /ˈstaɪpend/ | Research students receive a small stipend. | Les doctorants perçoivent une petite allocation.
+braille | braille | n | B2 | /breɪl/ | The lift buttons have braille on them. | Les boutons de l'ascenseur sont en braille.
+school reunion | retrouvailles d'anciens élèves | n | B1 | /ˈskuːl riːˌjuːniən/ | I met old friends at our school reunion. | J'ai revu de vieux amis aux retrouvailles des anciens élèves.
+night school | cours du soir | n | B1 | /ˈnaɪt skuːl/ | He learnt Spanish at night school. | Il a appris l'espagnol en cours du soir.
+private lesson | cours particulier | n | B1 | /ˌpraɪvət ˈlesn/ | She gives private lessons in maths. | Elle donne des cours particuliers de maths.
+tutoring | soutien scolaire | n | B1 | /ˈtjuːtərɪŋ/ | He needs some tutoring in physics. | Il a besoin de soutien en physique.
+after-school club | activité périscolaire, garderie | n | B1 | /ˌɑːftə ˈskuːl klʌb/ | She picks her son up from the after-school club. | Elle récupère son fils à la garderie après l'école.
+instructive | instructif | adj | C1 | /ɪnˈstrʌktɪv/ | The visit to the museum was very instructive. | La visite du musée a été très instructive.
+learning disability | trouble de l'apprentissage | n | C1 | /ˈlɜːnɪŋ dɪsəˌbɪləti/ | The school supports pupils with learning disabilities. | L'école accompagne les élèves ayant des troubles de l'apprentissage.
+attention span | capacité de concentration | n | B2 | /əˈtenʃn spæn/ | Young children have a short attention span. | Les jeunes enfants ont une capacité de concentration limitée.
+reading list | liste de lectures | n | B1 | /ˈriːdɪŋ lɪst/ | The professor gave us a long reading list. | Le professeur nous a donné une longue liste de lectures.
+felt tip | feutre | n | A2 | /ˌfelt ˈtɪp/ | She coloured the map with felt tips. | Elle a colorié la carte aux feutres.
+colouring pencils | crayons de couleur | n | A1 | /ˈkʌlərɪŋ ˌpenslz/ | Bring your colouring pencils to class. | Apporte tes crayons de couleur en classe.
+school gate | portail de l'école | n | A2 | /ˌskuːl ˈɡeɪt/ | Parents chat at the school gate. | Les parents discutent devant le portail de l'école.
+school bus | car scolaire | n | A2 | /ˈskuːl bʌs/ | The school bus leaves at eight. | Le car scolaire part à huit heures.
+lollipop lady | dame qui fait traverser les enfants | n | B2 | /ˈlɒlipɒp ˌleɪdi/ | The lollipop lady helps the children cross the road. | La dame au panneau aide les enfants à traverser.
+dining hall | réfectoire | n | B1 | /ˈdaɪnɪŋ hɔːl/ | Lunch is served in the dining hall. | Le déjeuner est servi au réfectoire.
+tuck shop | petite boutique de friandises (dans une école) | n | B2 | /ˈtʌk ʃɒp/ | The children bought crisps at the tuck shop. | Les enfants ont acheté des chips à la boutique de l'école.
+to do your homework | faire ses devoirs | expr | A1 | /duː jə ˈhəʊmwɜːk/ | Do your homework before you play. | Fais tes devoirs avant de jouer.
+to do a course | suivre une formation | expr | A2 | /duː ə ˈkɔːs/ | I'm doing a course in photography. | Je suis une formation en photographie.
+to do a degree | faire des études supérieures, préparer un diplôme | expr | B1 | /duː ə dɪˈɡriː/ | She wants to do a degree in law. | Elle veut faire des études de droit.
+to do research | faire des recherches | expr | B1 | /duː rɪˈsɜːtʃ/ | She's doing research on bees. | Elle fait des recherches sur les abeilles.
+to do the maths | faire le calcul | expr | B2 | /duː ðə ˈmæθs/ | Do the maths: we can't afford it. | Fais le calcul : on n'en a pas les moyens.
+to take an exam | passer un examen | expr | A2 | /teɪk ən ɪɡˈzæm/ | I'm taking an exam on Monday. | Je passe un examen lundi.
+could you repeat that | pourriez-vous répéter ? | expr | A1 | /kʊd juː rɪˈpiːt ðæt/ | Sorry, could you repeat that, please? | Pardon, pourriez-vous répéter, s'il vous plaît ?
+I don't understand | je ne comprends pas | expr | A1 | /aɪ ˌdəʊnt ˌʌndəˈstænd/ | Sorry, I don't understand the question. | Désolé, je ne comprends pas la question.
+I don't know | je ne sais pas | expr | A1 | /aɪ ˌdəʊnt ˈnəʊ/ | I don't know where he lives. | Je ne sais pas où il habite.
+could you speak more slowly | pourriez-vous parler plus lentement ? | expr | A1 | /kʊd juː ˌspiːk mɔː ˈsləʊli/ | Could you speak more slowly, please? | Pourriez-vous parler plus lentement, s'il vous plaît ?
+what does it mean | qu'est-ce que ça veut dire ? | expr | A1 | /ˌwɒt dʌz ɪt ˈmiːn/ | What does this word mean? | Qu'est-ce que ce mot veut dire ?
+how do you say | comment dit-on… ? | expr | A1 | /ˌhaʊ də juː ˈseɪ/ | How do you say this in English? | Comment dit-on ça en anglais ?
+sophomore | étudiant de deuxième année (US) | n | C1 | /ˈsɒfəmɔː/ | My cousin is a sophomore at Boston University. | Mon cousin est en deuxième année à l'université de Boston.
+knowledge is power | le savoir, c'est le pouvoir | expr | A2 | /ˌnɒlɪdʒ ɪz ˈpaʊə/ | Read as much as you can: knowledge is power. | Lis autant que tu peux : le savoir, c'est le pouvoir.
+at school | à l'école | adv | A1 | /ət ˈskuːl/ | What did you learn at school today? | Qu'est-ce que tu as appris à l'école aujourd'hui ?
+in pencil | au crayon | adv | A2 | /ɪn ˈpensl/ | Write your answers in pencil. | Écris tes réponses au crayon.
+to pass an exam | réussir un examen | expr | A2 | /pɑːs ən ɪɡˈzæm/ | You need to work hard to pass an exam like this. | Il faut beaucoup travailler pour réussir un examen comme celui-là.
+to fail an exam | rater un examen, échouer à un examen | expr | A2 | /feɪl ən ɪɡˈzæm/ | Don't worry if you fail an exam; you can take it again. | Ne t'inquiète pas si tu rates un examen ; tu peux le repasser.
+halls of residence | résidence universitaire | n | B2 | /ˌhɔːlz əv ˈrezɪdəns/ | First-year students usually live in halls of residence. | Les étudiants de première année vivent généralement en résidence universitaire.
+to try hard | faire de gros efforts | expr | B1 | /traɪ ˈhɑːd/ | He's trying hard, but maths is difficult for him. | Il fait de gros efforts, mais les maths sont difficiles pour lui.
+to listen carefully | écouter attentivement | expr | A2 | /ˌlɪsn ˈkeəfəli/ | Listen carefully to the instructions. | Écoutez attentivement les consignes.
+to gain insight into | mieux comprendre, se faire une idée de | expr | C1 | /ɡeɪn ˈɪnsaɪt ˌɪntə/ | The visit helped us gain insight into village life. | La visite nous a permis de mieux comprendre la vie du village.
+high school diploma | diplôme de fin d'études secondaires (US) | n | B1 | /ˈhaɪ skuːl dɪˌpləʊmə/ | You need a high school diploma to apply. | Il faut un diplôme de fin d'études secondaires pour postuler.
+middle school | collège (US) | n | A2 | /ˈmɪdl skuːl/ | My daughter starts middle school in September. | Ma fille entre au collège en septembre.
+elementary school | école primaire (US) | n | A2 | /ˌelɪˈmentri skuːl/ | He teaches at an elementary school in Chicago. | Il enseigne dans une école primaire à Chicago.
 `,
 );
 
@@ -670,6 +741,34 @@ viaduct | viaduc | n | C2 | /ˈvaɪədʌkt/ | The train crossed the viaduct. | L
 riverfront | bord de rivière, quais | n | C1 | /ˈrɪvəfrʌnt/ | We walked along the riverfront. | Nous avons marché le long des quais.
 alleyway | ruelle | n | B2 | /ˈæliweɪ/ | The alleyways of the medina are narrow. | Les ruelles de la médina sont étroites.
 manhole | bouche d'égout | n | C1 | /ˈmænhəʊl/ | The manhole cover was missing. | La plaque d'égout avait disparu.
+bollard | borne, potelet | n | C1 | /ˈbɒlɑːd/ | Bollards stop cars driving onto the square. | Des potelets empêchent les voitures d'entrer sur la place.
+office block | immeuble de bureaux | n | B1 | /ˈɒfɪs blɒk/ | They're building a new office block by the station. | On construit un nouvel immeuble de bureaux près de la gare.
+building site | chantier | n | B1 | /ˈbɪldɪŋ saɪt/ | Hard hats must be worn on the building site. | Le casque est obligatoire sur le chantier.
+postbox | boîte aux lettres (publique) | n | A2 | /ˈpəʊstbɒks/ | Drop the letter in the postbox on the corner. | Mets la lettre dans la boîte au coin de la rue.
+phone box | cabine téléphonique | n | A2 | /ˈfəʊn bɒks/ | Red phone boxes are a symbol of Britain. | Les cabines rouges sont un symbole du Royaume-Uni.
+kiosk | kiosque | n | B1 | /ˈkiːɒsk/ | I bought a newspaper at the kiosk. | J'ai acheté un journal au kiosque.
+seafront | front de mer | n | B1 | /ˈsiːfrʌnt/ | We walked along the seafront after dinner. | Nous nous sommes promenés sur le front de mer après le dîner.
+tattoo parlour | salon de tatouage | n | B2 | /təˈtuː ˌpɑːlə/ | A tattoo parlour has opened on the high street. | Un salon de tatouage a ouvert dans la grand-rue.
+crime-ridden | gangrené par la criminalité | adj | C1 | /ˈkraɪm ˌrɪdn/ | The film is set in a crime-ridden city. | Le film se déroule dans une ville gangrenée par le crime.
+low-rise | (immeuble) bas, de faible hauteur | adj | C1 | /ˌləʊ ˈraɪz/ | The estate is made up of low-rise flats. | Le quartier est composé de petits immeubles.
+built-up | urbanisé | adj | B2 | /ˌbɪlt ˈʌp/ | The speed limit in built-up areas is thirty. | La vitesse est limitée à trente miles par heure en agglomération.
+gated community | résidence fermée, sécurisée | n | C1 | /ˌɡeɪtɪd kəˈmjuːnəti/ | They live in a gated community with guards. | Ils habitent une résidence fermée avec des gardiens.
+kerbstone | bordure de trottoir | n | C1 | /ˈkɜːbstəʊn/ | The car scraped the kerbstone. | La voiture a raclé la bordure du trottoir.
+manhole cover | plaque d'égout | n | B2 | /ˈmænhəʊl ˌkʌvə/ | Workers lifted the manhole cover. | Des ouvriers ont soulevé la plaque d'égout.
+the ladies | toilettes pour dames | n | B1 | /ðə ˈleɪdiz/ | Excuse me, where's the ladies? | Excusez-moi, où sont les toilettes pour dames ?
+the gents | toilettes pour hommes | n | B1 | /ðə ˈdʒents/ | The gents is on the first floor. | Les toilettes pour hommes sont au premier étage.
+disabled toilet | toilettes pour personnes handicapées | n | B1 | /dɪsˌeɪbld ˈtɔɪlət/ | The disabled toilet is next to the lift. | Les toilettes pour personnes handicapées sont à côté de l'ascenseur.
+information desk | bureau d'information, accueil | n | A2 | /ˌɪnfəˈmeɪʃn desk/ | Ask at the information desk. | Renseigne-toi au bureau d'information.
+revolving door | porte à tambour | n | B2 | /rɪˌvɒlvɪŋ ˈdɔː/ | The hotel has a big revolving door. | L'hôtel a une grande porte à tambour.
+automatic door | porte automatique | n | A2 | /ˌɔːtəmætɪk ˈdɔː/ | The automatic doors opened as we approached. | Les portes automatiques se sont ouvertes à notre approche.
+disabled parking | stationnement réservé aux personnes handicapées | n | B1 | /dɪsˌeɪbld ˈpɑːkɪŋ/ | You can't leave your car in disabled parking. | Tu ne peux pas laisser ta voiture sur une place réservée.
+drinking fountain | fontaine à eau | n | B1 | /ˈdrɪŋkɪŋ ˌfaʊntɪn/ | Fill your bottle at the drinking fountain. | Remplis ta gourde à la fontaine à eau.
+it's on the corner | c'est au coin de la rue | expr | A2 | /ɪts ɒn ðə ˈkɔːnə/ | The bakery? It's on the corner, next to the bank. | La boulangerie ? C'est au coin de la rue, à côté de la banque.
+garbage truck | camion-poubelle (US) | n | B1 | /ˈɡɑːbɪdʒ trʌk/ | The garbage truck comes on Tuesdays. | Le camion-poubelle passe le mardi.
+bin lorry | camion-poubelle | n | B2 | /ˈbɪn ˌlɒri/ | The bin lorry woke me up at six. | Le camion-poubelle m'a réveillé à six heures.
+dumpster | benne à ordures (US) | n | B2 | /ˈdʌmpstə/ | Throw the old carpet in the dumpster. | Jette la vieille moquette dans la benne.
+parking garage | parking couvert (US) | n | B1 | /ˈpɑːkɪŋ ɡəˌrɑːʒ/ | We left the car in the parking garage. | Nous avons laissé la voiture dans le parking couvert.
+under construction | en construction | adj | B1 | /ˌʌndə kənˈstrʌkʃn/ | The new mosque is still under construction. | La nouvelle mosquée est encore en construction.
 `,
 );
 
@@ -966,5 +1065,32 @@ lichen | lichen | n | C2 | /ˈlaɪkən/ | Lichen grows on the rocks. | Le lichen
 hibiscus | hibiscus | n | C1 | /hɪˈbɪskəs/ | Hibiscus tea is popular in Egypt. | Le thé d'hibiscus est populaire en Égypte.
 chlorophyll | chlorophylle | n | C1 | /ˈklɒrəfɪl/ | Chlorophyll makes leaves green. | La chlorophylle rend les feuilles vertes.
 marigold | souci (fleur) | n | C2 | /ˈmæriɡəʊld/ | Marigolds brighten the garden. | Les soucis égaient le jardin.
+hawthorn | aubépine | n | C1 | /ˈhɔːθɔːn/ | The hawthorn hedge was white with blossom. | La haie d'aubépine était blanche de fleurs.
+kink | pli, entortillement ; travers | n | C1 | /kɪŋk/ | There's a kink in the garden hose. | Le tuyau d'arrosage est plié.
+starry | étoilé | adj | B2 | /ˈstɑːri/ | We slept under a starry sky. | Nous avons dormi sous un ciel étoilé.
+juniper | genévrier | n | C2 | /ˈdʒuːnɪpə/ | Juniper bushes grow on the hillside. | Des genévriers poussent sur la colline.
+hickory | noyer blanc d'Amérique | n | C2 | /ˈhɪkəri/ | The meat was smoked over hickory wood. | La viande a été fumée au bois de noyer.
+blackness | noirceur, obscurité | n | B2 | /ˈblæknəs/ | The cave was in total blackness. | La grotte était plongée dans l'obscurité totale.
+fuzz | duvet, peluches | n | C1 | /fʌz/ | Peaches are covered in soft fuzz. | Les pêches sont couvertes d'un duvet doux.
+azalea | azalée | n | C1 | /əˈzeɪliə/ | The azaleas are in full bloom. | Les azalées sont en pleine floraison.
+eucalyptus | eucalyptus | n | B2 | /ˌjuːkəˈlɪptəs/ | Koalas eat eucalyptus leaves. | Les koalas mangent des feuilles d'eucalyptus.
+acacia | acacia | n | C1 | /əˈkeɪʃə/ | Giraffes feed on acacia trees. | Les girafes se nourrissent d'acacias.
+spore | spore | n | C2 | /spɔː/ | Ferns reproduce by spores. | Les fougères se reproduisent par spores.
+shard | éclat, tesson | n | C1 | /ʃɑːd/ | Shards of glass covered the floor. | Des éclats de verre jonchaient le sol.
+forest floor | sol forestier | n | B2 | /ˌfɒrɪst ˈflɔː/ | The forest floor was covered in leaves. | Le sol de la forêt était couvert de feuilles.
+new moon | nouvelle lune | n | B1 | /ˌnjuː ˈmuːn/ | The sky is very dark at the new moon. | Le ciel est très sombre à la nouvelle lune.
+half moon | demi-lune | n | B1 | /ˌhɑːf ˈmuːn/ | A half moon hung over the trees. | Une demi-lune était suspendue au-dessus des arbres.
+shooting star | étoile filante | n | A2 | /ˌʃuːtɪŋ ˈstɑː/ | Make a wish when you see a shooting star. | Fais un vœu quand tu vois une étoile filante.
+northern lights | aurores boréales | n | B1 | /ˌnɔːðən ˈlaɪts/ | We went to Norway to see the northern lights. | Nous sommes allés en Norvège voir les aurores boréales.
+rosewood | palissandre | n | C2 | /ˈrəʊzwʊd/ | The guitar has a rosewood neck. | La guitare a un manche en palissandre.
+stillness | calme, immobilité | n | B2 | /ˈstɪlnəs/ | The stillness of the lake was perfect. | Le calme du lac était parfait.
+offshoot | ramification, rejeton | n | C1 | /ˈɒfʃuːt/ | The company is an offshoot of a larger group. | L'entreprise est une émanation d'un groupe plus important.
+alder | aulne | n | C2 | /ˈɔːldə/ | Alder trees grow along the stream. | Des aulnes poussent le long du ruisseau.
+wildflower meadow | prairie fleurie | n | B2 | /ˈwaɪldflaʊə ˌmedəʊ/ | The council turned the lawn into a wildflower meadow. | La mairie a transformé la pelouse en prairie fleurie.
+pollinator | pollinisateur | n | C1 | /ˈpɒlɪneɪtə/ | Bees are the most important pollinators. | Les abeilles sont les pollinisateurs les plus importants.
+forest fire | incendie de forêt | n | B1 | /ˌfɒrɪst ˈfaɪə/ | A forest fire destroyed thousands of hectares. | Un incendie de forêt a détruit des milliers d'hectares.
+to take root | prendre racine | expr | C1 | /teɪk ˈruːt/ | It takes time for new ideas to take root. | Il faut du temps pour que les idées nouvelles prennent racine.
+in the distance | au loin | adv | B1 | /ɪn ðə ˈdɪstəns/ | We could see the mountains in the distance. | On voyait les montagnes au loin.
+by moonlight | au clair de lune | adv | B2 | /baɪ ˈmuːnlaɪt/ | We walked along the beach by moonlight. | Nous nous sommes promenés sur la plage au clair de lune.
 `,
 );

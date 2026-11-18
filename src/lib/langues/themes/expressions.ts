@@ -851,5 +851,136 @@ have the makings of | avoir l'étoffe de | expr | C2 | /hæv ðə ˈmeɪkɪŋz �
 all and sundry | tout un chacun | expr | C2 | /ˌɔːl ən ˈsʌndri/ | He tells his secrets to all and sundry. | Il raconte ses secrets à tout un chacun.
 separate the wheat from the chaff | séparer le bon grain de l'ivraie | expr | C2 | /ˈsepəreɪt ðə ˈwiːt frəm ðə ˈtʃɑːf/ | Scholars separate the wheat from the chaff in hadith. | Les savants séparent le bon grain de l'ivraie parmi les hadiths.
 sleight of hand | tour de passe-passe | n | C2 | /ˌslaɪt əv ˈhænd/ | The magician's sleight of hand amazed us. | Le tour de passe-passe du magicien nous a émerveillés.
+to jump the queue | passer devant tout le monde, resquiller | expr | B2 | /dʒʌmp ðə ˈkjuː/ | A man tried to jump the queue at the post office. | Un homme a essayé de resquiller à la poste.
+to beat about the bush | tourner autour du pot | expr | B2 | /biːt əˌbaʊt ðə ˈbʊʃ/ | Stop beating about the bush and tell me the truth. | Arrête de tourner autour du pot et dis-moi la vérité.
+to flog a dead horse | se donner du mal pour rien | expr | C1 | /flɒɡ ə ded ˈhɔːs/ | Trying to change his mind is flogging a dead horse. | Essayer de le faire changer d'avis, c'est se donner du mal pour rien.
+under your breath | à mi-voix, entre ses dents | expr | B2 | /ˌʌndə jə ˈbreθ/ | He swore under his breath. | Il a juré entre ses dents.
+to beat the clock | finir avant l'heure, battre la montre | expr | C1 | /biːt ðə ˈklɒk/ | We worked fast to beat the clock. | Nous avons travaillé vite pour finir à temps.
+beggars can't be choosers | faute de grives, on mange des merles | expr | C1 | /ˌbeɡəz ˌkɑːnt bi ˈtʃuːzəz/ | It's not the room I wanted, but beggars can't be choosers. | Ce n'est pas la chambre que je voulais, mais faute de grives, on mange des merles.
+to cut it fine | s'y prendre juste, ne pas se laisser de marge | expr | C1 | /kʌt ɪt ˈfaɪn/ | Arriving ten minutes before the flight is cutting it fine. | Arriver dix minutes avant le vol, c'est un peu juste.
+to foot the bill | payer la note | expr | C1 | /fʊt ðə ˈbɪl/ | Taxpayers will have to foot the bill. | Ce sont les contribuables qui vont payer la note.
+there's method in the madness | ce n'est pas si fou qu'il y paraît | expr | C1 | /ðeəz ˌmeθəd ɪn ðə ˈmædnəs/ | His plan looks crazy, but there's method in the madness. | Son plan paraît fou, mais il y a une logique derrière.
+to miss the point | ne pas saisir l'essentiel, être à côté de la plaque | expr | B2 | /mɪs ðə ˈpɔɪnt/ | You've completely missed the point of the story. | Tu es complètement passé à côté du sens de l'histoire.
+on the fly | à la volée, en cours de route | expr | C1 | /ɒn ðə ˈflaɪ/ | We had to change the plan on the fly. | Nous avons dû changer le plan en cours de route.
+to quit while you're ahead | s'arrêter tant qu'on gagne | expr | C1 | /kwɪt waɪl jər əˈhed/ | You've won twice; quit while you're ahead. | Tu as gagné deux fois ; arrête-toi tant que tu gagnes.
+to shoot yourself in the foot | se tirer une balle dans le pied | expr | C1 | /ʃuːt jɔːˌself ɪn ðə ˈfʊt/ | By insulting the judges, he shot himself in the foot. | En insultant le jury, il s'est tiré une balle dans le pied.
+under wraps | secret, sous le manteau | expr | C1 | /ˌʌndə ˈræps/ | The new design is being kept under wraps. | Le nouveau modèle est gardé secret.
+on a par with | au même niveau que | expr | C1 | /ɒn ə ˈpɑː wɪð/ | Her work is on a par with the best. | Son travail est au niveau des meilleurs.
+eye-opener | révélation | n | B2 | /ˈaɪ ˌəʊpnə/ | Living abroad was a real eye-opener. | Vivre à l'étranger a été une vraie révélation.
+in vogue | en vogue | expr | C1 | /ɪn ˈvəʊɡ/ | Vintage clothes are very much in vogue. | Les vêtements vintage sont très en vogue.
+to change tack | changer de cap, de tactique | expr | C1 | /tʃeɪndʒ ˈtæk/ | When the plan failed, they changed tack. | Quand le plan a échoué, ils ont changé de tactique.
+well versed in | rompu à, versé dans | expr | C1 | /ˌwel ˈvɜːst ɪn/ | She is well versed in company law. | Elle est très versée dans le droit des sociétés.
+much ado about nothing | beaucoup de bruit pour rien | expr | C1 | /ˌmʌtʃ əˌduː əˌbaʊt ˈnʌθɪŋ/ | The scandal turned out to be much ado about nothing. | Le scandale s'est révélé beaucoup de bruit pour rien.
+to stand you in good stead | te servir, t'être utile | expr | C1 | /stænd ju ɪn ɡʊd ˈsted/ | Learning to cook will stand you in good stead. | Apprendre à cuisiner te sera bien utile.
+to throw down the gauntlet | lancer un défi | expr | C1 | /ˌθrəʊ daʊn ðə ˈɡɔːntlɪt/ | The champion threw down the gauntlet to his rival. | Le champion a lancé un défi à son rival.
+dead ringer | sosie | n | C1 | /ˌded ˈrɪŋə/ | He's a dead ringer for his father. | C'est le portrait craché de son père.
+tongue-twister | phrase difficile à prononcer, virelangue | n | B2 | /ˈtʌŋ ˌtwɪstə/ | "She sells seashells" is a famous tongue-twister. | Cette phrase anglaise est un virelangue célèbre.
+far afield | au loin, loin d'ici | expr | C1 | /ˌfɑːr əˈfiːld/ | Visitors came from as far afield as Japan. | Des visiteurs sont venus de loin, jusque du Japon.
+to blow a gasket | piquer une crise, sortir de ses gonds | expr | C1 | /ˌbləʊ ə ˈɡæskɪt/ | Dad will blow a gasket when he sees the car. | Papa va piquer une crise quand il verra la voiture.
+to hear it on the grapevine | apprendre par le bouche-à-oreille | expr | C1 | /hɪər ɪt ɒn ðə ˈɡreɪpvaɪn/ | I heard it on the grapevine that she's leaving. | J'ai appris par la rumeur qu'elle s'en va.
+overkill | excès, exagération | n | C1 | /ˈəʊvəkɪl/ | Three alarms on the door is overkill. | Trois alarmes sur la porte, c'est exagéré.
+back and forth | d'avant en arrière, de long en large | expr | B2 | /ˌbæk ən ˈfɔːθ/ | He walked back and forth, waiting for the phone call. | Il faisait les cent pas en attendant le coup de fil.
+bits and pieces | petites choses, bricoles | expr | B2 | /ˌbɪts ən ˈpiːsɪz/ | I keep all my bits and pieces in this box. | Je range toutes mes bricoles dans cette boîte.
+loud and clear | cinq sur cinq, très clairement | expr | B2 | /ˌlaʊd ən ˈklɪə/ | I hear you loud and clear. | Je te reçois cinq sur cinq.
+wear and tear | usure normale | expr | C1 | /ˌweər ən ˈteə/ | The guarantee doesn't cover normal wear and tear. | La garantie ne couvre pas l'usure normale.
+to search high and low | chercher partout | expr | C1 | /sɜːtʃ ˌhaɪ ən ˈləʊ/ | I've searched high and low for my keys. | J'ai cherché mes clés partout.
+to think long and hard | réfléchir longuement | expr | C1 | /θɪŋk ˌlɒŋ ən ˈhɑːd/ | Think long and hard before you sign. | Réfléchis bien avant de signer.
+to pick and choose | faire le difficile, choisir à sa guise | expr | C1 | /ˌpɪk ən ˈtʃuːz/ | With so few jobs, you can't pick and choose. | Avec si peu d'offres d'emploi, on ne peut pas faire le difficile.
+to rant and rave | fulminer, tempêter | expr | C2 | /ˌrænt ən ˈreɪv/ | He ranted and raved about the parking fine. | Il a fulminé contre son amende de stationnement.
+slowly but surely | lentement mais sûrement | expr | B1 | /ˌsləʊli bət ˈʃʊəli/ | Slowly but surely, my English is improving. | Lentement mais sûrement, mon anglais progresse.
+alive and kicking | bien vivant, toujours en forme | expr | C1 | /əˌlaɪv ən ˈkɪkɪŋ/ | The old market is still alive and kicking. | Le vieux marché est toujours bien vivant.
+heart and soul | corps et âme | expr | B2 | /ˌhɑːt ən ˈsəʊl/ | She put her heart and soul into the project. | Elle s'est investie corps et âme dans le projet.
+a matter of life and death | une question de vie ou de mort | expr | B2 | /ə ˌmætər əv ˌlaɪf ən ˈdeθ/ | Hurry, it's a matter of life and death! | Vite, c'est une question de vie ou de mort !
+plain and simple | purement et simplement | expr | B2 | /ˌpleɪn ən ˈsɪmpl/ | It was a mistake, plain and simple. | C'était une erreur, purement et simplement.
+this and that | ceci et cela, un peu de tout | expr | B1 | /ˌðɪs ən ˈðæt/ | We chatted about this and that. | Nous avons parlé de tout et de rien.
+from top to bottom | de fond en comble | expr | B2 | /frəm ˌtɒp tə ˈbɒtəm/ | We cleaned the house from top to bottom. | Nous avons nettoyé la maison de fond en comble.
+from head to toe | de la tête aux pieds | expr | B1 | /frəm ˌhed tə ˈtəʊ/ | She was dressed in white from head to toe. | Elle était habillée en blanc de la tête aux pieds.
+from start to finish | du début à la fin | expr | B1 | /frəm ˌstɑːt tə ˈfɪnɪʃ/ | The film was exciting from start to finish. | Le film était passionnant du début à la fin.
+round and round | en rond, sans fin | adv | B1 | /ˌraʊnd ən ˈraʊnd/ | The same thoughts went round and round in my head. | Les mêmes idées tournaient en boucle dans ma tête.
+on and on | sans arrêt, sans fin | adv | B2 | /ˌɒn ən ˈɒn/ | The speech went on and on. | Le discours n'en finissait plus.
+to make a song and dance about | faire tout un plat de | expr | C2 | /meɪk ə ˌsɒŋ ən ˈdɑːns əˌbaʊt/ | There's no need to make a song and dance about it. | Pas la peine d'en faire tout un plat.
+it doesn't matter | ce n'est pas grave, peu importe | expr | A2 | /ɪt ˌdʌznt ˈmætə/ | I've lost your pen. — It doesn't matter. | J'ai perdu ton stylo. — Ce n'est pas grave.
+it depends | ça dépend | expr | A2 | /ɪt dɪˈpendz/ | Will you come with us? — It depends. | Tu viendras avec nous ? — Ça dépend.
+I think so | je crois, je pense que oui | expr | A2 | /aɪ ˈθɪŋk səʊ/ | Is the shop still open? — I think so. | Le magasin est encore ouvert ? — Je crois.
+I don't think so | je ne crois pas | expr | A2 | /aɪ ˌdəʊnt ˈθɪŋk səʊ/ | Will it rain today? — I don't think so. | Il va pleuvoir aujourd'hui ? — Je ne crois pas.
+I hope so | j'espère bien | expr | A2 | /aɪ ˈhəʊp səʊ/ | Will you pass the test? — I hope so! | Tu vas réussir le contrôle ? — J'espère bien !
+I hope not | j'espère que non | expr | A2 | /aɪ ˈhəʊp nɒt/ | Is it going to snow? — I hope not! | Il va neiger ? — J'espère que non !
+I'm afraid not | je crains que non, malheureusement non | expr | B1 | /aɪm əˌfreɪd ˈnɒt/ | Do you have this in blue? — I'm afraid not. | Vous l'avez en bleu ? — Malheureusement non.
+why not | pourquoi pas | expr | A1 | /ˌwaɪ ˈnɒt/ | Shall we go to the beach? — Why not! | On va à la plage ? — Pourquoi pas !
+sounds good | ça me va, ça marche | expr | A2 | /ˌsaʊndz ˈɡʊd/ | Pizza tonight? — Sounds good! | Pizza ce soir ? — Ça marche !
+that's a good idea | c'est une bonne idée | expr | A1 | /ˌðæts ə ˌɡʊd aɪˈdɪə/ | Let's take the train. — That's a good idea. | Prenons le train. — C'est une bonne idée.
+let's go | allons-y, on y va | expr | A1 | /ˌlets ˈɡəʊ/ | Is everybody ready? Let's go! | Tout le monde est prêt ? On y va !
+cat got your tongue | tu as perdu ta langue ? | expr | B2 | /ˌkæt ɡɒt jə ˈtʌŋ/ | Why so quiet? Cat got your tongue? | Pourquoi tu ne dis rien ? Tu as perdu ta langue ?
+look before you leap | il faut réfléchir avant d'agir | expr | B2 | /ˌlʊk bɪˌfɔː juː ˈliːp/ | Look before you leap: read the contract first. | Réfléchis avant d'agir : lis d'abord le contrat.
+time is money | le temps, c'est de l'argent | expr | A2 | /ˌtaɪm ɪz ˈmʌni/ | Hurry up, time is money! | Dépêche-toi, le temps, c'est de l'argent !
+under your nose | sous ton nez | expr | B2 | /ˌʌndə jə ˈnəʊz/ | Your keys were right under your nose! | Tes clés étaient juste sous ton nez !
+to burst someone's bubble | briser les illusions de quelqu'un | expr | C1 | /bɜːst ˌsʌmwʌnz ˈbʌbl/ | I hate to burst your bubble, but the shop is closed. | Désolé de briser tes illusions, mais le magasin est fermé.
+to keep under wraps | garder secret | expr | C1 | /kiːp ˌʌndə ˈræps/ | The company wants to keep the new model under wraps. | L'entreprise veut garder le nouveau modèle secret.
+to kick the bucket | casser sa pipe | expr | B2 | /kɪk ðə ˈbʌkɪt/ | The old washing machine finally kicked the bucket. | La vieille machine à laver a fini par rendre l'âme.
+to lose your marbles | perdre la boule | expr | C1 | /luːz jə ˈmɑːblz/ | I put the milk in the oven; I must be losing my marbles! | J'ai mis le lait dans le four ; je dois perdre la boule !
+packed like sardines | serrés comme des sardines | expr | B1 | /ˌpækt laɪk sɑːˈdiːnz/ | On the morning train we're packed like sardines. | Dans le train du matin, on est serrés comme des sardines.
+put a sock in it | la ferme ! (familier) | expr | C1 | /ˌpʊt ə ˈsɒk ɪn ɪt/ | Oh, put a sock in it, I'm trying to sleep! | Oh, la ferme, j'essaie de dormir !
+a picture is worth a thousand words | une image vaut mille mots | expr | B1 | /ə ˌpɪktʃər ɪz ˌwɜːθ ə ˌθaʊznd ˈwɜːdz/ | Show them the photo: a picture is worth a thousand words. | Montre-leur la photo : une image vaut mille mots.
+an apple a day keeps the doctor away | une pomme par jour éloigne le médecin | expr | A2 | /ən ˌæpl ə ˈdeɪ ˌkiːps ðə ˈdɒktər əˌweɪ/ | Eat your fruit: an apple a day keeps the doctor away! | Mange ton fruit : une pomme par jour éloigne le médecin !
+as busy as a bee | affairé, très occupé | expr | B1 | /əz ˌbɪzi əz ə ˈbiː/ | Grandma is as busy as a bee before Eid. | Mamie est très affairée avant l'Aïd.
+as old as the hills | vieux comme le monde | expr | B2 | /əz ˌəʊld əz ðə ˈhɪlz/ | That joke is as old as the hills. | Cette blague est vieille comme le monde.
+as quiet as a mouse | silencieux comme une souris | expr | B1 | /əz ˌkwaɪət əz ə ˈmaʊs/ | The baby is asleep, so be as quiet as a mouse. | Le bébé dort, alors sois silencieux comme une souris.
+birds of a feather flock together | qui se ressemble s'assemble | expr | B2 | /ˌbɜːdz əv ə ˈfeðə ˌflɒk təˈɡeðə/ | They're always together: birds of a feather flock together. | Ils sont toujours ensemble : qui se ressemble s'assemble.
+every dog has its day | à chacun son heure de gloire | expr | C1 | /ˌevri ˈdɒɡ hæz ɪts ˈdeɪ/ | He finally won a match; every dog has its day. | Il a enfin gagné un match ; à chacun son heure de gloire.
+fortune favours the bold | la fortune sourit aux audacieux | expr | B2 | /ˌfɔːtʃuːn ˌfeɪvəz ðə ˈbəʊld/ | Go and ask for a pay rise: fortune favours the bold. | Va demander une augmentation : la fortune sourit aux audacieux.
+great minds think alike | les grands esprits se rencontrent | expr | B1 | /ˌɡreɪt ˈmaɪndz ˌθɪŋk əˈlaɪk/ | You bought the same present? Great minds think alike! | Tu as acheté le même cadeau ? Les grands esprits se rencontrent !
+home is where the heart is | on est chez soi là où sont ceux qu'on aime | expr | B1 | /ˌhəʊm ɪz ˌweə ðə ˈhɑːt ɪz/ | We've moved many times, but home is where the heart is. | Nous avons souvent déménagé, mais on est chez soi là où sont ceux qu'on aime.
+honesty is the best policy | l'honnêteté paie toujours | expr | B1 | /ˈɒnəsti ɪz ðə ˌbest ˈpɒləsi/ | Tell your teacher the truth; honesty is the best policy. | Dis la vérité à ton professeur ; l'honnêteté paie toujours.
+if it ain't broke, don't fix it | on ne change pas une formule qui marche | expr | B2 | /ɪf ɪt ˌeɪnt ˈbrəʊk ˌdəʊnt ˈfɪks ɪt/ | Why change the menu? If it ain't broke, don't fix it. | Pourquoi changer le menu ? On ne change pas une formule qui marche.
+ignorance is bliss | moins on en sait, mieux on se porte | expr | B2 | /ˌɪɡnərəns ɪz ˈblɪs/ | I don't want to know the price; ignorance is bliss. | Je ne veux pas connaître le prix ; moins j'en sais, mieux je me porte.
+laughter is the best medicine | le rire est le meilleur des remèdes | expr | A2 | /ˌlɑːftər ɪz ðə ˌbest ˈmedsn/ | Watch a comedy tonight: laughter is the best medicine. | Regarde une comédie ce soir : le rire est le meilleur des remèdes.
+many hands make light work | à plusieurs, le travail va plus vite | expr | B2 | /ˌmeni ˈhændz meɪk ˌlaɪt ˈwɜːk/ | Let's all help to clear up: many hands make light work. | Aidons tous à ranger : à plusieurs, ça ira plus vite.
+necessity is the mother of invention | nécessité est mère d'invention | expr | B2 | /nəˌsesəti ɪz ðə ˌmʌðər əv ɪnˈvenʃn/ | We had no hammer, so we used a stone: necessity is the mother of invention. | Nous n'avions pas de marteau, alors nous avons pris une pierre : nécessité est mère d'invention.
+no news is good news | pas de nouvelles, bonnes nouvelles | expr | B1 | /ˌnəʊ ˈnjuːz ɪz ˌɡʊd ˈnjuːz/ | He hasn't called, but no news is good news. | Il n'a pas appelé, mais pas de nouvelles, bonnes nouvelles.
+Rome wasn't built in a day | Paris ne s'est pas fait en un jour | expr | B1 | /ˌrəʊm ˌwɒznt ˌbɪlt ɪn ə ˈdeɪ/ | Keep practising; Rome wasn't built in a day. | Continue à t'entraîner ; Paris ne s'est pas fait en un jour.
+the grass is always greener on the other side | l'herbe est toujours plus verte ailleurs | expr | B2 | /ðə ˌɡrɑːs ɪz ˌɔːlweɪz ˈɡriːnər ɒn ði ˌʌðə ˈsaɪd/ | Don't envy your neighbours; the grass is always greener on the other side. | N'envie pas tes voisins ; l'herbe est toujours plus verte ailleurs.
+too many cooks spoil the broth | trop de cuisiniers gâtent la sauce | expr | C1 | /ˌtuː ˌmeni ˈkʊks ˌspɔɪl ðə ˈbrɒθ/ | Let one person organise it; too many cooks spoil the broth. | Laisse une seule personne organiser : trop de cuisiniers gâtent la sauce.
+two wrongs don't make a right | on ne répare pas une faute par une autre | expr | B2 | /ˌtuː ˈrɒŋz ˌdəʊnt meɪk ə ˈraɪt/ | He hit you first, but two wrongs don't make a right. | Il t'a frappé le premier, mais on ne répare pas une faute par une autre.
+you can't have your cake and eat it | on ne peut pas avoir le beurre et l'argent du beurre | expr | B2 | /juː ˌkɑːnt hæv jə ˈkeɪk ənd ˈiːt ɪt/ | You want a big house and no debts? You can't have your cake and eat it. | Tu veux une grande maison sans dettes ? On ne peut pas avoir le beurre et l'argent du beurre.
+you can't teach an old dog new tricks | ce n'est pas à un vieux singe qu'on apprend à faire la grimace | expr | B2 | /juː ˌkɑːnt ˌtiːtʃ ən ˌəʊld ˈdɒɡ ˌnjuː ˈtrɪks/ | My grandfather won't use a smartphone; you can't teach an old dog new tricks. | Mon grand-père refuse d'utiliser un smartphone ; on n'apprend pas à un vieux singe à faire la grimace.
+all good things must come to an end | toutes les bonnes choses ont une fin | expr | B1 | /ˌɔːl ˌɡʊd ˈθɪŋz mʌst ˌkʌm tʊ ən ˈend/ | The holiday is over; all good things must come to an end. | Les vacances sont finies ; toutes les bonnes choses ont une fin.
+all that glitters is not gold | tout ce qui brille n'est pas or | expr | B2 | /ˌɔːl ðət ˈɡlɪtəz ɪz ˌnɒt ˈɡəʊld/ | The job looks great, but all that glitters is not gold. | Le poste a l'air génial, mais tout ce qui brille n'est pas or.
+don't bite the hand that feeds you | il ne faut pas cracher dans la soupe | expr | B2 | /ˌdəʊnt ˌbaɪt ðə ˈhænd ðət ˈfiːdz juː/ | Stop criticising your boss: don't bite the hand that feeds you. | Arrête de critiquer ton patron : il ne faut pas cracher dans la soupe.
+don't put off until tomorrow what you can do today | il ne faut pas remettre au lendemain ce qu'on peut faire le jour même | expr | B1 | /ˌdəʊnt pʊt ˈɒf ənˌtɪl təˈmɒrəʊ ˌwɒt juː kən ˈduː təˈdeɪ/ | Do your homework now: don't put off until tomorrow what you can do today. | Fais tes devoirs maintenant : il ne faut pas remettre au lendemain ce qu'on peut faire le jour même.
+first come, first served | premier arrivé, premier servi | expr | B1 | /ˌfɜːst ˈkʌm ˌfɜːst ˈsɜːvd/ | There are only twenty seats: first come, first served. | Il n'y a que vingt places : premier arrivé, premier servi.
+good things come to those who wait | tout vient à point à qui sait attendre | expr | B1 | /ˌɡʊd ˈθɪŋz ˌkʌm tə ˌðəʊz huː ˈweɪt/ | Be patient; good things come to those who wait. | Sois patient ; tout vient à point à qui sait attendre.
+it never rains but it pours | un malheur n'arrive jamais seul | expr | C1 | /ɪt ˌnevə ˈreɪnz bət ɪt ˈpɔːz/ | First the car broke down, then I lost my wallet: it never rains but it pours. | D'abord la voiture est tombée en panne, puis j'ai perdu mon portefeuille : un malheur n'arrive jamais seul.
+nothing ventured, nothing gained | qui ne risque rien n'a rien | expr | B2 | /ˌnʌθɪŋ ˈventʃəd ˌnʌθɪŋ ˈɡeɪnd/ | Apply for the job: nothing ventured, nothing gained. | Postule : qui ne risque rien n'a rien.
+old habits die hard | les vieilles habitudes ont la vie dure | expr | B2 | /ˌəʊld ˈhæbɪts ˌdaɪ ˈhɑːd/ | He still gets up at five; old habits die hard. | Il se lève encore à cinq heures ; les vieilles habitudes ont la vie dure.
+one man's meat is another man's poison | chacun ses goûts | expr | C1 | /ˌwʌn mænz ˈmiːt ɪz əˌnʌðə mænz ˈpɔɪzn/ | I hate jazz, but one man's meat is another man's poison. | Je déteste le jazz, mais chacun ses goûts.
+the pen is mightier than the sword | la plume est plus forte que l'épée | expr | B2 | /ðə ˌpen ɪz ˈmaɪtiə ðən ðə ˈsɔːd/ | Write to the newspaper; the pen is mightier than the sword. | Écris au journal ; la plume est plus forte que l'épée.
+the proof of the pudding is in the eating | c'est au pied du mur qu'on voit le maçon | expr | C1 | /ðə ˌpruːf əv ðə ˈpʊdɪŋ ɪz ɪn ði ˈiːtɪŋ/ | The plan looks good, but the proof of the pudding is in the eating. | Le projet a l'air bon, mais c'est au pied du mur qu'on voit le maçon.
+there's no smoke without fire | il n'y a pas de fumée sans feu | expr | B2 | /ðeəz ˌnəʊ ˈsməʊk wɪˌðaʊt ˈfaɪə/ | Everyone says he cheated; there's no smoke without fire. | Tout le monde dit qu'il a triché ; il n'y a pas de fumée sans feu.
+you reap what you sow | on récolte ce que l'on sème | expr | B2 | /juː ˌriːp ˌwɒt juː ˈsəʊ/ | He was unkind to everyone, and now he's alone: you reap what you sow. | Il était méchant avec tout le monde et maintenant il est seul : on récolte ce que l'on sème.
+to come true | se réaliser | expr | B1 | /kʌm ˈtruː/ | I hope all your dreams come true. | J'espère que tous tes rêves se réaliseront.
+by accident | par accident, sans le faire exprès | adv | A2 | /baɪ ˈæksɪdənt/ | I deleted the file by accident. | J'ai supprimé le fichier sans le faire exprès.
+in person | en personne | adv | B1 | /ɪn ˈpɜːsn/ | You have to sign the papers in person. | Vous devez signer les papiers en personne.
+under control | sous contrôle, maîtrisé | adj | B1 | /ˌʌndə kənˈtrəʊl/ | Don't worry, everything is under control. | Ne t'inquiète pas, tout est sous contrôle.
+out of control | hors de contrôle | adj | B1 | /ˌaʊt əv kənˈtrəʊl/ | The fire is out of control. | L'incendie est hors de contrôle.
+at random | au hasard | adv | B2 | /ət ˈrændəm/ | The winners were chosen at random. | Les gagnants ont été tirés au hasard.
+in secret | en secret | adv | B1 | /ɪn ˈsiːkrət/ | They got married in secret. | Ils se sont mariés en secret.
+within reach | à portée de main | adv | B2 | /wɪˌðɪn ˈriːtʃ/ | Keep your phone within reach. | Garde ton téléphone à portée de main.
+in common | en commun | adv | A2 | /ɪn ˈkɒmən/ | We have a lot in common. | Nous avons beaucoup de points communs.
+in detail | en détail | adv | B1 | /ɪn ˈdiːteɪl/ | Can you explain the plan in detail? | Tu peux expliquer le projet en détail ?
+in the way | dans le passage, qui gêne | adv | B1 | /ɪn ðə ˈweɪ/ | Move your bag, it's in the way. | Pousse ton sac, il gêne le passage.
+in trouble | en difficulté ; qui a des ennuis | adj | A2 | /ɪn ˈtrʌbl/ | You'll be in trouble if you're late again. | Tu vas avoir des ennuis si tu es encore en retard.
+out of luck | pas de chance | adj | B2 | /ˌaʊt əv ˈlʌk/ | You're out of luck: the last bus has gone. | Pas de chance : le dernier bus est parti.
+out of place | déplacé, pas à sa place | adj | B2 | /ˌaʊt əv ˈpleɪs/ | I felt out of place at the party. | Je ne me sentais pas à ma place à la fête.
+out of the ordinary | hors du commun, inhabituel | adj | B2 | /ˌaʊt əv ði ˈɔːdnri/ | Nothing out of the ordinary happened today. | Il ne s'est rien passé d'inhabituel aujourd'hui.
+by hand | à la main | adv | A2 | /baɪ ˈhænd/ | These carpets are made by hand. | Ces tapis sont faits à la main.
+in a whisper | en chuchotant, à voix basse | adv | B2 | /ɪn ə ˈwɪspə/ | She told me the secret in a whisper. | Elle m'a dit le secret à voix basse.
+from a distance | de loin | adv | B1 | /frəm ə ˈdɪstəns/ | From a distance, the castle looks like a toy. | De loin, le château ressemble à un jouet.
+remote chance | faible chance | n | C1 | /rɪˌməʊt ˈtʃɑːns/ | There's only a remote chance of finding the ring. | Il n'y a qu'une faible chance de retrouver la bague.
+wild guess | supposition au hasard | n | B2 | /ˌwaɪld ˈɡes/ | I didn't know; it was just a wild guess. | Je ne savais pas ; j'ai répondu au hasard.
+educated guess | supposition éclairée | n | C1 | /ˌedʒukeɪtɪd ˈɡes/ | Make an educated guess if you don't know the answer. | Fais une supposition éclairée si tu ne connais pas la réponse.
+sheer luck | pur hasard, pure chance | n | C1 | /ˌʃɪə ˈlʌk/ | We found the house by sheer luck. | Nous avons trouvé la maison par pur hasard.
+utter nonsense | n'importe quoi, pures bêtises | n | C1 | /ˌʌtə ˈnɒnsns/ | What he said was utter nonsense. | Ce qu'il a dit, c'était n'importe quoi.
+bad luck | malchance | n | A2 | /ˌbæd ˈlʌk/ | We had bad luck with the weather. | Nous n'avons pas eu de chance avec le temps.
+good luck charm | porte-bonheur | n | B2 | /ˌɡʊd ˈlʌk tʃɑːm/ | He keeps a coin in his pocket as a good luck charm. | Il garde une pièce dans sa poche en guise de porte-bonheur.
 `,
 );

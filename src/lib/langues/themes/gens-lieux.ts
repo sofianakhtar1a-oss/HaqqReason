@@ -333,5 +333,10 @@ tribesman | membre d'une tribu | n | C2 | /ˈtraɪbzmən/ | The tribesmen welcom
 compatriot | compatriote | n | C1 | /kəmˈpætriət/ | He met a compatriot in Tokyo. | Il a rencontré un compatriote à Tokyo.
 vagabond | vagabond | n | C2 | /ˈvæɡəbɒnd/ | He lived like a vagabond. | Il vivait comme un vagabond.
 francophone | francophone | adj | C1 | /ˈfræŋkəfəʊn/ | Senegal is a francophone country. | Le Sénégal est un pays francophone.
+Aboriginal | aborigène | adj | B2 | /ˌæbəˈrɪdʒənl/ | Aboriginal art is thousands of years old. | L'art aborigène a des milliers d'années.
+hippy | hippie | n | B2 | /ˈhɪpi/ | Her parents were hippies in the sixties. | Ses parents étaient hippies dans les années soixante.
+locale | lieu, cadre | n | C2 | /ləʊˈkɑːl/ | The film moves its story to a new locale. | Le film transpose son histoire dans un nouveau cadre.
+close friend | ami proche, ami intime | n | A2 | /ˌkləʊs ˈfrend/ | She's a close friend of my mother's. | C'est une amie proche de ma mère.
+lookalike | sosie | n | B2 | /ˈlʊkəlaɪk/ | He's a lookalike of a famous footballer. | C'est le sosie d'un footballeur célèbre.
 `,
 );

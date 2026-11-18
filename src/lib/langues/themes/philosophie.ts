@@ -595,5 +595,113 @@ intercession | intercession | n | C2 | /ˌɪntəˈseʃn/ | Muslims hope for the 
 laity | laïcs | n | C2 | /ˈleɪəti/ | The clergy and the laity. | Le clergé et les laïcs.
 sorceress | sorcière, magicienne | n | C2 | /ˈsɔːsərəs/ | The sorceress cast a spell. | La magicienne a jeté un sort.
 creationism | créationnisme | n | C2 | /kriˈeɪʃənɪzəm/ | The debate on creationism continues. | Le débat sur le créationnisme se poursuit.
+voodoo | vaudou | n | C1 | /ˈvuːduː/ | Some critics called his economic theory voodoo. | Certains critiques ont qualifié sa théorie économique de magie noire.
+causal | causal | adj | C1 | /ˈkɔːzl/ | There is no causal link between the two events. | Il n'y a aucun lien de cause à effet entre les deux événements.
+Grim Reaper | la Grande Faucheuse | n | C1 | /ˌɡrɪm ˈriːpə/ | The Grim Reaper is shown holding a scythe. | La Grande Faucheuse est représentée tenant une faux.
+locus | lieu, siège | n | C2 | /ˈləʊkəs/ | The city was the locus of power. | La ville était le siège du pouvoir.
+yogi | yogi | n | C1 | /ˈjəʊɡi/ | The yogi meditated for hours. | Le yogi méditait pendant des heures.
+schema | schéma | n | C2 | /ˈskiːmə/ | Children build a mental schema of the world. | Les enfants se construisent un schéma mental du monde.
+omen | présage | n | C1 | /ˈəʊmən/ | A black cat is seen as a bad omen. | Un chat noir est vu comme un mauvais présage.
+archdiocese | archidiocèse | n | C2 | /ˌɑːtʃˈdaɪəsɪs/ | The archdiocese covers several cities. | L'archidiocèse couvre plusieurs villes.
+tabernacle | tabernacle | n | C2 | /ˈtæbənækl/ | The tabernacle stood in the centre of the camp. | Le tabernacle se dressait au centre du camp.
+congregational | de congrégation ; congrégationaliste | adj | C2 | /ˌkɒŋɡrɪˈɡeɪʃənl/ | Congregational singing filled the hall. | Le chant de l'assemblée remplissait la salle.
+priory | prieuré | n | C2 | /ˈpraɪəri/ | The ruins of an old priory stand by the river. | Les ruines d'un vieux prieuré se dressent près de la rivière.
+redeemer | rédempteur | n | C2 | /rɪˈdiːmə/ | The statue of Christ the Redeemer overlooks Rio. | La statue du Christ Rédempteur domine Rio.
+transcendental | transcendantal | adj | C2 | /ˌtrænsenˈdentl/ | He practises transcendental meditation. | Il pratique la méditation transcendantale.
+ecumenical | œcuménique | adj | C2 | /ˌiːkjuːˈmenɪkl/ | An ecumenical service was held for all faiths. | Une cérémonie œcuménique a été organisée pour toutes les confessions.
+chalice | calice | n | C2 | /ˈtʃælɪs/ | The priest raised the golden chalice. | Le prêtre a élevé le calice d'or.
+incarnate | incarné | adj | C2 | /ɪnˈkɑːnət/ | To the villagers he was evil incarnate. | Pour les villageois, il était le mal incarné.
+amulet | amulette | n | C1 | /ˈæmjʊlət/ | He wore an amulet to ward off evil. | Il portait une amulette pour éloigner le mal.
+introspection | introspection | n | C1 | /ˌɪntrəˈspekʃn/ | The illness led to a period of introspection. | La maladie a entraîné une période d'introspection.
+archangel | archange | n | C1 | /ˈɑːkeɪndʒl/ | The archangel Gabriel is called Jibril in Arabic. | L'archange Gabriel est appelé Jibril en arabe.
+exorcist | exorciste | n | C1 | /ˈeksɔːsɪst/ | The family called in an exorcist. | La famille a fait venir un exorciste.
+perceptual | perceptif | adj | C2 | /pəˈseptʃuəl/ | The test measures perceptual skills. | Le test mesure les capacités perceptives.
+inductive | inductif | adj | C2 | /ɪnˈdʌktɪv/ | Inductive reasoning moves from examples to rules. | Le raisonnement inductif va des exemples vers la règle.
+Islam | islam | n | A2 | /ˈɪzlɑːm/ | Islam teaches belief in one God. | L'islam enseigne la croyance en un Dieu unique.
+Muslim | musulman | n | A2 | /ˈmʊzlɪm/ | Muslims pray five times a day. | Les musulmans prient cinq fois par jour.
+Islamic | islamique | adj | B1 | /ɪzˈlæmɪk/ | The museum has a fine collection of Islamic art. | Le musée possède une belle collection d'art islamique.
+Allah | Allah (Dieu, en arabe) | n | A2 | /ˈælə/ | Muslims believe that Allah is the one true God. | Les musulmans croient qu'Allah est le seul vrai Dieu.
+the Qur'an | le Coran | n | A2 | /ðə kɒˈrɑːn/ | He reads a page of the Qur'an every morning. | Il lit une page du Coran chaque matin.
+the Sunnah | la Sunna (tradition prophétique) | n | B2 | /ðə ˈsʊnə/ | The Sunnah explains how the Prophet lived. | La Sunna explique comment vivait le Prophète.
+hadith | hadith | n | B2 | /ˈhædɪθ/ | This hadith is reported by several companions. | Ce hadith est rapporté par plusieurs compagnons.
+Mecca | La Mecque ; (fig.) haut lieu | n | B1 | /ˈmekə/ | Millions of pilgrims travel to Mecca each year. | Des millions de pèlerins se rendent à La Mecque chaque année.
+the Kaaba | la Kaaba | n | B2 | /ðə ˈkɑːbə/ | Muslims face the Kaaba when they pray. | Les musulmans se tournent vers la Kaaba pour prier.
+call to prayer | appel à la prière | n | B1 | /ˌkɔːl tə ˈpreə/ | The call to prayer rang out from the minaret. | L'appel à la prière a retenti du haut du minaret.
+muezzin | muezzin | n | C1 | /muːˈezɪn/ | The muezzin has a beautiful voice. | Le muezzin a une très belle voix.
+Friday prayer | prière du vendredi | n | B1 | /ˌfraɪdeɪ ˈpreə/ | The mosque is full for the Friday prayer. | La mosquée est pleine pour la prière du vendredi.
+Night of Power | la Nuit du Destin | n | B2 | /ˌnaɪt əv ˈpaʊə/ | The Night of Power falls in the last ten nights of Ramadan. | La Nuit du Destin se situe dans les dix dernières nuits du ramadan.
+madrasa | école coranique, madrasa | n | C1 | /məˈdræsə/ | The children study Arabic at the madrasa. | Les enfants étudient l'arabe à l'école coranique.
+pre-dawn meal | repas d'avant l'aube (suhour) | n | B2 | /ˌpriː dɔːn ˈmiːl/ | We eat dates and yoghurt for the pre-dawn meal. | Nous mangeons des dattes et du yaourt avant l'aube.
+to break the fast | rompre le jeûne | expr | B1 | /breɪk ðə ˈfɑːst/ | We break the fast with dates and water. | Nous rompons le jeûne avec des dattes et de l'eau.
+prayer hall | salle de prière | n | B1 | /ˈpreə hɔːl/ | Leave your shoes outside the prayer hall. | Laisse tes chaussures à l'entrée de la salle de prière.
+qibla | qibla (direction de la prière) | n | C1 | /ˈkɪblə/ | A small niche shows the direction of the qibla. | Une petite niche indique la direction de la qibla.
+wudu | ablutions (rituelles) | n | C1 | /wʊˈduː/ | He performed wudu before the prayer. | Il a fait ses ablutions avant la prière.
+holy book | livre saint | n | A2 | /ˌhəʊli ˈbʊk/ | The Qur'an is the holy book of Islam. | Le Coran est le livre saint de l'islam.
+holy city | ville sainte | n | B1 | /ˌhəʊli ˈsɪti/ | Medina is the second holy city of Islam. | Médine est la deuxième ville sainte de l'islam.
+God-fearing | pieux, qui craint Dieu | adj | B2 | /ˈɡɒd ˌfɪərɪŋ/ | She came from a God-fearing family. | Elle venait d'une famille pieuse.
+good deed | bonne action | n | A2 | /ˌɡʊd ˈdiːd/ | Smiling at your brother is a good deed. | Sourire à son frère est une bonne action.
+misguidance | égarement | n | C2 | /ˌmɪsˈɡaɪdns/ | We ask God to protect us from misguidance. | Nous demandons à Dieu de nous préserver de l'égarement.
+oneness of God | unicité de Dieu | n | B2 | /ˌwʌnnəs əv ˈɡɒd/ | The oneness of God is the heart of the faith. | L'unicité de Dieu est le cœur de la foi.
+attributes of God | attributs de Dieu | n | C1 | /ˌætrɪbjuːts əv ˈɡɒd/ | Mercy is one of the attributes of God. | La miséricorde est l'un des attributs de Dieu.
+servant of God | serviteur de Dieu | n | B2 | /ˌsɜːvənt əv ˈɡɒd/ | The name Abdullah means "servant of God". | Le prénom Abdallah signifie « serviteur de Dieu ».
+unbeliever | incroyant, mécréant | n | C1 | /ˌʌnbɪˈliːvə/ | The verse addresses both believers and unbelievers. | Le verset s'adresse aux croyants comme aux incroyants.
+preaching | prédication | n | C1 | /ˈpriːtʃɪŋ/ | His preaching drew large crowds. | Sa prédication attirait les foules.
+interfaith dialogue | dialogue interreligieux | n | C1 | /ˌɪntəfeɪθ ˈdaɪəlɒɡ/ | The conference promotes interfaith dialogue. | La conférence encourage le dialogue interreligieux.
+religious tolerance | tolérance religieuse | n | B2 | /rɪˌlɪdʒəs ˈtɒlərəns/ | The city was known for its religious tolerance. | La ville était connue pour sa tolérance religieuse.
+monotheist | monothéiste | n | C1 | /ˈmɒnəʊθiːɪst/ | Abraham is described as a pure monotheist. | Abraham est décrit comme un pur monothéiste.
+pillars of Islam | piliers de l'islam | n | B1 | /ˌpɪləz əv ˈɪzlɑːm/ | Fasting is one of the five pillars of Islam. | Le jeûne est l'un des cinq piliers de l'islam.
+declaration of faith | profession de foi (attestation) | n | B2 | /ˌdekləˌreɪʃn əv ˈfeɪθ/ | The declaration of faith is the first pillar. | La profession de foi est le premier pilier.
+ritual purity | pureté rituelle | n | C1 | /ˌrɪtʃuəl ˈpjʊərəti/ | Prayer requires a state of ritual purity. | La prière exige un état de pureté rituelle.
+circumambulation | circumambulation (tawaf) | n | C2 | /ˌsɜːkəmæmbjʊˈleɪʃn/ | Pilgrims perform seven circumambulations of the Kaaba. | Les pèlerins font sept tours rituels autour de la Kaaba.
+sacrificial animal | animal sacrifié | n | C1 | /ˌsækrɪfɪʃl ˈænɪml/ | The meat of the sacrificial animal is shared with the poor. | La viande de l'animal sacrifié est partagée avec les pauvres.
+Eid al-Adha | l'Aïd al-Adha (fête du Sacrifice) | n | B1 | /ˌiːd æl ˈɑːdə/ | Eid al-Adha comes at the end of the pilgrimage. | L'Aïd al-Adha a lieu à la fin du pèlerinage.
+Eid al-Fitr | l'Aïd al-Fitr (fête de la rupture du jeûne) | n | B1 | /ˌiːd æl ˈfɪtə/ | Children receive gifts on Eid al-Fitr. | Les enfants reçoivent des cadeaux le jour de l'Aïd al-Fitr.
+moon sighting | observation du croissant de lune | n | C1 | /ˈmuːn ˌsaɪtɪŋ/ | The start of Ramadan depends on the moon sighting. | Le début du ramadan dépend de l'observation du croissant.
+dawn prayer | prière de l'aube | n | B1 | /ˈdɔːn preə/ | He wakes up early for the dawn prayer. | Il se lève tôt pour la prière de l'aube.
+night prayer | prière de la nuit | n | B1 | /ˈnaɪt preə/ | She stays up late for the night prayer. | Elle veille tard pour la prière de la nuit.
+minbar | minbar, chaire | n | C2 | /ˈmɪnbɑː/ | The imam delivers the sermon from the minbar. | L'imam prononce le sermon depuis le minbar.
+Bible | Bible | n | A2 | /ˈbaɪbl/ | The Bible has been translated into many languages. | La Bible a été traduite dans de nombreuses langues.
+Old Testament | Ancien Testament | n | B2 | /ˌəʊld ˈtestəmənt/ | The story of Noah is told in the Old Testament. | L'histoire de Noé est racontée dans l'Ancien Testament.
+New Testament | Nouveau Testament | n | B2 | /ˌnjuː ˈtestəmənt/ | The New Testament contains the four Gospels. | Le Nouveau Testament contient les quatre Évangiles.
+thank God | Dieu merci | expr | B1 | /ˈθæŋk ɡɒd/ | Thank God you're safe! | Dieu merci, tu es sain et sauf !
+God willing | si Dieu le veut | expr | B1 | /ˌɡɒd ˈwɪlɪŋ/ | We'll see you next summer, God willing. | Nous te reverrons l'été prochain, si Dieu le veut.
+God forbid | à Dieu ne plaise | expr | B2 | /ˌɡɒd fəˈbɪd/ | If, God forbid, there's a fire, use the stairs. | Si, à Dieu ne plaise, il y a un incendie, prenez l'escalier.
+God bless you | que Dieu te bénisse | expr | B1 | /ˌɡɒd ˈbles juː/ | Thank you for your kindness, God bless you. | Merci pour ta gentillesse, que Dieu te bénisse.
+ummah | oumma, communauté des croyants | n | C1 | /ˈʊmə/ | The imam spoke about the unity of the ummah. | L'imam a parlé de l'unité de l'oumma.
+Al-Aqsa Mosque | mosquée al-Aqsa | n | B2 | /æl ˌæksə ˈmɒsk/ | The Al-Aqsa Mosque stands in the old city of Jerusalem. | La mosquée al-Aqsa se trouve dans la vieille ville de Jérusalem.
+Christianity | christianisme | n | B1 | /ˌkrɪstiˈænəti/ | Christianity spread across the Roman Empire. | Le christianisme s'est répandu dans tout l'Empire romain.
+Judaism | judaïsme | n | B1 | /ˈdʒuːdeɪɪzəm/ | Judaism is one of the oldest monotheistic religions. | Le judaïsme est l'une des plus anciennes religions monothéistes.
+Hinduism | hindouisme | n | B2 | /ˈhɪnduːɪzəm/ | Hinduism is the main religion in India. | L'hindouisme est la principale religion de l'Inde.
+Buddhism | bouddhisme | n | B2 | /ˈbʊdɪzəm/ | Buddhism began in northern India. | Le bouddhisme est né dans le nord de l'Inde.
+Sikhism | sikhisme | n | C1 | /ˈsiːkɪzəm/ | Sikhism was founded in the Punjab. | Le sikhisme a été fondé au Pendjab.
+Jewish | juif | adj | A2 | /ˈdʒuːɪʃ/ | Our Jewish neighbours invited us for dinner. | Nos voisins juifs nous ont invités à dîner.
+Hindu | hindou | n | B1 | /ˈhɪnduː/ | Millions of Hindus bathe in the Ganges. | Des millions d'hindous se baignent dans le Gange.
+Buddhist | bouddhiste | adj | B1 | /ˈbʊdɪst/ | We visited a Buddhist temple in Thailand. | Nous avons visité un temple bouddhiste en Thaïlande.
+Sikh | sikh | n | B2 | /siːk/ | Many Sikhs wear a turban. | Beaucoup de sikhs portent un turban.
+Catholic | catholique | adj | B1 | /ˈkæθlɪk/ | She went to a Catholic school. | Elle est allée dans une école catholique.
+Protestant | protestant | adj | B1 | /ˈprɒtɪstənt/ | Most people in the village are Protestant. | La plupart des habitants du village sont protestants.
+Sunni | sunnite | adj | B2 | /ˈsʊni/ | Most Muslims in the world are Sunni. | La plupart des musulmans du monde sont sunnites.
+Shia | chiite | adj | B2 | /ˈʃiːə/ | Iran has a large Shia majority. | L'Iran a une large majorité chiite.
+Sufi | soufi | n | C1 | /ˈsuːfi/ | The Sufi poet wrote about the love of God. | Le poète soufi a écrit sur l'amour de Dieu.
+place of worship | lieu de culte | n | B2 | /ˌpleɪs əv ˈwɜːʃɪp/ | A mosque is a place of worship for Muslims. | Une mosquée est un lieu de culte pour les musulmans.
+Holy Land | Terre sainte | n | B2 | /ˈhəʊli lænd/ | Pilgrims have travelled to the Holy Land for centuries. | Les pèlerins se rendent en Terre sainte depuis des siècles.
+holy water | eau bénite | n | B2 | /ˌhəʊli ˈwɔːtə/ | The priest sprinkled holy water on the baby. | Le prêtre a aspergé le bébé d'eau bénite.
+Holy Spirit | Saint-Esprit | n | B2 | /ˌhəʊli ˈspɪrɪt/ | Christians believe in the Father, the Son and the Holy Spirit. | Les chrétiens croient au Père, au Fils et au Saint-Esprit.
+Garden of Eden | jardin d'Éden | n | B2 | /ˌɡɑːdn əv ˈiːdn/ | Adam and Eve lived in the Garden of Eden. | Adam et Ève vivaient dans le jardin d'Éden.
+Noah's Ark | arche de Noé | n | B1 | /ˌnəʊəz ˈɑːk/ | The animals went into Noah's Ark two by two. | Les animaux sont entrés dans l'arche de Noé deux par deux.
+Jesus | Jésus | n | A2 | /ˈdʒiːzəs/ | Muslims honour Jesus as a great prophet. | Les musulmans honorent Jésus comme un grand prophète.
+Mary | Marie (mère de Jésus) | n | A2 | /ˈmeəri/ | Mary is the only woman mentioned by name in the Quran. | Marie est la seule femme mentionnée par son nom dans le Coran.
+Moses | Moïse | n | A2 | /ˈməʊzɪz/ | Moses led the Children of Israel out of Egypt. | Moïse a fait sortir les enfants d'Israël d'Égypte.
+Noah | Noé | n | A2 | /ˈnəʊə/ | Noah built a huge ship before the flood. | Noé a construit un immense navire avant le déluge.
+Eve | Ève | n | A2 | /iːv/ | Eve was the first woman and the wife of Adam. | Ève était la première femme et l'épouse d'Adam.
+Ishmael | Ismaël | n | B2 | /ˈɪʃmeɪl/ | Ishmael was the son of Abraham and Hagar. | Ismaël était le fils d'Abraham et d'Agar.
+Solomon | Salomon | n | B2 | /ˈsɒləmən/ | King Solomon was famous for his wisdom. | Le roi Salomon était célèbre pour sa sagesse.
+Jonah | Jonas | n | B2 | /ˈdʒəʊnə/ | Jonah was swallowed by a huge fish. | Jonas a été avalé par un énorme poisson.
+Elijah | Élie | n | B2 | /ɪˈlaɪdʒə/ | Elijah was a prophet sent to the people of Israel. | Élie était un prophète envoyé au peuple d'Israël.
+Zechariah | Zacharie | n | C1 | /ˌzekəˈraɪə/ | Zechariah was the father of John the Baptist. | Zacharie était le père de Jean-Baptiste.
+John the Baptist | Jean-Baptiste | n | B2 | /ˌdʒɒn ðə ˈbæptɪst/ | John the Baptist lived simply in the desert. | Jean-Baptiste vivait simplement dans le désert.
+to say a prayer | dire une prière | expr | B1 | /seɪ ə ˈpreə/ | We say a prayer before every meal. | Nous disons une prière avant chaque repas.
+to take a vow | faire vœu, prononcer un vœu | expr | C1 | /teɪk ə ˈvaʊ/ | Monks take a vow of silence. | Les moines font vœu de silence.
+blind faith | foi aveugle | n | C1 | /ˌblaɪnd ˈfeɪθ/ | He followed the leader with blind faith. | Il a suivi le chef avec une foi aveugle.
 `,
 );
