@@ -8,6 +8,7 @@ import { THEMES } from "@/lib/langues/themes/index";
 import { useResolu, useTextes } from "@/lib/modules/textes-client";
 import { type Carte, type Entree, NIVEAUX, type Nature, type Niveau, type Theme } from "@/lib/langues/types";
 import { parler, voixDisponible } from "@/lib/langues/voix";
+import { Classement } from "./Classement";
 import { ajouterMot, useDonnees } from "./donnees";
 import type { Lancement } from "./Seance";
 
@@ -204,6 +205,8 @@ function Themes({ onOuvrir, lancer }: Pick<Props, "onOuvrir" | "lancer">) {
         </div>
         {vide && <p className="lg-legende">Aucun mot ne correspond à ces filtres.</p>}
       </div>
+
+      <Classement />
 
       <ul className="lg-themes">
         {visibles.map((t) => {

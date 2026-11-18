@@ -2,6 +2,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { journaliser } from "@/lib/audit";
 import { identiteDepuisJeton, origineDe } from "@/lib/compte/google";
 import { googleConfigure, NOM_COOKIE_COMPTE, NOM_COOKIE_OAUTH, optionsCookieAllerRetour, optionsCookieCompte, signerCompte, verifierAllerRetour } from "@/lib/compte/jeton";
+import { retenirAvatar } from "@/lib/langues/classement-serveur";
 import { dbAdmin } from "@/lib/supabase";
 
 /*
@@ -33,6 +34,7 @@ async function traiter(requete: NextRequest, params: URLSearchParams) {
   const ligne = (Array.isArray(data) ? data[0] : data) as { id: string; nom: string; email: string; session_version: number; nouveau: boolean } | null;
   if (error || !ligne) return vers(`/connexion?erreur=base&retour=${encodeURIComponent(attendu.retour)}`);
   if (ligne.nouveau) await journaliser("compte_cree", {});
+  if (identite.avatar) await retenirAvatar(ligne.id, identite.avatar);
 
   const reponse = vers(attendu.retour);
   reponse.cookies.set(NOM_COOKIE_COMPTE, await signerCompte({ id: ligne.id, nom: ligne.nom, email: ligne.email, sv: ligne.session_version }), optionsCookieCompte());

@@ -12,7 +12,7 @@ import { identifiantClientGoogle } from "./jeton";
  * demande (protection contre le rejeu). Aucun code secret n'est nécessaire : rien à cacher,
  * rien à faire fuiter.
  *
- * On ne demande que l'identité : nom et adresse e-mail. Aucun accès à Gmail, Drive ou autre.
+ * On ne demande que l'identité : nom, adresse e-mail et photo du profil. Aucun accès à Gmail, Drive ou autre.
  */
 
 const AUTORISATION = "https://accounts.google.com/o/oauth2/v2/auth";
@@ -54,7 +54,7 @@ export function adresseAutorisation(p: { retour: string; etat: string; nonce: st
   return url.toString();
 }
 
-export type IdentiteGoogle = { sub: string; email: string; nom: string };
+export type IdentiteGoogle = { sub: string; email: string; nom: string; avatar: string };
 
 /** Vérifie le jeton d'identité envoyé par Google et en tire l'identité. Tout défaut → null. */
 export async function identiteDepuisJeton(jeton: string | null | undefined, nonce: string): Promise<IdentiteGoogle | null> {
@@ -71,7 +71,9 @@ export async function identiteDepuisJeton(jeton: string | null | undefined, nonc
     if (payload.email_verified !== true && payload.email_verified !== "true") return null;
     const email = typeof payload.email === "string" ? payload.email : "";
     const nom = typeof payload.name === "string" && payload.name.trim() ? payload.name.trim() : email.split("@")[0] ?? "";
-    return { sub: payload.sub, email, nom };
+    // La photo du profil (pour le classement du vocabulaire, si l'utilisateur le rejoint).
+    const avatar = typeof payload.picture === "string" ? payload.picture : "";
+    return { sub: payload.sub, email, nom, avatar };
   } catch {
     return null;
   }

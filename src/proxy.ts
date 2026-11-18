@@ -34,7 +34,8 @@ export async function proxy(request: NextRequest) {
     `script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'wasm-unsafe-eval'${dev ? " 'unsafe-eval'" : ""}`,
     "style-src 'self' 'unsafe-inline'",
     // i.ytimg.com : vignettes des vidéos YouTube collées dans L'Alambic (outil « Transcrire »).
-    `img-src 'self' data: blob: https://i.ytimg.com${stockage}`,
+    // lh3 à lh6.googleusercontent.com : photos de profil Google des apprenants qui ont rejoint le classement.
+    `img-src 'self' data: blob: https://i.ytimg.com https://lh3.googleusercontent.com https://lh4.googleusercontent.com https://lh5.googleusercontent.com https://lh6.googleusercontent.com${stockage}`,
     // Lecteur YouTube officiel (domaine sans cookie), pour lire une vidéo comme un livre.
     "frame-src https://www.youtube-nocookie.com https://www.youtube.com",
     // L'Alambic : aperçu des sons et vidéos de l'appareil (adresses blob: locales, rien ne sort).

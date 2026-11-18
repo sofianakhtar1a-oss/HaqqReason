@@ -90,6 +90,7 @@ ok("un jeton expiré est refusé", (await verifier(await fabriquer({}, { expire:
 ok("un jeton émis il y a plus d'une heure est refusé", (await verifier(await fabriquer({}, { emis: Math.floor(Date.now() / 1000) - 7200, expire: Math.floor(Date.now() / 1000) + 600 }))) === null);
 ok("une adresse que Google n'a pas vérifiée est refusée", (await verifier(await fabriquer({ email_verified: false }))) === null);
 ok("sans nom, on prend le début de l'adresse", (await verifier(await fabriquer({ name: "" })))?.nom === "aicha");
+ok("la photo du profil Google est retenue (pour le classement)", (await verifier(await fabriquer({ picture: "https://lh3.googleusercontent.com/a/ACg8oc-x=s96-c" })))?.avatar === "https://lh3.googleusercontent.com/a/ACg8oc-x=s96-c" && identite?.avatar === "");
 ok("sans jeton, ou avec n'importe quoi, la connexion échoue proprement", (await verifier(null)) === null && (await verifier("pas-un-jeton")) === null && (await verifier("x".repeat(9000))) === null);
 const sansSignature = (await fabriquer({})).split(".").slice(0, 2).join(".") + ".";
 ok("un jeton sans signature est refusé", (await verifier(sansSignature)) === null);

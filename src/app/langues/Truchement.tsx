@@ -3,10 +3,12 @@
 import Link from "next/link";
 import { BookMarked, BookOpenText, Headphones, House, Layers, Sparkles } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
+import { flushSync } from "react-dom";
 import { BoutonTheme } from "@/components/BoutonTheme";
 import { BoutonCompte } from "@/components/compte/BoutonCompte";
 import { Logo } from "@/components/Logo";
 import { useAccesComplet } from "@/lib/client/acces";
+import { mouvementReduit } from "@/lib/langues/feux";
 import { useResolu, useTextes } from "@/lib/modules/textes-client";
 import { Accueil } from "./Accueil";
 import { useDonnees } from "./donnees";
@@ -42,6 +44,58 @@ function lireRoute(onglets: { id: Onglet }[]): Route {
 
 const sAbonner = () => () => undefined;
 
+/** Le point d'où part la transition (l'onglet touché), en coordonnées de l'écran. */
+type Depuis = { x: number; y: number };
+const depuisClic = (e: React.MouseEvent<HTMLElement>): Depuis => {
+  const r = e.currentTarget.getBoundingClientRect();
+  // Un clic au clavier n'a pas de coordonnées : on part du centre de l'onglet.
+  return e.clientX || e.clientY ? { x: e.clientX, y: e.clientY } : { x: r.left + r.width / 2, y: r.top + r.height / 2 };
+};
+
+/**
+ * Change d'onglet avec une transition : la nouvelle page s'ouvre en cercle depuis l'onglet touché,
+ * l'ancienne recule et s'efface. Navigateurs sans View Transitions, ou mouvement réduit : changement direct.
+ */
+function transition(scene: HTMLElement | null, depuis: Depuis | undefined, appliquer: () => void) {
+  const doc = document as Document & { startViewTransition?: (f: () => void) => { finished: Promise<void> } };
+  if (!depuis || !scene || !doc.startViewTransition || mouvementReduit()) return appliquer();
+  const r = scene.getBoundingClientRect();
+  const racine = document.documentElement;
+  racine.style.setProperty("--vt-x", `${Math.round(depuis.x - r.left)}px`);
+  racine.style.setProperty("--vt-y", `${Math.round(depuis.y - r.top)}px`);
+  racine.dataset.lgTransition = "";
+  doc
+    .startViewTransition(() => flushSync(appliquer))
+    .finished.catch(() => undefined)
+    .finally(() => delete racine.dataset.lgTransition);
+}
+
+/** Une lueur douce suit le pointeur (souris ou stylet seulement), teintée selon l'onglet. */
+function Lueur() {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!window.matchMedia("(pointer: fine)").matches || mouvementReduit()) return;
+    let image = 0;
+    let x = 0;
+    let y = 0;
+    const bouger = (e: PointerEvent) => {
+      x = e.clientX;
+      y = e.clientY;
+      if (image) return;
+      image = requestAnimationFrame(() => {
+        image = 0;
+        ref.current?.style.setProperty("transform", `translate3d(${x}px, ${y}px, 0)`);
+      });
+    };
+    window.addEventListener("pointermove", bouger, { passive: true });
+    return () => {
+      window.removeEventListener("pointermove", bouger);
+      cancelAnimationFrame(image);
+    };
+  }, []);
+  return <div ref={ref} className="lg-lueur" aria-hidden="true" />;
+}
+
 export function Truchement() {
   const monte = useSyncExternalStore(
     sAbonner,
@@ -71,6 +125,7 @@ export function Truchement() {
 
   /** Change d'écran ; un écran de détail s'empile dans l'historique (le « retour » du téléphone le ferme). */
   const empile = useRef(false);
+  const scene = useRef<HTMLElement>(null);
   const aller = useCallback((hash: string) => {
     const vide = hash === premier || hash === "";
     const url = vide ? window.location.pathname : `#${hash}`;
@@ -84,6 +139,15 @@ export function Truchement() {
     setRoute(lireRoute(ONGLETS));
     window.scrollTo({ top: 0 });
   }, [ONGLETS, premier]);
+  /** Un onglet touché : la même navigation, avec la transition créative. */
+  const versOnglet = useCallback(
+    (id: Onglet, e: React.MouseEvent<HTMLElement>) => {
+      const depuis = depuisClic(e);
+      if (route.onglet === id && !route.detail) return;
+      transition(scene.current, depuis, () => aller(id));
+    },
+    [aller, route.onglet, route.detail],
+  );
 
   const detail = useCallback(
     (onglet: Onglet) => (id: string | null) => {
@@ -112,7 +176,8 @@ export function Truchement() {
   const immersif = (route.onglet === "ecouter" || route.onglet === "lire") && Boolean(route.detail);
 
   return (
-    <div className="lg lg-espace" data-accent="azur" data-immersif={immersif || undefined}>
+    <div className="lg lg-espace" data-accent="azur" data-immersif={immersif || undefined} data-onglet={route.onglet}>
+      <Lueur />
       <header className="lg-tete sans-impression">
         <Logo />
         <span className="lg-tete-titre" aria-hidden="true">
@@ -124,7 +189,7 @@ export function Truchement() {
         <span className="flex-1" />
         <nav className="lg-onglets" aria-label="Le Truchement">
           {ONGLETS.map(({ id, nom, Icone }) => (
-            <button key={id} type="button" className="lg-onglet" aria-current={route.onglet === id ? "page" : undefined} onClick={() => aller(id)}>
+            <button key={id} type="button" className="lg-onglet" aria-current={route.onglet === id ? "page" : undefined} onClick={(e) => versOnglet(id, e)}>
               <Icone className="size-4" aria-hidden="true" />
               {nom}
             </button>
@@ -139,7 +204,7 @@ export function Truchement() {
         )}
       </header>
 
-      <main className="lg-scene">
+      <main ref={scene} className="lg-scene">
         <h1 className="sr-only">{t("meta.titre")}</h1>
         {erreur && (
           <p className="lg-erreur" role="alert">
@@ -162,7 +227,7 @@ export function Truchement() {
 
       <nav className="lg-barre-bas sans-impression" aria-label="Le Truchement" style={{ gridTemplateColumns: `repeat(${ONGLETS.length}, 1fr)` }}>
         {ONGLETS.map(({ id, nom, Icone }) => (
-          <button key={id} type="button" aria-current={route.onglet === id ? "page" : undefined} onClick={() => aller(id)}>
+          <button key={id} type="button" aria-current={route.onglet === id ? "page" : undefined} onClick={(e) => versOnglet(id, e)}>
             <Icone className="size-5" strokeWidth={route.onglet === id ? 2.2 : 1.7} aria-hidden="true" />
             <span>{nom}</span>
           </button>

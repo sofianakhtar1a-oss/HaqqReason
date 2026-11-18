@@ -18,7 +18,7 @@ await db.exec(`create role anon nologin; create role authenticated nologin; crea
 // Ce que Supabase fournit d'office : le schéma « extensions » et la table des espaces de stockage.
 await db.exec(`create schema extensions; grant usage on schema extensions to anon, authenticated, service_role;
   create schema storage; create table storage.buckets (id text primary key, name text, public boolean, file_size_limit bigint, allowed_mime_types text[]);`);
-for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql", "010_contributions.sql", "011_espaces.sql", "011_espaces.sql", "012_islam_un_bloc.sql", "012_islam_un_bloc.sql", "013_messagerie.sql", "013_messagerie.sql", "014_comptes.sql", "014_comptes.sql"]) {
+for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql", "010_contributions.sql", "011_espaces.sql", "011_espaces.sql", "012_islam_un_bloc.sql", "012_islam_un_bloc.sql", "013_messagerie.sql", "013_messagerie.sql", "014_comptes.sql", "014_comptes.sql", "015_classement.sql", "015_classement.sql"]) {
   await db.exec(readFileSync(new URL(`../supabase/migrations/${fichier}`, import.meta.url), "utf8"));
 }
 
@@ -543,6 +543,87 @@ ok("013 : la conversation disparaît avec la contribution", Number((await db.que
   }
   await db.exec(`delete from utilisateurs where id = '${a.id}'`);
   ok("014 : supprimer un compte efface toutes ses données", Number((await db.query(`select count(*)::int n from donnees_utilisateur where utilisateur_id = '${a.id}'`)).rows[0].n) === 0 && Number((await db.query(`select count(*)::int n from fichiers_utilisateur`)).rows[0].n) === 0);
+}
+
+// 015 : points du vocabulaire et classement
+{
+  const u1 = (await db.query(`select * from compte_ouvrir('google-p1', 'p1@exemple.fr', 'Yasmine Benali')`)).rows[0].id;
+  const u2 = (await db.query(`select * from compte_ouvrir('google-p2', 'p2@exemple.fr', 'Karim Haddad')`)).rows[0].id;
+  // Entre deux envois, le serveur exige 600 ms : les tests font « passer le temps ».
+  const vieillir = (uid) => db.exec(`update scores_vocabulaire set derniere_reponse = derniere_reponse - interval '2 seconds' where utilisateur_id = '${uid}'`);
+  const repondre = async (uid, reponses, attendre = true) => {
+    if (attendre) await vieillir(uid);
+    return (await db.query(`select vocabulaire_repondre($1, $2::jsonb) r`, [uid, JSON.stringify(reponses)])).rows[0].r;
+  };
+  const j = (mot, resultat = "juste", base = 10) => ({ mot, resultat, base });
+
+  const mult = (await db.query(`select array_agg(vocabulaire_multiplicateur(x)::float order by x) m from unnest(array[0,4,5,9,10,19,20,39,40,100]) x`)).rows[0].m;
+  ok("015 : multiplicateur de série ×1 / ×1,5 dès 5 / ×2 dès 10 / ×2,5 dès 20 / ×3 dès 40", JSON.stringify(mult) === JSON.stringify([1, 1, 1.5, 1.5, 2, 2, 2.5, 2.5, 3, 3]));
+
+  let r = await repondre(u1, [j("famille:brother")]);
+  ok("015 : première bonne réponse : 10 points + 5 de bonus du jour", r.gain === 10 && r.bonus === 5 && r.points === 15 && r.serie === 1 && r.jours === 1);
+  r = await repondre(u1, [j("famille:brother")]);
+  ok("015 : le même mot le même jour ne rapporte rien (mais compte dans la série)", r.gain === 0 && r.bonus === 0 && r.serie === 2 && r.points === 15);
+  const trop = await repondre(u1, [j("famille:sister")], false);
+  ok("015 : deux envois à moins de 600 ms : le second est refusé", trop.erreur === "trop_vite");
+  r = await repondre(u1, [j("famille:sister"), j("famille:uncle"), j("famille:aunt"), j("famille:cousin")]);
+  ok("015 : dès la 5e bonne réponse d'affilée, ×1,5 (15 points)", r.gain === 50 && r.serie === 6 && r.details[2].gain === 15 && r.details[1].gain === 10 && r.points === 65);
+  r = await repondre(u1, [j("famille:niece", "presque", 15)]);
+  ok("015 : « presque » : la moitié de la base (arrondie au-dessus), la série tient", r.gain === 8 && r.serie === 6);
+  r = await repondre(u1, [j("famille:nephew", "faux")]);
+  ok("015 : une erreur : 0 point, jamais de malus, la série repart de zéro", r.gain === 0 && r.serie === 0 && r.points === 73 && r.meilleure_serie === 6);
+  r = await repondre(u1, [j("famille:x1"), j("famille:x2"), j("famille:x3"), j("famille:x4"), j("famille:x5"), j("famille:x6"), j("famille:x7")]);
+  ok("015 : plus de 6 réponses d'un coup : refusé", r.erreur === "illisible");
+  ok("015 : un compte inconnu ne marque rien", (await repondre("00000000-0000-0000-0000-000000000000", [j("famille:a")], false)).erreur === "inconnu");
+  r = await repondre(u1, [{ mot: "famille:z", resultat: "triche", base: 10 }, { mot: "famille:y", resultat: "juste", base: 999 }]);
+  ok("015 : résultat inconnu ignoré, base bornée à 20", r.gain === 20 && r.details.length === 1);
+
+  // Jours d'affilée
+  await db.exec(`update scores_vocabulaire set dernier_jour = dernier_jour - 1, jours = 3 where utilisateur_id = '${u1}'`);
+  r = await repondre(u1, [j("famille:jour4")]);
+  ok("015 : bonne réponse le lendemain : 4 jours d'affilée, bonus 20", r.jours === 4 && r.bonus === 20);
+  await db.exec(`update scores_vocabulaire set dernier_jour = dernier_jour - 3, jours = 9 where utilisateur_id = '${u1}'`);
+  r = await repondre(u1, [j("famille:retour")]);
+  ok("015 : après des jours manqués, la série de jours repart à 1", r.jours === 1 && r.bonus === 5);
+
+  // Plafond du jour
+  await db.exec(`update points_jour set points = 2495 where utilisateur_id = '${u1}'`);
+  r = await repondre(u1, [j("famille:plafond1"), j("famille:plafond2")]);
+  ok("015 : 2 500 points par jour au plus", r.gain === 5 && r.plafond === true && r.aujourdhui === 2500);
+  await db.exec(`update points_jour set points = 100 where utilisateur_id = '${u1}'`);
+
+  // Le classement : seuls ceux qui l'ont rejoint y figurent.
+  await repondre(u2, [j("voyage:a"), j("voyage:b")]);
+  let cl = (await db.query(`select vocabulaire_classement($1, 'semaine') c`, [u2])).rows[0].c;
+  ok("015 : personne au classement tant qu'on ne l'a pas rejoint", cl.participants === 0 && cl.top.length === 0 && cl.moi.rang === null && cl.moi.classement === false && cl.moi.points === 25);
+  await db.exec(`update utilisateurs set classement = true where id in ('${u1}', '${u2}')`);
+  cl = (await db.query(`select vocabulaire_classement($1, 'semaine') c`, [u2])).rows[0].c;
+  const total1 = Number((await db.query(`select points from scores_vocabulaire where utilisateur_id = '${u1}'`)).rows[0].points);
+  ok("015 : semaine : les points depuis lundi, du plus haut au plus bas", cl.participants === 2 && cl.top[0].id === u1 && cl.top[0].points === 100 && cl.top[1].rang === 2 && cl.moi.rang === 2);
+  cl = (await db.query(`select vocabulaire_classement($1, 'toujours') c`, [u2])).rows[0].c;
+  ok("015 : depuis toujours : le total du compte", cl.periode === "toujours" && cl.top[0].points === total1 && cl.moi.total === 25);
+  await db.exec(`update points_jour set jour = jour - 14 where utilisateur_id = '${u2}'`);
+  cl = (await db.query(`select vocabulaire_classement($1, 'semaine') c`, [u2])).rows[0].c;
+  ok("015 : les points d'une autre semaine ne comptent pas cette semaine", cl.participants === 1 && cl.moi.rang === null && cl.moi.semaine === 0);
+
+  // La photo : seulement une adresse de Google.
+  let refusee = false;
+  try { await db.exec(`update utilisateurs set avatar = 'https://pirate.example/x.png' where id = '${u1}'`); } catch { refusee = true; }
+  let refusee2 = false;
+  try { await db.exec(`update utilisateurs set avatar = 'javascript:alert(1)' where id = '${u1}'`); } catch { refusee2 = true; }
+  await db.exec(`update utilisateurs set avatar = 'https://lh3.googleusercontent.com/a/ACg8ocJ-xyz=s96-c' where id = '${u1}'`);
+  ok("015 : la photo n'accepte qu'une adresse googleusercontent.com", refusee && refusee2);
+
+  for (const role of ["anon", "authenticated"]) {
+    await db.exec(`set role ${role}`);
+    await refuse(`[${role}] ne lit pas les scores`, `select * from scores_vocabulaire`);
+    await refuse(`[${role}] ne lit pas les points du jour`, `select * from points_jour`);
+    await refuse(`[${role}] n'écrit pas de points`, `select vocabulaire_repondre('${u1}', '[{"mot":"a","resultat":"juste","base":20}]'::jsonb)`);
+    await refuse(`[${role}] ne lit pas le classement`, `select vocabulaire_classement('${u1}', 'semaine')`);
+    await db.exec(`reset role`);
+  }
+  await db.exec(`delete from utilisateurs where id = '${u1}'`);
+  ok("015 : supprimer un compte efface ses points", Number((await db.query(`select count(*)::int n from scores_vocabulaire where utilisateur_id = '${u1}'`)).rows[0].n) === 0 && Number((await db.query(`select count(*)::int n from points_jour where utilisateur_id = '${u1}'`)).rows[0].n) === 0);
 }
 
 console.log(echecs === 0 ? "\nTous les tests SQL passent." : `\n${echecs} test(s) en échec.`);

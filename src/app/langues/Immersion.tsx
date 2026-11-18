@@ -1,11 +1,12 @@
 "use client";
 
-import { ArrowLeft, Captions, FileUp, ListVideo, Maximize2, Type, MousePointerClick, Pause, Play, Repeat, SkipBack, SkipForward } from "lucide-react";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { ArrowLeft, Captions, FileUp, ListVideo, Maximize2, Mic2, Type, MousePointerClick, Pause, Play, Repeat, SkipBack, SkipForward } from "lucide-react";
+import { type RefObject, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { dureeLisible } from "@/lib/alambic/transcription/exports";
 import { analyserPhrase } from "@/lib/alambic/transcription/client";
 import { motA, phraseA } from "@/lib/alambic/transcription/phrases";
 import { type Analyse, type Phrase, texteDe, type Transcription } from "@/lib/alambic/transcription/types";
+import { avancee, horodaterTraduction } from "@/lib/langues/karaoke";
 import { ecrire, ecrireBlob, lireBlob, type MediaLangue } from "@/lib/langues/stockage";
 import { type Controle, controleElement, controleVide, controleYoutube, Horloge } from "../alambic/transcription/controle";
 import type { Cible } from "../alambic/transcription/Glose";
@@ -23,7 +24,9 @@ import { GloseMot } from "./GloseMot";
  * « traduction » (uniquement la traduction).
  */
 type Affichage = "source" | "deux" | "traduction";
-type Reglages = { affichage: Affichage; pauseAuMot: boolean; boucle: boolean; vitesse: number; texte: boolean; taille: number; tailleSt: number };
+/** Karaoké : quelles lignes s'allument mot à mot (la langue de la vidéo, sa traduction, les deux, aucune). */
+type Karaoke = "source" | "traduction" | "deux" | "aucun";
+type Reglages = { affichage: Affichage; karaoke: Karaoke; pauseAuMot: boolean; boucle: boolean; vitesse: number; texte: boolean; taille: number; tailleSt: number };
 const CLE = "haqqreason-truchement-immersion";
 const VITESSES = [0.75, 0.9, 1];
 const TAILLE_MIN = 35;
@@ -31,14 +34,15 @@ const TAILLE_ST_MIN = 60;
 const TAILLE_ST_MAX = 180;
 
 function reglagesInitiaux(): Reglages {
-  const defaut: Reglages = { affichage: "deux", pauseAuMot: true, boucle: false, vitesse: 1, texte: true, taille: 100, tailleSt: 100 };
+  const defaut: Reglages = { affichage: "deux", karaoke: "deux", pauseAuMot: true, boucle: false, vitesse: 1, texte: true, taille: 100, tailleSt: 100 };
   try {
     const lu = JSON.parse(localStorage.getItem(CLE) ?? "{}") as Partial<Reglages> & { francais?: boolean };
     // Réglage d'avant : « Français » coché ou non.
     const affichage: Affichage = lu.affichage ?? (lu.francais === false ? "source" : "deux");
     const taille = Math.min(100, Math.max(TAILLE_MIN, Number(lu.taille) || 100));
     const tailleSt = Math.min(TAILLE_ST_MAX, Math.max(TAILLE_ST_MIN, Number(lu.tailleSt) || 100));
-    return { ...defaut, ...lu, affichage, taille, tailleSt, boucle: false };
+    const karaoke: Karaoke = (["source", "traduction", "deux", "aucun"] as const).includes(lu.karaoke as Karaoke) ? (lu.karaoke as Karaoke) : "deux";
+    return { ...defaut, ...lu, affichage, karaoke, taille, tailleSt, boucle: false };
   } catch {
     return defaut;
   }
@@ -56,8 +60,12 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
   const controleRef = useRef<Controle>(controleVide);
   const [controle, setControle] = useState<Controle>(controleVide);
   const [horloge] = useState(() => new Horloge(controleRef));
-  const [actif, setActif] = useState({ phrase: -1, mot: -1 });
+  const [actif, setActif] = useState({ phrase: -1, mot: -1, tr: -1 });
   const actifRef = useRef(actif);
+  // Les deux lignes de sous-titres : l'horloge y règle l'avancée du mot en cours (--k), sans rendu React.
+  const ligneSource = useRef<HTMLParagraphElement>(null);
+  const ligneTr = useRef<HTMLParagraphElement>(null);
+  const phTrRef = useRef<Phrase | null>(null);
   const [lecture, setLecture] = useState(false);
   const [glose, setGlose] = useState<Cible | null>(null);
   // Le mot touché est-il dans la traduction (et non dans la phrase de la vidéo) ?
@@ -163,11 +171,18 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
         }
       }
       const p = phraseA(t.phrases, s);
-      const mo = p >= 0 && s <= t.phrases[p].fin + 0.6 ? motA(t.phrases[p], s) : -1;
-      if (p !== a.phrase || mo !== a.mot) {
-        actifRef.current = { phrase: p, mot: mo };
+      const enCours = p >= 0 && s <= t.phrases[p].fin + 0.6;
+      const mo = enCours ? motA(t.phrases[p], s) : -1;
+      const tr = phTrRef.current;
+      const moTr = enCours && tr && tr.id === p ? motA(tr, s) : -1;
+      if (p !== a.phrase || mo !== a.mot || moTr !== a.tr) {
+        actifRef.current = { phrase: p, mot: mo, tr: moTr };
         setActif(actifRef.current);
       }
+      // Le mot en cours se remplit de lumière au rythme de la voix (variable CSS, 60 images/s).
+      const k = reglagesRef.current.karaoke;
+      if (k === "source" || k === "deux") remplir(ligneSource.current, p >= 0 ? t.phrases[p].mots[mo] : undefined, s);
+      if (k === "traduction" || k === "deux") remplir(ligneTr.current, tr && tr.id === p ? tr.mots[moTr] : undefined, s);
     });
     return () => {
       desabonner();
@@ -189,9 +204,10 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
       const p = t.phrases[id];
       const texte = traductions[id];
       if (!p || !texte) return null;
-      return { id, debut: p.debut, fin: p.fin, paragraphe: p.paragraphe, mots: texte.split(/\s+/).filter(Boolean).map((m) => ({ t: m, d: p.debut, f: p.fin })) };
+      // Chaque mot traduit reçoit son instant, calé sur la voix (et sur le sens des mots quand l'analyse est là).
+      return { id, debut: p.debut, fin: p.fin, paragraphe: p.paragraphe, mots: horodaterTraduction(p, texte, analyses[id]?.mots) };
     },
-    [t.phrases, traductions],
+    [t.phrases, traductions, analyses],
   );
 
   // Un mot de la traduction s'explique dans la langue de la vidéo (anglais → français, français → anglais).
@@ -315,7 +331,13 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
   const suivante = t.phrases[(actif.phrase < 0 ? 0 : actif.phrase) + 1] ?? null;
   const video = media?.type === "youtube" || (media?.type === "fichier" && media.video);
   const phraseGlose = glose ? (gloseTr ? phraseTraduite(glose.phrase) : t.phrases[glose.phrase]) : null;
-  const phTr = phraseTraduite(ph.id);
+  const phTr = useMemo(() => phraseTraduite(ph.id), [phraseTraduite, ph.id]);
+  useEffect(() => {
+    phTrRef.current = phTr;
+  }, [phTr]);
+  const kSource = reglages.karaoke === "source" || reglages.karaoke === "deux";
+  const kTr = reglages.karaoke === "traduction" || reglages.karaoke === "deux";
+  const motTr = actif.phrase === ph.id && kTr ? actif.tr : -1;
   const duree = t.duree || controle.duree();
 
   return (
@@ -387,7 +409,9 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
                 <PhraseCliquable
                   phrase={phTr}
                   langue={autre}
-                  actif={-1}
+                  actif={motTr}
+                  karaoke={kTr}
+                  ligne={ligneTr}
                   className="lg-st-courante lg-st-seule"
                   onMot={(i, el, doigt) => toucherMot(ph.id, i, el, doigt, true)}
                   onAppui={() => reglages.pauseAuMot && controleRef.current.pause()}
@@ -402,7 +426,9 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
               <PhraseCliquable
                 phrase={ph}
                 langue={langue}
-                actif={actif.phrase === ph.id ? actif.mot : -1}
+                actif={actif.phrase === ph.id && kSource ? actif.mot : -1}
+                karaoke={kSource}
+                ligne={ligneSource}
                 onMot={(i, el, doigt) => toucherMot(ph.id, i, el, doigt)}
                 onAppui={() => reglages.pauseAuMot && controleRef.current.pause()}
                 glose={glose?.phrase === ph.id && !gloseTr ? glose.mot : -1}
@@ -413,7 +439,9 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
                 <PhraseCliquable
                   phrase={phTr}
                   langue={autre}
-                  actif={-1}
+                  actif={motTr}
+                  karaoke={kTr}
+                  ligne={ligneTr}
                   className="lg-st-fr"
                   onMot={(i, el, doigt) => toucherMot(ph.id, i, el, doigt, true)}
                   onAppui={() => reglages.pauseAuMot && controleRef.current.pause()}
@@ -514,6 +542,32 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
                 </button>
               ))}
             </div>
+            <div className="lg-reglages-st" role="radiogroup" aria-label="Karaoké">
+              <span className="lg-reglages-st-titre">
+                <Mic2 className="size-4" aria-hidden="true" />
+                Karaoké
+              </span>
+              {(
+                [
+                  ["source", NOM_LANGUE[langue], `Les mots ${langue === "en" ? "anglais" : "français"} s'allument quand ils sont dits`],
+                  ["traduction", NOM_LANGUE[autre], `Les mots de la traduction s'allument en même temps que la voix`],
+                  ["deux", "Les deux", "Les deux lignes s'allument ensemble"],
+                  ["aucun", "Aucun", "Sous-titres fixes"],
+                ] as const
+              ).map(([valeur, libelle, aide]) => (
+                <button
+                  key={valeur}
+                  type="button"
+                  role="radio"
+                  aria-checked={reglages.karaoke === valeur}
+                  className="lg-st-choix"
+                  title={aide}
+                  onClick={() => setReglages((r) => ({ ...r, karaoke: valeur }))}
+                >
+                  {libelle}
+                </button>
+              ))}
+            </div>
             {video && (
               <label className="lg-taille">
                 <Maximize2 className="size-4 shrink-0" aria-hidden="true" />
@@ -590,6 +644,12 @@ export function Immersion({ media: m, onFermer }: { media: MediaLangue; onFermer
   );
 }
 
+/** Règle l'avancée (0 → 1) du mot allumé d'une ligne. Appelé à chaque image par l'horloge. */
+function remplir(ligne: HTMLElement | null, mot: Phrase["mots"][number] | undefined, s: number) {
+  const el = ligne?.querySelector<HTMLElement>(".lg-st-mot[data-ici]");
+  if (el) el.style.setProperty("--k", avancee(mot, s).toFixed(3));
+}
+
 function PhraseCliquable({
   phrase,
   langue,
@@ -597,12 +657,16 @@ function PhraseCliquable({
   glose,
   onMot,
   onAppui,
+  karaoke = false,
+  ligne,
   className = "lg-st-courante",
 }: {
   phrase: Phrase;
   langue: "en" | "fr";
   actif: number;
   glose: number;
+  karaoke?: boolean;
+  ligne?: RefObject<HTMLParagraphElement | null>;
   className?: string;
   onMot: (i: number, el: HTMLElement, doigt: boolean) => void;
   onAppui: () => void;
@@ -611,8 +675,10 @@ function PhraseCliquable({
   const mots = useMemo(() => phrase.mots, [phrase]);
   return (
     <p
+      ref={ligne}
       className={className}
       lang={langue}
+      data-karaoke={karaoke || undefined}
       onPointerDown={(e) => {
         pointeur.current = e.pointerType;
         // La phrase se fige dès l'appui : elle ne change pas sous le doigt avant le clic.
@@ -629,7 +695,7 @@ function PhraseCliquable({
             aria-pressed={i === glose}
             onClick={(e) => onMot(i, e.currentTarget, pointeur.current !== "mouse")}
           >
-            {m.t}
+            <span className="lg-k">{m.t}</span>
           </button>{" "}
         </span>
       ))}

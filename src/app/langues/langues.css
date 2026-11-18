@@ -1816,22 +1816,107 @@
   text-wrap: balance;
 }
 .lg-st-mot {
+  position: relative;
   padding: 0 0.06em;
   border-radius: 0.3em;
   color: color-mix(in srgb, var(--encre) 62%, transparent);
   cursor: pointer;
   transition:
-    color 0.15s ease,
-    background-color 0.15s ease;
+    color 0.35s ease,
+    background-color 0.15s ease,
+    transform 0.32s cubic-bezier(0.2, 0.9, 0.3, 1.3);
 }
 .lg-st-mot[data-dit] {
   color: var(--encre);
 }
+/* Sans karaoké : le mot dit est souligné, comme avant. */
 .lg-st-mot[data-ici] {
   text-decoration: underline;
   text-decoration-color: var(--azur);
   text-decoration-thickness: 2px;
   text-underline-offset: 0.22em;
+}
+
+/* ---------- Karaoké : le mot se remplit de lumière au rythme de la voix ----------
+   --k (0 → 1) est réglé à chaque image par l'horloge du lecteur, sur le seul mot en cours.
+   À venir : estompé ; dit : plein ; en cours : un front de lumière le traverse de gauche à droite,
+   un halo l'entoure et une barre fine grandit dessous. Aucun mouvement ne décale la ligne. */
+.lg-st-courante[data-karaoke],
+.lg-st-fr[data-karaoke] {
+  --k-avenir: color-mix(in srgb, var(--encre) 42%, transparent);
+  --k-dit: var(--encre);
+  --k-lumiere: color-mix(in srgb, var(--azur) 55%, var(--encre));
+  --k-halo: color-mix(in srgb, var(--azur) 55%, transparent);
+}
+.lg-st-fr[data-karaoke],
+.lg-st-seule[data-karaoke] {
+  --k-avenir: color-mix(in srgb, var(--azur) 42%, transparent);
+  --k-dit: var(--azur);
+  --k-lumiere: color-mix(in srgb, var(--azur) 35%, #fff);
+}
+[data-theme="light"] .lg-st-fr[data-karaoke],
+[data-theme="light"] .lg-st-seule[data-karaoke] {
+  --k-lumiere: color-mix(in srgb, var(--azur) 70%, #000);
+}
+[data-karaoke] .lg-st-mot {
+  color: var(--k-avenir);
+  text-decoration: none;
+}
+[data-karaoke] .lg-st-mot[data-dit] {
+  color: var(--k-dit);
+}
+[data-karaoke] .lg-st-mot[data-ici] {
+  --k: 0;
+  transform: translateY(-0.05em);
+}
+[data-karaoke] .lg-st-mot[data-ici] .lg-k {
+  /* Le front de lumière : plein jusqu'à --k, puis un fondu doux sur 0,4 em. */
+  background-image: linear-gradient(
+    90deg,
+    var(--k-lumiere) 0,
+    var(--k-lumiere) calc(var(--k) * 100%),
+    var(--k-avenir) calc(var(--k) * 100% + 0.4em)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 0.32em var(--k-halo));
+}
+[data-karaoke] .lg-st-mot[data-ici]::after {
+  content: "";
+  position: absolute;
+  left: 0.1em;
+  right: 0.1em;
+  bottom: -0.08em;
+  height: 0.12em;
+  border-radius: 1em;
+  background: linear-gradient(90deg, var(--azur), color-mix(in srgb, var(--azur) 30%, #fff));
+  box-shadow: 0 0 0.6em var(--k-halo);
+  transform-origin: left center;
+  transform: scaleX(var(--k));
+}
+/* Un mot qui vient d'être dit garde un instant sa lueur, puis se pose. */
+[data-karaoke] .lg-st-mot[data-dit]:not([data-ici]) .lg-k {
+  animation: lg-k-pose 0.55s ease-out;
+}
+@keyframes lg-k-pose {
+  from {
+    color: var(--k-lumiere);
+    text-shadow: 0 0 0.5em var(--k-halo);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-karaoke] .lg-st-mot[data-ici] {
+    transform: none;
+  }
+  [data-karaoke] .lg-st-mot[data-ici] .lg-k {
+    background-image: none;
+    color: var(--k-lumiere);
+    filter: none;
+  }
+  [data-karaoke] .lg-st-mot[data-ici]::after {
+    transform: none;
+  }
 }
 .lg-st-mot:hover {
   background: color-mix(in srgb, var(--azur) 16%, transparent);
@@ -1856,8 +1941,8 @@
   color: var(--encre);
 }
 /* Traduction touchable : ses mots gardent la couleur de la ligne. */
-.lg-st-fr .lg-st-mot,
-.lg-st-seule .lg-st-mot {
+.lg-st-fr:not([data-karaoke]) .lg-st-mot,
+.lg-st-seule:not([data-karaoke]) .lg-st-mot {
   color: inherit;
 }
 .lg-st-seule[data-vide] {
@@ -2559,5 +2644,703 @@
 @media (prefers-reduced-motion: reduce) {
   .lg-composer-themes > summary::after {
     transition: none;
+  }
+}
+
+/* =====================================================================
+   Séries, feux et classement (gamification du vocabulaire)
+   Une seule règle de mouvement : seuls transform et opacity s'animent en continu
+   (le compositeur s'en charge, 60 images/s) ; les couleurs ne changent qu'au passage d'un palier.
+   ===================================================================== */
+
+/* Les couleurs qui glissent d'un palier à l'autre (sans @property, elles sautent : c'est acceptable). */
+@property --aura {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #7cc8f2;
+}
+@property --aura2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #3d7bd9;
+}
+
+.lg [data-teinte="azur"],
+.lg[data-teinte="azur"] {
+  --serie: var(--azur);
+}
+.lg [data-teinte="ambre"] {
+  --serie: #f2b84b;
+}
+.lg [data-teinte="braise"] {
+  --serie: #ff7a45;
+}
+.lg [data-teinte="pourpre"] {
+  --serie: #d77cff;
+}
+.lg [data-teinte="aurore"] {
+  --serie: #4fe3bd;
+}
+[data-theme="light"] .lg [data-teinte="ambre"] {
+  --serie: #a86800;
+}
+[data-theme="light"] .lg [data-teinte="braise"] {
+  --serie: #c2410c;
+}
+[data-theme="light"] .lg [data-teinte="pourpre"] {
+  --serie: #8e2bad;
+}
+[data-theme="light"] .lg [data-teinte="aurore"] {
+  --serie: #087f5b;
+}
+
+/* ---------- Le compteur de série, dans l'en-tête de la séance ---------- */
+.lg-serie {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-width: 3.4rem;
+  padding: 0.28rem 0.6rem 0.28rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  color: var(--encre-douce);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  transition:
+    color 0.5s ease,
+    border-color 0.5s ease,
+    background-color 0.5s ease,
+    box-shadow 0.5s ease;
+}
+.lg-serie[data-actif] {
+  border-color: color-mix(in srgb, var(--serie) 45%, var(--trait));
+  background: color-mix(in srgb, var(--serie) 13%, var(--surface));
+  color: var(--serie);
+}
+.lg-serie[data-palier="3"],
+.lg-serie[data-palier="4"] {
+  box-shadow: 0 0 1.4rem -0.4rem var(--serie);
+}
+.lg-serie-flamme {
+  display: inline-grid;
+  place-items: center;
+}
+.lg-serie[data-actif] .lg-serie-flamme svg {
+  transform-origin: 50% 85%;
+  animation: lg-flamme 1.6s ease-in-out infinite;
+}
+.lg-serie[data-palier="2"] .lg-serie-flamme svg,
+.lg-serie[data-palier="3"] .lg-serie-flamme svg,
+.lg-serie[data-palier="4"] .lg-serie-flamme svg {
+  fill: color-mix(in srgb, var(--serie) 45%, transparent);
+  animation-duration: 0.9s;
+}
+.lg-serie-flamme[data-eteinte] svg {
+  animation: lg-eteinte 0.8s ease both;
+}
+.lg-serie-nombre[data-anime] {
+  display: inline-block;
+  animation: lg-pop 0.45s cubic-bezier(0.2, 1.7, 0.4, 1);
+}
+.lg-serie-mult {
+  padding: 0.05rem 0.35rem;
+  border-radius: 999px;
+  background: var(--serie);
+  color: var(--fond);
+  font-size: 0.7rem;
+  animation: lg-pop 0.45s cubic-bezier(0.2, 1.7, 0.4, 1);
+}
+.lg-gain {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--serie, var(--azur));
+  white-space: nowrap;
+  pointer-events: none;
+  animation: lg-gain 1.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+.lg-gain small {
+  font-family: var(--font-sans, inherit);
+  font-size: 0.68rem;
+  font-weight: 700;
+  opacity: 0.85;
+}
+/* Le nom du palier franchi, frappé comme un tampon au milieu de l'écran. */
+.lg-tampon {
+  position: fixed;
+  /* Juste sous l'en-tête de la séance : il ne cache jamais le mot ni les réponses. */
+  top: calc(var(--barre-vue, 0rem) + 4.4rem);
+  left: 50%;
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 6vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--serie);
+  text-shadow: 0 0 2.2rem color-mix(in srgb, var(--serie) 55%, transparent);
+  pointer-events: none;
+  animation: lg-tampon 1.9s cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+}
+.lg-tampon small {
+  margin-top: 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  opacity: 0.9;
+}
+
+/* ---------- L'ambiance de la séance ---------- */
+.lg-seance-tete,
+.lg-seance-scene {
+  position: relative;
+  z-index: 1;
+}
+.lg-atmosphere {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  --aura: var(--azur);
+  --aura2: color-mix(in srgb, var(--azur) 60%, #3b5bdb);
+  transition:
+    --aura 1.4s ease,
+    --aura2 1.4s ease;
+}
+.lg-atmosphere[data-teinte="ambre"] {
+  --aura: #f5b84a;
+  --aura2: #ff9f43;
+}
+.lg-atmosphere[data-teinte="braise"] {
+  --aura: #ff6b3d;
+  --aura2: #ff3d6e;
+}
+.lg-atmosphere[data-teinte="pourpre"] {
+  --aura: #c04bd8;
+  --aura2: #6e5bff;
+}
+.lg-atmosphere[data-teinte="aurore"] {
+  --aura: #3ee6b5;
+  --aura2: #7a8cff;
+}
+.lg-aura {
+  position: absolute;
+  inset: -25%;
+  background:
+    radial-gradient(42% 30% at 50% 102%, color-mix(in srgb, var(--aura) 26%, transparent), transparent 72%),
+    radial-gradient(30% 24% at 18% 8%, color-mix(in srgb, var(--aura2) 12%, transparent), transparent 70%),
+    radial-gradient(28% 22% at 84% 12%, color-mix(in srgb, var(--aura) 10%, transparent), transparent 70%);
+  animation: lg-respire 8s ease-in-out infinite;
+}
+.lg-atmosphere[data-teinte="braise"] .lg-aura {
+  animation-duration: 4s;
+}
+/* Brasier : l'aura tourne lentement sur elle-même, comme un foyer. */
+.lg-atmosphere[data-teinte="pourpre"] .lg-aura {
+  animation:
+    lg-tourne 28s linear infinite,
+    lg-respire 4s ease-in-out infinite;
+}
+/* Comète : une aurore boréale ondule en haut de l'écran. */
+.lg-aurore {
+  position: absolute;
+  top: -12%;
+  left: -20%;
+  width: 140%;
+  height: 42%;
+  opacity: 0;
+  background:
+    linear-gradient(100deg, transparent 8%, color-mix(in srgb, #3ee6b5 34%, transparent) 26%, transparent 40%),
+    linear-gradient(80deg, transparent 32%, color-mix(in srgb, #7a8cff 30%, transparent) 52%, transparent 66%),
+    linear-gradient(110deg, transparent 58%, color-mix(in srgb, #f2a2ff 26%, transparent) 76%, transparent 90%);
+  filter: blur(28px);
+  transform-origin: 50% 0;
+  transition: opacity 1.6s ease;
+}
+.lg-atmosphere[data-teinte="aurore"] .lg-aurore {
+  opacity: 1;
+  animation: lg-aurore 11s ease-in-out infinite alternate;
+}
+.lg-atmosphere-feux {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  /* Les particules d'ambiance restent dans le bas de l'écran, loin du mot à lire. */
+  mask-image: linear-gradient(to top, #000 0%, #000 22%, transparent 62%);
+}
+[data-theme="light"] .lg-aura {
+  opacity: 0.75;
+}
+
+/* Le calque des éclats, partagé par toute la page, transparent aux clics. */
+.lg-feux {
+  position: fixed;
+  inset: 0;
+  z-index: 95;
+  width: 100vw;
+  height: 100dvh;
+  pointer-events: none;
+}
+
+.lg-fin-points {
+  margin-top: 1.1rem;
+  color: var(--encre-douce);
+}
+.lg-fin-points strong {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  color: var(--azur);
+}
+.lg-fin-points-hors {
+  font-size: 0.92rem;
+}
+
+@keyframes lg-flamme {
+  0%,
+  100% {
+    transform: scale(1) rotate(-3deg);
+  }
+  50% {
+    transform: scale(1.12, 1.18) rotate(3deg);
+  }
+}
+@keyframes lg-eteinte {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.55) translateY(2px);
+    opacity: 0.35;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes lg-pop {
+  0% {
+    transform: scale(0.6);
+  }
+  60% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lg-gain {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -6px) scale(0.7);
+  }
+  14% {
+    opacity: 1;
+    transform: translate(-50%, 8px) scale(1.15);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 40px) scale(1);
+  }
+}
+@keyframes lg-tampon {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) scale(2.4) rotate(-9deg);
+  }
+  14% {
+    opacity: 1;
+    transform: translateX(-50%) scale(0.94) rotate(-3deg);
+  }
+  22% {
+    transform: translateX(-50%) scale(1.04) rotate(-3deg);
+  }
+  78% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1) rotate(-3deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-24px) scale(0.96) rotate(-3deg);
+  }
+}
+@keyframes lg-respire {
+  0%,
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+@keyframes lg-tourne {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes lg-aurore {
+  0% {
+    transform: translateX(-4%) skewY(-3deg) scaleY(0.9);
+  }
+  100% {
+    transform: translateX(5%) skewY(4deg) scaleY(1.15);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lg-aura,
+  .lg-aurore,
+  .lg-serie-flamme svg {
+    animation: none !important;
+  }
+  .lg-tampon {
+    animation: lg-apparition 0.2s ease both !important;
+    transform: translateX(-50%) rotate(-3deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lg-gain {
+    animation: none !important;
+    transform: translate(-50%, 8px);
+  }
+}
+
+/* ---------- Le classement ---------- */
+.lg-classement {
+  display: grid;
+  gap: 0.9rem;
+  margin-bottom: 1.75rem;
+  padding: 1.25rem 1.35rem 1.1rem;
+  border: 1px solid var(--trait);
+  border-radius: 1.35rem;
+  background:
+    radial-gradient(28rem 10rem at 0% 0%, color-mix(in srgb, var(--or) 9%, transparent), transparent 70%),
+    var(--surface);
+}
+.lg-classement-tete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem 1.5rem;
+}
+.lg-classement-titre {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.lg-classement-titre svg {
+  color: var(--or);
+}
+.lg-classement-periodes {
+  display: flex;
+  gap: 0.35rem;
+}
+.lg-classement-periodes .lg-filtre[aria-selected="true"] {
+  border-color: var(--azur);
+  background: var(--azur-doux);
+  color: var(--azur);
+}
+.lg-classement-liste {
+  display: grid;
+  gap: 0.35rem;
+}
+.lg-classement-ligne {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 3.1rem;
+  padding: 0.45rem 0.85rem 0.45rem 0.55rem;
+  border-radius: 0.95rem;
+  background: color-mix(in srgb, var(--encre) 3%, transparent);
+}
+.lg-classement-squelette {
+  background: linear-gradient(90deg, color-mix(in srgb, var(--encre) 4%, transparent) 30%, color-mix(in srgb, var(--encre) 9%, transparent) 50%, color-mix(in srgb, var(--encre) 4%, transparent) 70%);
+  background-size: 300% 100%;
+  animation: lg-reflet 1.4s linear infinite;
+}
+.lg-classement-ligne[data-moi] {
+  background: color-mix(in srgb, var(--azur) 13%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--azur) 45%, transparent);
+}
+.lg-classement-rang {
+  display: inline-grid;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  flex-shrink: 0;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--encre-douce);
+}
+/* Le podium : or, argent, bronze, en anneaux métalliques. */
+.lg-classement-ligne[data-podium] {
+  --metal: #e9be6a;
+  --metal-fonce: #a87b23;
+}
+.lg-classement-ligne[data-podium="2"] {
+  --metal: #cfd6e2;
+  --metal-fonce: #8892a3;
+}
+.lg-classement-ligne[data-podium="3"] {
+  --metal: #e0a274;
+  --metal-fonce: #9a5b30;
+}
+.lg-classement-ligne[data-podium] .lg-classement-rang {
+  background: conic-gradient(from 210deg, var(--metal-fonce), var(--metal), #fff8, var(--metal), var(--metal-fonce));
+  color: #1b1405;
+  box-shadow: 0 0.35rem 1rem -0.45rem var(--metal);
+}
+.lg-classement-ligne[data-podium] .lg-avatar {
+  box-shadow: 0 0 0 2px var(--metal);
+}
+.lg-classement-ligne[data-podium="1"] {
+  background: color-mix(in srgb, var(--or) 10%, transparent);
+}
+.lg-classement-ligne[data-podium="1"][data-moi] {
+  background: color-mix(in srgb, var(--or) 16%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--or) 55%, transparent);
+}
+.lg-avatar {
+  width: 2.25rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+  border-radius: 999px;
+  object-fit: cover;
+  background: var(--surface-forte);
+}
+.lg-avatar-initiale {
+  display: inline-grid;
+  place-items: center;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(140deg, hsl(var(--teinte-avatar) 62% 52%), hsl(calc(var(--teinte-avatar) + 40) 64% 40%));
+}
+.lg-classement-nom {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 0;
+  flex: 1;
+  overflow: hidden;
+  font-weight: 650;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lg-classement-jours {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ff8a3d;
+}
+[data-theme="light"] .lg-classement-jours {
+  color: #c2410c;
+}
+.lg-classement-points {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+}
+.lg-classement-points small {
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.lg-classement-ellipse {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.15rem 0;
+}
+.lg-classement-ellipse span {
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 999px;
+  background: var(--encre-douce);
+  opacity: 0.5;
+}
+.lg-classement-vide {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  color: var(--encre-douce);
+}
+.lg-classement-invitation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 1rem;
+  border: 1px dashed color-mix(in srgb, var(--or) 55%, var(--trait));
+  background: color-mix(in srgb, var(--or) 7%, transparent);
+}
+.lg-classement-annonce {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  justify-self: start;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--or) 18%, transparent);
+  color: var(--or);
+  font-weight: 750;
+  animation: lg-pop 0.5s cubic-bezier(0.2, 1.7, 0.4, 1);
+}
+.lg-classement-moi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: 0.5rem;
+  padding-top: 0.25rem;
+}
+.lg-classement-moi div {
+  padding: 0.55rem 0.75rem;
+  border-radius: 0.85rem;
+  background: color-mix(in srgb, var(--encre) 3%, transparent);
+}
+.lg-classement-moi dt {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.lg-classement-moi dd {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.lg-classement-regles summary {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 650;
+  color: var(--encre-douce);
+}
+.lg-classement-regles ul {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.6rem 0 0.75rem;
+  padding-left: 1.1rem;
+  list-style: disc;
+  font-size: 0.9rem;
+  color: var(--encre-douce);
+}
+@keyframes lg-reflet {
+  to {
+    background-position: -100% 0;
+  }
+}
+@media (max-width: 40rem) {
+  .lg-classement {
+    padding: 1rem;
+  }
+  .lg-classement-jours {
+    display: none;
+  }
+}
+
+/* ---------- Passer d'un module à l'autre : l'écran s'ouvre en cercle depuis l'onglet touché ----------
+   Le nom n'est posé que pendant la transition : en temps normal, la scène reste un bloc ordinaire. */
+html[data-lg-transition] .lg-scene {
+  view-transition-name: lg-scene;
+}
+html[data-lg-transition]::view-transition-old(root),
+html[data-lg-transition]::view-transition-new(root) {
+  animation: none;
+}
+::view-transition-old(lg-scene) {
+  animation: lg-vt-sort 0.3s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+::view-transition-new(lg-scene) {
+  animation: lg-vt-entre 0.62s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+::view-transition-group(lg-scene) {
+  animation-duration: 0.62s;
+}
+@keyframes lg-vt-entre {
+  from {
+    clip-path: circle(0 at var(--vt-x, 50%) var(--vt-y, 0));
+  }
+  to {
+    clip-path: circle(160vmax at var(--vt-x, 50%) var(--vt-y, 0));
+  }
+}
+@keyframes lg-vt-sort {
+  to {
+    opacity: 0;
+    transform: scale(0.985);
+  }
+}
+
+/* ---------- La lueur qui suit le pointeur, teintée par module ---------- */
+.lg-espace {
+  --lueur: var(--azur);
+  /* La lueur passe sous le contenu sans le recouvrir ni sortir de l'espace. */
+  isolation: isolate;
+}
+.lg-espace[data-onglet="vocabulaire"] {
+  --lueur: color-mix(in srgb, var(--azur) 70%, var(--emeraude));
+}
+.lg-espace[data-onglet="ecouter"] {
+  --lueur: color-mix(in srgb, var(--azur) 45%, #a78bfa);
+}
+.lg-espace[data-onglet="lire"] {
+  --lueur: color-mix(in srgb, var(--azur) 40%, var(--or));
+}
+.lg-espace[data-onglet="dictionnaire"] {
+  --lueur: color-mix(in srgb, var(--azur) 50%, var(--emeraude));
+}
+.lg-espace[data-onglet="regles"] {
+  --lueur: color-mix(in srgb, var(--azur) 55%, #f0abfc);
+}
+.lg-lueur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 46rem;
+  height: 46rem;
+  margin: -23rem 0 0 -23rem;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--lueur) 9%, transparent), transparent);
+  transform: translate3d(50vw, 28vh, 0);
+  transition: transform 1.1s cubic-bezier(0.16, 0.84, 0.24, 1);
+  will-change: transform;
+}
+[data-theme="light"] .lg-lueur {
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--lueur) 12%, transparent), transparent);
+}
+@media (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .lg-lueur {
+    display: none;
   }
 }

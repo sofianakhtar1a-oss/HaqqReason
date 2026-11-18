@@ -5,6 +5,9 @@ import { normaliser, verifier } from "../src/lib/langues/verification";
 import { THEMES, TOUTES_LES_ENTREES } from "../src/lib/langues/themes/index";
 import { decouperPage, decouperPhrases, lotsDePassage } from "../src/lib/langues/texte";
 import { idMot, motPropre, nouveauMot, versCsv } from "../src/lib/langues/dictionnaire";
+import { ancres, avancee, horodaterTraduction, poidsMot } from "../src/lib/langues/karaoke";
+import { avatarSur, BASES, bonusJour, evaluer, gain, lireReponse, multiplicateur, nomPublic, palier } from "../src/lib/langues/points";
+import { elementDEntree } from "../src/lib/langues/dictionnaire";
 
 let e = 0;
 const ok = (n: string, c: boolean, x: unknown = "") => {
@@ -114,6 +117,44 @@ ok("mot propre : ponctuation ôtée, majuscule de phrase baissée, sigle gardé"
 const mp = nouveauMot({ en: "travel", fr: "voyager", lemme: "travel", forme: "travelled", phrase: "We travelled far." }, { type: "manuel", titre: "x" }, 0);
 ok("nouveau mot : identifiant tiré du lemme", mp.id === "perso:travel" && mp.forme === "travelled");
 ok("export CSV avec BOM et guillemets", versCsv([{ ...mp, fr: "voyager; partir" }]).startsWith("\uFEFFanglais;") && versCsv([{ ...mp, fr: "voyager; partir" }]).includes('"voyager; partir"'));
+
+// ---------------------------------------------------------------- Karaoké bilingue
+const voix = { debut: 10, fin: 13, mots: [{ t: "I", d: 10.1, f: 10.2 }, { t: "love", d: 10.3, f: 10.7 }, { t: "big", d: 10.8, f: 11.1 }, { t: "houses.", d: 11.2, f: 12.4 }] };
+const gl = [{ i: 1, sens: "aimer, adorer" }, { i: 2, sens: "grand" }, { i: 3, sens: "maisons" }];
+ok("poids : une pause après le point, un petit mot pèse peu", poidsMot("houses.") > poidsMot("houses") && poidsMot("a") < poidsMot("big"));
+ok("ancres : élision ignorée, accord et pluriel retrouvés", JSON.stringify(ancres(voix.mots, "J'adore les grandes maisons.".split(" "), gl)) === "[1,-1,2,3]");
+const kt = horodaterTraduction(voix, "J'adore les grandes maisons.", gl);
+ok("traduction : un horodatage par mot, de la voix réelle", kt.length === 4 && kt[0].d === 10.1 && kt[3].f === 12.4);
+ok("traduction : les ancres calent les mots traduits sur leur mot d'origine", kt[2].d === 10.8 && kt[3].d === 11.2);
+ok("traduction : le temps avance toujours", kt.every((m, i) => m.f >= m.d && (i === 0 || m.d >= kt[i - 1].d)));
+const sansAnalyse = horodaterTraduction(voix, "Nous aimons beaucoup les très grandes maisons blanches.");
+ok("sans analyse : partage selon les syllabes, couvre toute la voix", sansAnalyse.length === 8 && sansAnalyse[0].d === 10.1 && sansAnalyse[7].f === 12.4);
+ok("traduction vide : aucun mot", horodaterTraduction(voix, "  ").length === 0);
+ok("avancée dans le mot : bornée entre 0 et 1", avancee({ t: "x", d: 1, f: 2 }, 1.5) === 0.5 && avancee({ t: "x", d: 1, f: 2 }, 0) === 0 && avancee({ t: "x", d: 1, f: 2 }, 9) === 1);
+
+// ---------------------------------------------------------------- Points du vocabulaire
+const seuils = [0, 4, 5, 9, 10, 19, 20, 39, 40, 100].map(multiplicateur);
+ok("paliers : mêmes multiplicateurs que la base (×1, ×1,5, ×2, ×2,5, ×3)", JSON.stringify(seuils) === JSON.stringify([1, 1, 1.5, 1.5, 2, 2, 2.5, 2.5, 3, 3]), seuils);
+ok("palier : nom et prochain seuil", palier(0).prochain === 5 && palier(12).nom === "Flamme" && palier(40).prochain === null && palier(25).index === 3);
+ok("gain : juste × série, presque = moitié (au-dessus), faux = 0", gain(10, "juste", 1) === 10 && gain(15, "juste", 5) === 23 && gain(15, "presque", 30) === 8 && gain(12, "faux", 50) === 0);
+ok("bonus du jour : 5 × jours, 50 au plus", bonusJour(1) === 5 && bonusJour(4) === 20 && bonusJour(30) === 50 && bonusJour(-2) === 0);
+const brother = TOUTES_LES_ENTREES.find((x) => x.id === "famille:brother") ?? TOUTES_LES_ENTREES[0];
+const elB = elementDEntree(brother);
+ok("évaluer : choix juste (vers le français)", evaluer({ mot: elB.id, exercice: "qcm", sens: "en-fr", reponse: elB.fr }, elB)?.resultat === "juste");
+ok("évaluer : choix faux, et le sens compte", evaluer({ mot: elB.id, exercice: "qcm", sens: "fr-en", reponse: elB.fr }, elB)?.resultat === "faux" && evaluer({ mot: elB.id, exercice: "qcm", sens: "fr-en", reponse: elB.en }, elB)?.resultat === "juste");
+ok("évaluer : écoute jugée sur le sens français", evaluer({ mot: elB.id, exercice: "ecoute", reponse: elB.fr }, elB)?.base === BASES.ecoute);
+const avecTrou = TOUTES_LES_ENTREES.map(elementDEntree).find((x) => trouDans(x));
+const motTrou = avecTrou ? trouDans(avecTrou)!.mot : "";
+ok("évaluer : texte à trous jugé sur le mot de la phrase", Boolean(avecTrou) && evaluer({ mot: avecTrou!.id, exercice: "trou", reponse: motTrou.toUpperCase() }, avecTrou)?.resultat === "juste" && evaluer({ mot: avecTrou!.id, exercice: "trou", reponse: "zzz" }, avecTrou)?.resultat === "faux");
+ok("évaluer : écrire, une petite faute = presque, plus d'un indice = presque", evaluer({ mot: elB.id, exercice: "ecriture", reponse: elB.en }, elB)?.resultat === "juste" && evaluer({ mot: elB.id, exercice: "ecriture", reponse: elB.en, indices: 2 }, elB)?.resultat === "presque");
+ok("évaluer : un mot inconnu du serveur ne rapporte rien", evaluer({ mot: "perso:x", exercice: "qcm", reponse: "x" }, undefined) === null);
+ok("évaluer : cartes et paires exigent un résultat", evaluer({ mot: elB.id, exercice: "carte" }, elB) === null && evaluer({ mot: elB.id, exercice: "paires", resultat: "juste" }, elB)?.base === BASES.paires);
+ok("évaluer : l'identifiant compté est celui du serveur", evaluer({ mot: "faux-id", exercice: "qcm", sens: "en-fr", reponse: elB.fr }, elB)?.mot === elB.id);
+const lue = lireReponse({ mot: "a:b", exercice: "ecriture", reponse: "x".repeat(900), indices: 1e9, base: 9999, points: 1e6 });
+ok("réponse reçue : champs bornés, champs inconnus ignorés", lue !== null && lue.reponse!.length === 300 && lue.indices === 50 && !("base" in lue) && !("points" in lue));
+ok("réponse reçue : exercice inconnu refusé", lireReponse({ mot: "a", exercice: "bonus" }) === null && lireReponse(null) === null && lireReponse({ exercice: "qcm" }) === null);
+ok("nom public : prénom et initiale", nomPublic("Yasmine  Benali") === "Yasmine B." && nomPublic("Karim") === "Karim" && nomPublic("  ") === "Apprenant" && nomPublic("Jean Pierre de la Fontaine") === "Jean F.");
+ok("photo : seulement les serveurs de photos Google", avatarSur("https://lh3.googleusercontent.com/a/ACg8oc-x=s96-c") !== "" && avatarSur("https://evil.example/x.png") === "" && avatarSur("javascript:alert(1)") === "" && avatarSur(42) === "");
 
 console.log(e ? `\n${e} échec(s)` : "\nTout est bon.");
 process.exit(e ? 1 : 0);

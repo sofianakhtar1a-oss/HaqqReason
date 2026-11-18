@@ -4,11 +4,15 @@ import { Check, CornerDownLeft, Eye, Flame, RotateCcw, Volume2, X } from "lucide
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { composerSeance, type Exercice, melanger } from "@/lib/langues/exercices";
+import { pluieDeLettres } from "@/lib/langues/feux";
+import { palier, type ReponseEnvoyee } from "@/lib/langues/points";
+import { envoyerReponse, surEvenement, useJoueur } from "@/lib/langues/points-client";
 import { apercuDelai, cleJour, estDue, nouvelleCarte } from "@/lib/langues/srs";
 import type { Element, Note } from "@/lib/langues/types";
 import { type Resultat, verifier } from "@/lib/langues/verification";
 import { parler, taire, voixDisponible } from "@/lib/langues/voix";
 import { noter, useDonnees } from "./donnees";
+import { Atmosphere, CompteurSerie } from "./Serie";
 
 /*
  * Une séance de révision, en plein écran.
@@ -37,6 +41,23 @@ function composer(l: Lancement, cartes: ReturnType<typeof useDonnees>["cartes"],
 
 type Bilan = { juste: number; presque: number; faux: number; nouveaux: number };
 
+/** Ce que le serveur doit savoir d'une réponse pour la juger lui-même (jamais de points). */
+type Envoi = Omit<ReponseEnvoyee, "mot">;
+function envoiDe(ex: Exercice | undefined, donne?: string, indices?: number): Envoi | undefined {
+  switch (ex?.type) {
+    case "qcm":
+      return { exercice: "qcm", sens: ex.sens, reponse: donne };
+    case "ecoute":
+      return { exercice: "ecoute", reponse: donne };
+    case "trou":
+      return { exercice: "trou", reponse: donne };
+    case "ecriture":
+      return { exercice: "ecriture", reponse: donne, indices };
+    default:
+      return undefined;
+  }
+}
+
 export function Seance({ lancement, onFermer }: { lancement: Lancement; onFermer: () => void }) {
   const { cartes } = useDonnees();
   const [libre, setLibre] = useState(Boolean(lancement.libre));
@@ -48,8 +69,16 @@ export function Seance({ lancement, onFermer }: { lancement: Lancement; onFermer
   const repris = useRef(new Set<string>());
   const racine = useRef<HTMLDivElement>(null);
   const [confirmer, setConfirmer] = useState(false);
+  const [pointsSeance, setPointsSeance] = useState(0);
+  // Un mot réussi de la séance : ses lettres jailliront à la fin.
+  const [motReussi, setMotReussi] = useState<string | undefined>(undefined);
 
   const ex = file[i];
+  const exRef = useRef(ex);
+  useEffect(() => {
+    exRef.current = ex;
+  }, [ex]);
+  useEffect(() => surEvenement((e) => e.type === "gain" && setPointsSeance((n) => n + e.gain + e.bonus)), []);
   const fini = i >= file.length;
   const total = file.length;
 
@@ -65,9 +94,12 @@ export function Seance({ lancement, onFermer }: { lancement: Lancement; onFermer
 
   /** Note un mot (une seule fois par séance) ; une erreur le remet dans la file. */
   const compter = useCallback(
-    (el: Element, r: Resultat, note?: Note) => {
+    (el: Element, r: Resultat, note?: Note, envoi?: Envoi) => {
       if (!notes.current.has(el.id)) {
         notes.current.set(el.id, r);
+        // Les points : seule la première réponse d'un mot dans la séance compte, comme pour sa mémoire.
+        if (envoi) envoyerReponse({ mot: el.id, ...envoi }, r);
+        if (r === "juste") setMotReussi((m) => m ?? el.en.replace(/^to /, ""));
         const avant = cartes.get(el.id);
         noter(el.id, note ?? NOTE[r]);
         setBilan((b) => ({ ...b, [r]: b[r] + 1, nouveaux: b.nouveaux + (!avant || avant.etat === "nouveau" ? 1 : 0) }));
@@ -91,8 +123,8 @@ export function Seance({ lancement, onFermer }: { lancement: Lancement; onFermer
   );
 
   const repondre = useCallback(
-    (el: Element, r: Resultat, attendu: string, donne?: string) => {
-      compter(el, r);
+    (el: Element, r: Resultat, attendu: string, donne?: string, indices?: number) => {
+      compter(el, r, undefined, envoiDe(exRef.current, donne, indices));
       setRetour({ resultat: r, attendu, donne });
       if (r !== "juste") void parler(el.en);
     },
@@ -128,12 +160,15 @@ export function Seance({ lancement, onFermer }: { lancement: Lancement; onFermer
     setI(0);
     setRetour(null);
     setBilan({ juste: 0, presque: 0, faux: 0, nouveaux: 0 });
+    setPointsSeance(0);
+    setMotReussi(undefined);
   };
 
   const avancement = total ? Math.min(1, (i + (retour ? 1 : 0)) / total) : 0;
 
   return createPortal(
     <div ref={racine} className="lg lg-seance" role="dialog" aria-modal="true" aria-label={`Séance : ${lancement.titre}`} tabIndex={-1} data-accent="azur">
+      <Atmosphere />
       <header className="lg-seance-tete">
         <button type="button" className="bouton-icone" aria-label="Quitter la séance" onClick={() => (fini || i === 0 ? onFermer() : setConfirmer(true))}>
           <X className="size-5" aria-hidden="true" />
@@ -141,6 +176,7 @@ export function Seance({ lancement, onFermer }: { lancement: Lancement; onFermer
         <div className="lg-seance-barre" role="progressbar" aria-valuemin={0} aria-valuemax={total} aria-valuenow={Math.min(i, total)} aria-label="Avancement de la séance">
           <span style={{ transform: `scaleX(${fini ? 1 : avancement})` }} />
         </div>
+        <CompteurSerie />
         <span className="lg-seance-compte">{fini ? total : Math.min(i + 1, total)}/{total}</span>
       </header>
 
@@ -148,7 +184,7 @@ export function Seance({ lancement, onFermer }: { lancement: Lancement; onFermer
         {total === 0 ? (
           <Vide titre={lancement.titre} onLibre={() => recommencer(true)} onFermer={onFermer} />
         ) : fini ? (
-          <Fin bilan={bilan} libre={libre} onEncore={() => recommencer(libre)} onFermer={onFermer} />
+          <Fin bilan={bilan} libre={libre} points={pointsSeance} mot={motReussi} onEncore={() => recommencer(libre)} onFermer={onFermer} />
         ) : (
           <div key={`${ex.cle}:${i}`} className="lg-exercice">
             {ex.type === "carte" && lancement.mode === "guidee" && <Decouverte el={ex.el} onSuivant={suivant} />}
@@ -156,7 +192,8 @@ export function Seance({ lancement, onFermer }: { lancement: Lancement; onFermer
               <CarteMemoire
                 el={ex.el}
                 onNote={(n) => {
-                  compter(ex.el, n === 1 ? "faux" : n === 2 ? "presque" : "juste", n);
+                  const r: Resultat = n === 1 ? "faux" : n === 2 ? "presque" : "juste";
+                  compter(ex.el, r, n, { exercice: "carte", resultat: r });
                   suivant();
                 }}
               />
@@ -169,7 +206,10 @@ export function Seance({ lancement, onFermer }: { lancement: Lancement; onFermer
               <Paires
                 els={ex.els}
                 onFini={(erreurs) => {
-                  ex.els.forEach((el) => compter(el, erreurs.has(el.id) ? "faux" : "juste"));
+                  ex.els.forEach((el) => {
+                    const r: Resultat = erreurs.has(el.id) ? "faux" : "juste";
+                    compter(el, r, undefined, { exercice: "paires", resultat: r });
+                  });
                   setRetour({ resultat: erreurs.size ? "presque" : "juste", attendu: "" });
                 }}
               />
@@ -419,7 +459,7 @@ function Choix({ ex, retour, onRepondre }: { ex: ExChoix; retour: { resultat: Re
   );
 }
 
-function Ecriture({ el, retour, onRepondre }: { el: Element; retour: { resultat: Resultat } | null; onRepondre: (el: Element, r: Resultat, attendu: string, donne?: string) => void }) {
+function Ecriture({ el, retour, onRepondre }: { el: Element; retour: { resultat: Resultat } | null; onRepondre: (el: Element, r: Resultat, attendu: string, donne?: string, indices?: number) => void }) {
   const [valeur, setValeur] = useState("");
   const [indice, setIndice] = useState(0);
   const champ = useRef<HTMLInputElement>(null);
@@ -428,7 +468,7 @@ function Ecriture({ el, retour, onRepondre }: { el: Element; retour: { resultat:
   const valider = () => {
     if (retour || !valeur.trim()) return;
     const r = verifier(valeur, el.en);
-    onRepondre(el, indice > 1 && r === "juste" ? "presque" : r, el.en, valeur);
+    onRepondre(el, indice > 1 && r === "juste" ? "presque" : r, el.en, valeur, indice);
   };
   return (
     <>
@@ -595,15 +635,24 @@ function Vide({ titre, onLibre, onFermer }: { titre: string; onLibre: () => void
   );
 }
 
-function Fin({ bilan, libre, onEncore, onFermer }: { bilan: Bilan; libre: boolean; onEncore: () => void; onFermer: () => void }) {
+function Fin({ bilan, libre, points, mot, onEncore, onFermer }: { bilan: Bilan; libre: boolean; points: number; mot?: string; onEncore: () => void; onFermer: () => void }) {
   const total = bilan.juste + bilan.presque + bilan.faux;
   const taux = total ? Math.round(((bilan.juste + bilan.presque * 0.5) / total) * 100) : 0;
   const { journal } = useDonnees();
+  const { connecte, serie } = useJoueur();
   const [jour] = useState(() => cleJour(Date.now()));
   const auj = journal.get(jour)?.revues ?? 0;
+  const anneau = useRef<HTMLDivElement>(null);
+  // Une belle séance se fête : les lettres d'un mot réussi jaillissent de l'anneau.
+  const motFete = mot && mot.length <= 18 ? mot : undefined;
+  useEffect(() => {
+    if (taux < 60) return;
+    const m = setTimeout(() => pluieDeLettres(anneau.current, palier(serie).index ? palier(serie).teinte : "ambre", motFete), 450);
+    return () => clearTimeout(m);
+  }, [taux, motFete, serie]);
   return (
     <div className="lg-fin">
-      <div className="lg-fin-anneau" style={{ ["--taux" as string]: `${taux}%` }} role="img" aria-label={`${taux} % de réussite`}>
+      <div ref={anneau} className="lg-fin-anneau" style={{ ["--taux" as string]: `${taux}%` }} role="img" aria-label={`${taux} % de réussite`}>
         <span>{taux}%</span>
       </div>
       <p className="font-display text-3xl font-bold">{taux >= 85 ? "Superbe séance" : taux >= 60 ? "Belle séance" : "Séance utile"}</p>
@@ -631,6 +680,12 @@ function Fin({ bilan, libre, onEncore, onFermer }: { bilan: Bilan; libre: boolea
           <dd>{auj}</dd>
         </div>
       </dl>
+      {connecte && points > 0 && (
+        <p className="lg-fin-points">
+          <strong>+{points.toLocaleString("fr-FR")}</strong> points gagnés pendant cette séance
+        </p>
+      )}
+      {connecte === false && <p className="lg-fin-points lg-fin-points-hors">Connecte-toi avec Google pour gagner des points et entrer au classement.</p>}
       <div className="mt-7 flex flex-wrap justify-center gap-2">
         <button type="button" className="bouton" onClick={onEncore}>
           <RotateCcw className="size-4" aria-hidden="true" />
