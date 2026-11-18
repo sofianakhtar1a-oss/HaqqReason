@@ -11,6 +11,7 @@ import { useEffect, useSyncExternalStore } from "react";
  *   - un lien vers Le Calame (/ecrire) ne mène ni à l'accueil ni à la bibliothèque ;
  *   - un lien vers L'Alambic (/alambic) ne mène ni à l'accueil ni aux autres espaces ;
  *   - un lien vers Le Truchement (/langues) ne mène ni à l'accueil ni aux autres espaces ;
+ *   - un lien vers Le Vizir (/assistant) ne mène ni à l'accueil ni aux autres espaces ;
  *   - un lien vers la bibliothèque ne mène ni à l'accueil ni aux autres espaces.
  * Ce passage par l'accueil est retenu sur l'appareil (localStorage), rien n'est envoyé au serveur.
  *
@@ -20,7 +21,7 @@ import { useEffect, useSyncExternalStore } from "react";
 
 const CLE = "haqqreason-accueil";
 /** Les espaces qui ont leur propre porte (tout le reste appartient à la bibliothèque). */
-const ESPACES_FERMES = ["/ecrire", "/alambic", "/langues"];
+const ESPACES_FERMES = ["/ecrire", "/alambic", "/langues", "/assistant"];
 const EVENEMENT = "haqqreason:acces";
 
 function lire(): boolean {

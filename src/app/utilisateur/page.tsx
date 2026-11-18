@@ -8,6 +8,7 @@ import {
   FlaskConical,
   Languages,
   LockKeyhole,
+  MessagesSquare,
 } from "lucide-react";
 import { aAccesModules } from "@/lib/acces-modules";
 import { EnTete } from "@/components/EnTete";
@@ -24,6 +25,7 @@ const ICONES = {
   langues: Languages,
   bibliotheque: BookOpen,
   islam: BookOpenText,
+  assistant: MessagesSquare,
 } as const;
 const LIENS = {
   calame: "/ecrire",
@@ -31,6 +33,7 @@ const LIENS = {
   langues: "/langues",
   bibliotheque: "/explorer",
   islam: "/islam",
+  assistant: "/assistant",
 } as const;
 const ACCENTS = {
   calame: "or",
@@ -38,6 +41,7 @@ const ACCENTS = {
   langues: "azur",
   bibliotheque: "emeraude",
   islam: "or",
+  assistant: "amethyste",
 } as const;
 
 type Props = {

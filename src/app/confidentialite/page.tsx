@@ -20,7 +20,7 @@ const SECTIONS: SectionTexte[] = [
   {
     titre: "Ce que le site reçoit de Google",
     paragraphes: [
-      "Le mode utilisateur (Le Calame, L'Alambic, Le Truchement, tes favoris) s'ouvre avec ton compte Google. Google transmet au site quatre informations seulement : un identifiant de compte, ton nom, ton adresse e-mail et l'adresse de ta photo de profil.",
+      "Le mode utilisateur (Le Calame, L'Alambic, Le Truchement, Le Vizir, tes favoris) s'ouvre avec ton compte Google. Google transmet au site quatre informations seulement : un identifiant de compte, ton nom, ton adresse e-mail et l'adresse de ta photo de profil.",
       "Le site n'a accès ni à tes e-mails, ni à tes fichiers Google, ni à ton carnet d'adresses, et il ne connaît jamais ton mot de passe.",
     ],
   },
@@ -36,6 +36,15 @@ const SECTIONS: SectionTexte[] = [
     paragraphes: [
       "Dans Le Truchement, chaque bonne réponse d'une séance de vocabulaire te rapporte des points. Ils sont calculés par le serveur et gardés sur ton compte, avec ta série de bonnes réponses et tes jours d'affilée.",
       "Tu n'apparais dans le classement que si tu le rejoins toi-même. Les autres apprenants connectés voient alors ton prénom suivi de l'initiale de ton nom, ta photo Google, tes points et tes jours d'affilée, jamais ton adresse e-mail. Tu peux quitter le classement à tout moment (« Comment gagner des points ? », puis « Quitter le classement ») : tu en disparais aussitôt, et tes points restent visibles de toi seul.",
+    ],
+  },
+  {
+    titre: "L'assistant (Le Vizir) et ta clé Anthropic",
+    paragraphes: [
+      "Le Vizir fonctionne avec TA clé API Anthropic : le site n'a pas de clé à lui et ne paie rien à ta place. Chaque question est envoyée à Anthropic avec ta clé, et facturée sur ton compte Anthropic, selon tes propres conditions avec Anthropic.",
+      "Ta clé est chiffrée (AES-256) dès son arrivée sur le serveur, liée à ton compte (elle ne se déchiffre pour aucun autre), et n'est jamais réaffichée, ni journalisée, ni transmise ailleurs qu'à Anthropic. Le serveur ne la déchiffre qu'en mémoire, le temps d'envoyer tes propres questions.",
+      "Sont envoyés à Anthropic, pour chaque réponse : ta question, les échanges précédents de la conversation et, dans ChatPDF, le texte des documents cochés (en entier ou par passages). Tes PDF sont lus par ton navigateur : le fichier lui-même ne quitte pas ton appareil, seul son texte est envoyé au site puis à Anthropic.",
+      "Sont gardés sur ton compte : ta clé chiffrée et tes réglages, tes conversations, le texte de tes PDF, et pour chaque réponse le nombre de jetons et le coût estimé, pour que tu suives ta dépense. Supprimer une conversation efface ses messages et ses PDF ; « Retirer » la clé l'efface du site (pense aussi à la révoquer dans ta console Anthropic si tu ne t'en sers plus).",
     ],
   },
   {
@@ -58,7 +67,7 @@ const SECTIONS: SectionTexte[] = [
     titre: "Effacer tes données",
     paragraphes: [
       <>
-        Depuis la page <Link href="/compte" className={lien}>Mon compte</Link>, tu peux te déconnecter, effacer ce qui est sur l&apos;appareil, déconnecter tous tes appareils, ou <strong>supprimer ton compte</strong>. La suppression efface ton compte et toutes ses données, documents, fichiers joints et points compris. Elle est définitive.
+        Depuis la page <Link href="/compte" className={lien}>Mon compte</Link>, tu peux te déconnecter, effacer ce qui est sur l&apos;appareil, déconnecter tous tes appareils, ou <strong>supprimer ton compte</strong>. La suppression efface ton compte et toutes ses données, documents, fichiers joints et points compris. Elle est définitive, et emporte aussi ta clé Anthropic et tes conversations avec l&apos;assistant.
       </>,
       "Tu peux aussi retirer l'accès de HaqqReason à ton compte Google à tout moment, dans les réglages de ton compte Google (« Sécurité », puis « Vos connexions à des applications et services tiers »).",
     ],

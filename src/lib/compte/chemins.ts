@@ -1,7 +1,7 @@
 /* Quelles pages demandent un compte, et où revenir après la connexion. Sans dépendance : sert aussi au navigateur. */
 
 /** Les espaces personnels : il faut un compte pour y entrer (quand la connexion Google est réglée). */
-const ESPACES_PERSONNELS = ["/utilisateur", "/ecrire", "/alambic", "/langues", "/favoris", "/compte"];
+const ESPACES_PERSONNELS = ["/utilisateur", "/ecrire", "/alambic", "/langues", "/assistant", "/favoris", "/compte"];
 
 export function espacePersonnel(chemin: string): boolean {
   return ESPACES_PERSONNELS.some((e) => chemin === e || chemin.startsWith(`${e}/`));

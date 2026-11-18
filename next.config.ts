@@ -21,6 +21,9 @@ const nextConfig: NextConfig = {
   experimental: {
     // Un long article (avec son historique d'enregistrement) peut dépasser la limite par défaut de 1 Mo.
     serverActions: { bodySizeLimit: "4mb" },
+    // Le proxy (src/proxy.ts) lit chaque requête : au-delà de cette taille, il tronquerait le corps.
+    // Le texte d'un gros PDF envoyé à l'assistant (jusqu'à 3 millions de caractères) doit passer entier.
+    proxyClientMaxBodySize: "16mb",
   },
   turbopack: {
     rules: {

@@ -18,7 +18,7 @@ await db.exec(`create role anon nologin; create role authenticated nologin; crea
 // Ce que Supabase fournit d'office : le schéma « extensions » et la table des espaces de stockage.
 await db.exec(`create schema extensions; grant usage on schema extensions to anon, authenticated, service_role;
   create schema storage; create table storage.buckets (id text primary key, name text, public boolean, file_size_limit bigint, allowed_mime_types text[]);`);
-for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql", "010_contributions.sql", "011_espaces.sql", "011_espaces.sql", "012_islam_un_bloc.sql", "012_islam_un_bloc.sql", "013_messagerie.sql", "013_messagerie.sql", "014_comptes.sql", "014_comptes.sql", "015_classement.sql", "015_classement.sql"]) {
+for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql", "010_contributions.sql", "011_espaces.sql", "011_espaces.sql", "012_islam_un_bloc.sql", "012_islam_un_bloc.sql", "013_messagerie.sql", "013_messagerie.sql", "014_comptes.sql", "014_comptes.sql", "015_classement.sql", "015_classement.sql", "016_assistant.sql", "016_assistant.sql"]) {
   await db.exec(readFileSync(new URL(`../supabase/migrations/${fichier}`, import.meta.url), "utf8"));
 }
 
@@ -624,6 +624,77 @@ ok("013 : la conversation disparaît avec la contribution", Number((await db.que
   }
   await db.exec(`delete from utilisateurs where id = '${u1}'`);
   ok("015 : supprimer un compte efface ses points", Number((await db.query(`select count(*)::int n from scores_vocabulaire where utilisateur_id = '${u1}'`)).rows[0].n) === 0 && Number((await db.query(`select count(*)::int n from points_jour where utilisateur_id = '${u1}'`)).rows[0].n) === 0);
+}
+
+// 016 : l'Assistant (clé API chiffrée par compte, conversations, PDF, consommation)
+{
+  const u1 = (await db.query(`select * from compte_ouvrir('google-ia1', 'ia1@exemple.fr', 'Ilyas M')`)).rows[0].id;
+  const u2 = (await db.query(`select * from compte_ouvrir('google-ia2', 'ia2@exemple.fr', 'Nour S')`)).rows[0].id;
+  const echoue = async (sql) => { try { await db.exec(sql); return false; } catch { return true; } };
+
+  ok("016 : une clé en clair est refusée (seul le format chiffré « v1. » passe)", await echoue(`insert into assistant_cles (utilisateur_id, cle_chiffree, apercu) values ('${u1}', 'sk-ant-api03-secret', 'x')`));
+  await db.exec(`insert into assistant_cles (utilisateur_id, cle_chiffree, apercu) values ('${u1}', 'v1.QUJDRA==', 'sk-ant-…ABCD')`);
+  ok("016 : un modèle fantaisiste est refusé", await echoue(`update assistant_cles set modele = 'gpt-4; drop table x' where utilisateur_id = '${u1}'`));
+  ok("016 : un effort inconnu est refusé", await echoue(`update assistant_cles set effort = 'max' where utilisateur_id = '${u1}'`));
+
+  const c1 = (await db.query(`insert into assistant_conversations (utilisateur_id, espace, titre) values ('${u1}', 'pdf', 'Rapports') returning id`)).rows[0].id;
+  ok("016 : un espace de conversation inconnu est refusé", await echoue(`insert into assistant_conversations (utilisateur_id, espace) values ('${u1}', 'autre')`));
+  await db.exec(`insert into assistant_messages (conversation_id, utilisateur_id, role, contenu) values ('${c1}', '${u1}', 'user', 'Résume les deux rapports')`);
+  ok("016 : un rôle de message inconnu est refusé", await echoue(`insert into assistant_messages (conversation_id, utilisateur_id, role, contenu) values ('${c1}', '${u1}', 'system', 'x')`));
+  const empreinte = "a".repeat(64);
+  await db.exec(`insert into assistant_documents (conversation_id, utilisateur_id, nom, pages, caracteres, jetons_estimes, empreinte, texte) values ('${c1}', '${u1}', 'a.pdf', 3, 1200, 480, '${empreinte}', '[Page 1] Bonjour')`);
+  ok("016 : le même PDF n'entre pas deux fois dans une conversation", await echoue(`insert into assistant_documents (conversation_id, utilisateur_id, nom, pages, caracteres, jetons_estimes, empreinte, texte) values ('${c1}', '${u1}', 'a-copie.pdf', 3, 1200, 480, '${empreinte}', 'x')`));
+  ok("016 : une empreinte mal formée est refusée", await echoue(`insert into assistant_documents (conversation_id, utilisateur_id, nom, pages, caracteres, jetons_estimes, empreinte, texte) values ('${c1}', '${u1}', 'b.pdf', 1, 1, 1, 'pas-une-empreinte', 'x')`));
+
+  await db.exec(`insert into assistant_usage (utilisateur_id, conversation_id, modele, jetons_entree, jetons_sortie, cout_usd, statut) values
+    ('${u1}', '${c1}', 'claude-sonnet-5-5', 1000, 500, 0.007, 'ok'),
+    ('${u1}', '${c1}', 'claude-sonnet-5-5', 2000, 100, 0.005, 'ok'),
+    ('${u1}', null, 'claude-haiku-5-5', 10, 10, 0.0001, 'ok'),
+    ('${u2}', null, 'claude-opus-5-5', 99999, 9999, 9.99, 'ok')`);
+  await db.exec(`insert into assistant_usage (utilisateur_id, modele, cout_usd, statut, cree_le) values ('${u1}', 'claude-sonnet-5-5', 5, 'ok', now() - interval '40 days')`);
+  const bilan = (await db.query(`select assistant_bilan($1) b`, [u1])).rows[0].b;
+  ok("016 : bilan du mois : coût et jetons de ce compte seulement, ce mois-ci", Math.abs(Number(bilan.mois_cout) - 0.0121) < 1e-9 && Number(bilan.mois_jetons) === 3620 && Number(bilan.mois_appels) === 3);
+  ok("016 : bilan : rythme des dix dernières minutes et place des PDF", Number(bilan.dix_minutes) === 3 && Number(bilan.documents_caracteres) === 1200 && Number(bilan.conversations) === 1);
+
+  await db.exec(`insert into assistant_verifications (utilisateur_id, reussie) values ('${u1}', false), ('${u1}', true), ('${u2}', false)`);
+  await db.exec(`insert into assistant_verifications (utilisateur_id, reussie, cree_le) values ('${u1}', false, now() - interval '2 hours')`);
+  ok("016 : bilan : essais de clé de la dernière heure, pour ce compte seulement", Number((await db.query(`select assistant_bilan($1) b`, [u1])).rows[0].b.verifications_heure) === 2);
+
+  const texte = "[Page 1]\nIntroduction du rapport.\n\n[Page 2]\nLe chiffre clé : 42.\n\n[Page 10]\nAnnexe : [Page 2] cité dans le texte.";
+  const d2 = (await db.query(`insert into assistant_documents (conversation_id, utilisateur_id, nom, pages, caracteres, jetons_estimes, empreinte, texte) values ($1, $2, 'rapport.pdf', 10, $3, 40, $4, $5) returning id`, [c1, u1, texte.length, "b".repeat(64), texte])).rows[0].id;
+  const page = async (u, n) => (await db.query(`select assistant_page($1, $2, $3) t`, [u, d2, n])).rows[0].t;
+  ok("016 : une page précise d'un PDF se relit seule", (await page(u1, 2)) === "[Page 2]\nLe chiffre clé : 42.");
+  ok("016 : la dernière page va jusqu'au bout, et « Page 1 » ne prend pas « Page 10 »", (await page(u1, 10)) === "[Page 10]\nAnnexe : [Page 2] cité dans le texte." && (await page(u1, 1)) === "[Page 1]\nIntroduction du rapport.");
+  ok("016 : une page absente ne renvoie rien", (await page(u1, 7)) === null);
+  const numeros = async () => (await db.query(`select numero from assistant_documents where conversation_id = $1 order by numero`, [c1])).rows.map((r) => r.numero).join(",");
+  ok("016 : chaque PDF reçoit son numéro dans la conversation (Doc 1, Doc 2…)", (await numeros()) === "1,2");
+  await db.exec(`delete from assistant_documents where conversation_id = '${c1}' and numero = 1`);
+  await db.exec(`insert into assistant_documents (conversation_id, utilisateur_id, nom, pages, caracteres, jetons_estimes, empreinte, texte, numero) values ('${c1}', '${u1}', 'c.pdf', 1, 1, 1, '${"c".repeat(64)}', 'x', 1)`);
+  ok("016 : un numéro ne se réutilise pas et ne se choisit pas : retirer « Doc 1 » ne décale pas les autres", (await numeros()) === "2,3");
+  await db.exec(`delete from assistant_documents where conversation_id = '${c1}' and numero = 3`);
+  await db.exec(`insert into assistant_documents (conversation_id, utilisateur_id, nom, pages, caracteres, jetons_estimes, empreinte, texte) values ('${c1}', '${u1}', 'd.pdf', 1, 1, 1, '${"d".repeat(64)}', 'x')`);
+  ok("016 : même le dernier numéro retiré n'est pas redonné", (await numeros()) === "2,4");
+  ok("016 : la page d'un PDF ne se lit pas depuis un autre compte", (await page(u2, 2)) === null);
+  await db.exec(`delete from assistant_documents where id = '${d2}'`);
+
+  for (const role of ["anon", "authenticated"]) {
+    await db.exec(`set role ${role}`);
+    await refuse(`[${role}] ne lit pas les clés de l'assistant`, `select * from assistant_cles`);
+    await refuse(`[${role}] ne lit pas les conversations`, `select * from assistant_conversations`);
+    await refuse(`[${role}] ne lit pas les messages`, `select * from assistant_messages`);
+    await refuse(`[${role}] ne lit pas les PDF importés`, `select * from assistant_documents`);
+    await refuse(`[${role}] ne lit pas la consommation`, `select * from assistant_usage`);
+    await refuse(`[${role}] n'appelle pas le bilan`, `select assistant_bilan('${u1}')`);
+    await refuse(`[${role}] ne lit pas une page de PDF`, `select assistant_page('${u1}', gen_random_uuid(), 1)`);
+    await refuse(`[${role}] ne lit pas les essais de clé`, `select * from assistant_verifications`);
+    await refuse(`[${role}] n'écrit pas de clé`, `insert into assistant_cles (utilisateur_id, cle_chiffree, apercu) values ('${u2}', 'v1.QQ==', 'x')`);
+    await db.exec(`reset role`);
+  }
+
+  await db.exec(`delete from assistant_conversations where id = '${c1}'`);
+  ok("016 : supprimer une conversation efface ses messages et ses PDF, mais garde la consommation", Number((await db.query(`select count(*)::int n from assistant_messages where conversation_id = '${c1}'`)).rows[0].n) === 0 && Number((await db.query(`select count(*)::int n from assistant_documents where conversation_id = '${c1}'`)).rows[0].n) === 0 && Number((await db.query(`select count(*)::int n from assistant_usage where utilisateur_id = '${u1}'`)).rows[0].n) === 4);
+  await db.exec(`delete from utilisateurs where id = '${u1}'`);
+  ok("016 : supprimer un compte efface sa clé et toute sa consommation", Number((await db.query(`select count(*)::int n from assistant_cles where utilisateur_id = '${u1}'`)).rows[0].n) === 0 && Number((await db.query(`select count(*)::int n from assistant_usage where utilisateur_id = '${u1}'`)).rows[0].n) === 0);
 }
 
 console.log(echecs === 0 ? "\nTous les tests SQL passent." : `\n${echecs} test(s) en échec.`);
