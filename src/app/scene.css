@@ -648,8 +648,8 @@ main:has(.carte-choix[data-accent="azur"]:hover, .carte-choix[data-accent="azur"
   }
 }
 /* Tant que la porte couvre l'écran, la page qui arrive retient ses entrées : elles se jouent à l'ouverture. */
-html[data-portail-arret] body > :not(.portail, .atmosphere),
-html[data-portail-arret] body > :not(.portail, .atmosphere) * {
+html[data-portail-arret] body > :not(.portail, .atmosphere, .ouverture),
+html[data-portail-arret] body > :not(.portail, .atmosphere, .ouverture) * {
   animation-play-state: paused !important;
 }
 
@@ -787,4 +787,246 @@ html[data-portail-arret] body > :not(.portail, .atmosphere) * {
   html.scene [data-revele]:not([data-vu]) {
     opacity: 1;
   }
+}
+
+/* =====================================================================
+   L'ouverture : la porte bleue (voir components/scene/Ouverture.tsx)
+   ===================================================================== */
+.ouverture {
+  display: none;
+}
+html[data-ouverture] .ouverture {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  animation: ouverture-fin 0.6s ease 2.35s forwards;
+}
+@keyframes ouverture-fin {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+html[data-ouverture-passee] .ouverture {
+  animation: ouverture-fin 0.3s ease forwards !important;
+}
+.porte-scene {
+  position: absolute;
+  inset: 0;
+  perspective: 1400px;
+  animation: camera 1.3s cubic-bezier(0.5, 0, 0.2, 1) 1.2s forwards;
+}
+/* La caméra avance vers l'intérieur pendant que les battants s'ouvrent. */
+@keyframes camera {
+  to {
+    transform: scale(1.14);
+  }
+}
+.porte-battant {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50.2%;
+  overflow: hidden;
+  color: #e9be6a;
+  background:
+    radial-gradient(120% 70% at 50% 50%, #1d2f86 0%, #101c58 55%, #070d2b 100%);
+  box-shadow: inset 0 0 0 1px rgba(233, 190, 106, 0.35), inset 0 0 80px rgba(0, 0, 0, 0.55);
+  backface-visibility: hidden;
+  will-change: transform;
+}
+.porte-gauche {
+  left: 0;
+  transform-origin: left center;
+  animation: battant-gauche 1.15s cubic-bezier(0.6, 0, 0.25, 1) 1.25s forwards;
+}
+.porte-droit {
+  right: 0;
+  transform-origin: right center;
+  animation: battant-droit 1.15s cubic-bezier(0.6, 0, 0.25, 1) 1.25s forwards;
+}
+@keyframes battant-gauche {
+  to {
+    transform: rotateY(-108deg);
+  }
+}
+@keyframes battant-droit {
+  to {
+    transform: rotateY(108deg);
+  }
+}
+.porte-trame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.22;
+}
+.porte-motif {
+  position: absolute;
+  left: 50%;
+  width: min(32vw, 15rem);
+  height: min(32vw, 15rem);
+  margin-left: calc(min(32vw, 15rem) / -2);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.4;
+  opacity: 0.18;
+  animation: motif-allume 0.7s ease calc(0.3s + var(--i) * 0.22s) forwards;
+}
+.porte-motif:nth-of-type(2) {
+  top: 8%;
+}
+.porte-motif:nth-of-type(3) {
+  top: 50%;
+  margin-top: calc(min(32vw, 15rem) / -2);
+}
+.porte-motif:nth-of-type(4) {
+  bottom: 8%;
+}
+/* Les motifs s'allument un à un, comme parcourus par la lumière. */
+@keyframes motif-allume {
+  60% {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px rgba(233, 190, 106, 0.9));
+  }
+  to {
+    opacity: 0.75;
+    filter: drop-shadow(0 0 4px rgba(233, 190, 106, 0.6));
+  }
+}
+.porte-poignee {
+  position: absolute;
+  top: 50%;
+  width: 10px;
+  height: 64px;
+  margin-top: -32px;
+  border-radius: 6px;
+  background: linear-gradient(#f6dc9c, #a87a2a);
+  box-shadow: 0 0 14px rgba(233, 190, 106, 0.6);
+}
+.porte-gauche .porte-poignee {
+  right: 22px;
+}
+.porte-droit .porte-poignee {
+  left: 22px;
+}
+/* La lumière d'or filtre par la fente entre les battants. */
+.porte-fente {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  margin-left: -2px;
+  background: linear-gradient(transparent, #fff3cf 30%, #ffe7a6 70%, transparent);
+  box-shadow: 0 0 24px 6px rgba(255, 215, 130, 0.7), 0 0 90px 30px rgba(233, 190, 106, 0.35);
+  transform: scaleY(0);
+  animation: fente 1.3s ease 0.05s forwards;
+}
+@keyframes fente {
+  40% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  85% {
+    transform: scaleY(1) scaleX(2.5);
+    opacity: 1;
+  }
+  to {
+    transform: scaleY(1) scaleX(3);
+    opacity: 0;
+  }
+}
+.porte-sceau {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 1rem;
+  animation: sceau-part 0.35s ease 1.05s forwards;
+}
+@keyframes sceau-part {
+  to {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+}
+.porte-rosace {
+  width: min(42vmin, 15rem);
+  color: #e9be6a;
+}
+.ouverture .porte-rosace [pathLength] {
+  animation-duration: 0.8s;
+  animation-delay: calc(var(--rang, 0) * 0.04s);
+}
+.porte-nom {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 6vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #f4efe1;
+  text-shadow: 0 0 30px rgba(233, 190, 106, 0.5);
+}
+.porte-particules span {
+  position: absolute;
+  top: -2%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffe7a6;
+  box-shadow: 0 0 8px 2px rgba(233, 190, 106, 0.7);
+  opacity: 0;
+  animation: particule var(--t) ease-in var(--d) forwards;
+}
+/* Des particules de lumière flottent et retombent doucement. */
+@keyframes particule {
+  15% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(18px, 75vh, 0);
+  }
+}
+.porte-voile {
+  position: absolute;
+  inset: 0;
+  background: var(--fond);
+  opacity: 0;
+}
+
+/* Visites suivantes : l'astrolabe se trace sur fond nuit, puis s'efface. */
+html[data-ouverture="court"] .ouverture {
+  animation-delay: 0.85s;
+}
+html[data-ouverture="court"] .porte-voile {
+  opacity: 1;
+}
+html[data-ouverture="court"] .porte-battant,
+html[data-ouverture="court"] .porte-fente,
+html[data-ouverture="court"] .porte-particules {
+  display: none;
+}
+html[data-ouverture="court"] .porte-scene {
+  animation: none;
+}
+html[data-ouverture="court"] .porte-sceau {
+  animation: none;
+}
+
+/* Réduire les animations : un simple fondu. */
+html[data-ouverture="fondu"] .porte-voile {
+  opacity: 1;
+}
+html[data-ouverture="fondu"] .porte-scene,
+html[data-ouverture="fondu"] .porte-particules {
+  display: none;
+}
+html[data-ouverture="fondu"] .ouverture {
+  animation: ouverture-fin 0.5s ease 0.05s forwards !important;
 }

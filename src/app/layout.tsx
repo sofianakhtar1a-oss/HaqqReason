@@ -13,6 +13,7 @@ import { PaletteRecherche } from "@/components/PaletteRecherche";
 import { ServiceHorsLigne } from "@/components/ServiceHorsLigne";
 import { Mouvements } from "@/components/scene/Mouvements";
 import { Portail } from "@/components/scene/Portail";
+import { Ouverture, SCRIPT_OUVERTURE } from "@/components/scene/Ouverture";
 import { googleConfigure } from "@/lib/compte/jeton";
 import { compteCourant } from "@/lib/compte/session";
 import { variablesManquantes } from "@/lib/env";
@@ -62,6 +63,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="flex min-h-dvh flex-col antialiased">
         <script nonce={nonce} dangerouslySetInnerHTML={{ __html: SCRIPT_THEME }} suppressHydrationWarning />
+        <script nonce={nonce} dangerouslySetInnerHTML={{ __html: SCRIPT_OUVERTURE }} suppressHydrationWarning />
         {/* L'atmosphère : trois nappes de lumière qui dérivent lentement, et un grain de vélin. */}
         <div className="atmosphere" aria-hidden="true">
           <span className="atmosphere-nappe" />
@@ -74,6 +76,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
         {manquantes.length === 0 && <PaletteRecherche />}
         <ServiceHorsLigne />
         {manquantes.length === 0 && <Portail />}
+        {manquantes.length === 0 && <Ouverture />}
         <Mouvements />
       </body>
     </html>
