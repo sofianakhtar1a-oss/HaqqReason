@@ -6,7 +6,7 @@ import { ChampMotDePasse } from "@/components/ChampMotDePasse";
 import { CleRecuperation } from "@/components/CleRecuperation";
 import { MessageFormulaire } from "@/components/MessageFormulaire";
 import { ETAT_INITIAL } from "@/lib/form-state";
-import { changerMotDePasse, effacerToutLeContenu, regenererCle } from "../actions";
+import { changerMotDePasse, choisirMotDePasseModules, effacerToutLeContenu, regenererCle } from "../actions";
 
 export function FormulaireMotDePasse() {
   const [etat, action] = useActionState(changerMotDePasse, ETAT_INITIAL);
@@ -68,6 +68,30 @@ export function FormulaireEffacement() {
       <BoutonEnvoi enCours="Effacement…" className="bouton bouton-danger w-full">
         Effacer tout le contenu
       </BoutonEnvoi>
+    </form>
+  );
+}
+
+export function FormulaireMotDePasseModules({ existe }: { existe: boolean }) {
+  const [etat, action] = useActionState(choisirMotDePasseModules, ETAT_INITIAL);
+  const [nouveau, setNouveau] = useState("");
+  const [confirmation, setConfirmation] = useState("");
+  const [actuel, setActuel] = useState("");
+
+  return (
+    <form action={action} className="space-y-5">
+      <ChampMotDePasse
+        nom="motDePasseModules"
+        libelle={existe ? "Nouveau mot de passe des modules" : "Mot de passe des modules"}
+        valeur={nouveau}
+        onChange={setNouveau}
+        autoComplete="new-password"
+        aide="8 caractères minimum, différent de ton mot de passe créateur."
+      />
+      <ChampMotDePasse nom="confirmationModules" libelle="Confirme-le" valeur={confirmation} onChange={setConfirmation} autoComplete="new-password" />
+      <ChampMotDePasse nom="motDePasseActuel" libelle="Ton mot de passe créateur (pour confirmer)" valeur={actuel} onChange={setActuel} autoComplete="current-password" />
+      <MessageFormulaire etat={etat} />
+      <BoutonEnvoi enCours="Enregistrement…">{existe ? "Changer le mot de passe des modules" : "Ouvrir les modules avec ce mot de passe"}</BoutonEnvoi>
     </form>
   );
 }

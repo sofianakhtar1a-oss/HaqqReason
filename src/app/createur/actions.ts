@@ -2,6 +2,7 @@
 
 import { redirect } from "next/navigation";
 import { journaliser } from "@/lib/audit";
+import { definirMotDePasseModules, fermerModules, revoquerAccesModules } from "@/lib/acces-modules";
 import { lireCompteCreateur } from "@/lib/auth-store";
 import { egaliteSure, genererCleRecuperation, hacherSecret, verifierSecret } from "@/lib/crypto";
 import { env, variablesManquantes } from "@/lib/env";
@@ -364,6 +365,52 @@ export async function deconnecterTousLesAppareils(): Promise<void> {
   await journaliser("deconnexion_de_tous_les_appareils");
   await fermerSession();
   redirect("/createur/connexion");
+}
+
+/**
+ * Mot de passe des deux modules réservés (preuves de la véracité de l'islam, Islam authentique).
+ * Il est distinct de celui du créateur : le choisir identique est refusé. Le changer ferme l'accès
+ * à tous les visiteurs déjà entrés, qui devront donner le nouveau.
+ */
+export async function choisirMotDePasseModules(_: EtatFormulaire, formData: FormData): Promise<EtatFormulaire> {
+  const identite = await confirmerIdentite(formData);
+  if (identite.refus) return identite.refus;
+
+  const motDePasse = champ(formData, "motDePasseModules");
+  if (motDePasse !== champ(formData, "confirmationModules")) return erreur("Les deux mots de passe ne sont pas identiques.");
+  const longueur = [...motDePasse].length;
+  if (longueur < 8) return erreur("Au moins 8 caractères.");
+  if (longueur > 128) return erreur("Au plus 128 caractères.");
+  if (await verifierSecret(motDePasse, identite.compte.password_hash)) {
+    return erreur("Choisis un mot de passe différent de celui du mode créateur : tu vas le donner à d'autres personnes.");
+  }
+
+  try {
+    await definirMotDePasseModules(motDePasse);
+  } catch {
+    return erreur("Enregistrement impossible. Réessaie.");
+  }
+  await journaliser("mot_de_passe_modules_change");
+  revalidatePath("/createur/securite");
+  return { statut: "succes", message: "Mot de passe des modules enregistré. Les visiteurs déjà entrés devront donner le nouveau." };
+}
+
+/** Retire l'accès à tous les visiteurs, sans changer le mot de passe. */
+export async function retirerAccesModules(): Promise<void> {
+  if (!(await sessionCreateur())) redirect("/createur/connexion");
+  await revoquerAccesModules();
+  await journaliser("acces_modules_retire");
+  revalidatePath("/createur/securite");
+  redirect("/createur/securite?modules=retire");
+}
+
+/** Ferme complètement les deux modules : plus aucun mot de passe ne les ouvre. */
+export async function fermerLesModules(): Promise<void> {
+  if (!(await sessionCreateur())) redirect("/createur/connexion");
+  await fermerModules();
+  await journaliser("modules_fermes");
+  revalidatePath("/createur/securite");
+  redirect("/createur/securite?modules=ferme");
 }
 
 /**

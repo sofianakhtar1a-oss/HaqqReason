@@ -49,6 +49,7 @@ const SECTIONS: SectionTexte[] = [
     titre: "Sécurité et cookies",
     paragraphes: [
       "Ta connexion est gardée dans un cookie signé, illisible par les scripts de la page, qui dure 60 jours et se prolonge quand tu reviens. Un second cookie de dix minutes sert seulement pendant l'aller-retour chez Google.",
+      "Si tu entres le mot de passe des modules réservés (Les preuves de la véracité de l'islam, L'Islam authentique), un cookie signé s'en souvient pendant 30 jours sur cet appareil. Il ne contient aucune information sur toi. Les essais de mot de passe refusés sont notés avec l'empreinte chiffrée de l'adresse IP, pour bloquer qui tenterait de le deviner.",
       "Pour repérer les abus, le site note certaines actions (par exemple la création d'un compte) avec une empreinte chiffrée de l'adresse IP et le type de navigateur, jamais l'adresse IP elle-même.",
       "Le site n'utilise ni publicité, ni outil de mesure d'audience, ni cookie d'un autre site.",
     ],

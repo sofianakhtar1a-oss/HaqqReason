@@ -32,6 +32,7 @@ export function PaletteRecherche() {
   const [q, setQ] = useState("");
   const [resultats, setResultats] = useState<Resultat[]>([]);
   const [total, setTotal] = useState(0);
+  const [verrouille, setVerrouille] = useState(false);
   const [chargement, setChargement] = useState(false);
   const [actif, setActif] = useState(0);
   const [recentes, setRecentes] = useState<string[]>([]);
@@ -73,10 +74,11 @@ export function PaletteRecherche() {
       setChargement(true);
       try {
         const reponse = await fetch(`/api/recherche?q=${encodeURIComponent(texte)}&limite=8`);
-        const donnees = (await reponse.json()) as { resultats: Resultat[]; total: number };
+        const donnees = (await reponse.json()) as { resultats?: Resultat[]; total?: number; verrouille?: boolean };
         if (numero === requete.current) {
-          setResultats(donnees.resultats);
-          setTotal(donnees.total);
+          setVerrouille(donnees.verrouille === true);
+          setResultats(donnees.resultats ?? []);
+          setTotal(donnees.total ?? 0);
           setActif(0);
         }
       } catch {
@@ -95,7 +97,16 @@ export function PaletteRecherche() {
           ...recentes.map((r) => ({ cle: `recente-${r}`, titre: r, sousTitre: "Recherche récente", href: `/recherche?q=${encodeURIComponent(r)}` })),
           ...RACCOURCIS,
         ]
-      : [
+      : verrouille
+        ? [
+            {
+              cle: "acces",
+              titre: "Entrer le mot de passe des modules réservés",
+              sousTitre: "La recherche dans la bibliothèque est réservée",
+              href: `/acces?module=preuves&retour=${encodeURIComponent(`/recherche?q=${encodeURIComponent(texte)}`)}`,
+            },
+          ]
+        : [
           ...resultats.map((r) => ({ cle: `${r.type}-${r.id}-${r.page ?? ""}`, titre: r.titre, sousTitre: r.chemin, href: lienResultat(r, texte), resultat: r })),
           { cle: "tous", titre: total > resultats.length ? `Voir les ${total} résultats` : "Recherche avancée avec filtres", href: `/recherche?q=${encodeURIComponent(texte)}` },
         ];
@@ -147,7 +158,7 @@ export function PaletteRecherche() {
           </button>
         </div>
         <ul id="palette-liste" role="listbox" className="overflow-y-auto p-2">
-          {texte.length >= 2 && !chargement && resultats.length === 0 && (
+          {texte.length >= 2 && !chargement && !verrouille && resultats.length === 0 && (
             <li className="px-3 py-4 text-encre-douce">Aucun résultat pour « {texte} ». Essaie un autre mot, ou la recherche avancée.</li>
           )}
           {elements.map((e, i) => (

@@ -1,11 +1,11 @@
 import type { MetadataRoute } from "next";
 import { adresseDuSite } from "@/lib/site";
 
-/** Les moteurs de recherche lisent le contenu public, jamais l'espace créateur ni les pages d'impression. */
+/** Les moteurs de recherche lisent le contenu public : ni l'espace créateur, ni les modules réservés (mot de passe). */
 export default function robots(): MetadataRoute.Robots {
   const site = adresseDuSite();
   return {
-    rules: [{ userAgent: "*", allow: "/", disallow: ["/createur", "/api/", "/fichiers/", "/explorer/article/*/imprimer", "/explorer/categorie/*/imprimer"] }],
+    rules: [{ userAgent: "*", allow: "/", disallow: ["/createur", "/api/", "/fichiers/", "/acces", "/explorer", "/islam", "/graphe", "/recherche", "/debat", "/nouveautes", "/sources"] }],
     sitemap: new URL("/sitemap.xml", site).toString(),
     host: site.origin,
   };

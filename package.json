@@ -17,7 +17,8 @@
     "test:langues": "tsx tests/test-langues.mts",
     "test:vocabulaire": "tsx tests/test-vocabulaire.mts",
     "test:modules": "tsx tests/test-modules.mts",
-    "test:compte": "tsx --conditions=react-server tests/test-compte.mts"
+    "test:compte": "tsx --conditions=react-server tests/test-compte.mts",
+    "test:acces": "tsx tests/test-acces.mts"
   },
   "dependencies": {
     "@cantoo/pdf-lib": "^2.11.1",

@@ -2,6 +2,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { RELAIS_CONNUS } from "@/lib/alambic/transcription/vtt";
 import { espacePersonnel, googleConfigure, NOM_COOKIE_COMPTE, NOM_COOKIE_VUE, optionsCookieCompte, optionsCookieVue, signerCompte, verifierCompte } from "@/lib/compte/jeton";
 import { NOM_COOKIE, NOM_COOKIE_APPAREIL, optionsCookie, signerSession, verifierSession } from "@/lib/session-token";
+import { cheminReserve, moduleDuChemin, NOM_COOKIE_MODULES, optionsCookieModules, verifierAccesModules, versionAccesModules } from "@/lib/acces-modules-jeton";
 
 /** Pages du mode créateur accessibles sans être connecté. */
 const PAGES_OUVERTES = ["/createur/connexion", "/createur/configuration", "/createur/recuperation"];
@@ -12,7 +13,10 @@ const PAGES_OUVERTES = ["/createur/connexion", "/createur/configuration", "/crea
  * 2. écarte tout de suite les visiteurs non connectés de l'espace créateur ;
  * 3. prolonge la session du créateur tant qu'il est actif ;
  * 4. demande un compte (connexion Google) à l'entrée des espaces personnels ;
- * 5. signale à la page que le créateur regarde le site « comme un utilisateur ».
+ * 5. ferme les deux modules réservés (preuves de la véracité de l'islam, Islam authentique)
+ *    à qui n'a pas donné leur mot de passe : pages, graphe, recherche, fichiers, et même
+ *    les préchargements de liens (voir le second « matcher » en bas du fichier) ;
+ * 6. signale à la page que le créateur regarde le site « comme un utilisateur ».
  * La vérification qui fait foi reste celle de chaque page et de chaque action (lib/session.ts).
  */
 export async function proxy(request: NextRequest) {
@@ -93,6 +97,31 @@ export async function proxy(request: NextRequest) {
     return redirection;
   }
 
+  // Modules réservés : il faut leur mot de passe (différent de celui du créateur).
+  // Le créateur chez lui passe ; dans la vue utilisateur, il est traité comme un visiteur.
+  if (cheminReserve(chemin) && !createurChezLui) {
+    const jeton = request.cookies.get(NOM_COOKIE_MODULES)?.value;
+    if (!(await verifierAccesModules(jeton, await versionAccesModules()))) {
+      let refus: NextResponse;
+      if (chemin === "/api/recherche" && request.method === "GET") {
+        // La palette Ctrl+K reste utilisable : aucun résultat, et une invitation à entrer.
+        refus = NextResponse.json({ resultats: [], total: 0, createur: false, erreur: false, verrouille: true });
+      } else if (chemin.startsWith("/api/") || chemin.startsWith("/fichiers/") || request.method !== "GET") {
+        refus = NextResponse.json({ erreur: "verrouille", verrouille: true }, { status: 403 });
+      } else {
+        const acces = new URL("/acces", request.url);
+        acces.searchParams.set("module", moduleDuChemin(chemin));
+        acces.searchParams.set("retour", `${chemin}${request.nextUrl.search}`);
+        refus = NextResponse.redirect(acces);
+      }
+      refus.headers.set("Content-Security-Policy", csp);
+      refus.headers.set("Cache-Control", "no-store");
+      // Un cookie périmé (mot de passe changé, accès retiré) est effacé tout de suite.
+      if (jeton) refus.cookies.set(NOM_COOKIE_MODULES, "", optionsCookieModules(0));
+      return refus;
+    }
+  }
+
   // La vue utilisateur n'existe que pour le créateur connecté, hors de son espace.
   const vueUtilisateur = vueDemandee && session !== null && !zoneCreateur;
 
@@ -115,7 +144,7 @@ export async function proxy(request: NextRequest) {
 
   const reponse = NextResponse.next({ request: { headers: enTetes } });
   reponse.headers.set("Content-Security-Policy", csp);
-  if (zoneCreateur || vueUtilisateur || espacePersonnel(chemin) || chemin === "/connexion") {
+  if (zoneCreateur || vueUtilisateur || espacePersonnel(chemin) || chemin === "/connexion" || chemin === "/acces" || cheminReserve(chemin)) {
     reponse.headers.set("Cache-Control", "no-store");
   }
   // Revenir dans l'espace créateur, par n'importe quel chemin, quitte la vue utilisateur.
@@ -151,5 +180,8 @@ export const config = {
         { type: "header", key: "purpose", value: "prefetch" },
       ],
     },
+    // Modules réservés : même les préchargements de liens passent par le contrôle du mot de passe,
+    // sinon une page réservée pourrait arriver dans le navigateur par un simple survol de lien.
+    { source: "/((?:explorer|islam|graphe|recherche|debat|nouveautes|sources|fichiers|api/recherche|api/sens|api/apercu-noeud|api/articles-publies)(?:/.*)?)" },
   ],
 };

@@ -7,7 +7,9 @@ import {
   Feather,
   FlaskConical,
   Languages,
+  LockKeyhole,
 } from "lucide-react";
+import { aAccesModules } from "@/lib/acces-modules";
 import { EnTete } from "@/components/EnTete";
 import { Rosace } from "@/components/Rosace";
 import { MarqueAccueil } from "@/lib/client/acces";
@@ -54,6 +56,9 @@ export default async function PageUtilisateur({ searchParams }: Props) {
   await exigerCompte("/utilisateur");
   const [{ resolu, apercu }, chiffres] = await Promise.all([chargerModule("accueil", searchParams), chiffresVocabulaire()]);
   const cartes = (resolu.listes.cartes ?? []).filter((c) => c.id in LIENS);
+  // Les deux modules réservés demandent un mot de passe : la carte le dit avant le clic.
+  const acces = await aAccesModules();
+  const reserve = (id: string) => !acces && (id === "bibliotheque" || id === "islam");
   return (
     <>
       <MarqueAccueil />
@@ -83,7 +88,16 @@ export default async function PageUtilisateur({ searchParams }: Props) {
                   className="carte-choix"
                   data-accent={ACCENTS[cle]}
                 >
-                  <span className="carte-choix-marque">{marque}</span>
+                  <span className="carte-choix-marque">
+                    {reserve(id) ? (
+                      <span className="inline-flex items-center gap-1.5">
+                        <LockKeyhole className="size-3.5" aria-hidden="true" />
+                        Réservé
+                      </span>
+                    ) : (
+                      marque
+                    )}
+                  </span>
                   <Icone
                     className="size-9 text-accent"
                     strokeWidth={1.4}
@@ -93,7 +107,7 @@ export default async function PageUtilisateur({ searchParams }: Props) {
                   <span className="carte-choix-titre">{titre}</span>
                   <span className="carte-choix-texte">{remplir(texte, chiffres)}</span>
                   <span className="carte-choix-pied">
-                    Entrer
+                    {reserve(id) ? "Entrer avec le mot de passe" : "Entrer"}
                     <ArrowRight className="size-4" aria-hidden="true" />
                   </span>
                 </Link>

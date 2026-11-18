@@ -5,7 +5,7 @@
  * - L'espace créateur, les API et les fichiers ne sont JAMAIS mis en cache.
  * - Une page qui renvoie vers la connexion n'est jamais gardée à la place de la page demandée.
  */
-const VERSION = "hr-v6-3";
+const VERSION = "hr-v7-0";
 const PAGES = `${VERSION}-pages`;
 const STATIQUE = `${VERSION}-statique`;
 const GARDE = "hr-favoris";

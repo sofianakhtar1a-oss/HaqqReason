@@ -6255,3 +6255,52 @@ html[data-vue="utilisateur"] {
     padding-inline: 0.6rem;
   }
 }
+
+/* ---------- Modules réservés : contact Instagram / TikTok ---------- */
+.reseau {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-height: 3.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+.reseau:hover,
+.reseau:focus-visible {
+  background: var(--surface-forte);
+  border-color: color-mix(in srgb, var(--or) 55%, var(--trait));
+  transform: translateY(-1px);
+}
+.reseau-icone {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.8rem;
+  color: #fff;
+}
+.reseau[data-reseau="instagram"] .reseau-icone {
+  background: linear-gradient(135deg, #f9ce34, #ee2a7b 55%, #6228d7);
+}
+.reseau[data-reseau="tiktok"] .reseau-icone {
+  background: #111;
+  box-shadow:
+    -2px -2px 0 #25f4ee inset,
+    2px 2px 0 #fe2c55 inset;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reseau {
+    transition: none;
+  }
+  .reseau:hover,
+  .reseau:focus-visible {
+    transform: none;
+  }
+}

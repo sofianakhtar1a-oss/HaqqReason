@@ -4,11 +4,13 @@ import { ArrowLeft } from "lucide-react";
 import { EnTete } from "@/components/EnTete";
 import { exigerCreateur } from "@/lib/session";
 import { dbAdmin } from "@/lib/supabase";
-import { deconnecterTousLesAppareils, oublierAppareil } from "../actions";
+import { deconnecterTousLesAppareils, fermerLesModules, oublierAppareil, retirerAccesModules } from "../actions";
+import { lireAccesModules } from "@/lib/acces-modules";
+import { ContactReseaux } from "@/components/ContactReseaux";
 import { listerAppareils } from "@/lib/appareils";
-import { BadgeCheck, ShieldAlert, Smartphone } from "lucide-react";
+import { BadgeCheck, LockKeyhole, ShieldAlert, Smartphone } from "lucide-react";
 import { ActivationDoubleAuth, DesactivationDoubleAuth } from "./FormulairesDoubleAuth";
-import { FormulaireEffacement, FormulaireMotDePasse, FormulaireNouvelleCle } from "./FormulairesSecurite";
+import { FormulaireEffacement, FormulaireMotDePasse, FormulaireMotDePasseModules, FormulaireNouvelleCle } from "./FormulairesSecurite";
 
 export const metadata: Metadata = { title: "Sécurité", robots: { index: false } };
 
@@ -33,6 +35,11 @@ const LIBELLES: Record<string, string> = {
   sauvegarde_restauree: "Bibliothèque restaurée depuis une sauvegarde",
   sauvegarde_automatique: "Sauvegarde automatique",
   import_en_masse: "Import de contenus",
+  mot_de_passe_modules_change: "Mot de passe des modules réservés changé",
+  acces_modules_retire: "Accès aux modules réservés retiré à tous les visiteurs",
+  modules_fermes: "Modules réservés fermés",
+  acces_modules_ouvert: "Un visiteur est entré dans les modules réservés",
+  acces_modules_refuse: "Mot de passe des modules refusé",
 };
 
 function appareil(userAgent: string): string {
@@ -47,7 +54,16 @@ function date(iso: string): string {
 
 export default async function PageSecurite({ searchParams }: PageProps<"/createur/securite">) {
   const compte = await exigerCreateur();
-  const alerte = (await searchParams).alerte === "appareil";
+  const sp = await searchParams;
+  const alerte = sp.alerte === "appareil";
+  const avisModules = sp.modules === "retire" ? "Accès retiré : chaque visiteur devra redonner le mot de passe." : sp.modules === "ferme" ? "Modules fermés : plus aucun mot de passe ne les ouvre." : null;
+  let modules: Awaited<ReturnType<typeof lireAccesModules>> = null;
+  try {
+    modules = await lireAccesModules();
+  } catch {
+    modules = null;
+  }
+  const modulesOuverts = Boolean(modules?.empreinte);
   const appareils = await listerAppareils();
   const { data: journal } = await dbAdmin()
     .from("audit_log")
@@ -84,6 +100,51 @@ export default async function PageSecurite({ searchParams }: PageProps<"/createu
               : "Fortement recommandée : en plus du mot de passe, chaque connexion demandera un code à 6 chiffres donné par une application de ton téléphone."}
           </p>
           <div className="max-w-md">{compte.totp_actif ? <DesactivationDoubleAuth /> : <ActivationDoubleAuth />}</div>
+        </section>
+
+        <section className="verre panneau mt-10" aria-labelledby="titre-modules">
+          <div className="flex flex-wrap items-center gap-3">
+            <LockKeyhole className={`size-7 ${modulesOuverts ? "text-succes" : "text-or"}`} aria-hidden="true" />
+            <h2 id="titre-modules" className="text-2xl font-bold">
+              Modules réservés {modulesOuverts ? "ouverts avec un mot de passe" : "fermés à tous les visiteurs"}
+            </h2>
+          </div>
+          <p className="mt-2 max-w-[70ch] text-encre-douce">
+            « Les preuves de la véracité de l&apos;islam » et « L&apos;Islam authentique » (avec le graphe, la recherche, le débat express, les
+            nouveautés et les fichiers joints) ne s&apos;ouvrent qu&apos;avec ce mot de passe, différent du tien. Tu le donnes à qui te le demande
+            sur Instagram ou TikTok. {modulesOuverts ? "" : "Tant qu'il n'est pas choisi, personne d'autre que toi n'y entre."}
+          </p>
+          {avisModules && (
+            <p role="status" className="message message-succes mt-4 max-w-2xl">
+              {avisModules}
+            </p>
+          )}
+          <div className="mt-6 grid items-start gap-8 lg:grid-cols-2">
+            <div className="max-w-md">
+              <FormulaireMotDePasseModules existe={modulesOuverts} />
+            </div>
+            <div className="space-y-5">
+              <div>
+                <h3 className="font-bold">Ce que voient les visiteurs</h3>
+                <p className="mt-1 text-encre-douce">Une page qui demande le mot de passe, et tes deux comptes pour le demander :</p>
+                <ContactReseaux className="mt-3 sm:grid-cols-2" />
+              </div>
+              {modulesOuverts && (
+                <div className="flex flex-wrap gap-3">
+                  <form action={retirerAccesModules}>
+                    <button type="submit" className="bouton bouton-discret">
+                      Retirer l&apos;accès à tout le monde
+                    </button>
+                  </form>
+                  <form action={fermerLesModules}>
+                    <button type="submit" className="bouton bouton-danger">
+                      Fermer les modules
+                    </button>
+                  </form>
+                </div>
+              )}
+            </div>
+          </div>
         </section>
 
         <div className="mt-10 grid items-start gap-6 lg:grid-cols-2">
