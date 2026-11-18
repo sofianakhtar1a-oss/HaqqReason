@@ -1177,6 +1177,138 @@ button.aia-choix:hover {
   color: var(--encre-douce);
 }
 
+/* Les trois IA : un repère de couleur discret pour chacune. */
+[data-ia="anthropic"] {
+  --aia-ia: var(--or);
+}
+[data-ia="openai"] {
+  --aia-ia: var(--emeraude);
+}
+[data-ia="google"] {
+  --aia-ia: var(--azur);
+}
+.aia-ias {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.aia-ia {
+  position: relative;
+  display: grid;
+  gap: 0.1rem;
+  padding: 0.75rem 0.8rem 0.7rem;
+  border-radius: 0.95rem;
+  border: 1px solid var(--trait);
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+.aia-ia input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.aia-ia:has(input:focus-visible) {
+  outline: 2px solid var(--amethyste);
+  outline-offset: 2px;
+}
+.aia-ia::before {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  margin-bottom: 0.3rem;
+  border-radius: 50%;
+  background: var(--aia-ia);
+}
+.aia-ia[data-choisi] {
+  border-color: color-mix(in srgb, var(--aia-ia) 75%, transparent);
+  background: color-mix(in srgb, var(--aia-ia) 10%, transparent);
+}
+.aia-ia-nom {
+  font-weight: 700;
+}
+.aia-ia-entreprise,
+.aia-ia-etat {
+  font-size: 0.78rem;
+  color: var(--encre-douce);
+}
+.aia-modeles-groupes {
+  display: grid;
+  gap: 0.9rem;
+}
+.aia-modeles-legende {
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+.aia-modeles-legende span {
+  font-weight: 500;
+  color: var(--encre-douce);
+}
+.aia-cles {
+  display: grid;
+  gap: 0.6rem;
+}
+.aia-cle {
+  padding: 0.75rem 0.85rem;
+  border-radius: 0.95rem;
+  border: 1px solid var(--trait);
+  border-left: 3px solid var(--aia-ia);
+}
+.aia-cle-ligne {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.aia-cle-nom {
+  font-weight: 700;
+}
+.aia-cle-ligne code {
+  font-family: var(--aia-mono);
+  font-size: 0.85rem;
+}
+.aia-cle-absente {
+  font-size: 0.85rem;
+  color: var(--encre-douce);
+}
+.aia-cle-ligne span[data-etat] {
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.aia-cle-ligne span[data-etat="ok"] {
+  color: var(--succes);
+  background: color-mix(in srgb, var(--succes) 12%, transparent);
+}
+.aia-cle-ligne span[data-etat="ko"] {
+  color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 12%, transparent);
+}
+.aia-cle .aia-actions {
+  margin-top: 0.6rem;
+}
+.aia-cle .aia-relier-compact {
+  margin-top: 0.75rem;
+}
+.aia-alerte-ia {
+  border-color: color-mix(in srgb, var(--amethyste) 45%, transparent);
+  background: color-mix(in srgb, var(--amethyste) 9%, transparent);
+  color: var(--encre);
+}
+.aia-choix-ia select {
+  color: var(--encre);
+  border-color: color-mix(in srgb, var(--aia-ia) 55%, var(--trait));
+}
+@media (max-width: 30rem) {
+  .aia-ias {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 /* ---------- Les feuilles latérales : réglages, lutrin ---------- */
 .aia-feuille {
   position: fixed;

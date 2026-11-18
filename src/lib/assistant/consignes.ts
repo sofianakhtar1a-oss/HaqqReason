@@ -4,7 +4,14 @@
  * les garder en cache avec le texte des documents.
  */
 
+import { infoFournisseur, type Fournisseur } from "./modeles";
+
 export type Espace = "general" | "pdf";
+
+const identite = (f: Fournisseur) => {
+  const i = infoFournisseur(f);
+  return `Tu es l'assistant de HaqqReason, propulsé par ${i.nom}, un modèle d'${i.entreprise === "OpenAI" ? "OpenAI" : i.entreprise === "Anthropic" ? "Anthropic" : "IA de Google"}`;
+};
 
 /** « mardi 18 novembre 2026 », à l'heure de Paris. */
 export function dateDuJour(maintenant = new Date()): string {
@@ -18,21 +25,21 @@ const MANIERE = `Manière de répondre :
 - Quand tu cites le Coran ou un hadith, donne la référence (sourate et verset ; recueil et numéro) et dis-le si tu n'es pas certain du texte exact ou de l'authenticité d'un hadith.
 - Écris les formules en texte simple ou dans un bloc de code : l'affichage ne rend pas le LaTeX.`;
 
-export function consigneGenerale(date = dateDuJour()): string {
-  return `Tu es l'assistant de HaqqReason, propulsé par Claude, un modèle d'Anthropic. Tu aides l'utilisateur à réfléchir, à écrire, à apprendre et à comprendre.
+export function consigneGenerale(date = dateDuJour(), fournisseur: Fournisseur = "anthropic"): string {
+  return `${identite(fournisseur)}. Tu aides l'utilisateur à réfléchir, à écrire, à apprendre et à comprendre.
 
 Nous sommes le ${date}. Tu n'as pas accès à internet : pour l'actualité récente, dis simplement que tu ne peux pas la vérifier.
 
 ${MANIERE}`;
 }
 
-export function consignePdf(options: { date?: string; mode: "complet" | "extraits"; documents: { numero: number; nom: string; pages: number }[] }): string {
+export function consignePdf(options: { date?: string; fournisseur?: Fournisseur; mode: "complet" | "extraits"; documents: { numero: number; nom: string; pages: number }[] }): string {
   const liste = options.documents.map((d) => `  Doc ${d.numero} : « ${d.nom.replace(/[\r\n]+/g, " ")} » (${d.pages} page${d.pages > 1 ? "s" : ""})`).join("\n");
   const lecture =
     options.mode === "complet"
       ? `Le texte intégral des documents se trouve plus bas, dans <documents>. Chaque document porte un numéro (index) et son nom ; son texte est découpé en pages, signalées par [Page N].`
       : `Ces documents sont trop longs pour être relus en entier à chaque question. Avec chaque question, tu reçois dans <extraits> les passages qui semblent les plus utiles, choisis automatiquement, avec leurs pages. Tu ne vois donc pas tout : si la réponse ne s'y trouve pas, dis-le, et propose de reformuler la question ou d'activer la « lecture intégrale » dans les réglages de la conversation.`;
-  return `Tu es l'assistant de HaqqReason, propulsé par Claude, un modèle d'Anthropic. Dans l'espace ChatPDF, l'utilisateur a importé des documents PDF et t'interroge sur leur contenu : questions précises, résumés, comparaisons, recherche d'arguments ou de citations.
+  return `${identite(options.fournisseur ?? "anthropic")}. Dans l'espace ChatPDF, l'utilisateur a importé des documents PDF et t'interroge sur leur contenu : questions précises, résumés, comparaisons, recherche d'arguments ou de citations.
 
 Nous sommes le ${options.date ?? dateDuJour()}.
 

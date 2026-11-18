@@ -18,6 +18,9 @@ const SECRET = "e2e-".repeat(12);
 const CLES = {
   a: `sk-ant-api03-${"Aa1_".repeat(10)}fin`,
   c: `sk-ant-api03-CREDIT${"c".repeat(30)}`,
+  openai: `sk-proj-${"Oa1_".repeat(10)}fin`,
+  google: `AIza${"Gg1_".repeat(9)}`,
+  openaiQuota: `sk-proj-QUOTA${"q".repeat(30)}`,
   d: `sk-ant-api03-SANSEFFORT${"d".repeat(30)}`,
   e: `sk-ant-api03-LENT${"e".repeat(30)}`,
   revoquee: `sk-ant-api03-REVOQUEE${"x".repeat(30)}`,
@@ -44,6 +47,8 @@ const serveur = spawn("npx", ["next", "start", "-p", String(PORT), "-H", "127.0.
     SESSION_SECRET: SECRET,
     SETUP_TOKEN: "0123456789abcdef",
     ASSISTANT_ANTHROPIC_BASE: "http://127.0.0.1:9922",
+    ASSISTANT_OPENAI_BASE: "http://127.0.0.1:9922",
+    ASSISTANT_GOOGLE_BASE: "http://127.0.0.1:9922",
   },
   stdio: ["ignore", "pipe", "pipe"],
 });
@@ -119,20 +124,20 @@ async function question(qui: { cookie: string }, corps: Record<string, unknown>)
     .map((l) => JSON.parse(l) as Ev);
   return { statut: r.status, evenements, texte: evenements.filter((e) => e.t === "texte").map((e) => e.v).join(""), brut };
 }
-const derniereRequete = () => anthropic.journal.at(-1) as { cle: string; corps: Record<string, unknown> & { system: { text: string; cache_control?: unknown }[]; messages: { role: string; content: { text: string; cache_control?: unknown }[] }[] } };
+const derniereRequete = () => anthropic.journal.at(-1) as unknown as { cle: string; corps: Record<string, unknown> & { system: { text: string; cache_control?: unknown }[]; messages: { role: string; content: { text: string; cache_control?: unknown }[] }[] } };
 const sql = async <T,>(q: string, p: unknown[] = []) => (await db.query<T>(q, p)).rows;
 
 /* ---------- Entrée : session, origine ---------- */
 ok("sans session : 401", (await appel(null, "GET", "/api/assistant/etat")).statut === 401);
 ok("depuis un autre site : 403", (await appel(A, "PUT", "/api/assistant/cle", { cle: CLES.a }, { Origin: "https://pirate.example", "Sec-Fetch-Site": "cross-site" })).statut === 403);
 const etat0 = await appel(A, "GET", "/api/assistant/etat");
-ok("état d'un compte neuf : pas de clé, rien dépensé", etat0.statut === 200 && etat0.corps.cle === null && (etat0.corps.bilan as { moisCout: number }).moisCout === 0);
+ok("état d'un compte neuf : pas de clé, rien dépensé", etat0.statut === 200 && (etat0.corps.cles as unknown[]).length === 0 && (etat0.corps.bilan as { moisCout: number }).moisCout === 0);
 
 /* ---------- La clé ---------- */
 ok("clé mal formée refusée sans appel à Anthropic", (await appel(A, "PUT", "/api/assistant/cle", { cle: "bonjour" })).corps.erreur === "format");
 const revoquee = await appel(A, "PUT", "/api/assistant/cle", { cle: CLES.revoquee });
 ok("clé refusée par Anthropic : message clair", revoquee.statut === 400 && revoquee.corps.erreur === "cle_invalide");
-const relie = await appel(A, "PUT", "/api/assistant/cle", { cle: CLES.a, modele: "claude-sonnet-5-5", effort: "medium" });
+const relie = await appel(A, "PUT", "/api/assistant/cle", { fournisseur: "anthropic", cle: CLES.a });
 const ficheA = relie.corps.cle as { apercu: string; modele: string; statut: string };
 ok("clé vérifiée puis reliée", relie.statut === 200 && ficheA.statut === "valide" && ficheA.apercu === `sk-ant-…${CLES.a.slice(-4)}`);
 ok("la réponse ne contient jamais la clé", !JSON.stringify(relie.corps).includes(CLES.a.slice(14, 40)));
@@ -260,13 +265,13 @@ const avantD = anthropic.journal.length;
 const repli = await question(D, { conversationId: (cd.corps.conversation as { id: string }).id, texte: "Bonjour" });
 ok("réglage d'effort refusé par le modèle : nouvel essai sans lui, réponse complète", repli.statut === 200 && anthropic.journal.length === avantD + 2 && !("output_config" in derniereRequete().corps) && (repli.evenements.at(-1) as { etat: string }).etat === "complet");
 
-const plafond = await appel(A, "PATCH", "/api/assistant/cle", { plafond: 0.0001 });
-ok("plafond mensuel réglé", plafond.statut === 200 && (plafond.corps.cle as { plafond: number }).plafond === 0);
-await appel(A, "PATCH", "/api/assistant/cle", { plafond: "0,0001" });
+const plafond = await appel(A, "PATCH", "/api/assistant/reglages", { plafond: 0.0001 });
+ok("plafond mensuel réglé", plafond.statut === 200 && (plafond.corps.reglages as { plafond: number }).plafond === 0);
+await appel(A, "PATCH", "/api/assistant/reglages", { plafond: "0,0001" });
 const avantPlafond = anthropic.journal.length;
 const bloque = await question(A, { conversationId: idGeneral, texte: "Encore une ?" });
 ok("plafond atteint : refus avant tout envoi", bloque.statut === 402 && bloque.erreur?.erreur === "plafond" && anthropic.journal.length === avantPlafond);
-await appel(A, "PATCH", "/api/assistant/cle", { plafond: null });
+await appel(A, "PATCH", "/api/assistant/reglages", { plafond: null });
 
 ok("clé de E reliée", (await appel(E, "PUT", "/api/assistant/cle", { cle: CLES.e })).statut === 200);
 const ce = await appel(E, "POST", "/api/assistant/conversations", { espace: "general" });
@@ -287,8 +292,39 @@ const coupe = await sql<{ etat: string; contenu: string; jetons_sortie: number }
 ok("arrêt en cours de route : la réponse partielle est gardée, marquée « interrompue »", coupe.length === 1 && coupe[0].etat === "interrompu" && coupe[0].contenu.startsWith("Tu demandes") && coupe[0].jetons_sortie > 0);
 ok("…et sa consommation est journalisée", Number((await sql<{ n: number }>(`select count(*)::int n from assistant_usage where utilisateur_id = $1 and statut = 'interrompu'`, [E.id]))[0].n) === 1);
 
+/* ---------- ChatGPT et Gemini, avec les clés de l'utilisateur ---------- */
+ok("une clé collée dans la mauvaise IA est refusée", (await appel(A, "PUT", "/api/assistant/cle", { fournisseur: "openai", cle: CLES.a })).corps.erreur === "format");
+const sansOpenAI = await question(A, { conversationId: idGeneral, texte: "Bonjour ChatGPT", modele: "gpt-6.2-sol" });
+ok("ChatGPT choisi sans clé OpenAI : refus clair, rien n'est envoyé", sansOpenAI.statut === 409 && sansOpenAI.erreur?.erreur === "sans_cle" && sansOpenAI.erreur?.fournisseur === "openai" && String(sansOpenAI.erreur?.message).includes("ChatGPT"));
+const relieOA = await appel(A, "PUT", "/api/assistant/cle", { fournisseur: "openai", cle: CLES.openai });
+const relieG = await appel(A, "PUT", "/api/assistant/cle", { fournisseur: "google", cle: CLES.google });
+ok("clés ChatGPT et Gemini vérifiées puis reliées", relieOA.statut === 200 && (relieOA.corps.cle as { apercu: string }).apercu === `sk-proj-…${CLES.openai.slice(-4)}` && relieG.statut === 200 && (relieG.corps.cle as { apercu: string }).apercu === `AIza…${CLES.google.slice(-4)}`);
+ok("trois clés pour le même compte, chacune chiffrée", ((await appel(A, "GET", "/api/assistant/etat")).corps.cles as unknown[]).length === 3 && (await sql<{ c: string }>(`select cle_chiffree c from assistant_cles where utilisateur_id = $1`, [A.id])).every((l) => l.c.startsWith("v1.") && !l.c.includes("sk-") && !l.c.includes("AIza")));
+const avantOA = anthropic.journal.length;
+const qOA = await question(A, { conversationId: idGeneral, texte: "Que vaut un argument circulaire ?", modele: "gpt-6.2-sol", effort: "high" });
+const rOA = anthropic.journal.at(-1) as unknown as { ia: string; cle: string; chemin: string; corps: { model: string; instructions: string; input: { role: string; content: string }[]; reasoning?: { effort: string }; store: boolean; max_output_tokens: number; stream: boolean } };
+ok("ChatGPT : réponse en flux, complète, avec jetons et coût", qOA.statut === 200 && qOA.texte.includes("argument circulaire") && (qOA.evenements.at(-1) as { etat: string; cout: number }).etat === "complet" && (qOA.evenements.at(-1) as { cout: number }).cout > 0);
+ok("ChatGPT : l'appel part chez OpenAI avec LA clé OpenAI de l'utilisateur", anthropic.journal.length === avantOA + 1 && rOA.ia === "openai" && rOA.cle === CLES.openai && rOA.chemin === "/v1/responses");
+ok("ChatGPT : requête conforme (modèle, consigne, historique, effort, rien gardé chez OpenAI)", rOA.corps.model === "gpt-6.2-sol" && rOA.corps.instructions.includes("propulsé par ChatGPT") && rOA.corps.input.at(-1)?.content === "Que vaut un argument circulaire ?" && rOA.corps.input.length > 2 && rOA.corps.reasoning?.effort === "high" && rOA.corps.store === false && rOA.corps.max_output_tokens === 32000 && rOA.corps.stream === true);
+const cpG = await appel(A, "POST", "/api/assistant/conversations", { espace: "pdf" });
+const idPdfG = (cpG.corps.conversation as { id: string }).id;
+await appel(A, "POST", "/api/assistant/documents", { conversationId: idPdfG, nom: "gemini.pdf", pages: 2, pagesVides: 0, empreinte: "7".repeat(64), texte: "[Page 1]\nIntroduction.\n\n[Page 2]\nLa thèse centrale du texte." });
+const qG = await question(A, { conversationId: idPdfG, texte: "Quelle est la thèse ?", modele: "gemini-3.8-flash", effort: "low" });
+const rG = anthropic.journal.at(-1) as unknown as { ia: string; cle: string; chemin: string; corps: { systemInstruction: { parts: { text: string }[] }; contents: { role: string; parts: { text: string }[] }[]; generationConfig: { maxOutputTokens: number; thinkingConfig?: { thinkingLevel: string } } } };
+ok("Gemini : réponse en flux qui cite ses pages", qG.statut === 200 && qG.texte.includes("[Doc 1, p. 2]") && (qG.evenements.at(-1) as { etat: string }).etat === "complet");
+ok("Gemini : l'appel part chez Google avec LA clé Gemini de l'utilisateur, dans l'en-tête et pas dans l'adresse", rG.ia === "google" && rG.cle === CLES.google && rG.chemin.startsWith("/v1beta/models/gemini-3.8-flash:streamGenerateContent") && !rG.chemin.includes(CLES.google));
+ok("Gemini : le PDF entier dans la consigne, rôles et réflexion conformes", rG.corps.systemInstruction.parts[0].text.includes("propulsé par Gemini") && rG.corps.systemInstruction.parts[0].text.includes("La thèse centrale du texte.") && rG.corps.contents.at(-1)?.role === "user" && rG.corps.generationConfig.thinkingConfig?.thinkingLevel === "low" && rG.corps.generationConfig.maxOutputTokens === 8192);
+const msgG = await sql<{ modele: string; etat: string }>(`select modele, etat from assistant_messages where conversation_id = $1 and role = 'assistant'`, [idPdfG]);
+ok("Gemini : la réponse est rangée avec son modèle", msgG.length === 1 && msgG[0].modele === "gemini-3.8-flash" && msgG[0].etat === "complet");
+const E2 = await compte("e2e-quota", "Quota Q");
+await appel(E2, "PUT", "/api/assistant/cle", { fournisseur: "openai", cle: CLES.openaiQuota });
+const cq = await appel(E2, "POST", "/api/assistant/conversations", { espace: "general" });
+const quota = await question(E2, { conversationId: (cq.corps.conversation as { id: string }).id, texte: "Bonjour", modele: "gpt-6-luna" });
+ok("ChatGPT sans crédit : message en français qui renvoie vers OpenAI", quota.statut === 502 && quota.erreur?.erreur === "credit_epuise" && String(quota.erreur?.message).includes("OpenAI"));
+ok("une clé Gemini ne s'utilise pas pour un autre compte", ((await appel(B, "GET", "/api/assistant/etat")).corps.cles as unknown[]).length === 0);
+
 /* ---------- Retirer la clé ---------- */
-ok("retirer sa clé", (await appel(D, "DELETE", "/api/assistant/cle")).statut === 200 && (await appel(D, "GET", "/api/assistant/etat")).corps.cle === null);
+ok("retirer sa clé", (await appel(D, "DELETE", "/api/assistant/cle?fournisseur=anthropic")).statut === 200 && ((await appel(D, "GET", "/api/assistant/etat")).corps.cles as unknown[]).length === 0);
 ok("supprimer une conversation efface ses PDF", (await appel(A, "DELETE", `/api/assistant/conversations/${idPdf}`)).statut === 200 && Number((await sql<{ n: number }>(`select count(*)::int n from assistant_documents where conversation_id = $1`, [idPdf]))[0].n) === 0);
 
 /* ---------- La page ---------- */
@@ -300,7 +336,7 @@ ok("sans compte : renvoi vers la connexion, puis retour à l'assistant", [303, 3
 
 /* ---------- Aucune clé dans les journaux ---------- */
 const journaux = journalServeur.join("");
-ok("aucune clé API n'apparaît dans les journaux du serveur", !Object.values(CLES).some((c) => journaux.includes(c.slice(13))));
+ok("aucune clé API n'apparaît dans les journaux du serveur", !Object.values(CLES).some((c) => journaux.includes(c.slice(8))));
 
 console.log(echecs ? `\n${echecs} échec(s)` : "\nTout est bon.");
 await fin(echecs ? 1 : 0);

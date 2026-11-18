@@ -2,16 +2,17 @@
  * Les appels de l'interface vers /api/assistant/*. Toutes les requêtes partent avec le cookie
  * du compte Google : le serveur ne répond que pour ce compte-là.
  */
-import type { Effort, IdModele, Usage } from "@/lib/assistant/modeles";
+import type { Effort, Fournisseur, IdModele, Usage } from "@/lib/assistant/modeles";
 import type { EtatMessage, EvenementFlux } from "@/lib/assistant/protocole";
 
 export type Espace = "general" | "pdf";
-export type FicheCle = { apercu: string; modele: IdModele; effort: Effort; plafond: number | null; statut: "valide" | "invalide"; verifieeLe: string; lisible?: boolean };
+export type FicheCle = { fournisseur: Fournisseur; apercu: string; statut: "valide" | "invalide"; verifieeLe: string; lisible?: boolean };
+export type Reglages = { modele: IdModele; effort: Effort; plafond: number | null };
 export type Bilan = { dixMinutes: number; aujourdhui: number; moisCout: number; moisJetons: number; moisAppels: number; documentsCaracteres: number; conversations: number; verificationsHeure: number };
 export type Conversation = { id: string; espace: Espace; titre: string; lecture: "auto" | "integrale"; creeLe: string; maj: string };
 export type Message = { id: string; role: "user" | "assistant"; contenu: string; modele: string; etat: EtatMessage; usage: Usage; cout: number; creeLe: string };
 export type FicheDocument = { id: string; numero: number; nom: string; pages: number; pagesVides: number; caracteres: number; jetons: number; actif: boolean; creeLe: string };
-export type Etat = { compte: { nom: string; email: string }; cle: FicheCle | null; bilan: Bilan; limites: Record<string, number> };
+export type Etat = { compte: { nom: string; email: string }; cles: FicheCle[]; reglages: Reglages; bilan: Bilan; limites: Record<string, number> };
 
 /** Une erreur du serveur, avec son code (« sans_cle », « installation », « credit_epuise »…). */
 export class ErreurApi extends Error {
@@ -57,9 +58,9 @@ async function appel<T>(chemin: string, init: RequestInit & { json?: unknown } =
 
 export const api = {
   etat: () => appel<Etat>("/api/assistant/etat"),
-  relierCle: (cle: string, modele: IdModele, effort: Effort) => appel<{ cle: FicheCle; modelesOuverts: IdModele[] }>("/api/assistant/cle", { method: "PUT", json: { cle, modele, effort } }),
-  reglerCle: (choix: { modele?: IdModele; effort?: Effort; plafond?: number | null }) => appel<{ cle: FicheCle }>("/api/assistant/cle", { method: "PATCH", json: choix }),
-  oublierCle: () => appel<{ ok: true }>("/api/assistant/cle", { method: "DELETE" }),
+  relierCle: (fournisseur: Fournisseur, cle: string) => appel<{ cle: FicheCle; modelesOuverts: IdModele[] }>("/api/assistant/cle", { method: "PUT", json: { fournisseur, cle } }),
+  regler: (choix: { modele?: IdModele; effort?: Effort; plafond?: number | null }) => appel<{ reglages: Reglages }>("/api/assistant/reglages", { method: "PATCH", json: choix }),
+  oublierCle: (fournisseur: Fournisseur) => appel<{ ok: true }>(`/api/assistant/cle?fournisseur=${fournisseur}`, { method: "DELETE" }),
   conversations: (espace: Espace) => appel<{ conversations: Conversation[] }>(`/api/assistant/conversations?espace=${espace}`),
   creerConversation: (espace: Espace, titre = "") => appel<{ conversation: Conversation }>("/api/assistant/conversations", { method: "POST", json: { espace, titre } }),
   conversation: (id: string) => appel<{ conversation: Conversation; messages: Message[]; documents: FicheDocument[] }>(`/api/assistant/conversations/${id}`),

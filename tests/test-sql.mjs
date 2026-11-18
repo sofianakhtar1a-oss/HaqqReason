@@ -634,8 +634,13 @@ ok("013 : la conversation disparaît avec la contribution", Number((await db.que
 
   ok("016 : une clé en clair est refusée (seul le format chiffré « v1. » passe)", await echoue(`insert into assistant_cles (utilisateur_id, cle_chiffree, apercu) values ('${u1}', 'sk-ant-api03-secret', 'x')`));
   await db.exec(`insert into assistant_cles (utilisateur_id, cle_chiffree, apercu) values ('${u1}', 'v1.QUJDRA==', 'sk-ant-…ABCD')`);
-  ok("016 : un modèle fantaisiste est refusé", await echoue(`update assistant_cles set modele = 'gpt-4; drop table x' where utilisateur_id = '${u1}'`));
-  ok("016 : un effort inconnu est refusé", await echoue(`update assistant_cles set effort = 'max' where utilisateur_id = '${u1}'`));
+  await db.exec(`insert into assistant_cles (utilisateur_id, fournisseur, cle_chiffree, apercu) values ('${u1}', 'openai', 'v1.QUJDRA==', 'sk-proj-…ABCD'), ('${u1}', 'google', 'v1.QUJDRA==', 'AIza…ABCD')`);
+  ok("016 : une clé par IA (Claude, ChatGPT, Gemini) pour un même compte", Number((await db.query(`select count(*)::int n from assistant_cles where utilisateur_id = '${u1}'`)).rows[0].n) === 3);
+  ok("016 : pas deux clés pour la même IA", await echoue(`insert into assistant_cles (utilisateur_id, fournisseur, cle_chiffree, apercu) values ('${u1}', 'openai', 'v1.QQ==', 'x')`));
+  ok("016 : une IA inconnue est refusée", await echoue(`insert into assistant_cles (utilisateur_id, fournisseur, cle_chiffree, apercu) values ('${u2}', 'mistral', 'v1.QQ==', 'x')`));
+  await db.exec(`insert into assistant_reglages (utilisateur_id, modele) values ('${u1}', 'gpt-6.2-sol')`);
+  ok("016 : un modèle fantaisiste est refusé", await echoue(`update assistant_reglages set modele = 'gpt-4; drop table x' where utilisateur_id = '${u1}'`));
+  ok("016 : un effort inconnu est refusé", await echoue(`update assistant_reglages set effort = 'max' where utilisateur_id = '${u1}'`));
 
   const c1 = (await db.query(`insert into assistant_conversations (utilisateur_id, espace, titre) values ('${u1}', 'pdf', 'Rapports') returning id`)).rows[0].id;
   ok("016 : un espace de conversation inconnu est refusé", await echoue(`insert into assistant_conversations (utilisateur_id, espace) values ('${u1}', 'autre')`));
@@ -680,6 +685,7 @@ ok("013 : la conversation disparaît avec la contribution", Number((await db.que
   for (const role of ["anon", "authenticated"]) {
     await db.exec(`set role ${role}`);
     await refuse(`[${role}] ne lit pas les clés de l'assistant`, `select * from assistant_cles`);
+    await refuse(`[${role}] ne lit pas les réglages de l'assistant`, `select * from assistant_reglages`);
     await refuse(`[${role}] ne lit pas les conversations`, `select * from assistant_conversations`);
     await refuse(`[${role}] ne lit pas les messages`, `select * from assistant_messages`);
     await refuse(`[${role}] ne lit pas les PDF importés`, `select * from assistant_documents`);
@@ -695,6 +701,35 @@ ok("013 : la conversation disparaît avec la contribution", Number((await db.que
   ok("016 : supprimer une conversation efface ses messages et ses PDF, mais garde la consommation", Number((await db.query(`select count(*)::int n from assistant_messages where conversation_id = '${c1}'`)).rows[0].n) === 0 && Number((await db.query(`select count(*)::int n from assistant_documents where conversation_id = '${c1}'`)).rows[0].n) === 0 && Number((await db.query(`select count(*)::int n from assistant_usage where utilisateur_id = '${u1}'`)).rows[0].n) === 4);
   await db.exec(`delete from utilisateurs where id = '${u1}'`);
   ok("016 : supprimer un compte efface sa clé et toute sa consommation", Number((await db.query(`select count(*)::int n from assistant_cles where utilisateur_id = '${u1}'`)).rows[0].n) === 0 && Number((await db.query(`select count(*)::int n from assistant_usage where utilisateur_id = '${u1}'`)).rows[0].n) === 0);
+}
+
+// 016 : mise à niveau d'une base où la première version (une seule clé, Claude) avait été lancée
+{
+  const ancienne = new PGlite({ extensions: { unaccent, pg_trgm } });
+  await ancienne.exec(`create role anon nologin; create role authenticated nologin; create role service_role nologin bypassrls;
+    create schema extensions; grant usage on schema extensions to anon, authenticated, service_role;
+    create schema storage; create table storage.buckets (id text primary key, name text, public boolean, file_size_limit bigint, allowed_mime_types text[]);`);
+  for (const f of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql", "010_contributions.sql", "011_espaces.sql", "012_islam_un_bloc.sql", "013_messagerie.sql", "014_comptes.sql", "015_classement.sql"]) {
+    await ancienne.exec(readFileSync(new URL(`../supabase/migrations/${f}`, import.meta.url), "utf8"));
+  }
+  await ancienne.exec(`create table public.assistant_cles (
+    utilisateur_id uuid primary key references public.utilisateurs (id) on delete cascade,
+    cle_chiffree text not null, apercu text not null,
+    modele text not null default 'claude-sonnet-5-5', effort text not null default 'medium',
+    plafond_mensuel_usd numeric(10, 2), statut text not null default 'valide',
+    verifiee_le timestamptz not null default now(), cree_le timestamptz not null default now(), maj timestamptz not null default now())`);
+  const u = (await ancienne.query(`select * from compte_ouvrir('google-maj', 'maj@exemple.fr', 'Maj')`)).rows[0].id;
+  await ancienne.exec(`insert into assistant_cles (utilisateur_id, cle_chiffree, apercu, modele, effort, plafond_mensuel_usd) values ('${u}', 'v1.QQ==', 'sk-ant-…AAAA', 'claude-opus-5-5', 'high', 7)`);
+  await ancienne.exec(readFileSync(new URL("../supabase/migrations/016_assistant.sql", import.meta.url), "utf8"));
+  const cle = (await ancienne.query(`select fournisseur from assistant_cles where utilisateur_id = $1`, [u])).rows;
+  const reg = (await ancienne.query(`select modele, effort, plafond_mensuel_usd::float p from assistant_reglages where utilisateur_id = $1`, [u])).rows[0];
+  ok("016 mise à niveau : l'ancienne clé devient la clé Claude du compte", cle.length === 1 && cle[0].fournisseur === "anthropic");
+  ok("016 mise à niveau : ses réglages sont repris", reg?.modele === "claude-opus-5-5" && reg.effort === "high" && reg.p === 7);
+  await ancienne.exec(`insert into assistant_cles (utilisateur_id, fournisseur, cle_chiffree, apercu) values ('${u}', 'google', 'v1.QQ==', 'AIza…BBBB')`);
+  ok("016 mise à niveau : une seconde clé (Gemini) s'ajoute", Number((await ancienne.query(`select count(*)::int n from assistant_cles where utilisateur_id = $1`, [u])).rows[0].n) === 2);
+  await ancienne.exec(readFileSync(new URL("../supabase/migrations/016_assistant.sql", import.meta.url), "utf8"));
+  ok("016 mise à niveau : relancer le script ne change rien", Number((await ancienne.query(`select count(*)::int n from assistant_cles where utilisateur_id = $1`, [u])).rows[0].n) === 2);
+  await ancienne.close();
 }
 
 console.log(echecs === 0 ? "\nTous les tests SQL passent." : `\n${echecs} test(s) en échec.`);

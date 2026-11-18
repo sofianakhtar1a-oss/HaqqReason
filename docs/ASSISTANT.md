@@ -2,7 +2,9 @@
 
 Le sixième espace du mode utilisateur, à l'adresse `/assistant`. Deux onglets :
 
-- **Chat général** : discuter librement avec Claude (Anthropic).
+- **Chat général** : discuter librement avec l'IA de son choix : **Claude** (Anthropic),
+  **ChatGPT** (OpenAI) ou **Gemini** (Google). On la choisit en bas, à côté du modèle, et l'on peut
+  en changer d'une question à l'autre, dans la même conversation.
 - **ChatPDF** : importer un ou plusieurs PDF à la fois, puis demander des résumés, des
   comparaisons, des arguments ou des citations. Chaque réponse cite ses pages sous la forme
   `[Doc 2, p. 14]` ; un clic sur la référence affiche la page sur un « lutrin » pour la vérifier.
@@ -13,14 +15,22 @@ Il se change dans l'espace créateur (module « Le Vizir »), avec les autres te
 
 ## Le principe : chacun paie sa propre consommation
 
-Le site **n'a pas de clé Anthropic** et n'en utilise jamais. Chaque utilisateur relie **sa**
-clé API (console Anthropic, `platform.claude.com`) à son compte Google. Chaque question part
-vers Anthropic avec cette clé : les jetons sont facturés sur son compte Anthropic, dans ses
-propres limites de débit et de dépense. Sans clé reliée, rien n'est envoyé.
+Le site **n'a de clé chez aucune IA** et n'en utilise jamais. Chaque utilisateur relie **ses**
+clés API à son compte Google, une par IA qu'il veut utiliser : console Anthropic
+(`platform.claude.com`), plateforme OpenAI (`platform.openai.com`) ou Google AI Studio
+(`aistudio.google.com`, avec un usage gratuit limité). Chaque question part vers l'IA choisie
+avec la clé de l'utilisateur pour cette IA : elle est facturée sur son compte, dans ses propres
+limites. Sans clé reliée pour l'IA choisie, rien n'est envoyé.
 
-### Pourquoi une clé API, et pas l'abonnement Claude Pro ou Max
+Les appels : Claude par l'API Messages (cache explicite des documents), ChatGPT par l'API
+Responses (`store: false`, cache automatique), Gemini par `streamGenerateContent` (clé dans
+l'en-tête `x-goog-api-key`, jamais dans l'adresse ; cache implicite). Les trois flux sont
+ramenés au même format (`src/lib/assistant/ia.ts`) : le reste du module ne fait pas la différence.
 
-Anthropic interdit aux applications tierces d'utiliser la connexion d'un abonnement Claude
+### Pourquoi une clé API, et pas l'abonnement (Claude Pro, ChatGPT Plus, Gemini Advanced)
+
+Aucune des trois entreprises ne permet à un autre site de se servir d'un abonnement grand public.
+Pour Claude, Anthropic interdit aux applications tierces d'utiliser la connexion d'un abonnement Claude
 (jetons « OAuth » d'abonnement), règle appliquée depuis avril 2026. La voie autorisée est la
 clé API de la console, payée à l'usage. Deux précisions pour les utilisateurs :
 
@@ -65,8 +75,9 @@ l'appel) et l'écran de la clé changeraient ; conversations, PDF, flux et suivi
   modifier, ni utiliser la conversation, le PDF ou la clé d'un autre : la réponse est « introuvable ».
 - **Base** : les six tables sont en RLS, fermées aux rôles `anon` et `authenticated` ; seul le
   serveur (clé secrète) y accède. Supprimer un compte efface tout ce qui le concerne.
-- **La clé** : contrôlée (format `sk-ant-api…` ; clés d'administration et jetons d'abonnement
-  refusés), vérifiée par un appel gratuit (`GET /v1/models`), puis chiffrée en **AES-256-GCM**.
+- **Les clés** : une par IA ; chacune contrôlée (format propre à l'IA ; clés d'administration et
+  jetons d'abonnement refusés), vérifiée par un appel gratuit (la liste des modèles), puis chiffrée
+  en **AES-256-GCM**.
   La clé de chiffrement est dérivée par HKDF de `ASSISTANT_CLE_SECRET` (ou, à défaut, de
   `SESSION_SECRET`), et le chiffrement est **lié au compte** (donnée authentifiée) : recopiée sur
   la ligne d'un autre compte, elle ne se déchiffre pas. Elle n'est jamais renvoyée au navigateur
@@ -121,7 +132,11 @@ l'appel) et l'écran de la clé changeraient ; conversations, PDF, flux et suivi
 
 ## Modèles, réglages, coûts
 
-- Sonnet 5.5 (par défaut), Haiku 5.5 (le plus économique), Opus 5.5 (le plus approfondi).
+- Claude : Sonnet 5.5 (par défaut), Haiku 5.5, Opus 5.5.
+- ChatGPT : GPT-6.2 Sol (conseillé), GPT-6 Luna (économique), GPT-6.2 Astra (approfondi).
+- Gemini : 3.8 Flash (conseillé), 3.5 Flash-Lite (économique), 3.1 Pro (approfondi).
+- La liste se change dans `src/lib/assistant/modeles.ts` ; à la vérification d'une clé, le site
+  regarde quels modèles l'IA lui ouvre réellement.
 - Réflexion : Rapide, Équilibré, Approfondi (paramètre `output_config.effort`, avec 8 192,
   16 000 et 32 000 jetons de réponse au plus).
 - Le coût affiché est une **estimation** (tarifs publics de novembre 2026,
@@ -129,8 +144,9 @@ l'appel) et l'écran de la clé changeraient ; conversations, PDF, flux et suivi
 
 ## Les routes
 
-- `GET /api/assistant/etat` : clé (aperçu et réglages), bilan du mois, limites.
-- `PUT | PATCH | DELETE /api/assistant/cle` : relier (vérifier + chiffrer), régler, retirer.
+- `GET /api/assistant/etat` : clés reliées (aperçus), réglages, bilan du mois, limites.
+- `PUT /api/assistant/cle` `{ fournisseur, cle }` ; `DELETE /api/assistant/cle?fournisseur=…`.
+- `PATCH /api/assistant/reglages` : modèle par défaut, réflexion, plafond mensuel.
 - `GET | POST /api/assistant/conversations` ; `GET | PATCH | DELETE /api/assistant/conversations/{id}`.
 - `POST /api/assistant/documents` ; `GET ?page=N | PATCH | DELETE /api/assistant/documents/{id}`.
 - `POST /api/assistant/message` : la réponse en flux (`{ reessayer: true }` refait la dernière).
@@ -138,8 +154,8 @@ l'appel) et l'écran de la clé changeraient ; conversations, PDF, flux et suivi
 ## Les fichiers
 
 - `supabase/migrations/016_assistant.sql` : tables, numérotation des PDF, `assistant_bilan`, `assistant_page`.
-- `src/lib/assistant/` : `modeles.ts` (modèles, tarifs, format de clé), `chiffrement.ts`,
-  `anthropic.ts` (appels, flux SSE, erreurs en français), `contexte.ts` (pages, BM25, budgets,
+- `src/lib/assistant/` : `modeles.ts` (IA, modèles, tarifs, formats de clé), `chiffrement.ts`,
+  `ia.ts` (la porte commune), `anthropic.ts`, `openai.ts`, `google.ts` (appels, flux, erreurs en français), `contexte.ts` (pages, BM25, budgets,
   historique), `consignes.ts` (prompts), `donnees.ts` (base), `http.ts`, `limites.ts`, `protocole.ts`.
 - `src/app/api/assistant/` : les routes ci-dessus.
 - `src/app/assistant/` : la page, l'interface (`Assistant.tsx`, `Cle.tsx`, `Documents.tsx`,

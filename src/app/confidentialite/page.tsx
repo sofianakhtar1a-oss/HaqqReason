@@ -39,12 +39,12 @@ const SECTIONS: SectionTexte[] = [
     ],
   },
   {
-    titre: "L'assistant (Le Vizir) et ta clé Anthropic",
+    titre: "L'assistant (Le Vizir) et tes clés d'IA",
     paragraphes: [
-      "Le Vizir fonctionne avec TA clé API Anthropic : le site n'a pas de clé à lui et ne paie rien à ta place. Chaque question est envoyée à Anthropic avec ta clé, et facturée sur ton compte Anthropic, selon tes propres conditions avec Anthropic.",
-      "Ta clé est chiffrée (AES-256) dès son arrivée sur le serveur, liée à ton compte (elle ne se déchiffre pour aucun autre), et n'est jamais réaffichée, ni journalisée, ni transmise ailleurs qu'à Anthropic. Le serveur ne la déchiffre qu'en mémoire, le temps d'envoyer tes propres questions.",
-      "Sont envoyés à Anthropic, pour chaque réponse : ta question, les échanges précédents de la conversation et, dans ChatPDF, le texte des documents cochés (en entier ou par passages). Tes PDF sont lus par ton navigateur : le fichier lui-même ne quitte pas ton appareil, seul son texte est envoyé au site puis à Anthropic.",
-      "Sont gardés sur ton compte : ta clé chiffrée et tes réglages, tes conversations, le texte de tes PDF, et pour chaque réponse le nombre de jetons et le coût estimé, pour que tu suives ta dépense. Supprimer une conversation efface ses messages et ses PDF ; « Retirer » la clé l'efface du site (pense aussi à la révoquer dans ta console Anthropic si tu ne t'en sers plus).",
+      "Le Vizir fonctionne avec Claude (Anthropic), ChatGPT (OpenAI) ou Gemini (Google), au choix, et avec TA clé API pour chacune : le site n'a de clé chez aucune d'elles et ne paie rien à ta place. Chaque question est envoyée à l'IA que tu as choisie, avec ta clé, et facturée sur ton compte chez elle, selon tes propres conditions avec cette entreprise.",
+      "Chaque clé est chiffrée (AES-256) dès son arrivée sur le serveur, liée à ton compte et à son IA (elle ne se déchiffre pour aucun autre compte), et n'est jamais réaffichée, ni journalisée, ni transmise ailleurs qu'à l'IA concernée. Le serveur ne la déchiffre qu'en mémoire, le temps d'envoyer tes propres questions.",
+      "Sont envoyés à l'IA choisie, pour chaque réponse : ta question, les échanges précédents de la conversation et, dans ChatPDF, le texte des documents cochés (en entier ou par passages). Tes PDF sont lus par ton navigateur : le fichier lui-même ne quitte pas ton appareil, seul son texte est envoyé au site puis à l'IA. Avec l'usage gratuit de Gemini, Google peut se servir des échanges pour améliorer ses produits (voir ses conditions).",
+      "Sont gardés sur ton compte : tes clés chiffrées et tes réglages, tes conversations, le texte de tes PDF, et pour chaque réponse le nombre de jetons et le coût estimé, pour que tu suives ta dépense. Supprimer une conversation efface ses messages et ses PDF ; « Retirer » une clé l'efface du site (pense aussi à la supprimer sur le site de l'IA si tu ne t'en sers plus).",
     ],
   },
   {
@@ -67,7 +67,7 @@ const SECTIONS: SectionTexte[] = [
     titre: "Effacer tes données",
     paragraphes: [
       <>
-        Depuis la page <Link href="/compte" className={lien}>Mon compte</Link>, tu peux te déconnecter, effacer ce qui est sur l&apos;appareil, déconnecter tous tes appareils, ou <strong>supprimer ton compte</strong>. La suppression efface ton compte et toutes ses données, documents, fichiers joints et points compris. Elle est définitive, et emporte aussi ta clé Anthropic et tes conversations avec l&apos;assistant.
+        Depuis la page <Link href="/compte" className={lien}>Mon compte</Link>, tu peux te déconnecter, effacer ce qui est sur l&apos;appareil, déconnecter tous tes appareils, ou <strong>supprimer ton compte</strong>. La suppression efface ton compte et toutes ses données, documents, fichiers joints et points compris. Elle est définitive, et emporte aussi tes clés d&apos;IA et tes conversations avec l&apos;assistant.
       </>,
       "Tu peux aussi retirer l'accès de HaqqReason à ton compte Google à tout moment, dans les réglages de ton compte Google (« Sécurité », puis « Vos connexions à des applications et services tiers »).",
     ],

@@ -1,8 +1,8 @@
 -- =====================================================================
 -- 016 · L'Assistant (Claude) : chat général et ChatPDF
---   • Chaque compte relie SA clé API de la console Anthropic : toute la
---     consommation de jetons est facturée sur SON compte Anthropic, jamais
---     sur celui du site. La clé est chiffrée (AES-256-GCM) par le serveur
+--   • Chaque compte relie SA clé API (Claude/Anthropic, ChatGPT/OpenAI ou
+--     Gemini/Google) : toute la consommation est facturée sur SON compte,
+--     jamais sur celui du site. La clé est chiffrée (AES-256-GCM) par le serveur
 --     avant d'arriver ici, liée au compte (elle ne se déchiffre pour aucun
 --     autre), et n'est jamais renvoyée au navigateur.
 --   • Les conversations, les messages et le texte des PDF importés sont
@@ -13,22 +13,52 @@
 -- Le script peut être relancé sans risque (014_comptes.sql doit avoir été lancé avant).
 -- =====================================================================
 
--- 1. La clé API de chaque compte, et ses réglages ----------------------
+-- 1. Les clés API de chaque compte : une par IA (Claude, ChatGPT, Gemini) ----
 create table if not exists public.assistant_cles (
-  utilisateur_id      uuid primary key references public.utilisateurs (id) on delete cascade,
+  utilisateur_id      uuid not null references public.utilisateurs (id) on delete cascade,
+  fournisseur         text not null default 'anthropic' check (fournisseur in ('anthropic', 'openai', 'google')),
   -- « v1. » + base64(iv | étiquette | texte chiffré) : illisible sans le secret du serveur.
   cle_chiffree        text not null check (cle_chiffree ~ '^v1\.[A-Za-z0-9+/=]+$' and char_length(cle_chiffree) <= 1200),
   -- Ce que l'utilisateur voit de sa clé : « sk-ant-…a1B2 ».
   apercu              text not null check (char_length(apercu) <= 40),
-  modele              text not null default 'claude-sonnet-5-5' check (modele ~ '^claude-[a-z0-9-]{3,60}$'),
-  effort              text not null default 'medium' check (effort in ('low', 'medium', 'high')),
-  -- Plafond mensuel facultatif (estimation en dollars) : au-delà, le site refuse d'envoyer.
-  plafond_mensuel_usd numeric(10, 2) check (plafond_mensuel_usd is null or plafond_mensuel_usd between 0 and 100000),
   statut              text not null default 'valide' check (statut in ('valide', 'invalide')),
   verifiee_le         timestamptz not null default now(),
   cree_le             timestamptz not null default now(),
+  maj                 timestamptz not null default now(),
+  primary key (utilisateur_id, fournisseur)
+);
+
+-- Mise à niveau d'une première version de ce script (une seule clé, Claude) : sans effet sinon.
+alter table public.assistant_cles add column if not exists fournisseur text not null default 'anthropic';
+do $$
+begin
+  if not exists (select 1 from pg_constraint where conname = 'assistant_cles_fournisseur_check') then
+    alter table public.assistant_cles add constraint assistant_cles_fournisseur_check check (fournisseur in ('anthropic', 'openai', 'google'));
+  end if;
+  if (select count(*) from pg_index i join pg_attribute a on a.attrelid = i.indrelid and a.attnum = any (i.indkey)
+      where i.indrelid = 'public.assistant_cles'::regclass and i.indisprimary) = 1 then
+    alter table public.assistant_cles drop constraint assistant_cles_pkey;
+    alter table public.assistant_cles add primary key (utilisateur_id, fournisseur);
+  end if;
+end $$;
+
+-- Les réglages de chaque compte : modèle et effort par défaut, plafond mensuel facultatif.
+create table if not exists public.assistant_reglages (
+  utilisateur_id      uuid primary key references public.utilisateurs (id) on delete cascade,
+  modele              text not null default 'claude-sonnet-5-5' check (modele ~ '^[a-z0-9][a-z0-9.-]{2,80}$'),
+  effort              text not null default 'medium' check (effort in ('low', 'medium', 'high')),
+  -- Estimation en dollars, toutes IA confondues : au-delà, le site refuse d'envoyer.
+  plafond_mensuel_usd numeric(10, 2) check (plafond_mensuel_usd is null or plafond_mensuel_usd between 0 and 100000),
   maj                 timestamptz not null default now()
 );
+do $$
+begin
+  if exists (select 1 from information_schema.columns where table_schema = 'public' and table_name = 'assistant_cles' and column_name = 'plafond_mensuel_usd') then
+    insert into public.assistant_reglages (utilisateur_id, modele, effort, plafond_mensuel_usd)
+    select utilisateur_id, modele, effort, plafond_mensuel_usd from public.assistant_cles
+    on conflict (utilisateur_id) do nothing;
+  end if;
+end $$;
 
 -- 2. Les conversations ---------------------------------------------------
 create table if not exists public.assistant_conversations (
@@ -139,14 +169,16 @@ alter table public.assistant_messages enable row level security;
 alter table public.assistant_documents enable row level security;
 alter table public.assistant_usage enable row level security;
 alter table public.assistant_verifications enable row level security;
-revoke all on table public.assistant_cles, public.assistant_conversations, public.assistant_messages,
+alter table public.assistant_reglages enable row level security;
+revoke all on table public.assistant_cles, public.assistant_reglages, public.assistant_conversations, public.assistant_messages,
   public.assistant_documents, public.assistant_usage, public.assistant_verifications from anon, authenticated;
-grant all on table public.assistant_cles, public.assistant_conversations, public.assistant_messages,
+grant all on table public.assistant_cles, public.assistant_reglages, public.assistant_conversations, public.assistant_messages,
   public.assistant_documents, public.assistant_usage, public.assistant_verifications to service_role;
 revoke all on sequence public.assistant_usage_id_seq, public.assistant_verifications_id_seq from anon, authenticated;
 grant usage, select on sequence public.assistant_usage_id_seq, public.assistant_verifications_id_seq to service_role;
 
-comment on table public.assistant_cles is 'Clé API Anthropic de chaque compte, chiffrée par le serveur (jamais en clair). Réservée au serveur.';
+comment on table public.assistant_cles is 'Clés API de chaque compte (Anthropic, OpenAI, Google), chiffrées par le serveur (jamais en clair). Réservée au serveur.';
+comment on table public.assistant_reglages is 'Réglages de l''Assistant par compte : modèle, effort, plafond mensuel. Réservée au serveur.';
 comment on table public.assistant_conversations is 'Conversations de l''Assistant (chat général ou ChatPDF). Réservée au serveur.';
 comment on table public.assistant_messages is 'Messages de l''Assistant, avec les jetons consommés. Réservée au serveur.';
 comment on table public.assistant_documents is 'Texte des PDF importés dans une conversation ChatPDF. Réservée au serveur.';

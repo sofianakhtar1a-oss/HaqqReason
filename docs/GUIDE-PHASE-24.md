@@ -1,8 +1,8 @@
 # Phase 24 · Le Vizir, l'assistant IA
 
-Un sixième espace, `/assistant` : **Chat général** et **ChatPDF**, avec Claude. Chaque utilisateur
-relie sa propre clé API Anthropic : toute sa consommation est facturée sur son compte, jamais
-sur celui du site. L'architecture complète est décrite dans [ASSISTANT.md](./ASSISTANT.md).
+Un sixième espace, `/assistant` : **Chat général** et **ChatPDF**, avec Claude, ChatGPT ou Gemini,
+au choix. Chaque utilisateur relie sa propre clé pour chaque IA qu'il veut utiliser : toute sa
+consommation est facturée sur son compte, jamais sur celui du site. L'architecture complète est décrite dans [ASSISTANT.md](./ASSISTANT.md).
 
 ## Installation
 
@@ -16,8 +16,9 @@ sur celui du site. L'architecture complète est décrite dans [ASSISTANT.md](./A
 ## Côté utilisateur
 
 1. Ouvrir « Le Vizir » depuis la page des espaces, connecté avec Google.
-2. Créer une clé dans la console Anthropic (`platform.claude.com` → API keys), avec du crédit,
-   et la coller : elle est vérifiée, chiffrée, liée au compte, et n'est jamais réaffichée.
+2. Choisir une IA et coller sa clé : Claude (`platform.claude.com`), ChatGPT
+   (`platform.openai.com`) ou Gemini (`aistudio.google.com`, avec un usage gratuit limité).
+   Elle est vérifiée, chiffrée, liée au compte, et n'est jamais réaffichée.
 3. Poser ses questions, ou importer des PDF dans ChatPDF (plusieurs à la fois).
 4. Suivre sa dépense (pastille « Ce mois » en haut), fixer un plafond mensuel, changer de modèle,
    remplacer ou retirer sa clé dans les réglages.

@@ -45,6 +45,8 @@ const serveur = spawn("npx", ["next", "start", "-p", String(port), "-H", "127.0.
     SESSION_SECRET: SECRET,
     SETUP_TOKEN: "0123456789abcdef",
     ASSISTANT_ANTHROPIC_BASE: "http://127.0.0.1:9932",
+    ASSISTANT_OPENAI_BASE: "http://127.0.0.1:9932",
+    ASSISTANT_GOOGLE_BASE: "http://127.0.0.1:9932",
   },
   stdio: "inherit",
 });

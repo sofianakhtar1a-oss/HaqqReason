@@ -9,6 +9,8 @@ delete process.env.ASSISTANT_CLE_SECRET;
 const { controlerFormatCle, coutEstime, estimerJetons, masquerCle, formaterCout } = await import("../src/lib/assistant/modeles");
 const { chiffrerCle, dechiffrerCle } = await import("../src/lib/assistant/chiffrement");
 const { interpreterErreur, interpreterFlux, lireSse } = await import("../src/lib/assistant/anthropic");
+const { interpreterErreurOpenAI, interpreterFluxOpenAI } = await import("../src/lib/assistant/openai");
+const { interpreterErreurGoogle, interpreterFluxGoogle } = await import("../src/lib/assistant/google");
 const ctx = await import("../src/lib/assistant/contexte");
 const { consignePdf, consigneGenerale, questionAvecExtraits } = await import("../src/lib/assistant/consignes");
 const { noteArret } = await import("../src/lib/assistant/protocole");
@@ -21,25 +23,28 @@ const ok = (n: string, c: boolean) => {
 
 /* ---------- La clé ---------- */
 const CLE = `sk-ant-api03-${"Ab3_-".repeat(18)}`;
-ok("clé de la console acceptée", controlerFormatCle(`  ${CLE}\n`).ok);
-ok("clé d'administration refusée", !controlerFormatCle(`sk-ant-admin01-${"a".repeat(40)}`).ok);
-ok("jeton d'abonnement Claude (Pro/Max) refusé", !controlerFormatCle(`sk-ant-oat01-${"a".repeat(40)}`).ok && !controlerFormatCle(`sk-ant-ort01-${"a".repeat(40)}`).ok);
-ok("texte quelconque refusé", ![undefined, "", "bonjour", "sk-proj-abc", `sk-ant-api03-court`, `${CLE} ; rm -rf /`].some((x) => controlerFormatCle(x).ok));
-ok("aperçu : jamais la clé entière", masquerCle(CLE) === `sk-ant-…${CLE.slice(-4)}` && !masquerCle(CLE).includes(CLE.slice(10, 30)));
+ok("clé de la console acceptée", controlerFormatCle("anthropic", `  ${CLE}\n`).ok);
+ok("clé d'administration refusée", !controlerFormatCle("anthropic", `sk-ant-admin01-${"a".repeat(40)}`).ok && !controlerFormatCle("openai", `sk-admin-${"a".repeat(40)}`).ok);
+ok("jeton d'abonnement Claude (Pro/Max) refusé", !controlerFormatCle("anthropic", `sk-ant-oat01-${"a".repeat(40)}`).ok && !controlerFormatCle("anthropic", `sk-ant-ort01-${"a".repeat(40)}`).ok);
+ok("clés OpenAI et Gemini reconnues", controlerFormatCle("openai", `sk-proj-${"Ab_9".repeat(12)}`).ok && controlerFormatCle("google", `AIza${"Sy-x_9".repeat(6)}`).ok);
+ok("une clé collée dans la mauvaise IA est refusée", !controlerFormatCle("openai", CLE).ok && !controlerFormatCle("google", CLE).ok && !controlerFormatCle("anthropic", `sk-proj-${"a".repeat(40)}`).ok);
+ok("texte quelconque refusé", ![undefined, "", "bonjour", "sk-proj-abc", `sk-ant-api03-court`, `${CLE} ; rm -rf /`].some((x) => controlerFormatCle("anthropic", x).ok || controlerFormatCle("openai", x).ok || controlerFormatCle("google", x).ok));
+ok("aperçu : jamais la clé entière", masquerCle(CLE) === `sk-ant-…${CLE.slice(-4)}` && !masquerCle(CLE).includes(CLE.slice(10, 30)) && masquerCle(`sk-proj-${"x".repeat(40)}wxyz`) === "sk-proj-…wxyz");
 
-const paquet = chiffrerCle(CLE, "compte-a");
+const paquet = chiffrerCle(CLE, "compte-a", "anthropic");
 ok("clé chiffrée au format v1, sans la clé en clair", /^v1\.[A-Za-z0-9+/=]+$/.test(paquet) && !paquet.includes("sk-ant"));
-ok("deux chiffrements de la même clé diffèrent (iv aléatoire)", chiffrerCle(CLE, "compte-a") !== paquet);
-ok("déchiffrement par le même compte", dechiffrerCle(paquet, "compte-a") === CLE);
-ok("une clé chiffrée recopiée sur un autre compte ne se déchiffre pas", dechiffrerCle(paquet, "compte-b") === null);
+ok("deux chiffrements de la même clé diffèrent (iv aléatoire)", chiffrerCle(CLE, "compte-a", "anthropic") !== paquet);
+ok("déchiffrement par le même compte", dechiffrerCle(paquet, "compte-a", "anthropic") === CLE);
+ok("une clé chiffrée pour une IA ne se déchiffre pas pour une autre", dechiffrerCle(paquet, "compte-a", "openai") === null);
+ok("une clé chiffrée recopiée sur un autre compte ne se déchiffre pas", dechiffrerCle(paquet, "compte-b", "anthropic") === null);
 const brut = Buffer.from(paquet.slice(3), "base64");
 brut[brut.length - 1] ^= 1;
-ok("un paquet altéré est refusé", dechiffrerCle(`v1.${brut.toString("base64")}`, "compte-a") === null && dechiffrerCle("v1.", "compte-a") === null && dechiffrerCle(null, "compte-a") === null);
+ok("un paquet altéré est refusé", dechiffrerCle(`v1.${brut.toString("base64")}`, "compte-a", "anthropic") === null && dechiffrerCle("v1.", "compte-a", "anthropic") === null && dechiffrerCle(null, "compte-a", "anthropic") === null);
 process.env.ASSISTANT_CLE_SECRET = "n".repeat(40);
-ok("après l'ajout d'ASSISTANT_CLE_SECRET, l'ancienne clé se lit encore", dechiffrerCle(paquet, "compte-a") === CLE);
-const nouveau = chiffrerCle(CLE, "compte-a");
+ok("après l'ajout d'ASSISTANT_CLE_SECRET, l'ancienne clé se lit encore", dechiffrerCle(paquet, "compte-a", "anthropic") === CLE);
+const nouveau = chiffrerCle(CLE, "compte-a", "anthropic");
 process.env.SESSION_SECRET = "z".repeat(48);
-ok("et la nouvelle survit à un changement de SESSION_SECRET", dechiffrerCle(nouveau, "compte-a") === CLE && dechiffrerCle(paquet, "compte-a") === null);
+ok("et la nouvelle survit à un changement de SESSION_SECRET", dechiffrerCle(nouveau, "compte-a", "anthropic") === CLE && dechiffrerCle(paquet, "compte-a", "anthropic") === null);
 
 /* ---------- Coûts ---------- */
 const u = (entree: number, sortie: number, ecritureCache = 0, lectureCache = 0) => ({ entree, sortie, ecritureCache, lectureCache });
@@ -93,6 +98,38 @@ ok("la raison d'arrêt est lue", evs.some((x) => x.type === "arret" && x.raison 
 const evErreur: { type: string; erreur?: { code: string } }[] = [];
 for await (const ev of interpreterFlux(lireSse(flux(['event: error\ndata: {"type":"error","error":{"type":"overloaded_error","message":"Overloaded"}}\n\n'])))) evErreur.push(ev as never);
 ok("une erreur au milieu du flux est traduite", evErreur.length === 1 && evErreur[0].erreur?.code === "surcharge");
+
+/* ---------- ChatGPT (API Responses) ---------- */
+const sseOpenAI = [
+  'event: response.created\ndata: {"type":"response.created","response":{"id":"r1"}}\n\n',
+  'event: response.output_item.added\ndata: {"type":"response.output_item.added","item":{"type":"reasoning"}}\n\n',
+  'event: response.output_text.delta\ndata: {"type":"response.output_text.delta","delta":"Bon"}\n\n',
+  'event: response.output_text.delta\ndata: {"type":"response.output_text.delta","delta":"jour [Doc 1, p. 2]"}\n\n',
+  'event: response.completed\ndata: {"type":"response.completed","response":{"status":"completed","usage":{"input_tokens":5000,"input_tokens_details":{"cached_tokens":4000},"output_tokens":80}}}\n\n',
+];
+const evOpenAI: { type: string; [k: string]: unknown }[] = [];
+for await (const ev of interpreterFluxOpenAI(lireSse(flux(sseOpenAI)))) evOpenAI.push(ev as never);
+const usageOA = evOpenAI.find((x) => x.type === "usage")?.usage as { entree: number; lectureCache: number; sortie: number };
+ok("ChatGPT : texte, réflexion signalée, fin normale", evOpenAI.filter((x) => x.type === "texte").map((x) => x.texte).join("") === "Bonjour [Doc 1, p. 2]" && evOpenAI.some((x) => x.type === "reflexion") && evOpenAI.some((x) => x.type === "arret" && x.raison === "end_turn"));
+ok("ChatGPT : jetons en cache séparés de l'entrée", usageOA.entree === 1000 && usageOA.lectureCache === 4000 && usageOA.sortie === 80);
+const evIncomplet: { type: string; raison?: string }[] = [];
+for await (const ev of interpreterFluxOpenAI(lireSse(flux(['data: {"type":"response.incomplete","response":{"incomplete_details":{"reason":"max_output_tokens"},"usage":{"input_tokens":10,"output_tokens":5}}}\n\n'])))) evIncomplet.push(ev as never);
+ok("ChatGPT : réponse coupée par la longueur", evIncomplet.some((x) => x.type === "arret" && x.raison === "max_tokens"));
+ok("ChatGPT : erreurs traduites (clé, crédit, débit, modèle)", interpreterErreurOpenAI(401, { error: { code: "invalid_api_key" } }).code === "cle_invalide" && interpreterErreurOpenAI(429, { error: { code: "insufficient_quota", message: "You exceeded your current quota" } }).code === "credit_epuise" && interpreterErreurOpenAI(429, { error: { code: "rate_limit_exceeded" } }).code === "limite_debit" && interpreterErreurOpenAI(404, { error: { code: "model_not_found" } }).code === "acces_refuse");
+
+/* ---------- Gemini ---------- */
+const sseGoogle = [
+  'data: {"candidates":[{"content":{"parts":[{"text":"Réfléchissons","thought":true}],"role":"model"}}],"usageMetadata":{"thoughtsTokenCount":30}}\r\n\r\n',
+  'data: {"candidates":[{"content":{"parts":[{"text":"Salam "}],"role":"model"}}]}\r\n\r\n',
+  'data: {"candidates":[{"content":{"parts":[{"text":"[Doc 2, p. 5]"}],"role":"model"},"finishReason":"STOP"}],"usageMetadata":{"promptTokenCount":3000,"cachedContentTokenCount":2000,"candidatesTokenCount":12,"thoughtsTokenCount":30}}\r\n\r\n',
+];
+const evG: { type: string; [k: string]: unknown }[] = [];
+for await (const ev of interpreterFluxGoogle(lireSse(flux(sseGoogle)))) evG.push(ev as never);
+const usageG = evG.find((x) => x.type === "usage")?.usage as { entree: number; lectureCache: number; sortie: number };
+ok("Gemini : la réflexion n'est pas affichée, le texte arrive entier", evG.filter((x) => x.type === "texte").map((x) => x.texte).join("") === "Salam [Doc 2, p. 5]" && evG.filter((x) => x.type === "reflexion").length === 1);
+ok("Gemini : la réflexion est comptée dans la sortie, le cache à part", usageG.entree === 1000 && usageG.lectureCache === 2000 && usageG.sortie === 42 && evG.some((x) => x.type === "arret" && x.raison === "end_turn"));
+ok("Gemini : erreurs traduites (clé, quota, modèle)", interpreterErreurGoogle(400, { error: { status: "INVALID_ARGUMENT", message: "API key not valid. Please pass a valid API key." } }).code === "cle_invalide" && interpreterErreurGoogle(429, { error: { status: "RESOURCE_EXHAUSTED" } }).code === "limite_debit" && interpreterErreurGoogle(404, { error: { status: "NOT_FOUND" } }).code === "acces_refuse");
+ok("coûts ChatGPT et Gemini (tarif long de Gemini Pro au-delà de 200 000 jetons)", coutEstime("gpt-6.2-sol", u(1_000_000, 100_000, 0, 1_000_000)) === 3.1 && coutEstime("gemini-3.1-pro-preview", u(300_000, 0)) === 1.2);
 
 /* ---------- Pages, découpage, BM25 ---------- */
 const doc = (numero: number, nom: string, pages: string[]) => ({ id: `d${numero}`, numero, nom, pages: pages.length, texte: ctx.texteDesPages(pages.map((t, i) => ({ n: i + 1, texte: t }))) });

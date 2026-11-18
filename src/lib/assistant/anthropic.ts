@@ -7,7 +7,7 @@
  *   • Les réponses arrivent en flux (server-sent events) et sont relayées au fil de l'eau.
  * Ce module ne touche pas à la base ; le lecteur de flux est testé à part (tests/test-assistant.mts).
  */
-import type { Usage } from "./modeles";
+import type { Effort, Usage } from "./modeles";
 
 const VERSION_API = "2023-06-01";
 
@@ -77,6 +77,17 @@ export function interpreterErreur(statut: number, corps: unknown, retryAfter?: s
 }
 
 const ERREUR_RESEAU: ErreurClaude = { code: "reseau", statut: 0, message: "Impossible de joindre Anthropic pour l'instant. Vérifie ta connexion et réessaie." };
+
+/** Une demande, dans la même forme pour les trois IA (voir ia.ts). */
+export type Demande = {
+  modele: string;
+  consigne: string;
+  /** Le texte intégral des PDF (lecture complète) : un long début stable, mis en cache. */
+  documents?: string;
+  messages: { role: "user" | "assistant"; texte: string; cache?: boolean }[];
+  maxJetons: number;
+  effort: Effort;
+};
 
 /* ---------- Vérifier une clé (gratuit : liste des modèles) ---------- */
 
@@ -264,4 +275,18 @@ export async function ouvrirFlux(
     return { ok: false, erreur };
   }
   return { ok: false, erreur: interpreterErreur(500, null) };
+}
+
+/** Claude : consigne et documents en blocs système, points de cache explicites (cache_control). */
+export async function demarrerAnthropic(cle: string, d: Demande, signal?: AbortSignal) {
+  const systeme: { type: "text"; text: string; cache_control?: { type: "ephemeral" } }[] = [{ type: "text", text: d.consigne }];
+  if (d.documents) systeme.push({ type: "text", text: d.documents, cache_control: { type: "ephemeral" } });
+  const messages = d.messages.map((m) => ({ role: m.role, content: [{ type: "text", text: m.texte, ...(m.cache ? { cache_control: { type: "ephemeral" } } : {}) }] }));
+  const ouverture = await ouvrirFlux(
+    cle,
+    (avecEffort) => ({ model: d.modele, max_tokens: d.maxJetons, system: systeme, messages, ...(avecEffort ? { output_config: { effort: d.effort } } : {}) }),
+    signal,
+  );
+  if (!ouverture.ok) return ouverture;
+  return { ok: true as const, evenements: interpreterFlux(lireSse(ouverture.flux)) };
 }

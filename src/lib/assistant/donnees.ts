@@ -1,7 +1,7 @@
 import "server-only";
 import { dbAdmin } from "@/lib/supabase";
 import { chiffrerCle, dechiffrerCle } from "./chiffrement";
-import { EFFORT_PAR_DEFAUT, MODELE_PAR_DEFAUT, effortValide, masquerCle, modeleValide, type Effort, type IdModele, type Usage } from "./modeles";
+import { EFFORT_PAR_DEFAUT, MODELE_PAR_DEFAUT, effortValide, fournisseurValide, masquerCle, modeleValide, type Effort, type Fournisseur, type IdModele, type Usage } from "./modeles";
 import type { EtatMessage } from "./protocole";
 
 /*
@@ -30,83 +30,75 @@ function echec(e: ErreurPostgrest): never {
 
 const db = () => dbAdmin();
 
-/* ---------- La clé ---------- */
+/* ---------- Les clés (une par IA) et les réglages ---------- */
 
-export type FicheCle = {
-  apercu: string;
-  modele: IdModele;
-  effort: Effort;
-  plafond: number | null;
-  statut: "valide" | "invalide";
-  verifieeLe: string;
-};
+export type FicheCle = { fournisseur: Fournisseur; apercu: string; statut: "valide" | "invalide"; verifieeLe: string; lisible?: boolean };
+export type Reglages = { modele: IdModele; effort: Effort; plafond: number | null };
+export const REGLAGES_PAR_DEFAUT: Reglages = { modele: MODELE_PAR_DEFAUT, effort: EFFORT_PAR_DEFAUT, plafond: null };
 
-type LigneCle = { cle_chiffree: string; apercu: string; modele: string; effort: string; plafond_mensuel_usd: number | string | null; statut: string; verifiee_le: string };
+type LigneCle = { fournisseur: string; cle_chiffree: string; apercu: string; statut: string; verifiee_le: string };
+const COLONNES_CLE = "fournisseur, cle_chiffree, apercu, statut, verifiee_le";
 
-const fiche = (l: LigneCle): FicheCle => ({
-  apercu: l.apercu,
-  modele: modeleValide(l.modele) ?? MODELE_PAR_DEFAUT,
-  effort: effortValide(l.effort) ?? EFFORT_PAR_DEFAUT,
-  plafond: l.plafond_mensuel_usd === null ? null : Number(l.plafond_mensuel_usd),
-  statut: l.statut === "invalide" ? "invalide" : "valide",
-  verifieeLe: l.verifiee_le,
-});
-
-/** La fiche de la clé (sans la clé). */
-export async function lireFicheCle(utilisateur: string): Promise<FicheCle | null> {
-  const { data, error } = await db().from("assistant_cles").select("cle_chiffree, apercu, modele, effort, plafond_mensuel_usd, statut, verifiee_le").eq("utilisateur_id", utilisateur).maybeSingle();
-  if (error) echec(error);
-  return data ? fiche(data as LigneCle) : null;
+function fiche(l: LigneCle, utilisateur: string): { fiche: FicheCle; cle: string | null } {
+  const f = fournisseurValide(l.fournisseur) ?? "anthropic";
+  const cle = dechiffrerCle(l.cle_chiffree, utilisateur, f);
+  return { cle, fiche: { fournisseur: f, apercu: l.apercu, statut: l.statut === "invalide" ? "invalide" : "valide", verifieeLe: l.verifiee_le, lisible: cle !== null } };
 }
 
-/** La clé déchiffrée, pour un appel à Claude. Elle ne quitte jamais le serveur. */
-export async function lireCle(utilisateur: string): Promise<{ cle: string | null; fiche: FicheCle } | null> {
-  const { data, error } = await db().from("assistant_cles").select("cle_chiffree, apercu, modele, effort, plafond_mensuel_usd, statut, verifiee_le").eq("utilisateur_id", utilisateur).maybeSingle();
+/** Les fiches des clés du compte (sans les clés). */
+export async function lireCles(utilisateur: string): Promise<FicheCle[]> {
+  const { data, error } = await db().from("assistant_cles").select(COLONNES_CLE).eq("utilisateur_id", utilisateur);
   if (error) echec(error);
-  if (!data) return null;
-  const l = data as LigneCle;
-  return { cle: dechiffrerCle(l.cle_chiffree, utilisateur), fiche: fiche(l) };
+  return (data as LigneCle[]).map((l) => fiche(l, utilisateur).fiche);
 }
 
-export async function enregistrerCle(utilisateur: string, cle: string, choix: { modele: IdModele; effort: Effort }): Promise<FicheCle> {
+/** La clé déchiffrée pour une IA, pour un appel. Elle ne quitte jamais le serveur. */
+export async function lireCle(utilisateur: string, fournisseur: Fournisseur): Promise<{ cle: string | null; fiche: FicheCle } | null> {
+  const { data, error } = await db().from("assistant_cles").select(COLONNES_CLE).eq("utilisateur_id", utilisateur).eq("fournisseur", fournisseur).maybeSingle();
+  if (error) echec(error);
+  return data ? fiche(data as LigneCle, utilisateur) : null;
+}
+
+export async function enregistrerCle(utilisateur: string, fournisseur: Fournisseur, cle: string): Promise<FicheCle> {
   const maintenant = new Date().toISOString();
-  const ligne = {
-    utilisateur_id: utilisateur,
-    cle_chiffree: chiffrerCle(cle, utilisateur),
-    apercu: masquerCle(cle),
-    modele: choix.modele,
-    effort: choix.effort,
-    statut: "valide",
-    verifiee_le: maintenant,
-    maj: maintenant,
-  };
-  const { data, error } = await db().from("assistant_cles").upsert(ligne, { onConflict: "utilisateur_id" }).select("cle_chiffree, apercu, modele, effort, plafond_mensuel_usd, statut, verifiee_le").single();
+  const ligne = { utilisateur_id: utilisateur, fournisseur, cle_chiffree: chiffrerCle(cle, utilisateur, fournisseur), apercu: masquerCle(cle), statut: "valide", verifiee_le: maintenant, maj: maintenant };
+  const { data, error } = await db().from("assistant_cles").upsert(ligne, { onConflict: "utilisateur_id,fournisseur" }).select(COLONNES_CLE).single();
   if (error || !data) echec(error);
-  return fiche(data as LigneCle);
+  return fiche(data as LigneCle, utilisateur).fiche;
 }
 
-export async function reglerCle(utilisateur: string, choix: { modele?: IdModele; effort?: Effort; plafond?: number | null }): Promise<FicheCle | null> {
-  const champs: Record<string, unknown> = { maj: new Date().toISOString() };
-  if (choix.modele) champs.modele = choix.modele;
-  if (choix.effort) champs.effort = choix.effort;
-  if (choix.plafond !== undefined) champs.plafond_mensuel_usd = choix.plafond;
-  const { data, error } = await db().from("assistant_cles").update(champs).eq("utilisateur_id", utilisateur).select("cle_chiffree, apercu, modele, effort, plafond_mensuel_usd, statut, verifiee_le").maybeSingle();
-  if (error) echec(error);
-  return data ? fiche(data as LigneCle) : null;
+/** L'IA a refusé la clé (révoquée) : on le note, l'utilisateur la remplacera. */
+export async function marquerCleInvalide(utilisateur: string, fournisseur: Fournisseur): Promise<void> {
+  await db().from("assistant_cles").update({ statut: "invalide", maj: new Date().toISOString() }).eq("utilisateur_id", utilisateur).eq("fournisseur", fournisseur);
 }
 
-/** Anthropic a refusé la clé (révoquée) : on le note, l'utilisateur la remplacera. */
-export async function marquerCleInvalide(utilisateur: string): Promise<void> {
-  await db().from("assistant_cles").update({ statut: "invalide", maj: new Date().toISOString() }).eq("utilisateur_id", utilisateur);
-}
-
-export async function supprimerCle(utilisateur: string): Promise<void> {
-  const { error } = await db().from("assistant_cles").delete().eq("utilisateur_id", utilisateur);
+export async function supprimerCle(utilisateur: string, fournisseur: Fournisseur): Promise<void> {
+  const { error } = await db().from("assistant_cles").delete().eq("utilisateur_id", utilisateur).eq("fournisseur", fournisseur);
   if (error) echec(error);
 }
 
 export async function noterVerification(utilisateur: string, reussie: boolean): Promise<void> {
   await db().from("assistant_verifications").insert({ utilisateur_id: utilisateur, reussie });
+}
+
+type LigneReglages = { modele: string; effort: string; plafond_mensuel_usd: number | string | null };
+const reglages = (l: LigneReglages | null): Reglages =>
+  l ? { modele: modeleValide(l.modele) ?? MODELE_PAR_DEFAUT, effort: effortValide(l.effort) ?? EFFORT_PAR_DEFAUT, plafond: l.plafond_mensuel_usd === null ? null : Number(l.plafond_mensuel_usd) } : { ...REGLAGES_PAR_DEFAUT };
+
+export async function lireReglages(utilisateur: string): Promise<Reglages> {
+  const { data, error } = await db().from("assistant_reglages").select("modele, effort, plafond_mensuel_usd").eq("utilisateur_id", utilisateur).maybeSingle();
+  if (error) echec(error);
+  return reglages(data as LigneReglages | null);
+}
+
+export async function reglerReglages(utilisateur: string, choix: { modele?: IdModele; effort?: Effort; plafond?: number | null }): Promise<Reglages> {
+  const champs: Record<string, unknown> = { utilisateur_id: utilisateur, maj: new Date().toISOString() };
+  if (choix.modele) champs.modele = choix.modele;
+  if (choix.effort) champs.effort = choix.effort;
+  if (choix.plafond !== undefined) champs.plafond_mensuel_usd = choix.plafond;
+  const { data, error } = await db().from("assistant_reglages").upsert(champs, { onConflict: "utilisateur_id" }).select("modele, effort, plafond_mensuel_usd").single();
+  if (error || !data) echec(error);
+  return reglages(data as LigneReglages);
 }
 
 /* ---------- Le bilan : rythme, dépense du mois, place ---------- */

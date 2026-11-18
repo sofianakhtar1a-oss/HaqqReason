@@ -76,7 +76,7 @@ const ACCUEIL: DefModule = {
       champs: [
         { cle: "titre", libelle: "Titre", defaut: "Par où veux-tu commencer ?" },
         { cle: "intro", libelle: "Introduction", defaut: "Six espaces : écrire, transformer tes fichiers, apprendre une langue, questionner tes PDF avec l'assistant, lire, et comprendre l'islam en vidéo. Tu passes de l'un à l'autre quand tu veux.", long: true },
-        { cle: "meta.description", libelle: "Description pour Google", defaut: "Six espaces : Le Calame pour écrire, L'Alambic pour convertir ses fichiers, Le Truchement pour apprendre une langue, Le Vizir, l'assistant IA qui lit tes PDF, la bibliothèque des preuves de la véracité de l'islam, et L'Islam authentique en vidéos.", long: true },
+        { cle: "meta.description", libelle: "Description pour Google", defaut: "Six espaces : Le Calame pour écrire, L'Alambic pour convertir ses fichiers, Le Truchement pour apprendre une langue, Le Vizir, l'assistant IA (Claude, ChatGPT ou Gemini) qui lit tes PDF, la bibliothèque des preuves de la véracité de l'islam, et L'Islam authentique en vidéos.", long: true },
       ],
     },
   ],
@@ -144,7 +144,7 @@ const ACCUEIL: DefModule = {
             titre: "Le Vizir",
             soustitre: "Assistant IA",
             marque: "Demander",
-            texte: "Claude, l'IA d'Anthropic, pour discuter librement ou interroger tes PDF : résumés, comparaisons, citations avec leurs pages, vérifiables d'un clic. Il fonctionne avec ta propre clé : chaque réponse est facturée sur ton compte Anthropic.",
+            texte: "Claude, ChatGPT ou Gemini, au choix, pour discuter librement ou interroger tes PDF : résumés, comparaisons, citations avec leurs pages, vérifiables d'un clic. Il fonctionne avec ta propre clé : chaque réponse est facturée sur ton compte, jamais sur celui du site.",
           },
         },
       ],
@@ -340,7 +340,7 @@ const LANGUES: DefModule = {
 const ASSISTANT: DefModule = {
   id: "assistant",
   nom: "Le Vizir",
-  description: "L'assistant IA (Claude) : chat général et ChatPDF. Ses textes : présentation, onglets, accueil de chaque espace, explication de la clé.",
+  description: "L'assistant IA (Claude, ChatGPT, Gemini) : chat général et ChatPDF. Ses textes : présentation, onglets, accueil de chaque espace, explication des clés.",
   adresse: "/assistant",
   accent: "amethyste",
   sections: [
@@ -351,11 +351,11 @@ const ASSISTANT: DefModule = {
         {
           cle: "meta.description",
           libelle: "Description pour Google",
-          defaut: "Discute avec Claude et interroge tes PDF : résumés, comparaisons, citations avec leurs pages. Chaque réponse est facturée sur ta propre clé Anthropic.",
+          defaut: "Discute avec Claude, ChatGPT ou Gemini et interroge tes PDF : résumés, comparaisons, citations avec leurs pages. Chaque réponse est facturée sur ta propre clé.",
           long: true,
         },
         { cle: "tete.titre", libelle: "Nom dans la barre du haut", defaut: "Le Vizir" },
-        { cle: "tete.pastille", libelle: "Mention sous la liste des conversations", defaut: "Facturé sur ta clé Anthropic" },
+        { cle: "tete.pastille", libelle: "Mention sous la liste des conversations", defaut: "Facturé sur tes propres clés" },
       ],
     },
     {
@@ -367,7 +367,7 @@ const ASSISTANT: DefModule = {
         {
           cle: "general.texte",
           libelle: "Chat général : texte d'accueil",
-          defaut: "Écrire, comprendre, réviser, traduire, raisonner : Claude t'aide sur tout. Tes conversations te suivent sur tous tes appareils.",
+          defaut: "Écrire, comprendre, réviser, traduire, raisonner : choisis Claude, ChatGPT ou Gemini en bas, puis pose ta question. Tes conversations te suivent sur tous tes appareils.",
           long: true,
         },
         { cle: "pdf.titre", libelle: "ChatPDF : titre d'accueil", defaut: "Interroge tes PDF" },
@@ -382,11 +382,11 @@ const ASSISTANT: DefModule = {
     {
       titre: "La clé de l'utilisateur",
       champs: [
-        { cle: "cle.titre", libelle: "Titre", defaut: "Relie ta clé Claude" },
+        { cle: "cle.titre", libelle: "Titre", defaut: "Choisis ton IA et relie ta clé" },
         {
           cle: "cle.texte",
           libelle: "Explication",
-          defaut: "Le Vizir utilise ta propre clé API Anthropic : chaque réponse est facturée sur ton compte, dans tes limites, jamais sur celui du site. Ta clé est chiffrée, liée à ton compte, et n'est jamais réaffichée.",
+          defaut: "Le Vizir fonctionne avec Claude (Anthropic), ChatGPT (OpenAI) ou Gemini (Google), et avec TA clé : chaque réponse est facturée sur ton compte, dans tes limites, jamais sur celui du site. Tu peux relier une, deux ou les trois IA ; chaque clé est chiffrée, liée à ton compte, et jamais réaffichée.",
           long: true,
         },
       ],

@@ -2,7 +2,7 @@ import "server-only";
 import { createCipheriv, createDecipheriv, hkdfSync, randomBytes } from "node:crypto";
 
 /*
- * Chiffrement de la clé API Anthropic de chaque compte (AES-256-GCM).
+ * Chiffrement des clés API de chaque compte (Anthropic, OpenAI, Google), en AES-256-GCM.
  *   • La clé de chiffrement est dérivée par HKDF d'un secret du serveur, avec un usage propre
  *     à l'assistant : elle ne sert à rien d'autre. Ce secret est ASSISTANT_CLE_SECRET s'il est
  *     réglé (recommandé : il survit à un changement de SESSION_SECRET), sinon SESSION_SECRET.
@@ -21,18 +21,19 @@ function secrets(): string[] {
 }
 
 const deriver = (secret: string) => Buffer.from(hkdfSync("sha256", secret, "haqqreason", "assistant-cle-api-v1", 32));
-const aad = (utilisateurId: string) => Buffer.from(`compte:${utilisateurId}`, "utf8");
+/** Liée au compte ET à l'IA : une clé ne se déchiffre ni pour un autre compte, ni pour une autre IA. */
+const aad = (utilisateurId: string, fournisseur: string) => Buffer.from(`compte:${utilisateurId}:${fournisseur}`, "utf8");
 
-export function chiffrerCle(cleApi: string, utilisateurId: string): string {
+export function chiffrerCle(cleApi: string, utilisateurId: string, fournisseur: string): string {
   const iv = randomBytes(12);
   const c = createCipheriv("aes-256-gcm", deriver(secrets()[0]), iv);
-  c.setAAD(aad(utilisateurId));
+  c.setAAD(aad(utilisateurId, fournisseur));
   const chiffre = Buffer.concat([c.update(cleApi, "utf8"), c.final()]);
   return `v1.${Buffer.concat([iv, c.getAuthTag(), chiffre]).toString("base64")}`;
 }
 
 /** Renvoie la clé en clair, ou null si le paquet est abîmé, falsifié, ou chiffré pour un autre compte. */
-export function dechiffrerCle(paquet: string | null | undefined, utilisateurId: string): string | null {
+export function dechiffrerCle(paquet: string | null | undefined, utilisateurId: string, fournisseur: string): string | null {
   if (!paquet?.startsWith("v1.")) return null;
   let brut: Buffer;
   try {
@@ -44,7 +45,7 @@ export function dechiffrerCle(paquet: string | null | undefined, utilisateurId: 
   for (const secret of secrets()) {
     try {
       const d = createDecipheriv("aes-256-gcm", deriver(secret), brut.subarray(0, 12));
-      d.setAAD(aad(utilisateurId));
+      d.setAAD(aad(utilisateurId, fournisseur));
       d.setAuthTag(brut.subarray(12, 28));
       return Buffer.concat([d.update(brut.subarray(28)), d.final()]).toString("utf8");
     } catch {
