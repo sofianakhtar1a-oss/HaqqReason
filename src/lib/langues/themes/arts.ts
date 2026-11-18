@@ -179,5 +179,91 @@ recitation | récitation | n | B2 | /ˌresɪˈteɪʃn/ | His Qur'an recitation i
 calligrapher | calligraphe | n | C1 | /kəˈlɪɡrəfər/ | The calligrapher wrote the verse in gold. | Le calligraphe a écrit le verset en or.
 handicraft | artisanat | n | B2 | /ˈhændikrɑːft/ | The market sells local handicraft. | Le marché vend de l'artisanat local.
 weaving | tissage | n | B2 | /ˈwiːvɪŋ/ | Carpet weaving is an old art. | Le tissage de tapis est un art ancien.
+self-portrait | autoportrait | n | B2 | /ˌself ˈpɔːtrət/ | Van Gogh painted many self-portraits. | Van Gogh a peint de nombreux autoportraits.
+oil painting | peinture à l'huile | n | B1 | /ˌɔɪl ˈpeɪntɪŋ/ | The museum has a famous oil painting. | Le musée possède une célèbre peinture à l'huile.
+acrylic | acrylique | n | B2 | /əˈkrɪlɪk/ | She paints in acrylic. | Elle peint à l'acrylique.
+paintbrush | pinceau | n | A2 | /ˈpeɪntbrʌʃ/ | Clean your paintbrush with water. | Nettoie ton pinceau à l'eau.
+carving | sculpture (sur bois, pierre) | n | B2 | /ˈkɑːvɪŋ/ | The door has beautiful wood carvings. | La porte a de belles sculptures sur bois.
+mural | peinture murale | n | B2 | /ˈmjʊərəl/ | Students painted a mural on the wall. | Des élèves ont peint une fresque sur le mur.
+street art | art urbain | n | B1 | /ˈstriːt ɑːt/ | The city is famous for its street art. | La ville est célèbre pour son art urbain.
+photograph | photographie | n | A2 | /ˈfəʊtəɡrɑːf/ | This photograph was taken in 1920. | Cette photographie a été prise en 1920.
+engraving | gravure | n | C1 | /ɪnˈɡreɪvɪŋ/ | The book has old engravings. | Le livre contient de vieilles gravures.
+lithograph | lithographie | n | C2 | /ˈlɪθəɡrɑːf/ | He bought a lithograph by Matisse. | Il a acheté une lithographie de Matisse.
+illumination | enluminure | n | C1 | /ɪˌluːmɪˈneɪʃn/ | The manuscript has gold illuminations. | Le manuscrit comporte des enluminures dorées.
+stained glass | vitrail | n | B2 | /ˌsteɪnd ˈɡlɑːs/ | The stained glass of Chartres is famous. | Les vitraux de Chartres sont célèbres.
+Islamic art | art islamique | n | B2 | /ɪzˌlæmɪk ˈɑːt/ | Islamic art uses geometric patterns. | L'art islamique utilise des motifs géométriques.
+figurative | figuratif | adj | C1 | /ˈfɪɡərətɪv/ | He prefers figurative painting. | Il préfère la peinture figurative.
+realism | réalisme | n | C1 | /ˈrɪəlɪzəm/ | Courbet was a master of realism. | Courbet était un maître du réalisme.
+impressionism | impressionnisme | n | C1 | /ɪmˈpreʃənɪzəm/ | Monet is the father of impressionism. | Monet est le père de l'impressionnisme.
+cubism | cubisme | n | C1 | /ˈkjuːbɪzəm/ | Picasso invented cubism with Braque. | Picasso a inventé le cubisme avec Braque.
+surrealism | surréalisme | n | C1 | /səˈrɪəlɪzəm/ | Dalí is famous for surrealism. | Dalí est célèbre pour le surréalisme.
+romanticism | romantisme | n | C1 | /rəʊˈmæntɪsɪzəm/ | Victor Hugo was a leader of romanticism. | Victor Hugo fut une figure du romantisme.
+baroque | baroque | adj | C1 | /bəˈrɒk/ | The church has a baroque interior. | L'église a un intérieur baroque.
+Gothic | gothique | adj | B2 | /ˈɡɒθɪk/ | Notre-Dame is a Gothic cathedral. | Notre-Dame est une cathédrale gothique.
+classical | classique | adj | B1 | /ˈklæsɪkl/ | I listen to classical music. | J'écoute de la musique classique.
+modern art | art moderne | n | B1 | /ˌmɒdn ˈɑːt/ | The Pompidou Centre shows modern art. | Le Centre Pompidou expose de l'art moderne.
+contemporary art | art contemporain | n | B2 | /kənˌtemprəri ˈɑːt/ | I don't always understand contemporary art. | Je ne comprends pas toujours l'art contemporain.
+installation | installation (artistique) | n | C1 | /ˌɪnstəˈleɪʃn/ | The gallery shows a video installation. | La galerie présente une installation vidéo.
+performance art | art de la performance | n | C1 | /pəˈfɔːməns ɑːt/ | Performance art can be shocking. | L'art de la performance peut choquer.
+conceptual art | art conceptuel | n | C1 | /kənˌseptʃuəl ˈɑːt/ | Conceptual art values ideas over beauty. | L'art conceptuel privilégie l'idée sur la beauté.
+composition | composition | n | B2 | /ˌkɒmpəˈzɪʃn/ | The composition of the painting is perfect. | La composition du tableau est parfaite.
+shade | nuance, teinte ; ombre | n | B1 | /ʃeɪd/ | I love this shade of blue. | J'adore cette nuance de bleu.
+tone | ton | n | B2 | /təʊn/ | The painting has warm tones. | Le tableau a des tons chauds.
+shadow | ombre | n | A2 | /ˈʃædəʊ/ | The artist painted long shadows. | L'artiste a peint de longues ombres.
+symmetry | symétrie | n | C1 | /ˈsɪmətri/ | The mosque is built with perfect symmetry. | La mosquée est construite avec une parfaite symétrie.
+muse | muse | n | C1 | /mjuːz/ | She was the painter's muse. | Elle était la muse du peintre.
+auction | vente aux enchères | n | B2 | /ˈɔːkʃn/ | The painting sold at auction for millions. | Le tableau s'est vendu des millions aux enchères.
+patron | mécène | n | C1 | /ˈpeɪtrən/ | The Medici were great patrons of the arts. | Les Médicis furent de grands mécènes des arts.
+stanza | strophe | n | C1 | /ˈstænzə/ | The poem has four stanzas. | Le poème a quatre strophes.
+prose | prose | n | B2 | /prəʊz/ | He writes in beautiful prose. | Il écrit dans une prose magnifique.
+non-fiction | essais, documents (non-fiction) | n | B2 | /ˌnɒn ˈfɪkʃn/ | I mostly read non-fiction. | Je lis surtout des essais et des documents.
+short story | nouvelle | n | B1 | /ˌʃɔːt ˈstɔːri/ | Maupassant wrote many short stories. | Maupassant a écrit de nombreuses nouvelles.
+epic | épopée | n | C1 | /ˈepɪk/ | The Iliad is an ancient epic. | L'Iliade est une épopée antique.
+playwright | dramaturge | n | B2 | /ˈpleɪraɪt/ | Molière was a great playwright. | Molière était un grand dramaturge.
+narrator | narrateur | n | B2 | /nəˈreɪtər/ | The narrator is a child. | Le narrateur est un enfant.
+narrative | récit, narration | n | C1 | /ˈnærətɪv/ | The narrative moves between past and present. | Le récit alterne passé et présent.
+protagonist | protagoniste | n | C1 | /prəˈtæɡənɪst/ | The protagonist is a young doctor. | Le protagoniste est un jeune médecin.
+antagonist | antagoniste | n | C1 | /ænˈtæɡənɪst/ | The antagonist wants revenge. | L'antagoniste veut se venger.
+climax | point culminant, apogée | n | C1 | /ˈklaɪmæks/ | The climax of the film is the battle. | Le point culminant du film est la bataille.
+preface | préface | n | B2 | /ˈprefəs/ | Read the preface first. | Lis d'abord la préface.
+foreword | avant-propos | n | C1 | /ˈfɔːwɜːd/ | A famous scholar wrote the foreword. | Un savant célèbre a écrit l'avant-propos.
+epilogue | épilogue | n | C1 | /ˈepɪlɒɡ/ | The epilogue takes place ten years later. | L'épilogue se déroule dix ans plus tard.
+prologue | prologue | n | C1 | /ˈprəʊlɒɡ/ | The play opens with a prologue. | La pièce s'ouvre sur un prologue.
+literary | littéraire | adj | B2 | /ˈlɪtərəri/ | She won a literary prize. | Elle a remporté un prix littéraire.
+science fiction | science-fiction | n | B1 | /ˌsaɪəns ˈfɪkʃn/ | He loves science fiction films. | Il adore les films de science-fiction.
+detective novel | roman policier | n | B1 | /dɪˈtektɪv ˌnɒvl/ | Agatha Christie wrote detective novels. | Agatha Christie a écrit des romans policiers.
+autobiography | autobiographie | n | B2 | /ˌɔːtəbaɪˈɒɡrəfi/ | Malcolm X's autobiography is powerful. | L'autobiographie de Malcolm X est puissante.
+anthology | anthologie | n | C1 | /ænˈθɒlədʒi/ | It's an anthology of Arabic poetry. | C'est une anthologie de poésie arabe.
+concerto | concerto | n | C1 | /kənˈtʃɜːtəʊ/ | She played a piano concerto. | Elle a joué un concerto pour piano.
+lute | luth | n | C1 | /luːt/ | The lute comes from the Arabic oud. | Le luth vient de l'oud arabe.
+saxophone | saxophone | n | A2 | /ˈsæksəfəʊn/ | He plays the saxophone in a jazz band. | Il joue du saxophone dans un groupe de jazz.
+harp | harpe | n | B1 | /hɑːp/ | The harp has many strings. | La harpe a beaucoup de cordes.
+clarinet | clarinette | n | B1 | /ˌklærəˈnet/ | She learned the clarinet at school. | Elle a appris la clarinette à l'école.
+accordion | accordéon | n | B1 | /əˈkɔːdiən/ | An old man played the accordion. | Un vieil homme jouait de l'accordéon.
+standing ovation | ovation debout | n | B2 | /ˌstændɪŋ əʊˈveɪʃn/ | The audience gave her a standing ovation. | Le public lui a fait une ovation debout.
+backstage | en coulisses | adv | B2 | /ˌbækˈsteɪdʒ/ | We met the actors backstage. | Nous avons rencontré les acteurs en coulisses.
+special effects | effets spéciaux | n | B1 | /ˌspeʃl ɪˈfekts/ | The special effects were amazing. | Les effets spéciaux étaient incroyables.
+animation | animation, dessin animé | n | B1 | /ˌænɪˈmeɪʃn/ | Pixar makes computer animation. | Pixar fait de l'animation par ordinateur.
+dubbing | doublage | n | B2 | /ˈdʌbɪŋ/ | I prefer subtitles to dubbing. | Je préfère les sous-titres au doublage.
+subtitles | sous-titres | n | A2 | /ˈsʌbtaɪtlz/ | We watched the film with subtitles. | Nous avons regardé le film avec des sous-titres.
+cast | distribution (acteurs) | n | B2 | /kɑːst/ | The film has an excellent cast. | Le film a une excellente distribution.
+lead role | rôle principal | n | B1 | /ˌliːd ˈrəʊl/ | She plays the lead role. | Elle joue le rôle principal.
+supporting role | second rôle | n | B2 | /səˌpɔːtɪŋ ˈrəʊl/ | He won an award for a supporting role. | Il a été récompensé pour un second rôle.
+circus | cirque | n | A2 | /ˈsɜːkəs/ | The children went to the circus. | Les enfants sont allés au cirque.
+puppet | marionnette | n | A2 | /ˈpʌpɪt/ | The puppet had a funny voice. | La marionnette avait une drôle de voix.
+puppet show | spectacle de marionnettes | n | A2 | /ˈpʌpɪt ʃəʊ/ | We watched a puppet show in the park. | Nous avons regardé un spectacle de marionnettes au parc.
+mime | mime | n | B2 | /maɪm/ | Marcel Marceau was a famous mime. | Marcel Marceau était un mime célèbre.
+aesthetics | esthétique | n | C1 | /iːsˈθetɪks/ | The book is about Islamic aesthetics. | Le livre porte sur l'esthétique islamique.
+beauty | beauté | n | A2 | /ˈbjuːti/ | The beauty of the Alhambra is breathtaking. | La beauté de l'Alhambra coupe le souffle.
+sublime | sublime | adj | C1 | /səˈblaɪm/ | The view was sublime. | La vue était sublime.
+kitsch | kitsch | adj | C1 | /kɪtʃ/ | The decoration is a bit kitsch. | La décoration est un peu kitsch.
+cliché | cliché | n | C1 | /ˈkliːʃeɪ/ | The ending is a cliché. | La fin est un cliché.
+parody | parodie | n | C1 | /ˈpærədi/ | The film is a parody of westerns. | Le film est une parodie de western.
+satire | satire | n | C1 | /ˈsætaɪər/ | Voltaire's Candide is a satire. | Candide de Voltaire est une satire.
+irony | ironie | n | C1 | /ˈaɪrəni/ | The irony is that he never read the book. | L'ironie, c'est qu'il n'a jamais lu le livre.
+allegory | allégorie | n | C2 | /ˈæləɡəri/ | The story is an allegory of the soul. | Le récit est une allégorie de l'âme.
+symbolism | symbolisme | n | C1 | /ˈsɪmbəlɪzəm/ | The film is full of symbolism. | Le film est plein de symbolisme.
+metaphor | métaphore | n | B2 | /ˈmetəfər/ | "Life is a journey" is a metaphor. | « La vie est un voyage » est une métaphore.
+imagery | images, imagerie | n | C1 | /ˈɪmɪdʒəri/ | The poem is rich in imagery. | Le poème est riche en images.
 `,
 );

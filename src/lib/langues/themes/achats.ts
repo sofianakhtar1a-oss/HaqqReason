@@ -141,5 +141,66 @@ hardware shop | quincaillerie | n | B1 | /ˈhɑːdweə ʃɒp/ | Get some nails f
 toy shop | magasin de jouets | n | A2 | /ˈtɔɪ ʃɒp/ | The children love the toy shop. | Les enfants adorent le magasin de jouets.
 shoe shop | magasin de chaussures | n | A2 | /ˈʃuː ʃɒp/ | We bought trainers at the shoe shop. | Nous avons acheté des baskets au magasin de chaussures.
 butcher's shop | boucherie | n | A2 | /ˈbʊtʃəz ʃɒp/ | The halal butcher's shop is on the corner. | La boucherie halal est au coin.
+shopping | courses, shopping | n | A1 | /ˈʃɒpɪŋ/ | I do the shopping on Saturdays. | Je fais les courses le samedi.
+barcode | code-barres | n | B1 | /ˈbɑːkəʊd/ | Scan the barcode. | Scanne le code-barres.
+gift voucher | bon d'achat | n | B1 | /ˈɡɪft ˌvaʊtʃər/ | I got a gift voucher for my birthday. | J'ai reçu un bon d'achat pour mon anniversaire.
+shopping bag | sac de courses | n | A2 | /ˈʃɒpɪŋ bæɡ/ | Don't forget your shopping bag. | N'oublie pas ton sac de courses.
+carrier bag | sac (de caisse) | n | B1 | /ˈkæriə bæɡ/ | Carrier bags cost ten pence. | Les sacs de caisse coûtent dix pence.
+payment | paiement | n | B1 | /ˈpeɪmənt/ | Payment is due on delivery. | Le paiement se fait à la livraison.
+coins | pièces de monnaie | n | A1 | /kɔɪnz/ | I have no coins for the machine. | Je n'ai pas de pièces pour la machine.
+instalments | versements échelonnés | n | B2 | /ɪnˈstɔːlmənts/ | You can pay in three instalments. | Vous pouvez payer en trois fois.
+good value | bon rapport qualité-prix | n | B1 | /ˌɡʊd ˈvæljuː/ | This coat is good value. | Ce manteau a un bon rapport qualité-prix.
+to shop online | acheter en ligne | expr | A2 | /ʃɒp ˌɒnˈlaɪn/ | I prefer to shop online. | Je préfère acheter en ligne.
+free delivery | livraison gratuite | n | A2 | /ˌfriː dɪˈlɪvəri/ | Free delivery on orders over fifty euros. | Livraison gratuite dès cinquante euros d'achat.
+next-day delivery | livraison en 24 heures | n | B1 | /ˌnekst deɪ dɪˈlɪvəri/ | We offer next-day delivery. | Nous proposons la livraison en 24 heures.
+tracking number | numéro de suivi | n | B1 | /ˈtrækɪŋ ˌnʌmbər/ | Enter your tracking number. | Saisis ton numéro de suivi.
+collection point | point relais | n | B1 | /kəˈlekʃn pɔɪnt/ | Pick up your parcel at the collection point. | Récupère ton colis au point relais.
+to unbox | déballer | v | B1 | /ʌnˈbɒks/ | He filmed himself unboxing the phone. | Il s'est filmé en train de déballer le téléphone.
+gift-wrapped | emballé (en cadeau) | adj | B2 | /ˈɡɪft ræpt/ | Would you like it gift-wrapped? | Voulez-vous un paquet cadeau ?
+stall | étal, stand | n | B1 | /stɔːl/ | My parents run a clothes stall at the market. | Mes parents tiennent un étal de vêtements au marché.
+stallholder | marchand (sur un marché) | n | B2 | /ˈstɔːlhəʊldər/ | The stallholder gave us a discount. | Le marchand nous a fait une remise.
+market trader | commerçant ambulant | n | B2 | /ˈmɑːkɪt ˌtreɪdər/ | Market traders get up at four. | Les commerçants des marchés se lèvent à quatre heures.
+vendor | vendeur, marchand | n | B2 | /ˈvendər/ | A street vendor sold us corn. | Un vendeur ambulant nous a vendu du maïs.
+retailer | détaillant | n | C1 | /ˈriːteɪlər/ | The retailer cut its prices. | Le détaillant a baissé ses prix.
+wholesaler | grossiste | n | C1 | /ˈhəʊlseɪlər/ | We buy our stock from a wholesaler. | Nous achetons notre stock chez un grossiste.
+chain store | magasin de chaîne | n | B2 | /ˈtʃeɪn stɔːr/ | Chain stores replaced small shops. | Les chaînes ont remplacé les petits commerces.
+brand name | nom de marque | n | B1 | /ˈbrænd neɪm/ | Brand names are more expensive. | Les produits de marque sont plus chers.
+logo | logo | n | A2 | /ˈləʊɡəʊ/ | The logo is on the front. | Le logo est sur le devant.
+own brand | marque de distributeur | n | B2 | /ˌəʊn ˈbrænd/ | Own-brand products are cheaper. | Les marques de distributeur sont moins chères.
+generic | générique | adj | C1 | /dʒəˈnerɪk/ | Buy the generic version. | Achète la version générique.
+knock-off | contrefaçon, imitation | n | C1 | /ˈnɒk ɒf/ | That bag is a cheap knock-off. | Ce sac est une imitation bon marché.
+high-end | haut de gamme | adj | B2 | /ˌhaɪ ˈend/ | They only sell high-end watches. | Ils ne vendent que des montres haut de gamme.
+pre-owned | d'occasion | adj | B2 | /ˌpriː ˈəʊnd/ | We bought a pre-owned car. | Nous avons acheté une voiture d'occasion.
+shopaholic | accro du shopping | n | B1 | /ˌʃɒpəˈhɒlɪk/ | My cousin is a shopaholic. | Ma cousine est accro au shopping.
+to splash out | faire une folie | v | B2 | /splæʃ ˈaʊt/ | We splashed out on a new sofa. | Nous avons fait une folie pour un nouveau canapé.
+shopping spree | virée shopping | n | B2 | /ˈʃɒpɪŋ spriː/ | She went on a shopping spree. | Elle a fait une virée shopping.
+to treat yourself | se faire plaisir | expr | B1 | /triːt jɔːˈself/ | Go on, treat yourself! | Vas-y, fais-toi plaisir !
+wishlist | liste d'envies | n | B1 | /ˈwɪʃlɪst/ | Add it to your wishlist. | Ajoute-le à ta liste d'envies.
+Black Friday | Black Friday | n | B1 | /ˌblæk ˈfraɪdeɪ/ | Shops were packed on Black Friday. | Les magasins étaient bondés pour le Black Friday.
+clearance sale | liquidation | n | B2 | /ˈklɪərəns seɪl/ | Everything is half price in the clearance sale. | Tout est à moitié prix pendant la liquidation.
+closing-down sale | liquidation avant fermeture | n | B2 | /ˌkləʊzɪŋ ˈdaʊn seɪl/ | The bookshop is having a closing-down sale. | La librairie fait sa liquidation avant fermeture.
+closing time | heure de fermeture | n | A2 | /ˈkləʊzɪŋ taɪm/ | Closing time is at eight. | La fermeture est à vingt heures.
+mannequin | mannequin (de vitrine) | n | B2 | /ˈmænɪkɪn/ | The dress on the mannequin is lovely. | La robe sur le mannequin est jolie.
+alteration | retouche | n | B2 | /ˌɔːltəˈreɪʃn/ | The trousers need an alteration. | Le pantalon a besoin d'une retouche.
+dry cleaning | nettoyage à sec | n | B1 | /ˌdraɪ ˈkliːnɪŋ/ | I picked up my dry cleaning. | J'ai récupéré mon linge au pressing.
+helpdesk | service d'assistance | n | B1 | /ˈhelpdesk/ | Call the helpdesk if it doesn't work. | Appelle l'assistance si ça ne marche pas.
+hotline | ligne d'assistance | n | B1 | /ˈhɒtlaɪn/ | The hotline is open 24 hours a day. | La hotline est ouverte 24 heures sur 24.
+online review | avis en ligne | n | B1 | /ˌɒnlaɪn rɪˈvjuː/ | Read the online reviews before buying. | Lis les avis en ligne avant d'acheter.
+to rate | noter, évaluer | v | B1 | /reɪt/ | Rate your purchase from one to five. | Note ton achat de un à cinq.
+rating | note, évaluation | n | B1 | /ˈreɪtɪŋ/ | The hotel has a high rating. | L'hôtel a une bonne note.
+star rating | classement par étoiles | n | B1 | /ˈstɑː ˌreɪtɪŋ/ | Check the star rating of the seller. | Regarde la note du vendeur.
+recommendation | recommandation | n | B2 | /ˌrekəmenˈdeɪʃn/ | I bought it on your recommendation. | Je l'ai acheté sur ta recommandation.
+buyer | acheteur | n | B1 | /ˈbaɪər/ | We found a buyer for the car. | Nous avons trouvé un acheteur pour la voiture.
+seller | vendeur | n | B1 | /ˈselər/ | Contact the seller directly. | Contacte directement le vendeur.
+price comparison | comparaison des prix | n | B2 | /ˈpraɪs kəmˌpærɪsn/ | Use a price comparison website. | Utilise un comparateur de prix.
+price range | gamme de prix | n | B2 | /ˈpraɪs reɪndʒ/ | What's your price range? | Quel est ton budget ?
+bulk buying | achat en gros | n | C1 | /ˌbʌlk ˈbaɪɪŋ/ | Bulk buying saves money. | Acheter en gros fait économiser.
+in bulk | en gros, en vrac | expr | B2 | /ɪn ˈbʌlk/ | We buy rice in bulk. | Nous achetons le riz en gros.
+multipack | lot (de plusieurs produits) | n | B2 | /ˈmʌltipæk/ | A multipack of yoghurts is cheaper. | Un lot de yaourts est moins cher.
+use-by date | date limite de consommation | n | B1 | /ˈjuːz baɪ deɪt/ | Check the use-by date on the milk. | Vérifie la date limite sur le lait.
+expiry date | date d'expiration | n | B1 | /ɪkˈspaɪəri deɪt/ | The card's expiry date has passed. | La date d'expiration de la carte est dépassée.
+shelf life | durée de conservation | n | C1 | /ˈʃelf laɪf/ | Fresh bread has a short shelf life. | Le pain frais se conserve peu de temps.
+Cyber Monday | Cyber Monday | n | B2 | /ˌsaɪbə ˈmʌndeɪ/ | Online shops cut prices on Cyber Monday. | Les boutiques en ligne baissent leurs prix pour le Cyber Monday.
+to window-shop | faire du lèche-vitrines | v | B1 | /ˈwɪndəʊ ʃɒp/ | We like to window-shop on Sundays. | Nous aimons faire du lèche-vitrines le dimanche.
 `,
 );

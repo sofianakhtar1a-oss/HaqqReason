@@ -192,5 +192,70 @@ straw | paille | n | A2 | /strɔː/ | Can I have a straw, please? | Je peux avoi
 napkin | serviette de table | n | A2 | /ˈnæpkɪn/ | Put a napkin on your lap. | Mets une serviette sur tes genoux.
 tablecloth | nappe | n | B1 | /ˈteɪblklɒθ/ | She spread a white tablecloth. | Elle a étendu une nappe blanche.
 chopsticks | baguettes | n | B1 | /ˈtʃɒpstɪks/ | Can you eat with chopsticks? | Sais-tu manger avec des baguettes ?
+ingredient | ingrédient | n | A2 | /ɪnˈɡriːdiənt/ | Mix all the ingredients together. | Mélange tous les ingrédients.
+to sauté | faire sauter | v | B2 | /ˈsəʊteɪ/ | Sauté the onions in olive oil. | Fais sauter les oignons à l'huile d'olive.
+to stir-fry | faire sauter au wok | v | B2 | /ˈstɜː fraɪ/ | Stir-fry the vegetables for three minutes. | Fais sauter les légumes au wok trois minutes.
+to mash | écraser, réduire en purée | v | B1 | /mæʃ/ | Mash the potatoes with butter. | Écrase les pommes de terre avec du beurre.
+to roll out | étaler (une pâte) | v | B2 | /rəʊl ˈaʊt/ | Roll out the dough on the table. | Étale la pâte sur la table.
+to strain | égoutter, filtrer | v | B2 | /streɪn/ | Strain the tea before serving. | Filtre le thé avant de servir.
+to sprinkle | saupoudrer | v | B2 | /ˈsprɪŋkl/ | Sprinkle sugar on the cake. | Saupoudre le gâteau de sucre.
+to defrost | décongeler | v | B1 | /ˌdiːˈfrɒst/ | Defrost the chicken overnight. | Décongèle le poulet pendant la nuit.
+to heat up | réchauffer | v | A2 | /hiːt ˈʌp/ | Heat up the soup for lunch. | Réchauffe la soupe pour le déjeuner.
+to gobble | engloutir | v | B2 | /ˈɡɒbl/ | Don't gobble your food! | N'engloutis pas ta nourriture !
+appetite | appétit | n | B1 | /ˈæpɪtaɪt/ | He has a good appetite. | Il a bon appétit.
+starving | affamé, mort de faim | adj | A2 | /ˈstɑːvɪŋ/ | I'm starving, let's eat! | Je meurs de faim, mangeons !
+yummy | miam, délicieux | adj | A1 | /ˈjʌmi/ | This cake is yummy! | Ce gâteau est trop bon !
+chewy | caoutchouteux, à mâcher | adj | B2 | /ˈtʃuːi/ | The meat is a bit chewy. | La viande est un peu caoutchouteuse.
+fatty | gras | adj | B1 | /ˈfæti/ | Avoid fatty food. | Évite les aliments gras.
+burnt | brûlé | adj | A2 | /bɜːnt/ | The toast is burnt. | Le pain grillé est brûlé.
+ready-made | tout prêt | adj | B1 | /ˌredi ˈmeɪd/ | I bought a ready-made meal. | J'ai acheté un plat tout prêt.
+junk food | malbouffe | n | B1 | /ˈdʒʌŋk fuːd/ | Junk food is bad for children. | La malbouffe est mauvaise pour les enfants.
+healthy food | nourriture saine | n | A2 | /ˌhelθi ˈfuːd/ | The canteen serves healthy food. | La cantine sert une nourriture saine.
+haram | illicite (haram) | adj | B1 | /həˈrɑːm/ | Pork is haram for Muslims. | Le porc est illicite pour les musulmans.
+kosher | casher | adj | B2 | /ˈkəʊʃər/ | The restaurant serves kosher food. | Le restaurant sert de la nourriture casher.
+lactose-free | sans lactose | adj | B2 | /ˌlæktəʊs ˈfriː/ | I buy lactose-free milk. | J'achète du lait sans lactose.
+dairy-free | sans produits laitiers | adj | B2 | /ˌdeəri ˈfriː/ | This cake is dairy-free. | Ce gâteau est sans produits laitiers.
+helping | portion | n | B2 | /ˈhelpɪŋ/ | Can I have another helping? | Je peux en reprendre ?
+saucer | soucoupe | n | B1 | /ˈsɔːsər/ | Put the cup on the saucer. | Pose la tasse sur la soucoupe.
+cutlery | couverts | n | B1 | /ˈkʌtləri/ | Put the cutlery in the drawer. | Range les couverts dans le tiroir.
+spatula | spatule | n | B1 | /ˈspætʃələ/ | Turn the pancake with a spatula. | Retourne la crêpe avec une spatule.
+peeler | économe, éplucheur | n | B1 | /ˈpiːlər/ | Use a peeler for the carrots. | Utilise un économe pour les carottes.
+grater | râpe | n | B1 | /ˈɡreɪtər/ | Grate the cheese with a grater. | Râpe le fromage avec une râpe.
+sieve | tamis, passoire fine | n | B1 | /sɪv/ | Pass the flour through a sieve. | Passe la farine au tamis.
+colander | passoire | n | B2 | /ˈkʌləndər/ | Drain the pasta in a colander. | Égoutte les pâtes dans une passoire.
+chopping board | planche à découper | n | A2 | /ˈtʃɒpɪŋ bɔːd/ | Cut the onions on a chopping board. | Coupe les oignons sur une planche à découper.
+rolling pin | rouleau à pâtisserie | n | B1 | /ˈrəʊlɪŋ pɪn/ | Flatten the dough with a rolling pin. | Aplatis la pâte au rouleau.
+wok | wok | n | B1 | /wɒk/ | Heat some oil in the wok. | Fais chauffer de l'huile dans le wok.
+casserole dish | cocotte, plat à four | n | B1 | /ˈkæsərəʊl dɪʃ/ | Put the meat in a casserole dish. | Mets la viande dans une cocotte.
+baking tray | plaque de cuisson | n | B1 | /ˈbeɪkɪŋ treɪ/ | Put the biscuits on a baking tray. | Mets les biscuits sur une plaque.
+oven glove | gant de cuisine | n | B1 | /ˈʌvn ɡlʌv/ | Use an oven glove, it's hot! | Prends un gant de cuisine, c'est chaud !
+placemat | set de table | n | B1 | /ˈpleɪsmæt/ | Put a placemat under each plate. | Mets un set sous chaque assiette.
+jug | carafe, pichet | n | A2 | /dʒʌɡ/ | Bring a jug of water. | Apporte une carafe d'eau.
+blender | mixeur | n | A2 | /ˈblendər/ | Make a smoothie in the blender. | Fais un smoothie au mixeur.
+food processor | robot de cuisine | n | B1 | /ˈfuːd ˌprəʊsesər/ | Chop the nuts in the food processor. | Hache les noix au robot.
+mixer | batteur, robot pâtissier | n | B1 | /ˈmɪksər/ | Beat the eggs with an electric mixer. | Bats les œufs au batteur électrique.
+to book a table | réserver une table | expr | A2 | /bʊk ə ˈteɪbl/ | I'd like to book a table for four. | Je voudrais réserver une table pour quatre.
+dish of the day | plat du jour | n | A2 | /ˌdɪʃ əv ðə ˈdeɪ/ | What's the dish of the day? | Quel est le plat du jour ?
+set menu | menu à prix fixe | n | B1 | /ˌset ˈmenjuː/ | The set menu costs twenty euros. | Le menu coûte vingt euros.
+à la carte | à la carte | adv | B2 | /ˌɑː lɑː ˈkɑːt/ | We ordered à la carte. | Nous avons commandé à la carte.
+potluck | repas partagé | n | B2 | /ˌpɒtˈlʌk/ | Everyone brings a dish to the potluck. | Chacun apporte un plat au repas partagé.
+to say grace | dire le bénédicité | expr | B2 | /seɪ ˈɡreɪs/ | They say grace before every meal. | Ils disent le bénédicité avant chaque repas.
+bismillah | bismillah (au nom de Dieu) | expr | B1 | /ˌbɪsmɪˈlɑː/ | He said "bismillah" before eating. | Il a dit « bismillah » avant de manger.
+bon appétit | bon appétit | expr | A1 | /ˌbɒn æpəˈtiː/ | Bon appétit, everyone! | Bon appétit à tous !
+peckish | qui a un petit creux | adj | B2 | /ˈpekɪʃ/ | I'm feeling a bit peckish. | J'ai un petit creux.
+to eat like a horse | manger comme quatre | expr | B2 | /iːt laɪk ə ˈhɔːs/ | Teenagers eat like a horse. | Les ados mangent comme quatre.
+to eat like a bird | manger comme un moineau | expr | B2 | /iːt laɪk ə ˈbɜːd/ | My sister eats like a bird. | Ma sœur mange comme un moineau.
+a piece of cake | du gâteau, un jeu d'enfant | expr | B1 | /ə ˌpiːs əv ˈkeɪk/ | The exam was a piece of cake. | L'examen était un jeu d'enfant.
+food for thought | matière à réflexion | expr | B2 | /ˌfuːd fə ˈθɔːt/ | His talk gave us food for thought. | Son intervention nous a donné matière à réflexion.
+to have a lot on your plate | avoir beaucoup à faire | expr | B2 | /hæv ə ˈlɒt ɒn jə ˈpleɪt/ | You have a lot on your plate this week. | Tu as beaucoup à faire cette semaine.
+full of beans | plein d'énergie | expr | C1 | /ˌfʊl əv ˈbiːnz/ | The kids are full of beans today. | Les enfants débordent d'énergie aujourd'hui.
+as cool as a cucumber | d'un calme olympien | expr | C1 | /əz ˌkuːl əz ə ˈkjuːkʌmbər/ | She stayed as cool as a cucumber. | Elle est restée d'un calme olympien.
+bread and butter | gagne-pain | expr | C1 | /ˌbred ən ˈbʌtər/ | Teaching is my bread and butter. | L'enseignement est mon gagne-pain.
+to go bananas | devenir fou | expr | B2 | /ɡəʊ bəˈnɑːnəz/ | The fans will go bananas. | Les supporters vont devenir fous.
+the big cheese | le grand patron | expr | C1 | /ðə ˌbɪɡ ˈtʃiːz/ | He's the big cheese in this company. | C'est le grand patron de cette entreprise.
+hard nut to crack | dur à cuire, casse-tête | expr | C1 | /ˌhɑːd ˌnʌt tə ˈkræk/ | He's a hard nut to crack. | C'est quelqu'un de difficile à convaincre.
+in a pickle | dans le pétrin | expr | C1 | /ɪn ə ˈpɪkl/ | We're in a pickle now. | Nous voilà dans le pétrin.
+to sugar-coat | enrober, édulcorer | v | C1 | /ˌʃʊɡə ˈkəʊt/ | Don't sugar-coat the truth. | N'édulcore pas la vérité.
+to stew in your own juice | mariner dans son jus | expr | C2 | /stjuː ɪn jər ˌəʊn ˈdʒuːs/ | Let him stew in his own juice. | Laisse-le mariner dans son jus.
 `,
 );

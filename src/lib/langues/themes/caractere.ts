@@ -151,5 +151,92 @@ steadfast | inébranlable | adj | C2 | /ˈstedfɑːst/ | She remained steadfast 
 conscientious | consciencieux | adj | C1 | /ˌkɒnʃiˈenʃəs/ | He is a conscientious student. | C'est un élève consciencieux.
 complacent | suffisant, trop sûr de soi | adj | C2 | /kəmˈpleɪsnt/ | Don't become complacent after one success. | Ne deviens pas trop sûr de toi après un succès.
 obstinate | obstiné | adj | C1 | /ˈɒbstɪnət/ | The obstinate child refused to eat. | L'enfant obstiné a refusé de manger.
+unfriendly | peu aimable, froid | adj | A2 | /ʌnˈfrendli/ | The waiter was unfriendly. | Le serveur était peu aimable.
+laid-back | décontracté, cool | adj | B2 | /ˌleɪd ˈbæk/ | My uncle is very laid-back. | Mon oncle est très décontracté.
+uptight | coincé, crispé | adj | B2 | /ʌpˈtaɪt/ | Don't be so uptight! | Ne sois pas si coincé !
+big-headed | prétentieux, qui a la grosse tête | adj | B2 | /ˌbɪɡ ˈhedɪd/ | He became big-headed after his success. | Il a pris la grosse tête après son succès.
+extrovert | extraverti | n | B2 | /ˈekstrəvɜːt/ | She's a real extrovert. | C'est une vraie extravertie.
+introvert | introverti | n | B2 | /ˈɪntrəvɜːt/ | As an introvert, I need quiet time. | En tant qu'introverti, j'ai besoin de calme.
+courageous | courageux | adj | B2 | /kəˈreɪdʒəs/ | It was a courageous decision. | C'était une décision courageuse.
+unreliable | peu fiable | adj | B2 | /ˌʌnrɪˈlaɪəbl/ | He's nice but unreliable. | Il est gentil mais on ne peut pas compter sur lui.
+disloyal | déloyal | adj | C1 | /dɪsˈlɔɪəl/ | It would be disloyal to tell. | Ce serait déloyal de le répéter.
+insincere | hypocrite, peu sincère | adj | C1 | /ˌɪnsɪnˈsɪər/ | His apology sounded insincere. | Ses excuses semblaient peu sincères.
+inconsiderate | irrespectueux, sans égards | adj | C1 | /ˌɪnkənˈsɪdərət/ | It's inconsiderate to play music so loud. | C'est irrespectueux de mettre la musique si fort.
+heartless | sans cœur | adj | B2 | /ˈhɑːtləs/ | How can you be so heartless? | Comment peux-tu être aussi sans cœur ?
+intolerant | intolérant | adj | C1 | /ɪnˈtɒlərənt/ | He is intolerant of other opinions. | Il ne tolère pas les autres opinions.
+strong-willed | volontaire, déterminé | adj | C1 | /ˌstrɒŋ ˈwɪld/ | She's a strong-willed child. | C'est une enfant qui a du caractère.
+headstrong | têtu, impétueux | adj | C1 | /ˈhedstrɒŋ/ | He was a headstrong young man. | C'était un jeune homme impétueux.
+adaptable | capable de s'adapter | adj | B2 | /əˈdæptəbl/ | Children are very adaptable. | Les enfants s'adaptent très bien.
+inquisitive | curieux, inquisiteur | adj | C1 | /ɪnˈkwɪzətɪv/ | She's an inquisitive little girl. | C'est une petite fille très curieuse.
+domineering | autoritaire, dominateur | adj | C1 | /ˌdɒmɪˈnɪərɪŋ/ | His father was domineering. | Son père était autoritaire.
+submissive | soumis | adj | C1 | /səbˈmɪsɪv/ | The dog became submissive. | Le chien est devenu soumis.
+quick-tempered | soupe au lait, colérique | adj | C1 | /ˌkwɪk ˈtempəd/ | He's quick-tempered but kind. | Il est soupe au lait mais gentil.
+annoying | agaçant, énervant | adj | A2 | /əˈnɔɪɪŋ/ | My little brother is so annoying! | Mon petit frère est trop énervant !
+tight-fisted | radin | adj | C1 | /ˌtaɪt ˈfɪstɪd/ | He's too tight-fisted to buy a round. | Il est trop radin pour offrir une tournée.
+hospitable | accueillant, hospitalier | adj | B2 | /hɒˈspɪtəbl/ | The villagers were very hospitable. | Les villageois étaient très accueillants.
+unhelpful | peu serviable | adj | B2 | /ʌnˈhelpfl/ | The staff were unhelpful. | Le personnel était peu serviable.
+diligent | appliqué, assidu | adj | C1 | /ˈdɪlɪdʒənt/ | She's a diligent student. | C'est une élève assidue.
+picky | difficile (pour manger) | adj | B2 | /ˈpɪki/ | My son is a picky eater. | Mon fils est difficile pour manger.
+demanding | exigeant | adj | B2 | /dɪˈmɑːndɪŋ/ | My boss is very demanding. | Mon patron est très exigeant.
+easy to please | facile à contenter | expr | B2 | /ˌiːzi tə ˈpliːz/ | My grandmother is easy to please. | Ma grand-mère est facile à contenter.
+quirky | original, excentrique | adj | C1 | /ˈkwɜːki/ | He has a quirky sense of humour. | Il a un humour décalé.
+odd | bizarre, étrange | adj | B1 | /ɒd/ | He's a bit odd. | Il est un peu bizarre.
+conventional | conformiste, conventionnel | adj | B2 | /kənˈvenʃənl/ | Her parents are very conventional. | Ses parents sont très conformistes.
+unconventional | non conformiste | adj | C1 | /ˌʌnkənˈvenʃənl/ | She has unconventional ideas. | Elle a des idées peu conventionnelles.
+principled | qui a des principes | adj | C1 | /ˈprɪnsəpld/ | He's a principled man. | C'est un homme de principes.
+unscrupulous | sans scrupules | adj | C1 | /ʌnˈskruːpjələs/ | An unscrupulous dealer cheated us. | Un marchand sans scrupules nous a escroqués.
+ruthless | impitoyable | adj | C1 | /ˈruːθləs/ | The ruthless leader crushed all opposition. | Le dirigeant impitoyable a écrasé toute opposition.
+devious | retors, sournois | adj | C1 | /ˈdiːviəs/ | He used devious methods. | Il a employé des méthodes sournoises.
+shrewd | perspicace, avisé | adj | C1 | /ʃruːd/ | She's a shrewd businesswoman. | C'est une femme d'affaires avisée.
+astute | astucieux, fin | adj | C2 | /əˈstjuːt/ | It was an astute move. | C'était un coup habile.
+perceptive | perspicace, fin | adj | C1 | /pəˈseptɪv/ | Children are very perceptive. | Les enfants sont très perspicaces.
+intuitive | intuitif | adj | C1 | /ɪnˈtjuːɪtɪv/ | She's very intuitive with people. | Elle est très intuitive avec les gens.
+malicious | malveillant | adj | C1 | /məˈlɪʃəs/ | It was a malicious rumour. | C'était une rumeur malveillante.
+vindictive | rancunier, vindicatif | adj | C2 | /vɪnˈdɪktɪv/ | Don't be vindictive. | Ne sois pas rancunier.
+forgiving | indulgent, qui pardonne | adj | B2 | /fəˈɡɪvɪŋ/ | My mother is very forgiving. | Ma mère pardonne facilement.
+ungrateful | ingrat | adj | B2 | /ʌnˈɡreɪtfl/ | Don't be ungrateful. | Ne sois pas ingrat.
+self-centred | égocentrique | adj | C1 | /ˌself ˈsentəd/ | He's too self-centred to listen. | Il est trop égocentrique pour écouter.
+egotistical | égocentrique, égotiste | adj | C2 | /ˌeɡəˈtɪstɪkl/ | The egotistical star ignored his fans. | La star égocentrique ignorait ses fans.
+narcissistic | narcissique | adj | C1 | /ˌnɑːsɪˈsɪstɪk/ | He's narcissistic and vain. | Il est narcissique et vaniteux.
+conceited | vaniteux, suffisant | adj | C1 | /kənˈsiːtɪd/ | She's clever but conceited. | Elle est intelligente mais suffisante.
+pompous | pompeux, prétentieux | adj | C1 | /ˈpɒmpəs/ | He gave a pompous speech. | Il a fait un discours pompeux.
+smug | suffisant, content de soi | adj | C1 | /smʌɡ/ | Wipe that smug smile off your face. | Arrête de faire ce sourire suffisant.
+self-righteous | moralisateur, pharisien | adj | C2 | /ˌself ˈraɪtʃəs/ | I hate his self-righteous tone. | Je déteste son ton moralisateur.
+sanctimonious | moralisateur, bigot | adj | C2 | /ˌsæŋktɪˈməʊniəs/ | He's so sanctimonious about it. | Il est si moralisateur à ce sujet.
+devout | pieux, dévot | adj | C1 | /dɪˈvaʊt/ | Her grandmother was a devout woman. | Sa grand-mère était une femme pieuse.
+resilient | résilient, endurant | adj | C1 | /rɪˈzɪliənt/ | Children are remarkably resilient. | Les enfants sont remarquablement résilients.
+tenacious | tenace | adj | C1 | /təˈneɪʃəs/ | She's a tenacious journalist. | C'est une journaliste tenace.
+persevering | persévérant | adj | C1 | /ˌpɜːsɪˈvɪərɪŋ/ | He's a persevering student. | C'est un élève persévérant.
+stoic | stoïque | adj | C1 | /ˈstəʊɪk/ | She remained stoic through the pain. | Elle est restée stoïque face à la douleur.
+phlegmatic | flegmatique | adj | C2 | /fleɡˈmætɪk/ | The English are said to be phlegmatic. | On dit les Anglais flegmatiques.
+sanguine | optimiste, confiant | adj | C2 | /ˈsæŋɡwɪn/ | He is sanguine about the future. | Il est optimiste quant à l'avenir.
+melancholic | mélancolique | adj | C1 | /ˌmelənˈkɒlɪk/ | He has a melancholic temperament. | Il a un tempérament mélancolique.
+choleric | colérique | adj | C2 | /ˈkɒlərɪk/ | The old general was choleric. | Le vieux général était colérique.
+placid | placide, calme | adj | C1 | /ˈplæsɪd/ | The baby is very placid. | Le bébé est très calme.
+volatile | instable, lunatique | adj | C1 | /ˈvɒlətaɪl/ | He has a volatile temper. | Il a un caractère instable.
+erratic | imprévisible, irrégulier | adj | C1 | /ɪˈrætɪk/ | His behaviour became erratic. | Son comportement est devenu imprévisible.
+temperamental | lunatique, capricieux | adj | C1 | /ˌtemprəˈmentl/ | The star is known to be temperamental. | La star est connue pour être lunatique.
+capricious | capricieux | adj | C2 | /kəˈprɪʃəs/ | The king was capricious and cruel. | Le roi était capricieux et cruel.
+fickle | inconstant, versatile | adj | C1 | /ˈfɪkl/ | Fans can be fickle. | Les fans peuvent être versatiles.
+earnest | sérieux, sincère | adj | C1 | /ˈɜːnɪst/ | He's an earnest young man. | C'est un jeune homme sérieux.
+outspoken | franc, qui a son franc-parler | adj | C1 | /aʊtˈspəʊkən/ | She's an outspoken critic of the plan. | Elle critique ouvertement le projet.
+indiscreet | indiscret | adj | C1 | /ˌɪndɪˈskriːt/ | It was indiscreet of you to tell her. | C'était indiscret de ta part de le lui dire.
+secretive | cachottier, secret | adj | B2 | /ˈsiːkrətɪv/ | He's very secretive about his job. | Il est très secret sur son travail.
+gregarious | sociable, grégaire | adj | C2 | /ɡrɪˈɡeəriəs/ | She's a gregarious person who loves parties. | C'est une personne sociable qui adore les fêtes.
+aloof | distant | adj | C1 | /əˈluːf/ | He seemed aloof at first. | Il semblait distant au début.
+standoffish | distant, froid | adj | C1 | /ˌstændˈɒfɪʃ/ | The new neighbours are a bit standoffish. | Les nouveaux voisins sont un peu distants.
+approachable | abordable, accessible | adj | B2 | /əˈprəʊtʃəbl/ | Our teacher is very approachable. | Notre professeur est très accessible.
+affable | affable, aimable | adj | C2 | /ˈæfəbl/ | He's an affable host. | C'est un hôte affable.
+amiable | aimable, sympathique | adj | C1 | /ˈeɪmiəbl/ | She's an amiable colleague. | C'est une collègue aimable.
+genial | cordial, jovial | adj | C2 | /ˈdʒiːniəl/ | Our host was genial and warm. | Notre hôte était jovial et chaleureux.
+cordial | cordial | adj | C1 | /ˈkɔːdiəl/ | The meeting was cordial. | La rencontre a été cordiale.
+gracious | aimable, gracieux | adj | C1 | /ˈɡreɪʃəs/ | She was gracious in defeat. | Elle a été digne dans la défaite.
+boorish | rustre, grossier | adj | C2 | /ˈbʊərɪʃ/ | His boorish behaviour shocked everyone. | Son comportement de rustre a choqué tout le monde.
+uncouth | fruste, grossier | adj | C2 | /ʌnˈkuːθ/ | He's loud and uncouth. | Il est bruyant et fruste.
+refined | raffiné | adj | C1 | /rɪˈfaɪnd/ | She has refined tastes. | Elle a des goûts raffinés.
+sophisticated | raffiné, sophistiqué | adj | B2 | /səˈfɪstɪkeɪtɪd/ | He's a sophisticated man. | C'est un homme raffiné.
+cultured | cultivé | adj | C1 | /ˈkʌltʃəd/ | She's a cultured woman. | C'est une femme cultivée.
+well-read | cultivé, qui a beaucoup lu | adj | C1 | /ˌwel ˈred/ | My grandfather was very well-read. | Mon grand-père avait beaucoup lu.
+erudite | érudit | adj | C2 | /ˈerudaɪt/ | He's an erudite scholar of Arabic. | C'est un érudit spécialiste de l'arabe.
 `,
 );

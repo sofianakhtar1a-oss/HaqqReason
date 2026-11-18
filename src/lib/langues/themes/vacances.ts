@@ -144,5 +144,85 @@ fully booked | complet | adj | B1 | /ˌfʊli ˈbʊkt/ | The hotel is fully booke
 holiday season | période des fêtes | n | B1 | /ˈhɒlədeɪ ˌsiːzn/ | Shops are busy in the holiday season. | Les magasins sont bondés pendant les fêtes.
 travel bag | sac de voyage | n | A2 | /ˈtrævl bæɡ/ | Pack your travel bag the night before. | Prépare ton sac de voyage la veille.
 holiday resort | station balnéaire | n | B1 | /ˈhɒlədeɪ rɪˌzɔːt/ | The holiday resort is crowded in August. | La station balnéaire est bondée en août.
+vacation | vacances (US) | n | A2 | /vəˈkeɪʃn/ | We went on vacation to Florida. | Nous sommes partis en vacances en Floride.
+summer holiday | vacances d'été | n | A1 | /ˌsʌmə ˈhɒlədeɪ/ | Where are you going for the summer holiday? | Où pars-tu pour les vacances d'été ?
+half-term | vacances de mi-trimestre | n | B1 | /ˌhɑːf ˈtɜːm/ | We'll visit Granny at half-term. | Nous irons voir Mamie pendant les petites vacances.
+seaside resort | station balnéaire | n | B1 | /ˈsiːsaɪd rɪˌzɔːt/ | Brighton is a famous seaside resort. | Brighton est une station balnéaire célèbre.
+ski resort | station de ski | n | A2 | /ˈskiː rɪˌzɔːt/ | The ski resort opens in December. | La station de ski ouvre en décembre.
+sunbathing | bain de soleil | n | A2 | /ˈsʌnbeɪðɪŋ/ | Sunbathing at noon is dangerous. | Se faire bronzer à midi est dangereux.
+sun cream | crème solaire | n | A2 | /ˈsʌn kriːm/ | Put on some sun cream. | Mets de la crème solaire.
+bikini | bikini | n | A2 | /bɪˈkiːni/ | She bought a new bikini. | Elle a acheté un nouveau bikini.
+trunks | maillot de bain (homme) | n | A2 | /trʌŋks/ | I forgot my swimming trunks. | J'ai oublié mon maillot de bain.
+parasol | parasol | n | A2 | /ˈpærəsɒl/ | We sat under a parasol. | Nous nous sommes assis sous un parasol.
+bucket and spade | seau et pelle | n | A1 | /ˌbʌkɪt ən ˈspeɪd/ | The kids took their bucket and spade to the beach. | Les enfants ont pris leur seau et leur pelle pour la plage.
+sandals | sandales | n | A1 | /ˈsændlz/ | Wear sandals on the beach. | Mets des sandales sur la plage.
+snorkelling | randonnée palmée, snorkeling | n | B1 | /ˈsnɔːkəlɪŋ/ | We went snorkelling in the Red Sea. | Nous avons fait du snorkeling dans la mer Rouge.
+windsurfing | planche à voile | n | B1 | /ˈwɪndsɜːfɪŋ/ | He learned windsurfing in Brittany. | Il a appris la planche à voile en Bretagne.
+kitesurfing | kitesurf | n | B1 | /ˈkaɪtsɜːfɪŋ/ | Kitesurfing needs strong wind. | Le kitesurf demande un vent fort.
+jet ski | scooter des mers | n | B1 | /ˈdʒet skiː/ | We rented a jet ski. | Nous avons loué un scooter des mers.
+pedalo | pédalo | n | A2 | /ˈpedələʊ/ | Let's hire a pedalo. | Louons un pédalo.
+kayak | kayak | n | A2 | /ˈkaɪæk/ | We paddled a kayak along the coast. | Nous avons longé la côte en kayak.
+suntan | bronzage | n | B1 | /ˈsʌntæn/ | She came back with a nice suntan. | Elle est revenue bien bronzée.
+to get a tan | bronzer | expr | A2 | /ɡet ə ˈtæn/ | I want to get a tan this summer. | Je veux bronzer cet été.
+camping stove | réchaud de camping | n | B1 | /ˈkæmpɪŋ stəʊv/ | We cooked on a camping stove. | Nous avons cuisiné sur un réchaud.
+motorhome | camping-car | n | B1 | /ˈməʊtəhəʊm/ | They toured Spain in a motorhome. | Ils ont fait le tour de l'Espagne en camping-car.
+trek | randonnée (longue) | n | B2 | /trek/ | The trek took five days. | La randonnée a duré cinq jours.
+trekking | trekking, randonnée | n | B1 | /ˈtrekɪŋ/ | We went trekking in Nepal. | Nous avons fait du trekking au Népal.
+chairlift | télésiège | n | B1 | /ˈtʃeəlɪft/ | Take the chairlift to the top. | Prends le télésiège jusqu'en haut.
+piste | piste (de ski) | n | B2 | /piːst/ | This piste is for beginners. | Cette piste est pour les débutants.
+sledging | luge (activité) | n | A2 | /ˈsledʒɪŋ/ | The children went sledging. | Les enfants ont fait de la luge.
+cable car | téléphérique | n | B1 | /ˈkeɪbl kɑːr/ | The cable car goes up the mountain. | Le téléphérique monte la montagne.
+second home | résidence secondaire | n | B2 | /ˌsekənd ˈhəʊm/ | They have a second home in Spain. | Ils ont une résidence secondaire en Espagne.
+timeshare | multipropriété | n | C1 | /ˈtaɪmʃeər/ | They own a timeshare in Portugal. | Ils ont une multipropriété au Portugal.
+cruise ship | paquebot de croisière | n | B1 | /ˈkruːz ʃɪp/ | The cruise ship docked in Naples. | Le paquebot a accosté à Naples.
+relaxation | détente | n | B1 | /ˌriːlækˈseɪʃn/ | We need some relaxation. | Nous avons besoin de détente.
+short break | court séjour | n | B1 | /ˌʃɔːt ˈbreɪk/ | We booked a short break in Rome. | Nous avons réservé un court séjour à Rome.
+to get away from it all | décrocher de tout | expr | B2 | /ɡet əˌweɪ frəm ɪt ˈɔːl/ | We went to the mountains to get away from it all. | Nous sommes partis à la montagne pour décrocher de tout.
+to recharge your batteries | recharger ses batteries | expr | B2 | /riːˈtʃɑːdʒ jə ˈbætəriz/ | A week by the sea will recharge your batteries. | Une semaine à la mer te rechargera les batteries.
+to soak up the sun | lézarder au soleil | expr | B2 | /səʊk ʌp ðə ˈsʌn/ | We just want to soak up the sun. | Nous voulons juste profiter du soleil.
+to go abroad | partir à l'étranger | expr | A2 | /ɡəʊ əˈbrɔːd/ | We go abroad every summer. | Nous partons à l'étranger chaque été.
+to book a holiday | réserver des vacances | expr | A2 | /bʊk ə ˈhɒlədeɪ/ | It's time to book a holiday. | Il est temps de réserver des vacances.
+travel brochure | brochure de voyage | n | B1 | /ˈtrævl ˌbrəʊʃər/ | We looked at travel brochures. | Nous avons feuilleté des brochures de voyage.
+holiday rep | représentant (voyagiste) | n | B2 | /ˈhɒlədeɪ rep/ | The holiday rep met us at the airport. | Le représentant de l'agence nous a accueillis à l'aéroport.
+tour operator | voyagiste | n | B2 | /ˈtʊər ˌɒpəreɪtər/ | The tour operator cancelled the trip. | Le voyagiste a annulé le voyage.
+packing list | liste de bagages | n | A2 | /ˈpækɪŋ lɪst/ | I made a packing list. | J'ai fait une liste de choses à emporter.
+holiday snaps | photos de vacances | n | B1 | /ˈhɒlədeɪ snæps/ | Show me your holiday snaps! | Montre-moi tes photos de vacances !
+selfie stick | perche à selfie | n | A2 | /ˈselfi stɪk/ | Selfie sticks are banned in the museum. | Les perches à selfie sont interdites au musée.
+holiday club | club de vacances | n | A2 | /ˈhɒlədeɪ klʌb/ | The kids loved the holiday club. | Les enfants ont adoré le club de vacances.
+ice-cream van | camion de glaces | n | A2 | /ˌaɪs ˈkriːm væn/ | The ice-cream van plays music. | Le camion de glaces joue de la musique.
+beach bar | bar de plage, paillote | n | A2 | /ˈbiːtʃ bɑːr/ | We had a juice at the beach bar. | Nous avons pris un jus à la paillote.
+beach hut | cabine de plage | n | B1 | /ˈbiːtʃ hʌt/ | They rent a beach hut every summer. | Ils louent une cabine de plage chaque été.
+island hopping | tour des îles | n | B2 | /ˈaɪlənd ˌhɒpɪŋ/ | We went island hopping in Greece. | Nous avons fait le tour des îles en Grèce.
+rock climbing | escalade | n | B1 | /ˈrɒk ˌklaɪmɪŋ/ | Rock climbing is my new hobby. | L'escalade est mon nouveau loisir.
+abseiling | descente en rappel | n | B2 | /ˈæbseɪlɪŋ/ | We tried abseiling down a cliff. | Nous avons tenté la descente en rappel d'une falaise.
+zip line | tyrolienne | n | B1 | /ˈzɪp laɪn/ | The zip line crosses the valley. | La tyrolienne traverse la vallée.
+hang-gliding | deltaplane | n | B2 | /ˈhæŋ ˌɡlaɪdɪŋ/ | He went hang-gliding over the bay. | Il a fait du deltaplane au-dessus de la baie.
+pony trekking | randonnée à poney | n | B1 | /ˈpəʊni ˌtrekɪŋ/ | The children went pony trekking. | Les enfants ont fait une balade à poney.
+cycling holiday | vacances à vélo | n | B1 | /ˈsaɪklɪŋ ˌhɒlədeɪ/ | We went on a cycling holiday along the Loire. | Nous avons fait des vacances à vélo le long de la Loire.
+carnival | carnaval | n | A2 | /ˈkɑːnɪvl/ | We saw the carnival in Rio. | Nous avons vu le carnaval de Rio.
+fireworks | feu d'artifice | n | A2 | /ˈfaɪəwɜːks/ | We watched the fireworks on the beach. | Nous avons regardé le feu d'artifice sur la plage.
+bar | bar | n | A1 | /bɑːr/ | The hotel has a bar by the pool. | L'hôtel a un bar près de la piscine.
+wellness | bien-être | n | B2 | /ˈwelnəs/ | The hotel has a wellness centre. | L'hôtel a un centre de bien-être.
+massage | massage | n | A2 | /ˈmæsɑːʒ/ | I booked a massage at the spa. | J'ai réservé un massage au spa.
+sauna | sauna | n | A2 | /ˈsɔːnə/ | We relaxed in the sauna. | Nous nous sommes détendus au sauna.
+hammam | hammam | n | B1 | /həˈmɑːm/ | We went to a hammam in Fez. | Nous sommes allés au hammam à Fès.
+hot tub | jacuzzi, bain à remous | n | B1 | /ˌhɒt ˈtʌb/ | The chalet has a hot tub. | Le chalet a un jacuzzi.
+pool | piscine | n | A1 | /puːl/ | The kids are in the pool. | Les enfants sont dans la piscine.
+infinity pool | piscine à débordement | n | B2 | /ɪnˈfɪnəti puːl/ | The hotel has an infinity pool. | L'hôtel a une piscine à débordement.
+lounger | transat | n | B1 | /ˈlaʊndʒər/ | All the loungers were taken. | Tous les transats étaient pris.
+poolside | bord de piscine | n | B1 | /ˈpuːlsaɪd/ | We had lunch at the poolside. | Nous avons déjeuné au bord de la piscine.
+room with a view | chambre avec vue | n | A2 | /ˌruːm wɪð ə ˈvjuː/ | We asked for a room with a view. | Nous avons demandé une chambre avec vue.
+early check-in | arrivée anticipée | n | B1 | /ˌɜːli ˈtʃek ɪn/ | Can we have an early check-in? | Pouvons-nous arriver plus tôt ?
+late check-out | départ tardif | n | B1 | /ˌleɪt ˈtʃek aʊt/ | We asked for a late check-out. | Nous avons demandé un départ tardif.
+minibar | minibar | n | A2 | /ˈmɪnibɑːr/ | Drinks from the minibar are expensive. | Les boissons du minibar sont chères.
+do not disturb | ne pas déranger | expr | A2 | /ˌduː nɒt dɪˈstɜːb/ | Hang the "do not disturb" sign on the door. | Accroche le panneau « ne pas déranger » à la porte.
+concierge | concierge (d'hôtel) | n | B2 | /ˈkɒnsieəʒ/ | The concierge booked us a table. | Le concierge nous a réservé une table.
+porter | porteur, bagagiste | n | B1 | /ˈpɔːtər/ | The porter carried our bags. | Le bagagiste a porté nos sacs.
+bellboy | groom | n | B2 | /ˈbelbɔɪ/ | The bellboy showed us to our room. | Le groom nous a conduits à notre chambre.
+insect repellent | produit anti-moustiques | n | B1 | /ˈɪnsekt rɪˌpelənt/ | Don't forget the insect repellent. | N'oublie pas l'anti-moustiques.
+mosquito net | moustiquaire | n | B1 | /məˈskiːtəʊ net/ | Sleep under a mosquito net. | Dors sous une moustiquaire.
+holiday blues | déprime de la rentrée | n | B2 | /ˈhɒlədeɪ bluːz/ | Everyone gets the holiday blues in September. | Tout le monde a le blues de la rentrée en septembre.
+back to school | la rentrée | expr | A2 | /ˌbæk tə ˈskuːl/ | The shops are full of back to school offers. | Les magasins sont pleins d'offres pour la rentrée.
+back to work | retour au travail | expr | A2 | /ˌbæk tə ˈwɜːk/ | It's back to work on Monday. | Retour au travail lundi.
 `,
 );

@@ -117,5 +117,125 @@ overpopulation | surpopulation | n | C1 | /ˌəʊvəˌpɒpjuˈleɪʃn/ | Overpop
 environmental impact | impact environnemental | n | C1 | /ɪnˌvaɪrənˌmentl ˈɪmpækt/ | Every product has an environmental impact. | Chaque produit a un impact environnemental.
 green belt | ceinture verte | n | C1 | /ˈɡriːn belt/ | Building on the green belt is forbidden. | Il est interdit de construire sur la ceinture verte.
 greenwashing | écoblanchiment | n | C2 | /ˈɡriːnwɒʃɪŋ/ | The advert was pure greenwashing. | La publicité relevait du pur écoblanchiment.
+garbage | ordures | n | A2 | /ˈɡɑːbɪdʒ/ | Take the garbage out, please. | Sors les ordures, s'il te plaît.
+trash | déchets, poubelle | n | A2 | /træʃ/ | Don't throw trash on the ground. | Ne jette pas de déchets par terre.
+plastic | plastique | n | A2 | /ˈplæstɪk/ | The bottle is made of plastic. | La bouteille est en plastique.
+plastic bag | sac plastique | n | A2 | /ˌplæstɪk ˈbæɡ/ | Plastic bags are banned in many shops. | Les sacs plastiques sont interdits dans beaucoup de magasins.
+carbon dioxide | dioxyde de carbone | n | B2 | /ˌkɑːbən daɪˈɒksaɪd/ | Cars release carbon dioxide. | Les voitures rejettent du dioxyde de carbone.
+ozone | ozone | n | B2 | /ˈəʊzəʊn/ | Ozone protects us from the sun. | L'ozone nous protège du soleil.
+erosion | érosion | n | B2 | /ɪˈrəʊʒn/ | Trees help to prevent erosion. | Les arbres aident à empêcher l'érosion.
+fine particles | particules fines | n | C1 | /ˌfaɪn ˈpɑːtɪklz/ | Diesel engines emit fine particles. | Les moteurs diesel émettent des particules fines.
+industrial waste | déchets industriels | n | B2 | /ɪnˌdʌstriəl ˈweɪst/ | Industrial waste was dumped in the river. | Des déchets industriels ont été déversés dans la rivière.
+hazardous waste | déchets dangereux | n | C1 | /ˌhæzədəs ˈweɪst/ | Batteries are hazardous waste. | Les piles sont des déchets dangereux.
+nuclear waste | déchets nucléaires | n | B2 | /ˌnjuːkliə ˈweɪst/ | Nuclear waste stays dangerous for centuries. | Les déchets nucléaires restent dangereux pendant des siècles.
+radiation | rayonnement, radiations | n | B2 | /ˌreɪdiˈeɪʃn/ | Radiation levels are being checked. | Les niveaux de radiation sont contrôlés.
+illegal dumping | dépôt sauvage | n | C1 | /ɪˌliːɡl ˈdʌmpɪŋ/ | Illegal dumping is fined heavily. | Les dépôts sauvages sont lourdement sanctionnés.
+to incinerate | incinérer | v | C1 | /ɪnˈsɪnəreɪt/ | The city incinerates its rubbish. | La ville incinère ses déchets.
+disposal | élimination (des déchets) | n | C1 | /dɪˈspəʊzl/ | Waste disposal is expensive. | L'élimination des déchets coûte cher.
+refill | recharge | n | B1 | /ˈriːfɪl/ | Buy a refill instead of a new bottle. | Achète une recharge plutôt qu'une nouvelle bouteille.
+upcycling | surcyclage | n | C1 | /ˈʌpsaɪklɪŋ/ | Upcycling turns old things into new ones. | Le surcyclage transforme les vieux objets en neufs.
+sustainability | durabilité | n | C1 | /səˌsteɪnəˈbɪləti/ | Sustainability is our priority. | La durabilité est notre priorité.
+environmentally friendly | respectueux de l'environnement | adj | B2 | /ɪnˌvaɪrənˌmentəli ˈfrendli/ | Buy environmentally friendly products. | Achète des produits respectueux de l'environnement.
+preservation | préservation | n | C1 | /ˌprezəˈveɪʃn/ | The preservation of forests is vital. | La préservation des forêts est vitale.
+protection | protection | n | B1 | /prəˈtekʃn/ | Nature needs protection. | La nature a besoin de protection.
+footprint | empreinte | n | B2 | /ˈfʊtprɪnt/ | Reduce your environmental footprint. | Réduis ton empreinte environnementale.
+carbon offset | compensation carbone | n | C1 | /ˈkɑːbən ˌɒfset/ | The airline sells carbon offsets. | La compagnie aérienne vend de la compensation carbone.
+net zero | zéro émission nette | n | C1 | /ˌnet ˈzɪərəʊ/ | The country aims for net zero by 2050. | Le pays vise la neutralité carbone en 2050.
+cleanliness | propreté | n | B2 | /ˈklenlinəs/ | The town is known for its cleanliness. | La ville est connue pour sa propreté.
+filth | crasse, saleté | n | C1 | /fɪlθ/ | The river was full of filth. | La rivière était pleine de saletés.
+ash | cendre | n | B1 | /æʃ/ | The volcano covered the town in ash. | Le volcan a recouvert la ville de cendres.
+polluter pays | principe du pollueur-payeur | expr | C1 | /pəˌluːtə ˈpeɪz/ | The law follows the polluter pays principle. | La loi suit le principe du pollueur-payeur.
+eco-tax | écotaxe | n | C1 | /ˈiːkəʊ tæks/ | An eco-tax was added to flights. | Une écotaxe a été ajoutée sur les vols.
+overconsumption | surconsommation | n | C1 | /ˌəʊvəkənˈsʌmpʃn/ | Overconsumption harms the planet. | La surconsommation nuit à la planète.
+smog alert | alerte à la pollution | n | B2 | /ˈsmɒɡ əˌlɜːt/ | Paris issued a smog alert. | Paris a lancé une alerte à la pollution.
+algae | algues | n | B2 | /ˈældʒiː/ | Green algae covered the beach. | Des algues vertes recouvraient la plage.
+algal bloom | prolifération d'algues | n | C2 | /ˌælɡl ˈbluːm/ | An algal bloom killed the fish. | Une prolifération d'algues a tué les poissons.
+dead zone | zone morte | n | C1 | /ˈded zəʊn/ | The gulf has a huge dead zone. | Le golfe a une immense zone morte.
+leachate | lixiviat | n | C2 | /ˈliːtʃeɪt/ | Leachate from the landfill polluted the soil. | Le lixiviat de la décharge a pollué le sol.
+benzene | benzène | n | C2 | /ˈbenziːn/ | Benzene is found in petrol fumes. | On trouve du benzène dans les vapeurs d'essence.
+acidification | acidification | n | C2 | /əˌsɪdɪfɪˈkeɪʃn/ | Acidification threatens shellfish. | L'acidification menace les coquillages.
+ocean acidification | acidification des océans | n | C2 | /ˌəʊʃn əˌsɪdɪfɪˈkeɪʃn/ | Ocean acidification damages coral reefs. | L'acidification des océans abîme les récifs coralliens.
+coral bleaching | blanchissement des coraux | n | C1 | /ˌkɒrəl ˈbliːtʃɪŋ/ | Warm water causes coral bleaching. | L'eau chaude provoque le blanchissement des coraux.
+melting ice caps | fonte des calottes glaciaires | n | B2 | /ˌmeltɪŋ ˈaɪs kæps/ | Melting ice caps raise sea levels. | La fonte des calottes glaciaires fait monter le niveau des mers.
+sea level rise | montée du niveau de la mer | n | B2 | /ˈsiː levl raɪz/ | Sea level rise threatens coastal towns. | La montée des eaux menace les villes côtières.
+rewilding | réensauvagement | n | C2 | /riːˈwaɪldɪŋ/ | Rewilding brought back the wolves. | Le réensauvagement a fait revenir les loups.
+reforestation | reboisement | n | C1 | /ˌriːfɒrɪˈsteɪʃn/ | Reforestation creates new forests. | Le reboisement crée de nouvelles forêts.
+afforestation | boisement | n | C2 | /æˌfɒrɪˈsteɪʃn/ | Afforestation can absorb carbon. | Le boisement peut absorber le carbone.
+wetland | zone humide | n | C1 | /ˈwetlənd/ | Birds nest in the wetland. | Les oiseaux nichent dans la zone humide.
+mangrove | mangrove | n | C1 | /ˈmæŋɡrəʊv/ | Mangroves protect the coast. | Les mangroves protègent la côte.
+degradation | dégradation | n | C1 | /ˌdeɡrəˈdeɪʃn/ | Soil degradation reduces harvests. | La dégradation des sols réduit les récoltes.
+depletion | épuisement | n | C1 | /dɪˈpliːʃn/ | The depletion of fish stocks worries scientists. | L'épuisement des stocks de poissons inquiète les scientifiques.
+air purifier | purificateur d'air | n | B2 | /ˈeə ˌpjʊərɪfaɪər/ | We bought an air purifier for the bedroom. | Nous avons acheté un purificateur d'air pour la chambre.
+catalytic converter | pot catalytique | n | C1 | /ˌkætəlɪtɪk kənˈvɜːtər/ | The catalytic converter reduces emissions. | Le pot catalytique réduit les émissions.
+unleaded | sans plomb | adj | B2 | /ʌnˈledɪd/ | Fill it up with unleaded, please. | Le plein de sans plomb, s'il vous plaît.
+carbon capture | captage du carbone | n | C2 | /ˈkɑːbən ˌkæptʃər/ | Carbon capture is still expensive. | Le captage du carbone coûte encore cher.
+carbon tax | taxe carbone | n | C1 | /ˈkɑːbən tæks/ | The carbon tax raised fuel prices. | La taxe carbone a fait monter le prix du carburant.
+emissions trading | échange de quotas d'émission | n | C2 | /ɪˈmɪʃnz ˌtreɪdɪŋ/ | Emissions trading puts a price on pollution. | L'échange de quotas d'émission donne un prix à la pollution.
+climate refugee | réfugié climatique | n | C1 | /ˈklaɪmət refjuˌdʒiː/ | Rising seas create climate refugees. | La montée des eaux crée des réfugiés climatiques.
+tipping point | point de basculement | n | C1 | /ˈtɪpɪŋ pɔɪnt/ | The climate may reach a tipping point. | Le climat pourrait atteindre un point de basculement.
+permafrost | pergélisol | n | C2 | /ˈpɜːməfrɒst/ | Melting permafrost releases methane. | La fonte du pergélisol libère du méthane.
+ice sheet | inlandsis, calotte glaciaire | n | C1 | /ˈaɪs ʃiːt/ | The Greenland ice sheet is melting. | La calotte glaciaire du Groenland fond.
+wildfire | feu de forêt | n | B2 | /ˈwaɪldfaɪər/ | Wildfires destroyed thousands of homes. | Des feux de forêt ont détruit des milliers de maisons.
+bushfire | feu de brousse | n | C1 | /ˈbʊʃfaɪər/ | Australia suffers from bushfires every summer. | L'Australie subit des feux de brousse chaque été.
+carbon sink | puits de carbone | n | C1 | /ˈkɑːbən sɪŋk/ | Oceans act as a carbon sink. | Les océans servent de puits de carbone.
+peat bog | tourbière | n | C2 | /ˈpiːt bɒɡ/ | Peat bogs store a lot of carbon. | Les tourbières stockent beaucoup de carbone.
+slurry | lisier | n | C2 | /ˈslʌri/ | Pig slurry polluted the stream. | Le lisier de porc a pollué le ruisseau.
+nitrate | nitrate | n | C1 | /ˈnaɪtreɪt/ | Nitrates from farms enter the water. | Les nitrates des fermes se retrouvent dans l'eau.
+phosphate | phosphate | n | C1 | /ˈfɒsfeɪt/ | Phosphates feed the algae. | Les phosphates nourrissent les algues.
+deposit return scheme | consigne (des bouteilles) | n | C1 | /dɪˈpɒzɪt rɪˈtɜːn skiːm/ | The deposit return scheme pays you for empty bottles. | La consigne te rembourse les bouteilles vides.
+wheelie bin | poubelle à roulettes | n | B1 | /ˈwiːli bɪn/ | Put the wheelie bin out on Monday. | Sors la poubelle à roulettes lundi.
+compost heap | tas de compost | n | B1 | /ˈkɒmpɒst hiːp/ | Throw the peelings on the compost heap. | Jette les épluchures sur le tas de compost.
+food waste | gaspillage alimentaire | n | B1 | /ˈfuːd weɪst/ | We must reduce food waste. | Nous devons réduire le gaspillage alimentaire.
+e-waste | déchets électroniques | n | C1 | /ˈiː weɪst/ | Old phones become e-waste. | Les vieux téléphones deviennent des déchets électroniques.
+scrap metal | ferraille | n | B2 | /ˌskræp ˈmetl/ | He sells scrap metal. | Il vend de la ferraille.
+junkyard | casse, dépotoir | n | B2 | /ˈdʒʌŋkjɑːd/ | The old car ended up in a junkyard. | La vieille voiture a fini à la casse.
+eyesore | horreur (visuelle) | n | C1 | /ˈaɪsɔːr/ | That building is an eyesore. | Ce bâtiment est une horreur.
+oil slick | marée noire | n | B2 | /ˈɔɪl slɪk/ | The oil slick reached the beaches. | La marée noire a atteint les plages.
+tar | goudron | n | B2 | /tɑːr/ | There was tar on the sand. | Il y avait du goudron sur le sable.
+oil tanker | pétrolier | n | B2 | /ˈɔɪl ˌtæŋkər/ | An oil tanker sank off the coast. | Un pétrolier a coulé au large.
+contaminant | contaminant | n | C1 | /kənˈtæmɪnənt/ | The water contains contaminants. | L'eau contient des contaminants.
+carcinogenic | cancérigène | adj | C2 | /ˌkɑːsɪnəˈdʒenɪk/ | Asbestos is carcinogenic. | L'amiante est cancérigène.
+airborne | en suspension dans l'air | adj | C1 | /ˈeəbɔːn/ | Airborne dust irritates the lungs. | La poussière en suspension irrite les poumons.
+noxious | nocif | adj | C1 | /ˈnɒkʃəs/ | The factory releases noxious gases. | L'usine rejette des gaz nocifs.
+pristine | intact, immaculé | adj | C1 | /ˈprɪstiːn/ | The beach was pristine. | La plage était intacte.
+unspoilt | préservé | adj | B2 | /ˌʌnˈspɔɪlt/ | It's an unspoilt island. | C'est une île préservée.
+irreversible | irréversible | adj | C1 | /ˌɪrɪˈvɜːsəbl/ | The damage is irreversible. | Les dégâts sont irréversibles.
+eco-anxiety | éco-anxiété | n | C1 | /ˈiːkəʊ æŋˈzaɪəti/ | Many young people suffer from eco-anxiety. | Beaucoup de jeunes souffrent d'éco-anxiété.
+climate strike | grève pour le climat | n | B2 | /ˈklaɪmət straɪk/ | Students joined the climate strike. | Les élèves ont rejoint la grève pour le climat.
+ecological footprint | empreinte écologique | n | C1 | /ˌiːkəˌlɒdʒɪkl ˈfʊtprɪnt/ | Flying increases your ecological footprint. | Prendre l'avion augmente ton empreinte écologique.
+ecologist | écologiste, écologue | n | B2 | /iˈkɒlədʒɪst/ | The ecologist studied the lake. | L'écologue a étudié le lac.
+ecology | écologie | n | B2 | /iˈkɒlədʒi/ | She's interested in ecology. | Elle s'intéresse à l'écologie.
+poisonous | toxique, vénéneux | adj | B1 | /ˈpɔɪzənəs/ | These fumes are poisonous. | Ces vapeurs sont toxiques.
+waste water | eaux usées | n | B2 | /ˈweɪst ˌwɔːtər/ | Waste water must be treated. | Les eaux usées doivent être traitées.
+treatment plant | station d'épuration | n | C1 | /ˈtriːtmənt plɑːnt/ | The treatment plant cleans the water. | La station d'épuration nettoie l'eau.
+purification | purification, épuration | n | C1 | /ˌpjʊərɪfɪˈkeɪʃn/ | Water purification saves lives. | L'épuration de l'eau sauve des vies.
+cesspit | fosse d'aisances | n | C2 | /ˈsespɪt/ | The old house had a cesspit. | La vieille maison avait une fosse d'aisances.
+septic tank | fosse septique | n | C1 | /ˈseptɪk tæŋk/ | The farm uses a septic tank. | La ferme utilise une fosse septique.
+spillage | déversement | n | C1 | /ˈspɪlɪdʒ/ | A chemical spillage closed the road. | Un déversement chimique a fermé la route.
+to discharge | rejeter, déverser | v | C1 | /dɪsˈtʃɑːdʒ/ | The factory discharges waste into the sea. | L'usine rejette des déchets dans la mer.
+pipeline | oléoduc, gazoduc | n | B2 | /ˈpaɪplaɪn/ | The pipeline leaked oil. | L'oléoduc a laissé fuir du pétrole.
+petrochemical | pétrochimique | adj | C2 | /ˌpetrəʊˈkemɪkl/ | It's a petrochemical plant. | C'est une usine pétrochimique.
+seabed | fond marin | n | B2 | /ˈsiːbed/ | Plastic covers the seabed. | Du plastique recouvre le fond marin.
+beach clean | nettoyage de plage | n | B1 | /ˈbiːtʃ kliːn/ | We joined a beach clean on Sunday. | Nous avons participé à un nettoyage de plage dimanche.
+litter picker | pince à déchets | n | B1 | /ˈlɪtə ˌpɪkər/ | Each volunteer got a litter picker. | Chaque bénévole a reçu une pince à déchets.
+recycling centre | déchetterie | n | B1 | /riːˈsaɪklɪŋ ˌsentər/ | Take the old fridge to the recycling centre. | Emmène le vieux frigo à la déchetterie.
+binman | éboueur | n | B1 | /ˈbɪnmæn/ | The binmen come on Tuesdays. | Les éboueurs passent le mardi.
+low-emission zone | zone à faibles émissions | n | C1 | /ˌləʊ ɪˈmɪʃn zəʊn/ | Old cars can't enter the low-emission zone. | Les vieilles voitures ne peuvent pas entrer dans la zone à faibles émissions.
+congestion charge | péage urbain | n | C1 | /kənˈdʒestʃən tʃɑːdʒ/ | London has a congestion charge. | Londres a un péage urbain.
+car-free | sans voiture | adj | B2 | /ˌkɑː ˈfriː/ | Sunday is a car-free day. | Dimanche est une journée sans voiture.
+carpooling | covoiturage | n | B2 | /ˈkɑːpuːlɪŋ/ | Carpooling saves money. | Le covoiturage fait économiser de l'argent.
+leaded petrol | essence au plomb | n | C1 | /ˌledɪd ˈpetrəl/ | Leaded petrol was banned long ago. | L'essence au plomb a été interdite il y a longtemps.
+bonfire | feu de jardin, feu de joie | n | B1 | /ˈbɒnfaɪər/ | Bonfires are forbidden in summer. | Les feux de jardin sont interdits l'été.
+stubble burning | brûlage des chaumes | n | C2 | /ˈstʌbl ˌbɜːnɪŋ/ | Stubble burning causes smog in India. | Le brûlage des chaumes cause du smog en Inde.
+slash-and-burn | culture sur brûlis | n | C2 | /ˌslæʃ ən ˈbɜːn/ | Slash-and-burn farming destroys forests. | La culture sur brûlis détruit les forêts.
+logging | exploitation forestière | n | C1 | /ˈlɒɡɪŋ/ | Illegal logging threatens the Amazon. | L'exploitation forestière illégale menace l'Amazonie.
+clear-cutting | coupe à blanc | n | C2 | /ˈklɪə ˌkʌtɪŋ/ | Clear-cutting leaves the soil bare. | La coupe à blanc laisse le sol à nu.
+palm oil | huile de palme | n | B2 | /ˈpɑːm ɔɪl/ | Palm oil plantations replace forests. | Les plantations d'huile de palme remplacent les forêts.
+monoculture | monoculture | n | C2 | /ˈmɒnəʊkʌltʃər/ | Monoculture exhausts the soil. | La monoculture épuise le sol.
+overgrazing | surpâturage | n | C2 | /ˌəʊvəˈɡreɪzɪŋ/ | Overgrazing turned the land into desert. | Le surpâturage a transformé la terre en désert.
+water table | nappe phréatique | n | C1 | /ˈwɔːtə ˌteɪbl/ | The water table is dropping. | La nappe phréatique baisse.
+aquifer | aquifère | n | C2 | /ˈækwɪfər/ | Pesticides reached the aquifer. | Les pesticides ont atteint l'aquifère.
+groundwater | eaux souterraines | n | C1 | /ˈɡraʊndwɔːtər/ | Groundwater is polluted with nitrates. | Les eaux souterraines sont polluées par les nitrates.
+silt | limon, vase | n | C1 | /sɪlt/ | The dam is filling with silt. | Le barrage se remplit de vase.
 `,
 );

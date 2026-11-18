@@ -165,5 +165,82 @@ career change | reconversion | n | B2 | /kəˈrɪə tʃeɪndʒ/ | At forty, he m
 vocation | vocation | n | C1 | /vəʊˈkeɪʃn/ | Teaching is her true vocation. | L'enseignement est sa véritable vocation.
 on-the-job training | formation sur le terrain | n | C1 | /ˌɒn ðə ˌdʒɒb ˈtreɪnɪŋ/ | The company offers on-the-job training. | L'entreprise propose une formation sur le terrain.
 job satisfaction | satisfaction au travail | n | B2 | /ˈdʒɒb ˌsætɪsˌfækʃn/ | Nurses often have high job satisfaction. | Les infirmières sont souvent très satisfaites de leur travail.
+barista | barista | n | B1 | /bəˈriːstə/ | The barista made me a cappuccino. | Le barista m'a préparé un cappuccino.
+bartender | barman | n | B1 | /ˈbɑːtendər/ | The bartender served us two juices. | Le barman nous a servi deux jus.
+seamstress | couturière | n | B2 | /ˈsiːmstrəs/ | The seamstress shortened my dress. | La couturière a raccourci ma robe.
+shoemaker | cordonnier, chausseur | n | B2 | /ˈʃuːmeɪkər/ | The shoemaker repaired my boots. | Le cordonnier a réparé mes bottes.
+landscaper | paysagiste | n | B2 | /ˈlændskeɪpər/ | A landscaper redesigned our garden. | Un paysagiste a refait notre jardin.
+joiner | menuisier | n | B2 | /ˈdʒɔɪnər/ | The joiner made new windows. | Le menuisier a fabriqué de nouvelles fenêtres.
+decorator | peintre décorateur | n | B1 | /ˈdekəreɪtər/ | The decorators are painting the kitchen. | Les peintres refont la cuisine.
+civil engineer | ingénieur en génie civil | n | B2 | /ˌsɪvl ˌendʒɪˈnɪər/ | A civil engineer designed the bridge. | Un ingénieur en génie civil a conçu le pont.
+draughtsman | dessinateur industriel | n | C1 | /ˈdrɑːftsmən/ | The draughtsman drew the plans. | Le dessinateur a tracé les plans.
+web designer | concepteur de sites web | n | B1 | /ˈweb dɪˌzaɪnər/ | She works as a web designer. | Elle est conceptrice de sites web.
+developer | développeur | n | B1 | /dɪˈveləpər/ | He's a developer at a startup. | Il est développeur dans une start-up.
+IT technician | technicien informatique | n | B1 | /ˌaɪ ˈtiː tekˌnɪʃn/ | The IT technician fixed my laptop. | Le technicien informatique a réparé mon ordinateur.
+data analyst | analyste de données | n | B2 | /ˈdeɪtə ˌænəlɪst/ | Data analysts are in high demand. | Les analystes de données sont très recherchés.
+bookkeeper | aide-comptable | n | C1 | /ˈbʊkkiːpər/ | The bookkeeper records every payment. | L'aide-comptable enregistre chaque paiement.
+financial adviser | conseiller financier | n | B2 | /faɪˌnænʃl ədˈvaɪzər/ | Talk to a financial adviser. | Parle à un conseiller financier.
+insurance broker | courtier en assurances | n | C1 | /ɪnˈʃʊərəns ˌbrəʊkər/ | An insurance broker found us a cheaper policy. | Un courtier nous a trouvé une assurance moins chère.
+air traffic controller | contrôleur aérien | n | B2 | /ˌeə ˈtræfɪk kənˌtrəʊlər/ | Air traffic controllers went on strike. | Les contrôleurs aériens ont fait grève.
+truck driver | chauffeur routier (US) | n | A2 | /ˈtrʌk ˌdraɪvər/ | My father is a truck driver. | Mon père est chauffeur routier.
+train driver | conducteur de train | n | A2 | /ˈtreɪn ˌdraɪvər/ | The train driver announced a delay. | Le conducteur a annoncé un retard.
+carer | aidant, auxiliaire de vie | n | B2 | /ˈkeərər/ | She's a full-time carer for her mother. | Elle est l'aidante de sa mère à plein temps.
+care worker | aide-soignant, auxiliaire de vie | n | B1 | /ˈkeə ˌwɜːkər/ | Care workers visit him every day. | Des auxiliaires de vie passent chez lui chaque jour.
+childminder | assistante maternelle | n | B1 | /ˈtʃaɪldmaɪndər/ | Our childminder looks after three children. | Notre nounou garde trois enfants.
+dancer | danseur | n | A1 | /ˈdɑːnsər/ | She wants to be a dancer. | Elle veut devenir danseuse.
+film director | réalisateur | n | B1 | /ˈfɪlm dəˌrektər/ | The film director won an award. | Le réalisateur a reçu un prix.
+fitness instructor | moniteur de fitness | n | B1 | /ˈfɪtnəs ɪnˌstrʌktər/ | The fitness instructor pushed us hard. | Le moniteur nous a fait travailler dur.
+office worker | employé de bureau | n | A2 | /ˈɒfɪs ˌwɜːkər/ | Office workers sit all day. | Les employés de bureau restent assis toute la journée.
+clerk | employé (de bureau), commis | n | B1 | /klɑːk/ | The clerk stamped my form. | L'employé a tamponné mon formulaire.
+businessman | homme d'affaires | n | A2 | /ˈbɪznəsmən/ | He's a successful businessman. | C'est un homme d'affaires prospère.
+businesswoman | femme d'affaires | n | A2 | /ˈbɪznəswʊmən/ | She's a famous businesswoman. | C'est une femme d'affaires célèbre.
+saleswoman | vendeuse, commerciale | n | B1 | /ˈseɪlzwʊmən/ | The saleswoman showed us new cars. | La commerciale nous a montré des voitures neuves.
+sales rep | représentant commercial | n | B2 | /ˈseɪlz rep/ | A sales rep visited the shop. | Un représentant est passé au magasin.
+HR manager | responsable RH | n | B2 | /ˌeɪtʃ ˈɑː ˌmænɪdʒər/ | The HR manager interviewed me. | La responsable RH m'a fait passer l'entretien.
+caretaker | gardien, concierge | n | B1 | /ˈkeəteɪkər/ | The school caretaker opens the gates. | Le gardien de l'école ouvre le portail.
+warehouse worker | magasinier | n | B1 | /ˈweəhaʊs ˌwɜːkər/ | Warehouse workers start at dawn. | Les magasiniers commencent à l'aube.
+forklift driver | cariste | n | B2 | /ˈfɔːklɪft ˌdraɪvər/ | He's a forklift driver in a warehouse. | Il est cariste dans un entrepôt.
+butler | majordome | n | B2 | /ˈbʌtlər/ | The butler opened the door. | Le majordome a ouvert la porte.
+maid | femme de chambre, domestique | n | B1 | /meɪd/ | The maid cleaned our room. | La femme de chambre a nettoyé notre chambre.
+housekeeper | gouvernante | n | B2 | /ˈhaʊskiːpər/ | The housekeeper runs the house. | La gouvernante tient la maison.
+chauffeur | chauffeur (privé) | n | B2 | /ˈʃəʊfər/ | The minister's chauffeur waited outside. | Le chauffeur du ministre attendait dehors.
+weaver | tisserand | n | B2 | /ˈwiːvər/ | The weaver made a carpet by hand. | Le tisserand a fait un tapis à la main.
+bookbinder | relieur | n | C1 | /ˈbʊkbaɪndər/ | The bookbinder restored the old Qur'an. | Le relieur a restauré le vieux Coran.
+typesetter | typographe, compositeur | n | C2 | /ˈtaɪpsetər/ | The typesetter prepared the pages. | Le typographe a composé les pages.
+statistician | statisticien | n | C1 | /ˌstætɪˈstɪʃn/ | The statistician analysed the survey. | Le statisticien a analysé l'enquête.
+actuary | actuaire | n | C2 | /ˈæktʃuəri/ | An actuary calculates insurance risks. | Un actuaire calcule les risques d'assurance.
+radiographer | manipulateur radio | n | C1 | /ˌreɪdiˈɒɡrəfər/ | The radiographer took an X-ray. | Le manipulateur radio a fait une radiographie.
+dietitian | diététicien | n | B2 | /ˌdaɪəˈtɪʃn/ | The dietitian planned my meals. | Le diététicien a planifié mes repas.
+nutritionist | nutritionniste | n | B2 | /njuˈtrɪʃənɪst/ | A nutritionist gave a talk at school. | Une nutritionniste a fait une intervention à l'école.
+speech therapist | orthophoniste | n | B2 | /ˈspiːtʃ ˌθerəpɪst/ | The speech therapist helps children who stutter. | L'orthophoniste aide les enfants qui bégaient.
+occupational therapist | ergothérapeute | n | C1 | /ˌɒkjuˌpeɪʃənl ˈθerəpɪst/ | An occupational therapist adapted her home. | Un ergothérapeute a adapté son logement.
+anaesthetist | anesthésiste | n | C1 | /əˈniːsθətɪst/ | The anaesthetist explained the operation. | L'anesthésiste a expliqué l'opération.
+gynaecologist | gynécologue | n | C1 | /ˌɡaɪnəˈkɒlədʒɪst/ | She has an appointment with a gynaecologist. | Elle a rendez-vous chez le gynécologue.
+ophthalmologist | ophtalmologiste | n | C1 | /ˌɒfθælˈmɒlədʒɪst/ | The ophthalmologist checked my eyes. | L'ophtalmologiste m'a examiné les yeux.
+neurologist | neurologue | n | C1 | /njʊəˈrɒlədʒɪst/ | The neurologist ordered a brain scan. | Le neurologue a demandé un scanner du cerveau.
+orthodontist | orthodontiste | n | C1 | /ˌɔːθəˈdɒntɪst/ | The orthodontist fitted my braces. | L'orthodontiste m'a posé un appareil.
+podiatrist | podologue | n | C1 | /pəˈdaɪətrɪst/ | The podiatrist made me insoles. | Le podologue m'a fait des semelles.
+osteopath | ostéopathe | n | C1 | /ˈɒstiəpæθ/ | I saw an osteopath for my back. | J'ai vu un ostéopathe pour mon dos.
+veterinary nurse | auxiliaire vétérinaire | n | B2 | /ˈvetnri nɜːs/ | The veterinary nurse held the dog. | L'auxiliaire vétérinaire a tenu le chien.
+dental hygienist | hygiéniste dentaire | n | C1 | /ˌdentl haɪˈdʒiːnɪst/ | The dental hygienist cleaned my teeth. | L'hygiéniste dentaire m'a nettoyé les dents.
+lab technician | technicien de laboratoire | n | B2 | /ˈlæb tekˌnɪʃn/ | The lab technician tested the samples. | Le technicien de laboratoire a analysé les échantillons.
+sound engineer | ingénieur du son | n | B2 | /ˈsaʊnd ˌendʒɪnɪər/ | The sound engineer mixed the album. | L'ingénieur du son a mixé l'album.
+stuntman | cascadeur | n | B2 | /ˈstʌntmæn/ | A stuntman jumped from the roof. | Un cascadeur a sauté du toit.
+make-up artist | maquilleur | n | B1 | /ˈmeɪk ʌp ˌɑːtɪst/ | The make-up artist prepared the actors. | Le maquilleur a préparé les acteurs.
+costume designer | costumier | n | B2 | /ˈkɒstjuːm dɪˌzaɪnər/ | The costume designer won an Oscar. | Le costumier a remporté un Oscar.
+set designer | décorateur de théâtre | n | B2 | /ˈset dɪˌzaɪnər/ | The set designer built a medieval street. | Le décorateur a construit une rue médiévale.
+screenwriter | scénariste | n | B2 | /ˈskriːnraɪtər/ | The screenwriter adapted the novel. | Le scénariste a adapté le roman.
+copywriter | rédacteur publicitaire | n | C1 | /ˈkɒpiraɪtər/ | The copywriter wrote the slogan. | Le rédacteur publicitaire a écrit le slogan.
+ghostwriter | prête-plume | n | C1 | /ˈɡəʊstraɪtər/ | A ghostwriter wrote his memoirs. | Un prête-plume a écrit ses mémoires.
+proofreader | correcteur | n | C1 | /ˈpruːfriːdər/ | The proofreader found ten typos. | Le correcteur a trouvé dix coquilles.
+illustrator | illustrateur | n | B1 | /ˈɪləstreɪtər/ | The illustrator drew the book cover. | L'illustratrice a dessiné la couverture du livre.
+animator | animateur (dessin animé) | n | B2 | /ˈænɪmeɪtər/ | She works as an animator at a studio. | Elle est animatrice dans un studio.
+game designer | concepteur de jeux vidéo | n | B1 | /ˈɡeɪm dɪˌzaɪnər/ | He dreams of being a game designer. | Il rêve d'être concepteur de jeux vidéo.
+UX designer | designer UX | n | C1 | /ˌjuː ˈeks dɪˌzaɪnər/ | The UX designer simplified the app. | La designer UX a simplifié l'appli.
+community manager | animateur de communauté | n | B2 | /kəˈmjuːnəti ˌmænɪdʒər/ | The community manager answers comments. | Le community manager répond aux commentaires.
+digital marketer | spécialiste du marketing numérique | n | C1 | /ˌdɪdʒɪtl ˈmɑːkɪtər/ | A digital marketer ran our campaign. | Un spécialiste du marketing numérique a mené notre campagne.
+SEO specialist | spécialiste du référencement | n | C1 | /ˌes iː ˈəʊ ˌspeʃəlɪst/ | The SEO specialist improved our ranking. | Le spécialiste du référencement a amélioré notre classement.
+project manager | chef de projet | n | B2 | /ˈprɒdʒekt ˌmænɪdʒər/ | The project manager set the deadlines. | La cheffe de projet a fixé les échéances.
+product manager | chef de produit | n | C1 | /ˈprɒdʌkt ˌmænɪdʒər/ | The product manager chose the new features. | Le chef de produit a choisi les nouvelles fonctions.
 `,
 );

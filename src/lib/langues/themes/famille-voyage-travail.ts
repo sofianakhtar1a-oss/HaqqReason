@@ -124,6 +124,67 @@ large family | famille nombreuse | n | B1 | /ˌlɑːdʒ ˈfæməli/ | She comes 
 family ties | liens familiaux | n | B2 | /ˈfæməli taɪz/ | Islam values strong family ties. | L'islam valorise les liens familiaux forts.
 great-grandfather | arrière-grand-père | n | B1 | /ˌɡreɪt ˈɡrænfɑːðər/ | My great-grandfather came from Kabylia. | Mon arrière-grand-père venait de Kabylie.
 great-grandmother | arrière-grand-mère | n | B1 | /ˌɡreɪt ˈɡrænmʌðər/ | My great-grandmother lived to a hundred. | Mon arrière-grand-mère a vécu jusqu'à cent ans.
+mom | maman (US) | n | A1 | /mɒm/ | My mom works at the hospital. | Ma mère travaille à l'hôpital.
+granny | mamie | n | A1 | /ˈɡræni/ | Granny makes the best cakes. | Mamie fait les meilleurs gâteaux.
+grandchild | petit-enfant | n | A2 | /ˈɡræntʃaɪld/ | She has her first grandchild. | Elle a son premier petit-enfant.
+godmother | marraine | n | A2 | /ˈɡɒdmʌðər/ | My aunt is my godmother. | Ma tante est ma marraine.
+godson | filleul | n | B1 | /ˈɡɒdsʌn/ | I bought a present for my godson. | J'ai acheté un cadeau pour mon filleul.
+goddaughter | filleule | n | B1 | /ˈɡɒddɔːtər/ | My goddaughter turns five today. | Ma filleule a cinq ans aujourd'hui.
+stepdaughter | belle-fille (fille du conjoint) | n | B1 | /ˈstepdɔːtər/ | His stepdaughter lives with them. | Sa belle-fille vit avec eux.
+half-sister | demi-sœur | n | B1 | /ˈhɑːf ˌsɪstər/ | I have a half-sister in Spain. | J'ai une demi-sœur en Espagne.
+ex-husband | ex-mari | n | B1 | /ˌeks ˈhʌzbənd/ | She's still friends with her ex-husband. | Elle est restée amie avec son ex-mari.
+ex-wife | ex-femme | n | B1 | /ˌeks ˈwaɪf/ | He sees his ex-wife every weekend. | Il voit son ex-femme chaque week-end.
+adoption | adoption | n | B2 | /əˈdɒpʃn/ | The adoption took two years. | L'adoption a pris deux ans.
+foster parent | famille d'accueil (parent) | n | B2 | /ˈfɒstə ˌpeərənt/ | They became foster parents. | Ils sont devenus famille d'accueil.
+foster child | enfant placé | n | B2 | /ˈfɒstə tʃaɪld/ | They look after a foster child. | Ils s'occupent d'un enfant placé.
+guardian | tuteur | n | B2 | /ˈɡɑːdiən/ | His uncle is his legal guardian. | Son oncle est son tuteur légal.
+next of kin | plus proche parent | n | C1 | /ˌnekst əv ˈkɪn/ | Write the name of your next of kin. | Indique le nom de ton plus proche parent.
+heiress | héritière | n | C1 | /ˈeəres/ | She's the heiress to a fortune. | Elle est l'héritière d'une fortune.
+single mother | mère célibataire | n | B1 | /ˌsɪŋɡl ˈmʌðər/ | She raised three kids as a single mother. | Elle a élevé trois enfants seule.
+firstborn | premier-né | n | C1 | /ˈfɜːstbɔːn/ | Their firstborn is a boy. | Leur premier-né est un garçon.
+middle child | enfant du milieu | n | B1 | /ˌmɪdl ˈtʃaɪld/ | As the middle child, I felt ignored. | En tant qu'enfant du milieu, je me sentais oublié.
+childbirth | accouchement | n | B2 | /ˈtʃaɪldbɜːθ/ | She prepared for childbirth. | Elle s'est préparée à l'accouchement.
+diaper | couche (US) | n | B1 | /ˈdaɪəpər/ | Change the baby's diaper. | Change la couche du bébé.
+pushchair | poussette | n | B1 | /ˈpʊʃtʃeər/ | Fold the pushchair before getting on the bus. | Plie la poussette avant de monter dans le bus.
+buggy | poussette | n | B1 | /ˈbʌɡi/ | The baby fell asleep in the buggy. | Le bébé s'est endormi dans la poussette.
+crib | lit de bébé (US) | n | B1 | /krɪb/ | The baby sleeps in a crib. | Le bébé dort dans un lit à barreaux.
+high chair | chaise haute | n | A2 | /ˈhaɪ tʃeər/ | Put the baby in the high chair. | Mets le bébé dans la chaise haute.
+dummy | tétine | n | B1 | /ˈdʌmi/ | He still has a dummy at three. | Il a encore une tétine à trois ans.
+parenthood | condition de parent | n | C1 | /ˈpeərənthʊd/ | Parenthood changed their lives. | Devenir parents a changé leur vie.
+childcare | garde d'enfants | n | B2 | /ˈtʃaɪldkeər/ | Childcare is very expensive. | La garde d'enfants coûte très cher.
+au pair | jeune fille au pair | n | B1 | /ˌəʊ ˈpeər/ | They hired an au pair from Spain. | Ils ont embauché une jeune fille au pair espagnole.
+family resemblance | air de famille | n | B2 | /ˌfæməli rɪˈzembləns/ | There's a strong family resemblance. | Il y a un air de famille frappant.
+to honour | honorer | v | C1 | /ˈɒnər/ | Honour your father and mother. | Honore ton père et ta mère.
+blood relative | parent par le sang | n | C1 | /ˈblʌd ˌrelətɪv/ | He's my only blood relative. | C'est mon seul parent par le sang.
+bloodline | lignée | n | C1 | /ˈblʌdlaɪn/ | The bloodline goes back centuries. | La lignée remonte à plusieurs siècles.
+clan | clan | n | B2 | /klæn/ | The whole clan came for the wedding. | Tout le clan est venu au mariage.
+to name after | donner le nom de | v | B1 | /neɪm ˈɑːftər/ | They named him after his grandfather. | Ils lui ont donné le prénom de son grand-père.
+separated | séparé | adj | B1 | /ˈsepəreɪtɪd/ | Her parents are separated. | Ses parents sont séparés.
+child support | pension alimentaire | n | C1 | /ˈtʃaɪld səˌpɔːt/ | He pays child support every month. | Il verse une pension alimentaire chaque mois.
+broken home | famille désunie | n | C1 | /ˌbrəʊkən ˈhəʊm/ | She grew up in a broken home. | Elle a grandi dans une famille désunie.
+blended family | famille recomposée | n | B2 | /ˌblendɪd ˈfæməli/ | We are a blended family. | Nous sommes une famille recomposée.
+family man | père de famille dévoué | n | B2 | /ˈfæməli mæn/ | He's a real family man. | C'est un vrai père de famille.
+househusband | homme au foyer | n | B2 | /ˈhaʊshʌzbənd/ | He became a househusband. | Il est devenu homme au foyer.
+stay-at-home mum | mère au foyer | n | B1 | /ˌsteɪ ət həʊm ˈmʌm/ | She's a stay-at-home mum. | Elle est mère au foyer.
+family business | entreprise familiale | n | B1 | /ˌfæməli ˈbɪznəs/ | He took over the family business. | Il a repris l'entreprise familiale.
+heirloom | objet de famille | n | C1 | /ˈeəluːm/ | This watch is a family heirloom. | Cette montre est un objet de famille.
+like father, like son | tel père, tel fils | expr | B1 | /ˌlaɪk ˈfɑːðə laɪk ˈsʌn/ | He's a doctor too. Like father, like son! | Il est médecin aussi. Tel père, tel fils !
+the apple doesn't fall far from the tree | les chiens ne font pas des chats | expr | C1 | /ði ˈæpl ˌdʌznt fɔːl fɑː frəm ðə ˈtriː/ | She sings like her mum: the apple doesn't fall far from the tree. | Elle chante comme sa mère : les chiens ne font pas des chats.
+blood is thicker than water | la famille avant tout | expr | C1 | /ˈblʌd ɪz ˌθɪkə ðən ˈwɔːtər/ | He helped his brother, because blood is thicker than water. | Il a aidé son frère, car la famille passe avant tout.
+black sheep | mouton noir | expr | B2 | /ˌblæk ˈʃiːp/ | He's the black sheep of the family. | C'est le mouton noir de la famille.
+to run in the family | être de famille | expr | B2 | /rʌn ɪn ðə ˈfæməli/ | Red hair runs in the family. | Les cheveux roux, c'est de famille.
+flesh and blood | chair et sang, famille | expr | C1 | /ˌfleʃ ən ˈblʌd/ | He's my own flesh and blood. | C'est la chair de ma chair.
+sibling rivalry | rivalité fraternelle | n | C1 | /ˌsɪblɪŋ ˈraɪvlri/ | Sibling rivalry is normal. | La rivalité entre frères et sœurs est normale.
+favouritism | favoritisme | n | C1 | /ˈfeɪvərɪtɪzəm/ | Parents should avoid favouritism. | Les parents devraient éviter le favoritisme.
+empty nest | nid vide | n | C1 | /ˌempti ˈnest/ | They felt sad with an empty nest. | Ils étaient tristes quand les enfants sont partis.
+empty nester | parent dont les enfants sont partis | n | C1 | /ˌempti ˈnestər/ | As empty nesters, they travel a lot. | Maintenant que les enfants sont partis, ils voyagent beaucoup.
+boomerang child | enfant boomerang | n | C2 | /ˈbuːməræŋ tʃaɪld/ | Their son is a boomerang child who moved back home. | Leur fils est un enfant boomerang revenu vivre chez eux.
+sandwich generation | génération sandwich | n | C2 | /ˈsænwɪdʒ ˌdʒenəreɪʃn/ | The sandwich generation cares for kids and parents. | La génération sandwich s'occupe des enfants et des parents.
+matriarch | matriarche | n | C2 | /ˈmeɪtriɑːk/ | Grandma is the family matriarch. | Mamie est la matriarche de la famille.
+patriarch | patriarche | n | C2 | /ˈpeɪtriɑːk/ | The patriarch sat at the head of the table. | Le patriarche était assis en bout de table.
+progeny | progéniture | n | C2 | /ˈprɒdʒəni/ | He was proud of his progeny. | Il était fier de sa progéniture.
+forefathers | aïeux, ancêtres | n | C2 | /ˈfɔːfɑːðəz/ | Our forefathers built this village. | Nos aïeux ont bâti ce village.
+posterity | postérité | n | C2 | /pɒˈsterəti/ | The letters were kept for posterity. | Les lettres ont été conservées pour la postérité.
 `,
 );
 
@@ -256,6 +317,68 @@ hitchhiking | auto-stop | n | B2 | /ˈhɪtʃhaɪkɪŋ/ | Hitchhiking can be dang
 car hire | location de voiture | n | B1 | /ˈkɑː haɪər/ | Car hire is cheap here. | La location de voiture est bon marché ici.
 ferry crossing | traversée en ferry | n | B1 | /ˈferi ˌkrɒsɪŋ/ | The ferry crossing takes two hours. | La traversée en ferry dure deux heures.
 port | port | n | A2 | /pɔːt/ | The ship arrived at the port. | Le navire est arrivé au port.
+voyage | traversée, long voyage (en mer) | n | B2 | /ˈvɔɪɪdʒ/ | The voyage across the Atlantic took weeks. | La traversée de l'Atlantique a duré des semaines.
+tour | circuit, visite | n | A2 | /tʊər/ | We went on a tour of the castle. | Nous avons fait une visite du château.
+tourism | tourisme | n | B1 | /ˈtʊərɪzəm/ | Tourism is vital for the island. | Le tourisme est vital pour l'île.
+backpacking | voyage sac au dos | n | B1 | /ˈbækpækɪŋ/ | We went backpacking in Asia. | Nous avons voyagé sac au dos en Asie.
+to reserve | réserver | v | B1 | /rɪˈzɜːv/ | I'd like to reserve a table. | Je voudrais réserver une table.
+delayed | retardé, en retard | adj | A2 | /dɪˈleɪd/ | Our flight is delayed. | Notre vol est retardé.
+cancelled | annulé | adj | A2 | /ˈkænsld/ | The train was cancelled. | Le train a été annulé.
+boarding | embarquement | n | B1 | /ˈbɔːdɪŋ/ | Boarding starts at gate twelve. | L'embarquement commence porte douze.
+baggage | bagages | n | A2 | /ˈbæɡɪdʒ/ | Collect your baggage here. | Récupérez vos bagages ici.
+baggage allowance | franchise bagages | n | B2 | /ˈbæɡɪdʒ əˌlaʊəns/ | The baggage allowance is twenty kilos. | La franchise bagages est de vingt kilos.
+lost luggage | bagages perdus | n | B1 | /ˌlɒst ˈlʌɡɪdʒ/ | Go to the lost luggage desk. | Va au comptoir des bagages perdus.
+direct flight | vol direct | n | A2 | /dəˌrekt ˈflaɪt/ | Is there a direct flight to Cairo? | Y a-t-il un vol direct pour Le Caire ?
+cabin crew | personnel de bord | n | B2 | /ˈkæbɪn kruː/ | The cabin crew served drinks. | Le personnel de bord a servi des boissons.
+seat belt | ceinture de sécurité | n | A2 | /ˈsiːt belt/ | Fasten your seat belt. | Attachez votre ceinture.
+airline | compagnie aérienne | n | A2 | /ˈeəlaɪn/ | Which airline are you flying with? | Avec quelle compagnie voles-tu ?
+sleeper train | train de nuit | n | B1 | /ˈsliːpə treɪn/ | We took the sleeper train to Rome. | Nous avons pris le train de nuit pour Rome.
+ticket inspector | contrôleur | n | B1 | /ˈtɪkɪt ɪnˌspektər/ | The ticket inspector checked our tickets. | Le contrôleur a vérifié nos billets.
+railcard | carte de réduction (train) | n | B1 | /ˈreɪlkɑːd/ | With a railcard, you save a third. | Avec une carte de réduction, tu économises un tiers.
+deck | pont (de bateau) | n | B1 | /dek/ | Let's go up on deck. | Montons sur le pont.
+rental car | voiture de location | n | A2 | /ˈrentl kɑːr/ | We picked up the rental car at the airport. | Nous avons récupéré la voiture de location à l'aéroport.
+to hire a car | louer une voiture | expr | A2 | /haɪər ə ˈkɑːr/ | We want to hire a car for a week. | Nous voulons louer une voiture pour une semaine.
+GPS | GPS | n | A2 | /ˌdʒiː piː ˈes/ | Follow the GPS. | Suis le GPS.
+phrasebook | guide de conversation | n | B1 | /ˈfreɪzbʊk/ | I bought an Arabic phrasebook. | J'ai acheté un guide de conversation en arabe.
+bureau de change | bureau de change | n | B2 | /ˌbjʊərəʊ də ˈʃɒnʒ/ | Change your money at the bureau de change. | Change ton argent au bureau de change.
+vaccination | vaccination | n | B2 | /ˌvæksɪˈneɪʃn/ | You need a vaccination before you travel. | Il te faut une vaccination avant de partir.
+guided tour | visite guidée | n | A2 | /ˌɡaɪdɪd ˈtʊər/ | We booked a guided tour of the medina. | Nous avons réservé une visite guidée de la médina.
+adventure | aventure | n | A2 | /ədˈventʃər/ | The trip was a real adventure. | Le voyage a été une vraie aventure.
+to ask for directions | demander son chemin | expr | A2 | /ɑːsk fə dəˈrekʃnz/ | Let's ask for directions. | Demandons notre chemin.
+youth hostel | auberge de jeunesse | n | A2 | /ˈjuːθ ˌhɒstl/ | We slept in a youth hostel. | Nous avons dormi dans une auberge de jeunesse.
+B&B | chambre d'hôtes | n | B1 | /ˌbiː ən ˈbiː/ | We stayed in a lovely B&B. | Nous avons logé dans une charmante chambre d'hôtes.
+single room | chambre simple | n | A2 | /ˌsɪŋɡl ˈruːm/ | I'd like a single room. | Je voudrais une chambre simple.
+double room | chambre double | n | A2 | /ˌdʌbl ˈruːm/ | A double room costs ninety euros. | Une chambre double coûte quatre-vingt-dix euros.
+twin room | chambre à deux lits | n | B1 | /ˌtwɪn ˈruːm/ | We booked a twin room. | Nous avons réservé une chambre à deux lits.
+en suite | avec salle de bains privée | adj | B2 | /ˌɒn ˈswiːt/ | Every room is en suite. | Chaque chambre a sa salle de bains.
+key card | carte-clé | n | B1 | /ˈkiː kɑːd/ | My key card doesn't work. | Ma carte-clé ne marche pas.
+wake-up call | réveil téléphonique | n | B1 | /ˈweɪk ʌp kɔːl/ | Can I have a wake-up call at six? | Pouvez-vous me réveiller à six heures ?
+travel agent | agent de voyages | n | A2 | /ˈtrævl ˌeɪdʒənt/ | The travel agent found us a cheap flight. | L'agent de voyages nous a trouvé un vol pas cher.
+peak season | haute saison | n | B2 | /ˈpiːk ˌsiːzn/ | Prices double in peak season. | Les prix doublent en haute saison.
+low season | basse saison | n | B1 | /ˈləʊ ˌsiːzn/ | We travel in the low season. | Nous voyageons en basse saison.
+touristy | trop touristique | adj | B2 | /ˈtʊərɪsti/ | The old town is very touristy. | La vieille ville est très touristique.
+homesickness | mal du pays | n | B2 | /ˈhəʊmsɪknəs/ | Homesickness hit me after a month. | Le mal du pays m'a pris au bout d'un mois.
+globetrotter | globe-trotteur | n | B2 | /ˈɡləʊbtrɒtər/ | My uncle is a real globetrotter. | Mon oncle est un vrai globe-trotteur.
+jetsetter | membre de la jet-set | n | C1 | /ˈdʒetsetər/ | Jetsetters spend winter in Dubai. | La jet-set passe l'hiver à Dubaï.
+to go sightseeing | faire du tourisme | expr | A2 | /ɡəʊ ˈsaɪtsiːɪŋ/ | Let's go sightseeing tomorrow. | Allons visiter demain.
+to see the sights | visiter les curiosités | expr | B1 | /siː ðə ˈsaɪts/ | We want to see the sights of Istanbul. | Nous voulons visiter les curiosités d'Istanbul.
+to stop over | faire escale | v | B2 | /stɒp ˈəʊvər/ | We stop over in Doha. | Nous faisons escale à Doha.
+getaway | escapade | n | B2 | /ˈɡetəweɪ/ | We planned a romantic getaway. | Nous avons prévu une escapade romantique.
+weekend break | escapade d'un week-end | n | B1 | /ˌwiːkend ˈbreɪk/ | We won a weekend break in Paris. | Nous avons gagné un week-end à Paris.
+expat | expatrié | n | B2 | /ˌeksˈpæt/ | Many expats live in Dubai. | Beaucoup d'expatriés vivent à Dubaï.
+emigrant | émigré | n | C1 | /ˈemɪɡrənt/ | Irish emigrants settled in Boston. | Des émigrés irlandais se sont installés à Boston.
+to cross the border | passer la frontière | expr | B1 | /krɒs ðə ˈbɔːdər/ | We'll cross the border at noon. | Nous passerons la frontière à midi.
+checkpoint | poste de contrôle | n | B2 | /ˈtʃekpɔɪnt/ | Soldiers stopped us at the checkpoint. | Des soldats nous ont arrêtés au poste de contrôle.
+consulate | consulat | n | B2 | /ˈkɒnsjələt/ | Contact the French consulate. | Contactez le consulat de France.
+to deport | expulser | v | C1 | /dɪˈpɔːt/ | The government plans to deport them. | Le gouvernement prévoit de les expulser.
+deportation | expulsion | n | C1 | /ˌdiːpɔːˈteɪʃn/ | He is fighting his deportation. | Il conteste son expulsion.
+travel ban | interdiction de voyager | n | B2 | /ˈtrævl bæn/ | A travel ban was imposed. | Une interdiction de voyager a été imposée.
+overtourism | surtourisme | n | C1 | /ˌəʊvəˈtʊərɪzəm/ | Venice suffers from overtourism. | Venise souffre du surtourisme.
+ecotourism | écotourisme | n | C1 | /ˈiːkəʊtʊərɪzəm/ | Ecotourism protects the rainforest. | L'écotourisme protège la forêt tropicale.
+voluntourism | tourisme humanitaire | n | C2 | /ˈvɒləntʊərɪzəm/ | Voluntourism is sometimes criticised. | Le tourisme humanitaire est parfois critiqué.
+glamping | camping de luxe | n | B2 | /ˈɡlæmpɪŋ/ | We went glamping in a yurt. | Nous avons fait du camping de luxe dans une yourte.
+couchsurfing | couchsurfing (hébergement chez l'habitant) | n | B2 | /ˈkaʊtʃsɜːfɪŋ/ | Couchsurfing helps you meet locals. | Le couchsurfing aide à rencontrer les habitants.
+interrailing | voyage en Interrail | n | B2 | /ˈɪntəreɪlɪŋ/ | We went interrailing around Europe. | Nous avons fait le tour de l'Europe en Interrail.
 `,
 );
 
@@ -379,5 +502,97 @@ resignation | démission | n | B2 | /ˌrezɪɡˈneɪʃn/ | She handed in her res
 dismissal | licenciement | n | C1 | /dɪsˈmɪsl/ | He contested his dismissal. | Il a contesté son licenciement.
 notice period | préavis | n | C1 | /ˈnəʊtɪs ˌpɪəriəd/ | The notice period is one month. | Le préavis est d'un mois.
 workplace | lieu de travail | n | B2 | /ˈwɜːkpleɪs/ | Safety in the workplace is essential. | La sécurité sur le lieu de travail est essentielle.
+team leader | chef d'équipe | n | B1 | /ˈtiːm ˌliːdər/ | Ask your team leader. | Demande à ton chef d'équipe.
+head office | siège social | n | B2 | /ˌhed ˈɒfɪs/ | Our head office is in Paris. | Notre siège social est à Paris.
+cubicle | box (bureau) | n | B2 | /ˈkjuːbɪkl/ | He works in a tiny cubicle. | Il travaille dans un minuscule box.
+meeting room | salle de réunion | n | A2 | /ˈmiːtɪŋ ruːm/ | The meeting room is booked. | La salle de réunion est réservée.
+day shift | équipe de jour | n | B1 | /ˈdeɪ ʃɪft/ | I'm on the day shift this week. | Je suis de jour cette semaine.
+shift work | travail posté, en équipes | n | B2 | /ˈʃɪft wɜːk/ | Shift work is hard on the body. | Le travail posté est dur pour le corps.
+fixed-term contract | CDD | n | B2 | /ˌfɪkst tɜːm ˈkɒntrækt/ | She has a fixed-term contract. | Elle est en CDD.
+permanent contract | CDI | n | B2 | /ˌpɜːmənənt ˈkɒntrækt/ | He finally got a permanent contract. | Il a enfin décroché un CDI.
+freelance | indépendant, en free-lance | adj | B2 | /ˈfriːlɑːns/ | She works freelance. | Elle travaille en indépendante.
+contractor | sous-traitant, prestataire | n | C1 | /kənˈtræktər/ | We hired a contractor for the job. | Nous avons engagé un prestataire pour le chantier.
+perks | avantages (en nature) | n | B2 | /pɜːks/ | Free lunch is one of the perks. | Le déjeuner gratuit fait partie des avantages.
+sick leave | arrêt maladie | n | B1 | /ˈsɪk liːv/ | He's on sick leave. | Il est en arrêt maladie.
+paternity leave | congé paternité | n | B2 | /pəˈtɜːnəti liːv/ | He took two weeks' paternity leave. | Il a pris deux semaines de congé paternité.
+holiday entitlement | droit à congés | n | C1 | /ˈhɒlədeɪ ɪnˌtaɪtlmənt/ | My holiday entitlement is five weeks. | J'ai droit à cinq semaines de congés.
+application form | formulaire de candidature | n | B1 | /ˌæplɪˈkeɪʃn fɔːm/ | Fill in the application form. | Remplis le formulaire de candidature.
+résumé | CV (US) | n | B1 | /ˈrezjuːmeɪ/ | Send us your résumé. | Envoyez-nous votre CV.
+interviewer | recruteur (en entretien) | n | B1 | /ˈɪntəvjuːər/ | The interviewer asked about my goals. | Le recruteur m'a interrogé sur mes objectifs.
+shortlist | liste restreinte | n | C1 | /ˈʃɔːtlɪst/ | You're on the shortlist. | Tu es dans la sélection finale.
+recruitment | recrutement | n | B2 | /rɪˈkruːtmənt/ | Recruitment is slow this year. | Le recrutement est lent cette année.
+recruiter | recruteur | n | B2 | /rɪˈkruːtər/ | A recruiter called me yesterday. | Un recruteur m'a appelé hier.
+to sack | virer | v | B2 | /sæk/ | He was sacked for stealing. | Il a été viré pour vol.
+to dismiss | licencier, congédier | v | C1 | /dɪsˈmɪs/ | She was unfairly dismissed. | Elle a été licenciée abusivement.
+redundant | licencié (économique) | adj | B2 | /rɪˈdʌndənt/ | Fifty workers were made redundant. | Cinquante employés ont été licenciés.
+jobseeker | demandeur d'emploi | n | B2 | /ˈdʒɒbsiːkər/ | The centre helps jobseekers. | Le centre aide les demandeurs d'emploi.
+job centre | agence pour l'emploi | n | B1 | /ˈdʒɒb ˌsentər/ | He registered at the job centre. | Il s'est inscrit à l'agence pour l'emploi.
+unemployment benefit | allocation chômage | n | B2 | /ˌʌnɪmˈplɔɪmənt ˌbenɪfɪt/ | She receives unemployment benefit. | Elle touche l'allocation chômage.
+demotion | rétrogradation | n | C1 | /diːˈməʊʃn/ | He accepted a demotion. | Il a accepté une rétrogradation.
+career ladder | échelons de carrière | n | C1 | /kəˈrɪə ˌlædər/ | She climbed the career ladder fast. | Elle a gravi les échelons rapidement.
+job description | fiche de poste | n | B2 | /ˈdʒɒb dɪˌskrɪpʃn/ | Read the job description carefully. | Lis attentivement la fiche de poste.
+responsibilities | responsabilités | n | B1 | /rɪˌspɒnsəˈbɪlətiz/ | What are your main responsibilities? | Quelles sont tes principales responsabilités ?
+skills | compétences | n | A2 | /skɪlz/ | You need good computer skills. | Il faut de bonnes compétences en informatique.
+soft skills | compétences relationnelles | n | B2 | /ˈsɒft skɪlz/ | Soft skills matter as much as diplomas. | Les savoir-être comptent autant que les diplômes.
+qualifications | diplômes, qualifications | n | B1 | /ˌkwɒlɪfɪˈkeɪʃnz/ | What qualifications do you have? | Quels diplômes as-tu ?
+probationary period | période d'essai | n | C1 | /prəˈbeɪʃnri ˌpɪəriəd/ | The probationary period lasts three months. | La période d'essai dure trois mois.
+appraisal | entretien d'évaluation | n | C1 | /əˈpreɪzl/ | My annual appraisal is next week. | Mon entretien annuel est la semaine prochaine.
+performance review | bilan de performance | n | C1 | /pəˈfɔːməns rɪˌvjuː/ | The performance review went well. | Le bilan de performance s'est bien passé.
+KPI | indicateur clé de performance | n | C1 | /ˌkeɪ piː ˈaɪ/ | Sales is our main KPI. | Les ventes sont notre principal indicateur.
+to collaborate | collaborer | v | B2 | /kəˈlæbəreɪt/ | We collaborate with a Spanish firm. | Nous collaborons avec une entreprise espagnole.
+collaboration | collaboration | n | B2 | /kəˌlæbəˈreɪʃn/ | Thanks for your collaboration. | Merci pour ta collaboration.
+delegation | délégation | n | C1 | /ˌdelɪˈɡeɪʃn/ | Good managers believe in delegation. | Les bons managers croient à la délégation.
+union | syndicat | n | B2 | /ˈjuːniən/ | She joined the union. | Elle a adhéré au syndicat.
+to go on strike | faire grève | expr | B1 | /ɡəʊ ɒn ˈstraɪk/ | The drivers will go on strike. | Les chauffeurs vont faire grève.
+picket line | piquet de grève | n | C1 | /ˈpɪkɪt laɪn/ | Workers stood on the picket line. | Les ouvriers tenaient le piquet de grève.
+walkout | débrayage | n | C1 | /ˈwɔːkaʊt/ | Staff staged a walkout. | Le personnel a débrayé.
+collective agreement | convention collective | n | C2 | /kəˌlektɪv əˈɡriːmənt/ | The collective agreement sets the wages. | La convention collective fixe les salaires.
+flexitime | horaires flexibles | n | B2 | /ˈfleksitaɪm/ | We work flexitime. | Nous avons des horaires flexibles.
+working from home | télétravail | n | B1 | /ˌwɜːkɪŋ frəm ˈhəʊm/ | Working from home saves time. | Le télétravail fait gagner du temps.
+WFH | en télétravail | expr | B2 | /ˌdʌbljuː ef ˈeɪtʃ/ | I'm WFH today. | Je suis en télétravail aujourd'hui.
+hybrid working | travail hybride | n | C1 | /ˌhaɪbrɪd ˈwɜːkɪŋ/ | The company adopted hybrid working. | L'entreprise a adopté le travail hybride.
+to network | réseauter | v | B2 | /ˈnetwɜːk/ | Go to conferences to network. | Va aux salons pour réseauter.
+networking | réseautage | n | B2 | /ˈnetwɜːkɪŋ/ | Networking helped me find a job. | Le réseautage m'a aidé à trouver un emploi.
+business card | carte de visite | n | A2 | /ˈbɪznəs kɑːd/ | Here's my business card. | Voici ma carte de visite.
+to forward | transférer (un mail) | v | B1 | /ˈfɔːwəd/ | Can you forward me that email? | Tu peux me transférer ce mail ?
+to cc | mettre en copie | v | B2 | /ˌsiː ˈsiː/ | Please cc your manager. | Mets ton responsable en copie.
+inbox | boîte de réception | n | B1 | /ˈɪnbɒks/ | My inbox is full. | Ma boîte de réception est pleine.
+spreadsheet | tableur | n | B1 | /ˈspredʃiːt/ | Put the figures in a spreadsheet. | Mets les chiffres dans un tableur.
+memo | note de service | n | B2 | /ˈmeməʊ/ | Did you read the memo? | As-tu lu la note de service ?
+briefing | réunion d'information, briefing | n | B2 | /ˈbriːfɪŋ/ | The briefing starts at nine. | Le briefing commence à neuf heures.
+debrief | débriefing | n | C1 | /ˌdiːˈbriːf/ | We'll have a debrief after the event. | Nous ferons un débriefing après l'événement.
+multitasking | travail multitâche | n | B2 | /ˌmʌltiˈtɑːskɪŋ/ | Multitasking reduces concentration. | Le multitâche réduit la concentration.
+priority | priorité | n | B1 | /praɪˈɒrəti/ | Safety is our priority. | La sécurité est notre priorité.
+ASAP | dès que possible | expr | B1 | /ˌeɪ es eɪ ˈpiː/ | Call me back ASAP. | Rappelle-moi dès que possible.
+to miss a deadline | rater une échéance | expr | B2 | /mɪs ə ˈdedlaɪn/ | We can't afford to miss a deadline. | Nous ne pouvons pas nous permettre de rater une échéance.
+to clock out | pointer (en sortant) | v | B2 | /klɒk ˈaʊt/ | Don't forget to clock out. | N'oublie pas de pointer en partant.
+time sheet | feuille de temps | n | B2 | /ˈtaɪm ʃiːt/ | Fill in your time sheet on Friday. | Remplis ta feuille de temps vendredi.
+payroll | paie, masse salariale | n | C1 | /ˈpeɪrəʊl/ | Payroll is handled by the accountant. | La paie est gérée par le comptable.
+HR | RH (ressources humaines) | n | B1 | /ˌeɪtʃ ˈɑːr/ | Ask HR about your holidays. | Demande aux RH pour tes congés.
+assistant | assistant | n | A2 | /əˈsɪstənt/ | My assistant will call you. | Mon assistant va vous appeler.
+PA | assistant(e) de direction | n | B2 | /ˌpiː ˈeɪ/ | She's the director's PA. | Elle est l'assistante du directeur.
+startup | start-up, jeune pousse | n | B2 | /ˈstɑːtʌp/ | He works for a tech startup. | Il travaille pour une start-up technologique.
+SME | PME | n | C1 | /ˌes em ˈiː/ | Most jobs are in SMEs. | La plupart des emplois sont dans les PME.
+coworking space | espace de coworking | n | B2 | /ˈkəʊwɜːkɪŋ speɪs/ | I rent a desk in a coworking space. | Je loue un bureau dans un espace de coworking.
+casual Friday | vendredi décontracté | n | B2 | /ˌkæʒuəl ˈfraɪdeɪ/ | Jeans are fine on casual Friday. | Le jean est permis le vendredi décontracté.
+water cooler | fontaine à eau | n | B2 | /ˈwɔːtə ˌkuːlər/ | We chat by the water cooler. | On bavarde près de la fontaine à eau.
+office politics | jeux de pouvoir au bureau | n | C1 | /ˈɒfɪs ˌpɒlətɪks/ | I hate office politics. | Je déteste les jeux de pouvoir au bureau.
+glass ceiling | plafond de verre | n | C1 | /ˌɡlɑːs ˈsiːlɪŋ/ | She broke through the glass ceiling. | Elle a brisé le plafond de verre.
+harassment | harcèlement | n | C1 | /ˈhærəsmənt/ | Harassment at work must be reported. | Le harcèlement au travail doit être signalé.
+equal pay | égalité salariale | n | B2 | /ˌiːkwəl ˈpeɪ/ | Women demand equal pay. | Les femmes réclament l'égalité salariale.
+gender pay gap | écart salarial hommes-femmes | n | C1 | /ˌdʒendə ˈpeɪ ɡæp/ | The gender pay gap is narrowing. | L'écart salarial entre hommes et femmes se réduit.
+sabbatical | congé sabbatique | n | C1 | /səˈbætɪkl/ | She took a year's sabbatical. | Elle a pris un an de congé sabbatique.
+career break | pause dans la carrière | n | B2 | /kəˈrɪə breɪk/ | He took a career break to travel. | Il a fait une pause dans sa carrière pour voyager.
+job security | sécurité de l'emploi | n | B2 | /ˈdʒɒb sɪˌkjʊərəti/ | Civil servants have job security. | Les fonctionnaires ont la sécurité de l'emploi.
+unpaid | non rémunéré | adj | B1 | /ˌʌnˈpeɪd/ | It's an unpaid internship. | C'est un stage non rémunéré.
+underpaid | sous-payé | adj | B2 | /ˌʌndəˈpeɪd/ | Nurses are underpaid. | Les infirmières sont sous-payées.
+overworked | surmené | adj | B2 | /ˌəʊvəˈwɜːkt/ | The staff are overworked. | Le personnel est surmené.
+blue-collar | ouvrier (col bleu) | adj | C1 | /ˌbluː ˈkɒlər/ | He comes from a blue-collar family. | Il vient d'une famille ouvrière.
+white-collar | employé de bureau (col blanc) | adj | C1 | /ˌwaɪt ˈkɒlər/ | White-collar jobs moved online. | Les emplois de bureau sont passés en ligne.
+manual worker | travailleur manuel | n | B2 | /ˌmænjuəl ˈwɜːkər/ | Manual workers retire earlier. | Les travailleurs manuels partent plus tôt à la retraite.
+gig economy | économie des petits boulots | n | C1 | /ˈɡɪɡ iˌkɒnəmi/ | Delivery riders work in the gig economy. | Les livreurs travaillent dans l'économie des petits boulots.
+zero-hours contract | contrat zéro heure | n | C1 | /ˌzɪərəʊ ˈaʊəz ˌkɒntrækt/ | She's on a zero-hours contract. | Elle a un contrat zéro heure.
+side hustle | activité d'appoint | n | B2 | /ˈsaɪd ˌhʌsl/ | Selling cakes is her side hustle. | Vendre des gâteaux est son activité d'appoint.
+moonlighting | travail au noir (en plus) | n | C2 | /ˈmuːnlaɪtɪŋ/ | Moonlighting is forbidden by his contract. | Son contrat lui interdit de cumuler un second emploi.
 `,
 );

@@ -155,5 +155,84 @@ mat | tapis (de sol) | n | B1 | /mæt/ | Put the mat on the floor for yoga. | Me
 athlete's foot | pied d'athlète (mycose) | n | C1 | /ˌæθliːts ˈfʊt/ | Athlete's foot is common in pools. | Le pied d'athlète est fréquent dans les piscines.
 pulled muscle | élongation | n | B2 | /ˌpʊld ˈmʌsl/ | He has a pulled muscle in his leg. | Il a une élongation à la jambe.
 team spirit | esprit d'équipe | n | B1 | /ˌtiːm ˈspɪrɪt/ | Team spirit is the key to success. | L'esprit d'équipe est la clé du succès.
+trainer | entraîneur, préparateur | n | B1 | /ˈtreɪnər/ | My personal trainer is very strict. | Mon coach personnel est très strict.
+linesman | juge de touche | n | B2 | /ˈlaɪnzmən/ | The linesman raised his flag. | Le juge de touche a levé son drapeau.
+championship | championnat | n | B1 | /ˈtʃæmpiənʃɪp/ | They won the championship. | Ils ont gagné le championnat.
+quarter-final | quart de finale | n | B1 | /ˌkwɔːtə ˈfaɪnl/ | France lost in the quarter-final. | La France a perdu en quart de finale.
+winner | gagnant, vainqueur | n | A2 | /ˈwɪnər/ | The winner gets a trophy. | Le vainqueur reçoit un trophée.
+loser | perdant | n | B1 | /ˈluːzər/ | Don't be a bad loser. | Ne sois pas mauvais perdant.
+runner-up | second, finaliste | n | B2 | /ˌrʌnər ˈʌp/ | She was runner-up in the final. | Elle a fini deuxième en finale.
+gold medal | médaille d'or | n | A2 | /ˌɡəʊld ˈmedl/ | He won a gold medal in judo. | Il a remporté une médaille d'or en judo.
+silver medal | médaille d'argent | n | A2 | /ˌsɪlvə ˈmedl/ | She took the silver medal. | Elle a décroché la médaille d'argent.
+bronze medal | médaille de bronze | n | A2 | /ˌbrɒnz ˈmedl/ | The team won a bronze medal. | L'équipe a gagné une médaille de bronze.
+world record | record du monde | n | B1 | /ˌwɜːld ˈrekɔːd/ | He set a new world record. | Il a établi un nouveau record du monde.
+stands | tribunes | n | B1 | /stændz/ | The fans sang in the stands. | Les supporters chantaient dans les tribunes.
+soccer | football (US) | n | A1 | /ˈsɒkər/ | Soccer is popular in American schools. | Le football est populaire dans les écoles américaines.
+hockey | hockey | n | A2 | /ˈhɒki/ | She plays hockey at school. | Elle joue au hockey à l'école.
+taekwondo | taekwondo | n | B1 | /ˌtaɪˈkwɒndəʊ/ | He has a black belt in taekwondo. | Il est ceinture noire de taekwondo.
+shooting | tir (sportif) | n | B1 | /ˈʃuːtɪŋ/ | Shooting is an Olympic sport. | Le tir est un sport olympique.
+water polo | water-polo | n | B1 | /ˈwɔːtə ˌpəʊləʊ/ | Water polo is played in a pool. | Le water-polo se joue en piscine.
+canoeing | canoë-kayak (activité) | n | B1 | /kəˈnuːɪŋ/ | We went canoeing on the river. | Nous avons fait du canoë sur la rivière.
+hurdles | haies | n | B1 | /ˈhɜːdlz/ | She won the 100 metres hurdles. | Elle a gagné le 100 mètres haies.
+triple jump | triple saut | n | B1 | /ˈtrɪpl dʒʌmp/ | Teddy Tamgho was a triple jump champion. | Teddy Tamgho était champion du triple saut.
+pole vault | saut à la perche | n | B1 | /ˈpəʊl vɔːlt/ | Renaud Lavillenie excels at pole vault. | Renaud Lavillenie excelle au saut à la perche.
+discus | disque (lancer) | n | B2 | /ˈdɪskəs/ | He threw the discus sixty metres. | Il a lancé le disque à soixante mètres.
+shot put | lancer du poids | n | B2 | /ˈʃɒt pʊt/ | The shot put requires great strength. | Le lancer du poids demande une grande force.
+decathlon | décathlon | n | B2 | /dɪˈkæθlɒn/ | The decathlon has ten events. | Le décathlon comprend dix épreuves.
+skating | patinage | n | A2 | /ˈskeɪtɪŋ/ | We go skating every winter. | Nous faisons du patin chaque hiver.
+figure skating | patinage artistique | n | B1 | /ˈfɪɡə ˌskeɪtɪŋ/ | Figure skating is very elegant. | Le patinage artistique est très élégant.
+equestrian | équestre | adj | C1 | /ɪˈkwestriən/ | Saumur is famous for equestrian sports. | Saumur est célèbre pour les sports équestres.
+polo | polo (sport) | n | B2 | /ˈpəʊləʊ/ | Polo is played on horseback. | Le polo se joue à cheval.
+motor racing | course automobile | n | B1 | /ˈməʊtə ˌreɪsɪŋ/ | Motor racing is dangerous. | La course automobile est dangereuse.
+Formula One | Formule 1 | n | B1 | /ˌfɔːmjələ ˈwʌn/ | He dreams of driving in Formula One. | Il rêve de piloter en Formule 1.
+rally | rallye | n | B2 | /ˈræli/ | The Dakar is a famous rally. | Le Dakar est un rallye célèbre.
+skateboarding | skateboard (activité) | n | A2 | /ˈskeɪtbɔːdɪŋ/ | Skateboarding is now an Olympic sport. | Le skateboard est désormais un sport olympique.
+squash | squash | n | B1 | /skwɒʃ/ | We play squash on Tuesdays. | Nous jouons au squash le mardi.
+ping-pong | ping-pong | n | A2 | /ˈpɪŋ pɒŋ/ | Let's play ping-pong. | Jouons au ping-pong.
+bowls | boules, pétanque | n | B1 | /bəʊlz/ | My grandfather plays bowls. | Mon grand-père joue aux boules.
+bodybuilding | musculation | n | B1 | /ˈbɒdibɪldɪŋ/ | He does bodybuilding at the gym. | Il fait de la musculation à la salle.
+aerobics | aérobic | n | A2 | /eəˈrəʊbɪks/ | She goes to aerobics twice a week. | Elle fait de l'aérobic deux fois par semaine.
+crossfit | crossfit | n | B1 | /ˈkrɒsfɪt/ | Crossfit sessions are intense. | Les séances de crossfit sont intenses.
+stretching | étirements | n | A2 | /ˈstretʃɪŋ/ | Do some stretching after running. | Fais des étirements après la course.
+flexibility | souplesse | n | B2 | /ˌfleksəˈbɪləti/ | Yoga improves flexibility. | Le yoga améliore la souplesse.
+fitness level | condition physique | n | B2 | /ˈfɪtnəs ˌlevl/ | Test your fitness level. | Teste ta condition physique.
+drug test | contrôle antidopage | n | B2 | /ˈdrʌɡ test/ | The cyclist failed a drug test. | Le cycliste a échoué à un contrôle antidopage.
+steroids | stéroïdes | n | C1 | /ˈsterɔɪdz/ | He was banned for taking steroids. | Il a été suspendu pour prise de stéroïdes.
+disqualification | disqualification | n | C1 | /dɪsˌkwɒlɪfɪˈkeɪʃn/ | A false start means disqualification. | Un faux départ entraîne la disqualification.
+to disqualify | disqualifier | v | C1 | /dɪsˈkwɒlɪfaɪ/ | The judges may disqualify the swimmer. | Les juges peuvent disqualifier le nageur.
+to send off | expulser (un joueur) | v | B2 | /send ˈɒf/ | The referee had to send off two players. | L'arbitre a dû expulser deux joueurs.
+penalty shoot-out | tirs au but | n | B2 | /ˈpenəlti ˌʃuːt aʊt/ | The match ended in a penalty shoot-out. | Le match s'est terminé aux tirs au but.
+shot | tir, coup | n | B1 | /ʃɒt/ | What a shot! | Quel tir !
+midfielder | milieu de terrain | n | B2 | /ˈmɪdfiːldər/ | Zidane was a brilliant midfielder. | Zidane était un milieu de terrain brillant.
+winger | ailier | n | B2 | /ˈwɪŋər/ | The winger crossed the ball. | L'ailier a centré le ballon.
+crossbar | barre transversale | n | B2 | /ˈkrɒsbɑːr/ | The ball hit the crossbar. | Le ballon a frappé la barre transversale.
+ace | as (service gagnant) | n | B2 | /eɪs/ | She served an ace. | Elle a servi un as.
+deuce | égalité (tennis) | n | C1 | /djuːs/ | The score is deuce. | Le score est à égalité.
+shuttlecock | volant (badminton) | n | B2 | /ˈʃʌtlkɒk/ | Hit the shuttlecock over the net. | Envoie le volant au-dessus du filet.
+puck | palet | n | B2 | /pʌk/ | He shot the puck into the net. | Il a tiré le palet dans le but.
+shin pads | protège-tibias | n | B1 | /ˈʃɪn pædz/ | Wear shin pads to play football. | Mets des protège-tibias pour jouer au foot.
+boots | chaussures de sport à crampons | n | A2 | /buːts/ | Clean your football boots. | Nettoie tes chaussures de foot.
+kit | tenue (de sport) | n | B1 | /kɪt/ | Don't forget your PE kit. | N'oublie pas ta tenue de sport.
+jersey | maillot | n | B1 | /ˈdʒɜːzi/ | He wears the yellow jersey. | Il porte le maillot jaune.
+shirt number | numéro de maillot | n | A2 | /ˈʃɜːt ˌnʌmbər/ | His shirt number is ten. | Son numéro de maillot est le dix.
+mascot | mascotte | n | B1 | /ˈmæskɒt/ | The team mascot is a lion. | La mascotte de l'équipe est un lion.
+Olympics | Jeux olympiques | n | A2 | /əˈlɪmpɪks/ | Paris hosted the Olympics in 2024. | Paris a accueilli les Jeux olympiques en 2024.
+Paralympics | Jeux paralympiques | n | B1 | /ˌpærəˈlɪmpɪks/ | She competed in the Paralympics. | Elle a participé aux Jeux paralympiques.
+Grand Slam | Grand Chelem | n | B2 | /ˌɡrænd ˈslæm/ | Roland-Garros is a Grand Slam tournament. | Roland-Garros est un tournoi du Grand Chelem.
+Tour de France | Tour de France | n | A2 | /ˌtʊə də ˈfrɒns/ | The Tour de France passes through Laval. | Le Tour de France passe par Laval.
+transfer window | mercato | n | B2 | /ˈtrænsfɜː ˌwɪndəʊ/ | The club signed two players in the transfer window. | Le club a recruté deux joueurs pendant le mercato.
+agent | agent | n | B1 | /ˈeɪdʒənt/ | His agent negotiated the contract. | Son agent a négocié le contrat.
+league table | classement (du championnat) | n | B1 | /ˈliːɡ ˌteɪbl/ | Laval is top of the league table. | Laval est en tête du classement.
+relegation | relégation | n | B2 | /ˌrelɪˈɡeɪʃn/ | The team is fighting relegation. | L'équipe lutte contre la relégation.
+derby | derby | n | B2 | /ˈdɑːbi/ | The local derby was sold out. | Le derby local affichait complet.
+hat-trick | triplé | n | B2 | /ˈhæt trɪk/ | He scored a hat-trick. | Il a marqué un triplé.
+clean sheet | match sans encaisser de but | n | C1 | /ˌkliːn ˈʃiːt/ | The goalkeeper kept a clean sheet. | Le gardien n'a pas encaissé de but.
+own goal | but contre son camp | n | B1 | /ˌəʊn ˈɡəʊl/ | He scored an own goal. | Il a marqué contre son camp.
+equaliser | but égalisateur | n | B2 | /ˈiːkwəlaɪzər/ | They scored the equaliser in the last minute. | Ils ont égalisé à la dernière minute.
+winning streak | série de victoires | n | B2 | /ˈwɪnɪŋ striːk/ | The team is on a winning streak. | L'équipe enchaîne les victoires.
+losing streak | série de défaites | n | B2 | /ˈluːzɪŋ striːk/ | They ended their losing streak. | Ils ont mis fin à leur série de défaites.
+home game | match à domicile | n | A2 | /ˌhəʊm ˈɡeɪm/ | We have a home game on Saturday. | Nous jouons à domicile samedi.
+away game | match à l'extérieur | n | A2 | /əˌweɪ ˈɡeɪm/ | The away game is in Lyon. | Le match à l'extérieur a lieu à Lyon.
+home advantage | avantage du terrain | n | B2 | /ˌhəʊm ədˈvɑːntɪdʒ/ | The team made the most of home advantage. | L'équipe a profité de l'avantage du terrain.
 `,
 );

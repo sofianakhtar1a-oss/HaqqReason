@@ -192,5 +192,69 @@ accordingly | en conséquence | adv | C1 | /əˈkɔːdɪŋli/ | Read the rules a
 conversely | inversement | adv | C1 | /ˈkɒnvɜːsli/ | Conversely, cold weather slows growth. | Inversement, le froid ralentit la croissance.
 notably | notamment | adv | C1 | /ˈnəʊtəbli/ | Several countries, notably Morocco, invest in solar power. | Plusieurs pays, notamment le Maroc, investissent dans le solaire.
 namely | à savoir | adv | C1 | /ˈneɪmli/ | Two cities, namely Fez and Rabat. | Deux villes, à savoir Fès et Rabat.
+whilst | tandis que, pendant que | conj | C1 | /waɪlst/ | Whilst I agree, I have some doubts. | Bien que je sois d'accord, j'ai quelques doutes.
+as well | aussi, également | adv | A2 | /əz ˈwel/ | I speak Arabic as well. | Je parle aussi l'arabe.
+what is more | qui plus est | expr | B2 | /ˌwɒt ɪz ˈmɔːr/ | It's cheap. What is more, it's healthy. | C'est bon marché. Qui plus est, c'est sain.
+on top of that | en plus de cela | expr | B2 | /ɒn ˈtɒp əv ðæt/ | It rained, and on top of that we got lost. | Il a plu, et en plus nous nous sommes perdus.
+thirdly | troisièmement | adv | B1 | /ˈθɜːdli/ | Thirdly, we must think about the cost. | Troisièmement, nous devons penser au coût.
+to start with | pour commencer | expr | B1 | /tə ˈstɑːt wɪð/ | To start with, let's define the terms. | Pour commencer, définissons les termes.
+in the first place | en premier lieu, d'abord | expr | B2 | /ɪn ðə ˌfɜːst ˈpleɪs/ | Why did you go there in the first place? | Pourquoi y es-tu allé au départ ?
+after that | après cela, ensuite | expr | A2 | /ˈɑːftə ðæt/ | We ate, and after that we prayed. | Nous avons mangé, puis nous avons prié.
+subsequently | par la suite | adv | C1 | /ˈsʌbsɪkwəntli/ | He was subsequently released. | Il a par la suite été libéré.
+to put it another way | autrement dit | expr | C1 | /tə ˌpʊt ɪt əˌnʌðə ˈweɪ/ | To put it another way, we have no choice. | Autrement dit, nous n'avons pas le choix.
+in summary | en résumé | expr | B2 | /ɪn ˈsʌməri/ | In summary, the plan works. | En résumé, le plan fonctionne.
+on the whole | dans l'ensemble | expr | B2 | /ɒn ðə ˈhəʊl/ | On the whole, I'm satisfied. | Dans l'ensemble, je suis satisfait.
+as a rule | en règle générale | expr | B2 | /əz ə ˈruːl/ | As a rule, I go to bed early. | En règle générale, je me couche tôt.
+by contrast | par contraste | expr | C1 | /baɪ ˈkɒntrɑːst/ | By contrast, the north is cold. | Par contraste, le nord est froid.
+providing | à condition que | conj | C1 | /prəˈvaɪdɪŋ/ | You can go providing you finish your homework. | Tu peux y aller à condition de finir tes devoirs.
+so long as | tant que, pourvu que | conj | B2 | /ˌsəʊ ˈlɒŋ əz/ | So long as you're honest, I'll help you. | Tant que tu es honnête, je t'aiderai.
+in order that | afin que | conj | C1 | /ɪn ˈɔːdə ðæt/ | He spoke slowly in order that we could understand. | Il a parlé lentement afin que nous comprenions.
+regardless of | indépendamment de, quel que soit | prep | C1 | /rɪˈɡɑːdləs əv/ | Everyone is welcome regardless of age. | Tout le monde est bienvenu, quel que soit son âge.
+even so | quand même, malgré tout | expr | B2 | /ˈiːvn səʊ/ | It was hard. Even so, we finished. | C'était dur. Malgré tout, nous avons fini.
+admittedly | il faut reconnaître que | adv | C1 | /ədˈmɪtɪdli/ | Admittedly, I made a mistake. | Il faut reconnaître que j'ai fait une erreur.
+in reality | en réalité | expr | B2 | /ɪn riˈæləti/ | In reality, it's more complicated. | En réalité, c'est plus compliqué.
+to be honest | pour être honnête | expr | A2 | /tə bi ˈɒnɪst/ | To be honest, I don't like it. | Pour être honnête, je n'aime pas ça.
+presumably | vraisemblablement | adv | C1 | /prɪˈzjuːməbli/ | Presumably, he forgot. | Il a vraisemblablement oublié.
+arguably | sans doute, on peut soutenir que | adv | C1 | /ˈɑːɡjuəbli/ | It's arguably the best book on the subject. | C'est sans doute le meilleur livre sur le sujet.
+in my opinion | à mon avis | expr | A2 | /ɪn ˈmaɪ əˌpɪnjən/ | In my opinion, the film is too long. | À mon avis, le film est trop long.
+as far as I'm concerned | en ce qui me concerne | expr | B2 | /əz ˌfɑːr əz aɪm kənˈsɜːnd/ | As far as I'm concerned, it's fine. | En ce qui me concerne, ça me va.
+from my point of view | de mon point de vue | expr | B1 | /frəm ˌmaɪ ˌpɔɪnt əv ˈvjuː/ | From my point of view, it's unfair. | De mon point de vue, c'est injuste.
+with regard to | en ce qui concerne | prep | C1 | /wɪð rɪˈɡɑːd tə/ | With regard to your request, we agree. | En ce qui concerne votre demande, nous sommes d'accord.
+as regards | quant à | prep | C1 | /əz rɪˈɡɑːdz/ | As regards the price, it's negotiable. | Quant au prix, il est négociable.
+in terms of | en termes de, sur le plan de | prep | B2 | /ɪn ˈtɜːmz əv/ | In terms of quality, it's excellent. | Sur le plan de la qualité, c'est excellent.
+with respect to | concernant | prep | C1 | /wɪð rɪˈspekt tə/ | With respect to your question, I'll answer later. | Concernant ta question, je répondrai plus tard.
+in relation to | par rapport à | prep | C1 | /ɪn rɪˈleɪʃn tə/ | Prices are high in relation to wages. | Les prix sont élevés par rapport aux salaires.
+owing to | en raison de | prep | C1 | /ˈəʊɪŋ tə/ | The flight was cancelled owing to fog. | Le vol a été annulé en raison du brouillard.
+because of | à cause de | prep | A2 | /bɪˈkɒz əv/ | We stayed home because of the rain. | Nous sommes restés à la maison à cause de la pluie.
+on account of | en raison de | prep | C1 | /ɒn əˈkaʊnt əv/ | The match was stopped on account of the storm. | Le match a été arrêté en raison de l'orage.
+as a consequence of | par suite de | prep | C1 | /əz ə ˈkɒnsɪkwəns əv/ | He lost his job as a consequence of the crisis. | Il a perdu son emploi par suite de la crise.
+for this reason | pour cette raison | expr | B1 | /fə ˌðɪs ˈriːzn/ | For this reason, we must act now. | Pour cette raison, nous devons agir maintenant.
+that's why | c'est pourquoi | expr | A2 | /ˌðæts ˈwaɪ/ | I was tired. That's why I left early. | J'étais fatigué. C'est pourquoi je suis parti tôt.
+in the same way | de la même façon | expr | B1 | /ɪn ðə ˌseɪm ˈweɪ/ | In the same way, children copy their parents. | De la même façon, les enfants imitent leurs parents.
+equally | de même, tout autant | adv | B2 | /ˈiːkwəli/ | Equally, we must consider the risks. | De même, nous devons tenir compte des risques.
+just as | de même que | conj | B2 | /ˈdʒʌst əz/ | Just as plants need water, the soul needs prayer. | De même que les plantes ont besoin d'eau, l'âme a besoin de prière.
+compared to | comparé à | prep | B1 | /kəmˈpeəd tə/ | Compared to Paris, Laval is quiet. | Comparé à Paris, Laval est calme.
+compared with | par rapport à | prep | B1 | /kəmˈpeəd wɪð/ | Compared with last year, sales are up. | Par rapport à l'an dernier, les ventes sont en hausse.
+as opposed to | par opposition à | prep | C1 | /əz əˈpəʊzd tə/ | I prefer facts as opposed to rumours. | Je préfère les faits, par opposition aux rumeurs.
+aside from | à part, mis à part | prep | B2 | /əˈsaɪd frəm/ | Aside from the price, it's perfect. | Mis à part le prix, c'est parfait.
+except for | sauf, excepté | prep | B1 | /ɪkˈsept fɔːr/ | Everyone came except for Ali. | Tout le monde est venu sauf Ali.
+other than | autre que, à part | prep | B2 | /ˈʌðə ðæn/ | I have no friends here other than you. | Je n'ai pas d'amis ici à part toi.
+no sooner... than | à peine... que | conj | C1 | /nəʊ ˈsuːnə ðæn/ | No sooner had we arrived than it started to rain. | À peine étions-nous arrivés qu'il s'est mis à pleuvoir.
+by the time | le temps que, quand | conj | B1 | /baɪ ðə ˈtaɪm/ | By the time we arrived, the shop was closed. | Quand nous sommes arrivés, le magasin était fermé.
+the moment | dès que, au moment où | conj | B2 | /ðə ˈməʊmənt/ | Call me the moment you arrive. | Appelle-moi dès que tu arrives.
+now that | maintenant que | conj | B1 | /ˈnaʊ ðæt/ | Now that you're here, we can start. | Maintenant que tu es là, nous pouvons commencer.
+given that | étant donné que | conj | B2 | /ˈɡɪvn ðæt/ | Given that it's late, let's go home. | Étant donné qu'il est tard, rentrons.
+seeing that | vu que | conj | B2 | /ˈsiːɪŋ ðæt/ | Seeing that you're busy, I'll come back later. | Vu que tu es occupé, je reviendrai plus tard.
+considering | étant donné, vu | prep | B2 | /kənˈsɪdərɪŋ/ | He did well, considering his age. | Il s'en est bien sorti, vu son âge.
+in view of | compte tenu de | prep | C1 | /ɪn ˈvjuː əv/ | In view of the weather, the trip is cancelled. | Compte tenu du temps, la sortie est annulée.
+in light of | à la lumière de | prep | C1 | /ɪn ˈlaɪt əv/ | In light of the new facts, we changed our minds. | À la lumière des faits nouveaux, nous avons changé d'avis.
+with this in mind | dans cette optique | expr | C1 | /wɪð ˌðɪs ɪn ˈmaɪnd/ | With this in mind, we built a new school. | Dans cette optique, nous avons construit une nouvelle école.
+to this end | à cette fin | expr | C2 | /tə ˌðɪs ˈend/ | To this end, we created a fund. | À cette fin, nous avons créé un fonds.
+for this purpose | dans ce but | expr | B2 | /fə ˌðɪs ˈpɜːpəs/ | We bought a van for this purpose. | Nous avons acheté une camionnette dans ce but.
+most importantly | surtout, le plus important | adv | B2 | /məʊst ɪmˈpɔːtntli/ | Most importantly, stay calm. | Surtout, reste calme.
+last but not least | enfin et surtout | expr | B2 | /ˌlɑːst bət ˌnɒt ˈliːst/ | Last but not least, thank you all. | Enfin et surtout, merci à tous.
+incidentally | au fait, soit dit en passant | adv | C1 | /ˌɪnsɪˈdentli/ | Incidentally, did you call her? | Au fait, tu l'as appelée ?
+anyhow | de toute façon | adv | B2 | /ˈenihaʊ/ | Anyhow, it doesn't matter. | De toute façon, ça n'a pas d'importance.
+at any rate | en tout cas | expr | C1 | /ət ˈeni reɪt/ | At any rate, we tried. | En tout cas, nous avons essayé.
 `,
 );

@@ -137,6 +137,108 @@ e-learning | apprentissage en ligne | n | B2 | /ˈiː ˌlɜːnɪŋ/ | E-learning
 self-study | apprentissage autonome | n | B2 | /ˌself ˈstʌdi/ | Self-study needs discipline. | L'apprentissage autonome demande de la discipline.
 education system | système éducatif | n | B2 | /ˌedʒuˈkeɪʃn ˌsɪstəm/ | The education system is changing. | Le système éducatif évolue.
 headmistress | directrice d'école | n | B1 | /ˌhedˈmɪstrəs/ | The headmistress welcomed the parents. | La directrice a accueilli les parents.
+college | établissement d'enseignement supérieur, université (US) | n | A2 | /ˈkɒlɪdʒ/ | She's going to college next year. | Elle va à la fac l'an prochain.
+private school | école privée | n | A2 | /ˌpraɪvət ˈskuːl/ | They send their kids to a private school. | Ils mettent leurs enfants dans une école privée.
+grammar school | lycée sélectif (GB) | n | B2 | /ˈɡræmə skuːl/ | He passed the exam for the grammar school. | Il a réussi l'examen d'entrée au lycée sélectif.
+kindergarten | jardin d'enfants, maternelle | n | A2 | /ˈkɪndəɡɑːtn/ | My daughter starts kindergarten in September. | Ma fille entre en maternelle en septembre.
+head teacher | directeur d'école | n | A2 | /ˌhed ˈtiːtʃər/ | The head teacher wants to see you. | Le directeur veut te voir.
+headmaster | directeur (d'école) | n | B1 | /ˌhedˈmɑːstər/ | The headmaster gave a speech. | Le directeur a fait un discours.
+deputy head | directeur adjoint | n | B2 | /ˌdepjuti ˈhed/ | The deputy head is in charge of discipline. | Le directeur adjoint s'occupe de la discipline.
+teaching assistant | assistant d'éducation | n | B1 | /ˈtiːtʃɪŋ əˌsɪstənt/ | The teaching assistant helps slow readers. | L'assistant aide les élèves qui lisent lentement.
+supply teacher | professeur remplaçant | n | B2 | /səˈplaɪ ˌtiːtʃər/ | We had a supply teacher today. | Nous avions un remplaçant aujourd'hui.
+class | classe, cours | n | A1 | /klɑːs/ | There are twenty-five pupils in my class. | Il y a vingt-cinq élèves dans ma classe.
+academic year | année universitaire, année scolaire | n | B1 | /ˌækədemɪk ˈjɪər/ | The academic year starts in September. | L'année scolaire commence en septembre.
+recess | récréation (US) | n | B1 | /rɪˈses/ | The kids play outside at recess. | Les enfants jouent dehors à la récré.
+lunchtime | heure du déjeuner | n | A1 | /ˈlʌntʃtaɪm/ | I'll see you at lunchtime. | On se voit à midi.
+assembly | rassemblement (du matin) | n | B1 | /əˈsembli/ | The whole school meets for assembly. | Toute l'école se réunit pour le rassemblement.
+register | registre d'appel | n | B1 | /ˈredʒɪstər/ | The teacher took the register. | Le professeur a fait l'appel.
+school uniform | uniforme scolaire | n | A2 | /ˌskuːl ˈjuːnɪfɔːm/ | British pupils wear a school uniform. | Les élèves britanniques portent un uniforme.
+satchel | cartable | n | B1 | /ˈsætʃəl/ | He put his books in his satchel. | Il a rangé ses livres dans son cartable.
+eraser | gomme | n | A1 | /ɪˈreɪzər/ | Can I borrow your eraser? | Je peux t'emprunter ta gomme ?
+sharpener | taille-crayon | n | A2 | /ˈʃɑːpnər/ | I need a pencil sharpener. | J'ai besoin d'un taille-crayon.
+glue stick | bâton de colle | n | A2 | /ˈɡluː stɪk/ | Use a glue stick for the paper. | Utilise un bâton de colle pour le papier.
+scissors | ciseaux | n | A1 | /ˈsɪzəz/ | Cut the paper with scissors. | Coupe le papier avec des ciseaux.
+highlighter | surligneur | n | A2 | /ˈhaɪlaɪtər/ | Use a highlighter for key words. | Utilise un surligneur pour les mots clés.
+felt-tip pen | feutre | n | A2 | /ˌfelt tɪp ˈpen/ | The children drew with felt-tip pens. | Les enfants ont dessiné avec des feutres.
+marker | marqueur | n | A2 | /ˈmɑːkər/ | Write your name with a marker. | Écris ton nom au marqueur.
+workbook | cahier d'exercices | n | A2 | /ˈwɜːkbʊk/ | Do page ten in your workbook. | Faites la page dix de votre cahier d'exercices.
+protractor | rapporteur | n | B1 | /prəˈtræktər/ | Measure the angle with a protractor. | Mesure l'angle avec un rapporteur.
+set square | équerre | n | B1 | /ˈset skweər/ | Draw a right angle with the set square. | Trace un angle droit avec l'équerre.
+binder | classeur | n | A2 | /ˈbaɪndər/ | Put your notes in a binder. | Range tes notes dans un classeur.
+mock exam | examen blanc | n | B1 | /ˌmɒk ɪɡˈzæm/ | The mock exam is next week. | Le bac blanc a lieu la semaine prochaine.
+oral exam | examen oral | n | A2 | /ˌɔːrəl ɪɡˈzæm/ | I'm nervous about the oral exam. | L'oral me stresse.
+written exam | examen écrit | n | A2 | /ˌrɪtn ɪɡˈzæm/ | The written exam lasts three hours. | L'écrit dure trois heures.
+school report | bulletin scolaire | n | A2 | /ˈskuːl rɪˌpɔːt/ | My school report was good. | Mon bulletin était bon.
+to retake | repasser (un examen) | v | B1 | /ˌriːˈteɪk/ | She has to retake the maths exam. | Elle doit repasser l'examen de maths.
+resit | session de rattrapage | n | B2 | /ˈriːsɪt/ | The resit is in July. | Le rattrapage a lieu en juillet.
+to learn by heart | apprendre par cœur | expr | A2 | /lɜːn baɪ ˈhɑːt/ | We had to learn by heart a whole surah. | Nous avons dû apprendre par cœur toute une sourate.
+to raise your hand | lever la main | expr | A1 | /reɪz jə ˈhænd/ | Raise your hand before you speak. | Lève la main avant de parler.
+mathematics | mathématiques | n | A2 | /ˌmæθəˈmætɪks/ | Mathematics is my favourite subject. | Les mathématiques sont ma matière préférée.
+arithmetic | arithmétique, calcul | n | B1 | /əˈrɪθmətɪk/ | Children learn arithmetic at primary school. | Les enfants apprennent le calcul à l'école primaire.
+religious education | enseignement religieux | n | B1 | /rɪˌlɪdʒəs ˌedʒuˈkeɪʃn/ | Religious education is taught in British schools. | L'enseignement religieux est donné dans les écoles britanniques.
+IT | informatique | n | A2 | /ˌaɪ ˈtiː/ | We have IT on Tuesdays. | Nous avons informatique le mardi.
+sociology | sociologie | n | B2 | /ˌsəʊsiˈɒlədʒi/ | He studies sociology at university. | Il étudie la sociologie à l'université.
+psychology | psychologie | n | B2 | /saɪˈkɒlədʒi/ | Psychology helps us understand people. | La psychologie nous aide à comprendre les gens.
+curriculum | programme scolaire | n | C1 | /kəˈrɪkjələm/ | Arabic is on the curriculum. | L'arabe est au programme.
+syllabus | programme (d'un cours) | n | C1 | /ˈsɪləbəs/ | The syllabus covers three novels. | Le programme comprend trois romans.
+lesson plan | fiche de préparation | n | B2 | /ˈlesn plæn/ | The teacher wrote a lesson plan. | Le professeur a rédigé une fiche de préparation.
+doctorate | doctorat | n | C1 | /ˈdɒktərət/ | She has a doctorate in history. | Elle a un doctorat en histoire.
+undergraduate | étudiant de licence | n | B2 | /ˌʌndəˈɡrædʒuət/ | He's an undergraduate at Oxford. | Il est étudiant en licence à Oxford.
+postgraduate | étudiant de troisième cycle | n | C1 | /ˌpəʊstˈɡrædʒuət/ | She's a postgraduate in law. | Elle fait un master de droit.
+grant | bourse (d'études), subvention | n | B2 | /ɡrɑːnt/ | He got a grant to study abroad. | Il a obtenu une bourse pour étudier à l'étranger.
+hall of residence | résidence universitaire | n | B2 | /ˌhɔːl əv ˈrezɪdəns/ | First-year students live in a hall of residence. | Les étudiants de première année logent en résidence universitaire.
+dormitory | dortoir | n | B1 | /ˈdɔːmətri/ | The boys sleep in a dormitory. | Les garçons dorment dans un dortoir.
+lecture hall | amphithéâtre | n | B1 | /ˈlektʃə hɔːl/ | The lecture hall was full. | L'amphi était plein.
+dissertation | mémoire | n | C1 | /ˌdɪsəˈteɪʃn/ | I'm writing my dissertation on Ibn Khaldun. | J'écris mon mémoire sur Ibn Khaldoun.
+faculty | faculté | n | B2 | /ˈfæklti/ | She teaches in the faculty of law. | Elle enseigne à la faculté de droit.
+dean | doyen (d'université) | n | C1 | /diːn/ | The dean opened the ceremony. | Le doyen a ouvert la cérémonie.
+vice-chancellor | président d'université | n | C1 | /ˌvaɪs ˈtʃɑːnsələr/ | The vice-chancellor signed the diplomas. | Le président de l'université a signé les diplômes.
+alumni | anciens élèves | n | C1 | /əˈlʌmnaɪ/ | The school invited its alumni. | L'école a invité ses anciens élèves.
+enrolment | inscription | n | C1 | /ɪnˈrəʊlmənt/ | Enrolment closes on Friday. | Les inscriptions se terminent vendredi.
+admission | admission | n | B2 | /ədˈmɪʃn/ | Admission to the university is competitive. | L'admission à l'université est sélective.
+entrance exam | concours d'entrée | n | B2 | /ˈentrəns ɪɡˌzæm/ | He passed the entrance exam. | Il a réussi le concours d'entrée.
+expelled | renvoyé, exclu | adj | B2 | /ɪkˈspeld/ | He was expelled for fighting. | Il a été renvoyé pour s'être battu.
+exclusion | exclusion | n | C1 | /ɪkˈskluːʒn/ | The exclusion lasted a week. | L'exclusion a duré une semaine.
+suspension | exclusion temporaire, suspension | n | C1 | /səˈspenʃn/ | She got a two-day suspension. | Elle a eu deux jours d'exclusion.
+behaviour | comportement | n | B1 | /bɪˈheɪvjər/ | His behaviour in class has improved. | Son comportement en classe s'est amélioré.
+field trip | sortie pédagogique | n | B1 | /ˈfiːld trɪp/ | We went on a field trip to the beach. | Nous avons fait une sortie pédagogique à la plage.
+parent-teacher meeting | réunion parents-professeurs | n | B1 | /ˌpeərənt ˈtiːtʃə ˌmiːtɪŋ/ | The parent-teacher meeting is on Thursday. | La réunion parents-profs est jeudi.
+open day | journée portes ouvertes | n | B1 | /ˈəʊpən deɪ/ | We visited the university on its open day. | Nous avons visité l'université lors des portes ouvertes.
+sports day | journée sportive | n | A2 | /ˈspɔːts deɪ/ | Parents come to watch sports day. | Les parents viennent voir la journée sportive.
+prize-giving | remise des prix | n | B2 | /ˈpraɪz ˌɡɪvɪŋ/ | She won three awards at the prize-giving. | Elle a reçu trois prix à la remise des prix.
+school canteen | cantine scolaire | n | A2 | /ˌskuːl kænˈtiːn/ | We eat at the school canteen. | Nous mangeons à la cantine.
+school dinner | repas de la cantine | n | A2 | /ˌskuːl ˈdɪnər/ | School dinners have improved. | Les repas de la cantine se sont améliorés.
+packed lunch | panier-repas | n | A2 | /ˌpækt ˈlʌntʃ/ | I take a packed lunch to school. | J'emporte un panier-repas à l'école.
+science lab | laboratoire de sciences | n | A2 | /ˈsaɪəns læb/ | The experiment took place in the science lab. | L'expérience a eu lieu au labo de sciences.
+computer room | salle informatique | n | A2 | /kəmˈpjuːtə ruːm/ | The class is in the computer room. | Le cours a lieu en salle informatique.
+to underline | souligner | v | A2 | /ˌʌndəˈlaɪn/ | Underline the verbs. | Soulignez les verbes.
+to rub out | effacer (à la gomme) | v | B1 | /rʌb ˈaʊt/ | Rub out the mistake. | Efface l'erreur.
+to dictate | dicter | v | B1 | /dɪkˈteɪt/ | The teacher will dictate a text. | Le professeur va dicter un texte.
+dictation | dictée | n | A2 | /dɪkˈteɪʃn/ | We had a dictation today. | Nous avons eu une dictée aujourd'hui.
+translation | traduction | n | B1 | /trænsˈleɪʃn/ | Read the translation of the verse. | Lis la traduction du verset.
+comprehension | compréhension | n | B2 | /ˌkɒmprɪˈhenʃn/ | The test checks your comprehension. | Le test vérifie ta compréhension.
+reading comprehension | compréhension écrite | n | B1 | /ˈriːdɪŋ ˌkɒmprɪhenʃn/ | The reading comprehension was easy. | La compréhension écrite était facile.
+numeracy | maîtrise du calcul | n | C1 | /ˈnjuːmərəsi/ | Numeracy is a basic skill. | Savoir compter est une compétence de base.
+illiteracy | analphabétisme, illettrisme | n | C1 | /ɪˈlɪtərəsi/ | Illiteracy is still common in some areas. | L'illettrisme reste répandu dans certaines régions.
+homeschooling | instruction à la maison | n | B2 | /ˈhəʊmskuːlɪŋ/ | They chose homeschooling for their kids. | Ils ont choisi l'instruction en famille pour leurs enfants.
+distance learning | enseignement à distance | n | B2 | /ˈdɪstəns ˌlɜːnɪŋ/ | She got her degree through distance learning. | Elle a obtenu son diplôme à distance.
+MOOC | cours en ligne ouvert (MOOC) | n | C1 | /muːk/ | I followed a MOOC on economics. | J'ai suivi un MOOC d'économie.
+lifelong learning | formation tout au long de la vie | n | C1 | /ˌlaɪflɒŋ ˈlɜːnɪŋ/ | Lifelong learning keeps the mind sharp. | Apprendre toute sa vie garde l'esprit vif.
+adult education | formation des adultes | n | B2 | /ˌædʌlt ˌedʒuˈkeɪʃn/ | She teaches adult education classes. | Elle donne des cours pour adultes.
+evening class | cours du soir | n | B1 | /ˈiːvnɪŋ klɑːs/ | I take an evening class in Arabic. | Je suis un cours du soir d'arabe.
+vocational training | formation professionnelle | n | B2 | /vəʊˌkeɪʃənl ˈtreɪnɪŋ/ | He chose vocational training. | Il a choisi une formation professionnelle.
+special needs | besoins éducatifs particuliers | n | B2 | /ˌspeʃl ˈniːdz/ | The school welcomes children with special needs. | L'école accueille des enfants à besoins particuliers.
+learning difficulties | troubles de l'apprentissage | n | B2 | /ˈlɜːnɪŋ ˌdɪfɪkəltiz/ | Some pupils have learning difficulties. | Certains élèves ont des troubles de l'apprentissage.
+dyslexia | dyslexie | n | B2 | /dɪsˈleksiə/ | Dyslexia makes reading harder. | La dyslexie rend la lecture plus difficile.
+top of the class | premier de la classe | expr | A2 | /ˌtɒp əv ðə ˈklɑːs/ | She's always top of the class. | Elle est toujours première de la classe.
+teacher's pet | chouchou du prof | n | B1 | /ˌtiːtʃəz ˈpet/ | Everyone calls him the teacher's pet. | Tout le monde l'appelle le chouchou du prof.
+swot | bûcheur, polar | n | B2 | /swɒt/ | He's a bit of a swot. | C'est un peu un bûcheur.
+to swot up | potasser | v | B2 | /swɒt ˈʌp/ | I need to swot up on my history. | Je dois potasser mon histoire.
+to cram | bachoter | v | B2 | /kræm/ | Students cram before the exams. | Les élèves bachotent avant les examens.
+to play truant | faire l'école buissonnière | expr | B2 | /pleɪ ˈtruːənt/ | He used to play truant on Fridays. | Il faisait l'école buissonnière le vendredi.
+to skive | sécher, tirer au flanc | v | B2 | /skaɪv/ | Don't skive off school! | Ne sèche pas l'école !
+straight A's | que des 20 sur 20 | expr | B2 | /ˌstreɪt ˈeɪz/ | She got straight A's this term. | Elle n'a eu que des excellentes notes ce trimestre.
+to brush up on | se remettre à niveau en | v | B2 | /brʌʃ ˈʌp ɒn/ | I need to brush up on my English. | Je dois rafraîchir mon anglais.
 `,
 );
 
@@ -256,6 +358,89 @@ nightlife | vie nocturne | n | B2 | /ˈnaɪtlaɪf/ | The city's nightlife is qui
 city hall | hôtel de ville | n | B1 | /ˌsɪti ˈhɔːl/ | The wedding took place at city hall. | Le mariage a eu lieu à l'hôtel de ville.
 courthouse | palais de justice | n | B2 | /ˈkɔːthaʊs/ | The courthouse is on the main square. | Le palais de justice est sur la place principale.
 cemetery | cimetière | n | B1 | /ˈsemətri/ | We visited the cemetery on Friday. | Nous sommes allés au cimetière vendredi.
+borough | arrondissement, municipalité | n | C1 | /ˈbʌrə/ | Brooklyn is a borough of New York. | Brooklyn est un arrondissement de New York.
+main street | rue principale | n | A2 | /ˈmeɪn striːt/ | The bank is on Main Street. | La banque est dans la rue principale.
+cul-de-sac | impasse | n | B2 | /ˈkʌl də sæk/ | They live in a quiet cul-de-sac. | Ils habitent dans une impasse tranquille.
+pedestrian crossing | passage piéton | n | B1 | /pəˌdestriən ˈkrɒsɪŋ/ | Cross at the pedestrian crossing. | Traverse au passage piéton.
+sidewalk | trottoir (US) | n | A2 | /ˈsaɪdwɔːk/ | Walk on the sidewalk. | Marche sur le trottoir.
+kerb | bord du trottoir | n | B2 | /kɜːb/ | Don't park on the kerb. | Ne te gare pas sur le bord du trottoir.
+gutter | caniveau ; gouttière | n | B2 | /ˈɡʌtər/ | Leaves blocked the gutter. | Les feuilles ont bouché le caniveau.
+lamppost | lampadaire | n | B1 | /ˈlæmppəʊst/ | The dog stopped at every lamppost. | Le chien s'arrêtait à chaque lampadaire.
+cathedral | cathédrale | n | B1 | /kəˈθiːdrəl/ | We visited the cathedral. | Nous avons visité la cathédrale.
+parking lot | parking (US) | n | A2 | /ˈpɑːkɪŋ lɒt/ | The parking lot was full. | Le parking était plein.
+multi-storey car park | parking à étages | n | B2 | /ˌmʌlti ˌstɔːri ˈkɑː pɑːk/ | We left the car in a multi-storey car park. | Nous avons laissé la voiture dans un parking à étages.
+the Tube | le métro de Londres | n | B1 | /ðə tjuːb/ | I take the Tube to work. | Je prends le métro pour aller travailler.
+cab | taxi | n | A2 | /kæb/ | Let's take a cab. | Prenons un taxi.
+congestion | embouteillages, encombrement | n | C1 | /kənˈdʒestʃən/ | Congestion is a big problem downtown. | Les embouteillages sont un gros problème en centre-ville.
+tower block | tour d'habitation | n | B2 | /ˈtaʊə blɒk/ | They live on the tenth floor of a tower block. | Ils habitent au dixième étage d'une tour.
+high-rise | immeuble de grande hauteur | n | B2 | /ˈhaɪ raɪz/ | High-rises dominate the skyline. | Les tours dominent l'horizon.
+apartment building | immeuble d'habitation | n | A2 | /əˈpɑːtmənt ˌbɪldɪŋ/ | Our apartment building has a lift. | Notre immeuble a un ascenseur.
+mall | centre commercial | n | A2 | /mɔːl/ | Let's meet at the mall. | Retrouvons-nous au centre commercial.
+newsagent's | marchand de journaux | n | B1 | /ˈnjuːzeɪdʒənts/ | I bought a paper at the newsagent's. | J'ai acheté un journal chez le marchand de journaux.
+cash machine | distributeur de billets | n | A2 | /ˈkæʃ məˌʃiːn/ | Is there a cash machine near here? | Y a-t-il un distributeur de billets près d'ici ?
+pub | pub, bar | n | A2 | /pʌb/ | They watched the match in a pub. | Ils ont regardé le match dans un pub.
+construction site | chantier | n | B1 | /kənˈstrʌkʃn saɪt/ | Wear a helmet on the construction site. | Porte un casque sur le chantier.
+crane | grue | n | B1 | /kreɪn/ | A crane lifted the beams. | Une grue a soulevé les poutres.
+scaffolding | échafaudage | n | B2 | /ˈskæfəldɪŋ/ | The church is covered in scaffolding. | L'église est couverte d'échafaudages.
+tunnel | tunnel | n | A2 | /ˈtʌnl/ | The train went into a tunnel. | Le train est entré dans un tunnel.
+canal | canal | n | B1 | /kəˈnæl/ | Venice is famous for its canals. | Venise est célèbre pour ses canaux.
+dock | quai, dock | n | B2 | /dɒk/ | The ship is at the dock. | Le navire est à quai.
+embankment | quai, berge aménagée | n | C1 | /ɪmˈbæŋkmənt/ | We walked along the embankment. | Nous avons marché le long des quais.
+quay | quai | n | B2 | /kiː/ | Fishing boats were tied to the quay. | Des bateaux de pêche étaient amarrés au quai.
+riverside | bord de rivière | n | B1 | /ˈrɪvəsaɪd/ | We had lunch at a riverside café. | Nous avons déjeuné dans un café au bord de l'eau.
+skyline | silhouette de la ville | n | B2 | /ˈskaɪlaɪn/ | The New York skyline is famous. | La silhouette de New York est célèbre.
+urbanisation | urbanisation | n | C1 | /ˌɜːbənaɪˈzeɪʃn/ | Urbanisation is growing fast in Africa. | L'urbanisation progresse vite en Afrique.
+overcrowding | surpeuplement | n | C1 | /ˌəʊvəˈkraʊdɪŋ/ | Overcrowding is a problem in big cities. | Le surpeuplement est un problème dans les grandes villes.
+bustling | animé, grouillant | adj | C1 | /ˈbʌslɪŋ/ | It's a bustling market town. | C'est une petite ville de marché animée.
+vibrant | dynamique, vivant | adj | B2 | /ˈvaɪbrənt/ | Berlin is a vibrant city. | Berlin est une ville dynamique.
+derelict | abandonné, en ruine | adj | C1 | /ˈderəlɪkt/ | The factory has been derelict for years. | L'usine est abandonnée depuis des années.
+slum | bidonville, taudis | n | B2 | /slʌm/ | Millions live in slums. | Des millions de personnes vivent dans des bidonvilles.
+shanty town | bidonville | n | C1 | /ˈʃænti taʊn/ | A shanty town grew around the city. | Un bidonville s'est formé autour de la ville.
+ghetto | ghetto | n | C1 | /ˈɡetəʊ/ | He grew up in a ghetto. | Il a grandi dans un ghetto.
+gentrification | embourgeoisement | n | C2 | /ˌdʒentrɪfɪˈkeɪʃn/ | Gentrification pushed up rents. | L'embourgeoisement a fait grimper les loyers.
+regeneration | réhabilitation, renouvellement | n | C1 | /rɪˌdʒenəˈreɪʃn/ | The docks underwent regeneration. | Les docks ont été réhabilités.
+council estate | cité HLM | n | B2 | /ˈkaʊnsl ɪˌsteɪt/ | She grew up on a council estate. | Elle a grandi dans une cité HLM.
+social housing | logement social | n | B2 | /ˌsəʊʃl ˈhaʊzɪŋ/ | The city needs more social housing. | La ville a besoin de plus de logements sociaux.
+crime rate | taux de criminalité | n | B2 | /ˈkraɪm reɪt/ | The crime rate has fallen. | Le taux de criminalité a baissé.
+street cleaner | agent de propreté | n | B1 | /ˈstriːt ˌkliːnər/ | The street cleaner starts at dawn. | L'agent de propreté commence à l'aube.
+councillor | conseiller municipal | n | C1 | /ˈkaʊnsələr/ | Write to your local councillor. | Écris à ton conseiller municipal.
+urban planning | urbanisme | n | C1 | /ˌɜːbən ˈplænɪŋ/ | She works in urban planning. | Elle travaille dans l'urbanisme.
+zoning | zonage | n | C2 | /ˈzəʊnɪŋ/ | Zoning laws forbid factories here. | Les règles de zonage interdisent les usines ici.
+infrastructure | infrastructures | n | C1 | /ˈɪnfrəstrʌktʃər/ | The city invested in infrastructure. | La ville a investi dans les infrastructures.
+amenities | commodités, équipements | n | C1 | /əˈmiːnətiz/ | The area has good amenities. | Le quartier est bien équipé.
+facilities | équipements, installations | n | B2 | /fəˈsɪlətiz/ | The town has excellent sports facilities. | La ville a d'excellentes installations sportives.
+public toilet | toilettes publiques | n | A2 | /ˌpʌblɪk ˈtɔɪlət/ | Where is the nearest public toilet? | Où sont les toilettes publiques les plus proches ?
+road sign | panneau de signalisation | n | A2 | /ˈrəʊd saɪn/ | I didn't see the road sign. | Je n'ai pas vu le panneau.
+ring road | périphérique, rocade | n | B2 | /ˈrɪŋ rəʊd/ | Take the ring road to avoid the centre. | Prends le périphérique pour éviter le centre.
+bypass | rocade, déviation | n | B2 | /ˈbaɪpɑːs/ | The new bypass avoids the village. | La nouvelle déviation contourne le village.
+flyover | pont routier, toboggan | n | C1 | /ˈflaɪəʊvər/ | Traffic was stuck on the flyover. | La circulation était bloquée sur le pont routier.
+overpass | passage supérieur (US) | n | C1 | /ˈəʊvəpɑːs/ | We drove under the overpass. | Nous sommes passés sous le pont.
+pedestrian zone | zone piétonne | n | B1 | /pəˈdestriən zəʊn/ | Cars are banned in the pedestrian zone. | Les voitures sont interdites dans la zone piétonne.
+pedestrianised | piétonnier | adj | C1 | /pəˈdestriənaɪzd/ | The old town is pedestrianised. | La vieille ville est piétonne.
+piazza | place (à l'italienne) | n | C1 | /piˈætsə/ | Musicians played in the piazza. | Des musiciens jouaient sur la place.
+esplanade | esplanade, promenade | n | C1 | /ˌespləˈneɪd/ | We strolled along the esplanade. | Nous avons flâné sur l'esplanade.
+boardwalk | promenade en planches | n | C1 | /ˈbɔːdwɔːk/ | The boardwalk runs along the beach. | La promenade en planches longe la plage.
+green space | espace vert | n | B1 | /ˈɡriːn speɪs/ | The city needs more green spaces. | La ville a besoin de plus d'espaces verts.
+block | pâté de maisons | n | A2 | /blɒk/ | The station is two blocks away. | La gare est à deux rues d'ici.
+street corner | coin de rue | n | A2 | /ˈstriːt ˌkɔːnər/ | Meet me at the street corner. | Retrouve-moi au coin de la rue.
+doorway | embrasure de porte, entrée | n | B2 | /ˈdɔːweɪ/ | A man was sleeping in a doorway. | Un homme dormait sous un porche.
+backstreet | ruelle | n | B2 | /ˈbækstriːt/ | We got lost in the backstreets. | Nous nous sommes perdus dans les ruelles.
+side street | rue transversale | n | B1 | /ˈsaɪd striːt/ | Park in a side street. | Gare-toi dans une rue adjacente.
+thoroughfare | artère, voie principale | n | C2 | /ˈθʌrəfeər/ | Oxford Street is a busy thoroughfare. | Oxford Street est une artère très fréquentée.
+metropolis | métropole | n | C1 | /məˈtrɒpəlɪs/ | Tokyo is a huge metropolis. | Tokyo est une immense métropole.
+megacity | mégapole | n | C1 | /ˈmeɡəsɪti/ | Lagos is a fast-growing megacity. | Lagos est une mégapole en pleine croissance.
+conurbation | agglomération | n | C2 | /ˌkɒnɜːˈbeɪʃn/ | Lille is part of a large conurbation. | Lille fait partie d'une grande agglomération.
+township | township, commune | n | C1 | /ˈtaʊnʃɪp/ | Soweto is a famous township. | Soweto est un township célèbre.
+parish | paroisse, commune | n | C1 | /ˈpærɪʃ/ | The parish has three hundred inhabitants. | La commune compte trois cents habitants.
+commuter belt | grande banlieue | n | C1 | /kəˈmjuːtə belt/ | They moved to the commuter belt. | Ils ont déménagé en grande banlieue.
+dormitory town | ville-dortoir | n | C1 | /ˈdɔːmətri taʊn/ | It has become a dormitory town. | C'est devenu une ville-dortoir.
+new town | ville nouvelle | n | B2 | /ˌnjuː ˈtaʊn/ | Milton Keynes is a new town. | Milton Keynes est une ville nouvelle.
+twin town | ville jumelée | n | B1 | /ˌtwɪn ˈtaʊn/ | Laval's twin town is in Germany. | La ville jumelée de Laval est en Allemagne.
+townsfolk | habitants (d'une ville) | n | C1 | /ˈtaʊnzfəʊk/ | The townsfolk gathered in the square. | Les habitants se sont rassemblés sur la place.
+streetwise | débrouillard (en ville) | adj | C1 | /ˈstriːtwaɪz/ | City kids are often streetwise. | Les enfants des villes sont souvent débrouillards.
+urbane | raffiné, courtois | adj | C2 | /ɜːˈbeɪn/ | He was charming and urbane. | Il était charmant et raffiné.
+bike lane | piste cyclable | n | A2 | /ˈbaɪk leɪn/ | The new bike lane is safer. | La nouvelle piste cyclable est plus sûre.
+city break | court séjour en ville | n | B1 | /ˈsɪti breɪk/ | We went on a city break to Lisbon. | Nous avons fait un court séjour à Lisbonne.
 `,
 );
 
@@ -386,5 +571,102 @@ photosynthesis | photosynthèse | n | C1 | /ˌfəʊtəʊˈsɪnθəsɪs/ | Plants
 evaporate | s'évaporer | v | B2 | /ɪˈvæpəreɪt/ | Water evaporates in the sun. | L'eau s'évapore au soleil.
 water cycle | cycle de l'eau | n | B1 | /ˈwɔːtə ˌsaɪkl/ | We studied the water cycle at school. | Nous avons étudié le cycle de l'eau à l'école.
 rainwater | eau de pluie | n | B1 | /ˈreɪnwɔːtər/ | We collect rainwater for the garden. | Nous récupérons l'eau de pluie pour le jardin.
+wood | bois | n | A2 | /wʊd/ | The table is made of wood. | La table est en bois.
+birch | bouleau | n | B2 | /bɜːtʃ/ | Birch trees have white bark. | Les bouleaux ont une écorce blanche.
+willow | saule | n | B2 | /ˈwɪləʊ/ | A willow grew by the river. | Un saule poussait au bord de la rivière.
+maple | érable | n | B2 | /ˈmeɪpl/ | Maple leaves turn red in autumn. | Les feuilles d'érable rougissent en automne.
+beech | hêtre | n | B2 | /biːtʃ/ | We walked through a beech forest. | Nous avons traversé une hêtraie.
+elm | orme | n | C1 | /elm/ | An old elm stood in the square. | Un vieil orme se dressait sur la place.
+ash tree | frêne | n | C1 | /ˈæʃ triː/ | The ash tree lost its leaves early. | Le frêne a perdu ses feuilles tôt.
+chestnut | châtaigne, marron | n | B1 | /ˈtʃesnʌt/ | We picked chestnuts in the woods. | Nous avons ramassé des châtaignes dans les bois.
+cedar | cèdre | n | B2 | /ˈsiːdər/ | The cedars of Lebanon are famous. | Les cèdres du Liban sont célèbres.
+fir | sapin | n | B1 | /fɜːr/ | Fir trees stay green all year. | Les sapins restent verts toute l'année.
+yew | if | n | C1 | /juː/ | Yew trees can live for centuries. | Les ifs peuvent vivre des siècles.
+poplar | peuplier | n | C1 | /ˈpɒplər/ | Tall poplars lined the road. | De grands peupliers bordaient la route.
+shrub | arbuste | n | B2 | /ʃrʌb/ | Plant a shrub near the wall. | Plante un arbuste près du mur.
+undergrowth | sous-bois, broussailles | n | C1 | /ˈʌndəɡrəʊθ/ | A rabbit hid in the undergrowth. | Un lapin s'est caché dans les broussailles.
+boulder | rocher | n | B2 | /ˈbəʊldər/ | A huge boulder blocked the path. | Un énorme rocher bloquait le chemin.
+prairie | prairie (Amérique du Nord) | n | B2 | /ˈpreəri/ | Bison once roamed the prairie. | Les bisons parcouraient autrefois la prairie.
+bog | tourbière, marécage | n | B2 | /bɒɡ/ | My boots got stuck in the bog. | Mes bottes sont restées coincées dans le marécage.
+brook | ruisseau | n | B2 | /brʊk/ | A brook runs through the garden. | Un ruisseau traverse le jardin.
+cove | crique | n | B2 | /kəʊv/ | We swam in a quiet cove. | Nous avons nagé dans une crique tranquille.
+lily | lys | n | B1 | /ˈlɪli/ | She put white lilies in a vase. | Elle a mis des lys blancs dans un vase.
+poppy | coquelicot | n | B1 | /ˈpɒpi/ | Red poppies grew in the field. | Des coquelicots rouges poussaient dans le champ.
+dandelion | pissenlit | n | B1 | /ˈdændɪlaɪən/ | The child blew on a dandelion. | L'enfant a soufflé sur un pissenlit.
+lavender | lavande | n | B1 | /ˈlævəndər/ | Provence smells of lavender. | La Provence sent la lavande.
+violet | violette | n | B1 | /ˈvaɪələt/ | Violets grow in the shade. | Les violettes poussent à l'ombre.
+orchid | orchidée | n | B2 | /ˈɔːkɪd/ | He gave her an orchid. | Il lui a offert une orchidée.
+bluebell | jacinthe des bois | n | B2 | /ˈbluːbel/ | The woods were full of bluebells. | Les bois étaient couverts de jacinthes.
+buttercup | bouton-d'or | n | B2 | /ˈbʌtəkʌp/ | Cows graze among the buttercups. | Les vaches broutent parmi les boutons-d'or.
+clover | trèfle | n | B2 | /ˈkləʊvər/ | She found a four-leaf clover. | Elle a trouvé un trèfle à quatre feuilles.
+heather | bruyère | n | B2 | /ˈheðər/ | Purple heather covered the hills. | La bruyère violette recouvrait les collines.
+thistle | chardon | n | B2 | /ˈθɪsl/ | The thistle is the symbol of Scotland. | Le chardon est le symbole de l'Écosse.
+nettle | ortie | n | B2 | /ˈnetl/ | I got stung by a nettle. | Je me suis piqué avec une ortie.
+fungus | champignon (biologie) | n | B2 | /ˈfʌŋɡəs/ | A fungus grew on the log. | Un champignon a poussé sur la bûche.
+berry | baie | n | A2 | /ˈberi/ | Don't eat those berries. | Ne mange pas ces baies.
+wildflower | fleur sauvage | n | B1 | /ˈwaɪldflaʊər/ | The meadow is full of wildflowers. | La prairie est pleine de fleurs sauvages.
+view | vue, panorama | n | A2 | /vjuː/ | What a beautiful view! | Quelle belle vue !
+nature trail | sentier de découverte | n | B1 | /ˈneɪtʃə treɪl/ | We followed the nature trail. | Nous avons suivi le sentier de découverte.
+hiking path | sentier de randonnée | n | A2 | /ˈhaɪkɪŋ pɑːθ/ | The hiking path goes up the mountain. | Le sentier de randonnée monte la montagne.
+the great outdoors | la nature, le grand air | expr | B2 | /ðə ˌɡreɪt ˈaʊtdɔːz/ | He loves the great outdoors. | Il adore le grand air.
+lava | lave | n | B2 | /ˈlɑːvə/ | Lava flowed down the volcano. | La lave a coulé sur les flancs du volcan.
+crater | cratère | n | B2 | /ˈkreɪtər/ | We looked into the crater. | Nous avons regardé dans le cratère.
+iceberg | iceberg | n | B1 | /ˈaɪsbɜːɡ/ | The Titanic hit an iceberg. | Le Titanic a heurté un iceberg.
+geyser | geyser | n | C1 | /ˈɡiːzər/ | The geyser erupts every hour. | Le geyser jaillit toutes les heures.
+hot spring | source chaude | n | B2 | /ˌhɒt ˈsprɪŋ/ | We bathed in a hot spring. | Nous nous sommes baignés dans une source chaude.
+ridge | crête, arête | n | C1 | /rɪdʒ/ | We walked along the ridge. | Nous avons marché le long de la crête.
+foothills | contreforts | n | C1 | /ˈfʊthɪlz/ | The village lies in the foothills of the Alps. | Le village se trouve dans les contreforts des Alpes.
+gully | ravine | n | C1 | /ˈɡʌli/ | Rain carved a deep gully. | La pluie a creusé une profonde ravine.
+crevasse | crevasse | n | C1 | /krəˈvæs/ | The climber fell into a crevasse. | L'alpiniste est tombé dans une crevasse.
+scree | éboulis | n | C2 | /skriː/ | We slid down the scree. | Nous avons glissé sur les éboulis.
+glade | clairière | n | C2 | /ɡleɪd/ | Deer grazed in the glade. | Des cerfs broutaient dans la clairière.
+clearing | clairière | n | B2 | /ˈklɪərɪŋ/ | We camped in a clearing. | Nous avons campé dans une clairière.
+grove | bosquet, oliveraie | n | C1 | /ɡrəʊv/ | We rested in an olive grove. | Nous nous sommes reposés dans une oliveraie.
+thicket | fourré | n | C1 | /ˈθɪkɪt/ | A boar ran into the thicket. | Un sanglier s'est enfui dans le fourré.
+copse | bosquet | n | C2 | /kɒps/ | A small copse stood on the hill. | Un petit bosquet se dressait sur la colline.
+canopy | canopée | n | C1 | /ˈkænəpi/ | Monkeys live in the forest canopy. | Les singes vivent dans la canopée.
+sapling | jeune arbre | n | C1 | /ˈsæplɪŋ/ | We planted a sapling in the garden. | Nous avons planté un jeune arbre dans le jardin.
+stump | souche | n | B2 | /stʌmp/ | He sat on a tree stump. | Il s'est assis sur une souche.
+driftwood | bois flotté | n | C1 | /ˈdrɪftwʊd/ | We collected driftwood on the beach. | Nous avons ramassé du bois flotté sur la plage.
+seashell | coquillage | n | A2 | /ˈsiːʃel/ | The children collected seashells. | Les enfants ont ramassé des coquillages.
+rock pool | flaque entre les rochers | n | B2 | /ˈrɒk puːl/ | We found a crab in a rock pool. | Nous avons trouvé un crabe dans une flaque entre les rochers.
+sandbank | banc de sable | n | C1 | /ˈsændbæŋk/ | Seals rest on the sandbank. | Les phoques se reposent sur le banc de sable.
+mudflat | vasière | n | C2 | /ˈmʌdflæt/ | Birds feed on the mudflats. | Les oiseaux se nourrissent sur les vasières.
+salt marsh | marais salant, pré salé | n | C1 | /ˈsɔːlt mɑːʃ/ | Sheep graze on the salt marsh. | Les moutons paissent sur les prés salés.
+atoll | atoll | n | C2 | /ˈætɒl/ | The atoll is a ring of coral. | L'atoll est un anneau de corail.
+isthmus | isthme | n | C2 | /ˈɪsməs/ | The isthmus links two continents. | L'isthme relie deux continents.
+meander | méandre | n | C1 | /miˈændər/ | The river makes a wide meander. | La rivière fait un large méandre.
+rapids | rapides | n | B2 | /ˈræpɪdz/ | We went down the rapids in a canoe. | Nous avons descendu les rapides en canoë.
+whirlpool | tourbillon (d'eau) | n | B2 | /ˈwɜːlpuːl/ | The boat was caught in a whirlpool. | Le bateau a été pris dans un tourbillon.
+ebb | reflux | n | C1 | /eb/ | The ebb leaves the boats on the sand. | Le reflux laisse les bateaux sur le sable.
+high tide | marée haute | n | B1 | /ˌhaɪ ˈtaɪd/ | The beach disappears at high tide. | La plage disparaît à marée haute.
+low tide | marée basse | n | B1 | /ˌləʊ ˈtaɪd/ | We can walk to the island at low tide. | On peut marcher jusqu'à l'île à marée basse.
+landslide | glissement de terrain | n | B2 | /ˈlændslaɪd/ | A landslide blocked the road. | Un glissement de terrain a bloqué la route.
+pollination | pollinisation | n | C1 | /ˌpɒləˈneɪʃn/ | Bees are essential for pollination. | Les abeilles sont essentielles à la pollinisation.
+to pollinate | polliniser | v | C1 | /ˈpɒləneɪt/ | Insects pollinate the flowers. | Les insectes pollinisent les fleurs.
+germination | germination | n | C2 | /ˌdʒɜːmɪˈneɪʃn/ | Germination takes about a week. | La germination prend environ une semaine.
+to germinate | germer | v | C1 | /ˈdʒɜːmɪneɪt/ | The seeds germinate in spring. | Les graines germent au printemps.
+to wilt | se faner, flétrir | v | B2 | /wɪlt/ | The flowers wilt without water. | Les fleurs se fanent sans eau.
+evergreen | à feuilles persistantes | adj | B2 | /ˈevəɡriːn/ | Pine trees are evergreen. | Les pins ont des feuilles persistantes.
+deciduous | à feuilles caduques | adj | C1 | /dɪˈsɪdʒuəs/ | Oaks are deciduous trees. | Les chênes sont des arbres à feuilles caduques.
+perennial | vivace | adj | C1 | /pəˈreniəl/ | Lavender is a perennial plant. | La lavande est une plante vivace.
+invasive species | espèce invasive | n | C1 | /ɪnˌveɪsɪv ˈspiːʃiːz/ | The hornet is an invasive species. | Le frelon est une espèce invasive.
+verdant | verdoyant | adj | C2 | /ˈvɜːdnt/ | The valley was lush and verdant. | La vallée était luxuriante et verdoyante.
+rugged | accidenté, sauvage | adj | C1 | /ˈrʌɡɪd/ | Brittany has a rugged coastline. | La Bretagne a une côte sauvage.
+rocky | rocheux | adj | B1 | /ˈrɒki/ | We climbed a rocky path. | Nous avons grimpé un chemin rocheux.
+sandy | sablonneux | adj | B1 | /ˈsændi/ | It's a long sandy beach. | C'est une longue plage de sable.
+leafy | feuillu, verdoyant | adj | B2 | /ˈliːfi/ | They live in a leafy suburb. | Ils habitent une banlieue verdoyante.
+shady | ombragé | adj | B1 | /ˈʃeɪdi/ | Let's sit in a shady spot. | Asseyons-nous dans un coin ombragé.
+wooded | boisé | adj | B2 | /ˈwʊdɪd/ | The house is in a wooded area. | La maison est dans un secteur boisé.
+grassy | herbeux | adj | B1 | /ˈɡrɑːsi/ | We had a picnic on a grassy bank. | Nous avons pique-niqué sur un talus herbeux.
+mossy | moussu | adj | B2 | /ˈmɒsi/ | Be careful, the rocks are mossy. | Attention, les rochers sont moussus.
+thorny | épineux | adj | B2 | /ˈθɔːni/ | Roses have thorny stems. | Les roses ont des tiges épineuses.
+hilly | vallonné | adj | B1 | /ˈhɪli/ | The region is very hilly. | La région est très vallonnée.
+serene | serein, paisible | adj | C1 | /səˈriːn/ | The lake looked serene at dawn. | Le lac semblait paisible à l'aube.
+tranquil | tranquille, calme | adj | C1 | /ˈtræŋkwɪl/ | It's a tranquil spot by the river. | C'est un coin tranquille au bord de la rivière.
+untamed | sauvage, indompté | adj | C1 | /ʌnˈteɪmd/ | Patagonia is wild and untamed. | La Patagonie est sauvage et indomptée.
+wilderness | étendue sauvage | n | C1 | /ˈwɪldənəs/ | They got lost in the wilderness. | Ils se sont perdus dans la nature sauvage.
+picturesque | pittoresque | adj | B2 | /ˌpɪktʃəˈresk/ | It's a picturesque village. | C'est un village pittoresque.
+majestic | majestueux | adj | B2 | /məˈdʒestɪk/ | The mountains looked majestic. | Les montagnes paraissaient majestueuses.
 `,
 );

@@ -186,5 +186,92 @@ Himalayas | Himalaya | n | B2 | /ˌhɪməˈleɪəz/ | Everest is in the Himalaya
 Pacific | Pacifique | n | B1 | /pəˈsɪfɪk/ | They crossed the Pacific by boat. | Ils ont traversé le Pacifique en bateau.
 Indian Ocean | océan Indien | n | B1 | /ˌɪndiən ˈəʊʃn/ | Madagascar is in the Indian Ocean. | Madagascar est dans l'océan Indien.
 Red Sea | mer Rouge | n | B1 | /ˌred ˈsiː/ | We went diving in the Red Sea. | Nous sommes allés plonger en mer Rouge.
+county | comté | n | B2 | /ˈkaʊnti/ | Kent is a county in England. | Le Kent est un comté d'Angleterre.
+eastern | oriental, de l'est | adj | B1 | /ˈiːstən/ | Strasbourg is in eastern France. | Strasbourg se trouve dans l'est de la France.
+western | occidental, de l'ouest | adj | B1 | /ˈwestən/ | Laval is in western France. | Laval se trouve dans l'ouest de la France.
+north-east | nord-est | n | A2 | /ˌnɔːθ ˈiːst/ | The wind is blowing from the north-east. | Le vent souffle du nord-est.
+south-west | sud-ouest | n | A2 | /ˌsaʊθ ˈwest/ | Bordeaux is in the south-west of France. | Bordeaux est dans le sud-ouest de la France.
+northern hemisphere | hémisphère Nord | n | B2 | /ˌnɔːðən ˈhemɪsfɪər/ | Europe is in the northern hemisphere. | L'Europe est dans l'hémisphère Nord.
+southern hemisphere | hémisphère Sud | n | B2 | /ˌsʌðən ˈhemɪsfɪər/ | Seasons are reversed in the southern hemisphere. | Les saisons sont inversées dans l'hémisphère Sud.
+the tropics | les tropiques | n | B2 | /ðə ˈtrɒpɪks/ | It rains a lot in the tropics. | Il pleut beaucoup sous les tropiques.
+Tropic of Cancer | tropique du Cancer | n | C1 | /ˌtrɒpɪk əv ˈkænsər/ | The Tropic of Cancer crosses the Sahara. | Le tropique du Cancer traverse le Sahara.
+Antarctic | Antarctique | n | B2 | /ænˈtɑːktɪk/ | Penguins live in the Antarctic. | Les manchots vivent en Antarctique.
+North Pole | pôle Nord | n | A2 | /ˌnɔːθ ˈpəʊl/ | The North Pole is covered in ice. | Le pôle Nord est couvert de glace.
+South Pole | pôle Sud | n | A2 | /ˌsaʊθ ˈpəʊl/ | Amundsen reached the South Pole first. | Amundsen a atteint le premier le pôle Sud.
+direction | direction | n | A2 | /dəˈrekʃn/ | Which direction is the sea? | Dans quelle direction est la mer ?
+Dead Sea | mer Morte | n | B1 | /ˌded ˈsiː/ | You can float in the Dead Sea. | On peut flotter dans la mer Morte.
+Black Sea | mer Noire | n | B1 | /ˌblæk ˈsiː/ | Istanbul lies on the Black Sea. | Istanbul se trouve au bord de la mer Noire.
+North Sea | mer du Nord | n | B1 | /ˌnɔːθ ˈsiː/ | The North Sea is cold and grey. | La mer du Nord est froide et grise.
+Caspian Sea | mer Caspienne | n | B2 | /ˌkæspiən ˈsiː/ | The Caspian Sea is the largest lake in the world. | La mer Caspienne est le plus grand lac du monde.
+Persian Gulf | golfe Persique | n | B2 | /ˌpɜːʃn ˈɡʌlf/ | Oil tankers cross the Persian Gulf. | Les pétroliers traversent le golfe Persique.
+English Channel | la Manche | n | B1 | /ˌɪŋɡlɪʃ ˈtʃænl/ | We crossed the English Channel by ferry. | Nous avons traversé la Manche en ferry.
+Arabian Peninsula | péninsule Arabique | n | B2 | /əˌreɪbiən pəˈnɪnsjələ/ | Mecca is in the Arabian Peninsula. | La Mecque est dans la péninsule Arabique.
+Andes | Andes | n | B2 | /ˈændiːz/ | The Andes run along South America. | Les Andes longent l'Amérique du Sud.
+Atlas Mountains | massif de l'Atlas | n | B2 | /ˌætləs ˈmaʊntənz/ | Berber villages dot the Atlas Mountains. | Des villages berbères parsèment l'Atlas.
+Rockies | montagnes Rocheuses | n | B2 | /ˈrɒkiz/ | We hiked in the Rockies. | Nous avons randonné dans les Rocheuses.
+Pyrenees | Pyrénées | n | B1 | /ˌpɪrəˈniːz/ | The Pyrenees separate France and Spain. | Les Pyrénées séparent la France et l'Espagne.
+Euphrates | Euphrate | n | B2 | /juːˈfreɪtiːz/ | The Euphrates flows through Iraq. | L'Euphrate traverse l'Irak.
+Tigris | Tigre (fleuve) | n | B2 | /ˈtaɪɡrɪs/ | Baghdad lies on the Tigris. | Bagdad est située sur le Tigre.
+Amazon | Amazone ; Amazonie | n | B1 | /ˈæməzən/ | The Amazon is the largest rainforest. | L'Amazonie est la plus grande forêt tropicale.
+Danube | Danube | n | B2 | /ˈdænjuːb/ | The Danube flows into the Black Sea. | Le Danube se jette dans la mer Noire.
+Rhine | Rhin | n | B2 | /raɪn/ | The Rhine forms part of the border with Germany. | Le Rhin forme une partie de la frontière avec l'Allemagne.
+Loire | Loire | n | B1 | /lwɑːr/ | The Loire is the longest river in France. | La Loire est le plus long fleuve de France.
+Seine | Seine | n | A2 | /seɪn/ | The Seine flows through Paris. | La Seine traverse Paris.
+Thames | Tamise | n | B1 | /temz/ | London Bridge crosses the Thames. | Le London Bridge enjambe la Tamise.
+Mississippi | Mississippi | n | B2 | /ˌmɪsɪˈsɪpi/ | The Mississippi flows into the Gulf of Mexico. | Le Mississippi se jette dans le golfe du Mexique.
+climate zone | zone climatique | n | B2 | /ˈklaɪmət zəʊn/ | France has several climate zones. | La France a plusieurs zones climatiques.
+population density | densité de population | n | C1 | /ˌpɒpjuˈleɪʃn ˌdensəti/ | Mayenne has a low population density. | La Mayenne a une faible densité de population.
+sparsely populated | peu peuplé | adj | C1 | /ˌspɑːsli ˈpɒpjuleɪtɪd/ | The north of Canada is sparsely populated. | Le nord du Canada est peu peuplé.
+coastal | côtier | adj | B2 | /ˈkəʊstl/ | Coastal towns attract tourists. | Les villes côtières attirent les touristes.
+Near East | Proche-Orient | n | C1 | /ˌnɪər ˈiːst/ | The Near East has an ancient history. | Le Proche-Orient a une histoire ancienne.
+Far East | Extrême-Orient | n | B2 | /ˌfɑːr ˈiːst/ | Marco Polo travelled to the Far East. | Marco Polo a voyagé jusqu'en Extrême-Orient.
+Maghreb | Maghreb | n | B2 | /ˈmæɡreb/ | Morocco, Algeria and Tunisia form the Maghreb. | Le Maroc, l'Algérie et la Tunisie forment le Maghreb.
+North Africa | Afrique du Nord | n | A2 | /ˌnɔːθ ˈæfrɪkə/ | Couscous is popular in North Africa. | Le couscous est populaire en Afrique du Nord.
+sub-Saharan Africa | Afrique subsaharienne | n | C1 | /ˌsʌb səˌhɑːrən ˈæfrɪkə/ | Sub-Saharan Africa has a young population. | L'Afrique subsaharienne a une population jeune.
+West Africa | Afrique de l'Ouest | n | A2 | /ˌwest ˈæfrɪkə/ | Senegal is in West Africa. | Le Sénégal est en Afrique de l'Ouest.
+East Africa | Afrique de l'Est | n | A2 | /ˌiːst ˈæfrɪkə/ | Kenya is in East Africa. | Le Kenya est en Afrique de l'Est.
+Southeast Asia | Asie du Sud-Est | n | B1 | /ˌsaʊθiːst ˈeɪʒə/ | Indonesia is in Southeast Asia. | L'Indonésie est en Asie du Sud-Est.
+Central Asia | Asie centrale | n | B2 | /ˌsentrəl ˈeɪʒə/ | Samarkand is a city in Central Asia. | Samarcande est une ville d'Asie centrale.
+Latin America | Amérique latine | n | B1 | /ˌlætɪn əˈmerɪkə/ | Spanish is spoken across Latin America. | L'espagnol est parlé dans toute l'Amérique latine.
+South America | Amérique du Sud | n | A2 | /ˌsaʊθ əˈmerɪkə/ | Brazil is the largest country in South America. | Le Brésil est le plus grand pays d'Amérique du Sud.
+North America | Amérique du Nord | n | A2 | /ˌnɔːθ əˈmerɪkə/ | Canada is in North America. | Le Canada est en Amérique du Nord.
+Central America | Amérique centrale | n | B1 | /ˌsentrəl əˈmerɪkə/ | Panama is in Central America. | Le Panama est en Amérique centrale.
+Caribbean | Caraïbes | n | B1 | /ˌkærɪˈbiːən/ | We sailed around the Caribbean. | Nous avons navigué dans les Caraïbes.
+Scandinavia | Scandinavie | n | B1 | /ˌskændɪˈneɪviə/ | Winters are long in Scandinavia. | Les hivers sont longs en Scandinavie.
+the Balkans | les Balkans | n | B2 | /ðə ˈbɔːlkənz/ | Bosnia is in the Balkans. | La Bosnie est dans les Balkans.
+the Levant | le Levant | n | C1 | /ðə ləˈvænt/ | Syria and Lebanon are part of the Levant. | La Syrie et le Liban font partie du Levant.
+Mesopotamia | Mésopotamie | n | B2 | /ˌmesəpəˈteɪmiə/ | Writing was born in Mesopotamia. | L'écriture est née en Mésopotamie.
+Iberian Peninsula | péninsule Ibérique | n | B2 | /aɪˌbɪəriən pəˈnɪnsjələ/ | Spain and Portugal share the Iberian Peninsula. | L'Espagne et le Portugal se partagent la péninsule Ibérique.
+British Isles | îles Britanniques | n | B2 | /ˌbrɪtɪʃ ˈaɪlz/ | The British Isles include Ireland. | Les îles Britanniques incluent l'Irlande.
+Great Britain | Grande-Bretagne | n | A2 | /ˌɡreɪt ˈbrɪtn/ | Great Britain is an island. | La Grande-Bretagne est une île.
+Northern Ireland | Irlande du Nord | n | A2 | /ˌnɔːðən ˈaɪələnd/ | Belfast is the capital of Northern Ireland. | Belfast est la capitale de l'Irlande du Nord.
+Argentina | Argentine | n | A2 | /ˌɑːdʒənˈtiːnə/ | Argentina is famous for tango. | L'Argentine est célèbre pour le tango.
+Bosnia | Bosnie | n | A2 | /ˈbɒzniə/ | Sarajevo is the capital of Bosnia. | Sarajevo est la capitale de la Bosnie.
+Albania | Albanie | n | A2 | /ælˈbeɪniə/ | Albania lies on the Adriatic Sea. | L'Albanie est bordée par la mer Adriatique.
+GMT | heure de Greenwich | n | B2 | /ˌdʒiː em ˈtiː/ | London is on GMT in winter. | Londres est à l'heure de Greenwich en hiver.
+contour line | courbe de niveau | n | C1 | /ˈkɒntʊə laɪn/ | Contour lines show the height of the land. | Les courbes de niveau indiquent l'altitude.
+grid reference | coordonnées (carte) | n | C1 | /ˈɡrɪd ˌrefrəns/ | Give me the grid reference of the farm. | Donne-moi les coordonnées de la ferme sur la carte.
+mineral resources | ressources minérales | n | C1 | /ˌmɪnərəl rɪˈzɔːsɪz/ | The country is rich in mineral resources. | Le pays est riche en ressources minérales.
+oil reserves | réserves de pétrole | n | B2 | /ˈɔɪl rɪˌzɜːvz/ | Saudi Arabia has huge oil reserves. | L'Arabie saoudite possède d'immenses réserves de pétrole.
+trade winds | alizés | n | C1 | /ˈtreɪd wɪndz/ | Sailors used the trade winds to cross the ocean. | Les marins utilisaient les alizés pour traverser l'océan.
+ocean current | courant océanique | n | B2 | /ˈəʊʃn ˌkʌrənt/ | Ocean currents affect the climate. | Les courants océaniques influencent le climat.
+Gulf Stream | Gulf Stream | n | C1 | /ˈɡʌlf striːm/ | The Gulf Stream warms Western Europe. | Le Gulf Stream réchauffe l'Europe de l'Ouest.
+tectonic plate | plaque tectonique | n | C1 | /tekˌtɒnɪk ˈpleɪt/ | Earthquakes happen where tectonic plates meet. | Les séismes se produisent là où les plaques tectoniques se rencontrent.
+fault line | ligne de faille | n | C1 | /ˈfɔːlt laɪn/ | San Francisco sits on a fault line. | San Francisco se trouve sur une ligne de faille.
+landform | forme de relief | n | C1 | /ˈlændfɔːm/ | Mountains and valleys are landforms. | Les montagnes et les vallées sont des formes de relief.
+topography | topographie | n | C2 | /təˈpɒɡrəfi/ | The topography of the region is varied. | La topographie de la région est variée.
+demography | démographie | n | C1 | /dɪˈmɒɡrəfi/ | Demography studies populations. | La démographie étudie les populations.
+indigenous | autochtone, indigène | adj | C1 | /ɪnˈdɪdʒənəs/ | The Amazon is home to indigenous peoples. | L'Amazonie abrite des peuples autochtones.
+official language | langue officielle | n | B1 | /əˌfɪʃl ˈlæŋɡwɪdʒ/ | Arabic is the official language of Egypt. | L'arabe est la langue officielle de l'Égypte.
+dialect | dialecte | n | B2 | /ˈdaɪəlekt/ | Darija is a Moroccan dialect. | La darija est un dialecte marocain.
+seat of government | siège du gouvernement | n | C1 | /ˌsiːt əv ˈɡʌvənmənt/ | The Hague is the seat of government in the Netherlands. | La Haye est le siège du gouvernement aux Pays-Bas.
+principality | principauté | n | C1 | /ˌprɪnsɪˈpæləti/ | Monaco is a principality. | Monaco est une principauté.
+emirate | émirat | n | B2 | /ˈemɪrət/ | Dubai is one of seven emirates. | Dubaï est l'un des sept émirats.
+federation | fédération | n | C1 | /ˌfedəˈreɪʃn/ | Russia is a federation. | La Russie est une fédération.
+commonwealth | Commonwealth | n | C1 | /ˈkɒmənwelθ/ | Canada is a member of the Commonwealth. | Le Canada est membre du Commonwealth.
+overseas territory | territoire d'outre-mer | n | C1 | /ˌəʊvəsiːz ˈterətri/ | Réunion is a French overseas territory. | La Réunion est un territoire français d'outre-mer.
+enclave | enclave | n | C1 | /ˈenkleɪv/ | Ceuta is a Spanish enclave in Morocco. | Ceuta est une enclave espagnole au Maroc.
+microstate | micro-État | n | C2 | /ˈmaɪkrəʊsteɪt/ | San Marino is a microstate. | Saint-Marin est un micro-État.
+city-state | cité-État | n | C1 | /ˈsɪti steɪt/ | Singapore is a city-state. | Singapour est une cité-État.
 `,
 );

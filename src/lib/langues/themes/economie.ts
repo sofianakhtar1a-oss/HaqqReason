@@ -153,5 +153,116 @@ customer base | clientèle | n | C1 | /ˈkʌstəmə beɪs/ | We want to grow our
 sales | ventes | n | B1 | /seɪlz/ | Sales went up in December. | Les ventes ont augmenté en décembre.
 fiscal year | exercice fiscal | n | C1 | /ˌfɪskl ˈjɪər/ | The fiscal year ends in December. | L'exercice fiscal se termine en décembre.
 solvency | solvabilité | n | C2 | /ˈsɒlvənsi/ | The bank checked our solvency. | La banque a vérifié notre solvabilité.
+market economy | économie de marché | n | B2 | /ˌmɑːkɪt iˈkɒnəmi/ | Most countries have a market economy. | La plupart des pays ont une économie de marché.
+free market | libre marché | n | B2 | /ˌfriː ˈmɑːkɪt/ | He believes in the free market. | Il croit au libre marché.
+supply and demand | l'offre et la demande | expr | B2 | /səˌplaɪ ən dɪˈmɑːnd/ | Prices depend on supply and demand. | Les prix dépendent de l'offre et de la demande.
+economic growth | croissance économique | n | B2 | /ˌiːkəˌnɒmɪk ˈɡrəʊθ/ | Economic growth slowed this year. | La croissance économique a ralenti cette année.
+bust | faillite ; récession | n | C1 | /bʌst/ | The economy went from boom to bust. | L'économie est passée de l'essor à l'effondrement.
+financial crisis | crise financière | n | B2 | /faɪˌnænʃl ˈkraɪsɪs/ | The financial crisis began in 2008. | La crise financière a commencé en 2008.
+deflation | déflation | n | C1 | /diːˈfleɪʃn/ | Japan suffered years of deflation. | Le Japon a connu des années de déflation.
+central bank | banque centrale | n | B2 | /ˌsentrəl ˈbæŋk/ | The central bank raised interest rates. | La banque centrale a relevé ses taux.
+banking | secteur bancaire | n | B2 | /ˈbæŋkɪŋ/ | He has a career in banking. | Il fait carrière dans la banque.
+national debt | dette nationale | n | C1 | /ˌnæʃnəl ˈdet/ | The national debt keeps growing. | La dette nationale ne cesse d'augmenter.
+public debt | dette publique | n | C1 | /ˌpʌblɪk ˈdet/ | France's public debt is high. | La dette publique de la France est élevée.
+trade surplus | excédent commercial | n | C1 | /ˈtreɪd ˌsɜːpləs/ | Germany has a large trade surplus. | L'Allemagne a un fort excédent commercial.
+GNP | PNB | n | C1 | /ˌdʒiː en ˈpiː/ | GNP includes income from abroad. | Le PNB inclut les revenus de l'étranger.
+expenditure | dépenses | n | C1 | /ɪkˈspendɪtʃər/ | Public expenditure rose by three per cent. | Les dépenses publiques ont augmenté de trois pour cent.
+shares | actions | n | B2 | /ʃeəz/ | She bought shares in the company. | Elle a acheté des actions de l'entreprise.
+stock exchange | Bourse | n | B2 | /ˈstɒk ɪksˌtʃeɪndʒ/ | The company is listed on the stock exchange. | L'entreprise est cotée en Bourse.
+capitalist | capitaliste | adj | B2 | /ˈkæpɪtəlɪst/ | The USA is a capitalist country. | Les États-Unis sont un pays capitaliste.
+employment | emploi | n | B2 | /ɪmˈplɔɪmənt/ | Employment rose last month. | L'emploi a progressé le mois dernier.
+labour market | marché du travail | n | C1 | /ˈleɪbə ˌmɑːkɪt/ | Young people struggle on the labour market. | Les jeunes ont du mal sur le marché du travail.
+receivership | redressement judiciaire | n | C2 | /rɪˈsiːvəʃɪp/ | The firm went into receivership. | L'entreprise a été placée en redressement judiciaire.
+liquidation | liquidation | n | C1 | /ˌlɪkwɪˈdeɪʃn/ | The company went into liquidation. | L'entreprise a été mise en liquidation.
+corporation tax | impôt sur les sociétés | n | C1 | /ˌkɔːpəˈreɪʃn tæks/ | Corporation tax was cut to 25%. | L'impôt sur les sociétés a été réduit à 25 %.
+tax avoidance | optimisation fiscale | n | C1 | /ˈtæks əˌvɔɪdəns/ | Tax avoidance is legal but unfair. | L'optimisation fiscale est légale mais injuste.
+tax haven | paradis fiscal | n | C1 | /ˈtæks ˌheɪvn/ | He hid his money in a tax haven. | Il a caché son argent dans un paradis fiscal.
+tax break | allègement fiscal | n | C1 | /ˈtæks breɪk/ | Families get a tax break for children. | Les familles ont un allègement fiscal pour les enfants.
+customs duty | droits de douane | n | C1 | /ˈkʌstəmz ˌdjuːti/ | You must pay customs duty on the parcel. | Tu dois payer des droits de douane sur le colis.
+trade war | guerre commerciale | n | C1 | /ˈtreɪd wɔːr/ | The trade war hurt both countries. | La guerre commerciale a nui aux deux pays.
+trade agreement | accord commercial | n | C1 | /ˈtreɪd əˌɡriːmənt/ | The two countries signed a trade agreement. | Les deux pays ont signé un accord commercial.
+devaluation | dévaluation | n | C1 | /ˌdiːvæljuˈeɪʃn/ | The devaluation made imports dearer. | La dévaluation a renchéri les importations.
+cryptocurrency | cryptomonnaie | n | B2 | /ˈkrɪptəʊˌkʌrənsi/ | Bitcoin is a cryptocurrency. | Le bitcoin est une cryptomonnaie.
+bitcoin | bitcoin | n | B2 | /ˈbɪtkɔɪn/ | He paid in bitcoin. | Il a payé en bitcoins.
+blockchain | chaîne de blocs | n | C1 | /ˈblɒktʃeɪn/ | Blockchain records every transaction. | La chaîne de blocs enregistre chaque transaction.
+fintech | technologie financière | n | C1 | /ˈfɪntek/ | Fintech is changing banking. | La fintech transforme la banque.
+entrepreneurship | entrepreneuriat | n | C1 | /ˌɒntrəprəˈnɜːʃɪp/ | The government encourages entrepreneurship. | Le gouvernement encourage l'entrepreneuriat.
+primary sector | secteur primaire | n | C1 | /ˌpraɪməri ˈsektər/ | Farming is part of the primary sector. | L'agriculture fait partie du secteur primaire.
+secondary sector | secteur secondaire | n | C1 | /ˌsekəndri ˈsektər/ | Industry belongs to the secondary sector. | L'industrie relève du secteur secondaire.
+tertiary sector | secteur tertiaire | n | C1 | /ˌtɜːʃəri ˈsektər/ | Most French jobs are in the tertiary sector. | La plupart des emplois français sont dans le tertiaire.
+service sector | secteur des services | n | B2 | /ˈsɜːvɪs ˌsektər/ | The service sector is growing. | Le secteur des services progresse.
+manufacturing | industrie manufacturière | n | B2 | /ˌmænjuˈfæktʃərɪŋ/ | Manufacturing moved to Asia. | L'industrie manufacturière est partie en Asie.
+price index | indice des prix | n | C1 | /ˈpraɪs ˌɪndeks/ | The consumer price index rose by 2%. | L'indice des prix à la consommation a augmenté de 2 %.
+outlook | perspectives | n | C1 | /ˈaʊtlʊk/ | The economic outlook is uncertain. | Les perspectives économiques sont incertaines.
+upturn | reprise, embellie | n | C1 | /ˈʌptɜːn/ | We expect an upturn next year. | Nous prévoyons une reprise l'an prochain.
+stimulus | relance (économique) | n | C1 | /ˈstɪmjələs/ | The government announced a stimulus plan. | Le gouvernement a annoncé un plan de relance.
+to bail out | renflouer | v | C1 | /beɪl ˈaʊt/ | The state had to bail out the banks. | L'État a dû renflouer les banques.
+quantitative easing | assouplissement quantitatif | n | C2 | /ˌkwɒntɪtətɪv ˈiːzɪŋ/ | Quantitative easing means printing money. | L'assouplissement quantitatif revient à créer de la monnaie.
+fiscal policy | politique budgétaire | n | C1 | /ˌfɪskl ˈpɒləsi/ | Fiscal policy is set by the government. | La politique budgétaire est fixée par le gouvernement.
+monetary policy | politique monétaire | n | C1 | /ˌmʌnɪtri ˈpɒləsi/ | The ECB controls monetary policy. | La BCE contrôle la politique monétaire.
+privatisation | privatisation | n | C1 | /ˌpraɪvətaɪˈzeɪʃn/ | The privatisation of the railways was criticised. | La privatisation des chemins de fer a été critiquée.
+nationalisation | nationalisation | n | C1 | /ˌnæʃnəlaɪˈzeɪʃn/ | The nationalisation of the banks took place in 1982. | La nationalisation des banques a eu lieu en 1982.
+welfare state | État-providence | n | C1 | /ˌwelfeə ˈsteɪt/ | France has a strong welfare state. | La France a un État-providence solide.
+social security | sécurité sociale | n | B2 | /ˌsəʊʃl sɪˈkjʊərəti/ | Social security pays for medical care. | La sécurité sociale prend en charge les soins.
+pension fund | fonds de pension | n | C1 | /ˈpenʃn fʌnd/ | Pension funds invest in shares. | Les fonds de pension investissent en actions.
+retirement age | âge de la retraite | n | B2 | /rɪˈtaɪəmənt eɪdʒ/ | The retirement age was raised to 64. | L'âge de la retraite a été relevé à 64 ans.
+annual budget | budget annuel | n | B2 | /ˌænjuəl ˈbʌdʒɪt/ | The annual budget was approved. | Le budget annuel a été approuvé.
+auditor | auditeur, commissaire aux comptes | n | C1 | /ˈɔːdɪtər/ | The auditor checked the accounts. | Le commissaire aux comptes a vérifié les comptes.
+accounting | comptabilité | n | B2 | /əˈkaʊntɪŋ/ | She studied accounting. | Elle a étudié la comptabilité.
+financial year | exercice financier | n | C1 | /faɪˌnænʃl ˈjɪər/ | The financial year ends in March. | L'exercice se termine en mars.
+gross | brut | adj | B2 | /ɡrəʊs/ | His gross salary is 2,500 euros. | Son salaire brut est de 2 500 euros.
+margin | marge | n | B2 | /ˈmɑːdʒɪn/ | Our margin is very small. | Notre marge est très faible.
+fixed costs | frais fixes | n | C1 | /ˌfɪkst ˈkɒsts/ | Rent is one of our fixed costs. | Le loyer fait partie de nos frais fixes.
+variable costs | coûts variables | n | C1 | /ˌveəriəbl ˈkɒsts/ | Variable costs rise with production. | Les coûts variables augmentent avec la production.
+debtor | débiteur | n | C1 | /ˈdetər/ | The debtor couldn't pay. | Le débiteur ne pouvait pas payer.
+lender | prêteur | n | C1 | /ˈlendər/ | The lender refused the loan. | Le prêteur a refusé le prêt.
+borrower | emprunteur | n | C1 | /ˈbɒrəʊər/ | The borrower must repay within five years. | L'emprunteur doit rembourser sous cinq ans.
+compound interest | intérêts composés | n | C1 | /ˌkɒmpaʊnd ˈɪntrəst/ | Compound interest makes debt grow fast. | Les intérêts composés font vite grossir la dette.
+inflation rate | taux d'inflation | n | B2 | /ɪnˈfleɪʃn reɪt/ | The inflation rate reached 6%. | Le taux d'inflation a atteint 6 %.
+credit crunch | resserrement du crédit | n | C2 | /ˈkredɪt krʌntʃ/ | The credit crunch hit small firms. | Le resserrement du crédit a frappé les petites entreprises.
+housing bubble | bulle immobilière | n | C1 | /ˈhaʊzɪŋ ˌbʌbl/ | The housing bubble burst in 2008. | La bulle immobilière a éclaté en 2008.
+speculator | spéculateur | n | C1 | /ˈspekjuleɪtər/ | Speculators drove up the price. | Les spéculateurs ont fait monter le prix.
+hedge fund | fonds spéculatif | n | C1 | /ˈhedʒ fʌnd/ | He runs a hedge fund in London. | Il dirige un fonds spéculatif à Londres.
+broker | courtier | n | C1 | /ˈbrəʊkər/ | Ask your broker for advice. | Demande conseil à ton courtier.
+stockbroker | agent de change | n | C1 | /ˈstɒkbrəʊkər/ | The stockbroker sold the shares. | L'agent de change a vendu les actions.
+trader | trader, opérateur de marché | n | B2 | /ˈtreɪdər/ | Traders work long hours. | Les traders travaillent de longues heures.
+trading | négoce, transactions | n | B2 | /ˈtreɪdɪŋ/ | Trading stopped after the crash. | Les transactions se sont arrêtées après le krach.
+bull market | marché haussier | n | C2 | /ˈbʊl ˌmɑːkɪt/ | Investors love a bull market. | Les investisseurs adorent un marché haussier.
+bear market | marché baissier | n | C2 | /ˈbeə ˌmɑːkɪt/ | Prices fell in a long bear market. | Les cours ont chuté pendant un long marché baissier.
+stock market crash | krach boursier | n | C1 | /ˈstɒk ˌmɑːkɪt kræʃ/ | The stock market crash of 1929 ruined many. | Le krach boursier de 1929 en a ruiné beaucoup.
+Wall Street | Wall Street | n | B2 | /ˈwɔːl striːt/ | Wall Street closed higher today. | Wall Street a terminé en hausse aujourd'hui.
+the City | la City (Londres) | n | C1 | /ðə ˈsɪti/ | He works in the City. | Il travaille dans la City.
+riba | riba (intérêt usuraire) | n | C1 | /ˈriːbə/ | Islamic banks avoid riba. | Les banques islamiques évitent le riba.
+zakat | zakat (aumône légale) | n | B2 | /zəˈkɑːt/ | Muslims pay zakat once a year. | Les musulmans versent la zakat une fois par an.
+microfinance | microfinance | n | C1 | /ˈmaɪkrəʊfaɪnæns/ | Microfinance helps the poor start businesses. | La microfinance aide les pauvres à créer une activité.
+microcredit | microcrédit | n | C1 | /ˈmaɪkrəʊkredɪt/ | She got a microcredit to open a shop. | Elle a obtenu un microcrédit pour ouvrir une boutique.
+crowdfunding | financement participatif | n | B2 | /ˈkraʊdfʌndɪŋ/ | The film was made through crowdfunding. | Le film a été financé de manière participative.
+business angel | investisseur providentiel | n | C1 | /ˈbɪznəs ˌeɪndʒl/ | A business angel invested in our startup. | Un investisseur providentiel a misé sur notre start-up.
+IPO | introduction en Bourse | n | C1 | /ˌaɪ piː ˈəʊ/ | The company's IPO raised a billion. | L'introduction en Bourse a levé un milliard.
+flotation | introduction en Bourse | n | C2 | /fləʊˈteɪʃn/ | The flotation was a success. | L'introduction en Bourse a été un succès.
+brand value | valeur de la marque | n | C1 | /ˌbrænd ˈvæljuː/ | The scandal hurt the brand value. | Le scandale a nui à la valeur de la marque.
+goodwill | fonds de commerce ; bonne volonté | n | C1 | /ˌɡʊdˈwɪl/ | He sold the shop and its goodwill. | Il a vendu la boutique et son fonds de commerce.
+intellectual property | propriété intellectuelle | n | C1 | /ˌɪntəˌlektʃuəl ˈprɒpəti/ | Protect your intellectual property. | Protège ta propriété intellectuelle.
+royalties | droits d'auteur (redevances) | n | C1 | /ˈrɔɪəltiz/ | The writer lives on her royalties. | L'écrivaine vit de ses droits d'auteur.
+offshoring | délocalisation | n | C1 | /ˈɒfʃɔːrɪŋ/ | Offshoring cut costs but cost jobs. | La délocalisation a réduit les coûts mais supprimé des emplois.
+relocation | délocalisation, déménagement | n | C1 | /ˌriːləʊˈkeɪʃn/ | The relocation of the factory angered workers. | La délocalisation de l'usine a révolté les ouvriers.
+reshoring | relocalisation | n | C2 | /ˈriːʃɔːrɪŋ/ | Reshoring brings factories back home. | La relocalisation ramène les usines au pays.
+black market | marché noir | n | B2 | /ˌblæk ˈmɑːkɪt/ | Petrol was sold on the black market. | L'essence se vendait au marché noir.
+informal economy | économie informelle | n | C1 | /ɪnˌfɔːml iˈkɒnəmi/ | Many people work in the informal economy. | Beaucoup de gens travaillent dans l'économie informelle.
+underground economy | économie souterraine | n | C1 | /ˌʌndəɡraʊnd iˈkɒnəmi/ | The underground economy avoids taxes. | L'économie souterraine échappe aux impôts.
+money laundering | blanchiment d'argent | n | C1 | /ˈmʌni ˌlɔːndərɪŋ/ | He was arrested for money laundering. | Il a été arrêté pour blanchiment d'argent.
+embezzlement | détournement de fonds | n | C2 | /ɪmˈbezlmənt/ | The treasurer was charged with embezzlement. | Le trésorier a été inculpé de détournement de fonds.
+insider trading | délit d'initié | n | C2 | /ˌɪnsaɪdə ˈtreɪdɪŋ/ | Insider trading is a crime. | Le délit d'initié est un crime.
+bribery | corruption (pots-de-vin) | n | C1 | /ˈbraɪbəri/ | The minister was accused of bribery. | Le ministre a été accusé de corruption.
+price fixing | entente sur les prix | n | C2 | /ˈpraɪs ˌfɪksɪŋ/ | The firms were fined for price fixing. | Les entreprises ont été condamnées pour entente sur les prix.
+antitrust | antitrust, anticoncentration | adj | C2 | /ˌæntiˈtrʌst/ | Antitrust laws prevent monopolies. | Les lois antitrust empêchent les monopoles.
+deregulation | déréglementation | n | C1 | /ˌdiːreɡjuˈleɪʃn/ | Deregulation opened the market. | La déréglementation a ouvert le marché.
+the invisible hand | la main invisible | expr | C2 | /ði ɪnˌvɪzəbl ˈhænd/ | Adam Smith wrote about the invisible hand. | Adam Smith a écrit sur la main invisible.
+laissez-faire | laisser-faire | n | C2 | /ˌleseɪ ˈfeər/ | He supports laissez-faire economics. | Il défend le libéralisme du laisser-faire.
+protectionism | protectionnisme | n | C1 | /prəˈtekʃənɪzəm/ | Protectionism raises prices. | Le protectionnisme fait monter les prix.
+mercantilism | mercantilisme | n | C2 | /ˈmɜːkəntɪlɪzəm/ | Mercantilism dominated the 17th century. | Le mercantilisme a dominé le XVIIe siècle.
+Keynesian | keynésien | adj | C2 | /ˈkeɪnziən/ | It's a Keynesian stimulus plan. | C'est un plan de relance keynésien.
+neoliberalism | néolibéralisme | n | C2 | /ˌniːəʊˈlɪbərəlɪzəm/ | Neoliberalism favours free markets. | Le néolibéralisme privilégie les marchés libres.
+degrowth | décroissance | n | C2 | /ˌdiːˈɡrəʊθ/ | Some ecologists argue for degrowth. | Certains écologistes défendent la décroissance.
 `,
 );

@@ -191,5 +191,95 @@ self-evident | évident | adj | C1 | /ˌself ˈevɪdənt/ | Some truths are self
 irrefutable | irréfutable | adj | C2 | /ˌɪrɪˈfjuːtəbl/ | The evidence was irrefutable. | Les preuves étaient irréfutables.
 fallacious | fallacieux | adj | C2 | /fəˈleɪʃəs/ | The reasoning is fallacious. | Le raisonnement est fallacieux.
 cogent | convaincant | adj | C2 | /ˈkəʊdʒənt/ | She made a cogent argument. | Elle a présenté un argument convaincant.
+philosopher | philosophe | n | B1 | /fəˈlɒsəfər/ | Al-Farabi was a great philosopher. | Al-Farabi était un grand philosophe.
+philosophical | philosophique | adj | B2 | /ˌfɪləˈsɒfɪkl/ | It's a philosophical question. | C'est une question philosophique.
+irrational | irrationnel | adj | C1 | /ɪˈræʃənl/ | His fear is irrational. | Sa peur est irrationnelle.
+falsehood | fausseté, mensonge | n | C2 | /ˈfɔːlshʊd/ | Truth will defeat falsehood. | La vérité vaincra le mensonge.
+opinion | opinion, avis | n | A2 | /əˈpɪnjən/ | In my opinion, he's right. | À mon avis, il a raison.
+certainty | certitude | n | C1 | /ˈsɜːtnti/ | Faith brings a kind of certainty. | La foi apporte une forme de certitude.
+scepticism | scepticisme | n | C1 | /ˈskeptɪsɪzəm/ | He met the claim with scepticism. | Il a accueilli l'affirmation avec scepticisme.
+being | être, existence | n | C1 | /ˈbiːɪŋ/ | Every human being has a soul. | Chaque être humain a une âme.
+effect | effet | n | B1 | /ɪˈfekt/ | Every effect has a cause. | Tout effet a une cause.
+causality | causalité | n | C2 | /kɔːˈzæləti/ | Al-Ghazali questioned causality. | Al-Ghazali a interrogé la causalité.
+contingency | contingence | n | C2 | /kənˈtɪndʒənsi/ | The argument from contingency points to a necessary being. | L'argument de la contingence mène à un être nécessaire.
+possibility | possibilité | n | B1 | /ˌpɒsəˈbɪləti/ | There's a possibility of rain. | Il y a une possibilité de pluie.
+impossibility | impossibilité | n | C1 | /ɪmˌpɒsəˈbɪləti/ | An infinite regress is an impossibility. | Une régression à l'infini est une impossibilité.
+eternity | éternité | n | C1 | /ɪˈtɜːnəti/ | The soul is created for eternity. | L'âme est créée pour l'éternité.
+spirit | esprit | n | B2 | /ˈspɪrɪt/ | Body and spirit are linked. | Le corps et l'esprit sont liés.
+fate | destin, sort | n | B2 | /feɪt/ | Nobody can escape his fate. | Personne ne peut échapper à son destin.
+predestination | prédestination | n | C2 | /ˌpriːdestɪˈneɪʃn/ | Theologians debated predestination. | Les théologiens ont débattu de la prédestination.
+the problem of evil | le problème du mal | expr | C1 | /ðə ˌprɒbləm əv ˈiːvl/ | The problem of evil is an old debate. | Le problème du mal est un vieux débat.
+hedonism | hédonisme | n | C2 | /ˈhedənɪzəm/ | Hedonism makes pleasure the highest good. | L'hédonisme fait du plaisir le bien suprême.
+existentialism | existentialisme | n | C2 | /ˌeɡzɪˈstenʃəlɪzəm/ | Sartre is linked to existentialism. | Sartre est associé à l'existentialisme.
+absurd | absurde | adj | C1 | /əbˈsɜːd/ | The idea is absurd. | L'idée est absurde.
+absurdity | absurdité | n | C1 | /əbˈsɜːdəti/ | He showed the absurdity of the claim. | Il a montré l'absurdité de l'affirmation.
+meaning of life | sens de la vie | n | B2 | /ˌmiːnɪŋ əv ˈlaɪf/ | What is the meaning of life? | Quel est le sens de la vie ?
+agnosticism | agnosticisme | n | C2 | /æɡˈnɒstɪsɪzəm/ | Agnosticism says we cannot know. | L'agnosticisme affirme qu'on ne peut pas savoir.
+theist | théiste | n | C1 | /ˈθiːɪst/ | A theist believes in God. | Un théiste croit en Dieu.
+pantheism | panthéisme | n | C2 | /ˈpænθiɪzəm/ | Pantheism identifies God with nature. | Le panthéisme identifie Dieu à la nature.
+natural theology | théologie naturelle | n | C2 | /ˌnætʃrəl θiˈɒlədʒi/ | Natural theology uses reason alone. | La théologie naturelle n'utilise que la raison.
+cosmological argument | argument cosmologique | n | C2 | /ˌkɒzməˌlɒdʒɪkl ˈɑːɡjumənt/ | The kalam cosmological argument is famous. | L'argument cosmologique du kalam est célèbre.
+ontological argument | argument ontologique | n | C2 | /ˌɒntəˌlɒdʒɪkl ˈɑːɡjumənt/ | Anselm formulated the ontological argument. | Anselme a formulé l'argument ontologique.
+teleological argument | argument téléologique | n | C2 | /ˌteliəˌlɒdʒɪkl ˈɑːɡjumənt/ | The teleological argument points to design. | L'argument téléologique met en avant l'ordre du monde.
+moral argument | argument moral | n | C1 | /ˌmɒrəl ˈɑːɡjumənt/ | The moral argument links ethics to God. | L'argument moral relie l'éthique à Dieu.
+Pascal's wager | pari de Pascal | n | C1 | /pæˌskælz ˈweɪdʒər/ | Pascal's wager is about risk and belief. | Le pari de Pascal porte sur le risque et la croyance.
+Occam's razor | rasoir d'Ockham | n | C2 | /ˌɒkəmz ˈreɪzər/ | Occam's razor prefers the simplest explanation. | Le rasoir d'Ockham préfère l'explication la plus simple.
+thought experiment | expérience de pensée | n | C1 | /ˈθɔːt ɪkˌsperɪmənt/ | Avicenna's flying man is a thought experiment. | L'homme volant d'Avicenne est une expérience de pensée.
+law of non-contradiction | principe de non-contradiction | n | C2 | /ˌlɔː əv ˌnɒn kɒntrəˈdɪkʃn/ | The law of non-contradiction is the basis of logic. | Le principe de non-contradiction est la base de la logique.
+objectivity | objectivité | n | C1 | /ˌɒbdʒekˈtɪvəti/ | A historian must aim for objectivity. | Un historien doit viser l'objectivité.
+subjectivity | subjectivité | n | C1 | /ˌsʌbdʒekˈtɪvəti/ | Taste involves subjectivity. | Le goût implique une part de subjectivité.
+absolute | absolu | adj | C1 | /ˈæbsəluːt/ | Is there absolute truth? | Existe-t-il une vérité absolue ?
+universal | universel | adj | B2 | /ˌjuːnɪˈvɜːsl/ | Justice is a universal value. | La justice est une valeur universelle.
+concrete | concret | adj | B2 | /ˈkɒŋkriːt/ | Give me a concrete example. | Donne-moi un exemple concret.
+idea | idée | n | A1 | /aɪˈdɪə/ | That's a good idea! | C'est une bonne idée !
+perception | perception | n | C1 | /pəˈsepʃn/ | Our perception can deceive us. | Notre perception peut nous tromper.
+sensation | sensation | n | B2 | /senˈseɪʃn/ | I felt a strange sensation. | J'ai ressenti une sensation étrange.
+innate | inné | adj | C1 | /ɪˈneɪt/ | Is the sense of God innate? | Le sens de Dieu est-il inné ?
+intuition | intuition | n | C1 | /ˌɪntjuˈɪʃn/ | My intuition was right. | Mon intuition était juste.
+sage | sage | n | C2 | /seɪdʒ/ | The old sage spoke slowly. | Le vieux sage parlait lentement.
+Socratic method | méthode socratique | n | C1 | /səˌkrætɪk ˈmeθəd/ | The teacher used the Socratic method. | Le professeur a utilisé la méthode socratique.
+maieutics | maïeutique | n | C2 | /meɪˈjuːtɪks/ | Socrates called his method maieutics. | Socrate appelait sa méthode la maïeutique.
+rhetoric | rhétorique | n | C1 | /ˈretərɪk/ | His speech was pure rhetoric. | Son discours n'était que de la rhétorique.
+sophist | sophiste | n | C2 | /ˈsɒfɪst/ | Socrates argued against the sophists. | Socrate s'opposait aux sophistes.
+kalam | kalam (théologie dialectique) | n | C2 | /kəˈlɑːm/ | Kalam defends faith with reason. | Le kalam défend la foi par la raison.
+falsafa | falsafa (philosophie islamique) | n | C2 | /fælˈsɑːfə/ | Al-Kindi founded falsafa. | Al-Kindi a fondé la falsafa.
+scholasticism | scolastique | n | C2 | /skəˈlæstɪsɪzəm/ | Scholasticism was influenced by Averroes. | La scolastique a été influencée par Averroès.
+humanism | humanisme | n | C1 | /ˈhjuːmənɪzəm/ | Erasmus was a figure of humanism. | Érasme fut une figure de l'humanisme.
+positivism | positivisme | n | C2 | /ˈpɒzətɪvɪzəm/ | Auguste Comte founded positivism. | Auguste Comte a fondé le positivisme.
+idealism | idéalisme | n | C1 | /aɪˈdɪəlɪzəm/ | Berkeley defended idealism. | Berkeley défendait l'idéalisme.
+monism | monisme | n | C2 | /ˈmɒnɪzəm/ | Spinoza's philosophy is a form of monism. | La philosophie de Spinoza est une forme de monisme.
+naturalism | naturalisme | n | C2 | /ˈnætʃrəlɪzəm/ | Naturalism denies anything beyond nature. | Le naturalisme nie tout ce qui dépasse la nature.
+physicalism | physicalisme | n | C2 | /ˈfɪzɪkəlɪzəm/ | Physicalism says everything is physical. | Le physicalisme affirme que tout est physique.
+reductionism | réductionnisme | n | C2 | /rɪˈdʌkʃənɪzəm/ | Reductionism explains the whole by its parts. | Le réductionnisme explique le tout par ses parties.
+emergence | émergence | n | C2 | /ɪˈmɜːdʒəns/ | Can emergence explain consciousness? | L'émergence peut-elle expliquer la conscience ?
+qualia | qualia | n | C2 | /ˈkwɑːliə/ | Qualia are hard to explain scientifically. | Les qualia sont difficiles à expliquer scientifiquement.
+personal identity | identité personnelle | n | C1 | /ˌpɜːsənl aɪˈdentəti/ | Locke wrote about personal identity. | Locke a écrit sur l'identité personnelle.
+the self | le moi | n | C1 | /ðə ˈself/ | Who is the self that thinks? | Qui est le moi qui pense ?
+ego | ego, moi | n | B2 | /ˈiːɡəʊ/ | He has a big ego. | Il a un gros ego.
+alterity | altérité | n | C2 | /ɔːlˈterəti/ | Levinas wrote about alterity. | Levinas a écrit sur l'altérité.
+autonomy | autonomie | n | C1 | /ɔːˈtɒnəmi/ | Kant valued moral autonomy. | Kant valorisait l'autonomie morale.
+state of nature | état de nature | n | C2 | /ˌsteɪt əv ˈneɪtʃər/ | Hobbes described the state of nature as war. | Hobbes décrivait l'état de nature comme une guerre.
+natural law | loi naturelle | n | C1 | /ˌnætʃrəl ˈlɔː/ | Natural law is known by reason. | La loi naturelle est connue par la raison.
+natural rights | droits naturels | n | C1 | /ˌnætʃrəl ˈraɪts/ | Locke defended natural rights. | Locke défendait les droits naturels.
+utopia | utopie | n | C1 | /juːˈtəʊpiə/ | Thomas More imagined a utopia. | Thomas More a imaginé une utopie.
+dystopia | dystopie | n | C1 | /dɪsˈtəʊpiə/ | Orwell's 1984 describes a dystopia. | 1984 d'Orwell décrit une dystopie.
+critique | critique (analyse) | n | C1 | /krɪˈtiːk/ | Kant wrote a critique of pure reason. | Kant a écrit une critique de la raison pure.
+critical thinking | esprit critique | n | B2 | /ˌkrɪtɪkl ˈθɪŋkɪŋ/ | Schools should teach critical thinking. | L'école devrait enseigner l'esprit critique.
+to infer | déduire, inférer | v | C1 | /ɪnˈfɜːr/ | What can we infer from this? | Que pouvons-nous en déduire ?
+refutation | réfutation | n | C2 | /ˌrefjuˈteɪʃn/ | Ibn Taymiyya wrote a refutation of the logicians. | Ibn Taymiyya a écrit une réfutation des logiciens.
+counterargument | contre-argument | n | C1 | /ˈkaʊntərˌɑːɡjumənt/ | Consider the counterargument. | Examine le contre-argument.
+rebuttal | réfutation, réplique | n | C2 | /rɪˈbʌtl/ | His rebuttal was convincing. | Sa réplique était convaincante.
+to concede | concéder | v | C1 | /kənˈsiːd/ | I concede that you have a point. | Je concède que tu as raison sur ce point.
+concession | concession | n | C1 | /kənˈseʃn/ | Making a concession is not weakness. | Faire une concession n'est pas une faiblesse.
+begging the question | pétition de principe | expr | C2 | /ˌbeɡɪŋ ðə ˈkwestʃən/ | That's begging the question. | C'est une pétition de principe.
+slippery slope | pente glissante | n | C1 | /ˌslɪpəri ˈsləʊp/ | He used a slippery slope argument. | Il a utilisé un argument de la pente glissante.
+false dilemma | faux dilemme | n | C1 | /ˌfɔːls dɪˈlemə/ | It's a false dilemma: there are other options. | C'est un faux dilemme : il existe d'autres options.
+red herring | diversion, fausse piste | n | C1 | /ˌred ˈherɪŋ/ | That point is a red herring. | Cet argument est une diversion.
+appeal to authority | argument d'autorité | n | C1 | /əˌpiːl tu ɔːˈθɒrəti/ | Quoting a celebrity is an appeal to authority. | Citer une célébrité est un argument d'autorité.
+invalid | non valide, invalide | adj | C1 | /ɪnˈvælɪd/ | The argument is logically invalid. | L'argument n'est pas valide logiquement.
+incoherent | incohérent | adj | C1 | /ˌɪnkəʊˈhɪərənt/ | His theory is incoherent. | Sa théorie est incohérente.
+inconsistent | incohérent, contradictoire | adj | C1 | /ˌɪnkənˈsɪstənt/ | His statements are inconsistent. | Ses déclarations sont contradictoires.
+falsifiable | réfutable | adj | C2 | /ˌfɔːlsɪˈfaɪəbl/ | Popper said science must be falsifiable. | Popper disait que la science doit être réfutable.
+verifiable | vérifiable | adj | C1 | /ˈverɪfaɪəbl/ | The claim is not verifiable. | L'affirmation n'est pas vérifiable.
 `,
 );

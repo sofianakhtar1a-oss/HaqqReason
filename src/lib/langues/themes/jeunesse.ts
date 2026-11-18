@@ -121,5 +121,96 @@ prom | bal de fin d'année | n | B2 | /prɒm/ | They didn't go to the prom. | Il
 driving lesson | leçon de conduite | n | A2 | /ˈdraɪvɪŋ ˌlesn/ | I have a driving lesson on Monday. | J'ai une leçon de conduite lundi.
 generation Z | génération Z | n | B2 | /ˌdʒenəˈreɪʃn ˈzed/ | Generation Z grew up with phones. | La génération Z a grandi avec les téléphones.
 coming-of-age story | récit d'apprentissage | n | C1 | /ˌkʌmɪŋ əv ˈeɪdʒ ˌstɔːri/ | The film is a coming-of-age story. | Le film est un récit d'apprentissage.
+young people | les jeunes | n | A2 | /ˌjʌŋ ˈpiːpl/ | Young people spend hours online. | Les jeunes passent des heures en ligne.
+BFF | meilleur(e) ami(e) pour la vie | n | B1 | /ˌbiː ef ˈef/ | She's my BFF. | C'est ma meilleure amie pour la vie.
+first date | premier rendez-vous | n | A2 | /ˌfɜːst ˈdeɪt/ | Where did you go on your first date? | Où êtes-vous allés pour votre premier rendez-vous ?
+heartbreak | chagrin d'amour | n | B2 | /ˈhɑːtbreɪk/ | She's getting over a heartbreak. | Elle se remet d'un chagrin d'amour.
+babysitting | baby-sitting | n | A2 | /ˈbeɪbisɪtɪŋ/ | I earn money from babysitting. | Je gagne de l'argent en faisant du baby-sitting.
+hangout | lieu de rendez-vous | n | B2 | /ˈhæŋaʊt/ | This café is our favourite hangout. | Ce café est notre repaire préféré.
+awesome | génial | adj | A2 | /ˈɔːsəm/ | The concert was awesome! | Le concert était génial !
+lame | nul, minable | adj | B2 | /leɪm/ | That excuse is so lame. | Cette excuse est vraiment nulle.
+cringe | gênant, malaisant | adj | B2 | /krɪndʒ/ | His dance moves are so cringe. | Sa façon de danser est trop gênante.
+cringey | gênant | adj | B2 | /ˈkrɪndʒi/ | That video was really cringey. | Cette vidéo était vraiment gênante.
+meme | mème | n | B1 | /miːm/ | He sent me a funny meme. | Il m'a envoyé un mème drôle.
+emoji | émoji | n | A2 | /ɪˈməʊdʒi/ | She replied with a heart emoji. | Elle a répondu avec un émoji cœur.
+streetwear | streetwear, mode urbaine | n | B1 | /ˈstriːtweər/ | He only wears streetwear. | Il ne porte que du streetwear.
+sneakers | baskets (US) | n | A2 | /ˈsniːkəz/ | I need new sneakers. | J'ai besoin de nouvelles baskets.
+piercing | piercing | n | B1 | /ˈpɪəsɪŋ/ | She has a nose piercing. | Elle a un piercing au nez.
+skatepark | skatepark | n | A2 | /ˈskeɪtpɑːk/ | We meet at the skatepark after school. | On se retrouve au skatepark après les cours.
+gamer | joueur (de jeux vidéo) | n | A2 | /ˈɡeɪmər/ | My brother is a serious gamer. | Mon frère est un joueur acharné.
+gaming | jeux vidéo | n | A2 | /ˈɡeɪmɪŋ/ | Gaming is his favourite hobby. | Les jeux vidéo sont son passe-temps préféré.
+headphones | casque audio | n | A2 | /ˈhedfəʊnz/ | Put your headphones on. | Mets ton casque.
+earphones | écouteurs | n | A2 | /ˈɪəfəʊnz/ | I lost my earphones on the bus. | J'ai perdu mes écouteurs dans le bus.
+playlist | liste de lecture | n | A2 | /ˈpleɪlɪst/ | I made a playlist for the party. | J'ai fait une playlist pour la fête.
+streaming | streaming, diffusion en continu | n | B1 | /ˈstriːmɪŋ/ | Streaming has replaced CDs. | Le streaming a remplacé les CD.
+gig | concert | n | B1 | /ɡɪɡ/ | We went to a gig last night. | On est allés à un concert hier soir.
+mood swings | sautes d'humeur | n | B2 | /ˈmuːd swɪŋz/ | Teenagers often have mood swings. | Les ados ont souvent des sautes d'humeur.
+hormones | hormones | n | B2 | /ˈhɔːməʊnz/ | Blame it on the hormones! | C'est la faute aux hormones !
+spots | boutons (peau) | n | A2 | /spɒts/ | I've got spots on my chin. | J'ai des boutons sur le menton.
+identity | identité | n | B2 | /aɪˈdentəti/ | Teenagers search for their identity. | Les ados cherchent leur identité.
+self-esteem | estime de soi | n | B2 | /ˌself ɪˈstiːm/ | Sport can boost self-esteem. | Le sport peut renforcer l'estime de soi.
+insecurity | manque d'assurance | n | C1 | /ˌɪnsɪˈkjʊərəti/ | He hides his insecurity behind jokes. | Il cache son manque d'assurance derrière des blagues.
+embarrassing | gênant, embarrassant | adj | B1 | /ɪmˈbærəsɪŋ/ | My dad is so embarrassing! | Mon père est trop gênant !
+bullying | harcèlement (scolaire) | n | B1 | /ˈbʊliɪŋ/ | The school has a plan against bullying. | L'école a un plan contre le harcèlement.
+peer group | groupe de pairs | n | C1 | /ˈpɪə ɡruːp/ | Teens want to fit in with their peer group. | Les ados veulent s'intégrer à leur groupe.
+gang | bande, gang | n | B1 | /ɡæŋ/ | He joined a gang at fifteen. | Il a rejoint un gang à quinze ans.
+clique | clan, petit groupe fermé | n | C1 | /kliːk/ | She was left out of the popular clique. | Elle a été exclue du clan des populaires.
+outsider | marginal, étranger au groupe | n | B2 | /ˌaʊtˈsaɪdər/ | He always felt like an outsider. | Il s'est toujours senti à part.
+loner | solitaire | n | B2 | /ˈləʊnər/ | She's a bit of a loner. | Elle est un peu solitaire.
+nerd | intello | n | B1 | /nɜːd/ | He's a computer nerd. | C'est un fou d'informatique.
+geek | geek, passionné | n | B1 | /ɡiːk/ | My friend is a real film geek. | Mon ami est un vrai passionné de cinéma.
+jock | sportif (cliché) | n | C1 | /dʒɒk/ | The jocks sat together at lunch. | Les sportifs s'asseyaient ensemble à la cantine.
+goth | gothique | n | B2 | /ɡɒθ/ | She went through a goth phase. | Elle a eu une période gothique.
+hipster | hipster, bobo branché | n | B2 | /ˈhɪpstər/ | The café is full of hipsters. | Le café est plein de hipsters.
+learner driver | apprenti conducteur | n | B2 | /ˌlɜːnə ˈdraɪvər/ | Be patient with learner drivers. | Sois patient avec les apprentis conducteurs.
+GCSE | équivalent du brevet (GB) | n | B1 | /ˌdʒiː siː es ˈiː/ | She passed her GCSEs last summer. | Elle a eu son équivalent du brevet l'été dernier.
+A level | équivalent du bac (GB) | n | B1 | /ˈeɪ ˌlevl/ | He's taking three A levels. | Il passe trois matières au bac.
+to skip class | sécher les cours | expr | B1 | /skɪp ˈklɑːs/ | Don't skip class again. | Ne sèche plus les cours.
+truant | élève absentéiste | n | C1 | /ˈtruːənt/ | The truant was caught at the shopping centre. | L'élève absentéiste a été surpris au centre commercial.
+truancy | absentéisme scolaire | n | C1 | /ˈtruːənsi/ | Truancy is rising in the area. | L'absentéisme augmente dans le secteur.
+dropout | décrocheur | n | B2 | /ˈdrɒpaʊt/ | He was a college dropout. | Il avait abandonné la fac.
+career advice | orientation professionnelle | n | B1 | /kəˈrɪər ədˌvaɪs/ | Ask your teacher for career advice. | Demande conseil à ton professeur pour ton orientation.
+uni | fac | n | B1 | /ˈjuːni/ | She's at uni in Rennes. | Elle est à la fac à Rennes.
+freshers | étudiants de première année | n | B2 | /ˈfreʃəz/ | Freshers' week is full of parties. | La semaine d'accueil des nouveaux est pleine de fêtes.
+rite of passage | rite de passage | n | C1 | /ˌraɪt əv ˈpæsɪdʒ/ | Getting a licence is a rite of passage. | Avoir le permis est un rite de passage.
+eighteenth birthday | dix-huitième anniversaire | n | A2 | /ˌeɪtiːnθ ˈbɜːθdeɪ/ | We celebrated her eighteenth birthday. | Nous avons fêté ses dix-huit ans.
+yearbook | album de fin d'année | n | B1 | /ˈjɪəbʊk/ | Sign my yearbook! | Signe mon album de fin d'année !
+slang | argot | n | B1 | /slæŋ/ | Teen slang changes every year. | L'argot des ados change chaque année.
+texting | envoi de SMS | n | A2 | /ˈtekstɪŋ/ | Texting while driving is dangerous. | Envoyer des SMS en conduisant est dangereux.
+group chat | conversation de groupe | n | A2 | /ˈɡruːp tʃæt/ | I'll send it to the group chat. | Je l'envoie dans la conversation de groupe.
+DM | message privé | n | B1 | /ˌdiː ˈem/ | Send me a DM. | Envoie-moi un message privé.
+poster | affiche, poster | n | A2 | /ˈpəʊstər/ | Her room is covered in posters. | Sa chambre est couverte de posters.
+grounded | privé de sortie | adj | B1 | /ˈɡraʊndɪd/ | You're grounded for a week! | Tu es privé de sortie pendant une semaine !
+overprotective | surprotecteur | adj | B2 | /ˌəʊvəprəˈtektɪv/ | My parents are overprotective. | Mes parents sont surprotecteurs.
+helicopter parent | parent hélicoptère | n | C1 | /ˈhelɪkɒptə ˌpeərənt/ | Helicopter parents never let go. | Les parents hélicoptères ne lâchent jamais prise.
+fandom | communauté de fans | n | B2 | /ˈfændəm/ | The fandom went crazy over the new album. | Les fans sont devenus fous à la sortie du nouvel album.
+heartthrob | idole, beau gosse | n | C1 | /ˈhɑːtθrɒb/ | The actor became a teen heartthrob. | L'acteur est devenu l'idole des ados.
+teen idol | idole des jeunes | n | B2 | /ˌtiːn ˈaɪdl/ | He was a teen idol in the nineties. | C'était l'idole des jeunes dans les années 90.
+boy band | boys band | n | B1 | /ˈbɔɪ bænd/ | She loves that boy band. | Elle adore ce boys band.
+teen movie | film pour ados | n | B1 | /ˈtiːn ˌmuːvi/ | We watched a teen movie. | Nous avons regardé un film pour ados.
+coming-of-age film | film d'apprentissage | n | C1 | /ˌkʌmɪŋ əv ˈeɪdʒ fɪlm/ | It's a moving coming-of-age film. | C'est un film émouvant sur le passage à l'âge adulte.
+legal age | âge légal | n | B2 | /ˌliːɡl ˈeɪdʒ/ | What is the legal age to drive? | Quel est l'âge légal pour conduire ?
+juvenile delinquent | jeune délinquant | n | C1 | /ˌdʒuːvənaɪl dɪˈlɪŋkwənt/ | He was a juvenile delinquent before he changed. | C'était un jeune délinquant avant de changer.
+delinquency | délinquance | n | C1 | /dɪˈlɪŋkwənsi/ | Youth delinquency has fallen. | La délinquance juvénile a baissé.
+vandal | vandale | n | B2 | /ˈvændl/ | Vandals smashed the bus shelter. | Des vandales ont cassé l'abribus.
+hooligan | voyou, hooligan | n | B2 | /ˈhuːlɪɡən/ | Hooligans caused trouble after the match. | Des hooligans ont semé le trouble après le match.
+yob | loubard | n | C1 | /jɒb/ | A gang of yobs was shouting outside. | Une bande de loubards criait dehors.
+lad | gars, garçon | n | B1 | /læd/ | He's a nice lad. | C'est un gentil garçon.
+lass | fille, jeune femme | n | B2 | /læs/ | She's a lovely lass. | C'est une fille adorable.
+buddy | pote | n | A2 | /ˈbʌdi/ | He's my old school buddy. | C'est mon pote d'école.
+bestie | meilleur(e) pote | n | B1 | /ˈbesti/ | I'm going shopping with my bestie. | Je vais faire les magasins avec ma meilleure pote.
+squad | bande (d'amis) | n | B2 | /skwɒd/ | The whole squad came to my party. | Toute la bande est venue à ma fête.
+vibe | ambiance, atmosphère | n | B2 | /vaɪb/ | This place has a good vibe. | Cet endroit a une bonne ambiance.
+FOMO | peur de rater quelque chose | n | B2 | /ˈfəʊməʊ/ | I went to the party because of FOMO. | Je suis allé à la fête par peur de rater quelque chose.
+YOLO | on ne vit qu'une fois | expr | B2 | /ˈjəʊləʊ/ | He jumped in the lake and shouted "YOLO!" | Il a sauté dans le lac en criant « on ne vit qu'une fois ! ».
+ghosting | ghosting (disparaître sans prévenir) | n | B2 | /ˈɡəʊstɪŋ/ | Ghosting someone is cruel. | Disparaître sans prévenir est cruel.
+to ghost | ignorer du jour au lendemain | v | B2 | /ɡəʊst/ | He ghosted me after two dates. | Il a disparu sans nouvelles après deux rendez-vous.
+sus | louche | adj | B2 | /sʌs/ | That guy looks a bit sus. | Ce type a l'air un peu louche.
+Gen Z | génération Z | n | B2 | /ˌdʒen ˈzed/ | Gen Z grew up with smartphones. | La génération Z a grandi avec les smartphones.
+millennial | millennial, enfant du millénaire | n | B2 | /mɪˈleniəl/ | Millennials struggle to buy houses. | Les millennials ont du mal à acheter un logement.
+boomer | baby-boomer | n | B2 | /ˈbuːmər/ | My grandparents are boomers. | Mes grands-parents sont des baby-boomers.
+to sneak out | faire le mur | v | B2 | /sniːk ˈaʊt/ | She sneaked out to see her friends. | Elle a fait le mur pour voir ses amis.
+teenage years | adolescence | n | B1 | /ˈtiːneɪdʒ jɪəz/ | My teenage years were difficult. | Mon adolescence a été difficile.
+pocket-sized | de poche | adj | B2 | /ˈpɒkɪt saɪzd/ | It's a pocket-sized speaker. | C'est une enceinte de poche.
 `,
 );

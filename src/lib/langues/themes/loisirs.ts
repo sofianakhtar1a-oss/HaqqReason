@@ -154,5 +154,93 @@ kite | cerf-volant | n | A2 | /kaɪt/ | The children flew a kite on the beach. |
 sandpit | bac à sable | n | B1 | /ˈsændpɪt/ | The toddlers play in the sandpit. | Les petits jouent dans le bac à sable.
 paddling pool | pataugeoire | n | B1 | /ˈpædlɪŋ puːl/ | We filled the paddling pool in the garden. | Nous avons rempli la pataugeoire dans le jardin.
 trampoline | trampoline | n | B1 | /ˈtræmpəliːn/ | The kids jump on the trampoline. | Les enfants sautent sur le trampoline.
+sewing | couture | n | A2 | /ˈsəʊɪŋ/ | My mother taught me sewing. | Ma mère m'a appris la couture.
+woodwork | menuiserie (loisir) | n | B1 | /ˈwʊdwɜːk/ | He does woodwork in his garage. | Il fait de la menuiserie dans son garage.
+carpentry | charpenterie, menuiserie | n | B2 | /ˈkɑːpəntri/ | Carpentry requires patience. | La menuiserie demande de la patience.
+cooking | cuisine (activité) | n | A1 | /ˈkʊkɪŋ/ | Cooking is my favourite hobby. | La cuisine est mon passe-temps préféré.
+baking | pâtisserie (activité) | n | A2 | /ˈbeɪkɪŋ/ | She loves baking cakes. | Elle adore faire des gâteaux.
+collecting | collection (activité) | n | B1 | /kəˈlektɪŋ/ | Collecting old coins is his passion. | Collectionner les vieilles pièces est sa passion.
+stamp collecting | philatélie | n | B1 | /ˈstæmp kəˌlektɪŋ/ | My grandfather took up stamp collecting. | Mon grand-père s'est mis à la philatélie.
+coin collecting | numismatique | n | B2 | /ˈkɔɪn kəˌlektɪŋ/ | Coin collecting can be expensive. | La numismatique peut coûter cher.
+jigsaw puzzle | puzzle | n | A2 | /ˈdʒɪɡsɔː ˌpʌzl/ | We did a thousand-piece jigsaw puzzle. | Nous avons fait un puzzle de mille pièces.
+draughts | jeu de dames | n | B1 | /drɑːfts/ | Let's play draughts. | Jouons aux dames.
+backgammon | backgammon, jacquet | n | B1 | /ˈbækɡæmən/ | My uncle plays backgammon every evening. | Mon oncle joue au backgammon chaque soir.
+deck of cards | jeu de cartes | n | A2 | /ˌdek əv ˈkɑːdz/ | Shuffle the deck of cards. | Mélange le jeu de cartes.
+joystick | manette (de jeu) | n | B1 | /ˈdʒɔɪstɪk/ | Move the plane with the joystick. | Dirige l'avion avec la manette.
+controller | manette | n | A2 | /kənˈtrəʊlər/ | Pass me the controller. | Passe-moi la manette.
+virtual reality | réalité virtuelle | n | B2 | /ˌvɜːtʃuəl riˈæləti/ | We tried a virtual reality game. | Nous avons essayé un jeu en réalité virtuelle.
+dancing | danse | n | A1 | /ˈdɑːnsɪŋ/ | She loves dancing. | Elle adore la danse.
+singing | chant | n | A1 | /ˈsɪŋɪŋ/ | He takes singing lessons. | Il prend des cours de chant.
+charity work | bénévolat (humanitaire) | n | B1 | /ˈtʃærəti wɜːk/ | She does charity work at weekends. | Elle fait du bénévolat le week-end.
+membership | adhésion | n | B2 | /ˈmembəʃɪp/ | Annual membership costs thirty euros. | L'adhésion annuelle coûte trente euros.
+book club | club de lecture | n | A2 | /ˈbʊk klʌb/ | Our book club meets once a month. | Notre club de lecture se réunit une fois par mois.
+reading group | cercle de lecture | n | B1 | /ˈriːdɪŋ ɡruːp/ | She joined a reading group at the library. | Elle a rejoint un cercle de lecture à la bibliothèque.
+course | cours, stage | n | A2 | /kɔːs/ | I'm doing a photography course. | Je suis un cours de photo.
+to get into | se mettre à, s'intéresser à | v | B1 | /ɡet ˈɪntuː/ | I want to get into photography. | Je veux me mettre à la photo.
+practice | entraînement, pratique | n | A2 | /ˈpræktɪs/ | Practice makes perfect. | C'est en forgeant qu'on devient forgeron.
+journaling | tenue d'un journal | n | B2 | /ˈdʒɜːnəlɪŋ/ | Journaling helps me think clearly. | Tenir un journal m'aide à y voir clair.
+blogging | écriture de blog | n | B1 | /ˈblɒɡɪŋ/ | She started blogging about recipes. | Elle a commencé un blog de recettes.
+podcasting | création de podcasts | n | B2 | /ˈpɒdkɑːstɪŋ/ | Podcasting is easy to start. | Il est facile de se lancer dans le podcast.
+vlogging | vlogging | n | B1 | /ˈvlɒɡɪŋ/ | Vlogging takes a lot of editing. | Le vlogging demande beaucoup de montage.
+geocaching | géocaching | n | B2 | /ˈdʒiːəʊkæʃɪŋ/ | Geocaching is a modern treasure hunt. | Le géocaching est une chasse au trésor moderne.
+ten-pin bowling | bowling | n | B1 | /ˌten pɪn ˈbəʊlɪŋ/ | We went ten-pin bowling on Friday. | Nous sommes allés au bowling vendredi.
+billiards | billard | n | B1 | /ˈbɪliədz/ | They played billiards after dinner. | Ils ont joué au billard après le dîner.
+snooker | snooker | n | B1 | /ˈsnuːkər/ | He watches snooker on TV. | Il regarde le snooker à la télé.
+darts | fléchettes | n | A2 | /dɑːts/ | Let's play darts. | Jouons aux fléchettes.
+table football | baby-foot | n | A2 | /ˌteɪbl ˈfʊtbɔːl/ | The youth club has a table football. | Le club de jeunes a un baby-foot.
+amusement arcade | salle de jeux d'arcade | n | B1 | /əˈmjuːzmənt ɑːˌkeɪd/ | We spent all our coins at the amusement arcade. | Nous avons dépensé toutes nos pièces à la salle d'arcade.
+fairground | champ de foire | n | B1 | /ˈfeəɡraʊnd/ | The fairground is full of lights. | La fête foraine est pleine de lumières.
+big wheel | grande roue | n | A2 | /ˌbɪɡ ˈwiːl/ | We went on the big wheel. | Nous sommes montés dans la grande roue.
+merry-go-round | manège | n | A2 | /ˈmeri ɡəʊ ˌraʊnd/ | The child rode the merry-go-round. | L'enfant a fait un tour de manège.
+carousel | carrousel, manège | n | B1 | /ˌkærəˈsel/ | There's an old carousel in the square. | Il y a un vieux carrousel sur la place.
+bumper cars | autos tamponneuses | n | A2 | /ˈbʌmpə kɑːz/ | The kids loved the bumper cars. | Les enfants ont adoré les autos tamponneuses.
+ghost train | train fantôme | n | A2 | /ˈɡəʊst treɪn/ | The ghost train was really scary. | Le train fantôme faisait vraiment peur.
+candyfloss | barbe à papa | n | A2 | /ˈkændiflɒs/ | We bought candyfloss at the fair. | Nous avons acheté de la barbe à papa à la fête foraine.
+toffee apple | pomme d'amour | n | B1 | /ˌtɒfi ˈæpl/ | I ate a toffee apple. | J'ai mangé une pomme d'amour.
+hot dog | hot-dog | n | A1 | /ˈhɒt dɒɡ/ | We had a hot dog at the match. | Nous avons mangé un hot-dog au match.
+day out | sortie à la journée | n | A2 | /ˌdeɪ ˈaʊt/ | We had a lovely day out at the beach. | Nous avons passé une belle journée à la plage.
+outing | sortie, excursion | n | B1 | /ˈaʊtɪŋ/ | The class went on an outing to the zoo. | La classe a fait une sortie au zoo.
+night out | soirée (en ville) | n | B1 | /ˌnaɪt ˈaʊt/ | We had a night out with friends. | Nous avons passé une soirée en ville avec des amis.
+to while away | passer (le temps) | v | C1 | /waɪl əˈweɪ/ | We while away the evenings playing chess. | Nous passons nos soirées à jouer aux échecs.
+binge-watching | visionnage en rafale | n | B2 | /ˈbɪndʒ ˌwɒtʃɪŋ/ | Binge-watching kept me up all night. | Enchaîner les épisodes m'a tenu éveillé toute la nuit.
+box set | coffret (série) | n | B2 | /ˈbɒks set/ | I bought the whole box set. | J'ai acheté le coffret complet.
+pub quiz | quiz (au pub) | n | B1 | /ˌpʌb ˈkwɪz/ | Our team won the pub quiz. | Notre équipe a gagné le quiz.
+trivia | culture générale (questions) | n | B2 | /ˈtrɪviə/ | He's great at trivia. | Il est très fort en culture générale.
+brain teaser | casse-tête | n | B2 | /ˈbreɪn ˌtiːzər/ | Try this brain teaser. | Essaie ce casse-tête.
+magician | magicien | n | A2 | /məˈdʒɪʃn/ | The magician pulled a rabbit from a hat. | Le magicien a sorti un lapin d'un chapeau.
+juggling | jonglage | n | B1 | /ˈdʒʌɡlɪŋ/ | He learned juggling at circus school. | Il a appris le jonglage à l'école du cirque.
+to fly a kite | faire voler un cerf-volant | expr | A2 | /flaɪ ə ˈkaɪt/ | Let's fly a kite on the beach. | Allons faire voler un cerf-volant sur la plage.
+yo-yo | yo-yo | n | A2 | /ˈjəʊ jəʊ/ | He can do tricks with a yo-yo. | Il sait faire des figures au yo-yo.
+marbles | billes | n | A2 | /ˈmɑːblz/ | The boys played marbles in the playground. | Les garçons jouaient aux billes dans la cour.
+hopscotch | marelle | n | A2 | /ˈhɒpskɒtʃ/ | The girls drew a hopscotch on the ground. | Les filles ont dessiné une marelle par terre.
+treasure hunt | chasse au trésor | n | A2 | /ˈtreʒə hʌnt/ | We organised a treasure hunt for the kids. | Nous avons organisé une chasse au trésor pour les enfants.
+scavenger hunt | jeu de piste | n | B1 | /ˈskævɪndʒə hʌnt/ | The scavenger hunt took us around town. | Le jeu de piste nous a fait parcourir la ville.
+party game | jeu de société (en groupe) | n | A2 | /ˈpɑːti ɡeɪm/ | We played party games all evening. | Nous avons fait des jeux toute la soirée.
+charades | charades mimées | n | B1 | /ʃəˈrɑːdz/ | Let's play charades! | Jouons au mime !
+role-playing game | jeu de rôle | n | B1 | /ˈrəʊl ˌpleɪɪŋ ɡeɪm/ | They play a role-playing game every Saturday. | Ils font un jeu de rôle chaque samedi.
+fantasy | fantasy, fantastique | n | B1 | /ˈfæntəsi/ | She reads a lot of fantasy. | Elle lit beaucoup de fantasy.
+cosplay | cosplay | n | B1 | /ˈkɒspleɪ/ | He made his own cosplay costume. | Il a fabriqué son propre costume de cosplay.
+comic book | bande dessinée | n | A2 | /ˈkɒmɪk bʊk/ | He collects comic books. | Il collectionne les bandes dessinées.
+graphic novel | roman graphique | n | B2 | /ˌɡræfɪk ˈnɒvl/ | Persepolis is a famous graphic novel. | Persepolis est un roman graphique célèbre.
+manga | manga | n | A2 | /ˈmæŋɡə/ | My brother reads manga every day. | Mon frère lit des mangas tous les jours.
+anime | anime, dessin animé japonais | n | A2 | /ˈænɪmeɪ/ | She loves Japanese anime. | Elle adore les animes japonais.
+fan fiction | fanfiction | n | B2 | /ˈfæn ˌfɪkʃn/ | She writes fan fiction online. | Elle écrit des fanfictions en ligne.
+fanzine | fanzine | n | C1 | /ˈfænziːn/ | They published a fanzine about music. | Ils ont publié un fanzine sur la musique.
+collector | collectionneur | n | B1 | /kəˈlektər/ | He's a collector of old books. | C'est un collectionneur de livres anciens.
+collection | collection | n | A2 | /kəˈlekʃn/ | She has a big stamp collection. | Elle a une grande collection de timbres.
+tinkering | bricolage (technique) | n | C1 | /ˈtɪŋkərɪŋ/ | He spends hours tinkering with old radios. | Il passe des heures à bricoler de vieilles radios.
+drone | drone | n | B1 | /drəʊn/ | He films the coast with a drone. | Il filme la côte avec un drone.
+model railway | train miniature | n | B1 | /ˌmɒdl ˈreɪlweɪ/ | Grandpa built a model railway in the attic. | Papi a construit un train miniature au grenier.
+remote-controlled car | voiture télécommandée | n | A2 | /rɪˌməʊt kənˌtrəʊld ˈkɑːr/ | He got a remote-controlled car for his birthday. | Il a eu une voiture télécommandée pour son anniversaire.
+metal detecting | détection de métaux | n | B2 | /ˈmetl dɪˌtektɪŋ/ | Metal detecting is popular on beaches. | La détection de métaux est populaire sur les plages.
+beachcombing | ramassage sur la plage | n | C1 | /ˈbiːtʃkəʊmɪŋ/ | We went beachcombing after the storm. | Nous avons fouillé la plage après la tempête.
+foraging | cueillette sauvage | n | C1 | /ˈfɒrɪdʒɪŋ/ | Foraging for wild herbs is fun. | Cueillir des herbes sauvages est amusant.
+berry picking | cueillette de baies | n | B1 | /ˈberi ˌpɪkɪŋ/ | We went berry picking in August. | Nous sommes allés cueillir des mûres en août.
+birdhouse | nichoir | n | B1 | /ˈbɜːdhaʊs/ | We built a birdhouse for the garden. | Nous avons fabriqué un nichoir pour le jardin.
+bird feeder | mangeoire à oiseaux | n | B1 | /ˈbɜːd ˌfiːdər/ | Fill the bird feeder in winter. | Remplis la mangeoire en hiver.
+dog walking | promenade de chiens | n | B1 | /ˈdɒɡ ˌwɔːkɪŋ/ | She earns money from dog walking. | Elle gagne de l'argent en promenant des chiens.
+tai chi | tai-chi | n | B1 | /ˌtaɪ ˈtʃiː/ | Old people practise tai chi in the park. | Des personnes âgées pratiquent le tai-chi au parc.
+spa day | journée au spa | n | B1 | /ˈspɑː deɪ/ | I gave my mum a spa day. | J'ai offert une journée au spa à ma mère.
+pampering | chouchoutage, soins | n | B2 | /ˈpæmpərɪŋ/ | She needs a bit of pampering. | Elle a besoin d'être un peu chouchoutée.
 `,
 );

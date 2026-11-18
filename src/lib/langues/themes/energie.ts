@@ -118,5 +118,88 @@ candle | bougie | n | A2 | /ˈkændl/ | We lit a candle during the power cut. | 
 firewood | bois de chauffage | n | B1 | /ˈfaɪəwʊd/ | We collected firewood for winter. | Nous avons ramassé du bois de chauffage pour l'hiver.
 woodburner | poêle à bois | n | C1 | /ˈwʊdbɜːnər/ | The woodburner keeps the house warm. | Le poêle à bois garde la maison au chaud.
 gas cylinder | bouteille de gaz | n | B1 | /ˈɡæs ˌsɪlɪndər/ | The gas cylinder is empty. | La bouteille de gaz est vide.
+nuclear plant | centrale nucléaire | n | B2 | /ˌnjuːkliə ˈplɑːnt/ | The nuclear plant supplies the region. | La centrale nucléaire alimente la région.
+reactor | réacteur | n | C1 | /riˈæktər/ | The reactor was shut down. | Le réacteur a été arrêté.
+solar power | énergie solaire | n | B1 | /ˌsəʊlə ˈpaʊər/ | Our house runs on solar power. | Notre maison fonctionne à l'énergie solaire.
+biogas | biogaz | n | C1 | /ˈbaɪəʊɡæs/ | The farm produces biogas from manure. | La ferme produit du biogaz à partir du fumier.
+tidal power | énergie marémotrice | n | C1 | /ˌtaɪdl ˈpaʊər/ | Tidal power uses the movement of the sea. | L'énergie marémotrice utilise le mouvement de la mer.
+wave power | énergie houlomotrice | n | C1 | /ˈweɪv ˌpaʊər/ | Wave power is still being tested. | L'énergie des vagues est encore à l'essai.
+renewable energy | énergie renouvelable | n | B2 | /rɪˌnjuːəbl ˈenədʒi/ | Renewable energy is growing fast. | Les énergies renouvelables progressent vite.
+non-renewable | non renouvelable | adj | B2 | /ˌnɒn rɪˈnjuːəbl/ | Coal is a non-renewable resource. | Le charbon est une ressource non renouvelable.
+gasoline | essence (US) | n | B1 | /ˈɡæsəliːn/ | Gasoline prices went up again. | Le prix de l'essence a encore augmenté.
+natural gas | gaz naturel | n | B1 | /ˌnætʃrəl ˈɡæs/ | We cook with natural gas. | Nous cuisinons au gaz naturel.
+fracking | fracturation hydraulique | n | C1 | /ˈfrækɪŋ/ | Fracking is banned in France. | La fracturation hydraulique est interdite en France.
+oil well | puits de pétrole | n | B2 | /ˈɔɪl wel/ | They found oil and dug an oil well. | Ils ont trouvé du pétrole et creusé un puits.
+drilling | forage | n | C1 | /ˈdrɪlɪŋ/ | Drilling began in the North Sea. | Le forage a commencé en mer du Nord.
+barrel | baril | n | B2 | /ˈbærəl/ | Oil costs eighty dollars a barrel. | Le pétrole coûte quatre-vingts dollars le baril.
+fuel tank | réservoir | n | B1 | /ˈfjuːəl tæŋk/ | The fuel tank is almost empty. | Le réservoir est presque vide.
+power outage | panne de courant (US) | n | B2 | /ˈpaʊər ˌaʊtɪdʒ/ | The storm caused a power outage. | La tempête a provoqué une panne de courant.
+national grid | réseau électrique national | n | C1 | /ˌnæʃnəl ˈɡrɪd/ | Wind farms feed the national grid. | Les parcs éoliens alimentent le réseau national.
+smart grid | réseau intelligent | n | C2 | /ˌsmɑːt ˈɡrɪd/ | A smart grid balances supply and demand. | Un réseau intelligent équilibre l'offre et la demande.
+smart meter | compteur communicant | n | B2 | /ˌsmɑːt ˈmiːtər/ | The smart meter sends our readings. | Le compteur communicant transmet nos relevés.
+meter reading | relevé de compteur | n | B2 | /ˈmiːtə ˌriːdɪŋ/ | Send us your meter reading. | Envoyez-nous votre relevé de compteur.
+kilowatt-hour | kilowattheure | n | B2 | /ˈkɪləwɒt ˌaʊər/ | We pay per kilowatt-hour. | Nous payons au kilowattheure.
+volt | volt | n | B2 | /vəʊlt/ | France uses 230 volts. | La France utilise du 230 volts.
+alternating current | courant alternatif | n | C1 | /ˌɔːltəneɪtɪŋ ˈkʌrənt/ | Homes use alternating current. | Les maisons utilisent du courant alternatif.
+direct current | courant continu | n | C1 | /dəˌrekt ˈkʌrənt/ | Batteries supply direct current. | Les piles fournissent du courant continu.
+fuse box | boîte à fusibles | n | B2 | /ˈfjuːz bɒks/ | Check the fuse box. | Vérifie la boîte à fusibles.
+cable | câble | n | A2 | /ˈkeɪbl/ | I need a longer cable. | J'ai besoin d'un câble plus long.
+power line | ligne électrique | n | B2 | /ˈpaʊə laɪn/ | A tree fell on the power line. | Un arbre est tombé sur la ligne électrique.
+transformer | transformateur | n | C1 | /trænsˈfɔːmər/ | The transformer exploded during the storm. | Le transformateur a explosé pendant l'orage.
+double glazing | double vitrage | n | B2 | /ˌdʌbl ˈɡleɪzɪŋ/ | Double glazing keeps the heat in. | Le double vitrage garde la chaleur.
+draught excluder | boudin de porte | n | C1 | /ˈdrɑːft ɪkˌskluːdər/ | Put a draught excluder under the door. | Mets un boudin sous la porte.
+central heating | chauffage central | n | B1 | /ˌsentrəl ˈhiːtɪŋ/ | Turn on the central heating. | Allume le chauffage central.
+underfloor heating | chauffage au sol | n | B2 | /ˌʌndəflɔː ˈhiːtɪŋ/ | The bathroom has underfloor heating. | La salle de bains a un chauffage au sol.
+heating bill | facture de chauffage | n | B1 | /ˈhiːtɪŋ bɪl/ | Our heating bill doubled this winter. | Notre facture de chauffage a doublé cet hiver.
+gas bill | facture de gaz | n | B1 | /ˈɡæs bɪl/ | The gas bill arrived today. | La facture de gaz est arrivée aujourd'hui.
+energy supplier | fournisseur d'énergie | n | B2 | /ˈenədʒi səˌplaɪər/ | We changed energy supplier. | Nous avons changé de fournisseur d'énergie.
+to save energy | économiser l'énergie | expr | A2 | /seɪv ˈenədʒi/ | Turn off the lights to save energy. | Éteins les lumières pour économiser l'énergie.
+energy efficiency | efficacité énergétique | n | C1 | /ˈenədʒi ɪˌfɪʃnsi/ | The house has good energy efficiency. | La maison a une bonne efficacité énergétique.
+low-energy bulb | ampoule basse consommation | n | B2 | /ˌləʊ ˈenədʒi bʌlb/ | Use low-energy bulbs. | Utilise des ampoules basse consommation.
+LED | LED, diode | n | B1 | /ˌel iː ˈdiː/ | LED lights last longer. | Les lampes LED durent plus longtemps.
+appliance | appareil électroménager | n | B2 | /əˈplaɪəns/ | Unplug the appliance before cleaning it. | Débranche l'appareil avant de le nettoyer.
+energy label | étiquette énergétique | n | B2 | /ˈenədʒi ˌleɪbl/ | Check the energy label before buying. | Regarde l'étiquette énergétique avant d'acheter.
+decarbonisation | décarbonation | n | C2 | /diːˌkɑːbənaɪˈzeɪʃn/ | Decarbonisation of industry will take decades. | La décarbonation de l'industrie prendra des décennies.
+energy independence | indépendance énergétique | n | C1 | /ˈenədʒi ˌɪndɪˈpendəns/ | Nuclear power gives France energy independence. | Le nucléaire donne à la France son indépendance énergétique.
+energy security | sécurité énergétique | n | C1 | /ˈenədʒi sɪˌkjʊərəti/ | Energy security is a priority. | La sécurité énergétique est une priorité.
+plutonium | plutonium | n | C2 | /pluːˈtəʊniəm/ | Plutonium is highly radioactive. | Le plutonium est très radioactif.
+fission | fission | n | C2 | /ˈfɪʃn/ | Nuclear plants use fission. | Les centrales nucléaires utilisent la fission.
+fusion | fusion | n | C1 | /ˈfjuːʒn/ | Fusion could provide clean energy. | La fusion pourrait fournir une énergie propre.
+meltdown | fusion du cœur ; effondrement | n | C1 | /ˈmeltdaʊn/ | The reactor suffered a meltdown. | Le réacteur a subi une fusion du cœur.
+fallout | retombées (radioactives) | n | C1 | /ˈfɔːlaʊt/ | Fallout spread across Europe. | Les retombées se sont répandues en Europe.
+decommissioning | démantèlement | n | C2 | /ˌdiːkəˈmɪʃənɪŋ/ | Decommissioning the plant will take thirty years. | Le démantèlement de la centrale prendra trente ans.
+energy storage | stockage de l'énergie | n | C1 | /ˈenədʒi ˌstɔːrɪdʒ/ | Energy storage is the key to solar power. | Le stockage de l'énergie est la clé du solaire.
+fuel cell | pile à combustible | n | C1 | /ˈfjuːəl sel/ | The bus runs on a hydrogen fuel cell. | Le bus roule avec une pile à hydrogène.
+electric vehicle | véhicule électrique | n | B2 | /ɪˌlektrɪk ˈviːəkl/ | She bought an electric vehicle. | Elle a acheté un véhicule électrique.
+charging point | borne de recharge | n | B2 | /ˈtʃɑːdʒɪŋ pɔɪnt/ | There's a charging point at the supermarket. | Il y a une borne de recharge au supermarché.
+mileage | kilométrage | n | B2 | /ˈmaɪlɪdʒ/ | The car has low mileage. | La voiture a peu de kilomètres.
+horsepower | chevaux (puissance) | n | B2 | /ˈhɔːspaʊər/ | The engine has 150 horsepower. | Le moteur a 150 chevaux.
+engine | moteur | n | A2 | /ˈendʒɪn/ | The engine won't start. | Le moteur ne démarre pas.
+motor | moteur (électrique) | n | B1 | /ˈməʊtər/ | The fan has a small motor. | Le ventilateur a un petit moteur.
+combustion | combustion | n | C1 | /kəmˈbʌstʃən/ | Combustion releases carbon dioxide. | La combustion libère du dioxyde de carbone.
+electrical | électrique | adj | B1 | /ɪˈlektrɪkl/ | There was an electrical fault. | Il y a eu une panne électrique.
+electronic | électronique | adj | B1 | /ɪˌlekˈtrɒnɪk/ | Recycle electronic devices properly. | Recycle correctement les appareils électroniques.
+static | électricité statique | n | C1 | /ˈstætɪk/ | Static made my hair stand up. | L'électricité statique m'a dressé les cheveux.
+electric shock | décharge électrique | n | B2 | /ɪˌlektrɪk ˈʃɒk/ | He got an electric shock from the plug. | Il a pris une décharge en touchant la prise.
+to electrocute | électrocuter | v | C1 | /ɪˈlektrəkjuːt/ | Don't electrocute yourself! | Ne t'électrocute pas !
+peak hours | heures de pointe | n | B2 | /ˈpiːk aʊəz/ | Electricity costs more during peak hours. | L'électricité coûte plus cher aux heures de pointe.
+off-peak | heures creuses | adj | B2 | /ˌɒf ˈpiːk/ | Run the dishwasher at off-peak times. | Lance le lave-vaisselle aux heures creuses.
+load | charge | n | B2 | /ləʊd/ | The grid can't handle the load. | Le réseau ne supporte pas la charge.
+to harness | exploiter, capter | v | C1 | /ˈhɑːnɪs/ | We must harness the power of the wind. | Nous devons capter la force du vent.
+photovoltaic | photovoltaïque | adj | C2 | /ˌfəʊtəʊvɒlˈteɪɪk/ | They installed photovoltaic panels. | Ils ont installé des panneaux photovoltaïques.
+inverter | onduleur | n | C2 | /ɪnˈvɜːtər/ | The inverter converts the current. | L'onduleur convertit le courant.
+kinetic energy | énergie cinétique | n | C1 | /kɪˌnetɪk ˈenədʒi/ | A moving car has kinetic energy. | Une voiture en mouvement a de l'énergie cinétique.
+potential energy | énergie potentielle | n | C1 | /pəˌtenʃl ˈenədʒi/ | Water behind a dam has potential energy. | L'eau derrière un barrage a de l'énergie potentielle.
+thermal energy | énergie thermique | n | C1 | /ˌθɜːml ˈenədʒi/ | The sun provides thermal energy. | Le soleil fournit de l'énergie thermique.
+sunlight | lumière du soleil | n | A2 | /ˈsʌnlaɪt/ | Plants need sunlight. | Les plantes ont besoin de lumière.
+log burner | poêle à bois | n | B2 | /ˈlɒɡ ˌbɜːnər/ | We heat the living room with a log burner. | Nous chauffons le salon avec un poêle à bois.
+stove | cuisinière ; poêle | n | B1 | /stəʊv/ | The soup is on the stove. | La soupe est sur la cuisinière.
+flashlight | lampe de poche (US) | n | A2 | /ˈflæʃlaɪt/ | Bring a flashlight in case of a power cut. | Prends une lampe de poche en cas de coupure.
+paraffin | pétrole lampant, paraffine | n | C1 | /ˈpærəfɪn/ | The old lamp burns paraffin. | La vieille lampe brûle du pétrole.
+kerosene | kérosène | n | C1 | /ˈkerəsiːn/ | Planes run on kerosene. | Les avions fonctionnent au kérosène.
+gas station | station-service (US) | n | A2 | /ˈɡæs ˌsteɪʃn/ | Stop at the next gas station. | Arrête-toi à la prochaine station-service.
+oil price | prix du pétrole | n | B1 | /ˈɔɪl praɪs/ | The oil price fell sharply. | Le prix du pétrole a fortement baissé.
+energy poverty | précarité énergétique | n | C1 | /ˈenədʒi ˌpɒvəti/ | Energy poverty affects millions of homes. | La précarité énergétique touche des millions de foyers.
+power-hungry | énergivore | adj | C1 | /ˈpaʊə ˌhʌŋɡri/ | Old fridges are power-hungry. | Les vieux frigos sont énergivores.
 `,
 );

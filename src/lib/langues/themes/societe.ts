@@ -154,5 +154,86 @@ disenfranchised | privé de ses droits | adj | C2 | /ˌdɪsɪnˈfræntʃaɪzd/ |
 grassroots | de terrain, citoyen | adj | C1 | /ˌɡrɑːsˈruːts/ | It started as a grassroots movement. | Cela a commencé comme un mouvement citoyen.
 marginalised | marginalisé | adj | C1 | /ˈmɑːdʒɪnəlaɪzd/ | The charity helps marginalised families. | L'association aide les familles marginalisées.
 polarisation | polarisation | n | C2 | /ˌpəʊləraɪˈzeɪʃn/ | Social media increases polarisation. | Les réseaux sociaux accentuent la polarisation.
+civil society | société civile | n | C1 | /ˌsɪvl səˈsaɪəti/ | Civil society groups joined the debate. | Des associations de la société civile ont rejoint le débat.
+political party | parti politique | n | B1 | /pəˌlɪtɪkl ˈpɑːti/ | She joined a political party. | Elle a adhéré à un parti politique.
+democratic | démocratique | adj | B1 | /ˌdeməˈkrætɪk/ | It was a democratic decision. | C'était une décision démocratique.
+MP | député | n | B2 | /ˌem ˈpiː/ | Write to your local MP. | Écris à ton député.
+local council | conseil municipal | n | B1 | /ˌləʊkl ˈkaʊnsl/ | The local council built a new library. | Le conseil municipal a construit une nouvelle bibliothèque.
+liberty | liberté | n | B2 | /ˈlɪbəti/ | Liberty, equality, fraternity. | Liberté, égalité, fraternité.
+injustice | injustice | n | B2 | /ɪnˈdʒʌstɪs/ | They fought against injustice. | Ils ont lutté contre l'injustice.
+sexism | sexisme | n | B2 | /ˈseksɪzəm/ | Sexism still exists at work. | Le sexisme existe encore au travail.
+intolerance | intolérance | n | C1 | /ɪnˈtɒlərəns/ | Intolerance leads to conflict. | L'intolérance mène au conflit.
+emigration | émigration | n | B2 | /ˌemɪˈɡreɪʃn/ | Emigration emptied the villages. | L'émigration a vidé les villages.
+multiculturalism | multiculturalisme | n | C1 | /ˌmʌltiˈkʌltʃərəlɪzəm/ | Britain embraced multiculturalism. | La Grande-Bretagne a adopté le multiculturalisme.
+ethnic minority | minorité ethnique | n | B2 | /ˌeθnɪk maɪˈnɒrəti/ | The city has many ethnic minorities. | La ville compte de nombreuses minorités ethniques.
+religion | religion | n | A2 | /rɪˈlɪdʒən/ | Islam is a world religion. | L'islam est une religion mondiale.
+laïcité | laïcité | n | C1 | /laɪˈiːsɪteɪ/ | Laïcité is a principle of the French Republic. | La laïcité est un principe de la République française.
+culture | culture | n | A2 | /ˈkʌltʃər/ | I love Moroccan culture. | J'adore la culture marocaine.
+housing crisis | crise du logement | n | B2 | /ˈhaʊzɪŋ ˌkraɪsɪs/ | The housing crisis affects young people. | La crise du logement touche les jeunes.
+violence | violence | n | B1 | /ˈvaɪələns/ | Violence is never the answer. | La violence n'est jamais la solution.
+education | éducation, enseignement | n | A2 | /ˌedʒuˈkeɪʃn/ | Education is a right. | L'éducation est un droit.
+public services | services publics | n | B2 | /ˌpʌblɪk ˈsɜːvɪsɪz/ | Public services need more funding. | Les services publics ont besoin de plus de moyens.
+demonstrator | manifestant | n | B2 | /ˈdemənstreɪtər/ | Thousands of demonstrators marched. | Des milliers de manifestants ont défilé.
+activism | militantisme | n | C1 | /ˈæktɪvɪzəm/ | Her activism began at school. | Son militantisme a commencé au lycée.
+social mobility | ascenseur social | n | C1 | /ˌsəʊʃl məʊˈbɪləti/ | Education drives social mobility. | L'éducation fait fonctionner l'ascenseur social.
+social class | classe sociale | n | B2 | /ˌsəʊʃl ˈklɑːs/ | Social class affects life chances. | La classe sociale influence les chances dans la vie.
+privilege | privilège | n | B2 | /ˈprɪvəlɪdʒ/ | It's a privilege to meet you. | C'est un privilège de vous rencontrer.
+disadvantaged | défavorisé | adj | C1 | /ˌdɪsədˈvɑːntɪdʒd/ | The charity helps disadvantaged children. | L'association aide les enfants défavorisés.
+social exclusion | exclusion sociale | n | C1 | /ˌsəʊʃl ɪkˈskluːʒn/ | Unemployment can lead to social exclusion. | Le chômage peut mener à l'exclusion sociale.
+ageing population | vieillissement de la population | n | C1 | /ˌeɪdʒɪŋ ˌpɒpjuˈleɪʃn/ | Europe has an ageing population. | L'Europe connaît un vieillissement de sa population.
+birth rate | taux de natalité | n | B2 | /ˈbɜːθ reɪt/ | The birth rate is falling. | Le taux de natalité baisse.
+death rate | taux de mortalité | n | B2 | /ˈdeθ reɪt/ | The death rate rose during the epidemic. | Le taux de mortalité a augmenté pendant l'épidémie.
+population growth | croissance démographique | n | B2 | /ˌpɒpjuˈleɪʃn ɡrəʊθ/ | Population growth is fast in Africa. | La croissance démographique est rapide en Afrique.
+feminism | féminisme | n | C1 | /ˈfemənɪzəm/ | The book traces the history of feminism. | Le livre retrace l'histoire du féminisme.
+feminist | féministe | n | B2 | /ˈfemənɪst/ | She describes herself as a feminist. | Elle se dit féministe.
+women's rights | droits des femmes | n | B2 | /ˌwɪmɪnz ˈraɪts/ | The conference discussed women's rights. | La conférence a abordé les droits des femmes.
+patriarchy | patriarcat | n | C2 | /ˈpeɪtriɑːki/ | The essay criticises patriarchy. | L'essai critique le patriarcat.
+LGBT | LGBT | adj | B2 | /ˌel dʒiː biː ˈtiː/ | The article discusses LGBT rights in Europe. | L'article traite des droits LGBT en Europe.
+same-sex marriage | mariage homosexuel | n | C1 | /ˌseɪm seks ˈmærɪdʒ/ | Same-sex marriage became legal in France in 2013. | Le mariage homosexuel est devenu légal en France en 2013.
+abortion | avortement, IVG | n | C1 | /əˈbɔːʃn/ | Abortion is a divisive issue in the USA. | L'avortement est un sujet qui divise aux États-Unis.
+euthanasia | euthanasie | n | C1 | /ˌjuːθəˈneɪziə/ | Parliament debated euthanasia. | Le Parlement a débattu de l'euthanasie.
+capital punishment | peine capitale | n | C1 | /ˌkæpɪtl ˈpʌnɪʃmənt/ | France abolished capital punishment in 1981. | La France a aboli la peine capitale en 1981.
+populism | populisme | n | C1 | /ˈpɒpjəlɪzəm/ | Populism is rising in Europe. | Le populisme progresse en Europe.
+nationalism | nationalisme | n | C1 | /ˈnæʃnəlɪzəm/ | Nationalism grew after the war. | Le nationalisme a grandi après la guerre.
+extremism | extrémisme | n | C1 | /ɪkˈstriːmɪzəm/ | Education helps fight extremism. | L'éducation aide à combattre l'extrémisme.
+radicalisation | radicalisation | n | C1 | /ˌrædɪkəlaɪˈzeɪʃn/ | The programme aims to prevent radicalisation. | Le programme vise à prévenir la radicalisation.
+taboo | tabou | n | C1 | /təˈbuː/ | Money is a taboo subject in France. | L'argent est un sujet tabou en France.
+norm | norme | n | C1 | /nɔːm/ | Working from home is now the norm. | Le télétravail est désormais la norme.
+values | valeurs | n | B2 | /ˈvæljuːz/ | We share the same values. | Nous partageons les mêmes valeurs.
+morals | morale, principes moraux | n | B2 | /ˈmɒrəlz/ | He has no morals. | Il n'a aucun principe.
+civility | civilité, politesse | n | C2 | /səˈvɪləti/ | Civility is disappearing online. | La civilité disparaît en ligne.
+incivility | incivilité | n | C2 | /ˌɪnsəˈvɪləti/ | Incivility on public transport is a problem. | Les incivilités dans les transports sont un problème.
+social contract | contrat social | n | C2 | /ˌsəʊʃl ˈkɒntrækt/ | Rousseau wrote about the social contract. | Rousseau a écrit sur le contrat social.
+common good | bien commun | n | C1 | /ˌkɒmən ˈɡʊd/ | We must act for the common good. | Nous devons agir pour le bien commun.
+public interest | intérêt général | n | C1 | /ˌpʌblɪk ˈɪntrəst/ | It's in the public interest. | C'est dans l'intérêt général.
+pressure group | groupe de pression | n | C1 | /ˈpreʃə ɡruːp/ | A pressure group lobbied the minister. | Un groupe de pression a fait pression sur le ministre.
+bottom-up | ascendant, venant de la base | adj | C1 | /ˌbɒtəm ˈʌp/ | We prefer a bottom-up approach. | Nous préférons une approche venant de la base.
+top-down | descendant, imposé d'en haut | adj | C1 | /ˌtɒp ˈdaʊn/ | The reform was too top-down. | La réforme était trop imposée d'en haut.
+social services | services sociaux | n | B2 | /ˌsəʊʃl ˈsɜːvɪsɪz/ | Social services helped the family. | Les services sociaux ont aidé la famille.
+food bank | banque alimentaire | n | B2 | /ˈfuːd bæŋk/ | More families use the food bank. | Plus de familles ont recours à la banque alimentaire.
+soup kitchen | soupe populaire | n | B2 | /ˈsuːp ˌkɪtʃɪn/ | Volunteers run the soup kitchen. | Des bénévoles tiennent la soupe populaire.
+minimum income | revenu minimum | n | C1 | /ˌmɪnɪməm ˈɪnkʌm/ | The minimum income helps the poorest. | Le revenu minimum aide les plus pauvres.
+universal basic income | revenu universel | n | C1 | /ˌjuːnɪvɜːsl ˌbeɪsɪk ˈɪnkʌm/ | Finland tested a universal basic income. | La Finlande a testé un revenu universel.
+pension reform | réforme des retraites | n | C1 | /ˈpenʃn rɪˌfɔːm/ | The pension reform caused strikes. | La réforme des retraites a provoqué des grèves.
+urban regeneration | renouvellement urbain | n | C1 | /ˌɜːbən rɪˌdʒenəˈreɪʃn/ | Urban regeneration transformed the docks. | Le renouvellement urbain a transformé les docks.
+banlieue | banlieue (quartiers populaires) | n | C1 | /bɒnˈljɜː/ | The film is set in a Paris banlieue. | Le film se passe dans une banlieue parisienne.
+assimilation | assimilation | n | C1 | /əˌsɪməˈleɪʃn/ | France long favoured assimilation. | La France a longtemps privilégié l'assimilation.
+melting pot | creuset (culturel) | n | C1 | /ˈmeltɪŋ pɒt/ | New York is a melting pot. | New York est un creuset de cultures.
+xenophobia | xénophobie | n | C1 | /ˌzenəˈfəʊbiə/ | Xenophobia grows in times of crisis. | La xénophobie progresse en temps de crise.
+antisemitism | antisémitisme | n | C1 | /ˌæntiˈsemətɪzəm/ | The law punishes antisemitism. | La loi punit l'antisémitisme.
+hate crime | crime de haine | n | C1 | /ˈheɪt kraɪm/ | The attack was treated as a hate crime. | L'agression a été traitée comme un crime de haine.
+hate speech | discours de haine | n | C1 | /ˈheɪt spiːtʃ/ | Hate speech is illegal online. | Le discours de haine est illégal en ligne.
+racial profiling | contrôle au faciès | n | C1 | /ˌreɪʃl ˈprəʊfaɪlɪŋ/ | The report criticised racial profiling. | Le rapport a dénoncé les contrôles au faciès.
+affirmative action | discrimination positive (US) | n | C1 | /əˌfɜːmətɪv ˈækʃn/ | Affirmative action helps minority students. | La discrimination positive aide les étudiants issus des minorités.
+positive discrimination | discrimination positive | n | C1 | /ˌpɒzətɪv dɪˌskrɪmɪˈneɪʃn/ | Positive discrimination is controversial. | La discrimination positive est controversée.
+meritocracy | méritocratie | n | C2 | /ˌmerɪˈtɒkrəsi/ | School is supposed to be a meritocracy. | L'école est censée être une méritocratie.
+nepotism | népotisme | n | C2 | /ˈnepətɪzəm/ | He was accused of nepotism. | Il a été accusé de népotisme.
+cronyism | copinage | n | C2 | /ˈkrəʊniɪzəm/ | Cronyism is common in that ministry. | Le copinage est courant dans ce ministère.
+transparency | transparence | n | C1 | /trænsˈpærənsi/ | Voters demand transparency. | Les électeurs exigent la transparence.
+accountability | responsabilité, obligation de rendre des comptes | n | C1 | /əˌkaʊntəˈbɪləti/ | There is no accountability in this system. | Personne ne rend de comptes dans ce système.
+civic duty | devoir civique | n | C1 | /ˌsɪvɪk ˈdjuːti/ | Voting is a civic duty. | Voter est un devoir civique.
+jury service | fonction de juré | n | C1 | /ˈdʒʊəri ˌsɜːvɪs/ | I was called for jury service. | J'ai été convoqué comme juré.
+national service | service militaire | n | B2 | /ˌnæʃnəl ˈsɜːvɪs/ | My grandfather did national service. | Mon grand-père a fait son service militaire.
+conscription | conscription | n | C1 | /kənˈskrɪpʃn/ | Conscription ended in France in 1997. | La conscription a pris fin en France en 1997.
 `,
 );

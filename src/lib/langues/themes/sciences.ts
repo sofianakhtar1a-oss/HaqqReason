@@ -154,5 +154,92 @@ genetics | génétique | n | C1 | /dʒəˈnetɪks/ | She studies genetics. | Ell
 neuroscience | neurosciences | n | C1 | /ˈnjʊərəʊˌsaɪəns/ | Neuroscience studies the brain. | Les neurosciences étudient le cerveau.
 quantum | quantique | adj | C2 | /ˈkwɒntəm/ | Quantum physics is hard to understand. | La physique quantique est difficile à comprendre.
 big bang | big bang | n | B2 | /ˌbɪɡ ˈbæŋ/ | The universe began with the big bang. | L'univers a commencé avec le big bang.
+beaker | bécher | n | B2 | /ˈbiːkər/ | Pour the liquid into a beaker. | Verse le liquide dans un bécher.
+flask | fiole, flacon | n | B2 | /flɑːsk/ | Heat the flask gently. | Chauffe doucement la fiole.
+Bunsen burner | bec Bunsen | n | B2 | /ˌbʌnsn ˈbɜːnər/ | Light the Bunsen burner carefully. | Allume le bec Bunsen avec précaution.
+pipette | pipette | n | B2 | /pɪˈpet/ | Add two drops with a pipette. | Ajoute deux gouttes avec une pipette.
+petri dish | boîte de Petri | n | C1 | /ˈpetri dɪʃ/ | Bacteria grew in the petri dish. | Des bactéries ont poussé dans la boîte de Petri.
+scientific method | méthode scientifique | n | B2 | /ˌsaɪəntɪfɪk ˈmeθəd/ | Ibn al-Haytham used the scientific method. | Ibn al-Haytham utilisait la méthode scientifique.
+control group | groupe témoin | n | C1 | /kənˈtrəʊl ɡruːp/ | The control group received no treatment. | Le groupe témoin n'a reçu aucun traitement.
+astronomer | astronome | n | B2 | /əˈstrɒnəmər/ | Al-Biruni was a great astronomer. | Al-Biruni était un grand astronome.
+geology | géologie | n | B2 | /dʒiˈɒlədʒi/ | Geology studies rocks. | La géologie étudie les roches.
+geologist | géologue | n | B2 | /dʒiˈɒlədʒɪst/ | The geologist examined the cliff. | Le géologue a examiné la falaise.
+geneticist | généticien | n | C1 | /dʒəˈnetɪsɪst/ | The geneticist studied the family's DNA. | Le généticien a étudié l'ADN de la famille.
+botany | botanique | n | C1 | /ˈbɒtəni/ | She has a degree in botany. | Elle a un diplôme de botanique.
+botanist | botaniste | n | C1 | /ˈbɒtənɪst/ | The botanist found a new plant. | Le botaniste a découvert une nouvelle plante.
+zoology | zoologie | n | C1 | /zuˈɒlədʒi/ | He teaches zoology at university. | Il enseigne la zoologie à l'université.
+zoologist | zoologiste | n | C1 | /zuˈɒlədʒɪst/ | The zoologist studies gorillas. | Le zoologiste étudie les gorilles.
+compound | composé | n | C1 | /ˈkɒmpaʊnd/ | Water is a compound of hydrogen and oxygen. | L'eau est un composé d'hydrogène et d'oxygène.
+mixture | mélange | n | B1 | /ˈmɪkstʃər/ | Stir the mixture well. | Remue bien le mélange.
+solution | solution | n | B1 | /səˈluːʃn/ | Dissolve the salt to make a solution. | Dissous le sel pour faire une solution.
+acid | acide | n | B1 | /ˈæsɪd/ | Lemon juice contains acid. | Le jus de citron contient de l'acide.
+alkali | base (chimie) | n | C1 | /ˈælkəlaɪ/ | Soap is an alkali. | Le savon est une base.
+metal | métal | n | A2 | /ˈmetl/ | Iron is a metal. | Le fer est un métal.
+density | densité | n | C1 | /ˈdensəti/ | Oil has a lower density than water. | L'huile a une densité plus faible que l'eau.
+velocity | vitesse (vectorielle) | n | C1 | /vəˈlɒsəti/ | Calculate the velocity of the ball. | Calcule la vitesse de la balle.
+acceleration | accélération | n | B2 | /əkˌseləˈreɪʃn/ | The car has fast acceleration. | La voiture a une forte accélération.
+magnetism | magnétisme | n | C1 | /ˈmæɡnətɪzəm/ | Magnetism attracts iron. | Le magnétisme attire le fer.
+magnetic field | champ magnétique | n | C1 | /mæɡˌnetɪk ˈfiːld/ | The Earth has a magnetic field. | La Terre a un champ magnétique.
+proton | proton | n | C1 | /ˈprəʊtɒn/ | A proton has a positive charge. | Un proton a une charge positive.
+neutron | neutron | n | C1 | /ˈnjuːtrɒn/ | A neutron has no charge. | Un neutron n'a pas de charge.
+nucleus | noyau | n | C1 | /ˈnjuːkliəs/ | The nucleus is the centre of the atom. | Le noyau est le centre de l'atome.
+organism | organisme | n | B2 | /ˈɔːɡənɪzəm/ | Bacteria are tiny organisms. | Les bactéries sont de minuscules organismes.
+natural selection | sélection naturelle | n | C1 | /ˌnætʃrəl sɪˈlekʃn/ | Darwin described natural selection. | Darwin a décrit la sélection naturelle.
+chromosome | chromosome | n | C1 | /ˈkrəʊməsəʊm/ | Humans have 46 chromosomes. | Les humains ont 46 chromosomes.
+enzyme | enzyme | n | C1 | /ˈenzaɪm/ | Enzymes help digestion. | Les enzymes aident la digestion.
+microbe | microbe | n | B2 | /ˈmaɪkrəʊb/ | Microbes live everywhere. | Les microbes vivent partout.
+adaptation | adaptation | n | B2 | /ˌædæpˈteɪʃn/ | The camel's hump is an adaptation to the desert. | La bosse du chameau est une adaptation au désert.
+mutation | mutation | n | C1 | /mjuːˈteɪʃn/ | A genetic mutation caused the disease. | Une mutation génétique a causé la maladie.
+periodic table | tableau périodique | n | B2 | /ˌpɪəriɒdɪk ˈteɪbl/ | Learn the periodic table. | Apprends le tableau périodique.
+helium | hélium | n | B2 | /ˈhiːliəm/ | The balloon is filled with helium. | Le ballon est rempli d'hélium.
+chemical reaction | réaction chimique | n | B2 | /ˌkemɪkl riˈækʃn/ | Rust is a chemical reaction. | La rouille est une réaction chimique.
+catalyst | catalyseur | n | C1 | /ˈkætəlɪst/ | The catalyst speeds up the reaction. | Le catalyseur accélère la réaction.
+oxidation | oxydation | n | C1 | /ˌɒksɪˈdeɪʃn/ | Oxidation turns iron into rust. | L'oxydation transforme le fer en rouille.
+evaporation | évaporation | n | B2 | /ɪˌvæpəˈreɪʃn/ | Evaporation leaves the salt behind. | L'évaporation laisse le sel.
+condensation | condensation | n | B2 | /ˌkɒndenˈseɪʃn/ | Condensation formed on the window. | De la condensation s'est formée sur la vitre.
+melting point | point de fusion | n | B2 | /ˈmeltɪŋ pɔɪnt/ | The melting point of ice is zero degrees. | Le point de fusion de la glace est de zéro degré.
+sound | son | n | A1 | /saʊnd/ | Sound travels slower than light. | Le son voyage moins vite que la lumière.
+wavelength | longueur d'onde | n | C1 | /ˈweɪvleŋθ/ | Red light has a long wavelength. | La lumière rouge a une grande longueur d'onde.
+laser | laser | n | B1 | /ˈleɪzər/ | The surgeon used a laser. | Le chirurgien a utilisé un laser.
+prism | prisme | n | B2 | /ˈprɪzəm/ | A prism splits light into colours. | Un prisme décompose la lumière en couleurs.
+refraction | réfraction | n | C1 | /rɪˈfrækʃn/ | Refraction makes the straw look bent. | La réfraction fait paraître la paille tordue.
+optics | optique | n | C1 | /ˈɒptɪks/ | Ibn al-Haytham founded modern optics. | Ibn al-Haytham a fondé l'optique moderne.
+quantum physics | physique quantique | n | C1 | /ˌkwɒntəm ˈfɪzɪks/ | Quantum physics studies tiny particles. | La physique quantique étudie les particules infimes.
+relativity | relativité | n | C1 | /ˌreləˈtɪvəti/ | Einstein developed the theory of relativity. | Einstein a élaboré la théorie de la relativité.
+solar system | système solaire | n | A2 | /ˈsəʊlə ˌsɪstəm/ | There are eight planets in the solar system. | Il y a huit planètes dans le système solaire.
+asteroid | astéroïde | n | B2 | /ˈæstərɔɪd/ | An asteroid passed close to Earth. | Un astéroïde est passé près de la Terre.
+meteor | météore, étoile filante | n | B2 | /ˈmiːtiər/ | We saw a meteor last night. | Nous avons vu une étoile filante hier soir.
+meteorite | météorite | n | B2 | /ˈmiːtiəraɪt/ | A meteorite fell in the desert. | Une météorite est tombée dans le désert.
+black hole | trou noir | n | B2 | /ˌblæk ˈhəʊl/ | Nothing escapes a black hole. | Rien n'échappe à un trou noir.
+supernova | supernova | n | C1 | /ˌsuːpəˈnəʊvə/ | A supernova is an exploding star. | Une supernova est une étoile qui explose.
+nebula | nébuleuse | n | C1 | /ˈnebjələ/ | Stars are born in a nebula. | Les étoiles naissent dans une nébuleuse.
+light year | année-lumière | n | B2 | /ˈlaɪt jɪər/ | The star is ten light years away. | L'étoile est à dix années-lumière.
+space | espace | n | A2 | /speɪs/ | The astronauts travelled into space. | Les astronautes sont partis dans l'espace.
+space station | station spatiale | n | B1 | /ˈspeɪs ˌsteɪʃn/ | The space station orbits the Earth. | La station spatiale tourne autour de la Terre.
+probe | sonde | n | B2 | /prəʊb/ | The probe landed on Mars. | La sonde s'est posée sur Mars.
+rover | astromobile, rover | n | B2 | /ˈrəʊvər/ | The rover sent photos of Mars. | Le rover a envoyé des photos de Mars.
+AI | IA (intelligence artificielle) | n | B1 | /ˌeɪ ˈaɪ/ | AI is changing every industry. | L'IA transforme toutes les industries.
+nanotechnology | nanotechnologie | n | C1 | /ˌnænəʊtekˈnɒlədʒi/ | Nanotechnology works at the atomic level. | La nanotechnologie travaille à l'échelle de l'atome.
+biotechnology | biotechnologie | n | C1 | /ˌbaɪəʊtekˈnɒlədʒi/ | Biotechnology produced new vaccines. | La biotechnologie a produit de nouveaux vaccins.
+genetic engineering | génie génétique | n | C1 | /dʒəˌnetɪk ˌendʒɪˈnɪərɪŋ/ | Genetic engineering raises ethical questions. | Le génie génétique soulève des questions éthiques.
+cloning | clonage | n | C1 | /ˈkləʊnɪŋ/ | Human cloning is banned. | Le clonage humain est interdit.
+data set | jeu de données | n | C1 | /ˈdeɪtə set/ | We analysed a large data set. | Nous avons analysé un grand jeu de données.
+graph | graphique | n | B1 | /ɡrɑːf/ | The graph shows rising temperatures. | Le graphique montre la hausse des températures.
+chart | graphique, tableau | n | B1 | /tʃɑːt/ | Look at the chart on page five. | Regarde le graphique page cinq.
+diagram | schéma | n | B1 | /ˈdaɪəɡræm/ | Draw a diagram of the heart. | Dessine un schéma du cœur.
+calculation | calcul | n | B1 | /ˌkælkjuˈleɪʃn/ | Check your calculation. | Vérifie ton calcul.
+theorem | théorème | n | C1 | /ˈθɪərəm/ | Pythagoras' theorem is about triangles. | Le théorème de Pythagore porte sur les triangles.
+ratio | rapport, proportion | n | B2 | /ˈreɪʃiəʊ/ | Mix water and flour in a ratio of two to one. | Mélange l'eau et la farine dans un rapport de deux pour un.
+simulation | simulation | n | B2 | /ˌsɪmjuˈleɪʃn/ | The computer ran a simulation. | L'ordinateur a lancé une simulation.
+Nobel Prize | prix Nobel | n | B1 | /ˌnəʊbel ˈpraɪz/ | She won the Nobel Prize in chemistry. | Elle a reçu le prix Nobel de chimie.
+laureate | lauréat | n | C1 | /ˈlɒriət/ | He's a Nobel laureate. | Il est lauréat du prix Nobel.
+trial and error | méthode par tâtonnements | expr | B2 | /ˌtraɪəl ənd ˈerər/ | We found the answer by trial and error. | Nous avons trouvé la réponse par tâtonnements.
+theoretical | théorique | adj | C1 | /ˌθɪəˈretɪkl/ | It's only a theoretical risk. | Ce n'est qu'un risque théorique.
+applied science | sciences appliquées | n | C1 | /əˌplaɪd ˈsaɪəns/ | Engineering is an applied science. | L'ingénierie est une science appliquée.
+pure science | science fondamentale | n | C1 | /ˌpjʊə ˈsaɪəns/ | Mathematics is a pure science. | Les mathématiques sont une science fondamentale.
+natural sciences | sciences naturelles | n | B2 | /ˌnætʃrəl ˈsaɪənsɪz/ | Biology belongs to the natural sciences. | La biologie fait partie des sciences naturelles.
+social sciences | sciences sociales | n | B2 | /ˌsəʊʃl ˈsaɪənsɪz/ | Sociology is one of the social sciences. | La sociologie fait partie des sciences sociales.
+life sciences | sciences de la vie | n | C1 | /ˈlaɪf ˌsaɪənsɪz/ | She works in life sciences. | Elle travaille dans les sciences de la vie.
+earth sciences | sciences de la Terre | n | C1 | /ˈɜːθ ˌsaɪənsɪz/ | Geology is one of the earth sciences. | La géologie fait partie des sciences de la Terre.
 `,
 );

@@ -146,5 +146,96 @@ customer loyalty | fidélité des clients | n | C1 | /ˌkʌstəmə ˈlɔɪəlti/
 counterfeit | contrefait | adj | C1 | /ˈkaʊntəfɪt/ | Don't buy counterfeit goods. | N'achète pas de produits contrefaits.
 planned obsolescence | obsolescence programmée | n | C2 | /ˌplænd ˌɒbsəˈlesns/ | Planned obsolescence forces us to buy again. | L'obsolescence programmée nous pousse à racheter.
 repair café | café réparation | n | C1 | /rɪˈpeə ˌkæfeɪ/ | I fixed my toaster at a repair café. | J'ai réparé mon grille-pain dans un café réparation.
+consumer society | société de consommation | n | B2 | /kənˈsjuːmə səˌsaɪəti/ | We live in a consumer society. | Nous vivons dans une société de consommation.
+brand loyalty | fidélité à la marque | n | C1 | /ˌbrænd ˈlɔɪəlti/ | Apple enjoys strong brand loyalty. | Apple bénéficie d'une forte fidélité à la marque.
+advertiser | annonceur | n | B2 | /ˈædvətaɪzər/ | Advertisers target young people. | Les annonceurs ciblent les jeunes.
+target audience | public cible | n | B2 | /ˈtɑːɡɪt ˌɔːdiəns/ | Teenagers are the target audience. | Les ados sont le public cible.
+focus group | groupe de discussion | n | C1 | /ˈfəʊkəs ɡruːp/ | The ad was tested on a focus group. | La pub a été testée sur un groupe témoin.
+fad | mode passagère, engouement | n | C1 | /fæd/ | Fidget spinners were just a fad. | Les hand spinners n'ont été qu'une mode passagère.
+status symbol | signe extérieur de richesse | n | C1 | /ˈsteɪtəs ˌsɪmbl/ | A big car is a status symbol. | Une grosse voiture est un signe extérieur de richesse.
+obsolete | obsolète | adj | C1 | /ˈɒbsəliːt/ | My old phone is obsolete. | Mon vieux téléphone est obsolète.
+throwaway society | société du jetable | n | C1 | /ˈθrəʊəweɪ səˌsaɪəti/ | We must leave the throwaway society behind. | Nous devons sortir de la société du jetable.
+thrift store | friperie, boutique solidaire (US) | n | B1 | /ˈθrɪft stɔːr/ | I bought this jacket at a thrift store. | J'ai acheté cette veste dans une friperie.
+swapping | troc, échange | n | B2 | /ˈswɒpɪŋ/ | Clothes swapping is becoming popular. | Le troc de vêtements devient populaire.
+sharing economy | économie collaborative | n | C1 | /ˈʃeərɪŋ iˌkɒnəmi/ | Car sharing is part of the sharing economy. | L'autopartage fait partie de l'économie collaborative.
+rental | location | n | B2 | /ˈrentl/ | Bike rental costs ten euros a day. | La location de vélos coûte dix euros par jour.
+subscription box | box d'abonnement | n | B2 | /səbˈskrɪpʃn bɒks/ | She gets a subscription box of books every month. | Elle reçoit une box de livres chaque mois.
+minimalism | minimalisme | n | C1 | /ˈmɪnɪməlɪzəm/ | Minimalism means owning less. | Le minimalisme consiste à posséder moins.
+minimalist | minimaliste | adj | C1 | /ˈmɪnɪməlɪst/ | They live a minimalist life. | Ils mènent une vie minimaliste.
+frugality | sobriété, frugalité | n | C2 | /fruˈɡæləti/ | My grandparents lived with great frugality. | Mes grands-parents vivaient très sobrement.
+to economise | économiser, faire des économies | v | C1 | /ɪˈkɒnəmaɪz/ | We economise on heating. | Nous faisons des économies sur le chauffage.
+to cut back | réduire (ses dépenses) | v | B2 | /kʌt ˈbæk/ | We need to cut back on spending. | Nous devons réduire nos dépenses.
+cutbacks | coupes budgétaires | n | C1 | /ˈkʌtbæks/ | Cutbacks hit public services. | Les coupes budgétaires ont frappé les services publics.
+consumer credit | crédit à la consommation | n | C1 | /kənˌsjuːmə ˈkredɪt/ | Consumer credit is easy to get. | Le crédit à la consommation est facile à obtenir.
+credit score | cote de crédit | n | C1 | /ˈkredɪt skɔːr/ | A good credit score helps you get a loan. | Une bonne cote de crédit aide à obtenir un prêt.
+buy now pay later | achetez maintenant, payez plus tard | expr | B2 | /ˌbaɪ naʊ ˌpeɪ ˈleɪtər/ | Buy now pay later schemes can lead to debt. | Les paiements différés peuvent mener au surendettement.
+compulsive buying | achats compulsifs | n | C1 | /kəmˌpʌlsɪv ˈbaɪɪŋ/ | Compulsive buying ruined his finances. | Les achats compulsifs ont ruiné ses finances.
+retail therapy | thérapie par le shopping | n | C1 | /ˈriːteɪl ˌθerəpi/ | She went for some retail therapy after a bad day. | Elle s'est consolée par le shopping après une mauvaise journée.
+materialism | matérialisme | n | C1 | /məˈtɪəriəlɪzəm/ | Materialism doesn't bring happiness. | Le matérialisme n'apporte pas le bonheur.
+materialistic | matérialiste | adj | C1 | /məˌtɪəriəˈlɪstɪk/ | Our society is very materialistic. | Notre société est très matérialiste.
+ethical consumption | consommation éthique | n | C1 | /ˌeθɪkl kənˈsʌmpʃn/ | Ethical consumption is growing. | La consommation éthique progresse.
+local produce | produits locaux | n | B2 | /ˌləʊkl ˈprɒdjuːs/ | The market sells local produce. | Le marché vend des produits locaux.
+short supply chain | circuit court | n | C1 | /ˌʃɔːt səˈplaɪ tʃeɪn/ | Short supply chains help farmers. | Les circuits courts aident les agriculteurs.
+eco-label | écolabel | n | C1 | /ˈiːkəʊ ˌleɪbl/ | Look for the eco-label on the packet. | Cherche l'écolabel sur le paquet.
+carbon label | étiquette carbone | n | C1 | /ˈkɑːbən ˌleɪbl/ | The carbon label shows the product's footprint. | L'étiquette carbone indique l'empreinte du produit.
+excess packaging | suremballage | n | C1 | /ˌekses ˈpækɪdʒɪŋ/ | Excess packaging creates waste. | Le suremballage crée des déchets.
+consumer protection | protection des consommateurs | n | C1 | /kənˈsjuːmə prəˌtekʃn/ | Consumer protection laws are strict in Europe. | Les lois de protection des consommateurs sont strictes en Europe.
+watchdog | organisme de contrôle | n | C1 | /ˈwɒtʃdɒɡ/ | The consumer watchdog fined the company. | L'organisme de contrôle a sanctionné l'entreprise.
+trading standards | répression des fraudes | n | C2 | /ˈtreɪdɪŋ ˌstændədz/ | Report the seller to trading standards. | Signale le vendeur à la répression des fraudes.
+product recall | rappel de produit | n | C1 | /ˈprɒdʌkt rɪˌkɔːl/ | There's a product recall on this car seat. | Il y a un rappel sur ce siège auto.
+faulty goods | marchandises défectueuses | n | B2 | /ˌfɔːlti ˈɡʊdz/ | You can return faulty goods. | Vous pouvez retourner les marchandises défectueuses.
+refund policy | politique de remboursement | n | B2 | /ˈriːfʌnd ˌpɒləsi/ | Read the refund policy first. | Lis d'abord la politique de remboursement.
+small print | petits caractères | n | B2 | /ˈsmɔːl prɪnt/ | Always read the small print. | Lis toujours les petites lignes.
+extended warranty | extension de garantie | n | C1 | /ɪkˌstendɪd ˈwɒrənti/ | Don't pay for an extended warranty. | Ne paie pas d'extension de garantie.
+after-sales service | service après-vente | n | B2 | /ˌɑːftə ˈseɪlz ˌsɜːvɪs/ | Their after-sales service is excellent. | Leur service après-vente est excellent.
+customer satisfaction | satisfaction client | n | B2 | /ˌkʌstəmə ˌsætɪsˈfækʃn/ | Customer satisfaction is our priority. | La satisfaction client est notre priorité.
+ombudsman | médiateur | n | C2 | /ˈɒmbʊdzmən/ | She complained to the ombudsman. | Elle a saisi le médiateur.
+class action | action collective | n | C1 | /ˌklɑːs ˈækʃn/ | Customers launched a class action. | Des clients ont lancé une action de groupe.
+misleading advertising | publicité trompeuse | n | C1 | /mɪsˌliːdɪŋ ˈædvətaɪzɪŋ/ | The firm was fined for misleading advertising. | L'entreprise a été condamnée pour publicité trompeuse.
+false advertising | publicité mensongère | n | C1 | /ˌfɔːls ˈædvətaɪzɪŋ/ | That's false advertising! | C'est de la publicité mensongère !
+hidden fees | frais cachés | n | B2 | /ˌhɪdn ˈfiːz/ | Watch out for hidden fees. | Attention aux frais cachés.
+sales tax | taxe sur les ventes | n | B2 | /ˈseɪlz tæks/ | Prices in the US don't include sales tax. | Aux États-Unis, les prix n'incluent pas la taxe.
+mark-up | marge (bénéficiaire) | n | C1 | /ˈmɑːk ʌp/ | The mark-up on water is huge. | La marge sur l'eau est énorme.
+profit margin | marge bénéficiaire | n | C1 | /ˈprɒfɪt ˌmɑːdʒɪn/ | The profit margin is only five per cent. | La marge bénéficiaire n'est que de cinq pour cent.
+loss leader | produit d'appel | n | C2 | /ˌlɒs ˈliːdər/ | Cheap milk is a loss leader. | Le lait bon marché est un produit d'appel.
+discount store | magasin discount | n | B1 | /ˈdɪskaʊnt stɔːr/ | We shop at a discount store. | Nous faisons nos courses dans un magasin discount.
+pound shop | magasin à une livre | n | B1 | /ˈpaʊnd ʃɒp/ | Everything in the pound shop costs a pound. | Tout coûte une livre dans ce magasin.
+couponing | chasse aux coupons | n | B2 | /ˈkuːpɒnɪŋ/ | Couponing saves her a lot of money. | La chasse aux coupons lui fait économiser beaucoup.
+loyalty scheme | programme de fidélité | n | B2 | /ˈlɔɪəlti skiːm/ | Join our loyalty scheme. | Rejoignez notre programme de fidélité.
+reward points | points de fidélité | n | B1 | /rɪˈwɔːd pɔɪnts/ | Use your reward points to get a discount. | Utilise tes points de fidélité pour avoir une remise.
+targeted ads | publicités ciblées | n | B2 | /ˌtɑːɡɪtɪd ˈædz/ | Targeted ads follow you online. | Les publicités ciblées te suivent en ligne.
+cookies | cookies (internet) | n | B1 | /ˈkʊkiz/ | Accept or refuse the cookies. | Accepte ou refuse les cookies.
+personal data | données personnelles | n | B2 | /ˌpɜːsənl ˈdeɪtə/ | Protect your personal data. | Protège tes données personnelles.
+data mining | exploration de données | n | C1 | /ˈdeɪtə ˌmaɪnɪŋ/ | Companies use data mining to predict sales. | Les entreprises utilisent l'exploration de données pour prévoir les ventes.
+online tracking | pistage en ligne | n | C1 | /ˌɒnlaɪn ˈtrækɪŋ/ | Block online tracking in your browser. | Bloque le pistage dans ton navigateur.
+e-commerce | commerce en ligne | n | B2 | /ˈiː ˌkɒmɜːs/ | E-commerce is growing every year. | Le commerce en ligne progresse chaque année.
+dropshipping | livraison directe (dropshipping) | n | C1 | /ˈdrɒpʃɪpɪŋ/ | He makes money from dropshipping. | Il gagne de l'argent avec le dropshipping.
+last-mile delivery | livraison du dernier kilomètre | n | C1 | /ˌlɑːst maɪl dɪˈlɪvəri/ | Last-mile delivery is the most expensive part. | La livraison du dernier kilomètre est la plus chère.
+returns | retours (de marchandises) | n | B1 | /rɪˈtɜːnz/ | Returns must be made within thirty days. | Les retours doivent être faits sous trente jours.
+free returns | retours gratuits | n | B1 | /ˌfriː rɪˈtɜːnz/ | The shop offers free returns. | La boutique propose les retours gratuits.
+fast fashion | mode jetable | n | B2 | /ˌfɑːst ˈfæʃn/ | Fast fashion pollutes a lot. | La mode jetable pollue beaucoup.
+slow fashion | mode durable | n | C1 | /ˌsləʊ ˈfæʃn/ | Slow fashion means buying less but better. | La mode durable, c'est acheter moins mais mieux.
+sweatshop | atelier de misère | n | C1 | /ˈswetʃɒp/ | These shirts were made in a sweatshop. | Ces chemises ont été fabriquées dans un atelier de misère.
+child labour | travail des enfants | n | B2 | /ˌtʃaɪld ˈleɪbər/ | Child labour is still common. | Le travail des enfants est encore répandu.
+supply chain | chaîne d'approvisionnement | n | C1 | /səˈplaɪ tʃeɪn/ | The supply chain was disrupted. | La chaîne d'approvisionnement a été perturbée.
+mass production | production de masse | n | B2 | /ˌmæs prəˈdʌkʃn/ | Mass production lowered prices. | La production de masse a fait baisser les prix.
+assembly line | chaîne de montage | n | B2 | /əˈsembli laɪn/ | He works on an assembly line. | Il travaille à la chaîne.
+outsourcing | délocalisation, externalisation | n | C1 | /ˈaʊtsɔːsɪŋ/ | Outsourcing cost thousands of jobs. | La délocalisation a coûté des milliers d'emplois.
+big business | grandes entreprises | n | B2 | /ˌbɪɡ ˈbɪznəs/ | Big business controls the market. | Les grandes entreprises contrôlent le marché.
+cartel | cartel | n | C1 | /kɑːˈtel/ | The oil cartel raised prices. | Le cartel pétrolier a augmenté les prix.
+lobbying | lobbying | n | C1 | /ˈlɒbiɪŋ/ | Lobbying influences the law. | Le lobbying influence la loi.
+shareholder value | valeur actionnariale | n | C2 | /ˈʃeəhəʊldə ˌvæljuː/ | The CEO focused on shareholder value. | Le PDG s'est concentré sur la valeur pour les actionnaires.
+consumer confidence | confiance des consommateurs | n | C1 | /kənˌsjuːmə ˈkɒnfɪdəns/ | Consumer confidence is falling. | La confiance des consommateurs baisse.
+spending power | pouvoir d'achat | n | C1 | /ˈspendɪŋ ˌpaʊər/ | Inflation reduces spending power. | L'inflation réduit le pouvoir d'achat.
+disposable income | revenu disponible | n | C1 | /dɪˌspəʊzəbl ˈɪnkʌm/ | Students have little disposable income. | Les étudiants ont peu de revenu disponible.
+essentials | produits de première nécessité | n | B2 | /ɪˈsenʃlz/ | We only buy the essentials. | Nous n'achetons que l'essentiel.
+necessities | produits de première nécessité | n | C1 | /nəˈsesətiz/ | Food and shelter are basic necessities. | La nourriture et le logement sont des besoins essentiels.
+non-essential | non essentiel | adj | B2 | /ˌnɒn ɪˈsenʃl/ | Non-essential shops were closed. | Les commerces non essentiels étaient fermés.
+basic needs | besoins fondamentaux | n | B2 | /ˌbeɪsɪk ˈniːdz/ | Everyone deserves their basic needs met. | Chacun mérite que ses besoins fondamentaux soient satisfaits.
+wants and needs | envies et besoins | expr | B1 | /ˌwɒnts ən ˈniːdz/ | Learn the difference between wants and needs. | Apprends la différence entre envies et besoins.
+keeping up with the Joneses | vouloir faire comme les voisins | expr | C2 | /ˌkiːpɪŋ ʌp wɪð ðə ˈdʒəʊnzɪz/ | They're always keeping up with the Joneses. | Ils veulent toujours en avoir autant que les voisins.
+conspicuous consumption | consommation ostentatoire | n | C2 | /kənˌspɪkjuəs kənˈsʌmpʃn/ | Luxury cars are conspicuous consumption. | Les voitures de luxe relèvent de la consommation ostentatoire.
+shrinkflation | réduflation | n | C2 | /ˈʃrɪŋkfleɪʃn/ | Shrinkflation means smaller packs for the same price. | La réduflation, ce sont des paquets plus petits au même prix.
+stagflation | stagflation | n | C2 | /stæɡˈfleɪʃn/ | Stagflation combines inflation and recession. | La stagflation combine inflation et récession.
 `,
 );

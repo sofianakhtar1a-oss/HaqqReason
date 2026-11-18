@@ -196,5 +196,75 @@ sundial | cadran solaire | n | C1 | /ˈsʌndaɪəl/ | The mosque has an old sund
 prayer times | horaires de prière | n | B1 | /ˈpreə taɪmz/ | Prayer times change every day. | Les horaires de prière changent chaque jour.
 lunar calendar | calendrier lunaire | n | B2 | /ˌluːnə ˈkælɪndər/ | The Islamic calendar is a lunar calendar. | Le calendrier musulman est un calendrier lunaire.
 weekday | jour de semaine | n | A2 | /ˈwiːkdeɪ/ | The shop is open on weekdays. | Le magasin est ouvert en semaine.
+half an hour | une demi-heure | expr | A1 | /ˌhɑːf ən ˈaʊər/ | I'll be back in half an hour. | Je reviens dans une demi-heure.
+quarter of an hour | un quart d'heure | expr | A2 | /ˌkwɔːtər əv ən ˈaʊər/ | The bus comes every quarter of an hour. | Le bus passe tous les quarts d'heure.
+midday | midi | n | A2 | /ˌmɪdˈdeɪ/ | We pray at midday. | Nous prions à midi.
+the day after tomorrow | après-demain | expr | A1 | /ðə ˌdeɪ ɑːftə təˈmɒrəʊ/ | We leave the day after tomorrow. | Nous partons après-demain.
+the day before yesterday | avant-hier | expr | A1 | /ðə ˌdeɪ bɪfɔː ˈjestədeɪ/ | I saw him the day before yesterday. | Je l'ai vu avant-hier.
+tonight | ce soir | adv | A1 | /təˈnaɪt/ | What are you doing tonight? | Qu'est-ce que tu fais ce soir ?
+last night | hier soir, la nuit dernière | expr | A1 | /ˌlɑːst ˈnaɪt/ | I slept badly last night. | J'ai mal dormi la nuit dernière.
+this morning | ce matin | expr | A1 | /ˌðɪs ˈmɔːnɪŋ/ | I called her this morning. | Je l'ai appelée ce matin.
+next week | la semaine prochaine | expr | A1 | /ˌnekst ˈwiːk/ | The exam is next week. | L'examen est la semaine prochaine.
+last week | la semaine dernière | expr | A1 | /ˌlɑːst ˈwiːk/ | We moved last week. | Nous avons déménagé la semaine dernière.
+last year | l'année dernière | expr | A1 | /ˌlɑːst ˈjɪər/ | Last year we went to Morocco. | L'année dernière, nous sommes allés au Maroc.
+next year | l'année prochaine | expr | A1 | /ˌnekst ˈjɪər/ | I'll start university next year. | J'entrerai à l'université l'année prochaine.
+Ramadan | ramadan | n | A2 | /ˌræməˈdæn/ | Muslims fast during Ramadan. | Les musulmans jeûnent pendant le ramadan.
+Eid | Aïd | n | A2 | /iːd/ | We visit our family at Eid. | Nous rendons visite à notre famille pour l'Aïd.
+hourglass | sablier | n | B1 | /ˈaʊəɡlɑːs/ | Turn the hourglass over. | Retourne le sablier.
+a.m. | du matin (avant midi) | expr | A2 | /ˌeɪ ˈem/ | The shop opens at 9 a.m. | Le magasin ouvre à 9 heures du matin.
+p.m. | de l'après-midi, du soir | expr | A2 | /ˌpiː ˈem/ | The train leaves at 6 p.m. | Le train part à 18 heures.
+half past | et demie | expr | A1 | /ˈhɑːf pɑːst/ | It's half past seven. | Il est sept heures et demie.
+quarter past | et quart | expr | A1 | /ˈkwɔːtə pɑːst/ | It's quarter past three. | Il est trois heures et quart.
+quarter to | moins le quart | expr | A1 | /ˈkwɔːtə tuː/ | It's quarter to ten. | Il est dix heures moins le quart.
+later | plus tard | adv | A1 | /ˈleɪtər/ | I'll call you later. | Je t'appellerai plus tard.
+these days | de nos jours, ces temps-ci | expr | A2 | /ˈðiːz deɪz/ | These days, everyone has a phone. | De nos jours, tout le monde a un téléphone.
+at the moment | en ce moment | expr | A2 | /ət ðə ˈməʊmənt/ | He's busy at the moment. | Il est occupé en ce moment.
+during | pendant | prep | A2 | /ˈdjʊərɪŋ/ | Don't talk during the prayer. | Ne parle pas pendant la prière.
+annually | annuellement | adv | B2 | /ˈænjuəli/ | The festival is held annually. | Le festival a lieu chaque année.
+hourly | toutes les heures | adv | B2 | /ˈaʊəli/ | Trains run hourly. | Les trains passent toutes les heures.
+every other day | un jour sur deux | expr | B1 | /ˌevri ˌʌðə ˈdeɪ/ | I go running every other day. | Je cours un jour sur deux.
+once in a while | de temps en temps | expr | B1 | /ˌwʌns ɪn ə ˈwaɪl/ | We eat out once in a while. | Nous mangeons dehors de temps en temps.
+straight away | tout de suite | adv | A2 | /ˌstreɪt əˈweɪ/ | Call me straight away. | Appelle-moi tout de suite.
+right away | immédiatement | adv | A2 | /ˌraɪt əˈweɪ/ | I'll do it right away. | Je le fais immédiatement.
+in a minute | dans une minute | expr | A2 | /ɪn ə ˈmɪnɪt/ | I'll be ready in a minute. | Je serai prêt dans une minute.
+in a moment | dans un instant | expr | A2 | /ɪn ə ˈməʊmənt/ | The doctor will see you in a moment. | Le médecin va vous recevoir dans un instant.
+in no time | en un rien de temps | expr | B2 | /ɪn ˈnəʊ taɪm/ | We finished in no time. | Nous avons fini en un rien de temps.
+all day long | toute la journée | expr | A2 | /ˌɔːl deɪ ˈlɒŋ/ | It rained all day long. | Il a plu toute la journée.
+day and night | jour et nuit | expr | A2 | /ˌdeɪ ən ˈnaɪt/ | The nurses work day and night. | Les infirmières travaillent jour et nuit.
+round the clock | 24 heures sur 24 | expr | B2 | /ˌraʊnd ðə ˈklɒk/ | Doctors worked round the clock. | Les médecins ont travaillé 24 heures sur 24.
+24/7 | 24 heures sur 24, 7 jours sur 7 | expr | B1 | /ˌtwentiˌfɔː ˈsevn/ | The shop is open 24/7. | La boutique est ouverte 24 heures sur 24.
+the other day | l'autre jour | expr | A2 | /ði ˈʌðə deɪ/ | I saw your brother the other day. | J'ai vu ton frère l'autre jour.
+in the past | autrefois, dans le passé | expr | A2 | /ɪn ðə ˈpɑːst/ | In the past, people walked everywhere. | Autrefois, les gens allaient partout à pied.
+in the future | à l'avenir | expr | A2 | /ɪn ðə ˈfjuːtʃər/ | In the future, be more careful. | À l'avenir, sois plus prudent.
+in the short term | à court terme | expr | B2 | /ɪn ðə ˌʃɔːt ˈtɜːm/ | In the short term, prices will rise. | À court terme, les prix vont augmenter.
+at the latest | au plus tard | expr | B1 | /ət ðə ˈleɪtɪst/ | Send it by Friday at the latest. | Envoie-le vendredi au plus tard.
+at the earliest | au plus tôt | expr | B1 | /ət ði ˈɜːliɪst/ | We'll arrive at ten at the earliest. | Nous arriverons à dix heures au plus tôt.
+daylight saving time | heure d'été | n | B2 | /ˌdeɪlaɪt ˈseɪvɪŋ taɪm/ | Daylight saving time starts in March. | L'heure d'été commence en mars.
+interval | intervalle, entracte | n | B2 | /ˈɪntəvl/ | There's an interval of twenty minutes. | Il y a un entracte de vingt minutes.
+millimetre | millimètre | n | A2 | /ˈmɪlimiːtər/ | It's only five millimetres thick. | Ça ne fait que cinq millimètres d'épaisseur.
+kilogram | kilogramme | n | A2 | /ˈkɪləɡræm/ | The bag weighs ten kilograms. | Le sac pèse dix kilogrammes.
+tonne | tonne | n | B1 | /tʌn/ | The truck carries twenty tonnes. | Le camion transporte vingt tonnes.
+ounce | once | n | B2 | /aʊns/ | Add four ounces of sugar. | Ajoute quatre onces de sucre.
+millilitre | millilitre | n | A2 | /ˈmɪliliːtər/ | Take five millilitres of syrup. | Prends cinq millilitres de sirop.
+pint | pinte | n | B1 | /paɪnt/ | Buy a pint of milk. | Achète une pinte de lait.
+gallon | gallon | n | B2 | /ˈɡælən/ | The tank holds ten gallons. | Le réservoir contient dix gallons.
+hectare | hectare | n | B2 | /ˈhekteər/ | The farm covers fifty hectares. | La ferme s'étend sur cinquante hectares.
+acre | acre | n | B2 | /ˈeɪkər/ | They own two acres of land. | Ils possèdent deux acres de terrain.
+distance | distance | n | A2 | /ˈdɪstəns/ | What's the distance between Laval and Rennes? | Quelle est la distance entre Laval et Rennes ?
+kilometres per hour | kilomètres-heure | n | A2 | /kɪˌlɒmɪtəz pər ˈaʊər/ | The speed limit is fifty kilometres per hour. | La vitesse est limitée à cinquante kilomètres-heure.
+miles per hour | miles à l'heure | n | B1 | /ˌmaɪlz pər ˈaʊər/ | He was driving at seventy miles per hour. | Il roulait à soixante-dix miles à l'heure.
+a couple | quelques, deux ou trois | expr | A2 | /ə ˈkʌpl/ | Wait a couple of minutes. | Attends deux minutes.
+a handful | une poignée | expr | B1 | /ə ˈhændfʊl/ | Add a handful of almonds. | Ajoute une poignée d'amandes.
+much | beaucoup (indénombrable) | adv | A1 | /mʌtʃ/ | Thank you very much. | Merci beaucoup.
+a lot | beaucoup | expr | A1 | /ə ˈlɒt/ | I read a lot. | Je lis beaucoup.
+a little | un peu | expr | A1 | /ə ˈlɪtl/ | I speak a little English. | Je parle un peu anglais.
+a bit | un peu | expr | A1 | /ə ˈbɪt/ | I'm a bit tired. | Je suis un peu fatigué.
+about | environ | adv | A1 | /əˈbaʊt/ | It takes about an hour. | Ça prend environ une heure.
+around | environ, vers | adv | A2 | /əˈraʊnd/ | I'll arrive around six. | J'arriverai vers six heures.
+at most | au maximum, tout au plus | expr | B1 | /ət ˈməʊst/ | It will cost twenty euros at most. | Ça coûtera vingt euros tout au plus.
+up to | jusqu'à | prep | B1 | /ˈʌp tuː/ | The room holds up to fifty people. | La salle peut accueillir jusqu'à cinquante personnes.
+more than | plus de | expr | A1 | /ˈmɔː ðæn/ | More than a thousand people came. | Plus de mille personnes sont venues.
+less than | moins de | expr | A1 | /ˈles ðæn/ | It costs less than ten euros. | Ça coûte moins de dix euros.
+fewer than | moins de (dénombrable) | expr | B1 | /ˈfjuːə ðæn/ | Fewer than twenty students passed. | Moins de vingt élèves ont réussi.
 `,
 );

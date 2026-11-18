@@ -150,5 +150,73 @@ haystack | meule de foin | n | B2 | /ˈheɪstæk/ | Like a needle in a haystack.
 watermill | moulin à eau | n | C1 | /ˈwɔːtəmɪl/ | The old watermill still turns. | Le vieux moulin à eau tourne encore.
 windmill | moulin à vent | n | B1 | /ˈwɪndmɪl/ | There's a windmill on the hill. | Il y a un moulin à vent sur la colline.
 farm animal | animal de ferme | n | A2 | /ˈfɑːm ˌænɪml/ | The children fed the farm animals. | Les enfants ont nourri les animaux de la ferme.
+farmyard | cour de ferme | n | B1 | /ˈfɑːmjɑːd/ | Chickens ran around the farmyard. | Les poules couraient dans la cour de la ferme.
+pigsty | porcherie | n | B1 | /ˈpɪɡstaɪ/ | Your room is like a pigsty! | Ta chambre est une vraie porcherie !
+henhouse | poulailler | n | B1 | /ˈhenhaʊs/ | Close the henhouse at night. | Ferme le poulailler le soir.
+trailer | remorque | n | B1 | /ˈtreɪlər/ | The tractor pulled a trailer of hay. | Le tracteur tirait une remorque de foin.
+hay bale | botte de foin | n | B1 | /ˈheɪ beɪl/ | The children jumped on the hay bales. | Les enfants sautaient sur les bottes de foin.
+rye | seigle | n | B2 | /raɪ/ | Rye bread is dark and dense. | Le pain de seigle est sombre et dense.
+maize | maïs | n | B1 | /meɪz/ | The farmer grows maize for his cows. | L'agriculteur cultive du maïs pour ses vaches.
+rapeseed | colza | n | C1 | /ˈreɪpsiːd/ | Yellow fields of rapeseed cover the plain. | Des champs jaunes de colza couvrent la plaine.
+sugar beet | betterave sucrière | n | C1 | /ˈʃʊɡə biːt/ | Sugar beet is grown in the north of France. | La betterave sucrière est cultivée dans le nord de la France.
+organic farming | agriculture biologique | n | B2 | /ɔːˌɡænɪk ˈfɑːmɪŋ/ | Organic farming avoids chemicals. | L'agriculture biologique évite les produits chimiques.
+agricultural | agricole | adj | B2 | /ˌæɡrɪˈkʌltʃərəl/ | Mayenne is an agricultural region. | La Mayenne est une région agricole.
+ox | bœuf (de trait) | n | B1 | /ɒks/ | The ox pulled the plough. | Le bœuf tirait la charrue.
+ram | bélier | n | B2 | /ræm/ | The ram has curly horns. | Le bélier a des cornes enroulées.
+piglet | porcelet | n | B1 | /ˈpɪɡlət/ | The sow had ten piglets. | La truie a eu dix porcelets.
+cockerel | jeune coq | n | B2 | /ˈkɒkərəl/ | The cockerel woke us at dawn. | Le coq nous a réveillés à l'aube.
+shepherdess | bergère | n | B2 | /ˌʃepəˈdes/ | The shepherdess led the flock home. | La bergère a ramené le troupeau.
+grazing | pâturage | n | B2 | /ˈɡreɪzɪŋ/ | The land is used for grazing. | La terre sert au pâturage.
+milking | traite | n | B2 | /ˈmɪlkɪŋ/ | Milking starts at six. | La traite commence à six heures.
+dairy farm | exploitation laitière | n | B2 | /ˈdeəri fɑːm/ | My uncle runs a dairy farm. | Mon oncle tient une exploitation laitière.
+cheese-making | fabrication du fromage | n | B2 | /ˈtʃiːz ˌmeɪkɪŋ/ | Cheese-making is a tradition here. | La fabrication du fromage est une tradition ici.
+beekeeping | apiculture | n | B2 | /ˈbiːkiːpɪŋ/ | Beekeeping is my grandfather's hobby. | L'apiculture est le passe-temps de mon grand-père.
+miller | meunier | n | B2 | /ˈmɪlər/ | The miller ground the wheat. | Le meunier moulait le blé.
+hedgerow | haie (bocagère) | n | C1 | /ˈhedʒrəʊ/ | Birds nest in the hedgerows. | Les oiseaux nichent dans les haies.
+path | chemin, sentier | n | A2 | /pɑːθ/ | Follow the path through the woods. | Suis le chemin à travers les bois.
+dirt track | chemin de terre | n | B1 | /ˈdɜːt træk/ | The farm is at the end of a dirt track. | La ferme est au bout d'un chemin de terre.
+shovel | pelle | n | B1 | /ˈʃʌvl/ | Clear the snow with a shovel. | Dégage la neige avec une pelle.
+watering can | arrosoir | n | A2 | /ˈwɔːtərɪŋ kæn/ | Fill the watering can. | Remplis l'arrosoir.
+village green | pré communal | n | B2 | /ˌvɪlɪdʒ ˈɡriːn/ | They play cricket on the village green. | Ils jouent au cricket sur le pré communal.
+village hall | salle des fêtes | n | B1 | /ˌvɪlɪdʒ ˈhɔːl/ | The party is in the village hall. | La fête a lieu à la salle des fêtes.
+market town | bourg, ville de marché | n | B2 | /ˈmɑːkɪt taʊn/ | Laval is an old market town. | Laval est une ancienne ville de marché.
+idyllic | idyllique | adj | C1 | /ɪˈdɪlɪk/ | The cottage is in an idyllic spot. | Le cottage est dans un endroit idyllique.
+country life | vie à la campagne | n | B1 | /ˌkʌntri ˈlaɪf/ | They prefer country life. | Ils préfèrent la vie à la campagne.
+country house | maison de campagne | n | B1 | /ˌkʌntri ˈhaʊs/ | We spend summers at our country house. | Nous passons l'été dans notre maison de campagne.
+thatched cottage | chaumière | n | B2 | /ˌθætʃt ˈkɒtɪdʒ/ | They live in a thatched cottage. | Ils vivent dans une chaumière.
+thatched roof | toit de chaume | n | B2 | /ˌθætʃt ˈruːf/ | Thatched roofs need repairs every twenty years. | Les toits de chaume se refont tous les vingt ans.
+smallholder | petit exploitant | n | C1 | /ˈsmɔːlhəʊldər/ | Smallholders sell their eggs at the market. | Les petits exploitants vendent leurs œufs au marché.
+landowner | propriétaire terrien | n | C1 | /ˈlændəʊnər/ | The landowner rented out his fields. | Le propriétaire terrien louait ses champs.
+tenant farmer | fermier, métayer | n | C1 | /ˌtenənt ˈfɑːmər/ | His father was a tenant farmer. | Son père était fermier.
+farmhand | ouvrier agricole | n | B2 | /ˈfɑːmhænd/ | The farmhand fed the animals. | L'ouvrier agricole a nourri les bêtes.
+seasonal worker | saisonnier | n | B2 | /ˌsiːzənl ˈwɜːkər/ | Seasonal workers pick the apples. | Les saisonniers cueillent les pommes.
+fruit picking | cueillette des fruits | n | B1 | /ˈfruːt ˌpɪkɪŋ/ | Students earn money from fruit picking. | Les étudiants gagnent de l'argent en faisant la cueillette.
+grape harvest | vendanges | n | B2 | /ˈɡreɪp ˌhɑːvɪst/ | The grape harvest starts in September. | Les vendanges commencent en septembre.
+dung | bouse, fumier | n | C1 | /dʌŋ/ | Cow dung makes good fertiliser. | La bouse de vache est un bon engrais.
+granary | grenier à grain | n | C1 | /ˈɡrænəri/ | The wheat is stored in the granary. | Le blé est stocké dans le grenier à grain.
+olive press | pressoir à olives | n | C1 | /ˈɒlɪv pres/ | The old olive press still works. | Le vieux pressoir à olives fonctionne encore.
+rural exodus | exode rural | n | C1 | /ˌrʊərəl ˈeksədəs/ | The rural exodus emptied the villages. | L'exode rural a vidé les villages.
+depopulation | dépeuplement | n | C2 | /diːˌpɒpjuˈleɪʃn/ | Depopulation threatens rural schools. | Le dépeuplement menace les écoles rurales.
+deserted village | village abandonné | n | B2 | /dɪˌzɜːtɪd ˈvɪlɪdʒ/ | We walked through a deserted village. | Nous avons traversé un village abandonné.
+agritourism | agrotourisme | n | C1 | /ˈæɡritʊərɪzəm/ | Agritourism brings income to farmers. | L'agrotourisme apporte des revenus aux agriculteurs.
+farm shop | magasin à la ferme | n | B1 | /ˈfɑːm ʃɒp/ | We buy our eggs at the farm shop. | Nous achetons nos œufs à la ferme.
+farmers' market | marché de producteurs | n | B1 | /ˈfɑːməz ˌmɑːkɪt/ | The farmers' market is on Saturday. | Le marché de producteurs a lieu le samedi.
+free-range | élevé en plein air | adj | B2 | /ˌfriː ˈreɪndʒ/ | We only buy free-range eggs. | Nous n'achetons que des œufs de poules élevées en plein air.
+battery hen | poule de batterie | n | C1 | /ˈbætəri hen/ | Battery hens never see daylight. | Les poules de batterie ne voient jamais le jour.
+factory farming | élevage industriel | n | C1 | /ˈfæktəri ˌfɑːmɪŋ/ | Factory farming raises ethical questions. | L'élevage industriel pose des questions éthiques.
+intensive farming | agriculture intensive | n | C1 | /ɪnˌtensɪv ˈfɑːmɪŋ/ | Intensive farming exhausts the soil. | L'agriculture intensive épuise les sols.
+sustainable farming | agriculture durable | n | C1 | /səˌsteɪnəbl ˈfɑːmɪŋ/ | Sustainable farming protects the land. | L'agriculture durable protège la terre.
+crop rotation | rotation des cultures | n | C1 | /ˈkrɒp rəʊˌteɪʃn/ | Crop rotation keeps the soil healthy. | La rotation des cultures garde les sols en bonne santé.
+fallow | en jachère | adj | C2 | /ˈfæləʊ/ | The field was left fallow for a year. | Le champ est resté en jachère un an.
+common agricultural policy | politique agricole commune | n | C1 | /ˌkɒmən ˌæɡrɪkʌltʃərəl ˈpɒləsi/ | The common agricultural policy supports EU farmers. | La politique agricole commune soutient les agriculteurs européens.
+co-operative | coopérative | n | C1 | /kəʊˈɒpərətɪv/ | The farmers sell their milk through a co-operative. | Les agriculteurs vendent leur lait par une coopérative.
+hunting | chasse | n | B1 | /ˈhʌntɪŋ/ | Hunting season opens in September. | La saison de la chasse ouvre en septembre.
+hunter | chasseur | n | B1 | /ˈhʌntər/ | The hunter followed the deer. | Le chasseur a suivi le cerf.
+poaching | braconnage | n | C1 | /ˈpəʊtʃɪŋ/ | Poaching threatens elephants. | Le braconnage menace les éléphants.
+gamekeeper | garde-chasse | n | C1 | /ˈɡeɪmkiːpər/ | The gamekeeper caught the poacher. | Le garde-chasse a attrapé le braconnier.
+fox hunting | chasse au renard | n | C1 | /ˈfɒks ˌhʌntɪŋ/ | Fox hunting is banned in England. | La chasse au renard est interdite en Angleterre.
+angler | pêcheur à la ligne | n | B2 | /ˈæŋɡlər/ | An angler sat by the river. | Un pêcheur était assis au bord de la rivière.
+rod | canne à pêche | n | B1 | /rɒd/ | He cast his rod into the lake. | Il a lancé sa canne dans le lac.
+bait | appât | n | B2 | /beɪt/ | Worms make good bait. | Les vers font de bons appâts.
 `,
 );

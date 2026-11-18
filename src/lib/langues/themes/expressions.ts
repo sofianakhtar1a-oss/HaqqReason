@@ -210,5 +210,96 @@ a red herring | une fausse piste | expr | C2 | /ə ˌred ˈherɪŋ/ | That clue 
 in the same breath | dans la foulée | expr | C2 | /ɪn ðə ˌseɪm ˈbreθ/ | He praised and criticised her in the same breath. | Il l'a félicitée et critiquée dans la foulée.
 by and large | dans l'ensemble | expr | C1 | /ˌbaɪ ənd ˈlɑːdʒ/ | By and large, the trip went well. | Dans l'ensemble, le voyage s'est bien passé.
 to all intents and purposes | à toutes fins utiles, pratiquement | expr | C2 | /tʊ ˌɔːl ˌɪntents ənd ˈpɜːpəsɪz/ | To all intents and purposes, the war was over. | Pratiquement, la guerre était finie.
+go back to the drawing board | reprendre à zéro | expr | B2 | /ɡəʊ ˌbæk tə ðə ˈdrɔːɪŋ bɔːd/ | The plan failed, so we must go back to the drawing board. | Le plan a échoué, nous devons tout reprendre à zéro.
+to turn a blind eye | fermer les yeux | expr | B2 | /tɜːn ə ˌblaɪnd ˈaɪ/ | We can't turn a blind eye to injustice. | Nous ne pouvons pas fermer les yeux sur l'injustice.
+under the radar | discrètement, sans se faire remarquer | expr | C1 | /ˌʌndə ðə ˈreɪdɑːr/ | The deal stayed under the radar. | L'accord est passé inaperçu.
+to wrap your head around | arriver à comprendre | expr | C1 | /ræp jə ˈhed əˌraʊnd/ | I can't wrap my head around it. | Je n'arrive pas à comprendre.
+to add insult to injury | aggraver les choses | expr | C1 | /æd ˌɪnsʌlt tu ˈɪndʒəri/ | To add insult to injury, it started to rain. | Pour ne rien arranger, il s'est mis à pleuvoir.
+barking up the wrong tree | se tromper de cible | expr | C1 | /ˌbɑːkɪŋ ʌp ðə ˌrɒŋ ˈtriː/ | If you think I took it, you're barking up the wrong tree. | Si tu crois que c'est moi qui l'ai pris, tu te trompes de personne.
+to break the bank | ruiner, coûter une fortune | expr | B2 | /breɪk ðə ˈbæŋk/ | A cup of coffee won't break the bank. | Un café ne va pas te ruiner.
+cross that bridge when you come to it | chaque chose en son temps | expr | C1 | /ˈkrɒs ðæt ˈbrɪdʒ wen jə ˈkʌm tʊ ɪt/ | Don't worry now; cross that bridge when you come to it. | Ne t'inquiète pas maintenant : chaque chose en son temps.
+to cry wolf | crier au loup | expr | C1 | /kraɪ ˈwʊlf/ | Don't cry wolf or nobody will believe you. | Ne crie pas au loup, sinon personne ne te croira.
+curiosity killed the cat | la curiosité est un vilain défaut | expr | B2 | /ˌkjʊəriˈɒsəti ˌkɪld ðə ˈkæt/ | Stop asking questions: curiosity killed the cat! | Arrête de poser des questions : la curiosité est un vilain défaut !
+don't count your chickens | il ne faut pas vendre la peau de l'ours | expr | C1 | /ˌdəʊnt ˌkaʊnt jə ˈtʃɪkɪnz/ | You haven't won yet, so don't count your chickens. | Tu n'as pas encore gagné : ne vends pas la peau de l'ours.
+to give someone the benefit of the doubt | accorder le bénéfice du doute | expr | C1 | /ɡɪv ˌsʌmwʌn ðə ˌbenɪfɪt əv ðə ˈdaʊt/ | Let's give him the benefit of the doubt. | Accordons-lui le bénéfice du doute.
+haste makes waste | la précipitation est mauvaise conseillère | expr | C1 | /ˌheɪst meɪks ˈweɪst/ | Slow down: haste makes waste. | Ralentis : la précipitation est mauvaise conseillère.
+in the heat of the moment | dans le feu de l'action | expr | B2 | /ɪn ðə ˌhiːt əv ðə ˈməʊmənt/ | I said it in the heat of the moment. | Je l'ai dit dans le feu de l'action.
+it takes two to tango | il faut être deux pour se disputer | expr | C1 | /ɪt ˌteɪks ˌtuː tə ˈtæŋɡəʊ/ | Don't blame only him; it takes two to tango. | Ne le blâme pas seul : il faut être deux.
+to leave no stone unturned | remuer ciel et terre | expr | C1 | /liːv ˌnəʊ ˌstəʊn ʌnˈtɜːnd/ | The police will leave no stone unturned. | La police va remuer ciel et terre.
+to let off steam | se défouler | expr | B2 | /let ɒf ˈstiːm/ | The kids need to let off steam. | Les enfants ont besoin de se défouler.
+to make a long story short | pour faire court | expr | B2 | /tə meɪk ə ˌlɒŋ ˌstɔːri ˈʃɔːt/ | To make a long story short, we missed the plane. | Pour faire court, nous avons raté l'avion.
+method to the madness | une logique derrière la folie | expr | C2 | /ˌmeθəd tə ðə ˈmædnəs/ | There's a method to the madness. | Il y a une logique derrière cette folie.
+not a big deal | pas grave, pas une affaire | expr | B1 | /ˌnɒt ə ˌbɪɡ ˈdiːl/ | Don't worry, it's not a big deal. | Ne t'inquiète pas, ce n'est pas grave.
+over the top | excessif, exagéré | expr | B2 | /ˌəʊvə ðə ˈtɒp/ | The decoration is a bit over the top. | La décoration est un peu exagérée.
+to rain on someone's parade | gâcher la fête à quelqu'un | expr | C1 | /reɪn ɒn ˌsʌmwʌnz pəˈreɪd/ | I don't want to rain on your parade. | Je ne veux pas te gâcher la fête.
+to save for a rainy day | garder une poire pour la soif | expr | B2 | /seɪv fər ə ˌreɪni ˈdeɪ/ | It's wise to save for a rainy day. | Il est sage de garder une poire pour la soif.
+to steal the show | voler la vedette | expr | B2 | /stiːl ðə ˈʃəʊ/ | The little girl will steal the show. | La petite fille va voler la vedette.
+to take a rain check | remettre à plus tard | expr | C1 | /teɪk ə ˈreɪn tʃek/ | Can I take a rain check on dinner? | On peut remettre le dîner à plus tard ?
+on the ball | vif, réactif | expr | B2 | /ɒn ðə ˈbɔːl/ | Our new assistant is really on the ball. | Notre nouvelle assistante est vraiment réactive.
+to have second thoughts | avoir des doutes, hésiter | expr | B2 | /hæv ˌsekənd ˈθɔːts/ | I'm starting to have second thoughts. | Je commence à avoir des doutes.
+to pull your weight | faire sa part | expr | B2 | /pʊl jə ˈweɪt/ | You need to pull your weight. | Tu dois faire ta part.
+to ring true | sonner juste | expr | C1 | /rɪŋ ˈtruː/ | His story doesn't ring true. | Son histoire ne sonne pas juste.
+to the best of my knowledge | à ma connaissance | expr | C1 | /tə ðə ˌbest əv maɪ ˈnɒlɪdʒ/ | To the best of my knowledge, he's honest. | À ma connaissance, il est honnête.
+under the table | au noir, sous le manteau | expr | B2 | /ˌʌndə ðə ˈteɪbl/ | He was paid under the table. | Il était payé au noir.
+until the cows come home | jusqu'à la saint-glinglin | expr | C1 | /ənˌtɪl ðə ˈkaʊz kʌm həʊm/ | You can argue until the cows come home. | Tu peux discuter jusqu'à la saint-glinglin.
+water under the bridge | de l'histoire ancienne | expr | C1 | /ˌwɔːtər ˌʌndə ðə ˈbrɪdʒ/ | Our fight is water under the bridge. | Notre dispute, c'est de l'histoire ancienne.
+you can't judge a book by its cover | l'habit ne fait pas le moine | expr | B2 | /juː ˌkɑːnt ˌdʒʌdʒ ə ˈbʊk baɪ ɪts ˈkʌvər/ | He looks rough, but you can't judge a book by its cover. | Il a l'air rude, mais l'habit ne fait pas le moine.
+a fish out of water | comme un poisson hors de l'eau | expr | B2 | /ə ˌfɪʃ aʊt əv ˈwɔːtər/ | At the party I felt like a fish out of water. | À la fête, je me sentais comme un poisson hors de l'eau.
+a slap on the wrist | une petite tape sur les doigts | expr | C1 | /ə ˌslæp ɒn ðə ˈrɪst/ | He only got a slap on the wrist. | Il s'en est tiré avec une simple réprimande.
+a taste of your own medicine | la monnaie de sa pièce | expr | C1 | /ə ˌteɪst əv jər ˌəʊn ˈmedsn/ | Now you get a taste of your own medicine. | Maintenant, tu reçois la monnaie de ta pièce.
+an eye for an eye | œil pour œil | expr | B2 | /ən ˌaɪ fər ən ˈaɪ/ | An eye for an eye makes the whole world blind. | Œil pour œil, et le monde entier devient aveugle.
+behind someone's back | dans le dos de quelqu'un | expr | B2 | /bɪˌhaɪnd ˌsʌmwʌnz ˈbæk/ | Never talk behind someone's back. | Ne parle jamais dans le dos de quelqu'un.
+between a rock and a hard place | entre le marteau et l'enclume | expr | C1 | /bɪˌtwiːn ə ˌrɒk ənd ə ˌhɑːd ˈpleɪs/ | I'm between a rock and a hard place. | Je suis entre le marteau et l'enclume.
+big fish in a small pond | gros poisson dans une petite mare | expr | C1 | /ˌbɪɡ ˌfɪʃ ɪn ə ˌsmɔːl ˈpɒnd/ | In his village, he's a big fish in a small pond. | Dans son village, c'est un gros poisson dans une petite mare.
+born with a silver spoon in your mouth | né avec une cuillère d'argent dans la bouche | expr | C1 | /ˌbɔːn wɪð ə ˌsɪlvə ˈspuːn ɪn jə ˈmaʊθ/ | You weren't born with a silver spoon in your mouth. | Tu n'es pas né avec une cuillère d'argent dans la bouche.
+by word of mouth | par le bouche-à-oreille | expr | B2 | /baɪ ˌwɜːd əv ˈmaʊθ/ | The shop became famous by word of mouth. | La boutique est devenue célèbre par le bouche-à-oreille.
+caught red-handed | pris la main dans le sac | expr | B2 | /ˌkɔːt ˌred ˈhændɪd/ | The thief was caught red-handed. | Le voleur a été pris la main dans le sac.
+to change your tune | changer de discours | expr | C1 | /tʃeɪndʒ jə ˈtjuːn/ | You'll change your tune when you see the bill. | Tu changeras de discours quand tu verras la facture.
+to cool your heels | faire le pied de grue | expr | C1 | /kuːl jə ˈhiːlz/ | We had to cool our heels for an hour. | Nous avons dû faire le pied de grue pendant une heure.
+to drive someone up the wall | rendre quelqu'un fou | expr | B2 | /draɪv ˌsʌmwʌn ʌp ðə ˈwɔːl/ | That noise drives me up the wall. | Ce bruit me rend fou.
+to fall on deaf ears | tomber dans l'oreille d'un sourd | expr | C1 | /fɔːl ɒn ˌdef ˈɪəz/ | My advice seems to fall on deaf ears. | Mes conseils semblent tomber dans l'oreille d'un sourd.
+to feel the pinch | se serrer la ceinture | expr | C1 | /fiːl ðə ˈpɪntʃ/ | Families are starting to feel the pinch. | Les familles commencent à se serrer la ceinture.
+few and far between | rares | expr | C1 | /ˌfjuː ən ˌfɑː bɪˈtwiːn/ | Good jobs are few and far between. | Les bons emplois sont rares.
+to get a kick out of | prendre plaisir à | expr | B2 | /ɡet ə ˈkɪk aʊt əv/ | I get a kick out of cooking. | Je prends plaisir à cuisiner.
+to give the cold shoulder | battre froid | expr | C1 | /ɡɪv ðə ˌkəʊld ˈʃəʊldər/ | Why do you give him the cold shoulder? | Pourquoi lui bats-tu froid ?
+to go down in flames | échouer lamentablement | expr | C1 | /ɡəʊ ˌdaʊn ɪn ˈfleɪmz/ | The project could go down in flames. | Le projet pourrait échouer lamentablement.
+to have a field day | s'en donner à cœur joie | expr | C1 | /hæv ə ˈfiːld deɪ/ | The press will have a field day with this. | La presse va s'en donner à cœur joie.
+in the same boat | dans la même galère | expr | B2 | /ɪn ðə ˌseɪm ˈbəʊt/ | Don't worry, we're all in the same boat. | Ne t'inquiète pas, nous sommes tous dans la même galère.
+to keep it under your hat | garder le secret | expr | C1 | /kiːp ɪt ˌʌndə jə ˈhæt/ | Please keep it under your hat. | Garde-le pour toi, s'il te plaît.
+to know the ropes | connaître les ficelles | expr | B2 | /nəʊ ðə ˈrəʊps/ | Ask Sara; she knows the ropes. | Demande à Sara, elle connaît les ficelles.
+to lose your touch | perdre la main | expr | C1 | /luːz jə ˈtʌtʃ/ | Don't worry, you didn't lose your touch. | Ne t'inquiète pas, tu n'as pas perdu la main.
+to make waves | faire des vagues | expr | C1 | /meɪk ˈweɪvz/ | He doesn't like to make waves. | Il n'aime pas faire de vagues.
+to move the goalposts | changer les règles du jeu | expr | C1 | /muːv ðə ˈɡəʊlpəʊsts/ | Stop trying to move the goalposts! | Arrête de changer les règles du jeu !
+to nip it in the bud | tuer dans l'œuf | expr | C1 | /nɪp ɪt ɪn ðə ˈbʌd/ | We must nip it in the bud. | Nous devons tuer ça dans l'œuf.
+no strings attached | sans conditions | expr | B2 | /ˌnəʊ ˌstrɪŋz əˈtætʃt/ | The gift comes with no strings attached. | Le cadeau est offert sans conditions.
+on thin ice | sur la corde raide | expr | B2 | /ɒn ˌθɪn ˈaɪs/ | You're on thin ice with the boss. | Tu es sur la corde raide avec le patron.
+out of the woods | tiré d'affaire | expr | C1 | /ˌaʊt əv ðə ˈwʊdz/ | The patient is not out of the woods yet. | Le patient n'est pas encore tiré d'affaire.
+over my dead body | il faudra me passer sur le corps | expr | B2 | /ˌəʊvə maɪ ˌded ˈbɒdi/ | You'll sell this house over my dead body! | Il faudra me passer sur le corps pour vendre cette maison !
+to pass the buck | se renvoyer la balle | expr | C1 | /pɑːs ðə ˈbʌk/ | Don't try to pass the buck. | N'essaie pas de rejeter la responsabilité.
+to pay through the nose | payer le prix fort | expr | C1 | /peɪ ˌθruː ðə ˈnəʊz/ | We had to pay through the nose for tickets. | Nous avons dû payer les billets au prix fort.
+to play devil's advocate | se faire l'avocat du diable | expr | C1 | /pleɪ ˌdevlz ˈædvəkət/ | Let me play devil's advocate for a moment. | Laisse-moi me faire l'avocat du diable un instant.
+to pull strings | faire jouer ses relations | expr | B2 | /pʊl ˈstrɪŋz/ | He can pull strings to get you a job. | Il peut faire jouer ses relations pour te trouver un emploi.
+to put your foot down | taper du poing sur la table | expr | B2 | /pʊt jə ˈfʊt daʊn/ | You need to put your foot down. | Tu dois taper du poing sur la table.
+to rock the boat | jouer les trouble-fêtes | expr | C1 | /rɒk ðə ˈbəʊt/ | Don't rock the boat now. | Ne fais pas de vagues maintenant.
+to run out of steam | s'essouffler | expr | B2 | /rʌn aʊt əv ˈstiːm/ | The campaign began to run out of steam. | La campagne a commencé à s'essouffler.
+to show your true colours | montrer son vrai visage | expr | C1 | /ʃəʊ jə ˌtruː ˈkʌləz/ | In a crisis, people show their true colours. | Dans une crise, les gens montrent leur vrai visage.
+to start from scratch | partir de zéro | expr | B2 | /stɑːt frəm ˈskrætʃ/ | We had to start from scratch. | Nous avons dû partir de zéro.
+to stick to your guns | ne pas en démordre | expr | C1 | /stɪk tə jə ˈɡʌnz/ | Stick to your guns if you're right. | N'en démords pas si tu as raison.
+to take the plunge | se jeter à l'eau | expr | B2 | /teɪk ðə ˈplʌndʒ/ | He decided to take the plunge and start a business. | Il a décidé de se jeter à l'eau et de créer une entreprise.
+to take with a grain of salt | prendre avec des pincettes | expr | C1 | /teɪk wɪð ə ˌɡreɪn əv ˈsɔːlt/ | Take his advice with a grain of salt. | Prends ses conseils avec des pincettes.
+the best thing since sliced bread | la meilleure invention du monde | expr | C1 | /ðə ˌbest θɪŋ sɪns ˌslaɪst ˈbred/ | He thinks his app is the best thing since sliced bread. | Il pense que son appli est la meilleure invention du monde.
+the writing on the wall | des signes avant-coureurs | expr | C1 | /ðə ˌraɪtɪŋ ɒn ðə ˈwɔːl/ | He saw the writing on the wall and resigned. | Il a vu les signes avant-coureurs et a démissionné.
+to tie up loose ends | régler les derniers détails | expr | C1 | /taɪ ʌp ˌluːs ˈendz/ | I need to tie up loose ends before I leave. | Je dois régler les derniers détails avant de partir.
+up to your ears | débordé, jusqu'au cou | expr | C1 | /ˌʌp tə jər ˈɪəz/ | I'm up to my ears in work. | J'ai du travail jusqu'au cou.
+touch and go | incertain, sur le fil | expr | C1 | /ˌtʌtʃ ən ˈɡəʊ/ | It was touch and go whether we'd arrive in time. | Il n'était pas sûr que nous arriverions à temps.
+to turn over a new leaf | tourner la page | expr | B2 | /tɜːn ˌəʊvər ə ˌnjuː ˈliːf/ | He promised to turn over a new leaf. | Il a promis de tourner la page.
+to twist someone's arm | forcer la main à quelqu'un | expr | C1 | /twɪst ˌsʌmwʌnz ˈɑːm/ | OK, you twisted my arm! | D'accord, tu m'as convaincu !
+up to scratch | à la hauteur | expr | C1 | /ˌʌp tə ˈskrætʃ/ | His work isn't up to scratch. | Son travail n'est pas à la hauteur.
+to walk on eggshells | marcher sur des œufs | expr | C1 | /wɔːk ɒn ˈeɡʃelz/ | I have to walk on eggshells around him. | Je dois marcher sur des œufs avec lui.
+to wear your heart on your sleeve | ne pas cacher ses sentiments | expr | C1 | /weə jə ˈhɑːt ɒn jə ˈsliːv/ | She tends to wear her heart on her sleeve. | Elle a tendance à ne pas cacher ses sentiments.
+with flying colours | haut la main | expr | B2 | /wɪð ˌflaɪɪŋ ˈkʌləz/ | She passed the exam with flying colours. | Elle a réussi l'examen haut la main.
+word for word | mot pour mot | expr | B1 | /ˌwɜːd fə ˈwɜːd/ | He repeated it word for word. | Il l'a répété mot pour mot.
+your guess is as good as mine | je n'en sais pas plus que toi | expr | B2 | /jə ˈɡes ɪz əz ˌɡʊd əz ˈmaɪn/ | Where is he? Your guess is as good as mine. | Où est-il ? Je n'en sais pas plus que toi.
+to zero in on | se concentrer sur, cibler | v | C1 | /ˈzɪərəʊ ɪn ɒn/ | Let's zero in on the main problem. | Concentrons-nous sur le problème principal.
 `,
 );

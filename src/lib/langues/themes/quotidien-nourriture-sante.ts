@@ -120,6 +120,36 @@ get a haircut | se faire couper les cheveux | expr | A2 | /ˌɡet ə ˈheəkʌt/
 go to the mosque | aller à la mosquée | expr | A1 | /ˌɡəʊ tə ðə ˈmɒsk/ | We go to the mosque on Friday. | Nous allons à la mosquée le vendredi.
 visit friends | rendre visite à des amis | expr | A1 | /ˌvɪzɪt ˈfrendz/ | We visit friends at the weekend. | Nous rendons visite à des amis le week-end.
 stay at home | rester à la maison | expr | A1 | /ˌsteɪ ət ˈhəʊm/ | I prefer to stay at home tonight. | Je préfère rester à la maison ce soir.
+snooze button | bouton de répétition (réveil) | n | B1 | /ˈsnuːz ˌbʌtn/ | I pressed the snooze button three times. | J'ai appuyé trois fois sur le bouton de répétition.
+to get undressed | se déshabiller | v | A2 | /ɡet ʌnˈdrest/ | Get undressed and go to bed. | Déshabille-toi et va au lit.
+to do your hair | se coiffer | expr | A2 | /duː jɔː ˈheər/ | I need ten minutes to do my hair. | J'ai besoin de dix minutes pour me coiffer.
+supper | dîner, souper | n | A2 | /ˈsʌpər/ | We have supper at seven. | Nous dînons à sept heures.
+to go to work | aller au travail | expr | A1 | /ɡəʊ tə ˈwɜːk/ | I go to work by bike. | Je vais au travail à vélo.
+to go to school | aller à l'école | expr | A1 | /ɡəʊ tə ˈskuːl/ | The children go to school at eight. | Les enfants vont à l'école à huit heures.
+to miss the bus | rater le bus | expr | A2 | /mɪs ðə ˈbʌs/ | Hurry up or you'll miss the bus! | Dépêche-toi ou tu vas rater le bus !
+daily routine | routine quotidienne | n | A2 | /ˌdeɪli ruːˈtiːn/ | Describe your daily routine. | Décris ta routine quotidienne.
+chores | tâches ménagères | n | A2 | /tʃɔːz/ | We share the chores at home. | Nous partageons les tâches ménagères.
+to do the washing-up | faire la vaisselle | expr | A2 | /duː ðə ˌwɒʃɪŋ ˈʌp/ | It's your turn to do the washing-up. | C'est ton tour de faire la vaisselle.
+to do the ironing | faire le repassage | expr | A2 | /duː ði ˈaɪənɪŋ/ | I do the ironing on Sundays. | Je fais le repassage le dimanche.
+to take out the bin | sortir la poubelle | expr | A2 | /teɪk aʊt ðə ˈbɪn/ | Can you take out the bin? | Tu peux sortir la poubelle ?
+groceries | courses (alimentaires) | n | A2 | /ˈɡrəʊsəriz/ | I'll carry the groceries. | Je porte les courses.
+to watch TV | regarder la télé | expr | A1 | /wɒtʃ ˌtiː ˈviː/ | We watch TV after dinner. | Nous regardons la télé après le dîner.
+to check your emails | consulter ses mails | expr | A2 | /tʃek jɔːr ˈiːmeɪlz/ | I check my emails every morning. | Je consulte mes mails chaque matin.
+to have a break | faire une pause | expr | A2 | /hæv ə ˈbreɪk/ | Let's have a break. | Faisons une pause.
+coffee break | pause-café | n | A2 | /ˈkɒfi breɪk/ | We chat during the coffee break. | Nous discutons pendant la pause-café.
+working day | jour ouvrable, journée de travail | n | B1 | /ˈwɜːkɪŋ deɪ/ | It takes three working days. | Cela prend trois jours ouvrables.
+hectic | trépidant, chargé | adj | B2 | /ˈhektɪk/ | I had a hectic day. | J'ai eu une journée chargée.
+to have a lie-in | faire la grasse matinée | expr | B1 | /hæv ə ˈlaɪ ɪn/ | I always have a lie-in on Saturdays. | Je fais toujours la grasse matinée le samedi.
+morning person | personne du matin | n | B1 | /ˈmɔːnɪŋ ˌpɜːsn/ | I'm not a morning person. | Je ne suis pas du matin.
+to stay up late | veiller tard | expr | A2 | /steɪ ʌp ˈleɪt/ | Don't stay up late tonight. | Ne veille pas tard ce soir.
+insomnia | insomnie | n | B2 | /ɪnˈsɒmniə/ | Coffee gives me insomnia. | Le café me donne des insomnies.
+to doze off | s'assoupir | v | B2 | /dəʊz ˈɒf/ | I dozed off in front of the TV. | Je me suis assoupi devant la télé.
+to unlock | déverrouiller | v | A2 | /ʌnˈlɒk/ | Unlock the door, please. | Déverrouille la porte, s'il te plaît.
+to leave the house | sortir de chez soi | expr | A2 | /liːv ðə ˈhaʊs/ | I leave the house at half past seven. | Je sors de chez moi à sept heures et demie.
+to say goodbye | dire au revoir | expr | A1 | /seɪ ɡʊdˈbaɪ/ | Say goodbye to Grandma. | Dis au revoir à Mamie.
+mail | courrier | n | A2 | /meɪl/ | Has the mail arrived? | Le courrier est-il arrivé ?
+letter | lettre | n | A1 | /ˈletər/ | I wrote her a letter. | Je lui ai écrit une lettre.
+to top up | recharger (un compte, un forfait) | v | B1 | /tɒp ˈʌp/ | I need to top up my phone. | Je dois recharger mon forfait.
 `,
 );
 
@@ -280,6 +310,88 @@ boiled egg | œuf dur, œuf à la coque | n | A2 | /ˌbɔɪld ˈeɡ/ | I had a b
 fried egg | œuf au plat | n | A2 | /ˌfraɪd ˈeɡ/ | He likes a fried egg on his burger. | Il aime un œuf au plat sur son burger.
 scrambled eggs | œufs brouillés | n | A2 | /ˌskræmbld ˈeɡz/ | Scrambled eggs are quick to make. | Les œufs brouillés se font vite.
 goat's cheese | fromage de chèvre | n | B1 | /ˌɡəʊts ˈtʃiːz/ | Goat's cheese is great in salad. | Le fromage de chèvre est délicieux en salade.
+bulgur | boulgour | n | B2 | /ˈbʌlɡər/ | Tabbouleh is made with bulgur. | Le taboulé se fait avec du boulgour.
+quinoa | quinoa | n | B2 | /ˈkiːnwɑː/ | Quinoa is rich in protein. | Le quinoa est riche en protéines.
+mutton | mouton (viande) | n | B2 | /ˈmʌtn/ | We cooked mutton for Eid. | Nous avons cuisiné du mouton pour l'Aïd.
+minced meat | viande hachée | n | A2 | /ˌmɪnst ˈmiːt/ | Buy some minced meat for the meatballs. | Achète de la viande hachée pour les boulettes.
+cutlet | côtelette | n | B2 | /ˈkʌtlət/ | I'd like two lamb cutlets. | Je voudrais deux côtelettes d'agneau.
+meatball | boulette de viande | n | A2 | /ˈmiːtbɔːl/ | The kids love meatballs. | Les enfants adorent les boulettes.
+offal | abats | n | C1 | /ˈɒfl/ | Some people love offal. | Certaines personnes adorent les abats.
+cod | cabillaud, morue | n | B1 | /kɒd/ | Fish and chips is often made with cod. | Le fish and chips se fait souvent avec du cabillaud.
+mackerel | maquereau | n | B1 | /ˈmækrəl/ | Grilled mackerel is delicious. | Le maquereau grillé est délicieux.
+trout | truite | n | B1 | /traʊt/ | He caught a trout in the river. | Il a pêché une truite dans la rivière.
+sea bass | bar, loup de mer | n | B2 | /ˈsiː bæs/ | We had sea bass with lemon. | Nous avons mangé du bar au citron.
+shrimp | crevette | n | A2 | /ʃrɪmp/ | I ordered shrimp with rice. | J'ai commandé des crevettes avec du riz.
+mussels | moules | n | B1 | /ˈmʌslz/ | Mussels and chips is a Belgian dish. | Les moules-frites sont un plat belge.
+ghee | ghee, beurre clarifié | n | C1 | /ɡiː/ | Indian cooks use ghee. | Les cuisiniers indiens utilisent du ghee.
+labneh | labneh (fromage frais) | n | C1 | /ˈlæbneɪ/ | We ate labneh with olive oil. | Nous avons mangé du labneh à l'huile d'olive.
+feta | feta | n | B1 | /ˈfetə/ | Add some feta to the salad. | Ajoute de la feta à la salade.
+mozzarella | mozzarella | n | A2 | /ˌmɒtsəˈrelə/ | The pizza has mozzarella on top. | La pizza est garnie de mozzarella.
+lime | citron vert | n | A2 | /laɪm/ | Squeeze a lime over the fish. | Presse un citron vert sur le poisson.
+grapefruit | pamplemousse | n | A2 | /ˈɡreɪpfruːt/ | I have half a grapefruit for breakfast. | Je mange un demi-pamplemousse au petit-déjeuner.
+mandarin | mandarine | n | A2 | /ˈmændərɪn/ | Mandarins are sweet in winter. | Les mandarines sont sucrées en hiver.
+clementine | clémentine | n | A2 | /ˈkleməntaɪn/ | I peeled a clementine. | J'ai épluché une clémentine.
+blackberry | mûre | n | A2 | /ˈblækbəri/ | We picked blackberries by the road. | Nous avons cueilli des mûres au bord de la route.
+papaya | papaye | n | B1 | /pəˈpaɪə/ | Papaya is a tropical fruit. | La papaye est un fruit tropical.
+vegetable | légume | n | A1 | /ˈvedʒtəbl/ | Carrots are my favourite vegetable. | La carotte est mon légume préféré.
+turnip | navet | n | B1 | /ˈtɜːnɪp/ | Add a turnip to the couscous. | Ajoute un navet au couscous.
+parsnip | panais | n | B2 | /ˈpɑːsnɪp/ | Roast the parsnips with honey. | Fais rôtir les panais au miel.
+broad beans | fèves | n | B1 | /ˌbrɔːd ˈbiːnz/ | We cooked broad beans with garlic. | Nous avons cuisiné des fèves à l'ail.
+kidney beans | haricots rouges | n | B1 | /ˈkɪdni biːnz/ | Chilli is made with kidney beans. | Le chili se fait avec des haricots rouges.
+sweetcorn | maïs doux | n | A2 | /ˈswiːtkɔːn/ | Add sweetcorn to the salad. | Ajoute du maïs à la salade.
+artichoke | artichaut | n | B1 | /ˈɑːtɪtʃəʊk/ | Brittany grows a lot of artichokes. | La Bretagne cultive beaucoup d'artichauts.
+asparagus | asperges | n | B1 | /əˈspærəɡəs/ | Asparagus season starts in April. | La saison des asperges commence en avril.
+okra | gombo | n | B2 | /ˈəʊkrə/ | Okra is popular in Egyptian cooking. | Le gombo est très utilisé dans la cuisine égyptienne.
+basil | basilic | n | A2 | /ˈbæzl/ | Put fresh basil on the pasta. | Mets du basilic frais sur les pâtes.
+thyme | thym | n | B1 | /taɪm/ | Add a little thyme to the sauce. | Ajoute un peu de thym à la sauce.
+rosemary | romarin | n | B1 | /ˈrəʊzməri/ | Lamb goes well with rosemary. | L'agneau se marie bien avec le romarin.
+dill | aneth | n | B2 | /dɪl/ | Dill is good with salmon. | L'aneth va bien avec le saumon.
+turmeric | curcuma | n | B2 | /ˈtɜːmərɪk/ | Turmeric gives the rice a yellow colour. | Le curcuma donne une couleur jaune au riz.
+cardamom | cardamome | n | B2 | /ˈkɑːdəməm/ | Arabic coffee is flavoured with cardamom. | Le café arabe est parfumé à la cardamome.
+cloves | clous de girofle | n | B2 | /kləʊvz/ | Stick some cloves in the onion. | Pique quelques clous de girofle dans l'oignon.
+black pepper | poivre noir | n | A2 | /ˌblæk ˈpepər/ | Add salt and black pepper. | Ajoute du sel et du poivre noir.
+soy sauce | sauce soja | n | A2 | /ˌsɔɪ ˈsɔːs/ | Dip the sushi in soy sauce. | Trempe les sushis dans la sauce soja.
+tahini | tahini, purée de sésame | n | B2 | /təˈhiːni/ | Hummus is made with tahini. | Le houmous se fait avec du tahini.
+nuts | noix, fruits à coque | n | A2 | /nʌts/ | I'm allergic to nuts. | Je suis allergique aux fruits à coque.
+cashews | noix de cajou | n | B1 | /ˈkæʃuːz/ | We nibbled cashews before dinner. | Nous avons grignoté des noix de cajou avant le dîner.
+sesame | sésame | n | B1 | /ˈsesəmi/ | Sprinkle sesame on the bread. | Saupoudre du sésame sur le pain.
+cookie | biscuit, cookie | n | A1 | /ˈkʊki/ | Would you like a cookie? | Tu veux un cookie ?
+crêpe | crêpe | n | A2 | /kreɪp/ | Brittany is famous for crêpes. | La Bretagne est célèbre pour ses crêpes.
+waffle | gaufre | n | A2 | /ˈwɒfl/ | I'd like a waffle with chocolate. | Je voudrais une gaufre au chocolat.
+doughnut | beignet | n | A2 | /ˈdəʊnʌt/ | He bought a box of doughnuts. | Il a acheté une boîte de beignets.
+muffin | muffin | n | A2 | /ˈmʌfɪn/ | I had a blueberry muffin. | J'ai mangé un muffin aux myrtilles.
+pie | tourte, tarte | n | A2 | /paɪ/ | Grandma made an apple pie. | Mamie a fait une tarte aux pommes.
+tart | tarte | n | B1 | /tɑːt/ | We bought a lemon tart. | Nous avons acheté une tarte au citron.
+pudding | dessert ; pudding | n | A2 | /ˈpʊdɪŋ/ | What's for pudding? | Qu'est-ce qu'il y a comme dessert ?
+candy | bonbons (US) | n | A1 | /ˈkændi/ | Don't eat too much candy. | Ne mange pas trop de bonbons.
+biryani | biryani | n | B2 | /ˌbɪriˈɑːni/ | Chicken biryani is my favourite dish. | Le biryani au poulet est mon plat préféré.
+paella | paella | n | B1 | /paɪˈelə/ | We ate paella in Valencia. | Nous avons mangé une paella à Valence.
+lasagne | lasagnes | n | A2 | /ləˈzænjə/ | Mum made a vegetable lasagne. | Maman a fait des lasagnes aux légumes.
+risotto | risotto | n | B1 | /rɪˈzɒtəʊ/ | The mushroom risotto was creamy. | Le risotto aux champignons était crémeux.
+sushi | sushi | n | A2 | /ˈsuːʃi/ | Let's order sushi tonight. | Commandons des sushis ce soir.
+dumpling | raviole, boulette de pâte | n | B1 | /ˈdʌmplɪŋ/ | We ate steamed dumplings in Chinatown. | Nous avons mangé des raviolis vapeur dans le quartier chinois.
+spring roll | nem, rouleau de printemps | n | A2 | /ˌsprɪŋ ˈrəʊl/ | I ordered vegetable spring rolls. | J'ai commandé des nems aux légumes.
+bagel | bagel | n | A2 | /ˈbeɪɡl/ | I had a bagel with cream cheese. | J'ai mangé un bagel au fromage frais.
+baguette | baguette | n | A1 | /bæˈɡet/ | Buy a baguette at the bakery. | Achète une baguette à la boulangerie.
+crust | croûte | n | B1 | /krʌst/ | I like the crust of the bread. | J'aime la croûte du pain.
+yeast | levure | n | B1 | /jiːst/ | Add yeast to make the dough rise. | Ajoute de la levure pour faire lever la pâte.
+baking powder | levure chimique | n | B1 | /ˈbeɪkɪŋ ˌpaʊdər/ | Add a teaspoon of baking powder. | Ajoute une cuillère à café de levure chimique.
+granola | granola | n | B1 | /ɡrəˈnəʊlə/ | I eat granola with yoghurt. | Je mange du granola avec du yaourt.
+muesli | muesli | n | A2 | /ˈmjuːzli/ | Muesli is a healthy breakfast. | Le muesli est un petit-déjeuner sain.
+fizzy drink | boisson gazeuse | n | A2 | /ˌfɪzi ˈdrɪŋk/ | Fizzy drinks are full of sugar. | Les boissons gazeuses sont pleines de sucre.
+mineral water | eau minérale | n | A2 | /ˈmɪnərəl ˌwɔːtər/ | A bottle of mineral water, please. | Une bouteille d'eau minérale, s'il vous plaît.
+date syrup | sirop de datte | n | B2 | /ˈdeɪt ˌsɪrəp/ | Drizzle date syrup on the pancakes. | Arrose les crêpes de sirop de datte.
+rose water | eau de rose | n | B2 | /ˈrəʊz ˌwɔːtər/ | The dessert smells of rose water. | Le dessert sent l'eau de rose.
+orange blossom water | eau de fleur d'oranger | n | B2 | /ˌɒrɪndʒ ˈblɒsəm ˌwɔːtər/ | Add a spoonful of orange blossom water. | Ajoute une cuillerée d'eau de fleur d'oranger.
+halva | halva | n | B2 | /ˈhælvə/ | Halva is made from sesame. | Le halva est fait à base de sésame.
+Turkish delight | loukoum | n | B1 | /ˌtɜːkɪʃ dɪˈlaɪt/ | We brought back Turkish delight from Istanbul. | Nous avons rapporté des loukoums d'Istanbul.
+shawarma | chawarma | n | B1 | /ʃəˈwɑːmə/ | We had a chicken shawarma for lunch. | Nous avons mangé un chawarma au poulet à midi.
+mezze | mezzé | n | B2 | /ˈmezeɪ/ | We shared a plate of mezze. | Nous avons partagé une assiette de mezzés.
+pita bread | pain pita | n | A2 | /ˈpɪtə bred/ | Fill the pita bread with falafel. | Garnis le pain pita de falafels.
+flatbread | galette de pain | n | B1 | /ˈflætbred/ | We baked flatbread on the fire. | Nous avons cuit des galettes de pain sur le feu.
+naan | naan | n | B1 | /nɑːn/ | Garlic naan goes well with curry. | Le naan à l'ail va bien avec le curry.
+chapati | chapati | n | B2 | /tʃəˈpɑːti/ | She made chapatis for dinner. | Elle a fait des chapatis pour le dîner.
+tortilla | tortilla | n | B1 | /tɔːˈtiːə/ | Wrap the chicken in a tortilla. | Enroule le poulet dans une tortilla.
 `,
 );
 
@@ -428,5 +540,76 @@ disability | handicap | n | B2 | /ˌdɪsəˈbɪləti/ | He doesn't let his disab
 cupping | hijama, ventouses | n | C1 | /ˈkʌpɪŋ/ | Cupping is an old remedy. | La hijama est un remède ancien.
 black seed | nigelle | n | C1 | /ˌblæk ˈsiːd/ | Black seed is used in traditional medicine. | La nigelle est utilisée en médecine traditionnelle.
 remedy | remède | n | B2 | /ˈremədi/ | Honey is a natural remedy. | Le miel est un remède naturel.
+sickness | maladie, mal | n | B1 | /ˈsɪknəs/ | Sea sickness ruined the trip. | Le mal de mer a gâché le voyage.
+stomach ache | mal de ventre | n | A2 | /ˈstʌmək eɪk/ | I've got a stomach ache. | J'ai mal au ventre.
+allergic | allergique | adj | B1 | /əˈlɜːdʒɪk/ | I'm allergic to cats. | Je suis allergique aux chats.
+hay fever | rhume des foins | n | B1 | /ˈheɪ ˌfiːvər/ | Hay fever starts in spring. | Le rhume des foins commence au printemps.
+itch | démangeaison | n | B1 | /ɪtʃ/ | I have an itch on my back. | J'ai une démangeaison dans le dos.
+blister | ampoule (peau) | n | B1 | /ˈblɪstər/ | New shoes gave me a blister. | Les chaussures neuves m'ont fait une ampoule.
+broken leg | jambe cassée | n | A2 | /ˌbrəʊkən ˈleɡ/ | He came back from skiing with a broken leg. | Il est revenu du ski avec une jambe cassée.
+jab | piqûre, vaccin | n | B1 | /dʒæb/ | Have you had your flu jab? | As-tu fait ton vaccin contre la grippe ?
+needle | aiguille | n | B1 | /ˈniːdl/ | I'm scared of needles. | J'ai peur des aiguilles.
+blood pressure | tension artérielle | n | B1 | /ˈblʌd ˌpreʃər/ | The nurse took my blood pressure. | L'infirmière a pris ma tension.
+medication | médicaments, traitement | n | B1 | /ˌmedɪˈkeɪʃn/ | Take your medication after meals. | Prends ton traitement après les repas.
+capsule | gélule | n | B1 | /ˈkæpsjuːl/ | Swallow one capsule with water. | Avale une gélule avec de l'eau.
+drops | gouttes | n | A2 | /drɒps/ | Put two drops in each eye. | Mets deux gouttes dans chaque œil.
+A&E | urgences (GB) | n | B1 | /ˌeɪ ənd ˈiː/ | We waited four hours in A&E. | Nous avons attendu quatre heures aux urgences.
+operating theatre | bloc opératoire | n | B2 | /ˈɒpəreɪtɪŋ ˌθɪətər/ | The patient is in the operating theatre. | Le patient est au bloc opératoire.
+anaesthetic | anesthésie | n | B2 | /ˌænəsˈθetɪk/ | The operation is done under anaesthetic. | L'opération se fait sous anesthésie.
+healing | guérison, cicatrisation | n | B2 | /ˈhiːlɪŋ/ | Healing takes time. | La guérison prend du temps.
+off sick | en arrêt maladie | expr | B1 | /ˌɒf ˈsɪk/ | She's off sick this week. | Elle est en arrêt maladie cette semaine.
+sick note | certificat d'arrêt de travail | n | B1 | /ˈsɪk nəʊt/ | Ask your doctor for a sick note. | Demande un arrêt de travail à ton médecin.
+public health | santé publique | n | B2 | /ˌpʌblɪk ˈhelθ/ | Smoking is a public health issue. | Le tabagisme est un problème de santé publique.
+underweight | trop maigre, en sous-poids | adj | B2 | /ˌʌndəˈweɪt/ | The baby was born underweight. | Le bébé est né en sous-poids.
+to put on weight | prendre du poids | expr | B1 | /pʊt ɒn ˈweɪt/ | I tend to put on weight in winter. | J'ai tendance à prendre du poids l'hiver.
+workout | séance de sport | n | B1 | /ˈwɜːkaʊt/ | I do a short workout every morning. | Je fais une petite séance de sport chaque matin.
+depression | dépression | n | B2 | /dɪˈpreʃn/ | Depression is a real illness. | La dépression est une vraie maladie.
+therapist | thérapeute | n | B2 | /ˈθerəpɪst/ | He talks to a therapist once a week. | Il voit un thérapeute une fois par semaine.
+counsellor | conseiller, psychologue | n | B2 | /ˈkaʊnsələr/ | The school has a counsellor. | L'école a un psychologue.
+alcohol | alcool | n | A2 | /ˈælkəhɒl/ | Alcohol is bad for the liver. | L'alcool est mauvais pour le foie.
+dizziness | vertiges | n | B2 | /ˈdɪzinəs/ | The medicine may cause dizziness. | Le médicament peut provoquer des vertiges.
+to throw up | vomir | v | B1 | /θrəʊ ˈʌp/ | The baby threw up on my shirt. | Le bébé a vomi sur ma chemise.
+diarrhoea | diarrhée | n | B2 | /ˌdaɪəˈrɪə/ | Bad water can cause diarrhoea. | L'eau impropre peut causer la diarrhée.
+constipation | constipation | n | B2 | /ˌkɒnstɪˈpeɪʃn/ | Eat more fibre to avoid constipation. | Mange plus de fibres pour éviter la constipation.
+food poisoning | intoxication alimentaire | n | B1 | /ˈfuːd ˌpɔɪzənɪŋ/ | I got food poisoning from the prawns. | J'ai eu une intoxication alimentaire avec les crevettes.
+dehydration | déshydratation | n | B2 | /ˌdiːhaɪˈdreɪʃn/ | Drink water to avoid dehydration. | Bois de l'eau pour éviter la déshydratation.
+dehydrated | déshydraté | adj | B2 | /ˌdiːhaɪˈdreɪtɪd/ | After the run, I was dehydrated. | Après la course, j'étais déshydraté.
+heatstroke | coup de chaleur | n | B2 | /ˈhiːtstrəʊk/ | Elderly people are at risk of heatstroke. | Les personnes âgées risquent le coup de chaleur.
+fatigue | fatigue | n | B2 | /fəˈtiːɡ/ | He was suffering from fatigue. | Il souffrait de fatigue.
+coma | coma | n | B2 | /ˈkəʊmə/ | She was in a coma for a week. | Elle a été dans le coma pendant une semaine.
+tumour | tumeur | n | C1 | /ˈtjuːmər/ | The tumour was removed. | La tumeur a été retirée.
+cholesterol | cholestérol | n | B2 | /kəˈlestərɒl/ | Butter raises cholesterol. | Le beurre fait monter le cholestérol.
+arthritis | arthrite | n | B2 | /ɑːˈθraɪtɪs/ | My grandmother has arthritis in her hands. | Ma grand-mère a de l'arthrite aux mains.
+dementia | démence | n | C1 | /dɪˈmenʃə/ | Dementia affects memory. | La démence affecte la mémoire.
+Alzheimer's | maladie d'Alzheimer | n | B2 | /ˈæltshaɪməz/ | Alzheimer's has no cure yet. | La maladie d'Alzheimer n'a pas encore de remède.
+outbreak | épidémie, flambée | n | C1 | /ˈaʊtbreɪk/ | There was an outbreak of measles. | Il y a eu une flambée de rougeole.
+infectious | infectieux | adj | C1 | /ɪnˈfekʃəs/ | Measles is highly infectious. | La rougeole est très contagieuse.
+isolation | isolement | n | B2 | /ˌaɪsəˈleɪʃn/ | The patient was kept in isolation. | Le patient a été placé à l'isolement.
+immune | immunisé | adj | C1 | /ɪˈmjuːn/ | I'm immune to chickenpox. | Je suis immunisé contre la varicelle.
+immunity | immunité | n | C1 | /ɪˈmjuːnəti/ | The vaccine gives long immunity. | Le vaccin donne une immunité durable.
+antibiotics | antibiotiques | n | B2 | /ˌæntibaɪˈɒtɪks/ | Antibiotics don't work on viruses. | Les antibiotiques ne marchent pas contre les virus.
+aspirin | aspirine | n | A2 | /ˈæsprɪn/ | Take an aspirin for your headache. | Prends une aspirine pour ton mal de tête.
+paracetamol | paracétamol | n | A2 | /ˌpærəˈsiːtəmɒl/ | Paracetamol lowers fever. | Le paracétamol fait baisser la fièvre.
+ibuprofen | ibuprofène | n | B1 | /ˌaɪbjuːˈprəʊfen/ | Ibuprofen reduces swelling. | L'ibuprofène réduit les gonflements.
+stethoscope | stéthoscope | n | B2 | /ˈsteθəskəʊp/ | The doctor listened with a stethoscope. | Le médecin a écouté avec un stéthoscope.
+MRI | IRM | n | B2 | /ˌem ɑːr ˈaɪ/ | I need an MRI of my knee. | Je dois faire une IRM du genou.
+ultrasound | échographie | n | B2 | /ˈʌltrəsaʊnd/ | The ultrasound showed twins. | L'échographie a montré des jumeaux.
+organ donor | donneur d'organes | n | B2 | /ˈɔːɡən ˌdəʊnər/ | She's registered as an organ donor. | Elle est inscrite comme donneuse d'organes.
+transplant | greffe | n | B2 | /ˈtrænsplɑːnt/ | He had a heart transplant. | Il a eu une greffe du cœur.
+blood donor | donneur de sang | n | B1 | /ˈblʌd ˌdəʊnər/ | Become a blood donor. | Devenez donneur de sang.
+genetic | génétique | adj | B2 | /dʒəˈnetɪk/ | The disease is genetic. | La maladie est génétique.
+hereditary | héréditaire | adj | C1 | /həˈredɪtri/ | Is it hereditary? | Est-ce héréditaire ?
+chronic | chronique | adj | C1 | /ˈkrɒnɪk/ | He suffers from chronic back pain. | Il souffre de douleurs chroniques au dos.
+acute | aigu | adj | C1 | /əˈkjuːt/ | She felt an acute pain. | Elle a ressenti une douleur aiguë.
+overdose | surdose | n | B2 | /ˈəʊvədəʊs/ | An overdose of paracetamol is dangerous. | Une surdose de paracétamol est dangereuse.
+placebo | placebo | n | C1 | /pləˈsiːbəʊ/ | Half the patients got a placebo. | La moitié des patients a reçu un placebo.
+clinical trial | essai clinique | n | C1 | /ˌklɪnɪkl ˈtraɪəl/ | The drug is in a clinical trial. | Le médicament est en essai clinique.
+life expectancy | espérance de vie | n | B2 | /ˈlaɪf ɪkˌspektənsi/ | Life expectancy has increased. | L'espérance de vie a augmenté.
+mortality | mortalité | n | C1 | /mɔːˈtæləti/ | Infant mortality has fallen. | La mortalité infantile a baissé.
+filling | plombage | n | B1 | /ˈfɪlɪŋ/ | The dentist did a filling. | Le dentiste a fait un plombage.
+root canal | dévitalisation | n | C1 | /ˈruːt kəˌnæl/ | I need a root canal. | Je dois faire dévitaliser une dent.
+wisdom tooth | dent de sagesse | n | B1 | /ˈwɪzdəm tuːθ/ | My wisdom tooth hurts. | Ma dent de sagesse me fait mal.
+to floss | passer le fil dentaire | v | B1 | /flɒs/ | Floss your teeth every night. | Passe le fil dentaire chaque soir.
+dental floss | fil dentaire | n | B1 | /ˈdentl flɒs/ | Buy some dental floss. | Achète du fil dentaire.
 `,
 );

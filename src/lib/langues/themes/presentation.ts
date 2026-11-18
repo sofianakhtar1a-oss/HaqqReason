@@ -152,5 +152,79 @@ speaker | orateur, intervenant | n | B1 | /ˈspiːkər/ | The speaker thanked th
 public speaking | prise de parole en public | n | B2 | /ˌpʌblɪk ˈspiːkɪŋ/ | Public speaking makes me nervous. | Parler en public me rend nerveux.
 stage fright | trac | n | B2 | /ˈsteɪdʒ fraɪt/ | She has stage fright before every talk. | Elle a le trac avant chaque exposé.
 take questions | répondre aux questions | expr | B2 | /ˌteɪk ˈkwestʃənz/ | I'll take questions at the end. | Je répondrai aux questions à la fin.
+name | nom, prénom | n | A1 | /neɪm/ | What's your name? | Comment tu t'appelles ?
+last name | nom de famille | n | A1 | /ˈlɑːst neɪm/ | Write your last name in capitals. | Écris ton nom de famille en majuscules.
+full name | nom complet | n | A1 | /ˌfʊl ˈneɪm/ | Please give your full name. | Donnez votre nom complet, s'il vous plaît.
+initials | initiales | n | A2 | /ɪˈnɪʃlz/ | Sign your initials here. | Mettez vos initiales ici.
+origin | origine | n | B1 | /ˈɒrɪdʒɪn/ | He is of Algerian origin. | Il est d'origine algérienne.
+mobile number | numéro de portable | n | A1 | /ˈməʊbaɪl ˌnʌmbər/ | Can I have your mobile number? | Je peux avoir ton numéro de portable ?
+ID card | carte d'identité | n | A1 | /ˌaɪ ˈdiː kɑːd/ | Show your ID card at the entrance. | Présente ta carte d'identité à l'entrée.
+introduction | présentation, introduction | n | B1 | /ˌɪntrəˈdʌkʃn/ | Let me make the introductions. | Laissez-moi faire les présentations.
+how do you do | enchanté (formel) | expr | A2 | /ˌhaʊ də jə ˈduː/ | "How do you do?" "How do you do?" | « Enchanté. » « Enchanté. »
+fine, thanks | bien, merci | expr | A1 | /ˌfaɪn ˈθæŋks/ | "How are you?" "Fine, thanks." | « Comment vas-tu ? » « Bien, merci. »
+hi | salut | expr | A1 | /haɪ/ | Hi, I'm Sofian. | Salut, je suis Sofian.
+good morning | bonjour (le matin) | expr | A1 | /ɡʊd ˈmɔːnɪŋ/ | Good morning, everyone! | Bonjour à tous !
+good afternoon | bonjour (l'après-midi) | expr | A1 | /ɡʊd ˌɑːftəˈnuːn/ | Good afternoon, how can I help you? | Bonjour, que puis-je pour vous ?
+good evening | bonsoir | expr | A1 | /ɡʊd ˈiːvnɪŋ/ | Good evening, ladies and gentlemen. | Bonsoir, mesdames et messieurs.
+good night | bonne nuit | expr | A1 | /ɡʊd ˈnaɪt/ | Good night, sleep well. | Bonne nuit, dors bien.
+bye | salut, au revoir | expr | A1 | /baɪ/ | Bye, see you tomorrow! | Salut, à demain !
+see you | à plus | expr | A1 | /ˈsiː juː/ | See you on Monday! | À lundi !
+see you later | à plus tard | expr | A1 | /ˌsiː juː ˈleɪtər/ | I'm off. See you later! | J'y vais. À plus tard !
+see you soon | à bientôt | expr | A1 | /ˌsiː juː ˈsuːn/ | Thanks for coming. See you soon! | Merci d'être venu. À bientôt !
+thank you | merci | expr | A1 | /ˈθæŋk juː/ | Thank you for your help. | Merci pour ton aide.
+thanks | merci | expr | A1 | /θæŋks/ | Thanks a lot! | Merci beaucoup !
+you're welcome | de rien | expr | A1 | /jɔː ˈwelkəm/ | "Thank you." "You're welcome." | « Merci. » « De rien. »
+please | s'il te plaît, s'il vous plaît | expr | A1 | /pliːz/ | Sit down, please. | Asseyez-vous, s'il vous plaît.
+excuse me | excusez-moi, pardon | expr | A1 | /ɪkˈskjuːz miː/ | Excuse me, where is the station? | Excusez-moi, où est la gare ?
+pardon | pardon ? (pour faire répéter) | expr | A1 | /ˈpɑːdn/ | Pardon? Can you repeat that? | Pardon ? Pouvez-vous répéter ?
+I beg your pardon | je vous demande pardon | expr | B1 | /aɪ ˌbeɡ jə ˈpɑːdn/ | I beg your pardon, I didn't hear you. | Je vous demande pardon, je ne vous ai pas entendu.
+Mr | M. (Monsieur) | n | A1 | /ˈmɪstər/ | Mr Martin is our teacher. | M. Martin est notre professeur.
+Mrs | Mme (Madame, mariée) | n | A1 | /ˈmɪsɪz/ | Mrs Dupont lives next door. | Mme Dupont habite à côté.
+Ms | Mme (Madame, neutre) | n | A2 | /mɪz/ | Dear Ms Smith, | Chère Madame Smith,
+sir | monsieur | n | A1 | /sɜːr/ | Can I help you, sir? | Puis-je vous aider, monsieur ?
+madam | madame | n | A2 | /ˈmædəm/ | This way, madam. | Par ici, madame.
+gender | genre, sexe | n | B1 | /ˈdʒendər/ | Tick your gender on the form. | Coche ton sexe sur le formulaire.
+native language | langue maternelle | n | A2 | /ˌneɪtɪv ˈlæŋɡwɪdʒ/ | My native language is French. | Ma langue maternelle est le français.
+description | description | n | A2 | /dɪˈskrɪpʃn/ | Give a short description of yourself. | Fais une courte description de toi.
+medium height | taille moyenne | n | A2 | /ˌmiːdiəm ˈhaɪt/ | He's of medium height. | Il est de taille moyenne.
+blond | blond | adj | A1 | /blɒnd/ | She has blond hair. | Elle a les cheveux blonds.
+brown hair | cheveux châtains | n | A1 | /ˌbraʊn ˈheər/ | I have brown hair and brown eyes. | J'ai les cheveux châtains et les yeux marron.
+dark hair | cheveux bruns | n | A1 | /ˌdɑːk ˈheər/ | My sister has long dark hair. | Ma sœur a de longs cheveux bruns.
+red hair | cheveux roux | n | A1 | /ˌred ˈheər/ | The boy with red hair is my cousin. | Le garçon aux cheveux roux est mon cousin.
+long hair | cheveux longs | n | A1 | /ˌlɒŋ ˈheər/ | She has long hair. | Elle a les cheveux longs.
+short hair | cheveux courts | n | A1 | /ˌʃɔːt ˈheər/ | He has short hair. | Il a les cheveux courts.
+blue eyes | yeux bleus | n | A1 | /ˌbluː ˈaɪz/ | The baby has blue eyes. | Le bébé a les yeux bleus.
+brown eyes | yeux marron | n | A1 | /ˌbraʊn ˈaɪz/ | I have brown eyes. | J'ai les yeux marron.
+green eyes | yeux verts | n | A1 | /ˌɡriːn ˈaɪz/ | She has beautiful green eyes. | Elle a de beaux yeux verts.
+freckles | taches de rousseur | n | B1 | /ˈfreklz/ | She has freckles on her nose. | Elle a des taches de rousseur sur le nez.
+dimples | fossettes | n | B2 | /ˈdɪmplz/ | He has dimples when he smiles. | Il a des fossettes quand il sourit.
+good-looking | beau, séduisant | adj | A2 | /ˌɡʊd ˈlʊkɪŋ/ | He's a good-looking man. | C'est un bel homme.
+cute | mignon | adj | A2 | /kjuːt/ | What a cute baby! | Quel bébé mignon !
+well-dressed | bien habillé | adj | B1 | /ˌwel ˈdrest/ | He's always well-dressed. | Il est toujours bien habillé.
+in his twenties | dans la vingtaine | expr | B1 | /ɪn hɪz ˈtwentiz/ | He's in his twenties. | Il a une vingtaine d'années.
+in her thirties | dans la trentaine | expr | B1 | /ɪn hə ˈθɜːtiz/ | She's in her thirties. | Elle a la trentaine.
+middle-aged | d'âge mûr | adj | B1 | /ˌmɪdl ˈeɪdʒd/ | A middle-aged man opened the door. | Un homme d'âge mûr a ouvert la porte.
+bio | biographie (courte) | n | B1 | /ˈbaɪəʊ/ | Write a short bio for your profile. | Écris une courte bio pour ton profil.
+form | formulaire | n | A2 | /fɔːm/ | Fill in this form, please. | Remplissez ce formulaire, s'il vous plaît.
+to fill out | remplir (un formulaire) | v | A2 | /fɪl ˈaʊt/ | Fill out the form in pen. | Remplis le formulaire au stylo.
+blank | case vide, blanc | n | A2 | /blæŋk/ | Fill in the blanks. | Complète les blancs.
+box | case | n | A1 | /bɒks/ | Write your name in the box. | Écris ton nom dans la case.
+to tick | cocher | v | A2 | /tɪk/ | Tick the correct answer. | Coche la bonne réponse.
+capital letters | majuscules | n | A2 | /ˌkæpɪtl ˈletəz/ | Write your name in capital letters. | Écris ton nom en majuscules.
+how do you spell | comment ça s'écrit | expr | A1 | /ˌhaʊ də jə ˈspel/ | How do you spell your name? | Comment s'écrit ton nom ?
+greeting | salutation | n | B1 | /ˈɡriːtɪŋ/ | "Salam" is a common greeting. | « Salam » est une salutation courante.
+handshake | poignée de main | n | B1 | /ˈhændʃeɪk/ | He has a firm handshake. | Il a une poignée de main ferme.
+to kiss on the cheek | faire la bise | expr | B1 | /kɪs ɒn ðə ˈtʃiːk/ | In France, friends kiss on the cheek. | En France, les amis se font la bise.
+salam | salam, paix | expr | A1 | /səˈlɑːm/ | He said "salam" as he came in. | Il a dit « salam » en entrant.
+peace be upon you | que la paix soit sur vous | expr | A2 | /ˌpiːs bi əˈpɒn juː/ | "Peace be upon you," he said. | « Que la paix soit sur vous », dit-il.
+small talk | banalités, papotage | n | B2 | /ˈsmɔːl tɔːk/ | I'm not good at small talk. | Je ne suis pas doué pour les banalités.
+icebreaker | brise-glace (activité) | n | B2 | /ˈaɪsbreɪkər/ | We started the class with an icebreaker. | Nous avons commencé le cours par un jeu pour briser la glace.
+first impression | première impression | n | B1 | /ˌfɜːst ɪmˈpreʃn/ | First impressions matter. | La première impression compte.
+to make a good impression | faire bonne impression | expr | B1 | /meɪk ə ˌɡʊd ɪmˈpreʃn/ | I want to make a good impression. | Je veux faire bonne impression.
+manners | bonnes manières | n | A2 | /ˈmænəz/ | Mind your manners! | Tiens-toi bien !
+etiquette | étiquette, savoir-vivre | n | C1 | /ˈetɪket/ | Business etiquette differs in Japan. | Le savoir-vivre professionnel diffère au Japon.
+informal | familier, informel | adj | B1 | /ɪnˈfɔːml/ | Use "hi" in informal situations. | Utilise « hi » dans les situations familières.
+form of address | formule d'appel | n | C1 | /ˌfɔːm əv əˈdres/ | "Sir" is a polite form of address. | « Sir » est une formule polie pour s'adresser à quelqu'un.
+first-name terms | tutoiement, appeler par le prénom | n | B2 | /ˌfɜːst neɪm ˈtɜːmz/ | We're on first-name terms. | Nous nous appelons par nos prénoms.
 `,
 );

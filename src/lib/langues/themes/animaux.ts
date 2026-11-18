@@ -205,5 +205,66 @@ pet food | nourriture pour animaux | n | A2 | /ˈpet fuːd/ | Pet food is in ais
 litter box | litière | n | B1 | /ˈlɪtə bɒks/ | Clean the cat's litter box daily. | Nettoie la litière du chat tous les jours.
 zookeeper | soigneur de zoo | n | B2 | /ˈzuːkiːpər/ | The zookeeper fed the lions. | Le soigneur a nourri les lions.
 safari | safari | n | B1 | /səˈfɑːri/ | We went on safari in Kenya. | Nous avons fait un safari au Kenya.
+wild animal | animal sauvage | n | A2 | /ˌwaɪld ˈænɪml/ | Don't feed the wild animals. | Ne nourris pas les animaux sauvages.
+domestic animal | animal domestique | n | B1 | /dəˌmestɪk ˈænɪml/ | The cat is a domestic animal. | Le chat est un animal domestique.
+lioness | lionne | n | B1 | /ˈlaɪənes/ | The lioness hunts for the pride. | La lionne chasse pour la troupe.
+panther | panthère | n | B1 | /ˈpænθər/ | A black panther hid in the trees. | Une panthère noire se cachait dans les arbres.
+jaguar | jaguar | n | B1 | /ˈdʒæɡjuər/ | The jaguar lives in the Amazon. | Le jaguar vit en Amazonie.
+lynx | lynx | n | B2 | /lɪŋks/ | The lynx has tufted ears. | Le lynx a des oreilles à pinceaux.
+rhino | rhinocéros | n | A2 | /ˈraɪnəʊ/ | Rhinos are hunted for their horns. | Les rhinocéros sont chassés pour leur corne.
+hippo | hippopotame | n | A2 | /ˈhɪpəʊ/ | A hippo yawned in the river. | Un hippopotame a bâillé dans la rivière.
+dromedary | dromadaire | n | B2 | /ˈdrɒmədəri/ | A dromedary has one hump. | Un dromadaire a une seule bosse.
+llama | lama | n | B1 | /ˈlɑːmə/ | Llamas live in the Andes. | Les lamas vivent dans les Andes.
+stag | cerf | n | B2 | /stæɡ/ | A stag stood in the clearing. | Un cerf se tenait dans la clairière.
+doe | biche | n | B2 | /dəʊ/ | The doe ran into the forest. | La biche s'est enfuie dans la forêt.
+fawn | faon | n | B2 | /fɔːn/ | The fawn followed its mother. | Le faon suivait sa mère.
+elk | élan, wapiti | n | B2 | /elk/ | An elk crossed the road. | Un élan a traversé la route.
+reindeer | renne | n | B1 | /ˈreɪndɪər/ | Reindeer live in Lapland. | Les rennes vivent en Laponie.
+bison | bison | n | B2 | /ˈbaɪsn/ | Bison once filled the prairies. | Les bisons peuplaient autrefois les prairies.
+wild boar | sanglier | n | B1 | /ˌwaɪld ˈbɔːr/ | A wild boar dug up the garden. | Un sanglier a retourné le jardin.
+ape | grand singe | n | B2 | /eɪp/ | Gorillas are apes. | Les gorilles sont des grands singes.
+chimpanzee | chimpanzé | n | B1 | /ˌtʃɪmpænˈziː/ | Chimpanzees use tools. | Les chimpanzés utilisent des outils.
+orangutan | orang-outan | n | B2 | /ɔːˈræŋuːtæn/ | Orangutans live in Borneo. | Les orangs-outans vivent à Bornéo.
+baboon | babouin | n | B2 | /bəˈbuːn/ | A baboon stole our sandwiches. | Un babouin nous a volé nos sandwichs.
+weasel | belette | n | B2 | /ˈwiːzl/ | A weasel ran across the field. | Une belette a traversé le champ.
+ferret | furet | n | B2 | /ˈferɪt/ | He keeps a ferret as a pet. | Il a un furet comme animal de compagnie.
+skunk | mouffette | n | B2 | /skʌŋk/ | A skunk sprays a terrible smell. | Une mouffette projette une odeur terrible.
+sea lion | otarie | n | B1 | /ˈsiː ˌlaɪən/ | The sea lions were sunbathing on the rocks. | Les otaries se prélassaient au soleil sur les rochers.
+slug | limace | n | B1 | /slʌɡ/ | Slugs ate my lettuces. | Les limaces ont mangé mes salades.
+hornet | frelon | n | B2 | /ˈhɔːnɪt/ | A hornet stung my arm. | Un frelon m'a piqué le bras.
+moth | papillon de nuit, mite | n | B1 | /mɒθ/ | A moth flew around the lamp. | Un papillon de nuit volait autour de la lampe.
+grasshopper | sauterelle | n | B1 | /ˈɡrɑːshɒpər/ | A grasshopper jumped onto my leg. | Une sauterelle a sauté sur ma jambe.
+dragonfly | libellule | n | B1 | /ˈdræɡənflaɪ/ | A blue dragonfly flew over the pond. | Une libellule bleue survolait la mare.
+cockroach | cafard, blatte | n | B1 | /ˈkɒkrəʊtʃ/ | We found a cockroach in the kitchen. | Nous avons trouvé un cafard dans la cuisine.
+flea | puce | n | B1 | /fliː/ | The dog has fleas. | Le chien a des puces.
+viper | vipère | n | B2 | /ˈvaɪpər/ | A viper bit the hiker. | Une vipère a mordu le randonneur.
+alligator | alligator | n | B1 | /ˈælɪɡeɪtər/ | Alligators live in Florida. | Les alligators vivent en Floride.
+newt | triton | n | B2 | /njuːt/ | We found a newt in the pond. | Nous avons trouvé un triton dans la mare.
+hawk | faucon, épervier | n | B2 | /hɔːk/ | A hawk circled above the field. | Un épervier tournoyait au-dessus du champ.
+raven | grand corbeau | n | B2 | /ˈreɪvn/ | A raven croaked on the roof. | Un corbeau croassait sur le toit.
+magpie | pie | n | B2 | /ˈmæɡpaɪ/ | Magpies like shiny things. | Les pies aiment les objets brillants.
+dove | colombe | n | B1 | /dʌv/ | The dove is a symbol of peace. | La colombe est un symbole de paix.
+blackbird | merle | n | B1 | /ˈblækbɜːd/ | A blackbird sang in the garden. | Un merle chantait dans le jardin.
+heron | héron | n | B2 | /ˈherən/ | A heron stood still in the river. | Un héron se tenait immobile dans la rivière.
+kingfisher | martin-pêcheur | n | C1 | /ˈkɪŋfɪʃər/ | A kingfisher dived into the stream. | Un martin-pêcheur a plongé dans le ruisseau.
+nightingale | rossignol | n | B2 | /ˈnaɪtɪŋɡeɪl/ | The nightingale sings at night. | Le rossignol chante la nuit.
+hummingbird | colibri | n | B1 | /ˈhʌmɪŋbɜːd/ | Hummingbirds can fly backwards. | Les colibris peuvent voler en arrière.
+gill | branchie | n | B2 | /ɡɪl/ | Fish breathe through their gills. | Les poissons respirent par leurs branchies.
+lair | tanière, repaire | n | C1 | /leər/ | The wolf returned to its lair. | Le loup est retourné dans sa tanière.
+hive | ruche | n | B1 | /haɪv/ | Bees live in a hive. | Les abeilles vivent dans une ruche.
+web | toile (d'araignée) | n | B1 | /web/ | The spider spun a web. | L'araignée a tissé une toile.
+omnivore | omnivore | n | B2 | /ˈɒmnɪvɔːr/ | Bears are omnivores. | Les ours sont omnivores.
+hibernation | hibernation | n | B2 | /ˌhaɪbəˈneɪʃn/ | Hedgehogs go into hibernation in winter. | Les hérissons entrent en hibernation l'hiver.
+to tweet | gazouiller | v | B1 | /twiːt/ | Birds tweet at dawn. | Les oiseaux gazouillent à l'aube.
+veterinary | vétérinaire | adj | B2 | /ˈvetnri/ | The dog needs veterinary care. | Le chien a besoin de soins vétérinaires.
+stray dog | chien errant | n | B1 | /ˌstreɪ ˈdɒɡ/ | A stray dog followed us home. | Un chien errant nous a suivis jusqu'à la maison.
+muzzle | museau ; muselière | n | B2 | /ˈmʌzl/ | Big dogs must wear a muzzle. | Les gros chiens doivent porter une muselière.
+litter tray | litière (bac) | n | B1 | /ˈlɪtə treɪ/ | Clean the cat's litter tray. | Nettoie la litière du chat.
+fish tank | aquarium (domestique) | n | A2 | /ˈfɪʃ tæŋk/ | We have a fish tank in the living room. | Nous avons un aquarium dans le salon.
+pet owner | propriétaire d'animal | n | B1 | /ˈpet ˌəʊnər/ | Pet owners must pick up after their dogs. | Les propriétaires de chiens doivent ramasser les déjections.
+animal rights | droits des animaux | n | B2 | /ˌænɪml ˈraɪts/ | She campaigns for animal rights. | Elle milite pour les droits des animaux.
+cruelty | cruauté | n | B2 | /ˈkruːəlti/ | Cruelty to animals is forbidden. | La cruauté envers les animaux est interdite.
+ivory | ivoire | n | B2 | /ˈaɪvəri/ | The ivory trade is illegal. | Le commerce de l'ivoire est illégal.
+sanctuary | refuge, réserve | n | C1 | /ˈsæŋktʃuəri/ | The donkeys live in a sanctuary. | Les ânes vivent dans un refuge.
 `,
 );

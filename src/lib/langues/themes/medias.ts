@@ -139,5 +139,92 @@ go viral | devenir viral | expr | B1 | /ˌɡəʊ ˈvaɪrəl/ | Her video began t
 troll | troll | n | B2 | /trəʊl/ | Don't feed the troll. | Ne nourris pas le troll.
 cyberbullying | cyberharcèlement | n | B2 | /ˈsaɪbəbʊliɪŋ/ | Cyberbullying hurts many teenagers. | Le cyberharcèlement fait souffrir beaucoup d'adolescents.
 screen addiction | dépendance aux écrans | n | B2 | /ˌskriːn əˈdɪkʃn/ | Screen addiction worries parents. | La dépendance aux écrans inquiète les parents.
+paper | journal | n | A2 | /ˈpeɪpər/ | Have you read today's paper? | As-tu lu le journal d'aujourd'hui ?
+broadsheet | journal grand format, journal sérieux | n | C1 | /ˈbrɔːdʃiːt/ | He reads a broadsheet every morning. | Il lit un quotidien sérieux chaque matin.
+periodical | périodique | n | C1 | /ˌpɪəriˈɒdɪkl/ | The library keeps old periodicals. | La bibliothèque garde les anciens périodiques.
+foreign correspondent | correspondant à l'étranger | n | C1 | /ˌfɒrən ˌkɒrɪˈspɒndənt/ | She worked as a foreign correspondent in Cairo. | Elle a été correspondante au Caire.
+war correspondent | correspondant de guerre | n | C1 | /ˈwɔː ˌkɒrɪspɒndənt/ | The war correspondent was injured in Gaza. | Le correspondant de guerre a été blessé à Gaza.
+reviewer | critique | n | B2 | /rɪˈvjuːər/ | The reviewer loved the film. | Le critique a adoré le film.
+photojournalist | photojournaliste | n | C1 | /ˌfəʊtəʊˈdʒɜːnəlɪst/ | The photojournalist won a prize. | Le photojournaliste a remporté un prix.
+newsreader | présentateur du journal | n | B2 | /ˈnjuːzriːdər/ | The newsreader announced the result. | Le présentateur a annoncé le résultat.
+obituary | nécrologie | n | C1 | /əˈbɪtʃuəri/ | His obituary appeared in the paper. | Sa nécrologie est parue dans le journal.
+horoscope | horoscope | n | B1 | /ˈhɒrəskəʊp/ | Some magazines publish a horoscope. | Certains magazines publient un horoscope.
+classified ads | petites annonces | n | B2 | /ˌklæsɪfaɪd ˈædz/ | I found my flat in the classified ads. | J'ai trouvé mon appartement dans les petites annonces.
+commercial | publicité (TV, radio) | n | B1 | /kəˈmɜːʃl/ | I hate the commercials during films. | Je déteste les pubs pendant les films.
+ad break | coupure publicitaire | n | B1 | /ˈæd breɪk/ | Make tea during the ad break. | Fais du thé pendant la pub.
+sponsorship | parrainage, sponsoring | n | C1 | /ˈspɒnsəʃɪp/ | The club lost its sponsorship. | Le club a perdu son sponsor.
+listener | auditeur | n | B1 | /ˈlɪsənər/ | The show has a million listeners. | L'émission a un million d'auditeurs.
+subscriber | abonné | n | B2 | /səbˈskraɪbər/ | The channel has two million subscribers. | La chaîne a deux millions d'abonnés.
+quarterly | trimestriel | adj | C1 | /ˈkwɔːtəli/ | It's a quarterly magazine. | C'est un magazine trimestriel.
+broadcaster | diffuseur, radiodiffuseur | n | C1 | /ˈbrɔːdkɑːstər/ | The BBC is a public broadcaster. | La BBC est un service public de radiodiffusion.
+station | station (radio), chaîne | n | A2 | /ˈsteɪʃn/ | Change the station, please. | Change de station, s'il te plaît.
+TV | télé | n | A1 | /ˌtiː ˈviː/ | What's on TV tonight? | Qu'est-ce qu'il y a à la télé ce soir ?
+TV show | émission de télé | n | A1 | /ˌtiː ˈviː ʃəʊ/ | It's my favourite TV show. | C'est mon émission préférée.
+programme | émission, programme | n | A2 | /ˈprəʊɡræm/ | There's a good programme about Andalusia. | Il y a une bonne émission sur l'Andalousie.
+game show | jeu télévisé | n | B1 | /ˈɡeɪm ʃəʊ/ | She won a car on a game show. | Elle a gagné une voiture à un jeu télévisé.
+quiz show | jeu-questionnaire télévisé | n | B1 | /ˈkwɪz ʃəʊ/ | My grandfather loves quiz shows. | Mon grand-père adore les jeux de questions.
+on air | à l'antenne | expr | B2 | /ˌɒn ˈeər/ | The light means we're on air. | Le voyant signifie que nous sommes à l'antenne.
+off air | hors antenne | expr | B2 | /ˌɒf ˈeər/ | He said it off air. | Il l'a dit hors antenne.
+prime time | heure de grande écoute | n | B2 | /ˈpraɪm taɪm/ | The film is on at prime time. | Le film passe en prime time.
+rerun | rediffusion | n | B2 | /ˈriːrʌn/ | It's only a rerun. | Ce n'est qu'une rediffusion.
+cable TV | télévision par câble | n | B1 | /ˌkeɪbl ˌtiː ˈviː/ | We cancelled our cable TV. | Nous avons résilié notre abonnement au câble.
+streaming service | plateforme de streaming | n | B1 | /ˈstriːmɪŋ ˌsɜːvɪs/ | Which streaming service do you use? | Quelle plateforme de streaming utilises-tu ?
+podcaster | podcasteur | n | B2 | /ˈpɒdkɑːstər/ | The podcaster interviewed a historian. | Le podcasteur a interviewé un historien.
+vlog | vlog, blog vidéo | n | B1 | /vlɒɡ/ | She posts a travel vlog every week. | Elle publie un vlog de voyage chaque semaine.
+vlogger | vlogueur | n | B1 | /ˈvlɒɡər/ | The vlogger has a big audience. | Le vlogueur a une grande audience.
+YouTuber | youtubeur | n | A2 | /ˈjuːtjuːbər/ | My son wants to be a YouTuber. | Mon fils veut devenir youtubeur.
+timeline | fil d'actualité | n | B1 | /ˈtaɪmlaɪn/ | The video appeared on my timeline. | La vidéo est apparue dans mon fil d'actualité.
+trending | tendance, populaire | adj | B1 | /ˈtrendɪŋ/ | The hashtag is trending worldwide. | Le hashtag est en tendance dans le monde entier.
+press freedom | liberté de la presse | n | B2 | /ˌpres ˈfriːdəm/ | Press freedom is under threat. | La liberté de la presse est menacée.
+spokesman | porte-parole | n | B2 | /ˈspəʊksmən/ | A government spokesman denied the report. | Un porte-parole du gouvernement a démenti l'article.
+exclusive | exclusivité | n | B2 | /ɪkˈskluːsɪv/ | The paper ran an exclusive on the scandal. | Le journal a publié une exclusivité sur le scandale.
+anonymous source | source anonyme | n | C1 | /əˌnɒnɪməs ˈsɔːs/ | The story came from an anonymous source. | L'information venait d'une source anonyme.
+off the record | officieusement | expr | C1 | /ˌɒf ðə ˈrekɔːd/ | The minister spoke off the record. | Le ministre a parlé en off.
+fact-checking | vérification des faits | n | C1 | /ˈfækt ˌtʃekɪŋ/ | Fact-checking takes time. | La vérification des faits prend du temps.
+fact-checker | vérificateur de faits | n | C1 | /ˈfækt ˌtʃekər/ | The fact-checker found three errors. | Le vérificateur a trouvé trois erreurs.
+sensationalism | sensationnalisme | n | C2 | /senˈseɪʃənəlɪzəm/ | Tabloids are known for sensationalism. | Les tabloïds sont connus pour leur sensationnalisme.
+media coverage | couverture médiatique | n | C1 | /ˈmiːdiə ˌkʌvərɪdʒ/ | The trial got huge media coverage. | Le procès a eu une énorme couverture médiatique.
+wire service | agence de presse | n | C2 | /ˈwaɪə ˌsɜːvɪs/ | Reuters is a wire service. | Reuters est une agence de presse.
+byline | signature (d'un article) | n | C1 | /ˈbaɪlaɪn/ | Her name appears in the byline. | Son nom figure en signature de l'article.
+layout | mise en page | n | B2 | /ˈleɪaʊt/ | The new layout is easier to read. | La nouvelle mise en page est plus lisible.
+printed press | presse écrite | n | B2 | /ˌprɪntɪd ˈpres/ | The printed press is in decline. | La presse écrite est en déclin.
+online edition | édition en ligne | n | B1 | /ˌɒnlaɪn ɪˈdɪʃn/ | Read the online edition for free. | Lis gratuitement l'édition en ligne.
+paywall | accès payant (mur) | n | C1 | /ˈpeɪwɔːl/ | The article is behind a paywall. | L'article est réservé aux abonnés.
+homepage | page d'accueil | n | A2 | /ˈhəʊmpeɪdʒ/ | The news is on the homepage. | La nouvelle est en page d'accueil.
+echo chamber | chambre d'écho | n | C1 | /ˈekəʊ ˌtʃeɪmbər/ | Social media can become an echo chamber. | Les réseaux sociaux peuvent devenir une chambre d'écho.
+filter bubble | bulle de filtres | n | C1 | /ˈfɪltə ˌbʌbl/ | Algorithms trap us in a filter bubble. | Les algorithmes nous enferment dans une bulle de filtres.
+trolling | trollage, provocation en ligne | n | B2 | /ˈtrəʊlɪŋ/ | Trolling can be a form of harassment. | Le trollage peut être une forme de harcèlement.
+moderator | modérateur | n | B2 | /ˈmɒdəreɪtər/ | The moderator deleted the comment. | Le modérateur a supprimé le commentaire.
+to go live | passer en direct | expr | B1 | /ɡəʊ ˈlaɪv/ | We go live in five minutes. | Nous passons en direct dans cinq minutes.
+webcam | webcam | n | A2 | /ˈwebkæm/ | Turn on your webcam. | Allume ta webcam.
+cameraman | cadreur, caméraman | n | B1 | /ˈkæmrəmæn/ | The cameraman filmed the protest. | Le caméraman a filmé la manifestation.
+producer | producteur | n | B2 | /prəˈdjuːsər/ | The producer chose the guests. | Le producteur a choisi les invités.
+script | script, scénario | n | B1 | /skrɪpt/ | The presenter forgot the script. | Le présentateur a oublié le texte.
+teleprompter | prompteur | n | C1 | /ˈtelipromptər/ | She read from a teleprompter. | Elle lisait sur un prompteur.
+autocue | prompteur (GB) | n | C1 | /ˈɔːtəʊkjuː/ | The autocue broke during the news. | Le prompteur est tombé en panne pendant le journal.
+audience share | part d'audience | n | C1 | /ˈɔːdiəns ʃeər/ | The show had a 20% audience share. | L'émission a eu 20 % de part d'audience.
+viewing figures | audience (chiffres) | n | C1 | /ˈvjuːɪŋ ˌfɪɡəz/ | Viewing figures fell this year. | L'audience a baissé cette année.
+frequency | fréquence | n | B2 | /ˈfriːkwənsi/ | The station broadcasts on a new frequency. | La station émet sur une nouvelle fréquence.
+airwaves | ondes | n | C1 | /ˈeəweɪvz/ | His voice filled the airwaves. | Sa voix remplissait les ondes.
+radio station | station de radio | n | A2 | /ˈreɪdiəʊ ˌsteɪʃn/ | It's my favourite radio station. | C'est ma station de radio préférée.
+DJ | DJ, animateur radio | n | A2 | /ˈdiː dʒeɪ/ | The DJ played my request. | Le DJ a passé ma chanson.
+phone-in | émission à ligne ouverte | n | C1 | /ˈfəʊn ɪn/ | Listeners called the phone-in to complain. | Des auditeurs ont appelé l'émission pour se plaindre.
+talk radio | radio de débats | n | C1 | /ˈtɔːk ˌreɪdiəʊ/ | Talk radio is popular in America. | Les radios de débats sont populaires en Amérique.
+jingle | jingle, ritournelle | n | B2 | /ˈdʒɪŋɡl/ | I can't get that jingle out of my head. | Je n'arrive pas à me sortir ce jingle de la tête.
+slot | créneau | n | B2 | /slɒt/ | The show moved to an evening slot. | L'émission est passée sur un créneau du soir.
+media outlet | média, organe de presse | n | C1 | /ˈmiːdiə ˌaʊtlet/ | Several media outlets reported the story. | Plusieurs médias ont relayé l'information.
+tabloid press | presse à scandale | n | C1 | /ˈtæblɔɪd pres/ | The tabloid press loves royal gossip. | La presse à scandale adore les ragots royaux.
+gutter press | presse de caniveau | n | C2 | /ˈɡʌtə pres/ | He refused to talk to the gutter press. | Il a refusé de parler à la presse de caniveau.
+yellow journalism | journalisme à sensation | n | C2 | /ˌjeləʊ ˈdʒɜːnəlɪzəm/ | Yellow journalism exaggerates the facts. | Le journalisme à sensation exagère les faits.
+citizen journalism | journalisme citoyen | n | C1 | /ˌsɪtɪzn ˈdʒɜːnəlɪzəm/ | Phones made citizen journalism possible. | Les téléphones ont rendu possible le journalisme citoyen.
+libel | diffamation (écrite) | n | C2 | /ˈlaɪbl/ | The newspaper was sued for libel. | Le journal a été poursuivi pour diffamation.
+defamation | diffamation | n | C2 | /ˌdefəˈmeɪʃn/ | He filed a complaint for defamation. | Il a porté plainte pour diffamation.
+slander | calomnie | n | C2 | /ˈslɑːndər/ | What he said is pure slander. | Ce qu'il a dit est de la pure calomnie.
+right to reply | droit de réponse | n | C1 | /ˌraɪt tə rɪˈplaɪ/ | She used her right to reply. | Elle a exercé son droit de réponse.
+retraction | rétractation, démenti | n | C2 | /rɪˈtrækʃn/ | The paper published a retraction. | Le journal a publié un démenti.
+spin doctor | conseiller en communication | n | C1 | /ˈspɪn ˌdɒktər/ | The spin doctor tried to fix the scandal. | Le conseiller en communication a tenté d'étouffer le scandale.
+soundbite | petite phrase | n | C1 | /ˈsaʊndbaɪt/ | Politicians love a catchy soundbite. | Les politiques adorent les petites phrases accrocheuses.
+press office | service de presse | n | C1 | /ˈpres ˌɒfɪs/ | Contact the press office for details. | Contactez le service de presse pour plus de détails.
+media literacy | éducation aux médias | n | C1 | /ˈmiːdiə ˌlɪtərəsi/ | Schools should teach media literacy. | Les écoles devraient enseigner l'éducation aux médias.
 `,
 );

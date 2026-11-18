@@ -150,5 +150,72 @@ mutual respect | respect mutuel | n | B2 | /ˌmjuːtʃuəl rɪˈspekt/ | A good 
 marital | conjugal | adj | C1 | /ˈmærɪtl/ | They had marital problems. | Ils ont eu des problèmes conjugaux.
 husband-to-be | futur mari | n | B2 | /ˌhʌzbənd tə ˈbiː/ | She introduced her husband-to-be. | Elle a présenté son futur mari.
 bride-to-be | future mariée | n | B2 | /ˌbraɪd tə ˈbiː/ | The bride-to-be chose her dress. | La future mariée a choisi sa robe.
+couple | couple | n | A2 | /ˈkʌpl/ | They make a lovely couple. | Ils forment un joli couple.
+love at first sight | coup de foudre | expr | B1 | /ˌlʌv ət ˌfɜːst ˈsaɪt/ | It was love at first sight. | Ça a été le coup de foudre.
+to go out with | sortir avec | v | A2 | /ɡəʊ ˈaʊt wɪð/ | She wants to go out with him. | Elle veut sortir avec lui.
+to ask someone out | inviter quelqu'un à sortir | expr | B1 | /ɑːsk ˌsʌmwʌn ˈaʊt/ | It's hard to ask someone out. | C'est difficile d'inviter quelqu'un à sortir.
+other half | moitié (conjoint) | expr | B2 | /ˌʌðə ˈhɑːf/ | I'll ask my other half. | Je vais demander à ma moitié.
+better half | tendre moitié | expr | B2 | /ˌbetə ˈhɑːf/ | This is my better half, Sara. | Voici ma tendre moitié, Sara.
+dear | chéri(e) | n | A2 | /dɪər/ | Thank you, dear. | Merci, mon chéri.
+attraction | attirance | n | B2 | /əˈtrækʃn/ | There was an instant attraction between them. | Il y a eu une attirance immédiate entre eux.
+bridegroom | marié | n | B2 | /ˈbraɪdɡruːm/ | The bridegroom arrived on a horse. | Le marié est arrivé à cheval.
+maid of honour | demoiselle d'honneur principale | n | B2 | /ˌmeɪd əv ˈɒnər/ | Her sister was the maid of honour. | Sa sœur était sa demoiselle d'honneur.
+ceremony | cérémonie | n | B1 | /ˈserəməni/ | The wedding ceremony was beautiful. | La cérémonie de mariage était magnifique.
+newlyweds | jeunes mariés | n | B2 | /ˈnjuːliwedz/ | The newlyweds left for their honeymoon. | Les jeunes mariés sont partis en lune de miel.
+to exchange vows | échanger les vœux | expr | C1 | /ɪksˈtʃeɪndʒ ˌvaʊz/ | They exchange vows in front of their families. | Ils échangent leurs vœux devant leurs familles.
+mahr | mahr (dot versée à l'épouse) | n | C1 | /mɑːr/ | The mahr belongs to the wife. | Le mahr appartient à l'épouse.
+love match | mariage d'amour | n | C1 | /ˈlʌv mætʃ/ | Their marriage was a love match. | Leur union était un mariage d'amour.
+matchmaking | entremise, organisation de rencontres | n | C1 | /ˈmætʃmeɪkɪŋ/ | Aunties love matchmaking. | Les tantes adorent jouer les entremetteuses.
+dating app | application de rencontre | n | B1 | /ˈdeɪtɪŋ æp/ | They met on a dating app. | Ils se sont rencontrés sur une appli de rencontre.
+online dating | rencontres en ligne | n | B1 | /ˌɒnlaɪn ˈdeɪtɪŋ/ | Online dating is very common now. | Les rencontres en ligne sont très courantes aujourd'hui.
+speed dating | speed dating, rencontres express | n | B2 | /ˈspiːd ˌdeɪtɪŋ/ | She tried speed dating. | Elle a essayé le speed dating.
+fidelity | fidélité | n | C1 | /fɪˈdeləti/ | Fidelity is essential in marriage. | La fidélité est essentielle dans le mariage.
+committed | engagé (dans une relation) | adj | B2 | /kəˈmɪtɪd/ | They're in a committed relationship. | Ils sont dans une relation sérieuse.
+ex-boyfriend | ex (petit ami) | n | B1 | /ˌeks ˈbɔɪfrend/ | I bumped into my ex-boyfriend. | Je suis tombée sur mon ex.
+ex-girlfriend | ex (petite amie) | n | B1 | /ˌeks ˈɡɜːlfrend/ | His ex-girlfriend called him. | Son ex l'a appelé.
+to tie the knot | se passer la bague au doigt | expr | B2 | /taɪ ðə ˈnɒt/ | They will tie the knot in June. | Ils vont se marier en juin.
+to pop the question | faire sa demande | expr | B2 | /pɒp ðə ˈkwestʃən/ | He's going to pop the question tonight. | Il va faire sa demande ce soir.
+to walk down the aisle | se marier, aller à l'autel | expr | C1 | /wɔːk daʊn ði ˈaɪl/ | She'll walk down the aisle in May. | Elle se mariera en mai.
+to have a soft spot for | avoir un faible pour | expr | B2 | /hæv ə ˈsɒft spɒt fɔːr/ | I have a soft spot for her. | J'ai un faible pour elle.
+to get on like a house on fire | s'entendre comme larrons en foire | expr | C1 | /ɡet ɒn laɪk ə ˌhaʊs ɒn ˈfaɪər/ | They get on like a house on fire. | Ils s'entendent à merveille.
+on the rocks | en crise (couple) | expr | C1 | /ˌɒn ðə ˈrɒks/ | Their marriage is on the rocks. | Leur mariage bat de l'aile.
+to call it off | rompre, annuler | v | B2 | /kɔːl ɪt ˈɒf/ | They decided to call it off. | Ils ont décidé de tout annuler.
+to make it work | faire en sorte que ça marche | expr | B2 | /meɪk ɪt ˈwɜːk/ | We'll make it work. | Nous ferons en sorte que ça marche.
+cohabitation | vie commune, cohabitation | n | C1 | /kəʊˌhæbɪˈteɪʃn/ | Cohabitation before marriage is common in Europe. | La vie commune avant le mariage est courante en Europe.
+to move in together | emménager ensemble | expr | B1 | /muːv ɪn təˈɡeðər/ | They plan to move in together. | Ils prévoient d'emménager ensemble.
+common-law partner | concubin | n | C1 | /ˌkɒmən lɔː ˈpɑːtnər/ | She lives with her common-law partner. | Elle vit avec son concubin.
+civil partnership | union civile, PACS | n | C1 | /ˌsɪvl ˈpɑːtnəʃɪp/ | They entered a civil partnership. | Ils ont conclu une union civile.
+prenup | contrat de mariage | n | C1 | /ˈpriːnʌp/ | They signed a prenup. | Ils ont signé un contrat de mariage.
+newly engaged | tout juste fiancés | adj | B2 | /ˌnjuːli ɪnˈɡeɪdʒd/ | The newly engaged couple threw a party. | Le couple tout juste fiancé a organisé une fête.
+happily married | heureux en ménage | adj | B1 | /ˌhæpɪli ˈmærid/ | They've been happily married for forty years. | Ils sont heureux en ménage depuis quarante ans.
+lovebirds | tourtereaux | n | B2 | /ˈlʌvbɜːdz/ | Look at the two lovebirds! | Regarde les deux tourtereaux !
+childhood sweetheart | amour d'enfance | n | B2 | /ˌtʃaɪldhʊd ˈswiːthɑːt/ | He married his childhood sweetheart. | Il a épousé son amour d'enfance.
+unrequited love | amour non partagé | n | C1 | /ˌʌnrɪˌkwaɪtɪd ˈlʌv/ | The poem is about unrequited love. | Le poème parle d'un amour non partagé.
+suitor | prétendant | n | C1 | /ˈsuːtər/ | She refused every suitor. | Elle a refusé tous les prétendants.
+admirer | admirateur | n | B2 | /ədˈmaɪərər/ | She has many admirers. | Elle a beaucoup d'admirateurs.
+secret admirer | admirateur secret | n | B1 | /ˌsiːkrət ədˈmaɪərər/ | The flowers came from a secret admirer. | Les fleurs venaient d'un admirateur secret.
+Valentine's Day | Saint-Valentin | n | A2 | /ˈvæləntaɪnz deɪ/ | Restaurants are full on Valentine's Day. | Les restaurants sont pleins à la Saint-Valentin.
+valentine | carte de Saint-Valentin ; bien-aimé | n | B1 | /ˈvæləntaɪn/ | He sent her a valentine. | Il lui a envoyé une carte de Saint-Valentin.
+bouquet | bouquet | n | B1 | /buˈkeɪ/ | The bride threw her bouquet. | La mariée a lancé son bouquet.
+candlelit dinner | dîner aux chandelles | n | B1 | /ˌkændllɪt ˈdɪnər/ | He planned a candlelit dinner. | Il a prévu un dîner aux chandelles.
+anniversary present | cadeau d'anniversaire de mariage | n | B1 | /ˌænɪˈvɜːsəri ˌpreznt/ | What should I buy as an anniversary present? | Que dois-je offrir pour notre anniversaire de mariage ?
+marriage counselling | conseil conjugal | n | C1 | /ˈmærɪdʒ ˌkaʊnsəlɪŋ/ | They went to marriage counselling. | Ils ont consulté un conseiller conjugal.
+couples therapy | thérapie de couple | n | C1 | /ˈkʌplz ˌθerəpi/ | Couples therapy saved their marriage. | La thérapie de couple a sauvé leur mariage.
+polygamy | polygamie | n | C1 | /pəˈlɪɡəmi/ | Polygamy is illegal in France. | La polygamie est illégale en France.
+monogamy | monogamie | n | C1 | /məˈnɒɡəmi/ | Monogamy is the norm in Europe. | La monogamie est la norme en Europe.
+monogamous | monogame | adj | C1 | /məˈnɒɡəməs/ | Swans are monogamous. | Les cygnes sont monogames.
+wedding planner | organisateur de mariage | n | B1 | /ˈwedɪŋ ˌplænər/ | The wedding planner chose the flowers. | L'organisatrice du mariage a choisi les fleurs.
+wedding venue | salle de mariage | n | B1 | /ˈwedɪŋ ˌvenjuː/ | We booked the wedding venue a year ago. | Nous avons réservé la salle il y a un an.
+wedding cake | gâteau de mariage | n | A2 | /ˈwedɪŋ keɪk/ | The wedding cake had five tiers. | Le gâteau de mariage avait cinq étages.
+wedding guest | invité au mariage | n | A2 | /ˈwedɪŋ ɡest/ | There were three hundred wedding guests. | Il y avait trois cents invités au mariage.
+wedding invitation | faire-part de mariage | n | A2 | /ˈwedɪŋ ˌɪnvɪteɪʃn/ | We received a wedding invitation. | Nous avons reçu un faire-part de mariage.
+save the date | réservez la date | expr | B1 | /ˌseɪv ðə ˈdeɪt/ | They sent us a save the date card. | Ils nous ont envoyé une carte « réservez la date ».
+RSVP | répondez s'il vous plaît | expr | B1 | /ˌɑːr es viː ˈpiː/ | Please RSVP by Friday. | Merci de répondre avant vendredi.
+henna night | soirée du henné | n | B1 | /ˈhenə naɪt/ | The bride's henna night was full of music. | La soirée du henné de la mariée était pleine de musique.
+stag night | enterrement de vie de garçon | n | B2 | /ˈstæɡ naɪt/ | His friends organised a stag night. | Ses amis ont organisé son enterrement de vie de garçon.
+hen night | enterrement de vie de jeune fille | n | B2 | /ˈhen naɪt/ | They went to Lisbon for her hen night. | Elles sont allées à Lisbonne pour son enterrement de vie de jeune fille.
+confetti | confettis | n | A2 | /kənˈfeti/ | Guests threw confetti at the couple. | Les invités ont lancé des confettis sur le couple.
+first dance | première danse | n | A2 | /ˌfɜːst ˈdɑːns/ | The first dance was very moving. | La première danse a été très émouvante.
+to give away the bride | conduire la mariée à l'autel | expr | C1 | /ɡɪv əˌweɪ ðə ˈbraɪd/ | Her father will give away the bride. | Son père conduira la mariée à l'autel.
 `,
 );

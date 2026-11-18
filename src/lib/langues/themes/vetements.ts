@@ -181,5 +181,77 @@ wristwatch | montre-bracelet | n | B1 | /ˈrɪstwɒtʃ/ | He wears an old wristw
 second-hand clothes | vêtements d'occasion | n | B1 | /ˌsekənd hænd ˈkləʊðz/ | I buy second-hand clothes. | J'achète des vêtements d'occasion.
 dry cleaner's | pressing | n | B1 | /ˌdraɪ ˈkliːnəz/ | Take the suit to the dry cleaner's. | Apporte le costume au pressing.
 tailor-made | sur mesure | adj | B2 | /ˌteɪlə ˈmeɪd/ | He wore a tailor-made suit. | Il portait un costume sur mesure.
+clothing | vêtements, habillement | n | B1 | /ˈkləʊðɪŋ/ | Bring warm clothing. | Apporte des vêtements chauds.
+top | haut (vêtement) | n | A2 | /tɒp/ | She's wearing a red top. | Elle porte un haut rouge.
+tank top | débardeur | n | B1 | /ˈtæŋk tɒp/ | It's too hot, I'll wear a tank top. | Il fait trop chaud, je vais mettre un débardeur.
+pullover | pull-over | n | A2 | /ˈpʊləʊvər/ | Put on your pullover. | Mets ton pull.
+sweatshirt | sweat-shirt | n | A2 | /ˈswetʃɜːt/ | He wore a grey sweatshirt. | Il portait un sweat gris.
+blazer | blazer, veste | n | B1 | /ˈbleɪzər/ | The school uniform includes a blazer. | L'uniforme scolaire comprend un blazer.
+overcoat | pardessus | n | B2 | /ˈəʊvəkəʊt/ | He wore a long black overcoat. | Il portait un long pardessus noir.
+trench coat | trench-coat, imperméable | n | B1 | /ˈtrentʃ kəʊt/ | She bought a beige trench coat. | Elle a acheté un trench beige.
+parka | parka | n | B1 | /ˈpɑːkə/ | Wear your parka, it's freezing. | Mets ta parka, il gèle.
+gilet | gilet sans manches | n | B2 | /ʒɪˈleɪ/ | He wore a padded gilet. | Il portait un gilet matelassé.
+tuxedo | smoking | n | B2 | /tʌkˈsiːdəʊ/ | The groom wore a tuxedo. | Le marié portait un smoking.
+pants | pantalon (US) | n | A1 | /pænts/ | These pants are too long. | Ce pantalon est trop long.
+joggers | pantalon de jogging | n | A2 | /ˈdʒɒɡəz/ | I wear joggers at home. | Je porte un jogging à la maison.
+miniskirt | minijupe | n | A2 | /ˈmɪniskɜːt/ | Miniskirts were fashionable in the sixties. | Les minijupes étaient à la mode dans les années 60.
+evening dress | robe de soirée | n | B1 | /ˈiːvnɪŋ dres/ | She wore a long evening dress. | Elle portait une longue robe de soirée.
+jumpsuit | combinaison | n | B1 | /ˈdʒʌmpsuːt/ | The mechanic wore a blue jumpsuit. | Le mécanicien portait une combinaison bleue.
+dungarees | salopette | n | B1 | /ˌdʌŋɡəˈriːz/ | The toddler wore denim dungarees. | Le petit portait une salopette en jean.
+bathrobe | peignoir | n | A2 | /ˈbɑːθrəʊb/ | The hotel provides a bathrobe. | L'hôtel fournit un peignoir.
+knickers | culotte | n | B1 | /ˈnɪkəz/ | Pack enough knickers for the week. | Prends assez de culottes pour la semaine.
+boxer shorts | caleçon | n | A2 | /ˈbɒksə ʃɔːts/ | He bought a pack of boxer shorts. | Il a acheté un lot de caleçons.
+bra | soutien-gorge | n | A2 | /brɑː/ | She bought a new bra. | Elle a acheté un nouveau soutien-gorge.
+stockings | bas | n | B1 | /ˈstɒkɪŋz/ | She wore black stockings. | Elle portait des bas noirs.
+high heels | talons hauts | n | A2 | /ˌhaɪ ˈhiːlz/ | I can't walk in high heels. | Je ne sais pas marcher avec des talons hauts.
+flats | ballerines, chaussures plates | n | B1 | /flæts/ | I prefer flats for work. | Je préfère les chaussures plates pour le travail.
+slip-ons | chaussures sans lacets | n | B2 | /ˈslɪp ɒnz/ | Slip-ons are easy to wear. | Les chaussures sans lacets sont faciles à enfiler.
+wellington boots | bottes en caoutchouc | n | B1 | /ˌwelɪŋtən ˈbuːts/ | Wear your wellington boots in the mud. | Mets tes bottes en caoutchouc dans la boue.
+shoelace | lacet | n | A2 | /ˈʃuːleɪs/ | Your shoelace is undone. | Ton lacet est défait.
+hijab | hijab, voile | n | B1 | /hɪˈdʒɑːb/ | She wears a blue hijab. | Elle porte un hijab bleu.
+niqab | niqab | n | B2 | /nɪˈkɑːb/ | The niqab covers the face. | Le niqab couvre le visage.
+jilbab | jilbab | n | B2 | /dʒɪlˈbɑːb/ | She wore a long black jilbab. | Elle portait un long jilbab noir.
+kufi | kufi, calotte | n | B2 | /ˈkuːfi/ | He wears a white kufi for prayer. | Il porte un kufi blanc pour la prière.
+shawl | châle | n | B1 | /ʃɔːl/ | Grandma wrapped a shawl around her shoulders. | Mamie s'est enveloppée d'un châle.
+suspenders | bretelles (US) | n | B2 | /səˈspendəz/ | He wore suspenders with his trousers. | Il portait des bretelles avec son pantalon.
+clutch | pochette (sac) | n | B2 | /klʌtʃ/ | She carried a silver clutch. | Elle tenait une pochette argentée.
+chain | chaîne (bijou) | n | B1 | /tʃeɪn/ | He wears a gold chain. | Il porte une chaîne en or.
+hairband | bandeau, serre-tête | n | A2 | /ˈheəbænd/ | She tied her hair with a hairband. | Elle s'est attaché les cheveux avec un bandeau.
+hair clip | barrette | n | A2 | /ˈheə klɪp/ | I lost my hair clip. | J'ai perdu ma barrette.
+short-sleeved | à manches courtes | adj | A2 | /ˌʃɔːt ˈsliːvd/ | He wore a short-sleeved shirt. | Il portait une chemise à manches courtes.
+zipper | fermeture éclair (US) | n | B1 | /ˈzɪpər/ | The zipper is stuck. | La fermeture éclair est coincée.
+cuff | poignet (de chemise) | n | B2 | /kʌf/ | Roll up your cuffs. | Remonte tes poignets.
+lining | doublure | n | B2 | /ˈlaɪnɪŋ/ | The coat has a silk lining. | Le manteau a une doublure en soie.
+neckline | encolure, décolleté | n | B2 | /ˈneklaɪn/ | The dress has a high neckline. | La robe a une encolure montante.
+V-neck | col en V | n | B1 | /ˈviː nek/ | He bought a V-neck jumper. | Il a acheté un pull à col en V.
+crew neck | col rond | n | B2 | /ˈkruː nek/ | I prefer a crew neck T-shirt. | Je préfère un tee-shirt à col rond.
+polo neck | col roulé | n | B2 | /ˈpəʊləʊ nek/ | She wore a black polo neck. | Elle portait un col roulé noir.
+satin | satin | n | B2 | /ˈsætɪn/ | The bride wore white satin. | La mariée portait du satin blanc.
+nylon | nylon | n | B1 | /ˈnaɪlɒn/ | The bag is made of nylon. | Le sac est en nylon.
+cashmere | cachemire | n | B2 | /ˈkæʃmɪər/ | A cashmere scarf is very soft. | Une écharpe en cachemire est très douce.
+fake fur | fausse fourrure | n | B1 | /ˌfeɪk ˈfɜːr/ | Her coat has a fake fur collar. | Son manteau a un col en fausse fourrure.
+knitted | tricoté | adj | B1 | /ˈnɪtɪd/ | Grandma gave me a knitted hat. | Mamie m'a offert un bonnet tricoté.
+woven | tissé | adj | B2 | /ˈwəʊvən/ | The rug is hand-woven. | Le tapis est tissé à la main.
+plaid | écossais, à carreaux | adj | B2 | /plæd/ | He wore a plaid shirt. | Il portait une chemise à carreaux.
+tartan | tartan, écossais | n | B2 | /ˈtɑːtn/ | Scottish kilts are made of tartan. | Les kilts écossais sont en tartan.
+polka dot | pois (motif) | n | B1 | /ˈpɒlkə dɒt/ | She wore a dress with polka dots. | Elle portait une robe à pois.
+flowery | fleuri | adj | A2 | /ˈflaʊəri/ | I love your flowery skirt. | J'adore ta jupe fleurie.
+patterned | à motifs | adj | B1 | /ˈpætənd/ | He wore a patterned tie. | Il portait une cravate à motifs.
+fitted | ajusté, cintré | adj | B2 | /ˈfɪtɪd/ | The jacket is fitted at the waist. | La veste est cintrée à la taille.
+oversized | ample, oversize | adj | B2 | /ˌəʊvəˈsaɪzd/ | Oversized jumpers are in fashion. | Les pulls amples sont à la mode.
+cropped | court, raccourci | adj | B2 | /krɒpt/ | She wore cropped trousers. | Elle portait un pantalon court.
+to go with | aller avec | v | B1 | /ɡəʊ wɪð/ | Does this tie go with my shirt? | Cette cravate va-t-elle avec ma chemise ?
+extra large | très grand (XL) | adj | A2 | /ˌekstrə ˈlɑːdʒ/ | Do you have this in extra large? | Vous l'avez en XL ?
+to dry-clean | nettoyer à sec | v | B2 | /ˌdraɪ ˈkliːn/ | You must dry-clean this suit. | Ce costume doit être nettoyé à sec.
+to shorten | raccourcir | v | B1 | /ˈʃɔːtn/ | Can you shorten these trousers? | Pouvez-vous raccourcir ce pantalon ?
+to let out | élargir (un vêtement) | v | B2 | /let ˈaʊt/ | The tailor will let out the waist. | Le tailleur va élargir la taille.
+fashion designer | styliste, créateur de mode | n | B1 | /ˈfæʃn dɪˌzaɪnər/ | She wants to be a fashion designer. | Elle veut devenir styliste.
+vintage clothes | vêtements vintage | n | B1 | /ˌvɪntɪdʒ ˈkləʊðz/ | She sells vintage clothes online. | Elle vend des vêtements vintage en ligne.
+modest fashion | mode pudique | n | B2 | /ˌmɒdɪst ˈfæʃn/ | Modest fashion is a growing market. | La mode pudique est un marché en pleine croissance.
+black tie | tenue de soirée exigée | expr | C1 | /ˌblæk ˈtaɪ/ | The dinner is black tie. | Le dîner exige une tenue de soirée.
+smart casual | tenue de ville décontractée | expr | B2 | /ˌsmɑːt ˈkæʒuəl/ | The dress code is smart casual. | La tenue demandée est décontractée mais soignée.
+washing | lessive, linge | n | A2 | /ˈwɒʃɪŋ/ | Hang the washing outside. | Étends le linge dehors.
+coat hanger | cintre | n | A2 | /ˈkəʊt ˌhæŋər/ | Put your shirt on a coat hanger. | Mets ta chemise sur un cintre.
+care label | étiquette d'entretien | n | B2 | /ˈkeə ˌleɪbl/ | Check the care label before washing. | Regarde l'étiquette d'entretien avant de laver.
 `,
 );

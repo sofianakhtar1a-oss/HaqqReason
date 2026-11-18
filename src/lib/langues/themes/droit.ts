@@ -161,5 +161,71 @@ burden | fardeau, charge | n | C1 | /ˈbɜːdn/ | Debt is a heavy burden. | La d
 arbitration | arbitrage | n | C2 | /ˌɑːbɪˈtreɪʃn/ | The dispute went to arbitration. | Le litige a été soumis à l'arbitrage.
 indictment | mise en accusation | n | C2 | /ɪnˈdaɪtmənt/ | The grand jury issued an indictment. | Le grand jury a prononcé une mise en accusation.
 perjury | parjure, faux témoignage | n | C2 | /ˈpɜːdʒəri/ | Lying in court is perjury. | Mentir au tribunal, c'est un faux témoignage.
+barrister | avocat plaidant (GB) | n | C1 | /ˈbærɪstər/ | The barrister spoke for two hours. | L'avocat a plaidé pendant deux heures.
+juror | juré | n | C1 | /ˈdʒʊərər/ | One juror fell ill during the trial. | Un juré est tombé malade pendant le procès.
+tribunal | tribunal | n | B2 | /traɪˈbjuːnl/ | She took her case to a tribunal. | Elle a porté son affaire devant un tribunal.
+court of appeal | cour d'appel | n | C1 | /ˌkɔːt əv əˈpiːl/ | The court of appeal overturned the decision. | La cour d'appel a annulé la décision.
+claimant | demandeur, requérant | n | C1 | /ˈkleɪmənt/ | The claimant asked for compensation. | Le demandeur a réclamé une indemnisation.
+prosecution | accusation, ministère public | n | C1 | /ˌprɒsɪˈkjuːʃn/ | The prosecution called three witnesses. | L'accusation a cité trois témoins.
+defence lawyer | avocat de la défense | n | B2 | /dɪˈfens ˌlɔːjər/ | The defence lawyer asked for a new trial. | L'avocat de la défense a demandé un nouveau procès.
+under oath | sous serment | expr | C1 | /ˌʌndər ˈəʊθ/ | The witness lied under oath. | Le témoin a menti sous serment.
+not guilty | non coupable | expr | B2 | /ˌnɒt ˈɡɪlti/ | The jury found him not guilty. | Le jury l'a déclaré non coupable.
+innocence | innocence | n | B2 | /ˈɪnəsns/ | She proved her innocence. | Elle a prouvé son innocence.
+conviction | condamnation | n | C1 | /kənˈvɪkʃn/ | He has a previous conviction for theft. | Il a déjà été condamné pour vol.
+acquittal | acquittement | n | C2 | /əˈkwɪtl/ | The trial ended in an acquittal. | Le procès s'est terminé par un acquittement.
+imprisonment | emprisonnement | n | C1 | /ɪmˈprɪznmənt/ | He was sentenced to five years' imprisonment. | Il a été condamné à cinq ans d'emprisonnement.
+on bail | en liberté sous caution | expr | C1 | /ɒn ˈbeɪl/ | He was released on bail. | Il a été libéré sous caution.
+remand | détention provisoire | n | C2 | /rɪˈmɑːnd/ | He is in prison on remand. | Il est en détention provisoire.
+accusation | accusation | n | B2 | /ˌækjuˈzeɪʃn/ | He denied the accusation. | Il a nié l'accusation.
+felony | crime (grave, US) | n | C2 | /ˈfeləni/ | Robbery is a felony. | Le vol à main armée est un crime.
+misdemeanour | délit mineur | n | C2 | /ˌmɪsdɪˈmiːnər/ | Parking illegally is a misdemeanour. | Le stationnement illégal est une infraction mineure.
+manslaughter | homicide involontaire | n | C1 | /ˈmænslɔːtər/ | The driver was charged with manslaughter. | Le conducteur a été inculpé d'homicide involontaire.
+extortion | extorsion | n | C1 | /ɪkˈstɔːʃn/ | The gang was arrested for extortion. | La bande a été arrêtée pour extorsion.
+trafficking | trafic | n | C1 | /ˈtræfɪkɪŋ/ | Human trafficking is a terrible crime. | La traite des êtres humains est un crime terrible.
+drug trafficking | trafic de drogue | n | B2 | /ˈdrʌɡ ˌtræfɪkɪŋ/ | He was jailed for drug trafficking. | Il a été emprisonné pour trafic de drogue.
+counterfeiting | contrefaçon | n | C1 | /ˈkaʊntəfɪtɪŋ/ | Counterfeiting costs brands billions. | La contrefaçon coûte des milliards aux marques.
+contempt of court | outrage au tribunal | n | C2 | /kənˌtempt əv ˈkɔːt/ | He was fined for contempt of court. | Il a reçu une amende pour outrage au tribunal.
+breach of contract | rupture de contrat | n | C1 | /ˌbriːtʃ əv ˈkɒntrækt/ | They sued for breach of contract. | Ils ont porté plainte pour rupture de contrat.
+common law | common law, droit coutumier | n | C2 | /ˌkɒmən ˈlɔː/ | English law is based on common law. | Le droit anglais repose sur la common law.
+case law | jurisprudence | n | C2 | /ˈkeɪs lɔː/ | The judge relied on case law. | Le juge s'est appuyé sur la jurisprudence.
+miscarriage of justice | erreur judiciaire | n | C2 | /mɪsˌkærɪdʒ əv ˈdʒʌstɪs/ | His conviction was a miscarriage of justice. | Sa condamnation était une erreur judiciaire.
+plea | plaidoyer, déclaration de culpabilité ou non | n | C1 | /pliː/ | He entered a plea of not guilty. | Il a plaidé non coupable.
+plea bargain | négociation de peine | n | C2 | /ˈpliː ˌbɑːɡɪn/ | He accepted a plea bargain. | Il a accepté une négociation de peine.
+to plead guilty | plaider coupable | expr | C1 | /pliːd ˈɡɪlti/ | He will plead guilty to theft. | Il va plaider coupable de vol.
+to plead not guilty | plaider non coupable | expr | C1 | /pliːd ˌnɒt ˈɡɪlti/ | She plans to plead not guilty. | Elle compte plaider non coupable.
+cross-examination | contre-interrogatoire | n | C2 | /ˌkrɒs ɪɡˌzæmɪˈneɪʃn/ | The witness broke down under cross-examination. | Le témoin a craqué lors du contre-interrogatoire.
+to cross-examine | contre-interroger | v | C2 | /ˌkrɒs ɪɡˈzæmɪn/ | The lawyer will cross-examine the witness. | L'avocat va contre-interroger le témoin.
+objection | objection | n | B2 | /əbˈdʒekʃn/ | "Objection, your honour!" | « Objection, votre honneur ! »
+to adjourn | ajourner, suspendre | v | C1 | /əˈdʒɜːn/ | The judge decided to adjourn the trial. | Le juge a décidé d'ajourner le procès.
+summons | convocation, citation à comparaître | n | C1 | /ˈsʌmənz/ | She received a summons to appear in court. | Elle a reçu une citation à comparaître.
+arrest warrant | mandat d'arrêt | n | C1 | /əˈrest ˌwɒrənt/ | An arrest warrant was issued. | Un mandat d'arrêt a été émis.
+subpoena | assignation à comparaître | n | C2 | /səˈpiːnə/ | The court issued a subpoena. | Le tribunal a délivré une assignation à comparaître.
+affidavit | déclaration sous serment | n | C2 | /ˌæfɪˈdeɪvɪt/ | He signed an affidavit. | Il a signé une déclaration sous serment.
+deposition | déposition | n | C2 | /ˌdepəˈzɪʃn/ | The witness gave a deposition. | Le témoin a fait une déposition.
+motive | mobile | n | B2 | /ˈməʊtɪv/ | The police found no motive for the crime. | La police n'a trouvé aucun mobile au crime.
+culprit | coupable | n | C1 | /ˈkʌlprɪt/ | The police caught the culprit. | La police a arrêté le coupable.
+inquest | enquête judiciaire (sur un décès) | n | C2 | /ˈɪŋkwest/ | An inquest was held into his death. | Une enquête a été ouverte sur son décès.
+coroner | coroner, médecin légiste | n | C2 | /ˈkɒrənər/ | The coroner recorded an accidental death. | Le coroner a conclu à une mort accidentelle.
+testament | testament | n | C1 | /ˈtestəmənt/ | This is my last will and testament. | Ceci est mon testament.
+executor | exécuteur testamentaire | n | C2 | /ɪɡˈzekjətər/ | Her son is the executor of her will. | Son fils est l'exécuteur de son testament.
+power of attorney | procuration | n | C2 | /ˌpaʊər əv əˈtɜːni/ | She gave her daughter power of attorney. | Elle a donné procuration à sa fille.
+title deed | titre de propriété | n | C1 | /ˈtaɪtl diːd/ | Keep the title deeds in a safe place. | Garde les titres de propriété en lieu sûr.
+to evict | expulser (un locataire) | v | C1 | /ɪˈvɪkt/ | The landlord tried to evict them. | Le propriétaire a tenté de les expulser.
+data protection | protection des données | n | B2 | /ˈdeɪtə prəˌtekʃn/ | Data protection laws are strict in Europe. | Les lois sur la protection des données sont strictes en Europe.
+GDPR | RGPD | n | C1 | /ˌdʒiː diː piː ˈɑːr/ | The website must comply with GDPR. | Le site doit respecter le RGPD.
+sharia | charia | n | C1 | /ʃəˈriːə/ | Sharia covers worship and daily life. | La charia couvre le culte et la vie quotidienne.
+fiqh | fiqh (jurisprudence islamique) | n | C1 | /fɪk/ | He studies fiqh in Medina. | Il étudie le fiqh à Médine.
+qadi | cadi (juge musulman) | n | C2 | /ˈkɑːdi/ | The qadi settled the dispute. | Le cadi a tranché le litige.
+to uphold | confirmer (un jugement) | v | C1 | /ʌpˈhəʊld/ | The court will uphold the sentence. | La cour va confirmer la peine.
+high court | haute cour | n | C1 | /ˌhaɪ ˈkɔːt/ | The case went to the high court. | L'affaire est allée devant la haute cour.
+crown court | cour d'assises (GB) | n | C2 | /ˌkraʊn ˈkɔːt/ | He was tried at the crown court. | Il a été jugé à la cour d'assises.
+legislator | législateur | n | C1 | /ˈledʒɪsleɪtər/ | Legislators debated the bill. | Les législateurs ont débattu du projet de loi.
+legislature | corps législatif | n | C2 | /ˈledʒɪslətʃər/ | The legislature passed the law. | Le corps législatif a adopté la loi.
+to repeal | abroger | v | C1 | /rɪˈpiːl/ | Parliament voted to repeal the law. | Le Parlement a voté l'abrogation de la loi.
+red tape | paperasserie | n | C1 | /ˌred ˈteɪp/ | There's too much red tape. | Il y a trop de paperasserie.
+legal action | poursuites judiciaires | n | B2 | /ˌliːɡl ˈækʃn/ | They threatened legal action. | Ils ont menacé d'engager des poursuites.
+out of court | à l'amiable | expr | C1 | /ˌaʊt əv ˈkɔːt/ | They settled out of court. | Ils ont réglé l'affaire à l'amiable.
+mediation | médiation | n | C1 | /ˌmiːdiˈeɪʃn/ | The dispute was solved through mediation. | Le litige a été réglé par la médiation.
+arbitrator | arbitre (juridique) | n | C2 | /ˈɑːbɪtreɪtər/ | An arbitrator settled the dispute. | Un arbitre a tranché le différend.
 `,
 );

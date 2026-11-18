@@ -142,5 +142,83 @@ data breach | fuite de données | n | C1 | /ˈdeɪtə briːtʃ/ | The company su
 virus scan | analyse antivirus | n | B2 | /ˈvaɪrəs skæn/ | Run a virus scan every week. | Lance une analyse antivirus chaque semaine.
 emergency kit | trousse d'urgence | n | B2 | /ɪˈmɜːdʒənsi kɪt/ | Keep an emergency kit at home. | Garde une trousse d'urgence à la maison.
 torch | lampe de poche | n | A2 | /tɔːtʃ/ | Take a torch in case of a power cut. | Prends une lampe de poche en cas de coupure.
+unsafe | dangereux, peu sûr | adj | B1 | /ʌnˈseɪf/ | The bridge is unsafe. | Le pont n'est pas sûr.
+fire brigade | pompiers (corps) | n | A2 | /ˈfaɪə brɪˌɡeɪd/ | Call the fire brigade! | Appelle les pompiers !
+fireman | pompier | n | A1 | /ˈfaɪəmən/ | The fireman saved the cat. | Le pompier a sauvé le chat.
+fire engine | camion de pompiers | n | A2 | /ˈfaɪər ˌendʒɪn/ | A fire engine raced past. | Un camion de pompiers est passé à toute vitesse.
+fire exit | sortie de secours | n | A2 | /ˈfaɪər ˌeksɪt/ | Keep the fire exit clear. | Laisse la sortie de secours dégagée.
+policeman | policier | n | A1 | /pəˈliːsmən/ | Ask the policeman for help. | Demande de l'aide au policier.
+policewoman | policière | n | A2 | /pəˈliːswʊmən/ | A policewoman helped the child. | Une policière a aidé l'enfant.
+cop | flic | n | B1 | /kɒp/ | The cops arrived quickly. | Les flics sont arrivés vite.
+to call the police | appeler la police | expr | A2 | /kɔːl ðə pəˈliːs/ | Call the police at once! | Appelle la police tout de suite !
+robber | voleur, braqueur | n | B1 | /ˈrɒbər/ | The robbers escaped in a car. | Les braqueurs se sont enfuis en voiture.
+mugger | agresseur (vol à l'arraché) | n | B2 | /ˈmʌɡər/ | The mugger took her handbag. | L'agresseur lui a pris son sac.
+shoplifter | voleur à l'étalage | n | B2 | /ˈʃɒplɪftər/ | The shoplifter was caught on camera. | Le voleur à l'étalage a été filmé.
+arson | incendie criminel | n | C1 | /ˈɑːsn/ | Police suspect arson. | La police soupçonne un incendie criminel.
+arsonist | pyromane, incendiaire | n | C1 | /ˈɑːsənɪst/ | The arsonist was arrested. | L'incendiaire a été arrêté.
+assault | agression | n | B2 | /əˈsɔːlt/ | He was charged with assault. | Il a été inculpé pour agression.
+attacker | agresseur | n | B2 | /əˈtækər/ | She described her attacker to the police. | Elle a décrit son agresseur à la police.
+bouncer | videur | n | B2 | /ˈbaʊnsər/ | The bouncer refused to let us in. | Le videur a refusé de nous laisser entrer.
+security camera | caméra de surveillance | n | B1 | /sɪˈkjʊərəti ˌkæmərə/ | A security camera filmed the thief. | Une caméra de surveillance a filmé le voleur.
+vault | chambre forte | n | C1 | /vɔːlt/ | The gold is kept in a vault. | L'or est conservé dans une chambre forte.
+PIN code | code PIN | n | A2 | /ˈpɪn kəʊd/ | Never share your PIN code. | Ne partage jamais ton code PIN.
+to hack | pirater | v | B2 | /hæk/ | Someone hacked my account. | Quelqu'un a piraté mon compte.
+antivirus | antivirus | n | B1 | /ˈæntivaɪrəs/ | Install an antivirus on your laptop. | Installe un antivirus sur ton ordinateur.
+lifebuoy | bouée de sauvetage | n | B2 | /ˈlaɪfbɔɪ/ | Throw him the lifebuoy! | Lance-lui la bouée !
+drowning | noyade | n | B2 | /ˈdraʊnɪŋ/ | Drowning is a risk for young children. | La noyade est un risque pour les jeunes enfants.
+search and rescue | recherche et sauvetage | n | C1 | /ˌsɜːtʃ ən ˈreskjuː/ | A search and rescue team found the hikers. | Une équipe de secours a retrouvé les randonneurs.
+coastguard | garde-côte | n | B2 | /ˈkəʊstɡɑːd/ | The coastguard rescued the sailors. | Les garde-côtes ont secouru les marins.
+mountain rescue | secours en montagne | n | B2 | /ˈmaʊntən ˌreskjuː/ | Mountain rescue arrived by helicopter. | Les secours en montagne sont arrivés en hélicoptère.
+warning sign | panneau d'avertissement | n | B1 | /ˈwɔːnɪŋ saɪn/ | Didn't you see the warning sign? | Tu n'as pas vu le panneau d'avertissement ?
+caution | prudence, précaution | n | B2 | /ˈkɔːʃn/ | Drive with caution in the fog. | Conduis prudemment dans le brouillard.
+to be careful | faire attention | expr | A1 | /bi ˈkeəfl/ | You must be careful on the ice. | Tu dois faire attention sur la glace.
+mind the gap | attention à la marche | expr | B1 | /ˌmaɪnd ðə ˈɡæp/ | "Mind the gap," said the voice in the Tube. | « Attention à la marche », dit la voix dans le métro.
+wet floor | sol glissant | n | A2 | /ˌwet ˈflɔːr/ | Caution: wet floor. | Attention : sol mouillé.
+high voltage | haute tension | n | B2 | /ˌhaɪ ˈvəʊltɪdʒ/ | Danger: high voltage! | Danger : haute tension !
+explosive | explosif | n | B2 | /ɪkˈspləʊsɪv/ | The police found explosives in the car. | La police a trouvé des explosifs dans la voiture.
+bomb scare | alerte à la bombe | n | B2 | /ˈbɒm skeər/ | The station closed after a bomb scare. | La gare a fermé après une alerte à la bombe.
+terrorist | terroriste | n | B2 | /ˈterərɪst/ | The terrorist was arrested at the border. | Le terroriste a été arrêté à la frontière.
+hostage | otage | n | B2 | /ˈhɒstɪdʒ/ | The hostages were freed. | Les otages ont été libérés.
+metal detector | détecteur de métaux | n | B1 | /ˈmetl dɪˌtektər/ | Walk through the metal detector. | Passez sous le détecteur de métaux.
+body search | fouille corporelle | n | B2 | /ˈbɒdi sɜːtʃ/ | Passengers may face a body search. | Les passagers peuvent être fouillés.
+to frisk | fouiller (palper) | v | C1 | /frɪsk/ | The guard frisked everyone at the door. | Le vigile a fouillé tout le monde à l'entrée.
+airport security | contrôle de sécurité (aéroport) | n | B1 | /ˈeəpɔːt sɪˌkjʊərəti/ | Airport security took my water bottle. | La sécurité de l'aéroport a confisqué ma bouteille d'eau.
+riot police | CRS, police antiémeute | n | B2 | /ˈraɪət pəˌliːs/ | Riot police surrounded the square. | Les CRS ont encerclé la place.
+martial law | loi martiale | n | C1 | /ˌmɑːʃl ˈlɔː/ | The army declared martial law. | L'armée a décrété la loi martiale.
+state of emergency | état d'urgence | n | B2 | /ˌsteɪt əv ɪˈmɜːdʒənsi/ | The government declared a state of emergency. | Le gouvernement a déclaré l'état d'urgence.
+disaster | catastrophe | n | B1 | /dɪˈzɑːstər/ | The flood was a disaster. | L'inondation a été une catastrophe.
+natural disaster | catastrophe naturelle | n | B1 | /ˌnætʃrəl dɪˈzɑːstər/ | Earthquakes are natural disasters. | Les séismes sont des catastrophes naturelles.
+survival kit | kit de survie | n | B1 | /səˈvaɪvl kɪt/ | Pack a survival kit for the trip. | Prépare un kit de survie pour le voyage.
+survivor | survivant, rescapé | n | B2 | /səˈvaɪvər/ | There were three survivors. | Il y a eu trois rescapés.
+casualty | victime, blessé | n | C1 | /ˈkæʒuəlti/ | The crash caused many casualties. | L'accident a fait de nombreuses victimes.
+fatality | mort, victime (décès) | n | C1 | /fəˈtæləti/ | There were no fatalities. | Il n'y a eu aucun mort.
+death toll | bilan des morts | n | C1 | /ˈdeθ təʊl/ | The death toll rose to fifty. | Le bilan s'est alourdi à cinquante morts.
+crime prevention | prévention de la délinquance | n | C1 | /ˈkraɪm prɪˌvenʃn/ | Lighting helps crime prevention. | L'éclairage aide à prévenir la délinquance.
+self-defence | légitime défense, autodéfense | n | B2 | /ˌself dɪˈfens/ | She takes self-defence classes. | Elle prend des cours d'autodéfense.
+pepper spray | bombe au poivre | n | B2 | /ˈpepə spreɪ/ | The police used pepper spray. | La police a utilisé du gaz poivre.
+panic button | bouton d'alarme | n | B2 | /ˈpænɪk ˌbʌtn/ | The cashier pressed the panic button. | La caissière a appuyé sur le bouton d'alarme.
+panic room | pièce sécurisée | n | C1 | /ˈpænɪk ruːm/ | The villa has a panic room. | La villa a une pièce sécurisée.
+escape route | voie d'évacuation | n | B2 | /ɪˈskeɪp ruːt/ | Plan an escape route in case of fire. | Prévois une voie d'évacuation en cas d'incendie.
+preventive | préventif | adj | C1 | /prɪˈventɪv/ | We took preventive measures. | Nous avons pris des mesures préventives.
+protective | protecteur, de protection | adj | B2 | /prəˈtektɪv/ | Wear protective glasses. | Porte des lunettes de protection.
+protective clothing | vêtements de protection | n | B2 | /prəˌtektɪv ˈkləʊðɪŋ/ | Workers must wear protective clothing. | Les ouvriers doivent porter des vêtements de protection.
+mask | masque | n | A2 | /mɑːsk/ | Wear a mask in the lab. | Porte un masque au labo.
+ear plugs | bouchons d'oreille | n | B1 | /ˈɪə plʌɡz/ | Use ear plugs on the building site. | Utilise des bouchons d'oreille sur le chantier.
+high-visibility jacket | gilet jaune, gilet haute visibilité | n | B2 | /ˌhaɪ vɪzəˈbɪləti ˈdʒækɪt/ | Keep a high-visibility jacket in the car. | Garde un gilet jaune dans la voiture.
+safety pin | épingle à nourrice | n | B1 | /ˈseɪfti pɪn/ | Fix it with a safety pin. | Attache-le avec une épingle à nourrice.
+safety net | filet de sécurité | n | B2 | /ˈseɪfti net/ | Savings are a safety net. | L'épargne est un filet de sécurité.
+safety first | la sécurité d'abord | expr | A2 | /ˌseɪfti ˈfɜːst/ | Wear your helmet: safety first! | Mets ton casque : la sécurité d'abord !
+health and safety | hygiène et sécurité | n | B2 | /ˌhelθ ən ˈseɪfti/ | Health and safety rules are strict here. | Les règles d'hygiène et de sécurité sont strictes ici.
+safeguarding | protection (des personnes vulnérables) | n | C1 | /ˈseɪfɡɑːdɪŋ/ | All staff receive safeguarding training. | Tout le personnel est formé à la protection de l'enfance.
+at risk | en danger, menacé | expr | B2 | /ət ˈrɪsk/ | These children are at risk. | Ces enfants sont en danger.
+on guard | sur ses gardes | expr | B2 | /ɒn ˈɡɑːd/ | Stay on guard at night. | Reste sur tes gardes la nuit.
+vigilant | vigilant | adj | C1 | /ˈvɪdʒɪlənt/ | Stay vigilant in crowded places. | Restez vigilants dans les lieux bondés.
+vigilance | vigilance | n | C1 | /ˈvɪdʒɪləns/ | Vigilance saved many lives. | La vigilance a sauvé de nombreuses vies.
+suspicious package | colis suspect | n | B2 | /səˌspɪʃəs ˈpækɪdʒ/ | A suspicious package was found at the station. | Un colis suspect a été trouvé à la gare.
+unattended bag | bagage abandonné | n | B2 | /ˌʌnəˌtendɪd ˈbæɡ/ | Report any unattended bag. | Signalez tout bagage abandonné.
+missing person | personne disparue | n | B2 | /ˌmɪsɪŋ ˈpɜːsn/ | The police are looking for a missing person. | La police recherche une personne disparue.
+search party | équipe de recherche | n | B2 | /ˈsɜːtʃ ˌpɑːti/ | A search party set off at dawn. | Une équipe de recherche est partie à l'aube.
+sniffer dog | chien renifleur | n | B2 | /ˈsnɪfə dɒɡ/ | The sniffer dog found the drugs. | Le chien renifleur a trouvé la drogue.
+forensics | police scientifique | n | C1 | /fəˈrensɪks/ | Forensics examined the car. | La police scientifique a examiné la voiture.
 `,
 );

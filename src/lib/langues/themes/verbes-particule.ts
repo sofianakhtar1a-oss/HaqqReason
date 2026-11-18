@@ -253,5 +253,122 @@ live up to | être à la hauteur de | v | C1 | /lɪv ʌp tuː/ | The film didn't
 mull over | réfléchir longuement à | v | C2 | /mʌl ˈəʊvər/ | I need to mull over your offer. | Je dois réfléchir longuement à ton offre.
 nod off | s'assoupir | v | B2 | /nɒd ɒf/ | Grandpa tends to nod off after lunch. | Papi a tendance à s'assoupir après le déjeuner.
 opt out | se retirer, choisir de ne pas participer | v | C1 | /ɒpt aʊt/ | You can opt out of the newsletter. | Tu peux te désinscrire de la lettre d'information.
+to back off | reculer, lâcher prise | v | B2 | /bæk ˈɒf/ | Back off and leave her alone! | Recule et laisse-la tranquille !
+to bear with | patienter avec | v | B2 | /beə ˈwɪð/ | Please bear with me for a moment. | Merci de patienter un instant.
+to black out | s'évanouir | v | B2 | /blæk ˈaʊt/ | I sometimes black out when I see blood. | Il m'arrive de m'évanouir à la vue du sang.
+to blow over | se calmer, passer | v | C1 | /bləʊ ˈəʊvər/ | The scandal will blow over. | Le scandale va retomber.
+to boil down to | se résumer à | v | C1 | /bɔɪl ˈdaʊn tuː/ | It all boils down to money. | Tout se résume à une question d'argent.
+to bounce back | rebondir, se remettre | v | B2 | /baʊns ˈbæk/ | Children bounce back quickly. | Les enfants se remettent vite.
+to branch out | se diversifier | v | C1 | /brɑːntʃ ˈaʊt/ | The company wants to branch out into tourism. | L'entreprise veut se diversifier dans le tourisme.
+to break away | se détacher, faire sécession | v | C1 | /breɪk əˈweɪ/ | The region wants to break away. | La région veut faire sécession.
+to break off | rompre, interrompre | v | B2 | /breɪk ˈɒf/ | They decided to break off the talks. | Ils ont décidé de rompre les négociations.
+to break through | percer, franchir | v | C1 | /breɪk ˈθruː/ | The sun will break through the clouds. | Le soleil va percer les nuages.
+to bring down | faire tomber, faire baisser | v | B2 | /brɪŋ ˈdaʊn/ | The protests could bring down the government. | Les manifestations pourraient faire tomber le gouvernement.
+to bring forward | avancer (une date) | v | B2 | /brɪŋ ˈfɔːwəd/ | We'll bring forward the meeting to Monday. | Nous allons avancer la réunion à lundi.
+to bring on | provoquer | v | C1 | /brɪŋ ˈɒn/ | Stress can bring on headaches. | Le stress peut provoquer des maux de tête.
+to bring out | sortir, publier ; faire ressortir | v | B2 | /brɪŋ ˈaʊt/ | The band will bring out a new album. | Le groupe va sortir un nouvel album.
+to bring round | ranimer ; convaincre | v | C1 | /brɪŋ ˈraʊnd/ | Cold water will bring round the man who fainted. | L'eau froide va ranimer l'homme évanoui.
+to brush off | balayer, ignorer | v | C1 | /brʌʃ ˈɒf/ | Don't brush off my concerns. | Ne balaie pas mes inquiétudes.
+to brush up | rafraîchir (ses connaissances) | v | B2 | /brʌʃ ˈʌp/ | I need to brush up my Arabic. | Je dois rafraîchir mon arabe.
+to burn out | s'épuiser | v | C1 | /bɜːn ˈaʊt/ | If you work like this, you'll burn out. | Si tu travailles comme ça, tu vas t'épuiser.
+to butt in | interrompre, s'immiscer | v | C1 | /bʌt ˈɪn/ | Don't butt in while I'm speaking. | Ne m'interromps pas quand je parle.
+to call for | exiger, nécessiter | v | B2 | /kɔːl ˈfɔːr/ | The situation calls for patience. | La situation exige de la patience.
+to call out | appeler, crier ; dénoncer | v | B2 | /kɔːl ˈaʊt/ | We must call out injustice. | Nous devons dénoncer l'injustice.
+to catch on | devenir à la mode ; comprendre | v | C1 | /kætʃ ˈɒn/ | The new app didn't catch on. | La nouvelle appli n'a pas pris.
+to chip in | contribuer, mettre au pot | v | B2 | /tʃɪp ˈɪn/ | Let's all chip in for her present. | Cotisons tous pour son cadeau.
+to clam up | se taire, se fermer | v | C1 | /klæm ˈʌp/ | He tends to clam up when he's nervous. | Il a tendance à se fermer quand il est nerveux.
+to come apart | se défaire, tomber en morceaux | v | B2 | /kʌm əˈpɑːt/ | The old book began to come apart. | Le vieux livre a commencé à tomber en morceaux.
+to come down with | attraper (une maladie) | v | B2 | /kʌm ˈdaʊn wɪð/ | I think I'm going to come down with a cold. | Je crois que je vais attraper un rhume.
+to come forward | se présenter, se manifester | v | C1 | /kʌm ˈfɔːwəd/ | Police asked witnesses to come forward. | La police a demandé aux témoins de se manifester.
+to come up | surgir, être abordé | v | B1 | /kʌm ˈʌp/ | Something might come up at work. | Il pourrait y avoir un imprévu au travail.
+to cover up | dissimuler, étouffer | v | B2 | /kʌvər ˈʌp/ | They tried to cover up the scandal. | Ils ont essayé d'étouffer le scandale.
+to crack down | sévir | v | C1 | /kræk ˈdaʊn/ | The police will crack down on drivers using phones. | La police va sévir contre les conducteurs au téléphone.
+to cut down | réduire ; abattre | v | B1 | /kʌt ˈdaʊn/ | I'm trying to cut down on sugar. | J'essaie de réduire le sucre.
+to cut in | interrompre ; se rabattre | v | B2 | /kʌt ˈɪn/ | Sorry to cut in, but it's time to go. | Désolé de vous interrompre, mais il est l'heure.
+to cut out | supprimer ; découper | v | B2 | /kʌt ˈaʊt/ | Cut out fizzy drinks for a month. | Supprime les sodas pendant un mois.
+to die down | s'apaiser, diminuer | v | B2 | /daɪ ˈdaʊn/ | Wait for the wind to die down. | Attends que le vent se calme.
+to do away with | supprimer, abolir | v | C1 | /duː əˈweɪ wɪð/ | We should do away with this rule. | Nous devrions supprimer cette règle.
+to drag on | s'éterniser | v | B2 | /dræɡ ˈɒn/ | The meeting tends to drag on. | La réunion a tendance à s'éterniser.
+to draw up | rédiger, établir | v | B2 | /drɔː ˈʌp/ | The lawyer will draw up the contract. | L'avocat va rédiger le contrat.
+to drift off | s'assoupir | v | B2 | /drɪft ˈɒf/ | I often drift off during long films. | Je m'assoupis souvent pendant les longs films.
+to drop in | passer (rendre visite) | v | B1 | /drɒp ˈɪn/ | Drop in for tea whenever you like. | Passe prendre le thé quand tu veux.
+to drown out | couvrir (un bruit) | v | C1 | /draʊn ˈaʊt/ | The music will drown out our voices. | La musique va couvrir nos voix.
+to ease off | diminuer, se relâcher | v | C1 | /iːz ˈɒf/ | The rain should ease off soon. | La pluie devrait bientôt se calmer.
+to fizzle out | tourner court, s'essouffler | v | C1 | /ˌfɪzl ˈaʊt/ | Their enthusiasm began to fizzle out. | Leur enthousiasme a commencé à s'essouffler.
+to flare up | s'enflammer, reprendre | v | C1 | /fleər ˈʌp/ | Violence could flare up again. | La violence pourrait reprendre.
+to follow up | donner suite, assurer le suivi | v | B2 | /ˌfɒləʊ ˈʌp/ | I'll follow up with an email. | Je donnerai suite par mail.
+to fool around | faire l'idiot | v | B2 | /fuːl əˈraʊnd/ | Stop fooling around and work! | Arrête de faire l'idiot et travaille !
+to get ahead | réussir, progresser | v | B2 | /ɡet əˈhed/ | You need skills to get ahead. | Il faut des compétences pour réussir.
+to get at | vouloir dire, insinuer | v | C1 | /ˈɡet æt/ | What are you trying to get at? | Où veux-tu en venir ?
+to get down | déprimer, abattre | v | B2 | /ɡet ˈdaʊn/ | This grey weather can get you down. | Ce temps gris peut te déprimer.
+to get round to | trouver le temps de | v | C1 | /ɡet ˈraʊnd tuː/ | I'll get round to it next week. | Je trouverai le temps de le faire la semaine prochaine.
+to go after | poursuivre, viser | v | B2 | /ɡəʊ ˈɑːftər/ | She wants to go after her dream. | Elle veut poursuivre son rêve.
+to go against | aller à l'encontre de | v | B2 | /ɡəʊ əˈɡenst/ | It would go against my principles. | Ce serait contraire à mes principes.
+to go by | passer (temps) ; se fier à | v | B2 | /ɡəʊ ˈbaɪ/ | Time seems to go by faster. | Le temps semble passer plus vite.
+to go in for | s'intéresser à, se présenter à | v | C1 | /ɡəʊ ˈɪn fɔːr/ | I don't go in for sports much. | Je ne suis pas très sport.
+to go under | faire faillite ; couler | v | C1 | /ɡəʊ ˈʌndər/ | Many shops go under in a crisis. | Beaucoup de magasins font faillite en temps de crise.
+to grow on | plaire de plus en plus | v | C1 | /ɡrəʊ ˈɒn/ | The city will grow on you. | Tu vas finir par aimer cette ville.
+to hand down | transmettre | v | B2 | /hænd ˈdaʊn/ | Parents hand down traditions to their children. | Les parents transmettent les traditions à leurs enfants.
+to hang about | traîner | v | B2 | /hæŋ əˈbaʊt/ | Don't hang about in the street. | Ne traîne pas dans la rue.
+to head off | partir ; prévenir | v | B2 | /hed ˈɒf/ | We'll head off after lunch. | Nous partirons après le déjeuner.
+to hit back | riposter | v | B2 | /hɪt ˈbæk/ | The minister will hit back at his critics. | Le ministre va riposter à ses détracteurs.
+to hit on | trouver (une idée) | v | C1 | /ˈhɪt ɒn/ | We need to hit on a solution. | Nous devons trouver une solution.
+to hold out | tenir bon ; tendre | v | B2 | /həʊld ˈaʊt/ | The soldiers can hold out for days. | Les soldats peuvent tenir des jours.
+to keep at | persévérer | v | C1 | /ˈkiːp æt/ | Keep at it and you'll succeed. | Persévère et tu réussiras.
+to keep down | maintenir bas ; garder (nourriture) | v | B2 | /kiːp ˈdaʊn/ | We must keep down costs. | Nous devons limiter les coûts.
+to keep out | empêcher d'entrer | v | B1 | /kiːp ˈaʊt/ | The fence will keep out the foxes. | La clôture empêchera les renards d'entrer.
+to keep up | suivre, maintenir | v | B1 | /kiːp ˈʌp/ | Walk slowly so I can keep up. | Marche lentement pour que je puisse suivre.
+to kick out | mettre à la porte | v | B2 | /kɪk ˈaʊt/ | They will kick out anyone who fights. | Ils vont mettre dehors quiconque se bat.
+to lay down | établir, poser (des règles) | v | C1 | /leɪ ˈdaʊn/ | The law lays down strict rules. | La loi établit des règles strictes.
+to let on | révéler | v | C1 | /let ˈɒn/ | Don't let on that you know. | Ne laisse pas paraître que tu sais.
+to lock in | enfermer, verrouiller | v | B2 | /lɒk ˈɪn/ | Lock in the price now. | Bloque le prix dès maintenant.
+to log off | se déconnecter | v | B1 | /lɒɡ ˈɒf/ | Remember to log off. | Pense à te déconnecter.
+to log on | se connecter | v | B1 | /lɒɡ ˈɒn/ | Log on with your password. | Connecte-toi avec ton mot de passe.
+to look over | examiner, parcourir | v | B2 | /lʊk ˈəʊvər/ | Can you look over my essay? | Tu peux jeter un œil à ma dissertation ?
+to look round | faire le tour de, visiter | v | B1 | /lʊk ˈraʊnd/ | We'd like to look round the house. | Nous aimerions visiter la maison.
+to make off | s'enfuir | v | C1 | /meɪk ˈɒf/ | Thieves make off with bikes every day. | Des voleurs s'enfuient avec des vélos chaque jour.
+to note down | noter | v | B1 | /nəʊt ˈdaʊn/ | Note down the address. | Note l'adresse.
+to pass by | passer (devant) | v | A2 | /pɑːs ˈbaɪ/ | I pass by the mosque every day. | Je passe devant la mosquée tous les jours.
+to pile up | s'accumuler | v | B2 | /paɪl ˈʌp/ | The dishes pile up in the sink. | La vaisselle s'accumule dans l'évier.
+to play up | faire des siennes | v | C1 | /pleɪ ˈʌp/ | My knee starts to play up when it's cold. | Mon genou fait des siennes quand il fait froid.
+to pop up | surgir, apparaître | v | B2 | /pɒp ˈʌp/ | Ads pop up everywhere. | Les pubs surgissent partout.
+to pull down | démolir | v | B2 | /pʊl ˈdaʊn/ | They will pull down the old factory. | Ils vont démolir la vieille usine.
+to pull in | arriver (train) ; se garer | v | B2 | /pʊl ˈɪn/ | The train will pull in at six. | Le train arrivera en gare à six heures.
+to pull off | réussir (un exploit) | v | C1 | /pʊl ˈɒf/ | Can she pull off a victory? | Peut-elle décrocher la victoire ?
+to pull through | s'en sortir | v | C1 | /pʊl ˈθruː/ | The doctors think he'll pull through. | Les médecins pensent qu'il va s'en sortir.
+to pull together | se serrer les coudes | v | C1 | /pʊl təˈɡeðər/ | We must pull together in hard times. | Nous devons nous serrer les coudes dans les moments durs.
+to pull up | s'arrêter (véhicule) | v | B2 | /pʊl ˈʌp/ | A taxi pulls up outside. | Un taxi s'arrête devant la porte.
+to push on | continuer, poursuivre | v | B2 | /pʊʃ ˈɒn/ | Let's push on to the next village. | Continuons jusqu'au prochain village.
+to put across | faire passer (un message) | v | C1 | /pʊt əˈkrɒs/ | He knows how to put across his ideas. | Il sait faire passer ses idées.
+to run out | s'épuiser, manquer | v | A2 | /rʌn ˈaʊt/ | We will run out of milk. | Nous allons manquer de lait.
+to rush into | se précipiter dans | v | B2 | /rʌʃ ˈɪntuː/ | Don't rush into marriage. | Ne te précipite pas dans le mariage.
+to sell out | être épuisé (stock) | v | B2 | /sel ˈaʊt/ | Tickets will sell out fast. | Les billets vont partir très vite.
+to send back | renvoyer | v | A2 | /send ˈbæk/ | I want to send back this jacket. | Je veux renvoyer cette veste.
+to set in | s'installer (durablement) | v | C1 | /set ˈɪn/ | Winter is starting to set in. | L'hiver commence à s'installer.
+to sit back | se détendre, rester passif | v | B2 | /sɪt ˈbæk/ | Sit back and enjoy the show. | Installe-toi et profite du spectacle.
+to sit in | assister (sans participer) | v | C1 | /sɪt ˈɪn/ | Can I sit in on your class? | Puis-je assister à ton cours ?
+to speak out | prendre la parole, dénoncer | v | B2 | /spiːk ˈaʊt/ | We must speak out against racism. | Nous devons dénoncer le racisme.
+to speak up | parler plus fort ; s'exprimer | v | B1 | /spiːk ˈʌp/ | Please speak up, I can't hear you. | Parle plus fort, je ne t'entends pas.
+to stand in | remplacer | v | B2 | /stænd ˈɪn/ | Can you stand in for me tomorrow? | Tu peux me remplacer demain ?
+to stand up for | défendre | v | B2 | /stænd ˈʌp fɔːr/ | Always stand up for the weak. | Défends toujours les faibles.
+to step up | intensifier ; s'avancer | v | B2 | /step ˈʌp/ | The police will step up patrols. | La police va intensifier les patrouilles.
+to stick out | dépasser ; se remarquer | v | B2 | /stɪk ˈaʊt/ | Your label is sticking out. | Ton étiquette dépasse.
+to stick up for | prendre la défense de | v | B2 | /stɪk ˈʌp fɔːr/ | Friends stick up for each other. | Les amis prennent la défense les uns des autres.
+to stir up | attiser, provoquer | v | C1 | /stɜːr ˈʌp/ | Don't stir up trouble. | Ne sème pas la zizanie.
+to take on | embaucher ; assumer | v | B2 | /teɪk ˈɒn/ | The firm will take on new staff. | L'entreprise va embaucher du personnel.
+to take out | sortir ; retirer | v | A2 | /teɪk ˈaʊt/ | I need to take out some cash. | Je dois retirer de l'argent.
+to take to | se mettre à ; apprécier | v | C1 | /ˈteɪk tuː/ | The children take to their new teacher. | Les enfants apprécient leur nouvelle maîtresse.
+to talk into | persuader de | v | B2 | /tɔːk ˈɪntuː/ | She tried to talk me into it. | Elle a essayé de me convaincre.
+to talk out of | dissuader de | v | B2 | /tɔːk ˈaʊt əv/ | Can you talk him out of it? | Peux-tu l'en dissuader ?
+to tear down | démolir | v | B2 | /teər ˈdaʊn/ | They want to tear down the old stadium. | Ils veulent démolir le vieux stade.
+to tip off | prévenir, renseigner | v | C1 | /tɪp ˈɒf/ | Someone may tip off the police. | Quelqu'un pourrait prévenir la police.
+to touch on | aborder (brièvement) | v | C1 | /ˈtʌtʃ ɒn/ | I'll touch on this point later. | J'aborderai ce point plus tard.
+to track down | retrouver, dépister | v | B2 | /træk ˈdaʊn/ | The police will track down the thief. | La police retrouvera le voleur.
+to trade in | faire reprendre | v | C1 | /treɪd ˈɪn/ | I want to trade in my old car. | Je veux faire reprendre ma vieille voiture.
+to turn away | refouler ; se détourner | v | B2 | /tɜːn əˈweɪ/ | The club will turn away anyone without ID. | La boîte refoulera quiconque n'a pas de papiers.
+to walk out | partir, quitter (en signe de protestation) | v | B2 | /wɔːk ˈaʊt/ | The workers may walk out in protest. | Les ouvriers pourraient quitter le travail en signe de protestation.
+to wind down | se détendre ; ralentir | v | B2 | /waɪnd ˈdaʊn/ | I read to wind down before bed. | Je lis pour me détendre avant de dormir.
+to wind up | finir par ; conclure | v | C1 | /waɪnd ˈʌp/ | Let's wind up the meeting. | Concluons la réunion.
+to write off | passer en pertes ; considérer comme perdu | v | C1 | /raɪt ˈɒf/ | Don't write off the team yet. | Ne considère pas encore l'équipe comme perdante.
 `,
 );

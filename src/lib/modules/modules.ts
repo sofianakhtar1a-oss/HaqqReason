@@ -331,7 +331,7 @@ const LANGUES: DefModule = {
 export const MODULES: Record<ModuleId, DefModule> = { accueil: ACCUEIL, calame: CALAME, alambic: ALAMBIC, langues: LANGUES };
 export const estModule = (id: string): id is ModuleId => (IDS_MODULES as string[]).includes(id);
 
-export const ICONES_DISPONIBLES = ["Users", "Plane", "Briefcase", "Sun", "UtensilsCrossed", "HeartPulse", "House", "Smile", "CloudSun", "GraduationCap", "Building2", "Trees", "BookOpen", "Moon", "Star", "Globe", "Music", "Car", "ShoppingBag", "Dumbbell", "Landmark", "Laptop", "Leaf", "Heart", "Clapperboard", "Coffee", "Cpu", "Factory", "Hammer", "Lightbulb", "MapPin", "Newspaper", "Plug", "ShieldCheck", "Sparkles", "Sprout", "Tent", "Trophy", "UserRound", "Vote", "Wallet", "Zap", "PersonStanding", "Shirt", "PawPrint", "Scale", "TrendingUp", "Brain", "Clock", "Puzzle", "Quote", "Link2"];
+export const ICONES_DISPONIBLES = ["Users", "Plane", "Briefcase", "Sun", "UtensilsCrossed", "HeartPulse", "House", "Smile", "CloudSun", "GraduationCap", "Building2", "Trees", "BookOpen", "Moon", "Star", "Globe", "Music", "Car", "ShoppingBag", "Dumbbell", "Landmark", "Laptop", "Leaf", "Heart", "Clapperboard", "Coffee", "Cpu", "Factory", "Hammer", "Lightbulb", "MapPin", "Newspaper", "Plug", "ShieldCheck", "Sparkles", "Sprout", "Tent", "Trophy", "UserRound", "Vote", "Wallet", "Zap", "PersonStanding", "Shirt", "PawPrint", "Scale", "TrendingUp", "Brain", "Clock", "Puzzle", "Quote", "Link2", "Activity", "Palette", "Feather"];
 export const NIVEAUX_MOTS: Niveau[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
 export const NATURES_MOTS = ["nom", "verbe", "adjectif", "adverbe", "expression", "préposition", "pronom", "conjonction"] as const;
 
