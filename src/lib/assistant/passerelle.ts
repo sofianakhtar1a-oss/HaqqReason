@@ -276,6 +276,13 @@ export async function demarrer(
         derniere = erreur;
         break;
       }
+      if (erreur.code === "activation") {
+        // La passerelle répond parfois « moyen de paiement requis » pour un modèle hors de l'offre
+        // gratuite, même quand tout est en règle : on essaie le suivant, sans écarter celui-ci.
+        // Un refus explicite de l'offre gratuite (plus haut) dit mieux ce qui se passe : il l'emporte.
+        if (derniere?.code !== "modele_indisponible") derniere = erreur;
+        break;
+      }
       return { ok: false, modele, erreur };
     }
   }

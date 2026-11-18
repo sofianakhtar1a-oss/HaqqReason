@@ -40,6 +40,7 @@ export const MODELES: ModelePasserelle[] = [
   { id: "anthropic/claude-haiku-5.5", fournisseur: "anthropic", nom: "Claude Haiku 5.5", tarif: { entree: 0.1, ecritureCache: 0.125, lectureCache: 0.01, sortie: 0.5 } },
   { id: "openai/gpt-6-luna", fournisseur: "openai", nom: "GPT-6 Luna", tarif: { entree: 0.1, ecritureCache: 0.1, lectureCache: 0.01, sortie: 0.5 } },
   { id: "openai/gpt-5.4-mini", fournisseur: "openai", nom: "GPT-5.4 mini", tarif: { entree: 0.75, ecritureCache: 0.75, lectureCache: 0.075, sortie: 4.5 } },
+  { id: "openai/gpt-5.4-nano", fournisseur: "openai", nom: "GPT-5.4 nano", tarif: { entree: 0.2, ecritureCache: 0.2, lectureCache: 0.02, sortie: 1.25 } },
   { id: "google/gemini-3.5-flash-lite", fournisseur: "google", nom: "Gemini 3.5 Flash-Lite", tarif: { entree: 0.3, ecritureCache: 0.3, lectureCache: 0.03, sortie: 2.5 } },
   { id: "google/gemini-2.5-flash", fournisseur: "google", nom: "Gemini 2.5 Flash", tarif: { entree: 0.3, ecritureCache: 0.3, lectureCache: 0.03, sortie: 2.5 } },
 ];
@@ -51,7 +52,7 @@ export const MODELES: ModelePasserelle[] = [
  */
 export const CANDIDATS: Record<Fournisseur, string[]> = {
   anthropic: ["anthropic/claude-haiku-5.5"],
-  openai: ["openai/gpt-6-luna", "openai/gpt-5.4-mini"],
+  openai: ["openai/gpt-6-luna", "openai/gpt-5.4-mini", "openai/gpt-5.4-nano"],
   google: ["google/gemini-3.5-flash-lite", "google/gemini-2.5-flash"],
 };
 

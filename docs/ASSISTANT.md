@@ -40,12 +40,13 @@ d'après les retours publiés en octobre 2026). Pour chaque IA, le Vizir essaie 
 liste de modèles, du meilleur rapport qualité-prix au plus sûr d'être ouvert
 (`CANDIDATS`, dans `src/lib/assistant/modeles.ts`) :
 
-- ChatGPT : GPT-6 Luna, puis GPT-5.4 mini ;
+- ChatGPT : GPT-6 Luna, puis GPT-5.4 mini, puis GPT-5.4 nano ;
 - Gemini : Gemini 3.5 Flash-Lite, puis Gemini 2.5 Flash ;
 - Claude : Claude Haiku 5.5.
 
 Un modèle refusé (403 « Free tier users do not have access to this model », ou 404) est sauté et
-mis de côté six heures ; le modèle qui répond est retenu, et la réponse affiche son nom. Si tous les
+mis de côté six heures. La passerelle répond parfois « moyen de paiement requis » pour un modèle hors
+de l'offre gratuite : le suivant est alors essayé aussi, sans écarter le premier ; le modèle qui répond est retenu, et la réponse affiche son nom. Si tous les
 modèles d'une IA sont refusés, elle apparaît « (indisponible) » dans le choix, avec un bouton pour
 passer à une autre. Après un achat de crédit, Claude s'ouvrira de lui-même (le site réessaie).
 

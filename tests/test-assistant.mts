@@ -115,9 +115,25 @@ refusesParEssai.clear();
 appels.length = 0;
 const d4 = await demarrer("anthropic", demande);
 ok("si tout était refusé, on réessaie quand même (du crédit a pu être ajouté)", d4.ok && appels.length === 1 && !iasIndisponibles().includes("anthropic"));
+const verification = { error: { type: "customer_verification_required", message: "AI Gateway requires a valid credit card on file to service requests." } };
+const verificationPour = new Set(["google/gemini-3.5-flash-lite"]);
+globalThis.fetch = (async (url: string, init: RequestInit) => {
+  const corps = JSON.parse(String(init.body));
+  appels.push({ url, auth: String((init.headers as Record<string, string>).authorization), corps });
+  if (verificationPour.has(corps.model)) return new Response(JSON.stringify(verification), { status: 403, headers: { "content-type": "application/json" } });
+  return new Response(flux(sse.slice(3)), { status: 200, headers: { "content-type": "text/event-stream" } });
+}) as typeof fetch;
+appels.length = 0;
+const d6 = await demarrer("google", demande);
+ok("« moyen de paiement requis » sur un modèle : le suivant est essayé", d6.ok && d6.modele === "google/gemini-2.5-flash" && appels.map((a) => a.corps.model).join(",") === "google/gemini-3.5-flash-lite,google/gemini-2.5-flash");
+verificationPour.add("google/gemini-2.5-flash");
+oublierModeles();
+const d7 = await demarrer("google", demande);
+ok("…et s'il vaut pour tous : « pas encore activé », sans marquer l'IA indisponible", !d7.ok && d7.erreur.code === "activation" && !iasIndisponibles().includes("google"));
 delete process.env.AI_GATEWAY_API_KEY;
+appels.length = 0;
 const d5 = await demarrer("google", demande);
-ok("sans jeton (hors de Vercel) : erreur de configuration, aucun appel", !d5.ok && d5.erreur.code === "configuration" && appels.length === 1);
+ok("sans jeton (hors de Vercel) : erreur de configuration, aucun appel", !d5.ok && d5.erreur.code === "configuration" && appels.length === 0);
 globalThis.fetch = vrai;
 console.warn = avertir;
 
