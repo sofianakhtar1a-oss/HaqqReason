@@ -8,7 +8,7 @@ aux articles sont fermés de la même façon, car ils montrent le contenu de ces
 ## Choisir le mot de passe
 
 Espace créateur → **Sécurité** → section « Modules réservés ». Tant qu'aucun mot de passe
-n'est choisi, les deux modules sont fermés à tous les visiteurs (toi seul y entres).
+n'est choisi, les deux modules sont fermés à tout le monde.
 
 - **Changer le mot de passe** : les visiteurs déjà entrés devront donner le nouveau.
 - **Retirer l'accès à tout le monde** : même mot de passe, mais chacun doit le redonner.
@@ -18,7 +18,9 @@ n'est choisi, les deux modules sont fermés à tous les visiteurs (toi seul y en
 
 Une page « Module réservé » demande le mot de passe et indique où le demander :
 Instagram `@haqqreason` et TikTok `@Haqq_Reason`. Le mot de passe est retenu 30 jours
-sur l'appareil. Cinq essais ratés en quinze minutes bloquent l'appareil un moment.
+sur l'appareil, tant qu'on reste connecté au même compte Google : se déconnecter
+(ou changer de compte) referme les modules. Le créateur aussi doit donner ce mot de passe
+pour lire les modules. Cinq essais ratés en quinze minutes bloquent l'appareil un moment.
 
 Aucune migration de la base n'est nécessaire (le mot de passe est rangé, haché avec Argon2,
 dans la table `reglages`, clé `acces_modules`).

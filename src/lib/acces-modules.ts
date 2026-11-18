@@ -1,8 +1,8 @@
 import "server-only";
 import { cookies } from "next/headers";
 import { hacherSecret, verifierSecret } from "./crypto";
-import { sessionCreateurVisible } from "./session";
 import { dbAdmin } from "./supabase";
+import { NOM_COOKIE_COMPTE, verifierCompte } from "./compte/jeton";
 import {
   CLE_REGLAGE,
   lireReglageAcces,
@@ -54,16 +54,20 @@ export async function controlerMotDePasseModules(motDePasse: string): Promise<nu
   return (await verifierSecret(motDePasse, actuel.empreinte)) ? actuel.version : null;
 }
 
+/** Compte Google du visiteur (vide s'il n'est pas connecté) : l'accès aux modules y est lié. */
+async function compteActuel(): Promise<string> {
+  return (await verifierCompte((await cookies()).get(NOM_COOKIE_COMPTE)?.value))?.id ?? "";
+}
+
 export async function ouvrirAccesModules(version: number): Promise<void> {
-  (await cookies()).set(NOM_COOKIE_MODULES, await signerAccesModules(version), optionsCookieModules());
+  (await cookies()).set(NOM_COOKIE_MODULES, await signerAccesModules(version, await compteActuel()), optionsCookieModules());
 }
 
 export async function fermerAccesModules(): Promise<void> {
   (await cookies()).set(NOM_COOKIE_MODULES, "", optionsCookieModules(0));
 }
 
-/** Le visiteur peut-il lire les modules réservés ? Le créateur toujours, sauf dans la vue utilisateur. */
+/** Le visiteur (créateur compris) a-t-il donné le mot de passe des modules réservés ? */
 export async function aAccesModules(): Promise<boolean> {
-  if (await sessionCreateurVisible()) return true;
-  return verifierAccesModules((await cookies()).get(NOM_COOKIE_MODULES)?.value, await versionAccesModules());
+  return verifierAccesModules((await cookies()).get(NOM_COOKIE_MODULES)?.value, await versionAccesModules(), await compteActuel());
 }

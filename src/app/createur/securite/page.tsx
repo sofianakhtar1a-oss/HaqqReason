@@ -111,8 +111,8 @@ export default async function PageSecurite({ searchParams }: PageProps<"/createu
           </div>
           <p className="mt-2 max-w-[70ch] text-encre-douce">
             « Les preuves de la véracité de l&apos;islam » et « L&apos;Islam authentique » (avec le graphe, la recherche, le débat express, les
-            nouveautés et les fichiers joints) ne s&apos;ouvrent qu&apos;avec ce mot de passe, différent du tien. Tu le donnes à qui te le demande
-            sur Instagram ou TikTok. {modulesOuverts ? "" : "Tant qu'il n'est pas choisi, personne d'autre que toi n'y entre."}
+            nouveautés et les fichiers joints) ne s&apos;ouvrent qu&apos;avec ce mot de passe, différent du tien, pour tout le monde (toi compris, et il faut le redonner après une déconnexion du compte Google). Tu le donnes à qui te le demande
+            sur Instagram ou TikTok. {modulesOuverts ? "" : "Tant qu'il n'est pas choisi, personne n'y entre, toi compris."}
           </p>
           {avisModules && (
             <p role="status" className="message message-succes mt-4 max-w-2xl">

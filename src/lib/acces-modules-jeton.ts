@@ -11,7 +11,9 @@
  *   - le créateur choisit le mot de passe dans « Sécurité » ; la base garde son empreinte
  *     Argon2 et un numéro de version (table « reglages », clé « acces_modules ») ;
  *   - un visiteur qui donne le bon mot de passe reçoit un cookie signé (httpOnly) qui porte
- *     ce numéro de version ;
+ *     ce numéro de version et le compte Google avec lequel il l'a donné (ou aucun) ;
+ *   - se déconnecter de son compte Google, ou en changer, referme les modules : il faut
+ *     redonner le mot de passe ;
  *   - changer le mot de passe, ou « retirer l'accès à tout le monde », augmente la version :
  *     tous les cookies déjà donnés cessent aussitôt d'ouvrir les modules.
  */
@@ -94,10 +96,10 @@ function cle(): Uint8Array | null {
   return new TextEncoder().encode(`${secret}|acces-modules`);
 }
 
-export async function signerAccesModules(version: number): Promise<string> {
+export async function signerAccesModules(version: number, compteId = ""): Promise<string> {
   const secret = cle();
   if (!secret) throw new Error("SESSION_SECRET manquant ou trop court.");
-  return new SignJWT({ v: version })
+  return new SignJWT({ v: version, c: compteId })
     .setProtectedHeader({ alg: "HS256" })
     .setSubject("modules")
     .setIssuedAt()
@@ -105,13 +107,16 @@ export async function signerAccesModules(version: number): Promise<string> {
     .sign(secret);
 }
 
-/** Vrai si le jeton est authentique, non expiré, et donné pour le mot de passe actuel. */
-export async function verifierAccesModules(jeton: string | undefined, versionActuelle: number | null): Promise<boolean> {
+/**
+ * Vrai si le jeton est authentique, non expiré, donné pour le mot de passe actuel,
+ * et avec le même compte Google que celui de maintenant (ou sans compte, des deux côtés).
+ */
+export async function verifierAccesModules(jeton: string | undefined, versionActuelle: number | null, compteId = ""): Promise<boolean> {
   const secret = cle();
   if (!secret || !jeton || versionActuelle === null) return false;
   try {
     const { payload } = await jwtVerify(jeton, secret, { algorithms: ["HS256"], subject: "modules" });
-    return payload.v === versionActuelle;
+    return payload.v === versionActuelle && (typeof payload.c === "string" ? payload.c : "") === compteId;
   } catch {
     return false;
   }

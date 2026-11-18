@@ -27,6 +27,11 @@ ok("jeton refusé après changement du mot de passe", !(await verifierAccesModul
 ok("jeton refusé si les modules sont fermés", !(await verifierAccesModules(jeton, null)));
 ok("jeton modifié refusé", !(await verifierAccesModules(jeton.slice(0, -2) + "xx", 3)));
 ok("sans jeton, pas d'accès", !(await verifierAccesModules(undefined, 3)));
+const lie = await signerAccesModules(3, "compte-a");
+ok("jeton lié au compte Google : valable avec ce compte", await verifierAccesModules(lie, 3, "compte-a"));
+ok("jeton lié au compte Google : refusé une fois déconnecté", !(await verifierAccesModules(lie, 3, "")));
+ok("jeton lié au compte Google : refusé avec un autre compte", !(await verifierAccesModules(lie, 3, "compte-b")));
+ok("jeton donné sans compte : refusé après connexion", !(await verifierAccesModules(jeton, 3, "compte-a")));
 ok("lecture du réglage stocké", lireReglageAcces({ empreinte: "h", version: 2 })?.version === 2 && lireReglageAcces({ version: "2" }) === null && lireReglageAcces(null) === null);
 
 console.log(e ? `\n${e} échec(s)` : "\nTout est bon.");

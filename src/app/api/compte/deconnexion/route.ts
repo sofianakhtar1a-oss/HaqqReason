@@ -3,6 +3,7 @@ import { origineDe } from "@/lib/compte/google";
 import { NOM_COOKIE_COMPTE, optionsCookieCompte } from "@/lib/compte/jeton";
 import { compteVerifie, memeOrigine } from "@/lib/compte/session";
 import { dbAdmin } from "@/lib/supabase";
+import { NOM_COOKIE_MODULES, optionsCookieModules } from "@/lib/acces-modules-jeton";
 
 /*
  * Fin de session. Envoyé par un vrai formulaire : le navigateur recharge alors toute la page,
@@ -19,5 +20,7 @@ export async function POST(requete: NextRequest) {
     if (compte && compte !== "indisponible") await dbAdmin().from("utilisateurs").update({ session_version: compte.sv + 1 }).eq("id", compte.id);
   }
   reponse.cookies.set(NOM_COOKIE_COMPTE, "", optionsCookieCompte(0));
+  // Se déconnecter referme aussi les modules réservés : il faudra redonner leur mot de passe.
+  reponse.cookies.set(NOM_COOKIE_MODULES, "", optionsCookieModules(0));
   return reponse;
 }

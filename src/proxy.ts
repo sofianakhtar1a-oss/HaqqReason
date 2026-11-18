@@ -97,11 +97,13 @@ export async function proxy(request: NextRequest) {
     return redirection;
   }
 
-  // Modules réservés : il faut leur mot de passe (différent de celui du créateur).
-  // Le créateur chez lui passe ; dans la vue utilisateur, il est traité comme un visiteur.
-  if (cheminReserve(chemin) && !createurChezLui) {
+  // Modules réservés : il faut leur mot de passe (différent de celui du créateur), pour tout
+  // le monde, créateur compris. Seuls les fichiers et les API restent ouverts au créateur
+  // connecté : ses outils d'édition s'en servent depuis son espace.
+  const outilCreateur = createurChezLui && (chemin.startsWith("/api/") || chemin.startsWith("/fichiers/"));
+  if (cheminReserve(chemin) && !outilCreateur) {
     const jeton = request.cookies.get(NOM_COOKIE_MODULES)?.value;
-    if (!(await verifierAccesModules(jeton, await versionAccesModules()))) {
+    if (!(await verifierAccesModules(jeton, await versionAccesModules(), compte?.id ?? ""))) {
       let refus: NextResponse;
       if (chemin === "/api/recherche" && request.method === "GET") {
         // La palette Ctrl+K reste utilisable : aucun résultat, et une invitation à entrer.
