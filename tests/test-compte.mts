@@ -121,6 +121,8 @@ const propre = nettoyerEcritures([
 ]);
 ok("seules les écritures bien formées sont gardées", propre.valides.length === 3 && propre.valides.map((x) => x.c).join() === "lecon,d1,futur", propre.valides.map((x) => x.c));
 ok("une suppression voyage comme une valeur nulle", propre.valides[1].v === null);
+const avecNul = nettoyerEcritures([{ m: "langues-documents", c: "pdf", v: { texte: "Bon\u0000jour", pages: ["a\u0000", { "x\u0000y": "\u0000" }], n: 3 }, q: 5 }]);
+ok("le caractère nul (refusé par la base) est retiré de tous les textes", JSON.stringify(avecNul.valides[0]?.v) === JSON.stringify({ texte: "Bonjour", pages: ["a", { xy: "" }], n: 3 }) && !JSON.stringify(avecNul.valides).includes("\\u0000"), avecNul.valides);
 ok("une horloge très en avance est ramenée au présent", propre.valides[2].q <= Date.now() + 6 * 60_000);
 ok("un objet trop lourd est signalé, pas envoyé à la base", propre.tropLourdes.length === 1 && propre.tropLourdes[0].c === "enorme");
 ok("autre chose qu'une liste ne donne rien", nettoyerEcritures({ m: "regles" }).valides.length === 0);

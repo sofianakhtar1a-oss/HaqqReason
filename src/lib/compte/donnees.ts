@@ -9,6 +9,20 @@ export const ESPACE_COMPTES = "comptes";
 export type Ecriture = { m: NomMagasin; c: string; v: unknown; q: number };
 export type Ligne = { m: string; c: string; v: unknown; q: number; j: number };
 
+/**
+ * Retire le caractère nul (U+0000) de tous les textes et de tous les noms de champ d'une valeur.
+ * La base (jsonb) le refuse, et un seul suffirait à faire échouer tout l'envoi. On le trouve
+ * surtout dans le texte extrait de certains PDF ; il ne s'affiche nulle part : rien de visible n'est perdu.
+ */
+export function sansCaractereNul(valeur: unknown, profondeur = 0): unknown {
+  if (typeof valeur === "string") return valeur.includes("\u0000") ? valeur.replaceAll("\u0000", "") : valeur;
+  if (valeur === null || typeof valeur !== "object" || profondeur > 200) return valeur;
+  if (Array.isArray(valeur)) return valeur.map((x) => sansCaractereNul(x, profondeur + 1));
+  const sortie: Record<string, unknown> = {};
+  for (const [cle, x] of Object.entries(valeur)) sortie[cle.replaceAll("\u0000", "")] = sansCaractereNul(x, profondeur + 1);
+  return sortie;
+}
+
 /** Ne garde que les écritures bien formées ; les autres sont ignorées sans bruit. */
 export function nettoyerEcritures(brut: unknown): { valides: Ecriture[]; tropLourdes: { m: string; c: string }[] } {
   const valides: Ecriture[] = [];
@@ -23,7 +37,7 @@ export function nettoyerEcritures(brut: unknown): { valides: Ecriture[]; tropLou
     if (typeof q !== "number" || !Number.isFinite(q) || q < 0) continue;
     // Une horloge d'appareil très en avance ne doit pas verrouiller un objet pour toujours.
     const quand = Math.min(Math.floor(q), maintenant + 5 * 60_000);
-    const valeur = v === undefined ? null : v;
+    const valeur = v === undefined ? null : sansCaractereNul(v);
     if (valeur !== null && JSON.stringify(valeur).length > OBJET_MAX) {
       tropLourdes.push({ m, c });
       continue;
