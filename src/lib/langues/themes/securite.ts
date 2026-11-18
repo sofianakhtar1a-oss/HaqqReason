@@ -40,7 +40,7 @@ siren | sirène | n | B2 | /ˈsaɪrən/ | A siren wailed in the distance. | Une 
 lookout | guetteur, vigie | n | C1 | /ˈlʊkaʊt/ | A lookout watched the road from the tower. | Un guetteur surveillait la route depuis la tour.
 cordon | cordon | n | C1 | /ˈkɔːrdən/ | A cordon blocked the entrance to the square. | Un cordon bloquait l'entrée de la place.
 defence | défense | n | B2 | /dɪˈfens/ | The defence of the city lasted a month. | La défense de la ville a duré un mois.
-deterrent | dissuasion | n | C1 | /dɪˈterənt/ | Cameras are a strong deterrent to thieves. | Les caméras sont un puissant moyen de dissuasion pour les voleurs.
+deterrent | moyen de dissuasion, force de dissuasion | n | C1 | /dɪˈterənt/ | Cameras are a strong deterrent to thieves. | Les caméras sont un puissant moyen de dissuasion pour les voleurs.
 shield | bouclier | n | B1 | /ʃiːld/ | The helmet acts as a shield against impact. | Le casque sert de bouclier contre les chocs.
 insurance | assurance | n | B1 | /ɪnˈʃʊərəns/ | Check that your home insurance covers theft. | Vérifie que ton assurance habitation couvre le vol.
 panic | panique | n | B1 | /ˈpænɪk/ | Don't panic, the situation is under control. | Ne panique pas, la situation est maîtrisée.

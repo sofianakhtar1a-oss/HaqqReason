@@ -21,7 +21,7 @@ colour | couleur | n | A1 | /ˈkʌlər/ | Which colour do you prefer? | Quelle c
 fitting room | cabine d'essayage | n | B1 | /ˈfɪtɪŋ ruːm/ | The fitting room is at the back. | La cabine d'essayage est au fond.
 price tag | étiquette de prix | n | B1 | /praɪs tæɡ/ | The price tag fell off the jacket. | L'étiquette de prix est tombée de la veste.
 to try on | essayer | v | A2 | /traɪ ɒn/ | Can I try on this dress? | Puis-je essayer cette robe ?
-to alter | retoucher | v | C1 | /ɔːlˈtər/ | The tailor can alter the trousers for you. | Le tailleur peut retoucher le pantalon pour toi.
+to alter | modifier ; retoucher (vêtement) | v | C1 | /ɔːlˈtər/ | The tailor can alter the trousers for you. | Le tailleur peut retoucher le pantalon pour toi.
 to browse | parcourir, regarder sans acheter | v | B1 | /braʊz/ | I like to browse the shelves on Saturdays. | J'aime parcourir les rayons le samedi.
 to haggle | marchander | v | C1 | /ˈhæɡl/ | Tourists often haggle at the market stalls. | Les touristes marchandent souvent aux étals du marché.
 online | en ligne | adv | A2 | /ˌɒnˈlaɪn/ | I usually order clothes online. | Je commande généralement mes vêtements en ligne.
@@ -50,7 +50,7 @@ second-hand | d'occasion | adj | A2 | /ˌsekənd ˈhænd/ | I bought a second-ha
 reduced | soldé, réduit | adj | B1 | /rɪˈdjuːst/ | These trousers are reduced by half. | Ce pantalon est réduit de moitié.
 luxury | luxe | n | B1 | /ˈlʌkʃəri/ | This bag is a luxury item. | Ce sac est un article de luxe.
 customer service | service client | n | B1 | /ˈkʌstəmər ˈsɜːrvɪs/ | Customer service answered within an hour. | Le service client a répondu en moins d'une heure.
-brochure | prospectus | n | B2 | /ˈbroʊʃər/ | Take a brochure about the new range. | Prenez une brochure sur la nouvelle gamme.
+brochure | brochure, dépliant | n | B2 | /ˈbroʊʃər/ | Take a brochure about the new range. | Prenez une brochure sur la nouvelle gamme.
 range | gamme | n | B1 | /reɪndʒ/ | The shop has a wide range of colours. | Le magasin propose une large gamme de couleurs.
 model | modèle | n | A2 | /ˈmɒdl/ | This model comes in three colours. | Ce modèle existe en trois couleurs.
 material | matière, tissu | n | B1 | /məˈtɪəriəl/ | This jumper is made of soft material. | Ce pull est fait d'une matière douce.
@@ -159,11 +159,11 @@ to unbox | déballer | v | B1 | /ʌnˈbɒks/ | He filmed himself unboxing the ph
 gift-wrapped | emballé (en cadeau) | adj | B2 | /ˈɡɪft ræpt/ | Would you like it gift-wrapped? | Voulez-vous un paquet cadeau ?
 stall | étal, stand | n | B1 | /stɔːl/ | My parents run a clothes stall at the market. | Mes parents tiennent un étal de vêtements au marché.
 stallholder | marchand (sur un marché) | n | B2 | /ˈstɔːlhəʊldər/ | The stallholder gave us a discount. | Le marchand nous a fait une remise.
-market trader | commerçant ambulant | n | B2 | /ˈmɑːkɪt ˌtreɪdər/ | Market traders get up at four. | Les commerçants des marchés se lèvent à quatre heures.
+market trader | marchand forain, commerçant sur les marchés | n | B2 | /ˈmɑːkɪt ˌtreɪdər/ | Market traders get up at four. | Les commerçants des marchés se lèvent à quatre heures.
 vendor | vendeur, marchand | n | B2 | /ˈvendər/ | A street vendor sold us corn. | Un vendeur ambulant nous a vendu du maïs.
 retailer | détaillant | n | C1 | /ˈriːteɪlər/ | The retailer cut its prices. | Le détaillant a baissé ses prix.
 wholesaler | grossiste | n | C1 | /ˈhəʊlseɪlər/ | We buy our stock from a wholesaler. | Nous achetons notre stock chez un grossiste.
-chain store | magasin de chaîne | n | B2 | /ˈtʃeɪn stɔːr/ | Chain stores replaced small shops. | Les chaînes ont remplacé les petits commerces.
+chain store | magasin d'une chaîne, enseigne | n | B2 | /ˈtʃeɪn stɔːr/ | Chain stores replaced small shops. | Les chaînes ont remplacé les petits commerces.
 brand name | nom de marque | n | B1 | /ˈbrænd neɪm/ | Brand names are more expensive. | Les produits de marque sont plus chers.
 logo | logo | n | A2 | /ˈləʊɡəʊ/ | The logo is on the front. | Le logo est sur le devant.
 own brand | marque de distributeur | n | B2 | /ˌəʊn ˈbrænd/ | Own-brand products are cheaper. | Les marques de distributeur sont moins chères.
@@ -188,7 +188,7 @@ hotline | ligne d'assistance | n | B1 | /ˈhɒtlaɪn/ | The hotline is open 24 h
 online review | avis en ligne | n | B1 | /ˌɒnlaɪn rɪˈvjuː/ | Read the online reviews before buying. | Lis les avis en ligne avant d'acheter.
 to rate | noter, évaluer | v | B1 | /reɪt/ | Rate your purchase from one to five. | Note ton achat de un à cinq.
 rating | note, évaluation | n | B1 | /ˈreɪtɪŋ/ | The hotel has a high rating. | L'hôtel a une bonne note.
-star rating | classement par étoiles | n | B1 | /ˈstɑː ˌreɪtɪŋ/ | Check the star rating of the seller. | Regarde la note du vendeur.
+star rating | note (en étoiles) | n | B1 | /ˈstɑː ˌreɪtɪŋ/ | Check the star rating of the seller. | Regarde la note du vendeur.
 recommendation | recommandation | n | B2 | /ˌrekəmenˈdeɪʃn/ | I bought it on your recommendation. | Je l'ai acheté sur ta recommandation.
 buyer | acheteur | n | B1 | /ˈbaɪər/ | We found a buyer for the car. | Nous avons trouvé un acheteur pour la voiture.
 seller | vendeur | n | B1 | /ˈselər/ | Contact the seller directly. | Contacte directement le vendeur.

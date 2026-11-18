@@ -34,7 +34,7 @@ release | libérer | v | B1 | /rɪˈliːs/ | He was released after two years. | 
 parole | liberté conditionnelle | n | C1 | /pəˈrəʊl/ | She was released on parole. | Elle a été libérée en liberté conditionnelle.
 lawsuit | procès (civil) | n | C1 | /ˈlɔːsuːt/ | The company faces a lawsuit. | L'entreprise fait face à un procès.
 sue | poursuivre en justice | v | B2 | /suː/ | She sued her employer. | Elle a poursuivi son employeur en justice.
-claim | réclamation ; prétendre | n | B2 | /kleɪm/ | Her insurance claim was rejected. | Sa demande d'indemnisation a été rejetée.
+claim | réclamation, demande d'indemnisation ; affirmation | n | B2 | /kleɪm/ | Her insurance claim was rejected. | Sa demande d'indemnisation a été rejetée.
 compensation | indemnisation | n | B2 | /ˌkɒmpenˈseɪʃn/ | They received compensation for the damage. | Ils ont reçu une indemnisation pour les dégâts.
 damages | dommages et intérêts | n | C1 | /ˈdæmɪdʒɪz/ | The court awarded her damages. | Le tribunal lui a accordé des dommages et intérêts.
 ruling | décision (de justice) | n | C1 | /ˈruːlɪŋ/ | The judge's ruling surprised everyone. | La décision du juge a surpris tout le monde.
@@ -45,7 +45,7 @@ unlawful | illégal, illicite | adj | C1 | /ʌnˈlɔːfl/ | The arrest was unlaw
 offence | délit, infraction | n | B2 | /əˈfens/ | Driving without insurance is an offence. | Conduire sans assurance est une infraction.
 fraud | fraude | n | B2 | /frɔːd/ | He was arrested for tax fraud. | Il a été arrêté pour fraude fiscale.
 theft | vol | n | B2 | /θeft/ | The theft happened at night. | Le vol a eu lieu la nuit.
-robbery | vol à main armée, braquage | n | B2 | /ˈrɒbəri/ | There was a robbery at the bank. | Il y a eu un braquage à la banque.
+robbery | vol (avec violence), braquage | n | B2 | /ˈrɒbəri/ | There was a robbery at the bank. | Il y a eu un braquage à la banque.
 murder | meurtre | n | B1 | /ˈmɜːdər/ | The murder shocked the town. | Le meurtre a choqué la ville.
 kidnapping | enlèvement | n | B2 | /ˈkɪdnæpɪŋ/ | The kidnapping made the headlines. | L'enlèvement a fait la une.
 smuggling | contrebande | n | C1 | /ˈsmʌɡlɪŋ/ | Customs arrested them for smuggling. | Les douanes les ont arrêtés pour contrebande.
@@ -109,7 +109,7 @@ violate | violer, enfreindre | v | C1 | /ˈvaɪəleɪt/ | The company violated t
 enforce | faire appliquer | v | C1 | /ɪnˈfɔːs/ | The police enforce the law. | La police fait appliquer la loi.
 abide by | respecter (une règle) | v | C1 | /əˈbaɪd baɪ/ | Players must abide by the rules. | Les joueurs doivent respecter les règles.
 overturn | annuler (une décision) | v | C2 | /ˌəʊvəˈtɜːn/ | The court overturned the decision. | La cour a annulé la décision.
-dismiss a case | classer une affaire | expr | C1 | /dɪsˈmɪs ə keɪs/ | The judge decided to dismiss a case for lack of evidence. | Le juge a décidé de classer une affaire faute de preuves.
+dismiss a case | rejeter une affaire, prononcer un non-lieu | expr | C1 | /dɪsˈmɪs ə keɪs/ | The judge decided to dismiss a case for lack of evidence. | Le juge a décidé de classer une affaire faute de preuves.
 settle out of court | régler à l'amiable | expr | C1 | /ˌsetl aʊt əv ˈkɔːt/ | They agreed to settle out of court. | Ils ont accepté de régler l'affaire à l'amiable.
 the accused | l'accusé | n | B2 | /ði əˈkjuːzd/ | The accused stood up when the judge entered. | L'accusé s'est levé quand le juge est entré.
 legal aid | aide juridictionnelle | n | C1 | /ˌliːɡl ˈeɪd/ | He was granted legal aid. | Il a obtenu l'aide juridictionnelle.
@@ -268,7 +268,7 @@ penal | pénal | adj | C1 | /ˈpiːnl/ | The penal code was reformed. | Le code 
 confidentiality | confidentialité | n | C1 | /ˌkɒnfɪˌdenʃiˈæləti/ | Doctors respect patient confidentiality. | Les médecins respectent le secret médical.
 collusion | collusion, connivence | n | C2 | /kəˈluːʒn/ | There was collusion between the two firms. | Il y avait une collusion entre les deux entreprises.
 correctional | pénitentiaire | adj | C2 | /kəˈrekʃənl/ | He works in a correctional facility. | Il travaille dans un établissement pénitentiaire.
-evasion | évasion, fraude | n | C2 | /ɪˈveɪʒn/ | He was accused of tax evasion. | Il a été accusé de fraude fiscale.
+evasion | fraude (tax evasion : fraude fiscale) ; esquive | n | C2 | /ɪˈveɪʒn/ | He was accused of tax evasion. | Il a été accusé de fraude fiscale.
 appropriation | appropriation ; affectation | n | C2 | /əˌprəʊpriˈeɪʃn/ | It was an appropriation of public funds. | C'était un détournement de fonds publics.
 registrar | officier d'état civil ; greffier | n | C2 | /ˌredʒɪˈstrɑː/ | The registrar recorded the birth. | L'officier d'état civil a enregistré la naissance.
 incarceration | incarcération | n | C2 | /ɪnˌkɑːsəˈreɪʃn/ | He faced ten years of incarceration. | Il risquait dix ans d'incarcération.

@@ -53,7 +53,7 @@ to babysit | garder des enfants | v | B1 | /ˈbeɪbisɪt/ | I babysit my little 
 primary school | école primaire | n | A2 | /ˈpraɪməri skuːl/ | He started primary school last September. | Il a commencé l'école primaire en septembre dernier.
 maturity | maturité | n | C1 | /məˈtjʊərəti/ | Maturity comes with experience. | La maturité vient avec l'expérience.
 rebellious | rebelle | adj | B2 | /rɪˈbeljəs/ | He was a rebellious teenager. | C'était un adolescent rebelle.
-peer | camarade | n | B2 | /pɪər/ | Peer pressure can be strong at school. | La pression des camarades peut être forte à l'école.
+peer | pair, camarade (du même âge) | n | B2 | /pɪər/ | Peer pressure can be strong at school. | La pression des camarades peut être forte à l'école.
 classmate | camarade de classe | n | A2 | /ˈklɑːsmeɪt/ | My classmate helped me with maths. | Mon camarade de classe m'a aidé en maths.
 naughty | vilain, espiègle | adj | A2 | /ˈnɔːti/ | The naughty dog stole my sandwich. | Le chien vilain m'a volé mon sandwich.
 to misbehave | se conduire mal | v | B2 | /ˌmɪsbɪˈheɪv/ | The children misbehaved during the trip. | Les enfants se sont mal conduits pendant le voyage.
@@ -89,7 +89,7 @@ teen | ado | n | B1 | /tiːn/ | The film is for teens. | Le film est pour les ad
 student life | vie étudiante | n | B1 | /ˌstjuːdnt ˈlaɪf/ | Student life is full of new experiences. | La vie étudiante est pleine de nouvelles expériences.
 first job | premier emploi | n | B1 | /ˌfɜːst ˈdʒɒb/ | She got her first job at sixteen. | Elle a eu son premier emploi à seize ans.
 summer job | job d'été | n | B1 | /ˈsʌmə dʒɒb/ | I have a summer job at the pool. | J'ai un job d'été à la piscine.
-part-time job | petit boulot | n | B1 | /ˌpɑːt taɪm ˈdʒɒb/ | Many students have a part-time job. | Beaucoup d'étudiants ont un petit boulot.
+part-time job | emploi à temps partiel, petit boulot | n | B1 | /ˌpɑːt taɪm ˈdʒɒb/ | Many students have a part-time job. | Beaucoup d'étudiants ont un petit boulot.
 sleepover | soirée pyjama | n | B1 | /ˈsliːpəʊvər/ | My daughter is going to a sleepover. | Ma fille va à une soirée pyjama.
 hide and seek | cache-cache | n | A2 | /ˌhaɪd ən ˈsiːk/ | The children played hide and seek. | Les enfants ont joué à cache-cache.
 skipping rope | corde à sauter | n | B1 | /ˈskɪpɪŋ rəʊp/ | She jumps with a skipping rope. | Elle saute à la corde.
@@ -188,7 +188,7 @@ heartthrob | idole, beau gosse | n | C1 | /ˈhɑːtθrɒb/ | The actor became a 
 teen idol | idole des jeunes | n | B2 | /ˌtiːn ˈaɪdl/ | He was a teen idol in the nineties. | C'était l'idole des jeunes dans les années 90.
 boy band | boys band | n | B1 | /ˈbɔɪ bænd/ | She loves that boy band. | Elle adore ce boys band.
 teen movie | film pour ados | n | B1 | /ˈtiːn ˌmuːvi/ | We watched a teen movie. | Nous avons regardé un film pour ados.
-coming-of-age film | film d'apprentissage | n | C1 | /ˌkʌmɪŋ əv ˈeɪdʒ fɪlm/ | It's a moving coming-of-age film. | C'est un film émouvant sur le passage à l'âge adulte.
+coming-of-age film | film initiatique, récit d'apprentissage | n | C1 | /ˌkʌmɪŋ əv ˈeɪdʒ fɪlm/ | It's a moving coming-of-age film. | C'est un film émouvant sur le passage à l'âge adulte.
 legal age | âge légal | n | B2 | /ˌliːɡl ˈeɪdʒ/ | What is the legal age to drive? | Quel est l'âge légal pour conduire ?
 juvenile delinquent | jeune délinquant | n | C1 | /ˌdʒuːvənaɪl dɪˈlɪŋkwənt/ | He was a juvenile delinquent before he changed. | C'était un jeune délinquant avant de changer.
 delinquency | délinquance | n | C1 | /dɪˈlɪŋkwənsi/ | Youth delinquency has fallen. | La délinquance juvénile a baissé.

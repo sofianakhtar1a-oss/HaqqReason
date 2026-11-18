@@ -8,7 +8,7 @@ export const VACANCES = theme(
   "Tent",
   `
 campsite | camping | n | A2 | /ˈkæmpsaɪt/ | The campsite is right by the sea. | Le camping est juste au bord de la mer.
-cottage | maison de vacances | n | B1 | /ˈkɒtɪdʒ/ | We rented a cottage in Brittany. | Nous avons loué une maison de vacances en Bretagne.
+cottage | petite maison de campagne, cottage | n | B1 | /ˈkɒtɪdʒ/ | We rented a cottage in Brittany. | Nous avons loué une maison de vacances en Bretagne.
 resort | station balnéaire, complexe hôtelier | n | B1 | /rɪˈzɔːrt/ | The resort has three swimming pools. | La station balnéaire possède trois piscines.
 all-inclusive | tout compris | adj | B1 | /ˌɔːl ɪnˈkluːsɪv/ | We chose an all-inclusive package. | Nous avons choisi une formule tout compris.
 seaside | bord de mer | n | A2 | /ˈsiːsaɪd/ | We spent the whole day at the seaside. | Nous avons passé toute la journée au bord de la mer.
@@ -75,7 +75,7 @@ to unpack | défaire ses valises | v | B1 | /ʌnˈpæk/ | We unpacked as soon as
 to check out | quitter l'hôtel | expr | B1 | /tʃek aʊt/ | We check out at ten. | Nous quittons l'hôtel à dix heures.
 booking | réservation | n | B1 | /ˈbʊkɪŋ/ | The booking was confirmed by email. | La réservation a été confirmée par e-mail.
 vacancy | chambre libre | n | B2 | /ˈveɪkənsi/ | There is no vacancy until Friday. | Il n'y a plus de chambre libre avant vendredi.
-overnight | pour une nuit | adv | B1 | /ˌoʊvərˈnaɪt/ | We stayed overnight in Nice. | Nous avons passé la nuit à Nice.
+overnight | pendant la nuit ; du jour au lendemain | adv | B1 | /ˌoʊvərˈnaɪt/ | We stayed overnight in Nice. | Nous avons passé la nuit à Nice.
 starlight | lumière des étoiles | n | C1 | /ˈstɑːrlaɪt/ | We walked by starlight. | Nous avons marché à la lueur des étoiles.
 seaweed | algue | n | B1 | /ˈsiːwiːd/ | Seaweed covered the rocks. | Des algues recouvraient les rochers.
 tide pool | flaque de marée | n | C1 | /taɪd puːl/ | Children explored the tide pools. | Les enfants ont exploré les flaques de marée.

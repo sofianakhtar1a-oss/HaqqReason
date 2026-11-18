@@ -153,7 +153,7 @@ robin | rouge-gorge | n | B2 | /ˈrɒbɪn/ | A robin sang on the branch. | Un ro
 peacock | paon | n | B2 | /ˈpiːkɒk/ | The peacock spread its tail. | Le paon a fait la roue.
 flamingo | flamant rose | n | B2 | /fləˈmɪŋɡəʊ/ | Flamingos stand on one leg. | Les flamants roses se tiennent sur une patte.
 vulture | vautour | n | C1 | /ˈvʌltʃər/ | Vultures circled above the desert. | Des vautours tournoyaient au-dessus du désert.
-woodpecker | pic-vert | n | C1 | /ˈwʊdpekər/ | A woodpecker was tapping on the tree. | Un pic-vert tapait sur l'arbre.
+woodpecker | pic (oiseau), pivert | n | C1 | /ˈwʊdpekər/ | A woodpecker was tapping on the tree. | Un pic-vert tapait sur l'arbre.
 squid | calmar | n | B2 | /skwɪd/ | Squid can change colour. | Le calmar peut changer de couleur.
 lobster | homard | n | B1 | /ˈlɒbstər/ | The fisherman caught a lobster. | Le pêcheur a attrapé un homard.
 starfish | étoile de mer | n | B1 | /ˈstɑːfɪʃ/ | The child found a starfish on the sand. | L'enfant a trouvé une étoile de mer sur le sable.
@@ -318,7 +318,7 @@ quail | caille | n | C1 | /kweɪl/ | Allah sent manna and quails to the Israelit
 stampede | débandade, ruée | n | C1 | /stæmˈpiːd/ | The noise caused a stampede of cattle. | Le bruit a provoqué une ruée du bétail.
 feline | félin | adj | C1 | /ˈfiːlaɪn/ | She moves with feline grace. | Elle se déplace avec une grâce féline.
 leviathan | léviathan, monstre | n | C2 | /ləˈvaɪəθən/ | The tanker is a leviathan of the sea. | Le pétrolier est un monstre des mers.
-wren | roitelet, troglodyte | n | C2 | /ren/ | A wren sang in the hedge. | Un troglodyte chantait dans la haie.
+wren | troglodyte mignon (oiseau) | n | C2 | /ren/ | A wren sang in the hedge. | Un troglodyte chantait dans la haie.
 mite | acarien, mite | n | C1 | /maɪt/ | Dust mites live in mattresses. | Les acariens vivent dans les matelas.
 snout | museau, groin | n | C1 | /snaʊt/ | The animal has a long snout. | L'animal a un long museau.
 equine | équin, chevalin | adj | C2 | /ˈekwaɪn/ | The vet specialises in equine medicine. | La vétérinaire est spécialisée en médecine équine.

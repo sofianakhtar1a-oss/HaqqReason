@@ -137,7 +137,7 @@ ill-mannered | mal élevé | adj | C1 | /ˌɪl ˈmænəd/ | Talking loudly on th
 courteous | courtois | adj | C1 | /ˈkɜːtiəs/ | The staff were courteous and helpful. | Le personnel était courtois et serviable.
 discreet | discret | adj | B2 | /dɪˈskriːt/ | She is very discreet about her life. | Elle est très discrète sur sa vie.
 nosy | curieux, fouineur | adj | B2 | /ˈnəʊzi/ | Our neighbour is very nosy. | Notre voisin est très fouineur.
-gossipy | commère | adj | C1 | /ˈɡɒsɪpi/ | Don't be so gossipy. | Ne fais pas la commère.
+gossipy | cancanier, qui aime les commérages | adj | C1 | /ˈɡɒsɪpi/ | Don't be so gossipy. | Ne fais pas la commère.
 hard to please | difficile à satisfaire | expr | B2 | /ˌhɑːd tə ˈpliːz/ | My boss is hard to please. | Mon patron est difficile à satisfaire.
 fussy | difficile, tatillon | adj | B2 | /ˈfʌsi/ | He is fussy about food. | Il est difficile pour la nourriture.
 perfectionist | perfectionniste | n | B2 | /pəˈfekʃənɪst/ | She is a perfectionist. | C'est une perfectionniste.
@@ -609,7 +609,7 @@ oddball | original, excentrique | n | C2 | /ˈɒdbɔːl/ | He's a bit of an oddb
 brainless | écervelé | adj | C2 | /ˈbreɪnləs/ | That was a brainless thing to do. | C'était un geste écervelé.
 idiotic | idiot, stupide | adj | B2 | /ˌɪdiˈɒtɪk/ | That was an idiotic thing to say. | C'était idiot de dire ça.
 gall | culot, toupet | n | C2 | /ɡɔːl/ | He had the gall to ask for more money. | Il a eu le culot de demander plus d'argent.
-nerdy | ringard, intello | adj | B2 | /ˈnɜːdi/ | He wears nerdy glasses. | Il porte des lunettes d'intello.
+nerdy | intello, geek | adj | B2 | /ˈnɜːdi/ | He wears nerdy glasses. | Il porte des lunettes d'intello.
 brooding | sombre, ténébreux | adj | C1 | /ˈbruːdɪŋ/ | The hero is a brooding, silent man. | Le héros est un homme ténébreux et silencieux.
 coy | faussement timide ; évasif | adj | C2 | /kɔɪ/ | She gave a coy smile. | Elle a souri d'un air faussement timide.
 prudential | prudentiel, de prudence | adj | C2 | /pruːˈdenʃl/ | Banks must meet prudential rules. | Les banques doivent respecter des règles prudentielles.

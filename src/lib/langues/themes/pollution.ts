@@ -43,7 +43,7 @@ sewer | égout | n | B2 | /ˈsuːər/ | Rain can flood the old sewer. | La pluie
 effluent | effluent | n | C2 | /ˈefluənt/ | The factory discharges effluent into the bay. | L'usine rejette ses effluents dans la baie.
 particulate | particule fine | n | C2 | /pɑːrˈtɪkjələt/ | Particulate levels were high on the motorway. | Les niveaux de particules fines étaient élevés sur l'autoroute.
 crude | brut | adj | C1 | /kruːd/ | Crude oil leaked from the tanker. | Du pétrole brut s'est échappé du pétrolier.
-dump | décharge sauvage | n | B2 | /dʌmp/ | Someone left rubbish at the illegal dump. | Quelqu'un a laissé des ordures à la décharge sauvage.
+dump | décharge, dépotoir | n | B2 | /dʌmp/ | Someone left rubbish at the illegal dump. | Quelqu'un a laissé des ordures à la décharge sauvage.
 slick | nappe de pétrole | n | C1 | /slɪk/ | A slick spread across the sea. | Une nappe de pétrole s'étendait sur la mer.
 soot-stained | noirci par la suie | adj | C1 | /sʊt steɪnd/ | The soot-stained walls of the old factory. | Les murs de l'ancienne usine, noircis par la suie.
 polluter | pollueur | n | B2 | /pəˈluːtər/ | The polluter had to pay for the clean-up. | Le pollueur a dû payer le nettoyage.

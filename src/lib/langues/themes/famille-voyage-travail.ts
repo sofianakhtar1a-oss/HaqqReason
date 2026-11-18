@@ -135,7 +135,7 @@ half-sister | demi-sœur | n | B1 | /ˈhɑːf ˌsɪstər/ | I have a half-sister
 ex-husband | ex-mari | n | B1 | /ˌeks ˈhʌzbənd/ | She's still friends with her ex-husband. | Elle est restée amie avec son ex-mari.
 ex-wife | ex-femme | n | B1 | /ˌeks ˈwaɪf/ | He sees his ex-wife every weekend. | Il voit son ex-femme chaque week-end.
 adoption | adoption | n | B2 | /əˈdɒpʃn/ | The adoption took two years. | L'adoption a pris deux ans.
-foster parent | famille d'accueil (parent) | n | B2 | /ˈfɒstə ˌpeərənt/ | They became foster parents. | Ils sont devenus famille d'accueil.
+foster parent | parent d'accueil, assistant familial | n | B2 | /ˈfɒstə ˌpeərənt/ | They became foster parents. | Ils sont devenus famille d'accueil.
 foster child | enfant placé | n | B2 | /ˈfɒstə tʃaɪld/ | They look after a foster child. | Ils s'occupent d'un enfant placé.
 guardian | tuteur | n | B2 | /ˈɡɑːdiən/ | His uncle is his legal guardian. | Son oncle est son tuteur légal.
 next of kin | plus proche parent | n | C1 | /ˌnekst əv ˈkɪn/ | Write the name of your next of kin. | Indique le nom de ton plus proche parent.
@@ -1001,7 +1001,7 @@ manual worker | travailleur manuel | n | B2 | /ˌmænjuəl ˈwɜːkər/ | Manual
 gig economy | économie des petits boulots | n | C1 | /ˈɡɪɡ iˌkɒnəmi/ | Delivery riders work in the gig economy. | Les livreurs travaillent dans l'économie des petits boulots.
 zero-hours contract | contrat zéro heure | n | C1 | /ˌzɪərəʊ ˈaʊəz ˌkɒntrækt/ | She's on a zero-hours contract. | Elle a un contrat zéro heure.
 side hustle | activité d'appoint | n | B2 | /ˈsaɪd ˌhʌsl/ | Selling cakes is her side hustle. | Vendre des gâteaux est son activité d'appoint.
-moonlighting | travail au noir (en plus) | n | C2 | /ˈmuːnlaɪtɪŋ/ | Moonlighting is forbidden by his contract. | Son contrat lui interdit de cumuler un second emploi.
+moonlighting | double emploi, travail d'appoint (souvent caché) | n | C2 | /ˈmuːnlaɪtɪŋ/ | Moonlighting is forbidden by his contract. | Son contrat lui interdit de cumuler un second emploi.
 worker | travailleur, ouvrier | n | A2 | /ˈwɜːkə/ | The factory has two hundred workers. | L'usine compte deux cents ouvriers.
 bureau | bureau, agence | n | B2 | /ˈbjʊərəʊ/ | He works for a travel bureau. | Il travaille pour une agence de voyages.
 interviewee | personne interviewée, candidat | n | B2 | /ˌɪntəvjuːˈiː/ | The interviewee seemed nervous. | Le candidat semblait nerveux.

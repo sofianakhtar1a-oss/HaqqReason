@@ -337,7 +337,7 @@ gap | écart, trou, lacune | n | B1 | /ɡæp/ | Mind the gap between the train a
 glimpse | aperçu, coup d'œil | n | B2 | /ɡlɪmps/ | I caught a glimpse of the queen. | J'ai aperçu la reine.
 glint | reflet, lueur | n | C1 | /ɡlɪnt/ | There was a glint of mischief in his eyes. | Une lueur malicieuse brillait dans ses yeux.
 grouping | regroupement | n | B2 | /ˈɡruːpɪŋ/ | The grouping of pupils by age is common. | Le regroupement des élèves par âge est courant.
-guidance | conseils ; guidée | n | B1 | /ˈɡaɪdns/ | We pray to God for guidance. | Nous prions Dieu de nous guider.
+guidance | conseils, orientation ; guidage | n | B1 | /ˈɡaɪdns/ | We pray to God for guidance. | Nous prions Dieu de nous guider.
 hardship | épreuve, privation | n | B2 | /ˈhɑːdʃɪp/ | They lived through years of hardship. | Ils ont traversé des années de privations.
 haven | havre, refuge | n | B2 | /ˈheɪvn/ | The library is a haven of peace. | La bibliothèque est un havre de paix.
 impression | impression | n | B1 | /ɪmˈpreʃn/ | She made a good impression. | Elle a fait bonne impression.
@@ -781,7 +781,7 @@ rapport | bonne entente, rapport | n | C1 | /ræˈpɔː/ | She has a good rappor
 retention | rétention, conservation | n | C1 | /rɪˈtenʃn/ | Staff retention is a problem. | Fidéliser le personnel est un problème.
 specification | spécification, cahier des charges | n | C1 | /ˌspesɪfɪˈkeɪʃn/ | The house was built to a high specification. | La maison a été construite selon des normes élevées.
 possessor | possesseur | n | C1 | /pəˈzesə/ | He is the proud possessor of a new car. | Il est l'heureux propriétaire d'une nouvelle voiture.
-stuffiness | manque d'air ; guindé | n | C1 | /ˈstʌfinəs/ | Open the window to get rid of the stuffiness. | Ouvre la fenêtre pour aérer.
+stuffiness | manque d'air ; caractère guindé | n | C1 | /ˈstʌfinəs/ | Open the window to get rid of the stuffiness. | Ouvre la fenêtre pour aérer.
 toughness | dureté, endurance | n | C1 | /ˈtʌfnəs/ | The job needs mental toughness. | Le travail demande une grande force mentale.
 commendation | éloge, distinction | n | C1 | /ˌkɒmenˈdeɪʃn/ | He received a commendation for bravery. | Il a reçu une distinction pour bravoure.
 flicker | vacillement, lueur | n | C1 | /ˈflɪkə/ | A flicker of hope remained. | Une lueur d'espoir subsistait.
@@ -1045,7 +1045,7 @@ responsiveness | réactivité | n | C1 | /rɪˈspɒnsɪvnəs/ | Customers value 
 stalemate | impasse | n | C1 | /ˈsteɪlmeɪt/ | The negotiations ended in stalemate. | Les négociations ont abouti à une impasse.
 treasure trove | mine (d'informations), trésor | n | C1 | /ˈtreʒə trəʊv/ | The library is a treasure trove of manuscripts. | La bibliothèque est une mine de manuscrits.
 blot | tache ; souillure | n | C1 | /blɒt/ | The building is a blot on the landscape. | Le bâtiment défigure le paysage.
-fullness | plénitude ; ampleur | n | C1 | /ˈfʊlnəs/ | Eating slowly gives a feeling of fullness. | Manger lentement donne une sensation de satiété.
+fullness | satiété ; plénitude, ampleur | n | C1 | /ˈfʊlnəs/ | Eating slowly gives a feeling of fullness. | Manger lentement donne une sensation de satiété.
 postponement | report, ajournement | n | C1 | /pəˈspəʊnmənt/ | The rain led to the postponement of the match. | La pluie a entraîné le report du match.
 regularity | régularité | n | C1 | /ˌreɡjuˈlærəti/ | Regularity in worship matters more than quantity. | La régularité dans l'adoration compte plus que la quantité.
 betterment | amélioration | n | C2 | /ˈbetəmənt/ | He worked for the betterment of society. | Il a œuvré pour l'amélioration de la société.
@@ -1386,7 +1386,7 @@ conscientiously | consciencieusement | adv | C1 | /ˌkɒnʃiˈenʃəsli/ | She w
 indefinitely | indéfiniment | adv | C1 | /ɪnˈdefɪnətli/ | The meeting was postponed indefinitely. | La réunion a été reportée sine die.
 robustly | vigoureusement, solidement | adv | C1 | /rəʊˈbʌstli/ | The bridge is robustly built. | Le pont est solidement construit.
 remotely | à distance ; vaguement | adv | C1 | /rɪˈməʊtli/ | I work remotely. | Je travaille à distance.
-chaotically | chaotiquement | adv | C1 | /keɪˈɒtɪkli/ | People ran chaotically in all directions. | Les gens couraient dans tous les sens.
+chaotically | de façon chaotique | adv | C1 | /keɪˈɒtɪkli/ | People ran chaotically in all directions. | Les gens couraient dans tous les sens.
 victoriously | victorieusement | adv | C1 | /vɪkˈtɔːriəsli/ | He raised his arms victoriously. | Il a levé les bras en signe de victoire.
 profoundly | profondément | adv | C1 | /prəˈfaʊndli/ | I was profoundly moved. | J'ai été profondément ému.
 baldly | crûment, sans détour | adv | C1 | /ˈbɔːldli/ | He stated the facts baldly. | Il a exposé les faits sans détour.
@@ -1476,7 +1476,7 @@ meticulously | méticuleusement | adv | C2 | /məˈtɪkjələsli/ | The scribes 
 sedately | posément, sans se presser | adv | C2 | /sɪˈdeɪtli/ | The old car moved sedately along. | La vieille voiture avançait tranquillement.
 unobtrusively | discrètement | adv | C2 | /ˌʌnəbˈtruːsɪvli/ | He left unobtrusively. | Il est parti discrètement.
 compellingly | de façon convaincante | adv | C2 | /kəmˈpelɪŋli/ | She argued compellingly. | Elle a argumenté de manière convaincante.
-hauntingly | de façon obsédante | adv | C2 | /ˈhɔːntɪŋli/ | The melody is hauntingly beautiful. | La mélodie est d'une beauté envoûtante.
+hauntingly | de façon obsédante, envoûtante | adv | C2 | /ˈhɔːntɪŋli/ | The melody is hauntingly beautiful. | La mélodie est d'une beauté envoûtante.
 resoundingly | de façon retentissante | adv | C2 | /rɪˈzaʊndɪŋli/ | The plan was resoundingly rejected. | Le projet a été massivement rejeté.
 hysterically | de façon hystérique | adv | C2 | /hɪˈsterɪkli/ | We laughed hysterically. | Nous avons ri aux larmes.
 contemptuously | avec mépris | adv | C2 | /kənˈtemptʃuəsli/ | She looked at him contemptuously. | Elle l'a regardé avec mépris.
@@ -1500,7 +1500,7 @@ afloat | à flot | adv | C2 | /əˈfləʊt/ | The company is struggling to stay 
 realistically | de façon réaliste | adv | C1 | /ˌriːəˈlɪstɪkli/ | Realistically, we can't finish today. | Pour être réaliste, nous ne pouvons pas finir aujourd'hui.
 markedly | nettement | adv | C2 | /ˈmɑːkɪdli/ | Prices have risen markedly. | Les prix ont nettement augmenté.
 tragically | tragiquement | adv | C1 | /ˈtrædʒɪkli/ | He died tragically young. | Il est mort tragiquement jeune.
-understandably | évidemment, ce qui se comprend | adv | C1 | /ˌʌndəˈstændəbli/ | She was understandably upset. | Elle était contrariée, ce qui se comprend.
+understandably | naturellement, ce qui se comprend | adv | C1 | /ˌʌndəˈstændəbli/ | She was understandably upset. | Elle était contrariée, ce qui se comprend.
 oft | souvent (littéraire) | adv | C2 | /ɒft/ | It's an oft-repeated story. | C'est une histoire souvent répétée.
 apiece | chacun, par personne | adv | C2 | /əˈpiːs/ | The apples cost twenty pence apiece. | Les pommes coûtent vingt pence pièce.
 responsibly | de façon responsable | adv | C1 | /rɪˈspɒnsəbli/ | Please drink water and act responsibly. | Merci d'agir de manière responsable.

@@ -22,7 +22,7 @@ litter | détritus, ordures | n | B1 | /ˈlɪtər/ | Please don't leave litter o
 recycling | recyclage | n | B1 | /riːˈsaɪklɪŋ/ | Recycling is collected on Tuesdays. | Le recyclage est collecté le mardi.
 compost bin | composteur | n | B2 | /ˈkɒmpɒst bɪn/ | Put the peelings in the compost bin. | Mets les épluchures dans le composteur.
 sewage | eaux usées | n | C1 | /ˈsuːɪdʒ/ | Sewage flows to the treatment plant. | Les eaux usées rejoignent la station d'épuration.
-drain | évier, canalisation | n | B2 | /dreɪn/ | The drain is blocked again. | La canalisation est encore bouchée.
+drain | canalisation, évacuation, bonde | n | B2 | /dreɪn/ | The drain is blocked again. | La canalisation est encore bouchée.
 to scrub | récurer | v | B1 | /skrʌb/ | Scrub the pan until it shines. | Récure la casserole jusqu'à ce qu'elle brille.
 to wipe | essuyer | v | A2 | /waɪp/ | Wipe the counter after cooking. | Essuie le plan de travail après la cuisine.
 to brush | brosser | v | A2 | /brʌʃ/ | Please brush the rug every morning. | Brosse le tapis chaque matin, s'il te plaît.
@@ -58,7 +58,7 @@ soot | suie | n | C1 | /sʊt/ | Soot stained the ceiling above the fire. | La su
 grime | crasse | n | C1 | /ɡraɪm/ | Grime built up on the tiles. | La crasse s'est accumulée sur le carrelage.
 lint | peluches | n | B2 | /lɪnt/ | Lint clogs the washing machine filter. | Les peluches bouchent le filtre du lave-linge.
 dishcloth | torchon, éponge | n | B1 | /ˈdɪʃklɒθ/ | Hang the dishcloth to dry. | Mets l'éponge à sécher.
-toilet brush | goupillon | n | B2 | /ˈtɔɪlət brʌʃ/ | The toilet brush is under the sink. | Le goupillon est sous l'évier.
+toilet brush | brosse à toilettes, balayette WC | n | B2 | /ˈtɔɪlət brʌʃ/ | The toilet brush is under the sink. | Le goupillon est sous l'évier.
 sanitation | assainissement | n | C1 | /ˌsænɪˈteɪʃn/ | Sanitation is a public health issue. | L'assainissement est une question de santé publique.
 reusable | réutilisable | adj | B1 | /riːˈjuːzəbl/ | Bring a reusable bag to the shop. | Apporte un sac réutilisable au magasin.
 biodegradable | biodégradable | adj | B2 | /ˌbaɪoʊdɪˈɡreɪdəbl/ | Choose biodegradable soap for the garden. | Choisis un savon biodégradable pour le jardin.
@@ -81,7 +81,7 @@ bin | poubelle | n | A1 | /bɪn/ | Put the rubbish in the bin. | Mets les ordure
 bin bag | sac poubelle | n | A2 | /bɪn bæɡ/ | I need a new bin bag. | J'ai besoin d'un nouveau sac poubelle.
 to hose down | arroser au jet | expr | B2 | /hoʊz daʊn/ | Hose down the patio on Saturday. | Arrose la terrasse au jet le samedi.
 to soak | faire tremper | v | B1 | /soʊk/ | Soak the stained shirt overnight. | Fais tremper la chemise tachée toute la nuit.
-to fade | délaver | v | B1 | /feɪd/ | The colours faded after many washes. | Les couleurs ont délavé après de nombreux lavages.
+to fade | se décolorer, passer (couleur) ; s'estomper | v | B1 | /feɪd/ | The colours faded after many washes. | Les couleurs ont délavé après de nombreux lavages.
 wax | cire | n | B2 | /wæks/ | Apply wax to the wooden table. | Applique de la cire sur la table en bois.
 spray | spray, vaporisateur | n | B1 | /spreɪ/ | Use a spray to clean the windows. | Utilise un spray pour nettoyer les vitres.
 bathtub | baignoire | n | A2 | /ˈbɑːθtʌb/ | The bathtub needs a good clean. | La baignoire a besoin d'un bon nettoyage.

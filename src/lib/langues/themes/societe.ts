@@ -175,7 +175,7 @@ education | éducation, enseignement | n | A2 | /ˌedʒuˈkeɪʃn/ | Education i
 public services | services publics | n | B2 | /ˌpʌblɪk ˈsɜːvɪsɪz/ | Public services need more funding. | Les services publics ont besoin de plus de moyens.
 demonstrator | manifestant | n | B2 | /ˈdemənstreɪtər/ | Thousands of demonstrators marched. | Des milliers de manifestants ont défilé.
 activism | militantisme | n | C1 | /ˈæktɪvɪzəm/ | Her activism began at school. | Son militantisme a commencé au lycée.
-social mobility | ascenseur social | n | C1 | /ˌsəʊʃl məʊˈbɪləti/ | Education drives social mobility. | L'éducation fait fonctionner l'ascenseur social.
+social mobility | mobilité sociale, ascenseur social | n | C1 | /ˌsəʊʃl məʊˈbɪləti/ | Education drives social mobility. | L'éducation fait fonctionner l'ascenseur social.
 social class | classe sociale | n | B2 | /ˌsəʊʃl ˈklɑːs/ | Social class affects life chances. | La classe sociale influence les chances dans la vie.
 privilege | privilège | n | B2 | /ˈprɪvəlɪdʒ/ | It's a privilege to meet you. | C'est un privilège de vous rencontrer.
 disadvantaged | défavorisé | adj | C1 | /ˌdɪsədˈvɑːntɪdʒd/ | The charity helps disadvantaged children. | L'association aide les enfants défavorisés.

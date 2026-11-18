@@ -62,7 +62,7 @@ monument | monument | n | B1 | /ˈmɒnjumənt/ | The monument honours the soldie
 statue | statue | n | A2 | /ˈstætʃuː/ | There is a statue of a famous poet in the square. | Il y a une statue d'un poète célèbre sur la place.
 fountain | fontaine | n | A2 | /ˈfaʊntən/ | Children splash around the fountain. | Les enfants s'éclaboussent autour de la fontaine.
 bench | banc | n | A2 | /bentʃ/ | Let's sit on the bench under the tree. | Asseyons-nous sur le banc sous l'arbre.
-rooftop | toit-terrasse | n | B2 | /ˈruːftɒp/ | We had drinks on the rooftop. | Nous avons pris un verre sur le toit-terrasse.
+rooftop | toit ; toit-terrasse | n | B2 | /ˈruːftɒp/ | We had drinks on the rooftop. | Nous avons pris un verre sur le toit-terrasse.
 harbour | port | n | B1 | /ˈhɑːrbər/ | Boats are docked in the harbour. | Les bateaux sont amarrés dans le port.
 public square | place publique | n | B2 | /ˈpʌblɪk skweər/ | People gathered in the public square. | Les gens se sont rassemblés sur la place publique.
 precinct | zone piétonne | n | C1 | /ˈpriːsɪŋkt/ | The shopping precinct is closed to cars. | La zone commerçante piétonne est fermée aux voitures.
@@ -85,7 +85,7 @@ lively | animé, vivant | adj | B1 | /ˈlaɪvli/ | The market is lively on Satur
 cosmopolitan | cosmopolite | adj | C1 | /ˌkɒzməˈpɒlɪtən/ | London is a cosmopolitan city. | Londres est une ville cosmopolite.
 to gather | se rassembler | v | B1 | /ˈɡæðər/ | People gathered outside the town hall. | Les gens se sont rassemblés devant la mairie.
 to jostle | bousculer | v | C1 | /ˈdʒɒsl/ | Shoppers jostled for the best bargains. | Les clients se bousculaient pour les meilleures affaires.
-to elbow | se frayer un chemin | v | C1 | /ˈelbəʊ/ | He elbowed his way to the front. | Il s'est frayé un chemin jusqu'au premier rang.
+to elbow | jouer des coudes, donner un coup de coude | v | C1 | /ˈelbəʊ/ | He elbowed his way to the front. | Il s'est frayé un chemin jusqu'au premier rang.
 to frown | froncer les sourcils | v | B1 | /fraʊn/ | She frowned when she heard the news. | Elle a froncé les sourcils en apprenant la nouvelle.
 to gesture | faire un geste | v | B1 | /ˈdʒestʃər/ | He gestured towards the exit. | Il a fait un geste vers la sortie.
 encounter | rencontre | n | B2 | /ɪnˈkaʊntər/ | The encounter lasted only a minute. | La rencontre n'a duré qu'une minute.

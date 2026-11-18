@@ -61,7 +61,7 @@ crusade | croisade | n | C1 | /kruːˈseɪd/ | The crusade set out in the spring
 Renaissance | Renaissance | n | B2 | /rɪˈneɪsns/ | The Renaissance brought new art to Italy. | La Renaissance a apporté un art nouveau en Italie.
 Enlightenment | Lumières | n | C1 | /ɪnˈlaɪtnmənt/ | The Enlightenment questioned religious authority. | Les Lumières ont remis en question l'autorité religieuse.
 Stone Age | âge de pierre | n | B2 | /stoʊn eɪdʒ/ | People in the Stone Age made simple tools. | Les hommes de l'âge de pierre fabriquaient des outils simples.
-ancient | ancien | adj | A2 | /ˈeɪnʃənt/ | The ancient city has ruins everywhere. | La ville antique regorge de ruines.
+ancient | antique, très ancien | adj | A2 | /ˈeɪnʃənt/ | The ancient city has ruins everywhere. | La ville antique regorge de ruines.
 to abolish | abolir | v | C1 | /əˈbɒlɪʃ/ | Slavery was finally abolished. | L'esclavage a fini par être aboli.
 royal | royal | adj | B1 | /ˈrɔɪəl/ | The royal family lives in the palace. | La famille royale vit dans le palais.
 to overthrow | renverser | v | C1 | /ˌoʊvərˈθroʊ/ | The people overthrew the government. | Le peuple a renversé le gouvernement.

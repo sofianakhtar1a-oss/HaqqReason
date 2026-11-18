@@ -326,7 +326,7 @@ apparatus | appareil, dispositif | n | C1 | /ˌæpəˈreɪtəs/ | The firefighte
 lunar | lunaire | adj | C1 | /ˈluːnə/ | The Islamic calendar is lunar. | Le calendrier islamique est lunaire.
 neural | neuronal | adj | C1 | /ˈnjʊərəl/ | They built a neural network. | Ils ont conçu un réseau de neurones.
 screenshot | capture d'écran | n | B2 | /ˈskriːnʃɒt/ | Send me a screenshot. | Envoie-moi une capture d'écran.
-aerospace | aérospatial | n | C1 | /ˈeərəʊspeɪs/ | She works in aerospace. | Elle travaille dans l'aérospatiale.
+aerospace | aérospatiale (industrie) | n | C1 | /ˈeərəʊspeɪs/ | She works in aerospace. | Elle travaille dans l'aérospatiale.
 genus | genre (biologie) | n | C2 | /ˈdʒiːnəs/ | Lions belong to the genus Panthera. | Les lions appartiennent au genre Panthera.
 proxy | mandataire ; procuration | n | C2 | /ˈprɒksi/ | You can vote by proxy. | Tu peux voter par procuration.
 quantitative | quantitatif | adj | C1 | /ˈkwɒntɪtətɪv/ | We used quantitative methods. | Nous avons utilisé des méthodes quantitatives.
@@ -456,7 +456,7 @@ entropy | entropie | n | C2 | /ˈentrəpi/ | Entropy always increases. | L'entro
 helix | hélice, spirale | n | C2 | /ˈhiːlɪks/ | DNA has a double helix. | L'ADN a une structure en double hélice.
 sociological | sociologique | adj | C2 | /ˌsəʊsiəˈlɒdʒɪkl/ | It's a sociological study. | C'est une étude sociologique.
 alkaline | alcalin | adj | C2 | /ˈælkəlaɪn/ | The soil is alkaline. | Le sol est alcalin.
-fluoride | fluor | n | C2 | /ˈflɔːraɪd/ | Toothpaste contains fluoride. | Le dentifrice contient du fluor.
+fluoride | fluorure ; fluor (dentifrice) | n | C2 | /ˈflɔːraɪd/ | Toothpaste contains fluoride. | Le dentifrice contient du fluor.
 microbiology | microbiologie | n | C2 | /ˌmaɪkrəʊbaɪˈɒlədʒi/ | She studies microbiology. | Elle étudie la microbiologie.
 phosphorus | phosphore | n | C2 | /ˈfɒsfərəs/ | Fish is rich in phosphorus. | Le poisson est riche en phosphore.
 cyanide | cyanure | n | C2 | /ˈsaɪənaɪd/ | Cyanide is a deadly poison. | Le cyanure est un poison mortel.

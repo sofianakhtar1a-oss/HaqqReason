@@ -51,7 +51,7 @@ clock | horloge | n | A1 | /klɒk/ | The clock on the wall is slow. | L'horloge 
 o'clock | heure(s) pile | adv | A1 | /əˈklɒk/ | It's three o'clock. | Il est trois heures.
 quarter | quart | n | A1 | /ˈkwɔːtər/ | It's a quarter past five. | Il est cinq heures et quart.
 half | moitié, demi | n | A1 | /hɑːf/ | It's half past six. | Il est six heures et demie.
-past | passé (heure) | prep | A1 | /pɑːst/ | It's ten past nine. | Il est neuf heures dix.
+past | après (heure : ten past two = deux heures dix) | prep | A1 | /pɑːst/ | It's ten past nine. | Il est neuf heures dix.
 early | tôt | adv | A1 | /ˈɜːli/ | I get up early. | Je me lève tôt.
 late | tard | adv | A1 | /leɪt/ | We arrived late. | Nous sommes arrivés tard.
 soon | bientôt | adv | A1 | /suːn/ | See you soon! | À bientôt !
@@ -325,7 +325,7 @@ circumference | circonférence | n | C2 | /səˈkʌmfərəns/ | Measure the circ
 nightfall | tombée de la nuit | n | C1 | /ˈnaɪtfɔːl/ | We must arrive before nightfall. | Nous devons arriver avant la tombée de la nuit.
 almanac | almanach | n | C2 | /ˈɔːlmənæk/ | The almanac gives prayer times for the year. | L'almanach donne les horaires de prière de l'année.
 daybreak | point du jour | n | C1 | /ˈdeɪbreɪk/ | We set off at daybreak. | Nous sommes partis au point du jour.
-juncture | conjoncture, moment | n | C2 | /ˈdʒʌŋktʃə/ | At this juncture, we must decide. | À ce stade, nous devons décider.
+juncture | moment, stade (critique), conjoncture | n | C2 | /ˈdʒʌŋktʃə/ | At this juncture, we must decide. | À ce stade, nous devons décider.
 sundown | coucher du soleil | n | C1 | /ˈsʌndaʊn/ | Muslims break their fast at sundown. | Les musulmans rompent le jeûne au coucher du soleil.
 midweek | milieu de semaine | n | B2 | /ˌmɪdˈwiːk/ | Flights are cheaper midweek. | Les vols sont moins chers en milieu de semaine.
 millionth | millionième | adj | C1 | /ˈmɪljənθ/ | It's the millionth visitor this year. | C'est le millionième visiteur cette année.

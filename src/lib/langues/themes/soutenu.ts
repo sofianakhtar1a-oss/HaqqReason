@@ -417,7 +417,7 @@ otiose | superflu, oiseux | adj | C2 | /ˈəʊtiəʊs/ | Most of the footnotes a
 parsimony | parcimonie, avarice | n | C2 | /ˈpɑːsɪməni/ | The council was criticised for its parsimony. | Le conseil a été critiqué pour sa parcimonie.
 peccadillo | peccadille, broutille | n | C2 | /ˌpekəˈdɪləʊ/ | The press exaggerated his youthful peccadilloes. | La presse a exagéré ses peccadilles de jeunesse.
 pellucid | limpide, transparent | adj | C2 | /pəˈluːsɪd/ | She writes in pellucid prose. | Elle écrit dans une prose limpide.
-penury | pénurie, misère | n | C2 | /ˈpenjʊri/ | The artist died in penury. | L'artiste est mort dans la misère.
+penury | misère, dénuement, indigence | n | C2 | /ˈpenjʊri/ | The artist died in penury. | L'artiste est mort dans la misère.
 peremptory | péremptoire, impérieux | adj | C2 | /pəˈremptəri/ | He gave a peremptory order to leave. | Il a donné l'ordre péremptoire de partir.
 perspicuous | clair, intelligible | adj | C2 | /pəˈspɪkjuəs/ | The rules are set out in a perspicuous way. | Les règles sont exposées de façon claire.
 pithy | lapidaire, concis | adj | C2 | /ˈpɪθi/ | She made a pithy comment that summed it all up. | Elle a fait un commentaire lapidaire qui résumait tout.

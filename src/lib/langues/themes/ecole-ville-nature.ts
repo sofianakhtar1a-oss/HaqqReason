@@ -237,7 +237,7 @@ to swot up | potasser | v | B2 | /swɒt ˈʌp/ | I need to swot up on my history
 to cram | bachoter | v | B2 | /kræm/ | Students cram before the exams. | Les élèves bachotent avant les examens.
 to play truant | faire l'école buissonnière | expr | B2 | /pleɪ ˈtruːənt/ | He used to play truant on Fridays. | Il faisait l'école buissonnière le vendredi.
 to skive | sécher, tirer au flanc | v | B2 | /skaɪv/ | Don't skive off school! | Ne sèche pas l'école !
-straight A's | que des 20 sur 20 | expr | B2 | /ˌstreɪt ˈeɪz/ | She got straight A's this term. | Elle n'a eu que des excellentes notes ce trimestre.
+straight A's | que des excellentes notes | expr | B2 | /ˌstreɪt ˈeɪz/ | She got straight A's this term. | Elle n'a eu que des excellentes notes ce trimestre.
 to brush up on | se remettre à niveau en | v | B2 | /brʌʃ ˈʌp ɒn/ | I need to brush up on my English. | Je dois rafraîchir mon anglais.
 paragraph | paragraphe | n | A2 | /ˈpærəɡrɑːf/ | Read the first paragraph. | Lis le premier paragraphe.
 elementary | élémentaire | adj | A1 | /ˌelɪˈmentri/ | It's an elementary mistake. | C'est une erreur élémentaire.
@@ -377,7 +377,7 @@ plagiarism | plagiat | n | C1 | /ˈpleɪdʒərɪzəm/ | Plagiarism is a serious 
 vernacular | langue vernaculaire | n | C2 | /vəˈnækjələ/ | The Bible was translated into the vernacular. | La Bible a été traduite en langue vernaculaire.
 glossary | glossaire | n | C1 | /ˈɡlɒsəri/ | There's a glossary at the end of the book. | Il y a un glossaire à la fin du livre.
 scholastic | scolaire ; scolastique | adj | C2 | /skəˈlæstɪk/ | His scholastic achievements are impressive. | Ses résultats scolaires sont impressionnants.
-polytechnic | école polytechnique | n | C2 | /ˌpɒliˈteknɪk/ | He studied at a polytechnic. | Il a étudié dans une école polytechnique.
+polytechnic | institut universitaire technique (polytechnic) | n | C2 | /ˌpɒliˈteknɪk/ | He studied at a polytechnic. | Il a étudié dans une école polytechnique.
 shorthand | sténographie ; abréviation | n | C1 | /ˈʃɔːthænd/ | The secretary takes notes in shorthand. | La secrétaire prend des notes en sténo.
 monograph | monographie | n | C2 | /ˈmɒnəɡrɑːf/ | She published a monograph on Ibn Khaldun. | Elle a publié une monographie sur Ibn Khaldoun.
 abbreviation | abréviation | n | B2 | /əˌbriːviˈeɪʃn/ | "PBUH" is an abbreviation. | « PBUH » est une abréviation.
@@ -960,7 +960,7 @@ seashell | coquillage | n | A2 | /ˈsiːʃel/ | The children collected seashells
 rock pool | flaque entre les rochers | n | B2 | /ˈrɒk puːl/ | We found a crab in a rock pool. | Nous avons trouvé un crabe dans une flaque entre les rochers.
 sandbank | banc de sable | n | C1 | /ˈsændbæŋk/ | Seals rest on the sandbank. | Les phoques se reposent sur le banc de sable.
 mudflat | vasière | n | C2 | /ˈmʌdflæt/ | Birds feed on the mudflats. | Les oiseaux se nourrissent sur les vasières.
-salt marsh | marais salant, pré salé | n | C1 | /ˈsɔːlt mɑːʃ/ | Sheep graze on the salt marsh. | Les moutons paissent sur les prés salés.
+salt marsh | marais salé, pré salé | n | C1 | /ˈsɔːlt mɑːʃ/ | Sheep graze on the salt marsh. | Les moutons paissent sur les prés salés.
 atoll | atoll | n | C2 | /ˈætɒl/ | The atoll is a ring of coral. | L'atoll est un anneau de corail.
 isthmus | isthme | n | C2 | /ˈɪsməs/ | The isthmus links two continents. | L'isthme relie deux continents.
 meander | méandre | n | C1 | /miˈændər/ | The river makes a wide meander. | La rivière fait un large méandre.
@@ -982,7 +982,7 @@ invasive species | espèce invasive | n | C1 | /ɪnˌveɪsɪv ˈspiːʃiːz/ | T
 verdant | verdoyant | adj | C2 | /ˈvɜːdnt/ | The valley was lush and verdant. | La vallée était luxuriante et verdoyante.
 rugged | accidenté, sauvage | adj | C1 | /ˈrʌɡɪd/ | Brittany has a rugged coastline. | La Bretagne a une côte sauvage.
 rocky | rocheux | adj | B1 | /ˈrɒki/ | We climbed a rocky path. | Nous avons grimpé un chemin rocheux.
-sandy | sablonneux | adj | B1 | /ˈsændi/ | It's a long sandy beach. | C'est une longue plage de sable.
+sandy | de sable, sablonneux | adj | B1 | /ˈsændi/ | It's a long sandy beach. | C'est une longue plage de sable.
 leafy | feuillu, verdoyant | adj | B2 | /ˈliːfi/ | They live in a leafy suburb. | Ils habitent une banlieue verdoyante.
 shady | ombragé | adj | B1 | /ˈʃeɪdi/ | Let's sit in a shady spot. | Asseyons-nous dans un coin ombragé.
 wooded | boisé | adj | B2 | /ˈwʊdɪd/ | The house is in a wooded area. | La maison est dans un secteur boisé.

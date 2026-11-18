@@ -70,7 +70,7 @@ burger | hamburger | n | A1 | /ˈbɜːrɡər/ | He ate a burger with fries. | Il
 mustard | moutarde | n | B1 | /ˈmʌstərd/ | I like mustard with my ham. | J'aime la moutarde avec mon jambon.
 vinegar | vinaigre | n | B1 | /ˈvɪnɪɡər/ | Add a little vinegar to the dressing. | Ajoute un peu de vinaigre à la vinaigrette.
 mayonnaise | mayonnaise | n | B1 | /ˌmeɪəˈneɪz/ | Mayonnaise goes well with fried potatoes. | La mayonnaise va bien avec les pommes de terre frites.
-pastry | pâte feuilletée, pâtisserie | n | B1 | /ˈpeɪstri/ | This pastry is light and buttery. | Cette pâtisserie est légère et beurrée.
+pastry | pâte (à tarte) ; pâtisserie | n | B1 | /ˈpeɪstri/ | This pastry is light and buttery. | Cette pâtisserie est légère et beurrée.
 dough | pâte à pain | n | B2 | /doʊ/ | Knead the dough for ten minutes. | Pétris la pâte pendant dix minutes.
 brunch | brunch | n | B1 | /brʌntʃ/ | We had brunch at eleven on Sunday. | Nous avons pris un brunch à onze heures dimanche.
 buffet | buffet | n | B1 | /ˈbʊfeɪ/ | The buffet offers dozens of dishes. | Le buffet propose des dizaines de plats.
@@ -117,7 +117,7 @@ to fizz | pétiller | v | C1 | /fɪz/ | The sparkling water started to fizz. | L
 to starve | mourir de faim | v | B2 | /stɑːrv/ | Don't let the dog starve while we're away. | Ne laisse pas le chien mourir de faim pendant notre absence.
 to sample | goûter | v | B2 | /ˈsæmpl/ | Would you like to sample the cheese? | Voulez-vous goûter le fromage ?
 to gulp | avaler d'un trait | v | B2 | /ɡʌlp/ | He gulped down his drink in one go. | Il a avalé sa boisson d'un trait.
-to munch | grignoter | v | B2 | /mʌntʃ/ | The kids munched on biscuits all afternoon. | Les enfants ont grignoté des biscuits tout l'après-midi.
+to munch | mâchonner, croquer (bruyamment) | v | B2 | /mʌntʃ/ | The kids munched on biscuits all afternoon. | Les enfants ont grignoté des biscuits tout l'après-midi.
 to nibble | grignoter | v | B2 | /ˈnɪbl/ | She nibbled a biscuit while reading. | Elle a grignoté un biscuit en lisant.
 to have a sweet tooth | aimer les sucreries | expr | B2 | /hæv ə swiːt tuːθ/ | You have a sweet tooth, I can tell. | Tu as un faible pour les sucreries, je le vois.
 gluten-free | sans gluten | adj | B2 | /ˈɡluːtn friː/ | Do you have gluten-free bread? | Avez-vous du pain sans gluten ?

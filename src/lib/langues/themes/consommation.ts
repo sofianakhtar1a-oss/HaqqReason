@@ -127,7 +127,7 @@ consume | consommer | v | B2 | /kənˈsjuːm/ | We consume too much energy. | No
 mass consumption | consommation de masse | n | C1 | /ˌmæs kənˈsʌmpʃn/ | Mass consumption harms the planet. | La consommation de masse nuit à la planète.
 locally sourced | d'origine locale | adj | C1 | /ˌləʊkəli ˈsɔːst/ | The restaurant uses locally sourced food. | Le restaurant utilise des produits locaux.
 organic | biologique | adj | B1 | /ɔːˈɡænɪk/ | We buy organic vegetables. | Nous achetons des légumes bio.
-best-before date | date de consommation | n | B2 | /ˌbest bɪˈfɔː deɪt/ | Check the best-before date. | Vérifie la date de consommation.
+best-before date | date de durabilité minimale (à consommer de préférence avant) | n | B2 | /ˌbest bɪˈfɔː deɪt/ | Check the best-before date. | Vérifie la date de consommation.
 expire | expirer, se périmer | v | B2 | /ɪkˈspaɪər/ | The milk will expire tomorrow. | Le lait sera périmé demain.
 out of date | périmé | adj | B1 | /ˌaʊt əv ˈdeɪt/ | This yoghurt is out of date. | Ce yaourt est périmé.
 price rise | hausse des prix | n | B1 | /ˈpraɪs raɪz/ | Everyone is talking about the price rise. | Tout le monde parle de la hausse des prix.
@@ -140,7 +140,7 @@ membership fee | cotisation | n | B2 | /ˈmembəʃɪp fiː/ | The membership fee
 fee | frais, honoraires | n | B1 | /fiː/ | There is a small fee for the service. | Il y a de petits frais pour le service.
 cost price | prix coûtant | n | C1 | /ˈkɒst praɪs/ | He sold it at cost price. | Il l'a vendu à prix coûtant.
 shopping habits | habitudes d'achat | n | B2 | /ˈʃɒpɪŋ ˌhæbɪts/ | Our shopping habits are changing. | Nos habitudes d'achat évoluent.
-impulse buying | achat compulsif | n | C1 | /ˈɪmpʌls ˌbaɪɪŋ/ | Impulse buying wastes money. | Les achats compulsifs gaspillent de l'argent.
+impulse buying | achat impulsif, achats sur un coup de tête | n | C1 | /ˈɪmpʌls ˌbaɪɪŋ/ | Impulse buying wastes money. | Les achats compulsifs gaspillent de l'argent.
 must-have | indispensable | n | B2 | /ˈmʌst hæv/ | This phone is the latest must-have. | Ce téléphone est le dernier indispensable.
 customer loyalty | fidélité des clients | n | C1 | /ˌkʌstəmə ˈlɔɪəlti/ | Good service builds customer loyalty. | Un bon service fidélise les clients.
 counterfeit | contrefait | adj | C1 | /ˈkaʊntəfɪt/ | Don't buy counterfeit goods. | N'achète pas de produits contrefaits.

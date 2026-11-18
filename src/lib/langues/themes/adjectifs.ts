@@ -134,7 +134,7 @@ brief | bref | adj | B2 | /briːf/ | He gave a brief answer. | Il a donné une r
 endless | interminable | adj | B2 | /ˈendləs/ | The queue seemed endless. | La file semblait interminable.
 countless | innombrable | adj | C1 | /ˈkaʊntləs/ | I've told you countless times. | Je te l'ai dit d'innombrables fois.
 numerous | nombreux | adj | B2 | /ˈnjuːmərəs/ | There are numerous examples. | Il y a de nombreux exemples.
-plenty | abondant | n | B1 | /ˈplenti/ | There's plenty for everyone. | Il y en a assez pour tout le monde.
+plenty | abondance, beaucoup | n | B1 | /ˈplenti/ | There's plenty for everyone. | Il y en a assez pour tout le monde.
 enormous | énorme | adj | B1 | /ɪˈnɔːməs/ | The house is enormous. | La maison est énorme.
 massive | massif, énorme | adj | B2 | /ˈmæsɪv/ | There was a massive crowd. | Il y avait une foule énorme.
 giant | géant | adj | B1 | /ˈdʒaɪənt/ | A giant wave hit the boat. | Une vague géante a frappé le bateau.
@@ -244,7 +244,7 @@ unable | incapable | adj | B1 | /ʌnˈeɪbl/ | I'm unable to attend. | Je ne pou
 capable | capable, compétent | adj | B1 | /ˈkeɪpəbl/ | She is a capable manager. | C'est une manager compétente.
 incapable | incapable | adj | B2 | /ɪnˈkeɪpəbl/ | He is incapable of lying. | Il est incapable de mentir.
 aware | conscient | adj | B1 | /əˈweər/ | Are you aware of the risks? | Es-tu conscient des risques ?
-unaware | inconscient de, ignorant | adj | B2 | /ˌʌnəˈweər/ | He was unaware of the problem. | Il n'était pas au courant du problème.
+unaware | pas au courant, inconscient de | adj | B2 | /ˌʌnəˈweər/ | He was unaware of the problem. | Il n'était pas au courant du problème.
 conscious | conscient | adj | B2 | /ˈkɒnʃəs/ | The patient is conscious. | Le patient est conscient.
 unconscious | inconscient, évanoui | adj | B2 | /ʌnˈkɒnʃəs/ | He was unconscious for a minute. | Il est resté inconscient une minute.
 willing | prêt, disposé | adj | B1 | /ˈwɪlɪŋ/ | I'm willing to help. | Je suis prêt à aider.
@@ -298,7 +298,7 @@ forwards | en avant | adv | B1 | /ˈfɔːwədz/ | Lean forwards slightly. | Penc
 sideways | de côté | adv | B2 | /ˈsaɪdweɪz/ | The crab walks sideways. | Le crabe marche de côté.
 overhead | au-dessus | adv | B2 | /ˌəʊvəˈhed/ | Planes flew overhead. | Des avions passaient au-dessus.
 outdoor | extérieur, en plein air | adj | B1 | /ˈaʊtdɔːr/ | The hotel has an outdoor pool. | L'hôtel a une piscine extérieure.
-indoor | intérieur, couvert | adj | B1 | /ˈɪndɔːr/ | We play indoor football in winter. | Nous jouons au foot en salle l'hiver.
+indoor | d'intérieur, en salle | adj | B1 | /ˈɪndɔːr/ | We play indoor football in winter. | Nous jouons au foot en salle l'hiver.
 inner | intérieur | adj | B2 | /ˈɪnər/ | Find your inner peace. | Trouve ta paix intérieure.
 outer | extérieur | adj | B2 | /ˈaʊtər/ | Remove the outer leaves. | Enlève les feuilles extérieures.
 upper | supérieur, du haut | adj | B2 | /ˈʌpər/ | The upper floors have a view. | Les étages supérieurs ont une vue.
@@ -431,7 +431,7 @@ alternatively | sinon, autrement | adv | C1 | /ɔːlˈtɜːnətɪvli/ | Alternat
 though | pourtant, quand même | adv | B1 | /ðəʊ/ | It was hard. I enjoyed it, though. | C'était dur. J'ai aimé ça, quand même.
 again | encore, de nouveau | adv | A1 | /əˈɡen/ | Say it again, please. | Redis-le, s'il te plaît.
 anymore | plus (ne... plus) | adv | B1 | /ˌeniˈmɔːr/ | I don't live there anymore. | Je n'habite plus là.
-ever | jamais (interrogatif) | adv | A2 | /ˈevər/ | Have you ever been to Mecca? | Es-tu déjà allé à La Mecque ?
+ever | déjà (question), jamais | adv | A2 | /ˈevər/ | Have you ever been to Mecca? | Es-tu déjà allé à La Mecque ?
 elsewhere | ailleurs | adv | B2 | /ˌelsˈweər/ | Let's look elsewhere. | Cherchons ailleurs.
 indoors | à l'intérieur | adv | B1 | /ˌɪnˈdɔːz/ | Stay indoors when it's this hot. | Reste à l'intérieur quand il fait si chaud.
 ahead | devant, en avant | adv | B1 | /əˈhed/ | Go straight ahead. | Va tout droit.
@@ -727,7 +727,7 @@ transitional | de transition, transitoire | adj | C1 | /trænˈzɪʃənl/ | It's
 unafraid | sans peur | adj | B2 | /ˌʌnəˈfreɪd/ | She was unafraid of the dark. | Elle n'avait pas peur du noir.
 uncontrollable | incontrôlable | adj | B2 | /ˌʌnkənˈtrəʊləbl/ | He had an uncontrollable urge to laugh. | Il avait une envie irrépressible de rire.
 unexpected | inattendu | adj | B1 | /ˌʌnɪkˈspektɪd/ | We had an unexpected visit. | Nous avons eu une visite inattendue.
-unfit | inapte ; pas en forme | adj | B1 | /ʌnˈfɪt/ | The water is unfit to drink. | L'eau n'est pas potable.
+unfit | impropre, inapte ; pas en forme | adj | B1 | /ʌnˈfɪt/ | The water is unfit to drink. | L'eau n'est pas potable.
 unfortunate | malheureux, regrettable | adj | B1 | /ʌnˈfɔːtʃənət/ | It was an unfortunate mistake. | C'était une erreur regrettable.
 unheard of | inouï, sans précédent | adj | B2 | /ʌnˈhɜːd ɒv/ | Such prices were unheard of. | De tels prix étaient du jamais-vu.
 uninterested | indifférent, qui ne s'intéresse pas | adj | B1 | /ʌnˈɪntrəstɪd/ | He seemed uninterested in the game. | Le match semblait ne pas l'intéresser.
@@ -1000,7 +1000,7 @@ surreal | surréaliste | adj | C1 | /səˈrɪəl/ | The whole situation was surr
 cheesy | ringard ; au fromage | adj | B2 | /ˈtʃiːzi/ | The film has a cheesy ending. | Le film a une fin ringarde.
 clad | vêtu, revêtu | adj | C2 | /klæd/ | The pilgrims were clad in white. | Les pèlerins étaient vêtus de blanc.
 fiery | ardent, enflammé | adj | C1 | /ˈfaɪəri/ | He gave a fiery speech. | Il a prononcé un discours enflammé.
-goofy | loufoque, maladroit | adj | B2 | /ˈɡuːfi/ | He has a goofy smile. | Il a un sourire niais.
+goofy | niais, loufoque | adj | B2 | /ˈɡuːfi/ | He has a goofy smile. | Il a un sourire niais.
 indicative | révélateur ; indicatif (grammaire) | adj | C1 | /ɪnˈdɪkətɪv/ | His silence is indicative of guilt. | Son silence est révélateur de sa culpabilité.
 jolly | jovial, gai | adj | B2 | /ˈdʒɒli/ | He's a jolly old man. | C'est un vieil homme jovial.
 repetitive | répétitif | adj | B2 | /rɪˈpetətɪv/ | The work is very repetitive. | Le travail est très répétitif.
@@ -1449,7 +1449,7 @@ impromptu | impromptu, improvisé | adj | C2 | /ɪmˈprɒmptjuː/ | We had an im
 longstanding | de longue date | adj | C2 | /ˌlɒŋˈstændɪŋ/ | They have a longstanding friendship. | Ils ont une amitié de longue date.
 non-existent | inexistant | adj | C1 | /ˌnɒn ɪɡˈzɪstənt/ | Public transport is non-existent here. | Les transports publics sont inexistants ici.
 palpable | palpable | adj | C2 | /ˈpælpəbl/ | The tension was palpable. | La tension était palpable.
-watery | aqueux, délavé | adj | C1 | /ˈwɔːtəri/ | The soup was watery. | La soupe était trop claire.
+watery | trop liquide, aqueux ; délavé | adj | C1 | /ˈwɔːtəri/ | The soup was watery. | La soupe était trop claire.
 exploratory | exploratoire | adj | C2 | /ɪkˈsplɒrətri/ | They held exploratory talks. | Ils ont tenu des discussions exploratoires.
 grievous | grave, cruel | adj | C2 | /ˈɡriːvəs/ | It was a grievous mistake. | Ce fut une grave erreur.
 makeshift | de fortune, improvisé | adj | C2 | /ˈmeɪkʃɪft/ | They slept in a makeshift shelter. | Ils ont dormi dans un abri de fortune.

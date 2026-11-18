@@ -46,7 +46,7 @@ opinion poll | sondage | n | B2 | /əˈpɪnjən poʊl/ | The opinion poll showed
 misinformation | informations erronées | n | C1 | /ˌmɪsɪnfəˈmeɪʃn/ | Misinformation spreads quickly on social networks. | Les informations erronées se propagent vite sur les réseaux sociaux.
 jargon | jargon | n | B2 | /ˈdʒɑːrɡən/ | The article is full of technical jargon. | L'article regorge de jargon technique.
 eloquent | éloquent | adj | C1 | /ˈeləkwənt/ | The speaker was eloquent and calm. | L'orateur était éloquent et calme.
-articulate | clair, bien exprimé | adj | B2 | /ɑːrˈtɪkjələt/ | She is an articulate speaker. | C'est une oratrice qui s'exprime clairement.
+articulate | qui s'exprime clairement, éloquent | adj | B2 | /ɑːrˈtɪkjələt/ | She is an articulate speaker. | C'est une oratrice qui s'exprime clairement.
 spokesperson | porte-parole | n | B2 | /ˈspoʊkspɜːrsn/ | The spokesperson denied the rumour. | Le porte-parole a démenti la rumeur.
 to broadcast | diffuser | v | B2 | /ˈbrɔːdkɑːst/ | They broadcast the match live. | Ils ont diffusé le match en direct.
 to advertise | faire de la publicité | v | B1 | /ˈædvərtaɪz/ | They advertise on television every evening. | Ils font de la publicité à la télévision chaque soir.
@@ -86,7 +86,7 @@ ratings | audience | n | B2 | /ˈreɪtɪŋz/ | The show's ratings dropped this s
 press agency | agence de presse | n | C1 | /pres ˈeɪdʒənsi/ | The news came from a press agency. | L'information venait d'une agence de presse.
 to edit | corriger, éditer | v | B1 | /ˈedɪt/ | She edits the magazine every month. | Elle édite le magazine chaque mois.
 edition | édition | n | B1 | /ɪˈdɪʃn/ | Today's edition sold out quickly. | L'édition d'aujourd'hui s'est vendue vite.
-to retract | rétracter | v | C1 | /rɪˈtrækt/ | The paper retracted the false story. | Le journal a rétracté l'article erroné.
+to retract | retirer, revenir sur (une déclaration) | v | C1 | /rɪˈtrækt/ | The paper retracted the false story. | Le journal a rétracté l'article erroné.
 correction | rectificatif | n | B2 | /kəˈrekʃn/ | The paper printed a correction the next day. | Le journal a publié un rectificatif le lendemain.
 to uncover | dévoiler | v | C1 | /ʌnˈkʌvər/ | The journalist uncovered a huge fraud. | La journaliste a dévoilé une énorme fraude.
 to film | filmer | v | B1 | /fɪlm/ | They filmed the protest from the balcony. | Ils ont filmé la manifestation depuis le balcon.
@@ -189,7 +189,7 @@ byline | signature (d'un article) | n | C1 | /ˈbaɪlaɪn/ | Her name appears in
 layout | mise en page | n | B2 | /ˈleɪaʊt/ | The new layout is easier to read. | La nouvelle mise en page est plus lisible.
 printed press | presse écrite | n | B2 | /ˌprɪntɪd ˈpres/ | The printed press is in decline. | La presse écrite est en déclin.
 online edition | édition en ligne | n | B1 | /ˌɒnlaɪn ɪˈdɪʃn/ | Read the online edition for free. | Lis gratuitement l'édition en ligne.
-paywall | accès payant (mur) | n | C1 | /ˈpeɪwɔːl/ | The article is behind a paywall. | L'article est réservé aux abonnés.
+paywall | accès payant (paywall) | n | C1 | /ˈpeɪwɔːl/ | The article is behind a paywall. | L'article est réservé aux abonnés.
 homepage | page d'accueil | n | A2 | /ˈhəʊmpeɪdʒ/ | The news is on the homepage. | La nouvelle est en page d'accueil.
 echo chamber | chambre d'écho | n | C1 | /ˈekəʊ ˌtʃeɪmbər/ | Social media can become an echo chamber. | Les réseaux sociaux peuvent devenir une chambre d'écho.
 filter bubble | bulle de filtres | n | C1 | /ˈfɪltə ˌbʌbl/ | Algorithms trap us in a filter bubble. | Les algorithmes nous enferment dans une bulle de filtres.
@@ -369,7 +369,7 @@ reality show | émission de téléréalité | n | B1 | /riˈæləti ʃəʊ/ | Sh
 talent show | concours de talents | n | B1 | /ˈtælənt ʃəʊ/ | He won a singing talent show at fifteen. | Il a gagné un concours de chant à quinze ans.
 cookery programme | émission de cuisine | n | B1 | /ˈkʊkəri ˌprəʊɡræm/ | My mum loves cookery programmes. | Ma mère adore les émissions de cuisine.
 newsflash | flash d'information | n | B2 | /ˈnjuːzflæʃ/ | A newsflash interrupted the film. | Un flash d'information a interrompu le film.
-agony aunt | courrier du cœur (rubrique) | n | C1 | /ˈæɡəni ɑːnt/ | She wrote to the agony aunt for advice. | Elle a écrit au courrier du cœur pour avoir des conseils.
+agony aunt | journaliste du courrier du cœur | n | C1 | /ˈæɡəni ɑːnt/ | She wrote to the agony aunt for advice. | Elle a écrit au courrier du cœur pour avoir des conseils.
 crossword puzzle | mots croisés | n | A2 | /ˈkrɒswɜːd ˌpʌzl/ | My grandfather does the crossword puzzle every day. | Mon grand-père fait les mots croisés tous les jours.
 comic strip | bande dessinée (en quelques cases) | n | B1 | /ˈkɒmɪk strɪp/ | The newspaper has a comic strip on the back page. | Le journal publie une bande dessinée en dernière page.
 photo opportunity | occasion de se faire photographier | n | C1 | /ˈfəʊtəʊ ɒpəˌtjuːnəti/ | The visit was just a photo opportunity for the minister. | La visite n'était qu'une séance photo pour le ministre.

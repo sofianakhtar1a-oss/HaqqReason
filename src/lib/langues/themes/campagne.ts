@@ -119,7 +119,7 @@ frost | gelée | n | B1 | /frɒst/ | Frost covered the fields this morning. | La
 gust | rafale | n | C1 | /ɡʌst/ | A sudden gust blew my hat away. | Une rafale soudaine a emporté mon chapeau.
 snowflake | flocon de neige | n | B1 | /ˈsnəʊfleɪk/ | Each snowflake has a unique shape. | Chaque flocon de neige a une forme unique.
 to freeze | geler | v | A2 | /friːz/ | The lake will freeze in January. | Le lac va geler en janvier.
-spade | pelle | n | B1 | /speɪd/ | Use a spade to dig the hole. | Utilise une pelle pour creuser le trou.
+spade | bêche, pelle | n | B1 | /speɪd/ | Use a spade to dig the hole. | Utilise une pelle pour creuser le trou.
 farm | ferme | n | A1 | /fɑːm/ | My uncle has a farm in the mountains. | Mon oncle a une ferme dans la montagne.
 farmer's market | marché fermier | n | A2 | /ˈfɑːməz ˌmɑːkɪt/ | We buy eggs at the farmer's market. | Nous achetons des œufs au marché fermier.
 agriculture | agriculture | n | B1 | /ˈæɡrɪkʌltʃər/ | Agriculture employs half the population. | L'agriculture emploie la moitié de la population.
@@ -199,7 +199,7 @@ rural exodus | exode rural | n | C1 | /ˌrʊərəl ˈeksədəs/ | The rural exod
 depopulation | dépeuplement | n | C2 | /diːˌpɒpjuˈleɪʃn/ | Depopulation threatens rural schools. | Le dépeuplement menace les écoles rurales.
 deserted village | village abandonné | n | B2 | /dɪˌzɜːtɪd ˈvɪlɪdʒ/ | We walked through a deserted village. | Nous avons traversé un village abandonné.
 agritourism | agrotourisme | n | C1 | /ˈæɡritʊərɪzəm/ | Agritourism brings income to farmers. | L'agrotourisme apporte des revenus aux agriculteurs.
-farm shop | magasin à la ferme | n | B1 | /ˈfɑːm ʃɒp/ | We buy our eggs at the farm shop. | Nous achetons nos œufs à la ferme.
+farm shop | boutique de la ferme, vente à la ferme | n | B1 | /ˈfɑːm ʃɒp/ | We buy our eggs at the farm shop. | Nous achetons nos œufs à la ferme.
 farmers' market | marché de producteurs | n | B1 | /ˈfɑːməz ˌmɑːkɪt/ | The farmers' market is on Saturday. | Le marché de producteurs a lieu le samedi.
 free-range | élevé en plein air | adj | B2 | /ˌfriː ˈreɪndʒ/ | We only buy free-range eggs. | Nous n'achetons que des œufs de poules élevées en plein air.
 battery hen | poule de batterie | n | C1 | /ˈbætəri hen/ | Battery hens never see daylight. | Les poules de batterie ne voient jamais le jour.

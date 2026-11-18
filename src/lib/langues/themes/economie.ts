@@ -313,7 +313,7 @@ consultancy | cabinet de conseil | n | C1 | /kənˈsʌltənsi/ | He works for a 
 cost-effective | rentable | adj | C1 | /ˌkɒst ɪˈfektɪv/ | Solar panels are cost-effective. | Les panneaux solaires sont rentables.
 to accrue | s'accumuler, courir (intérêts) | v | C2 | /əˈkruː/ | Interest accrues every month. | Les intérêts courent chaque mois.
 profitability | rentabilité | n | C2 | /ˌprɒfɪtəˈbɪləti/ | The profitability of the firm is low. | La rentabilité de l'entreprise est faible.
-proprietary | exclusif, de marque déposée | adj | C2 | /prəˈpraɪətri/ | It's proprietary software. | C'est un logiciel propriétaire.
+proprietary | propriétaire (logiciel), exclusif | adj | C2 | /prəˈpraɪətri/ | It's proprietary software. | C'est un logiciel propriétaire.
 emolument | émoluments, rémunération | n | C2 | /ɪˈmɒljumənt/ | The director's emoluments are high. | Les émoluments du directeur sont élevés.
 remittance | versement, transfert de fonds | n | C2 | /rɪˈmɪtns/ | Many families live on remittances from abroad. | Beaucoup de familles vivent de l'argent envoyé de l'étranger.
 consignment | lot, expédition | n | C2 | /kənˈsaɪnmənt/ | A consignment of rice arrived. | Un lot de riz est arrivé.

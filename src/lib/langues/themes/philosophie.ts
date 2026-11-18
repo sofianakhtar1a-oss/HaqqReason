@@ -184,7 +184,7 @@ teleology | téléologie | n | C2 | /ˌteliˈɒlədʒi/ | Teleology studies purp
 a priori | a priori | adv | C2 | /ˌeɪ praɪˈɔːraɪ/ | Mathematics is known a priori. | Les mathématiques sont connues a priori.
 a posteriori | a posteriori | adv | C2 | /ˌeɪ pɒsteriˈɔːraɪ/ | Science works a posteriori. | La science procède a posteriori.
 ad hominem | ad hominem | adj | C2 | /ˌæd ˈhɒmɪnem/ | That was an ad hominem attack. | C'était une attaque ad hominem.
-non sequitur | non-sequitur | n | C2 | /ˌnɒn ˈsekwɪtər/ | His conclusion is a non sequitur. | Sa conclusion ne découle pas des prémisses.
+non sequitur | non sequitur, incohérence | n | C2 | /ˌnɒn ˈsekwɪtər/ | His conclusion is a non sequitur. | Sa conclusion ne découle pas des prémisses.
 tautology | tautologie | n | C2 | /tɔːˈtɒlədʒi/ | "A free gift" is a tautology. | « Un cadeau gratuit » est une tautologie.
 axiomatic | axiomatique, évident | adj | C2 | /ˌæksiəˈmætɪk/ | It's axiomatic that injustice is wrong. | Il va de soi que l'injustice est mauvaise.
 self-evident | évident | adj | C1 | /ˌself ˈevɪdənt/ | Some truths are self-evident. | Certaines vérités sont évidentes.
@@ -424,13 +424,13 @@ pyre | bûcher | n | C2 | /ˈpaɪə/ | The body was burned on a funeral pyre. | 
 ethos | éthique, esprit | n | C2 | /ˈiːθɒs/ | The school has a strong ethos of respect. | L'école est imprégnée d'un esprit de respect.
 ascension | ascension | n | C2 | /əˈsenʃn/ | Muslims celebrate the Night Journey and Ascension. | Les musulmans célèbrent le Voyage nocturne et l'Ascension.
 rector | recteur ; pasteur | n | C2 | /ˈrektə/ | The rector of the university gave a speech. | Le recteur de l'université a prononcé un discours.
-sinful | coupable, impie | adj | C1 | /ˈsɪnfl/ | Lying is sinful. | Mentir est un péché.
+sinful | pécheur, coupable, impie | adj | C1 | /ˈsɪnfl/ | Lying is sinful. | Mentir est un péché.
 demonic | démoniaque | adj | C2 | /diˈmɒnɪk/ | The film shows demonic possession. | Le film montre une possession démoniaque.
 saviour | sauveur | n | C2 | /ˈseɪvjə/ | Christians call Jesus their saviour. | Les chrétiens appellent Jésus leur sauveur.
 canonical | canonique | adj | C2 | /kəˈnɒnɪkl/ | The canonical texts of the religion. | Les textes canoniques de la religion.
 earthly | terrestre, de ce monde | adj | C1 | /ˈɜːθli/ | Earthly pleasures don't last. | Les plaisirs terrestres ne durent pas.
 synod | synode | n | C2 | /ˈsɪnɒd/ | The bishops met at a synod. | Les évêques se sont réunis en synode.
-thine | tien, ta (archaïque) | pron | C2 | /ðaɪn/ | The old prayer says that thine is the kingdom. | La vieille prière dit qu'à toi est le règne.
+thine | le tien, la tienne ; ton, ta (archaïque) | pron | C2 | /ðaɪn/ | The old prayer says that thine is the kingdom. | La vieille prière dit qu'à toi est le règne.
 blasphemy | blasphème | n | C1 | /ˈblæsfəmi/ | They considered his words blasphemy. | Ils ont jugé ses paroles blasphématoires.
 inferno | brasier ; enfer | n | C2 | /ɪnˈfɜːnəʊ/ | The house became an inferno. | La maison s'est transformée en brasier.
 priesthood | sacerdoce, prêtrise | n | C2 | /ˈpriːsthʊd/ | Islam has no priesthood. | L'islam n'a pas de clergé sacerdotal.

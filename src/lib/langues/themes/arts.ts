@@ -67,7 +67,7 @@ brushstroke | coup de pinceau | n | C1 | /ˈbrʌʃstroʊk/ | Each brushstroke te
 to exhibit | exposer | v | B2 | /ɪɡˈzɪbɪt/ | The museum will exhibit her paintings. | Le musée va exposer ses tableaux.
 critic | critique | n | B2 | /ˈkrɪtɪk/ | The critic praised the new play. | Le critique a salué la nouvelle pièce.
 review | critique, compte rendu | n | B1 | /rɪˈvjuː/ | The review of the book was very positive. | La critique du livre était très positive.
-blockbuster | film à grand spectacle | n | C1 | /ˈblɒkbʌstər/ | The blockbuster broke box-office records. | Le blockbuster a battu des records au box-office.
+blockbuster | superproduction, film à succès | n | C1 | /ˈblɒkbʌstər/ | The blockbuster broke box-office records. | Le blockbuster a battu des records au box-office.
 sitcom | sitcom | n | B2 | /ˈsɪtkɒm/ | This sitcom is funny and light. | Cette sitcom est drôle et légère.
 masterclass | master class | n | C1 | /ˈmɑːstərklæs/ | She attended a masterclass in painting. | Elle a suivi une master class de peinture.
 avant-garde | avant-garde | adj | C2 | /ˌævɒŋˈɡɑːrd/ | The avant-garde artist shocked the critics. | L'artiste d'avant-garde a choqué les critiques.
@@ -87,7 +87,7 @@ symphony | symphonie | n | B2 | /ˈsɪmfəni/ | The symphony ended with a long o
 soprano | soprano | n | C1 | /səˈprɑːnoʊ/ | The soprano sang the final aria. | La soprano a chanté le dernier air.
 lyrics | paroles | n | B1 | /ˈlɪrɪks/ | I know all the lyrics by heart. | Je connais toutes les paroles par cœur.
 chord | accord | n | B1 | /kɔːrd/ | He played a simple chord on the guitar. | Il a joué un accord simple à la guitare.
-verse | strophe | n | B2 | /vɜːrs/ | The second verse is the most famous. | La deuxième strophe est la plus célèbre.
+verse | strophe, couplet ; vers (poésie) | n | B2 | /vɜːrs/ | The second verse is the most famous. | La deuxième strophe est la plus célèbre.
 spotlight | projecteur | n | B2 | /ˈspɒtlaɪt/ | A spotlight followed the singer. | Un projecteur suivait la chanteuse.
 premiere | première | n | B2 | /ˈpremiər/ | The premiere took place in Cannes. | La première a eu lieu à Cannes.
 to carve | sculpter, tailler | v | B2 | /kɑːrv/ | The artist carved a figure from wood. | L'artiste a sculpté une figure dans le bois.
@@ -107,7 +107,7 @@ trumpet | trompette | n | A2 | /ˈtrʌmpɪt/ | He plays the trumpet in the schoo
 flute | flûte | n | A2 | /fluːt/ | The flute sounded sweet and clear. | La flûte sonnait douce et claire.
 cello | violoncelle | n | B2 | /ˈtʃeloʊ/ | The cello has a deep, warm sound. | Le violoncelle a un son grave et chaud.
 encore | rappel | n | B2 | /ˈɒŋkɔːr/ | The crowd demanded an encore. | Le public a réclamé un rappel.
-to direct | mettre en scène | v | B2 | /dəˈrekt/ | He directed the play at the theatre. | Il a mis en scène la pièce au théâtre.
+to direct | réaliser, mettre en scène | v | B2 | /dəˈrekt/ | He directed the play at the theatre. | Il a mis en scène la pièce au théâtre.
 poet | poète | n | A2 | /ˈpəʊɪt/ | The poet read her new verses. | Le poète a lu ses nouveaux vers.
 curtain | rideau | n | A2 | /ˈkɜːrtn/ | The curtain rose at eight o'clock. | Le rideau s'est levé à vingt heures.
 tickets | billets | n | A1 | /ˈtɪkɪts/ | Two tickets for the show, please. | Deux billets pour le spectacle, s'il vous plaît.
@@ -627,7 +627,7 @@ rock and roll | rock'n'roll | n | A2 | /ˌrɒk ən ˈrəʊl/ | My grandparents l
 ruby | rubis | n | B2 | /ˈruːbi/ | The ring has a ruby in the middle. | La bague a un rubis au centre.
 movie theater | cinéma (US) | n | A2 | /ˈmuːvi ˌθɪətə/ | The new movie theater has twelve screens. | Le nouveau cinéma a douze salles.
 on display | exposé | adj | B2 | /ɒn dɪˈspleɪ/ | Her paintings are on display at the town hall. | Ses tableaux sont exposés à la mairie.
-in tune | juste (musique) | adj | B2 | /ɪn ˈtjuːn/ | Is the guitar in tune? | La guitare est-elle accordée ?
+in tune | accordé, juste (musique) | adj | B2 | /ɪn ˈtjuːn/ | Is the guitar in tune? | La guitare est-elle accordée ?
 out of tune | faux (musique) | adj | B2 | /ˌaʊt əv ˈtjuːn/ | The piano is out of tune. | Le piano sonne faux.
 bass | basse | n | B1 | /beɪs/ | He plays bass in a jazz band. | Il joue de la basse dans un groupe de jazz.
 backing vocals | chœurs | n | B2 | /ˌbækɪŋ ˈvəʊklz/ | Her sister sang backing vocals on the album. | Sa sœur a fait les chœurs sur l'album.

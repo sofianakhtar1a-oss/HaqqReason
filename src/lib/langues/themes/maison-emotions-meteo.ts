@@ -137,7 +137,7 @@ bungalow | maison de plain-pied | n | B1 | /ˈbʌŋɡələʊ/ | My grandparents 
 semi-detached | maison jumelée | n | B2 | /ˌsemi dɪˈtætʃt/ | They bought a semi-detached in the suburbs. | Ils ont acheté une maison jumelée en banlieue.
 mansion | demeure, manoir | n | B2 | /ˈmænʃn/ | The film star lives in a mansion. | La star de cinéma vit dans une grande demeure.
 lounge | salon | n | A2 | /laʊndʒ/ | Let's sit in the lounge. | Asseyons-nous au salon.
-sitting room | petit salon | n | A2 | /ˈsɪtɪŋ ruːm/ | The guests waited in the sitting room. | Les invités attendaient au salon.
+sitting room | salon | n | A2 | /ˈsɪtɪŋ ruːm/ | The guests waited in the sitting room. | Les invités attendaient au salon.
 loo | toilettes (familier) | n | A2 | /luː/ | Where's the loo? | Où sont les toilettes ?
 loft | grenier, combles | n | B1 | /lɒft/ | We keep old toys in the loft. | Nous gardons les vieux jouets au grenier.
 yard | cour, jardin (US) | n | A2 | /jɑːd/ | The kids are playing in the yard. | Les enfants jouent dans la cour.
@@ -235,7 +235,7 @@ screw | vis | n | B1 | /skruː/ | One screw is missing. | Il manque une vis.
 bedside | chevet | n | B1 | /ˈbedsaɪd/ | I keep a Qur'an by my bedside. | Je garde un Coran à mon chevet.
 ladder | échelle | n | B1 | /ˈlædə/ | Hold the ladder for me. | Tiens-moi l'échelle.
 mixing bowl | saladier, jatte | n | B1 | /ˈmɪksɪŋ bəʊl/ | Put the flour in a mixing bowl. | Mets la farine dans un saladier.
-cabinet | meuble à tiroirs, armoire | n | B2 | /ˈkæbɪnət/ | The plates are in the kitchen cabinet. | Les assiettes sont dans le placard de la cuisine.
+cabinet | placard, meuble de rangement | n | B2 | /ˈkæbɪnət/ | The plates are in the kitchen cabinet. | Les assiettes sont dans le placard de la cuisine.
 cosiness | confort douillet | n | B2 | /ˈkəʊzinəs/ | I love the cosiness of this room. | J'adore le côté douillet de cette pièce.
 interior | intérieur | n | B2 | /ɪnˈtɪəriə/ | The interior of the house is modern. | L'intérieur de la maison est moderne.
 lid | couvercle | n | B2 | /lɪd/ | Put the lid on the pan. | Mets le couvercle sur la casserole.
@@ -635,7 +635,7 @@ furious | furieux | adj | B1 | /ˈfjʊəriəs/ | Dad was furious about the broke
 annoyed | agacé | adj | B1 | /əˈnɔɪd/ | I'm annoyed with myself. | Je m'en veux.
 irritated | irrité | adj | B2 | /ˈɪrɪteɪtɪd/ | She sounded irritated on the phone. | Elle avait l'air irritée au téléphone.
 frustrated | frustré | adj | B1 | /frʌˈstreɪtɪd/ | I get frustrated when the computer crashes. | Je suis frustré quand l'ordinateur plante.
-fed up | ras-le-bol | adj | B1 | /ˌfed ˈʌp/ | I'm fed up of waiting. | J'en ai marre d'attendre.
+fed up | excédé, qui en a marre | adj | B1 | /ˌfed ˈʌp/ | I'm fed up of waiting. | J'en ai marre d'attendre.
 terrified | terrifié | adj | B1 | /ˈterɪfaɪd/ | She is terrified of spiders. | Elle a une peur bleue des araignées.
 frightened | effrayé | adj | B1 | /ˈfraɪtnd/ | The child was frightened by the storm. | L'enfant avait peur de l'orage.
 panic-stricken | pris de panique | adj | C1 | /ˈpænɪk ˌstrɪkən/ | The panic-stricken crowd ran away. | La foule prise de panique s'est enfuie.

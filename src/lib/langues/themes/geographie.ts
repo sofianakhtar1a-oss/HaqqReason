@@ -317,7 +317,7 @@ ore | minerai | n | C2 | /ɔː/ | The region is rich in iron ore. | La région e
 seismic | sismique | adj | C2 | /ˈsaɪzmɪk/ | The region has strong seismic activity. | La région connaît une forte activité sismique.
 topographical | topographique | adj | C2 | /ˌtɒpəˈɡræfɪkl/ | They used a topographical map. | Ils ont utilisé une carte topographique.
 moor | lande | n | C2 | /mɔː/ | We walked across the moor. | Nous avons traversé la lande à pied.
-ice floe | banquise flottante | n | C2 | /ˈaɪs fləʊ/ | A polar bear stood on an ice floe. | Un ours polaire se tenait sur un bloc de glace flottant.
+ice floe | plaque de glace flottante, floe | n | C2 | /ˈaɪs fləʊ/ | A polar bear stood on an ice floe. | Un ours polaire se tenait sur un bloc de glace flottant.
 molten | en fusion | adj | C2 | /ˈməʊltən/ | Molten lava flowed down the volcano. | De la lave en fusion coulait sur le volcan.
 bastion | bastion | n | C2 | /ˈbæstiən/ | The town was a bastion of tradition. | La ville était un bastion de la tradition.
 shoreline | littoral, rivage | n | C1 | /ˈʃɔːlaɪn/ | We walked along the shoreline. | Nous avons marché le long du rivage.

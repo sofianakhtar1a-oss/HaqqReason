@@ -37,7 +37,7 @@ faithful | fidèle | adj | B1 | /ˈfeɪθfl/ | She has been faithful for years. 
 romance | romance, histoire d'amour | n | B1 | /roʊˈmæns/ | Their romance began in Paris. | Leur histoire d'amour a commencé à Paris.
 courtship | fréquentation, cour | n | C1 | /ˈkɔːrtʃɪp/ | Their courtship lasted two years. | Leur fréquentation a duré deux ans.
 intimacy | intimité | n | B2 | /ˈɪntɪməsi/ | Trust builds intimacy over time. | La confiance renforce l'intimité avec le temps.
-companionship | compagnonnage | n | C1 | /kəmˈpæniənʃɪp/ | Their companionship matters more than money. | Leur complicité compte plus que l'argent.
+companionship | compagnie, camaraderie | n | C1 | /kəmˈpæniənʃɪp/ | Their companionship matters more than money. | Leur complicité compte plus que l'argent.
 commitment | engagement | n | B2 | /kəˈmɪtmənt/ | Real commitment requires honesty. | Un véritable engagement exige de l'honnêteté.
 infidelity | infidélité | n | C1 | /ˌɪnfɪˈdeləti/ | Their infidelity destroyed their trust. | Leur infidélité a détruit leur confiance.
 resentment | rancœur | n | C1 | /rɪˈzentmənt/ | Her resentment built up over the years. | Sa rancœur s'est accumulée au fil des années.
@@ -104,15 +104,15 @@ to confide | se confier | v | C1 | /kənˈfaɪd/ | She confided her fears to him
 to console | consoler | v | C1 | /kənˈsoʊl/ | I tried to console her. | J'ai essayé de la consoler.
 to support | soutenir | v | B1 | /səˈpɔːrt/ | They support each other in hard times. | Ils se soutiennent mutuellement dans les moments difficiles.
 to gaze | contempler | v | C1 | /ɡeɪz/ | They gazed at each other across the room. | Ils se sont regardés longuement à travers la pièce.
-togetherness | vie à deux | n | C1 | /təˈɡeðənəs/ | Togetherness matters after many years. | La vie à deux compte après de nombreuses années.
+togetherness | complicité, vie à deux | n | C1 | /təˈɡeðənəs/ | Togetherness matters after many years. | La vie à deux compte après de nombreuses années.
 mutual | mutuel | adj | B2 | /ˈmjuːtʃuəl/ | They have mutual respect. | Ils ont un respect mutuel.
 genuine | sincère | adj | B2 | /ˈdʒenjuɪn/ | Their affection felt genuine. | Leur affection semblait sincère.
 unfaithful | infidèle | adj | C1 | /ʌnˈfeɪθfl/ | He was unfaithful to her. | Il lui a été infidèle.
 devotion | dévouement | n | B2 | /dɪˈvoʊʃn/ | Her devotion to the children is admirable. | Son dévouement envers les enfants est admirable.
 flirtation | flirt | n | C1 | /flɜːrˈteɪʃn/ | Their flirtation became serious. | Leur flirt est devenu sérieux.
-dating | fréquentation | n | B1 | /ˈdeɪtɪŋ/ | Online dating has changed how couples meet. | Les rencontres en ligne ont changé la façon dont les couples se rencontrent.
+dating | rencontres (amoureuses), fréquentations | n | B1 | /ˈdeɪtɪŋ/ | Online dating has changed how couples meet. | Les rencontres en ligne ont changé la façon dont les couples se rencontrent.
 breakup | rupture | n | B1 | /ˈbreɪkʌp/ | The breakup was painful for both of them. | La rupture a été douloureuse pour eux deux.
-to engage | fiancer | v | C1 | /ɪnˈɡeɪdʒ/ | They got engaged in the spring. | Ils se sont fiancés au printemps.
+to engage | se fiancer (to get engaged) | v | C1 | /ɪnˈɡeɪdʒ/ | They got engaged in the spring. | Ils se sont fiancés au printemps.
 reconciliation | réconciliation | n | C1 | /ˌrekənsɪliˈeɪʃn/ | Their reconciliation took several months. | Leur réconciliation a pris plusieurs mois.
 to kiss | embrasser | v | A2 | /kɪs/ | They kissed under the stars. | Ils se sont embrassés sous les étoiles.
 to quarrel | se disputer | v | B2 | /ˈkwɒrəl/ | The couple quarrelled over money. | Le couple s'est disputé à propos d'argent.
@@ -136,7 +136,7 @@ understanding | compréhensif | adj | B2 | /ˌʌndəˈstændɪŋ/ | My wife is v
 supportive | d'un grand soutien | adj | B2 | /səˈpɔːtɪv/ | He is a supportive husband. | C'est un mari qui la soutient beaucoup.
 loving | aimant | adj | B1 | /ˈlʌvɪŋ/ | They are a loving couple. | C'est un couple aimant.
 long-distance relationship | relation à distance | n | B2 | /ˌlɒŋ ˌdɪstəns rɪˈleɪʃnʃɪp/ | A long-distance relationship is hard. | Une relation à distance est difficile.
-blind date | rendez-vous arrangé | n | B2 | /ˌblaɪnd ˈdeɪt/ | They met on a blind date. | Ils se sont rencontrés à un rendez-vous arrangé.
+blind date | rendez-vous à l'aveugle, rendez-vous arrangé | n | B2 | /ˌblaɪnd ˈdeɪt/ | They met on a blind date. | Ils se sont rencontrés à un rendez-vous arrangé.
 arranged marriage | mariage arrangé | n | B2 | /əˌreɪndʒd ˈmærɪdʒ/ | Their parents suggested an arranged marriage. | Leurs parents ont proposé un mariage arrangé.
 matchmaker | marieur | n | C1 | /ˈmætʃmeɪkər/ | Her aunt acted as matchmaker. | Sa tante a joué les marieuses.
 divorced | divorcé | adj | B1 | /dɪˈvɔːst/ | Her parents are divorced. | Ses parents sont divorcés.

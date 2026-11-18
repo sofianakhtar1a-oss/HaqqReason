@@ -168,7 +168,7 @@ good afternoon | bonjour (l'après-midi) | expr | A1 | /ɡʊd ˌɑːftəˈnuːn/
 good evening | bonsoir | expr | A1 | /ɡʊd ˈiːvnɪŋ/ | Good evening, ladies and gentlemen. | Bonsoir, mesdames et messieurs.
 good night | bonne nuit | expr | A1 | /ɡʊd ˈnaɪt/ | Good night, sleep well. | Bonne nuit, dors bien.
 bye | salut, au revoir | expr | A1 | /baɪ/ | Bye, see you tomorrow! | Salut, à demain !
-see you | à plus | expr | A1 | /ˈsiː juː/ | See you on Monday! | À lundi !
+see you | à plus tard, à bientôt | expr | A1 | /ˈsiː juː/ | See you on Monday! | À lundi !
 see you later | à plus tard | expr | A1 | /ˌsiː juː ˈleɪtər/ | I'm off. See you later! | J'y vais. À plus tard !
 see you soon | à bientôt | expr | A1 | /ˌsiː juː ˈsuːn/ | Thanks for coming. See you soon! | Merci d'être venu. À bientôt !
 thank you | merci | expr | A1 | /ˈθæŋk juː/ | Thank you for your help. | Merci pour ton aide.

@@ -621,7 +621,7 @@ to span | couvrir, s'étendre sur | v | C1 | /spæn/ | His career spanned forty 
 to splatter | éclabousser | v | C1 | /ˈsplætə/ | Mud splattered my trousers. | La boue a éclaboussé mon pantalon.
 to stammer | bégayer | v | B2 | /ˈstæmə/ | He stammers when he's nervous. | Il bégaie quand il est nerveux.
 to startle | faire sursauter, effrayer | v | B2 | /ˈstɑːtl/ | The noise startled the baby. | Le bruit a fait sursauter le bébé.
-to straighten | redresser, raidir | v | B2 | /ˈstreɪtn/ | Straighten your back. | Redresse le dos.
+to straighten | redresser, remettre droit | v | B2 | /ˈstreɪtn/ | Straighten your back. | Redresse le dos.
 to stride | marcher à grands pas | v | C1 | /straɪd/ | He strides into the office every morning. | Il entre au bureau à grandes enjambées chaque matin.
 to subside | se calmer, s'apaiser | v | C1 | /səbˈsaɪd/ | The storm finally subsided. | La tempête s'est enfin calmée.
 to suck | sucer, aspirer | v | B2 | /sʌk/ | The baby sucks its thumb. | Le bébé suce son pouce.
@@ -1132,7 +1132,7 @@ to keep a secret | garder un secret | expr | A2 | /kiːp ə ˈsiːkrət/ | Can y
 to ask a favour | demander un service | expr | B1 | /ɑːsk ə ˈfeɪvə/ | Can I ask a favour? | Je peux te demander un service ?
 to do someone a favour | rendre service à quelqu'un | expr | B1 | /duː ˌsʌmwʌn ə ˈfeɪvə/ | Could you do me a favour and post this letter? | Tu peux me rendre service et poster cette lettre ?
 to do damage | causer des dégâts | expr | B2 | /duː ˈdæmɪdʒ/ | Strong winds can do a lot of damage to roofs. | Les vents violents peuvent causer beaucoup de dégâts aux toits.
-to do good | faire du bien | expr | B1 | /duː ˈɡʊd/ | A holiday will do you good. | Des vacances te feront du bien.
+to do good | faire le bien | expr | B1 | /duː ˈɡʊd/ | A holiday will do you good. | Des vacances te feront du bien.
 to make a suggestion | faire une suggestion | expr | A2 | /meɪk ə səˈdʒestʃən/ | Can I make a suggestion? | Je peux faire une suggestion ?
 to make an excuse | trouver une excuse | expr | B1 | /meɪk ən ɪkˈskjuːs/ | He always makes an excuse to leave early. | Il trouve toujours une excuse pour partir tôt.
 to make a promise | faire une promesse | expr | A2 | /meɪk ə ˈprɒmɪs/ | Don't make a promise you can't keep. | Ne fais pas de promesse que tu ne peux pas tenir.

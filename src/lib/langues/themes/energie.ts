@@ -44,7 +44,7 @@ meter | compteur | n | B1 | /ˈmiːtər/ | Read the meter at the end of the mont
 kilowatt | kilowatt | n | C1 | /ˈkɪləwɒt/ | One kilowatt equals a thousand watts. | Un kilowatt équivaut à mille watts.
 watt | watt | n | B2 | /wɒt/ | This lamp uses sixty watts. | Cette lampe consomme soixante watts.
 voltage | tension | n | C1 | /ˈvoʊltɪdʒ/ | The voltage in this socket is 230 volts. | La tension de cette prise est de 230 volts.
-fossil fuel | énergie fossile | n | B2 | /ˈfɒsl fjuːəl/ | Fossil fuels still produce most of our power. | Les énergies fossiles produisent encore la plus grande part de notre électricité.
+fossil fuel | combustible fossile, énergie fossile | n | B2 | /ˈfɒsl fjuːəl/ | Fossil fuels still produce most of our power. | Les énergies fossiles produisent encore la plus grande part de notre électricité.
 carbon-free | sans carbone | adj | C1 | /ˈkɑːrbən friː/ | The new plant is carbon-free. | La nouvelle centrale est sans carbone.
 hydrogen | hydrogène | n | C1 | /ˈhaɪdrədʒən/ | Hydrogen could power future trucks. | L'hydrogène pourrait alimenter les camions de demain.
 tide | marée | n | B2 | /taɪd/ | Tidal power depends on the tide. | L'énergie marémotrice dépend de la marée.
