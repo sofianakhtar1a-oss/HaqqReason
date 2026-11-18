@@ -26,7 +26,7 @@ const CLE = `sk-ant-api03-${"Ab3_-".repeat(18)}`;
 ok("clé de la console acceptée", controlerFormatCle("anthropic", `  ${CLE}\n`).ok);
 ok("clé d'administration refusée", !controlerFormatCle("anthropic", `sk-ant-admin01-${"a".repeat(40)}`).ok && !controlerFormatCle("openai", `sk-admin-${"a".repeat(40)}`).ok);
 ok("jeton d'abonnement Claude (Pro/Max) refusé", !controlerFormatCle("anthropic", `sk-ant-oat01-${"a".repeat(40)}`).ok && !controlerFormatCle("anthropic", `sk-ant-ort01-${"a".repeat(40)}`).ok);
-ok("clés OpenAI et Gemini reconnues", controlerFormatCle("openai", `sk-proj-${"Ab_9".repeat(12)}`).ok && controlerFormatCle("google", `AIza${"Sy-x_9".repeat(6)}`).ok);
+ok("clés OpenAI et Gemini reconnues", controlerFormatCle("openai", `sk-proj-${"Ab_9".repeat(12)}`).ok && controlerFormatCle("google", `AIza${"Sy-x_9".repeat(6)}`).ok && controlerFormatCle("google", `AQ.Ab${"8x_Rt-".repeat(7)}`).ok);
 ok("une clé collée dans la mauvaise IA est refusée", !controlerFormatCle("openai", CLE).ok && !controlerFormatCle("google", CLE).ok && !controlerFormatCle("anthropic", `sk-proj-${"a".repeat(40)}`).ok);
 ok("texte quelconque refusé", ![undefined, "", "bonjour", "sk-proj-abc", `sk-ant-api03-court`, `${CLE} ; rm -rf /`].some((x) => controlerFormatCle("anthropic", x).ok || controlerFormatCle("openai", x).ok || controlerFormatCle("google", x).ok));
 ok("aperçu : jamais la clé entière", masquerCle(CLE) === `sk-ant-…${CLE.slice(-4)}` && !masquerCle(CLE).includes(CLE.slice(10, 30)) && masquerCle(`sk-proj-${"x".repeat(40)}wxyz`) === "sk-proj-…wxyz");

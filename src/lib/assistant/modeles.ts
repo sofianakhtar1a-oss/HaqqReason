@@ -60,7 +60,7 @@ export const FOURNISSEURS: InfoFournisseur[] = [
     console: "https://aistudio.google.com",
     pageCle: "https://aistudio.google.com/apikey",
     pageCredit: "https://aistudio.google.com/usage",
-    exemple: "AIza…",
+    exemple: "AQ.Ab…",
     etapes: [
       "Ouvre Google AI Studio et connecte-toi avec ton compte Google.",
       "Clique sur « Get API key », puis « Create API key ».",
@@ -215,7 +215,7 @@ export function controlerFormatCle(fournisseur: Fournisseur, brut: unknown): Ver
     if (/^sk-admin-/i.test(cle)) return { ok: false, message: "C'est une clé d'administration OpenAI : crée plutôt une clé API ordinaire (page « API keys »)." };
     if (!/^sk-[A-Za-z0-9_-]{20,380}$/.test(cle) || /^sk-ant-/.test(cle)) return { ok: false, message: "Ce n'est pas une clé API OpenAI. Elle commence par « sk- » (souvent « sk-proj- ») et se copie sur platform.openai.com." };
   } else if (!/^[A-Za-z0-9._-]{30,200}$/.test(cle) || /^sk-/.test(cle)) {
-    return { ok: false, message: "Ce n'est pas une clé Gemini. Elle commence le plus souvent par « AIza » et se copie dans Google AI Studio." };
+    return { ok: false, message: "Ce n'est pas une clé Gemini. Elle commence par « AQ. » (ou « AIza » pour les anciennes) et se copie dans Google AI Studio." };
   }
   return { ok: true, cle };
 }
