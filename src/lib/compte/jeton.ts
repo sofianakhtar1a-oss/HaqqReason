@@ -20,9 +20,25 @@ export const NOM_COOKIE_VUE = EN_PRODUCTION ? "__Host-hr_vue" : "hr_vue";
 export const JOURS_SESSION = 60;
 const SECONDES_SESSION = JOURS_SESSION * 24 * 3600;
 
-/** La connexion Google n'existe que si ses deux réglages sont présents sur le serveur. */
+/**
+ * Identifiant public de l'application « HaqqReason » chez Google (projet Google Cloud « haqqreason »).
+ * Ce n'est pas un secret : Google l'affiche dans l'adresse de chaque connexion. La variable
+ * GOOGLE_CLIENT_ID, si elle existe sur le serveur, le remplace (autre projet, essais en local).
+ */
+export const CLIENT_GOOGLE_HAQQREASON = "696064934563-cjkhusordcton5epskjv7er730236grs.apps.googleusercontent.com";
+
+export function identifiantClientGoogle(): string {
+  return process.env.GOOGLE_CLIENT_ID?.trim() || CLIENT_GOOGLE_HAQQREASON;
+}
+
+/**
+ * La connexion Google est active dès qu'il y a un identifiant d'application (toujours, sauf
+ * GOOGLE_CONNEXION=non pour la couper) et la clé qui signe les sessions (SESSION_SECRET).
+ * Aucun code secret Google n'est nécessaire (voir lib/compte/google.ts).
+ */
 export function googleConfigure(): boolean {
-  return Boolean(process.env.GOOGLE_CLIENT_ID?.trim() && process.env.GOOGLE_CLIENT_SECRET?.trim());
+  if (process.env.GOOGLE_CONNEXION?.trim().toLowerCase() === "non") return false;
+  return Boolean(identifiantClientGoogle() && (process.env.SESSION_SECRET?.trim().length ?? 0) >= 32);
 }
 
 /**
@@ -32,6 +48,16 @@ export function googleConfigure(): boolean {
  */
 export function optionsCookieCompte(maxAge: number = SECONDES_SESSION) {
   return { httpOnly: true, secure: EN_PRODUCTION, sameSite: "lax" as const, path: "/", maxAge };
+}
+
+/**
+ * Le cookie de l'aller-retour chez Google : Google renvoie le jeton par un formulaire envoyé
+ * depuis son propre site (POST). Un cookie « Lax » ne voyagerait pas avec ce formulaire : celui-ci
+ * est donc « None » (toujours Secure, httpOnly, dix minutes, signé, et effacé dès le retour).
+ * Sur la machine locale (http), « None » est refusé par les navigateurs : on garde « Lax ».
+ */
+export function optionsCookieAllerRetour(maxAge = 600) {
+  return { httpOnly: true, secure: EN_PRODUCTION, sameSite: (EN_PRODUCTION ? "none" : "lax") as "none" | "lax", path: "/", maxAge };
 }
 
 export function optionsCookieVue(maxAge: number = 12 * 3600) {
@@ -81,12 +107,12 @@ export async function verifierCompte(jeton: string | undefined): Promise<Compte 
 }
 
 /** Ce que le navigateur garde pendant l'aller-retour chez Google. */
-export type AllerRetour = { etat: string; nonce: string; verificateur: string; retour: string };
+export type AllerRetour = { etat: string; nonce: string; retour: string };
 
 export async function signerAllerRetour(a: AllerRetour): Promise<string> {
   const secret = cle();
   if (!secret) throw new Error("SESSION_SECRET manquant ou trop court.");
-  return new SignJWT({ ...a }).setProtectedHeader({ alg: "HS256" }).setSubject("oauth").setIssuedAt().setExpirationTime("10m").sign(secret);
+  return new SignJWT({ etat: a.etat, nonce: a.nonce, retour: a.retour }).setProtectedHeader({ alg: "HS256" }).setSubject("oauth").setIssuedAt().setExpirationTime("10m").sign(secret);
 }
 
 export async function verifierAllerRetour(jeton: string | undefined): Promise<AllerRetour | null> {
@@ -94,9 +120,9 @@ export async function verifierAllerRetour(jeton: string | undefined): Promise<Al
   if (!secret || !jeton) return null;
   try {
     const { payload } = await jwtVerify(jeton, secret, { algorithms: ["HS256"], subject: "oauth" });
-    const { etat, nonce, verificateur, retour } = payload as Record<string, unknown>;
-    if (typeof etat !== "string" || typeof nonce !== "string" || typeof verificateur !== "string" || typeof retour !== "string") return null;
-    return { etat, nonce, verificateur, retour };
+    const { etat, nonce, retour } = payload as Record<string, unknown>;
+    if (typeof etat !== "string" || !etat || typeof nonce !== "string" || !nonce || typeof retour !== "string") return null;
+    return { etat, nonce, retour };
   } catch {
     return null;
   }

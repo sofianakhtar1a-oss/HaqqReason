@@ -35,52 +35,38 @@ On écrit toujours d'abord sur l'appareil (c'est instantané, et ça marche hors
 - Hors de cette vue, le créateur connecté ouvre les espaces sans compte Google (pour l'aperçu de ses brouillons) ; son travail personnel n'est alors gardé que sur l'appareil.
 - Seule différence : une barre dorée tout en haut, avec le bouton **« Revenir au mode créateur »**. Il ramène dans l'espace créateur sans redemander le mot de passe. La carte « Mode créateur » de l'accueil fait la même chose.
 
-## Ce que tu dois faire, une seule fois
+## Mise en place (faite le 18 novembre 2026)
 
-Tant que les étapes 2 et 3 ne sont pas faites, **rien ne change pour les visiteurs** : le mode utilisateur reste ouvert sans compte, comme avant.
+Tout est en place : il n'y a plus rien à faire.
 
-### 1. La base de données (Supabase)
-
-Dans Supabase : **SQL Editor → New query**, colle tout le contenu de `supabase/migrations/014_comptes.sql`, puis **Run**. Le script peut être relancé sans risque.
-
-### 2. Créer la connexion Google (gratuit)
-
-1. Ouvre <https://console.cloud.google.com/> avec ton compte Google, et crée un projet (par exemple « HaqqReason »).
-2. Menu **API et services → Écran de consentement OAuth** (ou « Google Auth Platform ») :
-   - type d'utilisateurs : **Externe** ;
-   - nom de l'application : HaqqReason ; e-mail d'assistance : le tien ;
-   - ne demande **aucun** accès supplémentaire (les trois de base suffisent : openid, e-mail, profil) ;
-   - à la fin, clique **« Publier l'application »** (passer « en production »). Sans cela, seules les adresses que tu ajoutes à la main peuvent se connecter. Avec les seuls accès de base, Google ne demande aucune vérification.
-3. Menu **Identifiants → Créer des identifiants → ID client OAuth** :
-   - type : **Application Web** ;
-   - **URI de redirection autorisés** : ajoute exactement
+1. **Base de données** : le script `supabase/migrations/014_comptes.sql` a été lancé dans Supabase (tables `utilisateurs`, `donnees_utilisateur`, `fichiers_utilisateur`, les 4 fonctions et l'espace de stockage privé `comptes`). Il peut être relancé sans risque.
+2. **Google Cloud** : projet **HaqqReason** (identifiant `haqqreason`), compte `sofianakhtar1a@gmail.com`.
+   - Google Auth Platform : application « HaqqReason », public **Externe**, accès demandés : openid, e-mail, profil.
+   - Client OAuth « Site HaqqReason » (Application Web), identifiant public :
+     `696064934563-cjkhusordcton5epskjv7er730236grs.apps.googleusercontent.com`
+   - URI de redirection autorisés :
      - `https://haqqreason.vercel.app/api/compte/google/retour`
-     - `https://haqqreason.com/api/compte/google/retour` et `https://www.haqqreason.com/api/compte/google/retour` (si ton domaine est branché)
-     - `http://localhost:3000/api/compte/google/retour` (seulement si tu lances le site sur ton ordinateur)
-4. Google affiche un **ID client** et un **code secret du client**. Garde la fenêtre ouverte pour l'étape suivante.
+     - `https://haqqreason.com/api/compte/google/retour`
+     - `https://www.haqqreason.com/api/compte/google/retour`
+3. **Aucun code secret** : Google renvoie au site un jeton d'identité signé, envoyé par formulaire (`response_type=id_token`, `response_mode=form_post`). Le serveur vérifie la signature avec les clés publiques de Google, l'application destinataire, l'émetteur, l'expiration et le nonce de la demande. L'identifiant public est écrit dans `src/lib/compte/jeton.ts` : **aucune variable à ajouter dans Vercel**. Le code secret créé par Google pour ce client ne sert pas ; il peut rester tel quel.
 
-### 3. Donner ces deux valeurs au site (Vercel)
+### Pour changer quelque chose
 
-Dans Vercel : ton projet → **Settings → Environment Variables**, ajoute :
+- Ajouter un domaine : Google Cloud → Google Auth Platform → Clients → « Site HaqqReason » → ajouter `https://<domaine>/api/compte/google/retour` dans « URI de redirection autorisés ».
+- Couper la connexion Google : variable Vercel `GOOGLE_CONNEXION` = `non`, puis redéployer.
+- Utiliser un autre client Google : variable Vercel `GOOGLE_CLIENT_ID`.
 
-| Nom | Valeur |
-|---|---|
-| `GOOGLE_CLIENT_ID` | l'ID client (il finit par `.apps.googleusercontent.com`) |
-| `GOOGLE_CLIENT_SECRET` | le code secret du client |
+### Vérifier
 
-Puis **Deployments → … → Redeploy** pour que le site les prenne en compte. Le code secret ne doit jamais être mis sur GitHub ni partagé.
-
-### 4. Vérifier
-
-1. Ouvre le site, clique « Mode utilisateur » : la page « Connexion » apparaît.
-2. « Continuer avec Google », choisis ton compte : tu arrives sur les espaces, avec ta pastille en haut à droite.
+1. Ouvre le site, clique « Mode utilisateur » : la page « Connexion » apparaît avec « Continuer avec Google ».
+2. Choisis ton compte : tu arrives sur les espaces, avec ta pastille en haut à droite.
 3. Écris une ligne dans Le Calame : « Enregistré sur ton compte » s'affiche.
 4. Ouvre le site sur ton téléphone, connecte-toi avec le même compte : le document est là.
 
-Si Google affiche « redirect_uri_mismatch » : l'adresse de l'étape 2.3 n'est pas exactement celle du site (attention au `https`, au `www`, et à l'absence de `/` final).
+Si Google affiche « redirect_uri_mismatch » : l'adresse du site n'est pas dans la liste de l'étape 2 (attention au `https`, au `www`, et à l'absence de `/` final).
 
 ## À savoir
 
 - Les textes de présentation d'origine ne promettent plus que « tout reste sur ton appareil ». Si tu avais réécrit ces textes dans le mode créateur, pense à les relire (cartes du Calame et du Truchement, description de L'Alambic « Transcrire »).
 - Avec des comptes, le site garde des données personnelles (nom, e-mail, documents). Chaque utilisateur peut tout supprimer lui-même depuis « Mon compte ». Pense à le dire dans une page « Confidentialité » si tu en ajoutes une.
-- Tests : `npm run test:sql` (base et droits d'accès) et `npm run test:compte` (sessions, retour de connexion, identité Google simulée).
+- Tests : `npm run test:sql` (base et droits d'accès) et `npm run test:compte` (sessions, jeton d'identité Google simulé).

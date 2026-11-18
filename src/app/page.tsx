@@ -73,6 +73,14 @@ export default function Accueil() {
           </nav>
         </div>
       </div>
+      <nav aria-label="Informations" className="relative mx-auto flex w-full max-w-6xl gap-5 px-5 pb-6 text-sm text-encre-douce sm:px-8">
+        <Link href="/confidentialite" className="underline-offset-4 hover:text-encre hover:underline">
+          Confidentialité
+        </Link>
+        <Link href="/conditions" className="underline-offset-4 hover:text-encre hover:underline">
+          Conditions d&apos;utilisation
+        </Link>
+      </nav>
     </main>
   );
 }

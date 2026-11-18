@@ -4,7 +4,6 @@ import { exportJWK, generateKeyPair, SignJWT } from "jose";
 
 process.env.SESSION_SECRET = "secret-de-test-secret-de-test-secret-de-test-1234";
 process.env.GOOGLE_CLIENT_ID = "client-de-test.apps.googleusercontent.com";
-process.env.GOOGLE_CLIENT_SECRET = "secret-google-de-test";
 
 let e = 0;
 const ok = (nom: string, cond: boolean, detail?: unknown) => {
@@ -26,6 +25,19 @@ for (const mauvais of ["https://pirate.example", "//pirate.example", "/\\pirate.
 ok("les espaces personnels demandent un compte", ["/utilisateur", "/ecrire", "/alambic", "/langues", "/favoris", "/compte"].every(jeton.espacePersonnel));
 ok("la bibliothèque et l'accueil restent ouverts", ["/", "/explorer", "/explorer/article/x", "/islam", "/recherche", "/contribuer", "/ecrire-autre", "/languesx"].every((c) => !jeton.espacePersonnel(c)));
 
+// ---------- La connexion Google est active sans aucun code secret ----------
+{
+  const avant = process.env.GOOGLE_CLIENT_ID;
+  delete process.env.GOOGLE_CLIENT_ID;
+  ok("sans réglage, l'identifiant public de HaqqReason est utilisé", jeton.identifiantClientGoogle() === jeton.CLIENT_GOOGLE_HAQQREASON && jeton.CLIENT_GOOGLE_HAQQREASON.endsWith(".apps.googleusercontent.com"));
+  ok("la connexion Google est active dès que les sessions peuvent être signées", jeton.googleConfigure());
+  process.env.GOOGLE_CONNEXION = "non";
+  ok("GOOGLE_CONNEXION=non la coupe", !jeton.googleConfigure());
+  delete process.env.GOOGLE_CONNEXION;
+  process.env.GOOGLE_CLIENT_ID = avant;
+  ok("GOOGLE_CLIENT_ID, s'il existe, remplace l'identifiant d'origine", jeton.identifiantClientGoogle() === avant);
+}
+
 // ---------- Le jeton de session ----------
 const compte = { id: "0f8fad5b-d9cb-469f-a165-70867728950e", nom: "Aïcha", email: "aicha@exemple.fr", sv: 3 };
 const signe = await jeton.signerCompte(compte);
@@ -40,62 +52,53 @@ const sansUuid = await new SignJWT({ uid: "1 or 1=1", sv: 1 }).setProtectedHeade
 ok("un identifiant de compte mal formé est refusé", (await jeton.verifierCompte(sansUuid)) === null);
 const perime = await new SignJWT({ uid: compte.id, sv: 1 }).setProtectedHeader({ alg: "HS256" }).setSubject("utilisateur").setExpirationTime(Math.floor(Date.now() / 1000) - 60).sign(cle);
 ok("un jeton expiré est refusé", (await jeton.verifierCompte(perime)) === null);
-const aller = await jeton.signerAllerRetour({ etat: "e", nonce: "n", verificateur: "v", retour: "/ecrire" });
+const aller = await jeton.signerAllerRetour({ etat: "e", nonce: "n", retour: "/ecrire" });
 ok("l'aller-retour chez Google se relit, et n'est pas un jeton de session", (await jeton.verifierAllerRetour(aller))?.retour === "/ecrire" && (await jeton.verifierCompte(aller)) === null && (await jeton.verifierAllerRetour(signe)) === null);
 
 // ---------- L'identité renvoyée par Google (Google simulé) ----------
 const { privateKey, publicKey } = await generateKeyPair("RS256");
 const { privateKey: autreCle } = await generateKeyPair("RS256");
 const jwk = { ...(await exportJWK(publicKey)), kid: "cle-1", alg: "RS256", use: "sig" };
-let jetonRendu = "";
-let demande: URLSearchParams | null = null;
 const vraiFetch = globalThis.fetch;
-globalThis.fetch = (async (entree: RequestInfo | URL, init?: RequestInit) => {
+globalThis.fetch = (async (entree: RequestInfo | URL) => {
   const url = String(entree instanceof Request ? entree.url : entree);
   if (url.startsWith("https://www.googleapis.com/oauth2/v3/certs")) return Response.json({ keys: [jwk] });
-  if (url === "https://oauth2.googleapis.com/token") {
-    demande = new URLSearchParams(String(init?.body));
-    return jetonRendu ? Response.json({ id_token: jetonRendu }) : new Response("{}", { status: 400 });
-  }
+  // Plus aucun échange de code : le site ne parle à Google que pour lire ses clés publiques.
   throw new Error(`appel réseau inattendu : ${url}`);
 }) as typeof fetch;
 
 const google = await import("../src/lib/compte/google");
-const fabriquer = (charge: Record<string, unknown>, options: { cle?: CryptoKey; emetteur?: string; public?: string; expire?: number } = {}) =>
+const fabriquer = (charge: Record<string, unknown>, options: { cle?: CryptoKey; emetteur?: string; public?: string; expire?: number; emis?: number } = {}) =>
   new SignJWT({ nonce: "nonce-attendu", email: "aicha@exemple.fr", email_verified: true, name: "Aïcha B.", ...charge })
     .setProtectedHeader({ alg: "RS256", kid: "cle-1" })
     .setSubject("google-123")
     .setIssuer(options.emetteur ?? "https://accounts.google.com")
     .setAudience(options.public ?? process.env.GOOGLE_CLIENT_ID!)
-    .setIssuedAt()
+    .setIssuedAt(options.emis ?? Math.floor(Date.now() / 1000))
     .setExpirationTime(options.expire ?? Math.floor(Date.now() / 1000) + 600)
     .sign(options.cle ?? privateKey);
-const echange = { code: "code-recu", verificateur: "verificateur-pkce", retour: "https://haqqreason.vercel.app/api/compte/google/retour", nonce: "nonce-attendu" };
+const verifier = (jetonGoogle: string | null) => google.identiteDepuisJeton(jetonGoogle, "nonce-attendu");
 
-jetonRendu = await fabriquer({});
-const identite = await google.identiteDepuisCode(echange);
+const identite = await verifier(await fabriquer({}));
 ok("Google confirme : on obtient l'identifiant, le nom et l'adresse", identite?.sub === "google-123" && identite.nom === "Aïcha B." && identite.email === "aicha@exemple.fr", identite);
-const d = demande as URLSearchParams | null;
-ok("l'échange envoie le code, le vérificateur PKCE et la même adresse de retour", d?.get("code") === "code-recu" && d.get("code_verifier") === "verificateur-pkce" && d.get("redirect_uri") === echange.retour && d.get("grant_type") === "authorization_code");
-jetonRendu = await fabriquer({ nonce: "un-autre" });
-ok("une réponse prévue pour une autre demande (nonce) est refusée", (await google.identiteDepuisCode(echange)) === null);
-jetonRendu = await fabriquer({}, { public: "une-autre-application" });
-ok("un jeton destiné à une autre application est refusé", (await google.identiteDepuisCode(echange)) === null);
-jetonRendu = await fabriquer({}, { emetteur: "https://faux-google.example" });
-ok("un jeton qui ne vient pas de Google est refusé", (await google.identiteDepuisCode(echange)) === null);
-jetonRendu = await fabriquer({}, { cle: autreCle });
-ok("un jeton signé par une autre clé est refusé", (await google.identiteDepuisCode(echange)) === null);
-jetonRendu = await fabriquer({}, { expire: Math.floor(Date.now() / 1000) - 60 });
-ok("un jeton expiré est refusé", (await google.identiteDepuisCode(echange)) === null);
-jetonRendu = await fabriquer({ email_verified: false });
-ok("une adresse que Google n'a pas vérifiée est refusée", (await google.identiteDepuisCode(echange)) === null);
-jetonRendu = await fabriquer({ name: "" });
-ok("sans nom, on prend le début de l'adresse", (await google.identiteDepuisCode(echange))?.nom === "aicha");
-jetonRendu = "";
-ok("si Google refuse le code, la connexion échoue proprement", (await google.identiteDepuisCode(echange)) === null);
+ok("une réponse prévue pour une autre demande (nonce) est refusée", (await verifier(await fabriquer({ nonce: "un-autre" }))) === null);
+ok("un jeton sans nonce est refusé", (await verifier(await fabriquer({ nonce: undefined }))) === null && (await google.identiteDepuisJeton(await fabriquer({}), "")) === null);
+ok("un jeton destiné à une autre application est refusé", (await verifier(await fabriquer({}, { public: "une-autre-application" }))) === null);
+ok("un jeton qui ne vient pas de Google est refusé", (await verifier(await fabriquer({}, { emetteur: "https://faux-google.example" }))) === null);
+ok("un jeton signé par une autre clé est refusé", (await verifier(await fabriquer({}, { cle: autreCle }))) === null);
+ok("un jeton expiré est refusé", (await verifier(await fabriquer({}, { expire: Math.floor(Date.now() / 1000) - 60 }))) === null);
+ok("un jeton émis il y a plus d'une heure est refusé", (await verifier(await fabriquer({}, { emis: Math.floor(Date.now() / 1000) - 7200, expire: Math.floor(Date.now() / 1000) + 600 }))) === null);
+ok("une adresse que Google n'a pas vérifiée est refusée", (await verifier(await fabriquer({ email_verified: false }))) === null);
+ok("sans nom, on prend le début de l'adresse", (await verifier(await fabriquer({ name: "" })))?.nom === "aicha");
+ok("sans jeton, ou avec n'importe quoi, la connexion échoue proprement", (await verifier(null)) === null && (await verifier("pas-un-jeton")) === null && (await verifier("x".repeat(9000))) === null);
+const sansSignature = (await fabriquer({})).split(".").slice(0, 2).join(".") + ".";
+ok("un jeton sans signature est refusé", (await verifier(sansSignature)) === null);
 
-const adresse = new URL(google.adresseAutorisation({ retour: echange.retour, etat: "etat-1", nonce: "nonce-1", defi: await google.defiPkce("verif") }));
-ok("la demande à Google ne réclame que l'identité (aucun accès aux e-mails ni aux fichiers)", adresse.origin === "https://accounts.google.com" && adresse.searchParams.get("scope") === "openid email profile" && adresse.searchParams.get("code_challenge_method") === "S256" && adresse.searchParams.get("state") === "etat-1");
+const retourGoogle = "https://haqqreason.vercel.app/api/compte/google/retour";
+const adresse = new URL(google.adresseAutorisation({ retour: retourGoogle, etat: "etat-1", nonce: "nonce-1" }));
+const pa = adresse.searchParams;
+ok("la demande à Google ne réclame que l'identité (aucun accès aux e-mails ni aux fichiers)", adresse.origin === "https://accounts.google.com" && pa.get("scope") === "openid email profile" && pa.get("state") === "etat-1" && pa.get("nonce") === "nonce-1");
+ok("Google renvoie le jeton par formulaire, jamais dans l'adresse", pa.get("response_type") === "id_token" && pa.get("response_mode") === "form_post" && pa.get("redirect_uri") === retourGoogle && pa.get("client_id") === process.env.GOOGLE_CLIENT_ID);
 const requete = (hote: string, proto?: string) => new Request(`http://interne/api`, { headers: { host: hote, ...(proto ? { "x-forwarded-proto": proto } : {}) } });
 ok("l'adresse de retour suit le domaine visité, toujours en https hors de la machine locale", google.adresseRetour(requete("haqqreason.com", "http")) === "https://haqqreason.com/api/compte/google/retour" && google.adresseRetour(requete("localhost:3000")) === "http://localhost:3000/api/compte/google/retour");
 globalThis.fetch = vraiFetch;

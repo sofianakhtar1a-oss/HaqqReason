@@ -71,6 +71,17 @@ export default async function PageConnexion({ searchParams }: Props) {
           Ouvrir la bibliothèque
         </Link>
       </p>
+      <p className="mt-4 text-center text-sm text-encre-douce">
+        En continuant, tu acceptes les{" "}
+        <Link href="/conditions" className="underline underline-offset-4 hover:text-encre">
+          conditions d&apos;utilisation
+        </Link>{" "}
+        et la{" "}
+        <Link href="/confidentialite" className="underline underline-offset-4 hover:text-encre">
+          politique de confidentialité
+        </Link>
+        .
+      </p>
     </CadreCreateur>
   );
 }
