@@ -6,6 +6,7 @@ import "@fontsource/amiri/400.css";
 import "@fontsource/amiri/700.css";
 import "./globals.css";
 import "./scene.css";
+import "./modules.css";
 import { BarreVueUtilisateur } from "@/components/compte/BarreVueUtilisateur";
 import { Synchronisation } from "@/components/compte/Synchronisation";
 import { InstallationRequise } from "@/components/InstallationRequise";

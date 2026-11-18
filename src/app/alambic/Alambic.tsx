@@ -110,7 +110,7 @@ export function Alambic() {
 
         <nav className="alambic-outils" aria-label="Outils">
           {OUTILS.map(({ id, nom, aide, Icone }) => (
-            <button key={id} type="button" className="alambic-tuile" aria-pressed={outil === id} onClick={() => choisir(id)}>
+            <button key={id} type="button" className="alambic-tuile" data-outil={id} aria-pressed={outil === id} onClick={() => choisir(id)}>
               <Icone className="size-6" strokeWidth={1.5} aria-hidden="true" />
               <span className="alambic-tuile-nom">{nom}</span>
               <span className="alambic-tuile-aide">{aide}</span>

@@ -98,7 +98,7 @@ export function ArticleLecture({ id, titre, resume, contenu, etiquettes, misAJou
           )}
           <Sommaire entrees={sommaire} />
 
-          <div className="lecture-corps mt-10">
+          <div className="lecture-corps lecture-article mt-10">
             <RenduDocument document={contenu} liens={liens} sources={sources} />
           </div>
 

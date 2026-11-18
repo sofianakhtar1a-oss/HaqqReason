@@ -48,6 +48,8 @@ export function ArcheBloc({ href, titre, description, accent, pied, espace = "pr
       onPointerLeave={relacher}
     >
       <Link href={href} className="arche" data-revele>
+        {/* L'univers du bloc : lumière qui se lève, bouclier, lame de lumière (voir modules.css). */}
+        <span className="arche-univers" aria-hidden="true" />
         <span className="arche-embleme">
           <Embleme className="size-8" strokeWidth={1.5} aria-hidden="true" />
         </span>

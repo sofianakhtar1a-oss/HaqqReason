@@ -13,6 +13,24 @@ import { usePathname } from "next/navigation";
  * Rien de tout cela ne se lance quand le système demande de réduire les animations.
  * On ne touche qu'à transform et opacity, et on ne calcule qu'une fois par image.
  */
+/** Dans les modules, ces éléments apparaissent d'eux-mêmes au défilement (sans toucher à leur code). */
+const A_REVELER = [
+  ".carte-article",
+  ".fiche-debat",
+  ".sophisme-carte",
+  ".alambic-piece",
+  ".lg-element",
+  ".lg-mini-theme",
+  ".resultat",
+  ":is(.lecture-article, .livre-corps) > :is(h2, h3, figure, blockquote)",
+  ":is(.lecture-article, .livre-corps) :is(.verset, .hadith)",
+].join(", ");
+
+/** Ce qui reçoit une onde au toucher : boutons, liens, onglets, puces. */
+const TOUCHABLE = "button, a[href], [role='button'], [role='tab'], [role='radio'], [role='menuitem'], summary, .puce-filtre";
+/** Là où l'on lit ou écrit, pas d'onde : rien ne doit distraire. */
+const SANS_ONDE = "[contenteditable]:not([contenteditable='false']), .calame-flux, .lg-fidele, .textLayer";
+
 export function Mouvements() {
   const chemin = usePathname();
 
@@ -59,6 +77,7 @@ export function Mouvements() {
     /** Inscrit un élément à révéler. Au tout premier passage, ce qui est déjà à l'écran reste tel quel. */
     function inscrire(el: Element, initial: boolean) {
       if (!revelations || !(el instanceof HTMLElement) || el.hasAttribute("data-vu")) return;
+      if (!el.hasAttribute("data-revele")) el.setAttribute("data-revele", "");
       if (initial && el.getBoundingClientRect().top < window.innerHeight) {
         el.setAttribute("data-vu", "deja");
         return;
@@ -68,7 +87,7 @@ export function Mouvements() {
 
     function lancerRevelations() {
       if (!revelations) return;
-      document.querySelectorAll("[data-revele]").forEach((el) => inscrire(el, true));
+      document.querySelectorAll(`[data-revele], ${A_REVELER}`).forEach((el) => inscrire(el, true));
       racine.classList.add("scene");
     }
 
@@ -99,6 +118,9 @@ export function Mouvements() {
       perimees = false;
       // L'aurore ne dérive que sur les pages de scène (voir scene.css).
       racine.toggleAttribute("data-scene-vive", actif && document.querySelector(".accueil, .halos, .perdu") !== null);
+      // Une lettrine d'or ouvre l'article, si son premier mot est en écriture latine.
+      const premier = document.querySelector<HTMLElement>(".lecture-article > p:first-of-type:not([data-lettrine])");
+      if (premier && /^[«"“(]?\s?\p{Script=Latin}/u.test((premier.textContent ?? "").trim())) premier.setAttribute("data-lettrine", "");
       couches = Array.from(document.querySelectorAll<HTMLElement>("[data-couche]"));
       const nouveau = document.querySelector<HTMLElement>("[data-viseur]");
       if (nouveau !== viseur) {
@@ -259,8 +281,8 @@ export function Mouvements() {
         change = true;
         for (const n of m.addedNodes) {
           if (!(n instanceof Element)) continue;
-          if (n.matches("[data-revele]")) inscrire(n, false);
-          if (n.firstElementChild) n.querySelectorAll("[data-revele]").forEach((el) => inscrire(el, false));
+          if (n.matches(`[data-revele], ${A_REVELER}`)) inscrire(n, false);
+          if (n.firstElementChild) n.querySelectorAll(`[data-revele], ${A_REVELER}`).forEach((el) => inscrire(el, false));
         }
       }
       if (change) {
@@ -293,9 +315,31 @@ export function Mouvements() {
       }
     }
 
+    /* ---------------- Une onde part du point touché ---------------- */
+    const ondes = document.createElement("div");
+    ondes.className = "ondes";
+    ondes.setAttribute("aria-hidden", "true");
+    document.body.append(ondes);
+    function surAppui(e: PointerEvent) {
+      if (!actif || e.button !== 0 || !(e.target instanceof Element)) return;
+      const cible = e.target.closest(TOUCHABLE);
+      if (!cible || cible.closest(SANS_ONDE) || (cible as HTMLButtonElement).disabled || cible.getAttribute("aria-disabled") === "true") return;
+      const b = cible.getBoundingClientRect();
+      const taille = Math.round(Math.min(240, Math.max(56, Math.max(b.width, b.height) * 1.5)));
+      const style = getComputedStyle(cible);
+      const onde = document.createElement("span");
+      onde.className = "onde";
+      onde.style.cssText = `left:${e.clientX - taille / 2}px;top:${e.clientY - taille / 2}px;width:${taille}px;height:${taille}px;--onde:${style.getPropertyValue("--accent").trim() || style.color}`;
+      ondes.append(onde);
+      const retirer = () => onde.remove();
+      onde.addEventListener("animationend", retirer, { once: true });
+      window.setTimeout(retirer, 900);
+    }
+
     if (actif) lancerRevelations();
     observateur.observe(document.body, { childList: true, subtree: true });
     document.addEventListener("pointermove", surPointeur, { passive: true });
+    document.addEventListener("pointerdown", surAppui, { passive: true });
     document.addEventListener("pointerout", surSortie, { passive: true });
     window.addEventListener("scroll", surDefilement, { passive: true });
     window.addEventListener("resize", surDefilement, { passive: true });
@@ -306,6 +350,8 @@ export function Mouvements() {
       observateur.disconnect();
       revelations?.disconnect();
       document.removeEventListener("pointermove", surPointeur);
+      document.removeEventListener("pointerdown", surAppui);
+      ondes.remove();
       document.removeEventListener("pointerout", surSortie);
       window.removeEventListener("scroll", surDefilement);
       window.removeEventListener("resize", surDefilement);
