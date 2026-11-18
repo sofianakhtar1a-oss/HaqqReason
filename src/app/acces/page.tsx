@@ -5,7 +5,7 @@ import { ArrowLeft, LockKeyhole } from "lucide-react";
 import { CadreCreateur } from "@/components/CadreCreateur";
 import { ContactReseaux } from "@/components/ContactReseaux";
 import { aAccesModules } from "@/lib/acces-modules";
-import { retourSur, versionAccesModules } from "@/lib/acces-modules-jeton";
+import { retourSur } from "@/lib/acces-modules-jeton";
 import { FormulaireAcces } from "./FormulaireAcces";
 
 export const metadata: Metadata = { title: "Accès réservé", robots: { index: false } };
@@ -23,7 +23,6 @@ export default async function PageAcces({ searchParams }: Props) {
   const retour = retourSur(typeof sp.retour === "string" ? sp.retour : null);
   if (await aAccesModules()) redirect(retour);
   const espace = sp.module === "islam" ? "islam" : "preuves";
-  const ouvert = (await versionAccesModules()) !== null;
 
   return (
     <CadreCreateur>
@@ -37,13 +36,7 @@ export default async function PageAcces({ searchParams }: Props) {
       </p>
 
       <div className="mt-6">
-        {ouvert ? (
-          <FormulaireAcces retour={retour} />
-        ) : (
-          <p className="message mt-2 border-trait text-encre-douce" role="status">
-            Ces modules ne sont pas encore ouverts. Écris-moi pour être prévenu de leur ouverture.
-          </p>
-        )}
+        <FormulaireAcces retour={retour} />
       </div>
 
       <h2 className="mt-8 text-lg font-bold">Tu n&apos;as pas le mot de passe ?</h2>
