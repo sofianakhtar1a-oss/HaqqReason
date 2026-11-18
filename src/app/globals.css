@@ -1063,7 +1063,10 @@ a.dossier:focus-visible {
   outline: none;
 }
 .tiptap:focus-visible {
-  outline: none;
+  /* Un anneau discret : le clavier voit où il écrit, sans cadre criard autour de la feuille. */
+  outline: 2px solid color-mix(in srgb, var(--or) 32%, transparent);
+  outline-offset: 6px;
+  border-radius: 0.75rem;
 }
 .tiptap p.is-empty::before,
 .tiptap :is(h2, h3, h4).is-empty::before,
@@ -1928,7 +1931,7 @@ kbd {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  min-height: 2.5rem;
+  min-height: 2.75rem; /* 44 px : la cible qu'un doigt atteint sans viser */
   padding: 0 1rem;
   border-radius: 999px;
   border: 1px solid var(--trait);

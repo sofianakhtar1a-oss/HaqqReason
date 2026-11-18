@@ -14,7 +14,7 @@ export function Sceau({ taille = 28 }: { taille?: number }) {
 /** Le logo mène à l'accueil, ou à la porte de l'espace en cours pour qui est arrivé par un lien direct. */
 export function Logo() {
   return (
-    <LienAccueil className="inline-flex items-center gap-2.5 font-display text-xl font-bold tracking-tight">
+    <LienAccueil className="inline-flex min-h-11 items-center gap-2.5 font-display text-xl font-bold tracking-tight">
       <span className="text-or">
         <Sceau />
       </span>

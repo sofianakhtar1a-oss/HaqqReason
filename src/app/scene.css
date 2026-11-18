@@ -1030,3 +1030,38 @@ html[data-ouverture="fondu"] .porte-particules {
 html[data-ouverture="fondu"] .ouverture {
   animation: ouverture-fin 0.5s ease 0.05s forwards !important;
 }
+
+/* ---------- Taste Skill : ce qui tourne sans fin peut s'arrêter ---------- */
+html[data-scene-pause] :is(.astrolabe-scene, .ciel, .atmosphere) *,
+html[data-scene-pause] :is(.atmosphere-nappe, .etincelle) {
+  animation-play-state: paused !important;
+}
+.pied-accueil a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem; /* 44 px : une cible au doigt, même sur un lien de pied de page */
+}
+.pause-scene {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2.75rem;
+  margin-left: auto;
+  color: var(--encre-douce);
+  transition: color 0.2s ease;
+}
+.pause-scene:hover {
+  color: var(--encre);
+}
+.pause-scene:active {
+  transform: translateY(1px);
+}
+.faits-accueil {
+  font-size: 1.0625rem;
+  line-height: 1.55;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pause-scene {
+    display: none; /* tout est déjà immobile */
+  }
+}

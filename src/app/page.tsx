@@ -4,6 +4,7 @@ import { BoutonTheme } from "@/components/BoutonTheme";
 import { BoutonCompte } from "@/components/compte/BoutonCompte";
 import { BoutonRecherche } from "@/components/PaletteRecherche";
 import { Astrolabe } from "@/components/scene/Astrolabe";
+import { BoutonPauseScene } from "@/components/scene/BoutonPauseScene";
 import { Ciel } from "@/components/scene/Ciel";
 import { MarqueAccueil } from "@/lib/client/acces";
 import { googleConfigure } from "@/lib/compte/jeton";
@@ -30,7 +31,7 @@ export default function Accueil() {
         <BoutonCompte />
       </div>
 
-      <Astrolabe className="pointer-events-none absolute -right-[38vw] -top-[22vw] w-[120vw] max-w-none opacity-45 md:-right-[14rem] md:top-1/2 md:w-[52rem] md:-translate-y-1/2 md:opacity-90" />
+      <Astrolabe className="pointer-events-none absolute -right-[16vw] -top-[16vw] w-[64vw] max-w-none opacity-45 md:-right-[14rem] md:top-1/2 md:w-[52rem] md:-translate-y-1/2 md:opacity-90" />
 
       <div className="relative mx-auto flex w-full max-w-6xl flex-1 flex-col justify-end px-5 pb-10 pt-[46vw] sm:px-8 md:justify-center md:py-16">
         <div className="max-w-xl">
@@ -47,6 +48,9 @@ export default function Accueil() {
             La vérité de l&apos;islam, établie par la preuve et par la raison.
           </p>
           <span className="trait-or" aria-hidden="true" />
+          <p className="apparait faits-accueil mt-5 max-w-[46ch] text-encre-douce" style={delai(0.65)}>
+            Une bibliothèque d&apos;apologétique et trois ateliers : écrire, convertir ses fichiers, apprendre 23 902 mots d&apos;anglais du A1 au C2.
+          </p>
 
           <nav aria-label="Choix du mode" className="mt-8 grid gap-4 sm:grid-cols-2">
             <Link
@@ -112,13 +116,14 @@ export default function Accueil() {
           </nav>
         </div>
       </div>
-      <nav aria-label="Informations" className="apparait relative mx-auto flex w-full max-w-6xl gap-5 px-5 pb-6 text-sm text-encre-douce sm:px-8" style={delai(1.35)}>
+      <nav aria-label="Informations" className="pied-accueil apparait relative mx-auto flex w-full max-w-6xl flex-wrap items-center gap-x-5 px-5 pb-4 text-sm text-encre-douce sm:px-8" style={delai(1.35)}>
         <Link href="/confidentialite" className="underline-offset-4 hover:text-encre hover:underline">
           Confidentialité
         </Link>
         <Link href="/conditions" className="underline-offset-4 hover:text-encre hover:underline">
           Conditions d&apos;utilisation
         </Link>
+        <BoutonPauseScene />
       </nav>
     </main>
   );
