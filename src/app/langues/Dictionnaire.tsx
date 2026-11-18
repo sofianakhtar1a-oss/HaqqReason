@@ -37,7 +37,7 @@ const MAITRISES: { id: FiltreMaitrise; nom: string }[] = [
   { id: "appris", nom: "Appris" },
   { id: "maitrise", nom: "Maîtrisés" },
 ];
-const NATURES = ["", "nom", "verbe", "adjectif", "adverbe", "expression", "préposition", "pronom", "conjonction"];
+const NATURES = ["", "nom", "verbe", "adjectif", "adverbe", "expression", "préposition", "pronom", "conjonction", "déterminant"];
 
 export function Dictionnaire({ lancer }: { lancer: (l: Lancement) => void }) {
   const { mots, cartes, pret } = useDonnees();

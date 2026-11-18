@@ -150,6 +150,28 @@ to say goodbye | dire au revoir | expr | A1 | /seɪ ɡʊdˈbaɪ/ | Say goodbye t
 mail | courrier | n | A2 | /meɪl/ | Has the mail arrived? | Le courrier est-il arrivé ?
 letter | lettre | n | A1 | /ˈletər/ | I wrote her a letter. | Je lui ai écrit une lettre.
 to top up | recharger (un compte, un forfait) | v | B1 | /tɒp ˈʌp/ | I need to top up my phone. | Je dois recharger mon forfait.
+card | carte | n | A1 | /kɑːd/ | I sent her a birthday card. | Je lui ai envoyé une carte d'anniversaire.
+bell | cloche ; sonnette | n | A1 | /bel/ | Ring the bell twice. | Sonne deux fois.
+envelope | enveloppe | n | A2 | /ˈenvələʊp/ | Put the letter in an envelope. | Mets la lettre dans une enveloppe.
+stamp | timbre | n | A2 | /stæmp/ | I need a stamp for this letter. | J'ai besoin d'un timbre pour cette lettre.
+tape | ruban adhésif ; cassette | n | A2 | /teɪp/ | Fix the poster with tape. | Fixe l'affiche avec du ruban adhésif.
+ID | pièce d'identité | n | A2 | /ˌaɪ ˈdiː/ | Do you have any ID? | Avez-vous une pièce d'identité ?
+doze | somme, petite sieste | n | B1 | /dəʊz/ | Grandpa had a doze after lunch. | Papi a fait un petit somme après le déjeuner.
+lighter | briquet | n | B1 | /ˈlaɪtə/ | Do you have a lighter? | Tu as un briquet ?
+loudspeaker | haut-parleur | n | B1 | /ˌlaʊdˈspiːkə/ | The announcement came over the loudspeaker. | L'annonce a été faite par haut-parleur.
+package | colis, paquet | n | B1 | /ˈpækɪdʒ/ | A package arrived for you. | Un colis est arrivé pour toi.
+pad | bloc-notes ; tampon | n | B2 | /pæd/ | Write it on this pad. | Écris-le sur ce bloc-notes.
+postal | postal | adj | B2 | /ˈpəʊstl/ | What's your postal address? | Quelle est votre adresse postale ?
+cord | cordon, corde | n | B2 | /kɔːd/ | Pull the cord to open the curtains. | Tire sur le cordon pour ouvrir les rideaux.
+paste | pâte ; colle | n | B2 | /peɪst/ | Mix the flour and water into a paste. | Mélange la farine et l'eau pour obtenir une pâte.
+glue | colle | n | B2 | /ɡluː/ | Stick the pieces with glue. | Colle les morceaux avec de la colle.
+cartridge | cartouche | n | C1 | /ˈkɑːtrɪdʒ/ | The printer needs a new ink cartridge. | L'imprimante a besoin d'une nouvelle cartouche d'encre.
+adhesive | adhésif | adj | C2 | /ədˈhiːsɪv/ | Use adhesive tape. | Utilise du ruban adhésif.
+buzzer | sonnerie, buzzer | n | C1 | /ˈbʌzə/ | Press the buzzer to enter. | Appuie sur la sonnette pour entrer.
+wick | mèche (de bougie) | n | C2 | /wɪk/ | Trim the wick of the candle. | Coupe la mèche de la bougie.
+stationery | fournitures de bureau, papeterie | n | B2 | /ˈsteɪʃənri/ | We sell books and stationery. | Nous vendons des livres et des fournitures de bureau.
+nozzle | embout, buse | n | C2 | /ˈnɒzl/ | Clean the nozzle of the hose. | Nettoie l'embout du tuyau.
+slumber | sommeil (littéraire) | n | C2 | /ˈslʌmbə/ | She fell into a deep slumber. | Elle est tombée dans un profond sommeil.
 `,
 );
 
@@ -392,6 +414,148 @@ flatbread | galette de pain | n | B1 | /ˈflætbred/ | We baked flatbread on the
 naan | naan | n | B1 | /nɑːn/ | Garlic naan goes well with curry. | Le naan à l'ail va bien avec le curry.
 chapati | chapati | n | B2 | /tʃəˈpɑːti/ | She made chapatis for dinner. | Elle a fait des chapatis pour le dîner.
 tortilla | tortilla | n | B1 | /tɔːˈtiːə/ | Wrap the chicken in a tortilla. | Enroule le poulet dans une tortilla.
+hamburger | hamburger | n | A1 | /ˈhæmbɜːɡə/ | He ordered a hamburger and chips. | Il a commandé un hamburger et des frites.
+ham | jambon | n | A2 | /hæm/ | I don't eat ham. | Je ne mange pas de jambon.
+jelly | gelée | n | A2 | /ˈdʒeli/ | The children love strawberry jelly. | Les enfants adorent la gelée à la fraise.
+spaghetti | spaghettis | n | A2 | /spəˈɡeti/ | We had spaghetti for dinner. | Nous avons mangé des spaghettis au dîner.
+fried | frit | adj | A2 | /fraɪd/ | I'd like fried eggs, please. | Je voudrais des œufs au plat, s'il vous plaît.
+bacon | bacon, lard | n | B1 | /ˈbeɪkən/ | Muslims don't eat bacon. | Les musulmans ne mangent pas de bacon.
+chewing gum | chewing-gum | n | B1 | /ˈtʃuːɪŋ ɡʌm/ | Don't throw your chewing gum on the ground. | Ne jette pas ton chewing-gum par terre.
+gravy | sauce (au jus de viande) | n | B1 | /ˈɡreɪvi/ | Pour some gravy on the potatoes. | Verse un peu de sauce sur les pommes de terre.
+nutritious | nourrissant, nutritif | adj | B1 | /njuˈtrɪʃəs/ | Lentils are cheap and nutritious. | Les lentilles sont bon marché et nourrissantes.
+oily | gras, huileux | adj | B1 | /ˈɔɪli/ | The chips are too oily. | Les frites sont trop grasses.
+pork | porc (viande) | n | B1 | /pɔːk/ | Muslims don't eat pork. | Les musulmans ne mangent pas de porc.
+stuffed | farci ; repu | adj | B1 | /stʌft/ | We had stuffed peppers for lunch. | Nous avons mangé des poivrons farcis au déjeuner.
+delicacy | mets délicat, spécialité | n | B2 | /ˈdelɪkəsi/ | Dates stuffed with almonds are a delicacy. | Les dattes fourrées aux amandes sont un mets délicat.
+nourishment | nourriture, alimentation | n | C1 | /ˈnʌrɪʃmənt/ | Plants get nourishment from the soil. | Les plantes tirent leur nourriture du sol.
+nut | noix, fruit à coque | n | B2 | /nʌt/ | Are there any nuts in this cake? | Y a-t-il des fruits à coque dans ce gâteau ?
+speciality | spécialité | n | B2 | /ˌspeʃiˈæləti/ | Couscous is the speciality of the house. | Le couscous est la spécialité de la maison.
+dietary | alimentaire | adj | C1 | /ˈdaɪətəri/ | Halal is a dietary law. | Le halal est une règle alimentaire.
+nutritional | nutritionnel | adj | C1 | /njuˈtrɪʃənl/ | Check the nutritional information. | Vérifie les valeurs nutritionnelles.
+gluten | gluten | n | B2 | /ˈɡluːtn/ | She can't eat gluten. | Elle ne peut pas manger de gluten.
+citrus | agrume | n | B2 | /ˈsɪtrəs/ | Oranges and lemons are citrus fruits. | Les oranges et les citrons sont des agrumes.
+culinary | culinaire | adj | C1 | /ˈkʌlɪnəri/ | Moroccan culinary traditions are rich. | Les traditions culinaires marocaines sont riches.
+to dine | dîner | v | C1 | /daɪn/ | We dined at a small restaurant. | Nous avons dîné dans un petit restaurant.
+caramel | caramel | n | B2 | /ˈkærəmel/ | I'd like caramel ice cream. | Je voudrais une glace au caramel.
+cracker | biscuit salé | n | B2 | /ˈkrækə/ | We ate cheese and crackers. | Nous avons mangé du fromage et des biscuits salés.
+noodle | nouille | n | B2 | /ˈnuːdl/ | We had noodles for dinner. | Nous avons mangé des nouilles au dîner.
+broth | bouillon | n | C1 | /brɒθ/ | Chicken broth is good when you're ill. | Le bouillon de poulet fait du bien quand on est malade.
+kale | chou frisé, chou kale | n | C1 | /keɪl/ | Kale is full of vitamins. | Le chou kale est plein de vitamines.
+oatmeal | flocons d'avoine, porridge | n | B2 | /ˈəʊtmiːl/ | I eat oatmeal for breakfast. | Je mange des flocons d'avoine au petit-déjeuner.
+cookbook | livre de cuisine | n | B2 | /ˈkʊkbʊk/ | She wrote a cookbook of Moroccan recipes. | Elle a écrit un livre de recettes marocaines.
+herbal | à base de plantes | adj | B2 | /ˈhɜːbl/ | Would you like some herbal tea? | Veux-tu une tisane ?
+provisions | provisions, vivres | n | C1 | /prəˈvɪʒnz/ | We bought provisions for the journey. | Nous avons acheté des vivres pour le voyage.
+staple | aliment de base | n | C1 | /ˈsteɪpl/ | Rice is a staple in Asia. | Le riz est un aliment de base en Asie.
+succulent | succulent, juteux | adj | C1 | /ˈsʌkjələnt/ | The lamb was succulent. | L'agneau était succulent.
+calorific | calorique | adj | C2 | /ˌkæləˈrɪfɪk/ | Nuts are very calorific. | Les fruits à coque sont très caloriques.
+additive | additif | n | C2 | /ˈædətɪv/ | The food contains no additives. | L'aliment ne contient aucun additif.
+confection | confiserie ; création | n | C2 | /kənˈfekʃn/ | The cake was a confection of cream and fruit. | Le gâteau était une création de crème et de fruits.
+to leaven | faire lever ; égayer | v | C2 | /ˈlevn/ | Yeast leavens the bread. | La levure fait lever le pain.
+cupcake | petit gâteau, cupcake | n | B2 | /ˈkʌpkeɪk/ | She baked cupcakes for the party. | Elle a préparé des petits gâteaux pour la fête.
+deli | épicerie fine, traiteur | n | B2 | /ˈdeli/ | We bought sandwiches at the deli. | Nous avons acheté des sandwichs chez le traiteur.
+fudge | caramel mou | n | B2 | /fʌdʒ/ | We bought fudge at the market. | Nous avons acheté du caramel au marché.
+aromatic | aromatique | adj | C1 | /ˌærəˈmætɪk/ | We used aromatic herbs. | Nous avons utilisé des herbes aromatiques.
+luncheon | déjeuner (soutenu) | n | C2 | /ˈlʌntʃən/ | They held a charity luncheon. | Ils ont organisé un déjeuner de bienfaisance.
+bran | son (de céréale) | n | C2 | /bræn/ | Bran is rich in fibre. | Le son est riche en fibres.
+starch | amidon, féculents | n | C1 | /stɑːtʃ/ | Potatoes are full of starch. | Les pommes de terre sont riches en amidon.
+cheddar | cheddar | n | B2 | /ˈtʃedə/ | I like cheddar cheese. | J'aime le cheddar.
+tofu | tofu | n | B2 | /ˈtəʊfuː/ | Tofu is made from soya beans. | Le tofu est fabriqué à partir de soja.
+fruity | fruité | adj | B2 | /ˈfruːti/ | The tea has a fruity taste. | Le thé a un goût fruité.
+cheesecake | gâteau au fromage | n | B2 | /ˈtʃiːzkeɪk/ | I'll have a slice of cheesecake. | Je prendrai une part de gâteau au fromage.
+brownie | brownie | n | B2 | /ˈbraʊni/ | She baked chocolate brownies. | Elle a fait des brownies au chocolat.
+to poach | pocher | v | C1 | /pəʊtʃ/ | Poach the eggs for three minutes. | Poche les œufs trois minutes.
+to garnish | garnir, décorer (un plat) | v | C1 | /ˈɡɑːnɪʃ/ | Garnish the soup with parsley. | Décore la soupe avec du persil.
+to deep-fry | faire frire (dans un bain d'huile) | v | B2 | /ˌdiːp ˈfraɪ/ | Deep-fry the falafel until golden. | Fais frire les falafels jusqu'à ce qu'ils soient dorés.
+to preheat | préchauffer | v | B2 | /ˌpriːˈhiːt/ | Preheat the oven to 180 degrees. | Préchauffe le four à 180 degrés.
+to braise | braiser | v | C1 | /breɪz/ | Braise the lamb slowly. | Fais braiser l'agneau lentement.
+to caramelise | caraméliser | v | C1 | /ˈkærəməlaɪz/ | Caramelise the onions in butter. | Fais caraméliser les oignons dans du beurre.
+savoury | salé, savoureux | adj | B2 | /ˈseɪvəri/ | I prefer savoury food to sweet. | Je préfère le salé au sucré.
+tangy | acidulé | adj | C1 | /ˈtæŋi/ | The sauce is sweet and tangy. | La sauce est sucrée et acidulée.
+appetiser | amuse-bouche, entrée | n | B2 | /ˈæpɪtaɪzə/ | We had olives as an appetiser. | Nous avons pris des olives en amuse-bouche.
+condiment | condiment | n | C1 | /ˈkɒndɪmənt/ | Mustard is a popular condiment. | La moutarde est un condiment apprécié.
+batter | pâte à frire, pâte à crêpes | n | B2 | /ˈbætə/ | Dip the fish in batter. | Trempe le poisson dans la pâte à frire.
+scone | scone (petit pain anglais) | n | B2 | /skɒn/ | We had scones with cream and jam. | Nous avons mangé des scones avec de la crème et de la confiture.
+swede | rutabaga | n | C1 | /swiːd/ | Mash the swede with butter. | Écrase le rutabaga avec du beurre.
+watercress | cresson | n | C1 | /ˈwɔːtəkres/ | Watercress is full of vitamins. | Le cresson est plein de vitamines.
+chives | ciboulette | n | B2 | /tʃaɪvz/ | Sprinkle chives on the potatoes. | Parsème de la ciboulette sur les pommes de terre.
+oregano | origan | n | B2 | /ˌɒrɪˈɡɑːnəʊ/ | Add a pinch of oregano. | Ajoute une pincée d'origan.
+clove | clou de girofle ; gousse | n | B2 | /kləʊv/ | Add two cloves of garlic. | Ajoute deux gousses d'ail.
+molasses | mélasse | n | C2 | /məˈlæsɪz/ | Molasses is a by-product of sugar. | La mélasse est un sous-produit du sucre.
+treacle | mélasse (raffinée) | n | C2 | /ˈtriːkl/ | Treacle tart is a British dessert. | La tarte à la mélasse est un dessert britannique.
+marmalade | confiture d'oranges | n | B2 | /ˈmɑːməleɪd/ | I spread marmalade on my toast. | J'étale de la confiture d'oranges sur mon toast.
+custard | crème anglaise | n | B2 | /ˈkʌstəd/ | We had apple pie with custard. | Nous avons mangé une tarte aux pommes avec de la crème anglaise.
+sorbet | sorbet | n | B2 | /ˈsɔːbeɪ/ | I'd like a lemon sorbet. | Je voudrais un sorbet au citron.
+meringue | meringue | n | B2 | /məˈræŋ/ | The cake is topped with meringue. | Le gâteau est recouvert de meringue.
+quince | coing | n | C1 | /kwɪns/ | Quince jam is delicious. | La confiture de coings est délicieuse.
+lychee | litchi | n | C1 | /ˌlaɪˈtʃiː/ | Lychees are sweet and juicy. | Les litchis sont sucrés et juteux.
+guava | goyave | n | C1 | /ˈɡwɑːvə/ | Guava juice is popular in Egypt. | Le jus de goyave est apprécié en Égypte.
+passion fruit | fruit de la passion | n | B2 | /ˈpæʃn fruːt/ | I love passion fruit juice. | J'adore le jus de fruit de la passion.
+tangerine | mandarine | n | B2 | /ˌtændʒəˈriːn/ | Peel a tangerine for your sister. | Épluche une mandarine pour ta sœur.
+nectarine | nectarine | n | B2 | /ˈnektəriːn/ | Nectarines are in season. | C'est la saison des nectarines.
+gooseberry | groseille à maquereau | n | C1 | /ˈɡʊzbəri/ | She made gooseberry jam. | Elle a fait de la confiture de groseilles à maquereau.
+blackcurrant | cassis | n | B2 | /ˌblækˈkʌrənt/ | Blackcurrant juice is rich in vitamin C. | Le jus de cassis est riche en vitamine C.
+cranberry | canneberge, cranberry | n | B2 | /ˈkrænbəri/ | Cranberry juice is good for health. | Le jus de cranberry est bon pour la santé.
+mulberry | mûre (du mûrier) | n | C1 | /ˈmʌlbəri/ | We picked mulberries from the tree. | Nous avons cueilli des mûres sur le mûrier.
+pecan | noix de pécan | n | C1 | /ˈpiːkən/ | Pecan pie is an American dessert. | La tarte aux noix de pécan est un dessert américain.
+cashew | noix de cajou | n | B2 | /ˈkæʃuː/ | Cashews are my favourite nuts. | Les noix de cajou sont mes fruits à coque préférés.
+macadamia | noix de macadamia | n | C1 | /ˌmækəˈdeɪmiə/ | The cookies contain macadamia nuts. | Les biscuits contiennent des noix de macadamia.
+pine nut | pignon de pin | n | C1 | /ˈpaɪn nʌt/ | Add some pine nuts to the salad. | Ajoute quelques pignons de pin à la salade.
+sunflower seeds | graines de tournesol | n | B2 | /ˈsʌnflaʊə siːdz/ | She sprinkled sunflower seeds on the bread. | Elle a parsemé des graines de tournesol sur le pain.
+millet | millet | n | C1 | /ˈmɪlɪt/ | Millet is grown in Africa. | Le millet est cultivé en Afrique.
+cornflour | fécule de maïs | n | B2 | /ˈkɔːnflaʊə/ | Thicken the sauce with cornflour. | Épaissis la sauce avec de la fécule de maïs.
+gelatine | gélatine | n | B2 | /ˈdʒelətiːn/ | Muslims avoid pork gelatine. | Les musulmans évitent la gélatine de porc.
+carbohydrate | glucide | n | B2 | /ˌkɑːbəʊˈhaɪdreɪt/ | Bread is rich in carbohydrates. | Le pain est riche en glucides.
+shellfish | fruits de mer, crustacés | n | B2 | /ˈʃelfɪʃ/ | Some people are allergic to shellfish. | Certaines personnes sont allergiques aux fruits de mer.
+lactose | lactose | n | B2 | /ˈlæktəʊs/ | This milk is lactose-free. | Ce lait est sans lactose.
+sugary | sucré | adj | B2 | /ˈʃʊɡəri/ | Avoid sugary drinks. | Évite les boissons sucrées.
+wafer | gaufrette | n | B2 | /ˈweɪfə/ | The children love chocolate wafers. | Les enfants adorent les gaufrettes au chocolat.
+freshness | fraîcheur | n | B2 | /ˈfreʃnəs/ | Check the freshness of the fish. | Vérifie la fraîcheur du poisson.
+peppermint | menthe poivrée | n | B2 | /ˈpepəmɪnt/ | I'd like a peppermint tea. | Je voudrais une infusion de menthe poivrée.
+brine | saumure | n | C2 | /braɪn/ | The olives are kept in brine. | Les olives sont conservées dans la saumure.
+casserole | ragoût ; cocotte | n | B2 | /ˈkæsərəʊl/ | She made a lamb casserole. | Elle a préparé un ragoût d'agneau.
+home-grown | du jardin, du terroir | adj | C1 | /ˌhəʊm ˈɡrəʊn/ | We eat home-grown tomatoes. | Nous mangeons des tomates du jardin.
+truffle | truffe | n | C1 | /ˈtrʌfl/ | Truffles are very expensive. | Les truffes sont très chères.
+whey | petit-lait, lactosérum | n | C1 | /weɪ/ | Athletes drink whey protein. | Les athlètes boivent des protéines de lactosérum.
+yam | igname | n | C1 | /jæm/ | Yams are popular in West Africa. | L'igname est populaire en Afrique de l'Ouest.
+gingerbread | pain d'épices | n | B2 | /ˈdʒɪndʒəbred/ | We baked gingerbread for the children. | Nous avons fait du pain d'épices pour les enfants.
+fructose | fructose | n | C2 | /ˈfrʌktəʊs/ | Fruit contains fructose. | Les fruits contiennent du fructose.
+fillet | filet (de viande, de poisson) | n | B2 | /ˈfɪlɪt/ | I'd like a fillet of salmon. | Je voudrais un filet de saumon.
+rhubarb | rhubarbe | n | B2 | /ˈruːbɑːb/ | She made a rhubarb tart. | Elle a fait une tarte à la rhubarbe.
+confectionery | confiserie | n | C1 | /kənˈfekʃənəri/ | The shop sells confectionery. | La boutique vend des confiseries.
+fennel | fenouil | n | B2 | /ˈfenl/ | Add some fennel to the salad. | Ajoute du fenouil à la salade.
+mousse | mousse (dessert) | n | B2 | /muːs/ | We had chocolate mousse for dessert. | Nous avons pris une mousse au chocolat en dessert.
+buttermilk | babeurre, lait fermenté | n | C1 | /ˈbʌtəmɪlk/ | They drink buttermilk with couscous. | Ils boivent du lben avec le couscous.
+cayenne pepper | piment de Cayenne | n | C1 | /ˌkeɪen ˈpepə/ | Add a pinch of cayenne pepper. | Ajoute une pincée de piment de Cayenne.
+antioxidant | antioxydant | n | C1 | /ˌæntiˈɒksɪdənt/ | Green tea is rich in antioxidants. | Le thé vert est riche en antioxydants.
+curd | lait caillé | n | C1 | /kɜːd/ | Curd is made from milk. | Le lait caillé est fait à partir de lait.
+sweetener | édulcorant | n | B2 | /ˈswiːtnə/ | Use a natural sweetener like honey. | Utilise un édulcorant naturel comme le miel.
+toffee | caramel (dur) | n | B2 | /ˈtɒfi/ | The children love toffee. | Les enfants adorent le caramel.
+venison | viande de cerf, gibier | n | C2 | /ˈvenɪsn/ | They served venison stew. | Ils ont servi un ragoût de gibier.
+purée | purée | n | B2 | /ˈpjʊəreɪ/ | Make a purée of the carrots. | Fais une purée de carottes.
+cacao | cacao (fève) | n | C2 | /kəˈkaʊ/ | Chocolate is made from cacao beans. | Le chocolat est fait à partir de fèves de cacao.
+meatloaf | pain de viande | n | B2 | /ˈmiːtləʊf/ | She made a beef meatloaf. | Elle a fait un pain de viande de bœuf.
+haddock | églefin | n | C2 | /ˈhædək/ | Smoked haddock is popular in Scotland. | L'églefin fumé est populaire en Écosse.
+margarine | margarine | n | B1 | /ˌmɑːdʒəˈriːn/ | Spread some margarine on the bread. | Étale de la margarine sur le pain.
+gourd | gourde, calebasse | n | C2 | /ɡʊəd/ | They drink water from a gourd. | Ils boivent de l'eau dans une calebasse.
+concoction | mixture, breuvage | n | C2 | /kənˈkɒkʃn/ | She drank a strange herbal concoction. | Elle a bu une étrange mixture d'herbes.
+cassava | manioc | n | C1 | /kəˈsɑːvə/ | Cassava is a staple food in Africa. | Le manioc est un aliment de base en Afrique.
+perishable | périssable | adj | C1 | /ˈperɪʃəbl/ | Keep perishable food in the fridge. | Garde les aliments périssables au réfrigérateur.
+rancid | rance | adj | C2 | /ˈrænsɪd/ | The butter has gone rancid. | Le beurre a ranci.
+buckwheat | sarrasin | n | C1 | /ˈbʌkwiːt/ | Breton crêpes are made with buckwheat. | Les galettes bretonnes sont faites au sarrasin.
+preservative | conservateur | n | C1 | /prɪˈzɜːvətɪv/ | This bread contains no preservatives. | Ce pain ne contient aucun conservateur.
+chowder | soupe épaisse (de poisson) | n | C2 | /ˈtʃaʊdə/ | We had fish chowder by the sea. | Nous avons mangé une soupe de poisson au bord de la mer.
+sourdough | pain au levain | n | B2 | /ˈsaʊədəʊ/ | He bakes sourdough every weekend. | Il fait du pain au levain chaque week-end.
+menthol | menthol | n | C2 | /ˈmenθɒl/ | The sweets contain menthol. | Les bonbons contiennent du menthol.
+wasabi | wasabi | n | C1 | /wəˈsɑːbi/ | Wasabi is very hot. | Le wasabi est très piquant.
+ginseng | ginseng | n | C1 | /ˈdʒɪnseŋ/ | Ginseng tea is said to boost energy. | Le thé au ginseng donnerait de l'énergie.
+rind | écorce, peau ; croûte | n | C2 | /raɪnd/ | Grate the lemon rind. | Râpe le zeste du citron.
+sucrose | saccharose | n | C2 | /ˈsuːkrəʊs/ | Table sugar is sucrose. | Le sucre de table est du saccharose.
+sundae | coupe glacée | n | B2 | /ˈsʌndeɪ/ | The children ordered chocolate sundaes. | Les enfants ont commandé des coupes glacées au chocolat.
+trimmings | garniture, accompagnements | n | C2 | /ˈtrɪmɪŋz/ | We had roast lamb with all the trimmings. | Nous avons mangé de l'agneau rôti avec toutes les garnitures.
+boneless | désossé | adj | C1 | /ˈbəʊnləs/ | Buy boneless chicken breasts. | Achète des blancs de poulet désossés.
+loin | longe, filet | n | C2 | /lɔɪn/ | We had a loin of lamb. | Nous avons mangé une longe d'agneau.
+marinade | marinade | n | B2 | /ˌmærɪˈneɪd/ | Leave the chicken in the marinade overnight. | Laisse le poulet dans la marinade toute la nuit.
+scallop | coquille Saint-Jacques | n | C1 | /ˈskɒləp/ | Scallops are popular in Brittany. | Les coquilles Saint-Jacques sont populaires en Bretagne.
 `,
 );
 
@@ -611,5 +775,348 @@ root canal | dévitalisation | n | C1 | /ˈruːt kəˌnæl/ | I need a root cana
 wisdom tooth | dent de sagesse | n | B1 | /ˈwɪzdəm tuːθ/ | My wisdom tooth hurts. | Ma dent de sagesse me fait mal.
 to floss | passer le fil dentaire | v | B1 | /flɒs/ | Floss your teeth every night. | Passe le fil dentaire chaque soir.
 dental floss | fil dentaire | n | B1 | /ˈdentl flɒs/ | Buy some dental floss. | Achète du fil dentaire.
+drug | médicament ; drogue | n | A2 | /drʌɡ/ | This drug can cause headaches. | Ce médicament peut provoquer des maux de tête.
+cigarette | cigarette | n | A2 | /ˌsɪɡəˈret/ | He gave up cigarettes last year. | Il a arrêté la cigarette l'an dernier.
+deficiency | carence | n | B2 | /dɪˈfɪʃnsi/ | He has a vitamin deficiency. | Il a une carence en vitamines.
+HIV | VIH | n | B2 | /ˌeɪtʃ aɪ ˈviː/ | HIV attacks the immune system. | Le VIH attaque le système immunitaire.
+hunger | faim | n | B1 | /ˈhʌŋɡə/ | Millions of people suffer from hunger. | Des millions de personnes souffrent de la faim.
+to inhale | inhaler, inspirer | v | B2 | /ɪnˈheɪl/ | Inhale deeply through your nose. | Inspire profondément par le nez.
+to inject | injecter | v | B2 | /ɪnˈdʒekt/ | The nurse injected the vaccine. | L'infirmière a injecté le vaccin.
+mental | mental | adj | B1 | /ˈmentl/ | Mental health is as important as physical health. | La santé mentale est aussi importante que la santé physique.
+nutrient | nutriment | n | B2 | /ˈnjuːtriənt/ | Vegetables are full of nutrients. | Les légumes sont riches en nutriments.
+painful | douloureux | adj | B1 | /ˈpeɪnfl/ | My knee is still painful. | Mon genou est encore douloureux.
+to paralyse | paralyser | v | B2 | /ˈpærəlaɪz/ | The accident paralysed his legs. | L'accident lui a paralysé les jambes.
+psychological | psychologique | adj | B1 | /ˌsaɪkəˈlɒdʒɪkl/ | The war left psychological scars. | La guerre a laissé des cicatrices psychologiques.
+smoker | fumeur | n | B1 | /ˈsməʊkə/ | He used to be a heavy smoker. | Il fumait beaucoup autrefois.
+to swell | gonfler, enfler | v | B1 | /swel/ | My ankle began to swell. | Ma cheville a commencé à enfler.
+syndrome | syndrome | n | B2 | /ˈsɪndrəʊm/ | He suffers from a rare syndrome. | Il souffre d'un syndrome rare.
+tobacco | tabac | n | B1 | /təˈbækəʊ/ | Tobacco kills millions of people. | Le tabac tue des millions de personnes.
+unwell | souffrant, malade | adj | B1 | /ʌnˈwel/ | She felt unwell and went home. | Elle ne se sentait pas bien et est rentrée chez elle.
+addict | toxicomane, accro | n | B2 | /ˈædɪkt/ | He's a former drug addict. | C'est un ancien toxicomane.
+addicted | dépendant, accro | adj | B2 | /əˈdɪktɪd/ | Many teenagers are addicted to their phones. | Beaucoup d'adolescents sont accros à leur téléphone.
+alcoholism | alcoolisme | n | B2 | /ˈælkəhɒlɪzəm/ | Alcoholism is a serious illness. | L'alcoolisme est une maladie grave.
+antibacterial | antibactérien | adj | B2 | /ˌæntibækˈtɪəriəl/ | Use an antibacterial soap. | Utilise un savon antibactérien.
+blindness | cécité | n | B2 | /ˈblaɪndnəs/ | The disease can cause blindness. | La maladie peut provoquer la cécité.
+cane | canne | n | B2 | /keɪn/ | My grandfather walks with a cane. | Mon grand-père marche avec une canne.
+chemotherapy | chimiothérapie | n | B2 | /ˌkiːməʊˈθerəpi/ | She is having chemotherapy. | Elle suit une chimiothérapie.
+compress | compresse | n | B2 | /ˈkɒmpres/ | Put a cold compress on your forehead. | Mets une compresse froide sur ton front.
+dental | dentaire | adj | B2 | /ˈdentl/ | I have a dental appointment. | J'ai rendez-vous chez le dentiste.
+disorder | trouble ; désordre | n | B2 | /dɪsˈɔːdə/ | He suffers from a sleep disorder. | Il souffre de troubles du sommeil.
+exhaustion | épuisement | n | B2 | /ɪɡˈzɔːstʃən/ | He collapsed from exhaustion. | Il s'est effondré d'épuisement.
+handicap | handicap | n | B2 | /ˈhændikæp/ | Not speaking English is a handicap here. | Ne pas parler anglais est un handicap ici.
+health care | soins de santé | n | B2 | /ˈhelθ keə/ | Everyone should have access to health care. | Tout le monde devrait avoir accès aux soins.
+hospice | centre de soins palliatifs | n | C1 | /ˈhɒspɪs/ | She spent her last days in a hospice. | Elle a passé ses derniers jours en soins palliatifs.
+to hospitalise | hospitaliser | v | B2 | /ˈhɒspɪtəlaɪz/ | He was hospitalised for a week. | Il a été hospitalisé une semaine.
+incurable | incurable | adj | B2 | /ɪnˈkjʊərəbl/ | The disease is incurable. | La maladie est incurable.
+to infect | infecter, contaminer | v | B2 | /ɪnˈfekt/ | The virus infected thousands. | Le virus a contaminé des milliers de personnes.
+infected | infecté | adj | B2 | /ɪnˈfektɪd/ | The wound is infected. | La plaie est infectée.
+inflammation | inflammation | n | B2 | /ˌɪnfləˈmeɪʃn/ | Ice reduces inflammation. | La glace réduit l'inflammation.
+influenza | grippe | n | B2 | /ˌɪnfluˈenzə/ | Influenza spreads quickly in winter. | La grippe se propage vite en hiver.
+intravenous | intraveineux | adj | C1 | /ˌɪntrəˈviːnəs/ | He was given an intravenous drip. | On lui a posé une perfusion intraveineuse.
+madness | folie | n | B2 | /ˈmædnəs/ | It would be madness to drive in this snow. | Ce serait de la folie de conduire sous cette neige.
+malady | mal, maladie (soutenu) | n | C2 | /ˈmælədi/ | Loneliness is the malady of our age. | La solitude est le mal de notre époque.
+malaria | paludisme | n | B2 | /məˈleəriə/ | Mosquitoes spread malaria. | Les moustiques transmettent le paludisme.
+neurosis | névrose | n | C1 | /njʊəˈrəʊsɪs/ | He was treated for neurosis. | Il a été soigné pour une névrose.
+outpatient | patient externe | n | C1 | /ˈaʊtpeɪʃnt/ | He was treated as an outpatient. | Il a été soigné en ambulatoire.
+paralysis | paralysie | n | B2 | /pəˈræləsɪs/ | The stroke caused paralysis of his left side. | L'AVC a provoqué une paralysie du côté gauche.
+penicillin | pénicilline | n | B2 | /ˌpenɪˈsɪlɪn/ | He's allergic to penicillin. | Il est allergique à la pénicilline.
+physician | médecin | n | B2 | /fɪˈzɪʃn/ | Ibn Sina was a famous physician. | Ibn Sina était un médecin célèbre.
+pneumonia | pneumonie | n | B2 | /njuːˈməʊniə/ | He was in hospital with pneumonia. | Il était hospitalisé pour une pneumonie.
+polio | polio | n | B2 | /ˈpəʊliəʊ/ | Polio has almost disappeared. | La polio a presque disparu.
+to prescribe | prescrire | v | B2 | /prɪˈskraɪb/ | The doctor prescribed antibiotics. | Le médecin a prescrit des antibiotiques.
+respiration | respiration | n | C1 | /ˌrespəˈreɪʃn/ | Check the patient's respiration. | Vérifie la respiration du patient.
+respiratory | respiratoire | adj | C1 | /rəˈspɪrətri/ | He has respiratory problems. | Il a des problèmes respiratoires.
+starvation | famine, inanition | n | B2 | /stɑːˈveɪʃn/ | Thousands died of starvation. | Des milliers de gens sont morts de faim.
+stimulant | stimulant, excitant | n | C1 | /ˈstɪmjələnt/ | Caffeine is a stimulant. | La caféine est un excitant.
+tiredness | fatigue | n | B2 | /ˈtaɪədnəs/ | Tiredness causes many accidents. | La fatigue provoque de nombreux accidents.
+transfusion | transfusion | n | C1 | /trænsˈfjuːʒn/ | He needed a blood transfusion. | Il a eu besoin d'une transfusion sanguine.
+tuberculosis | tuberculose | n | C1 | /tjuːˌbɜːkjuˈləʊsɪs/ | Tuberculosis is still a problem in many countries. | La tuberculose pose encore problème dans de nombreux pays.
+typhoid | typhoïde | n | C1 | /ˈtaɪfɔɪd/ | Dirty water spreads typhoid. | L'eau sale propage la typhoïde.
+surgical | chirurgical | adj | B2 | /ˈsɜːdʒɪkl/ | She wore a surgical mask. | Elle portait un masque chirurgical.
+rehabilitation | rééducation, réinsertion | n | C1 | /ˌriːəˌbɪlɪˈteɪʃn/ | He's in rehabilitation after the accident. | Il est en rééducation après l'accident.
+autism | autisme | n | C1 | /ˈɔːtɪzəm/ | Their son has autism. | Leur fils est autiste.
+pharmaceutical | pharmaceutique | adj | C1 | /ˌfɑːməˈsuːtɪkl/ | She works for a pharmaceutical company. | Elle travaille pour un laboratoire pharmaceutique.
+therapeutic | thérapeutique | adj | C1 | /ˌθerəˈpjuːtɪk/ | Gardening can be therapeutic. | Le jardinage peut être thérapeutique.
+cardiac | cardiaque | adj | C1 | /ˈkɑːdiæk/ | He had a cardiac arrest. | Il a fait un arrêt cardiaque.
+urine | urine | n | C1 | /ˈjʊərɪn/ | The doctor took a urine sample. | Le médecin a fait un prélèvement d'urine.
+diagnostic | diagnostique | adj | C1 | /ˌdaɪəɡˈnɒstɪk/ | They ran diagnostic tests. | Ils ont effectué des tests diagnostiques.
+insulin | insuline | n | C1 | /ˈɪnsjəlɪn/ | Diabetics may need insulin. | Les diabétiques peuvent avoir besoin d'insuline.
+reproductive | reproducteur | adj | C1 | /ˌriːprəˈdʌktɪv/ | We studied the reproductive system. | Nous avons étudié l'appareil reproducteur.
+fertility | fertilité | n | C1 | /fəˈtɪləti/ | The farmer improved the fertility of the soil. | L'agriculteur a amélioré la fertilité du sol.
+metabolism | métabolisme | n | C1 | /məˈtæbəlɪzəm/ | Exercise speeds up your metabolism. | L'exercice accélère le métabolisme.
+glucose | glucose | n | C1 | /ˈɡluːkəʊs/ | Check your blood glucose level. | Vérifie ta glycémie.
+seizure | crise (d'épilepsie) ; saisie | n | C1 | /ˈsiːʒə/ | He had a seizure at school. | Il a fait une crise à l'école.
+serum | sérum | n | C1 | /ˈsɪərəm/ | They developed a serum against the poison. | Ils ont mis au point un sérum contre le poison.
+bacterial | bactérien | adj | C1 | /bækˈtɪəriəl/ | It's a bacterial infection. | C'est une infection bactérienne.
+paranoid | paranoïaque | adj | C1 | /ˈpærənɔɪd/ | Don't be so paranoid! | Ne sois pas si paranoïaque !
+brace | appareil dentaire ; attelle | n | B2 | /breɪs/ | My daughter wears a brace on her teeth. | Ma fille porte un appareil dentaire.
+residency | internat (médecine) ; résidence | n | C1 | /ˈrezɪdənsi/ | She's doing her residency in a hospital. | Elle fait son internat dans un hôpital.
+invasive | invasif | adj | C1 | /ɪnˈveɪsɪv/ | It's a non-invasive treatment. | C'est un traitement non invasif.
+cardiovascular | cardiovasculaire | adj | C1 | /ˌkɑːdiəʊˈvæskjələ/ | Walking reduces cardiovascular disease. | La marche réduit les maladies cardiovasculaires.
+efficacy | efficacité | n | C2 | /ˈefɪkəsi/ | They tested the efficacy of the vaccine. | Ils ont testé l'efficacité du vaccin.
+obese | obèse | adj | C1 | /əʊˈbiːs/ | One in four adults is obese. | Un adulte sur quatre est obèse.
+sensory | sensoriel | adj | C1 | /ˈsensəri/ | Babies need sensory experiences. | Les bébés ont besoin d'expériences sensorielles.
+bipolar | bipolaire | adj | C1 | /ˌbaɪˈpəʊlə/ | He was diagnosed with bipolar disorder. | On lui a diagnostiqué un trouble bipolaire.
+physiology | physiologie | n | C1 | /ˌfɪziˈɒlədʒi/ | She teaches human physiology. | Elle enseigne la physiologie humaine.
+referral | orientation (vers un spécialiste) | n | C2 | /rɪˈfɜːrəl/ | Your doctor will give you a referral. | Ton médecin t'orientera vers un spécialiste.
+autopsy | autopsie | n | C1 | /ˈɔːtɒpsi/ | The autopsy revealed the cause of death. | L'autopsie a révélé la cause du décès.
+cigar | cigare | n | B2 | /sɪˈɡɑː/ | He smoked a cigar after dinner. | Il a fumé un cigare après le dîner.
+pathology | pathologie | n | C2 | /pəˈθɒlədʒi/ | He studies the pathology of cancer. | Il étudie la pathologie du cancer.
+concussion | commotion cérébrale | n | C1 | /kənˈkʌʃn/ | He suffered a concussion during the match. | Il a subi une commotion cérébrale pendant le match.
+psychiatry | psychiatrie | n | C1 | /saɪˈkaɪətri/ | She specialised in psychiatry. | Elle s'est spécialisée en psychiatrie.
+schizophrenia | schizophrénie | n | C2 | /ˌskɪtsəˈfriːniə/ | Schizophrenia can be treated. | La schizophrénie peut être soignée.
+impairment | déficience, trouble | n | C2 | /ɪmˈpeəmənt/ | He has a hearing impairment. | Il a un trouble de l'audition.
+longevity | longévité | n | C1 | /lɒnˈdʒevəti/ | A healthy diet promotes longevity. | Une alimentation saine favorise la longévité.
+neurological | neurologique | adj | C2 | /ˌnjʊərəˈlɒdʒɪkl/ | He has a neurological disorder. | Il souffre d'un trouble neurologique.
+medicinal | médicinal | adj | C1 | /məˈdɪsɪnl/ | Mint has medicinal properties. | La menthe a des propriétés médicinales.
+dosage | dose, posologie | n | C1 | /ˈdəʊsɪdʒ/ | Check the dosage on the box. | Vérifie la posologie sur la boîte.
+hepatitis | hépatite | n | C1 | /ˌhepəˈtaɪtɪs/ | Get vaccinated against hepatitis. | Fais-toi vacciner contre l'hépatite.
+nicotine | nicotine | n | C1 | /ˈnɪkətiːn/ | Cigarettes contain nicotine. | Les cigarettes contiennent de la nicotine.
+delusional | délirant | adj | C2 | /dɪˈluːʒənl/ | He's delusional if he thinks he'll win. | Il délire s'il croit qu'il va gagner.
+vascular | vasculaire | adj | C2 | /ˈvæskjələ/ | He has a vascular disease. | Il souffre d'une maladie vasculaire.
+pulmonary | pulmonaire | adj | C2 | /ˈpʌlmənəri/ | He has a pulmonary infection. | Il a une infection pulmonaire.
+sanity | santé mentale, raison | n | C1 | /ˈsænəti/ | Walking keeps me sane and protects my sanity. | Marcher préserve ma santé mentale.
+implant | implant | n | C1 | /ˈɪmplɑːnt/ | She has a dental implant. | Elle a un implant dentaire.
+containment | confinement, endiguement | n | C2 | /kənˈteɪnmənt/ | Containment of the virus is the priority. | L'endiguement du virus est la priorité.
+antibody | anticorps | n | C1 | /ˈæntibɒdi/ | The body produces antibodies. | Le corps produit des anticorps.
+contraction | contraction | n | C1 | /kənˈtrækʃn/ | The contractions started at midnight. | Les contractions ont commencé à minuit.
+epilepsy | épilepsie | n | C1 | /ˈepɪlepsi/ | She has epilepsy. | Elle est épileptique.
+opium | opium | n | C1 | /ˈəʊpiəm/ | Opium comes from poppies. | L'opium provient du pavot.
+diabetic | diabétique | adj | C1 | /ˌdaɪəˈbetɪk/ | He follows a diabetic diet. | Il suit un régime pour diabétiques.
+renal | rénal | adj | C2 | /ˈriːnl/ | He has renal failure. | Il souffre d'insuffisance rénale.
+psychotic | psychotique | adj | C2 | /saɪˈkɒtɪk/ | He had a psychotic episode. | Il a eu un épisode psychotique.
+sterile | stérile | adj | C1 | /ˈsteraɪl/ | Use a sterile bandage. | Utilise un pansement stérile.
+paranoia | paranoïa | n | C2 | /ˌpærəˈnɔɪə/ | His paranoia made him trust no one. | Sa paranoïa l'empêchait de faire confiance à quiconque.
+coronary | coronaire | adj | C2 | /ˈkɒrənri/ | He has coronary heart disease. | Il souffre d'une maladie coronarienne.
+hypertension | hypertension | n | C2 | /ˌhaɪpəˈtenʃn/ | Salt can cause hypertension. | Le sel peut provoquer de l'hypertension.
+dentistry | dentisterie | n | C2 | /ˈdentɪstri/ | She studied dentistry. | Elle a fait des études dentaires.
+tonic | tonique, fortifiant | n | C1 | /ˈtɒnɪk/ | A walk by the sea is a real tonic. | Une promenade au bord de la mer est un vrai remontant.
+dopamine | dopamine | n | C2 | /ˈdəʊpəmiːn/ | Exercise releases dopamine. | L'exercice libère de la dopamine.
+endemic | endémique | adj | C2 | /enˈdemɪk/ | Malaria is endemic in the region. | Le paludisme est endémique dans la région.
+morphine | morphine | n | C2 | /ˈmɔːfiːn/ | The patient was given morphine. | On a donné de la morphine au patient.
+oncology | oncologie | n | C2 | /ɒŋˈkɒlədʒi/ | She works in oncology. | Elle travaille en oncologie.
+pathological | pathologique | adj | C2 | /ˌpæθəˈlɒdʒɪkl/ | He's a pathological liar. | C'est un menteur pathologique.
+psychiatric | psychiatrique | adj | C1 | /ˌsaɪkiˈætrɪk/ | He was treated in a psychiatric hospital. | Il a été soigné dans un hôpital psychiatrique.
+clinical | clinique | adj | C1 | /ˈklɪnɪkl/ | The drug is in clinical trials. | Le médicament est en essais cliniques.
+claustrophobia | claustrophobie | n | C1 | /ˌklɔːstrəˈfəʊbiə/ | She suffers from claustrophobia. | Elle souffre de claustrophobie.
+dispensary | dispensaire | n | C1 | /dɪˈspensəri/ | Get your medicine at the dispensary. | Va chercher ton médicament au dispensaire.
+adrenaline | adrénaline | n | C1 | /əˈdrenəlɪn/ | Fear releases adrenaline. | La peur libère de l'adrénaline.
+sedentary | sédentaire | adj | C1 | /ˈsedntri/ | A sedentary lifestyle is bad for your health. | Un mode de vie sédentaire est mauvais pour la santé.
+consultation | consultation | n | C1 | /ˌkɒnslˈteɪʃn/ | The consultation lasted twenty minutes. | La consultation a duré vingt minutes.
+lethargy | léthargie | n | C1 | /ˈleθədʒi/ | Lack of iron can cause lethargy. | Le manque de fer peut entraîner une léthargie.
+lethargic | léthargique, amorphe | adj | C1 | /ləˈθɑːdʒɪk/ | I feel lethargic in this heat. | Je me sens amorphe par cette chaleur.
+to sedate | administrer un sédatif | v | C1 | /sɪˈdeɪt/ | The patient was sedated. | Le patient a été mis sous sédatifs.
+relapse | rechute | n | C1 | /ˈriːlæps/ | He had a relapse after a month. | Il a fait une rechute au bout d'un mois.
+salve | baume, pommade | n | C1 | /sælv/ | Apply this salve to the burn. | Applique ce baume sur la brûlure.
+symptomatic | symptomatique | adj | C2 | /ˌsɪmptəˈmætɪk/ | Fever is symptomatic of infection. | La fièvre est symptomatique d'une infection.
+restorative | réparateur, fortifiant | adj | C2 | /rɪˈstɔːrətɪv/ | Sleep has restorative powers. | Le sommeil a des vertus réparatrices.
+incision | incision | n | C1 | /ɪnˈsɪʒn/ | The surgeon made a small incision. | Le chirurgien a fait une petite incision.
+midwifery | obstétrique (profession de sage-femme) | n | C2 | /ˌmɪdˈwɪfəri/ | She studied midwifery. | Elle a fait des études de sage-femme.
+physiological | physiologique | adj | C2 | /ˌfɪziəˈlɒdʒɪkl/ | Hunger is a physiological need. | La faim est un besoin physiologique.
+antidote | antidote | n | C2 | /ˈæntidəʊt/ | Laughter is the best antidote to stress. | Le rire est le meilleur antidote au stress.
+to recuperate | récupérer, se rétablir | v | C2 | /rɪˈkuːpəreɪt/ | He's recuperating after the operation. | Il se rétablit après l'opération.
+recuperation | rétablissement | n | C2 | /rɪˌkuːpəˈreɪʃn/ | Recuperation will take weeks. | Le rétablissement prendra des semaines.
+contagion | contagion | n | C2 | /kənˈteɪdʒən/ | Fear spread like a contagion. | La peur s'est propagée comme une contagion.
+sterility | stérilité | n | C2 | /stəˈrɪləti/ | The illness can cause sterility. | La maladie peut provoquer la stérilité.
+to resuscitate | réanimer | v | C2 | /rɪˈsʌsɪteɪt/ | The paramedics resuscitated him. | Les secouristes l'ont réanimé.
+resuscitation | réanimation | n | C2 | /rɪˌsʌsɪˈteɪʃn/ | He was given resuscitation. | On lui a fait une réanimation.
+hysteria | hystérie | n | C2 | /hɪˈstɪəriə/ | There was mass hysteria. | Il y a eu une hystérie collective.
+laryngitis | laryngite | n | C2 | /ˌlærɪnˈdʒaɪtɪs/ | She lost her voice with laryngitis. | Elle a perdu la voix à cause d'une laryngite.
+depressive | dépressif | adj | C2 | /dɪˈpresɪv/ | She has a depressive illness. | Elle souffre d'une maladie dépressive.
+bout | accès, crise | n | C2 | /baʊt/ | He had a bout of flu. | Il a eu une grippe.
+gout | goutte (maladie) | n | C2 | /ɡaʊt/ | Gout makes the joints painful. | La goutte rend les articulations douloureuses.
+hypnotherapy | hypnothérapie | n | C2 | /ˌhɪpnəʊˈθerəpi/ | He tried hypnotherapy to stop smoking. | Il a essayé l'hypnothérapie pour arrêter de fumer.
+amnesia | amnésie | n | C2 | /æmˈniːziə/ | He suffered from amnesia after the accident. | Il a souffert d'amnésie après l'accident.
+infirmary | infirmerie | n | C2 | /ɪnˈfɜːməri/ | He was taken to the infirmary. | On l'a emmené à l'infirmerie.
+sling | écharpe (pour bras) ; fronde | n | C1 | /slɪŋ/ | His arm is in a sling. | Il a le bras en écharpe.
+holistic | holistique, global | adj | C2 | /həʊˈlɪstɪk/ | We need a holistic approach to health. | Il faut une approche globale de la santé.
+hormonal | hormonal | adj | C2 | /hɔːˈməʊnl/ | Teenagers go through hormonal changes. | Les adolescents vivent des changements hormonaux.
+malignant | malin (tumeur) | adj | C2 | /məˈlɪɡnənt/ | The tumour was not malignant. | La tumeur n'était pas maligne.
+measles | rougeole | n | B2 | /ˈmiːzlz/ | The child has measles. | L'enfant a la rougeole.
+migraine | migraine | n | B2 | /ˈmiːɡreɪn/ | She suffers from migraines. | Elle souffre de migraines.
+opioid | opioïde | n | C2 | /ˈəʊpiɔɪd/ | Opioids are strong painkillers. | Les opioïdes sont de puissants antidouleurs.
+prognosis | pronostic | n | C2 | /prɒɡˈnəʊsɪs/ | The prognosis is good. | Le pronostic est bon.
+saline | salin | adj | C2 | /ˈseɪlaɪn/ | Clean the wound with saline solution. | Nettoie la plaie avec une solution saline.
+steroid | stéroïde | n | C1 | /ˈsterɔɪd/ | The athlete took steroids. | L'athlète a pris des stéroïdes.
+healer | guérisseur | n | C2 | /ˈhiːlə/ | Time is a great healer. | Le temps guérit tout.
+intestinal | intestinal | adj | C2 | /ɪnˈtestɪnl/ | He has an intestinal infection. | Il a une infection intestinale.
+psychopath | psychopathe | n | C1 | /ˈsaɪkəpæθ/ | The killer was a psychopath. | Le tueur était un psychopathe.
+biopsy | biopsie | n | C2 | /ˈbaɪɒpsi/ | The doctor ordered a biopsy. | Le médecin a demandé une biopsie.
+fungal | fongique | adj | C2 | /ˈfʌŋɡl/ | He has a fungal infection. | Il a une infection fongique.
+epidemiology | épidémiologie | n | C2 | /ˌepɪˌdiːmiˈɒlədʒi/ | She is an expert in epidemiology. | Elle est experte en épidémiologie.
+cholera | choléra | n | C2 | /ˈkɒlərə/ | Cholera spreads through dirty water. | Le choléra se transmet par l'eau sale.
+detox | cure de désintoxication | n | C1 | /ˈdiːtɒks/ | He's in detox. | Il fait une cure de désintoxication.
+regimen | régime, traitement | n | C2 | /ˈredʒɪmən/ | He follows a strict exercise regimen. | Il suit un programme d'exercices strict.
+dialysis | dialyse | n | C2 | /daɪˈæləsɪs/ | He needs dialysis three times a week. | Il a besoin d'une dialyse trois fois par semaine.
+junkie | drogué ; accro | n | C1 | /ˈdʒʌŋki/ | He's a news junkie. | C'est un accro de l'actualité.
+syringe | seringue | n | C1 | /sɪˈrɪndʒ/ | The nurse filled the syringe. | L'infirmière a rempli la seringue.
+serotonin | sérotonine | n | C2 | /ˌserəˈtəʊnɪn/ | Sunlight increases serotonin. | La lumière du soleil augmente la sérotonine.
+smallpox | variole | n | C2 | /ˈsmɔːlpɒks/ | Smallpox has been eradicated. | La variole a été éradiquée.
+balm | baume | n | C2 | /bɑːm/ | Use lip balm in winter. | Utilise du baume à lèvres en hiver.
+collagen | collagène | n | C2 | /ˈkɒlədʒən/ | Skin loses collagen with age. | La peau perd du collagène avec l'âge.
+hypnosis | hypnose | n | C1 | /hɪpˈnəʊsɪs/ | He was treated under hypnosis. | Il a été soigné sous hypnose.
+psychotherapy | psychothérapie | n | C2 | /ˌsaɪkəʊˈθerəpi/ | She's having psychotherapy. | Elle suit une psychothérapie.
+malnutrition | malnutrition | n | C1 | /ˌmælnjuˈtrɪʃn/ | Many children suffer from malnutrition. | Beaucoup d'enfants souffrent de malnutrition.
+psychosis | psychose | n | C2 | /saɪˈkəʊsɪs/ | He suffered from psychosis. | Il souffrait de psychose.
+rabies | rage (maladie) | n | C1 | /ˈreɪbiːz/ | Rabies is transmitted by bites. | La rage se transmet par morsure.
+neurology | neurologie | n | C2 | /njʊəˈrɒlədʒi/ | She works in neurology. | Elle travaille en neurologie.
+transplantation | transplantation | n | C2 | /ˌtrænsplɑːnˈteɪʃn/ | Organ transplantation saves lives. | La transplantation d'organes sauve des vies.
+coronavirus | coronavirus | n | B2 | /kəˈrəʊnəvaɪrəs/ | The coronavirus spread around the world. | Le coronavirus s'est propagé dans le monde entier.
+prosthetic | prothétique | adj | C2 | /prɒsˈθetɪk/ | He has a prosthetic leg. | Il a une jambe artificielle.
+antigen | antigène | n | C2 | /ˈæntɪdʒən/ | The test detects the antigen. | Le test détecte l'antigène.
+lice | poux | n | B2 | /laɪs/ | The child has head lice. | L'enfant a des poux.
+septic | infecté, septique | adj | C2 | /ˈseptɪk/ | The wound went septic. | La plaie s'est infectée.
+tic | tic | n | C2 | /tɪk/ | He has a nervous tic. | Il a un tic nerveux.
+meningitis | méningite | n | C2 | /ˌmenɪnˈdʒaɪtɪs/ | Meningitis is a serious illness. | La méningite est une maladie grave.
+clot | caillot | n | C2 | /klɒt/ | He has a blood clot in his leg. | Il a un caillot de sang dans la jambe.
+radiology | radiologie | n | C2 | /ˌreɪdiˈɒlədʒi/ | She works in radiology. | Elle travaille en radiologie.
+sobriety | sobriété | n | C2 | /səˈbraɪəti/ | Sobriety is a virtue. | La sobriété est une vertu.
+hydration | hydratation | n | C1 | /haɪˈdreɪʃn/ | Hydration is important when fasting. | L'hydratation est importante pendant le jeûne.
+melanoma | mélanome | n | C2 | /ˌmeləˈnəʊmə/ | Sunburn can cause melanoma. | Les coups de soleil peuvent provoquer un mélanome.
+physiotherapy | kinésithérapie | n | B2 | /ˌfɪziəʊˈθerəpi/ | He needs physiotherapy for his knee. | Il a besoin de kinésithérapie pour son genou.
+contraception | contraception | n | C1 | /ˌkɒntrəˈsepʃn/ | The clinic gives advice on contraception. | La clinique donne des conseils sur la contraception.
+atrophy | atrophie | n | C2 | /ˈætrəfi/ | Muscles suffer atrophy without exercise. | Les muscles s'atrophient sans exercice.
+uninsured | non assuré | adj | C1 | /ˌʌnɪnˈʃʊəd/ | Millions of people are uninsured. | Des millions de personnes ne sont pas assurées.
+autoimmune | auto-immun | adj | C2 | /ˌɔːtəʊɪˈmjuːn/ | Lupus is an autoimmune disease. | Le lupus est une maladie auto-immune.
+pathogen | agent pathogène | n | C2 | /ˈpæθədʒən/ | Washing hands kills pathogens. | Se laver les mains tue les agents pathogènes.
+elixir | élixir | n | C2 | /ɪˈlɪksə/ | Honey was seen as an elixir of health. | Le miel était considéré comme un élixir de santé.
+vertigo | vertige | n | C1 | /ˈvɜːtɪɡəʊ/ | I suffer from vertigo on high buildings. | J'ai le vertige en haut des immeubles.
+incubation period | période d'incubation | n | C1 | /ˌɪŋkjuˈbeɪʃn ˈpɪəriəd/ | The virus has a short incubation period. | Le virus a une courte période d'incubation.
+pharmacology | pharmacologie | n | C1 | /ˌfɑːməˈkɒlədʒi/ | He studies pharmacology at university. | Il étudie la pharmacologie à l'université.
+preventable | évitable | adj | C1 | /prɪˈventəbl/ | Many deaths are preventable. | De nombreux décès sont évitables.
+incubator | couveuse, incubateur | n | C1 | /ˈɪŋkjubeɪtə/ | The premature baby is in an incubator. | Le bébé prématuré est en couveuse.
+preventative | préventif | adj | C1 | /prɪˈventətɪv/ | Preventative medicine saves lives. | La médecine préventive sauve des vies.
+rabid | enragé ; fanatique | adj | C2 | /ˈræbɪd/ | A rabid dog bit the child. | Un chien enragé a mordu l'enfant.
+toxicology | toxicologie | n | C2 | /ˌtɒksɪˈkɒlədʒi/ | The toxicology report is expected tomorrow. | Le rapport de toxicologie est attendu demain.
+cyst | kyste | n | C1 | /sɪst/ | The doctor removed a small cyst. | Le médecin a retiré un petit kyste.
+eradication | éradication | n | C1 | /ɪˌrædɪˈkeɪʃn/ | The eradication of polio is close. | L'éradication de la polio est proche.
+inhalation | inhalation | n | C1 | /ˌɪnhəˈleɪʃn/ | Smoke inhalation can kill. | L'inhalation de fumée peut tuer.
+intoxication | ivresse ; intoxication | n | C1 | /ɪnˌtɒksɪˈkeɪʃn/ | Islam forbids intoxication. | L'islam interdit l'ivresse.
+neonatal | néonatal | adj | C2 | /ˌniːəʊˈneɪtl/ | The baby is in the neonatal unit. | Le bébé est en néonatologie.
+retainer | appareil de contention (dentaire) ; provision (avocat) | n | C2 | /rɪˈteɪnə/ | She wears a retainer at night. | Elle porte un appareil dentaire la nuit.
+affliction | affliction, mal | n | C2 | /əˈflɪkʃn/ | Patience in affliction is rewarded. | La patience dans l'épreuve est récompensée.
+contraceptive | contraceptif | n | C1 | /ˌkɒntrəˈseptɪv/ | The doctor prescribed a contraceptive. | Le médecin a prescrit un contraceptif.
+immunology | immunologie | n | C2 | /ˌɪmjuˈnɒlədʒi/ | She is a professor of immunology. | Elle est professeure d'immunologie.
+palliative care | soins palliatifs | n | C1 | /ˈpæliətɪv keə/ | She works in palliative care. | Elle travaille en soins palliatifs.
+susceptibility | sensibilité, prédisposition | n | C2 | /səˌseptəˈbɪləti/ | Stress increases susceptibility to illness. | Le stress augmente la prédisposition aux maladies.
+vial | fiole | n | C1 | /ˈvaɪəl/ | The nurse filled a vial with blood. | L'infirmière a rempli une fiole de sang.
+placenta | placenta | n | C2 | /pləˈsentə/ | The placenta nourishes the baby. | Le placenta nourrit le bébé.
+salmonella | salmonelle | n | C1 | /ˌsælməˈnelə/ | Raw eggs can carry salmonella. | Les œufs crus peuvent contenir des salmonelles.
+aneurysm | anévrisme | n | C2 | /ˈænjərɪzəm/ | He died of a brain aneurysm. | Il est mort d'un anévrisme cérébral.
+lesion | lésion | n | C2 | /ˈliːʒn/ | The scan showed a small lesion. | Le scanner a montré une petite lésion.
+morgue | morgue | n | C1 | /mɔːɡ/ | The body was taken to the morgue. | Le corps a été transporté à la morgue.
+psychoanalysis | psychanalyse | n | C2 | /ˌsaɪkəʊəˈnæləsɪs/ | Freud founded psychoanalysis. | Freud a fondé la psychanalyse.
+radiotherapy | radiothérapie | n | C1 | /ˌreɪdiəʊˈθerəpi/ | She is having radiotherapy. | Elle suit une radiothérapie.
+cardiology | cardiologie | n | C1 | /ˌkɑːdiˈɒlədʒi/ | He works in the cardiology department. | Il travaille dans le service de cardiologie.
+eczema | eczéma | n | C1 | /ˈeksɪmə/ | The baby has eczema on his cheeks. | Le bébé a de l'eczéma sur les joues.
+electrolyte | électrolyte | n | C2 | /ɪˈlektrəlaɪt/ | Drink water with electrolytes after sport. | Bois de l'eau avec des électrolytes après le sport.
+nauseous | nauséeux | adj | C1 | /ˈnɔːziəs/ | I feel nauseous in the car. | J'ai la nausée en voiture.
+sociopath | sociopathe | n | C2 | /ˈsəʊsiəpæθ/ | The killer was described as a sociopath. | Le tueur a été décrit comme un sociopathe.
+trimester | trimestre (de grossesse) | n | C1 | /traɪˈmestə/ | She's in her third trimester. | Elle est dans son troisième trimestre de grossesse.
+endocrine | endocrinien | adj | C2 | /ˈendəʊkrɪn/ | The thyroid is part of the endocrine system. | La thyroïde fait partie du système endocrinien.
+albino | albinos | n | C2 | /ælˈbiːnəʊ/ | The albino child needs protection from the sun. | L'enfant albinos doit se protéger du soleil.
+acupuncture | acupuncture | n | C1 | /ˈækjupʌŋktʃə/ | He tried acupuncture for his back pain. | Il a essayé l'acupuncture pour son mal de dos.
+obstetrics | obstétrique | n | C2 | /əbˈstetrɪks/ | She specialises in obstetrics. | Elle est spécialisée en obstétrique.
+rheumatoid arthritis | polyarthrite rhumatoïde | n | C2 | /ˌruːmətɔɪd ɑːˈθraɪtɪs/ | She suffers from rheumatoid arthritis. | Elle souffre de polyarthrite rhumatoïde.
+cortisol | cortisol | n | C2 | /ˈkɔːtɪsɒl/ | Stress raises cortisol levels. | Le stress fait monter le taux de cortisol.
+to hydrate | (s')hydrater | v | B2 | /haɪˈdreɪt/ | Hydrate well before the fast. | Hydrate-toi bien avant le jeûne.
+sickly | maladif | adj | C1 | /ˈsɪkli/ | He was a sickly child. | C'était un enfant maladif.
+stomach ulcer | ulcère à l'estomac | n | C1 | /ˈstʌmək ˈʌlsə/ | Stress can worsen a stomach ulcer. | Le stress peut aggraver un ulcère à l'estomac.
+amputation | amputation | n | C2 | /ˌæmpjuˈteɪʃn/ | The infection led to amputation. | L'infection a entraîné une amputation.
+overuse | abus, usage excessif | n | C1 | /ˌəʊvəˈjuːs/ | The overuse of antibiotics is dangerous. | L'usage excessif d'antibiotiques est dangereux.
+pus | pus | n | C1 | /pʌs/ | The wound is full of pus. | La plaie est pleine de pus.
+suture | suture, point | n | C2 | /ˈsuːtʃə/ | The doctor removed the sutures. | Le médecin a retiré les points de suture.
+pacemaker | stimulateur cardiaque | n | C1 | /ˈpeɪsmeɪkə/ | He was fitted with a pacemaker. | On lui a posé un stimulateur cardiaque.
+ventilator | respirateur artificiel | n | C1 | /ˈventɪleɪtə/ | The patient is on a ventilator. | Le patient est sous respirateur.
+delirium | délire | n | C2 | /dɪˈlɪriəm/ | The fever caused delirium. | La fièvre a provoqué un délire.
+pathogenic | pathogène | adj | C2 | /ˌpæθəˈdʒenɪk/ | Some bacteria are pathogenic. | Certaines bactéries sont pathogènes.
+delirious | délirant ; fou (de joie) | adj | C2 | /dɪˈlɪriəs/ | The fans were delirious with joy. | Les supporters étaient fous de joie.
+geriatric | gériatrique | adj | C2 | /ˌdʒeriˈætrɪk/ | She works in a geriatric ward. | Elle travaille dans un service de gériatrie.
+morbidity | morbidité | n | C2 | /mɔːˈbɪdəti/ | Obesity increases morbidity. | L'obésité accroît la morbidité.
+redness | rougeur | n | B2 | /ˈrednəs/ | The cream reduces redness. | La crème réduit les rougeurs.
+sedation | sédation | n | C2 | /sɪˈdeɪʃn/ | The patient is under sedation. | Le patient est sous sédation.
+to stutter | bégayer | v | C1 | /ˈstʌtə/ | He stutters when he's nervous. | Il bégaie quand il est nerveux.
+orthopaedic | orthopédique | adj | C2 | /ˌɔːθəˈpiːdɪk/ | She sees an orthopaedic surgeon. | Elle consulte un chirurgien orthopédiste.
+sufferer | malade, personne qui souffre | n | C1 | /ˈsʌfərə/ | Asthma sufferers should avoid smoke. | Les asthmatiques devraient éviter la fumée.
+antidepressant | antidépresseur | n | C1 | /ˌæntidɪˈpresnt/ | The doctor prescribed an antidepressant. | Le médecin a prescrit un antidépresseur.
+dengue fever | dengue | n | C2 | /ˈdeŋɡi ˌfiːvə/ | Mosquitoes spread dengue fever. | Les moustiques transmettent la dengue.
+dermatology | dermatologie | n | C2 | /ˌdɜːməˈtɒlədʒi/ | She specialises in dermatology. | Elle est spécialisée en dermatologie.
+ophthalmology | ophtalmologie | n | C2 | /ˌɒfθælˈmɒlədʒi/ | He works in ophthalmology. | Il travaille en ophtalmologie.
+bronchitis | bronchite | n | C1 | /brɒŋˈkaɪtɪs/ | He has bronchitis. | Il a une bronchite.
+epileptic | épileptique | adj | C1 | /ˌepɪˈleptɪk/ | He had an epileptic fit. | Il a fait une crise d'épilepsie.
+inhaler | inhalateur | n | B2 | /ɪnˈheɪlə/ | He always carries his inhaler. | Il a toujours son inhalateur sur lui.
+necrosis | nécrose | n | C2 | /neˈkrəʊsɪs/ | Frostbite can cause necrosis. | Les gelures peuvent provoquer une nécrose.
+abrasion | écorchure, abrasion | n | C2 | /əˈbreɪʒn/ | He has minor abrasions on his knees. | Il a de légères écorchures aux genoux.
+dermatitis | dermatite | n | C2 | /ˌdɜːməˈtaɪtɪs/ | The soap gave him dermatitis. | Le savon lui a donné une dermatite.
+crutch | béquille | n | B2 | /krʌtʃ/ | He walks with a crutch. | Il marche avec une béquille.
+deafness | surdité | n | C1 | /ˈdefnəs/ | Deafness can be partial or total. | La surdité peut être partielle ou totale.
+menstruation | menstruation, règles | n | C1 | /ˌmenstruˈeɪʃn/ | Women don't pray during menstruation. | Les femmes ne prient pas pendant leurs règles.
+psychopathic | psychopathe | adj | C2 | /ˌsaɪkəˈpæθɪk/ | The killer had psychopathic tendencies. | Le tueur avait des tendances psychopathes.
+abnormality | anomalie | n | C1 | /ˌæbnɔːˈmæləti/ | The scan showed no abnormality. | L'échographie n'a montré aucune anomalie.
+asymptomatic | asymptomatique | adj | C2 | /ˌeɪsɪmptəˈmætɪk/ | Many patients are asymptomatic. | Beaucoup de patients sont asymptomatiques.
+drunkenness | ivresse, ivrognerie | n | C1 | /ˈdrʌŋkənnəs/ | Drunkenness is forbidden in Islam. | L'ivresse est interdite en islam.
+gauze | gaze | n | C1 | /ɡɔːz/ | The nurse covered the wound with gauze. | L'infirmière a couvert la plaie de gaze.
+hallucination | hallucination | n | C1 | /həˌluːsɪˈneɪʃn/ | The fever caused hallucinations. | La fièvre a provoqué des hallucinations.
+lifesaving | qui sauve des vies | adj | C1 | /ˈlaɪfseɪvɪŋ/ | She received lifesaving treatment. | Elle a reçu un traitement vital.
+numbness | engourdissement | n | C1 | /ˈnʌmnəs/ | He felt numbness in his fingers. | Il ressentait un engourdissement dans les doigts.
+opiate | opiacé | n | C2 | /ˈəʊpiət/ | Opiates are highly addictive. | Les opiacés créent une forte dépendance.
+psoriasis | psoriasis | n | C2 | /səˈraɪəsɪs/ | She suffers from psoriasis. | Elle souffre de psoriasis.
+triage | triage (des patients) | n | C2 | /ˈtriːɑːʒ/ | Nurses carry out triage in the emergency room. | Les infirmières font le tri aux urgences.
+cirrhosis | cirrhose | n | C2 | /səˈrəʊsɪs/ | Alcohol can cause cirrhosis. | L'alcool peut provoquer une cirrhose.
+dilation | dilatation | n | C2 | /daɪˈleɪʃn/ | The drops cause dilation of the pupils. | Les gouttes provoquent une dilatation des pupilles.
+gash | entaille, balafre | n | C1 | /ɡæʃ/ | He had a deep gash on his arm. | Il avait une profonde entaille au bras.
+heartburn | brûlures d'estomac | n | C1 | /ˈhɑːtbɜːn/ | Spicy food gives me heartburn. | La nourriture épicée me donne des brûlures d'estomac.
+homeopathy | homéopathie | n | C2 | /ˌhəʊmiˈɒpəθi/ | There's little evidence for homeopathy. | Il y a peu de preuves en faveur de l'homéopathie.
+metastasis | métastase | n | C2 | /məˈtæstəsɪs/ | Early treatment prevents metastasis. | Un traitement précoce empêche les métastases.
+tetanus | tétanos | n | C1 | /ˈtetənəs/ | Get a tetanus vaccination. | Fais-toi vacciner contre le tétanos.
+thrombosis | thrombose | n | C2 | /θrɒmˈbəʊsɪs/ | Long flights increase the risk of thrombosis. | Les longs vols augmentent le risque de thrombose.
+treatable | soignable | adj | C1 | /ˈtriːtəbl/ | The disease is treatable. | La maladie est soignable.
+dissociation | dissociation | n | C2 | /dɪˌsəʊsiˈeɪʃn/ | Trauma can cause dissociation. | Un traumatisme peut provoquer une dissociation.
+lactation | lactation | n | C2 | /lækˈteɪʃn/ | The doctor advised her during lactation. | Le médecin l'a conseillée pendant l'allaitement.
+neurosurgery | neurochirurgie | n | C2 | /ˈnjʊərəʊsɜːdʒəri/ | He trained in neurosurgery. | Il s'est formé en neurochirurgie.
+paediatric | pédiatrique | adj | C1 | /ˌpiːdiˈætrɪk/ | She works in a paediatric ward. | Elle travaille dans un service de pédiatrie.
+antiviral | antiviral | adj | C2 | /ˌæntiˈvaɪrəl/ | The doctor prescribed an antiviral drug. | Le médecin a prescrit un antiviral.
+deformity | difformité, malformation | n | C2 | /dɪˈfɔːməti/ | He was born with a deformity. | Il est né avec une malformation.
+psychoactive | psychotrope | adj | C2 | /ˌsaɪkəʊˈæktɪv/ | Psychoactive substances affect the mind. | Les substances psychotropes agissent sur l'esprit.
+spasm | spasme | n | C1 | /ˈspæzəm/ | He had a muscle spasm. | Il a eu un spasme musculaire.
+subcutaneous | sous-cutané | adj | C2 | /ˌsʌbkjuˈteɪniəs/ | It's a subcutaneous injection. | C'est une injection sous-cutanée.
+swab | écouvillon, coton | n | C1 | /swɒb/ | The nurse took a swab from his throat. | L'infirmière a fait un prélèvement dans sa gorge.
+tinnitus | acouphène | n | C2 | /ˈtɪnɪtəs/ | Loud music can cause tinnitus. | La musique forte peut provoquer des acouphènes.
+feverish | fiévreux ; fébrile | adj | C1 | /ˈfiːvərɪʃ/ | The child is feverish. | L'enfant est fiévreux.
+predisposition | prédisposition | n | C2 | /ˌpriːdɪspəˈzɪʃn/ | He has a genetic predisposition to diabetes. | Il a une prédisposition génétique au diabète.
+stent | stent | n | C2 | /stent/ | The surgeon inserted a stent. | Le chirurgien a posé un stent.
+abscess | abcès | n | C2 | /ˈæbses/ | He has an abscess on his tooth. | Il a un abcès dentaire.
+acuity | acuité | n | C2 | /əˈkjuːəti/ | Visual acuity declines with age. | L'acuité visuelle diminue avec l'âge.
+comatose | comateux | adj | C2 | /ˈkəʊmətəʊs/ | The patient is comatose. | Le patient est dans le coma.
+gestational | gestationnel | adj | C2 | /dʒeˈsteɪʃənl/ | She has gestational diabetes. | Elle a un diabète gestationnel.
+midlife crisis | crise de la quarantaine | n | C1 | /ˌmɪdlaɪf ˈkraɪsɪs/ | He bought a sports car during his midlife crisis. | Il a acheté une voiture de sport pendant sa crise de la quarantaine.
+mumps | oreillons | n | B2 | /mʌmps/ | The child has mumps. | L'enfant a les oreillons.
+sanatorium | sanatorium | n | C2 | /ˌsænəˈtɔːriəm/ | He spent a year in a sanatorium. | Il a passé un an au sanatorium.
+urology | urologie | n | C2 | /jʊˈrɒlədʒi/ | He was referred to urology. | Il a été orienté vers l'urologie.
+communicable | contagieux, transmissible | adj | C2 | /kəˈmjuːnɪkəbl/ | Measles is a communicable disease. | La rougeole est une maladie transmissible.
+dysentery | dysenterie | n | C2 | /ˈdɪsəntri/ | Dirty water causes dysentery. | L'eau sale provoque la dysenterie.
+healthful | sain, bon pour la santé | adj | C2 | /ˈhelθfl/ | Dates are a healthful food. | Les dattes sont un aliment sain.
+malnourished | mal nourri, dénutri | adj | C1 | /ˌmælˈnʌrɪʃt/ | Many children are malnourished. | Beaucoup d'enfants sont mal nourris.
+prosthesis | prothèse | n | C2 | /prɒsˈθiːsɪs/ | He walks with a leg prosthesis. | Il marche avec une prothèse de jambe.
+suffocation | suffocation, asphyxie | n | C2 | /ˌsʌfəˈkeɪʃn/ | He died of suffocation. | Il est mort par asphyxie.
+leper | lépreux | n | C2 | /ˈlepə/ | Jesus healed the lepers. | Jésus a guéri les lépreux.
+rejuvenation | rajeunissement | n | C2 | /rɪˌdʒuːvəˈneɪʃn/ | The cream promises skin rejuvenation. | La crème promet un rajeunissement de la peau.
+scab | croûte | n | C1 | /skæb/ | Don't pick the scab. | N'arrache pas la croûte.
+atherosclerosis | athérosclérose | n | C2 | /ˌæθərəʊskləˈrəʊsɪs/ | Smoking causes atherosclerosis. | Le tabac provoque l'athérosclérose.
+encephalitis | encéphalite | n | C2 | /enˌsefəˈlaɪtɪs/ | Encephalitis is an inflammation of the brain. | L'encéphalite est une inflammation du cerveau.
+ligature | ligature | n | C2 | /ˈlɪɡətʃə/ | The surgeon tied a ligature. | Le chirurgien a fait une ligature.
+pestilence | pestilence, épidémie | n | C2 | /ˈpestɪləns/ | War and pestilence ravaged the land. | La guerre et l'épidémie ont ravagé le pays.
+angina | angine de poitrine | n | C2 | /ænˈdʒaɪnə/ | He suffers from angina. | Il souffre d'angine de poitrine.
+embolism | embolie | n | C2 | /ˈembəlɪzəm/ | He died of a pulmonary embolism. | Il est mort d'une embolie pulmonaire.
+hypersensitivity | hypersensibilité | n | C2 | /ˌhaɪpəˌsensəˈtɪvəti/ | She has a hypersensitivity to noise. | Elle a une hypersensibilité au bruit.
+insemination | insémination | n | C2 | /ɪnˌsemɪˈneɪʃn/ | Artificial insemination is used on farms. | L'insémination artificielle est utilisée dans les fermes.
+wart | verrue | n | C1 | /wɔːt/ | He has a wart on his finger. | Il a une verrue au doigt.
+appendicitis | appendicite | n | B2 | /əˌpendəˈsaɪtɪs/ | He had an operation for appendicitis. | Il a été opéré de l'appendicite.
+hyperactive | hyperactif | adj | C1 | /ˌhaɪpərˈæktɪv/ | Sugar makes the children hyperactive. | Le sucre rend les enfants hyperactifs.
+leukaemia | leucémie | n | C2 | /luːˈkiːmiə/ | The child is being treated for leukaemia. | L'enfant est soigné pour une leucémie.
+osteoarthritis | arthrose | n | C2 | /ˌɒstiəʊɑːˈθraɪtɪs/ | My grandmother has osteoarthritis. | Ma grand-mère a de l'arthrose.
+scalpel | scalpel | n | C2 | /ˈskælpəl/ | The surgeon picked up a scalpel. | Le chirurgien a pris un scalpel.
+typhus | typhus | n | C2 | /ˈtaɪfəs/ | Typhus spread through the camp. | Le typhus s'est propagé dans le camp.
+post-mortem | autopsie | n | C1 | /ˌpəʊst ˈmɔːtəm/ | A post-mortem revealed the cause of death. | Une autopsie a révélé la cause du décès.
 `,
 );

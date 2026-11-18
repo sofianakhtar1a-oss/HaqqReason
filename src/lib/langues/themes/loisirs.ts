@@ -242,5 +242,62 @@ dog walking | promenade de chiens | n | B1 | /ˈdɒɡ ˌwɔːkɪŋ/ | She earns 
 tai chi | tai-chi | n | B1 | /ˌtaɪ ˈtʃiː/ | Old people practise tai chi in the park. | Des personnes âgées pratiquent le tai-chi au parc.
 spa day | journée au spa | n | B1 | /ˈspɑː deɪ/ | I gave my mum a spa day. | J'ai offert une journée au spa à ma mère.
 pampering | chouchoutage, soins | n | B2 | /ˈpæmpərɪŋ/ | She needs a bit of pampering. | Elle a besoin d'être un peu chouchoutée.
+photo | photo | n | A1 | /ˈfəʊtəʊ/ | Can you take a photo of us? | Tu peux nous prendre en photo ?
+bike | vélo | n | A1 | /baɪk/ | I ride my bike to work. | Je vais au travail à vélo.
+contest | concours | n | A1 | /ˈkɒntest/ | She won a singing contest. | Elle a gagné un concours de chant.
+balloon | ballon (de baudruche) | n | A2 | /bəˈluːn/ | We blew up balloons for the party. | Nous avons gonflé des ballons pour la fête.
+clown | clown | n | A2 | /klaʊn/ | The clown made the children laugh. | Le clown a fait rire les enfants.
+spaceship | vaisseau spatial | n | A2 | /ˈspeɪsʃɪp/ | The spaceship landed on Mars. | Le vaisseau spatial s'est posé sur Mars.
+arrow | flèche | n | B1 | /ˈærəʊ/ | Follow the arrows to the exit. | Suivez les flèches jusqu'à la sortie.
+firework | feu d'artifice | n | B1 | /ˈfaɪəwɜːk/ | We watched the fireworks from the bridge. | Nous avons regardé le feu d'artifice depuis le pont.
+haunt | repaire, lieu de prédilection | n | C1 | /hɔːnt/ | This café is one of my favourite haunts. | Ce café est l'un de mes repaires préférés.
+lottery | loterie | n | B1 | /ˈlɒtəri/ | He won the lottery. | Il a gagné à la loterie.
+parachute | parachute | n | B1 | /ˈpærəʃuːt/ | The parachute opened just in time. | Le parachute s'est ouvert juste à temps.
+gambling | jeux d'argent | n | B2 | /ˈɡæmblɪŋ/ | Gambling is forbidden in Islam. | Les jeux d'argent sont interdits en islam.
+parade | défilé | n | B2 | /pəˈreɪd/ | We watched the parade on the main street. | Nous avons regardé le défilé dans la grand-rue.
+pose | pose | n | B2 | /pəʊz/ | Hold that pose for the photo. | Garde cette pose pour la photo.
+seesaw | tapecul, bascule | n | B2 | /ˈsiːsɔː/ | The children played on the seesaw. | Les enfants jouaient sur la bascule.
+tightrope | corde raide | n | C1 | /ˈtaɪtrəʊp/ | The acrobat walked on a tightrope. | L'acrobate marchait sur une corde raide.
+walker | marcheur, randonneur | n | B2 | /ˈwɔːkə/ | The path is popular with walkers. | Le sentier est apprécié des randonneurs.
+recreational | récréatif, de loisir | adj | C1 | /ˌrekriˈeɪʃənl/ | The park has recreational areas. | Le parc dispose d'espaces de loisirs.
+photographic | photographique | adj | C1 | /ˌfəʊtəˈɡræfɪk/ | She has a photographic memory. | Elle a une mémoire photographique.
+reel | bobine ; moulinet | n | C1 | /riːl/ | He bought a new fishing reel. | Il a acheté un nouveau moulinet.
+gala | gala | n | C1 | /ˈɡɑːlə/ | They held a charity gala. | Ils ont organisé un gala de bienfaisance.
+maze | labyrinthe | n | B2 | /meɪz/ | The children got lost in the maze. | Les enfants se sont perdus dans le labyrinthe.
+multiplayer | multijoueur | adj | B2 | /ˌmʌltiˈpleɪə/ | It's a multiplayer game. | C'est un jeu multijoueur.
+pavilion | pavillon | n | C1 | /pəˈvɪliən/ | Each country has a pavilion at the fair. | Chaque pays a un pavillon à l'exposition.
+simulator | simulateur | n | C1 | /ˈsɪmjuleɪtə/ | Pilots train in a flight simulator. | Les pilotes s'entraînent sur un simulateur de vol.
+ballroom | salle de bal | n | C1 | /ˈbɔːlruːm/ | The wedding took place in a ballroom. | Le mariage a eu lieu dans une salle de réception.
+dart | fléchette | n | B2 | /dɑːt/ | They played darts in the evening. | Ils ont joué aux fléchettes le soir.
+pageant | spectacle ; concours de beauté | n | C2 | /ˈpædʒənt/ | The children took part in a historical pageant. | Les enfants ont participé à un spectacle historique.
+jackpot | gros lot | n | C1 | /ˈdʒækpɒt/ | He hit the jackpot. | Il a décroché le gros lot.
+to shuffle | battre (les cartes) ; traîner les pieds | v | C1 | /ˈʃʌfl/ | Shuffle the cards. | Bats les cartes.
+contestant | concurrent, candidat | n | C1 | /kənˈtestənt/ | Each contestant answered five questions. | Chaque candidat a répondu à cinq questions.
+rodeo | rodéo | n | C1 | /ˈrəʊdiəʊ/ | We watched a rodeo in Texas. | Nous avons assisté à un rodéo au Texas.
+wager | pari | n | C2 | /ˈweɪdʒə/ | He made a wager on the match. | Il a fait un pari sur le match.
+horseback riding | équitation | n | B2 | /ˈhɔːsbæk raɪdɪŋ/ | We went horseback riding in the hills. | Nous avons fait de l'équitation dans les collines.
+roulette | roulette | n | C1 | /ruːˈlet/ | He lost his money at roulette. | Il a perdu son argent à la roulette.
+devotee | fervent adepte | n | C1 | /ˌdevəˈtiː/ | He's a devotee of classical music. | C'est un fervent amateur de musique classique.
+fete | kermesse, fête | n | C2 | /feɪt/ | The school holds a summer fete. | L'école organise une kermesse en été.
+fiesta | fête | n | C1 | /fiˈestə/ | The village holds a summer fiesta. | Le village organise une fête en été.
+memorabilia | souvenirs, objets de collection | n | C2 | /ˌmemərəˈbɪliə/ | He collects football memorabilia. | Il collectionne des souvenirs de football.
+inflatable | gonflable | adj | B2 | /ɪnˈfleɪtəbl/ | The children played in an inflatable pool. | Les enfants jouaient dans une piscine gonflable.
+domino | domino | n | B2 | /ˈdɒmɪnəʊ/ | The old men played dominoes in the café. | Les vieux jouaient aux dominos au café.
+sled | luge, traîneau | n | B2 | /sled/ | The children played on a sled. | Les enfants jouaient en luge.
+chute | toboggan ; glissière | n | C2 | /ʃuːt/ | The children slid down the water chute. | Les enfants ont descendu le toboggan aquatique.
+raffle | tombola | n | C1 | /ˈræfl/ | They held a raffle for the school. | Ils ont organisé une tombola pour l'école.
+tripod | trépied | n | C1 | /ˈtraɪpɒd/ | Put the camera on a tripod. | Mets l'appareil photo sur un trépied.
+boomerang | boomerang | n | B2 | /ˈbuːməræŋ/ | He threw the boomerang. | Il a lancé le boomerang.
+punter | parieur ; client | n | C2 | /ˈpʌntə/ | Punters lost a lot of money. | Les parieurs ont perdu beaucoup d'argent.
+breather | pause, répit | n | C1 | /ˈbriːðə/ | Let's take a breather. | Faisons une petite pause.
+turntable | platine (tourne-disque) | n | C1 | /ˈtɜːnteɪbl/ | He bought an old turntable. | Il a acheté une vieille platine.
+extravaganza | grand spectacle | n | C2 | /ɪkˌstrævəˈɡænzə/ | The festival ends with a fireworks extravaganza. | Le festival se termine par un grand spectacle pyrotechnique.
+slingshot | lance-pierre | n | C1 | /ˈslɪŋʃɒt/ | David killed Goliath with a slingshot. | David a tué Goliath avec une fronde.
+scrapbook | album (de souvenirs) | n | B2 | /ˈskræpbʊk/ | She keeps a scrapbook of her travels. | Elle tient un album de ses voyages.
+kaleidoscope | kaléidoscope | n | C2 | /kəˈlaɪdəskəʊp/ | The market is a kaleidoscope of colours. | Le marché est un kaléidoscope de couleurs.
+hookah | narguilé, chicha | n | C1 | /ˈhʊkə/ | Smoking a hookah harms the lungs. | Fumer la chicha abîme les poumons.
+blindfold | bandeau (sur les yeux) | n | C1 | /ˈblaɪndfəʊld/ | The children played with a blindfold. | Les enfants jouaient les yeux bandés.
+multiplex | multiplexe | n | C1 | /ˈmʌltipleks/ | We saw the film at the multiplex. | Nous avons vu le film au multiplexe.
+snowmobile | motoneige | n | B2 | /ˈsnəʊməbiːl/ | They crossed the frozen lake on a snowmobile. | Ils ont traversé le lac gelé en motoneige.
 `,
 );

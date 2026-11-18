@@ -241,5 +241,353 @@ natural sciences | sciences naturelles | n | B2 | /ˌnætʃrəl ˈsaɪənsɪz/ |
 social sciences | sciences sociales | n | B2 | /ˌsəʊʃl ˈsaɪənsɪz/ | Sociology is one of the social sciences. | La sociologie fait partie des sciences sociales.
 life sciences | sciences de la vie | n | C1 | /ˈlaɪf ˌsaɪənsɪz/ | She works in life sciences. | Elle travaille dans les sciences de la vie.
 earth sciences | sciences de la Terre | n | C1 | /ˈɜːθ ˌsaɪənsɪz/ | Geology is one of the earth sciences. | La géologie fait partie des sciences de la Terre.
+to clone | cloner | v | B2 | /kləʊn/ | Scientists cloned a sheep in 1996. | Des scientifiques ont cloné une brebis en 1996.
+intelligence | intelligence | n | A2 | /ɪnˈtelɪdʒəns/ | Artificial intelligence is changing our lives. | L'intelligence artificielle change nos vies.
+atomic | atomique | adj | B1 | /əˈtɒmɪk/ | Atomic energy is controversial. | L'énergie atomique fait débat.
+biochemistry | biochimie | n | B2 | /ˌbaɪəʊˈkemɪstri/ | She has a degree in biochemistry. | Elle est diplômée en biochimie.
+disk | disque | n | B1 | /dɪsk/ | The hard disk is full. | Le disque dur est plein.
+to dissolve | dissoudre, se dissoudre | v | B1 | /dɪˈzɒlv/ | Sugar dissolves in water. | Le sucre se dissout dans l'eau.
+finding | découverte, conclusion | n | B2 | /ˈfaɪndɪŋ/ | The findings were published last month. | Les conclusions ont été publiées le mois dernier.
+graphics | graphisme, images (informatique) | n | B1 | /ˈɡræfɪks/ | The game has amazing graphics. | Le jeu a des graphismes incroyables.
+lab | labo | n | B1 | /læb/ | The samples were sent to the lab. | Les échantillons ont été envoyés au labo.
+mechanical | mécanique | adj | B1 | /məˈkænɪkl/ | The delay was due to a mechanical problem. | Le retard était dû à un problème mécanique.
+to reproduce | reproduire, se reproduire | v | B2 | /ˌriːprəˈdjuːs/ | Rabbits reproduce very quickly. | Les lapins se reproduisent très vite.
+steel | acier | n | B1 | /stiːl/ | The bridge is made of steel. | Le pont est en acier.
+technological | technologique | adj | B1 | /ˌteknəˈlɒdʒɪkl/ | We live in an age of technological change. | Nous vivons une époque de mutations technologiques.
+aluminium | aluminium | n | B2 | /ˌæljəˈmɪniəm/ | Cans are made of aluminium. | Les canettes sont en aluminium.
+ammonia | ammoniaque | n | B2 | /əˈməʊniə/ | Ammonia has a strong smell. | L'ammoniaque a une odeur forte.
+axis | axe | n | B2 | /ˈæksɪs/ | The Earth rotates on its axis. | La Terre tourne sur son axe.
+backup | sauvegarde ; renfort | n | B2 | /ˈbækʌp/ | Always keep a backup of your files. | Garde toujours une sauvegarde de tes fichiers.
+biological | biologique | adj | B2 | /ˌbaɪəˈlɒdʒɪkl/ | He met his biological father. | Il a rencontré son père biologique.
+bookmark | marque-page, favori | n | B2 | /ˈbʊkmɑːk/ | Add the page to your bookmarks. | Ajoute la page à tes favoris.
+chip | puce (électronique) ; éclat | n | B2 | /tʃɪp/ | The card has a chip. | La carte a une puce.
+circuitry | circuits | n | C1 | /ˈsɜːkɪtri/ | The circuitry was damaged by water. | Les circuits ont été endommagés par l'eau.
+classification | classification | n | B2 | /ˌklæsɪfɪˈkeɪʃn/ | The classification of animals is complex. | La classification des animaux est complexe.
+compression | compression | n | C1 | /kəmˈpreʃn/ | File compression saves space. | La compression des fichiers fait gagner de la place.
+cursor | curseur | n | B2 | /ˈkɜːsə/ | Move the cursor to the top of the page. | Déplace le curseur en haut de la page.
+cyberspace | cyberespace | n | B2 | /ˈsaɪbəspeɪs/ | Our data travels through cyberspace. | Nos données circulent dans le cyberespace.
+decomposition | décomposition | n | C1 | /ˌdiːkɒmpəˈzɪʃn/ | Heat speeds up decomposition. | La chaleur accélère la décomposition.
+desktop | bureau (écran) ; ordinateur de bureau | n | B2 | /ˈdesktɒp/ | Save the file on the desktop. | Enregistre le fichier sur le bureau.
+electronics | électronique | n | B2 | /ɪˌlekˈtrɒnɪks/ | He studies electronics. | Il étudie l'électronique.
+functionality | fonctionnalité | n | C1 | /ˌfʌŋkʃəˈnæləti/ | The new version has more functionality. | La nouvelle version offre plus de fonctionnalités.
+gravitation | gravitation | n | C1 | /ˌɡrævɪˈteɪʃn/ | Newton studied gravitation. | Newton a étudié la gravitation.
+hard drive | disque dur | n | B2 | /ˈhɑːd draɪv/ | My hard drive is full. | Mon disque dur est plein.
+high-tech | de pointe, high-tech | adj | B2 | /ˌhaɪ ˈtek/ | It's a high-tech company. | C'est une entreprise de haute technologie.
+hybrid | hybride | adj | B2 | /ˈhaɪbrɪd/ | We bought a hybrid car. | Nous avons acheté une voiture hybride.
+inert | inerte | adj | C1 | /ɪˈnɜːt/ | Helium is an inert gas. | L'hélium est un gaz inerte.
+input | entrée (de données) ; contribution | n | B2 | /ˈɪnpʊt/ | Thanks for your input. | Merci pour ta contribution.
+interactive | interactif | adj | B2 | /ˌɪntərˈæktɪv/ | The museum has interactive displays. | Le musée propose des dispositifs interactifs.
+keystroke | frappe (clavier) | n | C1 | /ˈkiːstrəʊk/ | You can save with a single keystroke. | Tu peux enregistrer d'une seule touche.
+to magnify | grossir, agrandir | v | B2 | /ˈmæɡnɪfaɪ/ | The lens magnifies the image ten times. | La lentille grossit l'image dix fois.
+mathematical | mathématique | adj | B2 | /ˌmæθəˈmætɪkl/ | She has a mathematical mind. | Elle a l'esprit mathématique.
+microorganism | micro-organisme | n | C1 | /ˌmaɪkrəʊˈɔːɡənɪzəm/ | Bacteria are microorganisms. | Les bactéries sont des micro-organismes.
+microscopic | microscopique | adj | B2 | /ˌmaɪkrəˈskɒpɪk/ | Microscopic creatures live in the water. | Des créatures microscopiques vivent dans l'eau.
+numerical | numérique, chiffré | adj | B2 | /njuːˈmerɪkl/ | List them in numerical order. | Classe-les par ordre numérique.
+predictive | prédictif | adj | C1 | /prɪˈdɪktɪv/ | My phone has predictive text. | Mon téléphone a la saisie prédictive.
+projection | projection ; prévision | n | B2 | /prəˈdʒekʃn/ | Sales projections are good. | Les prévisions de ventes sont bonnes.
+to quantify | quantifier | v | C1 | /ˈkwɒntɪfaɪ/ | It's hard to quantify the damage. | Il est difficile de chiffrer les dégâts.
+radar | radar | n | B2 | /ˈreɪdɑː/ | The plane disappeared from the radar. | L'avion a disparu des écrans radar.
+radium | radium | n | C1 | /ˈreɪdiəm/ | Marie Curie discovered radium. | Marie Curie a découvert le radium.
+solvent | solvant | n | C1 | /ˈsɒlvənt/ | Water is a common solvent. | L'eau est un solvant courant.
+transistor | transistor | n | B2 | /trænˈzɪstə/ | My grandfather still listens to his transistor. | Mon grand-père écoute encore son transistor.
+to upgrade | mettre à niveau, améliorer | v | B2 | /ˌʌpˈɡreɪd/ | I need to upgrade my computer. | Je dois mettre à jour mon ordinateur.
+user | utilisateur | n | B2 | /ˈjuːzə/ | The app has millions of users. | L'application compte des millions d'utilisateurs.
+vibration | vibration | n | B2 | /vaɪˈbreɪʃn/ | You can feel the vibration of the engine. | On sent la vibration du moteur.
+to zoom | zoomer ; filer à toute allure | v | B2 | /zuːm/ | Zoom in to see the details. | Zoome pour voir les détails.
+statistical | statistique | adj | C1 | /stəˈtɪstɪkl/ | The statistical data is clear. | Les données statistiques sont claires.
+mechanics | mécanique ; mécanisme | n | B2 | /məˈkænɪks/ | He's studying mechanics. | Il étudie la mécanique.
+valve | valve, soupape | n | C1 | /vælv/ | The valve controls the flow of water. | La valve régule le débit de l'eau.
+molecular | moléculaire | adj | C1 | /məˈlekjələ/ | She studies molecular biology. | Elle étudie la biologie moléculaire.
+setup | configuration, installation | n | B2 | /ˈsetʌp/ | The setup only takes five minutes. | L'installation ne prend que cinq minutes.
+matrix | matrice | n | C1 | /ˈmeɪtrɪks/ | The data is shown in a matrix. | Les données sont présentées sous forme de matrice.
+optical | optique | adj | C1 | /ˈɒptɪkl/ | It's an optical illusion. | C'est une illusion d'optique.
+median | médiane ; médian | n | C1 | /ˈmiːdiən/ | The median age is forty. | L'âge médian est de quarante ans.
+thermal | thermique | adj | C1 | /ˈθɜːml/ | Wear thermal underwear in winter. | Porte des sous-vêtements thermiques en hiver.
+platinum | platine | n | C1 | /ˈplætɪnəm/ | She has a platinum ring. | Elle a une bague en platine.
+portal | portail | n | C1 | /ˈpɔːtl/ | Log in to the student portal. | Connecte-toi au portail étudiant.
+silicon | silicium | n | C1 | /ˈsɪlɪkən/ | Computer chips are made of silicon. | Les puces électroniques sont en silicium.
+vector | vecteur | n | C1 | /ˈvektə/ | Mosquitoes are vectors of disease. | Les moustiques sont des vecteurs de maladies.
+configuration | configuration | n | C1 | /kənˌfɪɡəˈreɪʃn/ | Check the network configuration. | Vérifie la configuration du réseau.
+binary | binaire | adj | C1 | /ˈbaɪnəri/ | Computers use binary code. | Les ordinateurs utilisent le code binaire.
+plasma | plasma | n | C1 | /ˈplæzmə/ | Plasma is part of the blood. | Le plasma est un composant du sang.
+aggregate | total, ensemble | n | C2 | /ˈæɡrɪɡət/ | The aggregate score decides the winner. | Le score cumulé désigne le vainqueur.
+composite | composite | adj | C1 | /ˈkɒmpəzɪt/ | The wings are made of composite materials. | Les ailes sont en matériaux composites.
+cellular | cellulaire | adj | C1 | /ˈseljələ/ | Cancer starts at a cellular level. | Le cancer commence au niveau cellulaire.
+node | nœud | n | C1 | /nəʊd/ | Each node in the network is a computer. | Chaque nœud du réseau est un ordinateur.
+sodium | sodium | n | C1 | /ˈsəʊdiəm/ | Salt contains sodium. | Le sel contient du sodium.
+calcium | calcium | n | C1 | /ˈkælsiəm/ | Milk is rich in calcium. | Le lait est riche en calcium.
+evolutionary | évolutionniste, de l'évolution | adj | C1 | /ˌiːvəˈluːʃənri/ | They discussed evolutionary theory. | Ils ont débattu de la théorie de l'évolution.
+membrane | membrane | n | C1 | /ˈmembreɪn/ | A thin membrane covers the cell. | Une fine membrane recouvre la cellule.
+nickel | nickel | n | C1 | /ˈnɪkl/ | Some people are allergic to nickel. | Certaines personnes sont allergiques au nickel.
+extraction | extraction | n | C1 | /ɪkˈstrækʃn/ | Oil extraction harms the environment. | L'extraction pétrolière nuit à l'environnement.
+font | police de caractères | n | B2 | /fɒnt/ | Choose a bigger font. | Choisis une police plus grande.
+receptor | récepteur | n | C2 | /rɪˈseptə/ | The drug blocks pain receptors. | Le médicament bloque les récepteurs de la douleur.
+apparatus | appareil, dispositif | n | C1 | /ˌæpəˈreɪtəs/ | The firefighters wore breathing apparatus. | Les pompiers portaient des appareils respiratoires.
+lunar | lunaire | adj | C1 | /ˈluːnə/ | The Islamic calendar is lunar. | Le calendrier islamique est lunaire.
+neural | neuronal | adj | C1 | /ˈnjʊərəl/ | They built a neural network. | Ils ont conçu un réseau de neurones.
+screenshot | capture d'écran | n | B2 | /ˈskriːnʃɒt/ | Send me a screenshot. | Envoie-moi une capture d'écran.
+aerospace | aérospatial | n | C1 | /ˈeərəʊspeɪs/ | She works in aerospace. | Elle travaille dans l'aérospatiale.
+genus | genre (biologie) | n | C2 | /ˈdʒiːnəs/ | Lions belong to the genus Panthera. | Les lions appartiennent au genre Panthera.
+proxy | mandataire ; procuration | n | C2 | /ˈprɒksi/ | You can vote by proxy. | Tu peux voter par procuration.
+quantitative | quantitatif | adj | C1 | /ˈkwɒntɪtətɪv/ | We used quantitative methods. | Nous avons utilisé des méthodes quantitatives.
+hydraulic | hydraulique | adj | C1 | /haɪˈdrɒlɪk/ | The lift uses a hydraulic system. | L'ascenseur fonctionne avec un système hydraulique.
+pixel | pixel | n | B2 | /ˈpɪksl/ | The screen has millions of pixels. | L'écran compte des millions de pixels.
+infrared | infrarouge | adj | C1 | /ˌɪnfrəˈred/ | The camera uses infrared light. | La caméra utilise la lumière infrarouge.
+template | modèle, gabarit | n | C1 | /ˈtempleɪt/ | Use this template for your letter. | Utilise ce modèle pour ta lettre.
+avatar | avatar | n | B2 | /ˈævətɑː/ | Choose an avatar for your profile. | Choisis un avatar pour ton profil.
+absorption | absorption | n | C1 | /əbˈzɔːpʃn/ | Vitamin C helps iron absorption. | La vitamine C favorise l'absorption du fer.
+oxide | oxyde | n | C1 | /ˈɒksaɪd/ | Rust is an iron oxide. | La rouille est un oxyde de fer.
+resonance | résonance | n | C2 | /ˈrezənəns/ | His words have a strong resonance today. | Ses paroles ont une forte résonance aujourd'hui.
+torque | couple (moteur) | n | C2 | /tɔːk/ | The engine has a lot of torque. | Le moteur a beaucoup de couple.
+zinc | zinc | n | C1 | /zɪŋk/ | Zinc helps the immune system. | Le zinc renforce le système immunitaire.
+mutant | mutant | n | C1 | /ˈmjuːtənt/ | The virus produced a mutant strain. | Le virus a produit une souche mutante.
+polymer | polymère | n | C2 | /ˈpɒlɪmə/ | Plastic is a polymer. | Le plastique est un polymère.
+tracker | traceur, outil de suivi | n | C1 | /ˈtrækə/ | I use a fitness tracker. | J'utilise un bracelet d'activité.
+bandwidth | bande passante | n | C1 | /ˈbændwɪdθ/ | Video calls use a lot of bandwidth. | Les appels vidéo consomment beaucoup de bande passante.
+computational | informatique, computationnel | adj | C2 | /ˌkɒmpjuˈteɪʃənl/ | It needs a lot of computational power. | Cela demande beaucoup de puissance de calcul.
+pointer | pointeur ; conseil | n | C1 | /ˈpɔɪntə/ | Can you give me some pointers? | Tu peux me donner quelques conseils ?
+alloy | alliage | n | C1 | /ˈælɔɪ/ | Bronze is an alloy of copper and tin. | Le bronze est un alliage de cuivre et d'étain.
+trajectory | trajectoire | n | C2 | /trəˈdʒektəri/ | They calculated the trajectory of the rocket. | Ils ont calculé la trajectoire de la fusée.
+calculus | calcul (infinitésimal) | n | C2 | /ˈkælkjələs/ | Newton developed calculus. | Newton a développé le calcul infinitésimal.
+orbital | orbital | adj | C2 | /ˈɔːbɪtl/ | The satellite reached its orbital position. | Le satellite a atteint sa position orbitale.
+electromagnetic | électromagnétique | adj | C2 | /ɪˌlektrəʊmæɡˈnetɪk/ | Light is an electromagnetic wave. | La lumière est une onde électromagnétique.
+potassium | potassium | n | C1 | /pəˈtæsiəm/ | Bananas are rich in potassium. | Les bananes sont riches en potassium.
+connectivity | connectivité | n | C1 | /ˌkɒnekˈtɪvəti/ | The village has poor internet connectivity. | Le village a une mauvaise connexion internet.
+lithium | lithium | n | C1 | /ˈlɪθiəm/ | The battery uses lithium. | La batterie utilise du lithium.
+planetary | planétaire | adj | C1 | /ˈplænətri/ | They study planetary motion. | Ils étudient le mouvement des planètes.
+titanium | titane | n | C1 | /tɪˈteɪniəm/ | The frame is made of titanium. | Le cadre est en titane.
+robotic | robotique | adj | C1 | /rəʊˈbɒtɪk/ | They used a robotic arm. | Ils ont utilisé un bras robotisé.
+semiconductor | semi-conducteur | n | C2 | /ˌsemikənˈdʌktə/ | Taiwan makes many semiconductors. | Taïwan fabrique beaucoup de semi-conducteurs.
+subset | sous-ensemble | n | C2 | /ˈsʌbset/ | This group is a subset of the whole. | Ce groupe est un sous-ensemble de l'ensemble.
+cosmos | cosmos | n | C1 | /ˈkɒzmɒs/ | The cosmos is vast and ordered. | Le cosmos est vaste et ordonné.
+router | routeur, box | n | B2 | /ˈruːtə/ | Restart the router. | Redémarre la box.
+astronomical | astronomique | adj | C1 | /ˌæstrəˈnɒmɪkl/ | The prices are astronomical. | Les prix sont astronomiques.
+galactic | galactique | adj | C2 | /ɡəˈlæktɪk/ | Scientists study galactic clusters. | Les scientifiques étudient les amas galactiques.
+login | identifiant ; connexion | n | B2 | /ˈlɒɡɪn/ | Enter your login and password. | Saisis ton identifiant et ton mot de passe.
+magnesium | magnésium | n | C1 | /mæɡˈniːziəm/ | Almonds contain magnesium. | Les amandes contiennent du magnésium.
+malware | logiciel malveillant | n | C1 | /ˈmælweə/ | The computer was infected with malware. | L'ordinateur était infecté par un logiciel malveillant.
+ballistic | balistique | adj | C2 | /bəˈlɪstɪk/ | They tested a ballistic missile. | Ils ont testé un missile balistique.
+corrosion | corrosion | n | C2 | /kəˈrəʊʒn/ | Salt water causes corrosion. | L'eau salée provoque la corrosion.
+formulation | formulation | n | C2 | /ˌfɔːmjuˈleɪʃn/ | The formulation of the problem is unclear. | La formulation du problème n'est pas claire.
+fungi | champignons (biologie) | n | C2 | /ˈfʌŋɡaɪ/ | Fungi grow in damp places. | Les champignons poussent dans les endroits humides.
+shutter | volet ; obturateur | n | C1 | /ˈʃʌtə/ | Close the shutters at night. | Ferme les volets la nuit.
+terrestrial | terrestre | adj | C2 | /təˈrestriəl/ | Most animals are terrestrial. | La plupart des animaux sont terrestres.
+aperture | ouverture | n | C2 | /ˈæpətʃə/ | Adjust the camera's aperture. | Règle l'ouverture de l'appareil photo.
+connector | connecteur | n | C1 | /kəˈnektə/ | The cable has a USB connector. | Le câble a un connecteur USB.
+experimentation | expérimentation | n | C1 | /ɪkˌsperɪmenˈteɪʃn/ | Animal experimentation is controversial. | L'expérimentation animale fait débat.
+piston | piston | n | C2 | /ˈpɪstən/ | The piston moves up and down. | Le piston monte et descend.
+graphical | graphique | adj | C1 | /ˈɡræfɪkl/ | It has a simple graphical interface. | Il a une interface graphique simple.
+propulsion | propulsion | n | C2 | /prəˈpʌlʃn/ | The rocket uses jet propulsion. | La fusée utilise la propulsion à réaction.
+statistic | statistique (chiffre) | n | B2 | /stəˈtɪstɪk/ | That's a shocking statistic. | C'est un chiffre choquant.
+soluble | soluble | adj | C1 | /ˈsɒljəbl/ | Salt is soluble in water. | Le sel est soluble dans l'eau.
+chlorine | chlore | n | C1 | /ˈklɔːriːn/ | The pool smells of chlorine. | La piscine sent le chlore.
+accelerator | accélérateur | n | C1 | /əkˈseləreɪtə/ | Press the accelerator gently. | Appuie doucement sur l'accélérateur.
+replication | reproduction, réplication | n | C2 | /ˌreplɪˈkeɪʃn/ | Replication of the study is needed. | Il faut reproduire l'étude.
+converter | convertisseur | n | C1 | /kənˈvɜːtə/ | Use a currency converter. | Utilise un convertisseur de devises.
+ether | éther | n | C2 | /ˈiːθə/ | The signal travelled through the ether. | Le signal a voyagé dans l'éther.
+latex | latex | n | C2 | /ˈleɪteks/ | Some people are allergic to latex. | Certaines personnes sont allergiques au latex.
+silicone | silicone | n | C2 | /ˈsɪlɪkəʊn/ | The mould is made of silicone. | Le moule est en silicone.
+coefficient | coefficient | n | C2 | /ˌkəʊɪˈfɪʃnt/ | Maths has a high coefficient in the exam. | Les maths ont un fort coefficient à l'examen.
+integer | nombre entier | n | C2 | /ˈɪntɪdʒə/ | Five is an integer. | Cinq est un nombre entier.
+compressor | compresseur | n | C2 | /kəmˈpresə/ | The fridge compressor is noisy. | Le compresseur du frigo est bruyant.
+cobalt | cobalt | n | C2 | /ˈkəʊbɔːlt/ | Cobalt is used in batteries. | Le cobalt est utilisé dans les batteries.
+compiler | compilateur | n | C2 | /kəmˈpaɪlə/ | The compiler found an error in the code. | Le compilateur a trouvé une erreur dans le code.
+pigment | pigment | n | C2 | /ˈpɪɡmənt/ | Melanin is a natural pigment. | La mélanine est un pigment naturel.
+porous | poreux | adj | C2 | /ˈpɔːrəs/ | Clay pots are porous. | Les pots en argile sont poreux.
+saturation | saturation | n | C2 | /ˌsætʃəˈreɪʃn/ | The market has reached saturation. | Le marché est saturé.
+lattice | treillis, réseau | n | C2 | /ˈlætɪs/ | The window has a wooden lattice. | La fenêtre a un treillis en bois.
+metadata | métadonnées | n | C2 | /ˈmetədeɪtə/ | The file contains metadata. | Le fichier contient des métadonnées.
+specimen | spécimen, échantillon | n | C1 | /ˈspesɪmən/ | The museum has rare specimens of insects. | Le musée possède de rares spécimens d'insectes.
+acidic | acide | adj | C1 | /əˈsɪdɪk/ | Lemon juice is acidic. | Le jus de citron est acide.
+pendulum | pendule, balancier | n | C1 | /ˈpendjələm/ | The pendulum of the clock swung slowly. | Le balancier de l'horloge oscillait lentement.
+to dissect | disséquer | v | C1 | /daɪˈsekt/ | We dissected a frog in biology. | Nous avons disséqué une grenouille en biologie.
+recessive | récessif | adj | C2 | /rɪˈsesɪv/ | Blue eyes are a recessive trait. | Les yeux bleus sont un caractère récessif.
+magnetic | magnétique | adj | C1 | /mæɡˈnetɪk/ | The compass uses a magnetic needle. | La boussole utilise une aiguille aimantée.
+anthropology | anthropologie | n | C1 | /ˌænθrəˈpɒlədʒi/ | She studied social anthropology. | Elle a étudié l'anthropologie sociale.
+anthropologist | anthropologue | n | C1 | /ˌænθrəˈpɒlədʒɪst/ | The anthropologist lived with the tribe. | L'anthropologue a vécu avec la tribu.
+to digitise | numériser | v | C1 | /ˈdɪdʒɪtaɪz/ | The library digitised its old manuscripts. | La bibliothèque a numérisé ses anciens manuscrits.
+digitisation | numérisation | n | C2 | /ˌdɪdʒɪtaɪˈzeɪʃn/ | The digitisation of archives takes years. | La numérisation des archives prend des années.
+locomotion | locomotion | n | C2 | /ˌləʊkəˈməʊʃn/ | Walking is a form of locomotion. | La marche est un mode de locomotion.
+to hypothesise | émettre une hypothèse | v | C2 | /haɪˈpɒθəsaɪz/ | Scientists hypothesise that water exists on Mars. | Les scientifiques supposent qu'il y a de l'eau sur Mars.
+stratosphere | stratosphère | n | C2 | /ˈstrætəsfɪə/ | The balloon rose into the stratosphere. | Le ballon est monté jusqu'à la stratosphère.
+to automate | automatiser | v | C1 | /ˈɔːtəmeɪt/ | The factory automated its production. | L'usine a automatisé sa production.
+anthropological | anthropologique | adj | C2 | /ˌænθrəpəˈlɒdʒɪkl/ | It's an anthropological study. | C'est une étude anthropologique.
+to distil | distiller | v | C2 | /dɪˈstɪl/ | They distil water from the sea. | Ils distillent l'eau de mer.
+distillation | distillation | n | C2 | /ˌdɪstɪˈleɪʃn/ | Distillation separates liquids. | La distillation sépare les liquides.
+methodology | méthodologie | n | C2 | /ˌmeθəˈdɒlədʒi/ | The methodology of the study is sound. | La méthodologie de l'étude est solide.
+methodological | méthodologique | adj | C2 | /ˌmeθədəˈlɒdʒɪkl/ | There are methodological problems. | Il y a des problèmes méthodologiques.
+correlation | corrélation | n | C2 | /ˌkɒrəˈleɪʃn/ | There's a strong correlation between diet and health. | Il existe une forte corrélation entre alimentation et santé.
+equilibrium | équilibre | n | C2 | /ˌiːkwɪˈlɪbriəm/ | The system is in equilibrium. | Le système est en équilibre.
+electrode | électrode | n | C2 | /ɪˈlektrəʊd/ | Electrodes were attached to his chest. | Des électrodes ont été fixées sur sa poitrine.
+cosmic | cosmique | adj | C2 | /ˈkɒzmɪk/ | Cosmic rays reach the Earth. | Les rayons cosmiques atteignent la Terre.
+qualitative | qualitatif | adj | C2 | /ˈkwɒlɪtətɪv/ | They used qualitative research methods. | Ils ont utilisé des méthodes de recherche qualitatives.
+to computerise | informatiser | v | C2 | /kəmˈpjuːtəraɪz/ | The library computerised its catalogue. | La bibliothèque a informatisé son catalogue.
+kinetic | cinétique | adj | C2 | /kɪˈnetɪk/ | Moving objects have kinetic energy. | Les objets en mouvement ont une énergie cinétique.
+vestigial | vestigial, résiduel | adj | C2 | /veˈstɪdʒiəl/ | The appendix is a vestigial organ. | L'appendice est un organe vestigial.
+gravitational | gravitationnel | adj | C2 | /ˌɡrævɪˈteɪʃənl/ | The moon's gravitational pull causes tides. | L'attraction gravitationnelle de la lune provoque les marées.
+sulphuric | sulfurique | adj | C2 | /sʌlˈfjʊərɪk/ | Sulphuric acid is very dangerous. | L'acide sulfurique est très dangereux.
+adhesion | adhérence, adhésion | n | C2 | /ədˈhiːʒn/ | The tyres have good adhesion. | Les pneus ont une bonne adhérence.
+cognitive | cognitif | adj | C2 | /ˈkɒɡnətɪv/ | Sleep improves cognitive function. | Le sommeil améliore les fonctions cognitives.
+vortex | vortex, tourbillon | n | C2 | /ˈvɔːteks/ | The water formed a vortex. | L'eau formait un tourbillon.
+collider | collisionneur | n | C2 | /kəˈlaɪdə/ | The particle collider is in Switzerland. | Le collisionneur de particules se trouve en Suisse.
+telescopic | télescopique | adj | C2 | /ˌtelɪˈskɒpɪk/ | It has a telescopic handle. | Il a une poignée télescopique.
+elasticity | élasticité | n | C2 | /ˌiːlæˈstɪsəti/ | The skin loses elasticity with age. | La peau perd de son élasticité avec l'âge.
+authentication | authentification | n | C2 | /ɔːˌθentɪˈkeɪʃn/ | Two-step authentication is safer. | L'authentification en deux étapes est plus sûre.
+computation | calcul | n | C2 | /ˌkɒmpjuˈteɪʃn/ | The computation took several hours. | Le calcul a pris plusieurs heures.
+graphite | graphite | n | C2 | /ˈɡræfaɪt/ | Pencils contain graphite. | Les crayons contiennent du graphite.
+calibration | étalonnage | n | C2 | /ˌkælɪˈbreɪʃn/ | The scales need calibration. | La balance doit être étalonnée.
+cognition | cognition | n | C2 | /kɒɡˈnɪʃn/ | Sleep affects cognition. | Le sommeil influence la cognition.
+embryo | embryon | n | C1 | /ˈembriəʊ/ | The Qur'an describes the stages of the embryo. | Le Coran décrit les étapes de l'embryon.
+interstellar | interstellaire | adj | C2 | /ˌɪntəˈstelə/ | Interstellar travel is still a dream. | Le voyage interstellaire reste un rêve.
+exponential | exponentiel | adj | C2 | /ˌekspəˈnenʃl/ | There's been exponential growth. | Il y a eu une croissance exponentielle.
+microbial | microbien | adj | C2 | /maɪˈkrəʊbiəl/ | They found microbial life in the lake. | Ils ont trouvé de la vie microbienne dans le lac.
+ultraviolet | ultraviolet | adj | C1 | /ˌʌltrəˈvaɪələt/ | Ultraviolet rays can burn your skin. | Les rayons ultraviolets peuvent brûler la peau.
+photon | photon | n | C2 | /ˈfəʊtɒn/ | Light is made of photons. | La lumière est faite de photons.
+filtration | filtration | n | C2 | /fɪlˈtreɪʃn/ | Water filtration removes bacteria. | La filtration de l'eau élimine les bactéries.
+latency | latence | n | C2 | /ˈleɪtnsi/ | The game has low latency. | Le jeu a une faible latence.
+fermentation | fermentation | n | C2 | /ˌfɜːmenˈteɪʃn/ | Yoghurt is made by fermentation. | Le yaourt est obtenu par fermentation.
+sonar | sonar | n | C2 | /ˈsəʊnɑː/ | The ship uses sonar to find fish. | Le navire utilise un sonar pour trouver les poissons.
+keyword | mot-clé | n | B2 | /ˈkiːwɜːd/ | Type a keyword to search. | Tape un mot-clé pour chercher.
+modulation | modulation | n | C2 | /ˌmɒdjuˈleɪʃn/ | The radio uses frequency modulation. | La radio utilise la modulation de fréquence.
+wearable | portable (technologie) | adj | C2 | /ˈweərəbl/ | Wearable technology tracks your health. | Les objets connectés suivent ta santé.
+amplitude | amplitude | n | C2 | /ˈæmplɪtjuːd/ | The amplitude of the wave increased. | L'amplitude de l'onde a augmenté.
+analogue | analogique | adj | C2 | /ˈænəlɒɡ/ | He still uses an analogue watch. | Il utilise encore une montre analogique.
+entropy | entropie | n | C2 | /ˈentrəpi/ | Entropy always increases. | L'entropie augmente toujours.
+helix | hélice, spirale | n | C2 | /ˈhiːlɪks/ | DNA has a double helix. | L'ADN a une structure en double hélice.
+sociological | sociologique | adj | C2 | /ˌsəʊsiəˈlɒdʒɪkl/ | It's a sociological study. | C'est une étude sociologique.
+alkaline | alcalin | adj | C2 | /ˈælkəlaɪn/ | The soil is alkaline. | Le sol est alcalin.
+fluoride | fluor | n | C2 | /ˈflɔːraɪd/ | Toothpaste contains fluoride. | Le dentifrice contient du fluor.
+microbiology | microbiologie | n | C2 | /ˌmaɪkrəʊbaɪˈɒlədʒi/ | She studies microbiology. | Elle étudie la microbiologie.
+phosphorus | phosphore | n | C2 | /ˈfɒsfərəs/ | Fish is rich in phosphorus. | Le poisson est riche en phosphore.
+cyanide | cyanure | n | C2 | /ˈsaɪənaɪd/ | Cyanide is a deadly poison. | Le cyanure est un poison mortel.
+fluorescence | fluorescence | n | C2 | /flɔːˈresns/ | The paint glows with fluorescence. | La peinture brille par fluorescence.
+thumbnail | miniature, vignette | n | C1 | /ˈθʌmneɪl/ | Click on the thumbnail to see the photo. | Clique sur la vignette pour voir la photo.
+arsenic | arsenic | n | C2 | /ˈɑːsnɪk/ | Arsenic is a poison. | L'arsenic est un poison.
+deletion | suppression | n | C1 | /dɪˈliːʃn/ | The deletion of the file was a mistake. | La suppression du fichier était une erreur.
+embryonic | embryonnaire | adj | C2 | /ˌembriˈɒnɪk/ | The project is still at an embryonic stage. | Le projet en est encore au stade embryonnaire.
+firmware | micrologiciel | n | C2 | /ˈfɜːmweə/ | Update the router's firmware. | Mets à jour le micrologiciel du routeur.
+inorganic | inorganique | adj | C2 | /ˌɪnɔːˈɡænɪk/ | Salt is an inorganic compound. | Le sel est un composé inorganique.
+convection | convection | n | C2 | /kənˈvekʃn/ | Heat moves by convection. | La chaleur se déplace par convection.
+deflection | déviation | n | C2 | /dɪˈflekʃn/ | The deflection of light by gravity was proved. | La déviation de la lumière par la gravité a été prouvée.
+alchemy | alchimie | n | C2 | /ˈælkəmi/ | Medieval scholars studied alchemy. | Les savants médiévaux étudiaient l'alchimie.
+biochemical | biochimique | adj | C2 | /ˌbaɪəʊˈkemɪkl/ | It's a biochemical process. | C'est un processus biochimique.
+nomenclature | nomenclature | n | C2 | /nəˈmenklətʃə/ | Learn the chemical nomenclature. | Apprends la nomenclature chimique.
+acidity | acidité | n | C2 | /əˈsɪdəti/ | Measure the acidity of the soil. | Mesure l'acidité du sol.
+aerodynamic | aérodynamique | adj | C2 | /ˌeərəʊdaɪˈnæmɪk/ | The car has an aerodynamic shape. | La voiture a une forme aérodynamique.
+algebraic | algébrique | adj | C2 | /ˌældʒɪˈbreɪɪk/ | Solve the algebraic equation. | Résous l'équation algébrique.
+iodine | iode | n | C2 | /ˈaɪədiːn/ | Seaweed is rich in iodine. | Les algues sont riches en iode.
+cosmology | cosmologie | n | C2 | /kɒzˈmɒlədʒi/ | Modern cosmology studies the origin of the universe. | La cosmologie moderne étudie l'origine de l'univers.
+touchscreen | écran tactile | n | B2 | /ˈtʌtʃskriːn/ | The phone has a touchscreen. | Le téléphone a un écran tactile.
+Bluetooth | Bluetooth | n | B1 | /ˈbluːtuːθ/ | Connect your headphones by Bluetooth. | Connecte ton casque en Bluetooth.
+assay | essai, analyse (d'un métal) | n | C2 | /ˈæseɪ/ | The laboratory ran an assay of the gold. | Le laboratoire a fait une analyse de l'or.
+catalytic | catalytique | adj | C2 | /ˌkætəˈlɪtɪk/ | Cars have a catalytic converter. | Les voitures ont un pot catalytique.
+equivalence | équivalence | n | C1 | /ɪˈkwɪvələns/ | There's no equivalence between the two. | Il n'y a pas d'équivalence entre les deux.
+inertia | inertie | n | C1 | /ɪˈnɜːʃə/ | Political inertia slows reform. | L'inertie politique ralentit les réformes.
+neuron | neurone | n | C1 | /ˈnjʊərɒn/ | The brain has billions of neurons. | Le cerveau compte des milliards de neurones.
+singularity | singularité | n | C2 | /ˌsɪŋɡjuˈlærəti/ | The singularity of his style is striking. | La singularité de son style est frappante.
+aqueous | aqueux | adj | C2 | /ˈeɪkwiəs/ | It's an aqueous solution. | C'est une solution aqueuse.
+naturalist | naturaliste | n | C1 | /ˈnætʃrəlɪst/ | The naturalist studied the birds of the island. | Le naturaliste étudiait les oiseaux de l'île.
+observational | d'observation | adj | C2 | /ˌɒbzəˈveɪʃənl/ | It's an observational study. | C'est une étude d'observation.
+astral | astral | adj | C2 | /ˈæstrəl/ | Astrologers speak of astral influences. | Les astrologues parlent d'influences astrales.
+viscosity | viscosité | n | C2 | /vɪˈskɒsəti/ | Honey has a high viscosity. | Le miel a une viscosité élevée.
+cipher | chiffre, code secret | n | C2 | /ˈsaɪfə/ | Al-Kindi broke ciphers in the ninth century. | Al-Kindi déchiffrait des codes au IXe siècle.
+schematic | schématique | adj | C2 | /skiːˈmætɪk/ | Here's a schematic diagram of the engine. | Voici un schéma du moteur.
+corrosive | corrosif | adj | C1 | /kəˈrəʊsɪv/ | Acid is highly corrosive. | L'acide est très corrosif.
+pneumatic | pneumatique | adj | C2 | /njuːˈmætɪk/ | Workers used a pneumatic drill. | Les ouvriers utilisaient un marteau-piqueur.
+aeronautics | aéronautique | n | C1 | /ˌeərəˈnɔːtɪks/ | He works in aeronautics. | Il travaille dans l'aéronautique.
+extraterrestrial | extraterrestre | adj | C1 | /ˌekstrətəˈrestriəl/ | Do you believe in extraterrestrial life? | Crois-tu à la vie extraterrestre ?
+filament | filament | n | C2 | /ˈfɪləmənt/ | The bulb's filament has broken. | Le filament de l'ampoule est cassé.
+respondent | personne interrogée | n | C1 | /rɪˈspɒndənt/ | Most respondents agreed with the statement. | La plupart des personnes interrogées étaient d'accord.
+ultrasonic | ultrasonique | adj | C2 | /ˌʌltrəˈsɒnɪk/ | Bats use ultrasonic sounds. | Les chauves-souris utilisent des ultrasons.
+airflow | flux d'air | n | C1 | /ˈeəfləʊ/ | Keep the airflow around the computer clear. | Laisse l'air circuler autour de l'ordinateur.
+taxonomy | taxonomie, classification | n | C2 | /tækˈsɒnəmi/ | Taxonomy classifies living things. | La taxonomie classe les êtres vivants.
+cellulose | cellulose | n | C2 | /ˈseljuləʊs/ | Paper is made from cellulose. | Le papier est fait de cellulose.
+dilution | dilution | n | C2 | /daɪˈluːʃn/ | The dilution of the acid reduces the danger. | La dilution de l'acide réduit le danger.
+polarity | polarité | n | C2 | /pəˈlærəti/ | Check the polarity of the battery. | Vérifie la polarité de la pile.
+fractional | fractionnaire ; infime | adj | C2 | /ˈfrækʃənl/ | There was only a fractional increase. | Il n'y a eu qu'une hausse infime.
+lubricant | lubrifiant | n | C1 | /ˈluːbrɪkənt/ | Oil is used as a lubricant. | L'huile sert de lubrifiant.
+quark | quark | n | C2 | /kwɑːk/ | Protons are made of quarks. | Les protons sont constitués de quarks.
+polygon | polygone | n | C1 | /ˈpɒlɪɡən/ | A hexagon is a polygon with six sides. | Un hexagone est un polygone à six côtés.
+by-product | sous-produit | n | C1 | /ˈbaɪ prɒdʌkt/ | Sawdust is a by-product of woodwork. | La sciure est un sous-produit de la menuiserie.
+cathode | cathode | n | C2 | /ˈkæθəʊd/ | Electrons flow from the cathode. | Les électrons partent de la cathode.
+metamorphosis | métamorphose | n | C1 | /ˌmetəˈmɔːfəsɪs/ | The caterpillar undergoes metamorphosis. | La chenille subit une métamorphose.
+basalt | basalte | n | C2 | /ˈbæsɔːlt/ | The island is made of black basalt. | L'île est faite de basalte noir.
+concave | concave | adj | C1 | /ˈkɒnkeɪv/ | A concave mirror magnifies the image. | Un miroir concave grossit l'image.
+incandescent | incandescent | adj | C2 | /ˌɪnkænˈdesnt/ | Incandescent bulbs waste energy. | Les ampoules à incandescence gaspillent de l'énergie.
+eugenics | eugénisme | n | C2 | /juːˈdʒenɪks/ | Eugenics was used to justify crimes. | L'eugénisme a servi à justifier des crimes.
+formaldehyde | formaldéhyde | n | C2 | /fɔːˈmældɪhaɪd/ | The samples are kept in formaldehyde. | Les échantillons sont conservés dans du formaldéhyde.
+fractal | fractale | n | C2 | /ˈfræktl/ | Snowflakes form fractal patterns. | Les flocons de neige forment des motifs fractals.
+fieldwork | travail de terrain | n | C1 | /ˈfiːldwɜːk/ | The anthropologist did fieldwork in Mali. | L'anthropologue a fait du terrain au Mali.
+hexagonal | hexagonal | adj | C1 | /hekˈsæɡənl/ | Bees build hexagonal cells. | Les abeilles construisent des alvéoles hexagonales.
+oscillation | oscillation | n | C2 | /ˌɒsɪˈleɪʃn/ | The oscillation of the pendulum. | L'oscillation du pendule.
+plasticity | plasticité | n | C2 | /plæˈstɪsəti/ | The brain has great plasticity. | Le cerveau a une grande plasticité.
+salinity | salinité | n | C2 | /səˈlɪnəti/ | The salinity of the Dead Sea is very high. | La salinité de la mer Morte est très élevée.
+solubility | solubilité | n | C2 | /ˌsɒljuˈbɪləti/ | Sugar has high solubility in water. | Le sucre est très soluble dans l'eau.
+tensile strength | résistance à la traction | n | C2 | /ˈtensaɪl streŋθ/ | Steel has a high tensile strength. | L'acier a une grande résistance à la traction.
+buoyancy | flottabilité ; dynamisme | n | C2 | /ˈbɔɪənsi/ | Salt water increases buoyancy. | L'eau salée augmente la flottabilité.
+to encode | encoder, coder | v | C1 | /ɪnˈkəʊd/ | The data is encoded for security. | Les données sont codées pour des raisons de sécurité.
+exponent | partisan, défenseur ; exposant | n | C2 | /ɪkˈspəʊnənt/ | He was a leading exponent of reform. | C'était un grand défenseur de la réforme.
+obsidian | obsidienne | n | C2 | /əbˈsɪdiən/ | Obsidian is a volcanic glass. | L'obsidienne est un verre volcanique.
+quotient | quotient | n | C1 | /ˈkwəʊʃnt/ | He has a high intelligence quotient. | Il a un quotient intellectuel élevé.
+sown | semé | adj | C1 | /səʊn/ | The seeds have been sown. | Les graines ont été semées.
+metallurgy | métallurgie | n | C2 | /məˈtælədʒi/ | The city was known for its metallurgy. | La ville était connue pour sa métallurgie.
+viscous | visqueux | adj | C2 | /ˈvɪskəs/ | Honey is a viscous liquid. | Le miel est un liquide visqueux.
+aerodynamics | aérodynamique | n | C2 | /ˌeərəʊdaɪˈnæmɪks/ | Engineers study aerodynamics. | Les ingénieurs étudient l'aérodynamique.
+gaseous | gazeux | adj | C2 | /ˈɡæsiəs/ | Water changes into a gaseous state. | L'eau passe à l'état gazeux.
+gypsum | gypse | n | C2 | /ˈdʒɪpsəm/ | Plaster is made from gypsum. | Le plâtre est fait de gypse.
+kinetics | cinétique | n | C2 | /kɪˈnetɪks/ | Kinetics studies the speed of reactions. | La cinétique étudie la vitesse des réactions.
+magnification | grossissement | n | C2 | /ˌmæɡnɪfɪˈkeɪʃn/ | The microscope has high magnification. | Le microscope a un fort grossissement.
+symbiotic | symbiotique | adj | C2 | /ˌsɪmbaɪˈɒtɪk/ | They have a symbiotic relationship. | Ils ont une relation symbiotique.
+concentric | concentrique | adj | C2 | /kənˈsentrɪk/ | The pilgrims form concentric circles around the Kaaba. | Les pèlerins forment des cercles concentriques autour de la Kaaba.
+microprocessor | microprocesseur | n | C1 | /ˌmaɪkrəʊˈprəʊsesə/ | The microprocessor is the heart of the computer. | Le microprocesseur est le cœur de l'ordinateur.
+permeability | perméabilité | n | C2 | /ˌpɜːmiəˈbɪləti/ | The permeability of the soil is low. | La perméabilité du sol est faible.
+propellant | propergol, gaz propulseur | n | C2 | /prəˈpelənt/ | The rocket uses liquid propellant. | La fusée utilise un propergol liquide.
+pulley | poulie | n | C1 | /ˈpʊli/ | They lifted the stone with a pulley. | Ils ont soulevé la pierre avec une poulie.
+cryptography | cryptographie | n | C2 | /krɪpˈtɒɡrəfi/ | Al-Kindi wrote on cryptography. | Al-Kindi a écrit sur la cryptographie.
+octagon | octogone | n | C1 | /ˈɒktəɡən/ | The Dome of the Rock is an octagon. | Le Dôme du Rocher est un octogone.
+radioactivity | radioactivité | n | C1 | /ˌreɪdiəʊækˈtɪvəti/ | Marie Curie studied radioactivity. | Marie Curie a étudié la radioactivité.
+luminosity | luminosité | n | C2 | /ˌluːmɪˈnɒsəti/ | Adjust the screen's luminosity. | Règle la luminosité de l'écran.
+randomness | caractère aléatoire | n | C2 | /ˈrændəmnəs/ | The randomness of the results surprised us. | Le caractère aléatoire des résultats nous a surpris.
+biosphere | biosphère | n | C2 | /ˈbaɪəʊsfɪə/ | Pollution threatens the biosphere. | La pollution menace la biosphère.
+emulsion | émulsion | n | C2 | /ɪˈmʌlʃn/ | Mayonnaise is an emulsion. | La mayonnaise est une émulsion.
+geometrical | géométrique | adj | C1 | /ˌdʒiːəˈmetrɪkl/ | Islamic art uses geometrical patterns. | L'art islamique utilise des motifs géométriques.
+superstructure | superstructure | n | C2 | /ˈsuːpəstrʌktʃə/ | The ship's superstructure was damaged. | La superstructure du navire a été endommagée.
+microchip | puce électronique | n | B2 | /ˈmaɪkrəʊtʃɪp/ | The cat has a microchip. | Le chat est pucé.
+oceanography | océanographie | n | C2 | /ˌəʊʃəˈnɒɡrəfi/ | She studies oceanography. | Elle étudie l'océanographie.
+combustible | combustible, inflammable | adj | C2 | /kəmˈbʌstəbl/ | Wood is combustible. | Le bois est combustible.
+condenser | condenseur, condensateur | n | C2 | /kənˈdensə/ | The condenser cools the steam. | Le condenseur refroidit la vapeur.
+hydraulics | hydraulique | n | C2 | /haɪˈdrɒlɪks/ | The machine works by hydraulics. | La machine fonctionne grâce à l'hydraulique.
+outlier | valeur aberrante ; cas à part | n | C2 | /ˈaʊtlaɪə/ | This result is an outlier. | Ce résultat est une valeur aberrante.
+parallax | parallaxe | n | C2 | /ˈpærəlæks/ | Astronomers use parallax to measure distance. | Les astronomes utilisent la parallaxe pour mesurer les distances.
+torsion | torsion | n | C2 | /ˈtɔːʃn/ | The bar breaks under torsion. | La barre se rompt sous la torsion.
+ballistics | balistique | n | C2 | /bəˈlɪstɪks/ | Ballistics experts examined the bullet. | Des experts en balistique ont examiné la balle.
+hexagon | hexagone | n | C1 | /ˈheksəɡən/ | France is often called the Hexagon. | La France est souvent appelée l'Hexagone.
+neutrino | neutrino | n | C2 | /njuːˈtriːnəʊ/ | Neutrinos pass through matter. | Les neutrinos traversent la matière.
+quantification | quantification | n | C2 | /ˌkwɒntɪfɪˈkeɪʃn/ | The quantification of risk is difficult. | La quantification du risque est difficile.
+hydrology | hydrologie | n | C2 | /haɪˈdrɒlədʒi/ | She studies hydrology. | Elle étudie l'hydrologie.
+insoluble | insoluble | adj | C2 | /ɪnˈsɒljəbl/ | Oil is insoluble in water. | L'huile est insoluble dans l'eau.
+neurotransmitter | neurotransmetteur | n | C2 | /ˌnjʊərəʊtrænzˈmɪtə/ | Dopamine is a neurotransmitter. | La dopamine est un neurotransmetteur.
+ethnography | ethnographie | n | C2 | /eθˈnɒɡrəfi/ | Ethnography studies cultures from within. | L'ethnographie étudie les cultures de l'intérieur.
+interplanetary | interplanétaire | adj | C2 | /ˌɪntəˈplænɪtri/ | It's an interplanetary mission. | C'est une mission interplanétaire.
+avionics | avionique | n | C2 | /ˌeɪviˈɒnɪks/ | He's an avionics engineer. | C'est un ingénieur en avionique.
+centrifuge | centrifugeuse | n | C2 | /ˈsentrɪfjuːdʒ/ | The samples go into a centrifuge. | Les échantillons passent dans une centrifugeuse.
+entomology | entomologie | n | C2 | /ˌentəˈmɒlədʒi/ | Entomology is the study of insects. | L'entomologie est l'étude des insectes.
+helical | hélicoïdal | adj | C2 | /ˈhelɪkl/ | DNA has a helical structure. | L'ADN a une structure hélicoïdale.
+igneous | igné, volcanique | adj | C2 | /ˈɪɡniəs/ | Granite is an igneous rock. | Le granite est une roche ignée.
+cosmological | cosmologique | adj | C2 | /ˌkɒzməˈlɒdʒɪkl/ | The cosmological argument for God. | L'argument cosmologique de l'existence de Dieu.
+acetone | acétone | n | C2 | /ˈæsɪtəʊn/ | Acetone removes nail polish. | L'acétone enlève le vernis à ongles.
+to calibrate | étalonner, calibrer | v | C2 | /ˈkælɪbreɪt/ | Engineers calibrate the instruments. | Les ingénieurs étalonnent les instruments.
+chloroform | chloroforme | n | C2 | /ˈklɒrəfɔːm/ | Chloroform was used as an anaesthetic. | Le chloroforme servait d'anesthésiant.
+ferrous | ferreux | adj | C2 | /ˈferəs/ | Iron is a ferrous metal. | Le fer est un métal ferreux.
+osmosis | osmose | n | C2 | /ɒzˈməʊsɪs/ | Children learn languages by osmosis. | Les enfants apprennent les langues par osmose.
+parabolic | parabolique | adj | C2 | /ˌpærəˈbɒlɪk/ | They installed a parabolic antenna. | Ils ont installé une antenne parabolique.
+accretion | accrétion, accumulation | n | C2 | /əˈkriːʃn/ | The accretion of sediment forms new land. | L'accumulation de sédiments forme de nouvelles terres.
+cryogenic | cryogénique | adj | C2 | /ˌkraɪəˈdʒenɪk/ | The sample is kept in cryogenic storage. | L'échantillon est conservé par cryogénie.
+transgenic | transgénique | adj | C2 | /trænzˈdʒenɪk/ | They grow transgenic crops. | Ils cultivent des plantes transgéniques.
+fulcrum | point d'appui, pivot | n | C2 | /ˈfʊlkrəm/ | The family is the fulcrum of society. | La famille est le pivot de la société.
+permeable | perméable | adj | C2 | /ˈpɜːmiəbl/ | Sandy soil is permeable. | Le sol sableux est perméable.
+spaceflight | vol spatial | n | C2 | /ˈspeɪsflaɪt/ | Human spaceflight is expensive. | Les vols spatiaux habités coûtent cher.
+supercomputer | superordinateur | n | C1 | /ˈsuːpəkəmpjuːtə/ | The forecast is run on a supercomputer. | Les prévisions sont calculées sur un superordinateur.
+mineralogy | minéralogie | n | C2 | /ˌmɪnəˈrælədʒi/ | Al-Biruni wrote about mineralogy. | Al-Biruni a écrit sur la minéralogie.
 `,
 );

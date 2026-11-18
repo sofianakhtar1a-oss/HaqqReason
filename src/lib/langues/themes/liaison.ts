@@ -256,5 +256,11 @@ last but not least | enfin et surtout | expr | B2 | /ˌlɑːst bət ˌnɒt ˈli�
 incidentally | au fait, soit dit en passant | adv | C1 | /ˌɪnsɪˈdentli/ | Incidentally, did you call her? | Au fait, tu l'as appelée ?
 anyhow | de toute façon | adv | B2 | /ˈenihaʊ/ | Anyhow, it doesn't matter. | De toute façon, ça n'a pas d'importance.
 at any rate | en tout cas | expr | C1 | /ət ˈeni reɪt/ | At any rate, we tried. | En tout cas, nous avons essayé.
+thereafter | par la suite | adv | C1 | /ˌðeərˈɑːftə/ | He moved to Paris and thereafter to London. | Il s'est installé à Paris, puis à Londres.
+wherein | où, dans lequel (soutenu) | adv | C2 | /weərˈɪn/ | It's a paradise wherein rivers flow. | C'est un paradis où coulent des rivières.
+thereof | de cela, en (soutenu) | adv | C2 | /ˌðeərˈɒv/ | Any breach thereof will be punished. | Toute violation de ce texte sera sanctionnée.
+hereby | par la présente | adv | C2 | /ˌhɪəˈbaɪ/ | I hereby resign from my post. | Par la présente, je démissionne de mon poste.
+whereupon | sur quoi, après quoi | conj | C2 | /ˌweərəˈpɒn/ | He insulted her, whereupon she left. | Il l'a insultée, sur quoi elle est partie.
+ergo | donc, par conséquent | adv | C2 | /ˈɜːɡəʊ/ | He was absent; ergo, he can't vote. | Il était absent, donc il ne peut pas voter.
 `,
 );

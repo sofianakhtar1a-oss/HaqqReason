@@ -257,5 +257,27 @@ hard nut to crack | dur à cuire, casse-tête | expr | C1 | /ˌhɑːd ˌnʌt tə
 in a pickle | dans le pétrin | expr | C1 | /ɪn ə ˈpɪkl/ | We're in a pickle now. | Nous voilà dans le pétrin.
 to sugar-coat | enrober, édulcorer | v | C1 | /ˌʃʊɡə ˈkəʊt/ | Don't sugar-coat the truth. | N'édulcore pas la vérité.
 to stew in your own juice | mariner dans son jus | expr | C2 | /stjuː ɪn jər ˌəʊn ˈdʒuːs/ | Let him stew in his own juice. | Laisse-le mariner dans son jus.
+soda | soda | n | A2 | /ˈsəʊdə/ | Too much soda is bad for your teeth. | Trop de soda abîme les dents.
+alcoholic | alcoolisé | adj | B1 | /ˌælkəˈhɒlɪk/ | We only serve non-alcoholic drinks. | Nous ne servons que des boissons sans alcool.
+drunk | ivre, soûl | adj | B1 | /drʌŋk/ | Drunk drivers cause many accidents. | Les conducteurs ivres provoquent beaucoup d'accidents.
+refreshments | rafraîchissements | n | B1 | /rɪˈfreʃmənts/ | Refreshments will be served after the talk. | Des rafraîchissements seront servis après la conférence.
+cocoa | cacao | n | B2 | /ˈkəʊkəʊ/ | I'll make you a cup of cocoa. | Je vais te faire une tasse de cacao.
+drinkable | potable, buvable | adj | B2 | /ˈdrɪŋkəbl/ | Is the tap water drinkable? | L'eau du robinet est-elle potable ?
+thirst | soif | n | B2 | /θɜːst/ | Water is the best way to quench your thirst. | L'eau est le meilleur moyen d'étancher sa soif.
+caffeine | caféine | n | B2 | /ˈkæfiːn/ | Tea contains caffeine. | Le thé contient de la caféine.
+to brew | infuser ; brasser | v | C1 | /bruː/ | Let the tea brew for three minutes. | Laisse infuser le thé trois minutes.
+tavern | taverne | n | C1 | /ˈtævən/ | The old tavern is now a restaurant. | L'ancienne taverne est devenue un restaurant.
+cider | cidre | n | B2 | /ˈsaɪdə/ | Normandy is famous for its cider. | La Normandie est célèbre pour son cidre.
+latte | café au lait | n | B2 | /ˈlɑːteɪ/ | I'll have a latte, please. | Je prendrai un café au lait, s'il vous plaît.
+winery | domaine viticole | n | C1 | /ˈwaɪnəri/ | The region has many wineries. | La région compte de nombreux domaines viticoles.
+distillery | distillerie | n | C2 | /dɪˈstɪləri/ | The old distillery is now a museum. | L'ancienne distillerie est devenue un musée.
+cookery | cuisine (art culinaire) | n | B2 | /ˈkʊkəri/ | She took a cookery course. | Elle a suivi un cours de cuisine.
+grub | bouffe | n | C1 | /ɡrʌb/ | Let's get some grub. | Allons manger un morceau.
+bistro | bistrot | n | B2 | /ˈbiːstrəʊ/ | We had lunch in a little bistro. | Nous avons déjeuné dans un petit bistrot.
+pizzeria | pizzeria | n | A2 | /ˌpiːtsəˈriːə/ | There's a halal pizzeria near the station. | Il y a une pizzeria halal près de la gare.
+spoonful | cuillerée | n | B1 | /ˈspuːnfʊl/ | Add a spoonful of honey. | Ajoute une cuillerée de miel.
+potable | potable | adj | C2 | /ˈpəʊtəbl/ | The water is not potable. | L'eau n'est pas potable.
+eatery | petit restaurant | n | C1 | /ˈiːtəri/ | There's a popular eatery near the souk. | Il y a un petit restaurant populaire près du souk.
+froth | mousse, écume | n | C2 | /frɒθ/ | The coffee has a thick froth. | Le café a une mousse épaisse.
 `,
 );

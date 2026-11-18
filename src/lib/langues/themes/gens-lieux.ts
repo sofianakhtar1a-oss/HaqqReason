@@ -318,5 +318,20 @@ common room | salle commune, foyer | n | B1 | /ˈkɒmən ruːm/ | Students relax
 cloakroom | vestiaire | n | B1 | /ˈkləʊkruːm/ | Leave your coat in the cloakroom. | Laisse ton manteau au vestiaire.
 foyer | hall d'entrée, foyer | n | C1 | /ˈfɔɪeɪ/ | Let's meet in the theatre foyer. | Retrouvons-nous dans le hall du théâtre.
 top floor | dernier étage | n | A2 | /ˌtɒp ˈflɔːr/ | We live on the top floor. | Nous habitons au dernier étage.
+Englishman | Anglais (homme) | n | B1 | /ˈɪŋɡlɪʃmən/ | An Englishman, a Scot and an Irishman walked into a café. | Un Anglais, un Écossais et un Irlandais sont entrés dans un café.
+next door | à côté, chez le voisin | expr | B1 | /ˌnekst ˈdɔː/ | My best friend lives next door. | Mon meilleur ami habite à côté.
+islander | insulaire, îlien | n | B2 | /ˈaɪləndə/ | The islanders depend on fishing. | Les insulaires vivent de la pêche.
+neighbouring | voisin | adj | B2 | /ˈneɪbərɪŋ/ | They live in a neighbouring village. | Ils habitent dans un village voisin.
+tramp | vagabond, clochard | n | B2 | /træmp/ | A tramp was sleeping on the bench. | Un clochard dormait sur le banc.
+locality | localité | n | C2 | /ləʊˈkæləti/ | People from the locality came to help. | Des gens de la localité sont venus aider.
+Creole | créole | n | C1 | /ˈkriːəʊl/ | They speak Creole in Haiti. | On parle créole en Haïti.
+minion | sbire, larbin | n | C2 | /ˈmɪnjən/ | The boss sent his minions to do the work. | Le patron a envoyé ses sbires faire le travail.
+layman | profane, non-spécialiste | n | C1 | /ˈleɪmən/ | Explain it in layman's terms. | Explique-le en termes simples.
+lackey | laquais | n | C2 | /ˈlæki/ | He's just a lackey of the regime. | Ce n'est qu'un laquais du régime.
+townspeople | habitants (d'une ville) | n | C2 | /ˈtaʊnzpiːpl/ | The townspeople welcomed the pilgrims. | Les habitants ont accueilli les pèlerins.
+tribesman | membre d'une tribu | n | C2 | /ˈtraɪbzmən/ | The tribesmen welcomed us with tea. | Les membres de la tribu nous ont accueillis avec du thé.
+compatriot | compatriote | n | C1 | /kəmˈpætriət/ | He met a compatriot in Tokyo. | Il a rencontré un compatriote à Tokyo.
+vagabond | vagabond | n | C2 | /ˈvæɡəbɒnd/ | He lived like a vagabond. | Il vivait comme un vagabond.
+francophone | francophone | adj | C1 | /ˈfræŋkəfəʊn/ | Senegal is a francophone country. | Le Sénégal est un pays francophone.
 `,
 );

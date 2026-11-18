@@ -185,6 +185,69 @@ patriarch | patriarche | n | C2 | /ˈpeɪtriɑːk/ | The patriarch sat at the he
 progeny | progéniture | n | C2 | /ˈprɒdʒəni/ | He was proud of his progeny. | Il était fier de sa progéniture.
 forefathers | aïeux, ancêtres | n | C2 | /ˈfɔːfɑːðəz/ | Our forefathers built this village. | Nos aïeux ont bâti ce village.
 posterity | postérité | n | C2 | /pɒˈsterəti/ | The letters were kept for posterity. | Les lettres ont été conservées pour la postérité.
+parent | parent (père ou mère) | n | A1 | /ˈpeərənt/ | Both my parents work. | Mes deux parents travaillent.
+grandparent | grand-parent | n | A1 | /ˈɡrænpeərənt/ | My grandparents live in Morocco. | Mes grands-parents vivent au Maroc.
+daddy | papa | n | A1 | /ˈdædi/ | Daddy, can you read me a story? | Papa, tu peux me lire une histoire ?
+celebration | fête, célébration | n | A1 | /ˌselɪˈbreɪʃn/ | There was a big celebration after the wedding. | Il y a eu une grande fête après le mariage.
+granddad | papi, grand-père | n | A2 | /ˈɡrændæd/ | My granddad tells funny stories. | Mon papi raconte des histoires drôles.
+coffin | cercueil | n | B1 | /ˈkɒfɪn/ | The coffin was carried to the church. | Le cercueil a été porté jusqu'à l'église.
+farewell | adieu | n | B1 | /ˌfeəˈwel/ | We had a farewell party for our teacher. | Nous avons organisé une fête d'adieu pour notre professeur.
+festive | festif, de fête | adj | B1 | /ˈfestɪv/ | The streets have a festive atmosphere during Eid. | Les rues ont un air de fête pendant l'Aïd.
+funeral | enterrement, funérailles | n | B1 | /ˈfjuːnərəl/ | Many people came to the funeral. | Beaucoup de gens sont venus à l'enterrement.
+invitation | invitation | n | B1 | /ˌɪnvɪˈteɪʃn/ | Thank you for the invitation. | Merci pour l'invitation.
+parental | parental | adj | B2 | /pəˈrentl/ | The film needs parental guidance. | Ce film nécessite l'accord parental.
+relation | relation ; parent | n | B1 | /rɪˈleɪʃn/ | Relations between the two countries improved. | Les relations entre les deux pays se sont améliorées.
+filial | filial | adj | C2 | /ˈfɪliəl/ | Filial respect is a duty in Islam. | Le respect filial est un devoir en islam.
+grown-up | adulte, grande personne | n | B2 | /ˈɡrəʊn ʌp/ | Ask a grown-up to help you. | Demande à un adulte de t'aider.
+to wed | épouser, se marier | v | C1 | /wed/ | They were wed in the spring. | Ils se sont mariés au printemps.
+bachelor | célibataire (homme) ; licencié | n | B2 | /ˈbætʃələ/ | He's still a bachelor at forty. | Il est encore célibataire à quarante ans.
+maternity | maternité | n | C1 | /məˈtɜːnəti/ | She's on maternity leave. | Elle est en congé maternité.
+kin | famille, parents | n | C2 | /kɪn/ | Who is your next of kin? | Qui est votre plus proche parent ?
+feud | querelle, conflit | n | C1 | /fjuːd/ | The family feud lasted years. | La querelle familiale a duré des années.
+foetus | fœtus | n | C2 | /ˈfiːtəs/ | The foetus is twelve weeks old. | Le fœtus a douze semaines.
+homecoming | retour au foyer | n | C1 | /ˈhəʊmkʌmɪŋ/ | They celebrated his homecoming. | Ils ont fêté son retour.
+ancestry | ascendance, ancêtres | n | C1 | /ˈænsestri/ | He is proud of his Berber ancestry. | Il est fier de ses origines berbères.
+bridal | nuptial, de mariée | adj | C1 | /ˈbraɪdl/ | She wore a bridal gown. | Elle portait une robe de mariée.
+unmarried | célibataire, non marié | adj | B2 | /ˌʌnˈmærid/ | She is still unmarried. | Elle n'est toujours pas mariée.
+adultery | adultère | n | C2 | /əˈdʌltəri/ | Adultery is a major sin. | L'adultère est un péché majeur.
+infancy | petite enfance ; débuts | n | C2 | /ˈɪnfənsi/ | The project is still in its infancy. | Le projet n'en est qu'à ses débuts.
+surrogate | substitut ; mère porteuse | n | C2 | /ˈsʌrəɡət/ | Her aunt became a surrogate mother to her. | Sa tante est devenue comme une mère pour elle.
+wreath | couronne (de fleurs) | n | C1 | /riːθ/ | They laid a wreath on the grave. | Ils ont déposé une couronne sur la tombe.
+paternal | paternel | adj | C1 | /pəˈtɜːnl/ | My paternal grandparents live in Algeria. | Mes grands-parents paternels vivent en Algérie.
+maternal | maternel | adj | C1 | /məˈtɜːnl/ | She has strong maternal instincts. | Elle a un fort instinct maternel.
+corpse | cadavre | n | C2 | /kɔːps/ | The police found a corpse in the river. | La police a trouvé un cadavre dans la rivière.
+octogenarian | octogénaire | n | C2 | /ˌɒktədʒəˈneəriən/ | The octogenarian still drives. | L'octogénaire conduit encore.
+domesticity | vie de famille | n | C2 | /ˌdəʊmeˈstɪsəti/ | She enjoys a life of quiet domesticity. | Elle aime une vie familiale tranquille.
+miscarriage | fausse couche | n | C1 | /ˈmɪskærɪdʒ/ | She had a miscarriage. | Elle a fait une fausse couche.
+auntie | tata, tantine | n | B2 | /ˈɑːnti/ | Auntie made us a cake. | Tata nous a fait un gâteau.
+casket | cercueil ; coffret | n | C2 | /ˈkɑːskɪt/ | The casket was carried by four men. | Le cercueil était porté par quatre hommes.
+paternity | paternité | n | C2 | /pəˈtɜːnəti/ | He's on paternity leave. | Il est en congé paternité.
+urn | urne | n | C2 | /ɜːn/ | Ashes were kept in an urn. | Les cendres étaient conservées dans une urne.
+familial | familial | adj | C2 | /fəˈmɪliəl/ | They have strong familial bonds. | Ils ont des liens familiaux solides.
+eulogy | éloge funèbre | n | C2 | /ˈjuːlədʒi/ | His son gave the eulogy. | Son fils a prononcé l'éloge funèbre.
+shroud | linceul | n | C1 | /ʃraʊd/ | The body was wrapped in a white shroud. | Le corps a été enveloppé dans un linceul blanc.
+tombstone | pierre tombale | n | C1 | /ˈtuːmstəʊn/ | Muslim graves have simple tombstones. | Les tombes musulmanes ont des pierres tombales simples.
+caregiver | aidant, soignant | n | C1 | /ˈkeəɡɪvə/ | She is the main caregiver for her father. | Elle est la principale aidante de son père.
+fraternal | fraternel | adj | C1 | /frəˈtɜːnl/ | They share a fraternal bond. | Ils partagent un lien fraternel.
+childless | sans enfant | adj | C1 | /ˈtʃaɪldləs/ | They remained childless. | Ils sont restés sans enfant.
+cremation | crémation | n | C1 | /krəˈmeɪʃn/ | Cremation is not permitted in Islam. | La crémation n'est pas permise en islam.
+genealogical | généalogique | adj | C2 | /ˌdʒiːniəˈlɒdʒɪkl/ | He drew a genealogical tree. | Il a dessiné un arbre généalogique.
+mortuary | morgue, funérarium | n | C2 | /ˈmɔːtʃəri/ | The body is at the mortuary. | Le corps est au funérarium.
+scion | descendant, rejeton | n | C2 | /ˈsaɪən/ | He is a scion of a noble family. | C'est le descendant d'une famille noble.
+bereavement | deuil | n | C1 | /bɪˈriːvmənt/ | She is coping with a recent bereavement. | Elle traverse un deuil récent.
+sisterhood | fraternité (entre femmes), sororité | n | C1 | /ˈsɪstəhʊd/ | The women felt a strong sense of sisterhood. | Les femmes ressentaient une forte solidarité.
+expectant mother | future maman | n | C1 | /ɪkˌspektənt ˈmʌðə/ | Expectant mothers may skip the fast. | Les futures mamans peuvent ne pas jeûner.
+governess | gouvernante | n | C2 | /ˈɡʌvənəs/ | A governess taught the children. | Une gouvernante instruisait les enfants.
+stepdad | beau-père (conjoint de la mère) | n | B1 | /ˈstepdæd/ | My stepdad is very kind. | Mon beau-père est très gentil.
+parentage | filiation, ascendance | n | C2 | /ˈpeərəntɪdʒ/ | Islam protects lineage and parentage. | L'islam protège la filiation.
+progenitor | ancêtre, précurseur | n | C2 | /prəʊˈdʒenɪtə/ | Adam is the progenitor of humanity. | Adam est l'ancêtre de l'humanité.
+epitaph | épitaphe | n | C2 | /ˈepɪtɑːf/ | The epitaph on his grave is a verse. | L'épitaphe sur sa tombe est un verset.
+hearse | corbillard | n | C2 | /hɜːs/ | The hearse drove slowly to the cemetery. | Le corbillard roulait lentement vers le cimetière.
+homemaker | femme ou homme au foyer | n | C1 | /ˈhəʊmmeɪkə/ | She's a proud homemaker. | Elle est fière d'être mère au foyer.
+condolences | condoléances | n | B2 | /kənˈdəʊlənsɪz/ | Please accept my sincere condolences. | Veuillez accepter mes sincères condoléances.
+headstone | pierre tombale | n | C1 | /ˈhedstəʊn/ | The headstone bears only his name. | La pierre tombale ne porte que son nom.
+chaperone | chaperon | n | C2 | /ˈʃæpərəʊn/ | A chaperone accompanied the students. | Un chaperon accompagnait les étudiants.
+interment | inhumation | n | C2 | /ɪnˈtɜːmənt/ | The interment took place the same day. | L'inhumation a eu lieu le jour même.
 `,
 );
 
@@ -379,6 +442,128 @@ voluntourism | tourisme humanitaire | n | C2 | /ˈvɒləntʊərɪzəm/ | Volunto
 glamping | camping de luxe | n | B2 | /ˈɡlæmpɪŋ/ | We went glamping in a yurt. | Nous avons fait du camping de luxe dans une yourte.
 couchsurfing | couchsurfing (hébergement chez l'habitant) | n | B2 | /ˈkaʊtʃsɜːfɪŋ/ | Couchsurfing helps you meet locals. | Le couchsurfing aide à rencontrer les habitants.
 interrailing | voyage en Interrail | n | B2 | /ˈɪntəreɪlɪŋ/ | We went interrailing around Europe. | Nous avons fait le tour de l'Europe en Interrail.
+jet | avion à réaction, jet | n | B1 | /dʒet/ | A jet flew over the house. | Un avion à réaction a survolé la maison.
+truck | camion | n | A2 | /trʌk/ | A big truck blocked the road. | Un gros camion bloquait la route.
+wheel | roue ; volant | n | A2 | /wiːl/ | A bicycle has two wheels. | Un vélo a deux roues.
+brake | frein | n | A2 | /breɪk/ | The brakes don't work properly. | Les freins ne fonctionnent pas bien.
+highway | grande route, autoroute (US) | n | A2 | /ˈhaɪweɪ/ | The highway was closed after the accident. | La grande route a été fermée après l'accident.
+to immigrate | immigrer | v | B1 | /ˈɪmɪɡreɪt/ | His family immigrated to Canada. | Sa famille a immigré au Canada.
+motorcycle | moto | n | B1 | /ˈməʊtəsaɪkl/ | He rides a motorcycle to work. | Il va au travail à moto.
+rail | rail ; chemin de fer | n | B1 | /reɪl/ | We travelled by rail. | Nous avons voyagé en train.
+railway | chemin de fer, voie ferrée | n | B1 | /ˈreɪlweɪ/ | The railway runs along the coast. | La voie ferrée longe la côte.
+transport | transport | n | B1 | /ˈtrænspɔːt/ | Public transport is cheap here. | Les transports en commun sont bon marché ici.
+vehicle | véhicule | n | B1 | /ˈviːəkl/ | No vehicles are allowed in the old town. | Les véhicules sont interdits dans la vieille ville.
+vessel | navire, vaisseau ; récipient | n | B2 | /ˈvesl/ | The vessel sank in the storm. | Le navire a sombré dans la tempête.
+windscreen | pare-brise | n | B1 | /ˈwɪndskriːn/ | A stone cracked the windscreen. | Un caillou a fêlé le pare-brise.
+aircraft | avion, appareil | n | B2 | /ˈeəkrɑːft/ | The aircraft landed safely. | L'appareil a atterri sans encombre.
+aircrew | équipage (d'avion) | n | B2 | /ˈeəkruː/ | The aircrew welcomed the passengers. | L'équipage a accueilli les passagers.
+anchorage | mouillage | n | C1 | /ˈæŋkərɪdʒ/ | The boat found a safe anchorage. | Le bateau a trouvé un mouillage sûr.
+belongings | affaires, effets personnels | n | B2 | /bɪˈlɒŋɪŋz/ | Don't leave your belongings unattended. | Ne laissez pas vos affaires sans surveillance.
+bumper | pare-chocs | n | B2 | /ˈbʌmpə/ | The bumper was damaged in the crash. | Le pare-chocs a été abîmé dans l'accident.
+ferryboat | ferry, bac | n | B2 | /ˈferibəʊt/ | We crossed the river on a ferryboat. | Nous avons traversé la rivière en bac.
+fleet | flotte | n | B2 | /fliːt/ | The company has a fleet of fifty lorries. | L'entreprise possède une flotte de cinquante camions.
+liner | paquebot | n | C1 | /ˈlaɪnə/ | They crossed the Atlantic on a liner. | Ils ont traversé l'Atlantique en paquebot.
+long-distance | longue distance | adj | B2 | /ˌlɒŋ ˈdɪstəns/ | He's a long-distance lorry driver. | Il est chauffeur routier longue distance.
+navigation | navigation | n | B2 | /ˌnævɪˈɡeɪʃn/ | The car has satellite navigation. | La voiture a un GPS.
+non-smoking | non-fumeur | adj | B2 | /ˌnɒn ˈsməʊkɪŋ/ | Is this a non-smoking room? | Est-ce une chambre non-fumeur ?
+overboard | par-dessus bord | adv | B2 | /ˈəʊvəbɔːd/ | He fell overboard. | Il est tombé par-dessus bord.
+to overbook | surréserver | v | C1 | /ˌəʊvəˈbʊk/ | The flight was overbooked. | Le vol était en surréservation.
+pedal | pédale | n | B2 | /ˈpedl/ | Press the brake pedal gently. | Appuie doucement sur la pédale de frein.
+scooter | scooter ; trottinette | n | B2 | /ˈskuːtə/ | He rides a scooter to work. | Il va au travail en scooter.
+shipwreck | naufrage ; épave | n | B2 | /ˈʃɪprek/ | Only two sailors survived the shipwreck. | Seuls deux marins ont survécu au naufrage.
+to steer | diriger, piloter | v | B2 | /stɪə/ | He steered the boat into the harbour. | Il a dirigé le bateau vers le port.
+steering wheel | volant | n | B2 | /ˈstɪərɪŋ wiːl/ | Keep both hands on the steering wheel. | Garde les deux mains sur le volant.
+to unload | décharger | v | B2 | /ʌnˈləʊd/ | Help me unload the car. | Aide-moi à décharger la voiture.
+cargo | cargaison, fret | n | B2 | /ˈkɑːɡəʊ/ | The ship carried a cargo of wheat. | Le navire transportait une cargaison de blé.
+aviation | aviation | n | B2 | /ˌeɪviˈeɪʃn/ | He works in civil aviation. | Il travaille dans l'aviation civile.
+clearance | autorisation ; dégagement | n | C1 | /ˈklɪərəns/ | The plane is waiting for clearance to land. | L'avion attend l'autorisation d'atterrir.
+maritime | maritime | adj | C1 | /ˈmærɪtaɪm/ | It's a maritime museum. | C'est un musée de la marine.
+automobile | automobile | n | B2 | /ˈɔːtəməbiːl/ | The automobile changed the world. | L'automobile a changé le monde.
+shuttle | navette | n | B2 | /ˈʃʌtl/ | A shuttle bus goes to the airport. | Une navette dessert l'aéroport.
+grease | graisse | n | B2 | /ɡriːs/ | His hands were covered in grease. | Ses mains étaient couvertes de graisse.
+ignition | allumage, contact | n | C1 | /ɪɡˈnɪʃn/ | Turn the key in the ignition. | Tourne la clé de contact.
+dent | bosse, enfoncement | n | B2 | /dent/ | There's a dent in the car door. | Il y a une bosse sur la portière.
+compartment | compartiment | n | B2 | /kəmˈpɑːtmənt/ | We had a compartment to ourselves. | Nous avions un compartiment pour nous seuls.
+cockpit | cockpit, poste de pilotage | n | C1 | /ˈkɒkpɪt/ | The pilot entered the cockpit. | Le pilote est entré dans le cockpit.
+convertible | décapotable | n | B2 | /kənˈvɜːtəbl/ | They drove a red convertible. | Ils conduisaient une décapotable rouge.
+saloon | berline | n | C1 | /səˈluːn/ | He drives a four-door saloon. | Il conduit une berline à quatre portes.
+chassis | châssis | n | C2 | /ˈʃæsi/ | The chassis of the car is damaged. | Le châssis de la voiture est endommagé.
+cruiser | croiseur ; bateau de croisière | n | C1 | /ˈkruːzə/ | A navy cruiser entered the port. | Un croiseur de la marine est entré au port.
+mast | mât | n | C1 | /mɑːst/ | The flag flew from the mast. | Le drapeau flottait au mât.
+tyre | pneu | n | B2 | /ˈtaɪə/ | I've got a flat tyre. | J'ai un pneu crevé.
+barge | péniche | n | C1 | /bɑːdʒ/ | A barge sailed slowly along the canal. | Une péniche naviguait lentement sur le canal.
+axle | essieu | n | C2 | /ˈæksl/ | The truck's axle broke. | L'essieu du camion s'est cassé.
+interchange | échangeur ; échange | n | C1 | /ˈɪntətʃeɪndʒ/ | Take the next motorway interchange. | Prends le prochain échangeur.
+nautical | nautique, marin | adj | C1 | /ˈnɔːtɪkl/ | A nautical mile is longer than a mile. | Un mille marin est plus long qu'un mile.
+throttle | accélérateur | n | C2 | /ˈθrɒtl/ | He opened the throttle. | Il a mis les gaz.
+raft | radeau | n | B2 | /rɑːft/ | They crossed the river on a raft. | Ils ont traversé la rivière sur un radeau.
+sleeper | train-couchettes ; dormeur | n | C1 | /ˈsliːpə/ | We took the sleeper to Edinburgh. | Nous avons pris le train de nuit pour Édimbourg.
+steward | steward, intendant | n | B2 | /ˈstjuːəd/ | The steward served drinks. | Le steward a servi des boissons.
+berth | couchette ; mouillage | n | C2 | /bɜːθ/ | I booked a berth on the night ferry. | J'ai réservé une couchette sur le ferry de nuit.
+tanker | pétrolier, camion-citerne | n | C1 | /ˈtæŋkə/ | An oil tanker sank off the coast. | Un pétrolier a coulé au large des côtes.
+biker | motard | n | B2 | /ˈbaɪkə/ | A group of bikers stopped at the café. | Un groupe de motards s'est arrêté au café.
+to honk | klaxonner | v | C1 | /hɒŋk/ | The driver honked his horn. | Le conducteur a klaxonné.
+transatlantic | transatlantique | adj | C1 | /ˌtrænzətˈlæntɪk/ | They took a transatlantic flight. | Ils ont pris un vol transatlantique.
+transit | transit | n | C1 | /ˈtrænzɪt/ | The goods were damaged in transit. | Les marchandises ont été abîmées pendant le transport.
+to charter | affréter | v | C1 | /ˈtʃɑːtə/ | They chartered a plane for the pilgrims. | Ils ont affrété un avion pour les pèlerins.
+locomotive | locomotive | n | C2 | /ˌləʊkəˈməʊtɪv/ | The old locomotive is in a museum. | La vieille locomotive est dans un musée.
+to circumnavigate | faire le tour de (en bateau) | v | C2 | /ˌsɜːkəmˈnævɪɡeɪt/ | Magellan's crew circumnavigated the globe. | L'équipage de Magellan a fait le tour du monde.
+mariner | marin (littéraire) | n | C2 | /ˈmærɪnə/ | The old mariner told tales of the sea. | Le vieux marin racontait des histoires de mer.
+helm | barre, gouvernail | n | C2 | /helm/ | She is at the helm of the company. | Elle est à la tête de l'entreprise.
+autopilot | pilote automatique | n | C2 | /ˈɔːtəʊpaɪlət/ | I drove home on autopilot. | Je suis rentré en pilote automatique.
+hull | coque | n | C2 | /hʌl/ | The hull of the ship was damaged. | La coque du navire était endommagée.
+coupé | coupé (voiture) | n | C2 | /ˈkuːpeɪ/ | He drives a sports coupé. | Il conduit un coupé sport.
+dashboard | tableau de bord | n | C1 | /ˈdæʃbɔːd/ | A light came on on the dashboard. | Un voyant s'est allumé sur le tableau de bord.
+limo | limousine | n | B2 | /ˈlɪməʊ/ | They hired a limo for the wedding. | Ils ont loué une limousine pour le mariage.
+propeller | hélice | n | C1 | /prəˈpelə/ | The boat's propeller was damaged. | L'hélice du bateau a été endommagée.
+voyager | voyageur (en mer) | n | C2 | /ˈvɔɪɪdʒə/ | The voyagers crossed the ocean. | Les voyageurs ont traversé l'océan.
+chopper | hélicoptère (familier) | n | C1 | /ˈtʃɒpə/ | The chopper landed on the roof. | L'hélico s'est posé sur le toit.
+hangar | hangar | n | C2 | /ˈhæŋə/ | The plane is in the hangar. | L'avion est dans le hangar.
+airspace | espace aérien | n | C2 | /ˈeəspeɪs/ | The plane entered French airspace. | L'avion est entré dans l'espace aérien français.
+to skid | déraper | v | C1 | /skɪd/ | The car skidded on the ice. | La voiture a dérapé sur le verglas.
+puncture | crevaison | n | B2 | /ˈpʌŋktʃə/ | I've got a puncture. | J'ai crevé.
+galley | cuisine (d'avion, de bateau) ; galère | n | C2 | /ˈɡæli/ | The cook works in the ship's galley. | Le cuisinier travaille dans la cuisine du navire.
+southbound | en direction du sud | adj | C2 | /ˈsaʊθbaʊnd/ | Take the southbound train. | Prends le train en direction du sud.
+gearbox | boîte de vitesses | n | C2 | /ˈɡɪəbɒks/ | The car needs a new gearbox. | La voiture a besoin d'une nouvelle boîte de vitesses.
+limousine | limousine | n | B2 | /ˈlɪməziːn/ | A limousine waited outside. | Une limousine attendait dehors.
+northbound | en direction du nord | adj | C2 | /ˈnɔːθbaʊnd/ | The northbound train is late. | Le train en direction du nord est en retard.
+rudder | gouvernail | n | C2 | /ˈrʌdə/ | The rudder was broken. | Le gouvernail était cassé.
+seaman | marin | n | C1 | /ˈsiːmən/ | He was a seaman for thirty years. | Il a été marin pendant trente ans.
+back seat | siège arrière | n | B2 | /ˌbæk ˈsiːt/ | The children sat in the back seat. | Les enfants se sont assis à l'arrière.
+coolant | liquide de refroidissement | n | C2 | /ˈkuːlənt/ | Check the coolant level. | Vérifie le niveau du liquide de refroidissement.
+keel | quille | n | C2 | /kiːl/ | The boat has a deep keel. | Le bateau a une quille profonde.
+waterway | voie navigable | n | C2 | /ˈwɔːtəweɪ/ | The canal is an important waterway. | Le canal est une voie navigable importante.
+starboard | tribord | n | C2 | /ˈstɑːbəd/ | The island is on the starboard side. | L'île est à tribord.
+ballast | lest | n | C2 | /ˈbæləst/ | The ship carries water as ballast. | Le navire transporte de l'eau comme lest.
+fuselage | fuselage | n | C2 | /ˈfjuːzəlɑːʒ/ | The fuselage was badly damaged. | Le fuselage a été gravement endommagé.
+airliner | avion de ligne | n | C1 | /ˈeəlaɪnə/ | A huge airliner flew overhead. | Un énorme avion de ligne est passé au-dessus de nous.
+steamship | bateau à vapeur | n | C2 | /ˈstiːmʃɪp/ | They crossed the ocean by steamship. | Ils ont traversé l'océan en bateau à vapeur.
+freighter | cargo | n | C2 | /ˈfreɪtə/ | The freighter carried grain. | Le cargo transportait des céréales.
+tarmac | tarmac, piste | n | C1 | /ˈtɑːmæk/ | The plane waited on the tarmac. | L'avion attendait sur le tarmac.
+headlight | phare (de voiture) | n | B2 | /ˈhedlaɪt/ | One of the headlights is broken. | L'un des phares est cassé.
+to swerve | faire une embardée | v | C1 | /swɜːv/ | The driver swerved to avoid the dog. | Le conducteur a fait une embardée pour éviter le chien.
+tiller | barre (d'un bateau) | n | C2 | /ˈtɪlə/ | He held the tiller firmly. | Il tenait fermement la barre.
+gondola | gondole ; télécabine | n | C1 | /ˈɡɒndələ/ | We took a gondola up the mountain. | Nous avons pris une télécabine jusqu'au sommet.
+oar | rame, aviron | n | B2 | /ɔː/ | He pulled hard on the oars. | Il tirait fort sur les rames.
+airship | dirigeable | n | C1 | /ˈeəʃɪp/ | An airship floated over the city. | Un dirigeable survolait la ville.
+flotilla | flottille | n | C2 | /fləˈtɪlə/ | A flotilla sailed to Gaza. | Une flottille a fait route vers Gaza.
+rickshaw | pousse-pousse, rickshaw | n | C1 | /ˈrɪkʃɔː/ | We took a rickshaw through the old city. | Nous avons pris un rickshaw dans la vieille ville.
+aground | échoué | adv | C2 | /əˈɡraʊnd/ | The ship ran aground. | Le navire s'est échoué.
+airfare | prix du billet d'avion | n | B2 | /ˈeəfeə/ | Airfares rise during Hajj season. | Les prix des billets d'avion augmentent pendant la saison du Hajj.
+alternator | alternateur | n | C2 | /ˈɔːltəneɪtə/ | The car's alternator failed. | L'alternateur de la voiture est tombé en panne.
+airstrip | piste d'atterrissage | n | C2 | /ˈeəstrɪp/ | The plane landed on a dirt airstrip. | L'avion a atterri sur une piste en terre.
+windscreen wiper | essuie-glace | n | B1 | /ˈwɪndskriːn ˌwaɪpə/ | The windscreen wipers are broken. | Les essuie-glaces sont cassés.
+sloop | sloop (voilier) | n | C2 | /sluːp/ | They sailed a small sloop. | Ils naviguaient sur un petit sloop.
+crankshaft | vilebrequin | n | C2 | /ˈkræŋkʃɑːft/ | The crankshaft is broken. | Le vilebrequin est cassé.
+submersible | submersible | n | C2 | /səbˈmɜːsəbl/ | A submersible explored the wreck. | Un submersible a exploré l'épave.
+blimp | dirigeable | n | C2 | /blɪmp/ | A blimp flew over the stadium. | Un dirigeable a survolé le stade.
+bodywork | carrosserie | n | C1 | /ˈbɒdiwɜːk/ | The bodywork was damaged. | La carrosserie a été endommagée.
+hairpin bend | virage en épingle à cheveux | n | C1 | /ˌheəpɪn ˈbend/ | The mountain road has many hairpin bends. | La route de montagne a de nombreux virages en épingle.
+sojourn | séjour | n | C2 | /ˈsɒdʒɜːn/ | After a brief sojourn in Cairo, he returned. | Après un bref séjour au Caire, il est rentré.
+transcontinental | transcontinental | adj | C2 | /ˌtrænzkɒntɪˈnentl/ | They took a transcontinental train. | Ils ont pris un train transcontinental.
+bulkhead | cloison étanche | n | C2 | /ˈbʌlkhed/ | Water broke through the bulkhead. | L'eau a traversé la cloison étanche.
+minibus | minibus | n | B1 | /ˈmɪnibʌs/ | A minibus took us to the airport. | Un minibus nous a conduits à l'aéroport.
+sunroof | toit ouvrant | n | B2 | /ˈsʌnruːf/ | The car has a sunroof. | La voiture a un toit ouvrant.
 `,
 );
 
@@ -594,5 +779,131 @@ gig economy | économie des petits boulots | n | C1 | /ˈɡɪɡ iˌkɒnəmi/ | D
 zero-hours contract | contrat zéro heure | n | C1 | /ˌzɪərəʊ ˈaʊəz ˌkɒntrækt/ | She's on a zero-hours contract. | Elle a un contrat zéro heure.
 side hustle | activité d'appoint | n | B2 | /ˈsaɪd ˌhʌsl/ | Selling cakes is her side hustle. | Vendre des gâteaux est son activité d'appoint.
 moonlighting | travail au noir (en plus) | n | C2 | /ˈmuːnlaɪtɪŋ/ | Moonlighting is forbidden by his contract. | Son contrat lui interdit de cumuler un second emploi.
+worker | travailleur, ouvrier | n | A2 | /ˈwɜːkə/ | The factory has two hundred workers. | L'usine compte deux cents ouvriers.
+bureau | bureau, agence | n | B2 | /ˈbjʊərəʊ/ | He works for a travel bureau. | Il travaille pour une agence de voyages.
+interviewee | personne interviewée, candidat | n | B2 | /ˌɪntəvjuːˈiː/ | The interviewee seemed nervous. | Le candidat semblait nerveux.
+organisation | organisation | n | B1 | /ˌɔːɡənaɪˈzeɪʃn/ | She works for a charity organisation. | Elle travaille pour une association caritative.
+overwork | surmenage | n | B2 | /ˌəʊvəˈwɜːk/ | He fell ill from overwork. | Il est tombé malade à cause du surmenage.
+paid | payé, rémunéré | adj | B1 | /peɪd/ | She has a well-paid job. | Elle a un travail bien payé.
+photocopy | photocopie | n | B1 | /ˈfəʊtəʊkɒpi/ | Make a photocopy of your passport. | Fais une photocopie de ton passeport.
+qualified | qualifié, diplômé | adj | B1 | /ˈkwɒlɪfaɪd/ | She's a qualified nurse. | C'est une infirmière diplômée.
+to specialise | se spécialiser | v | B1 | /ˈspeʃəlaɪz/ | She specialises in children's medicine. | Elle est spécialisée en médecine pour enfants.
+absentee | absent | n | B2 | /ˌæbsənˈtiː/ | There were three absentees today. | Il y avait trois absents aujourd'hui.
+administrative | administratif | adj | B2 | /ədˈmɪnɪstrətɪv/ | She does administrative work. | Elle fait du travail administratif.
+advancement | avancement, promotion | n | B2 | /ədˈvɑːnsmənt/ | There are few chances of advancement here. | Les possibilités d'avancement sont rares ici.
+catering | restauration (service traiteur) | n | B2 | /ˈkeɪtərɪŋ/ | Who's doing the catering for the wedding? | Qui s'occupe du traiteur pour le mariage ?
+certification | certification, attestation | n | B2 | /ˌsɜːtɪfɪˈkeɪʃn/ | You need certification to work here. | Il faut une certification pour travailler ici.
+clerical | de bureau | adj | B2 | /ˈklerɪkl/ | She has a clerical job. | Elle a un emploi de bureau.
+conferencing | conférence (à distance) | n | B2 | /ˈkɒnfərənsɪŋ/ | We use video conferencing for meetings. | Nous utilisons la visioconférence pour les réunions.
+deputy | adjoint | n | B2 | /ˈdepjuti/ | The deputy head runs the school today. | Le directeur adjoint dirige l'école aujourd'hui.
+executive | cadre, dirigeant | n | B2 | /ɪɡˈzekjətɪv/ | She's a senior executive in a bank. | C'est une cadre supérieure dans une banque.
+interpersonal | relationnel | adj | C1 | /ˌɪntəˈpɜːsənl/ | Good interpersonal skills are essential. | De bonnes qualités relationnelles sont indispensables.
+manual | manuel ; mode d'emploi | n | B2 | /ˈmænjuəl/ | Read the manual before using the machine. | Lis le mode d'emploi avant d'utiliser la machine.
+non-professional | non professionnel, amateur | adj | B2 | /ˌnɒn prəˈfeʃənl/ | It's a non-professional theatre group. | C'est une troupe de théâtre amateur.
+organiser | organisateur | n | B2 | /ˈɔːɡənaɪzə/ | The organisers thanked the volunteers. | Les organisateurs ont remercié les bénévoles.
+pallet | palette (de manutention) | n | C1 | /ˈpælət/ | The boxes are stacked on pallets. | Les cartons sont empilés sur des palettes.
+paperless | sans papier, dématérialisé | adj | C1 | /ˈpeɪpələs/ | We're moving to a paperless office. | Nous passons à un bureau sans papier.
+personnel | personnel, effectifs | n | B2 | /ˌpɜːsəˈnel/ | All personnel must wear a badge. | Tout le personnel doit porter un badge.
+planning | planification, organisation | n | B2 | /ˈplænɪŋ/ | The trip needs careful planning. | Le voyage exige une organisation minutieuse.
+superintendent | directeur, commissaire | n | C1 | /ˌsuːpərɪnˈtendənt/ | The police superintendent held a press conference. | Le commissaire de police a tenu une conférence de presse.
+to supervise | superviser, surveiller | v | B2 | /ˈsuːpəvaɪz/ | She supervises a team of ten. | Elle encadre une équipe de dix personnes.
+supervision | surveillance, encadrement | n | B2 | /ˌsuːpəˈvɪʒn/ | Children must swim under supervision. | Les enfants doivent nager sous surveillance.
+to toil | peiner, trimer | v | C1 | /tɔɪl/ | They toiled in the fields all day. | Ils ont trimé dans les champs toute la journée.
+well-paid | bien payé | adj | B2 | /ˌwel ˈpeɪd/ | She has a well-paid job. | Elle a un emploi bien payé.
+administrator | administrateur | n | B2 | /ədˈmɪnɪstreɪtə/ | Ask the system administrator. | Demande à l'administrateur système.
+expertise | expertise, savoir-faire | n | C1 | /ˌekspɜːˈtiːz/ | We need your expertise. | Nous avons besoin de ton savoir-faire.
+placement | stage ; placement | n | B2 | /ˈpleɪsmənt/ | She did a work placement in a bank. | Elle a fait un stage dans une banque.
+successor | successeur | n | C1 | /səkˈsesə/ | He named his son as his successor. | Il a désigné son fils comme successeur.
+documentation | documentation | n | C1 | /ˌdɒkjumenˈteɪʃn/ | Read the documentation first. | Lis d'abord la documentation.
+tenure | titularisation ; mandat | n | C2 | /ˈtenjə/ | During his tenure as mayor, the town grew. | Pendant son mandat de maire, la ville s'est agrandie.
+coordinator | coordinateur | n | B2 | /kəʊˈɔːdɪneɪtə/ | She's the project coordinator. | C'est la coordinatrice du projet.
+handbook | manuel, guide | n | B2 | /ˈhændbʊk/ | Read the staff handbook. | Lis le guide du personnel.
+insider | initié ; quelqu'un de la maison | n | C1 | /ɪnˈsaɪdə/ | An insider leaked the information. | Une personne de l'intérieur a divulgué l'information.
+termination | résiliation, licenciement | n | C1 | /ˌtɜːmɪˈneɪʃn/ | He received a letter of termination. | Il a reçu une lettre de licenciement.
+aide | assistant, collaborateur | n | C1 | /eɪd/ | The president's aide answered the phone. | Le collaborateur du président a répondu au téléphone.
+stint | période, passage | n | C2 | /stɪnt/ | He did a two-year stint in the army. | Il a fait un passage de deux ans dans l'armée.
+managerial | de direction, managérial | adj | C1 | /ˌmænəˈdʒɪəriəl/ | She has managerial experience. | Elle a de l'expérience en gestion.
+to cater for | s'occuper de, répondre aux besoins de | v | C1 | /ˈkeɪtə fɔː/ | The school caters for children with special needs. | L'école accueille des enfants ayant des besoins particuliers.
+planner | agenda ; planificateur | n | B2 | /ˈplænə/ | Write it in your planner. | Note-le dans ton agenda.
+memorandum | mémorandum, note de service | n | C2 | /ˌmeməˈrændəm/ | The manager sent a memorandum to all staff. | Le directeur a envoyé une note de service à tout le personnel.
+manpower | main-d'œuvre | n | C1 | /ˈmænpaʊə/ | We don't have the manpower. | Nous manquons de main-d'œuvre.
+checklist | liste de contrôle | n | B2 | /ˈtʃeklɪst/ | Go through the checklist before you leave. | Passe en revue la liste avant de partir.
+to relocate | déménager, délocaliser | v | C1 | /ˌriːləʊˈkeɪt/ | The company relocated to Lyon. | L'entreprise s'est installée à Lyon.
+livelihood | gagne-pain, moyens de subsistance | n | C1 | /ˈlaɪvlihʊd/ | Fishing is their livelihood. | La pêche est leur gagne-pain.
+organisational | organisationnel | adj | C1 | /ˌɔːɡənaɪˈzeɪʃənl/ | She has good organisational skills. | Elle a un bon sens de l'organisation.
+collaborator | collaborateur | n | C1 | /kəˈlæbəreɪtə/ | She was my collaborator on the book. | Elle a collaboré avec moi sur le livre.
+collaborative | collaboratif | adj | C1 | /kəˈlæbərətɪv/ | It's a collaborative project. | C'est un projet collaboratif.
+professionalism | professionnalisme | n | C1 | /prəˈfeʃənəlɪzəm/ | We appreciate your professionalism. | Nous apprécions votre professionnalisme.
+predecessor | prédécesseur | n | C1 | /ˈpriːdɪsesə/ | She is more popular than her predecessor. | Elle est plus populaire que son prédécesseur.
+advisory | consultatif | adj | C1 | /ədˈvaɪzəri/ | She sits on an advisory committee. | Elle siège à un comité consultatif.
+to oversee | superviser | v | C1 | /ˌəʊvəˈsiː/ | She oversees the whole project. | Elle supervise l'ensemble du projet.
+overseer | surveillant, contremaître | n | C1 | /ˈəʊvəsɪə/ | The overseer checked the workers. | Le contremaître surveillait les ouvriers.
+liaison | liaison, coordination | n | C1 | /liˈeɪzn/ | She acts as a liaison between the two teams. | Elle assure la liaison entre les deux équipes.
+occupational | professionnel | adj | C1 | /ˌɒkjuˈpeɪʃənl/ | Back pain is an occupational hazard. | Le mal de dos est un risque professionnel.
+credentials | références, titres | n | C1 | /krəˈdenʃlz/ | She has excellent credentials. | Elle a d'excellentes références.
+to liaise | assurer la liaison | v | C2 | /liˈeɪz/ | She liaises with the suppliers. | Elle assure la liaison avec les fournisseurs.
+menial | subalterne, ingrat | adj | C2 | /ˈmiːniəl/ | He did menial jobs to survive. | Il faisait de petits boulots pour survivre.
+drudgery | corvée, travail pénible | n | C2 | /ˈdrʌdʒəri/ | Machines have reduced the drudgery of housework. | Les machines ont allégé les corvées ménagères.
+practitioner | praticien | n | C2 | /prækˈtɪʃənə/ | She's a medical practitioner. | C'est une praticienne.
+supervisory | de surveillance, d'encadrement | adj | C2 | /ˌsuːpəˈvaɪzəri/ | She has a supervisory role. | Elle a un rôle d'encadrement.
+mediator | médiateur | n | C1 | /ˈmiːdieɪtə/ | A mediator helped settle the dispute. | Un médiateur a aidé à régler le différend.
+departmental | départemental, de service | adj | C2 | /ˌdiːpɑːtˈmentl/ | We have a departmental meeting. | Nous avons une réunion de service.
+picket | piquet de grève | n | C2 | /ˈpɪkɪt/ | Workers formed a picket outside the factory. | Les ouvriers ont formé un piquet de grève devant l'usine.
+remuneration | rémunération | n | C2 | /rɪˌmjuːnəˈreɪʃn/ | The remuneration is generous. | La rémunération est généreuse.
+strategist | stratège | n | C2 | /ˈstrætədʒɪst/ | He's a brilliant military strategist. | C'est un brillant stratège militaire.
+typewriter | machine à écrire | n | B2 | /ˈtaɪpraɪtə/ | My grandfather wrote on a typewriter. | Mon grand-père écrivait à la machine.
+unprofessional | peu professionnel | adj | C1 | /ˌʌnprəˈfeʃənl/ | His behaviour was unprofessional. | Son comportement manquait de professionnalisme.
+stoppage | arrêt de travail | n | C2 | /ˈstɒpɪdʒ/ | There was a two-hour work stoppage. | Il y a eu un arrêt de travail de deux heures.
+backlog | retard accumulé | n | C2 | /ˈbæklɒɡ/ | We have a backlog of orders. | Nous avons des commandes en retard.
+downtime | temps d'arrêt ; temps libre | n | C1 | /ˈdaʊntaɪm/ | Everyone needs some downtime. | Tout le monde a besoin de temps libre.
+perk | avantage (en nature) | n | C1 | /pɜːk/ | A company car is one of the perks. | Une voiture de fonction fait partie des avantages.
+chief executive | PDG, directeur général | n | B2 | /ˌtʃiːf ɪɡˈzekjətɪv/ | The chief executive resigned. | Le directeur général a démissionné.
+throughput | débit, rendement | n | C2 | /ˈθruːpʊt/ | The new machine doubles our throughput. | La nouvelle machine double notre rendement.
+seniority | ancienneté | n | C1 | /ˌsiːniˈɒrəti/ | Promotion is based on seniority. | La promotion se fait à l'ancienneté.
+severance pay | indemnité de licenciement | n | C1 | /ˈsevərəns peɪ/ | He received six months' severance pay. | Il a reçu six mois d'indemnités de licenciement.
+workflow | flux de travail, organisation du travail | n | C1 | /ˈwɜːkfləʊ/ | The new software improves our workflow. | Le nouveau logiciel améliore notre organisation du travail.
+jobless | sans emploi | adj | B2 | /ˈdʒɒbləs/ | He has been jobless for a year. | Il est sans emploi depuis un an.
+lockout | lock-out | n | C2 | /ˈlɒkaʊt/ | The workers faced a lockout. | Les ouvriers ont subi un lock-out.
+negotiator | négociateur | n | C1 | /nɪˈɡəʊʃieɪtə/ | She's a skilled negotiator. | C'est une négociatrice habile.
+custodian | gardien, conservateur | n | C2 | /kʌˈstəʊdiən/ | The king is the custodian of the two holy mosques. | Le roi est le gardien des deux saintes mosquées.
+to solder | souder | v | C2 | /ˈsəʊldə/ | He solders the wires together. | Il soude les fils ensemble.
+mismanagement | mauvaise gestion | n | C1 | /ˌmɪsˈmænɪdʒmənt/ | The company collapsed due to mismanagement. | L'entreprise s'est effondrée à cause d'une mauvaise gestion.
+workmanship | qualité d'exécution, façon | n | C2 | /ˈwɜːkmənʃɪp/ | The workmanship of this carpet is superb. | La qualité de ce tapis est superbe.
+dispatcher | répartiteur | n | C2 | /dɪˈspætʃə/ | The dispatcher sent an ambulance. | Le répartiteur a envoyé une ambulance.
+toolkit | trousse à outils, boîte à outils | n | B2 | /ˈtuːlkɪt/ | The guide is a toolkit for teachers. | Le guide est une boîte à outils pour les enseignants.
+anvil | enclume | n | C2 | /ˈænvɪl/ | The blacksmith beat the iron on the anvil. | Le forgeron battait le fer sur l'enclume.
+fixer | intermédiaire, homme à tout faire | n | C2 | /ˈfɪksə/ | The journalist hired a local fixer. | Le journaliste a engagé un intermédiaire local.
+winch | treuil | n | C2 | /wɪntʃ/ | They lifted the boat with a winch. | Ils ont soulevé le bateau avec un treuil.
+workstation | poste de travail | n | B2 | /ˈwɜːksteɪʃn/ | Keep your workstation tidy. | Garde ton poste de travail en ordre.
+lubrication | lubrification, graissage | n | C2 | /ˌluːbrɪˈkeɪʃn/ | The engine needs lubrication. | Le moteur a besoin d'être graissé.
+shredder | broyeur (de documents) | n | C1 | /ˈʃredə/ | Put the old letters through the shredder. | Passe les vieilles lettres au broyeur.
+handover | passation, transfert | n | C1 | /ˈhændəʊvə/ | The handover of power was peaceful. | La passation de pouvoir s'est faite pacifiquement.
+earner | personne qui gagne sa vie | n | C1 | /ˈɜːnə/ | She is the main earner in the family. | C'est elle qui fait vivre la famille.
+workday | journée de travail | n | B2 | /ˈwɜːkdeɪ/ | My workday starts at eight. | Ma journée de travail commence à huit heures.
+sledgehammer | masse (outil) | n | C1 | /ˈsledʒhæmə/ | He broke the wall with a sledgehammer. | Il a cassé le mur à la masse.
+refresher course | stage de remise à niveau | n | C1 | /rɪˈfreʃə kɔːs/ | Nurses take a refresher course every year. | Les infirmières suivent un stage de remise à niveau chaque année.
+facilitator | animateur, facilitateur | n | C2 | /fəˈsɪlɪteɪtə/ | The facilitator led the workshop. | L'animatrice a dirigé l'atelier.
+motivator | source de motivation | n | C1 | /ˈməʊtɪveɪtə/ | Money is not the only motivator. | L'argent n'est pas la seule source de motivation.
+overpaid | surpayé | adj | C1 | /ˌəʊvəˈpeɪd/ | Footballers are overpaid. | Les footballeurs sont surpayés.
+clipboard | presse-papiers ; porte-bloc | n | C1 | /ˈklɪpbɔːd/ | Copy the text to the clipboard. | Copie le texte dans le presse-papiers.
+appointee | personne nommée | n | C2 | /əˌpɔɪnˈtiː/ | He's a political appointee. | C'est une nomination politique.
+assessor | évaluateur, expert | n | C2 | /əˈsesə/ | An assessor examined the damage. | Un expert a évalué les dégâts.
+bulldozer | bulldozer | n | B2 | /ˈbʊldəʊzə/ | A bulldozer flattened the old houses. | Un bulldozer a rasé les vieilles maisons.
+forklift | chariot élévateur | n | C1 | /ˈfɔːklɪft/ | He drives a forklift in the warehouse. | Il conduit un chariot élévateur dans l'entrepôt.
+injector | injecteur | n | C2 | /ɪnˈdʒektə/ | The fuel injector needs cleaning. | L'injecteur doit être nettoyé.
+sawdust | sciure | n | C1 | /ˈsɔːdʌst/ | The floor was covered in sawdust. | Le sol était couvert de sciure.
+workspace | espace de travail | n | B2 | /ˈwɜːkspeɪs/ | Keep your workspace clean. | Garde ton espace de travail propre.
+bureaucrat | bureaucrate | n | C1 | /ˈbjʊərəkræt/ | The bureaucrats rejected our request. | Les bureaucrates ont rejeté notre demande.
+mentorship | mentorat | n | C1 | /ˈmentɔːʃɪp/ | The programme offers mentorship to young people. | Le programme propose du mentorat aux jeunes.
+to retrofit | moderniser, équiper après coup | v | C2 | /ˈretrəʊfɪt/ | They retrofit old buildings with solar panels. | Ils équipent les vieux bâtiments de panneaux solaires.
+switchboard | standard (téléphonique) | n | C1 | /ˈswɪtʃbɔːd/ | Call the switchboard and ask for the director. | Appelle le standard et demande le directeur.
+spotter | observateur, guetteur | n | C2 | /ˈspɒtə/ | The spotter watched for birds. | L'observateur guettait les oiseaux.
+callback | rappel | n | C1 | /ˈkɔːlbæk/ | I got a callback after the interview. | J'ai été rappelé après l'entretien.
+gatekeeper | gardien ; garde-barrière | n | C2 | /ˈɡeɪtkiːpə/ | Editors act as gatekeepers. | Les éditeurs jouent le rôle de gardiens.
+inspectorate | inspection (service) | n | C2 | /ɪnˈspektərət/ | The schools inspectorate visited us. | L'inspection académique nous a rendu visite.
+hedge trimmer | taille-haie | n | C1 | /ˈhedʒ ˌtrɪmə/ | He cut the hedge with a hedge trimmer. | Il a coupé la haie avec un taille-haie.
+auger | tarière | n | C2 | /ˈɔːɡə/ | He drilled a hole with an auger. | Il a percé un trou à la tarière.
+flywheel | volant (d'inertie) | n | C2 | /ˈflaɪwiːl/ | The engine has a heavy flywheel. | Le moteur a un volant lourd.
+furlough | congé (temporaire), chômage partiel | n | C2 | /ˈfɜːləʊ/ | Workers were put on furlough. | Les employés ont été mis au chômage partiel.
 `,
 );

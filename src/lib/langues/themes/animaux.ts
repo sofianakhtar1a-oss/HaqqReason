@@ -266,5 +266,116 @@ animal rights | droits des animaux | n | B2 | /ˌænɪml ˈraɪts/ | She campaig
 cruelty | cruauté | n | B2 | /ˈkruːəlti/ | Cruelty to animals is forbidden. | La cruauté envers les animaux est interdite.
 ivory | ivoire | n | B2 | /ˈaɪvəri/ | The ivory trade is illegal. | Le commerce de l'ivoire est illégal.
 sanctuary | refuge, réserve | n | C1 | /ˈsæŋktʃuəri/ | The donkeys live in a sanctuary. | Les ânes vivent dans un refuge.
+beast | bête | n | B1 | /biːst/ | The beast was hiding in the forest. | La bête se cachait dans la forêt.
+beagle | beagle | n | B2 | /ˈbiːɡl/ | Our beagle loves long walks. | Notre beagle adore les longues promenades.
+birdcage | cage à oiseaux | n | B2 | /ˈbɜːdkeɪdʒ/ | The parrot lives in a large birdcage. | Le perroquet vit dans une grande cage.
+skylark | alouette | n | C1 | /ˈskaɪlɑːk/ | A skylark sang above the fields. | Une alouette chantait au-dessus des champs.
+larva | larve | n | C1 | /ˈlɑːvə/ | A caterpillar is a butterfly larva. | La chenille est une larve de papillon.
+venom | venin | n | C1 | /ˈvenəm/ | Snake venom can be deadly. | Le venin de serpent peut être mortel.
+hind | arrière (pattes) | adj | C1 | /haɪnd/ | The horse stood on its hind legs. | Le cheval s'est cabré sur ses pattes arrière.
+herring | hareng | n | B2 | /ˈherɪŋ/ | Smoked herring is popular in the north. | Le hareng fumé est apprécié dans le Nord.
+serpent | serpent (littéraire) | n | C2 | /ˈsɜːpənt/ | The serpent tempted Adam and Eve. | Le serpent a tenté Adam et Ève.
+swine | porc (soutenu) ; salaud | n | C2 | /swaɪn/ | Swine flu spread around the world. | La grippe porcine s'est propagée dans le monde.
+hound | chien de chasse | n | C1 | /haʊnd/ | The hounds chased the fox. | Les chiens ont poursuivi le renard.
+mammoth | mammouth ; gigantesque | n | C1 | /ˈmæməθ/ | Mammoths lived during the Ice Age. | Les mammouths vivaient à l'ère glaciaire.
+predatory | prédateur | adj | C2 | /ˈpredətri/ | Sharks are predatory fish. | Les requins sont des poissons prédateurs.
+bulldog | bouledogue | n | B2 | /ˈbʊldɒɡ/ | The bulldog is a symbol of Britain. | Le bouledogue est un symbole de la Grande-Bretagne.
+coyote | coyote | n | C1 | /kaɪˈəʊti/ | Coyotes howl at night. | Les coyotes hurlent la nuit.
+parasite | parasite | n | C1 | /ˈpærəsaɪt/ | Fleas are parasites. | Les puces sont des parasites.
+to domesticate | domestiquer | v | C1 | /dəˈmestɪkeɪt/ | Humans domesticated the dog long ago. | L'homme a domestiqué le chien il y a longtemps.
+domestication | domestication | n | C1 | /dəˌmestɪˈkeɪʃn/ | The domestication of horses changed history. | La domestication du cheval a changé l'histoire.
+plumage | plumage | n | C2 | /ˈpluːmɪdʒ/ | The peacock has colourful plumage. | Le paon a un plumage coloré.
+chrysalis | chrysalide | n | C2 | /ˈkrɪsəlɪs/ | The butterfly came out of the chrysalis. | Le papillon est sorti de la chrysalide.
+maggot | asticot | n | C2 | /ˈmæɡət/ | The meat was full of maggots. | La viande grouillait d'asticots.
+scavenger | charognard | n | C2 | /ˈskævɪndʒə/ | Vultures are scavengers. | Les vautours sont des charognards.
+vermin | vermine, nuisibles | n | C2 | /ˈvɜːmɪn/ | The barn was full of vermin. | La grange était infestée de vermine.
+avian | aviaire | adj | C2 | /ˈeɪviən/ | Avian flu spread across Asia. | La grippe aviaire s'est propagée en Asie.
+shoal | banc (de poissons) | n | C2 | /ʃəʊl/ | A shoal of fish swam past. | Un banc de poissons est passé.
+buzzard | buse | n | C2 | /ˈbʌzəd/ | A buzzard circled overhead. | Une buse tournoyait au-dessus de nous.
+ruminant | ruminant | n | C2 | /ˈruːmɪnənt/ | Cows are ruminants. | Les vaches sont des ruminants.
+blubber | graisse (de baleine) | n | C2 | /ˈblʌbə/ | Whales have a thick layer of blubber. | Les baleines ont une épaisse couche de graisse.
+echolocation | écholocation | n | C2 | /ˌekəʊləʊˈkeɪʃn/ | Bats use echolocation. | Les chauves-souris utilisent l'écholocation.
+catfish | poisson-chat | n | C2 | /ˈkætfɪʃ/ | Catfish live in rivers. | Les poissons-chats vivent dans les rivières.
+geese | oies | n | B2 | /ɡiːs/ | Geese flew south for the winter. | Des oies ont migré vers le sud pour l'hiver.
+pedigree | pedigree ; lignée | n | C2 | /ˈpedɪɡriː/ | The dog has a long pedigree. | Le chien a un long pedigree.
+fang | croc | n | C1 | /fæŋ/ | The snake bared its fangs. | Le serpent a montré ses crochets.
+boar | sanglier | n | C1 | /bɔː/ | Wild boars live in the forest. | Des sangliers vivent dans la forêt.
+feral | sauvage, retourné à l'état sauvage | adj | C2 | /ˈferəl/ | Feral cats live in the old factory. | Des chats harets vivent dans l'ancienne usine.
+husky | husky ; enroué | n | C1 | /ˈhʌski/ | Huskies pull sledges in the snow. | Les huskies tirent des traîneaux dans la neige.
+grizzly bear | grizzly | n | C1 | /ˌɡrɪzli ˈbeə/ | A grizzly bear crossed the road. | Un grizzly a traversé la route.
+whaling | chasse à la baleine | n | C2 | /ˈweɪlɪŋ/ | Whaling is banned in many countries. | La chasse à la baleine est interdite dans de nombreux pays.
+terrier | terrier (chien) | n | C1 | /ˈteriə/ | We have a small terrier. | Nous avons un petit terrier.
+eel | anguille | n | C1 | /iːl/ | Eels live in rivers and seas. | Les anguilles vivent dans les rivières et les mers.
+puma | puma | n | C1 | /ˈpjuːmə/ | A puma was seen in the hills. | Un puma a été aperçu dans les collines.
+carcass | carcasse | n | C2 | /ˈkɑːkəs/ | Vultures ate the carcass. | Des vautours ont dévoré la carcasse.
+migratory | migrateur | adj | C1 | /ˈmaɪɡrətri/ | Storks are migratory birds. | Les cigognes sont des oiseaux migrateurs.
+partridge | perdrix | n | C2 | /ˈpɑːtrɪdʒ/ | A partridge ran across the field. | Une perdrix a traversé le champ.
+mammalian | des mammifères | adj | C2 | /məˈmeɪliən/ | They studied mammalian behaviour. | Ils ont étudié le comportement des mammifères.
+leech | sangsue | n | C1 | /liːtʃ/ | A leech stuck to his leg. | Une sangsue s'est collée à sa jambe.
+primate | primate | n | C1 | /ˈpraɪmeɪt/ | Monkeys and apes are primates. | Les singes sont des primates.
+firefly | luciole | n | B2 | /ˈfaɪəflaɪ/ | Fireflies glow in the summer night. | Les lucioles brillent dans la nuit d'été.
+quail | caille | n | C1 | /kweɪl/ | Allah sent manna and quails to the Israelites. | Allah a envoyé la manne et les cailles aux Israélites.
+stampede | débandade, ruée | n | C1 | /stæmˈpiːd/ | The noise caused a stampede of cattle. | Le bruit a provoqué une ruée du bétail.
+feline | félin | adj | C1 | /ˈfiːlaɪn/ | She moves with feline grace. | Elle se déplace avec une grâce féline.
+leviathan | léviathan, monstre | n | C2 | /ləˈvaɪəθən/ | The tanker is a leviathan of the sea. | Le pétrolier est un monstre des mers.
+wren | roitelet, troglodyte | n | C2 | /ren/ | A wren sang in the hedge. | Un troglodyte chantait dans la haie.
+mite | acarien, mite | n | C1 | /maɪt/ | Dust mites live in mattresses. | Les acariens vivent dans les matelas.
+snout | museau, groin | n | C1 | /snaʊt/ | The animal has a long snout. | L'animal a un long museau.
+equine | équin, chevalin | adj | C2 | /ˈekwaɪn/ | The vet specialises in equine medicine. | La vétérinaire est spécialisée en médecine équine.
+pelican | pélican | n | B2 | /ˈpelɪkən/ | A pelican caught a fish. | Un pélican a attrapé un poisson.
+amphibious | amphibie | adj | C2 | /æmˈfɪbiəs/ | Frogs are amphibious animals. | Les grenouilles sont des animaux amphibies.
+cannibal | cannibale | n | C1 | /ˈkænɪbl/ | Some fish are cannibals. | Certains poissons sont cannibales.
+plankton | plancton | n | C1 | /ˈplæŋktən/ | Whales feed on plankton. | Les baleines se nourrissent de plancton.
+hutch | clapier | n | C2 | /hʌtʃ/ | The rabbit lives in a hutch. | Le lapin vit dans un clapier.
+gosling | oison | n | C2 | /ˈɡɒzlɪŋ/ | The goose had six goslings. | L'oie avait six oisons.
+pheasant | faisan | n | C1 | /ˈfeznt/ | A pheasant crossed the road. | Un faisan a traversé la route.
+starling | étourneau | n | C2 | /ˈstɑːlɪŋ/ | A flock of starlings filled the sky. | Une nuée d'étourneaux remplissait le ciel.
+talon | serre (d'oiseau) | n | C2 | /ˈtælən/ | The eagle grabbed the fish in its talons. | L'aigle a saisi le poisson dans ses serres.
+vertebrate | vertébré | n | C1 | /ˈvɜːtɪbrət/ | Fish are vertebrates. | Les poissons sont des vertébrés.
+condor | condor | n | C1 | /ˈkɒndɔː/ | The condor glides over the Andes. | Le condor plane au-dessus des Andes.
+maw | gueule | n | C2 | /mɔː/ | The whale's maw opened wide. | La gueule de la baleine s'est grande ouverte.
+steed | coursier, destrier | n | C2 | /stiːd/ | The knight rode his steed. | Le chevalier montait son destrier.
+subspecies | sous-espèce | n | C2 | /ˈsʌbspiːʃiːz/ | There are several subspecies of tiger. | Il existe plusieurs sous-espèces de tigre.
+vixen | renarde | n | C2 | /ˈvɪksn/ | The vixen protects her cubs. | La renarde protège ses petits.
+stingray | raie pastenague | n | C1 | /ˈstɪŋreɪ/ | A stingray swam under the boat. | Une raie est passée sous le bateau.
+bumblebee | bourdon | n | B2 | /ˈbʌmblbiː/ | A bumblebee buzzed among the flowers. | Un bourdon bourdonnait parmi les fleurs.
+gecko | gecko | n | C1 | /ˈɡekəʊ/ | A gecko climbed the wall. | Un gecko a grimpé au mur.
+albatross | albatros | n | C1 | /ˈælbətrɒs/ | The albatross has huge wings. | L'albatros a des ailes immenses.
+osprey | balbuzard | n | C2 | /ˈɒspreɪ/ | An osprey dived into the lake. | Un balbuzard a plongé dans le lac.
+pelt | peau, fourrure | n | C2 | /pelt/ | Hunters sold the pelts. | Les chasseurs vendaient les peaux.
+porcupine | porc-épic | n | C1 | /ˈpɔːkjupaɪn/ | The porcupine has sharp quills. | Le porc-épic a des piquants acérés.
+waterfowl | oiseaux aquatiques | n | C2 | /ˈwɔːtəfaʊl/ | Waterfowl gather on the lake. | Les oiseaux aquatiques se rassemblent sur le lac.
+gopher | gaufre (rongeur) | n | C2 | /ˈɡəʊfə/ | A gopher dug holes in the garden. | Un rongeur a creusé des trous dans le jardin.
+rattlesnake | serpent à sonnette | n | C1 | /ˈrætlsneɪk/ | A rattlesnake lay under the rock. | Un serpent à sonnette était caché sous le rocher.
+carnivorous | carnivore | adj | C1 | /kɑːˈnɪvərəs/ | Lions are carnivorous. | Les lions sont carnivores.
+crayfish | écrevisse | n | C1 | /ˈkreɪfɪʃ/ | Crayfish live in rivers. | Les écrevisses vivent dans les rivières.
+menagerie | ménagerie | n | C2 | /məˈnædʒəri/ | The palace had a menagerie of exotic animals. | Le palais avait une ménagerie d'animaux exotiques.
+harpoon | harpon | n | C2 | /hɑːˈpuːn/ | The fisherman threw a harpoon. | Le pêcheur a lancé un harpon.
+ibis | ibis | n | C2 | /ˈaɪbɪs/ | The ibis was sacred in ancient Egypt. | L'ibis était sacré dans l'Égypte ancienne.
+thrush | grive | n | C2 | /θrʌʃ/ | A thrush sang in the tree. | Une grive chantait dans l'arbre.
+droppings | fientes, crottes | n | C1 | /ˈdrɒpɪŋz/ | Pigeon droppings cover the statue. | Des fientes de pigeon couvrent la statue.
+peregrine falcon | faucon pèlerin | n | C2 | /ˌperɪɡrɪn ˈfɔːlkən/ | The peregrine falcon is the fastest bird. | Le faucon pèlerin est l'oiseau le plus rapide.
+spaniel | épagneul | n | C2 | /ˈspænjəl/ | They have a cocker spaniel. | Ils ont un cocker.
+hatchery | couvoir, écloserie | n | C2 | /ˈhætʃəri/ | The fish come from a hatchery. | Les poissons viennent d'une écloserie.
+humpback whale | baleine à bosse | n | C1 | /ˌhʌmpbæk ˈweɪl/ | We saw a humpback whale off the coast. | Nous avons vu une baleine à bosse au large.
+mallard | colvert | n | C2 | /ˈmæləd/ | A mallard swam on the pond. | Un colvert nageait sur l'étang.
+scaly | écailleux | adj | C2 | /ˈskeɪli/ | Snakes have scaly skin. | Les serpents ont la peau écailleuse.
+wingspan | envergure | n | C1 | /ˈwɪŋspæn/ | The eagle has a huge wingspan. | L'aigle a une envergure immense.
+alpaca | alpaga | n | C1 | /ælˈpækə/ | Alpacas live in the Andes. | Les alpagas vivent dans les Andes.
+flipper | nageoire ; palme | n | C1 | /ˈflɪpə/ | The seal waved its flipper. | Le phoque a agité sa nageoire.
+gibbon | gibbon | n | C2 | /ˈɡɪbən/ | Gibbons swing through the trees. | Les gibbons se balancent dans les arbres.
+centipede | mille-pattes | n | C1 | /ˈsentɪpiːd/ | A centipede crawled under the stone. | Un mille-pattes a rampé sous la pierre.
+conch | conque | n | C2 | /kɒntʃ/ | He blew into a conch shell. | Il a soufflé dans une conque.
+tabby | chat tigré | n | C1 | /ˈtæbi/ | Our tabby sleeps by the window. | Notre chat tigré dort près de la fenêtre.
+sea urchin | oursin | n | C1 | /ˈsiː ˌɜːtʃɪn/ | I stepped on a sea urchin. | J'ai marché sur un oursin.
+woodcock | bécasse | n | C2 | /ˈwʊdkɒk/ | A woodcock flew out of the bushes. | Une bécasse s'est envolée des buissons.
+barracuda | barracuda | n | C2 | /ˌbærəˈkuːdə/ | We saw a barracuda while diving. | Nous avons vu un barracuda en plongée.
+bridle | bride | n | C2 | /ˈbraɪdl/ | He put the bridle on the horse. | Il a mis la bride au cheval.
+scarab | scarabée | n | C2 | /ˈskærəb/ | The scarab was sacred in Egypt. | Le scarabée était sacré en Égypte.
+termite | termite | n | C1 | /ˈtɜːmaɪt/ | Termites destroyed the wooden beams. | Les termites ont détruit les poutres en bois.
+critter | bestiole | n | C2 | /ˈkrɪtə/ | Some little critter ate the tomatoes. | Une petite bestiole a mangé les tomates.
+warbler | fauvette | n | C2 | /ˈwɔːblə/ | A warbler sang in the reeds. | Une fauvette chantait dans les roseaux.
+midge | moucheron | n | C2 | /mɪdʒ/ | The midges bite in the evening. | Les moucherons piquent le soir.
+salamander | salamandre | n | C2 | /ˈsæləmændə/ | A salamander hid under the log. | Une salamandre se cachait sous la bûche.
 `,
 );

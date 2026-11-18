@@ -224,5 +224,14 @@ mosquito net | moustiquaire | n | B1 | /məˈskiːtəʊ net/ | Sleep under a mos
 holiday blues | déprime de la rentrée | n | B2 | /ˈhɒlədeɪ bluːz/ | Everyone gets the holiday blues in September. | Tout le monde a le blues de la rentrée en septembre.
 back to school | la rentrée | expr | A2 | /ˌbæk tə ˈskuːl/ | The shops are full of back to school offers. | Les magasins sont pleins d'offres pour la rentrée.
 back to work | retour au travail | expr | A2 | /ˌbæk tə ˈwɜːk/ | It's back to work on Monday. | Retour au travail lundi.
+packing | préparation des bagages | n | B1 | /ˈpækɪŋ/ | I'll do my packing tonight. | Je ferai mes valises ce soir.
+yacht | yacht, voilier | n | B2 | /jɒt/ | They spent the summer on a yacht. | Ils ont passé l'été sur un yacht.
+suite | suite (hôtel) | n | B2 | /swiːt/ | They booked a suite at the hotel. | Ils ont réservé une suite à l'hôtel.
+campground | terrain de camping | n | B2 | /ˈkæmpɡraʊnd/ | The campground is near the lake. | Le terrain de camping est près du lac.
+sailboat | voilier | n | B2 | /ˈseɪlbəʊt/ | We rented a sailboat for the day. | Nous avons loué un voilier pour la journée.
+dinghy | canot, dériveur | n | C1 | /ˈdɪŋi/ | We rowed the dinghy to the shore. | Nous avons ramé avec le canot jusqu'au rivage.
+lido | piscine en plein air | n | C2 | /ˈliːdəʊ/ | We swam at the lido. | Nous avons nagé à la piscine en plein air.
+beachfront | front de mer | n | C1 | /ˈbiːtʃfrʌnt/ | We rented a beachfront apartment. | Nous avons loué un appartement en front de mer.
+hideaway | refuge, retraite | n | C2 | /ˈhaɪdəweɪ/ | They have a mountain hideaway. | Ils ont un refuge à la montagne.
 `,
 );

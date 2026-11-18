@@ -226,5 +226,94 @@ spin doctor | conseiller en communication | n | C1 | /ˈspɪn ˌdɒktər/ | The 
 soundbite | petite phrase | n | C1 | /ˈsaʊndbaɪt/ | Politicians love a catchy soundbite. | Les politiques adorent les petites phrases accrocheuses.
 press office | service de presse | n | C1 | /ˈpres ˌɒfɪs/ | Contact the press office for details. | Contactez le service de presse pour plus de détails.
 media literacy | éducation aux médias | n | C1 | /ˈmiːdiə ˌlɪtərəsi/ | Schools should teach media literacy. | Les écoles devraient enseigner l'éducation aux médias.
+phone | téléphone | n | A1 | /fəʊn/ | My phone is on the table. | Mon téléphone est sur la table.
+mobile | portable (téléphone) | n | A1 | /ˈməʊbaɪl/ | Call me on my mobile. | Appelle-moi sur mon portable.
+message | message | n | A1 | /ˈmesɪdʒ/ | I left you a message. | Je t'ai laissé un message.
+video | vidéo | n | A1 | /ˈvɪdiəʊ/ | Let's watch a video. | Regardons une vidéo.
+text message | SMS, texto | n | A2 | /ˈtekst mesɪdʒ/ | She sent me a text message. | Elle m'a envoyé un texto.
+web page | page web | n | A2 | /ˈweb peɪdʒ/ | The web page won't load. | La page web ne se charge pas.
+digital camera | appareil photo numérique | n | A2 | /ˌdɪdʒɪtl ˈkæmərə/ | I bought a new digital camera. | J'ai acheté un nouvel appareil photo numérique.
+ad | pub, annonce | n | B1 | /æd/ | I saw an ad for the job online. | J'ai vu l'annonce du poste en ligne.
+addressee | destinataire | n | B2 | /ˌædreˈsiː/ | Write the addressee's name clearly. | Écris lisiblement le nom du destinataire.
+announcement | annonce | n | B1 | /əˈnaʊnsmənt/ | Listen to the announcement. | Écoute l'annonce.
+bulletin | bulletin | n | B1 | /ˈbʊlətɪn/ | We heard it on the news bulletin. | Nous l'avons entendu au bulletin d'information.
+caller | correspondant, appelant | n | B1 | /ˈkɔːlə/ | The caller didn't give his name. | La personne qui a appelé n'a pas donné son nom.
+chat show | talk-show | n | B1 | /ˈtʃæt ʃəʊ/ | She was a guest on a chat show. | Elle était invitée dans un talk-show.
+clip | extrait, clip | n | B1 | /klɪp/ | They showed a clip from the film. | Ils ont montré un extrait du film.
+message board | forum (en ligne) | n | B1 | /ˈmesɪdʒ bɔːd/ | I asked my question on a message board. | J'ai posé ma question sur un forum.
+social networking | réseaux sociaux | n | B1 | /ˌsəʊʃl ˈnetwɜːkɪŋ/ | Social networking takes up too much of my time. | Les réseaux sociaux me prennent trop de temps.
+telecommunications | télécommunications | n | B2 | /ˌtelikəˌmjuːnɪˈkeɪʃnz/ | He works in telecommunications. | Il travaille dans les télécommunications.
+video clip | clip vidéo | n | B1 | /ˈvɪdiəʊ klɪp/ | He posted a video clip online. | Il a publié un clip vidéo en ligne.
+anchorman | présentateur (journal télévisé) | n | B2 | /ˈæŋkəmæn/ | The anchorman read the news. | Le présentateur a lu les informations.
+booklet | livret, brochure | n | B2 | /ˈbʊklət/ | Read the booklet before you start. | Lis le livret avant de commencer.
+distortion | déformation | n | C1 | /dɪˈstɔːʃn/ | The article is a distortion of the truth. | L'article déforme la vérité.
+inflammatory | incendiaire, provocateur | adj | C1 | /ɪnˈflæmətri/ | He made an inflammatory speech. | Il a tenu un discours incendiaire.
+leaflet | prospectus, dépliant | n | B2 | /ˈliːflət/ | They handed out leaflets in the street. | Ils distribuaient des tracts dans la rue.
+newscaster | présentateur (des informations) | n | B2 | /ˈnjuːzkɑːstə/ | The newscaster announced the results. | Le présentateur a annoncé les résultats.
+newsworthy | digne d'intérêt (médiatique) | adj | C1 | /ˈnjuːzwɜːði/ | The story wasn't newsworthy. | L'histoire n'intéressait pas les médias.
+publication | publication | n | B2 | /ˌpʌblɪˈkeɪʃn/ | The book is ready for publication. | Le livre est prêt pour la publication.
+publicity | publicité, médiatisation | n | B2 | /pʌbˈlɪsəti/ | The case attracted a lot of publicity. | L'affaire a été très médiatisée.
+to publicise | faire connaître, médiatiser | v | C1 | /ˈpʌblɪsaɪz/ | They publicised the event online. | Ils ont fait connaître l'événement en ligne.
+quotable | qui mérite d'être cité | adj | C1 | /ˈkwəʊtəbl/ | His speech was full of quotable lines. | Son discours regorgeait de formules mémorables.
+quotation | citation ; devis | n | B2 | /kwəʊˈteɪʃn/ | Start your essay with a quotation. | Commence ta dissertation par une citation.
+serial | feuilleton ; en série | n | B2 | /ˈsɪəriəl/ | She watches a TV serial every night. | Elle regarde un feuilleton tous les soirs.
+spokeswoman | porte-parole (femme) | n | B2 | /ˈspəʊkswʊmən/ | The spokeswoman refused to comment. | La porte-parole a refusé de commenter.
+transmission | transmission, diffusion | n | B2 | /trænzˈmɪʃn/ | The transmission was interrupted. | La diffusion a été interrompue.
+footage | images, séquences (filmées) | n | B2 | /ˈfʊtɪdʒ/ | The police studied the CCTV footage. | La police a étudié les images de vidéosurveillance.
+mainstream | courant dominant, grand public | n | C1 | /ˈmeɪnstriːm/ | His ideas are now part of the mainstream. | Ses idées font désormais partie du courant dominant.
+commentary | commentaire | n | B2 | /ˈkɒməntri/ | We listened to the match commentary. | Nous avons écouté le commentaire du match.
+banner | banderole, bannière | n | B2 | /ˈbænə/ | Fans waved banners. | Les supporters agitaient des banderoles.
+receiver | combiné ; destinataire | n | B2 | /rɪˈsiːvə/ | He picked up the receiver. | Il a décroché le combiné.
+directory | annuaire ; répertoire | n | B2 | /dəˈrektəri/ | Look the number up in the directory. | Cherche le numéro dans l'annuaire.
+billboard | panneau d'affichage | n | B2 | /ˈbɪlbɔːd/ | The advert was on a huge billboard. | La publicité était sur un immense panneau.
+antenna | antenne | n | B2 | /ænˈtenə/ | The antenna is on the roof. | L'antenne est sur le toit.
+recorder | magnétophone ; flûte à bec | n | B2 | /rɪˈkɔːdə/ | Children learn the recorder at school. | Les enfants apprennent la flûte à bec à l'école.
+paperback | livre de poche | n | B2 | /ˈpeɪpəbæk/ | The book is now out in paperback. | Le livre est maintenant sorti en poche.
+gazette | gazette, journal | n | C2 | /ɡəˈzet/ | The news appeared in the local gazette. | La nouvelle a paru dans la gazette locale.
+announcer | présentateur, speaker | n | B2 | /əˈnaʊnsə/ | The radio announcer read the news. | Le présentateur radio a lu les informations.
+flyer | prospectus, tract | n | B2 | /ˈflaɪə/ | They handed out flyers for the event. | Ils ont distribué des prospectus pour l'événement.
+multimedia | multimédia | adj | B2 | /ˌmʌltiˈmiːdiə/ | It's a multimedia presentation. | C'est une présentation multimédia.
+headset | casque (avec micro) | n | B2 | /ˈhedset/ | Put on your headset for the call. | Mets ton casque pour l'appel.
+hoax | canular | n | C1 | /həʊks/ | The bomb threat was a hoax. | L'alerte à la bombe était un canular.
+teaser | bande-annonce courte ; énigme | n | C1 | /ˈtiːzə/ | They released a teaser for the film. | Ils ont diffusé un teaser du film.
+smear | diffamation ; trace | n | C2 | /smɪə/ | It was a smear campaign. | C'était une campagne de dénigrement.
+round-up | récapitulatif | n | C1 | /ˈraʊnd ʌp/ | Here is a round-up of the day's news. | Voici un récapitulatif de l'actualité du jour.
+testimonial | témoignage, recommandation | n | C2 | /ˌtestɪˈməʊniəl/ | The website has customer testimonials. | Le site comporte des témoignages de clients.
+blurb | texte de présentation, quatrième de couverture | n | C2 | /blɜːb/ | Read the blurb on the back of the book. | Lis le résumé au dos du livre.
+snippet | extrait, bribe | n | C2 | /ˈsnɪpɪt/ | I heard snippets of their conversation. | J'ai entendu des bribes de leur conversation.
+playback | lecture, play-back | n | C1 | /ˈpleɪbæk/ | Press play for playback. | Appuie sur lecture pour réécouter.
+hardback | livre relié | n | C1 | /ˈhɑːdbæk/ | The book is available in hardback. | Le livre est disponible en édition reliée.
+pamphlet | brochure, pamphlet | n | C1 | /ˈpæmflət/ | They distributed pamphlets about Islam. | Ils ont distribué des brochures sur l'islam.
+voicemail | messagerie vocale | n | B2 | /ˈvɔɪsmeɪl/ | Leave a message on my voicemail. | Laisse un message sur ma messagerie.
+journalistic | journalistique | adj | C2 | /ˌdʒɜːnəˈlɪstɪk/ | He has journalistic experience. | Il a une expérience journalistique.
+to rewind | rembobiner, revenir en arrière | v | B2 | /ˌriːˈwaɪnd/ | Rewind the video a bit. | Reviens un peu en arrière dans la vidéo.
+best-selling | à succès | adj | C1 | /ˌbest ˈselɪŋ/ | He's a best-selling author. | C'est un auteur à succès.
+sender | expéditeur | n | B2 | /ˈsendə/ | Return to sender. | Retour à l'expéditeur.
+tome | gros volume | n | C2 | /təʊm/ | He reads huge tomes on history. | Il lit d'énormes volumes d'histoire.
+telly | télé | n | B2 | /ˈteli/ | What's on the telly tonight? | Qu'est-ce qu'il y a à la télé ce soir ?
+bombshell | bombe, nouvelle fracassante | n | C1 | /ˈbɒmʃel/ | The news came as a bombshell. | La nouvelle a fait l'effet d'une bombe.
+viewership | audience (télévisuelle) | n | C2 | /ˈvjuːəʃɪp/ | The channel's viewership is falling. | L'audience de la chaîne baisse.
+mouthpiece | porte-parole ; embouchure | n | C2 | /ˈmaʊθpiːs/ | The newspaper is the mouthpiece of the party. | Le journal est le porte-parole du parti.
+spoof | parodie | n | C1 | /spuːf/ | The film is a spoof of spy movies. | Le film est une parodie des films d'espionnage.
+stardom | célébrité, vedettariat | n | C1 | /ˈstɑːdəm/ | She rose to stardom at sixteen. | Elle est devenue une star à seize ans.
+cartoonist | dessinateur humoristique | n | C1 | /kɑːˈtuːnɪst/ | The cartoonist mocks politicians. | Le dessinateur se moque des politiciens.
+handset | combiné, téléphone | n | C1 | /ˈhændset/ | She picked up the handset. | Elle a décroché le combiné.
+publicist | attaché de presse | n | C2 | /ˈpʌblɪsɪst/ | Her publicist arranged the interview. | Son attachée de presse a organisé l'entretien.
+tagline | slogan, accroche | n | C1 | /ˈtæɡlaɪn/ | The film's tagline is catchy. | Le slogan du film est accrocheur.
+biopic | film biographique | n | C1 | /ˈbaɪəʊpɪk/ | A biopic about Malcolm X. | Un film biographique sur Malcolm X.
+airtime | temps d'antenne | n | C2 | /ˈeətaɪm/ | The candidates get equal airtime. | Les candidats ont un temps d'antenne égal.
+widget | widget, gadget | n | C1 | /ˈwɪdʒɪt/ | Add the weather widget to your screen. | Ajoute le widget météo à ton écran.
+preset | préréglage | n | C1 | /ˈpriːset/ | Choose a preset on the radio. | Choisis une station préréglée sur la radio.
+slideshow | diaporama | n | B2 | /ˈslaɪdʃəʊ/ | She showed us a slideshow of her trip. | Elle nous a montré un diaporama de son voyage.
+audiovisual | audiovisuel | adj | C1 | /ˌɔːdiəʊˈvɪʒuəl/ | The room has audiovisual equipment. | La salle a un équipement audiovisuel.
+helpline | ligne d'assistance | n | B2 | /ˈhelplaɪn/ | Call the helpline for advice. | Appelle la ligne d'assistance pour des conseils.
+broadside | attaque virulente | n | C2 | /ˈbrɔːdsaɪd/ | The minister launched a broadside against the press. | Le ministre a lancé une attaque virulente contre la presse.
+cliffhanger | fin à suspense | n | C1 | /ˈklɪfhæŋə/ | The episode ended on a cliffhanger. | L'épisode s'est terminé sur un suspense.
+keypad | clavier (numérique) | n | B2 | /ˈkiːpæd/ | Enter your code on the keypad. | Saisis ton code sur le clavier.
+whitewash | camouflage, étouffement | n | C2 | /ˈwaɪtwɒʃ/ | The inquiry was a whitewash. | L'enquête était une opération d'étouffement.
+syndication | syndication, diffusion simultanée | n | C2 | /ˌsɪndɪˈkeɪʃn/ | The column is in syndication. | La chronique est diffusée dans plusieurs journaux.
+megaphone | mégaphone | n | C1 | /ˈmeɡəfəʊn/ | The organiser spoke through a megaphone. | L'organisateur parlait dans un mégaphone.
+tidings | nouvelles | n | C2 | /ˈtaɪdɪŋz/ | The messenger brought glad tidings. | Le messager a apporté de bonnes nouvelles.
+suspenseful | plein de suspense | adj | C1 | /səˈspensfl/ | The film is very suspenseful. | Le film est plein de suspense.
 `,
 );

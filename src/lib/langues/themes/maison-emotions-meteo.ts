@@ -227,6 +227,112 @@ chalet | chalet | n | B1 | /ˈʃæleɪ/ | We rented a chalet in the Alps. | Nous
 lodge | pavillon, refuge | n | B2 | /lɒdʒ/ | We stayed in a hunting lodge. | Nous avons logé dans un pavillon de chasse.
 manor | manoir | n | B2 | /ˈmænər/ | The manor dates from the 16th century. | Le manoir date du XVIe siècle.
 estate | domaine, propriété | n | B2 | /ɪˈsteɪt/ | The family owns a large estate. | La famille possède un grand domaine.
+bookshelf | étagère à livres | n | A2 | /ˈbʊkʃelf/ | The bookshelf is full of novels. | L'étagère est pleine de romans.
+refrigerator | réfrigérateur | n | A2 | /rɪˈfrɪdʒəreɪtə/ | Keep the meat in the refrigerator. | Garde la viande au réfrigérateur.
+pan | casserole, poêle | n | A2 | /pæn/ | Heat some oil in a pan. | Fais chauffer un peu d'huile dans une poêle.
+washing-up | vaisselle | n | A2 | /ˌwɒʃɪŋ ˈʌp/ | It's your turn to do the washing-up. | C'est ton tour de faire la vaisselle.
+screw | vis | n | B1 | /skruː/ | One screw is missing. | Il manque une vis.
+bedside | chevet | n | B1 | /ˈbedsaɪd/ | I keep a Qur'an by my bedside. | Je garde un Coran à mon chevet.
+ladder | échelle | n | B1 | /ˈlædə/ | Hold the ladder for me. | Tiens-moi l'échelle.
+mixing bowl | saladier, jatte | n | B1 | /ˈmɪksɪŋ bəʊl/ | Put the flour in a mixing bowl. | Mets la farine dans un saladier.
+cabinet | meuble à tiroirs, armoire | n | B2 | /ˈkæbɪnət/ | The plates are in the kitchen cabinet. | Les assiettes sont dans le placard de la cuisine.
+cosiness | confort douillet | n | B2 | /ˈkəʊzinəs/ | I love the cosiness of this room. | J'adore le côté douillet de cette pièce.
+interior | intérieur | n | B2 | /ɪnˈtɪəriə/ | The interior of the house is modern. | L'intérieur de la maison est moderne.
+lid | couvercle | n | B2 | /lɪd/ | Put the lid on the pan. | Mets le couvercle sur la casserole.
+lighting | éclairage | n | B2 | /ˈlaɪtɪŋ/ | The lighting in the room is too dim. | L'éclairage de la pièce est trop faible.
+rack | étagère, porte-bagages | n | B2 | /ræk/ | Put your bag on the luggage rack. | Mets ton sac sur le porte-bagages.
+rafter | chevron, poutre (de toit) | n | C1 | /ˈrɑːftə/ | Birds nested in the rafters. | Des oiseaux nichaient dans les poutres du toit.
+residence | résidence, domicile | n | B2 | /ˈrezɪdəns/ | The prime minister's official residence. | La résidence officielle du Premier ministre.
+silverware | argenterie, couverts | n | B2 | /ˈsɪlvəweə/ | They polished the silverware for the wedding. | Ils ont astiqué l'argenterie pour le mariage.
+tub | baignoire ; pot | n | B2 | /tʌb/ | The child is playing in the tub. | L'enfant joue dans la baignoire.
+vacant | libre, vacant | adj | B2 | /ˈveɪkənt/ | Is this seat vacant? | Cette place est-elle libre ?
+closet | placard (US) | n | B2 | /ˈklɒzɪt/ | Hang your coat in the closet. | Accroche ton manteau dans le placard.
+stainless | inoxydable | adj | C1 | /ˈsteɪnləs/ | The sink is made of stainless steel. | L'évier est en acier inoxydable.
+hose | tuyau d'arrosage | n | B2 | /həʊz/ | Water the garden with the hose. | Arrose le jardin avec le tuyau.
+decor | décoration, décor | n | B2 | /ˈdeɪkɔː/ | I like the decor of this café. | J'aime la décoration de ce café.
+storey | étage | n | B2 | /ˈstɔːri/ | It's a three-storey house. | C'est une maison de trois étages.
+duct | conduit, gaine | n | C2 | /dʌkt/ | Clean the air ducts once a year. | Nettoie les conduits d'aération une fois par an.
+porcelain | porcelaine | n | C1 | /ˈpɔːsəlɪn/ | She collects porcelain cups. | Elle collectionne les tasses en porcelaine.
+burner | brûleur, feu (cuisinière) | n | C1 | /ˈbɜːnə/ | Put the pan on the front burner. | Mets la casserole sur le feu de devant.
+knob | bouton, poignée | n | B2 | /nɒb/ | Turn the knob to open the door. | Tourne la poignée pour ouvrir la porte.
+funnel | entonnoir | n | B2 | /ˈfʌnl/ | Use a funnel to fill the bottle. | Utilise un entonnoir pour remplir la bouteille.
+plank | planche | n | C1 | /plæŋk/ | The floor is made of wooden planks. | Le sol est fait de planches de bois.
+dresser | buffet, vaisselier ; coiffeuse | n | C1 | /ˈdresə/ | The plates are on the dresser. | Les assiettes sont sur le vaisselier.
+settee | canapé | n | C1 | /seˈtiː/ | Sit down on the settee. | Assieds-toi sur le canapé.
+utensil | ustensile | n | C1 | /juːˈtensl/ | Wash the kitchen utensils. | Lave les ustensiles de cuisine.
+lavatory | toilettes, cabinets | n | C1 | /ˈlævətri/ | The lavatory is at the back of the plane. | Les toilettes se trouvent à l'arrière de l'avion.
+plumbing | plomberie | n | C1 | /ˈplʌmɪŋ/ | The plumbing in this old house is bad. | La plomberie de cette vieille maison est mauvaise.
+to refurbish | rénover, remettre à neuf | v | C1 | /ˌriːˈfɜːbɪʃ/ | They refurbished the old hotel. | Ils ont rénové le vieil hôtel.
+veranda | véranda | n | C1 | /vəˈrændə/ | We drank tea on the veranda. | Nous avons bu le thé sur la véranda.
+to ventilate | aérer, ventiler | v | C1 | /ˈventɪleɪt/ | Ventilate the room every morning. | Aère la pièce tous les matins.
+ventilation | ventilation, aération | n | C1 | /ˌventɪˈleɪʃn/ | The kitchen needs better ventilation. | La cuisine a besoin d'une meilleure aération.
+occupant | occupant | n | C1 | /ˈɒkjəpənt/ | The occupants of the house were asleep. | Les occupants de la maison dormaient.
+habitation | habitation | n | C2 | /ˌhæbɪˈteɪʃn/ | The house is unfit for habitation. | La maison est inhabitable.
+annexe | annexe | n | C2 | /ˈæneks/ | The library is in the annexe. | La bibliothèque est dans l'annexe.
+furnishings | ameublement, mobilier | n | C1 | /ˈfɜːnɪʃɪŋz/ | The furnishings are modern. | Le mobilier est moderne.
+grinder | moulin (à café) ; broyeur | n | C1 | /ˈɡraɪndə/ | I use a coffee grinder. | J'utilise un moulin à café.
+platter | plat (de service) | n | C1 | /ˈplætə/ | She served a platter of fruit. | Elle a servi un plateau de fruits.
+quilt | couette, édredon | n | B2 | /kwɪlt/ | My grandmother made this quilt. | Ma grand-mère a fait cet édredon.
+upkeep | entretien | n | C1 | /ˈʌpkiːp/ | The upkeep of the garden is expensive. | L'entretien du jardin coûte cher.
+chandelier | lustre | n | C1 | /ˌʃændəˈlɪə/ | A crystal chandelier hung from the ceiling. | Un lustre en cristal était suspendu au plafond.
+refrigeration | réfrigération | n | C2 | /rɪˌfrɪdʒəˈreɪʃn/ | Meat needs refrigeration. | La viande doit être réfrigérée.
+lampshade | abat-jour | n | B2 | /ˈlæmpʃeɪd/ | The lampshade is made of paper. | L'abat-jour est en papier.
+sprinkler | arroseur | n | C1 | /ˈsprɪŋklə/ | The sprinkler waters the lawn. | L'arroseur arrose la pelouse.
+flowerbed | parterre de fleurs | n | B2 | /ˈflaʊəbed/ | She planted roses in the flowerbed. | Elle a planté des roses dans le parterre.
+infestation | infestation | n | C1 | /ˌɪnfeˈsteɪʃn/ | The house has a mouse infestation. | La maison est infestée de souris.
+stairway | escalier | n | B2 | /ˈsteəweɪ/ | A narrow stairway leads to the roof. | Un escalier étroit mène au toit.
+parlour | salon, petit salon | n | C2 | /ˈpɑːlə/ | Guests waited in the parlour. | Les invités attendaient dans le petit salon.
+abode | demeure | n | C2 | /əˈbəʊd/ | Welcome to my humble abode. | Bienvenue dans mon humble demeure.
+atrium | atrium, hall central | n | C2 | /ˈeɪtriəm/ | The hotel has a glass atrium. | L'hôtel a un atrium vitré.
+spout | bec (de verseuse) | n | C1 | /spaʊt/ | The teapot has a long spout. | La théière a un long bec.
+hearth | âtre, foyer | n | C2 | /hɑːθ/ | The family sat around the hearth. | La famille était assise autour de l'âtre.
+mower | tondeuse | n | B2 | /ˈməʊə/ | The mower needs petrol. | La tondeuse a besoin d'essence.
+windowpane | vitre, carreau | n | B2 | /ˈwɪndəʊpeɪn/ | Rain beat against the windowpane. | La pluie battait contre la vitre.
+gable | pignon | n | C2 | /ˈɡeɪbl/ | The house has a steep gable. | La maison a un pignon pentu.
+hatchet | hachette | n | C1 | /ˈhætʃɪt/ | He chopped wood with a hatchet. | Il coupait du bois avec une hachette.
+skillet | poêle (en fonte) | n | C1 | /ˈskɪlɪt/ | Fry the eggs in a skillet. | Fais frire les œufs dans une poêle.
+cauldron | chaudron | n | C1 | /ˈkɔːldrən/ | The soup boiled in a huge cauldron. | La soupe bouillait dans un énorme chaudron.
+cleaver | couperet, hachoir | n | C2 | /ˈkliːvə/ | The butcher uses a heavy cleaver. | Le boucher utilise un lourd couperet.
+aerosol | aérosol, bombe | n | C1 | /ˈeərəsɒl/ | The paint comes in an aerosol can. | La peinture est vendue en bombe.
+dispenser | distributeur | n | B2 | /dɪˈspensə/ | There's a soap dispenser by the sink. | Il y a un distributeur de savon près de l'évier.
+housemate | colocataire | n | B2 | /ˈhaʊsmeɪt/ | My housemate is from Senegal. | Mon colocataire vient du Sénégal.
+householder | occupant, chef de famille | n | C2 | /ˈhaʊshəʊldə/ | Every householder received a letter. | Chaque foyer a reçu une lettre.
+upholstery | tapisserie, revêtement (de sièges) | n | C2 | /ʌpˈhəʊlstəri/ | The sofa has leather upholstery. | Le canapé est recouvert de cuir.
+twine | ficelle | n | C1 | /twaɪn/ | Tie the parcel with twine. | Attache le colis avec de la ficelle.
+freehold | pleine propriété | n | C2 | /ˈfriːhəʊld/ | They own the freehold of the house. | Ils sont pleinement propriétaires de la maison.
+lacquer | laque | n | C2 | /ˈlækə/ | The box is covered in black lacquer. | La boîte est recouverte de laque noire.
+plunger | ventouse (débouche-évier) | n | C1 | /ˈplʌndʒə/ | Use a plunger to unblock the sink. | Utilise une ventouse pour déboucher l'évier.
+mantelpiece | manteau de cheminée | n | C1 | /ˈmæntlpiːs/ | A clock stood on the mantelpiece. | Une pendule trônait sur la cheminée.
+stairwell | cage d'escalier | n | C1 | /ˈsteəwel/ | The stairwell was dark. | La cage d'escalier était sombre.
+garret | mansarde | n | C2 | /ˈɡærət/ | The poet lived in a tiny garret. | Le poète vivait dans une minuscule mansarde.
+stucco | stuc | n | C2 | /ˈstʌkəʊ/ | The walls are decorated with stucco. | Les murs sont décorés de stuc.
+goblet | coupe, gobelet | n | C2 | /ˈɡɒblət/ | They drank from silver goblets. | Ils buvaient dans des coupes en argent.
+passageway | couloir, passage | n | C1 | /ˈpæsɪdʒweɪ/ | A narrow passageway leads to the courtyard. | Un passage étroit mène à la cour.
+receptacle | récipient, réceptacle | n | C2 | /rɪˈseptəkl/ | Put the rubbish in the proper receptacle. | Mets les déchets dans le récipient prévu.
+glassware | verrerie | n | C1 | /ˈɡlɑːsweə/ | Handle the glassware carefully. | Manipule la verrerie avec précaution.
+lodgings | logement, chambre meublée | n | C2 | /ˈlɒdʒɪŋz/ | Students rent cheap lodgings. | Les étudiants louent des chambres bon marché.
+mildew | moisissure | n | C1 | /ˈmɪldjuː/ | There's mildew on the bathroom ceiling. | Il y a de la moisissure au plafond de la salle de bains.
+nutcracker | casse-noix | n | B2 | /ˈnʌtkrækə/ | Pass me the nutcracker. | Passe-moi le casse-noix.
+tumbler | gobelet, verre droit | n | C1 | /ˈtʌmblə/ | He poured water into a tumbler. | Il a versé de l'eau dans un verre.
+earthen | en terre (cuite) | adj | C2 | /ˈɜːθn/ | Water is kept cool in earthen jars. | L'eau reste fraîche dans des jarres en terre.
+skylight | lucarne, fenêtre de toit | n | C1 | /ˈskaɪlaɪt/ | Light comes in through the skylight. | La lumière entre par la fenêtre de toit.
+spool | bobine | n | C2 | /spuːl/ | A spool of thread fell on the floor. | Une bobine de fil est tombée par terre.
+teak | teck | n | C2 | /tiːk/ | The table is made of teak. | La table est en teck.
+keyhole | trou de serrure | n | B2 | /ˈkiːhəʊl/ | Don't look through the keyhole! | Ne regarde pas par le trou de la serrure !
+comforter | couette ; réconfort | n | C2 | /ˈkʌmfətə/ | She pulled the comforter over her head. | Elle a tiré la couette sur sa tête.
+room divider | séparation, paravent | n | C1 | /ˈruːm dɪˌvaɪdə/ | A room divider separates the prayer area. | Un paravent sépare l'espace de prière.
+toothpick | cure-dent | n | B2 | /ˈtuːθpɪk/ | Using a siwak is better than a toothpick. | Utiliser un siwak vaut mieux qu'un cure-dent.
+polystyrene | polystyrène | n | C2 | /ˌpɒliˈstaɪriːn/ | The box is packed with polystyrene. | La boîte est remplie de polystyrène.
+prong | dent (de fourchette) | n | C2 | /prɒŋ/ | The fork has four prongs. | La fourchette a quatre dents.
+candlestick | chandelier, bougeoir | n | C1 | /ˈkændlstɪk/ | A brass candlestick stood on the table. | Un bougeoir en laiton trônait sur la table.
+disrepair | délabrement | n | C2 | /ˌdɪsrɪˈpeə/ | The house fell into disrepair. | La maison est tombée en ruine.
+overhang | avancée, surplomb | n | C2 | /ˈəʊvəhæŋ/ | We sheltered under the overhang. | Nous nous sommes abrités sous l'avancée du toit.
+pail | seau | n | C2 | /peɪl/ | She carried a pail of milk. | Elle portait un seau de lait.
+sideboard | buffet | n | C1 | /ˈsaɪdbɔːd/ | The plates are kept in the sideboard. | Les assiettes sont rangées dans le buffet.
+pewter | étain | n | C2 | /ˈpjuːtə/ | They drank from pewter mugs. | Ils buvaient dans des chopes en étain.
+flue | conduit (de cheminée) | n | C2 | /fluː/ | Clean the chimney flue every year. | Ramone le conduit de cheminée chaque année.
+renter | locataire | n | C1 | /ˈrentə/ | Renters have rights too. | Les locataires ont aussi des droits.
+ice scraper | grattoir à givre | n | C1 | /ˈaɪs ˌskreɪpə/ | Use an ice scraper on the windscreen. | Utilise un grattoir sur le pare-brise.
 `,
 );
 
@@ -454,6 +560,179 @@ gut feeling | intuition, pressentiment | n | B2 | /ˈɡʌt ˌfiːlɪŋ/ | My gut
 emotional intelligence | intelligence émotionnelle | n | C1 | /ɪˌməʊʃənl ɪnˈtelɪdʒəns/ | Good leaders have emotional intelligence. | Les bons dirigeants ont de l'intelligence émotionnelle.
 to well up | monter (larmes) | v | C1 | /wel ˈʌp/ | Tears began to well up in her eyes. | Les larmes lui sont montées aux yeux.
 to choke up | avoir la gorge nouée | v | C1 | /tʃəʊk ˈʌp/ | He started to choke up during his speech. | Il a eu la gorge nouée pendant son discours.
+chuckle | petit rire, gloussement | n | B1 | /ˈtʃʌkl/ | He gave a little chuckle. | Il a eu un petit rire.
+daze | hébétude (in a daze) | n | B2 | /deɪz/ | She walked around in a daze. | Elle errait, complètement hébétée.
+ecstasy | extase | n | B2 | /ˈekstəsi/ | The fans were in ecstasy. | Les fans étaient en extase.
+fondness | affection, tendresse | n | B2 | /ˈfɒndnəs/ | He spoke of her with fondness. | Il parlait d'elle avec tendresse.
+fright | frayeur, peur | n | B1 | /fraɪt/ | You gave me a fright! | Tu m'as fait peur !
+fuss | histoires, agitation | n | B1 | /fʌs/ | Don't make a fuss about it. | N'en fais pas toute une histoire.
+innermost | le plus intime, profond | adj | C1 | /ˈɪnəməʊst/ | She shared her innermost thoughts. | Elle a partagé ses pensées les plus intimes.
+laughter | rire, rires | n | B1 | /ˈlɑːftə/ | The room was full of laughter. | La pièce était pleine de rires.
+misery | misère, détresse | n | B1 | /ˈmɪzəri/ | The war brought misery to millions. | La guerre a apporté la misère à des millions de gens.
+nervousness | nervosité | n | B1 | /ˈnɜːvəsnəs/ | He tried to hide his nervousness. | Il essayait de cacher sa nervosité.
+satisfaction | satisfaction | n | B1 | /ˌsætɪsˈfækʃn/ | Customer satisfaction is our priority. | La satisfaction des clients est notre priorité.
+terror | terreur | n | B1 | /ˈterə/ | They ran away in terror. | Ils se sont enfuis, terrorisés.
+uplifted | réconforté, exalté | adj | C1 | /ʌpˈlɪftɪd/ | I felt uplifted after the prayer. | Je me suis senti apaisé après la prière.
+to agonise | se tourmenter, hésiter longuement | v | C1 | /ˈæɡənaɪz/ | She agonised over the decision for weeks. | Elle s'est tourmentée pendant des semaines avant de décider.
+amazement | stupéfaction | n | B2 | /əˈmeɪzmənt/ | She stared at him in amazement. | Elle le regardait avec stupéfaction.
+anticipation | impatience ; anticipation | n | B2 | /ænˌtɪsɪˈpeɪʃn/ | The children waited in anticipation of Eid. | Les enfants attendaient l'Aïd avec impatience.
+astonishment | stupéfaction | n | B2 | /əˈstɒnɪʃmənt/ | To my astonishment, he agreed. | À ma grande stupéfaction, il a accepté.
+bewilderment | perplexité | n | C1 | /bɪˈwɪldəmənt/ | He looked at me in bewilderment. | Il m'a regardé, perplexe.
+bothered | ennuyé, dérangé | adj | B2 | /ˈbɒðəd/ | I can't be bothered to cook tonight. | Je n'ai pas le courage de cuisiner ce soir.
+cherished | précieux, chéri | adj | B2 | /ˈtʃerɪʃt/ | These are my most cherished memories. | Ce sont mes souvenirs les plus précieux.
+consolation | consolation, réconfort | n | C1 | /ˌkɒnsəˈleɪʃn/ | Prayer was his only consolation. | La prière était sa seule consolation.
+desolation | désolation | n | C1 | /ˌdesəˈleɪʃn/ | A feeling of desolation came over him. | Un sentiment de désolation l'envahit.
+desperation | désespoir | n | B2 | /ˌdespəˈreɪʃn/ | In desperation, he called the police. | En désespoir de cause, il a appelé la police.
+detachment | détachement | n | C1 | /dɪˈtætʃmənt/ | He spoke with cool detachment. | Il parlait avec un froid détachement.
+to disillusion | désillusionner | v | C1 | /ˌdɪsɪˈluːʒn/ | I hate to disillusion you, but it's not true. | Je suis désolé de te décevoir, mais ce n'est pas vrai.
+displeasure | mécontentement | n | C1 | /dɪsˈpleʒə/ | He showed his displeasure clearly. | Il a clairement montré son mécontentement.
+dissatisfaction | mécontentement, insatisfaction | n | B2 | /ˌdɪsˌsætɪsˈfækʃn/ | There is growing dissatisfaction among workers. | Le mécontentement grandit chez les ouvriers.
+dissatisfied | mécontent, insatisfait | adj | B2 | /dɪsˈsætɪsfaɪd/ | Many customers were dissatisfied. | Beaucoup de clients étaient mécontents.
+exultant | triomphant, exultant | adj | C2 | /ɪɡˈzʌltənt/ | The exultant fans sang all night. | Les supporters exultants ont chanté toute la nuit.
+fascinated | fasciné | adj | B2 | /ˈfæsɪneɪtɪd/ | The children were fascinated by the stars. | Les enfants étaient fascinés par les étoiles.
+fascination | fascination | n | B2 | /ˌfæsɪˈneɪʃn/ | He has a fascination for old maps. | Il a une fascination pour les vieilles cartes.
+furore | tollé, scandale | n | C1 | /fjuˈrɔːri/ | The decision caused a furore. | La décision a provoqué un tollé.
+gaiety | gaieté | n | C1 | /ˈɡeɪəti/ | The gaiety of the festival was contagious. | La gaieté de la fête était contagieuse.
+humiliation | humiliation | n | B2 | /hjuːˌmɪliˈeɪʃn/ | He never forgot the humiliation. | Il n'a jamais oublié l'humiliation.
+impulse | impulsion, pulsion | n | B2 | /ˈɪmpʌls/ | I bought it on impulse. | Je l'ai acheté sur un coup de tête.
+indebted | redevable | adj | C1 | /ɪnˈdetɪd/ | I'm deeply indebted to my teachers. | Je suis profondément redevable envers mes professeurs.
+indignity | humiliation, indignité | n | C1 | /ɪnˈdɪɡnəti/ | He suffered the indignity of being searched. | Il a subi l'humiliation d'une fouille.
+irritation | irritation, agacement | n | B2 | /ˌɪrɪˈteɪʃn/ | She couldn't hide her irritation. | Elle ne pouvait cacher son agacement.
+to mortify | mortifier, humilier | v | C2 | /ˈmɔːtɪfaɪ/ | She was mortified by her mistake. | Elle était mortifiée par son erreur.
+mournful | lugubre, mélancolique | adj | C1 | /ˈmɔːnfl/ | The music was slow and mournful. | La musique était lente et mélancolique.
+moving | émouvant | adj | B2 | /ˈmuːvɪŋ/ | It was a moving ceremony. | Ce fut une cérémonie émouvante.
+nerves | nerfs, trac | n | B2 | /nɜːvz/ | I always suffer from nerves before an exam. | J'ai toujours le trac avant un examen.
+nightmare | cauchemar | n | B2 | /ˈnaɪtmeə/ | I had a terrible nightmare. | J'ai fait un cauchemar terrible.
+obsession | obsession | n | B2 | /əbˈseʃn/ | Football is his obsession. | Le football est son obsession.
+outrage | indignation, scandale | n | B2 | /ˈaʊtreɪdʒ/ | The decision caused public outrage. | La décision a suscité l'indignation générale.
+shaken | secoué, ébranlé | adj | B2 | /ˈʃeɪkən/ | She was badly shaken by the accident. | Elle a été très secouée par l'accident.
+sneer | ricanement, sourire méprisant | n | C1 | /snɪə/ | He answered with a sneer. | Il a répondu avec un sourire méprisant.
+spellbound | captivé, envoûté | adj | C1 | /ˈspelbaʊnd/ | The audience sat spellbound. | Le public était captivé.
+spite | dépit, malveillance | n | C1 | /spaɪt/ | He did it out of spite. | Il l'a fait par dépit.
+suffering | souffrance | n | B2 | /ˈsʌfərɪŋ/ | The war caused terrible suffering. | La guerre a causé de terribles souffrances.
+to sympathise | compatir ; être d'accord | v | B2 | /ˈsɪmpəθaɪz/ | I sympathise with your situation. | Je compatis à ta situation.
+unease | malaise, inquiétude | n | C1 | /ʌnˈiːz/ | There was a growing sense of unease. | Un malaise grandissait.
+unhappiness | tristesse, malheur | n | B2 | /ʌnˈhæpinəs/ | Money can't cure unhappiness. | L'argent ne guérit pas le malheur.
+vengeance | vengeance | n | C1 | /ˈvendʒəns/ | He wanted vengeance. | Il voulait se venger.
+morale | moral (d'un groupe) | n | C1 | /məˈrɑːl/ | The team's morale is high. | Le moral de l'équipe est bon.
+fearful | craintif, effrayé | adj | C1 | /ˈfɪəfl/ | The children were fearful of the dog. | Les enfants avaient peur du chien.
+upbeat | optimiste, enjoué | adj | C1 | /ˈʌpbiːt/ | She was in an upbeat mood. | Elle était d'humeur joyeuse.
+to rave about | s'extasier sur | v | C1 | /ˈreɪv əbaʊt/ | Everyone raves about this restaurant. | Tout le monde ne tarit pas d'éloges sur ce restaurant.
+to rejoice | se réjouir | v | C1 | /rɪˈdʒɔɪs/ | The people rejoiced at the news. | Le peuple s'est réjoui de la nouvelle.
+bitterness | amertume | n | C1 | /ˈbɪtənəs/ | Forgiveness removes bitterness from the heart. | Le pardon chasse l'amertume du cœur.
+frenzy | frénésie | n | C1 | /ˈfrenzi/ | There was a buying frenzy before the holiday. | Il y a eu une frénésie d'achats avant les fêtes.
+mania | manie, folie | n | C2 | /ˈmeɪniə/ | Football mania swept the country. | La folie du football a gagné le pays.
+hesitant | hésitant | adj | C1 | /ˈhezɪtənt/ | She was hesitant to ask for help. | Elle hésitait à demander de l'aide.
+heartfelt | sincère, du fond du cœur | adj | C1 | /ˈhɑːtfelt/ | Please accept my heartfelt thanks. | Veuillez accepter mes remerciements les plus sincères.
+inhibition | inhibition | n | C2 | /ˌɪnhɪˈbɪʃn/ | She lost her inhibitions and danced. | Elle a perdu ses inhibitions et a dansé.
+triumphant | triomphant | adj | C1 | /traɪˈʌmfənt/ | The team returned triumphant. | L'équipe est rentrée triomphante.
+traumatic | traumatisant | adj | C1 | /trɔːˈmætɪk/ | It was a traumatic experience. | Ce fut une expérience traumatisante.
+compulsion | contrainte ; compulsion | n | C1 | /kəmˈpʌlʃn/ | He felt a compulsion to check the door. | Il ressentait le besoin compulsif de vérifier la porte.
+claustrophobic | claustrophobe | adj | C1 | /ˌklɔːstrəˈfəʊbɪk/ | I feel claustrophobic in lifts. | Je me sens claustrophobe dans les ascenseurs.
+tedium | ennui, monotonie | n | C1 | /ˈtiːdiəm/ | He hated the tedium of office work. | Il détestait la monotonie du travail de bureau.
+disdain | dédain, mépris | n | C1 | /dɪsˈdeɪn/ | She looked at him with disdain. | Elle l'a regardé avec dédain.
+hostility | hostilité | n | C1 | /hɒˈstɪləti/ | There was open hostility between them. | Il y avait une hostilité ouverte entre eux.
+dismay | consternation | n | C1 | /dɪsˈmeɪ/ | To our dismay, the shop was closed. | À notre grande consternation, le magasin était fermé.
+self-worth | estime de soi | n | C1 | /ˌself ˈwɜːθ/ | Your self-worth doesn't depend on others. | Ton estime de soi ne dépend pas des autres.
+craving | envie irrésistible, besoin | n | C1 | /ˈkreɪvɪŋ/ | I have a craving for chocolate. | J'ai une envie folle de chocolat.
+scorn | mépris, dédain | n | C1 | /skɔːn/ | She treated his idea with scorn. | Elle a accueilli son idée avec mépris.
+scornful | méprisant | adj | C1 | /ˈskɔːnfl/ | He gave a scornful laugh. | Il a eu un rire méprisant.
+glum | morose, abattu | adj | C1 | /ɡlʌm/ | Why are you looking so glum? | Pourquoi as-tu l'air si morose ?
+exuberance | exubérance | n | C1 | /ɪɡˈzjuːbərəns/ | The children's exuberance was a joy. | L'exubérance des enfants était un bonheur.
+sentiment | sentiment, opinion | n | C1 | /ˈsentɪmənt/ | Public sentiment is against the war. | L'opinion publique est contre la guerre.
+sentimental | sentimental | adj | C1 | /ˌsentɪˈmentl/ | The ring has sentimental value. | La bague a une valeur sentimentale.
+to reminisce | évoquer ses souvenirs | v | C1 | /ˌremɪˈnɪs/ | The old friends reminisced about school. | Les vieux amis évoquaient leurs souvenirs d'école.
+disillusionment | désillusion | n | C1 | /ˌdɪsɪˈluːʒnmənt/ | There is growing disillusionment with politics. | La désillusion envers la politique grandit.
+exhilaration | exaltation, euphorie | n | C1 | /ɪɡˌzɪləˈreɪʃn/ | We felt a sense of exhilaration at the top. | Nous avons ressenti une grande euphorie au sommet.
+lust | désir ; soif | n | C1 | /lʌst/ | His lust for power destroyed him. | Sa soif de pouvoir l'a perdu.
+to appal | consterner, horrifier | v | C1 | /əˈpɔːl/ | The violence appalled us. | La violence nous a consternés.
+tranquillity | tranquillité, sérénité | n | C1 | /træŋˈkwɪləti/ | We enjoyed the tranquillity of the countryside. | Nous avons profité de la tranquillité de la campagne.
+to brood | ruminer, broyer du noir | v | C2 | /bruːd/ | Don't brood over your mistakes. | Ne rumine pas tes erreurs.
+disdainful | dédaigneux | adj | C2 | /dɪsˈdeɪnfl/ | She gave him a disdainful look. | Elle lui a lancé un regard dédaigneux.
+euphoric | euphorique | adj | C2 | /juːˈfɒrɪk/ | The fans were euphoric. | Les supporters étaient euphoriques.
+preoccupation | préoccupation | n | C2 | /priˌɒkjuˈpeɪʃn/ | His main preoccupation is money. | Sa principale préoccupation est l'argent.
+lamentation | lamentation | n | C2 | /ˌlæmənˈteɪʃn/ | We heard cries of lamentation. | Nous avons entendu des cris de lamentation.
+angst | angoisse (existentielle) | n | C2 | /æŋst/ | Teenage angst is common. | L'angoisse adolescente est courante.
+lassitude | lassitude | n | C2 | /ˈlæsɪtjuːd/ | A feeling of lassitude came over him. | Une lassitude l'envahit.
+revulsion | répulsion, dégoût | n | C2 | /rɪˈvʌlʃn/ | She turned away in revulsion. | Elle s'est détournée, dégoûtée.
+consternation | consternation | n | C2 | /ˌkɒnstəˈneɪʃn/ | The news caused consternation. | La nouvelle a provoqué la consternation.
+qualm | scrupule | n | C2 | /kwɑːm/ | He had no qualms about lying. | Il n'avait aucun scrupule à mentir.
+hysterical | hystérique ; hilarant | adj | C2 | /hɪˈsterɪkl/ | She became hysterical with fear. | Elle est devenue hystérique de peur.
+contemptuous | méprisant | adj | C2 | /kənˈtemptʃuəs/ | He gave a contemptuous laugh. | Il a eu un rire méprisant.
+derision | dérision, moquerie | n | C2 | /dɪˈrɪʒn/ | His idea was met with derision. | Son idée a été accueillie avec dérision.
+derisive | moqueur | adj | C2 | /dɪˈraɪsɪv/ | There was derisive laughter. | Il y a eu des rires moqueurs.
+rapture | ravissement, extase | n | C2 | /ˈræptʃə/ | They listened in rapture. | Ils écoutaient, ravis.
+rapturous | enthousiaste, délirant | adj | C2 | /ˈræptʃərəs/ | He received a rapturous welcome. | Il a reçu un accueil enthousiaste.
+remorseful | plein de remords | adj | C2 | /rɪˈmɔːsfl/ | He was remorseful after the fight. | Il avait des remords après la dispute.
+ridicule | moquerie, ridicule | n | C1 | /ˈrɪdɪkjuːl/ | He was afraid of ridicule. | Il avait peur du ridicule.
+joyous | joyeux | adj | C1 | /ˈdʒɔɪəs/ | Eid is a joyous occasion. | L'Aïd est une occasion joyeuse.
+gloom | morosité ; obscurité | n | C1 | /ɡluːm/ | There's an atmosphere of gloom. | Il règne une atmosphère de morosité.
+woe | malheur, chagrin | n | C2 | /wəʊ/ | He told us his tale of woe. | Il nous a raconté ses malheurs.
+mockery | moquerie, dérision | n | C2 | /ˈmɒkəri/ | The trial was a mockery of justice. | Le procès était une parodie de justice.
+solace | réconfort | n | C2 | /ˈsɒləs/ | She found solace in prayer. | Elle a trouvé du réconfort dans la prière.
+emptiness | vide | n | C1 | /ˈemptinəs/ | He felt a deep emptiness. | Il ressentait un profond vide.
+fixation | fixation, obsession | n | C2 | /fɪkˈseɪʃn/ | He has a fixation with cleanliness. | Il fait une fixation sur la propreté.
+uplift | élévation, réconfort | n | C2 | /ˈʌplɪft/ | The recitation gave us a spiritual uplift. | La récitation nous a élevés spirituellement.
+apathy | apathie, indifférence | n | C2 | /ˈæpəθi/ | There's widespread apathy among voters. | L'apathie est répandue chez les électeurs.
+speechless | sans voix | adj | C1 | /ˈspiːtʃləs/ | I was speechless with joy. | J'étais sans voix tant j'étais heureux.
+aversion | aversion | n | C2 | /əˈvɜːʃn/ | She has an aversion to crowds. | Elle a horreur de la foule.
+giddy | étourdi, pris de vertige | adj | C2 | /ˈɡɪdi/ | I felt giddy with excitement. | J'avais la tête qui tournait d'excitation.
+ire | courroux, colère | n | C2 | /ˈaɪə/ | His comments drew the ire of the public. | Ses commentaires ont suscité la colère du public.
+seduction | séduction | n | C2 | /sɪˈdʌkʃn/ | The seduction of power is dangerous. | La séduction du pouvoir est dangereuse.
+outcry | tollé, protestation | n | C2 | /ˈaʊtkraɪ/ | There was a public outcry. | Il y a eu un tollé général.
+agitation | agitation | n | C2 | /ˌædʒɪˈteɪʃn/ | She was in a state of agitation. | Elle était dans un état d'agitation.
+appalled | consterné, horrifié | adj | C1 | /əˈpɔːld/ | I was appalled by the news. | J'ai été consterné par la nouvelle.
+mourning | deuil | n | C1 | /ˈmɔːnɪŋ/ | The country is in mourning. | Le pays est en deuil.
+disillusioned | désabusé, déçu | adj | C1 | /ˌdɪsɪˈluːʒnd/ | Many voters are disillusioned. | Beaucoup d'électeurs sont désabusés.
+intrigued | intrigué | adj | C1 | /ɪnˈtriːɡd/ | I was intrigued by his story. | J'ai été intrigué par son histoire.
+bewildered | désorienté, perplexe | adj | C1 | /bɪˈwɪldəd/ | He looked bewildered. | Il avait l'air perplexe.
+acrimony | acrimonie, aigreur | n | C2 | /ˈækrɪməni/ | The divorce was full of acrimony. | Le divorce a été plein d'aigreur.
+antipathy | antipathie | n | C2 | /ænˈtɪpəθi/ | She felt a deep antipathy towards him. | Elle éprouvait une profonde antipathie pour lui.
+contrite | contrit, repentant | adj | C2 | /kənˈtraɪt/ | He was contrite and asked for forgiveness. | Il était contrit et a demandé pardon.
+rancour | rancœur | n | C2 | /ˈræŋkə/ | Forgive without rancour. | Pardonne sans rancœur.
+trepidation | appréhension, inquiétude | n | C2 | /ˌtrepɪˈdeɪʃn/ | He opened the letter with trepidation. | Il a ouvert la lettre avec appréhension.
+adulation | adulation | n | C2 | /ˌædjuˈleɪʃn/ | The singer enjoyed the adulation of fans. | Le chanteur savourait l'adulation de ses fans.
+animosity | animosité | n | C2 | /ˌænɪˈmɒsəti/ | There's no animosity between us. | Il n'y a aucune animosité entre nous.
+catharsis | catharsis | n | C2 | /kəˈθɑːsɪs/ | Writing was a catharsis for her. | L'écriture a été une catharsis pour elle.
+chagrin | dépit, contrariété | n | C2 | /ˈʃæɡrɪn/ | To his chagrin, he lost. | À son grand dépit, il a perdu.
+to commiserate | compatir | v | C2 | /kəˈmɪzəreɪt/ | I commiserated with her over her loss. | J'ai compati à sa perte.
+compunction | scrupule, remords | n | C2 | /kəmˈpʌŋkʃn/ | He had no compunction about lying. | Il n'avait aucun scrupule à mentir.
+contrition | contrition, repentir | n | C2 | /kənˈtrɪʃn/ | He showed true contrition. | Il a fait preuve d'un sincère repentir.
+disgruntled | mécontent | adj | C2 | /dɪsˈɡrʌntld/ | Disgruntled customers complained. | Des clients mécontents se sont plaints.
+vendetta | vendetta, querelle | n | C1 | /venˈdetə/ | He has a personal vendetta against me. | Il a une querelle personnelle contre moi.
+uproar | tollé, tumulte | n | C1 | /ˈʌprɔː/ | The decision caused an uproar. | La décision a provoqué un tollé.
+distraught | éperdu, bouleversé | adj | C1 | /dɪˈstrɔːt/ | The distraught mother searched for her child. | La mère éperdue cherchait son enfant.
+outburst | accès, explosion (de colère) | n | C1 | /ˈaʊtbɜːst/ | He apologised for his outburst. | Il s'est excusé pour son emportement.
+adoration | adoration | n | C1 | /ˌædəˈreɪʃn/ | Worship and adoration belong to Allah alone. | L'adoration n'appartient qu'à Allah.
+pang | pincement, serrement | n | C1 | /pæŋ/ | She felt a pang of regret. | Elle a ressenti un pincement de regret.
+phobia | phobie | n | B2 | /ˈfəʊbiə/ | She has a phobia of spiders. | Elle a la phobie des araignées.
+apprehension | appréhension | n | C1 | /ˌæprɪˈhenʃn/ | She felt some apprehension before the exam. | Elle ressentait une certaine appréhension avant l'examen.
+lonesome | seul, solitaire | adj | C1 | /ˈləʊnsəm/ | He felt lonesome after his wife died. | Il s'est senti seul après la mort de sa femme.
+indignation | indignation | n | C1 | /ˌɪndɪɡˈneɪʃn/ | The decision provoked indignation. | La décision a suscité l'indignation.
+mistrust | méfiance | n | C1 | /ˌmɪsˈtrʌst/ | There's deep mistrust between them. | Il y a une profonde méfiance entre eux.
+fulfilment | épanouissement, accomplissement | n | C1 | /fʊlˈfɪlmənt/ | She finds fulfilment in teaching. | Elle s'épanouit dans l'enseignement.
+inferiority | infériorité | n | C1 | /ɪnˌfɪəriˈɒrəti/ | He has an inferiority complex. | Il a un complexe d'infériorité.
+pessimism | pessimisme | n | C1 | /ˈpesɪmɪzəm/ | There's a mood of pessimism. | Il règne un climat de pessimisme.
+hopelessness | désespoir | n | C1 | /ˈhəʊpləsnəs/ | Islam teaches us never to give in to hopelessness. | L'islam nous enseigne à ne jamais céder au désespoir.
+in a fit of pique | dans un accès de dépit | expr | C2 | /ɪn ə ˌfɪt əv ˈpiːk/ | He resigned in a fit of pique. | Il a démissionné dans un accès de dépit.
+distaste | dégoût, aversion | n | C1 | /dɪsˈteɪst/ | She looked at the food with distaste. | Elle a regardé la nourriture avec dégoût.
+helplessness | impuissance | n | C1 | /ˈhelpləsnəs/ | She felt a sense of helplessness. | Elle ressentait un sentiment d'impuissance.
+affront | affront | n | C2 | /əˈfrʌnt/ | The remark was an affront to his dignity. | La remarque était un affront à sa dignité.
+malaise | malaise | n | C2 | /məˈleɪz/ | There's a general malaise in the country. | Il règne un malaise général dans le pays.
+teary | larmoyant, ému | adj | C1 | /ˈtɪəri/ | She was teary at the airport. | Elle avait les larmes aux yeux à l'aéroport.
+the jitters | la frousse, le trac | n | C1 | /ðə ˈdʒɪtəz/ | I always get the jitters before an exam. | J'ai toujours le trac avant un examen.
+outpouring | effusion, déferlement | n | C2 | /ˈaʊtpɔːrɪŋ/ | There was an outpouring of grief. | Il y a eu une vague de chagrin.
+cathartic | cathartique | adj | C2 | /kəˈθɑːtɪk/ | Crying can be cathartic. | Pleurer peut être libérateur.
+sentimentality | sentimentalisme | n | C2 | /ˌsentɪmenˈtæləti/ | The film avoids sentimentality. | Le film évite le sentimentalisme.
+ambivalence | ambivalence | n | C2 | /æmˈbɪvələns/ | She feels some ambivalence about the move. | Elle éprouve une certaine ambivalence vis-à-vis du déménagement.
+pet peeve | bête noire | n | C1 | /ˌpet ˈpiːv/ | Lateness is my pet peeve. | Le retard est ma bête noire.
+restlessness | agitation, nervosité | n | C1 | /ˈrestləsnəs/ | He felt a strange restlessness. | Il ressentait une étrange agitation.
+foreboding | pressentiment, appréhension | n | C2 | /fɔːˈbəʊdɪŋ/ | She had a sense of foreboding. | Elle avait un mauvais pressentiment.
+overreaction | réaction excessive | n | C1 | /ˌəʊvəriˈækʃn/ | Calling the police was an overreaction. | Appeler la police était une réaction excessive.
+turn on the waterworks | se mettre à pleurer (pour attendrir) | expr | C2 | /tɜːn ɒn ðə ˈwɔːtəwɜːks/ | Whenever she wants something, she turns on the waterworks. | Dès qu'elle veut quelque chose, elle se met à pleurer.
+aggravation | agacement ; aggravation | n | C2 | /ˌæɡrəˈveɪʃn/ | I don't need this aggravation. | Je n'ai pas besoin de ces tracas.
+irritability | irritabilité | n | C2 | /ˌɪrɪtəˈbɪləti/ | Lack of sleep causes irritability. | Le manque de sommeil provoque de l'irritabilité.
+hilarity | hilarité | n | C2 | /hɪˈlærəti/ | His joke caused great hilarity. | Sa blague a provoqué l'hilarité générale.
 `,
 );
 
@@ -633,5 +912,30 @@ fair-weather friend | ami des beaux jours | expr | C1 | /ˌfeə ˈweðə ˈfrend
 windfall | aubaine ; fruit tombé | n | C1 | /ˈwɪndfɔːl/ | The bonus was an unexpected windfall. | La prime a été une aubaine inattendue.
 greenhouse effect | effet de serre | n | B2 | /ˈɡriːnhaʊs ɪˌfekt/ | The greenhouse effect warms the planet. | L'effet de serre réchauffe la planète.
 mizzle | bruine épaisse | n | C2 | /ˈmɪzl/ | A fine mizzle hung over the moor. | Une bruine épaisse planait sur la lande.
+misty | brumeux | adj | B1 | /ˈmɪsti/ | It was a cold, misty morning. | C'était une matinée froide et brumeuse.
+moisture | humidité | n | B2 | /ˈmɔɪstʃə/ | The soil keeps the moisture. | Le sol retient l'humidité.
+quake | tremblement de terre | n | B2 | /kweɪk/ | The quake destroyed hundreds of homes. | Le séisme a détruit des centaines de maisons.
+snowstorm | tempête de neige | n | B1 | /ˈsnəʊstɔːm/ | The snowstorm closed the roads. | La tempête de neige a bloqué les routes.
+rainstorm | pluie torrentielle, orage | n | B2 | /ˈreɪnstɔːm/ | We got caught in a rainstorm. | Nous avons été surpris par un orage.
+soaking | trempé | adj | B2 | /ˈsəʊkɪŋ/ | I'm soaking wet! | Je suis trempé jusqu'aux os !
+sunbeam | rayon de soleil | n | B2 | /ˈsʌnbiːm/ | A sunbeam fell on her face. | Un rayon de soleil tombait sur son visage.
+tremor | secousse ; tremblement | n | C1 | /ˈtremə/ | We felt an earth tremor last night. | Nous avons senti une secousse cette nuit.
+torrent | torrent | n | C1 | /ˈtɒrənt/ | The rain fell in torrents. | La pluie tombait à torrents.
+meteorological | météorologique | adj | C2 | /ˌmiːtiərəˈlɒdʒɪkl/ | The meteorological office issued a warning. | Le service météorologique a lancé une alerte.
+tempest | tempête (littéraire) | n | C2 | /ˈtempɪst/ | The ship was lost in the tempest. | Le navire s'est perdu dans la tempête.
+flake | flocon ; écaille | n | C1 | /fleɪk/ | Snow flakes fell slowly. | Des flocons de neige tombaient lentement.
+climatic | climatique | adj | C1 | /klaɪˈmætɪk/ | There are big climatic changes. | Il y a de grands changements climatiques.
+solstice | solstice | n | C1 | /ˈsɒlstɪs/ | The winter solstice is the shortest day. | Le solstice d'hiver est le jour le plus court.
+thunderbolt | coup de foudre (éclair) | n | C1 | /ˈθʌndəbəʊlt/ | The news hit him like a thunderbolt. | La nouvelle l'a frappé comme la foudre.
+landfall | arrivée sur les côtes (d'un cyclone) | n | C2 | /ˈlændfɔːl/ | The hurricane made landfall in Florida. | L'ouragan a touché terre en Floride.
+springtime | printemps | n | B1 | /ˈsprɪŋtaɪm/ | The garden is beautiful in springtime. | Le jardin est magnifique au printemps.
+westerly | d'ouest | adj | C1 | /ˈwestəli/ | A westerly wind brought rain. | Un vent d'ouest a amené la pluie.
+equinox | équinoxe | n | C1 | /ˈekwɪnɒks/ | Day and night are equal at the equinox. | Le jour et la nuit sont égaux à l'équinoxe.
+easterly | d'est | adj | C1 | /ˈiːstəli/ | An easterly wind is blowing. | Un vent d'est souffle.
+northerly | du nord | adj | C1 | /ˈnɔːðəli/ | A cold northerly wind blew. | Un vent froid du nord soufflait.
+choppy | agité (mer) | adj | C1 | /ˈtʃɒpi/ | The sea is choppy today. | La mer est agitée aujourd'hui.
+southerly | du sud | adj | C1 | /ˈsʌðəli/ | A warm southerly wind blew. | Un vent chaud du sud soufflait.
+windward | au vent | adj | C2 | /ˈwɪndwəd/ | The windward side of the island is wet. | Le côté au vent de l'île est humide.
+autumnal | automnal | adj | C2 | /ɔːˈtʌmnəl/ | The trees took on autumnal colours. | Les arbres ont pris des couleurs automnales.
 `,
 );

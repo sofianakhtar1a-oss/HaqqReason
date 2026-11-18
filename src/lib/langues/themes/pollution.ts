@@ -237,5 +237,18 @@ water table | nappe phréatique | n | C1 | /ˈwɔːtə ˌteɪbl/ | The water tab
 aquifer | aquifère | n | C2 | /ˈækwɪfər/ | Pesticides reached the aquifer. | Les pesticides ont atteint l'aquifère.
 groundwater | eaux souterraines | n | C1 | /ˈɡraʊndwɔːtər/ | Groundwater is polluted with nitrates. | Les eaux souterraines sont polluées par les nitrates.
 silt | limon, vase | n | C1 | /sɪlt/ | The dam is filling with silt. | Le barrage se remplit de vase.
+debris | débris | n | B2 | /ˈdebriː/ | The street was full of debris after the storm. | La rue était jonchée de débris après la tempête.
+ecological | écologique | adj | B1 | /ˌiːkəˈlɒdʒɪkl/ | The oil spill was an ecological disaster. | La marée noire a été une catastrophe écologique.
+recycled | recyclé | adj | B1 | /ˌriːˈsaɪkld/ | This bag is made of recycled plastic. | Ce sac est en plastique recyclé.
+carbon monoxide | monoxyde de carbone | n | B2 | /ˌkɑːbən məˈnɒksaɪd/ | Carbon monoxide has no smell. | Le monoxyde de carbone n'a pas d'odeur.
+rubble | décombres | n | B2 | /ˈrʌbl/ | They searched the rubble for survivors. | Ils ont fouillé les décombres à la recherche de survivants.
+scrap | ferraille ; bout | n | B2 | /skræp/ | The old car was sold for scrap. | La vieille voiture a été vendue à la casse.
+toxicity | toxicité | n | C2 | /tɒkˈsɪsəti/ | They tested the toxicity of the water. | Ils ont testé la toxicité de l'eau.
+wastewater | eaux usées | n | C2 | /ˈweɪstwɔːtə/ | Wastewater must be treated. | Les eaux usées doivent être traitées.
+detritus | détritus | n | C2 | /dɪˈtraɪtəs/ | The beach was covered with detritus. | La plage était couverte de détritus.
+unsustainable | non durable, insoutenable | adj | C1 | /ˌʌnsəˈsteɪnəbl/ | This level of spending is unsustainable. | Ce niveau de dépenses est intenable.
+wasteland | terrain vague ; désert | n | C1 | /ˈweɪstlænd/ | The factory left a toxic wasteland. | L'usine a laissé un terrain vague toxique.
+emissions | émissions | n | B2 | /ɪˈmɪʃnz/ | We must cut carbon emissions. | Nous devons réduire les émissions de carbone.
+land reclamation | assèchement, récupération de terres | n | C2 | /ˌlænd ˌrekləˈmeɪʃn/ | Land reclamation created new islands. | La récupération de terres a créé de nouvelles îles.
 `,
 );

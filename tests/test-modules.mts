@@ -13,7 +13,7 @@ const ok = (nom: string, cond: boolean, detail?: unknown) => {
 // Sans rien de publié : exactement les textes d'origine.
 const r0 = resoudre("alambic", null);
 ok("textes d'origine sans publication", r0.textes["tete.titre"] === "L'Alambic" && r0.listes.outils.length === 5 && r0.listes.outils[0].valeurs.nom === "Convertir");
-ok("vocabulaire d'origine", resoudre("langues", null).themes?.length === 48);
+ok("vocabulaire d'origine", resoudre("langues", null).themes?.length === 52);
 
 // Un texte modifié, un outil renommé, déplacé, un autre masqué, un troisième supprimé.
 const c = nettoyerContenu("alambic", {
@@ -36,8 +36,8 @@ const themes = themesDOrigine();
 themes[0] = { ...themes[0], entrees: [{ id: "famille:mot-ab12", en: "niece", fr: "nièce", nature: "nom", niveau: "A2", api: "/niːs/", exEn: "", exFr: "" }, { id: "x:y", en: "", fr: "vide", nature: "nom", niveau: "A1", api: "", exEn: "", exFr: "" }, ...themes[0].entrees] };
 const cv = nettoyerContenu("langues", { themes: [...themes, { id: "", nom: "" }, { id: "Nouveau Thème!", nom: "Mon thème", icone: "Pirate", entrees: [] }] });
 ok("mot ajouté gardé, mot incomplet refusé", cv.themes![0].entrees[0].en === "niece" && cv.themes![0].entrees.length === themesDOrigine()[0].entrees.length + 1);
-ok("thème sans nom refusé, identifiant et icône assainis", cv.themes!.length === 49 && cv.themes![48].id === "nouveau-theme" && cv.themes![48].icone === "BookOpen");
-ok("thème masqué absent pour les visiteurs", resoudre("langues", { ...cv, themes: cv.themes!.map((t, i) => (i === 1 ? { ...t, visible: false } : t)) }).themes!.length === 48);
+ok("thème sans nom refusé, identifiant et icône assainis", cv.themes!.length === 53 && cv.themes![52].id === "nouveau-theme" && cv.themes![52].icone === "BookOpen");
+ok("thème masqué absent pour les visiteurs", resoudre("langues", { ...cv, themes: cv.themes!.map((t, i) => (i === 1 ? { ...t, visible: false } : t)) }).themes!.length === 52);
 
 // Nombres bornés, textes remplis.
 ok("objectif borné", nettoyerContenu("langues", { textes: { objectif: "5000" } }).textes.objectif === "200");
@@ -59,7 +59,7 @@ ok("mot retiré exprès absent, même corbeille vide", !vu2[0].entrees.some((x) 
 ok("thème retiré exprès absent", !vu2.some((t) => t.id === origine[1].id) && vu2.length === origine.length - 1);
 ok("identifiants de retrait assainis", avecRetrait.retires?.length === 2);
 ok("modification du créateur prioritaire sur le code", resoudre("langues", nettoyerContenu("langues", { themes: [{ ...origine[0], nom: "Ma famille" }] })).themes![0].nom === "Ma famille");
-ok("carte du Truchement : nombres remplis", remplir(resoudre("accueil", null).listes.cartes.find((x) => x.id === "langues")!.valeurs.texte, { mots: "11 589", themes: 48 }).includes("11 589 mots en 48 thèmes"));
+ok("carte du Truchement : nombres remplis", remplir(resoudre("accueil", null).listes.cartes.find((x) => x.id === "langues")!.valeurs.texte, { mots: "20 589", themes: 52 }).includes("20 589 mots en 52 thèmes"));
 
 console.log(e ? `\n${e} échec(s)` : "\nTout est bon.");
 process.exit(e ? 1 : 0);

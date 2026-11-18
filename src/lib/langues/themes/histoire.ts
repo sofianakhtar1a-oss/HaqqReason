@@ -228,5 +228,137 @@ anachronism | anachronisme | n | C2 | /əˈnækrənɪzəm/ | A watch in a Roman 
 hindsight | recul, rétrospectivement | n | C1 | /ˈhaɪndsaɪt/ | With hindsight, it was a mistake. | Avec le recul, c'était une erreur.
 revisionism | révisionnisme | n | C2 | /rɪˈvɪʒənɪzəm/ | Historians reject this revisionism. | Les historiens rejettent ce révisionnisme.
 historiography | historiographie | n | C2 | /hɪˌstɒriˈɒɡrəfi/ | Ibn Khaldun changed historiography. | Ibn Khaldoun a renouvelé l'historiographie.
+chariot | char | n | B1 | /ˈtʃæriət/ | The king rode in a golden chariot. | Le roi se déplaçait sur un char doré.
+inscription | inscription | n | B2 | /ɪnˈskrɪpʃn/ | The inscription is in Arabic. | L'inscription est en arabe.
+outlaw | hors-la-loi | n | B2 | /ˈaʊtlɔː/ | Robin Hood was an outlaw. | Robin des Bois était un hors-la-loi.
+remembrance | souvenir, commémoration | n | B2 | /rɪˈmembrəns/ | A remembrance service was held for the victims. | Une cérémonie a été organisée à la mémoire des victimes.
+reunification | réunification | n | B2 | /ˌriːjuːnɪfɪˈkeɪʃn/ | German reunification took place in 1990. | La réunification allemande a eu lieu en 1990.
+settler | colon | n | B2 | /ˈsetlə/ | The first settlers arrived in 1620. | Les premiers colons sont arrivés en 1620.
+warrior | guerrier | n | B1 | /ˈwɒriə/ | The warriors defended the city. | Les guerriers défendaient la ville.
+aristocracy | aristocratie | n | C1 | /ˌærɪˈstɒkrəsi/ | The aristocracy owned most of the land. | L'aristocratie possédait la plupart des terres.
+cannonball | boulet de canon | n | C1 | /ˈkænənbɔːl/ | A cannonball hit the castle wall. | Un boulet de canon a frappé la muraille du château.
+captive | captif, prisonnier | n | B2 | /ˈkæptɪv/ | The captives were released. | Les captifs ont été libérés.
+duel | duel | n | B2 | /ˈdjuːəl/ | The two knights fought a duel. | Les deux chevaliers se sont battus en duel.
+frigate | frégate | n | C1 | /ˈfrɪɡət/ | A frigate guarded the harbour. | Une frégate gardait le port.
+lance | lance | n | C1 | /lɑːns/ | The knight held a long lance. | Le chevalier tenait une longue lance.
+mausoleum | mausolée | n | C1 | /ˌmɔːsəˈliːəm/ | The Taj Mahal is a mausoleum. | Le Taj Mahal est un mausolée.
+nobleman | noble, aristocrate | n | C1 | /ˈnəʊblmən/ | The castle belonged to a nobleman. | Le château appartenait à un noble.
+partisan | partisan, résistant | n | C1 | /ˌpɑːtɪˈzæn/ | The partisans fought in the hills. | Les résistants se battaient dans les collines.
+pirate | pirate | n | B2 | /ˈpaɪrət/ | Pirates attacked the ship. | Des pirates ont attaqué le navire.
+pre-industrial | préindustriel | adj | C1 | /ˌpriː ɪnˈdʌstriəl/ | Life was hard in pre-industrial times. | La vie était dure à l'époque préindustrielle.
+revival | renouveau, renaissance | n | C1 | /rɪˈvaɪvl/ | There's been a revival of interest in calligraphy. | On observe un regain d'intérêt pour la calligraphie.
+royalty | royauté, famille royale | n | B2 | /ˈrɔɪəlti/ | They were treated like royalty. | Ils ont été traités comme des rois.
+slaughter | massacre ; abattage | n | C1 | /ˈslɔːtə/ | The slaughter of civilians shocked the world. | Le massacre de civils a choqué le monde.
+stonework | maçonnerie, ouvrage de pierre | n | C1 | /ˈstəʊnwɜːk/ | The stonework of the mosque is beautiful. | Le travail de la pierre de la mosquée est magnifique.
+traitor | traître | n | B2 | /ˈtreɪtə/ | He was called a traitor. | On l'a traité de traître.
+wartime | temps de guerre | n | B2 | /ˈwɔːtaɪm/ | Food was rationed in wartime. | La nourriture était rationnée en temps de guerre.
+imperial | impérial | adj | B2 | /ɪmˈpɪəriəl/ | The imperial palace is now a museum. | Le palais impérial est devenu un musée.
+majesty | majesté | n | C1 | /ˈmædʒəsti/ | The majesty of the mountains took our breath away. | La majesté des montagnes nous a coupé le souffle.
+cannon | canon | n | B2 | /ˈkænən/ | The cannon fired at the ship. | Le canon a tiré sur le navire.
+guild | corporation, guilde | n | C1 | /ɡɪld/ | Craftsmen joined a guild. | Les artisans adhéraient à une corporation.
+baron | baron | n | C1 | /ˈbærən/ | The baron owned the castle. | Le baron possédait le château.
+cowboy | cow-boy | n | B2 | /ˈkaʊbɔɪ/ | The cowboys drove the cattle west. | Les cow-boys menaient le bétail vers l'ouest.
+assassination | assassinat | n | C1 | /əˌsæsɪˈneɪʃn/ | The assassination shocked the nation. | L'assassinat a choqué la nation.
+cavalry | cavalerie | n | C1 | /ˈkævlri/ | The cavalry charged across the plain. | La cavalerie a chargé à travers la plaine.
+duchess | duchesse | n | C1 | /ˈdʌtʃəs/ | The duchess opened the hospital. | La duchesse a inauguré l'hôpital.
+plantation | plantation | n | C1 | /plɑːnˈteɪʃn/ | Slaves worked on the cotton plantations. | Des esclaves travaillaient dans les plantations de coton.
+spear | lance | n | C1 | /spɪə/ | The hunters carried spears. | Les chasseurs portaient des lances.
+trench | tranchée | n | C1 | /trentʃ/ | Soldiers fought in the trenches. | Les soldats combattaient dans les tranchées.
+titan | titan, géant | n | C2 | /ˈtaɪtn/ | He was a titan of industry. | C'était un géant de l'industrie.
+archaeological | archéologique | adj | C1 | /ˌɑːkiəˈlɒdʒɪkl/ | They visited an archaeological site. | Ils ont visité un site archéologique.
+partition | partition, partage | n | C2 | /pɑːˈtɪʃn/ | The partition of India took place in 1947. | La partition de l'Inde a eu lieu en 1947.
+assassin | assassin | n | C1 | /əˈsæsɪn/ | The assassin was never caught. | L'assassin n'a jamais été arrêté.
+dominion | domination, empire | n | C2 | /dəˈmɪniən/ | To God belongs the dominion of the heavens. | À Dieu appartient la royauté des cieux.
+samurai | samouraï | n | C1 | /ˈsæmuraɪ/ | The samurai followed a strict code. | Les samouraïs suivaient un code strict.
+captivity | captivité | n | C1 | /kæpˈtɪvəti/ | The hostages were held in captivity for a year. | Les otages ont été retenus en captivité pendant un an.
+lore | tradition, savoir populaire | n | C2 | /lɔː/ | According to local lore, the well is sacred. | D'après la tradition locale, le puits est sacré.
+countess | comtesse | n | C1 | /ˈkaʊntəs/ | The countess lived in the castle. | La comtesse vivait au château.
+grail | graal | n | C2 | /ɡreɪl/ | A cure is the holy grail of research. | Un remède est le Graal de la recherche.
+coronation | couronnement | n | C1 | /ˌkɒrəˈneɪʃn/ | The coronation took place in the cathedral. | Le couronnement a eu lieu dans la cathédrale.
+marquis | marquis | n | C2 | /ˈmɑːkwɪs/ | The marquis owned vast lands. | Le marquis possédait de vastes terres.
+jubilee | jubilé | n | C2 | /ˈdʒuːbɪliː/ | The queen celebrated her jubilee. | La reine a célébré son jubilé.
+proclamation | proclamation | n | C2 | /ˌprɒkləˈmeɪʃn/ | The king issued a proclamation. | Le roi a publié une proclamation.
+annexation | annexion | n | C2 | /ˌænekˈseɪʃn/ | The annexation was condemned by the UN. | L'annexion a été condamnée par l'ONU.
+post-war | d'après-guerre | adj | C1 | /ˌpəʊst ˈwɔː/ | The post-war years were hard. | Les années d'après-guerre ont été difficiles.
+centenary | centenaire | n | C2 | /senˈtiːnəri/ | The school celebrates its centenary this year. | L'école fête son centenaire cette année.
+baroness | baronne | n | C2 | /ˈbærənəs/ | The baroness sat in the House of Lords. | La baronne siégeait à la Chambre des lords.
+imperialism | impérialisme | n | C2 | /ɪmˈpɪəriəlɪzəm/ | The book criticises Western imperialism. | Le livre critique l'impérialisme occidental.
+centennial | centenaire | n | C2 | /senˈteniəl/ | The town celebrated its centennial. | La ville a fêté son centenaire.
+unification | unification | n | C2 | /ˌjuːnɪfɪˈkeɪʃn/ | The unification of Italy took many years. | L'unification de l'Italie a pris de nombreuses années.
+exodus | exode | n | C1 | /ˈeksədəs/ | There was a mass exodus from the city. | Il y a eu un exode massif hors de la ville.
+restoration | restauration | n | C1 | /ˌrestəˈreɪʃn/ | The restoration of the mosque took years. | La restauration de la mosquée a pris des années.
+archival | d'archives | adj | C2 | /ɑːˈkaɪvl/ | They studied archival documents. | Ils ont étudié des documents d'archives.
+turret | tourelle | n | C2 | /ˈtʌrət/ | The castle has four turrets. | Le château a quatre tourelles.
+buccaneer | boucanier, flibustier | n | C2 | /ˌbʌkəˈnɪə/ | Buccaneers sailed the Caribbean. | Des flibustiers sillonnaient les Caraïbes.
+inquisition | inquisition | n | C2 | /ˌɪŋkwɪˈzɪʃn/ | The Inquisition persecuted Muslims and Jews in Spain. | L'Inquisition a persécuté musulmans et juifs en Espagne.
+highness | altesse | n | C2 | /ˈhaɪnəs/ | His Royal Highness arrived. | Son Altesse Royale est arrivée.
+chateau | château | n | C1 | /ʃæˈtəʊ/ | They visited a chateau on the Loire. | Ils ont visité un château de la Loire.
+lordship | seigneurie | n | C2 | /ˈlɔːdʃɪp/ | His Lordship will see you now. | Sa Seigneurie va vous recevoir.
+barbarian | barbare | n | C1 | /bɑːˈbeəriən/ | The barbarians invaded Rome. | Les barbares ont envahi Rome.
+emancipation | émancipation | n | C2 | /ɪˌmænsɪˈpeɪʃn/ | Islam encouraged the emancipation of slaves. | L'islam a encouragé l'affranchissement des esclaves.
+squire | écuyer, châtelain | n | C2 | /ˈskwaɪə/ | The squire owned most of the village. | Le châtelain possédait la plus grande partie du village.
+gunpowder | poudre à canon | n | C1 | /ˈɡʌnpaʊdə/ | Gunpowder was invented in China. | La poudre à canon a été inventée en Chine.
+regency | régence | n | C2 | /ˈriːdʒənsi/ | The house dates from the Regency period. | La maison date de la Régence.
+horseman | cavalier | n | C1 | /ˈhɔːsmən/ | A horseman rode across the desert. | Un cavalier a traversé le désert.
+to assassinate | assassiner | v | C1 | /əˈsæsɪneɪt/ | The president was assassinated. | Le président a été assassiné.
+gladiator | gladiateur | n | C1 | /ˈɡlædieɪtə/ | Gladiators fought in the arena. | Les gladiateurs combattaient dans l'arène.
+codex | codex, manuscrit | n | C2 | /ˈkəʊdeks/ | The ancient codex is kept in a museum. | L'ancien codex est conservé dans un musée.
+bayonet | baïonnette | n | C2 | /ˈbeɪənət/ | The soldiers fixed their bayonets. | Les soldats ont mis baïonnette au canon.
+extermination | extermination | n | C2 | /ɪkˌstɜːmɪˈneɪʃn/ | The extermination of a people is a crime against humanity. | L'extermination d'un peuple est un crime contre l'humanité.
+armada | armada, flotte | n | C2 | /ɑːˈmɑːdə/ | An armada of ships set sail. | Une flotte de navires a pris la mer.
+crypt | crypte | n | C1 | /krɪpt/ | The king is buried in the crypt. | Le roi est enterré dans la crypte.
+heyday | âge d'or, apogée | n | C1 | /ˈheɪdeɪ/ | In its heyday, Baghdad was a centre of learning. | À son apogée, Bagdad était un centre du savoir.
+chivalry | chevalerie ; galanterie | n | C2 | /ˈʃɪvlri/ | Chivalry is not dead. | La galanterie n'est pas morte.
+scribe | scribe, copiste | n | C2 | /skraɪb/ | Scribes copied the Qur'an by hand. | Les copistes recopiaient le Coran à la main.
+viceroy | vice-roi | n | C2 | /ˈvaɪsrɔɪ/ | The viceroy governed in the king's name. | Le vice-roi gouvernait au nom du roi.
+alchemist | alchimiste | n | C2 | /ˈælkəmɪst/ | Jabir ibn Hayyan was a famous alchemist. | Jabir ibn Hayyan était un célèbre alchimiste.
+battleground | champ de bataille | n | C1 | /ˈbætlɡraʊnd/ | Social media has become a battleground. | Les réseaux sociaux sont devenus un champ de bataille.
+colossus | colosse | n | C2 | /kəˈlɒsəs/ | The empire was a colossus with feet of clay. | L'empire était un colosse aux pieds d'argile.
+centurion | centurion | n | C2 | /senˈtjʊəriən/ | A Roman centurion led a hundred men. | Un centurion romain commandait cent hommes.
+crossbow | arbalète | n | C1 | /ˈkrɒsbəʊ/ | He shot an arrow with his crossbow. | Il a tiré une flèche avec son arbalète.
+emir | émir | n | C1 | /eˈmɪə/ | The emir received the delegation. | L'émir a reçu la délégation.
+atrocity | atrocité | n | C1 | /əˈtrɒsəti/ | The war was marked by atrocities. | La guerre a été marquée par des atrocités.
+servitude | servitude | n | C2 | /ˈsɜːvɪtjuːd/ | They lived in servitude. | Ils vivaient dans la servitude.
+overlord | suzerain, maître | n | C2 | /ˈəʊvəlɔːd/ | The tribes paid tribute to their overlord. | Les tribus payaient tribut à leur suzerain.
+sabre | sabre | n | C2 | /ˈseɪbə/ | The officer drew his sabre. | L'officier a dégainé son sabre.
+jester | bouffon | n | C2 | /ˈdʒestə/ | The king's jester made everyone laugh. | Le bouffon du roi faisait rire tout le monde.
+pomp | faste, pompe | n | C2 | /pɒmp/ | The ceremony was full of pomp. | La cérémonie était pleine de faste.
+trapper | trappeur | n | C2 | /ˈtræpə/ | The trapper lived alone in the forest. | Le trappeur vivait seul dans la forêt.
+aqueduct | aqueduc | n | C1 | /ˈækwɪdʌkt/ | The Romans built aqueducts. | Les Romains ont construit des aqueducs.
+revisionist | révisionniste | adj | C2 | /rɪˈvɪʒənɪst/ | It's a revisionist view of history. | C'est une vision révisionniste de l'histoire.
+vassal | vassal | n | C2 | /ˈvæsl/ | The vassal owed loyalty to his lord. | Le vassal devait fidélité à son seigneur.
+capitulation | capitulation | n | C2 | /kəˌpɪtʃuˈleɪʃn/ | The capitulation of the city. | La capitulation de la ville.
+musket | mousquet | n | C2 | /ˈmʌskɪt/ | Soldiers carried muskets. | Les soldats portaient des mousquets.
+papyrus | papyrus | n | C2 | /pəˈpaɪrəs/ | The Egyptians wrote on papyrus. | Les Égyptiens écrivaient sur du papyrus.
+protectorate | protectorat | n | C2 | /prəˈtektərət/ | Morocco was a French protectorate. | Le Maroc était un protectorat français.
+caveman | homme des cavernes | n | B2 | /ˈkeɪvmæn/ | He eats like a caveman. | Il mange comme un homme des cavernes.
+damsel | demoiselle | n | C2 | /ˈdæmzl/ | The knight saved the damsel in distress. | Le chevalier a sauvé la demoiselle en détresse.
+knighthood | titre de chevalier | n | C2 | /ˈnaɪthʊd/ | He was awarded a knighthood. | Il a été fait chevalier.
+chieftain | chef (de clan) | n | C2 | /ˈtʃiːftən/ | The chieftain led the tribe. | Le chef menait la tribu.
+stagecoach | diligence | n | C2 | /ˈsteɪdʒkəʊtʃ/ | Travellers once crossed the country by stagecoach. | Autrefois, les voyageurs traversaient le pays en diligence.
+enslavement | asservissement, réduction en esclavage | n | C2 | /ɪnˈsleɪvmənt/ | The enslavement of Africans was a crime. | La réduction en esclavage des Africains fut un crime.
+arrowhead | pointe de flèche | n | C2 | /ˈærəʊhed/ | They found an ancient arrowhead. | Ils ont trouvé une pointe de flèche ancienne.
+inquisitor | inquisiteur | n | C2 | /ɪnˈkwɪzɪtə/ | The inquisitors persecuted Muslims and Jews in Spain. | Les inquisiteurs ont persécuté musulmans et juifs en Espagne.
+phalanx | phalange | n | C2 | /ˈfælæŋks/ | A phalanx of police blocked the road. | Une rangée de policiers bloquait la route.
+watchtower | tour de guet | n | C1 | /ˈwɒtʃtaʊə/ | Soldiers stood in the watchtower. | Des soldats se tenaient dans la tour de guet.
+fortification | fortification | n | C2 | /ˌfɔːtɪfɪˈkeɪʃn/ | The city walls were part of its fortifications. | Les remparts faisaient partie de ses fortifications.
+swordsman | escrimeur, bretteur | n | C2 | /ˈsɔːdzmən/ | Khalid ibn al-Walid was a great swordsman. | Khalid ibn al-Walid était un grand bretteur.
+concubine | concubine | n | C2 | /ˈkɒŋkjubaɪn/ | The sultan had many concubines. | Le sultan avait de nombreuses concubines.
+eunuch | eunuque | n | C2 | /ˈjuːnək/ | Eunuchs served in the Ottoman palace. | Des eunuques servaient au palais ottoman.
+monolith | monolithe | n | C2 | /ˈmɒnəlɪθ/ | A stone monolith stands in the field. | Un monolithe de pierre se dresse dans le champ.
+radiocarbon dating | datation au carbone 14 | n | C2 | /ˌreɪdiəʊˈkɑːbən ˌdeɪtɪŋ/ | Radiocarbon dating confirmed the age of the manuscript. | La datation au carbone 14 a confirmé l'âge du manuscrit.
+abdication | abdication | n | C2 | /ˌæbdɪˈkeɪʃn/ | The king's abdication surprised everyone. | L'abdication du roi a surpris tout le monde.
+genocidal | génocidaire | adj | C2 | /ˌdʒenəˈsaɪdl/ | It was a genocidal regime. | C'était un régime génocidaire.
+politburo | politburo | n | C2 | /ˈpɒlɪtbjʊərəʊ/ | The politburo made all decisions. | Le politburo prenait toutes les décisions.
+pretender | prétendant (au trône) | n | C2 | /prɪˈtendə/ | The pretender claimed the throne. | Le prétendant a revendiqué le trône.
+royalist | royaliste | n | C2 | /ˈrɔɪəlɪst/ | The royalists supported the king. | Les royalistes soutenaient le roi.
+workhouse | hospice (pour indigents) | n | C2 | /ˈwɜːkhaʊs/ | The poor were sent to the workhouse. | Les pauvres étaient envoyés à l'hospice.
+minstrel | ménestrel | n | C2 | /ˈmɪnstrəl/ | Minstrels sang in the courts of kings. | Les ménestrels chantaient à la cour des rois.
+sarcophagus | sarcophage | n | C2 | /sɑːˈkɒfəɡəs/ | The pharaoh's sarcophagus was made of stone. | Le sarcophage du pharaon était en pierre.
+liberator | libérateur | n | C2 | /ˈlɪbəreɪtə/ | Salah al-Din was hailed as a liberator. | Saladin a été salué comme un libérateur.
+dynastic | dynastique | adj | C2 | /dɪˈnæstɪk/ | There were dynastic struggles. | Il y a eu des luttes dynastiques.
+hunter-gatherer | chasseur-cueilleur | n | C1 | /ˌhʌntə ˈɡæðərə/ | Early humans were hunter-gatherers. | Les premiers humains étaient des chasseurs-cueilleurs.
+barbarism | barbarie | n | C2 | /ˈbɑːbərɪzəm/ | The attack was an act of barbarism. | L'attaque était un acte de barbarie.
+kingship | royauté | n | C2 | /ˈkɪŋʃɪp/ | Ibn Khaldun wrote about kingship. | Ibn Khaldoun a écrit sur la royauté.
 `,
 );

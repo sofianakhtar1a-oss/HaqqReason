@@ -217,5 +217,19 @@ hen night | enterrement de vie de jeune fille | n | B2 | /ˈhen naɪt/ | They we
 confetti | confettis | n | A2 | /kənˈfeti/ | Guests threw confetti at the couple. | Les invités ont lancé des confettis sur le couple.
 first dance | première danse | n | A2 | /ˌfɜːst ˈdɑːns/ | The first dance was very moving. | La première danse a été très émouvante.
 to give away the bride | conduire la mariée à l'autel | expr | C1 | /ɡɪv əˌweɪ ðə ˈbraɪd/ | Her father will give away the bride. | Son père conduira la mariée à l'autel.
+to woo | courtiser ; séduire | v | C1 | /wuː/ | The party is trying to woo young voters. | Le parti tente de séduire les jeunes électeurs.
+platonic | platonique | adj | C2 | /pləˈtɒnɪk/ | Their friendship is platonic. | Leur amitié est platonique.
+chastity | chasteté | n | C2 | /ˈtʃæstəti/ | Islam values chastity before marriage. | L'islam valorise la chasteté avant le mariage.
+confidant | confident | n | C1 | /ˈkɒnfɪdænt/ | He was the king's closest confidant. | C'était le plus proche confident du roi.
+promiscuous | aux mœurs légères | adj | C2 | /prəˈmɪskjuəs/ | The film shows a promiscuous lifestyle. | Le film montre un mode de vie dissolu.
+matrimony | mariage | n | C2 | /ˈmætrɪməni/ | They were joined in holy matrimony. | Ils ont été unis par les liens sacrés du mariage.
+celibacy | célibat | n | C2 | /ˈselɪbəsi/ | Islam does not encourage celibacy. | L'islam n'encourage pas le célibat.
+infatuation | engouement, toquade | n | C2 | /ɪnˌfætʃuˈeɪʃn/ | It was just a teenage infatuation. | Ce n'était qu'une toquade d'adolescent.
+matrimonial | matrimonial, conjugal | adj | C2 | /ˌmætrɪˈməʊniəl/ | They live in the matrimonial home. | Ils vivent au domicile conjugal.
+out of wedlock | hors mariage | expr | C2 | /ˌaʊt əv ˈwedlɒk/ | The child was born out of wedlock. | L'enfant est né hors mariage.
+sensuality | sensualité | n | C2 | /ˌsenʃuˈæləti/ | The poem is full of sensuality. | Le poème est plein de sensualité.
+chaste | chaste, pudique | adj | C2 | /tʃeɪst/ | She gave him a chaste kiss. | Elle lui a donné un baiser chaste.
+flirtatious | aguicheur, charmeur | adj | C2 | /flɜːˈteɪʃəs/ | She disliked his flirtatious manner. | Elle n'aimait pas ses manières aguicheuses.
+amorous | amoureux | adj | C2 | /ˈæmərəs/ | He wrote amorous letters. | Il écrivait des lettres d'amour.
 `,
 );

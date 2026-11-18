@@ -88,7 +88,7 @@ const libre = composerSeance({ elements: els, cartes: new Map([...cartes].map(([
 ok("révision libre : on peut s'entraîner même sans échéance", libre.length > 0);
 
 // ---------------------------------------------------------------- contenu des thèmes
-ok("48 thèmes, chacun d'au moins 40 mots", THEMES.length === 48 && THEMES.every((t) => t.entrees.length >= 40), THEMES.map((t) => `${t.id}:${t.entrees.length}`));
+ok("52 thèmes, chacun d'au moins 40 mots", THEMES.length === 52 && THEMES.every((t) => t.entrees.length >= 40), THEMES.map((t) => `${t.id}:${t.entrees.length}`));
 const ids = TOUTES_LES_ENTREES.map((x) => x.id);
 ok("aucun identifiant en double", new Set(ids).size === ids.length, ids.filter((x, i) => ids.indexOf(x) !== i));
 ok("tous les champs remplis, prononciation entre barres obliques", TOUTES_LES_ENTREES.every((x) => x.en && x.fr && x.exEn && x.exFr && /^\/.+\/$/.test(x.api)));

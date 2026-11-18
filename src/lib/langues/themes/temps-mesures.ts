@@ -266,5 +266,71 @@ up to | jusqu'à | prep | B1 | /ˈʌp tuː/ | The room holds up to fifty people.
 more than | plus de | expr | A1 | /ˈmɔː ðæn/ | More than a thousand people came. | Plus de mille personnes sont venues.
 less than | moins de | expr | A1 | /ˈles ðæn/ | It costs less than ten euros. | Ça coûte moins de dix euros.
 fewer than | moins de (dénombrable) | expr | B1 | /ˈfjuːə ðæn/ | Fewer than twenty students passed. | Moins de vingt élèves ont réussi.
+fourteen | quatorze | n | A1 | /ˌfɔːˈtiːn/ | My son is fourteen. | Mon fils a quatorze ans.
+sixteen | seize | n | A1 | /ˌsɪksˈtiːn/ | There are sixteen students in the class. | Il y a seize élèves dans la classe.
+seventeen | dix-sept | n | A1 | /ˌsevnˈtiːn/ | She left school at seventeen. | Elle a quitté l'école à dix-sept ans.
+eighteen | dix-huit | n | A1 | /ˌeɪˈtiːn/ | You can vote at eighteen. | On peut voter à dix-huit ans.
+nineteen | dix-neuf | n | A1 | /ˌnaɪnˈtiːn/ | The book has nineteen chapters. | Le livre compte dix-neuf chapitres.
+fourth | quatrième | adj | A1 | /fɔːθ/ | We live on the fourth floor. | Nous habitons au quatrième étage.
+fifth | cinquième | adj | A1 | /fɪfθ/ | It's his fifth birthday. | C'est son cinquième anniversaire.
+sixth | sixième | adj | A1 | /sɪksθ/ | Friday is the sixth day of the week here. | Ici, le vendredi est le sixième jour de la semaine.
+seventh | septième | adj | A1 | /ˈsevnθ/ | She finished seventh in the race. | Elle a fini septième de la course.
+eighth | huitième | adj | A1 | /eɪtθ/ | It's the eighth time I've told you! | C'est la huitième fois que je te le dis !
+ninth | neuvième | adj | A1 | /naɪnθ/ | Ramadan is the ninth month of the Islamic calendar. | Le ramadan est le neuvième mois du calendrier islamique.
+eleventh | onzième | adj | A2 | /ɪˈlevnθ/ | He scored in the eleventh minute. | Il a marqué à la onzième minute.
+twelfth | douzième | adj | A2 | /twelfθ/ | December is the twelfth month. | Décembre est le douzième mois.
+twentieth | vingtième | adj | A2 | /ˈtwentiəθ/ | The twentieth century saw two world wars. | Le vingtième siècle a connu deux guerres mondiales.
+thirtieth | trentième | adj | A2 | /ˈθɜːtiəθ/ | Today is the thirtieth of June. | Nous sommes le trente juin.
+thousandth | millième | adj | B1 | /ˈθaʊzndθ/ | He was the thousandth visitor. | C'était le millième visiteur.
+armful | brassée | n | C1 | /ˈɑːmfʊl/ | She carried an armful of flowers. | Elle portait une brassée de fleurs.
+centigrade | centigrade, Celsius | n | B2 | /ˈsentɪɡreɪd/ | Water boils at a hundred degrees centigrade. | L'eau bout à cent degrés Celsius.
+cone | cône | n | B2 | /kəʊn/ | The ice cream was served in a cone. | La glace était servie dans un cornet.
+daytime | journée, jour | n | B2 | /ˈdeɪtaɪm/ | The shop is open in the daytime only. | Le magasin n'est ouvert qu'en journée.
+lifetime | vie, existence | n | B2 | /ˈlaɪftaɪm/ | It's the chance of a lifetime. | C'est la chance de ta vie.
+metric | métrique | adj | B2 | /ˈmetrɪk/ | France uses the metric system. | La France utilise le système métrique.
+nought | zéro | n | B2 | /nɔːt/ | Add a nought to the end of the number. | Ajoute un zéro à la fin du nombre.
+pentagon | pentagone | n | B2 | /ˈpentəɡən/ | A pentagon has five sides. | Un pentagone a cinq côtés.
+thickness | épaisseur | n | B2 | /ˈθɪknəs/ | Measure the thickness of the wall. | Mesure l'épaisseur du mur.
+cylinder | cylindre | n | B2 | /ˈsɪlɪndə/ | A gas cylinder exploded. | Une bouteille de gaz a explosé.
+radius | rayon | n | C1 | /ˈreɪdiəs/ | There are three shops within a radius of a mile. | Il y a trois magasins dans un rayon d'un mile.
+trillion | billion (mille milliards) | n | B2 | /ˈtrɪljən/ | The debt is over a trillion dollars. | La dette dépasse mille milliards de dollars.
+digit | chiffre | n | B2 | /ˈdɪdʒɪt/ | Enter the four-digit code. | Saisis le code à quatre chiffres.
+nineteenth | dix-neuvième | adj | B1 | /ˌnaɪnˈtiːnθ/ | He was born in the nineteenth century. | Il est né au dix-neuvième siècle.
+cubic | cube (mesure), cubique | adj | B2 | /ˈkjuːbɪk/ | The tank holds two cubic metres. | La cuve contient deux mètres cubes.
+countdown | compte à rebours | n | B2 | /ˈkaʊntdaʊn/ | The countdown to Ramadan has begun. | Le compte à rebours avant le ramadan a commencé.
+geometric | géométrique | adj | C1 | /ˌdʒiːəˈmetrɪk/ | Islamic art uses geometric patterns. | L'art islamique utilise des motifs géométriques.
+eighteenth | dix-huitième | adj | B1 | /ˌeɪˈtiːnθ/ | The house dates from the eighteenth century. | La maison date du dix-huitième siècle.
+breadth | largeur ; étendue | n | C1 | /bredθ/ | He has great breadth of knowledge. | Il a une grande étendue de connaissances.
+sixteenth | seizième | adj | B1 | /ˌsɪksˈtiːnθ/ | The castle dates from the sixteenth century. | Le château date du seizième siècle.
+lifespan | durée de vie | n | C1 | /ˈlaɪfspæn/ | The lifespan of a cat is about fifteen years. | La durée de vie d'un chat est d'environ quinze ans.
+thirteenth | treizième | adj | B1 | /ˌθɜːˈtiːnθ/ | It happened in the thirteenth century. | C'est arrivé au treizième siècle.
+acreage | superficie (en acres) | n | C2 | /ˈeɪkərɪdʒ/ | The farm's acreage has doubled. | La superficie de la ferme a doublé.
+fourteenth | quatorzième | adj | B1 | /ˌfɔːˈtiːnθ/ | It was built in the fourteenth century. | Il a été construit au quatorzième siècle.
+fifteenth | quinzième | adj | B1 | /ˌfɪfˈtiːnθ/ | Today is the fifteenth of May. | Nous sommes le quinze mai.
+seventeenth | dix-septième | adj | B1 | /ˌsevnˈtiːnθ/ | The mosque dates from the seventeenth century. | La mosquée date du dix-septième siècle.
+cylindrical | cylindrique | adj | C1 | /səˈlɪndrɪkl/ | The tower is cylindrical. | La tour est cylindrique.
+perpendicular | perpendiculaire | adj | C2 | /ˌpɜːpənˈdɪkjələ/ | Draw a line perpendicular to the base. | Trace une ligne perpendiculaire à la base.
+quadrant | quadrant | n | C2 | /ˈkwɒdrənt/ | Divide the circle into four quadrants. | Divise le cercle en quatre quadrants.
+symmetrical | symétrique | adj | C1 | /sɪˈmetrɪkl/ | The building is perfectly symmetrical. | Le bâtiment est parfaitement symétrique.
+night-time | nuit | n | B2 | /ˈnaɪt taɪm/ | The streets are quiet at night-time. | Les rues sont calmes la nuit.
+convex | convexe | adj | C2 | /ˈkɒnveks/ | It's a convex mirror. | C'est un miroir convexe.
+multiplication | multiplication | n | B2 | /ˌmʌltɪplɪˈkeɪʃn/ | The children are learning multiplication. | Les enfants apprennent la multiplication.
+summertime | l'été, la belle saison | n | B2 | /ˈsʌmətaɪm/ | The town is busy in summertime. | La ville est animée en été.
+sizeable | considérable | adj | C1 | /ˈsaɪzəbl/ | They won a sizeable sum. | Ils ont gagné une somme considérable.
+curvature | courbure | n | C2 | /ˈkɜːvətʃə/ | Ships disappear because of the Earth's curvature. | Les navires disparaissent à cause de la courbure de la Terre.
+elliptical | elliptique | adj | C2 | /ɪˈlɪptɪkl/ | The Earth's orbit is elliptical. | L'orbite de la Terre est elliptique.
+symmetric | symétrique | adj | C2 | /sɪˈmetrɪk/ | The pattern is symmetric. | Le motif est symétrique.
+millennia | millénaires | n | C2 | /mɪˈleniə/ | The city has existed for millennia. | La ville existe depuis des millénaires.
+circumference | circonférence | n | C2 | /səˈkʌmfərəns/ | Measure the circumference of the circle. | Mesure la circonférence du cercle.
+nightfall | tombée de la nuit | n | C1 | /ˈnaɪtfɔːl/ | We must arrive before nightfall. | Nous devons arriver avant la tombée de la nuit.
+almanac | almanach | n | C2 | /ˈɔːlmənæk/ | The almanac gives prayer times for the year. | L'almanach donne les horaires de prière de l'année.
+daybreak | point du jour | n | C1 | /ˈdeɪbreɪk/ | We set off at daybreak. | Nous sommes partis au point du jour.
+juncture | conjoncture, moment | n | C2 | /ˈdʒʌŋktʃə/ | At this juncture, we must decide. | À ce stade, nous devons décider.
+sundown | coucher du soleil | n | C1 | /ˈsʌndaʊn/ | Muslims break their fast at sundown. | Les musulmans rompent le jeûne au coucher du soleil.
+midweek | milieu de semaine | n | B2 | /ˌmɪdˈwiːk/ | Flights are cheaper midweek. | Les vols sont moins chers en milieu de semaine.
+millionth | millionième | adj | C1 | /ˈmɪljənθ/ | It's the millionth visitor this year. | C'est le millionième visiteur cette année.
+bicentenary | bicentenaire | n | C2 | /ˌbaɪsenˈtiːnəri/ | The town celebrates its bicentenary. | La ville fête son bicentenaire.
+furlong | furlong (201 mètres) | n | C2 | /ˈfɜːlɒŋ/ | The horse led by a furlong. | Le cheval menait d'un furlong.
+bushel | boisseau | n | C2 | /ˈbʊʃl/ | They sold wheat by the bushel. | Ils vendaient le blé au boisseau.
 `,
 );

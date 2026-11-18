@@ -1,4 +1,4 @@
-/* Les 48 thèmes de vocabulaire du Truchement (anglais → français), dans l'ordre d'affichage. */
+/* Les 52 thèmes de vocabulaire du Truchement (anglais → français), dans l'ordre d'affichage. */
 import { ACHATS } from "./achats";
 import { ANIMAUX } from "./animaux";
 import { ARTS } from "./arts";
@@ -39,6 +39,7 @@ import { ECOLE, NATURE, VILLE } from "./ecole-ville-nature";
 import { FAMILLE, TRAVAIL, VOYAGE } from "./famille-voyage-travail";
 import { EMOTIONS, MAISON, METEO } from "./maison-emotions-meteo";
 import { NOURRITURE, QUOTIDIEN, SANTE } from "./quotidien-nourriture-sante";
+import { ADVERBES, MOT_JUSTE, MOTS_OUTILS, NOMS } from "./essentiels";
 
 export const THEMES = [
   // Soi et les autres
@@ -91,12 +92,16 @@ export const THEMES = [
   DROIT,
   SECURITE,
   // La langue elle-même
+  MOTS_OUTILS,
+  NOMS,
   VERBES,
   ADJECTIFS,
+  ADVERBES,
   LIAISON,
   VERBES_PARTICULE,
   EXPRESSIONS,
   SOUTENU,
+  MOT_JUSTE,
 ];
 
 export const TOUTES_LES_ENTREES = THEMES.flatMap((t) => t.entrees);

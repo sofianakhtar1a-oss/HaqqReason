@@ -237,5 +237,20 @@ keeping up with the Joneses | vouloir faire comme les voisins | expr | C2 | /ˌk
 conspicuous consumption | consommation ostentatoire | n | C2 | /kənˌspɪkjuəs kənˈsʌmpʃn/ | Luxury cars are conspicuous consumption. | Les voitures de luxe relèvent de la consommation ostentatoire.
 shrinkflation | réduflation | n | C2 | /ˈʃrɪŋkfleɪʃn/ | Shrinkflation means smaller packs for the same price. | La réduflation, ce sont des paquets plus petits au même prix.
 stagflation | stagflation | n | C2 | /stæɡˈfleɪʃn/ | Stagflation combines inflation and recession. | La stagflation combine inflation et récession.
+cent | centime | n | A2 | /sent/ | It costs ninety-nine cents. | Ça coûte quatre-vingt-dix-neuf centimes.
+pence | pence (centimes britanniques) | n | A2 | /pens/ | A stamp costs seventy pence. | Un timbre coûte soixante-dix pence.
+expense | dépense, frais | n | B1 | /ɪkˈspens/ | Travel expenses are paid by the company. | Les frais de déplacement sont pris en charge par l'entreprise.
+penniless | sans le sou | adj | B2 | /ˈpeniləs/ | He arrived in London penniless. | Il est arrivé à Londres sans le sou.
+penny | penny, centime | n | B1 | /ˈpeni/ | It didn't cost a penny. | Ça n'a pas coûté un centime.
+teller | guichetier (banque) | n | B2 | /ˈtelə/ | The bank teller counted the money. | Le guichetier a compté l'argent.
+debit | débit | n | B2 | /ˈdebɪt/ | Pay by direct debit. | Payez par prélèvement automatique.
+withdrawal | retrait ; repli | n | B2 | /wɪðˈdrɔːəl/ | I made a cash withdrawal. | J'ai fait un retrait d'espèces.
+foreclosure | saisie (immobilière) | n | C2 | /fɔːˈkləʊʒə/ | The family lost their home to foreclosure. | La famille a perdu sa maison par saisie.
+prepaid | prépayé | adj | C1 | /ˌpriːˈpeɪd/ | I have a prepaid card. | J'ai une carte prépayée.
+saver | épargnant | n | C1 | /ˈseɪvə/ | Savers get little interest. | Les épargnants touchent peu d'intérêts.
+impecunious | impécunieux, désargenté | adj | C2 | /ˌɪmpɪˈkjuːniəs/ | He was an impecunious student. | C'était un étudiant désargenté.
+penurious | indigent, misérable | adj | C2 | /pəˈnjʊəriəs/ | They lived in penurious conditions. | Ils vivaient dans la misère.
+arrears | arriérés | n | C2 | /əˈrɪəz/ | He is three months in arrears with his rent. | Il a trois mois de retard de loyer.
+big spender | gros dépensier | n | C1 | /ˌbɪɡ ˈspendə/ | He's a big spender. | C'est un gros dépensier.
 `,
 );

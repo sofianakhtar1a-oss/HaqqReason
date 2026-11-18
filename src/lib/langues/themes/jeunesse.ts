@@ -212,5 +212,20 @@ boomer | baby-boomer | n | B2 | /ˈbuːmər/ | My grandparents are boomers. | Me
 to sneak out | faire le mur | v | B2 | /sniːk ˈaʊt/ | She sneaked out to see her friends. | Elle a fait le mur pour voir ses amis.
 teenage years | adolescence | n | B1 | /ˈtiːneɪdʒ jɪəz/ | My teenage years were difficult. | Mon adolescence a été difficile.
 pocket-sized | de poche | adj | B2 | /ˈpɒkɪt saɪzd/ | It's a pocket-sized speaker. | C'est une enceinte de poche.
+runaway | fugueur | n | B2 | /ˈrʌnəweɪ/ | The police found the young runaway. | La police a retrouvé le jeune fugueur.
+sticker | autocollant | n | B1 | /ˈstɪkə/ | My son collects football stickers. | Mon fils collectionne les autocollants de football.
+playmate | camarade de jeu | n | B2 | /ˈpleɪmeɪt/ | He was my childhood playmate. | C'était mon camarade de jeu d'enfance.
+schoolgirl | écolière, collégienne | n | B2 | /ˈskuːlɡɜːl/ | A group of schoolgirls visited the library. | Un groupe d'écolières a visité la bibliothèque.
+developmental | du développement | adj | C1 | /dɪˌveləpˈmentl/ | Play is important for developmental growth. | Le jeu est important pour le développement de l'enfant.
+brat | sale gosse | n | C1 | /bræt/ | He's a spoilt brat. | C'est un enfant gâté.
+tantrum | crise de colère, caprice | n | C1 | /ˈtæntrəm/ | The child threw a tantrum in the shop. | L'enfant a fait un caprice dans le magasin.
+precocious | précoce | adj | C2 | /prɪˈkəʊʃəs/ | She was a precocious child. | C'était une enfant précoce.
+daycare | crèche, garderie | n | B2 | /ˈdeɪkeə/ | The baby goes to daycare. | Le bébé va à la crèche.
+schoolboy | écolier, collégien | n | B2 | /ˈskuːlbɔɪ/ | He was a shy schoolboy. | C'était un écolier timide.
+boyhood | enfance (d'un garçon) | n | C1 | /ˈbɔɪhʊd/ | He spent his boyhood in Algeria. | Il a passé son enfance en Algérie.
+stroller | poussette | n | B2 | /ˈstrəʊlə/ | She pushes the baby in a stroller. | Elle pousse le bébé dans une poussette.
+rascal | coquin, garnement | n | C1 | /ˈrɑːskl/ | Come here, you little rascal! | Viens ici, petit coquin !
+tomboy | garçon manqué | n | C1 | /ˈtɒmbɔɪ/ | She was a tomboy as a child. | Enfant, c'était un garçon manqué.
+tricycle | tricycle | n | B1 | /ˈtraɪsɪkl/ | The toddler rides a tricycle. | Le bambin fait du tricycle.
 `,
 );

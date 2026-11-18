@@ -227,5 +227,162 @@ legal action | poursuites judiciaires | n | B2 | /ˌliːɡl ˈækʃn/ | They thr
 out of court | à l'amiable | expr | C1 | /ˌaʊt əv ˈkɔːt/ | They settled out of court. | Ils ont réglé l'affaire à l'amiable.
 mediation | médiation | n | C1 | /ˌmiːdiˈeɪʃn/ | The dispute was solved through mediation. | Le litige a été réglé par la médiation.
 arbitrator | arbitre (juridique) | n | C2 | /ˈɑːbɪtreɪtər/ | An arbitrator settled the dispute. | Un arbitre a tranché le différend.
+killing | meurtre, tuerie | n | B1 | /ˈkɪlɪŋ/ | The killing shocked the town. | Le meurtre a choqué la ville.
+murderer | meurtrier, assassin | n | B1 | /ˈmɜːdərə/ | The murderer was sentenced to life. | Le meurtrier a été condamné à perpétuité.
+prohibition | interdiction | n | B2 | /ˌprəʊɪˈbɪʃn/ | There is a prohibition on smoking in public places. | Il est interdit de fumer dans les lieux publics.
+allegation | allégation, accusation | n | C1 | /ˌæləˈɡeɪʃn/ | He denied all the allegations. | Il a nié toutes les accusations.
+to entitle | donner droit à | v | B2 | /ɪnˈtaɪtl/ | This ticket entitles you to a free drink. | Ce billet vous donne droit à une boisson gratuite.
+equity | équité ; capitaux propres | n | C1 | /ˈekwəti/ | Justice requires equity. | La justice exige l'équité.
+to imprison | emprisonner | v | B2 | /ɪmˈprɪzn/ | He was imprisoned for ten years. | Il a été emprisonné pendant dix ans.
+infringement | infraction, violation | n | C1 | /ɪnˈfrɪndʒmənt/ | It's an infringement of copyright. | C'est une violation du droit d'auteur.
+to penalise | pénaliser | v | C1 | /ˈpiːnəlaɪz/ | Late payments are penalised. | Les retards de paiement sont pénalisés.
+piracy | piratage ; piraterie | n | B2 | /ˈpaɪrəsi/ | Software piracy is illegal. | Le piratage de logiciels est illégal.
+to shoplift | voler à l'étalage | v | B2 | /ˈʃɒplɪft/ | He was caught shoplifting. | Il a été pris en train de voler à l'étalage.
+unauthorised | non autorisé | adj | B2 | /ʌnˈɔːθəraɪzd/ | Unauthorised access is forbidden. | Tout accès non autorisé est interdit.
+violation | violation | n | B2 | /ˌvaɪəˈleɪʃn/ | It's a violation of human rights. | C'est une violation des droits de l'homme.
+judicial | judiciaire | adj | C1 | /dʒuˈdɪʃl/ | The judicial system must be independent. | Le système judiciaire doit être indépendant.
+litigation | litige, procès | n | C2 | /ˌlɪtɪˈɡeɪʃn/ | The case went to litigation. | L'affaire a été portée en justice.
+sworn | assermenté ; juré | adj | C1 | /swɔːn/ | He made a sworn statement. | Il a fait une déclaration sous serment.
+treason | trahison | n | C1 | /ˈtriːzn/ | He was accused of treason. | Il a été accusé de haute trahison.
+mafia | mafia | n | B2 | /ˈmæfiə/ | The mafia controlled the port. | La mafia contrôlait le port.
+homicide | homicide | n | C1 | /ˈhɒmɪsaɪd/ | He was charged with homicide. | Il a été inculpé d'homicide.
+exempt | exempté, exonéré | adj | C1 | /ɪɡˈzempt/ | Children are exempt from the fee. | Les enfants sont exonérés des frais.
+registry | registre ; bureau d'état civil | n | C1 | /ˈredʒɪstri/ | They married at the registry office. | Ils se sont mariés à la mairie.
+statutory | légal, prévu par la loi | adj | C2 | /ˈstætʃətri/ | Workers have a statutory right to holidays. | Les salariés ont légalement droit à des congés.
+null and void | nul et non avenu | expr | C2 | /ˌnʌl ən ˈvɔɪd/ | The contract was declared null and void. | Le contrat a été déclaré nul et non avenu.
+pact | pacte | n | C1 | /pækt/ | They signed a non-aggression pact. | Ils ont signé un pacte de non-agression.
+misconduct | faute professionnelle, inconduite | n | C2 | /ˌmɪsˈkɒndʌkt/ | He was dismissed for gross misconduct. | Il a été licencié pour faute grave.
+exemption | exonération, dispense | n | C1 | /ɪɡˈzempʃn/ | Students get a tax exemption. | Les étudiants bénéficient d'une exonération fiscale.
+unconstitutional | anticonstitutionnel | adj | C2 | /ˌʌnˌkɒnstɪˈtjuːʃənl/ | The court declared the law unconstitutional. | La cour a déclaré la loi anticonstitutionnelle.
+amnesty | amnistie | n | C1 | /ˈæmnəsti/ | The government declared an amnesty. | Le gouvernement a décrété une amnistie.
+fraudulent | frauduleux | adj | C1 | /ˈfrɔːdjələnt/ | He made fraudulent claims. | Il a fait de fausses déclarations.
+ordinance | arrêté, ordonnance | n | C2 | /ˈɔːdɪnəns/ | A city ordinance bans noise after ten. | Un arrêté municipal interdit le bruit après dix heures.
+pursuant to | conformément à | expr | C2 | /pəˈsjuːənt tə/ | Pursuant to the contract, payment is due now. | Conformément au contrat, le paiement est dû maintenant.
+to amend | amender, modifier | v | C1 | /əˈmend/ | Parliament amended the law. | Le Parlement a amendé la loi.
+entitlement | droit, prérogative | n | C2 | /ɪnˈtaɪtlmənt/ | Holiday entitlement is five weeks. | Le droit aux congés est de cinq semaines.
+obstruction | obstruction | n | C2 | /əbˈstrʌkʃn/ | He was charged with obstruction of justice. | Il a été inculpé d'entrave à la justice.
+inmate | détenu | n | C1 | /ˈɪnmeɪt/ | The inmates protested about the food. | Les détenus ont protesté contre la nourriture.
+waiver | renonciation, dérogation | n | C2 | /ˈweɪvə/ | Sign the waiver before the activity. | Signe la décharge avant l'activité.
+syndicate | syndicat (criminel), consortium | n | C2 | /ˈsɪndɪkət/ | Police broke up a crime syndicate. | La police a démantelé un réseau criminel.
+penal | pénal | adj | C1 | /ˈpiːnl/ | The penal code was reformed. | Le code pénal a été réformé.
+confidentiality | confidentialité | n | C1 | /ˌkɒnfɪˌdenʃiˈæləti/ | Doctors respect patient confidentiality. | Les médecins respectent le secret médical.
+collusion | collusion, connivence | n | C2 | /kəˈluːʒn/ | There was collusion between the two firms. | Il y avait une collusion entre les deux entreprises.
+correctional | pénitentiaire | adj | C2 | /kəˈrekʃənl/ | He works in a correctional facility. | Il travaille dans un établissement pénitentiaire.
+evasion | évasion, fraude | n | C2 | /ɪˈveɪʒn/ | He was accused of tax evasion. | Il a été accusé de fraude fiscale.
+appropriation | appropriation ; affectation | n | C2 | /əˌprəʊpriˈeɪʃn/ | It was an appropriation of public funds. | C'était un détournement de fonds publics.
+registrar | officier d'état civil ; greffier | n | C2 | /ˌredʒɪˈstrɑː/ | The registrar recorded the birth. | L'officier d'état civil a enregistré la naissance.
+incarceration | incarcération | n | C2 | /ɪnˌkɑːsəˈreɪʃn/ | He faced ten years of incarceration. | Il risquait dix ans d'incarcération.
+forensic | médico-légal | adj | C1 | /fəˈrensɪk/ | The forensic evidence was clear. | Les preuves médico-légales étaient claires.
+to implicate | impliquer, mettre en cause | v | C1 | /ˈɪmplɪkeɪt/ | The evidence implicates the director. | Les preuves mettent en cause le directeur.
+to allege | alléguer, prétendre | v | C1 | /əˈledʒ/ | It is alleged that he stole the money. | On prétend qu'il a volé l'argent.
+compliance | conformité, respect | n | C1 | /kəmˈplaɪəns/ | Compliance with the rules is required. | Le respect des règles est obligatoire.
+to bequeath | léguer | v | C2 | /bɪˈkwiːð/ | He bequeathed his books to the mosque. | Il a légué ses livres à la mosquée.
+to apprehend | appréhender, arrêter | v | C2 | /ˌæprɪˈhend/ | Police apprehended the suspect. | La police a appréhendé le suspect.
+stipulation | stipulation, condition | n | C2 | /ˌstɪpjuˈleɪʃn/ | There's a stipulation in the contract. | Le contrat comporte une clause.
+forfeiture | confiscation, déchéance | n | C2 | /ˈfɔːfɪtʃə/ | The crime led to forfeiture of his property. | Le crime a entraîné la confiscation de ses biens.
+contractual | contractuel | adj | C2 | /kənˈtræktʃuəl/ | It's a contractual obligation. | C'est une obligation contractuelle.
+informant | informateur | n | C2 | /ɪnˈfɔːmənt/ | The police used an informant. | La police s'est servie d'un informateur.
+beneficiary | bénéficiaire | n | C2 | /ˌbenɪˈfɪʃəri/ | She is the beneficiary of the will. | Elle est la bénéficiaire du testament.
+procedural | procédural | adj | C2 | /prəˈsiːdʒərəl/ | It was a procedural error. | C'était un vice de procédure.
+to interrogate | interroger | v | C2 | /ɪnˈterəɡeɪt/ | The police interrogated the suspect. | La police a interrogé le suspect.
+interrogation | interrogatoire | n | C2 | /ɪnˌterəˈɡeɪʃn/ | The interrogation lasted six hours. | L'interrogatoire a duré six heures.
+to proscribe | proscrire, interdire | v | C2 | /prəˈskraɪb/ | The law proscribes the sale of alcohol. | La loi interdit la vente d'alcool.
+proscription | proscription | n | C2 | /prəˈskrɪpʃn/ | There is a proscription on gambling. | Les jeux d'argent sont proscrits.
+to annex | annexer | v | C2 | /əˈneks/ | The country annexed the territory. | Le pays a annexé le territoire.
+counsel | conseil ; avocat | n | C2 | /ˈkaʊnsl/ | Seek wise counsel before deciding. | Demande un conseil avisé avant de décider.
+punitive | punitif | adj | C2 | /ˈpjuːnətɪv/ | They took punitive measures. | Ils ont pris des mesures punitives.
+appellate | d'appel | adj | C2 | /əˈpelət/ | The case went to the appellate court. | L'affaire est allée en cour d'appel.
+visitation | droit de visite ; visite | n | C2 | /ˌvɪzɪˈteɪʃn/ | The father has visitation rights. | Le père a un droit de visite.
+wrongful | injustifié, abusif | adj | C2 | /ˈrɒŋfl/ | He sued for wrongful dismissal. | Il a porté plainte pour licenciement abusif.
+eyewitness | témoin oculaire | n | C1 | /ˈaɪwɪtnəs/ | An eyewitness described the robber. | Un témoin oculaire a décrit le voleur.
+perpetrator | auteur (d'un crime) | n | C2 | /ˈpɜːpətreɪtə/ | The perpetrators were never caught. | Les auteurs n'ont jamais été arrêtés.
+dossier | dossier | n | C2 | /ˈdɒsieɪ/ | The police have a dossier on him. | La police a un dossier sur lui.
+extradition | extradition | n | C2 | /ˌekstrəˈdɪʃn/ | They requested his extradition. | Ils ont demandé son extradition.
+to revoke | révoquer, retirer | v | C2 | /rɪˈvəʊk/ | They revoked his licence. | Ils lui ont retiré son permis.
+wrongdoing | méfait, faute | n | C2 | /ˈrɒŋduːɪŋ/ | He denied any wrongdoing. | Il a nié avoir commis la moindre faute.
+malpractice | faute professionnelle | n | C2 | /ˌmælˈpræktɪs/ | The doctor was sued for malpractice. | Le médecin a été poursuivi pour faute professionnelle.
+subsection | sous-section, alinéa | n | C2 | /ˈsʌbsekʃn/ | Read subsection three of the law. | Lis l'alinéa trois de la loi.
+to waive | renoncer à, lever | v | C2 | /weɪv/ | They waived the fee for students. | Ils ont supprimé les frais pour les étudiants.
+enactment | promulgation | n | C2 | /ɪˈnæktmənt/ | The enactment of the law took a year. | La promulgation de la loi a pris un an.
+to detain | détenir, retenir | v | C1 | /dɪˈteɪn/ | The police detained him for questioning. | La police l'a retenu pour l'interroger.
+permissible | permis, admissible | adj | C2 | /pəˈmɪsəbl/ | Is it permissible to eat this? | Est-il permis de manger cela ?
+complicit | complice | adj | C2 | /kəmˈplɪsɪt/ | They were complicit in the crime. | Ils ont été complices du crime.
+restitution | restitution, réparation | n | C2 | /ˌrestɪˈtjuːʃn/ | They demanded restitution. | Ils ont exigé réparation.
+impunity | impunité | n | C2 | /ɪmˈpjuːnəti/ | They acted with impunity. | Ils ont agi en toute impunité.
+penitentiary | pénitencier | n | C2 | /ˌpenɪˈtenʃəri/ | He spent years in the penitentiary. | Il a passé des années au pénitencier.
+jurist | juriste | n | C1 | /ˈdʒʊərɪst/ | He was a famous Muslim jurist. | C'était un célèbre juriste musulman.
+culpable | coupable | adj | C2 | /ˈkʌlpəbl/ | He was found culpable of negligence. | Il a été reconnu coupable de négligence.
+to exculpate | disculper | v | C2 | /ˈekskʌlpeɪt/ | The evidence exculpated him. | Les preuves l'ont disculpé.
+to abrogate | abroger | v | C2 | /ˈæbrəɡeɪt/ | The treaty was abrogated. | Le traité a été abrogé.
+lien | privilège, droit de gage | n | C2 | /ˈliːən/ | The bank has a lien on the house. | La banque a un droit de gage sur la maison.
+felon | criminel | n | C2 | /ˈfelən/ | Convicted felons cannot vote in some countries. | Dans certains pays, les criminels condamnés ne peuvent pas voter.
+solicitation | sollicitation ; racolage | n | C2 | /səˌlɪsɪˈteɪʃn/ | Solicitation of bribes is a crime. | La sollicitation de pots-de-vin est un délit.
+probate | homologation (d'un testament) | n | C2 | /ˈprəʊbeɪt/ | The will is now in probate. | Le testament est en cours d'homologation.
+abuser | agresseur, auteur d'abus | n | C1 | /əˈbjuːzə/ | The abuser was sent to prison. | L'agresseur a été envoyé en prison.
+circumstantial | indirect, circonstanciel | adj | C2 | /ˌsɜːkəmˈstænʃl/ | The evidence is purely circumstantial. | Les preuves sont purement indirectes.
+ratification | ratification | n | C2 | /ˌrætɪfɪˈkeɪʃn/ | The treaty awaits ratification. | Le traité attend sa ratification.
+delinquent | délinquant | n | C1 | /dɪˈlɪŋkwənt/ | The centre helps young delinquents. | Le centre aide les jeunes délinquants.
+to trespass | entrer sans autorisation | v | C1 | /ˈtrespəs/ | Do not trespass on private land. | N'entre pas sans autorisation sur un terrain privé.
+edict | édit, décret | n | C2 | /ˈiːdɪkt/ | The sultan issued an edict. | Le sultan a promulgué un édit.
+snitch | mouchard, balance | n | C1 | /snɪtʃ/ | Nobody likes a snitch. | Personne n'aime les mouchards.
+tort | délit civil | n | C2 | /tɔːt/ | Negligence is a tort. | La négligence est un délit civil.
+complainant | plaignant | n | C2 | /kəmˈpleɪnənt/ | The complainant gave evidence. | Le plaignant a témoigné.
+executioner | bourreau | n | C2 | /ˌeksɪˈkjuːʃənə/ | The executioner carried out the sentence. | Le bourreau a exécuté la sentence.
+gallows | potence, gibet | n | C2 | /ˈɡæləʊz/ | He was sent to the gallows. | Il a été envoyé à la potence.
+moratorium | moratoire | n | C2 | /ˌmɒrəˈtɔːriəm/ | They declared a moratorium on evictions. | Ils ont décrété un moratoire sur les expulsions.
+prerogative | prérogative | n | C2 | /prɪˈrɒɡətɪv/ | Pardon is the king's prerogative. | La grâce est une prérogative du roi.
+to desist | cesser, renoncer | v | C2 | /dɪˈzɪst/ | They were ordered to cease and desist. | On leur a ordonné de cesser immédiatement.
+hearsay | ouï-dire | n | C2 | /ˈhɪəseɪ/ | Hearsay is not evidence. | Le ouï-dire n'est pas une preuve.
+sedition | sédition | n | C2 | /sɪˈdɪʃn/ | He was charged with sedition. | Il a été inculpé de sédition.
+authorisation | autorisation | n | C1 | /ˌɔːθəraɪˈzeɪʃn/ | You need authorisation to enter. | Il faut une autorisation pour entrer.
+complicity | complicité | n | C2 | /kəmˈplɪsəti/ | He denied any complicity in the crime. | Il a nié toute complicité dans le crime.
+licensee | titulaire d'une licence | n | C2 | /ˌlaɪsənˈsiː/ | The licensee is responsible for the premises. | Le titulaire de la licence est responsable des lieux.
+birthright | droit de naissance | n | C2 | /ˈbɜːθraɪt/ | Education is a birthright. | L'éducation est un droit fondamental.
+enforceable | exécutoire, applicable | adj | C2 | /ɪnˈfɔːsəbl/ | The contract is legally enforceable. | Le contrat a force exécutoire.
+hereinafter | ci-après | adv | C2 | /ˌhɪərɪnˈɑːftə/ | The buyer, hereinafter "the client". | L'acheteur, ci-après « le client ».
+indemnity | indemnité ; garantie | n | C2 | /ɪnˈdemnəti/ | The insurer paid an indemnity. | L'assureur a versé une indemnité.
+to confiscate | confisquer | v | C1 | /ˈkɒnfɪskeɪt/ | The teacher confiscates phones in class. | Le professeur confisque les téléphones en classe.
+guardianship | tutelle | n | C2 | /ˈɡɑːdiənʃɪp/ | The orphan was placed under guardianship. | L'orphelin a été placé sous tutelle.
+thereto | y, à cela | adv | C2 | /ˌðeəˈtuː/ | The contract and the annexes thereto. | Le contrat et ses annexes.
+retroactive | rétroactif | adj | C2 | /ˌretrəʊˈæktɪv/ | The pay rise is retroactive. | L'augmentation est rétroactive.
+signatory | signataire | n | C2 | /ˈsɪɡnətri/ | France is a signatory to the treaty. | La France est signataire du traité.
+impartiality | impartialité | n | C1 | /ɪmˌpɑːʃiˈæləti/ | Judges must show impartiality. | Les juges doivent faire preuve d'impartialité.
+unreported | non signalé | adj | C1 | /ˌʌnrɪˈpɔːtɪd/ | Many crimes go unreported. | Beaucoup de délits ne sont pas signalés.
+larceny | vol, larcin | n | C2 | /ˈlɑːsəni/ | He was convicted of larceny. | Il a été condamné pour vol.
+compensatory | compensatoire | adj | C2 | /ˌkɒmpənˈseɪtəri/ | They received compensatory damages. | Ils ont reçu des dommages-intérêts compensatoires.
+admissible | recevable, admissible | adj | C2 | /ədˈmɪsəbl/ | The evidence is not admissible in court. | La preuve n'est pas recevable devant le tribunal.
+preamble | préambule | n | C2 | /ˈpriːæmbl/ | The preamble of the constitution. | Le préambule de la constitution.
+racketeering | racket, extorsion | n | C2 | /ˌrækəˈtɪərɪŋ/ | The gang was charged with racketeering. | Le gang a été inculpé de racket.
+defamatory | diffamatoire | adj | C2 | /dɪˈfæmətri/ | The article was defamatory. | L'article était diffamatoire.
+encroachment | empiétement | n | C2 | /ɪnˈkrəʊtʃmənt/ | The encroachment of the city on farmland. | L'empiétement de la ville sur les terres agricoles.
+incitement | incitation | n | C2 | /ɪnˈsaɪtmənt/ | He was arrested for incitement to hatred. | Il a été arrêté pour incitation à la haine.
+petitioner | requérant, pétitionnaire | n | C2 | /pəˈtɪʃənə/ | The petitioner asked for a review. | Le requérant a demandé un réexamen.
+annulment | annulation (de mariage) | n | C2 | /əˈnʌlmənt/ | She asked for an annulment. | Elle a demandé l'annulation du mariage.
+to defraud | escroquer, frauder | v | C2 | /dɪˈfrɔːd/ | He defrauds investors of millions. | Il escroque des investisseurs de millions.
+detainee | détenu | n | C2 | /ˌdiːteɪˈniː/ | The detainees were released. | Les détenus ont été libérés.
+to indict | inculper, mettre en accusation | v | C2 | /ɪnˈdaɪt/ | He was indicted for fraud. | Il a été inculpé pour fraude.
+adversarial | contradictoire, conflictuel | adj | C2 | /ˌædvəˈseəriəl/ | They have an adversarial relationship. | Ils ont une relation conflictuelle.
+bequest | legs | n | C2 | /bɪˈkwest/ | He left a bequest to the mosque. | Il a fait un legs à la mosquée.
+entrapment | provocation policière, piège | n | C2 | /ɪnˈtræpmənt/ | The lawyer claimed entrapment. | L'avocat a invoqué une provocation policière.
+mobster | gangster | n | C1 | /ˈmɒbstə/ | The mobster was arrested. | Le gangster a été arrêté.
+technicality | détail technique, point de forme | n | C2 | /ˌteknɪˈkæləti/ | He was released on a technicality. | Il a été libéré pour vice de forme.
+appellant | appelant | n | C2 | /əˈpelənt/ | The appellant lost the case. | L'appelant a perdu le procès.
+to extort | extorquer | v | C2 | /ɪkˈstɔːt/ | The gang extorts money from shopkeepers. | Le gang extorque de l'argent aux commerçants.
+forcible | forcé, par la force | adj | C2 | /ˈfɔːsəbl/ | There was no sign of forcible entry. | Il n'y avait aucune trace d'effraction.
+leniency | clémence, indulgence | n | C2 | /ˈliːniənsi/ | The judge showed leniency. | Le juge a fait preuve de clémence.
+presumptive | présomptif, présumé | adj | C2 | /prɪˈzʌmptɪv/ | He is the heir presumptive. | C'est l'héritier présomptif.
+surety | garant, caution | n | C2 | /ˈʃʊərəti/ | His father stood surety for the loan. | Son père s'est porté caution pour le prêt.
+arraignment | mise en accusation | n | C2 | /əˈreɪnmənt/ | The arraignment is set for Monday. | La mise en accusation est prévue lundi.
+impostor | imposteur | n | C1 | /ɪmˈpɒstə/ | The doctor turned out to be an impostor. | Le médecin s'est révélé être un imposteur.
+conspirator | conspirateur | n | C2 | /kənˈspɪrətə/ | The conspirators were arrested. | Les conspirateurs ont été arrêtés.
+conveyance | cession (de bien) ; transport | n | C2 | /kənˈveɪəns/ | The conveyance of the property took weeks. | La cession du bien a pris des semaines.
+easement | servitude (de passage) | n | C2 | /ˈiːzmənt/ | The neighbour has an easement across our land. | Le voisin a une servitude de passage sur notre terrain.
+guarantor | garant | n | C2 | /ˌɡærənˈtɔː/ | You need a guarantor to rent a flat. | Il faut un garant pour louer un appartement.
+polygraph | détecteur de mensonges | n | C2 | /ˈpɒliɡrɑːf/ | He agreed to take a polygraph test. | Il a accepté de passer au détecteur de mensonges.
+kidnapper | ravisseur | n | C1 | /ˈkɪdnæpə/ | The kidnappers demanded a ransom. | Les ravisseurs ont exigé une rançon.
+adjudication | jugement, arbitrage | n | C2 | /əˌdʒuːdɪˈkeɪʃn/ | The case awaits adjudication. | L'affaire attend d'être jugée.
+culpability | culpabilité | n | C2 | /ˌkʌlpəˈbɪləti/ | He admitted his culpability. | Il a reconnu sa culpabilité.
+domicile | domicile | n | C2 | /ˈdɒmɪsaɪl/ | Please state your place of domicile. | Veuillez indiquer votre lieu de domicile.
+to quash | annuler, casser ; étouffer | v | C2 | /kwɒʃ/ | The court quashed the conviction. | La cour a annulé la condamnation.
 `,
 );

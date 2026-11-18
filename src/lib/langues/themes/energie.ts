@@ -201,5 +201,13 @@ gas station | station-service (US) | n | A2 | /ˈɡæs ˌsteɪʃn/ | Stop at the
 oil price | prix du pétrole | n | B1 | /ˈɔɪl praɪs/ | The oil price fell sharply. | Le prix du pétrole a fortement baissé.
 energy poverty | précarité énergétique | n | C1 | /ˈenədʒi ˌpɒvəti/ | Energy poverty affects millions of homes. | La précarité énergétique touche des millions de foyers.
 power-hungry | énergivore | adj | C1 | /ˈpaʊə ˌhʌŋɡri/ | Old fridges are power-hungry. | Les vieux frigos sont énergivores.
+offshore | en mer, offshore | adj | B2 | /ˌɒfˈʃɔː/ | They built an offshore wind farm. | Ils ont construit un parc éolien en mer.
+petroleum | pétrole | n | C1 | /pəˈtrəʊliəm/ | The country exports petroleum. | Le pays exporte du pétrole.
+ethanol | éthanol | n | C2 | /ˈeθənɒl/ | Ethanol is made from sugar cane. | L'éthanol est fabriqué à partir de canne à sucre.
+hydrocarbon | hydrocarbure | n | C2 | /ˌhaɪdrəˈkɑːbən/ | Oil and gas are hydrocarbons. | Le pétrole et le gaz sont des hydrocarbures.
+colliery | houillère, mine de charbon | n | C2 | /ˈkɒliəri/ | His grandfather worked in a colliery. | Son grand-père travaillait dans une houillère.
+tonnage | tonnage | n | C2 | /ˈtʌnɪdʒ/ | The ship's tonnage is huge. | Le tonnage du navire est énorme.
+smelter | fonderie | n | C2 | /ˈsmeltə/ | The aluminium smelter employs hundreds. | La fonderie d'aluminium emploie des centaines de personnes.
+desalination | dessalement | n | C2 | /ˌdiːsælɪˈneɪʃn/ | Saudi Arabia relies on desalination. | L'Arabie saoudite dépend du dessalement.
 `,
 );

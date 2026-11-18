@@ -123,5 +123,28 @@ clean the windows | laver les vitres | expr | A2 | /ˌkliːn ðə ˈwɪndəʊz/ 
 take out the bins | sortir les poubelles | expr | A2 | /ˌteɪk aʊt ðə ˈbɪnz/ | Can you take out the bins tonight? | Tu peux sortir les poubelles ce soir ?
 make a mess | mettre le désordre | expr | A2 | /ˌmeɪk ə ˈmes/ | The kids always make a mess. | Les enfants mettent toujours le désordre.
 mess | désordre | n | A2 | /mes/ | What a mess! | Quel désordre !
+to bathe | se baigner ; baigner | v | B1 | /beɪð/ | We bathe the baby every evening. | Nous donnons le bain au bébé tous les soirs.
+dustbin | poubelle | n | B1 | /ˈdʌstbɪn/ | Put the rubbish in the dustbin. | Mets les déchets à la poubelle.
+ironing | repassage | n | B1 | /ˈaɪənɪŋ/ | I do the ironing on Sundays. | Je fais le repassage le dimanche.
+to clog | boucher, obstruer | v | B2 | /klɒɡ/ | Hair clogged the drain. | Des cheveux ont bouché le siphon.
+peg | pince à linge ; patère | n | B2 | /peɡ/ | Hang the washing with pegs. | Étends le linge avec des pinces.
+gel | gel | n | B2 | /dʒel/ | Use some hand gel. | Utilise du gel pour les mains.
+dryer | sèche-linge ; sèche-cheveux | n | B2 | /ˈdraɪə/ | Put the towels in the dryer. | Mets les serviettes dans le sèche-linge.
+lotion | lotion | n | B2 | /ˈləʊʃn/ | Put on some sun lotion. | Mets de la crème solaire.
+conditioner | après-shampoing ; adoucissant | n | B2 | /kənˈdɪʃənə/ | Use conditioner after shampoo. | Utilise de l'après-shampoing après le shampoing.
+suction | aspiration, succion | n | C2 | /ˈsʌkʃn/ | The vacuum has strong suction. | L'aspirateur a une forte aspiration.
+suds | mousse (de savon) | n | C1 | /sʌdz/ | Rinse the suds off the dishes. | Rince la mousse sur la vaisselle.
+washer | lave-linge ; rondelle | n | C1 | /ˈwɒʃə/ | The tap needs a new washer. | Le robinet a besoin d'un nouveau joint.
+skincare | soins de la peau | n | B2 | /ˈskɪnkeə/ | She has a simple skincare routine. | Elle a une routine de soins de la peau simple.
+deodorant | déodorant | n | B1 | /diˈəʊdərənt/ | Don't forget your deodorant. | N'oublie pas ton déodorant.
+unclean | impur, sale | adj | C1 | /ʌnˈkliːn/ | Pork is considered unclean in Islam. | Le porc est considéré comme impur en islam.
+henna | henné | n | C1 | /ˈhenə/ | The bride's hands are decorated with henna. | Les mains de la mariée sont décorées au henné.
+excrement | excréments | n | C2 | /ˈekskrɪmənt/ | Clean the animal excrement from the path. | Nettoie les excréments d'animaux du chemin.
+hairspray | laque (pour cheveux) | n | B2 | /ˈheəspreɪ/ | She uses hairspray every morning. | Elle utilise de la laque tous les matins.
+washroom | toilettes | n | B2 | /ˈwɒʃruːm/ | Where's the washroom, please? | Où sont les toilettes, s'il vous plaît ?
+shaver | rasoir électrique | n | B2 | /ˈʃeɪvə/ | He trims his beard with a shaver. | Il taille sa barbe avec un rasoir électrique.
+urinal | urinoir | n | C2 | /jʊəˈraɪnl/ | Many mosques have no urinals. | Beaucoup de mosquées n'ont pas d'urinoirs.
+tweezers | pince à épiler | n | B2 | /ˈtwiːzəz/ | Use tweezers to remove the splinter. | Utilise une pince à épiler pour enlever l'écharde.
+soapy | savonneux | adj | B2 | /ˈsəʊpi/ | Wash the dishes in soapy water. | Lave la vaisselle à l'eau savonneuse.
 `,
 );

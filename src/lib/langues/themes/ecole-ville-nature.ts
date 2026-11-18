@@ -239,6 +239,190 @@ to play truant | faire l'école buissonnière | expr | B2 | /pleɪ ˈtruːənt/ 
 to skive | sécher, tirer au flanc | v | B2 | /skaɪv/ | Don't skive off school! | Ne sèche pas l'école !
 straight A's | que des 20 sur 20 | expr | B2 | /ˌstreɪt ˈeɪz/ | She got straight A's this term. | Elle n'a eu que des excellentes notes ce trimestre.
 to brush up on | se remettre à niveau en | v | B2 | /brʌʃ ˈʌp ɒn/ | I need to brush up on my English. | Je dois rafraîchir mon anglais.
+paragraph | paragraphe | n | A2 | /ˈpærəɡrɑːf/ | Read the first paragraph. | Lis le premier paragraphe.
+elementary | élémentaire | adj | A1 | /ˌelɪˈmentri/ | It's an elementary mistake. | C'est une erreur élémentaire.
+adjective | adjectif | n | A2 | /ˈædʒɪktɪv/ | "Happy" is an adjective. | « Happy » est un adjectif.
+noun | nom (grammaire) | n | A2 | /naʊn/ | "Table" is a noun. | « Table » est un nom.
+verb | verbe | n | A2 | /vɜːb/ | "Run" is an irregular verb. | « Run » est un verbe irrégulier.
+plural | pluriel | n | A2 | /ˈplʊərəl/ | The plural of "child" is "children". | Le pluriel de « child » est « children ».
+singular | singulier | n | A2 | /ˈsɪŋɡjələ/ | "Mouse" is the singular of "mice". | « Mouse » est le singulier de « mice ».
+comparative | comparatif | n | B1 | /kəmˈpærətɪv/ | "Bigger" is the comparative of "big". | « Bigger » est le comparatif de « big ».
+superlative | superlatif | n | B1 | /suːˈpɜːlətɪv/ | "Best" is the superlative of "good". | « Best » est le superlatif de « good ».
+punctuation | ponctuation | n | B1 | /ˌpʌŋktʃuˈeɪʃn/ | Check your punctuation. | Vérifie ta ponctuation.
+capital letter | majuscule | n | A2 | /ˌkæpɪtl ˈletə/ | Names start with a capital letter. | Les noms propres commencent par une majuscule.
+schoolchild | écolier | n | A2 | /ˈskuːltʃaɪld/ | A group of schoolchildren visited the museum. | Un groupe d'écoliers a visité le musée.
+schoolwork | travail scolaire | n | A2 | /ˈskuːlwɜːk/ | She spends hours on her schoolwork. | Elle passe des heures sur son travail scolaire.
+penfriend | correspondant | n | A2 | /ˈpenfrend/ | My penfriend lives in Canada. | Mon correspondant habite au Canada.
+academy | académie, école | n | B1 | /əˈkædəmi/ | He studies at a music academy. | Il étudie dans une académie de musique.
+adverb | adverbe | n | B1 | /ˈædvɜːb/ | "Quickly" is an adverb. | « Quickly » est un adverbe.
+alphabet | alphabet | n | B1 | /ˈælfəbet/ | The Arabic alphabet has 28 letters. | L'alphabet arabe compte 28 lettres.
+antonym | antonyme | n | B1 | /ˈæntənɪm/ | "Hot" is the antonym of "cold". | « Hot » est l'antonyme de « cold ».
+auxiliary | auxiliaire | adj | B2 | /ɔːɡˈzɪliəri/ | "Have" can be an auxiliary verb. | « Have » peut être un verbe auxiliaire.
+comma | virgule | n | B1 | /ˈkɒmə/ | Put a comma after "however". | Mets une virgule après « however ».
+consonant | consonne | n | B1 | /ˈkɒnsənənt/ | "B" is a consonant. | « B » est une consonne.
+definite article | article défini | n | B1 | /ˌdefɪnət ˈɑːtɪkl/ | "The" is the definite article. | « The » est l'article défini.
+indefinite article | article indéfini | n | B1 | /ɪnˌdefɪnət ˈɑːtɪkl/ | "A" is an indefinite article. | « A » est un article indéfini.
+encyclopedia | encyclopédie | n | B1 | /ɪnˌsaɪkləˈpiːdiə/ | Look it up in the encyclopedia. | Cherche-le dans l'encyclopédie.
+examination | examen | n | B1 | /ɪɡˌzæmɪˈneɪʃn/ | The examination lasts three hours. | L'examen dure trois heures.
+examiner | examinateur | n | B1 | /ɪɡˈzæmɪnə/ | The examiner was very kind. | L'examinateur était très aimable.
+full stop | point (ponctuation) | n | B1 | /ˌfʊl ˈstɒp/ | End every sentence with a full stop. | Termine chaque phrase par un point.
+idiom | expression idiomatique | n | B1 | /ˈɪdiəm/ | "Break a leg" is an English idiom. | « Break a leg » est une expression idiomatique anglaise.
+infinitive | infinitif | n | B1 | /ɪnˈfɪnətɪv/ | "To go" is an infinitive. | « To go » est un infinitif.
+modal verb | verbe modal | n | B1 | /ˌməʊdl ˈvɜːb/ | "Must" is a modal verb. | « Must » est un verbe modal.
+phrasal verb | verbe à particule | n | B1 | /ˌfreɪzl ˈvɜːb/ | "Give up" is a phrasal verb. | « Give up » est un verbe à particule.
+noticeboard | panneau d'affichage | n | B1 | /ˈnəʊtɪsbɔːd/ | The results are on the noticeboard. | Les résultats sont sur le panneau d'affichage.
+participle | participe | n | B2 | /pɑːˈtɪsɪpl/ | "Gone" is the past participle of "go". | « Gone » est le participe passé de « go ».
+phrase | expression, locution | n | B1 | /freɪz/ | Learn these useful phrases. | Apprends ces expressions utiles.
+prefix | préfixe | n | B1 | /ˈpriːfɪks/ | "Un-" is a common prefix. | « Un- » est un préfixe courant.
+suffix | suffixe | n | B1 | /ˈsʌfɪks/ | "-ness" is a suffix. | « -ness » est un suffixe.
+preposition | préposition | n | B1 | /ˌprepəˈzɪʃn/ | "In" is a preposition. | « In » est une préposition.
+pronoun | pronom | n | B1 | /ˈprəʊnaʊn/ | "She" is a pronoun. | « She » est un pronom.
+proverb | proverbe | n | B1 | /ˈprɒvɜːb/ | There's an old proverb about patience. | Il existe un vieux proverbe sur la patience.
+preschool | maternelle, préscolaire | adj | B1 | /ˈpriːskuːl/ | She teaches preschool children. | Elle enseigne aux enfants de maternelle.
+question mark | point d'interrogation | n | B1 | /ˈkwestʃən mɑːk/ | Don't forget the question mark. | N'oublie pas le point d'interrogation.
+questionnaire | questionnaire | n | B1 | /ˌkwestʃəˈneə/ | Please fill in this questionnaire. | Veuillez remplir ce questionnaire.
+to rewrite | réécrire | v | B1 | /ˌriːˈraɪt/ | Rewrite this paragraph, please. | Réécris ce paragraphe, s'il te plaît.
+schoolmate | camarade d'école | n | B1 | /ˈskuːlmeɪt/ | I met an old schoolmate in town. | J'ai croisé un ancien camarade d'école en ville.
+teaching | enseignement | n | B1 | /ˈtiːtʃɪŋ/ | She's going into teaching. | Elle se lance dans l'enseignement.
+usage | usage, emploi | n | B2 | /ˈjuːsɪdʒ/ | This word is in common usage. | Ce mot est d'usage courant.
+vowel | voyelle | n | B1 | /ˈvaʊəl/ | English has five vowel letters. | L'anglais compte cinq lettres voyelles.
+alphabetical | alphabétique | adj | B2 | /ˌælfəˈbetɪkl/ | The names are in alphabetical order. | Les noms sont classés par ordre alphabétique.
+apostrophe | apostrophe | n | B2 | /əˈpɒstrəfi/ | "It's" has an apostrophe. | « It's » contient une apostrophe.
+bracket | parenthèse ; tranche | n | B2 | /ˈbrækɪt/ | Write the answer in brackets. | Écris la réponse entre parenthèses.
+collocation | collocation (association de mots) | n | C1 | /ˌkɒləˈkeɪʃn/ | "Make a decision" is a common collocation. | « Make a decision » est une collocation courante.
+colon | deux-points | n | B2 | /ˈkəʊlən/ | Use a colon before a list. | Utilise les deux-points avant une liste.
+semicolon | point-virgule | n | B2 | /ˌsemiˈkəʊlən/ | A semicolon links two sentences. | Un point-virgule relie deux phrases.
+conjunction | conjonction | n | B2 | /kənˈdʒʌŋkʃn/ | "And" is a conjunction. | « And » est une conjonction.
+determiner | déterminant | n | B2 | /dɪˈtɜːmɪnə/ | "The" is a determiner. | « The » est un déterminant.
+dorm | dortoir ; résidence universitaire | n | B2 | /dɔːm/ | She lives in a student dorm. | Elle habite dans une résidence étudiante.
+educator | éducateur, pédagogue | n | B2 | /ˈedʒukeɪtə/ | He was a great educator. | C'était un grand pédagogue.
+elective | optionnel ; électif | adj | B2 | /ɪˈlektɪv/ | Music is an elective subject. | La musique est une matière optionnelle.
+examinee | candidat (à un examen) | n | C1 | /ɪɡˌzæmɪˈniː/ | Each examinee has two hours. | Chaque candidat dispose de deux heures.
+exclamation mark | point d'exclamation | n | B2 | /ˌekskləˈmeɪʃn mɑːk/ | Don't use too many exclamation marks. | N'utilise pas trop de points d'exclamation.
+first person | première personne | n | B2 | /ˌfɜːst ˈpɜːsn/ | The novel is written in the first person. | Le roman est écrit à la première personne.
+second person | deuxième personne | n | B2 | /ˌsekənd ˈpɜːsn/ | "You" is the second person. | « You » correspond à la deuxième personne.
+third person | troisième personne | n | B2 | /ˌθɜːd ˈpɜːsn/ | Add an "s" in the third person singular. | Ajoute un « s » à la troisième personne du singulier.
+fluency | aisance, maîtrise (d'une langue) | n | B2 | /ˈfluːənsi/ | Fluency comes with practice. | L'aisance vient avec la pratique.
+footnote | note de bas de page | n | B2 | /ˈfʊtnəʊt/ | The source is in the footnote. | La source figure en note de bas de page.
+housemaster | surveillant d'internat | n | C1 | /ˈhaʊsmɑːstə/ | The housemaster checked the dormitories. | Le surveillant a vérifié les dortoirs.
+hyphen | trait d'union | n | B2 | /ˈhaɪfn/ | "Well-known" has a hyphen. | « Well-known » prend un trait d'union.
+imperative | impératif | n | C1 | /ɪmˈperətɪv/ | "Sit down!" is in the imperative. | « Sit down! » est à l'impératif.
+to indent | mettre en retrait (un paragraphe) | v | C1 | /ɪnˈdent/ | Indent the first line of each paragraph. | Mets en retrait la première ligne de chaque paragraphe.
+intransitive | intransitif | adj | C1 | /ɪnˈtrænsətɪv/ | "Sleep" is an intransitive verb. | « Sleep » est un verbe intransitif.
+transitive | transitif | adj | C1 | /ˈtrænsətɪv/ | "Eat" can be a transitive verb. | « Eat » peut être un verbe transitif.
+inverted commas | guillemets | n | B2 | /ɪnˌvɜːtɪd ˈkɒməz/ | Put the title in inverted commas. | Mets le titre entre guillemets.
+learning | apprentissage ; savoir | n | B2 | /ˈlɜːnɪŋ/ | Learning never stops. | On n'arrête jamais d'apprendre.
+oral | oral | adj | B2 | /ˈɔːrəl/ | We have an oral exam tomorrow. | Nous avons un oral demain.
+predicative | attribut (grammaire) | adj | C2 | /prɪˈdɪkətɪv/ | In "she is happy", "happy" is predicative. | Dans « she is happy », « happy » est attribut.
+prefect | élève responsable ; préfet | n | C1 | /ˈpriːfekt/ | She was made a prefect in her last year. | On l'a nommée élève responsable en dernière année.
+scribble | gribouillage | n | B2 | /ˈskrɪbl/ | I can't read this scribble. | Je n'arrive pas à lire ce gribouillage.
+slash | barre oblique | n | B2 | /slæʃ/ | Type a slash after the address. | Tape une barre oblique après l'adresse.
+subjunctive | subjonctif | n | C1 | /səbˈdʒʌŋktɪv/ | "If I were you" uses the subjunctive. | « If I were you » emploie le subjonctif.
+syllable | syllabe | n | B2 | /ˈsɪləbl/ | "Banana" has three syllables. | « Banana » compte trois syllabes.
+synonym | synonyme | n | B2 | /ˈsɪnənɪm/ | "Big" is a synonym of "large". | « Big » est un synonyme de « large ».
+transcript | transcription ; relevé de notes | n | C1 | /ˈtrænskrɪpt/ | Ask for a transcript of the interview. | Demande la transcription de l'entretien.
+tuition | cours ; frais de scolarité | n | B2 | /tjuˈɪʃn/ | University tuition is expensive. | Les frais de scolarité à l'université sont élevés.
+module | module | n | B2 | /ˈmɒdjuːl/ | The course has six modules. | Le cours comporte six modules.
+bibliography | bibliographie | n | C1 | /ˌbɪbliˈɒɡrəfi/ | Add a bibliography at the end. | Ajoute une bibliographie à la fin.
+disciplinary | disciplinaire | adj | C1 | /ˈdɪsəplɪnəri/ | He faced disciplinary action. | Il a fait l'objet de sanctions disciplinaires.
+linguistic | linguistique | adj | C1 | /lɪŋˈɡwɪstɪk/ | Children have amazing linguistic skills. | Les enfants ont des capacités linguistiques étonnantes.
+terminology | terminologie | n | C1 | /ˌtɜːmɪˈnɒlədʒi/ | Learn the legal terminology. | Apprends la terminologie juridique.
+humanities | lettres et sciences humaines | n | C1 | /hjuːˈmænətiz/ | She studied humanities at university. | Elle a fait des études de lettres.
+symposium | symposium, colloque | n | C2 | /sɪmˈpəʊziəm/ | She spoke at an international symposium. | Elle a pris la parole lors d'un colloque international.
+fraternity | fraternité ; association d'étudiants | n | C1 | /frəˈtɜːnəti/ | Liberty, equality, fraternity. | Liberté, égalité, fraternité.
+doctoral | de doctorat | adj | C1 | /ˈdɒktərəl/ | She's writing her doctoral thesis. | Elle rédige sa thèse de doctorat.
+academia | monde universitaire | n | C2 | /ˌækəˈdiːmiə/ | She left academia to work in business. | Elle a quitté le monde universitaire pour travailler dans les affaires.
+accreditation | accréditation, homologation | n | C2 | /əˌkredɪˈteɪʃn/ | The school received official accreditation. | L'école a obtenu son homologation officielle.
+transcription | transcription | n | C1 | /trænˈskrɪpʃn/ | Read the transcription of the interview. | Lis la transcription de l'entretien.
+syntax | syntaxe | n | C1 | /ˈsɪntæks/ | Arabic syntax is different from French. | La syntaxe arabe est différente de celle du français.
+tertiary | tertiaire ; supérieur (enseignement) | adj | C2 | /ˈtɜːʃəri/ | She went on to tertiary education. | Elle a poursuivi des études supérieures.
+instructional | pédagogique, didactique | adj | C1 | /ɪnˈstrʌkʃənl/ | Watch the instructional video. | Regarde la vidéo explicative.
+introductory | d'introduction | adj | C1 | /ˌɪntrəˈdʌktəri/ | She teaches an introductory course. | Elle donne un cours d'initiation.
+immersion | immersion | n | C1 | /ɪˈmɜːʃn/ | Language immersion is very effective. | L'immersion linguistique est très efficace.
+preparatory | préparatoire | adj | C2 | /prɪˈpærətri/ | He's in a preparatory class. | Il est en classe préparatoire.
+linguistics | linguistique | n | C1 | /lɪŋˈɡwɪstɪks/ | She studies linguistics at university. | Elle étudie la linguistique à l'université.
+proficiency | compétence, maîtrise | n | C1 | /prəˈfɪʃnsi/ | She has a certificate of proficiency in English. | Elle a un certificat de compétence en anglais.
+expulsion | expulsion, renvoi | n | C1 | /ɪkˈspʌlʃn/ | He faced expulsion from school. | Il risquait d'être renvoyé de l'école.
+morphology | morphologie | n | C2 | /mɔːˈfɒlədʒi/ | Arabic morphology is based on roots. | La morphologie arabe repose sur les racines.
+semantic | sémantique | adj | C2 | /sɪˈmæntɪk/ | It's just a semantic difference. | Ce n'est qu'une différence de vocabulaire.
+interdisciplinary | interdisciplinaire | adj | C2 | /ˌɪntəˈdɪsəplɪnəri/ | It's an interdisciplinary project. | C'est un projet interdisciplinaire.
+semantics | sémantique | n | C2 | /sɪˈmæntɪks/ | Let's not argue about semantics. | Ne chipotons pas sur les mots.
+acronym | acronyme, sigle | n | C1 | /ˈækrənɪm/ | UNESCO is an acronym. | UNESCO est un acronyme.
+treatise | traité | n | C2 | /ˈtriːtɪs/ | He wrote a treatise on logic. | Il a écrit un traité de logique.
+citation | citation ; référence | n | C1 | /saɪˈteɪʃn/ | Add a citation for each source. | Ajoute une référence pour chaque source.
+conditional | conditionnel | adj | C1 | /kənˈdɪʃənl/ | The offer is conditional on your results. | L'offre dépend de tes résultats.
+remedial | de rattrapage | adj | C1 | /rɪˈmiːdiəl/ | He takes remedial maths classes. | Il suit des cours de rattrapage en maths.
+interjection | interjection | n | C1 | /ˌɪntəˈdʒekʃn/ | "Ouch" is an interjection. | « Ouch » est une interjection.
+articulation | articulation, expression | n | C2 | /ɑːˌtɪkjuˈleɪʃn/ | Clear articulation helps listeners. | Une articulation claire aide les auditeurs.
+denotation | dénotation | n | C2 | /ˌdiːnəʊˈteɪʃn/ | A word has a denotation and a connotation. | Un mot a une dénotation et une connotation.
+extracurricular | extrascolaire | adj | C2 | /ˌekstrəkəˈrɪkjələ/ | She does many extracurricular activities. | Elle pratique de nombreuses activités extrascolaires.
+to connote | connoter, évoquer | v | C2 | /kəˈnəʊt/ | The word "home" connotes warmth. | Le mot « maison » évoque la chaleur.
+connotation | connotation | n | C2 | /ˌkɒnəˈteɪʃn/ | The word has negative connotations. | Le mot a des connotations négatives.
+idiomatic | idiomatique | adj | C2 | /ˌɪdiəˈmætɪk/ | She speaks idiomatic English. | Elle parle un anglais idiomatique.
+interrogative | interrogatif | adj | C2 | /ˌɪntəˈrɒɡətɪv/ | "Who" is an interrogative pronoun. | « Who » est un pronom interrogatif.
+polysyllabic | polysyllabique | adj | C2 | /ˌpɒlisɪˈlæbɪk/ | He likes long, polysyllabic words. | Il aime les longs mots de plusieurs syllabes.
+colloquial | familier (langage) | adj | C2 | /kəˈləʊkwiəl/ | This expression is colloquial. | Cette expression est familière.
+colloquium | colloque | n | C2 | /kəˈləʊkwiəm/ | She spoke at a colloquium on religion. | Elle a pris la parole lors d'un colloque sur la religion.
+scholarly | savant, érudit | adj | C2 | /ˈskɒləli/ | He wrote a scholarly book on logic. | Il a écrit un ouvrage savant sur la logique.
+corpus | corpus | n | C2 | /ˈkɔːpəs/ | They analysed a large corpus of texts. | Ils ont analysé un vaste corpus de textes.
+attributive | épithète (grammaire) | adj | C2 | /əˈtrɪbjətɪv/ | In "a red car", "red" is attributive. | Dans « a red car », « red » est épithète.
+grammatical | grammatical | adj | C1 | /ɡrəˈmætɪkl/ | The sentence has a grammatical error. | La phrase comporte une faute de grammaire.
+textual | textuel | adj | C2 | /ˈtekstʃuəl/ | They did a textual analysis of the verse. | Ils ont fait une analyse textuelle du verset.
+typo | faute de frappe | n | B2 | /ˈtaɪpəʊ/ | There's a typo in your email. | Il y a une faute de frappe dans ton e-mail.
+literate | alphabétisé ; cultivé | adj | C1 | /ˈlɪtərət/ | Most of the population is literate. | La majorité de la population sait lire et écrire.
+emeritus | émérite, honoraire | adj | C2 | /iˈmerɪtəs/ | He's a professor emeritus. | C'est un professeur émérite.
+webinar | webinaire | n | B2 | /ˈwebɪnɑː/ | She gave a webinar on Islamic finance. | Elle a donné un webinaire sur la finance islamique.
+prerequisite | condition préalable | n | C2 | /ˌpriːˈrekwəzɪt/ | Arabic is a prerequisite for this course. | L'arabe est un prérequis pour ce cours.
+plagiarism | plagiat | n | C1 | /ˈpleɪdʒərɪzəm/ | Plagiarism is a serious offence. | Le plagiat est une faute grave.
+vernacular | langue vernaculaire | n | C2 | /vəˈnækjələ/ | The Bible was translated into the vernacular. | La Bible a été traduite en langue vernaculaire.
+glossary | glossaire | n | C1 | /ˈɡlɒsəri/ | There's a glossary at the end of the book. | Il y a un glossaire à la fin du livre.
+scholastic | scolaire ; scolastique | adj | C2 | /skəˈlæstɪk/ | His scholastic achievements are impressive. | Ses résultats scolaires sont impressionnants.
+polytechnic | école polytechnique | n | C2 | /ˌpɒliˈteknɪk/ | He studied at a polytechnic. | Il a étudié dans une école polytechnique.
+shorthand | sténographie ; abréviation | n | C1 | /ˈʃɔːthænd/ | The secretary takes notes in shorthand. | La secrétaire prend des notes en sténo.
+monograph | monographie | n | C2 | /ˈmɒnəɡrɑːf/ | She published a monograph on Ibn Khaldun. | Elle a publié une monographie sur Ibn Khaldoun.
+abbreviation | abréviation | n | B2 | /əˌbriːviˈeɪʃn/ | "PBUH" is an abbreviation. | « PBUH » est une abréviation.
+italics | italique | n | B2 | /ɪˈtælɪks/ | Write the title in italics. | Écris le titre en italique.
+pedagogy | pédagogie | n | C2 | /ˈpedəɡɒdʒi/ | She studies modern pedagogy. | Elle étudie la pédagogie moderne.
+lexicon | lexique | n | C2 | /ˈleksɪkən/ | The Arabic lexicon is extremely rich. | Le lexique arabe est extrêmement riche.
+metaphorical | métaphorique | adj | C1 | /ˌmetəˈfɒrɪkl/ | The phrase is metaphorical. | L'expression est métaphorique.
+to paraphrase | paraphraser | v | C1 | /ˈpærəfreɪz/ | Paraphrase the text in your own words. | Paraphrase le texte avec tes propres mots.
+pedagogical | pédagogique | adj | C2 | /ˌpedəˈɡɒdʒɪkl/ | The book has a pedagogical aim. | Le livre a un objectif pédagogique.
+multidisciplinary | pluridisciplinaire | adj | C2 | /ˌmʌltiˈdɪsəplɪnəri/ | It's a multidisciplinary team. | C'est une équipe pluridisciplinaire.
+asterisk | astérisque | n | C1 | /ˈæstərɪsk/ | Fields marked with an asterisk are required. | Les champs marqués d'un astérisque sont obligatoires.
+coinage | création (d'un mot) ; monnaie | n | C2 | /ˈkɔɪnɪdʒ/ | The word is a recent coinage. | Le mot est une création récente.
+derivation | dérivation, origine | n | C2 | /ˌderɪˈveɪʃn/ | Arabic words follow patterns of derivation. | Les mots arabes suivent des schèmes de dérivation.
+multilingual | multilingue | adj | C1 | /ˌmʌltiˈlɪŋɡwəl/ | The city is multilingual. | La ville est multilingue.
+phonetic | phonétique | adj | C1 | /fəˈnetɪk/ | Use the phonetic alphabet to learn pronunciation. | Utilise l'alphabet phonétique pour apprendre la prononciation.
+entrant | participant, candidat | n | C2 | /ˈentrənt/ | Each entrant must pay a fee. | Chaque participant doit payer des frais.
+etymology | étymologie | n | C1 | /ˌetɪˈmɒlədʒi/ | The etymology of "algebra" is Arabic. | L'étymologie du mot « algèbre » est arabe.
+worksheet | fiche d'exercices | n | B1 | /ˈwɜːkʃiːt/ | Complete the worksheet at home. | Termine la fiche d'exercices à la maison.
+alumnus | ancien élève | n | C2 | /əˈlʌmnəs/ | He's an alumnus of Al-Azhar. | C'est un ancien élève d'Al-Azhar.
+subtraction | soustraction | n | B1 | /səbˈtrækʃn/ | Children learn addition and subtraction. | Les enfants apprennent l'addition et la soustraction.
+cursive | cursive | n | C1 | /ˈkɜːsɪv/ | She writes in cursive. | Elle écrit en cursive.
+addendum | addenda, annexe | n | C2 | /əˈdendəm/ | An addendum was added to the report. | Une annexe a été ajoutée au rapport.
+annotation | annotation | n | C1 | /ˌænəˈteɪʃn/ | The book has annotations in the margin. | Le livre porte des annotations dans la marge.
+inflection | inflexion, flexion | n | C2 | /ɪnˈflekʃn/ | Arabic verbs have many inflections. | Les verbes arabes ont de nombreuses flexions.
+thesaurus | dictionnaire des synonymes | n | C1 | /θɪˈsɔːrəs/ | Use a thesaurus to find synonyms. | Utilise un dictionnaire des synonymes.
+epithet | épithète, qualificatif | n | C2 | /ˈepɪθet/ | The Prophet was given the epithet "al-Amin". | Le Prophète a reçu le qualificatif « al-Amin ».
+notepad | bloc-notes | n | B1 | /ˈnəʊtpæd/ | Write it on the notepad. | Écris-le sur le bloc-notes.
+typeface | police de caractères | n | C1 | /ˈtaɪpfeɪs/ | Choose a clear typeface. | Choisis une police de caractères lisible.
+intonation | intonation | n | C1 | /ˌɪntəˈneɪʃn/ | English intonation is hard to master. | L'intonation anglaise est difficile à maîtriser.
+reflexive | réfléchi (verbe) | adj | C2 | /rɪˈfleksɪv/ | "Myself" is a reflexive pronoun. | « Myself » est un pronom réfléchi.
+quadrangle | cour (carrée) | n | C2 | /ˈkwɒdræŋɡl/ | Students gathered in the quadrangle. | Les étudiants se sont rassemblés dans la cour.
+syntactic | syntaxique | adj | C2 | /sɪnˈtæktɪk/ | Arabic has complex syntactic rules. | L'arabe a des règles syntaxiques complexes.
+legible | lisible | adj | C1 | /ˈledʒəbl/ | Your handwriting is barely legible. | Ton écriture est à peine lisible.
+lower case | minuscules | n | B2 | /ˌləʊə ˈkeɪs/ | Write your email address in lower case. | Écris ton adresse e-mail en minuscules.
+parlance | langage, jargon | n | C2 | /ˈpɑːləns/ | In medical parlance, it's called a contusion. | En langage médical, on parle de contusion.
+chalkboard | tableau noir | n | B1 | /ˈtʃɔːkbɔːd/ | The teacher wrote on the chalkboard. | Le professeur a écrit au tableau noir.
+numeral | chiffre | n | C1 | /ˈnjuːmərəl/ | Arabic numerals replaced Roman numerals. | Les chiffres arabes ont remplacé les chiffres romains.
+appellation | appellation | n | C2 | /ˌæpəˈleɪʃn/ | The cheese has a protected appellation. | Le fromage a une appellation protégée.
+trigonometry | trigonométrie | n | C1 | /ˌtrɪɡəˈnɒmətri/ | Al-Battani advanced trigonometry. | Al-Battani a fait progresser la trigonométrie.
+tutelage | tutelle, enseignement | n | C2 | /ˈtjuːtəlɪdʒ/ | He studied under the tutelage of a great sheikh. | Il a étudié sous la direction d'un grand cheikh.
+wordplay | jeu de mots | n | C1 | /ˈwɜːdpleɪ/ | The poem is full of clever wordplay. | Le poème regorge de jeux de mots astucieux.
+postscript | post-scriptum | n | C1 | /ˈpəʊstskrɪpt/ | She added a postscript to her letter. | Elle a ajouté un post-scriptum à sa lettre.
+readability | lisibilité | n | C1 | /ˌriːdəˈbɪləti/ | Short sentences improve readability. | Les phrases courtes améliorent la lisibilité.
+rubric | consignes ; grille d'évaluation | n | C2 | /ˈruːbrɪk/ | Read the rubric before answering. | Lis les consignes avant de répondre.
+schoolmaster | maître d'école | n | C2 | /ˈskuːlmɑːstə/ | The old schoolmaster taught three generations. | Le vieux maître d'école a instruit trois générations.
 `,
 );
 
@@ -441,6 +625,51 @@ streetwise | débrouillard (en ville) | adj | C1 | /ˈstriːtwaɪz/ | City kids 
 urbane | raffiné, courtois | adj | C2 | /ɜːˈbeɪn/ | He was charming and urbane. | Il était charmant et raffiné.
 bike lane | piste cyclable | n | A2 | /ˈbaɪk leɪn/ | The new bike lane is safer. | La nouvelle piste cyclable est plus sûre.
 city break | court séjour en ville | n | B1 | /ˈsɪti breɪk/ | We went on a city break to Lisbon. | Nous avons fait un court séjour à Lisbonne.
+tube | tube ; métro de Londres | n | A2 | /tjuːb/ | We took the tube to Oxford Circus. | Nous avons pris le métro jusqu'à Oxford Circus.
+traffic light | feu de circulation | n | A2 | /ˈtræfɪk laɪt/ | Turn right at the traffic lights. | Tourne à droite aux feux.
+escalator | escalator, escalier mécanique | n | A2 | /ˈeskəleɪtə/ | Take the escalator to the second floor. | Prends l'escalator jusqu'au deuxième étage.
+daylight | lumière du jour | n | B1 | /ˈdeɪlaɪt/ | The robbery happened in broad daylight. | Le vol a eu lieu en plein jour.
+parking | stationnement | n | B1 | /ˈpɑːkɪŋ/ | Parking is free on Sundays. | Le stationnement est gratuit le dimanche.
+residential | résidentiel | adj | B1 | /ˌrezɪˈdenʃl/ | They live in a quiet residential area. | Ils habitent un quartier résidentiel calme.
+turning | virage, embranchement | n | B1 | /ˈtɜːnɪŋ/ | Take the second turning on the left. | Prends la deuxième à gauche.
+barbershop | salon de coiffure (pour hommes) | n | B2 | /ˈbɑːbəʃɒp/ | There's a barbershop on the corner. | Il y a un barbier au coin de la rue.
+bathhouse | bains publics, hammam | n | C1 | /ˈbɑːθhaʊs/ | The old bathhouse is now a museum. | Les anciens bains publics sont devenus un musée.
+booth | cabine ; stand | n | B2 | /buːð/ | Is there a phone booth near here? | Y a-t-il une cabine téléphonique près d'ici ?
+diversion | déviation ; diversion | n | B2 | /daɪˈvɜːʃn/ | There's a diversion because of roadworks. | Il y a une déviation à cause des travaux.
+intersection | carrefour, intersection | n | B2 | /ˌɪntəˈsekʃn/ | Turn left at the next intersection. | Tourne à gauche au prochain carrefour.
+to pave | paver | v | B2 | /peɪv/ | The streets are paved with stone. | Les rues sont pavées de pierre.
+ramp | rampe (d'accès) | n | B2 | /ræmp/ | There's a ramp for wheelchairs. | Il y a une rampe pour les fauteuils roulants.
+salon | salon (de coiffure, de beauté) | n | B2 | /ˈsælɒn/ | She works in a beauty salon. | Elle travaille dans un institut de beauté.
+metropolitan | métropolitain | adj | C1 | /ˌmetrəˈpɒlɪtən/ | The metropolitan area has ten million people. | L'agglomération compte dix millions d'habitants.
+drainage | drainage, évacuation des eaux | n | C1 | /ˈdreɪnɪdʒ/ | Poor drainage caused the flooding. | Un mauvais drainage a provoqué l'inondation.
+municipality | municipalité | n | C1 | /mjuːˌnɪsɪˈpæləti/ | The municipality runs the libraries. | La municipalité gère les bibliothèques.
+auditorium | auditorium, salle | n | C1 | /ˌɔːdɪˈtɔːriəm/ | The auditorium seats five hundred people. | L'auditorium compte cinq cents places.
+diner | petit restaurant ; dîneur | n | B2 | /ˈdaɪnə/ | We had breakfast at a diner. | Nous avons pris le petit-déjeuner dans un petit restaurant.
+facade | façade | n | C1 | /fəˈsɑːd/ | The building has a beautiful facade. | Le bâtiment a une belle façade.
+restroom | toilettes (US) | n | B2 | /ˈrestruːm/ | Where's the restroom? | Où sont les toilettes ?
+roadway | chaussée | n | C2 | /ˈrəʊdweɪ/ | Don't stand on the roadway. | Ne reste pas sur la chaussée.
+demolition | démolition | n | C1 | /ˌdeməˈlɪʃn/ | The old building is due for demolition. | Le vieux bâtiment doit être démoli.
+suburban | de banlieue | adj | C1 | /səˈbɜːbən/ | They live in a suburban house. | Ils habitent une maison de banlieue.
+suburbia | la banlieue | n | C1 | /səˈbɜːbiə/ | He grew up in suburbia. | Il a grandi en banlieue.
+sprawl | étalement (urbain) | n | C1 | /sprɔːl/ | Urban sprawl destroys farmland. | L'étalement urbain détruit les terres agricoles.
+spire | flèche (d'église) | n | C2 | /ˈspaɪə/ | The church spire rises above the town. | La flèche de l'église domine la ville.
+edifice | édifice | n | C2 | /ˈedɪfɪs/ | The mosque is an impressive edifice. | La mosquée est un édifice impressionnant.
+signage | signalisation | n | C2 | /ˈsaɪnɪdʒ/ | The signage at the airport is clear. | La signalisation de l'aéroport est claire.
+terminus | terminus | n | C2 | /ˈtɜːmɪnəs/ | This bus goes to the terminus. | Ce bus va jusqu'au terminus.
+walkway | passerelle, allée piétonne | n | C1 | /ˈwɔːkweɪ/ | A covered walkway links the two buildings. | Une passerelle couverte relie les deux bâtiments.
+oncoming | qui arrive en sens inverse | adj | C1 | /ˈɒnkʌmɪŋ/ | He swerved to avoid an oncoming car. | Il a fait un écart pour éviter une voiture arrivant en sens inverse.
+parkland | espaces verts, parc | n | C1 | /ˈpɑːklænd/ | The house is surrounded by parkland. | La maison est entourée d'espaces verts.
+storefront | devanture | n | C1 | /ˈstɔːfrʌnt/ | The storefront was freshly painted. | La devanture venait d'être repeinte.
+dual carriageway | route à quatre voies | n | C1 | /ˌdjuːəl ˈkærɪdʒweɪ/ | Take the dual carriageway to Le Mans. | Prends la quatre-voies jusqu'au Mans.
+tenement | immeuble (vétuste) | n | C2 | /ˈtenəmənt/ | Poor families lived in tenements. | Les familles pauvres vivaient dans des immeubles vétustes.
+sewerage | réseau d'égouts | n | C2 | /ˈsuːərɪdʒ/ | The village has no sewerage system. | Le village n'a pas de réseau d'égouts.
+tramway | tramway | n | B2 | /ˈtræmweɪ/ | The city built a new tramway. | La ville a construit un nouveau tramway.
+bitumen | bitume | n | C2 | /ˈbɪtjʊmən/ | The road is covered in bitumen. | La route est recouverte de bitume.
+gridlock | embouteillage, paralysie | n | C1 | /ˈɡrɪdlɒk/ | The city was in gridlock. | La ville était paralysée par les embouteillages.
+viaduct | viaduc | n | C2 | /ˈvaɪədʌkt/ | The train crossed the viaduct. | Le train a traversé le viaduc.
+riverfront | bord de rivière, quais | n | C1 | /ˈrɪvəfrʌnt/ | We walked along the riverfront. | Nous avons marché le long des quais.
+alleyway | ruelle | n | B2 | /ˈæliweɪ/ | The alleyways of the medina are narrow. | Les ruelles de la médina sont étroites.
+manhole | bouche d'égout | n | C1 | /ˈmænhəʊl/ | The manhole cover was missing. | La plaque d'égout avait disparu.
 `,
 );
 
@@ -668,5 +897,74 @@ untamed | sauvage, indompté | adj | C1 | /ʌnˈteɪmd/ | Patagonia is wild and 
 wilderness | étendue sauvage | n | C1 | /ˈwɪldənəs/ | They got lost in the wilderness. | Ils se sont perdus dans la nature sauvage.
 picturesque | pittoresque | adj | B2 | /ˌpɪktʃəˈresk/ | It's a picturesque village. | C'est un village pittoresque.
 majestic | majestueux | adj | B2 | /məˈdʒestɪk/ | The mountains looked majestic. | Les montagnes paraissaient majestueuses.
+ground | sol, terre | n | A1 | /ɡraʊnd/ | The ground is wet after the rain. | Le sol est mouillé après la pluie.
+marine | marin | adj | B1 | /məˈriːn/ | Marine life is in danger. | La vie marine est en danger.
+nectar | nectar | n | B2 | /ˈnektə/ | Bees collect nectar from flowers. | Les abeilles butinent le nectar des fleurs.
+pit | fosse, trou ; noyau | n | B2 | /pɪt/ | They dug a deep pit. | Ils ont creusé une fosse profonde.
+seawater | eau de mer | n | B1 | /ˈsiːwɔːtə/ | Seawater is too salty to drink. | L'eau de mer est trop salée pour être bue.
+blooming | en fleur | adj | B2 | /ˈbluːmɪŋ/ | The garden is full of blooming roses. | Le jardin est plein de roses en fleur.
+cascade | cascade | n | C1 | /kæˈskeɪd/ | A cascade of water fell from the rocks. | Une cascade dévalait les rochers.
+clam | palourde | n | B2 | /klæm/ | We found clams on the beach. | Nous avons trouvé des palourdes sur la plage.
+coral | corail | n | B2 | /ˈkɒrəl/ | Coral reefs are in danger. | Les récifs coralliens sont menacés.
+to decay | pourrir, se décomposer | v | B2 | /dɪˈkeɪ/ | The fallen leaves decay slowly. | Les feuilles mortes se décomposent lentement.
+to erupt | entrer en éruption ; éclater | v | B2 | /ɪˈrʌpt/ | The volcano erupted last night. | Le volcan est entré en éruption cette nuit.
+eruption | éruption | n | B2 | /ɪˈrʌpʃn/ | The eruption covered the town in ash. | L'éruption a recouvert la ville de cendres.
+forestry | sylviculture | n | C1 | /ˈfɒrɪstri/ | He studied forestry. | Il a étudié la sylviculture.
+undersea | sous-marin | adj | B2 | /ˌʌndəˈsiː/ | They explored the undersea world. | Ils ont exploré le monde sous-marin.
+timber | bois de construction | n | B2 | /ˈtɪmbə/ | The house is built of timber. | La maison est construite en bois.
+rust | rouille | n | B2 | /rʌst/ | The old car is covered in rust. | La vieille voiture est couverte de rouille.
+cork | liège ; bouchon | n | B2 | /kɔːk/ | Cork comes from the bark of a tree. | Le liège provient de l'écorce d'un arbre.
+to rot | pourrir | v | B2 | /rɒt/ | The fruit was left to rot. | Les fruits ont été laissés à pourrir.
+pulp | pulpe ; pâte (à papier) | n | C1 | /pʌlp/ | Squeeze the oranges and remove the pulp. | Presse les oranges et retire la pulpe.
+laurel | laurier | n | C1 | /ˈlɒrəl/ | Add a laurel leaf to the soup. | Ajoute une feuille de laurier à la soupe.
+aquatic | aquatique | adj | C1 | /əˈkwætɪk/ | Frogs are aquatic animals. | Les grenouilles sont des animaux aquatiques.
+lotus | lotus | n | C1 | /ˈləʊtəs/ | The lotus flower grows in water. | La fleur de lotus pousse dans l'eau.
+freshwater | d'eau douce | adj | C1 | /ˈfreʃwɔːtə/ | Trout are freshwater fish. | Les truites sont des poissons d'eau douce.
+tsunami | tsunami | n | B2 | /tsuːˈnɑːmi/ | The tsunami destroyed the coast. | Le tsunami a détruit la côte.
+botanical | botanique | adj | C1 | /bəˈtænɪkl/ | We visited the botanical gardens. | Nous avons visité le jardin botanique.
+garland | guirlande, couronne de fleurs | n | C1 | /ˈɡɑːlənd/ | They put a garland of flowers on his neck. | Ils lui ont passé une guirlande de fleurs autour du cou.
+foliage | feuillage | n | C1 | /ˈfəʊliɪdʒ/ | The autumn foliage is beautiful. | Le feuillage d'automne est magnifique.
+oceanic | océanique | adj | C2 | /ˌəʊʃiˈænɪk/ | The region has an oceanic climate. | La région a un climat océanique.
+spruce | épicéa | n | C2 | /spruːs/ | The forest is full of spruce trees. | La forêt est pleine d'épicéas.
+resin | résine | n | C1 | /ˈrezɪn/ | Pine trees produce resin. | Les pins produisent de la résine.
+sap | sève | n | C1 | /sæp/ | Sap rises in the trees in spring. | La sève monte dans les arbres au printemps.
+blight | fléau ; maladie (des plantes) | n | C2 | /blaɪt/ | Poverty is the blight of our cities. | La pauvreté est le fléau de nos villes.
+mahogany | acajou | n | C2 | /məˈhɒɡəni/ | The table is made of mahogany. | La table est en acajou.
+cypress | cyprès | n | C2 | /ˈsaɪprəs/ | Tall cypress trees lined the road. | De grands cyprès bordaient la route.
+redwood | séquoia | n | C2 | /ˈredwʊd/ | Redwoods are the tallest trees. | Les séquoias sont les arbres les plus hauts.
+magnolia | magnolia | n | C2 | /mæɡˈnəʊliə/ | A magnolia tree grows in the garden. | Un magnolia pousse dans le jardin.
+linden | tilleul | n | C2 | /ˈlɪndən/ | We drank linden tea. | Nous avons bu une tisane de tilleul.
+horticulture | horticulture | n | C2 | /ˈhɔːtɪkʌltʃə/ | She studied horticulture. | Elle a étudié l'horticulture.
+overgrown | envahi par la végétation | adj | C1 | /ˌəʊvəˈɡrəʊn/ | The garden is overgrown with weeds. | Le jardin est envahi par les mauvaises herbes.
+lilac | lilas | n | B2 | /ˈlaɪlək/ | The lilac is in bloom. | Le lilas est en fleur.
+aloe vera | aloe vera | n | B2 | /ˌæləʊ ˈvɪərə/ | Aloe vera soothes sunburn. | L'aloe vera apaise les coups de soleil.
+aquaculture | aquaculture | n | C2 | /ˈækwəkʌltʃə/ | Aquaculture provides half the world's fish. | L'aquaculture fournit la moitié du poisson mondial.
+saltwater | d'eau de mer, d'eau salée | adj | B2 | /ˈsɔːltwɔːtə/ | They are saltwater fish. | Ce sont des poissons d'eau de mer.
+ember | braise | n | C1 | /ˈembə/ | The embers glowed in the fire. | Les braises rougeoyaient dans le feu.
+cinder | cendre, escarbille | n | C2 | /ˈsɪndə/ | The house was burnt to a cinder. | La maison a été réduite en cendres.
+creeper | plante grimpante | n | C1 | /ˈkriːpə/ | A creeper covered the wall. | Une plante grimpante couvrait le mur.
+honeycomb | rayon de miel | n | C1 | /ˈhʌnikəʊm/ | Bees fill the honeycomb with honey. | Les abeilles remplissent le rayon de miel.
+sycamore | sycomore | n | C2 | /ˈsɪkəmɔː/ | A sycamore shades the garden. | Un sycomore ombrage le jardin.
+firestorm | tempête de feu ; tollé | n | C2 | /ˈfaɪəstɔːm/ | His remarks caused a firestorm. | Ses propos ont déclenché un tollé.
+primrose | primevère | n | C2 | /ˈprɪmrəʊz/ | Primroses bloom in spring. | Les primevères fleurissent au printemps.
+mulch | paillis | n | C2 | /mʌltʃ/ | Spread mulch around the plants. | Étale du paillis autour des plantes.
+kelp | varech | n | C2 | /kelp/ | Kelp grows in cold waters. | Le varech pousse dans les eaux froides.
+shamrock | trèfle | n | C2 | /ˈʃæmrɒk/ | The shamrock is a symbol of Ireland. | Le trèfle est un symbole de l'Irlande.
+hemlock | ciguë | n | C2 | /ˈhemlɒk/ | Socrates died by drinking hemlock. | Socrate est mort en buvant la ciguë.
+greenery | verdure | n | C1 | /ˈɡriːnəri/ | The garden is full of greenery. | Le jardin est plein de verdure.
+husk | enveloppe, cosse | n | C2 | /hʌsk/ | Remove the husk from the corn. | Enlève l'enveloppe du maïs.
+sequoia | séquoia | n | C2 | /sɪˈkwɔɪə/ | Sequoias are among the oldest trees. | Les séquoias sont parmi les plus vieux arbres.
+aster | aster | n | C2 | /ˈæstə/ | Asters bloom in autumn. | Les asters fleurissent en automne.
+mistletoe | gui | n | C1 | /ˈmɪsltəʊ/ | Mistletoe grows on trees. | Le gui pousse sur les arbres.
+arboretum | arboretum | n | C2 | /ˌɑːbəˈriːtəm/ | We walked through the arboretum. | Nous nous sommes promenés dans l'arboretum.
+bonsai | bonsaï | n | B2 | /ˈbɒnsaɪ/ | He grows bonsai trees. | Il cultive des bonsaïs.
+herbaceous | herbacé | adj | C2 | /hɜːˈbeɪʃəs/ | The garden has a herbaceous border. | Le jardin a une bordure de plantes vivaces.
+jute | jute | n | C2 | /dʒuːt/ | The bags are made of jute. | Les sacs sont en jute.
+sylvan | sylvestre | adj | C2 | /ˈsɪlvən/ | They walked through a sylvan landscape. | Ils marchaient dans un paysage sylvestre.
+bracken | fougère | n | C2 | /ˈbrækən/ | The hills are covered in bracken. | Les collines sont couvertes de fougères.
+lichen | lichen | n | C2 | /ˈlaɪkən/ | Lichen grows on the rocks. | Le lichen pousse sur les rochers.
+hibiscus | hibiscus | n | C1 | /hɪˈbɪskəs/ | Hibiscus tea is popular in Egypt. | Le thé d'hibiscus est populaire en Égypte.
+chlorophyll | chlorophylle | n | C1 | /ˈklɒrəfɪl/ | Chlorophyll makes leaves green. | La chlorophylle rend les feuilles vertes.
+marigold | souci (fleur) | n | C2 | /ˈmæriɡəʊld/ | Marigolds brighten the garden. | Les soucis égaient le jardin.
 `,
 );

@@ -242,5 +242,67 @@ digital marketer | spécialiste du marketing numérique | n | C1 | /ˌdɪdʒɪtl
 SEO specialist | spécialiste du référencement | n | C1 | /ˌes iː ˈəʊ ˌspeʃəlɪst/ | The SEO specialist improved our ranking. | Le spécialiste du référencement a amélioré notre classement.
 project manager | chef de projet | n | B2 | /ˈprɒdʒekt ˌmænɪdʒər/ | The project manager set the deadlines. | La cheffe de projet a fixé les échéances.
 product manager | chef de produit | n | C1 | /ˈprɒdʌkt ˌmænɪdʒər/ | The product manager chose the new features. | Le chef de produit a choisi les nouvelles fonctions.
+officer | agent, officier | n | A1 | /ˈɒfɪsə/ | Ask a police officer for help. | Demande de l'aide à un agent de police.
+saw | scie | n | B1 | /sɔː/ | He cut the wood with a saw. | Il a coupé le bois avec une scie.
+drill | perceuse | n | B1 | /drɪl/ | He used a drill to make a hole in the wall. | Il a percé le mur avec une perceuse.
+adviser | conseiller | n | B1 | /ədˈvaɪzə/ | She is a financial adviser. | Elle est conseillère financière.
+barman | barman | n | B1 | /ˈbɑːmən/ | The barman made us two lemonades. | Le barman nous a préparé deux limonades.
+hammer | marteau | n | B1 | /ˈhæmə/ | Pass me the hammer, please. | Passe-moi le marteau, s'il te plaît.
+instructor | moniteur, instructeur | n | B1 | /ɪnˈstrʌktə/ | My driving instructor is very patient. | Mon moniteur d'auto-école est très patient.
+analyst | analyste | n | B2 | /ˈænəlɪst/ | She works as a financial analyst. | Elle travaille comme analyste financière.
+axe | hache | n | B2 | /æks/ | He chopped the wood with an axe. | Il a coupé le bois à la hache.
+foreman | contremaître | n | B2 | /ˈfɔːmən/ | The foreman checked the work. | Le contremaître a vérifié le travail.
+inspector | inspecteur, contrôleur | n | B2 | /ɪnˈspektə/ | The ticket inspector checked our tickets. | Le contrôleur a vérifié nos billets.
+investigator | enquêteur | n | B2 | /ɪnˈvestɪɡeɪtə/ | The investigators found new evidence. | Les enquêteurs ont trouvé de nouvelles preuves.
+keeper | gardien | n | B2 | /ˈkiːpə/ | The zoo keeper fed the lions. | Le gardien du zoo a nourri les lions.
+masseur | masseur | n | B2 | /mæˈsɜː/ | The masseur relaxed my back. | Le masseur m'a détendu le dos.
+mortar | mortier | n | C1 | /ˈmɔːtə/ | The bricks are held together with mortar. | Les briques sont liées par du mortier.
+operator | opérateur, standardiste | n | B2 | /ˈɒpəreɪtə/ | Ask the operator for the number. | Demande le numéro au standard.
+servant | serviteur, domestique | n | B2 | /ˈsɜːvənt/ | Abdullah means "servant of God". | Abdallah signifie « serviteur de Dieu ».
+stylist | styliste ; coiffeur | n | B2 | /ˈstaɪlɪst/ | My hair stylist is very creative. | Mon coiffeur est très créatif.
+workbench | établi | n | B2 | /ˈwɜːkbentʃ/ | The tools are on the workbench. | Les outils sont sur l'établi.
+workman | ouvrier | n | B2 | /ˈwɜːkmən/ | The workmen are repairing the roof. | Les ouvriers réparent le toit.
+cement | ciment | n | B2 | /sɪˈment/ | They mixed sand and cement. | Ils ont mélangé du sable et du ciment.
+slate | ardoise | n | C1 | /sleɪt/ | The roof is covered with slate. | Le toit est couvert d'ardoise.
+warden | gardien, directeur (de prison) | n | C1 | /ˈwɔːdn/ | The prison warden refused the visit. | Le directeur de la prison a refusé la visite.
+furnace | fourneau, four | n | C1 | /ˈfɜːnɪs/ | The steel is melted in a furnace. | L'acier est fondu dans un fourneau.
+attendant | préposé, employé | n | B2 | /əˈtendənt/ | Ask the car park attendant. | Demande au gardien du parking.
+asphalt | asphalte, bitume | n | C1 | /ˈæsfælt/ | They laid new asphalt on the road. | Ils ont posé un nouveau revêtement sur la route.
+handler | maître-chien ; manutentionnaire | n | C1 | /ˈhændlə/ | The dog handler searched the bags. | Le maître-chien a fouillé les sacs.
+primer | apprêt, sous-couche ; abécédaire | n | C2 | /ˈpraɪmə/ | Apply a primer before painting. | Applique une sous-couche avant de peindre.
+clamp | serre-joint, pince | n | C1 | /klæmp/ | Hold the wood with a clamp. | Maintiens le bois avec un serre-joint.
+medic | secouriste, médecin militaire | n | C1 | /ˈmedɪk/ | The medic treated the wounded. | Le secouriste a soigné les blessés.
+hostess | hôtesse | n | C1 | /ˈhəʊstəs/ | The hostess welcomed the guests. | L'hôtesse a accueilli les invités.
+to chisel | ciseler, sculpter | v | C1 | /ˈtʃɪzl/ | He chiselled the letters into the stone. | Il a gravé les lettres au ciseau dans la pierre.
+hotelier | hôtelier | n | C2 | /həʊˈteliə/ | The hotelier welcomed us personally. | L'hôtelier nous a accueillis personnellement.
+masonry | maçonnerie | n | C2 | /ˈmeɪsənri/ | The masonry is crumbling. | La maçonnerie s'effrite.
+hardwood | bois dur | n | C2 | /ˈhɑːdwʊd/ | The floor is made of hardwood. | Le parquet est en bois dur.
+plywood | contreplaqué | n | C2 | /ˈplaɪwʊd/ | The box is made of plywood. | La caisse est en contreplaqué.
+artisan | artisan | n | C1 | /ˌɑːtɪˈzæn/ | Local artisans make the pottery. | Des artisans locaux fabriquent la poterie.
+goldsmith | orfèvre | n | C2 | /ˈɡəʊldsmɪθ/ | The goldsmith made the ring. | L'orfèvre a fabriqué la bague.
+chainsaw | tronçonneuse | n | C1 | /ˈtʃeɪnsɔː/ | He cut the tree with a chainsaw. | Il a coupé l'arbre à la tronçonneuse.
+craftsmen | artisans | n | B2 | /ˈkrɑːftsmən/ | Skilled craftsmen built the mosque. | Des artisans qualifiés ont construit la mosquée.
+screwdriver | tournevis | n | B2 | /ˈskruːdraɪvə/ | Pass me the screwdriver. | Passe-moi le tournevis.
+spanner | clé (à molette, plate) | n | B2 | /ˈspænə/ | Tighten the bolt with a spanner. | Serre le boulon avec une clé.
+pliers | pince | n | B2 | /ˈplaɪəz/ | Cut the wire with pliers. | Coupe le fil avec une pince.
+sandpaper | papier de verre | n | B2 | /ˈsændpeɪpə/ | Smooth the wood with sandpaper. | Ponce le bois avec du papier de verre.
+toolbox | boîte à outils | n | B2 | /ˈtuːlbɒks/ | The hammer is in the toolbox. | Le marteau est dans la boîte à outils.
+spirit level | niveau à bulle | n | C1 | /ˈspɪrɪt levl/ | Use a spirit level to hang the shelf. | Utilise un niveau à bulle pour fixer l'étagère.
+paint roller | rouleau à peinture | n | B2 | /ˈpeɪnt rəʊlə/ | Paint the wall with a roller. | Peins le mur au rouleau.
+varnish | vernis | n | C1 | /ˈvɑːnɪʃ/ | Apply a coat of varnish to the table. | Applique une couche de vernis sur la table.
+putty | mastic | n | C2 | /ˈpʌti/ | Fill the holes with putty. | Bouche les trous avec du mastic.
+installer | installateur | n | C1 | /ɪnˈstɔːlə/ | The installer fitted the new boiler. | L'installateur a posé la nouvelle chaudière.
+journeyman | compagnon (artisan) | n | C2 | /ˈdʒɜːnimən/ | He worked as a journeyman carpenter. | Il travaillait comme compagnon charpentier.
+bookseller | libraire | n | B2 | /ˈbʊkselə/ | The bookseller recommended a good novel. | Le libraire m'a conseillé un bon roman.
+linguist | linguiste | n | C1 | /ˈlɪŋɡwɪst/ | She is a linguist who speaks six languages. | C'est une linguiste qui parle six langues.
+chiropractor | chiropracteur | n | C2 | /ˈkaɪərəʊpræktə/ | A chiropractor treated my back. | Un chiropracteur a soigné mon dos.
+tradesman | artisan, commerçant | n | C1 | /ˈtreɪdzmən/ | A tradesman came to fix the roof. | Un artisan est venu réparer le toit.
+appraiser | expert (en évaluation) | n | C2 | /əˈpreɪzə/ | An appraiser valued the house. | Un expert a évalué la maison.
+archivist | archiviste | n | C2 | /ˈɑːkɪvɪst/ | The archivist found the old letters. | L'archiviste a retrouvé les vieilles lettres.
+neurosurgeon | neurochirurgien | n | C2 | /ˈnjʊərəʊsɜːdʒən/ | The neurosurgeon operated for six hours. | Le neurochirurgien a opéré pendant six heures.
+doorman | portier | n | C1 | /ˈdɔːmən/ | The doorman opened the door. | Le portier a ouvert la porte.
+technologist | technologue | n | C2 | /tekˈnɒlədʒɪst/ | A food technologist tests the recipes. | Un technologue alimentaire teste les recettes.
+oncologist | oncologue | n | C2 | /ɒŋˈkɒlədʒɪst/ | She sees an oncologist every month. | Elle consulte un oncologue chaque mois.
+machinist | machiniste, opérateur | n | C2 | /məˈʃiːnɪst/ | He works as a machinist. | Il travaille comme opérateur sur machine.
 `,
 );

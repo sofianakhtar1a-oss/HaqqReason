@@ -265,5 +265,281 @@ allegory | allégorie | n | C2 | /ˈæləɡəri/ | The story is an allegory of t
 symbolism | symbolisme | n | C1 | /ˈsɪmbəlɪzəm/ | The film is full of symbolism. | Le film est plein de symbolisme.
 metaphor | métaphore | n | B2 | /ˈmetəfər/ | "Life is a journey" is a metaphor. | « La vie est un voyage » est une métaphore.
 imagery | images, imagerie | n | C1 | /ˈɪmɪdʒəri/ | The poem is rich in imagery. | Le poème est riche en images.
+fairy | fée | n | A1 | /ˈfeəri/ | The fairy granted her three wishes. | La fée lui a accordé trois vœux.
+pop | pop (musique) | n | A2 | /pɒp/ | She listens to pop all day. | Elle écoute de la pop toute la journée.
+classical music | musique classique | n | A2 | /ˌklæsɪkl ˈmjuːzɪk/ | He relaxes by listening to classical music. | Il se détend en écoutant de la musique classique.
+hip hop | hip-hop | n | A2 | /ˈhɪp hɒp/ | My son loves hip hop. | Mon fils adore le hip-hop.
+rap | rap | n | A2 | /ræp/ | Rap was born in New York. | Le rap est né à New York.
+brass | cuivre, laiton ; cuivres (orchestre) | n | B1 | /brɑːs/ | The door handle is made of brass. | La poignée de porte est en laiton.
+bronze | bronze | n | B1 | /brɒnz/ | She won a bronze medal. | Elle a remporté une médaille de bronze.
+comedian | humoriste, comique | n | B1 | /kəˈmiːdiən/ | The comedian was very funny. | L'humoriste était très drôle.
+entertainer | artiste (de spectacle), amuseur | n | B1 | /ˌentəˈteɪnə/ | The entertainer sang and told jokes. | L'artiste a chanté et raconté des blagues.
+film-maker | cinéaste, réalisateur | n | B1 | /ˈfɪlm meɪkə/ | She is a young film-maker. | C'est une jeune cinéaste.
+guitarist | guitariste | n | B1 | /ɡɪˈtɑːrɪst/ | He's the band's guitarist. | C'est le guitariste du groupe.
+intermission | entracte | n | B2 | /ˌɪntəˈmɪʃn/ | We bought drinks during the intermission. | Nous avons acheté des boissons pendant l'entracte.
+jade | jade | n | B2 | /dʒeɪd/ | She wore a jade necklace. | Elle portait un collier de jade.
+jazz | jazz | n | B1 | /dʒæz/ | Do you like jazz? | Tu aimes le jazz ?
+monster | monstre | n | B1 | /ˈmɒnstə/ | The children are afraid of monsters. | Les enfants ont peur des monstres.
+to narrate | raconter, narrer | v | B2 | /nəˈreɪt/ | The film is narrated by an old man. | Le film est raconté par un vieil homme.
+onstage | sur scène | adj | B2 | /ˌɒnˈsteɪdʒ/ | Her onstage presence is amazing. | Sa présence sur scène est incroyable.
+performer | artiste, interprète | n | B1 | /pəˈfɔːmə/ | The performers bowed to the audience. | Les artistes ont salué le public.
+phantom | fantôme | n | B2 | /ˈfæntəm/ | The castle is haunted by a phantom. | Le château est hanté par un fantôme.
+phoenix | phénix | n | B2 | /ˈfiːnɪks/ | The city rose like a phoenix from the ashes. | La ville a ressuscité comme un phénix de ses cendres.
+to retell | raconter à nouveau | v | B1 | /ˌriːˈtel/ | Retell the story in your own words. | Raconte l'histoire avec tes propres mots.
+amplifier | amplificateur | n | B2 | /ˈæmplɪfaɪə/ | Plug the guitar into the amplifier. | Branche la guitare sur l'ampli.
+artistry | talent artistique | n | C1 | /ˈɑːtɪstri/ | We admired the artistry of the calligrapher. | Nous avons admiré le talent du calligraphe.
+ballad | ballade | n | B2 | /ˈbæləd/ | She sang a sad ballad. | Elle a chanté une ballade triste.
+catchy | entraînant, accrocheur | adj | B2 | /ˈkætʃi/ | The song has a catchy tune. | La chanson a un air entraînant.
+cellist | violoncelliste | n | B2 | /ˈtʃelɪst/ | The cellist played beautifully. | Le violoncelliste a joué magnifiquement.
+cornet | cornet (instrument) | n | C1 | /ˈkɔːnɪt/ | He plays the cornet in a brass band. | Il joue du cornet dans une fanfare.
+dwarf | nain | n | B2 | /dwɔːf/ | Snow White lived with seven dwarfs. | Blanche-Neige vivait avec sept nains.
+essayist | essayiste | n | C1 | /ˈeseɪɪst/ | He was a famous essayist. | C'était un essayiste célèbre.
+impressionist | impressionniste | n | C1 | /ɪmˈpreʃənɪst/ | Monet was a famous impressionist. | Monet était un impressionniste célèbre.
+maestro | maestro | n | C1 | /ˈmaɪstrəʊ/ | The maestro raised his baton. | Le maestro a levé sa baguette.
+orchestral | orchestral | adj | C1 | /ɔːˈkestrəl/ | They played orchestral music. | Ils ont joué de la musique orchestrale.
+personification | personnification | n | C1 | /pəˌsɒnɪfɪˈkeɪʃn/ | She is the personification of kindness. | Elle est la bonté personnifiée.
+refrain | refrain | n | C1 | /rɪˈfreɪn/ | Everyone sang the refrain. | Tout le monde a chanté le refrain.
+reggae | reggae | n | B2 | /ˈreɡeɪ/ | Bob Marley made reggae famous. | Bob Marley a rendu le reggae célèbre.
+repertoire | répertoire | n | C1 | /ˈrepətwɑː/ | The singer has a wide repertoire. | Le chanteur a un vaste répertoire.
+replica | réplique, copie | n | C1 | /ˈreplɪkə/ | It's a replica of the original statue. | C'est une réplique de la statue originale.
+rhythmic | rythmique, rythmé | adj | B2 | /ˈrɪðmɪk/ | We heard the rhythmic sound of the waves. | Nous entendions le bruit rythmé des vagues.
+showbiz | show-business | n | B2 | /ˈʃəʊbɪz/ | She's a big name in showbiz. | C'est une grande figure du show-business.
+soliloquy | monologue | n | C2 | /səˈlɪləkwi/ | Hamlet's soliloquy is famous. | Le monologue d'Hamlet est célèbre.
+solo | solo | n | B2 | /ˈsəʊləʊ/ | She played a piano solo. | Elle a joué un solo de piano.
+sonnet | sonnet | n | C1 | /ˈsɒnɪt/ | Shakespeare wrote 154 sonnets. | Shakespeare a écrit 154 sonnets.
+subplot | intrigue secondaire | n | C1 | /ˈsʌbplɒt/ | The film has an interesting subplot. | Le film a une intrigue secondaire intéressante.
+trio | trio | n | B2 | /ˈtriːəʊ/ | A jazz trio played at the restaurant. | Un trio de jazz jouait au restaurant.
+vocalist | chanteur, vocaliste | n | B2 | /ˈvəʊkəlɪst/ | The band needs a new vocalist. | Le groupe a besoin d'un nouveau chanteur.
+woodcarving | sculpture sur bois | n | B2 | /ˈwʊdkɑːvɪŋ/ | He sells woodcarvings at the market. | Il vend des sculptures sur bois au marché.
+witch | sorcière | n | B2 | /wɪtʃ/ | The witch lived in the forest. | La sorcière vivait dans la forêt.
+duo | duo | n | B2 | /ˈdjuːəʊ/ | The duo sang together. | Le duo a chanté ensemble.
+finale | finale, final (spectacle) | n | C1 | /fɪˈnɑːli/ | The show ended with a spectacular finale. | Le spectacle s'est terminé par un final spectaculaire.
+vampire | vampire | n | B2 | /ˈvæmpaɪə/ | It's a film about vampires. | C'est un film de vampires.
+vinyl | vinyle | n | B2 | /ˈvaɪnl/ | He collects vinyl records. | Il collectionne les disques vinyles.
+remix | remix | n | B2 | /ˈriːmɪks/ | The remix is better than the original. | Le remix est meilleur que l'original.
+amber | ambre | n | C1 | /ˈæmbə/ | She wore an amber necklace. | Elle portait un collier d'ambre.
+preview | avant-première, aperçu | n | B2 | /ˈpriːvjuː/ | We saw a preview of the film. | Nous avons vu le film en avant-première.
+rapper | rappeur | n | B2 | /ˈræpə/ | The rapper released a new album. | Le rappeur a sorti un nouvel album.
+zombie | zombie | n | B2 | /ˈzɒmbi/ | I feel like a zombie this morning. | Je suis un vrai zombie ce matin.
+anthem | hymne | n | B2 | /ˈænθəm/ | They sang the national anthem. | Ils ont chanté l'hymne national.
+ninja | ninja | n | B2 | /ˈnɪndʒə/ | The children dressed up as ninjas. | Les enfants se sont déguisés en ninjas.
+saga | saga | n | C1 | /ˈsɑːɡə/ | It's a family saga over three generations. | C'est une saga familiale sur trois générations.
+stunt | cascade ; coup (publicitaire) | n | C1 | /stʌnt/ | The actor did his own stunts. | L'acteur a réalisé ses propres cascades.
+trilogy | trilogie | n | C1 | /ˈtrɪlədʒi/ | I've read the whole trilogy. | J'ai lu toute la trilogie.
+compilation | compilation | n | C1 | /ˌkɒmpɪˈleɪʃn/ | It's a compilation of his best songs. | C'est une compilation de ses meilleures chansons.
+superhero | super-héros | n | B2 | /ˈsuːpəhɪərəʊ/ | My son loves superhero films. | Mon fils adore les films de super-héros.
+stereo | chaîne stéréo | n | B2 | /ˈsteriəʊ/ | Turn the stereo down. | Baisse la chaîne.
+cue | signal, réplique | n | C1 | /kjuː/ | The actor missed his cue. | L'acteur a raté sa réplique.
+ceramic | céramique | n | C1 | /səˈræmɪk/ | The tiles are made of ceramic. | Les carreaux sont en céramique.
+groove | rythme, groove ; rainure | n | C1 | /ɡruːv/ | The song has a great groove. | La chanson a un super rythme.
+tempo | tempo, rythme | n | C1 | /ˈtempəʊ/ | The tempo of the music increased. | Le tempo de la musique s'est accéléré.
+ensemble | ensemble (musical) | n | C1 | /ɒnˈsɒmbl/ | A small ensemble played at the wedding. | Un petit ensemble a joué au mariage.
+songwriter | auteur-compositeur | n | B2 | /ˈsɒŋraɪtə/ | She's a talented songwriter. | C'est une auteure-compositrice talentueuse.
+poetic | poétique | adj | B2 | /pəʊˈetɪk/ | The film is poetic and slow. | Le film est poétique et lent.
+theatrical | théâtral | adj | C1 | /θiˈætrɪkl/ | He made a theatrical gesture. | Il a fait un geste théâtral.
+crossover | croisement, mélange des genres | n | C2 | /ˈkrɒsəʊvə/ | The album is a crossover of jazz and rap. | L'album mélange jazz et rap.
+storytelling | art du récit, narration | n | B2 | /ˈstɔːritelɪŋ/ | The film is great storytelling. | Le film est un excellent récit.
+elf | elfe, lutin | n | B2 | /elf/ | The elf lived in the forest. | Le lutin vivait dans la forêt.
+filmmaker | cinéaste | n | B2 | /ˈfɪlmmeɪkə/ | She's an independent filmmaker. | C'est une cinéaste indépendante.
+cinematic | cinématographique | adj | C1 | /ˌsɪnəˈmætɪk/ | The game has a cinematic style. | Le jeu a un style cinématographique.
+emerald | émeraude | n | C1 | /ˈemərəld/ | She wore an emerald ring. | Elle portait une bague en émeraude.
+exposition | exposition (d'idées) ; exposé | n | C2 | /ˌekspəˈzɪʃn/ | The book gives a clear exposition of the theory. | Le livre expose clairement la théorie.
+tango | tango | n | B2 | /ˈtæŋɡəʊ/ | They danced a tango. | Ils ont dansé un tango.
+odyssey | odyssée | n | C2 | /ˈɒdəsi/ | Their journey was a real odyssey. | Leur voyage a été une véritable odyssée.
+spoiler | divulgâcheur, révélation de l'intrigue | n | B2 | /ˈspɔɪlə/ | Don't tell me, no spoilers! | Ne me dis rien, pas de révélations !
+quartet | quatuor | n | C1 | /kwɔːˈtet/ | A string quartet played at the event. | Un quatuor à cordes a joué lors de l'événement.
+unicorn | licorne | n | B2 | /ˈjuːnɪkɔːn/ | The little girl loves unicorns. | La petite fille adore les licornes.
+viola | alto (instrument) | n | C1 | /viˈəʊlə/ | She plays the viola in an orchestra. | Elle joue de l'alto dans un orchestre.
+suspense | suspense | n | B2 | /səˈspens/ | The film kept us in suspense. | Le film nous a tenus en haleine.
+wonderland | pays des merveilles | n | B2 | /ˈwʌndəlænd/ | The snow turned the town into a wonderland. | La neige a transformé la ville en pays des merveilles.
+excerpt | extrait | n | C1 | /ˈeksɜːpt/ | Read an excerpt from the novel. | Lis un extrait du roman.
+glamour | glamour, éclat | n | C1 | /ˈɡlæmə/ | She loves the glamour of Hollywood. | Elle adore le glamour d'Hollywood.
+autograph | autographe | n | B2 | /ˈɔːtəɡrɑːf/ | He asked the player for an autograph. | Il a demandé un autographe au joueur.
+cameo | courte apparition | n | C2 | /ˈkæmiəʊ/ | The director makes a cameo in the film. | Le réalisateur fait une brève apparition dans le film.
+pianist | pianiste | n | B2 | /ˈpiːənɪst/ | She's a talented pianist. | C'est une pianiste talentueuse.
+alto | alto, contralto | n | C2 | /ˈæltəʊ/ | She sings alto in the choir. | Elle chante alto dans la chorale.
+mermaid | sirène | n | B2 | /ˈmɜːmeɪd/ | The little girl dreams of mermaids. | La petite fille rêve de sirènes.
+notation | notation | n | C2 | /nəʊˈteɪʃn/ | He learned musical notation. | Il a appris le solfège.
+wand | baguette (magique) | n | B2 | /wɒnd/ | The fairy waved her magic wand. | La fée a agité sa baguette magique.
+gong | gong | n | C1 | /ɡɒŋ/ | The gong marked the start of the ceremony. | Le gong a marqué le début de la cérémonie.
+rendition | interprétation | n | C2 | /renˈdɪʃn/ | She gave a beautiful rendition of the song. | Elle a donné une belle interprétation de la chanson.
+mythical | mythique, légendaire | adj | C1 | /ˈmɪθɪkl/ | The dragon is a mythical creature. | Le dragon est une créature légendaire.
+sapphire | saphir | n | C1 | /ˈsæfaɪə/ | Her ring has a sapphire. | Sa bague porte un saphir.
+duet | duo | n | C1 | /djuˈet/ | They sang a duet. | Ils ont chanté en duo.
+diva | diva | n | C1 | /ˈdiːvə/ | She behaves like a diva. | Elle se comporte comme une diva.
+genie | génie (de la lampe) | n | B2 | /ˈdʒiːni/ | The genie granted three wishes. | Le génie a exaucé trois vœux.
+motif | motif | n | C2 | /məʊˈtiːf/ | The carpet has a floral motif. | Le tapis a un motif floral.
+tenor | ténor ; teneur | n | C2 | /ˈtenə/ | The tenor sang beautifully. | Le ténor a chanté magnifiquement.
+aria | aria, air (d'opéra) | n | C2 | /ˈɑːriə/ | She sang an aria by Puccini. | Elle a chanté un air de Puccini.
+biographical | biographique | adj | C1 | /ˌbaɪəˈɡræfɪkl/ | It's a biographical film. | C'est un film biographique.
+comedic | comique | adj | C2 | /kəˈmiːdɪk/ | He has great comedic timing. | Il a un excellent sens du comique.
+waltz | valse | n | C1 | /wɔːls/ | They danced a waltz. | Ils ont dansé une valse.
+percussion | percussions | n | C1 | /pəˈkʌʃn/ | He plays percussion in a band. | Il joue des percussions dans un groupe.
+intrigue | intrigue | n | C2 | /ˈɪntriːɡ/ | The novel is full of political intrigue. | Le roman regorge d'intrigues politiques.
+satirical | satirique | adj | C1 | /səˈtɪrɪkl/ | It's a satirical magazine. | C'est un magazine satirique.
+gem | pierre précieuse ; perle | n | C1 | /dʒem/ | This little café is a hidden gem. | Ce petit café est une perle cachée.
+to depict | représenter, dépeindre | v | C1 | /dɪˈpɪkt/ | The painting depicts a market scene. | Le tableau représente une scène de marché.
+depiction | représentation | n | C1 | /dɪˈpɪkʃn/ | Islam avoids the depiction of prophets. | L'islam évite la représentation des prophètes.
+sequel | suite | n | C1 | /ˈsiːkwəl/ | The sequel is better than the first film. | La suite est meilleure que le premier film.
+flashback | retour en arrière, flash-back | n | C1 | /ˈflæʃbæk/ | The film has many flashbacks. | Le film comporte de nombreux retours en arrière.
+climactic | culminant | adj | C1 | /klaɪˈmæktɪk/ | The film's climactic scene is amazing. | La scène finale du film est incroyable.
+anticlimactic | décevant (après une attente) | adj | C1 | /ˌæntiklaɪˈmæktɪk/ | The ending was anticlimactic. | La fin a été décevante.
+aesthetic | esthétique | adj | C1 | /iːsˈθetɪk/ | The building has great aesthetic value. | Le bâtiment a une grande valeur esthétique.
+stylistic | stylistique | adj | C1 | /staɪˈlɪstɪk/ | There are stylistic differences between the two writers. | Il existe des différences de style entre les deux écrivains.
+connoisseur | connaisseur | n | C1 | /ˌkɒnəˈsɜː/ | He's a connoisseur of Arabic poetry. | C'est un connaisseur de la poésie arabe.
+impersonator | imitateur | n | C1 | /ɪmˈpɜːsəneɪtə/ | The impersonator copied famous voices. | L'imitateur reproduisait des voix célèbres.
+sketchbook | carnet de croquis | n | C1 | /ˈsketʃbʊk/ | She always carries a sketchbook. | Elle a toujours un carnet de croquis sur elle.
+mythological | mythologique | adj | C1 | /ˌmɪθəˈlɒdʒɪkl/ | The painting shows a mythological scene. | Le tableau représente une scène mythologique.
+staccato | saccadé, staccato | adj | C2 | /stəˈkɑːtəʊ/ | He spoke in short, staccato sentences. | Il parlait par phrases courtes et saccadées.
+pathos | pathos, pathétique | n | C2 | /ˈpeɪθɒs/ | The film is full of pathos. | Le film est plein d'émotion.
+silhouette | silhouette | n | C1 | /ˌsɪluˈet/ | We saw the silhouette of the minaret against the sky. | Nous voyions la silhouette du minaret se découper sur le ciel.
+repertory | répertoire, théâtre de répertoire | n | C2 | /ˈrepətri/ | She worked in a repertory theatre. | Elle a travaillé dans un théâtre de répertoire.
+acoustic | acoustique | adj | C1 | /əˈkuːstɪk/ | He plays an acoustic guitar. | Il joue de la guitare acoustique.
+acoustics | acoustique (d'une salle) | n | C1 | /əˈkuːstɪks/ | The hall has excellent acoustics. | La salle a une excellente acoustique.
+synopsis | résumé, synopsis | n | C1 | /sɪˈnɒpsɪs/ | Read the synopsis of the film. | Lis le résumé du film.
+folk tale | conte populaire | n | C1 | /ˈfəʊk teɪl/ | My grandmother told us old folk tales. | Ma grand-mère nous racontait de vieux contes populaires.
+debut | débuts | n | C1 | /ˈdeɪbjuː/ | She made her debut at sixteen. | Elle a fait ses débuts à seize ans.
+farce | farce | n | C1 | /fɑːs/ | The trial was a farce. | Le procès était une farce.
+to portray | dépeindre, incarner | v | C1 | /pɔːˈtreɪ/ | The film portrays him as a hero. | Le film le dépeint comme un héros.
+portrayal | représentation, interprétation | n | C1 | /pɔːˈtreɪəl/ | Her portrayal of the queen was brilliant. | Son interprétation de la reine était brillante.
+dramatist | dramaturge | n | C1 | /ˈdræmətɪst/ | Shakespeare was a great dramatist. | Shakespeare était un grand dramaturge.
+characterisation | caractérisation (des personnages) | n | C1 | /ˌkærəktəraɪˈzeɪʃn/ | The novel has strong characterisation. | Les personnages du roman sont bien construits.
+glitz | clinquant, paillettes | n | C2 | /ɡlɪts/ | He hates the glitz of Hollywood. | Il déteste le clinquant d'Hollywood.
+portraiture | art du portrait | n | C2 | /ˈpɔːtrətʃə/ | She specialises in portraiture. | Elle est spécialisée dans le portrait.
+adornment | ornement, parure | n | C2 | /əˈdɔːnmənt/ | The mosque has little adornment inside. | La mosquée a peu d'ornements à l'intérieur.
+modernism | modernisme | n | C2 | /ˈmɒdənɪzəm/ | Modernism changed architecture. | Le modernisme a transformé l'architecture.
+retrospective | rétrospective | n | C2 | /ˌretrəˈspektɪv/ | The museum held a retrospective of his work. | Le musée a organisé une rétrospective de son œuvre.
+lyricist | parolier | n | C2 | /ˈlɪrɪsɪst/ | He's a talented lyricist. | C'est un parolier talentueux.
+lyrical | lyrique | adj | C2 | /ˈlɪrɪkl/ | The book is written in a lyrical style. | Le livre est écrit dans un style lyrique.
+wordsmith | as de la plume, styliste | n | C2 | /ˈwɜːdsmɪθ/ | The poet was a gifted wordsmith. | Le poète maniait les mots avec talent.
+interlude | intermède | n | C2 | /ˈɪntəluːd/ | There was a musical interlude. | Il y a eu un intermède musical.
+melodious | mélodieux | adj | C2 | /məˈləʊdiəs/ | The muezzin has a melodious voice. | Le muezzin a une voix mélodieuse.
+to curate | organiser (une exposition) | v | C2 | /kjʊəˈreɪt/ | She curated an exhibition of Islamic art. | Elle a organisé une exposition d'art islamique.
+surrealist | surréaliste | n | C2 | /səˈrɪəlɪst/ | Dalí was a famous surrealist. | Dalí était un surréaliste célèbre.
+cinematography | cinématographie, photographie (film) | n | C2 | /ˌsɪnəməˈtɒɡrəfi/ | The cinematography is stunning. | La photographie du film est superbe.
+cinematographer | directeur de la photographie | n | C2 | /ˌsɪnəməˈtɒɡrəfə/ | The cinematographer won an award. | Le directeur de la photographie a reçu un prix.
+to reissue | rééditer | v | C2 | /ˌriːˈɪʃuː/ | The album was reissued last year. | L'album a été réédité l'an dernier.
+virtuoso | virtuose | n | C2 | /ˌvɜːtʃuˈəʊsəʊ/ | He's a violin virtuoso. | C'est un virtuose du violon.
+virtuosity | virtuosité | n | C2 | /ˌvɜːtʃuˈɒsəti/ | Her virtuosity amazed the audience. | Sa virtuosité a émerveillé le public.
+to etch | graver | v | C2 | /etʃ/ | The memory is etched in my mind. | Le souvenir est gravé dans ma mémoire.
+to ad-lib | improviser | v | C2 | /ˌæd ˈlɪb/ | The actor forgot his lines and ad-libbed. | L'acteur a oublié son texte et a improvisé.
+improvisational | d'improvisation | adj | C2 | /ˌɪmprəvaɪˈzeɪʃənl/ | She has great improvisational skills. | Elle a un grand talent d'improvisation.
+allegorical | allégorique | adj | C2 | /ˌæləˈɡɒrɪkl/ | It's an allegorical tale. | C'est un conte allégorique.
+impresario | imprésario | n | C2 | /ˌɪmprəˈsɑːriəʊ/ | The impresario organised the tour. | L'imprésario a organisé la tournée.
+collage | collage | n | C1 | /ˈkɒlɑːʒ/ | The children made a collage. | Les enfants ont fait un collage.
+enamel | émail | n | C1 | /ɪˈnæml/ | The vase is decorated with enamel. | Le vase est décoré d'émail.
+bard | barde, poète | n | C2 | /bɑːd/ | Shakespeare is called the Bard. | On surnomme Shakespeare le Barde.
+ebony | ébène | n | C2 | /ˈebəni/ | The piano keys are made of ebony. | Les touches du piano sont en ébène.
+harmonic | harmonique | adj | C2 | /hɑːˈmɒnɪk/ | The chords have a harmonic quality. | Les accords ont une qualité harmonique.
+montage | montage | n | C2 | /ˈmɒntɑːʒ/ | The film opens with a montage of old photos. | Le film s'ouvre sur un montage de vieilles photos.
+treble | aigus ; triple | n | C2 | /ˈtrebl/ | Turn up the treble. | Monte les aigus.
+werewolf | loup-garou | n | B2 | /ˈweəwʊlf/ | It's a film about a werewolf. | C'est un film de loup-garou.
+potion | potion | n | B2 | /ˈpəʊʃn/ | The witch made a magic potion. | La sorcière a préparé une potion magique.
+goblin | lutin, gobelin | n | B2 | /ˈɡɒblɪn/ | The story is about a goblin. | L'histoire parle d'un lutin.
+labyrinth | labyrinthe | n | C1 | /ˈlæbərɪnθ/ | The old town is a labyrinth of streets. | La vieille ville est un labyrinthe de ruelles.
+ode | ode | n | C2 | /əʊd/ | He wrote an ode to his city. | Il a écrit une ode à sa ville.
+prelude | prélude | n | C2 | /ˈpreljuːd/ | The talks were a prelude to peace. | Les pourparlers ont été le prélude à la paix.
+ovation | ovation | n | C2 | /əʊˈveɪʃn/ | She received a standing ovation. | Elle a reçu une ovation debout.
+medley | pot-pourri | n | C2 | /ˈmedli/ | The band played a medley of old songs. | Le groupe a joué un pot-pourri de vieilles chansons.
+recital | récital | n | C2 | /rɪˈsaɪtl/ | She gave a piano recital. | Elle a donné un récital de piano.
+banjo | banjo | n | C1 | /ˈbændʒəʊ/ | He plays the banjo. | Il joue du banjo.
+monologue | monologue | n | C1 | /ˈmɒnəlɒɡ/ | The actor delivered a long monologue. | L'acteur a prononcé un long monologue.
+troupe | troupe | n | C2 | /truːp/ | A theatre troupe visited the town. | Une troupe de théâtre est passée en ville.
+cabaret | cabaret | n | C2 | /ˈkæbəreɪ/ | They went to a cabaret in Paris. | Ils sont allés dans un cabaret à Paris.
+melodic | mélodique | adj | C2 | /məˈlɒdɪk/ | The song is very melodic. | La chanson est très mélodieuse.
+sidekick | acolyte, faire-valoir | n | C1 | /ˈsaɪdkɪk/ | The hero and his sidekick saved the day. | Le héros et son acolyte ont sauvé la situation.
+accompaniment | accompagnement | n | C2 | /əˈkʌmpənimənt/ | She sang with piano accompaniment. | Elle a chanté avec un accompagnement au piano.
+choral | choral | adj | C2 | /ˈkɔːrəl/ | They sang choral music. | Ils ont chanté de la musique chorale.
+cyborg | cyborg | n | C1 | /ˈsaɪbɔːɡ/ | The film is about a cyborg. | Le film parle d'un cyborg.
+modernist | moderniste | adj | C2 | /ˈmɒdənɪst/ | The building is modernist. | Le bâtiment est de style moderniste.
+playhouse | théâtre | n | C2 | /ˈpleɪhaʊs/ | They went to the local playhouse. | Ils sont allés au théâtre du coin.
+anecdote | anecdote | n | C1 | /ˈænɪkdəʊt/ | He told a funny anecdote. | Il a raconté une anecdote drôle.
+bassist | bassiste | n | C1 | /ˈbeɪsɪst/ | The band needs a new bassist. | Le groupe a besoin d'un nouveau bassiste.
+gnome | gnome, nain de jardin | n | C1 | /nəʊm/ | There's a gnome in the garden. | Il y a un nain dans le jardin.
+opal | opale | n | C2 | /ˈəʊpl/ | She wore an opal ring. | Elle portait une bague en opale.
+polka | polka | n | C2 | /ˈpɒlkə/ | They danced the polka. | Ils ont dansé la polka.
+caricature | caricature | n | C1 | /ˈkærɪkətʃʊə/ | He drew a caricature of the teacher. | Il a dessiné une caricature du professeur.
+dystopian | dystopique | adj | C2 | /dɪˈstəʊpiən/ | It's a dystopian novel. | C'est un roman dystopique.
+philharmonic | philharmonique | adj | C2 | /ˌfɪlɑːˈmɒnɪk/ | We went to a philharmonic concert. | Nous sommes allés à un concert philharmonique.
+prequel | préquelle | n | C1 | /ˈpriːkwəl/ | The prequel tells the hero's childhood. | La préquelle raconte l'enfance du héros.
+songwriting | composition de chansons | n | C1 | /ˈsɒŋraɪtɪŋ/ | She has a gift for songwriting. | Elle a un don pour écrire des chansons.
+samba | samba | n | C2 | /ˈsæmbə/ | They danced the samba. | Ils ont dansé la samba.
+cadence | cadence, rythme | n | C2 | /ˈkeɪdns/ | The poem has a beautiful cadence. | Le poème a une belle cadence.
+dirge | chant funèbre | n | C2 | /dɜːdʒ/ | They sang a mournful dirge. | Ils ont chanté un chant funèbre.
+doggerel | vers de mirliton | n | C2 | /ˈdɒɡərəl/ | The poem is mere doggerel. | Le poème n'est que de la mauvaise poésie.
+authorship | paternité (d'une œuvre) | n | C2 | /ˈɔːθəʃɪp/ | The authorship of the poem is disputed. | La paternité du poème est contestée.
+provenance | provenance, origine | n | C2 | /ˈprɒvənəns/ | The provenance of the manuscript is unknown. | La provenance du manuscrit est inconnue.
+autobiographical | autobiographique | adj | C1 | /ˌɔːtəˌbaɪəˈɡræfɪkl/ | Her novel is partly autobiographical. | Son roman est en partie autobiographique.
+kiln | four (de potier) | n | C2 | /kɪln/ | The pots are fired in a kiln. | Les poteries sont cuites dans un four.
+quill | plume (d'oie) | n | C2 | /kwɪl/ | Scholars once wrote with a quill. | Autrefois, les savants écrivaient avec une plume d'oie.
+craftsmanship | savoir-faire, artisanat | n | C1 | /ˈkrɑːftsmənʃɪp/ | The mosque shows fine craftsmanship. | La mosquée témoigne d'un grand savoir-faire.
+improvisation | improvisation | n | C1 | /ˌɪmprəvaɪˈzeɪʃn/ | Jazz is based on improvisation. | Le jazz repose sur l'improvisation.
+patchwork | patchwork, mosaïque | n | C1 | /ˈpætʃwɜːk/ | The country is a patchwork of cultures. | Le pays est une mosaïque de cultures.
+pseudonym | pseudonyme | n | C1 | /ˈsjuːdənɪm/ | She writes under a pseudonym. | Elle écrit sous un pseudonyme.
+trope | trope, lieu commun | n | C2 | /trəʊp/ | The lost child is a common trope in fiction. | L'enfant perdu est un lieu commun de la fiction.
+biographer | biographe | n | C1 | /baɪˈɒɡrəfə/ | Ibn Ishaq was an early biographer of the Prophet. | Ibn Ishaq fut l'un des premiers biographes du Prophète.
+tonal | tonal | adj | C2 | /ˈtəʊnl/ | Chinese is a tonal language. | Le chinois est une langue tonale.
+basilica | basilique | n | C2 | /bəˈzɪlɪkə/ | We visited the old basilica. | Nous avons visité la vieille basilique.
+novella | court roman, nouvelle | n | C2 | /nəˈvelə/ | The novella is only eighty pages long. | Le court roman ne fait que quatre-vingts pages.
+octave | octave | n | C2 | /ˈɒktɪv/ | Her voice spans three octaves. | Sa voix couvre trois octaves.
+postmodern | postmoderne | adj | C2 | /ˌpəʊstˈmɒdn/ | It's a postmodern building. | C'est un bâtiment postmoderne.
+nave | nef | n | C2 | /neɪv/ | The nave of the cathedral is huge. | La nef de la cathédrale est immense.
+requiem | requiem | n | C2 | /ˈrekwiəm/ | Mozart composed a requiem. | Mozart a composé un requiem.
+confessional | autobiographique, intime | adj | C2 | /kənˈfeʃənl/ | She writes confessional poetry. | Elle écrit une poésie intime.
+masquerade | mascarade | n | C2 | /ˌmæskəˈreɪd/ | Their marriage was a masquerade. | Leur mariage était une mascarade.
+melodrama | mélodrame | n | C1 | /ˈmelədrɑːmə/ | Stop the melodrama! | Arrête ton mélodrame !
+monochrome | monochrome, en noir et blanc | adj | C1 | /ˈmɒnəkrəʊm/ | The photos are monochrome. | Les photos sont en noir et blanc.
+discography | discographie | n | C2 | /dɪˈskɒɡrəfi/ | His discography includes ten albums. | Sa discographie compte dix albums.
+magenta | magenta | adj | C1 | /məˈdʒentə/ | She wore a magenta scarf. | Elle portait une écharpe magenta.
+monogram | monogramme | n | C2 | /ˈmɒnəɡræm/ | The towels have a monogram. | Les serviettes portent un monogramme.
+mythic | mythique | adj | C2 | /ˈmɪθɪk/ | The hero has mythic status. | Le héros a un statut mythique.
+harmonica | harmonica | n | B2 | /hɑːˈmɒnɪkə/ | He plays the harmonica. | Il joue de l'harmonica.
+posthumous | posthume | adj | C2 | /ˈpɒstjʊməs/ | The book was a posthumous publication. | Le livre a été publié à titre posthume.
+trombone | trombone | n | B2 | /trɒmˈbəʊn/ | She plays the trombone in a band. | Elle joue du trombone dans un orchestre.
+reprise | reprise | n | C2 | /rɪˈpriːz/ | The band played a reprise of the song. | Le groupe a repris la chanson.
+headliner | tête d'affiche | n | C1 | /ˈhedlaɪnə/ | The headliner comes on at ten. | La tête d'affiche passe à vingt-deux heures.
+oratory | art oratoire, éloquence | n | C2 | /ˈɒrətri/ | The imam is famous for his oratory. | L'imam est célèbre pour son éloquence.
+serenade | sérénade | n | C2 | /ˌserəˈneɪd/ | He sang a serenade under her window. | Il a chanté une sérénade sous sa fenêtre.
+flamenco | flamenco | n | B2 | /fləˈmeŋkəʊ/ | Flamenco has roots in Andalusia. | Le flamenco a ses racines en Andalousie.
+operatic | d'opéra, lyrique | adj | C2 | /ˌɒpəˈrætɪk/ | She has an operatic voice. | Elle a une voix lyrique.
+bugle | clairon | n | C2 | /ˈbjuːɡl/ | A bugle sounded at dawn. | Un clairon a sonné à l'aube.
+tableau | tableau (vivant) | n | C2 | /ˈtæbləʊ/ | The children formed a tableau. | Les enfants ont formé un tableau vivant.
+organist | organiste | n | C2 | /ˈɔːɡənɪst/ | The organist played at the wedding. | L'organiste a joué au mariage.
+sculptural | sculptural | adj | C2 | /ˈskʌlptʃərəl/ | The building has sculptural forms. | Le bâtiment a des formes sculpturales.
+iconography | iconographie | n | C2 | /ˌaɪkəˈnɒɡrəfi/ | Islamic art avoids human iconography. | L'art islamique évite l'iconographie humaine.
+nymph | nymphe | n | C2 | /nɪmf/ | Greek myths tell of nymphs. | Les mythes grecs parlent de nymphes.
+figurine | figurine | n | C1 | /ˌfɪɡəˈriːn/ | She collects porcelain figurines. | Elle collectionne les figurines en porcelaine.
+pagoda | pagode | n | C2 | /pəˈɡəʊdə/ | We visited a pagoda in Vietnam. | Nous avons visité une pagode au Vietnam.
+quintet | quintette | n | C2 | /kwɪnˈtet/ | A jazz quintet played at the festival. | Un quintette de jazz a joué au festival.
+amphitheatre | amphithéâtre | n | C1 | /ˈæmfɪθɪətə/ | The Roman amphitheatre is well preserved. | L'amphithéâtre romain est bien conservé.
+artiste | artiste (de spectacle) | n | C2 | /ɑːˈtiːst/ | The artiste performed on stage. | L'artiste s'est produit sur scène.
+stencil | pochoir | n | C1 | /ˈstensl/ | She painted the letters with a stencil. | Elle a peint les lettres au pochoir.
+symphonic | symphonique | adj | C2 | /sɪmˈfɒnɪk/ | They played symphonic music. | Ils ont joué de la musique symphonique.
+tuba | tuba | n | B2 | /ˈtjuːbə/ | He plays the tuba in a brass band. | Il joue du tuba dans une fanfare.
+crescendo | crescendo | n | C2 | /krəˈʃendəʊ/ | The music rose to a crescendo. | La musique a atteint un crescendo.
+terracotta | terre cuite | n | C1 | /ˌterəˈkɒtə/ | The pots are made of terracotta. | Les pots sont en terre cuite.
+atelier | atelier (d'artiste) | n | C2 | /əˈteliə/ | The painter works in a small atelier. | Le peintre travaille dans un petit atelier.
+matinee | matinée (séance de l'après-midi) | n | C2 | /ˈmætɪneɪ/ | We went to the matinee. | Nous sommes allés à la séance de l'après-midi.
+subtext | sous-entendu, message implicite | n | C2 | /ˈsʌbtekst/ | The subtext of the film is political. | Le message implicite du film est politique.
+antiquarian | antiquaire ; ancien | adj | C2 | /ˌæntɪˈkweəriən/ | He collects antiquarian books. | Il collectionne les livres anciens.
+canto | chant (d'un poème) | n | C2 | /ˈkæntəʊ/ | The poem has twelve cantos. | Le poème compte douze chants.
+synthesiser | synthétiseur | n | C1 | /ˈsɪnθəsaɪzə/ | He plays the synthesiser. | Il joue du synthétiseur.
+screenwriting | écriture de scénario | n | C1 | /ˈskriːnraɪtɪŋ/ | She took a screenwriting course. | Elle a suivi un cours d'écriture de scénario.
+centaur | centaure | n | C2 | /ˈsentɔː/ | A centaur is half man, half horse. | Un centaure est mi-homme, mi-cheval.
+frieze | frise | n | C2 | /friːz/ | A frieze of verses runs around the dome. | Une frise de versets court autour de la coupole.
+neoclassical | néoclassique | adj | C2 | /ˌniːəʊˈklæsɪkl/ | The museum is a neoclassical building. | Le musée est un bâtiment néoclassique.
+oeuvre | œuvre (d'un artiste) | n | C2 | /ˈɜːvrə/ | Ibn Sina's oeuvre is immense. | L'œuvre d'Ibn Sina est immense.
+storybook | livre d'histoires | n | B2 | /ˈstɔːribʊk/ | The village looks like something from a storybook. | Le village ressemble à un livre de contes.
+geisha | geisha | n | C1 | /ˈɡeɪʃə/ | The geisha performed a traditional dance. | La geisha a exécuté une danse traditionnelle.
+mandala | mandala | n | C2 | /ˈmændələ/ | Buddhist monks draw mandalas. | Les moines bouddhistes dessinent des mandalas.
+mandolin | mandoline | n | C1 | /ˈmændəlɪn/ | He plays the mandolin. | Il joue de la mandoline.
+rotunda | rotonde | n | C2 | /rəʊˈtʌndə/ | The library has a domed rotunda. | La bibliothèque a une rotonde surmontée d'une coupole.
+sepia | sépia | adj | C2 | /ˈsiːpiə/ | Old sepia photos hung on the wall. | De vieilles photos sépia étaient accrochées au mur.
+slapstick | comique tarte à la crème, burlesque | n | C1 | /ˈslæpstɪk/ | Children love slapstick comedy. | Les enfants adorent le comique burlesque.
+ornamentation | ornementation | n | C2 | /ˌɔːnəmenˈteɪʃn/ | The ornamentation of the mihrab is exquisite. | L'ornementation du mihrab est exquise.
+showman | homme de spectacle, bateleur | n | C2 | /ˈʃəʊmən/ | He's a natural showman. | C'est un homme de spectacle né.
+obelisk | obélisque | n | C2 | /ˈɒbəlɪsk/ | The obelisk came from Luxor. | L'obélisque vient de Louxor.
+lifelike | réaliste, plus vrai que nature | adj | C2 | /ˈlaɪflaɪk/ | The statue is lifelike. | La statue est plus vraie que nature.
+understudy | doublure (au théâtre) | n | C2 | /ˈʌndəstʌdi/ | The understudy took the lead role. | La doublure a repris le rôle principal.
 `,
 );

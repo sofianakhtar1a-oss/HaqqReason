@@ -253,5 +253,67 @@ smart casual | tenue de ville décontractée | expr | B2 | /ˌsmɑːt ˈkæʒuə
 washing | lessive, linge | n | A2 | /ˈwɒʃɪŋ/ | Hang the washing outside. | Étends le linge dehors.
 coat hanger | cintre | n | A2 | /ˈkəʊt ˌhæŋər/ | Put your shirt on a coat hanger. | Mets ta chemise sur un cintre.
 care label | étiquette d'entretien | n | B2 | /ˈkeə ˌleɪbl/ | Check the care label before washing. | Regarde l'étiquette d'entretien avant de laver.
+ribbon | ruban | n | A2 | /ˈrɪbən/ | She tied her hair with a ribbon. | Elle a attaché ses cheveux avec un ruban.
+handkerchief | mouchoir | n | B1 | /ˈhæŋkətʃiːf/ | He wiped his face with a handkerchief. | Il s'est essuyé le visage avec un mouchoir.
+jewel | bijou, joyau | n | B1 | /ˈdʒuːəl/ | The crown is covered with jewels. | La couronne est couverte de joyaux.
+stripe | rayure | n | B1 | /straɪp/ | He wore a shirt with blue stripes. | Il portait une chemise à rayures bleues.
+underpants | slip, caleçon | n | B1 | /ˈʌndəpænts/ | Pack enough socks and underpants. | Prends assez de chaussettes et de caleçons.
+worn | usé | adj | B1 | /wɔːn/ | His shoes are old and worn. | Ses chaussures sont vieilles et usées.
+badge | badge, insigne | n | B2 | /bædʒ/ | Visitors must wear a badge. | Les visiteurs doivent porter un badge.
+dye | teinture | n | B2 | /daɪ/ | She uses natural hair dye. | Elle utilise une teinture naturelle pour les cheveux.
+fragrance | parfum | n | B2 | /ˈfreɪɡrəns/ | The fragrance of jasmine filled the air. | Le parfum du jasmin emplissait l'air.
+gaudy | criard, tape-à-l'œil | adj | C1 | /ˈɡɔːdi/ | He wore a gaudy tie. | Il portait une cravate criarde.
+patch | pièce ; parcelle | n | B2 | /pætʃ/ | She sewed a patch on his jeans. | Elle a cousu une pièce sur son jean.
+pearl | perle | n | B2 | /pɜːl/ | She wore a pearl necklace. | Elle portait un collier de perles.
+in tatters | en lambeaux | expr | C1 | /ɪn ˈtætəz/ | His clothes were in tatters. | Ses vêtements étaient en lambeaux.
+thread | fil | n | B2 | /θred/ | I need a needle and thread. | J'ai besoin d'une aiguille et de fil.
+tortoiseshell | écaille (de tortue) | n | C1 | /ˈtɔːtəsʃel/ | She wears tortoiseshell glasses. | Elle porte des lunettes en écaille.
+undressed | déshabillé | adj | B2 | /ʌnˈdrest/ | The children got undressed for bed. | Les enfants se sont déshabillés pour aller au lit.
+unfashionable | démodé | adj | B2 | /ʌnˈfæʃnəbl/ | Those shoes are unfashionable now. | Ces chaussures sont démodées maintenant.
+to weave | tisser | v | B2 | /wiːv/ | She weaves carpets by hand. | Elle tisse des tapis à la main.
+textile | textile | n | B2 | /ˈtekstaɪl/ | The town is famous for its textiles. | La ville est célèbre pour ses textiles.
+retro | rétro | adj | B2 | /ˈretrəʊ/ | She likes retro fashion. | Elle aime la mode rétro.
+apparel | habillement, vêtements | n | C2 | /əˈpærəl/ | The shop sells sports apparel. | Le magasin vend des vêtements de sport.
+cosmetic | cosmétique ; superficiel | adj | C1 | /kɒzˈmetɪk/ | The changes are only cosmetic. | Les changements ne sont que superficiels.
+wig | perruque | n | B2 | /wɪɡ/ | The actor wore a wig. | L'acteur portait une perruque.
+yarn | fil (à tricoter) | n | C1 | /jɑːn/ | She knits with wool yarn. | Elle tricote avec du fil de laine.
+cologne | eau de Cologne | n | B2 | /kəˈləʊn/ | He wears a light cologne. | Il porte une eau de Cologne légère.
+specs | lunettes (familier) | n | B2 | /speks/ | Where are my specs? | Où sont mes lunettes ?
+lingerie | lingerie | n | C1 | /ˈlænʒəri/ | The shop sells lingerie and nightwear. | La boutique vend de la lingerie et des vêtements de nuit.
+buckle | boucle (de ceinture) | n | C1 | /ˈbʌkl/ | The belt has a silver buckle. | La ceinture a une boucle argentée.
+musk | musc | n | C1 | /mʌsk/ | The Prophet liked the scent of musk. | Le Prophète aimait le parfum du musc.
+makeover | relooking, transformation | n | C1 | /ˈmeɪkəʊvə/ | The old shop got a makeover. | La vieille boutique a été entièrement rénovée.
+bead | perle (de collier) | n | C1 | /biːd/ | He counted the prayer beads. | Il égrenait son chapelet.
+pouch | pochette, bourse | n | C1 | /paʊtʃ/ | He kept his coins in a leather pouch. | Il gardait ses pièces dans une bourse en cuir.
+footwear | chaussures | n | C1 | /ˈfʊtweə/ | The shop sells sports footwear. | Le magasin vend des chaussures de sport.
+cloak | cape ; manteau | n | C1 | /kləʊk/ | He wrapped his cloak around him. | Il s'est enveloppé dans sa cape.
+manicure | manucure | n | C1 | /ˈmænɪkjʊə/ | She had a manicure before the wedding. | Elle s'est fait faire une manucure avant le mariage.
+pedicure | pédicure (soin) | n | C1 | /ˈpedɪkjʊə/ | She booked a pedicure. | Elle a réservé un soin des pieds.
+strap | bretelle, sangle | n | C1 | /stræp/ | The strap of my bag broke. | La bandoulière de mon sac s'est cassée.
+bonnet | bonnet (de bébé) ; capot | n | C2 | /ˈbɒnɪt/ | Open the bonnet of the car. | Ouvre le capot de la voiture.
+mascara | mascara | n | B2 | /mæˈskɑːrə/ | She put on some mascara. | Elle a mis du mascara.
+couture | haute couture | n | C2 | /kuˈtjʊə/ | Paris is the capital of couture. | Paris est la capitale de la haute couture.
+paisley | motif cachemire | n | C2 | /ˈpeɪzli/ | He wore a paisley tie. | Il portait une cravate à motif cachemire.
+sash | écharpe (portée en bandoulière) | n | C2 | /sæʃ/ | The mayor wore a sash. | Le maire portait une écharpe.
+bespoke | sur mesure | adj | C2 | /bɪˈspəʊk/ | He wears a bespoke suit. | Il porte un costume sur mesure.
+tunic | tunique | n | C1 | /ˈtjuːnɪk/ | He wore a long white tunic. | Il portait une longue tunique blanche.
+sari | sari | n | C1 | /ˈsɑːri/ | She wore a red sari. | Elle portait un sari rouge.
+khaki | kaki | adj | B2 | /ˈkɑːki/ | He wears khaki trousers. | Il porte un pantalon kaki.
+corset | corset | n | C1 | /ˈkɔːsɪt/ | Women once wore tight corsets. | Autrefois, les femmes portaient des corsets serrés.
+fez | fez, chéchia | n | C1 | /fez/ | My grandfather wore a red fez. | Mon grand-père portait un fez rouge.
+kimono | kimono | n | B2 | /kɪˈməʊnəʊ/ | She wore a silk kimono. | Elle portait un kimono en soie.
+kilt | kilt | n | B2 | /kɪlt/ | He wore a kilt at the wedding. | Il portait un kilt au mariage.
+locket | médaillon | n | C1 | /ˈlɒkɪt/ | She wears a silver locket. | Elle porte un médaillon en argent.
+topaz | topaze | n | C2 | /ˈtəʊpæz/ | Her ring has a topaz. | Sa bague porte une topaze.
+headgear | couvre-chef | n | C2 | /ˈhedɡɪə/ | Traditional headgear varies by region. | Le couvre-chef traditionnel varie selon la région.
+halter neck | dos-nu (à bretelle autour du cou) | n | C2 | /ˈhɔːltə nek/ | She wore a halter-neck dress. | Elle portait une robe dos-nu.
+tracksuit bottoms | bas de survêtement | n | B1 | /ˈtræksuːt ˌbɒtəmz/ | He wears tracksuit bottoms at home. | Il porte un bas de survêtement à la maison.
+agate | agate | n | C2 | /ˈæɡət/ | Her ring is set with an agate. | Sa bague est sertie d'une agate.
+swatch | échantillon (de tissu) | n | C2 | /swɒtʃ/ | She brought fabric swatches. | Elle a apporté des échantillons de tissu.
+wristband | bracelet (en tissu) | n | B2 | /ˈrɪstbænd/ | Festival guests wear a wristband. | Les festivaliers portent un bracelet.
+chiffon | mousseline | n | C2 | /ˈʃɪfɒn/ | She wore a chiffon scarf. | Elle portait une écharpe en mousseline.
+lapel | revers (de veste) | n | C2 | /ləˈpel/ | He wore a badge on his lapel. | Il portait un badge au revers de sa veste.
+skimpy | étriqué, minuscule | adj | C2 | /ˈskɪmpi/ | Islam recommends modest rather than skimpy clothes. | L'islam recommande des vêtements pudiques plutôt qu'étriqués.
+stretchy | élastique, extensible | adj | B2 | /ˈstretʃi/ | The fabric is stretchy. | Le tissu est extensible.
 `,
 );

@@ -1,11 +1,11 @@
 /*
  * Format compact des thèmes : une ligne par mot, champs séparés par « | » :
  *   anglais | français | nature | niveau | prononciation (API) | exemple anglais | exemple français
- * Natures : n (nom), v (verbe), adj, adv, expr, prep, pron, conj.
+ * Natures : n (nom), v (verbe), adj, adv, expr, prep, pron, conj, det (déterminant).
  */
 import { type Entree, type Nature, type Niveau, NIVEAUX, type Theme } from "../types";
 
-const NATURES: Record<string, Nature> = { n: "nom", v: "verbe", adj: "adjectif", adv: "adverbe", expr: "expression", prep: "préposition", pron: "pronom", conj: "conjonction" };
+const NATURES: Record<string, Nature> = { n: "nom", v: "verbe", adj: "adjectif", adv: "adverbe", expr: "expression", prep: "préposition", pron: "pronom", conj: "conjonction", det: "déterminant" };
 
 export function theme(id: string, nom: string, description: string, icone: string, lignes: string): Theme {
   const entrees: Entree[] = lignes

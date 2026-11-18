@@ -23,10 +23,10 @@ for (const f of fichiers) {
 }
 
 /*
- * Volume attendu : 589 mots d'origine, puis deux lots ajoutés sans doublon
- * (2 000 mots, puis 4 000 mots) : 6 589 entrées en tout.
+ * Volume attendu : 589 mots d'origine, puis quatre lots ajoutés sans doublon
+ * (2 000, 4 000, 5 000, puis 9 000 mots) : 20 589 entrées en tout.
  */
-const TOTAL_ATTENDU = 589 + 2000 + 4000 + 5000;
+const TOTAL_ATTENDU = 589 + 2000 + 4000 + 5000 + 9000;
 
 /** Forme de comparaison d'un mot : sans « to », sans casse, sans ponctuation finale. */
 const cle = (en: string) =>
@@ -44,7 +44,7 @@ const vus = new Map<string, string[]>();
 for (const x of toutes) vus.set(cle(x.en), [...(vus.get(cle(x.en)) ?? []), `${x.theme}:${x.en}`]);
 const doublons = [...vus.entries()].filter(([, l]) => l.length > 1);
 
-ok(`48 thèmes (${themes.length} trouvés)`, themes.length === 48, themes.map((t) => t.id));
+ok(`52 thèmes (${themes.length} trouvés)`, themes.length === 52, themes.map((t) => t.id));
 ok(`aucun mot en double dans tout le site (${toutes.length} entrées)`, doublons.length === 0, doublons);
 ok("aucun identifiant de thème en double", new Set(themes.map((t) => t.id)).size === themes.length);
 ok("toutes les prononciations entre barres obliques", toutes.every((x) => /^\/.+\/$/.test(x.api)), toutes.filter((x) => !/^\/.+\/$/.test(x.api)).map((x) => x.en));

@@ -235,5 +235,225 @@ civic duty | devoir civique | n | C1 | /ˌsɪvɪk ˈdjuːti/ | Voting is a civic
 jury service | fonction de juré | n | C1 | /ˈdʒʊəri ˌsɜːvɪs/ | I was called for jury service. | J'ai été convoqué comme juré.
 national service | service militaire | n | B2 | /ˌnæʃnəl ˈsɜːvɪs/ | My grandfather did national service. | Mon grand-père a fait son service militaire.
 conscription | conscription | n | C1 | /kənˈskrɪpʃn/ | Conscription ended in France in 1997. | La conscription a pris fin en France en 1997.
+flag | drapeau | n | A1 | /flæɡ/ | The flag is green and white. | Le drapeau est vert et blanc.
+conservative | conservateur | adj | B1 | /kənˈsɜːvətɪv/ | My grandfather has conservative views. | Mon grand-père a des opinions conservatrices.
+first lady | première dame | n | B1 | /ˌfɜːst ˈleɪdi/ | The first lady visited the hospital. | La première dame a visité l'hôpital.
+governor | gouverneur | n | B1 | /ˈɡʌvənə/ | The governor of the bank resigned. | Le gouverneur de la banque a démissionné.
+nationalist | nationaliste | n | B2 | /ˈnæʃnəlɪst/ | The nationalists won the election. | Les nationalistes ont remporté l'élection.
+to oppress | opprimer | v | B2 | /əˈpres/ | The regime oppressed its people. | Le régime opprimait son peuple.
+oppression | oppression | n | B2 | /əˈpreʃn/ | They fought against oppression. | Ils ont lutté contre l'oppression.
+racial | racial | adj | B2 | /ˈreɪʃl/ | Racial discrimination is illegal. | La discrimination raciale est illégale.
+vice president | vice-président | n | B1 | /ˌvaɪs ˈprezɪdənt/ | The vice president gave a speech. | Le vice-président a prononcé un discours.
+abuse | abus ; maltraitance | n | B2 | /əˈbjuːs/ | Alcohol abuse destroys families. | L'abus d'alcool détruit des familles.
+chancellor | chancelier | n | B2 | /ˈtʃɑːnsələ/ | The German chancellor visited Paris. | Le chancelier allemand s'est rendu à Paris.
+corrupt | corrompu | adj | B2 | /kəˈrʌpt/ | The corrupt officials were arrested. | Les fonctionnaires corrompus ont été arrêtés.
+donation | don | n | B2 | /dəʊˈneɪʃn/ | They made a donation to the mosque. | Ils ont fait un don à la mosquée.
+ethnic | ethnique | adj | B2 | /ˈeθnɪk/ | The city has many ethnic groups. | La ville compte de nombreux groupes ethniques.
+federal | fédéral | adj | B2 | /ˈfedərəl/ | It's a federal law. | C'est une loi fédérale.
+governmental | gouvernemental | adj | B2 | /ˌɡʌvnˈmentl/ | It's a non-governmental organisation. | C'est une organisation non gouvernementale.
+institution | institution, établissement | n | B2 | /ˌɪnstɪˈtjuːʃn/ | The university is an old institution. | L'université est une vieille institution.
+legislative | législatif | adj | C1 | /ˈledʒɪslətɪv/ | Parliament has legislative power. | Le Parlement détient le pouvoir législatif.
+liberal | libéral | adj | B2 | /ˈlɪbərəl/ | She has liberal views. | Elle a des idées libérales.
+needy | nécessiteux | adj | B2 | /ˈniːdi/ | Zakat is given to the needy. | La zakat est donnée aux nécessiteux.
+nomination | nomination ; candidature | n | B2 | /ˌnɒmɪˈneɪʃn/ | The film received three nominations. | Le film a reçu trois nominations.
+nominee | candidat, nominé | n | C1 | /ˌnɒmɪˈniː/ | She's a nominee for the prize. | Elle est nominée pour le prix.
+orator | orateur | n | C1 | /ˈɒrətə/ | He was a brilliant orator. | C'était un brillant orateur.
+patriot | patriote | n | B2 | /ˈpeɪtriət/ | He died a patriot. | Il est mort en patriote.
+patriotic | patriotique, patriote | adj | B2 | /ˌpeɪtriˈɒtɪk/ | They sang patriotic songs. | Ils ont chanté des chants patriotiques.
+patriotism | patriotisme | n | C1 | /ˈpeɪtriətɪzəm/ | Patriotism is not nationalism. | Le patriotisme n'est pas le nationalisme.
+presidency | présidence | n | B2 | /ˈprezɪdənsi/ | During his presidency, the economy grew. | Pendant sa présidence, l'économie a progressé.
+presidential | présidentiel | adj | B2 | /ˌprezɪˈdenʃl/ | The presidential election is in May. | L'élection présidentielle a lieu en mai.
+racist | raciste | n | B2 | /ˈreɪsɪst/ | Racists have no place in our club. | Les racistes n'ont pas leur place dans notre club.
+repression | répression | n | C1 | /rɪˈpreʃn/ | The people suffered years of repression. | Le peuple a subi des années de répression.
+statesman | homme d'État | n | C1 | /ˈsteɪtsmən/ | He was a great statesman. | C'était un grand homme d'État.
+subculture | sous-culture | n | C1 | /ˈsʌbkʌltʃə/ | Skateboarding has its own subculture. | Le skate a sa propre sous-culture.
+conspiracy | complot, conspiration | n | B2 | /kənˈspɪrəsi/ | He believes in a conspiracy. | Il croit à un complot.
+parliamentary | parlementaire | adj | B2 | /ˌpɑːləˈmentri/ | The parliamentary elections are in June. | Les élections législatives ont lieu en juin.
+governance | gouvernance | n | C1 | /ˈɡʌvənəns/ | Good governance fights corruption. | Une bonne gouvernance combat la corruption.
+mandate | mandat | n | C1 | /ˈmændeɪt/ | The government has a mandate to reform. | Le gouvernement a reçu mandat de réformer.
+sovereign | souverain | adj | C1 | /ˈsɒvrɪn/ | It's a sovereign state. | C'est un État souverain.
+charitable | caritatif ; charitable | adj | B2 | /ˈtʃærətəbl/ | She gives to charitable causes. | Elle fait des dons à des causes caritatives.
+humanitarian | humanitaire | adj | B2 | /hjuːˌmænɪˈteəriən/ | They sent humanitarian aid. | Ils ont envoyé de l'aide humanitaire.
+advocacy | défense, plaidoyer | n | C1 | /ˈædvəkəsi/ | She works in advocacy for refugees. | Elle milite pour la défense des réfugiés.
+socialism | socialisme | n | C1 | /ˈsəʊʃəlɪzəm/ | He wrote a book on socialism. | Il a écrit un livre sur le socialisme.
+boycott | boycott | n | C1 | /ˈbɔɪkɒt/ | They called for a boycott of the products. | Ils ont appelé au boycott des produits.
+fascist | fasciste | n | C1 | /ˈfæʃɪst/ | The fascists took power in 1922. | Les fascistes ont pris le pouvoir en 1922.
+ideological | idéologique | adj | C1 | /ˌaɪdiəˈlɒdʒɪkl/ | They have deep ideological differences. | Ils ont de profondes divergences idéologiques.
+ethnicity | appartenance ethnique | n | C1 | /eθˈnɪsəti/ | People of every ethnicity live here. | Des gens de toutes origines vivent ici.
+bilateral | bilatéral | adj | C1 | /ˌbaɪˈlætərəl/ | They signed a bilateral agreement. | Ils ont signé un accord bilatéral.
+allegiance | allégeance, loyauté | n | C2 | /əˈliːdʒəns/ | They swore allegiance to the king. | Ils ont prêté allégeance au roi.
+constituency | circonscription | n | C2 | /kənˈstɪtjuənsi/ | She represents a rural constituency. | Elle représente une circonscription rurale.
+stigma | stigmatisation, opprobre | n | C2 | /ˈstɪɡmə/ | There's still a stigma attached to mental illness. | La maladie mentale reste stigmatisée.
+outreach | action de proximité, sensibilisation | n | C2 | /ˈaʊtriːtʃ/ | The mosque runs outreach programmes. | La mosquée mène des actions auprès du public.
+neutrality | neutralité | n | C1 | /njuːˈtræləti/ | Switzerland is known for its neutrality. | La Suisse est connue pour sa neutralité.
+honorary | honoraire, d'honneur | adj | C1 | /ˈɒnərəri/ | She received an honorary degree. | Elle a reçu un doctorat honoris causa.
+electorate | électorat | n | C1 | /ɪˈlektərət/ | The electorate is divided. | L'électorat est divisé.
+supremacy | suprématie | n | C2 | /suːˈpreməsi/ | They fought for naval supremacy. | Ils luttaient pour la suprématie navale.
+leftist | gauchiste, de gauche | n | C2 | /ˈleftɪst/ | The leftists won the vote. | La gauche a remporté le vote.
+legitimacy | légitimité | n | C2 | /lɪˈdʒɪtɪməsi/ | They questioned the legitimacy of the election. | Ils ont contesté la légitimité de l'élection.
+militant | militant ; activiste radical | n | C1 | /ˈmɪlɪtənt/ | The militants attacked the village. | Les militants armés ont attaqué le village.
+regulator | organisme de régulation | n | C1 | /ˈreɡjuleɪtə/ | The energy regulator raised prices. | Le régulateur de l'énergie a relevé les prix.
+sexist | sexiste | adj | C1 | /ˈseksɪst/ | That's a sexist remark. | C'est une remarque sexiste.
+bloc | bloc (politique) | n | C2 | /blɒk/ | The countries formed a trade bloc. | Les pays ont formé un bloc commercial.
+caste | caste | n | C2 | /kɑːst/ | Islam rejects the caste system. | L'islam rejette le système des castes.
+consul | consul | n | C1 | /ˈkɒnsl/ | Contact the French consul. | Contacte le consul de France.
+sheikh | cheikh | n | C1 | /ʃeɪk/ | The sheikh gave a lecture on patience. | Le cheikh a donné une conférence sur la patience.
+authoritarian | autoritaire | adj | C1 | /ɔːˌθɒrɪˈteəriən/ | It's an authoritarian regime. | C'est un régime autoritaire.
+fundraiser | collecte de fonds | n | C1 | /ˈfʌndreɪzə/ | The mosque held a fundraiser. | La mosquée a organisé une collecte de fonds.
+impeachment | destitution | n | C2 | /ɪmˈpiːtʃmənt/ | The president faced impeachment. | Le président a fait l'objet d'une procédure de destitution.
+societal | sociétal | adj | C2 | /səˈsaɪətl/ | These are societal changes. | Ce sont des changements sociétaux.
+libertarian | libertarien | n | C2 | /ˌlɪbəˈteəriən/ | He calls himself a libertarian. | Il se dit libertarien.
+to nominate | proposer, nommer | v | C1 | /ˈnɒmɪneɪt/ | She was nominated for the prize. | Elle a été proposée pour le prix.
+purge | purge, épuration | n | C2 | /pɜːdʒ/ | The dictator ordered a purge of the army. | Le dictateur a ordonné une purge de l'armée.
+demographics | démographie, données démographiques | n | C1 | /ˌdeməˈɡræfɪks/ | The demographics of the town are changing. | La population de la ville évolue.
+dissent | dissidence, désaccord | n | C2 | /dɪˈsent/ | The regime does not tolerate dissent. | Le régime ne tolère aucune contestation.
+comrade | camarade | n | C1 | /ˈkɒmreɪd/ | He fought beside his comrades. | Il s'est battu aux côtés de ses camarades.
+ministerial | ministériel | adj | C1 | /ˌmɪnɪˈstɪəriəl/ | There was a ministerial meeting in Brussels. | Il y a eu une réunion ministérielle à Bruxelles.
+empowerment | émancipation, autonomisation | n | C2 | /ɪmˈpaʊəmənt/ | Education leads to women's empowerment. | L'éducation favorise l'émancipation des femmes.
+anarchy | anarchie | n | C1 | /ˈænəki/ | The country fell into anarchy. | Le pays a sombré dans l'anarchie.
+liberalism | libéralisme | n | C2 | /ˈlɪbərəlɪzəm/ | Economic liberalism grew in the 19th century. | Le libéralisme économique s'est développé au XIXe siècle.
+discriminatory | discriminatoire | adj | C1 | /dɪˈskrɪmɪnətəri/ | The law is discriminatory. | La loi est discriminatoire.
+extremist | extrémiste | n | C1 | /ɪkˈstriːmɪst/ | Extremists distort the message of religion. | Les extrémistes déforment le message de la religion.
+subcommittee | sous-comité | n | C2 | /ˈsʌbkəmɪti/ | A subcommittee will study the question. | Un sous-comité étudiera la question.
+secretariat | secrétariat | n | C2 | /ˌsekrəˈteəriət/ | The UN secretariat is in New York. | Le secrétariat de l'ONU se trouve à New York.
+bigotry | sectarisme, intolérance | n | C2 | /ˈbɪɡətri/ | We must fight bigotry. | Nous devons lutter contre l'intolérance.
+conservatism | conservatisme | n | C2 | /kənˈsɜːvətɪzəm/ | The party represents conservatism. | Le parti incarne le conservatisme.
+plurality | pluralité ; majorité relative | n | C2 | /plʊəˈræləti/ | There is a plurality of opinions. | Il existe une pluralité d'opinions.
+candidacy | candidature | n | C2 | /ˈkændɪdəsi/ | She announced her candidacy for mayor. | Elle a annoncé sa candidature à la mairie.
+directorate | direction, directoire | n | C2 | /dəˈrektərət/ | The health directorate published a report. | La direction de la santé a publié un rapport.
+accession | accession, adhésion | n | C2 | /əkˈseʃn/ | Turkey's accession to the EU is uncertain. | L'adhésion de la Turquie à l'UE est incertaine.
+bourgeois | bourgeois | adj | C2 | /ˈbʊəʒwɑː/ | They have bourgeois values. | Ils ont des valeurs bourgeoises.
+multicultural | multiculturel | adj | C1 | /ˌmʌltiˈkʌltʃərəl/ | London is a multicultural city. | Londres est une ville multiculturelle.
+bipartisan | bipartite, des deux partis | adj | C2 | /ˌbaɪpɑːtɪˈzæn/ | The law had bipartisan support. | La loi a reçu le soutien des deux partis.
+legality | légalité | n | C2 | /liːˈɡæləti/ | They questioned the legality of the war. | Ils ont contesté la légalité de la guerre.
+populist | populiste | adj | C2 | /ˈpɒpjəlɪst/ | Populist parties are gaining support. | Les partis populistes gagnent du terrain.
+anarchist | anarchiste | n | C2 | /ˈænəkɪst/ | The anarchists rejected all government. | Les anarchistes rejetaient tout gouvernement.
+conformity | conformité, conformisme | n | C1 | /kənˈfɔːməti/ | Teenagers feel pressure towards conformity. | Les adolescents subissent une pression au conformisme.
+exploitation | exploitation | n | C1 | /ˌeksplɔɪˈteɪʃn/ | They fight against the exploitation of workers. | Ils luttent contre l'exploitation des travailleurs.
+elitist | élitiste | adj | C1 | /eɪˈliːtɪst/ | The club is seen as elitist. | Le club est jugé élitiste.
+faction | faction | n | C1 | /ˈfækʃn/ | The party split into two factions. | Le parti s'est divisé en deux factions.
+paternalistic | paternaliste | adj | C2 | /pəˌtɜːnəˈlɪstɪk/ | The company has a paternalistic style. | L'entreprise a un style paternaliste.
+impoverished | appauvri, démuni | adj | C1 | /ɪmˈpɒvərɪʃt/ | They help impoverished families. | Ils aident les familles démunies.
+bureaucratic | bureaucratique | adj | C1 | /ˌbjʊərəˈkrætɪk/ | The process is very bureaucratic. | La procédure est très bureaucratique.
+demographic | démographique | adj | C1 | /ˌdeməˈɡræfɪk/ | There are big demographic changes. | Il y a d'importants changements démographiques.
+socialisation | socialisation | n | C2 | /ˌsəʊʃəlaɪˈzeɪʃn/ | School plays a role in socialisation. | L'école joue un rôle dans la socialisation.
+deprivation | privation, misère | n | C1 | /ˌdeprɪˈveɪʃn/ | Many children live in deprivation. | Beaucoup d'enfants vivent dans la misère.
+individualism | individualisme | n | C2 | /ˌɪndɪˈvɪdʒuəlɪzəm/ | Modern society values individualism. | La société moderne valorise l'individualisme.
+centralised | centralisé | adj | C2 | /ˈsentrəlaɪzd/ | France has a centralised state. | La France a un État centralisé.
+regulatory | de réglementation | adj | C2 | /ˈreɡjələtəri/ | A regulatory body controls the banks. | Un organisme de régulation contrôle les banques.
+egalitarian | égalitaire | adj | C2 | /iˌɡælɪˈteəriən/ | They want an egalitarian society. | Ils veulent une société égalitaire.
+to decentralise | décentraliser | v | C2 | /ˌdiːˈsentrəlaɪz/ | The government plans to decentralise power. | Le gouvernement prévoit de décentraliser le pouvoir.
+anarchic | anarchique | adj | C2 | /əˈnɑːkɪk/ | The traffic was anarchic. | La circulation était anarchique.
+philanthropy | philanthropie | n | C2 | /fɪˈlænθrəpi/ | His philanthropy funded many schools. | Sa philanthropie a financé de nombreuses écoles.
+philanthropist | philanthrope | n | C2 | /fɪˈlænθrəpɪst/ | The philanthropist built a hospital. | Le philanthrope a construit un hôpital.
+philanthropic | philanthropique | adj | C2 | /ˌfɪlənˈθrɒpɪk/ | It's a philanthropic foundation. | C'est une fondation philanthropique.
+dissension | dissension | n | C2 | /dɪˈsenʃn/ | There is dissension within the party. | Il y a des dissensions au sein du parti.
+incumbent | titulaire, sortant | n | C2 | /ɪnˈkʌmbənt/ | The incumbent won the election. | Le sortant a remporté l'élection.
+crony | copain, acolyte | n | C2 | /ˈkrəʊni/ | He gave jobs to his cronies. | Il a distribué des postes à ses acolytes.
+plutocrat | ploutocrate | n | C2 | /ˈpluːtəkræt/ | The country is run by plutocrats. | Le pays est dirigé par des ploutocrates.
+milieu | milieu, environnement | n | C2 | /miːˈljɜː/ | He grew up in a working-class milieu. | Il a grandi dans un milieu ouvrier.
+unilateral | unilatéral | adj | C2 | /ˌjuːnɪˈlætrəl/ | It was a unilateral decision. | Ce fut une décision unilatérale.
+homophobia | homophobie | n | C2 | /ˌhəʊməˈfəʊbiə/ | The school fights against homophobia and bullying. | L'école lutte contre l'homophobie et le harcèlement.
+junta | junte | n | C2 | /ˈdʒʌntə/ | A military junta seized power. | Une junte militaire a pris le pouvoir.
+populace | population, peuple | n | C2 | /ˈpɒpjələs/ | The populace supported the reforms. | La population a soutenu les réformes.
+socio-economic | socio-économique | adj | C2 | /ˌsəʊsiəʊ ˌiːkəˈnɒmɪk/ | They come from different socio-economic backgrounds. | Ils viennent de milieux socio-économiques différents.
+commune | communauté ; commune | n | C2 | /ˈkɒmjuːn/ | They lived in a commune in the hills. | Ils vivaient dans une communauté dans les collines.
+consular | consulaire | adj | C2 | /ˈkɒnsjələ/ | You need consular assistance. | Vous avez besoin d'une assistance consulaire.
+unionist | syndicaliste ; unioniste | n | C2 | /ˈjuːniənɪst/ | He's a trade unionist. | C'est un syndicaliste.
+generational | générationnel | adj | C2 | /ˌdʒenəˈreɪʃənl/ | There's a generational gap. | Il y a un fossé entre les générations.
+mayoral | du maire | adj | C2 | /ˈmeərəl/ | The mayoral election is in March. | L'élection du maire a lieu en mars.
+secession | sécession | n | C2 | /sɪˈseʃn/ | The region voted for secession. | La région a voté pour la sécession.
+sectarian | sectaire, confessionnel | adj | C2 | /sekˈteəriən/ | Sectarian violence divided the country. | Les violences confessionnelles ont divisé le pays.
+patriarchal | patriarcal | adj | C2 | /ˌpeɪtriˈɑːkl/ | It's a patriarchal society. | C'est une société patriarcale.
+aristocratic | aristocratique | adj | C2 | /ˌærɪstəˈkrætɪk/ | He comes from an aristocratic family. | Il vient d'une famille aristocratique.
+reactionary | réactionnaire | adj | C2 | /riˈækʃənri/ | He has reactionary views. | Il a des idées réactionnaires.
+totalitarian | totalitaire | adj | C2 | /təʊˌtæləˈteəriən/ | It's a totalitarian state. | C'est un État totalitaire.
+misogyny | misogynie | n | C2 | /mɪˈsɒdʒɪni/ | The book denounces misogyny. | Le livre dénonce la misogynie.
+gentry | petite noblesse | n | C2 | /ˈdʒentri/ | The gentry owned most of the land. | La petite noblesse possédait la plupart des terres.
+transnational | transnational | adj | C2 | /ˌtrænzˈnæʃnəl/ | It's a transnational company. | C'est une entreprise transnationale.
+rights | droits | n | B1 | /raɪts/ | Everyone has rights and duties. | Chacun a des droits et des devoirs.
+demagogue | démagogue | n | C2 | /ˈdeməɡɒɡ/ | The demagogue played on people's fears. | Le démagogue jouait sur les peurs des gens.
+to abdicate | abdiquer | v | C2 | /ˈæbdɪkeɪt/ | The king abdicated in favour of his son. | Le roi a abdiqué en faveur de son fils.
+despot | despote | n | C2 | /ˈdespɒt/ | The country was ruled by a despot. | Le pays était gouverné par un despote.
+destitute | démuni, indigent | adj | C2 | /ˈdestɪtjuːt/ | The war left many families destitute. | La guerre a laissé beaucoup de familles démunies.
+centrist | centriste | adj | C1 | /ˈsentrɪst/ | She belongs to a centrist party. | Elle appartient à un parti centriste.
+insurrection | insurrection | n | C2 | /ˌɪnsəˈrekʃn/ | The army crushed the insurrection. | L'armée a écrasé l'insurrection.
+alienation | aliénation, sentiment d'exclusion | n | C1 | /ˌeɪliəˈneɪʃn/ | Many young people feel a sense of alienation. | Beaucoup de jeunes ressentent un sentiment d'exclusion.
+geopolitical | géopolitique | adj | C1 | /ˌdʒiːəʊpəˈlɪtɪkl/ | The region has great geopolitical importance. | La région a une grande importance géopolitique.
+peacekeeping | maintien de la paix | n | C1 | /ˈpiːskiːpɪŋ/ | UN peacekeeping forces arrived. | Les forces de maintien de la paix de l'ONU sont arrivées.
+femininity | féminité | n | C1 | /ˌfeməˈnɪnəti/ | The dress expresses her femininity. | La robe exprime sa féminité.
+separatist | séparatiste | n | C1 | /ˈsepərətɪst/ | Separatists want independence. | Les séparatistes veulent l'indépendance.
+humankind | l'humanité, le genre humain | n | C1 | /ˌhjuːmənˈkaɪnd/ | The Prophet was sent as a mercy to humankind. | Le Prophète a été envoyé comme miséricorde pour l'humanité.
+participatory | participatif | adj | C2 | /pɑːˌtɪsɪˈpeɪtəri/ | It's a participatory democracy. | C'est une démocratie participative.
+to impeach | destituer, mettre en accusation | v | C2 | /ɪmˈpiːtʃ/ | Congress voted to impeach the president. | Le Congrès a voté la mise en accusation du président.
+lobbyist | lobbyiste | n | C1 | /ˈlɒbiɪst/ | Lobbyists try to influence politicians. | Les lobbyistes essaient d'influencer les politiciens.
+multilateral | multilatéral | adj | C2 | /ˌmʌltiˈlætərəl/ | They signed a multilateral agreement. | Ils ont signé un accord multilatéral.
+plenary session | séance plénière | n | C2 | /ˈpliːnəri ˈseʃn/ | The decision will be taken in the plenary session. | La décision sera prise en séance plénière.
+warlord | seigneur de guerre | n | C1 | /ˈwɔːlɔːd/ | Warlords controlled the region. | Des seigneurs de guerre contrôlaient la région.
+benefactor | bienfaiteur | n | C1 | /ˈbenɪfæktə/ | A rich benefactor funded the hospital. | Un riche bienfaiteur a financé l'hôpital.
+repressive | répressif | adj | C1 | /rɪˈpresɪv/ | It's a repressive regime. | C'est un régime répressif.
+statehood | statut d'État | n | C2 | /ˈsteɪthʊd/ | The people demand statehood. | Le peuple réclame le statut d'État.
+pacifist | pacifiste | n | C1 | /ˈpæsɪfɪst/ | He was a lifelong pacifist. | Il a été pacifiste toute sa vie.
+quorum | quorum | n | C2 | /ˈkwɔːrəm/ | The meeting lacked a quorum. | La réunion n'avait pas le quorum.
+devolution | décentralisation, dévolution | n | C2 | /ˌdiːvəˈluːʃn/ | Scotland gained devolution in 1999. | L'Écosse a obtenu un pouvoir décentralisé en 1999.
+non-violent | non violent | adj | C1 | /ˌnɒn ˈvaɪələnt/ | It was a non-violent protest. | C'était une manifestation non violente.
+repatriation | rapatriement | n | C2 | /riːˌpætriˈeɪʃn/ | The repatriation of the body to Morocco. | Le rapatriement du corps au Maroc.
+xenophobic | xénophobe | adj | C1 | /ˌzenəˈfəʊbɪk/ | The speech was openly xenophobic. | Le discours était ouvertement xénophobe.
+cabal | cabale, clique | n | C2 | /kəˈbæl/ | A cabal of officers planned the coup. | Une clique d'officiers a préparé le coup d'État.
+cadre | cadre (d'un parti) | n | C2 | /ˈkɑːdə/ | Party cadres were sent to the villages. | Des cadres du parti ont été envoyés dans les villages.
+nationalistic | nationaliste | adj | C1 | /ˌnæʃnəˈlɪstɪk/ | The speech was very nationalistic. | Le discours était très nationaliste.
+reciprocity | réciprocité | n | C2 | /ˌresɪˈprɒsəti/ | Friendship is based on reciprocity. | L'amitié repose sur la réciprocité.
+sociologist | sociologue | n | C1 | /ˌsəʊsiˈɒlədʒɪst/ | The sociologist studied urban poverty. | Le sociologue a étudié la pauvreté urbaine.
+bourgeoisie | bourgeoisie | n | C2 | /ˌbʊəʒwɑːˈziː/ | Marx criticised the bourgeoisie. | Marx critiquait la bourgeoisie.
+loyalist | loyaliste | n | C2 | /ˈlɔɪəlɪst/ | Loyalists supported the king. | Les loyalistes soutenaient le roi.
+subversion | subversion | n | C2 | /səbˈvɜːʃn/ | They were accused of subversion. | Ils ont été accusés de subversion.
+tyrannical | tyrannique | adj | C1 | /tɪˈrænɪkl/ | The people overthrew the tyrannical ruler. | Le peuple a renversé le souverain tyrannique.
+elector | électeur | n | C2 | /ɪˈlektə/ | Electors chose the new president. | Les électeurs ont choisi le nouveau président.
+citizenry | citoyens, population | n | C2 | /ˈsɪtɪzənri/ | An informed citizenry is essential. | Une population informée est essentielle.
+echelon | échelon | n | C2 | /ˈeʃəlɒn/ | The upper echelons of society. | Les hautes sphères de la société.
+governorship | poste de gouverneur | n | C2 | /ˈɡʌvənəʃɪp/ | He won the governorship of the province. | Il a été élu gouverneur de la province.
+reformist | réformiste | adj | C1 | /rɪˈfɔːmɪst/ | He leads a reformist movement. | Il dirige un mouvement réformiste.
+defection | défection | n | C2 | /dɪˈfekʃn/ | His defection to the enemy shocked everyone. | Son passage à l'ennemi a choqué tout le monde.
+dictatorial | dictatorial | adj | C2 | /ˌdɪktəˈtɔːriəl/ | He has a dictatorial style. | Il a un style dictatorial.
+lawlessness | anarchie, non-droit | n | C2 | /ˈlɔːləsnəs/ | The war led to lawlessness. | La guerre a mené au non-droit.
+non-partisan | impartial, non partisan | adj | C2 | /ˌnɒn ˌpɑːtɪˈzæn/ | It's a non-partisan organisation. | C'est une organisation non partisane.
+autocratic | autocratique | adj | C2 | /ˌɔːtəˈkrætɪk/ | The country has an autocratic ruler. | Le pays a un dirigeant autocratique.
+coexistence | coexistence | n | C1 | /ˌkəʊɪɡˈzɪstəns/ | Peaceful coexistence is possible. | Une coexistence pacifique est possible.
+indoctrination | endoctrinement | n | C2 | /ɪnˌdɒktrɪˈneɪʃn/ | The sect uses indoctrination. | La secte pratique l'endoctrinement.
+misogynist | misogyne | n | C2 | /mɪˈsɒdʒənɪst/ | He was accused of being a misogynist. | Il a été accusé d'être misogyne.
+pluralism | pluralisme | n | C2 | /ˈplʊərəlɪzəm/ | Democracy needs political pluralism. | La démocratie a besoin de pluralisme politique.
+amity | amitié, bonne entente | n | C2 | /ˈæməti/ | The two nations lived in amity. | Les deux nations vivaient en bonne entente.
+filibuster | obstruction parlementaire | n | C2 | /ˈfɪlɪbʌstə/ | The senator used a filibuster. | Le sénateur a fait de l'obstruction parlementaire.
+radicalism | radicalisme | n | C2 | /ˈrædɪkəlɪzəm/ | The school fights radicalism. | L'école lutte contre le radicalisme.
+socialite | mondain | n | C2 | /ˈsəʊʃəlaɪt/ | She's a well-known socialite. | C'est une mondaine célèbre.
+ascendancy | ascendant, suprématie | n | C2 | /əˈsendənsi/ | The party is in the ascendancy. | Le parti a le vent en poupe.
+strongman | homme fort, dictateur | n | C2 | /ˈstrɒŋmæn/ | The country is ruled by a military strongman. | Le pays est dirigé par un homme fort militaire.
+womanhood | féminité, condition de femme | n | C2 | /ˈwʊmənhʊd/ | The girl reached womanhood. | La jeune fille est devenue une femme.
+intercultural | interculturel | adj | C2 | /ˌɪntəˈkʌltʃərəl/ | The project promotes intercultural dialogue. | Le projet favorise le dialogue interculturel.
+partisanship | esprit partisan | n | C2 | /ˌpɑːtɪˈzænʃɪp/ | Partisanship blocks reform. | L'esprit partisan bloque les réformes.
+decadence | décadence | n | C2 | /ˈdekədəns/ | Historians wrote about the decadence of Rome. | Les historiens ont écrit sur la décadence de Rome.
+oligarchy | oligarchie | n | C2 | /ˈɒlɪɡɑːki/ | The country is ruled by an oligarchy. | Le pays est dirigé par une oligarchie.
+stateless | apatride | adj | C2 | /ˈsteɪtləs/ | Millions of people are stateless. | Des millions de personnes sont apatrides.
+emissary | émissaire | n | C2 | /ˈemɪsəri/ | The Prophet sent emissaries to the kings. | Le Prophète a envoyé des émissaires aux rois.
+geopolitics | géopolitique | n | C1 | /ˌdʒiːəʊˈpɒlətɪks/ | He's an expert in Middle East geopolitics. | C'est un expert en géopolitique du Moyen-Orient.
+mores | mœurs | n | C2 | /ˈmɔːreɪz/ | Social mores have changed. | Les mœurs ont changé.
+respectability | respectabilité | n | C2 | /rɪˌspektəˈbɪləti/ | He worked hard to gain respectability. | Il a travaillé dur pour gagner en respectabilité.
+totalitarianism | totalitarisme | n | C2 | /təʊˌtæləˈteəriənɪzəm/ | Orwell wrote against totalitarianism. | Orwell a écrit contre le totalitarisme.
+undersecretary | sous-secrétaire | n | C2 | /ˌʌndəˈsekrətri/ | The undersecretary met the delegation. | Le sous-secrétaire a rencontré la délégation.
+to canvass | faire du porte-à-porte électoral ; sonder | v | C2 | /ˈkænvəs/ | Volunteers canvass the neighbourhood. | Des bénévoles font du porte-à-porte dans le quartier.
+figurehead | figure symbolique, prête-nom | n | C2 | /ˈfɪɡəhed/ | The king is only a figurehead. | Le roi n'est qu'une figure symbolique.
+parliamentarian | parlementaire | n | C2 | /ˌpɑːləmenˈteəriən/ | She is an experienced parliamentarian. | C'est une parlementaire expérimentée.
+proletarian | prolétaire | adj | C2 | /ˌprəʊləˈteəriən/ | He came from a proletarian family. | Il venait d'une famille prolétaire.
+appeasement | apaisement, conciliation | n | C2 | /əˈpiːzmənt/ | The policy of appeasement failed. | La politique d'apaisement a échoué.
+to secede | faire sécession | v | C2 | /sɪˈsiːd/ | The region wants to secede. | La région veut faire sécession.
+militarism | militarisme | n | C2 | /ˈmɪlɪtərɪzəm/ | The novel criticises militarism. | Le roman critique le militarisme.
+pauper | indigent | n | C2 | /ˈpɔːpə/ | He died a pauper. | Il est mort dans l'indigence.
+apolitical | apolitique | adj | C2 | /ˌeɪpəˈlɪtɪkl/ | The association is apolitical. | L'association est apolitique.
+permissive | permissif | adj | C2 | /pəˈmɪsɪv/ | They live in a permissive society. | Ils vivent dans une société permissive.
+rapporteur | rapporteur | n | C2 | /ˌræpɔːˈtɜː/ | The UN special rapporteur visited the camps. | Le rapporteur spécial de l'ONU a visité les camps.
+plebiscite | plébiscite | n | C2 | /ˈplebɪsaɪt/ | The people voted in a plebiscite. | Le peuple a voté lors d'un plébiscite.
+stratification | stratification | n | C2 | /ˌstrætɪfɪˈkeɪʃn/ | Social stratification is rigid there. | La stratification sociale y est rigide.
+traditionalist | traditionaliste | n | C2 | /trəˈdɪʃənəlɪst/ | Traditionalists opposed the reform. | Les traditionalistes se sont opposés à la réforme.
+tripartite | tripartite | adj | C2 | /traɪˈpɑːtaɪt/ | They signed a tripartite agreement. | Ils ont signé un accord tripartite.
 `,
 );

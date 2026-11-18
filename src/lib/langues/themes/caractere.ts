@@ -238,5 +238,374 @@ sophisticated | raffiné, sophistiqué | adj | B2 | /səˈfɪstɪkeɪtɪd/ | He'
 cultured | cultivé | adj | C1 | /ˈkʌltʃəd/ | She's a cultured woman. | C'est une femme cultivée.
 well-read | cultivé, qui a beaucoup lu | adj | C1 | /ˌwel ˈred/ | My grandfather was very well-read. | Mon grand-père avait beaucoup lu.
 erudite | érudit | adj | C2 | /ˈerudaɪt/ | He's an erudite scholar of Arabic. | C'est un érudit spécialiste de l'arabe.
+carelessness | négligence, insouciance | n | B1 | /ˈkeələsnəs/ | The accident was caused by carelessness. | L'accident a été causé par la négligence.
+common sense | bon sens | n | B1 | /ˌkɒmən ˈsens/ | Use your common sense! | Fais preuve de bon sens !
+diligence | assiduité, application | n | B2 | /ˈdɪlɪdʒəns/ | She worked with great diligence. | Elle a travaillé avec beaucoup d'application.
+eagerness | empressement, enthousiasme | n | B2 | /ˈiːɡənəs/ | His eagerness to learn is impressive. | Son envie d'apprendre est impressionnante.
+friendliness | amabilité, gentillesse | n | B1 | /ˈfrendlinəs/ | We were touched by their friendliness. | Nous avons été touchés par leur gentillesse.
+liar | menteur | n | B1 | /ˈlaɪə/ | Don't trust him; he's a liar. | Ne lui fais pas confiance, c'est un menteur.
+procrastination | procrastination | n | B2 | /prəˌkræstɪˈneɪʃn/ | Procrastination is the thief of time. | La procrastination est la voleuse du temps.
+temper | humeur ; colère | n | B1 | /ˈtempə/ | He has a terrible temper. | Il a un caractère explosif.
+willingness | bonne volonté, empressement | n | B2 | /ˈwɪlɪŋnəs/ | She showed a willingness to learn. | Elle a montré une grande envie d'apprendre.
+benevolence | bienveillance | n | C1 | /bəˈnevələns/ | We thank God for His benevolence. | Nous remercions Dieu pour Sa bienveillance.
+bookish | studieux, livresque | adj | C1 | /ˈbʊkɪʃ/ | He was a quiet, bookish boy. | C'était un garçon calme et studieux.
+to brag | se vanter | v | B2 | /bræɡ/ | He's always bragging about his car. | Il se vante sans cesse de sa voiture.
+bravery | bravoure, courage | n | B2 | /ˈbreɪvəri/ | The firefighter was honoured for his bravery. | Le pompier a été décoré pour sa bravoure.
+communicative | communicatif | adj | B2 | /kəˈmjuːnɪkətɪv/ | She's very communicative. | Elle est très communicative.
+conceit | vanité, suffisance | n | C1 | /kənˈsiːt/ | His conceit annoys everyone. | Sa suffisance agace tout le monde.
+courtesy | courtoisie, politesse | n | B2 | /ˈkɜːtəsi/ | He treats everyone with courtesy. | Il traite tout le monde avec courtoisie.
+dedication | dévouement | n | B2 | /ˌdedɪˈkeɪʃn/ | We admire his dedication to his work. | Nous admirons son dévouement à son travail.
+dishonesty | malhonnêteté | n | B2 | /dɪsˈɒnəsti/ | Dishonesty destroys trust. | La malhonnêteté détruit la confiance.
+disposition | tempérament, nature | n | C1 | /ˌdɪspəˈzɪʃn/ | She has a cheerful disposition. | Elle est d'un naturel joyeux.
+elegance | élégance | n | B2 | /ˈelɪɡəns/ | She dresses with elegance. | Elle s'habille avec élégance.
+firmness | fermeté | n | B2 | /ˈfɜːmnəs/ | He spoke with kindness and firmness. | Il a parlé avec douceur et fermeté.
+folly | folie, sottise | n | C1 | /ˈfɒli/ | It would be folly to go out in this storm. | Ce serait de la folie de sortir par cette tempête.
+guts | cran, courage | n | B2 | /ɡʌts/ | It takes guts to admit you're wrong. | Il faut du cran pour admettre qu'on a tort.
+honourable | honorable | adj | B2 | /ˈɒnərəbl/ | He's an honourable man. | C'est un homme honorable.
+idiot | idiot, imbécile | n | B2 | /ˈɪdiət/ | I felt like an idiot. | Je me suis senti idiot.
+ignorant | ignorant | adj | B2 | /ˈɪɡnərənt/ | He's ignorant of the facts. | Il ignore les faits.
+inborn | inné | adj | C1 | /ˌɪnˈbɔːn/ | She has an inborn talent for music. | Elle a un talent inné pour la musique.
+indulgent | indulgent | adj | C1 | /ɪnˈdʌldʒənt/ | Her grandparents are very indulgent. | Ses grands-parents sont très indulgents.
+intellectual | intellectuel | adj | B2 | /ˌɪntəˈlektʃuəl/ | She enjoys intellectual discussions. | Elle aime les discussions intellectuelles.
+layabout | fainéant | n | C1 | /ˈleɪəbaʊt/ | He's a lazy layabout. | C'est un vrai fainéant.
+mistrustful | méfiant | adj | C1 | /ˌmɪsˈtrʌstfl/ | She is mistrustful of strangers. | Elle se méfie des inconnus.
+obsessive | obsessionnel | adj | C1 | /əbˈsesɪv/ | He's obsessive about cleanliness. | Il est obsédé par la propreté.
+optimism | optimisme | n | B2 | /ˈɒptɪmɪzəm/ | She faces the future with optimism. | Elle envisage l'avenir avec optimisme.
+originality | originalité | n | B2 | /əˌrɪdʒəˈnæləti/ | Her work shows great originality. | Son travail fait preuve d'une grande originalité.
+pedantic | pédant | adj | C1 | /pɪˈdæntɪk/ | Don't be so pedantic! | Ne sois pas si pédant !
+perseverance | persévérance | n | B2 | /ˌpɜːsɪˈvɪərəns/ | Success comes with perseverance. | La réussite vient avec la persévérance.
+persistence | persévérance, ténacité | n | B2 | /pəˈsɪstəns/ | His persistence finally paid off. | Sa ténacité a fini par payer.
+politeness | politesse | n | B2 | /pəˈlaɪtnəs/ | Politeness costs nothing. | La politesse ne coûte rien.
+punctuality | ponctualité | n | B2 | /ˌpʌŋktʃuˈæləti/ | Punctuality is important at work. | La ponctualité est importante au travail.
+quarrelsome | querelleur | adj | C1 | /ˈkwɒrəlsəm/ | He's a quarrelsome neighbour. | C'est un voisin querelleur.
+sincerity | sincérité | n | B2 | /sɪnˈserəti/ | I never doubted her sincerity. | Je n'ai jamais douté de sa sincérité.
+steely | d'acier, inflexible | adj | C1 | /ˈstiːli/ | She has a steely determination. | Elle a une détermination d'acier.
+stern | sévère, austère | adj | B2 | /stɜːn/ | The headmaster gave us a stern look. | Le directeur nous a lancé un regard sévère.
+thoughtless | irréfléchi, inconsidéré | adj | B2 | /ˈθɔːtləs/ | It was a thoughtless remark. | C'était une remarque irréfléchie.
+truthful | sincère, véridique | adj | B2 | /ˈtruːθfl/ | Always be truthful. | Sois toujours sincère.
+truthfulness | véracité, sincérité | n | C1 | /ˈtruːθflnəs/ | The Prophet was known for his truthfulness. | Le Prophète était connu pour sa véracité.
+unkind | méchant, pas gentil | adj | B2 | /ˌʌnˈkaɪnd/ | That was an unkind thing to say. | Ce n'était pas gentil de dire ça.
+unselfish | désintéressé, généreux | adj | B2 | /ʌnˈselfɪʃ/ | It was an unselfish act. | C'était un acte désintéressé.
+unworldly | naïf, détaché des choses matérielles | adj | C1 | /ʌnˈwɜːldli/ | He's a gentle, unworldly scholar. | C'est un savant doux, détaché des réalités matérielles.
+vanity | vanité | n | B2 | /ˈvænəti/ | Vanity is a dangerous sin. | La vanité est un péché dangereux.
+vigour | vigueur | n | C1 | /ˈvɪɡə/ | He returned to work with new vigour. | Il a repris le travail avec une vigueur nouvelle.
+wit | esprit, humour | n | B2 | /wɪt/ | She's known for her quick wit. | Elle est connue pour la vivacité de son esprit.
+aggression | agressivité, agression | n | B2 | /əˈɡreʃn/ | Violent films can increase aggression. | Les films violents peuvent accroître l'agressivité.
+discretion | discrétion ; appréciation | n | C1 | /dɪˈskreʃn/ | Use your discretion. | Juge par toi-même.
+esteem | estime | n | C1 | /ɪˈstiːm/ | He is held in high esteem. | Il est tenu en haute estime.
+abusive | violent, injurieux | adj | C1 | /əˈbjuːsɪv/ | He was abusive to the staff. | Il était injurieux envers le personnel.
+mindset | état d'esprit, mentalité | n | C1 | /ˈmaɪndset/ | Success starts with the right mindset. | La réussite commence par le bon état d'esprit.
+mentality | mentalité | n | C1 | /menˈtæləti/ | We need to change our mentality. | Nous devons changer de mentalité.
+persona | personnage, image publique | n | C2 | /pəˈsəʊnə/ | His public persona is very different. | Son image publique est très différente.
+manly | viril | adj | C1 | /ˈmænli/ | He thinks crying isn't manly. | Il pense que pleurer n'est pas viril.
+stupidity | stupidité, bêtise | n | B2 | /stjuːˈpɪdəti/ | I can't believe his stupidity. | Je n'en reviens pas de sa bêtise.
+incompetent | incompétent | adj | C1 | /ɪnˈkɒmpɪtənt/ | The manager is incompetent. | Le responsable est incompétent.
+restraint | retenue, maîtrise de soi | n | C1 | /rɪˈstreɪnt/ | He showed great restraint. | Il a fait preuve d'une grande retenue.
+flair | flair, talent | n | C1 | /fleə/ | She has a flair for languages. | Elle a le don des langues.
+decency | décence, correction | n | C1 | /ˈdiːsnsi/ | Have the decency to apologise. | Aie la décence de t'excuser.
+mindful | attentif, conscient | adj | C1 | /ˈmaɪndfl/ | Be mindful of others' feelings. | Sois attentif aux sentiments des autres.
+negativity | négativité | n | C1 | /ˌneɡəˈtɪvəti/ | Avoid negativity. | Évite la négativité.
+moderation | modération | n | C1 | /ˌmɒdəˈreɪʃn/ | Islam teaches moderation in all things. | L'islam enseigne la modération en toute chose.
+grit | courage, cran ; gravillon | n | C1 | /ɡrɪt/ | It takes grit to succeed. | Il faut du cran pour réussir.
+lunatic | fou, dingue | n | C1 | /ˈluːnətɪk/ | He drives like a lunatic. | Il conduit comme un fou.
+brute | brute | n | C1 | /bruːt/ | He's a cruel brute. | C'est une brute cruelle.
+visionary | visionnaire | n | C1 | /ˈvɪʒənri/ | He was a visionary leader. | C'était un dirigeant visionnaire.
+crook | escroc | n | C1 | /krʊk/ | That salesman is a crook. | Ce vendeur est un escroc.
+mindfulness | pleine conscience | n | C1 | /ˈmaɪndflnəs/ | Prayer is a form of mindfulness. | La prière est une forme de pleine conscience.
+prudent | prudent, avisé | adj | C1 | /ˈpruːdnt/ | It would be prudent to wait. | Il serait prudent d'attendre.
+openness | ouverture, franchise | n | C1 | /ˈəʊpənnəs/ | I appreciate your openness. | J'apprécie ta franchise.
+cocky | crâneur, arrogant | adj | C1 | /ˈkɒki/ | He's a bit cocky. | Il est un peu crâneur.
+obnoxious | odieux, insupportable | adj | C1 | /əbˈnɒkʃəs/ | He was loud and obnoxious. | Il était bruyant et insupportable.
+delusion | illusion, chimère | n | C2 | /dɪˈluːʒn/ | He's under the delusion that he's always right. | Il s'imagine avoir toujours raison.
+masculinity | masculinité | n | C2 | /ˌmæskjuˈlɪnəti/ | The book explores ideas of masculinity. | Le livre explore les représentations de la masculinité.
+quirk | bizarrerie, excentricité | n | C1 | /kwɜːk/ | Everyone has their little quirks. | Chacun a ses petites manies.
+individuality | individualité | n | C1 | /ˌɪndɪˌvɪdʒuˈæləti/ | Each child has his own individuality. | Chaque enfant a sa propre personnalité.
+wary | méfiant, prudent | adj | C1 | /ˈweəri/ | Be wary of strangers online. | Méfie-toi des inconnus sur internet.
+knowledgeable | qui s'y connaît, bien informé | adj | C1 | /ˈnɒlɪdʒəbl/ | The guide was very knowledgeable. | Le guide était très savant.
+tact | tact | n | C1 | /tækt/ | She handled the situation with tact. | Elle a géré la situation avec tact.
+slob | souillon, flemmard | n | C1 | /slɒb/ | My brother is a lazy slob. | Mon frère est un vrai flemmard.
+extravagance | extravagance, prodigalité | n | C1 | /ɪkˈstrævəɡəns/ | Islam warns against extravagance. | L'islam met en garde contre le gaspillage.
+poise | assurance, aplomb | n | C1 | /pɔɪz/ | She answered with poise. | Elle a répondu avec aplomb.
+withdrawn | renfermé | adj | C1 | /wɪðˈdrɔːn/ | He has become quiet and withdrawn. | Il est devenu calme et renfermé.
+deceit | tromperie, fourberie | n | C1 | /dɪˈsiːt/ | He was a man of deceit. | C'était un homme fourbe.
+cleverness | intelligence, habileté | n | C1 | /ˈklevənəs/ | We admired his cleverness. | Nous admirions son intelligence.
+ruthlessness | dureté impitoyable, cruauté | n | C1 | /ˈruːθləsnəs/ | The dictator was known for his ruthlessness. | Le dictateur était connu pour sa cruauté.
+neglectful | négligent | adj | C1 | /nɪˈɡlektfl/ | He was a neglectful father. | C'était un père négligent.
+insensitive | insensible, indélicat | adj | C1 | /ɪnˈsensətɪv/ | That was an insensitive remark. | C'était une remarque indélicate.
+dutiful | dévoué, respectueux | adj | C1 | /ˈdjuːtɪfl/ | He's a dutiful son. | C'est un fils dévoué.
+impish | espiègle | adj | C1 | /ˈɪmpɪʃ/ | He has an impish grin. | Il a un sourire espiègle.
+buffoon | bouffon, pitre | n | C1 | /bəˈfuːn/ | He played the buffoon to make us laugh. | Il faisait le pitre pour nous faire rire.
+verve | verve, brio | n | C1 | /vɜːv/ | She sang with great verve. | Elle a chanté avec beaucoup de brio.
+negligent | négligent | adj | C1 | /ˈneɡlɪdʒənt/ | The driver was negligent. | Le conducteur a été négligent.
+cynic | cynique | n | C1 | /ˈsɪnɪk/ | He's a cynic who trusts nobody. | C'est un cynique qui ne fait confiance à personne.
+cynicism | cynisme | n | C1 | /ˈsɪnɪsɪzəm/ | Cynicism kills hope. | Le cynisme tue l'espoir.
+sarcastic | sarcastique | adj | C1 | /sɑːˈkæstɪk/ | Don't be sarcastic. | Ne sois pas sarcastique.
+fanatic | fanatique | n | C1 | /fəˈnætɪk/ | He's a football fanatic. | C'est un fanatique de football.
+naivety | naïveté | n | C1 | /naɪˈiːvəti/ | His naivety is touching. | Sa naïveté est touchante.
+docile | docile | adj | C1 | /ˈdəʊsaɪl/ | The horse is very docile. | Le cheval est très docile.
+fiend | démon ; fana | n | C2 | /fiːnd/ | He's a fitness fiend. | C'est un fana de sport.
+versatility | polyvalence | n | C1 | /ˌvɜːsəˈtɪləti/ | We admire the actor's versatility. | Nous admirons la polyvalence de l'acteur.
+resilience | résilience, capacité de résistance | n | C1 | /rɪˈzɪliəns/ | Faith builds resilience. | La foi renforce la résilience.
+enterprising | entreprenant | adj | C1 | /ˈentəpraɪzɪŋ/ | She's an enterprising young woman. | C'est une jeune femme entreprenante.
+hypocrisy | hypocrisie | n | C1 | /hɪˈpɒkrəsi/ | Islam condemns hypocrisy. | L'islam condamne l'hypocrisie.
+insubordination | insubordination | n | C2 | /ˌɪnsəˌbɔːdɪˈneɪʃn/ | He was fired for insubordination. | Il a été licencié pour insubordination.
+undaunted | sans se laisser décourager | adj | C1 | /ˌʌnˈdɔːntɪd/ | Undaunted, she tried again. | Sans se décourager, elle a réessayé.
+gutsy | culotté, courageux | adj | C1 | /ˈɡʌtsi/ | It was a gutsy decision. | Ce fut une décision courageuse.
+ingenuity | ingéniosité | n | C1 | /ˌɪndʒəˈnjuːəti/ | The design shows great ingenuity. | La conception témoigne d'une grande ingéniosité.
+timidity | timidité | n | C2 | /tɪˈmɪdəti/ | She overcame her timidity. | Elle a surmonté sa timidité.
+eccentricity | excentricité | n | C2 | /ˌeksenˈtrɪsəti/ | His eccentricity made him famous. | Son excentricité l'a rendu célèbre.
+belligerence | agressivité, belligérance | n | C2 | /bəˈlɪdʒərəns/ | His belligerence scared everyone. | Son agressivité effrayait tout le monde.
+recluse | reclus, ermite | n | C2 | /rɪˈkluːs/ | He lived as a recluse in the mountains. | Il vivait en reclus dans les montagnes.
+reclusive | solitaire, retiré | adj | C2 | /rɪˈkluːsɪv/ | The reclusive writer rarely gives interviews. | L'écrivain solitaire donne rarement des interviews.
+puritanical | puritain | adj | C2 | /ˌpjʊərɪˈtænɪkl/ | He has puritanical views on music. | Il a des opinions puritaines sur la musique.
+callous | insensible, dur | adj | C2 | /ˈkæləs/ | It was a callous act. | C'était un acte sans cœur.
+equable | égal (d'humeur), serein | adj | C2 | /ˈekwəbl/ | She has an equable temperament. | Elle a un tempérament égal.
+indulgence | indulgence ; petit plaisir | n | C2 | /ɪnˈdʌldʒəns/ | Chocolate is my only indulgence. | Le chocolat est mon seul petit plaisir.
+affectation | affectation, manière | n | C2 | /ˌæfekˈteɪʃn/ | His accent is just an affectation. | Son accent n'est qu'une affectation.
+tenacity | ténacité | n | C2 | /təˈnæsəti/ | Her tenacity paid off. | Sa ténacité a payé.
+spontaneity | spontanéité | n | C2 | /ˌspɒntəˈneɪəti/ | Children have a natural spontaneity. | Les enfants ont une spontanéité naturelle.
+buffoonery | bouffonnerie | n | C2 | /bəˈfuːnəri/ | We tired of his buffoonery. | Nous nous sommes lassés de ses bouffonneries.
+gauche | gauche, maladroit | adj | C2 | /ɡəʊʃ/ | He was gauche and shy as a teenager. | Adolescent, il était gauche et timide.
+philistine | béotien, inculte | n | C2 | /ˈfɪlɪstaɪn/ | Only a philistine would dislike this music. | Seul un béotien pourrait ne pas aimer cette musique.
+wayward | rebelle, capricieux | adj | C2 | /ˈweɪwəd/ | He was a wayward teenager. | C'était un adolescent rebelle.
+indolent | indolent, paresseux | adj | C2 | /ˈɪndələnt/ | He was an indolent student. | C'était un élève indolent.
+indolence | indolence | n | C2 | /ˈɪndələns/ | Indolence is the enemy of success. | L'indolence est l'ennemie de la réussite.
+deviant | déviant | adj | C2 | /ˈdiːviənt/ | The study looks at deviant behaviour. | L'étude porte sur les comportements déviants.
+munificence | munificence, grande générosité | n | C2 | /mjuːˈnɪfɪsns/ | The king's munificence was legendary. | La munificence du roi était légendaire.
+nonchalant | nonchalant, désinvolte | adj | C2 | /ˈnɒnʃələnt/ | He tried to look nonchalant. | Il essayait d'avoir l'air détaché.
+undemonstrative | réservé, peu démonstratif | adj | C2 | /ˌʌndɪˈmɒnstrətɪv/ | He's an undemonstrative man. | C'est un homme peu démonstratif.
+idiosyncrasy | particularité, manie | n | C2 | /ˌɪdiəˈsɪŋkrəsi/ | Every writer has his idiosyncrasies. | Chaque écrivain a ses particularités.
+perverse | pervers, contrariant | adj | C2 | /pəˈvɜːs/ | He takes a perverse pleasure in arguing. | Il prend un malin plaisir à contredire.
+depravity | dépravation | n | C2 | /dɪˈprævəti/ | The film shows human depravity. | Le film montre la dépravation humaine.
+magnanimity | magnanimité | n | C2 | /ˌmæɡnəˈnɪməti/ | He showed magnanimity in victory. | Il s'est montré magnanime dans la victoire.
+malice | malveillance | n | C2 | /ˈmælɪs/ | He acted without malice. | Il a agi sans malveillance.
+snobbery | snobisme | n | C2 | /ˈsnɒbəri/ | Intellectual snobbery annoys me. | Le snobisme intellectuel m'agace.
+haughty | hautain | adj | C2 | /ˈhɔːti/ | She gave him a haughty look. | Elle lui a lancé un regard hautain.
+ingrate | ingrat | n | C2 | /ˈɪnɡreɪt/ | Don't be an ingrate. | Ne sois pas ingrat.
+flighty | volage, écervelé | adj | C2 | /ˈflaɪti/ | She's a bit flighty. | Elle est un peu écervelée.
+aptitude | aptitude | n | C2 | /ˈæptɪtjuːd/ | She has an aptitude for languages. | Elle a une aptitude pour les langues.
+exhibitionist | exhibitionniste, m'as-tu-vu | n | C2 | /ˌeksɪˈbɪʃənɪst/ | He's a bit of an exhibitionist. | Il aime se donner en spectacle.
+prurient | lubrique, malsain | adj | C2 | /ˈprʊəriənt/ | The press showed a prurient interest in the case. | La presse a montré un intérêt malsain pour l'affaire.
+tetchy | irritable | adj | C2 | /ˈtetʃi/ | He gets tetchy when he's hungry. | Il devient irritable quand il a faim.
+ardour | ardeur, ferveur | n | C2 | /ˈɑːdə/ | He prayed with great ardour. | Il priait avec une grande ferveur.
+confrontational | conflictuel, agressif | adj | C2 | /ˌkɒnfrʌnˈteɪʃənl/ | He has a confrontational style. | Il a un style agressif.
+histrionic | théâtral, mélodramatique | adj | C2 | /ˌhɪstriˈɒnɪk/ | Stop being so histrionic! | Arrête d'en faire tout un drame !
+taciturn | taciturne | adj | C2 | /ˈtæsɪtɜːn/ | He was a taciturn man. | C'était un homme taciturne.
+ingenuous | ingénu, candide | adj | C2 | /ɪnˈdʒenjuəs/ | It was an ingenuous question. | C'était une question ingénue.
+prowess | prouesse, talent | n | C2 | /ˈpraʊəs/ | He's known for his athletic prowess. | Il est connu pour ses prouesses sportives.
+charisma | charisme | n | C1 | /kəˈrɪzmə/ | The leader has great charisma. | Le dirigeant a un grand charisme.
+degenerate | dégénéré | adj | C2 | /dɪˈdʒenərət/ | They called it a degenerate society. | Ils parlaient d'une société dégénérée.
+weirdo | farfelu, original | n | B2 | /ˈwɪədəʊ/ | People think he's a weirdo. | Les gens le prennent pour un farfelu.
+behavioural | comportemental | adj | C1 | /bɪˈheɪvjərəl/ | He has behavioural problems. | Il a des troubles du comportement.
+manic | frénétique ; maniaque | adj | C2 | /ˈmænɪk/ | It was a manic day at work. | Ce fut une journée frénétique au travail.
+meek | doux, humble | adj | C2 | /miːk/ | He was meek and gentle. | Il était doux et humble.
+mellow | doux, posé | adj | C1 | /ˈmeləʊ/ | He has become more mellow with age. | Il s'est adouci avec l'âge.
+compulsive | compulsif, invétéré | adj | C2 | /kəmˈpʌlsɪv/ | He's a compulsive liar. | C'est un menteur invétéré.
+ardent | ardent, fervent | adj | C2 | /ˈɑːdnt/ | She's an ardent supporter of the club. | C'est une ardente supportrice du club.
+dreamer | rêveur | n | B2 | /ˈdriːmə/ | He's a dreamer, not a doer. | C'est un rêveur, pas un homme d'action.
+audacity | audace | n | C2 | /ɔːˈdæsəti/ | He had the audacity to lie to my face. | Il a eu l'audace de me mentir en face.
+heroism | héroïsme | n | C1 | /ˈherəʊɪzəm/ | They praised his heroism. | Ils ont salué son héroïsme.
+inventive | inventif | adj | C1 | /ɪnˈventɪv/ | She's an inventive cook. | C'est une cuisinière inventive.
+macho | macho | adj | C1 | /ˈmætʃəʊ/ | He tries to look macho. | Il essaie de faire le macho.
+wannabe | aspirant, imitateur | n | C1 | /ˈwɒnəbi/ | He's a rock star wannabe. | Il rêve d'être une rock star.
+dandy | dandy | n | C2 | /ˈdændi/ | He was a dandy in his youth. | C'était un dandy dans sa jeunesse.
+prodigy | prodige | n | C2 | /ˈprɒdədʒi/ | He was a child prodigy. | C'était un enfant prodige.
+forceful | énergique, vigoureux | adj | C1 | /ˈfɔːsfl/ | She's a forceful speaker. | C'est une oratrice énergique.
+modesty | modestie ; pudeur | n | C1 | /ˈmɒdəsti/ | Modesty is part of faith. | La pudeur fait partie de la foi.
+cheater | tricheur | n | B2 | /ˈtʃiːtə/ | Nobody likes a cheater. | Personne n'aime les tricheurs.
+renegade | renégat, rebelle | n | C2 | /ˈrenɪɡeɪd/ | He was seen as a renegade. | On le considérait comme un renégat.
+madman | fou | n | C1 | /ˈmædmən/ | He drove like a madman. | Il conduisait comme un fou.
+maniac | maniaque, fou furieux | n | C1 | /ˈmeɪniæk/ | He's a speed maniac. | C'est un fou de vitesse.
+crafty | rusé | adj | C1 | /ˈkrɑːfti/ | He's a crafty old fox. | C'est un vieux renard rusé.
+defiant | provocant, rebelle | adj | C1 | /dɪˈfaɪənt/ | She gave a defiant look. | Elle a lancé un regard de défi.
+gallant | galant ; vaillant | adj | C2 | /ˈɡælənt/ | He made a gallant attempt to save her. | Il a vaillamment tenté de la sauver.
+sassy | culotté, impertinent | adj | C1 | /ˈsæsi/ | She's a sassy little girl. | C'est une petite fille culottée.
+newbie | débutant, novice | n | B2 | /ˈnjuːbi/ | I'm a newbie at chess. | Je suis débutant aux échecs.
+sensibility | sensibilité | n | C2 | /ˌsensəˈbɪləti/ | The poem shows great sensibility. | Le poème témoigne d'une grande sensibilité.
+staunch | fidèle, inébranlable | adj | C2 | /stɔːntʃ/ | He's a staunch defender of the poor. | C'est un défenseur inébranlable des pauvres.
+craven | lâche | adj | C2 | /ˈkreɪvn/ | It was a craven act. | C'était un acte lâche.
+zest | entrain, enthousiasme ; zeste | n | C2 | /zest/ | She has a zest for life. | Elle a une grande joie de vivre.
+adventurer | aventurier | n | B2 | /ədˈventʃərə/ | Ibn Battuta was a great adventurer. | Ibn Battûta était un grand aventurier.
+bigot | sectaire, fanatique | n | C2 | /ˈbɪɡət/ | He's a narrow-minded bigot. | C'est un fanatique à l'esprit étroit.
+composure | calme, sang-froid | n | C2 | /kəmˈpəʊʒə/ | She kept her composure. | Elle a gardé son sang-froid.
+finesse | finesse, doigté | n | C2 | /fɪˈnes/ | She handled the problem with finesse. | Elle a géré le problème avec doigté.
+sadistic | sadique | adj | C2 | /səˈdɪstɪk/ | He was a sadistic guard. | C'était un gardien sadique.
+assiduous | assidu | adj | C2 | /əˈsɪdjuəs/ | He's an assiduous student. | C'est un élève assidu.
+audacious | audacieux | adj | C2 | /ɔːˈdeɪʃəs/ | It was an audacious plan. | C'était un plan audacieux.
+avarice | avarice, cupidité | n | C2 | /ˈævərɪs/ | Avarice is condemned in Islam. | L'avarice est condamnée en islam.
+candour | franchise, sincérité | n | C2 | /ˈkændə/ | I appreciate your candour. | J'apprécie ta franchise.
+circumspect | circonspect | adj | C2 | /ˈsɜːkəmspekt/ | Be circumspect in what you say. | Sois circonspect dans tes paroles.
+credulous | crédule | adj | C2 | /ˈkredjələs/ | Credulous people believe every rumour. | Les gens crédules croient toutes les rumeurs.
+decorum | bienséance | n | C2 | /dɪˈkɔːrəm/ | Behave with decorum in the mosque. | Comporte-toi avec bienséance dans la mosquée.
+deference | déférence | n | C2 | /ˈdefərəns/ | He treats his elders with deference. | Il traite ses aînés avec déférence.
+diffident | réservé, peu sûr de soi | adj | C2 | /ˈdɪfɪdənt/ | He was diffident about his talents. | Il doutait de ses talents.
+dogmatic | dogmatique | adj | C2 | /dɒɡˈmætɪk/ | Don't be so dogmatic. | Ne sois pas si dogmatique.
+ebullient | exubérant, débordant d'enthousiasme | adj | C2 | /ɪˈbʌliənt/ | She was in an ebullient mood. | Elle débordait d'enthousiasme.
+effrontery | effronterie | n | C2 | /ɪˈfrʌntəri/ | He had the effrontery to demand more money. | Il a eu l'effronterie d'exiger plus d'argent.
+equanimity | sérénité, égalité d'âme | n | C2 | /ˌekwəˈnɪməti/ | He accepted the news with equanimity. | Il a accueilli la nouvelle avec sérénité.
+facetious | facétieux, déplacé | adj | C2 | /fəˈsiːʃəs/ | Stop being facetious; this is serious. | Arrête de plaisanter, c'est sérieux.
+garrulous | bavard, loquace | adj | C2 | /ˈɡærələs/ | He's a garrulous old man. | C'est un vieil homme bavard.
+guile | ruse, astuce | n | C2 | /ɡaɪl/ | She used guile to get what she wanted. | Elle a usé de ruse pour obtenir ce qu'elle voulait.
+iconoclast | iconoclaste | n | C2 | /aɪˈkɒnəklæst/ | He was an iconoclast who challenged tradition. | C'était un iconoclaste qui défiait la tradition.
+imperious | impérieux, autoritaire | adj | C2 | /ɪmˈpɪəriəs/ | She gave an imperious command. | Elle a donné un ordre impérieux.
+impetuous | impétueux, irréfléchi | adj | C2 | /ɪmˈpetʃuəs/ | It was an impetuous decision. | Ce fut une décision irréfléchie.
+incorrigible | incorrigible | adj | C2 | /ɪnˈkɒrɪdʒəbl/ | He's an incorrigible liar. | C'est un menteur incorrigible.
+indefatigable | infatigable | adj | C2 | /ˌɪndɪˈfætɪɡəbl/ | She's an indefatigable worker. | C'est une travailleuse infatigable.
+intransigent | intransigeant | adj | C2 | /ɪnˈtrænzɪdʒənt/ | Both sides remained intransigent. | Les deux camps sont restés intransigeants.
+intrepid | intrépide | adj | C2 | /ɪnˈtrepɪd/ | The intrepid explorers crossed the desert. | Les explorateurs intrépides ont traversé le désert.
+irascible | irascible, colérique | adj | C2 | /ɪˈræsəbl/ | My grandfather was irascible. | Mon grand-père était colérique.
+laconic | laconique | adj | C2 | /ləˈkɒnɪk/ | He gave a laconic reply. | Il a fait une réponse laconique.
+largesse | largesse, générosité | n | C2 | /lɑːˈʒes/ | The king was famous for his largesse. | Le roi était célèbre pour sa générosité.
+levity | légèreté, désinvolture | n | C2 | /ˈlevəti/ | This is no time for levity. | Ce n'est pas le moment de plaisanter.
+loquacious | loquace | adj | C2 | /ləˈkweɪʃəs/ | She's very loquacious. | Elle est très loquace.
+mendacious | mensonger, menteur | adj | C2 | /menˈdeɪʃəs/ | The article was mendacious. | L'article était mensonger.
+misanthrope | misanthrope | n | C2 | /ˈmɪsənθrəʊp/ | He became a bitter misanthrope. | Il est devenu un misanthrope aigri.
+obdurate | obstiné, inflexible | adj | C2 | /ˈɒbdjərət/ | He remained obdurate. | Il est resté inflexible.
+obsequious | obséquieux | adj | C2 | /əbˈsiːkwiəs/ | The waiter was obsequious. | Le serveur était obséquieux.
+officious | trop zélé, importun | adj | C2 | /əˈfɪʃəs/ | An officious guard refused us entry. | Un gardien trop zélé nous a refusé l'entrée.
+ostentatious | ostentatoire, voyant | adj | C2 | /ˌɒstenˈteɪʃəs/ | Islam discourages ostentatious wealth. | L'islam décourage l'étalage de la richesse.
+parsimonious | parcimonieux, avare | adj | C2 | /ˌpɑːsɪˈməʊniəs/ | He's parsimonious with praise. | Il est avare de compliments.
+perfidious | perfide | adj | C2 | /pəˈfɪdiəs/ | It was a perfidious betrayal. | Ce fut une trahison perfide.
+perspicacious | perspicace | adj | C2 | /ˌpɜːspɪˈkeɪʃəs/ | She's a perspicacious observer. | C'est une observatrice perspicace.
+petulant | irritable, boudeur | adj | C2 | /ˈpetjələnt/ | He behaved like a petulant child. | Il s'est comporté comme un enfant boudeur.
+prodigal | prodigue | adj | C2 | /ˈprɒdɪɡl/ | The prodigal son returned home. | Le fils prodigue est rentré à la maison.
+profligate | dépensier, débauché | adj | C2 | /ˈprɒflɪɡət/ | The government is accused of profligate spending. | Le gouvernement est accusé de dépenses inconsidérées.
+pugnacious | belliqueux, combatif | adj | C2 | /pʌɡˈneɪʃəs/ | He's a pugnacious politician. | C'est un politicien combatif.
+querulous | grincheux, geignard | adj | C2 | /ˈkwerələs/ | She spoke in a querulous voice. | Elle parlait d'une voix geignarde.
+quixotic | chimérique, idéaliste | adj | C2 | /kwɪkˈsɒtɪk/ | It was a quixotic attempt to change the world. | C'était une tentative chimérique de changer le monde.
+recalcitrant | récalcitrant | adj | C2 | /rɪˈkælsɪtrənt/ | The teacher dealt with recalcitrant pupils. | Le professeur s'occupait d'élèves récalcitrants.
+remiss | négligent | adj | C2 | /rɪˈmɪs/ | It was remiss of me not to call. | C'était négligent de ma part de ne pas appeler.
+reprobate | dépravé, réprouvé | n | C2 | /ˈreprəbeɪt/ | He was a drunken reprobate. | C'était un ivrogne dépravé.
+sagacious | sagace, avisé | adj | C2 | /səˈɡeɪʃəs/ | He was a sagacious leader. | C'était un dirigeant avisé.
+sardonic | sardonique | adj | C2 | /sɑːˈdɒnɪk/ | He gave a sardonic laugh. | Il a eu un rire sardonique.
+scrupulous | scrupuleux | adj | C2 | /ˈskruːpjələs/ | He's scrupulous about honesty. | Il est scrupuleux en matière d'honnêteté.
+sedulous | assidu, appliqué | adj | C2 | /ˈsedjələs/ | He was a sedulous scholar. | C'était un érudit appliqué.
+servile | servile | adj | C2 | /ˈsɜːvaɪl/ | His servile manner annoyed everyone. | Ses manières serviles agaçaient tout le monde.
+solicitous | attentionné, prévenant | adj | C2 | /səˈlɪsɪtəs/ | He was solicitous of his mother's health. | Il était attentif à la santé de sa mère.
+sycophant | flagorneur | n | C2 | /ˈsɪkəfænt/ | The king was surrounded by sycophants. | Le roi était entouré de flagorneurs.
+tractable | docile, maniable | adj | C2 | /ˈtræktəbl/ | The horse is calm and tractable. | Le cheval est calme et docile.
+truculent | agressif, belliqueux | adj | C2 | /ˈtrʌkjələnt/ | He became truculent when drunk. | Il devenait agressif quand il avait bu.
+unctuous | onctueux, mielleux | adj | C2 | /ˈʌŋktʃuəs/ | He has an unctuous manner. | Il a des manières mielleuses.
+venal | vénal, corrompu | adj | C2 | /ˈviːnl/ | They were venal officials. | C'étaient des fonctionnaires corrompus.
+zealot | fanatique | n | C2 | /ˈzelət/ | Zealots of every religion cause harm. | Les fanatiques de toutes les religions causent du tort.
+wanton | gratuit ; dévergondé | adj | C2 | /ˈwɒntən/ | It was an act of wanton cruelty. | C'était un acte de cruauté gratuite.
+wily | rusé | adj | C2 | /ˈwaɪli/ | He's a wily politician. | C'est un politicien rusé.
+winsome | charmant, avenant | adj | C2 | /ˈwɪnsəm/ | She has a winsome smile. | Elle a un sourire charmant.
+abstemious | sobre, frugal | adj | C2 | /əbˈstiːmiəs/ | He lived an abstemious life. | Il menait une vie frugale.
+acumen | perspicacité, flair | n | C2 | /ˈækjəmən/ | She has great business acumen. | Elle a un grand sens des affaires.
+bellicose | belliqueux | adj | C2 | /ˈbelɪkəʊs/ | The leader made bellicose speeches. | Le dirigeant tenait des discours belliqueux.
+brazen | effronté, impudent | adj | C2 | /ˈbreɪzn/ | It was a brazen lie. | C'était un mensonge éhonté.
+brusque | brusque | adj | C2 | /bruːsk/ | His manner was brusque. | Ses manières étaient brusques.
+callow | inexpérimenté, blanc-bec | adj | C2 | /ˈkæləʊ/ | He was a callow youth. | C'était un jeune homme sans expérience.
+cantankerous | acariâtre, grincheux | adj | C2 | /kænˈtæŋkərəs/ | He's a cantankerous old man. | C'est un vieil homme acariâtre.
+charlatan | charlatan | n | C2 | /ˈʃɑːlətən/ | The healer was a charlatan. | Le guérisseur était un charlatan.
+churlish | grossier, mal élevé | adj | C2 | /ˈtʃɜːlɪʃ/ | It would be churlish to refuse. | Il serait grossier de refuser.
+cupidity | cupidité | n | C2 | /kjuːˈpɪdəti/ | His cupidity knew no limits. | Sa cupidité ne connaissait pas de limites.
+dauntless | intrépide | adj | C2 | /ˈdɔːntləs/ | She was a dauntless explorer. | C'était une exploratrice intrépide.
+demure | réservé, modeste | adj | C2 | /dɪˈmjʊə/ | She gave a demure smile. | Elle a eu un sourire réservé.
+disingenuous | hypocrite, de mauvaise foi | adj | C2 | /ˌdɪsɪnˈdʒenjuəs/ | It would be disingenuous to deny it. | Il serait de mauvaise foi de le nier.
+dour | austère, sévère | adj | C2 | /dʊə/ | He's a dour, unsmiling man. | C'est un homme austère qui ne sourit jamais.
+droll | drôle, cocasse | adj | C2 | /drəʊl/ | He has a droll sense of humour. | Il a un humour cocasse.
+duplicity | duplicité | n | C2 | /djuːˈplɪsəti/ | He was accused of duplicity. | Il a été accusé de duplicité.
+cavalier | cavalier, désinvolte | adj | C2 | /ˌkævəˈlɪə/ | He has a cavalier attitude to money. | Il a une attitude désinvolte envers l'argent.
+curt | sec, brusque | adj | C2 | /kɜːt/ | She gave a curt reply. | Elle a fait une réponse sèche.
+foresight | prévoyance, clairvoyance | n | C1 | /ˈfɔːsaɪt/ | He had the foresight to save money. | Il a eu la prévoyance de mettre de l'argent de côté.
+swagger | air fanfaron, démarche arrogante | n | C2 | /ˈswæɡə/ | He walked in with a swagger. | Il est entré d'un air fanfaron.
+temperance | tempérance, modération | n | C2 | /ˈtempərəns/ | Temperance is a virtue. | La tempérance est une vertu.
+superstitious | superstitieux | adj | B2 | /ˌsuːpəˈstɪʃəs/ | My grandmother is very superstitious. | Ma grand-mère est très superstitieuse.
+touchy | susceptible | adj | C1 | /ˈtʌtʃi/ | He's touchy about his weight. | Il est susceptible au sujet de son poids.
+antisocial | antisocial ; peu sociable | adj | C1 | /ˌæntiˈsəʊʃl/ | Antisocial behaviour is a problem in the area. | Les incivilités sont un problème dans le quartier.
+cowardice | lâcheté | n | C1 | /ˈkaʊədɪs/ | Running away was an act of cowardice. | S'enfuir était un acte de lâcheté.
+sloth | paresse ; paresseux (animal) | n | C2 | /sləʊθ/ | Sloth is one of the deadly sins. | La paresse est l'un des péchés capitaux.
+irritable | irritable | adj | C1 | /ˈɪrɪtəbl/ | Fasting can make some people irritable. | Le jeûne peut rendre certaines personnes irritables.
+watchful | vigilant | adj | C1 | /ˈwɒtʃfl/ | Parents must be watchful. | Les parents doivent être vigilants.
+neurotic | névrosé | adj | C1 | /njʊəˈrɒtɪk/ | He's neurotic about cleanliness. | Il est obsédé par la propreté.
+prudence | prudence | n | C1 | /ˈpruːdns/ | Prudence is needed with money. | La prudence s'impose avec l'argent.
+uncompromising | intransigeant | adj | C1 | /ʌnˈkɒmprəmaɪzɪŋ/ | She takes an uncompromising stand. | Elle adopte une position intransigeante.
+unruly | indiscipliné, turbulent | adj | C1 | /ʌnˈruːli/ | The teacher struggled with an unruly class. | Le professeur avait du mal avec une classe indisciplinée.
+dexterity | dextérité | n | C1 | /dekˈsterəti/ | The surgeon showed great dexterity. | Le chirurgien a fait preuve d'une grande dextérité.
+feisty | fougueux, plein d'entrain | adj | C1 | /ˈfaɪsti/ | She's a feisty old lady. | C'est une vieille dame pleine de fougue.
+opportunistic | opportuniste | adj | C1 | /ˌɒpətjuːˈnɪstɪk/ | It was an opportunistic theft. | C'était un vol opportuniste.
+foolishness | sottise, bêtise | n | C1 | /ˈfuːlɪʃnəs/ | It was pure foolishness. | C'était de la pure bêtise.
+scrappy | décousu ; combatif | adj | C2 | /ˈskræpi/ | His notes are scrappy. | Ses notes sont décousues.
+complacency | autosatisfaction, suffisance | n | C1 | /kəmˈpleɪsnsi/ | There's no room for complacency. | Il n'y a pas de place pour l'autosatisfaction.
+dismissive | dédaigneux | adj | C1 | /dɪsˈmɪsɪv/ | He was dismissive of my ideas. | Il s'est montré dédaigneux envers mes idées.
+insistent | insistant | adj | C1 | /ɪnˈsɪstənt/ | The children are insistent on going. | Les enfants insistent pour y aller.
+narcissism | narcissisme | n | C1 | /ˈnɑːsɪsɪzəm/ | Social media can encourage narcissism. | Les réseaux sociaux peuvent encourager le narcissisme.
+observant | observateur ; pratiquant | adj | C1 | /əbˈzɜːvənt/ | She's an observant Muslim. | C'est une musulmane pratiquante.
+willpower | volonté | n | B2 | /ˈwɪlpaʊə/ | Fasting builds willpower. | Le jeûne renforce la volonté.
+evasive | évasif | adj | C1 | /ɪˈveɪsɪv/ | He gave an evasive answer. | Il a fait une réponse évasive.
+merciless | impitoyable | adj | C1 | /ˈmɜːsiləs/ | The sun was merciless. | Le soleil était impitoyable.
+tireless | infatigable | adj | C1 | /ˈtaɪələs/ | She is a tireless campaigner. | C'est une militante infatigable.
+antagonistic | hostile, antagoniste | adj | C2 | /ænˌtæɡəˈnɪstɪk/ | He's antagonistic towards newcomers. | Il est hostile envers les nouveaux venus.
+fanatical | fanatique | adj | C1 | /fəˈnætɪkl/ | He's fanatical about football. | C'est un fanatique de football.
+likeable | sympathique | adj | C1 | /ˈlaɪkəbl/ | He's a likeable young man. | C'est un jeune homme sympathique.
+crass | grossier, crasse | adj | C2 | /kræs/ | It was a crass remark. | C'était une remarque grossière.
+snob | snob | n | C1 | /snɒb/ | He's a terrible snob. | C'est un affreux snob.
+brash | effronté, tapageur | adj | C2 | /bræʃ/ | He's a brash young man. | C'est un jeune homme effronté.
+perky | guilleret, plein d'entrain | adj | C1 | /ˈpɜːki/ | She's perky in the mornings. | Elle est pleine d'entrain le matin.
+trickery | ruse, supercherie | n | C2 | /ˈtrɪkəri/ | He won by trickery. | Il a gagné par la ruse.
+wickedness | méchanceté, perversité | n | C1 | /ˈwɪkɪdnəs/ | The prophets warned against wickedness. | Les prophètes ont mis en garde contre la perversité.
+chatty | bavard | adj | B2 | /ˈtʃæti/ | Our neighbour is very chatty. | Notre voisine est très bavarde.
+idiocy | idiotie | n | C1 | /ˈɪdiəsi/ | It was sheer idiocy. | C'était une pure idiotie.
+rudeness | impolitesse, grossièreté | n | B2 | /ˈruːdnəs/ | I was shocked by his rudeness. | J'ai été choqué par son impolitesse.
+spineless | lâche, mou | adj | C2 | /ˈspaɪnləs/ | He's too spineless to say no. | Il est trop lâche pour dire non.
+stalwart | fidèle, inébranlable | adj | C2 | /ˈstɔːlwət/ | He's a stalwart supporter of the club. | C'est un supporter inébranlable du club.
+valour | bravoure | n | C2 | /ˈvælə/ | He fought with great valour. | Il a combattu avec une grande bravoure.
+boldness | audace, hardiesse | n | C1 | /ˈbəʊldnəs/ | I admire his boldness. | J'admire son audace.
+introspective | introspectif | adj | C2 | /ˌɪntrəˈspektɪv/ | He's a quiet, introspective man. | C'est un homme calme et introspectif.
+saucy | coquin, impertinent | adj | C2 | /ˈsɔːsi/ | He made a saucy remark. | Il a fait une remarque coquine.
+suave | raffiné, onctueux | adj | C2 | /swɑːv/ | He's a suave diplomat. | C'est un diplomate raffiné.
+argumentative | ergoteur, qui aime contredire | adj | C1 | /ˌɑːɡjuˈmentətɪv/ | He's very argumentative. | Il aime beaucoup contredire.
+canny | avisé, malin | adj | C2 | /ˈkæni/ | She's a canny businesswoman. | C'est une femme d'affaires avisée.
+artful | astucieux, rusé | adj | C2 | /ˈɑːtfl/ | He's an artful negotiator. | C'est un négociateur rusé.
+clingy | collant, possessif | adj | C1 | /ˈklɪŋi/ | The child is very clingy. | L'enfant est très collant.
+opinionated | dogmatique, qui a des avis tranchés | adj | C1 | /əˈpɪnjəneɪtɪd/ | He's very opinionated. | Il a des avis très tranchés.
+gallantry | bravoure ; galanterie | n | C2 | /ˈɡæləntri/ | He received a medal for gallantry. | Il a reçu une médaille pour sa bravoure.
+imbecile | imbécile | n | C1 | /ˈɪmbəsiːl/ | Don't call your brother an imbecile. | Ne traite pas ton frère d'imbécile.
+prim | guindé, collet monté | adj | C2 | /prɪm/ | She's rather prim and proper. | Elle est plutôt collet monté.
+savagery | sauvagerie | n | C2 | /ˈsævɪdʒri/ | The savagery of the attack shocked the nation. | La sauvagerie de l'attaque a choqué la nation.
+trickster | filou, escroc | n | C2 | /ˈtrɪkstə/ | The trickster fooled the villagers. | Le filou a dupé les villageois.
+adaptability | adaptabilité | n | C1 | /əˌdæptəˈbɪləti/ | Employers value adaptability. | Les employeurs apprécient la capacité d'adaptation.
+aggressiveness | agressivité | n | C1 | /əˈɡresɪvnəs/ | His aggressiveness scared people. | Son agressivité effrayait les gens.
+bloodthirsty | sanguinaire | adj | C2 | /ˈblʌdθɜːsti/ | He was a bloodthirsty tyrant. | C'était un tyran sanguinaire.
+caprice | caprice | n | C2 | /kəˈpriːs/ | The king ruled according to caprice. | Le roi gouvernait selon ses caprices.
+light-hearted | enjoué, léger | adj | C1 | /ˌlaɪt ˈhɑːtɪd/ | It's a light-hearted comedy. | C'est une comédie légère.
+surly | revêche, bourru | adj | C2 | /ˈsɜːli/ | The waiter was surly. | Le serveur était revêche.
+chipper | guilleret, en forme | adj | C2 | /ˈtʃɪpə/ | You're very chipper this morning! | Tu es bien guilleret ce matin !
+upstart | parvenu | n | C2 | /ˈʌpstɑːt/ | They saw him as an arrogant upstart. | Ils le voyaient comme un parvenu arrogant.
+doughty | vaillant, intrépide | adj | C2 | /ˈdaʊti/ | She's a doughty campaigner. | C'est une militante vaillante.
+idealist | idéaliste | n | C1 | /aɪˈdiːəlɪst/ | He's an idealist who wants to change the world. | C'est un idéaliste qui veut changer le monde.
+snarky | sarcastique, narquois | adj | C1 | /ˈsnɑːki/ | She made a snarky comment. | Elle a fait un commentaire sarcastique.
+stubbornness | entêtement | n | C1 | /ˈstʌbənnəs/ | His stubbornness is legendary. | Son entêtement est légendaire.
+subservient | servile, soumis | adj | C2 | /səbˈsɜːviənt/ | He refuses to be subservient. | Il refuse d'être soumis.
+untrustworthy | indigne de confiance | adj | C1 | /ʌnˈtrʌstwɜːði/ | He's untrustworthy. | Il n'est pas digne de confiance.
+wretch | misérable, malheureux | n | C2 | /retʃ/ | The poor wretch had nowhere to sleep. | Le pauvre malheureux n'avait nulle part où dormir.
+infantile | infantile, puéril | adj | C2 | /ˈɪnfəntaɪl/ | His behaviour is infantile. | Son comportement est puéril.
+faker | simulateur, imposteur | n | C2 | /ˈfeɪkə/ | He's not ill; he's a faker. | Il n'est pas malade, c'est un simulateur.
+gruff | bourru | adj | C2 | /ɡrʌf/ | He has a gruff voice but a kind heart. | Il a une voix bourrue mais un cœur tendre.
+blameless | irréprochable | adj | C2 | /ˈbleɪmləs/ | He led a blameless life. | Il a mené une vie irréprochable.
+bravado | bravade, fanfaronnade | n | C2 | /brəˈvɑːdəʊ/ | His bravado hid his fear. | Sa bravade cachait sa peur.
+immaturity | immaturité | n | C1 | /ˌɪməˈtʃʊərəti/ | His immaturity worries his parents. | Son immaturité inquiète ses parents.
+batty | toqué, loufoque | adj | C2 | /ˈbæti/ | My aunt is a bit batty. | Ma tante est un peu toquée.
+boyish | juvénile, gamin | adj | C1 | /ˈbɔɪɪʃ/ | He has a boyish smile. | Il a un sourire juvénile.
+discernment | discernement | n | C2 | /dɪˈsɜːnmənt/ | A judge needs discernment. | Un juge a besoin de discernement.
+industrious | travailleur, laborieux | adj | C2 | /ɪnˈdʌstriəs/ | The ant is an industrious creature. | La fourmi est une créature travailleuse.
+insufferable | insupportable | adj | C2 | /ɪnˈsʌfrəbl/ | His arrogance is insufferable. | Son arrogance est insupportable.
+loony | dingue, cinglé | adj | C2 | /ˈluːni/ | That's a loony idea! | C'est une idée dingue !
+recklessness | imprudence, témérité | n | C1 | /ˈrekləsnəs/ | His recklessness caused the accident. | Son imprudence a causé l'accident.
+deadbeat | bon à rien, mauvais payeur | n | C2 | /ˈdedbiːt/ | He's a deadbeat who never pays his debts. | C'est un mauvais payeur qui ne rembourse jamais ses dettes.
+debauchery | débauche | n | C2 | /dɪˈbɔːtʃəri/ | The prophet warned against debauchery. | Le prophète a mis en garde contre la débauche.
+élan | élan, panache | n | C2 | /eɪˈlɑːn/ | She performed with great élan. | Elle s'est produite avec beaucoup de panache.
+gentleness | douceur | n | C1 | /ˈdʒentlnəs/ | The Prophet treated children with gentleness. | Le Prophète traitait les enfants avec douceur.
+indomitable | indomptable | adj | C2 | /ɪnˈdɒmɪtəbl/ | She has an indomitable spirit. | Elle a un esprit indomptable.
+judgemental | qui porte des jugements, critique | adj | C1 | /dʒʌdʒˈmentl/ | Don't be so judgemental. | Ne juge pas si vite les autres.
+opportunist | opportuniste | n | C1 | /ˌɒpəˈtjuːnɪst/ | He's a political opportunist. | C'est un opportuniste politique.
+scoundrel | canaille, crapule | n | C2 | /ˈskaʊndrəl/ | The scoundrel stole from the poor. | La crapule a volé les pauvres.
+shifty | louche, sournois | adj | C1 | /ˈʃɪfti/ | He has shifty eyes. | Il a un regard fuyant.
+upstanding | intègre, droit | adj | C2 | /ʌpˈstændɪŋ/ | He's an upstanding member of the community. | C'est un membre intègre de la communauté.
+wilful | délibéré ; obstiné | adj | C2 | /ˈwɪlfl/ | It was wilful damage. | C'étaient des dégradations volontaires.
+oddball | original, excentrique | n | C2 | /ˈɒdbɔːl/ | He's a bit of an oddball. | C'est un peu un excentrique.
+brainless | écervelé | adj | C2 | /ˈbreɪnləs/ | That was a brainless thing to do. | C'était un geste écervelé.
 `,
 );

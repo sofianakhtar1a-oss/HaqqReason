@@ -220,5 +220,155 @@ missing person | personne disparue | n | B2 | /ˌmɪsɪŋ ˈpɜːsn/ | The polic
 search party | équipe de recherche | n | B2 | /ˈsɜːtʃ ˌpɑːti/ | A search party set off at dawn. | Une équipe de recherche est partie à l'aube.
 sniffer dog | chien renifleur | n | B2 | /ˈsnɪfə dɒɡ/ | The sniffer dog found the drugs. | Le chien renifleur a trouvé la drogue.
 forensics | police scientifique | n | C1 | /fəˈrensɪks/ | Forensics examined the car. | La police scientifique a examiné la voiture.
+spy | espion | n | B1 | /spaɪ/ | The spy sent secret messages. | L'espion envoyait des messages secrets.
+gun | arme à feu, pistolet | n | A2 | /ɡʌn/ | The robber had a gun. | Le voleur avait une arme.
+air force | armée de l'air | n | B1 | /ˈeə fɔːs/ | Her brother is in the air force. | Son frère est dans l'armée de l'air.
+bullet | balle (d'arme) | n | B1 | /ˈbʊlɪt/ | The bullet missed him. | La balle l'a manqué.
+sheriff | shérif | n | B1 | /ˈʃerɪf/ | The sheriff arrested the thief. | Le shérif a arrêté le voleur.
+submarine | sous-marin | n | B1 | /ˌsʌbməˈriːn/ | The submarine dived deep into the ocean. | Le sous-marin a plongé dans les profondeurs de l'océan.
+bomber | bombardier ; poseur de bombe | n | B2 | /ˈbɒmə/ | The bomber was arrested at the airport. | Le poseur de bombe a été arrêté à l'aéroport.
+bombing | bombardement, attentat à la bombe | n | B2 | /ˈbɒmɪŋ/ | The bombing destroyed the bridge. | Le bombardement a détruit le pont.
+to burgle | cambrioler | v | B2 | /ˈbɜːɡl/ | Our house was burgled last night. | Notre maison a été cambriolée cette nuit.
+commander | commandant | n | B2 | /kəˈmɑːndə/ | The commander gave the order. | Le commandant a donné l'ordre.
+fighting | combats | n | B2 | /ˈfaɪtɪŋ/ | Fighting broke out in the capital. | Des combats ont éclaté dans la capitale.
+firearm | arme à feu | n | B2 | /ˈfaɪərɑːm/ | Carrying a firearm is illegal here. | Le port d'arme à feu est illégal ici.
+gangster | gangster | n | B2 | /ˈɡæŋstə/ | The film is about a Chicago gangster. | Le film parle d'un gangster de Chicago.
+guerrilla | guérillero ; guérilla | n | B2 | /ɡəˈrɪlə/ | The guerrillas hid in the mountains. | Les guérilleros se cachaient dans les montagnes.
+gunshot | coup de feu | n | B2 | /ˈɡʌnʃɒt/ | We heard a gunshot in the night. | Nous avons entendu un coup de feu dans la nuit.
+to hijack | détourner (un avion, un véhicule) | v | B2 | /ˈhaɪdʒæk/ | The plane was hijacked. | L'avion a été détourné.
+missile | missile | n | B2 | /ˈmɪsaɪl/ | The missile hit its target. | Le missile a atteint sa cible.
+naval | naval | adj | B2 | /ˈneɪvl/ | It was a great naval battle. | Ce fut une grande bataille navale.
+paratrooper | parachutiste (militaire) | n | C1 | /ˈpærətruːpə/ | The paratroopers landed at dawn. | Les parachutistes ont atterri à l'aube.
+reinforcement | renforcement ; renforts | n | C1 | /ˌriːɪnˈfɔːsmənt/ | The police called for reinforcements. | La police a demandé des renforts.
+to stab | poignarder | v | B2 | /stæb/ | He was stabbed in the street. | Il a été poignardé dans la rue.
+to strangle | étrangler | v | C1 | /ˈstræŋɡl/ | He tried to strangle the guard. | Il a tenté d'étrangler le gardien.
+to torture | torturer | v | B2 | /ˈtɔːtʃə/ | The prisoners were tortured. | Les prisonniers ont été torturés.
+warship | navire de guerre | n | B2 | /ˈwɔːʃɪp/ | A warship patrolled the coast. | Un navire de guerre patrouillait le long de la côte.
+civilian | civil | n | B2 | /səˈvɪliən/ | Many civilians were killed. | De nombreux civils ont été tués.
+rifle | fusil | n | B2 | /ˈraɪfl/ | The hunter carried a rifle. | Le chasseur portait un fusil.
+sergeant | sergent | n | B2 | /ˈsɑːdʒənt/ | The sergeant gave the orders. | Le sergent donnait les ordres.
+warfare | guerre, combats | n | C1 | /ˈwɔːfeə/ | Chemical warfare is banned. | La guerre chimique est interdite.
+admiral | amiral | n | C1 | /ˈædmərəl/ | The admiral commanded the fleet. | L'amiral commandait la flotte.
+escort | escorte | n | C1 | /ˈeskɔːt/ | The president travelled with a police escort. | Le président voyageait sous escorte policière.
+infantry | infanterie | n | C1 | /ˈɪnfəntri/ | The infantry advanced slowly. | L'infanterie avançait lentement.
+pistol | pistolet | n | B2 | /ˈpɪstl/ | The robber had a pistol. | Le voleur avait un pistolet.
+regiment | régiment | n | C1 | /ˈredʒɪmənt/ | He served in an infantry regiment. | Il a servi dans un régiment d'infanterie.
+ammunition | munitions | n | C1 | /ˌæmjuˈnɪʃn/ | The soldiers ran out of ammunition. | Les soldats ont manqué de munitions.
+deployment | déploiement | n | C1 | /dɪˈplɔɪmənt/ | The deployment of troops was announced. | Le déploiement des troupes a été annoncé.
+brigade | brigade | n | C1 | /brɪˈɡeɪd/ | The fire brigade arrived quickly. | Les pompiers sont arrivés rapidement.
+militia | milice | n | C1 | /məˈlɪʃə/ | The militia controlled the village. | La milice contrôlait le village.
+marshal | maréchal ; marshal | n | C1 | /ˈmɑːʃl/ | The marshal led the troops. | Le maréchal commandait les troupes.
+battalion | bataillon | n | C1 | /bəˈtæliən/ | A battalion was sent to the border. | Un bataillon a été envoyé à la frontière.
+shotgun | fusil de chasse | n | C1 | /ˈʃɒtɡʌn/ | The farmer kept a shotgun. | Le fermier avait un fusil de chasse.
+constable | agent de police | n | C1 | /ˈkʌnstəbl/ | The constable took my statement. | L'agent a pris ma déposition.
+undercover | clandestin, en civil | adj | C1 | /ˌʌndəˈkʌvə/ | An undercover police officer arrested him. | Un policier en civil l'a arrêté.
+sniper | tireur embusqué, sniper | n | C1 | /ˈsnaɪpə/ | A sniper was hiding on the roof. | Un tireur embusqué se cachait sur le toit.
+convoy | convoi | n | C1 | /ˈkɒnvɔɪ/ | A convoy of trucks brought food. | Un convoi de camions a apporté de la nourriture.
+detector | détecteur | n | B2 | /dɪˈtektə/ | Install a smoke detector. | Installe un détecteur de fumée.
+to deploy | déployer | v | C1 | /dɪˈplɔɪ/ | The army deployed troops to the border. | L'armée a déployé des troupes à la frontière.
+perimeter | périmètre | n | C1 | /pəˈrɪmɪtə/ | Police secured the perimeter. | La police a sécurisé le périmètre.
+ransom | rançon | n | C1 | /ˈrænsəm/ | The kidnappers demanded a ransom. | Les ravisseurs ont exigé une rançon.
+bunker | bunker, abri | n | C1 | /ˈbʌŋkə/ | They hid in an underground bunker. | Ils se sont cachés dans un abri souterrain.
+garrison | garnison | n | C2 | /ˈɡærɪsn/ | The garrison defended the fort. | La garnison défendait le fort.
+grenade | grenade (arme) | n | C1 | /ɡrəˈneɪd/ | A soldier threw a grenade. | Un soldat a lancé une grenade.
+flank | flanc | n | C1 | /flæŋk/ | The army attacked the enemy's flank. | L'armée a attaqué le flanc de l'ennemi.
+sabotage | sabotage | n | C1 | /ˈsæbətɑːʒ/ | The fire was an act of sabotage. | L'incendie était un acte de sabotage.
+dynamite | dynamite | n | C1 | /ˈdaɪnəmaɪt/ | They used dynamite to blast the rock. | Ils ont fait sauter la roche à la dynamite.
+blockade | blocus | n | C1 | /blɒˈkeɪd/ | The blockade prevented food from arriving. | Le blocus empêchait la nourriture d'arriver.
+ambush | embuscade | n | C1 | /ˈæmbʊʃ/ | The soldiers were caught in an ambush. | Les soldats sont tombés dans une embuscade.
+retaliation | représailles | n | C2 | /rɪˌtæliˈeɪʃn/ | The attack was in retaliation for the bombing. | L'attaque a été menée en représailles au bombardement.
+dagger | poignard, dague | n | C1 | /ˈdæɡə/ | The thief pulled out a dagger. | Le voleur a sorti un poignard.
+brawl | bagarre | n | C1 | /brɔːl/ | A brawl broke out in the bar. | Une bagarre a éclaté dans le bar.
+gunfire | coups de feu | n | C1 | /ˈɡʌnfaɪə/ | We heard gunfire in the distance. | Nous avons entendu des coups de feu au loin.
+platoon | section (armée) | n | C2 | /pləˈtuːn/ | The platoon crossed the river. | La section a traversé la rivière.
+shootout | fusillade | n | C1 | /ˈʃuːtaʊt/ | There was a shootout with the police. | Il y a eu une fusillade avec la police.
+destroyer | destroyer (navire) | n | C2 | /dɪˈstrɔɪə/ | A destroyer escorted the ship. | Un destroyer escortait le navire.
+loot | butin | n | C1 | /luːt/ | The thieves shared the loot. | Les voleurs se sont partagé le butin.
+to kidnap | enlever, kidnapper | v | B2 | /ˈkɪdnæp/ | The boy was kidnapped. | Le garçon a été enlevé.
+thug | voyou | n | C1 | /θʌɡ/ | A gang of thugs attacked him. | Une bande de voyous l'a agressé.
+espionage | espionnage | n | C1 | /ˈespiənɑːʒ/ | He was accused of espionage. | Il a été accusé d'espionnage.
+to stalk | traquer, harceler | v | C1 | /stɔːk/ | The lion stalked its prey. | Le lion traquait sa proie.
+underworld | pègre, milieu ; monde souterrain | n | C1 | /ˈʌndəwɜːld/ | He had links with the criminal underworld. | Il avait des liens avec la pègre.
+reconnaissance | reconnaissance (militaire) | n | C2 | /rɪˈkɒnɪsns/ | They sent a plane on a reconnaissance mission. | Ils ont envoyé un avion en mission de reconnaissance.
+stalker | harceleur | n | C1 | /ˈstɔːkə/ | She called the police about her stalker. | Elle a appelé la police au sujet de son harceleur.
+torpedo | torpille | n | C2 | /tɔːˈpiːdəʊ/ | The submarine fired a torpedo. | Le sous-marin a tiré une torpille.
+abduction | enlèvement | n | C2 | /æbˈdʌkʃn/ | Police are investigating the abduction. | La police enquête sur l'enlèvement.
+revolver | revolver | n | C1 | /rɪˈvɒlvə/ | The detective carried a revolver. | L'inspecteur portait un revolver.
+sentinel | sentinelle | n | C2 | /ˈsentɪnl/ | A sentinel stood at the gate. | Une sentinelle se tenait à la porte.
+rampage | déchaînement de violence | n | C2 | /ˈræmpeɪdʒ/ | The rioters went on a rampage. | Les émeutiers se sont déchaînés.
+heist | casse, braquage | n | C1 | /haɪst/ | The film is about a bank heist. | Le film raconte le braquage d'une banque.
+intimidation | intimidation | n | C1 | /ɪnˌtɪmɪˈdeɪʃn/ | Witnesses faced intimidation. | Les témoins ont subi des intimidations.
+outpost | avant-poste | n | C2 | /ˈaʊtpəʊst/ | Soldiers guarded the outpost. | Des soldats gardaient l'avant-poste.
+bandit | bandit | n | C1 | /ˈbændɪt/ | Bandits attacked the caravan. | Des bandits ont attaqué la caravane.
+to enlist | s'engager (armée) ; solliciter | v | C1 | /ɪnˈlɪst/ | He enlisted in the army at eighteen. | Il s'est engagé dans l'armée à dix-huit ans.
+mastermind | cerveau (d'une opération) | n | C2 | /ˈmɑːstəmaɪnd/ | Police arrested the mastermind of the robbery. | La police a arrêté le cerveau du vol.
+weaponry | armement | n | C2 | /ˈwepənri/ | The army has modern weaponry. | L'armée dispose d'un armement moderne.
+corps | corps (d'armée, diplomatique) | n | C1 | /kɔː/ | He joined the medical corps. | Il a rejoint le corps médical.
+desertion | désertion | n | C1 | /dɪˈzɜːʃn/ | The soldier was arrested for desertion. | Le soldat a été arrêté pour désertion.
+blitz | bombardement intensif ; offensive | n | C2 | /blɪts/ | London suffered during the Blitz. | Londres a souffert pendant le Blitz.
+mercenary | mercenaire | n | C2 | /ˈmɜːsənəri/ | The army hired mercenaries. | L'armée a engagé des mercenaires.
+to besiege | assiéger | v | C2 | /bɪˈsiːdʒ/ | The army besieged the city. | L'armée a assiégé la ville.
+to vandalise | vandaliser | v | C2 | /ˈvændəlaɪz/ | Someone vandalised the bus shelter. | Quelqu'un a vandalisé l'abribus.
+armoury | arsenal | n | C2 | /ˈɑːməri/ | The castle had a large armoury. | Le château disposait d'un grand arsenal.
+cadet | élève officier | n | C1 | /kəˈdet/ | The cadets marched past. | Les élèves officiers ont défilé.
+crackdown | répression, coup de filet | n | C1 | /ˈkrækdaʊn/ | There's a crackdown on drug dealers. | Il y a une opération contre les trafiquants de drogue.
+handgun | arme de poing | n | C1 | /ˈhændɡʌn/ | Handguns are illegal here. | Les armes de poing sont illégales ici.
+armoured | blindé | adj | C2 | /ˈɑːməd/ | They travelled in an armoured car. | Ils ont voyagé en voiture blindée.
+bombardment | bombardement | n | C2 | /bɒmˈbɑːdmənt/ | The city suffered heavy bombardment. | La ville a subi un bombardement intense.
+ceasefire | cessez-le-feu | n | C1 | /ˈsiːsfaɪə/ | A ceasefire was declared. | Un cessez-le-feu a été déclaré.
+gunman | homme armé, tireur | n | C1 | /ˈɡʌnmən/ | The gunman was arrested. | Le tireur a été arrêté.
+commando | commando | n | C1 | /kəˈmɑːndəʊ/ | Commandos stormed the building. | Des commandos ont donné l'assaut au bâtiment.
+gunner | artilleur | n | C2 | /ˈɡʌnə/ | The gunner fired at the plane. | L'artilleur a tiré sur l'avion.
+insurgency | insurrection | n | C2 | /ɪnˈsɜːdʒənsi/ | The army fought the insurgency. | L'armée a combattu l'insurrection.
+raider | pillard, assaillant | n | C2 | /ˈreɪdə/ | The raiders stole the cattle. | Les pillards ont volé le bétail.
+vigilante | justicier | n | C2 | /ˌvɪdʒɪˈlænti/ | A vigilante attacked the thief. | Un justicier s'en est pris au voleur.
+brigadier | général de brigade | n | C2 | /ˌbrɪɡəˈdɪə/ | The brigadier inspected the troops. | Le général a inspecté les troupes.
+firepower | puissance de feu | n | C2 | /ˈfaɪəpaʊə/ | The army has superior firepower. | L'armée a une puissance de feu supérieure.
+mutiny | mutinerie | n | C2 | /ˈmjuːtəni/ | The sailors staged a mutiny. | Les marins se sont mutinés.
+projectile | projectile | n | C2 | /prəˈdʒektaɪl/ | Protesters threw projectiles at the police. | Des manifestants ont lancé des projectiles sur la police.
+bulletproof | pare-balles | adj | C1 | /ˈbʊlɪtpruːf/ | He wore a bulletproof vest. | Il portait un gilet pare-balles.
+commandant | commandant | n | C2 | /ˈkɒməndænt/ | The commandant inspected the camp. | Le commandant a inspecté le camp.
+at gunpoint | sous la menace d'une arme | expr | C1 | /ət ˈɡʌnpɔɪnt/ | He was robbed at gunpoint. | Il a été dévalisé sous la menace d'une arme.
+insurgent | insurgé | n | C2 | /ɪnˈsɜːdʒənt/ | The insurgents attacked the base. | Les insurgés ont attaqué la base.
+paramilitary | paramilitaire | adj | C2 | /ˌpærəˈmɪlətri/ | Paramilitary groups controlled the area. | Des groupes paramilitaires contrôlaient la zone.
+mutilation | mutilation | n | C2 | /ˌmjuːtɪˈleɪʃn/ | Islam forbids the mutilation of corpses. | L'islam interdit la mutilation des cadavres.
+machete | machette | n | C1 | /məˈʃeti/ | He cut the branches with a machete. | Il a coupé les branches à la machette.
+shrapnel | éclats d'obus | n | C2 | /ˈʃræpnəl/ | He was hit by shrapnel. | Il a été touché par des éclats d'obus.
+stand-off | impasse, face-à-face | n | C1 | /ˈstænd ɒf/ | The stand-off with the police lasted hours. | Le face-à-face avec la police a duré des heures.
+altercation | altercation | n | C1 | /ˌɔːltəˈkeɪʃn/ | There was an altercation in the street. | Il y a eu une altercation dans la rue.
+contraband | contrebande | n | C2 | /ˈkɒntrəbænd/ | Customs seized the contraband. | La douane a saisi la marchandise de contrebande.
+to smuggle | faire passer en contrebande | v | C1 | /ˈsmʌɡl/ | They smuggle cigarettes across the border. | Ils font passer des cigarettes en contrebande à la frontière.
+assailant | agresseur, assaillant | n | C1 | /əˈseɪlənt/ | The assailant fled. | L'agresseur a pris la fuite.
+barricade | barricade | n | C1 | /ˌbærɪˈkeɪd/ | Protesters built a barricade. | Les manifestants ont dressé une barricade.
+holster | étui (de revolver) | n | C2 | /ˈhəʊlstə/ | The officer put his gun back in its holster. | Le policier a remis son arme dans son étui.
+detonation | détonation | n | C2 | /ˌdetəˈneɪʃn/ | We heard a loud detonation. | Nous avons entendu une forte détonation.
+skirmish | escarmouche, accrochage | n | C2 | /ˈskɜːmɪʃ/ | There was a skirmish at the border. | Il y a eu un accrochage à la frontière.
+incendiary | incendiaire | adj | C2 | /ɪnˈsendiəri/ | His speech was incendiary. | Son discours était incendiaire.
+armament | armement | n | C2 | /ˈɑːməmənt/ | The country spends a lot on armaments. | Le pays dépense beaucoup en armement.
+hideout | cachette, repaire | n | C1 | /ˈhaɪdaʊt/ | Police found the gang's hideout. | La police a trouvé le repaire du gang.
+manhunt | chasse à l'homme | n | C1 | /ˈmænhʌnt/ | A manhunt is under way. | Une chasse à l'homme est en cours.
+warhead | ogive | n | C2 | /ˈwɔːhed/ | The missile carried a nuclear warhead. | Le missile portait une ogive nucléaire.
+roadblock | barrage routier | n | C1 | /ˈrəʊdblɒk/ | Police set up a roadblock. | La police a installé un barrage routier.
+encampment | campement | n | C2 | /ɪnˈkæmpmənt/ | Refugees live in a makeshift encampment. | Des réfugiés vivent dans un campement de fortune.
+smuggler | contrebandier, passeur | n | C1 | /ˈsmʌɡlə/ | Smugglers charge migrants huge sums. | Les passeurs exigent des sommes énormes des migrants.
+incursion | incursion | n | C2 | /ɪnˈkɜːʃn/ | Troops made an incursion across the border. | Des troupes ont fait une incursion de l'autre côté de la frontière.
+enlistment | engagement, enrôlement | n | C2 | /ɪnˈlɪstmənt/ | Enlistment in the army is voluntary. | L'engagement dans l'armée est volontaire.
+combatant | combattant | n | C1 | /ˈkɒmbətənt/ | Islam forbids harming non-combatants. | L'islam interdit de s'en prendre aux non-combattants.
+firefighting | lutte contre l'incendie | n | C1 | /ˈfaɪəfaɪtɪŋ/ | Firefighting planes were sent. | Des avions de lutte contre l'incendie ont été envoyés.
+henchman | homme de main, sbire | n | C2 | /ˈhentʃmən/ | The boss sent his henchmen. | Le chef a envoyé ses hommes de main.
+mayday | appel de détresse | n | C2 | /ˈmeɪdeɪ/ | The pilot sent out a mayday call. | Le pilote a lancé un appel de détresse.
+counter-attack | contre-attaque | n | C1 | /ˈkaʊntər əˌtæk/ | The army launched a counter-attack. | L'armée a lancé une contre-attaque.
+expeditionary force | corps expéditionnaire | n | C2 | /ˌekspəˈdɪʃənri fɔːs/ | An expeditionary force was sent abroad. | Un corps expéditionnaire a été envoyé à l'étranger.
+marksman | tireur d'élite | n | C2 | /ˈmɑːksmən/ | The marksman hit the target. | Le tireur d'élite a touché la cible.
+airlift | pont aérien | n | C2 | /ˈeəlɪft/ | An airlift brought food to the city. | Un pont aérien a apporté de la nourriture à la ville.
+periscope | périscope | n | C2 | /ˈperɪskəʊp/ | The submarine raised its periscope. | Le sous-marin a levé son périscope.
+reprisal | représailles | n | C2 | /rɪˈpraɪzl/ | They feared reprisals. | Ils craignaient des représailles.
+retaliatory | de représailles | adj | C2 | /rɪˈtæliətri/ | They launched a retaliatory strike. | Ils ont lancé une frappe de représailles.
+napalm | napalm | n | C2 | /ˈneɪpɑːm/ | Napalm was used in the war. | Le napalm a été utilisé pendant la guerre.
+airbase | base aérienne | n | C1 | /ˈeəbeɪs/ | The airbase is near the coast. | La base aérienne est près de la côte.
+pre-emptive | préventif | adj | C2 | /priˈemptɪv/ | They launched a pre-emptive strike. | Ils ont lancé une frappe préventive.
+scuffle | bagarre, échauffourée | n | C1 | /ˈskʌfl/ | A scuffle broke out outside. | Une bagarre a éclaté dehors.
+strangulation | strangulation | n | C2 | /ˌstræŋɡjuˈleɪʃn/ | The victim died by strangulation. | La victime est morte par strangulation.
+battlefront | front | n | C2 | /ˈbætlfrʌnt/ | News came from the battlefront. | Des nouvelles sont arrivées du front.
 `,
 );

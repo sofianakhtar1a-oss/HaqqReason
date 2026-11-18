@@ -325,5 +325,39 @@ conundrum | énigme, casse-tête | n | C2 | /kəˈnʌndrəm/ | That's a real con
 dearth | pénurie, manque | n | C2 | /dɜːθ/ | There is a dearth of good teachers. | Il y a une pénurie de bons professeurs.
 epitome | quintessence, incarnation | n | C2 | /ɪˈpɪtəmi/ | He is the epitome of kindness. | Il est la bonté incarnée.
 hubris | démesure, orgueil | n | C2 | /ˈhjuːbrɪs/ | His hubris led to his fall. | Sa démesure a causé sa chute.
+advent | avènement, arrivée | n | C1 | /ˈædvent/ | The advent of the internet changed everything. | L'avènement d'internet a tout changé.
+ambiguity | ambiguïté | n | C1 | /ˌæmbɪˈɡjuːəti/ | There is no ambiguity in his words. | Ses paroles ne laissent aucune ambiguïté.
+to bestow | accorder, conférer | v | C1 | /bɪˈstəʊ/ | God bestowed His blessings upon them. | Dieu leur a accordé Ses bienfaits.
+coherence | cohérence | n | C1 | /kəʊˈhɪərəns/ | His argument lacks coherence. | Son argumentation manque de cohérence.
+culmination | aboutissement, point culminant | n | C1 | /ˌkʌlmɪˈneɪʃn/ | The book is the culmination of ten years' work. | Le livre est l'aboutissement de dix ans de travail.
+de facto | de fait | adj | C2 | /ˌdeɪ ˈfæktəʊ/ | He is the de facto leader. | C'est le chef de fait.
+to dignify | honorer, donner de la dignité à | v | C1 | /ˈdɪɡnɪfaɪ/ | I won't dignify that remark with an answer. | Je ne ferai pas à cette remarque l'honneur d'une réponse.
+eloquence | éloquence | n | C1 | /ˈeləkwəns/ | The imam spoke with great eloquence. | L'imam a parlé avec une grande éloquence.
+endeavour | effort, entreprise | n | C1 | /ɪnˈdevə/ | Climbing Everest is a dangerous endeavour. | Gravir l'Everest est une entreprise dangereuse.
+generalisation | généralisation | n | C1 | /ˌdʒenrəlaɪˈzeɪʃn/ | Avoid sweeping generalisations. | Évite les généralisations hâtives.
+hyperbole | hyperbole, exagération | n | C2 | /haɪˈpɜːbəli/ | "I've told you a million times" is hyperbole. | « Je te l'ai dit un million de fois » est une hyperbole.
+to incur | encourir, subir | v | C1 | /ɪnˈkɜː/ | You will incur a fine if you're late. | Tu t'exposes à une amende si tu es en retard.
+proponent | partisan, défenseur | n | C1 | /prəˈpəʊnənt/ | He's a strong proponent of free education. | C'est un ardent défenseur de l'éducation gratuite.
+to reprove | réprimander | v | C2 | /rɪˈpruːv/ | The teacher reproved him gently. | Le professeur l'a gentiment réprimandé.
+to behold | contempler (littéraire) | v | C2 | /bɪˈhəʊld/ | The view was a wonder to behold. | La vue était une merveille à contempler.
+aforementioned | susmentionné, précité | adj | C2 | /əˌfɔːˈmenʃənd/ | The aforementioned book is out of print. | Le livre précité est épuisé.
+rationale | justification, raisonnement | n | C1 | /ˌræʃəˈnɑːl/ | What's the rationale behind this decision? | Quelle est la justification de cette décision ?
+assertion | affirmation, assertion | n | C1 | /əˈsɜːʃn/ | His assertion is not supported by evidence. | Son affirmation ne repose sur aucune preuve.
+criteria | critères | n | C1 | /kraɪˈtɪəriə/ | What are the criteria for selection? | Quels sont les critères de sélection ?
+discourse | discours | n | C1 | /ˈdɪskɔːs/ | Political discourse has become aggressive. | Le discours politique est devenu agressif.
+hypothetical | hypothétique | adj | C2 | /ˌhaɪpəˈθetɪkl/ | Let's take a hypothetical example. | Prenons un exemple hypothétique.
+conjecture | conjecture, supposition | n | C2 | /kənˈdʒektʃə/ | That's pure conjecture. | Ce n'est qu'une conjecture.
+to presuppose | présupposer | v | C2 | /ˌpriːsəˈpəʊz/ | Your argument presupposes that he is guilty. | Ton argument présuppose qu'il est coupable.
+presupposition | présupposé | n | C2 | /ˌpriːsʌpəˈzɪʃn/ | Every argument rests on presuppositions. | Tout argument repose sur des présupposés.
+to posit | postuler, poser | v | C2 | /ˈpɒzɪt/ | The theory posits that the universe had a beginning. | La théorie postule que l'univers a eu un commencement.
+brevity | brièveté, concision | n | C2 | /ˈbrevəti/ | Brevity is the soul of wit. | La concision est l'âme de l'esprit.
+proposition | proposition ; affirmation | n | C2 | /ˌprɒpəˈzɪʃn/ | Every proposition must be proved. | Toute proposition doit être démontrée.
+antithesis | antithèse | n | C2 | /ænˈtɪθəsɪs/ | Hatred is the antithesis of love. | La haine est l'antithèse de l'amour.
+antithetical | opposé, contraire | adj | C2 | /ˌæntɪˈθetɪkl/ | Violence is antithetical to faith. | La violence est contraire à la foi.
+allusion | allusion | n | C2 | /əˈluːʒn/ | The poem contains allusions to the Qur'an. | Le poème contient des allusions au Coran.
+to allude to | faire allusion à | v | C2 | /əˈluːd tə/ | He alluded to his problems. | Il a fait allusion à ses problèmes.
+rhetorical | rhétorique | adj | C2 | /rɪˈtɒrɪkl/ | It was a rhetorical question. | C'était une question rhétorique.
+verisimilitude | vraisemblance | n | C2 | /ˌverɪsɪˈmɪlɪtjuːd/ | The novel lacks verisimilitude. | Le roman manque de vraisemblance.
+synthesis | synthèse | n | C2 | /ˈsɪnθəsɪs/ | The book is a synthesis of many ideas. | Le livre est une synthèse de nombreuses idées.
 `,
 );

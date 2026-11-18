@@ -202,5 +202,25 @@ expiry date | date d'expiration | n | B1 | /ɪkˈspaɪəri deɪt/ | The card's e
 shelf life | durée de conservation | n | C1 | /ˈʃelf laɪf/ | Fresh bread has a short shelf life. | Le pain frais se conserve peu de temps.
 Cyber Monday | Cyber Monday | n | B2 | /ˌsaɪbə ˈmʌndeɪ/ | Online shops cut prices on Cyber Monday. | Les boutiques en ligne baissent leurs prix pour le Cyber Monday.
 to window-shop | faire du lèche-vitrines | v | B1 | /ˈwɪndəʊ ʃɒp/ | We like to window-shop on Sundays. | Nous aimons faire du lèche-vitrines le dimanche.
+antique | antiquité, objet ancien | n | B1 | /ænˈtiːk/ | This table is a valuable antique. | Cette table est une antiquité de valeur.
+selection | sélection, choix | n | B1 | /sɪˈlekʃn/ | The shop has a wide selection of books. | Le magasin propose un large choix de livres.
+wrapping | emballage | n | B1 | /ˈræpɪŋ/ | Remove the wrapping before heating. | Retire l'emballage avant de faire chauffer.
+to bid | enchérir | v | B2 | /bɪd/ | He bid five hundred pounds for the painting. | Il a enchéri à cinq cents livres pour le tableau.
+bidding | enchères | n | B2 | /ˈbɪdɪŋ/ | The bidding started at ten euros. | Les enchères ont commencé à dix euros.
+cardboard | carton | n | B2 | /ˈkɑːdbɔːd/ | Put the books in a cardboard box. | Mets les livres dans un carton.
+giveaway | cadeau, objet promotionnel | n | B2 | /ˈɡɪvəweɪ/ | The pens are free giveaways. | Les stylos sont des cadeaux publicitaires.
+pawnbroker | prêteur sur gages | n | C1 | /ˈpɔːnbrəʊkə/ | He sold his watch to a pawnbroker. | Il a vendu sa montre à un prêteur sur gages.
+promotional | promotionnel | adj | C1 | /prəˈməʊʃənl/ | They gave out promotional gifts. | Ils ont distribué des cadeaux promotionnels.
+to pawn | mettre en gage | v | C1 | /pɔːn/ | He pawned his watch to pay the rent. | Il a mis sa montre en gage pour payer le loyer.
+crate | caisse, cageot | n | B2 | /kreɪt/ | A crate of oranges, please. | Un cageot d'oranges, s'il vous plaît.
+purchaser | acheteur | n | C1 | /ˈpɜːtʃəsə/ | The purchaser must pay a deposit. | L'acheteur doit verser un acompte.
+wares | marchandises | n | C1 | /weəz/ | The merchants sold their wares at the market. | Les marchands vendaient leurs marchandises au marché.
+resale | revente | n | C2 | /ˈriːseɪl/ | The car has a good resale value. | La voiture a une bonne valeur de revente.
+showroom | salle d'exposition | n | B2 | /ˈʃəʊruːm/ | We visited a car showroom. | Nous avons visité un salon d'exposition automobile.
+emporium | grand magasin, bazar | n | C2 | /emˈpɔːriəm/ | The old emporium sold everything. | Le vieux bazar vendait de tout.
+unsold | invendu | adj | C1 | /ˌʌnˈsəʊld/ | Unsold food is given to charity. | La nourriture invendue est donnée aux associations.
+freebie | cadeau, truc gratuit | n | C1 | /ˈfriːbi/ | The shop gives out freebies. | Le magasin distribue des cadeaux.
+hawker | colporteur, marchand ambulant | n | C2 | /ˈhɔːkə/ | Hawkers sell food in the streets of Dakar. | Des marchands ambulants vendent de la nourriture dans les rues de Dakar.
+knockdown price | prix sacrifié | n | C1 | /ˌnɒkdaʊn ˈpraɪs/ | They sell rugs at knockdown prices. | Ils vendent des tapis à prix sacrifiés.
 `,
 );

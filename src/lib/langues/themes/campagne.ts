@@ -218,5 +218,33 @@ fox hunting | chasse au renard | n | C1 | /ˈfɒks ˌhʌntɪŋ/ | Fox hunting is
 angler | pêcheur à la ligne | n | B2 | /ˈæŋɡlər/ | An angler sat by the river. | Un pêcheur était assis au bord de la rivière.
 rod | canne à pêche | n | B1 | /rɒd/ | He cast his rod into the lake. | Il a lancé sa canne dans le lac.
 bait | appât | n | B2 | /beɪt/ | Worms make good bait. | Les vers font de bons appâts.
+breeding | élevage ; reproduction | n | B2 | /ˈbriːdɪŋ/ | Horse breeding is common in Normandy. | L'élevage de chevaux est courant en Normandie.
+farmland | terres agricoles | n | B1 | /ˈfɑːmlænd/ | The farmland stretches for miles. | Les terres agricoles s'étendent sur des kilomètres.
+rolling | vallonné | adj | B2 | /ˈrəʊlɪŋ/ | The farm is surrounded by rolling hills. | La ferme est entourée de collines ondulées.
+wagon | chariot, wagon | n | B1 | /ˈwæɡən/ | The horses pulled the wagon. | Les chevaux tiraient le chariot.
+flax | lin | n | C1 | /flæks/ | Flax is grown in Normandy. | On cultive le lin en Normandie.
+hemp | chanvre | n | C1 | /hemp/ | The rope is made of hemp. | La corde est en chanvre.
+pastoral | pastoral, champêtre | adj | C1 | /ˈpɑːstərəl/ | The painting shows a pastoral scene. | Le tableau représente une scène champêtre.
+ranch | ranch | n | B2 | /rɑːntʃ/ | They raise cattle on a ranch. | Ils élèvent du bétail dans un ranch.
+vine | vigne | n | B2 | /vaɪn/ | Grapes grow on vines. | Le raisin pousse sur la vigne.
+pest | nuisible ; peste (personne) | n | C1 | /pest/ | Rats are pests. | Les rats sont des nuisibles.
+cultivation | culture (des terres) | n | C1 | /ˌkʌltɪˈveɪʃn/ | Rice cultivation needs a lot of water. | La culture du riz demande beaucoup d'eau.
+lumber | bois de construction | n | C1 | /ˈlʌmbə/ | The trucks carry lumber. | Les camions transportent du bois.
+fodder | fourrage | n | C2 | /ˈfɒdə/ | The farmer stored fodder for the winter. | Le fermier a stocké du fourrage pour l'hiver.
+heifer | génisse | n | C1 | /ˈhefə/ | The farmer bought a young heifer. | Le fermier a acheté une jeune génisse.
+homestead | ferme, propriété | n | C2 | /ˈhəʊmsted/ | They lived on a small homestead. | Ils vivaient dans une petite ferme.
+to cull | abattre (sélectivement) ; sélectionner | v | C2 | /kʌl/ | Farmers culled the sick animals. | Les éleveurs ont abattu les animaux malades.
+breeder | éleveur | n | C1 | /ˈbriːdə/ | He's a horse breeder. | Il est éleveur de chevaux.
+agrarian | agraire | adj | C2 | /əˈɡreəriən/ | It was an agrarian society. | C'était une société agraire.
+paddock | enclos, paddock | n | C1 | /ˈpædək/ | The horses graze in the paddock. | Les chevaux paissent dans l'enclos.
+outlying | périphérique, isolé | adj | C1 | /ˈaʊtlaɪɪŋ/ | Buses rarely reach outlying villages. | Les bus desservent rarement les villages isolés.
+sugar cane | canne à sucre | n | B2 | /ˈʃʊɡə keɪn/ | They grow sugar cane on the island. | On cultive la canne à sucre sur l'île.
+slaughterhouse | abattoir | n | C1 | /ˈslɔːtəhaʊs/ | The halal slaughterhouse supplies the butcher. | L'abattoir halal approvisionne le boucher.
+animal husbandry | élevage | n | C2 | /ˌænɪml ˈhʌzbəndri/ | Animal husbandry is their main activity. | L'élevage est leur activité principale.
+sawmill | scierie | n | C2 | /ˈsɔːmɪl/ | He works at the sawmill. | Il travaille à la scierie.
+sorghum | sorgho | n | C2 | /ˈsɔːɡəm/ | Farmers grow sorghum in Sudan. | Les agriculteurs cultivent du sorgho au Soudan.
+alfalfa | luzerne | n | C2 | /ælˈfælfə/ | The cows eat alfalfa. | Les vaches mangent de la luzerne.
+potash | potasse | n | C2 | /ˈpɒtæʃ/ | Farmers use potash as fertiliser. | Les agriculteurs utilisent la potasse comme engrais.
+hacienda | hacienda | n | C2 | /ˌhæsiˈendə/ | They stayed at an old hacienda in Mexico. | Ils ont séjourné dans une vieille hacienda au Mexique.
 `,
 );

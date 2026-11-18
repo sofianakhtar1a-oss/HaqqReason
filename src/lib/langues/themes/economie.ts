@@ -264,5 +264,110 @@ mercantilism | mercantilisme | n | C2 | /ˈmɜːkəntɪlɪzəm/ | Mercantilism d
 Keynesian | keynésien | adj | C2 | /ˈkeɪnziən/ | It's a Keynesian stimulus plan. | C'est un plan de relance keynésien.
 neoliberalism | néolibéralisme | n | C2 | /ˌniːəʊˈlɪbərəlɪzəm/ | Neoliberalism favours free markets. | Le néolibéralisme privilégie les marchés libres.
 degrowth | décroissance | n | C2 | /ˌdiːˈɡrəʊθ/ | Some ecologists argue for degrowth. | Certains écologistes défendent la décroissance.
+dealer | marchand, concessionnaire | n | B1 | /ˈdiːlə/ | He's a car dealer. | Il est concessionnaire automobile.
+industrial | industriel | adj | B1 | /ɪnˈdʌstriəl/ | Manchester is an industrial city. | Manchester est une ville industrielle.
+innovator | innovateur | n | B2 | /ˈɪnəveɪtə/ | He was a great innovator. | C'était un grand innovateur.
+management | gestion ; direction | n | B1 | /ˈmænɪdʒmənt/ | She studied business management. | Elle a étudié la gestion d'entreprise.
+developing | en développement | adj | B2 | /dɪˈveləpɪŋ/ | Many developing countries need clean water. | Beaucoup de pays en développement manquent d'eau potable.
+distributor | distributeur | n | B2 | /dɪˈstrɪbjətə/ | The film needs a distributor. | Le film a besoin d'un distributeur.
+to downsize | réduire les effectifs | v | C1 | /ˈdaʊnsaɪz/ | The company downsized last year. | L'entreprise a réduit ses effectifs l'an dernier.
+expansion | expansion, extension | n | B2 | /ɪkˈspænʃn/ | The company plans a rapid expansion. | L'entreprise prévoit une expansion rapide.
+to industrialise | industrialiser | v | C1 | /ɪnˈdʌstriəlaɪz/ | The country industrialised quickly. | Le pays s'est industrialisé rapidement.
+to mechanise | mécaniser | v | C1 | /ˈmekənaɪz/ | Farming has been mechanised. | L'agriculture a été mécanisée.
+salesmanship | art de la vente | n | C1 | /ˈseɪlzmənʃɪp/ | Good salesmanship can sell anything. | Un bon vendeur peut tout vendre.
+transaction | transaction | n | B2 | /trænˈzækʃn/ | Every transaction is recorded. | Chaque transaction est enregistrée.
+inventory | inventaire, stock | n | C1 | /ˈɪnvəntri/ | We take an inventory every year. | Nous faisons un inventaire chaque année.
+provider | fournisseur, prestataire | n | B2 | /prəˈvaɪdə/ | Change your internet provider. | Change de fournisseur d'accès à internet.
+proceeds | recette, bénéfices | n | C1 | /ˈprəʊsiːdz/ | The proceeds will go to charity. | Les recettes iront à une œuvre de bienfaisance.
+machinery | machines, machinerie | n | B2 | /məˈʃiːnəri/ | The factory bought new machinery. | L'usine a acheté de nouvelles machines.
+affiliate | filiale, membre affilié | n | C1 | /əˈfɪliət/ | The bank has affiliates in ten countries. | La banque a des filiales dans dix pays.
+freight | fret | n | C1 | /freɪt/ | The goods were sent by air freight. | Les marchandises ont été expédiées par fret aérien.
+automotive | automobile (industrie) | adj | C1 | /ˌɔːtəˈməʊtɪv/ | He works in the automotive industry. | Il travaille dans l'industrie automobile.
+treasurer | trésorier | n | C1 | /ˈtreʒərə/ | The treasurer presented the accounts. | Le trésorier a présenté les comptes.
+leverage | influence, levier | n | C2 | /ˈliːvərɪdʒ/ | The union has no leverage. | Le syndicat n'a aucun moyen de pression.
+levy | taxe, prélèvement | n | C2 | /ˈlevi/ | A new levy on plastic bags was introduced. | Une nouvelle taxe sur les sacs plastiques a été instaurée.
+automation | automatisation | n | C1 | /ˌɔːtəˈmeɪʃn/ | Automation will change many jobs. | L'automatisation va transformer de nombreux métiers.
+shipment | expédition, cargaison | n | C1 | /ˈʃɪpmənt/ | The shipment arrived late. | La livraison est arrivée en retard.
+flagship | fleuron, produit phare | n | C1 | /ˈflæɡʃɪp/ | This is the company's flagship store. | C'est le magasin phare de l'entreprise.
+valuation | évaluation, estimation | n | C2 | /ˌvæljuˈeɪʃn/ | We had a valuation of the house. | Nous avons fait estimer la maison.
+allocation | répartition, attribution | n | C1 | /ˌæləˈkeɪʃn/ | The allocation of funds is unfair. | La répartition des fonds est injuste.
+consolidation | consolidation, regroupement | n | C2 | /kənˌsɒlɪˈdeɪʃn/ | The consolidation of the two banks cost jobs. | Le regroupement des deux banques a coûté des emplois.
+consortium | consortium | n | C2 | /kənˈsɔːtiəm/ | A consortium of banks financed the bridge. | Un consortium de banques a financé le pont.
+defect | défaut | n | C1 | /ˈdiːfekt/ | The car had a manufacturing defect. | La voiture avait un défaut de fabrication.
+procurement | approvisionnement, achats | n | C2 | /prəˈkjʊəmənt/ | He's in charge of procurement. | Il est responsable des achats.
+trustee | administrateur, fiduciaire | n | C2 | /trʌˈstiː/ | She's a trustee of the charity. | Elle fait partie du conseil d'administration de l'association.
+promoter | promoteur, organisateur | n | C1 | /prəˈməʊtə/ | The concert promoter cancelled the show. | L'organisateur du concert a annulé le spectacle.
+insurer | assureur | n | C1 | /ɪnˈʃʊərə/ | Contact your insurer after the accident. | Contacte ton assureur après l'accident.
+endowment | dotation ; don | n | C2 | /ɪnˈdaʊmənt/ | The university has a large endowment. | L'université dispose d'une importante dotation.
+volatility | volatilité | n | C2 | /ˌvɒləˈtɪləti/ | Market volatility worries investors. | La volatilité du marché inquiète les investisseurs.
+competitiveness | compétitivité | n | C2 | /kəmˈpetətɪvnəs/ | The country must improve its competitiveness. | Le pays doit améliorer sa compétitivité.
+liquidity | liquidités | n | C2 | /lɪˈkwɪdəti/ | The bank faces a liquidity crisis. | La banque fait face à une crise de liquidités.
+patronage | parrainage, clientèle | n | C2 | /ˈpætrənɪdʒ/ | The event is under royal patronage. | L'événement est placé sous le haut patronage royal.
+powerhouse | puissance, moteur | n | C2 | /ˈpaʊəhaʊs/ | Germany is Europe's economic powerhouse. | L'Allemagne est la locomotive économique de l'Europe.
+dealership | concession (automobile) | n | C1 | /ˈdiːləʃɪp/ | He bought the car from a dealership. | Il a acheté la voiture chez un concessionnaire.
+entrepreneurial | entrepreneurial, d'entreprise | adj | C1 | /ˌɒntrəprəˈnɜːriəl/ | She has an entrepreneurial spirit. | Elle a l'esprit d'entreprise.
+brokerage | courtage | n | C2 | /ˈbrəʊkərɪdʒ/ | He works for a brokerage firm. | Il travaille pour une société de courtage.
+depreciation | dépréciation | n | C2 | /dɪˌpriːʃiˈeɪʃn/ | The depreciation of the currency hurt exporters. | La dépréciation de la monnaie a nui aux exportateurs.
+payout | versement, indemnité | n | C2 | /ˈpeɪaʊt/ | The insurance payout was small. | L'indemnité versée par l'assurance était faible.
+consultancy | cabinet de conseil | n | C1 | /kənˈsʌltənsi/ | He works for a management consultancy. | Il travaille dans un cabinet de conseil en gestion.
+cost-effective | rentable | adj | C1 | /ˌkɒst ɪˈfektɪv/ | Solar panels are cost-effective. | Les panneaux solaires sont rentables.
+to accrue | s'accumuler, courir (intérêts) | v | C2 | /əˈkruː/ | Interest accrues every month. | Les intérêts courent chaque mois.
+profitability | rentabilité | n | C2 | /ˌprɒfɪtəˈbɪləti/ | The profitability of the firm is low. | La rentabilité de l'entreprise est faible.
+proprietary | exclusif, de marque déposée | adj | C2 | /prəˈpraɪətri/ | It's proprietary software. | C'est un logiciel propriétaire.
+emolument | émoluments, rémunération | n | C2 | /ɪˈmɒljumənt/ | The director's emoluments are high. | Les émoluments du directeur sont élevés.
+remittance | versement, transfert de fonds | n | C2 | /rɪˈmɪtns/ | Many families live on remittances from abroad. | Beaucoup de familles vivent de l'argent envoyé de l'étranger.
+consignment | lot, expédition | n | C2 | /kənˈsaɪnmənt/ | A consignment of rice arrived. | Un lot de riz est arrivé.
+conglomerate | conglomérat | n | C2 | /kənˈɡlɒmərət/ | The company is part of a large conglomerate. | L'entreprise fait partie d'un grand conglomérat.
+mercantile | marchand, commercial | adj | C2 | /ˈmɜːkəntaɪl/ | Venice was a mercantile power. | Venise était une puissance marchande.
+subsistence | subsistance | n | C2 | /səbˈsɪstəns/ | They practise subsistence farming. | Ils pratiquent une agriculture de subsistance.
+to subsidise | subventionner | v | C2 | /ˈsʌbsɪdaɪz/ | The state subsidises public transport. | L'État subventionne les transports publics.
+annuity | rente | n | C2 | /əˈnjuːəti/ | She lives on an annuity. | Elle vit d'une rente.
+reimbursement | remboursement | n | C1 | /ˌriːɪmˈbɜːsmənt/ | Keep receipts for reimbursement. | Garde les reçus pour le remboursement.
+shipbuilding | construction navale | n | C2 | /ˈʃɪpbɪldɪŋ/ | The town was known for shipbuilding. | La ville était connue pour sa construction navale.
+foundry | fonderie | n | C2 | /ˈfaʊndri/ | He works in an iron foundry. | Il travaille dans une fonderie de fer.
+proprietor | propriétaire | n | C2 | /prəˈpraɪətə/ | The proprietor of the shop is very kind. | Le propriétaire du magasin est très gentil.
+exporter | exportateur | n | C1 | /ekˈspɔːtə/ | Morocco is a big exporter of oranges. | Le Maroc est un gros exportateur d'oranges.
+conveyor belt | tapis roulant | n | C1 | /kənˈveɪə belt/ | The bags came out on the conveyor belt. | Les bagages sont arrivés sur le tapis roulant.
+excise duty | droit d'accise | n | C2 | /ˈeksaɪz djuːti/ | There's excise duty on tobacco. | Le tabac est soumis à un droit d'accise.
+payoff | récompense, bénéfice | n | C2 | /ˈpeɪɒf/ | The payoff for hard work is success. | Le travail est récompensé par la réussite.
+logistical | logistique | adj | C2 | /ləˈdʒɪstɪkl/ | We have logistical problems. | Nous avons des problèmes logistiques.
+clientele | clientèle | n | C2 | /ˌkliːənˈtel/ | The restaurant has a loyal clientele. | Le restaurant a une clientèle fidèle.
+diversification | diversification | n | C2 | /daɪˌvɜːsɪfɪˈkeɪʃn/ | Diversification reduces risk. | La diversification réduit les risques.
+fishery | pêcherie, zone de pêche | n | C2 | /ˈfɪʃəri/ | The fisheries are in decline. | Les pêcheries sont en déclin.
+prospectus | prospectus, brochure | n | C2 | /prəˈspektəs/ | Read the university prospectus. | Lis la brochure de l'université.
+bullion | lingots | n | C2 | /ˈbʊliən/ | The bank holds gold bullion. | La banque détient des lingots d'or.
+insolvency | insolvabilité | n | C2 | /ɪnˈsɒlvənsi/ | The company faces insolvency. | L'entreprise est menacée d'insolvabilité.
+affordability | accessibilité (financière) | n | C1 | /əˌfɔːdəˈbɪləti/ | Housing affordability is a major issue. | L'accessibilité au logement est un problème majeur.
+budgetary | budgétaire | adj | C1 | /ˈbʌdʒɪtəri/ | The city faces budgetary constraints. | La ville fait face à des contraintes budgétaires.
+bullish | haussier ; optimiste | adj | C2 | /ˈbʊlɪʃ/ | Investors are bullish about the market. | Les investisseurs sont optimistes sur le marché.
+slowdown | ralentissement | n | C1 | /ˈsləʊdaʊn/ | There's an economic slowdown. | Il y a un ralentissement économique.
+to undercut | vendre moins cher que ; saper | v | C2 | /ˌʌndəˈkʌt/ | Supermarkets undercut small shops. | Les supermarchés vendent moins cher que les petits commerces.
+to deduct | déduire, retenir | v | C1 | /dɪˈdʌkt/ | Tax is deducted from your salary. | L'impôt est retenu sur ton salaire.
+amalgamation | fusion | n | C2 | /əˌmælɡəˈmeɪʃn/ | The amalgamation of the two banks. | La fusion des deux banques.
+importer | importateur | n | C1 | /ɪmˈpɔːtə/ | France is a major importer of oil. | La France est un gros importateur de pétrole.
+exclusivity | exclusivité | n | C1 | /ˌekskluːˈsɪvəti/ | The brand sells on exclusivity. | La marque mise sur l'exclusivité.
+marketable | vendable, commercialisable | adj | C1 | /ˈmɑːkɪtəbl/ | Languages are a marketable skill. | Les langues sont une compétence recherchée.
+to reimburse | rembourser | v | C1 | /ˌriːɪmˈbɜːs/ | The company reimburses travel costs. | L'entreprise rembourse les frais de déplacement.
+to barter | troquer | v | C1 | /ˈbɑːtə/ | Villagers barter goods instead of paying. | Les villageois troquent des marchandises au lieu de payer.
+bonanza | aubaine, filon | n | C2 | /bəˈnænzə/ | The sales were a bonanza for shops. | Les soldes ont été une aubaine pour les magasins.
+fiduciary | fiduciaire | adj | C2 | /fɪˈdjuːʃəri/ | Trustees have a fiduciary duty. | Les administrateurs ont une obligation fiduciaire.
+importation | importation | n | C2 | /ˌɪmpɔːˈteɪʃn/ | The importation of alcohol is banned. | L'importation d'alcool est interdite.
+macroeconomic | macroéconomique | adj | C2 | /ˌmækrəʊˌiːkəˈnɒmɪk/ | The bank studies macroeconomic trends. | La banque étudie les tendances macroéconomiques.
+escrow | séquestre, dépôt fiduciaire | n | C2 | /ˈeskrəʊ/ | The money is held in escrow. | L'argent est placé sous séquestre.
+rupee | roupie | n | B2 | /ruːˈpiː/ | It costs fifty rupees. | Ça coûte cinquante roupies.
+shortfall | déficit, manque | n | C1 | /ˈʃɔːtfɔːl/ | There's a shortfall in funding. | Il y a un manque de financement.
+depository | dépôt, entrepôt | n | C2 | /dɪˈpɒzɪtri/ | Gold is kept in a secure depository. | L'or est conservé dans un dépôt sécurisé.
+inflationary | inflationniste | adj | C2 | /ɪnˈfleɪʃənri/ | The policy is inflationary. | La politique est inflationniste.
+inflow | afflux, entrée | n | C2 | /ˈɪnfləʊ/ | There's a large inflow of capital. | Il y a un important afflux de capitaux.
+to bankroll | financer | v | C2 | /ˈbæŋkrəʊl/ | A rich uncle bankrolls the project. | Un oncle riche finance le projet.
+protectionist | protectionniste | adj | C2 | /prəˈtekʃənɪst/ | The country adopts protectionist policies. | Le pays adopte des politiques protectionnistes.
+bearish | baissier ; pessimiste | adj | C2 | /ˈbeərɪʃ/ | The market is bearish. | Le marché est baissier.
+industrialist | industriel | n | C2 | /ɪnˈdʌstriəlɪst/ | A wealthy industrialist built the school. | Un riche industriel a construit l'école.
+outlay | dépense, mise de fonds | n | C2 | /ˈaʊtleɪ/ | The initial outlay was small. | La mise de fonds initiale était faible.
+arbitrage | arbitrage (financier) | n | C2 | /ˈɑːbɪtrɑːʒ/ | Traders profit from arbitrage. | Les traders profitent de l'arbitrage.
+to liquidate | liquider | v | C2 | /ˈlɪkwɪdeɪt/ | The company was liquidated. | L'entreprise a été liquidée.
+actuarial | actuariel | adj | C2 | /ˌæktʃuˈeəriəl/ | Insurers use actuarial tables. | Les assureurs utilisent des tables actuarielles.
+uptick | légère hausse | n | C2 | /ˈʌptɪk/ | There's been an uptick in sales. | Il y a eu une légère hausse des ventes.
+indebtedness | endettement | n | C2 | /ɪnˈdetɪdnəs/ | Household indebtedness is rising. | L'endettement des ménages augmente.
 `,
 );

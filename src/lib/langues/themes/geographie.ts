@@ -273,5 +273,92 @@ overseas territory | territoire d'outre-mer | n | C1 | /ˌəʊvəsiːz ˈterətr
 enclave | enclave | n | C1 | /ˈenkleɪv/ | Ceuta is a Spanish enclave in Morocco. | Ceuta est une enclave espagnole au Maroc.
 microstate | micro-État | n | C2 | /ˈmaɪkrəʊsteɪt/ | San Marino is a microstate. | Saint-Marin est un micro-État.
 city-state | cité-État | n | C1 | /ˈsɪti steɪt/ | Singapore is a city-state. | Singapour est une cité-État.
+isle | île | n | B2 | /aɪl/ | The Isle of Wight is off the south coast. | L'île de Wight se trouve au large de la côte sud.
+motherland | patrie, mère patrie | n | B2 | /ˈmʌðəlænd/ | He returned to his motherland. | Il est retourné dans sa patrie.
+mountaintop | sommet de la montagne | n | B1 | /ˈmaʊntəntɒp/ | We watched the sunrise from the mountaintop. | Nous avons regardé le lever du soleil depuis le sommet.
+northeast | nord-est | n | B1 | /ˌnɔːθˈiːst/ | The storm is moving to the northeast. | La tempête se déplace vers le nord-est.
+northwest | nord-ouest | n | B1 | /ˌnɔːθˈwest/ | Brittany is in the northwest of France. | La Bretagne est dans le nord-ouest de la France.
+southeast | sud-est | n | B1 | /ˌsaʊθˈiːst/ | Marseille is in the southeast. | Marseille est dans le sud-est.
+southwest | sud-ouest | n | B1 | /ˌsaʊθˈwest/ | Bordeaux is in the southwest of France. | Bordeaux est dans le sud-ouest de la France.
+northeastern | du nord-est | adj | B2 | /ˌnɔːθˈiːstən/ | They live in a northeastern town. | Ils habitent dans une ville du nord-est.
+northwestern | du nord-ouest | adj | B2 | /ˌnɔːθˈwestən/ | It's a northwestern region. | C'est une région du nord-ouest.
+regional | régional | adj | B1 | /ˈriːdʒənl/ | We tasted the regional dishes. | Nous avons goûté les plats régionaux.
+lowland | plaine, basses terres | n | C1 | /ˈləʊlənd/ | The lowlands are often flooded. | Les plaines sont souvent inondées.
+moonscape | paysage lunaire | n | C1 | /ˈmuːnskeɪp/ | The desert looked like a moonscape. | Le désert ressemblait à un paysage lunaire.
+outback | arrière-pays australien, bush | n | C1 | /ˈaʊtbæk/ | They drove across the outback. | Ils ont traversé l'arrière-pays australien.
+subcontinent | sous-continent | n | C1 | /ˌsʌbˈkɒntɪnənt/ | Urdu is spoken across the Indian subcontinent. | L'ourdou est parlé dans tout le sous-continent indien.
+tropic | tropique | n | C1 | /ˈtrɒpɪk/ | The island lies near the Tropic of Cancer. | L'île se trouve près du tropique du Cancer.
+continental | continental | adj | C1 | /ˌkɒntɪˈnentl/ | We had a continental breakfast. | Nous avons pris un petit-déjeuner continental.
+homeland | patrie, pays d'origine | n | B2 | /ˈhəʊmlænd/ | They returned to their homeland. | Ils sont retournés dans leur pays d'origine.
+territorial | territorial | adj | C1 | /ˌterəˈtɔːriəl/ | They have a territorial dispute. | Ils ont un différend territorial.
+granite | granit | n | C1 | /ˈɡrænɪt/ | Brittany's coast is made of granite. | La côte bretonne est faite de granit.
+flint | silex | n | C1 | /flɪnt/ | Early humans made tools from flint. | Les premiers hommes fabriquaient des outils en silex.
+limestone | calcaire | n | C1 | /ˈlaɪmstəʊn/ | The cliffs are made of limestone. | Les falaises sont en calcaire.
+vista | panorama, perspective | n | C2 | /ˈvɪstə/ | The road offers stunning vistas. | La route offre des panoramas superbes.
+volcanic | volcanique | adj | C1 | /vɒlˈkænɪk/ | The island has volcanic soil. | L'île a un sol volcanique.
+highland | hautes terres | n | C1 | /ˈhaɪlənd/ | They live in the highlands of Scotland. | Ils vivent dans les Highlands, en Écosse.
+quartz | quartz | n | C1 | /kwɔːts/ | The watch runs on quartz. | La montre fonctionne au quartz.
+southwestern | du sud-ouest | adj | B2 | /ˌsaʊθˈwestən/ | They live in southwestern France. | Ils vivent dans le sud-ouest de la France.
+southeastern | du sud-est | adj | B2 | /ˌsaʊθˈiːstən/ | It's a southeastern town. | C'est une ville du sud-est.
+alpine | alpin | adj | C1 | /ˈælpaɪn/ | We stayed in an alpine village. | Nous avons séjourné dans un village alpin.
+mound | butte, monticule | n | C1 | /maʊnd/ | There was a mound of earth in the garden. | Il y avait un monticule de terre dans le jardin.
+mesa | plateau, mesa | n | C2 | /ˈmeɪsə/ | The town sits on a mesa. | La ville est perchée sur un plateau.
+sediment | sédiment | n | C2 | /ˈsedɪmənt/ | The river carries sediment to the sea. | Le fleuve transporte des sédiments jusqu'à la mer.
+glacial | glaciaire, glacial | adj | C2 | /ˈɡleɪʃl/ | The valley was formed in the glacial period. | La vallée s'est formée pendant la période glaciaire.
+meridian | méridien | n | C2 | /məˈrɪdiən/ | The Greenwich meridian is at zero degrees. | Le méridien de Greenwich est à zéro degré.
+geological | géologique | adj | C1 | /ˌdʒiːəˈlɒdʒɪkl/ | They studied the geological layers. | Ils ont étudié les couches géologiques.
+elevation | altitude ; élévation | n | C1 | /ˌelɪˈveɪʃn/ | The village is at an elevation of 1,000 metres. | Le village est situé à 1 000 mètres d'altitude.
+quarry | carrière (de pierre) ; proie | n | C1 | /ˈkwɒri/ | The stone comes from a local quarry. | La pierre provient d'une carrière locale.
+fissure | fissure | n | C2 | /ˈfɪʃə/ | A fissure appeared in the rock. | Une fissure est apparue dans la roche.
+tract | étendue (de terre) ; tract | n | C2 | /trækt/ | They bought a large tract of land. | Ils ont acheté une vaste étendue de terre.
+panorama | panorama | n | C1 | /ˌpænəˈrɑːmə/ | We enjoyed a panorama of the city. | Nous avons profité d'un panorama sur la ville.
+panoramic | panoramique | adj | C1 | /ˌpænəˈræmɪk/ | The restaurant has panoramic views. | Le restaurant offre une vue panoramique.
+ore | minerai | n | C2 | /ɔː/ | The region is rich in iron ore. | La région est riche en minerai de fer.
+seismic | sismique | adj | C2 | /ˈsaɪzmɪk/ | The region has strong seismic activity. | La région connaît une forte activité sismique.
+topographical | topographique | adj | C2 | /ˌtɒpəˈɡræfɪkl/ | They used a topographical map. | Ils ont utilisé une carte topographique.
+moor | lande | n | C2 | /mɔː/ | We walked across the moor. | Nous avons traversé la lande à pied.
+ice floe | banquise flottante | n | C2 | /ˈaɪs fləʊ/ | A polar bear stood on an ice floe. | Un ours polaire se tenait sur un bloc de glace flottant.
+molten | en fusion | adj | C2 | /ˈməʊltən/ | Molten lava flowed down the volcano. | De la lave en fusion coulait sur le volcan.
+bastion | bastion | n | C2 | /ˈbæstiən/ | The town was a bastion of tradition. | La ville était un bastion de la tradition.
+shoreline | littoral, rivage | n | C1 | /ˈʃɔːlaɪn/ | We walked along the shoreline. | Nous avons marché le long du rivage.
+peat | tourbe | n | C2 | /piːt/ | They burn peat for heat. | Ils brûlent de la tourbe pour se chauffer.
+mirage | mirage | n | C1 | /ˈmɪrɑːʒ/ | We saw a mirage in the desert. | Nous avons vu un mirage dans le désert.
+bedrock | socle, fondement | n | C2 | /ˈbedrɒk/ | Honesty is the bedrock of trust. | L'honnêteté est le socle de la confiance.
+heartland | cœur, région centrale | n | C2 | /ˈhɑːtlænd/ | This is the industrial heartland of the country. | C'est le cœur industriel du pays.
+strata | strates, couches | n | C2 | /ˈstrɑːtə/ | The rock has several strata. | La roche comporte plusieurs strates.
+equatorial | équatorial | adj | C2 | /ˌekwəˈtɔːriəl/ | It has an equatorial climate. | Il y règne un climat équatorial.
+expanse | étendue | n | C2 | /ɪkˈspæns/ | A vast expanse of desert lay before us. | Une vaste étendue de désert s'étendait devant nous.
+magma | magma | n | C2 | /ˈmæɡmə/ | Magma rises from the volcano. | Le magma remonte du volcan.
+confluence | confluent | n | C2 | /ˈkɒnfluəns/ | The city lies at the confluence of two rivers. | La ville se situe au confluent de deux rivières.
+lakeside | bord du lac | n | B2 | /ˈleɪksaɪd/ | We had a picnic by the lakeside. | Nous avons pique-niqué au bord du lac.
+cavern | caverne | n | C1 | /ˈkævən/ | The cavern was dark and damp. | La caverne était sombre et humide.
+upland | hautes terres, plateau | n | C2 | /ˈʌplənd/ | Sheep graze in the uplands. | Les moutons paissent sur les hautes terres.
+causeway | chaussée surélevée | n | C2 | /ˈkɔːzweɪ/ | A causeway links the island to the mainland. | Une chaussée relie l'île au continent.
+seaboard | littoral, côte | n | C2 | /ˈsiːbɔːd/ | Cities grew along the eastern seaboard. | Des villes se sont développées sur la côte est.
+catchment area | secteur (scolaire), bassin | n | C2 | /ˈkætʃmənt ˌeəriə/ | We live in the school's catchment area. | Nous habitons dans le secteur de l'école.
+navigable | navigable | adj | C2 | /ˈnævɪɡəbl/ | The river is navigable as far as the city. | Le fleuve est navigable jusqu'à la ville.
+chasm | gouffre, abîme | n | C2 | /ˈkæzəm/ | There's a chasm between rich and poor. | Il y a un gouffre entre riches et pauvres.
+seashore | bord de mer, rivage | n | B2 | /ˈsiːʃɔː/ | We walked along the seashore. | Nous avons marché le long du rivage.
+subtropical | subtropical | adj | C2 | /ˌsʌbˈtrɒpɪkl/ | The region has a subtropical climate. | La région a un climat subtropical.
+environs | environs | n | C2 | /ɪnˈvaɪrənz/ | We explored Fez and its environs. | Nous avons exploré Fès et ses environs.
+seaport | port maritime | n | B2 | /ˈsiːpɔːt/ | Marseille is a major seaport. | Marseille est un grand port maritime.
+grotto | grotte | n | C2 | /ˈɡrɒtəʊ/ | We swam into a grotto. | Nous sommes entrés à la nage dans une grotte.
+hinterland | arrière-pays | n | C2 | /ˈhɪntəlænd/ | We explored the hinterland of Agadir. | Nous avons exploré l'arrière-pays d'Agadir.
+knoll | butte, monticule | n | C2 | /nəʊl/ | They sat on a grassy knoll. | Ils se sont assis sur une butte herbeuse.
+alluvial | alluvial | adj | C2 | /əˈluːviəl/ | The Nile valley has alluvial soil. | La vallée du Nil a un sol alluvial.
+cairn | cairn, tas de pierres | n | C2 | /keən/ | Walkers add a stone to the cairn. | Les randonneurs ajoutent une pierre au cairn.
+backwater | coin perdu, trou | n | C2 | /ˈbækwɔːtə/ | The town is a sleepy backwater. | La ville est un coin perdu et endormi.
+fen | marais, marécage | n | C2 | /fen/ | Birds nest in the fens. | Les oiseaux nichent dans les marais.
+wadi | oued | n | C2 | /ˈwɒdi/ | The wadi fills with water after rain. | L'oued se remplit d'eau après la pluie.
+demarcation | démarcation | n | C2 | /ˌdiːmɑːˈkeɪʃn/ | The line of demarcation between the two zones. | La ligne de démarcation entre les deux zones.
+levee | digue | n | C2 | /ˈlevi/ | The levee broke during the flood. | La digue a cédé pendant l'inondation.
+gulch | ravin | n | C2 | /ɡʌltʃ/ | The river runs through a deep gulch. | La rivière coule au fond d'un ravin.
+southernmost | le plus au sud | adj | C1 | /ˈsʌðənməʊst/ | It's the southernmost point of Europe. | C'est le point le plus au sud de l'Europe.
+islet | îlot | n | C2 | /ˈaɪlət/ | A small islet lies off the coast. | Un petit îlot se trouve au large.
+mountainside | flanc de montagne | n | C1 | /ˈmaʊntənsaɪd/ | The village clings to the mountainside. | Le village s'accroche au flanc de la montagne.
+outcrop | affleurement (rocheux) | n | C2 | /ˈaʊtkrɒp/ | We sat on a rocky outcrop. | Nous nous sommes assis sur un affleurement rocheux.
+precipice | précipice | n | C2 | /ˈpresəpɪs/ | The economy is on the edge of a precipice. | L'économie est au bord du précipice.
+sinkhole | doline, effondrement | n | C2 | /ˈsɪŋkhəʊl/ | A sinkhole opened in the road. | Un trou s'est ouvert dans la chaussée.
+swampy | marécageux | adj | C1 | /ˈswɒmpi/ | The ground is swampy. | Le terrain est marécageux.
 `,
 );

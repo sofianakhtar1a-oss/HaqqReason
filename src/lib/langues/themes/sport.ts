@@ -234,5 +234,90 @@ losing streak | série de défaites | n | B2 | /ˈluːzɪŋ striːk/ | They ende
 home game | match à domicile | n | A2 | /ˌhəʊm ˈɡeɪm/ | We have a home game on Saturday. | Nous jouons à domicile samedi.
 away game | match à l'extérieur | n | A2 | /əˌweɪ ˈɡeɪm/ | The away game is in Lyon. | Le match à l'extérieur a lieu à Lyon.
 home advantage | avantage du terrain | n | B2 | /ˌhəʊm ədˈvɑːntɪdʒ/ | The team made the most of home advantage. | L'équipe a profité de l'avantage du terrain.
+footballer | footballeur | n | A2 | /ˈfʊtbɔːlə/ | He dreams of becoming a footballer. | Il rêve de devenir footballeur.
+climber | grimpeur, alpiniste | n | B1 | /ˈklaɪmə/ | The climbers reached the summit. | Les alpinistes ont atteint le sommet.
+diver | plongeur | n | B1 | /ˈdaɪvə/ | The divers explored the wreck. | Les plongeurs ont exploré l'épave.
+golfer | golfeur | n | B1 | /ˈɡɒlfə/ | He's a professional golfer. | C'est un golfeur professionnel.
+ice skating | patinage sur glace | n | B1 | /ˈaɪs skeɪtɪŋ/ | We go ice skating every winter. | Nous allons faire du patin à glace chaque hiver.
+swimmer | nageur | n | B1 | /ˈswɪmə/ | She's a strong swimmer. | C'est une bonne nageuse.
+boxer | boxeur | n | B2 | /ˈbɒksə/ | Muhammad Ali was a famous boxer. | Mohamed Ali était un boxeur célèbre.
+gymnastic | de gymnastique | adj | B2 | /dʒɪmˈnæstɪk/ | She did a perfect gymnastic routine. | Elle a réalisé un enchaînement de gymnastique parfait.
+martial art | art martial | n | B2 | /ˌmɑːʃl ˈɑːt/ | Judo is a Japanese martial art. | Le judo est un art martial japonais.
+punch | coup de poing | n | B2 | /pʌntʃ/ | The boxer threw a punch. | Le boxeur a lancé un coup de poing.
+rider | cavalier ; motard, cycliste | n | B2 | /ˈraɪdə/ | The rider fell off his horse. | Le cavalier est tombé de son cheval.
+skateboarder | skateur, planchiste | n | B2 | /ˈskeɪtbɔːdə/ | The skateboarders practise in the park. | Les skateurs s'entraînent dans le parc.
+archer | archer | n | C1 | /ˈɑːtʃə/ | The archer hit the target. | L'archer a touché la cible.
+rivalry | rivalité | n | C1 | /ˈraɪvlri/ | There's a fierce rivalry between the two clubs. | Il existe une forte rivalité entre les deux clubs.
+turf | gazon ; territoire | n | C1 | /tɜːf/ | They play on artificial turf. | Ils jouent sur gazon synthétique.
+challenger | challenger, prétendant | n | C1 | /ˈtʃælɪndʒə/ | The challenger beat the champion. | Le prétendant a battu le champion.
+saddle | selle | n | B2 | /ˈsædl/ | Adjust the height of the saddle. | Règle la hauteur de la selle.
+baton | bâton de relais ; matraque | n | C1 | /ˈbætɒn/ | He dropped the baton in the relay. | Il a fait tomber le témoin pendant le relais.
+scorer | buteur, marqueur | n | B2 | /ˈskɔːrə/ | He's the team's top scorer. | C'est le meilleur buteur de l'équipe.
+heavyweight | poids lourd | n | C1 | /ˈheviweɪt/ | He's a heavyweight boxing champion. | C'est un champion de boxe poids lourd.
+midfield | milieu de terrain | n | B2 | /ˈmɪdfiːld/ | He plays in midfield. | Il joue au milieu de terrain.
+contender | prétendant, concurrent | n | C1 | /kənˈtendə/ | She's a strong contender for the title. | C'est une sérieuse prétendante au titre.
+wicket | guichet (cricket) | n | C2 | /ˈwɪkɪt/ | The bowler took three wickets. | Le lanceur a éliminé trois batteurs.
+jockey | jockey | n | B2 | /ˈdʒɒki/ | The jockey fell from his horse. | Le jockey est tombé de son cheval.
+skipper | capitaine | n | C1 | /ˈskɪpə/ | The skipper steered the boat. | Le capitaine dirigeait le bateau.
+wrestler | lutteur, catcheur | n | B2 | /ˈreslə/ | The wrestler won the gold medal. | Le lutteur a remporté la médaille d'or.
+to wrestle | lutter, se débattre | v | C1 | /ˈresl/ | He wrestled with the decision for days. | Il s'est débattu avec cette décision pendant des jours.
+showdown | confrontation décisive | n | C1 | /ˈʃəʊdaʊn/ | The final will be a showdown between the two best teams. | La finale sera un affrontement entre les deux meilleures équipes.
+bowler | lanceur (cricket, bowling) | n | C1 | /ˈbəʊlə/ | The bowler threw a fast ball. | Le lanceur a envoyé une balle rapide.
+goalie | gardien de but | n | B2 | /ˈɡəʊli/ | The goalie saved the penalty. | Le gardien a arrêté le penalty.
+finalist | finaliste | n | B2 | /ˈfaɪnəlɪst/ | She was a finalist in the competition. | Elle était finaliste du concours.
+racer | coureur (automobile, cycliste) | n | B2 | /ˈreɪsə/ | The racer crossed the finish line first. | Le coureur a franchi la ligne d'arrivée en premier.
+interception | interception | n | C2 | /ˌɪntəˈsepʃn/ | The defender made a great interception. | Le défenseur a réussi une belle interception.
+ascent | ascension, montée | n | C1 | /əˈsent/ | The ascent took six hours. | L'ascension a duré six heures.
+clubhouse | club-house | n | C1 | /ˈklʌbhaʊs/ | They met in the clubhouse after the game. | Ils se sont retrouvés au club-house après le match.
+hoop | cerceau ; panier | n | C1 | /huːp/ | The ball went through the hoop. | Le ballon est passé dans le panier.
+rink | patinoire | n | B2 | /rɪŋk/ | We went to the ice rink. | Nous sommes allés à la patinoire.
+batsman | batteur (cricket) | n | C2 | /ˈbætsmən/ | The batsman hit the ball hard. | Le batteur a frappé fort.
+rein | rêne | n | C1 | /reɪn/ | Hold the reins firmly. | Tiens fermement les rênes.
+mountaineer | alpiniste | n | C1 | /ˌmaʊntəˈnɪə/ | The mountaineer reached the summit. | L'alpiniste a atteint le sommet.
+somersault | saut périlleux, culbute | n | C1 | /ˈsʌməsɔːlt/ | The gymnast did a perfect somersault. | La gymnaste a fait un saut périlleux parfait.
+to bulk up | prendre du muscle | v | C1 | /bʌlk ˈʌp/ | He's trying to bulk up for the season. | Il essaie de se muscler pour la saison.
+athleticism | athlétisme, qualités athlétiques | n | C2 | /æθˈletɪsɪzəm/ | His athleticism is impressive. | Ses qualités athlétiques sont impressionnantes.
+to relegate | reléguer | v | C2 | /ˈrelɪɡeɪt/ | The team was relegated to the second division. | L'équipe a été reléguée en deuxième division.
+acrobatics | acrobaties | n | C2 | /ˌækrəˈbætɪks/ | The circus is famous for its acrobatics. | Le cirque est célèbre pour ses acrobaties.
+acrobatic | acrobatique | adj | C2 | /ˌækrəˈbætɪk/ | The goalkeeper made an acrobatic save. | Le gardien a réalisé un arrêt acrobatique.
+cheerleader | pom-pom girl ; supporter fervent | n | C1 | /ˈtʃɪəliːdə/ | She's my biggest cheerleader. | C'est ma plus grande supportrice.
+nil | zéro (score) | n | B2 | /nɪl/ | We won two nil. | Nous avons gagné deux à zéro.
+sideline | ligne de touche ; activité annexe | n | C1 | /ˈsaɪdlaɪn/ | He watched from the sidelines. | Il a regardé depuis la ligne de touche.
+skater | patineur | n | B2 | /ˈskeɪtə/ | The skater won gold. | La patineuse a remporté l'or.
+surfer | surfeur | n | B2 | /ˈsɜːfə/ | The surfers waited for big waves. | Les surfeurs attendaient de grosses vagues.
+cricketer | joueur de cricket | n | C1 | /ˈkrɪkɪtə/ | He's a famous Pakistani cricketer. | C'est un célèbre joueur de cricket pakistanais.
+scrum | mêlée (rugby) | n | C2 | /skrʌm/ | The players formed a scrum. | Les joueurs ont formé une mêlée.
+triathlon | triathlon | n | B2 | /traɪˈæθlən/ | She completed a triathlon. | Elle a terminé un triathlon.
+volley | volée | n | C1 | /ˈvɒli/ | He scored with a volley. | Il a marqué de volée.
+full-back | arrière (football, rugby) | n | C2 | /ˈfʊl bæk/ | He plays as a full-back. | Il joue arrière.
+scoreboard | tableau d'affichage | n | B2 | /ˈskɔːbɔːd/ | Look at the scoreboard. | Regarde le tableau d'affichage.
+timeout | temps mort | n | C1 | /ˈtaɪmaʊt/ | The coach called a timeout. | L'entraîneur a demandé un temps mort.
+skier | skieur | n | B2 | /ˈskiːə/ | The skiers went down the slope. | Les skieurs ont descendu la piste.
+aerobic | aérobie | adj | C1 | /eəˈrəʊbɪk/ | Swimming is a good aerobic exercise. | La natation est un bon exercice d'endurance.
+sprinter | sprinteur | n | C1 | /ˈsprɪntə/ | He's the fastest sprinter in the world. | C'est le sprinteur le plus rapide du monde.
+glider | planeur | n | C1 | /ˈɡlaɪdə/ | We watched gliders circling above the hills. | Nous regardions des planeurs tournoyer au-dessus des collines.
+rout | déroute, raclée | n | C2 | /raʊt/ | The match ended in a rout. | Le match s'est terminé par une raclée.
+medallist | médaillé | n | C1 | /ˈmedəlɪst/ | She is an Olympic medallist. | C'est une médaillée olympique.
+gymnast | gymnaste | n | B2 | /ˈdʒɪmnæst/ | The gymnast won a gold medal. | La gymnaste a remporté une médaille d'or.
+middleweight | poids moyen | n | C2 | /ˈmɪdlweɪt/ | He's a middleweight boxer. | C'est un boxeur poids moyen.
+racetrack | champ de courses, circuit | n | B2 | /ˈreɪstræk/ | The racetrack is closed today. | Le circuit est fermé aujourd'hui.
+scorecard | carte de score, tableau des résultats | n | C1 | /ˈskɔːkɑːd/ | The scorecard shows our results. | Le tableau montre nos résultats.
+fairway | fairway (golf) | n | C2 | /ˈfeəweɪ/ | The ball landed on the fairway. | La balle a atterri sur le fairway.
+goalscorer | buteur | n | C1 | /ˈɡəʊlskɔːrə/ | He's the team's top goalscorer. | C'est le meilleur buteur de l'équipe.
+exertion | effort | n | C2 | /ɪɡˈzɜːʃn/ | He was red-faced from exertion. | Il était rouge à cause de l'effort.
+bodybuilder | culturiste | n | B2 | /ˈbɒdibɪldə/ | He trains like a bodybuilder. | Il s'entraîne comme un culturiste.
+pennant | fanion | n | C2 | /ˈpenənt/ | A pennant flew from the mast. | Un fanion flottait au mât.
+regatta | régate | n | C2 | /rɪˈɡætə/ | The town hosts a summer regatta. | La ville accueille une régate en été.
+racehorse | cheval de course | n | B2 | /ˈreɪshɔːs/ | Arabian racehorses are famous. | Les chevaux de course arabes sont célèbres.
+tryout | essai, sélection | n | C1 | /ˈtraɪaʊt/ | He went to the football tryouts. | Il est allé aux essais de football.
+mountaineering | alpinisme | n | B2 | /ˌmaʊntɪˈnɪərɪŋ/ | He took up mountaineering. | Il s'est mis à l'alpinisme.
+tiebreaker | jeu décisif, départage | n | C1 | /ˈtaɪbreɪkə/ | The match went to a tiebreaker. | Le match s'est joué au jeu décisif.
+falconer | fauconnier | n | C2 | /ˈfɔːlkənə/ | Falconers are respected in the Gulf. | Les fauconniers sont respectés dans le Golfe.
+bullseye | mille, centre de la cible | n | C1 | /ˈbʊlzaɪ/ | The arrow hit the bullseye. | La flèche a fait mouche.
+dressage | dressage | n | C2 | /ˈdresɑːʒ/ | She competes in dressage. | Elle participe à des concours de dressage.
+hiker | randonneur | n | B2 | /ˈhaɪkə/ | The hikers reached the summit. | Les randonneurs ont atteint le sommet.
+matador | matador | n | C2 | /ˈmætədɔː/ | The matador faced the bull. | Le matador a affronté le taureau.
+ringside | bord du ring | n | C2 | /ˈrɪŋsaɪd/ | We had ringside seats. | Nous avions des places au bord du ring.
+bareback | à cru, sans selle | adv | C2 | /ˈbeəbæk/ | He rides the horse bareback. | Il monte le cheval à cru.
 `,
 );

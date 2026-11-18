@@ -257,5 +257,84 @@ braid | tresse (US) | n | B1 | /breɪd/ | She wears her hair in a braid. | Elle 
 bun | chignon | n | B1 | /bʌn/ | She tied her hair in a bun. | Elle s'est fait un chignon.
 curls | boucles | n | A2 | /kɜːlz/ | The little girl has blond curls. | La petite fille a des boucles blondes.
 parting | raie (cheveux) | n | B2 | /ˈpɑːtɪŋ/ | He has a side parting. | Il porte la raie sur le côté.
+breast | sein ; poitrine | n | B1 | /brest/ | The baby feeds at the breast. | Le bébé est nourri au sein.
+bloodstream | circulation sanguine | n | B2 | /ˈblʌdstriːm/ | The drug enters the bloodstream quickly. | Le médicament passe rapidement dans le sang.
+bony | osseux, maigre | adj | B2 | /ˈbəʊni/ | He has long bony fingers. | Il a de longs doigts osseux.
+curl | boucle (de cheveux) | n | B2 | /kɜːl/ | The baby has blond curls. | Le bébé a des boucles blondes.
+flesh | chair | n | B2 | /fleʃ/ | The thorn went deep into his flesh. | L'épine s'est enfoncée profondément dans sa chair.
+perspiration | transpiration | n | C1 | /ˌpɜːspəˈreɪʃn/ | Beads of perspiration ran down his face. | Des gouttes de sueur coulaient sur son visage.
+gut | intestin ; instinct | n | B2 | /ɡʌt/ | My gut feeling says no. | Mon instinct me dit non.
+spinal | spinal, vertébral | adj | C1 | /ˈspaɪnl/ | He suffered a spinal injury. | Il a subi une blessure à la colonne vertébrale.
+bodily | corporel, physique | adj | C1 | /ˈbɒdɪli/ | He was charged with bodily harm. | Il a été inculpé de coups et blessures.
+womb | utérus, ventre (maternel) | n | C1 | /wuːm/ | The baby grows in its mother's womb. | Le bébé grandit dans le ventre de sa mère.
+cortex | cortex | n | C2 | /ˈkɔːteks/ | The cortex controls thinking. | Le cortex contrôle la pensée.
+abdominal | abdominal | adj | C1 | /æbˈdɒmɪnl/ | He has abdominal pain. | Il a des douleurs abdominales.
+brow | front ; sourcil | n | C1 | /braʊ/ | He wiped the sweat from his brow. | Il s'est essuyé la sueur du front.
+marrow | moelle | n | C2 | /ˈmærəʊ/ | He needed a bone marrow transplant. | Il a eu besoin d'une greffe de moelle osseuse.
+anterior | antérieur | adj | C2 | /ænˈtɪəriə/ | He tore his anterior ligament. | Il s'est déchiré le ligament antérieur.
+nasal | nasal | adj | C1 | /ˈneɪzl/ | Use a nasal spray. | Utilise un spray nasal.
+digestive | digestif | adj | C1 | /daɪˈdʒestɪv/ | She has digestive problems. | Elle a des problèmes digestifs.
+posterior | postérieur | adj | C2 | /pɒˈstɪəriə/ | The posterior part of the brain controls vision. | La partie postérieure du cerveau contrôle la vision.
+brunette | brune (femme) | n | B2 | /bruːˈnet/ | She's a tall brunette. | C'est une grande brune.
+skeletal | squelettique | adj | C2 | /ˈskelətl/ | They found skeletal remains. | Ils ont trouvé des restes squelettiques.
+pelvic | pelvien | adj | C2 | /ˈpelvɪk/ | She has pelvic pain. | Elle a des douleurs pelviennes.
+bearded | barbu | adj | C1 | /ˈbɪədɪd/ | A bearded man opened the door. | Un homme barbu a ouvert la porte.
+facial | facial, du visage | adj | C1 | /ˈfeɪʃl/ | He has facial hair. | Il a de la barbe.
+strapping | costaud, robuste | adj | C1 | /ˈstræpɪŋ/ | He's a strapping young man. | C'est un jeune homme costaud.
+wizened | ratatiné, ridé | adj | C2 | /ˈwɪznd/ | A wizened old man sat by the door. | Un vieillard ridé était assis près de la porte.
+chiselled | ciselé, aux traits bien dessinés | adj | C1 | /ˈtʃɪzld/ | He has a chiselled jaw. | Il a une mâchoire bien dessinée.
+cavity | cavité ; carie | n | C1 | /ˈkævəti/ | The dentist found a cavity. | Le dentiste a trouvé une carie.
+gastric | gastrique | adj | C2 | /ˈɡæstrɪk/ | He has a gastric ulcer. | Il a un ulcère gastrique.
+lobe | lobe | n | C2 | /ləʊb/ | She has pierced ear lobes. | Elle a les lobes d'oreille percés.
+sinus | sinus | n | C2 | /ˈsaɪnəs/ | He has a sinus infection. | Il a une sinusite.
+groin | aine | n | C2 | /ɡrɔɪn/ | The player injured his groin. | Le joueur s'est blessé à l'aine.
+arterial | artériel | adj | C2 | /ɑːˈtɪəriəl/ | He has arterial disease. | Il souffre d'une maladie artérielle.
+auditory | auditif | adj | C2 | /ˈɔːdətri/ | He has an auditory problem. | Il a un problème auditif.
+redhead | roux, rousse | n | B2 | /ˈredhed/ | She's a redhead with freckles. | C'est une rousse avec des taches de rousseur.
+anatomical | anatomique | adj | C2 | /ˌænəˈtɒmɪkl/ | They made anatomical drawings. | Ils ont réalisé des dessins anatomiques.
+bile | bile | n | C2 | /baɪl/ | The liver produces bile. | Le foie produit la bile.
+vertebra | vertèbre | n | C2 | /ˈvɜːtɪbrə/ | He broke a vertebra. | Il s'est cassé une vertèbre.
+stiffness | raideur, courbatures | n | C1 | /ˈstɪfnəs/ | I have stiffness in my neck. | J'ai une raideur dans la nuque.
+airway | voies respiratoires | n | C2 | /ˈeəweɪ/ | Keep the patient's airway clear. | Garde les voies respiratoires du patient dégagées.
+corpulent | corpulent | adj | C2 | /ˈkɔːpjələnt/ | He was a corpulent man. | C'était un homme corpulent.
+mucus | mucus | n | C2 | /ˈmjuːkəs/ | The body produces mucus to protect itself. | Le corps produit du mucus pour se protéger.
+puffy | bouffi, gonflé | adj | C1 | /ˈpʌfi/ | Her eyes were puffy from crying. | Ses yeux étaient gonflés d'avoir pleuré.
+secretion | sécrétion | n | C2 | /sɪˈkriːʃn/ | The gland controls the secretion of hormones. | La glande contrôle la sécrétion des hormones.
+lumbar | lombaire | adj | C2 | /ˈlʌmbə/ | He suffers from lumbar pain. | Il souffre de douleurs lombaires.
+bosom | poitrine, sein | n | C2 | /ˈbʊzəm/ | She held the baby to her bosom. | Elle serrait le bébé contre son sein.
+olfactory | olfactif | adj | C2 | /ɒlˈfæktəri/ | Dogs have a powerful olfactory sense. | Les chiens ont un odorat puissant.
+umbilical cord | cordon ombilical | n | C1 | /ʌmˈbɪlɪkl kɔːd/ | The midwife cut the umbilical cord. | La sage-femme a coupé le cordon ombilical.
+cleft | fente ; fendu | n | C2 | /kleft/ | He has a cleft in his chin. | Il a une fossette au menton.
+haggard | hagard, défait | adj | C2 | /ˈhæɡəd/ | He looked haggard after the night shift. | Il avait les traits tirés après sa nuit de travail.
+ocular | oculaire | adj | C2 | /ˈɒkjələ/ | He suffers from an ocular disease. | Il souffre d'une maladie oculaire.
+ovary | ovaire | n | C1 | /ˈəʊvəri/ | The ovaries produce eggs. | Les ovaires produisent des ovules.
+pituitary gland | hypophyse | n | C2 | /pɪˈtjuːɪtəri ɡlænd/ | The pituitary gland controls growth. | L'hypophyse contrôle la croissance.
+venous | veineux | adj | C2 | /ˈviːnəs/ | Venous blood is darker. | Le sang veineux est plus foncé.
+aorta | aorte | n | C2 | /eɪˈɔːtə/ | The aorta is the largest artery. | L'aorte est la plus grosse artère.
+girth | tour, circonférence | n | C2 | /ɡɜːθ/ | The tree has a huge girth. | L'arbre a une circonférence énorme.
+gaunt | émacié, décharné | adj | C2 | /ɡɔːnt/ | His face was gaunt and pale. | Son visage était émacié et pâle.
+tibia | tibia | n | C2 | /ˈtɪbiə/ | He broke his tibia. | Il s'est cassé le tibia.
+capillary | capillaire (vaisseau) | n | C2 | /kəˈpɪləri/ | Blood flows through tiny capillaries. | Le sang circule dans de minuscules capillaires.
+thorax | thorax | n | C2 | /ˈθɔːræks/ | Insects have a head, a thorax and an abdomen. | Les insectes ont une tête, un thorax et un abdomen.
+circulatory system | système circulatoire | n | C2 | /ˌsɜːkjəˈleɪtəri ˈsɪstəm/ | The heart is part of the circulatory system. | Le cœur fait partie du système circulatoire.
+pigmentation | pigmentation | n | C2 | /ˌpɪɡmenˈteɪʃn/ | The sun affects skin pigmentation. | Le soleil agit sur la pigmentation de la peau.
+blemish | imperfection, défaut | n | C1 | /ˈblemɪʃ/ | The cream hides blemishes. | La crème masque les imperfections.
+melanin | mélanine | n | C2 | /ˈmelənɪn/ | Melanin gives colour to the skin. | La mélanine donne sa couleur à la peau.
+pimple | bouton (sur la peau) | n | B2 | /ˈpɪmpl/ | He has a pimple on his nose. | Il a un bouton sur le nez.
+burly | costaud, baraqué | adj | C1 | /ˈbɜːli/ | A burly man guarded the door. | Un homme costaud gardait la porte.
+lymphatic system | système lymphatique | n | C2 | /lɪmˈfætɪk ˈsɪstəm/ | The lymphatic system fights infection. | Le système lymphatique combat les infections.
+to urinate | uriner | v | C1 | /ˈjʊərɪneɪt/ | Don't urinate in standing water. | N'urine pas dans l'eau stagnante.
+vertebral column | colonne vertébrale | n | C2 | /ˌvɜːtɪbrəl ˈkɒləm/ | The vertebral column protects the spinal cord. | La colonne vertébrale protège la moelle épinière.
+cellulite | cellulite | n | C1 | /ˈseljulaɪt/ | Massage can reduce cellulite. | Le massage peut réduire la cellulite.
+hair follicle | follicule pileux | n | C2 | /ˈheə ˌfɒlɪkl/ | Each hair grows from a hair follicle. | Chaque cheveu pousse à partir d'un follicule pileux.
+jugular | jugulaire | n | C2 | /ˈdʒʌɡjələ/ | Allah is nearer to us than our jugular vein. | Allah est plus proche de nous que notre veine jugulaire.
+visage | visage, figure | n | C2 | /ˈvɪzɪdʒ/ | His stern visage frightened the children. | Son visage sévère effrayait les enfants.
+meniscus | ménisque | n | C2 | /məˈnɪskəs/ | He tore his meniscus playing football. | Il s'est déchiré le ménisque en jouant au football.
+orifice | orifice | n | C2 | /ˈɒrɪfɪs/ | Water entered through a small orifice. | L'eau est entrée par un petit orifice.
+appendage | appendice, membre | n | C2 | /əˈpendɪdʒ/ | The insect has many appendages. | L'insecte a de nombreux appendices.
+brawn | muscle, force physique | n | C2 | /brɔːn/ | The job needs brains, not brawn. | Le travail demande de la cervelle, pas des muscles.
+sternum | sternum | n | C2 | /ˈstɜːnəm/ | The ribs are attached to the sternum. | Les côtes sont attachées au sternum.
+synapse | synapse | n | C2 | /ˈsaɪnæps/ | Signals cross the synapse. | Les signaux traversent la synapse.
+mandible | mandibule | n | C2 | /ˈmændɪbl/ | Ants have strong mandibles. | Les fourmis ont de fortes mandibules.
 `,
 );

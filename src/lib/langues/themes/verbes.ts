@@ -451,5 +451,651 @@ to surpass | surpasser, dépasser | v | C1 | /səˈpɑːs/ | The student may sur
 to thrive | prospérer, s'épanouir | v | C1 | /θraɪv/ | Plants thrive in this soil. | Les plantes prospèrent dans ce sol.
 to utter | prononcer, émettre | v | C1 | /ˈʌtər/ | He didn't utter a word. | Il n'a pas prononcé un mot.
 to withstand | résister à | v | C1 | /wɪðˈstænd/ | The building can withstand earthquakes. | Le bâtiment peut résister aux séismes.
+to consist | consister, se composer | v | A2 | /kənˈsɪst/ | The test consists of three parts. | Le test se compose de trois parties.
+to operate | faire fonctionner ; opérer | v | B1 | /ˈɒpəreɪt/ | Can you operate this machine? | Sais-tu faire fonctionner cette machine ?
+to refer | faire référence ; adresser | v | B1 | /rɪˈfɜː/ | Which book are you referring to? | De quel livre parles-tu ?
+to shut | fermer | v | A2 | /ʃʌt/ | Shut the door, please. | Ferme la porte, s'il te plaît.
+to splash | éclabousser | v | B1 | /splæʃ/ | The children splashed in the pool. | Les enfants s'éclaboussaient dans la piscine.
+to terrify | terrifier | v | B1 | /ˈterɪfaɪ/ | Thunder terrifies my dog. | Le tonnerre terrifie mon chien.
+to accomplish | accomplir, réaliser | v | B1 | /əˈkʌmplɪʃ/ | We accomplished a lot today. | Nous avons accompli beaucoup de choses aujourd'hui.
+to accustom | habituer, accoutumer | v | B2 | /əˈkʌstəm/ | It took time to accustom myself to the cold. | Il m'a fallu du temps pour m'habituer au froid.
+to advance | avancer, progresser | v | B1 | /ədˈvɑːns/ | Medicine has advanced a lot. | La médecine a beaucoup progressé.
+to arise | survenir, se présenter | v | B1 | /əˈraɪz/ | Problems may arise at any time. | Des problèmes peuvent survenir à tout moment.
+to associate | associer | v | B1 | /əˈsəʊʃieɪt/ | I associate this smell with my childhood. | J'associe cette odeur à mon enfance.
+to attain | atteindre, parvenir à | v | B2 | /əˈteɪn/ | She attained her goal. | Elle a atteint son objectif.
+to blend | mélanger | v | B1 | /blend/ | Blend the fruit with some milk. | Mixe les fruits avec un peu de lait.
+to bore | ennuyer | v | B1 | /bɔː/ | His long speeches bore me. | Ses longs discours m'ennuient.
+to bump | heurter, cogner | v | B1 | /bʌmp/ | I bumped my head on the door. | Je me suis cogné la tête contre la porte.
+to burst | éclater | v | B1 | /bɜːst/ | The balloon burst. | Le ballon a éclaté.
+to categorise | classer, catégoriser | v | B2 | /ˈkætəɡəraɪz/ | Categorise the words by colour. | Classe les mots par couleur.
+to characterise | caractériser | v | B2 | /ˈkærəktəraɪz/ | Patience characterises a good teacher. | La patience caractérise un bon professeur.
+to complicate | compliquer | v | B1 | /ˈkɒmplɪkeɪt/ | Don't complicate things. | Ne complique pas les choses.
+to constitute | constituer | v | B2 | /ˈkɒnstɪtjuːt/ | Women constitute half the population. | Les femmes constituent la moitié de la population.
+to convey | transmettre, exprimer | v | B2 | /kənˈveɪ/ | Words can't convey how grateful I am. | Les mots ne peuvent exprimer ma gratitude.
+to counter | contrer, riposter | v | B2 | /ˈkaʊntə/ | He countered the argument with facts. | Il a contré l'argument avec des faits.
+to dazzle | éblouir | v | B2 | /ˈdæzl/ | The headlights dazzled me. | Les phares m'ont ébloui.
+to devastate | dévaster | v | B2 | /ˈdevəsteɪt/ | The earthquake devastated the region. | Le séisme a dévasté la région.
+to dial | composer (un numéro) | v | B1 | /ˈdaɪəl/ | Dial 112 in an emergency. | Compose le 112 en cas d'urgence.
+to disable | désactiver ; handicaper | v | B2 | /dɪsˈeɪbl/ | You can disable notifications in the settings. | Tu peux désactiver les notifications dans les réglages.
+to enclose | joindre (à un courrier) ; clôturer | v | B2 | /ɪnˈkləʊz/ | Please enclose a copy of your passport. | Veuillez joindre une copie de votre passeport.
+to enrich | enrichir | v | B1 | /ɪnˈrɪtʃ/ | Travel enriches the mind. | Les voyages enrichissent l'esprit.
+to fascinate | fasciner | v | B1 | /ˈfæsɪneɪt/ | The stars have always fascinated me. | Les étoiles m'ont toujours fasciné.
+to glide | glisser, planer | v | B2 | /ɡlaɪd/ | The swans glided across the lake. | Les cygnes glissaient sur le lac.
+to hop | sautiller, sauter à cloche-pied | v | B1 | /hɒp/ | The children hopped across the playground. | Les enfants traversaient la cour à cloche-pied.
+to horrify | horrifier | v | B2 | /ˈhɒrɪfaɪ/ | The images horrified the viewers. | Les images ont horrifié les téléspectateurs.
+to illuminate | éclairer, illuminer | v | B2 | /ɪˈluːmɪneɪt/ | Candles illuminated the room. | Des bougies éclairaient la pièce.
+to impair | altérer, diminuer | v | C1 | /ɪmˈpeə/ | Lack of sleep impairs concentration. | Le manque de sommeil altère la concentration.
+to inscribe | inscrire, graver | v | C1 | /ɪnˈskraɪb/ | Their names are inscribed on the wall. | Leurs noms sont gravés sur le mur.
+to interact | interagir | v | B1 | /ˌɪntərˈækt/ | Children learn by interacting with others. | Les enfants apprennent en interagissant avec les autres.
+to irritate | irriter, agacer | v | B1 | /ˈɪrɪteɪt/ | His attitude irritates me. | Son attitude m'agace.
+to lessen | diminuer, atténuer | v | B2 | /ˈlesn/ | This medicine will lessen the pain. | Ce médicament va atténuer la douleur.
+to liberate | libérer | v | B2 | /ˈlɪbəreɪt/ | The city was liberated in 1944. | La ville a été libérée en 1944.
+to mislead | induire en erreur, tromper | v | B2 | /ˌmɪsˈliːd/ | The advert misleads customers. | La publicité induit les clients en erreur.
+to occupy | occuper | v | B1 | /ˈɒkjupaɪ/ | Games occupy the children for hours. | Les jeux occupent les enfants pendant des heures.
+to outline | exposer dans les grandes lignes | v | B2 | /ˈaʊtlaɪn/ | He outlined his plan. | Il a exposé son plan dans les grandes lignes.
+to outweigh | l'emporter sur | v | C1 | /ˌaʊtˈweɪ/ | The benefits outweigh the risks. | Les avantages l'emportent sur les risques.
+to proclaim | proclamer | v | B2 | /prəˈkleɪm/ | He proclaimed his innocence. | Il a clamé son innocence.
+to rearrange | réarranger, réorganiser | v | B1 | /ˌriːəˈreɪndʒ/ | We rearranged the furniture. | Nous avons réorganisé les meubles.
+to rebuild | reconstruire | v | B1 | /ˌriːˈbɪld/ | They rebuilt the mosque after the fire. | Ils ont reconstruit la mosquée après l'incendie.
+to reclaim | récupérer, réclamer | v | B2 | /rɪˈkleɪm/ | You can reclaim your luggage here. | Vous pouvez récupérer vos bagages ici.
+to relate | se rapporter ; s'identifier | v | B1 | /rɪˈleɪt/ | I can relate to his story. | Je me reconnais dans son histoire.
+to remark | faire remarquer | v | B1 | /rɪˈmɑːk/ | She remarked that the room was cold. | Elle a fait remarquer que la pièce était froide.
+to simplify | simplifier | v | B1 | /ˈsɪmplɪfaɪ/ | Let me simplify the explanation. | Laisse-moi simplifier l'explication.
+to stun | stupéfier, assommer | v | B2 | /stʌn/ | The news stunned everyone. | La nouvelle a stupéfié tout le monde.
+to tend | avoir tendance à | v | B1 | /tend/ | I tend to sleep late at weekends. | J'ai tendance à faire la grasse matinée le week-end.
+to thump | cogner, frapper | v | B2 | /θʌmp/ | He thumped the table angrily. | Il a frappé la table avec colère.
+to tighten | serrer, resserrer | v | B1 | /ˈtaɪtn/ | Tighten your seat belt. | Serre ta ceinture.
+to tire | fatiguer, se lasser | v | B1 | /ˈtaɪə/ | Long walks tire me. | Les longues marches me fatiguent.
+to toss | lancer, jeter | v | B1 | /tɒs/ | He tossed the keys to me. | Il m'a lancé les clés.
+to tumble | dégringoler | v | B2 | /ˈtʌmbl/ | He tumbled down the stairs. | Il a dégringolé l'escalier.
+to undo | défaire, annuler | v | B1 | /ʌnˈduː/ | You can undo the last change. | Tu peux annuler la dernière modification.
+to unfold | déplier ; se dérouler | v | B2 | /ʌnˈfəʊld/ | He unfolded the map. | Il a déplié la carte.
+to adorn | orner, parer | v | C1 | /əˈdɔːn/ | Beautiful tiles adorn the mosque. | De magnifiques carreaux ornent la mosquée.
+to alternate | alterner | v | B2 | /ˈɔːltəneɪt/ | Alternate between running and walking. | Alterne course et marche.
+to amplify | amplifier | v | B2 | /ˈæmplɪfaɪ/ | Social media amplifies rumours. | Les réseaux sociaux amplifient les rumeurs.
+to animate | animer | v | B2 | /ˈænɪmeɪt/ | Her smile animated her face. | Son sourire illuminait son visage.
+to arouse | éveiller, susciter | v | C1 | /əˈraʊz/ | His behaviour aroused suspicion. | Son comportement a éveillé les soupçons.
+to aspire | aspirer à | v | C1 | /əˈspaɪə/ | He aspires to be a good Muslim. | Il aspire à être un bon musulman.
+to assemble | assembler ; se rassembler | v | B2 | /əˈsembl/ | We assembled the furniture ourselves. | Nous avons monté les meubles nous-mêmes.
+to astonish | stupéfier, étonner | v | B2 | /əˈstɒnɪʃ/ | Her answer astonished me. | Sa réponse m'a stupéfié.
+to await | attendre | v | B2 | /əˈweɪt/ | We await your reply. | Nous attendons votre réponse.
+to beautify | embellir | v | C1 | /ˈbjuːtɪfaɪ/ | They planted trees to beautify the street. | Ils ont planté des arbres pour embellir la rue.
+to bellow | beugler, hurler | v | C1 | /ˈbeləʊ/ | The coach bellowed at the players. | L'entraîneur hurlait sur les joueurs.
+to bewilder | déconcerter | v | C1 | /bɪˈwɪldə/ | The question bewildered him. | La question l'a déconcerté.
+to blur | brouiller, rendre flou | v | B2 | /blɜː/ | Tears blurred her vision. | Les larmes lui brouillaient la vue.
+to blurt out | laisser échapper | v | C1 | /blɜːt ˈaʊt/ | He blurted out the secret. | Il a laissé échapper le secret.
+to bombard | bombarder | v | C1 | /bɒmˈbɑːd/ | Journalists bombarded him with questions. | Les journalistes l'ont bombardé de questions.
+to boost | stimuler, booster | v | B2 | /buːst/ | The good news boosted his confidence. | La bonne nouvelle a renforcé sa confiance.
+to broaden | élargir | v | B2 | /ˈbrɔːdn/ | Travel broadens the mind. | Les voyages élargissent l'esprit.
+to certify | certifier | v | B2 | /ˈsɜːtɪfaɪ/ | The document was certified by a lawyer. | Le document a été certifié par un avocat.
+to crystallise | se cristalliser, prendre forme | v | C1 | /ˈkrɪstəlaɪz/ | My ideas began to crystallise. | Mes idées ont commencé à prendre forme.
+to dash | se précipiter | v | B2 | /dæʃ/ | I have to dash, I'm late! | Je dois filer, je suis en retard !
+to dehumanise | déshumaniser | v | C1 | /ˌdiːˈhjuːmənaɪz/ | War dehumanises people. | La guerre déshumanise les gens.
+to demolish | démolir | v | B2 | /dɪˈmɒlɪʃ/ | They demolished the old factory. | Ils ont démoli la vieille usine.
+to descend | descendre | v | B2 | /dɪˈsend/ | The plane began to descend. | L'avion a commencé sa descente.
+to despise | mépriser | v | B2 | /dɪˈspaɪz/ | He despises liars. | Il méprise les menteurs.
+to detach | détacher | v | B2 | /dɪˈtætʃ/ | Detach the form and send it back. | Détachez le formulaire et renvoyez-le.
+to dip | tremper, plonger | v | B2 | /dɪp/ | Dip the bread in the oil. | Trempe le pain dans l'huile.
+to disapprove | désapprouver | v | B2 | /ˌdɪsəˈpruːv/ | My parents disapprove of my choice. | Mes parents désapprouvent mon choix.
+to disconnect | débrancher, déconnecter | v | B2 | /ˌdɪskəˈnekt/ | Disconnect the cable before cleaning. | Débranche le câble avant de nettoyer.
+to discredit | discréditer | v | C1 | /dɪsˈkredɪt/ | They tried to discredit the witness. | Ils ont essayé de discréditer le témoin.
+to disrupt | perturber | v | B2 | /dɪsˈrʌpt/ | The strike disrupted train services. | La grève a perturbé le trafic ferroviaire.
+to divert | dévier, détourner | v | B2 | /daɪˈvɜːt/ | The flight was diverted to Lyon. | Le vol a été dérouté vers Lyon.
+to droop | pendre, s'affaisser | v | C1 | /druːp/ | The flowers began to droop in the heat. | Les fleurs ont commencé à se faner sous la chaleur.
+to engulf | engloutir, submerger | v | C1 | /ɪnˈɡʌlf/ | Flames engulfed the building. | Les flammes ont englouti le bâtiment.
+to equip | équiper | v | B2 | /ɪˈkwɪp/ | The school is equipped with computers. | L'école est équipée d'ordinateurs.
+to excel | exceller | v | B2 | /ɪkˈsel/ | She excels at maths. | Elle excelle en maths.
+to exclaim | s'exclamer | v | B2 | /ɪkˈskleɪm/ | "How beautiful!" she exclaimed. | « Que c'est beau ! » s'exclama-t-elle.
+to explode | exploser | v | B2 | /ɪkˈspləʊd/ | The bomb exploded at midnight. | La bombe a explosé à minuit.
+to extract | extraire | v | B2 | /ɪkˈstrækt/ | The dentist extracted my tooth. | Le dentiste m'a arraché une dent.
+to familiarise | se familiariser | v | B2 | /fəˈmɪliəraɪz/ | Familiarise yourself with the rules. | Familiarise-toi avec les règles.
+to flap | battre (des ailes), claquer | v | B2 | /flæp/ | The bird flapped its wings. | L'oiseau battait des ailes.
+to flip | retourner, feuilleter | v | B2 | /flɪp/ | Flip the pancake after one minute. | Retourne la crêpe au bout d'une minute.
+to freak out | paniquer, flipper | v | B2 | /friːk ˈaʊt/ | Don't freak out, it's only a spider. | Ne panique pas, ce n'est qu'une araignée.
+to generalise | généraliser | v | B2 | /ˈdʒenrəlaɪz/ | You can't generalise from one example. | On ne peut pas généraliser à partir d'un seul exemple.
+to glorify | glorifier | v | C1 | /ˈɡlɔːrɪfaɪ/ | Films sometimes glorify violence. | Les films glorifient parfois la violence.
+to hover | planer, flotter | v | B2 | /ˈhɒvə/ | A helicopter hovered above the crowd. | Un hélicoptère survolait la foule en vol stationnaire.
+to humanise | humaniser | v | C1 | /ˈhjuːmənaɪz/ | The architect wanted to humanise the hospital. | L'architecte voulait humaniser l'hôpital.
+to humiliate | humilier | v | B2 | /hjuːˈmɪlieɪt/ | Never humiliate a person in public. | N'humilie jamais quelqu'un en public.
+to hush | faire taire, se taire | v | C1 | /hʌʃ/ | She hushed the crying baby. | Elle a calmé le bébé qui pleurait.
+to immerse | immerger, plonger | v | C1 | /ɪˈmɜːs/ | She immersed herself in her studies. | Elle s'est plongée dans ses études.
+to indulge | se faire plaisir, céder (à) | v | C1 | /ɪnˈdʌldʒ/ | I indulged in a piece of cake. | Je me suis offert une part de gâteau.
+to inhabit | habiter, peupler | v | B2 | /ɪnˈhæbɪt/ | Wolves inhabit these forests. | Des loups peuplent ces forêts.
+to inquire | se renseigner | v | B2 | /ɪnˈkwaɪə/ | I'm calling to inquire about the job. | J'appelle pour me renseigner sur le poste.
+to instil | inculquer | v | C1 | /ɪnˈstɪl/ | Parents should instil good values. | Les parents doivent inculquer de bonnes valeurs.
+to instruct | ordonner ; enseigner | v | B2 | /ɪnˈstrʌkt/ | The doctor instructed me to rest. | Le médecin m'a demandé de me reposer.
+to interfere | se mêler, interférer | v | B2 | /ˌɪntəˈfɪə/ | Don't interfere in their business. | Ne te mêle pas de leurs affaires.
+to intrude | déranger, s'immiscer | v | C1 | /ɪnˈtruːd/ | I don't want to intrude. | Je ne veux pas déranger.
+to jeopardise | compromettre | v | C1 | /ˈdʒepədaɪz/ | Don't jeopardise your future. | Ne compromets pas ton avenir.
+to lengthen | allonger, rallonger | v | B2 | /ˈleŋθən/ | The days lengthen in spring. | Les jours rallongent au printemps.
+to lighten | alléger ; éclaircir | v | B2 | /ˈlaɪtn/ | Let me lighten your load. | Laisse-moi alléger ta charge.
+to mimic | imiter | v | C1 | /ˈmɪmɪk/ | Parrots can mimic human speech. | Les perroquets peuvent imiter la parole humaine.
+to mistreat | maltraiter | v | B2 | /ˌmɪsˈtriːt/ | Never mistreat an animal. | Ne maltraite jamais un animal.
+to misunderstand | mal comprendre | v | B2 | /ˌmɪsʌndəˈstænd/ | Don't misunderstand me. | Ne te méprends pas.
+to modernise | moderniser | v | B2 | /ˈmɒdənaɪz/ | They modernised the kitchen. | Ils ont modernisé la cuisine.
+to mount | monter ; augmenter | v | B2 | /maʊnt/ | Tension is mounting. | La tension monte.
+to mumble | marmonner | v | B2 | /ˈmʌmbl/ | Don't mumble, speak clearly! | Ne marmonne pas, parle clairement !
+to mutter | marmonner, grommeler | v | B2 | /ˈmʌtə/ | He muttered something and left. | Il a marmonné quelque chose et il est parti.
+to mystify | laisser perplexe | v | C1 | /ˈmɪstɪfaɪ/ | His disappearance mystified everyone. | Sa disparition a laissé tout le monde perplexe.
+to navigate | naviguer ; s'orienter | v | B2 | /ˈnævɪɡeɪt/ | Sailors used the stars to navigate. | Les marins s'orientaient grâce aux étoiles.
+to nourish | nourrir | v | C1 | /ˈnʌrɪʃ/ | Good books nourish the mind. | Les bons livres nourrissent l'esprit.
+to obsess | obséder | v | C1 | /əbˈses/ | Stop obsessing about your weight! | Arrête d'être obsédé par ton poids !
+to originate | provenir, naître | v | C1 | /əˈrɪdʒɪneɪt/ | The tradition originated in Persia. | La tradition est née en Perse.
+to outdo | surpasser | v | C1 | /ˌaʊtˈduː/ | He tried to outdo his brother. | Il essayait de surpasser son frère.
+to outgrow | devenir trop grand pour | v | C1 | /ˌaʊtˈɡrəʊ/ | The children have outgrown their shoes. | Les chaussures des enfants sont devenues trop petites.
+to outlive | survivre à | v | C1 | /ˌaʊtˈlɪv/ | She outlived her husband by ten years. | Elle a survécu dix ans à son mari.
+to outshine | éclipser, surpasser | v | C1 | /ˌaʊtˈʃaɪn/ | She outshines all the other singers. | Elle éclipse tous les autres chanteurs.
+to overemphasise | trop insister sur | v | C1 | /ˌəʊvərˈemfəsaɪz/ | You can't overemphasise the importance of sleep. | On n'insistera jamais assez sur l'importance du sommeil.
+to overestimate | surestimer | v | B2 | /ˌəʊvərˈestɪmeɪt/ | Don't overestimate your strength. | Ne surestime pas tes forces.
+to overhear | entendre par hasard | v | B2 | /ˌəʊvəˈhɪə/ | I overheard their conversation. | J'ai entendu leur conversation par hasard.
+to overshadow | éclipser, assombrir | v | C1 | /ˌəʊvəˈʃædəʊ/ | The news overshadowed the celebrations. | La nouvelle a assombri les festivités.
+to overstep | outrepasser, dépasser | v | C1 | /ˌəʊvəˈstep/ | You've overstepped the mark. | Tu as dépassé les bornes.
+to penetrate | pénétrer | v | C1 | /ˈpenɪtreɪt/ | The light couldn't penetrate the fog. | La lumière ne parvenait pas à percer le brouillard.
+to permeate | imprégner, se répandre | v | C2 | /ˈpɜːmieɪt/ | The smell of spices permeated the house. | L'odeur des épices imprégnait la maison.
+to personify | personnifier, incarner | v | C1 | /pəˈsɒnɪfaɪ/ | He personifies honesty. | Il incarne l'honnêteté.
+to pluck | cueillir ; plumer ; pincer | v | C1 | /plʌk/ | She plucked a rose from the garden. | Elle a cueilli une rose dans le jardin.
+to popularise | populariser, vulgariser | v | C1 | /ˈpɒpjələraɪz/ | He popularised science on television. | Il a vulgarisé la science à la télévision.
+to prejudge | préjuger, juger d'avance | v | C1 | /ˌpriːˈdʒʌdʒ/ | Don't prejudge people. | Ne juge pas les gens d'avance.
+to preoccupy | préoccuper | v | C1 | /priˈɒkjupaɪ/ | The exam preoccupies her. | L'examen la préoccupe.
+to prevail | prévaloir, l'emporter | v | C1 | /prɪˈveɪl/ | Truth will prevail. | La vérité finira par l'emporter.
+to radiate | rayonner, irradier | v | C1 | /ˈreɪdieɪt/ | She radiates happiness. | Elle rayonne de bonheur.
+to ravage | ravager | v | C1 | /ˈrævɪdʒ/ | War ravaged the country. | La guerre a ravagé le pays.
+to reckon | penser, estimer | v | B2 | /ˈrekən/ | I reckon it will rain. | J'ai l'impression qu'il va pleuvoir.
+to recollect | se rappeler | v | C1 | /ˌrekəˈlekt/ | I don't recollect meeting him. | Je ne me souviens pas l'avoir rencontré.
+to reconsider | reconsidérer | v | B2 | /ˌriːkənˈsɪdə/ | Please reconsider your decision. | Merci de reconsidérer ta décision.
+to redo | refaire | v | B2 | /ˌriːˈduː/ | I had to redo the whole exercise. | J'ai dû refaire tout l'exercice.
+to regulate | réguler, réglementer | v | B2 | /ˈreɡjuleɪt/ | The law regulates the use of pesticides. | La loi réglemente l'usage des pesticides.
+to rejoin | rejoindre | v | B2 | /ˌriːˈdʒɔɪn/ | He rejoined the team after his injury. | Il a rejoint l'équipe après sa blessure.
+to reorganise | réorganiser | v | B2 | /riˈɔːɡənaɪz/ | We reorganised the office. | Nous avons réorganisé le bureau.
+to repress | réprimer, refouler | v | C1 | /rɪˈpres/ | She repressed a smile. | Elle a réprimé un sourire.
+to revive | ranimer, faire revivre | v | B2 | /rɪˈvaɪv/ | The doctors revived him. | Les médecins l'ont ranimé.
+to revolutionise | révolutionner | v | C1 | /ˌrevəˈluːʃənaɪz/ | The internet revolutionised communication. | Internet a révolutionné la communication.
+to revolve | tourner | v | B2 | /rɪˈvɒlv/ | The Earth revolves around the Sun. | La Terre tourne autour du Soleil.
+to rip | déchirer | v | B2 | /rɪp/ | I ripped my trousers on a nail. | J'ai déchiré mon pantalon sur un clou.
+to scramble | se démener ; escalader à quatre pattes | v | C1 | /ˈskræmbl/ | We scrambled up the rocks. | Nous avons grimpé sur les rochers à quatre pattes.
+to signify | signifier | v | C1 | /ˈsɪɡnɪfaɪ/ | A white flag signifies surrender. | Un drapeau blanc signifie la reddition.
+to skim | parcourir, survoler ; écrémer | v | C1 | /skɪm/ | I skimmed the article quickly. | J'ai parcouru l'article rapidement.
+to slam | claquer | v | B2 | /slæm/ | Don't slam the door! | Ne claque pas la porte !
+to snap | casser net ; claquer | v | B2 | /snæp/ | The branch snapped under his weight. | La branche s'est cassée net sous son poids.
+to span | couvrir, s'étendre sur | v | C1 | /spæn/ | His career spanned forty years. | Sa carrière s'est étendue sur quarante ans.
+to splatter | éclabousser | v | C1 | /ˈsplætə/ | Mud splattered my trousers. | La boue a éclaboussé mon pantalon.
+to stammer | bégayer | v | B2 | /ˈstæmə/ | He stammers when he's nervous. | Il bégaie quand il est nerveux.
+to startle | faire sursauter, effrayer | v | B2 | /ˈstɑːtl/ | The noise startled the baby. | Le bruit a fait sursauter le bébé.
+to straighten | redresser, raidir | v | B2 | /ˈstreɪtn/ | Straighten your back. | Redresse le dos.
+to stride | marcher à grands pas | v | C1 | /straɪd/ | He strides into the office every morning. | Il entre au bureau à grandes enjambées chaque matin.
+to subside | se calmer, s'apaiser | v | C1 | /səbˈsaɪd/ | The storm finally subsided. | La tempête s'est enfin calmée.
+to suck | sucer, aspirer | v | B2 | /sʌk/ | The baby sucks its thumb. | Le bébé suce son pouce.
+to suppress | réprimer, étouffer | v | C1 | /səˈpres/ | She suppressed a yawn. | Elle a réprimé un bâillement.
+to taunt | railler, provoquer | v | C1 | /tɔːnt/ | The other boys taunted him. | Les autres garçons se moquaient de lui.
+to trample | piétiner | v | C1 | /ˈtræmpl/ | The crowd trampled the flowers. | La foule a piétiné les fleurs.
+to traverse | traverser, parcourir | v | C1 | /trəˈvɜːs/ | They traversed the desert on camels. | Ils ont traversé le désert à dos de chameau.
+to tread | marcher, poser le pied | v | C1 | /tred/ | Tread carefully on the ice. | Marche prudemment sur la glace.
+to underestimate | sous-estimer | v | B2 | /ˌʌndərˈestɪmeɪt/ | Never underestimate your opponent. | Ne sous-estime jamais ton adversaire.
+to untie | dénouer, détacher | v | B2 | /ʌnˈtaɪ/ | Untie your shoelaces. | Défais tes lacets.
+to usher | faire entrer, conduire | v | C1 | /ˈʌʃə/ | We were ushered into the room. | On nous a fait entrer dans la pièce.
+to vibrate | vibrer | v | B2 | /vaɪˈbreɪt/ | My phone vibrated in my pocket. | Mon téléphone a vibré dans ma poche.
+to weaken | affaiblir | v | B2 | /ˈwiːkən/ | The illness weakened him. | La maladie l'a affaibli.
+to whip | fouetter | v | B2 | /wɪp/ | Whip the cream until thick. | Fouette la crème jusqu'à ce qu'elle épaississe.
+to widen | élargir | v | B2 | /ˈwaɪdn/ | They're widening the road. | Ils élargissent la route.
+to worsen | empirer, s'aggraver | v | B2 | /ˈwɜːsn/ | His health worsened in the winter. | Sa santé s'est aggravée pendant l'hiver.
+to opt | opter, choisir | v | C1 | /ɒpt/ | Many students opt for science. | Beaucoup d'élèves optent pour les sciences.
+to incorporate | intégrer, incorporer | v | C1 | /ɪnˈkɔːpəreɪt/ | We incorporated your suggestions. | Nous avons intégré tes suggestions.
+to creep | ramper ; avancer furtivement | v | B2 | /kriːp/ | The cat crept towards the bird. | Le chat s'approchait furtivement de l'oiseau.
+to disclose | révéler, divulguer | v | C1 | /dɪsˈkləʊz/ | He refused to disclose his name. | Il a refusé de révéler son nom.
+to coordinate | coordonner | v | B2 | /kəʊˈɔːdɪneɪt/ | She coordinates the volunteers. | Elle coordonne les bénévoles.
+to drift | dériver | v | C1 | /drɪft/ | The boat drifted out to sea. | Le bateau a dérivé vers le large.
+to curb | freiner, limiter | v | C1 | /kɜːb/ | We must curb our spending. | Nous devons limiter nos dépenses.
+to gamble | jouer (de l'argent) ; parier | v | B2 | /ˈɡæmbl/ | He gambled all his savings. | Il a joué toutes ses économies.
+to forge | forger ; contrefaire | v | C1 | /fɔːdʒ/ | They forged a strong friendship. | Ils ont noué une solide amitié.
+to activate | activer | v | B2 | /ˈæktɪveɪt/ | Activate your account by email. | Active ton compte par e-mail.
+to foil | déjouer | v | C1 | /fɔɪl/ | Police foiled the robbery. | La police a déjoué le cambriolage.
+to beware | se méfier de, prendre garde | v | B2 | /bɪˈweə/ | Beware of the dog! | Attention au chien !
+to comprehend | comprendre, saisir | v | C1 | /ˌkɒmprɪˈhend/ | No mind can comprehend God fully. | Aucun esprit ne peut comprendre Dieu entièrement.
+to peek | jeter un coup d'œil | v | B2 | /piːk/ | No peeking at the answers! | On ne regarde pas les réponses !
+to manifest | manifester | v | C2 | /ˈmænɪfest/ | His anger manifested itself in silence. | Sa colère s'est manifestée par le silence.
+to lure | attirer, appâter | v | C1 | /lʊə/ | Low prices lure customers. | Les prix bas attirent les clients.
+to rant | fulminer, déblatérer | v | C1 | /rænt/ | He ranted about the government for an hour. | Il a fulminé contre le gouvernement pendant une heure.
+to erase | effacer | v | B2 | /ɪˈreɪz/ | Erase the board, please. | Efface le tableau, s'il te plaît.
+to shove | pousser, bousculer | v | B2 | /ʃʌv/ | Don't shove! Wait your turn. | Ne pousse pas ! Attends ton tour.
+to tilt | pencher, incliner | v | C1 | /tɪlt/ | She tilted her head to one side. | Elle a penché la tête sur le côté.
+to sway | se balancer ; influencer | v | C1 | /sweɪ/ | The trees swayed in the wind. | Les arbres se balançaient dans le vent.
+to binge | se goinfrer, faire des excès | v | C1 | /bɪndʒ/ | Don't binge on sweets. | Ne te goinfre pas de bonbons.
+to chant | scander, psalmodier | v | C1 | /tʃɑːnt/ | The crowd chanted his name. | La foule scandait son nom.
+to poke | piquer, donner un petit coup | v | B2 | /pəʊk/ | Stop poking me! | Arrête de me donner des petits coups !
+to bluff | bluffer | v | C1 | /blʌf/ | He's only bluffing. | Il bluffe, c'est tout.
+to drip | goutter, dégouliner | v | B2 | /drɪp/ | The tap is dripping. | Le robinet goutte.
+to swipe | glisser (le doigt) ; chiper | v | B2 | /swaɪp/ | Swipe left to delete the message. | Glisse vers la gauche pour supprimer le message.
+to dwell | demeurer ; s'attarder sur | v | C1 | /dwel/ | Don't dwell on the past. | Ne t'attarde pas sur le passé.
+to intercept | intercepter | v | C1 | /ˌɪntəˈsept/ | The police intercepted the message. | La police a intercepté le message.
+to rue | regretter amèrement | v | C2 | /ruː/ | He will rue the day he lied. | Il regrettera amèrement le jour où il a menti.
+to garner | recueillir, obtenir | v | C2 | /ˈɡɑːnə/ | The film garnered great reviews. | Le film a recueilli d'excellentes critiques.
+to puff | souffler, haleter | v | C1 | /pʌf/ | He was puffing after the climb. | Il soufflait après la montée.
+to replicate | reproduire | v | C2 | /ˈreplɪkeɪt/ | Scientists couldn't replicate the results. | Les scientifiques n'ont pas pu reproduire les résultats.
+to tuck | rentrer, border | v | B2 | /tʌk/ | Tuck your shirt in. | Rentre ta chemise.
+to administer | administrer, gérer | v | C1 | /ədˈmɪnɪstə/ | The nurse administered the drug. | L'infirmière a administré le médicament.
+to stash | planquer, cacher | v | C1 | /stæʃ/ | He stashed the money under the bed. | Il a planqué l'argent sous le lit.
+to snatch | arracher, saisir | v | C1 | /snætʃ/ | A thief snatched her bag. | Un voleur lui a arraché son sac.
+to harden | durcir, endurcir | v | C1 | /ˈhɑːdn/ | Don't let your heart harden. | Ne laisse pas ton cœur s'endurcir.
+to empower | donner du pouvoir, autonomiser | v | C1 | /ɪmˈpaʊə/ | Knowledge empowers people. | Le savoir donne du pouvoir aux gens.
+to pivot | pivoter | v | C2 | /ˈpɪvət/ | The company pivoted to online sales. | L'entreprise s'est réorientée vers la vente en ligne.
+to cling | s'accrocher | v | C1 | /klɪŋ/ | Small children cling to their mothers. | Les petits enfants s'accrochent à leur mère.
+to cleanse | purifier, nettoyer | v | C1 | /klenz/ | Ablution cleanses the body before prayer. | Les ablutions purifient le corps avant la prière.
+to consolidate | consolider | v | C1 | /kənˈsɒlɪdeɪt/ | The team consolidated its lead. | L'équipe a consolidé son avance.
+to rethink | repenser, reconsidérer | v | C1 | /ˌriːˈθɪŋk/ | We need to rethink our strategy. | Nous devons repenser notre stratégie.
+to heed | tenir compte de | v | C2 | /hiːd/ | He didn't heed my warning. | Il n'a pas tenu compte de mon avertissement.
+to muster | rassembler | v | C2 | /ˈmʌstə/ | She mustered the courage to speak. | Elle a rassemblé son courage pour parler.
+to override | outrepasser, annuler | v | C2 | /ˌəʊvəˈraɪd/ | Safety overrides all other concerns. | La sécurité prime sur toute autre considération.
+to reopen | rouvrir | v | B2 | /riˈəʊpən/ | The museum will reopen next month. | Le musée rouvrira le mois prochain.
+to insure | assurer | v | B2 | /ɪnˈʃʊə/ | Insure your house against fire. | Assure ta maison contre l'incendie.
+to validate | valider | v | C1 | /ˈvælɪdeɪt/ | Validate your ticket before boarding. | Valide ton billet avant de monter.
+to err | se tromper | v | C2 | /ɜː/ | To err is human. | L'erreur est humaine.
+to evade | esquiver, échapper à | v | C1 | /ɪˈveɪd/ | He evaded the question. | Il a esquivé la question.
+to designate | désigner | v | C1 | /ˈdezɪɡneɪt/ | This area is designated for prayer. | Cet espace est réservé à la prière.
+to loosen | desserrer | v | B2 | /ˈluːsn/ | Loosen your tie. | Desserre ta cravate.
+to moan | gémir ; se plaindre | v | B2 | /məʊn/ | Stop moaning about the weather! | Arrête de te plaindre du temps !
+to fumble | tâtonner, fouiller maladroitement | v | C1 | /ˈfʌmbl/ | He fumbled for his keys. | Il cherchait ses clés à tâtons.
+to overrun | envahir ; dépasser | v | C2 | /ˌəʊvəˈrʌn/ | The garden is overrun with weeds. | Le jardin est envahi de mauvaises herbes.
+to soften | adoucir, ramollir | v | B2 | /ˈsɒfn/ | Soften the butter before using it. | Fais ramollir le beurre avant de l'utiliser.
+to marvel | s'émerveiller | v | C1 | /ˈmɑːvl/ | We marvelled at the stars. | Nous nous sommes émerveillés devant les étoiles.
+to compel | contraindre, obliger | v | C1 | /kəmˈpel/ | There is no compulsion in religion. | Nul ne peut être contraint en religion.
+to congregate | se rassembler | v | C1 | /ˈkɒŋɡrɪɡeɪt/ | People congregate at the mosque on Fridays. | Les gens se rassemblent à la mosquée le vendredi.
+to stoke | attiser, alimenter | v | C1 | /stəʊk/ | His words stoked the anger of the crowd. | Ses paroles ont attisé la colère de la foule.
+to suffice | suffire | v | C1 | /səˈfaɪs/ | A short answer will suffice. | Une réponse courte suffira.
+to formulate | formuler | v | C1 | /ˈfɔːmjuleɪt/ | Formulate your question clearly. | Formule clairement ta question.
+to rediscover | redécouvrir | v | C1 | /ˌriːdɪˈskʌvə/ | She rediscovered her love of reading. | Elle a redécouvert son amour de la lecture.
+to brainwash | faire un lavage de cerveau | v | C1 | /ˈbreɪnwɒʃ/ | The cult brainwashed its members. | La secte a fait un lavage de cerveau à ses membres.
+to malfunction | mal fonctionner | v | C1 | /ˌmælˈfʌŋkʃn/ | The machine malfunctioned. | La machine est tombée en panne.
+to con | arnaquer | v | C1 | /kɒn/ | He conned old people out of their savings. | Il a escroqué des personnes âgées de leurs économies.
+to exert | exercer | v | C1 | /ɪɡˈzɜːt/ | Parents exert a strong influence. | Les parents exercent une forte influence.
+to detest | détester | v | C1 | /dɪˈtest/ | I detest hypocrisy. | Je déteste l'hypocrisie.
+to prowl | rôder | v | C1 | /praʊl/ | A fox prowled around the farm. | Un renard rôdait autour de la ferme.
+to re-enact | reconstituer | v | C1 | /ˌriːɪˈnækt/ | They re-enacted the famous battle. | Ils ont reconstitué la célèbre bataille.
+to wrangle | se disputer, se chamailler | v | C1 | /ˈræŋɡl/ | They wrangled over the price for hours. | Ils se sont disputés sur le prix pendant des heures.
+to pertain to | concerner, se rapporter à | v | C1 | /pəˈteɪn tə/ | These rules pertain to all students. | Ces règles concernent tous les élèves.
+to resonate | résonner, trouver un écho | v | C1 | /ˈrezəneɪt/ | His words resonated with the audience. | Ses paroles ont trouvé un écho auprès du public.
+to align | aligner | v | C1 | /əˈlaɪn/ | Align the text on the left. | Aligne le texte à gauche.
+to alienate | aliéner, éloigner | v | C1 | /ˈeɪliəneɪt/ | His rudeness alienated his friends. | Sa grossièreté a éloigné ses amis.
+to harass | harceler | v | C1 | /ˈhærəs/ | He was harassed by journalists. | Il était harcelé par les journalistes.
+to persecute | persécuter | v | C1 | /ˈpɜːsɪkjuːt/ | The early Muslims were persecuted in Mecca. | Les premiers musulmans ont été persécutés à La Mecque.
+to crumble | s'effriter, s'écrouler | v | C1 | /ˈkrʌmbl/ | The old walls are crumbling. | Les vieux murs s'effritent.
+to evoke | évoquer | v | C1 | /ɪˈvəʊk/ | The smell evoked memories of childhood. | L'odeur évoquait des souvenirs d'enfance.
+to repel | repousser | v | C1 | /rɪˈpel/ | This spray repels mosquitoes. | Ce spray repousse les moustiques.
+to dither | hésiter, tergiverser | v | C1 | /ˈdɪðə/ | Stop dithering and decide! | Arrête de tergiverser et décide-toi !
+to forfeit | perdre, renoncer à | v | C1 | /ˈfɔːfɪt/ | If you leave now, you forfeit your deposit. | Si tu pars maintenant, tu perds ta caution.
+to twitch | se contracter nerveusement | v | C1 | /twɪtʃ/ | His eye twitched. | Il avait un tic à l'œil.
+to immortalise | immortaliser | v | C1 | /ɪˈmɔːtəlaɪz/ | The poem immortalised the battle. | Le poème a immortalisé la bataille.
+to dispense | distribuer ; se dispenser de | v | C1 | /dɪˈspens/ | The machine dispenses hot drinks. | La machine distribue des boissons chaudes.
+to diverge | diverger | v | C1 | /daɪˈvɜːdʒ/ | Our opinions diverge on this point. | Nos avis divergent sur ce point.
+to discard | jeter, se débarrasser de | v | C1 | /dɪˈskɑːd/ | Discard the packaging after use. | Jette l'emballage après usage.
+to stiffen | (se) raidir | v | C1 | /ˈstɪfn/ | His body stiffened with fear. | Son corps s'est raidi de peur.
+to flatter | flatter | v | C1 | /ˈflætə/ | Don't try to flatter me. | N'essaie pas de me flatter.
+to elevate | élever | v | C1 | /ˈelɪveɪt/ | Good manners elevate a person. | Les bonnes manières élèvent une personne.
+to profess | professer, prétendre | v | C1 | /prəˈfes/ | He professes to be an expert. | Il prétend être un expert.
+to loom | se profiler, menacer | v | C1 | /luːm/ | Exams are looming. | Les examens approchent dangereusement.
+to impersonate | se faire passer pour ; imiter | v | C1 | /ɪmˈpɜːsəneɪt/ | He impersonated a police officer. | Il s'est fait passer pour un policier.
+to gape | rester bouche bée | v | C1 | /ɡeɪp/ | The tourists gaped at the huge mosque. | Les touristes restaient bouche bée devant l'immense mosquée.
+to commend | louer, recommander | v | C1 | /kəˈmend/ | The judge commended her courage. | Le juge a salué son courage.
+to flick | donner une chiquenaude ; feuilleter | v | C1 | /flɪk/ | She flicked through the magazine. | Elle a feuilleté le magazine.
+to conjure up | évoquer, faire apparaître | v | C1 | /ˈkʌndʒər ʌp/ | The music conjures up images of the desert. | La musique évoque des images du désert.
+to interject | intervenir, interrompre | v | C1 | /ˌɪntəˈdʒekt/ | "That's not true," she interjected. | « Ce n'est pas vrai », intervint-elle.
+to gush | jaillir ; s'extasier | v | C1 | /ɡʌʃ/ | Water gushed from the pipe. | L'eau jaillissait du tuyau.
+to salvage | récupérer, sauver | v | C1 | /ˈsælvɪdʒ/ | They salvaged what they could from the fire. | Ils ont récupéré ce qu'ils pouvaient de l'incendie.
+to tangle | emmêler | v | C1 | /ˈtæŋɡl/ | The wind tangled her hair. | Le vent a emmêlé ses cheveux.
+to untangle | démêler | v | C1 | /ʌnˈtæŋɡl/ | Can you untangle this rope? | Tu peux démêler cette corde ?
+to render | rendre ; fournir | v | C1 | /ˈrendə/ | The news rendered him speechless. | La nouvelle l'a laissé sans voix.
+to personalise | personnaliser | v | C1 | /ˈpɜːsənəlaɪz/ | You can personalise your profile. | Tu peux personnaliser ton profil.
+to misplace | égarer | v | C1 | /ˌmɪsˈpleɪs/ | I've misplaced my glasses. | J'ai égaré mes lunettes.
+to wrench | arracher, tordre | v | C1 | /rentʃ/ | He wrenched the door open. | Il a ouvert la porte d'un coup sec.
+to scoff | se moquer | v | C1 | /skɒf/ | They scoffed at his ideas. | Ils se sont moqués de ses idées.
+to fiddle | tripoter ; jouer du violon | v | C1 | /ˈfɪdl/ | Stop fiddling with your phone! | Arrête de tripoter ton téléphone !
+to daunt | intimider, décourager | v | C1 | /dɔːnt/ | She was not daunted by the task. | La tâche ne l'a pas découragée.
+to envisage | envisager | v | C1 | /ɪnˈvɪzɪdʒ/ | I don't envisage any problems. | Je ne prévois aucun problème.
+to churn | baratter ; brasser | v | C2 | /tʃɜːn/ | They churned milk to make butter. | Ils barattaient le lait pour faire du beurre.
+to transfix | pétrifier, clouer sur place | v | C2 | /trænsˈfɪks/ | She was transfixed by the view. | Elle était fascinée par la vue.
+to dislodge | déloger, détacher | v | C1 | /dɪsˈlɒdʒ/ | The wind dislodged a tile. | Le vent a délogé une tuile.
+to circulate | circuler, faire circuler | v | C1 | /ˈsɜːkjəleɪt/ | Rumours circulate quickly. | Les rumeurs circulent vite.
+to rotate | tourner ; alterner | v | C1 | /rəʊˈteɪt/ | The Earth rotates once a day. | La Terre tourne sur elle-même une fois par jour.
+to squander | gaspiller, dilapider | v | C1 | /ˈskwɒndə/ | Don't squander your time. | Ne gaspille pas ton temps.
+to retrace | retracer, revenir sur | v | C1 | /rɪˈtreɪs/ | We retraced our steps to find the keys. | Nous sommes revenus sur nos pas pour retrouver les clés.
+to embark | embarquer ; se lancer | v | C1 | /ɪmˈbɑːk/ | She embarked on a new career. | Elle s'est lancée dans une nouvelle carrière.
+to plunge | plonger | v | C1 | /plʌndʒ/ | Prices plunged overnight. | Les prix ont chuté du jour au lendemain.
+to elude | échapper à | v | C1 | /iˈluːd/ | Sleep eluded me all night. | Le sommeil m'a fui toute la nuit.
+to gnaw | ronger | v | C1 | /nɔː/ | The dog gnawed a bone. | Le chien rongeait un os.
+to elongate | allonger | v | C2 | /ˈiːlɒŋɡeɪt/ | The shadows elongated in the evening. | Les ombres s'allongeaient le soir.
+to rustle | bruisser, froisser | v | C1 | /ˈrʌsl/ | The leaves rustled in the wind. | Les feuilles bruissaient dans le vent.
+to glean | glaner, recueillir | v | C1 | /ɡliːn/ | We gleaned information from old books. | Nous avons glané des informations dans de vieux livres.
+to unsettle | perturber, déstabiliser | v | C1 | /ʌnˈsetl/ | The news unsettled the markets. | La nouvelle a déstabilisé les marchés.
+to pounce | bondir, sauter sur | v | C1 | /paʊns/ | The cat pounced on the mouse. | Le chat a bondi sur la souris.
+to abound | abonder | v | C1 | /əˈbaʊnd/ | Fish abound in these waters. | Les poissons abondent dans ces eaux.
+to neutralise | neutraliser | v | C1 | /ˈnjuːtrəlaɪz/ | The acid was neutralised. | L'acide a été neutralisé.
+to salivate | saliver | v | C2 | /ˈsælɪveɪt/ | The smell of bread made me salivate. | L'odeur du pain m'a fait saliver.
+to heighten | accroître, intensifier | v | C1 | /ˈhaɪtn/ | The music heightened the tension. | La musique a intensifié la tension.
+to exude | dégager, respirer (une qualité) | v | C2 | /ɪɡˈzjuːd/ | She exudes confidence. | Elle respire la confiance.
+to unravel | démêler, élucider ; se défaire | v | C2 | /ʌnˈrævl/ | Detectives unravelled the mystery. | Les enquêteurs ont élucidé le mystère.
+to teem with | grouiller de | v | C2 | /ˈtiːm wɪð/ | The river teems with fish. | La rivière grouille de poissons.
+to enthuse | s'enthousiasmer | v | C2 | /ɪnˈθjuːz/ | He enthused about his trip to Istanbul. | Il s'enthousiasmait pour son voyage à Istanbul.
+to shamble | marcher en traînant les pieds | v | C2 | /ˈʃæmbl/ | The old man shambled along the road. | Le vieil homme avançait en traînant les pieds.
+to whirr | ronronner, vrombir | v | C2 | /wɜː/ | The fan whirred quietly. | Le ventilateur ronronnait doucement.
+to encumber | encombrer, entraver | v | C2 | /ɪnˈkʌmbə/ | Don't encumber yourself with luggage. | Ne t'encombre pas de bagages.
+to laud | louer, faire l'éloge de | v | C2 | /lɔːd/ | Critics lauded the film. | Les critiques ont fait l'éloge du film.
+to allot | attribuer, allouer | v | C2 | /əˈlɒt/ | Each speaker is allotted ten minutes. | Chaque intervenant dispose de dix minutes.
+to brandish | brandir | v | C2 | /ˈbrændɪʃ/ | He brandished a knife. | Il brandissait un couteau.
+to overlay | recouvrir, superposer | v | C2 | /ˌəʊvəˈleɪ/ | The wood is overlaid with gold. | Le bois est recouvert d'or.
+to diffuse | diffuser, répandre | v | C2 | /dɪˈfjuːz/ | The light was diffused by the curtains. | La lumière était tamisée par les rideaux.
+to materialise | se concrétiser | v | C2 | /məˈtɪəriəlaɪz/ | The promised help never materialised. | L'aide promise ne s'est jamais concrétisée.
+to disperse | disperser, se disperser | v | C2 | /dɪˈspɜːs/ | The crowd dispersed slowly. | La foule s'est dispersée lentement.
+to stabilise | stabiliser | v | C1 | /ˈsteɪbəlaɪz/ | The patient's condition has stabilised. | L'état du patient s'est stabilisé.
+to succumb | succomber | v | C2 | /səˈkʌm/ | He succumbed to temptation. | Il a succombé à la tentation.
+to glory in | se glorifier de, savourer | v | C2 | /ˈɡlɔːri ɪn/ | He gloried in his success. | Il savourait son succès.
+to prolong | prolonger | v | C2 | /prəˈlɒŋ/ | Don't prolong the agony. | Ne prolonge pas le supplice.
+to pressurise | faire pression sur | v | C2 | /ˈpreʃəraɪz/ | Don't let them pressurise you. | Ne te laisse pas mettre la pression.
+to frolic | gambader | v | C2 | /ˈfrɒlɪk/ | Lambs frolicked in the field. | Des agneaux gambadaient dans le pré.
+to sidestep | éluder, esquiver | v | C2 | /ˈsaɪdstep/ | He sidestepped the question. | Il a éludé la question.
+to correlate | être en corrélation | v | C2 | /ˈkɒrəleɪt/ | Income correlates with health. | Le revenu est corrélé à la santé.
+to mesh | s'accorder, s'engrener | v | C2 | /meʃ/ | Their ideas didn't mesh. | Leurs idées ne concordaient pas.
+to perch | se percher | v | C2 | /pɜːtʃ/ | A bird perched on the minaret. | Un oiseau s'est perché sur le minaret.
+to solicit | solliciter | v | C2 | /səˈlɪsɪt/ | They solicited donations for the mosque. | Ils ont sollicité des dons pour la mosquée.
+to herald | annoncer | v | C2 | /ˈherəld/ | The crescent heralds the start of Ramadan. | Le croissant de lune annonce le début du ramadan.
+to induce | provoquer, inciter | v | C2 | /ɪnˈdjuːs/ | The drug may induce sleep. | Le médicament peut provoquer le sommeil.
+to rebound | rebondir | v | C2 | /rɪˈbaʊnd/ | The ball rebounded off the wall. | La balle a rebondi sur le mur.
+to unnerve | déstabiliser, troubler | v | C2 | /ˌʌnˈnɜːv/ | The silence unnerved him. | Le silence le troublait.
+to protrude | dépasser, saillir | v | C2 | /prəˈtruːd/ | A nail protruded from the wall. | Un clou dépassait du mur.
+to demystify | démystifier | v | C2 | /ˌdiːˈmɪstɪfaɪ/ | The book demystifies Islamic finance. | Le livre démystifie la finance islamique.
+to topple | renverser, basculer | v | C2 | /ˈtɒpl/ | The protests toppled the government. | Les manifestations ont renversé le gouvernement.
+to clinch | décrocher, conclure | v | C2 | /klɪntʃ/ | They clinched the deal. | Ils ont conclu l'affaire.
+to splinter | se fendre, éclater | v | C2 | /ˈsplɪntə/ | The wood splintered. | Le bois a éclaté.
+to reproach | reprocher | v | C2 | /rɪˈprəʊtʃ/ | She reproached him for his laziness. | Elle lui a reproché sa paresse.
+to dissemble | dissimuler | v | C2 | /dɪˈsembl/ | He tried to dissemble his fear. | Il tentait de dissimuler sa peur.
+to mangle | broyer, mutiler | v | C2 | /ˈmæŋɡl/ | The car was mangled in the crash. | La voiture a été broyée dans l'accident.
+to stultify | abrutir, étouffer | v | C2 | /ˈstʌltɪfaɪ/ | Routine can stultify the mind. | La routine peut abrutir l'esprit.
+to wallow | se vautrer, se complaire | v | C2 | /ˈwɒləʊ/ | Don't wallow in self-pity. | Ne te complais pas dans l'apitoiement sur toi-même.
+to wane | décliner | v | C2 | /weɪn/ | His popularity is waning. | Sa popularité décline.
+to detract from | diminuer, nuire à | v | C2 | /dɪˈtrækt frəm/ | The mistakes don't detract from the book's value. | Les erreurs n'enlèvent rien à la valeur du livre.
+to deprecate | désapprouver | v | C2 | /ˈdeprəkeɪt/ | He deprecates violence of any kind. | Il désapprouve toute forme de violence.
+to revile | injurier, vilipender | v | C2 | /rɪˈvaɪl/ | He was reviled by the press. | Il a été vilipendé par la presse.
+to flit | voleter | v | C2 | /flɪt/ | Butterflies flitted among the flowers. | Des papillons voletaient parmi les fleurs.
+to emulate | imiter, prendre pour modèle | v | C2 | /ˈemjuleɪt/ | Muslims try to emulate the Prophet. | Les musulmans s'efforcent de suivre l'exemple du Prophète.
+to disparage | dénigrer | v | C2 | /dɪˈspærɪdʒ/ | Don't disparage other religions. | Ne dénigre pas les autres religions.
+to huddle | se blottir | v | C2 | /ˈhʌdl/ | We huddled around the fire. | Nous nous sommes blottis autour du feu.
+to contrive | combiner, réussir à | v | C2 | /kənˈtraɪv/ | She contrived to meet him. | Elle s'est arrangée pour le rencontrer.
+to gravitate | graviter, être attiré | v | C2 | /ˈɡrævɪteɪt/ | Young people gravitate towards cities. | Les jeunes sont attirés par les villes.
+to adhere to | adhérer à, respecter | v | C2 | /ədˈhɪə tə/ | We must adhere to the rules. | Nous devons respecter les règles.
+to prise | forcer (pour ouvrir) | v | C2 | /praɪz/ | He prised open the box. | Il a forcé la boîte.
+to consign | reléguer ; confier | v | C2 | /kənˈsaɪn/ | The old books were consigned to the attic. | Les vieux livres ont été relégués au grenier.
+to edify | édifier (moralement) | v | C2 | /ˈedɪfaɪ/ | These stories are meant to edify. | Ces histoires visent à édifier.
+to romp | s'ébattre ; gagner haut la main | v | C2 | /rɒmp/ | The children romped in the garden. | Les enfants s'ébattaient dans le jardin.
+to ingratiate oneself | s'insinuer dans les bonnes grâces | v | C2 | /ɪnˈɡreɪʃieɪt wʌnself/ | He tried to ingratiate himself with the boss. | Il essayait de s'attirer les bonnes grâces du patron.
+to shimmer | miroiter, chatoyer | v | C2 | /ˈʃɪmə/ | The sea shimmered in the moonlight. | La mer miroitait au clair de lune.
+to swivel | pivoter | v | C2 | /ˈswɪvl/ | She swivelled round in her chair. | Elle a pivoté sur sa chaise.
+to quiver | frémir, trembler | v | C2 | /ˈkwɪvə/ | Her voice quivered with emotion. | Sa voix tremblait d'émotion.
+to dampen | humidifier ; refroidir (l'enthousiasme) | v | C2 | /ˈdæmpən/ | The rain didn't dampen our spirits. | La pluie n'a pas entamé notre moral.
+to singe | roussir | v | C2 | /sɪndʒ/ | The iron singed my shirt. | Le fer a roussi ma chemise.
+to embed | encastrer, intégrer | v | C2 | /ɪmˈbed/ | The values are embedded in our culture. | Ces valeurs sont ancrées dans notre culture.
+to brim with | déborder de | v | C2 | /ˈbrɪm wɪð/ | Her eyes brimmed with tears. | Ses yeux étaient pleins de larmes.
+to resound | résonner, retentir | v | C2 | /rɪˈzaʊnd/ | The call to prayer resounded through the city. | L'appel à la prière résonnait dans toute la ville.
+to suffuse | baigner, envahir | v | C2 | /səˈfjuːz/ | Light suffused the room. | La lumière baignait la pièce.
+to totter | chanceler | v | C2 | /ˈtɒtə/ | The baby tottered across the room. | Le bébé a traversé la pièce d'un pas chancelant.
+to abhor | abhorrer, avoir horreur de | v | C2 | /əbˈhɔː/ | God abhors injustice. | Dieu a horreur de l'injustice.
+to feign | feindre | v | C2 | /feɪn/ | He feigned illness to miss school. | Il a feint d'être malade pour manquer l'école.
+to cosset | dorloter | v | C2 | /ˈkɒsɪt/ | She cosseted her children. | Elle dorlotait ses enfants.
+to banish | bannir, exiler | v | C2 | /ˈbænɪʃ/ | Banish such thoughts from your mind. | Chasse ces pensées de ton esprit.
+to tantalise | tenter, faire miroiter | v | C2 | /ˈtæntəlaɪz/ | The smell of food tantalised us. | L'odeur de la nourriture nous mettait l'eau à la bouche.
+to collide | entrer en collision | v | C2 | /kəˈlaɪd/ | Two cars collided at the junction. | Deux voitures sont entrées en collision au carrefour.
+to interweave | entrelacer | v | C2 | /ˌɪntəˈwiːv/ | The novel interweaves several stories. | Le roman entrelace plusieurs histoires.
+to hamper | entraver, gêner | v | C2 | /ˈhæmpə/ | Bad weather hampered the rescue. | Le mauvais temps a entravé les secours.
+to assimilate | assimiler | v | C2 | /əˈsɪməleɪt/ | It takes time to assimilate new ideas. | Il faut du temps pour assimiler de nouvelles idées.
+to intersperse | parsemer, entrecouper | v | C2 | /ˌɪntəˈspɜːs/ | The talk was interspersed with jokes. | La conférence était entrecoupée de blagues.
+to coax | amadouer, persuader | v | C2 | /kəʊks/ | She coaxed the cat out of the tree. | Elle a persuadé le chat de descendre de l'arbre.
+to hoist | hisser | v | C2 | /hɔɪst/ | They hoisted the flag. | Ils ont hissé le drapeau.
+to ruminate | ruminer, méditer | v | C2 | /ˈruːmɪneɪt/ | He ruminated on the meaning of life. | Il méditait sur le sens de la vie.
+to squirm | se tortiller ; être mal à l'aise | v | C2 | /skwɜːm/ | The question made him squirm. | La question l'a mis mal à l'aise.
+to embody | incarner | v | C2 | /ɪmˈbɒdi/ | The Prophet embodied the teachings of the Qur'an. | Le Prophète incarnait les enseignements du Coran.
+to skew | fausser | v | C2 | /skjuː/ | The small sample skewed the results. | L'échantillon réduit a faussé les résultats.
+to subsist | subsister | v | C2 | /səbˈsɪst/ | They subsisted on bread and dates. | Ils subsistaient avec du pain et des dattes.
+to adulterate | frelater | v | C2 | /əˈdʌltəreɪt/ | The honey was adulterated with sugar. | Le miel était frelaté avec du sucre.
+to patronise | traiter avec condescendance | v | C2 | /ˈpætrənaɪz/ | Don't patronise me! | Ne me prends pas de haut !
+to deaden | atténuer, amortir | v | C2 | /ˈdedn/ | The drug deadened the pain. | Le médicament a atténué la douleur.
+to reverberate | résonner, se répercuter | v | C2 | /rɪˈvɜːbəreɪt/ | His voice reverberated in the hall. | Sa voix résonnait dans la salle.
+to remonstrate | protester | v | C2 | /ˈremənstreɪt/ | He remonstrated with the referee. | Il a protesté auprès de l'arbitre.
+to escalate | s'intensifier, dégénérer | v | C1 | /ˈeskəleɪt/ | The conflict escalated quickly. | Le conflit s'est rapidement intensifié.
+to pinpoint | localiser précisément, cerner | v | C1 | /ˈpɪnpɔɪnt/ | Can you pinpoint the problem? | Peux-tu cerner le problème précisément ?
+to revert | revenir (à un état antérieur) | v | C2 | /rɪˈvɜːt/ | He reverted to his old habits. | Il est revenu à ses vieilles habitudes.
+to vie | rivaliser | v | C2 | /vaɪ/ | The two teams vied for first place. | Les deux équipes se disputaient la première place.
+to inflict | infliger | v | C1 | /ɪnˈflɪkt/ | The storm inflicted heavy damage. | La tempête a infligé de lourds dégâts.
+to fling | lancer, jeter | v | C2 | /flɪŋ/ | Don't fling your clothes on the floor. | Ne jette pas tes vêtements par terre.
+to nip | pincer ; faire un saut | v | C1 | /nɪp/ | I'll nip to the shop for some bread. | Je fais un saut au magasin pour du pain.
+to perish | périr | v | C2 | /ˈperɪʃ/ | Everything on earth will perish. | Tout ce qui est sur terre périra.
+to relish | savourer | v | C1 | /ˈrelɪʃ/ | He relished the challenge. | Il a savouré le défi.
+to shred | déchiqueter ; râper | v | C1 | /ʃred/ | Shred the documents before throwing them away. | Déchiquette les documents avant de les jeter.
+to intimidate | intimider | v | C1 | /ɪnˈtɪmɪdeɪt/ | Don't let him intimidate you. | Ne te laisse pas intimider par lui.
+to ascertain | établir, s'assurer de | v | C2 | /ˌæsəˈteɪn/ | The police are trying to ascertain the facts. | La police tente d'établir les faits.
+to whine | geindre, pleurnicher | v | C1 | /waɪn/ | Stop whining and do your homework! | Arrête de pleurnicher et fais tes devoirs !
+to withhold | retenir, refuser | v | C2 | /wɪðˈhəʊld/ | Never withhold important information. | Ne dissimule jamais des informations importantes.
+to fret | se tracasser | v | C2 | /fret/ | Don't fret, it will be fine. | Ne te tracasse pas, tout ira bien.
+to tweak | peaufiner, ajuster | v | C1 | /twiːk/ | We tweaked the design a little. | Nous avons légèrement ajusté le design.
+to wiggle | remuer, tortiller | v | C1 | /ˈwɪɡl/ | Wiggle your toes. | Remue tes orteils.
+to attest to | attester, témoigner de | v | C2 | /əˈtest tə/ | The ruins attest to a great civilisation. | Les ruines témoignent d'une grande civilisation.
+to avenge | venger | v | C2 | /əˈvendʒ/ | He swore to avenge his brother. | Il a juré de venger son frère.
+to brighten | égayer, s'éclaircir | v | C1 | /ˈbraɪtn/ | Flowers brighten up the room. | Les fleurs égaient la pièce.
+to fathom | comprendre, sonder | v | C2 | /ˈfæðəm/ | I can't fathom why he did it. | Je n'arrive pas à comprendre pourquoi il l'a fait.
+to prod | piquer, inciter | v | C2 | /prɒd/ | She prodded him to apologise. | Elle l'a poussé à s'excuser.
+to stomp | marcher d'un pas lourd | v | C1 | /stɒmp/ | He stomped out of the room. | Il est sorti de la pièce d'un pas rageur.
+to ascend | monter, s'élever | v | C2 | /əˈsend/ | They ascended the mountain at dawn. | Ils ont gravi la montagne à l'aube.
+to relive | revivre | v | C1 | /ˌriːˈlɪv/ | He relives the accident in his dreams. | Il revit l'accident dans ses rêves.
+to seduce | séduire | v | C1 | /sɪˈdjuːs/ | Don't be seduced by easy money. | Ne te laisse pas séduire par l'argent facile.
+to shun | fuir, éviter | v | C2 | /ʃʌn/ | He shuns publicity. | Il fuit la publicité.
+to budge | bouger, céder | v | C1 | /bʌdʒ/ | The door wouldn't budge. | La porte ne voulait pas bouger.
+to downgrade | rétrograder, déclasser | v | C2 | /ˌdaʊnˈɡreɪd/ | The storm was downgraded. | La tempête a été déclassée.
+to partake | prendre part ; partager (un repas) | v | C2 | /pɑːˈteɪk/ | They invited us to partake of the meal. | Ils nous ont invités à partager le repas.
+to enlighten | éclairer, instruire | v | C2 | /ɪnˈlaɪtn/ | Can you enlighten me on this subject? | Peux-tu m'éclairer sur ce sujet ?
+to reconstruct | reconstruire, reconstituer | v | C1 | /ˌriːkənˈstrʌkt/ | Police reconstructed the crime. | La police a reconstitué le crime.
+to squirt | gicler, faire gicler | v | C1 | /skwɜːt/ | He squirted water at his brother. | Il a aspergé son frère d'eau.
+to entail | impliquer, entraîner | v | C2 | /ɪnˈteɪl/ | The job entails a lot of travel. | Le poste implique beaucoup de déplacements.
+to trot | trotter | v | C1 | /trɒt/ | The horse trotted along the road. | Le cheval trottait le long de la route.
+to wield | manier ; exercer (le pouvoir) | v | C2 | /wiːld/ | The king wielded great power. | Le roi exerçait un grand pouvoir.
+to affirm | affirmer | v | C2 | /əˈfɜːm/ | He affirmed his belief in one God. | Il a affirmé sa foi en un Dieu unique.
+to appease | apaiser | v | C2 | /əˈpiːz/ | They tried to appease the angry crowd. | Ils ont tenté d'apaiser la foule en colère.
+to enlarge | agrandir | v | B2 | /ɪnˈlɑːdʒ/ | Can you enlarge this photo? | Peux-tu agrandir cette photo ?
+to equate | assimiler, mettre sur le même plan | v | C2 | /iˈkweɪt/ | Don't equate wealth with happiness. | N'assimile pas la richesse au bonheur.
+to swoop | fondre sur, piquer | v | C2 | /swuːp/ | The eagle swooped on its prey. | L'aigle a fondu sur sa proie.
+to confer | conférer ; s'entretenir | v | C2 | /kənˈfɜː/ | The judges conferred before deciding. | Les juges se sont concertés avant de décider.
+to counteract | contrebalancer, neutraliser | v | C2 | /ˌkaʊntərˈækt/ | Exercise counteracts stress. | L'exercice contrebalance le stress.
+to deepen | approfondir, s'approfondir | v | C1 | /ˈdiːpən/ | Reading deepens your knowledge. | La lecture approfondit tes connaissances.
+to intersect | se croiser | v | C2 | /ˌɪntəˈsekt/ | The two roads intersect here. | Les deux routes se croisent ici.
+to renounce | renoncer à, abjurer | v | C2 | /rɪˈnaʊns/ | He renounced his wealth. | Il a renoncé à sa fortune.
+to dilute | diluer | v | C2 | /daɪˈluːt/ | Dilute the juice with water. | Dilue le jus avec de l'eau.
+to streamline | rationaliser, simplifier | v | C2 | /ˈstriːmlaɪn/ | We need to streamline the process. | Nous devons simplifier la procédure.
+to abate | diminuer, s'apaiser | v | C2 | /əˈbeɪt/ | The storm finally abated. | La tempête s'est enfin apaisée.
+to abjure | abjurer, renier | v | C2 | /əbˈdʒʊə/ | He abjured violence. | Il a renoncé à la violence.
+to abscond | s'enfuir, disparaître | v | C2 | /əbˈskɒnd/ | The treasurer absconded with the funds. | Le trésorier a disparu avec les fonds.
+to belie | démentir, masquer | v | C2 | /bɪˈlaɪ/ | His smile belied his fear. | Son sourire masquait sa peur.
+to burgeon | s'épanouir, croître rapidement | v | C2 | /ˈbɜːdʒən/ | The city's population burgeoned. | La population de la ville a explosé.
+to cajole | enjôler, cajoler | v | C2 | /kəˈdʒəʊl/ | She cajoled him into helping. | Elle l'a persuadé de l'aider à force de cajoleries.
+to castigate | fustiger | v | C2 | /ˈkæstɪɡeɪt/ | The report castigated the government. | Le rapport a fustigé le gouvernement.
+to coalesce | s'unir, fusionner | v | C2 | /ˌkəʊəˈles/ | The groups coalesced into one movement. | Les groupes ont fusionné en un seul mouvement.
+to confound | déconcerter ; confondre | v | C2 | /kənˈfaʊnd/ | The results confounded the experts. | Les résultats ont déconcerté les experts.
+to debilitate | affaiblir, débiliter | v | C2 | /dɪˈbɪlɪteɪt/ | The illness debilitated him. | La maladie l'a affaibli.
+to denigrate | dénigrer | v | C2 | /ˈdenɪɡreɪt/ | Don't denigrate other people's work. | Ne dénigre pas le travail des autres.
+to digress | faire une digression | v | C2 | /daɪˈɡres/ | Sorry, I digress. | Pardon, je m'égare.
+to enervate | affaiblir, épuiser | v | C2 | /ˈenəveɪt/ | The heat enervated us. | La chaleur nous a épuisés.
+to extol | exalter, vanter | v | C2 | /ɪkˈstəʊl/ | He extolled the virtues of patience. | Il a vanté les vertus de la patience.
+to mollify | apaiser, calmer | v | C2 | /ˈmɒlɪfaɪ/ | He tried to mollify his angry wife. | Il a essayé d'apaiser sa femme en colère.
+to obfuscate | obscurcir, embrouiller | v | C2 | /ˈɒbfʌskeɪt/ | Politicians often obfuscate the truth. | Les politiciens obscurcissent souvent la vérité.
+to palliate | pallier, atténuer | v | C2 | /ˈpælieɪt/ | The drug palliates the pain. | Le médicament atténue la douleur.
+to renege | revenir sur (sa parole) | v | C2 | /rɪˈneɪɡ/ | He reneged on his promise. | Il est revenu sur sa promesse.
+to vacillate | vaciller, hésiter | v | C2 | /ˈvæsəleɪt/ | He vacillated between two choices. | Il hésitait entre deux choix.
+to vilify | calomnier, diffamer | v | C2 | /ˈvɪlɪfaɪ/ | The press vilified him. | La presse l'a calomnié.
+to abase oneself | s'abaisser, s'humilier | v | C2 | /əˈbeɪs wʌnself/ | He refused to abase himself before the king. | Il a refusé de s'abaisser devant le roi.
+to adumbrate | esquisser, annoncer | v | C2 | /ˈædʌmbreɪt/ | The report adumbrates future reforms. | Le rapport esquisse de futures réformes.
+to aggrandise | agrandir, exalter | v | C2 | /əˈɡrændaɪz/ | He used his position to aggrandise himself. | Il s'est servi de sa position pour se mettre en valeur.
+to amalgamate | fusionner, amalgamer | v | C2 | /əˈmælɡəmeɪt/ | The two schools were amalgamated. | Les deux écoles ont fusionné.
+to appraise | évaluer, estimer | v | C2 | /əˈpreɪz/ | The jeweller appraised the ring. | Le bijoutier a estimé la bague.
+to apprise | informer | v | C2 | /əˈpraɪz/ | Keep me apprised of any changes. | Tiens-moi informé de tout changement.
+to assail | assaillir | v | C2 | /əˈseɪl/ | He was assailed by doubts. | Il était assailli de doutes.
+to attenuate | atténuer | v | C2 | /əˈtenjueɪt/ | The walls attenuate the noise. | Les murs atténuent le bruit.
+to avow | déclarer, avouer | v | C2 | /əˈvaʊ/ | He avowed his love for her. | Il lui a déclaré son amour.
+to beguile | séduire, envoûter | v | C2 | /bɪˈɡaɪl/ | She was beguiled by his charm. | Elle a été séduite par son charme.
+to belabour | s'étendre sur, ressasser | v | C2 | /bɪˈleɪbə/ | I won't belabour the point. | Je ne m'étendrai pas sur ce point.
+to belittle | rabaisser, minimiser | v | C2 | /bɪˈlɪtl/ | Don't belittle his efforts. | Ne minimise pas ses efforts.
+to bemoan | déplorer, se lamenter sur | v | C2 | /bɪˈməʊn/ | He bemoaned the lack of support. | Il déplorait le manque de soutien.
+to berate | réprimander sévèrement | v | C2 | /bɪˈreɪt/ | She berated him for being late. | Elle l'a sévèrement réprimandé pour son retard.
+to beseech | implorer | v | C2 | /bɪˈsiːtʃ/ | I beseech you to forgive him. | Je t'implore de lui pardonner.
+to buttress | étayer, renforcer | v | C2 | /ˈbʌtrəs/ | He buttressed his argument with facts. | Il a étayé son argument par des faits.
+to capitulate | capituler | v | C2 | /kəˈpɪtʃuleɪt/ | The army finally capitulated. | L'armée a fini par capituler.
+to chastise | châtier, réprimander | v | C2 | /tʃæˈstaɪz/ | He was chastised for his rudeness. | Il a été réprimandé pour sa grossièreté.
+to chide | gronder, réprimander | v | C2 | /tʃaɪd/ | She chided him for forgetting. | Elle l'a grondé pour son oubli.
+to coerce | contraindre | v | C2 | /kəʊˈɜːs/ | He was coerced into signing. | Il a été contraint de signer.
+to condescend | condescendre, daigner | v | C2 | /ˌkɒndɪˈsend/ | He condescended to speak to us. | Il a daigné nous adresser la parole.
+to countenance | admettre, tolérer | v | C2 | /ˈkaʊntənəns/ | I won't countenance such behaviour. | Je ne tolérerai pas un tel comportement.
+to covet | convoiter | v | C2 | /ˈkʌvɪt/ | Do not covet what belongs to others. | Ne convoite pas ce qui appartient aux autres.
+to cower | se recroqueviller (de peur) | v | C2 | /ˈkaʊə/ | The dog cowered in the corner. | Le chien se recroquevillait dans le coin.
+to culminate | culminer, aboutir | v | C2 | /ˈkʌlmɪneɪt/ | The festival culminates with a concert. | Le festival culmine avec un concert.
+to debase | avilir, dévaloriser | v | C2 | /dɪˈbeɪs/ | Greed debases the soul. | La cupidité avilit l'âme.
+to deign | daigner | v | C2 | /deɪn/ | She didn't deign to reply. | Elle n'a pas daigné répondre.
+to deplore | déplorer | v | C2 | /dɪˈplɔː/ | We deplore all forms of violence. | Nous déplorons toute forme de violence.
+to disavow | désavouer | v | C2 | /ˌdɪsəˈvaʊ/ | He disavowed the statement. | Il a désavoué la déclaration.
+to dispel | dissiper | v | C2 | /dɪˈspel/ | Knowledge dispels ignorance. | Le savoir dissipe l'ignorance.
+to dissipate | se dissiper ; dilapider | v | C2 | /ˈdɪsɪpeɪt/ | The fog dissipated in the morning. | Le brouillard s'est dissipé dans la matinée.
+to distend | distendre, dilater | v | C2 | /dɪˈstend/ | His stomach was distended. | Son ventre était distendu.
+to abort | interrompre, annuler | v | C1 | /əˈbɔːt/ | They had to abort the mission. | Ils ont dû annuler la mission.
+to attest | attester, témoigner de | v | C1 | /əˈtest/ | Many witnesses attest to his honesty. | De nombreux témoins attestent de son honnêteté.
+to deflect | détourner, faire dévier | v | C1 | /dɪˈflekt/ | He tried to deflect criticism. | Il a essayé de détourner les critiques.
+to envision | envisager, imaginer | v | C1 | /ɪnˈvɪʒn/ | I envision a future without poverty. | J'imagine un avenir sans pauvreté.
+to diversify | diversifier | v | C1 | /daɪˈvɜːsɪfaɪ/ | Farmers need to diversify their crops. | Les agriculteurs doivent diversifier leurs cultures.
+to intensify | intensifier | v | B2 | /ɪnˈtensɪfaɪ/ | The storm will intensify tonight. | La tempête va s'intensifier cette nuit.
+to propel | propulser | v | C1 | /prəˈpel/ | Steam propels the engine. | La vapeur propulse la locomotive.
+to strut | se pavaner | v | C2 | /strʌt/ | He struts around like a peacock. | Il se pavane comme un paon.
+to swirl | tourbillonner | v | C1 | /swɜːl/ | Leaves swirl in the wind. | Les feuilles tourbillonnent dans le vent.
+to deteriorate | se détériorer | v | B2 | /dɪˈtɪəriəreɪt/ | His health began to deteriorate. | Sa santé a commencé à se détériorer.
+to grunt | grogner | v | C1 | /ɡrʌnt/ | He grunts instead of answering. | Il grogne au lieu de répondre.
+to ratchet up | augmenter progressivement | v | C2 | /ˈrætʃɪt ˈʌp/ | They ratchet up the pressure every day. | Ils augmentent la pression chaque jour.
+to regenerate | (se) régénérer | v | C1 | /rɪˈdʒenəreɪt/ | The liver can regenerate itself. | Le foie peut se régénérer.
+to sever | couper, rompre | v | C1 | /ˈsevə/ | They severed all ties with him. | Ils ont rompu tout lien avec lui.
+to sharpen | aiguiser, tailler | v | B2 | /ˈʃɑːpən/ | Sharpen the knife before cooking. | Aiguise le couteau avant de cuisiner.
+to thrash | rouer de coups ; battre à plates coutures | v | C1 | /θræʃ/ | Our team thrashes them every year. | Notre équipe les bat à plates coutures chaque année.
+to avert | éviter, détourner | v | C1 | /əˈvɜːt/ | Quick action averted a disaster. | Une action rapide a évité une catastrophe.
+to chime | sonner, carillonner | v | C1 | /tʃaɪm/ | The clock chimes every hour. | L'horloge sonne toutes les heures.
+to delve into | fouiller, approfondir | v | C1 | /ˈdelv ˌɪntə/ | The book delves into the history of Andalusia. | Le livre approfondit l'histoire d'al-Andalus.
+to stoop | se pencher, se baisser ; s'abaisser | v | C1 | /stuːp/ | I would never stoop to lying. | Je ne m'abaisserais jamais à mentir.
+to vacate | quitter, libérer | v | C1 | /vəˈkeɪt/ | Guests must vacate the room by noon. | Les clients doivent libérer la chambre avant midi.
+to blacklist | mettre sur liste noire | v | C1 | /ˈblæklɪst/ | The company was blacklisted. | L'entreprise a été mise sur liste noire.
+to grapple with | se colleter avec, s'attaquer à | v | C1 | /ˈɡræpl wɪð/ | The country grapples with high unemployment. | Le pays est aux prises avec un fort chômage.
+to groan | gémir, grogner | v | C1 | /ɡrəʊn/ | He groans with pain. | Il gémit de douleur.
+to backfire | se retourner contre quelqu'un | v | C1 | /ˌbækˈfaɪə/ | His plan could backfire. | Son plan pourrait se retourner contre lui.
+to exhale | expirer | v | C1 | /eksˈheɪl/ | Inhale slowly, then exhale. | Inspire lentement, puis expire.
+to revel in | se délecter de | v | C2 | /ˈrevl ɪn/ | He revels in the attention. | Il se délecte de l'attention qu'on lui porte.
+to shudder | frissonner, frémir | v | C1 | /ˈʃʌdə/ | I shudder to think what might happen. | Je frémis à l'idée de ce qui pourrait arriver.
+to sully | souiller, ternir | v | C2 | /ˈsʌli/ | Don't sully your reputation. | Ne ternis pas ta réputation.
+to clasp | serrer, étreindre | v | C1 | /klɑːsp/ | She clasps her hands in prayer. | Elle joint les mains pour prier.
+to lurk | rôder, se cacher | v | C1 | /lɜːk/ | Danger lurks in the shadows. | Le danger rôde dans l'ombre.
+to maximise | maximiser | v | C1 | /ˈmæksɪmaɪz/ | We want to maximise profits. | Nous voulons maximiser les bénéfices.
+to plunder | piller | v | C1 | /ˈplʌndə/ | The invaders plundered the city. | Les envahisseurs ont pillé la ville.
+to retaliate | riposter, user de représailles | v | C1 | /rɪˈtælieɪt/ | The army retaliated with air strikes. | L'armée a riposté par des frappes aériennes.
+to rouse | réveiller ; susciter | v | C1 | /raʊz/ | The call to prayer rouses the town. | L'appel à la prière réveille la ville.
+to impart | transmettre, communiquer | v | C2 | /ɪmˈpɑːt/ | Teachers impart knowledge. | Les enseignants transmettent le savoir.
+to obstruct | obstruer, entraver | v | C1 | /əbˈstrʌkt/ | Don't obstruct the exit. | N'obstrue pas la sortie.
+to toggle | basculer (entre deux options) | v | C1 | /ˈtɒɡl/ | Press here to toggle between languages. | Appuie ici pour basculer d'une langue à l'autre.
+to beset | assaillir, accabler | v | C2 | /bɪˈset/ | The project is beset with problems. | Le projet est assailli de problèmes.
+to regroup | se regrouper, se réorganiser | v | C1 | /ˌriːˈɡruːp/ | The team regroups after the defeat. | L'équipe se réorganise après la défaite.
+to resurrect | ressusciter, faire revivre | v | C1 | /ˌrezəˈrekt/ | They want to resurrect old traditions. | Ils veulent faire revivre de vieilles traditions.
+to subdue | maîtriser, soumettre | v | C1 | /səbˈdjuː/ | Police subdued the attacker. | La police a maîtrisé l'agresseur.
+to coexist | coexister | v | C1 | /ˌkəʊɪɡˈzɪst/ | Different faiths coexist in the city. | Différentes religions coexistent dans la ville.
+to convene | convoquer, se réunir | v | C1 | /kənˈviːn/ | The council will convene next week. | Le conseil se réunira la semaine prochaine.
+to dredge | draguer (un fond) | v | C2 | /dredʒ/ | They dredge the harbour every year. | Ils draguent le port chaque année.
+to drool | baver | v | C1 | /druːl/ | The baby drools when teeth come through. | Le bébé bave quand ses dents percent.
+to replenish | réapprovisionner, remplir | v | C1 | /rɪˈplenɪʃ/ | Drink water to replenish your body after fasting. | Bois de l'eau pour réhydrater ton corps après le jeûne.
+to smirk | sourire d'un air narquois | v | C1 | /smɜːk/ | Don't smirk at me! | Ne me fais pas ce sourire narquois !
+to configure | configurer | v | C1 | /kənˈfɪɡə/ | Configure the settings before use. | Configure les paramètres avant l'utilisation.
+to wobble | vaciller, branler | v | C1 | /ˈwɒbl/ | The bike wobbles on the gravel. | Le vélo vacille sur le gravier.
+to underscore | souligner | v | C1 | /ˌʌndəˈskɔː/ | The report underscores the need for reform. | Le rapport souligne la nécessité d'une réforme.
+to misread | mal interpréter | v | C1 | /ˌmɪsˈriːd/ | I misread the situation. | J'ai mal interprété la situation.
+to tether | attacher | v | C2 | /ˈteðə/ | Tether your camel and trust in Allah. | Attache ton chameau et place ta confiance en Allah.
+to whirl | tourbillonner, tournoyer | v | C1 | /wɜːl/ | The dancers whirl around the room. | Les danseurs tournoient dans la salle.
+to subvert | subvertir, saper | v | C2 | /səbˈvɜːt/ | They tried to subvert the government. | Ils ont essayé de saper le gouvernement.
+to caress | caresser | v | C1 | /kəˈres/ | The breeze caresses her face. | La brise caresse son visage.
+to oust | évincer | v | C2 | /aʊst/ | The board ousted the director. | Le conseil a évincé le directeur.
+to bask | se prélasser | v | C1 | /bɑːsk/ | Lizards bask in the sun. | Les lézards se prélassent au soleil.
+to befriend | se lier d'amitié avec | v | C1 | /bɪˈfrend/ | She befriends the new students. | Elle se lie d'amitié avec les nouveaux élèves.
+to hasten | hâter, accélérer | v | C2 | /ˈheɪsn/ | Hasten to do good deeds. | Hâte-toi de faire de bonnes actions.
+to smite | frapper, châtier | v | C2 | /smaɪt/ | God will smite the oppressors. | Dieu châtiera les oppresseurs.
+to dangle | pendre, balancer | v | C1 | /ˈdæŋɡl/ | His legs dangle over the edge. | Ses jambes pendent dans le vide.
+to flaunt | étaler, faire étalage de | v | C1 | /flɔːnt/ | Don't flaunt your wealth. | N'étale pas ta richesse.
+to flinch | tressaillir, sourciller | v | C1 | /flɪntʃ/ | He didn't flinch when the needle went in. | Il n'a pas sourcillé quand l'aiguille est entrée.
+to siphon | siphonner | v | C2 | /ˈsaɪfn/ | They siphon petrol from the tank. | Ils siphonnent l'essence du réservoir.
+to downplay | minimiser | v | C1 | /ˌdaʊnˈpleɪ/ | Don't downplay the danger. | Ne minimise pas le danger.
+to ensue | s'ensuivre | v | C2 | /ɪnˈsjuː/ | A long silence ensued. | Un long silence s'est ensuivi.
+to exterminate | exterminer | v | C2 | /ɪkˈstɜːmɪneɪt/ | They called in a company to exterminate the rats. | Ils ont fait venir une entreprise pour exterminer les rats.
+to faze | déconcerter | v | C2 | /feɪz/ | Nothing seems to faze her. | Rien ne semble la déconcerter.
+to hurl | lancer violemment | v | C1 | /hɜːl/ | Protesters hurl stones at the police. | Les manifestants lancent des pierres sur la police.
+to expend | dépenser, consacrer | v | C2 | /ɪkˈspend/ | Don't expend energy on trivial things. | Ne gaspille pas ton énergie pour des futilités.
+to fortify | fortifier | v | C2 | /ˈfɔːtɪfaɪ/ | Prayer fortifies the soul. | La prière fortifie l'âme.
+to heave | soulever (avec effort) | v | C1 | /hiːv/ | They heave the box onto the lorry. | Ils hissent le carton dans le camion.
+to maul | lacérer, malmener | v | C2 | /mɔːl/ | The hunter was mauled by a bear. | Le chasseur a été lacéré par un ours.
+to snub | snober | v | C1 | /snʌb/ | She snubs her old friends. | Elle snobe ses anciens amis.
+to spew | vomir, cracher | v | C2 | /spjuː/ | The factory spews smoke into the air. | L'usine crache de la fumée dans l'air.
+to wail | gémir, se lamenter | v | C1 | /weɪl/ | Islam forbids wailing over the dead. | L'islam interdit les lamentations sur les morts.
+to grandstand | jouer pour la galerie | v | C2 | /ˈɡrænstænd/ | Politicians love to grandstand. | Les politiciens adorent jouer pour la galerie.
+to quench | étancher, éteindre | v | C1 | /kwentʃ/ | Water quenches your thirst. | L'eau étanche la soif.
+to retort | rétorquer, riposter | v | C2 | /rɪˈtɔːt/ | "Mind your own business," she retorts. | « Occupe-toi de tes affaires », rétorque-t-elle.
+to tamper with | trafiquer, toucher à | v | C1 | /ˈtæmpə wɪð/ | Someone tampered with the lock. | Quelqu'un a trafiqué la serrure.
+to annihilate | anéantir | v | C2 | /əˈnaɪəleɪt/ | The army was annihilated. | L'armée a été anéantie.
+to darken | (s')assombrir | v | C1 | /ˈdɑːkən/ | The sky darkens before the storm. | Le ciel s'assombrit avant l'orage.
+to divest | se défaire de, priver | v | C2 | /daɪˈvest/ | The company divests its shares. | L'entreprise se défait de ses actions.
+to screech | crisser, hurler | v | C1 | /skriːtʃ/ | The car screeches to a halt. | La voiture s'arrête dans un crissement de pneus.
+to swoon | se pâmer | v | C2 | /swuːn/ | The fans swoon over the singer. | Les fans se pâment devant le chanteur.
+to entrust | confier | v | C1 | /ɪnˈtrʌst/ | They entrust their children to the school. | Ils confient leurs enfants à l'école.
+to populate | peupler | v | C1 | /ˈpɒpjuleɪt/ | Berbers populated North Africa first. | Les Berbères ont été les premiers à peupler l'Afrique du Nord.
+to cede | céder | v | C2 | /siːd/ | The country ceded territory after the war. | Le pays a cédé des territoires après la guerre.
+to quicken | accélérer | v | C2 | /ˈkwɪkən/ | Her heartbeat quickens. | Son cœur bat plus vite.
+to suffocate | suffoquer, étouffer | v | C1 | /ˈsʌfəkeɪt/ | The heat is suffocating. | La chaleur est étouffante.
+to tingle | picoter, fourmiller | v | C1 | /ˈtɪŋɡl/ | My fingers tingle with cold. | Mes doigts picotent à cause du froid.
+to cleave | fendre ; s'attacher à | v | C2 | /kliːv/ | Cleave to the truth. | Attache-toi à la vérité.
+to meddle | se mêler (de), s'immiscer | v | C1 | /ˈmedl/ | Don't meddle in other people's affairs. | Ne te mêle pas des affaires des autres.
+to overpower | maîtriser, terrasser | v | C1 | /ˌəʊvəˈpaʊə/ | The guards overpower the thief. | Les gardes maîtrisent le voleur.
+to ramble | divaguer ; se balader | v | C1 | /ˈræmbl/ | The old man rambles on about the past. | Le vieil homme radote sur le passé.
+to smother | étouffer ; couvrir | v | C1 | /ˈsmʌðə/ | Don't smother your children with attention. | N'étouffe pas tes enfants avec trop d'attention.
+to tarnish | ternir | v | C1 | /ˈtɑːnɪʃ/ | The scandal tarnished his reputation. | Le scandale a terni sa réputation.
+to holler | brailler, hurler | v | C2 | /ˈhɒlə/ | He hollers at the children. | Il braille après les enfants.
+to implore | implorer, supplier | v | C2 | /ɪmˈplɔː/ | She implores Allah for help. | Elle implore l'aide d'Allah.
+to necessitate | nécessiter | v | C2 | /nəˈsesɪteɪt/ | The injury necessitates surgery. | La blessure nécessite une opération.
+to overdo | exagérer, forcer | v | C1 | /ˌəʊvəˈduː/ | Don't overdo it at the gym. | N'en fais pas trop à la salle de sport.
+to snip | couper (aux ciseaux) | v | C1 | /snɪp/ | She snips the thread. | Elle coupe le fil d'un coup de ciseaux.
+to absolve | absoudre, disculper | v | C2 | /əbˈzɒlv/ | The court absolved him of blame. | Le tribunal l'a disculpé.
+to enslave | asservir, réduire en esclavage | v | C2 | /ɪnˈsleɪv/ | Greed enslaves the heart. | La cupidité asservit le cœur.
+to ingest | ingérer | v | C2 | /ɪnˈdʒest/ | The child ingested some bleach. | L'enfant a ingéré de l'eau de Javel.
+to spearhead | mener, être le fer de lance de | v | C2 | /ˈspɪəhed/ | She spearheads the campaign. | Elle est le fer de lance de la campagne.
+to squeal | pousser des cris aigus | v | C1 | /skwiːl/ | The children squeal with delight. | Les enfants poussent des cris de joie.
+to whittle | tailler (au couteau) ; réduire | v | C2 | /ˈwɪtl/ | They whittle the list down to five. | Ils réduisent la liste à cinq.
+to overreact | réagir de manière excessive | v | C1 | /ˌəʊvəriˈækt/ | Don't overreact; it's only a scratch. | Ne dramatise pas, ce n'est qu'une égratignure.
+to conspire | conspirer, comploter | v | C1 | /kənˈspaɪə/ | They conspired to overthrow the king. | Ils ont comploté pour renverser le roi.
+to outlast | survivre à, durer plus longtemps que | v | C2 | /ˌaʊtˈlɑːst/ | Good deeds outlast wealth. | Les bonnes actions durent plus longtemps que la richesse.
+to aggravate | aggraver ; agacer | v | C1 | /ˈæɡrəveɪt/ | Smoking aggravates asthma. | Le tabac aggrave l'asthme.
+to ooze | suinter | v | C1 | /uːz/ | Blood oozes from the wound. | Le sang suinte de la plaie.
+to sizzle | grésiller | v | C1 | /ˈsɪzl/ | The meat sizzles in the pan. | La viande grésille dans la poêle.
+to lurch | tanguer, faire une embardée | v | C2 | /lɜːtʃ/ | The boat lurches in the waves. | Le bateau tangue dans les vagues.
+to ruffle | ébouriffer ; froisser | v | C1 | /ˈrʌfl/ | He ruffles the boy's hair. | Il ébouriffe les cheveux du garçon.
+to seep | suinter, s'infiltrer | v | C1 | /siːp/ | Water seeps through the walls. | L'eau s'infiltre à travers les murs.
+to skyrocket | monter en flèche | v | C1 | /ˈskaɪrɒkɪt/ | Prices skyrocket before Eid. | Les prix montent en flèche avant l'Aïd.
+to crackle | crépiter | v | C1 | /ˈkrækl/ | The fire crackles in the hearth. | Le feu crépite dans l'âtre.
+to dally | traîner, lambiner | v | C2 | /ˈdæli/ | Don't dally on the way home. | Ne traîne pas en rentrant.
+to devolve | déléguer, transférer | v | C2 | /dɪˈvɒlv/ | Power devolves to local councils. | Le pouvoir est transféré aux conseils locaux.
+to dupe | duper | v | C2 | /djuːp/ | They dupe tourists into paying more. | Ils dupent les touristes pour qu'ils paient plus.
+to flounder | patauger, se débattre | v | C2 | /ˈflaʊndə/ | The economy is floundering. | L'économie patauge.
+to pamper | dorloter, choyer | v | C1 | /ˈpæmpə/ | Grandparents love to pamper their grandchildren. | Les grands-parents adorent choyer leurs petits-enfants.
+to precipitate | précipiter, provoquer | v | C2 | /prɪˈsɪpɪteɪt/ | The crisis precipitated his resignation. | La crise a précipité sa démission.
+to reciprocate | rendre la pareille | v | C2 | /rɪˈsɪprəkeɪt/ | She was kind, so he reciprocated. | Elle a été gentille, alors il lui a rendu la pareille.
+to amass | amasser | v | C2 | /əˈmæs/ | He amassed a huge fortune. | Il a amassé une immense fortune.
+to straddle | chevaucher, enjamber | v | C2 | /ˈstrædl/ | The city straddles two continents. | La ville est à cheval sur deux continents.
+to accentuate | accentuer, souligner | v | C2 | /əkˈsentʃueɪt/ | The lighting accentuates the arches. | L'éclairage met en valeur les arcades.
+to fester | s'envenimer, suppurer | v | C2 | /ˈfestə/ | Resentment festers if not addressed. | La rancœur s'envenime si on ne la traite pas.
+to offload | se décharger de, écouler | v | C2 | /ˌɒfˈləʊd/ | They offload their stock cheaply. | Ils écoulent leur stock à bas prix.
+to peddle | colporter | v | C2 | /ˈpedl/ | They peddle lies on social media. | Ils colportent des mensonges sur les réseaux sociaux.
+to pillage | piller | v | C2 | /ˈpɪlɪdʒ/ | The Mongols pillaged Baghdad. | Les Mongols ont pillé Bagdad.
+to reek | puer, empester | v | C2 | /riːk/ | The room reeks of smoke. | La pièce empeste la fumée.
+to shriek | hurler, pousser des cris perçants | v | C1 | /ʃriːk/ | The children shriek with laughter. | Les enfants hurlent de rire.
+to ascribe | attribuer | v | C2 | /əˈskraɪb/ | This saying is wrongly ascribed to the Prophet. | Cette parole est faussement attribuée au Prophète.
+to clothe | vêtir, habiller | v | C2 | /kləʊð/ | The charity clothes and feeds orphans. | L'association habille et nourrit des orphelins.
+to ricochet | ricocher | v | C2 | /ˈrɪkəʃeɪ/ | The ball ricochets off the wall. | La balle ricoche sur le mur.
+to waver | vaciller, hésiter | v | C1 | /ˈweɪvə/ | His faith never wavers. | Sa foi ne vacille jamais.
 `,
 );

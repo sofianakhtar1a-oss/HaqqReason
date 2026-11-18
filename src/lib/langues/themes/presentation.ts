@@ -226,5 +226,8 @@ etiquette | étiquette, savoir-vivre | n | C1 | /ˈetɪket/ | Business etiquette
 informal | familier, informel | adj | B1 | /ɪnˈfɔːml/ | Use "hi" in informal situations. | Utilise « hi » dans les situations familières.
 form of address | formule d'appel | n | C1 | /ˌfɔːm əv əˈdres/ | "Sir" is a polite form of address. | « Sir » est une formule polie pour s'adresser à quelqu'un.
 first-name terms | tutoiement, appeler par le prénom | n | B2 | /ˌfɜːst neɪm ˈtɜːmz/ | We're on first-name terms. | Nous nous appelons par nos prénoms.
+first language | langue maternelle | n | B2 | /ˌfɜːst ˈlæŋɡwɪdʒ/ | Her first language is Arabic. | Sa langue maternelle est l'arabe.
+namesake | homonyme | n | C2 | /ˈneɪmseɪk/ | He was named after his namesake grandfather. | Il porte le prénom de son grand-père.
+moniker | surnom | n | C2 | /ˈmɒnɪkə/ | He earned the moniker "the Lion". | Il a hérité du surnom « le Lion ».
 `,
 );

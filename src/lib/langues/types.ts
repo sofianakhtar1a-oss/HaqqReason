@@ -1,7 +1,7 @@
 /* Le Truchement : vocabulaire commun (données, moteur, interface, tests). */
 
 export type Niveau = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
-export type Nature = "nom" | "verbe" | "adjectif" | "adverbe" | "expression" | "préposition" | "pronom" | "conjonction";
+export type Nature = "nom" | "verbe" | "adjectif" | "adverbe" | "expression" | "préposition" | "pronom" | "conjonction" | "déterminant";
 
 /** Un mot ou une expression d'un thème. */
 export type Entree = {
