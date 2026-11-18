@@ -4,12 +4,14 @@ Un sixième espace, `/assistant` : **Chat général** et **ChatPDF**, avec Claud
 relie sa propre clé API Anthropic : toute sa consommation est facturée sur son compte, jamais
 sur celui du site. L'architecture complète est décrite dans [ASSISTANT.md](./ASSISTANT.md).
 
-## À faire une fois
+## Installation
 
-1. Supabase → **SQL Editor** → coller `supabase/migrations/016_assistant.sql` → **Run**.
-   On doit voir « Success. No rows returned ».
-2. Recommandé : Vercel → Settings → Environment Variables → ajouter `ASSISTANT_CLE_SECRET`
-   (32 caractères aléatoires au moins), puis redéployer.
+- Une seule étape : lancer `supabase/migrations/016_assistant.sql` dans Supabase (SQL Editor →
+  Run ; on doit voir « Success. No rows returned »). Tant qu'elle n'est pas lancée, la page indique
+  que Le Vizir ouvre bientôt, et le reste du site fonctionne normalement.
+- Rien à régler dans Vercel : la clé qui chiffre les clés des utilisateurs est dérivée de
+  `SESSION_SECRET`. Facultatif : une variable `ASSISTANT_CLE_SECRET` (32 caractères aléatoires
+  au moins) la rend indépendante de `SESSION_SECRET` ; les clés déjà enregistrées restent lisibles.
 
 ## Côté utilisateur
 

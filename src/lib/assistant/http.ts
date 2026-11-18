@@ -44,7 +44,7 @@ export async function lireCorps<T>(requete: Request, maxOctets: number): Promise
 
 export function erreurDonnees(e: unknown): NextResponse {
   if (e instanceof ErreurDonnees && e.raison === "installation") {
-    return refus(503, "installation", "L'assistant n'est pas encore installé sur ce site : le créateur doit lancer la migration 016 dans Supabase.");
+    return refus(503, "installation", "Le Vizir ouvre très bientôt : sa dernière étape d'installation est en cours. Reviens dans un moment.");
   }
   return refus(503, "indisponible", "La base de données ne répond pas. Réessaie dans un instant.");
 }

@@ -148,11 +148,11 @@ l'appel) et l'écran de la clé changeraient ; conversations, PDF, flux et suivi
 ## Installation
 
 1. Lancer `supabase/migrations/016_assistant.sql` dans Supabase (SQL Editor → Run). Tant que ce
-   n'est pas fait, la page indique que l'assistant arrive bientôt ; rien d'autre ne change.
-2. Recommandé : ajouter dans Vercel une variable `ASSISTANT_CLE_SECRET` (au moins 32 caractères
-   aléatoires, comme `SESSION_SECRET`). Les clés des utilisateurs survivent alors à un changement
-   de `SESSION_SECRET`. Une clé déjà enregistrée avec l'ancien réglage reste lisible.
-3. Aucune clé Anthropic n'est à fournir côté site.
+   n'est pas fait, la page indique que Le Vizir ouvre bientôt ; rien d'autre ne change.
+2. Rien d'autre : aucune clé Anthropic côté site, aucune variable obligatoire. La clé de
+   chiffrement est dérivée de `SESSION_SECRET`. Facultatif : `ASSISTANT_CLE_SECRET` (au moins
+   32 caractères aléatoires) la rend indépendante de `SESSION_SECRET` ; une clé déjà enregistrée
+   avec l'ancien réglage reste lisible.
 
 ## Les essais
 

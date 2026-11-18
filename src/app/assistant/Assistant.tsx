@@ -646,7 +646,7 @@ export function Assistant() {
           </>
         ) : (
           <>
-            <h2 className="aia-accueil-titre">{erreurEtat.code === "installation" ? "L'assistant arrive bientôt" : "L'assistant ne répond pas"}</h2>
+            <h2 className="aia-accueil-titre">{erreurEtat.code === "installation" ? "Encore un peu de patience" : "L'assistant ne répond pas"}</h2>
             <p className="aia-accueil-texte">{erreurEtat.message}</p>
             <button type="button" className="bouton bouton-discret" onClick={() => window.location.reload()}>
               Réessayer
