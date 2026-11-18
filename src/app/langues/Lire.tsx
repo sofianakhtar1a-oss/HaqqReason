@@ -3,7 +3,8 @@
 import { BookOpenText, FileText, LoaderCircle, Upload } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import { useArrivees } from "@/lib/client/synchro/useArrivees";
-import { type DocumentLangue, ecrire, effacer, listerDocuments, lireUn } from "@/lib/langues/stockage";
+import { type DocumentLangue, ecrire, ecrireBlob, effacer, listerDocuments, lireUn } from "@/lib/langues/stockage";
+import { cleOriginal } from "@/lib/langues/pdf";
 import { BoutonSupprimer, ChoixLangue } from "./communs";
 import { useTextes } from "@/lib/modules/textes-client";
 import { LiseusePdf } from "./LiseusePdf";
@@ -53,11 +54,18 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
     try {
       const { lirePdf } = await import("@/lib/langues/pdf");
       const pages = await lirePdf(f, (progression) => setLecture((l) => l && { ...l, progression }));
+      const id = nouvelId();
+      // Le fichier lui-même reste sur l'appareil : la liseuse peut montrer chaque page telle qu'elle a été composée.
+      const garde = await ecrireBlob(cleOriginal(id), f).then(
+        () => true,
+        () => false,
+      );
       const d: DocumentLangue = {
-        id: nouvelId(),
+        id,
         titre: f.name.replace(/\.pdf$/i, "").replace(/[_-]+/g, " ").trim() || "Sans titre",
         pages,
-        page: pages.find((p) => p.texte.length > 80)?.page ?? 1,
+        // Avec la mise en page d'origine, la lecture commence à la couverture.
+        page: garde ? 1 : (pages.find((p) => p.texte.length > 80)?.page ?? 1),
         ajouteLe: Date.now(),
         vu: Date.now(),
         traductions: {},
@@ -120,7 +128,7 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
           <Upload className="size-6 text-accent" aria-hidden="true" />
           <span>
             <strong>{t("lire.depot")}</strong>
-            <small>Le texte est lu sur ton appareil. Les PDF scannés (images seules) ne sont pas lisibles.</small>
+            <small>Le texte est lu sur ton appareil, et la mise en page d&apos;origine est conservée. Les PDF scannés (images seules) ne sont pas lisibles.</small>
           </span>
           <input type="file" accept="application/pdf,.pdf" className="sr-only" onChange={(e) => e.target.files?.[0] && void importer(e.target.files[0])} />
         </label>
@@ -160,7 +168,14 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
                   </span>
                 </span>
               </button>
-              <BoutonSupprimer nom={x.titre} onSupprimer={() => void effacer("documents", x.id).then(recharger)} />
+              <BoutonSupprimer
+                nom={x.titre}
+                onSupprimer={() =>
+                  void effacer("documents", x.id)
+                    .then(() => effacer("blobs", cleOriginal(x.id)).catch(() => undefined))
+                    .then(recharger)
+                }
+              />
             </li>
           ))}
         </ul>

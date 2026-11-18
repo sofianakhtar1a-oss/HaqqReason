@@ -3,18 +3,23 @@
 /* Le texte d'un PDF, page par page, lu dans le navigateur avec pdf.js (rien n'est envoyé). */
 import type { PageTexte } from "./stockage";
 
+/** Les ressources de pdf.js (polices, tables de caractères), servies par l'application. */
+export const OPTIONS_PDFJS = {
+  cMapUrl: "/vendor/pdfjs/cmaps/",
+  cMapPacked: true,
+  standardFontDataUrl: "/vendor/pdfjs/standard_fonts/",
+  wasmUrl: "/vendor/pdfjs/wasm/",
+  iccUrl: "/vendor/pdfjs/iccs/",
+  enableXfa: false,
+};
+
+/** Le fichier d'origine d'un PDF lu, gardé sur l'appareil (magasin « blobs », jamais envoyé). */
+export const cleOriginal = (id: string) => `pdf:${id}`;
+
 export async function lirePdf(f: File, avancer: (x: number) => void): Promise<PageTexte[]> {
   const { chargerPdfjs } = await import("@/lib/client/pdf");
   const pdfjs = await chargerPdfjs();
-  const tache = pdfjs.getDocument({
-    data: new Uint8Array(await f.arrayBuffer()),
-    cMapUrl: "/vendor/pdfjs/cmaps/",
-    cMapPacked: true,
-    standardFontDataUrl: "/vendor/pdfjs/standard_fonts/",
-    wasmUrl: "/vendor/pdfjs/wasm/",
-    iccUrl: "/vendor/pdfjs/iccs/",
-    enableXfa: false,
-  });
+  const tache = pdfjs.getDocument({ data: new Uint8Array(await f.arrayBuffer()), ...OPTIONS_PDFJS });
   try {
     const doc = await tache.promise;
     const pages: PageTexte[] = [];

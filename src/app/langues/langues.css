@@ -3344,3 +3344,176 @@ html[data-lg-transition]::view-transition-new(root) {
     display: none;
   }
 }
+
+/* ==========================================================================
+   Le Truchement — Lire : la page d'origine (PagePdfFidele)
+   La page est dessinée telle qu'elle a été composée ; les mots se touchent
+   sur une couche de texte invisible, posée exactement sur les lettres.
+   ========================================================================== */
+.lg-pdf-outils {
+  flex-wrap: wrap;
+}
+.lg-pdf-original {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  max-width: 46rem;
+  margin: 0 auto 1rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 1rem;
+  border: 1px dashed color-mix(in srgb, var(--accent) 55%, var(--trait));
+  background: color-mix(in srgb, var(--accent) 7%, var(--surface));
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+.lg-pdf-original:hover,
+.lg-pdf-original:focus-within {
+  border-style: solid;
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+}
+.lg-pdf-original span {
+  display: grid;
+  gap: 0.15rem;
+}
+.lg-pdf-original small {
+  color: var(--encre-douce);
+}
+.lg-pdf-fidele-cadre {
+  margin: 0 auto;
+}
+.lg-pdf-fidele-cadre .lg-pdf-folio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 0.9rem;
+}
+.lg-fidele-etat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}
+.lg-pdf-fideles {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.lg-pdf-fidele-col {
+  width: 100%;
+  max-width: 920px;
+  min-width: 0;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+.lg-pdf-fideles[data-regard] .lg-pdf-fidele-col {
+  flex: 1 1 0;
+}
+@media (max-width: 900px) {
+  .lg-pdf-fideles[data-regard] {
+    flex-direction: column;
+  }
+}
+/* La feuille : le dessin exact de la page, posé comme une feuille sur la table. */
+.lg-fidele {
+  position: relative;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow:
+    0 0 0 1px var(--trait),
+    0 1.6rem 3.2rem -1.8rem rgba(0, 0, 0, 0.55);
+  animation: lg-feuille 0.45s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+}
+@keyframes lg-feuille {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+}
+.lg-fidele-toile {
+  display: block;
+}
+.lg-fidele .textLayer :is(span, br) {
+  cursor: pointer;
+}
+.lg-fidele-surlignes {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.lg-fidele-surlignes > span {
+  position: absolute;
+  border-radius: 2px;
+  background: color-mix(in srgb, #7cc8f2 22%, transparent);
+  mix-blend-mode: multiply;
+}
+.lg-fidele-surlignes > span[data-mot] {
+  background: color-mix(in srgb, #7cc8f2 55%, transparent);
+}
+.lg-fidele-surlignes > .lg-fidele-marqueur {
+  background: none;
+}
+/* La traduction, à la place du texte d'origine : même cadre, même fond, même encre. */
+.lg-fidele-traduction {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+.lg-fidele-bloc {
+  position: absolute;
+  overflow: hidden;
+  background: var(--lg-fond-page, #fff);
+  color: var(--lg-encre-page, #141414);
+  hyphens: auto;
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  pointer-events: auto;
+  animation: lg-traduit 0.5s ease backwards;
+}
+/* La taille est ajustée par mesures successives : aucune transition ne doit la retarder,
+   ni sur le cadre ni sur ses mots (la règle « réduire les animations » donne une durée
+   minuscule à toutes les transitions, ce qui suffirait à fausser les mesures). */
+.lg-fidele-bloc,
+.lg-fidele-bloc * {
+  transition: none !important;
+}
+@keyframes lg-traduit {
+  from {
+    opacity: 0;
+  }
+}
+.lg-fidele-bloc .lg-pdf-mot:hover {
+  background: color-mix(in srgb, #7cc8f2 30%, transparent);
+}
+.lg-fidele-bloc .lg-pdf-mot[aria-pressed="true"] {
+  background: color-mix(in srgb, #7cc8f2 55%, transparent);
+}
+.lg-fidele-attente {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, #f3f3f3 30%, #fafafa 50%, #f3f3f3 70%);
+  background-size: 300% 100%;
+  animation: lg-attente-page 1.2s linear infinite;
+}
+@keyframes lg-attente-page {
+  to {
+    background-position: -150% 0;
+  }
+}
+.lg-fidele-erreur {
+  position: absolute;
+  inset: auto 0 45% 0;
+  text-align: center;
+  color: #6b6b6b;
+}
+@media (prefers-reduced-motion: reduce) {
+  .lg-fidele,
+  .lg-fidele-bloc,
+  .lg-fidele-attente {
+    animation: none;
+  }
+}

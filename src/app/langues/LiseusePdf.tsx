@@ -1,16 +1,20 @@
 "use client";
 
-import { ArrowLeft, BookmarkCheck, BookmarkPlus, Check, ChevronLeft, ChevronRight, Copy, Languages, LoaderCircle, Minus, Plus, Volume2, X } from "lucide-react";
+import { ArrowLeft, BookmarkCheck, BookmarkPlus, Check, ChevronLeft, ChevronRight, Copy, FileUp, Languages, LoaderCircle, Minus, Plus, Volume2, X } from "lucide-react";
+import type { PDFDocumentLoadingTask, PDFDocumentProxy } from "pdfjs-dist";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { analyserPhrase, traduireLot } from "@/lib/alambic/transcription/client";
 import { type Analyse, type Phrase, texteDe } from "@/lib/alambic/transcription/types";
 import { nouveauMot } from "@/lib/langues/dictionnaire";
-import { type DocumentLangue, ecrire } from "@/lib/langues/stockage";
+import { type DocumentLangue, ecrire, ecrireBlob, lireBlob } from "@/lib/langues/stockage";
+import { cleOriginal, OPTIONS_PDFJS } from "@/lib/langues/pdf";
+import { chargerPdfjs } from "@/lib/client/pdf";
 import { decouperPage, lotsDePassage } from "@/lib/langues/texte";
 import { parler, voixDisponible } from "@/lib/langues/voix";
 import type { Cible } from "../alambic/transcription/Glose";
 import { ajouterMot, useDonnees } from "./donnees";
 import { GloseMot } from "./GloseMot";
+import { PagePdfFidele } from "./PagePdfFidele";
 import "@fontsource-variable/literata/opsz.css";
 
 /*
@@ -20,7 +24,11 @@ import "@fontsource-variable/literata/opsz.css";
  */
 
 const TAILLES = [1, 1.1, 1.22, 1.36];
+/** Zoom de la page d'origine, pour les mêmes crans : le deuxième cran montre la page à la largeur de l'écran. */
+const ZOOMS = [0.8, 1, 1.25, 1.5];
 const CLE = "haqqreason-truchement-pdf";
+/** La vue choisie : la page telle qu'elle a été composée, ou le texte seul (mis en page pour la lecture). */
+const CLE_VUE = "haqqreason-truchement-pdf-vue";
 
 const NOM_LANGUE = { en: "Anglais", fr: "Français" } as const;
 const mots = (texte: string) => texte.split(/\s+/).filter(Boolean).map((t) => ({ t, d: 0, f: 0 }));
@@ -55,6 +63,17 @@ export function LiseusePdf({ document: d, onFermer }: { document: DocumentLangue
   const [selection, setSelection] = useState<Selection | null>(null);
   const [passage, setPassage] = useState<Passage | null>(null);
   const [copie, setCopie] = useState(false);
+  const [vue, setVue] = useState<"page" | "texte">(() => {
+    try {
+      return localStorage.getItem(CLE_VUE) === "texte" ? "texte" : "page";
+    } catch {
+      return "page";
+    }
+  });
+  // Le PDF d'origine, gardé sur cet appareil : sans lui, seule la vue « texte » est possible.
+  const [original, setOriginal] = useState<PDFDocumentProxy | null>(null);
+  const [etatOriginal, setEtatOriginal] = useState<"chargement" | "absent" | "pret" | "erreur">("chargement");
+  const [rechargeOriginal, setRechargeOriginal] = useState(0);
   const texte = useRef<HTMLDivElement>(null);
   const pointeur = useRef("mouse");
   const enCours = useRef(new Set<string>());
@@ -77,6 +96,59 @@ export function LiseusePdf({ document: d, onFermer }: { document: DocumentLangue
     const c = annulation.current;
     return () => c.abort();
   }, []);
+
+  useEffect(() => {
+    let fini = false;
+    let tache: PDFDocumentLoadingTask | null = null;
+    void (async () => {
+      const fichier = await lireBlob(cleOriginal(d.id));
+      if (fini) return;
+      if (!fichier) {
+        setEtatOriginal("absent");
+        return;
+      }
+      const pdfjs = await chargerPdfjs();
+      tache = pdfjs.getDocument({ data: new Uint8Array(await fichier.arrayBuffer()), ...OPTIONS_PDFJS });
+      const doc = await tache.promise;
+      if (fini) return;
+      setOriginal(doc);
+      setEtatOriginal("pret");
+    })().catch(() => !fini && setEtatOriginal("erreur"));
+    return () => {
+      fini = true;
+      setOriginal(null);
+      void tache?.destroy();
+    };
+  }, [d.id, rechargeOriginal]);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(CLE_VUE, vue);
+    } catch {
+      // Navigation privée.
+    }
+  }, [vue]);
+
+  /** Retrouver la mise en page : le même PDF, choisi à nouveau (importé ailleurs, ou avant cette fonction). */
+  const rattacher = async (f: File) => {
+    try {
+      const pdfjs = await chargerPdfjs();
+      const tache = pdfjs.getDocument({ data: new Uint8Array(await f.arrayBuffer()), ...OPTIONS_PDFJS });
+      const n = (await tache.promise).numPages;
+      await tache.destroy();
+      if (n !== d.pages.length) {
+        setErreur(`Ce n'est pas le même PDF : celui-ci a ${n} pages, la lecture en compte ${d.pages.length}.`);
+        return;
+      }
+      await ecrireBlob(cleOriginal(d.id), f);
+      setErreur(null);
+      setVue("page");
+      setEtatOriginal("chargement");
+      setRechargeOriginal((x) => x + 1);
+    } catch {
+      setErreur("Ce PDF n'a pas pu être ouvert.");
+    }
+  };
 
   // Sauvegarde : page, traductions et analyses, groupées.
   useEffect(() => {
@@ -228,13 +300,20 @@ export function LiseusePdf({ document: d, onFermer }: { document: DocumentLangue
     if ((!glose || tactile) && !passage) return;
     const dehors = (e: PointerEvent) => {
       const c = e.target as HTMLElement;
-      if (c.closest(".tr-glose, .lg-pdf-mot, .lg-passage")) return;
+      if (c.closest(".tr-glose, .lg-pdf-mot, .lg-passage, .lg-fidele")) return;
       setGlose(null);
       setPassage(null);
     };
     window.addEventListener("pointerdown", dehors);
     return () => window.removeEventListener("pointerdown", dehors);
   }, [glose, passage, tactile]);
+
+  const toucherMot = (phrase: number, mot: number, el: HTMLElement) => {
+    setPassage(null);
+    setTactile(pointeur.current !== "mouse");
+    setGlose({ phrase, mot, el, via: "toucher" });
+  };
+  const pageDOrigine = vue === "page" && original !== null;
 
   const surClic = (e: React.MouseEvent) => {
     const s = window.getSelection();
@@ -293,17 +372,105 @@ export function LiseusePdf({ document: d, onFermer }: { document: DocumentLangue
             {traductionPage ? <LoaderCircle className="size-4 animate-spin" aria-hidden="true" /> : <Languages className="size-4" aria-hidden="true" />}
             {regard === "fr" ? "Français" : "Anglais"} en regard
           </button>
-          <span className="lg-tailles" role="group" aria-label="Taille du texte">
-            <button type="button" className="bouton-icone" aria-label="Texte plus petit" disabled={taille === 0} onClick={() => setTaille((t) => t - 1)}>
+          {etatOriginal === "pret" && (
+            <span className="lg-pdf-affiche" role="radiogroup" aria-label="Mise en page">
+              <span className="lg-pdf-affiche-titre">Vue</span>
+              {(["page", "texte"] as const).map((v) => (
+                <button
+                  key={v}
+                  type="button"
+                  role="radio"
+                  aria-checked={vue === v}
+                  className="lg-st-choix"
+                  title={v === "page" ? "La page telle qu'elle a été composée : polices, images, couverture" : "Le texte seul, mis en page pour la lecture"}
+                  onClick={() => {
+                    setGlose(null);
+                    setPassage(null);
+                    setVue(v);
+                  }}
+                >
+                  {v === "page" ? "Page d'origine" : "Texte seul"}
+                </button>
+              ))}
+            </span>
+          )}
+          <span className="lg-tailles" role="group" aria-label={pageDOrigine ? "Zoom" : "Taille du texte"}>
+            <button type="button" className="bouton-icone" aria-label={pageDOrigine ? "Zoom arrière" : "Texte plus petit"} disabled={taille === 0} onClick={() => setTaille((t) => t - 1)}>
               <Minus className="size-4" aria-hidden="true" />
             </button>
-            <button type="button" className="bouton-icone" aria-label="Texte plus grand" disabled={taille === TAILLES.length - 1} onClick={() => setTaille((t) => t + 1)}>
+            <button type="button" className="bouton-icone" aria-label={pageDOrigine ? "Zoom avant" : "Texte plus grand"} disabled={taille === TAILLES.length - 1} onClick={() => setTaille((t) => t + 1)}>
               <Plus className="size-4" aria-hidden="true" />
             </button>
           </span>
         </div>
       </div>
 
+      {etatOriginal === "absent" && (
+        <label className="lg-pdf-original">
+          <FileUp className="size-5 shrink-0 text-accent" aria-hidden="true" />
+          <span>
+            <strong>Voir la mise en page d&apos;origine</strong>
+            <small>Polices, images, tableaux et couverture, exactement comme dans le PDF : choisis à nouveau ce fichier. Il reste sur ton appareil.</small>
+          </span>
+          <input type="file" accept="application/pdf,.pdf" className="sr-only" onChange={(e) => e.target.files?.[0] && void rattacher(e.target.files[0])} />
+        </label>
+      )}
+
+      {pageDOrigine && original ? (
+        <article className="lg-pdf-fidele-cadre" aria-label={`Page ${page} sur ${d.pages.length}`}>
+          <p className="lg-pdf-folio">
+            Page {page} <span>sur {d.pages.length}</span>
+            {traductionPage && (
+              <span className="lg-fidele-etat">
+                <LoaderCircle className="size-3.5 animate-spin" aria-hidden="true" />
+                Traduction de la page…
+              </span>
+            )}
+          </p>
+          <div ref={texte} className="lg-pdf-fideles" data-regard={enRegard || undefined} onPointerDown={(e) => (pointeur.current = e.pointerType)}>
+            <div className="lg-pdf-fidele-col">
+              <PagePdfFidele
+                pdf={original}
+                numero={page}
+                phrases={decoupe.phrases}
+                paragraphes={decoupe.paragraphes}
+                phrasesTraduites={phrasesTraduites}
+                version={affiche}
+                zoom={ZOOMS[taille]}
+                interactive
+                glose={glose ? { phrase: glose.phrase, mot: glose.mot } : null}
+                langue={langue}
+                onMot={toucherMot}
+                onRien={() => {
+                  setGlose(null);
+                  setPassage(null);
+                }}
+              />
+            </div>
+            {enRegard && (
+              <div className="lg-pdf-fidele-col" aria-label={affiche === "original" ? "Traduction de la page" : "Page d'origine"}>
+                <PagePdfFidele
+                  pdf={original}
+                  numero={page}
+                  phrases={decoupe.phrases}
+                  paragraphes={decoupe.paragraphes}
+                  phrasesTraduites={phrasesTraduites}
+                  version={affiche === "original" ? "traduction" : "original"}
+                  zoom={ZOOMS[taille]}
+                  interactive={false}
+                  glose={null}
+                  langue={langue}
+                />
+              </div>
+            )}
+          </div>
+          {erreur && (
+            <p className="lg-erreur" role="alert">
+              {erreur}
+            </p>
+          )}
+        </article>
+      ) : (
       <article className="lg-pdf-page" aria-label={`Page ${page} sur ${d.pages.length}`}>
         <p className="lg-pdf-folio">
           Page {page} <span>sur {d.pages.length}</span>
@@ -340,6 +507,7 @@ export function LiseusePdf({ document: d, onFermer }: { document: DocumentLangue
           </p>
         )}
       </article>
+      )}
 
       <nav className="lg-pdf-pages" aria-label="Pages">
         <button type="button" className="bouton" onClick={() => changerPage(page - 1)} disabled={page <= 1}>
