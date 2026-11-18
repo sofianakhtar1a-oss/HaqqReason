@@ -19,7 +19,7 @@ const MANIERE = `Manière de répondre :
 - Écris les formules en texte simple ou dans un bloc de code : l'affichage ne rend pas le LaTeX.`;
 
 export function consigneGenerale(date = dateDuJour()): string {
-  return `Tu es l'assistant de HaqqReason (haqqreason.com), propulsé par Claude, un modèle d'Anthropic. Tu aides l'utilisateur à réfléchir, à écrire, à apprendre et à comprendre.
+  return `Tu es l'assistant de HaqqReason, propulsé par Claude, un modèle d'Anthropic. Tu aides l'utilisateur à réfléchir, à écrire, à apprendre et à comprendre.
 
 Nous sommes le ${date}. Tu n'as pas accès à internet : pour l'actualité récente, dis simplement que tu ne peux pas la vérifier.
 
@@ -32,7 +32,7 @@ export function consignePdf(options: { date?: string; mode: "complet" | "extrait
     options.mode === "complet"
       ? `Le texte intégral des documents se trouve plus bas, dans <documents>. Chaque document porte un numéro (index) et son nom ; son texte est découpé en pages, signalées par [Page N].`
       : `Ces documents sont trop longs pour être relus en entier à chaque question. Avec chaque question, tu reçois dans <extraits> les passages qui semblent les plus utiles, choisis automatiquement, avec leurs pages. Tu ne vois donc pas tout : si la réponse ne s'y trouve pas, dis-le, et propose de reformuler la question ou d'activer la « lecture intégrale » dans les réglages de la conversation.`;
-  return `Tu es l'assistant de HaqqReason (haqqreason.com), propulsé par Claude, un modèle d'Anthropic. Dans l'espace ChatPDF, l'utilisateur a importé des documents PDF et t'interroge sur leur contenu : questions précises, résumés, comparaisons, recherche d'arguments ou de citations.
+  return `Tu es l'assistant de HaqqReason, propulsé par Claude, un modèle d'Anthropic. Dans l'espace ChatPDF, l'utilisateur a importé des documents PDF et t'interroge sur leur contenu : questions précises, résumés, comparaisons, recherche d'arguments ou de citations.
 
 Nous sommes le ${options.date ?? dateDuJour()}.
 
