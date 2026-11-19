@@ -1,5 +1,6 @@
 /* Tests des leçons des Règles (conjugaison et grammaire) : chaque leçon est complète, bien placée et jouable. */
 import { CONJUGAISON_PLUS } from "../src/lib/regles/conjugaison-plus";
+import { fichiersDe, palierDe } from "../src/lib/regles/cours/index";
 import { TEMPS } from "../src/lib/regles/conjugueur";
 import { GRAMMAIRE_PLUS } from "../src/lib/regles/grammaire-plus";
 import { SECTIONS } from "../src/lib/regles/index";
@@ -83,6 +84,66 @@ for (const [nom, ajouts, section] of [
   vu(`${nom} : ${ajouts.length} leçons ajoutées, chacune à sa place`);
 }
 console.log(`Parcours : ${SECTIONS.map((s) => `${s.nom} ${s.lecons.length} leçons`).join(", ")}`);
+
+// L'explication en français : chaque leçon a la sienne, complète, dans le fichier de son palier.
+/** Accolades {anglais} bien fermées, et pas de crochets de couleur dans un texte français. */
+function verifierTexte(t: string, ou: string) {
+  ok(`${ou} : texte non vide`, t.trim().length > 0, t);
+  const reste = t.replace(/\{[^{}]+\}/g, "");
+  ok(`${ou} : accolades bien formées`, !/[{}]/.test(reste), t);
+  ok(`${ou} : pas de couleurs dans le français`, !/\[[a-z]:/.test(t), t);
+}
+let explications = 0;
+for (const section of SECTIONS) {
+  const fichiers = fichiersDe(section.id);
+  const charges = {
+    a: (await fichiers.a()).COURS,
+    b: (await fichiers.b()).COURS,
+    c: (await fichiers.c()).COURS,
+  };
+  const ids = new Set(section.lecons.map((l) => l.id));
+  for (const [palier, cours] of Object.entries(charges)) {
+    for (const id of Object.keys(cours)) {
+      const l = section.lecons.find((x) => x.id === id);
+      ok(`${section.id} : l'explication « ${id} » correspond à une leçon`, ids.has(id));
+      if (l) ok(`${section.id} : l'explication « ${id} » est dans le bon palier`, palierDe(l.niveau) === palier, [l.niveau, palier]);
+    }
+  }
+  for (const l of section.lecons) {
+    const ou = `${section.id}/${l.id} (explication)`;
+    const c = charges[palierDe(l.niveau)][l.id];
+    if (!ok(`${ou} : présente`, Boolean(c))) continue;
+    explications++;
+    verifierTexte(c.regle, `${ou} règle`);
+    ok(`${ou} : une vraie explication (au moins 180 caractères)`, c.regle.length >= 180, c.regle.length);
+    for (const f of c.forme ?? []) {
+      verifierTexte(f.nom, `${ou} forme`);
+      verifierTexte(f.modele, `${ou} forme`);
+      verifierPhrase(f.exemple, `${ou} forme`);
+      ok(`${ou} : exemple de forme`, f.exemple.trim().length > 0 && !/\[x:/.test(f.exemple), f);
+    }
+    ok(`${ou} : au moins deux emplois`, c.usages.length >= 2, c.usages.length);
+    for (const u of c.usages) {
+      verifierTexte(u.quand, `${ou} emploi`);
+      verifierPhrase(u.en, `${ou} emploi`);
+      ok(`${ou} : exemple et traduction`, !!(u.en.trim() && u.fr.trim()), u);
+      ok(`${ou} : un exemple juste n'est pas marqué comme fautif`, !/\[x:/.test(u.en), u.en);
+    }
+    verifierTexte(c.francais, `${ou} français`);
+    ok(`${ou} : au moins un piège`, c.pieges.length >= 1, c.pieges.length);
+    for (const p of c.pieges) {
+      verifierPhrase(p.faux, `${ou} piège`);
+      verifierPhrase(p.juste, `${ou} piège`);
+      verifierTexte(p.pourquoi, `${ou} piège`);
+      ok(`${ou} : la phrase fautive montre où est l'erreur`, /\[x:/.test(p.faux), p.faux);
+      ok(`${ou} : la bonne phrase n'est pas marquée comme fautive`, !/\[x:/.test(p.juste), p.juste);
+      ok(`${ou} : la phrase fautive et la bonne diffèrent`, p.faux.replace(/\[[a-z]:([^\]]*)\]/g, "$1") !== p.juste.replace(/\[[a-z]:([^\]]*)\]/g, "$1"), p);
+    }
+    verifierTexte(c.retenir, `${ou} à retenir`);
+  }
+}
+ok("une explication pour chaque leçon", explications === SECTIONS.reduce((n, s) => n + s.lecons.length, 0), explications);
+vu(`${explications} explications en français, une par leçon`);
 
 console.log(e ? `\n${e} échec(s)` : "\nTout est bon.");
 process.exit(e ? 1 : 0);

@@ -11,7 +11,9 @@ export function FormulaireReglages({ reglages }: { reglages: Reglages }) {
   const [etat, action] = useActionState(enregistrerReglages, ETAT_INITIAL);
 
   return (
-    <form action={action} className="space-y-8">
+    // La clé suit les valeurs enregistrées : après l'enregistrement, chaque liste affiche le nouveau réglage
+    // (React ne remet un formulaire à zéro qu'avec les valeurs de son premier affichage).
+    <form key={JSON.stringify(reglages)} action={action} className="space-y-8">
       <div className="reglage">
         <label htmlFor="inactivite" className="etiquette">
           Déconnexion automatique après inactivité

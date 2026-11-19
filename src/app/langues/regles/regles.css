@@ -707,6 +707,221 @@
   font-weight: 700;
 }
 
+/* 2 bis. L'explication : la règle racontée en français */
+.rg-cours {
+  display: grid;
+  gap: 1rem;
+  animation: rg-apparait 0.35s ease both;
+}
+.rg-cours-attente {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1.25rem 1.4rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  color: var(--encre-douce);
+}
+/* Les mots anglais glissés dans le français */
+.rg-en {
+  font-family: var(--lg-police);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--encre);
+}
+.rg-en[data-mot] {
+  white-space: nowrap;
+}
+.rg-cours-regle {
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border-radius: 1.6rem;
+  border: 1px solid color-mix(in srgb, var(--rg-accent) 35%, var(--trait));
+  background:
+    radial-gradient(110% 90% at 0% 0%, color-mix(in srgb, var(--rg-accent) 15%, transparent), transparent 70%),
+    var(--surface);
+}
+.rg-cours-etiquette {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--rg-accent);
+}
+.rg-cours-lead {
+  margin-top: 0.6rem;
+  max-width: 64ch;
+  font-size: clamp(1.02rem, 2.4vw, 1.14rem);
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+.rg-cours-bloc {
+  padding: clamp(1.1rem, 3.2vw, 1.6rem);
+  border-radius: 1.3rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.rg-cours-titre {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 800;
+}
+.rg-cours-titre svg {
+  color: var(--rg-accent);
+}
+.rg-cours-ecoute {
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-left: 0.45rem;
+  flex-shrink: 0;
+}
+
+/* La fabrique : une ligne par forme */
+.rg-fabrique {
+  display: grid;
+  gap: 0.6rem;
+}
+.rg-fabrique-ligne {
+  display: grid;
+  gap: 0.2rem 1rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 0.9rem;
+  background: color-mix(in srgb, var(--fond) 45%, transparent);
+  border: 1px solid color-mix(in srgb, var(--rg-accent) 18%, var(--trait));
+}
+@media (min-width: 44rem) {
+  .rg-fabrique-ligne {
+    grid-template-columns: 7.5rem 1fr;
+    align-items: baseline;
+  }
+  .rg-fabrique-exemple {
+    grid-column: 2;
+  }
+}
+.rg-fabrique-ligne dt {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--rg-accent);
+}
+.rg-fabrique-modele {
+  font-weight: 600;
+  line-height: 1.55;
+}
+.rg-fabrique-exemple {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: var(--lg-police);
+  font-size: 1.06rem;
+  color: var(--encre-douce);
+}
+
+/* Quand l'utiliser : un emploi, un exemple, sa traduction */
+.rg-usages {
+  display: grid;
+  gap: 1rem;
+}
+.rg-usage {
+  padding-left: 0.95rem;
+  border-left: 3px solid color-mix(in srgb, var(--rg-accent) 55%, transparent);
+}
+.rg-usage-quand {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.rg-usage-en {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+  font-family: var(--lg-police);
+  font-size: clamp(1.06rem, 2.8vw, 1.2rem);
+  line-height: 1.6;
+}
+.rg-usage-fr {
+  margin-top: 0.1rem;
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--encre-douce);
+}
+
+/* Et en français ? */
+.rg-cours-francais {
+  border-color: color-mix(in srgb, var(--azur) 32%, var(--trait));
+  background:
+    linear-gradient(90deg, color-mix(in srgb, var(--azur) 9%, transparent), transparent 60%),
+    var(--surface);
+}
+.rg-cours-francais .rg-cours-titre svg {
+  color: var(--azur);
+}
+.rg-cours-francais p {
+  max-width: 66ch;
+  line-height: 1.7;
+}
+
+/* Les pièges : la phrase à éviter, la bonne, et pourquoi */
+.rg-pieges {
+  display: grid;
+  gap: 1.1rem;
+}
+.rg-piege-faux,
+.rg-piege-juste {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  font-family: var(--lg-police);
+  font-size: 1.06rem;
+  line-height: 1.55;
+}
+.rg-piege-faux {
+  color: var(--danger);
+}
+/* La phrase fautive reste lisible : la croix et la couleur disent qu'elle est fausse, la vague montre où. */
+.rg-piege-faux > span[lang] {
+  opacity: 0.92;
+}
+.rg-piege-juste {
+  margin-top: 0.15rem;
+  color: var(--emeraude);
+  font-weight: 600;
+}
+.rg-piege-juste > span[lang] {
+  color: var(--encre);
+}
+.rg-piege-pourquoi {
+  margin-top: 0.3rem;
+  padding-left: 1.45rem;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: var(--encre-douce);
+}
+
+/* À retenir */
+.rg-retenir {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 1rem 1.25rem;
+  border-radius: 1.1rem;
+  border: 1.5px solid color-mix(in srgb, var(--or) 50%, transparent);
+  background: color-mix(in srgb, var(--or) 10%, var(--surface));
+  line-height: 1.6;
+}
+.rg-retenir svg {
+  margin-top: 0.15rem;
+  color: var(--or);
+}
+.rg-cours > .rg-actions {
+  margin-top: 0.5rem;
+}
+
 /* 3. Le défi */
 .rg-defi-tete {
   display: flex;
@@ -1377,6 +1592,7 @@
   .rg-scene span,
   .rg-immeuble,
   .rg-demo-etape,
+  .rg-cours,
   .rg-option[data-etat="bonne"],
   .rg-etoiles [data-pleine],
   .rg-siege,

@@ -1,21 +1,24 @@
 "use client";
 
-import { ArrowLeft, Check, Eye, KeyRound, Lightbulb, RotateCcw, Sparkles, Star, Swords, Wand2 } from "lucide-react";
+import { ArrowLeft, BookOpen, Check, Eye, KeyRound, Lightbulb, RotateCcw, Sparkles, Star, Swords, Wand2 } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { enregistrerLecon, useProgression } from "@/lib/regles/progression";
 import { type Choix, type Ecrire, estChoix, estEcrire, type Lecon, type Question, type Section, type Toucher } from "@/lib/regles/types";
+import { Explication, useCours } from "./Explication";
 import { Machine } from "./Machine";
 import { codesDe, Legende, Phrase } from "./Phrase";
 
 /*
- * Une leçon, en quatre étapes : le déclic, la démonstration, le défi, le secret d'expert.
+ * Une leçon, en cinq étapes : le déclic, la démonstration, l'explication (la règle racontée
+ * en français), le défi, le secret d'expert.
  * Dans le défi, une erreur n'est jamais une sanction : elle allume un indice.
  */
 
-type Etape = "declic" | "demo" | "defi" | "secret";
+type Etape = "declic" | "demo" | "cours" | "defi" | "secret";
 const ETAPES: { id: Etape; nom: string; Icone: typeof Lightbulb }[] = [
   { id: "declic", nom: "Le déclic", Icone: Lightbulb },
   { id: "demo", nom: "La démonstration", Icone: Wand2 },
+  { id: "cours", nom: "L'explication", Icone: BookOpen },
   { id: "defi", nom: "Le défi", Icone: Swords },
   { id: "secret", nom: "Le secret d'expert", Icone: KeyRound },
 ];
@@ -44,6 +47,9 @@ export function LeconVue({ section, lecon, onRetour, onOuvrir }: Props) {
   const suivante = section.lecons[index + 1];
   const { lecons } = useProgression();
   const deja = lecons[lecon.id];
+  // L'explication se charge dès l'ouverture : elle est prête quand on arrive à cette étape.
+  const cours = useCours(section.id, lecon);
+  const avecCours = cours.charge || cours.erreur || Boolean(cours.cours);
 
   useEffect(() => {
     titre.current?.focus({ preventScroll: true });
@@ -51,7 +57,7 @@ export function LeconVue({ section, lecon, onRetour, onOuvrir }: Props) {
   }, [etape]);
 
   const aller = (e: Etape) => setEtape(e);
-  const ouverte = (e: Etape) => e !== "secret" || Boolean(bilan) || Boolean(deja);
+  const ouverte = (e: Etape) => (e === "secret" ? Boolean(bilan) || Boolean(deja) : e === "cours" ? avecCours : true);
 
   return (
     <article className="rg-lecon" data-section={section.id}>
@@ -97,7 +103,8 @@ export function LeconVue({ section, lecon, onRetour, onOuvrir }: Props) {
       </div>
 
       {etape === "declic" && <Declic lecon={lecon} onSuite={() => aller("demo")} />}
-      {etape === "demo" && <Demo lecon={lecon} onSuite={() => aller("defi")} />}
+      {etape === "demo" && <Demo lecon={lecon} onSuite={() => aller("defi")} onCours={avecCours ? () => aller("cours") : undefined} />}
+      {etape === "cours" && <Explication etat={cours} onDefi={() => aller("defi")} />}
       {etape === "defi" && (
         <Defi
           key={lecon.id}
@@ -154,7 +161,7 @@ function Declic({ lecon, onSuite }: { lecon: Lecon; onSuite: () => void }) {
 
 /* ---------- 2. La démonstration ---------- */
 
-function Demo({ lecon, onSuite }: { lecon: Lecon; onSuite: () => void }) {
+function Demo({ lecon, onSuite, onCours }: { lecon: Lecon; onSuite: () => void; onCours?: () => void }) {
   const [vues, setVues] = useState(1);
   const etapes = lecon.demo.etapes;
   const toutes = vues >= etapes.length;
@@ -191,10 +198,24 @@ function Demo({ lecon, onSuite }: { lecon: Lecon; onSuite: () => void }) {
             </div>
           )}
           <div className="rg-actions">
-            <button type="button" className="bouton bouton-principal" onClick={onSuite}>
-              <Swords className="size-4" aria-hidden="true" />
-              Relever le défi
-            </button>
+            {onCours ? (
+              <>
+                {/* D'abord comprendre la règle, en français ; ceux qui l'ont déjà comprise peuvent filer au défi. */}
+                <button type="button" className="bouton bouton-principal" onClick={onCours}>
+                  <BookOpen className="size-4" aria-hidden="true" />
+                  Lire l&apos;explication
+                </button>
+                <button type="button" className="bouton" onClick={onSuite}>
+                  <Swords className="size-4" aria-hidden="true" />
+                  Relever le défi
+                </button>
+              </>
+            ) : (
+              <button type="button" className="bouton bouton-principal" onClick={onSuite}>
+                <Swords className="size-4" aria-hidden="true" />
+                Relever le défi
+              </button>
+            )}
           </div>
         </>
       )}

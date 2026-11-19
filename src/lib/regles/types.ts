@@ -58,6 +58,28 @@ export type Lecon = {
   secret: { titre: string; texte: string; formule?: string };
 };
 
+/**
+ * L'explication d'une leçon : la règle racontée en français, posément, entre la démonstration et le défi.
+ * Elle s'ajoute à la leçon sans rien remplacer (fichiers src/lib/regles/cours/, chargés à la demande).
+ *
+ * Dans les textes en français, un mot ou un bout de phrase anglais s'écrit entre accolades : {does}.
+ * Les exemples anglais (en, faux, juste, exemple) peuvent porter les couleurs de la démonstration : [a:does].
+ */
+export type Cours = {
+  /** La règle en clair : ce qu'elle dit et pourquoi, en quelques phrases simples. */
+  regle: string;
+  /** Comment on fabrique la forme : une ligne par forme (affirmation, négation, question…). */
+  forme?: { nom: string; modele: string; exemple: string }[];
+  /** Quand l'utiliser : chaque emploi avec un exemple anglais et sa traduction. */
+  usages: { quand: string; en: string; fr: string }[];
+  /** Et en français ? Ce qui ressemble à notre langue, et ce qui change. */
+  francais: string;
+  /** Les pièges des francophones : la phrase fautive, la bonne, et pourquoi. */
+  pieges: { faux: string; juste: string; pourquoi: string }[];
+  /** À retenir, en une phrase. */
+  retenir: string;
+};
+
 /** Une leçon ajoutée au parcours : elle prend place juste après la leçon « apres » (même niveau). */
 export type Ajout = { apres: string; lecon: Lecon };
 

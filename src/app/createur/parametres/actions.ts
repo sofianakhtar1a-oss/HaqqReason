@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { journaliser } from "@/lib/audit";
 import type { EtatFormulaire } from "@/lib/form-state";
-import { CHOIX, nettoyerReglages, type Reglages } from "@/lib/reglages";
+import { CHOIX, libellePortail, nettoyerReglages, type Reglages } from "@/lib/reglages";
 import { ecrireReglages, lireReglages } from "@/lib/reglages-donnees";
 import { ouvrirSession, sessionCreateur } from "@/lib/session";
 import { dbAdmin } from "@/lib/supabase";
@@ -44,6 +44,8 @@ export async function enregistrerReglages(_: EtatFormulaire, formData: FormData)
     recherche_sens: demande.recherche_sens,
     contributions_ouvertes: demande.contributions_ouvertes,
     contributions_validation: demande.contributions_validation,
+    // Réglé dans sa propre section (« Animations ») : ce formulaire-ci le laisse tel quel.
+    portail_duree_ms: avant.portail_duree_ms,
   };
 
   try {
@@ -82,5 +84,25 @@ export async function enregistrerReglages(_: EtatFormulaire, formData: FormData)
   return {
     statut: "succes",
     message: plusStrict ? "Réglages enregistrés. Les autres appareils ont été déconnectés pour que les nouvelles règles s'y appliquent." : "Réglages enregistrés.",
+  };
+}
+
+/** Enregistre la durée de la porte de lumière (section « Animations » de la page Paramètres). */
+export async function enregistrerAnimations(_: EtatFormulaire, formData: FormData): Promise<EtatFormulaire> {
+  const compte = await sessionCreateur();
+  if (!compte) return nonConnecte;
+  const demande = Number(formData.get("portail_duree_ms"));
+  if (!CHOIX.portail_duree_ms.includes(demande as never)) return { statut: "erreur", message: "Choisis une durée dans la liste." };
+  const avant = await lireReglages();
+  try {
+    await ecrireReglages({ ...avant, portail_duree_ms: demande });
+  } catch {
+    return { statut: "erreur", message: "Enregistrement impossible. Vérifie que le fichier 008_reglages.sql a bien été exécuté dans Supabase." };
+  }
+  await journaliser("reglages_modifies", { portail_duree_ms: demande });
+  revalidatePath("/", "layout");
+  return {
+    statut: "succes",
+    message: demande === 0 ? "Enregistré : la porte de lumière est désactivée." : `Enregistré : la porte de lumière dure maintenant ${libellePortail(demande)}.`,
   };
 }

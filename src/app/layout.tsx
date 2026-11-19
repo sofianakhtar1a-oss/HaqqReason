@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { headers } from "next/headers";
+import { Suspense } from "react";
 import "@fontsource-variable/bricolage-grotesque";
 import "@fontsource-variable/instrument-sans";
 import "@fontsource/amiri/400.css";
@@ -16,7 +17,7 @@ import { ServiceHorsLigne } from "@/components/ServiceHorsLigne";
 import { FilDOr } from "@/components/scene/FilDOr";
 import { Lampe } from "@/components/scene/Lampe";
 import { Mouvements } from "@/components/scene/Mouvements";
-import { Portail } from "@/components/scene/Portail";
+import { PortailRegle } from "@/components/scene/PortailRegle";
 import { Ouverture, SCRIPT_OUVERTURE } from "@/components/scene/Ouverture";
 import { googleConfigure } from "@/lib/compte/jeton";
 import { compteCourant } from "@/lib/compte/session";
@@ -79,7 +80,12 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
         {manquantes.length > 0 ? <InstallationRequise manquantes={manquantes} /> : children}
         {manquantes.length === 0 && <PaletteRecherche />}
         <ServiceHorsLigne />
-        {manquantes.length === 0 && <Portail />}
+        {/* La porte de lumière lit sa durée dans les réglages, sans retenir l'affichage de la page. */}
+        {manquantes.length === 0 && (
+          <Suspense fallback={null}>
+            <PortailRegle />
+          </Suspense>
+        )}
         {manquantes.length === 0 && <Ouverture />}
         {manquantes.length === 0 && <FilDOr />}
         <Lampe />

@@ -725,3 +725,41 @@ html.scene .colophon:not([data-vu]) :is(.colophon-filet, .etoile-vide, [pathLeng
     animation-duration: auto !important;
   }
 }
+
+/* ---------- La porte de lumière, à la durée choisie par le créateur ----------
+   Paramètres → Animations règle --portail-f sur la porte (1 = 1,5 s, le rythme d'origine).
+   Chaque durée et chaque délai de scene.css est multiplié par ce même facteur : la porte garde
+   exactement sa chorégraphie, seulement plus vive ou plus posée. Le souffle de l'astrolabe
+   (respire) garde son propre rythme ; seul son départ suit le facteur. */
+.portail-disque {
+  animation-duration: calc(0.74s * var(--portail-f, 1));
+}
+.portail-coeur::before {
+  animation-duration: calc(0.9s * var(--portail-f, 1));
+  animation-delay: calc(0.2s * var(--portail-f, 1));
+}
+.portail-rosace {
+  animation-duration: calc(0.8s * var(--portail-f, 1)), 3.4s;
+  animation-delay: calc(0.12s * var(--portail-f, 1)), calc(1s * var(--portail-f, 1));
+}
+.portail .rosace [pathLength] {
+  animation-duration: calc(0.62s * var(--portail-f, 1));
+  animation-delay: calc((0.12s + var(--rang, 0) * 0.03s) * var(--portail-f, 1));
+}
+.portail-sur {
+  animation-duration: calc(0.7s * var(--portail-f, 1));
+  animation-delay: calc(0.32s * var(--portail-f, 1));
+}
+.portail-titre {
+  animation-duration: calc(0.8s * var(--portail-f, 1));
+  animation-delay: calc(0.4s * var(--portail-f, 1));
+}
+.portail[data-phase="ferme"] {
+  animation-duration: calc(0.58s * var(--portail-f, 1));
+}
+.portail[data-phase="ferme"] .portail-rosace {
+  animation-duration: calc(0.58s * var(--portail-f, 1));
+}
+.portail[data-phase="ferme"] .portail-textes {
+  animation-duration: calc(0.5s * var(--portail-f, 1));
+}

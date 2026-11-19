@@ -129,8 +129,8 @@ function Fil() {
       const lien = e.target instanceof Element ? e.target.closest("a[href]") : null;
       if (!(lien instanceof HTMLAnchorElement)) return;
       if ((lien.target && lien.target !== "_self") || lien.hasAttribute("download")) return;
-      // La porte de lumière fait déjà le passage (sauf quand les animations sont réduites).
-      if (lien.hasAttribute("data-portail") && !reduit.matches) return;
+      // La porte de lumière fait déjà le passage (sauf si les animations sont réduites, ou si le créateur l'a éteinte).
+      if (lien.hasAttribute("data-portail") && !reduit.matches && !document.documentElement.hasAttribute("data-portail-eteint")) return;
       let url: URL;
       try {
         url = new URL(lien.href, window.location.href);

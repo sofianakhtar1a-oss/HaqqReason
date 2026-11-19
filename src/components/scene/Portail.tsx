@@ -3,6 +3,7 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { Rosace } from "@/components/Rosace";
+import { PORTAIL_DUREE_DE_BASE_MS, REGLAGES_PAR_DEFAUT } from "@/lib/reglages";
 
 /**
  * La porte de lumière : quand on entre dans un espace (ou qu'on le quitte), un disque aux couleurs
@@ -13,6 +14,10 @@ import { Rosace } from "@/components/Rosace";
  * data-portail-accent si la couleur de la porte n'est pas celle du lien). La porte n'apparaît pas
  * si le système demande de réduire les animations, ni pour un clic avec une touche (nouvel onglet),
  * ni pour un lien vers la page où l'on est déjà.
+ *
+ * Sa durée se règle dans l'espace créateur (Paramètres → Animations) : dureeMs. Toute l'animation
+ * s'y ajuste d'un même facteur (les temps ci-dessous et, côté CSS, la variable --portail-f).
+ * À 0, la porte est éteinte : les liens naviguent normalement (et le fil d'or prend le relais).
  */
 
 type Passage = {
@@ -40,15 +45,29 @@ const FERMETURE = 580;
 /** Si la page n'arrive pas, la porte se referme d'elle-même. */
 const SECOURS = 7000;
 
-export function Portail() {
+export function Portail({ dureeMs = REGLAGES_PAR_DEFAUT.portail_duree_ms }: { dureeMs?: number }) {
+  const eteint = dureeMs <= 0;
+  // 1 = le rythme d'origine (1,5 s) ; 2 = deux fois plus lent ; 0,4 = bien plus vif.
+  const f = eteint ? 1 : dureeMs / PORTAIL_DUREE_DE_BASE_MS;
+  const lancement = LANCEMENT * f;
+  const presence = PRESENCE * f;
+  const fermeture = FERMETURE * f;
+  const secours = Math.max(SECOURS, presence + 6000);
   const router = useRouter();
   const chemin = usePathname();
   const [passage, setPassage] = useState<Passage | null>(null);
   const ouverture = useRef(0);
   const enCours = useRef(false);
 
+  // Porte éteinte : on le dit à la page (le fil d'or accompagne alors aussi ces liens).
+  useEffect(() => {
+    document.documentElement.toggleAttribute("data-portail-eteint", eteint);
+    return () => document.documentElement.removeAttribute("data-portail-eteint");
+  }, [eteint]);
+
   // Le clic est saisi avant que le lien ne navigue : on ouvre la porte, puis on navigue nous-mêmes.
   useEffect(() => {
+    if (eteint) return;
     function surClic(e: MouseEvent) {
       if (enCours.current || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
       const lien = e.target instanceof Element ? e.target.closest("a[data-portail]") : null;
@@ -79,26 +98,26 @@ export function Portail() {
         phase: "ouvre",
       });
       const destination = url.pathname + url.search + url.hash;
-      window.setTimeout(() => router.push(destination), LANCEMENT);
+      window.setTimeout(() => router.push(destination), lancement);
     }
     document.addEventListener("click", surClic, true);
     return () => document.removeEventListener("click", surClic, true);
-  }, [router]);
+  }, [router, eteint, lancement]);
 
   // La nouvelle page est là, encore cachée : ses animations d'entrée attendent que la porte s'efface.
   useLayoutEffect(() => {
     if (!passage || passage.phase !== "ouvre" || chemin === passage.depart) return;
     document.documentElement.setAttribute("data-portail-arret", "");
-    const reste = Math.max(140, ouverture.current + PRESENCE - performance.now());
+    const reste = Math.max(140 * f, ouverture.current + presence - performance.now());
     const minuteur = window.setTimeout(() => setPassage((p) => (p ? { ...p, phase: "ferme" } : p)), reste);
     return () => window.clearTimeout(minuteur);
-  }, [chemin, passage]);
+  }, [chemin, passage, presence, f]);
 
   // Filet de sécurité : la porte ne reste jamais fermée sur l'écran (navigation annulée, échec…).
   useEffect(() => {
     if (!passage || passage.phase !== "ouvre") return;
     const fermer = () => setPassage((p) => (p ? { ...p, phase: "ferme" } : p));
-    const minuteur = window.setTimeout(fermer, SECOURS);
+    const minuteur = window.setTimeout(fermer, secours);
     const surTouche = (e: KeyboardEvent) => {
       if (e.key === "Escape") fermer();
     };
@@ -107,7 +126,7 @@ export function Portail() {
       window.clearTimeout(minuteur);
       window.removeEventListener("keydown", surTouche);
     };
-  }, [passage]);
+  }, [passage, secours]);
 
   useEffect(() => {
     if (passage?.phase !== "ferme") return;
@@ -115,15 +134,16 @@ export function Portail() {
     const minuteur = window.setTimeout(() => {
       enCours.current = false;
       setPassage(null);
-    }, FERMETURE);
+    }, fermeture);
     return () => window.clearTimeout(minuteur);
-  }, [passage?.phase]);
+  }, [passage?.phase, fermeture]);
 
   if (!passage) return null;
   const style = {
     "--porte-x": `${passage.x}px`,
     "--porte-y": `${passage.y}px`,
     "--porte-echelle": passage.echelle.toFixed(2),
+    "--portail-f": f.toFixed(3),
   } as React.CSSProperties;
   return (
     <div key={passage.cle} className="portail" data-phase={passage.phase} data-accent={passage.accent ?? undefined} style={style} aria-hidden="true">

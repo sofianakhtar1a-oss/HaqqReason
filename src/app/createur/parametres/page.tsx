@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, Clock, HardDrive, ShieldCheck } from "lucide-react";
+import { ArrowLeft, Clock, HardDrive, ShieldCheck, Sparkles } from "lucide-react";
 import { EnTete } from "@/components/EnTete";
-import { libelleDuree, libelleHeures } from "@/lib/reglages";
+import { libelleDuree, libelleHeures, libellePortail } from "@/lib/reglages";
 import { lireReglages } from "@/lib/reglages-donnees";
 import { exigerCreateur } from "@/lib/session";
+import { FormulaireAnimations } from "./FormulaireAnimations";
 import { FormulaireReglages } from "./FormulaireReglages";
 
 export const metadata: Metadata = { title: "Paramètres", robots: { index: false } };
@@ -53,6 +54,19 @@ export default async function PageParametres() {
           </h2>
           <div className="mt-6">
             <FormulaireReglages reglages={reglages} />
+          </div>
+        </section>
+
+        <section className="verre panneau mt-8" aria-labelledby="titre-animations">
+          <h2 id="titre-animations" className="flex items-center gap-2 text-2xl font-bold">
+            <Sparkles className="size-6 text-accent" aria-hidden="true" />
+            Animations
+          </h2>
+          <p className="mt-3 text-encre-douce">
+            Porte de lumière : <strong className="text-encre">{libellePortail(reglages.portail_duree_ms)}</strong>.
+          </p>
+          <div className="mt-6">
+            <FormulaireAnimations reglages={reglages} />
           </div>
         </section>
 
