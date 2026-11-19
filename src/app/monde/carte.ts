@@ -70,7 +70,7 @@ function lire(topo: Topology): Carte {
     if (!m) {
       const voulus = new Set(codes);
       m = merge(topo, objet.geometries.filter((g) => g.id !== undefined && voulus.has(String(g.id))) as Parameters<typeof merge>[1]);
-      if (fusions.size > 12) fusions.clear();
+      if (fusions.size > 40) fusions.clear();
       fusions.set(cle, m);
     }
     return m;

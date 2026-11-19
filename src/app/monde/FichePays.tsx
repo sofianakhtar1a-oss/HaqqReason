@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronDown, Volume2, X } from "lucide-react";
+import { ChevronDown, Home, Volume2, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { formatPopulation, formatSuperficie, LIBELLES_STATUT, motCapitale, NOM_CONTINENT, pays as paysDe, PAR_CODE } from "@/lib/monde/atlas";
+import { fuseauxDe, momentDuJour } from "@/lib/monde/calques";
 import { CATEGORIES, IDS_CATEGORIES } from "@/lib/monde/categories";
-import { decalageMinutes, ecartHoraire, formatDecalage, formatDensite, formatKm, formatVille, heureLocale, pointCardinal, qibla } from "@/lib/monde/geo";
+import { decalageMinutes, distanceKm, dureeVol, ecartHoraire, formatDecalage, formatDensite, formatKm, formatVille, heureLocale, type LatLng, pointCardinal, pointDe, qibla } from "@/lib/monde/geo";
 import { ORGANISATIONS } from "@/lib/monde/organisations";
-import { boite, useMonde } from "@/lib/monde/progression";
+import { boite, regler, useMonde } from "@/lib/monde/progression";
 import { useRecits } from "@/lib/monde/recits-client";
 import type { Pays } from "@/lib/monde/types";
 import { dire, type LangueVoix, voixPour } from "@/lib/monde/voix";
@@ -41,25 +42,34 @@ function BoutonVoix({ texte, langue, libelle }: { texte: string; langue: LangueV
   );
 }
 
-/** L'heure qu'il est là-bas, qui avance d'elle-même. */
-function HeureLocale({ fuseau }: { fuseau: string }) {
+/** « 2 h de plus », « 30 min de moins ». */
+function duree(ecart: number): string {
+  const h = Math.trunc(Math.abs(ecart) / 60);
+  const m = Math.abs(ecart) % 60;
+  return `${h ? `${h} h` : ""}${m ? `${h ? " " : ""}${m} min` : ""}`;
+}
+
+const MOMENTS = { jour: "il y fait jour", crepuscule: "c'est l'aube ou le crépuscule", nuit: "il y fait nuit" } as const;
+
+/** L'heure qu'il est là-bas, qui avance d'elle-même (et s'il y fait jour ou nuit). */
+function HeureLocale({ fuseau, lieu, chezMoi }: { fuseau: string; lieu: LatLng; chezMoi?: { nom: string; fuseau: string } }) {
   const [maintenant, setMaintenant] = useState(() => new Date());
   useEffect(() => {
     const t = setInterval(() => setMaintenant(new Date()), 20_000);
     return () => clearInterval(t);
   }, []);
   const ecart = ecartHoraire(fuseau, "Europe/Paris", maintenant);
-  const h = Math.trunc(Math.abs(ecart) / 60);
-  const m = Math.abs(ecart) % 60;
-  const duree = `${h ? `${h} h` : ""}${m ? `${h ? " " : ""}${m} min` : ""}`;
+  const ecartMoi = chezMoi && chezMoi.fuseau !== "Europe/Paris" ? ecartHoraire(fuseau, chezMoi.fuseau, maintenant) : null;
   return (
     <>
       <time dateTime={maintenant.toISOString()}>{heureLocale(fuseau, maintenant)}</time>
       <small>
         {formatDecalage(decalageMinutes(fuseau, maintenant))}
         {" · "}
-        {ecart === 0 ? "la même heure qu'à Paris" : `${duree} de ${ecart > 0 ? "plus" : "moins"} qu'à Paris`}
+        {ecart === 0 ? "la même heure qu'à Paris" : `${duree(ecart)} de ${ecart > 0 ? "plus" : "moins"} qu'à Paris`}
       </small>
+      {ecartMoi !== null && <small>{ecartMoi === 0 ? `la même heure que chez toi (${chezMoi!.nom})` : `${duree(ecartMoi)} de ${ecartMoi > 0 ? "plus" : "moins"} que chez toi (${chezMoi!.nom})`}</small>}
+      <small>En ce moment, {MOMENTS[momentDuJour(lieu, maintenant)]}.</small>
     </>
   );
 }
@@ -133,6 +143,9 @@ export function FichePays({ code, onChoisir, onFermer, compacte = false }: { cod
       nom
     );
 
+  const moi = monde.profil.monPays ? PAR_CODE.get(monde.profil.monPays) : undefined;
+  const depuisMoi = moi && moi.code !== p.code ? { km: distanceKm(pointDe(moi).latlng, pointDe(p).latlng), depuis: pointDe(moi).capitale && moi.capitale ? moi.capitale : moi.nom } : null;
+  const plusieurs = fuseauxDe(p.code);
   const symboles = Boolean(r?.devise || r?.hymne || r?.fete || r?.drapeau);
   const histoire = Boolean(r?.independance || r?.anciens?.length || r?.etymologie);
   const villes = r?.villes ?? (p.villes ?? []).map((v) => [v] as [string]);
@@ -175,7 +188,12 @@ export function FichePays({ code, onChoisir, onFermer, compacte = false }: { cod
           <div>
             <dt>L&apos;heure là-bas</dt>
             <dd>
-              <HeureLocale fuseau={p.fuseau} />
+              <HeureLocale fuseau={p.fuseau} lieu={pointDe(p).latlng} chezMoi={moi?.fuseau && moi.code !== p.code ? { nom: moi.nom, fuseau: moi.fuseau } : undefined} />
+              {plusieurs && (
+                <small>
+                  L&apos;heure de {p.capitale ?? "la capitale"} : le pays vit à {plusieurs.length} heures différentes, de {formatDecalage(plusieurs[0])} à {formatDecalage(plusieurs[plusieurs.length - 1])} en hiver.
+                </small>
+              )}
             </dd>
           </div>
         )}
@@ -231,6 +249,17 @@ export function FichePays({ code, onChoisir, onFermer, compacte = false }: { cod
             <dd>
               {p.gentile[0] === p.gentile[1] ? p.gentile[0] : `${p.gentile[0]}, ${p.gentile[1]}`}
               <small>le gentilé{p.gentile[0] !== p.gentile[1] ? ", au masculin et au féminin" : ""}</small>
+            </dd>
+          </div>
+        )}
+        {depuisMoi && (
+          <div>
+            <dt>Depuis chez toi</dt>
+            <dd>
+              {formatKm(depuisMoi.km)}
+              <small>
+                à vol d&apos;oiseau depuis {depuisMoi.depuis}, environ {dureeVol(depuisMoi.km)} de vol direct
+              </small>
             </dd>
           </div>
         )}
@@ -377,6 +406,20 @@ export function FichePays({ code, onChoisir, onFermer, compacte = false }: { cod
           <Qibla p={p} />
         </Rubrique>
       )}
+
+      <p className="pt-fiche-mon-pays">
+        {moi?.code === p.code ? (
+          <>
+            <Home className="size-4" aria-hidden="true" />
+            C&apos;est ton pays : les distances et les heures partent d&apos;ici.
+          </>
+        ) : (
+          <button type="button" className="pt-lien" onClick={() => regler({ monPays: p.code })}>
+            <Home className="size-4" aria-hidden="true" />
+            C&apos;est mon pays
+          </button>
+        )}
+      </p>
 
       {p.quiz && (
         <div className="pt-fiche-memoire" aria-label="Ce que ta mémoire en a retenu">

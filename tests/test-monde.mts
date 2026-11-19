@@ -371,5 +371,102 @@ for (const url of [CARTE_URL, CARTE_LEGERE_URL, CARTE_ULTRA_URL]) {
   ok("passeport : vide au départ", co.tampons(vide).size === 0);
 }
 
+/* ---------- La carte : les calques, le Soleil, la géographie physique, les outils ---------- */
+{
+  const ca = await import("../src/lib/monde/calques");
+  const gd = await import("../src/lib/monde/geographie-donnees");
+  ok("classes : sous la première borne", ca.classeDe(5, [10, 20]) === 0 && ca.classeDe(10, [10, 20]) === 1 && ca.classeDe(25, [10, 20]) === 2);
+  const pop = ca.calquePopulation();
+  ok("population : la Chine et l'Inde dans la dernière classe", pop.couleurs.cn === ca.SEQUENCE[ca.SEQUENCE.length - 1] && pop.couleurs.in === pop.couleurs.cn);
+  ok("population : Monaco dans la première", pop.couleurs.mc === ca.SEQUENCE[0]);
+  ok("population : chaque pays chiffré a sa couleur", PAYS.filter((p) => p.population).every((p) => pop.couleurs[p.code]));
+  ok("population : légende de sept classes", pop.legende.entrees.length === 7);
+  const sup = ca.calqueSuperficie();
+  ok("superficie : la Russie tout en haut, le Vatican tout en bas", sup.couleurs.ru === sup.legende.entrees[5].couleur && sup.couleurs.va === sup.legende.entrees[0].couleur);
+  const zones = ca.zonesMonetaires();
+  const zone = (c: string) => zones.find((z) => z.code === c);
+  ok("monnaies : la zone euro", (zone("EUR")?.membres.length ?? 0) >= 25 && ["fr", "de", "it", "es", "bg", "hr", "me", "xk"].every((c) => zone("EUR")!.membres.includes(c)));
+  ok("monnaies : le franc CFA d'Afrique de l'Ouest", ["sn", "ci", "ml", "ne", "bf", "bj", "tg", "gw"].every((c) => zone("XOF")?.membres.includes(c)));
+  ok("monnaies : le franc CFA d'Afrique centrale", ["cm", "cg", "ga", "td", "cf", "gq"].every((c) => zone("XAF")?.membres.includes(c)));
+  ok("monnaies : le dollar des Caraïbes orientales", zone("XCD")?.membres.includes("lc") === true);
+  const mon = ca.calqueMonnaies();
+  ok("monnaies : le Sahara occidental reste sans couleur", !mon.couleurs.eh);
+  ok("monnaies : la France et l'Allemagne de la même couleur", mon.couleurs.fr === mon.couleurs.de && Boolean(mon.couleurs.fr));
+  ok("monnaies : un pays à sa monnaie seule n'est pas colorié", !mon.couleurs.jp && !mon.couleurs.ma);
+  ok("organisations : la Ligue arabe compte 22 membres", Object.keys(ca.calqueOrganisation("la").couleurs).length === 22);
+  ok("organisations : l'Union européenne en compte 27", Object.keys(ca.calqueOrganisation("ue").couleurs).length === 27);
+  const langues = ca.languesRepandues();
+  ok("langues : l'anglais d'abord, puis le français et l'arabe", langues[0].langue === "anglais" && langues.slice(0, 4).some((l) => l.langue === "arabe"));
+  ok("langues : le titre élidé", ca.calqueLangue("arabe").legende.titre === "L'arabe" && ca.calqueLangue("français").legende.titre === "Le français");
+  ok("langues : l'arabe en Algérie et au Maroc", Boolean(ca.calqueLangue("arabe").couleurs.dz && ca.calqueLangue("arabe").couleurs.ma));
+  const hiver = ca.calqueFuseaux(new Date(Date.UTC(2026, 0, 15, 12)));
+  ok("fuseaux : la France et l'Allemagne à la même heure", hiver.couleurs.fr === hiver.couleurs.de);
+  ok("fuseaux : la France et le Royaume-Uni pas à la même heure", hiver.couleurs.fr !== hiver.couleurs.gb);
+  ok("fuseaux : la Russie, les États-Unis, le Canada rayés", ["ru", "us", "ca", "br", "au", "id", "mx"].every((c) => hiver.rayes.includes(c)));
+  ok("fuseaux : la Chine, la France, l'Inde ne sont pas rayées", !["cn", "fr", "in", "ua", "kz"].some((c) => hiver.rayes.includes(c)));
+  ok("fuseaux : onze heures en Russie", gd.FUSEAUX_PAYS.ru?.length === 11 && gd.FUSEAUX_PAYS.us?.length === 6 && gd.FUSEAUX_PAYS.ca?.length === 6);
+  ok("fuseaux : une couleur d'heure valide", /^hsl\(\d+, 52%, 60%\)$/.test(ca.couleurHeure(-210)));
+
+  // Le Soleil : au zénith sur l'équateur à l'équinoxe, sur le tropique du Cancer au solstice, sur Greenwich vers midi.
+  const equinoxe = ca.soleilAuZenith(new Date("2026-03-20T14:46:00Z"));
+  ok("Soleil : l'équinoxe de mars", Math.abs(equinoxe[0]) < 0.3, String(equinoxe));
+  const solstice = ca.soleilAuZenith(new Date("2026-06-21T08:24:00Z"));
+  ok("Soleil : le solstice de juin", Math.abs(solstice[0] - 23.44) < 0.15, String(solstice));
+  const decembre = ca.soleilAuZenith(new Date("2026-12-21T20:50:00Z"));
+  ok("Soleil : le solstice de décembre", Math.abs(decembre[0] + 23.44) < 0.15, String(decembre));
+  const midi = ca.soleilAuZenith(new Date("2026-04-15T12:00:00Z"));
+  ok("Soleil : midi à Greenwich", Math.abs(midi[1]) < 2.5, String(midi));
+  ok("Soleil : six heures plus tard, 90° plus à l'ouest", Math.abs(ca.soleilAuZenith(new Date("2026-04-15T18:00:00Z"))[1] - (midi[1] - 90)) < 0.6);
+  ok("Soleil : haut à son zénith", ca.hauteurSoleil(midi, new Date("2026-04-15T12:00:00Z")) > 89.5);
+  ok("Soleil : la nuit aux antipodes", ca.momentDuJour([-midi[0], midi[1] + 180], new Date("2026-04-15T12:00:00Z")) === "nuit");
+  ok("Soleil : il fait jour à Paris à midi en juin", ca.momentDuJour([48.85, 2.35], new Date("2026-06-21T11:00:00Z")) === "jour");
+  ok("Soleil : il fait nuit à Paris à minuit", ca.momentDuJour([48.85, 2.35], new Date("2026-01-15T23:00:00Z")) === "nuit");
+
+  // La géographie physique : le fichier existe, il est complet, les noms sont en français.
+  const nom = gd.GEOGRAPHIE_URL.replace(/^\//, "");
+  ok("géographie : le fichier existe", existsSync(new URL(`../public/${nom}`, import.meta.url)));
+  const geo = JSON.parse(readFileSync(new URL(`../public/${nom}`, import.meta.url), "utf8")) as {
+    topo: Topology;
+    mers: [string, number, number, number][];
+    lacs: [string, number, number, number][];
+    fleuves: [string, number, number, number, number, number][];
+    chaines: [string, number, number, number][];
+    deserts: [string, number, number, number][];
+    monts: [number, number, number, number][];
+    sommets: [string, number, number, number, number][];
+    pays: Record<string, [number, number, number]>;
+  };
+  for (const m of ["Océan Atlantique", "Océan Pacifique", "Océan Indien", "Mer Méditerranée", "Mer Rouge", "Golfe Arabo-Persique", "Mer Noire", "Mer Caspienne", "La Manche"]) ok(`mer : ${m}`, geo.mers.some((x) => x[0] === m));
+  for (const f of ["Nil", "Niger", "Congo", "Amazone", "Euphrate", "Tigre", "Danube", "Loire", "Rhône"]) ok(`fleuve : ${f}`, geo.fleuves.some((x) => x[0] === f));
+  for (const c of ["Himalaya", "Alpes", "Atlas", "Cordillère des Andes", "Hoggar", "Pyrénées"]) ok(`chaîne : ${c}`, geo.chaines.some((x) => x[0] === c));
+  ok("déserts : le Sahara et le Rub al-Khali", geo.deserts.some((x) => x[0] === "Sahara") && geo.deserts.some((x) => x[0] === "Rub al-Khali"));
+  ok("relief : plus de mille monts sur trois niveaux", geo.monts.length > 1000 && [0, 1, 2].every((n) => geo.monts.some((m) => m[2] === n)));
+  ok("sommets : l'Everest et le Toubkal", geo.sommets.some((s) => s[0] === "Everest" && s[3] === 8849) && geo.sommets.some((s) => s[0] === "Toubkal"));
+  ok("géographie : des coordonnées sur la Terre", [...geo.mers, ...geo.lacs, ...geo.chaines, ...geo.deserts].every((x) => Math.abs(x[1]) <= 180 && Math.abs(x[2]) <= 90) && geo.monts.every((m) => Math.abs(m[0]) <= 180 && Math.abs(m[1]) <= 90));
+  ok("géographie : les tracés des lacs et des fleuves", (geo.topo.objects.lacs as GeometryCollection).geometries.length > 100 && (geo.topo.objects.fleuves as GeometryCollection).geometries.length > 1000);
+  // Le nom de chaque pays s'écrit dans le pays (sauf l'Indonésie, écrite entre ses îles, et les îlots de
+  // quelques kilomètres, dont le nom s'écrit à côté de leur repère).
+  const carteDetail = JSON.parse(readFileSync(new URL(`../public${CARTE_URL}`, import.meta.url), "utf8")) as Topology;
+  const formesPays = feature(carteDetail, carteDetail.objects.pays as GeometryCollection).features;
+  let dehors = 0;
+  for (const f of formesPays) {
+    if (!f.id) continue;
+    const e = geo.pays[String(f.id)];
+    ok(`nom placé : ${f.id}`, Boolean(e));
+    if (e && e[2] >= 5 && f.id !== "id" && !geoContains(f, [e[0], e[1]])) dehors++;
+  }
+  ok("noms des pays : chacun dans son pays", dehors === 0, `${dehors} dehors`);
+  ok("noms des pays : un grand cercle intérieur pour les grands", geo.pays.ru[2] > 800 && geo.pays.fr[2] > 200 && geo.pays.va[2] < 5);
+
+  // Les outils et les jeux.
+  const ou = await import("../src/lib/monde/carte-outils");
+  ok("vraie taille : la France et le Brésil", ou.comparerSurfaces(551695, 8515767) === "15 fois plus vaste", ou.comparerSurfaces(551695, 8515767));
+  ok("vraie taille : moins vaste", ou.comparerSurfaces(100, 50) === "2 fois moins vaste" && ou.comparerSurfaces(100, 55) === "1,8 fois moins vaste");
+  ok("vraie taille : à peu près pareil", ou.comparerSurfaces(100, 105) === "à peu près aussi vaste");
+  ok("coordonnées", ou.coordonnees([48.853, 2.349]) === "48,9° N, 2,3° E" && ou.coordonnees([-33.9, -70.6]) === "33,9° S, 70,6° O");
+  ok("capitales : mille points pile dessus", ou.pointsCapitale(0) === 1000 && ou.pointsCapitale(1200) === 368 && ou.pointsCapitale(8000) < 2);
+  ok("jeux : trois jeux, des records distincts", ou.JEUX.length === 3 && new Set(ou.JEUX.map((j) => j.cle)).size === 3);
+}
+
 console.log(echecs ? `\n${echecs} échec(s).` : `Tout est bon (${questions} questions de niveau vérifiées).`);
 process.exit(echecs ? 1 : 0);

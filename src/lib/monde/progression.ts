@@ -52,6 +52,8 @@ export type Profil = {
   globe: string;
   cadre: string;
   bateau: string;
+  /** Le pays de chez soi (son code), choisi sur la carte : les distances et les heures partent de lui. */
+  monPays: string;
   q: number;
 };
 export type Difficulte = "facile" | "normal" | "difficile";
@@ -97,6 +99,7 @@ const profilVide = (): Profil => ({
   globe: "globe-classique",
   cadre: "cadre-aucun",
   bateau: "bateau-safran",
+  monPays: "",
   q: 0,
 });
 const vide: Etat = { niveaux: {}, pays: {}, profil: profilVide(), cabinets: {}, records: {}, erreurs: [], confusions: {}, favoris: {} };
@@ -466,7 +469,7 @@ export function finirNiveauCabinet(cab: string, n: number, r: { bonnes: number; 
   return { etoiles: note, ducats: x.gain, premiereFois: x.premiereFois, record: x.record, jours: x.jours };
 }
 
-export function regler(r: Partial<Pick<Profil, "chrono" | "voix" | "objectif" | "difficulte" | "questions" | "rythme" | "globe" | "cadre" | "bateau">>) {
+export function regler(r: Partial<Pick<Profil, "chrono" | "voix" | "objectif" | "difficulte" | "questions" | "rythme" | "globe" | "cadre" | "bateau" | "monPays">>) {
   const e = lire();
   ecrire({ ...e, profil: { ...e.profil, ...r, q: Date.now() } });
   void noter("monde", "profil");
@@ -531,6 +534,7 @@ export function rangerValeur(c: string, v: unknown): boolean {
       globe: recent && typeof p.globe === "string" ? p.globe : a.globe,
       cadre: recent && typeof p.cadre === "string" ? p.cadre : a.cadre,
       bateau: recent && typeof p.bateau === "string" ? p.bateau : a.bateau,
+      monPays: recent && typeof p.monPays === "string" && /^[a-z]{0,2}$/.test(p.monPays) ? p.monPays : a.monPays,
       q: Math.max(a.q, nombre(p.q)),
     };
     ecrire({ ...e, profil });
