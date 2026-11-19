@@ -63,7 +63,7 @@ export default async function PageParametres() {
             Animations
           </h2>
           <p className="mt-3 text-encre-douce">
-            Porte de lumière : <strong className="text-encre">{libellePortail(reglages.portail_duree_ms)}</strong>.
+            Porte de lumière&nbsp;: <strong className="text-encre">{libellePortail(reglages.portail_duree_ms)}</strong>.
           </p>
           <div className="mt-6">
             <FormulaireAnimations reglages={reglages} />
