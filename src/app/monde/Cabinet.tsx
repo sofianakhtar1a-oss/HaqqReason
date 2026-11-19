@@ -372,7 +372,7 @@ export function PartieCabinet({ lancement, onFermer, onRejouer }: { lancement: L
 
   const e = q ? element(id, q.cible) : undefined;
   const contenu = (
-    <div className="pt pt-partie" data-accent="safran" data-phase={phase} role="dialog" aria-modal="true" aria-label={lancement.titre}>
+    <div className="pt pt-partie" data-accent="safran" data-globe={monde.profil.globe} data-phase={phase} role="dialog" aria-modal="true" aria-label={lancement.titre}>
       <div className="pt-partie-fond" aria-hidden="true" />
       <header className="pt-partie-tete">
         <button type="button" className="pt-icone" onClick={onFermer} aria-label="Quitter la partie">

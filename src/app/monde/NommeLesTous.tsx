@@ -153,7 +153,7 @@ export function NommeLesTous({ lancement, onFermer, onRejouer }: { lancement: La
   const total = liste.entrees.length;
 
   const contenu = (
-    <div className="pt pt-partie pt-nomme" data-accent="safran" data-phase={phase} role="dialog" aria-modal="true" aria-label={liste.titre}>
+    <div className="pt pt-partie pt-nomme" data-accent="safran" data-globe={monde.profil.globe} data-phase={phase} role="dialog" aria-modal="true" aria-label={liste.titre}>
       <div className="pt-partie-fond" aria-hidden="true" />
       <header className="pt-partie-tete">
         <button type="button" className="pt-icone" onClick={onFermer} aria-label="Quitter">

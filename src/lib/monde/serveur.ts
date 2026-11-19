@@ -4,6 +4,7 @@ import { avatarSur, nomPublic } from "@/lib/langues/points";
 import { dbAdmin } from "@/lib/supabase";
 import type { ModeJeu } from "./categories";
 import { evaluer, pointsDuel, type ReponseEnvoyee } from "./points";
+import { cleDefi, questionsDefi, type SorteDefi } from "./defis";
 import { juger, questionsDuel } from "./quiz";
 
 /*
@@ -178,4 +179,90 @@ export async function repondreDuel(compte: string, id: string, index: number, re
   const r = await appeler("portulan_duel_repondre", { p_utilisateur: compte, p_id: id, p_index: index, p_juste: juste, p_points: pointsDuel(juste, ms) });
   if (!("erreur" in r)) void enregistrerReponses(compte, [{ type: question.type, cible: question.cible, reponse, nb: question.nb }]);
   return r;
+}
+
+/* ---------- Le double XP, les records en ligne, les défis (migration 018) ---------- */
+
+/** Dix minutes d'XP double, une fois par jour. */
+export async function activerDouble(compte: string): Promise<{ jusqua: number } | { erreur: "deja"; jusqua: number | null } | Erreur> {
+  try {
+    const { data, error } = await dbAdmin().rpc("portulan_double", { p_utilisateur: compte });
+    if (error || !data) return { erreur: "indisponible" };
+    const r = data as { jusqua?: number | null; erreur?: string };
+    if (r.erreur === "deja") return { erreur: "deja", jusqua: r.jusqua === null || r.jusqua === undefined ? null : Number(r.jusqua) };
+    if (r.erreur) return { erreur: "indisponible" };
+    return { jusqua: Number(r.jusqua) };
+  } catch {
+    return { erreur: "indisponible" };
+  }
+}
+
+export type ModeRecord = "eclair" | "survie" | "marathon";
+export type LigneRecord = { rang: number; cle: string; nom: string; avatar: string; points: number; moi: boolean; ms?: number };
+export type TableauRecords = { top: LigneRecord[]; moi: { rang: number; points: number; ms?: number } | null; mien: number | null; participants?: number; jour?: string };
+
+type LigneBrute = { rang: number; id: string; nom: string; avatar: string; points: number; ms?: number };
+const lignes = (compte: string, top: LigneBrute[]): LigneRecord[] =>
+  (top ?? []).map((l) => ({ rang: Number(l.rang), cle: cleDe(l.id), nom: nomPublic(l.nom), avatar: avatarSur(l.avatar), points: Number(l.points) || 0, moi: l.id === compte, ...(l.ms !== undefined ? { ms: Number(l.ms) } : {}) }));
+
+export async function envoyerRecord(compte: string, mode: ModeRecord, score: number): Promise<{ record: number; nouveau: boolean } | Erreur> {
+  try {
+    const { data, error } = await dbAdmin().rpc("portulan_record_envoyer", { p_utilisateur: compte, p_mode: mode, p_score: Math.max(0, Math.round(score)) });
+    if (error || !data) return { erreur: "indisponible" };
+    const r = data as { record?: number; nouveau?: boolean; erreur?: string };
+    if (r.erreur) return { erreur: r.erreur === "illisible" ? "illisible" : "indisponible" };
+    return { record: Number(r.record) || 0, nouveau: Boolean(r.nouveau) };
+  } catch {
+    return { erreur: "indisponible" };
+  }
+}
+
+export async function lireRecords(compte: string, mode: ModeRecord): Promise<TableauRecords | null> {
+  try {
+    const { data, error } = await dbAdmin().rpc("portulan_records_lire", { p_utilisateur: compte, p_mode: mode });
+    if (error || !data) return null;
+    const r = data as { top: LigneBrute[]; moi: { rang: number; points: number } | null; mien: number | null };
+    return { top: lignes(compte, r.top), moi: r.moi ? { rang: Number(r.moi.rang), points: Number(r.moi.points) } : null, mien: r.mien === null ? null : Number(r.mien) };
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Le défi du jour (ou de la semaine) : le serveur retrouve les questions à partir de la date,
+ * juge les réponses une à une, enregistre le score (une seule tentative) et compte l'XP.
+ */
+export async function envoyerDefi(compte: string, sorte: SorteDefi, cle: string, reponses: string[], ms: number): Promise<{ score: number; deja: boolean; resultats: boolean[] } | Erreur> {
+  // Le défi commencé juste avant minuit (ou lundi 0 h) reste celui qu'on a joué.
+  const valides = [cleDefi(sorte), cleDefi(sorte, new Date(Date.now() - 20 * 60_000))];
+  if (!valides.includes(cle)) return { erreur: "illisible" };
+  const questions = questionsDefi(sorte, cle);
+  if (reponses.length !== questions.length) return { erreur: "illisible" };
+  const resultats = questions.map((q, i) => juger(q.type, q.cible, reponses[i] ?? "") !== "faux");
+  const score = resultats.filter(Boolean).length;
+  try {
+    const { data, error } = await dbAdmin().rpc("portulan_defi_envoyer", { p_utilisateur: compte, p_sorte: sorte, p_score: score, p_ms: Math.max(0, Math.round(ms)) });
+    if (error || !data) return { erreur: "indisponible" };
+    const r = data as { score?: number; deja?: boolean; erreur?: string };
+    if (r.erreur) return { erreur: r.erreur === "illisible" ? "illisible" : "indisponible" };
+    if (!r.deja) {
+      // L'XP, comme pour toute autre partie (par lots de douze).
+      const toutes = questions.map((q, i) => ({ type: q.type, cible: q.cible, reponse: reponses[i] ?? "", nb: q.nb }));
+      for (let k = 0; k < toutes.length; k += 12) await enregistrerReponses(compte, toutes.slice(k, k + 12));
+    }
+    return { score: Number(r.score) || 0, deja: Boolean(r.deja), resultats };
+  } catch {
+    return { erreur: "indisponible" };
+  }
+}
+
+export async function lireDefi(compte: string, sorte: SorteDefi): Promise<TableauRecords | null> {
+  try {
+    const { data, error } = await dbAdmin().rpc("portulan_defi_lire", { p_utilisateur: compte, p_sorte: sorte });
+    if (error || !data) return null;
+    const r = data as { top: LigneBrute[]; moi: { rang: number; points: number; ms: number } | null; participants: number; jour: string };
+    return { top: lignes(compte, r.top), moi: r.moi ? { rang: Number(r.moi.rang), points: Number(r.moi.points), ms: Number(r.moi.ms) } : null, mien: r.moi ? Number(r.moi.points) : null, participants: Number(r.participants) || 0, jour: String(r.jour) };
+  } catch {
+    return null;
+  }
 }

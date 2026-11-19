@@ -4637,3 +4637,595 @@ html[data-pt-transition]::view-transition-new(root) {
     animation: none;
   }
 }
+
+/* =====================================================================
+   Revenir chaque jour, collectionner, jouer autrement
+   ===================================================================== */
+
+/* Les thèmes du globe (achetés à la boutique). */
+.pt.pt[data-globe="globe-parchemin"] {
+  --pt-mer-centre: #ecdfc2;
+  --pt-mer-bord: #c9b58a;
+  --pt-terre: #b59e6e;
+  --pt-trait: #6d522b;
+  --pt-grille: rgba(109, 82, 43, 0.18);
+  --pt-repere: #8a5a12;
+}
+.pt.pt[data-globe="globe-nuit"] {
+  --pt-mer-centre: #070a16;
+  --pt-mer-bord: #000;
+  --pt-terre: #2c3552;
+  --pt-trait: #94a8de;
+  --pt-grille: rgba(148, 168, 222, 0.12);
+  --pt-repere: #c9d6ff;
+}
+.pt.pt[data-globe="globe-emeraude"] {
+  --pt-mer-centre: #0f5452;
+  --pt-mer-bord: #052b2d;
+  --pt-terre: #d2c290;
+  --pt-trait: #f1e2b0;
+  --pt-grille: rgba(241, 226, 176, 0.14);
+  --pt-repere: #ffe39a;
+}
+.pt-escale[data-courant] .pt-escale-medaille svg {
+  color: var(--pt-bateau, var(--sa));
+}
+
+/* Reprendre une partie. */
+.pt-reprise {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem 1rem;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--sa-trait);
+  background: var(--sa-doux);
+  font-size: 0.92rem;
+}
+
+/* Le combo. */
+.pt-combo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.pt-combo[data-palier] {
+  border-color: var(--sa-trait);
+  background: var(--sa-doux);
+  color: var(--sa);
+  animation: pt-combo 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.pt-combo[data-palier="3"] {
+  border-color: var(--or-trait);
+  color: var(--or);
+}
+.pt-combo-x {
+  font-size: 0.75rem;
+}
+@keyframes pt-combo {
+  from {
+    transform: scale(0.7);
+  }
+}
+.pt-fin-vitesse,
+.pt-fin-medaille {
+  max-width: 32rem;
+  font-size: 0.92rem;
+  color: var(--encre-douce);
+}
+.pt-fin-medaille {
+  font-weight: 600;
+  color: var(--sa);
+}
+
+/* Les défis. */
+.pt-defis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 0.8rem;
+}
+.pt-defi {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 1.1rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.pt-defi[data-joue] {
+  border-color: var(--or-trait);
+}
+.pt-defi .bouton {
+  align-self: flex-start;
+  margin-top: auto;
+}
+.pt-defi-tete {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 700;
+}
+.pt-defi-tete svg {
+  color: var(--sa);
+}
+.pt-defi-texte {
+  font-size: 0.88rem;
+  color: var(--encre-douce);
+}
+.pt-defi-score {
+  font-size: 0.95rem;
+}
+.pt-defi-top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.85rem;
+}
+.pt-defi-top li {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.pt-defi-top li span:first-of-type {
+  flex: 1;
+}
+.pt-defi-top li[data-moi] {
+  font-weight: 700;
+  color: var(--sa);
+}
+.pt-chrono-continents {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+.pt-puce-record {
+  margin-left: 0.35rem;
+  padding: 0 0.4rem;
+  border-radius: 999px;
+  background: var(--sa-doux);
+  font-size: 0.75rem;
+  color: var(--sa);
+}
+.pt-defi-partage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.pt-defi-carres {
+  display: grid;
+  grid-template-columns: repeat(10, 1.35rem);
+  gap: 0.3rem;
+}
+.pt-defi-carres span {
+  aspect-ratio: 1;
+  border-radius: 0.3rem;
+  background: var(--pt-faux);
+  animation: pt-option 0.35s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+}
+.pt-defi-carres span[data-juste] {
+  background: var(--pt-juste);
+}
+
+/* La catégorie : la carte de conquête, l'épreuve finale. */
+.pt-categorie-outils {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1rem;
+  margin: 0.4rem 0 0.8rem;
+}
+.pt-conquete {
+  margin-bottom: 1rem;
+}
+.pt-conquete > :first-child {
+  aspect-ratio: 2 / 1;
+  max-height: 60vh;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.pt-epreuve {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  padding: 1rem 1.2rem;
+  border-radius: 1.1rem;
+  border: 1px dashed var(--trait);
+  background: var(--surface);
+  opacity: 0.85;
+}
+.pt-epreuve[data-ouverte] {
+  border-style: solid;
+  border-color: var(--or-trait);
+  background: color-mix(in srgb, var(--or) 9%, var(--surface));
+  opacity: 1;
+}
+.pt-epreuve > div {
+  flex: 1;
+}
+.pt-epreuve-icone {
+  width: 2.4rem;
+  height: 2.4rem;
+  flex: none;
+  color: var(--or);
+}
+.pt-epreuve-titre {
+  font-family: var(--pt-serif);
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 600;
+}
+.pt-epreuve-texte {
+  font-size: 0.9rem;
+  color: var(--encre-douce);
+}
+
+/* Ma collection. */
+.pt-collection-tete {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+.pt-medaillon-profil {
+  display: grid;
+  place-items: center;
+  width: 4.6rem;
+  height: 4.6rem;
+  flex: none;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--or) 45%, var(--surface-forte)), color-mix(in srgb, var(--or) 12%, var(--surface)));
+  box-shadow: inset 0 0 0 2px var(--or-trait);
+  font-family: var(--pt-serif);
+  font-size: 1.9rem;
+  font-weight: 650;
+}
+.pt-medaillon-profil[data-cadre] {
+  box-shadow:
+    inset 0 0 0 2px var(--surface),
+    0 0 0 3px var(--cadre),
+    0 0 0 6px color-mix(in srgb, var(--cadre) 35%, transparent);
+}
+.pt-niveau-barre {
+  display: block;
+  width: min(22rem, 100%);
+  margin-top: 0.5rem;
+}
+.pt-passeport-page {
+  margin: 1.2rem 0;
+  padding: 1rem 1.1rem 1.2rem;
+  border-radius: 1.1rem;
+  background:
+    repeating-linear-gradient(0deg, transparent 0 1.6rem, color-mix(in srgb, var(--encre) 4%, transparent) 1.6rem 1.65rem),
+    color-mix(in srgb, var(--or) 6%, var(--surface));
+  border: 1px solid var(--or-trait);
+}
+.pt-passeport-titre {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  font-family: var(--pt-serif);
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 600;
+}
+.pt-passeport-titre span {
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-style: normal;
+  color: var(--encre-douce);
+}
+.pt-tampons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6.4rem, 1fr));
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pt-tampons li {
+  display: grid;
+  place-items: center;
+  min-height: 6rem;
+}
+.pt-tampon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  width: 100%;
+  padding: 0.5rem 0.3rem;
+  border: 2px solid color-mix(in srgb, var(--sa) 70%, transparent);
+  border-radius: 0.6rem;
+  outline: 1px solid color-mix(in srgb, var(--sa) 50%, transparent);
+  outline-offset: 2px;
+  color: color-mix(in srgb, var(--sa) 85%, var(--encre));
+  text-align: center;
+  transform: rotate(var(--rot, 0deg));
+  mix-blend-mode: normal;
+}
+.pt-tampon .pt-drapeau {
+  width: 2rem;
+  filter: saturate(0.8);
+}
+.pt-tampon-nom {
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.pt-tampon-date {
+  font-size: 0.66rem;
+  font-weight: 700;
+}
+.pt-tampon-vide {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.4rem;
+  border: 1px dashed color-mix(in srgb, var(--encre) 16%, transparent);
+  border-radius: 0.6rem;
+  font-size: 0.7rem;
+  text-align: center;
+  color: color-mix(in srgb, var(--encre-douce) 70%, transparent);
+}
+.pt-medailles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr));
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pt-medailles li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.9rem 0.8rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  text-align: center;
+}
+.pt-medailles li:not([data-obtenue]) {
+  opacity: 0.6;
+}
+.pt-medaille {
+  position: relative;
+  width: 4.2rem;
+  height: 4.2rem;
+}
+.pt-medaille svg {
+  width: 100%;
+  height: 100%;
+}
+.pt-medailles li[data-metal="bronze"] {
+  --metal: #b07a45;
+}
+.pt-medailles li[data-metal="argent"] {
+  --metal: #b7c1cc;
+}
+.pt-medailles li[data-metal="or"] {
+  --metal: #e0b35a;
+}
+.pt-medailles li[data-metal="saphir"] {
+  --metal: #4b7fe0;
+}
+.pt-medaille-ruban {
+  fill: none;
+  stroke: var(--sa);
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+.pt-medaille-disque {
+  fill: var(--metal);
+}
+.pt-medailles li:not([data-obtenue]) .pt-medaille-disque {
+  fill: color-mix(in srgb, var(--encre) 18%, transparent);
+}
+.pt-medaille-filet {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.55);
+  stroke-width: 1.2;
+}
+.pt-medaille-etoile {
+  fill: rgba(255, 255, 255, 0.8);
+}
+.pt-medaille-verrou {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  color: var(--encre-douce);
+}
+.pt-medaille-nom {
+  font-family: var(--pt-serif);
+  font-size: 1.05rem;
+  font-style: italic;
+  font-weight: 600;
+}
+.pt-medaille-texte {
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}
+.pt-boutique-solde {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.8rem 0;
+}
+.pt-boutique-double {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 0.6rem 0 1.2rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--sa-trait);
+  background: var(--sa-doux);
+}
+.pt-boutique-double > svg {
+  flex: none;
+  color: var(--sa);
+}
+.pt-boutique-double > div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: 0.88rem;
+}
+.pt-boutique-ok {
+  font-weight: 600;
+  color: var(--sa);
+}
+.pt-boutique-rayon {
+  margin-bottom: 1.2rem;
+}
+.pt-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pt-articles li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.75rem 0.9rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.pt-articles li[data-choisi] {
+  border-color: var(--sa-trait);
+}
+.pt-article-apercu {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  flex: none;
+  border-radius: 50%;
+  background: var(--surface-forte);
+  color: var(--azur);
+}
+.pt-article-apercu[data-id="globe-classique"] {
+  background: radial-gradient(circle at 35% 35%, #8b8572 0 22%, #1c2e72 23%);
+}
+.pt-article-apercu[data-id="globe-parchemin"] {
+  background: radial-gradient(circle at 35% 35%, #b59e6e 0 22%, #ecdfc2 23%);
+}
+.pt-article-apercu[data-id="globe-nuit"] {
+  background: radial-gradient(circle at 35% 35%, #2c3552 0 22%, #070a16 23%);
+}
+.pt-article-apercu[data-id="globe-emeraude"] {
+  background: radial-gradient(circle at 35% 35%, #d2c290 0 22%, #0f5452 23%);
+}
+.pt-article-apercu[data-sorte="cadre"] {
+  box-shadow: inset 0 0 0 4px var(--teinte);
+}
+.pt-article-apercu[data-sorte="bateau"] {
+  background: var(--teinte);
+}
+.pt-article-corps {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  font-size: 0.85rem;
+  color: var(--encre-douce);
+}
+.pt-article-corps strong {
+  font-size: 0.95rem;
+  color: var(--encre);
+}
+
+/* Les ligues de la semaine. */
+.pt-ligue {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem 1rem;
+  margin: 0.8rem 0 1.2rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 1.1rem;
+  border: 1px solid color-mix(in srgb, var(--ligue) 55%, var(--trait));
+  background: color-mix(in srgb, var(--ligue) 10%, var(--surface));
+}
+.pt-ligue > div {
+  flex: 1;
+  min-width: 14rem;
+}
+.pt-ligue-blason {
+  width: 2.8rem;
+  height: 3.2rem;
+  flex: none;
+  clip-path: polygon(50% 0, 100% 18%, 100% 62%, 50% 100%, 0 62%, 0 18%);
+  background: linear-gradient(160deg, color-mix(in srgb, var(--ligue) 70%, white), var(--ligue));
+}
+.pt-ligue-nom {
+  font-family: var(--pt-serif);
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 600;
+}
+.pt-ligue-texte {
+  font-size: 0.86rem;
+  color: var(--encre-douce);
+}
+.pt-ligues {
+  display: flex;
+  gap: 0.3rem;
+  margin: 0.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.pt-ligues li {
+  width: 1.4rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ligue) 40%, transparent);
+}
+.pt-ligues li[data-actuelle] {
+  background: var(--ligue);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ligue) 40%, transparent);
+}
+.pt-records {
+  margin-top: 2rem;
+}
+.pt-avatar[data-cadre] {
+  box-shadow:
+    0 0 0 2px var(--surface),
+    0 0 0 4px var(--cadre);
+}
+@media (prefers-reduced-motion: reduce) {
+  .pt-combo[data-palier],
+  .pt-defi-carres span {
+    animation: none;
+  }
+}
+.pt-heros .pt-bilan {
+  grid-template-columns: repeat(auto-fit, minmax(6.2rem, 1fr));
+}

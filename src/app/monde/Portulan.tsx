@@ -8,7 +8,9 @@ import { BoutonTheme } from "@/components/BoutonTheme";
 import { BoutonCompte } from "@/components/compte/BoutonCompte";
 import { Logo } from "@/components/Logo";
 import { useAccesComplet } from "@/lib/client/acces";
+import { article } from "@/lib/monde/collection";
 import { lireScore } from "@/lib/monde/compte-client";
+import { useMonde } from "@/lib/monde/progression";
 import { useResolu, useTextes } from "@/lib/modules/textes-client";
 import { Accueil } from "./Accueil";
 import { Atlas } from "./Atlas";
@@ -108,6 +110,7 @@ export function Portulan() {
   const [route, setRoute] = useState<Route>({ onglet: premier, detail: null });
   const [partie, setPartie] = useState<Lancement | null>(null);
   const accesComplet = useAccesComplet();
+  const monde = useMonde();
 
   useEffect(() => {
     const lire = () => setRoute(lireRoute(ONGLETS));
@@ -160,7 +163,7 @@ export function Portulan() {
   );
 
   return (
-    <div className="pt pt-espace" data-accent="safran" data-onglet={route.onglet}>
+    <div className="pt pt-espace" data-accent="safran" data-onglet={route.onglet} data-globe={monde.profil.globe} style={{ "--pt-bateau": article(monde.profil.bateau)?.couleur ?? "var(--sa)" } as React.CSSProperties}>
       <Lueur />
       <header className="pt-tete sans-impression">
         <Logo />

@@ -1,20 +1,22 @@
 "use client";
 
-import { ArrowRight, Check, Hourglass, Lightbulb, LocateFixed, Minus, Plus, Printer, RotateCcw, Shuffle, Undo2, X } from "lucide-react";
+import { ArrowRight, Check, Flame, Hourglass, Lightbulb, LocateFixed, Minus, Plus, Printer, RotateCcw, Share2, Shuffle, SkipForward, Snowflake, Undo2, X } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { eclat, pluieDeLettres } from "@/lib/langues/feux";
 import { formatPopulation, formatSuperficie, motCapitale, NOM_CONTINENT, PAR_CODE, pays } from "@/lib/monde/atlas";
-import { CATEGORIES, type CategorieId, TYPES, type TypeQuestion } from "@/lib/monde/categories";
-import { envoyerReponse } from "@/lib/monde/compte-client";
+import { CATEGORIES, type CategorieId, TYPES, type TypeQuestion, typesDe } from "@/lib/monde/categories";
+import { compteMonde, envoyerReponse } from "@/lib/monde/compte-client";
 import { deriver, hasard, melanger, nouvelleGraine } from "@/lib/monde/hasard";
-import { COEURS, grade, NB_NIVEAUX } from "@/lib/monde/niveaux";
+import { COEURS, grade, NB_NIVEAUX, ordreDe } from "@/lib/monde/niveaux";
 import { baseDe, gainDe, type Joker, JOKERS } from "@/lib/monde/points";
 import { useRecits } from "@/lib/monde/recits-client";
-import { aReviserAvant, battreRecord, battreRecordDe, type Bilan, depenser, ducats, erreursRecentes, finirNiveau, noterErreur, noterReponse, revisionsDues, useMonde } from "@/lib/monde/progression";
+import { aReviserAvant, battreRecord, battreRecordDe, type Bilan, depenser, ducats, erreursRecentes, finirNiveau, gagnerDucats, noterErreur, noterReponse, oublierPartie, partieSauvee, revisionsDues, sauverPartie, useMonde } from "@/lib/monde/progression";
 import { categorieDe, consigne, fabriquer, juger, partieDeNiveau, type Question, questionMelangee, questionSur } from "@/lib/monde/quiz";
 import type { Jugement } from "@/lib/monde/texte";
-import type { CabinetId, MethodeCabinet } from "@/lib/monde/types";
+import type { CabinetId, ContinentId, MethodeCabinet } from "@/lib/monde/types";
+import { cleDefi, DUREE_DEFI, questionsDefi, type SorteDefi, texteAPartager } from "@/lib/monde/defis";
+import { PAYS } from "@/lib/monde/donnees";
 import { indiceDe, mention, piegeEntre, PIEGES_CAPITALES, paysDuTheme, QUESTIONS_EXAMEN, THEMES, type ThemeId } from "@/lib/monde/apprendre";
 import { dire, taire } from "@/lib/monde/voix";
 import { BoutonVoix, Chrono, Coeurs, Ducats, Etoiles } from "./communs";
@@ -35,7 +37,7 @@ import { Globe, type GlobeRef } from "./Globe";
 export type Lancement = {
   cle: string;
   /** cabinet : un niveau d'un cabinet (Cabinet.tsx) ; nomme : « Nomme-les tous » (NommeLesTous.tsx). */
-  sorte: "niveau" | "tour" | "eclair" | "survie" | "revision" | "cabinet" | "nomme" | "theme" | "erreurs" | "examen";
+  sorte: "niveau" | "tour" | "eclair" | "survie" | "revision" | "cabinet" | "nomme" | "theme" | "erreurs" | "examen" | "defi" | "epreuve" | "marathon" | "chrono" | "filtre";
   categorie?: CategorieId;
   niveau?: number;
   methode?: TypeQuestion | null;
@@ -45,17 +47,49 @@ export type Lancement = {
   liste?: string;
   /** Une route thématique : l'Afrique, l'Union européenne, la Ligue arabe… */
   theme?: ThemeId;
+  /** Le défi du jour ou de la semaine, et sa date. */
+  defi?: SorteDefi;
+  cleDefi?: string;
+  /** Le contre-la-montre d'un continent, ou une route filtrée par continent. */
+  continent?: ContinentId;
+  /** Reprendre la partie laissée en cours. */
+  reprise?: boolean;
   titre: string;
 };
+
+/** Les parties qu'on peut reprendre plus tard. */
+const REPRENABLES: Lancement["sorte"][] = ["niveau", "theme", "filtre", "epreuve"];
+type Sauvegarde = { lancement: Lancement; questions: Question[]; index: number; coeurs: number; bonnes: number; fautes: number; xp: number };
 
 const mouvementReduit = () => typeof window !== "undefined" && window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
 const DUREE_ECLAIR = 60_000;
 
-function dureeQuestion(l: Lancement, q: Question): number | null {
-  if (l.sorte === "revision" || l.sorte === "eclair" || l.sorte === "erreurs") return null;
+/** Le temps qu'une question demande en plus d'un simple choix (écrire, situer, colorier…). */
+const enPlus = (q: Question) => {
   const r = TYPES[q.type].reponse;
-  const base = l.sorte === "survie" ? 10_000 : l.sorte === "tour" ? 15_000 : (l.niveau ?? 1) <= 5 ? 20_000 : (l.niveau ?? 1) <= 10 ? 15_000 : 12_000;
-  return base + (r === "ecrit" ? 10_000 : r === "clic" || r === "placer" ? 6_000 : r === "coloriage" || r === "classer" || r === "puzzle" ? 15_000 : 0);
+  return r === "ecrit" ? 10_000 : r === "clic" || r === "placer" ? 6_000 : r === "coloriage" || r === "classer" || r === "puzzle" ? 15_000 : 0;
+};
+
+function dureeQuestion(l: Lancement, q: Question, rythme: "lent" | "normal" | "rapide"): number | null {
+  if (l.sorte === "revision" || l.sorte === "eclair" || l.sorte === "erreurs" || l.sorte === "chrono") return null;
+  if (l.sorte === "defi") return DUREE_DEFI;
+  const base = l.sorte === "survie" || l.sorte === "marathon" ? 10_000 : l.sorte === "tour" ? 15_000 : (l.niveau ?? 8) <= 5 ? 20_000 : (l.niveau ?? 8) <= 10 ? 15_000 : 12_000;
+  return Math.round((base + enPlus(q)) * (rythme === "lent" ? 1.5 : rythme === "rapide" ? 0.7 : 1));
+}
+
+/** L'étoile de vitesse : en moyenne, six secondes par choix (plus pour écrire ou situer). */
+const tempsVise = (q: Question) => 6_000 + enPlus(q);
+
+/** Une question d'un continent, pour le contre-la-montre (drapeau, capitale ou carte). */
+function questionContinent(graine: number, continent: ContinentId): Question | null {
+  const h = hasard(graine);
+  const codes = PAYS.filter((p) => p.quiz && p.statut !== "territoire" && p.continent === continent).map((p) => p.code);
+  for (let essai = 0; essai < 6; essai++) {
+    const cat = (["drapeaux", "capitales", "cartes"] as const)[Math.floor(h() * 3)];
+    const q = questionSur(Math.floor(h() * 4294967296), cat, codes[Math.floor(h() * codes.length)], 6, true, true);
+    if (q) return q;
+  }
+  return null;
 }
 
 /** Le niveau de difficulté des questions des modes rapides : un peu au-delà de ce que l'on a déjà fait. */
@@ -80,15 +114,42 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
   const monde = useMonde();
   const [graine] = useState(nouvelleGraine);
   const niveauxFaits = Object.keys(monde.niveaux).length;
-  const coeursMax = lancement.sorte === "survie" ? 1 : lancement.sorte === "niveau" || lancement.sorte === "tour" || lancement.sorte === "theme" ? COEURS : Infinity;
+  const coeursMax = lancement.sorte === "survie" ? 1 : ["niveau", "tour", "theme", "filtre", "epreuve", "marathon"].includes(lancement.sorte) ? COEURS : Infinity;
+  // Une partie laissée en cours, qu'on reprend là où elle s'était arrêtée.
+  const [reprise] = useState<Sauvegarde | null>(() => (lancement.reprise ? partieSauvee<Sauvegarde>() : null));
 
   /** Les questions prévues d'avance (niveau, tour, révision) ; les modes rapides en ajoutent au fil de l'eau. */
   const [questions, setQuestions] = useState<Question[]>(() => {
     const g = graine;
+    if (reprise) return reprise.questions;
+    if (lancement.sorte === "defi" && lancement.defi && lancement.cleDefi) return questionsDefi(lancement.defi, lancement.cleDefi);
+    if (lancement.sorte === "epreuve" && lancement.categorie) {
+      // L'épreuve finale : quarante questions sur toute la route, toutes les méthodes, au plus haut niveau.
+      const codes = melanger(ordreDe(lancement.categorie), hasard(g)).slice(0, 40);
+      return codes.map((c, i) => fabriquer(deriver(g, i), c, { types: typesDe(lancement.categorie!), niveau: 15 })).filter((q): q is Question => q !== null);
+    }
+    if (lancement.sorte === "filtre" && lancement.categorie && lancement.continent) {
+      const codes = melanger(
+        ordreDe(lancement.categorie).filter((c) => pays(c).continent === lancement.continent),
+        hasard(g),
+      );
+      const sortie: Question[] = [];
+      for (let i = 0; sortie.length < 20 && i < codes.length * 2; i++) {
+        const q = questionSur(deriver(g, i), lancement.categorie, codes[i % codes.length], 8);
+        if (q && !sortie.some((x) => x.cible === q.cible && x.type === q.type)) sortie.push(q);
+      }
+      return sortie;
+    }
+    if (lancement.sorte === "chrono" && lancement.continent) {
+      return Array.from({ length: 8 }, (_, i) => questionContinent(deriver(g, i), lancement.continent!)).filter((q): q is Question => q !== null);
+    }
+    if (lancement.sorte === "marathon") {
+      return Array.from({ length: 8 }, (_, i) => questionMelangee(deriver(g, i), 3, true)).filter((q): q is Question => q !== null);
+    }
     if (lancement.sorte === "niveau" && lancement.categorie && lancement.niveau) {
       // Les pays du niveau, complétés par ceux des niveaux d'avant que la mémoire perd le plus.
       const revision = lancement.niveau > 1 ? aReviserAvant(monde, lancement.categorie, lancement.niveau, 8) : [];
-      return partieDeNiveau({ categorie: lancement.categorie, niveau: lancement.niveau, graine: g, methode: lancement.methode, revision, difficulte: monde.profil.difficulte });
+      return partieDeNiveau({ categorie: lancement.categorie, niveau: lancement.niveau, graine: g, methode: lancement.methode, revision, difficulte: monde.profil.difficulte, nombre: monde.profil.questions });
     }
     if (lancement.sorte === "theme" && lancement.theme) {
       // Une route thématique : 20 questions sur ses pays (drapeau, capitale, carte), un niveau moyen.
@@ -131,15 +192,24 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
     const n = niveauRapide(niveauxFaits);
     return Array.from({ length: 6 }, (_, i) => questionMelangee(deriver(g, i), n, true)).filter((q): q is Question => q !== null);
   });
-  const sansFin = lancement.sorte === "eclair" || lancement.sorte === "survie";
+  const sansFin = lancement.sorte === "eclair" || lancement.sorte === "survie" || lancement.sorte === "marathon" || lancement.sorte === "chrono";
 
   const [phase, setPhase] = useState<"intro" | "question" | "reponse" | "fin">("intro");
-  const [index, setIndex] = useState(0);
-  const [coeurs, setCoeurs] = useState(coeursMax);
+  const [index, setIndex] = useState(reprise?.index ?? 0);
+  const [coeurs, setCoeurs] = useState(reprise?.coeurs ?? coeursMax);
   const [brise, setBrise] = useState<number | null>(null);
-  const [bonnes, setBonnes] = useState(0);
-  const [fautes, setFautes] = useState(0);
-  const [xp, setXp] = useState(0);
+  const [bonnes, setBonnes] = useState(reprise?.bonnes ?? 0);
+  const [fautes, setFautes] = useState(reprise?.fautes ?? 0);
+  const [xp, setXp] = useState(reprise?.xp ?? 0);
+  // Le combo (bonnes réponses d'affilée), le temps passé, les réponses du défi.
+  const [serie, setSerie] = useState(0);
+  const [meilleureSerie, setMeilleureSerie] = useState(0);
+  const [glace, setGlace] = useState(false);
+  const [reponsesDefi, setReponsesDefi] = useState<string[]>([]);
+  const [resultatDefi, setResultatDefi] = useState<{ score: number; resultats: boolean[]; deja: boolean; enLigne: boolean } | null>(null);
+  const [vitesse, setVitesse] = useState<{ ms: number; vise: number } | null>(null);
+  const debutQuestion = useRef(0);
+  const temps = useRef({ ms: 0, vise: 0 });
   const [choix, setChoix] = useState<string | null>(null);
   const [rates, setRates] = useState<string[]>([]);
   const [jugement, setJugement] = useState<Jugement | null>(null);
@@ -159,25 +229,56 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
 
   const q = questions[index] as Question | undefined;
   const def = q ? TYPES[q.type] : null;
-  const duree = q ? dureeQuestion(lancement, q) : null;
-  const avecChrono = Boolean(duree && monde.profil.chrono);
+  const duree = q ? dureeQuestion(lancement, q, monde.profil.rythme) : null;
+  const avecChrono = Boolean(duree && (monde.profil.chrono || lancement.sorte === "defi") && !glace);
   const total = sansFin ? null : questions.length;
 
   /* ---------- La fin ---------- */
   const terminer = useCallback(
-    (r: { bonnes: number; fautes: number; coeurs: number }) => {
+    (r: { bonnes: number; fautes: number; coeurs: number; reponses?: string[]; resultats?: boolean[] }) => {
       setPhase("fin");
+      oublierPartie();
+      const enLigne = compteMonde().connecte === true && compteMonde().enLigne !== false;
+      const recordEnLigne = (mode: "eclair" | "survie" | "marathon", score: number) => {
+        if (enLigne && score > 0) void fetch("/api/monde/records", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ mode, score }) }).catch(() => undefined);
+      };
       if (lancement.sorte === "niveau" && lancement.categorie && lancement.niveau) {
         const reussi = r.coeurs > 0;
-        const b = finirNiveau(lancement.categorie, lancement.niveau, { bonnes: r.bonnes, fautes: r.fautes, reussi });
+        // La troisième étoile demande aussi d'aller vite : en moyenne, sous le temps visé.
+        const rapide = temps.current.ms <= temps.current.vise;
+        setVitesse({ ...temps.current });
+        const b = finirNiveau(lancement.categorie, lancement.niveau, { bonnes: r.bonnes, fautes: r.fautes, reussi, rapide });
         setBilan(b);
         if (reussi && !mouvementReduit()) setTimeout(() => pluieDeLettres(document.querySelector(".pt-fin-titre"), b.etoiles === 3 ? "aurore" : "ambre", grade(lancement.niveau!).nom), 380);
       } else if (lancement.sorte === "eclair" || lancement.sorte === "survie") {
         setRecord(battreRecord(lancement.sorte, r.bonnes));
+        recordEnLigne(lancement.sorte, r.bonnes);
+      } else if (lancement.sorte === "marathon") {
+        setRecord(battreRecordDe("marathon", r.bonnes));
+        recordEnLigne("marathon", r.bonnes);
+      } else if (lancement.sorte === "chrono" && lancement.continent) {
+        setRecord(battreRecordDe(`chrono:${lancement.continent}`, r.bonnes));
+      } else if (lancement.sorte === "epreuve" && lancement.categorie && r.coeurs > 0) {
+        setRecord(battreRecordDe(`epreuve:${lancement.categorie}`, r.bonnes));
+        gagnerDucats(100);
       } else if (lancement.sorte === "theme" && lancement.theme && r.coeurs > 0) {
         setRecord(battreRecordDe(`theme:${lancement.theme}`, r.bonnes));
       } else if (lancement.sorte === "examen") {
         setRecord(battreRecordDe("examen", r.bonnes));
+      } else if (lancement.sorte === "defi" && lancement.defi && lancement.cleDefi) {
+        // Le défi : gardé sur l'appareil (une seule tentative), jugé et classé par le serveur.
+        const resultats = r.resultats ?? [];
+        const local = { score: r.bonnes, resultats, deja: false, enLigne: false };
+        battreRecordDe(`defi:${lancement.defi}:${lancement.cleDefi}`, Math.max(1, r.bonnes));
+        setResultatDefi(local);
+        if (enLigne && r.reponses) {
+          void fetch("/api/monde/defi", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ sorte: lancement.defi, cle: lancement.cleDefi, reponses: r.reponses, ms: temps.current.ms }) })
+            .then((x) => (x.ok ? x.json() : null))
+            .then((x: { score: number; deja: boolean; resultats: boolean[] } | null) => {
+              if (x) setResultatDefi({ score: x.score, resultats: x.resultats, deja: x.deja, enLigne: true });
+            })
+            .catch(() => undefined);
+        }
       }
     },
     [lancement],
@@ -186,17 +287,20 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
   /* ---------- Répondre ---------- */
   const suivant = useCallback(() => {
     setBrise(null);
-    if (coeurs <= 0 || (!sansFin && index + 1 >= questions.length) || (lancement.sorte === "eclair" && finEclair !== null && Date.now() >= finEclair)) {
-      terminer({ bonnes, fautes, coeurs });
+    if (coeurs <= 0 || (!sansFin && index + 1 >= questions.length) || ((lancement.sorte === "eclair" || lancement.sorte === "chrono") && finEclair !== null && Date.now() >= finEclair)) {
+      terminer({ bonnes, fautes, coeurs, reponses: reponsesDefi, resultats: reponsesDefi.map((r, i) => (questions[i] ? juger(questions[i].type, questions[i].cible, r) !== "faux" : false)) });
       return;
     }
-    // Les modes rapides : toujours quelques questions d'avance.
+    // Les modes sans fin : toujours quelques questions d'avance (le marathon durcit tous les dix).
     if (sansFin && questions.length - (index + 1) <= 4) {
       const n = niveauRapide(niveauxFaits);
       setQuestions((qs) => {
         const ajout: Question[] = [];
         for (let i = qs.length; i < qs.length + 6; i++) {
-          const x = questionMelangee(deriver(graine, i), n, true);
+          const x =
+            lancement.sorte === "chrono" && lancement.continent
+              ? questionContinent(deriver(graine, i), lancement.continent)
+              : questionMelangee(deriver(graine, i), lancement.sorte === "marathon" ? Math.min(NB_NIVEAUX, 3 + Math.floor(i / 10)) : n, true);
           if (x) ajout.push(x);
         }
         return [...qs, ...ajout];
@@ -213,7 +317,7 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
     setToucheGlobe(null);
     setIndice(null);
     setPhase("question");
-  }, [bonnes, coeurs, fautes, finEclair, index, lancement.sorte, questions.length, sansFin, terminer, niveauxFaits, graine]);
+  }, [bonnes, coeurs, fautes, finEclair, index, lancement.sorte, lancement.continent, questions, sansFin, terminer, niveauxFaits, graine, reponsesDefi]);
 
   const repondre = useCallback(
     (reponse: string, ou?: { x: number; y: number }) => {
@@ -234,7 +338,15 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
       const gain = gainDe(j, base);
       const famille = categorieDe(q.type);
       noterReponse(q.cible, famille, juste, gain);
-      envoyerReponse({ type: q.type, cible: q.cible, reponse, nb: q.nb });
+      // Le temps de réponse (pour l'étoile de vitesse) ; le défi garde ses réponses pour le serveur.
+      temps.current = { ms: temps.current.ms + Math.min(Date.now() - debutQuestion.current, duree ?? 60_000), vise: temps.current.vise + tempsVise(q) };
+      if (lancement.sorte === "defi") setReponsesDefi((l) => [...l, reponse]);
+      else envoyerReponse({ type: q.type, cible: q.cible, reponse, nb: q.nb });
+      // Le combo : cinq bonnes réponses d'affilée valent un ducat de plus, dix en valent deux.
+      const suite = juste ? serie + 1 : 0;
+      setSerie(suite);
+      setMeilleureSerie((m) => Math.max(m, suite));
+      if (suite >= 5) gagnerDucats(suite >= 10 ? 2 : 1);
       if (juste) {
         setBonnes((b) => b + 1);
         setXp((x) => x + gain);
@@ -251,7 +363,7 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
         }
       }
     },
-    [coeurs, coeursMax, phase, q, seconde],
+    [coeurs, coeursMax, phase, q, seconde, serie, duree, lancement.sorte],
   );
 
   // Après une bonne réponse, on passe tout seul ; après une erreur, on laisse le temps de lire.
@@ -271,9 +383,17 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
     return () => clearTimeout(t);
   }, [phase, avecChrono, duree, sablier, index, repondre]);
 
-  // Le chrono de l'éclair : 60 secondes en tout.
+  // Le début de chaque question (pour l'étoile de vitesse), et la sauvegarde de la partie en cours.
   useEffect(() => {
-    if (lancement.sorte !== "eclair" || finEclair === null || phase === "fin") return;
+    if (phase === "question") debutQuestion.current = Date.now();
+  }, [phase, index]);
+  useEffect(() => {
+    if (phase === "question" && index > 0 && REPRENABLES.includes(lancement.sorte)) sauverPartie({ lancement: { ...lancement, reprise: false }, questions, index, coeurs, bonnes, fautes, xp } satisfies Sauvegarde);
+  }, [phase, index, lancement, questions, coeurs, bonnes, fautes, xp]);
+
+  // Le chrono de l'éclair (et du contre-la-montre) : 60 secondes en tout.
+  useEffect(() => {
+    if ((lancement.sorte !== "eclair" && lancement.sorte !== "chrono") || finEclair === null || phase === "fin") return;
     const t = setTimeout(() => terminer({ bonnes, fautes, coeurs }), Math.max(0, finEclair - Date.now()));
     return () => clearTimeout(t);
   }, [finEclair, lancement.sorte, phase, terminer, bonnes, fautes, coeurs]);
@@ -322,18 +442,27 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
 
   /* ---------- Les jokers ---------- */
   const solde = ducats(monde);
-  const jokers: Joker[] = lancement.sorte === "niveau" || lancement.sorte === "tour" || lancement.sorte === "survie" || lancement.sorte === "theme" ? ["indice", "seconde", "moitie", "sablier", "coeur"] : [];
+  const jokers: Joker[] = ["niveau", "tour", "survie", "theme", "filtre", "marathon"].includes(lancement.sorte) ? ["indice", "passer", "seconde", "moitie", "sablier", "glace", "coeur"] : [];
   const jokerPossible = (j: Joker) => {
     if (!q || phase !== "question" || solde < JOKERS[j].prix) return false;
     if (j === "seconde") return !seconde;
     if (j === "moitie") return q.options.length > 2 && masques.length === 0;
     if (j === "sablier") return avecChrono && !sablier;
     if (j === "indice") return !indice;
+    if (j === "passer") return true;
+    if (j === "glace") return avecChrono && !glace;
     return coeurs < 5 && Number.isFinite(coeursMax);
   };
   const jouerJoker = (j: Joker) => {
     if (!jokerPossible(j) || !q || !depenser(JOKERS[j].prix)) return;
     if (j === "seconde") setSeconde(true);
+    if (j === "glace") setGlace(true);
+    if (j === "passer") {
+      // La question passée ne compte ni comme bonne ni comme fausse.
+      setSerie(0);
+      suivant();
+      return;
+    }
     if (j === "indice") setIndice(indiceDe(q, q.options.find((o) => juger(q.type, q.cible, o.id) !== "faux")?.texte));
     if (j === "sablier") setSablier(true);
     if (j === "coeur") setCoeurs((c) => c + 1);
@@ -348,12 +477,12 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
   /* ---------- Démarrer ---------- */
   const commencer = () => {
     if (!questions.length) return;
-    if (lancement.sorte === "eclair") setFinEclair(Date.now() + DUREE_ECLAIR);
+    if (lancement.sorte === "eclair" || lancement.sorte === "chrono") setFinEclair(Date.now() + DUREE_ECLAIR);
     setPhase("question");
   };
 
   const contenu = (
-    <div className="pt pt-partie" data-accent="safran" data-phase={phase} role="dialog" aria-modal="true" aria-label={lancement.titre}>
+    <div className="pt pt-partie" data-accent="safran" data-globe={monde.profil.globe} data-phase={phase} role="dialog" aria-modal="true" aria-label={lancement.titre}>
       <div className="pt-partie-fond" aria-hidden="true" />
       <header className="pt-partie-tete">
         <button type="button" className="pt-icone" onClick={onFermer} aria-label="Quitter la partie">
@@ -372,10 +501,17 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
           ) : (
             <span className="pt-route-compte tabular-nums">
               {bonnes} bonne{bonnes > 1 ? "s" : ""}
-              {lancement.sorte === "eclair" && finEclair !== null && phase !== "fin" && <ChronoGlobal fin={finEclair} />}
+              {(lancement.sorte === "eclair" || lancement.sorte === "chrono") && finEclair !== null && phase !== "fin" && <ChronoGlobal fin={finEclair} />}
             </span>
           )}
         </div>
+        {serie >= 3 && phase !== "fin" && (
+          <span className="pt-combo" data-palier={serie >= 10 ? "3" : serie >= 5 ? "2" : undefined} aria-label={`${serie} bonnes réponses d'affilée`} title={serie >= 5 ? `Combo : +${serie >= 10 ? 2 : 1} ducat${serie >= 10 ? "s" : ""} par bonne réponse` : "Encore un peu pour le combo"}>
+            <Flame className="size-4" aria-hidden="true" />
+            <span className="tabular-nums">{serie}</span>
+            {serie >= 5 && <span className="pt-combo-x">×{serie >= 10 ? 3 : 2}</span>}
+          </span>
+        )}
         <BoutonVoix />
         <Coeurs restants={coeurs} total={coeursMax} brise={brise} />
         {avecChrono && phase === "question" && q && <Chrono key={index} duree={duree!} cle={`${index}`} pause={sablier} />}
@@ -499,6 +635,9 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
           record={record}
           rates={rateList}
           croises={questions.slice(0, index + 1).map((x) => x.cible)}
+          meilleureSerie={meilleureSerie}
+          vitesse={vitesse}
+          defi={resultatDefi}
           onFermer={onFermer}
           onRejouer={onRejouer}
         />
@@ -642,6 +781,8 @@ export function ContenuOption({ q, o }: { q: Question; o: Question["options"][nu
 
 function IconeJoker({ j }: { j: Joker }) {
   if (j === "indice") return <Lightbulb className="size-4" aria-hidden="true" />;
+  if (j === "passer") return <SkipForward className="size-4" aria-hidden="true" />;
+  if (j === "glace") return <Snowflake className="size-4" aria-hidden="true" />;
   if (j === "seconde") return <Undo2 className="size-4" aria-hidden="true" />;
   if (j === "moitie") return <Shuffle className="size-4" aria-hidden="true" />;
   if (j === "sablier") return <Hourglass className="size-4" aria-hidden="true" />;
@@ -733,6 +874,14 @@ function Intro({ lancement, nombre, coeurs, chrono, onCommencer, onFermer }: { l
             ? `${nombre} question${nombre > 1 ? "s" : ""} manquée${nombre > 1 ? "s" : ""} ces sept derniers jours, sans chrono ni cœurs.`
             : lancement.sorte === "examen"
               ? `${nombre} questions de toutes les catégories, sans joker ni cœurs. Une note sur 20, et un certificat à imprimer.`
+              : lancement.sorte === "defi"
+                ? `${nombre} questions, les mêmes pour tout le monde, ${DUREE_DEFI / 1000} secondes chacune. Une seule tentative.`
+                : lancement.sorte === "epreuve"
+                  ? `${nombre} questions sur toute la route, toutes les méthodes, trois cœurs. La dernière marche.`
+                  : lancement.sorte === "marathon"
+                    ? "Trois cœurs, et des questions de plus en plus difficiles : jusqu'où iras-tu ?"
+                    : lancement.sorte === "chrono"
+                      ? "60 secondes : le plus de bonnes réponses possible sur ce continent."
               : `${nombre} questions, ${coeurs} cœurs${chrono ? " et un chrono pour chaque question" : ""}.`;
   return (
     <div className="pt-intro">
@@ -772,6 +921,9 @@ function Fin({
   record,
   rates,
   croises,
+  meilleureSerie,
+  vitesse,
+  defi,
   onFermer,
   onRejouer,
 }: {
@@ -786,6 +938,9 @@ function Fin({
   rates: Rate[];
   /** Les pays croisés pendant la partie (pour le « Le savais-tu ? »). */
   croises: string[];
+  meilleureSerie: number;
+  vitesse: { ms: number; vise: number } | null;
+  defi: { score: number; resultats: boolean[]; deja: boolean; enLigne: boolean } | null;
   onFermer: () => void;
   onRejouer: (l: Lancement) => void;
 }) {
@@ -812,6 +967,16 @@ function Fin({
           : "Fin de la traversée"
         : lancement.sorte === "examen"
           ? `${bonnes}/20 : ${mention(bonnes)}`
+          : lancement.sorte === "defi"
+            ? `${defi?.score ?? bonnes}/${total ?? 10} au défi`
+            : lancement.sorte === "epreuve"
+              ? coeurs > 0
+                ? "Épreuve réussie"
+                : "Naufrage…"
+              : lancement.sorte === "marathon" || lancement.sorte === "chrono"
+                ? record
+                  ? "Nouveau record !"
+                  : "Bien couru"
           : lancement.sorte === "theme"
             ? coeurs > 0
               ? record
@@ -855,8 +1020,22 @@ function Fin({
             <dd className="tabular-nums">{bilan.jours}</dd>
           </div>
         )}
+        {meilleureSerie >= 3 && (
+          <div>
+            <dt>Meilleure série</dt>
+            <dd className="tabular-nums">{meilleureSerie}</dd>
+          </div>
+        )}
       </dl>
       {lancement.sorte === "examen" && <Certificat note={bonnes} />}
+      {lancement.sorte === "defi" && lancement.defi && lancement.cleDefi && defi && <PartageDefi sorte={lancement.defi} cle={lancement.cleDefi} resultat={defi} />}
+      {lancement.sorte === "epreuve" && coeurs > 0 && lancement.categorie && <p className="pt-fin-medaille">Te voilà maître de la route « {CATEGORIES[lancement.categorie].nom} ». Une médaille de saphir et 100 ducats.</p>}
+      {vitesse && niveau && reussi && fautes === 0 && (
+        <p className="pt-fin-vitesse">
+          {vitesse.ms <= vitesse.vise ? "L'étoile de vitesse : " : "Il manque l'étoile de vitesse : "}
+          {Math.round(vitesse.ms / Math.max(1, bonnes) / 100) / 10} s par question en moyenne (il fallait au plus {Math.round(vitesse.vise / Math.max(1, bonnes) / 100) / 10} s).
+        </p>
+      )}
       {savais && (
         <aside className="pt-fiche-savais pt-fin-savais" aria-label="Le savais-tu ?">
           <p className="pt-fiche-savais-titre">
@@ -872,10 +1051,12 @@ function Fin({
             <ArrowRight className="size-4" aria-hidden="true" />
           </button>
         )}
-        <button type="button" className={`bouton ${suivantPossible ? "bouton-discret" : "bouton-principal"}`} onClick={() => onRejouer({ ...lancement, cle: `${Date.now()}` })}>
-          <RotateCcw className="size-4" aria-hidden="true" />
-          Rejouer
-        </button>
+        {lancement.sorte !== "defi" && (
+          <button type="button" className={`bouton ${suivantPossible ? "bouton-discret" : "bouton-principal"}`} onClick={() => onRejouer({ ...lancement, cle: `${Date.now()}`, reprise: false })}>
+            <RotateCcw className="size-4" aria-hidden="true" />
+            Rejouer
+          </button>
+        )}
         <button type="button" className="bouton bouton-discret" onClick={onFermer}>
           Fermer
         </button>
@@ -903,6 +1084,38 @@ function Fin({
         </section>
       )}
     </div>
+  );
+}
+
+/** Le défi : le score, des carrés à partager (sans les réponses), et le classement du jour. */
+function PartageDefi({ sorte, cle, resultat }: { sorte: SorteDefi; cle: string; resultat: { score: number; resultats: boolean[]; deja: boolean; enLigne: boolean } }) {
+  const [copie, setCopie] = useState(false);
+  const texte = texteAPartager(sorte, cle, resultat.resultats, typeof window === "undefined" ? "" : `${window.location.origin}/monde`);
+  const partager = async () => {
+    try {
+      if (navigator.share) await navigator.share({ text: texte });
+      else {
+        await navigator.clipboard.writeText(texte);
+        setCopie(true);
+      }
+    } catch {
+      // Partage annulé.
+    }
+  };
+  return (
+    <section className="pt-defi-partage" aria-label="Partager le défi">
+      <p className="pt-defi-carres" aria-label={`${resultat.score} bonnes réponses sur ${resultat.resultats.length}`}>
+        {resultat.resultats.map((x, i) => (
+          <span key={i} data-juste={x || undefined} />
+        ))}
+      </p>
+      {resultat.deja && <p className="pt-astuce">Le défi d&apos;aujourd&apos;hui avait déjà été joué sur ce compte : c&apos;est le premier score qui compte.</p>}
+      {!resultat.enLigne && <p className="pt-astuce">Connecte-toi pour figurer au classement du défi.</p>}
+      <button type="button" className="bouton bouton-principal" onClick={() => void partager()}>
+        <Share2 className="size-4" aria-hidden="true" />
+        {copie ? "Copié !" : "Partager mon résultat"}
+      </button>
+    </section>
   );
 }
 
@@ -961,6 +1174,11 @@ export function useLancer() {
       theme: (theme: ThemeId): Lancement => ({ cle: `${Date.now()}`, sorte: "theme", theme, titre: THEMES.find((t) => t.id === theme)?.nom ?? "Route thématique" }),
       erreurs: (): Lancement => ({ cle: `${Date.now()}`, sorte: "erreurs", titre: "Mes erreurs" }),
       examen: (): Lancement => ({ cle: `${Date.now()}`, sorte: "examen", titre: "L'examen" }),
+      defi: (sorte: SorteDefi): Lancement => ({ cle: `${Date.now()}`, sorte: "defi", defi: sorte, cleDefi: cleDefi(sorte), titre: sorte === "jour" ? "Le défi du jour" : "Le défi de la semaine" }),
+      epreuve: (categorie: CategorieId): Lancement => ({ cle: `${Date.now()}`, sorte: "epreuve", categorie, titre: `${CATEGORIES[categorie].nom} : l'épreuve finale` }),
+      marathon: (): Lancement => ({ cle: `${Date.now()}`, sorte: "marathon", titre: "Le marathon" }),
+      chrono: (continent: ContinentId): Lancement => ({ cle: `${Date.now()}`, sorte: "chrono", continent, titre: `Contre la montre : ${NOM_CONTINENT[continent]}` }),
+      filtre: (categorie: CategorieId, continent: ContinentId): Lancement => ({ cle: `${Date.now()}`, sorte: "filtre", categorie, continent, titre: `${CATEGORIES[categorie].nom} : ${NOM_CONTINENT[continent]}` }),
       rapide: (sorte: "tour" | "eclair" | "survie" | "revision"): Lancement => ({
         cle: `${Date.now()}`,
         sorte,

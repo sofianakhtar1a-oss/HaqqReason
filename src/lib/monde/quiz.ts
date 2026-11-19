@@ -4,7 +4,7 @@ import { COULEURS } from "./couleurs";
 import { distanceKm, ecartHoraire } from "./geo";
 import { PAYS } from "./donnees";
 import { choisir, deriver, type Hasard, hasard, melanger } from "./hasard";
-import { niveauxDe, ordreDe, QUESTIONS_PAR_NIVEAU } from "./niveaux";
+import { niveauxDe, ordreDe, QUESTIONS_PAR_NIVEAU as QUESTIONS_NIVEAU } from "./niveaux";
 import { jugerCapitale, jugerNom, type Jugement } from "./texte";
 import type { ContinentId, Pays } from "./types";
 
@@ -638,7 +638,8 @@ function juger2(type: TypeQuestion, cible: Pays, reponse: string): Jugement | nu
  * Une partie de niveau : les pays du niveau, complétés jusqu'à 20 par des pays déjà vus
  * (ceux que le joueur choisit de revoir), dans un ordre mêlé.
  */
-export function partieDeNiveau(o: { categorie: CategorieId; niveau: number; graine: number; methode?: TypeQuestion | null; revision?: string[]; difficulte?: "facile" | "normal" | "difficile" }): Question[] {
+export function partieDeNiveau(o: { categorie: CategorieId; niveau: number; graine: number; methode?: TypeQuestion | null; revision?: string[]; difficulte?: "facile" | "normal" | "difficile"; nombre?: number }): Question[] {
+  const QUESTIONS_PAR_NIVEAU = o.nombre && o.nombre >= 5 && o.nombre <= 40 ? o.nombre : QUESTIONS_NIVEAU;
   const nouveaux = niveauxDe(o.categorie)[o.niveau - 1] ?? [];
   // La difficulté des faux choix (et leur nombre) : plus éloignés en « facile », plus ressemblants en « difficile ».
   const niveauChoix = o.difficulte === "facile" ? Math.max(1, o.niveau - 5) : o.difficulte === "difficile" ? Math.min(15, o.niveau + 5) : o.niveau;

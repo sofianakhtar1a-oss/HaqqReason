@@ -18,7 +18,7 @@ await db.exec(`create role anon nologin; create role authenticated nologin; crea
 // Ce que Supabase fournit d'office : le schéma « extensions » et la table des espaces de stockage.
 await db.exec(`create schema extensions; grant usage on schema extensions to anon, authenticated, service_role;
   create schema storage; create table storage.buckets (id text primary key, name text, public boolean, file_size_limit bigint, allowed_mime_types text[]);`);
-for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql", "010_contributions.sql", "011_espaces.sql", "011_espaces.sql", "012_islam_un_bloc.sql", "012_islam_un_bloc.sql", "013_messagerie.sql", "013_messagerie.sql", "014_comptes.sql", "014_comptes.sql", "015_classement.sql", "015_classement.sql", "016_assistant.sql", "016_assistant.sql", "017_portulan.sql", "017_portulan.sql"]) {
+for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql", "010_contributions.sql", "011_espaces.sql", "011_espaces.sql", "012_islam_un_bloc.sql", "012_islam_un_bloc.sql", "013_messagerie.sql", "013_messagerie.sql", "014_comptes.sql", "014_comptes.sql", "015_classement.sql", "015_classement.sql", "016_assistant.sql", "016_assistant.sql", "017_portulan.sql", "017_portulan.sql", "018_portulan_social.sql", "018_portulan_social.sql"]) {
   await db.exec(readFileSync(new URL(`../supabase/migrations/${fichier}`, import.meta.url), "utf8"));
 }
 
@@ -777,6 +777,131 @@ ok("013 : la conversation disparaît avec la contribution", Number((await db.que
   }
   await db.exec(`delete from utilisateurs where id in ('${a}', '${b}', '${c}')`);
   ok("017 : supprimer un compte efface ses scores et ses duels", Number((await db.query(`select count(*)::int n from portulan_scores`)).rows[0].n) === 0 && Number((await db.query(`select count(*)::int n from portulan_duels`)).rows[0].n) === 0);
+}
+
+// 018 : Le Portulan — défis, records, double XP, duels à distance, amis, salons, classes, notifications
+{
+  const q = async (sql, args = []) => (await db.query(sql, args)).rows[0].r;
+  const a = (await db.query(`select * from compte_ouvrir('google-so1', 'so1@exemple.fr', 'Inès Moreau')`)).rows[0].id;
+  const b = (await db.query(`select * from compte_ouvrir('google-so2', 'so2@exemple.fr', 'Omar Diallo')`)).rows[0].id;
+  const c = (await db.query(`select * from compte_ouvrir('google-so3', 'so3@exemple.fr', 'Léa Martin')`)).rows[0].id;
+  await db.exec(`update utilisateurs set classement = true where id in ('${a}', '${b}')`);
+
+  // Le double XP : une fois par jour, et l'XP compte double.
+  const d1 = await q(`select portulan_double($1) r`, [a]);
+  ok("018 : le double XP s'ouvre", typeof d1.jusqua === "number");
+  ok("018 : une seule fois par jour", (await q(`select portulan_double($1) r`, [a])).erreur === "deja");
+  const x = await q(`select portulan_repondre($1, '[{"cle":"drapeau-nom:fr","resultat":"juste","base":10}]'::jsonb) r`, [a]);
+  ok("018 : l'XP double", x.gain === 20 && typeof x.double === "number");
+  await db.exec(`update portulan_scores set derniere_reponse = derniere_reponse - interval '2 seconds'`);
+  const x2 = await q(`select portulan_repondre($1, '[{"cle":"drapeau-nom:fr","resultat":"juste","base":10}]'::jsonb) r`, [b]);
+  ok("018 : sans double, l'XP reste simple", x2.gain === 10 && x2.double === null);
+
+  // Les records en ligne.
+  ok("018 : un premier record", (await q(`select portulan_record_envoyer($1, 'eclair', 30) r`, [a])).nouveau === true);
+  ok("018 : un score plus bas ne remplace rien", (await q(`select portulan_record_envoyer($1, 'eclair', 20) r`, [a])).record === 30);
+  ok("018 : le plafond de l'éclair", (await q(`select portulan_record_envoyer($1, 'eclair', 500) r`, [b])).record === 90);
+  ok("018 : un mode inconnu est refusé", (await q(`select portulan_record_envoyer($1, 'triche', 5) r`, [a])).erreur === "illisible");
+  const rec = await q(`select portulan_records_lire($1, 'eclair') r`, [a]);
+  ok("018 : le classement des records", rec.top.length === 2 && rec.top[0].id === b && rec.moi.rang === 2 && rec.mien === 30);
+
+  // Les défis : une seule tentative.
+  const df = await q(`select portulan_defi_envoyer($1, 'jour', 8, 41000) r`, [a]);
+  ok("018 : le défi du jour", df.deja === false && df.score === 8);
+  ok("018 : une seule tentative", (await q(`select portulan_defi_envoyer($1, 'jour', 10, 1000) r`, [a])).deja === true);
+  await q(`select portulan_defi_envoyer($1, 'jour', 9, 50000) r`, [b]);
+  const dl = await q(`select portulan_defi_lire($1, 'jour') r`, [a]);
+  ok("018 : le classement du défi", dl.participants === 2 && dl.top[0].id === b && dl.moi.rang === 2);
+  ok("018 : un score impossible est refusé", (await q(`select portulan_defi_envoyer($1, 'semaine', 99, 0) r`, [a])).erreur === "illisible");
+
+  // Les amis.
+  ok("018 : un code ami", (await q(`select portulan_ami_code($1, 'AMIA2345') r`, [a])).code === "AMIA2345");
+  ok("018 : le code ne change plus", (await q(`select portulan_ami_code($1, 'AUTRE234') r`, [a])).code === "AMIA2345");
+  ok("018 : un code déjà pris", (await q(`select portulan_ami_code($1, 'AMIA2345') r`, [b])).erreur === "code_pris");
+  ok("018 : une demande", (await q(`select portulan_ami_ajouter($1, 'amia2345') r`, [b])).etat === "demande");
+  ok("018 : pas soi-même", (await q(`select portulan_ami_ajouter($1, 'AMIA2345') r`, [a])).erreur === "soi");
+  let am = await q(`select portulan_amis_lire($1) r`, [a]);
+  ok("018 : la demande reçue", am.recues.length === 1 && am.recues[0].id === b && am.amis.length === 0);
+  await q(`select portulan_ami_repondre($1, $2, true) r`, [a, b]);
+  am = await q(`select portulan_amis_lire($1) r`, [b]);
+  ok("018 : amis des deux côtés", am.amis.length === 1 && am.amis[0].id === a && (await q(`select portulan_amis_lire($1) r`, [a])).amis.length === 1);
+
+  // Un duel à distance, réglé à 5 questions.
+  let du = await q(`select portulan_duel_ouvrir($1, 'DIST22', 'capitales', 9, false, true, 5, 12000) r`, [a]);
+  ok("018 : un duel à distance s'ouvre", du.etat === "attente" && du.asynchrone === true && du.nombre === 5);
+  for (let i = 0; i < 5; i++) du = await q(`select portulan_duel_repondre($1, $2, $3, true, 120) r`, [a, du.id, i]);
+  ok("018 : le créateur joue avant que l'autre arrive", du.moi.reponses.length === 5 && du.etat === "attente");
+  ok("018 : pas de sixième question", (await q(`select portulan_duel_repondre($1, $2, 5, true, 120) r`, [a, du.id])).moi.reponses.length === 5);
+  du = await q(`select portulan_duel_rejoindre($1, 'dist22') r`, [b]);
+  ok("018 : l'adversaire rejoint", du.etat === "en_cours" && du.adversaire.nombre === 5);
+  await q(`select portulan_duel_reagir($1, $2, 'bravo') r`, [a, du.id]);
+  ok("018 : une réaction rapide", (await q(`select portulan_duel_lire($1, $2) r`, [b, du.id])).adversaire.reaction.r === "bravo");
+  ok("018 : une réaction inconnue", (await q(`select portulan_duel_reagir($1, $2, 'insulte') r`, [a, du.id])).erreur === "illisible");
+  for (let i = 0; i < 5; i++) du = await q(`select portulan_duel_repondre($1, $2, $3, $4, 100) r`, [b, du.id, i, i < 2]);
+  ok("018 : le duel se termine", du.etat === "fini" && du.resultat === "defaite");
+  const elos = (await db.query(`select utilisateur_id, elo from portulan_scores where utilisateur_id in ($1, $2)`, [a, b])).rows;
+  ok("018 : la cote bouge", elos.find((r) => r.utilisateur_id === a).elo === 1216 && elos.find((r) => r.utilisateur_id === b).elo === 1184);
+  ok("018 : mes duels à distance", (await q(`select portulan_duels_mes($1) r`, [b])).duels.length === 1);
+  am = await q(`select portulan_amis_lire($1) r`, [a]);
+  ok("018 : le face-à-face entre amis", am.amis[0].victoires === 1 && am.amis[0].defaites === 0);
+
+  // Un salon à élimination, à trois.
+  let sa = await q(`select portulan_salon_creer($1, 'SALON2', 'drapeaux', 5, 'elimination', 9, 4) r`, [a]);
+  ok("018 : un salon s'ouvre", sa.etat === "attente" && sa.joueurs.length === 1 && sa.createur === true);
+  await q(`select portulan_salon_rejoindre($1, 'salon2') r`, [b]);
+  ok("018 : pas assez de joueurs", (await q(`select portulan_salon_lancer($1, $2) r`, [a, sa.id])).erreur === "pas_assez");
+  await q(`select portulan_salon_rejoindre($1, 'SALON2') r`, [c]);
+  ok("018 : seul l'hôte lance", (await q(`select portulan_salon_lancer($1, $2) r`, [b, sa.id])).erreur === "introuvable");
+  sa = await q(`select portulan_salon_lancer($1, $2) r`, [a, sa.id]);
+  ok("018 : le salon commence", sa.etat === "en_cours" && sa.joueurs.length === 3);
+  await db.exec(`update portulan_salons set debut = now() - interval '1 second' where id = '${sa.id}'`);
+  for (let i = 0; i < 3; i++) {
+    await q(`select portulan_salon_repondre($1, $2, $3, true, 140) r`, [a, sa.id, i]);
+    await q(`select portulan_salon_repondre($1, $2, $3, true, 100) r`, [b, sa.id, i]);
+    await q(`select portulan_salon_repondre($1, $2, $3, false, 100) r`, [c, sa.id, i]);
+  }
+  sa = await q(`select portulan_salon_lire($1, $2) r`, [a, sa.id]);
+  ok("018 : le dernier est éliminé après trois questions", sa.joueurs.find((j) => j.id === c).elimine === 3 && sa.joueurs.find((j) => j.id === a).elimine === null);
+  ok("018 : un éliminé ne joue plus", (await q(`select portulan_salon_repondre($1, $2, 3, true, 150) r`, [c, sa.id])).joueurs.find((j) => j.id === c).nombre === 3);
+  for (let i = 3; i < 6; i++) {
+    await q(`select portulan_salon_repondre($1, $2, $3, true, 140) r`, [a, sa.id, i]);
+    await q(`select portulan_salon_repondre($1, $2, $3, false, 100) r`, [b, sa.id, i]);
+  }
+  sa = await q(`select portulan_salon_lire($1, $2) r`, [b, sa.id]);
+  ok("018 : le salon se termine quand il ne reste qu'un joueur", sa.etat === "fini" && sa.joueurs[0].id === a && sa.joueurs[0].rang === 1 && sa.joueurs.find((j) => j.id === c).rang === 3);
+  ok("018 : un tiers ne voit pas le salon", (await db.query(`select * from compte_ouvrir('google-so4', 'so4@exemple.fr', 'Zoé') `)).rows.length === 1);
+
+  // Une classe.
+  let cl = await q(`select portulan_classe_creer($1, 'CLASS2', 'Cinquième B') r`, [a]);
+  ok("018 : une classe", cl.nom === "Cinquième B" && cl.proprietaire === true && cl.membres.length === 0);
+  await q(`select portulan_classe_rejoindre($1, 'class2') r`, [b]);
+  cl = await q(`select portulan_classe_lire($1, $2) r`, [a, cl.id]);
+  ok("018 : l'enseignant voit ses élèves", cl.membres.length === 1 && cl.membres[0].id === b && cl.membres[0].xp === 10);
+  ok("018 : un inconnu ne voit pas la classe", (await q(`select portulan_classe_lire($1, $2) r`, [c, cl.id])).erreur === "introuvable");
+  ok("018 : mes classes", (await q(`select portulan_classes_mes($1) r`, [b])).suivies.length === 1 && (await q(`select portulan_classes_mes($1) r`, [a])).miennes[0].membres === 1);
+  await q(`select portulan_classe_quitter($1, $2, $3) r`, [a, cl.id, b]);
+  ok("018 : l'enseignant retire un élève", (await q(`select portulan_classe_lire($1, $2) r`, [a, cl.id])).membres.length === 0);
+
+  // Les notifications.
+  ok("018 : un abonnement", (await q(`select portulan_abonner($1, 'https://push.exemple/abc', '{"p256dh":"x","auth":"y"}'::jsonb) r`, [a])).ok === true);
+  ok("018 : un abonnement non https refusé", (await q(`select portulan_abonner($1, 'http://push.exemple/abc', '{}'::jsonb) r`, [a])).erreur === "illisible");
+  ok("018 : les abonnements d'un compte", (await q(`select portulan_abonnements_de($1) r`, [a])).length === 1);
+  await q(`select portulan_desabonner($1, 'https://push.exemple/abc') r`, [a]);
+  ok("018 : désabonné", (await q(`select portulan_abonnements_de($1) r`, [a])).length === 0);
+
+  for (const role of ["anon", "authenticated"]) {
+    await db.exec(`set role ${role}`);
+    await refuse(`[${role}] ne lit pas les amis`, `select * from portulan_amis`);
+    await refuse(`[${role}] ne lit pas les salons`, `select * from portulan_salons`);
+    await refuse(`[${role}] ne lit pas les classes`, `select * from portulan_classe_membres`);
+    await refuse(`[${role}] ne lit pas les abonnements`, `select * from portulan_abonnements`);
+    await refuse(`[${role}] n'écrit pas de record`, `select portulan_record_envoyer('${a}', 'eclair', 90)`);
+    await refuse(`[${role}] n'ouvre pas le double XP`, `select portulan_double('${b}')`);
+    await refuse(`[${role}] ne se fait pas d'amis à la place d'un autre`, `select portulan_ami_ajouter('${c}', 'AMIA2345')`);
+    await db.exec(`reset role`);
+  }
+  await db.exec(`delete from utilisateurs where email like 'so_@exemple.fr'`);
+  ok("018 : supprimer les comptes efface tout", Number((await db.query(`select (select count(*) from portulan_amis) + (select count(*) from portulan_salons) + (select count(*) from portulan_classes) + (select count(*) from portulan_records) + (select count(*) from portulan_defis) as n`)).rows[0].n) === 0);
 }
 
 {

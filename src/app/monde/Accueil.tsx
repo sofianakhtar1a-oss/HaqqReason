@@ -1,17 +1,20 @@
 "use client";
 
-import { ArrowRight, Building2, Clock, Coins, Earth, Flag, Flame, GraduationCap, Hash, Infinity as Infini, Landmark, Languages, Map as IconeCarte, Mountain, RotateCcw, Scale, Shuffle, Timer, Users, Waypoints, Zap } from "lucide-react";
+import { ArrowRight, Award, Building2, Clock, Coins, Earth, Flag, Flame, GraduationCap, Hash, Infinity as Infini, Landmark, Languages, Map as IconeCarte, Mountain, RotateCcw, Scale, Shuffle, Timer, Users, Waypoints, Zap } from "lucide-react";
 import { useMemo, useState } from "react";
 import { formatNombre, formatPopulation, formatSuperficie, jourDeParis, motCapitale, NOM_CONTINENT, paysDuJour } from "@/lib/monde/atlas";
 import { CATEGORIES, CATEGORIES_CLASSIQUES, CATEGORIES_NOUVELLES, type CategorieId, IDS_CATEGORIES } from "@/lib/monde/categories";
 import { NOMBRE_PAYS } from "@/lib/monde/chiffres";
 import { useCompteMonde } from "@/lib/monde/compte-client";
 import { grade, NB_NIVEAUX } from "@/lib/monde/niveaux";
-import { ducats, maitrise, niveauCourant, niveauxReussis, paysConnus, regler, revisionsDues, useMonde } from "@/lib/monde/progression";
+import { ducats, maitrise, niveauCourant, niveauxReussis, partieSauvee, paysConnus, regler, revisionsDues, useMonde } from "@/lib/monde/progression";
+import { niveauProfil } from "@/lib/monde/collection";
 import { useTextes } from "@/lib/modules/textes-client";
 import { CABINETS, estCabinet } from "@/lib/monde/cabinets";
 import type { CabinetId } from "@/lib/monde/types";
 import { Carnet, Decouvrir, MesErreurs, RoutesThematiques } from "./Apprendre";
+import { Collection } from "./Collection";
+import { Defis } from "./Defis";
 import { CartoucheCabinet, EcranCabinet } from "./Cabinet";
 import { Categorie } from "./Categorie";
 import { Ducats, RoseDesVents } from "./communs";
@@ -78,6 +81,7 @@ export function Accueil({ categorie, onCategorie, lancer, aller }: { categorie: 
   if (categorie && categorie in CATEGORIES) return <Categorie id={categorie as CategorieId} onRetour={() => onCategorie(null)} lancer={lancer} />;
   if (categorie?.startsWith("cabinet-") && estCabinet(categorie.slice(8))) return <EcranCabinet id={categorie.slice(8) as CabinetId} onRetour={() => onCategorie(null)} lancer={lancer} />;
   if (categorie === "erreurs") return <MesErreurs onRetour={() => onCategorie(null)} lancer={lancer} />;
+  if (categorie === "collection") return <Collection onRetour={() => onCategorie(null)} />;
   return <Hub onCategorie={onCategorie} lancer={lancer} aller={aller} />;
 }
 
@@ -112,6 +116,9 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
   }, [monde]);
   const xpAffichee = compte.enLigne && compte.connecte ? compte.xp : monde.profil.xp;
   const [decouverte, setDecouverte] = useState<{ titre: string; codes: string[] } | null>(null);
+  // Une partie laissée en cours (sur cet appareil).
+  const [sauvee] = useState(() => partieSauvee<{ lancement: Lancement; index: number; questions: unknown[] }>());
+  const profil = niveauProfil(xpAffichee);
 
   return (
     <div className="pt-hub">
@@ -130,6 +137,13 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
             <div>
               <dt>XP</dt>
               <dd className="tabular-nums">{formatNombre(xpAffichee)}</dd>
+            </div>
+            <div title={`Niveau ${profil.n} : ${profil.titre}`}>
+              <dt>Niveau</dt>
+              <dd>
+                <span className="tabular-nums">{profil.n}</span>
+                <span className="pt-bilan-sur"> {profil.titre}</span>
+              </dd>
             </div>
             <div>
               <dt>Ducats</dt>
@@ -155,15 +169,32 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
               <Shuffle className="size-4" aria-hidden="true" />
               Le tour du monde
             </button>
+            <button type="button" className="bouton bouton-discret" onClick={() => aller("accueil/collection")}>
+              <Award className="size-4" aria-hidden="true" />
+              Ma collection
+            </button>
           </div>
+          {sauvee && (
+            <div className="pt-reprise" role="status">
+              <span>
+                Une partie t&apos;attend : <strong>{sauvee.lancement.titre}</strong>, question {sauvee.index + 1} sur {sauvee.questions.length}.
+              </span>
+              <button type="button" className="bouton bouton-principal" onClick={() => lancer({ ...sauvee.lancement, cle: `${Date.now()}`, reprise: true })}>
+                Reprendre
+                <ArrowRight className="size-4" aria-hidden="true" />
+              </button>
+            </div>
+          )}
         </div>
         <div className="pt-heros-globe">
           <RoseDesVents className="pt-heros-rose" />
-          <Globe tourne glissable teintes={teintes} libelle={`Le globe : ${Object.keys(teintes).length} pays déjà dorés par ta mémoire. Fais-le tourner dans tous les sens.`} vueInitiale={{ lon: 12, lat: 24, zoom: 1 }} />
+          <Globe key={monde.profil.globe} tourne glissable teintes={teintes} libelle={`Le globe : ${Object.keys(teintes).length} pays déjà dorés par ta mémoire. Fais-le tourner dans tous les sens.`} vueInitiale={{ lon: 12, lat: 24, zoom: 1 }} />
         </div>
       </section>
 
       <Carnet aller={aller} />
+
+      <Defis lancer={lancer} />
 
       <section aria-labelledby="pt-routes">
         <h3 id="pt-routes" className="pt-sous-titre">

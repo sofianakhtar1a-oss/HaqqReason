@@ -347,5 +347,29 @@ for (const url of [CARTE_URL, CARTE_LEGERE_URL, CARTE_ULTRA_URL]) {
   ok("cartographie : douze jalons", hi.CARTOGRAPHIE.length === 12);
 }
 
+/* ---------- Les défis et la collection ---------- */
+{
+  const de = await import("../src/lib/monde/defis");
+  const co = await import("../src/lib/monde/collection");
+  const j1 = de.questionsDefi("jour", "2026-11-19");
+  const j2 = de.questionsDefi("jour", "2026-11-19");
+  ok("défi : dix questions", j1.length === 10, String(j1.length));
+  ok("défi : les mêmes pour tout le monde", JSON.stringify(j1) === JSON.stringify(j2));
+  ok("défi : un autre jour, d'autres questions", JSON.stringify(de.questionsDefi("jour", "2026-11-20")) !== JSON.stringify(j1));
+  ok("défi : dix pays différents", new Set(j1.map((q) => q.cible)).size === 10);
+  ok("défi : toujours à choix", j1.every((q) => q.options.length >= 2));
+  ok("défi de la semaine : vingt questions", de.questionsDefi("semaine", "2026-11-16").length === 20);
+  ok("le lundi", de.lundiDe("2026-11-19") === "2026-11-16" && de.lundiDe("2026-11-16") === "2026-11-16" && de.lundiDe("2026-11-22") === "2026-11-16" && de.lundiDe("2027-01-01") === "2026-12-28");
+  const partage = de.texteAPartager("jour", "2026-11-19", [true, true, false, true, true, true, false, true, true, true], "https://exemple.fr/monde");
+  ok("défi : le texte à partager", partage.startsWith("Le Portulan, défi du 19 novembre : 8/10") && partage.includes("🟩🟩🟥") && !partage.includes("fr,"), partage);
+  ok("niveau du profil", co.niveauProfil(0).n === 1 && co.niveauProfil(100).n === 2 && co.niveauProfil(99).n === 1 && co.niveauProfil(1_000_000).a === null);
+  ok("ligues", co.ligueDe(0).ligue.id === "bronze" && co.ligueDe(499).ligue.id === "argent" && co.ligueDe(500).ligue.id === "or" && co.ligueDe(9999).suivante === null);
+  ok("médailles : identifiants uniques", new Set(co.MEDAILLES.map((m) => m.id)).size === co.MEDAILLES.length);
+  ok("boutique : identifiants uniques et un article gratuit par rayon", new Set(co.BOUTIQUE.map((a) => a.id)).size === co.BOUTIQUE.length && ["globe", "cadre", "bateau"].every((r) => co.BOUTIQUE.some((a) => a.sorte === r && a.prix === 0)));
+  const vide = { niveaux: {}, pays: {}, profil: { jours: 0, eclair: 0, survie: 0 }, cabinets: {}, records: {}, erreurs: [], confusions: {}, favoris: {} } as never;
+  ok("médailles : aucune au départ", co.MEDAILLES.every((m) => !m.obtenue(vide)));
+  ok("passeport : vide au départ", co.tampons(vide).size === 0);
+}
+
 console.log(echecs ? `\n${echecs} échec(s).` : `Tout est bon (${questions} questions de niveau vérifiées).`);
 process.exit(echecs ? 1 : 0);

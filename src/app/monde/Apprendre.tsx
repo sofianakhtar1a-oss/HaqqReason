@@ -227,6 +227,28 @@ export function Carnet({ aller }: { aller: (hash: string) => void }) {
             ))}
           </div>
           <p className="pt-carnet-aide">{p.difficulte === "facile" ? "Des pays éloignés et quatre choix : pour débuter." : p.difficulte === "difficile" ? "Des voisins et des drapeaux jumeaux, souvent six choix." : "Des faux choix qui suivent ton niveau."}</p>
+          <p className="pt-carnet-tete">Questions par niveau</p>
+          <div className="pt-segments" role="group" aria-label="Le nombre de questions d'un niveau">
+            {([10, 20, 30] as const).map((n) => (
+              <button key={n} type="button" aria-pressed={p.questions === n} onClick={() => regler({ questions: n })}>
+                {n}
+              </button>
+            ))}
+          </div>
+          <p className="pt-carnet-tete">Le rythme du chrono</p>
+          <div className="pt-segments" role="group" aria-label="Le rythme du chrono">
+            {(
+              [
+                ["lent", "Lent"],
+                ["normal", "Normal"],
+                ["rapide", "Rapide"],
+              ] as const
+            ).map(([r, n]) => (
+              <button key={r} type="button" aria-pressed={p.rythme === r} onClick={() => regler({ rythme: r })}>
+                {n}
+              </button>
+            ))}
+          </div>
           <button type="button" className="pt-lien" onClick={() => aller("accueil/erreurs")}>
             {erreurs ? `Mes erreurs des 7 derniers jours (${erreurs})` : "Mes erreurs et mes confusions"}
           </button>

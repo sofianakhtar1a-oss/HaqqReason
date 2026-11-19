@@ -1,13 +1,14 @@
 "use client";
 
-import { ArrowLeft, BookOpen, Lock, Sailboat } from "lucide-react";
-import { useState } from "react";
-import { pays } from "@/lib/monde/atlas";
+import { ArrowLeft, BookOpen, Crown, Lock, Map as IconeCarte, Sailboat } from "lucide-react";
+import { useMemo, useState } from "react";
+import { CONTINENTS, NOM_CONTINENT, pays } from "@/lib/monde/atlas";
 import { CATEGORIES, type CategorieId, TYPES, type TypeQuestion, typesDe } from "@/lib/monde/categories";
 import { grade, NB_NIVEAUX, niveauxDe, QUESTIONS_PAR_NIVEAU } from "@/lib/monde/niveaux";
-import { etoiles, maitrise, niveauCourant, niveauOuvert, useMonde } from "@/lib/monde/progression";
+import { boite, etoiles, maitrise, niveauCourant, niveauOuvert, niveauxReussis, useMonde } from "@/lib/monde/progression";
 import { ICONES_CATEGORIES } from "./Accueil";
 import { Decouvrir } from "./Apprendre";
+import { Globe, type Teinte } from "./Globe";
 import { Etoiles } from "./communs";
 import { type Lancement, useLancer } from "./Partie";
 
@@ -22,8 +23,21 @@ export function Categorie({ id, onRetour, lancer }: { id: CategorieId; onRetour:
   const monde = useMonde();
   const l = useLancer();
   const [methode, setMethode] = useState<TypeQuestion | null>(null);
-  const [decouvre, setDecouvre] = useState<number | null>(null);
   const niveaux = niveauxDe(id);
+  const [decouvre, setDecouvre] = useState<number | null>(null);
+  const [carte, setCarte] = useState(false);
+  const faits = niveauxReussis(monde, id);
+  const record = monde.records[`epreuve:${id}`];
+  // La carte de conquête : dorés, les pays maîtrisés ; pâles, ceux qu'on a commencé à apprendre.
+  const conquete = useMemo(() => {
+    const t: Record<string, Teinte> = {};
+    for (const code of niveaux.flat()) {
+      const b = boite(monde, code, id);
+      if (b >= 3) t[code] = "or";
+      else if (monde.pays[code]?.[id]) t[code] = "doux";
+    }
+    return t;
+  }, [monde, niveaux, id]);
   const courant = niveauCourant(monde, id);
   const m = maitrise(monde, id);
 
@@ -60,6 +74,26 @@ export function Categorie({ id, onRetour, lancer }: { id: CategorieId; onRetour:
           </button>
         ))}
       </fieldset>
+
+      <div className="pt-categorie-outils">
+        <button type="button" className="bouton bouton-discret" aria-pressed={carte} onClick={() => setCarte((c) => !c)}>
+          <IconeCarte className="size-4" aria-hidden="true" />
+          {carte ? "Cacher ma carte" : "Ma carte de conquête"}
+        </button>
+        <div className="pt-continents" role="group" aria-label="Jouer sur un continent">
+          {CONTINENTS.filter((c) => c.id !== "antarctique" && niveaux.flat().some((code) => pays(code).continent === c.id)).map((c) => (
+            <button key={c.id} type="button" className="pt-puce" onClick={() => lancer(l.filtre(id, c.id))} title={`20 questions sur ${NOM_CONTINENT[c.id]}`}>
+              {c.court}
+            </button>
+          ))}
+        </div>
+      </div>
+      {carte && (
+        <div className="pt-conquete">
+          <Globe key={monde.profil.globe} mode="plan" teintes={conquete} interactif libelle={`Ma carte de conquête : ${m.sus} pays maîtrisés sur ${m.total}.`} />
+          <p className="pt-astuce">Dorés : les pays maîtrisés ; pâles : ceux que tu as commencé à apprendre.</p>
+        </div>
+      )}
 
       <ol className="pt-route" aria-label={`Les ${NB_NIVEAUX} niveaux`}>
         {niveaux.map((codes, i) => {
@@ -101,6 +135,22 @@ export function Categorie({ id, onRetour, lancer }: { id: CategorieId; onRetour:
           );
         })}
       </ol>
+      <div className="pt-epreuve" data-ouverte={faits >= NB_NIVEAUX || undefined}>
+        <Crown className="pt-epreuve-icone" aria-hidden="true" />
+        <div>
+          <p className="pt-epreuve-titre">L&apos;épreuve finale</p>
+          <p className="pt-epreuve-texte">
+            {faits >= NB_NIVEAUX
+              ? record
+                ? `Réussie : ${record} bonnes réponses. Tu peux la rejouer pour faire mieux.`
+                : "Quarante questions sur toute la route, toutes les méthodes, trois cœurs. Une médaille de saphir pour les maîtres."
+              : `Réussis les ${NB_NIVEAUX} niveaux pour l'ouvrir (encore ${NB_NIVEAUX - faits}).`}
+          </p>
+        </div>
+        <button type="button" className="bouton bouton-principal" disabled={faits < NB_NIVEAUX} onClick={() => lancer(l.epreuve(id))}>
+          {faits >= NB_NIVEAUX ? "Tenter l'épreuve" : <Lock className="size-4" aria-label="Verrouillée" />}
+        </button>
+      </div>
       {decouvre !== null && (
         <Decouvrir
           titre={`${def.nom}, niveau ${decouvre}`}

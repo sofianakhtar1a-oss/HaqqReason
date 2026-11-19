@@ -42,6 +42,16 @@ export type Profil = {
   faites: number;
   /** Des faux choix plus ou moins ressemblants. */
   difficulte: Difficulte;
+  /** Les gels de série en réserve (deux au plus). */
+  gels: number;
+  /** Le nombre de questions d'un niveau et le rythme du chrono. */
+  questions: 10 | 20 | 30;
+  rythme: "lent" | "normal" | "rapide";
+  /** Ce qui a été acheté à la boutique, et ce qu'on a choisi. */
+  achats: string[];
+  globe: string;
+  cadre: string;
+  bateau: string;
   q: number;
 };
 export type Difficulte = "facile" | "normal" | "difficile";
@@ -66,7 +76,29 @@ export type Etat = {
 
 const NOM = "haqqreason-portulan";
 const cle = () => tiroir(NOM);
-const profilVide = (): Profil => ({ gagnes: 0, depenses: 0, xp: 0, jours: 0, dernierJour: "", eclair: 0, survie: 0, chrono: true, voix: false, objectif: 20, jourObjectif: "", faites: 0, difficulte: "normal", q: 0 });
+const profilVide = (): Profil => ({
+  gagnes: 0,
+  depenses: 0,
+  xp: 0,
+  jours: 0,
+  dernierJour: "",
+  eclair: 0,
+  survie: 0,
+  chrono: true,
+  voix: false,
+  objectif: 20,
+  jourObjectif: "",
+  faites: 0,
+  difficulte: "normal",
+  gels: 0,
+  questions: 20,
+  rythme: "normal",
+  achats: [],
+  globe: "globe-classique",
+  cadre: "cadre-aucun",
+  bateau: "bateau-safran",
+  q: 0,
+});
 const vide: Etat = { niveaux: {}, pays: {}, profil: profilVide(), cabinets: {}, records: {}, erreurs: [], confusions: {}, favoris: {} };
 let etat: Etat | null = null;
 const abonnes = new Set<() => void>();
@@ -264,31 +296,18 @@ export function prevision(e: Etat, jours = 7): number[] {
 export type Bilan = { etoiles: number; ducats: number; premiereFois: boolean; record: boolean; jours: number };
 
 /** Une partie de niveau terminée (réussie si des cœurs restent). */
-export function finirNiveau(c: CategorieId, n: number, r: { bonnes: number; fautes: number; reussi: boolean }): Bilan {
+export function finirNiveau(c: CategorieId, n: number, r: { bonnes: number; fautes: number; reussi: boolean; rapide?: boolean }): Bilan {
   const e = lire();
   const k = cleNiveau(c, n);
   const avant = e.niveaux[k];
-  const note = r.reussi ? (r.fautes <= 0 ? 3 : r.fautes === 1 ? 2 : 1) : 0;
-  const premiereFois = r.reussi && !(avant?.f ?? 0);
-  const record = r.reussi && note > (avant?.e ?? 0);
-  let gain = 0;
-  let jours = e.profil.jours;
-  let dernierJour = e.profil.dernierJour;
-  if (r.reussi) {
-    gain += premiereFois ? DUCATS.niveau + note * DUCATS.parEtoile : record ? (note - (avant?.e ?? 0)) * DUCATS.parEtoile : 0;
-    const jour = jourDeParis();
-    if (dernierJour !== jour) {
-      const hier = jourDeParis(new Date(Date.now() - 86_400_000));
-      jours = dernierJour === hier ? jours + 1 : 1;
-      dernierJour = jour;
-      gain += DUCATS.jour;
-    }
-  }
+  // Trois étoiles : sans faute et vite ; sans faute mais lentement, ou une faute : deux.
+  const note = r.reussi ? (r.fautes <= 0 ? (r.rapide === false ? 2 : 3) : r.fautes === 1 ? 2 : 1) : 0;
+  const x = recompenser(e, avant, note, r.reussi);
   const niveaux = r.reussi ? { ...e.niveaux, [k]: { e: Math.max(avant?.e ?? 0, note), m: Math.max(avant?.m ?? 0, r.bonnes), f: Date.now() } } : e.niveaux;
-  ecrire({ ...e, niveaux, profil: { ...e.profil, gagnes: e.profil.gagnes + gain, jours, dernierJour, q: Date.now() } });
+  ecrire({ ...e, niveaux, profil: { ...e.profil, gagnes: e.profil.gagnes + x.gain, jours: x.jours, dernierJour: x.dernierJour, gels: x.gels, q: Date.now() } });
   if (r.reussi) void noter("monde", `niveau:${k}`);
   void noter("monde", "profil");
-  return { etoiles: note, ducats: gain, premiereFois, record, jours };
+  return { etoiles: note, ducats: x.gain, premiereFois: x.premiereFois, record: x.record, jours: x.jours };
 }
 
 /** Acheter un joker : false s'il manque des ducats. */
@@ -313,6 +332,47 @@ export function battreRecord(mode: "eclair" | "survie", score: number): boolean 
   ecrire({ ...e, profil: { ...e.profil, [mode]: score, q: Date.now() } });
   void noter("monde", "profil");
   return true;
+}
+
+/** Un article de la boutique : acheté une fois (le gel de série se rachète, deux au plus en réserve). */
+export function acheter(id: string, prix: number, sorte: "globe" | "cadre" | "bateau" | "gel"): boolean {
+  const e = lire();
+  if (sorte === "gel" ? e.profil.gels >= 2 : e.profil.achats.includes(id)) return false;
+  if (ducats(e) < prix) return false;
+  const profil: Profil =
+    sorte === "gel"
+      ? { ...e.profil, depenses: e.profil.depenses + prix, gels: e.profil.gels + 1, q: Date.now() }
+      : { ...e.profil, depenses: e.profil.depenses + prix, achats: [...e.profil.achats, id], [sorte]: id, q: Date.now() };
+  ecrire({ ...e, profil });
+  void noter("monde", "profil");
+  return true;
+}
+
+/* ---------- La partie en cours (sur cet appareil seulement) ---------- */
+
+const CLE_PARTIE = "haqqreason-portulan-partie";
+export function sauverPartie(v: unknown) {
+  try {
+    localStorage.setItem(tiroir(CLE_PARTIE), JSON.stringify({ ...((v as object) ?? {}), t: Date.now() }));
+  } catch {
+    // Disque plein ou navigation privée : la partie ne pourra pas reprendre.
+  }
+}
+export function partieSauvee<T>(): (T & { t: number }) | null {
+  try {
+    const v = JSON.parse(localStorage.getItem(tiroir(CLE_PARTIE)) ?? "null") as (T & { t: number }) | null;
+    // Une partie de plus de deux jours ne se reprend plus.
+    return v && Date.now() - v.t < 2 * 86_400_000 ? v : null;
+  } catch {
+    return null;
+  }
+}
+export function oublierPartie() {
+  try {
+    localStorage.removeItem(tiroir(CLE_PARTIE));
+  } catch {
+    // rien à faire
+  }
 }
 
 /** Un record de jeu sans niveau (« Nomme-les tous », contre-la-montre…) : true s'il est battu. */
@@ -372,17 +432,24 @@ function recompenser(e: Etat, avant: ResultatNiveau | undefined, note: number, r
   let gain = 0;
   let jours = e.profil.jours;
   let dernierJour = e.profil.dernierJour;
+  let gels = e.profil.gels;
   if (reussi) {
     gain += premiereFois ? DUCATS.niveau + note * DUCATS.parEtoile : record ? (note - (avant?.e ?? 0)) * DUCATS.parEtoile : 0;
     const jour = jourDeParis();
     if (dernierJour !== jour) {
-      const hier = jourDeParis(new Date(Date.now() - 86_400_000));
-      jours = dernierJour === hier ? jours + 1 : 1;
+      // Les jours manqués depuis le dernier jour joué : un gel de série couvre chacun d'eux.
+      const manques = dernierJour ? Math.max(0, Math.round((Date.parse(`${jour}T12:00:00Z`) - Date.parse(`${dernierJour}T12:00:00Z`)) / 86_400_000) - 1) : 0;
+      if (!dernierJour) jours = 1;
+      else if (manques === 0) jours += 1;
+      else if (manques <= gels) {
+        gels -= manques;
+        jours += 1;
+      } else jours = 1;
       dernierJour = jour;
       gain += DUCATS.jour;
     }
   }
-  return { premiereFois, record, gain, jours, dernierJour };
+  return { premiereFois, record, gain, jours, dernierJour, gels };
 }
 
 /** Un niveau de cabinet terminé (réussi si des cœurs restent). */
@@ -393,13 +460,13 @@ export function finirNiveauCabinet(cab: string, n: number, r: { bonnes: number; 
   const note = r.reussi ? (r.fautes <= 0 ? 3 : r.fautes === 1 ? 2 : 1) : 0;
   const x = recompenser(e, avant, note, r.reussi);
   const niveaux = r.reussi ? { ...c.n, [n]: { e: Math.max(avant?.e ?? 0, note), m: Math.max(avant?.m ?? 0, r.bonnes), f: Date.now() } } : c.n;
-  ecrire({ ...e, cabinets: { ...e.cabinets, [cab]: { ...c, n: niveaux } }, profil: { ...e.profil, gagnes: e.profil.gagnes + x.gain, jours: x.jours, dernierJour: x.dernierJour, q: Date.now() } });
+  ecrire({ ...e, cabinets: { ...e.cabinets, [cab]: { ...c, n: niveaux } }, profil: { ...e.profil, gagnes: e.profil.gagnes + x.gain, jours: x.jours, dernierJour: x.dernierJour, gels: x.gels, q: Date.now() } });
   if (r.reussi) void noter("monde", `cabinet:${cab}`);
   void noter("monde", "profil");
   return { etoiles: note, ducats: x.gain, premiereFois: x.premiereFois, record: x.record, jours: x.jours };
 }
 
-export function regler(r: Partial<Pick<Profil, "chrono" | "voix" | "objectif" | "difficulte">>) {
+export function regler(r: Partial<Pick<Profil, "chrono" | "voix" | "objectif" | "difficulte" | "questions" | "rythme" | "globe" | "cadre" | "bateau">>) {
   const e = lire();
   ecrire({ ...e, profil: { ...e.profil, ...r, q: Date.now() } });
   void noter("monde", "profil");
@@ -457,6 +524,13 @@ export function rangerValeur(c: string, v: unknown): boolean {
       jourObjectif: (p.jourObjectif ?? "") > a.jourObjectif ? String(p.jourObjectif) : a.jourObjectif,
       faites: (p.jourObjectif ?? "") > a.jourObjectif ? nombre(p.faites) : (p.jourObjectif ?? "") === a.jourObjectif ? Math.max(a.faites, nombre(p.faites)) : a.faites,
       difficulte: recent && (p.difficulte === "facile" || p.difficulte === "normal" || p.difficulte === "difficile") ? p.difficulte : a.difficulte,
+      gels: recent ? Math.min(2, Math.max(0, nombre(p.gels))) : a.gels,
+      questions: recent && (p.questions === 10 || p.questions === 20 || p.questions === 30) ? p.questions : a.questions,
+      rythme: recent && (p.rythme === "lent" || p.rythme === "normal" || p.rythme === "rapide") ? p.rythme : a.rythme,
+      achats: [...new Set([...a.achats, ...(Array.isArray(p.achats) ? p.achats.filter((x): x is string => typeof x === "string") : [])])],
+      globe: recent && typeof p.globe === "string" ? p.globe : a.globe,
+      cadre: recent && typeof p.cadre === "string" ? p.cadre : a.cadre,
+      bateau: recent && typeof p.bateau === "string" ? p.bateau : a.bateau,
       q: Math.max(a.q, nombre(p.q)),
     };
     ecrire({ ...e, profil });

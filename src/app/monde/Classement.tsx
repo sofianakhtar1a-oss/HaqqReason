@@ -3,7 +3,9 @@
 import { ArrowLeft, Crown, Trophy } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import { formatNombre } from "@/lib/monde/atlas";
-import type { Classement as Donnees, PeriodeClassement } from "@/lib/monde/serveur";
+import { article, LIGUES, ligueDe } from "@/lib/monde/collection";
+import { useMonde } from "@/lib/monde/progression";
+import type { Classement as Donnees, PeriodeClassement, TableauRecords } from "@/lib/monde/serveur";
 import { useTextes } from "@/lib/modules/textes-client";
 
 /*
@@ -18,8 +20,75 @@ const PERIODES: { id: PeriodeClassement; nom: string }[] = [
   { id: "trophees", nom: "Trophées" },
 ];
 
+/** Les records en ligne et les défis (migration 018). */
+const RECORDS: { id: string; nom: string; url: string; unite: string }[] = [
+  { id: "eclair", nom: "L'éclair", url: "/api/monde/records?mode=eclair", unite: "bonnes" },
+  { id: "survie", nom: "Sans faute", url: "/api/monde/records?mode=survie", unite: "bonnes" },
+  { id: "marathon", nom: "Le marathon", url: "/api/monde/records?mode=marathon", unite: "bonnes" },
+  { id: "defi-jour", nom: "Défi du jour", url: "/api/monde/defi?sorte=jour", unite: "/10" },
+  { id: "defi-semaine", nom: "Défi de la semaine", url: "/api/monde/defi?sorte=semaine", unite: "/20" },
+];
+
+function Records() {
+  const [choix, setChoix] = useState(RECORDS[0].id);
+  const [donnees, setDonnees] = useState<TableauRecords | null>(null);
+  const [etat, setEtat] = useState<"charge" | "pret" | "indisponible">("charge");
+  const r = RECORDS.find((x) => x.id === choix)!;
+  useEffect(() => {
+    let vivant = true;
+    fetch(r.url, { cache: "no-store" })
+      .then(async (x) => {
+        if (!vivant) return;
+        if (!x.ok) return setEtat("indisponible");
+        setDonnees((await x.json()) as TableauRecords);
+        setEtat("pret");
+      })
+      .catch(() => vivant && setEtat("indisponible"));
+    return () => {
+      vivant = false;
+    };
+  }, [r.url]);
+  return (
+    <section className="pt-records" aria-labelledby="pt-records">
+      <h3 id="pt-records" className="pt-sous-titre">
+        Les records et les défis
+      </h3>
+      <div className="pt-continents" role="group" aria-label="Le record">
+        {RECORDS.map((x) => (
+          <button key={x.id} type="button" className="pt-puce" aria-pressed={choix === x.id} onClick={() => setChoix(x.id)}>
+            {x.nom}
+          </button>
+        ))}
+      </div>
+      {etat === "indisponible" && <p className="pt-message">Les records en ligne ouvrent très bientôt.</p>}
+      {etat === "pret" && donnees && (
+        <>
+          {donnees.top.length === 0 ? (
+            <p className="pt-message">Aucun record encore : la première place est libre.</p>
+          ) : (
+            <ol className="pt-liste-classement">
+              {donnees.top.map((l) => (
+                <li key={l.cle} data-moi={l.moi || undefined}>
+                  <span className="pt-rang tabular-nums">{l.rang}</span>
+                  <Avatar nom={l.nom} avatar={l.avatar} moi={l.moi} />
+                  <span className="pt-classement-nom">{l.nom}</span>
+                  <span className="tabular-nums">
+                    {l.points} {r.unite}
+                  </span>
+                </li>
+              ))}
+            </ol>
+          )}
+          {donnees.moi && <p className="pt-ma-place">Ta place : {donnees.moi.rang === 1 ? "1re" : `${donnees.moi.rang}e`}, avec {donnees.moi.points}.</p>}
+        </>
+      )}
+    </section>
+  );
+}
+
 export function Classement({ onRetour }: { onRetour: () => void }) {
   const t = useTextes("monde");
+  const [maLigue, setMaLigue] = useState(false);
   const [periode, setPeriode] = useState<PeriodeClassement>("semaine");
   const [donnees, setDonnees] = useState<Donnees | null>(null);
   const [etat, setEtat] = useState<"charge" | "pret" | "deconnecte" | "indisponible">("charge");
@@ -52,8 +121,11 @@ export function Classement({ onRetour }: { onRetour: () => void }) {
   };
 
   const unite = periode === "trophees" ? "trophées" : "XP";
-  const top = donnees?.top ?? [];
   const moi = donnees?.moi;
+  // Les ligues de la semaine : d'après l'XP gagnée depuis lundi.
+  const ligue = periode === "semaine" && moi ? ligueDe(moi.points) : null;
+  const borneHaute = ligue?.suivante?.de ?? Infinity;
+  const top = (donnees?.top ?? []).filter((l) => !maLigue || !ligue || (l.points >= ligue.ligue.de && l.points < borneHaute));
   return (
     <div className="pt-classement">
       <button type="button" className="pt-retour-lien" onClick={onRetour}>
@@ -80,6 +152,26 @@ export function Classement({ onRetour }: { onRetour: () => void }) {
 
       {etat === "pret" && donnees && (
         <>
+          {ligue && (
+            <div className="pt-ligue" style={{ "--ligue": ligue.ligue.couleur } as React.CSSProperties}>
+              <span className="pt-ligue-blason" aria-hidden="true" />
+              <div>
+                <p className="pt-ligue-nom">{ligue.ligue.nom}</p>
+                <p className="pt-ligue-texte">
+                  {formatNombre(moi!.points)} XP depuis lundi.{" "}
+                  {ligue.suivante ? `Encore ${formatNombre(ligue.suivante.de - moi!.points)} XP pour la ${ligue.suivante.nom.toLowerCase()}.` : "La plus haute ligue !"} Les ligues repartent de zéro chaque lundi.
+                </p>
+                <ol className="pt-ligues" aria-label="Les ligues">
+                  {LIGUES.map((x) => (
+                    <li key={x.id} data-actuelle={x.id === ligue.ligue.id || undefined} style={{ "--ligue": x.couleur } as React.CSSProperties} title={`${x.nom} : dès ${x.de} XP`} />
+                  ))}
+                </ol>
+              </div>
+              <button type="button" className="pt-puce" aria-pressed={maLigue} onClick={() => setMaLigue((v) => !v)}>
+                Ma ligue seulement
+              </button>
+            </div>
+          )}
           {moi && !moi.classement && (
             <div className="pt-rejoindre">
               <p>Tu n&apos;apparais pas dans les classements. En les rejoignant, les autres verront ton prénom, l&apos;initiale de ton nom et ta photo Google (le même choix vaut pour le vocabulaire du Truchement).</p>
@@ -95,7 +187,7 @@ export function Classement({ onRetour }: { onRetour: () => void }) {
               <ol className="pt-podium" aria-label="Les trois premiers">
                 {top.slice(0, 3).map((l) => (
                   <li key={l.cle} data-rang={l.rang} data-moi={l.moi || undefined}>
-                    <Avatar nom={l.nom} avatar={l.avatar} />
+                    <Avatar nom={l.nom} avatar={l.avatar} moi={l.moi} />
                     {l.rang === 1 && <Crown className="pt-couronne" aria-hidden="true" />}
                     <span className="pt-podium-nom">{l.nom}</span>
                     <span className="pt-podium-points tabular-nums">
@@ -112,7 +204,7 @@ export function Classement({ onRetour }: { onRetour: () => void }) {
                   {top.slice(3).map((l) => (
                     <li key={l.cle} data-moi={l.moi || undefined}>
                       <span className="pt-rang tabular-nums">{l.rang}</span>
-                      <Avatar nom={l.nom} avatar={l.avatar} />
+                      <Avatar nom={l.nom} avatar={l.avatar} moi={l.moi} />
                       <span className="pt-classement-nom">{l.nom}</span>
                       <span className="tabular-nums">
                         {formatNombre(l.points)} {unite}
@@ -138,13 +230,17 @@ export function Classement({ onRetour }: { onRetour: () => void }) {
           )}
         </>
       )}
+      {etat === "pret" && <Records />}
     </div>
   );
 }
 
-function Avatar({ nom, avatar }: { nom: string; avatar: string }) {
+/** Un portrait ; le sien porte le cadre choisi à la boutique. */
+function Avatar({ nom, avatar, moi = false }: { nom: string; avatar: string; moi?: boolean }) {
+  const monde = useMonde();
+  const cadre = moi ? article(monde.profil.cadre)?.couleur : undefined;
   return (
-    <span className="pt-avatar" aria-hidden="true">
+    <span className="pt-avatar" aria-hidden="true" data-cadre={cadre ? "" : undefined} style={cadre ? ({ "--cadre": cadre } as React.CSSProperties) : undefined}>
       {/* eslint-disable-next-line @next/next/no-img-element */}
       {avatar ? <img src={avatar} alt="" referrerPolicy="no-referrer" /> : nom.slice(0, 1)}
     </span>
