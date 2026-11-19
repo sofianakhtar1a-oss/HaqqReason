@@ -241,5 +241,90 @@ for (const url of [CARTE_URL, CARTE_LEGERE_URL, CARTE_ULTRA_URL]) {
   ok("densité", geo.formatDensite(1000, 10) === "100 hab./km²");
 }
 
+/* ---------- Le puzzle du drapeau ---------- */
+{
+  ok("puzzle : la France résolue", juger("drapeau-puzzle", "fr", "0,1,2,3,4,5") === "juste");
+  // abcabc : les deux pièces bleues (0 et 3) sont interchangeables.
+  ok("puzzle : deux pièces identiques échangées", pays("fr").decoupe === "abcabc" && juger("drapeau-puzzle", "fr", "3,1,2,0,4,5") === "juste", pays("fr").decoupe);
+  ok("puzzle : une vraie erreur", juger("drapeau-puzzle", "fr", "1,0,2,3,4,5") === "faux");
+  ok("puzzle : réponse illisible", juger("drapeau-puzzle", "fr", "0,0,2,3,4,5") === "faux" && juger("drapeau-puzzle", "fr", "0,1,2") === "faux" && juger("drapeau-puzzle", "fr", "a,b,c,d,e,f") === "faux");
+  ok("puzzle : au moins 150 drapeaux", PAYS.filter((p) => TYPES["drapeau-puzzle"].eligible(p)).length >= 150);
+}
+
+/* ---------- Les cabinets ---------- */
+{
+  const cab = await import("../src/lib/monde/cabinets");
+  const { lireReponse, evaluer } = await import("../src/lib/monde/points");
+  const attendus: Record<string, number> = { "fr-regions": 18, "fr-departements": 101, "us-etats": 50, "ca-provinces": 13, "ma-regions": 12, "dz-wilayas": 69, "drapeaux-plus": 15 };
+  for (const c of cab.CABINETS) {
+    ok(`${c.id} : ${attendus[c.id]} éléments`, c.elements.length === attendus[c.id], String(c.elements.length));
+    const niveaux = cab.niveauxCabinet(c);
+    ok(`${c.id} : tous les éléments dans les niveaux`, niveaux.flat().length === c.elements.length);
+    ok(`${c.id} : des niveaux ni trop petits ni trop grands`, niveaux.every((n) => n.length >= Math.min(5, c.elements.length) && n.length <= 12), niveaux.map((n) => n.length).join(","));
+    for (const e of c.elements) {
+      for (const m of cab.methodesDe(c)) {
+        const def = cab.METHODES[m];
+        if (!def.eligible(e)) continue;
+        for (let g = 1; g <= 3; g++) {
+          const q = cab.fabriquerCabinet(c.id, e.id, m, g * 7919 + e.rang);
+          ok(`${c.id}/${e.id}/${m} : une question`, q !== null);
+          if (!q) continue;
+          if (def.reponse === "ecrit") {
+            const bonne = def.ecrit === "num" ? e.num! : def.ecrit === "chef" ? e.chef! : e.nom;
+            ok(`${c.id}/${e.id}/${m} : la bonne réponse écrite`, cab.jugerCabinet(c.id, m, e.id, bonne) === "juste", bonne);
+            const autre = c.elements.find((x) => x.id !== e.id && (def.ecrit === "num" ? x.num : def.ecrit === "chef" ? x.chef : true));
+            if (autre) {
+              const faux = def.ecrit === "num" ? autre.num! : def.ecrit === "chef" ? autre.chef! : autre.nom;
+              ok(`${c.id}/${e.id}/${m} : un autre est faux`, cab.jugerCabinet(c.id, m, e.id, faux) === "faux", faux);
+            }
+            continue;
+          }
+          ok(`${c.id}/${e.id}/${m} : quatre choix distincts`, q.options.length === 4 && new Set(q.options).size === 4 && new Set(q.options.map((o) => cab.texteOption(q, o))).size === 4, q.options.join(","));
+          const justes = q.options.filter((o) => cab.jugerCabinet(c.id, m, e.id, o) === "juste");
+          ok(`${c.id}/${e.id}/${m} : une seule bonne réponse`, justes.length === 1, justes.join(","));
+          if (m === "ville-nom") ok(`${c.id}/${e.id} : la ville est la sienne`, Boolean(q.ville && e.villes?.includes(q.ville)));
+        }
+      }
+    }
+    for (let n = 1; n <= niveaux.length; n++) {
+      const qs = cab.partieCabinet({ cabinet: c.id, niveau: n, graine: 1000 + n });
+      ok(`${c.id} niveau ${n} : assez de questions`, qs.length >= Math.min(8, niveaux[n - 1].length), String(qs.length));
+      ok(`${c.id} niveau ${n} : pas deux fois la même`, new Set(qs.map((q) => `${q.methode}:${q.cible}`)).size === qs.length);
+      for (const m of cab.methodesDe(c)) {
+        const seule = cab.partieCabinet({ cabinet: c.id, niveau: n, graine: 7, methode: m });
+        ok(`${c.id} niveau ${n} ${m} : la méthode imposée`, seule.every((q) => q.methode === m));
+      }
+    }
+  }
+  const dep = (id: string) => cab.element("fr-departements", id)!;
+  ok("Mayenne : 53, Laval", dep("53").nom === "Mayenne" && dep("53").chef === "Laval" && dep("53").groupe === "pdl");
+  ok("Val-d'Oise : Pontoise, et Cergy accepté", cab.jugerCabinet("fr-departements", "ecrire-chef", "95", "Cergy") === "juste" && cab.jugerCabinet("fr-departements", "ecrire-chef", "95", "pontoise") === "juste");
+  ok("2A s'écrit sans majuscule", cab.jugerCabinet("fr-departements", "ecrire-num", "2a", "2a") === "juste" && cab.jugerCabinet("fr-departements", "ecrire-num", "2a", "2B") === "faux");
+  ok("01 s'écrit 1", cab.jugerCabinet("fr-departements", "ecrire-num", "01", "1") === "juste");
+  ok("Paris n'a pas de question de préfecture", !cab.METHODES["nom-chef"].eligible(dep("75")));
+  const w = (n: number) => cab.element("dz-wilayas", String(n))!;
+  ok("wilayas : 16 Alger, 31 Oran, 58 El Meniaa", w(16).nom === "Alger" && w(31).nom === "Oran" && w(58).nom === "El Meniaa");
+  ok("wilayas de 2026 (décret 26-206)", w(59).nom === "Aflou" && w(60).nom === "Barika" && w(63).nom === "El Aricha" && w(68).nom === "Bou Saâda" && w(69).nom === "El Abiodh Sidi Cheikh");
+  ok("wilaya : Brika accepté pour Barika", cab.jugerCabinet("dz-wilayas", "ecrire-nom", "60", "Brika") === "juste");
+  ok("États : Sacramento", cab.element("us-etats", "ca")!.chef === "Sacramento" && cab.jugerCabinet("us-etats", "ecrire-chef", "ca", "sacramento") === "juste");
+  ok("États : les nouveaux drapeaux du Minnesota et de l'Utah", Boolean(cab.element("us-etats", "mn")!.drapeau && cab.element("us-etats", "ut")!.drapeau));
+  ok("Canada : St. John's", cab.jugerCabinet("ca-provinces", "ecrire-chef", "nl", "Saint-Jean de Terre-Neuve") === "juste" && cab.jugerCabinet("ca-provinces", "ecrire-chef", "nl", "st johns") === "juste");
+  ok("Maroc : Drâa-Tafilalet, Errachidia", cab.element("ma-regions", "dt")!.chef === "Errachidia");
+  ok("Maroc : l'avertissement", Boolean(cab.cabinet("ma-regions").avertissement?.includes("Nations unies")));
+  // Le serveur : les réponses de cabinet sont lues, jugées, et leur clé tient dans la base.
+  const lue = lireReponse({ cabinet: "fr-departements", type: "nom-num", cible: "53", reponse: "53", nb: 4 });
+  ok("serveur : une réponse de cabinet lue", lue !== null && lue.cabinet === "fr-departements");
+  ok("serveur : jugée juste", lue !== null && evaluer(lue).resultat === "juste" && evaluer(lue).base === 10);
+  ok("serveur : cabinet inconnu refusé", lireReponse({ cabinet: "xx-yy", type: "nom-num", cible: "53", reponse: "53", nb: 4 }) === null);
+  ok("serveur : méthode étrangère refusée", lireReponse({ cabinet: "dz-wilayas", type: "nom-chef", cible: "16", reponse: "16", nb: 4 }) === null);
+  ok("serveur : élément inconnu refusé", lireReponse({ cabinet: "us-etats", type: "nom-chef", cible: "zz", reponse: "zz", nb: 4 }) === null);
+  let plusLongue = 0;
+  for (const c of cab.CABINETS) for (const m of cab.methodesDe(c)) for (const e of c.elements) plusLongue = Math.max(plusLongue, `${m}:${c.id}:${e.id}`.length);
+  ok("serveur : les clés tiennent en 40 caractères", plusLongue <= 40, String(plusLongue));
+  ok("serveur : une réponse de pays toujours lue", lireReponse({ type: "drapeau-nom", cible: "fr", reponse: "fr", nb: 4 }) !== null);
+  // Les drapeaux des cabinets existent bien.
+  for (const c of cab.CABINETS) for (const e of c.elements) if (e.drapeau) ok(`${c.id}/${e.id} : drapeau présent`, existsSync(`public/monde/emblemes/${e.drapeau}`));
+}
+
 console.log(echecs ? `\n${echecs} échec(s).` : `Tout est bon (${questions} questions de niveau vérifiées).`);
 process.exit(echecs ? 1 : 0);

@@ -8,6 +8,7 @@ import { COULEURS, type Couleur, NOMS_COULEURS, nomDeCss, PALETTE } from "@/lib/
 import { PAYS } from "@/lib/monde/donnees";
 import { decalageMinutes, distanceKm, formatDecalage, formatKm, grandCercle } from "@/lib/monde/geo";
 import { auNom, duNom, leNom, pluriel } from "@/lib/monde/francais";
+import { hasard, melanger } from "@/lib/monde/hasard";
 import { heureQuandMidi, type Question } from "@/lib/monde/quiz";
 import type { Jugement } from "@/lib/monde/texte";
 import { Drapeau } from "./figures";
@@ -204,6 +205,66 @@ export function Coloriage({ q, phase, onRepondre }: { q: Question; phase: string
 
 /* ---------- Ranger quatre pays ---------- */
 
+/* ---------- Le puzzle du drapeau : six pièces à remettre en place ---------- */
+
+const resolu = (ordre: number[], decoupe: string) => ordre.every((k, place) => decoupe[k] === decoupe[place]);
+
+export function Puzzle({ q, phase, onRepondre }: { q: Question; phase: string; onRepondre: (reponse: string) => void }) {
+  const p = pays(q.cible);
+  const decoupe = p.decoupe ?? "abcdef";
+  const [ordre, setOrdre] = useState<number[]>(() => {
+    // Un mélange qui n'est pas déjà la solution (deux pièces identiques s'échangent sans rien changer).
+    let graine = 7;
+    for (const c of q.cible) graine = (graine * 31 + c.charCodeAt(0)) >>> 0;
+    const h = hasard(graine);
+    for (let essai = 0; essai < 50; essai++) {
+      const t = melanger([0, 1, 2, 3, 4, 5], h);
+      if (!resolu(t, decoupe)) return t;
+    }
+    return [5, 4, 3, 2, 1, 0];
+  });
+  const [choisi, setChoisi] = useState<number | null>(null);
+  const fini = phase !== "question";
+  const montre = fini ? [0, 1, 2, 3, 4, 5] : ordre;
+
+  const toucher = (place: number) => {
+    if (fini) return;
+    if (choisi === null) return setChoisi(place);
+    if (choisi === place) return setChoisi(null);
+    const suite = [...ordre];
+    [suite[choisi], suite[place]] = [suite[place], suite[choisi]];
+    setOrdre(suite);
+    setChoisi(null);
+    if (resolu(suite, decoupe)) setTimeout(() => onRepondre(suite.join(",")), 260);
+  };
+
+  return (
+    <div className="pt-puzzle-zone">
+      <div className="pt-puzzle" data-fini={fini || undefined} role="group" aria-label="Le drapeau en six pièces : touche deux pièces pour les échanger">
+        {montre.map((k, place) => (
+          <button
+            key={place}
+            type="button"
+            className="pt-puzzle-piece"
+            data-choisie={(!fini && choisi === place) || undefined}
+            disabled={fini}
+            onClick={() => toucher(place)}
+            aria-pressed={choisi === place}
+            aria-label={`Place ${place + 1} : pièce ${k + 1}${choisi === place ? ", choisie" : ""}`}
+            style={{ backgroundImage: `url(${urlDrapeau(p)})`, backgroundPosition: `${(k % 3) * 50}% ${Math.floor(k / 3) * 100}%` }}
+          />
+        ))}
+      </div>
+      {!fini && (
+        <button type="button" className="bouton bouton-discret" onClick={() => onRepondre(ordre.join(","))}>
+          <Check className="size-4" aria-hidden="true" />
+          Valider tel quel
+        </button>
+      )}
+    </div>
+  );
+}
+
 export function Classement({ q, phase, onRepondre }: { q: Question; phase: string; onRepondre: (reponse: string) => void }) {
   const [ordre, setOrdre] = useState<string[]>(() => q.codes ?? []);
   const population = q.type === "classer-population";
@@ -350,7 +411,7 @@ const ETIQUETTES: Partial<Record<Question["type"], string>> = {
 const nomMonnaie = (code: string) => PAYS.find((p) => p.monnaies.some((m) => m.code === code))?.monnaies.find((m) => m.code === code);
 const decalageMinutesDe = (p: { fuseau?: string }) => (p.fuseau ? decalageMinutes(p.fuseau) : 0);
 
-const INVITES_AUTRES = new Set(["drapeau-gris", "drapeau-devoile", "drapeau-trou", "coloriage", "proposition", "texte", "heure", "heure-locale", "aucune"]);
+const INVITES_AUTRES = new Set(["drapeau-gris", "drapeau-devoile", "drapeau-trou", "coloriage", "puzzle", "proposition", "texte", "heure", "heure-locale", "aucune"]);
 /** Les invites dont formes.tsx se charge (les autres restent à Partie.tsx). */
 export const gereInvite = (q: Question): boolean => TYPES[q.type].reponse === "placer" || INVITES_AUTRES.has(TYPES[q.type].invite) || q.type === "monnaie-intrus";
 
@@ -367,6 +428,7 @@ export function InviteAutre({ q, globe, phase, choix, onRepondre }: { q: Questio
     case "drapeau-trou":
       return <DrapeauTrou code={q.cible} couleur={q.couleur ?? ""} />;
     case "coloriage":
+    case "puzzle":
       return (
         <div className="pt-invite-texte">
           <span className="pt-invite-etiquette">{p.statut === "territoire" ? "Territoire" : "Pays"}</span>

@@ -260,6 +260,8 @@ function fabriquerAutre(type: TypeQuestion, cible: Pays, ctx: Contexte, h: Hasar
     }
     case "drapeau-colorie":
       return cible.coloriage ? { type, cible: code, options: [], attendu: cible.coloriage.join(","), nb: 0 } : null;
+    case "drapeau-puzzle":
+      return cible.decoupe ? { type, cible: code, options: [], attendu: "0,1,2,3,4,5", nb: 0 } : null;
     case "continent-intrus": {
       // Un continent qui n'est pas le sien, et trois pays qui y sont tout entiers.
       const autres = CONTINENTS.filter((c) => c.id !== "antarctique" && !continentsDe(cible).includes(c.id));
@@ -560,6 +562,13 @@ function juger2(type: TypeQuestion, cible: Pays, reponse: string): Jugement | nu
       if (!attendu.length || donne.length !== attendu.length) return "faux";
       const erreurs = attendu.filter((c, i) => donne[i] !== c).length;
       return erreurs === 0 ? "juste" : erreurs === 1 && attendu.length >= 3 ? "presque" : "faux";
+    }
+    case "drapeau-puzzle": {
+      // La pièce posée à chaque place : juste si chaque place reçoit une pièce identique à la sienne.
+      const ordre = reponse.split(",").map(Number);
+      const d = cible.decoupe ?? "";
+      if (d.length !== 6 || ordre.length !== 6 || new Set(ordre).size !== 6 || ordre.some((k) => !Number.isInteger(k) || k < 0 || k > 5)) return "faux";
+      return bon(ordre.every((k, place) => d[k] === d[place]));
     }
     case "capitale-placer": {
       const [lat, lon] = reponse.split(",").map(Number);

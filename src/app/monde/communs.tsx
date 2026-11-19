@@ -1,8 +1,10 @@
 "use client";
 
-import { Coins, Heart, HeartCrack, Star } from "lucide-react";
+import { Coins, Heart, HeartCrack, Star, Volume2, VolumeX } from "lucide-react";
 import { useEffect, useState } from "react";
 import { formatNombre } from "@/lib/monde/atlas";
+import { regler, useMonde } from "@/lib/monde/progression";
+import { taire, voixDisponible } from "@/lib/monde/voix";
 
 /* Les petites pièces de l'interface du Portulan. */
 
@@ -93,5 +95,27 @@ export function RoseDesVents({ className }: { className?: string }) {
       <circle r="4" className="pt-rose-coeur" />
       <text y="-66" className="pt-rose-n">N</text>
     </svg>
+  );
+}
+
+/** Le haut-parleur : lire les questions à voix haute (réglage gardé sur le compte). */
+export function BoutonVoix() {
+  const monde = useMonde();
+  if (!voixDisponible()) return null;
+  const actif = monde.profil.voix;
+  return (
+    <button
+      type="button"
+      className="pt-icone"
+      aria-pressed={actif}
+      onClick={() => {
+        if (actif) taire();
+        regler({ voix: !actif });
+      }}
+      aria-label={actif ? "Ne plus lire les questions à voix haute" : "Lire les questions à voix haute"}
+      title={actif ? "Lecture à voix haute : activée" : "Lecture à voix haute"}
+    >
+      {actif ? <Volume2 className="size-5" aria-hidden="true" /> : <VolumeX className="size-5" aria-hidden="true" />}
+    </button>
   );
 }

@@ -12,9 +12,11 @@ import { lireScore } from "@/lib/monde/compte-client";
 import { useResolu, useTextes } from "@/lib/modules/textes-client";
 import { Accueil } from "./Accueil";
 import { Atlas } from "./Atlas";
+import { PartieCabinet } from "./Cabinet";
 import { Duels } from "./Duels";
 import { Explorer } from "./Explorer";
 import { Fiches } from "./Fiches";
+import { NommeLesTous } from "./NommeLesTous";
 import { type Lancement, Partie } from "./Partie";
 import "./portulan.css";
 import "@fontsource-variable/literata/opsz.css";
@@ -207,7 +209,9 @@ export function Portulan() {
         ))}
       </nav>
 
-      {partie && monte && <Partie key={partie.cle} lancement={partie} onFermer={() => setPartie(null)} onRejouer={(l) => setPartie(l)} />}
+      {partie && monte && partie.sorte === "cabinet" && <PartieCabinet key={partie.cle} lancement={partie} onFermer={() => setPartie(null)} onRejouer={(l) => setPartie(l)} />}
+      {partie && monte && partie.sorte === "nomme" && <NommeLesTous key={partie.cle} lancement={partie} onFermer={() => setPartie(null)} onRejouer={(l) => setPartie(l)} />}
+      {partie && monte && partie.sorte !== "cabinet" && partie.sorte !== "nomme" && <Partie key={partie.cle} lancement={partie} onFermer={() => setPartie(null)} onRejouer={(l) => setPartie(l)} />}
     </div>
   );
 }

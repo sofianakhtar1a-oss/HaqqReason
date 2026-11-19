@@ -391,7 +391,35 @@ function drapeau(fichier) {
     erreurs.push(`couleurs impossibles pour ${fichier}`);
   }
   const couleurs = [...parts].filter(([, v]) => v >= 0.05).sort((a, b) => b[1] - a[1]).map(([k]) => k);
-  const r = { empreinte, teinte, couleurs, coloriage: coloriable(leger) };
+  // Le puzzle : le drapeau découpé en 3 × 2 pièces ; deux pièces identiques portent la même lettre
+  // (les deux moitiés d'une bande de couleur sont interchangeables : le puzzle n'exige pas l'impossible).
+  let decoupe = "";
+  try {
+    const png = execFileSync("rsvg-convert", ["-w", "120", "-h", "90", join(dossierDrapeaux, `${fichier}.svg`)]);
+    const rgb = execFileSync("convert", ["png:-", "-background", "white", "-alpha", "remove", "-depth", "8", "rgb:-"], { input: png });
+    const piece = (k) => {
+      const cx = (k % 3) * 40;
+      const cy = Math.floor(k / 3) * 45;
+      const t = [];
+      for (let y = 0; y < 45; y++) for (let x = 0; x < 40; x++) for (let c = 0; c < 3; c++) t.push(rgb[((cy + y) * 120 + cx + x) * 3 + c]);
+      return t;
+    };
+    const pieces = Array.from({ length: 6 }, (_, k) => piece(k));
+    const lettres = [];
+    for (let k = 0; k < 6; k++) {
+      let l = null;
+      for (let j = 0; j < k && l === null; j++) {
+        let d = 0;
+        for (let i = 0; i < pieces[k].length; i++) d += Math.abs(pieces[k][i] - pieces[j][i]);
+        if (d / pieces[k].length < 2) l = lettres[j];
+      }
+      lettres.push(l ?? String.fromCharCode(97 + new Set(lettres).size));
+    }
+    decoupe = lettres.join("");
+  } catch {
+    erreurs.push(`découpe impossible pour ${fichier}`);
+  }
+  const r = { empreinte, teinte, couleurs, coloriage: coloriable(leger), decoupe };
   fichiers.set(fichier, r);
   return r;
 }
@@ -440,6 +468,7 @@ for (const e of entites) {
   e.teinte = d.teinte;
   e.couleurs = d.couleurs;
   if (d.coloriage && !proprietaire) e.coloriage = d.coloriage;
+  if (d.decoupe && !proprietaire) e.decoupe = d.decoupe;
   e.drapeauPropre = !proprietaire;
   if (proprietaire) e.drapeauDe = proprietaire;
 }

@@ -14,9 +14,11 @@ import { useRecits } from "@/lib/monde/recits-client";
 import { aReviserAvant, battreRecord, type Bilan, depenser, ducats, finirNiveau, noterReponse, revisionsDues, useMonde } from "@/lib/monde/progression";
 import { categorieDe, consigne, juger, partieDeNiveau, type Question, questionMelangee, questionSur } from "@/lib/monde/quiz";
 import type { Jugement } from "@/lib/monde/texte";
-import { Chrono, Coeurs, Ducats, Etoiles } from "./communs";
+import type { CabinetId, MethodeCabinet } from "@/lib/monde/types";
+import { dire, taire } from "@/lib/monde/voix";
+import { BoutonVoix, Chrono, Coeurs, Ducats, Etoiles } from "./communs";
 import { Drapeau, MiniContinent, Silhouette } from "./figures";
-import { bonneReponseAutre, Classement, Coloriage, ContenuOptionAutre, gereInvite, InviteAutre, presqueAutre } from "./formes";
+import { bonneReponseAutre, Classement, Coloriage, ContenuOptionAutre, gereInvite, InviteAutre, presqueAutre, Puzzle } from "./formes";
 import { Globe, type GlobeRef } from "./Globe";
 
 /*
@@ -31,10 +33,15 @@ import { Globe, type GlobeRef } from "./Globe";
 
 export type Lancement = {
   cle: string;
-  sorte: "niveau" | "tour" | "eclair" | "survie" | "revision";
+  /** cabinet : un niveau d'un cabinet (Cabinet.tsx) ; nomme : « Nomme-les tous » (NommeLesTous.tsx). */
+  sorte: "niveau" | "tour" | "eclair" | "survie" | "revision" | "cabinet" | "nomme";
   categorie?: CategorieId;
   niveau?: number;
   methode?: TypeQuestion | null;
+  cabinet?: CabinetId;
+  methodeCabinet?: MethodeCabinet | null;
+  /** Pour « Nomme-les tous » : continent:afrique, monde, cabinet:fr-departements… */
+  liste?: string;
   titre: string;
 };
 
@@ -45,7 +52,7 @@ function dureeQuestion(l: Lancement, q: Question): number | null {
   if (l.sorte === "revision" || l.sorte === "eclair") return null;
   const r = TYPES[q.type].reponse;
   const base = l.sorte === "survie" ? 10_000 : l.sorte === "tour" ? 15_000 : (l.niveau ?? 1) <= 5 ? 20_000 : (l.niveau ?? 1) <= 10 ? 15_000 : 12_000;
-  return base + (r === "ecrit" ? 10_000 : r === "clic" || r === "placer" ? 6_000 : r === "coloriage" || r === "classer" ? 15_000 : 0);
+  return base + (r === "ecrit" ? 10_000 : r === "clic" || r === "placer" ? 6_000 : r === "coloriage" || r === "classer" || r === "puzzle" ? 15_000 : 0);
 }
 
 /** Le niveau de difficulté des questions des modes rapides : un peu au-delà de ce que l'on a déjà fait. */
@@ -54,6 +61,17 @@ function niveauRapide(niveauxFaits: number): number {
 }
 
 type Rate = { q: Question; reponse: string };
+
+/** Ce que la voix lit : la consigne, ce que montre l'invite quand c'est un mot, puis les choix écrits. */
+function texteParle(q: Question): string {
+  const def = TYPES[q.type];
+  const p = pays(q.cible);
+  const montre =
+    def.invite === "nom" || def.invite === "coloriage" || def.invite === "puzzle" ? p.nom : def.invite === "capitale" ? (p.capitale ?? "") : def.invite === "monnaie" ? (p.monnaies[0]?.nom ?? "") : def.invite === "texte" ? (q.texte ?? "") : "";
+  const textes = q.options.map((o) => o.texte ?? "").filter(Boolean);
+  const choix = def.reponse !== "drapeau" && textes.length ? ` Choix : ${textes.join(", ")}.` : "";
+  return `${consigne(q)}${montre ? ` ${montre}.` : ""}${choix}`;
+}
 
 export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancement; onFermer: () => void; onRejouer: (l: Lancement) => void }) {
   const monde = useMonde();
@@ -223,6 +241,12 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
     if (phase === "question" && def?.reponse === "ecrit") champ.current?.focus();
   }, [phase, def, index]);
 
+  // La lecture à voix haute : la consigne, ce qui est montré (s'il se dit), puis les choix.
+  useEffect(() => {
+    if (phase === "question" && q && monde.profil.voix) void dire(texteParle(q));
+  }, [phase, q, monde.profil.voix]);
+  useEffect(() => () => taire(), []);
+
   // Le clavier : 1 à 6 pour choisir, Entrée pour continuer, Échap pour quitter.
   useEffect(() => {
     const touche = (e: KeyboardEvent) => {
@@ -308,6 +332,7 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
             </span>
           )}
         </div>
+        <BoutonVoix />
         <Coeurs restants={coeurs} total={coeursMax} brise={brise} />
         {avecChrono && phase === "question" && q && <Chrono key={index} duree={duree!} cle={`${index}`} pause={sablier} />}
       </header>
@@ -361,6 +386,8 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
             <Coloriage key={q.cible} q={q} phase={phase} onRepondre={(r) => repondre(r)} />
           ) : def.reponse === "classer" ? (
             <Classement key={q.cible} q={q} phase={phase} onRepondre={(r) => repondre(r)} />
+          ) : def.reponse === "puzzle" ? (
+            <Puzzle key={q.cible} q={q} phase={phase} onRepondre={(r) => repondre(r)} />
           ) : (
             <div ref={zoneChoix} className="pt-choix" data-sorte={def.reponse} data-nb={q.options.length}>
               {q.options.map((o, i) => {

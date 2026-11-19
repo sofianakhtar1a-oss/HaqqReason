@@ -34,18 +34,25 @@ export type Profil = {
   eclair: number;
   survie: number;
   chrono: boolean;
+  /** Lire les questions à voix haute. */
+  voix: boolean;
   q: number;
 };
+/** Un cabinet (départements, États, wilayas…) : ses niveaux et la mémoire de chaque élément. */
+export type EtatCabinet = { n: Record<string, ResultatNiveau>; m: Record<string, Maitrise> };
 export type Etat = {
   niveaux: Record<string, ResultatNiveau>;
   pays: Record<string, Partial<Record<Famille, Maitrise>>>;
   profil: Profil;
+  cabinets: Record<string, EtatCabinet>;
+  /** Les meilleurs scores des jeux sans niveau (« Nomme-les tous », contre-la-montre…). */
+  records: Record<string, number>;
 };
 
 const NOM = "haqqreason-portulan";
 const cle = () => tiroir(NOM);
-const profilVide = (): Profil => ({ gagnes: 0, depenses: 0, xp: 0, jours: 0, dernierJour: "", eclair: 0, survie: 0, chrono: true, q: 0 });
-const vide: Etat = { niveaux: {}, pays: {}, profil: profilVide() };
+const profilVide = (): Profil => ({ gagnes: 0, depenses: 0, xp: 0, jours: 0, dernierJour: "", eclair: 0, survie: 0, chrono: true, voix: false, q: 0 });
+const vide: Etat = { niveaux: {}, pays: {}, profil: profilVide(), cabinets: {}, records: {} };
 let etat: Etat | null = null;
 const abonnes = new Set<() => void>();
 
@@ -53,7 +60,7 @@ function lire(): Etat {
   if (etat) return etat;
   try {
     const brut = JSON.parse(localStorage.getItem(cle()) ?? "null") as Partial<Etat> | null;
-    etat = brut && typeof brut === "object" ? { niveaux: brut.niveaux ?? {}, pays: brut.pays ?? {}, profil: { ...profilVide(), ...(brut.profil ?? {}) } } : vide;
+    etat = brut && typeof brut === "object" ? { niveaux: brut.niveaux ?? {}, pays: brut.pays ?? {}, profil: { ...profilVide(), ...(brut.profil ?? {}) }, cabinets: brut.cabinets ?? {}, records: brut.records ?? {} } : vide;
   } catch {
     etat = vide;
   }
@@ -231,7 +238,91 @@ export function battreRecord(mode: "eclair" | "survie", score: number): boolean 
   return true;
 }
 
-export function regler(r: Partial<Pick<Profil, "chrono">>) {
+/** Un record de jeu sans niveau (« Nomme-les tous », contre-la-montre…) : true s'il est battu. */
+export function battreRecordDe(cle: string, score: number): boolean {
+  const e = lire();
+  if (score <= (e.records[cle] ?? 0)) return false;
+  ecrire({ ...e, records: { ...e.records, [cle]: score } });
+  void noter("monde", "records");
+  return true;
+}
+
+/* ---------- Les cabinets ---------- */
+
+const cabinetDe = (e: Etat, cab: string): EtatCabinet => e.cabinets[cab] ?? { n: {}, m: {} };
+
+export const etoilesCabinet = (e: Etat, cab: string, n: number): number => cabinetDe(e, cab).n[n]?.e ?? 0;
+export const niveauOuvertCabinet = (e: Etat, cab: string, n: number): boolean => n === 1 || (cabinetDe(e, cab).n[n - 1]?.f ?? 0) > 0;
+export function niveauCourantCabinet(e: Etat, cab: string, total: number): number {
+  for (let n = 1; n <= total; n++) if (!(cabinetDe(e, cab).n[n]?.f ?? 0)) return n;
+  return total;
+}
+export function niveauxReussisCabinet(e: Etat, cab: string, total: number): number {
+  let k = 0;
+  for (let n = 1; n <= total; n++) if ((cabinetDe(e, cab).n[n]?.f ?? 0) > 0) k++;
+  return k;
+}
+export const boiteCabinet = (e: Etat, cab: string, id: string): number => cabinetDe(e, cab).m[id]?.[2] ?? 0;
+
+/** Les éléments des niveaux d'avant à revoir d'abord (les plus fragiles, les plus anciens). */
+export function aReviserCabinet(e: Etat, cab: string, avant: string[], n: number): string[] {
+  const m = cabinetDe(e, cab).m;
+  const jour = aujourdhui();
+  return avant
+    .map((id) => ({ id, x: m[id] }))
+    .sort((a, b) => Number(aRevoir(b.x, jour)) - Number(aRevoir(a.x, jour)) || (a.x?.[2] ?? -1) - (b.x?.[2] ?? -1) || (a.x?.[3] ?? 0) - (b.x?.[3] ?? 0))
+    .slice(0, n)
+    .map((x) => x.id);
+}
+
+/** Une réponse sur un élément de cabinet. */
+export function noterCabinet(cab: string, id: string, juste: boolean, xp = 0) {
+  const e = lire();
+  const c = cabinetDe(e, cab);
+  const avant = c.m[id] ?? ([0, 0, 0, 0] as Maitrise);
+  const jour = aujourdhui();
+  const nouvelle: Maitrise = juste ? [avant[0] + 1, avant[1], Math.min(5, avant[2] + 1), jour] : [avant[0], avant[1] + 1, Math.max(0, avant[2] - 2), jour];
+  const profil = xp > 0 || juste ? { ...e.profil, xp: e.profil.xp + xp, gagnes: e.profil.gagnes + (juste ? DUCATS.bonne : 0), q: Date.now() } : e.profil;
+  ecrire({ ...e, profil, cabinets: { ...e.cabinets, [cab]: { ...c, m: { ...c.m, [id]: nouvelle } } } });
+  void noter("monde", `cabinet:${cab}`);
+  if (profil !== e.profil) void noter("monde", "profil");
+}
+
+/** Les ducats et la série de jours d'un niveau réussi (pays ou cabinet). */
+function recompenser(e: Etat, avant: ResultatNiveau | undefined, note: number, reussi: boolean) {
+  const premiereFois = reussi && !(avant?.f ?? 0);
+  const record = reussi && note > (avant?.e ?? 0);
+  let gain = 0;
+  let jours = e.profil.jours;
+  let dernierJour = e.profil.dernierJour;
+  if (reussi) {
+    gain += premiereFois ? DUCATS.niveau + note * DUCATS.parEtoile : record ? (note - (avant?.e ?? 0)) * DUCATS.parEtoile : 0;
+    const jour = jourDeParis();
+    if (dernierJour !== jour) {
+      const hier = jourDeParis(new Date(Date.now() - 86_400_000));
+      jours = dernierJour === hier ? jours + 1 : 1;
+      dernierJour = jour;
+      gain += DUCATS.jour;
+    }
+  }
+  return { premiereFois, record, gain, jours, dernierJour };
+}
+
+/** Un niveau de cabinet terminé (réussi si des cœurs restent). */
+export function finirNiveauCabinet(cab: string, n: number, r: { bonnes: number; fautes: number; reussi: boolean }): Bilan {
+  const e = lire();
+  const c = cabinetDe(e, cab);
+  const avant = c.n[n];
+  const note = r.reussi ? (r.fautes <= 0 ? 3 : r.fautes === 1 ? 2 : 1) : 0;
+  const x = recompenser(e, avant, note, r.reussi);
+  const niveaux = r.reussi ? { ...c.n, [n]: { e: Math.max(avant?.e ?? 0, note), m: Math.max(avant?.m ?? 0, r.bonnes), f: Date.now() } } : c.n;
+  ecrire({ ...e, cabinets: { ...e.cabinets, [cab]: { ...c, n: niveaux } }, profil: { ...e.profil, gagnes: e.profil.gagnes + x.gain, jours: x.jours, dernierJour: x.dernierJour, q: Date.now() } });
+  if (r.reussi) void noter("monde", `cabinet:${cab}`);
+  void noter("monde", "profil");
+  return { etoiles: note, ducats: x.gain, premiereFois: x.premiereFois, record: x.record, jours: x.jours };
+}
+
+export function regler(r: Partial<Pick<Profil, "chrono" | "voix">>) {
   const e = lire();
   ecrire({ ...e, profil: { ...e.profil, ...r, q: Date.now() } });
   void noter("monde", "profil");
@@ -245,6 +336,8 @@ export function clesLocales(): { c: string; q?: number }[] {
     { c: "profil", q: e.profil.q || undefined },
     ...Object.entries(e.niveaux).map(([k, r]) => ({ c: `niveau:${k}`, q: r.f || undefined })),
     ...Object.keys(e.pays).map((code) => ({ c: `pays:${code}` })),
+    ...Object.entries(e.cabinets).map(([id, x]) => ({ c: `cabinet:${id}`, q: Math.max(0, ...Object.values(x.n).map((r) => r.f)) || undefined })),
+    ...(Object.keys(e.records).length ? [{ c: "records" }] : []),
   ];
 }
 
@@ -253,6 +346,8 @@ export function valeurLocale(c: string): unknown {
   if (c === "profil") return e.profil;
   if (c.startsWith("niveau:")) return e.niveaux[c.slice(7)];
   if (c.startsWith("pays:")) return e.pays[c.slice(5)];
+  if (c.startsWith("cabinet:")) return e.cabinets[c.slice(8)];
+  if (c === "records") return e.records;
   return undefined;
 }
 
@@ -274,6 +369,7 @@ export function rangerValeur(c: string, v: unknown): boolean {
       eclair: Math.max(a.eclair, nombre(p.eclair)),
       survie: Math.max(a.survie, nombre(p.survie)),
       chrono: recent && typeof p.chrono === "boolean" ? p.chrono : a.chrono,
+      voix: recent && typeof p.voix === "boolean" ? p.voix : a.voix,
       q: Math.max(a.q, nombre(p.q)),
     };
     ecrire({ ...e, profil });
@@ -308,6 +404,46 @@ export function rangerValeur(c: string, v: unknown): boolean {
     ecrire({ ...e, pays: { ...e.pays, [code]: fusion } });
     return mieux;
   }
+  if (c.startsWith("cabinet:")) {
+    const id = c.slice(8);
+    const venu = (v ?? {}) as Partial<EtatCabinet>;
+    const ici = cabinetDe(e, id);
+    let mieux = false;
+    const n: Record<string, ResultatNiveau> = { ...ici.n };
+    for (const k of new Set([...Object.keys(ici.n), ...Object.keys(venu.n ?? {})])) {
+      const a = ici.n[k];
+      const b = (venu.n ?? {})[k];
+      const fusion = { e: Math.max(a?.e ?? 0, nombre(b?.e)), m: Math.max(a?.m ?? 0, nombre(b?.m)), f: Math.max(a?.f ?? 0, nombre(b?.f)) };
+      if (fusion.e !== nombre(b?.e) || fusion.m !== nombre(b?.m) || fusion.f !== nombre(b?.f)) mieux = true;
+      n[k] = fusion;
+    }
+    const m: Record<string, Maitrise> = { ...ici.m };
+    for (const k of new Set([...Object.keys(ici.m), ...Object.keys(venu.m ?? {})])) {
+      const a = ici.m[k];
+      const brut = (venu.m ?? {})[k];
+      const b = Array.isArray(brut) && brut.length === 4 ? (brut.map(nombre) as Maitrise) : undefined;
+      if (!b) {
+        if (a) mieux = true;
+        continue;
+      }
+      const garde = !a || b[3] > a[3] || (b[3] === a[3] && b[2] >= a[2]) ? b : a;
+      if (garde !== b) mieux = true;
+      m[k] = garde;
+    }
+    ecrire({ ...e, cabinets: { ...e.cabinets, [id]: { n, m } } });
+    return mieux;
+  }
+  if (c === "records") {
+    const venu = (v ?? {}) as Record<string, unknown>;
+    const fusion: Record<string, number> = { ...e.records };
+    let mieux = false;
+    for (const k of new Set([...Object.keys(e.records), ...Object.keys(venu)])) {
+      fusion[k] = Math.max(e.records[k] ?? 0, nombre(venu[k]));
+      if (fusion[k] !== nombre(venu[k])) mieux = true;
+    }
+    ecrire({ ...e, records: fusion });
+    return mieux;
+  }
   return false;
 }
 
@@ -321,6 +457,12 @@ export function effacerValeur(c: string) {
     const pays = { ...e.pays };
     delete pays[c.slice(5)];
     ecrire({ ...e, pays });
+  } else if (c.startsWith("cabinet:")) {
+    const cabinets = { ...e.cabinets };
+    delete cabinets[c.slice(8)];
+    ecrire({ ...e, cabinets });
+  } else if (c === "records") {
+    ecrire({ ...e, records: {} });
   }
 }
 

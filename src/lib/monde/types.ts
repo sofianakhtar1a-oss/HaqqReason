@@ -87,6 +87,8 @@ export type Pays = {
   couleurs?: string[];
   /** Un drapeau simple qu'on peut colorier : la couleur de chaque forme, dans l'ordre du dessin. */
   coloriage?: string[];
+  /** Le drapeau découpé en 3 × 2 pièces : la même lettre pour deux pièces identiques (le puzzle). */
+  decoupe?: string;
 };
 
 /** Ce que raconte la fiche d'un pays (src/lib/monde/recits.ts, chargé à la demande). */
@@ -104,4 +106,49 @@ export type Recit = {
   /** [nom] ou [nom, population arrondie]. */
   villes?: ([string] | [string, number])[];
   anciens?: string[];
+};
+
+/* ---------- Les cabinets : les pays vus de l'intérieur (départements, États, wilayas…) ---------- */
+
+export type CabinetId = "fr-regions" | "fr-departements" | "us-etats" | "ca-provinces" | "ma-regions" | "dz-wilayas" | "drapeaux-plus";
+
+/**
+ * Les méthodes d'un cabinet : ce qu'on montre, puis ce qu'on trouve.
+ * chef : préfecture, capitale ou chef-lieu ; num : le numéro ; groupe : la région d'un département.
+ */
+export type MethodeCabinet = "nom-chef" | "chef-nom" | "num-nom" | "nom-num" | "nom-groupe" | "drapeau-nom" | "nom-drapeau" | "ville-nom" | "ecrire-chef" | "ecrire-nom" | "ecrire-num";
+
+export type ElementCabinet = {
+  id: string;
+  nom: string;
+  noms?: string[];
+  chef?: string;
+  chefs?: string[];
+  num?: string;
+  groupe?: string;
+  villes?: string[];
+  note?: string;
+  /** Le fichier du drapeau (dans /monde/emblemes/) et son rapport largeur / hauteur. */
+  drapeau?: string;
+  rapport?: number;
+  rang: number;
+};
+
+export type DonneesCabinet = {
+  id: CabinetId;
+  nom: string;
+  court: string;
+  texte: string;
+  /** Le pays (code) dont le drapeau représente le cabinet ; « eu » pour les autres drapeaux. */
+  pays: string;
+  embleme?: string;
+  /** Le nombre d'éléments par niveau (à peu près). */
+  taille: number;
+  mots: { unite: string; unites: string; chef?: string; chefs?: string; num?: string; groupe?: string };
+  avertissement?: string;
+  consignes: Partial<Record<MethodeCabinet, string>>;
+  /** Les méthodes de la première moitié des niveaux, puis celles qui s'y ajoutent. */
+  paliers: MethodeCabinet[][];
+  groupes?: Record<string, string>;
+  elements: ElementCabinet[];
 };

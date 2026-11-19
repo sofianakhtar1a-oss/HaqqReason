@@ -28,6 +28,7 @@ export type TypeQuestion =
   | "drapeau-carte"
   | "drapeau-couleur"
   | "drapeau-colorie"
+  | "drapeau-puzzle"
   // Capitales
   | "pays-capitale"
   | "capitale-pays"
@@ -91,6 +92,7 @@ export type Invite =
   | "drapeau-devoile"
   | "drapeau-trou"
   | "coloriage"
+  | "puzzle"
   | "nom"
   | "capitale"
   | "carte"
@@ -110,9 +112,10 @@ export type Invite =
  *   texte : un choix parmi des mots (gentilés, langues, villes, sommets, codes, heures, nombres) ;
  *   couleur : une pastille ; vraifaux : vrai ou faux ;
  *   ecrit : on écrit ; clic : on touche un pays sur le globe ; placer : on pose un point sur le globe ;
- *   coloriage : on colorie un drapeau ; classer : on range quatre pays.
+ *   coloriage : on colorie un drapeau ; classer : on range quatre pays ; puzzle : on remet en place
+ *   les six pièces d'un drapeau.
  */
-export type SorteReponse = "nom" | "drapeau" | "capitale" | "continent" | "monnaie" | "texte" | "couleur" | "vraifaux" | "ecrit" | "clic" | "placer" | "coloriage" | "classer";
+export type SorteReponse = "nom" | "drapeau" | "capitale" | "continent" | "monnaie" | "texte" | "couleur" | "vraifaux" | "ecrit" | "clic" | "placer" | "coloriage" | "classer" | "puzzle";
 
 export type DefType = {
   id: TypeQuestion;
@@ -132,7 +135,7 @@ export type DefType = {
 };
 
 /** Les réponses qu'on ne donne pas d'un simple choix : pas de duel, pas de mode rapide. */
-export const REPONSES_LIBRES: readonly SorteReponse[] = ["ecrit", "clic", "placer", "coloriage", "classer"];
+export const REPONSES_LIBRES: readonly SorteReponse[] = ["ecrit", "clic", "placer", "coloriage", "classer", "puzzle"];
 
 const enQuiz = (p: Pays) => p.quiz;
 const avecDrapeau = (p: Pays) => p.quiz && p.drapeauPropre;
@@ -187,6 +190,8 @@ const comparable = (p: Pays) => p.quiz && (rangPopulation.get(p.code) ?? 0) >= 1
 /** Les drapeaux qu'on colorie et ceux dont on cache une couleur. */
 const coloriable = (p: Pays) => avecDrapeau(p) && Boolean(p.coloriage);
 const aDesCouleurs = (p: Pays) => avecDrapeau(p) && (p.couleurs?.length ?? 0) >= 2;
+/** Un puzzle digne de ce nom : au moins trois sortes de pièces (pas deux bandes qu'on inverse). */
+const puzzlable = (p: Pays) => avecDrapeau(p) && new Set(p.decoupe ?? "").size >= 3;
 
 const t = (d: DefType) => d;
 
@@ -200,6 +205,7 @@ export const TYPES: Record<TypeQuestion, DefType> = {
   "drapeau-carte": t({ id: "drapeau-carte", categorie: "drapeaux", libelle: "Drapeau → le situer sur le globe", consigne: "Touche sur le globe le pays de ce drapeau", invite: "drapeau", reponse: "clic", eligible: (p) => avecDrapeau(p) && p.carte && (p.superficie ?? 0) >= 9000 }),
   "drapeau-couleur": t({ id: "drapeau-couleur", categorie: "drapeaux", libelle: "La couleur qui manque", consigne: "Quelle couleur manque à ce drapeau ?", invite: "drapeau-trou", reponse: "couleur", eligible: aDesCouleurs, duel: false }),
   "drapeau-colorie": t({ id: "drapeau-colorie", categorie: "drapeaux", libelle: "Colorie le drapeau", consigne: "Colorie ce drapeau", invite: "coloriage", reponse: "coloriage", eligible: coloriable }),
+  "drapeau-puzzle": t({ id: "drapeau-puzzle", categorie: "drapeaux", libelle: "Le puzzle du drapeau", consigne: "Remets les pièces de ce drapeau en place", invite: "puzzle", reponse: "puzzle", eligible: puzzlable }),
 
   "pays-capitale": t({ id: "pays-capitale", categorie: "capitales", libelle: "Pays → capitale", consigne: "Quelle est sa capitale ?", invite: "nom", reponse: "capitale", eligible: avecCapitale }),
   "capitale-pays": t({ id: "capitale-pays", categorie: "capitales", libelle: "Capitale → pays", consigne: "De quel pays est-ce la capitale ?", invite: "capitale", reponse: "nom", eligible: avecCapitale }),
@@ -279,7 +285,7 @@ export const CATEGORIES: Record<CategorieId, DefCategorie> = {
     texte: "Reconnaître le drapeau de chaque pays, et le pays de chaque drapeau.",
     eligible: avecDrapeau,
     rang: (p) => p.rang,
-    paliers: [["drapeau-nom", "nom-drapeau"], ["drapeau-gris", "drapeau-vrai-faux", "drapeau-devoile"], ["drapeau-ecrit", "drapeau-carte", "drapeau-couleur", "drapeau-colorie"]],
+    paliers: [["drapeau-nom", "nom-drapeau"], ["drapeau-gris", "drapeau-vrai-faux", "drapeau-devoile", "drapeau-puzzle"], ["drapeau-ecrit", "drapeau-carte", "drapeau-couleur", "drapeau-colorie"]],
   },
   capitales: {
     id: "capitales",

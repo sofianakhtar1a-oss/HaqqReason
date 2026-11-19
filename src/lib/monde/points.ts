@@ -1,5 +1,7 @@
+import { jugerCabinet, METHODES, reponseCabinetValide } from "./cabinets";
 import { TYPES, type TypeQuestion } from "./categories";
 import { juger } from "./quiz";
+import type { CabinetId, MethodeCabinet } from "./types";
 
 /*
  * Le Portulan : l'expérience (XP), les ducats et les trophées.
@@ -20,18 +22,25 @@ export function baseDe(type: TypeQuestion, nb: number): number {
   const r = TYPES[type]?.reponse;
   if (r === "ecrit") return BASES.ecrit;
   // Toucher le globe, poser une capitale, colorier un drapeau, ranger des pays : autant qu'écrire.
-  if (r === "clic" || r === "placer" || r === "coloriage" || r === "classer") return BASES.clic;
+  if (r === "clic" || r === "placer" || r === "coloriage" || r === "classer" || r === "puzzle") return BASES.clic;
   if (r === "vraifaux" || nb === 2) return BASES.qcm2;
   return nb >= 6 ? BASES.qcm6 : BASES.qcm4;
 }
 
-/** Ce que le navigateur envoie pour une réponse. */
-export type ReponseEnvoyee = { type: TypeQuestion; cible: string; reponse: string; nb: number };
+/** Ce que le navigateur envoie pour une réponse : une question sur un pays, ou sur un cabinet. */
+export type ReponsePays = { type: TypeQuestion; cible: string; reponse: string; nb: number; cabinet?: undefined };
+export type ReponseCabinetEnvoyee = { cabinet: CabinetId; type: MethodeCabinet; cible: string; reponse: string; nb: number };
+export type ReponseEnvoyee = ReponsePays | ReponseCabinetEnvoyee;
 
 /** Lit une réponse envoyée, sans rien croire : tout champ inattendu disparaît. */
 export function lireReponse(x: unknown): ReponseEnvoyee | null {
   if (!x || typeof x !== "object") return null;
   const o = x as Record<string, unknown>;
+  if (o.cabinet !== undefined) {
+    if (!reponseCabinetValide(o.cabinet, o.type, o.cible)) return null;
+    if (typeof o.reponse !== "string" || o.reponse.length > 120) return null;
+    return { cabinet: o.cabinet as CabinetId, type: o.type as MethodeCabinet, cible: o.cible as string, reponse: o.reponse, nb: o.nb === 2 ? 2 : o.nb === 0 ? 0 : 4 };
+  }
   const type = o.type as TypeQuestion;
   if (typeof type !== "string" || !(type in TYPES)) return null;
   if (typeof o.cible !== "string" || !/^[a-z]{2}$/.test(o.cible)) return null;
@@ -40,8 +49,12 @@ export function lireReponse(x: unknown): ReponseEnvoyee | null {
   return { type, cible: o.cible, reponse: o.reponse, nb };
 }
 
+/** L'XP de base d'une question de cabinet : comme pour les pays (4 choix, ou écrire). */
+export const baseCabinet = (m: MethodeCabinet, nb: number): number => (METHODES[m]?.reponse === "ecrit" ? BASES.ecrit : nb === 2 ? BASES.qcm2 : BASES.qcm4);
+
 /** Le serveur juge avec SES données ; la base reçoit le résultat et la base de points. */
 export function evaluer(r: ReponseEnvoyee): { cle: string; resultat: "juste" | "presque" | "faux"; base: number } {
+  if (r.cabinet) return { cle: `${r.type}:${r.cabinet}:${r.cible}`, resultat: jugerCabinet(r.cabinet, r.type, r.cible, r.reponse), base: baseCabinet(r.type, r.nb) };
   return { cle: `${r.type}:${r.cible}`, resultat: juger(r.type, r.cible, r.reponse), base: baseDe(r.type, r.nb) };
 }
 

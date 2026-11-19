@@ -9,10 +9,14 @@ import { useCompteMonde } from "@/lib/monde/compte-client";
 import { grade, NB_NIVEAUX } from "@/lib/monde/niveaux";
 import { ducats, maitrise, niveauCourant, niveauxReussis, paysConnus, regler, revisionsDues, useMonde } from "@/lib/monde/progression";
 import { useTextes } from "@/lib/modules/textes-client";
+import { CABINETS, estCabinet } from "@/lib/monde/cabinets";
+import type { CabinetId } from "@/lib/monde/types";
+import { CartoucheCabinet, EcranCabinet } from "./Cabinet";
 import { Categorie } from "./Categorie";
 import { Ducats, RoseDesVents } from "./communs";
 import { Drapeau } from "./figures";
 import { Globe, type Teinte } from "./Globe";
+import { CONTINENTS_A_NOMMER, paysANommer, titreContinent } from "./NommeLesTous";
 import { type Lancement, useLancer } from "./Partie";
 
 export const ICONES_CATEGORIES: Record<CategorieId, typeof Flag> = {
@@ -71,6 +75,7 @@ function Cartouche({ c, i, onCategorie }: { c: CategorieId; i: number; onCategor
 
 export function Accueil({ categorie, onCategorie, lancer, aller }: { categorie: string | null; onCategorie: (id: string | null) => void; lancer: (l: Lancement) => void; aller: (hash: string) => void }) {
   if (categorie && categorie in CATEGORIES) return <Categorie id={categorie as CategorieId} onRetour={() => onCategorie(null)} lancer={lancer} />;
+  if (categorie?.startsWith("cabinet-") && estCabinet(categorie.slice(8))) return <EcranCabinet id={categorie.slice(8) as CabinetId} onRetour={() => onCategorie(null)} lancer={lancer} />;
   return <Hub onCategorie={onCategorie} lancer={lancer} aller={aller} />;
 }
 
@@ -175,6 +180,41 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
           {CATEGORIES_NOUVELLES.map((c, i) => (
             <Cartouche key={c} c={c} i={i} onCategorie={onCategorie} />
           ))}
+        </div>
+      </section>
+
+      <section aria-labelledby="pt-cabinets">
+        <h3 id="pt-cabinets" className="pt-sous-titre">
+          Les pays vus de l&apos;intérieur
+        </h3>
+        <p className="pt-sous-chapo">Départements et régions de France, États américains, provinces du Canada, régions du Maroc, wilayas d&apos;Algérie, et des drapeaux qui ne sont pas ceux d&apos;un pays.</p>
+        <div className="pt-cartouches" data-petites="">
+          {CABINETS.map((c, i) => (
+            <CartoucheCabinet key={c.id} c={c} i={i} onOuvrir={() => onCategorie(`cabinet-${c.id}`)} />
+          ))}
+        </div>
+      </section>
+
+      <section aria-labelledby="pt-nomme">
+        <h3 id="pt-nomme" className="pt-sous-titre">
+          Nomme-les tous
+        </h3>
+        <p className="pt-sous-chapo">Tous les pays d&apos;un continent, de mémoire, contre la montre : chacun se dore sur le globe dès que tu l&apos;écris.</p>
+        <div className="pt-nomme-choix">
+          {CONTINENTS_A_NOMMER.map(({ id }) => {
+            const total = paysANommer(id).length;
+            const r = monde.records[`nomme:continent:${id}`] ?? 0;
+            return (
+              <button key={id} type="button" className="pt-nomme-carte" data-monde={id === "monde" || undefined} onClick={() => lancer({ cle: `${Date.now()}`, sorte: "nomme", liste: `continent:${id}`, titre: titreContinent(id) })}>
+                <span className="pt-nomme-carte-nom">{titreContinent(id)}</span>
+                <span className="pt-nomme-carte-total tabular-nums">{total} pays</span>
+                <span className="pt-nomme-carte-record">{r ? `Record : ${r}` : "À tenter"}</span>
+                <span className="pt-nomme-carte-barre" aria-hidden="true">
+                  <span style={{ transform: `scaleX(${r / total})` }} />
+                </span>
+              </button>
+            );
+          })}
         </div>
       </section>
 

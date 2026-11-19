@@ -46,7 +46,7 @@ const tolerance = (n: number) => (n >= 9 ? 2 : n >= 4 ? 1 : 0);
 const formesNoms = new Map<string, string[]>(PAYS.map((p) => [p.code, [...new Set(p.noms.map(normaliser))]]));
 const formesCapitales = new Map<string, string[]>(PAYS.filter((p) => p.capitale).map((p) => [p.code, [...new Set([p.capitale!, ...(p.capitales ?? [])].map(normaliser))]]));
 
-function comparer(saisie: string, cible: string, formes: Map<string, string[]>): Jugement {
+export function comparer(saisie: string, cible: string, formes: Map<string, string[]>): Jugement {
   const s = normaliser(saisie);
   if (!s) return "faux";
   const attendues = formes.get(cible) ?? [];
