@@ -1,0 +1,253 @@
+// Le Portulan : les données ajoutées aux fiches (codes, organisations, anciens noms…),
+// choisies à la main. Codes ISO 3166-1 alpha-2, en minuscules.
+
+/** Les pays et territoires où l'on roule à gauche (tous les autres roulent à droite). */
+export const CONDUITE_GAUCHE = new Set([
+  "gb", "ie", "mt", "cy", "im", "gg", "je",
+  "jp", "in", "pk", "bd", "lk", "np", "bt", "mv", "th", "my", "sg", "bn", "id", "tl", "hk", "mo",
+  "au", "nz", "pg", "fj", "sb", "ws", "to", "ki", "tv", "nr", "ck", "nu", "tk", "nf", "cx", "cc", "pn",
+  "za", "ls", "sz", "bw", "na", "zw", "zm", "mw", "mz", "tz", "ke", "ug", "mu", "sc", "sh", "fk",
+  "gy", "sr", "jm", "bs", "bb", "tt", "ag", "dm", "gd", "lc", "vc", "kn", "ai", "ms", "vg", "vi", "ky", "tc", "bm",
+]);
+/** Sans route ouverte à tous (bases, îles inhabitées) : on ne dit rien. */
+export const CONDUITE_INCONNUE = new Set(["aq", "bv", "hm", "um", "gs", "io", "tf"]);
+
+/**
+ * Les organisations dont un pays est membre (membres de plein droit, en 2026).
+ * Elles servent à la fiche, aux parcours thématiques et aux calques de la carte.
+ */
+export const ORGANISATIONS = {
+  ue: {
+    nom: "Union européenne",
+    court: "UE",
+    texte: "27 États européens qui partagent un marché unique, des institutions communes et, pour 21 d'entre eux, l'euro.",
+    membres: ["at", "be", "bg", "hr", "cy", "cz", "dk", "ee", "fi", "fr", "de", "gr", "hu", "ie", "it", "lv", "lt", "lu", "mt", "nl", "pl", "pt", "ro", "sk", "si", "es", "se"],
+  },
+  ua: {
+    nom: "Union africaine",
+    court: "UA",
+    texte: "Les 54 États africains membres de l'ONU, et la République arabe sahraouie démocratique.",
+    membres: ["dz", "ao", "bj", "bw", "bf", "bi", "cv", "cm", "cf", "td", "km", "cg", "cd", "ci", "dj", "eg", "gq", "er", "sz", "et", "ga", "gm", "gh", "gn", "gw", "ke", "ls", "lr", "ly", "mg", "mw", "ml", "mr", "mu", "ma", "mz", "na", "ne", "ng", "rw", "st", "sn", "sc", "sl", "so", "za", "ss", "sd", "tz", "tg", "tn", "ug", "zm", "zw"],
+  },
+  la: {
+    nom: "Ligue arabe",
+    court: "Ligue arabe",
+    texte: "22 États arabes d'Afrique et d'Asie, réunis depuis 1945 ; son siège est au Caire.",
+    membres: ["dz", "bh", "km", "dj", "eg", "iq", "jo", "kw", "lb", "ly", "mr", "ma", "om", "ps", "qa", "sa", "so", "sd", "sy", "tn", "ae", "ye"],
+  },
+  oci: {
+    nom: "Organisation de la coopération islamique",
+    court: "OCI",
+    texte: "57 États de quatre continents ; la deuxième organisation intergouvernementale du monde après l'ONU. Son siège est à Djeddah.",
+    membres: ["af", "al", "dz", "az", "bh", "bd", "bj", "bn", "bf", "cm", "td", "km", "ci", "dj", "eg", "ga", "gm", "gn", "gw", "gy", "id", "ir", "iq", "jo", "kz", "kw", "kg", "lb", "ly", "my", "mv", "ml", "mr", "ma", "mz", "ne", "ng", "om", "pk", "ps", "qa", "sa", "sn", "sl", "so", "sd", "sr", "sy", "tj", "tg", "tn", "tr", "tm", "ug", "ae", "uz", "ye"],
+  },
+  oif: {
+    nom: "Organisation internationale de la Francophonie",
+    court: "Francophonie",
+    texte: "Les États qui ont le français en partage, membres de plein droit de l'OIF (sans les membres associés ni les observateurs).",
+    membres: ["al", "ad", "am", "be", "bj", "bg", "bi", "kh", "cm", "ca", "cv", "cf", "td", "km", "cg", "cd", "ci", "dj", "dm", "eg", "gq", "fr", "ga", "gr", "gn", "gw", "ht", "la", "lb", "lu", "mg", "mr", "mu", "md", "mc", "ma", "mk", "ro", "rw", "lc", "st", "sn", "sc", "ch", "tg", "tn", "vu", "vn"],
+  },
+  asean: {
+    nom: "Association des nations de l'Asie du Sud-Est",
+    court: "ASEAN",
+    texte: "11 États d'Asie du Sud-Est ; le Timor oriental est le dernier arrivé, en 2025.",
+    membres: ["bn", "kh", "id", "la", "my", "mm", "ph", "sg", "th", "vn", "tl"],
+  },
+  mercosur: {
+    nom: "Marché commun du Sud",
+    court: "Mercosur",
+    texte: "L'union douanière d'Amérique du Sud ; la Bolivie y est entrée en 2024, le Venezuela est suspendu depuis 2016.",
+    membres: ["ar", "br", "py", "uy", "bo"],
+  },
+  g20: {
+    nom: "Groupe des vingt",
+    court: "G20",
+    texte: "19 pays, l'Union européenne et l'Union africaine : les plus grandes économies du monde.",
+    membres: ["ar", "au", "br", "ca", "cn", "fr", "de", "in", "id", "it", "jp", "kr", "mx", "ru", "sa", "za", "tr", "gb", "us"],
+  },
+  commonwealth: {
+    nom: "Commonwealth des nations",
+    court: "Commonwealth",
+    texte: "56 États, presque tous anciens territoires de l'Empire britannique ; le Gabon et le Togo l'ont rejoint en 2022.",
+    membres: ["ag", "au", "bs", "bd", "bb", "bz", "bw", "bn", "cm", "ca", "cy", "dm", "sz", "fj", "ga", "gm", "gh", "gd", "gy", "in", "jm", "ke", "ki", "ls", "mw", "my", "mv", "mt", "mu", "mz", "na", "nr", "nz", "ng", "pk", "pg", "rw", "kn", "lc", "vc", "ws", "sc", "sl", "sg", "sb", "za", "lk", "tz", "tg", "to", "tt", "tv", "ug", "gb", "vu", "zm"],
+  },
+  otan: {
+    nom: "Organisation du traité de l'Atlantique nord",
+    court: "OTAN",
+    texte: "L'alliance militaire de 32 États d'Europe et d'Amérique du Nord ; la Suède est le dernier membre, en 2024.",
+    membres: ["al", "be", "bg", "ca", "hr", "cz", "dk", "ee", "fi", "fr", "de", "gr", "hu", "is", "it", "lv", "lt", "lu", "me", "nl", "mk", "no", "pl", "pt", "ro", "sk", "si", "es", "se", "tr", "gb", "us"],
+  },
+};
+
+/** Les anciens noms (et l'époque où ils ont changé). */
+export const ANCIENS_NOMS = {
+  cd: ["État indépendant du Congo (1885-1908)", "Congo belge (1908-1960)", "Zaïre (1971-1997)"],
+  lk: ["Ceylan (jusqu'en 1972)"],
+  th: ["Siam (jusqu'en 1939, puis de 1945 à 1949)"],
+  ir: ["Perse (jusqu'en 1935 dans l'usage international)"],
+  bf: ["Haute-Volta (jusqu'en 1984)"],
+  bj: ["Dahomey (jusqu'en 1975)"],
+  mm: ["Le régime a adopté le nom Myanmar en 1989 ; le français dit toujours Birmanie"],
+  kh: ["République khmère (1970-1975)", "Kampuchéa démocratique (1975-1979)"],
+  bw: ["Bechuanaland (jusqu'en 1966)"],
+  ls: ["Basutoland (jusqu'en 1966)"],
+  mw: ["Nyassaland (jusqu'en 1964)"],
+  zm: ["Rhodésie du Nord (jusqu'en 1964)"],
+  zw: ["Rhodésie du Sud, puis Rhodésie (jusqu'en 1980)"],
+  gh: ["Côte-de-l'Or (jusqu'en 1957)"],
+  tz: ["Tanganyika et Zanzibar, unis en 1964"],
+  na: ["Sud-Ouest africain (jusqu'en 1990)"],
+  bz: ["Honduras britannique (jusqu'en 1973)"],
+  gy: ["Guyane britannique (jusqu'en 1966)"],
+  sr: ["Guyane néerlandaise (jusqu'en 1975)"],
+  vu: ["Nouvelles-Hébrides (jusqu'en 1980)"],
+  ki: ["Îles Gilbert (jusqu'en 1979)"],
+  tv: ["Îles Ellice (jusqu'en 1975)"],
+  mk: ["République de Macédoine, puis « ARYM » à l'ONU (jusqu'en 2019)"],
+  sz: ["Swaziland (jusqu'en 2018)"],
+  eg: ["République arabe unie, avec la Syrie (1958-1961), nom gardé jusqu'en 1971"],
+  sy: ["République arabe unie, avec l'Égypte (1958-1961)"],
+  ye: ["Yémen du Nord et Yémen du Sud, unis en 1990"],
+  de: ["République fédérale d'Allemagne et République démocratique allemande, réunies en 1990"],
+  vn: ["Tonkin, Annam et Cochinchine, dans l'Indochine française"],
+  la: ["Royaume du Laos, dans l'Indochine française"],
+  dj: ["Côte française des Somalis (jusqu'en 1967)", "Territoire français des Afars et des Issas (1967-1977)"],
+  ml: ["Soudan français (jusqu'en 1960)"],
+  cf: ["Oubangui-Chari (jusqu'en 1958)"],
+  cg: ["Moyen-Congo (jusqu'en 1958)"],
+  bi: ["Urundi, dans le Ruanda-Urundi (jusqu'en 1962)"],
+  rw: ["Ruanda, dans le Ruanda-Urundi (jusqu'en 1962)"],
+  gq: ["Guinée espagnole (jusqu'en 1968)"],
+  gw: ["Guinée portugaise (jusqu'en 1974)"],
+  mz: ["Afrique orientale portugaise (jusqu'en 1975)"],
+  tg: ["Togoland (jusqu'en 1960)"],
+  cm: ["Kamerun (colonie allemande, jusqu'en 1916)"],
+  ly: ["Jamahiriya arabe libyenne (1977-2011)"],
+  ss: ["Partie du Soudan jusqu'en 2011"],
+  er: ["Partie de l'Éthiopie jusqu'en 1993"],
+  bd: ["Bengale oriental, puis Pakistan oriental (jusqu'en 1971)"],
+  id: ["Indes orientales néerlandaises (jusqu'en 1949)"],
+  my: ["Fédération de Malaisie, ou Malaya (1948-1963)"],
+  tl: ["Timor portugais (jusqu'en 1975)"],
+  ws: ["Samoa occidentales (jusqu'en 1997)"],
+  nr: ["Pleasant Island, l'« île Agréable », au XIXe siècle"],
+  ie: ["État libre d'Irlande (1922-1937)"],
+  mx: ["Vice-royauté de Nouvelle-Espagne (jusqu'en 1821)"],
+  co: ["Nouvelle-Grenade (jusqu'en 1863)"],
+  bo: ["Haut-Pérou (jusqu'en 1825)"],
+  uy: ["Bande orientale, la Banda Oriental (jusqu'en 1828)"],
+  ht: ["Saint-Domingue, colonie française (jusqu'en 1804)"],
+  ba: ["République de Bosnie-Herzégovine, dans la Yougoslavie (jusqu'en 1992)"],
+  hr: ["République de Croatie, dans la Yougoslavie (jusqu'en 1991)"],
+  si: ["République de Slovénie, dans la Yougoslavie (jusqu'en 1991)"],
+  rs: ["Yougoslavie, puis Serbie-et-Monténégro (jusqu'en 2006)"],
+  me: ["Serbie-et-Monténégro (2003-2006)"],
+  jo: ["Transjordanie (jusqu'en 1949)"],
+  lb: ["Grand Liban (1920-1943)"],
+  sa: ["Royaume du Hedjaz et du Nejd (jusqu'en 1932)"],
+  ae: ["États de la Trêve (jusqu'en 1971)"],
+  om: ["Mascate et Oman (jusqu'en 1970)"],
+  tw: ["Formose, nom donné à l'île par les navigateurs portugais"],
+  mn: ["Mongolie-Extérieure (jusqu'en 1924)"],
+  nl: ["Provinces-Unies (1581-1795)"],
+  fi: ["Grand-duché de Finlande, dans l'Empire russe (1809-1917)"],
+  ru: ["Empire russe (jusqu'en 1917)", "Union soviétique, ou URSS (1922-1991)"],
+  cz: ["Tchécoslovaquie (jusqu'en 1993)"],
+  sk: ["Tchécoslovaquie (jusqu'en 1993)"],
+  va: ["États pontificaux (jusqu'en 1870)"],
+  il: ["Palestine mandataire, sous administration britannique (1920-1948)"],
+  ps: ["Palestine mandataire, sous administration britannique (1920-1948)"],
+  ua: ["République socialiste soviétique d'Ukraine (jusqu'en 1991)"],
+  by: ["République socialiste soviétique de Biélorussie (jusqu'en 1991)"],
+  kz: ["République socialiste soviétique kazakhe (jusqu'en 1991)"],
+  uz: ["République socialiste soviétique d'Ouzbékistan (jusqu'en 1991)"],
+  tm: ["République socialiste soviétique turkmène (jusqu'en 1991)"],
+  kg: ["République socialiste soviétique kirghize (jusqu'en 1991)"],
+  tj: ["République socialiste soviétique du Tadjikistan (jusqu'en 1991)"],
+  md: ["République socialiste soviétique moldave (jusqu'en 1991)"],
+  ge: ["République socialiste soviétique de Géorgie (jusqu'en 1991)"],
+  am: ["République socialiste soviétique d'Arménie (jusqu'en 1991)"],
+  az: ["République socialiste soviétique d'Azerbaïdjan (jusqu'en 1991)"],
+  ee: ["République socialiste soviétique d'Estonie (1940-1991)"],
+  lv: ["République socialiste soviétique de Lettonie (1940-1991)"],
+  lt: ["République socialiste soviétique de Lituanie (1940-1991)"],
+  sb: ["Protectorat britannique des îles Salomon (jusqu'en 1978)"],
+  pg: ["Territoire de Papouasie-et-Nouvelle-Guinée (jusqu'en 1975)"],
+  fj: ["Colonie britannique des Fidji (jusqu'en 1970)"],
+  cv: ["Cap-Vert ; la forme Cabo Verde est demandée par le pays depuis 2013"],
+  tr: ["Empire ottoman (jusqu'en 1922) ; le pays demande depuis 2022 qu'on l'appelle Türkiye"],
+  ci: ["Le pays demande depuis 1985 qu'on n'en traduise plus le nom"],
+};
+
+/** Les gentilés que la source n'a pas (masculin, féminin) ; null : il n'y en a pas d'usuel. */
+export const GENTILES = {
+  eh: ["Sahraoui", "Sahraouie"],
+  gu: ["Guamien", "Guamienne"],
+  im: ["Mannois", "Mannoise"],
+  wf: ["Wallisien et Futunien", "Wallisienne et Futunienne"],
+  ae: ["Émirien", "Émirienne"],
+  nz: ["Néo-Zélandais", "Néo-Zélandaise"],
+  za: ["Sud-Africain", "Sud-Africaine"],
+  kr: ["Sud-Coréen", "Sud-Coréenne"],
+  kp: ["Nord-Coréen", "Nord-Coréenne"],
+  lk: ["Sri-Lankais", "Sri-Lankaise"],
+  tl: ["Est-Timorais", "Est-Timoraise"],
+  cv: ["Cap-Verdien", "Cap-Verdienne"],
+  gq: ["Équato-Guinéen", "Équato-Guinéenne"],
+  sl: ["Sierra-Léonais", "Sierra-Léonaise"],
+  ag: ["Antiguais-et-Barbudien", "Antiguaise-et-Barbudienne"],
+  kn: ["Kittitien-et-Névicien", "Kittitienne-et-Névicienne"],
+  pm: ["Saint-Pierrais-et-Miquelonais", "Saint-Pierraise-et-Miquelonaise"],
+  mp: ["Mariannais", "Mariannaise"],
+  fk: ["Malouin", "Malouine"],
+  pw: ["Palaosien", "Palaosienne"],
+  vu: ["Vanuatais", "Vanuataise"],
+  cw: ["Curaçaolais", "Curaçaolaise"],
+  pg: ["Papouan-Néo-Guinéen", "Papouane-Néo-Guinéenne"],
+  sz: ["Swazi", "Swazie"],
+  ai: ["Anguillais", "Anguillaise"],
+  va: null, sh: null, tf: null,
+  tc: null, vg: null, vi: null, cc: null, cx: null, tk: null, io: null, gs: null, sj: null, hm: null, bv: null, um: null,
+};
+
+/** Les noms arabes que la source écrit mal ou autrement que l'usage. */
+export const NOMS_AR = {
+  mx: "المكسيك", rs: "صربيا", md: "مولدوفا", me: "الجبل الأسود", gf: "غويانا الفرنسية", gl: "غرينلاند", pr: "بورتوريكو",
+  cd: "الكونغو الديمقراطية", ao: "أنغولا", vg: "جزر العذراء البريطانية", vi: "جزر العذراء الأمريكية", tf: "الأراضي الفرنسية الجنوبية",
+  uz: "أوزبكستان", nu: "نيوي", va: "الفاتيكان", cv: "الرأس الأخضر",
+};
+
+/** Les indicatifs que la source ne donne qu'en partie. */
+export const INDICATIFS = {
+  va: "+39 06 698", sh: "+290", eh: "+212", pr: "+1 787", do: "+1 809", ax: "+358 18", sj: "+47", je: "+44 1534", gg: "+44 1481", im: "+44 1624",
+};
+
+/** La capitale où les données de lieux ne la placent pas (lat, lon). */
+export const COORDS_CAPITALE = {
+  lk: [6.8911, 79.9182], // Sri Jayawardenapura Kotte (les données placent Colombo)
+};
+
+/** Le fuseau horaire de la capitale, quand il ne porte pas son nom (fuseaux IANA). */
+export const FUSEAUX = {
+  us: "America/New_York", ca: "America/Toronto", ru: "Europe/Moscow", au: "Australia/Sydney", br: "America/Sao_Paulo",
+  mx: "America/Mexico_City", id: "Asia/Jakarta", kz: "Asia/Almaty", cd: "Africa/Kinshasa", mn: "Asia/Ulaanbaatar",
+  cl: "America/Santiago", es: "Europe/Madrid", pt: "Europe/Lisbon", ec: "America/Guayaquil", ki: "Pacific/Tarawa",
+  fm: "Pacific/Pohnpei", nz: "Pacific/Auckland", gl: "America/Nuuk", ar: "America/Argentina/Buenos_Aires",
+  pf: "Pacific/Tahiti", ch: "Europe/Zurich", ma: "Africa/Casablanca", ng: "Africa/Lagos", tz: "Africa/Dar_es_Salaam",
+  ci: "Africa/Abidjan", za: "Africa/Johannesburg", bo: "America/La_Paz", in: "Asia/Kolkata", pk: "Asia/Karachi",
+  tr: "Europe/Istanbul", mm: "Asia/Yangon", lk: "Asia/Colombo", my: "Asia/Kuala_Lumpur", vn: "Asia/Ho_Chi_Minh",
+  cn: "Asia/Shanghai", tw: "Asia/Taipei", bt: "Asia/Thimphu", np: "Asia/Kathmandu", kr: "Asia/Seoul", kp: "Asia/Pyongyang",
+  il: "Asia/Jerusalem", ps: "Asia/Hebron", ua: "Europe/Kyiv", by: "Europe/Minsk", ge: "Asia/Tbilisi", am: "Asia/Yerevan",
+  az: "Asia/Baku", uz: "Asia/Tashkent", tm: "Asia/Ashgabat", kg: "Asia/Bishkek", tj: "Asia/Dushanbe", af: "Asia/Kabul",
+  ir: "Asia/Tehran", iq: "Asia/Baghdad", sa: "Asia/Riyadh", ae: "Asia/Dubai", om: "Asia/Muscat", ye: "Asia/Aden",
+  eh: "Africa/El_Aaiun", ug: "Africa/Kampala", ke: "Africa/Nairobi", et: "Africa/Addis_Ababa",
+  dk: "Europe/Copenhagen", nl: "Europe/Amsterdam", no: "Europe/Oslo", se: "Europe/Stockholm", be: "Europe/Brussels",
+  lu: "Europe/Luxembourg", mc: "Europe/Monaco", va: "Europe/Vatican", sm: "Europe/San_Marino", li: "Europe/Vaduz",
+  ad: "Europe/Andorra", gb: "Europe/London", ie: "Europe/Dublin", is: "Atlantic/Reykjavik", fo: "Atlantic/Faroe",
+  xk: "Europe/Belgrade", um: "Pacific/Wake", aq: null, bv: null, hm: null, gs: "Atlantic/South_Georgia", tf: "Indian/Kerguelen",
+  sj: "Arctic/Longyearbyen", cc: "Indian/Cocos", cx: "Indian/Christmas", io: "Indian/Chagos", tk: "Pacific/Fakaofo",
+  pn: "Pacific/Pitcairn", nu: "Pacific/Niue", ck: "Pacific/Rarotonga", nf: "Pacific/Norfolk", pg: "Pacific/Port_Moresby",
+  sb: "Pacific/Guadalcanal", vu: "Pacific/Efate", nc: "Pacific/Noumea", wf: "Pacific/Wallis", ws: "Pacific/Apia",
+  to: "Pacific/Tongatapu", tv: "Pacific/Funafuti", nr: "Pacific/Nauru", mh: "Pacific/Majuro", pw: "Pacific/Palau",
+  mp: "Pacific/Saipan", gu: "Pacific/Guam", as: "Pacific/Pago_Pago", fj: "Pacific/Fiji",
+};

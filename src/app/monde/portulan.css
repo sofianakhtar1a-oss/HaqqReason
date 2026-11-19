@@ -2129,6 +2129,285 @@ html[data-pt-transition]::view-transition-new(root) {
   font-weight: 700;
   color: var(--encre-douce);
 }
+.pt-fiche-nom .pt-voix {
+  margin-left: 0.45rem;
+  vertical-align: 0.3em;
+}
+/* Écouter un nom : un petit bouton rond, qui pulse doucement pendant qu'il parle. */
+.pt-voix {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  flex: none;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  color: var(--encre-douce);
+  font-style: normal;
+  cursor: pointer;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+.pt-voix:hover {
+  color: var(--sa);
+  border-color: var(--sa-trait);
+}
+.pt-voix[data-parle] {
+  color: var(--sa);
+  border-color: var(--sa);
+}
+.pt-voix[data-parle]::after {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: inherit;
+  border: 1px solid var(--sa);
+  animation: pt-voix-onde 1.1s ease-out infinite;
+}
+@keyframes pt-voix-onde {
+  from {
+    opacity: 0.8;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.35);
+  }
+}
+/* « Le savais-tu ? » : une note dans la marge du portulan. */
+.pt-fiche-savais {
+  position: relative;
+  padding: 0.95rem 1.1rem 1rem 1.25rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, var(--sa-doux), transparent 70%), var(--pt-papier);
+  border: 1px solid var(--sa-trait);
+  font-family: var(--pt-serif);
+  font-size: 1.02rem;
+  line-height: 1.5;
+}
+.pt-fiche-savais::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.9rem;
+  bottom: 0.9rem;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: var(--sa);
+}
+.pt-fiche-savais-titre {
+  margin-bottom: 0.25rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--sa);
+}
+.pt-fiche-savais-titre span {
+  margin-left: 0.35rem;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--encre-douce);
+}
+.pt-fin-savais {
+  width: min(100%, 34rem);
+  margin: 0.4rem auto 0;
+  text-align: left;
+}
+.pt-fiche-attente {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--encre-douce);
+}
+/* Les rubriques qui se replient. */
+.pt-fiche-rubrique {
+  border-top: 1px solid var(--trait);
+}
+.pt-fiche-rubrique > summary {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.7rem;
+  padding: 0.85rem 2rem 0.85rem 0;
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+}
+.pt-fiche-rubrique > summary::-webkit-details-marker {
+  display: none;
+}
+.pt-fiche-rubrique-titre {
+  font-family: var(--pt-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 600;
+}
+.pt-fiche-rubrique-apercu {
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}
+.pt-fiche-rubrique-chevron {
+  position: absolute;
+  right: 0.2rem;
+  top: 1.05rem;
+  color: var(--encre-douce);
+  transition: transform 0.25s ease;
+}
+.pt-fiche-rubrique[open] .pt-fiche-rubrique-chevron {
+  transform: rotate(180deg);
+}
+.pt-fiche-rubrique > summary:hover .pt-fiche-rubrique-titre {
+  color: var(--sa);
+}
+.pt-fiche-rubrique-corps {
+  padding-bottom: 1rem;
+}
+.pt-fiche-rubrique[open] .pt-fiche-rubrique-corps {
+  animation: pt-rubrique-ouvre 0.3s ease both;
+}
+@keyframes pt-rubrique-ouvre {
+  from {
+    opacity: 0;
+    transform: translateY(-0.3rem);
+  }
+}
+.pt-fiche-lignes {
+  display: grid;
+  gap: 0.85rem;
+}
+.pt-fiche-lignes > div {
+  display: grid;
+  gap: 0.15rem;
+}
+@media (min-width: 40rem) {
+  .pt-fiche-lignes > div {
+    grid-template-columns: 11rem 1fr;
+    gap: 1rem;
+  }
+}
+.pt-fiche-lignes dt {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+  padding-top: 0.1rem;
+}
+.pt-fiche-lignes dd {
+  line-height: 1.5;
+}
+.pt-fiche-lignes small {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.82rem;
+  color: var(--encre-douce);
+}
+.pt-fiche-codes dd {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.pt-fiche-liste {
+  display: grid;
+  gap: 0.2rem;
+}
+.pt-fiche-villes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.1rem;
+}
+.pt-fiche-villes li {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+.pt-fiche-villes span {
+  font-family: var(--pt-serif);
+  font-style: italic;
+  font-weight: 600;
+}
+.pt-fiche-villes small {
+  display: inline;
+  margin: 0;
+}
+.pt-fiche-langue {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--pt-serif);
+  font-size: 1.1rem;
+  font-style: italic;
+}
+.pt-fiche-langue[lang="ar"] {
+  font-family: "Amiri", "Noto Naskh Arabic", "Geeza Pro", var(--pt-serif);
+  font-style: normal;
+  font-size: 1.3rem;
+}
+.pt-fiche-pont {
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-size: 0.88rem;
+}
+.pt-fiche-orgs li {
+  font-weight: 600;
+  cursor: help;
+}
+/* La qibla : une rose des vents dont l'aiguille pointe vers la Kaaba. */
+.pt-qibla {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.4rem;
+}
+.pt-qibla p {
+  flex: 1 1 14rem;
+  line-height: 1.55;
+}
+.pt-qibla small {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.82rem;
+  color: var(--encre-douce);
+}
+.pt-qibla-rose {
+  width: 7.5rem;
+  height: 7.5rem;
+  flex: none;
+}
+.pt-qibla-cercle {
+  fill: var(--pt-papier);
+  stroke: var(--or-trait);
+  stroke-width: 1.2;
+}
+.pt-qibla-graduation {
+  stroke: var(--or-trait);
+  stroke-width: 1.2;
+}
+.pt-qibla-lettre {
+  fill: var(--encre-douce);
+  font-family: var(--pt-serif);
+  font-size: 9px;
+  font-style: italic;
+  font-weight: 600;
+}
+/* À l'ouverture de la rubrique, l'aiguille part du nord et trouve sa direction. */
+.pt-qibla-aiguille {
+  transform: rotate(var(--cap));
+  animation: pt-qibla-tourne 1.2s cubic-bezier(0.2, 0.9, 0.25, 1.15) both;
+}
+@keyframes pt-qibla-tourne {
+  from {
+    transform: rotate(0deg);
+  }
+}
+.pt-qibla-pointe {
+  fill: var(--sa);
+}
+.pt-qibla-queue {
+  fill: var(--encre-douce);
+  opacity: 0.45;
+}
+.pt-qibla-axe {
+  fill: var(--or);
+}
 .pt-fiche-memoire {
   display: flex;
   flex-wrap: wrap;
@@ -2891,8 +3170,14 @@ html[data-pt-transition]::view-transition-new(root) {
   .pt-etoiles[data-animees] .pt-etoile,
   .pt-explorer-fiche,
   .pt-explorer-vide,
-  .pt-fenetre {
+  .pt-fenetre,
+  .pt-voix[data-parle]::after,
+  .pt-fiche-rubrique[open] .pt-fiche-rubrique-corps,
+  .pt-qibla-aiguille {
     animation: none !important;
+  }
+  .pt-fiche-rubrique-chevron {
+    transition: none;
   }
   .pt-globe-anneau::before {
     opacity: 0.9;

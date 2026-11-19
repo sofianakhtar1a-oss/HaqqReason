@@ -10,6 +10,7 @@ import { envoyerReponse } from "@/lib/monde/compte-client";
 import { deriver, nouvelleGraine } from "@/lib/monde/hasard";
 import { COEURS, grade, NB_NIVEAUX } from "@/lib/monde/niveaux";
 import { baseDe, gainDe, type Joker, JOKERS } from "@/lib/monde/points";
+import { useRecits } from "@/lib/monde/recits-client";
 import { aReviserAvant, battreRecord, type Bilan, depenser, ducats, finirNiveau, noterReponse, revisionsDues, useMonde } from "@/lib/monde/progression";
 import { categorieDe, consigne, juger, partieDeNiveau, type Question, questionMelangee, questionSur } from "@/lib/monde/quiz";
 import type { Jugement } from "@/lib/monde/texte";
@@ -412,6 +413,7 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
           bilan={bilan}
           record={record}
           rates={rateList}
+          croises={questions.slice(0, index + 1).map((x) => x.cible)}
           onFermer={onFermer}
           onRejouer={onRejouer}
         />
@@ -622,6 +624,7 @@ function Fin({
   bilan,
   record,
   rates,
+  croises,
   onFermer,
   onRejouer,
 }: {
@@ -634,9 +637,13 @@ function Fin({
   bilan: Bilan | null;
   record: boolean;
   rates: Rate[];
+  /** Les pays croisés pendant la partie (pour le « Le savais-tu ? »). */
+  croises: string[];
   onFermer: () => void;
   onRejouer: (l: Lancement) => void;
 }) {
+  const recits = useRecits();
+  const [tirage] = useState(() => Math.random());
   const niveau = lancement.sorte === "niveau";
   const reussi = niveau ? coeurs > 0 : true;
   const g = lancement.niveau ? grade(lancement.niveau) : null;
@@ -660,6 +667,9 @@ function Fin({
   const sousTitre = niveau ? (reussi ? (bilan?.premiereFois && g ? g.devise : `${bonnes} bonnes réponses sur ${total}`) : "Les cœurs sont épuisés. Les pays manqués t'attendent ci-dessous : revois-les, puis reprends la mer.") : `${bonnes} bonne${bonnes > 1 ? "s" : ""} réponse${bonnes > 1 ? "s" : ""}${total ? ` sur ${total}` : ""}`;
   const suivantPossible = niveau && reussi && (lancement.niveau ?? 15) < NB_NIVEAUX;
   const uniques = [...new Map(rates.map((r) => [r.q.cible, r])).values()];
+  // Une anecdote sur un pays de la partie : de préférence un pays manqué, pour qu'il reste en mémoire.
+  const candidats = [...new Set([...uniques.map((u) => u.q.cible), ...croises])].filter((c) => recits?.[c]?.anecdote);
+  const savais = candidats.length ? candidats[uniques.length && recits?.[uniques[0].q.cible]?.anecdote ? 0 : Math.floor(tirage * candidats.length)] : null;
   return (
     <div className="pt-fin" data-reussi={reussi || undefined}>
       {niveau && <Etoiles n={bilan?.etoiles ?? 0} taille="grande" animees />}
@@ -691,6 +701,14 @@ function Fin({
           </div>
         )}
       </dl>
+      {savais && (
+        <aside className="pt-fiche-savais pt-fin-savais" aria-label="Le savais-tu ?">
+          <p className="pt-fiche-savais-titre">
+            Le savais-tu ? <span>{pays(savais).nom}</span>
+          </p>
+          <p>{recits?.[savais]?.anecdote}</p>
+        </aside>
+      )}
       <div className="pt-fin-actions">
         {suivantPossible && (
           <button type="button" className="bouton bouton-principal" onClick={() => onRejouer({ ...lancement, cle: `${Date.now()}`, niveau: lancement.niveau! + 1, titre: `${CATEGORIES[lancement.categorie!].nom} · niveau ${lancement.niveau! + 1}` })}>

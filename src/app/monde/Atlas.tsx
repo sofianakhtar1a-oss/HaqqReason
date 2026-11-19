@@ -105,6 +105,9 @@ export function Atlas({ ouvert, onOuvrir, aller }: { ouvert: string | null; onOu
           Pays, capitales et monnaies : <a href="https://github.com/mledoze/countries">world-countries</a> (licence ODbL), revus et traduits à la main. Population : Banque mondiale (CC BY 4.0), estimations récentes pour les territoires qu&apos;elle ne couvre pas. Carte : <a href="https://www.naturalearthdata.com/">Natural Earth</a> (domaine public). Drapeaux :{" "}
           <a href="https://github.com/lipis/flag-icons">flag-icons</a> (licence MIT).
         </p>
+        <p>
+          Fuseaux horaires : <a href="https://github.com/manuelmhtr/countries-and-timezones">countries-and-timezones</a> (licence MIT). Capitales sur le globe et population des grandes villes : <a href="https://www.geonames.org/">GeoNames</a> (CC BY 4.0), arrondie, au sens de la ville elle-même et non de son agglomération. Devises, hymnes, fêtes, histoires des drapeaux, origines des noms et anecdotes : rédigés pour le Portulan.
+        </p>
         <p>Les frontières suivent le tracé de Natural Earth, corrigé selon les positions de l&apos;ONU pour trois territoires : la Crimée est rattachée à l&apos;Ukraine, le plateau du Golan à la Syrie, et le Sahara occidental est dessiné en entier. Les capitales au statut contesté ne sont pas posées en question ; leur fiche explique pourquoi.</p>
       </footer>
 

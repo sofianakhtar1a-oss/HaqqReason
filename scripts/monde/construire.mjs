@@ -5,7 +5,7 @@
 // Les sources s'installent à part, hors du dépôt (elles ne servent qu'ici) :
 //   mkdir /tmp/monde-deps && cd /tmp/monde-deps && npm init -y && npm i --ignore-scripts \
 //     world-countries@5.1.0 flag-icons@7.6.0 world-atlas@2.0.2 topojson-client@3 topojson-server@3 topojson-simplify@3 \
-//     d3-geo@3 svgo@3
+//     d3-geo@3 svgo@3 countries-and-timezones@3 all-the-cities@3
 //   curl -o /tmp/population.csv https://raw.githubusercontent.com/datasets/population/main/data/population.csv
 //
 // Produit :
@@ -22,6 +22,7 @@ import { createRequire } from "node:module";
 import { dirname, join } from "node:path";
 import { pathToFileURL } from "node:url";
 import * as C from "./curation.mjs";
+import * as P from "./curation-plus.mjs";
 
 const [dossierDeps, fichierPop] = process.argv.slice(2);
 if (!dossierDeps || !fichierPop) {
@@ -190,6 +191,157 @@ for (const p of pays) {
   });
 }
 exiger(entites.length === pays.length, "nombre d'entités");
+
+/* ---------- 3 bis. Les fiches : gentilé, noms étrangers, codes, fuseau, organisations ---------- */
+const fuseaux = req("countries-and-timezones");
+const villes = req("all-the-cities");
+const villesParPays = new Map();
+for (const v of villes) {
+  const k = v.country.toLowerCase();
+  if (!villesParPays.has(k)) villesParPays.set(k, []);
+  villesParPays.get(k).push(v);
+}
+const sansAccent = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z]/g, "");
+const membres = new Map();
+for (const [id, o] of Object.entries(P.ORGANISATIONS)) {
+  for (const m of o.membres) {
+    exiger(pays.some((p) => p.cca2.toLowerCase() === m), `organisation ${id} : membre inconnu ${m}`);
+    if (!membres.has(m)) membres.set(m, []);
+    membres.get(m).push(id);
+  }
+}
+for (const [id, n] of [["ue", 27], ["ua", 54], ["la", 22], ["oci", 57], ["asean", 11], ["g20", 19], ["commonwealth", 56], ["otan", 32]]) exiger(P.ORGANISATIONS[id].membres.length === n, `${id} : ${P.ORGANISATIONS[id].membres.length} membres au lieu de ${n}`);
+const indicatif = (idd) => {
+  if (!idd?.root) return null;
+  const s = idd.suffixes ?? [];
+  if (s.length !== 1) return idd.root;
+  return idd.root === "+1" ? `+1 ${s[0]}` : `${idd.root}${s[0]}`;
+};
+for (const e of entites) {
+  const p = pays.find((x) => x.cca2.toLowerCase() === e.code);
+  const g = e.code in P.GENTILES ? P.GENTILES[e.code] : p.demonyms?.fra?.m ? [p.demonyms.fra.m, p.demonyms.fra.f || p.demonyms.fra.m] : null;
+  if (g) e.gentile = g;
+  e.nomEn = p.name.common;
+  const ar = P.NOMS_AR[e.code] ?? p.translations.ara?.common;
+  if (ar) e.nomAr = ar;
+  const tel = P.INDICATIFS[e.code] ?? indicatif(p.idd);
+  if (tel) e.indicatif = tel;
+  if (p.tld?.[0]) e.tld = p.tld[0];
+  e.iso3 = p.cca3 === "UNK" ? "XKX" : p.cca3;
+  if (!P.CONDUITE_INCONNUE.has(e.code) && e.population !== null) e.conduite = P.CONDUITE_GAUCHE.has(e.code) ? "gauche" : "droite";
+  // Le fuseau de la capitale : son nom dans un fuseau IANA, sinon le seul du pays, sinon celui choisi à la main.
+  const zones = fuseaux.getCountry(p.cca2)?.timezones ?? [];
+  const capEn = p.capital?.[0] ? sansAccent(p.capital[0]) : "";
+  const parNom = zones.find((z) => capEn && sansAccent(z.split("/").pop()) === capEn);
+  const fuseau = e.code in P.FUSEAUX ? P.FUSEAUX[e.code] : parNom ?? (zones.length === 1 ? zones[0] : null);
+  exiger(fuseau !== undefined, `fuseau indéfini pour ${e.code}`);
+  if (zones.length > 1 && !parNom && !(e.code in P.FUSEAUX)) erreurs.push(`fuseau à choisir pour ${e.code} : ${zones.join(", ")}`);
+  if (fuseau) {
+    try {
+      new Intl.DateTimeFormat("fr-FR", { timeZone: fuseau });
+      e.fuseau = fuseau;
+    } catch {
+      erreurs.push(`fuseau inconnu de Intl : ${fuseau} (${e.code})`);
+    }
+  }
+  if (membres.has(e.code)) e.orgs = membres.get(e.code);
+  // La capitale sur le globe : la ville « PPLC » de GeoNames (ou celle qui porte son nom anglais).
+  if (e.capitale) {
+    const locales = villesParPays.get(e.code) ?? [];
+    const nomsCap = [p.capital?.[0], e.capitale, ...(e.capitales ?? [])].filter(Boolean).map(sansAccent);
+    const pplc = locales.filter((v) => v.featureCode === "PPLC");
+    const trouvee = P.COORDS_CAPITALE[e.code]
+      ? { loc: { coordinates: [P.COORDS_CAPITALE[e.code][1], P.COORDS_CAPITALE[e.code][0]] } }
+      : (pplc.length === 1 ? pplc[0] : null) ??
+        pplc.find((v) => nomsCap.includes(sansAccent(v.name)) || nomsCap.includes(sansAccent(v.altName))) ??
+        locales.filter((v) => nomsCap.includes(sansAccent(v.name)) || nomsCap.includes(sansAccent(v.altName))).sort((a, b) => b.population - a.population)[0];
+    if (trouvee) {
+      const [lon, lat] = trouvee.loc.coordinates;
+      e.capLatLng = [Math.round(lat * 1000) / 1000, Math.round(lon * 1000) / 1000];
+    } else if (e.quiz) console.log(`(note) capitale sans coordonnées : ${e.code} ${e.capitale}`);
+  }
+}
+
+/* ---------- 3 ter. Les récits des fiches (scripts/monde/recits/*.mjs) ---------- */
+const sources = {};
+for (const f of ["europe", "afrique", "asie", "ameriques", "oceanie"]) {
+  const m = (await import(`./recits/${f}.mjs`)).default;
+  for (const [code, r] of Object.entries(m)) {
+    exiger(!(code in sources), `récit en double : ${code}`);
+    sources[code] = r;
+  }
+}
+const CLES_RECIT = new Set(["d", "h", "ha", "i", "f", "s", "r", "rn", "m", "dr", "e", "a", "v"]);
+const texteOk = (t) => typeof t === "string" && t.trim() === t && t.length > 1 && !/\s{2}|\s[,)]|[(]\s|\s\.(\s|$)/.test(t);
+// Deux chiffres significatifs : la population d'une ville change vite, et GeoNames n'est pas un recensement.
+const arrondi = (n) => {
+  const p = 10 ** Math.max(0, Math.floor(Math.log10(n)) - 1);
+  return Math.round(n / p) * p;
+};
+const recits = {};
+for (const [code, r] of Object.entries(sources)) {
+  const e = entites.find((x) => x.code === code);
+  exiger(e, `récit pour un code inconnu : ${code}`);
+  if (!e) continue;
+  for (const [k, v] of Object.entries(r)) {
+    exiger(CLES_RECIT.has(k), `récit ${code} : clé inconnue ${k}`);
+    if (["d", "h", "ha", "i", "f", "rn", "dr", "e", "a"].includes(k)) exiger(texteOk(v), `récit ${code}.${k} : texte mal formé « ${v} »`);
+  }
+  if (r.s) {
+    exiger(Array.isArray(r.s) && texteOk(r.s[0]) && Number.isInteger(r.s[1]) && r.s[1] >= 0 && r.s[1] < 8850, `récit ${code} : sommet mal formé`);
+    e.sommet = r.s;
+  }
+  if (r.r) {
+    exiger(Array.isArray(r.r) && texteOk(r.r[0]) && Number.isInteger(r.r[1]) && r.r[1] > 0 && r.r[1] < 7000, `récit ${code} : fleuve mal formé`);
+    e.fleuve = r.r;
+  }
+  if (r.m) exiger(Array.isArray(r.m) && r.m.every(texteOk), `récit ${code} : mers mal formées`);
+  const villesRecit = [];
+  for (const v of r.v ?? []) {
+    const [fr, autres] = v.split("=");
+    exiger(texteOk(fr), `récit ${code} : ville mal formée « ${v} »`);
+    exiger(fr !== e.capitale, `récit ${code} : la capitale n'est pas une « grande ville » (${fr})`);
+    const noms = [fr, ...(autres ? autres.split("|") : [])].map(sansAccent);
+    const trouvee = (villesParPays.get(code) ?? []).filter((c) => noms.includes(sansAccent(c.name)) || (c.altName && noms.includes(sansAccent(c.altName)))).sort((a, b) => b.population - a.population)[0];
+    villesRecit.push(trouvee ? [fr, arrondi(trouvee.population)] : [fr]);
+    if (!trouvee) console.log(`(note) ville sans population : ${code} ${fr}`);
+  }
+  // De la plus peuplée à la moins peuplée (celles dont on ignore la population restent à la fin, dans l'ordre donné).
+  villesRecit.sort((a, b) => (b[1] ?? -1) - (a[1] ?? -1));
+  if (villesRecit.length) e.villes = villesRecit.map((v) => v[0]);
+  const sortie = {
+    ...(r.d ? { devise: r.d } : {}),
+    ...(r.h ? { hymne: r.h } : {}),
+    ...(r.ha ? { auteurs: r.ha } : {}),
+    ...(r.i ? { independance: r.i } : {}),
+    ...(r.f ? { fete: r.f } : {}),
+    ...(r.rn ? { fleuveNote: r.rn } : {}),
+    ...(r.m?.length ? { mers: r.m } : {}),
+    ...(r.dr ? { drapeau: r.dr } : {}),
+    ...(r.e ? { etymologie: r.e } : {}),
+    ...(r.a ? { anecdote: r.a } : {}),
+    ...(villesRecit.length ? { villes: villesRecit } : {}),
+    ...(P.ANCIENS_NOMS[code] ? { anciens: P.ANCIENS_NOMS[code] } : {}),
+  };
+  // L'espace insécable de la typographie française : avant ; : ! ? », après «.
+  const typo = (t) => t.replace(/ ([;:!?»])/g, "\u00a0$1").replace(/« /g, "«\u00a0");
+  for (const k of Object.keys(sortie)) {
+    const v = sortie[k];
+    if (typeof v === "string") sortie[k] = typo(v);
+    else if (Array.isArray(v)) sortie[k] = v.map((x) => (typeof x === "string" ? typo(x) : Array.isArray(x) ? x.map((y) => (typeof y === "string" ? typo(y) : y)) : x));
+  }
+  if (Object.keys(sortie).length) recits[code] = sortie;
+}
+for (const code of Object.keys(P.ANCIENS_NOMS)) {
+  exiger(entites.some((x) => x.code === code), `ancien nom pour un code inconnu : ${code}`);
+  if (!recits[code]) recits[code] = { anciens: P.ANCIENS_NOMS[code] };
+}
+// Les États (pas les territoires) ont tous l'essentiel de leur fiche.
+for (const e of entites.filter((x) => x.quiz && x.statut !== "territoire")) {
+  const r = sources[e.code] ?? {};
+  // L'Afghanistan n'a plus d'hymne officiel depuis 2021.
+  for (const k of ["h", "e", "a"]) exiger(r[k] || (k === "h" && e.code === "af"), `récit ${e.code} : ${k} manquant`);
+}
 
 /* ---------- 4. Les drapeaux : allégés, nommés par leur contenu ---------- */
 const sortieDrapeaux = join(racine, "public", "monde", "drapeaux");
@@ -503,10 +655,30 @@ export const NOMBRE_ETATS = ${entites.filter((e) => e.statut !== "territoire").l
 `,
 );
 
+// Les récits des fiches : chargés à la demande (import dynamique), jamais dans le premier écran.
+const tsRecits = `// Fichier produit par scripts/monde/construire.mjs : ne pas modifier à la main.
+// Rédaction : scripts/monde/recits/*.mjs ; population des villes : GeoNames (CC BY 4.0), arrondie.
+import type { Recit } from "./types";
+
+export const RECITS: Readonly<Record<string, Recit>> = ${JSON.stringify(recits, null, 1).replace(/\n\s*/g, " ").replace(/\{ /g, "{").replace(/ \}/g, "}").replace(/\}, "/g, '},\n  "')};
+`;
+writeFileSync(join(racine, "src", "lib", "monde", "recits.ts"), tsRecits);
+const tsOrgs = `// Fichier produit par scripts/monde/construire.mjs : ne pas modifier à la main (source : scripts/monde/curation-plus.mjs).
+import type { OrganisationId } from "./types";
+
+/** Les organisations dont les pays sont membres (la liste des membres est sur chaque pays : Pays.orgs). */
+export const ORGANISATIONS: Readonly<Record<OrganisationId, { nom: string; court: string; texte: string }>> = ${JSON.stringify(
+  Object.fromEntries(Object.entries(P.ORGANISATIONS).map(([id, o]) => [id, { nom: o.nom, court: o.court, texte: o.texte }])),
+  null,
+  2,
+)};
+`;
+writeFileSync(join(racine, "src", "lib", "monde", "organisations.ts"), tsOrgs);
+
 const ko = (n) => `${Math.round(n / 1024)} Ko`;
 console.log(`${entites.length} entités, dont ${entites.filter((e) => e.quiz).length} dans les quiz`);
 console.log(`  drapeaux propres : ${entites.filter((e) => e.quiz && e.drapeauPropre).length} ; capitales : ${entites.filter((e) => e.quiz && e.capitale).length} ; monnaies : ${entites.filter((e) => e.quiz && e.quizMonnaie).length} ; sur la carte : ${entites.filter((e) => e.carte).length}`);
 console.log(`  drapeaux : ${fichiers.size} fichiers, ${ko(poidsAvant)} → ${ko(poidsApres)}`);
 console.log(`  carte : ${ko(carte.length)} (${finale.arcs.reduce((s, a) => s + a.length, 0)} points) ; légère : ${ko(carteLegere.length)} (${legere.arcs.reduce((s, a) => s + a.length, 0)} points) ; ultra : ${ko(carteUltra.length)} (${ultra.arcs.reduce((s, a) => s + a.length, 0)} points)`);
-console.log(`  données : ${ko(ts.length)}`);
+console.log(`  données : ${ko(ts.length)} ; récits : ${ko(tsRecits.length)} (${Object.keys(recits).length} fiches)`);
 console.log(`  sans géométrie : ${entites.filter((e) => !e.carte).map((e) => e.code).join(" ")}`);

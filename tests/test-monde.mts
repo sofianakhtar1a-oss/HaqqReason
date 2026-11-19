@@ -172,5 +172,50 @@ for (const url of [CARTE_URL, CARTE_LEGERE_URL, CARTE_ULTRA_URL]) {
   ok(`${url} : aucun pays retourné`, retournees.length === 0, retournees.join(" "));
 }
 
+/* ---------- Les fiches enrichies ---------- */
+{
+  const { RECITS } = await import("../src/lib/monde/recits");
+  const { ORGANISATIONS } = await import("../src/lib/monde/organisations");
+  const geo = await import("../src/lib/monde/geo");
+  const enQuiz = PAYS.filter((p) => p.quiz);
+  for (const p of enQuiz) {
+    ok(`nom anglais ${p.code}`, p.nomEn.length > 1);
+    ok(`code ISO ${p.code}`, /^[A-Z]{3}$/.test(p.iso3), p.iso3);
+    if (p.capitale) ok(`capitale située ${p.code}`, Boolean(p.capLatLng));
+    if (p.capLatLng) ok(`capitale proche du pays ${p.code}`, geo.distanceKm(p.capLatLng, p.latlng) < 4000, String(Math.round(geo.distanceKm(p.capLatLng, p.latlng))));
+    if (p.fuseau) ok(`fuseau valide ${p.code}`, geo.heureLocale(p.fuseau) !== "", p.fuseau);
+    if (p.indicatif) ok(`indicatif ${p.code}`, /^\+\d{1,3}( \d{1,4})*$/.test(p.indicatif), p.indicatif);
+    for (const o of p.orgs ?? []) ok(`organisation ${p.code} ${o}`, o in ORGANISATIONS);
+    if (p.statut !== "territoire") ok(`anecdote ${p.code}`, Boolean(RECITS[p.code]?.anecdote));
+    for (const v of Object.values(RECITS[p.code] ?? {})) {
+      const textes = (Array.isArray(v) ? v.flat() : [v]).filter((t): t is string => typeof t === "string");
+      for (const t of textes) ok(`typographie ${p.code}`, !/["]|\s{2}|^\s|\s$/.test(t) && !/ [,.]( |$)/.test(t.replace(/ \.[a-z]{2,3}\b/g, "")), t);
+    }
+  }
+  const membres = (o: string) => PAYS.filter((p) => p.orgs?.includes(o as never)).length;
+  ok("UE : 27", membres("ue") === 27, String(membres("ue")));
+  ok("Ligue arabe : 22", membres("la") === 22, String(membres("la")));
+  ok("Union africaine : 54 + 1", membres("ua") === 54, String(membres("ua")));
+  ok("gentilé de la France", pays("fr").gentile?.[1] === "Française");
+  ok("indicatif du Maroc", pays("ma").indicatif === "+212");
+  ok("on roule à gauche au Japon", pays("jp").conduite === "gauche");
+  ok("on roule à droite en France", pays("fr").conduite === "droite");
+  ok("Mont Blanc", pays("fr").sommet?.[0] === "Mont Blanc");
+  ok("le nom arabe du Mexique", pays("mx").nomAr === "المكسيك");
+  // La qibla : depuis Rabat, plein est (un peu au sud) ; depuis Jakarta, vers l'ouest-nord-ouest.
+  const rabat = geo.qibla(pays("ma"));
+  ok("qibla depuis Rabat", rabat.cap > 88 && rabat.cap < 98 && rabat.km > 4700 && rabat.km < 4800, `${rabat.cap} ${rabat.km}`);
+  const jakarta = geo.qibla(pays("id"));
+  ok("qibla depuis Jakarta", jakarta.cap > 290 && jakarta.cap < 300, String(jakarta.cap));
+  ok("Paris – La Mecque", Math.abs(geo.distanceKm(pays("fr").capLatLng!, geo.KAABA) - 4500) < 60, String(geo.distanceKm(pays("fr").capLatLng!, geo.KAABA)));
+  ok("point cardinal", geo.pointCardinal(92) === "est" && geo.pointCardinal(350) === "nord" && geo.pointCardinal(225) === "sud-ouest");
+  const route = geo.grandCercle([48.85, 2.35], [21.42, 39.83], 10);
+  ok("grand cercle", route.length === 11 && Math.abs(route[10][0] - 21.42) < 1e-6 && Math.abs(route[0][1] - 2.35) < 1e-6);
+  ok("décalage", geo.formatDecalage(60) === "UTC+1" && geo.formatDecalage(-210) === "UTC−3:30" && geo.formatDecalage(0) === "UTC" && geo.formatDecalage(345) === "UTC+5:45");
+  ok("décalage de l'Inde", geo.decalageMinutes("Asia/Kolkata") === 330);
+  ok("durée de vol", geo.dureeVol(850) === "1 h 30" && geo.dureeVol(100) === "35 min");
+  ok("densité", geo.formatDensite(1000, 10) === "100 hab./km²");
+}
+
 console.log(echecs ? `\n${echecs} échec(s).` : `Tout est bon (${questions} questions de niveau vérifiées).`);
 process.exit(echecs ? 1 : 0);
