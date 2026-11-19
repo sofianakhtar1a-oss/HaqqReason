@@ -8,7 +8,11 @@ import { type JeuId, pointsCapitale } from "@/lib/monde/carte-outils";
 import { PAYS } from "@/lib/monde/donnees";
 import { distanceKm, formatKm, grandCercle, type LatLng } from "@/lib/monde/geo";
 import { hasard, melanger } from "@/lib/monde/hasard";
-import { battreRecordDe, useMonde } from "@/lib/monde/progression";
+import { battreRecordDe, noterJournal, profilActuel, useMonde } from "@/lib/monde/progression";
+import { ressentir } from "./sons";
+
+/** Deux fois plus de temps, si le réglage le demande. */
+const facteurTemps = () => (profilActuel().plusDeTemps ? 2 : 1);
 import { Drapeau } from "./figures";
 import type { GlobeProps, GlobeRef, Marque, Teinte, Trait } from "./Globe";
 
@@ -69,6 +73,8 @@ export function useChasse({ actif, onFermer }: { actif: boolean; onFermer: () =>
     clearTimeout(eclair.current);
     const record = battreRecordDe("carte-chasse", e.trouves.length);
     setEtat({ ...e, phase: "fin", flash: null, record });
+    noterJournal({ s: "carte", n: "La chasse aux pays", b: e.trouves.length, q: null, x: 0, d: (DUREE_CHASSE * facteurTemps()) / 1000 });
+    ressentir(record ? "record" : "niveau");
   };
 
   // L'horloge : un quart de seconde suffit à l'afficher.
@@ -85,7 +91,7 @@ export function useChasse({ actif, onFermer }: { actif: boolean; onFermer: () =>
   const commencer = () => {
     const t = Date.now();
     setMaintenant(t);
-    setEtat({ phase: "jeu", file: melanger(POOL_CHASSE, hasard(nouvelleGraine())), i: 0, trouves: [], rates: [], fautes: 0, flash: null, fin: t + DUREE_CHASSE, record: false });
+    setEtat({ phase: "jeu", file: melanger(POOL_CHASSE, hasard(nouvelleGraine())), i: 0, trouves: [], rates: [], fautes: 0, flash: null, fin: t + DUREE_CHASSE * facteurTemps(), record: false });
   };
 
   const toucher = (code: string | null) => {
@@ -94,10 +100,12 @@ export function useChasse({ actif, onFermer }: { actif: boolean; onFermer: () =>
     const cible = e.file[e.i];
     if (code === cible) {
       setEtat((x) => ({ ...x, trouves: [...x.trouves, code], i: x.i + 1 }));
+      ressentir("juste");
       if (e.i + 1 >= e.file.length) setTimeout(terminer, 0);
       return;
     }
     // Une erreur : le bon pays s'allume un instant, puis on passe au suivant.
+    ressentir("faux");
     setEtat((x) => ({ ...x, fautes: x.fautes + 1, flash: { touche: code, cible } }));
     eclair.current = setTimeout(() => setEtat((x) => (x.phase === "jeu" ? { ...x, flash: null, rates: [...x.rates, cible], i: x.i + 1 } : x)), 900);
   };
@@ -195,9 +203,14 @@ export function useVoisins({ onFermer }: { onFermer: () => void }): Jeu {
         const serie = e.serie + 1;
         const record = battreRecordDe("carte-voisins", serie);
         setEtat({ ...e, trouves, phase: "fini", serie, record, flash: null });
-      } else setEtat({ ...e, trouves });
+        ressentir(record ? "record" : "niveau");
+      } else {
+        setEtat({ ...e, trouves });
+        ressentir("juste");
+      }
       return;
     }
+    ressentir("faux");
     clearTimeout(eclair.current);
     setEtat({ ...e, fautes: e.fautes + 1, flash: code });
     eclair.current = setTimeout(() => setEtat((x) => ({ ...x, flash: null })), 800);
@@ -284,6 +297,7 @@ export function useCapitales({ globe, onFermer }: { globe: RefObject<GlobeRef | 
     if (!p?.capLatLng) return;
     const km = distanceKm(ll, p.capLatLng);
     setEtat({ ...e, phase: "reponse", touche: ll, manches: [...e.manches, { code: p.code, km, points: pointsCapitale(km) }] });
+    ressentir(km < 300 ? "juste" : km < 1000 ? "presque" : "faux");
     // Montrer où elle était : tout près, on reste ; loin, on prend du recul entre les deux points.
     const g = globe.current;
     if (g) {
@@ -299,7 +313,10 @@ export function useCapitales({ globe, onFermer }: { globe: RefObject<GlobeRef | 
     const e = memoire.current;
     if (e.i + 1 >= e.file.length) {
       const total = e.manches.reduce((s, m) => s + m.points, 0);
-      setEtat({ ...e, phase: "fin", record: battreRecordDe("carte-capitales", total) });
+      const record = battreRecordDe("carte-capitales", total);
+      setEtat({ ...e, phase: "fin", record });
+      noterJournal({ s: "carte", n: "Où est la capitale ?", b: e.manches.filter((m) => m.km < 300).length, q: e.manches.length, x: 0, d: 0 });
+      ressentir(record ? "record" : "niveau");
     } else setEtat({ ...e, phase: "jeu", i: e.i + 1, touche: null });
   };
 

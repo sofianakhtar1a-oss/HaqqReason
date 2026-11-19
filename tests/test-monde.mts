@@ -510,5 +510,70 @@ for (const url of [CARTE_URL, CARTE_LEGERE_URL, CARTE_ULTRA_URL]) {
   ok("jeux : trois jeux, des records distincts", ou.JEUX.length === 3 && new Set(ou.JEUX.map((j) => j.cle)).size === 3);
 }
 
+/* ---------- La progression : réglages, journal de bord, remise à zéro, export ---------- */
+{
+  // Un navigateur minimal : le stockage local (la synchronisation, sans IndexedDB, se tait).
+  const memoire = new Map<string, string>();
+  const g = globalThis as unknown as Record<string, unknown>;
+  g.localStorage = {
+    getItem: (k: string) => memoire.get(k) ?? null,
+    setItem: (k: string, v: string) => void memoire.set(k, String(v)),
+    removeItem: (k: string) => void memoire.delete(k),
+    clear: () => memoire.clear(),
+    key: (i: number) => [...memoire.keys()][i] ?? null,
+    get length() {
+      return memoire.size;
+    },
+  };
+  g.window ??= globalThis;
+  const pr = await import("../src/lib/monde/progression");
+  ok("profil : les sons par défaut, la langue française", pr.profilActuel().son === true && pr.profilActuel().ambiance === false && pr.profilActuel().langue === "fr" && pr.profilActuel().taille === 100);
+  pr.regler({ son: false, daltonien: true, taille: 130, langue: "ar", plusDeTemps: true });
+  const p1 = pr.profilActuel();
+  ok("réglages : gardés", p1.son === false && p1.daltonien === true && p1.taille === 130 && p1.langue === "ar" && p1.plusDeTemps === true);
+  // Un autre appareil, plus ancien, ne défait pas un réglage plus récent.
+  pr.rangerValeur("profil", { ...p1, son: true, q: p1.q - 1000 });
+  ok("réglages : le plus récent l'emporte", pr.profilActuel().son === false);
+  pr.rangerValeur("profil", { ...p1, son: true, taille: 999, langue: "xx", q: p1.q + 1000 });
+  ok("réglages : un autre appareil plus récent, valeurs illisibles écartées", pr.profilActuel().son === true && pr.profilActuel().taille === 130 && pr.profilActuel().langue === "ar");
+
+  // Le journal de bord.
+  pr.noterJournal({ s: "niveau", n: "Drapeaux, niveau 1", b: 18, q: 20, x: 240, d: 95.4, e: 2 });
+  pr.noterJournal({ s: "duel", n: "Duel contre Ibn Battûta", b: 7, q: 10, x: 0, d: 160, r: "v", i: "duel-1" });
+  pr.noterJournal({ s: "duel", n: "Duel contre Ibn Battûta", b: 7, q: 10, x: 0, d: 160, r: "v", i: "duel-1" });
+  ok("journal : un duel n'entre qu'une fois", (pr.valeurLocale("journal") as unknown[]).length === 2);
+  const j0 = pr.valeurLocale("journal") as { t: number; d: number; s: string }[];
+  ok("journal : la durée arrondie", j0[0].d === 95);
+  pr.rangerValeur("journal", [{ t: 5, s: "eclair", n: "L'éclair", b: 12, q: null, x: 50, d: 60 }, { ...j0[0] }, { t: 6, s: "duel", n: "Doublon", b: 1, q: 5, x: 0, d: 1, i: "duel-1" }]);
+  const j1 = pr.valeurLocale("journal") as { t: number }[];
+  ok("journal : fusion sans doublon, dans l'ordre", j1.length === 3 && j1[0].t === 5);
+
+  // Remettre une catégorie à zéro.
+  const vieux = Date.now() - 5 * 86_400_000;
+  pr.rangerValeur("niveau:drapeaux:1", { e: 3, m: 20, f: vieux });
+  pr.rangerValeur("niveau:capitales:1", { e: 2, m: 19, f: vieux });
+  pr.rangerValeur("pays:fr", { drapeaux: [5, 1, 4, Math.floor(vieux / 86_400_000)], capitales: [3, 0, 3, Math.floor(vieux / 86_400_000)] });
+  pr.remettreAZero("drapeaux");
+  ok("remise à zéro : les niveaux de la catégorie", pr.valeurLocale("niveau:drapeaux:1") === undefined && pr.valeurLocale("niveau:capitales:1") !== undefined);
+  const fr0 = pr.valeurLocale("pays:fr") as Record<string, unknown>;
+  ok("remise à zéro : la mémoire des pays de la catégorie, pas des autres", !fr0.drapeaux && Boolean(fr0.capitales));
+  // Un appareil en retard renvoie l'ancien état : il ne revient pas.
+  pr.rangerValeur("niveau:drapeaux:1", { e: 3, m: 20, f: vieux });
+  pr.rangerValeur("pays:fr", { drapeaux: [5, 1, 4, Math.floor(vieux / 86_400_000)], capitales: [3, 0, 3, Math.floor(vieux / 86_400_000)] });
+  ok("remise à zéro : un vieux niveau ne revient pas", pr.valeurLocale("niveau:drapeaux:1") === undefined);
+  ok("remise à zéro : une vieille mémoire ne revient pas", !(pr.valeurLocale("pays:fr") as Record<string, unknown>).drapeaux);
+  // Ce qui est joué après la remise compte, d'où qu'il vienne.
+  pr.rangerValeur("niveau:drapeaux:1", { e: 1, m: 15, f: Date.now() + 1000 });
+  pr.rangerValeur("pays:fr", { drapeaux: [1, 0, 1, Math.floor(Date.now() / 86_400_000)] });
+  ok("remise à zéro : un niveau rejoué compte", (pr.valeurLocale("niveau:drapeaux:1") as { e: number })?.e === 1);
+  ok("remise à zéro : un pays revu compte", Boolean((pr.valeurLocale("pays:fr") as Record<string, unknown>).drapeaux));
+
+  // Exporter, importer.
+  const fichier = pr.exporterProgression();
+  ok("export : un JSON du Portulan", JSON.parse(fichier).format === "portulan" && Boolean(JSON.parse(fichier).progression.profil));
+  ok("import : un fichier valide", pr.importerProgression(fichier) === true);
+  ok("import : un fichier étranger refusé", pr.importerProgression("{\"bonjour\": 1}") === false && pr.importerProgression("pas du JSON") === false);
+}
+
 console.log(echecs ? `\n${echecs} échec(s).` : `Tout est bon (${questions} questions de niveau vérifiées).`);
 process.exit(echecs ? 1 : 0);

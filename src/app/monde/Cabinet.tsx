@@ -9,13 +9,14 @@ import { envoyerReponse } from "@/lib/monde/compte-client";
 import { nouvelleGraine } from "@/lib/monde/hasard";
 import { COEURS } from "@/lib/monde/niveaux";
 import { baseCabinet, gainDe } from "@/lib/monde/points";
-import { aReviserCabinet, type Bilan, boiteCabinet, etoilesCabinet, finirNiveauCabinet, niveauCourantCabinet, niveauOuvertCabinet, niveauxReussisCabinet, noterCabinet, useMonde } from "@/lib/monde/progression";
+import { aReviserCabinet, type Bilan, boiteCabinet, etoilesCabinet, finirNiveauCabinet, niveauCourantCabinet, niveauOuvertCabinet, niveauxReussisCabinet, noterCabinet, noterJournal, useMonde } from "@/lib/monde/progression";
 import type { Jugement } from "@/lib/monde/texte";
 import type { CabinetId, DonneesCabinet, ElementCabinet, MethodeCabinet } from "@/lib/monde/types";
 import { dire, taire } from "@/lib/monde/voix";
 import { BoutonVoix, Chrono, Coeurs, Etoiles } from "./communs";
 import { Drapeau } from "./figures";
 import type { Lancement } from "./Partie";
+import { ressentir } from "./sons";
 
 /*
  * Les cabinets du Portulan : les pays vus de l'intérieur. Une carte par cabinet à l'accueil,
@@ -263,7 +264,10 @@ export function PartieCabinet({ lancement, onFermer, onRejouer }: { lancement: L
   const q = questions[index] as QuestionCabinet | undefined;
   const def = q ? METHODES[q.methode] : null;
   // Le temps d'une question : plus court dans la seconde moitié de la route, plus long pour écrire.
-  const duree = (niveau <= Math.ceil(total / 2) ? 18_000 : 14_000) + (def?.reponse === "ecrit" ? 10_000 : 0);
+  const duree = ((niveau <= Math.ceil(total / 2) ? 18_000 : 14_000) + (def?.reponse === "ecrit" ? 10_000 : 0)) * (monde.profil.plusDeTemps ? 2 : 1);
+  // Pour le journal de bord : l'XP gagnée et l'heure du départ.
+  const xpTotal = useRef(0);
+  const debutJeu = useRef(0);
   const avecChrono = monde.profil.chrono;
 
   const terminer = useCallback(
@@ -273,6 +277,8 @@ export function PartieCabinet({ lancement, onFermer, onRejouer }: { lancement: L
       const b = finirNiveauCabinet(lancement.cabinet!, lancement.niveau ?? 1, { bonnes: r.bonnes, fautes: r.fautes, reussi });
       setBilan(b);
       if (reussi && !mouvementReduit()) setTimeout(() => pluieDeLettres(document.querySelector(".pt-fin-titre"), b.etoiles === 3 ? "aurore" : "ambre", cabinet(lancement.cabinet!).court), 380);
+      noterJournal({ s: "cabinet", n: lancement.titre, b: r.bonnes, q: r.bonnes + r.fautes, x: xpTotal.current, d: debutJeu.current ? (Date.now() - debutJeu.current) / 1000 : 0, e: b.etoiles });
+      ressentir(reussi ? "niveau" : "defaite");
     },
     [lancement],
   );
@@ -298,12 +304,14 @@ export function PartieCabinet({ lancement, onFermer, onRejouer }: { lancement: L
       setChoix(reponse);
       setJugement(j);
       setPhase("reponse");
+      ressentir(j === "juste" ? "juste" : j === "presque" ? "presque" : "faux");
       const gain = gainDe(j, baseCabinet(q.methode, q.nb));
       noterCabinet(id, q.cible, juste, gain);
       envoyerReponse({ cabinet: id, type: q.methode, cible: q.cible, reponse, nb: q.nb });
       if (juste) {
         setBonnes((b) => b + 1);
         setXp((x) => x + gain);
+        xpTotal.current += gain;
         if (ou && !mouvementReduit()) eclat(ou.x, ou.y, j === "juste" ? "ambre" : "azur", 1.1);
       } else {
         setFautes((f) => f + 1);
@@ -372,7 +380,7 @@ export function PartieCabinet({ lancement, onFermer, onRejouer }: { lancement: L
 
   const e = q ? element(id, q.cible) : undefined;
   const contenu = (
-    <div className="pt pt-partie" data-accent="safran" data-globe={monde.profil.globe} data-phase={phase} role="dialog" aria-modal="true" aria-label={lancement.titre}>
+    <div className="pt pt-partie" data-accent="safran" data-globe={monde.profil.globe} data-phase={phase} data-concentration={monde.profil.concentration || undefined} role="dialog" aria-modal="true" aria-label={lancement.titre}>
       <div className="pt-partie-fond" aria-hidden="true" />
       <header className="pt-partie-tete">
         <button type="button" className="pt-icone" onClick={onFermer} aria-label="Quitter la partie">
@@ -400,7 +408,16 @@ export function PartieCabinet({ lancement, onFermer, onRejouer }: { lancement: L
           <p className="pt-intro-regles">
             {questions.length} questions, {COEURS} cœurs{avecChrono ? " et un chrono pour chaque question" : ""}.
           </p>
-          <button type="button" className="bouton bouton-principal pt-intro-go" onClick={() => setPhase("question")} autoFocus disabled={!questions.length}>
+          <button
+            type="button"
+            className="bouton bouton-principal pt-intro-go"
+            onClick={() => {
+              debutJeu.current = Date.now();
+              setPhase("question");
+            }}
+            autoFocus
+            disabled={!questions.length}
+          >
             C&apos;est parti
             <ArrowRight className="size-4" aria-hidden="true" />
           </button>

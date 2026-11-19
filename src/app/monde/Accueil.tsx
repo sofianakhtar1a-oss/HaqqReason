@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Award, Building2, Clock, Coins, Earth, Flag, Flame, GraduationCap, Hash, Infinity as Infini, Landmark, Languages, Map as IconeCarte, Mountain, RotateCcw, Scale, Shuffle, Timer, Users, Waypoints, Zap } from "lucide-react";
+import { ArrowRight, Award, Building2, Clock, Coins, Earth, Flag, Flame, GraduationCap, Hash, Infinity as Infini, Landmark, Languages, Map as IconeCarte, Mountain, RotateCcw, Scale, Settings2, Shuffle, Timer, Users, Waypoints, Zap } from "lucide-react";
 import { useMemo, useState } from "react";
 import { formatNombre, formatPopulation, formatSuperficie, jourDeParis, motCapitale, NOM_CONTINENT, paysDuJour } from "@/lib/monde/atlas";
 import { CATEGORIES, CATEGORIES_CLASSIQUES, CATEGORIES_NOUVELLES, type CategorieId, IDS_CATEGORIES } from "@/lib/monde/categories";
@@ -17,11 +17,12 @@ import { Collection } from "./Collection";
 import { Defis } from "./Defis";
 import { CartoucheCabinet, EcranCabinet } from "./Cabinet";
 import { Categorie } from "./Categorie";
-import { Ducats, RoseDesVents } from "./communs";
+import { Ciel, Ducats, RoseDesVents } from "./communs";
 import { Drapeau } from "./figures";
 import { Globe, type Teinte } from "./Globe";
 import { CONTINENTS_A_NOMMER, paysANommer, titreContinent } from "./NommeLesTous";
 import { type Lancement, useLancer } from "./Partie";
+import { JournalDeBord, PageReglages, Statistiques } from "./Reglages";
 
 export const ICONES_CATEGORIES: Record<CategorieId, typeof Flag> = {
   drapeaux: Flag,
@@ -82,6 +83,9 @@ export function Accueil({ categorie, onCategorie, lancer, aller }: { categorie: 
   if (categorie?.startsWith("cabinet-") && estCabinet(categorie.slice(8))) return <EcranCabinet id={categorie.slice(8) as CabinetId} onRetour={() => onCategorie(null)} lancer={lancer} />;
   if (categorie === "erreurs") return <MesErreurs onRetour={() => onCategorie(null)} lancer={lancer} />;
   if (categorie === "collection") return <Collection onRetour={() => onCategorie(null)} />;
+  if (categorie === "reglages") return <PageReglages onRetour={() => onCategorie(null)} aller={aller} />;
+  if (categorie === "journal") return <JournalDeBord onRetour={() => onCategorie("reglages")} aller={aller} />;
+  if (categorie === "statistiques") return <Statistiques onRetour={() => onCategorie("reglages")} aller={aller} />;
   return <Hub onCategorie={onCategorie} lancer={lancer} aller={aller} />;
 }
 
@@ -187,8 +191,9 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
           )}
         </div>
         <div className="pt-heros-globe">
+          <Ciel />
           <RoseDesVents className="pt-heros-rose" />
-          <Globe key={monde.profil.globe} tourne glissable teintes={teintes} libelle={`Le globe : ${Object.keys(teintes).length} pays déjà dorés par ta mémoire. Fais-le tourner dans tous les sens.`} vueInitiale={{ lon: 12, lat: 24, zoom: 1 }} />
+          <Globe key={monde.profil.globe} tourne glissable nuages teintes={teintes} libelle={`Le globe : ${Object.keys(teintes).length} pays déjà dorés par ta mémoire. Fais-le tourner dans tous les sens.`} vueInitiale={{ lon: 12, lat: 24, zoom: 1 }} />
         </div>
       </section>
 
@@ -329,6 +334,10 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
             Chrono à chaque question
           </span>
         </label>
+        <button type="button" className="bouton bouton-discret" onClick={() => aller("accueil/reglages")}>
+          <Settings2 className="size-4" aria-hidden="true" />
+          Réglages, accessibilité et données
+        </button>
       </section>
     </div>
   );

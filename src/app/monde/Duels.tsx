@@ -1,6 +1,6 @@
 "use client";
 
-import { Bot, Check, Clock, Copy, Flag, Globe2, GraduationCap, Link2, LogIn, Map as IconeCarte, Search, Share2, Swords, Trophy, Users, X } from "lucide-react";
+import { BookOpen, Bot, Check, Clock, Coins, Compass, Copy, DraftingCompass, Earth, Flag, Footprints, Globe2, GraduationCap, Library, Link2, LogIn, Map as IconeCarte, Mountain, Navigation, Sailboat, Scroll, Search, Share2, Ship, Sprout, Swords, Tent, Trophy, Users, X } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { eclat, pluieDeLettres } from "@/lib/langues/feux";
@@ -11,7 +11,7 @@ import { lireScore, useCompteMonde } from "@/lib/monde/compte-client";
 import { DUREES_DUEL, type FormuleSalon, NOMBRES_DUEL, NOMBRES_SALON, PAUSE_REPONSE, pointsReponse, type Reaction, REACTIONS, TAILLE_SALON } from "@/lib/monde/duels";
 import { deriver, hasard, nouvelleGraine } from "@/lib/monde/hasard";
 import { DUREE_QUESTION_DUEL } from "@/lib/monde/points";
-import { battreRecordDe, noterReponse, useMonde } from "@/lib/monde/progression";
+import { battreRecordDe, noterJournal, noterReponse, useMonde } from "@/lib/monde/progression";
 import { categorieDe, consigne, juger, QUESTIONS_PAR_DUEL, questionsDuel } from "@/lib/monde/quiz";
 import type { EtatDuel } from "@/lib/monde/serveur";
 import type { EtatSalon } from "@/lib/monde/social";
@@ -25,6 +25,7 @@ import { type GlobeRef } from "./Globe";
 import { imageResultat, partagerImage } from "./partage";
 import { ContenuOption, Invite } from "./Partie";
 import { Salon } from "./Salon";
+import { jouer, ressentir } from "./sons";
 
 /*
  * Les duels : dix questions, les mêmes pour les deux joueurs, chacun à son rythme.
@@ -449,12 +450,15 @@ export function Duels({ sous, onSous }: { sous: string | null; onSous: (id: stri
             <li key={e.id} data-vaincu={CAMPAGNE.findIndex((x) => x.id === e.id) < vaincus || undefined}>
               <button type="button" className="pt-explorateur" onClick={() => virtuel(e)}>
                 <span className="pt-explorateur-medaillon" aria-hidden="true">
-                  {e.nom
-                    .replace(/^Al-/, "")
-                    .split(/\s+/)
-                    .map((m) => m[0])
-                    .join("")
-                    .slice(0, 2)}
+                  <EmblemeExplorateur id={e.id} />
+                  <span className="pt-explorateur-initiales">
+                    {e.nom
+                      .replace(/^Al-/, "")
+                      .split(/\s+/)
+                      .map((m) => m[0])
+                      .join("")
+                      .slice(0, 2)}
+                  </span>
                 </span>
                 <span className="pt-explorateur-texte">
                   <span className="pt-explorateur-nom">{e.nom}</span>
@@ -554,6 +558,7 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
   const debutQuestion = useRef(0);
   const demarre = useRef(false);
   const derniereReaction = useRef(0);
+  const dernierTic = useRef(0);
   const globe = useRef<GlobeRef>(null);
   const [confirmation, confirmer] = useConfirmer();
   const phase = etape ?? (debut ? "compte" : "attente");
@@ -584,10 +589,19 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
     const t = setInterval(() => {
       const n = Date.now();
       setMaintenant(n);
+      // Le compte à rebours se fait entendre : trois, deux, un, partez.
+      if (debut && n < debut) {
+        const s = Math.ceil((debut - n) / 1000);
+        if (s <= 3 && s !== dernierTic.current) {
+          dernierTic.current = s;
+          jouer("tic");
+        }
+      }
       if (debut && n >= debut && !demarre.current) {
         demarre.current = true;
         debutQuestion.current = n;
         setEtape("question");
+        jouer("partez");
       }
     }, 200);
     return () => clearInterval(t);
@@ -604,6 +618,7 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
       const p = pointsReponse(juste, ms, duree);
       setChoix(reponse);
       setEtape("reponse");
+      ressentir(juste ? "juste" : "faux");
       noterReponse(q.cible, categorieDe(q.type), juste);
       if (juste && ou && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) eclat(ou.x, ou.y, "ambre", 1);
       setMoi((m) => ({ index: m.index, points: m.points + p, reponses: [...m.reponses, { i: m.index, j: juste, p }] }));
@@ -662,15 +677,30 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
   const enCampagne = rencontre.sorte === "virtuel" && CAMPAGNE.findIndex((x) => x.id === rencontre.explorateur.id) === vaincusAvant;
   const avance = enCampagne && termine && resultat === "victoire";
 
-  // La fin : une pluie de lettres pour une victoire.
+  // La fin : la musique du résultat, le journal de bord, une pluie de lettres pour une victoire.
   const celebre = useRef(false);
+  const nomAdversaire = adv?.nom ?? "";
+  const justes = moi.reponses.filter((x) => x.j).length;
+  const idDuelJournal = virtuel ? undefined : duel?.id;
   useEffect(() => {
-    if (termine && resultat === "victoire" && !celebre.current) {
-      celebre.current = true;
+    if (!termine || !resultat || celebre.current) return;
+    celebre.current = true;
+    ressentir(resultat === "victoire" ? "victoire" : resultat === "defaite" ? "defaite" : "niveau");
+    noterJournal({ s: "duel", n: `Duel contre ${nomAdversaire || "un adversaire"}`, b: justes, q: nombre, x: 0, d: debut ? Math.min(3600, (Date.now() - debut) / 1000) : 0, r: resultat === "victoire" ? "v" : resultat === "defaite" ? "d" : "n", i: idDuelJournal });
+    if (resultat === "victoire") {
       if (avance) battreRecordDe(CLE_CAMPAGNE, vaincusAvant + 1);
-      setTimeout(() => pluieDeLettres(document.querySelector(".pt-duel-resultat"), "aurore", "VICTOIRE"), 250);
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) setTimeout(() => pluieDeLettres(document.querySelector(".pt-duel-resultat"), "aurore", "VICTOIRE"), 250);
     }
-  }, [termine, resultat, avance, vaincusAvant]);
+  }, [termine, resultat, avance, vaincusAvant, nomAdversaire, justes, nombre, debut, idDuelJournal]);
+
+  // L'adversaire répond : une étincelle sur sa piste, un tintement discret.
+  const advNombre = adv?.nombre ?? 0;
+  const advVu = useRef(0);
+  useEffect(() => {
+    if (advNombre > advVu.current && advNombre > 0) jouer("adverse");
+    advVu.current = advNombre;
+  }, [advNombre]);
+
 
   // Quitter un duel en ligne en cours : c'est un abandon (on prévient). À distance, on reprendra plus tard.
   const quitter = async () => {
@@ -680,6 +710,29 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
     }
     onFermer();
   };
+
+  // Le clavier : 1 à 4 pour choisir, Échap pour quitter.
+  const clavier = useRef<(e: KeyboardEvent) => void>(() => undefined);
+  useEffect(() => {
+    clavier.current = (e: KeyboardEvent) => {
+      if ((e.target as HTMLElement)?.tagName === "INPUT") return;
+      if (e.key === "Escape") {
+        if (!document.querySelector(".pt-confirmer")) void quitter();
+        return;
+      }
+      if (phase !== "question" || !q) return;
+      const n = Number(e.key);
+      if (n >= 1 && n <= q.options.length) {
+        const b = document.querySelectorAll<HTMLButtonElement>(".pt-duel .pt-choix .pt-option")[n - 1]?.getBoundingClientRect();
+        void repondre(q.options[n - 1].id, b ? { x: b.left + b.width / 2, y: b.top + b.height / 2 } : undefined);
+      }
+    };
+  });
+  useEffect(() => {
+    const f = (e: KeyboardEvent) => clavier.current(e);
+    window.addEventListener("keydown", f);
+    return () => window.removeEventListener("keydown", f);
+  }, []);
 
   /** Une réaction rapide (une toutes les trois secondes au plus). */
   const idDuel = duel?.id;
@@ -741,7 +794,7 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
         <span className="pt-duel-contre" aria-hidden="true">
           <Swords className="size-5" />
         </span>
-        <Joueur nom={adv?.nom ?? "…"} avatar={adv?.avatar} points={adv?.points ?? 0} nombre={adv?.nombre ?? 0} total={nombre} cote="droite" virtuel={adv?.virtuel} elo={adv?.elo ?? null} bulle={bulle} />
+        <Joueur nom={adv?.nom ?? "…"} avatar={adv?.avatar} points={adv?.points ?? 0} nombre={adv?.nombre ?? 0} total={nombre} cote="droite" virtuel={adv?.virtuel} elo={adv?.elo ?? null} bulle={bulle} embleme={rencontre.sorte === "virtuel" ? rencontre.explorateur.id : undefined} />
       </header>
 
       {phase === "attente" && duel && !expire && (
@@ -952,6 +1005,33 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
   return createPortal(contenu, document.body);
 }
 
+/*
+ * Les emblèmes des explorateurs : un objet de leur vie, frappé comme sur une médaille (jamais un
+ * visage inventé). Le livre de l'historien, la jonque de l'amiral, les pas du grand voyageur…
+ */
+const EMBLEMES: Record<string, typeof Bot> = {
+  polo: Scroll,
+  masudi: BookOpen,
+  zhenghe: Ship,
+  pirireis: IconeCarte,
+  ibnmajid: Compass,
+  ibnbattuta: Footprints,
+  biruni: Mountain,
+  idrisi: Earth,
+  ptolemee: DraftingCompass,
+  ibnfadlan: Tent,
+  ibnhawqal: Coins,
+  bakri: Library,
+  magellan: Sailboat,
+  mercator: Navigation,
+  humboldt: Sprout,
+};
+
+function EmblemeExplorateur({ id }: { id: string }) {
+  const Embleme = EMBLEMES[id] ?? Compass;
+  return <Embleme className="pt-explorateur-embleme" strokeWidth={1.5} />;
+}
+
 function Joueur({
   nom,
   avatar,
@@ -962,6 +1042,7 @@ function Joueur({
   virtuel,
   elo,
   bulle,
+  embleme,
 }: {
   nom: string;
   avatar?: string;
@@ -972,7 +1053,10 @@ function Joueur({
   virtuel?: boolean;
   elo?: number | null;
   bulle?: string | null;
+  /** L'explorateur virtuel : son emblème à la place d'un visage. */
+  embleme?: string;
 }) {
+  const Embleme = embleme ? EMBLEMES[embleme] : undefined;
   return (
     <div className="pt-joueur" data-cote={cote}>
       {bulle && (
@@ -980,15 +1064,19 @@ function Joueur({
           {bulle}
         </span>
       )}
-      <span className="pt-joueur-avatar" aria-hidden="true">
+      <span className="pt-joueur-avatar" aria-hidden="true" data-embleme={Embleme ? "" : undefined}>
         {avatar ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={avatar} alt="" referrerPolicy="no-referrer" />
+        ) : Embleme ? (
+          <Embleme className="size-5" strokeWidth={1.6} />
         ) : virtuel ? (
           <Bot className="size-5" />
         ) : (
           nom.slice(0, 1)
         )}
+        {/* L'adversaire vient de répondre : une étincelle sur son médaillon. */}
+        {cote === "droite" && nombre > 0 && <span key={nombre} className="pt-joueur-etincelle" />}
       </span>
       <span className="pt-joueur-texte">
         <span className="pt-joueur-nom">

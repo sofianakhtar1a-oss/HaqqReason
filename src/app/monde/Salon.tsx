@@ -7,7 +7,7 @@ import { eclat } from "@/lib/langues/feux";
 import { pays } from "@/lib/monde/atlas";
 import { CATEGORIES, type ModeJeu, TYPES } from "@/lib/monde/categories";
 import { DUREE_SALON, PAS_ELIMINATION, PAUSE_REPONSE, pointsReponse } from "@/lib/monde/duels";
-import { noterReponse } from "@/lib/monde/progression";
+import { noterJournal, noterReponse } from "@/lib/monde/progression";
 import { categorieDe, consigne, juger, questionsDuel } from "@/lib/monde/quiz";
 import type { EtatSalon } from "@/lib/monde/social";
 import { Chrono } from "./communs";
@@ -15,6 +15,7 @@ import { useConfirmer } from "./Confirmer";
 import { type GlobeRef } from "./Globe";
 import { imageResultat, partagerImage } from "./partage";
 import { ContenuOption, Invite } from "./Partie";
+import { jouer, ressentir } from "./sons";
 
 /*
  * Un salon : de trois à huit joueurs sur les mêmes questions. L'hôte lance la partie quand tout le
@@ -45,6 +46,7 @@ export function Salon({ initial, onFermer }: { initial: EtatSalon; onFermer: () 
   const [message, setMessage] = useState<string | null>(null);
   const [copie, setCopie] = useState(false);
   const debutQuestion = useRef(0);
+  const dernierTic = useRef(0);
   const globe = useRef<GlobeRef>(null);
   const [confirmation, confirmer] = useConfirmer();
 
@@ -77,13 +79,33 @@ export function Salon({ initial, onFermer }: { initial: EtatSalon; onFermer: () 
     const t = setInterval(() => {
       const n = Date.now();
       setMaintenant(n);
+      if (n < debut) {
+        const s = Math.ceil((debut - n) / 1000);
+        if (s <= 3 && s !== dernierTic.current) {
+          dernierTic.current = s;
+          jouer("tic");
+        }
+      }
       if (n >= debut) {
         debutQuestion.current = n;
         setEtape("question");
+        jouer("partez");
       }
     }, 200);
     return () => clearInterval(t);
   }, [debut, etape]);
+
+  // La fin du salon : la musique du rang, et le journal de bord.
+  const rangFinal = salon.etat === "fini" ? (moi?.rang ?? null) : null;
+  const justesSalon = moi?.justes ?? 0;
+  const salue = useRef(false);
+  useEffect(() => {
+    if (rangFinal === null || salue.current) return;
+    salue.current = true;
+    ressentir(rangFinal === 1 ? "victoire" : rangFinal <= 3 ? "niveau" : "defaite");
+    noterJournal({ s: "salon", n: `Salon de ${salon.joueurs.length} : ${rangFinal}${rangFinal === 1 ? "er" : "e"}`, b: justesSalon, q: salon.nombre, x: 0, d: 0, r: rangFinal === 1 ? "v" : "d", i: salon.id });
+  }, [rangFinal, justesSalon, salon.joueurs.length, salon.nombre, salon.id]);
+
 
   const repondre = useCallback(
     async (reponse: string, ou?: { x: number; y: number }) => {
@@ -92,6 +114,7 @@ export function Salon({ initial, onFermer }: { initial: EtatSalon; onFermer: () 
       const juste = juger(q.type, q.cible, reponse) !== "faux";
       setChoix(reponse);
       setEtape("reponse");
+      ressentir(juste ? "juste" : "faux");
       noterReponse(q.cible, categorieDe(q.type), juste);
       if (juste && ou && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) eclat(ou.x, ou.y, "ambre", 1);
       const r = await appel({ action: "repondre", id: salon.id, index, reponse, ms });
@@ -99,6 +122,24 @@ export function Salon({ initial, onFermer }: { initial: EtatSalon; onFermer: () 
     },
     [etape, q, elimine, salon.id, index],
   );
+  // Le clavier : 1 à 4 pour choisir.
+  const clavier = useRef<(e: KeyboardEvent) => void>(() => undefined);
+  useEffect(() => {
+    clavier.current = (e: KeyboardEvent) => {
+      if ((e.target as HTMLElement)?.tagName === "INPUT" || etape !== "question" || !q) return;
+      const n = Number(e.key);
+      if (n >= 1 && n <= q.options.length) {
+        const b = document.querySelectorAll<HTMLButtonElement>(".pt-salon .pt-choix .pt-option")[n - 1]?.getBoundingClientRect();
+        void repondre(q.options[n - 1].id, b ? { x: b.left + b.width / 2, y: b.top + b.height / 2 } : undefined);
+      }
+    };
+  });
+  useEffect(() => {
+    const f = (e: KeyboardEvent) => clavier.current(e);
+    window.addEventListener("keydown", f);
+    return () => window.removeEventListener("keydown", f);
+  }, []);
+
   // La pause d'après la réponse, puis la question suivante.
   useEffect(() => {
     if (etape !== "reponse") return;

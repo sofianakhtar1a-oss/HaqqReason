@@ -11,6 +11,9 @@ import { useAccesComplet } from "@/lib/client/acces";
 import { article } from "@/lib/monde/collection";
 import { lireScore } from "@/lib/monde/compte-client";
 import { useMonde } from "@/lib/monde/progression";
+import { Boussole } from "./communs";
+import { AideClavier, BoutonSon, useAideClavier } from "./Reglages";
+import { ambiance } from "./sons";
 import { useResolu, useTextes } from "@/lib/modules/textes-client";
 import { Accueil } from "./Accueil";
 import { Atlas } from "./Atlas";
@@ -24,6 +27,10 @@ import { type Lancement, Partie } from "./Partie";
 import "./portulan.css";
 import "@fontsource-variable/literata/opsz.css";
 import "@fontsource-variable/literata/opsz-italic.css";
+// La police pour la dyslexie : ses fichiers ne se chargent que si le réglage est choisi.
+import "@fontsource/opendyslexic/400.css";
+import "@fontsource/opendyslexic/700.css";
+import "@fontsource/opendyslexic/400-italic.css";
 
 /*
  * Le Portulan : apprendre la géographie. Cinq onglets, adressés par le fragment de l'URL
@@ -124,6 +131,40 @@ export function Portulan() {
     void lireScore();
   }, []);
 
+  // Les réglages de lecture valent pour toute la page (la taille du texte change la racine) ;
+  // on les retire en quittant le Portulan.
+  const p = monde.profil;
+  useEffect(() => {
+    const racine = document.documentElement;
+    const classes: Record<string, boolean> = {
+      "pt-daltonien": p.daltonien,
+      "pt-contraste": p.contraste,
+      "pt-dyslexie": p.police === "dyslexie",
+      "pt-taille-115": p.taille === 115,
+      "pt-taille-130": p.taille === 130,
+    };
+    for (const [c, oui] of Object.entries(classes)) racine.classList.toggle(c, oui);
+    return () => {
+      for (const c of Object.keys(classes)) racine.classList.remove(c);
+    };
+  }, [p.daltonien, p.contraste, p.police, p.taille]);
+
+  // La mer et le vent, tant que le Portulan est ouvert.
+  useEffect(() => ambiance(p.ambiance), [p.ambiance]);
+
+  // La touche « ? » : l'aide du clavier.
+  const [aide, fermerAide] = useAideClavier();
+
+  // Une partie se ferme : la route peut montrer ce qui s'est ouvert (le voilier, le cadenas).
+  const avait = useRef(false);
+  useEffect(() => {
+    if (partie) avait.current = true;
+    else if (avait.current) {
+      avait.current = false;
+      window.dispatchEvent(new Event("portulan:partie-fermee"));
+    }
+  }, [partie]);
+
   const empile = useRef(false);
   const scene = useRef<HTMLElement>(null);
   const aller = useCallback(
@@ -180,6 +221,7 @@ export function Portulan() {
             </button>
           ))}
         </nav>
+        <BoutonSon />
         <BoutonTheme />
         <BoutonCompte />
         {accesComplet && (
@@ -192,7 +234,9 @@ export function Portulan() {
       <main ref={scene} className="pt-scene">
         <h1 className="sr-only">{t("meta.titre")}</h1>
         {!monte ? (
-          <div className="pt-chargement" aria-hidden="true" />
+          <div className="pt-chargement" aria-hidden="true">
+            <Boussole />
+          </div>
         ) : (
           <>
             {route.onglet === "accueil" && <Accueil categorie={route.detail} onCategorie={detail("accueil")} lancer={setPartie} aller={aller} />}
@@ -220,6 +264,7 @@ export function Portulan() {
       {partie && monte && partie.sorte === "cabinet" && <PartieCabinet key={partie.cle} lancement={partie} onFermer={() => setPartie(null)} onRejouer={(l) => setPartie(l)} />}
       {partie && monte && partie.sorte === "nomme" && <NommeLesTous key={partie.cle} lancement={partie} onFermer={() => setPartie(null)} onRejouer={(l) => setPartie(l)} />}
       {partie && monte && partie.sorte !== "cabinet" && partie.sorte !== "nomme" && <Partie key={partie.cle} lancement={partie} onFermer={() => setPartie(null)} onRejouer={(l) => setPartie(l)} />}
+      {aide && monte && <AideClavier onFermer={fermerAide} />}
     </div>
   );
 }

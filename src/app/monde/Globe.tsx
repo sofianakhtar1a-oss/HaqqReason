@@ -75,6 +75,8 @@ export type GlobeProps = {
   relief?: boolean;
   /** Le jour et la nuit à cet instant (en millisecondes) ; rien : pas de nuit. */
   nuit?: number | null;
+  /** Des nuages qui dérivent vers l'est au-dessus des terres et des mers (le globe de l'accueil). */
+  nuages?: boolean;
   /** Des silhouettes de pays qu'on promène à la main (la vraie taille). */
   silhouettes?: Silhouette[];
   /** Une silhouette lâchée à un nouvel endroit. */
@@ -141,7 +143,8 @@ type Couleurs = Record<
   | "nuit"
   | "terminateur"
   | "soleil"
-  | "rayure",
+  | "rayure"
+  | "nuage",
   string
 >;
 
@@ -162,6 +165,7 @@ const lireCouleurs = (el: Element): Couleurs => {
     choix: v("--pt-choix", "#7cc8f2"),
     doux: v("--pt-doux", "#8a8a9a"),
     halo: v("--pt-halo", "rgba(124,200,242,0.28)"),
+    nuage: v("--pt-nuage", "rgba(255,255,255,0.95)"),
     repere: v("--pt-repere", "#e9be6a"),
     etiquette: v("--pt-etiquette", "#f6eedb"),
     etiquetteHalo: v("--pt-etiquette-halo", "rgba(14,20,52,0.72)"),
@@ -184,6 +188,52 @@ const lireCouleurs = (el: Element): Couleurs => {
 /** Une carte plane (le planisphère ou le Mercator) : pas de face cachée, pas d'élan. */
 const estPlan = (m: Mode) => m !== "globe";
 const mouvementReduit = () => typeof window !== "undefined" && window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+
+/*
+ * Les nuages : des bancs étirés le long des parallèles, là où ils naissent sur la vraie Terre
+ * (les dépressions des latitudes moyennes, la ceinture de l'équateur, quelques cumulus des alizés).
+ * Tirés une fois pour toutes (la même graine : le même ciel à chaque visite).
+ */
+type Nuage = { lon: number; lat: number; r: number; a: number };
+const NUAGES: readonly Nuage[] = (() => {
+  let graine = 20251119;
+  const h = () => {
+    graine = (graine * 1664525 + 1013904223) >>> 0;
+    return graine / 4294967296;
+  };
+  const sortie: Nuage[] = [];
+  for (let s = 0; s < 26; s++) {
+    const bande = h();
+    const lat0 = bande < 0.34 ? 38 + h() * 22 : bande < 0.68 ? -(38 + h() * 20) : bande < 0.86 ? (h() - 0.5) * 14 : (h() - 0.5) * 50;
+    const lon0 = h() * 360 - 180;
+    const n = 3 + Math.floor(h() * 6);
+    const pas = 2.6 + h() * 3;
+    for (let i = 0; i < n; i++) sortie.push({ lon: lon0 + (i - n / 2) * pas, lat: lat0 + (h() - 0.5) * 5 + Math.sin(i) * 1.5, r: 2.2 + h() * 4.2, a: 0.45 + h() * 0.55 });
+  }
+  return sortie;
+})();
+/** Un flocon de nuage : un disque blanc qui s'efface vers le bord (dessiné une fois par couleur). */
+const flocons = new Map<string, HTMLCanvasElement>();
+function flocon(couleur: string): HTMLCanvasElement {
+  const deja = flocons.get(couleur);
+  if (deja) return deja;
+  const c = document.createElement("canvas");
+  c.width = c.height = 64;
+  const x = c.getContext("2d");
+  if (x) {
+    const g = x.createRadialGradient(32, 32, 0, 32, 32, 32);
+    g.addColorStop(0, couleur);
+    g.addColorStop(0.45, couleur);
+    g.addColorStop(1, "rgba(255,255,255,0)");
+    x.fillStyle = g;
+    x.globalAlpha = 1;
+    x.beginPath();
+    x.arc(32, 32, 32, 0, Math.PI * 2);
+    x.fill();
+  }
+  flocons.set(couleur, c);
+  return c;
+}
 const borne = (x: number, a: number, b: number) => Math.min(b, Math.max(a, x));
 const DEG = 180 / Math.PI;
 const lisse = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2);
@@ -288,6 +338,7 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
     geographie = false,
     relief = false,
     nuit = null,
+    nuages = false,
     silhouettes,
     onSilhouette,
     contour = null,
@@ -327,8 +378,8 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
   const couleurs = useRef<Couleurs | null>(null);
   const motif = useRef<CanvasPattern | null>(null);
   const taille = useRef({ l: 300, h: 300, dpr: 1 });
-  const props = useRef({ mode, cible, teintes, coloriage, rayes, etiquettes, geographie, relief, nuit, silhouettes, onSilhouette, contour, tourne, reperes, onArrive, marques, traits, onPoint, onToucher });
-  props.current = { mode, cible, teintes, coloriage, rayes, etiquettes, geographie, relief, nuit, silhouettes, onSilhouette, contour, tourne, reperes, onArrive, marques, traits, onPoint, onToucher };
+  const props = useRef({ mode, cible, teintes, coloriage, rayes, etiquettes, geographie, relief, nuit, nuages, silhouettes, onSilhouette, contour, tourne, reperes, onArrive, marques, traits, onPoint, onToucher });
+  props.current = { mode, cible, teintes, coloriage, rayes, etiquettes, geographie, relief, nuit, nuages, silhouettes, onSilhouette, contour, tourne, reperes, onArrive, marques, traits, onPoint, onToucher };
   const cartes = useRef<{ ultra: Carte | null; leger: Carte | null; detail: Carte | null }>({ ultra, leger, detail });
   cartes.current = { ultra, leger, detail };
   const geoRef = useRef<Geographie | null>(geo);
@@ -649,6 +700,30 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
       ctx.stroke();
       ctx.setLineDash([]);
       proj.precision(grossier);
+    }
+
+    // Les nuages : chaque flocon posé sur la sphère, aplati vers le bord, dérivant lentement vers l'est.
+    if (props.current.nuages && !plan && v.zoom < 2.2) {
+      const derive = mouvementReduit() ? 0 : ((performance.now() / 1000) * 0.7) % 360;
+      const floconImage = flocon(c.nuage);
+      const echelle = proj.scale();
+      ctx.save();
+      for (const n of NUAGES) {
+        const centre: [number, number] = [n.lon + derive, n.lat];
+        const d = geoDistance(centreVue, centre);
+        if (d > Math.PI / 2 - 0.04) continue;
+        const p = proj(centre);
+        if (!p) continue;
+        const k = Math.cos(d);
+        const rr = (n.r / 57.3) * echelle;
+        ctx.globalAlpha = 0.3 * n.a * (0.25 + 0.75 * k);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        ctx.translate(p[0], p[1]);
+        ctx.rotate(Math.atan2(p[1] - cy, p[0] - cx));
+        ctx.scale(Math.max(0.22, k), 1);
+        ctx.drawImage(floconImage, -rr, -rr * 0.72, rr * 2, rr * 1.44);
+      }
+      ctx.restore();
     }
 
     // La cible : allumée, avec une lueur.
@@ -1272,7 +1347,7 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
   // La carte arrive, les teintes changent : redessiner. La cible change : voler vers elle.
   useEffect(() => {
     demander();
-  }, [ultra, leger, detail, geo, teintes, coloriage, rayes, etiquettes, geographie, relief, nuit, silhouettes, contour, mode, marques, traits, demander]);
+  }, [ultra, leger, detail, geo, teintes, coloriage, rayes, etiquettes, geographie, relief, nuit, nuages, silhouettes, contour, mode, marques, traits, demander]);
   // La cible change, ou la carte détaillée arrive (le centre exact du pays est alors connu) : voler vers elle.
   useEffect(() => {
     if (cible && (ultra || leger || detail)) viser(cible);

@@ -119,3 +119,59 @@ export function BoutonVoix() {
     </button>
   );
 }
+
+/** La boussole d'attente : une aiguille qui cherche le nord pendant que le Portulan se prépare. */
+export function Boussole({ texte, className }: { texte?: string; className?: string }) {
+  const graduations = Array.from({ length: 32 }, (_, i) => i * 11.25);
+  return (
+    <div className={`pt-boussole ${className ?? ""}`} role={texte ? "status" : undefined} aria-hidden={texte ? undefined : true}>
+      <svg viewBox="-60 -60 120 120" aria-hidden="true">
+        <circle r="56" className="pt-boussole-boitier" />
+        <circle r="47" className="pt-boussole-cadran" />
+        {graduations.map((a) => (
+          <line key={a} x1="0" y1={a % 90 === 0 ? -46 : a % 45 === 0 ? -43 : -41} x2="0" y2="-38" transform={`rotate(${a})`} className="pt-boussole-trait" data-fort={a % 90 === 0 || undefined} />
+        ))}
+        {(["N", "E", "S", "O"] as const).map((l, i) => (
+          <text key={l} x={Math.sin((i * Math.PI) / 2) * 30} y={-Math.cos((i * Math.PI) / 2) * 30} className="pt-boussole-lettre" data-nord={l === "N" || undefined}>
+            {l}
+          </text>
+        ))}
+        <g className="pt-boussole-aiguille">
+          <path d="M0 -34 L5.5 0 L-5.5 0 Z" className="pt-boussole-nord" />
+          <path d="M0 34 L5.5 0 L-5.5 0 Z" className="pt-boussole-sud" />
+        </g>
+        <circle r="3.4" className="pt-boussole-pivot" />
+      </svg>
+      {texte && <p className="pt-boussole-texte">{texte}</p>}
+    </div>
+  );
+}
+
+/*
+ * Le ciel étoilé derrière le globe de l'accueil : trois couches d'étoiles (des ombres portées d'un
+ * seul point, tirées une fois pour toutes), qui scintillent chacune à son rythme.
+ */
+function couche(graine: number, n: number, taille: number): string {
+  let g = graine;
+  const h = () => {
+    g = (g * 1103515245 + 12345) >>> 0;
+    return g / 4294967296;
+  };
+  return Array.from({ length: n }, () => {
+    const x = Math.round(h() * 1000) / 10;
+    const y = Math.round(h() * 1000) / 10;
+    const a = (0.5 + h() * 0.5).toFixed(2);
+    return `${x}cqw ${y}cqh 0 ${taille}px rgba(255, 246, 226, ${a})`;
+  }).join(", ");
+}
+const ETOILES = [couche(7, 90, 0), couche(19, 40, 0.4), couche(41, 14, 0.9)];
+
+export function Ciel() {
+  return (
+    <span className="pt-ciel" aria-hidden="true">
+      {ETOILES.map((ombre, i) => (
+        <i key={i} data-couche={i + 1} style={{ boxShadow: ombre }} />
+      ))}
+    </span>
+  );
+}

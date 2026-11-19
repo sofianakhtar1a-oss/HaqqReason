@@ -54,9 +54,52 @@ export type Profil = {
   bateau: string;
   /** Le pays de chez soi (son code), choisi sur la carte : les distances et les heures partent de lui. */
   monPays: string;
+  /** Les sons (bonne réponse, niveau réussi…), la mer et le vent en fond, les vibrations du téléphone. */
+  son: boolean;
+  ambiance: boolean;
+  vibrations: boolean;
+  /** L'accessibilité : des couleurs lisibles par les daltoniens, plus de contraste, un texte plus grand, une police pour la dyslexie. */
+  daltonien: boolean;
+  contraste: boolean;
+  taille: TailleTexte;
+  police: "normale" | "dyslexie";
+  /** Deux fois plus de temps aux questions chronométrées (sauf en duel, où le temps est le même pour tous). */
+  plusDeTemps: boolean;
+  /** Le mode concentration : pendant une partie, rien que la question. */
+  concentration: boolean;
+  /** La langue de l'interface. */
+  langue: Langue;
+  /** Les catégories remises à zéro, et quand (ms) : ce qui est plus ancien ne revient pas d'un autre appareil. */
+  remises: Record<string, number>;
   q: number;
 };
 export type Difficulte = "facile" | "normal" | "difficile";
+export type TailleTexte = 100 | 115 | 130;
+export type Langue = "fr" | "en" | "ar";
+export const LANGUES: readonly { id: Langue; nom: string }[] = [
+  { id: "fr", nom: "Français" },
+  { id: "en", nom: "English" },
+  { id: "ar", nom: "العربية" },
+];
+/** Une partie au journal de bord. */
+export type EntreeJournal = {
+  /** La fin de la partie (ms). */
+  t: number;
+  /** La sorte de partie (niveau, éclair, duel, salon, cabinet…) et son titre. */
+  s: string;
+  n: string;
+  /** Les bonnes réponses et le nombre de questions (null : une partie sans fin fixe). */
+  b: number;
+  q: number | null;
+  /** L'XP gagnée et la durée (secondes). */
+  x: number;
+  d: number;
+  /** Les étoiles d'un niveau réussi, ou le résultat d'un duel (v : victoire, d : défaite, n : nul). */
+  e?: number;
+  r?: "v" | "d" | "n";
+  /** L'identifiant d'un duel ou d'un salon : il n'entre qu'une fois au journal. */
+  i?: string;
+};
 /** Une erreur récente : la méthode (ou « cabinet/méthode »), la cible, la réponse donnée, le jour. */
 export type Erreur = { t: string; c: string; r: string; j: number };
 /** Un cabinet (départements, États, wilayas…) : ses niveaux et la mémoire de chaque élément. */
@@ -74,6 +117,8 @@ export type Etat = {
   confusions: Record<string, number>;
   /** « Mes pays » : l'heure de l'ajout (positive) ou du retrait (négative). */
   favoris: Record<string, number>;
+  /** Le journal de bord : les dernières parties (les plus récentes à la fin). */
+  journal: EntreeJournal[];
 };
 
 const NOM = "haqqreason-portulan";
@@ -100,9 +145,20 @@ const profilVide = (): Profil => ({
   cadre: "cadre-aucun",
   bateau: "bateau-safran",
   monPays: "",
+  son: true,
+  ambiance: false,
+  vibrations: true,
+  daltonien: false,
+  contraste: false,
+  taille: 100,
+  police: "normale",
+  plusDeTemps: false,
+  concentration: false,
+  langue: "fr",
+  remises: {},
   q: 0,
 });
-const vide: Etat = { niveaux: {}, pays: {}, profil: profilVide(), cabinets: {}, records: {}, erreurs: [], confusions: {}, favoris: {} };
+const vide: Etat = { niveaux: {}, pays: {}, profil: profilVide(), cabinets: {}, records: {}, erreurs: [], confusions: {}, favoris: {}, journal: [] };
 let etat: Etat | null = null;
 const abonnes = new Set<() => void>();
 
@@ -110,7 +166,20 @@ function lire(): Etat {
   if (etat) return etat;
   try {
     const brut = JSON.parse(localStorage.getItem(cle()) ?? "null") as Partial<Etat> | null;
-    etat = brut && typeof brut === "object" ? { niveaux: brut.niveaux ?? {}, pays: brut.pays ?? {}, profil: { ...profilVide(), ...(brut.profil ?? {}) }, cabinets: brut.cabinets ?? {}, records: brut.records ?? {}, erreurs: Array.isArray(brut.erreurs) ? brut.erreurs : [], confusions: brut.confusions ?? {}, favoris: brut.favoris ?? {} } : vide;
+    etat =
+      brut && typeof brut === "object"
+        ? {
+            niveaux: brut.niveaux ?? {},
+            pays: brut.pays ?? {},
+            profil: { ...profilVide(), ...(brut.profil ?? {}) },
+            cabinets: brut.cabinets ?? {},
+            records: brut.records ?? {},
+            erreurs: Array.isArray(brut.erreurs) ? brut.erreurs : [],
+            confusions: brut.confusions ?? {},
+            favoris: brut.favoris ?? {},
+            journal: Array.isArray(brut.journal) ? brut.journal : [],
+          }
+        : vide;
   } catch {
     etat = vide;
   }
@@ -469,10 +538,86 @@ export function finirNiveauCabinet(cab: string, n: number, r: { bonnes: number; 
   return { etoiles: note, ducats: x.gain, premiereFois: x.premiereFois, record: x.record, jours: x.jours };
 }
 
-export function regler(r: Partial<Pick<Profil, "chrono" | "voix" | "objectif" | "difficulte" | "questions" | "rythme" | "globe" | "cadre" | "bateau" | "monPays">>) {
+export type Reglable = "chrono" | "voix" | "objectif" | "difficulte" | "questions" | "rythme" | "globe" | "cadre" | "bateau" | "monPays" | "son" | "ambiance" | "vibrations" | "daltonien" | "contraste" | "taille" | "police" | "plusDeTemps" | "concentration" | "langue";
+export function regler(r: Partial<Pick<Profil, Reglable>>) {
   const e = lire();
   ecrire({ ...e, profil: { ...e.profil, ...r, q: Date.now() } });
   void noter("monde", "profil");
+}
+
+/** Le profil à cet instant (pour les sons, hors de React). */
+export const profilActuel = (): Profil => lire().profil;
+
+/* ---------- Le journal de bord ---------- */
+
+const JOURNAL_MAX = 300;
+const cleJournal = (x: EntreeJournal) => `${x.t}|${x.s}`;
+
+/** Une partie terminée, au journal de bord. */
+export function noterJournal(x: Omit<EntreeJournal, "t"> & { t?: number }) {
+  const e = lire();
+  if (x.i && e.journal.some((y) => y.i === x.i)) return;
+  const entree: EntreeJournal = { ...x, t: x.t ?? Date.now(), n: x.n.slice(0, 80), b: Math.max(0, Math.round(x.b)), x: Math.max(0, Math.round(x.x)), d: Math.max(0, Math.round(x.d)) };
+  ecrire({ ...e, journal: [...e.journal, entree].slice(-JOURNAL_MAX) });
+  void noter("monde", "journal");
+}
+
+/* ---------- Remettre une catégorie à zéro ---------- */
+
+/** Efface les niveaux et la mémoire des pays d'une catégorie (les autres catégories ne bougent pas). */
+export function remettreAZero(c: CategorieId) {
+  const e = lire();
+  const maintenant = Date.now();
+  const niveaux: Record<string, ResultatNiveau> = {};
+  const effaces: string[] = [];
+  for (const [k, r] of Object.entries(e.niveaux)) {
+    if (k.split(":")[0] === c) effaces.push(k);
+    else niveaux[k] = r;
+  }
+  const pays: Etat["pays"] = {};
+  const touches: string[] = [];
+  for (const [code, m] of Object.entries(e.pays)) {
+    if (m[c]) {
+      const reste = { ...m };
+      delete reste[c];
+      touches.push(code);
+      if (Object.keys(reste).length) pays[code] = reste;
+    } else pays[code] = m;
+  }
+  ecrire({ ...e, niveaux, pays, profil: { ...e.profil, remises: { ...e.profil.remises, [c]: maintenant }, q: maintenant } });
+  for (const k of effaces) void noter("monde", `niveau:${k}`);
+  for (const code of touches) void noter("monde", `pays:${code}`);
+  void noter("monde", "profil");
+}
+
+/* ---------- Exporter, importer ---------- */
+
+/** Toute la progression, en JSON lisible (à garder, ou à rapporter sur un autre appareil). */
+export function exporterProgression(): string {
+  return JSON.stringify({ format: "portulan", version: 1, exporte: new Date().toISOString(), progression: lire() }, null, 1);
+}
+
+/** Rapporte une progression exportée : fusionnée avec celle de l'appareil (le meilleur des deux). */
+export function importerProgression(texte: string): boolean {
+  let brut: unknown;
+  try {
+    brut = JSON.parse(texte);
+  } catch {
+    return false;
+  }
+  const x = (brut && typeof brut === "object" && "progression" in brut ? (brut as { progression: unknown }).progression : brut) as Partial<Etat> | null;
+  if (!x || typeof x !== "object" || (!x.profil && !x.niveaux && !x.pays)) return false;
+  if (x.profil) rangerValeur("profil", x.profil);
+  for (const [k, v] of Object.entries(x.niveaux ?? {})) rangerValeur(`niveau:${k}`, v);
+  for (const [k, v] of Object.entries(x.pays ?? {})) rangerValeur(`pays:${k}`, v);
+  for (const [k, v] of Object.entries(x.cabinets ?? {})) rangerValeur(`cabinet:${k}`, v);
+  if (x.records) rangerValeur("records", x.records);
+  if (x.erreurs) rangerValeur("erreurs", x.erreurs);
+  if (x.confusions) rangerValeur("confusions", x.confusions);
+  if (x.favoris) rangerValeur("favoris", x.favoris);
+  if (x.journal) rangerValeur("journal", x.journal);
+  for (const { c } of clesLocales()) void noter("monde", c);
+  return true;
 }
 
 /* ---------- La synchronisation (adaptateur du magasin « monde ») ---------- */
@@ -488,6 +633,7 @@ export function clesLocales(): { c: string; q?: number }[] {
     ...(e.erreurs.length ? [{ c: "erreurs" }] : []),
     ...(Object.keys(e.confusions).length ? [{ c: "confusions" }] : []),
     ...(Object.keys(e.favoris).length ? [{ c: "favoris" }] : []),
+    ...(e.journal.length ? [{ c: "journal" }] : []),
   ];
 }
 
@@ -501,6 +647,7 @@ export function valeurLocale(c: string): unknown {
   if (c === "erreurs") return e.erreurs;
   if (c === "confusions") return e.confusions;
   if (c === "favoris") return e.favoris;
+  if (c === "journal") return e.journal;
   return undefined;
 }
 
@@ -535,6 +682,17 @@ export function rangerValeur(c: string, v: unknown): boolean {
       cadre: recent && typeof p.cadre === "string" ? p.cadre : a.cadre,
       bateau: recent && typeof p.bateau === "string" ? p.bateau : a.bateau,
       monPays: recent && typeof p.monPays === "string" && /^[a-z]{0,2}$/.test(p.monPays) ? p.monPays : a.monPays,
+      son: recent && typeof p.son === "boolean" ? p.son : a.son,
+      ambiance: recent && typeof p.ambiance === "boolean" ? p.ambiance : a.ambiance,
+      vibrations: recent && typeof p.vibrations === "boolean" ? p.vibrations : a.vibrations,
+      daltonien: recent && typeof p.daltonien === "boolean" ? p.daltonien : a.daltonien,
+      contraste: recent && typeof p.contraste === "boolean" ? p.contraste : a.contraste,
+      taille: recent && (p.taille === 100 || p.taille === 115 || p.taille === 130) ? p.taille : a.taille,
+      police: recent && (p.police === "normale" || p.police === "dyslexie") ? p.police : a.police,
+      plusDeTemps: recent && typeof p.plusDeTemps === "boolean" ? p.plusDeTemps : a.plusDeTemps,
+      concentration: recent && typeof p.concentration === "boolean" ? p.concentration : a.concentration,
+      langue: recent && (p.langue === "fr" || p.langue === "en" || p.langue === "ar") ? p.langue : a.langue,
+      remises: fusionnerRemises(a.remises, p.remises),
       q: Math.max(a.q, nombre(p.q)),
     };
     ecrire({ ...e, profil });
@@ -544,7 +702,19 @@ export function rangerValeur(c: string, v: unknown): boolean {
     const k = c.slice(7);
     const r = (v ?? {}) as Partial<ResultatNiveau>;
     const a = e.niveaux[k];
-    const fusion = { e: Math.max(a?.e ?? 0, nombre(r.e)), m: Math.max(a?.m ?? 0, nombre(r.m)), f: Math.max(a?.f ?? 0, nombre(r.f)) };
+    // Un niveau réussi avant la remise à zéro de sa catégorie ne revient pas.
+    const remise = e.profil.remises[k.split(":")[0]] ?? 0;
+    if (nombre(r.f) <= remise && (a?.f ?? 0) <= remise) {
+      if (a) {
+        const niveaux = { ...e.niveaux };
+        delete niveaux[k];
+        ecrire({ ...e, niveaux });
+      }
+      return nombre(r.f) > 0;
+    }
+    const venu = nombre(r.f) > remise ? r : {};
+    const ici = a && a.f > remise ? a : undefined;
+    const fusion = { e: Math.max(ici?.e ?? 0, nombre(venu.e)), m: Math.max(ici?.m ?? 0, nombre(venu.m)), f: Math.max(ici?.f ?? 0, nombre(venu.f)) };
     ecrire({ ...e, niveaux: { ...e.niveaux, [k]: fusion } });
     return fusion.e !== nombre(r.e) || fusion.m !== nombre(r.m) || fusion.f !== nombre(r.f);
   }
@@ -555,6 +725,14 @@ export function rangerValeur(c: string, v: unknown): boolean {
     const fusion: Partial<Record<Famille, Maitrise>> = { ...ici };
     let mieux = false;
     for (const f of new Set([...Object.keys(ici), ...Object.keys(venu)]) as Set<Famille>) {
+      // Ce qui a été vu avant le jour de la remise à zéro de la catégorie ne revient pas (le jour même, on garde :
+      // mieux vaut un pays revu de trop qu'un progrès perdu).
+      const remise = e.profil.remises[f] ? Math.floor(e.profil.remises[f] / 86_400_000) : -1;
+      if (remise >= 0 && (venu[f]?.[3] ?? -1) < remise && (ici[f]?.[3] ?? -1) < remise) {
+        if (ici[f]) delete fusion[f];
+        if (venu[f]) mieux = true;
+        continue;
+      }
       const a = ici[f];
       const b = Array.isArray(venu[f]) && venu[f]!.length === 4 ? (venu[f]!.map(nombre) as Maitrise) : undefined;
       if (!b) {
@@ -566,7 +744,12 @@ export function rangerValeur(c: string, v: unknown): boolean {
       if (garde !== b) mieux = true;
       fusion[f] = garde;
     }
-    ecrire({ ...e, pays: { ...e.pays, [code]: fusion } });
+    if (Object.keys(fusion).length) ecrire({ ...e, pays: { ...e.pays, [code]: fusion } });
+    else if (e.pays[code]) {
+      const pays = { ...e.pays };
+      delete pays[code];
+      ecrire({ ...e, pays });
+    }
     return mieux;
   }
   if (c.startsWith("cabinet:")) {
@@ -634,6 +817,16 @@ export function rangerValeur(c: string, v: unknown): boolean {
     ecrire({ ...e, favoris: fusion });
     return mieux;
   }
+  if (c === "journal") {
+    const venu = Array.isArray(v) ? (v as Partial<EntreeJournal>[]) : [];
+    const valides = venu.filter((x): x is EntreeJournal => typeof x?.t === "number" && typeof x.s === "string" && typeof x.n === "string" && typeof x.b === "number");
+    const vus = new Set(e.journal.map(cleJournal));
+    const ids = new Set(e.journal.map((x) => x.i).filter(Boolean));
+    const ajout = valides.filter((x) => !vus.has(cleJournal(x)) && !(x.i && ids.has(x.i)));
+    const journal = [...e.journal, ...ajout].sort((a, b) => a.t - b.t).slice(-JOURNAL_MAX);
+    if (ajout.length) ecrire({ ...e, journal });
+    return journal.length > valides.length;
+  }
   if (c === "records") {
     const venu = (v ?? {}) as Record<string, unknown>;
     const fusion: Record<string, number> = { ...e.records };
@@ -670,7 +863,16 @@ export function effacerValeur(c: string) {
     ecrire({ ...e, confusions: {} });
   } else if (c === "favoris") {
     ecrire({ ...e, favoris: {} });
+  } else if (c === "journal") {
+    ecrire({ ...e, journal: [] });
   }
+}
+
+/** Les remises à zéro de deux appareils : la plus récente de chaque catégorie. */
+function fusionnerRemises(a: Record<string, number>, b: unknown): Record<string, number> {
+  const sortie = { ...a };
+  if (b && typeof b === "object") for (const [k, v] of Object.entries(b as Record<string, unknown>)) if (typeof v === "number" && Number.isFinite(v) && v > (sortie[k] ?? 0)) sortie[k] = v;
+  return sortie;
 }
 
 /* ---------- React ---------- */

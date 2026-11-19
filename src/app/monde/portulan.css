@@ -6708,3 +6708,973 @@ html[data-pt-transition]::view-transition-new(root) {
     animation: none;
   }
 }
+
+/* =====================================================================
+   Mes réglages
+   ===================================================================== */
+.pt-reglages {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+}
+.pt-reglages-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
+  align-items: start;
+  gap: 0.9rem;
+  margin-top: 1.4rem;
+}
+.pt-reglages-carte {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 1.1rem 1.2rem 1rem;
+  border-radius: 1.3rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.pt-reglages-donnees {
+  gap: 0.7rem;
+}
+.pt-reglages-titre {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-family: var(--pt-serif);
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 600;
+}
+.pt-reglages-titre svg {
+  color: var(--sa);
+}
+.pt-reglage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.65rem 0;
+  border-top: 1px solid color-mix(in srgb, var(--trait) 60%, transparent);
+  cursor: pointer;
+}
+.pt-reglages-carte > .pt-reglage:first-of-type,
+.pt-reglages-titre + .pt-reglage {
+  border-top: 0;
+}
+.pt-reglage[data-desactive] {
+  cursor: default;
+  opacity: 0.6;
+}
+.pt-reglage-texte {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+.pt-reglage-titre {
+  font-weight: 650;
+  color: var(--encre);
+}
+.pt-reglage-aide {
+  font-size: 0.83rem;
+  line-height: 1.45;
+  color: var(--encre-douce);
+}
+.pt-reglage-exemple {
+  font-family: "OpenDyslexic", var(--font-sans);
+  font-size: 0.78rem;
+}
+.pt-reglage .pt-segments {
+  flex: none;
+}
+.pt-reglage:has(> .pt-segments) {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  cursor: default;
+}
+.pt-langues button[lang="ar"] {
+  font-family: "Noto Sans Arabic Variable", "Noto Sans Arabic", "Geeza Pro", var(--font-sans);
+}
+.pt-reglages-lien {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  align-self: flex-start;
+  margin-top: 0.8rem;
+}
+.pt-reglages-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.pt-remise {
+  flex-wrap: wrap;
+  cursor: default;
+}
+.pt-remise-choix {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.pt-remise-choix select {
+  min-height: 3rem;
+  padding: 0 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  font: inherit;
+  font-weight: 600;
+  color: var(--encre);
+}
+/*
+ * Un texte plus grand (ou la police pour la dyslexie, plus large) : la barre des onglets du haut
+ * n'a plus la place ; la barre du bas la remplace plus longtemps, et le titre se retire.
+ */
+@media (min-width: 64rem) and (max-width: 78rem) {
+  html:is(.pt-taille-115, .pt-dyslexie) .pt-onglets {
+    display: none;
+  }
+  html:is(.pt-taille-115, .pt-dyslexie) .pt-barre-bas {
+    display: grid;
+  }
+  html:is(.pt-taille-115, .pt-dyslexie) .pt-scene {
+    padding-bottom: calc(6.5rem + env(safe-area-inset-bottom));
+  }
+}
+@media (min-width: 64rem) and (max-width: 92rem) {
+  html.pt-taille-130 .pt-onglets {
+    display: none;
+  }
+  html.pt-taille-130 .pt-barre-bas {
+    display: grid;
+  }
+  html.pt-taille-130 .pt-scene {
+    padding-bottom: calc(6.5rem + env(safe-area-inset-bottom));
+  }
+}
+@media (max-width: 92rem) {
+  html:is(.pt-taille-115, .pt-taille-130, .pt-dyslexie) .pt-tete-titre,
+  html:is(.pt-taille-115, .pt-taille-130, .pt-dyslexie) .pt-pastille {
+    display: none;
+  }
+}
+
+/* Le bouton des sons : barré quand ils sont coupés. */
+.pt-bouton-son {
+  position: relative;
+}
+.pt-bouton-son[data-coupe] {
+  color: var(--encre-douce);
+}
+.pt-bouton-son[data-coupe]::after {
+  content: "";
+  position: absolute;
+  width: 1.45rem;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  box-shadow: 0 0 0 1.5px var(--fond);
+  transform: rotate(-45deg);
+}
+
+/* =====================================================================
+   Le journal de bord et les statistiques
+   ===================================================================== */
+.pt-journal-jour {
+  margin-top: 1.6rem;
+}
+.pt-journal-date {
+  margin-bottom: 0.5rem;
+  font-family: var(--pt-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.pt-journal-date::first-letter {
+  text-transform: uppercase;
+}
+.pt-journal-liste {
+  display: grid;
+  gap: 0.35rem;
+}
+.pt-journal-liste li {
+  display: grid;
+  grid-template-columns: 3.4rem minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.9rem;
+  border: 1px solid var(--trait);
+  border-left: 3px solid var(--or);
+  background: var(--surface);
+}
+.pt-journal-liste li[data-resultat="v"] {
+  border-left-color: var(--succes);
+}
+.pt-journal-liste li[data-resultat="d"],
+.pt-journal-liste li[data-resultat="rate"] {
+  border-left-color: var(--danger);
+}
+.pt-journal-liste li[data-resultat="n"] {
+  border-left-color: var(--encre-douce);
+}
+.pt-journal-heure {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.pt-journal-texte {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.pt-journal-texte strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pt-journal-texte small {
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}
+.pt-journal-score {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+.pt-journal-score small {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.pt-journal-xp {
+  min-width: 4.2rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-align: right;
+  color: var(--sa);
+}
+@media (max-width: 34rem) {
+  .pt-journal-liste li {
+    grid-template-columns: 3rem minmax(0, 1fr) auto;
+  }
+  .pt-journal-xp {
+    display: none;
+  }
+}
+.pt-activite {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(7, auto);
+  gap: 4px;
+  max-width: 24rem;
+}
+.pt-activite span {
+  aspect-ratio: 1;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--sa) calc(18% + 82% * var(--part, 0)), var(--surface));
+}
+.pt-activite span[data-vide] {
+  background: var(--surface-forte);
+}
+.pt-activite span[data-futur] {
+  background: transparent;
+  border: 1px dashed color-mix(in srgb, var(--trait) 70%, transparent);
+}
+.pt-stats-barres {
+  display: grid;
+  gap: 0.45rem;
+}
+.pt-stats-barres li {
+  display: grid;
+  grid-template-columns: minmax(8rem, 12rem) minmax(0, 1fr) 4.4rem 7rem;
+  align-items: center;
+  gap: 0.8rem;
+}
+.pt-stats-nom {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 600;
+}
+.pt-stats-nom svg {
+  flex: none;
+  color: var(--sa);
+}
+.pt-stats-barre {
+  height: 0.55rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--surface-forte);
+}
+.pt-stats-barre span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--or), var(--sa));
+  transform-origin: left center;
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.pt-stats-barre[data-justesse] span {
+  background: linear-gradient(90deg, color-mix(in srgb, var(--succes) 55%, var(--surface)), var(--succes));
+}
+.pt-stats-valeur {
+  font-weight: 700;
+  text-align: right;
+}
+.pt-stats-juste {
+  font-size: 0.82rem;
+  color: var(--encre-douce);
+}
+@media (max-width: 40rem) {
+  .pt-stats-barres li {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.25rem 0.8rem;
+  }
+  .pt-stats-barre {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+  .pt-stats-juste {
+    display: none;
+  }
+}
+.pt-stats-duo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: 0 2rem;
+}
+.pt-stats-pays {
+  display: grid;
+  gap: 0.3rem;
+  counter-reset: pt-pays;
+}
+.pt-stats-pays li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--trait) 60%, transparent);
+  counter-increment: pt-pays;
+}
+.pt-stats-pays li::before {
+  content: counter(pt-pays);
+  min-width: 1.2rem;
+  font-weight: 800;
+  color: var(--encre-douce);
+}
+.pt-stats-pays li .pt-lien {
+  flex: 1;
+  text-align: left;
+}
+.pt-stats-pays li > span {
+  font-size: 0.85rem;
+  color: var(--encre-douce);
+}
+
+/* =====================================================================
+   L'aide du clavier
+   ===================================================================== */
+.pt-confirmer.pt-aide-clavier {
+  width: min(100%, 46rem);
+  max-height: calc(100dvh - 2rem);
+  overflow-y: auto;
+}
+.pt-aide-tete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.pt-aide-tete h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pt-aide-tete h2 svg {
+  color: var(--sa);
+}
+.pt-aide-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  gap: 1.2rem 1.8rem;
+  margin-top: 1rem;
+}
+.pt-aide-grille h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.pt-aide-grille dl > div {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.35rem 0;
+  border-top: 1px solid color-mix(in srgb, var(--trait) 55%, transparent);
+}
+.pt-aide-grille dt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+  color: var(--encre-douce);
+}
+.pt-aide-grille dd {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.pt kbd {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.7rem;
+  height: 1.7rem;
+  padding: 0 0.4rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--trait);
+  border-bottom-width: 3px;
+  background: var(--surface-forte);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--encre);
+}
+
+/* =====================================================================
+   La boussole d'attente
+   ===================================================================== */
+.pt-chargement {
+  display: grid;
+  place-items: center;
+}
+.pt-boussole {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 2rem auto;
+}
+.pt-boussole svg {
+  width: 6rem;
+  height: 6rem;
+  filter: drop-shadow(0 0.6rem 1.2rem rgba(0, 0, 0, 0.35));
+}
+.pt-boussole-boitier {
+  fill: color-mix(in srgb, var(--or) 30%, var(--fond));
+  stroke: var(--or);
+  stroke-width: 2;
+}
+.pt-boussole-cadran {
+  fill: var(--fond);
+  stroke: color-mix(in srgb, var(--or) 45%, transparent);
+  stroke-width: 1;
+}
+.pt-boussole-trait {
+  stroke: color-mix(in srgb, var(--or) 55%, transparent);
+  stroke-width: 1;
+}
+.pt-boussole-trait[data-fort] {
+  stroke: var(--or);
+  stroke-width: 1.6;
+}
+.pt-boussole-lettre {
+  font-family: var(--pt-serif);
+  font-size: 9px;
+  font-weight: 700;
+  fill: var(--encre-douce);
+  text-anchor: middle;
+  dominant-baseline: central;
+}
+.pt-boussole-lettre[data-nord] {
+  fill: var(--sa);
+}
+.pt-boussole-aiguille {
+  transform-origin: 0 0;
+  animation: pt-boussole-cherche 2.8s cubic-bezier(0.45, 0, 0.25, 1) infinite;
+}
+.pt-boussole-nord {
+  fill: var(--sa);
+}
+.pt-boussole-sud {
+  fill: var(--encre-douce);
+  opacity: 0.7;
+}
+.pt-boussole-pivot {
+  fill: var(--or);
+}
+.pt-boussole-texte {
+  font-size: 0.9rem;
+  color: var(--encre-douce);
+}
+@keyframes pt-boussole-cherche {
+  0% {
+    transform: rotate(-70deg);
+  }
+  30% {
+    transform: rotate(38deg);
+  }
+  52% {
+    transform: rotate(-18deg);
+  }
+  70% {
+    transform: rotate(8deg);
+  }
+  84%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* =====================================================================
+   Le ciel étoilé derrière le globe de l'accueil
+   ===================================================================== */
+.pt-ciel {
+  position: absolute;
+  inset: -18%;
+  z-index: 0;
+  container-type: size;
+  pointer-events: none;
+  border-radius: 50%;
+  mask-image: radial-gradient(closest-side, #000 72%, transparent 100%);
+}
+.pt-ciel i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  animation: pt-scintille 5s ease-in-out infinite alternate;
+}
+.pt-ciel i[data-couche="2"] {
+  animation-duration: 3.4s;
+  animation-delay: -1.2s;
+}
+.pt-ciel i[data-couche="3"] {
+  animation-duration: 7s;
+  animation-delay: -2.5s;
+}
+@keyframes pt-scintille {
+  from {
+    opacity: 0.35;
+  }
+  to {
+    opacity: 1;
+  }
+}
+[data-theme="light"] .pt-ciel {
+  display: none;
+}
+
+/* =====================================================================
+   Les emblèmes des explorateurs, l'étincelle de l'adversaire
+   ===================================================================== */
+.pt-explorateur-medaillon {
+  position: relative;
+  width: 3.1rem;
+  height: 3.1rem;
+  box-shadow:
+    inset 0 0 0 3px color-mix(in srgb, var(--or) 22%, transparent),
+    inset 0 0 0 4px color-mix(in srgb, var(--or) 50%, transparent);
+}
+.pt-explorateur-embleme {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-top: -0.35rem;
+}
+.pt-explorateur-initiales {
+  position: absolute;
+  bottom: 0.32rem;
+  left: 0;
+  right: 0;
+  font-family: var(--font-display);
+  font-size: 0.5rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-align: center;
+  opacity: 0.8;
+}
+.pt-joueur-avatar[data-embleme] {
+  border-color: var(--or);
+  background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--or) 35%, var(--fond)), var(--fond));
+}
+.pt-joueur-avatar {
+  position: relative;
+  overflow: visible;
+}
+.pt-joueur-avatar img {
+  border-radius: 50%;
+}
+.pt-joueur-etincelle {
+  position: absolute;
+  inset: -0.6rem;
+  border-radius: 50%;
+  pointer-events: none;
+  background:
+    conic-gradient(from 0deg, transparent 0 4%, var(--sa) 5% 7%, transparent 8% 29%, var(--sa) 30% 32%, transparent 33% 54%, var(--sa) 55% 57%, transparent 58% 79%, var(--sa) 80% 82%, transparent 83%);
+  mask-image: radial-gradient(closest-side, transparent 52%, #000 56%, #000 80%, transparent 100%);
+  opacity: 0;
+  animation: pt-etincelle 0.7s ease-out;
+}
+@keyframes pt-etincelle {
+  0% {
+    opacity: 0.95;
+    transform: scale(0.6) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.35) rotate(25deg);
+  }
+}
+.pt-joueur-piste i[data-fait] {
+  animation: pt-piste 0.45s cubic-bezier(0.2, 1.4, 0.4, 1);
+}
+@keyframes pt-piste {
+  from {
+    transform: scaleY(2.4);
+    background: var(--or);
+  }
+}
+
+/* =====================================================================
+   La route : le cadenas qui saute, le voilier qui descend, l'encre dorée
+   ===================================================================== */
+.pt-route-cadre {
+  position: relative;
+}
+.pt-route-voilier {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: -1.25rem 0 0 -1.25rem;
+  border-radius: 50%;
+  background: var(--sa);
+  color: var(--sur-sa);
+  box-shadow: 0 0 0 0.35rem var(--sa-doux), 0 0.6rem 1.2rem -0.4rem rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+.pt-escale-medaille[data-ouvre] {
+  border-color: var(--or);
+  color: var(--or);
+}
+.pt-escale-medaille[data-ouvre] svg path {
+  transform-origin: 7px 11px;
+  animation: pt-cadenas 0.75s cubic-bezier(0.3, 1.5, 0.5, 1) 0.2s both;
+}
+.pt-escale-medaille[data-ouvre] svg {
+  animation: pt-cadenas-fond 0.4s ease-in 0.75s both;
+}
+@keyframes pt-cadenas {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  45% {
+    transform: translateY(-3.5px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-3.5px) rotate(-32deg);
+  }
+}
+@keyframes pt-cadenas-fond {
+  to {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+}
+.pt-escale-medaille[data-dore]::after {
+  content: "";
+  position: absolute;
+  inset: -55%;
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 50%, var(--or) 0 30%, transparent 31%),
+    radial-gradient(circle at 30% 38%, var(--or) 0 19%, transparent 20%),
+    radial-gradient(circle at 70% 64%, var(--or) 0 17%, transparent 18%),
+    radial-gradient(circle at 58% 24%, var(--or) 0 11%, transparent 12%),
+    radial-gradient(circle at 26% 70%, var(--or) 0 9%, transparent 10%);
+  filter: blur(1.2px);
+  animation: pt-encre-doree 1.3s cubic-bezier(0.2, 0.75, 0.25, 1) forwards;
+}
+@keyframes pt-encre-doree {
+  0% {
+    opacity: 0.95;
+    transform: scale(0.25) rotate(0deg);
+  }
+  60% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.25) rotate(18deg);
+  }
+}
+
+/* =====================================================================
+   Le brevet d'un nouveau grade : le parchemin, l'encre dorée, le sceau
+   ===================================================================== */
+.pt-brevet {
+  width: min(100%, 26rem);
+  margin: 0.6rem auto 0.4rem;
+}
+.pt-brevet-parchemin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pt-brevet-rouleau {
+  position: relative;
+  z-index: 1;
+  width: 104%;
+  height: 0.95rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #c9a868, #f6e9c6 38%, #d8bd85 70%, #9f7c3c);
+  box-shadow: 0 0.35rem 0.6rem -0.3rem rgba(0, 0, 0, 0.55);
+}
+.pt-brevet-corps {
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 100%;
+  background:
+    radial-gradient(120% 90% at 50% 0%, #fbf3dd, #efe0b8 70%, #e4cd98),
+    #f3e6c4;
+  box-shadow:
+    inset 0 0 0 1px rgba(120, 82, 20, 0.3),
+    inset 0 0 1.4rem rgba(140, 96, 30, 0.25);
+  color: #3a2a10;
+}
+.pt-brevet-texte {
+  min-height: 0;
+  overflow: hidden;
+  padding: 0 1.4rem;
+}
+.pt-brevet-sur {
+  padding-top: 1.1rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #7a5718;
+}
+.pt-brevet-titre {
+  margin: 0.15rem 0 0.25rem;
+  background: linear-gradient(100deg, #8a5e06, #d9a440 35%, #f6d78a 50%, #b47f1c 65%, #8a5e06);
+  background-size: 220% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: var(--pt-serif);
+  font-size: clamp(2rem, 8vw, 2.7rem);
+  font-style: italic;
+  font-weight: 650;
+  line-height: 1.1;
+  color: transparent;
+}
+.pt-brevet-devise {
+  font-family: var(--pt-serif);
+  font-size: 1rem;
+  font-style: italic;
+}
+.pt-brevet-pied {
+  padding: 0.7rem 4.4rem 1.1rem 0;
+  font-size: 0.78rem;
+  color: #6a5428;
+}
+.pt-brevet-sceau {
+  position: absolute;
+  right: 0.6rem;
+  bottom: -0.4rem;
+  z-index: 2;
+  width: 4.4rem;
+  height: 4.4rem;
+  transform: rotate(-12deg);
+  filter: drop-shadow(0 0.3rem 0.4rem rgba(80, 10, 10, 0.5));
+}
+@media (prefers-reduced-motion: no-preference) {
+  .pt-brevet-corps {
+    animation: pt-deroule 0.95s cubic-bezier(0.3, 0.7, 0.2, 1) 0.15s both;
+  }
+  .pt-brevet-titre {
+    animation: pt-encre-titre 1.6s ease-out 0.9s both;
+  }
+  .pt-brevet-sceau {
+    animation: pt-sceau-frappe 0.55s cubic-bezier(0.2, 1.5, 0.45, 1) 1.3s both;
+  }
+  .pt-brevet-sceau::before {
+    content: "";
+    position: absolute;
+    inset: 4%;
+    border-radius: 50%;
+    border: 3px solid rgba(163, 34, 34, 0.55);
+    opacity: 0;
+    animation: pt-cire 0.6s ease-out 1.55s both;
+  }
+}
+@keyframes pt-deroule {
+  from {
+    grid-template-rows: 0fr;
+  }
+  to {
+    grid-template-rows: 1fr;
+  }
+}
+@keyframes pt-encre-titre {
+  from {
+    background-position: 100% 0;
+    filter: blur(2px);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+    filter: blur(0);
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+@keyframes pt-sceau-frappe {
+  0% {
+    opacity: 0;
+    transform: translateY(-2.4rem) scale(1.9) rotate(-30deg);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(0) scale(0.9) rotate(-10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(-12deg);
+  }
+}
+@keyframes pt-cire {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+/* Le petit globe du bilan : les pays de la partie. */
+.pt-fin-globe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  width: min(62vw, 13rem);
+  margin: 0.2rem auto 0.4rem;
+}
+.pt-fin-globe .pt-globe {
+  width: 100%;
+}
+.pt-fin-globe figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem 0.9rem;
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}
+.pt-fin-globe figcaption span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.pt-fin-globe figcaption span::before {
+  content: "";
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: var(--pt-juste);
+}
+.pt-fin-globe figcaption span[data-teinte="faux"]::before {
+  background: var(--pt-faux);
+}
+
+/* =====================================================================
+   Le mode concentration : rien que la question
+   ===================================================================== */
+.pt-partie[data-concentration] .pt-partie-fond,
+.pt-partie[data-concentration] .pt-combo,
+.pt-partie[data-concentration] .pt-consigne-cat,
+.pt-partie[data-concentration] .pt-astuce {
+  display: none;
+}
+.pt-partie[data-concentration] .pt-question {
+  max-width: 44rem;
+}
+html:has(.pt-partie[data-concentration]) .lg-feux {
+  display: none;
+}
+
+/* =====================================================================
+   L'accessibilité : la taille du texte, le contraste, la police, les couleurs
+   ===================================================================== */
+html.pt-taille-115 {
+  font-size: 115%;
+}
+html.pt-taille-130 {
+  font-size: 130%;
+}
+html.pt-contraste .pt {
+  --encre-douce: var(--encre);
+  --trait: color-mix(in srgb, var(--encre) 46%, transparent);
+  --sa-trait: var(--sa);
+}
+html.pt-contraste .pt :focus-visible {
+  outline-width: 3px;
+  outline-offset: 3px;
+}
+html.pt-contraste .pt .pt-escale-bouton:disabled {
+  opacity: 0.75;
+}
+html.pt-dyslexie .pt {
+  --font-sans: "OpenDyslexic", "Segoe UI", system-ui, sans-serif;
+  --font-display: "OpenDyslexic", "Segoe UI", system-ui, sans-serif;
+  --pt-serif: "OpenDyslexic", Georgia, serif;
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  word-spacing: 0.08em;
+}
+html.pt-dyslexie .pt .pt-titre,
+html.pt-dyslexie .pt .pt-fin-titre,
+html.pt-dyslexie .pt .pt-intro-titre {
+  letter-spacing: 0;
+  line-height: 1.25;
+}
+/* Les couleurs d'Okabe et Ito : le bleu dit juste, l'orange dit faux. */
+html.pt-daltonien .pt {
+  --succes: #63b8ee;
+  --danger: #f2a43a;
+  --pt-juste: #56b4e9;
+  --pt-faux: #e69f00;
+}
+html.pt-daltonien[data-theme="light"] .pt {
+  --succes: #0a5ea8;
+  --danger: #a35200;
+  --pt-juste: #0072b2;
+  --pt-faux: #d55e00;
+}
+
+/* L'escale du moment : le voilier (de la couleur choisie à la boutique) sur un fond qui le laisse voir. */
+.pt-escale[data-courant][data-ouvert] .pt-escale-medaille {
+  background: color-mix(in srgb, var(--pt-bateau, var(--sa)) 16%, var(--fond));
+  border-color: var(--pt-bateau, var(--sa));
+}

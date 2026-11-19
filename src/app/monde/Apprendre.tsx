@@ -252,6 +252,9 @@ export function Carnet({ aller }: { aller: (hash: string) => void }) {
           <button type="button" className="pt-lien" onClick={() => aller("accueil/erreurs")}>
             {erreurs ? `Mes erreurs des 7 derniers jours (${erreurs})` : "Mes erreurs et mes confusions"}
           </button>
+          <button type="button" className="pt-lien" onClick={() => aller("accueil/journal")}>
+            Mon journal de bord et mes statistiques
+          </button>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowLeft, BookOpen, Crown, Lock, Map as IconeCarte, Sailboat } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { CONTINENTS, NOM_CONTINENT, pays } from "@/lib/monde/atlas";
 import { CATEGORIES, type CategorieId, TYPES, type TypeQuestion, typesDe } from "@/lib/monde/categories";
 import { grade, NB_NIVEAUX, niveauxDe, QUESTIONS_PAR_NIVEAU } from "@/lib/monde/niveaux";
@@ -11,6 +11,7 @@ import { Decouvrir } from "./Apprendre";
 import { Globe, type Teinte } from "./Globe";
 import { Etoiles } from "./communs";
 import { type Lancement, useLancer } from "./Partie";
+import { jouer } from "./sons";
 
 /*
  * Une catégorie : quinze escales sur une route maritime, du mousse à l'Atlas.
@@ -40,6 +41,74 @@ export function Categorie({ id, onRetour, lancer }: { id: CategorieId; onRetour:
   }, [monde, niveaux, id]);
   const courant = niveauCourant(monde, id);
   const m = maitrise(monde, id);
+
+  /*
+   * Une escale vient de s'ouvrir (la partie est refermée) : le cadenas saute, puis le voilier
+   * descend la route jusqu'à elle, et l'escale se dore comme de l'encre fraîche.
+   */
+  const route = useRef<HTMLOListElement>(null);
+  const voilier = useRef<HTMLSpanElement>(null);
+  const courantVu = useRef(courant);
+  const courantActuel = useRef(courant);
+  const [ouverture, setOuverture] = useState<{ de: number; vers: number; etape: "cadenas" | "voile" | "dore" } | null>(null);
+  useEffect(() => {
+    courantActuel.current = courant;
+  });
+  useEffect(() => {
+    const fermee = () => {
+      const vers = courantActuel.current;
+      const de = courantVu.current;
+      courantVu.current = vers;
+      if (vers <= de || vers > NB_NIVEAUX) return;
+      jouer("debloque");
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      setOuverture({ de, vers, etape: "cadenas" });
+    };
+    window.addEventListener("portulan:partie-fermee", fermee);
+    return () => window.removeEventListener("portulan:partie-fermee", fermee);
+  }, []);
+  useEffect(() => {
+    if (!ouverture) return;
+    const ol = route.current;
+    const li = ol?.querySelector<HTMLElement>(`[data-n="${ouverture.vers}"]`);
+    if (ouverture.etape === "cadenas") {
+      li?.scrollIntoView({ behavior: "smooth", block: "center" });
+      const t = setTimeout(() => setOuverture((o) => (o ? { ...o, etape: "voile" } : o)), 1000);
+      return () => clearTimeout(t);
+    }
+    if (ouverture.etape === "voile") {
+      const a = ol?.querySelector<HTMLElement>(`[data-n="${ouverture.de}"] .pt-escale-medaille`)?.getBoundingClientRect();
+      const b = li?.querySelector<HTMLElement>(".pt-escale-medaille")?.getBoundingClientRect();
+      const base = ol?.getBoundingClientRect();
+      const v = voilier.current;
+      if (!a || !b || !base || !v) {
+        const t = setTimeout(() => setOuverture((o) => (o ? { ...o, etape: "dore" } : o)), 0);
+        return () => clearTimeout(t);
+      }
+      const ax = a.left + a.width / 2 - base.left;
+      const ay = a.top + a.height / 2 - base.top;
+      const bx = b.left + b.width / 2 - base.left;
+      const by = b.top + b.height / 2 - base.top;
+      // Une courbe douce : le voilier s'écarte un peu de la route à mi-chemin, en tanguant.
+      const mx = (ax + bx) / 2 + Math.min(46, Math.abs(by - ay) * 0.35);
+      const my = (ay + by) / 2;
+      const anim = v.animate(
+        [
+          { transform: `translate(${ax}px, ${ay}px) rotate(-8deg) scale(0.9)`, opacity: 0 },
+          { transform: `translate(${ax}px, ${ay}px) rotate(-8deg) scale(1)`, opacity: 1, offset: 0.12 },
+          { transform: `translate(${mx}px, ${my}px) rotate(7deg) scale(1.08)`, offset: 0.55 },
+          { transform: `translate(${bx}px, ${by}px) rotate(-3deg) scale(1)`, opacity: 1, offset: 0.92 },
+          { transform: `translate(${bx}px, ${by}px) rotate(0deg) scale(1)`, opacity: 0 },
+        ],
+        { duration: 1500, easing: "cubic-bezier(0.45, 0.05, 0.3, 1)", fill: "forwards" },
+      );
+      anim.onfinish = () => setOuverture((o) => (o ? { ...o, etape: "dore" } : o));
+      return () => anim.cancel();
+    }
+    // L'encre dorée s'étale, puis tout redevient la route de tous les jours.
+    const t = setTimeout(() => setOuverture(null), 1400);
+    return () => clearTimeout(t);
+  }, [ouverture]);
 
   return (
     <div className="pt-categorie" data-categorie={id}>
@@ -95,7 +164,13 @@ export function Categorie({ id, onRetour, lancer }: { id: CategorieId; onRetour:
         </div>
       )}
 
-      <ol className="pt-route" aria-label={`Les ${NB_NIVEAUX} niveaux`}>
+      <div className="pt-route-cadre">
+        {ouverture?.etape === "voile" && (
+          <span ref={voilier} className="pt-route-voilier" aria-hidden="true">
+            <Sailboat className="size-5" />
+          </span>
+        )}
+        <ol ref={route} className="pt-route" aria-label={`Les ${NB_NIVEAUX} niveaux`}>
         {niveaux.map((codes, i) => {
           const n = i + 1;
           const ouvert = niveauOuvert(monde, id, n);
@@ -104,7 +179,7 @@ export function Categorie({ id, onRetour, lancer }: { id: CategorieId; onRetour:
           const g = grade(n);
           const apercu = codes.slice(0, 3).map((c) => pays(c).nom);
           return (
-            <li key={n} className="pt-escale" data-ouvert={ouvert || undefined} data-fait={fait || undefined} data-courant={n === courant || undefined} style={{ "--i": i } as React.CSSProperties}>
+            <li key={n} data-n={n} className="pt-escale" data-ouvert={ouvert || undefined} data-fait={fait || undefined} data-courant={n === courant || undefined} style={{ "--i": i } as React.CSSProperties}>
               <button
                 type="button"
                 className="pt-escale-bouton"
@@ -112,8 +187,16 @@ export function Categorie({ id, onRetour, lancer }: { id: CategorieId; onRetour:
                 onClick={() => lancer(l.niveau(id, n, methode))}
                 aria-label={`Niveau ${n}, ${g.nom}${ouvert ? (fait ? `, ${e} étoile${e > 1 ? "s" : ""}` : ", à jouer") : ", verrouillé"}`}
               >
-                <span className="pt-escale-medaille" aria-hidden="true">
-                  {n === courant && ouvert ? <Sailboat className="size-5" /> : ouvert ? n : <Lock className="size-4" />}
+                <span className="pt-escale-medaille" aria-hidden="true" data-ouvre={(ouverture?.vers === n && ouverture.etape === "cadenas") || undefined} data-dore={(ouverture?.vers === n && ouverture.etape === "dore") || undefined}>
+                  {ouverture?.vers === n && ouverture.etape === "cadenas" ? (
+                    <Lock className="size-4" />
+                  ) : ouverture?.vers === n && ouverture.etape === "voile" ? null : n === courant && ouvert ? (
+                    <Sailboat className="size-5" />
+                  ) : ouvert ? (
+                    n
+                  ) : (
+                    <Lock className="size-4" />
+                  )}
                 </span>
                 <span className="pt-escale-corps">
                   <span className="pt-escale-grade">
@@ -134,7 +217,8 @@ export function Categorie({ id, onRetour, lancer }: { id: CategorieId; onRetour:
             </li>
           );
         })}
-      </ol>
+        </ol>
+      </div>
       <div className="pt-epreuve" data-ouverte={faits >= NB_NIVEAUX || undefined}>
         <Crown className="pt-epreuve-icone" aria-hidden="true" />
         <div>

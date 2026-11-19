@@ -7,11 +7,12 @@ import { pluieDeLettres } from "@/lib/langues/feux";
 import { NOM_CONTINENT } from "@/lib/monde/atlas";
 import { cabinet, estCabinet, formesNom } from "@/lib/monde/cabinets";
 import { PAYS } from "@/lib/monde/donnees";
-import { battreRecordDe, gagnerDucats, useMonde } from "@/lib/monde/progression";
+import { battreRecordDe, gagnerDucats, noterJournal, useMonde } from "@/lib/monde/progression";
 import { normaliser } from "@/lib/monde/texte";
 import type { ContinentId } from "@/lib/monde/types";
 import { Globe, type Teinte, type Vue } from "./Globe";
 import type { Lancement } from "./Partie";
+import { jouer, ressentir } from "./sons";
 
 /*
  * « Nomme-les tous » : tous les pays d'un continent (ou du monde), tous les départements,
@@ -70,7 +71,7 @@ export function NommeLesTous({ lancement, onFermer, onRejouer }: { lancement: La
   const monde = useMonde();
   const cle = lancement.liste ?? "monde";
   const liste = useMemo(() => lireListe(cle), [cle]);
-  const duree = liste ? Math.min(900, Math.max(120, liste.entrees.length * 7)) * 1000 : 0;
+  const duree = liste ? Math.min(900, Math.max(120, liste.entrees.length * 7)) * 1000 * (monde.profil.plusDeTemps ? 2 : 1) : 0;
   const [phase, setPhase] = useState<"intro" | "jeu" | "fin">("intro");
   const [trouves, setTrouves] = useState<string[]>([]);
   const [saisie, setSaisie] = useState("");
@@ -89,6 +90,7 @@ export function NommeLesTous({ lancement, onFermer, onRejouer }: { lancement: La
     return m;
   }, [liste]);
 
+  const debutJeu = useRef(0);
   const terminer = useCallback(
     (n: number) => {
       setPhase("fin");
@@ -97,8 +99,10 @@ export function NommeLesTous({ lancement, onFermer, onRejouer }: { lancement: La
       setRecord(battu);
       if (n > 0) gagnerDucats(n);
       if (battu && !mouvementReduit()) setTimeout(() => pluieDeLettres(document.querySelector(".pt-fin-titre"), "ambre", "Record"), 300);
+      noterJournal({ s: "nomme", n: liste?.titre ?? "Nomme-les tous", b: n, q: liste?.entrees.length ?? null, x: 0, d: debutJeu.current ? (Date.now() - debutJeu.current) / 1000 : 0 });
+      ressentir(battu ? "record" : "niveau");
     },
-    [cle],
+    [cle, liste],
   );
 
   // Le temps qui passe.
@@ -139,6 +143,7 @@ export function NommeLesTous({ lancement, onFermer, onRejouer }: { lancement: La
     setDernier(id);
     const nom = liste?.entrees.find((e) => e.id === id)?.nom ?? "";
     setAnnonce(`${nom} : trouvé. ${suite.length} sur ${liste?.entrees.length}.`);
+    jouer("trouve");
     if (liste && suite.length === liste.entrees.length) terminer(suite.length);
   };
 
@@ -188,6 +193,7 @@ export function NommeLesTous({ lancement, onFermer, onRejouer }: { lancement: La
             className="bouton bouton-principal pt-intro-go"
             autoFocus
             onClick={() => {
+              debutJeu.current = Date.now();
               setFin(Date.now() + duree);
               setReste(duree);
               setPhase("jeu");

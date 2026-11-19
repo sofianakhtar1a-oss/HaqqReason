@@ -4,6 +4,8 @@ import { ArrowRight, Check, Flame, Hourglass, Lightbulb, LocateFixed, Minus, Plu
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { eclat, pluieDeLettres } from "@/lib/langues/feux";
+import { jouer, ressentir } from "./sons";
+import { BoutonConcentration } from "./Reglages";
 import { formatPopulation, formatSuperficie, motCapitale, NOM_CONTINENT, PAR_CODE, pays } from "@/lib/monde/atlas";
 import { CATEGORIES, type CategorieId, TYPES, type TypeQuestion, typesDe } from "@/lib/monde/categories";
 import { compteMonde, envoyerReponse } from "@/lib/monde/compte-client";
@@ -11,7 +13,7 @@ import { deriver, hasard, melanger, nouvelleGraine } from "@/lib/monde/hasard";
 import { COEURS, grade, NB_NIVEAUX, ordreDe } from "@/lib/monde/niveaux";
 import { baseDe, gainDe, type Joker, JOKERS } from "@/lib/monde/points";
 import { useRecits } from "@/lib/monde/recits-client";
-import { aReviserAvant, battreRecord, battreRecordDe, type Bilan, depenser, ducats, erreursRecentes, finirNiveau, gagnerDucats, noterErreur, noterReponse, oublierPartie, partieSauvee, revisionsDues, sauverPartie, useMonde } from "@/lib/monde/progression";
+import { aReviserAvant, battreRecord, battreRecordDe, type Bilan, depenser, ducats, erreursRecentes, finirNiveau, gagnerDucats, noterErreur, noterJournal, noterReponse, oublierPartie, partieSauvee, profilActuel, revisionsDues, sauverPartie, useMonde } from "@/lib/monde/progression";
 import { categorieDe, consigne, fabriquer, juger, partieDeNiveau, type Question, questionMelangee, questionSur } from "@/lib/monde/quiz";
 import type { Jugement } from "@/lib/monde/texte";
 import type { CabinetId, ContinentId, MethodeCabinet } from "@/lib/monde/types";
@@ -22,7 +24,7 @@ import { dire, taire } from "@/lib/monde/voix";
 import { BoutonVoix, Chrono, Coeurs, Ducats, Etoiles } from "./communs";
 import { Drapeau, MiniContinent, Silhouette } from "./figures";
 import { bonneReponseAutre, Classement, Coloriage, ContenuOptionAutre, gereInvite, InviteAutre, presqueAutre, Puzzle } from "./formes";
-import { Globe, type GlobeRef } from "./Globe";
+import { Globe, type GlobeRef, type Teinte } from "./Globe";
 
 /*
  * Une partie, en plein écran : une question à la fois, trois cœurs, un chrono qui se vide,
@@ -70,11 +72,12 @@ const enPlus = (q: Question) => {
   return r === "ecrit" ? 10_000 : r === "clic" || r === "placer" ? 6_000 : r === "coloriage" || r === "classer" || r === "puzzle" ? 15_000 : 0;
 };
 
-function dureeQuestion(l: Lancement, q: Question, rythme: "lent" | "normal" | "rapide"): number | null {
+function dureeQuestion(l: Lancement, q: Question, rythme: "lent" | "normal" | "rapide", plusDeTemps = false): number | null {
   if (l.sorte === "revision" || l.sorte === "eclair" || l.sorte === "erreurs" || l.sorte === "chrono") return null;
+  // Le défi du jour garde le même temps pour tous (son classement en dépend).
   if (l.sorte === "defi") return DUREE_DEFI;
   const base = l.sorte === "survie" || l.sorte === "marathon" ? 10_000 : l.sorte === "tour" ? 15_000 : (l.niveau ?? 8) <= 5 ? 20_000 : (l.niveau ?? 8) <= 10 ? 15_000 : 12_000;
-  return Math.round((base + enPlus(q)) * (rythme === "lent" ? 1.5 : rythme === "rapide" ? 0.7 : 1));
+  return Math.round((base + enPlus(q)) * (rythme === "lent" ? 1.5 : rythme === "rapide" ? 0.7 : 1) * (plusDeTemps ? 2 : 1));
 }
 
 /** L'étoile de vitesse : en moyenne, six secondes par choix (plus pour écrire ou situer). */
@@ -210,6 +213,10 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
   const [vitesse, setVitesse] = useState<{ ms: number; vise: number } | null>(null);
   const debutQuestion = useRef(0);
   const temps = useRef({ ms: 0, vise: 0 });
+  // Pour le journal de bord : l'XP gagnée, l'heure du départ, le nombre de questions.
+  const xpTotal = useRef(reprise?.xp ?? 0);
+  const debutJeu = useRef(0);
+  const totalQuestions = useRef<number | null>(null);
   const [choix, setChoix] = useState<string | null>(null);
   const [rates, setRates] = useState<string[]>([]);
   const [jugement, setJugement] = useState<Jugement | null>(null);
@@ -229,9 +236,12 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
 
   const q = questions[index] as Question | undefined;
   const def = q ? TYPES[q.type] : null;
-  const duree = q ? dureeQuestion(lancement, q, monde.profil.rythme) : null;
+  const duree = q ? dureeQuestion(lancement, q, monde.profil.rythme, monde.profil.plusDeTemps) : null;
   const avecChrono = Boolean(duree && (monde.profil.chrono || lancement.sorte === "defi") && !glace);
   const total = sansFin ? null : questions.length;
+  useEffect(() => {
+    totalQuestions.current = total;
+  }, [total]);
 
   /* ---------- La fin ---------- */
   const terminer = useCallback(
@@ -240,7 +250,14 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
       oublierPartie();
       const enLigne = compteMonde().connecte === true && compteMonde().enLigne !== false;
       const recordEnLigne = (mode: "eclair" | "survie" | "marathon", score: number) => {
-        if (enLigne && score > 0) void fetch("/api/monde/records", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ mode, score }) }).catch(() => undefined);
+        // Au temps doublé, le record reste sur l'appareil : le classement en ligne compare à temps égal.
+        if (enLigne && score > 0 && !profilActuel().plusDeTemps) void fetch("/api/monde/records", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ mode, score }) }).catch(() => undefined);
+      };
+      let etoilesNiveau: number | undefined;
+      let estRecord = false;
+      const garderRecord = (x: boolean) => {
+        estRecord = x;
+        setRecord(x);
       };
       if (lancement.sorte === "niveau" && lancement.categorie && lancement.niveau) {
         const reussi = r.coeurs > 0;
@@ -248,23 +265,24 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
         const rapide = temps.current.ms <= temps.current.vise;
         setVitesse({ ...temps.current });
         const b = finirNiveau(lancement.categorie, lancement.niveau, { bonnes: r.bonnes, fautes: r.fautes, reussi, rapide });
+        etoilesNiveau = b.etoiles;
         setBilan(b);
         if (reussi && !mouvementReduit()) setTimeout(() => pluieDeLettres(document.querySelector(".pt-fin-titre"), b.etoiles === 3 ? "aurore" : "ambre", grade(lancement.niveau!).nom), 380);
       } else if (lancement.sorte === "eclair" || lancement.sorte === "survie") {
-        setRecord(battreRecord(lancement.sorte, r.bonnes));
+        garderRecord(battreRecord(lancement.sorte, r.bonnes));
         recordEnLigne(lancement.sorte, r.bonnes);
       } else if (lancement.sorte === "marathon") {
-        setRecord(battreRecordDe("marathon", r.bonnes));
+        garderRecord(battreRecordDe("marathon", r.bonnes));
         recordEnLigne("marathon", r.bonnes);
       } else if (lancement.sorte === "chrono" && lancement.continent) {
-        setRecord(battreRecordDe(`chrono:${lancement.continent}`, r.bonnes));
+        garderRecord(battreRecordDe(`chrono:${lancement.continent}`, r.bonnes));
       } else if (lancement.sorte === "epreuve" && lancement.categorie && r.coeurs > 0) {
-        setRecord(battreRecordDe(`epreuve:${lancement.categorie}`, r.bonnes));
+        garderRecord(battreRecordDe(`epreuve:${lancement.categorie}`, r.bonnes));
         gagnerDucats(100);
       } else if (lancement.sorte === "theme" && lancement.theme && r.coeurs > 0) {
-        setRecord(battreRecordDe(`theme:${lancement.theme}`, r.bonnes));
+        garderRecord(battreRecordDe(`theme:${lancement.theme}`, r.bonnes));
       } else if (lancement.sorte === "examen") {
-        setRecord(battreRecordDe("examen", r.bonnes));
+        garderRecord(battreRecordDe("examen", r.bonnes));
       } else if (lancement.sorte === "defi" && lancement.defi && lancement.cleDefi) {
         // Le défi : gardé sur l'appareil (une seule tentative), jugé et classé par le serveur.
         const resultats = r.resultats ?? [];
@@ -280,6 +298,10 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
             .catch(() => undefined);
         }
       }
+      // Le journal de bord, et la musique de la fin.
+      noterJournal({ s: lancement.sorte, n: lancement.titre, b: r.bonnes, q: totalQuestions.current, x: xpTotal.current, d: debutJeu.current ? (Date.now() - debutJeu.current) / 1000 : 0, e: etoilesNiveau });
+      const naufrage = r.coeurs <= 0 && ["niveau", "theme", "epreuve", "tour", "filtre"].includes(lancement.sorte);
+      ressentir(estRecord ? "record" : naufrage ? "defaite" : "niveau");
     },
     [lancement],
   );
@@ -329,17 +351,19 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
         setSeconde(false);
         setRates((r) => [...r, reponse]);
         if (TYPES[q.type].reponse === "ecrit") setEcrit("");
+        ressentir("faux");
         return;
       }
       setChoix(reponse);
       setJugement(j);
       setPhase("reponse");
+      ressentir(j === "juste" ? "juste" : j === "presque" ? "presque" : "faux");
       const base = baseDe(q.type, q.nb);
       const gain = gainDe(j, base);
       const famille = categorieDe(q.type);
       noterReponse(q.cible, famille, juste, gain);
       // Le temps de réponse (pour l'étoile de vitesse) ; le défi garde ses réponses pour le serveur.
-      temps.current = { ms: temps.current.ms + Math.min(Date.now() - debutQuestion.current, duree ?? 60_000), vise: temps.current.vise + tempsVise(q) };
+      temps.current = { ms: temps.current.ms + Math.min(Date.now() - debutQuestion.current, duree ?? 60_000), vise: temps.current.vise + tempsVise(q) * (profilActuel().plusDeTemps ? 2 : 1) };
       if (lancement.sorte === "defi") setReponsesDefi((l) => [...l, reponse]);
       else envoyerReponse({ type: q.type, cible: q.cible, reponse, nb: q.nb });
       // Le combo : cinq bonnes réponses d'affilée valent un ducat de plus, dix en valent deux.
@@ -350,6 +374,7 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
       if (juste) {
         setBonnes((b) => b + 1);
         setXp((x) => x + gain);
+        xpTotal.current += gain;
         if (ou && !mouvementReduit()) eclat(ou.x, ou.y, j === "juste" ? "ambre" : "azur", 1.1);
       } else {
         setFautes((f) => f + 1);
@@ -477,12 +502,13 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
   /* ---------- Démarrer ---------- */
   const commencer = () => {
     if (!questions.length) return;
-    if (lancement.sorte === "eclair" || lancement.sorte === "chrono") setFinEclair(Date.now() + DUREE_ECLAIR);
+    debutJeu.current = Date.now();
+    if (lancement.sorte === "eclair" || lancement.sorte === "chrono") setFinEclair(Date.now() + DUREE_ECLAIR * (monde.profil.plusDeTemps ? 2 : 1));
     setPhase("question");
   };
 
   const contenu = (
-    <div className="pt pt-partie" data-accent="safran" data-globe={monde.profil.globe} data-phase={phase} role="dialog" aria-modal="true" aria-label={lancement.titre}>
+    <div className="pt pt-partie" data-accent="safran" data-globe={monde.profil.globe} data-phase={phase} data-concentration={monde.profil.concentration || undefined} role="dialog" aria-modal="true" aria-label={lancement.titre}>
       <div className="pt-partie-fond" aria-hidden="true" />
       <header className="pt-partie-tete">
         <button type="button" className="pt-icone" onClick={onFermer} aria-label="Quitter la partie">
@@ -512,6 +538,7 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
             {serie >= 5 && <span className="pt-combo-x">×{serie >= 10 ? 3 : 2}</span>}
           </span>
         )}
+        <BoutonConcentration />
         <BoutonVoix />
         <Coeurs restants={coeurs} total={coeursMax} brise={brise} />
         {avecChrono && phase === "question" && q && <Chrono key={index} duree={duree!} cle={`${index}`} pause={sablier} />}
@@ -986,15 +1013,34 @@ function Fin({
             : "Terminé";
   const sousTitre = niveau ? (reussi ? (bilan?.premiereFois && g ? g.devise : `${bonnes} bonnes réponses sur ${total}`) : "Les cœurs sont épuisés. Les pays manqués t'attendent ci-dessous : revois-les, puis reprends la mer.") : `${bonnes} bonne${bonnes > 1 ? "s" : ""} réponse${bonnes > 1 ? "s" : ""}${total ? ` sur ${total}` : ""}`;
   const suivantPossible = niveau && reussi && (lancement.niveau ?? 15) < NB_NIVEAUX;
-  const uniques = [...new Map(rates.map((r) => [r.q.cible, r])).values()];
+  const uniques = useMemo(() => [...new Map(rates.map((r) => [r.q.cible, r])).values()], [rates]);
   // Une anecdote sur un pays de la partie : de préférence un pays manqué, pour qu'il reste en mémoire.
   const candidats = [...new Set([...uniques.map((u) => u.q.cible), ...croises])].filter((c) => recits?.[c]?.anecdote);
   const savais = candidats.length ? candidats[uniques.length && recits?.[uniques[0].q.cible]?.anecdote ? 0 : Math.floor(tirage * candidats.length)] : null;
+  // Les pays de la partie, sur un petit globe : trouvés ou à revoir.
+  const teintesFin = useMemo(() => {
+    const t: Record<string, Teinte> = {};
+    for (const c of croises) if (PAR_CODE.has(c)) t[c] = "juste";
+    for (const u of uniques) if (PAR_CODE.has(u.q.cible)) t[u.q.cible] = "faux";
+    return t;
+  }, [croises, uniques]);
+  const centreFin = useMemo(() => centreDe(Object.keys(teintesFin)), [teintesFin]);
+  const nouveauGrade = niveau && reussi && bilan?.premiereFois && g && lancement.categorie ? g : null;
   return (
     <div className="pt-fin" data-reussi={reussi || undefined}>
       {niveau && <Etoiles n={bilan?.etoiles ?? 0} taille="grande" animees />}
       <h2 className="pt-fin-titre">{titre}</h2>
       <p className="pt-fin-sous">{sousTitre}</p>
+      {nouveauGrade && <Brevet g={nouveauGrade} categorie={CATEGORIES[lancement.categorie!].nom} />}
+      {Object.keys(teintesFin).length > 0 && (
+        <figure className="pt-fin-globe">
+          <Globe tourne teintes={teintesFin} vueInitiale={{ lon: centreFin[0], lat: centreFin[1], zoom: 1 }} libelle={`Les ${Object.keys(teintesFin).length} pays de la partie sur le globe : ceux que tu as trouvés et ceux à revoir.`} />
+          <figcaption>
+            <span data-teinte="juste">{Object.values(teintesFin).filter((x) => x === "juste").length} trouvés</span>
+            {uniques.length > 0 && <span data-teinte="faux">{Object.values(teintesFin).filter((x) => x === "faux").length} à revoir</span>}
+          </figcaption>
+        </figure>
+      )}
       <dl className="pt-fin-chiffres">
         <div>
           <dt>Bonnes réponses</dt>
@@ -1149,6 +1195,63 @@ function Certificat({ note }: { note: number }) {
         <Printer className="size-4" aria-hidden="true" />
         Imprimer le certificat
       </button>
+    </section>
+  );
+}
+
+/** Le centre (longitude, latitude) d'une poignée de pays : la moyenne des directions, pour viser juste par-delà l'antiméridien. */
+function centreDe(codes: string[]): [number, number] {
+  let x = 0;
+  let y = 0;
+  let z = 0;
+  for (const c of codes) {
+    const p = PAR_CODE.get(c);
+    if (!p) continue;
+    const [la, lo] = [(p.latlng[0] * Math.PI) / 180, (p.latlng[1] * Math.PI) / 180];
+    x += Math.cos(la) * Math.cos(lo);
+    y += Math.cos(la) * Math.sin(lo);
+    z += Math.sin(la);
+  }
+  if (!x && !y && !z) return [12, 20];
+  const lon = (Math.atan2(y, x) * 180) / Math.PI;
+  const lat = (Math.atan2(z, Math.hypot(x, y)) * 180) / Math.PI;
+  return [lon, Math.max(-60, Math.min(60, lat))];
+}
+
+/**
+ * Le brevet d'un nouveau grade : un parchemin qui se déroule, le nom du grade à l'encre dorée,
+ * et le sceau de cire qui vient le frapper.
+ */
+function Brevet({ g, categorie }: { g: { n: number; nom: string; devise: string }; categorie: string }) {
+  const [date] = useState(() => new Intl.DateTimeFormat("fr-FR", { dateStyle: "long" }).format(new Date()));
+  useEffect(() => {
+    const reduit = mouvementReduit();
+    const a = setTimeout(() => jouer("parchemin"), reduit ? 0 : 200);
+    const b = setTimeout(() => ressentir("sceau"), reduit ? 150 : 1450);
+    return () => {
+      clearTimeout(a);
+      clearTimeout(b);
+    };
+  }, []);
+  return (
+    <section className="pt-brevet" aria-label={`Brevet de ${g.nom}`}>
+      <div className="pt-brevet-parchemin">
+        <span className="pt-brevet-rouleau" data-haut="" aria-hidden="true" />
+        <div className="pt-brevet-corps">
+          <div className="pt-brevet-texte">
+            <p className="pt-brevet-sur">Le Portulan décerne le brevet de</p>
+            <p className="pt-brevet-titre">{g.nom}</p>
+            <p className="pt-brevet-devise">« {g.devise} »</p>
+            <p className="pt-brevet-pied">
+              Niveau {g.n} de la route « {categorie} », le {date}
+            </p>
+          </div>
+        </div>
+        <span className="pt-brevet-rouleau" data-bas="" aria-hidden="true" />
+        <span className="pt-brevet-sceau" aria-hidden="true">
+          <RoseSceau />
+        </span>
+      </div>
     </section>
   );
 }
