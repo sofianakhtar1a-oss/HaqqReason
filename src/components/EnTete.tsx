@@ -4,6 +4,7 @@ import { BoutonCompte } from "./compte/BoutonCompte";
 import { LienOutil } from "./LienOutil";
 import { Logo } from "./Logo";
 import { BoutonRecherche } from "./PaletteRecherche";
+import { SortieEspaces } from "./SortieEspaces";
 
 const OUTILS = [
   { href: "/debat", libelle: "Débat express", Icone: MessagesSquare, cache: "lien-outil-etroit" },
@@ -45,6 +46,7 @@ export function EnTete({
         {children}
         <BoutonTheme />
         {compte && <BoutonCompte />}
+        {compte && <SortieEspaces />}
       </div>
     </header>
   );

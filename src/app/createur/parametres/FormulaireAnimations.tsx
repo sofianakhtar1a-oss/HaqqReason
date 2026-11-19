@@ -28,7 +28,7 @@ export function FormulaireAnimations({ reglages }: { reglages: Reglages }) {
         </select>
         <p className="reglage-aide">
           La porte de lumière est le passage animé qui s&apos;affiche quand on entre dans un espace&nbsp;: un disque de lumière s&apos;ouvre, l&apos;astrolabe se trace
-          avec le nom de l&apos;espace (par exemple «&nbsp;Apprendre les langues — Le Truchement&nbsp;»), puis s&apos;efface. Cette durée va du clic jusqu&apos;à ce que la
+          avec le nom de l&apos;espace (par exemple «&nbsp;Apprendre les langues — Le Truchement&nbsp;»), puis s&apos;efface. Elle est la même dans tous les espaces&nbsp;: Le Calame, L&apos;Alambic, Le Truchement, la bibliothèque, l&apos;Islam authentique, l&apos;accueil et le mode créateur, à l&apos;entrée comme à la sortie. Cette durée va du clic jusqu&apos;à ce que la
           page apparaisse&nbsp;; toute l&apos;animation s&apos;y ajuste. «&nbsp;Désactivée&nbsp;» ouvre les espaces sans animation. Le réglage vaut pour tous les visiteurs, au
           prochain chargement d&apos;une page. Si l&apos;appareil d&apos;un visiteur demande de réduire les animations, la porte reste toujours éteinte pour lui.
         </p>
