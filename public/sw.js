@@ -2,13 +2,17 @@
  * HaqqReason — service hors-ligne.
  * - Les pages publiques consultées sont gardées : elles restent lisibles sans connexion.
  * - Les favoris sont mis de côté dans un espace à part, jamais effacé automatiquement.
+ * - Le Portulan, quand le joueur le demande (Mes réglages → Hors ligne), est gardé tout entier
+ *   dans un espace à lui : sa page, son code, ses drapeaux et ses cartes. Il se joue sans réseau.
  * - L'espace créateur, les API et les fichiers ne sont JAMAIS mis en cache.
  * - Une page qui renvoie vers la connexion n'est jamais gardée à la place de la page demandée.
  */
-const VERSION = "hr-v7-0";
+const VERSION = "hr-v8-0";
 const PAGES = `${VERSION}-pages`;
 const STATIQUE = `${VERSION}-statique`;
 const GARDE = "hr-favoris";
+const PORTULAN = "hr-portulan";
+const MAX_PORTULAN = 900;
 const MAX_PAGES = 150;
 const PRECHARGE = ["/hors-ligne", "/favoris", "/icon.svg", "/icones/icone-192.png"];
 
@@ -25,13 +29,15 @@ self.addEventListener("activate", (e) => {
   e.waitUntil(
     caches
       .keys()
-      .then((cles) => Promise.all(cles.filter((c) => ![PAGES, STATIQUE, GARDE].includes(c)).map((c) => caches.delete(c))))
+      .then((cles) => Promise.all(cles.filter((c) => ![PAGES, STATIQUE, GARDE, PORTULAN].includes(c)).map((c) => caches.delete(c))))
       .then(() => self.clients.claim()),
   );
 });
 
 const INTERDIT = /^\/(createur|api|fichiers|_next\/image|_next\/data)(\/|$)/;
-const PUBLIC = /^\/($|explorer|islam|debat|graphe|favoris|recherche|hors-ligne|langues)/;
+const PUBLIC = /^\/($|explorer|islam|debat|graphe|favoris|recherche|hors-ligne|langues|monde)/;
+/* Les fichiers du Portulan : drapeaux, emblèmes, cartes. Ils ne changent jamais d'adresse sans changer de nom. */
+const FICHIER_PORTULAN = /^\/monde\/.+\.(json|svg|webp|png)$/;
 
 async function limiter(nom, max) {
   const cache = await caches.open(nom);
@@ -69,7 +75,10 @@ async function pageDepuisReseau(requete) {
   } catch {
     clearTimeout(delai);
     const url = requete.url.split("#")[0];
-    const garde = (await caches.match(url, { cacheName: GARDE })) || (await caches.match(url, { cacheName: PAGES, ignoreSearch: false }));
+    const garde =
+      (await caches.match(url, { cacheName: GARDE })) ||
+      (await caches.match(url, { cacheName: PAGES, ignoreSearch: false })) ||
+      (new URL(url).pathname === "/monde" ? await caches.match("/monde", { cacheName: PORTULAN }) : undefined);
     if (garde) return garde;
     return (await caches.match("/hors-ligne")) || Response.error();
   }
@@ -95,8 +104,72 @@ self.addEventListener("fetch", (e) => {
     return;
   }
 
+  if (FICHIER_PORTULAN.test(url.pathname)) {
+    e.respondWith(
+      caches.match(requete).then(
+        (trouve) =>
+          trouve ||
+          fetch(requete).then((r) => {
+            if (r.ok && !r.redirected) caches.open(PORTULAN).then((c) => c.put(requete, r.clone()));
+            return r;
+          }),
+      ),
+    );
+    return;
+  }
+
   if (requete.mode === "navigate" && PUBLIC.test(url.pathname) && !url.searchParams.has("_rsc")) {
     e.respondWith(pageDepuisReseau(requete));
+  }
+});
+
+/* ---------- Le Portulan hors ligne ---------- */
+
+/** Garde la page du Portulan et tout ce qu'elle charge ; dit l'avancement au joueur. */
+async function garderPortulan(urls, port) {
+  const cache = await caches.open(PORTULAN);
+  const dire = (m) => {
+    try {
+      port && port.postMessage(m);
+    } catch {}
+  };
+  // La page d'abord : sans compte connecté, elle renvoie vers la connexion, et rien n'est gardé.
+  const page = await fetch("/monde", { credentials: "same-origin" }).catch(() => null);
+  if (!page || !page.ok || page.redirected) return dire({ fin: true, erreur: page && page.redirected ? "connexion" : "reseau" });
+  const html = await page.clone().text();
+  await cache.put("/monde", page);
+  const ressources = [...new Set([...html.matchAll(/(?:src|href)="(\/_next\/static\/[^"]+)"/g)].map((m) => m[1]))];
+  const tout = [...new Set([...ressources, ...urls])];
+  let fait = 0;
+  let rates = 0;
+  for (let i = 0; i < tout.length; i += 8) {
+    await Promise.all(
+      tout.slice(i, i + 8).map(async (u) => {
+        try {
+          if (!(await cache.match(u))) {
+            const r = await fetch(u, { credentials: "same-origin" });
+            if (r.ok && !r.redirected) await cache.put(u, r);
+            else rates++;
+          }
+        } catch {
+          rates++;
+        }
+        fait++;
+      }),
+    );
+    dire({ fait, total: tout.length });
+  }
+  await limiter(PORTULAN, MAX_PORTULAN);
+  dire({ fin: true, fait, total: tout.length, rates });
+}
+
+self.addEventListener("message", (e) => {
+  const d = e.data || {};
+  if (d.type === "portulan-garder" && Array.isArray(d.urls)) {
+    const propres = d.urls.filter((u) => typeof u === "string" && /^\/(monde\/|_next\/static\/|icones\/portulan)/.test(u)).slice(0, 1500);
+    e.waitUntil(garderPortulan(propres, e.ports && e.ports[0]));
+  } else if (d.type === "portulan-oublier") {
+    e.waitUntil(caches.delete(PORTULAN));
   }
 });
 

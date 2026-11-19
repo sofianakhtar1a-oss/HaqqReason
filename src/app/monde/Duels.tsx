@@ -27,6 +27,7 @@ import { ContenuOption, Invite } from "./Partie";
 import { Salon } from "./Salon";
 import { jouer, ressentir } from "./sons";
 import { enLangue, localeDe } from "./traduction";
+import { adresseInvitation } from "@/lib/monde/pages-publiques";
 
 /*
  * Les duels : dix questions, les mêmes pour les deux joueurs, chacun à son rythme.
@@ -771,7 +772,7 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
     };
   }, []);
 
-  const lien = duel ? `${window.location.origin}/monde#duels/duel=${duel.code}` : "";
+  const lien = duel ? `${window.location.origin}${adresseInvitation("duel", duel.code)}` : "";
   const partager = async () => {
     try {
       if (navigator.share) await navigator.share({ title: enLangue("Un duel au Portulan"), text: enLangue(`Je te défie au Portulan ! Code : ${duel?.code}`), url: lien });

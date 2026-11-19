@@ -12,6 +12,7 @@ import { useTextes } from "@/lib/modules/textes-client";
 import { FichePays } from "./FichePays";
 import { Drapeau } from "./figures";
 import { PortesHistoire } from "./Histoire";
+import { populationDe, useEdition } from "@/lib/monde/edition-client";
 
 /*
  * L'atlas : tous les pays et territoires, leurs drapeaux, leurs capitales, leurs chiffres.
@@ -23,6 +24,7 @@ const collation = new Intl.Collator("fr", { sensitivity: "base" });
 
 export function Atlas({ ouvert, onOuvrir, aller }: { ouvert: string | null; onOuvrir: (code: string | null) => void; aller: (hash: string) => void }) {
   const t = useTextes("monde");
+  const edition = useEdition();
   const [requete, setRequete] = useState("");
   const [continent, setContinent] = useState<ContinentId | "tous">("tous");
   const [statut, setStatut] = useState<"tous" | "etats" | "territoires">("tous");
@@ -94,7 +96,7 @@ export function Atlas({ ouvert, onOuvrir, aller }: { ouvert: string | null; onOu
               <Drapeau code={p.code} />
               <span className="pt-atlas-nom">{p.nom}</span>
               <span className="pt-atlas-capitale">{p.capitale ? `${motCapitale(p)} : ${p.capitale}` : "—"}</span>
-              <span className="pt-atlas-chiffre">{tri === "superficie" ? formatSuperficie(p.superficie) : formatPopulation(p.population)}</span>
+              <span className="pt-atlas-chiffre">{tri === "superficie" ? formatSuperficie(p.superficie) : formatPopulation(populationDe(p, edition).n)}</span>
             </button>
           </li>
         ))}

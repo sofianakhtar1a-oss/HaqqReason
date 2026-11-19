@@ -35,6 +35,8 @@ import "@fontsource/opendyslexic/700.css";
 import "@fontsource/opendyslexic/400-italic.css";
 // L'arabe de l'interface : la police ne se charge que pour des lettres arabes.
 import "@fontsource-variable/noto-sans-arabic";
+import { ecouterInstallation, rafraichirHorsLigne } from "./HorsLigne";
+import { MesureVitesse } from "./MesureVitesse";
 
 /*
  * Le Portulan : apprendre la géographie. Cinq onglets, adressés par le fragment de l'URL
@@ -158,6 +160,9 @@ export function Portulan() {
 
   // L'interface en anglais ou en arabe (de droite à gauche).
   useTraduction(p.langue);
+  // L'invitation à installer Le Portulan (elle n'arrive qu'une fois), et la copie hors ligne remise à jour.
+  useEffect(() => ecouterInstallation(), []);
+  useEffect(() => rafraichirHorsLigne(), []);
 
   // La touche « ? » : l'aide du clavier.
   const [aide, fermerAide] = useAideClavier();
@@ -213,6 +218,7 @@ export function Portulan() {
   return (
     <div className="pt pt-espace" data-accent="safran" data-onglet={route.onglet} data-globe={monde.profil.globe} style={{ "--pt-bateau": article(monde.profil.bateau)?.couleur ?? "var(--sa)" } as React.CSSProperties}>
       <Lueur />
+      <MesureVitesse />
       <header className="pt-tete sans-impression">
         <Logo />
         <span className="pt-tete-titre" aria-hidden="true">

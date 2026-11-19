@@ -13,6 +13,8 @@ import { useRecits } from "@/lib/monde/recits-client";
 import type { Pays } from "@/lib/monde/types";
 import { dire, type LangueVoix, voixPour } from "@/lib/monde/voix";
 import { Drapeau } from "./figures";
+import { populationDe, useEdition } from "@/lib/monde/edition-client";
+import { Signaler } from "./Signaler";
 
 /*
  * La fiche d'un pays : l'essentiel d'abord (capitale, chiffres, voisins), puis ce qu'elle raconte
@@ -131,6 +133,7 @@ export function FichePays({ code, onChoisir, onFermer, compacte = false }: { cod
   const p = paysDe(code);
   const monde = useMonde();
   const recits = useRecits();
+  const edition = useEdition();
   const r = recits?.[code];
   const souverain = p.souverain ? PAR_CODE.get(p.souverain) : undefined;
   const densite = formatDensite(p.population, p.superficie);
@@ -208,8 +211,10 @@ export function FichePays({ code, onChoisir, onFermer, compacte = false }: { cod
         <div>
           <dt>Population</dt>
           <dd>
-            {formatPopulation(p.population)}
-            {(p.anneePopulation || p.notePopulation) && <small>{[p.anneePopulation ? `en ${p.anneePopulation}` : "", p.notePopulation ?? ""].filter(Boolean).join(" · ")}</small>}
+            {formatPopulation(populationDe(p, edition).n)}
+            {(populationDe(p, edition).annee || populationDe(p, edition).note) && (
+              <small>{[populationDe(p, edition).annee ? `en ${populationDe(p, edition).annee}` : "", populationDe(p, edition).note ?? ""].filter(Boolean).join(" · ")}</small>
+            )}
           </dd>
         </div>
         <div>
@@ -438,6 +443,10 @@ export function FichePays({ code, onChoisir, onFermer, compacte = false }: { cod
           })}
         </div>
       )}
+
+      <div className="pt-fiche-signaler">
+        <Signaler code={p.code} sujet="fiche" />
+      </div>
     </article>
   );
 }

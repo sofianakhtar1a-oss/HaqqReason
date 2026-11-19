@@ -10,7 +10,13 @@ type Props = { searchParams: Promise<Record<string, string | string[] | undefine
 
 export async function generateMetadata(): Promise<Metadata> {
   const { resolu } = await chargerModule("monde");
-  return { title: resolu.textes["meta.titre"], description: remplir(resolu.textes["meta.description"], { pays: NOMBRE_PAYS }) };
+  return {
+    title: resolu.textes["meta.titre"],
+    description: remplir(resolu.textes["meta.description"], { pays: NOMBRE_PAYS }),
+    // Le Portulan s'installe à part, avec sa propre icône (voir /portulan.webmanifest).
+    manifest: "/portulan.webmanifest",
+    icons: { apple: "/icones/portulan-apple-touch.png" },
+  };
 }
 
 export default async function PageMonde({ searchParams }: Props) {

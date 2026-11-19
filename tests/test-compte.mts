@@ -24,6 +24,9 @@ for (const mauvais of ["https://pirate.example", "//pirate.example", "/\\pirate.
 }
 ok("les espaces personnels demandent un compte", ["/utilisateur", "/ecrire", "/alambic", "/langues", "/favoris", "/compte"].every(jeton.espacePersonnel));
 ok("la bibliothèque et l'accueil restent ouverts", ["/", "/explorer", "/explorer/article/x", "/islam", "/recherche", "/contribuer", "/ecrire-autre", "/languesx"].every((c) => !jeton.espacePersonnel(c)));
+ok("le Portulan demande un compte", ["/monde", "/monde/", "/monde/autre"].every(jeton.espacePersonnel));
+ok("les pages publiques du Portulan restent ouvertes", ["/monde/pays", "/monde/pays/maroc", "/monde/rejoindre/duel/ABC234", "/monde/drapeaux/a1b2c3.svg", "/monde/carte-814537a917.json"].every((c) => !jeton.espacePersonnel(c)));
+ok("rien d'autre ne s'ouvre sous le Portulan", ["/monde/paysage", "/monde/pays-bas/../../x", "/monde/rejoindreX", "/monde/a/b.json"].every(jeton.espacePersonnel));
 
 // ---------- La connexion Google est active sans aucun code secret ----------
 {

@@ -12,6 +12,7 @@ import { useTextes } from "@/lib/modules/textes-client";
 import { EtoileFavori } from "./Apprendre";
 import { Drapeau, Silhouette } from "./figures";
 import { Globe } from "./Globe";
+import { populationDe, useEdition } from "@/lib/monde/edition-client";
 
 /*
  * Les fiches mémoire : le recto (un drapeau, un nom ou une silhouette), on se répond dans sa tête,
@@ -130,6 +131,7 @@ export function Fiches() {
 
 /** Une séance de fiches : elle repart de zéro quand le paquet change (clé). */
 function Seance({ codes, recto, onRecommencer }: { codes: string[]; recto: Recto; onRecommencer: () => void }) {
+  const edition = useEdition();
   const [file, setFile] = useState<string[]>(codes);
   const [retournee, setRetournee] = useState(false);
   const [sus, setSus] = useState(0);
@@ -224,7 +226,7 @@ function Seance({ codes, recto, onRecommencer }: { codes: string[]; recto: Recto
               <b>Monnaie</b> {p.monnaies[0]?.nom ?? "—"}
             </span>
             <span>
-              <b>Population</b> {formatPopulation(p.population)}
+              <b>Population</b> {formatPopulation(populationDe(p, edition).n)}
             </span>
             <span>
               <b>Superficie</b> {formatSuperficie(p.superficie)}

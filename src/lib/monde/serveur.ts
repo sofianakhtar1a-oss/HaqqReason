@@ -7,6 +7,7 @@ import type { ModeJeu } from "./categories";
 import { evaluer, type ReponseEnvoyee } from "./points";
 import { cleDefi, questionsDefi, type SorteDefi } from "./defis";
 import { DUREES_DUEL, NOMBRES_DUEL, PAUSE_REPONSE, pointsReponse, type Reaction, tempsArbitre } from "./duels";
+import { noterManques } from "./atelier";
 import { notifier } from "./notifications";
 import { juger, questionsDuel } from "./quiz";
 
@@ -37,6 +38,9 @@ export async function enregistrerReponses(compte: string, reponses: ReponseEnvoy
     if (error || !data) return { erreur: "indisponible" };
     const r = data as EtatXp | { erreur: string };
     if ("erreur" in r) return { erreur: r.erreur === "trop_vite" ? "trop_vite" : r.erreur === "illisible" ? "illisible" : "indisponible" };
+    // Les questions manquées, pour l'atelier du créateur (des totaux, aucun nom) : après la réponse.
+    const pays = reponses.flatMap((x, i) => (x.cabinet ? [] : [{ type: x.type, cible: x.cible, juste: jugees[i].resultat === "juste" }]));
+    after(() => noterManques(pays).catch(() => undefined));
     return { gain: Number(r.gain) || 0, xp: Number(r.xp) || 0, aujourdhui: Number(r.aujourdhui) || 0, trophees: Number(r.trophees) || 0, plafond: Boolean(r.plafond) };
   } catch {
     return { erreur: "indisponible" };

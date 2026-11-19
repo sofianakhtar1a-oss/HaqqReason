@@ -43,3 +43,6 @@ next-env.d.ts
 
 # Copié automatiquement après npm install (scripts/copier-ressources.mjs)
 /public/vendor
+
+# Les captures comparées du Portulan (références et rapport) restent sur la machine qui les fait.
+/tests/captures/

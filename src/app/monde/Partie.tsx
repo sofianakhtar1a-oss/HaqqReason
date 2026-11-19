@@ -26,6 +26,7 @@ import { BoutonVoix, Chrono, Coeurs, Ducats, Etoiles } from "./communs";
 import { Drapeau, MiniContinent, Silhouette } from "./figures";
 import { bonneReponseAutre, Classement, Coloriage, ContenuOptionAutre, gereInvite, InviteAutre, presqueAutre, Puzzle } from "./formes";
 import { Globe, type GlobeRef, type Teinte } from "./Globe";
+import { Signaler } from "./Signaler";
 
 /*
  * Une partie, en plein écran : une question à la fois, trois cœurs, un chrono qui se vide,
@@ -869,6 +870,7 @@ function Retour({ q, jugement, choix, sansCoeur, gain, onSuivant, auto }: { q: Q
           <span className="pt-retour-fiche">{p.capitale ? `${motCapitale(p)} : ${p.capitale}, en ${NOM_CONTINENT[p.continent]}.` : `En ${NOM_CONTINENT[p.continent]}.`}</span>
         )}
         {jugement === "faux" && <Piege q={q} choix={choix} />}
+        <Signaler code={q.cible} sujet="question" contexte={{ type: q.type, question: consigne(q), reponse: choix ?? "" }} compact />
       </div>
       {!auto && (
         <button type="button" className="bouton bouton-principal" onClick={onSuivant} autoFocus>

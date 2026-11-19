@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import type { Classe, MesClasses } from "@/lib/monde/social";
 import { useConfirmer } from "./Confirmer";
 import { enLangue } from "./traduction";
+import { adresseInvitation } from "@/lib/monde/pages-publiques";
 
 /*
  * Les classes : l'enseignant crée sa classe et donne un code ; ses élèves la rejoignent ; il suit
@@ -85,7 +86,7 @@ export function PageClasses({ onRetour }: { onRetour: () => void }) {
     }
   }, []);
 
-  const lien = ouverte?.code ? `${typeof window !== "undefined" ? window.location.origin : ""}/monde#duels/classe=${ouverte.code}` : "";
+  const lien = ouverte?.code ? `${typeof window !== "undefined" ? window.location.origin : ""}${adresseInvitation("classe", ouverte.code)}` : "";
   const partager = async () => {
     if (!ouverte?.code) return;
     try {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BarChart3, Eye, BookOpen, BookOpenText, Compass, Feather, FlaskConical, Languages, LayoutTemplate, Lightbulb, ShieldAlert, ShieldCheck, SlidersHorizontal, Smartphone, Wrench } from "lucide-react";
+import { ArrowRight, BarChart3, BookOpen, BookOpenText, Compass, Eye, Feather, FlaskConical, Languages, LayoutTemplate, Lightbulb, ShieldAlert, ShieldCheck, SlidersHorizontal, Smartphone, Wrench } from "lucide-react";
 import { listerAppareils } from "@/lib/appareils";
 import { etatContributions } from "@/lib/contributions/donnees";
 import { resumeModules } from "@/lib/modules/donnees";
@@ -137,6 +137,13 @@ export default async function EspaceCreateur() {
           <Link href="/createur/statistiques" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
             <BarChart3 className="size-6 text-or" aria-hidden="true" />
             Statistiques de lecture
+          </Link>
+          <Link href="/createur/portulan" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
+            <Compass className="size-6 text-or" aria-hidden="true" />
+            <span>
+              L&apos;atelier du Portulan
+              <span className="block text-sm font-normal text-encre-douce">Signalements, questions manquées, fiches, pays du jour</span>
+            </span>
           </Link>
           <Link href="/createur/outils" className="verre flex items-center gap-4 rounded-3xl p-5 font-semibold hover:border-or">
             <Wrench className="size-6 text-or" aria-hidden="true" />

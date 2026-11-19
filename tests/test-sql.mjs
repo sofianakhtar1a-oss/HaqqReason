@@ -18,7 +18,7 @@ await db.exec(`create role anon nologin; create role authenticated nologin; crea
 // Ce que Supabase fournit d'office : le schéma « extensions » et la table des espaces de stockage.
 await db.exec(`create schema extensions; grant usage on schema extensions to anon, authenticated, service_role;
   create schema storage; create table storage.buckets (id text primary key, name text, public boolean, file_size_limit bigint, allowed_mime_types text[]);`);
-for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql", "010_contributions.sql", "011_espaces.sql", "011_espaces.sql", "012_islam_un_bloc.sql", "012_islam_un_bloc.sql", "013_messagerie.sql", "013_messagerie.sql", "014_comptes.sql", "014_comptes.sql", "015_classement.sql", "015_classement.sql", "016_assistant.sql", "016_assistant.sql", "017_portulan.sql", "017_portulan.sql", "018_portulan_social.sql", "018_portulan_social.sql"]) {
+for (const fichier of ["001_socle.sql", "002_structure.sql", "003_editeur.sql", "004_fichiers.sql", "005_recherche.sql", "006_innovations.sql", "007_sources_navigation.sql", "008_reglages.sql", "009_recherche_sens.sql", "010_contributions.sql", "011_espaces.sql", "011_espaces.sql", "012_islam_un_bloc.sql", "012_islam_un_bloc.sql", "013_messagerie.sql", "013_messagerie.sql", "014_comptes.sql", "014_comptes.sql", "015_classement.sql", "015_classement.sql", "016_assistant.sql", "016_assistant.sql", "017_portulan.sql", "017_portulan.sql", "018_portulan_social.sql", "018_portulan_social.sql", "019_portulan_createur.sql", "019_portulan_createur.sql"]) {
   await db.exec(readFileSync(new URL(`../supabase/migrations/${fichier}`, import.meta.url), "utf8"));
 }
 
@@ -906,6 +906,26 @@ ok("013 : la conversation disparaît avec la contribution", Number((await db.que
   }
   await db.exec(`delete from utilisateurs where email like 'so_@exemple.fr'`);
   ok("018 : supprimer les comptes efface tout", Number((await db.query(`select (select count(*) from portulan_amis) + (select count(*) from portulan_salons) + (select count(*) from portulan_classes) + (select count(*) from portulan_records) + (select count(*) from portulan_defis) as n`)).rows[0].n) === 0);
+}
+
+// 019 : Le Portulan — signalements, questions manquées, vitesse réelle
+{
+  await db.exec(`select portulan_manques_noter('[{"type":"drapeau-pays","cible":"td","juste":false},{"type":"drapeau-pays","cible":"td","juste":true},{"type":"drapeau-pays","cible":"ro","juste":false},{"type":"x y","cible":"td","juste":false}]'::jsonb)`);
+  await db.exec(`select portulan_manques_noter('[{"type":"drapeau-pays","cible":"td","juste":false}]'::jsonb)`);
+  await db.exec(`select portulan_manques_noter('"pas une liste"'::jsonb)`);
+  const m = (await db.query(`select type, cible, vues, fautes from portulan_manques order by cible`)).rows;
+  ok("019 : les vues et les fautes s'additionnent", m.length === 2 && m[1].cible === "td" && m[1].vues === 3 && m[1].fautes === 2 && m[0].fautes === 1);
+  await db.exec(`select portulan_vitesse_noter('LCP', 1240); select portulan_vitesse_noter('LCP', 1260); select portulan_vitesse_noter('CLS', 0.05); select portulan_vitesse_noter('INP', 99999); select portulan_vitesse_noter('XYZ', 3); select portulan_vitesse_noter('LCP', -1)`);
+  const v = (await db.query(`select mesure, seau, n from portulan_vitesse order by mesure, seau`)).rows;
+  ok("019 : la vitesse se range en seaux", JSON.stringify(v) === JSON.stringify([{ mesure: "CLS", seau: 5, n: 1 }, { mesure: "INP", seau: 400, n: 1 }, { mesure: "LCP", seau: 24, n: 1 }, { mesure: "LCP", seau: 25, n: 1 }]));
+  await db.exec(`insert into portulan_signalements (code, sujet, texte) values ('ma', 'fiche', 'La devise est fausse.')`);
+  let mauvais = false;
+  try { await db.exec(`insert into portulan_signalements (code, sujet, texte) values ('MA!', 'fiche', 'x')`); } catch { mauvais = true; }
+  ok("019 : un signalement mal formé est refusé", mauvais);
+  await refuse("019 : anon ne lit pas les signalements", "set role anon; select * from portulan_signalements;");
+  await db.exec("reset role");
+  await refuse("019 : authenticated ne lit pas les questions manquées", "set role authenticated; select * from portulan_manques;");
+  await db.exec("reset role");
 }
 
 {

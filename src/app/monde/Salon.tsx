@@ -17,6 +17,7 @@ import { imageResultat, partagerImage } from "./partage";
 import { ContenuOption, Invite } from "./Partie";
 import { jouer, ressentir } from "./sons";
 import { enLangue } from "./traduction";
+import { adresseInvitation } from "@/lib/monde/pages-publiques";
 
 /*
  * Un salon : de trois à huit joueurs sur les mêmes questions. L'hôte lance la partie quand tout le
@@ -175,7 +176,7 @@ export function Salon({ initial, onFermer }: { initial: EtatSalon; onFermer: () 
     onFermer();
   };
 
-  const lien = `${window.location.origin}/monde#duels/salon=${salon.code}`;
+  const lien = `${window.location.origin}${adresseInvitation("salon", salon.code)}`;
   const partager = async () => {
     try {
       if (navigator.share) await navigator.share({ title: enLangue("Un salon au Portulan"), text: enLangue(`Rejoins mon salon au Portulan ! Code : ${salon.code}`), url: lien });

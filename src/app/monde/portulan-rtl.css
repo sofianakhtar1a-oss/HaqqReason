@@ -418,6 +418,12 @@ html[dir="rtl"].pt-dyslexie .pt {
 html[dir="rtl"][lang="ar"] .pt {
   font-family: var(--font-sans);
 }
+html[dir="rtl"] .pt-nouveau {
+  padding: 0.35rem 0.6rem 0.35rem 0.85rem;
+}
+html[dir="rtl"] .pt-hors-ligne-barre span {
+  background: linear-gradient(-90deg, var(--pt-or), #ffa65c);
+}
 @media print {
 html[dir="rtl"] .pt-muette-liste {
   padding-right: 8mm;

@@ -2,7 +2,8 @@
 
 import { ArrowRight, Award, Building2, Clock, Coins, Earth, Flag, Flame, GraduationCap, Hash, Infinity as Infini, Landmark, Languages, Map as IconeCarte, Mountain, RotateCcw, Scale, Settings2, Shuffle, Timer, Users, Waypoints, Zap } from "lucide-react";
 import { useMemo, useState } from "react";
-import { formatNombre, formatPopulation, formatSuperficie, jourDeParis, motCapitale, NOM_CONTINENT, paysDuJour } from "@/lib/monde/atlas";
+import { formatNombre, formatPopulation, formatSuperficie, jourDeParis, motCapitale, NOM_CONTINENT, PAR_CODE, paysDuJour } from "@/lib/monde/atlas";
+import { populationDe, useEdition } from "@/lib/monde/edition-client";
 import { CATEGORIES, CATEGORIES_CLASSIQUES, CATEGORIES_NOUVELLES, type CategorieId, IDS_CATEGORIES } from "@/lib/monde/categories";
 import { NOMBRE_PAYS } from "@/lib/monde/chiffres";
 import { useCompteMonde } from "@/lib/monde/compte-client";
@@ -22,6 +23,7 @@ import { Drapeau } from "./figures";
 import { Globe, type Teinte } from "./Globe";
 import { CONTINENTS_A_NOMMER, paysANommer, titreContinent } from "./NommeLesTous";
 import { type Lancement, useLancer } from "./Partie";
+import { QuoiDeNeuf } from "./Nouveautes";
 import { JournalDeBord, PageReglages, Statistiques } from "./Reglages";
 
 export const ICONES_CATEGORIES: Record<CategorieId, typeof Flag> = {
@@ -97,7 +99,10 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
   const connus = paysConnus(monde);
   const dues = revisionsDues(monde).length;
   const jour = jourDeParis();
-  const duJour = paysDuJour(jour);
+  const edition = useEdition();
+  // Le pays du jour : celui que le créateur a choisi pour cette date, sinon le tirage du jour.
+  const choisi = edition?.jour[jour];
+  const duJour = choisi && PAR_CODE.has(choisi.code) ? PAR_CODE.get(choisi.code)! : paysDuJour(jour);
 
   // Les pays maîtrisés se dorent sur le globe.
   const teintes = useMemo(() => {
@@ -128,6 +133,7 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
     <div className="pt-hub">
       <section className="pt-heros">
         <div className="pt-heros-texte">
+          <QuoiDeNeuf />
           <h2 className="pt-titre">{t("accueil.titre")}</h2>
           <p className="pt-chapo">{t("accueil.chapo", { pays: NOMBRE_PAYS })}</p>
           <dl className="pt-bilan">
@@ -311,11 +317,12 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
               {duJour.capitale ? `${motCapitale(duJour)} : ${duJour.capitale}, en ${NOM_CONTINENT[duJour.continent]}` : `En ${NOM_CONTINENT[duJour.continent]}`}
             </p>
             <ul className="pt-puces">
-              <li>{formatPopulation(duJour.population)}</li>
+              <li>{formatPopulation(populationDe(duJour, edition).n)}</li>
               <li>{formatSuperficie(duJour.superficie)}</li>
               {duJour.monnaies[0] && <li>{duJour.monnaies[0].nom}</li>}
               {duJour.langues.length > 0 && <li>{duJour.langues.slice(0, 3).join(", ")}</li>}
             </ul>
+            {choisi?.anecdote && <p className="pt-jour-anecdote">{choisi.anecdote}</p>}
             <button type="button" className="pt-lien" onClick={() => aller(`carte/${duJour.code}`)}>
               Voir sur le globe
             </button>

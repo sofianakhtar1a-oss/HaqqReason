@@ -1,26 +1,6 @@
 "use client";
 
-import {
-  Accessibility,
-  ArrowLeft,
-  BookMarked,
-  ChartColumn,
-  Download,
-  Eye,
-  Focus,
-  Hourglass,
-  Keyboard,
-  Languages,
-  Music2,
-  NotebookPen,
-  RotateCcw,
-  Settings2,
-  Swords,
-  Timer,
-  Trophy,
-  Upload,
-  X,
-} from "lucide-react";
+import { Accessibility, ArrowLeft, BookMarked, ChartColumn, Download, Eye, FileDown, Focus, Hourglass, Keyboard, Languages, Music2, NotebookPen, RotateCcw, Settings2, Swords, Timer, Trophy, Upload, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { CONTINENTS, formatNombre } from "@/lib/monde/atlas";
@@ -31,6 +11,7 @@ import { ICONES_CATEGORIES } from "./Accueil";
 import { useConfirmer } from "./Confirmer";
 import { jouer } from "./sons";
 import { localeDe } from "./traduction";
+import { CarteHorsLigne } from "./HorsLigne";
 
 /* =====================================================================
    Les réglages : les sons, la lecture, le temps, la langue, les données
@@ -194,6 +175,8 @@ export function PageReglages({ onRetour, aller }: { onRetour: () => void; aller:
           </button>
         </section>
 
+        <CarteHorsLigne />
+
         <section className="pt-reglages-carte pt-reglages-donnees" aria-labelledby="pt-r-donnees">
           <h3 id="pt-r-donnees" className="pt-reglages-titre">
             <BookMarked className="size-5" aria-hidden="true" />
@@ -219,6 +202,13 @@ export function PageReglages({ onRetour, aller }: { onRetour: () => void; aller:
               Importer un fichier
             </button>
             <input ref={fichier} type="file" accept="application/json,.json" className="sr-only" tabIndex={-1} aria-hidden="true" onChange={(e) => void importer(e.target.files?.[0])} />
+          </div>
+          <div className="pt-reglages-actions">
+            {/* Tout ce que le compte a laissé au Portulan, côté serveur : scores, duels, amis, classes… */}
+            <a className="bouton bouton-discret" href="/api/monde/export" download>
+              <FileDown className="size-4" aria-hidden="true" />
+              Exporter tout mon compte
+            </a>
           </div>
           <div className="pt-reglage pt-remise">
             <span className="pt-reglage-texte">

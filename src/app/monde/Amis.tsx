@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import type { Amis } from "@/lib/monde/social";
 import { useConfirmer } from "./Confirmer";
 import { enLangue } from "./traduction";
+import { adresseInvitation } from "@/lib/monde/pages-publiques";
 
 /*
  * Les amis : un code d'ami à donner, les demandes reçues, la liste des amis avec nos duels (gagnés,
@@ -83,7 +84,7 @@ export function PageAmis({ onRetour, onDefier }: { onRetour: () => void; onDefie
     return r;
   };
 
-  const lien = amis?.code ? `${typeof window !== "undefined" ? window.location.origin : ""}/monde#duels/ami=${amis.code}` : "";
+  const lien = amis?.code ? `${typeof window !== "undefined" ? window.location.origin : ""}${adresseInvitation("ami", amis.code)}` : "";
   const partager = async () => {
     if (!amis?.code) return;
     try {

@@ -1,0 +1,334 @@
+/*
+ * Les pages publiques du Portulan : une planche d'atlas par pays.
+ * Le titre en Literata italique, le drapeau encadré d'or, les repères alignés comme dans un
+ * cartouche ; le reste du site garde ses couleurs (thème sombre ou clair).
+ */
+.pp {
+  --pp-serif: "Literata Variable", Georgia, "Times New Roman", serif;
+  --pp-trait-or: color-mix(in srgb, var(--or) 34%, var(--trait));
+  --pp-safran: #ffa65c;
+  flex: 1;
+  width: 100%;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1rem clamp(1.1rem, 4vw, 2rem) 5rem;
+}
+.pp section[id],
+.pp [id] {
+  scroll-margin-top: 5.5rem;
+}
+.pp-ariane {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.9rem;
+  color: var(--encre-douce);
+}
+.pp-ariane a {
+  text-decoration: underline;
+  text-decoration-color: var(--pp-trait-or);
+  text-underline-offset: 3px;
+}
+.pp-ariane a:hover {
+  color: var(--encre);
+  text-decoration-color: var(--or);
+}
+
+/* La tête : la planche du drapeau, puis le nom */
+.pp-tete {
+  display: grid;
+  grid-template-columns: minmax(0, 21rem) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 3.25rem);
+  margin-top: 1.6rem;
+}
+@media (max-width: 46rem) {
+  .pp-tete {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .pp-planche {
+    max-width: 19rem;
+  }
+}
+.pp-planche {
+  margin: 0;
+  padding: 0.65rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--pp-trait-or);
+  background: linear-gradient(155deg, color-mix(in srgb, var(--or) 14%, transparent), transparent 72%);
+  box-shadow: 0 34px 60px -34px rgb(0 0 0 / 0.65);
+}
+.pp-planche img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.45rem;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 0.12);
+}
+.pp-region {
+  color: var(--or);
+  font-weight: 600;
+}
+.pp-statut {
+  color: var(--encre-douce);
+  font-weight: 500;
+}
+.pp-nom {
+  margin-top: 0.25rem;
+  font-family: var(--pp-serif);
+  font-size: clamp(2.7rem, 7.5vw, 4.9rem);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+  overflow-wrap: anywhere;
+}
+.pp-complet {
+  /* Sous le titre, le filet d'or du site : on lui laisse sa place. */
+  margin-top: 1.15rem;
+  font-size: 1.1rem;
+  color: var(--encre-douce);
+}
+.pp-capitale {
+  margin-top: 1.25rem;
+  font-size: 1.3rem;
+}
+.pp-capitale strong {
+  font-weight: 700;
+}
+.pp-devise {
+  margin-top: 0.45rem;
+  font-family: var(--pp-serif);
+  font-size: 1.12rem;
+  font-style: italic;
+  color: var(--encre-douce);
+}
+
+/* Les sections */
+.pp-section {
+  margin-top: 3.2rem;
+}
+.pp-sous-titre {
+  font-family: var(--pp-serif);
+  font-size: clamp(1.5rem, 3.4vw, 1.9rem);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.15;
+}
+.pp-sous-titre small {
+  margin-inline-start: 0.4rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--encre-douce);
+}
+
+/* Le cartouche des repères : un terme, une valeur, un filet */
+.pp-faits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  column-gap: 2.2rem;
+  margin-top: 1rem;
+  border-top: 1px solid var(--pp-trait-or);
+}
+.pp-fait {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, 38%) minmax(0, 1fr);
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--trait);
+}
+.pp-fait dt {
+  color: var(--encre-douce);
+  font-size: 0.92rem;
+  padding-top: 0.08rem;
+}
+.pp-fait dd {
+  font-weight: 600;
+  line-height: 1.4;
+}
+.pp-fait small {
+  font-weight: 500;
+  color: var(--encre-douce);
+}
+.pp-fait a {
+  text-decoration: underline;
+  text-decoration-color: var(--pp-trait-or);
+  text-underline-offset: 3px;
+}
+
+/* Le récit */
+.pp-recit p {
+  max-width: 68ch;
+  margin-top: 0.75rem;
+  font-family: var(--pp-serif);
+  font-size: 1.14rem;
+  line-height: 1.72;
+}
+.pp-anecdote {
+  margin-top: 2.6rem;
+  padding: 1.25rem 1.5rem;
+  max-width: 72ch;
+  border-inline-start: 3px solid var(--or);
+  border-start-end-radius: 1rem;
+  border-end-end-radius: 1rem;
+  background: color-mix(in srgb, var(--or) 9%, transparent);
+}
+.pp-anecdote-titre {
+  font-family: var(--pp-serif);
+  font-style: italic;
+  font-weight: 700;
+  color: var(--or);
+}
+.pp-anecdote p:last-child {
+  margin-top: 0.35rem;
+  font-family: var(--pp-serif);
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+
+/* Des liens vers d'autres pays, chacun avec son drapeau */
+.pp-liens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.pp-liens a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.42rem 0.85rem 0.42rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  font-weight: 600;
+  transition: border-color 0.2s;
+}
+.pp-liens a:hover,
+.pp-liens a:focus-visible {
+  border-color: var(--or);
+}
+.pp-liens img {
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px var(--trait);
+}
+
+/* L'invitation à jouer */
+.pp-jouer {
+  margin-top: 3.6rem;
+  padding: clamp(1.5rem, 4vw, 2.4rem);
+  border-radius: 1.5rem;
+  border: 1px solid var(--pp-trait-or);
+  background: radial-gradient(circle at 92% 0%, color-mix(in srgb, var(--pp-safran) 22%, transparent), transparent 62%), var(--surface);
+}
+.pp-jouer h2 {
+  font-family: var(--pp-serif);
+  font-size: clamp(1.6rem, 4vw, 2.25rem);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.pp-jouer p {
+  max-width: 60ch;
+  margin-top: 0.7rem;
+  color: var(--encre-douce);
+}
+.pp-jouer .bouton {
+  margin-top: 1.3rem;
+}
+.pp-sources {
+  max-width: 78ch;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  color: var(--encre-douce);
+}
+
+/* L'index : tous les pays, continent par continent */
+.pp-index-tete {
+  margin-top: 1.4rem;
+}
+.pp-chapo {
+  max-width: 62ch;
+  margin-top: 1.4rem;
+  font-size: 1.15rem;
+  color: var(--encre-douce);
+}
+.pp-continents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+}
+.pp-continents a {
+  padding: 0.42rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  font-weight: 600;
+}
+.pp-continents a:hover,
+.pp-continents a:focus-visible {
+  border-color: var(--or);
+}
+.pp-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  gap: 0.15rem 1rem;
+  margin-top: 1rem;
+}
+.pp-grille a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.5rem 0.45rem;
+  border-radius: 0.8rem;
+}
+.pp-grille a:hover,
+.pp-grille a:focus-visible {
+  background: var(--surface);
+}
+.pp-grille img {
+  flex: none;
+  width: 42px;
+  height: 28px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px var(--trait);
+}
+.pp-grille span {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+.pp-grille small {
+  overflow: hidden;
+  font-size: 0.82rem;
+  color: var(--encre-douce);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+@media print {
+  .pp-jouer,
+  .pp-liens img {
+    display: none;
+  }
+}
+
+/* Une invitation partagée */
+.pp-invitation-code {
+  font-size: 1.15rem;
+}
+.pp-invitation-code strong {
+  margin-inline-start: 0.35rem;
+  font-size: 1.9rem;
+  letter-spacing: 0.18em;
+  color: var(--pp-safran);
+}
+.pp-invitation .pp-jouer {
+  margin-top: 2rem;
+}
