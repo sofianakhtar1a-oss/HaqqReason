@@ -16,6 +16,7 @@ import { categorieDe, consigne, juger, partieDeNiveau, type Question, questionMe
 import type { Jugement } from "@/lib/monde/texte";
 import { Chrono, Coeurs, Ducats, Etoiles } from "./communs";
 import { Drapeau, MiniContinent, Silhouette } from "./figures";
+import { bonneReponseAutre, Classement, Coloriage, ContenuOptionAutre, gereInvite, InviteAutre, presqueAutre } from "./formes";
 import { Globe, type GlobeRef } from "./Globe";
 
 /*
@@ -44,7 +45,7 @@ function dureeQuestion(l: Lancement, q: Question): number | null {
   if (l.sorte === "revision" || l.sorte === "eclair") return null;
   const r = TYPES[q.type].reponse;
   const base = l.sorte === "survie" ? 10_000 : l.sorte === "tour" ? 15_000 : (l.niveau ?? 1) <= 5 ? 20_000 : (l.niveau ?? 1) <= 10 ? 15_000 : 12_000;
-  return base + (r === "ecrit" ? 10_000 : r === "clic" ? 6_000 : 0);
+  return base + (r === "ecrit" ? 10_000 : r === "clic" || r === "placer" ? 6_000 : r === "coloriage" || r === "classer" ? 15_000 : 0);
 }
 
 /** Le niveau de difficulté des questions des modes rapides : un peu au-delà de ce que l'on a déjà fait. */
@@ -320,7 +321,7 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
             {consigne(q)}
           </p>
           <div className="pt-invite" data-sorte={def.invite}>
-            <Invite q={q} globe={globe} phase={phase} toucheGlobe={toucheGlobe} onToucher={(code) => {
+            <Invite q={q} globe={globe} phase={phase} toucheGlobe={toucheGlobe} choix={choix} onRepondre={(r) => repondre(r)} onToucher={(code) => {
               if (phase !== "question" || !code) return;
               setToucheGlobe(code);
               repondre(code);
@@ -354,6 +355,12 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
             </form>
           ) : def.reponse === "clic" ? (
             <p className="pt-astuce">Fais tourner le globe et touche le pays. Pince ou utilise la molette pour zoomer.</p>
+          ) : def.reponse === "placer" ? (
+            <p className="pt-astuce">Fais tourner le globe, zoome, puis touche l&apos;endroit où tu places la capitale. À moins de 300 km, c&apos;est gagné.</p>
+          ) : def.reponse === "coloriage" ? (
+            <Coloriage key={q.cible} q={q} phase={phase} onRepondre={(r) => repondre(r)} />
+          ) : def.reponse === "classer" ? (
+            <Classement key={q.cible} q={q} phase={phase} onRepondre={(r) => repondre(r)} />
           ) : (
             <div ref={zoneChoix} className="pt-choix" data-sorte={def.reponse} data-nb={q.options.length}>
               {q.options.map((o, i) => {
@@ -434,9 +441,26 @@ function ChronoGlobal({ fin }: { fin: number }) {
 }
 
 /* ---------- Ce qu'on montre ---------- */
-export function Invite({ q, globe, phase, toucheGlobe, onToucher }: { q: Question; globe: React.RefObject<GlobeRef | null>; phase: string; toucheGlobe: string | null; onToucher: (code: string | null) => void }) {
+export function Invite({
+  q,
+  globe,
+  phase,
+  toucheGlobe,
+  onToucher,
+  choix = null,
+  onRepondre = () => undefined,
+}: {
+  q: Question;
+  globe: React.RefObject<GlobeRef | null>;
+  phase: string;
+  toucheGlobe: string | null;
+  onToucher: (code: string | null) => void;
+  choix?: string | null;
+  onRepondre?: (reponse: string) => void;
+}) {
   const def = TYPES[q.type];
   const p = pays(q.cible);
+  if (gereInvite(q)) return <InviteAutre q={q} globe={globe} phase={phase} choix={choix} onRepondre={onRepondre} />;
   if (def.reponse === "clic") {
     const teintes: Record<string, "juste" | "faux"> = {};
     if (phase === "reponse") {
@@ -445,9 +469,13 @@ export function Invite({ q, globe, phase, toucheGlobe, onToucher }: { q: Questio
     }
     return (
       <div className="pt-invite-globe" data-large="">
-        <p className="pt-nom-grand" lang="fr">
-          {p.nom}
-        </p>
+        {def.invite === "drapeau" ? (
+          <Drapeau code={q.cible} nomme={false} className="pt-invite-globe-drapeau" />
+        ) : (
+          <p className="pt-nom-grand" lang="fr">
+            {def.invite === "capitale" ? p.capitale : p.nom}
+          </p>
+        )}
         <Globe ref={globe} interactif onToucher={onToucher} teintes={teintes} reperes="tous" cible={phase === "reponse" ? q.cible : null} libelle="Globe : touche le pays demandé" vueInitiale={{ lon: 15, lat: 25, zoom: 1 }} />
       </div>
     );
@@ -488,6 +516,8 @@ export function Invite({ q, globe, phase, toucheGlobe, onToucher }: { q: Questio
       );
     case "silhouette":
       return <Silhouette code={q.cible} />;
+    case "silhouette-tournee":
+      return <Silhouette code={q.cible} rotation={q.rotation} miroir={q.miroir} />;
     case "carte":
       return <InviteCarte q={q} globe={globe} />;
   }
@@ -519,6 +549,8 @@ function InviteCarte({ q, globe }: { q: Question; globe: React.RefObject<GlobeRe
 
 export function ContenuOption({ q, o }: { q: Question; o: Question["options"][number] }) {
   const r = TYPES[q.type].reponse;
+  const autre = ContenuOptionAutre({ q, o });
+  if (autre) return autre;
   if (r === "drapeau" && o.code) return <Drapeau code={o.code} nomme={false} />;
   if (r === "continent" && o.continent)
     return (
@@ -543,7 +575,8 @@ function Retour({ q, jugement, choix, sansCoeur, gain, onSuivant, auto }: { q: Q
   const def = TYPES[q.type];
   const temps = choix === "__temps__";
   const bonneReponse =
-    def.reponse === "capitale" || (def.reponse === "ecrit" && def.ecrit === "capitale")
+    bonneReponseAutre(q, choix) ??
+    (def.reponse === "capitale" || (def.reponse === "ecrit" && def.ecrit === "capitale")
       ? `${p.capitale} (${p.nom})`
       : def.reponse === "continent"
         ? `${NOM_CONTINENT[p.continent]} (${p.nom})`
@@ -551,14 +584,17 @@ function Retour({ q, jugement, choix, sansCoeur, gain, onSuivant, auto }: { q: Q
           ? `${p.monnaies[0].nom} (${p.nom})`
           : q.type === "continent-pays"
             ? `${p.nom}, en ${NOM_CONTINENT[p.continent]}`
-            : p.nom;
+            : p.nom);
   return (
     <div className="pt-retour" data-jugement={jugement ?? "faux"} role="status">
       <div className="pt-retour-texte">
         {jugement === "juste" ? (
-          <strong>Exact !{gain ? ` +${gain} XP` : ""}</strong>
+          <strong>
+            Exact !{q.type === "capitale-placer" ? ` ${bonneReponseAutre(q, choix)}.` : ""}
+            {gain ? ` +${gain} XP` : ""}
+          </strong>
         ) : jugement === "presque" ? (
-          <strong>Presque ! On écrit « {def.ecrit === "capitale" ? p.capitale : p.nom} »</strong>
+          <strong>{presqueAutre(q, choix) ? `Presque ! ${presqueAutre(q, choix)}` : <>Presque ! On écrit « {def.ecrit === "capitale" ? p.capitale : p.nom} »</>}</strong>
         ) : (
           <strong>{temps ? "Temps écoulé." : "Ce n'est pas ça."} C&apos;était : {bonneReponse}</strong>
         )}

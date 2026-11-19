@@ -19,8 +19,12 @@ import { type Carte, type Forme, useCarte } from "./carte";
  *   • Les couleurs viennent des variables CSS (--pt-*) : le thème clair ou sombre s'applique seul.
  */
 
-export type Teinte = "or" | "juste" | "faux" | "choix" | "doux";
+export type Teinte = "or" | "juste" | "faux" | "choix" | "doux" | "cible";
 export type Vue = { lon: number; lat: number; zoom: number };
+/** Un point posé sur le globe (une capitale, une réponse, La Mecque…), avec son nom s'il en a un. */
+export type Marque = { latlng: [number, number]; teinte: Teinte; taille?: number; libelle?: string };
+/** Une route tracée sur le globe : une suite de points [latitude, longitude]. */
+export type Trait = { points: [number, number][]; teinte: Teinte; tirets?: boolean; epaisseur?: number };
 
 export type GlobeProps = {
   mode?: "globe" | "plan";
@@ -44,6 +48,11 @@ export type GlobeProps = {
   libelle: string;
   /** Prévenu quand le globe a fini de viser la cible. */
   onArrive?: () => void;
+  /** Des points et des routes à dessiner par-dessus la carte. */
+  marques?: Marque[];
+  traits?: Trait[];
+  /** Toucher un point du globe (au lieu d'un pays) : [latitude, longitude], ou null dans le vide. */
+  onPoint?: (latlng: [number, number] | null) => void;
 };
 
 export type GlobeRef = { viser: (code: string) => void; vue: () => Vue; zoomer: (facteur: number) => void; recentrer: () => void; voler: (vers: Vue) => void };
@@ -91,7 +100,7 @@ function zoomPour(forme: Forme | undefined, recul = 1): number {
 }
 
 export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
-  { mode = "globe", cible = null, recul = 1, teintes, tourne = false, interactif = false, glissable = false, onToucher, reperes = "cible", vueInitiale, className, libelle, onArrive },
+  { mode = "globe", cible = null, recul = 1, teintes, tourne = false, interactif = false, glissable = false, onToucher, reperes = "cible", vueInitiale, className, libelle, onArrive, marques, traits, onPoint },
   ref,
 ) {
   const { ultra, leger, detail, erreur } = useCarte();
@@ -113,8 +122,8 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
   const relance = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const couleurs = useRef<Couleurs | null>(null);
   const taille = useRef({ l: 300, h: 300, dpr: 1 });
-  const props = useRef({ mode, cible, teintes, tourne, reperes, onArrive });
-  props.current = { mode, cible, teintes, tourne, reperes, onArrive };
+  const props = useRef({ mode, cible, teintes, tourne, reperes, onArrive, marques, traits, onPoint });
+  props.current = { mode, cible, teintes, tourne, reperes, onArrive, marques, traits, onPoint };
   const cartes = useRef<{ ultra: Carte | null; leger: Carte | null; detail: Carte | null }>({ ultra, leger, detail });
   cartes.current = { ultra, leger, detail };
 
@@ -318,6 +327,44 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
       if (!anneauPose) delete anneau.current.dataset.visible;
     }
 
+    // Les routes (grand cercle) et les points posés.
+    for (const tr of props.current.traits ?? []) {
+      ctx.beginPath();
+      chemin({ type: "LineString", coordinates: tr.points.map(([la, lo]) => [lo, la]) });
+      ctx.strokeStyle = c[tr.teinte];
+      ctx.lineWidth = tr.epaisseur ?? 2;
+      ctx.lineCap = "round";
+      ctx.setLineDash(tr.tirets ? [6, 5] : []);
+      ctx.stroke();
+      ctx.setLineDash([]);
+    }
+    for (const m of props.current.marques ?? []) {
+      const ll: [number, number] = [m.latlng[1], m.latlng[0]];
+      if (!plan && geoDistance([v.lon, v.lat], ll) > Math.PI / 2 - 0.01) continue;
+      const p = proj(ll);
+      if (!p) continue;
+      const rayon = m.taille ?? 5.5;
+      ctx.beginPath();
+      ctx.arc(p[0], p[1], rayon + 3, 0, Math.PI * 2);
+      ctx.fillStyle = "rgba(0,0,0,0.28)";
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(p[0], p[1], rayon, 0, Math.PI * 2);
+      ctx.fillStyle = c[m.teinte];
+      ctx.fill();
+      ctx.lineWidth = 1.6;
+      ctx.strokeStyle = c.cibleTrait;
+      ctx.stroke();
+      if (m.libelle) {
+        ctx.font = "italic 600 13px 'Literata Variable', Georgia, serif";
+        ctx.lineWidth = 3.5;
+        ctx.strokeStyle = c.merBord;
+        ctx.strokeText(m.libelle, p[0] + rayon + 5, p[1] - rayon - 2);
+        ctx.fillStyle = c.cibleTrait;
+        ctx.fillText(m.libelle, p[0] + rayon + 5, p[1] - rayon - 2);
+      }
+    }
+
     // Le bord du globe : un filet d'or.
     if (!plan) {
       ctx.beginPath();
@@ -498,7 +545,7 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
   // La carte arrive, les teintes changent : redessiner. La cible change : voler vers elle.
   useEffect(() => {
     demander();
-  }, [ultra, leger, detail, teintes, mode, demander]);
+  }, [ultra, leger, detail, teintes, mode, marques, traits, demander]);
   // La cible change, ou la carte détaillée arrive (le centre exact du pays est alors connu) : voler vers elle.
   useEffect(() => {
     if (cible && (ultra || leger || detail)) viser(cible);
@@ -558,9 +605,14 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
   };
 
   const toucher = (x: number, y: number) => {
+    const proj = projection(vue.current);
+    if (props.current.onPoint) {
+      const point = proj.invert?.([x, y]);
+      const visible = point && Number.isFinite(point[0]) && (props.current.mode === "plan" || geoDistance([vue.current.lon, vue.current.lat], point) <= Math.PI / 2);
+      return props.current.onPoint(visible ? [point[1], point[0]] : null);
+    }
     if (!onToucher) return;
     const carte = cartes.current.detail ?? cartes.current.leger ?? cartes.current.ultra;
-    const proj = projection(vue.current);
     // D'abord les repères (les tout petits pays), à 14 px près.
     let meilleur: { code: string; d: number } | null = null;
     for (const rp of REPERES) {

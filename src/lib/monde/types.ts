@@ -83,6 +83,10 @@ export type Pays = {
   /** Le point culminant [nom, altitude en m] et le plus long fleuve [nom, longueur en km]. */
   sommet?: [string, number];
   fleuve?: [string, number];
+  /** Les couleurs du drapeau (src/lib/monde/couleurs.ts), de la plus présente à la moins présente (5 % de la surface au moins). */
+  couleurs?: string[];
+  /** Un drapeau simple qu'on peut colorier : la couleur de chaque forme, dans l'ordre du dessin. */
+  coloriage?: string[];
 };
 
 /** Ce que raconte la fiche d'un pays (src/lib/monde/recits.ts, chargé à la demande). */

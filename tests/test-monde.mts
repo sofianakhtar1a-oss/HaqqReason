@@ -1,7 +1,7 @@
 // Le Portulan : les données du monde, les niveaux, les questions et leur arbitrage.
 // Lancer : npm run test:monde
 import { CONTINENTS, PAR_CODE, pays } from "../src/lib/monde/atlas";
-import { CATEGORIES, IDS_CATEGORIES, TOUS_LES_TYPES, TYPES, typesDe } from "../src/lib/monde/categories";
+import { CATEGORIES, CATEGORIES_CLASSIQUES, IDS_CATEGORIES, REPONSES_LIBRES, TOUS_LES_TYPES, TYPES, typesDe } from "../src/lib/monde/categories";
 import { PAYS } from "../src/lib/monde/donnees";
 import { nouvelleGraine } from "../src/lib/monde/hasard";
 import { NB_NIVEAUX, niveauxDe, QUESTIONS_PAR_NIVEAU } from "../src/lib/monde/niveaux";
@@ -80,12 +80,15 @@ for (const c of IDS_CATEGORIES) {
         const def = TYPES[q.type];
         ok(`${q.type} dans ${c}`, def.categorie === c);
         if (q.nb === 0) {
-          ok(`${q.type} sans choix`, def.reponse === "ecrit" || def.reponse === "clic");
+          ok(`${q.type} sans choix`, REPONSES_LIBRES.includes(def.reponse));
+          // La bonne réponse (quand on peut l'écrire d'avance) est jugée juste.
+          if (def.reponse === "coloriage" || def.reponse === "classer") ok(`${q.type} ${q.cible} : la réponse attendue est juste`, juger(q.type, q.cible, q.attendu) === "juste", q.attendu);
+          if (def.reponse === "classer") ok(`${q.type} ${q.cible} : quatre pays à ranger`, q.codes?.length === 4 && q.codes.includes(q.cible) && q.codes.slice().sort().join() === q.attendu.split(",").sort().join());
           continue;
         }
         const ids = q.options.map((o) => o.id);
         ok(`${q.type} ${q.cible} : choix distincts`, new Set(ids).size === ids.length, ids.join(","));
-        ok(`${q.type} ${q.cible} : ${q.nb} choix`, ids.length === 4 || ids.length === 6, String(ids.length));
+        ok(`${q.type} ${q.cible} : ${q.nb} choix`, ids.length === 4 || ids.length === 6 || (ids.length === 2 && (def.reponse === "vraifaux" || q.type === "pays-conduite")), String(ids.length));
         ok(`${q.type} ${q.cible} : la réponse est proposée`, ids.includes(q.attendu));
         // Une seule bonne réponse parmi les choix.
         const justes = q.options.filter((o) => juger(q.type, q.cible, o.id) === "juste");
@@ -110,19 +113,20 @@ for (const t of TOUS_LES_TYPES) {
     ok(`méthode ${t} niveau ${niveau}`, partie.length === QUESTIONS_PAR_NIVEAU && partie.every((q) => q.type === t), String(partie.length));
   }
 }
-ok("méthodes par catégorie", IDS_CATEGORIES.every((c) => typesDe(c).length >= 3));
+ok("méthodes par catégorie", CATEGORIES_CLASSIQUES.every((c) => typesDe(c).length >= 4) && IDS_CATEGORIES.every((c) => typesDe(c).length >= 2));
 
 // Le tour du monde
 for (let i = 0; i < 300; i++) ok("question mélangée", questionMelangee(i * 7919, 15) !== null);
 
 /* ---------- Les duels ---------- */
-for (const mode of [...IDS_CATEGORIES, "melange"] as const) {
+for (const mode of [...CATEGORIES_CLASSIQUES, "melange"] as const) {
   for (let i = 0; i < 25; i++) {
     const graine = nouvelleGraine();
     const q = questionsDuel(graine, mode);
     ok(`duel ${mode} : 10 questions`, q.length === QUESTIONS_PAR_DUEL);
     ok(`duel ${mode} : reproductible`, JSON.stringify(q) === JSON.stringify(questionsDuel(graine, mode)));
     ok(`duel ${mode} : 4 choix, pas d'écrit`, q.every((x) => x.nb === 4));
+    ok(`duel ${mode} : seulement les méthodes d'origine`, q.every((x) => TYPES[x.type].duel !== false));
   }
 }
 
@@ -135,6 +139,26 @@ ok("continent faux", juger("pays-continent", "ru", "afrique") === "faux");
 ok("monnaie juste", juger("pays-monnaie", "fr", "EUR") === "juste");
 ok("monnaie faux", juger("pays-monnaie", "fr", "USD") === "faux");
 ok("réponse inconnue", juger("drapeau-nom", "fr", "zz") === "faux" && juger("drapeau-nom", "zz", "fr") === "faux");
+// Les nouvelles méthodes
+ok("placer : sur Rabat", juger("capitale-placer", "ma", "34.01,-6.83") === "juste");
+ok("placer : à Casablanca (90 km), c'est juste", juger("capitale-placer", "ma", "33.57,-7.59") === "juste");
+ok("placer : à Agadir (480 km), presque", juger("capitale-placer", "ma", "30.42,-9.60") === "presque");
+ok("placer : à Paris, faux", juger("capitale-placer", "ma", "48.85,2.35") === "faux" && juger("capitale-placer", "ma", "x,y") === "faux" && juger("capitale-placer", "ma", "95,0") === "faux");
+ok("vrai ou faux : drapeau", juger("drapeau-vrai-faux", "fr", "vrai:fr") === "juste" && juger("drapeau-vrai-faux", "fr", "faux:fr") === "faux" && juger("drapeau-vrai-faux", "fr", "faux:it") === "juste" && juger("drapeau-vrai-faux", "fr", "vrai:it") === "faux");
+ok("vrai ou faux : la Guyane hisse le drapeau français", juger("drapeau-vrai-faux", "fr", "vrai:gf") === "juste");
+ok("vrai ou faux : capitale", juger("capitale-vrai-faux", "au", "vrai:au") === "juste" && juger("capitale-vrai-faux", "au", "vrai:nz") === "faux" && juger("capitale-vrai-faux", "au", "faux:nz") === "juste" && juger("capitale-vrai-faux", "au", "peut-etre:nz") === "faux");
+ok("couleur qui manque", juger("drapeau-couleur", "fr", "bleu") === "juste" && juger("drapeau-couleur", "fr", "vert") === "faux");
+ok("coloriage", juger("drapeau-colorie", "fr", "bleu,blanc,rouge") === "juste" && juger("drapeau-colorie", "fr", "bleu,blanc,vert") === "presque" && juger("drapeau-colorie", "fr", "vert,vert,vert") === "faux" && juger("drapeau-colorie", "fr", "bleu,blanc") === "faux");
+ok("ranger", juger("classer-population", "us", "us,fr,be,lu") === "juste" && juger("classer-population", "us", "fr,us,be,lu") === "faux" && juger("classer-population", "us", "us,fr,fr,lu") === "faux");
+ok("fuseau de Paris", juger("fuseau-heure", "fr", "0") === "juste" && juger("fuseau-heure", "fr", "60") === "faux");
+ok("voisins", juger("voisin-de", "fr", "de") === "juste" && juger("voisin-de", "fr", "pl") === "faux");
+ok("pas voisin", juger("pas-voisin", "fr", "pl") === "juste" && juger("pas-voisin", "fr", "de") === "faux" && juger("pas-voisin", "fr", "fr") === "faux");
+ok("nombre de voisins", juger("nb-voisins", "fr", String(pays("fr").voisins.length)) === "juste");
+ok("habitants", juger("pays-gentile", "ma", "Marocain") === "juste" && juger("gentile-pays", "ma", "ma") === "juste" && juger("gentile-pays", "ma", "dz") === "faux");
+ok("indicatif", juger("pays-indicatif", "ma", "+212") === "juste" && juger("indicatif-pays", "ma", "ma") === "juste");
+ok("conduite", juger("pays-conduite", "gb", "gauche") === "juste" && juger("pays-conduite", "gb", "droite") === "faux");
+ok("langue", juger("pays-langue", "ma", "arabe") === "juste" && juger("pays-langue", "ma", "anglais") === "faux");
+ok("sommet partagé", juger("sommet-pays", "fr", "it") === "juste" && juger("sommet-pays", "fr", "es") === "faux");
 
 /* ---------- Les réponses écrites ---------- */
 ok("normaliser", normaliser("  Côte-d'Ivoire ") === normaliser("cote d ivoire") && normaliser("St-Marin") === normaliser("Saint Marin"));

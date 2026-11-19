@@ -1,9 +1,9 @@
 "use client";
 
-import { ArrowRight, Coins, Earth, Flag, Flame, Infinity as Infini, Landmark, Map as IconeCarte, RotateCcw, Shuffle, Timer, Zap } from "lucide-react";
+import { ArrowRight, Building2, Clock, Coins, Earth, Flag, Flame, Hash, Infinity as Infini, Landmark, Languages, Map as IconeCarte, Mountain, RotateCcw, Scale, Shuffle, Timer, Users, Waypoints, Zap } from "lucide-react";
 import { useMemo } from "react";
 import { formatNombre, formatPopulation, formatSuperficie, jourDeParis, motCapitale, NOM_CONTINENT, paysDuJour } from "@/lib/monde/atlas";
-import { CATEGORIES, type CategorieId, IDS_CATEGORIES } from "@/lib/monde/categories";
+import { CATEGORIES, CATEGORIES_CLASSIQUES, CATEGORIES_NOUVELLES, type CategorieId, IDS_CATEGORIES } from "@/lib/monde/categories";
 import { NOMBRE_PAYS } from "@/lib/monde/chiffres";
 import { useCompteMonde } from "@/lib/monde/compte-client";
 import { grade, NB_NIVEAUX } from "@/lib/monde/niveaux";
@@ -15,7 +15,59 @@ import { Drapeau } from "./figures";
 import { Globe, type Teinte } from "./Globe";
 import { type Lancement, useLancer } from "./Partie";
 
-export const ICONES_CATEGORIES: Record<CategorieId, typeof Flag> = { drapeaux: Flag, capitales: Landmark, cartes: IconeCarte, continents: Earth, monnaies: Coins };
+export const ICONES_CATEGORIES: Record<CategorieId, typeof Flag> = {
+  drapeaux: Flag,
+  capitales: Landmark,
+  cartes: IconeCarte,
+  continents: Earth,
+  monnaies: Coins,
+  gentiles: Users,
+  langues: Languages,
+  villes: Building2,
+  reliefs: Mountain,
+  codes: Hash,
+  fuseaux: Clock,
+  voisins: Waypoints,
+  comparaisons: Scale,
+};
+
+/** La carte d'une catégorie : son icône, sa maîtrise, sa route de quinze niveaux. */
+function Cartouche({ c, i, onCategorie }: { c: CategorieId; i: number; onCategorie: (id: string | null) => void }) {
+  const monde = useMonde();
+  const def = CATEGORIES[c];
+  const Icone = ICONES_CATEGORIES[c];
+  const m = maitrise(monde, c);
+  const faits = niveauxReussis(monde, c);
+  const courant = niveauCourant(monde, c);
+  const pourcent = m.total ? Math.round((m.sus / m.total) * 100) : 0;
+  return (
+    <button type="button" className="pt-cartouche" data-categorie={c} style={{ "--i": i, "--part": pourcent / 100 } as React.CSSProperties} onClick={() => onCategorie(c)}>
+      <span className="pt-cartouche-cadre" aria-hidden="true" />
+      <span className="pt-cartouche-tete">
+        <Icone className="pt-cartouche-icone" strokeWidth={1.5} aria-hidden="true" />
+        <span className="pt-anneau" role="img" aria-label={`${pourcent} % maîtrisé`}>
+          <svg viewBox="0 0 36 36" aria-hidden="true">
+            <circle cx="18" cy="18" r="15.5" className="pt-anneau-fond" />
+            <circle cx="18" cy="18" r="15.5" className="pt-anneau-plein" pathLength={100} />
+          </svg>
+          <span className="tabular-nums">{pourcent}%</span>
+        </span>
+      </span>
+      <span className="pt-cartouche-nom">{def.nom}</span>
+      <span className="pt-cartouche-texte">{def.texte}</span>
+      <span className="pt-cartouche-pied">
+        <span>
+          Niveau {courant} : {grade(courant).nom}
+        </span>
+        <span className="pt-piste" aria-label={`${faits} niveaux réussis sur ${NB_NIVEAUX}`}>
+          {Array.from({ length: NB_NIVEAUX }, (_, k) => (
+            <span key={k} data-fait={k < faits || undefined} data-courant={k === courant - 1 || undefined} />
+          ))}
+        </span>
+      </span>
+    </button>
+  );
+}
 
 export function Accueil({ categorie, onCategorie, lancer, aller }: { categorie: string | null; onCategorie: (id: string | null) => void; lancer: (l: Lancement) => void; aller: (hash: string) => void }) {
   if (categorie && categorie in CATEGORIES) return <Categorie id={categorie as CategorieId} onRetour={() => onCategorie(null)} lancer={lancer} />;
@@ -108,41 +160,21 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
           {t("accueil.categories")}
         </h3>
         <div className="pt-cartouches">
-          {IDS_CATEGORIES.map((c, i) => {
-            const def = CATEGORIES[c];
-            const Icone = ICONES_CATEGORIES[c];
-            const m = maitrise(monde, c);
-            const faits = niveauxReussis(monde, c);
-            const courant = niveauCourant(monde, c);
-            const pourcent = m.total ? Math.round((m.sus / m.total) * 100) : 0;
-            return (
-              <button key={c} type="button" className="pt-cartouche" data-categorie={c} style={{ "--i": i, "--part": pourcent / 100 } as React.CSSProperties} onClick={() => onCategorie(c)}>
-                <span className="pt-cartouche-cadre" aria-hidden="true" />
-                <span className="pt-cartouche-tete">
-                  <Icone className="pt-cartouche-icone" strokeWidth={1.5} aria-hidden="true" />
-                  <span className="pt-anneau" role="img" aria-label={`${pourcent} % maîtrisé`}>
-                    <svg viewBox="0 0 36 36" aria-hidden="true">
-                      <circle cx="18" cy="18" r="15.5" className="pt-anneau-fond" />
-                      <circle cx="18" cy="18" r="15.5" className="pt-anneau-plein" pathLength={100} />
-                    </svg>
-                    <span className="tabular-nums">{pourcent}%</span>
-                  </span>
-                </span>
-                <span className="pt-cartouche-nom">{def.nom}</span>
-                <span className="pt-cartouche-texte">{def.texte}</span>
-                <span className="pt-cartouche-pied">
-                  <span>
-                    Niveau {courant} : {grade(courant).nom}
-                  </span>
-                  <span className="pt-piste" aria-label={`${faits} niveaux réussis sur ${NB_NIVEAUX}`}>
-                    {Array.from({ length: NB_NIVEAUX }, (_, k) => (
-                      <span key={k} data-fait={k < faits || undefined} data-courant={k === courant - 1 || undefined} />
-                    ))}
-                  </span>
-                </span>
-              </button>
-            );
-          })}
+          {CATEGORIES_CLASSIQUES.map((c, i) => (
+            <Cartouche key={c} c={c} i={i} onCategorie={onCategorie} />
+          ))}
+        </div>
+      </section>
+
+      <section aria-labelledby="pt-plus-loin">
+        <h3 id="pt-plus-loin" className="pt-sous-titre">
+          Pour aller plus loin
+        </h3>
+        <p className="pt-sous-chapo">Les habitants, les langues, les grandes villes, les sommets, les codes, les fuseaux, les voisins, les comparaisons : huit nouvelles routes de quinze niveaux.</p>
+        <div className="pt-cartouches" data-petites="">
+          {CATEGORIES_NOUVELLES.map((c, i) => (
+            <Cartouche key={c} c={c} i={i} onCategorie={onCategorie} />
+          ))}
         </div>
       </section>
 

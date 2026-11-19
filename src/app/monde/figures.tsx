@@ -54,10 +54,12 @@ function dessinSilhouette(carte: Carte, code: string): string | null {
   return d;
 }
 
-export function Silhouette({ code, className }: { code: string; className?: string }) {
+export function Silhouette({ code, className, rotation = 0, miroir = false }: { code: string; className?: string; rotation?: number; miroir?: boolean }) {
   const { detail, leger, ultra } = useCarte();
   const carte = detail ?? leger ?? ultra;
   const d = useMemo(() => (carte ? dessinSilhouette(carte, code) : null), [carte, code]);
+  // Tournée et/ou vue dans un miroir, autour de son centre.
+  const transformation = `${rotation ? `rotate(${rotation} 120 120) ` : ""}${miroir ? "translate(240 0) scale(-1 1)" : ""}`.trim() || undefined;
   return (
     <svg viewBox="0 0 240 240" className={`pt-silhouette ${className ?? ""}`} role="img" aria-label="Silhouette d'un pays à reconnaître">
       <defs>
@@ -66,7 +68,7 @@ export function Silhouette({ code, className }: { code: string; className?: stri
           <stop offset="100%" stopColor="var(--pt-silhouette-bas)" />
         </radialGradient>
       </defs>
-      {d ? <path d={d} fill={`url(#pt-sil-${code})`} className="pt-silhouette-forme" /> : <circle cx="120" cy="120" r="40" className="pt-silhouette-attente" />}
+      {d ? <path d={d} fill={`url(#pt-sil-${code})`} className="pt-silhouette-forme" transform={transformation} /> : <circle cx="120" cy="120" r="40" className="pt-silhouette-attente" />}
     </svg>
   );
 }

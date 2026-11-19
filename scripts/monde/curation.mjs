@@ -541,7 +541,7 @@ export const SUPERFICIES = { sj: 61022 };
 /* ---------- Langues que l'Intl ne nomme pas ---------- */
 export const NOMS_LANGUES = {
   ber: "tamazight", zib: "langue des signes zimbabwéenne", nfr: "normand", hgm: "haiǁom", kwn: "kwangali",
-  khi: "langues khoïsan", cal: "carolinien", pih: "norfuk", smi: "same", bwg: "barwe", pau: "paluan", tvl: "tuvaluan",
+  khi: "langues khoïsan", cal: "carolinien", pih: "norfuk", smi: "same", bwg: "barwe", pau: "paluan", tvl: "tuvaluan", lao: "lao",
 };
 
 /* ---------- L'ordre de difficulté (du plus connu au moins connu, pour un francophone) ---------- */

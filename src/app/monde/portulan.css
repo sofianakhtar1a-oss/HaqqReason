@@ -901,10 +901,13 @@ html[data-pt-transition]::view-transition-new(root) {
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 14.5rem), 1fr));
   gap: 0.9rem;
 }
-/* Les cinq routes sur une seule ligne dès que la place le permet. */
+/* Les cinq routes sur une seule ligne dès que la place le permet ; les huit autres sur deux lignes de quatre. */
 @media (min-width: 72rem) {
   .pt-cartouches {
     grid-template-columns: repeat(5, 1fr);
+  }
+  .pt-cartouches[data-petites] {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .pt-cartouche {
@@ -1658,6 +1661,270 @@ html[data-pt-transition]::view-transition-new(root) {
   margin-bottom: 0.4rem;
   font-size: clamp(1.8rem, 6vw, 2.6rem);
   text-align: center;
+}
+
+/* ---------- Les nouvelles formes de questions ---------- */
+/* Le drapeau sans ses couleurs. */
+.pt-drapeau-gris {
+  filter: grayscale(1) contrast(1.12);
+}
+/* Le drapeau qui se dévoile : douze cases s'en vont, une à une. */
+.pt-devoile {
+  position: relative;
+  border-radius: 0.55rem;
+  overflow: hidden;
+}
+.pt-devoile-cases {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.pt-devoile-cases span {
+  background:
+    radial-gradient(circle at 30% 30%, color-mix(in srgb, var(--or) 22%, transparent), transparent 70%),
+    var(--fond);
+  border: 1px solid var(--or-trait);
+  animation: pt-devoile 0.5s ease forwards;
+  animation-delay: calc(0.9s + var(--rang) * 0.7s);
+}
+@keyframes pt-devoile {
+  to {
+    opacity: 0;
+    transform: scale(0.6) rotate(8deg);
+  }
+}
+/* Un drapeau dessiné dans la page (couleur cachée, coloriage). */
+.pt-drapeau-svg {
+  display: block;
+  width: min(20rem, 70vw, 42vh);
+  aspect-ratio: 4 / 3;
+  border-radius: 0.55rem;
+  overflow: hidden;
+  background: var(--surface-forte);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--encre) 18%, transparent),
+    0 1.6rem 3rem -1.6rem rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.pt-drapeau-svg[data-pret] {
+  opacity: 1;
+}
+.pt-drapeau-svg svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.pt-coloriage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.pt-coloriage-toile svg [data-vide] {
+  transition: fill 0.2s ease;
+}
+.pt-coloriage-toile svg [role="button"]:hover {
+  filter: brightness(0.94);
+}
+.pt-coloriage-toile svg [role="button"]:focus-visible {
+  outline: none;
+  stroke: var(--sa) !important;
+  stroke-width: 3px !important;
+}
+.pt-palette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem;
+}
+.pt-pastille {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.8rem 0.35rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.pt-pastille span,
+.pt-pastille-rond {
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  flex: none;
+  border-radius: 50%;
+  background: var(--pastille);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.22);
+}
+.pt-pastille[aria-checked="true"] {
+  border-color: var(--sa);
+  background: var(--sa-doux);
+  color: var(--sa);
+  box-shadow: 0 0 0 2px var(--sa-doux);
+}
+.pt-option-couleur {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+}
+.pt-option-couleur .pt-pastille-rond {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.pt-option-vf {
+  font-size: 1.35rem;
+}
+.pt-choix[data-sorte="vraifaux"] .pt-option {
+  justify-content: center;
+  min-height: 4.2rem;
+}
+/* Une proposition à juger. */
+.pt-proposition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 34rem;
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+.pt-proposition strong {
+  font-family: var(--pt-serif);
+  font-style: italic;
+}
+.pt-proposition .pt-nom-grand {
+  display: block;
+  margin-top: 0.3rem;
+}
+/* Les horloges : midi à Paris, et là-bas. */
+.pt-horloges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.pt-horloge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  min-width: 11rem;
+  padding: 1rem 1.4rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--trait);
+  background: var(--pt-papier);
+  text-align: center;
+}
+.pt-horloge[data-question] {
+  border-color: var(--sa-trait);
+  background: linear-gradient(160deg, var(--sa-doux), transparent 70%), var(--pt-papier);
+}
+.pt-horloge .pt-nom-grand {
+  font-size: clamp(2rem, 7vw, 3rem);
+}
+.pt-invite-vide {
+  height: 0.5rem;
+}
+.pt-invite-globe-drapeau {
+  width: 6.5rem;
+  margin: 0 auto 0.6rem;
+}
+/* Ranger quatre pays. */
+.pt-classer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.5rem;
+  width: min(100%, 30rem);
+  margin: 0 auto;
+}
+.pt-classer > .bouton {
+  align-self: center;
+  margin-top: 0.4rem;
+}
+.pt-classer-bornes {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+  text-align: center;
+}
+.pt-classer-liste {
+  display: grid;
+  gap: 0.5rem;
+}
+.pt-classer-ligne {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 0.6rem 0.55rem 0.8rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  touch-action: none;
+  user-select: none;
+  cursor: grab;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+.pt-classer-ligne[data-tenu] {
+  cursor: grabbing;
+  border-color: var(--sa);
+  box-shadow: 0 0.8rem 1.6rem -1rem rgba(0, 0, 0, 0.7);
+  transform: scale(1.02);
+}
+.pt-classer-ligne[data-etat="juste"] {
+  border-color: var(--pt-juste);
+}
+.pt-classer-ligne[data-etat="faux"] {
+  border-color: var(--pt-faux);
+}
+.pt-classer-rang {
+  width: 1.4rem;
+  font-weight: 800;
+  color: var(--sa);
+  text-align: center;
+}
+.pt-classer-nom {
+  flex: 1;
+  font-family: var(--pt-serif);
+  font-size: 1.08rem;
+  font-style: italic;
+  font-weight: 600;
+}
+.pt-classer-nom small {
+  display: block;
+  font-family: var(--font-sans, inherit);
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--encre-douce);
+}
+.pt-classer-fleches {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.pt-classer-fleches .pt-icone {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+.pt-classer-poignee {
+  color: var(--encre-douce);
+}
+.pt-sous-chapo {
+  max-width: 62ch;
+  margin: -0.4rem 0 1rem;
+  color: var(--encre-douce);
 }
 
 /* Les choix */
@@ -3172,12 +3439,16 @@ html[data-pt-transition]::view-transition-new(root) {
   .pt-explorer-vide,
   .pt-fenetre,
   .pt-voix[data-parle]::after,
+  .pt-devoile-cases span,
   .pt-fiche-rubrique[open] .pt-fiche-rubrique-corps,
   .pt-qibla-aiguille {
     animation: none !important;
   }
   .pt-fiche-rubrique-chevron {
     transition: none;
+  }
+  .pt-devoile-cases {
+    display: none;
   }
   .pt-globe-anneau::before {
     opacity: 0.9;

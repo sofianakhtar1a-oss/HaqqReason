@@ -13,13 +13,15 @@ import { juger } from "./quiz";
  *   • Les trophées ne se gagnent qu'en duel contre une autre personne.
  */
 
-export const BASES = { qcm4: 10, qcm6: 12, ecrit: 15, clic: 15 } as const;
+export const BASES = { qcm2: 6, qcm4: 10, qcm6: 12, ecrit: 15, clic: 15 } as const;
 export const PLAFOND_JOUR = 3000;
 
 export function baseDe(type: TypeQuestion, nb: number): number {
   const r = TYPES[type]?.reponse;
   if (r === "ecrit") return BASES.ecrit;
-  if (r === "clic") return BASES.clic;
+  // Toucher le globe, poser une capitale, colorier un drapeau, ranger des pays : autant qu'écrire.
+  if (r === "clic" || r === "placer" || r === "coloriage" || r === "classer") return BASES.clic;
+  if (r === "vraifaux" || nb === 2) return BASES.qcm2;
   return nb >= 6 ? BASES.qcm6 : BASES.qcm4;
 }
 
@@ -34,7 +36,7 @@ export function lireReponse(x: unknown): ReponseEnvoyee | null {
   if (typeof type !== "string" || !(type in TYPES)) return null;
   if (typeof o.cible !== "string" || !/^[a-z]{2}$/.test(o.cible)) return null;
   if (typeof o.reponse !== "string" || o.reponse.length > 120) return null;
-  const nb = o.nb === 6 ? 6 : o.nb === 0 ? 0 : 4;
+  const nb = o.nb === 6 ? 6 : o.nb === 0 ? 0 : o.nb === 2 ? 2 : 4;
   return { type, cible: o.cible, reponse: o.reponse, nb };
 }
 

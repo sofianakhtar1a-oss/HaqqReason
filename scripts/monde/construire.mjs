@@ -23,6 +23,7 @@ import { dirname, join } from "node:path";
 import { pathToFileURL } from "node:url";
 import * as C from "./curation.mjs";
 import * as P from "./curation-plus.mjs";
+import * as COUL from "../../src/lib/monde/couleurs.ts";
 
 const [dossierDeps, fichierPop] = process.argv.slice(2);
 if (!dossierDeps || !fichierPop) {
@@ -371,9 +372,64 @@ function drapeau(fichier) {
   } catch {
     erreurs.push(`teinte impossible pour ${fichier} (rsvg-convert et ImageMagick sont nécessaires)`);
   }
-  const r = { empreinte, teinte };
+  // Les couleurs : leur part de la surface (à 5 % près), ramenées aux neuf couleurs nommées.
+  const parts = new Map();
+  try {
+    const png = execFileSync("rsvg-convert", ["-w", "96", "-h", "72", join(dossierDrapeaux, `${fichier}.svg`)]);
+    const histo = execFileSync("convert", ["png:-", "-background", "white", "-alpha", "remove", "-colors", "16", "-format", "%c", "histogram:info:-"], { input: png }).toString();
+    let total = 0;
+    for (const ligne of histo.split("\n")) {
+      const m = /^\s*(\d+):\s*\(\s*([\d.]+)\s*,\s*([\d.]+)\s*,\s*([\d.]+)/.exec(ligne);
+      if (!m) continue;
+      const n = Number(m[1]);
+      total += n;
+      const nom = COUL.nomCouleur(Number(m[2]), Number(m[3]), Number(m[4]));
+      parts.set(nom, (parts.get(nom) ?? 0) + n);
+    }
+    for (const [k, v] of parts) parts.set(k, v / total);
+  } catch {
+    erreurs.push(`couleurs impossibles pour ${fichier}`);
+  }
+  const couleurs = [...parts].filter(([, v]) => v >= 0.05).sort((a, b) => b[1] - a[1]).map(([k]) => k);
+  const r = { empreinte, teinte, couleurs, coloriage: coloriable(leger) };
   fichiers.set(fichier, r);
   return r;
+}
+
+/**
+ * Un drapeau qu'on peut colorier : peu de formes, des couleurs pleines, pas d'emblème.
+ * Renvoie la couleur nommée de chaque forme, dans l'ordre du document (null : pas coloriable).
+ * Le navigateur retrouve les mêmes formes, dans le même ordre (formes visibles, sans « none »).
+ */
+function coloriable(svg) {
+  if (/<(use|image|text|defs|linearGradient|radialGradient|pattern|clipPath|mask|filter|style)\b|url\(/i.test(svg)) return null;
+  const pile = [null];
+  const formes = [];
+  for (const m of svg.matchAll(/<(\/?)([a-zA-Z]+)([^>]*?)(\/?)>/g)) {
+    const [, fin, nom, attrs, auto] = m;
+    if (nom === "svg") continue;
+    const lire = (a) => {
+      const x = new RegExp(`(?:^|\\s)${a}="([^"]*)"`).exec(attrs);
+      if (x) return x[1];
+      const y = new RegExp(`${a}:\\s*([^;"]+)`).exec(/style="([^"]*)"/.exec(attrs)?.[1] ?? "");
+      return y ? y[1].trim() : null;
+    };
+    if (nom === "g") {
+      if (fin) pile.pop();
+      else if (!auto) pile.push(lire("fill") ?? pile[pile.length - 1]);
+      continue;
+    }
+    if (fin || !["path", "rect", "circle", "ellipse", "polygon", "polyline"].includes(nom)) continue;
+    const fill = lire("fill") ?? pile[pile.length - 1] ?? "#000";
+    if (fill === "none") continue;
+    const opacite = lire("fill-opacity") ?? lire("opacity");
+    if (opacite && Number(opacite) < 1) return null;
+    const c = COUL.nomDeCss(fill);
+    if (!c) return null;
+    formes.push(c);
+  }
+  if (formes.length < 2 || formes.length > 9 || new Set(formes).size > 5) return null;
+  return formes;
 }
 for (const e of entites) {
   const proprietaire = C.DRAPEAU_DE[e.code];
@@ -382,6 +438,8 @@ for (const e of entites) {
   const d = drapeau(fichier);
   e.drapeau = d.empreinte;
   e.teinte = d.teinte;
+  e.couleurs = d.couleurs;
+  if (d.coloriage && !proprietaire) e.coloriage = d.coloriage;
   e.drapeauPropre = !proprietaire;
   if (proprietaire) e.drapeauDe = proprietaire;
 }

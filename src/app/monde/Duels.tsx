@@ -6,7 +6,7 @@ import { createPortal } from "react-dom";
 import { eclat, pluieDeLettres } from "@/lib/langues/feux";
 import { pays } from "@/lib/monde/atlas";
 import { adversaire as choisirExplorateur, EXPLORATEURS, type Explorateur, jouerVirtuel } from "@/lib/monde/bots";
-import { CATEGORIES, IDS_CATEGORIES, type ModeJeu, TYPES } from "@/lib/monde/categories";
+import { CATEGORIES, CATEGORIES_CLASSIQUES, type ModeJeu, TYPES } from "@/lib/monde/categories";
 import { lireScore, useCompteMonde } from "@/lib/monde/compte-client";
 import { deriver, hasard, nouvelleGraine } from "@/lib/monde/hasard";
 import { DUREE_QUESTION_DUEL, pointsDuel } from "@/lib/monde/points";
@@ -28,7 +28,7 @@ import { ContenuOption, Invite } from "./Partie";
 
 const MODES: { id: ModeJeu; nom: string }[] = [
   { id: "melange", nom: "Tout mélangé" },
-  ...IDS_CATEGORIES.map((c) => ({ id: c as ModeJeu, nom: CATEGORIES[c].nom })),
+  ...CATEGORIES_CLASSIQUES.map((c) => ({ id: c as ModeJeu, nom: CATEGORIES[c].nom })),
 ];
 
 export type Rencontre =
