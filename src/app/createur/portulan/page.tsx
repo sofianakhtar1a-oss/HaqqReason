@@ -30,7 +30,7 @@ export default async function AtelierPortulan({ searchParams }: { searchParams: 
   const tous = (await searchParams).signalements === "tous";
   const [edition, signalements, manques, vitesse] = await Promise.all([editionPortulan(), lireSignalements(tous), lireManques(3), lireVitesse(28)]);
   const pays = PAYS.map((p) => ({ code: p.code, nom: p.nom })).sort((a, b) => collator.compare(a.nom, b.nom));
-  const migration = signalements === null || manques === null || vitesse === null;
+  const migration = manques === null || vitesse === null;
 
   // Les quatorze prochains jours : le pays tiré au sort, ou celui que le créateur a choisi.
   const aujourdhui = jourDeParis();
@@ -83,8 +83,8 @@ export default async function AtelierPortulan({ searchParams }: { searchParams: 
 
         {migration && (
           <p className="verre panneau mt-8 text-encre-douce" role="note">
-            Les signalements, les questions manquées et la vitesse réelle attendent la migration 019 (supabase/migrations/019_portulan_createur.sql). Le reste de
-            l&apos;atelier marche déjà.
+            Les questions manquées et la vitesse réelle attendent la migration 019 (supabase/migrations/019_portulan_createur.sql). Le reste de l&apos;atelier
+            marche déjà, signalements compris.
           </p>
         )}
 

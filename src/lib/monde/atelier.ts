@@ -197,21 +197,59 @@ export type SujetSignalement = (typeof SUJETS_SIGNALEMENT)[number];
 export async function signaler(s: { utilisateur: string | null; code: string | null; sujet: SujetSignalement; texte: string; contexte: Record<string, unknown> }): Promise<boolean> {
   const corps = texte(s.texte, 1000);
   if (corps.length < 3) return false;
-  const { error } = await dbAdmin()
-    .from("portulan_signalements")
-    .insert({ utilisateur_id: s.utilisateur, code: s.code && PAR_CODE.has(s.code) ? s.code : null, sujet: s.sujet, texte: corps, contexte: s.contexte });
-  return !error;
+  const code = s.code && PAR_CODE.has(s.code) ? s.code : null;
+  const { error } = await dbAdmin().from("portulan_signalements").insert({ utilisateur_id: s.utilisateur, code, sujet: s.sujet, texte: corps, contexte: s.contexte });
+  if (!error) return true;
+  // La table n'existe pas encore (migration 019 pas lancée) : le signalement se range dans « reglages »,
+  // une clé par signalement, et l'atelier le montre quand même.
+  // La clé suit la règle de la table : minuscules, chiffres et soulignés seulement.
+  const id = `${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8).padEnd(6, "0")}`;
+  const { error: autre } = await dbAdmin()
+    .from("reglages")
+    .insert({ cle: `${PREFIXE_SIGNALEMENT}${id}`, valeur: { le: new Date().toISOString(), code, sujet: s.sujet, texte: corps, contexte: s.contexte, traite: false } as never });
+  return !autre;
+}
+
+const PREFIXE_SIGNALEMENT = "portulan_signalement_";
+const ID_REGLAGES = "reglages:";
+
+/** Les signalements rangés dans « reglages » (avant la migration 019). */
+async function signalementsDeReglages(): Promise<Signalement[]> {
+  const { data, error } = await dbAdmin().from("reglages").select("cle, valeur").like("cle", `${PREFIXE_SIGNALEMENT}%`).limit(500);
+  if (error) return [];
+  return (data as { cle: string; valeur: Partial<Signalement> }[]).map((l) => ({
+    id: `${ID_REGLAGES}${l.cle}`,
+    le: String(l.valeur?.le ?? ""),
+    code: l.valeur?.code ?? null,
+    sujet: String(l.valeur?.sujet ?? "autre"),
+    texte: String(l.valeur?.texte ?? ""),
+    contexte: (l.valeur?.contexte as Record<string, unknown>) ?? {},
+    traite: Boolean(l.valeur?.traite),
+  }));
 }
 
 export async function lireSignalements(tous = false): Promise<Signalement[] | null> {
   let requete = dbAdmin().from("portulan_signalements").select("id, le, code, sujet, texte, contexte, traite").order("le", { ascending: false }).limit(200);
   if (!tous) requete = requete.eq("traite", false);
-  const { data, error } = await requete;
-  if (error) return null;
-  return data as Signalement[];
+  const [{ data, error }, anciens] = await Promise.all([requete, signalementsDeReglages()]);
+  const liste = [...(error ? [] : (data as Signalement[])), ...anciens.filter((x) => tous || !x.traite)];
+  if (error && !anciens.length) {
+    // Ni la table ni de signalement de secours : on dit « rien » plutôt qu'« indisponible » si la base répond.
+    const { error: base } = await dbAdmin().from("reglages").select("cle").limit(1);
+    return base ? null : [];
+  }
+  return liste.sort((a, b) => b.le.localeCompare(a.le));
 }
 
 export async function classerSignalement(id: string, traite: boolean): Promise<void> {
+  if (id.startsWith(ID_REGLAGES)) {
+    const cle = id.slice(ID_REGLAGES.length);
+    const ancien = await lire<Record<string, unknown>>(cle);
+    if (!ancien) throw new Error("Signalement introuvable.");
+    const { error } = await dbAdmin().from("reglages").update({ valeur: { ...ancien, traite } as never }).eq("cle", cle);
+    if (error) throw new Error(error.message);
+    return;
+  }
   const { error } = await dbAdmin().from("portulan_signalements").update({ traite }).eq("id", id);
   if (error) throw new Error(error.message);
 }
