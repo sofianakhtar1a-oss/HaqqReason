@@ -58,6 +58,9 @@ export type Lecon = {
   secret: { titre: string; texte: string; formule?: string };
 };
 
+/** Une leçon ajoutée au parcours : elle prend place juste après la leçon « apres » (même niveau). */
+export type Ajout = { apres: string; lecon: Lecon };
+
 export type Section = {
   id: "conjugaison" | "grammaire";
   nom: string;
