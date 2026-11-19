@@ -632,11 +632,46 @@ html[data-pt-transition]::view-transition-new(root) {
   width: 100%;
   height: 100%;
 }
-.pt-globe[data-interactif] canvas {
+.pt-globe[data-interactif] canvas,
+.pt-globe[data-glissable] canvas {
   cursor: grab;
 }
-.pt-globe[data-interactif] canvas:active {
+.pt-globe[data-interactif] canvas:active,
+.pt-globe[data-glissable] canvas:active {
   cursor: grabbing;
+}
+/* Le halo safran : quand on fait tourner le globe, une lumière orangée se diffuse autour de lui,
+   comme le soleil levant sur l'atmosphère, puis s'éteint doucement quand il s'arrête. */
+.pt-globe-halo {
+  position: absolute;
+  inset: 8px;
+  z-index: 1;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  transform: scale(0.985);
+  box-shadow:
+    0 0 1.6rem 0.35rem color-mix(in srgb, var(--safran) 42%, transparent),
+    0 0 4.5rem 1.4rem color-mix(in srgb, var(--safran) 20%, transparent),
+    0 0 9rem 3rem color-mix(in srgb, var(--safran) 9%, transparent),
+    inset 0 0 2.2rem 0.2rem color-mix(in srgb, var(--safran) 26%, transparent);
+  transition:
+    opacity 1.1s cubic-bezier(0.3, 0.6, 0.3, 1),
+    transform 1.1s cubic-bezier(0.3, 0.6, 0.3, 1);
+}
+.pt-globe-halo[data-actif] {
+  opacity: 1;
+  transform: scale(1);
+  transition:
+    opacity 0.35s ease-out,
+    transform 0.35s ease-out;
+}
+[data-theme="light"] .pt-globe-halo {
+  box-shadow:
+    0 0 1.4rem 0.3rem color-mix(in srgb, var(--safran) 34%, transparent),
+    0 0 4rem 1.2rem color-mix(in srgb, var(--safran) 16%, transparent),
+    0 0 8rem 2.6rem color-mix(in srgb, var(--safran) 7%, transparent),
+    inset 0 0 2rem 0.2rem color-mix(in srgb, var(--safran) 20%, transparent);
 }
 .pt-globe-anneau {
   position: absolute;
@@ -2862,6 +2897,11 @@ html[data-pt-transition]::view-transition-new(root) {
   .pt-globe-anneau::before {
     opacity: 0.9;
     transform: scale(1);
+  }
+  .pt-globe-halo,
+  .pt-globe-halo[data-actif] {
+    transition: none;
+    transform: none;
   }
   .pt-carte-face,
   .pt-cartouche,

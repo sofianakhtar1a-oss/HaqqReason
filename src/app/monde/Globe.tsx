@@ -33,6 +33,8 @@ export type GlobeProps = {
   /** Le globe tourne seul, doucement, tant qu'on n'y touche pas. */
   tourne?: boolean;
   interactif?: boolean;
+  /** On peut le faire tourner du doigt ou de la souris, dans tous les sens (sans zoom ni choix de pays). */
+  glissable?: boolean;
   /** Toucher un pays (null : la mer). */
   onToucher?: (code: string | null) => void;
   /** Les repères des tout petits pays (micro-États, îles) : toujours, ou seulement la cible. */
@@ -89,13 +91,19 @@ function zoomPour(forme: Forme | undefined, recul = 1): number {
 }
 
 export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
-  { mode = "globe", cible = null, recul = 1, teintes, tourne = false, interactif = false, onToucher, reperes = "cible", vueInitiale, className, libelle, onArrive },
+  { mode = "globe", cible = null, recul = 1, teintes, tourne = false, interactif = false, glissable = false, onToucher, reperes = "cible", vueInitiale, className, libelle, onArrive },
   ref,
 ) {
   const { ultra, leger, detail, erreur } = useCarte();
   const toile = useRef<HTMLCanvasElement>(null);
   const boite = useRef<HTMLDivElement>(null);
   const anneau = useRef<HTMLSpanElement>(null);
+  /** Le halo safran qui se diffuse autour du globe quand on le fait tourner. */
+  const halo = useRef<HTMLSpanElement>(null);
+  /** L'élan d'un globe lancé du doigt : sa vitesse, en degrés par milliseconde. */
+  const elan = useRef<{ lon: number; lat: number } | null>(null);
+  const vitesse = useRef({ lon: 0, lat: 0, t: 0 });
+  const dernierElan = useRef(0);
   const vue = useRef<Vue>({ lon: vueInitiale?.lon ?? 10, lat: vueInitiale?.lat ?? 20, zoom: vueInitiale?.zoom ?? 1 });
   const vol = useRef<{ de: Vue; vers: Vue; t0: number; duree: number } | null>(null);
   const image = useRef(0);
@@ -346,6 +354,25 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
         vue.current = { ...vl.vers };
         props.current.onArrive?.();
       }
+    } else if (elan.current) {
+      // Le globe lancé continue sur sa lancée, puis ralentit comme une toupie.
+      const dt = dernierElan.current ? Math.min(48, t - dernierElan.current) : 16;
+      dernierElan.current = t;
+      const e = elan.current;
+      vue.current = { ...vue.current, lon: vue.current.lon - e.lon * dt, lat: borne(vue.current.lat + e.lat * dt, -80, 80) };
+      const frein = Math.exp(-dt / 520);
+      e.lon *= frein;
+      e.lat *= frein;
+      derniereInteraction.current = performance.now();
+      if (Math.hypot(e.lon, e.lat) < 0.0025) {
+        elan.current = null;
+        dernierElan.current = 0;
+        allumerHalo(false);
+        enMouvement.current = false;
+      } else {
+        enMouvement.current = true;
+        continuer = true;
+      }
     } else if (props.current.tourne && !mouvementReduit() && !document.hidden) {
       const attente = 3500 - (performance.now() - derniereInteraction.current);
       if (attente <= 0) {
@@ -498,7 +525,36 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
     const echelle = props.current.mode === "plan" ? (l / 360) * v.zoom * 0.9 : ((Math.min(l, h) / 2 - 8) * v.zoom) / DEG;
     vue.current = { ...v, lon: v.lon - dx / echelle, lat: borne(v.lat + dy / echelle, -80, 80) };
     enMouvement.current = true;
+    // La vitesse du geste (lissée), pour l'élan au moment où l'on lâche.
+    const maintenant = performance.now();
+    const dt = Math.max(1, maintenant - (vitesse.current.t || maintenant - 16));
+    const lisser = (avant: number, mesure: number) => avant * 0.35 + mesure * 0.65;
+    vitesse.current = { lon: lisser(vitesse.current.lon, dx / echelle / dt), lat: lisser(vitesse.current.lat, -dy / echelle / dt), t: maintenant };
+    allumerHalo(true);
     demander();
+  };
+
+  /** Le halo safran : il s'allume quand on fait tourner le globe et s'éteint doucement à l'arrêt. */
+  function allumerHalo(oui: boolean) {
+    const el = halo.current;
+    if (!el) return;
+    if (oui) el.dataset.actif = "";
+    else delete el.dataset.actif;
+  }
+
+  /** On lâche le globe : s'il a été lancé, il garde son élan (sauf si les animations sont réduites). */
+  const lacher = () => {
+    const v = vitesse.current;
+    const recent = performance.now() - v.t < 80;
+    const vite = Math.hypot(v.lon, v.lat) > 0.012;
+    vitesse.current = { lon: 0, lat: 0, t: 0 };
+    if (recent && vite && !mouvementReduit() && props.current.mode !== "plan") {
+      // L'élan est borné : un geste très vif ne fait pas tourner le monde comme une roue de loterie.
+      const f = Math.min(1, 0.4 / Math.hypot(v.lon, v.lat));
+      elan.current = { lon: v.lon * f, lat: v.lat * f };
+      dernierElan.current = 0;
+      demander();
+    } else allumerHalo(false);
   };
 
   const toucher = (x: number, y: number) => {
@@ -528,14 +584,18 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
     onToucher(null);
   };
 
-  const evenements = interactif
+  const evenements = interactif || glissable
     ? {
         onPointerDown: (e: React.PointerEvent<HTMLCanvasElement>) => {
           e.currentTarget.setPointerCapture(e.pointerId);
           pointeurs.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
           derniereInteraction.current = performance.now();
           vol.current = null;
-          if (pointeurs.current.size === 2) {
+          // On rattrape un globe qui tournait encore sur sa lancée : il s'arrête sous le doigt.
+          elan.current = null;
+          dernierElan.current = 0;
+          vitesse.current = { lon: 0, lat: 0, t: 0 };
+          if (pointeurs.current.size === 2 && interactif) {
             const [a, b] = [...pointeurs.current.values()];
             geste.current = { x: e.clientX, y: e.clientY, t: performance.now(), bouge: true, ecart: Math.hypot(a.x - b.x, a.y - b.y), zoom: vue.current.zoom };
           } else geste.current = { x: e.clientX, y: e.clientY, t: performance.now(), bouge: false };
@@ -545,7 +605,7 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
           if (!avant || !geste.current) return;
           pointeurs.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
           derniereInteraction.current = performance.now();
-          if (pointeurs.current.size === 2 && geste.current.ecart) {
+          if (pointeurs.current.size === 2 && geste.current.ecart && interactif) {
             const [a, b] = [...pointeurs.current.values()];
             const ecart = Math.hypot(a.x - b.x, a.y - b.y);
             vue.current = { ...vue.current, zoom: borne((geste.current.zoom ?? 1) * (ecart / geste.current.ecart), 1, props.current.mode === "plan" ? 24 : 40) };
@@ -566,7 +626,9 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
             enMouvement.current = false;
             dernierePas.current = 0;
             demander();
-            if (g && !g.bouge && performance.now() - g.t < 600) {
+            if (g?.bouge) lacher();
+            else allumerHalo(false);
+            if (interactif && g && !g.bouge && performance.now() - g.t < 600) {
               const r = e.currentTarget.getBoundingClientRect();
               toucher(e.clientX - r.left, e.clientY - r.top);
             }
@@ -574,13 +636,21 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
         },
         onPointerCancel: (e: React.PointerEvent<HTMLCanvasElement>) => {
           pointeurs.current.delete(e.pointerId);
-          if (!pointeurs.current.size) geste.current = null;
+          if (!pointeurs.current.size) {
+            geste.current = null;
+            if (!elan.current) allumerHalo(false);
+          }
         },
-        onWheel: (e: React.WheelEvent<HTMLCanvasElement>) => {
-          derniereInteraction.current = performance.now();
-          vue.current = { ...vue.current, zoom: borne(vue.current.zoom * Math.exp(-e.deltaY * 0.0016), 1, props.current.mode === "plan" ? 24 : 40) };
-          demander();
-        },
+        // La molette zoome les globes interactifs ; sur un globe qu'on fait seulement tourner, elle fait défiler la page.
+        ...(interactif
+          ? {
+              onWheel: (e: React.WheelEvent<HTMLCanvasElement>) => {
+                derniereInteraction.current = performance.now();
+                vue.current = { ...vue.current, zoom: borne(vue.current.zoom * Math.exp(-e.deltaY * 0.0016), 1, props.current.mode === "plan" ? 24 : 40) };
+                demander();
+              },
+            }
+          : {}),
       }
     : {};
 
@@ -594,8 +664,9 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
   }, [interactif]);
 
   return (
-    <div ref={boite} className={`pt-globe ${className ?? ""}`} data-mode={mode} data-interactif={interactif || undefined}>
+    <div ref={boite} className={`pt-globe ${className ?? ""}`} data-mode={mode} data-interactif={interactif || undefined} data-glissable={glissable || undefined}>
       <canvas ref={toile} role="img" aria-label={libelle} {...evenements} />
+      {(interactif || glissable) && mode === "globe" && <span ref={halo} className="pt-globe-halo" aria-hidden="true" />}
       <span ref={anneau} className="pt-globe-anneau" aria-hidden="true" />
       {erreur && !ultra && !leger && <p className="pt-globe-erreur">La carte n&apos;a pas pu se charger. Vérifie ta connexion.</p>}
     </div>

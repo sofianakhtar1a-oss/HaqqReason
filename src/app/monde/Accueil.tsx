@@ -99,7 +99,7 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
         </div>
         <div className="pt-heros-globe">
           <RoseDesVents className="pt-heros-rose" />
-          <Globe tourne teintes={teintes} libelle={`Le globe : ${Object.keys(teintes).length} pays déjà dorés par ta mémoire`} vueInitiale={{ lon: 12, lat: 24, zoom: 1 }} />
+          <Globe tourne glissable teintes={teintes} libelle={`Le globe : ${Object.keys(teintes).length} pays déjà dorés par ta mémoire. Fais-le tourner dans tous les sens.`} vueInitiale={{ lon: 12, lat: 24, zoom: 1 }} />
         </div>
       </section>
 
