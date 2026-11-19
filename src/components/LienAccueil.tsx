@@ -13,6 +13,7 @@ const PORTES: Record<string, { titre: string; sur: string; accent: string }> = {
   "/ecrire": { titre: "Le Calame", sur: "Atelier d'écriture", accent: "or" },
   "/alambic": { titre: "L'Alambic", sur: "Studio de fichiers", accent: "amethyste" },
   "/langues": { titre: "Le Truchement", sur: "Apprendre les langues", accent: "azur" },
+  "/monde": { titre: "Le Portulan", sur: "Apprendre la géographie", accent: "safran" },
 };
 
 /** Lien « accueil » cloisonné : voir lib/client/acces.ts. */

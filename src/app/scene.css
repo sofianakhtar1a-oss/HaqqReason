@@ -1065,3 +1065,8 @@ html[data-scene-pause] :is(.atmosphere-nappe, .etincelle) {
     display: none; /* tout est déjà immobile */
   }
 }
+
+/* Le Portulan : sa porte colore aussi la salle. */
+main:has(.carte-choix[data-accent="safran"]:hover, .carte-choix[data-accent="safran"]:focus-visible) .halo[data-accent="safran"] {
+  opacity: 1;
+}

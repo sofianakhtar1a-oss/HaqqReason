@@ -17,6 +17,7 @@ export const MAGASINS = [
   "reprise",
   "favoris",
   "reglages",
+  "monde",
 ] as const;
 export type NomMagasin = (typeof MAGASINS)[number];
 

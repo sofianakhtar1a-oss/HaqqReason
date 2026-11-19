@@ -18,6 +18,7 @@ import { historiqueBrut, lireCollections, rangerCollections, rangerHistorique } 
 import { rangerRecherchesSauvegardees, recherchesSauvegardees } from "@/lib/client/recherches-locales";
 import * as langues from "@/lib/langues/stockage";
 import { leconsLocales, rangerLecon, type Resultat } from "@/lib/regles/progression";
+import * as monde from "@/lib/monde/progression";
 
 export type Adaptateur = {
   /** Tout ce que l'appareil possède déjà (pour le premier envoi), avec sa date si on la connaît. */
@@ -98,6 +99,16 @@ const regles: Adaptateur = {
     if (ici && (ici.etoiles !== venu.etoiles || ici.xp !== venu.xp || ici.fini !== venu.fini)) return "a-renvoyer";
   },
   effacer: async (c) => rangerLecon(c, null),
+};
+
+/* ---------- Le Portulan ---------- */
+
+const portulan: Adaptateur = {
+  cles: async () => monde.clesLocales(),
+  lire: async (c) => monde.valeurLocale(c),
+  // On garde le meilleur des deux appareils ; si celui-ci avait mieux, il repart vers le compte.
+  ecrire: async (c, v) => (monde.rangerValeur(c, v) ? "a-renvoyer" : undefined),
+  effacer: async (c) => monde.effacerValeur(c),
 };
 
 /* ---------- Le Truchement ---------- */
@@ -272,4 +283,5 @@ export const ADAPTATEURS: Record<NomMagasin, Adaptateur> = {
   reprise,
   favoris,
   reglages,
+  monde: portulan,
 };

@@ -1,0 +1,213 @@
+"use client";
+
+import Link from "next/link";
+import { Compass, Layers, Library, Map as IconeCarte, Swords } from "lucide-react";
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
+import { flushSync } from "react-dom";
+import { BoutonTheme } from "@/components/BoutonTheme";
+import { BoutonCompte } from "@/components/compte/BoutonCompte";
+import { Logo } from "@/components/Logo";
+import { useAccesComplet } from "@/lib/client/acces";
+import { lireScore } from "@/lib/monde/compte-client";
+import { useResolu, useTextes } from "@/lib/modules/textes-client";
+import { Accueil } from "./Accueil";
+import { Atlas } from "./Atlas";
+import { Duels } from "./Duels";
+import { Explorer } from "./Explorer";
+import { Fiches } from "./Fiches";
+import { type Lancement, Partie } from "./Partie";
+import "./portulan.css";
+import "@fontsource-variable/literata/opsz.css";
+import "@fontsource-variable/literata/opsz-italic.css";
+
+/*
+ * Le Portulan : apprendre la géographie. Cinq onglets, adressés par le fragment de l'URL
+ * (#accueil/drapeaux, #carte/fr, #atlas/jp…), pour que le « retour » du téléphone et les
+ * favoris fonctionnent. Une partie s'ouvre par-dessus, en plein écran.
+ */
+
+export type Onglet = "accueil" | "carte" | "fiches" | "atlas" | "duels";
+const ICONES: Record<Onglet, typeof Compass> = { accueil: Compass, carte: IconeCarte, fiches: Layers, atlas: Library, duels: Swords };
+const TOUS: Onglet[] = ["accueil", "carte", "fiches", "atlas", "duels"];
+
+type Route = { onglet: Onglet; detail: string | null };
+
+function lireRoute(onglets: { id: Onglet }[]): Route {
+  const [o, ...reste] = decodeURIComponent(window.location.hash.slice(1)).split("/");
+  const trouve = onglets.find((x) => x.id === o)?.id;
+  return { onglet: trouve ?? onglets[0]?.id ?? "accueil", detail: trouve ? reste.join("/") || null : null };
+}
+
+const sAbonner = () => () => undefined;
+const mouvementReduit = () => window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+
+type Depuis = { x: number; y: number };
+const depuisClic = (e: React.MouseEvent<HTMLElement>): Depuis => {
+  const r = e.currentTarget.getBoundingClientRect();
+  return e.clientX || e.clientY ? { x: e.clientX, y: e.clientY } : { x: r.left + r.width / 2, y: r.top + r.height / 2 };
+};
+
+/** Le nouvel écran s'ouvre en cercle depuis l'onglet touché (View Transitions), sinon directement. */
+function transition(scene: HTMLElement | null, depuis: Depuis | undefined, appliquer: () => void) {
+  const doc = document as Document & { startViewTransition?: (f: () => void) => { finished: Promise<void> } };
+  if (!depuis || !scene || !doc.startViewTransition || mouvementReduit()) return appliquer();
+  const r = scene.getBoundingClientRect();
+  const racine = document.documentElement;
+  racine.style.setProperty("--vt-x", `${Math.round(depuis.x - r.left)}px`);
+  racine.style.setProperty("--vt-y", `${Math.round(depuis.y - r.top)}px`);
+  racine.dataset.ptTransition = "";
+  doc
+    .startViewTransition(() => flushSync(appliquer))
+    .finished.catch(() => undefined)
+    .finally(() => delete racine.dataset.ptTransition);
+}
+
+/** Une lueur safran suit le pointeur (souris seulement). */
+function Lueur() {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!window.matchMedia("(pointer: fine)").matches || mouvementReduit()) return;
+    let image = 0;
+    let x = 0;
+    let y = 0;
+    const bouger = (e: PointerEvent) => {
+      x = e.clientX;
+      y = e.clientY;
+      if (image) return;
+      image = requestAnimationFrame(() => {
+        image = 0;
+        ref.current?.style.setProperty("transform", `translate3d(${x}px, ${y}px, 0)`);
+      });
+    };
+    window.addEventListener("pointermove", bouger, { passive: true });
+    return () => {
+      window.removeEventListener("pointermove", bouger);
+      cancelAnimationFrame(image);
+    };
+  }, []);
+  return <div ref={ref} className="pt-lueur" aria-hidden="true" />;
+}
+
+export function Portulan() {
+  const monte = useSyncExternalStore(
+    sAbonner,
+    () => true,
+    () => false,
+  );
+  const resolu = useResolu("monde");
+  const t = useTextes("monde");
+  const ONGLETS = useMemo(() => {
+    const liste = (resolu?.listes.onglets ?? TOUS.map((id) => ({ id, valeurs: {} as Record<string, string> }))).filter((o): o is { id: Onglet; valeurs: Record<string, string> } => TOUS.includes(o.id as Onglet));
+    const sortie = liste.map((o) => ({ id: o.id, nom: o.valeurs.nom ?? o.id, Icone: ICONES[o.id] }));
+    return sortie.length ? sortie : [{ id: "accueil" as Onglet, nom: "Jouer", Icone: Compass }];
+  }, [resolu]);
+  const premier = ONGLETS[0].id;
+  const [route, setRoute] = useState<Route>({ onglet: premier, detail: null });
+  const [partie, setPartie] = useState<Lancement | null>(null);
+  const accesComplet = useAccesComplet();
+
+  useEffect(() => {
+    const lire = () => setRoute(lireRoute(ONGLETS));
+    lire();
+    window.addEventListener("hashchange", lire);
+    return () => window.removeEventListener("hashchange", lire);
+  }, [ONGLETS]);
+
+  // Le score du compte (et la présence du classement en ligne), une fois.
+  useEffect(() => {
+    void lireScore();
+  }, []);
+
+  const empile = useRef(false);
+  const scene = useRef<HTMLElement>(null);
+  const aller = useCallback(
+    (hash: string) => {
+      const vide = hash === premier || hash === "";
+      const url = vide ? window.location.pathname : `#${hash}`;
+      if (hash.includes("/")) {
+        history.pushState(null, "", url);
+        empile.current = true;
+      } else {
+        history.replaceState(null, "", url);
+        empile.current = false;
+      }
+      setRoute(lireRoute(ONGLETS));
+      window.scrollTo({ top: 0 });
+    },
+    [ONGLETS, premier],
+  );
+  const versOnglet = useCallback(
+    (id: Onglet, e: React.MouseEvent<HTMLElement>) => {
+      const depuis = depuisClic(e);
+      if (route.onglet === id && !route.detail) return;
+      transition(scene.current, depuis, () => aller(id));
+    },
+    [aller, route.onglet, route.detail],
+  );
+  /** Ouvrir (ou refermer) un détail dans un onglet ; le « retour » du téléphone le referme. */
+  const detail = useCallback(
+    (onglet: Onglet) => (id: string | null) => {
+      if (id) aller(`${onglet}/${id}`);
+      else if (empile.current) {
+        empile.current = false;
+        history.back();
+      } else aller(onglet);
+    },
+    [aller],
+  );
+
+  return (
+    <div className="pt pt-espace" data-accent="safran" data-onglet={route.onglet}>
+      <Lueur />
+      <header className="pt-tete sans-impression">
+        <Logo />
+        <span className="pt-tete-titre" aria-hidden="true">
+          {t("tete.titre")}
+        </span>
+        <span className="pt-pastille">{t("tete.sous")}</span>
+        <span className="flex-1" />
+        <nav className="pt-onglets" aria-label="Le Portulan">
+          {ONGLETS.map(({ id, nom, Icone }) => (
+            <button key={id} type="button" className="pt-onglet" aria-current={route.onglet === id ? "page" : undefined} onClick={(e) => versOnglet(id, e)}>
+              <Icone className="size-4" aria-hidden="true" />
+              {nom}
+            </button>
+          ))}
+        </nav>
+        <BoutonTheme />
+        <BoutonCompte />
+        {accesComplet && (
+          <Link href="/utilisateur" className="calame-sortie" data-portail="Les espaces" data-portail-sur="Mode utilisateur" data-portail-accent="or">
+            Quitter
+          </Link>
+        )}
+      </header>
+
+      <main ref={scene} className="pt-scene">
+        <h1 className="sr-only">{t("meta.titre")}</h1>
+        {!monte ? (
+          <div className="pt-chargement" aria-hidden="true" />
+        ) : (
+          <>
+            {route.onglet === "accueil" && <Accueil categorie={route.detail} onCategorie={detail("accueil")} lancer={setPartie} aller={aller} />}
+            {route.onglet === "carte" && <Explorer focus={route.detail} onFocus={detail("carte")} />}
+            {route.onglet === "fiches" && <Fiches />}
+            {route.onglet === "atlas" && <Atlas ouvert={route.detail} onOuvrir={detail("atlas")} aller={aller} />}
+            {route.onglet === "duels" && <Duels sous={route.detail} onSous={detail("duels")} />}
+          </>
+        )}
+      </main>
+
+      <nav className="pt-barre-bas sans-impression" aria-label="Le Portulan" style={{ gridTemplateColumns: `repeat(${ONGLETS.length}, 1fr)` }}>
+        {ONGLETS.map(({ id, nom, Icone }) => (
+          <button key={id} type="button" aria-current={route.onglet === id ? "page" : undefined} onClick={(e) => versOnglet(id, e)}>
+            <Icone className="size-5" strokeWidth={route.onglet === id ? 2.2 : 1.7} aria-hidden="true" />
+            <span>{nom}</span>
+          </button>
+        ))}
+      </nav>
+
+      {partie && monte && <Partie key={partie.cle} lancement={partie} onFermer={() => setPartie(null)} onRejouer={(l) => setPartie(l)} />}
+    </div>
+  );
+}

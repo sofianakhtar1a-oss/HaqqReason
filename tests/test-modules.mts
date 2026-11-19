@@ -43,8 +43,15 @@ ok("thème masqué absent pour les visiteurs", resoudre("langues", { ...cv, them
 ok("objectif borné", nettoyerContenu("langues", { textes: { objectif: "5000" } }).textes.objectif === "200");
 ok("valeur égale à l'origine non stockée", Object.keys(nettoyerContenu("calame", { textes: { nouveau: "Nouveau" } }).textes).length === 0);
 ok("remplissage des variables", remplir("{mots} mots, {themes} thèmes", { mots: 600, themes: 12 }) === "600 mots, 12 thèmes");
-ok("contenu vide sûr pour tous les modules", (["accueil", "calame", "alambic", "langues"] as const).every((id) => resoudre(id, contenuVide()).textes && resoudre(id, nettoyerContenu(id, "n'importe quoi")).textes));
-ok("l'accueil présente cinq espaces", resoudre("accueil", null).listes.cartes.map((x) => x.id).join() === "calame,alambic,langues,bibliotheque,islam");
+ok("contenu vide sûr pour tous les modules", (["accueil", "calame", "alambic", "langues", "monde"] as const).every((id) => resoudre(id, contenuVide()).textes && resoudre(id, nettoyerContenu(id, "n'importe quoi")).textes));
+ok("l'accueil présente six espaces", resoudre("accueil", null).listes.cartes.map((x) => x.id).join() === "calame,alambic,langues,monde,bibliotheque,islam");
+ok("Le Portulan : cinq onglets, renommables", resoudre("monde", null).listes.onglets.map((x) => x.id).join() === "accueil,carte,fiches,atlas,duels");
+{
+  // Une liste de cartes publiée avant le Portulan : sa carte s'ajoute après les cartes rangées, sans rien déranger.
+  const publiee = nettoyerContenu("accueil", { textes: {}, listes: { cartes: [{ id: "islam", visible: true, valeurs: {} }, { id: "calame", visible: true, valeurs: {} }] } });
+  const ids = resoudre("accueil", publiee).listes.cartes.map((x) => x.id);
+  ok("une liste publiée avant le Portulan le reçoit, après les cartes rangées", ids.slice(0, 2).join() === "islam,calame" && ids.includes("monde"));
+}
 {
   // Une liste de cartes enregistrée avec l'ancienne carte de l'assistant : elle n'apparaît plus.
   const ancienne = nettoyerContenu("accueil", { textes: {}, listes: { cartes: [{ id: "islam", visible: true, valeurs: {} }, { id: "assistant", visible: true, valeurs: {} }] } });

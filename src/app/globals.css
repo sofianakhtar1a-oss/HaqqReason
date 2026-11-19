@@ -6317,3 +6317,20 @@ html[data-vue="utilisateur"] {
     transform: none;
   }
 }
+
+/* =====================================================================
+   Le Portulan : le safran, sixième couleur du site — l'épice des routes
+   maritimes, et l'encre rouge-orangé des cartes marines d'autrefois.
+   ===================================================================== */
+:root,
+[data-theme="dark"] {
+  --safran: #ffa65c;
+  --sur-safran: #2b1404;
+}
+[data-theme="light"] {
+  --safran: #a84a07;
+  --sur-safran: #ffffff;
+}
+[data-accent="safran"] {
+  --accent: var(--safran);
+}

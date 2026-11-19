@@ -12,8 +12,8 @@
 import { THEMES } from "@/lib/langues/themes/index";
 import type { Entree, Niveau, Theme } from "@/lib/langues/types";
 
-export type ModuleId = "accueil" | "calame" | "alambic" | "langues";
-export const IDS_MODULES: ModuleId[] = ["accueil", "calame", "alambic", "langues"];
+export type ModuleId = "accueil" | "calame" | "alambic" | "langues" | "monde";
+export const IDS_MODULES: ModuleId[] = ["accueil", "calame", "alambic", "langues", "monde"];
 
 export type Champ = { cle: string; libelle: string; defaut: string; long?: boolean; aide?: string; nombre?: { min: number; max: number } };
 export type Section = { titre: string; champs: Champ[] };
@@ -33,7 +33,7 @@ export type DefModule = {
   nom: string;
   description: string;
   adresse: string;
-  accent: "or" | "emeraude" | "amethyste" | "azur";
+  accent: "or" | "emeraude" | "amethyste" | "azur" | "safran";
   sections: Section[];
   listes: DefListe[];
   vocabulaire?: boolean;
@@ -75,8 +75,8 @@ const ACCUEIL: DefModule = {
       titre: "En-tête de la page",
       champs: [
         { cle: "titre", libelle: "Titre", defaut: "Par où veux-tu commencer ?" },
-        { cle: "intro", libelle: "Introduction", defaut: "Cinq espaces : écrire, transformer tes fichiers, apprendre une langue, lire, et comprendre l'islam en vidéo. Tu passes de l'un à l'autre quand tu veux.", long: true },
-        { cle: "meta.description", libelle: "Description pour Google", defaut: "Cinq espaces : Le Calame pour écrire, L'Alambic pour convertir ses fichiers, Le Truchement pour apprendre une langue, la bibliothèque des preuves de la véracité de l'islam, et L'Islam authentique en vidéos.", long: true },
+        { cle: "intro", libelle: "Introduction", defaut: "Six espaces : écrire, transformer tes fichiers, apprendre une langue, parcourir le monde, lire, et comprendre l'islam en vidéo. Tu passes de l'un à l'autre quand tu veux.", long: true },
+        { cle: "meta.description", libelle: "Description pour Google", defaut: "Six espaces : Le Calame pour écrire, L'Alambic pour convertir ses fichiers, Le Truchement pour apprendre une langue, Le Portulan pour apprendre la géographie, la bibliothèque des preuves de la véracité de l'islam, et L'Islam authentique en vidéos.", long: true },
       ],
     },
   ],
@@ -90,7 +90,7 @@ const ACCUEIL: DefModule = {
         { cle: "marque", libelle: "Petit mot en haut à droite" },
         { cle: "soustitre", libelle: "Sur-titre" },
         { cle: "titre", libelle: "Titre" },
-        { cle: "texte", libelle: "Texte", long: true, aide: "Dans la carte du Truchement, {mots} et {themes} sont remplacés par les nombres réels du vocabulaire." },
+        { cle: "texte", libelle: "Texte", long: true, aide: "Dans la carte du Truchement, {mots} et {themes} sont remplacés par les nombres réels du vocabulaire ; dans celle du Portulan, {pays} par le nombre de pays et territoires." },
       ],
       elements: [
         {
@@ -118,6 +118,15 @@ const ACCUEIL: DefModule = {
             soustitre: "Apprendre les langues",
             marque: "Apprendre",
             texte: "L'anglais pour commencer : {mots} mots en {themes} thèmes, du niveau A1 au C2, révisés au bon moment, des vidéos et des PDF où chaque mot se traduit d'un toucher, et ton propre dictionnaire. Ta progression te suit sur tous tes appareils avec ton compte.",
+          },
+        },
+        {
+          id: "monde",
+          valeurs: {
+            titre: "Le Portulan",
+            soustitre: "Apprendre la géographie",
+            marque: "Explorer",
+            texte: "Les drapeaux, les capitales, les cartes, les continents et les monnaies des {pays} pays et territoires du monde, en quinze niveaux. Un globe à faire tourner, des fiches mémoire, des duels et un classement.",
           },
         },
         {
@@ -328,7 +337,93 @@ const LANGUES: DefModule = {
   ],
 };
 
-export const MODULES: Record<ModuleId, DefModule> = { accueil: ACCUEIL, calame: CALAME, alambic: ALAMBIC, langues: LANGUES };
+const MONDE: DefModule = {
+  id: "monde",
+  nom: "Le Portulan",
+  description: "L'espace pour apprendre la géographie : ses textes, ses onglets, et les titres de chaque partie.",
+  adresse: "/monde",
+  accent: "safran",
+  sections: [
+    {
+      titre: "Présentation",
+      champs: [
+        { cle: "meta.titre", libelle: "Titre de l'onglet du navigateur", defaut: "Le Portulan, apprendre la géographie" },
+        {
+          cle: "meta.description",
+          libelle: "Description pour Google",
+          defaut: "Les drapeaux, les capitales, les cartes, les continents et les monnaies des {pays} pays et territoires du monde, en quinze niveaux, avec un globe à explorer, des fiches mémoire et des duels.",
+          aide: "{pays} est remplacé par le nombre réel de pays et territoires.",
+          long: true,
+        },
+        { cle: "tete.titre", libelle: "Nom dans la barre du haut", defaut: "Le Portulan" },
+        { cle: "tete.sous", libelle: "Pastille de la barre du haut", defaut: "Géographie" },
+      ],
+    },
+    {
+      titre: "Jouer",
+      champs: [
+        { cle: "accueil.titre", libelle: "Titre", defaut: "Le monde, pays par pays" },
+        {
+          cle: "accueil.chapo",
+          libelle: "Introduction",
+          defaut: "Drapeaux, capitales, cartes, continents et monnaies : quinze niveaux par catégorie, du mousse à l'Atlas, pour connaître les {pays} pays et territoires du monde.",
+          aide: "{pays} est remplacé par le nombre réel de pays et territoires.",
+          long: true,
+        },
+        { cle: "accueil.categories", libelle: "Titre des catégories", defaut: "Choisis ta route" },
+        { cle: "accueil.rapides", libelle: "Titre des modes rapides", defaut: "Pour quelques minutes" },
+        { cle: "accueil.jour", libelle: "Titre du pays du jour", defaut: "Le pays du jour" },
+      ],
+    },
+    {
+      titre: "Carte",
+      champs: [
+        { cle: "carte.titre", libelle: "Titre", defaut: "La carte du monde" },
+        { cle: "carte.chapo", libelle: "Introduction", defaut: "Fais tourner le globe, touche un pays : son drapeau, sa capitale, sa monnaie, sa population et ses voisins.", long: true },
+      ],
+    },
+    {
+      titre: "Fiches",
+      champs: [
+        { cle: "fiches.titre", libelle: "Titre", defaut: "Fiches mémoire" },
+        { cle: "fiches.chapo", libelle: "Introduction", defaut: "Un drapeau d'un côté, tout ce qu'il faut savoir de l'autre. Ce que tu sais s'éloigne, ce qui t'échappe revient vite.", long: true },
+      ],
+    },
+    {
+      titre: "Atlas",
+      champs: [
+        { cle: "atlas.titre", libelle: "Titre", defaut: "L'atlas" },
+        { cle: "atlas.chapo", libelle: "Introduction", defaut: "Les {pays} pays et territoires du monde, avec leur capitale, leur drapeau et leurs chiffres.", long: true, aide: "{pays} est remplacé par le nombre réel de pays et territoires." },
+      ],
+    },
+    {
+      titre: "Duels",
+      champs: [
+        { cle: "duels.titre", libelle: "Titre", defaut: "Duels" },
+        { cle: "duels.chapo", libelle: "Introduction", defaut: "Dix questions, deux joueurs : la bonne réponse rapporte 100 points, la rapidité jusqu'à 50 de plus.", long: true },
+        { cle: "classement.titre", libelle: "Titre du classement", defaut: "Le classement" },
+      ],
+    },
+  ],
+  listes: [
+    {
+      id: "onglets",
+      titre: "Les onglets",
+      aide: "Renomme un onglet, change sa place, ou masque-le. Il en faut au moins un.",
+      nom: "nom",
+      champs: [{ cle: "nom", libelle: "Nom" }],
+      elements: [
+        { id: "accueil", valeurs: { nom: "Jouer" } },
+        { id: "carte", valeurs: { nom: "Carte" } },
+        { id: "fiches", valeurs: { nom: "Fiches" } },
+        { id: "atlas", valeurs: { nom: "Atlas" } },
+        { id: "duels", valeurs: { nom: "Duels" } },
+      ],
+    },
+  ],
+};
+
+export const MODULES: Record<ModuleId, DefModule> = { accueil: ACCUEIL, calame: CALAME, alambic: ALAMBIC, langues: LANGUES, monde: MONDE };
 export const estModule = (id: string): id is ModuleId => (IDS_MODULES as string[]).includes(id);
 
 export const ICONES_DISPONIBLES = ["Users", "Plane", "Briefcase", "Sun", "UtensilsCrossed", "HeartPulse", "House", "Smile", "CloudSun", "GraduationCap", "Building2", "Trees", "BookOpen", "Moon", "Star", "Globe", "Music", "Car", "ShoppingBag", "Dumbbell", "Landmark", "Laptop", "Leaf", "Heart", "Clapperboard", "Coffee", "Cpu", "Factory", "Hammer", "Lightbulb", "MapPin", "Newspaper", "Plug", "ShieldCheck", "Sparkles", "Sprout", "Tent", "Trophy", "UserRound", "Vote", "Wallet", "Zap", "PersonStanding", "Shirt", "PawPrint", "Scale", "TrendingUp", "Brain", "Clock", "Puzzle", "Quote", "Link2", "Activity", "Palette", "Feather", "Blocks", "Shapes", "Gauge", "Gem"];

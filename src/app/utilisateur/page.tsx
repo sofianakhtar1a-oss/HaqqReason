@@ -4,6 +4,7 @@ import {
   ArrowRight,
   BookOpen,
   BookOpenText,
+  Compass,
   Feather,
   FlaskConical,
   Languages,
@@ -17,12 +18,14 @@ import { MarqueAccueil } from "@/lib/client/acces";
 import { exigerCompte } from "@/lib/compte/session";
 import { remplir } from "@/lib/modules/modules";
 import { chargerModule, chiffresVocabulaire } from "@/lib/modules/page";
+import { NOMBRE_PAYS } from "@/lib/monde/chiffres";
 import { BandeauApercu } from "@/lib/modules/textes-client";
 
 const ICONES = {
   calame: Feather,
   alambic: FlaskConical,
   langues: Languages,
+  monde: Compass,
   bibliotheque: BookOpen,
   islam: BookOpenText,
 } as const;
@@ -30,6 +33,7 @@ const LIENS = {
   calame: "/ecrire",
   alambic: "/alambic",
   langues: "/langues",
+  monde: "/monde",
   bibliotheque: "/explorer",
   islam: "/islam",
 } as const;
@@ -37,6 +41,7 @@ const ACCENTS = {
   calame: "or",
   alambic: "amethyste",
   langues: "azur",
+  monde: "safran",
   bibliotheque: "emeraude",
   islam: "or",
 } as const;
@@ -55,7 +60,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function PageUtilisateur({ searchParams }: Props) {
   await exigerCompte("/utilisateur");
-  const [{ resolu, apercu }, chiffres] = await Promise.all([chargerModule("accueil", searchParams), chiffresVocabulaire()]);
+  const [{ resolu, apercu }, vocabulaire] = await Promise.all([chargerModule("accueil", searchParams), chiffresVocabulaire()]);
+  const chiffres = { ...vocabulaire, pays: NOMBRE_PAYS };
   const cartes = (resolu.listes.cartes ?? []).filter((c) => c.id in LIENS);
   // Les deux modules réservés demandent un mot de passe : la carte le dit avant le clic.
   const acces = await aAccesModules();
@@ -81,6 +87,7 @@ export default async function PageUtilisateur({ searchParams }: Props) {
           <span className="halo" data-accent="emeraude" />
           <span className="halo" data-accent="amethyste" />
           <span className="halo" data-accent="azur" />
+          <span className="halo" data-accent="safran" />
         </div>
         <h1 className="apparait text-4xl font-extrabold md:text-5xl">
           {resolu.textes.titre}
