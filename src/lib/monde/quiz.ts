@@ -638,9 +638,11 @@ function juger2(type: TypeQuestion, cible: Pays, reponse: string): Jugement | nu
  * Une partie de niveau : les pays du niveau, complétés jusqu'à 20 par des pays déjà vus
  * (ceux que le joueur choisit de revoir), dans un ordre mêlé.
  */
-export function partieDeNiveau(o: { categorie: CategorieId; niveau: number; graine: number; methode?: TypeQuestion | null; revision?: string[] }): Question[] {
+export function partieDeNiveau(o: { categorie: CategorieId; niveau: number; graine: number; methode?: TypeQuestion | null; revision?: string[]; difficulte?: "facile" | "normal" | "difficile" }): Question[] {
   const nouveaux = niveauxDe(o.categorie)[o.niveau - 1] ?? [];
-  const ctx: Contexte = { types: o.methode ? [o.methode] : typesDuNiveau(o.categorie, o.niveau), niveau: o.niveau };
+  // La difficulté des faux choix (et leur nombre) : plus éloignés en « facile », plus ressemblants en « difficile ».
+  const niveauChoix = o.difficulte === "facile" ? Math.max(1, o.niveau - 5) : o.difficulte === "difficile" ? Math.min(15, o.niveau + 5) : o.niveau;
+  const ctx: Contexte = { types: o.methode ? [o.methode] : typesDuNiveau(o.categorie, o.niveau), niveau: niveauChoix };
   const dejaVus = new Set(nouveaux);
   const revision = (o.revision ?? []).filter((c) => !dejaVus.has(c) && PAR_CODE.has(c));
   const codes = [...nouveaux, ...revision].filter((c) => typesPossibles(c, ctx).length > 0);

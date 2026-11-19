@@ -11,6 +11,7 @@ import type { ContinentId } from "@/lib/monde/types";
 import { useTextes } from "@/lib/modules/textes-client";
 import { FichePays } from "./FichePays";
 import { Drapeau } from "./figures";
+import { PortesHistoire } from "./Histoire";
 
 /*
  * L'atlas : tous les pays et territoires, leurs drapeaux, leurs capitales, leurs chiffres.
@@ -98,6 +99,8 @@ export function Atlas({ ouvert, onOuvrir, aller }: { ouvert: string | null; onOu
           </li>
         ))}
       </ul>
+
+      <PortesHistoire aller={aller} />
 
       <footer className="pt-credits">
         <h3>Sources</h3>

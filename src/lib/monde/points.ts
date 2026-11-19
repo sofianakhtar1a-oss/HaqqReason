@@ -73,8 +73,9 @@ export const DUCATS = {
   jour: 25,
 } as const;
 
-export type Joker = "seconde" | "moitie" | "coeur" | "sablier";
+export type Joker = "seconde" | "moitie" | "coeur" | "sablier" | "indice";
 export const JOKERS: Record<Joker, { nom: string; texte: string; prix: number }> = {
+  indice: { nom: "Indice", texte: "Un indice : le continent, une première lettre, un symbole.", prix: 40 },
   seconde: { nom: "Seconde chance", texte: "Une erreur ne coûte pas de cœur : tu peux rejouer la question.", prix: 120 },
   moitie: { nom: "Moitié-moitié", texte: "La moitié des mauvais choix disparaît.", prix: 160 },
   coeur: { nom: "Cœur de secours", texte: "Un cœur de plus, pour finir le niveau.", prix: 250 },

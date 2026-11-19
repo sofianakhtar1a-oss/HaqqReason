@@ -16,6 +16,7 @@ import { PartieCabinet } from "./Cabinet";
 import { Duels } from "./Duels";
 import { Explorer } from "./Explorer";
 import { Fiches } from "./Fiches";
+import { Histoire, type SujetHistoire, SUJETS_HISTOIRE } from "./Histoire";
 import { NommeLesTous } from "./NommeLesTous";
 import { type Lancement, Partie } from "./Partie";
 import "./portulan.css";
@@ -194,7 +195,11 @@ export function Portulan() {
             {route.onglet === "accueil" && <Accueil categorie={route.detail} onCategorie={detail("accueil")} lancer={setPartie} aller={aller} />}
             {route.onglet === "carte" && <Explorer focus={route.detail} onFocus={detail("carte")} />}
             {route.onglet === "fiches" && <Fiches />}
-            {route.onglet === "atlas" && <Atlas ouvert={route.detail} onOuvrir={detail("atlas")} aller={aller} />}
+            {route.onglet === "atlas" && (SUJETS_HISTOIRE as string[]).includes(route.detail ?? "") ? (
+              <Histoire sujet={route.detail as SujetHistoire} onRetour={() => detail("atlas")(null)} />
+            ) : (
+              route.onglet === "atlas" && <Atlas ouvert={route.detail} onOuvrir={detail("atlas")} aller={aller} />
+            )}
             {route.onglet === "duels" && <Duels sous={route.detail} onSous={detail("duels")} />}
           </>
         )}

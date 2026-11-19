@@ -326,5 +326,26 @@ for (const url of [CARTE_URL, CARTE_LEGERE_URL, CARTE_ULTRA_URL]) {
   for (const c of cab.CABINETS) for (const e of c.elements) if (e.drapeau) ok(`${c.id}/${e.id} : drapeau présent`, existsSync(`public/monde/emblemes/${e.drapeau}`));
 }
 
+/* ---------- Mieux apprendre et l'histoire ---------- */
+{
+  const ap = await import("../src/lib/monde/apprendre");
+  const hi = await import("../src/lib/monde/histoire");
+  for (const piege of ap.PIEGES) for (const c of piege.codes) ok(`piège : ${c} existe`, PAR_CODE.has(c), piege.texte.slice(0, 30));
+  for (const [c, t] of Object.entries(ap.PIEGES_CAPITALES)) ok(`piège de capitale : ${c}`, Boolean(PAR_CODE.get(c)?.capitale && t.includes(PAR_CODE.get(c)!.capitale!)), t);
+  ok("routes : l'Afrique des 54", ap.paysDuTheme("afrique").length === 54, String(ap.paysDuTheme("afrique").length));
+  ok("routes : les 27 de l'Union", ap.paysDuTheme("ue").length === 27, String(ap.paysDuTheme("ue").length));
+  ok("routes : la Ligue arabe", ap.paysDuTheme("la").length === 22, String(ap.paysDuTheme("la").length));
+  for (const t of ap.THEMES) ok(`route ${t.id} : assez de pays`, ap.paysDuTheme(t.id).length >= 8, String(ap.paysDuTheme(t.id).length));
+  ok("mentions", ap.mention(20) === "Félicitations du jury" && ap.mention(16) === "Très bien" && ap.mention(10) === "Passable" && ap.mention(9) === "À repasser");
+  for (const type of ["drapeau-nom", "pays-capitale", "pays-continent", "monnaie-pays", "pays-monnaie"] as const) {
+    if (!(type in TYPES)) continue;
+    const q = fabriquer(42, "fr", { types: [type], niveau: 5 }, type);
+    if (q) ok(`indice ${type}`, ap.indiceDe(q, q.options[0]?.texte).length > 5);
+  }
+  ok("géographes : identifiants uniques", new Set(hi.GEOGRAPHES.map((g) => g.id)).size === hi.GEOGRAPHES.length);
+  for (const v of hi.VOYAGES) for (const e of v.etapes) ok(`voyage ${v.id} : ${e.lieu}`, Math.abs(e.latlng[0]) <= 90 && Math.abs(e.latlng[1]) <= 180);
+  ok("cartographie : douze jalons", hi.CARTOGRAPHIE.length === 12);
+}
+
 console.log(echecs ? `\n${echecs} échec(s).` : `Tout est bon (${questions} questions de niveau vérifiées).`);
 process.exit(echecs ? 1 : 0);

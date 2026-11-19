@@ -1,7 +1,7 @@
 "use client";
 
-import { ArrowRight, Building2, Clock, Coins, Earth, Flag, Flame, Hash, Infinity as Infini, Landmark, Languages, Map as IconeCarte, Mountain, RotateCcw, Scale, Shuffle, Timer, Users, Waypoints, Zap } from "lucide-react";
-import { useMemo } from "react";
+import { ArrowRight, Building2, Clock, Coins, Earth, Flag, Flame, GraduationCap, Hash, Infinity as Infini, Landmark, Languages, Map as IconeCarte, Mountain, RotateCcw, Scale, Shuffle, Timer, Users, Waypoints, Zap } from "lucide-react";
+import { useMemo, useState } from "react";
 import { formatNombre, formatPopulation, formatSuperficie, jourDeParis, motCapitale, NOM_CONTINENT, paysDuJour } from "@/lib/monde/atlas";
 import { CATEGORIES, CATEGORIES_CLASSIQUES, CATEGORIES_NOUVELLES, type CategorieId, IDS_CATEGORIES } from "@/lib/monde/categories";
 import { NOMBRE_PAYS } from "@/lib/monde/chiffres";
@@ -11,6 +11,7 @@ import { ducats, maitrise, niveauCourant, niveauxReussis, paysConnus, regler, re
 import { useTextes } from "@/lib/modules/textes-client";
 import { CABINETS, estCabinet } from "@/lib/monde/cabinets";
 import type { CabinetId } from "@/lib/monde/types";
+import { Carnet, Decouvrir, MesErreurs, RoutesThematiques } from "./Apprendre";
 import { CartoucheCabinet, EcranCabinet } from "./Cabinet";
 import { Categorie } from "./Categorie";
 import { Ducats, RoseDesVents } from "./communs";
@@ -76,6 +77,7 @@ function Cartouche({ c, i, onCategorie }: { c: CategorieId; i: number; onCategor
 export function Accueil({ categorie, onCategorie, lancer, aller }: { categorie: string | null; onCategorie: (id: string | null) => void; lancer: (l: Lancement) => void; aller: (hash: string) => void }) {
   if (categorie && categorie in CATEGORIES) return <Categorie id={categorie as CategorieId} onRetour={() => onCategorie(null)} lancer={lancer} />;
   if (categorie?.startsWith("cabinet-") && estCabinet(categorie.slice(8))) return <EcranCabinet id={categorie.slice(8) as CabinetId} onRetour={() => onCategorie(null)} lancer={lancer} />;
+  if (categorie === "erreurs") return <MesErreurs onRetour={() => onCategorie(null)} lancer={lancer} />;
   return <Hub onCategorie={onCategorie} lancer={lancer} aller={aller} />;
 }
 
@@ -109,6 +111,7 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
     return meilleure!;
   }, [monde]);
   const xpAffichee = compte.enLigne && compte.connecte ? compte.xp : monde.profil.xp;
+  const [decouverte, setDecouverte] = useState<{ titre: string; codes: string[] } | null>(null);
 
   return (
     <div className="pt-hub">
@@ -160,6 +163,8 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
         </div>
       </section>
 
+      <Carnet aller={aller} />
+
       <section aria-labelledby="pt-routes">
         <h3 id="pt-routes" className="pt-sous-titre">
           {t("accueil.categories")}
@@ -182,6 +187,8 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
           ))}
         </div>
       </section>
+
+      <RoutesThematiques lancer={lancer} decouvrir={(titre, codes) => setDecouverte({ titre, codes })} />
 
       <section aria-labelledby="pt-cabinets">
         <h3 id="pt-cabinets" className="pt-sous-titre">
@@ -241,6 +248,12 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
             <span className="pt-rapide-texte">Les pays que ta mémoire est en train de perdre.</span>
             <span className="pt-rapide-record">{dues ? `${dues} à revoir` : "Rien à revoir aujourd'hui"}</span>
           </button>
+          <button type="button" className="pt-rapide" onClick={() => lancer(l.examen())}>
+            <GraduationCap className="pt-rapide-icone" aria-hidden="true" />
+            <span className="pt-rapide-nom">L&apos;examen</span>
+            <span className="pt-rapide-texte">20 questions, une note sur 20 et un certificat à imprimer.</span>
+            <span className="pt-rapide-record">{monde.records.examen ? `Meilleure note : ${monde.records.examen}/20` : "Pas encore passé"}</span>
+          </button>
           <button type="button" className="pt-rapide" onClick={() => lancer(l.rapide("tour"))}>
             <Shuffle className="pt-rapide-icone" aria-hidden="true" />
             <span className="pt-rapide-nom">Le tour du monde</span>
@@ -273,6 +286,8 @@ function Hub({ onCategorie, lancer, aller }: { onCategorie: (id: string | null) 
           </div>
         </div>
       </section>
+
+      {decouverte && <Decouvrir titre={decouverte.titre} codes={decouverte.codes} categorie={null} onFermer={() => setDecouverte(null)} />}
 
       <section className="pt-reglages" aria-label="Réglages">
         <label className="pt-interrupteur">

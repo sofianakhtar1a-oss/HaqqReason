@@ -1,12 +1,13 @@
 "use client";
 
-import { ArrowLeft, Lock, Sailboat } from "lucide-react";
+import { ArrowLeft, BookOpen, Lock, Sailboat } from "lucide-react";
 import { useState } from "react";
 import { pays } from "@/lib/monde/atlas";
 import { CATEGORIES, type CategorieId, TYPES, type TypeQuestion, typesDe } from "@/lib/monde/categories";
 import { grade, NB_NIVEAUX, niveauxDe, QUESTIONS_PAR_NIVEAU } from "@/lib/monde/niveaux";
 import { etoiles, maitrise, niveauCourant, niveauOuvert, useMonde } from "@/lib/monde/progression";
 import { ICONES_CATEGORIES } from "./Accueil";
+import { Decouvrir } from "./Apprendre";
 import { Etoiles } from "./communs";
 import { type Lancement, useLancer } from "./Partie";
 
@@ -21,6 +22,7 @@ export function Categorie({ id, onRetour, lancer }: { id: CategorieId; onRetour:
   const monde = useMonde();
   const l = useLancer();
   const [methode, setMethode] = useState<TypeQuestion | null>(null);
+  const [decouvre, setDecouvre] = useState<number | null>(null);
   const niveaux = niveauxDe(id);
   const courant = niveauCourant(monde, id);
   const m = maitrise(monde, id);
@@ -91,10 +93,27 @@ export function Categorie({ id, onRetour, lancer }: { id: CategorieId; onRetour:
                 </span>
                 <Etoiles n={e} />
               </button>
+              <button type="button" className="pt-escale-decouvrir" onClick={() => setDecouvre(n)} aria-label={`Découvrir les pays du niveau ${n}`}>
+                <BookOpen className="size-4" aria-hidden="true" />
+                <span>Découvrir</span>
+              </button>
             </li>
           );
         })}
       </ol>
+      {decouvre !== null && (
+        <Decouvrir
+          titre={`${def.nom}, niveau ${decouvre}`}
+          codes={niveaux[decouvre - 1] ?? []}
+          categorie={id}
+          onFermer={() => setDecouvre(null)}
+          onJouer={niveauOuvert(monde, id, decouvre) ? () => {
+            const n = decouvre;
+            setDecouvre(null);
+            lancer(l.niveau(id, n, methode));
+          } : undefined}
+        />
+      )}
     </div>
   );
 }

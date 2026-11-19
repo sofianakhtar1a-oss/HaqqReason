@@ -1,20 +1,21 @@
 "use client";
 
-import { ArrowRight, Check, Hourglass, LocateFixed, Minus, Plus, RotateCcw, Shuffle, Undo2, X } from "lucide-react";
+import { ArrowRight, Check, Hourglass, Lightbulb, LocateFixed, Minus, Plus, Printer, RotateCcw, Shuffle, Undo2, X } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { eclat, pluieDeLettres } from "@/lib/langues/feux";
-import { formatPopulation, formatSuperficie, motCapitale, NOM_CONTINENT, pays } from "@/lib/monde/atlas";
+import { formatPopulation, formatSuperficie, motCapitale, NOM_CONTINENT, PAR_CODE, pays } from "@/lib/monde/atlas";
 import { CATEGORIES, type CategorieId, TYPES, type TypeQuestion } from "@/lib/monde/categories";
 import { envoyerReponse } from "@/lib/monde/compte-client";
-import { deriver, nouvelleGraine } from "@/lib/monde/hasard";
+import { deriver, hasard, melanger, nouvelleGraine } from "@/lib/monde/hasard";
 import { COEURS, grade, NB_NIVEAUX } from "@/lib/monde/niveaux";
 import { baseDe, gainDe, type Joker, JOKERS } from "@/lib/monde/points";
 import { useRecits } from "@/lib/monde/recits-client";
-import { aReviserAvant, battreRecord, type Bilan, depenser, ducats, finirNiveau, noterReponse, revisionsDues, useMonde } from "@/lib/monde/progression";
-import { categorieDe, consigne, juger, partieDeNiveau, type Question, questionMelangee, questionSur } from "@/lib/monde/quiz";
+import { aReviserAvant, battreRecord, battreRecordDe, type Bilan, depenser, ducats, erreursRecentes, finirNiveau, noterErreur, noterReponse, revisionsDues, useMonde } from "@/lib/monde/progression";
+import { categorieDe, consigne, fabriquer, juger, partieDeNiveau, type Question, questionMelangee, questionSur } from "@/lib/monde/quiz";
 import type { Jugement } from "@/lib/monde/texte";
 import type { CabinetId, MethodeCabinet } from "@/lib/monde/types";
+import { indiceDe, mention, piegeEntre, PIEGES_CAPITALES, paysDuTheme, QUESTIONS_EXAMEN, THEMES, type ThemeId } from "@/lib/monde/apprendre";
 import { dire, taire } from "@/lib/monde/voix";
 import { BoutonVoix, Chrono, Coeurs, Ducats, Etoiles } from "./communs";
 import { Drapeau, MiniContinent, Silhouette } from "./figures";
@@ -34,7 +35,7 @@ import { Globe, type GlobeRef } from "./Globe";
 export type Lancement = {
   cle: string;
   /** cabinet : un niveau d'un cabinet (Cabinet.tsx) ; nomme : « Nomme-les tous » (NommeLesTous.tsx). */
-  sorte: "niveau" | "tour" | "eclair" | "survie" | "revision" | "cabinet" | "nomme";
+  sorte: "niveau" | "tour" | "eclair" | "survie" | "revision" | "cabinet" | "nomme" | "theme" | "erreurs" | "examen";
   categorie?: CategorieId;
   niveau?: number;
   methode?: TypeQuestion | null;
@@ -42,6 +43,8 @@ export type Lancement = {
   methodeCabinet?: MethodeCabinet | null;
   /** Pour « Nomme-les tous » : continent:afrique, monde, cabinet:fr-departements… */
   liste?: string;
+  /** Une route thématique : l'Afrique, l'Union européenne, la Ligue arabe… */
+  theme?: ThemeId;
   titre: string;
 };
 
@@ -49,7 +52,7 @@ const mouvementReduit = () => typeof window !== "undefined" && window.matchMedia
 const DUREE_ECLAIR = 60_000;
 
 function dureeQuestion(l: Lancement, q: Question): number | null {
-  if (l.sorte === "revision" || l.sorte === "eclair") return null;
+  if (l.sorte === "revision" || l.sorte === "eclair" || l.sorte === "erreurs") return null;
   const r = TYPES[q.type].reponse;
   const base = l.sorte === "survie" ? 10_000 : l.sorte === "tour" ? 15_000 : (l.niveau ?? 1) <= 5 ? 20_000 : (l.niveau ?? 1) <= 10 ? 15_000 : 12_000;
   return base + (r === "ecrit" ? 10_000 : r === "clic" || r === "placer" ? 6_000 : r === "coloriage" || r === "classer" || r === "puzzle" ? 15_000 : 0);
@@ -77,7 +80,7 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
   const monde = useMonde();
   const [graine] = useState(nouvelleGraine);
   const niveauxFaits = Object.keys(monde.niveaux).length;
-  const coeursMax = lancement.sorte === "survie" ? 1 : lancement.sorte === "niveau" || lancement.sorte === "tour" ? COEURS : Infinity;
+  const coeursMax = lancement.sorte === "survie" ? 1 : lancement.sorte === "niveau" || lancement.sorte === "tour" || lancement.sorte === "theme" ? COEURS : Infinity;
 
   /** Les questions prévues d'avance (niveau, tour, révision) ; les modes rapides en ajoutent au fil de l'eau. */
   const [questions, setQuestions] = useState<Question[]>(() => {
@@ -85,7 +88,37 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
     if (lancement.sorte === "niveau" && lancement.categorie && lancement.niveau) {
       // Les pays du niveau, complétés par ceux des niveaux d'avant que la mémoire perd le plus.
       const revision = lancement.niveau > 1 ? aReviserAvant(monde, lancement.categorie, lancement.niveau, 8) : [];
-      return partieDeNiveau({ categorie: lancement.categorie, niveau: lancement.niveau, graine: g, methode: lancement.methode, revision });
+      return partieDeNiveau({ categorie: lancement.categorie, niveau: lancement.niveau, graine: g, methode: lancement.methode, revision, difficulte: monde.profil.difficulte });
+    }
+    if (lancement.sorte === "theme" && lancement.theme) {
+      // Une route thématique : 20 questions sur ses pays (drapeau, capitale, carte), un niveau moyen.
+      const codes = melanger(paysDuTheme(lancement.theme), hasard(g));
+      const sortie: Question[] = [];
+      for (let i = 0; sortie.length < 20 && i < codes.length * 3; i++) {
+        const code = codes[i % codes.length];
+        const cat = (["drapeaux", "capitales", "cartes"] as const)[(i + (g % 3)) % 3];
+        const q = questionSur(deriver(g, i), cat, code, 8);
+        if (q && !sortie.some((x) => x.cible === q.cible && categorieDe(x.type) === cat)) sortie.push(q);
+      }
+      return sortie;
+    }
+    if (lancement.sorte === "erreurs") {
+      // Les erreurs des sept derniers jours, une question par erreur (la même méthode), sans doublon.
+      const vues = new Set<string>();
+      const sortie: Question[] = [];
+      for (const [i, x] of erreursRecentes(monde).reverse().entries()) {
+        const cle = `${x.t}:${x.c}`;
+        if (vues.has(cle) || !(x.t in TYPES) || !PAR_CODE.has(x.c)) continue;
+        vues.add(cle);
+        const q = fabriquer(deriver(g, i), x.c, { types: [x.t as TypeQuestion], niveau: 8 }, x.t as TypeQuestion);
+        if (q) sortie.push(q);
+        if (sortie.length >= 20) break;
+      }
+      return sortie;
+    }
+    if (lancement.sorte === "examen") {
+      const n = niveauRapide(niveauxFaits);
+      return Array.from({ length: QUESTIONS_EXAMEN }, (_, i) => questionMelangee(deriver(g, i), n, false)).filter((q): q is Question => q !== null);
     }
     if (lancement.sorte === "revision") {
       const dues = revisionsDues(monde).slice(0, 20);
@@ -119,6 +152,7 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
   const [record, setRecord] = useState(false);
   const [finEclair, setFinEclair] = useState<number | null>(null);
   const [toucheGlobe, setToucheGlobe] = useState<string | null>(null);
+  const [indice, setIndice] = useState<string | null>(null);
   const globe = useRef<GlobeRef>(null);
   const zoneChoix = useRef<HTMLDivElement>(null);
   const champ = useRef<HTMLInputElement>(null);
@@ -140,6 +174,10 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
         if (reussi && !mouvementReduit()) setTimeout(() => pluieDeLettres(document.querySelector(".pt-fin-titre"), b.etoiles === 3 ? "aurore" : "ambre", grade(lancement.niveau!).nom), 380);
       } else if (lancement.sorte === "eclair" || lancement.sorte === "survie") {
         setRecord(battreRecord(lancement.sorte, r.bonnes));
+      } else if (lancement.sorte === "theme" && lancement.theme && r.coeurs > 0) {
+        setRecord(battreRecordDe(`theme:${lancement.theme}`, r.bonnes));
+      } else if (lancement.sorte === "examen") {
+        setRecord(battreRecordDe("examen", r.bonnes));
       }
     },
     [lancement],
@@ -173,6 +211,7 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
     setSeconde(false);
     setSablier(false);
     setToucheGlobe(null);
+    setIndice(null);
     setPhase("question");
   }, [bonnes, coeurs, fautes, finEclair, index, lancement.sorte, questions.length, sansFin, terminer, niveauxFaits, graine]);
 
@@ -203,6 +242,9 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
       } else {
         setFautes((f) => f + 1);
         setRateList((l) => [...l, { q, reponse }]);
+        // L'erreur reste sept jours (« Mes erreurs ») ; un pays pris pour un autre devient une confusion.
+        const confondu = PAR_CODE.has(reponse) ? reponse : undefined;
+        noterErreur(q.type, q.cible, reponse, confondu);
         if (Number.isFinite(coeursMax)) {
           setBrise(coeurs - 1);
           setCoeurs((c) => c - 1);
@@ -280,17 +322,19 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
 
   /* ---------- Les jokers ---------- */
   const solde = ducats(monde);
-  const jokers: Joker[] = lancement.sorte === "niveau" || lancement.sorte === "tour" || lancement.sorte === "survie" ? ["seconde", "moitie", "sablier", "coeur"] : [];
+  const jokers: Joker[] = lancement.sorte === "niveau" || lancement.sorte === "tour" || lancement.sorte === "survie" || lancement.sorte === "theme" ? ["indice", "seconde", "moitie", "sablier", "coeur"] : [];
   const jokerPossible = (j: Joker) => {
     if (!q || phase !== "question" || solde < JOKERS[j].prix) return false;
     if (j === "seconde") return !seconde;
     if (j === "moitie") return q.options.length > 2 && masques.length === 0;
     if (j === "sablier") return avecChrono && !sablier;
+    if (j === "indice") return !indice;
     return coeurs < 5 && Number.isFinite(coeursMax);
   };
   const jouerJoker = (j: Joker) => {
     if (!jokerPossible(j) || !q || !depenser(JOKERS[j].prix)) return;
     if (j === "seconde") setSeconde(true);
+    if (j === "indice") setIndice(indiceDe(q, q.options.find((o) => juger(q.type, q.cible, o.id) !== "faux")?.texte));
     if (j === "sablier") setSablier(true);
     if (j === "coeur") setCoeurs((c) => c + 1);
     if (j === "moitie") {
@@ -352,6 +396,13 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
               repondre(code);
             }} />
           </div>
+
+          {indice && phase === "question" && (
+            <p className="pt-indice" role="status">
+              <Lightbulb className="size-4" aria-hidden="true" />
+              {indice}
+            </p>
+          )}
 
           {def.reponse === "ecrit" ? (
             <form
@@ -590,6 +641,7 @@ export function ContenuOption({ q, o }: { q: Question; o: Question["options"][nu
 }
 
 function IconeJoker({ j }: { j: Joker }) {
+  if (j === "indice") return <Lightbulb className="size-4" aria-hidden="true" />;
   if (j === "seconde") return <Undo2 className="size-4" aria-hidden="true" />;
   if (j === "moitie") return <Shuffle className="size-4" aria-hidden="true" />;
   if (j === "sablier") return <Hourglass className="size-4" aria-hidden="true" />;
@@ -628,6 +680,7 @@ function Retour({ q, jugement, choix, sansCoeur, gain, onSuivant, auto }: { q: Q
         {jugement === "faux" && (
           <span className="pt-retour-fiche">{p.capitale ? `${motCapitale(p)} : ${p.capitale}, en ${NOM_CONTINENT[p.continent]}.` : `En ${NOM_CONTINENT[p.continent]}.`}</span>
         )}
+        {jugement === "faux" && <Piege q={q} choix={choix} />}
       </div>
       {!auto && (
         <button type="button" className="bouton bouton-principal" onClick={onSuivant} autoFocus>
@@ -636,6 +689,33 @@ function Retour({ q, jugement, choix, sansCoeur, gain, onSuivant, auto }: { q: Q
         </button>
       )}
     </div>
+  );
+}
+
+/** Après une erreur : les deux drapeaux côte à côte, et le moyen de ne plus les confondre. */
+function Piege({ q, choix }: { q: Question; choix: string | null }) {
+  const def = TYPES[q.type];
+  const autre = choix && choix !== q.cible && PAR_CODE.has(choix) ? choix : null;
+  const surDrapeau = def.reponse === "drapeau" || def.invite === "drapeau" || def.invite === "drapeau-gris" || def.invite === "drapeau-devoile";
+  const piege = autre ? piegeEntre(q.cible, autre, surDrapeau ? "drapeau" : undefined) ?? piegeEntre(q.cible, autre) : undefined;
+  const capitale = def.reponse === "capitale" || def.ecrit === "capitale" || def.invite === "capitale" ? PIEGES_CAPITALES[q.cible] : undefined;
+  if (!autre && !capitale) return null;
+  return (
+    <span className="pt-piege">
+      {autre && surDrapeau && (
+        <span className="pt-confusion" aria-hidden="true">
+          <span>
+            <Drapeau code={autre} />
+            <span>{pays(autre).nom}</span>
+          </span>
+          <span>
+            <Drapeau code={q.cible} />
+            <span>{pays(q.cible).nom}</span>
+          </span>
+        </span>
+      )}
+      {(piege || capitale) && <span className="pt-piege-texte">{piege?.texte ?? capitale}</span>}
+    </span>
   );
 }
 
@@ -649,7 +729,11 @@ function Intro({ lancement, nombre, coeurs, chrono, onCommencer, onFermer }: { l
         ? "Une seule vie : jusqu'à la première erreur."
         : lancement.sorte === "revision"
           ? `${nombre} pays à revoir, sans chrono ni cœurs.`
-          : `${nombre} questions, ${coeurs} cœurs${chrono ? " et un chrono pour chaque question" : ""}.`;
+          : lancement.sorte === "erreurs"
+            ? `${nombre} question${nombre > 1 ? "s" : ""} manquée${nombre > 1 ? "s" : ""} ces sept derniers jours, sans chrono ni cœurs.`
+            : lancement.sorte === "examen"
+              ? `${nombre} questions de toutes les catégories, sans joker ni cœurs. Une note sur 20, et un certificat à imprimer.`
+              : `${nombre} questions, ${coeurs} cœurs${chrono ? " et un chrono pour chaque question" : ""}.`;
   return (
     <div className="pt-intro">
       {g && (
@@ -661,7 +745,7 @@ function Intro({ lancement, nombre, coeurs, chrono, onCommencer, onFermer }: { l
       <p className="pt-intro-regles">{regles}</p>
       {nombre === 0 ? (
         <>
-          <p className="pt-intro-regles">Rien à revoir pour l&apos;instant : ta mémoire tient bon. Reviens demain.</p>
+          <p className="pt-intro-regles">{lancement.sorte === "erreurs" ? "Aucune erreur ces sept derniers jours : rien à rejouer." : "Rien à revoir pour l'instant : ta mémoire tient bon. Reviens demain."}</p>
           <button type="button" className="bouton bouton-discret" onClick={onFermer}>
             Retour
           </button>
@@ -726,7 +810,15 @@ function Fin({
         ? record
           ? "Nouveau record !"
           : "Fin de la traversée"
-        : "Terminé";
+        : lancement.sorte === "examen"
+          ? `${bonnes}/20 : ${mention(bonnes)}`
+          : lancement.sorte === "theme"
+            ? coeurs > 0
+              ? record
+                ? "Nouveau record !"
+                : "Route accomplie"
+              : "Naufrage…"
+            : "Terminé";
   const sousTitre = niveau ? (reussi ? (bilan?.premiereFois && g ? g.devise : `${bonnes} bonnes réponses sur ${total}`) : "Les cœurs sont épuisés. Les pays manqués t'attendent ci-dessous : revois-les, puis reprends la mer.") : `${bonnes} bonne${bonnes > 1 ? "s" : ""} réponse${bonnes > 1 ? "s" : ""}${total ? ` sur ${total}` : ""}`;
   const suivantPossible = niveau && reussi && (lancement.niveau ?? 15) < NB_NIVEAUX;
   const uniques = [...new Map(rates.map((r) => [r.q.cible, r])).values()];
@@ -764,6 +856,7 @@ function Fin({
           </div>
         )}
       </dl>
+      {lancement.sorte === "examen" && <Certificat note={bonnes} />}
       {savais && (
         <aside className="pt-fiche-savais pt-fin-savais" aria-label="Le savais-tu ?">
           <p className="pt-fiche-savais-titre">
@@ -813,10 +906,61 @@ function Fin({
   );
 }
 
+/** Le certificat de l'examen : un parchemin à imprimer, au nom qu'on veut. */
+function Certificat({ note }: { note: number }) {
+  const [nom, setNom] = useState("");
+  const [date] = useState(() => new Intl.DateTimeFormat("fr-FR", { dateStyle: "long" }).format(new Date()));
+  return (
+    <section className="pt-certificat-zone" aria-label="Le certificat">
+      <label className="pt-certificat-nom">
+        <span>Ton nom sur le certificat</span>
+        <input value={nom} onChange={(e) => setNom(e.target.value.slice(0, 60))} placeholder="Prénom et nom" autoComplete="name" />
+      </label>
+      <div className="pt-certificat" data-reussi={note >= 10 || undefined}>
+        <p className="pt-certificat-sur">Le Portulan</p>
+        <h3 className="pt-certificat-titre">Certificat de géographie</h3>
+        <p className="pt-certificat-texte">
+          décerné à <strong>{nom.trim() || "…………………………"}</strong>
+          <br />
+          pour l&apos;examen du {date}
+        </p>
+        <p className="pt-certificat-note">
+          <span className="tabular-nums">{note}</span>/20
+        </p>
+        <p className="pt-certificat-mention">{mention(note)}</p>
+        <span className="pt-certificat-sceau" aria-hidden="true">
+          <RoseSceau />
+        </span>
+      </div>
+      <button type="button" className="bouton bouton-principal" onClick={() => window.print()}>
+        <Printer className="size-4" aria-hidden="true" />
+        Imprimer le certificat
+      </button>
+    </section>
+  );
+}
+
+/** Le sceau de cire : une rose des vents en relief. */
+function RoseSceau() {
+  return (
+    <svg viewBox="-50 -50 100 100">
+      <circle r="44" className="pt-sceau-cire" />
+      <circle r="35" className="pt-sceau-trait" />
+      {[0, 45, 90, 135, 180, 225, 270, 315].map((a) => (
+        <path key={a} d={a % 90 === 0 ? "M0 -30 L6 0 L0 6 L-6 0 Z" : "M0 -20 L4 0 L0 4 L-4 0 Z"} transform={`rotate(${a})`} className="pt-sceau-branche" />
+      ))}
+      <circle r="4" className="pt-sceau-trait" />
+    </svg>
+  );
+}
+
 export function useLancer() {
   return useMemo(
     () => ({
       niveau: (categorie: CategorieId, niveau: number, methode: TypeQuestion | null = null): Lancement => ({ cle: `${Date.now()}`, sorte: "niveau", categorie, niveau, methode, titre: `${CATEGORIES[categorie].nom} · niveau ${niveau}` }),
+      theme: (theme: ThemeId): Lancement => ({ cle: `${Date.now()}`, sorte: "theme", theme, titre: THEMES.find((t) => t.id === theme)?.nom ?? "Route thématique" }),
+      erreurs: (): Lancement => ({ cle: `${Date.now()}`, sorte: "erreurs", titre: "Mes erreurs" }),
+      examen: (): Lancement => ({ cle: `${Date.now()}`, sorte: "examen", titre: "L'examen" }),
       rapide: (sorte: "tour" | "eclair" | "survie" | "revision"): Lancement => ({
         cle: `${Date.now()}`,
         sorte,

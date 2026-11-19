@@ -1,0 +1,310 @@
+/*
+ * Le Portulan : l'histoire de la géographie. Le cabinet des géographes, les grands voyages
+ * (des étapes datées, tracées sur le globe) et une brève histoire de la cartographie.
+ * Textes écrits pour le Portulan ; dates et étapes d'après les ouvrages de référence
+ * (les étapes des voyages sont arrondies : ce sont des repères, pas des relevés).
+ */
+
+export type Embleme = "astrolabe" | "rose" | "voile" | "plume" | "globe" | "boussole" | "sextant" | "caravane";
+
+export type Geographe = {
+  id: string;
+  nom: string;
+  dates: string;
+  lieu: string;
+  oeuvre: string;
+  texte: string;
+  legs: string;
+  embleme: Embleme;
+};
+
+export const GEOGRAPHES: readonly Geographe[] = [
+  {
+    id: "ptolemee",
+    nom: "Claude Ptolémée",
+    dates: "vers 100 – vers 170",
+    lieu: "Alexandrie",
+    oeuvre: "La Géographie",
+    texte: "Il dresse la liste de quelque huit mille lieux, chacun avec sa latitude et sa longitude, et explique comment projeter la sphère sur une surface plane.",
+    legs: "L'idée même de coordonnées : son livre, traduit en arabe puis en latin, a guidé les cartographes pendant quatorze siècles.",
+    embleme: "astrolabe",
+  },
+  {
+    id: "khwarizmi",
+    nom: "Al-Khwârizmî",
+    dates: "vers 780 – vers 850",
+    lieu: "Bagdad, la Maison de la sagesse",
+    oeuvre: "Le Livre de l'image de la Terre (833)",
+    texte: "Le mathématicien qui a donné son nom à l'algorithme révise Ptolémée : plus de deux mille lieux, des côtes redessinées, une Méditerranée enfin à la bonne longueur.",
+    legs: "La géographie devient une science de mesure, corrigée par les observations des voyageurs et des astronomes.",
+    embleme: "astrolabe",
+  },
+  {
+    id: "ibn-fadlan",
+    nom: "Ahmad ibn Fadlân",
+    dates: "ambassade de 921 – 922",
+    lieu: "De Bagdad à la Volga",
+    oeuvre: "La Risâla, le récit de son ambassade",
+    texte: "Envoyé du calife al-Muqtadir auprès des Bulgares de la Volga, il traverse l'Asie centrale par un hiver terrible et décrit les peuples rencontrés, dont les Rus.",
+    legs: "L'un des plus anciens témoignages écrits sur l'Europe de l'Est et les marchands scandinaves.",
+    embleme: "caravane",
+  },
+  {
+    id: "ibn-hawqal",
+    nom: "Ibn Hawqal",
+    dates: "voyages de 943 à 973",
+    lieu: "Né à Nisibe, en haute Mésopotamie",
+    oeuvre: "L'Image de la Terre (Sûrat al-Ard)",
+    texte: "Trente ans de route, d'al-Andalus à l'Asie centrale, de la Sicile aux portes du Sahara : il décrit les villes, les routes, les marchés et les cultures de chaque province.",
+    legs: "Une géographie vécue, accompagnée de cartes de chaque région du monde musulman.",
+    embleme: "caravane",
+  },
+  {
+    id: "muqaddasi",
+    nom: "Al-Muqaddasî",
+    dates: "vers 945 – vers 991",
+    lieu: "Jérusalem",
+    oeuvre: "La Meilleure Répartition pour la connaissance des provinces (985)",
+    texte: "Il n'écrit que ce qu'il a vu ou vérifié auprès de témoins sûrs, et décrit pour chaque province les distances, les monnaies, les poids, les eaux et les accents.",
+    legs: "La méthode du géographe de terrain : observer, comparer, citer ses sources.",
+    embleme: "plume",
+  },
+  {
+    id: "biruni",
+    nom: "Al-Bîrûnî",
+    dates: "973 – vers 1050",
+    lieu: "Khwarezm, sur l'Amou-Daria",
+    oeuvre: "Le Livre de l'Inde, et ses traités d'astronomie",
+    texte: "Du haut d'une montagne, en mesurant l'abaissement de l'horizon, il calcule le rayon de la Terre à quelques dizaines de kilomètres près de la valeur moderne.",
+    legs: "La mesure de la Terre par la trigonométrie, et une curiosité sans frontières pour les autres civilisations.",
+    embleme: "sextant",
+  },
+  {
+    id: "bakri",
+    nom: "Al-Bakrî",
+    dates: "vers 1014 – 1094",
+    lieu: "Huelva et Cordoue, en al-Andalus",
+    oeuvre: "Le Livre des routes et des royaumes (1068)",
+    texte: "Sans jamais quitter al-Andalus, il rassemble les récits des marchands et des archives pour décrire l'Afrique du Nord et l'empire du Ghana, ses villes et son or.",
+    legs: "Le témoignage le plus précieux sur l'Afrique de l'Ouest médiévale.",
+    embleme: "plume",
+  },
+  {
+    id: "idrisi",
+    nom: "Al-Idrîsî",
+    dates: "1100 – vers 1165",
+    lieu: "Né à Ceuta, travaille à Palerme",
+    oeuvre: "Le Livre de Roger (1154) et sa carte du monde",
+    texte: "Pour le roi Roger II de Sicile, il dresse pendant quinze ans une carte du monde connu, le sud en haut, découpée en soixante-dix feuilles, et un planisphère d'argent.",
+    legs: "La carte du monde la plus juste de son temps, recopiée pendant trois siècles.",
+    embleme: "globe",
+  },
+  {
+    id: "yaqut",
+    nom: "Yâqût al-Hamawî",
+    dates: "1179 – 1229",
+    lieu: "Bagdad, Merv, Alep",
+    oeuvre: "Le Dictionnaire des pays",
+    texte: "Ancien esclave devenu libraire, il range par ordre alphabétique des milliers de villes, de montagnes et de fleuves, avec leur histoire et leurs savants.",
+    legs: "La première grande encyclopédie géographique.",
+    embleme: "plume",
+  },
+  {
+    id: "polo",
+    nom: "Marco Polo",
+    dates: "1254 – 1324",
+    lieu: "Venise",
+    oeuvre: "Le Devisement du monde",
+    texte: "Parti à dix-sept ans, il passe dix-sept ans au service de Kubilai Khan, puis rentre par la mer. Prisonnier à Gênes, il dicte ses souvenirs à un compagnon de cellule.",
+    legs: "L'Asie entre dans l'imaginaire européen ; Christophe Colomb annotera son exemplaire.",
+    embleme: "caravane",
+  },
+  {
+    id: "ibn-battuta",
+    nom: "Ibn Battûta",
+    dates: "1304 – vers 1369",
+    lieu: "Tanger",
+    oeuvre: "La Rihla, dictée à Ibn Juzayy (1355)",
+    texte: "Parti pour le pèlerinage à vingt et un ans, il voyage près de trente ans, de Tombouctou à la Chine : plus de cent mille kilomètres, à pied, à cheval, en bateau.",
+    legs: "Le plus grand voyageur de son temps, et un regard unique sur le monde musulman du XIVe siècle.",
+    embleme: "rose",
+  },
+  {
+    id: "zheng-he",
+    nom: "Zheng He",
+    dates: "1371 – 1433",
+    lieu: "Yunnan, puis Nankin",
+    oeuvre: "Sept expéditions dans l'océan Indien (1405 – 1433)",
+    texte: "Amiral musulman de la dynastie Ming, il commande des flottes de dizaines, parfois de centaines de navires, jusqu'à l'Arabie et la côte orientale de l'Afrique.",
+    legs: "Des routes maritimes tracées un siècle avant les Portugais.",
+    embleme: "voile",
+  },
+  {
+    id: "piri-reis",
+    nom: "Piri Reis",
+    dates: "vers 1470 – 1553",
+    lieu: "Gallipoli, amiral ottoman",
+    oeuvre: "Sa carte du monde (1513) et le Livre de la mer (1521)",
+    texte: "Sur une peau de gazelle, il compile une vingtaine de cartes, dont une de Colomb, et place l'Afrique et l'Amérique du Sud de part et d'autre de l'Atlantique avec une précision rare pour l'époque.",
+    legs: "L'une des plus anciennes cartes conservées montrant le Nouveau Monde.",
+    embleme: "boussole",
+  },
+  {
+    id: "magellan",
+    nom: "Fernand de Magellan",
+    dates: "vers 1480 – 1521",
+    lieu: "Portugal, au service de l'Espagne",
+    oeuvre: "Le premier tour du monde (1519 – 1522)",
+    texte: "Il trouve le passage vers le Pacifique au sud de l'Amérique, mais meurt aux Philippines. Juan Sebastián Elcano ramène dix-huit survivants en Espagne.",
+    legs: "La preuve, par le voyage, que tous les océans communiquent.",
+    embleme: "voile",
+  },
+  {
+    id: "mercator",
+    nom: "Gerardus Mercator",
+    dates: "1512 – 1594",
+    lieu: "Flandre, puis Duisbourg",
+    oeuvre: "Sa projection (1569) et le premier « atlas »",
+    texte: "Sa carte conserve les angles : une route à cap constant y devient une ligne droite, au prix de terres polaires démesurément agrandies.",
+    legs: "La carte des marins, et le mot « atlas » pour un recueil de cartes.",
+    embleme: "globe",
+  },
+  {
+    id: "humboldt",
+    nom: "Alexander von Humboldt",
+    dates: "1769 – 1859",
+    lieu: "Berlin",
+    oeuvre: "Le voyage aux Amériques (1799 – 1804) et Cosmos",
+    texte: "Il mesure tout, des Andes à l'Orénoque, et montre que la végétation change avec l'altitude comme avec la latitude.",
+    legs: "La géographie physique moderne, et l'idée que la nature forme un tout.",
+    embleme: "sextant",
+  },
+];
+
+/* ---------- Les grands voyages ---------- */
+
+export type Etape = { lieu: string; latlng: [number, number]; date?: string; note?: string };
+export type Voyage = { id: string; nom: string; qui: string; dates: string; texte: string; etapes: Etape[] };
+
+export const VOYAGES: readonly Voyage[] = [
+  {
+    id: "ibn-battuta",
+    nom: "La Rihla d'Ibn Battûta",
+    qui: "Ibn Battûta",
+    dates: "1325 – 1354",
+    texte: "Près de trente ans de voyage, de Tanger à la Chine, puis jusqu'à Tombouctou.",
+    etapes: [
+      { lieu: "Tanger", latlng: [35.77, -5.8], date: "1325", note: "Le départ, pour le pèlerinage." },
+      { lieu: "Tunis", latlng: [36.8, 10.18] },
+      { lieu: "Alexandrie", latlng: [31.2, 29.92], date: "1326" },
+      { lieu: "Le Caire", latlng: [30.04, 31.24] },
+      { lieu: "Damas", latlng: [33.51, 36.29] },
+      { lieu: "La Mecque", latlng: [21.42, 39.83], date: "1326", note: "Le premier pèlerinage." },
+      { lieu: "Bagdad", latlng: [33.31, 44.36], date: "1327" },
+      { lieu: "Aden", latlng: [12.8, 45.03], date: "1330" },
+      { lieu: "Mogadiscio", latlng: [2.04, 45.34], date: "1331" },
+      { lieu: "Kilwa", latlng: [-8.96, 39.51] },
+      { lieu: "Constantinople", latlng: [41.01, 28.98], date: "1332" },
+      { lieu: "Samarcande", latlng: [39.65, 66.96] },
+      { lieu: "Delhi", latlng: [28.61, 77.21], date: "1334", note: "Juge au service du sultan, pendant huit ans." },
+      { lieu: "Les Maldives", latlng: [4.17, 73.51], date: "1343" },
+      { lieu: "Ceylan", latlng: [7.0, 79.9], date: "1344" },
+      { lieu: "Chittagong", latlng: [22.35, 91.78] },
+      { lieu: "Quanzhou", latlng: [24.87, 118.68], date: "1345", note: "Le grand port de la Chine des Yuan." },
+      { lieu: "Fès", latlng: [34.03, -5.0], date: "1349", note: "Le retour au Maroc." },
+      { lieu: "Grenade", latlng: [37.18, -3.6], date: "1350" },
+      { lieu: "Tombouctou", latlng: [16.77, -3.0], date: "1353", note: "La traversée du Sahara, jusqu'à l'empire du Mali." },
+      { lieu: "Fès", latlng: [34.03, -5.0], date: "1354", note: "Il y dicte sa Rihla." },
+    ],
+  },
+  {
+    id: "zheng-he",
+    nom: "Les flottes de Zheng He",
+    qui: "Zheng He",
+    dates: "1405 – 1433",
+    texte: "Sept expéditions de la Chine des Ming à l'Arabie et à l'Afrique de l'Est.",
+    etapes: [
+      { lieu: "Nankin", latlng: [32.06, 118.8], date: "1405" },
+      { lieu: "Champa", latlng: [13.77, 109.22] },
+      { lieu: "Java", latlng: [-7.25, 112.75] },
+      { lieu: "Malacca", latlng: [2.19, 102.25], note: "Un entrepôt de la flotte." },
+      { lieu: "Sumatra", latlng: [5.2, 97.1] },
+      { lieu: "Ceylan", latlng: [6.03, 80.22] },
+      { lieu: "Calicut", latlng: [11.25, 75.78], note: "Le grand marché des épices." },
+      { lieu: "Ormuz", latlng: [27.1, 56.45], date: "1414" },
+      { lieu: "Aden", latlng: [12.8, 45.03] },
+      { lieu: "Mogadiscio", latlng: [2.04, 45.34], date: "1418" },
+      { lieu: "Malindi", latlng: [-3.22, 40.12], note: "Une girafe en est rapportée à l'empereur." },
+    ],
+  },
+  {
+    id: "magellan",
+    nom: "Le premier tour du monde",
+    qui: "Magellan, puis Elcano",
+    dates: "1519 – 1522",
+    texte: "Cinq navires partent d'Espagne ; un seul, la Victoria, revient trois ans plus tard.",
+    etapes: [
+      { lieu: "Sanlúcar de Barrameda", latlng: [36.78, -6.35], date: "septembre 1519" },
+      { lieu: "Tenerife", latlng: [28.47, -16.25] },
+      { lieu: "Rio de Janeiro", latlng: [-22.9, -43.2], date: "décembre 1519" },
+      { lieu: "Río de la Plata", latlng: [-34.9, -56.2], date: "janvier 1520" },
+      { lieu: "San Julián", latlng: [-49.3, -67.7], note: "L'hiver austral, et une mutinerie." },
+      { lieu: "Le détroit de Magellan", latlng: [-53.5, -70.9], date: "novembre 1520" },
+      { lieu: "Le Pacifique", latlng: [-25, -95] },
+      { lieu: "Le Pacifique", latlng: [-5, -150], note: "Trois mois et vingt jours sans escale." },
+      { lieu: "Guam", latlng: [13.44, 144.79], date: "mars 1521" },
+      { lieu: "Cebu", latlng: [10.3, 123.9], date: "avril 1521", note: "Magellan meurt à Mactan, le 27 avril." },
+      { lieu: "Tidore, aux Moluques", latlng: [0.68, 127.4], date: "novembre 1521", note: "Les îles aux épices, enfin." },
+      { lieu: "Timor", latlng: [-9.0, 125.0], date: "janvier 1522" },
+      { lieu: "L'océan Indien", latlng: [-30, 70] },
+      { lieu: "Le cap de Bonne-Espérance", latlng: [-34.36, 18.47], date: "mai 1522" },
+      { lieu: "Le Cap-Vert", latlng: [14.9, -23.5], date: "juillet 1522" },
+      { lieu: "Sanlúcar de Barrameda", latlng: [36.78, -6.35], date: "6 septembre 1522", note: "Dix-huit survivants." },
+    ],
+  },
+  {
+    id: "marco-polo",
+    nom: "Le voyage de Marco Polo",
+    qui: "Marco Polo",
+    dates: "1271 – 1295",
+    texte: "De Venise à la cour de Kubilai Khan par la route de la soie, retour par la mer.",
+    etapes: [
+      { lieu: "Venise", latlng: [45.44, 12.33], date: "1271" },
+      { lieu: "Acre", latlng: [32.93, 35.08] },
+      { lieu: "Tabriz", latlng: [38.08, 46.29] },
+      { lieu: "Ormuz", latlng: [27.1, 56.45] },
+      { lieu: "Balkh", latlng: [36.76, 66.9] },
+      { lieu: "Kachgar", latlng: [39.47, 75.99] },
+      { lieu: "Khotan", latlng: [37.11, 79.93] },
+      { lieu: "Dunhuang", latlng: [40.14, 94.66] },
+      { lieu: "Shangdu", latlng: [42.36, 116.18], date: "1275", note: "Le palais d'été de Kubilai Khan." },
+      { lieu: "Khanbaliq (Pékin)", latlng: [39.9, 116.4] },
+      { lieu: "Quanzhou", latlng: [24.87, 118.68], date: "1292", note: "Le départ par la mer, avec une princesse à marier en Perse." },
+      { lieu: "Sumatra", latlng: [5.2, 97.1] },
+      { lieu: "Ceylan", latlng: [7.0, 79.9] },
+      { lieu: "Ormuz", latlng: [27.1, 56.45] },
+      { lieu: "Trébizonde", latlng: [41.0, 39.72] },
+      { lieu: "Constantinople", latlng: [41.01, 28.98] },
+      { lieu: "Venise", latlng: [45.44, 12.33], date: "1295" },
+    ],
+  },
+];
+
+/* ---------- Une brève histoire de la cartographie ---------- */
+
+export type Jalon = { quand: string; titre: string; texte: string };
+
+export const CARTOGRAPHIE: readonly Jalon[] = [
+  { quand: "vers 600 av. J.-C.", titre: "La carte babylonienne du monde", texte: "Une tablette d'argile montre Babylone au centre d'un disque entouré d'un fleuve amer : la plus ancienne carte du monde connue." },
+  { quand: "vers 240 av. J.-C.", titre: "Ératosthène mesure la Terre", texte: "En comparant l'ombre du soleil à Syène et à Alexandrie, il estime la circonférence terrestre avec une étonnante justesse." },
+  { quand: "IIe siècle", titre: "Ptolémée et les coordonnées", texte: "Latitude, longitude et projection : la Géographie fixe les règles de la carte pour des siècles." },
+  { quand: "IXe – Xe siècles", titre: "Bagdad et l'école des routes", texte: "Al-Khwârizmî corrige Ptolémée ; les géographes des « routes et royaumes » décrivent chaque province, ses distances et ses étapes." },
+  { quand: "1154", titre: "La carte d'al-Idrîsî", texte: "À Palerme, une carte du monde en soixante-dix feuilles, nourrie des récits de voyageurs interrogés pendant quinze ans." },
+  { quand: "fin du XIIIe siècle", titre: "Les portulans", texte: "Les marins de Méditerranée dessinent leurs côtes à la boussole : des réseaux de lignes de rhumb rayonnent de roses des vents. Ce module leur doit son nom." },
+  { quand: "1513", titre: "La carte de Piri Reis", texte: "L'amiral ottoman réunit des cartes portugaises, arabes et celle de Colomb : l'Atlantique et ses deux rives apparaissent." },
+  { quand: "1569", titre: "La projection de Mercator", texte: "Une route à cap constant devient une droite : la carte des marins, qui agrandit pourtant le Groenland jusqu'à la taille de l'Afrique." },
+  { quand: "1756 – 1815", titre: "La carte de Cassini", texte: "Sous la conduite des Cassini, de père en fils, la France entière est triangulée : la première carte d'un pays fondée sur des mesures systématiques." },
+  { quand: "1884", titre: "Le méridien de Greenwich", texte: "Une conférence internationale fixe la longitude zéro et prépare les fuseaux horaires." },
+  { quand: "1972", titre: "La Terre vue de l'espace", texte: "Les satellites Landsat photographient la planète entière : la carte se met à jour en continu." },
+  { quand: "aujourd'hui", titre: "Le GPS et la carte dans la poche", texte: "Une constellation de satellites situe chacun à quelques mètres près ; la carte suit le voyageur au lieu de le précéder." },
+];

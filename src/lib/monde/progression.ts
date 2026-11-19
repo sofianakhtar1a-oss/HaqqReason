@@ -36,8 +36,17 @@ export type Profil = {
   chrono: boolean;
   /** Lire les questions à voix haute. */
   voix: boolean;
+  /** L'objectif du jour (nombre de questions) et ce qui est déjà fait aujourd'hui. */
+  objectif: number;
+  jourObjectif: string;
+  faites: number;
+  /** Des faux choix plus ou moins ressemblants. */
+  difficulte: Difficulte;
   q: number;
 };
+export type Difficulte = "facile" | "normal" | "difficile";
+/** Une erreur récente : la méthode (ou « cabinet/méthode »), la cible, la réponse donnée, le jour. */
+export type Erreur = { t: string; c: string; r: string; j: number };
 /** Un cabinet (départements, États, wilayas…) : ses niveaux et la mémoire de chaque élément. */
 export type EtatCabinet = { n: Record<string, ResultatNiveau>; m: Record<string, Maitrise> };
 export type Etat = {
@@ -47,12 +56,18 @@ export type Etat = {
   cabinets: Record<string, EtatCabinet>;
   /** Les meilleurs scores des jeux sans niveau (« Nomme-les tous », contre-la-montre…). */
   records: Record<string, number>;
+  /** Les erreurs des sept derniers jours (les plus récentes à la fin). */
+  erreurs: Erreur[];
+  /** Les confusions : « fr>it » = la France prise pour l'Italie, et combien de fois. */
+  confusions: Record<string, number>;
+  /** « Mes pays » : l'heure de l'ajout (positive) ou du retrait (négative). */
+  favoris: Record<string, number>;
 };
 
 const NOM = "haqqreason-portulan";
 const cle = () => tiroir(NOM);
-const profilVide = (): Profil => ({ gagnes: 0, depenses: 0, xp: 0, jours: 0, dernierJour: "", eclair: 0, survie: 0, chrono: true, voix: false, q: 0 });
-const vide: Etat = { niveaux: {}, pays: {}, profil: profilVide(), cabinets: {}, records: {} };
+const profilVide = (): Profil => ({ gagnes: 0, depenses: 0, xp: 0, jours: 0, dernierJour: "", eclair: 0, survie: 0, chrono: true, voix: false, objectif: 20, jourObjectif: "", faites: 0, difficulte: "normal", q: 0 });
+const vide: Etat = { niveaux: {}, pays: {}, profil: profilVide(), cabinets: {}, records: {}, erreurs: [], confusions: {}, favoris: {} };
 let etat: Etat | null = null;
 const abonnes = new Set<() => void>();
 
@@ -60,7 +75,7 @@ function lire(): Etat {
   if (etat) return etat;
   try {
     const brut = JSON.parse(localStorage.getItem(cle()) ?? "null") as Partial<Etat> | null;
-    etat = brut && typeof brut === "object" ? { niveaux: brut.niveaux ?? {}, pays: brut.pays ?? {}, profil: { ...profilVide(), ...(brut.profil ?? {}) }, cabinets: brut.cabinets ?? {}, records: brut.records ?? {} } : vide;
+    etat = brut && typeof brut === "object" ? { niveaux: brut.niveaux ?? {}, pays: brut.pays ?? {}, profil: { ...profilVide(), ...(brut.profil ?? {}) }, cabinets: brut.cabinets ?? {}, records: brut.records ?? {}, erreurs: Array.isArray(brut.erreurs) ? brut.erreurs : [], confusions: brut.confusions ?? {}, favoris: brut.favoris ?? {} } : vide;
   } catch {
     etat = vide;
   }
@@ -174,14 +189,76 @@ function majPays(code: string, f: Famille, juste: boolean) {
   void noter("monde", `pays:${code}`);
 }
 
+/** Une question de plus vers l'objectif du jour. */
+function avancerObjectif(p: Profil): Profil {
+  const jour = jourDeParis();
+  return p.jourObjectif === jour ? { ...p, faites: p.faites + 1 } : { ...p, jourObjectif: jour, faites: 1 };
+}
+
 /** Une réponse donnée dans une partie (ou une fiche retournée). */
 export function noterReponse(code: string, f: Famille, juste: boolean, xp = 0) {
   majPays(code, f, juste);
-  if (xp > 0 || juste) {
-    const e = lire();
-    ecrire({ ...e, profil: { ...e.profil, xp: e.profil.xp + xp, gagnes: e.profil.gagnes + (juste && f !== "fiches" ? DUCATS.bonne : 0), q: Date.now() } });
-    void noter("monde", "profil");
-  }
+  const e = lire();
+  const profil = avancerObjectif(xp > 0 || juste ? { ...e.profil, xp: e.profil.xp + xp, gagnes: e.profil.gagnes + (juste && f !== "fiches" ? DUCATS.bonne : 0) } : e.profil);
+  ecrire({ ...e, profil: { ...profil, q: Date.now() } });
+  void noter("monde", "profil");
+}
+
+/* ---------- Les erreurs, les confusions, « Mes pays » ---------- */
+
+const SEPT_JOURS = 7;
+
+/** Une erreur : gardée sept jours ; si l'on a pris un pays pour un autre, la confusion est comptée. */
+export function noterErreur(t: string, c: string, r: string, confondu?: string) {
+  const e = lire();
+  const jour = aujourdhui();
+  const erreurs = [...e.erreurs.filter((x) => jour - x.j < SEPT_JOURS), { t, c, r: r.slice(0, 60), j: jour }].slice(-300);
+  const cle = confondu && confondu !== c ? `${c}>${confondu}` : null;
+  const confusions = cle ? { ...e.confusions, [cle]: (e.confusions[cle] ?? 0) + 1 } : e.confusions;
+  ecrire({ ...e, erreurs, confusions });
+  void noter("monde", "erreurs");
+  if (cle) void noter("monde", "confusions");
+}
+
+export const erreursRecentes = (e: Etat): Erreur[] => {
+  const jour = aujourdhui();
+  return e.erreurs.filter((x) => jour - x.j < SEPT_JOURS);
+};
+
+/** Les confusions les plus fréquentes : [cible, prise pour, nombre]. */
+export function confusionsFrequentes(e: Etat, n = 12): [string, string, number][] {
+  return Object.entries(e.confusions)
+    .map(([k, v]) => {
+      const [a, b] = k.split(">");
+      return [a, b, v] as [string, string, number];
+    })
+    .filter(([a, b]) => a && b)
+    .sort((x, y) => y[2] - x[2])
+    .slice(0, n);
+}
+
+export const estFavori = (e: Etat, code: string) => (e.favoris[code] ?? 0) > 0;
+export const mesPays = (e: Etat): string[] => Object.keys(e.favoris).filter((c) => e.favoris[c] > 0);
+
+export function basculerFavori(code: string) {
+  const e = lire();
+  const maintenant = Date.now();
+  ecrire({ ...e, favoris: { ...e.favoris, [code]: estFavori(e, code) ? -maintenant : maintenant } });
+  void noter("monde", "favoris");
+}
+
+/** Les révisions des sept prochains jours (aujourd'hui compte aussi ce qui est en retard). */
+export function prevision(e: Etat, jours = 7): number[] {
+  const sortie = Array.from({ length: jours }, () => 0);
+  const jour = aujourdhui();
+  const compter = (m: Maitrise | undefined) => {
+    if (!m || m[0] + m[1] === 0 || m[2] >= 5) return;
+    const k = Math.max(0, m[3] + DELAIS[m[2]] - jour);
+    if (k < jours) sortie[k]++;
+  };
+  for (const m of Object.values(e.pays)) for (const [f, x] of Object.entries(m)) if (f !== "fiches") compter(x);
+  for (const c of Object.values(e.cabinets)) for (const x of Object.values(c.m)) compter(x);
+  return sortie;
 }
 
 export type Bilan = { etoiles: number; ducats: number; premiereFois: boolean; record: boolean; jours: number };
@@ -282,10 +359,10 @@ export function noterCabinet(cab: string, id: string, juste: boolean, xp = 0) {
   const avant = c.m[id] ?? ([0, 0, 0, 0] as Maitrise);
   const jour = aujourdhui();
   const nouvelle: Maitrise = juste ? [avant[0] + 1, avant[1], Math.min(5, avant[2] + 1), jour] : [avant[0], avant[1] + 1, Math.max(0, avant[2] - 2), jour];
-  const profil = xp > 0 || juste ? { ...e.profil, xp: e.profil.xp + xp, gagnes: e.profil.gagnes + (juste ? DUCATS.bonne : 0), q: Date.now() } : e.profil;
-  ecrire({ ...e, profil, cabinets: { ...e.cabinets, [cab]: { ...c, m: { ...c.m, [id]: nouvelle } } } });
+  const profil = avancerObjectif(xp > 0 || juste ? { ...e.profil, xp: e.profil.xp + xp, gagnes: e.profil.gagnes + (juste ? DUCATS.bonne : 0) } : e.profil);
+  ecrire({ ...e, profil: { ...profil, q: Date.now() }, cabinets: { ...e.cabinets, [cab]: { ...c, m: { ...c.m, [id]: nouvelle } } } });
   void noter("monde", `cabinet:${cab}`);
-  if (profil !== e.profil) void noter("monde", "profil");
+  void noter("monde", "profil");
 }
 
 /** Les ducats et la série de jours d'un niveau réussi (pays ou cabinet). */
@@ -322,7 +399,7 @@ export function finirNiveauCabinet(cab: string, n: number, r: { bonnes: number; 
   return { etoiles: note, ducats: x.gain, premiereFois: x.premiereFois, record: x.record, jours: x.jours };
 }
 
-export function regler(r: Partial<Pick<Profil, "chrono" | "voix">>) {
+export function regler(r: Partial<Pick<Profil, "chrono" | "voix" | "objectif" | "difficulte">>) {
   const e = lire();
   ecrire({ ...e, profil: { ...e.profil, ...r, q: Date.now() } });
   void noter("monde", "profil");
@@ -338,6 +415,9 @@ export function clesLocales(): { c: string; q?: number }[] {
     ...Object.keys(e.pays).map((code) => ({ c: `pays:${code}` })),
     ...Object.entries(e.cabinets).map(([id, x]) => ({ c: `cabinet:${id}`, q: Math.max(0, ...Object.values(x.n).map((r) => r.f)) || undefined })),
     ...(Object.keys(e.records).length ? [{ c: "records" }] : []),
+    ...(e.erreurs.length ? [{ c: "erreurs" }] : []),
+    ...(Object.keys(e.confusions).length ? [{ c: "confusions" }] : []),
+    ...(Object.keys(e.favoris).length ? [{ c: "favoris" }] : []),
   ];
 }
 
@@ -348,6 +428,9 @@ export function valeurLocale(c: string): unknown {
   if (c.startsWith("pays:")) return e.pays[c.slice(5)];
   if (c.startsWith("cabinet:")) return e.cabinets[c.slice(8)];
   if (c === "records") return e.records;
+  if (c === "erreurs") return e.erreurs;
+  if (c === "confusions") return e.confusions;
+  if (c === "favoris") return e.favoris;
   return undefined;
 }
 
@@ -370,6 +453,10 @@ export function rangerValeur(c: string, v: unknown): boolean {
       survie: Math.max(a.survie, nombre(p.survie)),
       chrono: recent && typeof p.chrono === "boolean" ? p.chrono : a.chrono,
       voix: recent && typeof p.voix === "boolean" ? p.voix : a.voix,
+      objectif: recent && [10, 20, 50].includes(nombre(p.objectif)) ? nombre(p.objectif) : a.objectif,
+      jourObjectif: (p.jourObjectif ?? "") > a.jourObjectif ? String(p.jourObjectif) : a.jourObjectif,
+      faites: (p.jourObjectif ?? "") > a.jourObjectif ? nombre(p.faites) : (p.jourObjectif ?? "") === a.jourObjectif ? Math.max(a.faites, nombre(p.faites)) : a.faites,
+      difficulte: recent && (p.difficulte === "facile" || p.difficulte === "normal" || p.difficulte === "difficile") ? p.difficulte : a.difficulte,
       q: Math.max(a.q, nombre(p.q)),
     };
     ecrire({ ...e, profil });
@@ -433,6 +520,42 @@ export function rangerValeur(c: string, v: unknown): boolean {
     ecrire({ ...e, cabinets: { ...e.cabinets, [id]: { n, m } } });
     return mieux;
   }
+  if (c === "erreurs") {
+    const venu = Array.isArray(v) ? (v as Partial<Erreur>[]) : [];
+    const jour = aujourdhui();
+    const vus = new Set(e.erreurs.map((x) => `${x.t}|${x.c}|${x.r}|${x.j}`));
+    const ajout = venu
+      .filter((x): x is Erreur => typeof x.t === "string" && typeof x.c === "string" && typeof x.r === "string" && typeof x.j === "number")
+      .filter((x) => jour - x.j < SEPT_JOURS && !vus.has(`${x.t}|${x.c}|${x.r}|${x.j}`));
+    const erreurs = [...e.erreurs, ...ajout].filter((x) => jour - x.j < SEPT_JOURS).sort((a, b) => a.j - b.j).slice(-300);
+    ecrire({ ...e, erreurs });
+    return erreurs.length > venu.length;
+  }
+  if (c === "confusions") {
+    const venu = (v ?? {}) as Record<string, unknown>;
+    const fusion: Record<string, number> = { ...e.confusions };
+    let mieux = false;
+    for (const k of new Set([...Object.keys(e.confusions), ...Object.keys(venu)])) {
+      fusion[k] = Math.max(e.confusions[k] ?? 0, nombre(venu[k]));
+      if (fusion[k] !== nombre(venu[k])) mieux = true;
+    }
+    ecrire({ ...e, confusions: fusion });
+    return mieux;
+  }
+  if (c === "favoris") {
+    const venu = (v ?? {}) as Record<string, unknown>;
+    const fusion: Record<string, number> = { ...e.favoris };
+    let mieux = false;
+    for (const k of new Set([...Object.keys(e.favoris), ...Object.keys(venu)])) {
+      const a = e.favoris[k] ?? 0;
+      const b = nombre(venu[k]);
+      // Le geste le plus récent l'emporte (ajout ou retrait).
+      fusion[k] = Math.abs(b) >= Math.abs(a) ? b : a;
+      if (fusion[k] !== b) mieux = true;
+    }
+    ecrire({ ...e, favoris: fusion });
+    return mieux;
+  }
   if (c === "records") {
     const venu = (v ?? {}) as Record<string, unknown>;
     const fusion: Record<string, number> = { ...e.records };
@@ -463,6 +586,12 @@ export function effacerValeur(c: string) {
     ecrire({ ...e, cabinets });
   } else if (c === "records") {
     ecrire({ ...e, records: {} });
+  } else if (c === "erreurs") {
+    ecrire({ ...e, erreurs: [] });
+  } else if (c === "confusions") {
+    ecrire({ ...e, confusions: {} });
+  } else if (c === "favoris") {
+    ecrire({ ...e, favoris: {} });
   }
 }
 

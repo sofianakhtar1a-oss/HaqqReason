@@ -3862,3 +3862,778 @@ html[data-pt-transition]::view-transition-new(root) {
     transition: none;
   }
 }
+
+/* =====================================================================
+   Mieux apprendre : découvrir, le carnet, les routes thématiques, les erreurs
+   ===================================================================== */
+.pt-etoile-favori {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  flex: none;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: transparent;
+  color: var(--encre-douce);
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.pt-etoile-favori[aria-pressed="true"] {
+  border-color: var(--or-trait);
+  color: var(--or);
+}
+.pt-etoile-favori[aria-pressed="true"] svg {
+  fill: currentColor;
+}
+.pt-etoile-favori:active {
+  transform: scale(0.88);
+}
+.pt-fiches-ligne {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.pt-verso-piege,
+.pt-decouvrir-piege,
+.pt-piege-texte {
+  display: block;
+  padding: 0.5rem 0.7rem;
+  border-left: 3px solid var(--sa-trait);
+  border-radius: 0 0.6rem 0.6rem 0;
+  background: var(--sa-doux);
+  font-size: 0.84rem;
+  line-height: 1.45;
+  text-align: left;
+  color: var(--encre);
+}
+.pt-verso-piege {
+  margin-top: 0.4rem;
+}
+.pt-carte-globe {
+  display: block;
+  width: min(17rem, 70vw);
+  aspect-ratio: 1;
+  pointer-events: none;
+}
+.pt-carte-globe > * {
+  width: 100%;
+  height: 100%;
+}
+
+/* L'indice (joker). */
+.pt-indice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  margin: 0 auto;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: 1px dashed var(--sa-trait);
+  background: var(--sa-doux);
+  font-size: 0.92rem;
+  font-weight: 600;
+  animation: pt-invite 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Après une erreur : les deux drapeaux côte à côte. */
+.pt-piege {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.pt-confusion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.pt-confusion > span {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.pt-confusion .pt-drapeau {
+  width: 3.4rem;
+}
+
+/* Découvrir avant de jouer. */
+.pt-decouvrir-titre {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  line-height: 1.2;
+}
+.pt-decouvrir-titre span {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.pt-decouvrir-titre strong {
+  overflow: hidden;
+  font-family: var(--pt-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pt-decouvrir-cartes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+  gap: 0.8rem;
+  width: 100%;
+  max-width: 72rem;
+  margin: 1rem auto 0;
+  padding: 0 0 2rem;
+  list-style: none;
+}
+.pt-decouvrir-cartes li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: var(--pt-papier);
+  box-shadow: var(--pt-ombre);
+  animation: pt-option 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+  animation-delay: calc(var(--i, 0) * 0.03s);
+}
+.pt-decouvrir-figure {
+  display: grid;
+  place-items: center;
+  min-height: 8.5rem;
+}
+.pt-decouvrir-figure .pt-drapeau[data-grand] {
+  width: min(12rem, 70vw);
+}
+.pt-decouvrir-figure .pt-silhouette {
+  width: 9rem;
+}
+.pt-decouvrir-corps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.pt-decouvrir-nom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-family: var(--pt-serif);
+  font-size: 1.35rem;
+  font-style: italic;
+  font-weight: 600;
+}
+.pt-decouvrir-ligne {
+  font-size: 0.92rem;
+  color: var(--encre-douce);
+}
+.pt-escale {
+  position: relative;
+}
+.pt-escale-decouvrir {
+  position: absolute;
+  right: 3.6rem;
+  bottom: 0.55rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+  cursor: pointer;
+}
+.pt-escale-decouvrir:hover {
+  border-color: var(--sa-trait);
+  color: var(--sa);
+}
+@media (max-width: 520px) {
+  .pt-escale-decouvrir span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+}
+
+/* Le carnet du jour. */
+.pt-carnet-grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 0.8rem;
+}
+.pt-carnet-carte {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1rem 1.1rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.pt-carnet-tete {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.pt-carnet-aide {
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: var(--encre-douce);
+}
+.pt-objectif {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.pt-objectif-texte {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.pt-anneau.pt-anneau-grand {
+  width: 4.6rem;
+  height: 4.6rem;
+}
+.pt-anneau.pt-anneau-grand > span {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.pt-anneau.pt-anneau-grand small {
+  font-size: 0.7rem;
+  color: var(--encre-douce);
+}
+.pt-prevision {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: end;
+  gap: 0.35rem;
+  height: 6.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pt-prevision li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.2rem;
+  height: 100%;
+}
+.pt-prevision-barre {
+  display: block;
+  width: 100%;
+  max-width: 1.6rem;
+  height: calc(0.25rem + var(--h, 0) * 4rem);
+  border-radius: 0.4rem 0.4rem 0.15rem 0.15rem;
+  background: linear-gradient(var(--sa), color-mix(in srgb, var(--sa) 55%, var(--or)));
+}
+.pt-prevision li:first-child .pt-prevision-barre {
+  background: linear-gradient(var(--or), color-mix(in srgb, var(--or) 60%, var(--sa)));
+}
+.pt-prevision-n {
+  min-height: 1em;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.pt-prevision-jour {
+  font-size: 0.7rem;
+  color: var(--encre-douce);
+}
+
+/* Les routes thématiques. */
+.pt-themes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16.5rem), 1fr));
+  gap: 0.8rem;
+}
+.pt-theme {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 1.1rem 1.1rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  overflow: hidden;
+}
+.pt-theme::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 3px;
+  background: var(--sa);
+  transform: scaleX(var(--part, 0));
+  transform-origin: left;
+}
+.pt-theme-drapeaux {
+  display: flex;
+  margin-bottom: 0.25rem;
+}
+.pt-theme-drapeaux .pt-drapeau {
+  width: 2rem;
+  margin-right: -0.55rem;
+  border: 2px solid var(--surface);
+}
+.pt-theme-nom {
+  font-family: var(--pt-serif);
+  font-size: 1.22rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.15;
+}
+.pt-theme-texte,
+.pt-theme-pied {
+  font-size: 0.84rem;
+  color: var(--encre-douce);
+}
+.pt-theme-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+.pt-theme-actions .bouton {
+  min-height: 2.3rem;
+  padding-inline: 0.9rem;
+}
+
+/* Mes erreurs et tes confusions. */
+.pt-erreurs .pt-categorie-tete .bouton {
+  margin-top: 0.8rem;
+}
+.pt-confusions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pt-confusions li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  border-radius: 0.9rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.pt-confusions-n {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--pt-faux);
+}
+.pt-erreurs-jour {
+  margin-bottom: 1rem;
+}
+.pt-erreurs-date {
+  margin: 0.6rem 0 0.4rem;
+  font-weight: 700;
+}
+
+/* Le certificat de l'examen. */
+.pt-certificat-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+}
+.pt-certificat-nom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: min(100%, 22rem);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+  text-align: left;
+}
+.pt-certificat-nom input {
+  min-height: 2.6rem;
+  padding: 0 0.9rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--trait);
+  background: var(--surface-forte);
+  font-family: var(--pt-serif);
+  font-size: 1.05rem;
+  color: var(--encre);
+}
+.pt-certificat {
+  position: relative;
+  width: min(100%, 34rem);
+  padding: 2.2rem 2rem 2.4rem;
+  border-radius: 0.4rem;
+  background:
+    radial-gradient(120% 90% at 50% 0%, #fbf3dd, #efe0b8 70%, #e4cd98),
+    #f3e6c4;
+  box-shadow:
+    inset 0 0 0 1px rgba(120, 82, 20, 0.35),
+    inset 0 0 0 8px #f6ecd2,
+    inset 0 0 0 9px rgba(120, 82, 20, 0.45),
+    0 1.6rem 3rem -1.8rem rgba(0, 0, 0, 0.75);
+  color: #3a2a10;
+  text-align: center;
+}
+.pt-certificat-sur {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #7a5718;
+}
+.pt-certificat-titre {
+  margin: 0.4rem 0 0.8rem;
+  font-family: var(--pt-serif);
+  font-size: clamp(1.7rem, 6vw, 2.3rem);
+  font-style: italic;
+  font-weight: 600;
+}
+.pt-certificat-texte {
+  font-family: var(--pt-serif);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.pt-certificat-note {
+  margin-top: 0.9rem;
+  font-family: var(--pt-serif);
+  font-size: 3rem;
+  font-weight: 650;
+  line-height: 1;
+}
+.pt-certificat-mention {
+  font-family: var(--pt-serif);
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.pt-certificat-sceau {
+  position: absolute;
+  right: 1.2rem;
+  bottom: 1rem;
+  width: 4.6rem;
+  height: 4.6rem;
+  transform: rotate(-12deg);
+  filter: drop-shadow(0 0.25rem 0.35rem rgba(80, 10, 10, 0.45));
+}
+.pt-sceau-cire {
+  fill: #a32222;
+}
+.pt-certificat:not([data-reussi]) .pt-sceau-cire {
+  fill: #6f5a3a;
+}
+.pt-sceau-trait {
+  fill: none;
+  stroke: rgba(255, 220, 200, 0.55);
+  stroke-width: 2;
+}
+.pt-sceau-branche {
+  fill: rgba(255, 225, 205, 0.7);
+}
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  .pt-certificat,
+  .pt-certificat * {
+    visibility: visible !important;
+  }
+  .pt-certificat {
+    position: fixed;
+    inset: 12mm;
+    width: auto;
+    padding-top: 30mm;
+    box-shadow: inset 0 0 0 1px rgba(120, 82, 20, 0.5), inset 0 0 0 8px #f6ecd2, inset 0 0 0 9px rgba(120, 82, 20, 0.6);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+/* =====================================================================
+   L'histoire de la géographie
+   ===================================================================== */
+.pt-histoire-portes {
+  margin: 2rem 0 1rem;
+}
+.pt-histoire {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.pt-embleme-geographe {
+  flex: none;
+}
+.pt-embleme-fond {
+  fill: color-mix(in srgb, var(--or) 12%, var(--surface-forte));
+  stroke: var(--or-trait);
+  stroke-width: 1.2;
+}
+.pt-embleme-trait {
+  fill: none;
+  stroke: var(--or);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.pt-embleme-fin {
+  fill: none;
+  stroke: color-mix(in srgb, var(--or) 55%, transparent);
+  stroke-width: 0.8;
+}
+.pt-embleme-plein {
+  fill: var(--or);
+  stroke: none;
+}
+.pt-geographes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+  gap: 0.9rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pt-geographes li {
+  display: flex;
+  gap: 1rem;
+  padding: 1.1rem 1.2rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  animation: pt-option 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+  animation-delay: calc(var(--i, 0) * 0.04s);
+}
+.pt-geographe-corps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.pt-geographe-nom {
+  font-family: var(--pt-serif);
+  font-size: 1.35rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.15;
+}
+.pt-geographe-dates {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.pt-geographe-oeuvre {
+  font-family: var(--pt-serif);
+  font-style: italic;
+  color: var(--sa);
+}
+.pt-geographe-legs {
+  padding-top: 0.35rem;
+  border-top: 1px dashed var(--trait);
+  color: var(--encre-douce);
+}
+.pt-jalons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  max-width: 46rem;
+  margin: 0;
+  padding: 0 0 0 1.4rem;
+  list-style: none;
+}
+.pt-jalons::before {
+  content: "";
+  position: absolute;
+  top: 0.6rem;
+  bottom: 0.6rem;
+  left: 0.35rem;
+  width: 2px;
+  background: linear-gradient(var(--or-trait), var(--sa-trait));
+}
+.pt-jalons li {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(7.5rem, auto) 1fr;
+  gap: 0.2rem 1rem;
+  padding: 0.8rem 0;
+}
+.pt-jalons li::before {
+  content: "";
+  position: absolute;
+  top: 1.2rem;
+  left: -1.35rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  border: 2px solid var(--or);
+  background: var(--fond);
+}
+.pt-jalon-quand {
+  padding-top: 0.15rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--sa);
+}
+.pt-jalon-corps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  line-height: 1.55;
+}
+.pt-jalon-corps strong {
+  font-family: var(--pt-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  font-weight: 600;
+}
+@media (max-width: 560px) {
+  .pt-jalons li {
+    grid-template-columns: 1fr;
+  }
+}
+.pt-voyage {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: start;
+}
+@media (max-width: 860px) {
+  .pt-voyage {
+    grid-template-columns: 1fr;
+  }
+}
+.pt-voyage-globe {
+  position: sticky;
+  top: 5rem;
+  aspect-ratio: 1;
+  max-height: 72vh;
+}
+.pt-voyage-globe > * {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 860px) {
+  .pt-voyage-globe {
+    position: relative;
+    top: 0;
+    max-height: 56vh;
+    margin: 0 auto;
+    width: min(100%, 56vh);
+  }
+}
+.pt-voyage-panneau {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.pt-voyage-dates {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--sa);
+}
+.pt-voyage-nom {
+  font-family: var(--pt-serif);
+  font-size: 1.7rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.pt-voyage-texte {
+  line-height: 1.55;
+  color: var(--encre-douce);
+}
+.pt-voyage-commandes {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pt-etapes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin: 0.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.pt-etapes button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.6rem;
+  width: 100%;
+  padding: 0.45rem 0.7rem;
+  border: 0;
+  border-left: 2px solid var(--trait);
+  background: transparent;
+  text-align: left;
+  color: var(--encre-douce);
+  cursor: pointer;
+}
+.pt-etapes li[data-passee] button {
+  border-left-color: var(--or);
+  color: var(--encre);
+}
+.pt-etapes li[data-courante] button {
+  border-left-width: 4px;
+  background: var(--sa-doux);
+}
+.pt-etape-lieu {
+  font-weight: 650;
+}
+.pt-etape-date {
+  font-size: 0.8rem;
+  color: var(--sa);
+}
+.pt-etape-note {
+  flex-basis: 100%;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--encre-douce);
+}
+.pt-qibla-chiffres {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+.pt-qibla-chiffres div {
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.9rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.pt-qibla-chiffres dt {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.pt-qibla-chiffres dd {
+  font-family: var(--pt-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pt-geographes li,
+  .pt-decouvrir-cartes li {
+    animation: none;
+  }
+}
