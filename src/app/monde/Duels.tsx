@@ -1,29 +1,40 @@
 "use client";
 
-import { Bot, Check, Copy, Globe2, Link2, LogIn, Search, Share2, Swords, Trophy, Users, X } from "lucide-react";
+import { Bot, Check, Clock, Copy, Flag, Globe2, GraduationCap, Link2, LogIn, Map as IconeCarte, Search, Share2, Swords, Trophy, Users, X } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { eclat, pluieDeLettres } from "@/lib/langues/feux";
 import { pays } from "@/lib/monde/atlas";
-import { adversaire as choisirExplorateur, EXPLORATEURS, type Explorateur, jouerVirtuel } from "@/lib/monde/bots";
+import { CAMPAGNE, CLE_CAMPAGNE, adversaire as choisirExplorateur, EXPLORATEURS, type Explorateur, jouerVirtuel, suivantCampagne } from "@/lib/monde/bots";
 import { CATEGORIES, CATEGORIES_CLASSIQUES, type ModeJeu, TYPES } from "@/lib/monde/categories";
 import { lireScore, useCompteMonde } from "@/lib/monde/compte-client";
+import { DUREES_DUEL, type FormuleSalon, NOMBRES_DUEL, NOMBRES_SALON, PAUSE_REPONSE, pointsReponse, type Reaction, REACTIONS, TAILLE_SALON } from "@/lib/monde/duels";
 import { deriver, hasard, nouvelleGraine } from "@/lib/monde/hasard";
-import { DUREE_QUESTION_DUEL, pointsDuel } from "@/lib/monde/points";
-import { noterReponse, useMonde } from "@/lib/monde/progression";
+import { DUREE_QUESTION_DUEL } from "@/lib/monde/points";
+import { battreRecordDe, noterReponse, useMonde } from "@/lib/monde/progression";
 import { categorieDe, consigne, juger, QUESTIONS_PAR_DUEL, questionsDuel } from "@/lib/monde/quiz";
 import type { EtatDuel } from "@/lib/monde/serveur";
+import type { EtatSalon } from "@/lib/monde/social";
 import { useTextes } from "@/lib/modules/textes-client";
+import { PageAmis } from "./Amis";
+import { PageClasses } from "./Classes";
 import { Classement } from "./Classement";
 import { Chrono } from "./communs";
+import { useConfirmer } from "./Confirmer";
 import { type GlobeRef } from "./Globe";
+import { imageResultat, partagerImage } from "./partage";
 import { ContenuOption, Invite } from "./Partie";
+import { Salon } from "./Salon";
 
 /*
  * Les duels : dix questions, les mêmes pour les deux joueurs, chacun à son rythme.
  * Une bonne réponse vaut 100 points, plus jusqu'à 50 pour la rapidité.
- *   • Contre un explorateur virtuel : toujours disponible, simulé sur l'appareil, et présenté comme tel.
- *   • Contre un ami (un code à partager) ou au hasard : en ligne, arbitré par le serveur.
+ *   • Contre un explorateur virtuel : toujours disponible, simulé sur l'appareil, et présenté comme tel ;
+ *     la campagne les fait affronter dans l'ordre, du plus abordable au plus redoutable.
+ *   • Contre un ami (un code à partager), en direct ou à distance (24 heures pour jouer), avec le
+ *     nombre de questions et le temps de chacune au choix ; ou au hasard, contre un joueur de sa cote.
+ *   • Un salon de trois à huit joueurs, classique ou à élimination.
+ *   • Les amis (#duels/amis) et les classes (#duels/classes) ont leur page.
  */
 
 const MODES: { id: ModeJeu; nom: string }[] = [
@@ -45,7 +56,28 @@ async function appel(corps: Record<string, unknown>): Promise<EtatDuel | { erreu
   }
 }
 
+const NOMS_MODES: Record<ModeJeu, string> = { melange: "tout mélangé", drapeaux: "drapeaux", capitales: "capitales", cartes: "cartes", continents: "continents", monnaies: "monnaies" };
+
+async function appelSalon(corps: Record<string, unknown>): Promise<EtatSalon | { erreur: string }> {
+  try {
+    const r = await fetch("/api/monde/salon", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(corps) });
+    const x = (await r.json()) as EtatSalon | { erreur: string };
+    return r.ok ? x : { erreur: "erreur" in x ? x.erreur : "indisponible" };
+  } catch {
+    return { erreur: "reseau" };
+  }
+}
+
+/** Où en est un duel à distance, pour moi. */
+function tourDe(d: EtatDuel): "moi" | "lui" | "fini" | "expire" {
+  if (d.etat === "fini" || d.etat === "abandon") return "fini";
+  if (d.etat === "expire") return "expire";
+  return d.moi.reponses.length < d.nombre ? "moi" : "lui";
+}
+
 const MESSAGES: Record<string, string> = {
+  complet: "Ce salon est complet.",
+  pas_assez: "Il faut trois joueurs au moins.",
   introuvable: "Aucun duel avec ce code. Vérifie les six caractères.",
   ferme: "Ce duel a déjà commencé ou a expiré. Demande un nouveau code.",
   trop_vite: "Un instant : réessaie dans deux secondes.",
@@ -64,29 +96,106 @@ export function Duels({ sous, onSous }: { sous: string | null; onSous: (id: stri
   const [code, setCode] = useState("");
   const [message, setMessage] = useState<string | null>(null);
   const [cherche, setCherche] = useState(false);
+  const [nombre, setNombre] = useState<number>(QUESTIONS_PAR_DUEL);
+  const [duree, setDuree] = useState<number>(DUREE_QUESTION_DUEL);
+  const [formule, setFormule] = useState<FormuleSalon>("classique");
+  const [nombreSalon, setNombreSalon] = useState<number>(9);
+  const [taille, setTaille] = useState<number>(8);
+  const [codeSalon, setCodeSalon] = useState("");
+  const [salon, setSalon] = useState<EtatSalon | null>(null);
+  const [distants, setDistants] = useState<EtatDuel[] | null>(null);
+  const [cote, setCote] = useState<number | null>(null);
   const enLigne = compte.connecte !== false && compte.enLigne !== false;
   const faits = Object.values(monde.niveaux).filter((n) => n.f).length;
+  const vaincus = Math.min(CAMPAGNE.length, monde.records[CLE_CAMPAGNE] ?? 0);
 
-  // Un lien de duel (#duels/duel=CODE) : on rejoint directement.
+  // Mes duels à distance et ma cote (rien si la base ne les connaît pas encore).
+  const lireDistants = useCallback(async () => {
+    try {
+      const r = await fetch("/api/monde/duel?mes=1", { cache: "no-store" });
+      if (!r.ok) return;
+      const x = (await r.json()) as { duels: EtatDuel[]; cote: number | null };
+      setDistants(x.duels);
+      setCote(x.cote);
+    } catch {
+      // Hors connexion : la liste reviendra.
+    }
+  }, []);
   useEffect(() => {
-    const m = /^duel=([A-Za-z2-9]{6})$/.exec(sous ?? "");
-    if (!m) return;
+    if (!enLigne || sous || rencontre || salon) return;
+    const t0 = setTimeout(() => void lireDistants(), 0);
+    return () => clearTimeout(t0);
+  }, [enLigne, sous, rencontre, salon, lireDistants]);
+
+  // Un lien de duel (#duels/duel=CODE), de salon (#duels/salon=CODE), de classe ou d'ami : on rejoint directement.
+  useEffect(() => {
+    const duel = /^duel=([A-Za-z2-9]{6})$/.exec(sous ?? "");
+    const salonCode = /^salon=([A-Za-z2-9]{6})$/.exec(sous ?? "");
+    const classe = /^classe=([A-Za-z2-9]{6})$/.exec(sous ?? "");
+    const ami = /^ami=([A-Za-z2-9]{8})$/.exec(sous ?? "");
+    if (!duel && !salonCode && !classe && !ami) return;
     void (async () => {
-      const r = await appel({ action: "rejoindre", code: m[1] });
-      if ("erreur" in r) setMessage(MESSAGES[r.erreur] ?? MESSAGES.indisponible);
-      else setRencontre({ sorte: "en-ligne", duel: r });
-      history.replaceState(null, "", "#duels");
+      if (duel) {
+        const r = await appel({ action: "rejoindre", code: duel[1] });
+        if ("erreur" in r) setMessage(MESSAGES[r.erreur] ?? MESSAGES.indisponible);
+        else setRencontre({ sorte: "en-ligne", duel: r });
+        history.replaceState(null, "", "#duels");
+      } else if (salonCode) {
+        const r = await appelSalon({ action: "rejoindre", code: salonCode[1] });
+        if ("erreur" in r) setMessage(MESSAGES[r.erreur] ?? MESSAGES.indisponible);
+        else setSalon(r);
+        history.replaceState(null, "", "#duels");
+      } else if (classe) {
+        await fetch("/api/monde/classe", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action: "rejoindre", code: classe[1] }) }).catch(() => null);
+        onSous("classes");
+      } else if (ami) {
+        await fetch("/api/monde/amis", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action: "ajouter", code: ami[1] }) }).catch(() => null);
+        onSous("amis");
+      }
     })();
-  }, [sous]);
+  }, [sous, onSous]);
+
+  /** Un duel à distance : je joue maintenant, puis j'envoie le lien ; l'autre a 24 heures. */
+  const aDistance = async () => {
+    setMessage(null);
+    const r = await appel({ action: "ouvrir", mode, asynchrone: true, nombre, duree });
+    if ("erreur" in r) setMessage(r.erreur === "indisponible" ? "Les duels à distance ouvrent très bientôt." : (MESSAGES[r.erreur] ?? MESSAGES.indisponible));
+    else setRencontre({ sorte: "en-ligne", duel: r });
+  };
 
   if (sous === "classement") return <Classement onRetour={() => onSous(null)} />;
+  if (sous === "amis")
+    return (
+      <PageAmis
+        onRetour={() => onSous(null)}
+        onDefier={() => {
+          onSous(null);
+          void aDistance();
+        }}
+      />
+    );
+  if (sous === "classes") return <PageClasses onRetour={() => onSous(null)} />;
 
   const virtuel = (e: Explorateur) => setRencontre({ sorte: "virtuel", mode, graine: nouvelleGraine(), explorateur: e });
   const creer = async () => {
     setMessage(null);
-    const r = await appel({ action: "creer", mode });
+    // Un duel réglé (le nombre de questions, leur temps) ; sans la base de la migration 018, le duel classique.
+    let r = await appel({ action: "ouvrir", mode, asynchrone: false, nombre, duree });
+    if ("erreur" in r && r.erreur === "indisponible") r = await appel({ action: "creer", mode });
     if ("erreur" in r) setMessage(MESSAGES[r.erreur] ?? MESSAGES.indisponible);
     else setRencontre({ sorte: "en-ligne", duel: r });
+  };
+  const creerSalon = async () => {
+    setMessage(null);
+    const r = await appelSalon({ action: "creer", mode, formule, nombre: nombreSalon, taille });
+    if ("erreur" in r) setMessage(r.erreur === "indisponible" ? "Les salons ouvrent très bientôt." : (MESSAGES[r.erreur] ?? MESSAGES.indisponible));
+    else setSalon(r);
+  };
+  const rejoindreSalon = async () => {
+    setMessage(null);
+    const r = await appelSalon({ action: "rejoindre", code: codeSalon.trim().toUpperCase() });
+    if ("erreur" in r) setMessage(r.erreur === "introuvable" ? "Aucun salon avec ce code." : r.erreur === "ferme" ? "Ce salon a déjà commencé." : (MESSAGES[r.erreur] ?? MESSAGES.indisponible));
+    else setSalon(r);
   };
   const rejoindre = async () => {
     setMessage(null);
@@ -110,17 +219,49 @@ export function Duels({ sous, onSous }: { sous: string | null; onSous: (id: stri
           <h2 className="pt-titre">{t("duels.titre")}</h2>
           <p className="pt-chapo">{t("duels.chapo")}</p>
         </div>
-        <button type="button" className="bouton bouton-discret" onClick={() => onSous("classement")}>
-          <Trophy className="size-4" aria-hidden="true" />
-          {t("classement.titre")}
-        </button>
+        <div className="pt-duels-liens">
+          <button type="button" className="bouton bouton-discret" onClick={() => onSous("classement")}>
+            <Trophy className="size-4" aria-hidden="true" />
+            {t("classement.titre")}
+          </button>
+          <button type="button" className="bouton bouton-discret" onClick={() => onSous("amis")}>
+            <Users className="size-4" aria-hidden="true" />
+            Mes amis
+          </button>
+          <button type="button" className="bouton bouton-discret" onClick={() => onSous("classes")}>
+            <GraduationCap className="size-4" aria-hidden="true" />
+            Les classes
+          </button>
+        </div>
       </header>
+      {cote !== null && (
+        <p className="pt-cote">
+          Ta cote : <strong>{cote}</strong>
+          <small>Elle monte quand tu bats un joueur, d&apos;autant plus qu&apos;il est fort ; « au hasard », on te trouve un adversaire de ta cote.</small>
+        </p>
+      )}
 
       <fieldset className="pt-methodes">
         <legend>Les questions</legend>
         {MODES.map((m) => (
           <button key={m.id} type="button" className="pt-puce" aria-pressed={mode === m.id} onClick={() => setMode(m.id)}>
             {m.nom}
+          </button>
+        ))}
+      </fieldset>
+
+      <fieldset className="pt-methodes pt-duel-reglages">
+        <legend>Le duel entre amis</legend>
+        <span className="pt-reglage-nom">Questions</span>
+        {NOMBRES_DUEL.map((n) => (
+          <button key={n} type="button" className="pt-puce" aria-pressed={nombre === n} onClick={() => setNombre(n)}>
+            {n}
+          </button>
+        ))}
+        <span className="pt-reglage-nom">Temps par question</span>
+        {DUREES_DUEL.map((d) => (
+          <button key={d} type="button" className="pt-puce" aria-pressed={duree === d} onClick={() => setDuree(d)}>
+            {d / 1000} s
           </button>
         ))}
       </fieldset>
@@ -135,11 +276,17 @@ export function Duels({ sous, onSous }: { sous: string | null; onSous: (id: stri
         <section className="pt-duel-bloc" aria-labelledby="pt-duel-ami">
           <Users className="pt-duel-icone" aria-hidden="true" />
           <h3 id="pt-duel-ami">Défier un ami</h3>
-          <p>Un code à six caractères : ton ami l&apos;entre, le duel commence.</p>
-          <button type="button" className="bouton bouton-principal" onClick={creer} disabled={!enLigne}>
-            <Link2 className="size-4" aria-hidden="true" />
-            Créer un duel
-          </button>
+          <p>Un code à six caractères : ton ami l&apos;entre, le duel commence. Ou à distance : tu joues maintenant, il a 24 heures pour jouer à son tour.</p>
+          <div className="pt-outil-actions">
+            <button type="button" className="bouton bouton-principal" onClick={creer} disabled={!enLigne}>
+              <Link2 className="size-4" aria-hidden="true" />
+              Créer un duel
+            </button>
+            <button type="button" className="bouton bouton-discret" onClick={aDistance} disabled={!enLigne}>
+              <Clock className="size-4" aria-hidden="true" />
+              À distance
+            </button>
+          </div>
           <form
             className="pt-code"
             onSubmit={(e) => {
@@ -162,7 +309,98 @@ export function Duels({ sous, onSous }: { sous: string | null; onSous: (id: stri
             {cherche ? "Recherche…" : "Trouver un adversaire"}
           </button>
         </section>
+        <section className="pt-duel-bloc" aria-labelledby="pt-duel-salon">
+          <Users className="pt-duel-icone" aria-hidden="true" />
+          <h3 id="pt-duel-salon">Un salon de 3 à 8</h3>
+          <p>Les mêmes questions pour tous. En classique, les points décident ; à élimination, le dernier sort toutes les trois questions.</p>
+          <div className="pt-salon-reglages" role="group" aria-label="Le salon">
+            <span className="pt-segments">
+              <button type="button" aria-pressed={formule === "classique"} onClick={() => setFormule("classique")}>
+                Classique
+              </button>
+              <button type="button" aria-pressed={formule === "elimination"} onClick={() => setFormule("elimination")}>
+                Élimination
+              </button>
+            </span>
+            <label>
+              <span>Questions</span>
+              <select value={nombreSalon} onChange={(e) => setNombreSalon(Number(e.target.value))}>
+                {NOMBRES_SALON.map((n) => (
+                  <option key={n} value={n}>
+                    {n}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label>
+              <span>Joueurs au plus</span>
+              <select value={taille} onChange={(e) => setTaille(Number(e.target.value))}>
+                {Array.from({ length: TAILLE_SALON.max - TAILLE_SALON.min + 1 }, (_, i) => TAILLE_SALON.min + i).map((n) => (
+                  <option key={n} value={n}>
+                    {n}
+                  </option>
+                ))}
+              </select>
+            </label>
+          </div>
+          <button type="button" className="bouton bouton-principal" onClick={creerSalon} disabled={!enLigne}>
+            <Users className="size-4" aria-hidden="true" />
+            Ouvrir un salon
+          </button>
+          <form
+            className="pt-code"
+            onSubmit={(e) => {
+              e.preventDefault();
+              void rejoindreSalon();
+            }}
+          >
+            <input value={codeSalon} onChange={(e) => setCodeSalon(e.target.value.toUpperCase().replace(/[^A-Z2-9]/g, "").slice(0, 6))} placeholder="CODE" aria-label="Le code du salon" disabled={!enLigne} autoComplete="off" spellCheck={false} />
+            <button type="submit" className="bouton bouton-discret" disabled={!enLigne || codeSalon.length !== 6}>
+              Rejoindre
+            </button>
+          </form>
+        </section>
       </div>
+
+      {distants && distants.length > 0 && (
+        <section className="pt-distants" aria-labelledby="pt-distants-titre">
+          <h3 id="pt-distants-titre" className="pt-sous-titre">
+            <Clock className="mr-2 inline size-5 align-[-4px]" aria-hidden="true" />
+            Mes duels à distance
+          </h3>
+          <ul className="pt-distants-liste">
+            {distants.map((d) => {
+              const tour = tourDe(d);
+              return (
+                <li key={d.id} data-tour={tour}>
+                  <span className="pt-distants-texte">
+                    <strong>{d.adversaire ? `Contre ${d.adversaire.nom}` : `En attente d'un adversaire (code ${d.code})`}</strong>
+                    <small>
+                      {NOMS_MODES[d.mode]}, {d.nombre} questions, {d.duree / 1000} s.{" "}
+                      {tour === "moi"
+                        ? d.moi.reponses.length
+                          ? `À toi : ${d.moi.reponses.length} sur ${d.nombre} déjà jouées.`
+                          : "À toi de jouer."
+                        : tour === "lui"
+                          ? d.adversaire
+                            ? `Son tour : ${d.adversaire.nombre} sur ${d.nombre}.`
+                            : "Envoie le lien à ton ami."
+                          : tour === "fini"
+                            ? `${d.resultat === "victoire" ? "Victoire" : d.resultat === "nul" ? "Égalité" : "Défaite"}, ${d.moi.points} contre ${d.adversaire?.points ?? 0}.`
+                            : "Expiré : personne n'est venu."}
+                    </small>
+                  </span>
+                  {tour !== "expire" && (
+                    <button type="button" className={tour === "moi" ? "bouton bouton-principal" : "bouton bouton-discret"} onClick={() => setRencontre({ sorte: "en-ligne", duel: d })}>
+                      {tour === "moi" ? "Jouer" : tour === "fini" ? "Voir" : d.adversaire ? "Suivre" : "Partager"}
+                    </button>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
       {!enLigne && (
         <p className="pt-astuce">
           {compte.connecte === false ? (
@@ -182,9 +420,33 @@ export function Duels({ sous, onSous }: { sous: string | null; onSous: (id: stri
           Les explorateurs virtuels
         </h3>
         <p className="pt-chapo">Des adversaires simulés sur ton appareil, qui portent le nom de grands géographes et voyageurs d&apos;autrefois.</p>
+        <div className="pt-campagne" aria-label="La campagne des explorateurs">
+          <div className="pt-campagne-texte">
+            <p className="pt-campagne-titre">
+              <IconeCarte className="size-5" aria-hidden="true" />
+              La campagne
+            </p>
+            <p>
+              {vaincus >= CAMPAGNE.length
+                ? `Les ${CAMPAGNE.length} explorateurs sont vaincus : la campagne est gagnée.`
+                : `Bats-les dans l'ordre, du plus abordable au plus redoutable : ${vaincus} sur ${CAMPAGNE.length}. Prochain : ${suivantCampagne(vaincus)!.nom}.`}
+            </p>
+            <span className="pt-campagne-piste" aria-hidden="true">
+              {CAMPAGNE.map((e, i) => (
+                <i key={e.id} data-vaincu={i < vaincus || undefined} data-prochain={i === vaincus || undefined} />
+              ))}
+            </span>
+          </div>
+          {vaincus < CAMPAGNE.length && (
+            <button type="button" className="bouton bouton-principal" onClick={() => virtuel(suivantCampagne(vaincus)!)}>
+              <Flag className="size-4" aria-hidden="true" />
+              Affronter {suivantCampagne(vaincus)!.nom}
+            </button>
+          )}
+        </div>
         <ul className="pt-explorateurs">
           {EXPLORATEURS.map((e) => (
-            <li key={e.id}>
+            <li key={e.id} data-vaincu={CAMPAGNE.findIndex((x) => x.id === e.id) < vaincus || undefined}>
               <button type="button" className="pt-explorateur" onClick={() => virtuel(e)}>
                 <span className="pt-explorateur-medaillon" aria-hidden="true">
                   {e.nom
@@ -214,6 +476,17 @@ export function Duels({ sous, onSous }: { sous: string | null; onSous: (id: stri
         </button>
       </section>
 
+      {salon && (
+        <Salon
+          key={salon.id}
+          initial={salon}
+          onFermer={() => {
+            setSalon(null);
+            void lireScore();
+          }}
+        />
+      )}
+
       {rencontre && (
         <Duel
           key={rencontre.sorte === "virtuel" ? rencontre.graine : rencontre.duel.id}
@@ -225,8 +498,9 @@ export function Duels({ sous, onSous }: { sous: string | null; onSous: (id: stri
           onRevanche={() => {
             if (rencontre.sorte === "virtuel") setRencontre({ ...rencontre, graine: nouvelleGraine() });
             else {
+              const distance = rencontre.duel.asynchrone;
               setRencontre(null);
-              void creer();
+              void (distance ? aDistance() : creer());
             }
           }}
           onRemplacer={(e) => setRencontre({ sorte: "virtuel", mode: rencontre.sorte === "en-ligne" ? rencontre.duel.mode : rencontre.mode, graine: nouvelleGraine(), explorateur: e ?? choisirExplorateur(faits, hasard(nouvelleGraine())) })}
@@ -244,26 +518,44 @@ type Moi = { index: number; points: number; reponses: { i: number; j: boolean; p
 
 function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Rencontre; onFermer: () => void; onRevanche: () => void; onRemplacer: (e?: Explorateur) => void }) {
   const virtuel = rencontre.sorte === "virtuel";
+  const monde = useMonde();
   const [duel, setDuel] = useState<EtatDuel | null>(virtuel ? null : rencontre.duel);
   const mode = virtuel ? rencontre.mode : rencontre.duel.mode;
   const graine = virtuel ? rencontre.graine : rencontre.duel.graine;
+  // Le nombre de questions et leur temps (un duel réglé), ou les dix de quinze secondes.
+  const nombre = virtuel ? QUESTIONS_PAR_DUEL : rencontre.duel.nombre;
+  const duree = virtuel ? DUREE_QUESTION_DUEL : rencontre.duel.duree;
+  /** À distance : chacun joue quand il veut, dans les 24 heures. */
+  const distance = !virtuel && rencontre.duel.asynchrone;
   // Les questions, et ce que fera l'explorateur virtuel à chacune (tiré d'avance, de la même graine).
   const [{ questions, coups }] = useState(() => {
-    const qs = questionsDuel(graine, mode);
+    const qs = questionsDuel(graine, mode, nombre);
     return { questions: qs, coups: rencontre.sorte === "virtuel" ? qs.map((q, i) => jouerVirtuel(rencontre.explorateur, q, hasard(deriver(graine, 500 + i)))) : null };
   });
   // L'heure de départ, sur l'horloge de cet appareil (le serveur donne la sienne : on corrige l'écart).
-  const [debut, setDebut] = useState<number | null>(() =>
-    rencontre.sorte === "virtuel" ? Date.now() + 3200 : rencontre.duel.etat === "en_cours" && rencontre.duel.debut ? rencontre.duel.debut - (rencontre.duel.maintenant - Date.now()) : null,
-  );
+  // À distance, on part dès qu'on ouvre le duel (s'il reste des questions à jouer).
+  const [debut, setDebut] = useState<number | null>(() => {
+    if (rencontre.sorte === "virtuel") return Date.now() + 3200;
+    const d = rencontre.duel;
+    if (d.asynchrone) return d.moi.reponses.length < d.nombre && (d.etat === "attente" || d.etat === "en_cours") ? Date.now() + 3200 : null;
+    return d.etat === "en_cours" && d.debut ? d.debut - (d.maintenant - Date.now()) : null;
+  });
   const [maintenant, setMaintenant] = useState(() => Date.now());
-  const [moi, setMoi] = useState<Moi>({ index: 0, points: 0, reponses: [] });
+  // Un duel à distance repris en cours de route : on repart de la première question sans réponse.
+  const [moi, setMoi] = useState<Moi>(() => {
+    const deja = rencontre.sorte === "en-ligne" ? rencontre.duel.moi.reponses : [];
+    return { index: deja.length, points: deja.reduce((s, x) => s + x.p, 0), reponses: deja.map((x) => ({ i: x.i, j: x.j, p: x.p })) };
+  });
   const [choix, setChoix] = useState<string | null>(null);
-  const [etape, setEtape] = useState<"question" | "reponse" | "fini" | null>(null);
+  const [etape, setEtape] = useState<"question" | "reponse" | "fini" | null>(() => (rencontre.sorte === "en-ligne" && rencontre.duel.asynchrone && rencontre.duel.moi.reponses.length >= rencontre.duel.nombre ? "fini" : null));
   const [copie, setCopie] = useState(false);
+  const [envoyee, setEnvoyee] = useState<Reaction | null>(null);
+  const [vaincusAvant] = useState(() => monde.records[CLE_CAMPAGNE] ?? 0);
   const debutQuestion = useRef(0);
   const demarre = useRef(false);
+  const derniereReaction = useRef(0);
   const globe = useRef<GlobeRef>(null);
+  const [confirmation, confirmer] = useConfirmer();
   const phase = etape ?? (debut ? "compte" : "attente");
 
   /* ---------- En ligne : relire l'état chaque seconde ---------- */
@@ -274,14 +566,15 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
       if (!r.ok) return;
       const d = (await r.json()) as EtatDuel;
       setDuel(d);
-      if (d.etat === "en_cours" && d.debut) setDebut((avant) => avant ?? d.debut! - (d.maintenant - Date.now()));
+      if (!d.asynchrone && d.etat === "en_cours" && d.debut) setDebut((avant) => avant ?? d.debut! - (d.maintenant - Date.now()));
     } catch {
       // Le réseau reviendra : on relira à la prochaine seconde.
     }
   }, [virtuel, duel]);
   useEffect(() => {
     if (virtuel || !duel || duel.etat === "fini" || duel.etat === "abandon" || duel.etat === "expire") return;
-    const t = setInterval(lire, duel.etat === "attente" ? 1500 : 1000);
+    // À distance, l'autre joue quand il veut : on relit moins souvent.
+    const t = setInterval(lire, duel.asynchrone ? 3000 : duel.etat === "attente" ? 1500 : 1000);
     return () => clearInterval(t);
   }, [virtuel, duel, lire]);
 
@@ -308,7 +601,7 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
       const ms = Date.now() - debutQuestion.current;
       const j = juger(q.type, q.cible, reponse);
       const juste = j !== "faux";
-      const p = pointsDuel(juste, ms);
+      const p = pointsReponse(juste, ms, duree);
       setChoix(reponse);
       setEtape("reponse");
       noterReponse(q.cible, categorieDe(q.type), juste);
@@ -319,7 +612,7 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
         if (!("erreur" in r)) setDuel(r);
       }
     },
-    [etape, q, virtuel, duel, moi.index],
+    [etape, q, virtuel, duel, moi.index, duree],
   );
   useEffect(() => {
     if (etape !== "reponse") return;
@@ -333,54 +626,87 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
         debutQuestion.current = Date.now();
         setEtape("question");
       }
-    }, 1300);
+    }, PAUSE_REPONSE);
     return () => clearTimeout(t);
   }, [etape, moi.index, questions.length]);
   // Le temps de la question.
   useEffect(() => {
     if (etape !== "question") return;
-    const t = setTimeout(() => void repondre("__temps__"), DUREE_QUESTION_DUEL);
+    const t = setTimeout(() => void repondre("__temps__"), duree);
     return () => clearTimeout(t);
-  }, [etape, moi.index, repondre]);
+  }, [etape, moi.index, repondre, duree]);
 
   /* ---------- L'adversaire ---------- */
-  let adv: { nom: string; avatar: string; points: number; nombre: number; virtuel: boolean } | null = null;
+  let adv: { nom: string; avatar: string; points: number; nombre: number; virtuel: boolean; elo?: number | null; reaction?: { r: Reaction; t: number } | null } | null = null;
   if (rencontre.sorte === "virtuel" && coups && debut) {
     // L'explorateur avance à son rythme : chaque réponse, plus la pause d'après.
     let t = debut;
-    let nombre = 0;
+    let repondues = 0;
     let points = 0;
     for (const c of coups) {
       t += c.ms;
       if (t > maintenant) break;
-      nombre++;
+      repondues++;
       points += c.points;
-      t += 1300;
+      t += PAUSE_REPONSE;
     }
-    adv = { nom: rencontre.explorateur.nom, avatar: "", points, nombre, virtuel: true };
+    adv = { nom: rencontre.explorateur.nom, avatar: "", points, nombre: repondues, virtuel: true };
   } else if (duel?.adversaire) adv = { ...duel.adversaire, virtuel: false };
 
-  const advFini = adv ? adv.nombre >= QUESTIONS_PAR_DUEL : false;
+  const advFini = adv ? adv.nombre >= nombre : false;
   const termine = virtuel ? etape === "fini" && advFini : duel ? duel.etat === "fini" || duel.etat === "abandon" : false;
   const expire = duel?.etat === "expire";
   const resultat: "victoire" | "defaite" | "nul" | null = virtuel ? (termine && adv ? (moi.points > adv.points ? "victoire" : moi.points < adv.points ? "defaite" : "nul") : null) : (duel?.resultat ?? null);
+
+  // La campagne : battre l'explorateur qu'on attendait fait avancer d'un cran.
+  const enCampagne = rencontre.sorte === "virtuel" && CAMPAGNE.findIndex((x) => x.id === rencontre.explorateur.id) === vaincusAvant;
+  const avance = enCampagne && termine && resultat === "victoire";
 
   // La fin : une pluie de lettres pour une victoire.
   const celebre = useRef(false);
   useEffect(() => {
     if (termine && resultat === "victoire" && !celebre.current) {
       celebre.current = true;
+      if (avance) battreRecordDe(CLE_CAMPAGNE, vaincusAvant + 1);
       setTimeout(() => pluieDeLettres(document.querySelector(".pt-duel-resultat"), "aurore", "VICTOIRE"), 250);
     }
-  }, [termine, resultat]);
+  }, [termine, resultat, avance, vaincusAvant]);
 
-  // Quitter un duel en ligne en cours : c'est un abandon (on prévient).
+  // Quitter un duel en ligne en cours : c'est un abandon (on prévient). À distance, on reprendra plus tard.
   const quitter = async () => {
-    if (!virtuel && duel && (duel.etat === "attente" || (duel.etat === "en_cours" && !termine))) {
-      if (duel.etat === "en_cours" && !window.confirm("Quitter maintenant, c'est perdre le duel. Quitter quand même ?")) return;
+    if (!virtuel && duel && !duel.asynchrone && (duel.etat === "attente" || (duel.etat === "en_cours" && !termine))) {
+      if (duel.etat === "en_cours" && !(await confirmer({ titre: "Quitter le duel ?", texte: "Quitter maintenant, c'est perdre le duel.", oui: "Quitter quand même", non: "Continuer", danger: true }))) return;
       await appel({ action: "quitter", id: duel.id });
     }
     onFermer();
+  };
+
+  /** Une réaction rapide (une toutes les trois secondes au plus). */
+  const idDuel = duel?.id;
+  const reagir = useCallback(
+    async (r: Reaction) => {
+      const t = Date.now();
+      if (!idDuel || t - derniereReaction.current < 3000) return;
+      derniereReaction.current = t;
+      setEnvoyee(r);
+      setTimeout(() => setEnvoyee(null), 2500);
+      await fetch("/api/monde/duel", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action: "reagir", id: idDuel, reaction: r }) }).catch(() => null);
+    },
+    [idDuel],
+  );
+  // La dernière réaction de l'adversaire, montrée six secondes.
+  const bulle = !virtuel && duel?.adversaire?.reaction && duel.maintenant - duel.adversaire.reaction.t < 6000 ? REACTIONS.find((x) => x.id === duel.adversaire!.reaction!.r)?.texte : null;
+
+  const partagerResultat = async () => {
+    const image = await imageResultat({
+      verdict: resultat === "victoire" ? "Victoire !" : resultat === "nul" ? "Égalité" : "Défaite",
+      sousTitre: `Duel${distance ? " à distance" : ""}, ${NOMS_MODES[mode]}, ${nombre} questions`,
+      joueurs: [
+        { nom: "Moi", points: moi.points, moi: true },
+        { nom: adv?.nom ?? "Adversaire", points: adv?.points ?? 0 },
+      ],
+    });
+    if (image) await partagerImage(image, "portulan-duel.png", `Mon duel au Portulan : ${moi.points} points contre ${adv?.points ?? 0}.`);
   };
 
   useEffect(() => {
@@ -411,11 +737,11 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
         <button type="button" className="pt-icone" onClick={quitter} aria-label="Quitter le duel">
           <X className="size-5" aria-hidden="true" />
         </button>
-        <Joueur nom="Toi" points={moi.points} nombre={moi.reponses.length} cote="gauche" />
+        <Joueur nom="Toi" points={moi.points} nombre={moi.reponses.length} total={nombre} cote="gauche" elo={duel?.moi.elo ?? null} />
         <span className="pt-duel-contre" aria-hidden="true">
           <Swords className="size-5" />
         </span>
-        <Joueur nom={adv?.nom ?? "…"} avatar={adv?.avatar} points={adv?.points ?? 0} nombre={adv?.nombre ?? 0} cote="droite" virtuel={adv?.virtuel} />
+        <Joueur nom={adv?.nom ?? "…"} avatar={adv?.avatar} points={adv?.points ?? 0} nombre={adv?.nombre ?? 0} total={nombre} cote="droite" virtuel={adv?.virtuel} elo={adv?.elo ?? null} bulle={bulle} />
       </header>
 
       {phase === "attente" && duel && !expire && (
@@ -428,7 +754,9 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
             </>
           ) : (
             <>
-              <p className="pt-intro-grade">Duel entre amis : {MODES.find((m) => m.id === duel.mode)?.nom.toLowerCase()}</p>
+              <p className="pt-intro-grade">
+                Duel entre amis : {MODES.find((m) => m.id === duel.mode)?.nom.toLowerCase()}, {duel.nombre} questions de {duel.duree / 1000} secondes
+              </p>
               <h2 className="pt-intro-titre">Ton code</h2>
               <p className="pt-duel-code" aria-label={`Code : ${duel.code.split("").join(" ")}`}>
                 {duel.code}
@@ -486,10 +814,10 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
         <div className="pt-question" key={moi.index}>
           <p className="pt-consigne">
             <span className="pt-consigne-cat">
-              {CATEGORIES[categorieDe(q.type)].nom}, {moi.index + 1}/{QUESTIONS_PAR_DUEL}
+              {CATEGORIES[categorieDe(q.type)].nom}, {moi.index + 1}/{nombre}
             </span>
             {consigne(q)}
-            {phase === "question" && <Chrono key={moi.index} duree={DUREE_QUESTION_DUEL} cle={`d${moi.index}`} />}
+            {phase === "question" && <Chrono key={moi.index} duree={duree} cle={`d${moi.index}`} />}
           </p>
           <div className="pt-invite" data-sorte={TYPES[q.type].invite}>
             <Invite q={q} globe={globe} phase={phase} toucheGlobe={null} onToucher={() => undefined} />
@@ -521,15 +849,46 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
         </div>
       )}
 
-      {phase === "fini" && !termine && !expire && (
+      {phase === "fini" && !termine && !expire && !distance && (
         <div className="pt-intro">
-          <h2 className="pt-intro-titre">Dix réponses données</h2>
+          <h2 className="pt-intro-titre">{nombre === 10 ? "Dix réponses données" : `${nombre} réponses données`}</h2>
           <p className="pt-intro-regles">{adv ? `${adv.nom} termine ses questions…` : "On attend la fin du duel…"}</p>
           <span className="pt-attente-points" aria-hidden="true">
             <i />
             <i />
             <i />
           </span>
+        </div>
+      )}
+
+      {phase === "fini" && !termine && !expire && distance && duel && (
+        <div className="pt-intro">
+          <p className="pt-intro-grade">Duel à distance</p>
+          <h2 className="pt-intro-titre">{moi.points} points</h2>
+          {duel.adversaire ? (
+            <p className="pt-intro-regles">
+              Ton score est enregistré. {duel.adversaire.nom} a jusqu&apos;à{" "}
+              {new Intl.DateTimeFormat("fr-FR", { weekday: "long", hour: "2-digit", minute: "2-digit" }).format((duel.rejoint ?? duel.debut ?? duel.maintenant) + 86_400_000)} pour jouer : tu verras le résultat ici, dans tes duels à distance.
+            </p>
+          ) : (
+            <>
+              <p className="pt-intro-regles">Ton score est enregistré. Envoie le lien à ton ami : il a 24 heures pour relever le défi.</p>
+              <p className="pt-duel-code" aria-label={`Code : ${duel.code.split("").join(" ")}`}>
+                {duel.code}
+              </p>
+            </>
+          )}
+          <div className="pt-fin-actions">
+            {!duel.adversaire && (
+              <button type="button" className="bouton bouton-principal" onClick={partager}>
+                {copie ? <Check className="size-4" aria-hidden="true" /> : <Share2 className="size-4" aria-hidden="true" />}
+                {copie ? "Lien copié" : "Envoyer le lien"}
+              </button>
+            )}
+            <button type="button" className="bouton bouton-discret" onClick={onFermer}>
+              Fermer
+            </button>
+          </div>
         </div>
       )}
 
@@ -541,6 +900,12 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
             {!virtuel && duel && duel.moi.trophees > 0 ? ` +${duel.moi.trophees} trophées.` : ""}
             {virtuel ? " Un duel d'entraînement : les trophées se gagnent contre d'autres joueurs." : ""}
           </p>
+          {avance && (
+            <p className="pt-fin-sous pt-campagne-avance">
+              Campagne : {rencontre.sorte === "virtuel" ? rencontre.explorateur.nom : ""} vaincu, {vaincusAvant + 1} sur {CAMPAGNE.length}.
+              {suivantCampagne(vaincusAvant + 1) ? ` Prochain : ${suivantCampagne(vaincusAvant + 1)!.nom}.` : " La campagne est gagnée !"}
+            </p>
+          )}
           <ol className="pt-duel-recap" aria-label="Tes réponses">
             {questions.map((x, i) => {
               const r = moi.reponses[i];
@@ -557,20 +922,64 @@ function Duel({ rencontre, onFermer, onRevanche, onRemplacer }: { rencontre: Ren
               <Swords className="size-4" aria-hidden="true" />
               Revanche
             </button>
+            <button type="button" className="bouton bouton-discret" onClick={partagerResultat}>
+              <Share2 className="size-4" aria-hidden="true" />
+              Partager
+            </button>
             <button type="button" className="bouton bouton-discret" onClick={onFermer}>
               Fermer
             </button>
           </div>
         </div>
       )}
+
+      {!virtuel && duel?.adversaire && !expire && (
+        <div className="pt-reactions" role="group" aria-label="Réagir">
+          {REACTIONS.map((r) => (
+            <button key={r.id} type="button" className="pt-puce" aria-pressed={envoyee === r.id} onClick={() => void reagir(r.id)}>
+              {r.texte}
+            </button>
+          ))}
+          <span className="sr-only" aria-live="polite">
+            {envoyee ? `Envoyé : ${REACTIONS.find((x) => x.id === envoyee)?.texte}` : ""}
+            {bulle ? ` ${adv?.nom} : ${bulle}` : ""}
+          </span>
+        </div>
+      )}
+      {confirmation}
     </div>
   );
   return createPortal(contenu, document.body);
 }
 
-function Joueur({ nom, avatar, points, nombre, cote, virtuel }: { nom: string; avatar?: string; points: number; nombre: number; cote: "gauche" | "droite"; virtuel?: boolean }) {
+function Joueur({
+  nom,
+  avatar,
+  points,
+  nombre,
+  total = QUESTIONS_PAR_DUEL,
+  cote,
+  virtuel,
+  elo,
+  bulle,
+}: {
+  nom: string;
+  avatar?: string;
+  points: number;
+  nombre: number;
+  total?: number;
+  cote: "gauche" | "droite";
+  virtuel?: boolean;
+  elo?: number | null;
+  bulle?: string | null;
+}) {
   return (
     <div className="pt-joueur" data-cote={cote}>
+      {bulle && (
+        <span className="pt-joueur-bulle" aria-hidden="true">
+          {bulle}
+        </span>
+      )}
       <span className="pt-joueur-avatar" aria-hidden="true">
         {avatar ? (
           // eslint-disable-next-line @next/next/no-img-element
@@ -586,9 +995,12 @@ function Joueur({ nom, avatar, points, nombre, cote, virtuel }: { nom: string; a
           {nom}
           {virtuel && <span className="pt-virtuel">virtuel</span>}
         </span>
-        <span className="pt-joueur-points tabular-nums">{points} pts</span>
-        <span className="pt-joueur-piste" aria-label={`${nombre} réponses sur ${QUESTIONS_PAR_DUEL}`}>
-          {Array.from({ length: QUESTIONS_PAR_DUEL }, (_, i) => (
+        <span className="pt-joueur-points tabular-nums">
+          {points} pts
+          {elo ? <span className="pt-joueur-cote"> cote {elo}</span> : null}
+        </span>
+        <span className="pt-joueur-piste" aria-label={`${nombre} réponses sur ${total}`}>
+          {Array.from({ length: total }, (_, i) => (
             <i key={i} data-fait={i < nombre || undefined} />
           ))}
         </span>

@@ -31,7 +31,21 @@ export const EXPLORATEURS: readonly Explorateur[] = [
   { id: "ibnbattuta", nom: "Ibn Battûta", epoque: "XIVe siècle", bio: "Parti de Tanger, il parcourut près de 120 000 km, du Mali à la Chine, en trente ans.", justesse: 0.88, vitesse: 3800, force: 4 },
   { id: "biruni", nom: "Al-Bîrûnî", epoque: "XIe siècle", bio: "Savant qui calcula le rayon de la Terre avec une précision étonnante, depuis une montagne.", justesse: 0.93, vitesse: 4400, force: 5 },
   { id: "idrisi", nom: "Al-Idrîsî", epoque: "XIIe siècle", bio: "Le géographe de Palerme dont la Tabula Rogeriana fut la carte du monde la plus juste de son temps.", justesse: 0.95, vitesse: 3300, force: 5 },
+  { id: "ptolemee", nom: "Ptolémée", epoque: "IIe siècle", bio: "Savant grec d'Alexandrie : sa Géographie donna des coordonnées à quelque 8 000 lieux et fixa la carte du monde pour quatorze siècles. L'Amérique, il ne la connaissait pas.", justesse: 0.62, vitesse: 7400, force: 1 },
+  { id: "ibnfadlan", nom: "Ahmad ibn Fadlân", epoque: "Xe siècle", bio: "Envoyé du calife de Bagdad chez les Bulgares de la Volga en 921-922, il décrivit les Rus' et les peuples des steppes dans sa Risâla.", justesse: 0.74, vitesse: 5600, force: 2 },
+  { id: "ibnhawqal", nom: "Ibn Hawqal", epoque: "Xe siècle", bio: "Marchand et géographe de Nisibe, il parcourut trente ans le monde musulman, d'al-Andalus à l'Inde, et en dessina les cartes dans La Configuration de la Terre.", justesse: 0.82, vitesse: 4600, force: 3 },
+  { id: "bakri", nom: "Al-Bakrî", epoque: "XIe siècle", bio: "Géographe andalou, auteur du Livre des routes et des royaumes : il décrivit l'Afrique du Nord et l'empire du Ghana sans jamais quitter al-Andalus.", justesse: 0.83, vitesse: 4400, force: 3 },
+  { id: "magellan", nom: "Magellan", epoque: "XVIe siècle", bio: "Navigateur portugais au service de l'Espagne : son expédition (1519-1522) accomplit le premier tour du monde, qu'il ne vit pas s'achever.", justesse: 0.88, vitesse: 3900, force: 4 },
+  { id: "mercator", nom: "Mercator", epoque: "XVIe siècle", bio: "Cartographe flamand : sa projection de 1569, qui garde les angles, guide encore les marins, et il donna le nom d'« atlas » aux recueils de cartes.", justesse: 0.9, vitesse: 3700, force: 4 },
+  { id: "humboldt", nom: "Humboldt", epoque: "XIXe siècle", bio: "Naturaliste prussien : de son voyage en Amérique (1799-1804) il tira une géographie nouvelle, qui relie le climat, l'altitude et la vie des plantes.", justesse: 0.94, vitesse: 3500, force: 5 },
 ];
+
+/** La campagne : les explorateurs, du plus abordable au plus redoutable ; on les bat dans l'ordre. */
+export const CAMPAGNE: readonly Explorateur[] = [...EXPLORATEURS].sort((a, b) => a.force - b.force || a.justesse - b.justesse || a.vitesse - b.vitesse);
+/** La clé du record qui compte les explorateurs vaincus dans l'ordre de la campagne. */
+export const CLE_CAMPAGNE = "campagne";
+/** L'explorateur suivant de la campagne (null : la campagne est finie). */
+export const suivantCampagne = (vaincus: number): Explorateur | null => CAMPAGNE[vaincus] ?? null;
 
 /** Un explorateur à la mesure du joueur (d'après ses niveaux réussis), ou celui qu'il a choisi. */
 export function adversaire(niveauxReussis: number, h: Hasard): Explorateur {

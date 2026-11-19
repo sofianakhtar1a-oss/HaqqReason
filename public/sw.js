@@ -122,3 +122,39 @@ self.addEventListener("message", (e) => {
     e.waitUntil(caches.open(GARDE).then((cache) => Promise.all(propres.map((u) => cache.delete(u)))));
   }
 });
+
+/* Les notifications du Portulan (un duel relevé, ton tour de jouer, une demande d'ami). */
+self.addEventListener("push", (e) => {
+  let d = {};
+  try {
+    d = e.data ? e.data.json() : {};
+  } catch {
+    d = { titre: "Le Portulan", corps: e.data ? e.data.text() : "" };
+  }
+  e.waitUntil(
+    self.registration.showNotification(d.titre || "Le Portulan", {
+      body: d.corps || "",
+      icon: "/icones/icone-192.png",
+      badge: "/icones/icone-192.png",
+      tag: d.etiquette || "portulan",
+      lang: "fr",
+      data: { url: typeof d.url === "string" && d.url.startsWith("/") ? d.url : "/monde" },
+    }),
+  );
+});
+
+self.addEventListener("notificationclick", (e) => {
+  e.notification.close();
+  const url = new URL((e.notification.data && e.notification.data.url) || "/monde", self.location.origin).href;
+  e.waitUntil(
+    self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((fenetres) => {
+      for (const f of fenetres) {
+        if (new URL(f.url).pathname === new URL(url).pathname && "focus" in f) {
+          if ("navigate" in f) f.navigate(url).catch(() => {});
+          return f.focus();
+        }
+      }
+      return self.clients.openWindow(url);
+    }),
+  );
+});

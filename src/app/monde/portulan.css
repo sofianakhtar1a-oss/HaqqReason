@@ -6178,3 +6178,533 @@ html[data-pt-transition]::view-transition-new(root) {
     padding: 0.8mm 0;
   }
 }
+
+/* =====================================================================
+   Les duels réglés, à distance, les réactions et la campagne
+   ===================================================================== */
+.pt-duels-liens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+.pt-cote {
+  margin: -0.4rem 0 0.2rem;
+  color: var(--encre-douce);
+}
+.pt-cote strong {
+  margin-left: 0.3rem;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--sa);
+}
+.pt-cote small {
+  display: block;
+  max-width: 62ch;
+  margin-top: 0.15rem;
+  font-size: 0.8rem;
+}
+.pt-duel-reglages {
+  align-items: center;
+  margin-top: -0.4rem;
+}
+.pt-reglage-nom {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.pt-duel-reglages .pt-reglage-nom ~ .pt-reglage-nom {
+  margin-left: 0.9rem;
+}
+@media (max-width: 40rem) {
+  .pt-reglage-nom {
+    flex-basis: 100%;
+  }
+  .pt-duel-reglages .pt-reglage-nom ~ .pt-reglage-nom {
+    margin: 0.4rem 0 0;
+  }
+}
+.pt-salon-reglages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 0.9rem;
+}
+.pt-salon-reglages label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.pt-salon-reglages select {
+  min-height: 2.4rem;
+  padding: 0 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  font: inherit;
+  font-weight: 700;
+  color: var(--encre);
+  cursor: pointer;
+}
+.pt-salon-reglages select:hover {
+  border-color: var(--sa-trait);
+}
+.pt-code input[data-texte] {
+  flex: 1;
+  width: auto;
+  min-width: 0;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+/* Mes duels à distance. */
+.pt-distants-liste {
+  display: grid;
+  gap: 0.5rem;
+}
+.pt-distants-liste li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem 1rem;
+  padding: 0.85rem 1rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.pt-distants-liste li[data-tour="moi"] {
+  border-color: var(--sa);
+  background: color-mix(in srgb, var(--sa-doux) 70%, var(--surface));
+}
+.pt-distants-liste li[data-tour="expire"] {
+  opacity: 0.6;
+}
+.pt-distants-texte {
+  display: flex;
+  flex: 1 1 16rem;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+.pt-distants-texte small {
+  font-size: 0.84rem;
+  color: var(--encre-douce);
+}
+
+/* La campagne des explorateurs. */
+.pt-campagne {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+  margin: 1rem 0;
+  padding: 1.1rem 1.3rem;
+  border-radius: 1.4rem;
+  border: 1px solid var(--or-trait);
+  background:
+    radial-gradient(120% 160% at 0% 0%, color-mix(in srgb, var(--or) 13%, transparent), transparent 62%),
+    var(--pt-papier);
+}
+.pt-campagne-texte {
+  display: flex;
+  flex: 1 1 22rem;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+.pt-campagne-texte > p:not(.pt-campagne-titre) {
+  font-size: 0.92rem;
+  color: var(--encre-douce);
+}
+.pt-campagne-titre {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--pt-serif);
+  font-size: 1.35rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--or);
+}
+.pt-campagne-piste {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 0.35rem;
+}
+.pt-campagne-piste i {
+  width: 1.35rem;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: var(--trait);
+}
+.pt-campagne-piste i[data-vaincu] {
+  background: var(--or);
+}
+.pt-campagne-piste i[data-prochain] {
+  background: color-mix(in srgb, var(--or) 35%, var(--trait));
+  box-shadow: 0 0 0 1px var(--or);
+}
+.pt-fin-sous.pt-campagne-avance {
+  font-weight: 700;
+  color: var(--or);
+}
+.pt-explorateurs li[data-vaincu] .pt-explorateur-medaillon {
+  background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--or) 70%, #fff), var(--or));
+  color: var(--sur-or);
+}
+
+/* Le joueur : sa cote, la bulle de sa dernière réaction. */
+.pt-joueur {
+  position: relative;
+}
+.pt-joueur-cote {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.pt-joueur-bulle {
+  position: absolute;
+  top: calc(100% + 0.45rem);
+  right: 0;
+  z-index: 2;
+  padding: 0.3rem 0.75rem;
+  border-radius: 1rem 0.3rem 1rem 1rem;
+  background: var(--or);
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--sur-or);
+  white-space: nowrap;
+  box-shadow: 0 0.6rem 1.4rem -0.8rem rgba(0, 0, 0, 0.6);
+  pointer-events: none;
+  animation: pt-bulle 0.36s cubic-bezier(0.2, 1.4, 0.4, 1);
+}
+.pt-joueur[data-cote="gauche"] .pt-joueur-bulle {
+  right: auto;
+  left: 0;
+  border-radius: 0.3rem 1rem 1rem 1rem;
+}
+@keyframes pt-bulle {
+  from {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.85);
+  }
+}
+.pt-reactions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-top: auto;
+  padding-top: 1.2rem;
+}
+.pt-reactions .pt-puce {
+  padding: 0.32rem 0.75rem;
+  font-size: 0.82rem;
+}
+
+/* =====================================================================
+   Les amis et les classes
+   ===================================================================== */
+.pt-amis-haut {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+  gap: 0.9rem;
+}
+.pt-duel-code.pt-ami-code {
+  font-size: clamp(1.9rem, 8vw, 2.7rem);
+  letter-spacing: 0.16em;
+}
+.pt-amis-entete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem 1rem;
+  margin: 2.6rem 0 1rem;
+}
+.pt-amis-entete .pt-sous-titre {
+  margin: 0;
+}
+.pt-amis-liste,
+.pt-amis-classement,
+.pt-salon-joueurs {
+  display: grid;
+  gap: 0.4rem;
+  padding: 0;
+}
+.pt-amis-liste li,
+.pt-amis-classement li,
+.pt-salon-joueurs li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-width: 0;
+  padding: 0.65rem 0.9rem;
+  border-radius: 1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.pt-amis-classement li[data-moi],
+.pt-salon-joueurs li[data-moi] {
+  border-color: var(--sa);
+  background: color-mix(in srgb, var(--sa-doux) 60%, var(--surface));
+}
+.pt-amis-rang {
+  width: 1.6rem;
+  flex: none;
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-align: center;
+  color: var(--encre-douce);
+}
+.pt-amis-classement li:first-child .pt-amis-rang,
+.pt-salon-joueurs li:first-child .pt-amis-rang {
+  color: var(--or);
+}
+.pt-amis-nom {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.pt-amis-nom small {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--encre-douce);
+}
+.pt-amis-valeur {
+  flex: none;
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--sa);
+  white-space: nowrap;
+}
+.pt-amis-actions {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: 0.3rem;
+}
+@media (max-width: 40rem) {
+  .pt-amis-classement li {
+    flex-wrap: wrap;
+  }
+  .pt-amis-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+.pt-notifs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem 1rem;
+  margin-top: 2.4rem;
+  padding: 1.1rem 1.3rem;
+  border-radius: 1.4rem;
+  border: 1px dashed var(--trait);
+  background: var(--pt-papier);
+}
+.pt-notifs > div {
+  flex: 1 1 18rem;
+  min-width: 0;
+}
+.pt-notifs h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.pt-notifs p {
+  margin-top: 0.2rem;
+  font-size: 0.88rem;
+  color: var(--encre-douce);
+}
+.pt-duel-bloc.pt-classe-code {
+  align-items: center;
+  text-align: center;
+}
+.pt-classe-fin {
+  justify-content: center;
+  margin-top: 2rem;
+}
+.pt-classes-liste {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+  gap: 0.5rem;
+}
+.pt-classes-liste button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  text-align: left;
+  color: var(--encre);
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+.pt-classes-liste button:hover {
+  border-color: var(--sa-trait);
+  background: var(--surface-forte);
+}
+.pt-classes-liste svg {
+  flex: none;
+  color: var(--sa);
+}
+.pt-classes-liste span {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.pt-classes-liste small {
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}
+
+/* =====================================================================
+   Le salon de 3 à 8
+   ===================================================================== */
+.pt-salon .pt-duel-tete {
+  grid-template-columns: auto minmax(0, 1fr);
+  max-width: 66rem;
+}
+.pt-salon-titre {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  font-family: var(--pt-serif);
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 600;
+}
+.pt-salon-titre svg {
+  flex: none;
+  color: var(--sa);
+}
+.pt-salon-corps {
+  display: grid;
+  flex: 1;
+  grid-template-columns: minmax(13rem, 17rem) minmax(0, 1fr);
+  align-content: start;
+  align-items: start;
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 66rem;
+  margin: 1.2rem auto 0;
+}
+.pt-salon-joueurs li {
+  padding: 0.5rem 0.7rem;
+  transition: opacity 0.3s ease;
+}
+.pt-salon-joueurs li[data-elimine] {
+  opacity: 0.5;
+}
+.pt-salon-joueurs .pt-joueur-avatar {
+  width: 2rem;
+  height: 2rem;
+}
+.pt-salon-hote {
+  display: inline;
+  margin-left: 0.3rem;
+  color: var(--or);
+  vertical-align: -2px;
+}
+.pt-salon-scene {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+@media (max-width: 48rem) {
+  .pt-salon-corps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .pt-salon-scene {
+    order: -1;
+  }
+  .pt-salon-joueurs {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr));
+  }
+}
+
+/* =====================================================================
+   La confirmation (à la place des fenêtres du navigateur)
+   ===================================================================== */
+.pt-confirmer-voile {
+  position: fixed;
+  inset: 0;
+  z-index: 130;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: rgba(6, 9, 26, 0.55);
+  backdrop-filter: blur(3px);
+  animation: pt-voile 0.2s ease-out;
+}
+@keyframes pt-voile {
+  from {
+    opacity: 0;
+  }
+}
+.pt-confirmer {
+  width: min(100%, 26rem);
+  padding: 1.5rem 1.5rem 1.2rem;
+  border-radius: 1.4rem;
+  border: 1px solid var(--or-trait);
+  background: var(--fond);
+  background-image: linear-gradient(var(--pt-papier), var(--pt-papier));
+  color: var(--encre);
+  box-shadow: var(--pt-ombre);
+  animation: pt-confirmer-entre 0.26s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.pt-confirmer h2 {
+  font-family: var(--pt-serif);
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.15;
+}
+.pt-confirmer p {
+  margin-top: 0.6rem;
+  color: var(--encre-douce);
+}
+.pt-confirmer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+}
+.pt .pt-confirmer-actions .bouton-principal[data-danger] {
+  background: var(--danger);
+  color: var(--fond);
+  box-shadow: 0 0.5rem 2rem -0.9rem var(--danger);
+}
+@keyframes pt-confirmer-entre {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pt-confirmer-voile,
+  .pt-confirmer,
+  .pt-joueur-bulle {
+    animation: none;
+  }
+}

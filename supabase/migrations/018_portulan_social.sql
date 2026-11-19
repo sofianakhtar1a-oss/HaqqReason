@@ -468,6 +468,7 @@ begin
     'asynchrone', d.asynchrone, 'nombre', d.nombre, 'duree', d.duree,
     'debut', public.portulan_ms(d.debut),
     'cree', public.portulan_ms(d.cree),
+    'rejoint', public.portulan_ms(d.rejoint),
     'maintenant', public.portulan_ms(clock_timestamp()),
     'moi', jsonb_build_object(
       'points', case when v_moi_a then d.points_a else d.points_b end,
@@ -609,7 +610,8 @@ begin
   if p_index <> jsonb_array_length(v_miennes) or p_index < 0 or p_index >= d.nombre then
     return public.portulan_duel_lire(p_utilisateur, p_id);
   end if;
-  v_miennes := v_miennes || jsonb_build_object('i', p_index, 'j', coalesce(p_juste, false), 'p', v_points);
+  -- L'heure de la réponse (au serveur) : le temps de la suivante se vérifie à partir d'elle.
+  v_miennes := v_miennes || jsonb_build_object('i', p_index, 'j', coalesce(p_juste, false), 'p', v_points, 't', public.portulan_ms(clock_timestamp()));
   if v_moi_a then
     update public.portulan_duels set reponses_a = v_miennes, points_a = points_a + v_points where id = p_id;
   else
@@ -976,7 +978,7 @@ begin
   if s.etat = 'en_cours' and now() >= s.debut - interval '1 second' and now() <= s.debut + make_interval(secs => s.nombre * 25 + 30)
      and p_index = jsonb_array_length(j.reponses) and p_index between 0 and s.nombre - 1
      and (j.elimine_a is null or p_index < j.elimine_a) then
-    update public.portulan_salon_joueurs set reponses = reponses || jsonb_build_object('i', p_index, 'j', coalesce(p_juste, false), 'p', v_points),
+    update public.portulan_salon_joueurs set reponses = reponses || jsonb_build_object('i', p_index, 'j', coalesce(p_juste, false), 'p', v_points, 't', public.portulan_ms(clock_timestamp())),
       points = points + v_points
     where salon_id = p_id and utilisateur_id = p_utilisateur;
   end if;

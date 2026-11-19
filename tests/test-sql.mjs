@@ -831,9 +831,12 @@ ok("013 : la conversation disparaît avec la contribution", Number((await db.que
   ok("018 : un duel à distance s'ouvre", du.etat === "attente" && du.asynchrone === true && du.nombre === 5);
   for (let i = 0; i < 5; i++) du = await q(`select portulan_duel_repondre($1, $2, $3, true, 120) r`, [a, du.id, i]);
   ok("018 : le créateur joue avant que l'autre arrive", du.moi.reponses.length === 5 && du.etat === "attente");
+  ok("018 : chaque réponse porte l'heure du serveur", du.moi.reponses.every((r, i) => typeof r.t === "number" && r.t > 0 && (i === 0 || r.t >= du.moi.reponses[i - 1].t)));
+  ok("018 : personne n'a encore rejoint", du.rejoint === null);
   ok("018 : pas de sixième question", (await q(`select portulan_duel_repondre($1, $2, 5, true, 120) r`, [a, du.id])).moi.reponses.length === 5);
   du = await q(`select portulan_duel_rejoindre($1, 'dist22') r`, [b]);
   ok("018 : l'adversaire rejoint", du.etat === "en_cours" && du.adversaire.nombre === 5);
+  ok("018 : l'heure à laquelle il a rejoint (ses 24 heures partent de là)", typeof du.rejoint === "number" && du.rejoint >= du.cree);
   await q(`select portulan_duel_reagir($1, $2, 'bravo') r`, [a, du.id]);
   ok("018 : une réaction rapide", (await q(`select portulan_duel_lire($1, $2) r`, [b, du.id])).adversaire.reaction.r === "bravo");
   ok("018 : une réaction inconnue", (await q(`select portulan_duel_reagir($1, $2, 'insulte') r`, [a, du.id])).erreur === "illisible");
@@ -861,6 +864,7 @@ ok("013 : la conversation disparaît avec la contribution", Number((await db.que
     await q(`select portulan_salon_repondre($1, $2, $3, false, 100) r`, [c, sa.id, i]);
   }
   sa = await q(`select portulan_salon_lire($1, $2) r`, [a, sa.id]);
+  ok("018 : les réponses du salon portent l'heure du serveur", sa.joueurs.find((j) => j.id === a).reponses.every((r) => typeof r.t === "number") && sa.joueurs.find((j) => j.id === b).reponses === null);
   ok("018 : le dernier est éliminé après trois questions", sa.joueurs.find((j) => j.id === c).elimine === 3 && sa.joueurs.find((j) => j.id === a).elimine === null);
   ok("018 : un éliminé ne joue plus", (await q(`select portulan_salon_repondre($1, $2, 3, true, 150) r`, [c, sa.id])).joueurs.find((j) => j.id === c).nombre === 3);
   for (let i = 3; i < 6; i++) {

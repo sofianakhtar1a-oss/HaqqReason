@@ -698,11 +698,15 @@ export function questionMelangee(graine: number, niveauMax: number, qcmSeulement
 
 export const QUESTIONS_PAR_DUEL = 10;
 
-export function questionsDuel(graine: number, mode: ModeJeu): Question[] {
+/**
+ * Les questions d'un duel (ou d'un salon) : les mêmes pour tous, tirées de la graine. Les dix premières
+ * ne dépendent pas du nombre demandé (un duel de quinze questions commence comme un duel de dix).
+ */
+export function questionsDuel(graine: number, mode: ModeJeu, nombre = QUESTIONS_PAR_DUEL): Question[] {
   const h = hasard(graine);
   const sortie: Question[] = [];
   const vus = new Set<string>();
-  for (let i = 0; sortie.length < QUESTIONS_PAR_DUEL && i < 80; i++) {
+  for (let i = 0; sortie.length < nombre && i < 80 + nombre * 4; i++) {
     const g = deriver(graine, i);
     const hi = hasard(g);
     const categorie: CategorieId = mode === "melange" ? choisir(CATEGORIES_CLASSIQUES, hi) : mode;

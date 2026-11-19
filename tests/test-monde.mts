@@ -130,6 +130,48 @@ for (const mode of [...CATEGORIES_CLASSIQUES, "melange"] as const) {
   }
 }
 
+/* ---------- Les duels réglés, l'arbitrage du temps, la campagne ---------- */
+{
+  const du = await import("../src/lib/monde/duels");
+  const bo = await import("../src/lib/monde/bots");
+  for (const mode of [...CATEGORIES_CLASSIQUES, "melange"] as const) {
+    for (let i = 0; i < 10; i++) {
+      const graine = nouvelleGraine();
+      const quinze = questionsDuel(graine, mode, 15);
+      const cinq = questionsDuel(graine, mode, 5);
+      ok(`duel réglé ${mode} : 15 questions`, quinze.length === 15, String(quinze.length));
+      ok(`duel réglé ${mode} : 5 questions`, cinq.length === 5, String(cinq.length));
+      ok(`duel réglé ${mode} : des pays tous différents`, new Set(quinze.map((q) => q.cible)).size === 15);
+      // Les mêmes premières questions, quel que soit le nombre : le serveur juge sur la même liste.
+      ok(`duel réglé ${mode} : 5 et 15 commencent pareil`, JSON.stringify(cinq) === JSON.stringify(quinze.slice(0, 5)));
+      ok(`duel réglé ${mode} : 10 par défaut`, JSON.stringify(questionsDuel(graine, mode)) === JSON.stringify(questionsDuel(graine, mode, 10)));
+    }
+  }
+  ok("réglages : 5, 10, 15 questions", du.NOMBRES_DUEL.every((n) => du.nombreDuelValide(n)) && !du.nombreDuelValide(7) && !du.nombreDuelValide("10"));
+  ok("réglages : de 5 à 30 secondes", du.DUREES_DUEL.every((d) => du.dureeDuelValide(d)) && !du.dureeDuelValide(1000) && !du.dureeDuelValide(60_000));
+  ok("salon : élimination toutes les trois questions", du.NOMBRES_SALON.every((n) => n % du.PAS_ELIMINATION === 0) && du.TAILLE_SALON.min === 3 && du.TAILLE_SALON.max === 8);
+  ok("réactions : six, des identifiants uniques", du.REACTIONS.length === 6 && new Set(du.REACTIONS.map((r) => r.id)).size === 6 && du.estReaction("salam") && !du.estReaction("insulte"));
+  // Les points : 100 pour une bonne réponse, jusqu'à 50 de plus pour la vitesse, sur le temps de la question.
+  ok("points : instantané", du.pointsReponse(true, 0, 15_000) === 150);
+  ok("points : au dernier moment", du.pointsReponse(true, 15_000, 15_000) === 100 && du.pointsReponse(true, 99_000, 15_000) === 100);
+  ok("points : à mi-temps d'une question de 5 s", du.pointsReponse(true, 2_500, 5_000) === 125);
+  ok("points : faux, rien", du.pointsReponse(false, 0, 15_000) === 0);
+  // L'arbitrage du temps.
+  ok("arbitrage : réflexe minimal", du.tempsArbitre(50, null, 15_000) === du.REFLEXE_MIN);
+  ok("arbitrage : temps inconnu, l'annonce compte", du.tempsArbitre(4_000, null, 15_000) === 4_000);
+  ok("arbitrage : annonce honnête", du.tempsArbitre(4_000, 4_600, 15_000) === 4_000);
+  ok("arbitrage : vitesse inventée, le temps réel compte", du.tempsArbitre(900, 9_000, 15_000) === 7_500);
+  ok("arbitrage : jamais au-delà de la question", du.tempsArbitre(900, 60_000, 15_000) === 15_000 && du.tempsArbitre(40_000, null, 15_000) === 15_000);
+  ok("arbitrage : réponse avant la question", du.tempsArbitre(900, -5_000, 15_000) === 15_000);
+  ok("arbitrage : annonce illisible", du.tempsArbitre(Number.NaN, null, 10_000) === 10_000);
+  // La campagne.
+  ok("explorateurs : 15, des identifiants uniques", bo.EXPLORATEURS.length === 15 && new Set(bo.EXPLORATEURS.map((e) => e.id)).size === 15);
+  for (const nom of ["Ibn Hawqal", "Ahmad ibn Fadlân", "Al-Bakrî", "Ptolémée", "Mercator", "Magellan", "Humboldt"]) ok(`explorateur : ${nom}`, bo.EXPLORATEURS.some((e) => e.nom === nom));
+  ok("campagne : tous les explorateurs", bo.CAMPAGNE.length === bo.EXPLORATEURS.length && new Set(bo.CAMPAGNE.map((e) => e.id)).size === bo.EXPLORATEURS.length);
+  ok("campagne : du plus abordable au plus redoutable", bo.CAMPAGNE.every((e, i) => i === 0 || bo.CAMPAGNE[i - 1].force <= e.force));
+  ok("campagne : le suivant, puis la fin", bo.suivantCampagne(0) === bo.CAMPAGNE[0] && bo.suivantCampagne(bo.CAMPAGNE.length) === null);
+}
+
 /* ---------- L'arbitrage ---------- */
 const q1 = fabriquer(1, "fr", { types: ["drapeau-nom"], niveau: 1 })!;
 ok("drapeau → nom : juste", juger(q1.type, "fr", "fr") === "juste");
