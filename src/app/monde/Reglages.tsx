@@ -30,6 +30,7 @@ import { exporterProgression, importerProgression, LANGUES, regler, remettreAZer
 import { ICONES_CATEGORIES } from "./Accueil";
 import { useConfirmer } from "./Confirmer";
 import { jouer } from "./sons";
+import { localeDe } from "./traduction";
 
 /* =====================================================================
    Les réglages : les sons, la lecture, le temps, la langue, les données
@@ -294,8 +295,8 @@ export function JournalDeBord({ onRetour, aller }: { onRetour: () => void; aller
     return [...m.entries()];
   }, [monde.journal]);
   const semaine = monde.journal.filter((x) => x.t > maintenant - 7 * DUREE_JOUR);
-  const heure = new Intl.DateTimeFormat("fr-FR", { hour: "2-digit", minute: "2-digit" });
-  const date = new Intl.DateTimeFormat("fr-FR", { weekday: "long", day: "numeric", month: "long" });
+  const heure = new Intl.DateTimeFormat(localeDe(monde.profil.langue), { hour: "2-digit", minute: "2-digit" });
+  const date = new Intl.DateTimeFormat(localeDe(monde.profil.langue), { weekday: "long", day: "numeric", month: "long" });
   return (
     <div className="pt-categorie pt-journal">
       <button type="button" className="pt-retour-lien" onClick={onRetour}>
@@ -424,7 +425,7 @@ export function Statistiques({ onRetour, aller }: { onRetour: () => void; aller:
   const lundi = s.jour - ((s.jour + 3) % 7);
   const debut = lundi - 11 * 7;
   const nom = (code: string) => PAYS.find((p) => p.code === code)?.nom ?? code;
-  const jourCourt = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "short" });
+  const jourCourt = new Intl.DateTimeFormat(localeDe(monde.profil.langue), { day: "numeric", month: "short" });
   return (
     <div className="pt-categorie pt-stats">
       <button type="button" className="pt-retour-lien" onClick={onRetour}>

@@ -448,7 +448,8 @@ export function InviteAutre({ q, globe, phase, choix, onRepondre }: { q: Questio
       ) : (
         <div className="pt-proposition">
           <p>
-            La capitale <strong>{duNom(p)}</strong> est <strong className="pt-nom-grand">{m.capitale}</strong>.
+            {/* « est » suivi d'un gluon invisible : la traduction le distingue du point cardinal. */}
+            La capitale <strong>{duNom(p)}</strong> est{"\u2060"} <strong className="pt-nom-grand">{m.capitale}</strong>.
           </p>
         </div>
       );

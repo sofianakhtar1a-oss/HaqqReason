@@ -6,6 +6,8 @@
  * téléphone le permet, téléchargée sinon.
  */
 
+import { enLangue, langueInterface, localeInterface } from "./traduction";
+
 export type CarteResultat = {
   /** « Victoire ! », « Égalité », « 2e sur 6 »… */
   verdict: string;
@@ -18,8 +20,9 @@ export type CarteResultat = {
 };
 
 const SERIF = "'Literata Variable', Georgia, serif";
+const ARABE = "'Noto Sans Arabic Variable'";
 const SANS = "'Instrument Sans Variable', system-ui, sans-serif";
-const fr = (n: number) => new Intl.NumberFormat("fr-FR").format(n).replace(/[  ]/g, " ");
+const fr = (n: number) => new Intl.NumberFormat(localeInterface()).format(n).replace(/[  ]/g, " ");
 
 export async function imageResultat(c: CarteResultat): Promise<Blob | null> {
   const L = 1080;
@@ -75,17 +78,27 @@ export async function imageResultat(c: CarteResultat): Promise<Blob | null> {
   ctx.lineWidth = 1;
   ctx.strokeRect(48, 48, L - 96, H - 96);
 
-  ctx.textAlign = "left";
+  // En arabe : de droite à gauche, sans italique, dans une police qui a ses lettres.
+  const ar = langueInterface() === "ar";
+  ctx.direction = ar ? "rtl" : "ltr";
+  const serif = ar ? `${ARABE}, ${SERIF}` : SERIF;
+  const sans = ar ? `${ARABE}, ${SANS}` : SANS;
+  const italique = ar ? "" : "italic ";
+  const debut = ar ? L - 96 : 96;
+  const fin = ar ? 96 : L - 96;
+  const verdict = enLangue(c.verdict);
+
+  ctx.textAlign = "start";
   ctx.fillStyle = "#e9be6a";
-  ctx.font = `italic 600 52px ${SERIF}`;
-  ctx.fillText("Le Portulan", 96, 150);
+  ctx.font = `${italique}600 52px ${serif}`;
+  ctx.fillText(enLangue("Le Portulan"), debut, 150);
   ctx.fillStyle = "rgba(251, 244, 226, 0.78)";
-  ctx.font = `500 30px ${SANS}`;
-  ctx.fillText(c.sousTitre, 96, 200);
+  ctx.font = `500 30px ${sans}`;
+  ctx.fillText(enLangue(c.sousTitre), debut, 200);
 
   ctx.fillStyle = "#ffa65c";
-  ctx.font = `italic 700 ${c.verdict.length > 14 ? 92 : 120}px ${SERIF}`;
-  ctx.fillText(c.verdict, 96, 380);
+  ctx.font = `${italique}700 ${verdict.length > 14 ? 92 : 120}px ${serif}`;
+  ctx.fillText(verdict, debut, 380);
 
   // Les joueurs : un rang, un nom, des points (les miens en safran).
   const joueurs = c.joueurs.slice(0, 6);
@@ -98,22 +111,23 @@ export async function imageResultat(c: CarteResultat): Promise<Blob | null> {
     ctx.roundRect(88, y, L - 176, pas - 18, 22);
     ctx.fill();
     ctx.fillStyle = j.moi ? "#ffd9b5" : "#fbf4e2";
-    ctx.font = `600 ${joueurs.length > 3 ? 36 : 44}px ${SANS}`;
+    ctx.font = `600 ${joueurs.length > 3 ? 36 : 44}px ${sans}`;
     ctx.textBaseline = "middle";
-    ctx.fillText(j.nom.slice(0, 26), 124, y + (pas - 18) / 2);
-    ctx.textAlign = "right";
+    // Seuls « Moi » et « Adversaire » se traduisent : les autres noms sont ceux des joueurs.
+    ctx.fillText((j.moi || j.nom === "Adversaire" ? enLangue(j.nom) : j.nom).slice(0, 26), ar ? L - 124 : 124, y + (pas - 18) / 2);
+    ctx.textAlign = "end";
     ctx.fillStyle = j.moi ? "#ffa65c" : "#e9be6a";
-    ctx.font = `italic 700 ${joueurs.length > 3 ? 40 : 52}px ${SERIF}`;
-    ctx.fillText(`${fr(j.points)} pts`, L - 124, y + (pas - 18) / 2);
-    ctx.textAlign = "left";
+    ctx.font = `${italique}700 ${joueurs.length > 3 ? 40 : 52}px ${serif}`;
+    ctx.fillText(`${fr(j.points)} ${ar ? "نقطة" : "pts"}`, ar ? 124 : L - 124, y + (pas - 18) / 2);
+    ctx.textAlign = "start";
     ctx.textBaseline = "alphabetic";
   });
 
   ctx.fillStyle = "rgba(251, 244, 226, 0.6)";
-  ctx.font = `500 26px ${SANS}`;
-  ctx.fillText(c.pied ?? new Intl.DateTimeFormat("fr-FR", { dateStyle: "long" }).format(new Date()), 96, H - 96);
-  ctx.textAlign = "right";
-  ctx.fillText("HaqqReason", L - 96, H - 96);
+  ctx.font = `500 26px ${sans}`;
+  ctx.fillText(c.pied ? enLangue(c.pied) : new Intl.DateTimeFormat(localeInterface(), { dateStyle: "long" }).format(new Date()), debut, H - 96);
+  ctx.textAlign = "end";
+  ctx.fillText("HaqqReason", fin, H - 96);
   return new Promise((ok) => toile.toBlob((b) => ok(b), "image/png"));
 }
 
@@ -122,7 +136,7 @@ export async function partagerImage(blob: Blob, nom: string, texte: string): Pro
   const fichier = new File([blob], nom, { type: "image/png" });
   try {
     if (navigator.canShare?.({ files: [fichier] })) {
-      await navigator.share({ files: [fichier], text: texte });
+      await navigator.share({ files: [fichier], text: enLangue(texte) });
       return "partage";
     }
   } catch (e) {

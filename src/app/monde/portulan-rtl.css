@@ -1,0 +1,426 @@
+/* Fichier produit par scripts/monde/rtl.mjs (rtlcss) : le Portulan de droite à gauche, pour l'arabe. Ne pas modifier à la main. */
+html[dir="rtl"] .pt-espace {
+  display: flex;
+  flex-direction: column;
+  overflow-x: clip;
+  min-height: calc(100dvh - var(--barre-vue, 0rem));
+  isolation: isolate;
+  background: radial-gradient(56rem 34rem at 85% -10%, color-mix(in srgb, var(--sa) 9%, transparent), transparent 70%), radial-gradient(44rem 32rem at 0% 100%, color-mix(in srgb, var(--or) 6%, transparent), transparent 70%), var(--fond);
+}
+html[dir="rtl"] .pt-tete-titre {
+  padding-right: 0.85rem;
+  border-right: 1px solid var(--trait);
+  padding-left: 0;
+  border-left: 0;
+}
+html[dir="rtl"] .pt-lueur {
+  right: 0;
+  margin: -23rem -23rem 0 0;
+  transform: translate3d(-50vw, 28vh, 0);
+  left: auto;
+}
+html[dir="rtl"] .pt-resultats button {
+  text-align: right;
+}
+html[dir="rtl"] .pt-resultats small {
+  margin-right: auto;
+  margin-left: 0;
+}
+html[dir="rtl"] .pt-interrupteur-piste::after {
+  right: 0.18rem;
+  left: auto;
+}
+html[dir="rtl"] .pt-interrupteur input:checked + .pt-interrupteur-piste::after {
+  transform: translateX(-1.05rem);
+}
+html[dir="rtl"] .pt-globe-mire {
+  right: 50%;
+  margin: -0.85rem -0.85rem 0 0;
+  left: auto;
+}
+html[dir="rtl"] .pt-globe-mire::after {
+  right: 50%;
+  margin-right: -1px;
+  left: auto;
+  margin-left: 0;
+}
+html[dir="rtl"] .pt-globe-anneau {
+  right: 0;
+  margin: -1.3rem -1.3rem 0 0;
+  left: auto;
+}
+html[dir="rtl"] .pt-globe-outils {
+  left: 0.6rem;
+  right: auto;
+}
+html[dir="rtl"] .pt-indices {
+  right: 50%;
+  transform: translateX(50%);
+  left: auto;
+}
+html[dir="rtl"] .pt-flamme {
+  margin-left: 0.2rem;
+  margin-right: 0;
+}
+html[dir="rtl"] .pt-cartouche {
+  border-radius: 1.4rem 0.35rem 1.4rem 0.35rem;
+  text-align: right;
+}
+html[dir="rtl"] .pt-cartouche-cadre {
+  border-radius: 1.1rem 0.2rem 1.1rem 0.2rem;
+}
+html[dir="rtl"] .pt-cartouche-cadre::before,
+html[dir="rtl"] .pt-cartouche-cadre::after {
+  transform: rotate(-45deg);
+}
+html[dir="rtl"] .pt-cartouche-cadre::before {
+  right: 1.2rem;
+  left: auto;
+}
+html[dir="rtl"] .pt-cartouche-cadre::after {
+  left: 1.2rem;
+  right: auto;
+}
+html[dir="rtl"] .pt-cartouche:hover .pt-cartouche-icone {
+  transform: rotate(8deg) scale(1.08);
+}
+html[dir="rtl"] .pt-anneau svg {
+  transform: rotate(90deg);
+}
+html[dir="rtl"] .pt-rapide {
+  text-align: right;
+}
+html[dir="rtl"] .pt-jour-carte {
+  background: linear-gradient(-120deg, color-mix(in srgb, var(--sa) 8%, transparent), transparent 55%), var(--pt-papier);
+}
+html[dir="rtl"] .pt-maitrise-barre span {
+  transform-origin: right;
+}
+html[dir="rtl"] .pt-route::before {
+  right: 1.95rem;
+  border-right: 2px dashed color-mix(in srgb, var(--or) 40%, transparent);
+  left: auto;
+  border-left: 0;
+}
+html[dir="rtl"] .pt-escale-bouton {
+  padding: 0.75rem 0.75rem 0.75rem 1rem;
+  text-align: right;
+}
+html[dir="rtl"] .pt-escale-num {
+  margin-left: 0.35rem;
+  margin-right: 0;
+}
+html[dir="rtl"] .pt-route-fait {
+  background: linear-gradient(-90deg, color-mix(in srgb, var(--sa) 70%, var(--or)), var(--sa));
+  transform-origin: right;
+}
+html[dir="rtl"] .pt-chrono svg {
+  transform: rotate(90deg);
+}
+html[dir="rtl"] .pt-pastille {
+  padding: 0.35rem 0.4rem 0.35rem 0.8rem;
+}
+html[dir="rtl"] .pt-horloge[data-question] {
+  background: linear-gradient(-160deg, var(--sa-doux), transparent 70%), var(--pt-papier);
+}
+html[dir="rtl"] .pt-classer-ligne {
+  padding: 0.55rem 0.8rem 0.55rem 0.6rem;
+}
+html[dir="rtl"] .pt-option-touche {
+  right: 0.6rem;
+  left: auto;
+}
+html[dir="rtl"] .pt-option-signe {
+  left: 0.7rem;
+  right: auto;
+}
+html[dir="rtl"] .pt-jokers-solde {
+  margin-right: 0.3rem;
+  margin-left: 0;
+}
+html[dir="rtl"] .pt-fin[data-reussi] .pt-fin-titre {
+  background: linear-gradient(-100deg, var(--or), var(--sa) 60%, var(--or));
+}
+html[dir="rtl"] .pt-fin-rates {
+  text-align: right;
+}
+html[dir="rtl"] .pt-fiche-tete {
+  padding-left: 2.8rem;
+  padding-right: 0;
+}
+html[dir="rtl"] .pt-fiche-fermer {
+  left: 0;
+  right: auto;
+}
+html[dir="rtl"] .pt-fiche-nom .pt-voix {
+  margin-right: 0.45rem;
+  margin-left: 0;
+}
+html[dir="rtl"] .pt-fiche-savais {
+  padding: 0.95rem 1.25rem 1rem 1.1rem;
+  background: linear-gradient(-135deg, var(--sa-doux), transparent 70%), var(--pt-papier);
+}
+html[dir="rtl"] .pt-fiche-savais::before {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  left: auto;
+}
+html[dir="rtl"] .pt-fiche-savais-titre span {
+  margin-right: 0.35rem;
+  margin-left: 0;
+}
+html[dir="rtl"] .pt-fin-savais {
+  text-align: right;
+}
+html[dir="rtl"] .pt-fiche-rubrique > summary {
+  padding: 0.85rem 0 0.85rem 2rem;
+}
+html[dir="rtl"] .pt-fiche-rubrique-chevron {
+  left: 0.2rem;
+  right: auto;
+}
+html[dir="rtl"] .pt-fiche-rubrique[open] .pt-fiche-rubrique-chevron {
+  transform: rotate(-180deg);
+}
+html[dir="rtl"] .pt-atlas-carte {
+  text-align: right;
+}
+html[dir="rtl"] .pt-carte-verso {
+  transform: rotateY(-180deg);
+}
+html[dir="rtl"] .pt-carte-memoire[data-retournee] .pt-carte-recto {
+  transform: rotateY(180deg);
+}
+html[dir="rtl"] .pt-verso-nom {
+  text-align: right;
+}
+html[dir="rtl"] .pt-verso-faits {
+  text-align: right;
+}
+html[dir="rtl"] .pt-explorateur {
+  text-align: right;
+}
+html[dir="rtl"] .pt-joueur[data-cote="droite"] {
+  text-align: left;
+}
+html[dir="rtl"] .pt-virtuel {
+  margin-right: 0.35rem;
+  margin-left: 0;
+}
+html[dir="rtl"] .pt-duel-recap {
+  text-align: right;
+}
+html[dir="rtl"] .pt-cartouche:hover .pt-cartouche-embleme {
+  transform: rotate(5deg) scale(1.06);
+}
+html[dir="rtl"] .pt-cabinet-note {
+  border-right: 3px solid var(--or-trait);
+  border-radius: 0.7rem 0 0 0.7rem;
+  border-left: 0;
+}
+html[dir="rtl"] .pt-nomme-carte {
+  text-align: right;
+}
+html[dir="rtl"] .pt-nomme-carte-barre span {
+  transform-origin: right;
+}
+html[dir="rtl"] .pt-verso-piege,
+html[dir="rtl"] .pt-decouvrir-piege,
+html[dir="rtl"] .pt-piege-texte {
+  border-right: 3px solid var(--sa-trait);
+  border-radius: 0.6rem 0 0 0.6rem;
+  text-align: right;
+  border-left: 0;
+}
+html[dir="rtl"] .pt-escale-decouvrir {
+  left: 3.6rem;
+  right: auto;
+}
+html[dir="rtl"] .pt-theme::after {
+  transform-origin: right;
+}
+html[dir="rtl"] .pt-theme-drapeaux .pt-drapeau {
+  margin-left: -0.55rem;
+  margin-right: 0;
+}
+html[dir="rtl"] .pt-certificat-nom {
+  text-align: right;
+}
+html[dir="rtl"] .pt-certificat-sceau {
+  left: 1.2rem;
+  transform: rotate(12deg);
+  right: auto;
+}
+html[dir="rtl"] .pt-jalons {
+  padding: 0 1.4rem 0 0;
+}
+html[dir="rtl"] .pt-jalons::before {
+  right: 0.35rem;
+  left: auto;
+}
+html[dir="rtl"] .pt-jalons li::before {
+  right: -1.35rem;
+  left: auto;
+}
+html[dir="rtl"] .pt-etapes button {
+  border-right: 2px solid var(--trait);
+  text-align: right;
+  border-left: 0;
+}
+html[dir="rtl"] .pt-etapes li[data-passee] button {
+  border-right-color: var(--or);
+  border-left-color: 0;
+}
+html[dir="rtl"] .pt-etapes li[data-courante] button {
+  border-right-width: 4px;
+  border-left-width: 0;
+}
+html[dir="rtl"] .pt-puce-record {
+  margin-right: 0.35rem;
+  margin-left: 0;
+}
+html[dir="rtl"] .pt-medaille-verrou {
+  left: 0;
+  right: auto;
+}
+html[dir="rtl"] .pt-ligue-blason {
+  background: linear-gradient(-160deg, color-mix(in srgb, var(--ligue) 70%, white), var(--ligue));
+}
+html[dir="rtl"] .pt-encarts-titre {
+  margin-left: 0.25rem;
+  margin-right: 0;
+}
+html[dir="rtl"] .pt-calques {
+  left: 3.6rem;
+  right: auto;
+}
+html[dir="rtl"] .pt-carte-bas {
+  right: 0.6rem;
+  left: auto;
+}
+html[dir="rtl"] .pt-legende-pastille[data-raye] {
+  background: repeating-linear-gradient(45deg, color-mix(in srgb, var(--encre) 55%, transparent) 0 1.5px, transparent 1.5px 4px);
+}
+html[dir="rtl"] .pt-encart {
+  left: 0.6rem;
+  right: auto;
+}
+html[dir="rtl"] .pt-encart-tete {
+  padding: 0.3rem 0.75rem 0.3rem 0.35rem;
+}
+html[dir="rtl"] .pt-explorer-menu button {
+  text-align: right;
+}
+html[dir="rtl"] .pt-mon-pays-liste button {
+  text-align: right;
+}
+html[dir="rtl"] .pt-outil-silhouettes li {
+  padding: 0.55rem 0.75rem 0.55rem 0.5rem;
+  border-right: 4px solid var(--teinte, var(--pt-choix));
+  border-left: 0;
+}
+html[dir="rtl"] .pt-jeu-manches {
+  padding-right: 1.3rem;
+  padding-left: 0;
+}
+html[dir="rtl"] .pt-cote strong {
+  margin-right: 0.3rem;
+  margin-left: 0;
+}
+html[dir="rtl"] .pt-duel-reglages .pt-reglage-nom ~ .pt-reglage-nom {
+  margin-right: 0.9rem;
+  margin-left: 0;
+}
+html[dir="rtl"] .pt-joueur-bulle {
+  left: 0;
+  border-radius: 0.3rem 1rem 1rem 1rem;
+  right: auto;
+}
+html[dir="rtl"] .pt-joueur[data-cote="gauche"] .pt-joueur-bulle {
+  left: auto;
+  right: 0;
+  border-radius: 1rem 0.3rem 1rem 1rem;
+}
+html[dir="rtl"] .pt-classes-liste button {
+  text-align: right;
+}
+html[dir="rtl"] .pt-salon-hote {
+  margin-right: 0.3rem;
+  margin-left: 0;
+}
+html[dir="rtl"] .pt-bouton-son[data-coupe]::after {
+  transform: rotate(45deg);
+}
+html[dir="rtl"] .pt-journal-liste li {
+  border-right: 3px solid var(--or);
+  border-left: 0;
+}
+html[dir="rtl"] .pt-journal-liste li[data-resultat="v"] {
+  border-right-color: var(--succes);
+  border-left-color: 0;
+}
+html[dir="rtl"] .pt-journal-liste li[data-resultat="d"],
+html[dir="rtl"] .pt-journal-liste li[data-resultat="rate"] {
+  border-right-color: var(--danger);
+  border-left-color: 0;
+}
+html[dir="rtl"] .pt-journal-liste li[data-resultat="n"] {
+  border-right-color: var(--encre-douce);
+  border-left-color: 0;
+}
+html[dir="rtl"] .pt-journal-xp {
+  text-align: left;
+}
+html[dir="rtl"] .pt-stats-barre span {
+  background: linear-gradient(-90deg, var(--or), var(--sa));
+  transform-origin: right center;
+}
+html[dir="rtl"] .pt-stats-barre[data-justesse] span {
+  background: linear-gradient(-90deg, color-mix(in srgb, var(--succes) 55%, var(--surface)), var(--succes));
+}
+html[dir="rtl"] .pt-stats-valeur {
+  text-align: left;
+}
+html[dir="rtl"] .pt-stats-pays li .pt-lien {
+  text-align: right;
+}
+html[dir="rtl"] .pt-boussole-aiguille {
+  transform-origin: 100% 0;
+}
+html[dir="rtl"] .pt-ciel i {
+  right: 0;
+  left: auto;
+}
+html[dir="rtl"] .pt-route-voilier {
+  right: 0;
+  margin: -1.25rem -1.25rem 0 0;
+  left: auto;
+}
+html[dir="rtl"] .pt-brevet-rouleau {
+  background: linear-gradient(-180deg, #c9a868, #f6e9c6 38%, #d8bd85 70%, #9f7c3c);
+}
+html[dir="rtl"] .pt-brevet-titre {
+  background: linear-gradient(-100deg, #8a5e06, #d9a440 35%, #f6d78a 50%, #b47f1c 65%, #8a5e06);
+}
+html[dir="rtl"] .pt-brevet-pied {
+  padding: 0.7rem 0 1.1rem 4.4rem;
+}
+html[dir="rtl"] .pt-brevet-sceau {
+  left: 0.6rem;
+  transform: rotate(12deg);
+  right: auto;
+}
+html[dir="rtl"].pt-dyslexie .pt {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  word-spacing: 0.08em;
+}
+html[dir="rtl"][lang="ar"] .pt {
+  font-family: var(--font-sans);
+}
+@media print {
+html[dir="rtl"] .pt-muette-liste {
+  padding-right: 8mm;
+  padding-left: 0;
+}
+}

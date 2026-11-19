@@ -575,5 +575,35 @@ for (const url of [CARTE_URL, CARTE_LEGERE_URL, CARTE_ULTRA_URL]) {
   ok("import : un fichier étranger refusé", pr.importerProgression("{\"bonjour\": 1}") === false && pr.importerProgression("pas du JSON") === false);
 }
 
+/* ---------- L'interface en anglais et en arabe ---------- */
+{
+  const tr = await import("../src/app/monde/traduction");
+  const { CATALOGUE } = await import("../src/app/monde/traductions/catalogue");
+  await tr.chargerCatalogue();
+  ok("catalogue : chaque entrée a ses trois langues", [...CATALOGUE.exacts, ...CATALOGUE.motifs].every((e) => e.length === 3 && e.every((x) => x.trim().length > 0)));
+  ok("catalogue : pas de doublon", new Set(CATALOGUE.exacts.map((e) => e[0])).size === CATALOGUE.exacts.length);
+  for (const [fr, en, ar] of CATALOGUE.motifs) {
+    const n = (fr.match(/\{[nxvdal]\}/g) ?? []).length;
+    for (const t of [en, ar]) {
+      const refs = [...t.matchAll(/\{(\d)\}/g)].map((m) => Number(m[1]));
+      ok(`motif « ${fr} » : ses morceaux`, n > 0 && refs.every((k) => k >= 1 && k <= n), t);
+    }
+  }
+  ok("traduire : un texte exact", tr.traduire("Drapeaux", "en") === "Flags" && tr.traduire("Drapeaux", "ar") === "الأعلام");
+  ok("traduire : un pays", tr.traduire("Allemagne", "en") === "Germany" && tr.traduire("Allemagne", "ar") === pays("de").nomAr);
+  ok("traduire : une capitale", tr.traduire("Vienne", "en") === "Vienna");
+  ok("traduire : un motif à nombres", tr.traduire("Niveau 12 sur 20", "en") === "Level 12 of 20", String(tr.traduire("Niveau 12 sur 20", "en")));
+  ok("traduire : un motif à nombres, en arabe", tr.traduire("Niveau 3", "ar") === "المستوى 3");
+  ok("traduire : un motif dont un morceau se traduit", tr.traduire("Découvrir : Allemagne", "en") === "Discover: Germany", String(tr.traduire("Découvrir : Allemagne", "en")));
+  ok("traduire : le français reste le français", tr.traduire("Drapeaux", "fr") === null);
+  ok("traduire : ce qui n'est pas au catalogue reste", tr.traduire("Une phrase que personne n'a jamais écrite", "en") === null);
+  // Le nom d'un pays s'écrit aussi en anglais et en arabe dans les réponses libres.
+  const de = pays("de");
+  ok("nom en anglais accepté", jugerNom("Germany", de) === "juste", jugerNom("Germany", de));
+  ok("nom en arabe accepté", Boolean(de.nomAr) && jugerNom(de.nomAr!, de) === "juste");
+  ok("nom en arabe, sans l'article ni les voyelles", jugerNom(de.nomAr!.replace(/[\u064B-\u0652]/g, ""), de) === "juste");
+  ok("capitale en anglais acceptée", jugerCapitale("Vienna", pays("at")) === "juste", jugerCapitale("Vienna", pays("at")));
+}
+
 console.log(echecs ? `\n${echecs} échec(s).` : `Tout est bon (${questions} questions de niveau vérifiées).`);
 process.exit(echecs ? 1 : 0);

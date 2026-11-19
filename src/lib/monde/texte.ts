@@ -1,4 +1,5 @@
 import { PAYS } from "./donnees";
+import { CAPITALES_LANGUES } from "./noms-langues";
 import type { Pays } from "./types";
 
 /*
@@ -10,19 +11,27 @@ import type { Pays } from "./types";
 export type Jugement = "juste" | "presque" | "faux";
 
 export function normaliser(s: string): string {
-  return s
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
-    .toLowerCase()
-    .replace(/œ/g, "oe")
-    .replace(/æ/g, "ae")
-    .replace(/[’'`´ʼ\-–—.,;:()/_]/g, " ")
-    .replace(/\s+/g, " ")
-    .trim()
-    .replace(/^(le|la|les|l|el) /, "")
-    .replace(/\bst\b/g, "saint")
-    .replace(/\bste\b/g, "sainte")
-    .replace(/\s/g, "");
+  return (
+    s
+      .normalize("NFD")
+      .replace(/\p{Diacritic}/gu, "")
+      .toLowerCase()
+      .replace(/œ/g, "oe")
+      .replace(/æ/g, "ae")
+      // L'arabe : sans voyelles ni allongement, les alifs confondus, ة comme ه, ى comme ي.
+      .replace(/[\u064B-\u065F\u0670\u0640]/g, "")
+      .replace(/[أإآٱ]/g, "ا")
+      .replace(/ة/g, "ه")
+      .replace(/ى/g, "ي")
+      .replace(/[’'`´ʼ\-–—.,;:()/_،]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+      .replace(/^(le|la|les|l|el|the) /, "")
+      .replace(/^ال/, "")
+      .replace(/\bst\b/g, "saint")
+      .replace(/\bste\b/g, "sainte")
+      .replace(/\s/g, "")
+  );
 }
 
 /** Distance de Damerau-Levenshtein (une inversion de deux lettres compte pour une faute). */
@@ -42,9 +51,14 @@ export function distance(a: string, b: string): number {
 
 const tolerance = (n: number) => (n >= 9 ? 2 : n >= 4 ? 1 : 0);
 
-/** Toutes les formes acceptées, déjà normalisées, pour chaque pays (noms) et chaque capitale. */
-const formesNoms = new Map<string, string[]>(PAYS.map((p) => [p.code, [...new Set(p.noms.map(normaliser))]]));
-const formesCapitales = new Map<string, string[]>(PAYS.filter((p) => p.capitale).map((p) => [p.code, [...new Set([p.capitale!, ...(p.capitales ?? [])].map(normaliser))]]));
+/**
+ * Toutes les formes acceptées, déjà normalisées, pour chaque pays (noms) et chaque capitale :
+ * en français d'abord, puis en anglais et en arabe (l'interface peut être dans ces langues).
+ */
+const formesNoms = new Map<string, string[]>(PAYS.map((p) => [p.code, [...new Set([...p.noms, p.nomEn, p.nomAr].filter((x): x is string => Boolean(x)).map(normaliser))].filter(Boolean)]));
+const formesCapitales = new Map<string, string[]>(
+  PAYS.filter((p) => p.capitale).map((p) => [p.code, [...new Set([p.capitale!, ...(p.capitales ?? []), ...(CAPITALES_LANGUES[p.code] ?? [])].map(normaliser))].filter(Boolean)]),
+);
 
 export function comparer(saisie: string, cible: string, formes: Map<string, string[]>): Jugement {
   const s = normaliser(saisie);

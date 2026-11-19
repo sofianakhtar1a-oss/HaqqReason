@@ -7678,3 +7678,26 @@ html.pt-daltonien[data-theme="light"] .pt {
   background: color-mix(in srgb, var(--pt-bateau, var(--sa)) 16%, var(--fond));
   border-color: var(--pt-bateau, var(--sa));
 }
+
+/* =====================================================================
+   L'interface en arabe : la police, l'écriture liée, le sens des flèches
+   (les marges et les positions retournées sont dans portulan-rtl.css)
+   ===================================================================== */
+html[lang="ar"] .pt {
+  --font-sans: "Noto Sans Arabic Variable", "Instrument Sans Variable", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Noto Sans Arabic Variable", "Bricolage Grotesque Variable", "Segoe UI", system-ui, sans-serif;
+  --pt-serif: "Amiri", "Noto Sans Arabic Variable", "Literata Variable", Georgia, serif;
+  font-family: var(--font-sans);
+}
+html[lang="ar"] .pt * {
+  font-style: normal;
+}
+html[lang="ar"] .pt :not(.pt-duel-code, .pt-code input, kbd) {
+  letter-spacing: 0;
+}
+html[lang="ar"] .pt :is(.pt-titre, .pt-fin-titre, .pt-intro-titre, .pt-brevet-titre) {
+  line-height: 1.35;
+}
+html[dir="rtl"] .pt :is(.lucide-arrow-left, .lucide-arrow-right, .lucide-chevron-left, .lucide-chevron-right, .lucide-undo-2, .lucide-redo-2) {
+  transform: scaleX(-1);
+}

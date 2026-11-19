@@ -23,6 +23,7 @@ import { soleilAuZenith } from "@/lib/monde/calques";
 import { PAYS } from "@/lib/monde/donnees";
 import { type Carte, type Forme, useCarte } from "./carte";
 import { type Geographie, useGeographie } from "./geographie";
+import { libelle as nomLangue, surChangementLangue } from "./traduction";
 
 /*
  * Le globe du Portulan, dessiné sur un <canvas>.
@@ -261,6 +262,8 @@ function zoomPour(forme: Forme | undefined, recul = 1): number {
 /* ---------- Les noms : mesurer une fois, ne jamais se chevaucher ---------- */
 type Boite = [number, number, number, number];
 const mesures = new Map<string, number>();
+/** Une lettre arabe dans un nom. */
+const ARABE = /[\u0600-\u06FF]/;
 function largeur(ctx: CanvasRenderingContext2D, police: string, texte: string): number {
   const cle = `${police}|${texte}`;
   let w = mesures.get(cle);
@@ -828,7 +831,7 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
         const forme = carte.parCode.get(s.code);
         const ll: [number, number] = vers ? [vers[1], vers[0]] : forme ? corpsDe(forme).centre : [0, 0];
         const p = visible(ll) ? proj(ll) : null;
-        if (p) nomsSilhouettes.push({ nom: PAR_CODE.get(s.code)?.nom ?? s.code, p });
+        if (p) nomsSilhouettes.push({ nom: nomLangue(PAR_CODE.get(s.code)?.nom ?? s.code), p });
       });
     }
 
@@ -869,7 +872,8 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
     /** Les océans et les mers, en italique espacé (les océans d'abord, les mers après les pays). */
     const poserMers = (rangs: (r: number) => boolean) => {
       if (!g || !props.current.geographie) return;
-      for (const [nom, lon, lat, rang] of g.mers) {
+      for (const [nomFr, lon, lat, rang] of g.mers) {
+        const nom = nomLangue(nomFr);
         if (!rangs(rang) || ppr < SEUILS_MERS[rang]) continue;
         const ll: [number, number] = [lon, lat];
         const a = opacite(ll);
@@ -877,8 +881,9 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
         const p = proj(ll);
         if (!dedans(p)) continue;
         const corps = rang === 0 ? 15 : rang === 1 ? 12.5 : 11.5;
-        const espace = rang === 0 ? 3.2 : 1.2;
-        const police = `italic 500 ${corps}px ${SERIF}`;
+        // L'arabe se lie : ni lettres espacées, ni italique.
+        const espace = ARABE.test(nom) ? 0 : rang === 0 ? 3.2 : 1.2;
+        const police = `${ARABE.test(nom) ? "" : "italic "}500 ${corps}px ${SERIF}`;
         const w = largeur(ctx, police, nom) + espace * nom.length;
         const b: Boite = [p[0] - w / 2 - 2, p[1] - corps * 0.7, p[0] + w / 2 + 2, p[1] + corps * 0.7];
         if (!libre(b)) continue;
@@ -911,10 +916,11 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
         if (minuscule && !approche) continue;
         const corps = rayonPx > 110 ? 14 : rayonPx > 45 ? 12.5 : 11;
         const police = `${rayonPx > 45 ? 650 : 600} ${corps}px ${SERIF}`;
-        let lignes: string[] = [p.nom];
-        let w = largeur(ctx, police, p.nom);
+        const nomPays = nomLangue(p.nom);
+        let lignes: string[] = [nomPays];
+        let w = largeur(ctx, police, nomPays);
         if (!minuscule && w / 2 > rayonPx * 1.6 + 5) {
-          const deux = couper(p.nom);
+          const deux = couper(nomPays);
           const w2 = deux ? Math.max(largeur(ctx, police, deux[0]), largeur(ctx, police, deux[1])) : Infinity;
           if (deux && w2 / 2 <= rayonPx * 1.6 + 5) {
             lignes = deux;
@@ -940,8 +946,9 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
         if (!a) continue;
         const pt = proj(ll);
         if (!dedans(pt)) continue;
-        const police = `italic 500 11px ${SERIF}`;
-        const w = largeur(ctx, police, p.capitale!);
+        const nomCapitale = nomLangue(p.capitale!);
+        const police = `${ARABE.test(nomCapitale) ? "" : "italic "}500 11px ${SERIF}`;
+        const w = largeur(ctx, police, nomCapitale);
         const point: Boite = [pt[0] - 3, pt[1] - 3, pt[0] + 3, pt[1] + 3];
         let b: Boite = [pt[0] + 5, pt[1] - 7, pt[0] + 7 + w, pt[1] + 7];
         let x = pt[0] + 6 + w / 2;
@@ -961,7 +968,7 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
         ctx.strokeStyle = c.etiquetteHalo;
         ctx.stroke();
         ctx.font = police;
-        ecrire(p.capitale!, x, pt[1], c.capitale, true, 2.6);
+        ecrire(nomCapitale, x, pt[1], c.capitale, true, 2.6);
       }
       ctx.globalAlpha = 1;
     }
@@ -1325,6 +1332,16 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
     return () => obs.disconnect();
   }, [demander]);
 
+  // La langue de l'interface change (ou son catalogue arrive) : les noms changent, on les remesure.
+  useEffect(
+    () =>
+      surChangementLangue(() => {
+        mesures.clear();
+        demander();
+      }),
+    [demander],
+  );
+
   // Les polices des noms arrivent : mesurer à nouveau et redessiner.
   useEffect(() => {
     if (!(etiquettes || geographie || relief) || typeof document === "undefined" || !document.fonts) return;
@@ -1655,7 +1672,7 @@ export const Globe = forwardRef<GlobeRef, GlobeProps>(function Globe(
         ref={toile}
         role={pilotable ? "application" : "img"}
         aria-roledescription={pilotable ? "carte" : undefined}
-        aria-label={pilotable ? `${libelle}. ${interactif ? "Au clavier : les flèches pour tourner, plus et moins pour zoomer, Entrée pour choisir ce qui est au centre." : "Au clavier : les flèches pour le faire tourner."}` : libelle}
+        aria-label={pilotable ? `${libelle.replace(/\.$/, "")}. ${interactif ? "Au clavier : les flèches pour tourner, plus et moins pour zoomer, Entrée pour choisir ce qui est au centre." : "Au clavier : les flèches pour le faire tourner."}` : libelle}
         tabIndex={pilotable ? 0 : undefined}
         {...evenements}
       />

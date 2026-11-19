@@ -1,0 +1,284 @@
+# La carte, ses outils et ses calques, l'atlas, la fiche d'un pays, l'histoire, la carte muette.
+
+# Les points cardinaux
+nord || north || الشمال
+nord-est || north-east || الشمال الشرقي
+est || east || الشرق
+sud-est || south-east || الجنوب الشرقي
+sud || south || الجنوب
+sud-ouest || south-west || الجنوب الغربي
+ouest || west || الغرب
+nord-ouest || north-west || الشمال الغربي
+
+# Les outils de la carte
+Fermer l'outil || Close the tool || أغلق الأداة
+Touche deux points sur la carte : près d'une capitale, le point s'y accroche. Tu peux aussi chercher deux pays. || Tap two points on the map: near a capital, the point snaps to it. You can also search for two countries. || المس نقطتين على الخريطة: قرب العاصمة تلتصق النقطة بها. يمكنك أيضًا البحث عن بلدين.
+à toucher sur la carte || to tap on the map || للمس على الخريطة
+à vol d'oiseau, par le plus court chemin à la surface de la Terre. || as the crow flies, by the shortest path over the Earth's surface. || في خط مستقيم، عبر أقصر طريق على سطح الأرض.
+Vol direct : environ {v} || Direct flight: about {1} || رحلة مباشرة: نحو {1}
+Au départ de A, cap au {x} ({n}°). || From A, heading {1} ({2}°). || انطلاقًا من A، الاتجاه نحو {1} ({2}°).
+Sur une carte plane, ce chemin paraît courbe : c'est pourtant le plus court, celui que suivent les avions. || On a flat map this path looks curved: yet it's the shortest, the one planes follow. || على خريطة مسطّحة يبدو هذا الطريق منحنيًا، ومع ذلك فهو الأقصر، وهو الذي تسلكه الطائرات.
+Partir de chez moi || Start from my home || الانطلاق من بلدي
+Inverser || Swap || اعكس
+Effacer || Clear || امسح
+Touche un pays : sa silhouette se détache. Fais-la glisser ailleurs sur le globe, elle garde sa vraie taille. Trois silhouettes au plus. || Tap a country: its outline lifts off. Drag it elsewhere on the globe and it keeps its true size. Three outlines at most. || المس بلدًا: ينفصل شكله. اسحبه إلى مكان آخر على الكرة فيحتفظ بحجمه الحقيقي. ثلاثة أشكال على الأكثر.
+Sur le Mercator, les pays grossissent à mesure qu'on s'éloigne de l'équateur. Fais glisser le Groenland jusqu'à l'Afrique : il fond à sa vraie taille, quatorze fois plus petite. || On the Mercator, countries swell the farther they are from the equator. Drag Greenland down to Africa: it shrinks to its true size, fourteen times smaller. || على إسقاط مركاتور تتضخّم البلدان كلما ابتعدت عن خط الاستواء. اسحب غرينلاند إلى أفريقيا: تنكمش إلى حجمها الحقيقي، أصغر بأربع عشرة مرة.
+Le Mercator, la carte des salles de classe, gonfle les pays du Nord. || The Mercator, the classroom map, inflates the countries of the North. || إسقاط مركاتور، خريطة الفصول الدراسية، يضخّم بلدان الشمال.
+Le voir sur le Mercator || See it on the Mercator || شاهده على مركاتور
+À sa place : fais-la glisser. || In its place: drag it. || في مكانه: اسحبه.
+Posée sur : {x}, {x}. || Placed on: {1}, {2}. || موضوع على: {1}، {2}.
+Posée en mer. || Placed at sea. || موضوع في البحر.
+Déplacée. || Moved. || نُقل.
+Retirer la silhouette : {x} || Remove the outline: {1} || أزل الشكل: {1}
+à peu près aussi vaste || about as large || بالمساحة نفسها تقريبًا
+{n} fois plus vaste || {1} times larger || أكبر بـ{1} مرات
+{n} fois moins vaste || {1} times smaller || أصغر بـ{1} مرات
+Les fiches donnent la distance et le décalage horaire depuis chez toi ; la carte le cerne d'un pointillé. || Country cards give the distance and time difference from your home; the map circles it with a dotted line. || تعطي البطاقات المسافة وفرق التوقيت انطلاقًا من بلدك؛ وتحيطه الخريطة بخط منقّط.
+Y aller || Go there || اذهب إليه
+Changer || Change || غيّر
+Garder {x} || Keep {1} || احتفظ بـ{1}
+La carte du jeu || The game map || خريطة اللعبة
+La carte du monde : touche un pays pour ouvrir sa fiche || The world map: tap a country to open its card || خريطة العالم: المس بلدًا لفتح بطاقته
+{x} Ton record : {x}. || {1} Your record: {2}. || {1} رقمك القياسي: {2}.
+Un pays, pour mesurer… || A country, to measure… || بلد، للقياس…
+Un pays, pour sa silhouette… || A country, for its outline… || بلد، لشكله…
+Un pays, une capitale… || A country, a capital… || بلد، عاصمة…
+Chercher un pays ou une capitale || Search for a country or a capital || ابحث عن بلد أو عاصمة
+Ton pays… || Your country… || بلدك…
+Chercher mon pays || Find my country || ابحث عن بلدي
+Aller vers mon pays : {x} || Go to my country: {1} || اذهب إلى بلدي: {1}
+Il est {v} en temps universel. || It's {1} in Universal Time. || الساعة {1} بالتوقيت العالمي.
+Le Soleil est au zénith en {v} ({x}). || The Sun is overhead at {1} ({2}). || الشمس في سمت الرأس عند {1} ({2}).
+Le Soleil est au zénith en {v}, au-dessus de la mer. || The Sun is overhead at {1}, above the sea. || الشمس في سمت الرأس عند {1}، فوق البحر.
+Encart : {x} || Inset: {1} || إطار: {1}
+Fermer l'encart || Close the inset || أغلق الإطار
+Encart : {x}. Touche un pays pour ouvrir sa fiche. || Inset: {1}. Tap a country to open its card. || إطار: {1}. المس بلدًا لفتح بطاقته.
+Les Antilles || The Caribbean || جزر الكاريبي
+L'Amérique centrale || Central America || أمريكا الوسطى
+L'Afrique de l'Ouest || West Africa || غرب أفريقيا
+Les micro-États d'Europe || Europe's microstates || الدول الصغيرة في أوروبا
+Les Balkans || The Balkans || البلقان
+Le Caucase || The Caucasus || القوقاز
+Mercator || Mercator || مركاتور
+
+# Les calques
+Pendant un jeu, les couleurs et les noms se cachent : ils donneraient les réponses. || During a game, colours and names are hidden: they would give the answers away. || أثناء اللعب تختفي الألوان والأسماء: فهي ستكشف الإجابات.
+L'organisation || The organisation || المنظمة
+{n} pays et territoire || {1} country or territory || {1} بلد أو إقليم
+{n} pays et territoires || {1} countries and territories || {1} من البلدان والأقاليم
+moins d'un million || under a million || أقل من مليون
+1 à 5 millions || 1 to 5 million || من 1 إلى 5 ملايين
+5 à 20 millions || 5 to 20 million || من 5 إلى 20 مليونًا
+20 à 50 millions || 20 to 50 million || من 20 إلى 50 مليونًا
+50 à 100 millions || 50 to 100 million || من 50 إلى 100 مليون
+100 à 300 millions || 100 to 300 million || من 100 إلى 300 مليون
+plus de 300 millions || over 300 million || أكثر من 300 مليون
+Les chiffres de la Banque mondiale, ou du dernier recensement. || World Bank figures, or the latest census. || أرقام البنك الدولي، أو آخر تعداد للسكان.
+moins de 10 000 km² || under 10,000 km² || أقل من 10,000 كم²
+10 000 à 100 000 km² || 10,000 to 100,000 km² || من 10,000 إلى 100,000 كم²
+100 000 à 300 000 km² || 100,000 to 300,000 km² || من 100,000 إلى 300,000 كم²
+300 000 km² à 1 million || 300,000 km² to 1 million || من 300,000 كم² إلى مليون
+1 à 3 millions de km² || 1 to 3 million km² || من 1 إلى 3 ملايين كم²
+plus de 3 millions de km² || over 3 million km² || أكثر من 3 ملايين كم²
+Une couleur par monnaie que plusieurs pays ou territoires ont en commun ; les autres pays ont la leur. || One colour per currency shared by several countries or territories; the other countries have their own. || لون لكل عملة تشترك فيها عدة بلدان أو أقاليم؛ وللبلدان الأخرى لونها الخاص.
+membres ({n}) || members ({1}) || الأعضاء ({1})
+langue officielle ({x}) || official language ({1}) || لغة رسمية ({1})
+L'heure de la capitale || The time in the capital || توقيت العاصمة
+rayé : plusieurs fuseaux horaires || striped: several time zones || مخطّط: عدة مناطق زمنية
+La couleur donne l'heure qu'il est dans la capitale en ce moment, heure d'été comprise. || The colour shows the current time in the capital, daylight saving included. || يدلّ اللون على الوقت الحالي في العاصمة، مع احتساب التوقيت الصيفي.
+
+# Les chiffres
+{n} milliard(s) || {1} billion || {1} مليار
+{n} million(s) || {1} million || {1} مليون
+{n} habitant(s) || {1} inhabitants || {1} نسمة
+{n} km² || {1} km² || {1} كم²
+Inconnue || Unknown || غير معروفة
+Pas d'habitants permanents || No permanent inhabitants || لا سكان دائمين
+{n} résultats || {1} results || {1} نتيجة
+{n} résultat || {1} result || نتيجة واحدة
+
+# L'atlas
+Les {n} pays et territoires du monde, avec leur capitale, leur drapeau et leurs chiffres. || The world's {1} countries and territories, with their capital, their flag and their figures. || بلدان العالم وأقاليمه الـ{1}، بعواصمها وأعلامها وأرقامها.
+Chercher dans l'atlas || Search the atlas || ابحث في الأطلس
+Fiche du pays || Country card || بطاقة البلد
+Pays, capitales et monnaies : || Countries, capitals and currencies: || البلدان والعواصم والعملات:
+(licence ODbL), revus et traduits à la main. Population : Banque mondiale (CC BY 4.0), estimations récentes pour les territoires qu'elle ne couvre pas. Carte : || (ODbL licence), reviewed and translated by hand. Population: World Bank (CC BY 4.0), with recent estimates for the territories it doesn't cover. Map: || (رخصة ODbL)، رُوجعت وتُرجمت يدويًا. السكان: البنك الدولي (CC BY 4.0)، مع تقديرات حديثة للأقاليم التي لا يغطيها. الخريطة:
+(domaine public). Drapeaux : || (public domain). Flags: || (ملكية عامة). الأعلام:
+(licence MIT). || (MIT licence). || (رخصة MIT).
+Fuseaux horaires : || Time zones: || المناطق الزمنية:
+(licence MIT). Capitales sur le globe et population des grandes villes : || (MIT licence). Capitals on the globe and big-city populations: || (رخصة MIT). العواصم على الكرة وسكان المدن الكبرى:
+(CC BY 4.0), arrondie, au sens de la ville elle-même et non de son agglomération. Devises, hymnes, fêtes, histoires des drapeaux, origines des noms et anecdotes : rédigés pour le Portulan. || (CC BY 4.0), rounded, for the city proper rather than its metropolitan area. Mottos, anthems, holidays, flag histories, name origins and anecdotes: written for the Portulan. || (CC BY 4.0)، مقرَّبة، للمدينة نفسها لا لتجمّعها الحضري. الشعارات والأناشيد والأعياد وتواريخ الأعلام وأصول الأسماء والطرائف: كُتبت للبورتولان.
+Les frontières suivent le tracé de Natural Earth, corrigé selon les positions de l'ONU pour trois territoires : la Crimée est rattachée à l'Ukraine, le plateau du Golan à la Syrie, et le Sahara occidental est dessiné en entier. Les capitales au statut contesté ne sont pas posées en question ; leur fiche explique pourquoi. || Borders follow Natural Earth, corrected to the UN's positions for three territories: Crimea belongs to Ukraine, the Golan Heights to Syria, and Western Sahara is drawn whole. Capitals whose status is disputed are never asked about; their card explains why. || تتبع الحدود رسم Natural Earth، مصحَّحًا وفق مواقف الأمم المتحدة في ثلاثة أقاليم: القرم تابع لأوكرانيا، وهضبة الجولان لسوريا، والصحراء الغربية مرسومة كاملة. لا تُطرح أسئلة عن العواصم ذات الوضع المتنازع عليه؛ وبطاقتها تشرح السبب.
+
+# La fiche d'un pays
+il y fait jour || it's daytime there || الوقت نهار هناك
+c'est l'aube ou le crépuscule || it's dawn or dusk || إنه الفجر أو الغسق
+il y fait nuit || it's night there || الوقت ليل هناك
+la même heure qu'à Paris || the same time as in Paris || التوقيت نفسه في باريس
+{v} de plus qu'à Paris || {1} ahead of Paris || متقدّم بـ{1} عن باريس
+{v} de moins qu'à Paris || {1} behind Paris || متأخر بـ{1} عن باريس
+la même heure que chez toi ({x}) || the same time as at home ({1}) || التوقيت نفسه في بلدك ({1})
+{v} de plus que chez toi ({x}) || {1} ahead of home ({2}) || متقدّم بـ{1} عن بلدك ({2})
+{v} de moins que chez toi ({x}) || {1} behind home ({2}) || متأخر بـ{1} عن بلدك ({2})
+En ce moment, {x}. || Right now, {1}. || في هذه اللحظة، {1}.
+La qibla : {n} degrés, vers le {x} || The qibla: {1} degrees, towards the {2} || القبلة: {1} درجة، نحو {2}
+Depuis {x}, la qibla est à || From {1}, the qibla is at || من {1}، القبلة على
+, vers le {x}. || , towards the {1}. || ، نحو {1}.
+La Kaaba est à {v} à vol d'oiseau, en suivant la courbe de la Terre. || The Kaaba is {1} away as the crow flies, following the Earth's curve. || الكعبة على بُعد {1} في خط مستقيم، باتباع انحناء الأرض.
+L'heure de {x} : le pays vit à {n} heures différentes, de {v} à {v} en hiver. || The time in {1}: the country lives on {2} different times, from {3} to {4} in winter. || توقيت {1}: يعيش البلد على {2} توقيتات مختلفة، من {3} إلى {4} في الشتاء.
+{x} (et {x}) || {1} (and {2}) || {1} (و{2})
+en {n} || in {1} || في {1}
+le gentilé || the name of its people || اسم سكانه
+le gentilé, au masculin et au féminin || the name of its people, masculine and feminine || اسم سكانه، بالمذكر والمؤنث
+Depuis chez toi || From your home || من بلدك
+à vol d'oiseau depuis {x}, environ {v} de vol direct || as the crow flies from {1}, about {2} by direct flight || في خط مستقيم من {1}، نحو {2} من الطيران المباشر
+Dépend de || Belongs to || تابع لـ
+Il hisse le drapeau de {x}. || It flies the flag of {1}. || يرفع علم {1}.
+Sans accès à la mer || Landlocked || بلا منفذ على البحر
+La suite de la fiche arrive… || The rest of the card is on its way… || بقية البطاقة في الطريق…
+devise || motto || الشعار
+hymne || anthem || النشيد
+fête nationale || national day || العيد الوطني
+drapeau || flag || العلم
+Son statut || Its status || وضعه
+Anciens noms || Former names || أسماء سابقة
+Ancien nom || Former name || اسم سابق
+Mer || Sea || البحر
+Les pays et le monde en anglais, dans Le Truchement || Countries and the world in English, in the Truchement || البلدان والعالم بالإنجليزية، في الترجمان
+C'est ton pays : les distances et les heures partent d'ici. || It's your country: distances and times start from here. || إنه بلدك: المسافات والأوقات تنطلق من هنا.
+
+# L'histoire
+De Ptolémée à Humboldt, d'al-Idrîsî à Ibn Battûta : seize savants et voyageurs. || From Ptolemy to Humboldt, from al-Idrisi to Ibn Battuta: sixteen scholars and travellers. || من بطليموس إلى همبولت، ومن الإدريسي إلى ابن بطوطة: ستة عشر عالمًا ورحّالة.
+Ibn Battûta, Zheng He, Magellan, Marco Polo, étape par étape sur le globe ; et la route de la qibla. || Ibn Battuta, Zheng He, Magellan, Marco Polo, stage by stage on the globe; and the way to the qibla. || ابن بطوطة وتشنغ خه وماجلان وماركو بولو، مرحلة بعد مرحلة على الكرة؛ وطريق القبلة.
+De la tablette de Babylone au GPS, en douze jalons. || From the Babylonian tablet to GPS, in twelve milestones. || من لوح بابل إلى نظام GPS، في اثنتي عشرة محطة.
+Ceux qui ont mesuré la Terre, l'ont parcourue et l'ont dessinée. Chacun a son emblème : un instrument plutôt qu'un portrait imaginé. || Those who measured the Earth, travelled it and drew it. Each has an emblem: an instrument rather than an imagined portrait. || الذين قاسوا الأرض وجابوها ورسموها. لكلٍّ منهم شعار: أداة بدل صورة متخيَّلة.
+Douze jalons, de l'argile au satellite. || Twelve milestones, from clay to satellite. || اثنتا عشرة محطة، من الطين إلى القمر الصناعي.
+Étape par étape, sur le globe. Les dates sont celles des passages connus ; les tracés relient les étapes au plus court. || Stage by stage, on the globe. The dates are those of known passages; the lines join the stages by the shortest route. || مرحلة بعد مرحلة، على الكرة. التواريخ هي تواريخ المرور المعروفة؛ والخطوط تصل المراحل بأقصر طريق.
+Vers La Mecque : la qibla || Towards Mecca: the qibla || نحو مكة: القبلة
+Le globe : {x}, étape {n} sur {n}, {v}. || The globe: {1}, stage {2} of {3}, {4}. || الكرة الأرضية: {1}، المرحلة {2} من {3}، {4}.
+Revoir le voyage || Replay the journey || أعد مشاهدة الرحلة
+Lire le voyage || Play the journey || شغّل الرحلة
+La Kaaba || The Kaaba || الكعبة
+Le globe : la route la plus courte de {x} à La Mecque. || The globe: the shortest route from {1} to Mecca. || الكرة الأرضية: أقصر طريق من {1} إلى مكة.
+La qibla, depuis chaque capitale || The qibla, from every capital || القبلة، من كل عاصمة
+La qibla suit le grand cercle : la route la plus courte sur la sphère, qui paraît courbe sur une carte plane. Depuis l'Amérique du Nord, elle part vers le nord-est, et non vers le sud-est. || The qibla follows the great circle: the shortest route on the sphere, which looks curved on a flat map. From North America it sets off north-east, not south-east. || تتبع القبلة الدائرة العظمى: أقصر طريق على الكرة، ويبدو منحنيًا على الخريطة المسطّحة. من أمريكا الشمالية تتّجه نحو الشمال الشرقي، لا نحو الجنوب الشرقي.
+Depuis || From || من
+Direction || Direction || الاتجاه
+{n}°, vers le {x} || {1}°, towards the {2} || {1}°، نحو {2}
+Distance || Distance || المسافة
+
+# Le globe, au clavier et pour la lecture d'écran
+Au centre : {n}° {x}, {n}° {x}. Entrée pour choisir ce point. || In the centre: {1}° {2}, {3}° {4}. Enter to choose this point. || في المركز: {1}° {2}، {3}° {4}. اضغط Enter لاختيار هذه النقطة.
+Au centre : le vide. || In the centre: nothing. || في المركز: لا شيء.
+Au centre : {x}. Entrée pour choisir. || In the centre: {1}. Enter to choose. || في المركز: {1}. اضغط Enter للاختيار.
+Au centre : {x}. || In the centre: {1}. || في المركز: {1}.
+Au centre : la mer. || In the centre: the sea. || في المركز: البحر.
+{x}. Au clavier : les flèches pour tourner, plus et moins pour zoomer, Entrée pour choisir ce qui est au centre. || {1}. With the keyboard: arrows to turn, plus and minus to zoom, Enter to choose what's in the centre. || {1}. بلوحة المفاتيح: الأسهم للتدوير، وزائد وناقص للتكبير والتصغير، وEnter لاختيار ما في المركز.
+{x}. Au clavier : les flèches pour le faire tourner. || {1}. With the keyboard: arrows to turn it. || {1}. بلوحة المفاتيح: الأسهم لتدويرها.
+La carte n'a pas pu se charger. Vérifie ta connexion. || The map couldn't load. Check your connection. || تعذّر تحميل الخريطة. تحقّق من اتصالك.
+
+# La carte muette
+Le monde || The world || العالم
+le monde || the world || العالم
+L'Amérique du Nord || North America || أمريكا الشمالية
+l'Amérique du Nord et centrale || North and Central America || أمريكا الشمالية والوسطى
+L'Amérique du Sud || South America || أمريكا الجنوبية
+l'Amérique du Sud || South America || أمريكا الجنوبية
+Carte muette || Blank map || خريطة صمّاء
+Carte muette : {x} || Blank map: {1} || خريطة صمّاء: {1}
+Nom : ______________________ Date : ____________ || Name: ______________________ Date: ____________ || الاسم: ______________________ التاريخ: ____________
+Le Portulan, HaqqReason. Frontières : Natural Earth. || The Portulan, HaqqReason. Borders: Natural Earth. || البورتولان، HaqqReason. الحدود: Natural Earth.
+Écris le nom de chaque pays || Write the name of each country || اكتب اسم كل بلد
+Le corrigé || The answer key || الإجابات الصحيحة
+La carte || The map || الخريطة
+Numéroter les pays || Number the countries || رقّم البلدان
+La liste à remplir || The list to fill in || القائمة المطلوب ملؤها
+Le corrigé, en dernière page || The answer key, on the last page || الإجابات الصحيحة، في الصفحة الأخيرة
+La carte se prépare… || The map is being prepared… || الخريطة قيد التحضير…
+{n} pays. Dans la fenêtre d'impression, choisis ton imprimante, ou « Enregistrer au format PDF ». La carte se met en paysage. || {1} countries. In the print window, choose your printer, or "Save as PDF". The map is set to landscape. || {1} بلدًا. في نافذة الطباعة اختر طابعتك، أو «حفظ بتنسيق PDF». تُعرض الخريطة بالعرض.
+Dans la fenêtre d'impression, choisis ton imprimante, ou « Enregistrer au format PDF ». La carte se met en paysage. || In the print window, choose your printer, or "Save as PDF". The map is set to landscape. || في نافذة الطباعة اختر طابعتك، أو «حفظ بتنسيق PDF». تُعرض الخريطة بالعرض.
+Imprimer ou enregistrer en PDF || Print or save as PDF || اطبع أو احفظ بتنسيق PDF
+
+# Les questions : leurs formes et leurs réponses
+Forme {n} || Shape {1} || الشكل {1}
+Les couleurs || The colours || الألوان
+Encore {n} forme à peindre || {1} shape left to paint || بقي شكل واحد للتلوين
+Encore {n} formes à peindre || {1} shapes left to paint || بقي {1} أشكال للتلوين
+Le drapeau en six pièces : touche deux pièces pour les échanger || The flag in six pieces: tap two pieces to swap them || العلم في ست قطع: المس قطعتين لتبديلهما
+Place {n} : pièce {n} || Slot {1}: piece {2} || الموضع {1}: القطعة {2}
+Place {n} : pièce {n}, choisie || Slot {1}: piece {2}, selected || الموضع {1}: القطعة {2}، مختارة
+Valider tel quel || Submit as it is || أكّد كما هو
+Du plus peuplé au moins peuplé || From most to least populous || من الأكثر سكانًا إلى الأقل
+Du plus grand au plus petit || From largest to smallest || من الأكبر إلى الأصغر
+Monter {x} || Move {1} up || ارفع {1}
+Descendre {x} || Move {1} down || أنزل {1}
+Le moins peuplé || The least populous || الأقل سكانًا
+Le plus petit || The smallest || الأصغر
+Valider cet ordre || Submit this order || أكّد هذا الترتيب
+Globe : touche l'endroit où se trouve {x} || Globe: tap where {1} is || الكرة: المس مكان {1}
+Langue officielle || Official language || اللغة الرسمية
+Indicatif || Dialling code || رمز الاتصال
+C'est le drapeau {d}. || It's the flag of {1}. || إنه علم {1}.
+C'est le drapeau || It's the flag of || إنه علم
+La capitale || The capital of || عاصمة
+est⁠ || is || هي
+{d} || {1} || {1}
+À {x} ({x}) || In {1} ({2}) || في {1} ({2})
+Là-bas ({x}) || Over there ({1}) || هناك ({1})
+Là-bas || Over there || هناك
+Là où tu es || Where you are || حيث أنت
+vrai, c'est bien le drapeau {d} || true, it is indeed the flag of {1} || صحيح، إنه فعلًا علم {1}
+faux, c'est le drapeau {d} || false, it's the flag of {1} || خطأ، إنه علم {1}
+vrai, {x} est bien la capitale {d} || true, {1} is indeed the capital of {2} || صحيح، {1} هي فعلًا عاصمة {2}
+faux, {x} est la capitale {d} ; celle {d}, c'est {x} || false, {1} is the capital of {2}; that of {3} is {4} || خطأ، {1} عاصمة {2}؛ أما عاصمة {3} فهي {4}
+le drapeau {d}, ci-dessus || the flag of {1}, above || علم {1}، في الأعلى
+{x}, sur le drapeau {d} || {1}, on the flag of {2} || {1}، على علم {2}
+{x}. Tu étais à {v} || {1}. You were {2} away || {1}. كنتَ على بُعد {2}
+{x}, {a} || {1}, in {2} || {1}، في {2}
+{x}, dont la monnaie est : {x} || {1}, whose currency is: {2} || {1}، وعملتها: {2}
+{x} ({x} : {x}) || {1} ({2}: {3}) || {1} ({2}: {3})
+{x}, qui ne touche pas {l} || {1}, which doesn't border {2} || {1}، التي لا تحدّ {2}
+{x}. Les voisins {d} : {x} || {1}. The neighbours of {2}: {3} || {1}. جيران {2}: {3}
+{x} : il y est {v} quand il est midi à Paris || {1}: it's {2} there when it's noon in Paris || {1}: الساعة هناك {2} حين تكون الظهيرة في باريس
+{v}, pour {l} || {1}, for {2} || {1}، لـ{2}
+à {x}, {a} || on the {1}, in {2} || على {1}، في {2}
+{x} : {v} est {a} || {1}: {2} is in {3} || {1}: {2} تقع في {3}
+{x}, puis {x} || {1}, then {2} || {1}، ثم {2}
+{x}, puis {x}, puis {x} || {1}, then {2}, then {3} || {1}، ثم {2}، ثم {3}
+{x}, puis {x}, puis {x}, puis {x} || {1}, then {2}, then {3}, then {4} || {1}، ثم {2}، ثم {3}، ثم {4}
+{x}, puis {x}, puis {x}, puis {x}, puis {x} || {1}, then {2}, then {3}, then {4}, then {5} || {1}، ثم {2}، ثم {3}، ثم {4}، ثم {5}
+Presque : une seule forme n'a pas la bonne couleur. || Almost: just one shape has the wrong colour. || تقريبًا: شكل واحد فقط لونه غير صحيح.
+{x}, où l'on parle {v} || {1}, where people speak {2} || {1}، حيث يُتحدَّث بـ{2}
+Carte indisponible ({v}) || Map unavailable ({1}) || الخريطة غير متاحة ({1})
+Géographie indisponible ({v}) || Geography unavailable ({1}) || الجغرافيا غير متاحة ({1})
+
+# La fiche d'un pays : ses rubriques
+Ses symboles || Its symbols || رموزه
+Son histoire || Its history || تاريخه
+Sa géographie || Its geography || جغرافيته
+Dans d'autres langues || In other languages || بلغات أخرى
+anglais, arabe || English, Arabic || الإنجليزية، العربية
+anglais || English || الإنجليزية
+arabe || Arabic || العربية
+Codes et repères || Codes and landmarks || الرموز والمعالم
+indicatif, Internet, ISO, conduite || dialling code, internet, ISO, driving || رمز الاتصال، الإنترنت، ISO، القيادة
+Vers La Mecque || Towards Mecca || نحو مكة
+la direction de la qibla || the direction of the qibla || اتجاه القبلة
+indépendance || independence || الاستقلال
+anciens noms || former names || الأسماء السابقة
+origine du nom || origin of the name || أصل الاسم
+point culminant || highest point || أعلى نقطة
+fleuve || river || النهر
+mers || seas || البحار
+grandes villes || big cities || المدن الكبرى
+Par niveau || By level || حسب المستوى
+Par route thématique || By themed route || حسب المسار الموضوعي
+Le globe : un pays est allumé || The globe: a country is lit up || الكرة الأرضية: بلد مضاء
+Globe : touche le pays demandé || Globe: tap the country asked for || الكرة: المس البلد المطلوب
+Globe : un pays est allumé || Globe: a country is lit up || الكرة: بلد مضاء
+Un drapeau dont une couleur a disparu || A flag with one colour missing || علم اختفى أحد ألوانه
+Le drapeau à colorier : touche une forme pour la peindre || The flag to colour in: tap a shape to paint it || العلم المطلوب تلوينه: المس شكلًا لتلوينه
+Le code de ton ami || Your friend's code || رمز صديقك
+Le nom de la classe || The class name || اسم الفصل
+Le code de la classe || The class code || رمز الفصل
+Le globe : {x}, étape {n} sur {n}, {v} || The globe: {1}, stage {2} of {3}, {4} || الكرة الأرضية: {1}، المرحلة {2} من {3}، {4}

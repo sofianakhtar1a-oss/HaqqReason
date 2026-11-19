@@ -14,6 +14,7 @@ import { useMonde } from "@/lib/monde/progression";
 import { Boussole } from "./communs";
 import { AideClavier, BoutonSon, useAideClavier } from "./Reglages";
 import { ambiance } from "./sons";
+import { useTraduction } from "./traduction";
 import { useResolu, useTextes } from "@/lib/modules/textes-client";
 import { Accueil } from "./Accueil";
 import { Atlas } from "./Atlas";
@@ -25,12 +26,15 @@ import { Histoire, type SujetHistoire, SUJETS_HISTOIRE } from "./Histoire";
 import { NommeLesTous } from "./NommeLesTous";
 import { type Lancement, Partie } from "./Partie";
 import "./portulan.css";
+import "./portulan-rtl.css";
 import "@fontsource-variable/literata/opsz.css";
 import "@fontsource-variable/literata/opsz-italic.css";
 // La police pour la dyslexie : ses fichiers ne se chargent que si le réglage est choisi.
 import "@fontsource/opendyslexic/400.css";
 import "@fontsource/opendyslexic/700.css";
 import "@fontsource/opendyslexic/400-italic.css";
+// L'arabe de l'interface : la police ne se charge que pour des lettres arabes.
+import "@fontsource-variable/noto-sans-arabic";
 
 /*
  * Le Portulan : apprendre la géographie. Cinq onglets, adressés par le fragment de l'URL
@@ -151,6 +155,9 @@ export function Portulan() {
 
   // La mer et le vent, tant que le Portulan est ouvert.
   useEffect(() => ambiance(p.ambiance), [p.ambiance]);
+
+  // L'interface en anglais ou en arabe (de droite à gauche).
+  useTraduction(p.langue);
 
   // La touche « ? » : l'aide du clavier.
   const [aide, fermerAide] = useAideClavier();

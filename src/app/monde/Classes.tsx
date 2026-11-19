@@ -4,6 +4,7 @@ import { ArrowLeft, Check, Copy, GraduationCap, School, Share2, UserMinus } from
 import { useCallback, useEffect, useState } from "react";
 import type { Classe, MesClasses } from "@/lib/monde/social";
 import { useConfirmer } from "./Confirmer";
+import { enLangue } from "./traduction";
 
 /*
  * Les classes : l'enseignant crée sa classe et donne un code ; ses élèves la rejoignent ; il suit
@@ -88,7 +89,7 @@ export function PageClasses({ onRetour }: { onRetour: () => void }) {
   const partager = async () => {
     if (!ouverte?.code) return;
     try {
-      if (navigator.share) await navigator.share({ title: `La classe ${ouverte.nom}`, text: `Rejoins la classe « ${ouverte.nom} » au Portulan : le code est ${ouverte.code}.`, url: lien });
+      if (navigator.share) await navigator.share({ title: enLangue(`La classe ${ouverte.nom}`), text: enLangue(`Rejoins la classe « ${ouverte.nom} » au Portulan : le code est ${ouverte.code}.`), url: lien });
       else {
         await navigator.clipboard.writeText(lien);
         setCopie(true);

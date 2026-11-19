@@ -51,8 +51,8 @@ export function questionsDefi(sorte: SorteDefi, cle: string): Question[] {
 }
 
 /** Le résultat à partager : des carrés, sans dévoiler les réponses. */
-export function texteAPartager(sorte: SorteDefi, cle: string, resultats: boolean[], adresse: string): string {
-  const date = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "long", timeZone: "UTC" }).format(new Date(`${cle}T12:00:00Z`));
+export function texteAPartager(sorte: SorteDefi, cle: string, resultats: boolean[], adresse: string, locale = "fr-FR"): string {
+  const date = new Intl.DateTimeFormat(locale, { day: "numeric", month: "long", timeZone: "UTC" }).format(new Date(`${cle}T12:00:00Z`));
   const titre = sorte === "jour" ? `Le Portulan, défi du ${date}` : `Le Portulan, défi de la semaine du ${date}`;
   const carre = (x: boolean) => (x ? "🟩" : "🟥");
   // Dix carrés par ligne.

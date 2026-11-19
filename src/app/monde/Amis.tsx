@@ -4,6 +4,7 @@ import { ArrowLeft, Bell, BellOff, Check, Copy, Share2, Swords, UserMinus, UserP
 import { useCallback, useEffect, useState } from "react";
 import type { Amis } from "@/lib/monde/social";
 import { useConfirmer } from "./Confirmer";
+import { enLangue } from "./traduction";
 
 /*
  * Les amis : un code d'ami à donner, les demandes reçues, la liste des amis avec nos duels (gagnés,
@@ -86,7 +87,7 @@ export function PageAmis({ onRetour, onDefier }: { onRetour: () => void; onDefie
   const partager = async () => {
     if (!amis?.code) return;
     try {
-      if (navigator.share) await navigator.share({ title: "Le Portulan", text: `Ajoute-moi en ami au Portulan : mon code est ${amis.code}.`, url: lien });
+      if (navigator.share) await navigator.share({ title: enLangue("Le Portulan"), text: enLangue(`Ajoute-moi en ami au Portulan : mon code est ${amis.code}.`), url: lien });
       else {
         await navigator.clipboard.writeText(lien);
         setCopie(true);

@@ -17,6 +17,7 @@ import { BoutonVoix, Chrono, Coeurs, Etoiles } from "./communs";
 import { Drapeau } from "./figures";
 import type { Lancement } from "./Partie";
 import { ressentir } from "./sons";
+import { traduire } from "./traduction";
 
 /*
  * Les cabinets du Portulan : les pays vus de l'intérieur. Une carte par cabinet à l'accueil,
@@ -28,6 +29,18 @@ const mouvementReduit = () => typeof window !== "undefined" && window.matchMedia
 const majuscule = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 /** L'emblème d'un cabinet : le drapeau du pays, ou celui de l'organisation. */
+/** La lecture d'une question de cabinet en anglais ou en arabe : la consigne traduite, les noms tels quels. */
+function texteParleCabinetTraduit(q: QuestionCabinet, l: "en" | "ar"): string {
+  const c = cabinet(q.cabinet);
+  const e = element(q.cabinet, q.cible)!;
+  const def = METHODES[q.methode];
+  const t = (s: string) => traduire(s, l) ?? s;
+  const montre = def.invite === "nom" ? e.nom : def.invite === "chef" ? (e.chef ?? "") : def.invite === "num" ? `${l === "en" ? "number" : "الرقم"} ${e.num}` : def.invite === "ville" ? (q.ville ?? "") : "";
+  const textes = def.reponse === "ecrit" || def.reponse === "drapeau" ? [] : q.options.map((id) => t(texteOption(q, id)));
+  const choix = textes.length ? ` ${l === "en" ? "Choices" : "الخيارات"}: ${textes.join(l === "en" ? ", " : "، ")}.` : "";
+  return `${t(c.consignes[q.methode] ?? "")} ${montre}.${choix}`;
+}
+
 export function EmblemeCabinet({ c, grand = false }: { c: DonneesCabinet; grand?: boolean }) {
   if (!c.embleme) return <Drapeau code={c.pays} grand={grand} />;
   // eslint-disable-next-line @next/next/no-img-element
@@ -340,12 +353,13 @@ export function PartieCabinet({ lancement, onFermer, onRejouer }: { lancement: L
     return () => clearTimeout(t);
   }, [phase, avecChrono, duree, index, repondre]);
 
-  // La voix lit la question ; le champ prend le focus.
+  // La voix lit la question (dans la langue de l'interface) ; le champ prend le focus.
+  const langue = monde.profil.langue;
   useEffect(() => {
     if (phase !== "question" || !q) return;
     if (def?.reponse === "ecrit") champ.current?.focus();
-    if (monde.profil.voix) void dire(texteParleCabinet(q));
-  }, [phase, q, def, monde.profil.voix]);
+    if (monde.profil.voix) void dire(langue === "fr" ? texteParleCabinet(q) : texteParleCabinetTraduit(q, langue), langue);
+  }, [phase, q, def, monde.profil.voix, langue]);
   useEffect(() => {
     if (phase === "fin") taire();
   }, [phase]);

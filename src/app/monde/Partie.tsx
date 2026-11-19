@@ -6,6 +6,7 @@ import { createPortal } from "react-dom";
 import { eclat, pluieDeLettres } from "@/lib/langues/feux";
 import { jouer, ressentir } from "./sons";
 import { BoutonConcentration } from "./Reglages";
+import { enLangue, localeDe, traduire } from "./traduction";
 import { formatPopulation, formatSuperficie, motCapitale, NOM_CONTINENT, PAR_CODE, pays } from "@/lib/monde/atlas";
 import { CATEGORIES, type CategorieId, TYPES, type TypeQuestion, typesDe } from "@/lib/monde/categories";
 import { compteMonde, envoyerReponse } from "@/lib/monde/compte-client";
@@ -111,6 +112,24 @@ function texteParle(q: Question): string {
   const textes = q.options.map((o) => o.texte ?? "").filter(Boolean);
   const choix = def.reponse !== "drapeau" && textes.length ? ` Choix : ${textes.join(", ")}.` : "";
   return `${consigne(q)}${montre ? ` ${montre}.` : ""}${choix}`;
+}
+
+/** Le texte du défi à partager, dans la langue de l'interface (sa première ligne : le reste, ce sont des carrés). */
+function texteAPartagerTraduit(texte: string): string {
+  const [premiere = "", ...reste] = texte.split("\n");
+  return [enLangue(premiere), ...reste].join("\n");
+}
+
+/** La même lecture, en anglais ou en arabe (ce que le catalogue ne connaît pas reste en français). */
+function texteParleTraduit(q: Question, l: "en" | "ar"): string {
+  const t = (s: string) => traduire(s, l) ?? s;
+  const def = TYPES[q.type];
+  const p = pays(q.cible);
+  const montre =
+    def.invite === "nom" || def.invite === "coloriage" || def.invite === "puzzle" ? p.nom : def.invite === "capitale" ? (p.capitale ?? "") : def.invite === "monnaie" ? (p.monnaies[0]?.nom ?? "") : def.invite === "texte" ? (q.texte ?? "") : "";
+  const textes = q.options.map((o) => o.texte ?? "").filter(Boolean).map(t);
+  const choix = def.reponse !== "drapeau" && textes.length ? ` ${l === "en" ? "Choices" : "الخيارات"}: ${textes.join(l === "en" ? ", " : "، ")}.` : "";
+  return `${t(consigne(q))}${montre ? ` ${t(montre)}.` : ""}${choix}`;
 }
 
 export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancement; onFermer: () => void; onRejouer: (l: Lancement) => void }) {
@@ -428,10 +447,11 @@ export function Partie({ lancement, onFermer, onRejouer }: { lancement: Lancemen
     if (phase === "question" && def?.reponse === "ecrit") champ.current?.focus();
   }, [phase, def, index]);
 
-  // La lecture à voix haute : la consigne, ce qui est montré (s'il se dit), puis les choix.
+  // La lecture à voix haute : la consigne, ce qui est montré (s'il se dit), puis les choix ; dans la langue de l'interface.
+  const langue = monde.profil.langue;
   useEffect(() => {
-    if (phase === "question" && q && monde.profil.voix) void dire(texteParle(q));
-  }, [phase, q, monde.profil.voix]);
+    if (phase === "question" && q && monde.profil.voix) void dire(langue === "fr" ? texteParle(q) : texteParleTraduit(q, langue), langue);
+  }, [phase, q, monde.profil.voix, langue]);
   useEffect(() => () => taire(), []);
 
   // Le clavier : 1 à 6 pour choisir, Entrée pour continuer, Échap pour quitter.
@@ -1136,7 +1156,7 @@ function Fin({
 /** Le défi : le score, des carrés à partager (sans les réponses), et le classement du jour. */
 function PartageDefi({ sorte, cle, resultat }: { sorte: SorteDefi; cle: string; resultat: { score: number; resultats: boolean[]; deja: boolean; enLigne: boolean } }) {
   const [copie, setCopie] = useState(false);
-  const texte = texteAPartager(sorte, cle, resultat.resultats, typeof window === "undefined" ? "" : `${window.location.origin}/monde`);
+  const texte = texteAPartagerTraduit(texteAPartager(sorte, cle, resultat.resultats, typeof window === "undefined" ? "" : `${window.location.origin}/monde`, localeDe(profilActuel().langue)));
   const partager = async () => {
     try {
       if (navigator.share) await navigator.share({ text: texte });
@@ -1168,7 +1188,7 @@ function PartageDefi({ sorte, cle, resultat }: { sorte: SorteDefi; cle: string; 
 /** Le certificat de l'examen : un parchemin à imprimer, au nom qu'on veut. */
 function Certificat({ note }: { note: number }) {
   const [nom, setNom] = useState("");
-  const [date] = useState(() => new Intl.DateTimeFormat("fr-FR", { dateStyle: "long" }).format(new Date()));
+  const [date] = useState(() => new Intl.DateTimeFormat(localeDe(profilActuel().langue), { dateStyle: "long" }).format(new Date()));
   return (
     <section className="pt-certificat-zone" aria-label="Le certificat">
       <label className="pt-certificat-nom">
@@ -1223,7 +1243,7 @@ function centreDe(codes: string[]): [number, number] {
  * et le sceau de cire qui vient le frapper.
  */
 function Brevet({ g, categorie }: { g: { n: number; nom: string; devise: string }; categorie: string }) {
-  const [date] = useState(() => new Intl.DateTimeFormat("fr-FR", { dateStyle: "long" }).format(new Date()));
+  const [date] = useState(() => new Intl.DateTimeFormat(localeDe(profilActuel().langue), { dateStyle: "long" }).format(new Date()));
   useEffect(() => {
     const reduit = mouvementReduit();
     const a = setTimeout(() => jouer("parchemin"), reduit ? 0 : 200);
