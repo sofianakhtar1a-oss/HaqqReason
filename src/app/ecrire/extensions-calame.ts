@@ -11,6 +11,11 @@ import { PageDeGarde } from "./blocs/PageDeGarde";
 import { StyleCaractere, StylesNommes } from "./extensions/styles-nommes";
 import { Ancres, IndexAlpha, Indexe, Renvoi, TableFigures } from "./blocs/References";
 import { attributsEnveloppe, Galerie, ImageMiseEnPage, VueImageCalame } from "./blocs/ImageCalame";
+import { Formule } from "./blocs/Formule";
+import { Dessin } from "./blocs/Dessin";
+import { CarteGeo } from "./blocs/CarteGeo";
+import { Commentaire, DeuxColonnes, LienInterne } from "./blocs/Marges";
+import { SautSection } from "./blocs/Sections";
 
 /**
  * Le vocabulaire des documents du Calame : celui des articles du site (mêmes blocs,
@@ -50,7 +55,25 @@ export function avecVues(extensions: AnyExtension[]): AnyExtension[] {
 }
 
 /** Extensions supplémentaires du Calame (blocs et marques propres à l'atelier). */
-export const EXTENSIONS_CALAME: AnyExtension[] = [PageDeGarde, StylesNommes, StyleCaractere, Ancres, Indexe, Renvoi, TableFigures, IndexAlpha, ImageMiseEnPage, Galerie];
+export const EXTENSIONS_CALAME: AnyExtension[] = [
+  PageDeGarde,
+  StylesNommes,
+  StyleCaractere,
+  Ancres,
+  Indexe,
+  Renvoi,
+  TableFigures,
+  IndexAlpha,
+  ImageMiseEnPage,
+  Galerie,
+  Formule,
+  Dessin,
+  CarteGeo,
+  Commentaire,
+  LienInterne,
+  DeuxColonnes,
+  SautSection,
+];
 
 /** Tout ce qu'il faut pour lire (et écrire) un document du Calame. */
 export function extensionsContenu(): AnyExtension[] {

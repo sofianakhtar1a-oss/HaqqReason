@@ -61,6 +61,9 @@ import { SelecteurStyle } from "./SelecteurStyle";
 import { DialogueRenvoi } from "./DialogueRenvoi";
 import { ajouterALIndex } from "./blocs/References";
 import { separerGalerie } from "./blocs/ImageCalame";
+import { allerALAncre, brancherSuiviLiens, mettreEnDeuxColonnes, revenirAUneColonne, SuiviLiensInternes } from "./blocs/Marges";
+import { DialogueCommentaire, DialogueLien } from "./DialoguesMarge";
+import { Sections } from "./blocs/Sections";
 import { BlocCourant } from "./extensions/concentration";
 import { dicteeDisponible, dicter, SurlignageLecture, type Dictee } from "./voix";
 import { BarreRecherche } from "./BarreRecherche";
@@ -79,7 +82,7 @@ import { carillon, jouerAmbiance, arreterAmbiance } from "./ambiance";
 import { delaiEcheance, usePreferences } from "./crochets";
 import type { ApercuPage } from "./Miniatures";
 import type { ActionsDocuments } from "./BarreLaterale";
-import { allerAuTitre, planDuDocument } from "./plan";
+import { allerAuTitre, carteMentaleEnPlan, planDuDocument } from "./plan";
 
 const AIDES: Record<string, string> = {
   versetArabe: "Texte arabe du verset",
@@ -148,6 +151,8 @@ export function Atelier(props: Props) {
   const [aide, setAide] = useState(false);
   const [reglagesAtelier, setReglagesAtelier] = useState(false);
   const [renvoi, setRenvoi] = useState(false);
+  const [commentaire, setCommentaire] = useState(false);
+  const [lienInterne, setLienInterne] = useState(false);
   const [extras, setExtras] = useState(() => extrasDe(doc));
   // Ouvert (à nouveau) depuis la recherche dans tous les documents : on cherche aussitôt.
   const [requeteVue, setRequeteVue] = useState(requeteInitiale);
@@ -201,6 +206,8 @@ export function Atelier(props: Props) {
       Replis,
       BlocCourant,
       SurlignageLecture,
+      SuiviLiensInternes,
+      Sections,
     ],
     content: doc.contenu as object,
     editorProps: {
@@ -210,6 +217,14 @@ export function Atelier(props: Props) {
     onUpdate: () => surFrappeRef.current(),
   }));
   const editor = useEditor(options);
+  // Suivre un lien interne (Ctrl + clic) : vers un titre du document, ou vers un autre document.
+  useEffect(() => {
+    if (!editor) return;
+    brancherSuiviLiens(editor, (c) => {
+      if (c.document) props.surOuvrir(c.document);
+      else if (c.ancre && !allerALAncre(editor, c.ancre)) setMessage("La partie visée par ce lien n'existe plus.");
+    });
+  });
 
   // ---------------------------------------------------------------- enregistrement
   const annoncer = useCallback((texte: string) => {
@@ -652,6 +667,31 @@ export function Atelier(props: Props) {
         groupe: "Insérer",
         faire: () => editor?.chain().focus().insertContentAt(0, { type: "pageDeGarde", attrs: { titre: courant.current.titre, auteur: extras.proprietes.auteur, modele: "classique" } }).run(),
       },
+      {
+        cle: "commentaire",
+        libelle: "Ajouter un commentaire pour moi",
+        description: "Dans la marge, à côté du passage choisi ; jamais imprimé",
+        groupe: "Relire",
+        faire: () => {
+          if (editor?.state.selection.empty) setMessage("Sélectionne d'abord le passage à commenter.");
+          else setCommentaire(true);
+        },
+      },
+      { cle: "lien-interne", libelle: "Lien interne", description: "Vers une partie de ce document, ou vers un autre document", groupe: "Insérer", faire: () => setLienInterne(true) },
+      { cle: "deux-colonnes", libelle: "Mettre en deux colonnes", description: "Le paragraphe ou la sélection", groupe: "Mise en page", faire: () => editor && mettreEnDeuxColonnes(editor) },
+      { cle: "une-colonne", libelle: "Revenir à une colonne", description: "Défait le bloc « deux colonnes » où se trouve le curseur", groupe: "Mise en page", faire: () => editor && revenirAUneColonne(editor) },
+      {
+        cle: "carte-plan",
+        libelle: "Carte mentale → plan",
+        description: "Chaque branche de la carte devient un titre, juste après elle",
+        groupe: "Plan",
+        faire: () => {
+          if (!editor) return;
+          const n = carteMentaleEnPlan(editor);
+          setMessage(n > 0 ? "" : "Aucune carte mentale à transformer : insère-en une (« / » puis « carte mentale ») ou sélectionne-la.");
+          if (n > 0) annoncer(`${n} titres ajoutés au plan.`);
+        },
+      },
       { cle: "galerie-separer", libelle: "Séparer la galerie d'images", description: "Les images reprennent leur place l'une sous l'autre", groupe: "Image", faire: () => editor && separerGalerie(editor) },
       { cle: "renvoi", libelle: "Insérer un renvoi", description: "« voir partie 2, p. 12 » : se met à jour seul", groupe: "Insérer", faire: () => setRenvoi(true) },
       {
@@ -699,7 +739,7 @@ export function Atelier(props: Props) {
         .slice(0, 200)
         .map((d) => ({ cle: `doc-${d.id}`, libelle: d.titre || "Sans titre", description: `${d.mots.toLocaleString("fr-FR")} mots`, groupe: "Ouvrir", faire: () => props.surOuvrir(d.id) })),
     ],
-    [enregistrer, exporter, documents, doc.id, relecture, basculerRelecture, basculerConcentration, ajusterLargeur, motsActuels, surBienvenue, props, palette, editor, extras.proprietes.auteur],
+    [enregistrer, exporter, documents, doc.id, relecture, basculerRelecture, basculerConcentration, ajusterLargeur, motsActuels, surBienvenue, props, palette, editor, extras.proprietes.auteur, annoncer],
   );
 
   function ouvrirOnglet(cle: string) {
@@ -1005,6 +1045,8 @@ export function Atelier(props: Props) {
 
       <ListeSlash />
       {renvoi && editor && <DialogueRenvoi editor={editor} surFermer={() => setRenvoi(false)} />}
+      {commentaire && editor && <DialogueCommentaire editor={editor} surFermer={() => setCommentaire(false)} />}
+      {lienInterne && editor && <DialogueLien editor={editor} documents={documents} docId={doc.id} surFermer={() => setLienInterne(false)} />}
       {palette && <PaletteCommandes editor={editor} actions={actions} surFermer={() => setPalette(false)} />}
       {caracteres && editor && <Caracteres editor={editor} onglet={caracteres} surOnglet={setCaracteres} surFermer={() => setCaracteres(null)} />}
       {aide && (

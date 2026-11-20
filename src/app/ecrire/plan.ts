@@ -94,3 +94,75 @@ export function changerNiveau(editor: Editor, pos: number, delta: 1 | -1): boole
   editor.view.dispatch(tr);
   return true;
 }
+
+// ---------------------------------------------------------------------------
+// Carte mentale → plan
+// ---------------------------------------------------------------------------
+
+type NoeudCarte = { id: string; texte: string; x: number; y: number; forme?: string };
+type LienCarte = { de: string; vers: string };
+
+/**
+ * Les branches d'une carte mentale, en plan : le sujet central au milieu, ses branches
+ * (dans le sens des aiguilles d'une montre, depuis midi) deviennent des titres de partie,
+ * leurs sous-branches des titres de section, et ainsi de suite.
+ */
+export function planDeLaCarte(noeuds: NoeudCarte[], liens: LienCarte[]): { niveau: 2 | 3 | 4; texte: string }[] {
+  if (noeuds.length === 0) return [];
+  const voisins = new Map<string, string[]>();
+  for (const l of liens) {
+    voisins.set(l.de, [...(voisins.get(l.de) ?? []), l.vers]);
+    voisins.set(l.vers, [...(voisins.get(l.vers) ?? []), l.de]);
+  }
+  const parId = new Map(noeuds.map((n) => [n.id, n]));
+  const racine = noeuds.find((n) => n.forme === "ellipse") ?? [...noeuds].sort((a, b) => (voisins.get(b.id)?.length ?? 0) - (voisins.get(a.id)?.length ?? 0))[0];
+  const plan: { niveau: 2 | 3 | 4; texte: string }[] = [];
+  const vus = new Set<string>([racine.id]);
+  const angle = (n: NoeudCarte) => {
+    // 0 à midi, croissant dans le sens des aiguilles d'une montre.
+    const a = Math.atan2(n.x - racine.x, -(n.y - racine.y));
+    return a < 0 ? a + 2 * Math.PI : a;
+  };
+  const descendre = (id: string, profondeur: number) => {
+    const enfants = (voisins.get(id) ?? []).filter((v) => !vus.has(v)).map((v) => parId.get(v)).filter((n): n is NoeudCarte => !!n);
+    enfants.sort(profondeur === 1 ? (a, b) => angle(a) - angle(b) : (a, b) => a.y - b.y || a.x - b.x);
+    for (const e of enfants) vus.add(e.id);
+    for (const e of enfants) {
+      const texte = e.texte.replace(/\s+/g, " ").trim();
+      if (texte) plan.push({ niveau: (Math.min(4, profondeur + 1) as 2 | 3 | 4), texte });
+      descendre(e.id, profondeur + 1);
+    }
+  };
+  descendre(racine.id, 1);
+  return plan;
+}
+
+/** Insère, juste après la carte mentale choisie (ou la première du document), le plan qu'elle dessine. */
+export function carteMentaleEnPlan(editor: Editor): number {
+  const { state } = editor;
+  let cible: { pos: number; noeud: import("@tiptap/pm/model").Node } | null = null;
+  const sel = state.selection as { node?: import("@tiptap/pm/model").Node; from: number };
+  if (sel.node?.type.name === "schema") cible = { pos: sel.from, noeud: sel.node };
+  else
+    state.doc.descendants((n, pos) => {
+      if (cible) return false;
+      if (n.type.name === "schema") cible = { pos, noeud: n };
+      return true;
+    });
+  if (!cible) return 0;
+  const { pos, noeud } = cible as { pos: number; noeud: import("@tiptap/pm/model").Node };
+  let donnees = noeud.attrs.donnees as unknown;
+  if (typeof donnees === "string") {
+    try {
+      donnees = JSON.parse(donnees);
+    } catch {
+      donnees = null;
+    }
+  }
+  const d = (donnees ?? {}) as { noeuds?: NoeudCarte[]; liens?: LienCarte[] };
+  const plan = planDeLaCarte(Array.isArray(d.noeuds) ? d.noeuds : [], Array.isArray(d.liens) ? d.liens : []);
+  if (plan.length === 0) return 0;
+  const titres = plan.map((p) => state.schema.nodes.heading.create({ level: p.niveau }, state.schema.text(p.texte.slice(0, 200))));
+  editor.view.dispatch(state.tr.insert(pos + noeud.nodeSize, titres).scrollIntoView());
+  return plan.length;
+}

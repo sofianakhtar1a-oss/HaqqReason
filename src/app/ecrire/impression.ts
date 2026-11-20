@@ -82,18 +82,33 @@ export async function imprimerPages(flux: HTMLElement, reglages: ReglagesPage, o
   conteneur.appendChild(fluxCopie);
 
   const voulues = options.pages && options.pages.length > 0 ? new Set(options.pages) : null;
+  // Une section en paysage au milieu d'un document en portrait (ou l'inverse) : ses pages ont leur format.
+  const autre = reglages.orientation === "paysage" ? "portrait" : "paysage";
+  const papierAutre = tailleDuPapier(reglages.format, autre);
+  const gAutre = geometrie({ ...reglages, orientation: autre });
+  let avecAutre = false;
+  let haut = 0;
   feuilles.forEach((feuille, i) => {
     const numero = i + 1;
+    const differente = (feuille.dataset.orientation ?? reglages.orientation) !== reglages.orientation;
+    const pp = differente ? papierAutre : papier;
+    const gp = differente ? gAutre : g;
+    const hautPage = haut;
+    haut += gp.page.hauteur + ECART;
     if (voulues && !voulues.has(numero)) return;
     const m = margesDeLaPage(reglages, numero);
     const page = document.createElement("section");
     page.className = "calame-page-imprimee";
-    page.style.width = `${papier.largeur + 2 * fond}mm`;
-    page.style.height = `${papier.hauteur + 2 * fond}mm`;
+    page.style.width = `${pp.largeur + 2 * fond}mm`;
+    page.style.height = `${pp.hauteur + 2 * fond}mm`;
+    if (differente) {
+      page.style.setProperty("page", "calame-autre");
+      avecAutre = true;
+    }
 
     const surface = document.createElement("div");
     surface.className = "calame-page-papier";
-    surface.style.cssText = `left:${fond}mm;top:${fond}mm;width:${papier.largeur}mm;height:${papier.hauteur}mm`;
+    surface.style.cssText = `left:${fond}mm;top:${fond}mm;width:${pp.largeur}mm;height:${pp.hauteur}mm`;
     page.appendChild(surface);
 
     // Ce qui entoure le texte : la feuille de l'écran, recopiée.
@@ -104,16 +119,17 @@ export async function imprimerPages(flux: HTMLElement, reglages: ReglagesPage, o
     // La zone de texte : seuls les blocs qui tombent sur cette page, chacun à sa hauteur.
     const zone = document.createElement("div");
     zone.className = "calame-texte calame-zone-imprimee";
-    zone.style.cssText = `position:absolute;overflow:hidden;top:${m.haut * MM}px;left:${m.gauche * MM}px;width:${g.zone.largeur}px;height:${g.zone.hauteur}px`;
+    zone.style.cssText = `position:absolute;overflow:hidden;top:${m.haut * MM}px;left:${m.gauche * MM}px;width:${gp.zone.largeur}px;height:${gp.zone.hauteur}px`;
     const corps = document.createElement("div");
     corps.className = tiptap.className;
     corps.style.cssText = "position:relative;height:100%;";
     zone.appendChild(corps);
-    const haut = i * (g.page.hauteur + ECART);
-    const bas = haut + g.zone.hauteur;
+    const bas = hautPage + gp.zone.hauteur;
+    // Les blocs d'une section plus large débordent du flux à l'écran : on les recale dans leur page.
+    const recalage = (gp.page.largeur - g.page.largeur) / 2;
     let precedent: HTMLElement | null = null;
     for (const mesure of mesures) {
-      if (mesure.bas <= haut || mesure.haut >= bas) continue;
+      if (mesure.bas <= hautPage || mesure.haut >= bas) continue;
       // Les règles « titre suivi d'un paragraphe » (lettrine) ont besoin du voisin d'avant.
       const voisin = mesure.el.previousElementSibling as HTMLElement | null;
       if (voisin && voisin !== precedent && !voisin.hasAttribute("data-blanc")) {
@@ -124,8 +140,8 @@ export async function imprimerPages(flux: HTMLElement, reglages: ReglagesPage, o
       const clone = mesure.el.cloneNode(true) as HTMLElement;
       preparerClone(mesure.el, clone);
       clone.style.position = "absolute";
-      clone.style.top = `${mesure.haut - haut}px`;
-      clone.style.left = `${mesure.gauche}px`;
+      clone.style.top = `${mesure.haut - hautPage}px`;
+      clone.style.left = `${mesure.gauche + recalage}px`;
       clone.style.width = `${mesure.largeur}px`;
       clone.style.margin = "0";
       corps.appendChild(clone);
@@ -136,7 +152,10 @@ export async function imprimerPages(flux: HTMLElement, reglages: ReglagesPage, o
   });
 
   const style = document.createElement("style");
-  style.textContent = `@page { size: ${papier.largeur + 2 * fond}mm ${papier.hauteur + 2 * fond}mm !important; margin: 0 !important; @top-center { content: none !important; } @bottom-center { content: none !important; } @bottom-right { content: none !important; } }`;
+  const sansMarges = "margin: 0 !important; @top-center { content: none !important; } @bottom-center { content: none !important; } @bottom-right { content: none !important; }";
+  style.textContent =
+    `@page { size: ${papier.largeur + 2 * fond}mm ${papier.hauteur + 2 * fond}mm !important; ${sansMarges} }` +
+    (avecAutre ? ` @page calame-autre { size: ${papierAutre.largeur + 2 * fond}mm ${papierAutre.hauteur + 2 * fond}mm !important; ${sansMarges} }` : "");
   document.body.append(conteneur, style);
   document.documentElement.classList.add("calame-impression-en-cours");
 

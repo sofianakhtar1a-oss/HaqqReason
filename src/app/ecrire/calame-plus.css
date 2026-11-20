@@ -2157,3 +2157,375 @@
   min-width: 0;
   margin: 0;
 }
+
+/* ---------- formule ---------- */
+.calame-texte .tiptap .calame-formule {
+  position: relative;
+  margin: 0.8em 0;
+  padding: 0.3em 0;
+  border-radius: 0.4rem;
+  color: var(--corps-couleur);
+}
+.calame-texte .tiptap .calame-formule[data-selectionne] {
+  outline: 2px solid color-mix(in srgb, var(--or) 55%, transparent);
+  outline-offset: 4px;
+}
+.calame-formule-rendu {
+  overflow-x: auto;
+  font-size: 1.1em;
+}
+.calame-formule-rendu .katex-display {
+  margin: 0.2em 0;
+}
+.calame-formule-edition {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.6rem;
+  padding: 0.6rem;
+  border: 1px solid var(--trait);
+  border-radius: 0.8rem;
+  background: var(--fond);
+  font-family: var(--font-corps, system-ui);
+  font-size: 0.85rem;
+  color: var(--encre);
+}
+.calame-formule-edition textarea {
+  min-height: 0;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.85rem;
+}
+.calame-formule-signes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+.calame-formule-signes button {
+  min-width: 2rem;
+  padding: 0.2rem 0.35rem;
+  border: 1px solid var(--trait);
+  border-radius: 0.45rem;
+  font-family: "STIX Two Math", "Cambria Math", serif;
+  font-size: 1rem;
+}
+.calame-formule-signes button:hover {
+  background: var(--surface);
+}
+
+/* ---------- dessin ---------- */
+.calame-texte .tiptap .calame-dessin {
+  position: relative;
+  margin: 0.8em 0;
+}
+.calame-dessin-toile {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.4rem;
+}
+.calame-dessin[data-selectionne] .calame-dessin-toile {
+  outline: 1.5px dashed color-mix(in srgb, var(--or) 75%, transparent);
+  outline-offset: 2px;
+  background: color-mix(in srgb, var(--or) 4%, transparent);
+  cursor: crosshair;
+  touch-action: none;
+}
+.calame-dessin-vide {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-family: var(--font-corps, system-ui);
+  font-size: 0.85rem;
+  color: #8a90a8;
+  pointer-events: none;
+}
+.calame-impression .calame-dessin-vide {
+  display: none;
+}
+.calame-dessin-outils {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.3rem;
+  border: 1px solid var(--trait);
+  border-radius: 0.7rem;
+  background: var(--fond);
+  box-shadow: 0 10px 24px -12px rgb(0 0 0 / 0.55);
+  font-family: var(--font-corps, system-ui);
+  font-size: 0.75rem;
+  color: var(--encre);
+}
+.calame-dessin-outils button {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 0.45rem;
+}
+.calame-dessin-outils button[aria-pressed="true"] {
+  outline: 2px solid var(--or);
+  outline-offset: 1px;
+}
+.calame-dessin-outils button:disabled {
+  opacity: 0.4;
+}
+.calame-dessin-couleur {
+  width: 1.3rem !important;
+  min-width: 1.3rem !important;
+  height: 1.3rem !important;
+  border-radius: 50% !important;
+  border: 2px solid #fff;
+}
+.calame-dessin-trait {
+  display: block;
+  width: 1.1rem;
+  border-radius: 99px;
+}
+.calame-dessin-hauteur {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-left: 0.3rem;
+}
+.calame-dessin-hauteur input {
+  width: 5rem;
+}
+
+/* ---------- carte d'un pays ---------- */
+.calame-texte .tiptap .calame-carte-geo {
+  position: relative;
+  margin: 0.8em 0;
+}
+.calame-carte-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
+}
+.calame-carte-mer {
+  fill: #eef3f8;
+}
+.calame-carte-terre {
+  fill: #dfe2ea;
+  stroke: #fff;
+  stroke-width: 0.6;
+}
+.calame-carte-choisi {
+  fill: #c8901e;
+  stroke: #8a5f0c;
+  stroke-width: 1;
+}
+.calame-carte-frontieres {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.7;
+}
+.calame-carte-capitale {
+  fill: #0d1640;
+  stroke: #fff;
+  stroke-width: 2;
+}
+.calame-carte-etiquette {
+  font-family: var(--corps-police);
+  font-size: 22px;
+  font-weight: 600;
+  fill: #0d1640;
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-width: 4px;
+}
+.calame-carte-geo figcaption {
+  margin-top: 0.4em;
+  text-align: center;
+  font-size: 0.9em;
+  font-style: italic;
+}
+.calame-carte-vide {
+  display: grid;
+  place-items: center;
+  min-height: 8rem;
+  border: 1px dashed #c3c8dd;
+  border-radius: 0.4rem;
+  font-family: var(--font-corps, system-ui);
+  font-size: 0.85rem;
+  color: #6b7390;
+}
+.calame-carte-reglages {
+  position: absolute;
+  z-index: 5;
+  top: 0.4rem;
+  right: 0.4rem;
+  display: grid;
+  gap: 0.45rem;
+  width: min(18rem, 92%);
+  padding: 0.7rem;
+  border: 1px solid var(--trait);
+  border-radius: 0.8rem;
+  background: var(--fond);
+  box-shadow: 0 18px 40px -18px rgb(0 0 0 / 0.55);
+  font-family: var(--font-corps, system-ui);
+  font-size: 0.85rem;
+  color: var(--encre);
+}
+.calame-carte-choix {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calame-carte-choix button {
+  width: 100%;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.45rem;
+  text-align: left;
+}
+.calame-carte-choix button:hover {
+  background: var(--surface);
+}
+
+/* ---------- deux colonnes ---------- */
+.calame-texte .tiptap .calame-deux-colonnes {
+  column-count: 2;
+  column-gap: 1.6em;
+  column-fill: balance;
+}
+.calame-texte .tiptap .calame-deux-colonnes > :is(h2, h3, h4, figure, .react-renderer, table, .tableWrapper) {
+  break-inside: avoid-column;
+}
+.calame-texte .tiptap .calame-deux-colonnes > :first-child {
+  margin-top: 0;
+}
+
+/* ---------- commentaires pour soi, liens internes ---------- */
+.calame-texte .tiptap .calame-commente {
+  background: color-mix(in srgb, #f7c948 30%, transparent);
+  border-bottom: 1.5px solid #e0a50c;
+}
+.calame-impression .calame-commente {
+  background: none !important;
+  border: 0 !important;
+}
+.calame-commentaires {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 1rem);
+  width: 13rem;
+  height: 100%;
+}
+.calame-commentaire {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 0.45rem;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid color-mix(in srgb, #e0a50c 45%, var(--trait));
+  border-radius: 0.7rem;
+  background: color-mix(in srgb, var(--fond) 90%, #f7c948 10%);
+  font-family: var(--font-corps, system-ui);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--encre);
+  transition: top 0.2s var(--courbe-sortie, ease);
+}
+.calame-commentaire p {
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.calame-commentaire .champ {
+  min-height: 0;
+  padding: 0.4rem;
+  font-size: 0.8rem;
+}
+.calame-commentaire-icone {
+  width: 0.95rem;
+  height: 0.95rem;
+  margin-top: 0.1rem;
+  color: #c8901e;
+}
+.calame-commentaire-actions {
+  grid-column: 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.2rem;
+}
+.calame-commentaire-actions button {
+  display: inline-grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 0.4rem;
+  color: var(--encre-douce);
+}
+.calame-commentaire-actions button:hover {
+  background: var(--surface);
+  color: var(--encre);
+}
+.calame-scene {
+  container: scene / inline-size;
+}
+.calame-commentaires {
+  display: none;
+}
+@container scene (min-width: 66rem) {
+  .calame-commentaires {
+    display: block;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .calame-commentaire {
+    transition: none;
+  }
+}
+.calame-texte .tiptap a.calame-lien-interne {
+  color: #1f4fb0;
+  text-decoration: underline;
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+.calame-flux[data-sombre] .calame-texte .tiptap a.calame-lien-interne {
+  color: #8fb3ff;
+}
+.calame-extrait-commente {
+  margin: 0 0 0.6rem;
+  padding-left: 0.7rem;
+  border-left: 3px solid #e0a50c;
+  font-style: italic;
+  color: var(--encre-douce);
+}
+
+/* Des commentaires dans la marge : la page se décale à gauche pour leur faire de la place. */
+@container scene (min-width: 66rem) {
+  .calame-scene:has(.calame-commentaires) > .calame-zoom {
+    margin-right: 14.5rem;
+  }
+}
+
+/* ---------- saut de section ---------- */
+.calame-texte .tiptap .calame-saut-section {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.15rem 0;
+  border-top: 1px dashed color-mix(in srgb, var(--or) 55%, transparent);
+  font-family: var(--font-corps, system-ui);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #8a90a8;
+  user-select: none;
+}
+.calame-texte .tiptap .calame-saut-section.ProseMirror-selectednode {
+  outline: 2px solid color-mix(in srgb, var(--or) 55%, transparent);
+}
+.calame-impression .calame-saut-section {
+  visibility: hidden !important;
+}

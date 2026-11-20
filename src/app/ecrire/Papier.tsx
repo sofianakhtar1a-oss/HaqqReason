@@ -8,7 +8,9 @@ import { composer, numeroAffiche, partieDeLaPage, remplirGabarit, type LigneMesu
 import { appliquerCoupures, type Coupure, type NotesFin } from "./pages-extension";
 import { notesDuDocument, reglerNumeros, titresNumerotes } from "./extensions/numeros";
 import { publierMiseEnPage } from "./pages-store";
+import { orientationsDesBlocs, reglerSections } from "./blocs/Sections";
 import type { ApercuPage, BlocApercu } from "./Miniatures";
+import { MargeCommentaires } from "./MargeCommentaires";
 
 /** Blanc laissé entre deux feuilles, à l'écran. */
 export const ECART = 30;
@@ -48,6 +50,11 @@ type Props = {
 /** Ce que chaque feuille affiche autour du texte. */
 export type InfosPage = {
   numero: number;
+  /** Haut de la feuille dans le flux, et ses dimensions (une section en paysage a des pages plus larges). */
+  haut: number;
+  largeur: number;
+  hauteur: number;
+  paysage: boolean;
   etiquette: string;
   partie: string;
   notes: { numero: string; texte: string }[];
@@ -59,6 +66,9 @@ export type InfosPage = {
 type Unite = {
   el: HTMLElement;
   pos: number;
+  /** Section (rang du saut de section qui la précède) : la géométrie de ses pages en dépend. */
+  section: number;
+  paysage: boolean;
   genre: "p" | "li" | "titre" | "tableau" | "notes" | "autre";
   tableau?: { colonnes: number; entete: boolean; rangees: { pos: number; el: HTMLElement }[] };
 };
@@ -104,7 +114,11 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
     surPagesRef.current = surPages;
     reglagesRef.current = reglages;
   });
-  const [infos, setInfos] = useState<InfosPage[]>([{ numero: 1, etiquette: "1", partie: "", notes: [], hauteurNotes: 0, lignes: [] }]);
+  const [infos, setInfos] = useState<InfosPage[]>(() => {
+    const g0 = geometrie(reglages);
+    return [{ numero: 1, haut: 0, largeur: g0.page.largeur, hauteur: g0.page.hauteur, paysage: reglages.orientation === "paysage", etiquette: "1", partie: "", notes: [], hauteurNotes: 0, lignes: [] }];
+  });
+  const [commentaires, setCommentaires] = useState<{ id: string; texte: string; y: number }[]>([]);
   const g = geometrie(reglages);
 
   const mesurer = useCallback(
@@ -112,7 +126,6 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
       const zone = flux.current?.querySelector<HTMLElement>(".tiptap");
       if (!zone || !editor || editor.isDestroyed) return;
       const r = reglagesRef.current;
-      const geo = geometrie(r);
       const z = zoomRef.current || 1;
       const origine = zone.getBoundingClientRect().top;
       const ecran = (y: number) => (y - origine) / z;
@@ -142,22 +155,25 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
       // ---------------------------------------------------------------- les unités
       const unitesDom: Unite[] = [];
       const domBlocs = enfantsDuTexte(zone);
+      const orientations = orientationsDesBlocs(editor.state.doc, r.orientation);
       editor.state.doc.forEach((noeud, offset, i) => {
         const el = domBlocs[i];
         if (!el) return;
         const nom = noeud.type.name;
+        const section = orientations[i]?.section ?? 0;
+        const paysage = (orientations[i]?.orientation ?? r.orientation) === "paysage";
         if (LISTES.includes(nom)) {
           const puces = enfantsDuTexte(el);
           if (puces.length === noeud.childCount && puces.length > 1) {
             noeud.forEach((item, o, j) => {
               const simple = item.childCount > 0 && item.content.content.every((c) => c.type.name === "paragraph");
-              unitesDom.push({ el: puces[j], pos: offset + 1 + o, genre: simple ? "li" : "autre" });
+              unitesDom.push({ el: puces[j], pos: offset + 1 + o, genre: simple ? "li" : "autre", section, paysage });
             });
             return;
           }
         }
-        if (nom === "paragraph") unitesDom.push({ el, pos: offset, genre: "p" });
-        else if (nom === "heading") unitesDom.push({ el, pos: offset, genre: "titre" });
+        if (nom === "paragraph") unitesDom.push({ el, pos: offset, genre: "p", section, paysage });
+        else if (nom === "heading") unitesDom.push({ el, pos: offset, genre: "titre", section, paysage });
         else if (nom === "table") {
           const corps = el.querySelector(":scope table > tbody") ?? el.querySelector("tbody");
           const rangeesDom = corps ? enfantsDuTexte(corps) : [];
@@ -169,15 +185,32 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
           const entete = !!premiere && premiere.childCount > 0 && premiere.content.content.every((c) => c.type.name === "tableHeader");
           let colonnes = 0;
           premiere?.forEach((c) => (colonnes += Number(c.attrs.colspan) || 1));
-          unitesDom.push({ el, pos: offset, genre: rangees.length === noeud.childCount && rangees.length > 1 ? "tableau" : "autre", tableau: { colonnes: Math.max(1, colonnes), entete, rangees } });
-        } else unitesDom.push({ el, pos: offset, genre: "autre" });
+          unitesDom.push({ el, pos: offset, genre: rangees.length === noeud.childCount && rangees.length > 1 ? "tableau" : "autre", tableau: { colonnes: Math.max(1, colonnes), entete, rangees }, section, paysage });
+        } else unitesDom.push({ el, pos: offset, genre: "autre", section, paysage });
       });
       for (const bloc of Array.from(zone.querySelectorAll<HTMLElement>(":scope > [data-notes-fin]"))) {
-        unitesDom.push({ el: bloc, pos: Number(bloc.dataset.pos ?? 0), genre: "notes" });
+        unitesDom.push({ el: bloc, pos: Number(bloc.dataset.pos ?? 0), genre: "notes", section: -1, paysage: false });
       }
       // Les notes de fin sont des décorations : on les remet à leur place, dans l'ordre de l'écran.
       const hauts = new Map(unitesDom.map((u) => [u, u.el.getBoundingClientRect().top] as const));
       unitesDom.sort((a, b) => (hauts.get(a) ?? 0) - (hauts.get(b) ?? 0));
+      unitesDom.forEach((u, i) => {
+        if (u.section >= 0) return;
+        const avant = unitesDom[i - 1];
+        u.section = avant?.section ?? 0;
+        u.paysage = avant?.paysage ?? r.orientation === "paysage";
+      });
+      // La géométrie de chaque section (format du document, orientation de la section).
+      const geoSections = new Map<number, ReturnType<typeof geometrie> & { paysage: boolean }>();
+      const geoSection = (k: number) => {
+        let gs = geoSections.get(k);
+        if (!gs) {
+          const paysage = unitesDom.find((u) => u.section === k)?.paysage ?? r.orientation === "paysage";
+          gs = { ...geometrie({ ...r, orientation: paysage ? "paysage" : "portrait" }), paysage };
+          geoSections.set(k, gs);
+        }
+        return gs;
+      };
 
       /** Les lignes d'un paragraphe : fragments de texte regroupés par ligne, bornes à plat. */
       const lignesDuTexte = (el: HTMLElement): LigneDom[] => {
@@ -287,7 +320,7 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
         const rect = u.el.getBoundingClientRect();
         const haut = aPlat(ecran(rect.top));
         const bas = aPlat(ecran(rect.bottom));
-        const unite: UniteMesuree = { id: String(index), haut, hauteur: Math.max(0, bas - haut), insecable: true, sautAvant: u.el.classList.contains("saut-page") };
+        const unite: UniteMesuree = { id: String(index), haut, hauteur: Math.max(0, bas - haut), insecable: true, sautAvant: u.el.classList.contains("saut-page"), section: u.section };
         const avant = index > 0 ? unitesDom[index - 1].el : null;
         if (avant && (avant.hasAttribute("data-saut-apres") || avant.querySelector(":scope > [data-saut-apres]"))) unite.sautAvant = true;
         if (u.genre === "p" || u.genre === "li") {
@@ -318,12 +351,19 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
       });
 
       const composition = composer(unites, {
-        hauteurUtile: () => geo.zone.hauteur,
+        hauteurUtile: (k) => geoSection(k).zone.hauteur,
         hauteurNote: (id) => hauteursNotes.get(id) ?? 0,
         filetNotes: FILET_NOTES,
         veuves: r.veuves,
       });
       const pages = composition.pages;
+      // Le haut de chaque feuille : les pages d'une section en paysage sont moins hautes.
+      const tops: number[] = [];
+      let cumulPages = 0;
+      for (const p of pages) {
+        tops.push(cumulPages);
+        cumulPages += geoSection(p.section).page.hauteur + ECART;
+      }
 
       // ---------------------------------------------------------------- les blancs à poser
       const coupures: Coupure[] = [];
@@ -334,7 +374,7 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
         const o = page.ouverture;
         const u = unitesDom[Number(o.unite)];
         if (!u) return;
-        const cible = i * (geo.page.hauteur + ECART);
+        const cible = tops[i];
         const hauteur = Math.max(0, Math.round(cible - (o.y + cumul)));
         if (o.ligne === 0) {
           coupures.push({ pos: u.pos, hauteur, numero: i + 1, avantNotes: u.genre === "notes" });
@@ -425,12 +465,13 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
           if (u.genre !== "p" && u.genre !== "li" && u.genre !== "titre") return;
           for (const l of lignesDe(index)) {
             const y = ecran(l.ecranHaut);
-            const p = Math.max(0, Math.floor(y / (geo.page.hauteur + ECART)));
+            let p = 0;
+            while (p + 1 < tops.length && tops[p + 1] <= y) p++;
             const n = (compte.get(p) ?? 0) + 1;
             compte.set(p, n);
             if (n % 5 !== 0) continue;
             const liste = lignesParPage.get(p) ?? [];
-            liste.push({ y: y - p * (geo.page.hauteur + ECART) + r.marges.haut * MM, n });
+            liste.push({ y: y - tops[p] + r.marges.haut * MM, n });
             lignesParPage.set(p, liste);
           }
         });
@@ -439,6 +480,10 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
       const parNumero = new Map(notes.map((n) => [n.numero, n.texte] as const));
       const nouvelles: InfosPage[] = pages.map((p, i) => ({
         numero: i + 1,
+        haut: tops[i],
+        largeur: geoSection(p.section).page.largeur,
+        hauteur: geoSection(p.section).page.hauteur,
+        paysage: geoSection(p.section).paysage,
         etiquette: etiquette(i),
         partie: partieDeLaPage(parties, debuts[i], debuts[i + 1] ?? Number.POSITIVE_INFINITY),
         notes: notesEnBas ? p.notes.map((id) => ({ numero: id, texte: parNumero.get(id) ?? "" })) : [],
@@ -488,12 +533,23 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
         index,
       });
 
+      // Les commentaires pour soi : un par identifiant, à la hauteur du passage commenté.
+      const vus = new Set<string>();
+      const nouveaux: { id: string; texte: string; y: number }[] = [];
+      for (const el of Array.from(zone.querySelectorAll<HTMLElement>("[data-commentaire]"))) {
+        const id = el.dataset.commentaire ?? "";
+        if (!id || vus.has(id)) continue;
+        vus.add(id);
+        nouveaux.push({ id, texte: el.dataset.texte ?? "", y: ecran(el.getBoundingClientRect().top) + r.marges.haut * MM });
+      }
+      setCommentaires((avant) => (JSON.stringify(avant) === JSON.stringify(nouveaux) ? avant : nouveaux));
+
       // La silhouette des pages (pour les miniatures), positions rapportées à la feuille.
       if (surApercuRef.current) {
         const margeHaut = r.marges.haut * MM;
         const apercu: ApercuPage[] = pages.map((page, i) => ({
           numero: page.numero,
-          ratio: geo.page.largeur / geo.page.hauteur,
+          ratio: geoSection(page.section).page.largeur / geoSection(page.section).page.hauteur,
           blocs: page.unites.slice(0, 80).map((id) => {
             const bloc = unites[Number(id)];
             const el = unitesDom[Number(id)]?.el;
@@ -507,12 +563,13 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
                   : balise === "P" || balise === "LI" || balise === "BLOCKQUOTE"
                     ? "texte"
                     : "autre";
+            const hp = geoSection(page.section).page.hauteur;
             const haut = Math.max(0, bloc.haut - debuts[i]) + margeHaut;
             const bas = Math.min(bloc.haut + bloc.hauteur, debuts[i + 1] ?? Number.POSITIVE_INFINITY) - debuts[i] + margeHaut;
             return {
               genre,
-              haut: Math.min(1, haut / geo.page.hauteur),
-              hauteur: Math.max(0, Math.min(1 - Math.min(1, haut / geo.page.hauteur), (bas - haut) / geo.page.hauteur)),
+              haut: Math.min(1, haut / hp),
+              hauteur: Math.max(0, Math.min(1 - Math.min(1, haut / hp), (bas - haut) / hp)),
               texte: genre === "titre" ? (el?.textContent ?? "").trim().slice(0, 48) : undefined,
             };
           }),
@@ -568,20 +625,38 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
 
   // Changer de format, de marges, de police ou de numérotation refait tomber le texte ailleurs.
   useEffect(() => {
-    if (editor && !editor.isDestroyed) reglerNumeros(editor, { titres: reglages.numeroterTitres });
+    if (editor && !editor.isDestroyed) {
+      reglerNumeros(editor, { titres: reglages.numeroterTitres });
+      const portrait = geometrie({ ...reglages, orientation: "portrait" }).page.largeur;
+      const paysage = geometrie({ ...reglages, orientation: "paysage" }).page.largeur;
+      reglerSections(editor, { depart: reglages.orientation === "paysage" ? "paysage" : "portrait", ecart: (paysage - portrait) / 2 });
+    }
     nouvelleDonne();
   }, [editor, nouvelleDonne, reglages, zoom]);
 
-  const hauteurTotale = infos.length * (g.page.hauteur + ECART) - ECART;
+  const derniere = infos[infos.length - 1];
+  const hauteurTotale = derniere ? derniere.haut + derniere.hauteur : g.page.hauteur;
   // Les marges de gauche et de droite en proportion de la page : identiques sur une page entière,
   // et resserrées avec elle quand l'écran est plus étroit que le papier (téléphone).
   const enPourcent = (px: number) => `${(px / g.page.largeur) * 100}%`;
   const margeX = (mm: number) => enPourcent(mm * MM);
   const nombrePages = infos.length;
+  // Des pages plus larges que le papier du document (section en paysage) : on leur garde de la place pour défiler.
+  const debordMax = Math.max(0, ...infos.map((p) => (p.largeur - g.page.largeur) / 2));
 
   return (
     <div className="calame-scene" ref={refScene}>
-      <div className="calame-zoom" data-zoom={zoom !== 1 ? "" : undefined} style={zoom !== 1 ? { width: g.page.largeur * zoom, height: hauteurTotale * zoom } : undefined}>
+      <div
+        className="calame-zoom"
+        data-zoom={zoom !== 1 ? "" : undefined}
+        style={
+          zoom !== 1
+            ? { width: g.page.largeur * zoom, height: hauteurTotale * zoom, paddingInline: debordMax * zoom, boxSizing: "content-box" }
+            : debordMax > 0
+              ? { paddingInline: debordMax, boxSizing: "content-box" }
+              : undefined
+        }
+      >
         <div
           ref={flux}
           className="calame-flux"
@@ -598,7 +673,7 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
         >
           <div className="calame-feuilles" aria-hidden="true">
             {infos.map((page) => (
-              <Feuille key={page.numero} page={page} reglages={reglages} titre={titre} auteur={auteur} pages={nombrePages} hauteur={g.page.hauteur} largeur={g.page.largeur} margeX={margeX} enPourcent={enPourcent} />
+              <Feuille key={page.numero} page={page} reglages={reglages} titre={titre} auteur={auteur} pages={nombrePages} largeurFlux={g.page.largeur} />
             ))}
           </div>
 
@@ -613,6 +688,8 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
           >
             <EditorContent editor={editor} />
           </div>
+
+          {commentaires.length > 0 && editor && <MargeCommentaires editor={editor} commentaires={commentaires} />}
 
           {/* Les styles nommés du document : une règle par style, que l'impression (qui recopie les pages) suit aussi. */}
           <style>{cssStylesNommes(reglages.stylesNommes)}</style>
@@ -631,19 +708,23 @@ type PropsFeuille = {
   titre: string;
   auteur: string;
   pages: number;
-  hauteur: number;
-  largeur: number;
-  margeX: (mm: number) => string;
-  enPourcent: (px: number) => string;
+  /** Largeur du papier du document (celle du flux de texte). */
+  largeurFlux: number;
 };
 
 /** Une feuille : le papier, et tout ce qui s'y imprime autour du texte. */
-function Feuille({ page, reglages, titre, auteur, pages, hauteur, largeur, margeX, enPourcent }: PropsFeuille) {
-  const haut = (page.numero - 1) * (hauteur + ECART);
+function Feuille({ page, reglages, titre, auteur, pages, largeurFlux }: PropsFeuille) {
+  const { haut, hauteur, largeur } = page;
   const nue = reglages.premierePageNue && page.numero === 1;
   const m = margesDeLaPage(reglages, page.numero);
+  // Dans la feuille, tout se place en proportion de sa propre largeur.
+  const enPourcent = (px: number) => `${(px / largeur) * 100}%`;
+  const margeX = (mm: number) => enPourcent(mm * MM);
   // En miroir, une page paire (verso) se décale : sa marge de gauche devient l'extérieure.
   const decalage = reglages.miroir && page.numero % 2 === 0 ? ((reglages.marges.gauche - reglages.marges.droite) * MM) : 0;
+  // Une page en paysage, plus large que le flux, déborde également des deux côtés.
+  const debord = (largeurFlux - largeur) / 2;
+  const enPourcentFlux = (px: number) => `${(px / largeurFlux) * 100}%`;
   const contexte = { titre, page: page.etiquette, pages, partie: page.partie, auteur };
   const zones = zonesDeLaPage(reglages, page.numero);
   const paire = page.numero % 2 === 0;
@@ -666,7 +747,12 @@ function Feuille({ page, reglages, titre, auteur, pages, hauteur, largeur, marge
   const pied = nue ? null : ligne(zones.pied, !enHaut && numero !== "");
 
   return (
-    <div className="calame-feuille" data-numero={page.numero} style={{ top: haut, height: hauteur, left: enPourcent(decalage), right: enPourcent(-decalage) }}>
+    <div
+      className="calame-feuille"
+      data-numero={page.numero}
+      data-orientation={page.paysage ? "paysage" : "portrait"}
+      style={{ top: haut, height: hauteur, left: enPourcentFlux(debord + decalage), right: enPourcentFlux(debord - decalage) }}
+    >
       <span className="calame-marges" style={{ inset: `${m.haut * MM}px ${margeX(m.droite)} ${m.bas * MM}px ${margeX(m.gauche)}` }} />
       {reglages.bordure !== "aucune" && <span className="calame-bordure" data-genre={reglages.bordure} style={{ inset: `${Math.max(4, Math.min(m.haut, m.bas) / 2) * MM}px ${margeX(Math.max(4, Math.min(m.gauche, m.droite) / 2))}` }} />}
       {reglages.filigrane.trim() !== "" && (
