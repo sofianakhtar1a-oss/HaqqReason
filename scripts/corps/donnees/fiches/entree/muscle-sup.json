@@ -1,0 +1,1164 @@
+{
+ "lot": "muscle-sup",
+ "couche": "muscle",
+ "structures": [
+  {
+   "id": "biceps-brachial",
+   "nom": "Biceps brachial",
+   "latin": "Musculus biceps brachii",
+   "anglais": "Biceps brachii muscle",
+   "region": "bras",
+   "rang": 0,
+   "officiel": "Muscle biceps brachial",
+   "ta2": "2464",
+   "loge": "Loge antérieure du bras",
+   "connu": {
+    "noms": [
+     "biceps"
+    ],
+    "action": "Fléchit le coude et tourne la paume vers le haut (supination)",
+    "origine": "Chef long : tubercule supra-glénoïdal ; chef court : processus coracoïde",
+    "terminaison": "Tubérosité du radius et aponévrose bicipitale",
+    "innervation": "Nerf musculo-cutané (C5–C6)",
+    "memo": "Deux têtes. C'est lui qui tourne le tire-bouchon (supination).",
+    "os_d_origine_selon_l_atlas": [
+     "Scapula"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Radius"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-musculocutane",
+     "nom": "Nerf musculocutané"
+    },
+    "parties_modelisees": [
+     "Chef court du biceps brachial",
+     "Chef long du biceps brachial"
+    ],
+    "profondeur_sous_la_peau_mm": 1.8
+   }
+  },
+  {
+   "id": "triceps-brachial",
+   "nom": "Triceps brachial",
+   "latin": "Musculus triceps brachii",
+   "anglais": "Triceps brachii muscle",
+   "region": "bras",
+   "rang": 0,
+   "officiel": "Muscle triceps brachial",
+   "ta2": "2471",
+   "loge": "Loge postérieure du bras",
+   "connu": {
+    "noms": [
+     "triceps"
+    ],
+    "action": "Étend le coude",
+    "origine": "Chef long : tubercule infra-glénoïdal ; chefs latéral et médial : face postérieure de l'humérus",
+    "terminaison": "Olécrâne de l'ulna",
+    "innervation": "Nerf radial (C6–C8)",
+    "memo": "Trois têtes ; il fait les deux tiers du volume du bras.",
+    "os_d_origine_selon_l_atlas": [
+     "Humérus",
+     "Scapula"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Ulna"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-radial",
+     "nom": "Nerf radial"
+    },
+    "parties_modelisees": [
+     "Chef latéral du triceps brachial",
+     "Chef long du triceps brachial",
+     "Chef médial du triceps brachial"
+    ],
+    "profondeur_sous_la_peau_mm": 1.6
+   }
+  },
+  {
+   "id": "deltoide",
+   "nom": "Deltoïde",
+   "latin": "Musculus deltoideus",
+   "anglais": "Deltoid muscle",
+   "region": "epaule",
+   "rang": 0,
+   "officiel": "Muscle deltoïde",
+   "ta2": "2452",
+   "connu": {
+    "action": "Écarte le bras ; ses fibres avant le portent en avant, ses fibres arrière en arrière",
+    "origine": "Tiers latéral de la clavicule, acromion, épine de la scapula",
+    "terminaison": "Tubérosité deltoïdienne de l'humérus",
+    "innervation": "Nerf axillaire (C5–C6)",
+    "memo": "Triangulaire comme la lettre grecque delta (Δ).",
+    "os_d_origine_selon_l_atlas": [
+     "Scapula",
+     "Clavicule"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Humérus"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-axillaire",
+     "nom": "Nerf axillaire"
+    },
+    "parties_modelisees": [
+     "Partie acromiale du deltoïde",
+     "Partie claviculaire du deltoïde",
+     "Partie scapulaire épineuse du deltoïde"
+    ],
+    "profondeur_sous_la_peau_mm": 2.1
+   }
+  },
+  {
+   "id": "brachio-radial",
+   "nom": "Brachio-radial",
+   "latin": "Musculus brachioradialis",
+   "anglais": "Brachioradialis muscle",
+   "region": "avant-bras",
+   "rang": 1,
+   "officiel": "Muscle brachioradial",
+   "ta2": "2496",
+   "loge": "Loge postérieure de l'avant-bras",
+   "connu": {
+    "noms": [
+     "long supinateur",
+     "brachioradial"
+    ],
+    "action": "Fléchit le coude, main de profil (le geste de boire un verre)",
+    "origine": "Bord latéral de l'humérus, au-dessus de l'épicondyle",
+    "terminaison": "Processus styloïde du radius",
+    "innervation": "Nerf radial (C5–C6)",
+    "memo": "Le muscle du verre qu'on porte à la bouche.",
+    "os_d_origine_selon_l_atlas": [
+     "Humérus"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Radius"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-radial",
+     "nom": "Nerf radial"
+    },
+    "profondeur_sous_la_peau_mm": 1.2
+   }
+  },
+  {
+   "id": "extenseur-doigts",
+   "nom": "Extenseur des doigts",
+   "latin": "Extensor digitorum",
+   "anglais": "Extensor digitorum",
+   "region": "avant-bras",
+   "rang": 1,
+   "officiel": "Extenseur des doigts",
+   "ta2": "2500",
+   "loge": "Loge postérieure de l'avant-bras",
+   "connu": {
+    "noms": [
+     "extenseur commun des doigts"
+    ],
+    "action": "Étend les doigts et le poignet",
+    "origine": "Épicondyle latéral de l'humérus",
+    "terminaison": "Dos des phalanges moyennes et distales des doigts 2 à 5",
+    "innervation": "Nerf interosseux postérieur (radial)",
+    "os_d_origine_selon_l_atlas": [
+     "Humérus"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange proximale du quatrième doigt de la main",
+     "Phalange proximale du troisième doigt de la main",
+     "Phalange proximale du deuxième doigt de la main",
+     "Phalange moyenne du cinquième doigt de la main",
+     "Phalange moyenne du quatrième doigt de la main",
+     "Phalange moyenne du troisième doigt de la main",
+     "Phalange moyenne du deuxième doigt de la main",
+     "Phalange proximale du cinquième doigt de la main"
+    ],
+    "profondeur_sous_la_peau_mm": 0.8
+   }
+  },
+  {
+   "id": "brachial",
+   "nom": "Brachial",
+   "latin": "Musculus brachialis",
+   "anglais": "Brachialis muscle",
+   "region": "bras",
+   "rang": 1,
+   "officiel": "Muscle brachial",
+   "ta2": "2469",
+   "loge": "Loge antérieure du bras",
+   "connu": {
+    "noms": [
+     "brachial antérieur"
+    ],
+    "action": "Fléchit le coude, quelle que soit la position de la main",
+    "origine": "Moitié inférieure de la face antérieure de l'humérus",
+    "terminaison": "Tubérosité de l'ulna",
+    "innervation": "Nerf musculo-cutané (C5–C6)",
+    "memo": "Le vrai fléchisseur du coude, caché sous le biceps.",
+    "os_d_origine_selon_l_atlas": [
+     "Humérus"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Ulna"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-musculocutane",
+     "nom": "Nerf musculocutané"
+    },
+    "profondeur_sous_la_peau_mm": 5.6
+   }
+  },
+  {
+   "id": "grand-rond",
+   "nom": "Grand rond",
+   "latin": "Musculus teres major",
+   "anglais": "Teres major muscle",
+   "region": "epaule",
+   "rang": 1,
+   "officiel": "Muscle grand rond",
+   "ta2": "2462",
+   "profondeur": 1,
+   "connu": {
+    "action": "Rapproche le bras du corps, le tourne en dedans et le porte en arrière",
+    "origine": "Angle inférieur de la scapula",
+    "terminaison": "Lèvre médiale du sillon intertuberculaire",
+    "innervation": "Nerf subscapulaire inférieur (C5–C7)",
+    "memo": "Le petit aide du grand dorsal.",
+    "os_d_origine_selon_l_atlas": [
+     "Scapula"
+    ],
+    "profondeur_sous_la_peau_mm": 27.4
+   }
+  },
+  {
+   "id": "infra-epineux",
+   "nom": "Infra-épineux",
+   "latin": "Musculus infraspinatus",
+   "anglais": "Infraspinatus muscle",
+   "region": "epaule",
+   "rang": 1,
+   "officiel": "Muscle infra-épineux",
+   "ta2": "2458",
+   "loge": "Coiffe des rotateurs",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "sous-épineux"
+    ],
+    "action": "Tourne le bras en dehors ; stabilise l'épaule",
+    "origine": "Fosse infra-épineuse de la scapula",
+    "terminaison": "Facette moyenne du tubercule majeur",
+    "innervation": "Nerf suprascapulaire (C5–C6)",
+    "os_d_origine_selon_l_atlas": [
+     "Scapula"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Humérus"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-suprascapulaire",
+     "nom": "Nerf suprascapulaire"
+    },
+    "profondeur_sous_la_peau_mm": 11.1
+   }
+  },
+  {
+   "id": "supra-epineux",
+   "nom": "Supra-épineux",
+   "latin": "Musculus supraspinatus",
+   "anglais": "Supraspinatus muscle",
+   "region": "epaule",
+   "rang": 1,
+   "officiel": "Muscle supra-épineux",
+   "ta2": "2457",
+   "loge": "Coiffe des rotateurs",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "sus-épineux"
+    ],
+    "action": "Démarre l'écartement du bras ; tient la tête humérale (coiffe des rotateurs)",
+    "origine": "Fosse supra-épineuse de la scapula",
+    "terminaison": "Facette supérieure du tubercule majeur de l'humérus",
+    "innervation": "Nerf suprascapulaire (C5–C6)",
+    "memo": "Le tendon le plus souvent abîmé de la coiffe des rotateurs.",
+    "os_d_origine_selon_l_atlas": [
+     "Scapula"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Humérus"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-suprascapulaire",
+     "nom": "Nerf suprascapulaire"
+    },
+    "profondeur_sous_la_peau_mm": 7.5
+   }
+  },
+  {
+   "id": "extenseur-du-petit-doigt",
+   "nom": "Extenseur du petit doigt",
+   "latin": "Extensor digiti minimi",
+   "anglais": "Extensor digiti minimi",
+   "region": "avant-bras",
+   "rang": 2,
+   "officiel": "Extenseur du petit doigt",
+   "ta2": "2506",
+   "loge": "Loge postérieure de l'avant-bras",
+   "profondeur": 1,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Humérus"
+    ],
+    "profondeur_sous_la_peau_mm": 2.4
+   }
+  },
+  {
+   "id": "extenseur-ulnaire-carpe",
+   "nom": "Extenseur ulnaire du carpe",
+   "latin": "Extensor ulnaris carpi",
+   "anglais": "Extensor carpi ulnaris",
+   "region": "avant-bras",
+   "rang": 2,
+   "officiel": "Extenseur ulnaire du carpe",
+   "ta2": "2507",
+   "loge": "Loge postérieure de l'avant-bras",
+   "connu": {
+    "noms": [
+     "cubital postérieur"
+    ],
+    "action": "Étend le poignet et l'incline côté petit doigt",
+    "origine": "Épicondyle latéral et bord postérieur de l'ulna",
+    "terminaison": "Base du 5e métacarpien",
+    "innervation": "Nerf interosseux postérieur (radial)",
+    "os_d_origine_selon_l_atlas": [
+     "Humérus",
+     "Ulna"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Triquetrum"
+    ],
+    "parties_modelisees": [
+     "Chef huméral de l'extenseur ulnaire du carpe",
+     "Chef ulnaire de l'extenseur ulnaire du carpe"
+    ],
+    "profondeur_sous_la_peau_mm": 1.7
+   }
+  },
+  {
+   "id": "flechisseur-radial-carpe",
+   "nom": "Fléchisseur radial du carpe",
+   "latin": "Flexor radialis carpi",
+   "anglais": "Flexor carpi radialis",
+   "region": "avant-bras",
+   "rang": 2,
+   "officiel": "Fléchisseur radial du carpe",
+   "ta2": "2481",
+   "loge": "Loge antérieure de l'avant-bras",
+   "connu": {
+    "noms": [
+     "grand palmaire"
+    ],
+    "action": "Fléchit le poignet et l'incline côté pouce",
+    "origine": "Épicondyle médial de l'humérus",
+    "terminaison": "Base du 2e métacarpien (paume)",
+    "innervation": "Nerf médian (C6–C7)",
+    "os_d_origine_selon_l_atlas": [
+     "Humérus"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-median",
+     "nom": "Nerf médian"
+    },
+    "profondeur_sous_la_peau_mm": 1.1
+   }
+  },
+  {
+   "id": "flechisseur-superficiel-doigts",
+   "nom": "Fléchisseur superficiel des doigts",
+   "latin": "Flexor superficialis digitorum superficialis",
+   "anglais": "Flexor digitorum superficialis",
+   "region": "avant-bras",
+   "rang": 2,
+   "officiel": "Fléchisseur superficiel des doigts",
+   "ta2": "2486",
+   "loge": "Loge antérieure de l'avant-bras",
+   "connu": {
+    "noms": [
+     "fléchisseur commun superficiel des doigts"
+    ],
+    "action": "Fléchit les doigts et le poignet",
+    "origine": "Épicondyle médial, processus coronoïde de l'ulna, radius",
+    "terminaison": "Phalanges moyennes des doigts 2 à 5",
+    "innervation": "Nerf médian (C7–T1)",
+    "os_d_origine_selon_l_atlas": [
+     "Humérus",
+     "Radius"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange moyenne du quatrième doigt de la main",
+     "Phalange moyenne du troisième doigt de la main",
+     "Phalange moyenne du deuxième doigt de la main",
+     "Phalange moyenne du cinquième doigt de la main"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-median",
+     "nom": "Nerf médian"
+    },
+    "parties_modelisees": [
+     "Chef huméro-ulnaire du fléchisseur superficiel des doigts",
+     "Chef radial du fléchisseur superficiel des doigts"
+    ],
+    "profondeur_sous_la_peau_mm": 1.1
+   }
+  },
+  {
+   "id": "flechisseur-ulnaire-carpe",
+   "nom": "Fléchisseur ulnaire du carpe",
+   "latin": "Flexor ulnaris carpi",
+   "anglais": "Flexor carpi ulnaris",
+   "region": "avant-bras",
+   "rang": 2,
+   "officiel": "Fléchisseur ulnaire du carpe",
+   "ta2": "2483",
+   "loge": "Loge antérieure de l'avant-bras",
+   "connu": {
+    "noms": [
+     "cubital antérieur"
+    ],
+    "action": "Fléchit le poignet et l'incline côté petit doigt",
+    "origine": "Épicondyle médial et olécrâne",
+    "terminaison": "Pisiforme, hamatum et base du 5e métacarpien",
+    "innervation": "Nerf ulnaire (C7–T1)",
+    "os_d_origine_selon_l_atlas": [
+     "Humérus",
+     "Ulna"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Pisiforme"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-ulnaire",
+     "nom": "Nerf ulnaire"
+    },
+    "parties_modelisees": [
+     "Chef huméral du fléchisseur ulnaire du carpe",
+     "Chef ulnaire du fléchisseur ulnaire du carpe"
+    ],
+    "profondeur_sous_la_peau_mm": 1.0
+   }
+  },
+  {
+   "id": "long-extenseur-du-pouce",
+   "nom": "Long extenseur du pouce",
+   "latin": "Extensor longus pollicis",
+   "anglais": "Extensor pollicis longus",
+   "region": "avant-bras",
+   "rang": 2,
+   "officiel": "Long extenseur du pouce",
+   "ta2": "2516",
+   "loge": "Loge postérieure de l'avant-bras",
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Ulna"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange distale du premier doigt de la main"
+    ],
+    "profondeur_sous_la_peau_mm": 2.1
+   }
+  },
+  {
+   "id": "long-extenseur-radial-carpe",
+   "nom": "Long extenseur radial du carpe",
+   "latin": "Extensor radialis longus carpi",
+   "anglais": "Extensor carpi radialis longus",
+   "region": "avant-bras",
+   "rang": 2,
+   "officiel": "Long extenseur radial du carpe",
+   "ta2": "2497",
+   "loge": "Loge postérieure de l'avant-bras",
+   "connu": {
+    "noms": [
+     "premier radial",
+     "long extenseur radial"
+    ],
+    "action": "Étend le poignet et l'incline côté pouce",
+    "origine": "Crête supracondylaire latérale de l'humérus",
+    "terminaison": "Base du 2e métacarpien (dos)",
+    "innervation": "Nerf radial (C6–C7)",
+    "os_d_origine_selon_l_atlas": [
+     "Humérus"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Deuxième métacarpien"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-radial",
+     "nom": "Nerf radial"
+    },
+    "profondeur_sous_la_peau_mm": 1.1
+   }
+  },
+  {
+   "id": "long-palmaire",
+   "nom": "Long palmaire",
+   "latin": "Musculus palmaris longus",
+   "anglais": "Palmaris longus muscle",
+   "region": "avant-bras",
+   "rang": 2,
+   "officiel": "Muscle long palmaire",
+   "ta2": "2482",
+   "loge": "Loge antérieure de l'avant-bras",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "petit palmaire"
+    ],
+    "action": "Fléchit le poignet ; tend l'aponévrose palmaire",
+    "origine": "Épicondyle médial de l'humérus",
+    "terminaison": "Aponévrose palmaire",
+    "innervation": "Nerf médian (C7–C8)",
+    "anecdote": "Il manque chez environ une personne sur six : pincez le pouce et le petit doigt en pliant le poignet pour voir s'il est là.",
+    "os_d_origine_selon_l_atlas": [
+     "Humérus"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-median",
+     "nom": "Nerf médian"
+    },
+    "profondeur_sous_la_peau_mm": 0.9
+   }
+  },
+  {
+   "id": "rond-pronateur",
+   "nom": "Rond pronateur",
+   "latin": "Pronator teres",
+   "anglais": "Pronator teres",
+   "region": "avant-bras",
+   "rang": 2,
+   "officiel": "Rond pronateur",
+   "ta2": "2478",
+   "loge": "Loge antérieure de l'avant-bras",
+   "profondeur": 1,
+   "connu": {
+    "action": "Tourne la paume vers le bas (pronation) ; fléchit le coude",
+    "origine": "Épicondyle médial de l'humérus et processus coronoïde de l'ulna",
+    "terminaison": "Face latérale du radius, à mi-hauteur",
+    "innervation": "Nerf médian (C6–C7)",
+    "os_d_origine_selon_l_atlas": [
+     "Humérus"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Radius"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-median",
+     "nom": "Nerf médian"
+    },
+    "parties_modelisees": [
+     "Chef profond du rond pronateur",
+     "Chef superficiel du rond pronateur"
+    ],
+    "profondeur_sous_la_peau_mm": 6.0
+   }
+  },
+  {
+   "id": "coraco-brachial",
+   "nom": "Coraco-brachial",
+   "latin": "Musculus coracobrachialis",
+   "anglais": "Coracobrachialis muscle",
+   "region": "bras",
+   "rang": 2,
+   "officiel": "Muscle coracobrachial",
+   "ta2": "2468",
+   "loge": "Loge antérieure du bras",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "coracobrachial"
+    ],
+    "action": "Porte le bras en avant et le rapproche du corps",
+    "origine": "Processus coracoïde",
+    "terminaison": "Face médiale de l'humérus, à mi-hauteur",
+    "innervation": "Nerf musculo-cutané (C5–C7)",
+    "os_d_origine_selon_l_atlas": [
+     "Scapula"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-musculocutane",
+     "nom": "Nerf musculocutané"
+    },
+    "profondeur_sous_la_peau_mm": 17.2
+   }
+  },
+  {
+   "id": "petit-rond",
+   "nom": "Petit rond",
+   "latin": "Musculus teres minor",
+   "anglais": "Teres minor muscle",
+   "region": "epaule",
+   "rang": 2,
+   "officiel": "Muscle petit rond",
+   "ta2": "2459",
+   "loge": "Coiffe des rotateurs",
+   "profondeur": 1,
+   "connu": {
+    "action": "Tourne le bras en dehors",
+    "origine": "Bord latéral de la scapula",
+    "terminaison": "Facette inférieure du tubercule majeur",
+    "innervation": "Nerf axillaire (C5–C6)",
+    "memo": "Supra-épineux, infra-épineux, petit rond, subscapulaire : la coiffe des rotateurs.",
+    "os_d_origine_selon_l_atlas": [
+     "Scapula"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Humérus"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-axillaire",
+     "nom": "Nerf axillaire"
+    },
+    "profondeur_sous_la_peau_mm": 25.7
+   }
+  },
+  {
+   "id": "subscapulaire",
+   "nom": "Subscapulaire",
+   "latin": "Musculus subscapularis",
+   "anglais": "Subscapularis muscle",
+   "region": "epaule",
+   "rang": 2,
+   "officiel": "Muscle subscapulaire",
+   "ta2": "2460",
+   "loge": "Coiffe des rotateurs",
+   "profondeur": 2,
+   "connu": {
+    "noms": [
+     "sous-scapulaire"
+    ],
+    "action": "Tourne le bras en dedans ; stabilise l'épaule",
+    "origine": "Fosse subscapulaire, face avant de la scapula",
+    "terminaison": "Tubercule mineur de l'humérus",
+    "innervation": "Nerfs subscapulaires (C5–C7)",
+    "os_d_origine_selon_l_atlas": [
+     "Scapula"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Humérus"
+    ],
+    "profondeur_sous_la_peau_mm": 18.7
+   }
+  },
+  {
+   "id": "extenseur-de-l-index",
+   "nom": "Extenseur de l'index",
+   "latin": "Extensor indicis",
+   "anglais": "Extensor indicis",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Muscle extenseur de l'index",
+   "ta2": "2515",
+   "loge": "Loge postérieure de l'avant-bras",
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Ulna"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange distale du deuxième doigt de la main"
+    ],
+    "profondeur_sous_la_peau_mm": 1.0
+   }
+  },
+  {
+   "id": "flechisseur-du-petit-doigt-de-la-main",
+   "nom": "Fléchisseur du petit doigt de la main",
+   "latin": "Flexor digiti minimi manus",
+   "anglais": "Flexor digiti minimi of hand",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Fléchisseur du petit doigt de la main",
+   "ta2": "2530",
+   "loge": "Muscles intrinsèques de la main",
+   "profondeur": 1,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Hamatum"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange proximale du cinquième doigt de la main"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-ulnaire",
+     "nom": "Nerf ulnaire"
+    },
+    "profondeur_sous_la_peau_mm": 1.5
+   }
+  },
+  {
+   "id": "lombricaux-de-la-main",
+   "nom": "Lombricaux de la main",
+   "latin": "Musculi lumbricales manus",
+   "anglais": "Lumbrical muscles of hand",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Muscles lombricaux de la main",
+   "ta2": "2532",
+   "loge": "Muscles intrinsèques de la main",
+   "connu": {
+    "nerf_selon_l_atlas": {
+     "id": "nerf-ulnaire",
+     "nom": "Nerf ulnaire"
+    },
+    "profondeur_sous_la_peau_mm": 1.3
+   }
+  },
+  {
+   "id": "muscle-opposant-du-petit-doigt",
+   "nom": "Opposant du petit doigt",
+   "latin": "Musculus opponens digiti minimi manus",
+   "anglais": "Opponens digiti minimi muscle of hand",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Muscle opposant du petit doigt",
+   "ta2": "2531",
+   "loge": "Muscles intrinsèques de la main",
+   "profondeur": 1,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Hamatum"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-ulnaire",
+     "nom": "Nerf ulnaire"
+    },
+    "profondeur_sous_la_peau_mm": 5.5
+   }
+  },
+  {
+   "id": "ancone",
+   "nom": "Anconé",
+   "latin": "Musculus anconeus",
+   "anglais": "Anconeus muscle",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Muscle anconé",
+   "ta2": "2510",
+   "loge": "Loge postérieure de l'avant-bras",
+   "connu": {
+    "action": "Aide le triceps à étendre le coude",
+    "origine": "Épicondyle latéral de l'humérus",
+    "terminaison": "Olécrâne et face postérieure de l'ulna",
+    "innervation": "Nerf radial (C7–C8)",
+    "os_d_origine_selon_l_atlas": [
+     "Humérus"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Ulna"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-radial",
+     "nom": "Nerf radial"
+    },
+    "profondeur_sous_la_peau_mm": 6.2
+   }
+  },
+  {
+   "id": "carre-pronateur",
+   "nom": "Carré pronateur",
+   "latin": "Pronator quadratus",
+   "anglais": "Pronator quadratus",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Carré pronateur",
+   "ta2": "2493",
+   "loge": "Loge antérieure de l'avant-bras",
+   "profondeur": 1,
+   "connu": {
+    "action": "Tourne la paume vers le bas : le principal pronateur",
+    "origine": "Quart inférieur de l'ulna, face antérieure",
+    "terminaison": "Quart inférieur du radius",
+    "innervation": "Nerf interosseux antérieur (médian)",
+    "os_d_origine_selon_l_atlas": [
+     "Ulna"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Radius"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-median",
+     "nom": "Nerf médian"
+    },
+    "profondeur_sous_la_peau_mm": 6.6
+   }
+  },
+  {
+   "id": "court-extenseur-pouce",
+   "nom": "Court extenseur du pouce",
+   "latin": "Extensor brevis pollicis",
+   "anglais": "Extensor pollicis brevis",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Court extenseur du pouce",
+   "ta2": "2518",
+   "loge": "Loge postérieure de l'avant-bras",
+   "connu": {
+    "action": "Étend le pouce",
+    "origine": "Face postérieure du radius",
+    "terminaison": "Base de la phalange proximale du pouce",
+    "innervation": "Nerf interosseux postérieur (radial)",
+    "os_d_origine_selon_l_atlas": [
+     "Radius"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange proximale du premier doigt de la main"
+    ],
+    "profondeur_sous_la_peau_mm": 1.0
+   }
+  },
+  {
+   "id": "court-extenseur-radial-carpe",
+   "nom": "Court extenseur radial du carpe",
+   "latin": "Extensor radialis brevis carpi",
+   "anglais": "Extensor carpi radialis brevis",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Court extenseur radial du carpe",
+   "ta2": "2499",
+   "loge": "Loge postérieure de l'avant-bras",
+   "connu": {
+    "noms": [
+     "second radial",
+     "court extenseur radial"
+    ],
+    "action": "Étend le poignet",
+    "origine": "Épicondyle latéral de l'humérus",
+    "terminaison": "Base du 3e métacarpien",
+    "innervation": "Nerf radial (branche profonde)",
+    "memo": "C'est lui qui souffre dans le « tennis-elbow ».",
+    "os_d_origine_selon_l_atlas": [
+     "Humérus"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Troisième métacarpien"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-radial",
+     "nom": "Nerf radial"
+    },
+    "profondeur_sous_la_peau_mm": 2.4
+   }
+  },
+  {
+   "id": "flechisseur-profond-doigts",
+   "nom": "Fléchisseur profond des doigts",
+   "latin": "Flexor profundus digitorum",
+   "anglais": "Flexor digitorum profundus",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Fléchisseur profond des doigts",
+   "ta2": "2491",
+   "loge": "Loge antérieure de l'avant-bras",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "fléchisseur commun profond des doigts"
+    ],
+    "action": "Fléchit le bout des doigts (le seul à le faire)",
+    "origine": "Faces antérieure et médiale de l'ulna, membrane interosseuse",
+    "terminaison": "Phalanges distales des doigts 2 à 5",
+    "innervation": "Nerfs médian (doigts 2-3) et ulnaire (doigts 4-5)",
+    "memo": "Ses tendons traversent ceux du fléchisseur superficiel par une boutonnière.",
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange distale du quatrième doigt de la main",
+     "Phalange distale du troisième doigt de la main",
+     "Phalange distale du deuxième doigt de la main",
+     "Phalange distale du cinquième doigt de la main"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-ulnaire",
+     "nom": "Nerf ulnaire"
+    },
+    "profondeur_sous_la_peau_mm": 1.3
+   }
+  },
+  {
+   "id": "long-abducteur-pouce",
+   "nom": "Long abducteur du pouce",
+   "latin": "Abductor longus pollicis",
+   "anglais": "Abductor pollicis longus",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Long abducteur du pouce",
+   "ta2": "2517",
+   "loge": "Loge postérieure de l'avant-bras",
+   "connu": {
+    "action": "Écarte le pouce",
+    "origine": "Faces postérieures du radius et de l'ulna",
+    "terminaison": "Base du 1er métacarpien",
+    "innervation": "Nerf interosseux postérieur (radial)",
+    "memo": "Son tendon borde la tabatière anatomique.",
+    "os_d_origine_selon_l_atlas": [
+     "Radius"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Premier métacarpien"
+    ],
+    "profondeur_sous_la_peau_mm": 1.1
+   }
+  },
+  {
+   "id": "long-flechisseur-pouce",
+   "nom": "Long fléchisseur du pouce",
+   "latin": "Flexor longus pollicis",
+   "anglais": "Flexor pollicis longus",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Long fléchisseur du pouce",
+   "ta2": "2492",
+   "loge": "Loge antérieure de l'avant-bras",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "long fléchisseur propre du pouce"
+    ],
+    "action": "Fléchit le bout du pouce",
+    "origine": "Face antérieure du radius",
+    "terminaison": "Phalange distale du pouce",
+    "innervation": "Nerf interosseux antérieur (médian)",
+    "os_d_origine_selon_l_atlas": [
+     "Radius",
+     "Ulna"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange distale du premier doigt de la main"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-median",
+     "nom": "Nerf médian"
+    },
+    "profondeur_sous_la_peau_mm": 1.2
+   }
+  },
+  {
+   "id": "supinateur",
+   "nom": "Supinateur",
+   "latin": "Supinator",
+   "anglais": "Supinator",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Supinateur",
+   "ta2": "2512",
+   "loge": "Loge postérieure de l'avant-bras",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "court supinateur"
+    ],
+    "action": "Tourne la paume vers le haut (supination)",
+    "origine": "Épicondyle latéral et crête du supinateur de l'ulna",
+    "terminaison": "Tiers supérieur du radius",
+    "innervation": "Nerf radial (branche profonde)",
+    "os_d_origine_selon_l_atlas": [
+     "Ulna"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Radius"
+    ],
+    "profondeur_sous_la_peau_mm": 10.3
+   }
+  },
+  {
+   "id": "abducteur-petit-doigt",
+   "nom": "Abducteur du petit doigt",
+   "latin": "Abductor digiti minimi manus",
+   "anglais": "Abductor digiti minimi of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Muscle abducteur du petit doigt",
+   "ta2": "2529",
+   "loge": "Muscles intrinsèques de la main",
+   "connu": {
+    "action": "Écarte le petit doigt",
+    "origine": "Pisiforme",
+    "terminaison": "Base de la phalange proximale du petit doigt",
+    "innervation": "Nerf ulnaire (C8–T1)",
+    "memo": "Le plus superficiel de l'éminence hypothénar.",
+    "os_d_origine_selon_l_atlas": [
+     "Pisiforme"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange proximale du cinquième doigt de la main"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-ulnaire",
+     "nom": "Nerf ulnaire"
+    },
+    "profondeur_sous_la_peau_mm": 0.5
+   }
+  },
+  {
+   "id": "adducteur-pouce",
+   "nom": "Adducteur du pouce",
+   "latin": "Adductor pollicis",
+   "anglais": "Adductor pollicis",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Adducteur du pouce",
+   "ta2": "2526",
+   "loge": "Muscles intrinsèques de la main",
+   "profondeur": 1,
+   "connu": {
+    "action": "Rapproche le pouce de la paume (tenir une clé)",
+    "origine": "Capitatum et 2e, 3e métacarpiens",
+    "terminaison": "Base de la phalange proximale du pouce",
+    "innervation": "Nerf ulnaire (branche profonde)",
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange proximale du premier doigt de la main",
+     "Capitatum"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-median",
+     "nom": "Nerf médian"
+    },
+    "parties_modelisees": [
+     "Chef oblique de l'adducteur du pouce",
+     "Chef transverse de l'adducteur du pouce"
+    ],
+    "profondeur_sous_la_peau_mm": 6.8
+   }
+  },
+  {
+   "id": "court-abducteur-pouce",
+   "nom": "Court abducteur du pouce",
+   "latin": "Abductor brevis pollicis",
+   "anglais": "Abductor pollicis brevis",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Court abducteur du pouce",
+   "ta2": "2521",
+   "loge": "Muscles intrinsèques de la main",
+   "profondeur": 1,
+   "connu": {
+    "action": "Écarte le pouce de la paume",
+    "origine": "Rétinaculum des fléchisseurs, scaphoïde, trapèze",
+    "terminaison": "Base de la phalange proximale du pouce",
+    "innervation": "Nerf médian (branche thénarienne)",
+    "memo": "Le plus superficiel de l'éminence thénar.",
+    "nerf_selon_l_atlas": {
+     "id": "nerf-median",
+     "nom": "Nerf médian"
+    },
+    "profondeur_sous_la_peau_mm": 1.7
+   }
+  },
+  {
+   "id": "court-flechisseur-pouce",
+   "nom": "Court fléchisseur du pouce",
+   "latin": "Flexor brevis pollicis",
+   "anglais": "Flexor pollicis brevis",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Court fléchisseur du pouce",
+   "ta2": "2522",
+   "loge": "Muscles intrinsèques de la main",
+   "connu": {
+    "action": "Fléchit le pouce",
+    "origine": "Rétinaculum des fléchisseurs et trapèze",
+    "terminaison": "Base de la phalange proximale du pouce",
+    "innervation": "Nerf médian (et ulnaire pour le chef profond)",
+    "os_d_origine_selon_l_atlas": [
+     "Premier métacarpien",
+     "Trapèze"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-median",
+     "nom": "Nerf médian"
+    },
+    "parties_modelisees": [
+     "Chef profond du court fléchisseur du pouce",
+     "Chef superficiel du court fléchisseur du pouce"
+    ],
+    "profondeur_sous_la_peau_mm": 2.3
+   }
+  },
+  {
+   "id": "interosseux-dorsaux",
+   "nom": "Interosseux dorsaux",
+   "latin": "Musculi interossei dorsales manus",
+   "anglais": "Dorsal interossei muscles of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Muscles interosseux dorsaux de la main",
+   "ta2": "2533",
+   "loge": "Muscles intrinsèques de la main",
+   "connu": {
+    "noms": [
+     "interosseux"
+    ],
+    "action": "Écartent les doigts",
+    "origine": "Faces des métacarpiens voisins (deux chefs chacun)",
+    "terminaison": "Bases des phalanges proximales et appareil extenseur",
+    "innervation": "Nerf ulnaire (C8–T1)",
+    "memo": "Les dorsaux écartent, les palmaires rapprochent.",
+    "nombre": 8,
+    "os_d_origine_selon_l_atlas": [
+     "Quatrième métacarpien",
+     "Troisième métacarpien",
+     "Deuxième métacarpien",
+     "Premier métacarpien",
+     "Cinquième métacarpien"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-ulnaire",
+     "nom": "Nerf ulnaire"
+    },
+    "profondeur_sous_la_peau_mm": 1.8
+   }
+  },
+  {
+   "id": "interosseux-palmaires",
+   "nom": "Interosseux palmaires",
+   "latin": "Musculi interossei palmares",
+   "anglais": "Palmar interossei muscles",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Muscles interosseux palmaires",
+   "ta2": "2534",
+   "loge": "Muscles intrinsèques de la main",
+   "profondeur": 2,
+   "connu": {
+    "nerf_selon_l_atlas": {
+     "id": "nerf-ulnaire",
+     "nom": "Nerf ulnaire"
+    },
+    "profondeur_sous_la_peau_mm": 7.4
+   }
+  },
+  {
+   "id": "opposant-pouce",
+   "nom": "Opposant du pouce",
+   "latin": "Musculus opponens pollicis",
+   "anglais": "Opponens pollicis muscle",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Muscle opposant du pouce",
+   "ta2": "2525",
+   "loge": "Muscles intrinsèques de la main",
+   "profondeur": 1,
+   "connu": {
+    "action": "Oppose le pouce aux autres doigts (la pince)",
+    "origine": "Rétinaculum des fléchisseurs et trapèze",
+    "terminaison": "Bord latéral du 1er métacarpien",
+    "innervation": "Nerf médian (C8–T1)",
+    "anecdote": "L'opposition du pouce est l'un des gestes qui ont fait la main humaine.",
+    "nerf_selon_l_atlas": {
+     "id": "nerf-median",
+     "nom": "Nerf médian"
+    },
+    "profondeur_sous_la_peau_mm": 4.7
+   }
+  }
+ ]
+}

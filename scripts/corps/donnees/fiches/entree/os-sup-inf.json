@@ -1,0 +1,1419 @@
+{
+ "lot": "os-sup-inf",
+ "couche": "os",
+ "structures": [
+  {
+   "id": "radius",
+   "nom": "Radius",
+   "latin": "Radius",
+   "anglais": "Radius",
+   "region": "avant-bras",
+   "rang": 0,
+   "officiel": "Radius",
+   "ta2": "1210",
+   "connu": {
+    "sorte": "long",
+    "articulations": [
+     "humerus",
+     "ulna",
+     "scaphoide",
+     "lunatum"
+    ],
+    "memo": "Côté pouce : il tourne autour de l'ulna quand la main se retourne."
+   }
+  },
+  {
+   "id": "ulna",
+   "nom": "Ulna",
+   "latin": "Ulna",
+   "anglais": "Ulna",
+   "region": "avant-bras",
+   "rang": 0,
+   "officiel": "Ulna",
+   "ta2": "1230",
+   "connu": {
+    "noms": [
+     "cubitus"
+    ],
+    "sorte": "long",
+    "articulations": [
+     "humerus",
+     "radius"
+    ],
+    "memo": "Côté petit doigt ; son olécrâne fait la pointe du coude."
+   }
+  },
+  {
+   "id": "humerus",
+   "nom": "Humérus",
+   "latin": "Humerus",
+   "anglais": "Humerus",
+   "region": "bras",
+   "rang": 0,
+   "officiel": "Humérus",
+   "ta2": "1180",
+   "connu": {
+    "sorte": "long",
+    "articulations": [
+     "scapula",
+     "radius",
+     "ulna"
+    ],
+    "memo": "L'os du bras.",
+    "anecdote": "Le choc électrique du coude vient du nerf ulnaire, qui passe derrière son épicondyle médial."
+   }
+  },
+  {
+   "id": "femur",
+   "nom": "Fémur",
+   "latin": "Os femoris",
+   "anglais": "Femur",
+   "region": "cuisse",
+   "rang": 0,
+   "officiel": "Fémur",
+   "ta2": "1360",
+   "connu": {
+    "sorte": "long",
+    "articulations": [
+     "ilium",
+     "ischium",
+     "pubis",
+     "patella",
+     "tibia"
+    ],
+    "memo": "L'os le plus long et le plus solide du corps : environ un quart de la taille."
+   }
+  },
+  {
+   "id": "patella",
+   "nom": "Patella",
+   "latin": "Patella",
+   "anglais": "Patella",
+   "region": "cuisse",
+   "rang": 0,
+   "officiel": "Patella",
+   "ta2": "1390",
+   "connu": {
+    "noms": [
+     "rotule"
+    ],
+    "sorte": "sesamoide",
+    "articulations": [
+     "femur"
+    ],
+    "memo": "L'ancienne rotule : le plus gros os sésamoïde, pris dans le tendon du quadriceps."
+   }
+  },
+  {
+   "id": "clavicule",
+   "nom": "Clavicule",
+   "latin": "Clavicula",
+   "anglais": "Clavicle",
+   "region": "epaule",
+   "rang": 0,
+   "officiel": "Clavicule",
+   "ta2": "1168",
+   "connu": {
+    "sorte": "long",
+    "articulations": [
+     "sternum",
+     "scapula"
+    ],
+    "memo": "Le seul os long horizontal du corps.",
+    "anecdote": "C'est l'os le plus souvent fracturé, en tombant sur l'épaule ou la main tendue."
+   }
+  },
+  {
+   "id": "scapula",
+   "nom": "Scapula",
+   "latin": "Scapula",
+   "anglais": "Scapula",
+   "region": "epaule",
+   "rang": 0,
+   "officiel": "Scapula",
+   "ta2": "1143",
+   "connu": {
+    "noms": [
+     "omoplate"
+    ],
+    "sorte": "plat",
+    "articulations": [
+     "clavicule",
+     "humerus"
+    ],
+    "memo": "L'ancienne omoplate : un triangle plat qui glisse sur le dos du thorax."
+   }
+  },
+  {
+   "id": "tibia",
+   "nom": "Tibia",
+   "latin": "Tibia",
+   "anglais": "Tibia",
+   "region": "jambe",
+   "rang": 0,
+   "officiel": "Tibia",
+   "ta2": "1397",
+   "connu": {
+    "sorte": "long",
+    "articulations": [
+     "femur",
+     "fibula",
+     "talus"
+    ],
+    "memo": "Sa face médiale est juste sous la peau : c'est l'os qu'on se cogne."
+   }
+  },
+  {
+   "id": "fibula",
+   "nom": "Fibula",
+   "latin": "Fibula",
+   "anglais": "Fibula",
+   "region": "jambe",
+   "rang": 1,
+   "officiel": "Fibula",
+   "ta2": "1427",
+   "connu": {
+    "noms": [
+     "péroné"
+    ],
+    "sorte": "long",
+    "articulations": [
+     "tibia",
+     "talus"
+    ],
+    "memo": "L'ancien péroné, grêle et en dehors ; sa pointe fait la malléole latérale."
+   }
+  },
+  {
+   "id": "metacarpiens",
+   "nom": "Métacarpiens",
+   "latin": "Ossa metacarpi",
+   "anglais": "Metacarpals",
+   "region": "main",
+   "rang": 1,
+   "connu": {
+    "sorte": "long",
+    "articulations": [
+     "os-trapeze",
+     "trapezoide",
+     "capitatum",
+     "hamatum",
+     "phalanges-proximales"
+    ],
+    "memo": "Cinq par main : les os de la paume.",
+    "nombre": 10,
+    "membres": [
+     {
+      "id": "premier-metacarpien",
+      "nom": "Premier métacarpien"
+     },
+     {
+      "id": "deuxieme-metacarpien",
+      "nom": "Deuxième métacarpien"
+     },
+     {
+      "id": "troisieme-metacarpien",
+      "nom": "Troisième métacarpien"
+     },
+     {
+      "id": "quatrieme-metacarpien",
+      "nom": "Quatrième métacarpien"
+     },
+     {
+      "id": "cinquieme-metacarpien",
+      "nom": "Cinquième métacarpien"
+     }
+    ]
+   }
+  },
+  {
+   "id": "phalanges-distales",
+   "nom": "Phalanges distales",
+   "latin": "Phalanges distales",
+   "anglais": "Distal phalanges",
+   "region": "main",
+   "rang": 1,
+   "connu": {
+    "sorte": "long",
+    "articulations": [
+     "phalanges-moyennes",
+     "phalanges-proximales"
+    ],
+    "memo": "Celles qui portent les ongles.",
+    "nombre": 10,
+    "membres": [
+     {
+      "id": "phalange-distale-du-premier-doigt-de-la-main",
+      "nom": "Phalange distale du premier doigt de la main"
+     },
+     {
+      "id": "phalange-distale-du-deuxieme-doigt-de-la-main",
+      "nom": "Phalange distale du deuxième doigt de la main"
+     },
+     {
+      "id": "phalange-distale-du-troisieme-doigt-de-la-main",
+      "nom": "Phalange distale du troisième doigt de la main"
+     },
+     {
+      "id": "phalange-distale-du-quatrieme-doigt-de-la-main",
+      "nom": "Phalange distale du quatrième doigt de la main"
+     },
+     {
+      "id": "phalange-distale-du-cinquieme-doigt-de-la-main",
+      "nom": "Phalange distale du cinquième doigt de la main"
+     }
+    ]
+   }
+  },
+  {
+   "id": "phalanges-proximales",
+   "nom": "Phalanges proximales",
+   "latin": "Phalanges proximales",
+   "anglais": "Proximal phalanges",
+   "region": "main",
+   "rang": 1,
+   "connu": {
+    "sorte": "long",
+    "articulations": [
+     "metacarpiens",
+     "phalanges-moyennes",
+     "phalanges-distales"
+    ],
+    "memo": "La première phalange de chaque doigt.",
+    "nombre": 10,
+    "membres": [
+     {
+      "id": "phalange-proximale-du-premier-doigt-de-la-main",
+      "nom": "Phalange proximale du premier doigt de la main"
+     },
+     {
+      "id": "phalange-proximale-du-deuxieme-doigt-de-la-main",
+      "nom": "Phalange proximale du deuxième doigt de la main"
+     },
+     {
+      "id": "phalange-proximale-du-troisieme-doigt-de-la-main",
+      "nom": "Phalange proximale du troisième doigt de la main"
+     },
+     {
+      "id": "phalange-proximale-du-quatrieme-doigt-de-la-main",
+      "nom": "Phalange proximale du quatrième doigt de la main"
+     },
+     {
+      "id": "phalange-proximale-du-cinquieme-doigt-de-la-main",
+      "nom": "Phalange proximale du cinquième doigt de la main"
+     }
+    ]
+   }
+  },
+  {
+   "id": "calcaneus",
+   "nom": "Calcanéus",
+   "latin": "Calcaneus",
+   "anglais": "Calcaneus",
+   "region": "pied",
+   "rang": 1,
+   "officiel": "Calcaneus",
+   "ta2": "1468",
+   "connu": {
+    "noms": [
+     "calcanéum",
+     "os du talon"
+    ],
+    "sorte": "court",
+    "articulations": [
+     "talus",
+     "cuboide"
+    ],
+    "memo": "L'os du talon, le plus gros du pied."
+   }
+  },
+  {
+   "id": "metatarsiens",
+   "nom": "Métatarsiens",
+   "latin": "Ossa metatarsi",
+   "anglais": "Metatarsals",
+   "region": "pied",
+   "rang": 1,
+   "connu": {
+    "sorte": "long",
+    "articulations": [
+     "cuneiformes",
+     "cuboide",
+     "phalanges-pied"
+    ],
+    "memo": "Cinq par pied : leur tête forme la plante de l'avant-pied.",
+    "nombre": 10,
+    "membres": [
+     {
+      "id": "premier-metatarsien",
+      "nom": "Premier métatarsien"
+     },
+     {
+      "id": "deuxieme-os-metatarsien",
+      "nom": "Deuxième os métatarsien"
+     },
+     {
+      "id": "troisieme-metatarsien",
+      "nom": "Troisième métatarsien"
+     },
+     {
+      "id": "quatrieme-metatarsien",
+      "nom": "Quatrième métatarsien"
+     },
+     {
+      "id": "cinquieme-metatarsien",
+      "nom": "Cinquième métatarsien"
+     }
+    ]
+   }
+  },
+  {
+   "id": "phalanges-pied",
+   "nom": "Phalanges du pied",
+   "latin": "Phalanges digitorum pedis",
+   "anglais": "Phalanges of the foot",
+   "region": "pied",
+   "rang": 1,
+   "connu": {
+    "noms": [
+     "phalanges des orteils"
+    ],
+    "sorte": "long",
+    "articulations": [
+     "metatarsiens"
+    ],
+    "memo": "Quatorze par pied : deux pour l'hallux, trois pour chacun des autres orteils.",
+    "nombre": 28,
+    "membres": [
+     {
+      "id": "phalange-proximale-du-premier-doigt-de-pied",
+      "nom": "Phalange proximale du premier doigt de pied"
+     },
+     {
+      "id": "phalange-proximale-du-deuxieme-doigt-de-pied",
+      "nom": "Phalange proximale du deuxième doigt de pied"
+     },
+     {
+      "id": "phalange-proximale-du-troisieme-doigt-de-pied",
+      "nom": "Phalange proximale du troisième doigt de pied"
+     },
+     {
+      "id": "phalange-proximale-du-quatrieme-doigt-de-pied",
+      "nom": "Phalange proximale du quatrième doigt de pied"
+     },
+     {
+      "id": "phalange-proximale-du-cinquieme-doigt-de-pied",
+      "nom": "Phalange proximale du cinquième doigt de pied"
+     },
+     {
+      "id": "phalange-moyenne-du-deuxieme-doigt-de-pied",
+      "nom": "Phalange moyenne du deuxième doigt de pied"
+     },
+     {
+      "id": "phalange-moyenne-du-troiseme-doigt-de-pied",
+      "nom": "Phalange moyenne du troisème doigt de pied"
+     },
+     {
+      "id": "phalange-moyenne-du-quatrieme-doigt-de-pied",
+      "nom": "Phalange moyenne du quatrième doigt de pied"
+     },
+     {
+      "id": "phalange-moyenne-du-cinqueme-doigt-de-pied",
+      "nom": "Phalange moyenne du cinquème doigt de pied"
+     },
+     {
+      "id": "phalange-distale-du-premier-doigt-de-pied",
+      "nom": "Phalange distale du premier doigt de pied"
+     },
+     {
+      "id": "phalange-distale-du-deuxieme-doigt-de-pied",
+      "nom": "Phalange distale du deuxième doigt de pied"
+     },
+     {
+      "id": "phalange-distale-du-troisieme-doigt-de-pied",
+      "nom": "Phalange distale du troisième doigt de pied"
+     },
+     {
+      "id": "phalange-distale-du-quatrieme-doigt-de-pied",
+      "nom": "Phalange distale du quatrième doigt de pied"
+     },
+     {
+      "id": "phalange-distale-du-cinquieme-doigt-de-pied",
+      "nom": "Phalange distale du cinquième doigt de pied"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cinquieme-metacarpien",
+   "nom": "Cinquième métacarpien",
+   "latin": "Os quintum metacarpi",
+   "anglais": "Fifth metacarpal bone",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Cinquième métacarpien",
+   "ta2": "1265*5",
+   "connu": {
+    "ensemble": {
+     "id": "metacarpiens",
+     "nom": "Métacarpiens"
+    }
+   }
+  },
+  {
+   "id": "deuxieme-metacarpien",
+   "nom": "Deuxième métacarpien",
+   "latin": "Os secundum metacarpi",
+   "anglais": "Second metacarpal bone",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Deuxième métacarpien",
+   "ta2": "1265*2",
+   "connu": {
+    "ensemble": {
+     "id": "metacarpiens",
+     "nom": "Métacarpiens"
+    }
+   }
+  },
+  {
+   "id": "phalanges-moyennes",
+   "nom": "Phalanges moyennes",
+   "latin": "Phalanges mediae",
+   "anglais": "Middle phalanges",
+   "region": "main",
+   "rang": 2,
+   "connu": {
+    "sorte": "long",
+    "articulations": [
+     "phalanges-proximales",
+     "phalanges-distales"
+    ],
+    "memo": "Le pouce n'en a pas : il n'a que deux phalanges.",
+    "nombre": 8,
+    "membres": [
+     {
+      "id": "phalange-moyenne-du-deuxieme-doigt-de-la-main",
+      "nom": "Phalange moyenne du deuxième doigt de la main"
+     },
+     {
+      "id": "phalange-moyenne-du-troisieme-doigt-de-la-main",
+      "nom": "Phalange moyenne du troisième doigt de la main"
+     },
+     {
+      "id": "phalange-moyenne-du-quatrieme-doigt-de-la-main",
+      "nom": "Phalange moyenne du quatrième doigt de la main"
+     },
+     {
+      "id": "phalange-moyenne-du-cinquieme-doigt-de-la-main",
+      "nom": "Phalange moyenne du cinquième doigt de la main"
+     }
+    ]
+   }
+  },
+  {
+   "id": "premier-metacarpien",
+   "nom": "Premier métacarpien",
+   "latin": "Os primum metarcapi",
+   "anglais": "First metacarpal bone",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Premier métacarpien",
+   "ta2": "1265*1",
+   "connu": {
+    "ensemble": {
+     "id": "metacarpiens",
+     "nom": "Métacarpiens"
+    }
+   }
+  },
+  {
+   "id": "quatrieme-metacarpien",
+   "nom": "Quatrième métacarpien",
+   "latin": "Os quartum metacarpi",
+   "anglais": "Fourth metacarpal bone",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Quatrième métacarpien",
+   "ta2": "1265*4",
+   "connu": {
+    "ensemble": {
+     "id": "metacarpiens",
+     "nom": "Métacarpiens"
+    }
+   }
+  },
+  {
+   "id": "scaphoide",
+   "nom": "Scaphoïde",
+   "latin": "Os scaphoideum",
+   "anglais": "Scaphoid bone",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Os scaphoîde",
+   "ta2": "1250",
+   "connu": {
+    "sorte": "court",
+    "articulations": [
+     "radius",
+     "lunatum",
+     "os-trapeze",
+     "trapezoide",
+     "capitatum"
+    ],
+    "memo": "Le plus souvent fracturé des os du poignet, en tombant sur la main."
+   }
+  },
+  {
+   "id": "troisieme-metacarpien",
+   "nom": "Troisième métacarpien",
+   "latin": "Os tertium metacarpi",
+   "anglais": "Third metacarpal bone",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Troisième métacarpien",
+   "ta2": "1269",
+   "connu": {
+    "ensemble": {
+     "id": "metacarpiens",
+     "nom": "Métacarpiens"
+    }
+   }
+  },
+  {
+   "id": "cinquieme-metatarsien",
+   "nom": "Cinquième métatarsien",
+   "latin": "Os quintum metatarsi",
+   "anglais": "Fifth metatarsal bone",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Cinquième métatarsien",
+   "ta2": "1502",
+   "connu": {
+    "ensemble": {
+     "id": "metatarsiens",
+     "nom": "Métatarsiens"
+    }
+   }
+  },
+  {
+   "id": "deuxieme-os-metatarsien",
+   "nom": "Deuxième os métatarsien",
+   "latin": "Os secundum metatarsi",
+   "anglais": "Second metatarsal bone",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Deuxième os métatarsien",
+   "ta2": "1496*2",
+   "connu": {
+    "ensemble": {
+     "id": "metatarsiens",
+     "nom": "Métatarsiens"
+    }
+   }
+  },
+  {
+   "id": "os-cuneiforme-intermediaire",
+   "nom": "Os cunéiforme intermédiaire",
+   "latin": "Os cuneiforme intermedium",
+   "anglais": "Intermediate cuneiform bone",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Os cunéiforme intermédiaire",
+   "ta2": "1487",
+   "connu": {
+    "ensemble": {
+     "id": "cuneiformes",
+     "nom": "Cunéiformes"
+    }
+   }
+  },
+  {
+   "id": "os-cuneiforme-lateral",
+   "nom": "Os cunéiforme latéral",
+   "latin": "Os cuneiforme laterale",
+   "anglais": "Lateral cuneiform bone",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Os cunéiforme latéral",
+   "ta2": "1488",
+   "connu": {
+    "ensemble": {
+     "id": "cuneiformes",
+     "nom": "Cunéiformes"
+    }
+   }
+  },
+  {
+   "id": "os-cuneiforme-medial",
+   "nom": "Os cunéiforme médial",
+   "latin": "Os cuneiforme mediale",
+   "anglais": "Medial cuneiform bone",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Os cunéiforme médial",
+   "ta2": "1486",
+   "connu": {
+    "ensemble": {
+     "id": "cuneiformes",
+     "nom": "Cunéiformes"
+    }
+   }
+  },
+  {
+   "id": "premier-metatarsien",
+   "nom": "Premier métatarsien",
+   "latin": "Os primum metatarsi",
+   "anglais": "First metatarsal bone",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Premier métatarsien",
+   "ta2": "1500",
+   "connu": {
+    "ensemble": {
+     "id": "metatarsiens",
+     "nom": "Métatarsiens"
+    }
+   }
+  },
+  {
+   "id": "quatrieme-metatarsien",
+   "nom": "Quatrième métatarsien",
+   "latin": "Os quatum metatarsi",
+   "anglais": "Fourth metatarsal bone",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Quatrième métatarsien",
+   "ta2": "1496*4",
+   "connu": {
+    "ensemble": {
+     "id": "metatarsiens",
+     "nom": "Métatarsiens"
+    }
+   }
+  },
+  {
+   "id": "talus",
+   "nom": "Talus",
+   "latin": "Os tali",
+   "anglais": "Talus",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Talus",
+   "ta2": "1448",
+   "connu": {
+    "noms": [
+     "astragale"
+    ],
+    "sorte": "court",
+    "articulations": [
+     "tibia",
+     "fibula",
+     "calcaneus",
+     "naviculaire"
+    ],
+    "memo": "Il transmet tout le poids du corps au pied ; aucun muscle ne s'y attache."
+   }
+  },
+  {
+   "id": "troisieme-metatarsien",
+   "nom": "Troisième métatarsien",
+   "latin": "Os tertium metatarsi",
+   "anglais": "Third metatarsal bone",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Troisième métatarsien",
+   "ta2": "1496*3",
+   "connu": {
+    "ensemble": {
+     "id": "metatarsiens",
+     "nom": "Métatarsiens"
+    }
+   }
+  },
+  {
+   "id": "capitatum",
+   "nom": "Capitatum",
+   "latin": "Os capitatum",
+   "anglais": "Capitate bone",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Grand os",
+   "ta2": "1258",
+   "connu": {
+    "noms": [
+     "grand os"
+    ],
+    "sorte": "court",
+    "articulations": [
+     "scaphoide",
+     "lunatum",
+     "trapezoide",
+     "hamatum",
+     "metacarpiens"
+    ],
+    "memo": "Le plus gros os du poignet, au centre."
+   }
+  },
+  {
+   "id": "hamatum",
+   "nom": "Hamatum",
+   "latin": "Os hamatum",
+   "anglais": "Hamate bone",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Os crochu",
+   "ta2": "1259",
+   "connu": {
+    "noms": [
+     "os crochu"
+    ],
+    "sorte": "court",
+    "articulations": [
+     "lunatum",
+     "triquetrum",
+     "capitatum",
+     "metacarpiens"
+    ],
+    "memo": "Reconnaissable à son crochet."
+   }
+  },
+  {
+   "id": "lunatum",
+   "nom": "Lunatum",
+   "latin": "Os lunatum",
+   "anglais": "Lunate bone",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Os semilunaire",
+   "ta2": "1252",
+   "connu": {
+    "noms": [
+     "semi-lunaire"
+    ],
+    "sorte": "court",
+    "articulations": [
+     "radius",
+     "scaphoide",
+     "triquetrum",
+     "capitatum",
+     "hamatum"
+    ],
+    "memo": "En forme de croissant de lune."
+   }
+  },
+  {
+   "id": "phalange-distale-du-cinquieme-doigt-de-la-main",
+   "nom": "Phalange distale du cinquième doigt de la main",
+   "latin": "Phalanx distalis quintum digitorum manus",
+   "anglais": "Distal phalanx of fifth finger of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Phalange distale du cinquième doigt de la main",
+   "ta2": "1279*5",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-distales",
+     "nom": "Phalanges distales"
+    }
+   }
+  },
+  {
+   "id": "phalange-distale-du-deuxieme-doigt-de-la-main",
+   "nom": "Phalange distale du deuxième doigt de la main",
+   "latin": "Phalanx distalis secundum digitorum manus",
+   "anglais": "Distal phalanx of second finger of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Phalange distale du deuxième doigt de la main",
+   "ta2": "1279*2",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-distales",
+     "nom": "Phalanges distales"
+    }
+   }
+  },
+  {
+   "id": "phalange-distale-du-premier-doigt-de-la-main",
+   "nom": "Phalange distale du premier doigt de la main",
+   "latin": "Phalanx distalis primum digitorum manus",
+   "anglais": "Distal phalanx of first finger of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Phalange distale du premier doigt de la main",
+   "ta2": "1279*1",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-distales",
+     "nom": "Phalanges distales"
+    }
+   }
+  },
+  {
+   "id": "phalange-distale-du-quatrieme-doigt-de-la-main",
+   "nom": "Phalange distale du quatrième doigt de la main",
+   "latin": "Phalanx distalis quartum digitorum manus",
+   "anglais": "Distal phalanx of fourth finger of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Phalange distale du quatrième doigt de la main",
+   "ta2": "1279*4",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-distales",
+     "nom": "Phalanges distales"
+    }
+   }
+  },
+  {
+   "id": "phalange-distale-du-troisieme-doigt-de-la-main",
+   "nom": "Phalange distale du troisième doigt de la main",
+   "latin": "Phalanx distalis tertium digitorum manus",
+   "anglais": "Distal phalanx of third finger of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Phalange distale du troisième doigt de la main",
+   "ta2": "1279*3",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-distales",
+     "nom": "Phalanges distales"
+    }
+   }
+  },
+  {
+   "id": "phalange-moyenne-du-cinquieme-doigt-de-la-main",
+   "nom": "Phalange moyenne du cinquième doigt de la main",
+   "latin": "Phalanx media quintum digitorum manus",
+   "anglais": "Middle phalanx of fifth finger of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Phalange moyenne du cinquième doigt de la main",
+   "ta2": "1278*5",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-moyennes",
+     "nom": "Phalanges moyennes"
+    }
+   }
+  },
+  {
+   "id": "phalange-moyenne-du-deuxieme-doigt-de-la-main",
+   "nom": "Phalange moyenne du deuxième doigt de la main",
+   "latin": "Phalanx media scundum digitorum manus",
+   "anglais": "Middle phalanx of second finger of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Phalange moyenne du deuxième doigt de la main",
+   "ta2": "1278*2",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-moyennes",
+     "nom": "Phalanges moyennes"
+    }
+   }
+  },
+  {
+   "id": "phalange-moyenne-du-quatrieme-doigt-de-la-main",
+   "nom": "Phalange moyenne du quatrième doigt de la main",
+   "latin": "Phalanx media quartum digitorum manus",
+   "anglais": "Middle phalanx of fourth finger of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Phalange moyenne du quatrième doigt de la main",
+   "ta2": "1278*4",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-moyennes",
+     "nom": "Phalanges moyennes"
+    }
+   }
+  },
+  {
+   "id": "phalange-moyenne-du-troisieme-doigt-de-la-main",
+   "nom": "Phalange moyenne du troisième doigt de la main",
+   "latin": "Phalanx media tertium digitorum manus",
+   "anglais": "Middle phalanx of third finger of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Phalange moyenne du troisième doigt de la main",
+   "ta2": "1278*3",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-moyennes",
+     "nom": "Phalanges moyennes"
+    }
+   }
+  },
+  {
+   "id": "phalange-proximale-du-cinquieme-doigt-de-la-main",
+   "nom": "Phalange proximale du cinquième doigt de la main",
+   "latin": "Phalanx proximalis quintum digitorum manus",
+   "anglais": "Proximal phalanx of fifth finger of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Phalange proximale du cinquième doigt de la main",
+   "ta2": "1277*5",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-proximales",
+     "nom": "Phalanges proximales"
+    }
+   }
+  },
+  {
+   "id": "phalange-proximale-du-deuxieme-doigt-de-la-main",
+   "nom": "Phalange proximale du deuxième doigt de la main",
+   "latin": "Phalanx proximalis secundum digitorum manus",
+   "anglais": "Proximal phalanx of second finger of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Phalange proximale du deuxième doigt de la main",
+   "ta2": "1277*2",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-proximales",
+     "nom": "Phalanges proximales"
+    }
+   }
+  },
+  {
+   "id": "phalange-proximale-du-premier-doigt-de-la-main",
+   "nom": "Phalange proximale du premier doigt de la main",
+   "latin": "Phalanx proximalis primum digitorum manus",
+   "anglais": "Proximal phalanx of first finger of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Phalange proximale du premier doigt de la main",
+   "ta2": "1277*1",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-proximales",
+     "nom": "Phalanges proximales"
+    }
+   }
+  },
+  {
+   "id": "phalange-proximale-du-quatrieme-doigt-de-la-main",
+   "nom": "Phalange proximale du quatrième doigt de la main",
+   "latin": "Phalanx proximalis quartum digitorum manus",
+   "anglais": "Proximal phalanx of fourth finger of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Phalange proximale du quatrième doigt de la main",
+   "ta2": "1277*4",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-proximales",
+     "nom": "Phalanges proximales"
+    }
+   }
+  },
+  {
+   "id": "phalange-proximale-du-troisieme-doigt-de-la-main",
+   "nom": "Phalange proximale du troisième doigt de la main",
+   "latin": "Phalanx proximalis tertium digitorum manus",
+   "anglais": "Proximal phalanx of third finger of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Phalange proximale du troisième doigt de la main",
+   "ta2": "1277*3",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-proximales",
+     "nom": "Phalanges proximales"
+    }
+   }
+  },
+  {
+   "id": "pisiforme",
+   "nom": "Pisiforme",
+   "latin": "Os pisiforme",
+   "anglais": "Pisiform bone",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Os pisiforme",
+   "ta2": "1254",
+   "connu": {
+    "sorte": "sesamoide",
+    "articulations": [
+     "triquetrum"
+    ],
+    "memo": "Gros comme un petit pois ; il se sent à la base de la paume, côté petit doigt."
+   }
+  },
+  {
+   "id": "os-trapeze",
+   "nom": "Trapèze",
+   "latin": "Os trapezium",
+   "anglais": "Trapezium bone",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Os trapèze",
+   "ta2": "1255",
+   "connu": {
+    "noms": [
+     "os trapèze"
+    ],
+    "sorte": "court",
+    "articulations": [
+     "scaphoide",
+     "trapezoide",
+     "metacarpiens"
+    ],
+    "memo": "À la base du pouce : son articulation en selle permet de l'opposer aux autres doigts."
+   }
+  },
+  {
+   "id": "trapezoide",
+   "nom": "Trapézoïde",
+   "latin": "Os trapezoideum",
+   "anglais": "Trapezoid bone",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Os trapèzoïde",
+   "ta2": "1257",
+   "connu": {
+    "sorte": "court",
+    "articulations": [
+     "scaphoide",
+     "os-trapeze",
+     "capitatum",
+     "metacarpiens"
+    ],
+    "memo": "Le plus petit de la rangée du bas, coincé entre le trapèze et le capitatum."
+   }
+  },
+  {
+   "id": "triquetrum",
+   "nom": "Triquetrum",
+   "latin": "Os triquetrum",
+   "anglais": "Triquetrum bone",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Os pyramidal",
+   "ta2": "1253",
+   "connu": {
+    "noms": [
+     "pyramidal"
+    ],
+    "sorte": "court",
+    "articulations": [
+     "lunatum",
+     "pisiforme",
+     "hamatum"
+    ],
+    "memo": "Trois faces, d'où son nom."
+   }
+  },
+  {
+   "id": "cuboide",
+   "nom": "Cuboïde",
+   "latin": "Os cuboideum",
+   "anglais": "Cuboid bone",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Os cuboïde",
+   "ta2": "1489",
+   "connu": {
+    "sorte": "court",
+    "articulations": [
+     "calcaneus",
+     "naviculaire",
+     "cuneiformes",
+     "metatarsiens"
+    ],
+    "memo": "Le cube du bord externe du pied."
+   }
+  },
+  {
+   "id": "cuneiformes",
+   "nom": "Cunéiformes",
+   "latin": "Ossa cuneiformia",
+   "anglais": "Cuneiforms",
+   "region": "pied",
+   "rang": 3,
+   "connu": {
+    "sorte": "court",
+    "articulations": [
+     "naviculaire",
+     "cuboide",
+     "metatarsiens"
+    ],
+    "memo": "Trois par pied (médial, intermédiaire, latéral), taillés en coin.",
+    "nombre": 6,
+    "membres": [
+     {
+      "id": "os-cuneiforme-medial",
+      "nom": "Os cunéiforme médial"
+     },
+     {
+      "id": "os-cuneiforme-intermediaire",
+      "nom": "Os cunéiforme intermédiaire"
+     },
+     {
+      "id": "os-cuneiforme-lateral",
+      "nom": "Os cunéiforme latéral"
+     }
+    ]
+   }
+  },
+  {
+   "id": "naviculaire",
+   "nom": "Naviculaire",
+   "latin": "Os naviculare",
+   "anglais": "Navicular bone",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Os naviculaire",
+   "ta2": "1484",
+   "connu": {
+    "noms": [
+     "scaphoïde tarsien"
+    ],
+    "sorte": "court",
+    "articulations": [
+     "talus",
+     "cuneiformes",
+     "cuboide"
+    ],
+    "memo": "En forme de petite barque (navis)."
+   }
+  },
+  {
+   "id": "os-sesamoides-du-pied",
+   "nom": "Os sésamoïdes du pied",
+   "latin": "Ossa sesamoidea pedis",
+   "anglais": "Sesamoid bones of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Os sésamoïdes du pied",
+   "ta2": "1514"
+  },
+  {
+   "id": "phalange-distale-du-cinquieme-doigt-de-pied",
+   "nom": "Phalange distale du cinquième doigt de pied",
+   "latin": "Phalanx distalis quintum digitorum pedis",
+   "anglais": "Distal phalanx of fifth finger of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Phalange distale du cinquième doigt de pied",
+   "ta2": "1512*5",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-pied",
+     "nom": "Phalanges du pied"
+    }
+   }
+  },
+  {
+   "id": "phalange-distale-du-deuxieme-doigt-de-pied",
+   "nom": "Phalange distale du deuxième doigt de pied",
+   "latin": "Phalanx distalis secundum digitorum pedis",
+   "anglais": "Distal phalanx of second finger of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Phalange distale du deuxième doigt de pied",
+   "ta2": "1512*2",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-pied",
+     "nom": "Phalanges du pied"
+    }
+   }
+  },
+  {
+   "id": "phalange-distale-du-premier-doigt-de-pied",
+   "nom": "Phalange distale du premier doigt de pied",
+   "latin": "Phalanx distalis primum digitorum pedis",
+   "anglais": "Distal phalanx of first finger of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Phalange distale du premier doigt de pied",
+   "ta2": "1512*1",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-pied",
+     "nom": "Phalanges du pied"
+    }
+   }
+  },
+  {
+   "id": "phalange-distale-du-quatrieme-doigt-de-pied",
+   "nom": "Phalange distale du quatrième doigt de pied",
+   "latin": "Phalanx distalis quartum digitorum pedis",
+   "anglais": "Distal phalanx of fourth finger of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Phalange distale du quatrième doigt de pied",
+   "ta2": "1512*4",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-pied",
+     "nom": "Phalanges du pied"
+    }
+   }
+  },
+  {
+   "id": "phalange-distale-du-troisieme-doigt-de-pied",
+   "nom": "Phalange distale du troisième doigt de pied",
+   "latin": "Phalanx distalis tertium digitorum pedis",
+   "anglais": "Distal phalanx of third finger of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Phalange distale du troisième doigt de pied",
+   "ta2": "1512*3",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-pied",
+     "nom": "Phalanges du pied"
+    }
+   }
+  },
+  {
+   "id": "phalange-moyenne-du-cinqueme-doigt-de-pied",
+   "nom": "Phalange moyenne du cinquème doigt de pied",
+   "latin": "Phalanx media quintum digitorum pedis",
+   "anglais": "Middle phalanx of fifth finger of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Phalange moyenne du cinquème doigt de pied",
+   "ta2": "1511*5",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-pied",
+     "nom": "Phalanges du pied"
+    }
+   }
+  },
+  {
+   "id": "phalange-moyenne-du-deuxieme-doigt-de-pied",
+   "nom": "Phalange moyenne du deuxième doigt de pied",
+   "latin": "Phalanx media secundum digitorum pedis",
+   "anglais": "Middle phalanx of second finger of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Phalange moyenne du deuxième doigt de pied",
+   "ta2": "1511*2",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-pied",
+     "nom": "Phalanges du pied"
+    }
+   }
+  },
+  {
+   "id": "phalange-moyenne-du-quatrieme-doigt-de-pied",
+   "nom": "Phalange moyenne du quatrième doigt de pied",
+   "latin": "Phalanx media quartum digitorum pedis",
+   "anglais": "Middle phalanx of fourth finger of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Phalange moyenne du quatrième doigt de pied",
+   "ta2": "1511*4",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-pied",
+     "nom": "Phalanges du pied"
+    }
+   }
+  },
+  {
+   "id": "phalange-moyenne-du-troiseme-doigt-de-pied",
+   "nom": "Phalange moyenne du troisème doigt de pied",
+   "latin": "Phalanx media tertium digitorum pedis",
+   "anglais": "Middle phalanx of third finger of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Phalange moyenne du troisème doigt de pied",
+   "ta2": "1511*3",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-pied",
+     "nom": "Phalanges du pied"
+    }
+   }
+  },
+  {
+   "id": "phalange-proximale-du-cinquieme-doigt-de-pied",
+   "nom": "Phalange proximale du cinquième doigt de pied",
+   "latin": "Phalanx proximalis quintum digitorum pedis",
+   "anglais": "Proximal phalanx of fifth finger of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Phalange proximale du cinquième doigt de pied",
+   "ta2": "1510*5",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-pied",
+     "nom": "Phalanges du pied"
+    }
+   }
+  },
+  {
+   "id": "phalange-proximale-du-deuxieme-doigt-de-pied",
+   "nom": "Phalange proximale du deuxième doigt de pied",
+   "latin": "Phalanx proximalis secundum digitorum pedis",
+   "anglais": "Proximal phalanx of second finger of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Phalange proximale du deuxième doigt de pied",
+   "ta2": "1510*2",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-pied",
+     "nom": "Phalanges du pied"
+    }
+   }
+  },
+  {
+   "id": "phalange-proximale-du-premier-doigt-de-pied",
+   "nom": "Phalange proximale du premier doigt de pied",
+   "latin": "Phalanx proximalis primum digitorum pedis",
+   "anglais": "Proximal phalanx of first finger of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Phalange proximale du premier doigt de pied",
+   "ta2": "1510*1",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-pied",
+     "nom": "Phalanges du pied"
+    }
+   }
+  },
+  {
+   "id": "phalange-proximale-du-quatrieme-doigt-de-pied",
+   "nom": "Phalange proximale du quatrième doigt de pied",
+   "latin": "Phalanx proximalis quartum digitorum pedis",
+   "anglais": "Proximal phalanx of fourth finger of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Phalange proximale du quatrième doigt de pied",
+   "ta2": "1510*4",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-pied",
+     "nom": "Phalanges du pied"
+    }
+   }
+  },
+  {
+   "id": "phalange-proximale-du-troisieme-doigt-de-pied",
+   "nom": "Phalange proximale du troisième doigt de pied",
+   "latin": "Phalanx proximalis tertium digitorum pedis",
+   "anglais": "Proximal phalanx of third finger of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Phalange proximale du troisième doigt de pied",
+   "ta2": "1510*3",
+   "connu": {
+    "ensemble": {
+     "id": "phalanges-pied",
+     "nom": "Phalanges du pied"
+    }
+   }
+  }
+ ]
+}

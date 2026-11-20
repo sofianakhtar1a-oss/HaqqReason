@@ -1,0 +1,1414 @@
+{
+ "lot": "muscle-inf",
+ "couche": "muscle",
+ "structures": [
+  {
+   "id": "grand-fessier",
+   "nom": "Grand fessier",
+   "latin": "Musculus gluteus maximus",
+   "anglais": "Gluteus maximus muscle",
+   "region": "hanche",
+   "rang": 0,
+   "officiel": "Muscle grand fessier",
+   "ta2": "2598",
+   "loge": "Muscles fessiers superficiels",
+   "connu": {
+    "noms": [
+     "fessier",
+     "grand glutéal"
+    ],
+    "action": "Étend la cuisse (se relever, monter, courir) et la tourne en dehors",
+    "origine": "Face postérieure de l'ilium, sacrum, coccyx",
+    "terminaison": "Tractus ilio-tibial et tubérosité glutéale du fémur",
+    "innervation": "Nerf glutéal inférieur (L5–S2)",
+    "memo": "Le muscle le plus lourd du corps.",
+    "anecdote": "Sa taille est propre à l'humain : il nous tient debout et nous fait courir.",
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Fémur"
+    ],
+    "profondeur_sous_la_peau_mm": 15.9
+   }
+  },
+  {
+   "id": "gastrocnemien",
+   "nom": "Gastrocnémien",
+   "latin": "Musculus gastrocnemius",
+   "anglais": "Gastrocnemius muscle",
+   "region": "jambe",
+   "rang": 0,
+   "officiel": "Muscle gastrocnémien",
+   "ta2": "2657",
+   "loge": "Loge postérieure de la jambe",
+   "connu": {
+    "noms": [
+     "jumeaux",
+     "jumeaux de la jambe",
+     "mollet"
+    ],
+    "action": "Fléchit la plante du pied (se hisser sur la pointe des pieds) ; fléchit le genou",
+    "origine": "Condyles médial et latéral du fémur (deux chefs)",
+    "terminaison": "Tubérosité du calcanéus (tendon calcanéen)",
+    "innervation": "Nerf tibial (S1–S2)",
+    "memo": "Les « jumeaux » qui dessinent le mollet.",
+    "os_d_origine_selon_l_atlas": [
+     "Fémur"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Calcanéus"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-tibial",
+     "nom": "Nerf tibial"
+    },
+    "parties_modelisees": [
+     "Chef latéral du gastrocnémien",
+     "Chef médial du gastrocnémien"
+    ],
+    "profondeur_sous_la_peau_mm": 1.7
+   }
+  },
+  {
+   "id": "biceps-femoral",
+   "nom": "Biceps fémoral",
+   "latin": "Musculus biceps femoris",
+   "anglais": "Biceps femoris muscle",
+   "region": "cuisse",
+   "rang": 1,
+   "officiel": "Muscle biceps fémoral",
+   "ta2": "2638",
+   "loge": "Loge postérieure de la cuisse",
+   "connu": {
+    "noms": [
+     "biceps crural"
+    ],
+    "action": "Fléchit le genou ; le chef long étend la hanche",
+    "origine": "Chef long : tubérosité ischiatique ; chef court : ligne âpre du fémur",
+    "terminaison": "Tête de la fibula",
+    "innervation": "Nerf sciatique (L5–S2)",
+    "memo": "L'ischio-jambier du dehors.",
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Fibula",
+     "Fémur"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-fibulaire-commun",
+     "nom": "Nerf fibulaire commun"
+    },
+    "parties_modelisees": [
+     "Chef court du biceps fémoral",
+     "Chef long du biceps fémoral"
+    ],
+    "profondeur_sous_la_peau_mm": 3.5
+   }
+  },
+  {
+   "id": "droit-femoral",
+   "nom": "Droit fémoral",
+   "latin": "Musculus rectus femoris",
+   "anglais": "Rectus femoris muscle",
+   "region": "cuisse",
+   "rang": 1,
+   "officiel": "Muscle droit fémoral",
+   "ta2": "2614",
+   "loge": "Loge antérieure de la cuisse",
+   "connu": {
+    "noms": [
+     "droit antérieur",
+     "droit antérieur de la cuisse"
+    ],
+    "action": "Étend le genou ; fléchit la hanche",
+    "origine": "Épine iliaque antéro-inférieure et sourcil de l'acétabulum",
+    "terminaison": "Patella puis tubérosité tibiale (tendon quadricipital, ligament patellaire)",
+    "innervation": "Nerf fémoral (L2–L4)",
+    "memo": "Le seul chef du quadriceps qui croise la hanche : le muscle du tir au but.",
+    "os_d_origine_selon_l_atlas": [
+     "Patella",
+     "Os coxal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Tibia",
+     "Patella"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-femoral",
+     "nom": "Nerf fémoral"
+    },
+    "profondeur_sous_la_peau_mm": 4.3
+   }
+  },
+  {
+   "id": "long-adducteur",
+   "nom": "Long adducteur",
+   "latin": "Adductor longus",
+   "anglais": "Adductor longus",
+   "region": "cuisse",
+   "rang": 1,
+   "officiel": "Long adducteur",
+   "ta2": "2628",
+   "loge": "Loge médiale de la cuisse",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "moyen adducteur",
+     "adducteurs"
+    ],
+    "action": "Rapproche la cuisse (serrer les genoux)",
+    "origine": "Corps du pubis",
+    "terminaison": "Tiers moyen de la ligne âpre du fémur",
+    "innervation": "Nerf obturateur (L2–L4)",
+    "memo": "Il borde en dedans le triangle fémoral.",
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Fémur"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-obturateur",
+     "nom": "Nerf obturateur"
+    },
+    "profondeur_sous_la_peau_mm": 2.8
+   }
+  },
+  {
+   "id": "sartorius",
+   "nom": "Sartorius",
+   "latin": "Musculus sartorius",
+   "anglais": "Sartorius muscle",
+   "region": "cuisse",
+   "rang": 1,
+   "officiel": "Muscle sartorius",
+   "ta2": "2610",
+   "loge": "Loge antérieure de la cuisse",
+   "connu": {
+    "noms": [
+     "couturier"
+    ],
+    "action": "Fléchit la hanche et le genou, écarte la cuisse et la tourne en dehors",
+    "origine": "Épine iliaque antéro-supérieure",
+    "terminaison": "Face médiale du tibia (patte d'oie)",
+    "innervation": "Nerf fémoral (L2–L3)",
+    "memo": "Le plus long muscle du corps.",
+    "anecdote": "Il doit son nom au tailleur (sartor), assis en tailleur, justement.",
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Tibia"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-femoral",
+     "nom": "Nerf fémoral"
+    },
+    "profondeur_sous_la_peau_mm": 1.4
+   }
+  },
+  {
+   "id": "semi-tendineux",
+   "nom": "Semi-tendineux",
+   "latin": "Musculus semitendinosus",
+   "anglais": "Semitendinosus muscle",
+   "region": "cuisse",
+   "rang": 1,
+   "officiel": "Muscle semitendineux",
+   "ta2": "2641",
+   "loge": "Loge postérieure de la cuisse",
+   "connu": {
+    "noms": [
+     "demi-tendineux"
+    ],
+    "action": "Fléchit le genou ; étend la hanche",
+    "origine": "Tubérosité ischiatique",
+    "terminaison": "Face médiale du tibia (patte d'oie)",
+    "innervation": "Nerf sciatique (L5–S2)",
+    "memo": "Sa moitié basse est un long tendon : d'où son nom.",
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Tibia"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-tibial",
+     "nom": "Nerf tibial"
+    },
+    "profondeur_sous_la_peau_mm": 2.6
+   }
+  },
+  {
+   "id": "vaste-lateral",
+   "nom": "Vaste latéral",
+   "latin": "Musculus vastus lateralis",
+   "anglais": "Vastus lateralis muscle",
+   "region": "cuisse",
+   "rang": 1,
+   "officiel": "Muscle vaste latéral",
+   "ta2": "2618",
+   "loge": "Loge antérieure de la cuisse",
+   "connu": {
+    "noms": [
+     "vaste externe"
+    ],
+    "action": "Étend le genou",
+    "origine": "Grand trochanter et ligne âpre (lèvre latérale)",
+    "terminaison": "Patella et tubérosité tibiale (tendon quadricipital)",
+    "innervation": "Nerf fémoral (L2–L4)",
+    "memo": "Le plus gros des quatre chefs du quadriceps.",
+    "os_d_origine_selon_l_atlas": [
+     "Patella",
+     "Fémur"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Tibia",
+     "Patella"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-femoral",
+     "nom": "Nerf fémoral"
+    },
+    "profondeur_sous_la_peau_mm": 9.7
+   }
+  },
+  {
+   "id": "vaste-medial",
+   "nom": "Vaste médial",
+   "latin": "Musculus vastus medialis",
+   "anglais": "Vastus medialis muscle",
+   "region": "cuisse",
+   "rang": 1,
+   "officiel": "Muscle vaste médial",
+   "ta2": "2620",
+   "loge": "Loge antérieure de la cuisse",
+   "connu": {
+    "noms": [
+     "vaste interne"
+    ],
+    "action": "Étend le genou ; stabilise la patella",
+    "origine": "Ligne âpre (lèvre médiale)",
+    "terminaison": "Patella et tubérosité tibiale",
+    "innervation": "Nerf fémoral (L2–L4)",
+    "memo": "La « goutte d'eau » au-dessus du genou, en dedans.",
+    "os_d_origine_selon_l_atlas": [
+     "Patella",
+     "Fémur"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Tibia",
+     "Patella"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-femoral",
+     "nom": "Nerf fémoral"
+    },
+    "profondeur_sous_la_peau_mm": 3.8
+   }
+  },
+  {
+   "id": "moyen-fessier",
+   "nom": "Moyen fessier",
+   "latin": "Musculus gluteus medius",
+   "anglais": "Gluteus medius muscle",
+   "region": "hanche",
+   "rang": 1,
+   "officiel": "Muscle moyen fessier",
+   "ta2": "2599",
+   "loge": "Muscles fessiers superficiels",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "moyen glutéal"
+    ],
+    "action": "Écarte la cuisse ; garde le bassin horizontal quand on tient sur une jambe",
+    "origine": "Face externe de l'ilium",
+    "terminaison": "Grand trochanter du fémur",
+    "innervation": "Nerf glutéal supérieur (L4–S1)",
+    "memo": "Quand il est faible, le bassin bascule à chaque pas (signe de Trendelenburg).",
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Fémur"
+    ],
+    "profondeur_sous_la_peau_mm": 11.7
+   }
+  },
+  {
+   "id": "soleaire",
+   "nom": "Soléaire",
+   "latin": "Musculus soleus",
+   "anglais": "Soleus muscle",
+   "region": "jambe",
+   "rang": 1,
+   "officiel": "Muscle soléaire",
+   "ta2": "2660",
+   "loge": "Loge postérieure de la jambe",
+   "profondeur": 1,
+   "connu": {
+    "action": "Fléchit la plante du pied ; tient l'équilibre debout",
+    "origine": "Tête de la fibula et ligne du soléaire du tibia",
+    "terminaison": "Tubérosité du calcanéus (tendon calcanéen)",
+    "innervation": "Nerf tibial (S1–S2)",
+    "memo": "En forme de semelle (solea).",
+    "anecdote": "On l'appelle le deuxième cœur : en se contractant, il fait remonter le sang des jambes.",
+    "os_d_origine_selon_l_atlas": [
+     "Tibia",
+     "Fibula"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Calcanéus"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-tibial",
+     "nom": "Nerf tibial"
+    },
+    "profondeur_sous_la_peau_mm": 6.8
+   }
+  },
+  {
+   "id": "tibial-anterieur",
+   "nom": "Tibial antérieur",
+   "latin": "Musculus tibialis anterior",
+   "anglais": "Tibialis anterior muscle",
+   "region": "jambe",
+   "rang": 1,
+   "officiel": "Muscle tibial antérieur",
+   "ta2": "2644",
+   "loge": "Loge antérieure de la jambe",
+   "connu": {
+    "noms": [
+     "jambier antérieur"
+    ],
+    "action": "Relève le pied (flexion dorsale) et tourne la plante en dedans",
+    "origine": "Condyle latéral et face latérale du tibia",
+    "terminaison": "Cunéiforme médial et base du 1er métatarsien",
+    "innervation": "Nerf fibulaire profond (L4–L5)",
+    "memo": "S'il est paralysé, le pied tombe et accroche le sol (le steppage).",
+    "os_d_origine_selon_l_atlas": [
+     "Tibia"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Premier métatarsien",
+     "Os cunéiforme médial"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-fibulaire-profond",
+     "nom": "Nerf fibulaire profond"
+    },
+    "profondeur_sous_la_peau_mm": 1.4
+   }
+  },
+  {
+   "id": "carre-femoral",
+   "nom": "Carré fémoral",
+   "latin": "Musculus quadratus femoris",
+   "anglais": "Quadratus femoris muscle",
+   "region": "cuisse",
+   "rang": 2,
+   "officiel": "Muscle carré fémoral",
+   "ta2": "2608",
+   "loge": "Muscles fessiers profonds",
+   "profondeur": 1,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Fémur"
+    ],
+    "profondeur_sous_la_peau_mm": 44.9
+   }
+  },
+  {
+   "id": "gracile",
+   "nom": "Gracile",
+   "latin": "Musculus gracilis",
+   "anglais": "Gracilis muscle",
+   "region": "cuisse",
+   "rang": 2,
+   "officiel": "Muscle gracile",
+   "ta2": "2635",
+   "loge": "Loge postérieure de la cuisse",
+   "connu": {
+    "noms": [
+     "droit interne"
+    ],
+    "action": "Rapproche la cuisse ; fléchit le genou",
+    "origine": "Corps et branche inférieure du pubis",
+    "terminaison": "Face médiale du tibia (patte d'oie)",
+    "innervation": "Nerf obturateur (L2–L3)",
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Tibia"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-obturateur",
+     "nom": "Nerf obturateur"
+    },
+    "profondeur_sous_la_peau_mm": 1.1
+   }
+  },
+  {
+   "id": "grand-adducteur",
+   "nom": "Grand adducteur",
+   "latin": "Adductor magnus",
+   "anglais": "Adductor magnus",
+   "region": "cuisse",
+   "rang": 2,
+   "officiel": "Grand adducteur",
+   "ta2": "2630",
+   "loge": "Loge médiale de la cuisse",
+   "profondeur": 1,
+   "connu": {
+    "action": "Rapproche la cuisse ; sa partie ischiatique l'étend",
+    "origine": "Branche ischio-pubienne et tubérosité ischiatique",
+    "terminaison": "Ligne âpre et tubercule de l'adducteur du fémur",
+    "innervation": "Nerfs obturateur et sciatique (L2–L4)",
+    "memo": "Le plus gros des adducteurs, innervé par deux nerfs.",
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Fémur"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-obturateur",
+     "nom": "Nerf obturateur"
+    },
+    "profondeur_sous_la_peau_mm": 11.6
+   }
+  },
+  {
+   "id": "semi-membraneux",
+   "nom": "Semi-membraneux",
+   "latin": "Musculus semimembranosus",
+   "anglais": "Semimembranosus muscle",
+   "region": "cuisse",
+   "rang": 2,
+   "officiel": "Muscle semimembraneux",
+   "ta2": "2642",
+   "loge": "Loge postérieure de la cuisse",
+   "connu": {
+    "noms": [
+     "demi-membraneux"
+    ],
+    "action": "Fléchit le genou ; étend la hanche",
+    "origine": "Tubérosité ischiatique",
+    "terminaison": "Condyle médial du tibia, en arrière",
+    "innervation": "Nerf sciatique (L5–S2)",
+    "memo": "Sa moitié haute est une lame tendineuse : d'où son nom.",
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Tibia"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-tibial",
+     "nom": "Nerf tibial"
+    },
+    "profondeur_sous_la_peau_mm": 4.0
+   }
+  },
+  {
+   "id": "vaste-intermediaire",
+   "nom": "Vaste intermédiaire",
+   "latin": "Musculus vastus intermedius",
+   "anglais": "Vastus intermedius muscle",
+   "region": "cuisse",
+   "rang": 2,
+   "officiel": "Muscle vaste intermédiaire",
+   "ta2": "2619",
+   "loge": "Loge antérieure de la cuisse",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "crural"
+    ],
+    "action": "Étend le genou",
+    "origine": "Faces antérieure et latérale du fémur",
+    "terminaison": "Patella et tubérosité tibiale",
+    "innervation": "Nerf fémoral (L2–L4)",
+    "memo": "Caché sous le droit fémoral.",
+    "os_d_origine_selon_l_atlas": [
+     "Patella",
+     "Fémur"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Tibia",
+     "Patella"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-femoral",
+     "nom": "Nerf fémoral"
+    },
+    "profondeur_sous_la_peau_mm": 19.6
+   }
+  },
+  {
+   "id": "jumeau-inferieur",
+   "nom": "Jumeau inférieur",
+   "latin": "Musculus gemellus inferior",
+   "anglais": "Inferior gemellus muscle",
+   "region": "hanche",
+   "rang": 2,
+   "officiel": "Muscle jumeau inférieur",
+   "ta2": "2607",
+   "loge": "Muscles fessiers profonds",
+   "profondeur": 1,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "profondeur_sous_la_peau_mm": 47.4
+   }
+  },
+  {
+   "id": "jumeau-superieur",
+   "nom": "Jumeau supérieur",
+   "latin": "Musculus gemellus superior",
+   "anglais": "Superior gemellus muscle",
+   "region": "hanche",
+   "rang": 2,
+   "officiel": "Muscle jumeau supérieur",
+   "ta2": "2606",
+   "loge": "Muscles fessiers profonds",
+   "profondeur": 1,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "profondeur_sous_la_peau_mm": 46.9
+   }
+  },
+  {
+   "id": "petit-fessier",
+   "nom": "Petit fessier",
+   "latin": "Musculus gluteus minimus",
+   "anglais": "Gluteus minimus muscle",
+   "region": "hanche",
+   "rang": 2,
+   "officiel": "Muscle petit fessier",
+   "ta2": "2600",
+   "loge": "Muscles fessiers superficiels",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "petit glutéal"
+    ],
+    "action": "Écarte la cuisse et la tourne en dedans ; stabilise le bassin",
+    "origine": "Face externe de l'ilium, sous le moyen fessier",
+    "terminaison": "Grand trochanter",
+    "innervation": "Nerf glutéal supérieur (L4–S1)",
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "profondeur_sous_la_peau_mm": 21.7
+   }
+  },
+  {
+   "id": "tenseur-fascia-lata",
+   "nom": "Tenseur du fascia lata",
+   "latin": "Tensor fasciae latae",
+   "anglais": "Tensor fasciae latae",
+   "region": "hanche",
+   "rang": 2,
+   "officiel": "Muscle tenseur du fascia lata",
+   "ta2": "2602",
+   "loge": "Muscles fessiers superficiels",
+   "connu": {
+    "noms": [
+     "tfl"
+    ],
+    "action": "Tend le fascia lata ; fléchit, écarte et tourne la cuisse en dedans",
+    "origine": "Épine iliaque antéro-supérieure",
+    "terminaison": "Tractus ilio-tibial",
+    "innervation": "Nerf glutéal supérieur (L4–S1)",
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "profondeur_sous_la_peau_mm": 12.8
+   }
+  },
+  {
+   "id": "long-extenseur-orteils",
+   "nom": "Long extenseur des orteils",
+   "latin": "Extensor longus digitorum",
+   "anglais": "Extensor digitorum longus",
+   "region": "jambe",
+   "rang": 2,
+   "officiel": "Muscle long extenseur des orteils",
+   "ta2": "2645",
+   "loge": "Loge antérieure de la jambe",
+   "connu": {
+    "noms": [
+     "extenseur commun des orteils"
+    ],
+    "action": "Relève les orteils et le pied",
+    "origine": "Condyle latéral du tibia, fibula, membrane interosseuse",
+    "terminaison": "Dos des orteils 2 à 5",
+    "innervation": "Nerf fibulaire profond (L5–S1)",
+    "os_d_origine_selon_l_atlas": [
+     "Fibula",
+     "Tibia"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange distale du troisième doigt de pied",
+     "Phalange distale du quatrième doigt de pied",
+     "Phalange distale du cinquième doigt de pied",
+     "Phalange moyenne du cinquème doigt de pied",
+     "Phalange distale du deuxième doigt de pied"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-fibulaire-profond",
+     "nom": "Nerf fibulaire profond"
+    },
+    "profondeur_sous_la_peau_mm": 5.8
+   }
+  },
+  {
+   "id": "long-fibulaire",
+   "nom": "Long fibulaire",
+   "latin": "Musculus fibularis longus",
+   "anglais": "Fibularis longus muscle",
+   "region": "jambe",
+   "rang": 2,
+   "officiel": "Muscle long fibulaire",
+   "ta2": "2652",
+   "loge": "Loge latérale de la jambe",
+   "connu": {
+    "noms": [
+     "long péronier",
+     "long péronier latéral"
+    ],
+    "action": "Tourne la plante en dehors et la fléchit ; soutient la voûte",
+    "origine": "Tête et face latérale de la fibula",
+    "terminaison": "Cunéiforme médial et base du 1er métatarsien, par la plante",
+    "innervation": "Nerf fibulaire superficiel (L5–S1)",
+    "memo": "Son tendon traverse toute la plante du pied.",
+    "os_d_origine_selon_l_atlas": [
+     "Fibula"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-fibulaire-superficiel",
+     "nom": "Nerf fibulaire superficiel"
+    },
+    "profondeur_sous_la_peau_mm": 8.0
+   }
+  },
+  {
+   "id": "plantaire",
+   "nom": "Plantaire",
+   "latin": "Musculus plantaris",
+   "anglais": "Plantaris muscle",
+   "region": "jambe",
+   "rang": 2,
+   "officiel": "Muscle plantaire",
+   "ta2": "2663",
+   "loge": "Loge postérieure de la jambe",
+   "profondeur": 1,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Fémur"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-tibial",
+     "nom": "Nerf tibial"
+    },
+    "profondeur_sous_la_peau_mm": 4.7
+   }
+  },
+  {
+   "id": "adducteur-de-l-hallux",
+   "nom": "Adducteur de l'hallux",
+   "latin": "Adductor hallucis",
+   "anglais": "Adductor hallucis",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Adducteur de l'hallux",
+   "ta2": "2676",
+   "loge": "Muscles intrinsèques du pied",
+   "profondeur": 1,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Quatrième métatarsien",
+     "Cuboïde",
+     "Os sésamoïdes du pied"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Os sésamoïdes du pied",
+     "Cinquième métatarsien",
+     "Quatrième métatarsien",
+     "Troisième métatarsien"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-plantaire-lateral",
+     "nom": "Nerf plantaire latéral"
+    },
+    "parties_modelisees": [
+     "Chef oblique de l'adducteur de l'hallux",
+     "Chef transverse de l'adducteur de l'hallux"
+    ],
+    "profondeur_sous_la_peau_mm": 10.5
+   }
+  },
+  {
+   "id": "carre-plantaire",
+   "nom": "Carré plantaire",
+   "latin": "Musculus quadratus plantae",
+   "anglais": "Quadratus plantae muscle",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Muscle carré plantaire",
+   "ta2": "2684",
+   "loge": "Muscles intrinsèques du pied",
+   "profondeur": 1,
+   "connu": {
+    "nerf_selon_l_atlas": {
+     "id": "nerf-plantaire-lateral",
+     "nom": "Nerf plantaire latéral"
+    },
+    "profondeur_sous_la_peau_mm": 11.7
+   }
+  },
+  {
+   "id": "court-extenseur-de-l-hallux",
+   "nom": "Court extenseur de l'hallux",
+   "latin": "Extensor brevis hallucis",
+   "anglais": "Extensor hallucis brevis",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Court extenseur de l'hallux",
+   "ta2": "2670",
+   "loge": "Muscles intrinsèques du pied",
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Calcanéus"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-fibulaire-profond",
+     "nom": "Nerf fibulaire profond"
+    },
+    "profondeur_sous_la_peau_mm": 1.2
+   }
+  },
+  {
+   "id": "court-flechisseur-de-l-hallux",
+   "nom": "Court fléchisseur de l'hallux",
+   "latin": "Flexor brevis hallucis",
+   "anglais": "Flexor hallucis brevis",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Court fléchisseur de l'hallux",
+   "ta2": "2673",
+   "loge": "Muscles intrinsèques du pied",
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Premier métatarsien",
+     "Os cunéiforme médial"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange proximale du premier doigt de pied"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-plantaire-medial",
+     "nom": "Nerf plantaire médial"
+    },
+    "parties_modelisees": [
+     "Chef latéral du court fléchisseur de l'hallux",
+     "Chef médial du court fléchisseur de l'hallux"
+    ],
+    "profondeur_sous_la_peau_mm": 4.2
+   }
+  },
+  {
+   "id": "flechisseur-du-petit-doigt",
+   "nom": "Fléchisseur du petit doigt",
+   "latin": "Flexor digiti minimi pedis pedis",
+   "anglais": "Flexor digiti minimi of foot",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Fléchisseur du petit doigt",
+   "ta2": "2682",
+   "loge": "Muscles intrinsèques du pied",
+   "connu": {
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange proximale du cinquième doigt de pied"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-plantaire-lateral",
+     "nom": "Nerf plantaire latéral"
+    },
+    "profondeur_sous_la_peau_mm": 3.8
+   }
+  },
+  {
+   "id": "interosseux-dorsaux-du-pied",
+   "nom": "Interosseux dorsaux du pied",
+   "latin": "Musculi interossei dorsales pedis",
+   "anglais": "Dorsal interossei muscles of foot",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Muscles interosseux dorsaux du pied",
+   "ta2": "2686",
+   "loge": "Muscles intrinsèques du pied",
+   "connu": {
+    "nerf_selon_l_atlas": {
+     "id": "nerf-plantaire-lateral",
+     "nom": "Nerf plantaire latéral"
+    },
+    "profondeur_sous_la_peau_mm": 2.6
+   }
+  },
+  {
+   "id": "interosseux-plantaires",
+   "nom": "Interosseux plantaires",
+   "latin": "Musculi interossei plantares",
+   "anglais": "Plantar interossei muscles",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Muscles interosseux plantaires",
+   "ta2": "2687",
+   "loge": "Muscles intrinsèques du pied",
+   "profondeur": 1,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Quatrième métatarsien",
+     "Cinquième métatarsien",
+     "Troisième métatarsien"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange proximale du quatrième doigt de pied",
+     "Phalange proximale du cinquième doigt de pied",
+     "Phalange proximale du troisième doigt de pied"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-plantaire-lateral",
+     "nom": "Nerf plantaire latéral"
+    },
+    "profondeur_sous_la_peau_mm": 8.4
+   }
+  },
+  {
+   "id": "lombricaux-du-pied",
+   "nom": "Lombricaux du pied",
+   "latin": "Musculi lumbricales pedis",
+   "anglais": "Lumbrical muscles of foot",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Muscles lombricaux du pied",
+   "ta2": "2685",
+   "loge": "Muscles intrinsèques du pied",
+   "profondeur": 1,
+   "connu": {
+    "nerf_selon_l_atlas": {
+     "id": "nerf-plantaire-medial",
+     "nom": "Nerf plantaire médial"
+    },
+    "profondeur_sous_la_peau_mm": 10.1
+   }
+  },
+  {
+   "id": "opposant-du-petit-doigt",
+   "nom": "Opposant du petit doigt",
+   "latin": "(Musculus opponens digiti minimi pedis)",
+   "anglais": "Opponens digiti minimi muscle of foot",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Opposant du petit doigt",
+   "ta2": "2681",
+   "loge": "Muscles intrinsèques du pied",
+   "inconstant": true,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Cinquième métatarsien"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-sciatique",
+     "nom": "Nerf sciatique"
+    },
+    "profondeur_sous_la_peau_mm": 9.1
+   }
+  },
+  {
+   "id": "troisieme-fibulaire",
+   "nom": "Troisième fibulaire",
+   "latin": "Musculus fibularis tertius",
+   "anglais": "Fibularis tertius muscle",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Muscle troisième fibulaire",
+   "ta2": "2649",
+   "loge": "Loge antérieure de la jambe",
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Fibula"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Cinquième métatarsien"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-fibulaire-profond",
+     "nom": "Nerf fibulaire profond"
+    },
+    "profondeur_sous_la_peau_mm": 1.1
+   }
+  },
+  {
+   "id": "court-adducteur",
+   "nom": "Court adducteur",
+   "latin": "Adductor brevis",
+   "anglais": "Adductor brevis",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Court adducteur",
+   "ta2": "2629",
+   "loge": "Loge médiale de la cuisse",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "petit adducteur"
+    ],
+    "action": "Rapproche la cuisse",
+    "origine": "Corps et branche inférieure du pubis",
+    "terminaison": "Partie haute de la ligne âpre",
+    "innervation": "Nerf obturateur (L2–L4)",
+    "nerf_selon_l_atlas": {
+     "id": "nerf-obturateur",
+     "nom": "Nerf obturateur"
+    },
+    "profondeur_sous_la_peau_mm": 18.1
+   }
+  },
+  {
+   "id": "obturateur-externe",
+   "nom": "Obturateur externe",
+   "latin": "Obturator externus",
+   "anglais": "Obturator externus",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Obturateur externe",
+   "ta2": "2636",
+   "loge": "Muscles fessiers profonds",
+   "profondeur": 2,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "profondeur_sous_la_peau_mm": 31.8
+   }
+  },
+  {
+   "id": "pectine",
+   "nom": "Pectiné",
+   "latin": "Musculus pectineus",
+   "anglais": "Pectineus muscle",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Muscle pectiné",
+   "ta2": "2627",
+   "loge": "Loge médiale de la cuisse",
+   "connu": {
+    "action": "Fléchit et rapproche la cuisse",
+    "origine": "Ligne pectinée du pubis",
+    "terminaison": "Ligne pectinée du fémur, sous le petit trochanter",
+    "innervation": "Nerf fémoral (et parfois obturateur)",
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Fémur"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-femoral",
+     "nom": "Nerf fémoral"
+    },
+    "profondeur_sous_la_peau_mm": 8.2
+   }
+  },
+  {
+   "id": "petit-adducteur",
+   "nom": "Petit adducteur",
+   "latin": "(Adductor minimus)",
+   "anglais": "Adductor minimus",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Petit adducteur",
+   "ta2": "2632",
+   "loge": "Loge médiale de la cuisse",
+   "profondeur": 2,
+   "inconstant": true,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 20.3
+   }
+  },
+  {
+   "id": "obturateur-interne",
+   "nom": "Obturateur interne",
+   "latin": "Obturator internus",
+   "anglais": "Obturator internus",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Obturateur interne",
+   "ta2": "2605",
+   "loge": "Muscles fessiers profonds",
+   "profondeur": 2,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-obturateur",
+     "nom": "Nerf obturateur"
+    },
+    "profondeur_sous_la_peau_mm": 36.6
+   }
+  },
+  {
+   "id": "piriforme",
+   "nom": "Piriforme",
+   "latin": "Musculus piriformis",
+   "anglais": "Piriformis muscle",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Muscle piriforme",
+   "ta2": "2604",
+   "loge": "Muscles fessiers profonds",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "pyramidal du bassin",
+     "pyramidal"
+    ],
+    "action": "Tourne la cuisse en dehors",
+    "origine": "Face antérieure du sacrum",
+    "terminaison": "Bord supérieur du grand trochanter",
+    "innervation": "Nerf du piriforme (S1–S2)",
+    "memo": "Le repère de la fesse : le nerf sciatique sort juste sous lui.",
+    "os_d_origine_selon_l_atlas": [
+     "Sacrum"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Fémur"
+    ],
+    "profondeur_sous_la_peau_mm": 41.6
+   }
+  },
+  {
+   "id": "court-fibulaire",
+   "nom": "Court fibulaire",
+   "latin": "Musculus fibularis brevis",
+   "anglais": "Fibularis brevis muscle",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Muscle court fibulaire",
+   "ta2": "2653",
+   "loge": "Loge latérale de la jambe",
+   "connu": {
+    "noms": [
+     "court péronier",
+     "court péronier latéral"
+    ],
+    "action": "Tourne la plante en dehors",
+    "origine": "Face latérale de la fibula, deux tiers inférieurs",
+    "terminaison": "Base du 5e métatarsien",
+    "innervation": "Nerf fibulaire superficiel (L5–S1)",
+    "os_d_origine_selon_l_atlas": [
+     "Fibula"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Cinquième métatarsien"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-fibulaire-superficiel",
+     "nom": "Nerf fibulaire superficiel"
+    },
+    "profondeur_sous_la_peau_mm": 6.4
+   }
+  },
+  {
+   "id": "long-extenseur-hallux",
+   "nom": "Long extenseur de l'hallux",
+   "latin": "Extensor longus hallucis",
+   "anglais": "Extensor hallucis longus",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Long extenseur de l'hallux",
+   "ta2": "2650",
+   "loge": "Loge antérieure de la jambe",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "extenseur propre du gros orteil"
+    ],
+    "action": "Relève le gros orteil et le pied",
+    "origine": "Face médiale de la fibula",
+    "terminaison": "Phalange distale de l'hallux",
+    "innervation": "Nerf fibulaire profond (L5)",
+    "os_d_origine_selon_l_atlas": [
+     "Fibula"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange proximale du premier doigt de pied"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-fibulaire-profond",
+     "nom": "Nerf fibulaire profond"
+    },
+    "profondeur_sous_la_peau_mm": 1.6
+   }
+  },
+  {
+   "id": "long-flechisseur-hallux",
+   "nom": "Long fléchisseur de l'hallux",
+   "latin": "Flexor longus hallucis",
+   "anglais": "Flexor hallucis longus",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Long fléchisseur de l'hallux",
+   "ta2": "2668",
+   "loge": "Loge postérieure de la jambe",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "long fléchisseur propre du gros orteil"
+    ],
+    "action": "Fléchit le gros orteil : la poussée du pas",
+    "origine": "Face postérieure de la fibula",
+    "terminaison": "Phalange distale de l'hallux",
+    "innervation": "Nerf tibial (S2–S3)",
+    "os_d_origine_selon_l_atlas": [
+     "Fibula"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange distale du premier doigt de pied"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-tibial",
+     "nom": "Nerf tibial"
+    },
+    "profondeur_sous_la_peau_mm": 4.0
+   }
+  },
+  {
+   "id": "long-flechisseur-orteils",
+   "nom": "Long fléchisseur des orteils",
+   "latin": "Musculus flexor digitorum longus",
+   "anglais": "Flexor digitorum longus",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Long fléchisseur des orteils",
+   "ta2": "2667",
+   "loge": "Loge postérieure de la jambe",
+   "connu": {
+    "noms": [
+     "long fléchisseur commun des orteils"
+    ],
+    "action": "Fléchit les orteils et la plante du pied",
+    "origine": "Face postérieure du tibia",
+    "terminaison": "Phalanges distales des orteils 2 à 5",
+    "innervation": "Nerf tibial (S2–S3)",
+    "os_d_origine_selon_l_atlas": [
+     "Tibia"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange distale du troisième doigt de pied",
+     "Phalange distale du quatrième doigt de pied",
+     "Phalange distale du cinquième doigt de pied",
+     "Phalange distale du deuxième doigt de pied"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-tibial",
+     "nom": "Nerf tibial"
+    },
+    "profondeur_sous_la_peau_mm": 1.8
+   }
+  },
+  {
+   "id": "poplite",
+   "nom": "Poplité",
+   "latin": "Musculus popliteus",
+   "anglais": "Popliteus muscle",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Muscle poplité",
+   "ta2": "2665",
+   "loge": "Loge postérieure de la jambe",
+   "profondeur": 1,
+   "connu": {
+    "action": "Déverrouille le genou tendu",
+    "origine": "Condyle latéral du fémur",
+    "terminaison": "Face postérieure du tibia, au-dessus de la ligne du soléaire",
+    "innervation": "Nerf tibial (L4–S1)",
+    "memo": "La clé qui déverrouille le genou.",
+    "os_d_origine_selon_l_atlas": [
+     "Fémur"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Tibia"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-sciatique",
+     "nom": "Nerf sciatique"
+    },
+    "profondeur_sous_la_peau_mm": 9.8
+   }
+  },
+  {
+   "id": "tibial-posterieur",
+   "nom": "Tibial postérieur",
+   "latin": "Musculus tibialis posterior",
+   "anglais": "Tibialis posterior muscle",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Muscle tibial postérieur",
+   "ta2": "2666",
+   "loge": "Loge postérieure de la jambe",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "jambier postérieur"
+    ],
+    "action": "Fléchit la plante, tourne la plante en dedans ; soutient la voûte plantaire",
+    "origine": "Membrane interosseuse, tibia et fibula",
+    "terminaison": "Naviculaire, cunéiformes, bases des métatarsiens 2 à 4",
+    "innervation": "Nerf tibial (L4–L5)",
+    "os_d_origine_selon_l_atlas": [
+     "Tibia"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-tibial",
+     "nom": "Nerf tibial"
+    },
+    "profondeur_sous_la_peau_mm": 5.6
+   }
+  },
+  {
+   "id": "abducteur-hallux",
+   "nom": "Abducteur de l'hallux",
+   "latin": "Abductor hallucis",
+   "anglais": "Abductor hallucis",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Abducteur de l'hallux",
+   "ta2": "2672",
+   "loge": "Muscles intrinsèques du pied",
+   "connu": {
+    "noms": [
+     "abducteur du gros orteil"
+    ],
+    "action": "Écarte le gros orteil ; soutient l'arche interne",
+    "origine": "Tubérosité du calcanéus",
+    "terminaison": "Base de la phalange proximale de l'hallux",
+    "innervation": "Nerf plantaire médial (S1–S2)",
+    "os_d_origine_selon_l_atlas": [
+     "Calcanéus"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange proximale du premier doigt de pied"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-plantaire-medial",
+     "nom": "Nerf plantaire médial"
+    },
+    "profondeur_sous_la_peau_mm": 2.1
+   }
+  },
+  {
+   "id": "abducteur-petit-orteil",
+   "nom": "Abducteur du petit orteil",
+   "latin": "Abductor digiti minimi pedis",
+   "anglais": "Abductor digiti minimi of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Abducteur du petit orteil",
+   "ta2": "2679",
+   "loge": "Muscles intrinsèques du pied",
+   "connu": {
+    "action": "Écarte le petit orteil",
+    "origine": "Tubérosité du calcanéus",
+    "terminaison": "Base de la phalange proximale du 5e orteil",
+    "innervation": "Nerf plantaire latéral (S1–S2)",
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange proximale du cinquième doigt de pied"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-plantaire-lateral",
+     "nom": "Nerf plantaire latéral"
+    },
+    "profondeur_sous_la_peau_mm": 4.7
+   }
+  },
+  {
+   "id": "court-extenseur-orteils",
+   "nom": "Court extenseur des orteils",
+   "latin": "Extensor brevis digitorum",
+   "anglais": "Extensor digitorum brevis",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Court extenseur des orteils",
+   "ta2": "2671",
+   "loge": "Muscles intrinsèques du pied",
+   "connu": {
+    "noms": [
+     "pédieux"
+    ],
+    "action": "Étend les orteils",
+    "origine": "Face dorsale du calcanéus",
+    "terminaison": "Tendons du long extenseur des orteils 2 à 4",
+    "innervation": "Nerf fibulaire profond (L5–S1)",
+    "memo": "Le seul muscle du dos du pied.",
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange moyenne du troisème doigt de pied",
+     "Phalange moyenne du quatrième doigt de pied",
+     "Phalange moyenne du deuxième doigt de pied"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-fibulaire-profond",
+     "nom": "Nerf fibulaire profond"
+    },
+    "profondeur_sous_la_peau_mm": 1.1
+   }
+  },
+  {
+   "id": "court-flechisseur-orteils",
+   "nom": "Court fléchisseur des orteils",
+   "latin": "Flexor brevis digitorum",
+   "anglais": "Flexor digitorum brevis",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Court fléchisseur des orteils",
+   "ta2": "2683",
+   "loge": "Muscles intrinsèques du pied",
+   "connu": {
+    "noms": [
+     "court fléchisseur plantaire"
+    ],
+    "action": "Fléchit les orteils",
+    "origine": "Tubérosité du calcanéus et aponévrose plantaire",
+    "terminaison": "Phalanges moyennes des orteils 2 à 5",
+    "innervation": "Nerf plantaire médial (S1–S2)",
+    "os_d_origine_selon_l_atlas": [
+     "Calcanéus"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Phalange moyenne du troisème doigt de pied",
+     "Phalange moyenne du cinquème doigt de pied",
+     "Phalange moyenne du deuxième doigt de pied"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-sciatique",
+     "nom": "Nerf sciatique"
+    },
+    "profondeur_sous_la_peau_mm": 0.9
+   }
+  }
+ ]
+}

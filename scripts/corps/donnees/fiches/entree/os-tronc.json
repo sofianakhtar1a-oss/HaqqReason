@@ -1,0 +1,1125 @@
+{
+ "lot": "os-tronc",
+ "couche": "os",
+ "structures": [
+  {
+   "id": "sacrum",
+   "nom": "Sacrum",
+   "latin": "Os sacrum",
+   "anglais": "Sacrum",
+   "region": "bassin",
+   "rang": 0,
+   "officiel": "Sacrum",
+   "ta2": "1071",
+   "connu": {
+    "sorte": "irregulier",
+    "articulations": [
+     "vertebres-lombaires",
+     "coccyx",
+     "ilium"
+    ],
+    "memo": "Cinq vertèbres soudées, la clé de voûte du bassin."
+   }
+  },
+  {
+   "id": "vertebres-lombaires",
+   "nom": "Vertèbres lombaires",
+   "latin": "Vertebrae lumbales",
+   "anglais": "Lumbar vertebrae",
+   "region": "dos",
+   "rang": 0,
+   "connu": {
+    "noms": [
+     "lombaires"
+    ],
+    "sorte": "irregulier",
+    "articulations": [
+     "vertebres-thoraciques",
+     "sacrum"
+    ],
+    "memo": "Les plus massives : elles portent le poids du haut du corps.",
+    "nombre": 5,
+    "membres": [
+     {
+      "id": "vertebre-l1",
+      "nom": "Vertèbre L1"
+     },
+     {
+      "id": "vertebre-l2",
+      "nom": "Vertèbre L2"
+     },
+     {
+      "id": "vertebre-l3",
+      "nom": "Vertèbre L3"
+     },
+     {
+      "id": "vertebre-l4",
+      "nom": "Vertèbre L4"
+     },
+     {
+      "id": "vertebre-l5",
+      "nom": "Vertèbre L5"
+     }
+    ]
+   }
+  },
+  {
+   "id": "vertebres-thoraciques",
+   "nom": "Vertèbres thoraciques",
+   "latin": "Vertebrae thoracicae",
+   "anglais": "Thoracic vertebrae",
+   "region": "dos",
+   "rang": 0,
+   "connu": {
+    "noms": [
+     "vertèbres dorsales",
+     "thoraciques"
+    ],
+    "sorte": "irregulier",
+    "articulations": [
+     "c7",
+     "vertebres-lombaires",
+     "cotes-vraies",
+     "fausses-cotes",
+     "cotes-flottantes"
+    ],
+    "memo": "Douze : une par paire de côtes.",
+    "nombre": 12,
+    "membres": [
+     {
+      "id": "vertebre-t1",
+      "nom": "Vertèbre T1"
+     },
+     {
+      "id": "vertebre-t2",
+      "nom": "Vertèbre T2"
+     },
+     {
+      "id": "vertebre-t3",
+      "nom": "Vertèbre T3"
+     },
+     {
+      "id": "vertebre-t4",
+      "nom": "Vertèbre T4"
+     },
+     {
+      "id": "vertebre-t5",
+      "nom": "Vertèbre T5"
+     },
+     {
+      "id": "vertebre-t6",
+      "nom": "Vertèbre T6"
+     },
+     {
+      "id": "vertebre-t7",
+      "nom": "Vertèbre T7"
+     },
+     {
+      "id": "vertebre-t8",
+      "nom": "Vertèbre T8"
+     },
+     {
+      "id": "vertebre-t9",
+      "nom": "Vertèbre T9"
+     },
+     {
+      "id": "vertebre-t10",
+      "nom": "Vertèbre T10"
+     },
+     {
+      "id": "vertebre-t11",
+      "nom": "Vertèbre T11"
+     },
+     {
+      "id": "vertebre-t12",
+      "nom": "Vertèbre T12"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cotes-vraies",
+   "nom": "Côtes vraies",
+   "latin": "Costae verae",
+   "anglais": "True ribs",
+   "region": "thorax",
+   "rang": 0,
+   "connu": {
+    "noms": [
+     "côtes"
+    ],
+    "sorte": "plat",
+    "articulations": [
+     "vertebres-thoraciques",
+     "sternum"
+    ],
+    "memo": "Les sept premières paires : chacune rejoint directement le sternum par son cartilage.",
+    "nombre": 14,
+    "membres": [
+     {
+      "id": "premiere-cote",
+      "nom": "Première côte"
+     },
+     {
+      "id": "deuxieme-cote",
+      "nom": "Deuxième côte"
+     },
+     {
+      "id": "troisieme-cote",
+      "nom": "Troisième côte"
+     },
+     {
+      "id": "quatrieme-cote",
+      "nom": "Quatrième côte"
+     },
+     {
+      "id": "cinquieme-cote",
+      "nom": "Cinquième côte"
+     },
+     {
+      "id": "sixieme-cote",
+      "nom": "Sixième côte"
+     },
+     {
+      "id": "septieme-cote",
+      "nom": "Septième côte"
+     }
+    ]
+   }
+  },
+  {
+   "id": "sternum",
+   "nom": "Sternum",
+   "latin": "Sternum",
+   "anglais": "Sternum",
+   "region": "thorax",
+   "rang": 0,
+   "connu": {
+    "sorte": "plat",
+    "articulations": [
+     "clavicule",
+     "cotes-vraies"
+    ],
+    "memo": "Trois parties : le manubrium, le corps et le processus xiphoïde.",
+    "membres": [
+     {
+      "id": "manubrium-sternal",
+      "nom": "Manubrium sternal"
+     },
+     {
+      "id": "corps-du-sternum",
+      "nom": "Corps du sternum"
+     },
+     {
+      "id": "processus-xiphoide",
+      "nom": "Processus xiphoïde"
+     }
+    ]
+   }
+  },
+  {
+   "id": "coccyx",
+   "nom": "Coccyx",
+   "latin": "Os coccygis",
+   "anglais": "Coccyx",
+   "region": "bassin",
+   "rang": 1,
+   "officiel": "Coccyx",
+   "ta2": "1092",
+   "connu": {
+    "sorte": "irregulier",
+    "articulations": [
+     "sacrum"
+    ],
+    "memo": "Le vestige de la queue : trois à cinq petites vertèbres soudées."
+   }
+  },
+  {
+   "id": "ilium",
+   "nom": "Ilium",
+   "latin": "Os ilium",
+   "anglais": "Ilium",
+   "region": "bassin",
+   "rang": 1,
+   "connu": {
+    "noms": [
+     "os iliaque",
+     "aile iliaque"
+    ],
+    "sorte": "plat",
+    "articulations": [
+     "sacrum",
+     "ischium",
+     "pubis",
+     "femur"
+    ],
+    "memo": "L'aile du bassin ; sa crête se sent sous la ceinture.",
+    "membres": [
+     {
+      "id": "os-coxal",
+      "nom": "Os coxal"
+     }
+    ]
+   }
+  },
+  {
+   "id": "pubis",
+   "nom": "Pubis",
+   "latin": "Os pubis",
+   "anglais": "Pubis",
+   "region": "bassin",
+   "rang": 1,
+   "connu": {
+    "sorte": "irregulier",
+    "articulations": [
+     "ilium",
+     "ischium",
+     "femur"
+    ],
+    "memo": "Les deux pubis se rejoignent en avant à la symphyse pubienne.",
+    "membres": [
+     {
+      "id": "os-coxal",
+      "nom": "Os coxal"
+     }
+    ]
+   }
+  },
+  {
+   "id": "cotes-flottantes",
+   "nom": "Côtes flottantes",
+   "latin": "Costae fluctuantes",
+   "anglais": "Floating ribs",
+   "region": "thorax",
+   "rang": 1,
+   "connu": {
+    "sorte": "plat",
+    "articulations": [
+     "vertebres-thoraciques"
+    ],
+    "memo": "Les 11e et 12e paires, libres en avant.",
+    "nombre": 4,
+    "membres": [
+     {
+      "id": "onzieme-cote",
+      "nom": "Onzième côte"
+     },
+     {
+      "id": "douzieme-cote",
+      "nom": "Douzième côte"
+     }
+    ]
+   }
+  },
+  {
+   "id": "fausses-cotes",
+   "nom": "Fausses côtes",
+   "latin": "Costae spuriae",
+   "anglais": "False ribs",
+   "region": "thorax",
+   "rang": 1,
+   "connu": {
+    "sorte": "plat",
+    "articulations": [
+     "vertebres-thoraciques"
+    ],
+    "memo": "Les 8e, 9e et 10e paires : leur cartilage rejoint celui de la côte du dessus.",
+    "nombre": 6,
+    "membres": [
+     {
+      "id": "huitieme-cote",
+      "nom": "Huitième côte"
+     },
+     {
+      "id": "neuvieme-cote",
+      "nom": "Neuvième côte"
+     },
+     {
+      "id": "dixieme-cote",
+      "nom": "Dixième côte"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ischium",
+   "nom": "Ischium",
+   "latin": "Os ischii",
+   "anglais": "Ischium",
+   "region": "bassin",
+   "rang": 2,
+   "connu": {
+    "sorte": "irregulier",
+    "articulations": [
+     "ilium",
+     "pubis",
+     "femur"
+    ],
+    "memo": "On s'assoit sur ses tubérosités.",
+    "membres": [
+     {
+      "id": "os-coxal",
+      "nom": "Os coxal"
+     }
+    ]
+   }
+  },
+  {
+   "id": "os-coxal",
+   "nom": "Os coxal",
+   "latin": "Os coxae",
+   "anglais": "Hip bone",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Os coxal",
+   "ta2": "1307",
+   "connu": {
+    "ensemble": {
+     "id": "ilium",
+     "nom": "Ilium"
+    }
+   }
+  },
+  {
+   "id": "cartilages-costaux",
+   "nom": "Cartilages costaux",
+   "latin": "Cartilagines costales",
+   "anglais": "Costal cartilages",
+   "region": "thorax",
+   "rang": 2,
+   "connu": {
+    "articulations": [
+     "sternum",
+     "cotes-vraies",
+     "fausses-cotes"
+    ],
+    "memo": "Ils donnent au thorax sa souplesse pendant la respiration.",
+    "nombre": 20,
+    "membres": [
+     {
+      "id": "cartilage-costal-de-la-premiere-cote",
+      "nom": "Cartilage costal de la première côte"
+     },
+     {
+      "id": "cartilage-costal-de-la-deuxieme-cote",
+      "nom": "Cartilage costal de la deuxième côte"
+     },
+     {
+      "id": "cartilage-costal-de-la-troisieme-cote",
+      "nom": "Cartilage costal de la troisième côte"
+     },
+     {
+      "id": "cartilage-costal-de-la-quatrieme-cote",
+      "nom": "Cartilage costal de la quatrième côte"
+     },
+     {
+      "id": "cartilage-costal-de-la-cinquieme-cote",
+      "nom": "Cartilage costal de la cinquième côte"
+     },
+     {
+      "id": "cartilage-costal-de-la-sixieme-cote",
+      "nom": "Cartilage costal de la sixième côte"
+     },
+     {
+      "id": "cartilage-costal-de-la-septieme-cote",
+      "nom": "Cartilage costal de la septième côte"
+     },
+     {
+      "id": "cartilage-costal-de-la-huitieme-cote",
+      "nom": "Cartilage costal de la huitième côte"
+     },
+     {
+      "id": "cartilage-costal-de-la-neuvieme-cote",
+      "nom": "Cartilage costal de la neuvième côte"
+     },
+     {
+      "id": "cartilage-costal-de-la-dixieme-cote",
+      "nom": "Cartilage costal de la dixième côte"
+     }
+    ]
+   }
+  },
+  {
+   "id": "corps-du-sternum",
+   "nom": "Corps du sternum",
+   "latin": "Corpus sterni",
+   "anglais": "Body of sternum",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Corps du sternum",
+   "ta2": "1134",
+   "connu": {
+    "ensemble": {
+     "id": "sternum",
+     "nom": "Sternum"
+    }
+   }
+  },
+  {
+   "id": "manubrium-sternal",
+   "nom": "Manubrium sternal",
+   "latin": "Manubrium sterni",
+   "anglais": "Manubrium of sternum",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Manubrium sternal",
+   "ta2": "1130",
+   "connu": {
+    "ensemble": {
+     "id": "sternum",
+     "nom": "Sternum"
+    }
+   }
+  },
+  {
+   "id": "processus-xiphoide",
+   "nom": "Processus xiphoïde",
+   "latin": "Processus xiphoideus",
+   "anglais": "Xiphoid process",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Processus xiphoïde",
+   "ta2": "1135",
+   "connu": {
+    "ensemble": {
+     "id": "sternum",
+     "nom": "Sternum"
+    }
+   }
+  },
+  {
+   "id": "vertebre-l1",
+   "nom": "Vertèbre L1",
+   "latin": "Vertebra lumborum I",
+   "anglais": "Vertebra L1",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre L1",
+   "ta2": "1068*1",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-lombaires",
+     "nom": "Vertèbres lombaires"
+    }
+   }
+  },
+  {
+   "id": "vertebre-l2",
+   "nom": "Vertèbre L2",
+   "latin": "Vertebra lumborum II",
+   "anglais": "Vertebra L2",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre L2",
+   "ta2": "1068*2",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-lombaires",
+     "nom": "Vertèbres lombaires"
+    }
+   }
+  },
+  {
+   "id": "vertebre-l3",
+   "nom": "Vertèbre L3",
+   "latin": "Vertebra lumborum III",
+   "anglais": "Vertebra L3",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre L3",
+   "ta2": "1068*3",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-lombaires",
+     "nom": "Vertèbres lombaires"
+    }
+   }
+  },
+  {
+   "id": "vertebre-l4",
+   "nom": "Vertèbre L4",
+   "latin": "Vertebra lumborum IV",
+   "anglais": "Vertebra L4",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre L4",
+   "ta2": "1068*4",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-lombaires",
+     "nom": "Vertèbres lombaires"
+    }
+   }
+  },
+  {
+   "id": "vertebre-l5",
+   "nom": "Vertèbre L5",
+   "latin": "Vertebra lumborum V",
+   "anglais": "Vertebra L5",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre L5",
+   "ta2": "1068*5",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-lombaires",
+     "nom": "Vertèbres lombaires"
+    }
+   }
+  },
+  {
+   "id": "vertebre-t1",
+   "nom": "Vertèbre T1",
+   "latin": "Vertebra thoracis I",
+   "anglais": "Vertebra T1",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre T1",
+   "ta2": "1063*1",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-thoraciques",
+     "nom": "Vertèbres thoraciques"
+    }
+   }
+  },
+  {
+   "id": "vertebre-t10",
+   "nom": "Vertèbre T10",
+   "latin": "Vertebra thoracis X",
+   "anglais": "Vertebra T10",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre T10",
+   "ta2": "1065*10",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-thoraciques",
+     "nom": "Vertèbres thoraciques"
+    }
+   }
+  },
+  {
+   "id": "vertebre-t11",
+   "nom": "Vertèbre T11",
+   "latin": "Vertebra thoracis XI",
+   "anglais": "Vertebra T11",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre T11",
+   "ta2": "1065*11",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-thoraciques",
+     "nom": "Vertèbres thoraciques"
+    }
+   }
+  },
+  {
+   "id": "vertebre-t12",
+   "nom": "Vertèbre T12",
+   "latin": "Vertebra thoracis XII",
+   "anglais": "Vertebra T12",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre T12",
+   "ta2": "1065*12",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-thoraciques",
+     "nom": "Vertèbres thoraciques"
+    }
+   }
+  },
+  {
+   "id": "vertebre-t2",
+   "nom": "Vertèbre T2",
+   "latin": "Vertebra thoracis II",
+   "anglais": "Vertebra T2",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre T2",
+   "ta2": "1059*2",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-thoraciques",
+     "nom": "Vertèbres thoraciques"
+    }
+   }
+  },
+  {
+   "id": "vertebre-t3",
+   "nom": "Vertèbre T3",
+   "latin": "Vertebra thoracis III",
+   "anglais": "Vertebra T3",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre T3",
+   "ta2": "1059*3",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-thoraciques",
+     "nom": "Vertèbres thoraciques"
+    }
+   }
+  },
+  {
+   "id": "vertebre-t4",
+   "nom": "Vertèbre T4",
+   "latin": "Vertebra thoracis IV",
+   "anglais": "Vertebra T4",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre T4",
+   "ta2": "1059*4",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-thoraciques",
+     "nom": "Vertèbres thoraciques"
+    }
+   }
+  },
+  {
+   "id": "vertebre-t5",
+   "nom": "Vertèbre T5",
+   "latin": "Vertebra thoracis V",
+   "anglais": "Vertebra T5",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre T5",
+   "ta2": "1059*5",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-thoraciques",
+     "nom": "Vertèbres thoraciques"
+    }
+   }
+  },
+  {
+   "id": "vertebre-t6",
+   "nom": "Vertèbre T6",
+   "latin": "Vertebra thoracis VI",
+   "anglais": "Vertebra T6",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre T6",
+   "ta2": "1059*6",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-thoraciques",
+     "nom": "Vertèbres thoraciques"
+    }
+   }
+  },
+  {
+   "id": "vertebre-t7",
+   "nom": "Vertèbre T7",
+   "latin": "Vertebra thoracis VII",
+   "anglais": "Vertebra T7",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre T7",
+   "ta2": "1065*7",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-thoraciques",
+     "nom": "Vertèbres thoraciques"
+    }
+   }
+  },
+  {
+   "id": "vertebre-t8",
+   "nom": "Vertèbre T8",
+   "latin": "Vertebra thoracis VIII",
+   "anglais": "Vertebra T8",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre T8",
+   "ta2": "1065*8",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-thoraciques",
+     "nom": "Vertèbres thoraciques"
+    }
+   }
+  },
+  {
+   "id": "vertebre-t9",
+   "nom": "Vertèbre T9",
+   "latin": "Vertebra thoracis IX",
+   "anglais": "Vertebra T9",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Vertèbre T9",
+   "ta2": "1065*9",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-thoraciques",
+     "nom": "Vertèbres thoraciques"
+    }
+   }
+  },
+  {
+   "id": "cartilage-costal-de-la-cinquieme-cote",
+   "nom": "Cartilage costal de la cinquième côte",
+   "latin": "Cartilago costae quinti costae",
+   "anglais": "Costal cartilage of fifth rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Cartilage costal de la cinquième côte",
+   "ta2": "1140*5",
+   "nature": "cartilage",
+   "connu": {
+    "ensemble": {
+     "id": "cartilages-costaux",
+     "nom": "Cartilages costaux"
+    }
+   }
+  },
+  {
+   "id": "cartilage-costal-de-la-deuxieme-cote",
+   "nom": "Cartilage costal de la deuxième côte",
+   "latin": "Cartilago costae secundae costae",
+   "anglais": "Costal cartilage of second rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Cartilage costal de la deuxième côte",
+   "ta2": "1140*2",
+   "nature": "cartilage",
+   "connu": {
+    "ensemble": {
+     "id": "cartilages-costaux",
+     "nom": "Cartilages costaux"
+    }
+   }
+  },
+  {
+   "id": "cartilage-costal-de-la-dixieme-cote",
+   "nom": "Cartilage costal de la dixième côte",
+   "latin": "Cartilago costae decimae costae",
+   "anglais": "Costal cartilage of tenth rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Cartilage costal de la dixième côte",
+   "ta2": "1140*10",
+   "nature": "cartilage",
+   "connu": {
+    "ensemble": {
+     "id": "cartilages-costaux",
+     "nom": "Cartilages costaux"
+    }
+   }
+  },
+  {
+   "id": "cartilage-costal-de-la-huitieme-cote",
+   "nom": "Cartilage costal de la huitième côte",
+   "latin": "Cartilago costae octavae costae",
+   "anglais": "Costal cartilage of eighth rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Cartilage costal de la huitième côte",
+   "ta2": "1140*8",
+   "nature": "cartilage",
+   "connu": {
+    "ensemble": {
+     "id": "cartilages-costaux",
+     "nom": "Cartilages costaux"
+    }
+   }
+  },
+  {
+   "id": "cartilage-costal-de-la-neuvieme-cote",
+   "nom": "Cartilage costal de la neuvième côte",
+   "latin": "Costa cartilago nonae costae",
+   "anglais": "Costal cartilage of ninth rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Cartilage costal de la neuvième côte",
+   "ta2": "1140*9",
+   "nature": "cartilage",
+   "connu": {
+    "ensemble": {
+     "id": "cartilages-costaux",
+     "nom": "Cartilages costaux"
+    }
+   }
+  },
+  {
+   "id": "cartilage-costal-de-la-premiere-cote",
+   "nom": "Cartilage costal de la première côte",
+   "latin": "Cartilago costae primae costae",
+   "anglais": "Costal cartilage of first rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Cartilage costal de la première côte",
+   "ta2": "1140*1",
+   "nature": "cartilage",
+   "connu": {
+    "ensemble": {
+     "id": "cartilages-costaux",
+     "nom": "Cartilages costaux"
+    }
+   }
+  },
+  {
+   "id": "cartilage-costal-de-la-quatrieme-cote",
+   "nom": "Cartilage costal de la quatrième côte",
+   "latin": "Cartilago costae quarti costae",
+   "anglais": "Costal cartilage of fourth rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Cartilage costal de la quatrième côte",
+   "ta2": "1140*4",
+   "nature": "cartilage",
+   "connu": {
+    "ensemble": {
+     "id": "cartilages-costaux",
+     "nom": "Cartilages costaux"
+    }
+   }
+  },
+  {
+   "id": "cartilage-costal-de-la-septieme-cote",
+   "nom": "Cartilage costal de la septième côte",
+   "latin": "Cartilago costae septimi costae",
+   "anglais": "Costal cartilage of seventh rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Cartilage costal de la septième côte",
+   "ta2": "1140*7",
+   "nature": "cartilage",
+   "connu": {
+    "ensemble": {
+     "id": "cartilages-costaux",
+     "nom": "Cartilages costaux"
+    }
+   }
+  },
+  {
+   "id": "cartilage-costal-de-la-sixieme-cote",
+   "nom": "Cartilage costal de la sixième côte",
+   "latin": "Cartilago costae sextae costae",
+   "anglais": "Costal cartilage of sixth rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Cartilage costal de la sixième côte",
+   "ta2": "1140*6",
+   "nature": "cartilage",
+   "connu": {
+    "ensemble": {
+     "id": "cartilages-costaux",
+     "nom": "Cartilages costaux"
+    }
+   }
+  },
+  {
+   "id": "cartilage-costal-de-la-troisieme-cote",
+   "nom": "Cartilage costal de la troisième côte",
+   "latin": "Cartilago costae tertiae costae",
+   "anglais": "Costal cartilage of third rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Cartilage costal de la troisième côte",
+   "ta2": "1140*3",
+   "nature": "cartilage",
+   "connu": {
+    "ensemble": {
+     "id": "cartilages-costaux",
+     "nom": "Cartilages costaux"
+    }
+   }
+  },
+  {
+   "id": "cinquieme-cote",
+   "nom": "Cinquième côte",
+   "latin": "Quinta costa",
+   "anglais": "Fifth rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Cinquième côte",
+   "ta2": "1106*5",
+   "connu": {
+    "ensemble": {
+     "id": "cotes-vraies",
+     "nom": "Côtes vraies"
+    }
+   }
+  },
+  {
+   "id": "deuxieme-cote",
+   "nom": "Deuxième côte",
+   "latin": "Costa secunda",
+   "anglais": "Second rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Deuxième côte",
+   "ta2": "1111",
+   "connu": {
+    "ensemble": {
+     "id": "cotes-vraies",
+     "nom": "Côtes vraies"
+    }
+   }
+  },
+  {
+   "id": "dixieme-cote",
+   "nom": "Dixième côte",
+   "latin": "Decima costa",
+   "anglais": "Tenth rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Dixième côte",
+   "ta2": "1113*10",
+   "connu": {
+    "ensemble": {
+     "id": "fausses-cotes",
+     "nom": "Fausses côtes"
+    }
+   }
+  },
+  {
+   "id": "douzieme-cote",
+   "nom": "Douzième côte",
+   "latin": "Duodecima costa",
+   "anglais": "Twelfth rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Douzième côte",
+   "ta2": "1114*12",
+   "connu": {
+    "ensemble": {
+     "id": "cotes-flottantes",
+     "nom": "Côtes flottantes"
+    }
+   }
+  },
+  {
+   "id": "huitieme-cote",
+   "nom": "Huitième côte",
+   "latin": "Octava costa",
+   "anglais": "Eighth rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Huitième côte",
+   "ta2": "1113*8",
+   "connu": {
+    "ensemble": {
+     "id": "fausses-cotes",
+     "nom": "Fausses côtes"
+    }
+   }
+  },
+  {
+   "id": "neuvieme-cote",
+   "nom": "Neuvième côte",
+   "latin": "Nona costa",
+   "anglais": "Ninth rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Neuvième côte",
+   "ta2": "1113*9",
+   "connu": {
+    "ensemble": {
+     "id": "fausses-cotes",
+     "nom": "Fausses côtes"
+    }
+   }
+  },
+  {
+   "id": "onzieme-cote",
+   "nom": "Onzième côte",
+   "latin": "Undecima costa",
+   "anglais": "Eleventh rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Onzième côte",
+   "ta2": "1114*11",
+   "connu": {
+    "ensemble": {
+     "id": "cotes-flottantes",
+     "nom": "Côtes flottantes"
+    }
+   }
+  },
+  {
+   "id": "premiere-cote",
+   "nom": "Première côte",
+   "latin": "Costa prima",
+   "anglais": "First rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Première côte",
+   "ta2": "1107",
+   "connu": {
+    "ensemble": {
+     "id": "cotes-vraies",
+     "nom": "Côtes vraies"
+    }
+   }
+  },
+  {
+   "id": "quatrieme-cote",
+   "nom": "Quatrième côte",
+   "latin": "Quarta costa",
+   "anglais": "Fourth rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Quatrième côte",
+   "ta2": "1106*4",
+   "connu": {
+    "ensemble": {
+     "id": "cotes-vraies",
+     "nom": "Côtes vraies"
+    }
+   }
+  },
+  {
+   "id": "septieme-cote",
+   "nom": "Septième côte",
+   "latin": "Septima costa",
+   "anglais": "Seventh rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Septième côte",
+   "ta2": "1106*7",
+   "connu": {
+    "ensemble": {
+     "id": "cotes-vraies",
+     "nom": "Côtes vraies"
+    }
+   }
+  },
+  {
+   "id": "sixieme-cote",
+   "nom": "Sixième côte",
+   "latin": "Sexta costa",
+   "anglais": "Sixth rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Sixième côte",
+   "ta2": "1106*6",
+   "connu": {
+    "ensemble": {
+     "id": "cotes-vraies",
+     "nom": "Côtes vraies"
+    }
+   }
+  },
+  {
+   "id": "troisieme-cote",
+   "nom": "Troisième côte",
+   "latin": "Tertia costa",
+   "anglais": "Third rib",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Troisième côte",
+   "ta2": "1106*3",
+   "connu": {
+    "ensemble": {
+     "id": "cotes-vraies",
+     "nom": "Côtes vraies"
+    }
+   }
+  }
+ ]
+}

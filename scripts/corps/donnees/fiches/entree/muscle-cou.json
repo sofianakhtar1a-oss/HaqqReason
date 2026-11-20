@@ -1,0 +1,575 @@
+{
+ "lot": "muscle-cou",
+ "couche": "muscle",
+ "structures": [
+  {
+   "id": "sterno-cleido-mastoidien",
+   "nom": "Sterno-cléido-mastoïdien",
+   "latin": "Musculus sternocleidomastoideus",
+   "anglais": "Sternocleidomastoid muscle",
+   "region": "cou",
+   "rang": 0,
+   "officiel": "Muscle sternocléïdomastoïdien",
+   "ta2": "2156",
+   "connu": {
+    "noms": [
+     "scm",
+     "sternocléidomastoïdien"
+    ],
+    "action": "Seul, il incline la tête de son côté et tourne le visage de l'autre ; les deux ensemble fléchissent le cou",
+    "origine": "Manubrium du sternum (chef sternal) et tiers médial de la clavicule (chef claviculaire)",
+    "terminaison": "Processus mastoïde du temporal et ligne nucale supérieure",
+    "innervation": "Nerf accessoire (XI)",
+    "memo": "Son nom dit ses trois attaches : sternum, clavicule (cléido), mastoïde.",
+    "os_d_origine_selon_l_atlas": [
+     "Clavicule",
+     "Manubrium sternal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Temporal"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-accessoire-xi",
+     "nom": "Nerf accessoire (XI)"
+    },
+    "profondeur_sous_la_peau_mm": 1.1
+   }
+  },
+  {
+   "id": "platysma",
+   "nom": "Platysma",
+   "latin": "Platysma",
+   "anglais": "Platysma",
+   "region": "cou",
+   "rang": 1,
+   "officiel": "Platysma",
+   "ta2": "2147",
+   "connu": {
+    "profondeur_sous_la_peau_mm": 1.2
+   }
+  },
+  {
+   "id": "constricteur-inferieur-du-pharynx",
+   "nom": "Constricteur inférieur du pharynx",
+   "latin": "Constrictor inferior pharyngis",
+   "anglais": "Inferior pharyngeal constrictor",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Constricteur inférieur du pharynx",
+   "ta2": "2187",
+   "loge": "Muscles du pharynx",
+   "profondeur": 1,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 25.3
+   }
+  },
+  {
+   "id": "long-du-cou",
+   "nom": "Long du cou",
+   "latin": "Musculus longus colli",
+   "anglais": "Longus colli muscle",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Muscle long du cou",
+   "ta2": "2148",
+   "profondeur": 1,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 28.2
+   }
+  },
+  {
+   "id": "scalene-posterieur",
+   "nom": "Scalène postérieur",
+   "latin": "Musculus scalenus posterior",
+   "anglais": "Scalenus posterior muscle",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Muscle scalène postérieur",
+   "ta2": "2154",
+   "profondeur": 1,
+   "connu": {
+    "os_de_terminaison_selon_l_atlas": [
+     "Vertèbre C5"
+    ],
+    "profondeur_sous_la_peau_mm": 19.2
+   }
+  },
+  {
+   "id": "splenius-tete",
+   "nom": "Splénius de la tête",
+   "latin": "Musculus splenius capitis",
+   "anglais": "Splenius capitis muscle",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Muscle splénius de la tête",
+   "ta2": "2273",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "splénius"
+    ],
+    "action": "Étend la tête ; seul, la tourne de son côté",
+    "origine": "Ligament nucal et processus épineux de C7 à T3",
+    "terminaison": "Processus mastoïde et ligne nucale supérieure",
+    "innervation": "Rameaux dorsaux des nerfs cervicaux",
+    "memo": "Splenius, le pansement : il couvre les muscles profonds de la nuque.",
+    "profondeur_sous_la_peau_mm": 2.7
+   }
+  },
+  {
+   "id": "thyrohyoidien",
+   "nom": "Thyrohyoïdien",
+   "latin": "Musculus thyreohyoideus",
+   "anglais": "Thyrohyoid muscle",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Muscle thyrohyoïdien",
+   "ta2": "2174",
+   "profondeur": 1,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Os hyoïde"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Cartilage thyroïde"
+    ],
+    "profondeur_sous_la_peau_mm": 11.9
+   }
+  },
+  {
+   "id": "elevateur-scapula",
+   "nom": "Élévateur de la scapula",
+   "latin": "Levator scapulae",
+   "anglais": "Levator scapulae",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Muscle élévateur de la scapula",
+   "ta2": "2234",
+   "loge": "Muscles superficiels du dos",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "angulaire de l'omoplate",
+     "releveur de la scapula"
+    ],
+    "action": "Élève la scapula",
+    "origine": "Processus transverses de C1 à C4",
+    "terminaison": "Angle supérieur de la scapula",
+    "innervation": "Nerf dorsal de la scapula (C5)",
+    "memo": "Souvent noué chez ceux qui portent un sac sur une seule épaule.",
+    "os_d_origine_selon_l_atlas": [
+     "Axis",
+     "Vertèbre C3",
+     "Vertèbre C4",
+     "Atlas"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Scapula"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-dorsal-de-la-scapula",
+     "nom": "Nerf dorsal de la scapula"
+    },
+    "profondeur_sous_la_peau_mm": 13.6
+   }
+  },
+  {
+   "id": "arythenoide-oblique",
+   "nom": "Arythénoïde oblique",
+   "latin": "Musculus arytenoideus obliquus",
+   "anglais": "Oblique arytenoid muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle arythénoïde oblique",
+   "ta2": "2203",
+   "loge": "Muscles du larynx",
+   "profondeur": 2,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 24.0
+   }
+  },
+  {
+   "id": "arytenoidien-transverse",
+   "nom": "Aryténoïdien transverse",
+   "latin": "Musculus arytenoideus transversus",
+   "anglais": "Transverse arytenoid muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle aryténoïdien transverse",
+   "ta2": "2205",
+   "loge": "Muscles du larynx",
+   "profondeur": 2,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 31.6
+   }
+  },
+  {
+   "id": "crico-arytenoidien-lateral",
+   "nom": "Crico-aryténoïdien latéral",
+   "latin": "Musculus cricoarytendoideus lateralis",
+   "anglais": "Lateral crico-arytenoid muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle crico-aryténoïdien latéral",
+   "ta2": "2198",
+   "loge": "Muscles du larynx",
+   "profondeur": 2,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 29.2
+   }
+  },
+  {
+   "id": "crico-arytenoidien-posterieur",
+   "nom": "Crico-aryténoïdien postérieur",
+   "latin": "Musculus cricoarytenoideus posterior",
+   "anglais": "Posterior crico-arytenoid muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle crico-aryténoïdien postérieur",
+   "ta2": "2196",
+   "loge": "Muscles du larynx",
+   "profondeur": 2,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 35.9
+   }
+  },
+  {
+   "id": "cricothyroidien",
+   "nom": "Cricothyroïdien",
+   "latin": "Musculus cricothyreoideus",
+   "anglais": "Cricothyroid muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle cricothyroïdien",
+   "ta2": "2193",
+   "loge": "Muscles du larynx",
+   "profondeur": 2,
+   "connu": {
+    "parties_modelisees": [
+     "Partie droite du muscle cricothyroïdien",
+     "Partie oblique du muscle cricothyroïdien"
+    ],
+    "profondeur_sous_la_peau_mm": 19.0
+   }
+  },
+  {
+   "id": "digastrique",
+   "nom": "Digastrique",
+   "latin": "Musculus digastricus",
+   "anglais": "Digastric muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle digastrique",
+   "ta2": "2160",
+   "connu": {
+    "action": "Élève l'os hyoïde et abaisse la mandibule (ouvrir la bouche)",
+    "origine": "Ventre postérieur : incisure mastoïdienne ; ventre antérieur : mandibule",
+    "terminaison": "Tendon intermédiaire, fixé à l'os hyoïde",
+    "innervation": "Ventre antérieur : nerf mylo-hyoïdien (V3) ; ventre postérieur : nerf facial (VII)",
+    "memo": "Deux ventres, deux nerfs différents.",
+    "os_de_terminaison_selon_l_atlas": [
+     "Mandibule"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-trijumeau-v",
+     "nom": "Nerf trijumeau (V)"
+    },
+    "parties_modelisees": [
+     "Ventre antérieur du muscle digastrique",
+     "Ventre postérieur du muscle digastrique"
+    ],
+    "profondeur_sous_la_peau_mm": 3.6
+   }
+  },
+  {
+   "id": "iliocostal-du-cou",
+   "nom": "Iliocostal du cou",
+   "latin": "Musculus iliocostalis colli",
+   "anglais": "Iliocostalis colli muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle iliocostal du cou",
+   "ta2": "2261",
+   "loge": "Érecteurs du rachis",
+   "profondeur": 2,
+   "connu": {
+    "os_de_terminaison_selon_l_atlas": [
+     "Vertèbre C4"
+    ],
+    "ensemble": {
+     "id": "ilio-costal",
+     "nom": "Ilio-costal"
+    },
+    "profondeur_sous_la_peau_mm": 21.1
+   }
+  },
+  {
+   "id": "interepineux-du-cou",
+   "nom": "Interépineux du cou",
+   "latin": "Musculi interspinales colli",
+   "anglais": "Interspinales colli muscles",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscles interépineux du cou",
+   "ta2": "2293",
+   "profondeur": 2,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 10.2
+   }
+  },
+  {
+   "id": "longissimus-de-la-tete",
+   "nom": "Longissimus de la tête",
+   "latin": "Musculus longissimus capitis",
+   "anglais": "Longissimus capitis muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle longissimus de la tête",
+   "ta2": "2266",
+   "loge": "Érecteurs du rachis",
+   "profondeur": 2,
+   "connu": {
+    "ensemble": {
+     "id": "longissimus",
+     "nom": "Longissimus"
+    },
+    "profondeur_sous_la_peau_mm": 2.7
+   }
+  },
+  {
+   "id": "longissimus-du-cou",
+   "nom": "Longissimus du cou",
+   "latin": "Musculus longissimus colli",
+   "anglais": "Longissimus colli muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle longissimus du cou",
+   "ta2": "2265",
+   "loge": "Érecteurs du rachis",
+   "profondeur": 2,
+   "connu": {
+    "ensemble": {
+     "id": "longissimus",
+     "nom": "Longissimus"
+    },
+    "profondeur_sous_la_peau_mm": 21.0
+   }
+  },
+  {
+   "id": "multifides-du-cou",
+   "nom": "Multifides du cou",
+   "latin": "Musculus multifidus colli",
+   "anglais": "Multifidus colli muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscles multifides du cou",
+   "ta2": "2279",
+   "loge": "Muscles transversaires épineux",
+   "profondeur": 2,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 20.4
+   }
+  },
+  {
+   "id": "omo-hyoidien",
+   "nom": "Omo-hyoïdien",
+   "latin": "Musculus omohyoideus",
+   "anglais": "Omohyoid muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle omohyoïdien",
+   "ta2": "2169",
+   "connu": {
+    "action": "Abaisse l'os hyoïde",
+    "origine": "Bord supérieur de la scapula",
+    "terminaison": "Os hyoïde",
+    "innervation": "Anse cervicale (C1–C3)",
+    "memo": "Deux ventres reliés par un tendon ; « omo » veut dire épaule.",
+    "os_d_origine_selon_l_atlas": [
+     "Scapula"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Os hyoïde"
+    ],
+    "profondeur_sous_la_peau_mm": 9.0
+   }
+  },
+  {
+   "id": "rotateurs",
+   "nom": "Rotateurs",
+   "latin": "Rotatores",
+   "anglais": "Rotatores",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscles rotateurs",
+   "ta2": "2284",
+   "loge": "Muscles transversaires épineux",
+   "profondeur": 2,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 22.5
+   }
+  },
+  {
+   "id": "scalene-anterieur",
+   "nom": "Scalène antérieur",
+   "latin": "Musculus scalenus anterior",
+   "anglais": "Scalenus anterior muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle scalène antérieur",
+   "ta2": "2152",
+   "connu": {
+    "action": "Élève la première côte (inspiration) ; incline le cou",
+    "origine": "Processus transverses de C3 à C6",
+    "terminaison": "Première côte",
+    "innervation": "Nerfs cervicaux (C4–C6)",
+    "memo": "Entre lui et le scalène moyen passent l'artère subclavière et le plexus brachial.",
+    "os_d_origine_selon_l_atlas": [
+     "Première côte"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Vertèbre C5",
+     "Vertèbre C6",
+     "Vertèbre C4"
+    ],
+    "profondeur_sous_la_peau_mm": 18.3
+   }
+  },
+  {
+   "id": "scalene-moyen",
+   "nom": "Scalène moyen",
+   "latin": "Musculus scalenus medius",
+   "anglais": "Scalenus medius muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle scalène moyen",
+   "ta2": "2153",
+   "connu": {
+    "action": "Élève la première côte ; incline le cou",
+    "origine": "Processus transverses de C2 à C7",
+    "terminaison": "Première côte",
+    "innervation": "Nerfs cervicaux (C3–C8)",
+    "os_d_origine_selon_l_atlas": [
+     "Première côte"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Vertèbre proéminente",
+     "Vertèbre C6"
+    ],
+    "profondeur_sous_la_peau_mm": 18.8
+   }
+  },
+  {
+   "id": "semi-epineux-du-cou",
+   "nom": "Semi-épineux du cou",
+   "latin": "Musculus semispinalis colli",
+   "anglais": "Semispinalis colli muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle semi-épineux du cou",
+   "ta2": "2282",
+   "loge": "Muscles transversaires épineux",
+   "profondeur": 2,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 18.3
+   }
+  },
+  {
+   "id": "splenius-du-cou",
+   "nom": "Splénius du cou",
+   "latin": "Musculus splenius colli",
+   "anglais": "Splenius colli muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle splénius du cou",
+   "ta2": "2274",
+   "profondeur": 2,
+   "connu": {
+    "os_de_terminaison_selon_l_atlas": [
+     "Atlas",
+     "Axis"
+    ],
+    "profondeur_sous_la_peau_mm": 10.6
+   }
+  },
+  {
+   "id": "sterno-hyoidien",
+   "nom": "Sterno-hyoïdien",
+   "latin": "Musculus sternohyoideus",
+   "anglais": "Sternohyoid muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle sternohyoïdien",
+   "ta2": "2168",
+   "connu": {
+    "action": "Abaisse l'os hyoïde (avaler, parler)",
+    "origine": "Face postérieure du manubrium",
+    "terminaison": "Corps de l'os hyoïde",
+    "innervation": "Anse cervicale (C1–C3)",
+    "os_d_origine_selon_l_atlas": [
+     "Clavicule"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Os hyoïde"
+    ],
+    "profondeur_sous_la_peau_mm": 11.5
+   }
+  },
+  {
+   "id": "sterno-thyroidien",
+   "nom": "Sterno-thyroïdien",
+   "latin": "Musculus sternothyreoideus",
+   "anglais": "Sternothyroid muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle sternothyroïdien",
+   "ta2": "2173",
+   "profondeur": 1,
+   "connu": {
+    "action": "Abaisse le larynx",
+    "origine": "Face postérieure du manubrium",
+    "terminaison": "Cartilage thyroïde",
+    "innervation": "Anse cervicale (C1–C3)",
+    "profondeur_sous_la_peau_mm": 18.5
+   }
+  },
+  {
+   "id": "thyro-arytenoidien",
+   "nom": "Thyro-aryténoïdien",
+   "latin": "Musculus thyreoarytenoideus",
+   "anglais": "Thyro-arytenoid muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle thyro-aryténoïdien",
+   "ta2": "2199",
+   "loge": "Muscles du larynx",
+   "profondeur": 2,
+   "connu": {
+    "parties_modelisees": [
+     "Partie externe du muscle thyro-aryténoïdien",
+     "Partie thyro-épiglottique du muscle thyro-aryténoïdien"
+    ],
+    "profondeur_sous_la_peau_mm": 17.3
+   }
+  },
+  {
+   "id": "epineux-du-cou",
+   "nom": "Épineux du cou",
+   "latin": "Musculus spinalis colli",
+   "anglais": "Spinalis colli muscle",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Muscle épineux du cou",
+   "ta2": "2269",
+   "loge": "Érecteurs du rachis",
+   "profondeur": 2,
+   "connu": {
+    "ensemble": {
+     "id": "epineux",
+     "nom": "Épineux"
+    },
+    "profondeur_sous_la_peau_mm": 14.5
+   }
+  }
+ ]
+}

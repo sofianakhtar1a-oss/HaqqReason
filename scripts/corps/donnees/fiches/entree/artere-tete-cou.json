@@ -1,0 +1,858 @@
+{
+ "lot": "artere-tete-cou",
+ "couche": "artere",
+ "structures": [
+  {
+   "id": "carotide-commune",
+   "nom": "Carotide commune",
+   "latin": "Carotis communis",
+   "anglais": "Common carotid artery",
+   "region": "cou",
+   "rang": 0,
+   "officiel": "Artère carotide commune",
+   "ta2": "4366",
+   "connu": {
+    "noms": [
+     "carotide primitive",
+     "carotide"
+    ],
+    "provenance": "Aorte à gauche, tronc brachio-céphalique à droite",
+    "territoire": "Tête et cou",
+    "memo": "Son pouls se prend sur le côté du cou, devant le sterno-cléido-mastoïdien."
+   }
+  },
+  {
+   "id": "subclaviere",
+   "nom": "Artère subclavière",
+   "latin": "Arteria subclavia",
+   "anglais": "Subclavian artery",
+   "region": "cou",
+   "rang": 1,
+   "officiel": "Artère subclavière",
+   "ta2": "4537",
+   "connu": {
+    "noms": [
+     "sous-clavière",
+     "subclavière"
+    ],
+    "provenance": "Aorte à gauche, tronc brachio-céphalique à droite",
+    "territoire": "Membre supérieur, cou, cerveau, paroi du thorax",
+    "memo": "Elle passe sous la clavicule, au-dessus de la première côte."
+   }
+  },
+  {
+   "id": "carotide-externe",
+   "nom": "Carotide externe",
+   "latin": "Carotis externa",
+   "anglais": "External carotid artery",
+   "region": "cou",
+   "rang": 1,
+   "officiel": "Artère carotide externe",
+   "ta2": "4369",
+   "connu": {
+    "provenance": "carotide-commune",
+    "territoire": "Face, cuir chevelu, cou"
+   }
+  },
+  {
+   "id": "carotide-interne",
+   "nom": "Carotide interne",
+   "latin": "Carotis interna",
+   "anglais": "Internal carotid artery",
+   "region": "cou",
+   "rang": 1,
+   "officiel": "Artère carotide interne",
+   "ta2": "4463",
+   "connu": {
+    "provenance": "carotide-commune",
+    "territoire": "Cerveau et œil"
+   }
+  },
+  {
+   "id": "vertebrale",
+   "nom": "Artère vertébrale",
+   "latin": "Arteria vertebralis",
+   "anglais": "Vertebral artery",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Artère vertébrale",
+   "ta2": "4538",
+   "connu": {
+    "noms": [
+     "vertébrale"
+    ],
+    "provenance": "subclaviere",
+    "territoire": "Tronc cérébral, cervelet, arrière du cerveau",
+    "memo": "Elle monte dans les trous des processus transverses des vertèbres cervicales."
+   }
+  },
+  {
+   "id": "artere-alveolaire-inferieure",
+   "nom": "Artère alvéolaire inférieure",
+   "latin": "Arteria alveolaris inferior",
+   "anglais": "Inferior alveolar artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère alvéolaire inférieure",
+   "ta2": "4426"
+  },
+  {
+   "id": "artere-angulaire",
+   "nom": "Artère angulaire",
+   "latin": "Arteria angularis",
+   "anglais": "Angular artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère angulaire",
+   "ta2": "4397"
+  },
+  {
+   "id": "artere-callosomarginale",
+   "nom": "Artère callosomarginale",
+   "latin": "Arteria callosomarginalis",
+   "anglais": "Callosomarginal artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère callosomarginale",
+   "ta2": "4505"
+  },
+  {
+   "id": "artere-centrale-de-la-retine",
+   "nom": "Artère centrale de la rétine",
+   "latin": "Arteria centralis retinae",
+   "anglais": "Central retinal artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère centrale de la rétine",
+   "ta2": "4470"
+  },
+  {
+   "id": "artere-cerebelleuse-infero-anterieure",
+   "nom": "Artère cérébelleuse inféro-antérieure",
+   "latin": "Arteria cerebelli inferior anterior",
+   "anglais": "Anterior inferior cerebellar artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère cérébelleuse inféro-antérieure",
+   "ta2": "4550"
+  },
+  {
+   "id": "artere-cerebelleuse-inferoposterieure",
+   "nom": "Artère cérébelleuse inféropostérieure",
+   "latin": "Arteria cerebelli inferior posterior",
+   "anglais": "Posterior inferior cerebellar artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère cérébelleuse inféropostérieure",
+   "ta2": "4542"
+  },
+  {
+   "id": "artere-cerebelleuse-superieure",
+   "nom": "Artère cérébelleuse supérieure",
+   "latin": "Arteria cerebelli superior",
+   "anglais": "Superior cerebellar artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère cérébelleuse supérieure",
+   "ta2": "4563"
+  },
+  {
+   "id": "artere-cerebrale-moyenne",
+   "nom": "Artère cérébrale moyenne",
+   "latin": "Arteria cerebri media",
+   "anglais": "Middle cerebral artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère cérébrale moyenne",
+   "connu": {
+    "parties_modelisees": [
+     "Artère cérébrale moyenne (segment M1)",
+     "Artère cérébrale moyenne (segment M3)",
+     "Artères insulaires (segment M2)"
+    ]
+   }
+  },
+  {
+   "id": "artere-cerebrale-posterieure",
+   "nom": "Artère cérébrale postérieure",
+   "latin": "Arteria cerebri posterior",
+   "anglais": "Posterior cerebral artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère cérébrale postérieure",
+   "ta2": "4565"
+  },
+  {
+   "id": "artere-du-sillon-central",
+   "nom": "Artère du sillon central",
+   "latin": "Arteria sulci centralis",
+   "anglais": "Artery of central sulcus",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère du sillon central"
+  },
+  {
+   "id": "artere-du-sillon-precentral",
+   "nom": "Artère du sillon précentral",
+   "latin": "Arteria sulci precentralis",
+   "anglais": "Artery of precentral sulcus",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère du sillon précentral"
+  },
+  {
+   "id": "artere-ethmoidale-anterieure",
+   "nom": "Artère ethmoïdale antérieure",
+   "latin": "Arteria ethmoidea anterior",
+   "anglais": "Anterior ethmoidal artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère ethmoïdale antérieure",
+   "ta2": "4487"
+  },
+  {
+   "id": "artere-faciale",
+   "nom": "Artère faciale",
+   "latin": "Arteria facialis",
+   "anglais": "Facial artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère faciale",
+   "ta2": "4388",
+   "connu": {
+    "noms": [
+     "faciale"
+    ],
+    "provenance": "carotide-externe",
+    "territoire": "Lèvres, nez, joues",
+    "memo": "Son pouls se sent sur le bord de la mandibule, juste devant le masséter."
+   }
+  },
+  {
+   "id": "artere-faciale-transverse",
+   "nom": "Artère faciale transverse",
+   "latin": "Arteria transversa faciei",
+   "anglais": "Transverse facial artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère faciale transverse",
+   "ta2": "4416"
+  },
+  {
+   "id": "artere-frontobasale-laterale",
+   "nom": "Artère frontobasale latérale",
+   "latin": "Arteria frontobasalis lateralis",
+   "anglais": "Lateral frontobasal artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère frontobasale latérale"
+  },
+  {
+   "id": "artere-lacrymale",
+   "nom": "Artère lacrymale",
+   "latin": "Arteria lacrimalis",
+   "anglais": "Lacrimal artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère lacrymale",
+   "ta2": "4476"
+  },
+  {
+   "id": "artere-maxillaire",
+   "nom": "Artère maxillaire",
+   "latin": "Arteria maxillaris",
+   "anglais": "Maxillary artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère maxillaire",
+   "ta2": "4422"
+  },
+  {
+   "id": "artere-occipitale-laterale",
+   "nom": "Artère occipitale latérale",
+   "latin": "Arteria occipitalis lateralis",
+   "anglais": "Lateral occipital artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère occipitale latérale",
+   "ta2": "4572"
+  },
+  {
+   "id": "artere-occipitale-mediale",
+   "nom": "Artère occipitale médiale",
+   "latin": "Arteria occipitalis medialis",
+   "anglais": "Medial occipital artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère occipitale médiale",
+   "ta2": "4574"
+  },
+  {
+   "id": "artere-parietale-posterieure",
+   "nom": "Artère pariétale postérieure",
+   "latin": "Arteria parietalis posterior",
+   "anglais": "Posterior parietal artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère pariétale postérieure"
+  },
+  {
+   "id": "artere-parieto-occipitale",
+   "nom": "Artère pariéto-occipitale",
+   "latin": "Arteria paritooccipitale",
+   "anglais": "Parieto-occipital artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère pariéto-occipitale",
+   "ta2": "4571"
+  },
+  {
+   "id": "artere-pharyngienne-ascendante",
+   "nom": "Artère pharyngienne ascendante",
+   "latin": "Arteria pharyngea ascendens",
+   "anglais": "Ascending pharyngeal artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère pharyngienne ascendante",
+   "ta2": "4378"
+  },
+  {
+   "id": "artere-prefrontale",
+   "nom": "Artère préfrontale",
+   "latin": "Arteria prefrontalis",
+   "anglais": "Prefrontal artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère préfrontale"
+  },
+  {
+   "id": "artere-pericalleuse",
+   "nom": "Artère péricalleuse",
+   "latin": "Arteria pericallosa",
+   "anglais": "Pericallosal artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère péricalleuse",
+   "ta2": "4507"
+  },
+  {
+   "id": "artere-submentale",
+   "nom": "Artère submentale",
+   "latin": "Arteria submentalis",
+   "anglais": "Submental artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère submentale",
+   "ta2": "4391"
+  },
+  {
+   "id": "artere-supra-orbitaire",
+   "nom": "Artère supra-orbitaire",
+   "latin": "Arteria supraorbitalis",
+   "anglais": "Supra-orbital artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère supra-orbitaire",
+   "ta2": "4486"
+  },
+  {
+   "id": "artere-supratrochleaire",
+   "nom": "Artère supratrochléaire",
+   "latin": "Arteria supratrochlearis",
+   "anglais": "Supratrochlear artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère supratrochléaire",
+   "ta2": "4499"
+  },
+  {
+   "id": "artere-temporale-profonde-anterieure",
+   "nom": "Artère temporale profonde antérieure",
+   "latin": "Arteria temporalis profunda anterior",
+   "anglais": "Anterior deep temporal artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère temporale profonde antérieure",
+   "ta2": "4440"
+  },
+  {
+   "id": "artere-temporale-profonde-posterieure",
+   "nom": "Artère temporale profonde postérieure",
+   "latin": "Arteria temporalis profunda posterior",
+   "anglais": "Posterior deep temporal artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère temporale profonde postérieure",
+   "ta2": "4441"
+  },
+  {
+   "id": "temporale-superficielle",
+   "nom": "Artère temporale superficielle",
+   "latin": "Arteria temporalis superficialis",
+   "anglais": "Superficial temporal artery",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Artère temporale superficielle",
+   "ta2": "4413",
+   "connu": {
+    "noms": [
+     "temporale superficielle"
+    ],
+    "provenance": "carotide-externe",
+    "territoire": "Tempe et cuir chevelu",
+    "memo": "Son pouls se sent juste devant l'oreille."
+   }
+  },
+  {
+   "id": "artere-cervicale-profonde",
+   "nom": "Artère cervicale profonde",
+   "latin": "Arteria cervicalis profunda",
+   "anglais": "Deep cervical artery",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Artère cervicale profonde",
+   "ta2": "4608"
+  },
+  {
+   "id": "artere-thyroidienne-inferieure",
+   "nom": "Artère thyroïdienne inférieure",
+   "latin": "Arteria thyreoidea inferior arteria thyroidea inferior",
+   "anglais": "Inferior thyroid artery",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Artère thyroïdienne inférieure",
+   "ta2": "4591"
+  },
+  {
+   "id": "artere-transverse-du-cou",
+   "nom": "Artère transverse du cou",
+   "latin": "Arteria transversa colli arteria transversa cervicis",
+   "anglais": "Transverse cervical artery",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Artère transverse du cou",
+   "ta2": "4601"
+  },
+  {
+   "id": "artere-alveolaire-superoposterieure",
+   "nom": "Artère alvéolaire supéropostérieure",
+   "latin": "Arteria alveolaris superior posterior",
+   "anglais": "Posterior superior alveolar artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère alvéolaire supéropostérieure",
+   "ta2": "4444"
+  },
+  {
+   "id": "artere-basilaire",
+   "nom": "Artère basilaire",
+   "latin": "Arteria basilaris",
+   "anglais": "Basilar artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère basilaire",
+   "ta2": "4548"
+  },
+  {
+   "id": "artere-buccale",
+   "nom": "Artère buccale",
+   "latin": "Arteria buccalis",
+   "anglais": "Buccal artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère buccale",
+   "ta2": "4443"
+  },
+  {
+   "id": "artere-communiquante-anterieure",
+   "nom": "Artère communiquante antérieure",
+   "latin": "Arteria communicans anterior",
+   "anglais": "Anterior communicating artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère communiquante antérieure",
+   "ta2": "4517"
+  },
+  {
+   "id": "artere-communiquante-posterieure",
+   "nom": "Artère communiquante postérieure",
+   "latin": "Arteria communicans posterior",
+   "anglais": "Posterior communicating artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère communiquante postérieure",
+   "ta2": "4521"
+  },
+  {
+   "id": "artere-cerebrale-anterieure",
+   "nom": "Artère cérébrale antérieure",
+   "latin": "Arteria cerebri anterior",
+   "anglais": "Anterior cerebral artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère cérébrale antérieure",
+   "ta2": "4502"
+  },
+  {
+   "id": "artere-cerebrale-moyenne-segment-m3",
+   "nom": "Artère cérébrale moyenne (Segment M3)",
+   "latin": "Arteria cerebri media (Pars M3)",
+   "anglais": "Middle cerebral artery (M3-segment)",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère cérébrale moyenne (Segment M3)",
+   "ta2": "4509*3"
+  },
+  {
+   "id": "artere-du-canal-pterygoidien",
+   "nom": "Artère du canal ptérygoïdien",
+   "latin": "Arteria canalis pterygoidei",
+   "anglais": "Artery of pterygoid canal",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère du canal ptérygoïdien",
+   "ta2": "4454"
+  },
+  {
+   "id": "artere-ethmoidale-posterieure",
+   "nom": "Artère ethmoïdale postérieure",
+   "latin": "Arteria ethmoidea posterior",
+   "anglais": "Posterior ethmoidal artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère ethmoïdale postérieure",
+   "ta2": "4492"
+  },
+  {
+   "id": "artere-grande-palatine",
+   "nom": "Artère grande palatine",
+   "latin": "Arteria palatina major",
+   "anglais": "Greater palatine artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère grande palatine",
+   "ta2": "4457"
+  },
+  {
+   "id": "artere-infra-orbitaire",
+   "nom": "Artère infra-orbitaire",
+   "latin": "Arteria infraorbitalis",
+   "anglais": "Infra-orbital artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère infra-orbitaire",
+   "ta2": "4447"
+  },
+  {
+   "id": "artere-labiale-inferieure",
+   "nom": "Artère labiale inférieure",
+   "latin": "Arteria labialis inferior",
+   "anglais": "Inferior labial artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère labiale inférieure",
+   "ta2": "4393"
+  },
+  {
+   "id": "artere-labiale-superieure",
+   "nom": "Artère labiale supérieure",
+   "latin": "Arteria labialis superior",
+   "anglais": "Superior labial artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère labiale supérieure",
+   "ta2": "4394"
+  },
+  {
+   "id": "artere-meningee-moyenne",
+   "nom": "Artère méningée moyenne",
+   "latin": "Arteria meningea media",
+   "anglais": "Middle meningeal artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère méningée moyenne",
+   "ta2": "4431"
+  },
+  {
+   "id": "artere-occipitale",
+   "nom": "Artère occipitale",
+   "latin": "Arteria occipitalis",
+   "anglais": "Occipital artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère occipitale",
+   "ta2": "4398",
+   "connu": {
+    "noms": [
+     "occipitale"
+    ],
+    "provenance": "carotide-externe",
+    "territoire": "Arrière du cuir chevelu, muscles de la nuque"
+   }
+  },
+  {
+   "id": "artere-ophtalmique",
+   "nom": "Artère ophtalmique",
+   "latin": "Arteria ophthalmica",
+   "anglais": "Ophthalmic artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère ophtalmique",
+   "ta2": "4469"
+  },
+  {
+   "id": "artere-palatine-descendante",
+   "nom": "Artère palatine descendante",
+   "latin": "Arteria palatina descendens",
+   "anglais": "Descending palatine artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère palatine descendante",
+   "ta2": "4456"
+  },
+  {
+   "id": "artere-spinale-anterieure",
+   "nom": "Artère spinale antérieure",
+   "latin": "Arteria spinalis anterior",
+   "anglais": "Anterior spinal artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artère spinale antérieure",
+   "ta2": "4525"
+  },
+  {
+   "id": "arteres-ciliaires-posterieures-courtes",
+   "nom": "Artères ciliaires postérieures courtes",
+   "latin": "Arteriae ciliares posteriores breves",
+   "anglais": "Short posterior ciliary arteries",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artères ciliaires postérieures courtes",
+   "ta2": "4479"
+  },
+  {
+   "id": "arteres-ciliaires-posterieures-longues",
+   "nom": "Artères ciliaires postérieures longues",
+   "latin": "Arteriae ciliares posteriores longae",
+   "anglais": "Long posterior ciliary arteries",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Artères ciliaires postérieures longues",
+   "ta2": "4481"
+  },
+  {
+   "id": "branche-accessoire-de-l-artere-meningee-moyenne",
+   "nom": "Branche accessoire de l'artère méningée moyenne",
+   "latin": "Ramus accessorius arteriae meningeae mediae",
+   "anglais": "Accessory branch of middle meningeal artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branche accessoire de l'artère méningée moyenne",
+   "ta2": "4432"
+  },
+  {
+   "id": "branche-arterielle-postcentrale",
+   "nom": "Branche artérielle postcentrale",
+   "latin": "Ramus arteriosus postcentralis",
+   "anglais": "Postcentral arterial branch",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branche artérielle postcentrale",
+   "ta2": "4530"
+  },
+  {
+   "id": "branche-frontale-de-l-artere-temporale-superficielle",
+   "nom": "Branche frontale de l'artère temporale superficielle",
+   "latin": "Ramus fontale arteriae temporalis superficialis",
+   "anglais": "Frontal branch of superficial temporal artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branche frontale de l'artère temporale superficielle",
+   "ta2": "4420"
+  },
+  {
+   "id": "branche-mentonniere-de-l-artere-alveolaire-inferieure",
+   "nom": "Branche mentonnière de l'artère alvéolaire inférieure",
+   "latin": "Ramus mentalis arteriae alveolaris inferioris",
+   "anglais": "Mental branch of inferior alveolar artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branche mentonnière de l'artère alvéolaire inférieure",
+   "ta2": "4430"
+  },
+  {
+   "id": "branche-mylohyoidien-de-l-artere-alveolaire-inferieure",
+   "nom": "Branche mylohyoïdien de l'artère alvéolaire inférieure",
+   "latin": "Ramus mylohyoideus arteriae alveolaris inferioris",
+   "anglais": "Mylohyoid branch of inferior alveolar artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branche mylohyoïdien de l'artère alvéolaire inférieure",
+   "ta2": "4427"
+  },
+  {
+   "id": "branches-frontales-de-l-artere-callosomarginale",
+   "nom": "Branches frontales de l'artère callosomarginale",
+   "latin": "Rami frontales arteriae callosomarginal",
+   "anglais": "Frontal branches of callosomarginal artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branches frontales de l'artère callosomarginale",
+   "ta2": "4506"
+  },
+  {
+   "id": "branches-insulaires-de-l-artere-cerebrale-moyenne-m2",
+   "nom": "Branches insulaires de l'artère cérébrale moyenne (M2)",
+   "latin": "Rami insulares arteriae mediae cerebri (M2)",
+   "anglais": "Insular branches of middle cerebral artery (M2)",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branches insulaires de l'artère cérébrale moyenne (M2)",
+   "ta2": "4512"
+  },
+  {
+   "id": "branches-nasales-posterolaterales-artere-sphenopalatine",
+   "nom": "Branches nasales postérolatérales-artère sphénopalatine",
+   "latin": "Rami nasales latérales posteriores arteriae sphenopalatinae",
+   "anglais": "Posterior lateral nasal branches of sphenopalatine artery.",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branches nasales postérolatérales-artère sphénopalatine",
+   "ta2": "4461"
+  },
+  {
+   "id": "branches-oritofrontales-de-l-artere-cerebrale-anterieure",
+   "nom": "Branches oritofrontales de l'artère cérébrale antérieure",
+   "latin": "Rami orbitofrontales arteriae cerebri anterior",
+   "anglais": "Orbitofrontal branches of anterior cerebral artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branches oritofrontales de l'artère cérébrale antérieure",
+   "ta2": "4504"
+  },
+  {
+   "id": "branches-parietales-de-l-artere-cerebrale-moyenne",
+   "nom": "Branches pariétales de l'artère cérébrale moyenne",
+   "latin": "Rami pariétales arteriae mediae cerebri",
+   "anglais": "Parietal branches of middle cerebral artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branches pariétales de l'artère cérébrale moyenne",
+   "ta2": "4515"
+  },
+  {
+   "id": "branches-pontines-laterales-de-l-artere-basilaire",
+   "nom": "Branches pontines latérales de l'artère basilaire",
+   "latin": "Rami laterales pontis arteriae basilaris",
+   "anglais": "Lateral pontine branches of basilar artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branches pontines latérales de l'artère basilaire",
+   "ta2": "4561"
+  },
+  {
+   "id": "branches-pontines-mediales-de-l-artere-basilaire",
+   "nom": "Branches pontines médiales de l'artère basilaire",
+   "latin": "Rami mediales pontis arteriae basilaris",
+   "anglais": "Medial pontine branches of basilar artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branches pontines médiales de l'artère basilaire",
+   "ta2": "4560"
+  },
+  {
+   "id": "branches-septales-anterieures-de-l-artere-ethmoidale-ant",
+   "nom": "Branches septales antérieures de l'artère ethmoïdale ant.",
+   "latin": "Rami septales anteriores arteriae ethmoideae anterioris",
+   "anglais": "Anterior septal branches of anterior ethmoidal artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branches septales antérieures de l'artère ethmoïdale ant.",
+   "ta2": "4489"
+  },
+  {
+   "id": "branches-septales-posterieures-de-l-artere-sphenopalatine",
+   "nom": "Branches septales postérieures de l'artère sphénopalatine",
+   "latin": "Rami septales posteriores arteriae sphenopalatinae",
+   "anglais": "Posterior septal branches of sphenopalatine artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branches septales postérieures de l'artère sphénopalatine",
+   "ta2": "4462"
+  },
+  {
+   "id": "branches-temporales-de-l-artere-cerebrale-moyenne",
+   "nom": "Branches temporales de l'artère cérébrale moyenne",
+   "latin": "Rami temporales arteriae mediae cerebri",
+   "anglais": "Temporal branches of middle cerebral artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branches temporales de l'artère cérébrale moyenne",
+   "ta2": "4513"
+  },
+  {
+   "id": "rameau-du-gyrus-angulaire",
+   "nom": "Rameau du gyrus angulaire",
+   "latin": "Ramus gyri angularis",
+   "anglais": "Branch to angular gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Rameau du gyrus angulaire"
+  },
+  {
+   "id": "rameau-temporal-anterieur",
+   "nom": "Rameau temporal antérieur",
+   "latin": "Ramus temporalis anterior",
+   "anglais": "Anterior temporal branch",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Rameau temporal antérieur"
+  },
+  {
+   "id": "rameau-temporal-posterieur",
+   "nom": "Rameau temporal postérieur",
+   "latin": "Ramus temporalis posterior",
+   "anglais": "Posterior temporal branch",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Rameau temporal postérieur"
+  },
+  {
+   "id": "rameau-temporo-occipital",
+   "nom": "Rameau temporo-occipital",
+   "latin": "Ramus temporooccipitalis",
+   "anglais": "Temporo-occipital branch",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Rameau temporo-occipital"
+  },
+  {
+   "id": "rameaux-septaux-de-l-artere-ethmoidale-posterieure",
+   "nom": "Rameaux septaux de l'artère ethmoïdale postérieure",
+   "latin": "Rami septales arteriae ethmoideae posterioris",
+   "anglais": "Septal branches of posterior ethmoidal artery",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Rameaux septaux de l'artère ethmoïdale postérieure",
+   "ta2": "4494"
+  },
+  {
+   "id": "rameaux-stries-lateraux-distaux",
+   "nom": "Rameaux striés latéraux distaux",
+   "latin": "Rami striati laterales distales",
+   "anglais": "Distal lateral striate branches",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Rameaux striés latéraux distaux"
+  },
+  {
+   "id": "rameaux-stries-lateraux-proximaux",
+   "nom": "Rameaux striés latéraux proximaux",
+   "latin": "Rami striati laterales proximales",
+   "anglais": "Proximal lateral striate branches",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Rameaux striés latéraux proximaux"
+  }
+ ]
+}

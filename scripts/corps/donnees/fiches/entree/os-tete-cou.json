@@ -1,0 +1,717 @@
+{
+ "lot": "os-tete-cou",
+ "couche": "os",
+ "structures": [
+  {
+   "id": "vertebres-cervicales",
+   "nom": "Vertèbres cervicales",
+   "latin": "Vertebrae cervicales",
+   "anglais": "Cervical vertebrae",
+   "region": "cou",
+   "rang": 0,
+   "connu": {
+    "noms": [
+     "cervicales"
+    ],
+    "sorte": "irregulier",
+    "articulations": [
+     "axis",
+     "c7"
+    ],
+    "memo": "Sept au cou, chez presque tous les mammifères — même chez la girafe.",
+    "nombre": 7,
+    "membres": [
+     {
+      "id": "vertebre-c3",
+      "nom": "Vertèbre C3"
+     },
+     {
+      "id": "vertebre-c4",
+      "nom": "Vertèbre C4"
+     },
+     {
+      "id": "vertebre-c5",
+      "nom": "Vertèbre C5"
+     },
+     {
+      "id": "vertebre-c6",
+      "nom": "Vertèbre C6"
+     }
+    ]
+   }
+  },
+  {
+   "id": "mandibule",
+   "nom": "Mandibule",
+   "latin": "Mandibula",
+   "anglais": "Mandible",
+   "region": "tete",
+   "rang": 0,
+   "officiel": "Mandibule",
+   "ta2": "835",
+   "connu": {
+    "noms": [
+     "maxillaire inférieur",
+     "mâchoire"
+    ],
+    "sorte": "irregulier",
+    "articulations": [
+     "temporal"
+    ],
+    "memo": "Le seul os mobile du crâne.",
+    "anecdote": "C'est l'os le plus solide de la face."
+   }
+  },
+  {
+   "id": "frontal",
+   "nom": "Os frontal",
+   "latin": "Os frontale",
+   "anglais": "Frontal bone",
+   "region": "tete",
+   "rang": 0,
+   "officiel": "Os frontal",
+   "ta2": "520",
+   "connu": {
+    "noms": [
+     "frontal"
+    ],
+    "sorte": "plat",
+    "articulations": [
+     "parietal",
+     "os-nasaux",
+     "maxillaire",
+     "zygomatique",
+     "sphenoide"
+    ],
+    "memo": "L'os du front ; il forme aussi le toit des orbites."
+   }
+  },
+  {
+   "id": "atlas",
+   "nom": "Atlas",
+   "latin": "Atlas (C1)",
+   "anglais": "Atlas (C1)",
+   "region": "cou",
+   "rang": 1,
+   "officiel": "Atlas (C1)",
+   "ta2": "1038",
+   "connu": {
+    "noms": [
+     "c1",
+     "première vertèbre cervicale"
+    ],
+    "sorte": "irregulier",
+    "articulations": [
+     "occipital",
+     "axis"
+    ],
+    "memo": "Il porte la tête comme le titan Atlas portait le ciel ; il n'a pas de corps vertébral."
+   }
+  },
+  {
+   "id": "maxillaire",
+   "nom": "Maxillaire",
+   "latin": "Maxilla",
+   "anglais": "Maxilla",
+   "region": "tete",
+   "rang": 1,
+   "officiel": "Os maxillaire",
+   "ta2": "756",
+   "connu": {
+    "noms": [
+     "maxilla",
+     "maxillaire supérieur"
+    ],
+    "sorte": "irregulier",
+    "articulations": [
+     "frontal",
+     "os-nasaux",
+     "zygomatique",
+     "sphenoide"
+    ],
+    "memo": "Il porte les dents du haut et forme le plancher des orbites."
+   }
+  },
+  {
+   "id": "occipital",
+   "nom": "Os occipital",
+   "latin": "Os occipitale",
+   "anglais": "Occipital bone",
+   "region": "tete",
+   "rang": 1,
+   "officiel": "Os occipital",
+   "ta2": "552",
+   "connu": {
+    "noms": [
+     "occipital"
+    ],
+    "sorte": "plat",
+    "articulations": [
+     "parietal",
+     "temporal",
+     "sphenoide",
+     "atlas"
+    ],
+    "memo": "Percé du foramen magnum, par où passe la moelle épinière."
+   }
+  },
+  {
+   "id": "parietal",
+   "nom": "Pariétal",
+   "latin": "Os parietale",
+   "anglais": "Parietal bone",
+   "region": "tete",
+   "rang": 1,
+   "officiel": "Os pariétal",
+   "ta2": "504",
+   "connu": {
+    "noms": [
+     "os pariétal"
+    ],
+    "sorte": "plat",
+    "articulations": [
+     "frontal",
+     "occipital",
+     "temporal",
+     "sphenoide"
+    ],
+    "memo": "Les deux pariétaux forment le dôme du crâne, réunis par la suture sagittale."
+   }
+  },
+  {
+   "id": "temporal",
+   "nom": "Temporal",
+   "latin": "Os temporale",
+   "anglais": "Temporal bone",
+   "region": "tete",
+   "rang": 1,
+   "officiel": "Os temporal",
+   "ta2": "641",
+   "connu": {
+    "noms": [
+     "os temporal"
+    ],
+    "sorte": "irregulier",
+    "articulations": [
+     "parietal",
+     "occipital",
+     "sphenoide",
+     "zygomatique",
+     "mandibule"
+    ],
+    "memo": "Il abrite l'oreille moyenne et l'oreille interne.",
+    "anecdote": "Il contient les trois plus petits os du corps : le marteau, l'enclume et l'étrier."
+   }
+  },
+  {
+   "id": "zygomatique",
+   "nom": "Zygomatique",
+   "latin": "Os zygomaticum",
+   "anglais": "Zygomatic bone",
+   "region": "tete",
+   "rang": 1,
+   "officiel": "Os zygomatique",
+   "ta2": "818",
+   "connu": {
+    "noms": [
+     "os zygomatique",
+     "malaire",
+     "os malaire",
+     "pommette"
+    ],
+    "sorte": "irregulier",
+    "articulations": [
+     "frontal",
+     "maxillaire",
+     "temporal",
+     "sphenoide"
+    ],
+    "memo": "L'os de la pommette ; avec le temporal, il forme l'arcade zygomatique."
+   }
+  },
+  {
+   "id": "axis",
+   "nom": "Axis",
+   "latin": "Axis (C2)",
+   "anglais": "Axis (C2)",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Axis (C2)",
+   "ta2": "1050",
+   "connu": {
+    "noms": [
+     "c2",
+     "deuxième vertèbre cervicale"
+    ],
+    "sorte": "irregulier",
+    "articulations": [
+     "atlas",
+     "vertebres-cervicales"
+    ],
+    "memo": "Sa dent sert de pivot à l'atlas : c'est elle qui permet de dire « non » de la tête."
+   }
+  },
+  {
+   "id": "cartilage-cricoide",
+   "nom": "Cartilage cricoïde",
+   "latin": "Cartilago cricoidea",
+   "anglais": "Cricoid cartilage",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Cartilage cricoïde",
+   "ta2": "978",
+   "nature": "cartilage"
+  },
+  {
+   "id": "cartilage-thyroide",
+   "nom": "Cartilage thyroïde",
+   "latin": "Cartilago thyreoidea",
+   "anglais": "Thyroid cartilage",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Cartilage thyroïde",
+   "ta2": "967",
+   "nature": "cartilage"
+  },
+  {
+   "id": "hyoide",
+   "nom": "Os hyoïde",
+   "latin": "Os hyoideum",
+   "anglais": "Hyoid bone",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Os hyoïde",
+   "ta2": "876",
+   "connu": {
+    "noms": [
+     "hyoïde"
+    ],
+    "sorte": "irregulier",
+    "memo": "Le seul os du corps qui ne s'articule avec aucun autre : il est suspendu par des muscles et des ligaments."
+   }
+  },
+  {
+   "id": "c7",
+   "nom": "Vertèbre proéminente",
+   "latin": "Vertebra cervicalis VII",
+   "anglais": "Vertebra C7",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Vertèbre C7",
+   "ta2": "1032*7",
+   "connu": {
+    "noms": [
+     "c7",
+     "septième vertèbre cervicale"
+    ],
+    "sorte": "irregulier",
+    "articulations": [
+     "vertebres-cervicales",
+     "vertebres-thoraciques"
+    ],
+    "memo": "Son long processus épineux se sent sous la peau, à la base de la nuque."
+   }
+  },
+  {
+   "id": "cornet-nasal-inferieur",
+   "nom": "Cornet nasal inférieur",
+   "latin": "Concha nasalis inferior",
+   "anglais": "Inferior nasal concha bone",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Cornet nasal inférieur",
+   "ta2": "740"
+  },
+  {
+   "id": "enclume",
+   "nom": "Enclume",
+   "latin": "Incus",
+   "anglais": "Incus",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Enclume",
+   "ta2": "888"
+  },
+  {
+   "id": "marteau",
+   "nom": "Marteau",
+   "latin": "Malleus",
+   "anglais": "Malleus",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Marteau",
+   "ta2": "881"
+  },
+  {
+   "id": "os-ethmoide",
+   "nom": "Os ethmoïde",
+   "latin": "Os ethmoideum",
+   "anglais": "Ethmoid bone",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Os ethmoïde",
+   "ta2": "721"
+  },
+  {
+   "id": "os-lacrymal",
+   "nom": "Os lacrymal",
+   "latin": "Os lacrimale",
+   "anglais": "Lacrimal bone",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Os lacrymal",
+   "ta2": "744"
+  },
+  {
+   "id": "os-nasaux",
+   "nom": "Os nasaux",
+   "latin": "Os nasale",
+   "anglais": "Nasal bone",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Os nasal",
+   "ta2": "748",
+   "connu": {
+    "noms": [
+     "os nasal",
+     "os propres du nez"
+    ],
+    "sorte": "plat",
+    "articulations": [
+     "frontal",
+     "maxillaire"
+    ],
+    "memo": "Ils forment l'arête osseuse du nez ; le reste est du cartilage.",
+    "nombre": 2
+   }
+  },
+  {
+   "id": "os-palatin",
+   "nom": "Os palatin",
+   "latin": "Os palatinum",
+   "anglais": "Palatine bone",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Os palatin",
+   "ta2": "798"
+  },
+  {
+   "id": "vomer",
+   "nom": "Vomer",
+   "latin": "Vomer",
+   "anglais": "Vomer",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Vomer",
+   "ta2": "751"
+  },
+  {
+   "id": "etrier",
+   "nom": "Étrier",
+   "latin": "Stapes",
+   "anglais": "Stapes",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Étrier",
+   "ta2": "895"
+  },
+  {
+   "id": "cartilage-arytenoide",
+   "nom": "Cartilage aryténoïde",
+   "latin": "Cartilago arytenoidea",
+   "anglais": "Arytenoid cartilage",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Cartilage aryténoïde",
+   "ta2": "983",
+   "nature": "cartilage"
+  },
+  {
+   "id": "cartilages-cornicules",
+   "nom": "Cartilages corniculés",
+   "latin": "Cartilago corniculata",
+   "anglais": "Corniculate cartilage",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Cartilages corniculés",
+   "ta2": "997",
+   "nature": "cartilage"
+  },
+  {
+   "id": "vertebre-c3",
+   "nom": "Vertèbre C3",
+   "latin": "Vertebra cervicalis III",
+   "anglais": "Vertebra C3",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Vertèbre C3",
+   "ta2": "1032*3",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-cervicales",
+     "nom": "Vertèbres cervicales"
+    }
+   }
+  },
+  {
+   "id": "vertebre-c4",
+   "nom": "Vertèbre C4",
+   "latin": "Vertebra cervicalis IV",
+   "anglais": "Vertebra C4",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Vertèbre C4",
+   "ta2": "1032*4",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-cervicales",
+     "nom": "Vertèbres cervicales"
+    }
+   }
+  },
+  {
+   "id": "vertebre-c5",
+   "nom": "Vertèbre C5",
+   "latin": "Vertebra cervicalis V",
+   "anglais": "Vertebra C5",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Vertèbre C5",
+   "ta2": "1032*5",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-cervicales",
+     "nom": "Vertèbres cervicales"
+    }
+   }
+  },
+  {
+   "id": "vertebre-c6",
+   "nom": "Vertèbre C6",
+   "latin": "Vertebra cervicalis VI",
+   "anglais": "Vertebra C6",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Vertèbre C6",
+   "ta2": "1055",
+   "connu": {
+    "ensemble": {
+     "id": "vertebres-cervicales",
+     "nom": "Vertèbres cervicales"
+    }
+   }
+  },
+  {
+   "id": "cartilage-septal-nasal",
+   "nom": "Cartilage septal nasal",
+   "latin": "Cartilago septi nasi",
+   "anglais": "Nasal septal cartilage",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Cartilage septal nasal",
+   "ta2": "946",
+   "nature": "cartilage"
+  },
+  {
+   "id": "dent-canine-inferieure",
+   "nom": "Dent canine inférieure",
+   "latin": "Dens caninus inferioris",
+   "anglais": "Lower canine",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Dent canine inférieure",
+   "ta2": "907*33",
+   "nature": "dent"
+  },
+  {
+   "id": "dent-canine-superieure",
+   "nom": "Dent canine supérieure",
+   "latin": "Dens caninus superioris",
+   "anglais": "Upper canine",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Dent canine supérieure",
+   "ta2": "907*13",
+   "nature": "dent"
+  },
+  {
+   "id": "dent-incisive-inferolaterale",
+   "nom": "Dent incisive inférolatérale",
+   "latin": "Dens incisivus lateralis inferioris",
+   "anglais": "Lower lateral incisor",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Dent incisive inférolatérale",
+   "ta2": "906*32",
+   "nature": "dent"
+  },
+  {
+   "id": "dent-incisive-inferomediale",
+   "nom": "Dent incisive inféromédiale",
+   "latin": "Dens incisivus medialis inferioris",
+   "anglais": "Lower medial incisor",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Dent incisive inféromédiale",
+   "ta2": "906*31",
+   "nature": "dent"
+  },
+  {
+   "id": "dent-incisive-superolaterale",
+   "nom": "Dent incisive supérolatérale",
+   "latin": "Dens incisivus lateralis superioris",
+   "anglais": "Upper lateral incisor",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Dent incisive supérolatérale",
+   "ta2": "906*12",
+   "nature": "dent"
+  },
+  {
+   "id": "dent-incisive-superomediale",
+   "nom": "Dent incisive supéromédiale",
+   "latin": "Dens incisivus medialis superioris",
+   "anglais": "Upper medial incisor",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Dent incisive supéromédiale",
+   "ta2": "906*11",
+   "nature": "dent"
+  },
+  {
+   "id": "deuxieme-molaire-inferieure",
+   "nom": "Deuxième molaire inférieure",
+   "latin": "Dens molaris secundus inferioris",
+   "anglais": "Lower second molar tooth",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Deuxième molaire inférieure",
+   "ta2": "910*37",
+   "nature": "dent"
+  },
+  {
+   "id": "deuxieme-molaire-superieure",
+   "nom": "Deuxième molaire supérieure",
+   "latin": "Dens molaris secundus superioris",
+   "anglais": "Upper second molar tooth",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Deuxième molaire supérieure",
+   "ta2": "910*17",
+   "nature": "dent"
+  },
+  {
+   "id": "deuxieme-premolaire-inferieure",
+   "nom": "Deuxième prémolaire inférieure",
+   "latin": "Dens premolaris secundus inferioris",
+   "anglais": "Lower second premolar",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Deuxième prémolaire inférieure",
+   "ta2": "909*35",
+   "nature": "dent"
+  },
+  {
+   "id": "deuxieme-premolaire-superieure",
+   "nom": "Deuxième prémolaire supérieure",
+   "latin": "Dens premolaris secundus superioris",
+   "anglais": "Upper second premolar",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Deuxième prémolaire supérieure",
+   "ta2": "909*15",
+   "nature": "dent"
+  },
+  {
+   "id": "grand-cartilage-alaire",
+   "nom": "Grand cartilage alaire",
+   "latin": "Cartilago alaris major",
+   "anglais": "Major alar cartilage",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Grand cartilage alaire",
+   "ta2": "940",
+   "nature": "cartilage"
+  },
+  {
+   "id": "premiere-molaire-inferieure",
+   "nom": "Première molaire inférieure",
+   "latin": "Dens molaris primus inferioris",
+   "anglais": "Lower first molar tooth",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Première molaire inférieure",
+   "ta2": "910*36",
+   "nature": "dent"
+  },
+  {
+   "id": "premiere-molaire-superieure",
+   "nom": "Première molaire supérieure",
+   "latin": "Dens molaris primus suprioris",
+   "anglais": "Upper first molar tooth",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Première molaire supérieure",
+   "ta2": "910*16",
+   "nature": "dent"
+  },
+  {
+   "id": "premiere-premolaire-inferieure",
+   "nom": "Première prémolaire inférieure",
+   "latin": "Dens premolaris primus inferioris",
+   "anglais": "Lower first premolar",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Première prémolaire inférieure",
+   "ta2": "909*34",
+   "nature": "dent"
+  },
+  {
+   "id": "premiere-premolaire-superieure",
+   "nom": "Première prémolaire supérieure",
+   "latin": "Dens premolaris primus superioris",
+   "anglais": "Upper first premolar",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Première prémolaire supérieure",
+   "ta2": "909*14",
+   "nature": "dent"
+  },
+  {
+   "id": "processus-lateral-du-cartilage-septal",
+   "nom": "Processus latéral du cartilage septal",
+   "latin": "Processus lateralis cartilaginis septi nasi",
+   "anglais": "Lateral process of nasal septal cartilage",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Processus latéral du cartilage septal",
+   "ta2": "947",
+   "nature": "cartilage"
+  },
+  {
+   "id": "sphenoide",
+   "nom": "Sphénoïde",
+   "latin": "Os sphenoideum",
+   "anglais": "Sphenoid bone",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Os sphénoïde",
+   "ta2": "584",
+   "connu": {
+    "noms": [
+     "os sphénoïde"
+    ],
+    "sorte": "irregulier",
+    "articulations": [
+     "frontal",
+     "parietal",
+     "temporal",
+     "occipital",
+     "zygomatique",
+     "maxillaire"
+    ],
+    "memo": "En forme de papillon, au centre de la base du crâne : il touche tous les autres os du crâne."
+   }
+  }
+ ]
+}

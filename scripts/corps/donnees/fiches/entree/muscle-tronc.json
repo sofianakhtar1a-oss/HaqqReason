@@ -1,0 +1,1064 @@
+{
+ "lot": "muscle-tronc",
+ "couche": "muscle",
+ "structures": [
+  {
+   "id": "droit-abdomen",
+   "nom": "Droit de l'abdomen",
+   "latin": "Musculus rectus abdominis",
+   "anglais": "Rectus abdominis muscle",
+   "region": "abdomen",
+   "rang": 0,
+   "officiel": "Muscle droit de l'abdomen",
+   "ta2": "2357",
+   "loge": "Paroi de l'abdomen",
+   "connu": {
+    "noms": [
+     "grand droit",
+     "grand droit de l'abdomen",
+     "abdominaux"
+    ],
+    "action": "Fléchit le tronc ; comprime l'abdomen",
+    "origine": "Crête et symphyse pubiennes",
+    "terminaison": "Processus xiphoïde et cartilages costaux 5 à 7",
+    "innervation": "Nerfs intercostaux 7 à 11 et subcostal",
+    "memo": "Ses intersections tendineuses dessinent les « tablettes de chocolat ».",
+    "os_d_origine_selon_l_atlas": [
+     "Cartilage costal de la cinquième côte"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Cartilage costal de la septième côte"
+    ],
+    "profondeur_sous_la_peau_mm": 7.8
+   }
+  },
+  {
+   "id": "grand-dorsal",
+   "nom": "Grand dorsal",
+   "latin": "Musculus latissimus dorsi",
+   "anglais": "Latissimus dorsi muscle",
+   "region": "dos",
+   "rang": 0,
+   "officiel": "Muscle grand dorsal",
+   "ta2": "2231",
+   "loge": "Muscles superficiels du dos",
+   "connu": {
+    "noms": [
+     "dorsaux"
+    ],
+    "action": "Tire le bras levé vers le bas et en arrière, le rapproche du corps et le tourne en dedans",
+    "origine": "Processus épineux de T7 à L5 et sacrum (par le fascia thoraco-lombaire), crête iliaque, côtes 9 à 12",
+    "terminaison": "Fond du sillon intertuberculaire de l'humérus",
+    "innervation": "Nerf thoraco-dorsal (C6–C8)",
+    "memo": "Le muscle du grimpeur et du nageur.",
+    "anecdote": "C'est le muscle le plus large du corps.",
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Scapula"
+    ],
+    "profondeur_sous_la_peau_mm": 3.4
+   }
+  },
+  {
+   "id": "trapeze",
+   "nom": "Trapèze",
+   "latin": "Musculus trapezius",
+   "anglais": "Trapezius muscle",
+   "region": "dos",
+   "rang": 0,
+   "officiel": "Muscle trapèze",
+   "ta2": "2226",
+   "loge": "Muscles superficiels du dos",
+   "connu": {
+    "noms": [
+     "muscle trapèze"
+    ],
+    "action": "Hausse les épaules, rapproche et abaisse les scapulas, étend la tête",
+    "origine": "Occipital, ligament nucal, processus épineux de C7 à T12",
+    "terminaison": "Tiers latéral de la clavicule, acromion, épine de la scapula",
+    "innervation": "Nerf accessoire (XI)",
+    "memo": "À eux deux, les trapèzes dessinent un losange : le capuchon du moine.",
+    "os_d_origine_selon_l_atlas": [
+     "Clavicule",
+     "Scapula"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Os occipital"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-accessoire-xi",
+     "nom": "Nerf accessoire (XI)"
+    },
+    "parties_modelisees": [
+     "Partie ascendante du trapèze",
+     "Partie descendante du trapèze",
+     "Partie transverse du trapèze"
+    ],
+    "profondeur_sous_la_peau_mm": 1.0
+   }
+  },
+  {
+   "id": "diaphragme",
+   "nom": "Diaphragme",
+   "latin": "Diaphragma",
+   "anglais": "Diaphragm",
+   "region": "thorax",
+   "rang": 0,
+   "officiel": "Diaphragme",
+   "ta2": "2327",
+   "profondeur": 2,
+   "connu": {
+    "action": "Principal muscle de l'inspiration : il s'abaisse et agrandit le thorax",
+    "origine": "Processus xiphoïde, côtes 7 à 12, vertèbres lombaires (par ses piliers)",
+    "terminaison": "Centre tendineux",
+    "innervation": "Nerf phrénique (C3–C5)",
+    "memo": "« C3, C4, C5 : le diaphragme en vie. »",
+    "anecdote": "Le hoquet est une contraction brusque et involontaire du diaphragme.",
+    "os_d_origine_selon_l_atlas": [
+     "Vertèbre L1",
+     "Vertèbre L2",
+     "Vertèbre L3",
+     "Douzième côte",
+     "Onzième côte",
+     "Cartilage costal de la dixième côte"
+    ],
+    "profondeur_sous_la_peau_mm": 21.1
+   }
+  },
+  {
+   "id": "grand-pectoral",
+   "nom": "Grand pectoral",
+   "latin": "Musculus pectoralis major",
+   "anglais": "Pectoralis major muscle",
+   "region": "thorax",
+   "rang": 0,
+   "officiel": "Muscle grand pectoral",
+   "ta2": "2301",
+   "connu": {
+    "noms": [
+     "pectoral",
+     "pectoraux"
+    ],
+    "action": "Rapproche le bras du corps, le tourne en dedans et le porte en avant",
+    "origine": "Moitié médiale de la clavicule, sternum, cartilages costaux 1 à 6",
+    "terminaison": "Lèvre latérale du sillon intertuberculaire de l'humérus",
+    "innervation": "Nerfs pectoraux (C5–T1)",
+    "memo": "Il forme le pli avant de l'aisselle.",
+    "os_d_origine_selon_l_atlas": [
+     "Cartilage costal de la septième côte",
+     "Clavicule"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Humérus",
+     "Corps du sternum",
+     "Manubrium sternal",
+     "Cartilage costal de la sixième côte"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-pectoral-lateral",
+     "nom": "Nerf pectoral latéral"
+    },
+    "parties_modelisees": [
+     "Chef claviculaire du grand pectoral",
+     "Chef sternocostal du grand pectoral",
+     "Partie abdominale du grand pectoral"
+    ],
+    "profondeur_sous_la_peau_mm": 1.5
+   }
+  },
+  {
+   "id": "grand-psoas",
+   "nom": "Grand psoas",
+   "latin": "Psoas major",
+   "anglais": "Psoas major",
+   "region": "abdomen",
+   "rang": 1,
+   "officiel": "Grand psoas",
+   "ta2": "2595",
+   "profondeur": 2,
+   "connu": {
+    "noms": [
+     "psoas"
+    ],
+    "action": "Fléchit la cuisse sur le bassin : le plus puissant fléchisseur de la hanche",
+    "origine": "Corps et processus transverses de T12 à L5",
+    "terminaison": "Petit trochanter du fémur (avec l'iliaque)",
+    "innervation": "Plexus lombaire (L1–L3)",
+    "memo": "Avec l'iliaque, il forme l'ilio-psoas : le muscle qui fait monter le genou.",
+    "anecdote": "Chez l'animal de boucherie, c'est le filet mignon.",
+    "os_de_terminaison_selon_l_atlas": [
+     "Fémur"
+    ],
+    "profondeur_sous_la_peau_mm": 47.4
+   }
+  },
+  {
+   "id": "oblique-externe",
+   "nom": "Oblique externe",
+   "latin": "Musculus obliquus externus abdominis",
+   "anglais": "External abdominal oblique muscle",
+   "region": "abdomen",
+   "rang": 1,
+   "officiel": "Muscle oblique externe de l'abdomen",
+   "ta2": "2364",
+   "loge": "Paroi de l'abdomen",
+   "connu": {
+    "noms": [
+     "grand oblique",
+     "oblique externe de l'abdomen"
+    ],
+    "action": "Tourne le tronc vers le côté opposé, l'incline ; comprime l'abdomen",
+    "origine": "Faces externes des côtes 5 à 12",
+    "terminaison": "Ligne blanche, pubis et crête iliaque (par son aponévrose)",
+    "innervation": "Nerfs intercostaux 7 à 11 et subcostal",
+    "memo": "Ses fibres vont comme les mains dans les poches : en bas et en avant.",
+    "os_d_origine_selon_l_atlas": [
+     "Sixième côte",
+     "Septième côte",
+     "Huitième côte",
+     "Os coxal",
+     "Cinquième côte"
+    ],
+    "profondeur_sous_la_peau_mm": 2.9
+   }
+  },
+  {
+   "id": "dentele-anterieur",
+   "nom": "Dentelé antérieur",
+   "latin": "Musculus serratus anterior",
+   "anglais": "Serratus anterior muscle",
+   "region": "thorax",
+   "rang": 1,
+   "officiel": "Muscle dentelé antérieur",
+   "ta2": "2307",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "grand dentelé",
+     "serratus"
+    ],
+    "action": "Avance la scapula et la plaque contre le thorax ; la fait tourner pour lever le bras",
+    "origine": "Faces latérales des côtes 1 à 9, par des digitations",
+    "terminaison": "Bord médial de la scapula",
+    "innervation": "Nerf thoracique long (C5–C7)",
+    "memo": "Le muscle du boxeur : il pousse le coup de poing.",
+    "anecdote": "Quand il est paralysé, la scapula se décolle du dos : on parle de scapula alata, l'omoplate en aile.",
+    "os_d_origine_selon_l_atlas": [
+     "Scapula"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Deuxième côte",
+     "Troisième côte",
+     "Quatrième côte",
+     "Cinquième côte",
+     "Sixième côte",
+     "Septième côte",
+     "Huitième côte",
+     "Neuvième côte",
+     "Première côte"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-thoracique-long",
+     "nom": "Nerf thoracique long"
+    },
+    "profondeur_sous_la_peau_mm": 11.5
+   }
+  },
+  {
+   "id": "oblique-interne",
+   "nom": "Oblique interne",
+   "latin": "Musculus obliquus internus abdominis",
+   "anglais": "Internal abdominal oblique muscle",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Muscle oblique interne de l'abdomen",
+   "ta2": "2373",
+   "loge": "Paroi de l'abdomen",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "petit oblique"
+    ],
+    "action": "Tourne le tronc de son côté, l'incline ; comprime l'abdomen",
+    "origine": "Fascia thoraco-lombaire, crête iliaque, ligament inguinal",
+    "terminaison": "Côtes 10 à 12, ligne blanche, pubis",
+    "innervation": "Nerfs intercostaux 7 à 12, ilio-hypogastrique, ilio-inguinal",
+    "memo": "Ses fibres croisent celles de l'oblique externe à angle droit.",
+    "os_d_origine_selon_l_atlas": [
+     "Cartilage costal de la dixième côte",
+     "Dixième côte",
+     "Os coxal",
+     "Onzième côte",
+     "Douzième côte"
+    ],
+    "profondeur_sous_la_peau_mm": 7.0
+   }
+  },
+  {
+   "id": "transverse-abdomen",
+   "nom": "Transverse de l'abdomen",
+   "latin": "Musculus transversus abdominis",
+   "anglais": "Transversus abdominis muscle",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Muscle transverse de l'abdomen",
+   "ta2": "2375",
+   "loge": "Paroi de l'abdomen",
+   "profondeur": 2,
+   "connu": {
+    "noms": [
+     "transverse"
+    ],
+    "action": "Comprime l'abdomen, comme une gaine",
+    "origine": "Cartilages costaux 7 à 12, fascia thoraco-lombaire, crête iliaque",
+    "terminaison": "Ligne blanche et pubis",
+    "innervation": "Nerfs intercostaux 7 à 12, ilio-hypogastrique, ilio-inguinal",
+    "memo": "Le plus profond des muscles larges : ses fibres font le tour du ventre comme une ceinture.",
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "profondeur_sous_la_peau_mm": 16.9
+   }
+  },
+  {
+   "id": "iliaque",
+   "nom": "Iliaque",
+   "latin": "Musculus iliacus",
+   "anglais": "Iliacus muscle",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Muscle iliaque",
+   "ta2": "2594",
+   "profondeur": 2,
+   "connu": {
+    "noms": [
+     "muscle iliaque"
+    ],
+    "action": "Fléchit la cuisse",
+    "origine": "Fosse iliaque",
+    "terminaison": "Petit trochanter du fémur (avec le psoas)",
+    "innervation": "Nerf fémoral (L2–L4)",
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Fémur"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-femoral",
+     "nom": "Nerf fémoral"
+    },
+    "profondeur_sous_la_peau_mm": 27.8
+   }
+  },
+  {
+   "id": "iliococcygien",
+   "nom": "Iliococcygien",
+   "latin": "Musculus iliococcygeus",
+   "anglais": "Iliococcygeus muscle",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Muscle iliococcygien",
+   "ta2": "2404",
+   "profondeur": 1,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "profondeur_sous_la_peau_mm": 44.5
+   }
+  },
+  {
+   "id": "pubo-anal",
+   "nom": "Pubo-anal",
+   "latin": "Musculus puboanalis",
+   "anglais": "Pubo-analis muscle",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Muscle pubo-anal",
+   "ta2": "2406",
+   "profondeur": 1,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "profondeur_sous_la_peau_mm": 25.2
+   }
+  },
+  {
+   "id": "carre-lombes",
+   "nom": "Carré des lombes",
+   "latin": "Musculus quadratus lumborum",
+   "anglais": "Quadratus lumborum muscle",
+   "region": "dos",
+   "rang": 2,
+   "officiel": "Muscle carré des lombes",
+   "ta2": "2382",
+   "loge": "Paroi de l'abdomen",
+   "profondeur": 2,
+   "connu": {
+    "noms": [
+     "carré des lombes"
+    ],
+    "action": "Incline le tronc de son côté ; fixe la 12e côte pendant l'inspiration",
+    "origine": "Crête iliaque et ligament ilio-lombaire",
+    "terminaison": "12e côte et processus transverses de L1 à L4",
+    "innervation": "Nerf subcostal et rameaux de L1 à L4",
+    "memo": "Souvent en cause dans le lumbago.",
+    "profondeur_sous_la_peau_mm": 25.9
+   }
+  },
+  {
+   "id": "coccygien",
+   "nom": "Coccygien",
+   "latin": "Musculus coccygeus",
+   "anglais": "Coccygeus muscle",
+   "region": "dos",
+   "rang": 2,
+   "officiel": "Muscle coccygien",
+   "ta2": "2412",
+   "profondeur": 1,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 43.4
+   }
+  },
+  {
+   "id": "dentele-postero-inferieur",
+   "nom": "Dentelé postéro-inférieur",
+   "latin": "Musculus serratus posterior inferior",
+   "anglais": "Serratus posterior inferior muscle",
+   "region": "dos",
+   "rang": 2,
+   "officiel": "Muscle dentelé postéro-inférieur",
+   "ta2": "2235",
+   "loge": "Muscles superficiels du dos",
+   "profondeur": 1,
+   "connu": {
+    "os_de_terminaison_selon_l_atlas": [
+     "Dixième côte",
+     "Onzième côte",
+     "Douzième côte",
+     "Neuvième côte"
+    ],
+    "profondeur_sous_la_peau_mm": 7.5
+   }
+  },
+  {
+   "id": "grand-rhomboide",
+   "nom": "Grand rhomboïde",
+   "latin": "Musculus rhomboideus major",
+   "anglais": "Rhomboid major muscle",
+   "region": "dos",
+   "rang": 2,
+   "officiel": "Muscle grand rhomboïde",
+   "ta2": "2232",
+   "loge": "Muscles superficiels du dos",
+   "profondeur": 1,
+   "connu": {
+    "noms": [
+     "rhomboïde",
+     "rhomboïdes"
+    ],
+    "action": "Rapproche la scapula de la colonne et l'élève",
+    "origine": "Processus épineux de T2 à T5",
+    "terminaison": "Bord médial de la scapula, sous l'épine",
+    "innervation": "Nerf dorsal de la scapula (C5)",
+    "memo": "Il tire les épaules en arrière : le muscle du « tiens-toi droit ».",
+    "os_de_terminaison_selon_l_atlas": [
+     "Scapula"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-dorsal-de-la-scapula",
+     "nom": "Nerf dorsal de la scapula"
+    },
+    "profondeur_sous_la_peau_mm": 6.5
+   }
+  },
+  {
+   "id": "ilio-costal",
+   "nom": "Ilio-costal",
+   "latin": "M. iliocostalis",
+   "anglais": "Iliocostalis",
+   "region": "dos",
+   "rang": 2,
+   "connu": {
+    "noms": [
+     "iliocostal"
+    ],
+    "action": "Étend et incline la colonne",
+    "origine": "Sacrum et crête iliaque",
+    "terminaison": "Angles des côtes et processus transverses cervicaux",
+    "innervation": "Rameaux dorsaux des nerfs spinaux",
+    "memo": "La colonne latérale des érecteurs du rachis.",
+    "membres": [
+     {
+      "id": "iliocostal-des-lombes",
+      "nom": "Iliocostal des lombes"
+     },
+     {
+      "id": "iliocostal-du-thorax",
+      "nom": "Iliocostal du thorax"
+     },
+     {
+      "id": "iliocostal-du-cou",
+      "nom": "Iliocostal du cou"
+     }
+    ]
+   }
+  },
+  {
+   "id": "iliocostal-des-lombes",
+   "nom": "Iliocostal des lombes",
+   "latin": "Musculus iliocostalis lumborum",
+   "anglais": "Iliocostalis lumborum muscle",
+   "region": "dos",
+   "rang": 2,
+   "officiel": "Muscle iliocostal des lombes",
+   "ta2": "2258",
+   "loge": "Érecteurs du rachis",
+   "profondeur": 1,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "ensemble": {
+     "id": "ilio-costal",
+     "nom": "Ilio-costal"
+    },
+    "profondeur_sous_la_peau_mm": 19.4
+   }
+  },
+  {
+   "id": "longissimus",
+   "nom": "Longissimus",
+   "latin": "M. longissimus",
+   "anglais": "Longissimus",
+   "region": "dos",
+   "rang": 2,
+   "connu": {
+    "noms": [
+     "long dorsal"
+    ],
+    "action": "Étend et incline la colonne",
+    "origine": "Sacrum, crête iliaque, processus transverses lombaires et thoraciques",
+    "terminaison": "Processus transverses thoraciques et cervicaux, côtes, processus mastoïde",
+    "innervation": "Rameaux dorsaux des nerfs spinaux",
+    "memo": "La colonne du milieu des érecteurs du rachis, la plus longue.",
+    "membres": [
+     {
+      "id": "longissimus-du-thorax",
+      "nom": "Longissimus du thorax"
+     },
+     {
+      "id": "longissimus-du-cou",
+      "nom": "Longissimus du cou"
+     },
+     {
+      "id": "longissimus-de-la-tete",
+      "nom": "Longissimus de la tête"
+     }
+    ]
+   }
+  },
+  {
+   "id": "petit-rhomboide",
+   "nom": "Petit rhomboïde",
+   "latin": "Musculus rhomboideus minor",
+   "anglais": "Rhomboid minor muscle",
+   "region": "dos",
+   "rang": 2,
+   "officiel": "Muscle petit rhomboïde",
+   "ta2": "2233",
+   "loge": "Muscles superficiels du dos",
+   "profondeur": 1,
+   "connu": {
+    "action": "Rapproche la scapula de la colonne",
+    "origine": "Processus épineux de C7 et T1",
+    "terminaison": "Bord médial de la scapula, à hauteur de l'épine",
+    "innervation": "Nerf dorsal de la scapula (C5)",
+    "os_de_terminaison_selon_l_atlas": [
+     "Scapula"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-dorsal-de-la-scapula",
+     "nom": "Nerf dorsal de la scapula"
+    },
+    "profondeur_sous_la_peau_mm": 5.8
+   }
+  },
+  {
+   "id": "sphincter-anal-externe",
+   "nom": "Sphincter anal externe",
+   "latin": "Sphincter externus ani",
+   "anglais": "External anal sphincter",
+   "region": "dos",
+   "rang": 2,
+   "officiel": "Sphincter anal externe",
+   "ta2": "2426",
+   "connu": {
+    "profondeur_sous_la_peau_mm": 24.2
+   }
+  },
+  {
+   "id": "epineux-du-thorax",
+   "nom": "Épineux du thorax",
+   "latin": "Musculus spinalis thoracis",
+   "anglais": "Spinalis thoracis muscle",
+   "region": "dos",
+   "rang": 2,
+   "officiel": "Muscle épineux du thorax",
+   "ta2": "2268",
+   "loge": "Érecteurs du rachis",
+   "profondeur": 1,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "ensemble": {
+     "id": "epineux",
+     "nom": "Épineux"
+    },
+    "profondeur_sous_la_peau_mm": 13.3
+   }
+  },
+  {
+   "id": "intercostaux",
+   "nom": "Intercostaux",
+   "latin": "Mm. intercostales",
+   "anglais": "Intercostal muscles",
+   "region": "thorax",
+   "rang": 2,
+   "connu": {
+    "noms": [
+     "muscles intercostaux"
+    ],
+    "action": "Soulèvent ou abaissent les côtes pendant la respiration",
+    "origine": "Bord inférieur de chaque côte",
+    "terminaison": "Bord supérieur de la côte suivante",
+    "innervation": "Nerfs intercostaux",
+    "memo": "Trois couches entre deux côtes : externes, internes et intimes.",
+    "nombre": 22,
+    "membres": [
+     {
+      "id": "intercostaux-externes",
+      "nom": "Intercostaux externes"
+     },
+     {
+      "id": "intercostaux-internes",
+      "nom": "Intercostaux internes"
+     },
+     {
+      "id": "intercostaux-intimes",
+      "nom": "Intercostaux intimes"
+     }
+    ]
+   }
+  },
+  {
+   "id": "petit-pectoral",
+   "nom": "Petit pectoral",
+   "latin": "Musculus pectoralis minor",
+   "anglais": "Pectoralis minor muscle",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Muscle petit pectoral",
+   "ta2": "2305",
+   "profondeur": 1,
+   "connu": {
+    "action": "Abaisse et avance la scapula ; élève les côtes",
+    "origine": "Côtes 3 à 5",
+    "terminaison": "Processus coracoïde de la scapula",
+    "innervation": "Nerf pectoral médial (C8–T1)",
+    "os_d_origine_selon_l_atlas": [
+     "Scapula"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Quatrième côte",
+     "Cinquième côte",
+     "Troisième côte"
+    ],
+    "profondeur_sous_la_peau_mm": 14.4
+   }
+  },
+  {
+   "id": "subclavier",
+   "nom": "Subclavier",
+   "latin": "Musculus subclavius",
+   "anglais": "Subclavius muscle",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Muscle subclavier",
+   "ta2": "2306",
+   "profondeur": 1,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Clavicule"
+    ],
+    "nerf_selon_l_atlas": {
+     "id": "nerf-subclavier",
+     "nom": "Nerf subclavier"
+    },
+    "profondeur_sous_la_peau_mm": 14.3
+   }
+  },
+  {
+   "id": "pubococcygien",
+   "nom": "Pubococcygien",
+   "latin": "Musculus pubococcygeus",
+   "anglais": "Pubococcygeus muscle",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Muscle pubococcygien",
+   "ta2": "2405",
+   "profondeur": 2,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "profondeur_sous_la_peau_mm": 30.8
+   }
+  },
+  {
+   "id": "pyramidal-de-l-abdomen",
+   "nom": "Pyramidal de l'abdomen",
+   "latin": "Musculus pyramidalis",
+   "anglais": "Pyramidalis muscle",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Muscle pyramidal de l'abdomen",
+   "ta2": "2363",
+   "loge": "Paroi de l'abdomen",
+   "profondeur": 2,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 17.4
+   }
+  },
+  {
+   "id": "courts-elevateurs-des-cotes",
+   "nom": "Courts élévateurs des côtes",
+   "latin": "Levatores breves costarum",
+   "anglais": "Levatores breves costarum",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Courts élévateurs des côtes",
+   "ta2": "2310",
+   "profondeur": 2,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 32.9
+   }
+  },
+  {
+   "id": "dentele-postero-superieur",
+   "nom": "Dentelé postéro-supérieur",
+   "latin": "Musculus serratus posterior superior",
+   "anglais": "Serratus posterior superior muscle",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Muscle dentelé postéro-supérieur",
+   "ta2": "2236",
+   "loge": "Muscles superficiels du dos",
+   "profondeur": 2,
+   "connu": {
+    "os_de_terminaison_selon_l_atlas": [
+     "Troisième côte",
+     "Quatrième côte",
+     "Cinquième côte",
+     "Deuxième côte"
+    ],
+    "profondeur_sous_la_peau_mm": 8.5
+   }
+  },
+  {
+   "id": "iliocostal-du-thorax",
+   "nom": "Iliocostal du thorax",
+   "latin": "Musculus iliocostalis thoracis",
+   "anglais": "Iliocostalis thoracis muscle",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Muscle iliocostal du thorax",
+   "ta2": "2260",
+   "loge": "Érecteurs du rachis",
+   "profondeur": 2,
+   "connu": {
+    "ensemble": {
+     "id": "ilio-costal",
+     "nom": "Ilio-costal"
+    },
+    "profondeur_sous_la_peau_mm": 27.0
+   }
+  },
+  {
+   "id": "intertransversaires-lateraux-des-lombes",
+   "nom": "Intertransversaires latéraux des lombes",
+   "latin": "Musculi intertransversarii laterales lumborum",
+   "anglais": "Lateral intertransversarii lumborum muscles",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Muscles intertransversaires latéraux des lombes",
+   "ta2": "2239",
+   "loge": "Muscles superficiels du dos",
+   "profondeur": 2,
+   "connu": {
+    "parties_modelisees": [
+     "Parties dorsales des muscles intertransv. lat. des lombes",
+     "Parties ventrales des muscles intertransv. lat. des lombes"
+    ],
+    "profondeur_sous_la_peau_mm": 47.2
+   }
+  },
+  {
+   "id": "interepineux-des-lombes",
+   "nom": "Interépineux des lombes",
+   "latin": "Musculi interspinales lumborum",
+   "anglais": "Interspinales lumborum muscles",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Muscles interépineux des lombes",
+   "ta2": "2291",
+   "profondeur": 2,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 11.7
+   }
+  },
+  {
+   "id": "interepineux-du-thorax",
+   "nom": "Interépineux du thorax",
+   "latin": "Musculi interspinales thoracis",
+   "anglais": "Interspinales thoracis muscles",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Muscles interépineux du thorax",
+   "ta2": "2292",
+   "profondeur": 2,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 11.4
+   }
+  },
+  {
+   "id": "longissimus-du-thorax",
+   "nom": "Longissimus du thorax",
+   "latin": "Musculus longissimus thoracis",
+   "anglais": "Longissimus thoracis muscle",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Muscle longissimus du thorax",
+   "ta2": "2263",
+   "loge": "Érecteurs du rachis",
+   "profondeur": 2,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Os coxal"
+    ],
+    "os_de_terminaison_selon_l_atlas": [
+     "Huitième côte",
+     "Vertèbre T8",
+     "Septième côte",
+     "Vertèbre T7",
+     "Sixième côte",
+     "Vertèbre T6",
+     "Cinquième côte",
+     "Vertèbre T5",
+     "Quatrième côte",
+     "Vertèbre T4",
+     "Vertèbre L2",
+     "Troisième côte",
+     "Vertèbre T3",
+     "Deuxième côte",
+     "Vertèbre T2",
+     "Première côte",
+     "Vertèbre T1",
+     "Douzième côte",
+     "Vertèbre L1",
+     "Vertèbre T12",
+     "Onzième côte",
+     "Vertèbre T11",
+     "Dixième côte",
+     "Vertèbre T10",
+     "Neuvième côte",
+     "Vertèbre T9",
+     "Vertèbre L3"
+    ],
+    "ensemble": {
+     "id": "longissimus",
+     "nom": "Longissimus"
+    },
+    "profondeur_sous_la_peau_mm": 17.7
+   }
+  },
+  {
+   "id": "longs-elevateurs-des-cotes",
+   "nom": "Longs élévateurs des côtes",
+   "latin": "Levatores longi costarum",
+   "anglais": "Levatores longi costarum",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Longs élévateurs des côtes",
+   "ta2": "2309",
+   "profondeur": 2,
+   "connu": {
+    "os_de_terminaison_selon_l_atlas": [
+     "Douzième côte",
+     "Troisième côte",
+     "Quatrième côte",
+     "Cinquième côte",
+     "Sixième côte",
+     "Septième côte",
+     "Huitième côte",
+     "Neuvième côte",
+     "Dixième côte",
+     "Onzième côte",
+     "Deuxième côte"
+    ],
+    "profondeur_sous_la_peau_mm": 32.4
+   }
+  },
+  {
+   "id": "multifides-du-thorax",
+   "nom": "Multifides du thorax",
+   "latin": "Musculus multifidus thoracis",
+   "anglais": "Multifidus thoracis muscle",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Muscles multifides du thorax",
+   "ta2": "2278",
+   "loge": "Muscles transversaires épineux",
+   "profondeur": 2,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 23.3
+   }
+  },
+  {
+   "id": "multifides-lombaire",
+   "nom": "Multifides lombaire",
+   "latin": "Musculus multifidus lumborum",
+   "anglais": "Multifidus lumborum muscle",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Muscles multifides lombaire",
+   "ta2": "2277",
+   "loge": "Muscles transversaires épineux",
+   "profondeur": 2,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 30.6
+   }
+  },
+  {
+   "id": "semi-epineux-du-thorax",
+   "nom": "Semi-épineux du thorax",
+   "latin": "Musculus semispinalis thoracis",
+   "anglais": "Semispinalis thoracis muscle",
+   "region": "dos",
+   "rang": 3,
+   "officiel": "Muscle semi-épineux du thorax",
+   "ta2": "2281",
+   "loge": "Muscles transversaires épineux",
+   "profondeur": 2,
+   "connu": {
+    "profondeur_sous_la_peau_mm": 19.0
+   }
+  },
+  {
+   "id": "epineux",
+   "nom": "Épineux",
+   "latin": "M. spinalis",
+   "anglais": "Spinalis",
+   "region": "dos",
+   "rang": 3,
+   "connu": {
+    "action": "Étend la colonne",
+    "origine": "Processus épineux des dernières thoraciques et premières lombaires",
+    "terminaison": "Processus épineux des premières thoraciques",
+    "innervation": "Rameaux dorsaux des nerfs spinaux",
+    "memo": "La colonne la plus médiale des érecteurs du rachis.",
+    "membres": [
+     {
+      "id": "epineux-du-thorax",
+      "nom": "Épineux du thorax"
+     },
+     {
+      "id": "epineux-du-cou",
+      "nom": "Épineux du cou"
+     },
+     {
+      "id": "epineux-de-la-tete",
+      "nom": "Épineux de la tête"
+     }
+    ]
+   }
+  },
+  {
+   "id": "intercostaux-externes",
+   "nom": "Intercostaux externes",
+   "latin": "Musculi intercostales externi",
+   "anglais": "External intercostal muscles",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Muscles intercostaux externes",
+   "ta2": "2311",
+   "profondeur": 2,
+   "connu": {
+    "ensemble": {
+     "id": "intercostaux",
+     "nom": "Intercostaux"
+    },
+    "profondeur_sous_la_peau_mm": 14.0
+   }
+  },
+  {
+   "id": "intercostaux-internes",
+   "nom": "Intercostaux internes",
+   "latin": "Musculi intercostales interni",
+   "anglais": "Internal intercostal muscles",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Muscles intercostaux internes",
+   "ta2": "2312",
+   "profondeur": 2,
+   "connu": {
+    "ensemble": {
+     "id": "intercostaux",
+     "nom": "Intercostaux"
+    },
+    "profondeur_sous_la_peau_mm": 13.9
+   }
+  },
+  {
+   "id": "intercostaux-intimes",
+   "nom": "Intercostaux intimes",
+   "latin": "Musculi intercostales intimi",
+   "anglais": "Innermost intercostal muscles",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Muscles intercostaux intimes",
+   "ta2": "2313",
+   "profondeur": 2,
+   "connu": {
+    "ensemble": {
+     "id": "intercostaux",
+     "nom": "Intercostaux"
+    },
+    "profondeur_sous_la_peau_mm": 18.1
+   }
+  },
+  {
+   "id": "transverse-du-thorax",
+   "nom": "Transverse du thorax",
+   "latin": "Musculus transversus thoracis",
+   "anglais": "Transversus thoracis muscle",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Muscle transverse du thorax",
+   "ta2": "2315",
+   "profondeur": 2,
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Processus xiphoïde",
+     "Corps du sternum"
+    ],
+    "profondeur_sous_la_peau_mm": 16.8
+   }
+  }
+ ]
+}

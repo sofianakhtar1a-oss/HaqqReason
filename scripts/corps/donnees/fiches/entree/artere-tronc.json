@@ -1,0 +1,1219 @@
+{
+ "lot": "artere-tronc",
+ "couche": "artere",
+ "structures": [
+  {
+   "id": "aorte",
+   "nom": "Aorte",
+   "latin": "Aorta",
+   "anglais": "Aorta",
+   "region": "thorax",
+   "rang": 0,
+   "connu": {
+    "provenance": "Ventricule gauche du cœur",
+    "territoire": "Tout le corps, par ses branches",
+    "memo": "La plus grosse artère du corps : environ 2,5 cm de diamètre.",
+    "membres": [
+     {
+      "id": "aorte-ascendante",
+      "nom": "Aorte ascendante"
+     },
+     {
+      "id": "arc-aortique",
+      "nom": "Arc aortique"
+     },
+     {
+      "id": "aorte-thoracique",
+      "nom": "Aorte thoracique"
+     },
+     {
+      "id": "aorte-abdominale",
+      "nom": "Aorte abdominale"
+     }
+    ]
+   }
+  },
+  {
+   "id": "iliaque-commune",
+   "nom": "Artère iliaque commune",
+   "latin": "Arteria iliaca communis",
+   "anglais": "Common iliac artery",
+   "region": "bassin",
+   "rang": 1,
+   "officiel": "Artère iliaque commune",
+   "ta2": "4301",
+   "connu": {
+    "noms": [
+     "iliaque primitive",
+     "iliaque commune"
+    ],
+    "provenance": "aorte",
+    "territoire": "Bassin et membre inférieur"
+   }
+  },
+  {
+   "id": "artere-colique-marginale",
+   "nom": "Artère colique marginale",
+   "latin": "Arteria marginalis coli",
+   "anglais": "Marginal artery",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Artère colique marginale",
+   "ta2": "4266"
+  },
+  {
+   "id": "artere-hepatique-propre",
+   "nom": "Artère hépatique propre",
+   "latin": "Arteria hepatica propria",
+   "anglais": "Proper hepatic artery",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Artère hépatique propre",
+   "ta2": "4227"
+  },
+  {
+   "id": "mesenterique-superieure",
+   "nom": "Artère mésentérique supérieure",
+   "latin": "Arteria mesenteries superior",
+   "anglais": "Superior mesenteric artery",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Artère mésentérique supérieure",
+   "ta2": "4252",
+   "connu": {
+    "noms": [
+     "mésentérique supérieure"
+    ],
+    "provenance": "aorte",
+    "territoire": "Intestin grêle et moitié droite du côlon"
+   }
+  },
+  {
+   "id": "artere-pancreaticoduodenale-infero-anterieure",
+   "nom": "Artère pancréaticoduodénale inféro-antérieure",
+   "latin": "Arteria pancreaticoduodenalis inferior anterior",
+   "anglais": "Anterior inferior pancreaticoduodenal artery",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Artère pancréaticoduodénale inféro-antérieure",
+   "ta2": "4254"
+  },
+  {
+   "id": "renale",
+   "nom": "Artère rénale",
+   "latin": "Arteria renalis",
+   "anglais": "Renal artery",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Artère rénale",
+   "ta2": "4269",
+   "connu": {
+    "noms": [
+     "rénale"
+    ],
+    "provenance": "aorte",
+    "territoire": "Rein",
+    "memo": "Les reins reçoivent environ un cinquième du sang pompé par le cœur."
+   }
+  },
+  {
+   "id": "artere-splenique",
+   "nom": "Artère splénique",
+   "latin": "Arteria splenica",
+   "anglais": "Splenic artery",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Artère splénique",
+   "ta2": "4239"
+  },
+  {
+   "id": "artere-subcostale",
+   "nom": "Artère subcostale",
+   "latin": "Arteria subcostalis",
+   "anglais": "Subcostal artery",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Artère subcostale",
+   "ta2": "4202"
+  },
+  {
+   "id": "artere-surrenale-inferieure",
+   "nom": "Artère surrénale inférieure",
+   "latin": "Arteria suprarenalis inferior",
+   "anglais": "Inferior suprarenal artery",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Artère surrénale inférieure",
+   "ta2": "4271"
+  },
+  {
+   "id": "arteres-lombaires",
+   "nom": "Artères lombaires",
+   "latin": "Arteriae lumbales",
+   "anglais": "Lumbar arteries",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Artères lombaires",
+   "ta2": "4208"
+  },
+  {
+   "id": "tronc-coeliaque",
+   "nom": "Tronc cœliaque",
+   "latin": "Truncus coeiiacus",
+   "anglais": "Coeliac trunk",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Tronc coeliaque",
+   "ta2": "4211",
+   "connu": {
+    "noms": [
+     "tronc coeliaque"
+    ],
+    "provenance": "aorte",
+    "territoire": "Estomac, foie, rate, pancréas, duodénum",
+    "memo": "Trois branches : gastrique gauche, hépatique commune et splénique."
+   }
+  },
+  {
+   "id": "artere-appendiculaire",
+   "nom": "Artère appendiculaire",
+   "latin": "Arteria appendicularis",
+   "anglais": "Appendicular artery",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Artère appendiculaire",
+   "ta2": "4261"
+  },
+  {
+   "id": "artere-gluteale-inferieure",
+   "nom": "Artère glutéale inférieure",
+   "latin": "Arteria glutea inferior",
+   "anglais": "Inferior gluteal artery",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Artère glutéale inférieure",
+   "ta2": "4355"
+  },
+  {
+   "id": "artere-gluteale-superieure",
+   "nom": "Artère glutéale supérieure",
+   "latin": "Arteria glutea superior",
+   "anglais": "Superior gluteal artery",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Artère glutéale supérieure",
+   "ta2": "4310"
+  },
+  {
+   "id": "iliaque-externe",
+   "nom": "Artère iliaque externe",
+   "latin": "Arteria iliaca externa",
+   "anglais": "External iliac artery",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Artère iliaque externe",
+   "ta2": "4357",
+   "connu": {
+    "noms": [
+     "iliaque externe"
+    ],
+    "provenance": "iliaque-commune",
+    "territoire": "Membre inférieur : elle devient la fémorale sous le ligament inguinal"
+   }
+  },
+  {
+   "id": "iliaque-interne",
+   "nom": "Artère iliaque interne",
+   "latin": "Arteria iliaca interna",
+   "anglais": "Internal iliac artery",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Artère iliaque interne",
+   "ta2": "4302",
+   "connu": {
+    "noms": [
+     "hypogastrique",
+     "iliaque interne"
+    ],
+    "provenance": "iliaque-commune",
+    "territoire": "Organes du bassin, fesse, périnée"
+   }
+  },
+  {
+   "id": "artere-pudendale-interne",
+   "nom": "Artère pudendale interne",
+   "latin": "Arteria pudendalis interna",
+   "anglais": "Internal pudendal artery",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Artère pudendale interne",
+   "ta2": "4341"
+  },
+  {
+   "id": "arteres-sigmoides",
+   "nom": "Artères sigmoïdes",
+   "latin": "Arteriae sigmoideae",
+   "anglais": "Sigmoid arteries",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Artères sigmoïdes",
+   "ta2": "4295"
+  },
+  {
+   "id": "division-anterieure-de-l-artere-iliaque-interne",
+   "nom": "Division antérieure de l'artère iliaque interne",
+   "latin": "Divisio anterior arteriae iliacae internae",
+   "anglais": "Anterior division of internal iliac artery",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Division antérieure de l'artère iliaque interne",
+   "ta2": "4315"
+  },
+  {
+   "id": "division-posterieure-de-l-artere-iliaque-interne",
+   "nom": "Division postérieure de l'artère iliaque interne",
+   "latin": "Divisio posterior arteriae iliacae internaecus",
+   "anglais": "Posterior division of internal iliac artery",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Division postérieure de l'artère iliaque interne",
+   "ta2": "4303"
+  },
+  {
+   "id": "artere-circonflexe-du-coeur",
+   "nom": "Artère circonflexe du cœur",
+   "latin": "Arteria circumflexa cordis",
+   "anglais": "Circumflex artery of heart",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Artère circonflexe du cœur",
+   "ta2": "4148"
+  },
+  {
+   "id": "artere-coronaire-droite",
+   "nom": "Artère coronaire droite",
+   "latin": "Arteria coronaria dextra",
+   "anglais": "Right coronary artery",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Artère coronaire droite",
+   "ta2": "4131"
+  },
+  {
+   "id": "artere-interventriculaire-anterieure",
+   "nom": "Artère interventriculaire antérieure",
+   "latin": "Arteria interventricularis ant. arteriae coronariae sinistrae",
+   "anglais": "Anterior interventricular artery",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Artère interventriculaire antérieure",
+   "ta2": "4143"
+  },
+  {
+   "id": "artere-lingulaire-superieure-du-poumon-gauche",
+   "nom": "Artère lingulaire supérieure du poumon gauche",
+   "latin": "Arteria lingularis superior pulmonis sinistri",
+   "anglais": "Superior lingular artery of left lung",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Artère lingulaire supérieure du poumon gauche",
+   "ta2": "4100",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-phrenique-inferieure",
+   "nom": "Artère phrénique inférieure",
+   "latin": "Arteria phrenica inferior",
+   "anglais": "Inferior phrenic artery",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Artère phrénique inférieure",
+   "ta2": "4206"
+  },
+  {
+   "id": "thoracique-interne",
+   "nom": "Artère thoracique interne",
+   "latin": "Arteria thoracica interna",
+   "anglais": "Internal thoracic artery",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Artère thoracique interne",
+   "ta2": "4576",
+   "connu": {
+    "noms": [
+     "mammaire interne",
+     "thoracique interne"
+    ],
+    "provenance": "subclaviere",
+    "territoire": "Paroi antérieure du thorax et de l'abdomen",
+    "memo": "Les chirurgiens s'en servent pour les pontages du cœur."
+   }
+  },
+  {
+   "id": "arteres-intercostales-posterieures",
+   "nom": "Artères intercostales postérieures",
+   "latin": "Arteriae intercostales posteriores",
+   "anglais": "Posterior intercostal arteries",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Artères intercostales postérieures",
+   "ta2": "4191",
+   "connu": {
+    "ensemble": {
+     "id": "arteres-intercostales",
+     "nom": "Artères intercostales"
+    }
+   }
+  },
+  {
+   "id": "arteres-phreniques-superieures",
+   "nom": "Artères phréniques supérieures",
+   "latin": "Arteriae phrenicae superiores",
+   "anglais": "Superior phrenic arteries",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Artères phréniques supérieures",
+   "ta2": "4201"
+  },
+  {
+   "id": "deuxieme-artere-intercostale-posterieure",
+   "nom": "Deuxième artère intercostale postérieure",
+   "latin": "Arteria intercostalis posterior secunda",
+   "anglais": "Second posterior intercostal artery",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Deuxième artère intercostale postérieure",
+   "ta2": "4613",
+   "connu": {
+    "ensemble": {
+     "id": "arteres-intercostales",
+     "nom": "Artères intercostales"
+    }
+   }
+  },
+  {
+   "id": "premiere-artere-intercostale-posterieure",
+   "nom": "Première artère intercostale postérieure",
+   "latin": "Arteria intercostalis posterior prima",
+   "anglais": "First posterior intercostal artery",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Première artère intercostale postérieure",
+   "ta2": "4610",
+   "connu": {
+    "ensemble": {
+     "id": "arteres-intercostales",
+     "nom": "Artères intercostales"
+    }
+   }
+  },
+  {
+   "id": "tronc-brachio-cephalique",
+   "nom": "Tronc brachio-céphalique",
+   "latin": "Truncus brachiocephalicus",
+   "anglais": "Brachiocephalic trunk",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Tronc brachiocéphalique",
+   "ta2": "4179",
+   "connu": {
+    "noms": [
+     "tronc artériel brachio-céphalique"
+    ],
+    "provenance": "aorte",
+    "territoire": "Membre supérieur droit, côté droit de la tête et du cou",
+    "memo": "Il n'existe qu'à droite."
+   }
+  },
+  {
+   "id": "aorte-abdominale",
+   "nom": "Aorte abdominale",
+   "latin": "Aorta abdominalis",
+   "anglais": "Abdominal aorta",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Aorte abdominale",
+   "ta2": "4205",
+   "connu": {
+    "ensemble": {
+     "id": "aorte",
+     "nom": "Aorte"
+    }
+   }
+  },
+  {
+   "id": "artere-colique-droite",
+   "nom": "Artère colique droite",
+   "latin": "Arteria colica dextra",
+   "anglais": "Right colic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère colique droite",
+   "ta2": "4264"
+  },
+  {
+   "id": "artere-colique-gauche",
+   "nom": "Artère colique gauche",
+   "latin": "Arteria colica sinistra",
+   "anglais": "Left colic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère colique gauche",
+   "ta2": "4292"
+  },
+  {
+   "id": "artere-colique-moyenne",
+   "nom": "Artère colique moyenne",
+   "latin": "Arteria colica media",
+   "anglais": "Middle colic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère colique moyenne",
+   "ta2": "4265"
+  },
+  {
+   "id": "artere-gastrique-gauche",
+   "nom": "Artère gastrique gauche",
+   "latin": "Arteria gastrica sinistra",
+   "anglais": "Left gastric artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère gastrique gauche",
+   "ta2": "4212"
+  },
+  {
+   "id": "artere-gastroduodenale",
+   "nom": "Artère gastroduodénale",
+   "latin": "Arteria gastroduodenalis",
+   "anglais": "Gastroduodenal artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère gastroduodénale",
+   "ta2": "4215"
+  },
+  {
+   "id": "artere-hepatique-commune",
+   "nom": "Artère hépatique commune",
+   "latin": "Arteria hepatica communis",
+   "anglais": "Common hepatic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère hépatique commune",
+   "ta2": "4214"
+  },
+  {
+   "id": "artere-ileocolique",
+   "nom": "Artère iléocolique",
+   "latin": "Arteria ileocolica",
+   "anglais": "Ileocolic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère iléocolique",
+   "ta2": "4258"
+  },
+  {
+   "id": "artere-musculophrenique",
+   "nom": "Artère musculophrénique",
+   "latin": "Arteria musculoohrenica",
+   "anglais": "Musculophrenic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère musculophrénique",
+   "ta2": "4587"
+  },
+  {
+   "id": "artere-mesenterique-inferieure",
+   "nom": "Artère mésentérique inférieure",
+   "latin": "Arteria mesenterica inferior",
+   "anglais": "Inferior mesenteric artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère mésentérique inférieure",
+   "ta2": "4291"
+  },
+  {
+   "id": "artere-pancreaticoduodenale-inferieure",
+   "nom": "Artère pancréaticoduodénale inférieure",
+   "latin": "Arteria pancreaticoduodenalis",
+   "anglais": "Inferior pancreaticoduodenal artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère pancréaticoduodénale inférieure",
+   "ta2": "4253"
+  },
+  {
+   "id": "epigastrique-inferieure",
+   "nom": "Artère épigastrique inférieure",
+   "latin": "Arteria epigastrica inferior",
+   "anglais": "Inferior epigastric artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère épigastrique inférieure",
+   "ta2": "4358",
+   "connu": {
+    "noms": [
+     "épigastrique inférieure"
+    ],
+    "provenance": "iliaque-externe",
+    "territoire": "Paroi antérieure de l'abdomen, muscle droit"
+   }
+  },
+  {
+   "id": "artere-epigastrique-superieure",
+   "nom": "Artère épigastrique supérieure",
+   "latin": "Arteria epigastrica superior",
+   "anglais": "Superior epigastric artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Artère épigastrique supérieure",
+   "ta2": "4588"
+  },
+  {
+   "id": "branche-anterieure-de-l-artere-renale",
+   "nom": "Branche antérieure de l'artère rénale",
+   "latin": "Ramus anterior arteriae renalis",
+   "anglais": "Anterior branch of renal artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Branche antérieure de l'artère rénale",
+   "ta2": "4272"
+  },
+  {
+   "id": "branche-ascendante-de-l-artere-colique-gauche",
+   "nom": "Branche ascendante de l'artère colique gauche",
+   "latin": "Ramus ascendens arteriae",
+   "anglais": "Ascending branch of left colic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Branche ascendante de l'artère colique gauche",
+   "ta2": "4293"
+  },
+  {
+   "id": "branche-colique-de-l-artere-ileocolique",
+   "nom": "Branche colique de l'artère iléocolique",
+   "latin": "Ramus colicus arteriae ileocolicae",
+   "anglais": "Colic branch of ileocolic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Branche colique de l'artère iléocolique",
+   "ta2": "4263"
+  },
+  {
+   "id": "branche-descendante-de-l-artere-colique-gauche",
+   "nom": "Branche descendante de l'artère colique gauche",
+   "latin": "Ramus descendens arteriae colicae sinistrae",
+   "anglais": "Descending branch of left colic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Branche descendante de l'artère colique gauche",
+   "ta2": "4294"
+  },
+  {
+   "id": "branche-ileale-de-l-artere-ileocolique",
+   "nom": "Branche iléale de l'artère iléocolique",
+   "latin": "Ramus ilealis arteriae ileocolicae",
+   "anglais": "Ileal branch of ileocolic artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Branche iléale de l'artère iléocolique",
+   "ta2": "4262"
+  },
+  {
+   "id": "branche-posterieure-de-l-artere-renale",
+   "nom": "Branche postérieure de l'artère rénale",
+   "latin": "Ramus posterior arteriae renalis",
+   "anglais": "Posterior branch of renal artery",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Branche postérieure de l'artère rénale",
+   "ta2": "4277"
+  },
+  {
+   "id": "artere-anorectale-superieure",
+   "nom": "Artère anorectale supérieure",
+   "latin": "Arteria anorectalis superior",
+   "anglais": "Superior anorectal artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Artère anorectale supérieure",
+   "ta2": "4296"
+  },
+  {
+   "id": "artere-iliolombaire",
+   "nom": "Artère iliolombaire",
+   "latin": "Arteria iliolumbalis",
+   "anglais": "Iliolumbar artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Artère iliolombaire",
+   "ta2": "4304"
+  },
+  {
+   "id": "artere-obturatrice",
+   "nom": "Artère obturatrice",
+   "latin": "Arteria obturatoria",
+   "anglais": "Obturator artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Artère obturatrice",
+   "ta2": "4323"
+  },
+  {
+   "id": "artere-sacrale-mediane",
+   "nom": "Artère sacrale médiane",
+   "latin": "Arteria sacralis mediana",
+   "anglais": "Median sacral artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Artère sacrale médiane",
+   "ta2": "4298"
+  },
+  {
+   "id": "branche-iliaque-de-l-artere-iliolombaire",
+   "nom": "Branche iliaque de l'artère iliolombaire",
+   "latin": "Ramus iliacus arteriae iliolumbalis",
+   "anglais": "Iliacus branch of iliolumbar artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Branche iliaque de l'artère iliolombaire",
+   "ta2": "4307"
+  },
+  {
+   "id": "branche-lombaire-de-l-artere-iliolombaire",
+   "nom": "Branche lombaire de l'artère iliolombaire",
+   "latin": "Ramus lumbalis arteriae iliolumbalis",
+   "anglais": "Lumbar branch of iliolumbar artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Branche lombaire de l'artère iliolombaire",
+   "ta2": "4305"
+  },
+  {
+   "id": "branche-spinale-de-l-artere-iliolombaire",
+   "nom": "Branche spinale de l'artère iliolombaire",
+   "latin": "Ramus spinalis arteriae iliolumbalis",
+   "anglais": "Spinal branch of iliolumbar artery",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Branche spinale de l'artère iliolombaire",
+   "ta2": "4306"
+  },
+  {
+   "id": "aorte-ascendante",
+   "nom": "Aorte ascendante",
+   "latin": "Aorta ascendens",
+   "anglais": "Ascending aorta",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Aorte ascendante",
+   "ta2": "4176",
+   "connu": {
+    "ensemble": {
+     "id": "aorte",
+     "nom": "Aorte"
+    }
+   }
+  },
+  {
+   "id": "aorte-thoracique",
+   "nom": "Aorte thoracique",
+   "latin": "Aorta thoracica",
+   "anglais": "Thoracic aorta",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Aorte thoracique",
+   "ta2": "4186",
+   "connu": {
+    "ensemble": {
+     "id": "aorte",
+     "nom": "Aorte"
+    }
+   }
+  },
+  {
+   "id": "arc-aortique",
+   "nom": "Arc aortique",
+   "latin": "Arcus aortae",
+   "anglais": "Aortic arch",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Arc aortique",
+   "ta2": "4177",
+   "connu": {
+    "ensemble": {
+     "id": "aorte",
+     "nom": "Aorte"
+    }
+   }
+  },
+  {
+   "id": "artere-circonflexe-de-la-scapula",
+   "nom": "Artère circonflexe de la scapula",
+   "latin": "Arteria circumflexa scapulae",
+   "anglais": "Circumflex scapular artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère circonflexe de la scapula",
+   "ta2": "4629"
+  },
+  {
+   "id": "artere-coronaire-gauche",
+   "nom": "Artère coronaire gauche",
+   "latin": "Arteria coronaria sinistra",
+   "anglais": "Left coronary artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère coronaire gauche",
+   "ta2": "4142"
+  },
+  {
+   "id": "artere-intercostale-supreme",
+   "nom": "Artère intercostale suprême",
+   "latin": "Arteria intercostalis suprema",
+   "anglais": "Supreme intercostal artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère intercostale suprême",
+   "ta2": "4609"
+  },
+  {
+   "id": "artere-lingulaire-inferieure-du-poumon-gauche",
+   "nom": "Artère lingulaire inférieure du poumon gauche",
+   "latin": "Arteria lingularis inferior pulmonis sinistri",
+   "anglais": "Inferior lingular artery of left lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère lingulaire inférieure du poumon gauche",
+   "ta2": "4099",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-lobaire-inferieure-du-poumon-droit",
+   "nom": "Artère lobaire inférieure du poumon droit",
+   "latin": "Arteria lobaris inferior pulmonis dextri",
+   "anglais": "Inferior lobar artery of right lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère lobaire inférieure du poumon droit",
+   "ta2": "4085",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-lobaire-moyenne-du-poumon-droit",
+   "nom": "Artère lobaire moyenne du poumon droit",
+   "latin": "Arteria lobaris media pulmonis dextri",
+   "anglais": "Middle lobar artery of right lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère lobaire moyenne du poumon droit",
+   "ta2": "4082",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-pulmonaire-droite",
+   "nom": "Artère pulmonaire droite",
+   "latin": "Arteria pulmonalis dextra",
+   "anglais": "Right pulmonary artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère pulmonaire droite",
+   "ta2": "4077",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-pulmonaire-gauche",
+   "nom": "Artère pulmonaire gauche",
+   "latin": "Arteria pulmonalis sinistra",
+   "anglais": "Left pulmonary artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère pulmonaire gauche",
+   "ta2": "4091",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-anterieure-du-poumon-droit",
+   "nom": "Artère segmentaire antérieure du poumon droit",
+   "latin": "Arteria segmentalis anterior pulmonis dextri",
+   "anglais": "Anterior segmental artery of right lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire antérieure du poumon droit",
+   "ta2": "4080",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-anterieure-du-poumon-gauche",
+   "nom": "Artère segmentaire antérieure du poumon gauche",
+   "latin": "Arteria segmentalis anterior pulmonis sinistri",
+   "anglais": "Anterior segmental artery of left lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire antérieure du poumon gauche",
+   "ta2": "4096",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-apicale-du-poumon-droit",
+   "nom": "Artère segmentaire apicale du poumon droit",
+   "latin": "Arteria segmentalis apicalis pulmonis dextri",
+   "anglais": "Apical segmental artery of right lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire apicale du poumon droit",
+   "ta2": "4079",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-apicale-du-poumon-gauche",
+   "nom": "Artère segmentaire apicale du poumon gauche",
+   "latin": "Arteria segmentalis apicalis pulmonis sinistri",
+   "anglais": "Apical segmental artery of left lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire apicale du poumon gauche",
+   "ta2": "4095",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-basale-anterieure-du-poumon-droit",
+   "nom": "Artère segmentaire basale antérieure du poumon droit",
+   "latin": "Arteria segmentalis basalis anterior pulmonis dextri",
+   "anglais": "Anterior basal segmental artery of right lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire basale antérieure du poumon droit",
+   "ta2": "4087",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-basale-anterieure-du-poumon-gauche",
+   "nom": "Artère segmentaire basale antérieure du poumon gauche",
+   "latin": "Arteria segmentalis basalis anterior pulmonis sinistri",
+   "anglais": "Anterior basal segmental artery of left lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire basale antérieure du poumon gauche",
+   "ta2": "4103",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-basale-laterale-du-poumon-droit",
+   "nom": "Artère segmentaire basale latérale du poumon droit",
+   "latin": "Arteria segmentalis basalis lateralis pulmonis dextri",
+   "anglais": "Lateral basal segmental artery of right lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire basale latérale du poumon droit",
+   "ta2": "4088",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-basale-laterale-du-poumon-gauche",
+   "nom": "Artère segmentaire basale latérale du poumon gauche",
+   "latin": "Arteria segmentalis basalis lateralis pulmonis sinistri",
+   "anglais": "Lateral basal segmental artery of left lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire basale latérale du poumon gauche",
+   "ta2": "4104",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-basale-mediale-du-poumon-droit",
+   "nom": "Artère segmentaire basale médiale du poumon droit",
+   "latin": "Arteria segmentalis basalis medialis pulmonis dextri",
+   "anglais": "Medial basal segmental artery of right lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire basale médiale du poumon droit",
+   "ta2": "4089",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-basale-mediale-du-poumon-gauche",
+   "nom": "Artère segmentaire basale médiale du poumon gauche",
+   "latin": "Arteria segmentalis basalis medialis pulmonis sinistri",
+   "anglais": "Medial basal segmental artery of left lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire basale médiale du poumon gauche",
+   "ta2": "4105",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-basale-posterieure-du-poumon-droit",
+   "nom": "Artère segmentaire basale postérieure du poumon droit",
+   "latin": "Arteria segmentalis basalis posterior pulmonis dextri",
+   "anglais": "Posterior basal segmental artery of right lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire basale postérieure du poumon droit",
+   "ta2": "4090",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-basale-posterieure-du-poumon-gauche",
+   "nom": "Artère segmentaire basale postérieure du poumon gauche",
+   "latin": "Arteria segmentalis basalis posterior pulmonis sinistri",
+   "anglais": "Posterior basal segmental artery of left lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire basale postérieure du poumon gauche",
+   "ta2": "4106",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-basale-superieure-du-poumon-gauche",
+   "nom": "Artère segmentaire basale supérieure du poumon gauche",
+   "latin": "Arteria segmentalis superior pulmonis sinistri",
+   "anglais": "Superior segmental artery of left lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire basale supérieure du poumon gauche",
+   "ta2": "4102",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-laterale-du-poumon-droit",
+   "nom": "Artère segmentaire latérale du poumon droit",
+   "latin": "Arteria segmentalis lateralis pulmonis dextri",
+   "anglais": "Lateral segmental artery of right lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire latérale du poumon droit",
+   "ta2": "4084",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-mediale-du-poumon-droit",
+   "nom": "Artère segmentaire médiale du poumon droit",
+   "latin": "Arteria segmentalis medialis pulmonis dextri",
+   "anglais": "Medial segmental artery of right lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire médiale du poumon droit",
+   "ta2": "4083",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-posterieure-du-poumon-droit",
+   "nom": "Artère segmentaire postérieure du poumon droit",
+   "latin": "Arteria segmentalis posterior pulmonis dextri",
+   "anglais": "Posterior segmental artery of right lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire postérieure du poumon droit",
+   "ta2": "4081",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-posterieure-du-poumon-gauche",
+   "nom": "Artère segmentaire postérieure du poumon gauche",
+   "latin": "Arteria segmentalis posterior pulmonis sinistri",
+   "anglais": "Posterior segmental artery of left lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire postérieure du poumon gauche",
+   "ta2": "4097",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-segmentaire-superieure-du-poumon-droit",
+   "nom": "Artère segmentaire supérieure du poumon droit",
+   "latin": "Arteria segmentalis superior pulmonis dextri",
+   "anglais": "Superior segmental artery of right lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère segmentaire supérieure du poumon droit",
+   "ta2": "4086",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "artere-subscapulaire",
+   "nom": "Artère subscapulaire",
+   "latin": "Arteria subscapularis",
+   "anglais": "Subscapular artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère subscapulaire",
+   "ta2": "4627"
+  },
+  {
+   "id": "artere-suprascapulaire",
+   "nom": "Artère suprascapulaire",
+   "latin": "Arteria suprascapularis",
+   "anglais": "Suprascapular artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère suprascapulaire",
+   "ta2": "4599"
+  },
+  {
+   "id": "artere-thoracique-laterale",
+   "nom": "Artère thoracique latérale",
+   "latin": "Arteria thoracica lateralis",
+   "anglais": "Lateral thoracic artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère thoracique latérale",
+   "ta2": "4625"
+  },
+  {
+   "id": "artere-thoraco-acromiale",
+   "nom": "Artère thoraco-acromiale",
+   "latin": "Arteria thoracoacromialis",
+   "anglais": "Thoraco-acromial artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère thoraco-acromiale",
+   "ta2": "4619"
+  },
+  {
+   "id": "artere-thoracodorsale",
+   "nom": "Artère thoracodorsale",
+   "latin": "Arteria thoracodorsalis",
+   "anglais": "Thoracodorsal artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artère thoracodorsale",
+   "ta2": "4628"
+  },
+  {
+   "id": "arteres-intercostales",
+   "nom": "Artères intercostales",
+   "latin": "Arteriae intercostales",
+   "anglais": "Intercostal arteries",
+   "region": "thorax",
+   "rang": 3,
+   "connu": {
+    "noms": [
+     "intercostales"
+    ],
+    "provenance": "aorte",
+    "territoire": "Espaces entre les côtes, muscles du dos",
+    "memo": "Elles longent le bord inférieur de chaque côte.",
+    "nombre": 22,
+    "membres": [
+     {
+      "id": "arteres-intercostales-posterieures",
+      "nom": "Artères intercostales postérieures"
+     },
+     {
+      "id": "premiere-artere-intercostale-posterieure",
+      "nom": "Première artère intercostale postérieure"
+     },
+     {
+      "id": "deuxieme-artere-intercostale-posterieure",
+      "nom": "Deuxième artère intercostale postérieure"
+     }
+    ]
+   }
+  },
+  {
+   "id": "arteres-lobaire-superieure-du-poumon-droit",
+   "nom": "Artères lobaire supérieure du poumon droit",
+   "latin": "Arteria lobaris superior pulmonis dextri",
+   "anglais": "Superior lobar artery of right lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Artères lobaire supérieure du poumon droit",
+   "ta2": "4078",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "bifurcation-du-tronc-pulmonaire",
+   "nom": "Bifurcation du tronc pulmonaire",
+   "latin": "Bifurcatio trunci pulmonalis",
+   "anglais": "Bifurcation of pulmonary trunk",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bifurcation du tronc pulmonaire",
+   "ta2": "4076",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "branche-inferolaterale-droite-de-l-artere-coronaire-droite",
+   "nom": "Branche inférolatérale droite de l'artère coronaire droite",
+   "latin": "(Ramus inferolateralis dexter arteriae coronariae dextrae)",
+   "anglais": "Right inferolateral branch of right coronary artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Branche inférolatérale droite de l'artère coronaire droite",
+   "ta2": "4141"
+  },
+  {
+   "id": "branche-profonde-de-l-artere-transverse-du-cou",
+   "nom": "Branche profonde de l'artère transverse du cou",
+   "latin": "(Ramus profundus arteriae transversae colli)",
+   "anglais": "Deep branch of transverse cervical artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Branche profonde de l'artère transverse du cou",
+   "ta2": "4605",
+   "inconstant": true
+  },
+  {
+   "id": "branche-superficielle-de-l-artere-transverse-du-cou",
+   "nom": "Branche superficielle de l'artère transverse du cou",
+   "latin": "(Ramus superficial arteriae transversae colli)",
+   "anglais": "Superficial branch of transverse cervical artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Branche superficielle de l'artère transverse du cou",
+   "ta2": "4602",
+   "inconstant": true
+  },
+  {
+   "id": "branches-pectorales-de-l-artere-thoraco-acromiale",
+   "nom": "Branches pectorales de l'artère thoraco-acromiale",
+   "latin": "Rami pectorales arteriae thoracoacromialis",
+   "anglais": "Pectoral branches of thoraco-acromial artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Branches pectorales de l'artère thoraco-acromiale",
+   "ta2": "4624"
+  },
+  {
+   "id": "branches-septales-de-l-artere-interventriculaire-anterieure",
+   "nom": "Branches septales de l'artère interventriculaire antérieure",
+   "latin": "Rami sept. art. Intervent. ant. sept. arteriae coron. sinis.",
+   "anglais": "Septal branches of anterior interventricular artery",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Branches septales de l'artère interventriculaire antérieure",
+   "ta2": "4147"
+  },
+  {
+   "id": "tronc-costocervical",
+   "nom": "Tronc costocervical",
+   "latin": "Truncus costocervicalis",
+   "anglais": "Costocervical trunk",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Tronc costocervical",
+   "ta2": "4607"
+  },
+  {
+   "id": "tronc-pulmonaire",
+   "nom": "Tronc pulmonaire",
+   "latin": "Truncus pulmonalis",
+   "anglais": "Pulmonary trunk",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Tronc pulmonaire",
+   "ta2": "4075",
+   "nature": "pulmonaire"
+  },
+  {
+   "id": "tronc-thyrocervical",
+   "nom": "Tronc thyrocervical",
+   "latin": "Truncus thyreocervicalis",
+   "anglais": "Thyrocervical trunk",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Tronc thyrocervical",
+   "ta2": "4590"
+  }
+ ]
+}
