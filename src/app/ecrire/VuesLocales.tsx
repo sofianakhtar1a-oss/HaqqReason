@@ -1,7 +1,7 @@
 "use client";
 
 import { NodeViewWrapper, type NodeViewProps } from "@tiptap/react";
-import { FileText, ImageOff, Paperclip } from "lucide-react";
+import { BookOpenText, FileText, ImageOff, Paperclip } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { lireFichier, urlFichier } from "@/lib/atelier/depot";
 
@@ -59,15 +59,22 @@ export function VueImageLocale(props: NodeViewProps) {
   );
 }
 
+/** Demande à l'atelier d'ouvrir un PDF dans la colonne d'à côté. */
+export const EVENEMENT_PDF_COTE = "calame:pdf-cote";
+export type DemandePdfCote = { fichier: string; nom: string; page: number };
+
 export function VueDocumentLocal(props: NodeViewProps) {
-  const attrs = props.node.attrs as { fichier: string; nom: string };
+  const attrs = props.node.attrs as { fichier: string; nom: string; page?: string };
   const url = useUrlLocale(attrs.fichier);
   const [poids, setPoids] = useState<number | null>(null);
+  const [estPdf, setEstPdf] = useState(false);
 
   useEffect(() => {
     let vivant = true;
     void lireFichier(attrs.fichier).then((f) => {
-      if (vivant) setPoids(f?.taille ?? null);
+      if (!vivant) return;
+      setPoids(f?.taille ?? null);
+      setEstPdf(f?.type === "application/pdf" || /\.pdf$/i.test(f?.nom ?? ""));
     });
     return () => {
       vivant = false;
@@ -83,8 +90,19 @@ export function VueDocumentLocal(props: NodeViewProps) {
           {poids !== null ? `${(poids / 1024 / 1024).toFixed(1)} Mo` : "Document joint"} · joint au document
         </span>
       </span>
+      {url && props.editor.isEditable && estPdf && (
+        <button
+          type="button"
+          className="bouton bouton-discret bouton-petit ml-auto shrink-0 sans-impression"
+          onClick={() => window.dispatchEvent(new CustomEvent<DemandePdfCote>(EVENEMENT_PDF_COTE, { detail: { fichier: attrs.fichier, nom: attrs.nom, page: Number(attrs.page) || 1 } }))}
+          title="Lire ce PDF dans une colonne à côté du texte, et en citer une page en un clic"
+        >
+          <BookOpenText className="size-4" aria-hidden="true" />
+          Lire à côté
+        </button>
+      )}
       {url && (
-        <a href={url} target="_blank" rel="noreferrer" className="bouton bouton-discret bouton-petit ml-auto shrink-0">
+        <a href={url} target="_blank" rel="noreferrer" className={`bouton bouton-discret bouton-petit ${props.editor.isEditable && estPdf ? "" : "ml-auto "}shrink-0`}>
           <Paperclip className="size-4" aria-hidden="true" />
           Ouvrir
         </a>

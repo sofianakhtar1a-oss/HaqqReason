@@ -2,6 +2,7 @@
 
 import { BookOpen, Hash, ListOrdered, NotebookText, Stamp, Type } from "lucide-react";
 import { BORDURES, PLACES_NOTES, POSITIONS_NUMERO, STYLES_NUMERO, type ReglagesPage, type ZonesLigne } from "@/lib/atelier/modele";
+import { STYLES_CITATION } from "@/lib/atelier/bibliotheque";
 import { Curseur } from "../Inspecteur";
 
 type Props = {
@@ -171,6 +172,16 @@ export function PanneauTexte({ reglages: r, surReglages }: Props) {
       <Bascule libelle="Lettrine au début de chaque partie" coche={r.lettrine} surChangement={(v) => surReglages({ lettrine: v })} />
       <Bascule libelle="Césure du français (texte justifié sans grands blancs)" coche={r.cesure} surChangement={(v) => surReglages({ cesure: v })} />
       <Bascule libelle="Ni ligne seule en bas de page, ni en haut de la suivante" coche={r.veuves} surChangement={(v) => surReglages({ veuves: v })} />
+      <label className="inspecteur-reglage">
+        <span className="inspecteur-libelle">Style des références (notes et bibliographie)</span>
+        <select className="champ" value={r.styleCitation} onChange={(e) => surReglages({ styleCitation: e.target.value as ReglagesPage["styleCitation"] })}>
+          {STYLES_CITATION.map((st) => (
+            <option key={st.cle} value={st.cle}>
+              {st.libelle}
+            </option>
+          ))}
+        </select>
+      </label>
     </section>
   );
 }

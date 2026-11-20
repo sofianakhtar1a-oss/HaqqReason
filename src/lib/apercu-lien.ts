@@ -193,3 +193,63 @@ export async function apercuLien(adresse: string, articleId: string): Promise<Ap
   if (!base.titre) base.titre = domaine(url.href) || url.href;
   return base;
 }
+
+/**
+ * Le même aperçu, pour l'atelier d'écriture : rien n'est rangé sur le serveur. La vignette
+ * (petite, vérifiée) repart avec la réponse ; l'appareil la garde avec ses propres images.
+ * Pour YouTube, la vignette n'est pas recopiée : la page l'affiche depuis i.ytimg.com.
+ */
+export async function apercuSansStockage(adresse: string): Promise<{ apercu: Apercu; image: { type: string; donnees: string } | null } | null> {
+  let url: URL;
+  try {
+    url = new URL(adresse.trim());
+  } catch {
+    return null;
+  }
+  if (url.protocol !== "https:" && url.protocol !== "http:") return null;
+  const base: Apercu = { url: url.href, titre: "", description: "", site: domaine(url.href), auteur: "", genre: "web", video: "", liste: "", image: "" };
+
+  const yt = infosYoutube(url.href);
+  if (yt) {
+    base.genre = "youtube";
+    base.video = yt.video;
+    base.liste = yt.liste;
+    base.site = "YouTube";
+    const oembed = process.env.APERCU_OEMBED_YOUTUBE || "https://www.youtube.com/oembed";
+    const r = await telecharger(`${oembed}?format=json&url=${encodeURIComponent(url.href)}`, 200_000, "application/json");
+    if (r) {
+      try {
+        const j = JSON.parse(new TextDecoder().decode(r.octets)) as { title?: string; author_name?: string };
+        base.titre = (j.title ?? "").slice(0, 300);
+        base.auteur = (j.author_name ?? "").slice(0, 120);
+      } catch {
+        /* réponse inattendue : on garde l'aperçu minimal */
+      }
+    }
+    if (!base.titre) base.titre = yt.liste && !yt.video ? "Playlist YouTube" : "Vidéo YouTube";
+    return { apercu: base, image: null };
+  }
+
+  let image: { type: string; donnees: string } | null = null;
+  const page = await telecharger(url.href, MAX_HTML, "text/html,application/xhtml+xml");
+  if (page && (page.type.includes("html") || page.type === "")) {
+    const html = new TextDecoder("utf-8", { fatal: false }).decode(page.octets);
+    const titre = meta(html, "og:title", "twitter:title") || decoder(/<title[^>]*>([^<]*)<\/title>/i.exec(html)?.[1] ?? "");
+    base.titre = titre.slice(0, 300);
+    base.description = meta(html, "og:description", "twitter:description", "description").slice(0, 500);
+    base.site = (meta(html, "og:site_name") || domaine(page.url)).slice(0, 120);
+    const adresseImage = meta(html, "og:image:secure_url", "og:image", "twitter:image", "twitter:image:src");
+    if (adresseImage) {
+      try {
+        const r = await telecharger(new URL(adresseImage, page.url).href, 1_500_000, "image/avif,image/webp,image/png,image/jpeg,image/gif;q=0.9");
+        const type = r && ["image/jpeg", "image/png", "image/webp", "image/gif"].find((t) => signatureValide(r.octets, t));
+        // Une image tronquée (plus lourde que la limite) n'est pas gardée.
+        if (r && type && r.octets.length < 1_500_000) image = { type, donnees: Buffer.from(r.octets).toString("base64") };
+      } catch {
+        /* adresse d'image invalide */
+      }
+    }
+  }
+  if (!base.titre) base.titre = domaine(url.href) || url.href;
+  return { apercu: base, image };
+}

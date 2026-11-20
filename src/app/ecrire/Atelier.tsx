@@ -47,6 +47,12 @@ import { Numeros } from "./extensions/numeros";
 import { GROUPES_ECARTES_ATELIER } from "./tableaux";
 import { COMMANDES_CALAME, EVENEMENT_DIALOGUE, type DialogueCalame } from "./commandes-calame";
 import { DialogueHadith, DialogueVerset } from "./DialoguesSources";
+import { DialogueArticle, DialogueBibliotheque, DialogueGlossaire, DialogueLienWeb } from "./DialoguesBibliotheque";
+import { reformaterReferences, reglerSources } from "./blocs/Sources";
+import { abonnerBibliotheque } from "@/lib/atelier/bibliotheque";
+import { lireFichier } from "@/lib/atelier/depot";
+import { LecteurPdfLocal } from "./LecteurPdfLocal";
+import { EVENEMENT_PDF_COTE, type DemandePdfCote } from "./VuesLocales";
 import { exporterDocx, exporterMarkdown, exporterPaquet, exporterPdf } from "./exporter";
 import { useAccesComplet } from "@/lib/client/acces";
 import { extensionsContenu } from "./extensions-calame";
@@ -142,6 +148,9 @@ export function Atelier(props: Props) {
   const [concentration, setConcentration] = useState(false);
   const [relecture, setRelecture] = useState(false);
   const [vueCote, setVueCote] = useState<string | null>(null);
+  // Un PDF lu à côté du texte (« choix » : la liste des PDF joints, ou un PDF de l'appareil).
+  const [pdfCote, setPdfCote] = useState<{ fichier: Blob; nom: string; page: number } | "choix" | null>(null);
+  const choixPdfCote = useRef<HTMLInputElement>(null);
   const [apercuPages, setApercuPages] = useState<ApercuPage[]>([]);
   const [pageCourante, setPageCourante] = useState(1);
   const [seance, setSeance] = useState<{ fin: number; motsDebut: number; minutes: number } | null>(null);
@@ -225,10 +234,37 @@ export function Atelier(props: Props) {
       const nom = (e as CustomEvent<DialogueCalame>).detail;
       if (nom === "renvoi") setRenvoi(true);
       else if (nom === "lien") setLienInterne(true);
-      else setDialogueSource(nom);
+      else if (nom === "pdf") {
+        setVueCote(null);
+        setPdfCote((p) => p ?? "choix");
+      } else setDialogueSource(nom);
     };
     window.addEventListener(EVENEMENT_DIALOGUE, ouvrir);
     return () => window.removeEventListener(EVENEMENT_DIALOGUE, ouvrir);
+  }, []);
+
+  // Le style des références suit le réglage du document ; corriger un ouvrage de la bibliothèque corrige ses notes.
+  useEffect(() => {
+    if (!editor || editor.isDestroyed) return;
+    reglerSources(editor, reglages.styleCitation);
+    return abonnerBibliotheque(() => reformaterReferences(editor));
+  }, [editor, reglages.styleCitation]);
+
+  // « Lire à côté » sur un PDF joint : il s'ouvre dans la colonne de droite.
+  useEffect(() => {
+    const ouvrir = (e: Event) => {
+      const d = (e as CustomEvent<DemandePdfCote>).detail;
+      void lireFichier(d.fichier).then((f) => {
+        if (!f) {
+          setMessage("Ce PDF n'est pas encore arrivé sur cet appareil : réessaie dans un instant.");
+          return;
+        }
+        setVueCote(null);
+        setPdfCote({ fichier: f.blob, nom: d.nom || f.nom || "Document", page: d.page });
+      });
+    };
+    window.addEventListener(EVENEMENT_PDF_COTE, ouvrir);
+    return () => window.removeEventListener(EVENEMENT_PDF_COTE, ouvrir);
   }, []);
 
   // Suivre un lien interne (Ctrl + clic) : vers un titre du document, ou vers un autre document.
@@ -836,6 +872,21 @@ export function Atelier(props: Props) {
   const delai = extras.echeance ? delaiEcheance(extras.echeance) : null;
   const restant = seance ? Math.max(0, seance.fin - maintenant) : 0;
   const docCote = vueCote ? (vueCote === doc.id ? null : documents.find((d) => d.id === vueCote)) : null;
+  // Les PDF joints au document (pour les lire à côté).
+  const pdfsJoints: DemandePdfCote[] = [];
+  if (pdfCote === "choix" && editor) {
+    editor.state.doc.descendants((n) => {
+      if (n.type.name === "documentPdf" && n.attrs.fichier) pdfsJoints.push({ fichier: String(n.attrs.fichier), nom: String(n.attrs.nom ?? ""), page: Number(n.attrs.page) || 1 });
+      return n.type.name !== "documentPdf";
+    });
+  }
+  /** Citer le PDF lu à côté : la page seule (en note), ou le passage sélectionné et sa page. */
+  const citerPdf = (nom: string, c: { page: number; texte: string }) => {
+    if (!editor) return;
+    const note = { type: "note", attrs: { texte: `${nom.replace(/\.pdf$/i, "")}, p.\u00a0${c.page}.` } };
+    if (c.texte) editor.chain().focus().insertContent([{ type: "blockquote", content: [{ type: "paragraph", content: [{ type: "text", text: `«\u00a0${c.texte}\u00a0»` }, note] }] }, { type: "paragraph" }]).run();
+    else editor.chain().focus().insertContent(note).run();
+  };
 
   return (
     <div
@@ -987,15 +1038,26 @@ export function Atelier(props: Props) {
             {message}
           </p>
         )}
-        <div className="calame-plateau" data-cote-a-cote={vueCote ? "" : undefined}>
+        <div className="calame-plateau" data-cote-a-cote={vueCote || pdfCote ? "" : undefined}>
           {recherche && editor && <BarreRecherche key={recherche.requete} editor={editor} avecRemplacement={recherche.remplacement} requeteInitiale={recherche.requete} surFermer={() => setRecherche(null)} />}
           <h1 className="calame-titre-impression">{titre}</h1>
           <Papier editor={editor} reglages={reglages} titre={titre} auteur={extras.proprietes.auteur} surPages={setPages} zoom={zoom} surApercu={setApercuPages} refScene={scene} />
           {vueCote && (
             <aside className="calame-vue-cote sans-impression" aria-label="Document ouvert à côté">
               <div className="calame-vue-cote-tete">
-                <select className="champ" value={vueCote} onChange={(e) => setVueCote(e.target.value)} aria-label="Document affiché à côté">
+                <select
+                  className="champ"
+                  value={vueCote}
+                  onChange={(e) => {
+                    if (e.target.value === "__pdf") {
+                      setVueCote(null);
+                      setPdfCote("choix");
+                    } else setVueCote(e.target.value);
+                  }}
+                  aria-label="Document affiché à côté"
+                >
                   <option value={doc.id}>Ce document (dernier enregistrement)</option>
+                  <option value="__pdf">Un PDF (joint ou de cet appareil)…</option>
                   {documents
                     .filter((d) => d.id !== doc.id && !extrasDe(d).corbeille)
                     .map((d) => (
@@ -1013,6 +1075,69 @@ export function Atelier(props: Props) {
               </div>
             </aside>
           )}
+          {!vueCote && pdfCote && (
+            <aside className="calame-vue-cote calame-vue-cote-pdf sans-impression" aria-label="PDF ouvert à côté">
+              <div className="calame-vue-cote-tete">
+                {pdfCote === "choix" ? (
+                  <span className="calame-vue-cote-titre">Lire un PDF à côté</span>
+                ) : (
+                  <button type="button" className="bouton bouton-discret bouton-petit" onClick={() => setPdfCote("choix")}>
+                    Changer de PDF
+                  </button>
+                )}
+                <button
+                  type="button"
+                  className="calame-icone"
+                  onClick={() => setPdfCote(null)}
+                  aria-label="Fermer le PDF"
+                >
+                  <X className="size-4" aria-hidden="true" />
+                </button>
+              </div>
+              <div className="calame-vue-cote-corps">
+                {pdfCote === "choix" ? (
+                  <div className="calame-pdf-choix">
+                    {pdfsJoints.length > 0 && (
+                      <>
+                        <p className="inspecteur-libelle">PDF joints à ce document</p>
+                        <ul>
+                          {pdfsJoints.map((p) => (
+                            <li key={p.fichier}>
+                              <button
+                                type="button"
+                                className="calame-biblio-ouvrage"
+                                onClick={() => window.dispatchEvent(new CustomEvent<DemandePdfCote>(EVENEMENT_PDF_COTE, { detail: p }))}
+                              >
+                                <span className="calame-biblio-titre">{p.nom || "Document"}</span>
+                                {p.page > 1 && <span className="calame-biblio-meta">à partir de la page {p.page}</span>}
+                              </button>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    )}
+                    <button type="button" className="bouton bouton-principal" onClick={() => choixPdfCote.current?.click()}>
+                      Ouvrir un PDF de cet appareil
+                    </button>
+                    <p className="inspecteur-aide">Le PDF ouvert ainsi n&apos;est pas ajouté au document : il reste le temps de la lecture. Pour le garder, joins-le (bouton « Insérer », « Document »).</p>
+                  </div>
+                ) : (
+                  <LecteurPdfLocal fichier={pdfCote.fichier} nom={pdfCote.nom} pageInitiale={pdfCote.page} surCiter={(c) => citerPdf(pdfCote.nom, c)} />
+                )}
+              </div>
+            </aside>
+          )}
+          <input
+            ref={choixPdfCote}
+            type="file"
+            accept="application/pdf,.pdf"
+            hidden
+            onChange={(e) => {
+              const fichier = e.target.files?.[0];
+              e.target.value = "";
+              if (fichier) setPdfCote({ fichier, nom: fichier.name, page: 1 });
+            }}
+          />
         </div>
         {editor && <OutilsBloc editor={editor} conteneur={centre} />}
         {editor && <MenuBulle editor={editor} />}
@@ -1064,6 +1189,12 @@ export function Atelier(props: Props) {
       {commentaire && editor && <DialogueCommentaire editor={editor} surFermer={() => setCommentaire(false)} />}
       {dialogueSource === "verset" && editor && <DialogueVerset editor={editor} surFermer={() => setDialogueSource(null)} />}
       {dialogueSource === "hadith" && editor && <DialogueHadith editor={editor} surFermer={() => setDialogueSource(null)} />}
+      {(dialogueSource === "bibliotheque" || dialogueSource === "reference-ouvrage" || dialogueSource === "citation-ouvrage") && editor && (
+        <DialogueBibliotheque editor={editor} mode={dialogueSource === "reference-ouvrage" ? "reference" : dialogueSource === "citation-ouvrage" ? "citation" : "gerer"} surFermer={() => setDialogueSource(null)} />
+      )}
+      {(dialogueSource === "lien-web" || dialogueSource === "youtube") && editor && <DialogueLienWeb editor={editor} youtube={dialogueSource === "youtube"} surFermer={() => setDialogueSource(null)} />}
+      {dialogueSource === "glossaire" && editor && <DialogueGlossaire editor={editor} surFermer={() => setDialogueSource(null)} />}
+      {dialogueSource === "article" && editor && <DialogueArticle editor={editor} surFermer={() => setDialogueSource(null)} />}
       {lienInterne && editor && <DialogueLien editor={editor} documents={documents} docId={doc.id} surFermer={() => setLienInterne(false)} />}
       {palette && <PaletteCommandes editor={editor} actions={actions} surFermer={() => setPalette(false)} />}
       {caracteres && editor && <Caracteres editor={editor} onglet={caracteres} surOnglet={setCaracteres} surFermer={() => setCaracteres(null)} />}

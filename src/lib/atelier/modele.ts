@@ -246,6 +246,8 @@ export type MiseEnPage = {
   justifier: boolean;
   /** Styles nommés, de paragraphe ou de caractère (Titre 4, Légende, Verset, et ceux de l'auteur). */
   stylesNommes: StyleNomme[];
+  /** Style des références (notes, bibliographie) : Chicago, APA ou ISO 690. */
+  styleCitation: "chicago" | "apa" | "iso690";
 };
 
 /** Un style nommé : on le pose sur un paragraphe (ou sur quelques mots), il se règle ici une fois pour toutes. */
@@ -371,6 +373,7 @@ export const MISE_EN_PAGE_PAR_DEFAUT: MiseEnPage = {
   veuves: true,
   justifier: false,
   stylesNommes: STYLES_NOMMES_PAR_DEFAUT,
+  styleCitation: "chicago",
 };
 
 export const REGLAGES_PAR_DEFAUT: ReglagesPage = {
@@ -554,6 +557,7 @@ export function nettoyerMiseEnPage(o: Record<string, unknown>): MiseEnPage {
     veuves: b(o.veuves, d.veuves),
     justifier: b(o.justifier, d.justifier),
     stylesNommes: nettoyerStylesNommes(o.stylesNommes),
+    styleCitation: dansLaListe(o.styleCitation, ["chicago", "apa", "iso690"] as const, d.styleCitation),
   };
 }
 

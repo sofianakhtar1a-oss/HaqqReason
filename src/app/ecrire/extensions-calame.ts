@@ -16,6 +16,7 @@ import { Dessin } from "./blocs/Dessin";
 import { CarteGeo } from "./blocs/CarteGeo";
 import { Commentaire, DeuxColonnes, LienInterne } from "./blocs/Marges";
 import { SautSection } from "./blocs/Sections";
+import { Bibliographie, Glossaire, IndexSources, SourcesCalame, TermeGlossaire, VueLienCarteCalame } from "./blocs/Sources";
 
 /**
  * Le vocabulaire des documents du Calame : celui des articles du site (mêmes blocs,
@@ -38,6 +39,7 @@ const VUES: Record<string, (p: NodeViewProps) => React.ReactNode> = {
 export const VUES_CALAME: Record<string, (p: NodeViewProps) => React.ReactNode> = {
   sommaire: VueSommaireCalame,
   image: VueImageCalame,
+  lienCarte: VueLienCarteCalame,
 };
 
 /** Des attributs posés sur l'enveloppe d'une vue (l'image qui flotte porte son habillage et sa largeur). */
@@ -73,6 +75,11 @@ export const EXTENSIONS_CALAME: AnyExtension[] = [
   LienInterne,
   DeuxColonnes,
   SautSection,
+  SourcesCalame,
+  Bibliographie,
+  IndexSources,
+  TermeGlossaire,
+  Glossaire,
 ];
 
 /** Tout ce qu'il faut pour lire (et écrire) un document du Calame. */

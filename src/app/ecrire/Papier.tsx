@@ -11,6 +11,7 @@ import { publierMiseEnPage } from "./pages-store";
 import { orientationsDesBlocs, reglerSections } from "./blocs/Sections";
 import type { ApercuPage, BlocApercu } from "./Miniatures";
 import { MargeCommentaires } from "./MargeCommentaires";
+import { PREFIXE_GLOSSAIRE, PREFIXE_HADITH, PREFIXE_VERSET } from "./blocs/Sources";
 
 /** Blanc laissé entre deux feuilles, à l'écran. */
 export const ECART = 30;
@@ -522,6 +523,19 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
         const p = pageDeLElement(el);
         if (!liste.includes(p)) liste.push(p);
         index.set(terme, liste);
+      }
+      // Les versets, les hadiths et les termes du glossaire, avec leurs pages (index des sources, glossaire).
+      const noterPage = (cle: string, el: Element) => {
+        const liste = index.get(cle) ?? [];
+        const p = pageDeLElement(el);
+        if (!liste.includes(p)) liste.push(p);
+        index.set(cle, liste);
+      };
+      for (const el of Array.from(zone.querySelectorAll<HTMLElement>("figure.verset[data-legende]"))) noterPage(`${PREFIXE_VERSET}${el.dataset.legende}`, el);
+      for (const el of Array.from(zone.querySelectorAll<HTMLElement>("figure.hadith[data-legende]"))) noterPage(`${PREFIXE_HADITH}${el.dataset.legende}`, el);
+      for (const el of Array.from(zone.querySelectorAll<HTMLElement>("[data-glossaire]"))) {
+        const entree = (el.dataset.glossaire || el.textContent || "").trim();
+        if (entree) noterPage(`${PREFIXE_GLOSSAIRE}${entree}`, el);
       }
       publierMiseEnPage(editor, {
         pages: pages.length,
