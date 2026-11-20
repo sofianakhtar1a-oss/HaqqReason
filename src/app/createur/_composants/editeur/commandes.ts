@@ -14,7 +14,7 @@ export type Commande = {
   cle: string;
   libelle: string;
   description: string;
-  groupe: "Texte" | "Apologétique" | "Schémas" | "Logique" | "Liens et sources" | "Encadrés";
+  groupe: "Texte" | "Apologétique" | "Schémas" | "Logique" | "Liens et sources" | "Encadrés" | "Mise en page" | "Sources";
   motsCles: string;
   appliquer: (chaine: ChainedCommands) => ChainedCommands;
 };
@@ -212,11 +212,12 @@ COMMANDES.splice(
 );
 
 /** Filtre pour le menu « / » : ignore les accents et la casse. */
-export function filtrerCommandes(requete: string): Commande[] {
+export function filtrerCommandes(requete: string, supplementaires: readonly Commande[] = [], ecartes?: ReadonlySet<string>): Commande[] {
   const norme = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
   const q = norme(requete.trim());
-  if (!q) return COMMANDES;
-  return COMMANDES.filter((c) => norme(`${c.libelle} ${c.motsCles}`).includes(q));
+  const toutes = supplementaires.length || ecartes ? [...COMMANDES, ...supplementaires].filter((c) => !ecartes?.has(c.groupe)) : COMMANDES;
+  if (!q) return toutes;
+  return toutes.filter((c) => norme(`${c.libelle} ${c.motsCles}`).includes(q));
 }
 
 export function executer(editor: Editor, commande: Commande): void {

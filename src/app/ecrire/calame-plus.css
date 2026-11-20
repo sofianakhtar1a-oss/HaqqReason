@@ -1377,3 +1377,481 @@
   width: 0.9rem;
   height: 0.9rem;
 }
+
+/* =====================================================================
+   Mise en page de livre : zones d'en-tête, notes de bas de page, filigrane,
+   bordure, numéros de ligne, coupures au milieu d'un paragraphe ou d'un tableau
+   ===================================================================== */
+.calame-entete.calame-lignes-zones,
+.calame-pied.calame-lignes-zones {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: baseline;
+  gap: 1rem;
+}
+.calame-zone {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.calame-zone[data-cote="gauche"] {
+  justify-self: start;
+  text-align: left;
+}
+.calame-zone[data-cote="centre"] {
+  justify-self: center;
+  text-align: center;
+}
+.calame-zone[data-cote="droite"] {
+  justify-self: end;
+  text-align: right;
+}
+.calame-numero-apres {
+  margin-left: 0.6em;
+}
+
+.calame-notes-bas {
+  position: absolute;
+  padding-top: 16px;
+  font-family: var(--corps-police);
+  font-size: 8.5pt;
+  line-height: 1.35;
+  color: #2a2f45;
+}
+.calame-notes-bas::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 33%;
+  border-top: 0.75px solid #9aa0b8;
+}
+.calame-notes-mesure {
+  top: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.calame-notes-mesure::before {
+  display: none;
+}
+.calame-note {
+  margin: 0 0 3px;
+}
+.calame-note-numero {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.calame-note-numero::after {
+  content: ".";
+}
+.calame-flux[data-sombre] .calame-notes-bas {
+  color: #c9cde0;
+}
+
+.calame-filigrane {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  rotate: -40deg;
+  white-space: nowrap;
+  font-family: var(--titre1-police);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: rgb(13 22 64 / 0.07);
+  pointer-events: none;
+  user-select: none;
+}
+.calame-flux[data-sombre] .calame-filigrane {
+  color: rgb(255 255 255 / 0.06);
+}
+.calame-bordure {
+  position: absolute;
+  border: 0.75pt solid #1a1d2e;
+  pointer-events: none;
+}
+.calame-bordure[data-genre="double"] {
+  border: 3.5px double #1a1d2e;
+}
+.calame-bordure[data-genre="epaisse"] {
+  border: 2.5pt solid #1a1d2e;
+}
+.calame-flux[data-sombre] .calame-bordure {
+  border-color: #8d94b4;
+}
+.calame-numero-ligne {
+  position: absolute;
+  translate: 0 0.3em;
+  font-size: 7.5pt;
+  line-height: 1;
+  color: #8a90a8;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Le blanc posé au début de la ligne qui change de page : aussi large que la ligne. */
+.calame-coupure.calame-coupure-ligne {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  text-indent: 0;
+}
+.calame-texte .tiptap table.calame-tableau tr.calame-coupure-rangee,
+.calame-texte .tiptap table.calame-tableau tr.calame-coupure-rangee > td {
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  min-width: 0 !important;
+}
+.calame-texte .tiptap table.calame-tableau tr.calame-coupure-rangee > td {
+  position: relative;
+}
+.calame-coupure-rangee,
+.calame-entete-repetee {
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Notes de fin, rassemblées à la fin d'une partie ou du document. */
+.calame-notes-fin {
+  margin: 1.6em 0 0.6em;
+  font-size: 0.92em;
+  user-select: text;
+}
+.calame-notes-fin-titre {
+  margin-bottom: 0.45em;
+  font-family: var(--titre3-police);
+  font-size: var(--titre3-taille);
+  font-weight: 700;
+  color: var(--titre3-couleur);
+}
+.calame-notes-fin .calame-note {
+  margin: 0 0 0.3em;
+  line-height: 1.4;
+}
+
+/* Alinéa, lettrine, césure, titres numérotés : réglés une fois pour tout le document. */
+.calame-flux[data-alinea] .calame-texte .tiptap > p {
+  text-indent: var(--alinea);
+}
+.calame-flux[data-cesure] .calame-texte .tiptap :is(p, li) {
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  hyphenate-limit-chars: 6 3 3;
+}
+.calame-flux[data-lettrine] .calame-texte .tiptap > h2 + p {
+  text-indent: 0;
+}
+.calame-flux[data-lettrine] .calame-texte .tiptap > h2 + p::first-letter {
+  -webkit-initial-letter: 3;
+  initial-letter: 3;
+  margin-right: 0.08em;
+  font-family: var(--titre1-police);
+  font-weight: 700;
+  color: var(--titre1-couleur);
+}
+@supports not ((initial-letter: 3) or (-webkit-initial-letter: 3)) {
+  .calame-flux[data-lettrine] .calame-texte .tiptap > h2 + p::first-letter {
+    float: left;
+    padding: 0.06em 0.08em 0 0;
+    font-size: 3.3em;
+    line-height: 0.82;
+  }
+}
+.calame-texte .tiptap :is(h2, h3, h4)[data-numero]::before {
+  content: attr(data-numero) "\00a0\00a0";
+  font-variant-numeric: tabular-nums;
+}
+.calame-texte .tiptap .note-marqueur[data-numero]::after {
+  content: attr(data-numero);
+}
+
+/* =====================================================================
+   Impression composée : chaque feuille de l'écran recopiée telle quelle
+   ===================================================================== */
+.calame-impression {
+  display: none;
+}
+@media print {
+  html.calame-impression-en-cours body > *:not(.calame-impression) {
+    display: none !important;
+  }
+  html.calame-impression-en-cours .calame-impression {
+    display: block !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .calame-impression .calame-flux-imprime {
+    position: static;
+    width: auto !important;
+    height: auto !important;
+    transform: none !important;
+    background: #fff;
+  }
+  .calame-page-imprimee {
+    position: relative;
+    overflow: hidden;
+    break-after: page;
+    background: #fff;
+  }
+  .calame-page-imprimee:last-child {
+    break-after: auto;
+  }
+  .calame-page-papier {
+    position: absolute;
+    overflow: hidden;
+    background: #fff;
+  }
+  /* La feuille de style générale cache tout le corps à l'impression (fiche de la clé de secours) : on rend visible ce qui doit l'être. */
+  html.calame-impression-en-cours .calame-impression,
+  html.calame-impression-en-cours .calame-impression * {
+    visibility: visible !important;
+  }
+  html.calame-impression-en-cours .calame-impression .calame-marges,
+  html.calame-impression-en-cours .calame-impression .calame-coupure-numero {
+    display: none !important;
+  }
+  html.calame-impression-en-cours .calame-impression .calame-coupure {
+    display: block !important;
+    visibility: hidden !important;
+  }
+  html.calame-impression-en-cours .calame-impression .calame-coupure.calame-coupure-ligne {
+    display: inline-block !important;
+  }
+  html.calame-impression-en-cours .calame-impression tr.calame-coupure-rangee {
+    display: table-row !important;
+    visibility: hidden !important;
+  }
+  html.calame-impression-en-cours .calame-impression tr.calame-coupure-rangee * {
+    visibility: hidden !important;
+  }
+  .calame-impression .calame-zone-imprimee {
+    padding: 0 !important;
+  }
+}
+.calame-zones-paires {
+  display: grid;
+  gap: 0.6rem;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  background: color-mix(in srgb, var(--surface) 60%, transparent);
+}
+
+/*
+ * Le texte commence exactement à la marge : ce qui est à l'écran est ce qui s'imprime.
+ * flow-root : la marge d'un premier titre reste dans la page au lieu de traverser l'éditeur
+ * (sinon tout le texte glisserait par rapport aux feuilles).
+ */
+.calame-texte .tiptap {
+  display: flow-root;
+  padding: 0 0 2rem;
+}
+
+/* ---------- table des matières d'un livre : points de conduite et numéros de page ---------- */
+.calame-texte .tiptap .calame-sommaire {
+  margin: 0.5em 0 1.2em;
+  padding: 0.2em 0;
+  border-radius: 0.3rem;
+  font-family: var(--corps-police);
+  color: var(--corps-couleur);
+}
+.calame-texte .tiptap .calame-sommaire[data-selectionne] {
+  outline: 2px solid color-mix(in srgb, var(--or) 55%, transparent);
+  outline-offset: 4px;
+}
+.calame-sommaire-titre {
+  margin: 0 0 0.7em;
+  font-family: var(--titre1-police);
+  font-size: var(--titre2-taille);
+  font-weight: var(--titre2-graisse);
+  color: var(--titre1-couleur);
+}
+.calame-sommaire ol {
+  display: grid;
+  gap: 0.05em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calame-sommaire li {
+  margin: 0 !important;
+}
+.calame-sommaire li[data-niveau="2"] {
+  margin-top: 0.35em !important;
+  font-weight: 600;
+}
+.calame-sommaire li[data-niveau="3"] {
+  padding-left: 1.4em;
+}
+.calame-sommaire li[data-niveau="4"] {
+  padding-left: 2.8em;
+  font-size: 0.95em;
+}
+.calame-sommaire button {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35em;
+  width: 100%;
+  padding: 0.12em 0;
+  border-radius: 0.2rem;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.calame-sommaire button:hover .calame-sommaire-texte,
+.calame-sommaire button:focus-visible .calame-sommaire-texte {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--or) 70%, transparent);
+  text-underline-offset: 0.18em;
+}
+.calame-sommaire-texte {
+  min-width: 0;
+}
+.calame-sommaire-numero {
+  margin-right: 0.5em;
+  font-variant-numeric: tabular-nums;
+}
+.calame-sommaire-points {
+  flex: 1;
+  min-width: 1.5em;
+  border-bottom: 0.14em dotted color-mix(in srgb, currentColor 55%, transparent);
+  transform: translateY(-0.28em);
+}
+.calame-sommaire-page {
+  min-width: 1.6em;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.calame-sommaire-vide {
+  margin: 0;
+  font-style: italic;
+  color: color-mix(in srgb, currentColor 60%, transparent);
+}
+.calame-texte .tiptap .calame-sommaire ol {
+  padding: 0;
+  list-style: none;
+}
+.calame-texte .tiptap .calame-sommaire li::marker {
+  content: none;
+}
+.calame-texte .tiptap .calame-sommaire li::before {
+  content: none;
+}
+
+/* ---------- page de garde ---------- */
+.calame-texte .tiptap .page-de-garde {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  height: var(--zone-hauteur);
+  font-family: var(--corps-police);
+  color: var(--corps-couleur);
+  text-align: center;
+}
+.calame-texte .tiptap .page-de-garde[data-selectionne] {
+  outline: 2px solid color-mix(in srgb, var(--or) 55%, transparent);
+  outline-offset: 6px;
+}
+.pdg-haut {
+  align-self: start;
+}
+.pdg-milieu {
+  align-self: center;
+}
+.pdg-bas {
+  align-self: end;
+}
+.pdg-haut p,
+.pdg-milieu p,
+.pdg-bas p {
+  margin: 0;
+}
+.pdg-etablissement {
+  font-size: 1.05em;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+}
+.calame-texte .tiptap .pdg-titre {
+  margin: 0;
+  font-family: var(--titre1-police);
+  font-size: calc(var(--titre1-taille) * 1.6);
+  font-weight: var(--titre1-graisse);
+  line-height: 1.15;
+  color: var(--titre1-couleur);
+  text-wrap: balance;
+}
+.pdg-sous-titre {
+  margin-top: 0.8em !important;
+  font-size: 1.25em;
+  font-style: italic;
+  text-wrap: balance;
+}
+.pdg-auteur {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.pdg-direction {
+  margin-top: 0.3em !important;
+}
+.pdg-date {
+  margin-top: 0.4em !important;
+  color: color-mix(in srgb, currentColor 70%, transparent);
+}
+.pdg-presente {
+  margin-bottom: 1.4em !important;
+  font-style: italic;
+}
+.pdg-vide {
+  opacity: 0.35;
+}
+.page-de-garde[data-modele="classique"] .pdg-milieu {
+  padding: 1.6em 0;
+  border-top: 0.75pt solid currentColor;
+  border-bottom: 0.75pt solid currentColor;
+}
+.calame-texte .tiptap .page-de-garde[data-modele="moderne"] {
+  padding-left: 1.6em;
+  border-left: 6pt solid var(--titre1-couleur);
+  text-align: left;
+}
+.calame-texte .tiptap .page-de-garde[data-modele="moderne"] .pdg-titre {
+  font-size: calc(var(--titre1-taille) * 2);
+}
+.page-de-garde[data-modele="academique"] .pdg-etablissement {
+  font-variant: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.calame-texte .tiptap .page-de-garde[data-modele="sobre"] .pdg-titre {
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+.pdg-reglages {
+  position: absolute;
+  z-index: 6;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: grid;
+  gap: 0.55rem;
+  width: min(19rem, 90%);
+  padding: 0.85rem;
+  border: 1px solid var(--trait);
+  border-radius: 0.9rem;
+  background: var(--fond);
+  box-shadow: 0 18px 40px -18px rgb(0 0 0 / 0.55);
+  font-family: var(--font-corps, system-ui);
+  font-size: 0.85rem;
+  color: var(--encre);
+  text-align: left;
+}
+/* Le titre d'une page de garde est du texte imprimé : ni plume animée, ni filet d'or du site. */
+.calame-texte .tiptap .pdg-titre,
+.calame-impression .pdg-titre {
+  animation: none;
+}
+.calame-texte .tiptap .pdg-titre::after,
+.calame-impression .pdg-titre::after {
+  content: none;
+}

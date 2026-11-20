@@ -6,6 +6,8 @@ import { extensionsDocument } from "@/lib/editeur/extensions";
 import { VueLienCarte, VueLogique, VueSchema, VueSommaire, VueSophisme } from "../createur/_composants/editeur/VuesBlocs";
 import { extensionsTableau } from "./tableaux";
 import { VueDocumentLocal, VueImageLocale } from "./VuesLocales";
+import { VueSommaireCalame } from "./blocs/SommaireCalame";
+import { PageDeGarde } from "./blocs/PageDeGarde";
 
 /**
  * Le vocabulaire des documents du Calame : celui des articles du site (mêmes blocs,
@@ -24,8 +26,10 @@ const VUES: Record<string, (p: NodeViewProps) => React.ReactNode> = {
   documentPdf: VueDocumentLocal,
 };
 
-/** Des vues propres au Calame, ajoutées par les modules qui les définissent (blocs de l'atelier). */
-export const VUES_CALAME: Record<string, (p: NodeViewProps) => React.ReactNode> = {};
+/** Des vues propres au Calame : elles passent avant celles des articles (la table des matières d'un livre a des numéros de page). */
+export const VUES_CALAME: Record<string, (p: NodeViewProps) => React.ReactNode> = {
+  sommaire: VueSommaireCalame,
+};
 
 export function avecVues(extensions: AnyExtension[]): AnyExtension[] {
   return extensions.map((e) => {
@@ -35,8 +39,8 @@ export function avecVues(extensions: AnyExtension[]): AnyExtension[] {
   });
 }
 
-/** Extensions supplémentaires du Calame (blocs et marques propres à l'atelier), déclarées par leurs modules. */
-export const EXTENSIONS_CALAME: AnyExtension[] = [];
+/** Extensions supplémentaires du Calame (blocs et marques propres à l'atelier). */
+export const EXTENSIONS_CALAME: AnyExtension[] = [PageDeGarde];
 
 /** Tout ce qu'il faut pour lire (et écrire) un document du Calame. */
 export function extensionsContenu(): AnyExtension[] {

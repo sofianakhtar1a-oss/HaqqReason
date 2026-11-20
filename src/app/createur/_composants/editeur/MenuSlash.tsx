@@ -34,16 +34,21 @@ function placer(props: SuggestionProps<Commande>) {
 
 const LIGNES_SANS_MENU = new Set(["versetArabe", "hadithArabe", "evenementDate"]);
 
-export const MenuSlash = Extension.create({
+export const MenuSlash = Extension.create<{ supplementaires: readonly Commande[]; ecartes?: ReadonlySet<string> }>({
   name: "menuSlash",
+  addOptions() {
+    // Un éditeur peut ajouter ses propres blocs au menu (l'atelier d'écriture : tableaux, page de garde…).
+    return { supplementaires: [] as readonly Commande[], ecartes: undefined };
+  },
   addProseMirrorPlugins() {
+    const { supplementaires, ecartes } = this.options;
     return [
       Suggestion<Commande>({
         editor: this.editor,
         pluginKey: new PluginKey("menuSlash"),
         char: "/",
         allow: ({ state, range }) => !LIGNES_SANS_MENU.has(state.doc.resolve(range.from).parent.type.name),
-        items: ({ query }) => filtrerCommandes(query).slice(0, 40),
+        items: ({ query }) => filtrerCommandes(query, supplementaires, ecartes).slice(0, 40),
         command: ({ editor, range, props }: { editor: Editor; range: Range; props: Commande }) => {
           props.appliquer(editor.chain().focus().deleteRange(range)).run();
         },

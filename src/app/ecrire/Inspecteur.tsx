@@ -43,7 +43,7 @@ const ONGLETS = [
   { cle: "sortie", libelle: "Sortie", Icone: Download },
 ] as const;
 
-function Curseur({
+export function Curseur({
   id,
   libelle,
   valeur,

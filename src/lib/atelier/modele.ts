@@ -24,6 +24,11 @@ export const FORMATS = [
   { cle: "a5", libelle: "A5", largeur: 148, hauteur: 210 },
   { cle: "lettre", libelle: "Lettre (US)", largeur: 215.9, hauteur: 279.4 },
   { cle: "legal", libelle: "Legal (US)", largeur: 215.9, hauteur: 355.6 },
+  // Formats de livre, tels que les demandent les imprimeurs.
+  { cle: "livre-13x20", libelle: "Livre 13 × 20 cm", largeur: 130, hauteur: 200 },
+  { cle: "livre-15x23", libelle: "Livre 15 × 23 cm", largeur: 150, hauteur: 230 },
+  { cle: "livre-6x9", libelle: "Livre 6 × 9 pouces", largeur: 152.4, hauteur: 228.6 },
+  { cle: "b5", libelle: "B5", largeur: 176, hauteur: 250 },
 ] as const;
 export type Format = (typeof FORMATS)[number]["cle"];
 
@@ -161,6 +166,108 @@ export type ReglagesPage = {
   papierSombre: boolean;
   /** Afficher la règle de page et les repères de coupe à l'écran. */
   reperes: boolean;
+} & MiseEnPage;
+
+/** Une ligne d'en-tête ou de pied en trois zones. La zone du centre est l'ancien champ unique. */
+export type ZonesLigne = { gauche: string; centre: string; droite: string };
+
+export const POSITIONS_NUMERO = [
+  { cle: "bas-droite", libelle: "En bas, à droite" },
+  { cle: "bas-centre", libelle: "En bas, au centre" },
+  { cle: "bas-exterieur", libelle: "En bas, côté extérieur" },
+  { cle: "haut-droite", libelle: "En haut, à droite" },
+  { cle: "haut-exterieur", libelle: "En haut, côté extérieur" },
+] as const;
+export type PositionNumero = (typeof POSITIONS_NUMERO)[number]["cle"];
+
+export const STYLES_NUMERO = [
+  { cle: "arabe", libelle: "1, 2, 3" },
+  { cle: "romain", libelle: "i, ii, iii" },
+  { cle: "ROMAIN", libelle: "I, II, III" },
+] as const;
+
+export const PLACES_NOTES = [
+  { cle: "bas", libelle: "En bas de page" },
+  { cle: "fin-partie", libelle: "À la fin de chaque partie" },
+  { cle: "fin-document", libelle: "À la fin du document" },
+] as const;
+export type PlaceNotes = (typeof PLACES_NOTES)[number]["cle"];
+
+export const BORDURES = [
+  { cle: "aucune", libelle: "Aucune" },
+  { cle: "fine", libelle: "Filet fin" },
+  { cle: "double", libelle: "Double filet" },
+  { cle: "epaisse", libelle: "Cadre épais" },
+] as const;
+export type Bordure = (typeof BORDURES)[number]["cle"];
+
+/**
+ * Ce que la mise en page d'un livre ou d'un mémoire demande en plus. Tout est facultatif dans
+ * un document plus ancien : les valeurs par défaut redonnent exactement l'allure d'avant.
+ */
+export type MiseEnPage = {
+  /*
+   * En-tête et pied en trois zones. Les anciens champs gardent leur place d'avant :
+   * `entete` est la zone de droite de l'en-tête, `pied` la zone de gauche du pied.
+   */
+  enteteGauche: string;
+  enteteCentre: string;
+  piedCentre: string;
+  piedDroite: string;
+  /** En-têtes et pieds différents sur les pages paires (verso). */
+  pairesDifferentes: boolean;
+  paires: { entete: ZonesLigne; pied: ZonesLigne };
+  numeroStyle: "arabe" | "romain" | "ROMAIN";
+  numeroPosition: PositionNumero;
+  /** Numéro de la première page du corps. */
+  premierNumero: number;
+  /** Pages liminaires (introduction, remerciements…) numérotées i, ii, iii avant le corps. */
+  pagesLiminaires: number;
+  /** Marges en miroir : la marge de gauche devient la marge intérieure (reliure), sur les deux faces. */
+  miroir: boolean;
+  /** Fond perdu pour l'imprimeur, en millimètres (0, 3 ou 5). */
+  fondPerdu: number;
+  /** Où vont les notes. */
+  notes: PlaceNotes;
+  filigrane: string;
+  bordure: Bordure;
+  numerosLignes: boolean;
+  /** Titres numérotés 1, 1.1, 1.1.1. */
+  numeroterTitres: boolean;
+  /** Retrait de première ligne des paragraphes, en millimètres. */
+  alinea: number;
+  /** Lettrine au premier paragraphe de chaque partie. */
+  lettrine: boolean;
+  /** Césure du français dans les paragraphes. */
+  cesure: boolean;
+  /** Ni ligne seule en bas de page (orpheline), ni en haut de la suivante (veuve). */
+  veuves: boolean;
+};
+
+const ZONES_VIDES: ZonesLigne = { gauche: "", centre: "", droite: "" };
+
+export const MISE_EN_PAGE_PAR_DEFAUT: MiseEnPage = {
+  enteteGauche: "",
+  enteteCentre: "",
+  piedCentre: "",
+  piedDroite: "",
+  pairesDifferentes: false,
+  paires: { entete: { ...ZONES_VIDES }, pied: { ...ZONES_VIDES } },
+  numeroStyle: "arabe",
+  numeroPosition: "bas-droite",
+  premierNumero: 1,
+  pagesLiminaires: 0,
+  miroir: false,
+  fondPerdu: 0,
+  notes: "bas",
+  filigrane: "",
+  bordure: "aucune",
+  numerosLignes: false,
+  numeroterTitres: false,
+  alinea: 0,
+  lettrine: false,
+  cesure: false,
+  veuves: true,
 };
 
 export const REGLAGES_PAR_DEFAUT: ReglagesPage = {
@@ -174,6 +281,7 @@ export const REGLAGES_PAR_DEFAUT: ReglagesPage = {
   premierePageNue: true,
   papierSombre: false,
   reperes: true,
+  ...MISE_EN_PAGE_PAR_DEFAUT,
 };
 
 // ---------------------------------------------------------------------------
@@ -303,7 +411,60 @@ export function nettoyerReglages(brut: unknown): ReglagesPage {
     premierePageNue: o.premierePageNue === undefined ? REGLAGES_PAR_DEFAUT.premierePageNue : Boolean(o.premierePageNue),
     papierSombre: Boolean(o.papierSombre),
     reperes: o.reperes === undefined ? REGLAGES_PAR_DEFAUT.reperes : Boolean(o.reperes),
+    ...nettoyerMiseEnPage(o),
   };
+}
+
+function nettoyerZones(brut: unknown): ZonesLigne {
+  const z = (brut ?? {}) as Record<string, unknown>;
+  const t = (v: unknown) => String(v ?? "").slice(0, LIMITES_ATELIER.entete);
+  return { gauche: t(z.gauche), centre: t(z.centre), droite: t(z.droite) };
+}
+
+/** Les réglages de mise en page avancée, chacun ramené dans ses bornes. */
+export function nettoyerMiseEnPage(o: Record<string, unknown>): MiseEnPage {
+  const d = MISE_EN_PAGE_PAR_DEFAUT;
+  const t = (v: unknown) => String(v ?? "").slice(0, LIMITES_ATELIER.entete);
+  const b = (v: unknown, defaut: boolean) => (v === undefined ? defaut : Boolean(v));
+  const paires = (o.paires ?? {}) as Record<string, unknown>;
+  return {
+    enteteGauche: t(o.enteteGauche),
+    enteteCentre: t(o.enteteCentre),
+    piedCentre: t(o.piedCentre),
+    piedDroite: t(o.piedDroite),
+    pairesDifferentes: b(o.pairesDifferentes, d.pairesDifferentes),
+    paires: { entete: nettoyerZones(paires.entete), pied: nettoyerZones(paires.pied) },
+    numeroStyle: dansLaListe(o.numeroStyle, STYLES_NUMERO.map((x) => x.cle), d.numeroStyle),
+    numeroPosition: dansLaListe(o.numeroPosition, POSITIONS_NUMERO.map((x) => x.cle), d.numeroPosition),
+    premierNumero: Math.round(nombre(o.premierNumero, 0, 9999, d.premierNumero)),
+    pagesLiminaires: Math.round(nombre(o.pagesLiminaires, 0, 60, d.pagesLiminaires)),
+    miroir: b(o.miroir, d.miroir),
+    fondPerdu: [0, 3, 5].includes(Number(o.fondPerdu)) ? Number(o.fondPerdu) : d.fondPerdu,
+    notes: dansLaListe(o.notes, PLACES_NOTES.map((x) => x.cle), d.notes),
+    filigrane: String(o.filigrane ?? "").slice(0, 40),
+    bordure: dansLaListe(o.bordure, BORDURES.map((x) => x.cle), d.bordure),
+    numerosLignes: b(o.numerosLignes, d.numerosLignes),
+    numeroterTitres: b(o.numeroterTitres, d.numeroterTitres),
+    alinea: nombre(o.alinea, 0, 30, d.alinea),
+    lettrine: b(o.lettrine, d.lettrine),
+    cesure: b(o.cesure, d.cesure),
+    veuves: b(o.veuves, d.veuves),
+  };
+}
+
+/** Les trois zones de l'en-tête et du pied d'une page (paire ou impaire). */
+export function zonesDeLaPage(r: ReglagesPage, numero: number): { entete: ZonesLigne; pied: ZonesLigne } {
+  if (r.pairesDifferentes && numero % 2 === 0) return r.paires;
+  return {
+    entete: { gauche: r.enteteGauche, centre: r.enteteCentre, droite: r.entete },
+    pied: { gauche: r.pied, centre: r.piedCentre, droite: r.piedDroite },
+  };
+}
+
+/** Les marges d'une page précise : en miroir, les pages paires (verso) échangent gauche et droite. */
+export function margesDeLaPage(reglages: Pick<ReglagesPage, "marges" | "miroir">, numero: number): Marges {
+  const m = reglages.marges;
+  return reglages.miroir && numero % 2 === 0 ? { ...m, gauche: m.droite, droite: m.gauche } : m;
 }
 
 /** Remplit les jetons d'un en-tête ou d'un pied de page. */
@@ -328,6 +489,7 @@ export function variablesDeStyle(reglages: ReglagesPage): Record<string, string>
     "--page-marge-droite": `${reglages.marges.droite * MM}px`,
     "--zone-largeur": `${g.zone.largeur}px`,
     "--zone-hauteur": `${g.zone.hauteur}px`,
+    "--alinea": `${(reglages.alinea ?? 0) * MM}px`,
   };
   for (const [nom, jeton] of Object.entries(reglages.styles) as [keyof Styles, Jeton][]) {
     const p = `--${nom}`;

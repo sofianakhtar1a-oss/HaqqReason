@@ -10,6 +10,7 @@ import { analyser, lisibilite, motsFrequents, phrases, syllabes } from "../src/l
 import { bilanDiff, comparerParagraphes, diffMots, editions } from "../src/lib/atelier/diff";
 import { corbeilleExpiree, nettoyerExtras } from "../src/lib/atelier/modele";
 import { nettoyerPreferences } from "../src/lib/atelier/preferences";
+import { composer, dateHegirienne, enRomain, numeroAffiche, partieDeLaPage, remplirGabarit, type UniteMesuree } from "../src/lib/atelier/composition";
 
 let echecs = 0;
 const ok = (nom: string, cond: boolean, detail = "") => {
@@ -113,6 +114,87 @@ ok("sens : sans lettre", !commenceEnArabe("12 — 34"));
   ok("préférences : étiquettes uniques", pr.etiquettes.length === 1);
   ok("préférences : taille bornée", pr.tailleInterface === 1.4);
   ok("préférences : typographie active par défaut", nettoyerPreferences({}).typographie === true);
+}
+
+/* ---------- Composition des pages ---------- */
+{
+  // Des paragraphes de 10 lignes de 20 px, 10 px entre eux ; page utile de 300 px.
+  const para = (id: string, haut: number, n = 10, extra: Partial<UniteMesuree> = {}): UniteMesuree => ({
+    id,
+    haut,
+    hauteur: n * 20,
+    lignes: () => Array.from({ length: n }, (_, i) => ({ haut: haut + i * 20, bas: haut + (i + 1) * 20 })),
+    ...extra,
+  });
+  const utile = { hauteurUtile: () => 300 };
+  const a = para("a", 0); // 0 → 200
+  const b = para("b", 210); // 210 → 410 : 4 lignes tiennent (210 → 290), 6 passent
+  const c1 = composer([a, b], utile);
+  ok("composition : deux pages", c1.pages.length === 2, String(c1.pages.length));
+  ok("composition : b coupé à la ligne 4", c1.pages[1].ouverture?.unite === "b" && c1.pages[1].ouverture?.ligne === 4, JSON.stringify(c1.pages[1].ouverture));
+  ok("composition : la page 2 commence à la ligne coupée", c1.pages[1].ouverture?.y === 290);
+
+  // Orpheline : une seule ligne tiendrait → tout le paragraphe passe.
+  const c2 = composer([para("a", 0, 14), para("b", 290)], utile);
+  ok("composition : pas d'orpheline", c2.pages[1].ouverture?.unite === "b" && c2.pages[1].ouverture?.ligne === 0, JSON.stringify(c2.pages[1].ouverture));
+
+  // Veuve : 9 lignes sur 10 tiendraient → on en garde 8, deux passent.
+  const c3 = composer([para("a", 0, 5), para("b", 110, 10)], utile);
+  ok("composition : pas de veuve", c3.pages[1].ouverture?.ligne === 8, JSON.stringify(c3.pages[1].ouverture));
+
+  // Sans la règle, la coupure tombe au plus juste.
+  const c4 = composer([para("a", 0, 5), para("b", 110, 10)], { ...utile, veuves: false });
+  ok("composition : coupure au plus juste sans règle", c4.pages[1].ouverture?.ligne === 9, JSON.stringify(c4.pages[1].ouverture));
+
+  // Un bloc insécable descend entier.
+  const c5 = composer([para("a", 0, 12), { id: "img", haut: 250, hauteur: 120, insecable: true }], utile);
+  ok("composition : image descendue", c5.pages[1].ouverture?.unite === "img" && c5.pages[1].ouverture?.ligne === 0);
+
+  // Un titre ne reste pas seul en bas de page.
+  const c6 = composer([para("a", 0, 13), { id: "t", haut: 265, hauteur: 25, avecSuivant: true }, para("b", 295, 6)], utile);
+  ok("composition : titre emporté avec la suite", c6.pages[1].ouverture?.unite === "t", JSON.stringify(c6.pages[1].ouverture));
+
+  // Notes : la place des notes est retirée à la page où elles sont appelées.
+  const notes = [{ id: "n1", y: 30 }];
+  const c7 = composer([para("a", 0, 14, { notes })], { ...utile, hauteurNote: () => 40, filetNotes: 10 });
+  ok("composition : note gardée en page 1", c7.pages[0].notes.includes("n1") && c7.pages[0].hauteurNotes === 50, JSON.stringify(c7.pages[0]));
+  ok("composition : la note réduit la page (12 lignes au lieu de 14)", c7.pages[1].ouverture?.ligne === 12, JSON.stringify(c7.pages[1].ouverture));
+
+  // Tableau : coupé entre deux rangées, l'en-tête répété en haut de la suite.
+  const tableau: UniteMesuree = { id: "tab", haut: 200, hauteur: 200, minAvant: 2, minApres: 1, repete: 20, lignes: () => Array.from({ length: 10 }, (_, i) => ({ haut: 200 + i * 20, bas: 220 + i * 20 })) };
+  const c8 = composer([para("a", 0, 10), tableau], utile);
+  ok("composition : tableau coupé après 5 rangées", c8.pages[1].ouverture?.unite === "tab" && c8.pages[1].ouverture?.ligne === 5 && c8.pages[1].ouverture?.repete === 20, JSON.stringify(c8.pages[1].ouverture));
+  ok("composition : la place de l'en-tête est comptée", c8.pages[1].debut === 280, String(c8.pages[1].debut));
+
+  // Saut de page demandé.
+  const c9 = composer([para("a", 0, 2), { ...para("b", 50, 2), sautAvant: true }], utile);
+  ok("composition : saut de page", c9.pages.length === 2 && c9.pages[1].ouverture?.unite === "b");
+
+  // Bloc plus haut qu'une page : il la traverse.
+  const c10 = composer([{ id: "geant", haut: 0, hauteur: 700, insecable: true }], utile);
+  ok("composition : bloc géant sur 3 pages", c10.pages.length === 3 && c10.pages[1].ouverture === null, String(c10.pages.length));
+
+  // Très long paragraphe : plusieurs coupures.
+  const c11 = composer([para("long", 0, 40)], utile);
+  ok("composition : 40 lignes sur 3 pages", c11.pages.length === 3 && c11.pages[1].ouverture?.ligne === 15 && c11.pages[2].ouverture?.ligne === 30, JSON.stringify(c11.pages.map((p) => p.ouverture)));
+}
+
+/* ---------- Numéros et jetons ---------- */
+{
+  ok("romain : 4 → iv", enRomain(4) === "iv");
+  ok("romain : 1994 → mcmxciv", enRomain(1994) === "mcmxciv");
+  const o = { style: "arabe" as const, premier: 1, liminaires: 3 };
+  ok("numéro : liminaire en romain", numeroAffiche(2, o) === "ii");
+  ok("numéro : le corps repart à 1", numeroAffiche(4, o) === "1" && numeroAffiche(10, o) === "7");
+  ok("numéro : premier numéro choisi", numeroAffiche(1, { style: "arabe", premier: 5, liminaires: 0 }) === "5");
+  ok("numéro : romain majuscule", numeroAffiche(3, { style: "ROMAIN", premier: 1, liminaires: 0 }) === "III");
+  const h = dateHegirienne(new Date("2026-11-20T12:00:00Z"));
+  ok("hégire : année 1448", /1448 H$/.test(h), h);
+  const ligne = remplirGabarit("{titre} — {partie} — p. {page}/{pages} — {hégire}", { titre: "Mémoire", page: "iv", pages: 12, partie: "Introduction", date: new Date("2026-11-20T12:00:00Z") });
+  ok("gabarit : jetons remplis", ligne.startsWith("Mémoire — Introduction — p. iv/12 — ") && ligne.endsWith("1448 H"), ligne);
+  const titres = [{ y: 0, texte: "Un" }, { y: 500, texte: "Deux" }, { y: 900, texte: "Trois" }];
+  ok("partie : celle qui s'ouvre sur la page", partieDeLaPage(titres, 400, 700) === "Deux");
+  ok("partie : sinon la dernière ouverte", partieDeLaPage(titres, 600, 850) === "Deux" && partieDeLaPage(titres, 950, 1200) === "Trois");
 }
 
 console.log(echecs ? `\n${echecs} échec(s).` : "Tout est bon (Calame).");

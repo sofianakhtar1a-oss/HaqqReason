@@ -43,7 +43,9 @@ import { Inspecteur, type OngletSupplementaire } from "./Inspecteur";
 import { PaletteCommandes, type ActionPalette } from "./PaletteCommandes";
 import { Papier } from "./Papier";
 import { CoupuresDePage } from "./pages-extension";
-import { COMMANDE_TABLEAU, GROUPES_ECARTES_ATELIER } from "./tableaux";
+import { Numeros } from "./extensions/numeros";
+import { GROUPES_ECARTES_ATELIER } from "./tableaux";
+import { COMMANDES_CALAME } from "./commandes-calame";
 import { exporterDocx, exporterMarkdown, exporterPaquet, exporterPdf } from "./exporter";
 import { useAccesComplet } from "@/lib/client/acces";
 import { extensionsContenu } from "./extensions-calame";
@@ -51,7 +53,9 @@ import { Recherche } from "./extensions/recherche";
 import { AidesSaisie, reglagesSaisie } from "./extensions/saisie";
 import { SensEcriture } from "./extensions/sens";
 import { Analyse } from "./extensions/analyse";
-import { Replis, toutDeplier } from "./extensions/replis";
+import { Replis, replisActuels, toutDeplier } from "./extensions/replis";
+import { imprimerPages } from "./impression";
+import { PanneauMiseEnPage, PanneauTexte } from "./panneaux/PanneauMiseEnPage";
 import { BlocCourant } from "./extensions/concentration";
 import { dicteeDisponible, dicter, SurlignageLecture, type Dictee } from "./voix";
 import { BarreRecherche } from "./BarreRecherche";
@@ -122,6 +126,10 @@ export function Atelier(props: Props) {
   const [recherche, setRecherche] = useState<{ remplacement: boolean; requete: string } | null>(requeteInitiale ? { remplacement: false, requete: requeteInitiale } : null);
   const [caracteres, setCaracteres] = useState<OngletCaracteres | null>(null);
   const [zoom, setZoom] = useState(1);
+  const zoomRef = useRef(zoom);
+  useEffect(() => {
+    zoomRef.current = zoom;
+  });
   const [concentration, setConcentration] = useState(false);
   const [relecture, setRelecture] = useState(false);
   const [vueCote, setVueCote] = useState<string | null>(null);
@@ -177,8 +185,9 @@ export function Atelier(props: Props) {
           return ed.isEmpty ? "Écris ici. Tape « / » pour insérer un tableau, une image, une frise, une carte mentale…" : "";
         },
       }),
-      MenuSlash,
+      MenuSlash.configure({ supplementaires: COMMANDES_CALAME }),
       CoupuresDePage,
+      Numeros,
       Recherche,
       AidesSaisie,
       SensEcriture,
@@ -359,6 +368,32 @@ export function Atelier(props: Props) {
   }, [insererFichier]);
 
   // ---------------------------------------------------------------- sortie
+  /*
+   * Imprimer : les pages de l'écran, recopiées une à une (impression.ts). Une partie repliée
+   * est d'abord dépliée, et sur un écran plus étroit que le papier, la page reprend sa vraie
+   * largeur le temps de l'impression : on attend que le texte soit recomposé avant de copier.
+   */
+  const imprimerComposees = useCallback(async () => {
+    if (!editor) return;
+    const flux = scene.current?.querySelector<HTMLElement>(".calame-flux");
+    if (!flux) {
+      exporterPdf();
+      return;
+    }
+    const attendre = (ms: number) => new Promise((r) => setTimeout(r, ms));
+    const replie = replisActuels(editor).length > 0;
+    toutDeplier(editor);
+    const etroit = flux.offsetWidth < geometrie(courant.current.reglages).page.largeur - 1;
+    const zoomAvant = zoomRef.current;
+    if (etroit) setZoom(0.5);
+    if (replie || etroit) await attendre(650);
+    try {
+      await imprimerPages(flux, courant.current.reglages);
+    } finally {
+      if (etroit) setZoom(zoomAvant);
+    }
+  }, [editor]);
+
   const exporter = useCallback(
     async (quoi: "pdf" | "docx" | "md" | "calame") => {
       if (!editor) return;
@@ -372,8 +407,7 @@ export function Atelier(props: Props) {
       };
       try {
         if (quoi === "pdf") {
-          toutDeplier(editor);
-          exporterPdf();
+          await imprimerComposees();
         } else if (quoi === "md") exporterMarkdown(aJour);
         else {
           setExportEnCours(quoi);
@@ -386,7 +420,7 @@ export function Atelier(props: Props) {
         setExportEnCours("");
       }
     },
-    [doc, editor, enregistrer],
+    [doc, editor, enregistrer, imprimerComposees],
   );
 
   // ---------------------------------------------------------------- modes
@@ -605,6 +639,20 @@ export function Atelier(props: Props) {
       { cle: "paquet", libelle: "Sauvegarde complète", description: "Texte, mise en page et images dans un seul fichier", groupe: "Sortie", faire: () => void exporter("calame") },
       { cle: "caracteres", libelle: "Caractères et formules de respect", description: "ﷺ, translittération, symboles (Ctrl+Maj+C)", groupe: "Insérer", faire: () => setCaracteres("formules") },
       { cle: "symboles", libelle: "Symboles", description: "Chercher un caractère par son nom", groupe: "Insérer", faire: () => setCaracteres("symboles") },
+      {
+        cle: "page-de-garde",
+        libelle: "Ajouter une page de garde",
+        description: "Au tout début, avec le titre et l'auteur du document",
+        groupe: "Insérer",
+        faire: () => editor?.chain().focus().insertContentAt(0, { type: "pageDeGarde", attrs: { titre: courant.current.titre, auteur: extras.proprietes.auteur, modele: "classique" } }).run(),
+      },
+      {
+        cle: "sommaire-insere",
+        libelle: "Insérer la table des matières",
+        description: "Avec les numéros de page, à l'endroit du curseur",
+        groupe: "Insérer",
+        faire: () => editor?.chain().focus().insertContent({ type: "sommaire", attrs: { titre: "", profondeur: 4 } }).run(),
+      },
       { cle: "relire", libelle: "Relire", description: "Mesures, répétitions, lecture à voix haute", groupe: "Relire", faire: () => ouvrirOnglet("relire") },
       { cle: "relecture", libelle: relecture ? "Quitter le mode relecture" : "Mode relecture", description: "Texte en lecture seule, plus grand", groupe: "Relire", faire: () => basculerRelecture(!relecture) },
       { cle: "cote", libelle: "Afficher ou cacher le plan", description: "La colonne de gauche", groupe: "Affichage", faire: () => setCoteOuvert((o) => !o) },
@@ -632,7 +680,7 @@ export function Atelier(props: Props) {
         .slice(0, 200)
         .map((d) => ({ cle: `doc-${d.id}`, libelle: d.titre || "Sans titre", description: `${d.mots.toLocaleString("fr-FR")} mots`, groupe: "Ouvrir", faire: () => props.surOuvrir(d.id) })),
     ],
-    [enregistrer, exporter, documents, doc.id, relecture, basculerRelecture, basculerConcentration, ajusterLargeur, motsActuels, surBienvenue, props, palette, editor],
+    [enregistrer, exporter, documents, doc.id, relecture, basculerRelecture, basculerConcentration, ajusterLargeur, motsActuels, surBienvenue, props, palette, editor, extras.proprietes.auteur],
   );
 
   function ouvrirOnglet(cle: string) {
@@ -849,7 +897,7 @@ export function Atelier(props: Props) {
         )}
         {!concentration && (
           <div className="calame-outils sans-impression">
-            {editor && <BarreOutils editor={editor} groupesEcartes={GROUPES_ECARTES_ATELIER} commandesSupplementaires={[COMMANDE_TABLEAU]} />}
+            {editor && <BarreOutils editor={editor} groupesEcartes={GROUPES_ECARTES_ATELIER} commandesSupplementaires={COMMANDES_CALAME} />}
           </div>
         )}
         {message && (
@@ -860,7 +908,7 @@ export function Atelier(props: Props) {
         <div className="calame-plateau" data-cote-a-cote={vueCote ? "" : undefined}>
           {recherche && editor && <BarreRecherche key={recherche.requete} editor={editor} avecRemplacement={recherche.remplacement} requeteInitiale={recherche.requete} surFermer={() => setRecherche(null)} />}
           <h1 className="calame-titre-impression">{titre}</h1>
-          <Papier editor={editor} reglages={reglages} titre={titre} surPages={setPages} zoom={zoom} surApercu={setApercuPages} refScene={scene} />
+          <Papier editor={editor} reglages={reglages} titre={titre} auteur={extras.proprietes.auteur} surPages={setPages} zoom={zoom} surApercu={setApercuPages} refScene={scene} />
           {vueCote && (
             <aside className="calame-vue-cote sans-impression" aria-label="Document ouvert à côté">
               <div className="calame-vue-cote-tete">
@@ -919,6 +967,8 @@ export function Atelier(props: Props) {
           supplementaires={supplementaires}
           onglet={ongletInspecteur}
           surOnglet={setOngletInspecteur}
+          pageEnPlus={<PanneauMiseEnPage reglages={reglages} surReglages={modifierReglages} />}
+          stylesEnPlus={<PanneauTexte reglages={reglages} surReglages={modifierReglages} />}
         />
       )}
 
