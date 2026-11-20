@@ -6334,3 +6334,20 @@ html[data-vue="utilisateur"] {
 [data-accent="safran"] {
   --accent: var(--safran);
 }
+
+/* =====================================================================
+   L'Écorché : le carmin, septième couleur du site — le rouge du muscle,
+   et l'encre des planches anatomiques gravées.
+   ===================================================================== */
+:root,
+[data-theme="dark"] {
+  --carmin: #ff7a7a;
+  --sur-carmin: #2a0607;
+}
+[data-theme="light"] {
+  --carmin: #a3222b;
+  --sur-carmin: #ffffff;
+}
+[data-accent="carmin"] {
+  --accent: var(--carmin);
+}

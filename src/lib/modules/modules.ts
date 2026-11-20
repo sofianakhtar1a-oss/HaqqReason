@@ -12,8 +12,8 @@
 import { THEMES } from "@/lib/langues/themes/index";
 import type { Entree, Niveau, Theme } from "@/lib/langues/types";
 
-export type ModuleId = "accueil" | "calame" | "alambic" | "langues" | "monde";
-export const IDS_MODULES: ModuleId[] = ["accueil", "calame", "alambic", "langues", "monde"];
+export type ModuleId = "accueil" | "calame" | "alambic" | "langues" | "monde" | "corps";
+export const IDS_MODULES: ModuleId[] = ["accueil", "calame", "alambic", "langues", "monde", "corps"];
 
 export type Champ = { cle: string; libelle: string; defaut: string; long?: boolean; aide?: string; nombre?: { min: number; max: number } };
 export type Section = { titre: string; champs: Champ[] };
@@ -33,7 +33,7 @@ export type DefModule = {
   nom: string;
   description: string;
   adresse: string;
-  accent: "or" | "emeraude" | "amethyste" | "azur" | "safran";
+  accent: "or" | "emeraude" | "amethyste" | "azur" | "safran" | "carmin";
   sections: Section[];
   listes: DefListe[];
   vocabulaire?: boolean;
@@ -75,8 +75,8 @@ const ACCUEIL: DefModule = {
       titre: "En-tête de la page",
       champs: [
         { cle: "titre", libelle: "Titre", defaut: "Par où veux-tu commencer ?" },
-        { cle: "intro", libelle: "Introduction", defaut: "Six espaces : écrire, transformer tes fichiers, apprendre une langue, parcourir le monde, lire, et comprendre l'islam en vidéo. Tu passes de l'un à l'autre quand tu veux.", long: true },
-        { cle: "meta.description", libelle: "Description pour Google", defaut: "Six espaces : Le Calame pour écrire, L'Alambic pour convertir ses fichiers, Le Truchement pour apprendre une langue, Le Portulan pour apprendre la géographie, la bibliothèque des preuves de la véracité de l'islam, et L'Islam authentique en vidéos.", long: true },
+        { cle: "intro", libelle: "Introduction", defaut: "Sept espaces : écrire, transformer tes fichiers, apprendre une langue, parcourir le monde, découvrir le corps humain, lire, et comprendre l'islam en vidéo. Tu passes de l'un à l'autre quand tu veux.", long: true },
+        { cle: "meta.description", libelle: "Description pour Google", defaut: "Sept espaces : Le Calame pour écrire, L'Alambic pour convertir ses fichiers, Le Truchement pour apprendre une langue, Le Portulan pour apprendre la géographie, L'Écorché pour apprendre l'anatomie, la bibliothèque des preuves de la véracité de l'islam, et L'Islam authentique en vidéos.", long: true },
       ],
     },
   ],
@@ -127,6 +127,15 @@ const ACCUEIL: DefModule = {
             soustitre: "Apprendre la géographie",
             marque: "Explorer",
             texte: "Les drapeaux, les capitales, les cartes, les continents et les monnaies des {pays} pays et territoires du monde, en quinze niveaux. Un globe à faire tourner, des fiches mémoire, des duels et un classement.",
+          },
+        },
+        {
+          id: "corps",
+          valeurs: {
+            titre: "L'Écorché",
+            soustitre: "Apprendre l'anatomie",
+            marque: "Disséquer",
+            texte: "Le corps humain en 3D, sans peau, à faire tourner à 360° : les os, les muscles, les tendons et les artères, couche par couche. Des planches de plus en plus fines, des questions variées, des fiches mémoire et des jeux.",
           },
         },
         {
@@ -423,7 +432,46 @@ const MONDE: DefModule = {
   ],
 };
 
-export const MODULES: Record<ModuleId, DefModule> = { accueil: ACCUEIL, calame: CALAME, alambic: ALAMBIC, langues: LANGUES, monde: MONDE };
+const CORPS: DefModule = {
+  id: "corps",
+  nom: "L'Écorché",
+  description: "L'espace pour apprendre l'anatomie en 3D : ses textes, et les titres de chaque partie.",
+  adresse: "/corps",
+  accent: "carmin",
+  sections: [
+    {
+      titre: "Présentation",
+      champs: [
+        { cle: "meta.titre", libelle: "Titre de l'onglet du navigateur", defaut: "L'Écorché, apprendre l'anatomie en 3D" },
+        {
+          cle: "meta.description",
+          libelle: "Description pour Google",
+          defaut: "Le corps humain en 3D, sans peau, à faire tourner à 360° : les os, les muscles, les tendons et les artères, en planches progressives, avec des quiz, des fiches mémoire et des jeux.",
+          long: true,
+        },
+        { cle: "tete.titre", libelle: "Nom dans la barre du haut", defaut: "L'Écorché" },
+        { cle: "tete.sous", libelle: "Pastille de la barre du haut", defaut: "Anatomie" },
+      ],
+    },
+    {
+      titre: "Apprendre",
+      champs: [
+        { cle: "accueil.titre", libelle: "Titre", defaut: "Le corps humain, couche par couche" },
+        {
+          cle: "accueil.chapo",
+          libelle: "Introduction",
+          defaut: "Les os, les muscles, les tendons et les artères : chaque structure à reconnaître, à situer et à nommer, du crâne aux orteils.",
+          long: true,
+        },
+        { cle: "accueil.categories", libelle: "Titre des couches", defaut: "Les quatre couches" },
+        { cle: "accueil.rapides", libelle: "Titre des jeux rapides", defaut: "Pour quelques minutes" },
+      ],
+    },
+  ],
+  listes: [],
+};
+
+export const MODULES: Record<ModuleId, DefModule> = { accueil: ACCUEIL, calame: CALAME, alambic: ALAMBIC, langues: LANGUES, monde: MONDE, corps: CORPS };
 export const estModule = (id: string): id is ModuleId => (IDS_MODULES as string[]).includes(id);
 
 export const ICONES_DISPONIBLES = ["Users", "Plane", "Briefcase", "Sun", "UtensilsCrossed", "HeartPulse", "House", "Smile", "CloudSun", "GraduationCap", "Building2", "Trees", "BookOpen", "Moon", "Star", "Globe", "Music", "Car", "ShoppingBag", "Dumbbell", "Landmark", "Laptop", "Leaf", "Heart", "Clapperboard", "Coffee", "Cpu", "Factory", "Hammer", "Lightbulb", "MapPin", "Newspaper", "Plug", "ShieldCheck", "Sparkles", "Sprout", "Tent", "Trophy", "UserRound", "Vote", "Wallet", "Zap", "PersonStanding", "Shirt", "PawPrint", "Scale", "TrendingUp", "Brain", "Clock", "Puzzle", "Quote", "Link2", "Activity", "Palette", "Feather", "Blocks", "Shapes", "Gauge", "Gem"];

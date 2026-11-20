@@ -14,7 +14,7 @@ export const revalidate = 3600;
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const site = adresseDuSite();
   const url = (chemin: string) => new URL(chemin, site).toString();
-  const pages: MetadataRoute.Sitemap = ["/", "/sophismes", "/contribuer", "/utilisateur", "/alambic", "/langues", "/monde", "/monde/pays", "/confidentialite", "/conditions"]
+  const pages: MetadataRoute.Sitemap = ["/", "/sophismes", "/contribuer", "/utilisateur", "/alambic", "/langues", "/monde", "/monde/pays", "/corps", "/confidentialite", "/conditions"]
     .filter((c) => !cheminReserve(c))
     .map((c) => ({ url: url(c), changeFrequency: "weekly", priority: c === "/" ? 1 : 0.6 }));
   // Le Portulan : une page publique par pays (capitale, drapeau, chiffres, devise, histoire).

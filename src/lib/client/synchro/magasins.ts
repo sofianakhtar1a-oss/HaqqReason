@@ -22,6 +22,7 @@ import { rangerRecherchesSauvegardees, recherchesSauvegardees } from "@/lib/clie
 import * as langues from "@/lib/langues/stockage";
 import { leconsLocales, rangerLecon, type Resultat } from "@/lib/regles/progression";
 import * as monde from "@/lib/monde/progression";
+import * as corps from "@/lib/corps/progression";
 
 export type Adaptateur = {
   /** Tout ce que l'appareil possède déjà (pour le premier envoi), avec sa date si on la connaît. */
@@ -112,6 +113,16 @@ const portulan: Adaptateur = {
   // On garde le meilleur des deux appareils ; si celui-ci avait mieux, il repart vers le compte.
   ecrire: async (c, v) => (monde.rangerValeur(c, v) ? "a-renvoyer" : undefined),
   effacer: async (c) => monde.effacerValeur(c),
+};
+
+/* ---------- L'Écorché ---------- */
+
+const ecorche: Adaptateur = {
+  cles: async () => corps.clesLocales(),
+  lire: async (c) => corps.valeurLocale(c),
+  // Le meilleur des deux appareils ; si celui-ci avait mieux, il repart vers le compte.
+  ecrire: async (c, v) => (corps.rangerValeur(c, v) ? "a-renvoyer" : undefined),
+  effacer: async (c) => corps.effacerValeur(c),
 };
 
 /* ---------- Le Truchement ---------- */
@@ -325,4 +336,5 @@ export const ADAPTATEURS: Record<NomMagasin, Adaptateur> = {
   favoris,
   reglages,
   monde: portulan,
+  corps: ecorche,
 };

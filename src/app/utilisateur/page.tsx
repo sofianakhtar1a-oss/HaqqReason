@@ -9,6 +9,7 @@ import {
   FlaskConical,
   Languages,
   LockKeyhole,
+  PersonStanding,
 } from "lucide-react";
 import { aAccesModules } from "@/lib/acces-modules";
 import { EnTete } from "@/components/EnTete";
@@ -26,6 +27,7 @@ const ICONES = {
   alambic: FlaskConical,
   langues: Languages,
   monde: Compass,
+  corps: PersonStanding,
   bibliotheque: BookOpen,
   islam: BookOpenText,
 } as const;
@@ -34,6 +36,7 @@ const LIENS = {
   alambic: "/alambic",
   langues: "/langues",
   monde: "/monde",
+  corps: "/corps",
   bibliotheque: "/explorer",
   islam: "/islam",
 } as const;
@@ -42,6 +45,7 @@ const ACCENTS = {
   alambic: "amethyste",
   langues: "azur",
   monde: "safran",
+  corps: "carmin",
   bibliotheque: "emeraude",
   islam: "or",
 } as const;
@@ -88,6 +92,7 @@ export default async function PageUtilisateur({ searchParams }: Props) {
           <span className="halo" data-accent="amethyste" />
           <span className="halo" data-accent="azur" />
           <span className="halo" data-accent="safran" />
+          <span className="halo" data-accent="carmin" />
         </div>
         <h1 className="apparait text-4xl font-extrabold md:text-5xl">
           {resolu.textes.titre}

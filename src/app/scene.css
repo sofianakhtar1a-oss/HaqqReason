@@ -1070,3 +1070,8 @@ html[data-scene-pause] :is(.atmosphere-nappe, .etincelle) {
 main:has(.carte-choix[data-accent="safran"]:hover, .carte-choix[data-accent="safran"]:focus-visible) .halo[data-accent="safran"] {
   opacity: 1;
 }
+
+/* L'Écorché : sa porte colore aussi la salle. */
+main:has(.carte-choix[data-accent="carmin"]:hover, .carte-choix[data-accent="carmin"]:focus-visible) .halo[data-accent="carmin"] {
+  opacity: 1;
+}
