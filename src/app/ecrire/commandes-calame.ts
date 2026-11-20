@@ -7,8 +7,37 @@ import { COMMANDE_TABLEAU } from "./tableaux";
  * Les blocs propres à l'atelier d'écriture, ajoutés au menu « / » et au bouton « Insérer »
  * (ceux des articles restent tous là).
  */
+/** Les dialogues de l'atelier, ouverts depuis le menu « / » (qui ne connaît que des commandes d'éditeur). */
+export type DialogueCalame = "verset" | "hadith" | "renvoi" | "lien" | "bibliotheque" | "article" | "glossaire";
+export const EVENEMENT_DIALOGUE = "calame:dialogue";
+export function ouvrirDialogue(nom: DialogueCalame): void {
+  window.dispatchEvent(new CustomEvent(EVENEMENT_DIALOGUE, { detail: nom }));
+}
+
 export const COMMANDES_CALAME: Commande[] = [
   COMMANDE_TABLEAU,
+  {
+    cle: "verset-reference",
+    libelle: "Verset par sa référence",
+    description: "2:255 ou 2:1-5 : le texte arabe se remplit seul",
+    groupe: "Sources",
+    motsCles: "verset coran reference sourate ayat texte arabe",
+    appliquer: (c) => {
+      ouvrirDialogue("verset");
+      return c;
+    },
+  },
+  {
+    cle: "hadith-reference",
+    libelle: "Hadith par sa référence",
+    description: "Recueil et numéro : texte arabe et degré",
+    groupe: "Sources",
+    motsCles: "hadith bukhari muslim recueil numero degre sahih",
+    appliquer: (c) => {
+      ouvrirDialogue("hadith");
+      return c;
+    },
+  },
   {
     cle: "page-de-garde",
     libelle: "Page de garde",

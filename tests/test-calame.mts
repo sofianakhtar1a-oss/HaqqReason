@@ -11,6 +11,9 @@ import { bilanDiff, comparerParagraphes, diffMots, editions } from "../src/lib/a
 import { corbeilleExpiree, nettoyerExtras } from "../src/lib/atelier/modele";
 import { nettoyerPreferences } from "../src/lib/atelier/preferences";
 import { composer, dateHegirienne, enRomain, numeroAffiche, partieDeLaPage, remplirGabarit, type UniteMesuree } from "../src/lib/atelier/composition";
+import { cleDeTri, enChiffresArabes, libelleReference, lireReference, texteDeLaPlage } from "../src/lib/atelier/coran";
+import { degreDepuis, degreEnFrancais } from "../src/lib/atelier/hadiths";
+import { nettoyerBibliotheque, referenceTexte, OUVRAGE_VIDE } from "../src/lib/atelier/bibliotheque";
 
 let echecs = 0;
 const ok = (nom: string, cond: boolean, detail = "") => {
@@ -195,6 +198,37 @@ ok("sens : sans lettre", !commenceEnArabe("12 — 34"));
   const titres = [{ y: 0, texte: "Un" }, { y: 500, texte: "Deux" }, { y: 900, texte: "Trois" }];
   ok("partie : celle qui s'ouvre sur la page", partieDeLaPage(titres, 400, 700) === "Deux");
   ok("partie : sinon la dernière ouverte", partieDeLaPage(titres, 600, 850) === "Deux" && partieDeLaPage(titres, 950, 1200) === "Trois");
+}
+
+/* ---------- Sources : Coran, hadiths, bibliographie ---------- */
+{
+  const r1 = lireReference("2:1-5");
+  ok("coran : 2:1-5", "sourate" in r1 && r1.sourate === 2 && r1.debut === 1 && r1.fin === 5, JSON.stringify(r1));
+  const r2 = lireReference("Al-Baqara 255");
+  ok("coran : par le nom", "sourate" in r2 && r2.sourate === 2 && r2.debut === 255 && r2.fin === 255, JSON.stringify(r2));
+  ok("coran : verset inexistant refusé", "erreur" in lireReference("1:8"));
+  ok("coran : sourate inexistante refusée", "erreur" in lireReference("115:1"));
+  ok("coran : libellé", "sourate" in r1 && libelleReference(r1) === "Al-Baqara (2), 1-5", "sourate" in r1 ? libelleReference(r1) : "");
+  ok("coran : chiffres arabes", enChiffresArabes(255) === "٢٥٥");
+  const plage = texteDeLaPlage([["أ", "ب"], ["ج", "د", "ه"]], { sourate: 2, debut: 2, fin: 3 }, true);
+  ok("coran : texte de la plage numéroté", plage.includes("د") && plage.includes("ه") && plage.includes("٢") && !plage.includes("ج"), plage);
+  const [s1, v1] = cleDeTri("Coran, Al-Baqara (2), 255");
+  ok("coran : clé de tri", s1 === 2 && v1 === 255, String([s1, v1]));
+  ok("hadith : degré traduit", degreEnFrancais("Sahih") === "authentique (ṣaḥīḥ)" && degreEnFrancais("Hasan Sahih").startsWith("bon et authentique") && /faible/i.test(degreEnFrancais("Da'if")), degreEnFrancais("Sahih"));
+  ok("hadith : recueil sahih par consensus", degreDepuis([], true) === "sahih");
+  ok("hadith : la majorité des savants l'emporte", degreDepuis([{ nom: "a", degre: "Da'if" }, { nom: "b", degre: "Da'if" }, { nom: "c", degre: "Hasan" }], false) === "daif");
+
+  const livre = { ...OUVRAGE_VIDE, auteur: "Ghazali, Abu Hamid; Nasr, Seyyed Hossein", titre: "Le Tabernacle des lumières", traducteur: "R. Deladrière", editeur: "Seuil", lieu: "Paris", annee: "1981" };
+  const chicago = referenceTexte(livre, "chicago", "42");
+  ok("bibliographie : Chicago", chicago.startsWith("Ghazali, Abu Hamid et Seyyed Hossein Nasr. Le Tabernacle des lumières, trad. R. Deladrière. Paris\u00a0: Seuil, 1981, p.\u00a042."), chicago);
+  const iso = referenceTexte(livre, "iso690");
+  ok("bibliographie : ISO 690 en capitales", iso.startsWith("GHAZALI, Abu Hamid et NASR, Seyyed Hossein."), iso);
+  const apa = referenceTexte({ ...livre, auteur: "Ghazali, Abu Hamid" }, "apa");
+  ok("bibliographie : APA", apa.startsWith("Ghazali, A. H. (1981). Le Tabernacle des lumières"), apa);
+  const article = referenceTexte({ ...OUVRAGE_VIDE, genre: "article", auteur: "Dupont, Marie", titre: "Une lecture", recueil: "Revue d'études", volume: "12", annee: "2020", pages: "5-20" }, "chicago");
+  ok("bibliographie : article", article === "Dupont, Marie. «\u00a0Une lecture\u00a0». Revue d'études 12 (2020)\u00a0: 5-20.", article);
+  const nettoyee = nettoyerBibliotheque([{ id: "abcd", titre: "A", q: 2 }, { id: "abcd", titre: "doublon" }, { id: "x" }, { id: "efgh", titre: "B", supprime: true }]);
+  ok("bibliothèque : doublons et identifiants invalides écartés", nettoyee.length === 2 && nettoyee[0].titre === "A" && nettoyee[1].supprime === true, JSON.stringify(nettoyee));
 }
 
 console.log(echecs ? `\n${echecs} échec(s).` : "Tout est bon (Calame).");

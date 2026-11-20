@@ -16,6 +16,7 @@ import { tiroir } from "@/lib/client/compte";
 import { lireFavoris, rangerFavori, type Favori } from "@/lib/client/favoris";
 import * as preferencesCalame from "@/lib/atelier/preferences";
 import * as journalCalame from "@/lib/atelier/journal-ecriture";
+import * as bibliothequeCalame from "@/lib/atelier/bibliotheque";
 import { historiqueBrut, lireCollections, rangerCollections, rangerHistorique } from "@/lib/client/historique";
 import { rangerRecherchesSauvegardees, recherchesSauvegardees } from "@/lib/client/recherches-locales";
 import * as langues from "@/lib/langues/stockage";
@@ -290,11 +291,20 @@ const calameJournal: Adaptateur = {
   effacer: async () => undefined,
 };
 
+/* La bibliothèque personnelle du Calame (un seul bloc, fusionné ouvrage par ouvrage). */
+const calameBibliotheque: Adaptateur = {
+  cles: async () => (bibliothequeCalame.bibliothequeBrute() ? [{ c: "ouvrages" }] : []),
+  lire: async (c) => (c === "ouvrages" ? bibliothequeCalame.bibliothequeBrute() : undefined),
+  ecrire: async (c, v) => (c === "ouvrages" ? bibliothequeCalame.rangerBibliotheque(v) : undefined),
+  effacer: async () => undefined,
+};
+
 export const ADAPTATEURS: Record<NomMagasin, Adaptateur> = {
   "calame-documents": calameDocuments,
   "calame-fichiers": calameFichiers,
   "calame-preferences": calamePreferences,
   "calame-journal": calameJournal,
+  "calame-bibliotheque": calameBibliotheque,
   regles,
   "langues-cartes": magasinLangue("cartes"),
   "langues-dictionnaire": magasinLangue("dictionnaire"),

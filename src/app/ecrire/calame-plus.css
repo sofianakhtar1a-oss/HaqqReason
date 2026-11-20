@@ -2529,3 +2529,36 @@
 .calame-impression .calame-saut-section {
   visibility: hidden !important;
 }
+
+/* ---------- aperçu d'un verset ou d'un hadith avant insertion ---------- */
+.calame-apercu-verset {
+  display: grid;
+  gap: 0.5rem;
+  max-height: 18rem;
+  margin: 0;
+  padding: 0.8rem 0.9rem;
+  overflow-y: auto;
+  border: 1px solid var(--trait);
+  border-radius: 0.8rem;
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+}
+.calame-apercu-verset p[lang="ar"] {
+  margin: 0;
+  font-family: "Amiri", "Scheherazade New", serif;
+  font-size: 1.35rem;
+  line-height: 2;
+  color: var(--encre);
+}
+.calame-apercu-verset figcaption {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.calame-degres {
+  display: grid;
+  gap: 0.15rem;
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}

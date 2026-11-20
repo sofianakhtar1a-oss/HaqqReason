@@ -45,7 +45,8 @@ import { Papier } from "./Papier";
 import { CoupuresDePage } from "./pages-extension";
 import { Numeros } from "./extensions/numeros";
 import { GROUPES_ECARTES_ATELIER } from "./tableaux";
-import { COMMANDES_CALAME } from "./commandes-calame";
+import { COMMANDES_CALAME, EVENEMENT_DIALOGUE, type DialogueCalame } from "./commandes-calame";
+import { DialogueHadith, DialogueVerset } from "./DialoguesSources";
 import { exporterDocx, exporterMarkdown, exporterPaquet, exporterPdf } from "./exporter";
 import { useAccesComplet } from "@/lib/client/acces";
 import { extensionsContenu } from "./extensions-calame";
@@ -152,6 +153,7 @@ export function Atelier(props: Props) {
   const [reglagesAtelier, setReglagesAtelier] = useState(false);
   const [renvoi, setRenvoi] = useState(false);
   const [commentaire, setCommentaire] = useState(false);
+  const [dialogueSource, setDialogueSource] = useState<DialogueCalame | null>(null);
   const [lienInterne, setLienInterne] = useState(false);
   const [extras, setExtras] = useState(() => extrasDe(doc));
   // Ouvert (à nouveau) depuis la recherche dans tous les documents : on cherche aussitôt.
@@ -217,6 +219,18 @@ export function Atelier(props: Props) {
     onUpdate: () => surFrappeRef.current(),
   }));
   const editor = useEditor(options);
+  // Les blocs du menu « / » qui ont besoin d'un dialogue (verset, hadith…) le demandent par un événement.
+  useEffect(() => {
+    const ouvrir = (e: Event) => {
+      const nom = (e as CustomEvent<DialogueCalame>).detail;
+      if (nom === "renvoi") setRenvoi(true);
+      else if (nom === "lien") setLienInterne(true);
+      else setDialogueSource(nom);
+    };
+    window.addEventListener(EVENEMENT_DIALOGUE, ouvrir);
+    return () => window.removeEventListener(EVENEMENT_DIALOGUE, ouvrir);
+  }, []);
+
   // Suivre un lien interne (Ctrl + clic) : vers un titre du document, ou vers un autre document.
   useEffect(() => {
     if (!editor) return;
@@ -693,6 +707,8 @@ export function Atelier(props: Props) {
         },
       },
       { cle: "galerie-separer", libelle: "Séparer la galerie d'images", description: "Les images reprennent leur place l'une sous l'autre", groupe: "Image", faire: () => editor && separerGalerie(editor) },
+      { cle: "verset-reference", libelle: "Verset par sa référence", description: "2:255 ou 2:1-5 : le texte arabe se remplit seul", groupe: "Sources", faire: () => setDialogueSource("verset") },
+      { cle: "hadith-reference", libelle: "Hadith par sa référence", description: "Recueil et numéro : texte arabe et degré", groupe: "Sources", faire: () => setDialogueSource("hadith") },
       { cle: "renvoi", libelle: "Insérer un renvoi", description: "« voir partie 2, p. 12 » : se met à jour seul", groupe: "Insérer", faire: () => setRenvoi(true) },
       {
         cle: "index-ajouter",
@@ -1046,6 +1062,8 @@ export function Atelier(props: Props) {
       <ListeSlash />
       {renvoi && editor && <DialogueRenvoi editor={editor} surFermer={() => setRenvoi(false)} />}
       {commentaire && editor && <DialogueCommentaire editor={editor} surFermer={() => setCommentaire(false)} />}
+      {dialogueSource === "verset" && editor && <DialogueVerset editor={editor} surFermer={() => setDialogueSource(null)} />}
+      {dialogueSource === "hadith" && editor && <DialogueHadith editor={editor} surFermer={() => setDialogueSource(null)} />}
       {lienInterne && editor && <DialogueLien editor={editor} documents={documents} docId={doc.id} surFermer={() => setLienInterne(false)} />}
       {palette && <PaletteCommandes editor={editor} actions={actions} surFermer={() => setPalette(false)} />}
       {caracteres && editor && <Caracteres editor={editor} onglet={caracteres} surOnglet={setCaracteres} surFermer={() => setCaracteres(null)} />}

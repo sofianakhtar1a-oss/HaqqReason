@@ -15,6 +15,7 @@ const CLES = [
   "calame-preferences",
   "calame-onglets",
   "calame-replis",
+  "calame-bibliotheque",
 ];
 /** Clés rangées par préfixe (le journal d'écriture du Calame : une clé par mois). */
 const PREFIXES = ["calame-journal-"];

@@ -217,7 +217,10 @@ export function filtrerCommandes(requete: string, supplementaires: readonly Comm
   const q = norme(requete.trim());
   const toutes = supplementaires.length || ecartes ? [...COMMANDES, ...supplementaires].filter((c) => !ecartes?.has(c.groupe)) : COMMANDES;
   if (!q) return toutes;
-  return toutes.filter((c) => norme(`${c.libelle} ${c.motsCles}`).includes(q));
+  // Quand on cherche, les blocs propres à cet éditeur passent devant (« verset par sa référence » avant « verset »).
+  const propres = new Set(supplementaires);
+  const trouvees = toutes.filter((c) => norme(`${c.libelle} ${c.motsCles}`).includes(q));
+  return [...trouvees.filter((c) => propres.has(c)), ...trouvees.filter((c) => !propres.has(c))];
 }
 
 export function executer(editor: Editor, commande: Commande): void {
