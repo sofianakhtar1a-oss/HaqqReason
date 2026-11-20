@@ -52,6 +52,7 @@ import { reformaterReferences, reglerSources } from "./blocs/Sources";
 import { abonnerBibliotheque } from "@/lib/atelier/bibliotheque";
 import { lireFichier } from "@/lib/atelier/depot";
 import { LecteurPdfLocal } from "./LecteurPdfLocal";
+import { DialogueModeles, type DepartDocument } from "./DialogueModeles";
 import { PanneauSortie, type ActionSortie } from "./panneaux/PanneauSortie";
 import { exporterEpub, exporterHtml, exporterMarkdownComplet, exporterTexte, exporterTousLesDocuments, exporterWord, partagerDocument } from "./sorties";
 import { construirePdfDirect } from "./pdf-direct";
@@ -119,6 +120,8 @@ type Props = ActionsDocuments & {
   requeteInitiale?: string;
   /** Ouvre un document neuf de bienvenue. */
   surBienvenue: () => void;
+  /** Créer un document à partir d'un modèle. */
+  surModele?: (depart: DepartDocument) => void;
 };
 
 /** Vrai sur téléphone et petite tablette (les colonnes s'y ouvrent par-dessus la page). */
@@ -167,6 +170,7 @@ export function Atelier(props: Props) {
   const [renvoi, setRenvoi] = useState(false);
   const [commentaire, setCommentaire] = useState(false);
   const [dialogueSource, setDialogueSource] = useState<DialogueCalame | null>(null);
+  const [dialogueModeles, setDialogueModeles] = useState(false);
   const [lienInterne, setLienInterne] = useState(false);
   const [extras, setExtras] = useState(() => extrasDe(doc));
   // Ouvert (à nouveau) depuis la recherche dans tous les documents : on cherche aussitôt.
@@ -847,6 +851,7 @@ export function Atelier(props: Props) {
       { cle: "seance", libelle: "Séance de 25 minutes", description: "Un compte à rebours, et les mots écrits", groupe: "Écriture", faire: () => setSeance({ fin: Date.now() + 25 * 60_000, motsDebut: motsActuels, minutes: 25 }) },
       { cle: "aide", libelle: "Raccourcis clavier", description: "F1", groupe: "Aide", faire: () => setAide(true) },
       { cle: "bienvenue", libelle: "Document de bienvenue", description: "Tout ce que sait faire le Calame", groupe: "Aide", faire: surBienvenue },
+      { cle: "modele", libelle: "Nouveau document à partir d'un modèle", description: "Lettre, exposé, mémoire, fiche de lecture, réfutation, sermon, plan de cours", groupe: "Document", faire: () => setDialogueModeles(true) },
       ...(palette && editor
         ? planDuDocument(editor.state.doc).map((entree) => ({
             cle: `plan-${entree.pos}`,
@@ -1073,6 +1078,7 @@ export function Atelier(props: Props) {
           surCorbeille={props.surCorbeille}
           surSupprimerDefinitivement={props.surSupprimerDefinitivement}
           surOuvrirACote={(id) => setVueCote(id)}
+          surModeles={props.surModele ? () => setDialogueModeles(true) : undefined}
         />
       )}
 
@@ -1265,6 +1271,16 @@ export function Atelier(props: Props) {
       )}
       {(dialogueSource === "lien-web" || dialogueSource === "youtube") && editor && <DialogueLienWeb editor={editor} youtube={dialogueSource === "youtube"} surFermer={() => setDialogueSource(null)} />}
       {dialogueSource === "glossaire" && editor && <DialogueGlossaire editor={editor} surFermer={() => setDialogueSource(null)} />}
+      {dialogueModeles && props.surModele && (
+        <DialogueModeles
+          docOuvert={{ ...doc, titre, reglages, contenu: editor ? editor.getJSON() : doc.contenu }}
+          surChoisir={(d) => {
+            setDialogueModeles(false);
+            props.surModele?.(d);
+          }}
+          surFermer={() => setDialogueModeles(false)}
+        />
+      )}
       {dialogueSource === "article" && editor && <DialogueArticle editor={editor} surFermer={() => setDialogueSource(null)} />}
       {lienInterne && editor && <DialogueLien editor={editor} documents={documents} docId={doc.id} surFermer={() => setLienInterne(false)} />}
       {palette && <PaletteCommandes editor={editor} actions={actions} surFermer={() => setPalette(false)} />}

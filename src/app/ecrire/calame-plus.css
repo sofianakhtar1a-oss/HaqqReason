@@ -3046,3 +3046,70 @@ html.calame-capture-pdf .calame-impression [data-selectionne] {
   translate: none !important;
   scale: none !important;
 }
+
+/* ---------- modèles de documents ---------- */
+.calame-modeles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calame-modele-publie {
+  position: relative;
+}
+.calame-modele {
+  display: grid;
+  align-content: start;
+  gap: 0.3rem;
+  width: 100%;
+  height: 100%;
+  padding: 0.85rem 0.9rem;
+  border: 1px solid var(--trait);
+  border-radius: 0.9rem;
+  background: color-mix(in srgb, var(--surface) 60%, transparent);
+  color: var(--encre);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease, background-color 0.15s ease;
+}
+.calame-modele svg {
+  color: var(--or);
+}
+.calame-modele:hover {
+  border-color: color-mix(in srgb, var(--or) 60%, var(--trait));
+  background: color-mix(in srgb, var(--or) 8%, var(--surface));
+  transform: translateY(-1px);
+}
+.calame-modele:focus-visible {
+  outline: 2px solid var(--or);
+  outline-offset: 2px;
+}
+.calame-modele-titre {
+  font-weight: 700;
+}
+.calame-modele-description {
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: var(--encre-douce);
+}
+.calame-modele-retirer {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+}
+.calame-modele-publier {
+  display: grid;
+  gap: 0.5rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--trait);
+}
+@media (prefers-reduced-motion: reduce) {
+  .calame-modele {
+    transition: none;
+  }
+  .calame-modele:hover {
+    transform: none;
+  }
+}

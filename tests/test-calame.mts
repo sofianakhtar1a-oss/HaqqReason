@@ -317,5 +317,26 @@ ok("sens : sans lettre", !commenceEnArabe("12 — 34"));
   ok("pages : « 1-3, 5, 9-7 »", JSON.stringify(lirePlagesDePages("1-3, 5, 9-7", 8)) === JSON.stringify([1, 2, 3, 5, 7, 8]), JSON.stringify(lirePlagesDePages("1-3, 5, 9-7", 8)));
 }
 
+/* ---------- Modèles ---------- */
+{
+  const { MODELES } = await import("../src/lib/atelier/modeles");
+  ok("modèles : les sept attendus", ["lettre", "expose", "memoire", "fiche-lecture", "refutation", "sermon", "plan-cours"].every((c) => MODELES.some((m) => m.cle === c)));
+  for (const m of MODELES) {
+    const c = m.contenu() as { type: string; content: unknown[] };
+    ok(`modèle « ${m.titre} » : un document non vide`, c.type === "doc" && c.content.length > 3);
+    // Le contenu se lit avec le vocabulaire des documents (sauf les blocs propres à l'atelier, ignorés ici).
+    const propres = new Set(["sommaire", "pageDeGarde", "bibliographie", "glossaire", "indexSources", "table"]);
+    const filtre = { ...c, content: c.content.filter((n) => !propres.has((n as { type: string }).type)) };
+    let lisible = true;
+    try {
+      NoeudPM.fromJSON(schema, filtre).check();
+    } catch (e) {
+      lisible = false;
+      console.log(String(e).slice(0, 200));
+    }
+    ok(`modèle « ${m.titre} » : conforme au schéma`, lisible);
+  }
+}
+
 console.log(echecs ? `\n${echecs} échec(s).` : "Tout est bon (Calame).");
 process.exit(echecs ? 1 : 0);

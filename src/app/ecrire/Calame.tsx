@@ -14,7 +14,7 @@ import {
   supprimerDocument,
   viderCorbeilleExpiree,
 } from "@/lib/atelier/depot";
-import { documentVide, extrasDe, type DocumentAtelier } from "@/lib/atelier/modele";
+import { documentVide, extrasDe, nettoyerReglages, type DocumentAtelier } from "@/lib/atelier/modele";
 import { reglagesDuJeu } from "@/lib/atelier/jeux-styles";
 import { lirePreferences } from "@/lib/atelier/preferences";
 import { tiroir } from "@/lib/client/compte";
@@ -23,6 +23,7 @@ import { useTextes } from "@/lib/modules/textes-client";
 import { Atelier } from "./Atelier";
 import { blobDuFichierPaquet, lirePaquet } from "./exporter";
 import { documentDeBienvenue } from "./bienvenue";
+import type { DepartDocument } from "./DialogueModeles";
 import "@fontsource/eb-garamond/400.css";
 import "@fontsource/eb-garamond/400-italic.css";
 import "@fontsource/eb-garamond/600.css";
@@ -172,6 +173,22 @@ export function Calame() {
     setRequete(undefined);
     afficher(doc);
   }, [afficher]);
+
+  /** Un nouveau document à partir d'un modèle (lettre, mémoire…, ou modèle publié par le créateur). */
+  const depuisModele = useCallback(
+    async (depart: DepartDocument) => {
+      const doc = documentVide(nouvelIdentifiant(), depart.titre || "Document sans titre");
+      const jeu = lirePreferences().jeuParDefaut;
+      const reglagesJeu = jeu ? reglagesDuJeu(jeu) : null;
+      doc.reglages = nettoyerReglages({ ...doc.reglages, ...(reglagesJeu ?? {}), ...(depart.reglages ?? {}) });
+      doc.contenu = JSON.parse(JSON.stringify(depart.contenu ?? { type: "doc", content: [{ type: "paragraph" }] }));
+      await ecrireDocument(doc);
+      setDocuments((liste) => [doc, ...liste]);
+      setRequete(undefined);
+      afficher(doc);
+    },
+    [afficher],
+  );
 
   const bienvenue = useCallback(async () => {
     const doc: DocumentAtelier = { ...documentVide(nouvelIdentifiant(), "Bienvenue dans le Calame"), contenu: documentDeBienvenue() };
@@ -327,6 +344,7 @@ export function Calame() {
         surFermerOnglet={fermerOnglet}
         surListeChangee={listeChangee}
         surBienvenue={() => void bienvenue()}
+        surModele={(d) => void depuisModele(d)}
       />
     </>
   );
