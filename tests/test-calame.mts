@@ -21,6 +21,12 @@ import { construireDocx } from "../src/lib/atelier/docx";
 import { REGLAGES_PAR_DEFAUT } from "../src/lib/atelier/modele";
 import { lirePlagesDePages, ordreDuLivret } from "../src/app/ecrire/impression";
 import { strFromU8, unzipSync } from "fflate";
+import { EditorState, TextSelection } from "@tiptap/pm/state";
+import { existsSync, readFileSync } from "node:fs";
+import { lemmeDe, sectionFrancaise, synonymesDe, traductionsAnglaises } from "../src/lib/atelier/wiktionnaire";
+import { decouper, remarqueTue, texteAvecPositions } from "../src/app/ecrire/extensions/grammaire";
+import { formesDeRecherche, motSousLeCurseur } from "../src/app/ecrire/DialogueMot";
+import { FICHIER_LEXIQUE } from "../src/lib/atelier/lexique-fichier";
 
 let echecs = 0;
 const ok = (nom: string, cond: boolean, detail = "") => {
@@ -335,6 +341,78 @@ ok("sens : sans lettre", !commenceEnArabe("12 — 34"));
       console.log(String(e).slice(0, 200));
     }
     ok(`modèle « ${m.titre} » : conforme au schéma`, lisible);
+  }
+}
+
+
+// ---------------------------------------------------------------- relire et améliorer : Wiktionnaire, grammaire, mot
+{
+  const page = [
+    "== {{langue|fr}} ==",
+    "=== {{S|nom|fr}} ===",
+    "'''maison''' {{f}}",
+    "# Bâtiment servant de logis.",
+    "==== {{S|synonymes}} ====",
+    "* [[demeure]]",
+    "* [[logis]], [[habitation|habitations]]",
+    "* [[Wiktionnaire:Aide]]",
+    "==== {{S|quasi-synonymes}} ====",
+    "* [[foyer#fr|foyer]]",
+    "==== {{S|traductions}} ====",
+    "{{trad-début}}",
+    "* {{T|en}} : {{trad+|en|house}}, {{trad+|en|home}}",
+    "* {{T|de}} : {{trad+|de|Haus}}",
+    "{{trad-fin}}",
+    "== {{langue|en}} ==",
+    "==== {{S|synonymes}} ====",
+    "* [[dwelling]]",
+  ].join("\n");
+  ok("wiktionnaire : section française seule", sectionFrancaise(page).includes("demeure") && !sectionFrancaise(page).includes("dwelling"));
+  const syn = synonymesDe(page);
+  ok("wiktionnaire : synonymes et quasi-synonymes, sans les pages d'aide", ["demeure", "logis", "habitation", "foyer"].every((m) => syn.includes(m)) && !syn.some((m) => m.includes(":")), syn.join(", "));
+  const en = traductionsAnglaises(page);
+  ok("wiktionnaire : traductions anglaises seulement", en.join(",") === "house,home", en.join(","));
+  ok("wiktionnaire : pluriel → forme de base", lemmeDe("== {{langue|fr}} ==\n=== {{S|nom|fr|flexion}} ===\n'''maisons'''\n# ''Pluriel de'' [[maison]].") === "maison");
+  ok("wiktionnaire : verbe conjugué → infinitif", lemmeDe("== {{langue|fr}} ==\n{{fr-verbe-flexion|manger|ind.p.1p=oui}}\n# ''Première personne du pluriel de l’indicatif présent de'' [[manger]].") === "manger");
+  ok("wiktionnaire : féminin → masculin", lemmeDe("== {{langue|fr}} ==\n# ''Féminin pluriel de'' [[beau]].") === "beau");
+  ok("wiktionnaire : une forme de base n'a pas de lemme", lemmeDe(page) === "");
+
+  // Le texte envoyé à la relecture : chaque lettre retrouve sa place dans l'éditeur.
+  const doc = NoeudPM.fromJSON(schema, {
+    type: "doc",
+    content: [
+      { type: "paragraph", content: [{ type: "text", text: "Les enfant " }, { type: "text", text: "jouent", marks: [{ type: "bold" }] }, { type: "text", text: " dehors." }] },
+      { type: "blockquote", content: [{ type: "paragraph", content: [{ type: "text", text: "Citation d'un autre." }] }] },
+      { type: "paragraph", content: [{ type: "text", text: "Fin." }] },
+    ],
+  });
+  const { texte, positions } = texteAvecPositions(doc);
+  ok("relecture : texte des blocs séparés par une ligne vide", texte === "Les enfant jouent dehors.\n\nCitation d'un autre.\n\nFin.", JSON.stringify(texte));
+  ok("relecture : chaque signe retrouve sa position", [...texte].every((c, i) => positions[i] === -1 || doc.textBetween(positions[i], positions[i] + 1) === c));
+  ok("relecture : citations laissées de côté sur demande", !texteAvecPositions(doc, { sansCitations: true }).texte.includes("Citation"));
+  const long = Array.from({ length: 30 }, (_, i) => `Paragraphe ${i} ${"mot ".repeat(120)}`).join("\n\n");
+  const morceaux = decouper(long, 2000);
+  ok("relecture : morceaux jointifs, au plus 2 000 signes", morceaux.every(([a, b], i) => b - a <= 2000 && (i === 0 ? a === 0 : a === morceaux[i - 1][1])) && morceaux[morceaux.length - 1][1] === long.length);
+  ok("relecture : coupe entre deux paragraphes", morceaux.slice(0, -1).every(([, b]) => long.slice(b - 2, b) === "\n\n"));
+  const connus = new Set(["haqqreason"]);
+  ok("relecture : mot du dictionnaire personnel tu", remarqueTue("orthographe", "HaqqReason", connus));
+  ok("relecture : translittération jamais signalée", remarqueTue("orthographe", "tawḥīd", connus) && remarqueTue("orthographe", "ʿaqīda", connus));
+  ok("relecture : arabe jamais signalé", remarqueTue("grammaire", "التوحيد", connus));
+  ok("relecture : une vraie faute reste signalée", !remarqueTue("orthographe", "enfent", connus) && !remarqueTue("grammaire", "haqqreason", connus));
+
+  // Le mot sous le curseur, sans l'élision.
+  const phrase = NoeudPM.fromJSON(schema, { type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: "L'homme marche, puis s’arrête." }] }] });
+  const au = (de: number, a = de) => motSousLeCurseur({ state: EditorState.create({ doc: phrase, selection: TextSelection.create(phrase, de, a) }) } as never);
+  ok("mot : sous le curseur, élision ôtée", au(4)?.mot === "homme" && au(4)?.de === 3, JSON.stringify(au(4)));
+  ok("mot : au bout du mot", au(14)?.mot === "marche", JSON.stringify(au(14)));
+  ok("mot : sélection avec ponctuation autour", au(8, 16)?.mot === "marche" && phrase.textBetween(au(8, 16)!.de, au(8, 16)!.a) === "marche", JSON.stringify(au(8, 16)));
+  ok("mot : apostrophe typographique", au(24)?.mot === "arrête", JSON.stringify(au(24)));
+  ok("mot : formes pour le lexique", formesDeRecherche("Chevaux").includes("cheval") && formesDeRecherche("maisons").includes("maison") && formesDeRecherche("petite").includes("petit") && formesDeRecherche("mangeons", "manger").includes("manger"));
+  const fichier = `public${FICHIER_LEXIQUE}`;
+  ok("mot : le lexique du Truchement est publié", existsSync(fichier));
+  if (existsSync(fichier)) {
+    const lex = JSON.parse(readFileSync(fichier, "utf8")) as Record<string, [string, string][]>;
+    ok("mot : « maison » s'y traduit", (lex.maison ?? []).some(([e]) => e === "house"), JSON.stringify(lex.maison));
   }
 }
 

@@ -17,6 +17,14 @@ const RACCOURCIS: { groupe: string; touches: [string, string][] }[] = [
     ],
   },
   {
+    groupe: "Relire",
+    touches: [
+      ["F7", "Relire la grammaire et l'orthographe, puis aller de remarque en remarque"],
+      ["Maj + F7", "Synonymes du mot sous le curseur"],
+      ["Échap", "Fermer la bulle d'une remarque"],
+    ],
+  },
+  {
     groupe: "Mise en forme",
     touches: [
       ["Ctrl + B / I / U", "Gras, italique, souligné"],

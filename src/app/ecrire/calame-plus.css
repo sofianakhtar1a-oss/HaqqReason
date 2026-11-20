@@ -3221,3 +3221,431 @@ html.calame-capture-pdf .calame-impression [data-selectionne] {
   text-align: center;
   letter-spacing: 0.3em;
 }
+
+/* ---------- grammaire et orthographe (LanguageTool) ---------- */
+.calame-lt-remarque,
+.calame-lt-genre,
+.calame-lt-bulle {
+  --lt: #2563eb;
+}
+.calame-lt-remarque[data-genre="orthographe"],
+.calame-lt-genre[data-genre="orthographe"],
+.calame-lt-bulle[data-genre="orthographe"] {
+  --lt: #dc2626;
+}
+.calame-lt-remarque[data-genre="typographie"],
+.calame-lt-genre[data-genre="typographie"],
+.calame-lt-bulle[data-genre="typographie"] {
+  --lt: #ca8a04;
+}
+.calame-lt-remarque[data-genre="style"],
+.calame-lt-genre[data-genre="style"],
+.calame-lt-bulle[data-genre="style"] {
+  --lt: #0d9488;
+}
+.tiptap .calame-lt {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+  text-decoration-skip-ink: none;
+  cursor: pointer;
+}
+.tiptap .calame-lt-orthographe {
+  text-decoration-color: #dc2626;
+}
+.tiptap .calame-lt-grammaire {
+  text-decoration-color: #2563eb;
+}
+.tiptap .calame-lt-typographie {
+  text-decoration-color: #ca8a04;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
+}
+.tiptap .calame-lt-style {
+  text-decoration-color: #0d9488;
+  text-decoration-style: dashed;
+}
+.tiptap .calame-lt:hover {
+  background: color-mix(in srgb, currentColor 6%, transparent);
+  border-radius: 2px;
+}
+.calame-lt-lancer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.calame-lt-avancement {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.35rem 0.6rem;
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}
+.calame-lt-avancement progress {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 0.35rem;
+  accent-color: var(--accent);
+}
+.calame-lt-propre {
+  margin: 0;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.6rem;
+  background: color-mix(in srgb, #16a34a 10%, transparent);
+  font-size: 0.85rem;
+}
+.calame-lt-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.calame-lt-genre {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  font-size: 0.78rem;
+}
+.calame-lt-genre[aria-pressed="false"] {
+  opacity: 0.55;
+}
+.calame-lt-genre[aria-pressed="false"] .calame-lt-pastille {
+  background: transparent;
+}
+.calame-lt-genre:disabled {
+  opacity: 0.4;
+}
+.calame-lt-pastille {
+  width: 0.55rem;
+  height: 0.55rem;
+  flex: none;
+  border-radius: 999px;
+  border: 1.5px solid var(--lt);
+  background: var(--lt);
+}
+.calame-lt-nombre {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.72rem;
+  color: var(--encre-douce);
+}
+.calame-lt-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.82rem;
+}
+.calame-lt-nav > span {
+  flex: 1;
+  color: var(--encre-douce);
+}
+.calame-lt-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calame-lt-remarque {
+  display: grid;
+  gap: 0.3rem;
+  padding: 0.5rem 0.6rem 0.55rem 0.7rem;
+  border-left: 3px solid var(--lt);
+  border-radius: 0 0.5rem 0.5rem 0;
+  background: var(--surface);
+}
+.calame-lt-contexte {
+  text-align: left;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: var(--encre-douce);
+}
+.calame-lt-contexte mark {
+  background: none;
+  color: var(--encre);
+  font-weight: 600;
+  text-decoration: underline wavy var(--lt) 1.5px;
+  text-underline-offset: 3px;
+}
+.calame-lt-contexte:hover mark,
+.calame-lt-contexte:focus-visible mark {
+  background: color-mix(in srgb, var(--lt) 14%, transparent);
+}
+.calame-lt-message {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+.calame-lt-gestes,
+.calame-lt-bulle-suggestions,
+.calame-lt-bulle-gestes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+}
+.calame-lt-suggestion {
+  padding: 0.15rem 0.55rem;
+  border-radius: 0.45rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, var(--trait));
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: pre;
+}
+.calame-lt-suggestion:hover,
+.calame-lt-suggestion:focus-visible {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+/* L'espace insécable proposée : visible, puisque c'est elle qu'on ajoute. */
+.calame-lt-espace {
+  display: inline-block;
+  min-width: 0.3em;
+  margin: 0 0.05em;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--accent) 45%, transparent);
+}
+.calame-dictionnaire > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.calame-dictionnaire[open] > summary {
+  margin-bottom: 0.4rem;
+}
+.calame-dictionnaire {
+  display: grid;
+  gap: 0.45rem;
+}
+.calame-dictionnaire-ajout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.4rem;
+}
+.calame-dictionnaire-mots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  max-height: 14rem;
+  overflow-y: auto;
+}
+.calame-dictionnaire-mots li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.1rem 0.2rem 0.1rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  font-size: 0.8rem;
+}
+.calame-dictionnaire-mots button {
+  display: grid;
+  place-items: center;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 999px;
+  color: var(--encre-douce);
+}
+.calame-dictionnaire-mots button:hover,
+.calame-dictionnaire-mots button:focus-visible {
+  color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 12%, transparent);
+}
+
+/* La bulle d'une remarque, sous le mot souligné. */
+.calame-lt-bulle {
+  position: fixed;
+  z-index: 60;
+  display: grid;
+  gap: 0.45rem;
+  width: min(22rem, calc(100vw - 16px));
+  padding: 0.65rem 0.75rem 0.7rem;
+  border-radius: 0.85rem;
+  border: 1px solid var(--trait);
+  border-top: 3px solid var(--lt);
+  background: color-mix(in srgb, var(--fond) 95%, var(--encre) 5%);
+  color: var(--encre);
+  box-shadow: 0 1rem 2.2rem -0.9rem rgba(0, 0, 0, 0.55);
+  animation: calame-lt-bulle 140ms ease-out;
+}
+@keyframes calame-lt-bulle {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+}
+.calame-lt-bulle-tete {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.calame-lt-bulle-fermer {
+  margin-left: auto;
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.4rem;
+}
+.calame-lt-bulle-fermer:hover {
+  background: var(--surface-forte);
+}
+.calame-lt-bulle-message {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+/* Un mot : synonymes et traduction anglaise. */
+.calame-mot-recherche {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.4rem;
+  margin-bottom: 0.7rem;
+}
+.calame-mot-onglets {
+  display: inline-flex;
+  gap: 0.2rem;
+  padding: 0.2rem;
+  margin-bottom: 0.8rem;
+  border-radius: 0.7rem;
+  background: var(--surface);
+  border: 1px solid var(--trait);
+}
+.calame-mot-onglets button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--encre-douce);
+}
+.calame-mot-onglets button[aria-pressed="true"] {
+  background: var(--surface-forte);
+  color: var(--encre);
+  font-weight: 600;
+  box-shadow: 0 1px 0 var(--trait);
+}
+.calame-mot-resultats {
+  display: grid;
+  gap: 0.55rem;
+}
+.calame-mot-synonymes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calame-mot-synonymes button {
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  font-size: 0.9rem;
+}
+.calame-mot-synonymes button:hover,
+.calame-mot-synonymes button:focus-visible {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+.calame-mot-traductions {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calame-mot-traductions li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2rem 0.55rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.5rem;
+}
+.calame-mot-traductions li:nth-child(odd) {
+  background: var(--surface);
+}
+.calame-mot-en {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.calame-mot-nature,
+.calame-mot-origine {
+  font-size: 0.72rem;
+  color: var(--encre-douce);
+}
+.calame-mot-traductions li[data-origine="perso"] .calame-mot-origine {
+  color: var(--accent);
+}
+.calame-mot-gestes {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+.calame-mot-deja {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  color: var(--accent);
+}
+.calame-mot-attente {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  color: var(--encre-douce);
+}
+.calame-mot-source {
+  margin: 0.8rem 0 0;
+  font-size: 0.72rem;
+  color: var(--encre-douce);
+}
+.calame-mot-source a {
+  text-decoration: underline;
+}
+.calame-tourne {
+  animation: calame-tourne 0.9s linear infinite;
+}
+@keyframes calame-tourne {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .calame-lt-bulle,
+  .calame-tourne {
+    animation: none;
+  }
+}
+/* Les soulignés de la relecture n'existent qu'à l'écran. */
+.calame-impression .calame-lt,
+html.calame-capture-pdf .calame-lt {
+  text-decoration: none !important;
+  background: none !important;
+}
+@media print {
+  .tiptap .calame-lt {
+    text-decoration: none;
+    background: none;
+  }
+  .calame-lt-bulle {
+    display: none;
+  }
+}

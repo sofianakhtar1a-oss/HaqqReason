@@ -21,6 +21,8 @@ import {
   SpellCheck2,
   Timer,
   X,
+  Languages,
+  WholeWord,
 } from "lucide-react";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -100,6 +102,10 @@ import { delaiEcheance, usePreferences } from "./crochets";
 import type { ApercuPage } from "./Miniatures";
 import type { ActionsDocuments } from "./BarreLaterale";
 import { allerAuTitre, carteMentaleEnPlan, planDuDocument } from "./plan";
+import { Grammaire, allerALaRemarque, remarqueSuivante } from "./extensions/grammaire";
+import { lancerRelecture } from "./relecture-grammaire";
+import { BulleGrammaire, ouvrirBulle } from "./BulleGrammaire";
+import { DialogueMot, type OngletMot } from "./DialogueMot";
 
 const AIDES: Record<string, string> = {
   versetArabe: "Texte arabe du verset",
@@ -176,6 +182,7 @@ export function Atelier(props: Props) {
   const [commentaire, setCommentaire] = useState(false);
   const [dialogueSource, setDialogueSource] = useState<DialogueCalame | null>(null);
   const [dialogueModeles, setDialogueModeles] = useState(false);
+  const [dialogueMot, setDialogueMot] = useState<OngletMot | null>(null);
   const [proposer, setProposer] = useState(false);
   const [lienInterne, setLienInterne] = useState(false);
   const [extras, setExtras] = useState(() => extrasDe(doc));
@@ -228,6 +235,7 @@ export function Atelier(props: Props) {
       AidesSaisie,
       SensEcriture,
       Analyse,
+      Grammaire,
       Replis,
       BlocCourant,
       SurlignageLecture,
@@ -762,6 +770,22 @@ export function Atelier(props: Props) {
     return () => clearInterval(tic);
   }, [seance, annoncer]);
 
+  // F7 : la remarque de relecture suivante (sa bulle s'ouvre), ou la relecture de tout le document s'il n'y en a pas.
+  const relireAuClavier = useCallback(() => {
+    if (!editor) return;
+    const r = remarqueSuivante(editor.state, editor.state.selection.to);
+    if (r) {
+      allerALaRemarque(editor, r);
+      ouvrirBulle(r.id);
+      return;
+    }
+    setInspecteurOuvert(true);
+    setOngletInspecteur("relire");
+    void lancerRelecture(editor, "tout", true).then((n) => {
+      if (n !== null) annoncer(n === 0 ? "Relecture terminée : rien à redire." : `Relecture terminée : ${n} remarque${n > 1 ? "s" : ""}. F7 pour aller de l'une à l'autre.`);
+    });
+  }, [editor, annoncer]);
+
   // ---------------------------------------------------------------- clavier
   useEffect(() => {
     const auClavier = (e: KeyboardEvent) => {
@@ -772,6 +796,11 @@ export function Atelier(props: Props) {
       if (e.key === "F1" || (commande && e.key === "/") || (e.key === "?" && !enSaisie && !commande && !e.altKey)) {
         e.preventDefault();
         setAide(true);
+      } else if (e.key === "F7" && !commande && !e.altKey && editor) {
+        // Comme dans les traitements de texte : F7 relit, Maj+F7 donne les synonymes.
+        e.preventDefault();
+        if (e.shiftKey) setDialogueMot("synonymes");
+        else relireAuClavier();
       } else if (commande && e.altKey && e.shiftKey && (touche === "v" || touche === "h")) {
         // Le verset ou le hadith par sa référence (le texte arabe se remplit seul).
         e.preventDefault();
@@ -822,7 +851,7 @@ export function Atelier(props: Props) {
     };
     window.addEventListener("keydown", auClavier, true);
     return () => window.removeEventListener("keydown", auClavier, true);
-  }, [enregistrer, exporter, editor, basculerConcentration]);
+  }, [enregistrer, exporter, editor, basculerConcentration, relireAuClavier]);
 
   // ---------------------------------------------------------------- actions de la barre de commande
   const actions = useMemo<ActionPalette[]>(
@@ -896,6 +925,10 @@ export function Atelier(props: Props) {
         faire: () => editor?.chain().focus().insertContent({ type: "sommaire", attrs: { titre: "", profondeur: 4 } }).run(),
       },
       { cle: "relire", libelle: "Relire", description: "Mesures, répétitions, lecture à voix haute", groupe: "Relire", faire: () => ouvrirOnglet("relire") },
+      { cle: "grammaire", libelle: "Relire la grammaire et l'orthographe", description: "Accords, conjugaison, typographie (F7)", groupe: "Relire", faire: relireAuClavier },
+      { cle: "synonymes", libelle: "Synonymes du mot", description: "Le mot sous le curseur (Maj+F7)", groupe: "Relire", faire: () => setDialogueMot("synonymes") },
+      { cle: "anglais", libelle: "Traduire le mot en anglais", description: "D'après le Truchement et le Wiktionnaire", groupe: "Relire", faire: () => setDialogueMot("anglais") },
+      { cle: "dictionnaire-perso", libelle: "Mon dictionnaire personnel", description: "Les mots que la relecture ne signale plus", groupe: "Relire", faire: () => ouvrirOnglet("relire") },
       { cle: "relecture", libelle: relecture ? "Quitter le mode relecture" : "Mode relecture", description: "Texte en lecture seule, plus grand", groupe: "Relire", faire: () => basculerRelecture(!relecture) },
       { cle: "cote", libelle: "Afficher ou cacher le plan", description: "La colonne de gauche", groupe: "Affichage", faire: () => setCoteOuvert((o) => !o) },
       { cle: "inspecteur", libelle: "Afficher ou cacher l'inspecteur", description: "La colonne de droite", groupe: "Affichage", faire: () => setInspecteurOuvert((o) => !o) },
@@ -923,7 +956,7 @@ export function Atelier(props: Props) {
         .slice(0, 200)
         .map((d) => ({ cle: `doc-${d.id}`, libelle: d.titre || "Sans titre", description: `${d.mots.toLocaleString("fr-FR")} mots`, groupe: "Ouvrir", faire: () => props.surOuvrir(d.id) })),
     ],
-    [enregistrer, exporter, documents, doc.id, relecture, basculerRelecture, basculerConcentration, ajusterLargeur, motsActuels, surBienvenue, props, palette, editor, extras.proprietes.auteur, annoncer],
+    [enregistrer, exporter, documents, doc.id, relecture, basculerRelecture, basculerConcentration, ajusterLargeur, motsActuels, surBienvenue, props, palette, editor, extras.proprietes.auteur, annoncer, relireAuClavier],
   );
 
   function ouvrirOnglet(cle: string) {
@@ -1277,7 +1310,22 @@ export function Atelier(props: Props) {
           />
         </div>
         {editor && <OutilsBloc editor={editor} conteneur={centre} />}
-        {editor && <MenuBulle editor={editor} />}
+        {editor && (
+          <MenuBulle
+            editor={editor}
+            extra={
+              <>
+                <button type="button" className="outil" aria-label="Synonymes" title="Synonymes (Maj+F7)" onMouseDown={(e) => e.preventDefault()} onClick={() => setDialogueMot("synonymes")}>
+                  <WholeWord className="size-4" aria-hidden="true" />
+                </button>
+                <button type="button" className="outil" aria-label="Traduire en anglais" title="En anglais (Truchement)" onMouseDown={(e) => e.preventDefault()} onClick={() => setDialogueMot("anglais")}>
+                  <Languages className="size-4" aria-hidden="true" />
+                </button>
+              </>
+            }
+          />
+        )}
+        {editor && <BulleGrammaire editor={editor} />}
         {editor && <PanneauBloc editor={editor} />}
         {editor && (
           <BarreEtat
@@ -1332,6 +1380,7 @@ export function Atelier(props: Props) {
       )}
       {(dialogueSource === "lien-web" || dialogueSource === "youtube") && editor && <DialogueLienWeb editor={editor} youtube={dialogueSource === "youtube"} surFermer={() => setDialogueSource(null)} />}
       {dialogueSource === "glossaire" && editor && <DialogueGlossaire editor={editor} surFermer={() => setDialogueSource(null)} />}
+      {dialogueMot && editor && <DialogueMot editor={editor} onglet={dialogueMot} surFermer={() => setDialogueMot(null)} surAnnonce={annoncer} />}
       {proposer && <DialogueProposer doc={{ ...doc, titre, reglages, contenu: editor ? editor.getJSON() : doc.contenu }} editor={editor} surFermer={() => setProposer(false)} />}
       {dialogueModeles && props.surModele && (
         <DialogueModeles

@@ -10,7 +10,7 @@ import { Deroulant } from "./Deroulant";
 import { FormulaireLien } from "./outils-communs";
 
 /** Petit menu qui apparaît au-dessus du texte sélectionné : l'essentiel à portée de main. */
-export function MenuBulle({ editor }: { editor: Editor }) {
+export function MenuBulle({ editor, extra }: { editor: Editor; /** Boutons en plus, à la fin (le Calame : synonymes, anglais). */ extra?: React.ReactNode }) {
   const e = useEditorState({
     editor,
     selector: ({ editor: ed }) => ({
@@ -70,6 +70,12 @@ export function MenuBulle({ editor }: { editor: Editor }) {
       <button type="button" className="outil" aria-label="Effacer la mise en forme" onMouseDown={garder} onClick={() => c().unsetAllMarks().run()}>
         <RemoveFormatting className="size-4" aria-hidden="true" />
       </button>
+      {extra && (
+        <>
+          <span className="barre-separateur" aria-hidden="true" />
+          {extra}
+        </>
+      )}
     </BubbleMenu>
   );
 }

@@ -57,6 +57,11 @@ function variablesDe(flux: HTMLElement): string {
 /** Une image recopiée : on ne la laisse pas « paresseuse », elle doit être là au moment d'imprimer. */
 function preparerClone(original: HTMLElement, clone: HTMLElement): void {
   for (const img of Array.from(clone.querySelectorAll("img"))) img.loading = "eager";
+  // Ce qui n'existe qu'à l'écran (soulignés de la relecture, passages trouvés) ne passe pas sur la page.
+  for (const el of Array.from(clone.querySelectorAll<HTMLElement>(".calame-lt, .calame-analyse, .calame-trouve, .calame-trouve-actif, .calame-lu"))) {
+    for (const c of Array.from(el.classList)) if (/^calame-(lt|analyse|trouve|lu)\b/.test(c)) el.classList.remove(c);
+    el.removeAttribute("data-remarque");
+  }
   // Un canevas recopié est vide : on y remet son dessin, en image.
   const sources = Array.from(original.querySelectorAll("canvas"));
   const cibles = Array.from(clone.querySelectorAll("canvas"));

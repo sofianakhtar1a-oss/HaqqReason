@@ -12,6 +12,7 @@ import { corrigerTypographie } from "../extensions/saisie";
 import { montrerPosition } from "../extensions/recherche";
 import { lire, voixDisponibles, type Lecteur } from "../voix";
 import { TextSelection } from "@tiptap/pm/state";
+import { PanneauGrammaire } from "./PanneauGrammaire";
 
 type Props = {
   editor: Editor;
@@ -147,6 +148,8 @@ export function PanneauRelire({ editor, stats, relecture, surRelecture, surCherc
           </div>
         )}
       </section>
+
+      <PanneauGrammaire editor={editor} />
 
       <section className="calame-section">
         <h3 className="calame-section-titre">
