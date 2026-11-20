@@ -104,6 +104,8 @@ ok("les articulations nomment des os connus", ELEMENTS.every((e) => (e.articulat
 ok("les provenances nomment des artères connues (ou un texte)", ELEMENTS.filter((e) => e.provenance && /^[a-z-]+$/.test(e.provenance)).every((e) => PAR_ID.get(e.provenance!)?.couche === "artere"));
 ok("les nerfs et les os d'un muscle sont des structures connues", ELEMENTS.every((e) => (!e.nerf || PAR_ID.get(e.nerf)?.couche === "nerf") && [...(e.origines ?? []), ...(e.terminaisons ?? [])].every((o) => PAR_ID.has(o))));
 ok("chaque structure a un nom français, latin et anglais, et son article", ELEMENTS.every((e) => e.nom && e.latin && e.anglais && ["le ", "la ", "l'", "les "].includes(e.art ?? "")), ELEMENTS.filter((e) => !(e.nom && e.latin && e.anglais && e.art)).slice(0, 5).map((e) => e.id).join());
+ok("chaque structure a son rang (0 : la plus connue) et sa région", ELEMENTS.every((e) => Number.isInteger(e.rang) && e.rang >= 0 && e.rang <= 3 && Boolean(e.region)), ELEMENTS.filter((e) => !Number.isInteger(e.rang)).slice(0, 5).map((e) => e.id).join());
+ok("les incontournables existent dans chaque couche d'origine", ["os", "muscle", "artere"].every((c) => ELEMENTS.some((e) => e.couche === c && e.rang === 0)));
 ok("pas de nom entre parenthèses ni de coquille connue", !ELEMENTS.some((e) => /^\(|métacrapien|plaxus|occulaire|Musclé |Facia /.test(e.nom)));
 
 /* ---------- Les planches ---------- */

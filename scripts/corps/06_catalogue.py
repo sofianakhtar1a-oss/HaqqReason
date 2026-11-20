@@ -657,7 +657,8 @@ for p in classement["pieces"]:
 CHAMPS_HERITES = ("noms", "nombre", "action", "origine", "terminaison", "innervation", "sorte", "articulations", "provenance", "territoire", "muscle", "attache", "memo", "anecdote")
 elements_json = []
 for e in elements:
-    x = {k: v for k, v in e.items() if not k.startswith("_") and v not in (None, False, [], "")}
+    # (Attention : en Python 0 == False ; un rang 0 ou une profondeur 0 sont des valeurs, on les garde.)
+    x = {k: v for k, v in e.items() if not k.startswith("_") and not (v is None or v is False or v == [] or v == "")}
     x["pair"] = e["pair"]
     h = e["_heritage"]
     if h:
