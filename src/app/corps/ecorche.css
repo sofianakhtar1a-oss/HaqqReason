@@ -238,6 +238,7 @@
   position: absolute;
   left: 20px;
   bottom: 14px;
+  transform: translateX(var(--decalage, 0px));
   display: grid;
   padding: 0.25rem 0.7rem 0.3rem;
   white-space: nowrap;
@@ -245,6 +246,26 @@
   border: 1px solid var(--ec-filet-fort);
   border-radius: 4px;
   box-shadow: 0 8px 24px rgb(0 0 0 / 0.35);
+}
+.ecorche-etiquette[data-gauche="true"] > span {
+  left: auto;
+  right: 20px;
+}
+.ecorche-etiquette[data-bas="true"] > span {
+  bottom: auto;
+  top: 14px;
+}
+.ecorche-etiquette[data-gauche="true"]::after {
+  left: auto;
+  right: 2px;
+  transform-origin: right center;
+  transform: rotate(38deg);
+}
+.ecorche-etiquette[data-bas="true"]::after {
+  transform: rotate(38deg);
+}
+.ecorche-etiquette[data-gauche="true"][data-bas="true"]::after {
+  transform: rotate(-38deg);
 }
 .ecorche-etiquette b {
   font-family: var(--ec-serif);
@@ -1544,6 +1565,9 @@
     border-right: 0;
     border-top: 1px solid var(--ec-filet);
     padding: 1.1rem 1rem 2rem;
+  }
+  .ecorche-etiquette b {
+    font-size: 1rem;
   }
   /* Sur téléphone, « Continuer » reste à portée du pouce pendant qu'on lit la fiche. */
   .ec-continuer {

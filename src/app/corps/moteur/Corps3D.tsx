@@ -260,6 +260,19 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     }
     el.style.opacity = "1";
     el.style.transform = `translate(${Math.round(pt[0])}px, ${Math.round(pt[1])}px)`;
+    // Près d'un bord, l'étiquette passe de l'autre côté de son point, ou glisse vers l'intérieur : elle ne sort jamais du cadre.
+    const boite = el.firstElementChild as HTMLElement | null;
+    const large = boite ? boite.offsetWidth : 0;
+    const haut = boite ? boite.offsetHeight : 0;
+    const placeD = rect.width - 8 - (pt[0] + 20);
+    const placeG = pt[0] - 20 - 8;
+    const versGauche = large > placeD && placeG > placeD;
+    const deborde = Math.max(0, large - (versGauche ? placeG : placeD));
+    const gauche = String(versGauche);
+    const bas = String(pt[1] - 18 - haut < 6);
+    if (el.dataset.gauche !== gauche) el.dataset.gauche = gauche;
+    if (el.dataset.bas !== bas) el.dataset.bas = bas;
+    el.style.setProperty("--decalage", `${Math.round(versGauche ? deborde : -deborde)}px`);
   }
 
   /* ---------- La poignée ---------- */

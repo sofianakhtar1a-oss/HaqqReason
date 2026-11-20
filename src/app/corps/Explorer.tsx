@@ -1,7 +1,7 @@
 "use client";
 
 import { Dumbbell, Eye, Focus, Minus, Plus, Scan, Search, Star, X } from "lucide-react";
-import { useDeferredValue, useEffect, useMemo, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { ELEMENTS, PAR_ID } from "@/lib/corps/catalogue";
 import { basculerFavori, boite, estFavori, useEcorche } from "@/lib/corps/progression";
 import { nomRegion } from "@/lib/corps/quiz";
@@ -96,6 +96,14 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
     else stage.poignee.current?.vue("ensemble");
   }, [choisi, stage]);
 
+  // Et sa fiche vient sous les yeux (sur téléphone, elle est plus bas dans le panneau).
+  const fiche = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!choisi) return;
+    const calme = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    fiche.current?.scrollIntoView({ block: "nearest", behavior: calme ? "auto" : "smooth" });
+  }, [choisi]);
+
   const trouves = useMemo(() => {
     const r = normaliser(differee);
     if (r.length < 2) return [];
@@ -167,7 +175,7 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
       </div>
 
       {choisi ? (
-        <>
+        <div ref={fiche} className="ec-fiche-choisie">
           <Cartel
             e={choisi}
             latin={e.profil.latin}
@@ -200,7 +208,7 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
               </div>
             </section>
           )}
-        </>
+        </div>
       ) : (
         <Parcourir couches={couches} choisir={choisir} />
       )}
