@@ -74,7 +74,8 @@ export function enHtml(doc: Noeud, options: OptionsHtml = {}): { corps: string; 
     if (classe) morceaux.push(`class="${classe}"`);
     if (a.ancre) morceaux.push(`id="ancre-${echapper(String(a.ancre))}"`);
     if (commenceEnArabe(n)) morceaux.push('lang="ar" dir="rtl"');
-    if (a.textAlign && a.textAlign !== "left") morceaux.push(`style="text-align:${a.textAlign === "justify" ? "justify" : String(a.textAlign)}"`);
+    // Le document peut venir d'ailleurs (page publiée) : seul un alignement connu passe.
+    if (a.textAlign === "center" || a.textAlign === "right" || a.textAlign === "justify") morceaux.push(`style="text-align:${a.textAlign}"`);
     return morceaux.length ? ` ${morceaux.join(" ")}` : "";
   };
 
@@ -164,6 +165,24 @@ export function enHtml(doc: Noeud, options: OptionsHtml = {}): { corps: string; 
         .join("")}</ol></section>`
     : "";
   return { corps: corps + notesHtml, titres, notes };
+}
+
+/** La même feuille, limitée à un conteneur (pour une page du site : rien ne déborde sur le reste). */
+export function feuilleLimitee(css: string, portee: string): string {
+  return css
+    .split("\n")
+    .map((ligne) => {
+      if (ligne.startsWith("@media")) return ligne.replace(/\bbody\b/g, portee);
+      const i = ligne.indexOf("{");
+      if (i < 0) return ligne;
+      const selecteurs = ligne
+        .slice(0, i)
+        .split(",")
+        .map((sel) => (sel.trim() === "body" ? portee : `${portee} ${sel.trim()}`))
+        .join(",");
+      return selecteurs + ligne.slice(i);
+    })
+    .join("\n");
 }
 
 /** La feuille de style des sorties HTML et EPUB : sobre, lisible, l'arabe en grand. */

@@ -1,0 +1,46 @@
+/* Une page publiée depuis le Calame : une feuille de papier claire, quel que soit le thème du site. */
+.lecture-publiee {
+  display: grid;
+  justify-items: center;
+  padding: 2rem 1rem 4rem;
+}
+.lecture-publiee-texte {
+  width: min(46rem, 100%);
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+  border-radius: 0.6rem;
+  background: #fdfcfa;
+  color: #1d2433;
+  box-shadow:
+    0 1px 2px rgb(5 8 25 / 0.2),
+    0 1.5rem 3rem -1.5rem rgb(5 8 25 / 0.5);
+}
+.lecture-publiee-meta {
+  margin: -0.3rem 0 2rem;
+  font-size: 0.85rem;
+  color: #5a6075;
+}
+.lecture-publiee-texte a {
+  color: #1f4fb0;
+}
+.lecture-protegee {
+  min-height: 60vh;
+  align-content: center;
+}
+.lecture-protegee-carte {
+  display: grid;
+  gap: 0.8rem;
+  width: min(24rem, 100%);
+  padding: 2rem 1.5rem;
+  border: 1px solid var(--trait);
+  border-radius: 1.2rem;
+  background: var(--surface);
+  text-align: center;
+}
+.lecture-protegee-carte h1 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+.lecture-protegee-carte p {
+  margin: 0;
+  color: var(--encre-douce);
+}

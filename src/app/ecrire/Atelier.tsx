@@ -54,7 +54,8 @@ import { lireFichier } from "@/lib/atelier/depot";
 import { LecteurPdfLocal } from "./LecteurPdfLocal";
 import { DialogueModeles, type DepartDocument } from "./DialogueModeles";
 import { PanneauSortie, type ActionSortie } from "./panneaux/PanneauSortie";
-import { exporterEpub, exporterHtml, exporterMarkdownComplet, exporterTexte, exporterTousLesDocuments, exporterWord, partagerDocument } from "./sorties";
+import { exporterEpub, exporterHtml, exporterMarkdownComplet, exporterTexte, exporterTousLesDocuments, exporterWord, partagerDocument, publierDocument, retirerPublicationDuDocument } from "./sorties";
+import { DialogueProposer } from "./DialogueProposer";
 import { construirePdfDirect } from "./pdf-direct";
 import { nomDeFichier, telecharger } from "./exporter";
 import { EVENEMENT_PDF_COTE, type DemandePdfCote } from "./VuesLocales";
@@ -175,6 +176,7 @@ export function Atelier(props: Props) {
   const [commentaire, setCommentaire] = useState(false);
   const [dialogueSource, setDialogueSource] = useState<DialogueCalame | null>(null);
   const [dialogueModeles, setDialogueModeles] = useState(false);
+  const [proposer, setProposer] = useState(false);
   const [lienInterne, setLienInterne] = useState(false);
   const [extras, setExtras] = useState(() => extrasDe(doc));
   // Ouvert (à nouveau) depuis la recherche dans tous les documents : on cherche aussitôt.
@@ -585,6 +587,28 @@ export function Atelier(props: Props) {
           case "partager":
             await partagerDocument(aJour, editor, action.format);
             break;
+          case "publier": {
+            const avant = extrasDe(documents.find((d) => d.id === doc.id) ?? doc).publication;
+            const r = await publierDocument(aJour, editor, { id: avant?.id, motDePasse: action.motDePasse });
+            if ("erreur" in r) setMessage(r.erreur);
+            else {
+              const protege = action.motDePasse === undefined ? Boolean(avant?.protege) : Boolean(action.motDePasse);
+              props.surModifier(doc.id, { publication: { id: r.id, protege, quand: new Date().toISOString() } });
+              annoncer(avant ? "Page mise à jour." : "Page publiée : copie son adresse dans l'onglet « Sortie ».");
+            }
+            break;
+          }
+          case "depublier": {
+            const avant = extrasDe(documents.find((d) => d.id === doc.id) ?? doc).publication;
+            if (avant && (await retirerPublicationDuDocument(avant.id))) {
+              props.surModifier(doc.id, { publication: null });
+              annoncer("Page retirée : son adresse ne mène plus nulle part.");
+            } else setMessage("La page n'a pas pu être retirée. Réessaie dans un instant.");
+            break;
+          }
+          case "proposer":
+            setProposer(true);
+            break;
         }
       } catch {
         setMessage("L'export n'a pas abouti. Réessaie, ou passe par la sauvegarde complète.");
@@ -592,7 +616,7 @@ export function Atelier(props: Props) {
         setExportEnCours("");
       }
     },
-    [annoncer, doc, editor, enregistrer, pages],
+    [annoncer, doc, documents, editor, enregistrer, pages, props],
   );
 
   // ---------------------------------------------------------------- modes
@@ -1288,7 +1312,7 @@ export function Atelier(props: Props) {
           onglet={ongletInspecteur}
           surOnglet={setOngletInspecteur}
           pageEnPlus={<PanneauMiseEnPage reglages={reglages} surReglages={modifierReglages} />}
-          sortieEnPlus={<PanneauSortie editor={editor} pages={pages} enCours={exportEnCours} surAction={(a) => void sortir(a)} />}
+          sortieEnPlus={<PanneauSortie editor={editor} pages={pages} enCours={exportEnCours} surAction={(a) => void sortir(a)} publication={extrasDe(documents.find((d) => d.id === doc.id) ?? doc).publication} />}
           stylesEnPlus={
             <>
               <PanneauStyles reglages={reglages} surReglages={modifierReglages} documents={documents} docId={doc.id} />
@@ -1308,6 +1332,7 @@ export function Atelier(props: Props) {
       )}
       {(dialogueSource === "lien-web" || dialogueSource === "youtube") && editor && <DialogueLienWeb editor={editor} youtube={dialogueSource === "youtube"} surFermer={() => setDialogueSource(null)} />}
       {dialogueSource === "glossaire" && editor && <DialogueGlossaire editor={editor} surFermer={() => setDialogueSource(null)} />}
+      {proposer && <DialogueProposer doc={{ ...doc, titre, reglages, contenu: editor ? editor.getJSON() : doc.contenu }} editor={editor} surFermer={() => setProposer(false)} />}
       {dialogueModeles && props.surModele && (
         <DialogueModeles
           docOuvert={{ ...doc, titre, reglages, contenu: editor ? editor.getJSON() : doc.contenu }}

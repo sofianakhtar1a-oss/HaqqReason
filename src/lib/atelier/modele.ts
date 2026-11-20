@@ -644,6 +644,8 @@ export type ExtrasDocument = {
   echeance: string | null;
   /** Verrou par un code (appareil partagé) : le sel et l'empreinte du code, jamais le code lui-même. */
   verrou: { sel: string; empreinte: string } | null;
+  /** Page web publiée en lecture seule (son identifiant), avec ou sans mot de passe. */
+  publication: { id: string; protege: boolean; quand: string } | null;
 };
 
 export const LIMITES_EXTRAS = { etiquettes: 20, etiquette: 40, propriete: 200, motsCles: 400, objectifMots: 10_000_000, corbeilleJours: 30 } as const;
@@ -669,7 +671,13 @@ export function nettoyerExtras(brut: unknown): ExtrasDocument {
     objectifMots: nombre(o.objectifMots, 0, LIMITES_EXTRAS.objectifMots, 0),
     echeance: typeof o.echeance === "string" && JOUR_ISO.test(o.echeance) ? o.echeance : null,
     verrou: verrouValide(o.verrou),
+    publication: publicationValide(o.publication),
   };
+}
+
+function publicationValide(v: unknown): ExtrasDocument["publication"] {
+  const o = (v ?? {}) as Record<string, unknown>;
+  return typeof o.id === "string" && /^[0-9a-f-]{36}$/i.test(o.id) ? { id: o.id, protege: o.protege === true, quand: typeof o.quand === "string" ? o.quand : "" } : null;
 }
 
 function verrouValide(v: unknown): ExtrasDocument["verrou"] {

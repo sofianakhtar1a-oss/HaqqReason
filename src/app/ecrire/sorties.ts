@@ -212,6 +212,29 @@ export async function exporterHtml(doc: DocumentAtelier, editor: Editor | null):
 }
 
 // ---------------------------------------------------------------------------
+// Page web publiée (lecture seule)
+// ---------------------------------------------------------------------------
+
+/** Publie le document (ou met à jour sa page) ; motDePasse : texte pour en poser un, null pour le retirer. */
+export async function publierDocument(doc: DocumentAtelier, editor: Editor | null, options: { id?: string; motDePasse?: string | null }): Promise<{ id: string; adresse: string } | { erreur: string }> {
+  const { neutre, images } = await preparerSortie(doc, editor);
+  const enLigne: Record<string, string> = {};
+  for (const [cle, f] of images) if (JSON.stringify(neutre).includes(`"${cle}"`)) enLigne[cle] = `data:${f.type};base64,${enBase64(f.octets)}`;
+  const reponse = await fetch("/api/calame/publication", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({ id: options.id, documentId: doc.id, titre: doc.titre, auteur: extrasDe(doc).proprietes.auteur, contenu: neutre, images: enLigne, styles: doc.reglages.styles, motDePasse: options.motDePasse }),
+  });
+  const d = (await reponse.json().catch(() => ({}))) as { id?: string; adresse?: string; erreur?: string };
+  return reponse.ok && d.id && d.adresse ? { id: d.id, adresse: d.adresse } : { erreur: d.erreur ?? "La publication n'a pas abouti." };
+}
+
+export async function retirerPublicationDuDocument(id: string): Promise<boolean> {
+  const r = await fetch(`/api/calame/publication?id=${encodeURIComponent(id)}`, { method: "DELETE" });
+  return r.ok;
+}
+
+// ---------------------------------------------------------------------------
 // EPUB 3 (liseuse, téléphone)
 // ---------------------------------------------------------------------------
 

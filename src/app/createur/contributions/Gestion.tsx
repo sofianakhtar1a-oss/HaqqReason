@@ -15,6 +15,7 @@ import {
   type TypeContribution,
 } from "@/lib/contributions/modele";
 import { ETAT_INITIAL } from "@/lib/form-state";
+import { MARQUE_CALAME } from "@/lib/atelier/propositions";
 import { basculerLue, effacer, effacerReponse, marquer, repondreA, viderLesRefusees } from "./actions";
 
 type Filtre = StatutContribution | "tout" | "non_lues";
@@ -109,6 +110,13 @@ function Carte({ c }: { c: ContributionCreateur }) {
 
       <h3 className="mt-2 font-display text-lg font-bold">{c.titre}</h3>
       <p className="mt-1 whitespace-pre-wrap text-encre-douce">{c.texte}</p>
+      {c.texte.includes(MARQUE_CALAME) && (
+        <Link href={`/createur/contributions/calame/${c.id}`} className="contrib-renvoi mt-3">
+          <span className="contrib-renvoi-intro">Texte complet</span>
+          <span className="contrib-renvoi-titre">Lire le document envoyé depuis le Calame</span>
+          <ArrowRight className="size-4 shrink-0" aria-hidden="true" />
+        </Link>
+      )}
 
       {c.article ? (
         <Link href={`/explorer/article/${c.article.id}`} className="contrib-renvoi mt-3">

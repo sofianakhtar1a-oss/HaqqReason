@@ -1,14 +1,15 @@
 "use client";
 
 import type { Editor } from "@tiptap/core";
-import { AlertTriangle, BookOpen, CheckCircle2, FileArchive, FileCode2, FileDown, FileType2, Printer, Share2, TextSelect } from "lucide-react";
+import { AlertTriangle, BookOpen, CheckCircle2, FileArchive, FileCode2, FileDown, FileType2, Globe, Printer, Share2, TextSelect } from "lucide-react";
 import { useEffect, useState } from "react";
 import { choisirDossier, dossierPossible, ecrireReglage, FREQUENCES, lireReglage, sauvegarderMaintenant, type Frequence } from "../sauvegarde-auto";
 import { allerARemarque, verifierDocument, type Remarque } from "../verification";
 import type { FormatPartage } from "../sorties";
 
 export type ActionSortie =
-  | { quoi: "pdf-direct" | "epub" | "html" | "txt" | "tout" | "livret" | "selection" }
+  | { quoi: "pdf-direct" | "epub" | "html" | "txt" | "tout" | "livret" | "selection" | "depublier" | "proposer" }
+  | { quoi: "publier"; motDePasse?: string | null }
   | { quoi: "pages"; pages: string }
   | { quoi: "partager"; format: FormatPartage };
 
@@ -17,7 +18,78 @@ type Props = {
   pages: number;
   enCours: string;
   surAction: (action: ActionSortie) => void;
+  /** La page web publiée de ce document, s'il y en a une. */
+  publication?: { id: string; protege: boolean; quand: string } | null;
 };
+
+function Publication({ publication, enCours, surAction }: { publication: Props["publication"]; enCours: string; surAction: Props["surAction"] }) {
+  const [protegee, setProtegee] = useState(false);
+  const [motDePasse, setMotDePasse] = useState("");
+  const [copie, setCopie] = useState(false);
+  const adresse = publication && typeof window !== "undefined" ? `${window.location.origin}/lire/${publication.id}` : "";
+  return (
+    <section className="calame-section" aria-labelledby="sortie-publier">
+      <h3 className="calame-section-titre" id="sortie-publier">
+        <Globe className="size-4" aria-hidden="true" /> Page web en lecture seule
+      </h3>
+      {publication ? (
+        <>
+          <p className="inspecteur-aide">
+            Publiée{publication.quand ? ` le ${new Date(publication.quand).toLocaleString("fr-FR")}` : ""}
+            {publication.protege ? ", avec un mot de passe" : ", lisible par toute personne qui a le lien"}.
+          </p>
+          <div className="calame-sortie-pages">
+            <input className="champ" readOnly value={adresse} aria-label="Adresse de la page" onFocus={(e) => e.target.select()} />
+            <button
+              type="button"
+              className="bouton bouton-discret"
+              onClick={() =>
+                void navigator.clipboard?.writeText(adresse).then(() => {
+                  setCopie(true);
+                  setTimeout(() => setCopie(false), 1800);
+                })
+              }
+            >
+              {copie ? "Copié" : "Copier"}
+            </button>
+          </div>
+          <button type="button" className="bouton bouton-discret w-full" onClick={() => surAction({ quoi: "publier" })} disabled={enCours !== ""}>
+            {enCours === "publier" ? "Mise à jour…" : "Mettre la page à jour"}
+          </button>
+          <div className="calame-sortie-pages">
+            <input className="champ" type="password" autoComplete="new-password" value={motDePasse} onChange={(e) => setMotDePasse(e.target.value)} placeholder={publication.protege ? "Nouveau mot de passe" : "Mot de passe (facultatif)"} aria-label="Mot de passe de la page" />
+            <button type="button" className="bouton bouton-discret" disabled={motDePasse.length < 4} onClick={() => surAction({ quoi: "publier", motDePasse })}>
+              {publication.protege ? "Changer" : "Protéger"}
+            </button>
+          </div>
+          {publication.protege && (
+            <button type="button" className="bouton bouton-discret w-full" onClick={() => surAction({ quoi: "publier", motDePasse: null })}>
+              Retirer le mot de passe
+            </button>
+          )}
+          <button type="button" className="bouton bouton-discret w-full" onClick={() => surAction({ quoi: "depublier" })}>
+            Retirer la page
+          </button>
+        </>
+      ) : (
+        <>
+          <p className="inspecteur-aide">Une adresse à partager : le texte, ses images et ses notes, en lecture seule. Tu peux la retirer à tout moment.</p>
+          <label className="inspecteur-bascule">
+            <input type="checkbox" checked={protegee} onChange={(e) => setProtegee(e.target.checked)} />
+            <span>Protéger par un mot de passe</span>
+          </label>
+          {protegee && <input className="champ" type="password" autoComplete="new-password" value={motDePasse} onChange={(e) => setMotDePasse(e.target.value)} placeholder="4 caractères ou plus" aria-label="Mot de passe de la page" />}
+          <button type="button" className="bouton bouton-principal w-full" disabled={enCours !== "" || (protegee && motDePasse.length < 4)} onClick={() => surAction({ quoi: "publier", motDePasse: protegee ? motDePasse : undefined })}>
+            {enCours === "publier" ? "Publication…" : "Publier la page"}
+          </button>
+        </>
+      )}
+      <button type="button" className="bouton bouton-discret w-full" onClick={() => surAction({ quoi: "proposer" })}>
+        Proposer ce texte à la bibliothèque du site
+      </button>
+    </section>
+  );
+}
 
 const GENRES: Record<Remarque["genre"], string> = { note: "Notes", image: "Images", lien: "Liens", titre: "Titres", source: "Sources" };
 
@@ -75,7 +147,7 @@ function SauvegardeAuto() {
   );
 }
 
-export function PanneauSortie({ editor, pages, enCours, surAction }: Props) {
+export function PanneauSortie({ editor, pages, enCours, surAction, publication = null }: Props) {
   const [remarques, setRemarques] = useState<Remarque[] | null>(null);
   const [plages, setPlages] = useState("");
   const [format, setFormat] = useState<FormatPartage>("docx");
@@ -161,6 +233,8 @@ export function PanneauSortie({ editor, pages, enCours, surAction }: Props) {
         </button>
         <p className="inspecteur-aide">Livret : imprime en recto verso, retournement sur le petit côté, puis plie la pile en deux.</p>
       </section>
+
+      <Publication publication={publication} enCours={enCours} surAction={surAction} />
 
       <section className="calame-section" aria-labelledby="sortie-partager">
         <h3 className="calame-section-titre" id="sortie-partager">
