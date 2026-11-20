@@ -1,0 +1,3842 @@
+[
+ {
+  "id": "frontal",
+  "couche": "os",
+  "nom": "Os frontal",
+  "latin": "Os frontale",
+  "anglais": "Frontal bone",
+  "region": "tete",
+  "rang": 0,
+  "pair": false,
+  "sorte": "plat",
+  "articulations": [
+   "parietal",
+   "os-nasaux",
+   "maxillaire",
+   "zygomatique",
+   "sphenoide"
+  ],
+  "noms": [
+   "frontal"
+  ],
+  "memo": "L'os du front ; il forme aussi le toit des orbites."
+ },
+ {
+  "id": "parietal",
+  "couche": "os",
+  "nom": "Pariétal",
+  "latin": "Os parietale",
+  "anglais": "Parietal bone",
+  "region": "tete",
+  "rang": 1,
+  "pair": true,
+  "sorte": "plat",
+  "articulations": [
+   "frontal",
+   "occipital",
+   "temporal",
+   "sphenoide"
+  ],
+  "noms": [
+   "os pariétal"
+  ],
+  "memo": "Les deux pariétaux forment le dôme du crâne, réunis par la suture sagittale."
+ },
+ {
+  "id": "occipital",
+  "couche": "os",
+  "nom": "Os occipital",
+  "latin": "Os occipitale",
+  "anglais": "Occipital bone",
+  "region": "tete",
+  "rang": 1,
+  "pair": false,
+  "sorte": "plat",
+  "articulations": [
+   "parietal",
+   "temporal",
+   "sphenoide",
+   "atlas"
+  ],
+  "noms": [
+   "occipital"
+  ],
+  "memo": "Percé du foramen magnum, par où passe la moelle épinière."
+ },
+ {
+  "id": "temporal",
+  "couche": "os",
+  "nom": "Temporal",
+  "latin": "Os temporale",
+  "anglais": "Temporal bone",
+  "region": "tete",
+  "rang": 1,
+  "pair": true,
+  "sorte": "irregulier",
+  "articulations": [
+   "parietal",
+   "occipital",
+   "sphenoide",
+   "zygomatique",
+   "mandibule"
+  ],
+  "noms": [
+   "os temporal"
+  ],
+  "memo": "Il abrite l'oreille moyenne et l'oreille interne.",
+  "anecdote": "Il contient les trois plus petits os du corps : le marteau, l'enclume et l'étrier."
+ },
+ {
+  "id": "sphenoide",
+  "couche": "os",
+  "nom": "Sphénoïde",
+  "latin": "Os sphenoidale",
+  "anglais": "Sphenoid bone",
+  "region": "tete",
+  "rang": 3,
+  "pair": false,
+  "sorte": "irregulier",
+  "articulations": [
+   "frontal",
+   "parietal",
+   "temporal",
+   "occipital",
+   "zygomatique",
+   "maxillaire"
+  ],
+  "noms": [
+   "os sphénoïde"
+  ],
+  "memo": "En forme de papillon, au centre de la base du crâne : il touche tous les autres os du crâne."
+ },
+ {
+  "id": "os-nasaux",
+  "couche": "os",
+  "nom": "Os nasaux",
+  "latin": "Ossa nasalia",
+  "anglais": "Nasal bones",
+  "region": "tete",
+  "rang": 2,
+  "pair": true,
+  "sorte": "plat",
+  "articulations": [
+   "frontal",
+   "maxillaire"
+  ],
+  "nombre": 2,
+  "noms": [
+   "os nasal",
+   "os propres du nez"
+  ],
+  "memo": "Ils forment l'arête osseuse du nez ; le reste est du cartilage."
+ },
+ {
+  "id": "maxillaire",
+  "couche": "os",
+  "nom": "Maxillaire",
+  "latin": "Maxilla",
+  "anglais": "Maxilla",
+  "region": "tete",
+  "rang": 1,
+  "pair": true,
+  "sorte": "irregulier",
+  "articulations": [
+   "frontal",
+   "os-nasaux",
+   "zygomatique",
+   "sphenoide"
+  ],
+  "noms": [
+   "maxilla",
+   "maxillaire supérieur"
+  ],
+  "memo": "Il porte les dents du haut et forme le plancher des orbites."
+ },
+ {
+  "id": "zygomatique",
+  "couche": "os",
+  "nom": "Zygomatique",
+  "latin": "Os zygomaticum",
+  "anglais": "Zygomatic bone",
+  "region": "tete",
+  "rang": 1,
+  "pair": true,
+  "sorte": "irregulier",
+  "articulations": [
+   "frontal",
+   "maxillaire",
+   "temporal",
+   "sphenoide"
+  ],
+  "noms": [
+   "os zygomatique",
+   "malaire",
+   "os malaire",
+   "pommette"
+  ],
+  "memo": "L'os de la pommette ; avec le temporal, il forme l'arcade zygomatique."
+ },
+ {
+  "id": "mandibule",
+  "couche": "os",
+  "nom": "Mandibule",
+  "latin": "Mandibula",
+  "anglais": "Mandible",
+  "region": "tete",
+  "rang": 0,
+  "pair": false,
+  "sorte": "irregulier",
+  "articulations": [
+   "temporal"
+  ],
+  "noms": [
+   "maxillaire inférieur",
+   "mâchoire"
+  ],
+  "memo": "Le seul os mobile du crâne.",
+  "anecdote": "C'est l'os le plus solide de la face."
+ },
+ {
+  "id": "hyoide",
+  "couche": "os",
+  "nom": "Os hyoïde",
+  "latin": "Os hyoideum",
+  "anglais": "Hyoid bone",
+  "region": "cou",
+  "rang": 2,
+  "pair": false,
+  "sorte": "irregulier",
+  "articulations": [],
+  "noms": [
+   "hyoïde"
+  ],
+  "memo": "Le seul os du corps qui ne s'articule avec aucun autre : il est suspendu par des muscles et des ligaments."
+ },
+ {
+  "id": "atlas",
+  "couche": "os",
+  "nom": "Atlas",
+  "latin": "Atlas",
+  "anglais": "Atlas",
+  "region": "cou",
+  "rang": 1,
+  "pair": false,
+  "sorte": "irregulier",
+  "articulations": [
+   "occipital",
+   "axis"
+  ],
+  "noms": [
+   "c1",
+   "première vertèbre cervicale"
+  ],
+  "memo": "Il porte la tête comme le titan Atlas portait le ciel ; il n'a pas de corps vertébral."
+ },
+ {
+  "id": "axis",
+  "couche": "os",
+  "nom": "Axis",
+  "latin": "Axis",
+  "anglais": "Axis",
+  "region": "cou",
+  "rang": 2,
+  "pair": false,
+  "sorte": "irregulier",
+  "articulations": [
+   "atlas",
+   "vertebres-cervicales"
+  ],
+  "noms": [
+   "c2",
+   "deuxième vertèbre cervicale"
+  ],
+  "memo": "Sa dent sert de pivot à l'atlas : c'est elle qui permet de dire « non » de la tête."
+ },
+ {
+  "id": "vertebres-cervicales",
+  "couche": "os",
+  "nom": "Vertèbres cervicales",
+  "latin": "Vertebrae cervicales",
+  "anglais": "Cervical vertebrae",
+  "region": "cou",
+  "rang": 0,
+  "pair": false,
+  "sorte": "irregulier",
+  "articulations": [
+   "axis",
+   "c7"
+  ],
+  "nombre": 7,
+  "noms": [
+   "cervicales"
+  ],
+  "memo": "Sept au cou, chez presque tous les mammifères — même chez la girafe."
+ },
+ {
+  "id": "c7",
+  "couche": "os",
+  "nom": "Vertèbre proéminente",
+  "latin": "Vertebra prominens",
+  "anglais": "Vertebra prominens",
+  "region": "cou",
+  "rang": 2,
+  "pair": false,
+  "sorte": "irregulier",
+  "articulations": [
+   "vertebres-cervicales",
+   "vertebres-thoraciques"
+  ],
+  "noms": [
+   "c7",
+   "septième vertèbre cervicale"
+  ],
+  "memo": "Son long processus épineux se sent sous la peau, à la base de la nuque."
+ },
+ {
+  "id": "vertebres-thoraciques",
+  "couche": "os",
+  "nom": "Vertèbres thoraciques",
+  "latin": "Vertebrae thoracicae",
+  "anglais": "Thoracic vertebrae",
+  "region": "dos",
+  "rang": 0,
+  "pair": false,
+  "sorte": "irregulier",
+  "articulations": [
+   "c7",
+   "vertebres-lombaires",
+   "cotes-vraies",
+   "fausses-cotes",
+   "cotes-flottantes"
+  ],
+  "nombre": 12,
+  "noms": [
+   "vertèbres dorsales",
+   "thoraciques"
+  ],
+  "memo": "Douze : une par paire de côtes."
+ },
+ {
+  "id": "vertebres-lombaires",
+  "couche": "os",
+  "nom": "Vertèbres lombaires",
+  "latin": "Vertebrae lumbales",
+  "anglais": "Lumbar vertebrae",
+  "region": "dos",
+  "rang": 0,
+  "pair": false,
+  "sorte": "irregulier",
+  "articulations": [
+   "vertebres-thoraciques",
+   "sacrum"
+  ],
+  "nombre": 5,
+  "noms": [
+   "lombaires"
+  ],
+  "memo": "Les plus massives : elles portent le poids du haut du corps."
+ },
+ {
+  "id": "sacrum",
+  "couche": "os",
+  "nom": "Sacrum",
+  "latin": "Os sacrum",
+  "anglais": "Sacrum",
+  "region": "bassin",
+  "rang": 0,
+  "pair": false,
+  "sorte": "irregulier",
+  "articulations": [
+   "vertebres-lombaires",
+   "coccyx",
+   "ilium"
+  ],
+  "memo": "Cinq vertèbres soudées, la clé de voûte du bassin."
+ },
+ {
+  "id": "coccyx",
+  "couche": "os",
+  "nom": "Coccyx",
+  "latin": "Os coccygis",
+  "anglais": "Coccyx",
+  "region": "bassin",
+  "rang": 1,
+  "pair": false,
+  "sorte": "irregulier",
+  "articulations": [
+   "sacrum"
+  ],
+  "memo": "Le vestige de la queue : trois à cinq petites vertèbres soudées."
+ },
+ {
+  "id": "sternum",
+  "couche": "os",
+  "nom": "Sternum",
+  "latin": "Sternum",
+  "anglais": "Sternum",
+  "region": "thorax",
+  "rang": 0,
+  "pair": false,
+  "sorte": "plat",
+  "articulations": [
+   "clavicule",
+   "cotes-vraies"
+  ],
+  "memo": "Trois parties : le manubrium, le corps et le processus xiphoïde."
+ },
+ {
+  "id": "cotes-vraies",
+  "couche": "os",
+  "nom": "Côtes vraies",
+  "latin": "Costae verae",
+  "anglais": "True ribs",
+  "region": "thorax",
+  "rang": 0,
+  "pair": true,
+  "sorte": "plat",
+  "articulations": [
+   "vertebres-thoraciques",
+   "sternum"
+  ],
+  "nombre": 14,
+  "noms": [
+   "côtes"
+  ],
+  "memo": "Les sept premières paires : chacune rejoint directement le sternum par son cartilage."
+ },
+ {
+  "id": "fausses-cotes",
+  "couche": "os",
+  "nom": "Fausses côtes",
+  "latin": "Costae spuriae",
+  "anglais": "False ribs",
+  "region": "thorax",
+  "rang": 1,
+  "pair": true,
+  "sorte": "plat",
+  "articulations": [
+   "vertebres-thoraciques"
+  ],
+  "nombre": 6,
+  "memo": "Les 8e, 9e et 10e paires : leur cartilage rejoint celui de la côte du dessus."
+ },
+ {
+  "id": "cotes-flottantes",
+  "couche": "os",
+  "nom": "Côtes flottantes",
+  "latin": "Costae fluctuantes",
+  "anglais": "Floating ribs",
+  "region": "thorax",
+  "rang": 1,
+  "pair": true,
+  "sorte": "plat",
+  "articulations": [
+   "vertebres-thoraciques"
+  ],
+  "nombre": 4,
+  "memo": "Les 11e et 12e paires, libres en avant."
+ },
+ {
+  "id": "cartilages-costaux",
+  "couche": "os",
+  "nom": "Cartilages costaux",
+  "latin": "Cartilagines costales",
+  "anglais": "Costal cartilages",
+  "region": "thorax",
+  "rang": 2,
+  "pair": true,
+  "articulations": [
+   "sternum",
+   "cotes-vraies",
+   "fausses-cotes"
+  ],
+  "nombre": 20,
+  "memo": "Ils donnent au thorax sa souplesse pendant la respiration."
+ },
+ {
+  "id": "clavicule",
+  "couche": "os",
+  "nom": "Clavicule",
+  "latin": "Clavicula",
+  "anglais": "Clavicle",
+  "region": "epaule",
+  "rang": 0,
+  "pair": true,
+  "sorte": "long",
+  "articulations": [
+   "sternum",
+   "scapula"
+  ],
+  "memo": "Le seul os long horizontal du corps.",
+  "anecdote": "C'est l'os le plus souvent fracturé, en tombant sur l'épaule ou la main tendue."
+ },
+ {
+  "id": "scapula",
+  "couche": "os",
+  "nom": "Scapula",
+  "latin": "Scapula",
+  "anglais": "Scapula",
+  "region": "epaule",
+  "rang": 0,
+  "pair": true,
+  "sorte": "plat",
+  "articulations": [
+   "clavicule",
+   "humerus"
+  ],
+  "noms": [
+   "omoplate"
+  ],
+  "memo": "L'ancienne omoplate : un triangle plat qui glisse sur le dos du thorax."
+ },
+ {
+  "id": "humerus",
+  "couche": "os",
+  "nom": "Humérus",
+  "latin": "Humerus",
+  "anglais": "Humerus",
+  "region": "bras",
+  "rang": 0,
+  "pair": true,
+  "sorte": "long",
+  "articulations": [
+   "scapula",
+   "radius",
+   "ulna"
+  ],
+  "memo": "L'os du bras.",
+  "anecdote": "Le choc électrique du coude vient du nerf ulnaire, qui passe derrière son épicondyle médial."
+ },
+ {
+  "id": "radius",
+  "couche": "os",
+  "nom": "Radius",
+  "latin": "Radius",
+  "anglais": "Radius",
+  "region": "avant-bras",
+  "rang": 0,
+  "pair": true,
+  "sorte": "long",
+  "articulations": [
+   "humerus",
+   "ulna",
+   "scaphoide",
+   "lunatum"
+  ],
+  "memo": "Côté pouce : il tourne autour de l'ulna quand la main se retourne."
+ },
+ {
+  "id": "ulna",
+  "couche": "os",
+  "nom": "Ulna",
+  "latin": "Ulna",
+  "anglais": "Ulna",
+  "region": "avant-bras",
+  "rang": 0,
+  "pair": true,
+  "sorte": "long",
+  "articulations": [
+   "humerus",
+   "radius"
+  ],
+  "noms": [
+   "cubitus"
+  ],
+  "memo": "Côté petit doigt ; son olécrâne fait la pointe du coude."
+ },
+ {
+  "id": "scaphoide",
+  "couche": "os",
+  "nom": "Scaphoïde",
+  "latin": "Os scaphoideum",
+  "anglais": "Scaphoid",
+  "region": "main",
+  "rang": 2,
+  "pair": true,
+  "sorte": "court",
+  "articulations": [
+   "radius",
+   "lunatum",
+   "os-trapeze",
+   "trapezoide",
+   "capitatum"
+  ],
+  "memo": "Le plus souvent fracturé des os du poignet, en tombant sur la main."
+ },
+ {
+  "id": "lunatum",
+  "couche": "os",
+  "nom": "Lunatum",
+  "latin": "Os lunatum",
+  "anglais": "Lunate",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "sorte": "court",
+  "articulations": [
+   "radius",
+   "scaphoide",
+   "triquetrum",
+   "capitatum",
+   "hamatum"
+  ],
+  "noms": [
+   "semi-lunaire"
+  ],
+  "memo": "En forme de croissant de lune."
+ },
+ {
+  "id": "triquetrum",
+  "couche": "os",
+  "nom": "Triquetrum",
+  "latin": "Os triquetrum",
+  "anglais": "Triquetrum",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "sorte": "court",
+  "articulations": [
+   "lunatum",
+   "pisiforme",
+   "hamatum"
+  ],
+  "noms": [
+   "pyramidal"
+  ],
+  "memo": "Trois faces, d'où son nom."
+ },
+ {
+  "id": "pisiforme",
+  "couche": "os",
+  "nom": "Pisiforme",
+  "latin": "Os pisiforme",
+  "anglais": "Pisiform",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "sorte": "sesamoide",
+  "articulations": [
+   "triquetrum"
+  ],
+  "memo": "Gros comme un petit pois ; il se sent à la base de la paume, côté petit doigt."
+ },
+ {
+  "id": "os-trapeze",
+  "couche": "os",
+  "nom": "Trapèze",
+  "latin": "Os trapezium",
+  "anglais": "Trapezium",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "sorte": "court",
+  "articulations": [
+   "scaphoide",
+   "trapezoide",
+   "metacarpiens"
+  ],
+  "noms": [
+   "os trapèze"
+  ],
+  "memo": "À la base du pouce : son articulation en selle permet de l'opposer aux autres doigts."
+ },
+ {
+  "id": "trapezoide",
+  "couche": "os",
+  "nom": "Trapézoïde",
+  "latin": "Os trapezoideum",
+  "anglais": "Trapezoid",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "sorte": "court",
+  "articulations": [
+   "scaphoide",
+   "os-trapeze",
+   "capitatum",
+   "metacarpiens"
+  ],
+  "memo": "Le plus petit de la rangée du bas, coincé entre le trapèze et le capitatum."
+ },
+ {
+  "id": "capitatum",
+  "couche": "os",
+  "nom": "Capitatum",
+  "latin": "Os capitatum",
+  "anglais": "Capitate",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "sorte": "court",
+  "articulations": [
+   "scaphoide",
+   "lunatum",
+   "trapezoide",
+   "hamatum",
+   "metacarpiens"
+  ],
+  "noms": [
+   "grand os"
+  ],
+  "memo": "Le plus gros os du poignet, au centre."
+ },
+ {
+  "id": "hamatum",
+  "couche": "os",
+  "nom": "Hamatum",
+  "latin": "Os hamatum",
+  "anglais": "Hamate",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "sorte": "court",
+  "articulations": [
+   "lunatum",
+   "triquetrum",
+   "capitatum",
+   "metacarpiens"
+  ],
+  "noms": [
+   "os crochu"
+  ],
+  "memo": "Reconnaissable à son crochet."
+ },
+ {
+  "id": "metacarpiens",
+  "couche": "os",
+  "nom": "Métacarpiens",
+  "latin": "Ossa metacarpi",
+  "anglais": "Metacarpals",
+  "region": "main",
+  "rang": 1,
+  "pair": true,
+  "sorte": "long",
+  "articulations": [
+   "os-trapeze",
+   "trapezoide",
+   "capitatum",
+   "hamatum",
+   "phalanges-proximales"
+  ],
+  "nombre": 10,
+  "memo": "Cinq par main : les os de la paume."
+ },
+ {
+  "id": "phalanges-proximales",
+  "couche": "os",
+  "nom": "Phalanges proximales",
+  "latin": "Phalanges proximales",
+  "anglais": "Proximal phalanges",
+  "region": "main",
+  "rang": 1,
+  "pair": true,
+  "sorte": "long",
+  "articulations": [
+   "metacarpiens",
+   "phalanges-moyennes",
+   "phalanges-distales"
+  ],
+  "nombre": 10,
+  "memo": "La première phalange de chaque doigt."
+ },
+ {
+  "id": "phalanges-moyennes",
+  "couche": "os",
+  "nom": "Phalanges moyennes",
+  "latin": "Phalanges mediae",
+  "anglais": "Middle phalanges",
+  "region": "main",
+  "rang": 2,
+  "pair": true,
+  "sorte": "long",
+  "articulations": [
+   "phalanges-proximales",
+   "phalanges-distales"
+  ],
+  "nombre": 8,
+  "memo": "Le pouce n'en a pas : il n'a que deux phalanges."
+ },
+ {
+  "id": "phalanges-distales",
+  "couche": "os",
+  "nom": "Phalanges distales",
+  "latin": "Phalanges distales",
+  "anglais": "Distal phalanges",
+  "region": "main",
+  "rang": 1,
+  "pair": true,
+  "sorte": "long",
+  "articulations": [
+   "phalanges-moyennes",
+   "phalanges-proximales"
+  ],
+  "nombre": 10,
+  "memo": "Celles qui portent les ongles."
+ },
+ {
+  "id": "ilium",
+  "couche": "os",
+  "nom": "Ilium",
+  "latin": "Os ilium",
+  "anglais": "Ilium",
+  "region": "bassin",
+  "rang": 1,
+  "pair": true,
+  "sorte": "plat",
+  "articulations": [
+   "sacrum",
+   "ischium",
+   "pubis",
+   "femur"
+  ],
+  "noms": [
+   "os iliaque",
+   "aile iliaque"
+  ],
+  "memo": "L'aile du bassin ; sa crête se sent sous la ceinture."
+ },
+ {
+  "id": "ischium",
+  "couche": "os",
+  "nom": "Ischium",
+  "latin": "Os ischii",
+  "anglais": "Ischium",
+  "region": "bassin",
+  "rang": 2,
+  "pair": true,
+  "sorte": "irregulier",
+  "articulations": [
+   "ilium",
+   "pubis",
+   "femur"
+  ],
+  "memo": "On s'assoit sur ses tubérosités."
+ },
+ {
+  "id": "pubis",
+  "couche": "os",
+  "nom": "Pubis",
+  "latin": "Os pubis",
+  "anglais": "Pubis",
+  "region": "bassin",
+  "rang": 1,
+  "pair": true,
+  "sorte": "irregulier",
+  "articulations": [
+   "ilium",
+   "ischium",
+   "femur"
+  ],
+  "memo": "Les deux pubis se rejoignent en avant à la symphyse pubienne."
+ },
+ {
+  "id": "femur",
+  "couche": "os",
+  "nom": "Fémur",
+  "latin": "Femur",
+  "anglais": "Femur",
+  "region": "cuisse",
+  "rang": 0,
+  "pair": true,
+  "sorte": "long",
+  "articulations": [
+   "ilium",
+   "ischium",
+   "pubis",
+   "patella",
+   "tibia"
+  ],
+  "memo": "L'os le plus long et le plus solide du corps : environ un quart de la taille."
+ },
+ {
+  "id": "patella",
+  "couche": "os",
+  "nom": "Patella",
+  "latin": "Patella",
+  "anglais": "Patella",
+  "region": "cuisse",
+  "rang": 0,
+  "pair": true,
+  "sorte": "sesamoide",
+  "articulations": [
+   "femur"
+  ],
+  "noms": [
+   "rotule"
+  ],
+  "memo": "L'ancienne rotule : le plus gros os sésamoïde, pris dans le tendon du quadriceps."
+ },
+ {
+  "id": "tibia",
+  "couche": "os",
+  "nom": "Tibia",
+  "latin": "Tibia",
+  "anglais": "Tibia",
+  "region": "jambe",
+  "rang": 0,
+  "pair": true,
+  "sorte": "long",
+  "articulations": [
+   "femur",
+   "fibula",
+   "talus"
+  ],
+  "memo": "Sa face médiale est juste sous la peau : c'est l'os qu'on se cogne."
+ },
+ {
+  "id": "fibula",
+  "couche": "os",
+  "nom": "Fibula",
+  "latin": "Fibula",
+  "anglais": "Fibula",
+  "region": "jambe",
+  "rang": 1,
+  "pair": true,
+  "sorte": "long",
+  "articulations": [
+   "tibia",
+   "talus"
+  ],
+  "noms": [
+   "péroné"
+  ],
+  "memo": "L'ancien péroné, grêle et en dehors ; sa pointe fait la malléole latérale."
+ },
+ {
+  "id": "talus",
+  "couche": "os",
+  "nom": "Talus",
+  "latin": "Talus",
+  "anglais": "Talus",
+  "region": "pied",
+  "rang": 2,
+  "pair": true,
+  "sorte": "court",
+  "articulations": [
+   "tibia",
+   "fibula",
+   "calcaneus",
+   "naviculaire"
+  ],
+  "noms": [
+   "astragale"
+  ],
+  "memo": "Il transmet tout le poids du corps au pied ; aucun muscle ne s'y attache."
+ },
+ {
+  "id": "calcaneus",
+  "couche": "os",
+  "nom": "Calcanéus",
+  "latin": "Calcaneus",
+  "anglais": "Calcaneus",
+  "region": "pied",
+  "rang": 1,
+  "pair": true,
+  "sorte": "court",
+  "articulations": [
+   "talus",
+   "cuboide"
+  ],
+  "noms": [
+   "calcanéum",
+   "os du talon"
+  ],
+  "memo": "L'os du talon, le plus gros du pied."
+ },
+ {
+  "id": "naviculaire",
+  "couche": "os",
+  "nom": "Naviculaire",
+  "latin": "Os naviculare",
+  "anglais": "Navicular",
+  "region": "pied",
+  "rang": 3,
+  "pair": true,
+  "sorte": "court",
+  "articulations": [
+   "talus",
+   "cuneiformes",
+   "cuboide"
+  ],
+  "noms": [
+   "scaphoïde tarsien"
+  ],
+  "memo": "En forme de petite barque (navis)."
+ },
+ {
+  "id": "cuboide",
+  "couche": "os",
+  "nom": "Cuboïde",
+  "latin": "Os cuboideum",
+  "anglais": "Cuboid",
+  "region": "pied",
+  "rang": 3,
+  "pair": true,
+  "sorte": "court",
+  "articulations": [
+   "calcaneus",
+   "naviculaire",
+   "cuneiformes",
+   "metatarsiens"
+  ],
+  "memo": "Le cube du bord externe du pied."
+ },
+ {
+  "id": "cuneiformes",
+  "couche": "os",
+  "nom": "Cunéiformes",
+  "latin": "Ossa cuneiformia",
+  "anglais": "Cuneiforms",
+  "region": "pied",
+  "rang": 3,
+  "pair": true,
+  "sorte": "court",
+  "articulations": [
+   "naviculaire",
+   "cuboide",
+   "metatarsiens"
+  ],
+  "nombre": 6,
+  "memo": "Trois par pied (médial, intermédiaire, latéral), taillés en coin."
+ },
+ {
+  "id": "metatarsiens",
+  "couche": "os",
+  "nom": "Métatarsiens",
+  "latin": "Ossa metatarsi",
+  "anglais": "Metatarsals",
+  "region": "pied",
+  "rang": 1,
+  "pair": true,
+  "sorte": "long",
+  "articulations": [
+   "cuneiformes",
+   "cuboide",
+   "phalanges-pied"
+  ],
+  "nombre": 10,
+  "memo": "Cinq par pied : leur tête forme la plante de l'avant-pied."
+ },
+ {
+  "id": "phalanges-pied",
+  "couche": "os",
+  "nom": "Phalanges du pied",
+  "latin": "Phalanges digitorum pedis",
+  "anglais": "Phalanges of the foot",
+  "region": "pied",
+  "rang": 1,
+  "pair": true,
+  "sorte": "long",
+  "articulations": [
+   "metatarsiens"
+  ],
+  "nombre": 28,
+  "noms": [
+   "phalanges des orteils"
+  ],
+  "memo": "Quatorze par pied : deux pour l'hallux, trois pour chacun des autres orteils."
+ },
+ {
+  "id": "occipito-frontal",
+  "couche": "muscle",
+  "nom": "Occipito-frontal",
+  "latin": "M. occipitofrontalis",
+  "anglais": "Occipitofrontalis",
+  "region": "tete",
+  "rang": 1,
+  "pair": true,
+  "origine": "Ventre frontal : peau des sourcils ; ventre occipital : ligne nucale suprême de l'occipital",
+  "terminaison": "Aponévrose épicrânienne",
+  "action": "Lève les sourcils et plisse le front",
+  "innervation": "Nerf facial (VII)",
+  "noms": [
+   "frontal",
+   "muscle frontal",
+   "épicrânien"
+  ],
+  "memo": "Le muscle de la surprise."
+ },
+ {
+  "id": "muscle-temporal",
+  "couche": "muscle",
+  "nom": "Temporal",
+  "latin": "M. temporalis",
+  "anglais": "Temporalis",
+  "region": "tete",
+  "rang": 1,
+  "pair": true,
+  "origine": "Fosse temporale",
+  "terminaison": "Processus coronoïde de la mandibule",
+  "action": "Ferme la mâchoire et tire la mandibule en arrière",
+  "innervation": "Nerf mandibulaire (V3)",
+  "noms": [
+   "muscle temporal"
+  ],
+  "memo": "On le sent durcir sur la tempe en serrant les dents."
+ },
+ {
+  "id": "masseter",
+  "couche": "muscle",
+  "nom": "Masséter",
+  "latin": "M. masseter",
+  "anglais": "Masseter",
+  "region": "tete",
+  "rang": 0,
+  "pair": true,
+  "origine": "Arcade zygomatique",
+  "terminaison": "Angle et face latérale de la branche de la mandibule",
+  "action": "Ferme la mâchoire avec force",
+  "innervation": "Nerf massétérique (V3)",
+  "memo": "Le muscle de la mastication, qu'on sent gonfler à l'angle de la mâchoire.",
+  "anecdote": "Rapporté à son poids, c'est l'un des muscles les plus puissants du corps."
+ },
+ {
+  "id": "orbiculaire-oeil",
+  "couche": "muscle",
+  "nom": "Orbiculaire de l'œil",
+  "latin": "M. orbicularis oculi",
+  "anglais": "Orbicularis oculi",
+  "region": "tete",
+  "rang": 1,
+  "pair": true,
+  "origine": "Rebord médial de l'orbite et ligament palpébral médial",
+  "terminaison": "Peau autour de l'œil : ses fibres font le tour de l'orbite",
+  "action": "Ferme les paupières (cligner, plisser les yeux)",
+  "innervation": "Nerf facial (VII)",
+  "noms": [
+   "orbiculaire des paupières",
+   "orbiculaire de l'oeil"
+  ],
+  "memo": "Un anneau autour de l'œil."
+ },
+ {
+  "id": "orbiculaire-bouche",
+  "couche": "muscle",
+  "nom": "Orbiculaire de la bouche",
+  "latin": "M. orbicularis oris",
+  "anglais": "Orbicularis oris",
+  "region": "tete",
+  "rang": 1,
+  "pair": false,
+  "origine": "Muscles voisins et peau des lèvres",
+  "terminaison": "Peau des lèvres et commissures",
+  "action": "Ferme et avance les lèvres (siffler, embrasser)",
+  "innervation": "Nerf facial (VII)",
+  "noms": [
+   "orbiculaire des lèvres"
+  ],
+  "memo": "Le muscle du baiser."
+ },
+ {
+  "id": "grand-zygomatique",
+  "couche": "muscle",
+  "nom": "Grand zygomatique",
+  "latin": "M. zygomaticus major",
+  "anglais": "Zygomaticus major",
+  "region": "tete",
+  "rang": 1,
+  "pair": true,
+  "origine": "Face latérale de l'os zygomatique",
+  "terminaison": "Commissure des lèvres",
+  "action": "Tire le coin de la bouche en haut et en dehors : le sourire",
+  "innervation": "Nerf facial (VII)",
+  "memo": "Le muscle du sourire."
+ },
+ {
+  "id": "releveur-levre-superieure",
+  "couche": "muscle",
+  "nom": "Releveur de la lèvre supérieure",
+  "latin": "M. levator labii superioris",
+  "anglais": "Levator labii superioris",
+  "region": "tete",
+  "rang": 2,
+  "pair": true,
+  "origine": "Rebord infra-orbitaire du maxillaire",
+  "terminaison": "Peau et muscle de la lèvre supérieure",
+  "action": "Élève la lèvre supérieure",
+  "innervation": "Nerf facial (VII)",
+  "noms": [
+   "releveur de la lèvre"
+  ]
+ },
+ {
+  "id": "abaisseur-angle-bouche",
+  "couche": "muscle",
+  "nom": "Abaisseur de l'angle de la bouche",
+  "latin": "M. depressor anguli oris",
+  "anglais": "Depressor anguli oris",
+  "region": "tete",
+  "rang": 2,
+  "pair": true,
+  "origine": "Bord inférieur de la mandibule",
+  "terminaison": "Commissure des lèvres",
+  "action": "Abaisse le coin de la bouche (la moue triste)",
+  "innervation": "Nerf facial (VII)",
+  "noms": [
+   "triangulaire des lèvres"
+  ],
+  "memo": "Le muscle de la tristesse, opposé du grand zygomatique."
+ },
+ {
+  "id": "buccinateur",
+  "couche": "muscle",
+  "nom": "Buccinateur",
+  "latin": "M. buccinator",
+  "anglais": "Buccinator",
+  "region": "tete",
+  "rang": 2,
+  "pair": true,
+  "origine": "Processus alvéolaires du maxillaire et de la mandibule, raphé ptérygo-mandibulaire",
+  "terminaison": "Commissure des lèvres",
+  "action": "Plaque les joues contre les dents (souffler, mâcher)",
+  "innervation": "Nerf facial (VII)",
+  "memo": "Du latin buccina, la trompette : le muscle des souffleurs."
+ },
+ {
+  "id": "sterno-cleido-mastoidien",
+  "couche": "muscle",
+  "nom": "Sterno-cléido-mastoïdien",
+  "latin": "M. sternocleidomastoideus",
+  "anglais": "Sternocleidomastoid",
+  "region": "cou",
+  "rang": 0,
+  "pair": true,
+  "origine": "Manubrium du sternum (chef sternal) et tiers médial de la clavicule (chef claviculaire)",
+  "terminaison": "Processus mastoïde du temporal et ligne nucale supérieure",
+  "action": "Seul, il incline la tête de son côté et tourne le visage de l'autre ; les deux ensemble fléchissent le cou",
+  "innervation": "Nerf accessoire (XI)",
+  "noms": [
+   "scm",
+   "sternocléidomastoïdien"
+  ],
+  "memo": "Son nom dit ses trois attaches : sternum, clavicule (cléido), mastoïde."
+ },
+ {
+  "id": "trapeze",
+  "couche": "muscle",
+  "nom": "Trapèze",
+  "latin": "M. trapezius",
+  "anglais": "Trapezius",
+  "region": "dos",
+  "rang": 0,
+  "pair": true,
+  "origine": "Occipital, ligament nucal, processus épineux de C7 à T12",
+  "terminaison": "Tiers latéral de la clavicule, acromion, épine de la scapula",
+  "action": "Hausse les épaules, rapproche et abaisse les scapulas, étend la tête",
+  "innervation": "Nerf accessoire (XI)",
+  "noms": [
+   "muscle trapèze"
+  ],
+  "memo": "À eux deux, les trapèzes dessinent un losange : le capuchon du moine."
+ },
+ {
+  "id": "splenius-tete",
+  "couche": "muscle",
+  "nom": "Splénius de la tête",
+  "latin": "M. splenius capitis",
+  "anglais": "Splenius capitis",
+  "region": "cou",
+  "rang": 2,
+  "pair": true,
+  "origine": "Ligament nucal et processus épineux de C7 à T3",
+  "terminaison": "Processus mastoïde et ligne nucale supérieure",
+  "action": "Étend la tête ; seul, la tourne de son côté",
+  "innervation": "Rameaux dorsaux des nerfs cervicaux",
+  "noms": [
+   "splénius"
+  ],
+  "memo": "Splenius, le pansement : il couvre les muscles profonds de la nuque."
+ },
+ {
+  "id": "semi-epineux-tete",
+  "couche": "muscle",
+  "nom": "Semi-épineux de la tête",
+  "latin": "M. semispinalis capitis",
+  "anglais": "Semispinalis capitis",
+  "region": "cou",
+  "rang": 3,
+  "pair": true,
+  "origine": "Processus transverses de C7 à T6",
+  "terminaison": "Occipital, entre les lignes nucales",
+  "action": "Étend la tête",
+  "innervation": "Rameaux dorsaux des nerfs spinaux",
+  "noms": [
+   "grand complexus"
+  ]
+ },
+ {
+  "id": "elevateur-scapula",
+  "couche": "muscle",
+  "nom": "Élévateur de la scapula",
+  "latin": "M. levator scapulae",
+  "anglais": "Levator scapulae",
+  "region": "cou",
+  "rang": 2,
+  "pair": true,
+  "origine": "Processus transverses de C1 à C4",
+  "terminaison": "Angle supérieur de la scapula",
+  "action": "Élève la scapula",
+  "innervation": "Nerf dorsal de la scapula (C5)",
+  "noms": [
+   "angulaire de l'omoplate",
+   "releveur de la scapula"
+  ],
+  "memo": "Souvent noué chez ceux qui portent un sac sur une seule épaule."
+ },
+ {
+  "id": "scalene-anterieur",
+  "couche": "muscle",
+  "nom": "Scalène antérieur",
+  "latin": "M. scalenus anterior",
+  "anglais": "Anterior scalene",
+  "region": "cou",
+  "rang": 3,
+  "pair": true,
+  "origine": "Processus transverses de C3 à C6",
+  "terminaison": "Première côte",
+  "action": "Élève la première côte (inspiration) ; incline le cou",
+  "innervation": "Nerfs cervicaux (C4–C6)",
+  "memo": "Entre lui et le scalène moyen passent l'artère subclavière et le plexus brachial."
+ },
+ {
+  "id": "scalene-moyen",
+  "couche": "muscle",
+  "nom": "Scalène moyen",
+  "latin": "M. scalenus medius",
+  "anglais": "Middle scalene",
+  "region": "cou",
+  "rang": 3,
+  "pair": true,
+  "origine": "Processus transverses de C2 à C7",
+  "terminaison": "Première côte",
+  "action": "Élève la première côte ; incline le cou",
+  "innervation": "Nerfs cervicaux (C3–C8)"
+ },
+ {
+  "id": "sterno-hyoidien",
+  "couche": "muscle",
+  "nom": "Sterno-hyoïdien",
+  "latin": "M. sternohyoideus",
+  "anglais": "Sternohyoid",
+  "region": "cou",
+  "rang": 3,
+  "pair": true,
+  "origine": "Face postérieure du manubrium",
+  "terminaison": "Corps de l'os hyoïde",
+  "action": "Abaisse l'os hyoïde (avaler, parler)",
+  "innervation": "Anse cervicale (C1–C3)"
+ },
+ {
+  "id": "sterno-thyroidien",
+  "couche": "muscle",
+  "nom": "Sterno-thyroïdien",
+  "latin": "M. sternothyroideus",
+  "anglais": "Sternothyroid",
+  "region": "cou",
+  "rang": 3,
+  "pair": true,
+  "origine": "Face postérieure du manubrium",
+  "terminaison": "Cartilage thyroïde",
+  "action": "Abaisse le larynx",
+  "innervation": "Anse cervicale (C1–C3)"
+ },
+ {
+  "id": "omo-hyoidien",
+  "couche": "muscle",
+  "nom": "Omo-hyoïdien",
+  "latin": "M. omohyoideus",
+  "anglais": "Omohyoid",
+  "region": "cou",
+  "rang": 3,
+  "pair": true,
+  "origine": "Bord supérieur de la scapula",
+  "terminaison": "Os hyoïde",
+  "action": "Abaisse l'os hyoïde",
+  "innervation": "Anse cervicale (C1–C3)",
+  "memo": "Deux ventres reliés par un tendon ; « omo » veut dire épaule."
+ },
+ {
+  "id": "digastrique",
+  "couche": "muscle",
+  "nom": "Digastrique",
+  "latin": "M. digastricus",
+  "anglais": "Digastric",
+  "region": "cou",
+  "rang": 3,
+  "pair": true,
+  "origine": "Ventre postérieur : incisure mastoïdienne ; ventre antérieur : mandibule",
+  "terminaison": "Tendon intermédiaire, fixé à l'os hyoïde",
+  "action": "Élève l'os hyoïde et abaisse la mandibule (ouvrir la bouche)",
+  "innervation": "Ventre antérieur : nerf mylo-hyoïdien (V3) ; ventre postérieur : nerf facial (VII)",
+  "memo": "Deux ventres, deux nerfs différents."
+ },
+ {
+  "id": "grand-pectoral",
+  "couche": "muscle",
+  "nom": "Grand pectoral",
+  "latin": "M. pectoralis major",
+  "anglais": "Pectoralis major",
+  "region": "thorax",
+  "rang": 0,
+  "pair": true,
+  "origine": "Moitié médiale de la clavicule, sternum, cartilages costaux 1 à 6",
+  "terminaison": "Lèvre latérale du sillon intertuberculaire de l'humérus",
+  "action": "Rapproche le bras du corps, le tourne en dedans et le porte en avant",
+  "innervation": "Nerfs pectoraux (C5–T1)",
+  "noms": [
+   "pectoral",
+   "pectoraux"
+  ],
+  "memo": "Il forme le pli avant de l'aisselle."
+ },
+ {
+  "id": "petit-pectoral",
+  "couche": "muscle",
+  "nom": "Petit pectoral",
+  "latin": "M. pectoralis minor",
+  "anglais": "Pectoralis minor",
+  "region": "thorax",
+  "rang": 2,
+  "pair": true,
+  "origine": "Côtes 3 à 5",
+  "terminaison": "Processus coracoïde de la scapula",
+  "action": "Abaisse et avance la scapula ; élève les côtes",
+  "innervation": "Nerf pectoral médial (C8–T1)"
+ },
+ {
+  "id": "dentele-anterieur",
+  "couche": "muscle",
+  "nom": "Dentelé antérieur",
+  "latin": "M. serratus anterior",
+  "anglais": "Serratus anterior",
+  "region": "thorax",
+  "rang": 1,
+  "pair": true,
+  "origine": "Faces latérales des côtes 1 à 9, par des digitations",
+  "terminaison": "Bord médial de la scapula",
+  "action": "Avance la scapula et la plaque contre le thorax ; la fait tourner pour lever le bras",
+  "innervation": "Nerf thoracique long (C5–C7)",
+  "noms": [
+   "grand dentelé",
+   "serratus"
+  ],
+  "memo": "Le muscle du boxeur : il pousse le coup de poing.",
+  "anecdote": "Quand il est paralysé, la scapula se décolle du dos : on parle de scapula alata, l'omoplate en aile."
+ },
+ {
+  "id": "droit-abdomen",
+  "couche": "muscle",
+  "nom": "Droit de l'abdomen",
+  "latin": "M. rectus abdominis",
+  "anglais": "Rectus abdominis",
+  "region": "abdomen",
+  "rang": 0,
+  "pair": true,
+  "origine": "Crête et symphyse pubiennes",
+  "terminaison": "Processus xiphoïde et cartilages costaux 5 à 7",
+  "action": "Fléchit le tronc ; comprime l'abdomen",
+  "innervation": "Nerfs intercostaux 7 à 11 et subcostal",
+  "noms": [
+   "grand droit",
+   "grand droit de l'abdomen",
+   "abdominaux"
+  ],
+  "memo": "Ses intersections tendineuses dessinent les « tablettes de chocolat »."
+ },
+ {
+  "id": "oblique-externe",
+  "couche": "muscle",
+  "nom": "Oblique externe",
+  "latin": "M. obliquus externus abdominis",
+  "anglais": "External oblique",
+  "region": "abdomen",
+  "rang": 1,
+  "pair": true,
+  "origine": "Faces externes des côtes 5 à 12",
+  "terminaison": "Ligne blanche, pubis et crête iliaque (par son aponévrose)",
+  "action": "Tourne le tronc vers le côté opposé, l'incline ; comprime l'abdomen",
+  "innervation": "Nerfs intercostaux 7 à 11 et subcostal",
+  "noms": [
+   "grand oblique",
+   "oblique externe de l'abdomen"
+  ],
+  "memo": "Ses fibres vont comme les mains dans les poches : en bas et en avant."
+ },
+ {
+  "id": "oblique-interne",
+  "couche": "muscle",
+  "nom": "Oblique interne",
+  "latin": "M. obliquus internus abdominis",
+  "anglais": "Internal oblique",
+  "region": "abdomen",
+  "rang": 2,
+  "pair": true,
+  "origine": "Fascia thoraco-lombaire, crête iliaque, ligament inguinal",
+  "terminaison": "Côtes 10 à 12, ligne blanche, pubis",
+  "action": "Tourne le tronc de son côté, l'incline ; comprime l'abdomen",
+  "innervation": "Nerfs intercostaux 7 à 12, ilio-hypogastrique, ilio-inguinal",
+  "noms": [
+   "petit oblique"
+  ],
+  "memo": "Ses fibres croisent celles de l'oblique externe à angle droit."
+ },
+ {
+  "id": "transverse-abdomen",
+  "couche": "muscle",
+  "nom": "Transverse de l'abdomen",
+  "latin": "M. transversus abdominis",
+  "anglais": "Transversus abdominis",
+  "region": "abdomen",
+  "rang": 2,
+  "pair": true,
+  "origine": "Cartilages costaux 7 à 12, fascia thoraco-lombaire, crête iliaque",
+  "terminaison": "Ligne blanche et pubis",
+  "action": "Comprime l'abdomen, comme une gaine",
+  "innervation": "Nerfs intercostaux 7 à 12, ilio-hypogastrique, ilio-inguinal",
+  "noms": [
+   "transverse"
+  ],
+  "memo": "Le plus profond des muscles larges : ses fibres font le tour du ventre comme une ceinture."
+ },
+ {
+  "id": "intercostaux",
+  "couche": "muscle",
+  "nom": "Intercostaux",
+  "latin": "Mm. intercostales",
+  "anglais": "Intercostal muscles",
+  "region": "thorax",
+  "rang": 2,
+  "pair": true,
+  "origine": "Bord inférieur de chaque côte",
+  "terminaison": "Bord supérieur de la côte suivante",
+  "action": "Soulèvent ou abaissent les côtes pendant la respiration",
+  "innervation": "Nerfs intercostaux",
+  "nombre": 22,
+  "noms": [
+   "muscles intercostaux"
+  ],
+  "memo": "Trois couches entre deux côtes : externes, internes et intimes."
+ },
+ {
+  "id": "diaphragme",
+  "couche": "muscle",
+  "nom": "Diaphragme",
+  "latin": "Diaphragma",
+  "anglais": "Diaphragm",
+  "region": "thorax",
+  "rang": 0,
+  "pair": false,
+  "origine": "Processus xiphoïde, côtes 7 à 12, vertèbres lombaires (par ses piliers)",
+  "terminaison": "Centre tendineux",
+  "action": "Principal muscle de l'inspiration : il s'abaisse et agrandit le thorax",
+  "innervation": "Nerf phrénique (C3–C5)",
+  "memo": "« C3, C4, C5 : le diaphragme en vie. »",
+  "anecdote": "Le hoquet est une contraction brusque et involontaire du diaphragme."
+ },
+ {
+  "id": "grand-psoas",
+  "couche": "muscle",
+  "nom": "Grand psoas",
+  "latin": "M. psoas major",
+  "anglais": "Psoas major",
+  "region": "abdomen",
+  "rang": 1,
+  "pair": true,
+  "origine": "Corps et processus transverses de T12 à L5",
+  "terminaison": "Petit trochanter du fémur (avec l'iliaque)",
+  "action": "Fléchit la cuisse sur le bassin : le plus puissant fléchisseur de la hanche",
+  "innervation": "Plexus lombaire (L1–L3)",
+  "noms": [
+   "psoas"
+  ],
+  "memo": "Avec l'iliaque, il forme l'ilio-psoas : le muscle qui fait monter le genou.",
+  "anecdote": "Chez l'animal de boucherie, c'est le filet mignon."
+ },
+ {
+  "id": "iliaque",
+  "couche": "muscle",
+  "nom": "Iliaque",
+  "latin": "M. iliacus",
+  "anglais": "Iliacus",
+  "region": "bassin",
+  "rang": 2,
+  "pair": true,
+  "origine": "Fosse iliaque",
+  "terminaison": "Petit trochanter du fémur (avec le psoas)",
+  "action": "Fléchit la cuisse",
+  "innervation": "Nerf fémoral (L2–L4)",
+  "noms": [
+   "muscle iliaque"
+  ]
+ },
+ {
+  "id": "carre-lombes",
+  "couche": "muscle",
+  "nom": "Carré des lombes",
+  "latin": "M. quadratus lumborum",
+  "anglais": "Quadratus lumborum",
+  "region": "dos",
+  "rang": 2,
+  "pair": true,
+  "origine": "Crête iliaque et ligament ilio-lombaire",
+  "terminaison": "12e côte et processus transverses de L1 à L4",
+  "action": "Incline le tronc de son côté ; fixe la 12e côte pendant l'inspiration",
+  "innervation": "Nerf subcostal et rameaux de L1 à L4",
+  "noms": [
+   "carré des lombes"
+  ],
+  "memo": "Souvent en cause dans le lumbago."
+ },
+ {
+  "id": "grand-dorsal",
+  "couche": "muscle",
+  "nom": "Grand dorsal",
+  "latin": "M. latissimus dorsi",
+  "anglais": "Latissimus dorsi",
+  "region": "dos",
+  "rang": 0,
+  "pair": true,
+  "origine": "Processus épineux de T7 à L5 et sacrum (par le fascia thoraco-lombaire), crête iliaque, côtes 9 à 12",
+  "terminaison": "Fond du sillon intertuberculaire de l'humérus",
+  "action": "Tire le bras levé vers le bas et en arrière, le rapproche du corps et le tourne en dedans",
+  "innervation": "Nerf thoraco-dorsal (C6–C8)",
+  "noms": [
+   "dorsaux"
+  ],
+  "memo": "Le muscle du grimpeur et du nageur.",
+  "anecdote": "C'est le muscle le plus large du corps."
+ },
+ {
+  "id": "petit-rhomboide",
+  "couche": "muscle",
+  "nom": "Petit rhomboïde",
+  "latin": "M. rhomboideus minor",
+  "anglais": "Rhomboid minor",
+  "region": "dos",
+  "rang": 2,
+  "pair": true,
+  "origine": "Processus épineux de C7 et T1",
+  "terminaison": "Bord médial de la scapula, à hauteur de l'épine",
+  "action": "Rapproche la scapula de la colonne",
+  "innervation": "Nerf dorsal de la scapula (C5)"
+ },
+ {
+  "id": "grand-rhomboide",
+  "couche": "muscle",
+  "nom": "Grand rhomboïde",
+  "latin": "M. rhomboideus major",
+  "anglais": "Rhomboid major",
+  "region": "dos",
+  "rang": 2,
+  "pair": true,
+  "origine": "Processus épineux de T2 à T5",
+  "terminaison": "Bord médial de la scapula, sous l'épine",
+  "action": "Rapproche la scapula de la colonne et l'élève",
+  "innervation": "Nerf dorsal de la scapula (C5)",
+  "noms": [
+   "rhomboïde",
+   "rhomboïdes"
+  ],
+  "memo": "Il tire les épaules en arrière : le muscle du « tiens-toi droit »."
+ },
+ {
+  "id": "supra-epineux",
+  "couche": "muscle",
+  "nom": "Supra-épineux",
+  "latin": "M. supraspinatus",
+  "anglais": "Supraspinatus",
+  "region": "epaule",
+  "rang": 1,
+  "pair": true,
+  "origine": "Fosse supra-épineuse de la scapula",
+  "terminaison": "Facette supérieure du tubercule majeur de l'humérus",
+  "action": "Démarre l'écartement du bras ; tient la tête humérale (coiffe des rotateurs)",
+  "innervation": "Nerf suprascapulaire (C5–C6)",
+  "noms": [
+   "sus-épineux"
+  ],
+  "memo": "Le tendon le plus souvent abîmé de la coiffe des rotateurs."
+ },
+ {
+  "id": "infra-epineux",
+  "couche": "muscle",
+  "nom": "Infra-épineux",
+  "latin": "M. infraspinatus",
+  "anglais": "Infraspinatus",
+  "region": "epaule",
+  "rang": 1,
+  "pair": true,
+  "origine": "Fosse infra-épineuse de la scapula",
+  "terminaison": "Facette moyenne du tubercule majeur",
+  "action": "Tourne le bras en dehors ; stabilise l'épaule",
+  "innervation": "Nerf suprascapulaire (C5–C6)",
+  "noms": [
+   "sous-épineux"
+  ]
+ },
+ {
+  "id": "petit-rond",
+  "couche": "muscle",
+  "nom": "Petit rond",
+  "latin": "M. teres minor",
+  "anglais": "Teres minor",
+  "region": "epaule",
+  "rang": 2,
+  "pair": true,
+  "origine": "Bord latéral de la scapula",
+  "terminaison": "Facette inférieure du tubercule majeur",
+  "action": "Tourne le bras en dehors",
+  "innervation": "Nerf axillaire (C5–C6)",
+  "memo": "Supra-épineux, infra-épineux, petit rond, subscapulaire : la coiffe des rotateurs."
+ },
+ {
+  "id": "grand-rond",
+  "couche": "muscle",
+  "nom": "Grand rond",
+  "latin": "M. teres major",
+  "anglais": "Teres major",
+  "region": "epaule",
+  "rang": 1,
+  "pair": true,
+  "origine": "Angle inférieur de la scapula",
+  "terminaison": "Lèvre médiale du sillon intertuberculaire",
+  "action": "Rapproche le bras du corps, le tourne en dedans et le porte en arrière",
+  "innervation": "Nerf subscapulaire inférieur (C5–C7)",
+  "memo": "Le petit aide du grand dorsal."
+ },
+ {
+  "id": "subscapulaire",
+  "couche": "muscle",
+  "nom": "Subscapulaire",
+  "latin": "M. subscapularis",
+  "anglais": "Subscapularis",
+  "region": "epaule",
+  "rang": 2,
+  "pair": true,
+  "origine": "Fosse subscapulaire, face avant de la scapula",
+  "terminaison": "Tubercule mineur de l'humérus",
+  "action": "Tourne le bras en dedans ; stabilise l'épaule",
+  "innervation": "Nerfs subscapulaires (C5–C7)",
+  "noms": [
+   "sous-scapulaire"
+  ]
+ },
+ {
+  "id": "epineux",
+  "couche": "muscle",
+  "nom": "Épineux",
+  "latin": "M. spinalis",
+  "anglais": "Spinalis",
+  "region": "dos",
+  "rang": 3,
+  "pair": true,
+  "origine": "Processus épineux des dernières thoraciques et premières lombaires",
+  "terminaison": "Processus épineux des premières thoraciques",
+  "action": "Étend la colonne",
+  "innervation": "Rameaux dorsaux des nerfs spinaux",
+  "memo": "La colonne la plus médiale des érecteurs du rachis."
+ },
+ {
+  "id": "longissimus",
+  "couche": "muscle",
+  "nom": "Longissimus",
+  "latin": "M. longissimus",
+  "anglais": "Longissimus",
+  "region": "dos",
+  "rang": 2,
+  "pair": true,
+  "origine": "Sacrum, crête iliaque, processus transverses lombaires et thoraciques",
+  "terminaison": "Processus transverses thoraciques et cervicaux, côtes, processus mastoïde",
+  "action": "Étend et incline la colonne",
+  "innervation": "Rameaux dorsaux des nerfs spinaux",
+  "noms": [
+   "long dorsal"
+  ],
+  "memo": "La colonne du milieu des érecteurs du rachis, la plus longue."
+ },
+ {
+  "id": "ilio-costal",
+  "couche": "muscle",
+  "nom": "Ilio-costal",
+  "latin": "M. iliocostalis",
+  "anglais": "Iliocostalis",
+  "region": "dos",
+  "rang": 2,
+  "pair": true,
+  "origine": "Sacrum et crête iliaque",
+  "terminaison": "Angles des côtes et processus transverses cervicaux",
+  "action": "Étend et incline la colonne",
+  "innervation": "Rameaux dorsaux des nerfs spinaux",
+  "noms": [
+   "iliocostal"
+  ],
+  "memo": "La colonne latérale des érecteurs du rachis."
+ },
+ {
+  "id": "grand-fessier",
+  "couche": "muscle",
+  "nom": "Grand fessier",
+  "latin": "M. gluteus maximus",
+  "anglais": "Gluteus maximus",
+  "region": "hanche",
+  "rang": 0,
+  "pair": true,
+  "origine": "Face postérieure de l'ilium, sacrum, coccyx",
+  "terminaison": "Tractus ilio-tibial et tubérosité glutéale du fémur",
+  "action": "Étend la cuisse (se relever, monter, courir) et la tourne en dehors",
+  "innervation": "Nerf glutéal inférieur (L5–S2)",
+  "noms": [
+   "fessier",
+   "grand glutéal"
+  ],
+  "memo": "Le muscle le plus lourd du corps.",
+  "anecdote": "Sa taille est propre à l'humain : il nous tient debout et nous fait courir."
+ },
+ {
+  "id": "moyen-fessier",
+  "couche": "muscle",
+  "nom": "Moyen fessier",
+  "latin": "M. gluteus medius",
+  "anglais": "Gluteus medius",
+  "region": "hanche",
+  "rang": 1,
+  "pair": true,
+  "origine": "Face externe de l'ilium",
+  "terminaison": "Grand trochanter du fémur",
+  "action": "Écarte la cuisse ; garde le bassin horizontal quand on tient sur une jambe",
+  "innervation": "Nerf glutéal supérieur (L4–S1)",
+  "noms": [
+   "moyen glutéal"
+  ],
+  "memo": "Quand il est faible, le bassin bascule à chaque pas (signe de Trendelenburg)."
+ },
+ {
+  "id": "petit-fessier",
+  "couche": "muscle",
+  "nom": "Petit fessier",
+  "latin": "M. gluteus minimus",
+  "anglais": "Gluteus minimus",
+  "region": "hanche",
+  "rang": 2,
+  "pair": true,
+  "origine": "Face externe de l'ilium, sous le moyen fessier",
+  "terminaison": "Grand trochanter",
+  "action": "Écarte la cuisse et la tourne en dedans ; stabilise le bassin",
+  "innervation": "Nerf glutéal supérieur (L4–S1)",
+  "noms": [
+   "petit glutéal"
+  ]
+ },
+ {
+  "id": "tenseur-fascia-lata",
+  "couche": "muscle",
+  "nom": "Tenseur du fascia lata",
+  "latin": "M. tensor fasciae latae",
+  "anglais": "Tensor fasciae latae",
+  "region": "hanche",
+  "rang": 2,
+  "pair": true,
+  "origine": "Épine iliaque antéro-supérieure",
+  "terminaison": "Tractus ilio-tibial",
+  "action": "Tend le fascia lata ; fléchit, écarte et tourne la cuisse en dedans",
+  "innervation": "Nerf glutéal supérieur (L4–S1)",
+  "noms": [
+   "tfl"
+  ]
+ },
+ {
+  "id": "piriforme",
+  "couche": "muscle",
+  "nom": "Piriforme",
+  "latin": "M. piriformis",
+  "anglais": "Piriformis",
+  "region": "hanche",
+  "rang": 3,
+  "pair": true,
+  "origine": "Face antérieure du sacrum",
+  "terminaison": "Bord supérieur du grand trochanter",
+  "action": "Tourne la cuisse en dehors",
+  "innervation": "Nerf du piriforme (S1–S2)",
+  "noms": [
+   "pyramidal du bassin",
+   "pyramidal"
+  ],
+  "memo": "Le repère de la fesse : le nerf sciatique sort juste sous lui."
+ },
+ {
+  "id": "deltoide",
+  "couche": "muscle",
+  "nom": "Deltoïde",
+  "latin": "M. deltoideus",
+  "anglais": "Deltoid",
+  "region": "epaule",
+  "rang": 0,
+  "pair": true,
+  "origine": "Tiers latéral de la clavicule, acromion, épine de la scapula",
+  "terminaison": "Tubérosité deltoïdienne de l'humérus",
+  "action": "Écarte le bras ; ses fibres avant le portent en avant, ses fibres arrière en arrière",
+  "innervation": "Nerf axillaire (C5–C6)",
+  "memo": "Triangulaire comme la lettre grecque delta (Δ)."
+ },
+ {
+  "id": "biceps-brachial",
+  "couche": "muscle",
+  "nom": "Biceps brachial",
+  "latin": "M. biceps brachii",
+  "anglais": "Biceps brachii",
+  "region": "bras",
+  "rang": 0,
+  "pair": true,
+  "origine": "Chef long : tubercule supra-glénoïdal ; chef court : processus coracoïde",
+  "terminaison": "Tubérosité du radius et aponévrose bicipitale",
+  "action": "Fléchit le coude et tourne la paume vers le haut (supination)",
+  "innervation": "Nerf musculo-cutané (C5–C6)",
+  "noms": [
+   "biceps"
+  ],
+  "memo": "Deux têtes. C'est lui qui tourne le tire-bouchon (supination)."
+ },
+ {
+  "id": "brachial",
+  "couche": "muscle",
+  "nom": "Brachial",
+  "latin": "M. brachialis",
+  "anglais": "Brachialis",
+  "region": "bras",
+  "rang": 1,
+  "pair": true,
+  "origine": "Moitié inférieure de la face antérieure de l'humérus",
+  "terminaison": "Tubérosité de l'ulna",
+  "action": "Fléchit le coude, quelle que soit la position de la main",
+  "innervation": "Nerf musculo-cutané (C5–C6)",
+  "noms": [
+   "brachial antérieur"
+  ],
+  "memo": "Le vrai fléchisseur du coude, caché sous le biceps."
+ },
+ {
+  "id": "coraco-brachial",
+  "couche": "muscle",
+  "nom": "Coraco-brachial",
+  "latin": "M. coracobrachialis",
+  "anglais": "Coracobrachialis",
+  "region": "bras",
+  "rang": 2,
+  "pair": true,
+  "origine": "Processus coracoïde",
+  "terminaison": "Face médiale de l'humérus, à mi-hauteur",
+  "action": "Porte le bras en avant et le rapproche du corps",
+  "innervation": "Nerf musculo-cutané (C5–C7)",
+  "noms": [
+   "coracobrachial"
+  ]
+ },
+ {
+  "id": "triceps-brachial",
+  "couche": "muscle",
+  "nom": "Triceps brachial",
+  "latin": "M. triceps brachii",
+  "anglais": "Triceps brachii",
+  "region": "bras",
+  "rang": 0,
+  "pair": true,
+  "origine": "Chef long : tubercule infra-glénoïdal ; chefs latéral et médial : face postérieure de l'humérus",
+  "terminaison": "Olécrâne de l'ulna",
+  "action": "Étend le coude",
+  "innervation": "Nerf radial (C6–C8)",
+  "noms": [
+   "triceps"
+  ],
+  "memo": "Trois têtes ; il fait les deux tiers du volume du bras."
+ },
+ {
+  "id": "ancone",
+  "couche": "muscle",
+  "nom": "Anconé",
+  "latin": "M. anconeus",
+  "anglais": "Anconeus",
+  "region": "avant-bras",
+  "rang": 3,
+  "pair": true,
+  "origine": "Épicondyle latéral de l'humérus",
+  "terminaison": "Olécrâne et face postérieure de l'ulna",
+  "action": "Aide le triceps à étendre le coude",
+  "innervation": "Nerf radial (C7–C8)"
+ },
+ {
+  "id": "brachio-radial",
+  "couche": "muscle",
+  "nom": "Brachio-radial",
+  "latin": "M. brachioradialis",
+  "anglais": "Brachioradialis",
+  "region": "avant-bras",
+  "rang": 1,
+  "pair": true,
+  "origine": "Bord latéral de l'humérus, au-dessus de l'épicondyle",
+  "terminaison": "Processus styloïde du radius",
+  "action": "Fléchit le coude, main de profil (le geste de boire un verre)",
+  "innervation": "Nerf radial (C5–C6)",
+  "noms": [
+   "long supinateur",
+   "brachioradial"
+  ],
+  "memo": "Le muscle du verre qu'on porte à la bouche."
+ },
+ {
+  "id": "long-extenseur-radial-carpe",
+  "couche": "muscle",
+  "nom": "Long extenseur radial du carpe",
+  "latin": "M. extensor carpi radialis longus",
+  "anglais": "Extensor carpi radialis longus",
+  "region": "avant-bras",
+  "rang": 2,
+  "pair": true,
+  "origine": "Crête supracondylaire latérale de l'humérus",
+  "terminaison": "Base du 2e métacarpien (dos)",
+  "action": "Étend le poignet et l'incline côté pouce",
+  "innervation": "Nerf radial (C6–C7)",
+  "noms": [
+   "premier radial",
+   "long extenseur radial"
+  ]
+ },
+ {
+  "id": "court-extenseur-radial-carpe",
+  "couche": "muscle",
+  "nom": "Court extenseur radial du carpe",
+  "latin": "M. extensor carpi radialis brevis",
+  "anglais": "Extensor carpi radialis brevis",
+  "region": "avant-bras",
+  "rang": 3,
+  "pair": true,
+  "origine": "Épicondyle latéral de l'humérus",
+  "terminaison": "Base du 3e métacarpien",
+  "action": "Étend le poignet",
+  "innervation": "Nerf radial (branche profonde)",
+  "noms": [
+   "second radial",
+   "court extenseur radial"
+  ],
+  "memo": "C'est lui qui souffre dans le « tennis-elbow »."
+ },
+ {
+  "id": "extenseur-doigts",
+  "couche": "muscle",
+  "nom": "Extenseur des doigts",
+  "latin": "M. extensor digitorum",
+  "anglais": "Extensor digitorum",
+  "region": "avant-bras",
+  "rang": 1,
+  "pair": true,
+  "origine": "Épicondyle latéral de l'humérus",
+  "terminaison": "Dos des phalanges moyennes et distales des doigts 2 à 5",
+  "action": "Étend les doigts et le poignet",
+  "innervation": "Nerf interosseux postérieur (radial)",
+  "noms": [
+   "extenseur commun des doigts"
+  ]
+ },
+ {
+  "id": "extenseur-ulnaire-carpe",
+  "couche": "muscle",
+  "nom": "Extenseur ulnaire du carpe",
+  "latin": "M. extensor carpi ulnaris",
+  "anglais": "Extensor carpi ulnaris",
+  "region": "avant-bras",
+  "rang": 2,
+  "pair": true,
+  "origine": "Épicondyle latéral et bord postérieur de l'ulna",
+  "terminaison": "Base du 5e métacarpien",
+  "action": "Étend le poignet et l'incline côté petit doigt",
+  "innervation": "Nerf interosseux postérieur (radial)",
+  "noms": [
+   "cubital postérieur"
+  ]
+ },
+ {
+  "id": "long-abducteur-pouce",
+  "couche": "muscle",
+  "nom": "Long abducteur du pouce",
+  "latin": "M. abductor pollicis longus",
+  "anglais": "Abductor pollicis longus",
+  "region": "avant-bras",
+  "rang": 3,
+  "pair": true,
+  "origine": "Faces postérieures du radius et de l'ulna",
+  "terminaison": "Base du 1er métacarpien",
+  "action": "Écarte le pouce",
+  "innervation": "Nerf interosseux postérieur (radial)",
+  "memo": "Son tendon borde la tabatière anatomique."
+ },
+ {
+  "id": "court-extenseur-pouce",
+  "couche": "muscle",
+  "nom": "Court extenseur du pouce",
+  "latin": "M. extensor pollicis brevis",
+  "anglais": "Extensor pollicis brevis",
+  "region": "avant-bras",
+  "rang": 3,
+  "pair": true,
+  "origine": "Face postérieure du radius",
+  "terminaison": "Base de la phalange proximale du pouce",
+  "action": "Étend le pouce",
+  "innervation": "Nerf interosseux postérieur (radial)"
+ },
+ {
+  "id": "supinateur",
+  "couche": "muscle",
+  "nom": "Supinateur",
+  "latin": "M. supinator",
+  "anglais": "Supinator",
+  "region": "avant-bras",
+  "rang": 3,
+  "pair": true,
+  "origine": "Épicondyle latéral et crête du supinateur de l'ulna",
+  "terminaison": "Tiers supérieur du radius",
+  "action": "Tourne la paume vers le haut (supination)",
+  "innervation": "Nerf radial (branche profonde)",
+  "noms": [
+   "court supinateur"
+  ]
+ },
+ {
+  "id": "rond-pronateur",
+  "couche": "muscle",
+  "nom": "Rond pronateur",
+  "latin": "M. pronator teres",
+  "anglais": "Pronator teres",
+  "region": "avant-bras",
+  "rang": 2,
+  "pair": true,
+  "origine": "Épicondyle médial de l'humérus et processus coronoïde de l'ulna",
+  "terminaison": "Face latérale du radius, à mi-hauteur",
+  "action": "Tourne la paume vers le bas (pronation) ; fléchit le coude",
+  "innervation": "Nerf médian (C6–C7)"
+ },
+ {
+  "id": "flechisseur-radial-carpe",
+  "couche": "muscle",
+  "nom": "Fléchisseur radial du carpe",
+  "latin": "M. flexor carpi radialis",
+  "anglais": "Flexor carpi radialis",
+  "region": "avant-bras",
+  "rang": 2,
+  "pair": true,
+  "origine": "Épicondyle médial de l'humérus",
+  "terminaison": "Base du 2e métacarpien (paume)",
+  "action": "Fléchit le poignet et l'incline côté pouce",
+  "innervation": "Nerf médian (C6–C7)",
+  "noms": [
+   "grand palmaire"
+  ]
+ },
+ {
+  "id": "long-palmaire",
+  "couche": "muscle",
+  "nom": "Long palmaire",
+  "latin": "M. palmaris longus",
+  "anglais": "Palmaris longus",
+  "region": "avant-bras",
+  "rang": 2,
+  "pair": true,
+  "origine": "Épicondyle médial de l'humérus",
+  "terminaison": "Aponévrose palmaire",
+  "action": "Fléchit le poignet ; tend l'aponévrose palmaire",
+  "innervation": "Nerf médian (C7–C8)",
+  "noms": [
+   "petit palmaire"
+  ],
+  "anecdote": "Il manque chez environ une personne sur six : pincez le pouce et le petit doigt en pliant le poignet pour voir s'il est là."
+ },
+ {
+  "id": "flechisseur-ulnaire-carpe",
+  "couche": "muscle",
+  "nom": "Fléchisseur ulnaire du carpe",
+  "latin": "M. flexor carpi ulnaris",
+  "anglais": "Flexor carpi ulnaris",
+  "region": "avant-bras",
+  "rang": 2,
+  "pair": true,
+  "origine": "Épicondyle médial et olécrâne",
+  "terminaison": "Pisiforme, hamatum et base du 5e métacarpien",
+  "action": "Fléchit le poignet et l'incline côté petit doigt",
+  "innervation": "Nerf ulnaire (C7–T1)",
+  "noms": [
+   "cubital antérieur"
+  ]
+ },
+ {
+  "id": "flechisseur-superficiel-doigts",
+  "couche": "muscle",
+  "nom": "Fléchisseur superficiel des doigts",
+  "latin": "M. flexor digitorum superficialis",
+  "anglais": "Flexor digitorum superficialis",
+  "region": "avant-bras",
+  "rang": 2,
+  "pair": true,
+  "origine": "Épicondyle médial, processus coronoïde de l'ulna, radius",
+  "terminaison": "Phalanges moyennes des doigts 2 à 5",
+  "action": "Fléchit les doigts et le poignet",
+  "innervation": "Nerf médian (C7–T1)",
+  "noms": [
+   "fléchisseur commun superficiel des doigts"
+  ]
+ },
+ {
+  "id": "flechisseur-profond-doigts",
+  "couche": "muscle",
+  "nom": "Fléchisseur profond des doigts",
+  "latin": "M. flexor digitorum profundus",
+  "anglais": "Flexor digitorum profundus",
+  "region": "avant-bras",
+  "rang": 3,
+  "pair": true,
+  "origine": "Faces antérieure et médiale de l'ulna, membrane interosseuse",
+  "terminaison": "Phalanges distales des doigts 2 à 5",
+  "action": "Fléchit le bout des doigts (le seul à le faire)",
+  "innervation": "Nerfs médian (doigts 2-3) et ulnaire (doigts 4-5)",
+  "noms": [
+   "fléchisseur commun profond des doigts"
+  ],
+  "memo": "Ses tendons traversent ceux du fléchisseur superficiel par une boutonnière."
+ },
+ {
+  "id": "long-flechisseur-pouce",
+  "couche": "muscle",
+  "nom": "Long fléchisseur du pouce",
+  "latin": "M. flexor pollicis longus",
+  "anglais": "Flexor pollicis longus",
+  "region": "avant-bras",
+  "rang": 3,
+  "pair": true,
+  "origine": "Face antérieure du radius",
+  "terminaison": "Phalange distale du pouce",
+  "action": "Fléchit le bout du pouce",
+  "innervation": "Nerf interosseux antérieur (médian)",
+  "noms": [
+   "long fléchisseur propre du pouce"
+  ]
+ },
+ {
+  "id": "carre-pronateur",
+  "couche": "muscle",
+  "nom": "Carré pronateur",
+  "latin": "M. pronator quadratus",
+  "anglais": "Pronator quadratus",
+  "region": "avant-bras",
+  "rang": 3,
+  "pair": true,
+  "origine": "Quart inférieur de l'ulna, face antérieure",
+  "terminaison": "Quart inférieur du radius",
+  "action": "Tourne la paume vers le bas : le principal pronateur",
+  "innervation": "Nerf interosseux antérieur (médian)"
+ },
+ {
+  "id": "court-abducteur-pouce",
+  "couche": "muscle",
+  "nom": "Court abducteur du pouce",
+  "latin": "M. abductor pollicis brevis",
+  "anglais": "Abductor pollicis brevis",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "origine": "Rétinaculum des fléchisseurs, scaphoïde, trapèze",
+  "terminaison": "Base de la phalange proximale du pouce",
+  "action": "Écarte le pouce de la paume",
+  "innervation": "Nerf médian (branche thénarienne)",
+  "memo": "Le plus superficiel de l'éminence thénar."
+ },
+ {
+  "id": "court-flechisseur-pouce",
+  "couche": "muscle",
+  "nom": "Court fléchisseur du pouce",
+  "latin": "M. flexor pollicis brevis",
+  "anglais": "Flexor pollicis brevis",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "origine": "Rétinaculum des fléchisseurs et trapèze",
+  "terminaison": "Base de la phalange proximale du pouce",
+  "action": "Fléchit le pouce",
+  "innervation": "Nerf médian (et ulnaire pour le chef profond)"
+ },
+ {
+  "id": "opposant-pouce",
+  "couche": "muscle",
+  "nom": "Opposant du pouce",
+  "latin": "M. opponens pollicis",
+  "anglais": "Opponens pollicis",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "origine": "Rétinaculum des fléchisseurs et trapèze",
+  "terminaison": "Bord latéral du 1er métacarpien",
+  "action": "Oppose le pouce aux autres doigts (la pince)",
+  "innervation": "Nerf médian (C8–T1)",
+  "anecdote": "L'opposition du pouce est l'un des gestes qui ont fait la main humaine."
+ },
+ {
+  "id": "adducteur-pouce",
+  "couche": "muscle",
+  "nom": "Adducteur du pouce",
+  "latin": "M. adductor pollicis",
+  "anglais": "Adductor pollicis",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "origine": "Capitatum et 2e, 3e métacarpiens",
+  "terminaison": "Base de la phalange proximale du pouce",
+  "action": "Rapproche le pouce de la paume (tenir une clé)",
+  "innervation": "Nerf ulnaire (branche profonde)"
+ },
+ {
+  "id": "abducteur-petit-doigt",
+  "couche": "muscle",
+  "nom": "Abducteur du petit doigt",
+  "latin": "M. abductor digiti minimi",
+  "anglais": "Abductor digiti minimi",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "origine": "Pisiforme",
+  "terminaison": "Base de la phalange proximale du petit doigt",
+  "action": "Écarte le petit doigt",
+  "innervation": "Nerf ulnaire (C8–T1)",
+  "memo": "Le plus superficiel de l'éminence hypothénar."
+ },
+ {
+  "id": "interosseux-dorsaux",
+  "couche": "muscle",
+  "nom": "Interosseux dorsaux",
+  "latin": "Mm. interossei dorsales",
+  "anglais": "Dorsal interossei",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "origine": "Faces des métacarpiens voisins (deux chefs chacun)",
+  "terminaison": "Bases des phalanges proximales et appareil extenseur",
+  "action": "Écartent les doigts",
+  "innervation": "Nerf ulnaire (C8–T1)",
+  "nombre": 8,
+  "noms": [
+   "interosseux"
+  ],
+  "memo": "Les dorsaux écartent, les palmaires rapprochent."
+ },
+ {
+  "id": "droit-femoral",
+  "couche": "muscle",
+  "nom": "Droit fémoral",
+  "latin": "M. rectus femoris",
+  "anglais": "Rectus femoris",
+  "region": "cuisse",
+  "rang": 1,
+  "pair": true,
+  "origine": "Épine iliaque antéro-inférieure et sourcil de l'acétabulum",
+  "terminaison": "Patella puis tubérosité tibiale (tendon quadricipital, ligament patellaire)",
+  "action": "Étend le genou ; fléchit la hanche",
+  "innervation": "Nerf fémoral (L2–L4)",
+  "noms": [
+   "droit antérieur",
+   "droit antérieur de la cuisse"
+  ],
+  "memo": "Le seul chef du quadriceps qui croise la hanche : le muscle du tir au but."
+ },
+ {
+  "id": "vaste-lateral",
+  "couche": "muscle",
+  "nom": "Vaste latéral",
+  "latin": "M. vastus lateralis",
+  "anglais": "Vastus lateralis",
+  "region": "cuisse",
+  "rang": 1,
+  "pair": true,
+  "origine": "Grand trochanter et ligne âpre (lèvre latérale)",
+  "terminaison": "Patella et tubérosité tibiale (tendon quadricipital)",
+  "action": "Étend le genou",
+  "innervation": "Nerf fémoral (L2–L4)",
+  "noms": [
+   "vaste externe"
+  ],
+  "memo": "Le plus gros des quatre chefs du quadriceps."
+ },
+ {
+  "id": "vaste-medial",
+  "couche": "muscle",
+  "nom": "Vaste médial",
+  "latin": "M. vastus medialis",
+  "anglais": "Vastus medialis",
+  "region": "cuisse",
+  "rang": 1,
+  "pair": true,
+  "origine": "Ligne âpre (lèvre médiale)",
+  "terminaison": "Patella et tubérosité tibiale",
+  "action": "Étend le genou ; stabilise la patella",
+  "innervation": "Nerf fémoral (L2–L4)",
+  "noms": [
+   "vaste interne"
+  ],
+  "memo": "La « goutte d'eau » au-dessus du genou, en dedans."
+ },
+ {
+  "id": "vaste-intermediaire",
+  "couche": "muscle",
+  "nom": "Vaste intermédiaire",
+  "latin": "M. vastus intermedius",
+  "anglais": "Vastus intermedius",
+  "region": "cuisse",
+  "rang": 2,
+  "pair": true,
+  "origine": "Faces antérieure et latérale du fémur",
+  "terminaison": "Patella et tubérosité tibiale",
+  "action": "Étend le genou",
+  "innervation": "Nerf fémoral (L2–L4)",
+  "noms": [
+   "crural"
+  ],
+  "memo": "Caché sous le droit fémoral."
+ },
+ {
+  "id": "sartorius",
+  "couche": "muscle",
+  "nom": "Sartorius",
+  "latin": "M. sartorius",
+  "anglais": "Sartorius",
+  "region": "cuisse",
+  "rang": 1,
+  "pair": true,
+  "origine": "Épine iliaque antéro-supérieure",
+  "terminaison": "Face médiale du tibia (patte d'oie)",
+  "action": "Fléchit la hanche et le genou, écarte la cuisse et la tourne en dehors",
+  "innervation": "Nerf fémoral (L2–L3)",
+  "noms": [
+   "couturier"
+  ],
+  "memo": "Le plus long muscle du corps.",
+  "anecdote": "Il doit son nom au tailleur (sartor), assis en tailleur, justement."
+ },
+ {
+  "id": "gracile",
+  "couche": "muscle",
+  "nom": "Gracile",
+  "latin": "M. gracilis",
+  "anglais": "Gracilis",
+  "region": "cuisse",
+  "rang": 2,
+  "pair": true,
+  "origine": "Corps et branche inférieure du pubis",
+  "terminaison": "Face médiale du tibia (patte d'oie)",
+  "action": "Rapproche la cuisse ; fléchit le genou",
+  "innervation": "Nerf obturateur (L2–L3)",
+  "noms": [
+   "droit interne"
+  ]
+ },
+ {
+  "id": "pectine",
+  "couche": "muscle",
+  "nom": "Pectiné",
+  "latin": "M. pectineus",
+  "anglais": "Pectineus",
+  "region": "cuisse",
+  "rang": 3,
+  "pair": true,
+  "origine": "Ligne pectinée du pubis",
+  "terminaison": "Ligne pectinée du fémur, sous le petit trochanter",
+  "action": "Fléchit et rapproche la cuisse",
+  "innervation": "Nerf fémoral (et parfois obturateur)"
+ },
+ {
+  "id": "long-adducteur",
+  "couche": "muscle",
+  "nom": "Long adducteur",
+  "latin": "M. adductor longus",
+  "anglais": "Adductor longus",
+  "region": "cuisse",
+  "rang": 1,
+  "pair": true,
+  "origine": "Corps du pubis",
+  "terminaison": "Tiers moyen de la ligne âpre du fémur",
+  "action": "Rapproche la cuisse (serrer les genoux)",
+  "innervation": "Nerf obturateur (L2–L4)",
+  "noms": [
+   "moyen adducteur",
+   "adducteurs"
+  ],
+  "memo": "Il borde en dedans le triangle fémoral."
+ },
+ {
+  "id": "court-adducteur",
+  "couche": "muscle",
+  "nom": "Court adducteur",
+  "latin": "M. adductor brevis",
+  "anglais": "Adductor brevis",
+  "region": "cuisse",
+  "rang": 3,
+  "pair": true,
+  "origine": "Corps et branche inférieure du pubis",
+  "terminaison": "Partie haute de la ligne âpre",
+  "action": "Rapproche la cuisse",
+  "innervation": "Nerf obturateur (L2–L4)",
+  "noms": [
+   "petit adducteur"
+  ]
+ },
+ {
+  "id": "grand-adducteur",
+  "couche": "muscle",
+  "nom": "Grand adducteur",
+  "latin": "M. adductor magnus",
+  "anglais": "Adductor magnus",
+  "region": "cuisse",
+  "rang": 2,
+  "pair": true,
+  "origine": "Branche ischio-pubienne et tubérosité ischiatique",
+  "terminaison": "Ligne âpre et tubercule de l'adducteur du fémur",
+  "action": "Rapproche la cuisse ; sa partie ischiatique l'étend",
+  "innervation": "Nerfs obturateur et sciatique (L2–L4)",
+  "memo": "Le plus gros des adducteurs, innervé par deux nerfs."
+ },
+ {
+  "id": "biceps-femoral",
+  "couche": "muscle",
+  "nom": "Biceps fémoral",
+  "latin": "M. biceps femoris",
+  "anglais": "Biceps femoris",
+  "region": "cuisse",
+  "rang": 1,
+  "pair": true,
+  "origine": "Chef long : tubérosité ischiatique ; chef court : ligne âpre du fémur",
+  "terminaison": "Tête de la fibula",
+  "action": "Fléchit le genou ; le chef long étend la hanche",
+  "innervation": "Nerf sciatique (L5–S2)",
+  "noms": [
+   "biceps crural"
+  ],
+  "memo": "L'ischio-jambier du dehors."
+ },
+ {
+  "id": "semi-tendineux",
+  "couche": "muscle",
+  "nom": "Semi-tendineux",
+  "latin": "M. semitendinosus",
+  "anglais": "Semitendinosus",
+  "region": "cuisse",
+  "rang": 1,
+  "pair": true,
+  "origine": "Tubérosité ischiatique",
+  "terminaison": "Face médiale du tibia (patte d'oie)",
+  "action": "Fléchit le genou ; étend la hanche",
+  "innervation": "Nerf sciatique (L5–S2)",
+  "noms": [
+   "demi-tendineux"
+  ],
+  "memo": "Sa moitié basse est un long tendon : d'où son nom."
+ },
+ {
+  "id": "semi-membraneux",
+  "couche": "muscle",
+  "nom": "Semi-membraneux",
+  "latin": "M. semimembranosus",
+  "anglais": "Semimembranosus",
+  "region": "cuisse",
+  "rang": 2,
+  "pair": true,
+  "origine": "Tubérosité ischiatique",
+  "terminaison": "Condyle médial du tibia, en arrière",
+  "action": "Fléchit le genou ; étend la hanche",
+  "innervation": "Nerf sciatique (L5–S2)",
+  "noms": [
+   "demi-membraneux"
+  ],
+  "memo": "Sa moitié haute est une lame tendineuse : d'où son nom."
+ },
+ {
+  "id": "gastrocnemien",
+  "couche": "muscle",
+  "nom": "Gastrocnémien",
+  "latin": "M. gastrocnemius",
+  "anglais": "Gastrocnemius",
+  "region": "jambe",
+  "rang": 0,
+  "pair": true,
+  "origine": "Condyles médial et latéral du fémur (deux chefs)",
+  "terminaison": "Tubérosité du calcanéus (tendon calcanéen)",
+  "action": "Fléchit la plante du pied (se hisser sur la pointe des pieds) ; fléchit le genou",
+  "innervation": "Nerf tibial (S1–S2)",
+  "noms": [
+   "jumeaux",
+   "jumeaux de la jambe",
+   "mollet"
+  ],
+  "memo": "Les « jumeaux » qui dessinent le mollet."
+ },
+ {
+  "id": "soleaire",
+  "couche": "muscle",
+  "nom": "Soléaire",
+  "latin": "M. soleus",
+  "anglais": "Soleus",
+  "region": "jambe",
+  "rang": 1,
+  "pair": true,
+  "origine": "Tête de la fibula et ligne du soléaire du tibia",
+  "terminaison": "Tubérosité du calcanéus (tendon calcanéen)",
+  "action": "Fléchit la plante du pied ; tient l'équilibre debout",
+  "innervation": "Nerf tibial (S1–S2)",
+  "memo": "En forme de semelle (solea).",
+  "anecdote": "On l'appelle le deuxième cœur : en se contractant, il fait remonter le sang des jambes."
+ },
+ {
+  "id": "poplite",
+  "couche": "muscle",
+  "nom": "Poplité",
+  "latin": "M. popliteus",
+  "anglais": "Popliteus",
+  "region": "jambe",
+  "rang": 3,
+  "pair": true,
+  "origine": "Condyle latéral du fémur",
+  "terminaison": "Face postérieure du tibia, au-dessus de la ligne du soléaire",
+  "action": "Déverrouille le genou tendu",
+  "innervation": "Nerf tibial (L4–S1)",
+  "memo": "La clé qui déverrouille le genou."
+ },
+ {
+  "id": "tibial-posterieur",
+  "couche": "muscle",
+  "nom": "Tibial postérieur",
+  "latin": "M. tibialis posterior",
+  "anglais": "Tibialis posterior",
+  "region": "jambe",
+  "rang": 3,
+  "pair": true,
+  "origine": "Membrane interosseuse, tibia et fibula",
+  "terminaison": "Naviculaire, cunéiformes, bases des métatarsiens 2 à 4",
+  "action": "Fléchit la plante, tourne la plante en dedans ; soutient la voûte plantaire",
+  "innervation": "Nerf tibial (L4–L5)",
+  "noms": [
+   "jambier postérieur"
+  ]
+ },
+ {
+  "id": "long-flechisseur-orteils",
+  "couche": "muscle",
+  "nom": "Long fléchisseur des orteils",
+  "latin": "M. flexor digitorum longus",
+  "anglais": "Flexor digitorum longus",
+  "region": "jambe",
+  "rang": 3,
+  "pair": true,
+  "origine": "Face postérieure du tibia",
+  "terminaison": "Phalanges distales des orteils 2 à 5",
+  "action": "Fléchit les orteils et la plante du pied",
+  "innervation": "Nerf tibial (S2–S3)",
+  "noms": [
+   "long fléchisseur commun des orteils"
+  ]
+ },
+ {
+  "id": "long-flechisseur-hallux",
+  "couche": "muscle",
+  "nom": "Long fléchisseur de l'hallux",
+  "latin": "M. flexor hallucis longus",
+  "anglais": "Flexor hallucis longus",
+  "region": "jambe",
+  "rang": 3,
+  "pair": true,
+  "origine": "Face postérieure de la fibula",
+  "terminaison": "Phalange distale de l'hallux",
+  "action": "Fléchit le gros orteil : la poussée du pas",
+  "innervation": "Nerf tibial (S2–S3)",
+  "noms": [
+   "long fléchisseur propre du gros orteil"
+  ]
+ },
+ {
+  "id": "tibial-anterieur",
+  "couche": "muscle",
+  "nom": "Tibial antérieur",
+  "latin": "M. tibialis anterior",
+  "anglais": "Tibialis anterior",
+  "region": "jambe",
+  "rang": 1,
+  "pair": true,
+  "origine": "Condyle latéral et face latérale du tibia",
+  "terminaison": "Cunéiforme médial et base du 1er métatarsien",
+  "action": "Relève le pied (flexion dorsale) et tourne la plante en dedans",
+  "innervation": "Nerf fibulaire profond (L4–L5)",
+  "noms": [
+   "jambier antérieur"
+  ],
+  "memo": "S'il est paralysé, le pied tombe et accroche le sol (le steppage)."
+ },
+ {
+  "id": "long-extenseur-orteils",
+  "couche": "muscle",
+  "nom": "Long extenseur des orteils",
+  "latin": "M. extensor digitorum longus",
+  "anglais": "Extensor digitorum longus",
+  "region": "jambe",
+  "rang": 2,
+  "pair": true,
+  "origine": "Condyle latéral du tibia, fibula, membrane interosseuse",
+  "terminaison": "Dos des orteils 2 à 5",
+  "action": "Relève les orteils et le pied",
+  "innervation": "Nerf fibulaire profond (L5–S1)",
+  "noms": [
+   "extenseur commun des orteils"
+  ]
+ },
+ {
+  "id": "long-extenseur-hallux",
+  "couche": "muscle",
+  "nom": "Long extenseur de l'hallux",
+  "latin": "M. extensor hallucis longus",
+  "anglais": "Extensor hallucis longus",
+  "region": "jambe",
+  "rang": 3,
+  "pair": true,
+  "origine": "Face médiale de la fibula",
+  "terminaison": "Phalange distale de l'hallux",
+  "action": "Relève le gros orteil et le pied",
+  "innervation": "Nerf fibulaire profond (L5)",
+  "noms": [
+   "extenseur propre du gros orteil"
+  ]
+ },
+ {
+  "id": "long-fibulaire",
+  "couche": "muscle",
+  "nom": "Long fibulaire",
+  "latin": "M. fibularis longus",
+  "anglais": "Fibularis longus",
+  "region": "jambe",
+  "rang": 2,
+  "pair": true,
+  "origine": "Tête et face latérale de la fibula",
+  "terminaison": "Cunéiforme médial et base du 1er métatarsien, par la plante",
+  "action": "Tourne la plante en dehors et la fléchit ; soutient la voûte",
+  "innervation": "Nerf fibulaire superficiel (L5–S1)",
+  "noms": [
+   "long péronier",
+   "long péronier latéral"
+  ],
+  "memo": "Son tendon traverse toute la plante du pied."
+ },
+ {
+  "id": "court-fibulaire",
+  "couche": "muscle",
+  "nom": "Court fibulaire",
+  "latin": "M. fibularis brevis",
+  "anglais": "Fibularis brevis",
+  "region": "jambe",
+  "rang": 3,
+  "pair": true,
+  "origine": "Face latérale de la fibula, deux tiers inférieurs",
+  "terminaison": "Base du 5e métatarsien",
+  "action": "Tourne la plante en dehors",
+  "innervation": "Nerf fibulaire superficiel (L5–S1)",
+  "noms": [
+   "court péronier",
+   "court péronier latéral"
+  ]
+ },
+ {
+  "id": "court-extenseur-orteils",
+  "couche": "muscle",
+  "nom": "Court extenseur des orteils",
+  "latin": "M. extensor digitorum brevis",
+  "anglais": "Extensor digitorum brevis",
+  "region": "pied",
+  "rang": 3,
+  "pair": true,
+  "origine": "Face dorsale du calcanéus",
+  "terminaison": "Tendons du long extenseur des orteils 2 à 4",
+  "action": "Étend les orteils",
+  "innervation": "Nerf fibulaire profond (L5–S1)",
+  "noms": [
+   "pédieux"
+  ],
+  "memo": "Le seul muscle du dos du pied."
+ },
+ {
+  "id": "abducteur-hallux",
+  "couche": "muscle",
+  "nom": "Abducteur de l'hallux",
+  "latin": "M. abductor hallucis",
+  "anglais": "Abductor hallucis",
+  "region": "pied",
+  "rang": 3,
+  "pair": true,
+  "origine": "Tubérosité du calcanéus",
+  "terminaison": "Base de la phalange proximale de l'hallux",
+  "action": "Écarte le gros orteil ; soutient l'arche interne",
+  "innervation": "Nerf plantaire médial (S1–S2)",
+  "noms": [
+   "abducteur du gros orteil"
+  ]
+ },
+ {
+  "id": "abducteur-petit-orteil",
+  "couche": "muscle",
+  "nom": "Abducteur du petit orteil",
+  "latin": "M. abductor digiti minimi pedis",
+  "anglais": "Abductor digiti minimi of the foot",
+  "region": "pied",
+  "rang": 3,
+  "pair": true,
+  "origine": "Tubérosité du calcanéus",
+  "terminaison": "Base de la phalange proximale du 5e orteil",
+  "action": "Écarte le petit orteil",
+  "innervation": "Nerf plantaire latéral (S1–S2)"
+ },
+ {
+  "id": "court-flechisseur-orteils",
+  "couche": "muscle",
+  "nom": "Court fléchisseur des orteils",
+  "latin": "M. flexor digitorum brevis",
+  "anglais": "Flexor digitorum brevis",
+  "region": "pied",
+  "rang": 3,
+  "pair": true,
+  "origine": "Tubérosité du calcanéus et aponévrose plantaire",
+  "terminaison": "Phalanges moyennes des orteils 2 à 5",
+  "action": "Fléchit les orteils",
+  "innervation": "Nerf plantaire médial (S1–S2)",
+  "noms": [
+   "court fléchisseur plantaire"
+  ]
+ },
+ {
+  "id": "aponevrose-epicranienne",
+  "couche": "tendon",
+  "nom": "Aponévrose épicrânienne",
+  "latin": "Galea aponeurotica",
+  "anglais": "Epicranial aponeurosis",
+  "region": "tete",
+  "rang": 2,
+  "pair": true,
+  "muscle": "occipito-frontal",
+  "attache": "Relie les ventres frontal et occipital par-dessus le crâne",
+  "noms": [
+   "galéa",
+   "galea"
+  ],
+  "memo": "Un casque fibreux : galea, en latin, c'est le casque."
+ },
+ {
+  "id": "ligne-blanche",
+  "couche": "tendon",
+  "nom": "Ligne blanche",
+  "latin": "Linea alba",
+  "anglais": "Linea alba",
+  "region": "abdomen",
+  "rang": 1,
+  "pair": false,
+  "muscle": "oblique-externe",
+  "attache": "Du processus xiphoïde à la symphyse pubienne",
+  "memo": "La couture où se croisent les aponévroses des muscles larges de l'abdomen."
+ },
+ {
+  "id": "intersections-tendineuses",
+  "couche": "tendon",
+  "nom": "Intersections tendineuses",
+  "latin": "Intersectiones tendineae",
+  "anglais": "Tendinous intersections",
+  "region": "abdomen",
+  "rang": 2,
+  "pair": true,
+  "muscle": "droit-abdomen",
+  "attache": "Elles barrent le droit de l'abdomen et adhèrent à sa gaine",
+  "nombre": 6,
+  "memo": "Elles découpent les « tablettes »."
+ },
+ {
+  "id": "ligament-inguinal",
+  "couche": "tendon",
+  "nom": "Ligament inguinal",
+  "latin": "Ligamentum inguinale",
+  "anglais": "Inguinal ligament",
+  "region": "bassin",
+  "rang": 2,
+  "pair": true,
+  "muscle": "oblique-externe",
+  "attache": "De l'épine iliaque antéro-supérieure au tubercule pubien",
+  "noms": [
+   "arcade crurale"
+  ],
+  "memo": "Le bord bas de l'aponévrose de l'oblique externe ; l'artère fémorale passe dessous."
+ },
+ {
+  "id": "fascia-thoraco-lombaire",
+  "couche": "tendon",
+  "nom": "Fascia thoraco-lombaire",
+  "latin": "Fascia thoracolumbalis",
+  "anglais": "Thoracolumbar fascia",
+  "region": "dos",
+  "rang": 2,
+  "pair": true,
+  "muscle": "grand-dorsal",
+  "attache": "Processus épineux thoraciques bas, lombaires et sacrés ; crête iliaque",
+  "noms": [
+   "aponévrose lombaire"
+  ],
+  "memo": "Le losange nacré du bas du dos, d'où part le grand dorsal."
+ },
+ {
+  "id": "centre-tendineux",
+  "couche": "tendon",
+  "nom": "Centre tendineux du diaphragme",
+  "latin": "Centrum tendineum",
+  "anglais": "Central tendon of the diaphragm",
+  "region": "thorax",
+  "rang": 2,
+  "pair": false,
+  "muscle": "diaphragme",
+  "attache": "Au sommet du dôme : le cœur repose dessus",
+  "noms": [
+   "centre phrénique"
+  ],
+  "memo": "En forme de trèfle."
+ },
+ {
+  "id": "tendon-long-biceps",
+  "couche": "tendon",
+  "nom": "Tendon du long chef du biceps",
+  "latin": "Tendo capitis longi m. bicipitis brachii",
+  "anglais": "Long head of biceps tendon",
+  "region": "epaule",
+  "rang": 3,
+  "pair": true,
+  "muscle": "biceps-brachial",
+  "attache": "Tubercule supra-glénoïdal ; il glisse dans le sillon intertuberculaire",
+  "memo": "Il traverse l'articulation de l'épaule."
+ },
+ {
+  "id": "tendon-biceps",
+  "couche": "tendon",
+  "nom": "Tendon distal du biceps",
+  "latin": "Tendo m. bicipitis brachii",
+  "anglais": "Distal biceps tendon",
+  "region": "avant-bras",
+  "rang": 2,
+  "pair": true,
+  "muscle": "biceps-brachial",
+  "attache": "Tubérosité du radius",
+  "noms": [
+   "tendon du biceps"
+  ],
+  "memo": "La corde qu'on sent au pli du coude."
+ },
+ {
+  "id": "aponevrose-bicipitale",
+  "couche": "tendon",
+  "nom": "Aponévrose bicipitale",
+  "latin": "Aponeurosis bicipitalis",
+  "anglais": "Bicipital aponeurosis",
+  "region": "avant-bras",
+  "rang": 3,
+  "pair": true,
+  "muscle": "biceps-brachial",
+  "attache": "Fascia de l'avant-bras, en dedans",
+  "noms": [
+   "lacertus fibrosus",
+   "expansion aponévrotique du biceps"
+  ],
+  "memo": "Elle protège l'artère humérale au pli du coude."
+ },
+ {
+  "id": "tendon-triceps",
+  "couche": "tendon",
+  "nom": "Tendon du triceps",
+  "latin": "Tendo m. tricipitis brachii",
+  "anglais": "Triceps tendon",
+  "region": "bras",
+  "rang": 2,
+  "pair": true,
+  "muscle": "triceps-brachial",
+  "attache": "Olécrâne de l'ulna"
+ },
+ {
+  "id": "tendon-brachio-radial",
+  "couche": "tendon",
+  "nom": "Tendon du brachio-radial",
+  "latin": "Tendo m. brachioradialis",
+  "anglais": "Brachioradialis tendon",
+  "region": "avant-bras",
+  "rang": 3,
+  "pair": true,
+  "muscle": "brachio-radial",
+  "attache": "Processus styloïde du radius"
+ },
+ {
+  "id": "tendon-flechisseur-radial-carpe",
+  "couche": "tendon",
+  "nom": "Tendon du fléchisseur radial du carpe",
+  "latin": "Tendo m. flexoris carpi radialis",
+  "anglais": "Flexor carpi radialis tendon",
+  "region": "avant-bras",
+  "rang": 3,
+  "pair": true,
+  "muscle": "flechisseur-radial-carpe",
+  "attache": "Base du 2e métacarpien",
+  "memo": "Le pouls radial se prend juste en dehors de lui."
+ },
+ {
+  "id": "tendon-long-palmaire",
+  "couche": "tendon",
+  "nom": "Tendon du long palmaire",
+  "latin": "Tendo m. palmaris longi",
+  "anglais": "Palmaris longus tendon",
+  "region": "avant-bras",
+  "rang": 2,
+  "pair": true,
+  "muscle": "long-palmaire",
+  "attache": "Aponévrose palmaire",
+  "memo": "La corde la plus saillante du poignet quand on pince le pouce et le petit doigt."
+ },
+ {
+  "id": "tendon-flechisseur-ulnaire-carpe",
+  "couche": "tendon",
+  "nom": "Tendon du fléchisseur ulnaire du carpe",
+  "latin": "Tendo m. flexoris carpi ulnaris",
+  "anglais": "Flexor carpi ulnaris tendon",
+  "region": "avant-bras",
+  "rang": 3,
+  "pair": true,
+  "muscle": "flechisseur-ulnaire-carpe",
+  "attache": "Pisiforme"
+ },
+ {
+  "id": "tendons-extenseurs-radiaux",
+  "couche": "tendon",
+  "nom": "Tendons des extenseurs radiaux du carpe",
+  "latin": "Tendines mm. extensorum carpi radialium",
+  "anglais": "Radial wrist extensor tendons",
+  "region": "avant-bras",
+  "rang": 3,
+  "pair": true,
+  "muscle": "long-extenseur-radial-carpe",
+  "attache": "Bases des 2e et 3e métacarpiens",
+  "nombre": 4
+ },
+ {
+  "id": "tendon-extenseur-ulnaire-carpe",
+  "couche": "tendon",
+  "nom": "Tendon de l'extenseur ulnaire du carpe",
+  "latin": "Tendo m. extensoris carpi ulnaris",
+  "anglais": "Extensor carpi ulnaris tendon",
+  "region": "avant-bras",
+  "rang": 3,
+  "pair": true,
+  "muscle": "extenseur-ulnaire-carpe",
+  "attache": "Base du 5e métacarpien"
+ },
+ {
+  "id": "tendons-pouce",
+  "couche": "tendon",
+  "nom": "Tendons de la tabatière anatomique",
+  "latin": "Tendines mm. abductoris pollicis longi et extensoris pollicis brevis",
+  "anglais": "Anatomical snuffbox tendons",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "muscle": "long-abducteur-pouce",
+  "attache": "Base du 1er métacarpien et phalange proximale du pouce",
+  "nombre": 4,
+  "memo": "Ils bordent la tabatière anatomique, où l'on palpe le scaphoïde."
+ },
+ {
+  "id": "retinaculum-flechisseurs",
+  "couche": "tendon",
+  "nom": "Rétinaculum des fléchisseurs",
+  "latin": "Retinaculum flexorum",
+  "anglais": "Flexor retinaculum",
+  "region": "main",
+  "rang": 2,
+  "pair": true,
+  "muscle": "flechisseur-superficiel-doigts",
+  "attache": "Du scaphoïde et du trapèze au pisiforme et à l'hamatum",
+  "noms": [
+   "ligament annulaire antérieur du carpe",
+   "ligament transverse du carpe"
+  ],
+  "memo": "Le toit du canal carpien.",
+  "anecdote": "Quand le nerf médian est comprimé dessous, c'est le syndrome du canal carpien."
+ },
+ {
+  "id": "retinaculum-extenseurs",
+  "couche": "tendon",
+  "nom": "Rétinaculum des extenseurs",
+  "latin": "Retinaculum extensorum",
+  "anglais": "Extensor retinaculum",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "muscle": "extenseur-doigts",
+  "attache": "En travers du dos du poignet, du radius à l'ulna",
+  "noms": [
+   "ligament annulaire postérieur du carpe"
+  ]
+ },
+ {
+  "id": "aponevrose-palmaire",
+  "couche": "tendon",
+  "nom": "Aponévrose palmaire",
+  "latin": "Aponeurosis palmaris",
+  "anglais": "Palmar aponeurosis",
+  "region": "main",
+  "rang": 2,
+  "pair": true,
+  "muscle": "long-palmaire",
+  "attache": "Du rétinaculum des fléchisseurs aux bases des doigts",
+  "memo": "Quand elle se rétracte, les doigts se replient : c'est la maladie de Dupuytren."
+ },
+ {
+  "id": "tendons-flechisseurs-doigts",
+  "couche": "tendon",
+  "nom": "Tendons des fléchisseurs des doigts",
+  "latin": "Tendines mm. flexorum digitorum",
+  "anglais": "Finger flexor tendons",
+  "region": "main",
+  "rang": 2,
+  "pair": true,
+  "muscle": "flechisseur-superficiel-doigts",
+  "attache": "Phalanges moyennes et distales des doigts 2 à 5",
+  "nombre": 16,
+  "memo": "Ils passent dans le canal carpien, puis dans des gaines tenues par des poulies."
+ },
+ {
+  "id": "tendons-extenseurs-doigts",
+  "couche": "tendon",
+  "nom": "Tendons des extenseurs des doigts",
+  "latin": "Tendines m. extensoris digitorum",
+  "anglais": "Finger extensor tendons",
+  "region": "main",
+  "rang": 2,
+  "pair": true,
+  "muscle": "extenseur-doigts",
+  "attache": "Dos des phalanges moyennes et distales",
+  "nombre": 8,
+  "memo": "On les voit se tendre sur le dos de la main en écartant les doigts."
+ },
+ {
+  "id": "tendon-quadricipital",
+  "couche": "tendon",
+  "nom": "Tendon quadricipital",
+  "latin": "Tendo m. quadricipitis femoris",
+  "anglais": "Quadriceps tendon",
+  "region": "cuisse",
+  "rang": 1,
+  "pair": true,
+  "muscle": "droit-femoral",
+  "attache": "Bord supérieur de la patella",
+  "noms": [
+   "tendon du quadriceps"
+  ],
+  "memo": "Les quatre chefs du quadriceps se rejoignent en lui."
+ },
+ {
+  "id": "ligament-patellaire",
+  "couche": "tendon",
+  "nom": "Ligament patellaire",
+  "latin": "Ligamentum patellae",
+  "anglais": "Patellar ligament",
+  "region": "jambe",
+  "rang": 1,
+  "pair": true,
+  "muscle": "droit-femoral",
+  "attache": "De la pointe de la patella à la tubérosité tibiale",
+  "noms": [
+   "tendon rotulien",
+   "ligament rotulien"
+  ],
+  "memo": "C'est lui que le médecin frappe pour le réflexe du genou."
+ },
+ {
+  "id": "tractus-ilio-tibial",
+  "couche": "tendon",
+  "nom": "Tractus ilio-tibial",
+  "latin": "Tractus iliotibialis",
+  "anglais": "Iliotibial tract",
+  "region": "cuisse",
+  "rang": 2,
+  "pair": true,
+  "muscle": "tenseur-fascia-lata",
+  "attache": "Tubercule infra-condylaire latéral du tibia (tubercule de Gerdy)",
+  "noms": [
+   "bandelette ilio-tibiale",
+   "bandelette de maissiat"
+  ],
+  "memo": "Sa friction sur le genou fait souffrir les coureurs (le syndrome de l'essuie-glace)."
+ },
+ {
+  "id": "tendon-calcaneen",
+  "couche": "tendon",
+  "nom": "Tendon calcanéen",
+  "latin": "Tendo calcaneus",
+  "anglais": "Calcaneal tendon",
+  "region": "jambe",
+  "rang": 0,
+  "pair": true,
+  "muscle": "gastrocnemien",
+  "attache": "Tubérosité du calcanéus",
+  "noms": [
+   "tendon d'achille",
+   "achille"
+  ],
+  "memo": "Le plus gros et le plus solide tendon du corps.",
+  "anecdote": "Achille avait été plongé dans le Styx, tenu par le talon : son seul point faible."
+ },
+ {
+  "id": "tendon-semi-tendineux",
+  "couche": "tendon",
+  "nom": "Tendon du semi-tendineux",
+  "latin": "Tendo m. semitendinosi",
+  "anglais": "Semitendinosus tendon",
+  "region": "jambe",
+  "rang": 3,
+  "pair": true,
+  "muscle": "semi-tendineux",
+  "attache": "Face médiale du tibia (patte d'oie)",
+  "memo": "Avec le sartorius et le gracile, il forme la patte d'oie."
+ },
+ {
+  "id": "tendon-tibial-anterieur",
+  "couche": "tendon",
+  "nom": "Tendon du tibial antérieur",
+  "latin": "Tendo m. tibialis anterioris",
+  "anglais": "Tibialis anterior tendon",
+  "region": "pied",
+  "rang": 2,
+  "pair": true,
+  "muscle": "tibial-anterieur",
+  "attache": "Cunéiforme médial et base du 1er métatarsien",
+  "memo": "La corde la plus saillante du cou-de-pied quand on relève le pied."
+ },
+ {
+  "id": "tendon-long-extenseur-hallux",
+  "couche": "tendon",
+  "nom": "Tendon du long extenseur de l'hallux",
+  "latin": "Tendo m. extensoris hallucis longi",
+  "anglais": "Extensor hallucis longus tendon",
+  "region": "pied",
+  "rang": 3,
+  "pair": true,
+  "muscle": "long-extenseur-hallux",
+  "attache": "Phalange distale de l'hallux"
+ },
+ {
+  "id": "tendons-extenseurs-orteils",
+  "couche": "tendon",
+  "nom": "Tendons du long extenseur des orteils",
+  "latin": "Tendines m. extensoris digitorum longi",
+  "anglais": "Long toe extensor tendons",
+  "region": "pied",
+  "rang": 2,
+  "pair": true,
+  "muscle": "long-extenseur-orteils",
+  "attache": "Dos des orteils 2 à 5",
+  "nombre": 8
+ },
+ {
+  "id": "tendons-fibulaires",
+  "couche": "tendon",
+  "nom": "Tendons fibulaires",
+  "latin": "Tendines mm. fibularium",
+  "anglais": "Fibular tendons",
+  "region": "pied",
+  "rang": 3,
+  "pair": true,
+  "muscle": "long-fibulaire",
+  "attache": "Derrière la malléole latérale, puis base du 5e métatarsien (court) et plante (long)",
+  "nombre": 4,
+  "noms": [
+   "tendons péroniers"
+  ]
+ },
+ {
+  "id": "tendons-malleole-mediale",
+  "couche": "tendon",
+  "nom": "Tendons rétro-malléolaires médiaux",
+  "latin": "Tendines retromalleolares mediales",
+  "anglais": "Tendons behind the medial malleolus",
+  "region": "pied",
+  "rang": 3,
+  "pair": true,
+  "muscle": "tibial-posterieur",
+  "attache": "Naviculaire (tibial postérieur) et orteils (longs fléchisseurs)",
+  "nombre": 4,
+  "memo": "D'avant en arrière derrière la malléole : tibial postérieur, fléchisseur des orteils, fléchisseur de l'hallux."
+ },
+ {
+  "id": "retinaculums-cheville",
+  "couche": "tendon",
+  "nom": "Rétinaculums des extenseurs de la cheville",
+  "latin": "Retinacula mm. extensorum",
+  "anglais": "Ankle extensor retinacula",
+  "region": "pied",
+  "rang": 3,
+  "pair": true,
+  "muscle": "tibial-anterieur",
+  "attache": "En travers du cou-de-pied, du tibia à la fibula et au calcanéus",
+  "nombre": 4
+ },
+ {
+  "id": "aponevrose-plantaire",
+  "couche": "tendon",
+  "nom": "Aponévrose plantaire",
+  "latin": "Aponeurosis plantaris",
+  "anglais": "Plantar aponeurosis",
+  "region": "pied",
+  "rang": 2,
+  "pair": true,
+  "muscle": "court-flechisseur-orteils",
+  "attache": "Du calcanéus aux bases des orteils",
+  "noms": [
+   "fascia plantaire"
+  ],
+  "memo": "Elle tend la voûte comme la corde d'un arc.",
+  "anecdote": "Son inflammation, la fasciite plantaire, fait mal au talon au premier pas du matin."
+ },
+ {
+  "id": "aorte",
+  "couche": "artere",
+  "nom": "Aorte",
+  "latin": "Aorta",
+  "anglais": "Aorta",
+  "region": "thorax",
+  "rang": 0,
+  "pair": false,
+  "provenance": "Ventricule gauche du cœur",
+  "territoire": "Tout le corps, par ses branches",
+  "memo": "La plus grosse artère du corps : environ 2,5 cm de diamètre."
+ },
+ {
+  "id": "tronc-brachio-cephalique",
+  "couche": "artere",
+  "nom": "Tronc brachio-céphalique",
+  "latin": "Truncus brachiocephalicus",
+  "anglais": "Brachiocephalic trunk",
+  "region": "thorax",
+  "rang": 2,
+  "pair": false,
+  "provenance": "aorte",
+  "territoire": "Membre supérieur droit, côté droit de la tête et du cou",
+  "noms": [
+   "tronc artériel brachio-céphalique"
+  ],
+  "memo": "Il n'existe qu'à droite."
+ },
+ {
+  "id": "carotide-commune",
+  "couche": "artere",
+  "nom": "Carotide commune",
+  "latin": "Arteria carotis communis",
+  "anglais": "Common carotid artery",
+  "region": "cou",
+  "rang": 0,
+  "pair": true,
+  "provenance": "Aorte à gauche, tronc brachio-céphalique à droite",
+  "territoire": "Tête et cou",
+  "noms": [
+   "carotide primitive",
+   "carotide"
+  ],
+  "memo": "Son pouls se prend sur le côté du cou, devant le sterno-cléido-mastoïdien."
+ },
+ {
+  "id": "carotide-interne",
+  "couche": "artere",
+  "nom": "Carotide interne",
+  "latin": "Arteria carotis interna",
+  "anglais": "Internal carotid artery",
+  "region": "cou",
+  "rang": 1,
+  "pair": true,
+  "provenance": "carotide-commune",
+  "territoire": "Cerveau et œil"
+ },
+ {
+  "id": "carotide-externe",
+  "couche": "artere",
+  "nom": "Carotide externe",
+  "latin": "Arteria carotis externa",
+  "anglais": "External carotid artery",
+  "region": "cou",
+  "rang": 1,
+  "pair": true,
+  "provenance": "carotide-commune",
+  "territoire": "Face, cuir chevelu, cou"
+ },
+ {
+  "id": "artere-faciale",
+  "couche": "artere",
+  "nom": "Artère faciale",
+  "latin": "Arteria facialis",
+  "anglais": "Facial artery",
+  "region": "tete",
+  "rang": 2,
+  "pair": true,
+  "provenance": "carotide-externe",
+  "territoire": "Lèvres, nez, joues",
+  "noms": [
+   "faciale"
+  ],
+  "memo": "Son pouls se sent sur le bord de la mandibule, juste devant le masséter."
+ },
+ {
+  "id": "temporale-superficielle",
+  "couche": "artere",
+  "nom": "Artère temporale superficielle",
+  "latin": "Arteria temporalis superficialis",
+  "anglais": "Superficial temporal artery",
+  "region": "tete",
+  "rang": 2,
+  "pair": true,
+  "provenance": "carotide-externe",
+  "territoire": "Tempe et cuir chevelu",
+  "noms": [
+   "temporale superficielle"
+  ],
+  "memo": "Son pouls se sent juste devant l'oreille."
+ },
+ {
+  "id": "artere-occipitale",
+  "couche": "artere",
+  "nom": "Artère occipitale",
+  "latin": "Arteria occipitalis",
+  "anglais": "Occipital artery",
+  "region": "tete",
+  "rang": 3,
+  "pair": true,
+  "provenance": "carotide-externe",
+  "territoire": "Arrière du cuir chevelu, muscles de la nuque",
+  "noms": [
+   "occipitale"
+  ]
+ },
+ {
+  "id": "vertebrale",
+  "couche": "artere",
+  "nom": "Artère vertébrale",
+  "latin": "Arteria vertebralis",
+  "anglais": "Vertebral artery",
+  "region": "cou",
+  "rang": 2,
+  "pair": true,
+  "provenance": "subclaviere",
+  "territoire": "Tronc cérébral, cervelet, arrière du cerveau",
+  "noms": [
+   "vertébrale"
+  ],
+  "memo": "Elle monte dans les trous des processus transverses des vertèbres cervicales."
+ },
+ {
+  "id": "subclaviere",
+  "couche": "artere",
+  "nom": "Artère subclavière",
+  "latin": "Arteria subclavia",
+  "anglais": "Subclavian artery",
+  "region": "cou",
+  "rang": 1,
+  "pair": true,
+  "provenance": "Aorte à gauche, tronc brachio-céphalique à droite",
+  "territoire": "Membre supérieur, cou, cerveau, paroi du thorax",
+  "noms": [
+   "sous-clavière",
+   "subclavière"
+  ],
+  "memo": "Elle passe sous la clavicule, au-dessus de la première côte."
+ },
+ {
+  "id": "thoracique-interne",
+  "couche": "artere",
+  "nom": "Artère thoracique interne",
+  "latin": "Arteria thoracica interna",
+  "anglais": "Internal thoracic artery",
+  "region": "thorax",
+  "rang": 2,
+  "pair": true,
+  "provenance": "subclaviere",
+  "territoire": "Paroi antérieure du thorax et de l'abdomen",
+  "noms": [
+   "mammaire interne",
+   "thoracique interne"
+  ],
+  "memo": "Les chirurgiens s'en servent pour les pontages du cœur."
+ },
+ {
+  "id": "arteres-intercostales",
+  "couche": "artere",
+  "nom": "Artères intercostales",
+  "latin": "Arteriae intercostales",
+  "anglais": "Intercostal arteries",
+  "region": "thorax",
+  "rang": 3,
+  "pair": true,
+  "provenance": "aorte",
+  "territoire": "Espaces entre les côtes, muscles du dos",
+  "nombre": 22,
+  "noms": [
+   "intercostales"
+  ],
+  "memo": "Elles longent le bord inférieur de chaque côte."
+ },
+ {
+  "id": "tronc-coeliaque",
+  "couche": "artere",
+  "nom": "Tronc cœliaque",
+  "latin": "Truncus coeliacus",
+  "anglais": "Celiac trunk",
+  "region": "abdomen",
+  "rang": 2,
+  "pair": false,
+  "provenance": "aorte",
+  "territoire": "Estomac, foie, rate, pancréas, duodénum",
+  "noms": [
+   "tronc coeliaque"
+  ],
+  "memo": "Trois branches : gastrique gauche, hépatique commune et splénique."
+ },
+ {
+  "id": "mesenterique-superieure",
+  "couche": "artere",
+  "nom": "Artère mésentérique supérieure",
+  "latin": "Arteria mesenterica superior",
+  "anglais": "Superior mesenteric artery",
+  "region": "abdomen",
+  "rang": 2,
+  "pair": false,
+  "provenance": "aorte",
+  "territoire": "Intestin grêle et moitié droite du côlon",
+  "noms": [
+   "mésentérique supérieure"
+  ]
+ },
+ {
+  "id": "renale",
+  "couche": "artere",
+  "nom": "Artère rénale",
+  "latin": "Arteria renalis",
+  "anglais": "Renal artery",
+  "region": "abdomen",
+  "rang": 2,
+  "pair": true,
+  "provenance": "aorte",
+  "territoire": "Rein",
+  "noms": [
+   "rénale"
+  ],
+  "memo": "Les reins reçoivent environ un cinquième du sang pompé par le cœur."
+ },
+ {
+  "id": "iliaque-commune",
+  "couche": "artere",
+  "nom": "Artère iliaque commune",
+  "latin": "Arteria iliaca communis",
+  "anglais": "Common iliac artery",
+  "region": "bassin",
+  "rang": 1,
+  "pair": true,
+  "provenance": "aorte",
+  "territoire": "Bassin et membre inférieur",
+  "noms": [
+   "iliaque primitive",
+   "iliaque commune"
+  ]
+ },
+ {
+  "id": "iliaque-interne",
+  "couche": "artere",
+  "nom": "Artère iliaque interne",
+  "latin": "Arteria iliaca interna",
+  "anglais": "Internal iliac artery",
+  "region": "bassin",
+  "rang": 2,
+  "pair": true,
+  "provenance": "iliaque-commune",
+  "territoire": "Organes du bassin, fesse, périnée",
+  "noms": [
+   "hypogastrique",
+   "iliaque interne"
+  ]
+ },
+ {
+  "id": "iliaque-externe",
+  "couche": "artere",
+  "nom": "Artère iliaque externe",
+  "latin": "Arteria iliaca externa",
+  "anglais": "External iliac artery",
+  "region": "bassin",
+  "rang": 2,
+  "pair": true,
+  "provenance": "iliaque-commune",
+  "territoire": "Membre inférieur : elle devient la fémorale sous le ligament inguinal",
+  "noms": [
+   "iliaque externe"
+  ]
+ },
+ {
+  "id": "epigastrique-inferieure",
+  "couche": "artere",
+  "nom": "Artère épigastrique inférieure",
+  "latin": "Arteria epigastrica inferior",
+  "anglais": "Inferior epigastric artery",
+  "region": "abdomen",
+  "rang": 3,
+  "pair": true,
+  "provenance": "iliaque-externe",
+  "territoire": "Paroi antérieure de l'abdomen, muscle droit",
+  "noms": [
+   "épigastrique inférieure"
+  ]
+ },
+ {
+  "id": "axillaire",
+  "couche": "artere",
+  "nom": "Artère axillaire",
+  "latin": "Arteria axillaris",
+  "anglais": "Axillary artery",
+  "region": "epaule",
+  "rang": 1,
+  "pair": true,
+  "provenance": "subclaviere",
+  "territoire": "Épaule, paroi du thorax, aisselle",
+  "noms": [
+   "axillaire"
+  ]
+ },
+ {
+  "id": "humerale",
+  "couche": "artere",
+  "nom": "Artère humérale",
+  "latin": "Arteria brachialis",
+  "anglais": "Brachial artery",
+  "region": "bras",
+  "rang": 1,
+  "pair": true,
+  "provenance": "axillaire",
+  "territoire": "Bras ; au coude, elle se partage en radiale et ulnaire",
+  "noms": [
+   "brachiale",
+   "humérale"
+  ],
+  "memo": "C'est elle que serre le brassard quand on prend la tension."
+ },
+ {
+  "id": "humerale-profonde",
+  "couche": "artere",
+  "nom": "Artère profonde du bras",
+  "latin": "Arteria profunda brachii",
+  "anglais": "Deep brachial artery",
+  "region": "bras",
+  "rang": 3,
+  "pair": true,
+  "provenance": "humerale",
+  "territoire": "Triceps et face postérieure du bras",
+  "noms": [
+   "humérale profonde"
+  ]
+ },
+ {
+  "id": "radiale",
+  "couche": "artere",
+  "nom": "Artère radiale",
+  "latin": "Arteria radialis",
+  "anglais": "Radial artery",
+  "region": "avant-bras",
+  "rang": 0,
+  "pair": true,
+  "provenance": "humerale",
+  "territoire": "Avant-bras côté pouce, arcade palmaire profonde",
+  "noms": [
+   "radiale"
+  ],
+  "memo": "Le pouls qu'on prend au poignet, côté pouce."
+ },
+ {
+  "id": "ulnaire",
+  "couche": "artere",
+  "nom": "Artère ulnaire",
+  "latin": "Arteria ulnaris",
+  "anglais": "Ulnar artery",
+  "region": "avant-bras",
+  "rang": 1,
+  "pair": true,
+  "provenance": "humerale",
+  "territoire": "Avant-bras côté petit doigt, arcade palmaire superficielle",
+  "noms": [
+   "cubitale",
+   "ulnaire"
+  ]
+ },
+ {
+  "id": "arcade-palmaire-superficielle",
+  "couche": "artere",
+  "nom": "Arcade palmaire superficielle",
+  "latin": "Arcus palmaris superficialis",
+  "anglais": "Superficial palmar arch",
+  "region": "main",
+  "rang": 2,
+  "pair": true,
+  "provenance": "ulnaire",
+  "territoire": "Doigts (artères digitales palmaires)"
+ },
+ {
+  "id": "arcade-palmaire-profonde",
+  "couche": "artere",
+  "nom": "Arcade palmaire profonde",
+  "latin": "Arcus palmaris profundus",
+  "anglais": "Deep palmar arch",
+  "region": "main",
+  "rang": 3,
+  "pair": true,
+  "provenance": "radiale",
+  "territoire": "Muscles profonds de la main et métacarpiens"
+ },
+ {
+  "id": "femorale",
+  "couche": "artere",
+  "nom": "Artère fémorale",
+  "latin": "Arteria femoralis",
+  "anglais": "Femoral artery",
+  "region": "cuisse",
+  "rang": 0,
+  "pair": true,
+  "provenance": "iliaque-externe",
+  "territoire": "Cuisse ; derrière le genou, elle devient la poplitée",
+  "noms": [
+   "fémorale"
+  ],
+  "memo": "Son pouls se sent au pli de l'aine, sous le ligament inguinal."
+ },
+ {
+  "id": "femorale-profonde",
+  "couche": "artere",
+  "nom": "Artère fémorale profonde",
+  "latin": "Arteria profunda femoris",
+  "anglais": "Deep femoral artery",
+  "region": "cuisse",
+  "rang": 2,
+  "pair": true,
+  "provenance": "femorale",
+  "territoire": "Muscles de la cuisse, tête du fémur",
+  "noms": [
+   "profonde de la cuisse",
+   "fémorale profonde"
+  ]
+ },
+ {
+  "id": "circonflexe-femorale-laterale",
+  "couche": "artere",
+  "nom": "Artère circonflexe fémorale latérale",
+  "latin": "Arteria circumflexa femoris lateralis",
+  "anglais": "Lateral circumflex femoral artery",
+  "region": "cuisse",
+  "rang": 3,
+  "pair": true,
+  "provenance": "femorale-profonde",
+  "territoire": "Quadriceps et hanche",
+  "noms": [
+   "circonflexe latérale"
+  ]
+ },
+ {
+  "id": "poplitee",
+  "couche": "artere",
+  "nom": "Artère poplitée",
+  "latin": "Arteria poplitea",
+  "anglais": "Popliteal artery",
+  "region": "jambe",
+  "rang": 1,
+  "pair": true,
+  "provenance": "femorale",
+  "territoire": "Genou ; elle se partage en tibiales antérieure et postérieure",
+  "noms": [
+   "poplitée"
+  ],
+  "memo": "Au fond du creux du genou : la plus profonde des structures de la région."
+ },
+ {
+  "id": "tibiale-anterieure",
+  "couche": "artere",
+  "nom": "Artère tibiale antérieure",
+  "latin": "Arteria tibialis anterior",
+  "anglais": "Anterior tibial artery",
+  "region": "jambe",
+  "rang": 2,
+  "pair": true,
+  "provenance": "poplitee",
+  "territoire": "Loge antérieure de la jambe ; elle devient la dorsale du pied",
+  "noms": [
+   "tibiale antérieure"
+  ]
+ },
+ {
+  "id": "tibiale-posterieure",
+  "couche": "artere",
+  "nom": "Artère tibiale postérieure",
+  "latin": "Arteria tibialis posterior",
+  "anglais": "Posterior tibial artery",
+  "region": "jambe",
+  "rang": 2,
+  "pair": true,
+  "provenance": "poplitee",
+  "territoire": "Loge postérieure de la jambe, plante du pied",
+  "noms": [
+   "tibiale postérieure"
+  ],
+  "memo": "Son pouls se prend derrière la malléole médiale."
+ },
+ {
+  "id": "fibulaire",
+  "couche": "artere",
+  "nom": "Artère fibulaire",
+  "latin": "Arteria fibularis",
+  "anglais": "Fibular artery",
+  "region": "jambe",
+  "rang": 3,
+  "pair": true,
+  "provenance": "tibiale-posterieure",
+  "territoire": "Loge latérale de la jambe, fibula",
+  "noms": [
+   "péronière",
+   "artère péronière"
+  ]
+ },
+ {
+  "id": "dorsale-du-pied",
+  "couche": "artere",
+  "nom": "Artère dorsale du pied",
+  "latin": "Arteria dorsalis pedis",
+  "anglais": "Dorsalis pedis artery",
+  "region": "pied",
+  "rang": 2,
+  "pair": true,
+  "provenance": "tibiale-anterieure",
+  "territoire": "Dos du pied et orteils",
+  "noms": [
+   "pédieuse",
+   "artère pédieuse"
+  ],
+  "memo": "Son pouls se sent sur le dos du pied, en dehors du tendon du long extenseur de l'hallux."
+ },
+ {
+  "id": "plantaires",
+  "couche": "artere",
+  "nom": "Artères plantaires",
+  "latin": "Arteriae plantares",
+  "anglais": "Plantar arteries",
+  "region": "pied",
+  "rang": 3,
+  "pair": true,
+  "provenance": "tibiale-posterieure",
+  "territoire": "Plante du pied et orteils",
+  "nombre": 4,
+  "noms": [
+   "plantaire"
+  ]
+ }
+]
