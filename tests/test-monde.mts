@@ -12,6 +12,9 @@ import { geoArea, geoContains } from "d3-geo";
 import { feature } from "topojson-client";
 import type { GeometryCollection, Topology } from "topojson-specification";
 import { CARTE_LEGERE_URL, CARTE_ULTRA_URL, CARTE_URL } from "../src/lib/monde/donnees";
+import { createPublicKey, verify } from "node:crypto";
+import webpush from "web-push";
+import { candidatsVapid, clesVapidDuSecret } from "../src/lib/monde/vapid";
 
 let echecs = 0;
 const ok = (nom: string, cond: boolean, detail = "") => {
@@ -603,6 +606,38 @@ for (const url of [CARTE_URL, CARTE_LEGERE_URL, CARTE_ULTRA_URL]) {
   ok("nom en arabe accepté", Boolean(de.nomAr) && jugerNom(de.nomAr!, de) === "juste");
   ok("nom en arabe, sans l'article ni les voyelles", jugerNom(de.nomAr!.replace(/[\u064B-\u0652]/g, ""), de) === "juste");
   ok("capitale en anglais acceptée", jugerCapitale("Vienna", pays("at")) === "juste", jugerCapitale("Vienna", pays("at")));
+}
+
+/* ---------- Les clés des notifications du téléphone (sans rien à saisir) ---------- */
+{
+  const secret = "secret-de-session-pour-les-essais-0123456789";
+  const a = clesVapidDuSecret(secret);
+  const b = clesVapidDuSecret(secret);
+  const autre = clesVapidDuSecret(secret + "!");
+  ok("vapid : la paire se tire du secret des sessions", a !== null && a.origine === "secret");
+  ok("vapid : toujours la même pour le même secret", a !== null && b !== null && a.publique === b.publique && a.privee === b.privee);
+  ok("vapid : un autre secret donne une autre paire", a !== null && autre !== null && a.publique !== autre.publique && a.privee !== autre.privee);
+  const publique = Buffer.from(a?.publique ?? "", "base64url");
+  ok("vapid : clé publique de 65 octets (point non compressé de P-256)", publique.length === 65 && publique[0] === 4);
+  ok("vapid : clé privée de 32 octets", Buffer.from(a?.privee ?? "", "base64url").length === 32);
+  ok("vapid : un secret absent ou trop court ne donne rien", clesVapidDuSecret(undefined) === null && clesVapidDuSecret("court") === null);
+  let acceptee = true;
+  try {
+    webpush.setVapidDetails("https://haqqreason.vercel.app", a!.publique, a!.privee);
+  } catch {
+    acceptee = false;
+  }
+  ok("vapid : web-push accepte la paire", acceptee);
+  // La signature qu'envoie le serveur se vérifie avec la clé publique donnée aux téléphones.
+  const entetes = webpush.getVapidHeaders("https://fcm.googleapis.com", "https://haqqreason.vercel.app", a!.publique, a!.privee, "aes128gcm") as { Authorization: string };
+  const jeton = /t=([^,\s]+)/.exec(entetes.Authorization)?.[1] ?? "";
+  const [tete, charge, signature] = jeton.split(".");
+  const cle = createPublicKey({ key: { kty: "EC", crv: "P-256", x: publique.subarray(1, 33).toString("base64url"), y: publique.subarray(33).toString("base64url") }, format: "jwk" });
+  ok("vapid : la signature du serveur se vérifie avec la clé publique", Boolean(signature) && verify("sha256", Buffer.from(`${tete}.${charge}`), { key: cle, dsaEncoding: "ieee-p1363" }, Buffer.from(signature, "base64url")));
+  const deux = candidatsVapid({ VAPID_PUBLIC_KEY: " posee ", VAPID_PRIVATE_KEY: "aussi", SESSION_SECRET: secret });
+  ok("vapid : les clés posées dans les variables passent d'abord, celle du secret ensuite", deux.length === 2 && deux[0].origine === "variables" && deux[0].publique === "posee" && deux[1].origine === "secret");
+  ok("vapid : une seule des deux variables ne suffit pas", candidatsVapid({ VAPID_PUBLIC_KEY: "posee", SESSION_SECRET: secret }).map((c) => c.origine).join() === "secret");
+  ok("vapid : sans secret ni variables, aucune paire", candidatsVapid({}).length === 0);
 }
 
 console.log(echecs ? `\n${echecs} échec(s).` : `Tout est bon (${questions} questions de niveau vérifiées).`);

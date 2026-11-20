@@ -307,6 +307,29 @@ function service(): Promise<ServiceWorkerRegistration | null> {
   return Promise.race([navigator.serviceWorker.ready, new Promise<null>((ok) => setTimeout(() => ok(null), 3000))]);
 }
 
+/** L'abonnement a-t-il été pris avec la clé actuelle du site ? (Si le navigateur ne le dit pas : oui.) */
+function memeCle(abonnement: PushSubscription, cle: string): boolean {
+  const prise = abonnement.options?.applicationServerKey;
+  if (!prise) return true;
+  const a = new Uint8Array(prise);
+  const b = cleBinaire(cle);
+  return a.length === b.length && a.every((octet, i) => octet === b[i]);
+}
+
+/** La clé du site a changé : l'ancien abonnement ne recevrait plus rien, on en reprend un, sans rien redemander. */
+async function reabonner(reg: ServiceWorkerRegistration, ancien: PushSubscription, cle: string): Promise<boolean> {
+  try {
+    await fetch("/api/monde/notifications", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action: "desabonner", endpoint: ancien.endpoint }) }).catch(() => null);
+    await ancien.unsubscribe().catch(() => false);
+    const nouvel = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: cleBinaire(cle) });
+    const json = nouvel.toJSON() as { endpoint?: string; keys?: { p256dh: string; auth: string } };
+    const r = await fetch("/api/monde/notifications", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action: "abonner", endpoint: json.endpoint, cles: json.keys }) }).catch(() => null);
+    return Boolean(r?.ok);
+  } catch {
+    return false;
+  }
+}
+
 type EtatNotif = "inconnu" | "impossible" | "bientot" | "refuse" | "actif" | "inactif";
 
 export function Notifications() {
@@ -324,6 +347,11 @@ export function Notifications() {
       if (Notification.permission === "denied") return setEtat("refuse");
       const reg = await service();
       const abonnement = await reg?.pushManager.getSubscription().catch(() => null);
+      if (reg && abonnement && Notification.permission === "granted" && !memeCle(abonnement, c)) {
+        const repris = await reabonner(reg, abonnement, c);
+        if (vivant) setEtat(repris ? "actif" : "inactif");
+        return;
+      }
       if (vivant) setEtat(abonnement ? "actif" : reg ? "inactif" : "impossible");
     })();
     return () => {

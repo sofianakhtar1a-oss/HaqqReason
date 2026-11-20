@@ -928,6 +928,27 @@ ok("013 : la conversation disparaît avec la contribution", Number((await db.que
   await db.exec("reset role");
 }
 
+
+// 020 : les tables de l'ancien assistant (Le Vizir) disparaissent, rien d'autre ne bouge
+{
+  const compter = async (sql) => Number((await db.query(sql)).rows[0].n);
+  const tablesAssistant = `select count(*)::int n from information_schema.tables where table_schema = 'public' and table_name like 'assistant%'`;
+  const autresTables = `select count(*)::int n from information_schema.tables where table_schema = 'public' and table_name not like 'assistant%'`;
+  const u = (await db.query(`select * from compte_ouvrir('google-vz1', 'vz1@exemple.fr', 'Yanis B')`)).rows[0].id;
+  await db.exec(`insert into assistant_cles (utilisateur_id, cle_chiffree, apercu) values ('${u}', 'v1.QUJDRA==', 'sk-ant-…WXYZ')`);
+  const comptes = await compter(`select count(*)::int n from utilisateurs`);
+  const autres = await compter(autresTables);
+  const retrait = readFileSync(new URL("../supabase/migrations/020_retrait_vizir.sql", import.meta.url), "utf8");
+  await db.exec(retrait);
+  ok("020 : plus aucune table de l'assistant", (await compter(tablesAssistant)) === 0);
+  ok("020 : plus aucune fonction de l'assistant", (await compter(`select count(*)::int n from pg_proc p join pg_namespace s on s.oid = p.pronamespace where s.nspname = 'public' and p.proname like 'assistant%'`)) === 0);
+  ok("020 : les comptes et les autres tables restent", (await compter(`select count(*)::int n from utilisateurs`)) === comptes && (await compter(autresTables)) === autres);
+  await db.exec(retrait);
+  ok("020 : relancer le script ne change rien", (await compter(tablesAssistant)) === 0 && (await compter(autresTables)) === autres);
+  await db.exec(`delete from utilisateurs where id = '${u}'`);
+  ok("020 : supprimer un compte marche toujours", (await compter(`select count(*)::int n from utilisateurs where id = '${u}'`)) === 0);
+}
+
 {
   const ancienne = new PGlite({ extensions: { unaccent, pg_trgm } });
   await ancienne.exec(`create role anon nologin; create role authenticated nologin; create role service_role nologin bypassrls;
@@ -953,6 +974,8 @@ ok("013 : la conversation disparaît avec la contribution", Number((await db.que
   ok("016 mise à niveau : une seconde clé (Gemini) s'ajoute", Number((await ancienne.query(`select count(*)::int n from assistant_cles where utilisateur_id = $1`, [u])).rows[0].n) === 2);
   await ancienne.exec(readFileSync(new URL("../supabase/migrations/016_assistant.sql", import.meta.url), "utf8"));
   ok("016 mise à niveau : relancer le script ne change rien", Number((await ancienne.query(`select count(*)::int n from assistant_cles where utilisateur_id = $1`, [u])).rows[0].n) === 2);
+  await ancienne.exec(readFileSync(new URL("../supabase/migrations/020_retrait_vizir.sql", import.meta.url), "utf8"));
+  ok("020 : une base passée par l'ancienne version de 016 perd aussi ces tables", Number((await ancienne.query(`select count(*)::int n from information_schema.tables where table_schema = 'public' and table_name like 'assistant%'`)).rows[0].n) === 0);
   await ancienne.close();
 }
 

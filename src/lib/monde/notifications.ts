@@ -1,31 +1,43 @@
 import "server-only";
 import webpush from "web-push";
 import { dbAdmin } from "@/lib/supabase";
+import { candidatsVapid, type ClesVapid } from "./vapid";
 
 /*
- * Les notifications du téléphone (Web Push). Elles partent seulement si les clés VAPID sont
- * posées dans les variables d'environnement du site :
- *   VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY (et VAPID_SUJET, une adresse « mailto: » ou le site).
- * Sans elles, rien ne part et le module le dit (« bientôt ») : le reste fonctionne.
+ * Les notifications du téléphone (Web Push). Elles marchent sans rien à saisir : si les clés
+ * VAPID_PUBLIC_KEY et VAPID_PRIVATE_KEY sont posées dans les variables du site, ce sont elles ;
+ * sinon le serveur tire sa propre paire du secret des sessions (voir vapid.ts).
+ * VAPID_SUJET (une adresse « mailto: » ou « https:// ») reste facultatif : par défaut, le site.
+ * Sans aucune clé utilisable, rien ne part et le module le dit (« bientôt ») : le reste fonctionne.
  */
 
 export type Message = { titre: string; corps: string; url: string; etiquette?: string };
 
-export const clePubliqueVapid = (): string | null => process.env.VAPID_PUBLIC_KEY?.trim() || null;
-
-let prete: boolean | null = null;
-function pret(): boolean {
-  if (prete !== null) return prete;
-  const publique = clePubliqueVapid();
-  const privee = process.env.VAPID_PRIVATE_KEY?.trim();
-  if (!publique || !privee) return (prete = false);
-  try {
-    webpush.setVapidDetails(process.env.VAPID_SUJET?.trim() || "https://haqqreason.vercel.app", publique, privee);
-    return (prete = true);
-  } catch {
-    return (prete = false);
-  }
+const SUJET_PAR_DEFAUT = "https://haqqreason.vercel.app";
+function sujetVapid(): string {
+  const sujet = process.env.VAPID_SUJET?.trim();
+  return sujet && /^(mailto:|https:\/\/)/.test(sujet) ? sujet : SUJET_PAR_DEFAUT;
 }
+
+// La première paire que web-push accepte : une paire mal recopiée dans les variables laisse la place à l'autre.
+let choisies: ClesVapid | null | undefined;
+function clesVapid(): ClesVapid | null {
+  if (choisies !== undefined) return choisies;
+  const source = { VAPID_PUBLIC_KEY: process.env.VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY: process.env.VAPID_PRIVATE_KEY, SESSION_SECRET: process.env.SESSION_SECRET };
+  for (const cles of candidatsVapid(source)) {
+    try {
+      webpush.setVapidDetails(sujetVapid(), cles.publique, cles.privee);
+      return (choisies = cles);
+    } catch {
+      // Paire illisible : la suivante.
+    }
+  }
+  return (choisies = null);
+}
+
+export const clePubliqueVapid = (): string | null => clesVapid()?.publique ?? null;
+
+const pret = (): boolean => clesVapid() !== null;
 
 /** Prévenir un compte sur tous ses appareils abonnés ; les abonnements morts s'effacent. */
 export async function notifier(utilisateur: string, message: Message): Promise<void> {
