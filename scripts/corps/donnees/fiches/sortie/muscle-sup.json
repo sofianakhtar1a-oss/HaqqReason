@@ -1,0 +1,3658 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918) — Myologie : muscles et fascias du membre supérieur, p. 438-465 (texte intégral, Internet Archive)",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "openstax": {
+   "titre": "OpenStax, Anatomy and Physiology 2e — 11.5 Muscles of the Pectoral Girdle and Upper Limbs",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"
+  },
+  "statpearls-muscles": {
+   "titre": "StatPearls — Anatomy, Shoulder and Upper Limb, Muscles",
+   "url": "https://www.statpearls.com/point-of-care/31505"
+  },
+  "statpearls-epaule": {
+   "titre": "StatPearls — Anatomy, Shoulder and Upper Limb, Shoulder Muscles",
+   "url": "https://www.statpearls.com/point-of-care/28998"
+  },
+  "statpearls-main": {
+   "titre": "StatPearls — article sur les muscles de la main (thénar, hypothénar, interosseux, lombricaux)",
+   "url": "https://www.statpearls.com/sp/al/13/23736/"
+  },
+  "teachmeanatomy-epaule": {
+   "titre": "TeachMeAnatomy — muscles intrinsèques de l'épaule",
+   "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/"
+  },
+  "teachmeanatomy-bras": {
+   "titre": "TeachMeAnatomy — muscles du bras",
+   "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/"
+  },
+  "teachmeanatomy-avant-bras-ant": {
+   "titre": "TeachMeAnatomy — muscles de la loge antérieure de l'avant-bras",
+   "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/"
+  },
+  "teachmeanatomy-avant-bras-post": {
+   "titre": "TeachMeAnatomy — muscles de la loge postérieure de l'avant-bras",
+   "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/"
+  },
+  "teachmeanatomy-main": {
+   "titre": "TeachMeAnatomy — muscles de la main",
+   "url": "https://teachmeanatomy.info/upper-limb/muscles/hand/"
+  },
+  "kenhub-epaule": {
+   "titre": "Kenhub — muscles de l'épaule (Shoulder muscles)",
+   "url": "https://www.kenhub.com/en/library/anatomy/shoulder-muscles"
+  },
+  "kenhub-coiffe": {
+   "titre": "Kenhub — anatomie de l'épaule et du bras, tableau de la coiffe des rotateurs (Arm and shoulder anatomy)",
+   "url": "https://www.kenhub.com/en/library/anatomy/arm-and-shoulder-anatomy"
+  },
+  "kenhub-deltoide": {
+   "titre": "Kenhub — muscle deltoïde (Deltoid muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-deltoid-muscle"
+  },
+  "kenhub-supra-epineux": {
+   "titre": "Kenhub — muscle supra-épineux (Supraspinatus muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/supraspinatus-muscle"
+  },
+  "kenhub-infra-epineux": {
+   "titre": "Kenhub — muscle infra-épineux (Infraspinatus muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/infraspinatus-muscle"
+  },
+  "kenhub-petit-rond": {
+   "titre": "Kenhub — muscle petit rond (Teres minor muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/teres-minor-muscle"
+  },
+  "kenhub-subscapulaire": {
+   "titre": "Kenhub — muscle subscapulaire (Subscapularis muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/subscapularis-muscle"
+  },
+  "kenhub-grand-rond": {
+   "titre": "Kenhub — muscle grand rond (Teres major muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/teres-major-muscle"
+  },
+  "kenhub-bras": {
+   "titre": "Kenhub — muscles du bras (Arm muscles)",
+   "url": "https://www.kenhub.com/en/library/anatomy/arm-muscles"
+  },
+  "kenhub-fr-bras": {
+   "titre": "Kenhub (en français) — Muscles du bras",
+   "url": "https://www.kenhub.com/fr/library/anatomie/muscles-du-bras"
+  },
+  "kenhub-biceps": {
+   "titre": "Kenhub — muscle biceps brachial (Biceps brachii muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/biceps-brachii-muscle"
+  },
+  "kenhub-triceps": {
+   "titre": "Kenhub — muscle triceps brachial (Triceps brachii muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/triceps-brachii-muscle"
+  },
+  "kenhub-brachial": {
+   "titre": "Kenhub — muscle brachial (Brachialis muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/brachialis-muscle"
+  },
+  "kenhub-coraco-brachial": {
+   "titre": "Kenhub — muscle coraco-brachial (Coracobrachialis muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/coracobrachialis-muscle"
+  },
+  "kenhub-ancone": {
+   "titre": "Kenhub — muscle anconé (Anconeus muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/anconeus-muscle"
+  },
+  "kenhub-flechisseurs-superficiels": {
+   "titre": "Kenhub — fléchisseurs superficiels de l'avant-bras (Superficial anterior forearm muscles)",
+   "url": "https://kenhub.com/en/library/anatomy/the-superficial-flexors-of-the-forearm"
+  },
+  "kenhub-flechisseurs-profonds": {
+   "titre": "Kenhub — fléchisseurs profonds de l'avant-bras (Deep anterior forearm muscles)",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-deep-flexors-of-the-forearm"
+  },
+  "kenhub-fsd": {
+   "titre": "Kenhub — muscle fléchisseur superficiel des doigts (Flexor digitorum superficialis muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/flexor-digitorum-superficialis-muscle"
+  },
+  "kenhub-fpd": {
+   "titre": "Kenhub — muscle fléchisseur profond des doigts (Flexor digitorum profundus muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/flexor-digitorum-profundus-muscle"
+  },
+  "kenhub-lfp": {
+   "titre": "Kenhub — muscle long fléchisseur du pouce (Flexor pollicis longus muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/flexor-pollicis-longus-muscle"
+  },
+  "kenhub-carre-pronateur": {
+   "titre": "Kenhub — muscle carré pronateur (Pronator quadratus muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/pronator-quadratus-muscle"
+  },
+  "kenhub-extenseurs-superficiels": {
+   "titre": "Kenhub — extenseurs superficiels de l'avant-bras (Superficial posterior forearm muscles)",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-superficial-extensors-of-the-forearm"
+  },
+  "kenhub-extenseurs-profonds": {
+   "titre": "Kenhub — extenseurs profonds de l'avant-bras (Deep posterior forearm muscles)",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-deep-extensors-of-the-forearm"
+  },
+  "kenhub-extenseur-doigts": {
+   "titre": "Kenhub — muscle extenseur des doigts (Extensor digitorum muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/extensor-digitorum-muscle"
+  },
+  "kenhub-supinateur": {
+   "titre": "Kenhub — muscle supinateur (Supinator muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/supinator-muscle"
+  },
+  "kenhub-thenar": {
+   "titre": "Kenhub — muscles thénariens (Thenar muscles)",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-thenar-muscles"
+  },
+  "kenhub-adducteur-pouce": {
+   "titre": "Kenhub — muscle adducteur du pouce (Adductor pollicis muscle)",
+   "url": "https://www.kenhub.com/en/library/anatomy/adductor-pollicis-muscle"
+  },
+  "kenhub-hypothenar": {
+   "titre": "Kenhub — muscles hypothénariens (Hypothenar muscles)",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-hypothenar-muscles"
+  },
+  "kenhub-lombricaux": {
+   "titre": "Kenhub — muscles lombricaux de la main (Lumbrical muscles)",
+   "url": "https://www.kenhub.com/en/library/anatomy/lumbrical-muscles-of-the-hand"
+  },
+  "kenhub-interosseux-dorsaux": {
+   "titre": "Kenhub — muscles interosseux dorsaux de la main (Dorsal interossei muscles)",
+   "url": "https://www.kenhub.com/en/library/anatomy/dorsal-interossei-muscles-of-the-hand"
+  },
+  "kenhub-interosseux-palmaires": {
+   "titre": "Kenhub — muscles interosseux palmaires (Palmar interossei muscles)",
+   "url": "https://www.kenhub.com/en/library/anatomy/palmar-interossei-muscles"
+  },
+  "uw-carre-pronateur": {
+   "titre": "University of Washington, Department of Radiology — Muscle Atlas : Pronator Quadratus",
+   "url": "https://rad.uw.edu/muscle-atlas/pronator-quadratus"
+  },
+  "uw-lfp": {
+   "titre": "University of Washington, Department of Radiology — Muscle Atlas : Flexor Pollicis Longus",
+   "url": "https://rad.uw.edu/muscle-atlas/flexor-pollicis-longus"
+  },
+  "wsu-avant-bras": {
+   "titre": "learning.medicine.wsu.edu — Gross Anatomy, manuel en ligne : chapitre sur l'avant-bras (tableaux et notes cliniques)",
+   "url": "https://learning.medicine.wsu.edu/gross-anatomy/textbook/10-arm/forearm"
+  },
+  "wikipedia-fr-deltoide": {
+   "titre": "Wikipédia (fr) — Muscle deltoïde (nomenclature française, recoupement)",
+   "url": "https://fr.wikipedia.org/wiki/Muscle_deltoïde"
+  },
+  "wikipedia-fr-fuc": {
+   "titre": "Wikipédia (fr) — Muscle fléchisseur ulnaire du carpe (nomenclature française, recoupement)",
+   "url": "https://fr.wikipedia.org/wiki/Muscle_fléchisseur_ulnaire_du_carpe"
+  },
+  "wikipedia-fr-supinateur": {
+   "titre": "Wikipédia (fr) — Muscle supinateur (nomenclature française, recoupement)",
+   "url": "https://fr.wikipedia.org/wiki/Muscle_supinateur"
+  },
+  "wikipedia-fr-carre-pronateur": {
+   "titre": "Wikipédia (fr) — Muscle carré pronateur (nomenclature française, recoupement)",
+   "url": "https://fr.wikipedia.org/wiki/Muscle_carré_pronateur"
+  },
+  "wikipedia-fr-interosseux-dorsaux": {
+   "titre": "Wikipédia (fr) — Muscles interosseux dorsaux de la main (nomenclature française, recoupement)",
+   "url": "https://fr.wikipedia.org/wiki/Muscles_interosseux_dorsaux_de_la_main"
+  },
+  "wikipedia-fr-cfp": {
+   "titre": "Wikipédia (fr) — Muscle court fléchisseur du pouce (nomenclature française, recoupement)",
+   "url": "https://fr.wikipedia.org/wiki/Muscle_court_fléchisseur_du_pouce"
+  }
+ },
+ "fiches": [
+  {
+   "id": "biceps-brachial",
+   "resume": "Le muscle du devant du bras, à deux chefs : il plie le coude et tourne la paume vers le haut.",
+   "origine": [
+    {
+     "texte": "Chef long : tubercule supra-glénoïdal de la scapula et bourrelet glénoïdal ; son tendon traverse l'articulation de l'épaule puis descend dans le sillon intertuberculaire",
+     "os": [
+      "scapula",
+      "bourrelet-glenoidal"
+     ]
+    },
+    {
+     "texte": "Chef court : sommet du processus coracoïde, par un tendon commun avec le coraco-brachial",
+     "os": [
+      "scapula"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Partie postérieure de la tubérosité du radius ; une bourse sépare le tendon de la partie antérieure de la tubérosité",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Fascia de l'avant-bras, par l'aponévrose bicipitale (lacertus fibrosus) qui se détache du bord médial du tendon",
+     "os": []
+    }
+   ],
+   "action": "Fléchit le coude et tourne l'avant-bras en supination, surtout coude fléchi ; aide un peu à porter le bras en avant",
+   "actions": [
+    {
+     "articulation": "coude",
+     "mouvement": "flexion",
+     "role": "principal"
+    },
+    {
+     "articulation": "radio-ulnaire",
+     "mouvement": "supination",
+     "role": "principal",
+     "precision": "puissante coude fléchi à angle droit, inefficace coude tendu"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "flexion",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "stabilisation",
+     "role": "accessoire",
+     "precision": "le tendon du chef long retient la tête humérale contre la glène"
+    }
+   ],
+   "synergistes": [
+    "brachial",
+    "brachio-radial",
+    "supinateur"
+   ],
+   "antagonistes": [
+    "triceps-brachial",
+    "rond-pronateur",
+    "carre-pronateur"
+   ],
+   "innervation": {
+    "nerf": "nerf-musculocutane",
+    "texte": "Nerf musculo-cutané",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux musculaires de l'artère brachiale",
+    "arteres": [
+     "humerale"
+    ]
+   },
+   "palpation": "Sur le devant du bras, coude fléchi contre résistance ; son tendon se sent comme une corde au milieu du pli du coude",
+   "test": "Flexion du coude contre résistance, paume tournée vers le haut ; puis supination contre résistance, coude fléchi à angle droit",
+   "atteinte": "Lésion du nerf musculo-cutané : flexion du coude et supination affaiblies, sans être abolies (le brachio-radial et le supinateur persistent). Rupture du tendon du chef long : le corps charnu se met en boule en bas du bras (signe de Popeye), avec peu de perte de force",
+   "clinique": "Le réflexe bicipital (percussion du tendon au pli du coude) explore les racines C5 et C6. Dans le sillon bicipital médial, on comprime l'artère brachiale contre l'humérus",
+   "memo": "Le geste du tire-bouchon : on visse (supination), puis on tire le bouchon (flexion du coude)",
+   "variantes": "Un troisième chef, né de l'humérus, chez environ une personne sur dix ; plus rarement quatre chefs ou davantage",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-bras",
+    "kenhub-biceps",
+    "kenhub-fr-bras",
+    "statpearls-muscles"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "triceps-brachial",
+   "resume": "Le seul muscle de l'arrière du bras, à trois chefs : il tend le coude.",
+   "origine": [
+    {
+     "texte": "Chef long : tubercule infra-glénoïdal de la scapula",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Chef latéral : face postérieure de l'humérus, au-dessus du sillon du nerf radial, et septum intermusculaire latéral",
+     "os": [
+      "humerus",
+      "septum-intermusculaire-lateral-du-bras"
+     ]
+    },
+    {
+     "texte": "Chef médial : face postérieure de l'humérus, au-dessous du sillon du nerf radial, et septums intermusculaires",
+     "os": [
+      "humerus",
+      "septum-intermusculaire-medial-du-bras",
+      "septum-intermusculaire-lateral-du-bras"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Partie postérieure de la face supérieure de l'olécrâne, par un tendon commun aux trois chefs",
+     "os": [
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Fascia de l'avant-bras, par une expansion qui passe sur l'anconé",
+     "os": []
+    }
+   ],
+   "action": "Étend le coude ; son chef long aide à ramener le bras en arrière et contre le corps",
+   "actions": [
+    {
+     "articulation": "coude",
+     "mouvement": "extension",
+     "role": "principal"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "extension",
+     "role": "accessoire",
+     "precision": "chef long seul"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "adduction",
+     "role": "accessoire",
+     "precision": "chef long seul"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "stabilisation",
+     "role": "accessoire",
+     "precision": "le chef long soutient la tête humérale par en dessous"
+    }
+   ],
+   "synergistes": [
+    "ancone"
+   ],
+   "antagonistes": [
+    "biceps-brachial",
+    "brachial",
+    "brachio-radial"
+   ],
+   "innervation": {
+    "nerf": "nerf-radial",
+    "texte": "Nerf radial, par un rameau pour chaque chef",
+    "racines": [
+     "C6",
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère profonde du bras et artère collatérale ulnaire supérieure ; artère circonflexe postérieure de l'humérus pour le chef latéral",
+    "arteres": [
+     "humerale-profonde",
+     "artere-collaterale-ulnaire",
+     "artere-circonflexe-posterieure-de-l-humerus"
+    ]
+   },
+   "palpation": "À l'arrière du bras, coude tendu contre résistance : le chef latéral fait saillie en dehors, le chef long en dedans ; le tendon se sent juste au-dessus de l'olécrâne",
+   "test": "Extension du coude contre résistance, à partir du coude à demi fléchi",
+   "atteinte": "Lésion haute du nerf radial (creux axillaire, appui sur des béquilles) : le coude ne s'étend plus contre résistance. Fracture de la diaphyse de l'humérus : le triceps est en général épargné, ses rameaux naissant plus haut ; la main tombe mais le coude s'étend encore",
+   "clinique": "Le réflexe tricipital (percussion du tendon au-dessus de l'olécrâne) explore surtout la racine C7",
+   "memo": "Tri-ceps, trois chefs : long, latéral, médial. Le sillon du nerf radial sépare le latéral (au-dessus) du médial (au-dessous)",
+   "variantes": "Le chef long reçoit parfois son rameau du nerf axillaire ; un quatrième chef, né de l'humérus, est possible",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-bras",
+    "kenhub-triceps",
+    "kenhub-bras",
+    "statpearls-muscles"
+   ],
+   "divergences": "Racines : C7 et C8 pour Gray (1918) ; C6 à C8 pour Kenhub et StatPearls, version retenue"
+  },
+  {
+   "id": "deltoide",
+   "resume": "Le galbe de l'épaule : un éventail à trois faisceaux qui écarte le bras du corps.",
+   "origine": [
+    {
+     "texte": "Faisceau claviculaire (antérieur) : bord antérieur et face supérieure du tiers latéral de la clavicule",
+     "os": [
+      "clavicule"
+     ]
+    },
+    {
+     "texte": "Faisceau acromial (moyen) : bord latéral et face supérieure de l'acromion",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Faisceau spinal (postérieur) : lèvre inférieure du bord postérieur de l'épine de la scapula",
+     "os": [
+      "scapula"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Tubérosité deltoïdienne, en forme de V, au milieu de la face latérale de l'humérus",
+     "os": [
+      "humerus"
+     ]
+    }
+   ],
+   "action": "Écarte le bras du corps une fois le mouvement amorcé ; ses fibres antérieures le portent en avant et en dedans, ses fibres postérieures en arrière et en dehors",
+   "actions": [
+    {
+     "articulation": "epaule",
+     "mouvement": "abduction",
+     "role": "principal",
+     "precision": "faisceau acromial ; prend le relais du supra-épineux après les 15 premiers degrés"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "flexion",
+     "role": "principal",
+     "precision": "faisceau claviculaire"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "faisceau spinal"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "rotation-mediale",
+     "role": "accessoire",
+     "precision": "faisceau claviculaire"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "rotation-laterale",
+     "role": "accessoire",
+     "precision": "faisceau spinal"
+    }
+   ],
+   "synergistes": [
+    "supra-epineux",
+    "trapeze",
+    "dentele-anterieur"
+   ],
+   "antagonistes": [
+    "grand-dorsal",
+    "grand-pectoral",
+    "grand-rond"
+   ],
+   "innervation": {
+    "nerf": "nerf-axillaire",
+    "texte": "Nerf axillaire",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères circonflexes postérieure et antérieure de l'humérus, rameaux deltoïdien et acromial de l'artère thoraco-acromiale ; appoint de l'artère profonde du bras",
+    "arteres": [
+     "artere-circonflexe-posterieure-de-l-humerus",
+     "artere-circonflexe-anterieure-de-l-humerus",
+     "artere-thoraco-acromiale",
+     "humerale-profonde"
+    ]
+   },
+   "palpation": "Tout le moignon de l'épaule ; les trois faisceaux se distinguent bras écarté à l'horizontale contre résistance",
+   "test": "Bras déjà écarté de plus de 15° du corps, le sujet résiste à une poussée vers le bas ; on sent le muscle durcir sous l'acromion",
+   "atteinte": "Lésion du nerf axillaire (luxation de l'épaule, fracture du col chirurgical de l'humérus) : abduction très affaiblie, épaule aplatie par la fonte du muscle, perte de sensibilité sur une zone de peau de la face latérale de l'épaule",
+   "clinique": "Site courant d'injection intramusculaire : on pique en plein corps charnu, à distance du nerf axillaire qui contourne le col chirurgical de l'humérus sous le muscle",
+   "memo": "Delta comme la lettre grecque Δ, un triangle pointe en bas. Devant il fléchit, au milieu il écarte, derrière il étend",
+   "variantes": "Variations rares : fusion avec le grand pectoral, continuité avec le trapèze, faisceaux surnuméraires venus de la scapula",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-epaule",
+    "kenhub-deltoide",
+    "statpearls-muscles",
+    "wikipedia-fr-deltoide"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "brachio-radial",
+   "resume": "Le relief du bord latéral de l'avant-bras : un fléchisseur du coude, surtout efficace main de profil.",
+   "origine": [
+    {
+     "texte": "Deux tiers supérieurs de la crête supra-condylaire latérale de l'humérus",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Septum intermusculaire latéral du bras",
+     "os": [
+      "septum-intermusculaire-lateral-du-bras"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face latérale du radius, à la base du processus styloïde",
+     "os": [
+      "radius"
+     ]
+    }
+   ],
+   "action": "Fléchit le coude, surtout avant-bras en position intermédiaire (pouce en haut) ; ramène l'avant-bras vers cette position depuis la pronation ou la supination complètes",
+   "actions": [
+    {
+     "articulation": "coude",
+     "mouvement": "flexion",
+     "role": "principal",
+     "precision": "le plus efficace avant-bras à mi-chemin entre pronation et supination, dans les gestes rapides ou en charge"
+    },
+    {
+     "articulation": "radio-ulnaire",
+     "mouvement": "supination",
+     "role": "accessoire",
+     "precision": "seulement de la pronation complète jusqu'à la position intermédiaire"
+    },
+    {
+     "articulation": "radio-ulnaire",
+     "mouvement": "pronation",
+     "role": "accessoire",
+     "precision": "seulement de la supination complète jusqu'à la position intermédiaire"
+    }
+   ],
+   "synergistes": [
+    "biceps-brachial",
+    "brachial"
+   ],
+   "antagonistes": [
+    "triceps-brachial",
+    "ancone"
+   ],
+   "innervation": {
+    "nerf": "nerf-radial",
+    "texte": "Nerf radial, par un rameau né au-dessus du coude",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère récurrente radiale, branche de l'artère radiale, et artère collatérale radiale, branche de l'artère profonde du bras",
+    "arteres": [
+     "radiale",
+     "artere-collaterale-radiale"
+    ]
+   },
+   "palpation": "Bord latéral de l'avant-bras, sous le coude : il saille quand on fléchit le coude contre résistance, pouce vers le haut",
+   "test": "Flexion du coude contre résistance, avant-bras en position intermédiaire (pouce en haut) : on voit et on sent le muscle se tendre",
+   "atteinte": "Lésion du nerf radial au bras : le muscle ne se contracte plus, mais le coude se fléchit encore grâce au biceps et au brachial ; le signe dominant est la main tombante, par paralysie des extenseurs du poignet",
+   "clinique": "Le réflexe stylo-radial (percussion du radius au-dessus du processus styloïde) explore surtout la racine C6. Au poignet, l'artère radiale longe le bord médial de son tendon",
+   "memo": "Ancien « long supinateur », nom trompeur : rangé avec les extenseurs et innervé par le nerf radial, il fléchit pourtant le coude (le geste de lever sa chope)",
+   "variantes": "Peut fusionner avec le brachial ; tendon parfois divisé en deux ou trois languettes",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-post",
+    "kenhub-extenseurs-superficiels",
+    "wsu-avant-bras",
+    "statpearls-muscles"
+   ],
+   "divergences": "Racines : C5–C6 pour Gray (1918), version retenue ; Kenhub et StatPearls ajoutent C7"
+  },
+  {
+   "id": "extenseur-doigts",
+   "resume": "Le muscle qui ouvre la main : ses quatre tendons, visibles au dos de la main, étendent les quatre derniers doigts.",
+   "origine": [
+    {
+     "texte": "Épicondyle latéral de l'humérus, par le tendon commun des extenseurs",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Septums intermusculaires voisins et fascia de l'avant-bras",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Quatre tendons, de l'index à l'auriculaire, qui s'étalent chacun en aponévrose dorsale (dossière) sur la phalange proximale",
+     "os": []
+    },
+    {
+     "texte": "Bandelette médiane de cette aponévrose : base de la phalange moyenne des doigts 2 à 5",
+     "os": [
+      "phalange-moyenne-du-deuxieme-doigt-de-la-main",
+      "phalange-moyenne-du-troisieme-doigt-de-la-main",
+      "phalange-moyenne-du-quatrieme-doigt-de-la-main",
+      "phalange-moyenne-du-cinquieme-doigt-de-la-main"
+     ]
+    },
+    {
+     "texte": "Bandelettes latérales, réunies en un tendon terminal : base de la phalange distale des doigts 2 à 5",
+     "os": [
+      "phalange-distale-du-deuxieme-doigt-de-la-main",
+      "phalange-distale-du-troisieme-doigt-de-la-main",
+      "phalange-distale-du-quatrieme-doigt-de-la-main",
+      "phalange-distale-du-cinquieme-doigt-de-la-main"
+     ]
+    }
+   ],
+   "action": "Étend les quatre derniers doigts, surtout au niveau des articulations métacarpo-phalangiennes, en les écartant un peu ; aide à étendre le poignet",
+   "actions": [
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "extension",
+     "role": "principal"
+    },
+    {
+     "articulation": "doigts-ipp",
+     "mouvement": "extension",
+     "role": "accessoire",
+     "precision": "les lombricaux et les interosseux font l'essentiel"
+    },
+    {
+     "articulation": "doigts-ipd",
+     "mouvement": "extension",
+     "role": "accessoire",
+     "precision": "les lombricaux et les interosseux font l'essentiel"
+    },
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "abduction",
+     "role": "accessoire",
+     "precision": "écarte un peu les doigts en les étendant"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "extension",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "extenseur-de-l-index",
+    "extenseur-du-petit-doigt",
+    "lombricaux-de-la-main",
+    "interosseux-dorsaux"
+   ],
+   "antagonistes": [
+    "flechisseur-superficiel-doigts",
+    "flechisseur-profond-doigts"
+   ],
+   "innervation": {
+    "nerf": "nerf-interosseux-posterieur-de-l-avant-bras",
+    "texte": "Nerf interosseux postérieur, branche terminale du rameau profond du nerf radial",
+    "racines": [
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère interosseuse postérieure surtout ; artère récurrente radiale et artère interosseuse antérieure",
+    "arteres": [
+     "artere-interosseuse-posterieure"
+    ]
+   },
+   "palpation": "Au milieu du dos de l'avant-bras ; ses tendons se voient au dos de la main quand on étend les doigts en les écartant",
+   "test": "Poignet soutenu en position neutre, le sujet étend les articulations métacarpo-phalangiennes contre une résistance appliquée sur les phalanges proximales",
+   "atteinte": "Lésion du nerf radial ou du nerf interosseux postérieur : les doigts ne se relèvent plus à leur base (doigts tombants) ; les deux dernières phalanges s'étendent encore, grâce aux lombricaux et aux interosseux",
+   "clinique": "Arrachement du tendon terminal sur la phalange distale : doigt en maillet. Rupture de la bandelette médiane : déformation en boutonnière. Il partage le tendon commun des extenseurs, siège de l'épicondylite latérale",
+   "memo": "Quatre tendons reliés entre eux par des bandelettes au dos de la main : c'est pourquoi on lève mal l'annulaire seul, les autres doigts pliés",
+   "variantes": "Nombre de tendons variable ; connexions intertendineuses inconstantes ; parfois un faisceau pour le pouce",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-post",
+    "kenhub-extenseur-doigts",
+    "kenhub-extenseurs-superficiels",
+    "statpearls-muscles"
+   ],
+   "divergences": "Gray (1918) ne cite que la racine C7 ; Kenhub et StatPearls donnent C7–C8"
+  },
+  {
+   "id": "brachial",
+   "resume": "Le fléchisseur pur du coude, caché sous le biceps : il agit quelle que soit la position de la main.",
+   "origine": [
+    {
+     "texte": "Moitié distale de la face antérieure de l'humérus ; en haut, deux languettes encadrent l'insertion du deltoïde",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Septums intermusculaires médial et latéral du bras",
+     "os": [
+      "septum-intermusculaire-medial-du-bras",
+      "septum-intermusculaire-lateral-du-bras"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Tubérosité de l'ulna et face antérieure du processus coronoïde",
+     "os": [
+      "ulna"
+     ]
+    }
+   ],
+   "action": "Fléchit le coude, avant-bras en pronation comme en supination ; freine son extension quand on repose une charge",
+   "actions": [
+    {
+     "articulation": "coude",
+     "mouvement": "flexion",
+     "role": "principal",
+     "precision": "dans toutes les positions de l'avant-bras : il ne s'attache pas au radius"
+    }
+   ],
+   "synergistes": [
+    "biceps-brachial",
+    "brachio-radial",
+    "rond-pronateur"
+   ],
+   "antagonistes": [
+    "triceps-brachial",
+    "ancone"
+   ],
+   "innervation": {
+    "nerf": "nerf-musculocutane",
+    "texte": "Nerf musculo-cutané ; un filet du nerf radial (C7) pour la partie inféro-latérale",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux de l'artère brachiale et artère récurrente radiale ; appoint inconstant des artères collatérales ulnaires",
+    "arteres": [
+     "humerale",
+     "artere-collaterale-ulnaire",
+     "artere-collaterale-ulnaire-inferieure"
+    ]
+   },
+   "palpation": "De part et d'autre du tendon du biceps, en bas du bras, coude fléchi contre résistance, avant-bras à demi en pronation",
+   "test": "Flexion du coude contre résistance, avant-bras en pronation pour mettre le biceps hors jeu",
+   "atteinte": "Lésion du nerf musculo-cutané : flexion du coude très affaiblie (brachial et biceps paralysés), mais conservée en partie grâce au brachio-radial et au filet radial du brachial",
+   "clinique": "Il forme, avec le supinateur, le plancher de la fosse cubitale. Surmenage chez le grimpeur : tendinite du brachial, douleur du devant du coude qui empêche de le tendre à fond",
+   "memo": "Le cheval de trait du coude : il ne touche pas au radius, donc il fléchit sans se soucier de la position de la main",
+   "variantes": "Parfois divisé en deux parties ; faisceaux possibles vers le radius, l'aponévrose bicipitale ou le rond pronateur",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-bras",
+    "kenhub-brachial",
+    "kenhub-bras",
+    "statpearls-muscles"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "grand-rond",
+   "resume": "Un muscle épais tendu de la pointe de la scapula à l'humérus : le petit aide du grand dorsal.",
+   "origine": [
+    {
+     "texte": "Face postérieure de l'angle inférieur de la scapula et partie basse de son bord latéral",
+     "os": [
+      "scapula"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Lèvre médiale du sillon intertuberculaire de l'humérus (crête du tubercule mineur), en arrière du tendon du grand dorsal",
+     "os": [
+      "humerus"
+     ]
+    }
+   ],
+   "action": "Rapproche le bras du corps, le tourne en dedans et le ramène en arrière quand il est levé",
+   "actions": [
+    {
+     "articulation": "epaule",
+     "mouvement": "adduction",
+     "role": "principal"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "rotation-mediale",
+     "role": "principal"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "à partir du bras levé en avant"
+    }
+   ],
+   "synergistes": [
+    "grand-dorsal",
+    "grand-pectoral",
+    "subscapulaire"
+   ],
+   "antagonistes": [
+    "deltoide",
+    "supra-epineux",
+    "infra-epineux",
+    "petit-rond"
+   ],
+   "innervation": {
+    "nerf": "nerf-subscapulaire-inferieur",
+    "texte": "Nerf subscapulaire inférieur",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère thoracodorsale, branche de l'artère subscapulaire, et artère circonflexe postérieure de l'humérus",
+    "arteres": [
+     "artere-thoracodorsale",
+     "artere-subscapulaire",
+     "artere-circonflexe-posterieure-de-l-humerus"
+    ]
+   },
+   "palpation": "Au-dessus et en dehors de l'angle inférieur de la scapula, dans le pli postérieur de l'aisselle, quand le sujet serre le bras contre le corps malgré une résistance",
+   "test": "Main posée en arrière sur la crête iliaque, le sujet pousse le coude en arrière et en dedans contre résistance : le muscle durcit au-dessus de l'angle inférieur de la scapula",
+   "atteinte": "Paralysie isolée rare et peu gênante : le grand dorsal, le grand pectoral et le subscapulaire assurent les mêmes mouvements. Elle accompagne les lésions du faisceau postérieur du plexus brachial",
+   "clinique": "Son bord supérieur limite en bas l'espace quadrangulaire, où passent le nerf axillaire et l'artère circonflexe postérieure de l'humérus ; à son bord inférieur, l'artère axillaire devient l'artère brachiale",
+   "memo": "Le petit aide du grand dorsal : même action (adduction, rotation médiale, extension), tendon accolé au sien. Il ne fait pas partie de la coiffe des rotateurs",
+   "variantes": "Ses fibres ou son tendon fusionnent parfois avec ceux du grand dorsal",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-epaule",
+    "kenhub-grand-rond",
+    "kenhub-epaule",
+    "statpearls-muscles"
+   ],
+   "divergences": "Racines : C5–C6 pour Gray (1918) et StatPearls, C5–C7 pour Kenhub, qui évoque aussi une innervation possible par le nerf thoracodorsal"
+  },
+  {
+   "id": "infra-epineux",
+   "resume": "Le muscle de la fosse située sous l'épine de la scapula : le principal rotateur latéral du bras, membre de la coiffe des rotateurs.",
+   "origine": [
+    {
+     "texte": "Deux tiers médiaux de la fosse infra-épineuse de la scapula",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Fascia infra-épineux, qui le recouvre",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Facette moyenne du tubercule majeur de l'humérus",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Capsule de l'articulation de l'épaule, à laquelle le tendon adhère en arrière",
+     "os": [
+      "capsule-articulaire-de-l-articulation-glenohumerale"
+     ]
+    }
+   ],
+   "action": "Tourne le bras en dehors ; plaque la tête de l'humérus dans la glène et protège l'épaule en arrière",
+   "actions": [
+    {
+     "articulation": "epaule",
+     "mouvement": "rotation-laterale",
+     "role": "principal"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "stabilisation",
+     "role": "principal",
+     "precision": "coiffe des rotateurs : retient la tête humérale en arrière et l'empêche de monter sous l'acromion"
+    }
+   ],
+   "synergistes": [
+    "petit-rond",
+    "deltoide",
+    "supra-epineux"
+   ],
+   "antagonistes": [
+    "subscapulaire",
+    "grand-pectoral",
+    "grand-dorsal",
+    "grand-rond"
+   ],
+   "innervation": {
+    "nerf": "nerf-suprascapulaire",
+    "texte": "Nerf supra-scapulaire",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère supra-scapulaire et artère circonflexe de la scapula",
+    "arteres": [
+     "artere-suprascapulaire",
+     "artere-circonflexe-de-la-scapula"
+    ]
+   },
+   "palpation": "Dans la fosse infra-épineuse, sous l'épine de la scapula, entre le trapèze et le bord postérieur du deltoïde ; il durcit en rotation latérale contre résistance",
+   "test": "Coude au corps, fléchi à angle droit : rotation latérale du bras contre résistance, comparée des deux côtés",
+   "atteinte": "Rupture du tendon ou lésion du nerf supra-scapulaire : rotation latérale faible ; l'avant-bras, placé en rotation latérale par l'examinateur, revient de lui-même vers le ventre. La fosse infra-épineuse se creuse par fonte du muscle",
+   "clinique": "Deuxième tendon de la coiffe des rotateurs par la fréquence des ruptures, après celui du supra-épineux",
+   "memo": "Infra = sous l'épine. Sur le tubercule majeur, de haut en bas : supra-épineux, infra-épineux, petit rond ; le subscapulaire, lui, va au tubercule mineur",
+   "variantes": "Souvent uni au petit rond ; une bourse sépare parfois son tendon du col de la scapula",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-epaule",
+    "kenhub-infra-epineux",
+    "kenhub-coiffe",
+    "statpearls-epaule",
+    "statpearls-muscles"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "supra-epineux",
+   "resume": "Le muscle de la fosse située au-dessus de l'épine de la scapula : il amorce l'écartement du bras et coiffe la tête de l'humérus.",
+   "origine": [
+    {
+     "texte": "Deux tiers médiaux de la fosse supra-épineuse de la scapula",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Fascia supra-épineux, qui le recouvre",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Facette supérieure du tubercule majeur de l'humérus, après passage sous l'acromion",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Capsule de l'articulation de l'épaule, à laquelle le tendon adhère",
+     "os": [
+      "capsule-articulaire-de-l-articulation-glenohumerale"
+     ]
+    }
+   ],
+   "action": "Amorce l'écartement du bras, puis aide le deltoïde ; maintient la tête de l'humérus contre la glène",
+   "actions": [
+    {
+     "articulation": "epaule",
+     "mouvement": "abduction",
+     "role": "principal",
+     "precision": "amorce le mouvement (15 premiers degrés environ), puis seconde le deltoïde"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "stabilisation",
+     "role": "principal",
+     "precision": "coiffe des rotateurs : applique la tête humérale contre la glène pendant que le deltoïde lève le bras"
+    }
+   ],
+   "synergistes": [
+    "deltoide",
+    "infra-epineux",
+    "subscapulaire",
+    "petit-rond"
+   ],
+   "antagonistes": [
+    "grand-pectoral",
+    "grand-dorsal",
+    "grand-rond"
+   ],
+   "innervation": {
+    "nerf": "nerf-suprascapulaire",
+    "texte": "Nerf supra-scapulaire, qui franchit l'incisure scapulaire",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère supra-scapulaire ; appoint inconstant de l'artère dorsale de la scapula",
+    "arteres": [
+     "artere-suprascapulaire"
+    ]
+   },
+   "palpation": "Dans la fosse supra-épineuse, à travers le trapèze ; son tendon se palpe juste en avant de l'acromion quand le sujet met la main dans le dos",
+   "test": "Test de Jobe : bras à 90° dans le plan de la scapula, pouces vers le sol ; le sujet résiste à une pression vers le bas. Douleur ou faiblesse signent l'atteinte du tendon",
+   "atteinte": "Rupture du tendon, la plus fréquente de la coiffe : douleur de l'épaule bras levé, abduction faible ou impossible à amorcer ; le sujet s'aide en penchant le tronc ou en lançant le bras. Lésion du nerf supra-scapulaire : même déficit, avec fonte des fosses supra- et infra-épineuses",
+   "clinique": "Son tendon frotte sous la voûte formée par l'acromion et le ligament coraco-acromial lors de l'abduction : conflit sous-acromial, arc douloureux entre 60° et 120°, puis usure et rupture",
+   "memo": "Supra = au-dessus de l'épine. Il lance l'abduction, le deltoïde la poursuit : les 15 premiers degrés sont à lui",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-epaule",
+    "kenhub-supra-epineux",
+    "kenhub-coiffe",
+    "statpearls-epaule",
+    "statpearls-muscles"
+   ],
+   "divergences": "Part dans l'abduction discutée : 15 premiers degrés pour TeachMeAnatomy et Kenhub, jusqu'à 30° pour StatPearls ; Kenhub juge son rôle exact encore controversé"
+  },
+  {
+   "id": "extenseur-du-petit-doigt",
+   "resume": "Un mince extenseur réservé à l'auriculaire, qui permet de le lever seul.",
+   "origine": [
+    {
+     "texte": "Épicondyle latéral de l'humérus, par le tendon commun des extenseurs",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Septums intermusculaires qui le séparent de l'extenseur des doigts et de l'extenseur ulnaire du carpe",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Aponévrose dorsale (dossière) du 5e doigt, où son tendon, souvent dédoublé, rejoint celui de l'extenseur des doigts ; par elle, phalanges moyenne et distale",
+     "os": [
+      "tendons-extenseurs-doigts",
+      "phalange-moyenne-du-cinquieme-doigt-de-la-main",
+      "phalange-distale-du-cinquieme-doigt-de-la-main"
+     ]
+    }
+   ],
+   "action": "Étend l'auriculaire, même quand les autres doigts sont pliés ; aide à étendre le poignet",
+   "actions": [
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "5e doigt seulement"
+    },
+    {
+     "articulation": "doigts-ipp",
+     "mouvement": "extension",
+     "role": "accessoire",
+     "precision": "5e doigt, avec les lombricaux et les interosseux"
+    },
+    {
+     "articulation": "doigts-ipd",
+     "mouvement": "extension",
+     "role": "accessoire",
+     "precision": "5e doigt, avec les lombricaux et les interosseux"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "extension",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "extenseur-doigts",
+    "extenseur-ulnaire-carpe"
+   ],
+   "antagonistes": [
+    "flechisseur-du-petit-doigt-de-la-main",
+    "flechisseur-superficiel-doigts",
+    "flechisseur-profond-doigts"
+   ],
+   "innervation": {
+    "nerf": "nerf-interosseux-posterieur-de-l-avant-bras",
+    "texte": "Nerf interosseux postérieur, branche terminale du rameau profond du nerf radial",
+    "racines": [
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère interosseuse postérieure ; artère récurrente radiale et artère interosseuse antérieure",
+    "arteres": [
+     "artere-interosseuse-posterieure"
+    ]
+   },
+   "palpation": "Son tendon se sent au dos du poignet, juste en dehors de la tête de l'ulna, quand on lève l'auriculaire seul, les autres doigts fermés",
+   "test": "Les autres doigts fléchis dans la paume, le sujet étend l'auriculaire contre une résistance appliquée sur sa phalange proximale",
+   "atteinte": "Lésion du nerf interosseux postérieur : extension de l'auriculaire perdue avec celle des autres doigts. Rupture isolée du tendon, par usure sur la tête de l'ulna dans la polyarthrite rhumatoïde : l'auriculaire ne se relève plus",
+   "clinique": "Son tendon occupe seul le 5e compartiment du rétinaculum des extenseurs, en regard de l'articulation radio-ulnaire distale",
+   "memo": "Avec l'extenseur de l'index, c'est lui qui permet de « faire les cornes » : index et auriculaire levés, les autres doigts fermés",
+   "variantes": "Tendon simple ou dédoublé ; fusion fréquente avec l'extenseur des doigts ; parfois un tendon pour l'annulaire",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-post",
+    "kenhub-extenseurs-superficiels",
+    "statpearls-muscles"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "extenseur-ulnaire-carpe",
+   "resume": "Le muscle du bord ulnaire du dos de l'avant-bras : il étend le poignet et l'incline du côté du petit doigt.",
+   "origine": [
+    {
+     "texte": "Chef huméral : épicondyle latéral de l'humérus, par le tendon commun des extenseurs",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Chef ulnaire : bord postérieur de l'ulna, par une aponévrose partagée avec le fléchisseur ulnaire du carpe et le fléchisseur profond des doigts",
+     "os": [
+      "ulna"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Tubercule du bord ulnaire de la base du 5e métacarpien, face dorsale",
+     "os": [
+      "cinquieme-metacarpien"
+     ]
+    }
+   ],
+   "action": "Étend le poignet et l'incline du côté ulnaire ; quand il agit seul, c'est l'inclinaison ulnaire qui domine",
+   "actions": [
+    {
+     "articulation": "poignet",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "avec les deux extenseurs radiaux du carpe"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "adduction",
+     "role": "principal",
+     "precision": "inclinaison ulnaire, avec le fléchisseur ulnaire du carpe"
+    }
+   ],
+   "synergistes": [
+    "long-extenseur-radial-carpe",
+    "court-extenseur-radial-carpe",
+    "flechisseur-ulnaire-carpe"
+   ],
+   "antagonistes": [
+    "flechisseur-radial-carpe"
+   ],
+   "innervation": {
+    "nerf": "nerf-interosseux-posterieur-de-l-avant-bras",
+    "texte": "Nerf interosseux postérieur, branche terminale du rameau profond du nerf radial",
+    "racines": [
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère interosseuse postérieure et artère récurrente radiale",
+    "arteres": [
+     "artere-interosseuse-posterieure"
+    ]
+   },
+   "palpation": "Son tendon se sent au dos du poignet, dans la gouttière entre la tête de l'ulna et son processus styloïde, quand on étend le poignet en l'inclinant du côté ulnaire",
+   "test": "Extension du poignet en inclinaison ulnaire, doigts relâchés, contre une résistance appliquée sur le bord ulnaire du dos de la main",
+   "atteinte": "Lésion du nerf interosseux postérieur : le poignet s'étend encore, car les extenseurs radiaux sont épargnés, mais il dévie du côté radial. Lésion du nerf radial au bras : main tombante",
+   "clinique": "Son tendon, dans le 6e compartiment du rétinaculum des extenseurs, peut s'enflammer ou se luxer hors de sa gouttière (sports de raquette) : douleur du bord ulnaire du poignet",
+   "memo": "Extenseur ulnaire : il étend et incline du côté de l'ulna. Avec son vis-à-vis fléchisseur ulnaire, il donne le coup de marteau",
+   "variantes": "Un faisceau tendineux se prolonge souvent vers le 5e doigt ; insertion partielle possible sur le 4e métacarpien",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-post",
+    "kenhub-extenseurs-superficiels",
+    "statpearls-muscles"
+   ],
+   "divergences": "Gray (1918) ne cite que la racine C7 ; Kenhub et StatPearls donnent C7–C8"
+  },
+  {
+   "id": "flechisseur-radial-carpe",
+   "resume": "Un fléchisseur du poignet qui descend en oblique vers le pouce ; son tendon sert de repère pour prendre le pouls radial.",
+   "origine": [
+    {
+     "texte": "Épicondyle médial de l'humérus, par le tendon commun des fléchisseurs",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Fascia de l'avant-bras et septums intermusculaires voisins",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face palmaire de la base du 2e métacarpien, après passage dans une gouttière du trapèze",
+     "os": [
+      "deuxieme-metacarpien"
+     ]
+    },
+    {
+     "texte": "Expansion à la base du 3e métacarpien",
+     "os": [
+      "troisieme-metacarpien"
+     ]
+    }
+   ],
+   "action": "Fléchit le poignet et l'incline du côté radial ; aide un peu à la pronation",
+   "actions": [
+    {
+     "articulation": "poignet",
+     "mouvement": "flexion",
+     "role": "principal"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "abduction",
+     "role": "principal",
+     "precision": "inclinaison radiale, avec les extenseurs radiaux du carpe"
+    },
+    {
+     "articulation": "radio-ulnaire",
+     "mouvement": "pronation",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "flechisseur-ulnaire-carpe",
+    "long-palmaire",
+    "long-extenseur-radial-carpe"
+   ],
+   "antagonistes": [
+    "extenseur-ulnaire-carpe"
+   ],
+   "innervation": {
+    "nerf": "nerf-median",
+    "texte": "Nerf médian",
+    "racines": [
+     "C6",
+     "C7"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux des artères récurrentes ulnaires et de l'artère radiale",
+    "arteres": [
+     "artere-recurrente-ulnaire",
+     "radiale"
+    ]
+   },
+   "palpation": "Tendon saillant au devant du poignet, côté pouce, quand on fléchit le poignet contre résistance ; le pouls radial se prend juste en dehors de lui",
+   "test": "Flexion du poignet en inclinaison radiale contre une résistance appliquée à la base de l'index ; on palpe le tendon",
+   "atteinte": "Lésion du nerf médian au coude ou au-dessus : la flexion du poignet faiblit et la main dévie du côté ulnaire, car le fléchisseur ulnaire du carpe, innervé par le nerf ulnaire, agit seul",
+   "clinique": "Son tendon est le repère du pouls radial (en dehors de lui) et du nerf médian (en dedans, entre lui et le long palmaire). Il gagne la main par un canal propre, à côté du canal carpien",
+   "memo": "Fléchisseur radial : flexion et inclinaison du côté du radius, donc du pouce. Tendons du devant du poignet, du pouce vers l'ulna : fléchisseur radial, long palmaire, fléchisseur ulnaire",
+   "variantes": "Peut manquer ; insertions accessoires sur le trapèze ou le 4e métacarpien ; faisceaux d'origine venus du tendon du biceps ou du radius",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-ant",
+    "kenhub-flechisseurs-superficiels",
+    "statpearls-muscles"
+   ],
+   "divergences": "Gray (1918) ne cite que la racine C6 ; Kenhub et StatPearls donnent C6–C7. Terminaison : 2e métacarpien avec une expansion au 3e pour Gray, bases des 2e et 3e sans distinction pour Kenhub et TeachMeAnatomy"
+  },
+  {
+   "id": "flechisseur-superficiel-doigts",
+   "resume": "Le fléchisseur des phalanges moyennes : quatre tendons, un par doigt, qui permettent de plier chaque doigt séparément.",
+   "origine": [
+    {
+     "texte": "Chef huméro-ulnaire : épicondyle médial de l'humérus (tendon commun des fléchisseurs), ligament collatéral ulnaire du coude et bord médial du processus coronoïde de l'ulna",
+     "os": [
+      "humerus",
+      "ulna",
+      "ligament-collateral-ulnaire"
+     ]
+    },
+    {
+     "texte": "Chef radial : bord antérieur du radius (ligne oblique), de la tubérosité du radius à l'insertion du rond pronateur",
+     "os": [
+      "radius"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Quatre tendons qui traversent le canal carpien ; chacun se dédouble devant la phalange proximale pour laisser passer le tendon du fléchisseur profond, puis se fixe sur les bords de la phalange moyenne (doigts 2 à 5)",
+     "os": [
+      "phalange-moyenne-du-deuxieme-doigt-de-la-main",
+      "phalange-moyenne-du-troisieme-doigt-de-la-main",
+      "phalange-moyenne-du-quatrieme-doigt-de-la-main",
+      "phalange-moyenne-du-cinquieme-doigt-de-la-main"
+     ]
+    }
+   ],
+   "action": "Fléchit la phalange moyenne des quatre derniers doigts, puis la phalange proximale ; aide à fléchir le poignet",
+   "actions": [
+    {
+     "articulation": "doigts-ipp",
+     "mouvement": "flexion",
+     "role": "principal"
+    },
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "flexion",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "flexion",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "flechisseur-profond-doigts"
+   ],
+   "antagonistes": [
+    "extenseur-doigts",
+    "lombricaux-de-la-main",
+    "interosseux-dorsaux",
+    "interosseux-palmaires"
+   ],
+   "innervation": {
+    "nerf": "nerf-median",
+    "texte": "Nerf médian",
+    "racines": [
+     "C7",
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère ulnaire surtout ; artère radiale pour la partie latérale",
+    "arteres": [
+     "ulnaire",
+     "radiale"
+    ]
+   },
+   "palpation": "Ses tendons se sentent au devant du poignet, entre le long palmaire et le fléchisseur ulnaire du carpe, quand on plie les doigts poignet fléchi",
+   "test": "L'examinateur maintient les autres doigts en extension complète, ce qui bloque le fléchisseur profond ; le sujet plie le doigt resté libre à l'articulation interphalangienne proximale",
+   "atteinte": "Lésion haute du nerf médian : l'index et le majeur ne se ferment plus, leurs deux fléchisseurs étant paralysés ; quand le sujet veut fermer le poing, la main prend l'aspect de la « main de bénédiction ». Section isolée d'un tendon superficiel : le doigt plie encore, grâce au fléchisseur profond",
+   "clinique": "Le nerf médian et l'artère ulnaire passent sous l'arcade tendue entre ses deux chefs. Au canal carpien, ses tendons sont sur deux plans : ceux du majeur et de l'annulaire en avant, ceux de l'index et de l'auriculaire en arrière",
+   "memo": "Le superficiel se fend pour laisser passer le profond : c'est le tendon « perforé », traversé par le tendon « perforant »",
+   "variantes": "Le chef radial ou le tendon destiné à l'auriculaire peuvent manquer",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-ant",
+    "kenhub-fsd",
+    "kenhub-flechisseurs-superficiels",
+    "statpearls-muscles"
+   ],
+   "divergences": "Racines : C7 à T1 pour Gray (1918) et StatPearls, C8–T1 pour Kenhub. StatPearls en fait une couche intermédiaire, entre fléchisseurs superficiels et profonds"
+  },
+  {
+   "id": "flechisseur-ulnaire-carpe",
+   "resume": "Le muscle du bord médial de l'avant-bras : il fléchit le poignet et l'incline du côté du petit doigt.",
+   "origine": [
+    {
+     "texte": "Chef huméral : épicondyle médial de l'humérus, par le tendon commun des fléchisseurs",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Chef ulnaire : bord médial de l'olécrâne et deux tiers proximaux du bord postérieur de l'ulna, par une aponévrose",
+     "os": [
+      "ulna"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Pisiforme, os sésamoïde logé dans son tendon",
+     "os": [
+      "pisiforme"
+     ]
+    },
+    {
+     "texte": "Au-delà, par les ligaments pisohamatum et pisométacarpien : hamulus de l'hamatum et base du 5e métacarpien",
+     "os": [
+      "ligament-pisohamatum",
+      "ligament-pisometacarpien",
+      "hamatum",
+      "cinquieme-metacarpien"
+     ]
+    }
+   ],
+   "action": "Fléchit le poignet et l'incline du côté ulnaire",
+   "actions": [
+    {
+     "articulation": "poignet",
+     "mouvement": "flexion",
+     "role": "principal"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "adduction",
+     "role": "principal",
+     "precision": "inclinaison ulnaire, avec l'extenseur ulnaire du carpe"
+    }
+   ],
+   "synergistes": [
+    "flechisseur-radial-carpe",
+    "long-palmaire",
+    "extenseur-ulnaire-carpe"
+   ],
+   "antagonistes": [
+    "long-extenseur-radial-carpe",
+    "court-extenseur-radial-carpe"
+   ],
+   "innervation": {
+    "nerf": "nerf-ulnaire",
+    "texte": "Nerf ulnaire",
+    "racines": [
+     "C7",
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère ulnaire et ses branches récurrentes",
+    "arteres": [
+     "ulnaire",
+     "artere-recurrente-ulnaire"
+    ]
+   },
+   "palpation": "Tendon saillant au bord médial du devant du poignet, que l'on suit jusqu'au pisiforme, quand on fléchit le poignet contre résistance",
+   "test": "Flexion du poignet en inclinaison ulnaire contre résistance ; ou abduction de l'auriculaire contre résistance : le tendon se tend pour fixer le pisiforme",
+   "atteinte": "Lésion du nerf ulnaire au coude ou au-dessus : flexion du poignet affaiblie, avec déviation de la main du côté radial. Si le nerf est lésé au poignet, le muscle est épargné",
+   "clinique": "Le nerf ulnaire entre dans l'avant-bras sous l'arcade tendue entre ses deux chefs (tunnel cubital), siège fréquent de compression. Au poignet, le nerf et l'artère ulnaires sont juste en dehors de son tendon",
+   "memo": "Le seul muscle de la loge antérieure de l'avant-bras entièrement innervé par le nerf ulnaire ; il loge le pisiforme dans son tendon, comme le quadriceps loge la patella",
+   "variantes": "Un petit muscle épitrochléo-anconé, tendu de l'épicondyle médial à l'olécrâne par-dessus le nerf ulnaire, l'accompagne chez certaines personnes",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-ant",
+    "kenhub-flechisseurs-superficiels",
+    "wikipedia-fr-fuc",
+    "wsu-avant-bras",
+    "statpearls-muscles"
+   ],
+   "divergences": "Racines variables selon les sources : C8–T1 (Gray 1918), C7–C8 (StatPearls), C7 à T1 (Kenhub, Wikipédia). Le tableau de StatPearls le rattache au nerf médian, par erreur"
+  },
+  {
+   "id": "long-extenseur-du-pouce",
+   "resume": "L'extenseur de la dernière phalange du pouce ; son tendon borde la tabatière anatomique du côté de l'index.",
+   "origine": [
+    {
+     "texte": "Tiers moyen de la face postérieure de l'ulna, sous l'origine du long abducteur du pouce",
+     "os": [
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Membrane interosseuse de l'avant-bras",
+     "os": [
+      "membrane-interosseuse-de-l-avant-bras"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face dorsale de la base de la phalange distale du pouce ; au poignet, le tendon change de direction dans une gouttière oblique du radius, contre son tubercule dorsal",
+     "os": [
+      "phalange-distale-du-premier-doigt-de-la-main"
+     ]
+    }
+   ],
+   "action": "Étend la dernière phalange du pouce, puis tout le pouce, qu'il ramène en arrière du plan de la paume ; aide à étendre le poignet",
+   "actions": [
+    {
+     "articulation": "pouce-ip",
+     "mouvement": "extension",
+     "role": "principal"
+    },
+    {
+     "articulation": "pouce-mcp",
+     "mouvement": "extension",
+     "role": "accessoire",
+     "precision": "avec le court extenseur du pouce"
+    },
+    {
+     "articulation": "pouce-cmc",
+     "mouvement": "extension",
+     "role": "accessoire",
+     "precision": "ramène le pouce en arrière du plan de la paume et vers l'index"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "extension",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "abduction",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "court-extenseur-pouce",
+    "long-abducteur-pouce"
+   ],
+   "antagonistes": [
+    "long-flechisseur-pouce",
+    "court-flechisseur-pouce",
+    "opposant-pouce"
+   ],
+   "innervation": {
+    "nerf": "nerf-interosseux-posterieur-de-l-avant-bras",
+    "texte": "Nerf interosseux postérieur, branche terminale du rameau profond du nerf radial",
+    "racines": [
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère interosseuse postérieure et rameaux de l'artère interosseuse antérieure",
+    "arteres": [
+     "artere-interosseuse-posterieure"
+    ]
+   },
+   "palpation": "Main à plat, on décolle le pouce de la table : son tendon se tend en corde du dos du radius à la dernière phalange et forme le bord médial de la tabatière anatomique",
+   "test": "Main à plat sur la table, le sujet décolle le pouce vers le haut ; ou extension de la dernière phalange contre résistance, la phalange proximale étant tenue",
+   "atteinte": "Lésion du nerf interosseux postérieur : la dernière phalange du pouce ne s'étend plus. Rupture du tendon par usure contre le radius, après une fracture du poignet ou dans la polyarthrite rhumatoïde : même déficit, brutal et indolore",
+   "clinique": "La tabatière anatomique, creusée entre son tendon et ceux du long abducteur et du court extenseur, a pour plancher le scaphoïde : une douleur à cet endroit après une chute sur la main fait rechercher sa fracture",
+   "memo": "Le tendon qui prend le virage : il tourne autour du tubercule dorsal du radius comme sur une poulie, et c'est là qu'il s'use",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-post",
+    "kenhub-extenseurs-profonds",
+    "wsu-avant-bras",
+    "statpearls-muscles"
+   ],
+   "divergences": "Gray (1918) ne cite que la racine C7 ; Kenhub et StatPearls donnent C7–C8"
+  },
+  {
+   "id": "long-extenseur-radial-carpe",
+   "resume": "Un extenseur du poignet logé au bord latéral de l'avant-bras : il relève la main et l'incline du côté du pouce.",
+   "origine": [
+    {
+     "texte": "Tiers inférieur de la crête supra-condylaire latérale de l'humérus, sous l'origine du brachio-radial",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Septum intermusculaire latéral du bras ; quelques fibres viennent du tendon commun des extenseurs",
+     "os": [
+      "septum-intermusculaire-lateral-du-bras"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face dorsale de la base du 2e métacarpien, côté radial",
+     "os": [
+      "deuxieme-metacarpien"
+     ]
+    }
+   ],
+   "action": "Étend le poignet et l'incline du côté radial ; verrouille le poignet quand on serre le poing",
+   "actions": [
+    {
+     "articulation": "poignet",
+     "mouvement": "extension",
+     "role": "principal"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "abduction",
+     "role": "principal",
+     "precision": "inclinaison radiale, avec le fléchisseur radial du carpe"
+    },
+    {
+     "articulation": "coude",
+     "mouvement": "flexion",
+     "role": "accessoire",
+     "precision": "faible"
+    }
+   ],
+   "synergistes": [
+    "court-extenseur-radial-carpe",
+    "extenseur-ulnaire-carpe",
+    "flechisseur-radial-carpe"
+   ],
+   "antagonistes": [
+    "flechisseur-ulnaire-carpe"
+   ],
+   "innervation": {
+    "nerf": "nerf-radial",
+    "texte": "Nerf radial, par un rameau né au-dessus du coude",
+    "racines": [
+     "C6",
+     "C7"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère radiale surtout ; artère collatérale radiale, issue de l'artère profonde du bras",
+    "arteres": [
+     "radiale",
+     "artere-collaterale-radiale"
+    ]
+   },
+   "palpation": "Sous le coude, juste en arrière du brachio-radial ; son tendon se sent à la base du 2e métacarpien quand on serre le poing",
+   "test": "Extension du poignet en inclinaison radiale, doigts relâchés, contre une résistance appliquée au dos de la main du côté du pouce",
+   "atteinte": "Lésion du nerf radial au bras : main tombante, poignet impossible à relever, poigne affaiblie faute de verrouillage du poignet. Lésion du seul nerf interosseux postérieur : il est épargné ; le poignet se relève encore, en déviant du côté radial",
+   "clinique": "Son tendon et celui du court extenseur radial partagent le 2e compartiment du rétinaculum des extenseurs ; les muscles du pouce (long abducteur, court extenseur) les croisent en surface au bas de l'avant-bras",
+   "memo": "Long parce qu'il naît plus haut, sur la crête supra-condylaire : il va au 2e métacarpien ; le court naît de l'épicondyle et va au 3e",
+   "variantes": "Les deux extenseurs radiaux peuvent se confondre en un seul corps charnu ou échanger des faisceaux tendineux",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-post",
+    "kenhub-extenseurs-superficiels",
+    "statpearls-muscles"
+   ],
+   "divergences": "TeachMeAnatomy fait terminer les deux extenseurs radiaux sur les 2e et 3e métacarpiens sans les distinguer ; Gray, Kenhub et StatPearls donnent le 2e au long, le 3e au court"
+  },
+  {
+   "id": "long-palmaire",
+   "resume": "Un petit muscle au long tendon grêle, au milieu du devant du poignet : il tend l'aponévrose palmaire. Il manque chez une personne sur sept environ.",
+   "origine": [
+    {
+     "texte": "Épicondyle médial de l'humérus, par le tendon commun des fléchisseurs",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Fascia de l'avant-bras et septums intermusculaires voisins",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Aponévrose palmaire, que son tendon prolonge",
+     "os": [
+      "aponevrose-palmaire"
+     ]
+    },
+    {
+     "texte": "Partie centrale du rétinaculum des fléchisseurs, que le tendon croise en surface",
+     "os": [
+      "retinaculum-flechisseurs"
+     ]
+    }
+   ],
+   "action": "Tend l'aponévrose palmaire, ce qui affermit la peau de la paume pendant la prise ; fléchit faiblement le poignet",
+   "actions": [
+    {
+     "articulation": "poignet",
+     "mouvement": "tension",
+     "role": "principal",
+     "precision": "tend l'aponévrose palmaire et affermit la peau de la paume"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "flexion",
+     "role": "accessoire",
+     "precision": "faible"
+    }
+   ],
+   "synergistes": [
+    "flechisseur-radial-carpe",
+    "flechisseur-ulnaire-carpe"
+   ],
+   "antagonistes": [
+    "long-extenseur-radial-carpe",
+    "court-extenseur-radial-carpe",
+    "extenseur-ulnaire-carpe"
+   ],
+   "innervation": {
+    "nerf": "nerf-median",
+    "texte": "Nerf médian",
+    "racines": [
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère récurrente ulnaire antérieure, branche de l'artère ulnaire",
+    "arteres": [
+     "artere-recurrente-ulnaire",
+     "ulnaire"
+    ]
+   },
+   "palpation": "On oppose le pouce et l'auriculaire en fléchissant un peu le poignet : son tendon, s'il existe, saille au milieu du devant du poignet, en dedans de celui du fléchisseur radial du carpe",
+   "test": "Même manœuvre, pince pouce-auriculaire et poignet fléchi contre résistance : l'absence de corde médiane indique que le muscle manque",
+   "atteinte": "Son absence ou sa paralysie (lésion du nerf médian au coude) n'entraîne aucune gêne : la flexion du poignet et la force de la poigne restent normales",
+   "clinique": "Tendon le plus souvent prélevé pour les greffes tendineuses, puisqu'on s'en passe sans dommage. Au poignet, le nerf médian chemine juste sous lui, un peu en dehors",
+   "memo": "Faites le test : pouce contre auriculaire, poignet fléchi. La corde qui saille au milieu est son tendon ; pas de corde, pas de muscle, et aucune conséquence",
+   "variantes": "Absent d'un côté ou des deux chez environ 15 % des personnes ; corps charnu parfois placé en bas (forme inversée), au milieu, ou dédoublé",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-ant",
+    "kenhub-flechisseurs-superficiels",
+    "statpearls-muscles"
+   ],
+   "divergences": "Fréquence de l'absence : environ 10 % pour Gray (1918), 15 % pour TeachMeAnatomy. Racines : C6 pour Gray, C7–C8 pour Kenhub et StatPearls"
+  },
+  {
+   "id": "rond-pronateur",
+   "resume": "Le muscle oblique du pli du coude, tendu de l'épicondyle médial au milieu du radius : il tourne la paume vers le bas.",
+   "origine": [
+    {
+     "texte": "Chef huméral (superficiel) : crête supra-condylaire médiale, juste au-dessus de l'épicondyle médial, et tendon commun des fléchisseurs",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Chef ulnaire (profond) : bord médial du processus coronoïde de l'ulna",
+     "os": [
+      "ulna"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Surface rugueuse au milieu de la face latérale du radius",
+     "os": [
+      "radius"
+     ]
+    }
+   ],
+   "action": "Fait tourner le radius autour de l'ulna pour mettre la paume vers le bas ; aide à fléchir le coude",
+   "actions": [
+    {
+     "articulation": "radio-ulnaire",
+     "mouvement": "pronation",
+     "role": "principal",
+     "precision": "surtout dans les gestes rapides ou contre résistance, en renfort du carré pronateur"
+    },
+    {
+     "articulation": "coude",
+     "mouvement": "flexion",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "carre-pronateur",
+    "flechisseur-radial-carpe"
+   ],
+   "antagonistes": [
+    "supinateur",
+    "biceps-brachial"
+   ],
+   "innervation": {
+    "nerf": "nerf-median",
+    "texte": "Nerf médian",
+    "racines": [
+     "C6",
+     "C7"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux des artères brachiale, ulnaire et radiale",
+    "arteres": [
+     "humerale",
+     "ulnaire",
+     "radiale"
+    ]
+   },
+   "palpation": "En dedans du tendon du biceps, au pli du coude : il forme le bord médial de la fosse cubitale et durcit quand on tourne la paume vers le bas contre résistance",
+   "test": "Pronation contre résistance, coude tendu ou à demi fléchi ; coude fléchi à fond, c'est surtout le carré pronateur qui travaille",
+   "atteinte": "Lésion du nerf médian au-dessus du coude : la pronation est très affaiblie, et le sujet compense en écartant le coude et en tournant l'épaule en dedans",
+   "clinique": "Le nerf médian passe entre ses deux chefs : il peut y être comprimé (syndrome du rond pronateur), avec douleur de l'avant-bras et fourmillements dans la paume et les trois premiers doigts",
+   "memo": "Pronateur du haut, rond et oblique ; son compère, le carré pronateur, est en bas et transversal. Le nerf médian se glisse entre ses deux chefs",
+   "variantes": "Chef ulnaire parfois absent ; faisceaux accessoires venus du septum intermusculaire médial, du biceps ou du brachial",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-ant",
+    "kenhub-flechisseurs-superficiels",
+    "wsu-avant-bras",
+    "statpearls-muscles"
+   ],
+   "divergences": "Gray (1918) ne cite que la racine C6 ; Kenhub et StatPearls donnent C6–C7"
+  },
+  {
+   "id": "coraco-brachial",
+   "resume": "Un petit muscle tendu du processus coracoïde au milieu de l'humérus, que traverse le nerf musculo-cutané.",
+   "origine": [
+    {
+     "texte": "Sommet du processus coracoïde, par un tendon commun avec le chef court du biceps",
+     "os": [
+      "scapula"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Milieu de la face médiale et du bord médial de l'humérus, entre le triceps et le brachial",
+     "os": [
+      "humerus"
+     ]
+    }
+   ],
+   "action": "Porte le bras en avant et le rapproche du corps ; aide à maintenir la tête de l'humérus dans la glène",
+   "actions": [
+    {
+     "articulation": "epaule",
+     "mouvement": "flexion",
+     "role": "principal"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "adduction",
+     "role": "principal"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "stabilisation",
+     "role": "accessoire",
+     "precision": "retient la tête humérale contre la glène"
+    }
+   ],
+   "synergistes": [
+    "grand-pectoral",
+    "biceps-brachial",
+    "deltoide"
+   ],
+   "antagonistes": [
+    "grand-dorsal",
+    "grand-rond",
+    "triceps-brachial"
+   ],
+   "innervation": {
+    "nerf": "nerf-musculocutane",
+    "texte": "Nerf musculo-cutané, qui traverse le muscle",
+    "racines": [
+     "C5",
+     "C6",
+     "C7"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux musculaires de l'artère brachiale ; appoint de l'artère circonflexe antérieure de l'humérus et de l'artère thoraco-acromiale",
+    "arteres": [
+     "humerale",
+     "artere-circonflexe-anterieure-de-l-humerus",
+     "artere-thoraco-acromiale"
+    ]
+   },
+   "palpation": "Dans le creux de l'aisselle, contre l'humérus, en dedans du chef court du biceps, bras écarté, quand le sujet ramène le bras vers l'avant contre résistance",
+   "test": "Coude fléchi à fond pour raccourcir le biceps, le sujet porte le bras en avant contre résistance",
+   "atteinte": "Sa paralysie isolée passe presque inaperçue, les autres fléchisseurs et adducteurs de l'épaule compensant. Le nerf musculo-cutané peut être comprimé à sa traversée : flexion du coude affaiblie et engourdissement du bord latéral de l'avant-bras",
+   "clinique": "Il forme, avec l'humérus, la paroi latérale du creux axillaire ; le nerf musculo-cutané le perfore, ce qui permet de le reconnaître à la dissection",
+   "memo": "Son nom dit ses attaches : du processus coracoïde au bras. Des trois muscles du nerf musculo-cutané, c'est le seul que le nerf traverse",
+   "variantes": "Un faisceau peut descendre jusqu'à l'épicondyle médial ; un autre, plus rare, s'arrête sur le tubercule mineur",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-bras",
+    "kenhub-coraco-brachial",
+    "kenhub-bras",
+    "statpearls-muscles"
+   ],
+   "divergences": "Racines : surtout C7 pour Gray (1918), C5–C6 ou C5–C7 selon les pages de Kenhub, C5–C7 pour StatPearls. TeachMeAnatomy en fait d'abord un fléchisseur, Kenhub d'abord un adducteur"
+  },
+  {
+   "id": "petit-rond",
+   "resume": "Le plus petit muscle de la coiffe des rotateurs, sous l'infra-épineux : il tourne le bras en dehors.",
+   "origine": [
+    {
+     "texte": "Deux tiers supérieurs du bord latéral de la scapula, face postérieure",
+     "os": [
+      "scapula"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Facette inférieure du tubercule majeur de l'humérus ; les fibres les plus basses se fixent sur l'humérus juste au-dessous",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Capsule de l'articulation de l'épaule, à laquelle le tendon adhère en arrière",
+     "os": [
+      "capsule-articulaire-de-l-articulation-glenohumerale"
+     ]
+    }
+   ],
+   "action": "Tourne le bras en dehors avec l'infra-épineux ; maintient la tête de l'humérus contre la glène",
+   "actions": [
+    {
+     "articulation": "epaule",
+     "mouvement": "rotation-laterale",
+     "role": "principal"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "stabilisation",
+     "role": "principal",
+     "precision": "coiffe des rotateurs : retient la tête humérale en arrière"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "adduction",
+     "role": "accessoire",
+     "precision": "faible, à partir du bras écarté"
+    }
+   ],
+   "synergistes": [
+    "infra-epineux",
+    "deltoide"
+   ],
+   "antagonistes": [
+    "subscapulaire",
+    "grand-pectoral",
+    "grand-dorsal",
+    "grand-rond"
+   ],
+   "innervation": {
+    "nerf": "nerf-axillaire",
+    "texte": "Nerf axillaire, par son rameau postérieur",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère circonflexe de la scapula et artère circonflexe postérieure de l'humérus",
+    "arteres": [
+     "artere-circonflexe-de-la-scapula",
+     "artere-circonflexe-posterieure-de-l-humerus"
+    ]
+   },
+   "palpation": "Le long du bord latéral de la scapula, entre l'infra-épineux en haut et le grand rond en bas, sous le bord postérieur du deltoïde ; difficile à isoler",
+   "test": "Bras écarté à 90° et coude fléchi à 90°, rotation latérale contre résistance. S'il est rompu, le sujet doit lever le coude plus haut que la main pour porter celle-ci à la bouche (signe du clairon)",
+   "atteinte": "Lésion du nerf axillaire ou rupture étendue de la coiffe : rotation latérale affaiblie, surtout bras écarté. Une fonte isolée du petit rond fait rechercher une atteinte du nerf axillaire",
+   "clinique": "Il forme le bord supérieur de l'espace quadrangulaire, par où passent le nerf axillaire et l'artère circonflexe postérieure de l'humérus",
+   "memo": "Les deux ronds s'opposent : le petit tourne le bras en dehors (coiffe, nerf axillaire), le grand le tourne en dedans (hors coiffe, nerf subscapulaire inférieur)",
+   "variantes": "Parfois inséparable de l'infra-épineux",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-epaule",
+    "kenhub-petit-rond",
+    "kenhub-coiffe",
+    "statpearls-epaule",
+    "statpearls-muscles"
+   ],
+   "divergences": "Gray (1918) ne cite que la racine C5 ; Kenhub et StatPearls donnent C5–C6. Kenhub livre deux listes d'artères dans la même page ; celle de son texte est retenue"
+  },
+  {
+   "id": "subscapulaire",
+   "resume": "Le muscle de la face avant de la scapula, plaqué contre les côtes : le rotateur médial de la coiffe des rotateurs.",
+   "origine": [
+    {
+     "texte": "Deux tiers médiaux de la fosse subscapulaire, sur la face costale de la scapula",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Cloisons tendineuses fixées aux crêtes de la fosse, et aponévrose qui le sépare du grand rond et du chef long du triceps",
+     "os": [
+      "scapula"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Tubercule mineur de l'humérus",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Partie antérieure de la capsule de l'articulation de l'épaule",
+     "os": [
+      "capsule-articulaire-de-l-articulation-glenohumerale"
+     ]
+    }
+   ],
+   "action": "Tourne le bras en dedans ; retient la tête de l'humérus en avant et s'oppose à sa luxation",
+   "actions": [
+    {
+     "articulation": "epaule",
+     "mouvement": "rotation-mediale",
+     "role": "principal"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "stabilisation",
+     "role": "principal",
+     "precision": "coiffe des rotateurs : barrière antérieure de l'épaule"
+    },
+    {
+     "articulation": "epaule",
+     "mouvement": "adduction",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "grand-pectoral",
+    "grand-dorsal",
+    "grand-rond"
+   ],
+   "antagonistes": [
+    "infra-epineux",
+    "petit-rond"
+   ],
+   "innervation": {
+    "nerf": "nerf-subscapulaire-superieur",
+    "texte": "Nerfs subscapulaires supérieur et inférieur",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère subscapulaire ; rameaux de l'artère axillaire et de l'artère supra-scapulaire",
+    "arteres": [
+     "artere-subscapulaire",
+     "axillaire",
+     "artere-suprascapulaire"
+    ]
+   },
+   "palpation": "Presque inaccessible : on n'atteint que son bord latéral, au fond du creux axillaire, contre la face antérieure de la scapula",
+   "test": "Main dans le dos, au niveau des lombes : le sujet doit la décoller du dos (test de Gerber). Ou main à plat sur le ventre : il appuie sans laisser reculer le coude (test de la pression abdominale)",
+   "atteinte": "Rupture du tendon : rotation médiale affaiblie, main impossible à décoller du dos, rotation latérale passive exagérée ; le tendon du chef long du biceps, privé de son appui, peut se luxer en dedans",
+   "clinique": "Il forme l'essentiel de la paroi postérieure du creux axillaire ; une bourse, qui communique avec l'articulation, sépare son tendon du col de la scapula",
+   "memo": "Le seul de la coiffe à passer devant l'épaule : seul rotateur médial, seul fixé au tubercule mineur ; les trois autres vont au tubercule majeur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-epaule",
+    "kenhub-subscapulaire",
+    "kenhub-coiffe",
+    "statpearls-epaule",
+    "statpearls-muscles"
+   ],
+   "divergences": "Racines : C5–C6 pour Gray (1918) et Kenhub, C5 à C7 pour StatPearls"
+  },
+  {
+   "id": "extenseur-de-l-index",
+   "resume": "Un extenseur profond réservé à l'index : il permet de le pointer seul, les autres doigts fermés.",
+   "origine": [
+    {
+     "texte": "Face postérieure de l'ulna, dans son tiers distal, sous l'origine du long extenseur du pouce",
+     "os": [
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Membrane interosseuse de l'avant-bras",
+     "os": [
+      "membrane-interosseuse-de-l-avant-bras"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Aponévrose dorsale (dossière) de l'index : en regard de la tête du 2e métacarpien, son tendon rejoint par le côté ulnaire celui que l'extenseur des doigts destine à l'index",
+     "os": [
+      "tendons-extenseurs-doigts",
+      "phalange-moyenne-du-deuxieme-doigt-de-la-main",
+      "phalange-distale-du-deuxieme-doigt-de-la-main"
+     ]
+    }
+   ],
+   "action": "Étend l'index indépendamment des autres doigts ; aide à étendre le poignet",
+   "actions": [
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "index seulement"
+    },
+    {
+     "articulation": "doigts-ipp",
+     "mouvement": "extension",
+     "role": "accessoire",
+     "precision": "index, avec les lombricaux et les interosseux"
+    },
+    {
+     "articulation": "doigts-ipd",
+     "mouvement": "extension",
+     "role": "accessoire",
+     "precision": "index, avec les lombricaux et les interosseux"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "extension",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "extenseur-doigts"
+   ],
+   "antagonistes": [
+    "flechisseur-superficiel-doigts",
+    "flechisseur-profond-doigts"
+   ],
+   "innervation": {
+    "nerf": "nerf-interosseux-posterieur-de-l-avant-bras",
+    "texte": "Nerf interosseux postérieur, branche terminale du rameau profond du nerf radial",
+    "racines": [
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère interosseuse postérieure et rameaux de l'artère interosseuse antérieure",
+    "arteres": [
+     "artere-interosseuse-posterieure"
+    ]
+   },
+   "palpation": "Son tendon se sent au dos de la main, du côté ulnaire de celui de l'extenseur des doigts destiné à l'index, quand on pointe l'index poing fermé",
+   "test": "Poing fermé, le sujet étend l'index seul contre résistance : la fermeture du poing met hors jeu l'extenseur des doigts, dont les tendons sont solidaires",
+   "atteinte": "Lésion du nerf interosseux postérieur : extension de l'index perdue avec celle des autres doigts. Perte isolée, après prélèvement du tendon : l'index s'étend encore grâce à l'extenseur des doigts, mais plus indépendamment",
+   "clinique": "Son tendon, dont on peut se passer, sert de greffon pour remplacer un long extenseur du pouce rompu",
+   "memo": "Extensor indicis, l'extenseur de l'index qui indique : c'est lui qui montre du doigt",
+   "variantes": "Parfois dédoublé, avec un tendon supplémentaire",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-post",
+    "kenhub-extenseurs-profonds",
+    "statpearls-muscles"
+   ],
+   "divergences": "Gray (1918) ne cite que la racine C7 ; Kenhub et StatPearls donnent C7–C8"
+  },
+  {
+   "id": "flechisseur-du-petit-doigt-de-la-main",
+   "resume": "Le court fléchisseur de l'auriculaire, au milieu de l'éminence hypothénar : il plie la première phalange du petit doigt.",
+   "origine": [
+    {
+     "texte": "Hamulus (crochet) de l'hamatum",
+     "os": [
+      "hamatum"
+     ]
+    },
+    {
+     "texte": "Face palmaire du rétinaculum des fléchisseurs, dans sa partie médiale",
+     "os": [
+      "retinaculum-flechisseurs"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord ulnaire de la base de la phalange proximale du 5e doigt, avec l'abducteur du petit doigt",
+     "os": [
+      "phalange-proximale-du-cinquieme-doigt-de-la-main"
+     ]
+    }
+   ],
+   "action": "Fléchit la première phalange de l'auriculaire sur son métacarpien et aide à le porter vers le pouce",
+   "actions": [
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "flexion",
+     "role": "principal",
+     "precision": "5e doigt seulement"
+    },
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "opposition",
+     "role": "accessoire",
+     "precision": "aide à porter l'auriculaire vers le pouce"
+    }
+   ],
+   "synergistes": [
+    "abducteur-petit-doigt",
+    "muscle-opposant-du-petit-doigt",
+    "lombricaux-de-la-main",
+    "interosseux-palmaires"
+   ],
+   "antagonistes": [
+    "extenseur-du-petit-doigt",
+    "extenseur-doigts"
+   ],
+   "innervation": {
+    "nerf": "branche-profonde-du-nerf-ulnaire",
+    "texte": "Rameau profond du nerf ulnaire",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère ulnaire et arcade palmaire superficielle",
+    "arteres": [
+     "ulnaire",
+     "arcade-palmaire-superficielle"
+    ]
+   },
+   "palpation": "Dans l'éminence hypothénar, en dehors de l'abducteur du petit doigt ; difficile à distinguer de lui",
+   "test": "Le sujet fléchit l'articulation métacarpo-phalangienne de l'auriculaire, les deux dernières phalanges restant tendues, contre une résistance appliquée sur la phalange proximale",
+   "atteinte": "Lésion du nerf ulnaire (coude, canal de Guyon) : il fond avec les autres muscles hypothénariens ; l'éminence hypothénar s'aplatit et l'auriculaire perd sa force de flexion à la base",
+   "clinique": "À leur origine, le rameau profond du nerf ulnaire et l'artère qui l'accompagne s'engagent entre lui et l'abducteur du petit doigt",
+   "memo": "Hypothénar : trois muscles pour l'auriculaire, comme le thénar pour le pouce : un abducteur, un court fléchisseur, un opposant",
+   "variantes": "Parfois absent ou fusionné avec l'abducteur du petit doigt, qui est alors plus volumineux",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-main",
+    "kenhub-hypothenar",
+    "statpearls-main",
+    "statpearls-muscles"
+   ],
+   "divergences": "Gray (1918) lui prête aussi une abduction de l'auriculaire et ne cite que la racine C8 ; Kenhub et StatPearls donnent C8–T1"
+  },
+  {
+   "id": "lombricaux-de-la-main",
+   "resume": "Quatre petits muscles en forme de ver, tendus des tendons fléchisseurs aux tendons extenseurs : ils plient la base des doigts en étendant le reste.",
+   "origine": [
+    {
+     "texte": "1er et 2e lombricaux : bord radial des tendons du fléchisseur profond destinés à l'index et au majeur (un seul chef)",
+     "os": [
+      "tendons-flechisseurs-doigts"
+     ]
+    },
+    {
+     "texte": "3e et 4e lombricaux : bords en regard des tendons du majeur et de l'annulaire, puis de l'annulaire et de l'auriculaire (deux chefs)",
+     "os": [
+      "tendons-flechisseurs-doigts"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord radial de l'aponévrose dorsale (dossière) des doigts 2 à 5, en regard de l'articulation métacarpo-phalangienne",
+     "os": [
+      "tendons-extenseurs-doigts"
+     ]
+    }
+   ],
+   "action": "Fléchissent les articulations métacarpo-phalangiennes tout en étendant les deux dernières phalanges des quatre derniers doigts",
+   "actions": [
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "flexion",
+     "role": "principal"
+    },
+    {
+     "articulation": "doigts-ipp",
+     "mouvement": "extension",
+     "role": "principal"
+    },
+    {
+     "articulation": "doigts-ipd",
+     "mouvement": "extension",
+     "role": "principal"
+    }
+   ],
+   "synergistes": [
+    "interosseux-dorsaux",
+    "interosseux-palmaires"
+   ],
+   "antagonistes": [
+    "extenseur-doigts",
+    "flechisseur-profond-doigts",
+    "flechisseur-superficiel-doigts"
+   ],
+   "innervation": {
+    "nerf": "nerf-ulnaire",
+    "texte": "1er et 2e : nerf médian, par ses nerfs digitaux palmaires communs ; 3e et 4e : rameau profond du nerf ulnaire",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Arcades palmaires superficielle et profonde, artères digitales palmaires communes, artères métacarpiennes dorsales",
+    "arteres": [
+     "arcade-palmaire-superficielle",
+     "arcade-palmaire-profonde",
+     "arteres-digitales-palmaires-communes",
+     "arteres-metacarpiennes-dorsales"
+    ]
+   },
+   "palpation": null,
+   "test": "L'examinateur maintient l'articulation métacarpo-phalangienne en extension ; le sujet étend les deux dernières phalanges contre résistance",
+   "atteinte": "Lésion du nerf ulnaire : griffe de l'annulaire et de l'auriculaire (base du doigt en hyperextension, phalanges repliées) ; l'index et le majeur y échappent en grande partie, leurs lombricaux dépendant du nerf médian. Lésion des deux nerfs : griffe des quatre doigts",
+   "clinique": "Paradoxe ulnaire : la griffe est plus marquée quand le nerf est lésé au poignet qu'au coude, car le fléchisseur profond, resté intact, tire alors sur les phalanges",
+   "memo": "Lumbricus, le ver de terre. Ils vont d'un tendon (fléchisseur profond) à un autre (extenseur), sans toucher l'os. Nerfs : 1 et 2 au médian, 3 et 4 à l'ulnaire",
+   "variantes": "Nombre variable (deux à six) ; le 3e reçoit souvent un filet du nerf médian ; chez une personne sur cinq environ, ils naissent dès le canal carpien",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-main",
+    "kenhub-lombricaux",
+    "statpearls-main",
+    "statpearls-muscles",
+    "openstax"
+   ],
+   "divergences": "Gray (1918) attribuait C6–C7 aux deux lombricaux du nerf médian ; Kenhub et StatPearls donnent C8–T1 pour les quatre"
+  },
+  {
+   "id": "muscle-opposant-du-petit-doigt",
+   "resume": "Le muscle profond de l'éminence hypothénar : il porte le 5e métacarpien en avant pour creuser la paume.",
+   "origine": [
+    {
+     "texte": "Hamulus (crochet) de l'hamatum",
+     "os": [
+      "hamatum"
+     ]
+    },
+    {
+     "texte": "Partie voisine du rétinaculum des fléchisseurs",
+     "os": [
+      "retinaculum-flechisseurs"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Toute la longueur du bord ulnaire du 5e métacarpien",
+     "os": [
+      "cinquieme-metacarpien"
+     ]
+    }
+   ],
+   "action": "Porte le 5e métacarpien en avant et le fait tourner vers le pouce : la paume se creuse et l'auriculaire vient à la rencontre du pouce",
+   "actions": [
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "opposition",
+     "role": "principal",
+     "precision": "agit en fait sur l'articulation carpo-métacarpienne du 5e doigt : flexion et rotation du 5e métacarpien vers le pouce"
+    }
+   ],
+   "synergistes": [
+    "flechisseur-du-petit-doigt-de-la-main",
+    "abducteur-petit-doigt",
+    "opposant-pouce"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "branche-profonde-du-nerf-ulnaire",
+    "texte": "Rameau profond du nerf ulnaire",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère ulnaire et arcade palmaire superficielle",
+    "arteres": [
+     "ulnaire",
+     "arcade-palmaire-superficielle"
+    ]
+   },
+   "palpation": null,
+   "test": "Le sujet rapproche la pulpe de l'auriculaire de celle du pouce en creusant la paume ; l'examinateur tente d'aplatir la paume en repoussant la tête du 5e métacarpien",
+   "atteinte": "Lésion du nerf ulnaire : la paume ne se creuse plus du côté ulnaire, l'arche transversale de la main s'aplatit et la pince entre le pouce et l'auriculaire perd sa force ; l'éminence hypothénar fond",
+   "clinique": "Compression du nerf ulnaire au canal de Guyon (appui prolongé sur un guidon de vélo, fracture) : paralysie et fonte des muscles hypothénariens et interosseux",
+   "memo": "L'opposant du pouce et celui du petit doigt se font face : en se contractant ensemble, ils creusent la paume en coupe, comme pour boire dans sa main",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-main",
+    "kenhub-hypothenar",
+    "statpearls-main",
+    "statpearls-muscles"
+   ],
+   "divergences": "Gray (1918) ne cite que la racine C8 ; Kenhub et StatPearls donnent C8–T1"
+  },
+  {
+   "id": "ancone",
+   "resume": "Un petit triangle charnu derrière le coude, dans le prolongement du triceps : il aide à étendre le coude et le stabilise.",
+   "origine": [
+    {
+     "texte": "Face postérieure de l'épicondyle latéral de l'humérus, par un tendon propre",
+     "os": [
+      "humerus"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face latérale de l'olécrâne et quart supérieur de la face postérieure de l'ulna",
+     "os": [
+      "ulna"
+     ]
+    }
+   ],
+   "action": "Aide à étendre le coude ; tend la capsule articulaire et stabilise l'ulna pendant la pronation",
+   "actions": [
+    {
+     "articulation": "coude",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "en renfort du triceps, moteur essentiel du mouvement"
+    },
+    {
+     "articulation": "coude",
+     "mouvement": "stabilisation",
+     "role": "accessoire",
+     "precision": "tend la capsule en arrière et écarte légèrement l'ulna pendant la pronation"
+    }
+   ],
+   "synergistes": [
+    "triceps-brachial"
+   ],
+   "antagonistes": [
+    "biceps-brachial",
+    "brachial",
+    "brachio-radial"
+   ],
+   "innervation": {
+    "nerf": "nerf-radial",
+    "texte": "Nerf radial",
+    "racines": [
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère interosseuse récurrente, branche de l'artère interosseuse postérieure",
+    "arteres": [
+     "artere-interosseuse-recurrente",
+     "artere-interosseuse-posterieure"
+    ]
+   },
+   "palpation": "À la face postérieure du coude, dans le triangle compris entre l'épicondyle latéral, l'olécrâne et la tête du radius",
+   "test": "On ne le teste pas isolément : il se contracte avec le triceps lors de l'extension du coude contre résistance",
+   "atteinte": "Sa paralysie isolée ne se remarque pas. Il est atteint avec le triceps dans les lésions hautes du nerf radial : l'extension du coude est alors perdue",
+   "clinique": "Le triangle qu'il occupe, entre épicondyle latéral, tête du radius et olécrâne, est le point de ponction habituel de l'articulation du coude",
+   "memo": "Anconé vient du grec ankôn, le coude. Un quatrième chef du triceps en miniature : même nerf, même action",
+   "variantes": "Ses fibres se continuent souvent avec celles du triceps",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-post",
+    "kenhub-ancone",
+    "kenhub-bras",
+    "statpearls-muscles"
+   ],
+   "divergences": "Racines : C7–C8 pour Gray (1918) et Kenhub, C7 à T1 pour StatPearls. Rangé tantôt avec la loge postérieure du bras, tantôt avec celle de l'avant-bras"
+  },
+  {
+   "id": "carre-pronateur",
+   "resume": "Une lame carrée tendue en travers du bas de l'avant-bras, de l'ulna au radius : le pronateur de fond.",
+   "origine": [
+    {
+     "texte": "Quart distal de la face antérieure de l'ulna et crête oblique qui la limite (crête du pronateur)",
+     "os": [
+      "ulna"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Quart distal de la face antérieure et du bord latéral du radius",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Fibres profondes : surface triangulaire située au-dessus de l'incisure ulnaire du radius",
+     "os": [
+      "radius"
+     ]
+    }
+   ],
+   "action": "Fait tourner le radius autour de l'ulna pour mettre la paume vers le bas ; maintient les deux os unis près du poignet",
+   "actions": [
+    {
+     "articulation": "radio-ulnaire",
+     "mouvement": "pronation",
+     "role": "principal",
+     "precision": "quelle que soit la position du coude, aidé par le rond pronateur pour la force et la vitesse"
+    },
+    {
+     "articulation": "radio-ulnaire",
+     "mouvement": "stabilisation",
+     "role": "accessoire",
+     "precision": "ses fibres profondes maintiennent radius et ulna unis à l'articulation radio-ulnaire distale"
+    }
+   ],
+   "synergistes": [
+    "rond-pronateur"
+   ],
+   "antagonistes": [
+    "supinateur",
+    "biceps-brachial"
+   ],
+   "innervation": {
+    "nerf": "nerf-interosseux-anterieur-de-l-avant-bras",
+    "texte": "Nerf interosseux antérieur, branche du nerf médian",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère interosseuse antérieure, branche de l'artère interosseuse commune",
+    "arteres": [
+     "artere-interosseuse-commune"
+    ]
+   },
+   "palpation": null,
+   "test": "Pronation contre résistance, coude fléchi à fond pour mettre le rond pronateur hors jeu",
+   "atteinte": "Lésion du nerf interosseux antérieur : pronation un peu affaiblie coude fléchi, le rond pronateur compensant ; le déficit qui frappe est ailleurs, dans la pince pouce-index, qui ne s'arrondit plus",
+   "clinique": "Paralysé avec le long fléchisseur du pouce et la moitié latérale du fléchisseur profond des doigts dans le syndrome du nerf interosseux antérieur",
+   "memo": "Carré, en bas, transversal : le pronateur de tous les instants. Rond, en haut, oblique : le renfort pour la force et la vitesse",
+   "variantes": "Rarement absent ; parfois divisé en deux ou trois couches, ou plus étendu vers le haut ou vers le bas",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-ant",
+    "kenhub-carre-pronateur",
+    "kenhub-flechisseurs-profonds",
+    "uw-carre-pronateur",
+    "wikipedia-fr-carre-pronateur",
+    "statpearls-muscles"
+   ],
+   "divergences": "Racines : C8–T1 pour Gray (1918) et l'atlas musculaire de l'université de Washington, version retenue ; C7–C8 pour Kenhub et StatPearls"
+  },
+  {
+   "id": "court-extenseur-pouce",
+   "resume": "L'extenseur de la première phalange du pouce ; son tendon borde la tabatière anatomique du côté du radius.",
+   "origine": [
+    {
+     "texte": "Face postérieure du radius, sous l'origine du long abducteur du pouce",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Membrane interosseuse de l'avant-bras",
+     "os": [
+      "membrane-interosseuse-de-l-avant-bras"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face dorsale de la base de la phalange proximale du pouce",
+     "os": [
+      "phalange-proximale-du-premier-doigt-de-la-main"
+     ]
+    }
+   ],
+   "action": "Étend la première phalange du pouce ; aide à écarter le pouce, à étendre le poignet et à l'incliner du côté radial",
+   "actions": [
+    {
+     "articulation": "pouce-mcp",
+     "mouvement": "extension",
+     "role": "principal"
+    },
+    {
+     "articulation": "pouce-cmc",
+     "mouvement": "extension",
+     "role": "accessoire",
+     "precision": "avec le long abducteur du pouce"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "abduction",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "extension",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "long-extenseur-du-pouce",
+    "long-abducteur-pouce"
+   ],
+   "antagonistes": [
+    "court-flechisseur-pouce",
+    "long-flechisseur-pouce",
+    "adducteur-pouce"
+   ],
+   "innervation": {
+    "nerf": "nerf-interosseux-posterieur-de-l-avant-bras",
+    "texte": "Nerf interosseux postérieur, branche terminale du rameau profond du nerf radial",
+    "racines": [
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère interosseuse postérieure et rameaux de l'artère interosseuse antérieure",
+    "arteres": [
+     "artere-interosseuse-posterieure"
+    ]
+   },
+   "palpation": "Pouce étendu et écarté : son tendon forme, avec celui du long abducteur, le bord latéral de la tabatière anatomique, au-dessus du processus styloïde du radius",
+   "test": "Extension de l'articulation métacarpo-phalangienne du pouce contre résistance, la dernière phalange restant relâchée",
+   "atteinte": "Lésion du nerf interosseux postérieur : le pouce ne s'étend plus à sa base et tombe vers la paume. Ténosynovite de De Quervain, dans la gaine qu'il partage avec le long abducteur : douleur du bord radial du poignet quand on saisit un objet",
+   "clinique": "Test de Finkelstein : pouce enfermé dans le poing, on incline le poignet du côté ulnaire ; une douleur vive au processus styloïde du radius signe la ténosynovite de De Quervain",
+   "memo": "Court extenseur : il s'arrête à la première phalange ; le long va jusqu'à la dernière. À eux deux, ils encadrent la tabatière anatomique",
+   "variantes": "Peut manquer ; son tendon s'unit parfois à celui du long extenseur du pouce",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-post",
+    "kenhub-extenseurs-profonds",
+    "statpearls-muscles"
+   ],
+   "divergences": "Gray (1918) ne cite que la racine C7 ; Kenhub et StatPearls donnent C7–C8. Origine sur le radius : sous celle du long abducteur pour Gray, tiers distal pour Kenhub"
+  },
+  {
+   "id": "court-extenseur-radial-carpe",
+   "resume": "L'extenseur du poignet le plus pur, sous le long extenseur radial ; son tendon d'origine est le siège du « tennis elbow ».",
+   "origine": [
+    {
+     "texte": "Épicondyle latéral de l'humérus, par le tendon commun des extenseurs",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Ligament collatéral radial du coude, aponévrose qui le recouvre et septums intermusculaires",
+     "os": [
+      "ligament-collateral-radial"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face dorsale de la base du 3e métacarpien, côté radial",
+     "os": [
+      "troisieme-metacarpien"
+     ]
+    }
+   ],
+   "action": "Étend le poignet dans l'axe de la main et le verrouille pendant que les doigts serrent ; l'incline à peine du côté radial",
+   "actions": [
+    {
+     "articulation": "poignet",
+     "mouvement": "extension",
+     "role": "principal"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "abduction",
+     "role": "accessoire",
+     "precision": "faible : il s'insère près de l'axe de la main"
+    }
+   ],
+   "synergistes": [
+    "long-extenseur-radial-carpe",
+    "extenseur-ulnaire-carpe"
+   ],
+   "antagonistes": [
+    "flechisseur-radial-carpe",
+    "flechisseur-ulnaire-carpe",
+    "long-palmaire"
+   ],
+   "innervation": {
+    "nerf": "branche-profonde-du-nerf-radial",
+    "texte": "Rameau profond du nerf radial, avant sa traversée du supinateur",
+    "racines": [
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère radiale surtout ; artère collatérale radiale, issue de l'artère profonde du bras",
+    "arteres": [
+     "radiale",
+     "artere-collaterale-radiale"
+    ]
+   },
+   "palpation": "Sous le coude, juste en arrière du long extenseur radial ; son tendon se sent à la base du 3e métacarpien, poing serré",
+   "test": "Extension du poignet contre une résistance appliquée sur le dos du 3e métacarpien, coude tendu : une douleur à l'épicondyle latéral évoque le « tennis elbow »",
+   "atteinte": "Lésion du nerf radial au bras : main tombante. Lésion limitée au nerf interosseux postérieur, au-delà de son rameau : il est épargné et le poignet se relève encore",
+   "clinique": "Épicondylite latérale (« tennis elbow ») : usure du tendon commun des extenseurs, où ses fibres sont les premières touchées ; douleur de l'épicondyle latéral à la préhension et à l'extension contrariée du poignet",
+   "memo": "Long extenseur radial : 2e métacarpien. Court : 3e. C'est le court qui souffre dans le « tennis elbow »",
+   "variantes": "Peut fusionner avec le long extenseur radial ou échanger avec lui des faisceaux tendineux",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-post",
+    "kenhub-extenseurs-superficiels",
+    "wsu-avant-bras",
+    "statpearls-muscles"
+   ],
+   "divergences": "Racines : C6–C7 pour Gray (1918), C7–C8 pour Kenhub et StatPearls. Nerf : « nerf radial » pour Gray et TeachMeAnatomy, son rameau profond pour Kenhub et StatPearls"
+  },
+  {
+   "id": "flechisseur-profond-doigts",
+   "resume": "Le seul muscle qui plie la dernière phalange des doigts : quatre tendons qui traversent ceux du fléchisseur superficiel.",
+   "origine": [
+    {
+     "texte": "Trois quarts proximaux des faces antérieure et médiale de l'ulna, jusqu'au bord médial du processus coronoïde",
+     "os": [
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Moitié ulnaire de la face antérieure de la membrane interosseuse",
+     "os": [
+      "membrane-interosseuse-de-l-avant-bras"
+     ]
+    },
+    {
+     "texte": "Aponévrose fixée au bord postérieur de l'ulna, partagée avec le fléchisseur et l'extenseur ulnaires du carpe",
+     "os": [
+      "ulna"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face palmaire de la base de la phalange distale des doigts 2 à 5, après traversée du canal carpien puis de la boutonnière du tendon fléchisseur superficiel correspondant",
+     "os": [
+      "phalange-distale-du-deuxieme-doigt-de-la-main",
+      "phalange-distale-du-troisieme-doigt-de-la-main",
+      "phalange-distale-du-quatrieme-doigt-de-la-main",
+      "phalange-distale-du-cinquieme-doigt-de-la-main"
+     ]
+    }
+   ],
+   "action": "Fléchit la dernière phalange des quatre derniers doigts, puis les autres phalanges et le poignet : c'est le muscle qui ferme le poing",
+   "actions": [
+    {
+     "articulation": "doigts-ipd",
+     "mouvement": "flexion",
+     "role": "principal",
+     "precision": "seul fléchisseur de cette articulation"
+    },
+    {
+     "articulation": "doigts-ipp",
+     "mouvement": "flexion",
+     "role": "accessoire",
+     "precision": "avec le fléchisseur superficiel des doigts"
+    },
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "flexion",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "flexion",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "flechisseur-superficiel-doigts"
+   ],
+   "antagonistes": [
+    "extenseur-doigts",
+    "lombricaux-de-la-main",
+    "interosseux-dorsaux",
+    "interosseux-palmaires"
+   ],
+   "innervation": {
+    "nerf": "nerf-ulnaire",
+    "texte": "Moitié latérale (index, majeur) : nerf interosseux antérieur, branche du nerf médian ; moitié médiale (annulaire, auriculaire) : nerf ulnaire",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère ulnaire et artère interosseuse commune ; artère interosseuse antérieure, artères récurrentes ulnaires et collatérale ulnaire inférieure",
+    "arteres": [
+     "ulnaire",
+     "artere-interosseuse-commune",
+     "artere-recurrente-ulnaire",
+     "artere-collaterale-ulnaire-inferieure"
+    ]
+   },
+   "palpation": "Au tiers supérieur de l'avant-bras, contre la face médiale de l'ulna, juste en avant de son bord postérieur : il durcit quand on plie le bout des doigts",
+   "test": "L'examinateur bloque la phalange moyenne en extension ; le sujet plie la seule phalange distale. À faire pour l'index (nerf médian) et pour l'auriculaire (nerf ulnaire)",
+   "atteinte": "Nerf interosseux antérieur : le bout de l'index ne se plie plus, et la pince pouce-index s'aplatit au lieu de former un « O ». Nerf ulnaire au coude : même perte pour l'annulaire et l'auriculaire. Arrachement du tendon sur la phalange distale : le bout du doigt reste tendu",
+   "clinique": "Ses tendons donnent naissance aux lombricaux dans la paume. Avec ceux du fléchisseur superficiel et du long fléchisseur du pouce, ils accompagnent le nerf médian dans le canal carpien : neuf tendons et un nerf",
+   "memo": "Le profond est « perforant » : son tendon passe par la boutonnière du superficiel pour aller plus loin, jusqu'à la dernière phalange",
+   "variantes": "Le faisceau de l'index, souvent indépendant, naît parfois en partie du radius ; connexion possible avec le long fléchisseur du pouce",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-ant",
+    "kenhub-fpd",
+    "kenhub-flechisseurs-profonds",
+    "statpearls-muscles"
+   ],
+   "divergences": "Étendue de l'origine sur l'ulna : moitié proximale pour le tableau de Kenhub, trois quarts proximaux pour son texte et pour Gray (1918)"
+  },
+  {
+   "id": "long-abducteur-pouce",
+   "resume": "Le muscle qui écarte le pouce dans le plan de la main ; son tendon borde la tabatière anatomique du côté du radius.",
+   "origine": [
+    {
+     "texte": "Face postérieure de l'ulna, sous l'insertion de l'anconé",
+     "os": [
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Tiers moyen de la face postérieure du radius",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Membrane interosseuse de l'avant-bras, entre les deux os",
+     "os": [
+      "membrane-interosseuse-de-l-avant-bras"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord radial de la base du 1er métacarpien",
+     "os": [
+      "premier-metacarpien"
+     ]
+    },
+    {
+     "texte": "Expansion fréquente au trapèze",
+     "os": [
+      "os-trapeze"
+     ]
+    }
+   ],
+   "action": "Écarte le pouce de l'index dans le plan de la paume et le porte en arrière ; aide à incliner le poignet du côté radial",
+   "actions": [
+    {
+     "articulation": "pouce-cmc",
+     "mouvement": "abduction",
+     "role": "principal",
+     "precision": "abduction dite radiale, dans le plan de la paume"
+    },
+    {
+     "articulation": "pouce-cmc",
+     "mouvement": "extension",
+     "role": "accessoire",
+     "precision": "avec le court extenseur du pouce"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "abduction",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "court-abducteur-pouce",
+    "court-extenseur-pouce"
+   ],
+   "antagonistes": [
+    "adducteur-pouce"
+   ],
+   "innervation": {
+    "nerf": "nerf-interosseux-posterieur-de-l-avant-bras",
+    "texte": "Nerf interosseux postérieur, branche terminale du rameau profond du nerf radial",
+    "racines": [
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères interosseuses postérieure et antérieure",
+    "arteres": [
+     "artere-interosseuse-posterieure"
+    ]
+   },
+   "palpation": "Pouce écarté : son tendon est le plus antérieur de ceux qui limitent la tabatière anatomique ; on le suit jusqu'à la base du 1er métacarpien",
+   "test": "Le sujet écarte le pouce de l'index dans le plan de la paume, contre une résistance appliquée sur le 1er métacarpien",
+   "atteinte": "Lésion du nerf radial ou du nerf interosseux postérieur : le pouce ne s'écarte plus sur le côté et reste près de l'index, ce qui gêne l'ouverture de la main pour saisir un gros objet",
+   "clinique": "Ténosynovite de De Quervain : inflammation de la gaine qu'il partage avec le court extenseur du pouce, dans le 1er compartiment du rétinaculum des extenseurs ; douleur au processus styloïde du radius lors des gestes de saisie",
+   "memo": "Trois tendons pour une tabatière : long abducteur et court extenseur en dehors, dans la même gaine ; long extenseur en dedans",
+   "variantes": "Tendon souvent dédoublé ou multiple, avec des languettes pour le trapèze, le court abducteur ou l'opposant du pouce",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-post",
+    "kenhub-extenseurs-profonds",
+    "statpearls-muscles"
+   ],
+   "divergences": "Gray (1918) ne cite que la racine C7 ; Kenhub et StatPearls donnent C7–C8"
+  },
+  {
+   "id": "long-flechisseur-pouce",
+   "resume": "Le seul muscle qui plie la dernière phalange du pouce : indispensable à la pince pouce-index.",
+   "origine": [
+    {
+     "texte": "Face antérieure du radius, de la tubérosité du radius jusqu'au carré pronateur",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Partie voisine de la membrane interosseuse",
+     "os": [
+      "membrane-interosseuse-de-l-avant-bras"
+     ]
+    },
+    {
+     "texte": "Faisceau inconstant venu du processus coronoïde de l'ulna ou de l'épicondyle médial de l'humérus",
+     "os": [
+      "ulna",
+      "humerus"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face palmaire de la base de la phalange distale du pouce, après traversée du canal carpien",
+     "os": [
+      "phalange-distale-du-premier-doigt-de-la-main"
+     ]
+    }
+   ],
+   "action": "Fléchit la dernière phalange du pouce, puis la première ; aide à fléchir le poignet",
+   "actions": [
+    {
+     "articulation": "pouce-ip",
+     "mouvement": "flexion",
+     "role": "principal",
+     "precision": "seul fléchisseur de cette articulation"
+    },
+    {
+     "articulation": "pouce-mcp",
+     "mouvement": "flexion",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "pouce-cmc",
+     "mouvement": "flexion",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "poignet",
+     "mouvement": "flexion",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "court-flechisseur-pouce",
+    "adducteur-pouce",
+    "opposant-pouce"
+   ],
+   "antagonistes": [
+    "long-extenseur-du-pouce",
+    "court-extenseur-pouce"
+   ],
+   "innervation": {
+    "nerf": "nerf-interosseux-anterieur-de-l-avant-bras",
+    "texte": "Nerf interosseux antérieur, branche du nerf médian",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère interosseuse antérieure pour la partie médiale, artère radiale pour la partie latérale",
+    "arteres": [
+     "artere-interosseuse-commune",
+     "radiale"
+    ]
+   },
+   "palpation": null,
+   "test": "L'examinateur immobilise la première phalange du pouce ; le sujet plie la dernière contre résistance",
+   "atteinte": "Syndrome du nerf interosseux antérieur : la dernière phalange du pouce ne se plie plus ; comme celle de l'index est atteinte aussi, le sujet ne peut plus former un « O » avec le pouce et l'index, la pince s'aplatit. Rupture du tendon : même déficit, limité au pouce",
+   "clinique": "Dans la paume, son tendon se glisse entre les deux chefs du court fléchisseur du pouce. Au poignet, il traverse le canal carpien avec les huit tendons fléchisseurs des doigts et le nerf médian",
+   "memo": "Au pouce, un long fléchisseur pour la dernière phalange, un court pour la première. Le « O » pouce-index raté signe l'atteinte du nerf interosseux antérieur",
+   "variantes": "Chef accessoire (muscle de Gantzer) né du processus coronoïde ou de l'épicondyle médial ; liaison possible avec le fléchisseur profond de l'index ; exceptionnellement absent",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-ant",
+    "kenhub-lfp",
+    "kenhub-flechisseurs-profonds",
+    "uw-lfp",
+    "statpearls-muscles"
+   ],
+   "divergences": "Racines : C8–T1 pour Gray (1918) et l'atlas musculaire de l'université de Washington, version retenue ; C7–C8 pour Kenhub et StatPearls"
+  },
+  {
+   "id": "supinateur",
+   "resume": "Un manchon charnu enroulé autour du haut du radius : il tourne la paume vers le haut, quelle que soit la position du coude.",
+   "origine": [
+    {
+     "texte": "Chef huméral : épicondyle latéral de l'humérus, ligament collatéral radial du coude et ligament annulaire du radius",
+     "os": [
+      "humerus",
+      "ligament-collateral-radial",
+      "ligament-annulaire-du-radius"
+     ]
+    },
+    {
+     "texte": "Chef ulnaire : crête du supinateur et fosse située sous l'incisure radiale de l'ulna",
+     "os": [
+      "ulna"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Tiers proximal du radius, qu'il enveloppe : faces latérale, postérieure et antérieure, du col jusqu'à l'insertion du rond pronateur",
+     "os": [
+      "radius"
+     ]
+    }
+   ],
+   "action": "Fait tourner le radius pour mettre la paume vers le haut ; il agit seul dans les gestes lents et sans résistance, le biceps le renforçant pour la force",
+   "actions": [
+    {
+     "articulation": "radio-ulnaire",
+     "mouvement": "supination",
+     "role": "principal",
+     "precision": "efficace quelle que soit la flexion du coude, au contraire du biceps"
+    }
+   ],
+   "synergistes": [
+    "biceps-brachial",
+    "brachio-radial"
+   ],
+   "antagonistes": [
+    "rond-pronateur",
+    "carre-pronateur"
+   ],
+   "innervation": {
+    "nerf": "branche-profonde-du-nerf-radial",
+    "texte": "Rameau profond du nerf radial, qui traverse le muscle entre ses deux couches",
+    "racines": [
+     "C6",
+     "C7"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère récurrente radiale pour la couche superficielle ; artère interosseuse postérieure et artère interosseuse récurrente pour la couche profonde",
+    "arteres": [
+     "radiale",
+     "artere-interosseuse-posterieure",
+     "artere-interosseuse-recurrente"
+    ]
+   },
+   "palpation": "Profond, recouvert par les extenseurs radiaux du carpe : on ne le sent qu'à travers eux, sous la tête du radius, lors d'une supination contre résistance",
+   "test": "Supination contre résistance, coude tendu : dans cette position, le biceps ne peut presque plus tourner l'avant-bras",
+   "atteinte": "Lésion du nerf radial au-dessus du coude : supination affaiblie coude tendu, le biceps suppléant dès que le coude est fléchi. Compression du rameau profond à sa traversée du muscle : les extenseurs des doigts et du pouce faiblissent, sans perte de sensibilité",
+   "clinique": "Le rameau profond du nerf radial s'engage entre ses deux couches, superficielle et profonde, et en ressort sous le nom de nerf interosseux postérieur : ce passage est le siège du syndrome du tunnel radial",
+   "memo": "Supination : le geste de visser de la main droite. Le supinateur suffit sans résistance ; pour serrer fort, coude fléchi, le biceps s'y ajoute",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-avant-bras-post",
+    "kenhub-supinateur",
+    "kenhub-extenseurs-profonds",
+    "wikipedia-fr-supinateur",
+    "wsu-avant-bras",
+    "statpearls-muscles"
+   ],
+   "divergences": "Racines très discutées : C6 pour Gray (1918), C7–C8 pour Kenhub et StatPearls ; C6–C7, valeur intermédiaire donnée par d'autres traités, est retenue sous réserve"
+  },
+  {
+   "id": "abducteur-petit-doigt",
+   "resume": "Le muscle du bord ulnaire de la main, le plus superficiel de l'éminence hypothénar : il écarte l'auriculaire.",
+   "origine": [
+    {
+     "texte": "Pisiforme",
+     "os": [
+      "pisiforme"
+     ]
+    },
+    {
+     "texte": "Tendon du fléchisseur ulnaire du carpe",
+     "os": [
+      "tendon-flechisseur-ulnaire-carpe"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord ulnaire de la base de la phalange proximale du 5e doigt",
+     "os": [
+      "phalange-proximale-du-cinquieme-doigt-de-la-main"
+     ]
+    },
+    {
+     "texte": "Expansion à l'aponévrose dorsale (dossière) du 5e doigt",
+     "os": [
+      "tendons-extenseurs-doigts"
+     ]
+    }
+   ],
+   "action": "Écarte l'auriculaire de l'annulaire et aide à fléchir sa première phalange",
+   "actions": [
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "abduction",
+     "role": "principal",
+     "precision": "5e doigt seulement"
+    },
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "flexion",
+     "role": "accessoire",
+     "precision": "5e doigt seulement"
+    }
+   ],
+   "synergistes": [
+    "flechisseur-du-petit-doigt-de-la-main",
+    "muscle-opposant-du-petit-doigt"
+   ],
+   "antagonistes": [
+    "interosseux-palmaires"
+   ],
+   "innervation": {
+    "nerf": "branche-profonde-du-nerf-ulnaire",
+    "texte": "Rameau profond du nerf ulnaire",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère ulnaire et arcade palmaire superficielle",
+    "arteres": [
+     "ulnaire",
+     "arcade-palmaire-superficielle"
+    ]
+   },
+   "palpation": "Sur le bord ulnaire de la main, du pisiforme à la base de l'auriculaire : il durcit quand on écarte le petit doigt contre résistance",
+   "test": "Main à plat, paume vers le haut, le sujet écarte l'auriculaire contre une résistance appliquée sur son bord ulnaire",
+   "atteinte": "Lésion du nerf ulnaire : l'auriculaire ne s'écarte plus contre résistance et l'éminence hypothénar fond. Autre signe de la même lésion (signe de Wartenberg) : l'auriculaire reste écarté des autres doigts, faute d'interosseux palmaire pour le ramener",
+   "clinique": "Muscle de référence pour l'étude du nerf ulnaire à l'électromyogramme : on y recueille la réponse motrice après stimulation du nerf au poignet et au coude",
+   "memo": "Pour l'auriculaire, il fait le travail d'un interosseux dorsal : les dorsaux écartent les doigts, et le petit doigt, qui n'en a pas, a son abducteur propre",
+   "variantes": "Parfois divisé en deux ou trois faisceaux ; chefs accessoires venus du rétinaculum des fléchisseurs, du fascia de l'avant-bras ou du tendon du long palmaire",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-main",
+    "kenhub-hypothenar",
+    "statpearls-main",
+    "statpearls-muscles"
+   ],
+   "divergences": "Gray (1918) ne cite que la racine C8 ; Kenhub et StatPearls donnent C8–T1"
+  },
+  {
+   "id": "adducteur-pouce",
+   "resume": "Un éventail profond dans la première commissure, à deux chefs : il ramène le pouce contre l'index et donne sa force à la pince.",
+   "origine": [
+    {
+     "texte": "Chef oblique : capitatum, bases des 2e et 3e métacarpiens et ligaments palmaires du carpe",
+     "os": [
+      "capitatum",
+      "deuxieme-metacarpien",
+      "troisieme-metacarpien"
+     ]
+    },
+    {
+     "texte": "Chef transverse : face palmaire du 3e métacarpien",
+     "os": [
+      "troisieme-metacarpien"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord ulnaire de la base de la phalange proximale du pouce, par un tendon qui contient l'os sésamoïde médial",
+     "os": [
+      "phalange-proximale-du-premier-doigt-de-la-main"
+     ]
+    },
+    {
+     "texte": "Expansion à l'aponévrose dorsale du pouce",
+     "os": []
+    }
+   ],
+   "action": "Rapproche le pouce de la paume et de l'index ; serre la pince pouce-index et participe à la fin de l'opposition",
+   "actions": [
+    {
+     "articulation": "pouce-cmc",
+     "mouvement": "adduction",
+     "role": "principal"
+    },
+    {
+     "articulation": "pouce-mcp",
+     "mouvement": "flexion",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "pouce-cmc",
+     "mouvement": "opposition",
+     "role": "accessoire",
+     "precision": "en fin de mouvement, pour serrer la prise"
+    }
+   ],
+   "synergistes": [
+    "court-flechisseur-pouce",
+    "opposant-pouce",
+    "long-flechisseur-pouce"
+   ],
+   "antagonistes": [
+    "long-abducteur-pouce",
+    "court-abducteur-pouce"
+   ],
+   "innervation": {
+    "nerf": "branche-profonde-du-nerf-ulnaire",
+    "texte": "Rameau profond du nerf ulnaire",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Arcade palmaire profonde",
+    "arteres": [
+     "arcade-palmaire-profonde"
+    ]
+   },
+   "palpation": "Dans l'épaisseur de la première commissure, entre le pouce et l'index, côté paume : il durcit quand on pince fort un objet plat",
+   "test": "Signe de Froment : le sujet retient une feuille entre le pouce et le bord de l'index pendant qu'on la tire. Si l'adducteur est paralysé, le pouce plie sa dernière phalange : le long fléchisseur, innervé par le nerf médian, le remplace",
+   "atteinte": "Lésion du nerf ulnaire : pince pouce-index sans force (tenir une clé, une feuille de papier), signe de Froment, première commissure creusée par la fonte de l'adducteur et du 1er interosseux dorsal",
+   "clinique": "L'artère radiale gagne la paume en passant entre ses deux chefs, pour former l'arcade palmaire profonde ; le rameau profond du nerf ulnaire emprunte le même passage",
+   "memo": "Le muscle de la clé. Au pouce, les muscles courts sont au nerf médian, sauf l'adducteur et le chef profond du court fléchisseur, qui sont au nerf ulnaire",
+   "variantes": "Les deux chefs sont plus ou moins soudés ; le chef oblique reçoit parfois un faisceau du ligament métacarpien transverse",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-main",
+    "kenhub-adducteur-pouce",
+    "kenhub-thenar",
+    "statpearls-main",
+    "statpearls-muscles"
+   ],
+   "divergences": "Origine du chef transverse : deux tiers distaux de la face palmaire du 3e métacarpien pour Gray (1918), sa base pour Kenhub. Gray ne cite que la racine C8"
+  },
+  {
+   "id": "court-abducteur-pouce",
+   "resume": "Le muscle le plus superficiel de l'éminence thénar : il décolle le pouce de la paume, vers l'avant.",
+   "origine": [
+    {
+     "texte": "Rétinaculum des fléchisseurs",
+     "os": [
+      "retinaculum-flechisseurs"
+     ]
+    },
+    {
+     "texte": "Tubercule du scaphoïde et tubercule du trapèze",
+     "os": [
+      "scaphoide",
+      "os-trapeze"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord radial de la base de la phalange proximale du pouce et capsule de l'articulation métacarpo-phalangienne",
+     "os": [
+      "phalange-proximale-du-premier-doigt-de-la-main"
+     ]
+    }
+   ],
+   "action": "Écarte le pouce perpendiculairement à la paume, vers l'avant, et participe au début de l'opposition",
+   "actions": [
+    {
+     "articulation": "pouce-cmc",
+     "mouvement": "abduction",
+     "role": "principal",
+     "precision": "abduction dite palmaire : le pouce se porte en avant, à angle droit de la paume"
+    },
+    {
+     "articulation": "pouce-cmc",
+     "mouvement": "opposition",
+     "role": "accessoire",
+     "precision": "au début du mouvement"
+    }
+   ],
+   "synergistes": [
+    "long-abducteur-pouce",
+    "opposant-pouce",
+    "court-flechisseur-pouce"
+   ],
+   "antagonistes": [
+    "adducteur-pouce"
+   ],
+   "innervation": {
+    "nerf": "nerf-median",
+    "texte": "Rameau récurrent (thénarien) du nerf médian",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameau palmaire superficiel de l'artère radiale et arcade palmaire superficielle",
+    "arteres": [
+     "radiale",
+     "arcade-palmaire-superficielle"
+    ]
+   },
+   "palpation": "Partie antéro-latérale de l'éminence thénar : il durcit quand on dresse le pouce à la verticale, main posée à plat, paume vers le haut",
+   "test": "Main à plat, paume vers le haut, le sujet pointe le pouce vers le plafond contre une résistance appliquée sur le bord radial de sa première phalange",
+   "atteinte": "Lésion du nerf médian, le plus souvent au canal carpien : le pouce ne se décolle plus de la paume et la partie latérale de l'éminence thénar fond ; à l'extrême, le pouce reste dans le plan des autres doigts (« main de singe »)",
+   "clinique": "Muscle témoin du nerf médian : on surveille sa force et son volume dans le syndrome du canal carpien, et c'est sur lui qu'on recueille la réponse motrice du nerf à l'électromyogramme",
+   "memo": "Le meilleur test du nerf médian à la main : pouce au zénith. Thénar : court abducteur et court fléchisseur en surface, opposant en profondeur",
+   "variantes": "Souvent divisé en deux faisceaux ; faisceaux accessoires venus du tendon du long abducteur du pouce ou du long palmaire",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-main",
+    "kenhub-thenar",
+    "statpearls-main",
+    "statpearls-muscles",
+    "openstax"
+   ],
+   "divergences": "Gray (1918) attribuait C6–C7 aux muscles thénariens ; StatPearls donne C8–T1, Kenhub surtout T1"
+  },
+  {
+   "id": "court-flechisseur-pouce",
+   "resume": "Le muscle de l'éminence thénar qui plie la base du pouce ; ses deux chefs dépendent de deux nerfs différents.",
+   "origine": [
+    {
+     "texte": "Chef superficiel : bord distal du rétinaculum des fléchisseurs et tubercule du trapèze",
+     "os": [
+      "retinaculum-flechisseurs",
+      "os-trapeze"
+     ]
+    },
+    {
+     "texte": "Chef profond : faces palmaires du trapézoïde et du capitatum",
+     "os": [
+      "trapezoide",
+      "capitatum"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord radial de la base de la phalange proximale du pouce, par un tendon qui contient l'os sésamoïde latéral",
+     "os": [
+      "phalange-proximale-du-premier-doigt-de-la-main"
+     ]
+    }
+   ],
+   "action": "Fléchit la première phalange du pouce et aide à l'opposition",
+   "actions": [
+    {
+     "articulation": "pouce-mcp",
+     "mouvement": "flexion",
+     "role": "principal"
+    },
+    {
+     "articulation": "pouce-cmc",
+     "mouvement": "flexion",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "pouce-cmc",
+     "mouvement": "opposition",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "long-flechisseur-pouce",
+    "opposant-pouce",
+    "adducteur-pouce",
+    "court-abducteur-pouce"
+   ],
+   "antagonistes": [
+    "court-extenseur-pouce",
+    "long-extenseur-du-pouce"
+   ],
+   "innervation": {
+    "nerf": "nerf-median",
+    "texte": "Chef superficiel : rameau récurrent (thénarien) du nerf médian ; chef profond : rameau profond du nerf ulnaire",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux de l'artère radiale, dont son rameau palmaire superficiel",
+    "arteres": [
+     "radiale"
+    ]
+   },
+   "palpation": "Partie médiale de l'éminence thénar, en dedans du court abducteur : il durcit quand on plie la base du pouce en gardant la dernière phalange tendue",
+   "test": "Flexion de l'articulation métacarpo-phalangienne du pouce contre résistance, la dernière phalange restant tendue pour écarter le long fléchisseur",
+   "atteinte": "Lésion du nerf médian : flexion de la base du pouce affaiblie mais rarement abolie, car le chef profond, innervé par le nerf ulnaire, persiste. Lésion des deux nerfs : la pince entre le pouce et les doigts n'a plus de force",
+   "clinique": "Le tendon du long fléchisseur du pouce passe entre ses deux chefs. Sa double innervation explique que l'éminence thénar garde parfois du volume et de la force après une lésion du nerf médian",
+   "memo": "Deux chefs, deux nerfs : le superficiel au médian, le profond à l'ulnaire. Le tendon du long fléchisseur passe entre les deux",
+   "variantes": "Le chef profond peut manquer ou être très développé ; la part respective du nerf médian et du nerf ulnaire varie d'une personne à l'autre",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-main",
+    "kenhub-thenar",
+    "wikipedia-fr-cfp",
+    "statpearls-main",
+    "statpearls-muscles"
+   ],
+   "divergences": "Chef profond : pour Gray (1918), il naît du bord ulnaire du 1er métacarpien (faisceau rangé ailleurs avec les interosseux palmaires) ; pour Kenhub et Wikipédia, du trapézoïde et du capitatum, version retenue"
+  },
+  {
+   "id": "interosseux-dorsaux",
+   "resume": "Quatre muscles à deux chefs logés entre les métacarpiens, visibles au dos de la main : ils écartent les doigts.",
+   "origine": [
+    {
+     "texte": "Chacun naît par deux chefs des faces en regard de deux métacarpiens voisins : 1er et 2e, 2e et 3e, 3e et 4e, 4e et 5e",
+     "os": [
+      "premier-metacarpien",
+      "deuxieme-metacarpien",
+      "troisieme-metacarpien",
+      "quatrieme-metacarpien",
+      "cinquieme-metacarpien"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "1er : bord radial de la base de la phalange proximale de l'index ; 2e : bord radial de celle du majeur",
+     "os": [
+      "phalange-proximale-du-deuxieme-doigt-de-la-main",
+      "phalange-proximale-du-troisieme-doigt-de-la-main"
+     ]
+    },
+    {
+     "texte": "3e : bord ulnaire de la base de la phalange proximale du majeur ; 4e : bord ulnaire de celle de l'annulaire",
+     "os": [
+      "phalange-proximale-du-troisieme-doigt-de-la-main",
+      "phalange-proximale-du-quatrieme-doigt-de-la-main"
+     ]
+    },
+    {
+     "texte": "Tous : expansion à l'aponévrose dorsale (dossière) du doigt correspondant",
+     "os": [
+      "tendons-extenseurs-doigts"
+     ]
+    }
+   ],
+   "action": "Écartent l'index et l'annulaire du majeur, axe de la main, et inclinent le majeur d'un côté ou de l'autre ; aident à plier la base des doigts en étendant les phalanges",
+   "actions": [
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "abduction",
+     "role": "principal",
+     "precision": "par rapport à l'axe du majeur ; doigts 2, 3 et 4"
+    },
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "flexion",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "doigts-ipp",
+     "mouvement": "extension",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "doigts-ipd",
+     "mouvement": "extension",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "abducteur-petit-doigt",
+    "lombricaux-de-la-main"
+   ],
+   "antagonistes": [
+    "interosseux-palmaires"
+   ],
+   "innervation": {
+    "nerf": "branche-profonde-du-nerf-ulnaire",
+    "texte": "Rameau profond du nerf ulnaire",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères métacarpiennes dorsales : la première vient de l'artère radiale, les autres du réseau carpien dorsal",
+    "arteres": [
+     "arteres-metacarpiennes-dorsales",
+     "radiale",
+     "reseau-carpien-dorsal"
+    ]
+   },
+   "palpation": "Le 1er se voit et se palpe au dos de la première commissure, entre le pouce et l'index, quand on écarte l'index contre résistance ; les autres se sentent entre les métacarpiens",
+   "test": "Main à plat, le sujet écarte les doigts contre résistance ; pour le 1er, il écarte l'index vers le pouce pendant qu'on palpe le muscle",
+   "atteinte": "Lésion du nerf ulnaire : les doigts ne s'écartent plus, les espaces entre les métacarpiens se creusent au dos de la main (le premier surtout), et la griffe s'installe à l'annulaire et à l'auriculaire",
+   "clinique": "L'artère radiale passe entre les deux chefs du 1er interosseux dorsal pour gagner la paume. Ce muscle, le plus accessible de ceux du nerf ulnaire, sert de témoin à l'examen clinique",
+   "memo": "Les dorsaux écartent, les palmaires rapprochent. Le majeur, axe de la main, en reçoit deux ; le pouce et l'auriculaire, aucun : ils ont leur propre abducteur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-main",
+    "kenhub-interosseux-dorsaux",
+    "wikipedia-fr-interosseux-dorsaux",
+    "statpearls-main",
+    "statpearls-muscles",
+    "openstax"
+   ],
+   "divergences": "Gray (1918) ne cite que la racine C8 ; Kenhub et StatPearls donnent C8–T1"
+  },
+  {
+   "id": "interosseux-palmaires",
+   "resume": "Trois petits muscles à un seul chef, du côté paume des métacarpiens : ils resserrent les doigts vers le majeur.",
+   "origine": [
+    {
+     "texte": "1er : bord ulnaire du 2e métacarpien, sur toute sa longueur",
+     "os": [
+      "deuxieme-metacarpien"
+     ]
+    },
+    {
+     "texte": "2e : bord radial du 4e métacarpien ; 3e : bord radial du 5e métacarpien",
+     "os": [
+      "quatrieme-metacarpien",
+      "cinquieme-metacarpien"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Base de la phalange proximale du même doigt, du côté tourné vers le majeur : bord ulnaire pour l'index, bord radial pour l'annulaire et l'auriculaire",
+     "os": [
+      "phalange-proximale-du-deuxieme-doigt-de-la-main",
+      "phalange-proximale-du-quatrieme-doigt-de-la-main",
+      "phalange-proximale-du-cinquieme-doigt-de-la-main"
+     ]
+    },
+    {
+     "texte": "Expansion à l'aponévrose dorsale (dossière) du doigt correspondant",
+     "os": [
+      "tendons-extenseurs-doigts"
+     ]
+    }
+   ],
+   "action": "Rapprochent l'index, l'annulaire et l'auriculaire du majeur ; aident à plier la base des doigts en étendant les phalanges",
+   "actions": [
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "adduction",
+     "role": "principal",
+     "precision": "vers l'axe du majeur ; doigts 2, 4 et 5"
+    },
+    {
+     "articulation": "doigts-mcp",
+     "mouvement": "flexion",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "doigts-ipp",
+     "mouvement": "extension",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "doigts-ipd",
+     "mouvement": "extension",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "lombricaux-de-la-main",
+    "adducteur-pouce"
+   ],
+   "antagonistes": [
+    "interosseux-dorsaux",
+    "abducteur-petit-doigt"
+   ],
+   "innervation": {
+    "nerf": "branche-profonde-du-nerf-ulnaire",
+    "texte": "Rameau profond du nerf ulnaire",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Arcade palmaire profonde et artères métacarpiennes palmaires",
+    "arteres": [
+     "arcade-palmaire-profonde",
+     "arteres-metacarpiennes-palmaires"
+    ]
+   },
+   "palpation": null,
+   "test": "Le sujet serre une feuille de papier entre deux doigts tendus pendant que l'examinateur tente de la retirer",
+   "atteinte": "Lésion du nerf ulnaire : les doigts ne se serrent plus, une feuille glisse entre eux ; l'auriculaire reste écarté des autres (signe de Wartenberg), puis la griffe ulnaire s'installe",
+   "clinique": "Un geste simple les vérifie avec les interosseux dorsaux : croiser le majeur par-dessus l'index. Il demande un nerf ulnaire intact",
+   "memo": "Les palmaires rapprochent, les dorsaux écartent. Le majeur n'a pas d'interosseux palmaire : c'est vers lui que les autres doigts viennent",
+   "variantes": "Certains auteurs décrivent un 4e interosseux palmaire, pour le pouce, né du 1er métacarpien : faisceau inconstant, que d'autres rattachent au court fléchisseur ou à l'adducteur du pouce",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-main",
+    "kenhub-interosseux-palmaires",
+    "statpearls-main",
+    "statpearls-muscles",
+    "openstax"
+   ],
+   "divergences": "Nombre : trois pour Gray, TeachMeAnatomy, StatPearls et OpenStax ; quatre pour Kenhub, qui compte un interosseux du pouce. Gray (1918) ne cite que la racine C8"
+  },
+  {
+   "id": "opposant-pouce",
+   "resume": "Le muscle profond de l'éminence thénar : il fait pivoter le premier métacarpien pour amener le pouce face aux autres doigts.",
+   "origine": [
+    {
+     "texte": "Tubercule du trapèze",
+     "os": [
+      "os-trapeze"
+     ]
+    },
+    {
+     "texte": "Rétinaculum des fléchisseurs",
+     "os": [
+      "retinaculum-flechisseurs"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Toute la longueur du bord radial du 1er métacarpien",
+     "os": [
+      "premier-metacarpien"
+     ]
+    }
+   ],
+   "action": "Porte le 1er métacarpien en avant et en dedans en le faisant tourner sur le trapèze : la pulpe du pouce vient faire face à celle des autres doigts",
+   "actions": [
+    {
+     "articulation": "pouce-cmc",
+     "mouvement": "opposition",
+     "role": "principal",
+     "precision": "flexion, adduction et rotation médiale combinées du 1er métacarpien"
+    }
+   ],
+   "synergistes": [
+    "court-abducteur-pouce",
+    "court-flechisseur-pouce",
+    "adducteur-pouce",
+    "muscle-opposant-du-petit-doigt"
+   ],
+   "antagonistes": [
+    "long-extenseur-du-pouce",
+    "court-extenseur-pouce",
+    "long-abducteur-pouce"
+   ],
+   "innervation": {
+    "nerf": "nerf-median",
+    "texte": "Rameau récurrent (thénarien) du nerf médian",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameau palmaire superficiel de l'artère radiale",
+    "arteres": [
+     "radiale"
+    ]
+   },
+   "palpation": "Le long du bord radial du 1er métacarpien, sous le court abducteur du pouce : on le sent durcir quand le pouce presse fort contre l'auriculaire",
+   "test": "Le sujet presse la pulpe du pouce contre celle de l'auriculaire ; l'examinateur tente de les séparer en tirant sur la tête du 1er métacarpien",
+   "atteinte": "Lésion du nerf médian : l'opposition vraie est perdue. Le pouce ne tourne plus sa pulpe vers les doigts et reste dans le plan de la paume (« main de singe ») ; la pince fine devient une pince latérale, pouce contre le bord de l'index",
+   "clinique": "La fonte de l'éminence thénar est un signe tardif du syndrome du canal carpien : le relief charnu qui borde le 1er métacarpien s'efface",
+   "memo": "Seul muscle thénarien fixé sur le métacarpien et non sur la phalange : il déplace l'os de base, donc tout le pouce",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-main",
+    "kenhub-thenar",
+    "statpearls-main",
+    "statpearls-muscles",
+    "openstax"
+   ],
+   "divergences": "Gray (1918) lui attribuait C6–C7 ; StatPearls donne C8–T1, Kenhub surtout T1"
+  }
+ ]
+}

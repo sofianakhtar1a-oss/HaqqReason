@@ -26,10 +26,20 @@ Les sources restent hors du dépôt ; seuls les scripts et les paquets finis son
 | 4 bis | `python 04b_fibres.py` | Le sens des fibres des muscles, tendons et ligaments (champ harmonique entre les attaches) |
 | 4 ter | `python 04c_zones.py` | Les zones : le tendon d'origine et le tendon terminal de chaque muscle, le ligament patellaire, l'aponévrose palmaire, la gaine du droit de l'abdomen |
 | 4 quater | `python 04d_couvertures.py` | Qui couvre qui (rayons tirés vers la peau, qui n'est jamais affichée), et la profondeur sous la peau |
+| 4 quinquies | `python 04e_squelette.py` | Le squelette articulé : 135 segments, les centres et les axes des articulations mesurés sur les os (`squelette.py`), et pour chaque sommet les deux segments qu'il suit (vingt minutes) |
+| 4 sexies | `python 04f_pouls.py` | La distance de chaque sommet d'artère au cœur le long de l'arbre artériel (pour l'onde du pouls) |
 | 5 | `python 05_paquets.py` | Les paquets compressés de `public/corps/` et le manifeste |
 | 6 | `python 06_catalogue.py` | Les éléments, les pièces, les insertions, les repères et les planches de `src/lib/corps/modele/` |
 
-L'étape 4 réécrit les fichiers d'attributs : après elle, relancer 4 bis, 4 ter, puis 5 et 6.
+L'étape 4 réécrit les fichiers d'attributs : après elle, relancer 4 bis, 4 ter, 4 quinquies, 4 sexies, puis 5 et 6.
+
+`squelette.py` seul (`python squelette.py`) affiche les centres et les axes mesurés. Les axes des charnières
+(coude, genou, cheville) sont affinés en faisant jouer l'articulation : on garde l'axe autour duquel les deux
+surfaces glissent l'une sur l'autre sans s'écarter ni se pénétrer. Les amplitudes et le sens des mouvements sont
+dans `src/lib/corps/mouvement/articulations.ts`.
+
+Les fiches : `fiches_lots.py` prépare les lots (`donnees/fiches/entree/`), la rédaction suit
+`donnees/fiches/CONSIGNES.md` et rend `donnees/fiches/sortie/<lot>.json`, que `valider_fiches.py` contrôle.
 
 `donnees/` garde ce qui ne se recalcule pas : `heritage.json` (les fiches de la première version),
 `planches-publiees.json` (la composition des planches en ligne : elle ne change plus, la progression de chacun en

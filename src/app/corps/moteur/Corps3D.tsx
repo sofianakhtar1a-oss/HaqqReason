@@ -2,6 +2,8 @@
 
 import { forwardRef, useEffect, useImperativeHandle, useMemo, useRef } from "react";
 import { PAR_ID } from "@/lib/corps/catalogue";
+import { type Etape, melangerPoses } from "@/lib/corps/mouvement/gestes";
+import { NB_AXIAUX, NB_LATERAUX, type Pose, auRepos, deplacer as deplacerPoint, poser } from "@/lib/corps/mouvement/squelette";
 import type { Couche, RegionId, StructureScene } from "@/lib/corps/types";
 import { type V3, borne, fois, longueur, moins, multiplier, perspective, plus, projeter, regarder, scal, unitaire } from "@/lib/corps/vec";
 import { type Finesse, niveauPour, type Scene } from "./chargement";
@@ -25,7 +27,16 @@ export type NomVue = "face" | "dos" | "gauche" | "droite" | "ensemble";
 /** Les enveloppes qu'on ne montre pas d'office : elles couvrent ce qu'on vient voir. */
 export type CalqueOptionnel = "fascia" | "gaine" | "bourse" | "enveloppe";
 
+/** Un plan de coupe : horizontal (axial), de profil (sagittal) ou de face (frontal), à une position en mètres. */
+export type Coupe = { plan: "axial" | "sagittal" | "frontal"; position: number; inverse?: boolean };
+
 export type Corps3DPoignee = {
+  /** Mettre le squelette dans une pose (en douceur, ou d'un coup). Une pose vide ramène à la position anatomique. */
+  poser(pose: Pose, o?: { instant?: boolean }): void;
+  /** Jouer un programme de gestes (voir mouvement/gestes.ts). `etape` reçoit le rang de l'étape qui commence. */
+  jouer(etapes: Etape[], o?: { boucle?: boolean; etape?: (rang: number) => void; fin?: () => void }): void;
+  /** Arrêter le programme et revenir à la position anatomique. */
+  arreter(): void;
   /** Cadrer ces éléments ; « depuis » : regarder du côté où cet élément-là se voit (sans le cadrer seul). */
   viser(ids: string[], o?: { cote?: "g" | "d" | null; marge?: number; instant?: boolean; depuis?: string }): void;
   vue(nom: NomVue, o?: { instant?: boolean }): void;
@@ -58,6 +69,13 @@ type Props = {
   onSurvol?: (s: StructureScene | null) => void;
   /** Une étiquette accrochée à une structure (et son texte). */
   etiquette?: { id: string; texte: string; sous?: string } | null;
+  /** Un plan de coupe, ou rien. */
+  coupe?: Coupe | null;
+  /** La vue éclatée : 0 (le corps assemblé) à 1 (les pièces écartées les unes des autres). */
+  eclate?: number;
+  /** Le scalpel : on saisit une structure et on la tire hors du corps pour l'ôter. */
+  scalpel?: boolean;
+  onOter?: (s: StructureScene) => void;
   className?: string;
   /** Le libellé pour les lecteurs d'écran. */
   libelle?: string;
@@ -163,6 +181,18 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     camera: Camera | null;
     chaud: number;
     reveil: ReturnType<typeof setTimeout> | null;
+    /** Le squelette : la pose courante, celle qu'on vise, les matrices envoyées au moteur. */
+    pose: Pose;
+    poseCible: Pose;
+    poseEnRoute: boolean;
+    matrices: Float32Array;
+    programme: { etapes: Etape[]; rang: number; t: number; depuis: Pose; actifsDepuis: Record<string, number>; boucle: boolean; etape?: (rang: number) => void; fin?: () => void } | null;
+    /** L'activité des muscles (élément → 0 à 1), et ceux qu'il a fallu remettre au repos. */
+    actifs: Record<string, number>;
+    /** Le déplacement de chaque structure (vue éclatée, scalpel) : courant et visé. */
+    decal: Float32Array;
+    decalCible: Float32Array;
+    decalEnRoute: boolean;
   } | null>(null);
 
   const reveiller = (duree = 0) => {
@@ -251,6 +281,70 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
         m.r.definir(i, { visible: m.vis[i] });
       }
     }
+    // Le squelette : un programme de gestes en cours, ou une pose visée qu'on rejoint en douceur.
+    let poseChange = false;
+    const pg = m.programme;
+    if (pg) {
+      const etape = pg.etapes[pg.rang];
+      pg.t += dt;
+      const u = borne(pg.t / Math.max(0.01, etape.duree), 0, 1);
+      const e = u * u * (3 - 2 * u);
+      m.pose = melangerPoses(pg.depuis, etape.pose, e);
+      const actifs: Record<string, number> = {};
+      for (const id of new Set([...Object.keys(pg.actifsDepuis), ...Object.keys(etape.actifs)])) actifs[id] = (pg.actifsDepuis[id] ?? 0) * (1 - e) + (etape.actifs[id] ?? 0) * e;
+      activer(actifs, etape.surPlace ?? false);
+      poseChange = bouge = true;
+      if (u >= 1) {
+        pg.depuis = etape.pose;
+        pg.actifsDepuis = etape.actifs;
+        pg.rang++;
+        pg.t = 0;
+        if (pg.rang >= pg.etapes.length) {
+          if (pg.boucle) pg.rang = 0;
+          else {
+            m.programme = null;
+            pg.fin?.();
+          }
+        }
+        if (m.programme) pg.etape?.(pg.rang);
+      }
+    } else if (m.poseEnRoute) {
+      let reste = false;
+      const kp = m.calmes ? 1 : 1 - Math.exp(-dt * 6);
+      const suite: Pose = {};
+      for (const cle of new Set([...Object.keys(m.pose), ...Object.keys(m.poseCible)])) {
+        const a = m.pose[cle] ?? 0;
+        const b = m.poseCible[cle] ?? 0;
+        const proche = Math.abs(b - a) < 0.05;
+        const x = proche ? b : a + (b - a) * kp;
+        if (!proche) reste = true;
+        if (x) suite[cle] = x;
+      }
+      m.pose = suite;
+      m.poseEnRoute = reste;
+      poseChange = true;
+      if (reste) bouge = true;
+    }
+    if (poseChange) m.r.poser(auRepos(m.pose) ? null : poser(m.pose, m.matrices), NB_AXIAUX, NB_LATERAUX);
+    // Les pièces déplacées (vue éclatée, scalpel) glissent vers leur place.
+    if (m.decalEnRoute) {
+      let reste = false;
+      const kd = m.calmes ? 1 : 1 - Math.exp(-Math.min(0.4, ecoule) * 8);
+      for (let i = 0; i < m.decal.length; i += 3) {
+        const dx = m.decalCible[i] - m.decal[i];
+        const dy = m.decalCible[i + 1] - m.decal[i + 1];
+        const dz = m.decalCible[i + 2] - m.decal[i + 2];
+        if (dx === 0 && dy === 0 && dz === 0) continue;
+        const proche = Math.abs(dx) + Math.abs(dy) + Math.abs(dz) < 0.0004;
+        m.decal[i] = proche ? m.decalCible[i] : m.decal[i] + dx * kd;
+        m.decal[i + 1] = proche ? m.decalCible[i + 1] : m.decal[i + 1] + dy * kd;
+        m.decal[i + 2] = proche ? m.decalCible[i + 2] : m.decal[i + 2] + dz * kd;
+        m.r.decaler(i / 3, [m.decal[i], m.decal[i + 1], m.decal[i + 2]]);
+        if (!proche) reste = true;
+      }
+      m.decalEnRoute = reste;
+      if (reste) bouge = true;
+    }
     // L'image.
     const largeur = canvas.width;
     const hauteur = canvas.height;
@@ -274,6 +368,22 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
         }
       }, attente);
     }
+  }
+
+  /** L'activité des muscles : leur ventre gonfle ; sans articulation à mouvoir, ils se raccourcissent sur place. */
+  function activer(actifs: Record<string, number>, surPlace: boolean) {
+    const m = moteur.current;
+    if (!m || !m.scene) return;
+    const structures = m.scene.structures;
+    for (const id of new Set([...Object.keys(m.actifs), ...Object.keys(actifs)])) {
+      const a = actifs[id] ?? 0;
+      for (const i of m.parElement.get(id) ?? []) {
+        const s = structures[i];
+        if (s.zone) continue;
+        m.r.contracter(i, { gonfle: a * borne(s.rayon * 0.035, 0.0008, 0.0045), raccourci: surPlace && s.origine && s.terminaison ? a * 0.13 : 0, origine: s.origine, terminaison: s.terminaison, rond: false });
+      }
+    }
+    m.actifs = Object.fromEntries(Object.entries(actifs).filter(([, a]) => a > 0));
   }
 
   /** Fait venir les modèles d'un calque : la version légère tout de suite, puis celle que l'appareil peut tenir. */
@@ -331,7 +441,11 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     }
     const vp = multiplier(m.camera.proj, m.camera.vue);
     const rect = toile.current.getBoundingClientRect();
-    const pt = projeter(meilleure.centre, vp, rect.width, rect.height);
+    // Le point d'accroche suit la structure : là où le squelette l'a emmenée, là où on l'a déplacée.
+    let accroche = auRepos(m.pose) || meilleure.segment === undefined ? meilleure.centre : deplacerPoint(m.matrices, meilleure.segment, meilleure.centre);
+    const pd = (meilleure.de ?? meilleure.id) * 3;
+    if (m.decal[pd] || m.decal[pd + 1] || m.decal[pd + 2]) accroche = plus(accroche, [m.decal[pd], m.decal[pd + 1], m.decal[pd + 2]]);
+    const pt = projeter(accroche, vp, rect.width, rect.height);
     if (!pt) {
       el.style.opacity = "0";
       return;
@@ -446,6 +560,43 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
       if (!m || !m.scene) return [];
       return (m.parElement.get(id) ?? []).map((i) => m.scene!.structures[i]);
     },
+    poser(pose, o = {}) {
+      const m = moteur.current;
+      if (!m) return;
+      m.programme = null;
+      m.poseCible = { ...pose };
+      if (o.instant || m.calmes) m.pose = { ...pose };
+      m.poseEnRoute = true;
+      reveiller();
+    },
+    jouer(etapes, o = {}) {
+      const m = moteur.current;
+      if (!m || !etapes.length) return;
+      if (m.calmes) {
+        // Moins d'animations : on montre le geste accompli, immobile.
+        const rang = Math.max(0, etapes.findIndex((e) => e.legende));
+        m.programme = null;
+        m.pose = { ...etapes[rang].pose };
+        m.poseCible = { ...etapes[rang].pose };
+        m.poseEnRoute = true;
+        activer(etapes[rang].actifs, etapes[rang].surPlace ?? false);
+        o.etape?.(rang);
+        reveiller();
+        return;
+      }
+      m.programme = { etapes, rang: 0, t: 0, depuis: { ...m.pose }, actifsDepuis: { ...m.actifs }, boucle: o.boucle ?? false, etape: o.etape, fin: o.fin };
+      o.etape?.(0);
+      reveiller();
+    },
+    arreter() {
+      const m = moteur.current;
+      if (!m) return;
+      m.programme = null;
+      m.poseCible = {};
+      m.poseEnRoute = true;
+      activer({}, false);
+      reveiller();
+    },
     // Les méthodes ne lisent que des références : elles naissent une fois.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }), []);
@@ -490,6 +641,15 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
       camera: null,
       chaud: 0,
       reveil: null,
+      pose: {},
+      poseCible: {},
+      poseEnRoute: false,
+      matrices: new Float32Array((NB_AXIAUX + 2 * NB_LATERAUX) * 12),
+      programme: null,
+      actifs: {},
+      decal: new Float32Array(0),
+      decalCible: new Float32Array(0),
+      decalEnRoute: false,
     };
     // La taille : celle de l'élément, en pixels réels, plafonnée selon la qualité que l'appareil tient à 60 images
     // par seconde (qualité 0 : tout ; 1 : ombres plus petites ; 2 : sans ombres portées ; 3 : un pixel par point).
@@ -546,6 +706,8 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     }
     m.vis = new Float32Array(n).fill(m.calmes ? 1 : 0);
     m.visCible = new Float32Array(n).fill(1);
+    m.decal = new Float32Array(n * 3);
+    m.decalCible = new Float32Array(n * 3);
     for (let i = 0; i < n; i++) m.r.definir(i, { visible: m.vis[i] });
     m.desabonner = scene.modele.abonner((paquet, base, zones) => {
       const mm = moteur.current;
@@ -641,6 +803,48 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.couches, props.calques, props.rotation, props.etiquette, props.aspect]);
 
+  // Le plan de coupe.
+  useEffect(() => {
+    const m = moteur.current;
+    if (!m) return;
+    const c = props.coupe;
+    if (!c) m.r.coupe = null;
+    else {
+      const s = c.inverse ? -1 : 1;
+      const n: V3 = c.plan === "axial" ? [0, 1, 0] : c.plan === "sagittal" ? [1, 0, 0] : [0, 0, 1];
+      m.r.coupe = [n[0] * s, n[1] * s, n[2] * s, c.position * s];
+    }
+    reveiller();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [props.coupe]);
+
+  // La vue éclatée : chaque pièce s'écarte du centre de ce qu'on regarde (le corps, ou ce qu'on a isolé).
+  useEffect(() => {
+    const m = moteur.current;
+    if (!m || !m.scene) return;
+    const k = props.eclate ?? 0;
+    const structures = m.scene.structures;
+    const gardes = props.isoler && props.isoler.length ? props.isoler.flatMap((id) => m.parElement.get(id) ?? []) : [];
+    let centre: V3 = [0, 0.95, -0.01];
+    if (gardes.length) {
+      centre = [0, 0, 0];
+      for (const i of gardes) centre = plus(centre, structures[i].centre);
+      centre = fois(centre, 1 / gardes.length);
+    }
+    const force: Record<string, number> = { os: 0.55, ligament: 0.6, muscle: 1, tendon: 1, fascia: 1.25, artere: 0.8, veine: 0.85, nerf: 0.8, viscere: 0.7, encephale: 0.6, lymphe: 0.8 };
+    for (const s of structures) {
+      if (s.zone) continue;
+      const d = moins(s.centre, centre);
+      const f = k * 0.75 * (force[s.calque] ?? 0.8) * (s.calque === "muscle" ? 1.25 - 0.2 * s.profondeur : 1);
+      m.decalCible[s.id * 3] = d[0] * f;
+      m.decalCible[s.id * 3 + 1] = d[1] * f * 0.5;
+      m.decalCible[s.id * 3 + 2] = d[2] * f;
+    }
+    m.decalEnRoute = true;
+    reveiller(600);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [props.eclate, props.scene, props.isoler]);
+
   /* ---------- Les gestes ---------- */
 
   useEffect(() => {
@@ -651,6 +855,8 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     let pince: { d: number; mx: number; my: number } | null = null;
     let dernierToucher = 0;
     let survolTempo = 0;
+    // Le scalpel : la structure saisie, ses pièces, et l'échelle (mètres par pixel) à sa distance.
+    let saisie: { s: StructureScene; ids: number[]; x: number; y: number; echelle: number; base: Float32Array } | null = null;
 
     const choisirSous = (cx: number, cy: number): StructureScene | null => {
       const m = moteur.current;
@@ -686,7 +892,21 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
         m.dernierGeste = performance.now();
       }
       if (pointeurs.size === 1) depart = { x: ev.clientX, y: ev.clientY, t: performance.now(), bouton: ev.button, deplace: false };
+      saisie = null;
+      if (pointeurs.size === 1 && p.current.scalpel && m && m.scene && m.camera && ev.button === 0) {
+        const s = choisirSous(ev.clientX, ev.clientY);
+        if (s) {
+          const structures = m.scene.structures;
+          const ids = (m.parElement.get(s.element) ?? []).filter((i) => !structures[i].zone && structures[i].cote === s.cote);
+          const rect = canvas.getBoundingClientRect();
+          const loin = Math.max(0.05, longueur(moins(s.centre, m.camera.oeil)));
+          const base = new Float32Array(ids.length * 3);
+          ids.forEach((i, k) => base.set(m.decal.subarray(i * 3, i * 3 + 3), k * 3));
+          saisie = { s, ids, x: ev.clientX, y: ev.clientY, echelle: (2 * Math.tan(FOV / 2) * loin) / Math.max(1, rect.height), base };
+        }
+      }
       if (pointeurs.size === 2) {
+        saisie = null;
         const [a, b] = [...pointeurs.values()];
         pince = { d: Math.hypot(a.x - b.x, a.y - b.y), mx: (a.x + b.x) / 2, my: (a.y + b.y) / 2 };
         if (depart) depart.deplace = true;
@@ -719,6 +939,20 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
       pointeurs.set(ev.pointerId, { x: ev.clientX, y: ev.clientY });
       m.dernierGeste = performance.now();
       if (depart && Math.hypot(ev.clientX - depart.x, ev.clientY - depart.y) > 6) depart.deplace = true;
+      if (saisie && pointeurs.size === 1) {
+        // La structure suit le doigt, dans le plan de l'écran.
+        const c = m.cam;
+        const droite: V3 = [Math.cos(c.yaw), 0, -Math.sin(c.yaw)];
+        const haut: V3 = [-Math.sin(c.pitch) * Math.sin(c.yaw), Math.cos(c.pitch), -Math.sin(c.pitch) * Math.cos(c.yaw)];
+        const v = plus(fois(droite, (ev.clientX - saisie.x) * saisie.echelle), fois(haut, -(ev.clientY - saisie.y) * saisie.echelle));
+        saisie.ids.forEach((i, k) => {
+          for (let a = 0; a < 3; a++) m.decal[i * 3 + a] = m.decalCible[i * 3 + a] = saisie!.base[k * 3 + a] + v[a];
+          m.r.decaler(i, [m.decal[i * 3], m.decal[i * 3 + 1], m.decal[i * 3 + 2]]);
+        });
+        canvas.style.cursor = "grabbing";
+        reveiller();
+        return;
+      }
       if (pointeurs.size === 2 && pince) {
         const [a, b] = [...pointeurs.values()];
         const d = Math.hypot(a.x - b.x, a.y - b.y);
@@ -755,6 +989,32 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
         return;
       }
       const bref = performance.now() - depart.t < 450 && !depart.deplace;
+      if (saisie && depart.deplace) {
+        // Tirée assez loin, la structure est ôtée ; sinon elle revient à sa place.
+        const tenue = saisie;
+        const loin = Math.hypot(ev.clientX - tenue.x, ev.clientY - tenue.y) > 70;
+        if (loin) p.current.onOter?.(tenue.s);
+        const remettre = () => {
+          const mm = moteur.current;
+          if (!mm) return;
+          tenue.ids.forEach((i, k) => {
+            for (let a = 0; a < 3; a++) {
+              mm.decalCible[i * 3 + a] = tenue.base[k * 3 + a];
+              if (loin) mm.decal[i * 3 + a] = tenue.base[k * 3 + a];
+            }
+            if (loin) mm.r.decaler(i, [mm.decal[i * 3], mm.decal[i * 3 + 1], mm.decal[i * 3 + 2]]);
+          });
+          mm.decalEnRoute = true;
+          reveiller();
+        };
+        if (loin) setTimeout(remettre, 520);
+        else remettre();
+        saisie = null;
+        depart = null;
+        reveiller();
+        return;
+      }
+      saisie = null;
       if (bref) {
         m.vitesse = [0, 0];
         const s = choisirSous(ev.clientX, ev.clientY);

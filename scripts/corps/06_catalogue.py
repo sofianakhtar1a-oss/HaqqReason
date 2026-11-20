@@ -622,6 +622,21 @@ def cle_couvrant(nom):
     return f"{k}:{'d' if autre else 'g'}" if q["miroir"] else k
 
 
+# Le squelette (étape 4 quinquies) : le segment que chaque pièce suit le plus, et les deux bouts de chaque muscle.
+f_bouts = os.path.join(DONNEES, "bouts.json")
+bouts = json.load(open(f_bouts, encoding="utf-8")) if os.path.exists(f_bouts) else {}
+
+
+def segment_dominant(objet):
+    for lod in (2, 1):
+        f = os.path.join(DONNEES, "attributs", f"lod{lod}", fichier_de.get(objet, "?") + ".npz")
+        if os.path.exists(f):
+            a = np.load(f)
+            if "BA" in a:
+                return int(np.bincount(a["BA"]).argmax())
+    return None
+
+
 pieces_json = []
 for p in classement["pieces"]:
     e = el_de_objet[p["objet"]]
@@ -652,6 +667,12 @@ for p in classement["pieces"]:
         if cles:
             x["couv"] = cles
         x["peau"] = cv["peau"]
+    sg = segment_dominant(p["objet"])
+    if sg:
+        x["sg"] = sg
+    bt = bouts.get(p["objet"])
+    if bt:
+        x["o"], x["i"] = [round(v, 3) for v in bt["o"]], [round(v, 3) for v in bt["e"]]
     pieces_json.append(x)
 
 CHAMPS_HERITES = ("noms", "nombre", "action", "origine", "terminaison", "innervation", "sorte", "articulations", "provenance", "territoire", "muscle", "attache", "memo", "anecdote")

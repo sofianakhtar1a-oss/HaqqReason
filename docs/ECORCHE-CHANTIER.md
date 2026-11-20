@@ -52,7 +52,7 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
 | 1.1 | Sources, licences, export depuis Blender | 4 | 4 |
 | 1.2 | Classement : couches, structures, côtés, noms français et latins (TA2), exclusions | 4 | 4 |
 | 1.3 | Géométrie : soudure, normales, vaisseaux retracés, lissage, trois niveaux de détail | 4 | 3 |
-| 1.4 | Attributs : occlusion précalculée, sens des fibres, tendon et cartilage, poids d'animation, onde artérielle | 4 | 3 |
+| 1.4 | Attributs : occlusion précalculée, sens des fibres, tendon et cartilage, poids d'animation, onde artérielle | 4 | 4 |
 | 1.5 | Paquets compressés, noms hachés, chargement progressif | 2 | 2 |
 | 2.1 | Moteur : chargement des paquets, détail selon l'appareil, sélection, états | 4 | 3 |
 | 2.2 | Matières physiques par tissu (muscle, tendon, os, cartilage, artère, veine, nerf, viscère) | 5 | 2 |
@@ -62,12 +62,12 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
 | 3.2 | Nouvelles couches : veines, nerfs, ligaments et cartilages, viscères, encéphale | 4 | 1 |
 | 3.3 | Listes de référence TA2, test de couverture, structures manquantes modélisées | 4 | 0 |
 | 4.1 | Dissection au geste, isolement avec les attaches, vue éclatée | 3 | 1 |
-| 4.2 | Plans de coupe avec surfaces de coupe réalistes | 3 | 0 |
-| 4.3 | Squelette articulé : segments, axes, amplitudes | 4 | 0 |
-| 4.4 | Contraction des muscles, action de chaque muscle, cœur et pouls | 4 | 0 |
-| 5.1 | Schéma des fiches, données tirées de Z-Anatomy (insertions, nerfs, loges) | 3 | 1 |
+| 4.2 | Plans de coupe avec surfaces de coupe réalistes | 3 | 1 |
+| 4.3 | Squelette articulé : segments, axes, amplitudes | 4 | 2 |
+| 4.4 | Contraction des muscles, action de chaque muscle, cœur et pouls | 4 | 1 |
+| 5.1 | Schéma des fiches, données tirées de Z-Anatomy (insertions, nerfs, loges) | 3 | 2 |
 | 5.2 | Fiches des os | 3 | 0 |
-| 5.3 | Fiches des muscles | 5 | 0 |
+| 5.3 | Fiches des muscles | 5 | 1 |
 | 5.4 | Fiches des tendons et aponévroses | 2 | 0 |
 | 5.5 | Fiches des artères | 3 | 0 |
 | 5.6 | Fiches des autres couches | 2 | 0 |
@@ -77,7 +77,7 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
 | 7.1 | Interface : couches, coupes, mouvements, fiches enrichies, page « Sources et licences » | 4 | 1 |
 | 7.2 | Captures de contrôle, tests, performances, mise en ligne, bilan | 4 | 1 |
 
-**Total fait : 31 / 100.**
+**Total fait : 38 / 100.**
 
 ## Journal
 
@@ -111,6 +111,18 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
   la sélection ne dessine plus que le pixel visé. Une page « Sources et licences » cite Z-Anatomy et BodyParts3D.
   Contrôles faits en rendu logiciel, sur ordinateur et téléphone : accueil, planches, explorateur, une partie
   (reconnaître, situer). Non mesuré ici : les images par seconde sur une vraie carte graphique.
+
+- 20/11 21:50 — Le squelette est articulé. `squelette.py` mesure sur les os le centre et les axes de chaque
+  articulation (sphère ajustée sur les têtes du fémur et de l'humérus, noyau de chaque disque intervertébral, axe du
+  col de chaque côte, charnières affinées par le jeu des surfaces) ; `04e_squelette.py` donne à chaque sommet du corps
+  les deux segments qu'il suit (attributs BA, BB, BW) ; `04f_pouls.py`, à chaque sommet d'artère sa distance au cœur.
+  Côté site : `mouvement/articulations.ts` (les degrés de liberté et leurs amplitudes), `mouvement/squelette.ts`
+  (des angles aux matrices ; rythme scapulo-huméral, patella, sternum porté par les côtes), `mouvement/gestes.ts`
+  (du vocabulaire des fiches au geste : « coude, flexion » → un programme d'animation). Le moteur déplace os, muscles,
+  tendons, vaisseaux et nerfs sur la carte graphique, fait gonfler le ventre d'un muscle qui travaille, battre les
+  artères, et sait couper le corps par un plan (la tranche prend le grain du tissu). `Corps3D` reçoit la pose, le plan
+  de coupe, la vue éclatée et le scalpel ; l'interface de ces outils reste à poser. Les fiches enrichies : cadre en
+  place (`donnees/fiches/`), onze lots confiés à des sous-agents, deux rendus (muscles des membres).
 
 ## Pour reprendre après une interruption
 

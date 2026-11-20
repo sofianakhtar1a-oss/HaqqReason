@@ -139,4 +139,9 @@ export type StructureScene = {
   /** Une zone d'une pièce (le tendon d'un muscle) : son code, et le numéro de la pièce qui la porte. */
   zone?: number;
   de?: number;
+  /** Le segment du squelette que la pièce suit le plus (pour accrocher une étiquette quand le corps bouge). */
+  segment?: number;
+  /** Pour un muscle : les deux bouts de la pièce, dans le repère où elle est rangée (côté gauche pour une paire). */
+  origine?: V3;
+  terminaison?: V3;
 };

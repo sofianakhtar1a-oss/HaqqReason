@@ -8,8 +8,10 @@
 #     Le code vaut pour tous les sommets ; seul le tissu tendineux (poids W1) forme la zone.
 # Les deux bouts d'un muscle viennent des surfaces d'insertion de Z-Anatomy quand elles existent ; à défaut, de la
 # convention anatomique (l'origine est l'attache la plus proche du tronc).
-# Usage : python 04c_zones.py   (complète ~/donnees-corps/attributs et écrit ~/donnees-corps/zones.json)
-import collections, json, os, re, time
+# Les deux bouts de chaque pièce de muscle sont aussi écrits dans bouts.json : ils servent à la faire se contracter.
+# Usage : python 04c_zones.py   (complète ~/donnees-corps/attributs et écrit ~/donnees-corps/zones.json et bouts.json)
+#         python 04c_zones.py bouts   (n'écrit que bouts.json, sans toucher aux attributs)
+import collections, json, os, re, sys, time
 import numpy as np
 from scipy.spatial import cKDTree
 from commun import DONNEES, GROUPES_INSERTION, bord_du_droit, decouper, eloignement, norme, voile
@@ -83,7 +85,9 @@ PALMAIRE = norme("Palmaris longus muscle")
 pisiforme = geo("Pisiform bone.l")
 Y_POIGNET = float(pisiforme["P"][:, 1].min()) if pisiforme else 0.84
 
+SEULEMENT_BOUTS = "bouts" in sys.argv[1:]
 zones = {}
+les_bouts = {}
 methodes = collections.Counter()
 for e in index:
     if e["couche"] != "muscle":
@@ -95,6 +99,9 @@ for e in index:
         continue
     O, E, methode = bouts(base, g1["P"].astype(np.float64))
     methodes[methode] += 1
+    les_bouts[e["objet"]] = {"o": [round(float(v), 4) for v in O], "e": [round(float(v), 4) for v in E], "m": methode}
+    if SEULEMENT_BOUTS:
+        continue
     axe = E - O
     l2 = float(axe @ axe) or 1.0
     for lod in range(3):
@@ -143,7 +150,10 @@ for e in index:
         if bilan:
             zones[e["objet"]] = bilan
 
+json.dump(les_bouts, open(os.path.join(DONNEES, "bouts.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+print("bouts :", dict(methodes))
+if SEULEMENT_BOUTS:
+    raise SystemExit(0)
 json.dump(zones, open(os.path.join(DONNEES, "zones.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 nb = sum(len(z) for z in zones.values())
 print(f"{len(zones)} pièces de muscle à tendon, {nb} zones (surface médiane {np.median([z['a'] for b in zones.values() for z in b.values()]):.1f} cm²) en {time.time() - t0:.0f} s")
-print("bouts :", dict(methodes))

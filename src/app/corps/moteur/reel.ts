@@ -35,6 +35,9 @@ export type Matiere = {
   grain: number;
   /** L'étirement du reflet le long des fibres (tendons). */
   aniso: number;
+  /** Le tissu tranché par un plan de coupe : sa couleur, la force de son grain (travées, faisceaux). */
+  tranche: V3;
+  grainTranche: number;
 };
 
 const srvb = (hex: string): V3 => {
@@ -48,21 +51,21 @@ const srvb = (hex: string): V3 => {
 
 /** Les matières par paquet, pour la pièce « fraîche » (humide, brillante). */
 export const MATIERES: Record<string, Matiere> = {
-  os: { base: srvb("#d8c9a6"), base2: srvb("#c2d2da"), rug: 0.64, rug2: 0.3, sss: 0.12, sssTeinte: srvb("#e8b48a"), vernis: 0.05, fibres: 0, grain: 0.5, aniso: 0 },
-  muscle: { base: srvb("#8a2420"), base2: srvb("#e9e3d4"), rug: 0.46, rug2: 0.34, sss: 0.55, sssTeinte: srvb("#d2301c"), vernis: 0.55, fibres: 1, grain: 0.12, aniso: 0.35 },
-  tendon: { base: srvb("#e6e0d0"), base2: srvb("#e6e0d0"), rug: 0.34, rug2: 0.34, sss: 0.25, sssTeinte: srvb("#f0d9b0"), vernis: 0.35, fibres: 0.7, grain: 0.08, aniso: 0.6 },
-  fascia: { base: srvb("#ddd8cc"), base2: srvb("#ddd8cc"), rug: 0.4, rug2: 0.4, sss: 0.3, sssTeinte: srvb("#f0d9b0"), vernis: 0.3, fibres: 0.4, grain: 0.1, aniso: 0.3 },
-  gaine: { base: srvb("#c9d7dc"), base2: srvb("#c9d7dc"), rug: 0.3, rug2: 0.3, sss: 0.4, sssTeinte: srvb("#cfe3ea"), vernis: 0.6, fibres: 0, grain: 0.05, aniso: 0 },
-  ligament: { base: srvb("#d9d2bd"), base2: srvb("#c5d3da"), rug: 0.42, rug2: 0.3, sss: 0.22, sssTeinte: srvb("#f0d9b0"), vernis: 0.25, fibres: 0.5, grain: 0.1, aniso: 0.4 },
-  bourse: { base: srvb("#bfd3da"), base2: srvb("#bfd3da"), rug: 0.28, rug2: 0.28, sss: 0.5, sssTeinte: srvb("#cfe3ea"), vernis: 0.7, fibres: 0, grain: 0.04, aniso: 0 },
-  artere: { base: srvb("#b3211f"), base2: srvb("#b3211f"), rug: 0.3, rug2: 0.3, sss: 0.5, sssTeinte: srvb("#ff3a20"), vernis: 0.6, fibres: 0, grain: 0.05, aniso: 0 },
-  veine: { base: srvb("#3d4d9c"), base2: srvb("#3d4d9c"), rug: 0.32, rug2: 0.32, sss: 0.45, sssTeinte: srvb("#5a6fe0"), vernis: 0.55, fibres: 0, grain: 0.05, aniso: 0 },
-  nerf: { base: srvb("#e8d98f"), base2: srvb("#e8d98f"), rug: 0.44, rug2: 0.44, sss: 0.3, sssTeinte: srvb("#f5e2a0"), vernis: 0.3, fibres: 0.3, grain: 0.1, aniso: 0.2 },
-  viscere: { base: srvb("#b56b5e"), base2: srvb("#c5d3da"), rug: 0.36, rug2: 0.3, sss: 0.5, sssTeinte: srvb("#e0503a"), vernis: 0.65, fibres: 0, grain: 0.15, aniso: 0 },
-  enveloppe: { base: srvb("#d8c8bf"), base2: srvb("#d8c8bf"), rug: 0.3, rug2: 0.3, sss: 0.6, sssTeinte: srvb("#f0c0b0"), vernis: 0.7, fibres: 0, grain: 0.05, aniso: 0 },
-  encephale: { base: srvb("#d6b3a2"), base2: srvb("#ece2d2"), rug: 0.38, rug2: 0.38, sss: 0.5, sssTeinte: srvb("#e8a090"), vernis: 0.6, fibres: 0, grain: 0.1, aniso: 0 },
-  lymphe: { base: srvb("#9fb07c"), base2: srvb("#9fb07c"), rug: 0.4, rug2: 0.4, sss: 0.4, sssTeinte: srvb("#c0d090"), vernis: 0.4, fibres: 0, grain: 0.1, aniso: 0 },
-  insertion: { base: srvb("#c23a2e"), base2: srvb("#2e5fc2"), rug: 0.55, rug2: 0.55, sss: 0, sssTeinte: [0, 0, 0], vernis: 0, fibres: 0, grain: 0, aniso: 0 },
+  os: { base: srvb("#d8c9a6"), base2: srvb("#c2d2da"), rug: 0.64, rug2: 0.3, sss: 0.12, sssTeinte: srvb("#e8b48a"), vernis: 0.05, fibres: 0, grain: 0.5, aniso: 0, tranche: srvb("#b98a6a"), grainTranche: 0.85 },
+  muscle: { base: srvb("#8a2420"), base2: srvb("#e9e3d4"), rug: 0.46, rug2: 0.34, sss: 0.55, sssTeinte: srvb("#d2301c"), vernis: 0.55, fibres: 1, grain: 0.12, aniso: 0.35, tranche: srvb("#7a1f1c"), grainTranche: 0.55 },
+  tendon: { base: srvb("#e6e0d0"), base2: srvb("#e6e0d0"), rug: 0.34, rug2: 0.34, sss: 0.25, sssTeinte: srvb("#f0d9b0"), vernis: 0.35, fibres: 0.7, grain: 0.08, aniso: 0.6, tranche: srvb("#d9cfb8"), grainTranche: 0.25 },
+  fascia: { base: srvb("#ddd8cc"), base2: srvb("#ddd8cc"), rug: 0.4, rug2: 0.4, sss: 0.3, sssTeinte: srvb("#f0d9b0"), vernis: 0.3, fibres: 0.4, grain: 0.1, aniso: 0.3, tranche: srvb("#d2c9b6"), grainTranche: 0.2 },
+  gaine: { base: srvb("#c9d7dc"), base2: srvb("#c9d7dc"), rug: 0.3, rug2: 0.3, sss: 0.4, sssTeinte: srvb("#cfe3ea"), vernis: 0.6, fibres: 0, grain: 0.05, aniso: 0, tranche: srvb("#b9c9cf"), grainTranche: 0.1 },
+  ligament: { base: srvb("#d9d2bd"), base2: srvb("#c5d3da"), rug: 0.42, rug2: 0.3, sss: 0.22, sssTeinte: srvb("#f0d9b0"), vernis: 0.25, fibres: 0.5, grain: 0.1, aniso: 0.4, tranche: srvb("#cfc6ae"), grainTranche: 0.25 },
+  bourse: { base: srvb("#bfd3da"), base2: srvb("#bfd3da"), rug: 0.28, rug2: 0.28, sss: 0.5, sssTeinte: srvb("#cfe3ea"), vernis: 0.7, fibres: 0, grain: 0.04, aniso: 0, tranche: srvb("#aec4cc"), grainTranche: 0.1 },
+  artere: { base: srvb("#b3211f"), base2: srvb("#b3211f"), rug: 0.3, rug2: 0.3, sss: 0.5, sssTeinte: srvb("#ff3a20"), vernis: 0.6, fibres: 0, grain: 0.05, aniso: 0, tranche: srvb("#5e0f10"), grainTranche: 0.15 },
+  veine: { base: srvb("#3d4d9c"), base2: srvb("#3d4d9c"), rug: 0.32, rug2: 0.32, sss: 0.45, sssTeinte: srvb("#5a6fe0"), vernis: 0.55, fibres: 0, grain: 0.05, aniso: 0, tranche: srvb("#232c5e"), grainTranche: 0.15 },
+  nerf: { base: srvb("#e8d98f"), base2: srvb("#e8d98f"), rug: 0.44, rug2: 0.44, sss: 0.3, sssTeinte: srvb("#f5e2a0"), vernis: 0.3, fibres: 0.3, grain: 0.1, aniso: 0.2, tranche: srvb("#d8c77c"), grainTranche: 0.3 },
+  viscere: { base: srvb("#b56b5e"), base2: srvb("#c5d3da"), rug: 0.36, rug2: 0.3, sss: 0.5, sssTeinte: srvb("#e0503a"), vernis: 0.65, fibres: 0, grain: 0.15, aniso: 0, tranche: srvb("#9a4f45"), grainTranche: 0.4 },
+  enveloppe: { base: srvb("#d8c8bf"), base2: srvb("#d8c8bf"), rug: 0.3, rug2: 0.3, sss: 0.6, sssTeinte: srvb("#f0c0b0"), vernis: 0.7, fibres: 0, grain: 0.05, aniso: 0, tranche: srvb("#c9b6ac"), grainTranche: 0.15 },
+  encephale: { base: srvb("#d6b3a2"), base2: srvb("#ece2d2"), rug: 0.38, rug2: 0.38, sss: 0.5, sssTeinte: srvb("#e8a090"), vernis: 0.6, fibres: 0, grain: 0.1, aniso: 0, tranche: srvb("#cbb3a6"), grainTranche: 0.35 },
+  lymphe: { base: srvb("#9fb07c"), base2: srvb("#9fb07c"), rug: 0.4, rug2: 0.4, sss: 0.4, sssTeinte: srvb("#c0d090"), vernis: 0.4, fibres: 0, grain: 0.1, aniso: 0, tranche: srvb("#8a9a68"), grainTranche: 0.3 },
+  insertion: { base: srvb("#c23a2e"), base2: srvb("#2e5fc2"), rug: 0.55, rug2: 0.55, sss: 0, sssTeinte: [0, 0, 0], vernis: 0, fibres: 0, grain: 0, aniso: 0, tranche: srvb("#c23a2e"), grainTranche: 0 },
 };
 
 /** L'ordre du dessin : ce qui couvre d'abord (le test de profondeur épargne ce qui est dessous). */
@@ -71,6 +74,8 @@ export const ORDRE = ["fascia", "enveloppe", "muscle", "tendon", "gaine", "bours
 const LARGEUR_ETAT = 1024;
 /** Les rangées de la texture d'état, par structure : teinte ; visibilité, survol, pulsation, sélection ; couleur propre ; divers. */
 const RANGS_ETAT = 4;
+/** Les rangées de la texture des gestes (nombres réels) : déplacement et gonflement ; origine et raccourcissement ; terminaison et mode. */
+const RANGS_GESTES = 3;
 
 const SOMMETS = `#version 300 es
 precision highp float;
@@ -92,6 +97,10 @@ uniform ivec3 u_zones;   // première zone de ce dessin, nombre de zones par cod
 uniform int u_hauteur;
 uniform highp sampler2D u_etat;
 uniform highp sampler2D u_decal;
+uniform highp sampler2D u_os;   // les matrices des segments du squelette : trois texels (les lignes) par segment
+uniform float u_pose;           // 0 : position anatomique (rien à calculer)
+uniform ivec2 u_segments;       // nombre de segments du milieu, nombre de segments par côté
+uniform vec4 u_pouls;           // amplitude (m), instant du battement (0-1), étalement le long de l'arbre artériel
 uniform float u_temps;
 out vec3 v_pos;
 out vec3 v_nor;
@@ -110,6 +119,11 @@ vec3 oct(vec2 e) {
   return normalize(n);
 }
 
+// Un point (w = 1) ou une direction (w = 0) emmené par un segment.
+vec3 segment(int s, vec4 p) {
+  return vec3(dot(texelFetch(u_os, ivec2(0, s), 0), p), dot(texelFetch(u_os, ivec2(1, s), 0), p), dot(texelFetch(u_os, ivec2(2, s), 0), p));
+}
+
 void main() {
   int id = u_base + int(a_piece + 0.5);
   ivec2 c = ivec2(id % ${LARGEUR_ETAT}, id / ${LARGEUR_ETAT});
@@ -121,10 +135,46 @@ void main() {
   vec3 n = oct(a_nor);
   vec3 p = u_origine + a_pos * u_pas;
   v_local = p;
+  // La contraction sur place : le muscle se raccourcit vers son origine (ou, pour un sphincter et le cœur, vers
+  // son centre). Les points sont donnés dans le repère de la pièce telle qu'elle est rangée (côté gauche).
+  vec4 org = texelFetch(u_decal, c + ivec2(0, u_hauteur), 0);
+  if (org.w != 0.0) {
+    vec4 fin = texelFetch(u_decal, c + ivec2(0, 2 * u_hauteur), 0);
+    if (fin.w > 0.5) {
+      p = org.xyz + (p - org.xyz) * (1.0 - org.w);
+    } else {
+      vec3 d = fin.xyz - org.xyz;
+      p -= d * clamp(dot(p - org.xyz, d) / max(dot(d, d), 1e-9), 0.0, 1.0) * org.w;
+    }
+  }
+  // Le ventre du muscle qui se contracte gonfle (pas ses tendons) ; l'artère bat au passage de l'onde.
+  float ventre = (1.0 - a_m.x) * (0.3 + 0.7 * sin(3.14159 * clamp(a_m.w, 0.0, 1.0)));
+  float onde = fract(u_pouls.y - a_m.w * u_pouls.z) - 0.1;
+  p += n * (decal.w * ventre + u_pouls.x * exp(-onde * onde * 140.0));
   // Survol et cible : la structure gonfle à peine.
   p += n * (vis.g * 0.0006 + vis.b * 0.0009 * (0.5 + 0.5 * sin(u_temps * 5.0)));
   p.x *= u_miroir;
   n.x *= u_miroir;
+  // Le squelette : le sommet suit un ou deux segments (une pièce en miroir prend ceux du côté droit).
+  if (u_pose > 0.5) {
+    int sa = int(a_b.x + 0.5);
+    int sb = int(a_b.y + 0.5);
+    if (u_miroir < 0.0) {
+      if (sa >= u_segments.x) sa += u_segments.y;
+      if (sb >= u_segments.x) sb += u_segments.y;
+    }
+    float part = a_b.z / 255.0;
+    vec4 p4 = vec4(p, 1.0);
+    vec4 n4 = vec4(n, 0.0);
+    vec3 pa = segment(sa, p4);
+    vec3 na = segment(sa, n4);
+    if (sb != sa && part < 0.997) {
+      pa = mix(segment(sb, p4), pa, part);
+      na = mix(segment(sb, n4), na, part);
+    }
+    p = pa;
+    n = normalize(na);
+  }
   p += decal.xyz;
   v_pos = p;
   v_nor = n;
@@ -166,7 +216,16 @@ uniform sampler2DShadow u_carteOmbre;
 uniform float u_ombres;
 uniform float u_exposition;
 uniform float u_humide;
+uniform vec4 u_coupe;     // plan de coupe : on ôte ce qui dépasse w le long de xyz (xyz nul : pas de coupe)
+uniform vec4 u_tranche;   // couleur du tissu tranché, force de son grain
 out vec4 sortie;
+
+bool coupe() {
+  return dot(u_coupe.xyz, u_coupe.xyz) > 0.0;
+}
+bool tranche() {
+  return coupe() && dot(v_pos, u_coupe.xyz) > u_coupe.w;
+}
 
 // La structure du fragment : la pièce, ou sa zone (pour un muscle, là où le tissu est tendineux).
 float structure() {
@@ -188,6 +247,7 @@ float opacite(ivec2 c, out vec4 vis) {
 
 #ifdef CHOIX
 void main() {
+  if (tranche()) discard;
   float sid = structure();
   vec4 v_vis;
   if (opacite(caseDe(sid), v_vis) < 0.5) discard;
@@ -197,6 +257,7 @@ void main() {
 #else
 #ifdef PROFONDEUR
 void main() {
+  if (tranche()) discard;
   vec4 v_vis;
   if (opacite(caseDe(structure()), v_vis) < 0.6) discard;
   sortie = vec4(1.0);
@@ -288,6 +349,7 @@ float ombre() {
 }
 
 void main() {
+  if (tranche()) discard;
   ivec2 cs0 = caseDe(structure());
   vec4 v_vis;
   float alpha = opacite(cs0, v_vis);
@@ -297,6 +359,9 @@ void main() {
 
   vec3 N = normalize(v_nor);
   if (!gl_FrontFacing) N = -N;
+  // Derrière le plan de coupe, on voit l'intérieur des pièces tranchées : on le peint comme la tranche elle-même.
+  bool section = !gl_FrontFacing && coupe();
+  if (section) N = normalize(u_coupe.xyz);
   vec3 V = normalize(u_oeil - v_pos);
   float w1 = smoothstep(0.08, 0.92, v_m.x);
   float w2 = v_m.y;
@@ -312,7 +377,7 @@ void main() {
 
   // Les fibres : des faisceaux en relief qui suivent le muscle. La phase (cosinus, sinus) donne la position
   // en travers des fibres, sur une période de 16 mm ; v_m.w, la position le long de la fibre.
-  float fibres = u_chair.y;
+  float fibres = section ? 0.0 : u_chair.y;
   float strie = 0.5;
   vec2 cs = v_f.xy * 2.0 - 1.0;
   float lcs = dot(cs, cs);
@@ -355,6 +420,16 @@ void main() {
   rug = clamp(rug + (grainV - 0.5) * u_chair.z * 0.25, 0.08, 1.0);
   float sss = u_chair.x * mix(1.0, 0.45, w1);
   float vernis = u_surface.z * u_humide;
+  if (section) {
+    // La tranche : mate, avec le grain du tissu (les travées de l'os spongieux, les faisceaux du muscle).
+    float cellules = bruit3(v_local * 950.0);
+    float travees = smoothstep(0.38, 0.62, bruit3(v_local * 430.0));
+    albedo = mix(u_tranche.rgb * (0.8 + 0.4 * cellules), u_tranche.rgb * 0.5, u_tranche.a * travees);
+    rug = 0.62;
+    sss *= 0.6;
+    vernis *= 0.45;
+    ao = 1.0;
+  }
 
   // La teinte d'apprentissage : une lumière posée sur la matière, qui garde son relief.
   float lum = dot(albedo, vec3(0.3, 0.55, 0.15));
@@ -508,7 +583,7 @@ type Groupe = { paquet: string; paire: boolean; lod: number; vao: WebGLVertexArr
 /** La couche des zones qui ont leur propre structure (les tendons portés par les muscles). */
 const COUCHE_DES_ZONES = "tendon";
 
-const UNIFORMES = ["u_vue", "u_proj", "u_lumiere", "u_origine", "u_pas", "u_miroir", "u_base", "u_hauteur", "u_etat", "u_decal", "u_temps", "u_oeil", "u_rig", "u_base1", "u_base2", "u_surface", "u_chair", "u_sss", "u_opacite", "u_passe", "u_laiton", "u_carteOmbre", "u_ombres", "u_exposition", "u_humide", "u_zones", "u_opacite2", "u_parTissu"];
+const UNIFORMES = ["u_vue", "u_proj", "u_lumiere", "u_origine", "u_pas", "u_miroir", "u_base", "u_hauteur", "u_etat", "u_decal", "u_temps", "u_oeil", "u_rig", "u_base1", "u_base2", "u_surface", "u_chair", "u_sss", "u_opacite", "u_passe", "u_laiton", "u_carteOmbre", "u_ombres", "u_exposition", "u_humide", "u_zones", "u_opacite2", "u_parTissu", "u_os", "u_pose", "u_segments", "u_pouls", "u_coupe", "u_tranche"];
 
 export type Reglages = {
   /** L'ombre portée de la lumière principale. */
@@ -535,6 +610,14 @@ export class RenduReel {
   private nbStructures = 0;
   private etatSale = true;
   private decalSale = true;
+  private os: WebGLTexture;
+  private pose: Float32Array | null = null;
+  private poseSale = false;
+  private segments = [0, 0];
+  /** Le plan de coupe : on ôte ce qui dépasse `d` le long de la normale [x, y, z] ; null : pas de coupe. */
+  coupe: [number, number, number, number] | null = null;
+  /** Le pouls des artères : amplitude du battement (m), instant du cycle (0 à 1), étalement de l'onde le long de l'arbre. */
+  pouls = { amplitude: 0, instant: 0, etalement: 1 };
   private choixFbo: WebGLFramebuffer | null = null;
   private choixTex: WebGLTexture | null = null;
   private choixProf: WebGLRenderbuffer | null = null;
@@ -566,6 +649,7 @@ export class RenduReel {
     this.socle = compiler(gl, SOCLE_SOMMETS, SOCLE_FRAGMENTS);
     this.etat = gl.createTexture()!;
     this.decal = gl.createTexture()!;
+    this.os = gl.createTexture()!;
     this.socleVao = gl.createVertexArray()!;
     gl.bindVertexArray(this.socleVao);
     const coins = gl.createBuffer();
@@ -582,7 +666,7 @@ export class RenduReel {
     this.nbStructures = nb;
     this.hauteur = Math.max(1, Math.ceil(nb / LARGEUR_ETAT));
     this.donneesEtat = new Uint8Array(LARGEUR_ETAT * this.hauteur * RANGS_ETAT * 4);
-    this.donneesDecal = new Float32Array(LARGEUR_ETAT * this.hauteur * 4);
+    this.donneesDecal = new Float32Array(LARGEUR_ETAT * this.hauteur * RANGS_GESTES * 4);
     const l = LARGEUR_ETAT * this.hauteur * 4;
     for (let i = 0; i < nb; i++) this.donneesEtat[l + i * 4] = 255;
     this.etatSale = this.decalSale = true;
@@ -650,6 +734,30 @@ export class RenduReel {
     this.decalSale = true;
   }
 
+  /**
+   * Fait travailler une structure : `gonfle` (mètres) épaissit le ventre d'un muscle ; `raccourci` (0 à 1) le
+   * ramène vers son origine le long de la ligne origine → terminaison, ou vers son centre si `rond` (un sphincter,
+   * le cœur). Les points sont ceux de la pièce telle qu'elle est rangée (le côté gauche pour une pièce paire).
+   */
+  contracter(id: number, e: { gonfle?: number; raccourci?: number; origine?: V3; terminaison?: V3; rond?: boolean }) {
+    if (id < 0 || id >= this.nbStructures) return;
+    const d = this.donneesDecal;
+    const l = LARGEUR_ETAT * this.hauteur * 4;
+    if (e.gonfle !== undefined) d[id * 4 + 3] = e.gonfle;
+    if (e.origine) d.set(e.origine, l + id * 4);
+    if (e.raccourci !== undefined) d[l + id * 4 + 3] = e.raccourci;
+    if (e.terminaison) d.set(e.terminaison, 2 * l + id * 4);
+    if (e.rond !== undefined) d[2 * l + id * 4 + 3] = e.rond ? 1 : 0;
+    this.decalSale = true;
+  }
+
+  /** Pose le squelette : 12 nombres par segment (voir mouvement/squelette.ts), ou null pour la position anatomique. */
+  poser(matrices: Float32Array | null, axiaux = 0, lateraux = 0) {
+    this.pose = matrices;
+    this.segments = [axiaux, lateraux];
+    this.poseSale = true;
+  }
+
   visibilite(id: number): number {
     return id < 0 || id >= this.nbStructures ? 0 : this.donneesEtat[LARGEUR_ETAT * this.hauteur * 4 + id * 4] / 255;
   }
@@ -687,12 +795,21 @@ export class RenduReel {
     if (this.decalSale) {
       gl.activeTexture(gl.TEXTURE1);
       gl.bindTexture(gl.TEXTURE_2D, this.decal);
-      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA32F, LARGEUR_ETAT, this.hauteur, 0, gl.RGBA, gl.FLOAT, this.donneesDecal);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA32F, LARGEUR_ETAT, this.hauteur * RANGS_GESTES, 0, gl.RGBA, gl.FLOAT, this.donneesDecal);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
       gl.activeTexture(gl.TEXTURE0);
       this.decalSale = false;
     }
+    if (this.poseSale && this.pose) {
+      gl.activeTexture(gl.TEXTURE4);
+      gl.bindTexture(gl.TEXTURE_2D, this.os);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA32F, 3, this.pose.length / 12, 0, gl.RGBA, gl.FLOAT, this.pose);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+      gl.activeTexture(gl.TEXTURE0);
+    }
+    this.poseSale = false;
   }
 
   redimensionner(largeur: number, hauteur: number) {
@@ -752,10 +869,17 @@ export class RenduReel {
     gl.bindTexture(gl.TEXTURE_2D, this.decal);
     gl.activeTexture(gl.TEXTURE2);
     gl.bindTexture(gl.TEXTURE_2D, pourOmbre ? null : this.ombreTex);
+    gl.activeTexture(gl.TEXTURE4);
+    gl.bindTexture(gl.TEXTURE_2D, this.os);
     gl.activeTexture(gl.TEXTURE0);
     gl.uniform1i(u.u_etat, 0);
     gl.uniform1i(u.u_decal, 1);
     gl.uniform1i(u.u_carteOmbre, 2);
+    gl.uniform1i(u.u_os, 4);
+    gl.uniform1f(u.u_pose, this.pose ? 1 : 0);
+    gl.uniform2i(u.u_segments, this.segments[0], this.segments[1]);
+    const coupe = this.coupe;
+    gl.uniform4f(u.u_coupe, coupe ? coupe[0] : 0, coupe ? coupe[1] : 0, coupe ? coupe[2] : 0, coupe ? coupe[3] : 0);
     if (pourOmbre) {
       gl.uniformMatrix4fv(u.u_vue, false, lumiere);
       gl.uniformMatrix4fv(u.u_proj, false, IDENTITE);
@@ -786,6 +910,8 @@ export class RenduReel {
       gl.uniform1f(u.u_opacite, op);
       gl.uniform1f(u.u_opacite2, op2);
       gl.uniform1f(u.u_parTissu, nom === "muscle" ? 1 : 0);
+      gl.uniform4f(u.u_tranche, m.tranche[0], m.tranche[1], m.tranche[2], m.grainTranche);
+      gl.uniform4f(u.u_pouls, nom === "artere" ? this.pouls.amplitude : 0, this.pouls.instant, this.pouls.etalement, 0);
       // Les surfaces d'insertion sont posées sur l'os : on les avance d'un rien pour qu'elles ne s'y mêlent pas.
       const posee = nom === "insertion" && !pourOmbre;
       if (posee) {
@@ -896,6 +1022,8 @@ export class RenduReel {
     gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
     gl.bindVertexArray(null);
     // Ce qui est plein, puis ce qui est translucide (sans écrire la profondeur).
+    // (Avec un plan de coupe, on dessine aussi l'envers des surfaces : c'est lui qui fait la tranche.)
+    if (this.coupe) gl.disable(gl.CULL_FACE);
     gl.depthMask(true);
     gl.disable(gl.BLEND);
     this.passe(this.principal, camera, temps, 0, lumiere);
@@ -904,6 +1032,7 @@ export class RenduReel {
     this.passe(this.principal, camera, temps, 1, lumiere);
     gl.depthMask(true);
     gl.disable(gl.BLEND);
+    gl.enable(gl.CULL_FACE);
   }
 
   /** La structure sous le point (pixels de l'image), ou -1. */
@@ -943,7 +1072,8 @@ export class RenduReel {
     gl.enable(gl.DEPTH_TEST);
     gl.depthMask(true);
     gl.disable(gl.BLEND);
-    gl.enable(gl.CULL_FACE);
+    if (this.coupe) gl.disable(gl.CULL_FACE);
+    else gl.enable(gl.CULL_FACE);
     // Seules les couches pleines se touchent (les fantômes laissent passer le doigt).
     const sauve = { ...this.opacites };
     for (const c of Object.keys(this.opacites)) this.opacites[c] = this.opacites[c] < 0.5 ? 0 : 1;
@@ -952,6 +1082,7 @@ export class RenduReel {
     const pixel = new Uint8Array(4);
     gl.readPixels(px, py, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, pixel);
     gl.disable(gl.SCISSOR_TEST);
+    gl.enable(gl.CULL_FACE);
     gl.bindFramebuffer(gl.FRAMEBUFFER, null);
     return pixel[0] + pixel[1] * 256 + pixel[2] * 65536 - 1;
   }

@@ -8,6 +8,7 @@
  */
 
 import { PAR_ID } from "../catalogue";
+import { NB_AXIAUX, NB_LATERAUX } from "../mouvement/squelette";
 import type { Calque, Couche, StructureScene } from "../types";
 import type { V3 } from "../vec";
 import insertionsJson from "./insertions.json";
@@ -32,6 +33,11 @@ type DefPiece = {
   couv?: string[];
   /** Sa profondeur sous la peau, en millimètres : au plus près, et la médiane. */
   peau?: [number, number];
+  /** Le segment du squelette qu'elle suit le plus (numéro du côté gauche ou du milieu). */
+  sg?: number;
+  /** Pour un muscle : son point d'origine et son point de terminaison. */
+  o?: V3;
+  i?: V3;
 };
 type DefLod = { lod: number; fichier: string; octets: number; sommets: number; triangles: number };
 type DefGroupe = { pieces: string[]; lods: DefLod[] };
@@ -103,6 +109,10 @@ function construire() {
           rayon: d?.r ?? 0.05,
           nom: d?.nom,
           couleur: d?.couleur,
+          // (une pièce dessinée en miroir suit les segments du côté droit ; ses bouts restent dans le repère rangé)
+          segment: d?.sg === undefined ? undefined : droite && d.sg >= NB_AXIAUX ? d.sg + NB_LATERAUX : d.sg,
+          origine: d?.o,
+          terminaison: d?.i,
         });
         if (ins) insertionDe.set(id, ins);
       };

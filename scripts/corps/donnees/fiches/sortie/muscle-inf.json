@@ -1,0 +1,1542 @@
+{
+ "sources": {
+  "gray1918": { "titre": "Gray's Anatomy, 20e éd. (1918), IV. Myology, 8. The Muscles and Fasciæ of the Lower Extremity (texte intégral, Internet Archive)", "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt" },
+  "openstax-11-6": { "titre": "OpenStax, Anatomy and Physiology 2e, 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs" },
+  "tma-fessiers": { "titre": "TeachMeAnatomy, Muscles of the Gluteal Region", "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/" },
+  "tma-cuisse-ant": { "titre": "TeachMeAnatomy, Muscles in the Anterior Compartment of the Thigh", "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/" },
+  "tma-cuisse-med": { "titre": "TeachMeAnatomy, Muscles in the Medial Compartment of the Thigh", "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/" },
+  "tma-cuisse-post": { "titre": "TeachMeAnatomy, Muscles in the Posterior Compartment of the Thigh (Hamstrings)", "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/" },
+  "tma-jambe-ant": { "titre": "TeachMeAnatomy, Muscles in the Anterior Compartment of the Leg", "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/anterior-compartment/" },
+  "tma-jambe-lat": { "titre": "TeachMeAnatomy, Muscles in the Lateral Compartment of the Leg", "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/lateral-compartment/" },
+  "tma-jambe-post": { "titre": "TeachMeAnatomy, Muscles in the Posterior Compartment of the Leg", "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/" },
+  "tma-pied": { "titre": "TeachMeAnatomy, Muscles of the Foot", "url": "https://teachmeanatomy.info/lower-limb/muscles/foot/" },
+  "kenhub-hanche-cuisse": { "titre": "Kenhub, Hip and thigh muscles", "url": "https://www.kenhub.com/en/library/anatomy/hip-and-thigh-muscles" },
+  "kenhub-hanche-cuisse-fr": { "titre": "Kenhub (français), Hanche et cuisse : anatomie, articulations, os et muscles", "url": "https://www.kenhub.com/fr/library/anatomie/anatomie-hanche-et-cuisse" },
+  "kenhub-rotateurs-hanche": { "titre": "Kenhub, Hip musculature (deep posterior hip muscles)", "url": "https://www.kenhub.com/en/library/anatomy/the-posterior-hip-musculature" },
+  "kenhub-quadriceps": { "titre": "Kenhub, Quadriceps femoris muscle", "url": "https://www.kenhub.com/en/library/anatomy/the-quadriceps-femoris-muscle" },
+  "kenhub-ischio-jambiers": { "titre": "Kenhub, Posterior thigh muscles (Hamstrings)", "url": "https://www.kenhub.com/en/library/anatomy/posterior-thigh-muscles" },
+  "kenhub-jambe": { "titre": "Kenhub, Leg and knee anatomy", "url": "https://www.kenhub.com/en/library/anatomy/lower-leg-and-knee-anatomy" },
+  "kenhub-jambe-fr": { "titre": "Kenhub (français), Muscles de la jambe", "url": "https://www.kenhub.com/fr/library/anatomie/muscles-de-la-jambe" },
+  "kenhub-jambe-ant": { "titre": "Kenhub, Anterior muscles of the leg", "url": "https://www.kenhub.com/en/library/anatomy/anterior-muscles-of-the-lower-leg" },
+  "kenhub-fibulaires": { "titre": "Kenhub, Peroneal (fibularis) muscles", "url": "https://www.kenhub.com/en/library/anatomy/peroneal-muscles-of-the-lower-leg" },
+  "kenhub-jambe-post-prof": { "titre": "Kenhub, Deep muscles of the posterior leg", "url": "https://www.kenhub.com/en/library/anatomy/deep-posterior-muscles-of-the-lower-leg" },
+  "kenhub-pied": { "titre": "Kenhub, Ankle and foot anatomy", "url": "https://www.kenhub.com/en/library/anatomy/ankle-and-foot-anatomy" },
+  "kenhub-pied-fr": { "titre": "Kenhub (français), Pied et cheville : os, articulations, muscles", "url": "https://www.kenhub.com/fr/library/anatomie/pied-et-cheville" },
+  "kenhub-plante-centrale": { "titre": "Kenhub, Central plantar muscles of the foot", "url": "https://www.kenhub.com/en/library/anatomy/central-muscles-of-the-sole-of-the-foot" },
+  "kenhub-grand-fessier": { "titre": "Kenhub, Gluteus maximus muscle", "url": "https://www.kenhub.com/en/library/anatomy/gluteus-maximus-muscle" },
+  "kenhub-moyen-fessier": { "titre": "Kenhub, Gluteus medius muscle", "url": "https://www.kenhub.com/en/library/anatomy/gluteus-medius-and-minimus-muscles" },
+  "kenhub-tfl": { "titre": "Kenhub, Tensor fasciae latae muscle", "url": "https://www.kenhub.com/en/library/anatomy/tensor-fasciae-latae-muscle" },
+  "kenhub-obturateur-interne": { "titre": "Kenhub, Obturator internus muscle", "url": "https://www.kenhub.com/en/library/anatomy/obturator-internus-muscle" },
+  "kenhub-obturateur-externe": { "titre": "Kenhub, Obturator externus muscle", "url": "https://www.kenhub.com/en/library/anatomy/obturator-externus-muscle" },
+  "kenhub-carre-femoral": { "titre": "Kenhub, Quadratus femoris muscle", "url": "https://www.kenhub.com/en/library/anatomy/quadratus-femoris-muscle" },
+  "kenhub-sartorius": { "titre": "Kenhub, Sartorius muscle", "url": "https://kenhub.com/en/library/anatomy/the-sartorius-muscle" },
+  "kenhub-pectine": { "titre": "Kenhub, Pectineus muscle", "url": "https://www.kenhub.com/en/library/anatomy/pectineus-muscle" },
+  "kenhub-long-adducteur": { "titre": "Kenhub, Adductor longus muscle", "url": "https://www.kenhub.com/en/library/anatomy/adductor-longus-muscle" },
+  "kenhub-court-adducteur": { "titre": "Kenhub, Adductor brevis muscle", "url": "https://www.kenhub.com/en/library/anatomy/adductor-brevis-muscle" },
+  "kenhub-grand-adducteur": { "titre": "Kenhub, Adductor magnus muscle", "url": "https://www.kenhub.com/en/library/anatomy/adductor-magnus" },
+  "kenhub-gracile": { "titre": "Kenhub, Gracilis muscle", "url": "https://www.kenhub.com/en/library/anatomy/gracilis-muscle" },
+  "kenhub-biceps-femoral": { "titre": "Kenhub, Biceps femoris muscle", "url": "https://www.kenhub.com/en/library/anatomy/biceps-femoris-muscle" },
+  "kenhub-semi-tendineux": { "titre": "Kenhub, Semitendinosus muscle", "url": "https://www.kenhub.com/en/library/anatomy/semitendinosus-muscle" },
+  "kenhub-semi-membraneux": { "titre": "Kenhub, Semimembranosus muscle", "url": "https://www.kenhub.com/en/library/anatomy/semimembranosus-muscle" },
+  "kenhub-tibial-anterieur": { "titre": "Kenhub, Tibialis anterior muscle", "url": "https://www.kenhub.com/en/library/anatomy/tibialis-anterior-muscle" },
+  "kenhub-long-extenseur-orteils": { "titre": "Kenhub, Extensor digitorum longus muscle", "url": "https://www.kenhub.com/en/library/anatomy/extensor-digitorum-longus-muscle" },
+  "kenhub-long-extenseur-hallux": { "titre": "Kenhub, Extensor hallucis longus muscle", "url": "https://www.kenhub.com/en/library/anatomy/extensor-hallucis-longus-muscle" },
+  "kenhub-troisieme-fibulaire": { "titre": "Kenhub, Fibularis tertius muscle", "url": "https://www.kenhub.com/en/library/anatomy/fibularis-tertius-muscle" },
+  "kenhub-gastrocnemien": { "titre": "Kenhub, Gastrocnemius muscle", "url": "https://www.kenhub.com/en/library/anatomy/gastrocnemius-muscle" },
+  "kenhub-soleaire": { "titre": "Kenhub, Soleus muscle", "url": "https://www.kenhub.com/en/library/anatomy/soleus-muscle" },
+  "kenhub-plantaire": { "titre": "Kenhub, Plantaris muscle", "url": "https://www.kenhub.com/en/library/anatomy/plantaris-muscle" },
+  "kenhub-poplite": { "titre": "Kenhub, Popliteus muscle", "url": "https://www.kenhub.com/en/library/anatomy/popliteus-muscle" },
+  "kenhub-tibial-posterieur": { "titre": "Kenhub, Tibialis posterior muscle", "url": "https://www.kenhub.com/en/library/anatomy/tibialis-posterior-muscle" },
+  "kenhub-long-flechisseur-orteils": { "titre": "Kenhub, Flexor digitorum longus muscle", "url": "https://www.kenhub.com/en/library/anatomy/flexor-digitorum-longus-muscle" },
+  "kenhub-long-flechisseur-hallux": { "titre": "Kenhub, Flexor hallucis longus muscle", "url": "https://www.kenhub.com/en/library/anatomy/flexor-hallucis-longus-muscle" },
+  "kenhub-abducteur-hallux": { "titre": "Kenhub, Abductor hallucis muscle", "url": "https://www.kenhub.com/en/library/anatomy/abductor-hallucis-muscle" },
+  "kenhub-court-flechisseur-hallux": { "titre": "Kenhub, Flexor hallucis brevis muscle", "url": "https://www.kenhub.com/en/library/anatomy/flexor-hallucis-brevis-muscle" },
+  "kenhub-adducteur-hallux": { "titre": "Kenhub, Adductor hallucis muscle", "url": "https://www.kenhub.com/en/library/anatomy/adductor-hallucis-muscle" },
+  "kenhub-court-extenseur-orteils": { "titre": "Kenhub, Extensor digitorum brevis muscle", "url": "https://www.kenhub.com/en/library/anatomy/extensor-digitorum-brevis-muscle" },
+  "kenhub-court-extenseur-hallux": { "titre": "Kenhub, Extensor hallucis brevis muscle", "url": "https://www.kenhub.com/en/library/anatomy/extensor-hallucis-brevis-muscle" },
+  "kenhub-opposant-petit-orteil": { "titre": "Kenhub, Opponens digiti minimi muscle of foot", "url": "https://kenhub.com/en/library/anatomy/opponens-digiti-minimi-muscle-of-foot" },
+  "statpearls-grand-fessier": { "titre": "StatPearls, Anatomy, Bony Pelvis and Lower Limb, Gluteus Maximus Muscle", "url": "https://statpearls.com/point-of-care/22325" },
+  "statpearls-moyen-fessier": { "titre": "StatPearls, Anatomy, Bony Pelvis and Lower Limb, Gluteus Medius Muscle", "url": "https://statpearls.com/point-of-care/22326" },
+  "statpearls-petit-fessier": { "titre": "StatPearls, Anatomy, Bony Pelvis and Lower Limb, Gluteus Minimus Muscle", "url": "https://statpearls.com/point-of-care/22327" },
+  "statpearls-piriforme": { "titre": "StatPearls, Anatomy, Bony Pelvis and Lower Limb: Piriformis Muscle", "url": "https://statpearls.com/point-of-care/27239" },
+  "statpearls-sartorius": { "titre": "StatPearls, Anatomy, Bony Pelvis and Lower Limb: Thigh Sartorius Muscle", "url": "https://statpearls.com/point-of-care/28724" },
+  "statpearls-long-fibulaire": { "titre": "StatPearls, Anatomy, Bony Pelvis and Lower Limb: Calf Peroneus Longus Muscle", "url": "https://statpearls.com/point-of-care/27041" },
+  "statpearls-court-fibulaire": { "titre": "StatPearls, Anatomy, Bony Pelvis and Lower Limb, Foot Peroneus Brevis Muscle", "url": "https://statpearls.com/point-of-care/27042" },
+  "statpearls-muscles-pied": { "titre": "StatPearls, Anatomy, Bony Pelvis and Lower Limb, Foot Muscles", "url": "https://statpearls.com/point-of-care/32230" },
+  "physiopedia-tfl": { "titre": "Physiopedia, Tensor Fascia Lata", "url": "https://www.physio-pedia.com/Tensor_Fascia_Lata" },
+  "physiopedia-piriforme": { "titre": "Physiopedia, Piriformis", "url": "https://www.physio-pedia.com/Piriformis" },
+  "physiopedia-droit-femoral": { "titre": "Physiopedia, Rectus Femoris", "url": "https://www.physio-pedia.com/Rectus_Femoris" },
+  "physiopedia-vaste-medial": { "titre": "Physiopedia, Vastus Medialis", "url": "https://www.physio-pedia.com/Vastus_Medialis" },
+  "physiopedia-vaste-lateral": { "titre": "Physiopedia, Vastus Lateralis", "url": "https://www.physio-pedia.com/Vastus_Lateralis" },
+  "physiopedia-vaste-intermediaire": { "titre": "Physiopedia, Vastus Intermedius", "url": "https://www.physio-pedia.com/Vastus_Intermedius" },
+  "physiopedia-sartorius": { "titre": "Physiopedia, Sartorius", "url": "https://www.physio-pedia.com/Sartorius" },
+  "physiopedia-long-adducteur": { "titre": "Physiopedia, Adductor Longus", "url": "https://www.physio-pedia.com/Adductor_Longus" },
+  "physiopedia-semi-tendineux": { "titre": "Physiopedia, Semitendinosus", "url": "https://www.physio-pedia.com/Semitendinosus" },
+  "physiopedia-gastrocnemien": { "titre": "Physiopedia, Gastrocnemius", "url": "https://www.physio-pedia.com/Gastrocnemius" },
+  "physiopedia-soleaire": { "titre": "Physiopedia, Soleus", "url": "https://www.physio-pedia.com/Soleus" },
+  "physiopedia-plantaire": { "titre": "Physiopedia, Plantaris", "url": "https://www.physio-pedia.com/Plantaris" },
+  "physiopedia-poplite": { "titre": "Physiopedia, Popliteus Muscle", "url": "https://www.physio-pedia.com/Popliteus_Muscle" },
+  "physiopedia-tibial-posterieur": { "titre": "Physiopedia, Tibialis Posterior", "url": "https://www.physio-pedia.com/Tibialis_Posterior" },
+  "physiopedia-long-fibulaire": { "titre": "Physiopedia, Peroneus (Fibularis) Longus", "url": "https://www.physio-pedia.com/Fibularis_Longus" },
+  "physiopedia-court-extenseur-orteils": { "titre": "Physiopedia, Extensor Digitorum Brevis", "url": "https://www.physio-pedia.com/Extensor_Digitorum_Brevis" },
+  "radiopaedia-petit-adducteur": { "titre": "Radiopaedia, Adductor minimus muscle", "url": "https://images.radiopaedia.org/articles/adductor-minimus-muscle" },
+  "radiopaedia-conflit-ischio-femoral": { "titre": "Radiopaedia, Ischiofemoral impingement", "url": "https://radiopaedia.org/articles/ischiofemoral-impingement" },
+  "wikipedia-petit-adducteur": { "titre": "Wikipedia (en), Adductor minimus muscle", "url": "https://en.wikipedia.org/wiki/Adductor_minimus_muscle" }
+ },
+ "fiches": [
+  {
+   "id": "grand-fessier",
+   "resume": "Le muscle de la fesse, le plus volumineux des fessiers : il étend la hanche avec force pour se relever, monter et courir.",
+   "origine": [
+    { "texte": "Face glutéale de l'ilium, en arrière de la ligne glutéale postérieure", "os": ["ilium"] },
+    { "texte": "Face postérieure du sacrum et bord latéral du coccyx", "os": ["sacrum", "coccyx"] },
+    { "texte": "Ligament sacro-tubéral, fascia thoraco-lombaire et aponévrose glutéale", "os": ["ligament-sacrotuberal"] }
+   ],
+   "terminaison": [
+    { "texte": "Tractus ilio-tibial, pour les trois quarts superficiels des fibres", "os": ["tractus-ilio-tibial"] },
+    { "texte": "Tubérosité glutéale du fémur, pour le quart profond", "os": ["femur"] }
+   ],
+   "action": "Étend la hanche avec force (se relever, monter une marche, courir) et tourne la cuisse en dehors ; redresse le tronc penché en avant",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "extension", "role": "principal", "precision": "surtout à partir d'une hanche fléchie et contre résistance" },
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "abduction", "role": "accessoire", "precision": "fibres supérieures" },
+    { "articulation": "hanche", "mouvement": "adduction", "role": "accessoire", "precision": "fibres inférieures" },
+    { "articulation": "bassin", "mouvement": "extension", "role": "accessoire", "precision": "cuisse fixe : ramène le bassin en arrière et redresse le tronc" },
+    { "articulation": "genou", "mouvement": "stabilisation", "role": "accessoire", "precision": "par le tractus ilio-tibial, genou en extension" }
+   ],
+   "synergistes": ["semi-tendineux", "semi-membraneux", "biceps-femoral", "grand-adducteur"],
+   "antagonistes": ["grand-psoas", "iliaque", "droit-femoral"],
+   "innervation": { "nerf": null, "texte": "Nerf glutéal inférieur", "racines": ["L5", "S1", "S2"] },
+   "vascularisation": { "texte": "Artères glutéales inférieure et supérieure, branches de l'artère iliaque interne", "arteres": ["artere-gluteale-inferieure", "artere-gluteale-superieure"] },
+   "palpation": "Il forme le relief de la fesse et durcit sous la main quand on serre les fesses ou qu'on étend la hanche",
+   "test": "Sujet à plat ventre, jambes tendues : extension de la hanche contre résistance, la main posée sur le muscle",
+   "atteinte": "Paralysie (nerf glutéal inférieur) : difficulté à se relever d'un siège et à monter les escaliers, extension de la hanche très affaiblie ; la marche à plat est peu touchée",
+   "clinique": "Les injections intramusculaires se font dans le quadrant supéro-latéral de la fesse, pour épargner le nerf sciatique et les nerfs glutéaux",
+   "memo": "Le muscle de l'effort : presque inactif debout, il s'allume pour se lever d'une chaise, grimper, sprinter",
+   "variantes": null,
+   "sources": ["gray1918", "tma-fessiers", "kenhub-hanche-cuisse", "kenhub-grand-fessier", "statpearls-grand-fessier", "openstax-11-6"],
+   "divergences": "Kenhub attribue l'abduction aux fibres supérieures et l'adduction aux inférieures ; Gray (1918) ne cite que l'adduction"
+  },
+  {
+   "id": "gastrocnemien",
+   "resume": "Le muscle superficiel du mollet, à deux chefs : il dresse le corps sur la pointe des pieds et aide à plier le genou.",
+   "origine": [
+    { "texte": "Chef médial : face postérieure du condyle médial du fémur et surface poplitée voisine", "os": ["femur"] },
+    { "texte": "Chef latéral : face latérale du condyle latéral du fémur", "os": ["femur"] },
+    { "texte": "Capsule de l'articulation du genou, pour les deux chefs", "os": ["capsule-articulaire-du-genou"] }
+   ],
+   "terminaison": [
+    { "texte": "Face postérieure du calcanéus, par le tendon calcanéen qu'il forme avec le soléaire", "os": ["calcaneus", "tendon-calcaneen"] }
+   ],
+   "action": "Fléchit la cheville vers la plante (se hisser sur la pointe des pieds, pousser le pas, sauter) ; aide à fléchir le genou",
+   "actions": [
+    { "articulation": "cheville", "mouvement": "flexion-plantaire", "role": "principal", "precision": "pleine force genou tendu" },
+    { "articulation": "genou", "mouvement": "flexion", "role": "accessoire" }
+   ],
+   "synergistes": ["soleaire", "plantaire", "tibial-posterieur", "long-fibulaire"],
+   "antagonistes": ["tibial-anterieur", "long-extenseur-orteils", "long-extenseur-hallux"],
+   "innervation": { "nerf": "nerf-tibial", "texte": "Nerf tibial", "racines": ["S1", "S2"] },
+   "vascularisation": { "texte": "Artères surales médiale et latérale, branches de l'artère poplitée", "arteres": ["poplitee"] },
+   "palpation": "Ses deux corps charnus bombent en haut du mollet, sous le pli du genou, quand on monte sur la pointe des pieds ; on les suit jusqu'au tendon calcanéen",
+   "test": "Montée sur la pointe d'un seul pied, genou tendu, plusieurs fois de suite",
+   "atteinte": "Paralysie (nerf tibial) : impossible de monter sur la pointe du pied, le pas perd sa poussée. Déchirure du chef médial : douleur brutale au mollet, le « tennis leg »",
+   "clinique": "La rupture du tendon calcanéen siège le plus souvent 4 à 6 cm au-dessus de son attache, dans une zone peu vascularisée : claquement, flexion plantaire contre résistance perdue",
+   "memo": "Les « jumeaux » du mollet : genou tendu, ils donnent toute leur force ; genou plié, c'est le soléaire qui travaille",
+   "variantes": "Chef latéral parfois absent ; faisceaux surnuméraires venus de la surface poplitée du fémur ; un os sésamoïde peut siéger dans le chef latéral",
+   "sources": ["gray1918", "tma-jambe-post", "kenhub-jambe", "kenhub-gastrocnemien", "physiopedia-gastrocnemien", "openstax-11-6"],
+   "divergences": null
+  },
+  {
+   "id": "biceps-femoral",
+   "resume": "L'ischio-jambier latéral, à deux chefs : il plie le genou, tourne la jambe en dehors et, par son chef long, étend la hanche.",
+   "origine": [
+    { "texte": "Chef long : tubérosité ischiatique, par un tendon commun avec le semi-tendineux, et ligament sacro-tubéral", "os": ["ischium", "ligament-sacrotuberal"] },
+    { "texte": "Chef court : lèvre latérale de la ligne âpre et ligne supracondylaire latérale du fémur", "os": ["femur"] }
+   ],
+   "terminaison": [
+    { "texte": "Tête de la fibula, par un tendon commun aux deux chefs", "os": ["fibula"] },
+    { "texte": "Expansions au condyle latéral du tibia et au fascia de la jambe", "os": ["tibia", "fascia-crural"] }
+   ],
+   "action": "Fléchit le genou et, genou fléchi, tourne la jambe en dehors ; son chef long étend la hanche",
+   "actions": [
+    { "articulation": "genou", "mouvement": "flexion", "role": "principal" },
+    { "articulation": "genou", "mouvement": "rotation-laterale", "role": "principal", "precision": "genou fléchi" },
+    { "articulation": "hanche", "mouvement": "extension", "role": "principal", "precision": "chef long seulement" },
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "accessoire", "precision": "chef long" },
+    { "articulation": "bassin", "mouvement": "extension", "role": "accessoire", "precision": "pieds au sol : redresse le tronc penché en avant" }
+   ],
+   "synergistes": ["semi-tendineux", "semi-membraneux", "grand-fessier", "gastrocnemien"],
+   "antagonistes": ["droit-femoral", "vaste-lateral", "vaste-medial", "vaste-intermediaire"],
+   "innervation": { "nerf": "nerf-sciatique", "texte": "Nerf sciatique : contingent tibial pour le chef long, contingent fibulaire commun pour le chef court", "racines": ["L5", "S1", "S2"] },
+   "vascularisation": { "texte": "Artères perforantes de la fémorale profonde ; artère glutéale inférieure en haut, artère supéro-latérale du genou en bas", "arteres": ["arteres-femorales-perforantes", "femorale-profonde", "artere-gluteale-inferieure", "artere-superieure-laterale-du-genou"] },
+   "palpation": "Son tendon forme la corde latérale du creux poplité, genou fléchi contre résistance ; on le suit jusqu'à la tête de la fibula",
+   "test": "Sujet à plat ventre : flexion du genou contre résistance ; son tendon se tend en dehors du creux poplité",
+   "atteinte": "Claquage fréquent à la course rapide : douleur brutale à l'arrière de la cuisse. Paralysie des ischio-jambiers : flexion du genou et extension de la hanche affaiblies",
+   "clinique": "Le nerf fibulaire commun longe son bord médial et adhère à son tendon : il est exposé lors des traumatismes et de la chirurgie de cette région",
+   "memo": "Bi-ceps : deux chefs, deux contingents nerveux ; le seul ischio-jambier qui finit en dehors, sur la fibula",
+   "variantes": "Chef court parfois absent ; chefs surnuméraires possibles ; un faisceau peut rejoindre le gastrocnémien",
+   "sources": ["gray1918", "tma-cuisse-post", "kenhub-ischio-jambiers", "kenhub-biceps-femoral", "kenhub-hanche-cuisse-fr", "openstax-11-6"],
+   "divergences": "Racines : L5 à S2 pour Kenhub ; Gray (1918) et TeachMeAnatomy donnent celles du nerf sciatique entier, L4 à S3"
+  },
+  {
+   "id": "droit-femoral",
+   "resume": "Le chef superficiel du quadriceps, le seul qui croise la hanche : il étend le genou et fléchit la cuisse, comme pour frapper un ballon.",
+   "origine": [
+    { "texte": "Chef direct : épine iliaque antéro-inférieure", "os": ["ilium"] },
+    { "texte": "Chef réfléchi : sillon supra-acétabulaire, juste au-dessus du bord de l'acétabulum", "os": ["ilium"] }
+   ],
+   "terminaison": [
+    { "texte": "Base de la patella, par le tendon quadricipital", "os": ["patella", "tendon-quadricipital"] },
+    { "texte": "Tubérosité tibiale, par le ligament patellaire", "os": ["tibia", "ligament-patellaire"] }
+   ],
+   "action": "Étend le genou et fléchit la hanche : il lance la jambe en avant",
+   "actions": [
+    { "articulation": "genou", "mouvement": "extension", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "flexion", "role": "principal", "precision": "avec l'ilio-psoas, qui reste le fléchisseur le plus puissant" },
+    { "articulation": "bassin", "mouvement": "flexion", "role": "accessoire", "precision": "cuisse fixe : bascule le bassin en avant" }
+   ],
+   "synergistes": ["vaste-lateral", "vaste-medial", "vaste-intermediaire", "iliaque"],
+   "antagonistes": ["biceps-femoral", "semi-tendineux", "semi-membraneux", "grand-fessier"],
+   "innervation": { "nerf": "nerf-femoral", "texte": "Nerf fémoral", "racines": ["L2", "L3", "L4"] },
+   "vascularisation": { "texte": "Artère circonflexe fémorale latérale (branche descendante) et rameaux de l'artère fémorale", "arteres": ["circonflexe-femorale-laterale", "branche-descendante-de-l-artere-circonflexe-lat-de-la-cuisse", "femorale"] },
+   "palpation": "Au milieu du devant de la cuisse, de l'épine iliaque antéro-inférieure vers la patella : il durcit quand le sujet contracte le quadriceps",
+   "test": "Sujet assis, hanche et genou à 90° : extension du genou contre résistance. Sa raideur se cherche à plat ventre, en amenant le talon vers la fesse (test d'Ely)",
+   "atteinte": "Lésion du nerf fémoral : extension active du genou impossible, réflexe patellaire aboli. Déchirure : douleur du devant de la cuisse lors d'un tir, réveillée par la flexion contrariée de la hanche",
+   "clinique": "Le réflexe patellaire, obtenu en percutant le ligament patellaire, explore les segments L2 à L4",
+   "memo": "Droit comme son nom, de l'ilium à la patella : le seul des quatre chefs du quadriceps à croiser deux articulations",
+   "variantes": "Un troisième chef d'origine, venu du ligament ilio-fémoral, est parfois présent",
+   "sources": ["gray1918", "tma-cuisse-ant", "kenhub-quadriceps", "kenhub-hanche-cuisse", "physiopedia-droit-femoral", "openstax-11-6"],
+   "divergences": "Flexion de la hanche : fléchisseur à part entière pour Kenhub et TeachMeAnatomy, simple auxiliaire de l'ilio-psoas pour Gray (1918) et OpenStax"
+  },
+  {
+   "id": "long-adducteur",
+   "resume": "Le plus antérieur des adducteurs, en éventail du pubis au fémur : il serre les cuisses et borde en dedans le triangle fémoral.",
+   "origine": [
+    { "texte": "Face antérieure du corps du pubis, dans l'angle entre la crête pubienne et la symphyse, par un tendon étroit", "os": ["pubis"] }
+   ],
+   "terminaison": [
+    { "texte": "Tiers moyen de la ligne âpre du fémur (lèvre médiale), entre le vaste médial et le grand adducteur", "os": ["femur"] }
+   ],
+   "action": "Rapproche la cuisse de la ligne médiane (serrer les genoux, croiser les jambes) ; aide à la fléchir",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "adduction", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "flexion", "role": "accessoire" },
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "accessoire" },
+    { "articulation": "bassin", "mouvement": "stabilisation", "role": "accessoire", "precision": "équilibre du bassin à la station debout et à la marche" }
+   ],
+   "synergistes": ["court-adducteur", "grand-adducteur", "pectine", "gracile"],
+   "antagonistes": ["moyen-fessier", "petit-fessier", "tenseur-fascia-lata"],
+   "innervation": { "nerf": "nerf-obturateur", "texte": "Nerf obturateur (rameau antérieur)", "racines": ["L2", "L3", "L4"] },
+   "vascularisation": { "texte": "Artère fémorale profonde et artère obturatrice ; artère circonflexe fémorale médiale pour la partie haute", "arteres": ["femorale-profonde", "artere-obturatrice", "artere-circonflexe-mediale-de-la-cuisse"] },
+   "palpation": "Son tendon d'origine se tend sous le pubis, à la racine de la cuisse, quand on serre les genoux contre résistance",
+   "test": "Adduction de la hanche contre résistance ; test de serrage : le sujet couché, genoux fléchis, serre le poing de l'examinateur entre ses genoux",
+   "atteinte": "Lésion du nerf obturateur : adduction de la cuisse affaiblie. Élongation ou tendinopathie près du pubis : douleur de l'aine du sportif, souvent méconnue",
+   "clinique": "Il limite en dedans le triangle fémoral, où passent nerf, artère et veine fémoraux, et participe au plancher du canal des adducteurs",
+   "memo": "Triangle fémoral : long adducteur en dedans, sartorius en dehors, ligament inguinal en haut",
+   "variantes": "Peut être dédoublé, descendre jusqu'au genou ou fusionner avec le pectiné",
+   "sources": ["gray1918", "tma-cuisse-med", "kenhub-hanche-cuisse", "kenhub-long-adducteur", "physiopedia-long-adducteur", "openstax-11-6"],
+   "divergences": "Racines : L2 à L4 pour Kenhub, TeachMeAnatomy et Physiopedia ; L3 et L4 pour Gray (1918). Rotation latérale accessoire citée par Kenhub, absente chez Gray"
+  },
+  {
+   "id": "sartorius",
+   "resume": "Le plus long muscle du corps : un ruban qui croise la cuisse en écharpe, de l'épine iliaque antéro-supérieure à la face médiale du tibia.",
+   "origine": [
+    { "texte": "Épine iliaque antéro-supérieure et moitié haute de l'échancrure située juste dessous", "os": ["ilium"] }
+   ],
+   "terminaison": [
+    { "texte": "Partie haute de la face médiale du tibia, en avant du gracile et du semi-tendineux : la patte d'oie", "os": ["tibia"] }
+   ],
+   "action": "Fléchit la hanche et le genou, écarte la cuisse et la tourne en dehors : c'est la position assise en tailleur",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "flexion", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "abduction", "role": "accessoire" },
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "accessoire" },
+    { "articulation": "genou", "mouvement": "flexion", "role": "accessoire" },
+    { "articulation": "genou", "mouvement": "rotation-mediale", "role": "accessoire", "precision": "genou fléchi" }
+   ],
+   "synergistes": ["iliaque", "grand-psoas", "droit-femoral", "gracile"],
+   "antagonistes": ["grand-fessier", "vaste-lateral", "vaste-medial"],
+   "innervation": { "nerf": "nerf-femoral", "texte": "Nerf fémoral", "racines": ["L2", "L3"] },
+   "vascularisation": { "texte": "Rameaux musculaires de l'artère fémorale, étagés le long du muscle", "arteres": ["femorale"] },
+   "palpation": "Corde oblique visible en haut de la cuisse, à partir de l'épine iliaque antéro-supérieure, quand le sujet assis porte le talon sur le genou opposé",
+   "test": "Sujet assis : il amène le talon sur le genou opposé (flexion, abduction et rotation latérale de la hanche, genou fléchi) contre résistance",
+   "atteinte": "Chez l'adolescent sportif, sa contraction brutale, hanche étendue, peut arracher l'épine iliaque antéro-supérieure. Sa paralysie isolée gêne peu : les autres fléchisseurs compensent",
+   "clinique": "La bourse de la patte d'oie, sous son tendon, s'enflamme chez le coureur de fond : douleur médiale du genou à la montée des escaliers et au lever d'un siège",
+   "memo": "Sartor, le tailleur : le muscle qui met la jambe « en tailleur »",
+   "variantes": "Chef d'origine supplémentaire, muscle dédoublé ou, rarement, absent ; terminaison possible sur le fascia, la capsule du genou ou le ligament patellaire",
+   "sources": ["gray1918", "tma-cuisse-ant", "kenhub-sartorius", "statpearls-sartorius", "physiopedia-sartorius", "openstax-11-6"],
+   "divergences": "Racines : L2 et L3 pour Kenhub ; L2 à L4 pour StatPearls et pour Gray (1918), qui les donne pour toute la loge antérieure"
+  },
+  {
+   "id": "semi-tendineux",
+   "resume": "Ischio-jambier médial et superficiel, terminé par un long tendon grêle : il plie le genou, tourne la jambe en dedans et étend la hanche.",
+   "origine": [
+    { "texte": "Tubérosité ischiatique (partie inféro-médiale), par un tendon commun avec le chef long du biceps fémoral", "os": ["ischium"] }
+   ],
+   "terminaison": [
+    { "texte": "Partie haute de la face médiale du tibia, en arrière du sartorius et sous le gracile : la patte d'oie", "os": ["tibia"] },
+    { "texte": "Expansion au fascia de la jambe", "os": ["fascia-crural"] }
+   ],
+   "action": "Fléchit le genou et, genou fléchi, tourne la jambe en dedans ; étend la hanche",
+   "actions": [
+    { "articulation": "genou", "mouvement": "flexion", "role": "principal" },
+    { "articulation": "genou", "mouvement": "rotation-mediale", "role": "principal", "precision": "genou fléchi" },
+    { "articulation": "hanche", "mouvement": "extension", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "rotation-mediale", "role": "accessoire" },
+    { "articulation": "bassin", "mouvement": "extension", "role": "accessoire", "precision": "pieds au sol : redresse le tronc penché en avant" }
+   ],
+   "synergistes": ["semi-membraneux", "biceps-femoral", "grand-fessier", "gracile"],
+   "antagonistes": ["droit-femoral", "vaste-lateral", "vaste-medial", "vaste-intermediaire"],
+   "innervation": { "nerf": "nerf-sciatique", "texte": "Nerf sciatique (contingent tibial)", "racines": ["L5", "S1", "S2"] },
+   "vascularisation": { "texte": "Première artère perforante (fémorale profonde), artère circonflexe fémorale médiale et artère glutéale inférieure", "arteres": ["arteres-femorales-perforantes", "artere-circonflexe-mediale-de-la-cuisse", "artere-gluteale-inferieure"] },
+   "palpation": "Son tendon rond se tend au bord médial du creux poplité quand on fléchit le genou contre résistance : c'est le plus postérieur et le plus latéral des tendons de ce bord",
+   "test": "Sujet à plat ventre : flexion du genou contre résistance",
+   "atteinte": "Claquage ou arrachement de la tubérosité ischiatique lors d'une contraction violente (adolescent sportif). Paralysie des ischio-jambiers : flexion du genou et extension de la hanche affaiblies",
+   "clinique": "Son tendon, souvent avec celui du gracile, est prélevé pour remplacer un ligament du genou. La bourse de la patte d'oie peut s'enflammer : douleur médiale du genou",
+   "memo": "Semi-tendineux : sa moitié basse n'est qu'un tendon. Patte d'oie, d'avant en arrière : sartorius, gracile, semi-tendineux",
+   "variantes": null,
+   "sources": ["gray1918", "tma-cuisse-post", "kenhub-ischio-jambiers", "kenhub-semi-tendineux", "physiopedia-semi-tendineux", "openstax-11-6"],
+   "divergences": "Racines : L5 à S2 pour Kenhub et Physiopedia ; Gray (1918) donne L4 à S3 pour les trois ischio-jambiers"
+  },
+  {
+   "id": "vaste-lateral",
+   "resume": "Le chef latéral du quadriceps, le plus volumineux des quatre : il étend le genou et forme le galbe latéral de la cuisse.",
+   "origine": [
+    { "texte": "Haut de la ligne intertrochantérique, bords antérieur et inférieur du grand trochanter, lèvre latérale de la tubérosité glutéale et moitié haute de la lèvre latérale de la ligne âpre", "os": ["femur"] },
+    { "texte": "Septum intermusculaire latéral de la cuisse", "os": ["septum-intermusculaire-lateral-de-la-cuisse"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord latéral et base de la patella, par le tendon quadricipital ; expansion au rétinaculum patellaire latéral", "os": ["patella", "tendon-quadricipital", "retinaculum-patellaire-lateral"] },
+    { "texte": "Tubérosité tibiale, par le ligament patellaire", "os": ["tibia", "ligament-patellaire"] }
+   ],
+   "action": "Étend le genou : se lever, monter, sauter, retenir la descente",
+   "actions": [
+    { "articulation": "genou", "mouvement": "extension", "role": "principal" },
+    { "articulation": "genou", "mouvement": "stabilisation", "role": "accessoire", "precision": "contribue à maintenir la patella dans sa gorge" }
+   ],
+   "synergistes": ["droit-femoral", "vaste-medial", "vaste-intermediaire"],
+   "antagonistes": ["biceps-femoral", "semi-tendineux", "semi-membraneux"],
+   "innervation": { "nerf": "nerf-femoral", "texte": "Nerf fémoral", "racines": ["L2", "L3", "L4"] },
+   "vascularisation": { "texte": "Artère circonflexe fémorale latérale (branche descendante) et artère fémorale profonde", "arteres": ["circonflexe-femorale-laterale", "branche-descendante-de-l-artere-circonflexe-lat-de-la-cuisse", "femorale-profonde"] },
+   "palpation": "Sur le côté de la cuisse, sous le grand trochanter : il durcit quand le sujet contracte le quadriceps, puis se suit jusqu'au bord latéral de la patella",
+   "test": "Extension du genou contre résistance, sujet assis ; on ne peut pas l'isoler des autres chefs",
+   "atteinte": "Lésion du nerf fémoral : extension active du genou impossible, réflexe patellaire aboli",
+   "clinique": "Son équilibre avec le vaste médial guide la patella : un déséquilibre est incriminé, sans preuve formelle, dans le syndrome douloureux fémoro-patellaire",
+   "memo": "Le plus gros des quatre chefs : il tire la patella en haut et en dehors, le vaste médial la retient en dedans",
+   "variantes": null,
+   "sources": ["gray1918", "tma-cuisse-ant", "kenhub-quadriceps", "physiopedia-vaste-lateral", "openstax-11-6"],
+   "divergences": "Racines : L2 à L4 pour Gray et Kenhub ; Physiopedia ne retient que L3 et L4"
+  },
+  {
+   "id": "vaste-medial",
+   "resume": "Le chef médial du quadriceps : il étend le genou et retient la patella en dedans ; son relief dessine une goutte au-dessus du genou.",
+   "origine": [
+    { "texte": "Partie basse de la ligne intertrochantérique, lèvre médiale de la ligne âpre et partie haute de la ligne supracondylaire médiale du fémur", "os": ["femur"] },
+    { "texte": "Tendons du long et du grand adducteur, septum intermusculaire médial de la cuisse", "os": ["tendon-grand-adducteur", "septum-intermusculaire-medial-de-la-cuisse"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord médial et base de la patella, par le tendon quadricipital ; expansion au rétinaculum patellaire médial", "os": ["patella", "tendon-quadricipital", "retinaculum-patellaire-medial"] },
+    { "texte": "Tubérosité tibiale, par le ligament patellaire", "os": ["tibia", "ligament-patellaire"] }
+   ],
+   "action": "Étend le genou et, par ses fibres basses presque horizontales, retient la patella en dedans",
+   "actions": [
+    { "articulation": "genou", "mouvement": "extension", "role": "principal" },
+    { "articulation": "genou", "mouvement": "stabilisation", "role": "principal", "precision": "fibres obliques basses : empêchent la patella de filer en dehors" }
+   ],
+   "synergistes": ["droit-femoral", "vaste-lateral", "vaste-intermediaire"],
+   "antagonistes": ["biceps-femoral", "semi-tendineux", "semi-membraneux"],
+   "innervation": { "nerf": "nerf-femoral", "texte": "Nerf fémoral", "racines": ["L2", "L3", "L4"] },
+   "vascularisation": { "texte": "Artère fémorale, artère fémorale profonde et artère descendante du genou", "arteres": ["femorale", "femorale-profonde"] },
+   "palpation": "Relief charnu au-dessus et en dedans de la patella ; il se palpe sur toute sa longueur, à la face médiale de la cuisse, quadriceps contracté",
+   "test": "Extension du genou contre résistance, en observant et palpant son relief en fin d'extension",
+   "atteinte": "Lésion du nerf fémoral : extension active du genou impossible. Sa faiblesse laisse la patella dévier en dehors : instabilité et douleur fémoro-patellaires",
+   "clinique": "Ses fibres basses forment le « vaste médial oblique », frein de la luxation latérale de la patella ; les exercices censés le renforcer isolément n'ont pas fait leurs preuves",
+   "memo": "La goutte d'eau du genou : médial, bas, oblique — le garde-fou de la patella",
+   "variantes": null,
+   "sources": ["gray1918", "tma-cuisse-ant", "kenhub-quadriceps", "physiopedia-vaste-medial", "openstax-11-6"],
+   "divergences": null
+  },
+  {
+   "id": "moyen-fessier",
+   "resume": "L'abducteur de la hanche, en éventail sur l'aile iliaque : il tient le bassin horizontal à chaque pas, quand tout le poids repose sur une jambe.",
+   "origine": [
+    { "texte": "Face glutéale de l'ilium, entre la crête iliaque et la ligne glutéale postérieure en haut, la ligne glutéale antérieure en bas", "os": ["ilium"] },
+    { "texte": "Aponévrose glutéale qui le recouvre", "os": [] }
+   ],
+   "terminaison": [
+    { "texte": "Face latérale du grand trochanter, sur une crête oblique", "os": ["femur"] }
+   ],
+   "action": "Écarte la cuisse ; en appui sur une jambe, empêche le bassin de tomber du côté opposé",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "abduction", "role": "principal" },
+    { "articulation": "bassin", "mouvement": "stabilisation", "role": "principal", "precision": "appui sur une jambe : maintient le bassin horizontal" },
+    { "articulation": "hanche", "mouvement": "rotation-mediale", "role": "accessoire", "precision": "fibres antérieures" },
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "accessoire", "precision": "fibres postérieures" }
+   ],
+   "synergistes": ["petit-fessier", "tenseur-fascia-lata"],
+   "antagonistes": ["long-adducteur", "court-adducteur", "grand-adducteur", "gracile"],
+   "innervation": { "nerf": "nerf-gluteal-superieur", "texte": "Nerf glutéal supérieur", "racines": ["L4", "L5", "S1"] },
+   "vascularisation": { "texte": "Branche profonde de l'artère glutéale supérieure", "arteres": ["artere-gluteale-superieure"] },
+   "palpation": "Sur le côté du bassin, entre la crête iliaque et le grand trochanter : il durcit du côté de l'appui quand on se tient sur un pied",
+   "test": "Abduction de la hanche contre résistance, genou tendu. Signe de Trendelenburg : debout sur la jambe atteinte, le bassin s'abaisse du côté opposé",
+   "atteinte": "Paralysie (nerf glutéal supérieur) : le bassin tombe du côté opposé à l'appui ; pour compenser, le tronc s'incline du côté atteint à chaque pas, d'où une marche dandinante",
+   "clinique": "Sa tendinopathie donne une douleur latérale de hanche, majorée en appui et couché sur le côté : le syndrome douloureux du grand trochanter",
+   "memo": "Le hauban du bassin : sans lui, la hanche opposée plonge à chaque pas",
+   "variantes": "Son bord postérieur est parfois uni au piriforme",
+   "sources": ["gray1918", "tma-fessiers", "kenhub-hanche-cuisse", "kenhub-moyen-fessier", "statpearls-moyen-fessier", "openstax-11-6"],
+   "divergences": null
+  },
+  {
+   "id": "soleaire",
+   "resume": "Le muscle profond du mollet, large et plat sous le gastrocnémien : il fléchit la cheville vers la plante et tient le corps debout.",
+   "origine": [
+    { "texte": "Tête et tiers supérieur de la face postérieure de la fibula", "os": ["fibula"] },
+    { "texte": "Ligne du muscle soléaire et tiers moyen du bord médial du tibia", "os": ["tibia"] },
+    { "texte": "Arcade tendineuse du soléaire, tendue entre le tibia et la fibula", "os": [] }
+   ],
+   "terminaison": [
+    { "texte": "Face postérieure du calcanéus, par le tendon calcanéen qu'il forme avec le gastrocnémien", "os": ["calcaneus", "tendon-calcaneen"] }
+   ],
+   "action": "Fléchit la cheville vers la plante, quelle que soit la position du genou ; debout, retient la jambe qui tend à basculer en avant",
+   "actions": [
+    { "articulation": "cheville", "mouvement": "flexion-plantaire", "role": "principal", "precision": "principal fléchisseur plantaire quand le genou est plié" },
+    { "articulation": "cheville", "mouvement": "stabilisation", "role": "principal", "precision": "debout : empêche la jambe de basculer en avant sur le pied" }
+   ],
+   "synergistes": ["gastrocnemien", "plantaire", "tibial-posterieur", "long-flechisseur-hallux"],
+   "antagonistes": ["tibial-anterieur", "long-extenseur-orteils", "long-extenseur-hallux"],
+   "innervation": { "nerf": "nerf-tibial", "texte": "Nerf tibial", "racines": ["S1", "S2"] },
+   "vascularisation": { "texte": "Artères tibiale postérieure et fibulaire ; rameaux de l'artère poplitée", "arteres": ["tibiale-posterieure", "fibulaire", "poplitee"] },
+   "palpation": "De part et d'autre du tendon calcanéen, sous le gastrocnémien ; on le sent mieux genou fléchi à 90°, quand le gastrocnémien est détendu",
+   "test": "Flexion plantaire contre résistance genou fléchi : montée sur la pointe des pieds en position assise",
+   "atteinte": "Paralysie du nerf tibial : flexion plantaire perdue, impossible de tenir sur la pointe des pieds. Déchirure : douleur du mollet d'installation progressive, réveillée par la flexion plantaire contrariée",
+   "clinique": "Ses veines, chassées à chaque contraction, font du mollet une pompe du retour veineux ; c'est aussi dans ce réseau que débutent souvent les thromboses veineuses profondes",
+   "memo": "Solea, la sandale : un muscle plat, riche en fibres lentes, fait pour tenir debout longtemps",
+   "variantes": "Un soléaire accessoire, chez 0,7 à 5,5 % des personnes, s'insère en dedans du tendon calcanéen et peut être douloureux à l'effort",
+   "sources": ["gray1918", "tma-jambe-post", "kenhub-jambe", "kenhub-soleaire", "physiopedia-soleaire", "openstax-11-6"],
+   "divergences": "Racines : S1 et S2 pour Gray et Kenhub ; Physiopedia donne L4 à S2"
+  },
+  {
+   "id": "tibial-anterieur",
+   "resume": "Le muscle qui longe la crête du tibia : il relève le pied et tourne la plante en dedans.",
+   "origine": [
+    { "texte": "Condyle latéral et deux tiers supérieurs de la face latérale du tibia", "os": ["tibia"] },
+    { "texte": "Membrane interosseuse, fascia crural et septum intermusculaire voisin", "os": ["membrane-interosseuse-de-la-jambe", "fascia-crural"] }
+   ],
+   "terminaison": [
+    { "texte": "Faces médiale et plantaire de l'os cunéiforme médial", "os": ["os-cuneiforme-medial"] },
+    { "texte": "Base du 1er métatarsien", "os": ["premier-metatarsien"] }
+   ],
+   "action": "Relève le pied (flexion dorsale) et tourne la plante en dedans ; soutient l'arche médiale du pied",
+   "actions": [
+    { "articulation": "cheville", "mouvement": "flexion-dorsale", "role": "principal" },
+    { "articulation": "subtalaire", "mouvement": "inversion", "role": "principal" }
+   ],
+   "synergistes": ["long-extenseur-orteils", "long-extenseur-hallux", "troisieme-fibulaire", "tibial-posterieur"],
+   "antagonistes": ["gastrocnemien", "soleaire", "long-fibulaire", "court-fibulaire"],
+   "innervation": { "nerf": "nerf-fibulaire-profond", "texte": "Nerf fibulaire profond", "racines": ["L4", "L5"] },
+   "vascularisation": { "texte": "Artère tibiale antérieure", "arteres": ["tibiale-anterieure"] },
+   "palpation": "Juste en dehors du bord antérieur du tibia ; son tendon, le plus médial, saille au-devant de la cheville quand on relève le pied",
+   "test": "Flexion dorsale du pied contre résistance, plante tournée en dedans",
+   "atteinte": "Paralysie (nerf fibulaire commun ou profond) : le pied tombe, la pointe traîne et accroche le sol, le sujet lève haut le genou pour passer le pas (steppage)",
+   "clinique": "Les douleurs d'effort le long du bord antérieur du tibia (« périostite ») relèvent de microtraumatismes répétés. La loge antérieure, inextensible, expose au syndrome de loge",
+   "memo": "Le releveur du pied : paralysé, c'est le pied tombant",
+   "variantes": "Un faisceau profond peut se fixer sur le talus ; une expansion gagne parfois la tête du 1er métatarsien ou l'hallux",
+   "sources": ["gray1918", "tma-jambe-ant", "kenhub-jambe", "kenhub-jambe-ant", "kenhub-tibial-anterieur", "openstax-11-6"],
+   "divergences": "Racines : L4 et L5 pour Kenhub ; Gray (1918) donne L4 à S1 pour toute la loge antérieure"
+  },
+  {
+   "id": "carre-femoral",
+   "resume": "Petit muscle rectangulaire et profond de la fesse, tendu de l'ischium au fémur : un rotateur latéral de la hanche.",
+   "origine": [
+    { "texte": "Bord latéral de la tubérosité ischiatique, dans sa partie haute", "os": ["ischium"] }
+   ],
+   "terminaison": [
+    { "texte": "Tubercule carré de la crête intertrochantérique du fémur et ligne qui le prolonge vers le bas", "os": ["femur"] }
+   ],
+   "action": "Tourne la cuisse en dehors et maintient la tête du fémur dans l'acétabulum",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "adduction", "role": "accessoire", "precision": "à partir de la position anatomique" },
+    { "articulation": "hanche", "mouvement": "stabilisation", "role": "accessoire", "precision": "maintient la tête fémorale dans l'acétabulum" }
+   ],
+   "synergistes": ["obturateur-interne", "obturateur-externe", "jumeau-inferieur", "piriforme"],
+   "antagonistes": ["petit-fessier", "tenseur-fascia-lata", "moyen-fessier"],
+   "innervation": { "nerf": "nerf-du-muscle-carre-femoral", "texte": "Nerf du muscle carré fémoral (plexus sacral)", "racines": ["L4", "L5", "S1"] },
+   "vascularisation": { "texte": "Artère glutéale inférieure ; branche descendante de l'artère circonflexe fémorale médiale", "arteres": ["artere-gluteale-inferieure", "artere-circonflexe-mediale-de-la-cuisse"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Rarement lésé seul. Coincé entre la tubérosité ischiatique et le petit trochanter quand cet espace est étroit, il devient œdémateux et douloureux : le conflit ischio-fémoral",
+   "clinique": "À l'IRM, un espace ischio-fémoral de 15 mm ou moins et un muscle en hypersignal évoquent ce conflit. Sa tendinite donne une douleur de l'aine, souvent diagnostiquée tard",
+   "memo": "Carré de nom et de forme : le plus bas des rotateurs latéraux, de la tubérosité ischiatique à la crête intertrochantérique",
+   "variantes": "Parfois absent, ou fusionné avec le grand adducteur",
+   "sources": ["gray1918", "tma-fessiers", "kenhub-hanche-cuisse", "kenhub-carre-femoral", "radiopaedia-conflit-ischio-femoral", "openstax-11-6"],
+   "divergences": "Racines : L4 à S1 dans les tableaux de Kenhub ; L5 et S1 dans le chapitre des muscles de Gray (1918) et dans une partie du texte de Kenhub"
+  },
+  {
+   "id": "gracile",
+   "resume": "Le plus médial et le plus superficiel des muscles de la cuisse, long et mince : il rapproche la cuisse et aide à plier le genou.",
+   "origine": [
+    { "texte": "Corps du pubis près de la symphyse et branche inférieure du pubis", "os": ["pubis"] },
+    { "texte": "Début de la branche de l'ischium", "os": ["ischium"] }
+   ],
+   "terminaison": [
+    { "texte": "Partie haute de la face médiale du tibia, sous le condyle médial : la patte d'oie, entre le sartorius et le semi-tendineux", "os": ["tibia"] }
+   ],
+   "action": "Rapproche la cuisse ; fléchit le genou et, genou fléchi, tourne la jambe en dedans",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "adduction", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "flexion", "role": "accessoire" },
+    { "articulation": "genou", "mouvement": "flexion", "role": "accessoire" },
+    { "articulation": "genou", "mouvement": "rotation-mediale", "role": "accessoire", "precision": "genou fléchi" }
+   ],
+   "synergistes": ["long-adducteur", "court-adducteur", "grand-adducteur", "sartorius"],
+   "antagonistes": ["moyen-fessier", "petit-fessier", "tenseur-fascia-lata"],
+   "innervation": { "nerf": "nerf-obturateur", "texte": "Nerf obturateur (rameau antérieur)", "racines": ["L2", "L3"] },
+   "vascularisation": { "texte": "Artère des adducteurs, branche de la fémorale profonde ; artère circonflexe fémorale médiale pour la partie haute", "arteres": ["femorale-profonde", "artere-circonflexe-mediale-de-la-cuisse"] },
+   "palpation": "Cordon mince à la face médiale de la cuisse, en dedans du long adducteur, tendu quand on serre les genoux ; son tendon se sent en dedans du genou",
+   "test": "Genou fléchi à 90° et jambe tournée en dedans : adduction de la cuisse contre résistance",
+   "atteinte": "Lésion du nerf obturateur : adduction de la cuisse affaiblie. Le prélèvement de son tendon diminue un peu la force de flexion du genou, sans gêne notable",
+   "clinique": "Son tendon est couramment prélevé, souvent avec celui du semi-tendineux, pour reconstruire le ligament croisé antérieur",
+   "memo": "Gracilis, « grêle » : le seul adducteur qui croise le genou, d'où sa place dans la patte d'oie",
+   "variantes": null,
+   "sources": ["gray1918", "tma-cuisse-med", "kenhub-hanche-cuisse", "kenhub-gracile", "openstax-11-6"],
+   "divergences": "Racines : L2 et L3 pour la fiche Kenhub du muscle, L2 à L4 pour TeachMeAnatomy, L3 et L4 pour Gray (1918)"
+  },
+  {
+   "id": "grand-adducteur",
+   "resume": "Le plus volumineux des adducteurs, large triangle à deux parties et deux nerfs : il rapproche la cuisse, et sa partie ischiatique l'étend.",
+   "origine": [
+    { "texte": "Partie adductrice : branche inférieure du pubis et branche de l'ischium", "os": ["pubis", "ischium"] },
+    { "texte": "Partie ischio-condylaire : tubérosité ischiatique", "os": ["ischium"] }
+   ],
+   "terminaison": [
+    { "texte": "Partie adductrice : tubérosité glutéale, lèvre médiale de la ligne âpre et ligne supracondylaire médiale du fémur", "os": ["femur"] },
+    { "texte": "Partie ischio-condylaire : tubercule de l'adducteur, au-dessus du condyle médial du fémur, par un tendon arrondi", "os": ["femur"] }
+   ],
+   "action": "Rapproche puissamment la cuisse ; ses fibres pubiennes aident à la fléchir, ses fibres ischiatiques l'étendent comme un ischio-jambier",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "adduction", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "extension", "role": "principal", "precision": "partie ischio-condylaire" },
+    { "articulation": "hanche", "mouvement": "flexion", "role": "accessoire", "precision": "partie adductrice, fibres hautes" },
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "accessoire", "precision": "fibres fixées sur la ligne âpre" },
+    { "articulation": "hanche", "mouvement": "rotation-mediale", "role": "accessoire", "precision": "partie ischio-condylaire" },
+    { "articulation": "bassin", "mouvement": "stabilisation", "role": "accessoire", "precision": "pendant la marche" }
+   ],
+   "synergistes": ["long-adducteur", "court-adducteur", "gracile", "semi-membraneux"],
+   "antagonistes": ["moyen-fessier", "petit-fessier", "tenseur-fascia-lata"],
+   "innervation": { "nerf": "nerf-obturateur", "texte": "Nerf obturateur pour la partie adductrice ; nerf sciatique (contingent tibial) pour la partie ischio-condylaire", "racines": ["L2", "L3", "L4"] },
+   "vascularisation": { "texte": "Artères perforantes de la fémorale profonde ; artère circonflexe fémorale médiale en haut, artères fémorale et poplitée en bas", "arteres": ["arteres-femorales-perforantes", "femorale-profonde", "artere-circonflexe-mediale-de-la-cuisse"] },
+   "palpation": "Son tendon se sent juste au-dessus du condyle médial du fémur, sur le tubercule de l'adducteur ; le corps charnu est profond",
+   "test": "Adduction de la hanche contre résistance ; on ne l'isole pas des autres adducteurs",
+   "atteinte": "Lésion du nerf obturateur : adduction très affaiblie, mais la partie ischio-condylaire, innervée par le nerf sciatique, reste active",
+   "clinique": "Entre son tendon et le fémur s'ouvre le hiatus de l'adducteur, par où l'artère et la veine fémorales gagnent le creux poplité ; le muscle borde le canal des adducteurs",
+   "memo": "Deux muscles en un : un adducteur (nerf obturateur) et un ischio-jambier (nerf sciatique)",
+   "variantes": "Sa partie haute et antérieure peut s'individualiser en petit adducteur ; fusion possible avec le carré fémoral",
+   "sources": ["gray1918", "tma-cuisse-med", "kenhub-hanche-cuisse", "kenhub-grand-adducteur", "kenhub-hanche-cuisse-fr", "openstax-11-6"],
+   "divergences": "Contingent sciatique : L4 pour Kenhub, L4 à S3 (nerf sciatique entier) pour TeachMeAnatomy. Nerf obturateur : L2 à L4 pour Kenhub, L3 et L4 pour Gray (1918)"
+  },
+  {
+   "id": "semi-membraneux",
+   "resume": "Ischio-jambier médial et profond, né d'une large lame tendineuse : il plie le genou, tourne la jambe en dedans et étend la hanche.",
+   "origine": [
+    { "texte": "Tubérosité ischiatique, facette supéro-latérale, au-dessus et en dehors de l'origine du biceps fémoral et du semi-tendineux", "os": ["ischium"] }
+   ],
+   "terminaison": [
+    { "texte": "Sillon horizontal à la face postéro-médiale du condyle médial du tibia", "os": ["tibia"] },
+    { "texte": "Expansion récurrente vers le condyle latéral du fémur : le ligament poplité oblique", "os": ["ligament-poplite-oblique"] },
+    { "texte": "Expansions au fascia du muscle poplité et au ligament collatéral tibial", "os": ["ligament-collateral-tibial"] }
+   ],
+   "action": "Fléchit le genou et tourne la jambe en dedans ; étend la hanche",
+   "actions": [
+    { "articulation": "genou", "mouvement": "flexion", "role": "principal" },
+    { "articulation": "genou", "mouvement": "rotation-mediale", "role": "principal", "precision": "genou fléchi" },
+    { "articulation": "hanche", "mouvement": "extension", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "rotation-mediale", "role": "accessoire", "precision": "hanche en extension" },
+    { "articulation": "bassin", "mouvement": "extension", "role": "accessoire", "precision": "pieds au sol : redresse le tronc penché en avant" }
+   ],
+   "synergistes": ["semi-tendineux", "biceps-femoral", "grand-fessier", "gracile"],
+   "antagonistes": ["droit-femoral", "vaste-lateral", "vaste-medial", "vaste-intermediaire"],
+   "innervation": { "nerf": "nerf-sciatique", "texte": "Nerf sciatique (contingent tibial)", "racines": ["L5", "S1", "S2"] },
+   "vascularisation": { "texte": "Artères perforantes de la fémorale profonde et rameaux de l'artère poplitée ; parfois artère glutéale inférieure en haut", "arteres": ["arteres-femorales-perforantes", "poplitee"] },
+   "palpation": "Plus profond que le semi-tendineux : sa masse se sent en dedans du creux poplité, de part et d'autre du tendon du semi-tendineux, genou fléchi contre résistance",
+   "test": "Sujet à plat ventre : flexion du genou contre résistance, jambe tournée en dedans",
+   "atteinte": "Claquage lors d'une course rapide ou d'un étirement forcé. Paralysie des ischio-jambiers : flexion du genou et extension de la hanche affaiblies",
+   "clinique": "Tendinopathie d'insertion : douleur postéro-médiale du genou chez le cycliste ou le marathonien, souvent méconnue. Une bourse en U sépare son tendon du tibia et du chef médial du gastrocnémien",
+   "memo": "Semi-membraneux : sa moitié haute est une membrane tendineuse. Il renforce l'arrière du genou par le ligament poplité oblique",
+   "variantes": "Peut être réduit, absent ou dédoublé ; un faisceau gagne parfois le fémur ou le grand adducteur",
+   "sources": ["gray1918", "tma-cuisse-post", "kenhub-ischio-jambiers", "kenhub-semi-membraneux", "kenhub-hanche-cuisse-fr", "openstax-11-6"],
+   "divergences": "Racines : L5 à S2 pour Kenhub ; Gray (1918) donne L4 à S3 pour les trois ischio-jambiers"
+  },
+  {
+   "id": "vaste-intermediaire",
+   "resume": "Le chef profond du quadriceps, plaqué sur le fémur sous le droit fémoral : il étend le genou.",
+   "origine": [
+    { "texte": "Faces antérieure et latérale des deux tiers supérieurs du corps du fémur", "os": ["femur"] },
+    { "texte": "Partie basse du septum intermusculaire latéral de la cuisse", "os": ["septum-intermusculaire-lateral-de-la-cuisse"] }
+   ],
+   "terminaison": [
+    { "texte": "Base de la patella, par la partie profonde du tendon quadricipital", "os": ["patella", "tendon-quadricipital"] },
+    { "texte": "Tubérosité tibiale, par le ligament patellaire", "os": ["tibia", "ligament-patellaire"] }
+   ],
+   "action": "Étend le genou, avec les trois autres chefs du quadriceps",
+   "actions": [
+    { "articulation": "genou", "mouvement": "extension", "role": "principal" }
+   ],
+   "synergistes": ["droit-femoral", "vaste-lateral", "vaste-medial"],
+   "antagonistes": ["biceps-femoral", "semi-tendineux", "semi-membraneux"],
+   "innervation": { "nerf": "nerf-femoral", "texte": "Nerf fémoral", "racines": ["L2", "L3", "L4"] },
+   "vascularisation": { "texte": "Artère fémorale profonde et branche descendante de l'artère circonflexe fémorale latérale", "arteres": ["femorale-profonde", "circonflexe-femorale-laterale", "branche-descendante-de-l-artere-circonflexe-lat-de-la-cuisse"] },
+   "palpation": null,
+   "test": "Extension du genou contre résistance ; il ne peut pas être testé isolément",
+   "atteinte": "Lésion du nerf fémoral : extension active du genou impossible, réflexe patellaire aboli. Les chocs directs sur le devant de la cuisse l'écrasent contre le fémur (contusion du quadriceps)",
+   "clinique": "Sous lui, le petit muscle articulaire du genou tire vers le haut la synoviale du genou pendant l'extension",
+   "memo": "Intermédiaire : entre les deux autres vastes, caché sous le droit fémoral",
+   "variantes": "Le muscle articulaire du genou lui est parfois fusionné",
+   "sources": ["gray1918", "tma-cuisse-ant", "kenhub-quadriceps", "physiopedia-vaste-intermediaire", "openstax-11-6"],
+   "divergences": "Origine limitée à la face antérieure du fémur dans le tableau de Kenhub ; antérieure et latérale pour Gray, TeachMeAnatomy et Physiopedia"
+  },
+  {
+   "id": "jumeau-inferieur",
+   "resume": "Petit muscle profond de la fesse, sous le tendon de l'obturateur interne qu'il accompagne jusqu'au grand trochanter.",
+   "origine": [
+    { "texte": "Partie haute de la tubérosité ischiatique, juste sous le sillon du tendon de l'obturateur interne", "os": ["ischium"] }
+   ],
+   "terminaison": [
+    { "texte": "Face médiale du grand trochanter, par le tendon de l'obturateur interne auquel il se joint", "os": ["femur", "tendon-obturateur-interne"] }
+   ],
+   "action": "Tourne la cuisse en dehors ; hanche fléchie, il l'écarte ; maintient la tête du fémur dans l'acétabulum",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "abduction", "role": "accessoire", "precision": "hanche fléchie" },
+    { "articulation": "hanche", "mouvement": "stabilisation", "role": "accessoire", "precision": "maintient la tête fémorale dans l'acétabulum" }
+   ],
+   "synergistes": ["obturateur-interne", "jumeau-superieur", "carre-femoral", "piriforme"],
+   "antagonistes": ["petit-fessier", "tenseur-fascia-lata"],
+   "innervation": { "nerf": "nerf-du-muscle-carre-femoral", "texte": "Nerf du muscle carré fémoral (plexus sacral)", "racines": ["L4", "L5", "S1"] },
+   "vascularisation": { "texte": "Rameaux de l'artère pudendale interne destinés aux jumeaux", "arteres": ["artere-pudendale-interne"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Atteinte isolée exceptionnelle. Les rotateurs courts souffrent ensemble lors des fractures du col ou du grand trochanter et de la pose d'une prothèse de hanche : douleur, boiterie",
+   "clinique": "Avec le jumeau supérieur et l'obturateur interne, il forme le « triceps coxal », trois corps charnus pour un seul tendon",
+   "memo": "Jumeau du bas : tubérosité ischiatique et nerf du carré fémoral ; jumeau du haut : épine ischiatique et nerf de l'obturateur interne",
+   "variantes": "Rarement absent",
+   "sources": ["gray1918", "tma-fessiers", "kenhub-hanche-cuisse", "kenhub-rotateurs-hanche", "kenhub-obturateur-interne", "openstax-11-6"],
+   "divergences": "Nerf du carré fémoral pour Gray, TeachMeAnatomy et le tableau général de Kenhub ; une autre page de Kenhub le rattache au nerf de l'obturateur interne. Racines : L4 à S1 (Kenhub) ou L5-S1 (Gray, chapitre des muscles)"
+  },
+  {
+   "id": "jumeau-superieur",
+   "resume": "Petit muscle profond de la fesse, au-dessus du tendon de l'obturateur interne qu'il accompagne jusqu'au grand trochanter.",
+   "origine": [
+    { "texte": "Face externe de l'épine ischiatique", "os": ["ischium"] }
+   ],
+   "terminaison": [
+    { "texte": "Face médiale du grand trochanter, par le tendon de l'obturateur interne auquel il se joint", "os": ["femur", "tendon-obturateur-interne"] }
+   ],
+   "action": "Tourne la cuisse en dehors ; hanche fléchie, il l'écarte ; maintient la tête du fémur dans l'acétabulum",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "abduction", "role": "accessoire", "precision": "hanche fléchie" },
+    { "articulation": "hanche", "mouvement": "stabilisation", "role": "accessoire", "precision": "maintient la tête fémorale dans l'acétabulum" }
+   ],
+   "synergistes": ["obturateur-interne", "jumeau-inferieur", "piriforme", "carre-femoral"],
+   "antagonistes": ["petit-fessier", "tenseur-fascia-lata"],
+   "innervation": { "nerf": null, "texte": "Nerf du muscle obturateur interne (plexus sacral)", "racines": ["L5", "S1", "S2"] },
+   "vascularisation": { "texte": "Rameaux de l'artère pudendale interne destinés aux jumeaux", "arteres": ["artere-pudendale-interne"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Jamais paralysé seul. Avec les autres rotateurs courts, il est lésé lors des fractures du col ou du grand trochanter et de la chirurgie prothétique de la hanche : douleur, boiterie",
+   "clinique": null,
+   "memo": "Les deux jumeaux encadrent le tendon de l'obturateur interne : le supérieur partage son nerf, l'inférieur prend celui du carré fémoral",
+   "variantes": "Parfois absent",
+   "sources": ["gray1918", "tma-fessiers", "kenhub-hanche-cuisse", "kenhub-rotateurs-hanche", "kenhub-obturateur-interne", "openstax-11-6"],
+   "divergences": "Racines : L5 à S2 dans les tableaux de Kenhub ; Gray (1918), au chapitre des muscles, donne S1 à S3"
+  },
+  {
+   "id": "petit-fessier",
+   "resume": "Le plus profond des fessiers, en éventail sous le moyen fessier : il écarte la cuisse, la tourne en dedans et stabilise le bassin.",
+   "origine": [
+    { "texte": "Face glutéale de l'ilium, entre les lignes glutéales antérieure et inférieure, jusqu'au bord de la grande incisure ischiatique", "os": ["ilium"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord antérieur du grand trochanter", "os": ["femur"] },
+    { "texte": "Expansion à la capsule de l'articulation de la hanche", "os": ["capsule-articulaire-de-l-articulation-de-la-hanche"] }
+   ],
+   "action": "Écarte la cuisse et la tourne en dedans ; avec le moyen fessier, garde le bassin horizontal en appui sur une jambe",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "abduction", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "rotation-mediale", "role": "principal", "precision": "fibres antérieures" },
+    { "articulation": "bassin", "mouvement": "stabilisation", "role": "principal", "precision": "appui sur une jambe : maintient le bassin horizontal" }
+   ],
+   "synergistes": ["moyen-fessier", "tenseur-fascia-lata"],
+   "antagonistes": ["long-adducteur", "court-adducteur", "grand-adducteur", "carre-femoral"],
+   "innervation": { "nerf": "nerf-gluteal-superieur", "texte": "Nerf glutéal supérieur", "racines": ["L4", "L5", "S1"] },
+   "vascularisation": { "texte": "Branche profonde de l'artère glutéale supérieure", "arteres": ["artere-gluteale-superieure"] },
+   "palpation": null,
+   "test": "Avec le moyen fessier : abduction de la hanche contre résistance et recherche du signe de Trendelenburg",
+   "atteinte": "Lésion du nerf glutéal supérieur (1 à 2 % des prothèses totales de hanche) : avec le moyen fessier, il laisse tomber le bassin du côté opposé à l'appui (boiterie de Trendelenburg)",
+   "clinique": "Sa tendinopathie participe au syndrome douloureux du grand trochanter : douleur latérale de hanche, réveillée par la pression du trochanter",
+   "memo": "Petit, profond, antérieur : l'abducteur qui tourne la cuisse en dedans",
+   "variantes": "Peut se diviser en parties antérieure et postérieure, ou envoyer des faisceaux au piriforme, au jumeau supérieur ou au vaste latéral",
+   "sources": ["gray1918", "tma-fessiers", "kenhub-hanche-cuisse", "statpearls-petit-fessier", "kenhub-hanche-cuisse-fr", "openstax-11-6"],
+   "divergences": "OpenStax lui prête un rapprochement des cuisses (adduction), à l'encontre de toutes les autres références, qui décrivent une abduction"
+  },
+  {
+   "id": "tenseur-fascia-lata",
+   "resume": "Petit muscle du bord latéral de la hanche, logé dans un dédoublement du fascia lata : il tend le tractus ilio-tibial.",
+   "origine": [
+    { "texte": "Partie antérieure de la lèvre externe de la crête iliaque et face externe de l'épine iliaque antéro-supérieure", "os": ["ilium"] },
+    { "texte": "Face profonde du fascia lata", "os": ["fascia-lata"] }
+   ],
+   "terminaison": [
+    { "texte": "Tractus ilio-tibial, entre ses deux feuillets, vers le tiers supérieur de la cuisse", "os": ["tractus-ilio-tibial"] },
+    { "texte": "Par le tractus : condyle latéral du tibia", "os": ["tibia"] }
+   ],
+   "action": "Met en tension le tractus ilio-tibial, ce qui cale le genou en extension ; fléchit, écarte et tourne la cuisse en dedans",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "rotation-mediale", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "abduction", "role": "accessoire" },
+    { "articulation": "hanche", "mouvement": "flexion", "role": "accessoire" },
+    { "articulation": "genou", "mouvement": "stabilisation", "role": "principal", "precision": "tend le tractus ilio-tibial, qui cale le genou en extension" },
+    { "articulation": "bassin", "mouvement": "stabilisation", "role": "accessoire", "precision": "avec les moyen et petit fessiers, en appui sur une jambe" }
+   ],
+   "synergistes": ["moyen-fessier", "petit-fessier", "grand-fessier"],
+   "antagonistes": ["grand-adducteur", "long-adducteur", "carre-femoral"],
+   "innervation": { "nerf": "nerf-gluteal-superieur", "texte": "Nerf glutéal supérieur", "racines": ["L4", "L5", "S1"] },
+   "vascularisation": { "texte": "Branche ascendante de l'artère circonflexe fémorale latérale", "arteres": ["circonflexe-femorale-laterale"] },
+   "palpation": "Sous la peau, à mi-chemin entre l'épine iliaque antéro-supérieure et le grand trochanter",
+   "test": "Sujet couché sur le côté : abduction de la hanche légèrement fléchie contre résistance. Sa raideur se cherche par le test d'Ober",
+   "atteinte": "Sa paralysie (nerf glutéal supérieur) s'ajoute à celle des moyen et petit fessiers. Sa rétraction, favorisée par la station assise prolongée, s'accompagne de douleurs latérales du genou",
+   "clinique": "Syndrome de la bandelette ilio-tibiale : douleur au-dessus du condyle latéral du tibia chez le coureur de fond et le cycliste, par surmenage",
+   "memo": "Il porte son rôle dans son nom : tendre le fascia lata, la gaine de la cuisse",
+   "variantes": null,
+   "sources": ["gray1918", "tma-fessiers", "kenhub-hanche-cuisse", "kenhub-tfl", "physiopedia-tfl", "openstax-11-6"],
+   "divergences": "Racines : L4 à S1 pour Gray et Kenhub ; L4 et L5 seulement pour Physiopedia"
+  },
+  {
+   "id": "long-extenseur-orteils",
+   "resume": "Muscle latéral de la loge antérieure de la jambe : ses quatre tendons relèvent les orteils 2 à 5, et il aide à relever le pied.",
+   "origine": [
+    { "texte": "Condyle latéral du tibia", "os": ["tibia"] },
+    { "texte": "Trois quarts supérieurs de la face médiale de la fibula", "os": ["fibula"] },
+    { "texte": "Membrane interosseuse, fascia crural et septums intermusculaires voisins", "os": ["membrane-interosseuse-de-la-jambe", "fascia-crural", "septum-intermusculaire-anterieur-de-la-jambe"] }
+   ],
+   "terminaison": [
+    { "texte": "Quatre tendons pour les orteils 2 à 5 ; chacun s'étale en expansion dorsale, fixée par une languette médiane sur la phalange moyenne et deux languettes latérales sur la phalange distale", "os": ["phalange-moyenne-du-deuxieme-doigt-de-pied", "phalange-moyenne-du-troiseme-doigt-de-pied", "phalange-moyenne-du-quatrieme-doigt-de-pied", "phalange-moyenne-du-cinqueme-doigt-de-pied", "phalange-distale-du-deuxieme-doigt-de-pied", "phalange-distale-du-troisieme-doigt-de-pied", "phalange-distale-du-quatrieme-doigt-de-pied", "phalange-distale-du-cinquieme-doigt-de-pied"] }
+   ],
+   "action": "Étend les quatre derniers orteils et relève le pied (flexion dorsale)",
+   "actions": [
+    { "articulation": "orteils-mtp", "mouvement": "extension", "role": "principal" },
+    { "articulation": "orteils-ip", "mouvement": "extension", "role": "accessoire", "precision": "avec l'aide des lombricaux et des interosseux" },
+    { "articulation": "cheville", "mouvement": "flexion-dorsale", "role": "principal" },
+    { "articulation": "subtalaire", "mouvement": "eversion", "role": "accessoire" }
+   ],
+   "synergistes": ["tibial-anterieur", "long-extenseur-hallux", "troisieme-fibulaire", "court-extenseur-orteils"],
+   "antagonistes": ["long-flechisseur-orteils", "court-flechisseur-orteils", "gastrocnemien", "soleaire"],
+   "innervation": { "nerf": "nerf-fibulaire-profond", "texte": "Nerf fibulaire profond", "racines": ["L5", "S1"] },
+   "vascularisation": { "texte": "Artère tibiale antérieure ; rameaux de l'artère fibulaire pour la partie basse", "arteres": ["tibiale-anterieure", "fibulaire"] },
+   "palpation": "Ses quatre tendons se dessinent sur le dos du pied quand on relève les orteils ; au cou-de-pied, ils passent en dehors du tendon du long extenseur de l'hallux",
+   "test": "Extension des orteils 2 à 5 contre résistance",
+   "atteinte": "Paralysie (nerf fibulaire commun ou profond) : orteils et pied ne se relèvent plus, la pointe traîne au sol (pied tombant)",
+   "clinique": "Le pouls de l'artère dorsale du pied se prend entre ses tendons et celui du long extenseur de l'hallux",
+   "memo": "Quatre tendons pour quatre orteils ; le troisième fibulaire passe pour son « cinquième tendon », égaré sur le 5e métatarsien",
+   "variantes": "Tendons du 2e et du 5e orteil parfois dédoublés ; faisceaux surnuméraires vers les métatarsiens, le court extenseur ou un interosseux",
+   "sources": ["gray1918", "tma-jambe-ant", "kenhub-jambe", "kenhub-jambe-ant", "kenhub-long-extenseur-orteils", "openstax-11-6"],
+   "divergences": "Racines : L5-S1 (Kenhub) ou L4 à S1 (Gray). Origine fibulaire : trois quarts supérieurs (Gray) ou moitié proximale (Kenhub). Arrière-pied : éversion selon la fiche Kenhub du muscle, inversion selon son tableau de la jambe"
+  },
+  {
+   "id": "long-fibulaire",
+   "resume": "Le muscle superficiel de la loge latérale de la jambe : son tendon contourne la malléole latérale puis traverse la plante jusqu'au bord médial du pied.",
+   "origine": [
+    { "texte": "Tête et deux tiers supérieurs de la face latérale de la fibula", "os": ["fibula"] },
+    { "texte": "Fascia crural et septums intermusculaires ; parfois quelques fibres du condyle latéral du tibia", "os": ["fascia-crural", "septum-intermusculaire-anterieur-de-la-jambe", "septum-intermusculaire-posterieur-de-la-jambe"] }
+   ],
+   "terminaison": [
+    { "texte": "Face latérale de la base du 1er métatarsien et de l'os cunéiforme médial, après un trajet sous le cuboïde, en travers de la plante", "os": ["premier-metatarsien", "os-cuneiforme-medial"] }
+   ],
+   "action": "Tourne la plante du pied en dehors (éversion) et aide à la fléchir ; abaisse le 1er métatarsien et soutient les voûtes du pied",
+   "actions": [
+    { "articulation": "subtalaire", "mouvement": "eversion", "role": "principal" },
+    { "articulation": "cheville", "mouvement": "flexion-plantaire", "role": "accessoire" }
+   ],
+   "synergistes": ["court-fibulaire", "troisieme-fibulaire", "gastrocnemien", "soleaire"],
+   "antagonistes": ["tibial-anterieur", "tibial-posterieur"],
+   "innervation": { "nerf": "nerf-fibulaire-superficiel", "texte": "Nerf fibulaire superficiel", "racines": ["L5", "S1", "S2"] },
+   "vascularisation": { "texte": "Artère fibulaire et artère tibiale antérieure", "arteres": ["fibulaire", "tibiale-anterieure"] },
+   "palpation": "Corps charnu sous la tête de la fibula, sur le côté de la jambe ; son tendon se sent derrière et au-dessus de la malléole latérale, en arrière de celui du court fibulaire",
+   "test": "Éversion du pied contre résistance, cheville en flexion plantaire",
+   "atteinte": "Lésion du nerf fibulaire superficiel : éversion perdue, le pied part en dedans et attaque le sol par son bord latéral. Chez le sportif, son tendon s'enflamme, se fissure ou se luxe, derrière la malléole ou sous le cuboïde",
+   "clinique": "Le nerf fibulaire commun traverse le muscle entre ses attaches sur la tête et sur le col de la fibula, puis s'y divise en nerfs fibulaires profond et superficiel",
+   "memo": "Fixé sur les mêmes os que le tibial antérieur, mais venu de l'autre côté : à eux deux, ils passent un étrier sous le pied",
+   "variantes": "Expansions fréquentes vers d'autres métatarsiens (2e, 4e, 5e) ; un quatrième fibulaire surnuméraire existe chez 5 à 20 % des personnes",
+   "sources": ["gray1918", "tma-jambe-lat", "kenhub-fibulaires", "statpearls-long-fibulaire", "physiopedia-long-fibulaire", "openstax-11-6"],
+   "divergences": "Racines : L5-S1 (Kenhub), L5 à S2 (Physiopedia, StatPearls) ou L4 à S1 (Gray 1918) ; StatPearls donne deux versions selon la section"
+  },
+  {
+   "id": "plantaire",
+   "resume": "Petit muscle inconstant du creux poplité, au corps très court et au tendon très long, qui longe le bord médial du tendon calcanéen.",
+   "origine": [
+    { "texte": "Partie basse de la ligne supracondylaire latérale du fémur, au-dessus du chef latéral du gastrocnémien", "os": ["femur"] },
+    { "texte": "Ligament poplité oblique", "os": ["ligament-poplite-oblique"] }
+   ],
+   "terminaison": [
+    { "texte": "Face postérieure du calcanéus, en dedans du tendon calcanéen, ou ce tendon lui-même", "os": ["calcaneus", "tendon-calcaneen"] }
+   ],
+   "action": "Auxiliaire très faible du triceps sural : aide à fléchir la cheville vers la plante et à fléchir le genou",
+   "actions": [
+    { "articulation": "cheville", "mouvement": "flexion-plantaire", "role": "principal", "precision": "action très faible, simple appoint du triceps sural" },
+    { "articulation": "genou", "mouvement": "flexion", "role": "accessoire", "precision": "très faible" }
+   ],
+   "synergistes": ["gastrocnemien", "soleaire"],
+   "antagonistes": ["tibial-anterieur"],
+   "innervation": { "nerf": "nerf-tibial", "texte": "Nerf tibial", "racines": ["S1", "S2"] },
+   "vascularisation": { "texte": "Artère surale latérale, branche de la poplitée ; artère supéro-latérale du genou pour la face profonde", "arteres": ["poplitee", "artere-superieure-laterale-du-genou"] },
+   "palpation": "Dans le creux poplité, en dedans et au-dessus du chef latéral du gastrocnémien ; difficile à individualiser",
+   "test": "Sujet à plat ventre, genou fléchi à 90° : flexion plantaire et flexion du genou contre résistance, sans pouvoir l'isoler du triceps",
+   "atteinte": "Sa rupture, plus rare que celle du chef médial du gastrocnémien, donne la même douleur brutale du mollet (« tennis leg »). Sa perte ne laisse aucun déficit",
+   "clinique": "Son tendon, long et résistant, sert de greffon tendineux ; son prélèvement est sans conséquence fonctionnelle",
+   "memo": "Le « nerf du débutant » : à la dissection, son tendon filiforme est souvent pris pour un nerf",
+   "variantes": "Absent chez environ une personne sur dix ; parfois dédoublé ; son tendon peut se perdre dans le rétinaculum des fléchisseurs ou le fascia de la jambe",
+   "sources": ["gray1918", "tma-jambe-post", "kenhub-jambe", "kenhub-plantaire", "physiopedia-plantaire", "openstax-11-6"],
+   "divergences": "Racines : S1 et S2 pour Kenhub et Physiopedia ; Gray (1918) donne L4 à S1"
+  },
+  {
+   "id": "adducteur-de-l-hallux",
+   "resume": "Muscle profond de l'avant-pied à deux chefs, oblique et transverse : il ramène le gros orteil vers le deuxième et resserre la voûte transversale.",
+   "origine": [
+    { "texte": "Chef oblique : bases des 2e, 3e et 4e métatarsiens et gaine du tendon du long fibulaire", "os": ["deuxieme-os-metatarsien", "troisieme-metatarsien", "quatrieme-metatarsien", "gaine-tendineuse-plantaire-du-muscle-long-fibulaire"] },
+    { "texte": "Chef transverse : ligaments plantaires des articulations métatarso-phalangiennes 3 à 5 et ligament métatarsien transverse profond", "os": ["ligaments-metatarsophalangiens-plantaires", "ligament-metatarsien-transverse-profond"] }
+   ],
+   "terminaison": [
+    { "texte": "Côté latéral de la base de la phalange proximale de l'hallux, avec le chef latéral du court fléchisseur (sésamoïde latéral)", "os": ["phalange-proximale-du-premier-doigt-de-pied", "os-sesamoides-du-pied"] }
+   ],
+   "action": "Rapproche le gros orteil du deuxième et aide à le fléchir à sa base ; son chef transverse resserre les têtes des métatarsiens",
+   "actions": [
+    { "articulation": "hallux-mtp", "mouvement": "adduction", "role": "principal" },
+    { "articulation": "hallux-mtp", "mouvement": "flexion", "role": "accessoire" }
+   ],
+   "synergistes": ["court-flechisseur-de-l-hallux", "long-flechisseur-hallux"],
+   "antagonistes": ["abducteur-hallux"],
+   "innervation": { "nerf": "nerf-plantaire-lateral", "texte": "Nerf plantaire latéral (rameau profond)", "racines": ["S2", "S3"] },
+   "vascularisation": { "texte": "Arcade plantaire et artères métatarsiennes plantaires, la première surtout", "arteres": ["arcade-plantaire", "arteres-metatarsiennes-plantaires"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Paralysie (rameau profond du nerf plantaire latéral) : le gros orteil n'est plus ramené vers le deuxième et la voûte transversale de l'avant-pied est moins bien tenue",
+   "clinique": "Son chef transverse est le seul muscle disposé en travers de la plante : il rapproche les orteils et accentue l'arche transversale à chaque appui",
+   "memo": "Abducteur en dedans, adducteur en dehors : ils se fixent de part et d'autre de la base du gros orteil, chacun sur son sésamoïde",
+   "variantes": "Chef transverse très variable, parfois absent ; un faisceau fixé sur le 1er métatarsien forme un opposant de l'hallux",
+   "sources": ["gray1918", "tma-pied", "kenhub-pied", "kenhub-adducteur-hallux", "statpearls-muscles-pied", "openstax-11-6"],
+   "divergences": "Origine du chef oblique : Kenhub y ajoute le cuboïde et le cunéiforme latéral, que Gray, TeachMeAnatomy et StatPearls ne citent pas"
+  },
+  {
+   "id": "carre-plantaire",
+   "resume": "Muscle plat de la plante, tendu du calcanéus au tendon du long fléchisseur des orteils, dont il redresse la traction oblique.",
+   "origine": [
+    { "texte": "Chef médial, charnu : face médiale concave du calcanéus", "os": ["calcaneus"] },
+    { "texte": "Chef latéral, tendineux : bord latéral de la face plantaire du calcanéus, en avant du processus latéral de la tubérosité, et ligament plantaire long", "os": ["calcaneus", "ligament-plantaire-long"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord latéral et faces du tendon du long fléchisseur des orteils, avant sa division en quatre", "os": [] }
+   ],
+   "action": "Aide à fléchir les quatre derniers orteils en ramenant dans l'axe du pied la traction oblique du long fléchisseur",
+   "actions": [
+    { "articulation": "orteils-ip", "mouvement": "flexion", "role": "principal", "precision": "par le tendon du long fléchisseur des orteils, dont il corrige l'obliquité" },
+    { "articulation": "orteils-mtp", "mouvement": "flexion", "role": "accessoire" }
+   ],
+   "synergistes": ["long-flechisseur-orteils", "court-flechisseur-orteils", "lombricaux-du-pied"],
+   "antagonistes": ["long-extenseur-orteils", "court-extenseur-orteils"],
+   "innervation": { "nerf": "nerf-plantaire-lateral", "texte": "Nerf plantaire latéral", "racines": ["S1", "S2", "S3"] },
+   "vascularisation": { "texte": "Artère plantaire latérale", "arteres": ["artere-plantaire-laterale"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Paralysie (nerf plantaire latéral) : la flexion des orteils faiblit et le long fléchisseur, livré à lui-même, les tire en dedans au lieu de les fléchir dans l'axe",
+   "clinique": null,
+   "memo": "L'accessoire du long fléchisseur (l'ancienne « chair carrée de Sylvius ») : il tire droit là où le tendon tire en biais",
+   "variantes": "Chef latéral souvent absent ; le muscle entier peut manquer",
+   "sources": ["gray1918", "tma-pied", "kenhub-pied", "kenhub-plante-centrale", "statpearls-muscles-pied", "openstax-11-6"],
+   "divergences": "Racines S1 à S3 données par Kenhub seul ; les autres références consultées ne les précisent pas"
+  },
+  {
+   "id": "court-extenseur-de-l-hallux",
+   "resume": "Le faisceau médial du muscle du dos du pied : il étend la première phalange du gros orteil.",
+   "origine": [
+    { "texte": "Face supérieure et latérale du calcanéus, en avant, avec le court extenseur des orteils", "os": ["calcaneus"] },
+    { "texte": "Racine du rétinaculum inférieur des extenseurs", "os": ["retinaculum-inferieur-des-extenseurs"] }
+   ],
+   "terminaison": [
+    { "texte": "Face dorsale de la base de la phalange proximale de l'hallux", "os": ["phalange-proximale-du-premier-doigt-de-pied"] }
+   ],
+   "action": "Étend le gros orteil à sa base, en renfort du long extenseur",
+   "actions": [
+    { "articulation": "hallux-mtp", "mouvement": "extension", "role": "principal" }
+   ],
+   "synergistes": ["long-extenseur-hallux", "court-extenseur-orteils"],
+   "antagonistes": ["court-flechisseur-de-l-hallux", "long-flechisseur-hallux"],
+   "innervation": { "nerf": "nerf-fibulaire-profond", "texte": "Nerf fibulaire profond (branche terminale latérale)", "racines": ["L5", "S1"] },
+   "vascularisation": { "texte": "Artère dorsale du pied", "arteres": ["dorsale-du-pied"] },
+   "palpation": "Avec le court extenseur des orteils, il forme une petite saillie charnue en avant de la malléole latérale quand on relève les orteils",
+   "test": "Extension de la première phalange du gros orteil contre résistance ; il n'agit pas sur la phalange distale",
+   "atteinte": "Paralysie (nerf fibulaire profond) : extension du gros orteil affaiblie à sa base ; déficit discret tant que le long extenseur fonctionne",
+   "clinique": "Son tendon croise en avant l'artère dorsale du pied et le nerf fibulaire profond",
+   "memo": "Souvent décrit comme le premier faisceau du court extenseur des orteils : même origine, mais il s'arrête sur la phalange proximale du gros orteil",
+   "variantes": "Parfois fusionné avec le court extenseur des orteils en un seul muscle",
+   "sources": ["gray1918", "tma-pied", "kenhub-pied", "kenhub-court-extenseur-hallux", "statpearls-muscles-pied"],
+   "divergences": "Racines : L5-S1 dans le texte de Kenhub, S1-S2 dans ses tableaux ; Gray et TeachMeAnatomy ne les précisent pas"
+  },
+  {
+   "id": "court-flechisseur-de-l-hallux",
+   "resume": "Muscle court à deux chefs sous le 1er métatarsien : il fléchit le gros orteil à sa base ; ses tendons contiennent les deux os sésamoïdes.",
+   "origine": [
+    { "texte": "Face plantaire du cuboïde (partie médiale) et de l'os cunéiforme latéral", "os": ["cuboide", "os-cuneiforme-lateral"] },
+    { "texte": "Expansion du tendon du tibial postérieur", "os": [] }
+   ],
+   "terminaison": [
+    { "texte": "Chef médial : côté médial de la base de la phalange proximale de l'hallux, avec l'abducteur ; le sésamoïde médial est dans son tendon", "os": ["phalange-proximale-du-premier-doigt-de-pied", "os-sesamoides-du-pied"] },
+    { "texte": "Chef latéral : côté latéral de la même base, avec l'adducteur ; le sésamoïde latéral est dans son tendon", "os": ["phalange-proximale-du-premier-doigt-de-pied", "os-sesamoides-du-pied"] }
+   ],
+   "action": "Fléchit le gros orteil à l'articulation métatarso-phalangienne : il le plaque au sol à la fin du pas",
+   "actions": [
+    { "articulation": "hallux-mtp", "mouvement": "flexion", "role": "principal" }
+   ],
+   "synergistes": ["long-flechisseur-hallux", "abducteur-hallux", "adducteur-de-l-hallux"],
+   "antagonistes": ["long-extenseur-hallux", "court-extenseur-de-l-hallux"],
+   "innervation": { "nerf": "nerf-plantaire-medial", "texte": "Nerf plantaire médial", "racines": ["S1", "S2"] },
+   "vascularisation": { "texte": "Artère plantaire médiale et première artère métatarsienne plantaire", "arteres": ["artere-plantaire-mediale", "arteres-metatarsiennes-plantaires"] },
+   "palpation": null,
+   "test": "Flexion de la première phalange du gros orteil contre résistance, phalange distale relâchée",
+   "atteinte": "Paralysie (nerf plantaire médial) : le gros orteil se fléchit mal à sa base et s'appuie moins bien au sol à la fin du pas",
+   "clinique": "Le tendon du long fléchisseur de l'hallux glisse entre ses deux chefs et entre les deux sésamoïdes, qui s'articulent avec la tête du 1er métatarsien",
+   "memo": "Deux chefs, deux sésamoïdes : un rail pour le tendon du long fléchisseur de l'hallux",
+   "variantes": "Origine variable : fibres venues du calcanéus ou du ligament plantaire long, attache au cuboïde parfois absente ; faisceau possible vers le 2e orteil",
+   "sources": ["gray1918", "tma-pied", "kenhub-pied", "kenhub-court-flechisseur-hallux", "statpearls-muscles-pied", "openstax-11-6"],
+   "divergences": "Origine : cuboïde et cunéiforme latéral pour Gray, TeachMeAnatomy, StatPearls et OpenStax ; le tableau de Kenhub ajoute le cunéiforme médial. Racines S1-S2 données par Kenhub seul"
+  },
+  {
+   "id": "flechisseur-du-petit-doigt",
+   "resume": "Le court fléchisseur du petit orteil : un petit corps charnu sous le 5e métatarsien, qui fléchit le petit orteil à sa base.",
+   "origine": [
+    { "texte": "Base du 5e métatarsien", "os": ["cinquieme-metatarsien"] },
+    { "texte": "Gaine du tendon du long fibulaire", "os": ["gaine-tendineuse-plantaire-du-muscle-long-fibulaire"] }
+   ],
+   "terminaison": [
+    { "texte": "Côté latéral de la base de la phalange proximale du 5e orteil", "os": ["phalange-proximale-du-cinquieme-doigt-de-pied"] }
+   ],
+   "action": "Fléchit le petit orteil à l'articulation métatarso-phalangienne",
+   "actions": [
+    { "articulation": "orteils-mtp", "mouvement": "flexion", "role": "principal", "precision": "5e orteil" }
+   ],
+   "synergistes": ["abducteur-petit-orteil", "interosseux-plantaires", "lombricaux-du-pied"],
+   "antagonistes": ["long-extenseur-orteils"],
+   "innervation": { "nerf": "nerf-plantaire-lateral", "texte": "Nerf plantaire latéral (rameau superficiel)", "racines": ["S2", "S3"] },
+   "vascularisation": { "texte": "Artère plantaire latérale", "arteres": ["artere-plantaire-laterale"] },
+   "palpation": null,
+   "test": "Flexion de la base du 5e orteil contre résistance",
+   "atteinte": "Paralysie (nerf plantaire latéral) : la base du petit orteil ne se fléchit plus ; déficit sans retentissement notable sur la marche",
+   "clinique": null,
+   "memo": "Un seul chef, au contraire du court fléchisseur de l'hallux ; par sa forme et sa place, il ressemble à un interosseux",
+   "variantes": "Ses fibres profondes, fixées sur la moitié distale du 5e métatarsien, sont parfois isolées sous le nom d'opposant du petit orteil",
+   "sources": ["gray1918", "tma-pied", "kenhub-pied", "kenhub-pied-fr", "statpearls-muscles-pied", "openstax-11-6"],
+   "divergences": "Origine : Gray cite la gaine du long fibulaire, Kenhub le ligament plantaire long ; tous s'accordent sur la base du 5e métatarsien"
+  },
+  {
+   "id": "interosseux-dorsaux-du-pied",
+   "resume": "Quatre muscles bipennés logés entre les métatarsiens : ils écartent les orteils de l'axe du pied, qui passe par le deuxième orteil.",
+   "origine": [
+    { "texte": "Chacun naît par deux chefs des faces en regard des deux métatarsiens qui bordent son espace", "os": ["premier-metatarsien", "deuxieme-os-metatarsien", "troisieme-metatarsien", "quatrieme-metatarsien", "cinquieme-metatarsien"] }
+   ],
+   "terminaison": [
+    { "texte": "1er interosseux : côté médial de la base de la phalange proximale du 2e orteil", "os": ["phalange-proximale-du-deuxieme-doigt-de-pied"] },
+    { "texte": "2e, 3e et 4e interosseux : côté latéral de la base de la phalange proximale des orteils 2, 3 et 4", "os": ["phalange-proximale-du-deuxieme-doigt-de-pied", "phalange-proximale-du-troisieme-doigt-de-pied", "phalange-proximale-du-quatrieme-doigt-de-pied"] },
+    { "texte": "Expansion dorsale des tendons du long extenseur des orteils", "os": ["tendons-extenseurs-orteils"] }
+   ],
+   "action": "Écartent les orteils 2, 3 et 4 de l'axe du deuxième orteil ; fléchissent leur base et aident à étendre leurs phalanges",
+   "actions": [
+    { "articulation": "orteils-mtp", "mouvement": "abduction", "role": "principal", "precision": "par rapport à l'axe du 2e orteil" },
+    { "articulation": "orteils-mtp", "mouvement": "flexion", "role": "accessoire" },
+    { "articulation": "orteils-ip", "mouvement": "extension", "role": "accessoire" }
+   ],
+   "synergistes": ["lombricaux-du-pied", "abducteur-petit-orteil", "abducteur-hallux"],
+   "antagonistes": ["interosseux-plantaires"],
+   "innervation": { "nerf": "nerf-plantaire-lateral", "texte": "Nerf plantaire latéral ; les deux premiers reçoivent souvent un filet du nerf fibulaire profond", "racines": ["S2", "S3"] },
+   "vascularisation": { "texte": "Artères métatarsiennes dorsales, issues de l'artère dorsale du pied", "arteres": ["arteres-metatarsiennes-dorsales", "dorsale-du-pied"] },
+   "palpation": null,
+   "test": "Écartement des orteils contre résistance",
+   "atteinte": "Paralysie (nerf plantaire latéral) : les orteils ne s'écartent plus ; privés de leurs fléchisseurs de base, ils tendent à se déformer en griffe",
+   "clinique": null,
+   "memo": "Dorsaux = abducteurs, plantaires = adducteurs, comme à la main ; mais l'axe du pied est le 2e orteil, celui de la main le 3e doigt",
+   "variantes": null,
+   "sources": ["gray1918", "tma-pied", "kenhub-pied", "kenhub-plante-centrale", "statpearls-muscles-pied", "openstax-11-6"],
+   "divergences": null
+  },
+  {
+   "id": "interosseux-plantaires",
+   "resume": "Trois petits muscles unipennés placés sous les métatarsiens 3, 4 et 5 : ils rapprochent les trois derniers orteils du deuxième.",
+   "origine": [
+    { "texte": "Base et face médiale du corps des 3e, 4e et 5e métatarsiens, un seul os pour chaque muscle", "os": ["troisieme-metatarsien", "quatrieme-metatarsien", "cinquieme-metatarsien"] }
+   ],
+   "terminaison": [
+    { "texte": "Côté médial de la base de la phalange proximale des orteils 3, 4 et 5", "os": ["phalange-proximale-du-troisieme-doigt-de-pied", "phalange-proximale-du-quatrieme-doigt-de-pied", "phalange-proximale-du-cinquieme-doigt-de-pied"] },
+    { "texte": "Expansion dorsale des tendons du long extenseur des orteils", "os": ["tendons-extenseurs-orteils"] }
+   ],
+   "action": "Rapprochent les orteils 3, 4 et 5 du deuxième ; fléchissent leur base et aident à étendre leurs phalanges",
+   "actions": [
+    { "articulation": "orteils-mtp", "mouvement": "adduction", "role": "principal", "precision": "vers l'axe du 2e orteil" },
+    { "articulation": "orteils-mtp", "mouvement": "flexion", "role": "accessoire" },
+    { "articulation": "orteils-ip", "mouvement": "extension", "role": "accessoire" }
+   ],
+   "synergistes": ["lombricaux-du-pied", "flechisseur-du-petit-doigt", "adducteur-de-l-hallux"],
+   "antagonistes": ["interosseux-dorsaux-du-pied", "abducteur-petit-orteil"],
+   "innervation": { "nerf": "nerf-plantaire-lateral", "texte": "Nerf plantaire latéral", "racines": ["S2", "S3"] },
+   "vascularisation": { "texte": "Artères métatarsiennes plantaires, branches de l'arcade plantaire", "arteres": ["arteres-metatarsiennes-plantaires", "arcade-plantaire"] },
+   "palpation": null,
+   "test": "Resserrement des orteils contre résistance",
+   "atteinte": "Paralysie (nerf plantaire latéral) : les orteils ne se resserrent plus et, faute de fléchisseurs de leur base, tendent à se déformer en griffe",
+   "clinique": null,
+   "memo": "PAD : les Plantaires ADductent. Ils ne sont que trois, car le 2e orteil, axe du pied, n'en a pas",
+   "variantes": null,
+   "sources": ["gray1918", "tma-pied", "kenhub-pied", "kenhub-plante-centrale", "statpearls-muscles-pied", "openstax-11-6"],
+   "divergences": null
+  },
+  {
+   "id": "lombricaux-du-pied",
+   "resume": "Quatre petits muscles en forme de ver, nés des tendons du long fléchisseur des orteils : ils fléchissent la base des orteils et étendent leurs phalanges.",
+   "origine": [
+    { "texte": "Tendons du long fléchisseur des orteils : le 1er sur le bord médial du tendon du 2e orteil, les trois autres sur les deux tendons voisins", "os": [] }
+   ],
+   "terminaison": [
+    { "texte": "Côté médial des orteils 2 à 5 : expansion dorsale des tendons extenseurs et base de la phalange proximale", "os": ["tendons-extenseurs-orteils", "phalange-proximale-du-deuxieme-doigt-de-pied", "phalange-proximale-du-troisieme-doigt-de-pied", "phalange-proximale-du-quatrieme-doigt-de-pied", "phalange-proximale-du-cinquieme-doigt-de-pied"] }
+   ],
+   "action": "Fléchissent les orteils 2 à 5 à leur base tout en étendant leurs phalanges",
+   "actions": [
+    { "articulation": "orteils-mtp", "mouvement": "flexion", "role": "principal" },
+    { "articulation": "orteils-ip", "mouvement": "extension", "role": "principal", "precision": "par l'expansion dorsale des tendons extenseurs" }
+   ],
+   "synergistes": ["interosseux-plantaires", "interosseux-dorsaux-du-pied"],
+   "antagonistes": [],
+   "innervation": { "nerf": "nerf-plantaire-lateral", "texte": "Nerf plantaire médial pour le 1er lombrical ; nerf plantaire latéral pour les trois autres", "racines": ["S2", "S3"] },
+   "vascularisation": { "texte": "Artères plantaires médiale et latérale", "arteres": ["artere-plantaire-mediale", "artere-plantaire-laterale"] },
+   "palpation": null,
+   "test": "Flexion de la base des orteils en gardant les phalanges tendues, contre résistance",
+   "atteinte": "Paralysie des lombricaux et des interosseux : orteils en griffe, la base relevée par les extenseurs et les phalanges repliées par les fléchisseurs longs",
+   "clinique": null,
+   "memo": "Lumbricus, le ver de terre. Au pied, un lombrical pour le nerf médial et trois pour le latéral ; à la main, c'est deux et deux",
+   "variantes": "Un ou plusieurs peuvent manquer ; le 3e ou le 4e est parfois double",
+   "sources": ["gray1918", "tma-pied", "kenhub-pied", "kenhub-plante-centrale", "statpearls-muscles-pied", "openstax-11-6"],
+   "divergences": null
+  },
+  {
+   "id": "opposant-du-petit-doigt",
+   "resume": "L'opposant du petit orteil : un faisceau inconstant du bord latéral de la plante, détaché du court fléchisseur du petit orteil et fixé sur le 5e métatarsien.",
+   "origine": [
+    { "texte": "Base du 5e métatarsien, avec le court fléchisseur du petit orteil", "os": ["cinquieme-metatarsien"] },
+    { "texte": "Ligament plantaire long et gaine du tendon du long fibulaire", "os": ["ligament-plantaire-long", "gaine-tendineuse-plantaire-du-muscle-long-fibulaire"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord latéral du 5e métatarsien, dans sa moitié distale", "os": ["cinquieme-metatarsien"] }
+   ],
+   "action": "Attire le 5e métatarsien vers la plante et vers le dedans : il creuse le bord latéral de l'avant-pied",
+   "actions": [
+    { "articulation": "orteils-mtp", "mouvement": "opposition", "role": "principal", "precision": "agit en fait sur le 5e métatarsien, tiré vers la plante et le dedans ; mouvement minime" }
+   ],
+   "synergistes": ["flechisseur-du-petit-doigt", "abducteur-petit-orteil"],
+   "antagonistes": [],
+   "innervation": { "nerf": "nerf-plantaire-lateral", "texte": "Nerf plantaire latéral (rameau superficiel)", "racines": ["S2", "S3"] },
+   "vascularisation": { "texte": "Artère plantaire latérale ; rameaux de l'artère arquée et de l'artère tarsienne latérale", "arteres": ["artere-plantaire-laterale", "artere-arquee", "artere-tarsienne-laterale"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit propre connu : son action se confond avec celle du court fléchisseur du petit orteil, paralysé avec lui dans les lésions du nerf plantaire latéral",
+   "clinique": null,
+   "memo": "Homologue de l'opposant du petit doigt de la main ; mais le pied n'oppose rien, il ne fait que creuser son bord latéral",
+   "variantes": "Inconstant : pour beaucoup d'auteurs, dont Gray, ce ne sont que les fibres profondes du court fléchisseur du petit orteil",
+   "sources": ["gray1918", "kenhub-pied", "kenhub-opposant-petit-orteil", "kenhub-pied-fr"],
+   "divergences": "Muscle distinct pour Kenhub, simple faisceau du court fléchisseur pour Gray (1918). Kenhub lui attribue une flexion et une abduction du 5e orteil, difficiles à concilier avec une terminaison sur le métatarsien"
+  },
+  {
+   "id": "troisieme-fibulaire",
+   "resume": "Petit muscle inconstant de la loge antérieure de la jambe, détaché du long extenseur des orteils : il relève le pied et tourne la plante en dehors.",
+   "origine": [
+    { "texte": "Tiers inférieur de la face médiale de la fibula", "os": ["fibula"] },
+    { "texte": "Partie basse de la membrane interosseuse et septum intermusculaire antérieur de la jambe", "os": ["membrane-interosseuse-de-la-jambe", "septum-intermusculaire-anterieur-de-la-jambe"] }
+   ],
+   "terminaison": [
+    { "texte": "Face dorsale de la base du 5e métatarsien", "os": ["cinquieme-metatarsien"] }
+   ],
+   "action": "Relève le pied (flexion dorsale) et tourne la plante en dehors, faiblement",
+   "actions": [
+    { "articulation": "cheville", "mouvement": "flexion-dorsale", "role": "principal", "precision": "faible, en renfort du long extenseur des orteils" },
+    { "articulation": "subtalaire", "mouvement": "eversion", "role": "accessoire", "precision": "limite l'inversion excessive du pied levé" }
+   ],
+   "synergistes": ["long-extenseur-orteils", "tibial-anterieur", "court-fibulaire", "long-fibulaire"],
+   "antagonistes": ["tibial-posterieur", "gastrocnemien", "soleaire"],
+   "innervation": { "nerf": "nerf-fibulaire-profond", "texte": "Nerf fibulaire profond", "racines": ["L5", "S1"] },
+   "vascularisation": { "texte": "Artère tibiale antérieure", "arteres": ["tibiale-anterieure"] },
+   "palpation": "Son tendon se sent dans la dépression située en avant de la malléole latérale, pied et orteils relevés contre résistance",
+   "test": "Flexion dorsale et éversion du pied contre résistance ; il ne peut pas être testé isolément",
+   "atteinte": "Son absence passe inaperçue. Son tendon peut se rompre lors d'une inversion violente du pied : douleur et gonflement en avant de la malléole latérale",
+   "clinique": null,
+   "memo": "Fibulaire par le nom, extenseur par la loge et le nerf : c'est le « cinquième tendon » du long extenseur des orteils",
+   "variantes": "Inconstant : absent chez une partie des personnes, sans gêne fonctionnelle",
+   "sources": ["gray1918", "tma-jambe-ant", "kenhub-jambe", "kenhub-jambe-ant", "kenhub-troisieme-fibulaire"],
+   "divergences": "Racines : L5 et S1 pour Kenhub ; Gray (1918) donne L4 à S1 pour toute la loge antérieure"
+  },
+  {
+   "id": "court-adducteur",
+   "resume": "Adducteur court et profond, caché derrière le pectiné et le long adducteur : il rapproche la cuisse.",
+   "origine": [
+    { "texte": "Face antérieure du corps du pubis et branche inférieure du pubis, entre le gracile et l'obturateur externe", "os": ["pubis"] }
+   ],
+   "terminaison": [
+    { "texte": "Ligne allant du petit trochanter à la ligne âpre, et partie haute de la ligne âpre (lèvre médiale)", "os": ["femur"] }
+   ],
+   "action": "Rapproche la cuisse ; aide à la fléchir",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "adduction", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "flexion", "role": "accessoire" },
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "accessoire" }
+   ],
+   "synergistes": ["long-adducteur", "grand-adducteur", "pectine", "gracile"],
+   "antagonistes": ["moyen-fessier", "petit-fessier", "tenseur-fascia-lata"],
+   "innervation": { "nerf": "nerf-obturateur", "texte": "Nerf obturateur", "racines": ["L2", "L3", "L4"] },
+   "vascularisation": { "texte": "Artère des adducteurs, branche de la fémorale profonde ; artères circonflexe fémorale médiale et obturatrice", "arteres": ["femorale-profonde", "artere-circonflexe-mediale-de-la-cuisse", "artere-obturatrice"] },
+   "palpation": null,
+   "test": "Adduction de la hanche contre résistance, avec les autres adducteurs ; il ne peut pas être isolé",
+   "atteinte": "Lésion du nerf obturateur : adduction de la cuisse affaiblie, avec celle des autres adducteurs",
+   "clinique": "Repère de dissection : le rameau antérieur du nerf obturateur passe devant lui, le rameau postérieur derrière",
+   "memo": "Le court adducteur sépare les deux rameaux du nerf obturateur : un devant, un derrière",
+   "variantes": "Souvent divisé en deux ou trois faisceaux ; peut fusionner avec le grand adducteur",
+   "sources": ["gray1918", "tma-cuisse-med", "kenhub-hanche-cuisse", "kenhub-court-adducteur", "openstax-11-6"],
+   "divergences": "Racines : L2 à L4 pour Kenhub et TeachMeAnatomy, L3 et L4 pour Gray (1918). Rotation latérale accessoire citée par Kenhub, absente chez Gray"
+  },
+  {
+   "id": "obturateur-externe",
+   "resume": "Muscle plat et profond qui recouvre en dehors le foramen obturé ; son tendon contourne le col du fémur par l'arrière : un rotateur latéral de la hanche.",
+   "origine": [
+    { "texte": "Pourtour médial du foramen obturé : branches du pubis et branche de l'ischium", "os": ["pubis", "ischium"] },
+    { "texte": "Deux tiers médiaux de la face externe de la membrane obturatrice", "os": ["membrane-obturatrice"] }
+   ],
+   "terminaison": [
+    { "texte": "Fosse trochantérique du fémur, après avoir croisé la face postérieure du col", "os": ["femur"] }
+   ],
+   "action": "Tourne la cuisse en dehors et maintient la tête du fémur dans l'acétabulum",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "adduction", "role": "accessoire" },
+    { "articulation": "hanche", "mouvement": "abduction", "role": "accessoire", "precision": "hanche fléchie" },
+    { "articulation": "hanche", "mouvement": "stabilisation", "role": "accessoire", "precision": "maintient la tête fémorale dans l'acétabulum" }
+   ],
+   "synergistes": ["obturateur-interne", "carre-femoral", "piriforme", "jumeau-inferieur"],
+   "antagonistes": ["petit-fessier", "tenseur-fascia-lata"],
+   "innervation": { "nerf": "nerf-obturateur", "texte": "Nerf obturateur (rameau postérieur)", "racines": ["L3", "L4"] },
+   "vascularisation": { "texte": "Artère obturatrice et artère circonflexe fémorale médiale", "arteres": ["artere-obturatrice", "artere-circonflexe-mediale-de-la-cuisse"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Lésion du nerf obturateur : sa paralysie s'ajoute à celle des adducteurs et affaiblit la rotation latérale de la cuisse ; aucun signe ne lui est propre",
+   "clinique": "Une bourse sépare parfois son tendon de la capsule de la hanche et communique avec l'articulation",
+   "memo": "Le seul rotateur latéral profond qui dépende du plexus lombaire (nerf obturateur) ; les autres relèvent du plexus sacral",
+   "variantes": null,
+   "sources": ["gray1918", "tma-cuisse-med", "kenhub-hanche-cuisse", "kenhub-obturateur-externe", "kenhub-rotateurs-hanche"],
+   "divergences": "Racines : L3 et L4 pour Gray et Kenhub ; TeachMeAnatomy donne celles du nerf obturateur entier (L2 à L4). Adduction accessoire citée par TeachMeAnatomy et Kenhub, abduction hanche fléchie par Kenhub"
+  },
+  {
+   "id": "pectine",
+   "resume": "Muscle plat et quadrilatère du haut de la cuisse, dans le plancher du triangle fémoral : il fléchit et rapproche la cuisse.",
+   "origine": [
+    { "texte": "Pecten du pubis, sur la branche supérieure, entre l'éminence ilio-pubienne et le tubercule pubien", "os": ["pubis"] }
+   ],
+   "terminaison": [
+    { "texte": "Ligne pectinée du fémur, tendue du petit trochanter à la ligne âpre", "os": ["femur"] }
+   ],
+   "action": "Fléchit et rapproche la cuisse",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "flexion", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "adduction", "role": "principal" }
+   ],
+   "synergistes": ["long-adducteur", "court-adducteur", "iliaque", "grand-psoas"],
+   "antagonistes": ["grand-fessier", "moyen-fessier"],
+   "innervation": { "nerf": "nerf-femoral", "texte": "Nerf fémoral ; parfois un rameau du nerf obturateur ou du nerf obturateur accessoire", "racines": ["L2", "L3"] },
+   "vascularisation": { "texte": "Artère circonflexe fémorale médiale ; rameau antérieur de l'artère obturatrice pour la partie profonde", "arteres": ["artere-circonflexe-mediale-de-la-cuisse", "artere-obturatrice"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Lésion du nerf fémoral : flexion et adduction de la cuisse à peine modifiées, car les muscles voisins et sa fréquente double innervation compensent",
+   "clinique": "Il forme la partie médiale du plancher du triangle fémoral, entre l'ilio-psoas en dehors et le long adducteur en dedans",
+   "memo": "Pecten, le peigne : à cheval sur deux loges et deux nerfs, entre les fléchisseurs (nerf fémoral) et les adducteurs (nerf obturateur)",
+   "variantes": "Souvent dédoublé en deux plans, l'un innervé par le nerf fémoral, l'autre par le nerf obturateur ; peut s'attacher à la capsule de la hanche",
+   "sources": ["gray1918", "tma-cuisse-ant", "kenhub-hanche-cuisse", "kenhub-pectine", "openstax-11-6"],
+   "divergences": "Racines : L2 et L3 pour Kenhub, L2 à L4 pour Gray (1918). Rotation de la cuisse discutée : latérale pour Gray, médiale pour OpenStax, incertaine pour Kenhub ; elle n'est pas retenue ici"
+  },
+  {
+   "id": "petit-adducteur",
+   "resume": "Partie haute et antérieure du grand adducteur, plus ou moins individualisée : un petit muscle plat tendu du pubis au haut du fémur.",
+   "origine": [
+    { "texte": "Branche inférieure du pubis, en avant du reste du grand adducteur", "os": ["pubis"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord médial de la tubérosité glutéale et partie haute de la ligne âpre du fémur", "os": ["femur"] }
+   ],
+   "action": "Rapproche la cuisse et la tourne en dehors",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "adduction", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "accessoire" }
+   ],
+   "synergistes": ["grand-adducteur", "court-adducteur", "long-adducteur", "carre-femoral"],
+   "antagonistes": ["moyen-fessier", "petit-fessier"],
+   "innervation": { "nerf": "nerf-obturateur", "texte": "Nerf obturateur", "racines": ["L2", "L3", "L4"] },
+   "vascularisation": { "texte": "Artère circonflexe fémorale médiale et première artère perforante de la fémorale profonde", "arteres": ["artere-circonflexe-mediale-de-la-cuisse", "arteres-femorales-perforantes"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit propre : son action se confond avec celle du grand adducteur, atteint avec lui dans les lésions du nerf obturateur",
+   "clinique": "La première artère perforante de la fémorale profonde passe entre lui et le reste du grand adducteur : elle marque leur limite",
+   "memo": "Le « quatrième adducteur » : la portion la plus haute du grand adducteur, aux fibres courtes et presque horizontales",
+   "variantes": "Tantôt bien séparé, tantôt partiellement ou totalement fondu dans le grand adducteur ; peut s'unir au carré fémoral",
+   "sources": ["gray1918", "kenhub-hanche-cuisse", "kenhub-grand-adducteur", "radiopaedia-petit-adducteur", "wikipedia-petit-adducteur"],
+   "divergences": "Terminaison : tubérosité glutéale (Kenhub) ou lèvre médiale de la ligne âpre (Wikipédia). Radiopaedia et Wikipédia lui prêtent aussi des fibres du nerf sciatique vers le tubercule de l'adducteur, ce qui décrit plutôt le grand adducteur entier"
+  },
+  {
+   "id": "obturateur-interne",
+   "resume": "Muscle en éventail de la paroi du petit bassin ; son tendon sort par la petite incisure ischiatique, s'y coude et gagne le grand trochanter.",
+   "origine": [
+    { "texte": "Face pelvienne de la membrane obturatrice", "os": ["membrane-obturatrice"] },
+    { "texte": "Pourtour osseux du foramen obturé, face pelvienne : branche inférieure du pubis, branche de l'ischium, surface située en arrière et au-dessus du foramen", "os": ["pubis", "ischium", "ilium"] }
+   ],
+   "terminaison": [
+    { "texte": "Face médiale du grand trochanter, au-dessus de la fosse trochantérique, par un tendon que rejoignent les deux jumeaux", "os": ["femur"] }
+   ],
+   "action": "Tourne la cuisse en dehors quand la hanche est étendue, l'écarte quand elle est fléchie ; maintient la tête du fémur dans l'acétabulum",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "principal", "precision": "hanche en extension" },
+    { "articulation": "hanche", "mouvement": "abduction", "role": "accessoire", "precision": "hanche fléchie" },
+    { "articulation": "hanche", "mouvement": "stabilisation", "role": "accessoire", "precision": "surtout hanche fléchie" }
+   ],
+   "synergistes": ["jumeau-superieur", "jumeau-inferieur", "piriforme", "carre-femoral"],
+   "antagonistes": ["petit-fessier", "tenseur-fascia-lata"],
+   "innervation": { "nerf": null, "texte": "Nerf du muscle obturateur interne (plexus sacral)", "racines": ["L5", "S1", "S2"] },
+   "vascularisation": { "texte": "Artère obturatrice ; rameaux de l'artère pudendale interne pour la partie située hors du bassin", "arteres": ["artere-obturatrice", "artere-pudendale-interne"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Atteinte isolée exceptionnelle. Avec les autres rotateurs courts, il souffre lors des fractures du col ou du grand trochanter et de la chirurgie prothétique de la hanche : douleur, boiterie",
+   "clinique": "Son tendon se réfléchit sur la petite incisure ischiatique : une bourse l'y sépare de l'os, une autre le sépare de la capsule de la hanche",
+   "memo": "Triceps coxal : l'obturateur interne et les deux jumeaux, trois corps charnus pour un seul tendon",
+   "variantes": null,
+   "sources": ["gray1918", "tma-fessiers", "kenhub-hanche-cuisse", "kenhub-obturateur-interne", "kenhub-rotateurs-hanche", "openstax-11-6"],
+   "divergences": "Racines : L5-S1 (fiche Kenhub du muscle), L5 à S2 (tableaux Kenhub) ou S1 à S3 (Gray 1918, chapitre des muscles)"
+  },
+  {
+   "id": "piriforme",
+   "resume": "Muscle en forme de poire, tendu du sacrum au grand trochanter à travers la grande incisure ischiatique : le repère de la fesse profonde.",
+   "origine": [
+    { "texte": "Face antérieure du sacrum, par trois digitations entre les foramens sacraux antérieurs, en regard des 2e, 3e et 4e vertèbres sacrales", "os": ["sacrum"] },
+    { "texte": "Bord de la grande incisure ischiatique et ligament sacro-tubéral", "os": ["ilium", "ligament-sacrotuberal"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord supérieur du grand trochanter, par un tendon rond souvent uni à celui de l'obturateur interne et des jumeaux", "os": ["femur"] }
+   ],
+   "action": "Tourne la cuisse en dehors quand la hanche est étendue, l'écarte quand elle est fléchie ; maintient la tête du fémur dans l'acétabulum",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "principal", "precision": "hanche en extension" },
+    { "articulation": "hanche", "mouvement": "abduction", "role": "accessoire", "precision": "hanche fléchie" },
+    { "articulation": "hanche", "mouvement": "stabilisation", "role": "accessoire", "precision": "maintient la tête fémorale dans l'acétabulum" }
+   ],
+   "synergistes": ["obturateur-interne", "jumeau-superieur", "jumeau-inferieur", "carre-femoral"],
+   "antagonistes": ["petit-fessier", "tenseur-fascia-lata"],
+   "innervation": { "nerf": "nerf-du-muscle-piriforme", "texte": "Nerf du muscle piriforme (rameaux antérieurs de S1 et S2)", "racines": ["S1", "S2"] },
+   "vascularisation": { "texte": "Artères glutéales supérieure et inférieure, artère pudendale interne", "arteres": ["artere-gluteale-superieure", "artere-gluteale-inferieure", "artere-pudendale-interne"] },
+   "palpation": "Profond : on ne le perçoit qu'indirectement, à travers le grand fessier, vers la grande incisure ischiatique",
+   "test": null,
+   "atteinte": "Syndrome du piriforme : le muscle comprime le nerf sciatique à sa sortie du bassin, d'où une douleur de fesse irradiant dans le membre sans cause discale ; diagnostic clinique, souvent méconnu",
+   "clinique": "Il partage la grande incisure ischiatique : nerf et vaisseaux glutéaux supérieurs sortent au-dessus de lui ; nerf sciatique, nerf et vaisseaux glutéaux inférieurs au-dessous",
+   "memo": "Pirum, la poire. La clé de la fesse : tout ce qui sort du bassin passe au-dessus ou au-dessous de lui",
+   "variantes": "Chez une personne sur cinq environ, selon StatPearls, tout ou partie du nerf sciatique (souvent le contingent fibulaire commun) traverse le muscle ; il peut fusionner avec le moyen fessier",
+   "sources": ["gray1918", "tma-fessiers", "kenhub-hanche-cuisse", "statpearls-piriforme", "physiopedia-piriforme", "openstax-11-6"],
+   "divergences": "Origine sur l'ilium (bord de la grande incisure) citée par Gray, Kenhub et StatPearls, omise par TeachMeAnatomy et OpenStax. Racines S1-S2 partout ; StatPearls signale S2 seul ou L5 à S2 chez certains"
+  },
+  {
+   "id": "court-fibulaire",
+   "resume": "Le muscle profond de la loge latérale de la jambe : son tendon passe derrière la malléole latérale et s'attache à la base du 5e métatarsien.",
+   "origine": [
+    { "texte": "Deux tiers inférieurs de la face latérale de la fibula, en avant du long fibulaire", "os": ["fibula"] },
+    { "texte": "Septums intermusculaires antérieur et postérieur de la jambe", "os": ["septum-intermusculaire-anterieur-de-la-jambe", "septum-intermusculaire-posterieur-de-la-jambe"] }
+   ],
+   "terminaison": [
+    { "texte": "Tubérosité de la base du 5e métatarsien, sur son côté latéral", "os": ["cinquieme-metatarsien"] }
+   ],
+   "action": "Tourne la plante du pied en dehors (éversion) ; aide faiblement à fléchir la cheville vers la plante",
+   "actions": [
+    { "articulation": "subtalaire", "mouvement": "eversion", "role": "principal" },
+    { "articulation": "cheville", "mouvement": "flexion-plantaire", "role": "accessoire", "precision": "faible" }
+   ],
+   "synergistes": ["long-fibulaire", "troisieme-fibulaire"],
+   "antagonistes": ["tibial-posterieur", "tibial-anterieur"],
+   "innervation": { "nerf": "nerf-fibulaire-superficiel", "texte": "Nerf fibulaire superficiel", "racines": ["L5", "S1", "S2"] },
+   "vascularisation": { "texte": "Artère fibulaire ; rameaux de l'artère tibiale antérieure", "arteres": ["fibulaire", "tibiale-anterieure"] },
+   "palpation": "Son tendon se suit de l'arrière de la malléole latérale, où il passe en avant de celui du long fibulaire, jusqu'à la saillie de la base du 5e métatarsien",
+   "test": "Éversion du pied contre résistance",
+   "atteinte": "Lésion du nerf fibulaire superficiel : éversion perdue, le pied part en dedans. Lors d'une entorse latérale, son tendon peut se fissurer en long ou se luxer en avant de la malléole",
+   "clinique": "Dans une entorse en inversion, sa traction peut arracher la tubérosité du 5e métatarsien : y penser devant une douleur du bord latéral du pied",
+   "memo": "Court fibulaire, cinquième métatarsien : il s'arrête au bord latéral du pied, quand le long traverse toute la plante",
+   "variantes": "Un quatrième fibulaire surnuméraire, né le plus souvent du court fibulaire, existe chez 5 à 20 % des personnes ; corps charnu descendant parfois très bas derrière la malléole",
+   "sources": ["gray1918", "tma-jambe-lat", "kenhub-fibulaires", "statpearls-court-fibulaire", "kenhub-jambe-fr", "openstax-11-6"],
+   "divergences": "Racines : L5-S1 (Kenhub), L5 à S2 (StatPearls) ou L4 à S1 (Gray 1918). Flexion plantaire comptée par Gray, StatPearls et OpenStax, non retenue par TeachMeAnatomy"
+  },
+  {
+   "id": "long-extenseur-hallux",
+   "resume": "Muscle mince de la loge antérieure de la jambe, entre le tibial antérieur et le long extenseur des orteils : il relève le gros orteil et aide à relever le pied.",
+   "origine": [
+    { "texte": "Partie moyenne de la face médiale de la fibula, en dedans de l'origine du long extenseur des orteils", "os": ["fibula"] },
+    { "texte": "Membrane interosseuse voisine", "os": ["membrane-interosseuse-de-la-jambe"] }
+   ],
+   "terminaison": [
+    { "texte": "Face dorsale de la base de la phalange distale de l'hallux", "os": ["phalange-distale-du-premier-doigt-de-pied"] },
+    { "texte": "Expansion fréquente à la base de la phalange proximale", "os": ["phalange-proximale-du-premier-doigt-de-pied"] }
+   ],
+   "action": "Étend le gros orteil et aide à relever le pied (flexion dorsale)",
+   "actions": [
+    { "articulation": "hallux-ip", "mouvement": "extension", "role": "principal" },
+    { "articulation": "hallux-mtp", "mouvement": "extension", "role": "principal" },
+    { "articulation": "cheville", "mouvement": "flexion-dorsale", "role": "accessoire" }
+   ],
+   "synergistes": ["court-extenseur-de-l-hallux", "tibial-anterieur", "long-extenseur-orteils"],
+   "antagonistes": ["long-flechisseur-hallux", "court-flechisseur-de-l-hallux"],
+   "innervation": { "nerf": "nerf-fibulaire-profond", "texte": "Nerf fibulaire profond", "racines": ["L5", "S1"] },
+   "vascularisation": { "texte": "Artère tibiale antérieure", "arteres": ["tibiale-anterieure"] },
+   "palpation": "Son tendon saille sur le dos du pied quand on relève le gros orteil, juste en dehors du tendon du tibial antérieur",
+   "test": "Extension du gros orteil contre résistance appliquée sur la phalange distale",
+   "atteinte": "Paralysie (nerf fibulaire profond) : le gros orteil ne se relève plus et reste fléchi. Une faiblesse isolée fait rechercher une atteinte de la racine L5, par exemple une hernie discale",
+   "clinique": "Repère du pouls pédieux : l'artère dorsale du pied bat entre son tendon et ceux du long extenseur des orteils. Entre son tendon et celui du tibial antérieur, on ponctionne la cheville",
+   "memo": "Le témoin de L5 : un gros orteil qui ne se relève plus fait penser à cette racine",
+   "variantes": "Peut s'unir à son origine au long extenseur des orteils ; un faisceau accessoire se fixe parfois sur le 1er métatarsien",
+   "sources": ["gray1918", "tma-jambe-ant", "kenhub-jambe", "kenhub-long-extenseur-hallux", "kenhub-jambe-fr", "openstax-11-6"],
+   "divergences": "Racines : L5 et S1 pour Kenhub (L5 seul dans sa version française), L4 à S1 pour Gray (1918). Origine : moitié moyenne de la fibula pour Gray, tiers moyen pour Kenhub"
+  },
+  {
+   "id": "long-flechisseur-hallux",
+   "resume": "Le plus latéral des fléchisseurs profonds de la jambe : il fléchit le gros orteil et donne la dernière poussée du pas.",
+   "origine": [
+    { "texte": "Deux tiers inférieurs de la face postérieure de la fibula, sauf ses derniers centimètres", "os": ["fibula"] },
+    { "texte": "Partie basse de la membrane interosseuse, septum intermusculaire postérieur et fascia du tibial postérieur", "os": ["membrane-interosseuse-de-la-jambe", "septum-intermusculaire-posterieur-de-la-jambe"] }
+   ],
+   "terminaison": [
+    { "texte": "Face plantaire de la base de la phalange distale de l'hallux", "os": ["phalange-distale-du-premier-doigt-de-pied"] }
+   ],
+   "action": "Fléchit le gros orteil ; aide à fléchir la cheville vers la plante, à tourner la plante en dedans et à soutenir l'arche médiale",
+   "actions": [
+    { "articulation": "hallux-ip", "mouvement": "flexion", "role": "principal" },
+    { "articulation": "hallux-mtp", "mouvement": "flexion", "role": "principal" },
+    { "articulation": "cheville", "mouvement": "flexion-plantaire", "role": "accessoire" },
+    { "articulation": "subtalaire", "mouvement": "inversion", "role": "accessoire" }
+   ],
+   "synergistes": ["court-flechisseur-de-l-hallux", "long-flechisseur-orteils", "tibial-posterieur", "soleaire"],
+   "antagonistes": ["long-extenseur-hallux", "court-extenseur-de-l-hallux"],
+   "innervation": { "nerf": "nerf-tibial", "texte": "Nerf tibial", "racines": ["S2", "S3"] },
+   "vascularisation": { "texte": "Artère fibulaire ; rameaux de l'artère tibiale postérieure", "arteres": ["fibulaire", "tibiale-posterieure"] },
+   "palpation": null,
+   "test": "Flexion de la phalange distale du gros orteil contre résistance, la première phalange étant maintenue",
+   "atteinte": "Paralysie (nerf tibial) : le gros orteil ne se fléchit plus, la poussée de fin de pas faiblit. Chez le danseur, la flexion plantaire extrême répétée enflamme son tendon, qui accroche (orteil à ressaut)",
+   "clinique": "Dans le canal tarsien, son tendon est le plus latéral, contre le nerf tibial ; il glisse dans un sillon du talus puis sous le sustentaculum tali",
+   "memo": "Né en dehors, sur la fibula, il finit en dedans, sur le gros orteil : il croise le long fléchisseur des orteils sous la plante",
+   "variantes": "Envoie presque toujours une bandelette au tendon du long fléchisseur des orteils",
+   "sources": ["gray1918", "tma-jambe-post", "kenhub-jambe", "kenhub-jambe-post-prof", "kenhub-long-flechisseur-hallux", "openstax-11-6"],
+   "divergences": "Racines : S2-S3 dans les tableaux de Kenhub (L4 à S3 dans son texte), L5 à S2 pour Gray (1918)"
+  },
+  {
+   "id": "long-flechisseur-orteils",
+   "resume": "Le plus médial des fléchisseurs profonds de la jambe : son tendon passe derrière la malléole médiale et se divise en quatre pour les orteils 2 à 5.",
+   "origine": [
+    { "texte": "Face postérieure du tibia, sous la ligne du muscle soléaire, en dedans de l'origine du tibial postérieur", "os": ["tibia"] },
+    { "texte": "Fascia qui recouvre le tibial postérieur", "os": [] }
+   ],
+   "terminaison": [
+    { "texte": "Face plantaire de la base de la phalange distale des orteils 2 à 5 ; chaque tendon traverse celui du court fléchisseur", "os": ["phalange-distale-du-deuxieme-doigt-de-pied", "phalange-distale-du-troisieme-doigt-de-pied", "phalange-distale-du-quatrieme-doigt-de-pied", "phalange-distale-du-cinquieme-doigt-de-pied"] }
+   ],
+   "action": "Fléchit les quatre derniers orteils ; aide à fléchir la cheville vers la plante et à tourner la plante en dedans",
+   "actions": [
+    { "articulation": "orteils-ip", "mouvement": "flexion", "role": "principal" },
+    { "articulation": "orteils-mtp", "mouvement": "flexion", "role": "accessoire" },
+    { "articulation": "cheville", "mouvement": "flexion-plantaire", "role": "accessoire" },
+    { "articulation": "subtalaire", "mouvement": "inversion", "role": "accessoire" }
+   ],
+   "synergistes": ["court-flechisseur-orteils", "carre-plantaire", "long-flechisseur-hallux", "tibial-posterieur"],
+   "antagonistes": ["long-extenseur-orteils", "court-extenseur-orteils"],
+   "innervation": { "nerf": "nerf-tibial", "texte": "Nerf tibial", "racines": ["L5", "S1", "S2"] },
+   "vascularisation": { "texte": "Artère tibiale postérieure", "arteres": ["tibiale-posterieure"] },
+   "palpation": null,
+   "test": "Flexion des phalanges distales des orteils 2 à 5 contre résistance, les premières phalanges étant maintenues",
+   "atteinte": "Paralysie (nerf tibial) : les orteils ne se fléchissent plus et n'agrippent plus le sol ; équilibre sur l'avant-pied et poussée du pas diminués",
+   "clinique": "Son tendon passe derrière la malléole médiale, sous le rétinaculum des fléchisseurs ; à la plante, il reçoit le carré plantaire et donne naissance aux lombricaux",
+   "memo": "Le « perforant » : chacun de ses tendons traverse la boutonnière du court fléchisseur avant d'atteindre la dernière phalange",
+   "variantes": "Un long fléchisseur accessoire, né de la fibula ou du tibia, rejoint parfois son tendon ou le carré plantaire",
+   "sources": ["gray1918", "tma-jambe-post", "kenhub-jambe", "kenhub-jambe-post-prof", "kenhub-long-flechisseur-orteils", "kenhub-jambe-fr", "openstax-11-6"],
+   "divergences": "Racines très variables selon les références : L5 à S2 (fiche Kenhub du muscle), S1-S2 (tableaux Kenhub), L5-S1 (Gray 1918) ; la première version de la fiche donnait S2-S3"
+  },
+  {
+   "id": "poplite",
+   "resume": "Petit muscle triangulaire et profond de l'arrière du genou : il déverrouille le genou tendu pour amorcer la flexion.",
+   "origine": [
+    { "texte": "Face latérale du condyle latéral du fémur, dans une fossette, par un tendon fort long d'environ 2,5 cm", "os": ["femur"] },
+    { "texte": "Corne postérieure du ménisque latéral", "os": ["menisque-lateral"] }
+   ],
+   "terminaison": [
+    { "texte": "Face postérieure du tibia, au-dessus de la ligne du muscle soléaire (deux tiers médiaux de la surface triangulaire)", "os": ["tibia"] }
+   ],
+   "action": "Déverrouille le genou tendu : pied au sol, il tourne le fémur en dehors sur le tibia ; pied libre, il tourne le tibia en dedans. Aide à fléchir le genou",
+   "actions": [
+    { "articulation": "genou", "mouvement": "rotation-mediale", "role": "principal", "precision": "de la jambe sous la cuisse ; pied au sol, c'est le fémur qui tourne en dehors (déverrouillage)" },
+    { "articulation": "genou", "mouvement": "flexion", "role": "accessoire" },
+    { "articulation": "genou", "mouvement": "stabilisation", "role": "accessoire", "precision": "angle postéro-latéral ; tire le ménisque latéral en arrière pendant la flexion" }
+   ],
+   "synergistes": ["semi-tendineux", "semi-membraneux", "gracile", "sartorius"],
+   "antagonistes": ["biceps-femoral"],
+   "innervation": { "nerf": "nerf-tibial", "texte": "Nerf tibial", "racines": ["L4", "L5", "S1"] },
+   "vascularisation": { "texte": "Artères inférieures médiale et latérale du genou, branches de l'artère poplitée", "arteres": ["artere-inferomediale-du-genou", "artere-inferolaterale-du-genou", "poplitee"] },
+   "palpation": "Corps charnu inaccessible, caché sous les vaisseaux et les nerfs du creux poplité ; seule la terminaison de son tendon se palpe",
+   "test": "Test de Garrick : hanche et genou fléchis à 90°, rotation latérale de la jambe contre résistance ; la douleur signe l'atteinte du muscle",
+   "atteinte": "Rarement lésé seul : il se rompt avec le ligament croisé antérieur, le ménisque latéral ou les structures postéro-latérales du genou ; le tibia tourne alors trop en dehors à la flexion",
+   "clinique": "Sa tendinopathie donne une douleur postéro-latérale du genou, typiquement à la course en descente",
+   "memo": "La clé du genou : une petite rotation pour ouvrir le verrou de l'extension complète",
+   "variantes": "Chef surnuméraire venu d'un sésamoïde du chef latéral du gastrocnémien ; un petit muscle fibulo-tibial double sa face profonde chez environ une personne sur sept",
+   "sources": ["gray1918", "tma-jambe-post", "kenhub-jambe-post-prof", "kenhub-poplite", "physiopedia-poplite", "openstax-11-6"],
+   "divergences": "Racines : L4 à S1 pour Gray, la fiche Kenhub du muscle et Physiopedia ; L5 à S2 dans les tableaux généraux de Kenhub"
+  },
+  {
+   "id": "tibial-posterieur",
+   "resume": "Le plus profond des muscles de la loge postérieure de la jambe : il tourne la plante en dedans et soutient la voûte plantaire médiale.",
+   "origine": [
+    { "texte": "Face postérieure de la membrane interosseuse", "os": ["membrane-interosseuse-de-la-jambe"] },
+    { "texte": "Face postérieure du tibia, dans sa partie latérale, sous la ligne du muscle soléaire", "os": ["tibia"] },
+    { "texte": "Deux tiers supérieurs de la face médiale de la fibula", "os": ["fibula"] }
+   ],
+   "terminaison": [
+    { "texte": "Tubérosité de l'os naviculaire, son attache principale", "os": ["naviculaire"] },
+    { "texte": "Expansions plantaires aux trois cunéiformes, au cuboïde, aux bases des métatarsiens 2 à 4 et au sustentaculum tali", "os": ["os-cuneiforme-medial", "os-cuneiforme-intermediaire", "os-cuneiforme-lateral", "cuboide", "deuxieme-os-metatarsien", "troisieme-metatarsien", "quatrieme-metatarsien", "calcaneus"] }
+   ],
+   "action": "Tourne la plante du pied en dedans (inversion) et aide à fléchir la cheville vers la plante ; soutient l'arche médiale du pied",
+   "actions": [
+    { "articulation": "subtalaire", "mouvement": "inversion", "role": "principal" },
+    { "articulation": "cheville", "mouvement": "flexion-plantaire", "role": "accessoire" }
+   ],
+   "synergistes": ["tibial-anterieur", "long-flechisseur-orteils", "long-flechisseur-hallux", "soleaire"],
+   "antagonistes": ["long-fibulaire", "court-fibulaire", "troisieme-fibulaire"],
+   "innervation": { "nerf": "nerf-tibial", "texte": "Nerf tibial", "racines": ["L4", "L5"] },
+   "vascularisation": { "texte": "Artère tibiale postérieure ; artère fibulaire", "arteres": ["tibiale-posterieure", "fibulaire"] },
+   "palpation": "Son tendon se sent juste derrière la malléole médiale, puis vers la tubérosité du naviculaire, pied en inversion contre résistance",
+   "test": "Inversion du pied contre résistance, cheville en flexion plantaire",
+   "atteinte": "Insuffisance ou rupture de son tendon : l'arche médiale s'affaisse — c'est la cause la plus probable de la plupart des pieds plats acquis de l'adulte",
+   "clinique": "Dans le pied tombant par paralysie des releveurs, on peut transférer son tendon sur le dos du pied pour retrouver une flexion dorsale",
+   "memo": "Le hauban de la voûte : accroché au naviculaire, clé de l'arche médiale, il la retient à chaque appui",
+   "variantes": null,
+   "sources": ["gray1918", "tma-jambe-post", "kenhub-jambe", "kenhub-jambe-post-prof", "kenhub-tibial-posterieur", "physiopedia-tibial-posterieur", "openstax-11-6"],
+   "divergences": "Racines : L4 et L5 pour Kenhub ; L5 et S1 pour Gray (1918) ; Physiopedia donne celles du nerf tibial entier (L4 à S3)"
+  },
+  {
+   "id": "abducteur-hallux",
+   "resume": "Muscle du bord médial de la plante, du talon au gros orteil : il écarte et fléchit le gros orteil et soutient l'arche médiale.",
+   "origine": [
+    { "texte": "Processus médial de la tubérosité du calcanéus", "os": ["calcaneus"] },
+    { "texte": "Rétinaculum des fléchisseurs et aponévrose plantaire", "os": ["retinaculum-des-flechisseurs", "aponevrose-plantaire"] }
+   ],
+   "terminaison": [
+    { "texte": "Côté médial de la base de la phalange proximale de l'hallux, avec le tendon médial du court fléchisseur", "os": ["phalange-proximale-du-premier-doigt-de-pied"] }
+   ],
+   "action": "Écarte le gros orteil du deuxième et aide à le fléchir à sa base ; soutient l'arche médiale du pied",
+   "actions": [
+    { "articulation": "hallux-mtp", "mouvement": "abduction", "role": "principal" },
+    { "articulation": "hallux-mtp", "mouvement": "flexion", "role": "accessoire" }
+   ],
+   "synergistes": ["court-flechisseur-de-l-hallux", "long-flechisseur-hallux"],
+   "antagonistes": ["adducteur-de-l-hallux"],
+   "innervation": { "nerf": "nerf-plantaire-medial", "texte": "Nerf plantaire médial", "racines": ["S1", "S2", "S3"] },
+   "vascularisation": { "texte": "Artère plantaire médiale ; première artère métatarsienne plantaire", "arteres": ["artere-plantaire-mediale", "arteres-metatarsiennes-plantaires"] },
+   "palpation": "Le long du bord médial du pied, entre le talon et la base du gros orteil",
+   "test": "Écartement du gros orteil, vers le dedans du pied, contre résistance",
+   "atteinte": "Paralysie (nerf plantaire médial) ou insuffisance : le gros orteil n'est plus retenu en dedans, ce qui favorise sa déviation en hallux valgus",
+   "clinique": "Le nerf plantaire médial s'engage sous lui : il peut y être comprimé, par exemple lors d'éversions répétées du pied (gymnastes), d'où douleurs et fourmillements du bord médial de la plante",
+   "memo": "Le muscle du bord médial du pied : il tire le gros orteil vers l'autre pied, à l'opposé de l'hallux valgus",
+   "variantes": "Envoie parfois un faisceau à la base de la phalange proximale du 2e orteil",
+   "sources": ["gray1918", "tma-pied", "kenhub-pied", "kenhub-abducteur-hallux", "statpearls-muscles-pied", "openstax-11-6"],
+   "divergences": "Racines : S1 à S3 pour Kenhub, seule référence consultée à les préciser ; la première version de la fiche donnait S1-S2"
+  },
+  {
+   "id": "abducteur-petit-orteil",
+   "resume": "Muscle du bord latéral de la plante, du talon au petit orteil : il écarte et fléchit le petit orteil.",
+   "origine": [
+    { "texte": "Processus latéral et processus médial de la tubérosité du calcanéus", "os": ["calcaneus"] },
+    { "texte": "Aponévrose plantaire et septum intermusculaire voisin", "os": ["aponevrose-plantaire"] }
+   ],
+   "terminaison": [
+    { "texte": "Côté latéral de la base de la phalange proximale du 5e orteil, avec le court fléchisseur du petit orteil", "os": ["phalange-proximale-du-cinquieme-doigt-de-pied"] }
+   ],
+   "action": "Écarte le petit orteil du quatrième et aide à le fléchir à sa base ; soutient l'arche latérale du pied",
+   "actions": [
+    { "articulation": "orteils-mtp", "mouvement": "abduction", "role": "principal", "precision": "5e orteil" },
+    { "articulation": "orteils-mtp", "mouvement": "flexion", "role": "accessoire", "precision": "5e orteil" }
+   ],
+   "synergistes": ["flechisseur-du-petit-doigt", "interosseux-dorsaux-du-pied"],
+   "antagonistes": ["interosseux-plantaires"],
+   "innervation": { "nerf": "nerf-plantaire-lateral", "texte": "Nerf plantaire latéral", "racines": ["S1", "S2", "S3"] },
+   "vascularisation": { "texte": "Artère plantaire latérale", "arteres": ["artere-plantaire-laterale"] },
+   "palpation": "Le long du bord latéral du pied, entre le talon et la base du 5e métatarsien, sous laquelle glisse son tendon",
+   "test": "Écartement du petit orteil contre résistance",
+   "atteinte": "Paralysie (nerf plantaire latéral) : le petit orteil ne s'écarte plus ; déficit sans retentissement notable sur la marche",
+   "clinique": null,
+   "memo": "Le pendant de l'abducteur de l'hallux : à eux deux, ils bordent la plante de part et d'autre du court fléchisseur des orteils",
+   "variantes": "Un faisceau se fixe parfois sur la tubérosité du 5e métatarsien (abducteur de l'os du 5e métatarsien)",
+   "sources": ["gray1918", "tma-pied", "kenhub-pied", "kenhub-pied-fr", "statpearls-muscles-pied", "openstax-11-6"],
+   "divergences": "Terminaison : phalange proximale pour Gray et TeachMeAnatomy, base du 5e métatarsien pour StatPearls ; Kenhub cite les deux. Racines S1 à S3 données par Kenhub seul"
+  },
+  {
+   "id": "court-extenseur-orteils",
+   "resume": "Le seul corps charnu du dos du pied (l'ancien « pédieux ») : il renforce l'extension des orteils 2, 3 et 4.",
+   "origine": [
+    { "texte": "Partie antérieure des faces supérieure et latérale du calcanéus, en avant du sillon du court fibulaire", "os": ["calcaneus"] },
+    { "texte": "Racine du rétinaculum inférieur des extenseurs et ligament talo-calcanéen voisin", "os": ["retinaculum-inferieur-des-extenseurs"] }
+   ],
+   "terminaison": [
+    { "texte": "Trois tendons unis au bord latéral des tendons du long extenseur des orteils 2, 3 et 4", "os": ["tendons-extenseurs-orteils"] }
+   ],
+   "action": "Aide le long extenseur à étendre les orteils 2, 3 et 4 et corrige l'obliquité de sa traction",
+   "actions": [
+    { "articulation": "orteils-mtp", "mouvement": "extension", "role": "principal", "precision": "orteils 2 à 4" },
+    { "articulation": "orteils-ip", "mouvement": "extension", "role": "accessoire", "precision": "orteils 2 à 4, avec le long extenseur" }
+   ],
+   "synergistes": ["long-extenseur-orteils", "court-extenseur-de-l-hallux", "lombricaux-du-pied"],
+   "antagonistes": ["court-flechisseur-orteils", "long-flechisseur-orteils"],
+   "innervation": { "nerf": "nerf-fibulaire-profond", "texte": "Nerf fibulaire profond (branche terminale latérale)", "racines": ["L5", "S1"] },
+   "vascularisation": { "texte": "Artère dorsale du pied ; artère malléolaire antéro-latérale (tibiale antérieure) et rameau perforant de l'artère fibulaire", "arteres": ["dorsale-du-pied", "tibiale-anterieure", "fibulaire"] },
+   "palpation": "Petite masse charnue sur le dos du pied, en avant de la malléole latérale, qui gonfle quand on relève les orteils",
+   "test": "Extension des orteils contre résistance en regardant et palpant son relief, comparé à celui du côté opposé",
+   "atteinte": "Paralysie (nerf fibulaire profond) : son relief s'efface, mais l'extension des orteils reste assurée pour l'essentiel par le long extenseur",
+   "clinique": "Sa fonte, visible sur le dos du pied, fait rechercher une cause neurologique telle qu'un canal lombaire étroit. Il sert aussi de lambeau pour couvrir de petites pertes de substance",
+   "memo": "Si une petite boule gonfle devant la malléole latérale quand on lève les orteils, c'est lui : le seul muscle du dos du pied",
+   "variantes": "Nombre de tendons variable ; faisceaux accessoires venus du talus ou du naviculaire ; tendon surnuméraire pour le 5e orteil",
+   "sources": ["gray1918", "tma-pied", "kenhub-pied", "kenhub-court-extenseur-orteils", "physiopedia-court-extenseur-orteils", "statpearls-muscles-pied", "openstax-11-6"],
+   "divergences": "Racines : L5-S1 (fiche Kenhub du muscle) ou S1-S2 (tableau Kenhub du pied, Physiopedia). Terminaison : tendons du long extenseur pour Gray et TeachMeAnatomy, phalanges moyennes ou proximales selon Kenhub et StatPearls"
+  },
+  {
+   "id": "court-flechisseur-orteils",
+   "resume": "Muscle superficiel du milieu de la plante, juste sous l'aponévrose plantaire : il fléchit la phalange moyenne des orteils 2 à 5.",
+   "origine": [
+    { "texte": "Processus médial de la tubérosité du calcanéus", "os": ["calcaneus"] },
+    { "texte": "Partie centrale de l'aponévrose plantaire et septums intermusculaires voisins", "os": ["aponevrose-plantaire"] }
+   ],
+   "terminaison": [
+    { "texte": "Quatre tendons, chacun fendu en deux languettes qui laissent passer le tendon du long fléchisseur et se fixent sur les bords de la phalange moyenne des orteils 2 à 5", "os": ["phalange-moyenne-du-deuxieme-doigt-de-pied", "phalange-moyenne-du-troiseme-doigt-de-pied", "phalange-moyenne-du-quatrieme-doigt-de-pied", "phalange-moyenne-du-cinqueme-doigt-de-pied"] }
+   ],
+   "action": "Fléchit la phalange moyenne des orteils 2 à 5, puis leur base ; soutient la voûte longitudinale du pied",
+   "actions": [
+    { "articulation": "orteils-ip", "mouvement": "flexion", "role": "principal", "precision": "articulation interphalangienne proximale" },
+    { "articulation": "orteils-mtp", "mouvement": "flexion", "role": "accessoire" }
+   ],
+   "synergistes": ["long-flechisseur-orteils", "carre-plantaire", "lombricaux-du-pied"],
+   "antagonistes": ["long-extenseur-orteils", "court-extenseur-orteils"],
+   "innervation": { "nerf": "nerf-plantaire-medial", "texte": "Nerf plantaire médial", "racines": ["S1", "S2", "S3"] },
+   "vascularisation": { "texte": "Artère plantaire médiale", "arteres": ["artere-plantaire-mediale"] },
+   "palpation": null,
+   "test": "Flexion des phalanges moyennes des orteils 2 à 5 contre résistance, phalanges distales relâchées",
+   "atteinte": "Paralysie (nerf plantaire médial) : la flexion des orteils faiblit, l'avant-pied agrippe moins bien le sol",
+   "clinique": "Il naît avec l'aponévrose plantaire sur le calcanéus : c'est là que siège la douleur du talon de l'aponévrosite plantaire, parfois accompagnée d'une épine calcanéenne à la radiographie",
+   "memo": "Le « perforé » du pied, équivalent du fléchisseur superficiel des doigts : le tendon du long fléchisseur passe à travers le sien",
+   "variantes": "Le tendon du petit orteil manque chez près d'une personne sur quatre, ou naît d'un petit faisceau détaché du long fléchisseur ou du carré plantaire",
+   "sources": ["gray1918", "tma-pied", "kenhub-pied", "kenhub-plante-centrale", "statpearls-muscles-pied", "openstax-11-6"],
+   "divergences": "OpenStax limite son action aux orteils 2 à 4 ; les autres références vont jusqu'au 5e. Racines S1 à S3 données par Kenhub seul ; la première version de la fiche donnait S1-S2"
+  }
+ ]
+}

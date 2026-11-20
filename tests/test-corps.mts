@@ -6,6 +6,9 @@ import { ELEMENTS, PAR_ID, vautPour } from "../src/lib/corps/catalogue";
 import manifeste from "../src/lib/corps/modele/manifeste.json";
 import { CALQUES, Modele, calqueDElement } from "../src/lib/corps/modele/modele";
 import { lirePaquet, OCTETS_PAR_SOMMET } from "../src/lib/corps/modele/paquet";
+import { DDL } from "../src/lib/corps/mouvement/articulations";
+import { gesteDe, programmeDe } from "../src/lib/corps/mouvement/gestes";
+import { NB_AXIAUX, NB_LATERAUX, NB_SEGMENTS, type Pose, appliquer, numero, pointMesure, poser } from "../src/lib/corps/mouvement/squelette";
 import { ELEMENTS_APPRIS, IDS_CATEGORIES, niveauxDe, titreDuJoueur, TITRES } from "../src/lib/corps/niveaux";
 import { article, defiDuJour, fabriquer, METHODES, partieDeNiveau, questionMelangee, typesPossibles, type TypeQ } from "../src/lib/corps/quiz";
 import { jugerNom, normaliser } from "../src/lib/corps/texte";
@@ -156,6 +159,61 @@ ok("une autre structure : faux", jugerNom(el("biceps-brachial"), "triceps brachi
 ok("le mot de genre peut manquer, mais pas être faux", jugerNom(el("femorale"), "fémorale") === "juste" && jugerNom(el("femorale"), "artère fémorale") === "juste" && jugerNom(el("femorale"), "veine fémorale") === "faux" && jugerNom(el("deltoide"), "muscle deltoïde") === "juste");
 ok("le singulier vaut le pluriel", normaliser("Vertèbres lombaires") === normaliser("vertèbre lombaire"));
 ok("les articles : l', la, les", article(el("aorte")) === "l'aorte" && article(el("clavicule")) === "la clavicule" && article(el("intercostaux")) === "les intercostaux" && article(el("biceps-brachial")) === "le biceps brachial");
+
+/* ---------- Le squelette ---------- */
+type P3 = [number, number, number];
+/** Où passe un point mesuré quand on pose le squelette : le point est emmené par le segment nommé. */
+const passe = (pose: Pose, segment: string, point: string, cote: "g" | "d" = "g"): P3 => appliquer(poser(pose), pointMesure(point, cote), numero(segment, cote) * 12);
+const repos = (point: string, cote: "g" | "d" = "g") => pointMesure(point, cote);
+const vocabulaire = lire("../scripts/corps/donnees/fiches/vocabulaire.json") as { articulations: Record<string, string>; mouvements: Record<string, string> };
+ok("le squelette tient dans un octet par segment", NB_SEGMENTS === NB_AXIAUX + 2 * NB_LATERAUX && NB_SEGMENTS <= 255, String(NB_SEGMENTS));
+ok("au repos, rien ne bouge", Array.from(poser({})).every((v, i) => Math.abs(v - (i % 12 === 0 || i % 12 === 5 || i % 12 === 10 ? 1 : 0)) < 1e-9));
+{
+  const alea: Pose = {};
+  let g = 7;
+  for (const d of DDL) for (const cle of d.lateral ? [`${d.id}:g`, `${d.id}:d`] : [d.id]) alea[cle] = d.min + (((g = (g * 16807) % 2147483647) % 1000) / 1000) * (d.max - d.min);
+  const m = poser(alea);
+  let pire = 0;
+  for (let s = 0; s < NB_SEGMENTS; s++) {
+    const [a, b, c, , d, e, f, , gg, h, i] = Array.from(m.subarray(s * 12, s * 12 + 12));
+    pire = Math.max(pire, Math.abs(a * (e * i - f * h) - b * (d * i - f * gg) + c * (d * h - e * gg) - 1));
+  }
+  ok("une pose quelconque ne déforme aucun os (rotations pures)", pire < 1e-3, String(pire));
+}
+const poignet = passe({ "coude.flexion:g": 90 }, "main", "main");
+ok("fléchir le coude amène la main en avant et en haut", poignet[2] > repos("main")[2] + 0.12 && poignet[1] > repos("main")[1] + 0.12, poignet.map((v) => v.toFixed(2)).join());
+const poignetD = passe({ "coude.flexion:d": 90 }, "main", "main", "d");
+ok("le côté droit est le miroir du gauche", Math.abs(poignetD[0] + poignet[0]) < 1e-6 && Math.abs(poignetD[1] - poignet[1]) < 1e-6 && Math.abs(poignetD[2] - poignet[2]) < 1e-6);
+ok("fléchir le genou emmène le pied en arrière", passe({ "genou.flexion:g": 90 }, "talus", "talus")[2] < repos("talus")[2] - 0.2);
+ok("l'abduction de la hanche écarte le genou", passe({ "hanche.abduction:g": 40 }, "jambe", "jambe")[0] > repos("jambe")[0] + 0.15 && passe({ "hanche.abduction:d": 40 }, "jambe", "jambe", "d")[0] < repos("jambe", "d")[0] - 0.15);
+ok("fléchir la hanche lève le genou devant", passe({ "hanche.flexion:g": 90 }, "jambe", "jambe")[2] > repos("jambe")[2] + 0.3);
+const coudeLeve = passe({ "epaule.abduction:g": 90 }, "ulna", "ulna");
+ok("l'abduction de l'épaule à 90° met le coude à hauteur d'épaule, en dehors", Math.abs(coudeLeve[1] - repos("humerus")[1]) < 0.09 && coudeLeve[0] > repos("ulna")[0] + 0.15, coudeLeve.map((v) => v.toFixed(2)).join());
+ok("au-delà de 30°, la scapula accompagne le bras (rythme scapulo-huméral)", passe({ "epaule.abduction:g": 150 }, "scapula", "scapula.angle")[0] > repos("scapula.angle")[0] + 0.03 && Math.abs(passe({ "epaule.abduction:g": 25 }, "scapula", "scapula.angle")[0] - repos("scapula.angle")[0]) < 1e-6);
+ok("la pronation fait passer le pouce en dedans", passe({ "avant-bras.pronation:g": 150 }, "pouce-mc", "pouce-mc")[0] < repos("pouce-mc")[0] - 0.02);
+ok("la flexion dorsale relève la pointe du pied", passe({ "cheville.flexion:g": 20 }, "hallux-p1", "hallux-p1")[1] > repos("hallux-p1")[1] + 0.02 && passe({ "cheville.flexion:g": -40 }, "hallux-p1", "hallux-p1")[1] < repos("hallux-p1")[1] - 0.03);
+ok("l'inversion relève le bord médial du pied", passe({ "pied.inversion:g": 25 }, "hallux-p1", "hallux-p1")[1] > repos("hallux-p1")[1] + 0.005);
+const tete = (pose: Pose): P3 => passe(pose, "tete", "tete");
+const nez = (pose: Pose): P3 => appliquer(poser(pose), [0, repos("tete")[1] + 0.05, 0.1], numero("tete") * 12);
+ok("fléchir la colonne penche la tête en avant", tete({ "lombaire.flexion": 40, "thoracique.flexion": 30 })[2] > repos("tete")[2] + 0.25);
+ok("l'inclinaison positive va vers la gauche, la rotation positive tourne le visage vers la gauche", tete({ "thoracique.inclinaison": 20, "lombaire.inclinaison": 15 })[0] > 0.1 && nez({ "cervical.rotation": 30, "tete.rotation": 40 })[0] > 0.05 && nez({ "cervical.rotation": -30 })[0] < -0.02);
+ok("ouvrir la bouche abaisse le menton", passe({ "machoire.ouverture": 25 }, "mandibule", "mandibule.menton")[1] < repos("mandibule.menton")[1] - 0.02);
+const inspire = poser({ "respiration.inspiration": 1 });
+ok("à l'inspiration, les côtes se soulèvent et le sternum avance", appliquer(inspire, pointMesure("cote-5.avant"), numero("cote-5") * 12)[1] > pointMesure("cote-5.avant")[1] + 0.008 && appliquer(inspire, repos("sternum"), numero("sternum") * 12)[1] > repos("sternum")[1] + 0.004);
+ok("le regard se lève et se tourne vers le nez", (() => {
+  const centre = repos("oeil");
+  const devant: P3 = [centre[0], centre[1], centre[2] + 0.012];
+  const haut = appliquer(poser({ "oeil.elevation:g": 30 }), devant, numero("oeil") * 12);
+  const dedans = appliquer(poser({ "oeil.adduction:g": 30 }), devant, numero("oeil") * 12);
+  return haut[1] > devant[1] + 0.004 && dedans[0] < devant[0] - 0.004;
+})());
+ok("les articulations et les mouvements du squelette sont ceux du vocabulaire des fiches", DDL.every((d) => d.articulation in vocabulaire.articulations && [d.moins, d.plus].every((m) => m === "rotation" || m in vocabulaire.mouvements)), DDL.filter((d) => !(d.articulation in vocabulaire.articulations)).map((d) => d.id).join());
+ok("chaque mouvement du squelette se joue", DDL.every((d) => [d.moins, d.plus].every((m) => m === "rotation" || m === "inclinaison" || gesteDe(d.articulation, m, "g"))), DDL.filter((d) => ![d.moins, d.plus].every((m) => m === "rotation" || m === "inclinaison" || gesteDe(d.articulation, m, "g"))).map((d) => d.id).join());
+const etendre = gesteDe("coude", "extension", "g")!;
+ok("un mouvement sans course part de la position opposée (étendre le coude, mettre en supination)", etendre.depart["coude.flexion:g"] > 60 && etendre.arrivee["coude.flexion:g"] === 0 && gesteDe("radio-ulnaire", "supination", "d")!.depart["avant-bras.pronation:d"] > 60);
+ok("le rachis s'incline du côté du muscle et tourne selon lui", gesteDe("rachis-lombaire", "inclinaison", "g")!.arrivee["lombaire.inclinaison"] > 0 && gesteDe("rachis-lombaire", "inclinaison", "d")!.arrivee["lombaire.inclinaison"] < 0 && gesteDe("rachis-cervical", "rotation-controlaterale", "g")!.arrivee["cervical.rotation"] < 0 && gesteDe("tete", "rotation-homolaterale", "g")!.arrivee["tete.rotation"] > 0);
+ok("l'opposition du pouce réunit trois mouvements", Object.keys(gesteDe("pouce-cmc", "opposition", "g")!.arrivee).length === 3);
+ok("un muscle sans articulation à mouvoir se contracte sur place", programmeDe("orbiculaire-de-l-oeil", [{ articulation: "paupiere", mouvement: "fermeture", role: "principal" }]).some((e) => e.surPlace) && programmeDe("biceps-brachial", [{ articulation: "coude", mouvement: "flexion", role: "principal" }]).every((e) => !e.surPlace));
 
 console.log(echecs ? `\n${echecs} échec(s)` : "\nTout est vert.");
 process.exit(echecs ? 1 : 0);
