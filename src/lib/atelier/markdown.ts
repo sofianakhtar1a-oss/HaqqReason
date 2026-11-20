@@ -11,6 +11,15 @@
 
 type Noeud = { type?: string; text?: string; content?: Noeud[]; attrs?: Record<string, unknown>; marks?: { type: string; attrs?: Record<string, unknown> }[] };
 
+/** Options de l'export : où trouver les images jointes (archive .zip), et les notes rassemblées en fin de texte. */
+export type OptionsMarkdown = {
+  /** Le chemin, dans l'archive, de l'image d'un fichier joint (null : l'image n'est pas jointe). */
+  cheminImage?: (fichier: string) => string | null;
+};
+
+/** Le travail en cours : les notes de bas de page rencontrées, dans l'ordre. */
+let enCours: { notes: string[]; options: OptionsMarkdown } = { notes: [], options: {} };
+
 const ECHAPPER = /([\\`*_[\]])/g;
 
 function texteAvecMarques(noeud: Noeud): string {
@@ -46,6 +55,11 @@ function enLigne(noeuds: Noeud[] | undefined): string {
     .map((n) => {
       if (n.type === "text") return texteAvecMarques(n);
       if (n.type === "hardBreak") return "  \n";
+      // Une note de bas de page : l'appel [^n], et le texte rassemblé à la fin du document.
+      if (n.type === "note") {
+        enCours.notes.push(String(n.attrs?.texte ?? "").replace(/\s+/g, " ").trim() || "…");
+        return `[^${enCours.notes.length}]`;
+      }
       return enLigne(n.content);
     })
     .join("");
@@ -120,8 +134,10 @@ function unBloc(noeud: Noeud, profondeur: number): string {
       return `\`\`\`\n${enLigne(noeud.content)}\n\`\`\``;
     case "table":
       return tableau(noeud);
-    case "image":
-      return `![${String(a.alt ?? "")}](${String(a.fichier ?? "")})${a.legende ? `\n*${a.legende}*` : ""}`;
+    case "image": {
+      const chemin = enCours.options.cheminImage?.(String(a.fichier ?? ""));
+      return `![${String(a.alt ?? a.legende ?? "")}](${chemin ?? String(a.fichier ?? "")})${a.legende ? `\n*${a.legende}*` : ""}`;
+    }
     case "documentPdf":
       return `> **Document PDF** — ${String(a.nom ?? "document")}`;
     case "verset":
@@ -159,9 +175,16 @@ function bloc(noeuds: Noeud[], profondeur: number): string {
     .join("\n\n");
 }
 
-/** Document complet en Markdown, titre compris. */
-export function enMarkdown(contenu: unknown, titre: string): string {
+/** Document complet en Markdown, titre compris (les notes de bas de page à la fin). */
+export function enMarkdown(contenu: unknown, titre: string, options: OptionsMarkdown = {}): string {
   const racine = (contenu ?? {}) as Noeud;
-  const corps = bloc(racine.content ?? [], 0);
-  return titre.trim() ? `# ${titre}\n\n${corps}\n` : `${corps}\n`;
+  const avant = enCours;
+  enCours = { notes: [], options };
+  try {
+    const corps = bloc(racine.content ?? [], 0);
+    const notes = enCours.notes.length ? `\n\n${enCours.notes.map((t, i) => `[^${i + 1}]: ${t}`).join("\n")}` : "";
+    return titre.trim() ? `# ${titre}\n\n${corps}${notes}\n` : `${corps}${notes}\n`;
+  } finally {
+    enCours = avant;
+  }
 }

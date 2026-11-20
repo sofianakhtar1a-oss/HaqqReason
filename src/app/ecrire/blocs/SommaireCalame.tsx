@@ -42,7 +42,7 @@ export function VueSommaireCalame({ node, editor, selected }: NodeViewProps) {
       ) : (
         <ol>
           {entrees.map((e) => (
-            <li key={e.ordinal} data-niveau={e.niveau}>
+            <li key={e.ordinal} data-niveau={e.niveau} data-ordinal={e.ordinal}>
               <button type="button" onClick={() => allerAuTitre(editor, e.pos)}>
                 <span className="calame-sommaire-texte">
                   {e.numero && <span className="calame-sommaire-numero">{e.numero}</span>}

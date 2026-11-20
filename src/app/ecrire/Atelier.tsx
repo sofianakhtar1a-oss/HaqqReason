@@ -52,8 +52,12 @@ import { reformaterReferences, reglerSources } from "./blocs/Sources";
 import { abonnerBibliotheque } from "@/lib/atelier/bibliotheque";
 import { lireFichier } from "@/lib/atelier/depot";
 import { LecteurPdfLocal } from "./LecteurPdfLocal";
+import { PanneauSortie, type ActionSortie } from "./panneaux/PanneauSortie";
+import { exporterEpub, exporterHtml, exporterMarkdownComplet, exporterTexte, exporterTousLesDocuments, exporterWord, partagerDocument } from "./sorties";
+import { construirePdfDirect } from "./pdf-direct";
+import { nomDeFichier, telecharger } from "./exporter";
 import { EVENEMENT_PDF_COTE, type DemandePdfCote } from "./VuesLocales";
-import { exporterDocx, exporterMarkdown, exporterPaquet, exporterPdf } from "./exporter";
+import { exporterPaquet, exporterPdf } from "./exporter";
 import { useAccesComplet } from "@/lib/client/acces";
 import { extensionsContenu } from "./extensions-calame";
 import { Recherche } from "./extensions/recherche";
@@ -61,7 +65,7 @@ import { AidesSaisie, reglagesSaisie } from "./extensions/saisie";
 import { SensEcriture } from "./extensions/sens";
 import { Analyse } from "./extensions/analyse";
 import { Replis, replisActuels, toutDeplier } from "./extensions/replis";
-import { imprimerPages } from "./impression";
+import { imprimerLivret, imprimerPages, imprimerSelection, lirePlagesDePages } from "./impression";
 import { PanneauMiseEnPage, PanneauTexte } from "./panneaux/PanneauMiseEnPage";
 import { PanneauStyles } from "./panneaux/PanneauStyles";
 import { SelecteurStyle } from "./SelecteurStyle";
@@ -479,10 +483,11 @@ export function Atelier(props: Props) {
       try {
         if (quoi === "pdf") {
           await imprimerComposees();
-        } else if (quoi === "md") exporterMarkdown(aJour);
-        else {
+        } else {
           setExportEnCours(quoi);
-          if (quoi === "docx") await exporterDocx(aJour);
+          // Word et Markdown complets : notes, arabe, schémas et cartes en images, table des matières.
+          if (quoi === "docx") await exporterWord(aJour, editor);
+          else if (quoi === "md") await exporterMarkdownComplet(aJour, editor);
           else await exporterPaquet(aJour);
         }
       } catch {
@@ -492,6 +497,71 @@ export function Atelier(props: Props) {
       }
     },
     [doc, editor, enregistrer, imprimerComposees],
+  );
+
+  /** Les autres sorties : PDF direct, EPUB, HTML, texte, impression partielle, livret, archive, partage. */
+  const sortir = useCallback(
+    async (action: ActionSortie) => {
+      if (!editor) return;
+      const flux = scene.current?.querySelector<HTMLElement>(".calame-flux") ?? null;
+      if (action.quoi === "selection") {
+        const s = window.getSelection();
+        const plage = s && s.rangeCount > 0 ? s.getRangeAt(0) : null;
+        if (!flux || !plage || plage.collapsed || !(await imprimerSelection(flux, courant.current.reglages, plage))) setMessage("Sélectionne d'abord le passage à imprimer, dans le texte.");
+        return;
+      }
+      if (action.quoi === "pages") {
+        const voulues = lirePlagesDePages(action.pages, pages);
+        if (!flux || voulues.length === 0) {
+          setMessage(`Indique des pages entre 1 et ${pages}, par exemple « 1-3, 5 ».`);
+          return;
+        }
+        await imprimerPages(flux, courant.current.reglages, { pages: voulues });
+        return;
+      }
+      if (action.quoi === "livret") {
+        if (!flux || !(await imprimerLivret(flux, courant.current.reglages))) setMessage("Le livret n'a pas pu être préparé.");
+        return;
+      }
+      await enregistrer();
+      const stocke = (await lireDocument(doc.id)) ?? doc;
+      const aJour: DocumentAtelier = { ...stocke, titre: courant.current.titre, reglages: courant.current.reglages, contenu: JSON.parse(JSON.stringify(editor.getJSON())) };
+      setExportEnCours(action.quoi);
+      try {
+        switch (action.quoi) {
+          case "pdf-direct": {
+            if (!flux) break;
+            toutDeplier(editor);
+            const p = extrasDe(aJour).proprietes;
+            const octets = await construirePdfDirect(flux, aJour.reglages, { titre: aJour.titre, auteur: p.auteur, sujet: p.sujet, motsCles: p.motsCles });
+            if (octets) telecharger(nomDeFichier(aJour.titre, "pdf"), octets, "application/pdf");
+            break;
+          }
+          case "epub":
+            await exporterEpub(aJour, editor);
+            break;
+          case "html":
+            await exporterHtml(aJour, editor);
+            break;
+          case "txt":
+            await exporterTexte(aJour, editor);
+            break;
+          case "tout": {
+            const nombre = await exporterTousLesDocuments();
+            annoncer(`${nombre} document${nombre > 1 ? "s" : ""} dans l'archive.`);
+            break;
+          }
+          case "partager":
+            await partagerDocument(aJour, editor, action.format);
+            break;
+        }
+      } catch {
+        setMessage("L'export n'a pas abouti. Réessaie, ou passe par la sauvegarde complète.");
+      } finally {
+        setExportEnCours("");
+      }
+    },
+    [annoncer, doc, editor, enregistrer, pages],
   );
 
   // ---------------------------------------------------------------- modes
@@ -1175,6 +1245,7 @@ export function Atelier(props: Props) {
           onglet={ongletInspecteur}
           surOnglet={setOngletInspecteur}
           pageEnPlus={<PanneauMiseEnPage reglages={reglages} surReglages={modifierReglages} />}
+          sortieEnPlus={<PanneauSortie editor={editor} pages={pages} enCours={exportEnCours} surAction={(a) => void sortir(a)} />}
           stylesEnPlus={
             <>
               <PanneauStyles reglages={reglages} surReglages={modifierReglages} documents={documents} docId={doc.id} />

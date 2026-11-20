@@ -2913,3 +2913,136 @@
 .calame-texte .tiptap .calame-biblio-liste li + li {
   margin-top: 0;
 }
+
+/* ---------- PDF téléchargé : les pages composées, posées hors de l'écran le temps d'être peintes ---------- */
+html.calame-capture-pdf .calame-impression {
+  display: block !important;
+  position: fixed;
+  top: 0;
+  left: -200000px;
+  pointer-events: none;
+}
+html.calame-capture-pdf .calame-impression .calame-flux-imprime {
+  position: static;
+  width: auto !important;
+  height: auto !important;
+  transform: none !important;
+  background: #fff;
+}
+html.calame-capture-pdf .calame-page-imprimee {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #fff;
+}
+html.calame-capture-pdf .calame-page-papier {
+  position: absolute;
+  overflow: hidden;
+  background: #fff;
+}
+html.calame-capture-pdf .calame-impression .calame-marges,
+html.calame-capture-pdf .calame-impression .calame-coupure-numero {
+  display: none !important;
+}
+html.calame-capture-pdf .calame-impression .calame-coupure {
+  display: block !important;
+  visibility: hidden !important;
+}
+html.calame-capture-pdf .calame-impression .calame-coupure.calame-coupure-ligne {
+  display: inline-block !important;
+}
+html.calame-capture-pdf .calame-impression tr.calame-coupure-rangee {
+  display: table-row !important;
+  visibility: hidden !important;
+}
+html.calame-capture-pdf .calame-impression tr.calame-coupure-rangee * {
+  visibility: hidden !important;
+}
+html.calame-capture-pdf .calame-impression .calame-zone-imprimee {
+  padding: 0 !important;
+}
+html.calame-capture-pdf .calame-impression .ProseMirror-selectednode,
+html.calame-capture-pdf .calame-impression [data-selectionne] {
+  outline: none !important;
+}
+
+/* ---------- livret A5 ---------- */
+@media print {
+  .calame-livret-face {
+    position: relative;
+    overflow: hidden;
+    break-after: page;
+    background: #fff;
+  }
+  .calame-livret-face:last-child {
+    break-after: auto;
+  }
+  .calame-livret-face .calame-page-imprimee {
+    break-after: auto;
+  }
+}
+/* La sélection seule : le navigateur met en pages lui-même. */
+@media print {
+  .calame-impression-selection .calame-flux-imprime .calame-texte {
+    position: static;
+  }
+}
+
+/* ---------- onglet Sortie : vérification, impression partielle, partage ---------- */
+.calame-verif-liste {
+  display: grid;
+  gap: 0.25rem;
+  max-height: 16rem;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+.calame-verif-liste button {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--encre);
+  font-size: 0.85rem;
+  text-align: left;
+  cursor: pointer;
+}
+.calame-verif-liste button:hover,
+.calame-verif-liste button:focus-visible {
+  background: color-mix(in srgb, var(--or) 12%, transparent);
+}
+.calame-verif-liste svg {
+  margin-top: 0.1rem;
+  color: var(--or);
+}
+.calame-verif-genre {
+  font-weight: 700;
+}
+.calame-verif-ok {
+  color: color-mix(in srgb, #2e7d52 80%, var(--encre));
+}
+.calame-sortie-pages {
+  display: flex;
+  gap: 0.4rem;
+}
+.calame-sortie-pages .champ {
+  flex: 1;
+  min-width: 0;
+}
+/* Les pages recopiées pour l'impression ou le PDF ne s'animent pas : une feuille qui « apparaît »
+   en fondu serait encore transparente au moment d'être imprimée ou peinte. */
+.calame-impression,
+.calame-impression * {
+  animation: none !important;
+  transition: none !important;
+}
+.calame-impression [data-revele] {
+  opacity: 1 !important;
+  translate: none !important;
+  scale: none !important;
+}

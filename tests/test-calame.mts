@@ -14,6 +14,13 @@ import { composer, dateHegirienne, enRomain, numeroAffiche, partieDeLaPage, remp
 import { cleDeTri, enChiffresArabes, libelleReference, lireReference, texteDeLaPlage } from "../src/lib/atelier/coran";
 import { degreDepuis, degreEnFrancais } from "../src/lib/atelier/hadiths";
 import { nettoyerBibliotheque, referenceTexte, OUVRAGE_VIDE } from "../src/lib/atelier/bibliotheque";
+import { enTexteBrut, versNeutre } from "../src/lib/atelier/neutre";
+import { enHtml } from "../src/lib/atelier/html";
+import { enMarkdown } from "../src/lib/atelier/markdown";
+import { construireDocx } from "../src/lib/atelier/docx";
+import { REGLAGES_PAR_DEFAUT } from "../src/lib/atelier/modele";
+import { lirePlagesDePages, ordreDuLivret } from "../src/app/ecrire/impression";
+import { strFromU8, unzipSync } from "fflate";
 
 let echecs = 0;
 const ok = (nom: string, cond: boolean, detail = "") => {
@@ -229,6 +236,85 @@ ok("sens : sans lettre", !commenceEnArabe("12 — 34"));
   ok("bibliographie : article", article === "Dupont, Marie. «\u00a0Une lecture\u00a0». Revue d'études 12 (2020)\u00a0: 5-20.", article);
   const nettoyee = nettoyerBibliotheque([{ id: "abcd", titre: "A", q: 2 }, { id: "abcd", titre: "doublon" }, { id: "x" }, { id: "efgh", titre: "B", supprime: true }]);
   ok("bibliothèque : doublons et identifiants invalides écartés", nettoyee.length === 2 && nettoyee[0].titre === "A" && nettoyee[1].supprime === true, JSON.stringify(nettoyee));
+}
+
+/* ---------- Sorties : document neutre, Word, HTML, Markdown, texte, livret ---------- */
+{
+  const contenu = {
+    type: "doc",
+    content: [
+      { type: "pageDeGarde", attrs: { titre: "Mémoire", auteur: "Sofian", etablissement: "Université" } },
+      { type: "sommaire", attrs: { titre: "Table des matières" } },
+      { type: "heading", attrs: { level: 2, ancre: "intro" }, content: [{ type: "text", text: "Introduction" }] },
+      { type: "paragraph", content: [{ type: "text", text: "Le " }, { type: "text", text: "tawḥīd", marks: [{ type: "termeGlossaire", attrs: { entree: "tawḥīd", sens: "unicité" } }] }, { type: "text", text: " selon Ghazali" }, { type: "note", attrs: { texte: "Ghazali, Iḥyāʾ, I, p. 12." } }, { type: "text", text: ", et " }, { type: "text", text: "un lien", marks: [{ type: "link", attrs: { href: "https://exemple.org" } }] }, { type: "text", text: "." }] },
+      { type: "paragraph", content: [{ type: "text", text: "قل هو الله أحد" }] },
+      { type: "verset", attrs: { reference: "Al-Ikhlas (112), 1" }, content: [{ type: "versetArabe", content: [{ type: "text", text: "قل هو الله أحد" }] }, { type: "versetTraduction", content: [{ type: "text", text: "Dis : Il est Dieu, Unique." }] }] },
+      { type: "schema", attrs: { donnees: JSON.stringify({ titre: "Plan" }) } },
+      { type: "frise", content: [{ type: "evenement", content: [{ type: "evenementDate", content: [{ type: "text", text: "622" }] }, { type: "paragraph", content: [{ type: "text", text: "Hégire" }] }] }] },
+      { type: "sautSection", attrs: { orientation: "paysage" } },
+      { type: "heading", attrs: { level: 3 }, content: [{ type: "text", text: "Annexe" }] },
+      { type: "bibliographie", attrs: { titre: "Bibliographie" } },
+      { type: "glossaire", attrs: { titre: "Glossaire" } },
+      { type: "indexSources", attrs: { genre: "versets" } },
+    ],
+  };
+  const neutre = versNeutre(contenu, {
+    imageDuBloc: (k) => (k === 0 ? { fichier: "bloc-0", alt: "" } : null),
+    bibliographie: () => [[{ texte: "Ghazali. " }, { texte: "Iḥyāʾ", italique: true }]],
+    versets: [{ libelle: "Al-Ikhlas (112), 1" }],
+    glossaire: [{ entree: "tawḥīd", translitteration: "", sens: "unicité" }],
+    numeroterTitres: true,
+  });
+  const types = (neutre.content ?? []).map((n) => n.type);
+  ok("neutre : page de garde en texte puis saut de page", types[0] === "paragraph" && types.includes("sautPage"), types.join(","));
+  ok("neutre : le schéma devient une image", (neutre.content ?? []).some((n) => n.type === "image" && n.attrs?.fichier === "bloc-0"));
+  ok("neutre : la frise sans image reste du texte", JSON.stringify(neutre).includes("622") && JSON.stringify(neutre).includes("Hégire"));
+  ok("neutre : titres numérotés", JSON.stringify(neutre).includes('"1. "') && JSON.stringify(neutre).includes('"1.1. "'));
+  ok("neutre : bibliographie, glossaire et index écrits", JSON.stringify(neutre).includes("Iḥyāʾ") && JSON.stringify(neutre).includes("unicité") && JSON.stringify(neutre).includes("Index des versets"));
+  ok("neutre : la marque du glossaire ne voyage pas", !JSON.stringify(neutre).includes("termeGlossaire"));
+
+  const html = enHtml(neutre, { sourceImage: (f) => (f === "bloc-0" ? "images/bloc-1.png" : null) });
+  ok("html : note renvoyée en fin avec retour", html.corps.includes('href="#note-1"') && html.corps.includes('id="note-1"') && html.corps.includes('href="#appel-1"'));
+  ok("html : arabe de droite à gauche", html.corps.includes('dir="rtl"'));
+  ok("html : verset avec sa référence", html.corps.includes("<figcaption>Coran, Al-Ikhlas (112), 1</figcaption>"));
+  ok("html : sommaire avec liens vers les titres", html.corps.includes('href="#t1"') && html.corps.includes('id="t1"'));
+  ok("html : image du schéma", html.corps.includes('src="images/bloc-1.png"'));
+  ok("html : XHTML bien formé (balises vides fermées)", !/<(br|hr|img)(\s[^>]*)?(?<!\/)>/.test(html.corps), html.corps.match(/<(br|hr|img)(\s[^>]*)?(?<!\/)>/)?.[0] ?? "");
+
+  const md = enMarkdown(neutre, "Mémoire", { cheminImage: (f) => (f === "bloc-0" ? "images/bloc-1.png" : null) });
+  ok("markdown : note de bas de page [^1]", md.includes("[^1]") && md.includes("[^1]: Ghazali, Iḥyāʾ, I, p. 12."));
+  ok("markdown : image jointe", md.includes("](images/bloc-1.png)"));
+
+  const txt = enTexteBrut(neutre, "Mémoire");
+  ok("texte : notes en fin de texte", txt.includes("[1]") && txt.includes("Notes"));
+  ok("texte : verset et référence", txt.includes("Coran, Al-Ikhlas (112), 1"));
+
+  const neutreWord = versNeutre(contenu, { pourWord: true, imageDuBloc: () => null });
+  const docx = unzipSync(construireDocx({ titre: "Mémoire", contenu: neutreWord, reglages: { ...REGLAGES_PAR_DEFAUT, entete: "{titre} — {partie}" }, proprietes: { auteur: "Sofian", sujet: "Tawḥīd", motsCles: "kalam, preuve" } }));
+  const corps = strFromU8(docx["word/document.xml"]);
+  ok("word : vraie note de bas de page", corps.includes("<w:footnoteReference") && strFromU8(docx["word/footnotes.xml"] ?? new Uint8Array()).includes("Ghazali"));
+  ok("word : lien cliquable", corps.includes("<w:hyperlink") && strFromU8(docx["word/_rels/document.xml.rels"]).includes('TargetMode="External"'));
+  ok("word : arabe de droite à gauche", corps.includes("<w:bidi/>") && corps.includes("<w:rtl/>"));
+  ok("word : table des matières en champ", corps.includes("TOC \\o") && strFromU8(docx["word/settings.xml"]).includes("updateFields"));
+  ok("word : la table montre déjà les titres", corps.includes("Introduction"));
+  ok("word : section en paysage", corps.includes('w:orient="landscape"'));
+  ok("word : signet sur un titre ancré", corps.includes('w:bookmarkStart') && corps.includes('w:name="a_intro"'));
+  ok("word : propriétés du document", strFromU8(docx["docProps/core.xml"]).includes("<dc:creator>Sofian</dc:creator>") && strFromU8(docx["docProps/core.xml"]).includes("kalam"));
+  ok("word : {partie} devient un champ STYLEREF", strFromU8(docx["word/header1.xml"]).includes("STYLEREF"));
+  ok("word : référence du verset", corps.includes("Coran, Al-Ikhlas (112), 1"));
+  const ordre = (xml: string, balise: string) => [...xml.matchAll(new RegExp(`<w:${balise}>(.*?)</w:${balise}>`, "g"))].every((m) => {
+    const noms = [...m[1].matchAll(/<w:(\w+)/g)].map((x) => x[1]);
+    const ref = ["rStyle", "rFonts", "b", "bCs", "i", "iCs", "caps", "smallCaps", "strike", "color", "spacing", "sz", "szCs", "highlight", "u", "vertAlign", "rtl", "lang"];
+    const rangs = noms.map((n) => ref.indexOf(n)).filter((r) => r >= 0);
+    return rangs.every((r, i) => i === 0 || r >= rangs[i - 1]);
+  });
+  ok("word : propriétés de caractère dans l'ordre du format", ordre(corps, "rPr"));
+  const notesFin = unzipSync(construireDocx({ titre: "T", contenu: neutreWord, reglages: { ...REGLAGES_PAR_DEFAUT, notes: "fin-document" } }));
+  ok("word : notes de fin quand le document les veut en fin", notesFin["word/endnotes.xml"] !== undefined && strFromU8(notesFin["word/document.xml"]).includes("<w:endnoteReference"));
+
+  ok("livret : 8 pages dans l'ordre d'imposition", JSON.stringify(ordreDuLivret(8)) === JSON.stringify([[8, 1], [2, 7], [6, 3], [4, 5]]), JSON.stringify(ordreDuLivret(8)));
+  ok("livret : complété de pages blanches", JSON.stringify(ordreDuLivret(5)) === JSON.stringify([[null, 1], [2, null], [null, 3], [4, 5]]), JSON.stringify(ordreDuLivret(5)));
+  ok("pages : « 1-3, 5, 9-7 »", JSON.stringify(lirePlagesDePages("1-3, 5, 9-7", 8)) === JSON.stringify([1, 2, 3, 5, 7, 8]), JSON.stringify(lirePlagesDePages("1-3, 5, 9-7", 8)));
 }
 
 console.log(echecs ? `\n${echecs} échec(s).` : "Tout est bon (Calame).");

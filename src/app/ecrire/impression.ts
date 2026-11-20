@@ -21,6 +21,29 @@ export type OptionsImpression = {
   pages?: number[];
 };
 
+/** Une page composée pour l'impression (ou pour le PDF). */
+export type PageComposee = {
+  el: HTMLElement;
+  numero: number;
+  largeurMm: number;
+  hauteurMm: number;
+  /** Les blocs (recopiés) qui commencent sur cette page : titres pour les signets, ancres pour les liens. */
+  debuts: HTMLElement[];
+};
+
+/** Lit « 1-3, 5, 8-10 » : les numéros de page voulus (dans l'ordre, sans doublon). */
+export function lirePlagesDePages(texte: string, total: number): number[] {
+  const pages: number[] = [];
+  for (const morceau of texte.split(/[,;\s]+/).filter(Boolean)) {
+    const m = /^(\d+)(?:\s*[-–]\s*(\d+))?$/.exec(morceau.trim());
+    if (!m) continue;
+    const a = Number(m[1]);
+    const b = m[2] ? Number(m[2]) : a;
+    for (let p = Math.max(1, Math.min(a, b)); p <= Math.min(total, Math.max(a, b)); p++) if (!pages.includes(p)) pages.push(p);
+  }
+  return pages;
+}
+
 /** Les variables de style (polices, tailles, couleurs) portées par la feuille à l'écran. */
 function variablesDe(flux: HTMLElement): string {
   const lignes: string[] = [];
@@ -56,11 +79,47 @@ function preparerClone(original: HTMLElement, clone: HTMLElement): void {
  * `flux` : l'élément .calame-flux de l'atelier.
  */
 export async function imprimerPages(flux: HTMLElement, reglages: ReglagesPage, options: OptionsImpression = {}): Promise<void> {
-  const tiptap = flux.querySelector<HTMLElement>(".calame-texte .tiptap");
-  if (!tiptap) {
+  const composition = composerPages(flux, reglages, options);
+  if (!composition) {
     window.print();
     return;
   }
+  await lancerImpression(composition.conteneur, composition.style);
+}
+
+/** Pose la composition dans la page, attend images et polices, imprime, puis range tout. */
+async function lancerImpression(conteneur: HTMLElement, style: HTMLStyleElement): Promise<void> {
+  document.body.append(conteneur, style);
+  document.documentElement.classList.add("calame-impression-en-cours");
+
+  // Les images doivent être prêtes avant que l'imprimante ne passe.
+  const images = Array.from(conteneur.querySelectorAll("img"));
+  await Promise.race([Promise.all(images.map((img) => img.decode().catch(() => undefined))), new Promise((r) => setTimeout(r, 2500))]);
+  await document.fonts?.ready;
+
+  const ranger = () => {
+    conteneur.remove();
+    style.remove();
+    document.documentElement.classList.remove("calame-impression-en-cours");
+    window.removeEventListener("afterprint", ranger);
+  };
+  window.addEventListener("afterprint", ranger);
+  try {
+    window.print();
+  } finally {
+    // Certains navigateurs n'envoient jamais « afterprint » : on range quand même, un peu plus tard.
+    setTimeout(ranger, 1500);
+  }
+}
+
+/**
+ * Compose les pages (sans les poser dans la page) : le conteneur, la feuille de style @page,
+ * et chaque page avec ses dimensions. null : rien à composer (pas d'éditeur).
+ */
+export function composerPages(flux: HTMLElement, reglages: ReglagesPage, options: OptionsImpression = {}): { conteneur: HTMLElement; style: HTMLStyleElement; pages: PageComposee[] } | null {
+  const tiptap = flux.querySelector<HTMLElement>(".calame-texte .tiptap");
+  if (!tiptap) return null;
+  const pagesComposees: PageComposee[] = [];
   const g = geometrie(reglages);
   const papier = tailleDuPapier(reglages.format, reglages.orientation);
   const fond = reglages.fondPerdu || 0;
@@ -99,6 +158,7 @@ export async function imprimerPages(flux: HTMLElement, reglages: ReglagesPage, o
     const m = margesDeLaPage(reglages, numero);
     const page = document.createElement("section");
     page.className = "calame-page-imprimee";
+    const debuts: HTMLElement[] = [];
     page.style.width = `${pp.largeur + 2 * fond}mm`;
     page.style.height = `${pp.hauteur + 2 * fond}mm`;
     if (differente) {
@@ -145,10 +205,12 @@ export async function imprimerPages(flux: HTMLElement, reglages: ReglagesPage, o
       clone.style.width = `${mesure.largeur}px`;
       clone.style.margin = "0";
       corps.appendChild(clone);
+      if (mesure.haut >= hautPage - 1) debuts.push(clone);
       precedent = mesure.el;
     }
     surface.appendChild(zone);
     fluxCopie.appendChild(page);
+    pagesComposees.push({ el: page, numero, largeurMm: pp.largeur + 2 * fond, hauteurMm: pp.hauteur + 2 * fond, debuts });
   });
 
   const style = document.createElement("style");
@@ -156,25 +218,105 @@ export async function imprimerPages(flux: HTMLElement, reglages: ReglagesPage, o
   style.textContent =
     `@page { size: ${papier.largeur + 2 * fond}mm ${papier.hauteur + 2 * fond}mm !important; ${sansMarges} }` +
     (avecAutre ? ` @page calame-autre { size: ${papierAutre.largeur + 2 * fond}mm ${papierAutre.hauteur + 2 * fond}mm !important; ${sansMarges} }` : "");
-  document.body.append(conteneur, style);
-  document.documentElement.classList.add("calame-impression-en-cours");
+  return { conteneur, style, pages: pagesComposees };
+}
 
-  // Les images doivent être prêtes avant que l'imprimante ne passe.
-  const images = Array.from(conteneur.querySelectorAll("img"));
-  await Promise.race([Promise.all(images.map((img) => img.decode().catch(() => undefined))), new Promise((r) => setTimeout(r, 2500))]);
-  await document.fonts?.ready;
+// ---------------------------------------------------------------------------
+// La sélection seule
+// ---------------------------------------------------------------------------
 
-  const ranger = () => {
-    conteneur.remove();
-    style.remove();
-    document.documentElement.classList.remove("calame-impression-en-cours");
-    window.removeEventListener("afterprint", ranger);
-  };
-  window.addEventListener("afterprint", ranger);
-  try {
-    window.print();
-  } finally {
-    // Certains navigateurs n'envoient jamais « afterprint » : on range quand même, un peu plus tard.
-    setTimeout(ranger, 1500);
+/**
+ * Imprime le passage sélectionné, avec la typographie du document : le navigateur le met en pages
+ * lui-même (sans en-têtes ni notes en bas de page, qui appartiennent au document entier).
+ */
+export async function imprimerSelection(flux: HTMLElement, reglages: ReglagesPage, plage: Range): Promise<boolean> {
+  const tiptap = flux.querySelector<HTMLElement>(".calame-texte .tiptap");
+  if (!tiptap || plage.collapsed || !tiptap.contains(plage.commonAncestorContainer)) return false;
+  const papier = tailleDuPapier(reglages.format, reglages.orientation);
+  const m = reglages.marges;
+  const conteneur = document.createElement("div");
+  conteneur.className = "calame-impression calame-impression-selection";
+  conteneur.setAttribute("aria-hidden", "true");
+  conteneur.lang = "fr";
+  const fluxCopie = document.createElement("div");
+  fluxCopie.className = "calame-flux calame-flux-imprime";
+  fluxCopie.style.cssText = variablesDe(flux);
+  const texte = document.createElement("div");
+  texte.className = "calame-texte";
+  const corps = document.createElement("div");
+  corps.className = tiptap.className;
+  corps.appendChild(plage.cloneContents());
+  // Les blancs de mise en page n'ont rien à faire dans un passage imprimé seul.
+  corps.querySelectorAll("[data-blanc], .calame-coupure").forEach((x) => x.remove());
+  texte.appendChild(corps);
+  fluxCopie.appendChild(texte);
+  conteneur.appendChild(fluxCopie);
+  const style = document.createElement("style");
+  style.textContent = `@page { size: ${papier.largeur}mm ${papier.hauteur}mm !important; margin: ${m.haut}mm ${m.droite}mm ${m.bas}mm ${m.gauche}mm !important; }`;
+  await lancerImpression(conteneur, style);
+  return true;
+}
+
+// ---------------------------------------------------------------------------
+// Livret : pages remises dans l'ordre pour être pliées et agrafées
+// ---------------------------------------------------------------------------
+
+/** L'ordre des pages d'un livret de `total` pages (complété par des pages blanches) : deux par face, recto puis verso. */
+export function ordreDuLivret(total: number): [number | null, number | null][] {
+  const n = Math.max(4, Math.ceil(total / 4) * 4);
+  const p = (i: number) => (i <= total ? i : null);
+  const faces: [number | null, number | null][] = [];
+  for (let k = 0; k < n / 4; k++) {
+    faces.push([p(n - 2 * k), p(2 * k + 1)]);
+    faces.push([p(2 * k + 2), p(n - 2 * k - 1)]);
   }
+  return faces;
+}
+
+/**
+ * Imprime le document en livret : chaque feuille A4 (paysage) porte deux pages côte à côte,
+ * dans l'ordre qui, une fois les feuilles pliées en deux et emboîtées, redonne le document.
+ * Impression recto verso, retournement sur le petit côté.
+ */
+export async function imprimerLivret(flux: HTMLElement, reglages: ReglagesPage): Promise<boolean> {
+  const composition = composerPages(flux, reglages);
+  if (!composition) return false;
+  const { conteneur, pages } = composition;
+  const fluxCopie = conteneur.querySelector<HTMLElement>(".calame-flux-imprime");
+  if (!fluxCopie) return false;
+  const demiLargeur = 297 / 2;
+  const hauteur = 210;
+  for (const page of pages) page.el.remove();
+  for (const [gauche, droite] of ordreDuLivret(pages.length)) {
+    const face = document.createElement("section");
+    face.className = "calame-page-imprimee calame-livret-face";
+    face.style.width = "297mm";
+    face.style.height = "210mm";
+    [gauche, droite].forEach((numero, cote) => {
+      const emplacement = document.createElement("div");
+      emplacement.className = "calame-livret-moitie";
+      emplacement.style.cssText = `position:absolute;top:0;left:${cote * demiLargeur}mm;width:${demiLargeur}mm;height:${hauteur}mm;overflow:hidden;`;
+      const page = numero ? pages[numero - 1] : null;
+      if (page) {
+        // Une page A5 remplit exactement la moitié ; un autre format est réduit pour y tenir, centré.
+        const echelle = Math.min(demiLargeur / page.largeurMm, hauteur / page.hauteurMm, 1);
+        const dx = (demiLargeur - page.largeurMm * echelle) / 2;
+        const dy = (hauteur - page.hauteurMm * echelle) / 2;
+        page.el.style.position = "absolute";
+        page.el.style.left = `${dx}mm`;
+        page.el.style.top = `${dy}mm`;
+        page.el.style.transformOrigin = "0 0";
+        page.el.style.transform = `scale(${echelle})`;
+        page.el.style.breakAfter = "auto";
+        emplacement.appendChild(page.el);
+      }
+      face.appendChild(emplacement);
+    });
+    fluxCopie.appendChild(face);
+  }
+  const style = document.createElement("style");
+  style.textContent = "@page { size: 297mm 210mm !important; margin: 0 !important; }";
+  composition.style.remove();
+  await lancerImpression(conteneur, style);
+  return true;
 }
