@@ -36,6 +36,8 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },
+      // Les modèles de L'Écorché portent l'empreinte de leur contenu dans leur nom : le navigateur peut les garder pour toujours.
+      { source: "/corps/:fichier*.bin", headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }] },
       // Le service hors-ligne doit toujours être relu, pour que les mises à jour arrivent vite.
       { source: "/sw.js", headers: [{ key: "Cache-Control", value: "no-cache, no-store, must-revalidate" }, { key: "Content-Type", value: "application/javascript; charset=utf-8" }] },
     ];

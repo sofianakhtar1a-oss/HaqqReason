@@ -10,7 +10,7 @@
  */
 
 import { ELEMENTS, PAR_ID } from "./catalogue";
-import { type CategorieId, CATEGORIES, niveauxDe, vusJusqua } from "./niveaux";
+import { type CategorieId, CATEGORIES, ELEMENTS_APPRIS, EN_PLANCHE, niveauxDe, vusJusqua } from "./niveaux";
 import { normaliser } from "./texte";
 import { type Couche, type Element, REGIONS, type RegionId, type SorteOs } from "./types";
 import { hasard } from "./vec";
@@ -85,6 +85,8 @@ export const nomRegion = (r: RegionId) => NOM_REGION.get(r) ?? r;
 /** Le, la, l' : pour écrire « le biceps », « l'aorte », « la clavicule ». */
 export function article(e: Element): string {
   const n = e.nom;
+  // Le catalogue le sait pour chaque structure ; la règle qui suit ne sert qu'aux fiches sans article.
+  if (e.art) return `${e.art}${minuscule(n)}`;
   const premier = n.split(/[\s-]/)[0].toLowerCase();
   const singuliers = /^(biceps|triceps|radius|humérus|talus|pubis|atlas|axis|coccyx|calcanéus|os|longissimus)$/;
   const pluriel = (/[sx]$/.test(premier) && !singuliers.test(premier)) || /\b\p{L}+aux\b/u.test(n);
@@ -112,9 +114,12 @@ function melanger<T>(r: Rnd, l: readonly T[]): T[] {
 
 export type Difficulte = "facile" | "normal" | "difficile";
 
+/** Où puiser les voisins d'une structure : parmi celles qu'on apprend si elle en est, sinon dans tout l'atlas. */
+const reservoir = (cible: Element): readonly Element[] => (EN_PLANCHE.has(cible.id) ? ELEMENTS_APPRIS : ELEMENTS);
+
 /** Les faux choix : même couche ; avec la difficulté, des voisins de plus en plus proches. */
 function fauxChoix(r: Rnd, cible: Element, n: number, d: Difficulte, filtre: (e: Element) => boolean = () => true, pool?: Element[]): Element[] {
-  const base = (pool ?? ELEMENTS).filter((e) => e.id !== cible.id && e.couche === cible.couche && filtre(e) && normaliser(e.nom) !== normaliser(cible.nom));
+  const base = (pool ?? reservoir(cible)).filter((e) => e.id !== cible.id && e.couche === cible.couche && filtre(e) && normaliser(e.nom) !== normaliser(cible.nom));
   const meme = base.filter((e) => e.region === cible.region);
   const grande = base.filter((e) => GRANDE.get(e.region) === GRANDE.get(cible.region));
   const proches = d === "difficile" ? [...meme, ...grande] : d === "normal" ? (r() < 0.6 ? grande : base) : base;
@@ -131,17 +136,28 @@ const optionsDe = (r: Rnd, bonne: Element, faux: Element[], champ: (e: Element) 
 /* ---------- Qui peut être interrogé sur quoi ---------- */
 
 export function typesPossibles(e: Element): TypeQ[] {
-  const t: TypeQ[] = ["nommer", "situer", "ecrire", "region", "vers-latin"];
+  const t: TypeQ[] = ["nommer", "ecrire", "region"];
+  // Toucher sur le corps : ce qui se voit de l'extérieur (un noyau du cerveau, un organe profond ne s'atteignent pas ainsi).
+  if (e.couche !== "viscere" && e.couche !== "encephale") t.push("situer");
   if (e.memo && !normaliser(e.memo).includes(normaliser(e.nom))) t.push("memo");
-  if (normaliser(e.latin) !== normaliser(e.nom)) t.push("latin");
-  if (normaliser(e.anglais) !== normaliser(e.nom)) t.push("anglais");
-  if (e.couche === "muscle") t.push("action", "innervation", "terminaison", "origine", "vrai-faux");
+  // Une fiche née d'une règle (« Tendon du … ») n'a pas de nom latin ni anglais à apprendre.
+  if (!e.genere) {
+    t.push("vers-latin");
+    if (normaliser(e.latin) !== normaliser(e.nom)) t.push("latin");
+    if (normaliser(e.anglais) !== normaliser(e.nom)) t.push("anglais");
+  }
+  if (e.couche === "muscle") {
+    if (e.action) t.push("action");
+    if (e.innervation) t.push("innervation", "vrai-faux");
+    if (e.terminaison) t.push("terminaison");
+    if (e.origine) t.push("origine");
+  }
   if (e.couche === "os") {
     if (e.sorte) t.push("sorte");
     if ((e.articulations ?? []).length) t.push("articulation", "vrai-faux");
   }
   if (e.couche === "artere") {
-    t.push("territoire");
+    if (e.territoire) t.push("territoire");
     if (e.provenance && PAR_ID.has(e.provenance)) t.push("provenance", "vrai-faux");
   }
   if (e.couche === "tendon" && e.muscle && PAR_ID.has(e.muscle)) t.push("tendon-muscle");
@@ -163,6 +179,32 @@ export function typesDuNiveau(categorie: CategorieId, n: number): TypeQ[] {
 
 /* ---------- Fabriquer une question ---------- */
 
+/** « Quel est… ? » et « un… » pour chaque couche. */
+export const QUEL: Record<Couche, string> = {
+  os: "Quel est cet os ?",
+  muscle: "Quel est ce muscle ?",
+  tendon: "Quelle est cette structure tendineuse ?",
+  ligament: "Quelle est cette structure de l'articulation ?",
+  artere: "Quelle est cette artère ?",
+  veine: "Quelle est cette veine ?",
+  nerf: "Quel est ce nerf ?",
+  viscere: "Quel est cet organe ?",
+  encephale: "Quelle est cette partie de l'encéphale ?",
+  lymphe: "Quels sont ces nœuds lymphatiques ?",
+};
+const QUOI: Record<Couche, string> = {
+  os: "un os",
+  muscle: "un muscle",
+  tendon: "une structure tendineuse",
+  ligament: "une structure articulaire",
+  artere: "une artère",
+  veine: "une veine",
+  nerf: "un nerf",
+  viscere: "un organe",
+  encephale: "une partie de l'encéphale",
+  lymphe: "un groupe de nœuds lymphatiques",
+};
+
 export type Contexte = { difficulte: Difficulte; /** Les structures parmi lesquelles prendre les faux choix (sinon : toutes). */ pool?: Element[] };
 
 export function fabriquer(graine: number, id: string, type: TypeQ, ctx: Contexte): Question | null {
@@ -171,11 +213,10 @@ export function fabriquer(graine: number, id: string, type: TypeQ, ctx: Contexte
   const r = hasard(graine * 7919 + 17);
   const d = ctx.difficulte;
   const le = article(e);
-  const quel: Record<Couche, string> = { os: "Quel est cet os ?", muscle: "Quel est ce muscle ?", tendon: "Quelle est cette structure tendineuse ?", artere: "Quelle est cette artère ?" };
   switch (type) {
     case "nommer": {
       const f = fauxChoix(r, e, 3, d, undefined, ctx.pool);
-      return { type, cible: id, consigne: quel[e.couche], options: optionsDe(r, e, f), attendu: id, reponse: "qcm", montrer: true };
+      return { type, cible: id, consigne: QUEL[e.couche], options: optionsDe(r, e, f), attendu: id, reponse: "qcm", montrer: true };
     }
     case "situer":
       return { type, cible: id, consigne: `Touche ${le} sur le corps.`, options: [], attendu: id, reponse: "clic", montrer: false };
@@ -248,21 +289,21 @@ export function fabriquer(graine: number, id: string, type: TypeQ, ctx: Contexte
     case "intrus": {
       // Trois structures de la même grande région, un intrus d'ailleurs (même couche).
       const g = GRANDE.get(e.region);
+      const source = reservoir(e);
       const voisins = melanger(
         r,
-        ELEMENTS.filter((x) => x.couche === e.couche && x.id !== e.id && GRANDE.get(x.region) === g),
+        source.filter((x) => x.couche === e.couche && x.id !== e.id && GRANDE.get(x.region) === g),
       ).slice(0, 3);
       const intrus = melanger(
         r,
-        ELEMENTS.filter((x) => x.couche === e.couche && GRANDE.get(x.region) !== g),
+        source.filter((x) => x.couche === e.couche && GRANDE.get(x.region) !== g),
       )[0];
       if (voisins.length < 3 || !intrus) return null;
       const nomG: Record<string, string> = { "tete-cou": "de la tête et du cou", tronc: "du tronc", "membre-sup": "du membre supérieur", "membre-inf": "du membre inférieur" };
-      const quoi: Record<Couche, string> = { os: "un os", muscle: "un muscle", tendon: "une structure tendineuse", artere: "une artère" };
       return {
         type,
         cible: intrus.id,
-        consigne: `Lequel n'est pas ${quoi[e.couche]} ${nomG[g ?? "tronc"]} ?`,
+        consigne: `Lequel n'est pas ${QUOI[e.couche]} ${nomG[g ?? "tronc"]} ?`,
         options: optionsDe(r, intrus, voisins),
         attendu: intrus.id,
         reponse: "qcm",
@@ -274,14 +315,15 @@ export function fabriquer(graine: number, id: string, type: TypeQ, ctx: Contexte
       const vrai = r() < 0.5;
       let phrase = "";
       if (e.couche === "muscle") {
-        const autre = fauxChoix(r, e, 1, d, (x) => Boolean(x.innervation) && x.innervation !== e.innervation)[0];
-        const sur = r() < 0.5 ? "innervation" : "terminaison";
+        const autre = fauxChoix(r, e, 1, d, (x) => Boolean(x.innervation) && Boolean(x.terminaison) && x.innervation !== e.innervation)[0];
+        const sur = r() < 0.5 || !e.terminaison ? "innervation" : "terminaison";
+        if (!e[sur]) return null;
         const valeur = vrai || !autre ? e[sur] : autre[sur];
         phrase = sur === "innervation" ? `${majuscule(le)} est innervé par : ${minuscule(valeur ?? "")}.` : `${majuscule(le)} se termine sur : ${minuscule(valeur ?? "")}.`;
         if (!vrai && (!autre || autre[sur] === e[sur])) return null;
       } else if (e.couche === "os") {
         const arts = (e.articulations ?? []).filter((a) => PAR_ID.has(a));
-        const non = ELEMENTS.filter((x) => x.couche === "os" && x.id !== e.id && !arts.includes(x.id) && GRANDE.get(x.region) === GRANDE.get(e.region));
+        const non = reservoir(e).filter((x) => x.couche === "os" && x.id !== e.id && !arts.includes(x.id) && GRANDE.get(x.region) === GRANDE.get(e.region));
         const autre = vrai ? PAR_ID.get(choisir(r, arts)) : choisir(r, non);
         if (!autre) return null;
         phrase = `${majuscule(le)} s'articule avec ${article(autre)}.`;
@@ -369,7 +411,7 @@ export function questionMelangee(graine: number, ids: string[], qcmSeulement: bo
 /** Le défi du jour : dix questions, les mêmes pour tout le monde ce jour-là. */
 export function defiDuJour(jour: string, nombre = 10): Question[] {
   const graine = [...jour].reduce((s, c) => (s * 31 + c.charCodeAt(0)) >>> 0, 7);
-  const pool = ELEMENTS.filter((e) => e.rang <= 2).map((e) => e.id);
+  const pool = ELEMENTS_APPRIS.filter((e) => e.rang <= 2).map((e) => e.id);
   const sortie: Question[] = [];
   for (let i = 0; sortie.length < nombre && i < nombre * 4; i++) {
     const q = questionMelangee(graine + i * 101, pool, false, "normal");
@@ -378,7 +420,7 @@ export function defiDuJour(jour: string, nombre = 10): Question[] {
   return sortie;
 }
 
-/** Les structures d'une catégorie (pour l'éclair, la survie, les fiches). */
+/** Les structures qu'on apprend dans une catégorie (pour l'éclair, la survie, les jeux). */
 export function structuresDe(categorie: CategorieId): string[] {
-  return ELEMENTS.filter((e) => CATEGORIES[categorie].couches.includes(e.couche)).map((e) => e.id);
+  return ELEMENTS_APPRIS.filter((e) => CATEGORIES[categorie].couches.includes(e.couche)).map((e) => e.id);
 }

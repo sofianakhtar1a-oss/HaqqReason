@@ -48,7 +48,7 @@ const srvb = (hex: string): V3 => {
 
 /** Les matières par paquet, pour la pièce « fraîche » (humide, brillante). */
 export const MATIERES: Record<string, Matiere> = {
-  os: { base: srvb("#e2d5b8"), base2: srvb("#c5d3da"), rug: 0.62, rug2: 0.3, sss: 0.12, sssTeinte: srvb("#e8b48a"), vernis: 0.05, fibres: 0, grain: 0.5, aniso: 0 },
+  os: { base: srvb("#d8c9a6"), base2: srvb("#c2d2da"), rug: 0.64, rug2: 0.3, sss: 0.12, sssTeinte: srvb("#e8b48a"), vernis: 0.05, fibres: 0, grain: 0.5, aniso: 0 },
   muscle: { base: srvb("#8a2420"), base2: srvb("#e9e3d4"), rug: 0.46, rug2: 0.34, sss: 0.55, sssTeinte: srvb("#d2301c"), vernis: 0.55, fibres: 1, grain: 0.12, aniso: 0.35 },
   tendon: { base: srvb("#e6e0d0"), base2: srvb("#e6e0d0"), rug: 0.34, rug2: 0.34, sss: 0.25, sssTeinte: srvb("#f0d9b0"), vernis: 0.35, fibres: 0.7, grain: 0.08, aniso: 0.6 },
   fascia: { base: srvb("#ddd8cc"), base2: srvb("#ddd8cc"), rug: 0.4, rug2: 0.4, sss: 0.3, sssTeinte: srvb("#f0d9b0"), vernis: 0.3, fibres: 0.4, grain: 0.1, aniso: 0.3 },
@@ -69,6 +69,8 @@ export const MATIERES: Record<string, Matiere> = {
 export const ORDRE = ["fascia", "enveloppe", "muscle", "tendon", "gaine", "bourse", "lymphe", "viscere", "encephale", "veine", "artere", "nerf", "ligament", "insertion", "os"] as const;
 
 const LARGEUR_ETAT = 1024;
+/** Les rangées de la texture d'état, par structure : teinte ; visibilité, survol, pulsation, sélection ; couleur propre ; divers. */
+const RANGS_ETAT = 4;
 
 const SOMMETS = `#version 300 es
 precision highp float;
@@ -86,6 +88,7 @@ uniform vec3 u_origine;
 uniform float u_pas;
 uniform float u_miroir;
 uniform int u_base;
+uniform ivec3 u_zones;   // première zone de ce dessin, nombre de zones par code, 1 si le groupe a des zones
 uniform int u_hauteur;
 uniform highp sampler2D u_etat;
 uniform highp sampler2D u_decal;
@@ -94,12 +97,10 @@ out vec3 v_pos;
 out vec3 v_nor;
 out vec4 v_m;
 out vec4 v_f;
-out vec4 v_teinte;
-out vec4 v_vis;
-out vec4 v_propre;
 out vec4 v_ombre;
 out vec3 v_local;
 flat out float v_id;
+flat out float v_idz;
 
 vec3 oct(vec2 e) {
   vec3 n = vec3(e, 1.0 - abs(e.x) - abs(e.y));
@@ -112,15 +113,16 @@ vec3 oct(vec2 e) {
 void main() {
   int id = u_base + int(a_piece + 0.5);
   ivec2 c = ivec2(id % ${LARGEUR_ETAT}, id / ${LARGEUR_ETAT});
-  v_teinte = texelFetch(u_etat, c, 0);
-  v_vis = texelFetch(u_etat, c + ivec2(0, u_hauteur), 0);
-  v_propre = texelFetch(u_etat, c + ivec2(0, 2 * u_hauteur), 0);
+  vec4 vis = texelFetch(u_etat, c + ivec2(0, u_hauteur), 0);
   vec4 decal = texelFetch(u_decal, c, 0);
+  // La zone du sommet (le tendon d'un muscle…) : une structure à part, rangée après les pièces.
+  int code = int(a_b.w + 0.5);
+  v_idz = u_zones.z > 0 && code > 0 ? float(u_zones.x + (code - 1) * u_zones.y + int(a_piece + 0.5)) : -1.0;
   vec3 n = oct(a_nor);
   vec3 p = u_origine + a_pos * u_pas;
   v_local = p;
   // Survol et cible : la structure gonfle à peine.
-  p += n * (v_vis.g * 0.0006 + v_vis.b * 0.0009 * (0.5 + 0.5 * sin(u_temps * 5.0)));
+  p += n * (vis.g * 0.0006 + vis.b * 0.0009 * (0.5 + 0.5 * sin(u_temps * 5.0)));
   p.x *= u_miroir;
   n.x *= u_miroir;
   p += decal.xyz;
@@ -141,12 +143,14 @@ in vec3 v_pos;
 in vec3 v_nor;
 in vec4 v_m;
 in vec4 v_f;
-in vec4 v_teinte;
-in vec4 v_vis;
-in vec4 v_propre;
 in vec4 v_ombre;
 in vec3 v_local;
 flat in float v_id;
+flat in float v_idz;
+uniform highp sampler2D u_etat;
+uniform int u_hauteur;
+uniform float u_opacite2;
+uniform float u_parTissu;
 uniform vec3 u_oeil;
 uniform mat3 u_rig;
 uniform vec3 u_base1;
@@ -164,17 +168,37 @@ uniform float u_exposition;
 uniform float u_humide;
 out vec4 sortie;
 
+// La structure du fragment : la pièce, ou sa zone (pour un muscle, là où le tissu est tendineux).
+float structure() {
+  return v_idz >= 0.0 && (u_parTissu < 0.5 || v_m.x > 0.5) ? v_idz : v_id;
+}
+ivec2 caseDe(float id) {
+  int i = int(id + 0.5);
+  return ivec2(i % ${LARGEUR_ETAT}, i / ${LARGEUR_ETAT});
+}
+// L'opacité : celle de la couche (une zone qui a sa propre structure suit la sienne) × celle de la structure.
+float opacite(ivec2 c, out vec4 vis) {
+  vis = texelFetch(u_etat, c + ivec2(0, u_hauteur), 0);
+  float propreCouche = texelFetch(u_etat, c + ivec2(0, 3 * u_hauteur), 0).r;
+  if (propreCouche < 0.5) return u_opacite * vis.r;
+  // Un tendon dont le muscle est effacé : son bord se fond, au lieu de finir par une frange de chair.
+  float bord = mix(smoothstep(0.5, 0.72, v_m.x), 1.0, clamp(u_opacite / max(u_opacite2, 1e-3), 0.0, 1.0));
+  return u_opacite2 * vis.r * bord;
+}
+
 #ifdef CHOIX
 void main() {
-  float alpha = u_opacite * v_vis.r;
-  if (alpha < 0.5) discard;
-  float n = v_id + 1.0;
+  float sid = structure();
+  vec4 v_vis;
+  if (opacite(caseDe(sid), v_vis) < 0.5) discard;
+  float n = sid + 1.0;
   sortie = vec4(mod(n, 256.0) / 255.0, mod(floor(n / 256.0), 256.0) / 255.0, floor(n / 65536.0) / 255.0, 1.0);
 }
 #else
 #ifdef PROFONDEUR
 void main() {
-  if (u_opacite * v_vis.r < 0.6) discard;
+  vec4 v_vis;
+  if (opacite(caseDe(structure()), v_vis) < 0.6) discard;
   sortie = vec4(1.0);
 }
 #else
@@ -206,6 +230,18 @@ vec3 bruit2d(vec2 p) {
   float v = a + (b - a) * u.x + (c - a) * u.y + (a - b - c + d) * u.x * u.y;
   vec2 g = du * (vec2(b - a, c - a) + (a - b - c + d) * u.yx);
   return vec3(v, g);
+}
+
+// Bruit périodique en x (période k), avec sa dérivée en x : x → la valeur, y → d/dx.
+vec2 bruitP(vec2 p, float k) {
+  vec2 i = floor(p), f = fract(p);
+  vec2 u = f * f * (3.0 - 2.0 * f);
+  float du = 6.0 * f.x * (1.0 - f.x);
+  float x0 = mod(i.x, k), x1 = mod(i.x + 1.0, k);
+  float a = h21(vec2(x0, i.y)), b = h21(vec2(x1, i.y)), c = h21(vec2(x0, i.y + 1.0)), d = h21(vec2(x1, i.y + 1.0));
+  float v = mix(mix(a, b, u.x), mix(c, d, u.x), u.y);
+  float dx = du * mix(b - a, d - c, u.y);
+  return vec2(v, dx);
 }
 
 float dGGX(float NoH, float a) {
@@ -252,7 +288,9 @@ float ombre() {
 }
 
 void main() {
-  float alpha = u_opacite * v_vis.r;
+  ivec2 cs0 = caseDe(structure());
+  vec4 v_vis;
+  float alpha = opacite(cs0, v_vis);
   if (alpha < 0.02) discard;
   if (u_passe == 0 && alpha < 0.985) discard;
   if (u_passe == 1 && alpha >= 0.985) discard;
@@ -271,38 +309,45 @@ void main() {
   T.x += T.x >= 0.0 ? -tt : tt;
   T.y += T.y >= 0.0 ? -tt : tt;
   T = normalize(T - N * dot(T, N) + N * 1e-4);
-  vec3 B = normalize(cross(N, T));
 
-  // Les fibres : un relief fin en travers du muscle, lu dans les coordonnées de fibre du sommet.
-  float fibres = u_chair.y * mix(1.0, 0.75, w1);
+  // Les fibres : des faisceaux en relief qui suivent le muscle. La phase (cosinus, sinus) donne la position
+  // en travers des fibres, sur une période de 16 mm ; v_m.w, la position le long de la fibre.
+  float fibres = u_chair.y;
   float strie = 0.5;
-  if (fibres > 0.01) {
-    vec2 a = (v_f.xy - 0.5) * 2.0;
-    float long_ = v_m.w;
-    vec3 n1 = bruit2d(a * 46.0 + vec2(long_ * 3.0, 0.0));
-    vec3 n2 = bruit2d(a * 131.0 + vec2(7.3, long_ * 5.0));
-    strie = n1.x * 0.62 + n2.x * 0.38;
+  vec2 cs = v_f.xy * 2.0 - 1.0;
+  float lcs = dot(cs, cs);
+  if (fibres > 0.01 && lcs > 0.04) {
+    float u = atan(cs.y, cs.x) / 6.2831853 + 0.5;
+    float le = v_m.w;
+    const float K = 10.0;
+    float serre = mix(1.0, 2.0, w1);
+    vec2 n1 = bruitP(vec2(u * K * serre, le * 5.0), K * serre);
+    vec2 n2 = bruitP(vec2(u * K * 3.0 * serre + 1.7, le * 11.0 + 4.0), K * 3.0 * serre);
+    strie = n1.x * 0.6 + n2.x * 0.4;
+    float pente = (n1.y * K * 0.6 + n2.y * K * 3.0 * 0.4) * serre;
     vec3 dpx = dFdx(v_pos), dpy = dFdy(v_pos);
-    vec2 dax = dFdx(a), day = dFdy(a);
+    vec2 dcx = dFdx(cs), dcy = dFdy(cs);
+    float px = (cs.x * dcx.y - cs.y * dcx.x) / lcs, py = (cs.x * dcy.y - cs.y * dcy.x) / lcs;
     float det = dot(dpx, cross(dpy, N));
-    if (abs(det) > 1e-12) {
-      vec3 ga = (cross(dpy, N) * dax.x + cross(N, dpx) * day.x) / det;
-      vec3 gb = (cross(dpy, N) * dax.y + cross(N, dpx) * day.y) / det;
-      vec2 gr = n1.yz * 46.0 * 0.62 + n2.yz * 131.0 * 0.38;
-      vec3 pente = ga * gr.x + gb * gr.y;
-      // De loin, le relief devient plus fin qu'un pixel : on le fond pour ne pas scintiller.
-      float finesse = 1.0 - smoothstep(0.25, 0.9, length(fwidth(a * 131.0)));
-      N = normalize(N - pente * 0.00042 * fibres * finesse);
+    if (abs(det) > 1e-14) {
+      vec3 gphi = (cross(dpy, N) * px + cross(N, dpx) * py) / det;
+      // De loin, les faisceaux deviennent plus fins qu'un pixel : on les fond pour ne pas scintiller.
+      float finesse = 1.0 - smoothstep(0.35, 1.1, length(vec2(px, py)) * K * 3.0 * serre / 6.2831853);
+      strie = mix(0.5, strie, finesse);
+      N = normalize(N - gphi * (pente / 6.2831853) * 0.00022 * fibres * finesse * mix(1.0, 0.6, w1));
     }
   }
 
   // La matière.
+  vec4 v_teinte = texelFetch(u_etat, cs0, 0);
+  vec4 v_propre = texelFetch(u_etat, caseDe(v_id) + ivec2(0, 2 * u_hauteur), 0);
   vec3 propre = v_propre.rgb;
   vec3 base = mix(u_base1, propre, v_propre.a);
   float grainV = bruit3(v_local * 620.0) * 0.6 + bruit3(v_local * 190.0) * 0.4;
-  base *= 1.0 - u_chair.z * 0.32 * (grainV - 0.35);
-  base *= mix(1.0, 0.72 + 0.56 * strie, min(1.0, fibres) * 0.55);
-  vec3 base2 = u_base2 * (0.9 + 0.2 * strie);
+  float pores = smoothstep(0.62, 0.9, bruit3(v_local * 1500.0)) * smoothstep(0.35, 0.7, bruit3(v_local * 90.0 + 7.0));
+  base *= 1.0 - u_chair.z * (0.3 * (grainV - 0.35) + 0.45 * pores * (1.0 - w1));
+  base *= mix(1.0, 0.66 + 0.68 * strie, min(1.0, fibres) * 0.6);
+  vec3 base2 = u_base2 * (0.84 + 0.32 * strie * min(1.0, fibres + 0.3));
   // Les sutures du crâne, la dentine : un trait plus sombre.
   base = mix(base, base * vec3(0.5, 0.42, 0.34), smoothstep(0.35, 0.9, w2) * 0.75);
   vec3 albedo = mix(base, base2, w1);
@@ -313,14 +358,14 @@ void main() {
 
   // La teinte d'apprentissage : une lumière posée sur la matière, qui garde son relief.
   float lum = dot(albedo, vec3(0.3, 0.55, 0.15));
-  albedo = mix(albedo, v_teinte.rgb * (0.45 + 1.1 * lum + 0.25 * strie), v_teinte.a * 0.78);
+  // (Sur un tissu clair — tendon, os — la teinte garde sa couleur au lieu de pâlir.)
+  albedo = mix(albedo, v_teinte.rgb * (0.5 + 0.55 * lum + 0.2 * strie), v_teinte.a * 0.8);
 
   float NoV = max(dot(N, V), 1e-3);
   vec3 R = reflect(-V, N);
   // Le reflet s'étire le long des fibres (tendons, ligaments).
   float aniso = u_surface.w * max(w1, step(0.5, u_surface.w));
-  vec3 Ra = normalize(mix(R, reflect(-V, normalize(N - T * dot(N, T) * 0.0 + B * 0.0)), 0.0));
-  vec3 Rr = Ra * u_rig;            // dans le repère du studio : x à droite, y en haut, z vers l'objectif
+  vec3 Rr = R * u_rig;             // dans le repère du studio : x à droite, y en haut, z vers l'objectif
   vec3 Nr = N * u_rig;
   vec3 Tr = T * u_rig;
 
@@ -338,26 +383,28 @@ void main() {
   float l1 = dot(Nr, dCle), l2 = dot(Nr, dApp), l3 = dot(Nr, dCj1), l4 = dot(Nr, dCj2);
   vec3 enrobe = u_sss * sss;
   vec3 dif = vec3(0.0);
-  dif += cCle * 2.5 * om * (max(l1, 0.0) * (1.0 - 0.5 * sss) + enrobe * smoothstep(-0.55, 0.35, l1) * 0.42);
-  dif += cApp * 0.5 * (max(l2, 0.0) + enrobe * smoothstep(-0.6, 0.4, l2) * 0.3);
-  dif += cCj * 0.75 * (max(l3, 0.0) + max(l4, 0.0));
+  dif += cCle * 2.3 * om * (max(l1, 0.0) * (1.0 - 0.5 * sss) + enrobe * smoothstep(-0.55, 0.35, l1) * 0.42);
+  dif += cApp * 0.38 * (max(l2, 0.0) + enrobe * smoothstep(-0.6, 0.4, l2) * 0.3);
+  dif += cCj * 0.6 * (max(l3, 0.0) + max(l4, 0.0));
   // La lumière traversante des contre-jours : les bords minces rougeoient.
   float bord = pow(1.0 - NoV, 2.2);
   dif += u_sss * sss * bord * (smoothstep(-0.2, 0.9, dot(Rr, dCj1)) + smoothstep(-0.2, 0.9, dot(Rr, dCj2))) * 0.5;
   // L'ambiance : le plafond clair, le sol sombre et chaud.
   vec3 ciel = mix(vec3(0.085, 0.07, 0.06), vec3(0.3, 0.33, 0.36), Nr.y * 0.5 + 0.5);
   ciel += vec3(0.1, 0.11, 0.12) * max(Nr.z, 0.0);
-  dif += ciel * (0.55 + 0.45 * ao) * mix(1.0, ao, 0.85);
+  dif += ciel * 0.72 * ao * mix(0.55, 1.0, ao);
+  // L'occlusion creuse aussi un peu la lumière directe dans les replis (ombres de contact).
+  dif *= mix(0.62, 1.0, smoothstep(0.0, 0.55, ao));
 
   // Les reflets : les boîtes à lumière vues dans la surface, floues selon la rugosité.
   float a = rug * rug;
   vec3 X = vec3(1, 0, 0), Y = vec3(0, 1, 0);
   // L'anisotropie : la tache s'allonge en travers des fibres.
-  vec2 etire = vec2(1.0);
   vec3 Rs = Rr;
   if (aniso > 0.01) {
-    float k = dot(Rr - Nr * dot(Rr, Nr), Tr);
-    Rs = normalize(Rr - Tr * k * aniso * 0.75);
+    vec3 Br = normalize(cross(Nr, Tr));
+    float k = dot(Rr - Nr * dot(Rr, Nr), Br);
+    Rs = normalize(Rr - Br * k * aniso * 0.8);
   }
   float flou = a * 1.15 + 0.02;
   vec3 axCle = normalize(cross(Y, dCle)), ayCle = cross(dCle, axCle);
@@ -455,9 +502,13 @@ function compiler(gl: WebGL2RenderingContext, sommets: string, fragments: string
 }
 
 type Programme = { prog: WebGLProgram; u: Record<string, WebGLUniformLocation | null> };
-type Groupe = { paquet: string; paire: boolean; lod: number; vao: WebGLVertexArrayObject; tampons: WebGLBuffer[]; nb: number; base: number; pieces: number; origine: V3; pas: number };
+type Zones = { base: number; nb: number; droite: number };
+type Groupe = { paquet: string; paire: boolean; lod: number; vao: WebGLVertexArrayObject; tampons: WebGLBuffer[]; nb: number; base: number; pieces: number; origine: V3; pas: number; zones?: Zones; pleins: number; partiels: number; propres: number };
 
-const UNIFORMES = ["u_vue", "u_proj", "u_lumiere", "u_origine", "u_pas", "u_miroir", "u_base", "u_hauteur", "u_etat", "u_decal", "u_temps", "u_oeil", "u_rig", "u_base1", "u_base2", "u_surface", "u_chair", "u_sss", "u_opacite", "u_passe", "u_laiton", "u_carteOmbre", "u_ombres", "u_exposition", "u_humide"];
+/** La couche des zones qui ont leur propre structure (les tendons portés par les muscles). */
+const COUCHE_DES_ZONES = "tendon";
+
+const UNIFORMES = ["u_vue", "u_proj", "u_lumiere", "u_origine", "u_pas", "u_miroir", "u_base", "u_hauteur", "u_etat", "u_decal", "u_temps", "u_oeil", "u_rig", "u_base1", "u_base2", "u_surface", "u_chair", "u_sss", "u_opacite", "u_passe", "u_laiton", "u_carteOmbre", "u_ombres", "u_exposition", "u_humide", "u_zones", "u_opacite2", "u_parTissu"];
 
 export type Reglages = {
   /** L'ombre portée de la lumière principale. */
@@ -530,7 +581,7 @@ export class RenduReel {
   structures(nb: number) {
     this.nbStructures = nb;
     this.hauteur = Math.max(1, Math.ceil(nb / LARGEUR_ETAT));
-    this.donneesEtat = new Uint8Array(LARGEUR_ETAT * this.hauteur * 3 * 4);
+    this.donneesEtat = new Uint8Array(LARGEUR_ETAT * this.hauteur * RANGS_ETAT * 4);
     this.donneesDecal = new Float32Array(LARGEUR_ETAT * this.hauteur * 4);
     const l = LARGEUR_ETAT * this.hauteur * 4;
     for (let i = 0; i < nb; i++) this.donneesEtat[l + i * 4] = 255;
@@ -538,7 +589,7 @@ export class RenduReel {
   }
 
   /** Monte un paquet sur la carte graphique (ou remplace son niveau de détail). `base` : le numéro de sa première structure. */
-  installer(p: Paquet, base: number) {
+  installer(p: Paquet, base: number, zones?: Zones) {
     const gl = this.gl;
     const cle = `${p.paquet}/${p.paire ? "p" : "i"}`;
     const ancien = this.groupes.get(cle);
@@ -568,8 +619,9 @@ export class RenduReel {
     gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, ib);
     gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, p.indices, gl.STATIC_DRAW);
     gl.bindVertexArray(null);
-    this.groupes.set(cle, { paquet: p.paquet, paire: p.paire, lod: p.lod, vao, tampons: [vb, ib], nb: p.indices.length, base, pieces: p.pieces.length, origine: p.origine, pas: p.pas });
+    this.groupes.set(cle, { paquet: p.paquet, paire: p.paire, lod: p.lod, vao, tampons: [vb, ib], nb: p.indices.length, base, pieces: p.pieces.length, origine: p.origine, pas: p.pas, zones, pleins: 1, partiels: 0, propres: 0 });
     if (this.opacites[p.paquet] === undefined) this.opacites[p.paquet] = 1;
+    this.etatSale = true;
   }
 
   niveau(paquet: string, paire: boolean): number | null {
@@ -577,7 +629,7 @@ export class RenduReel {
   }
 
   /** L'état d'une structure : teinte [r, g, b, force] (0-255), visibilité (0-1), survol, pulsation, sélection, couleur propre. */
-  definir(id: number, e: { teinte?: [number, number, number, number]; visible?: number; survol?: boolean; pulse?: boolean; choisi?: boolean; propre?: [number, number, number, number] }) {
+  definir(id: number, e: { teinte?: [number, number, number, number]; visible?: number; survol?: boolean; pulse?: boolean; choisi?: boolean; propre?: [number, number, number, number]; coucheDesZones?: boolean }) {
     if (id < 0 || id >= this.nbStructures) return;
     const d = this.donneesEtat;
     const l = LARGEUR_ETAT * this.hauteur * 4;
@@ -587,6 +639,7 @@ export class RenduReel {
     if (e.pulse !== undefined) d[l + id * 4 + 2] = e.pulse ? 255 : 0;
     if (e.choisi !== undefined) d[l + id * 4 + 3] = e.choisi ? 255 : 0;
     if (e.propre) d.set(e.propre, 2 * l + id * 4);
+    if (e.coucheDesZones !== undefined) d[3 * l + id * 4] = e.coucheDesZones ? 255 : 0;
     this.etatSale = true;
   }
 
@@ -601,13 +654,32 @@ export class RenduReel {
     return id < 0 || id >= this.nbStructures ? 0 : this.donneesEtat[LARGEUR_ETAT * this.hauteur * 4 + id * 4] / 255;
   }
 
+  /** Pour chaque groupe : combien de ses structures sont pleines, à demi visibles, ou des zones de l'autre couche. */
+  private compter() {
+    const d = this.donneesEtat;
+    const l = LARGEUR_ETAT * this.hauteur * 4;
+    for (const g of this.groupes.values()) {
+      g.pleins = g.partiels = g.propres = 0;
+      const plages: [number, number][] = [[g.base, g.pieces * (g.paire ? 2 : 1)]];
+      if (g.zones) plages.push([g.zones.base, g.zones.nb * 3]);
+      for (const [debut, nombre] of plages)
+        for (let id = debut; id < debut + nombre; id++) {
+          const v = d[l + id * 4];
+          if (v >= 252) g.pleins++;
+          else if (v > 5) g.partiels++;
+          if (v > 5 && d[3 * l + id * 4] > 127) g.propres++;
+        }
+    }
+  }
+
   private televerser() {
     const gl = this.gl;
     if (this.etatSale) {
+      this.compter();
       gl.activeTexture(gl.TEXTURE0);
       gl.bindTexture(gl.TEXTURE_2D, this.etat);
       gl.pixelStorei(gl.UNPACK_ALIGNMENT, 1);
-      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA8, LARGEUR_ETAT, this.hauteur * 3, 0, gl.RGBA, gl.UNSIGNED_BYTE, this.donneesEtat);
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA8, LARGEUR_ETAT, this.hauteur * RANGS_ETAT, 0, gl.RGBA, gl.UNSIGNED_BYTE, this.donneesEtat);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
       this.etatSale = false;
@@ -670,7 +742,7 @@ export class RenduReel {
     return m;
   }
 
-  private passe(pr: Programme, camera: Camera, temps: number, passe: number, lumiere: Float32Array, pourOmbre = false) {
+  private passe(pr: Programme, camera: Camera, temps: number, passe: number, lumiere: Float32Array, pourOmbre = false, pourChoix = false) {
     const gl = this.gl;
     const u = pr.u;
     gl.useProgram(pr.prog);
@@ -701,11 +773,9 @@ export class RenduReel {
     gl.uniform1f(u.u_ombres, this.reglages.ombres && this.ombreTex ? 1 : 0);
     gl.uniform1f(u.u_exposition, this.reglages.exposition);
     gl.uniform1f(u.u_humide, this.reglages.humide);
+    const op2 = this.opacites[COUCHE_DES_ZONES] ?? 0;
     for (const nom of ORDRE) {
       const op = this.opacites[nom] ?? 0;
-      if (op < 0.02) continue;
-      if (passe === 0 && op < 0.985) continue;
-      if (pourOmbre && op < 0.6) continue;
       const m = this.matieres[nom] ?? this.matieres.viscere;
       const sec = 1 - (1 - this.reglages.humide) * 0.5;
       gl.uniform3fv(u.u_base1, m.base);
@@ -714,26 +784,46 @@ export class RenduReel {
       gl.uniform4f(u.u_chair, m.sss, m.fibres, m.grain, 0);
       gl.uniform3fv(u.u_sss, m.sssTeinte);
       gl.uniform1f(u.u_opacite, op);
+      gl.uniform1f(u.u_opacite2, op2);
+      gl.uniform1f(u.u_parTissu, nom === "muscle" ? 1 : 0);
+      // Les surfaces d'insertion sont posées sur l'os : on les avance d'un rien pour qu'elles ne s'y mêlent pas.
+      const posee = nom === "insertion" && !pourOmbre;
+      if (posee) {
+        gl.enable(gl.POLYGON_OFFSET_FILL);
+        gl.polygonOffset(-2, -6);
+      }
       for (const paire of [true, false]) {
         const g = this.groupes.get(`${nom}/${paire ? "p" : "i"}`);
         if (!g) continue;
+        // Ne dessiner un groupe que s'il a quelque chose à montrer dans cette passe.
+        const zonesAutres = g.propres > 0;
+        const haut = zonesAutres ? Math.max(op, op2) : op;
+        const bas = zonesAutres ? Math.min(op, op2) : op;
+        if (haut < 0.02 || g.pleins + g.partiels === 0) continue;
+        if (passe === 0) {
+          if (haut < (pourOmbre ? 0.6 : pourChoix ? 0.5 : 0.985)) continue;
+          if (!pourOmbre && !pourChoix && g.pleins === 0) continue;
+        } else if (bas >= 0.985 && g.partiels === 0) continue;
         gl.uniform3fv(u.u_origine, g.origine);
         gl.uniform1f(u.u_pas, g.pas);
         gl.bindVertexArray(g.vao);
         gl.uniform1f(u.u_miroir, 1);
         gl.uniform1i(u.u_base, g.base);
+        gl.uniform3i(u.u_zones, g.zones ? g.zones.base : 0, g.zones ? g.zones.nb : 0, g.zones ? 1 : 0);
         gl.frontFace(gl.CCW);
         gl.drawElements(gl.TRIANGLES, g.nb, gl.UNSIGNED_INT, 0);
         this.trianglesImage += g.nb / 3;
         if (g.paire) {
           gl.uniform1f(u.u_miroir, -1);
           gl.uniform1i(u.u_base, g.base + g.pieces);
+          gl.uniform3i(u.u_zones, g.zones ? g.zones.base + g.zones.droite : 0, g.zones ? g.zones.nb : 0, g.zones ? 1 : 0);
           gl.frontFace(gl.CW);
           gl.drawElements(gl.TRIANGLES, g.nb, gl.UNSIGNED_INT, 0);
           gl.frontFace(gl.CCW);
           this.trianglesImage += g.nb / 3;
         }
       }
+      if (posee) gl.disable(gl.POLYGON_OFFSET_FILL);
     }
     gl.bindVertexArray(null);
   }
@@ -843,6 +933,11 @@ export class RenduReel {
     this.televerser();
     gl.bindFramebuffer(gl.FRAMEBUFFER, this.choixFbo);
     gl.viewport(0, 0, l, h);
+    // On ne dessine que le pixel visé : la passe ne coûte presque rien, même sur une petite carte graphique.
+    const px = Math.max(0, Math.min(l - 1, Math.round(x)));
+    const py = Math.max(0, Math.min(h - 1, Math.round(h - y - 1)));
+    gl.enable(gl.SCISSOR_TEST);
+    gl.scissor(px, py, 1, 1);
     gl.clearColor(0, 0, 0, 0);
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
     gl.enable(gl.DEPTH_TEST);
@@ -852,10 +947,11 @@ export class RenduReel {
     // Seules les couches pleines se touchent (les fantômes laissent passer le doigt).
     const sauve = { ...this.opacites };
     for (const c of Object.keys(this.opacites)) this.opacites[c] = this.opacites[c] < 0.5 ? 0 : 1;
-    this.passe(this.choixProg, camera, 0, 0, IDENTITE);
+    this.passe(this.choixProg, camera, 0, 0, IDENTITE, false, true);
     Object.assign(this.opacites, sauve);
     const pixel = new Uint8Array(4);
-    gl.readPixels(Math.round(x), Math.round(h - y - 1), 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, pixel);
+    gl.readPixels(px, py, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, pixel);
+    gl.disable(gl.SCISSOR_TEST);
     gl.bindFramebuffer(gl.FRAMEBUFFER, null);
     return pixel[0] + pixel[1] * 256 + pixel[2] * 65536 - 1;
   }

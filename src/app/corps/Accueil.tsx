@@ -3,21 +3,16 @@
 import { ChevronLeft, Crosshair, Flame, Lock, Play, Shield, Snowflake, Sparkles, Target, Timer, Type, Zap } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { ELEMENTS, PAR_ID } from "@/lib/corps/catalogue";
-import { CATEGORIES, type CategorieId, IDS_CATEGORIES, niveauxDe, titreDuJoueur } from "@/lib/corps/niveaux";
+import { CATEGORIES, type CategorieId, ELEMENTS_APPRIS, IDS_CATEGORIES, niveauxDe, titreDuJoueur } from "@/lib/corps/niveaux";
 import { aReviserAvant, etoiles, jourDeParis, maitrise, niveauCourant, niveauOuvert, niveauxReussis, revisionsDues, useEcorche } from "@/lib/corps/progression";
 import { METHODES, type TypeQ, typesDuNiveau } from "@/lib/corps/quiz";
 import { REGIONS } from "@/lib/corps/types";
 import { useTextes } from "@/lib/modules/textes-client";
-import { Anneau, COUCHES_DEFAUT, Etoiles, TEINTE, enLumiere, romain } from "./communs";
-import type { Navigation, Stage } from "./Ecorche";
+import { Anneau, COUCHES_DEFAUT, type Couches, Etoiles, TEINTE, couchesPour, enLumiere, romain } from "./communs";
+import type { Jeu, Navigation, Stage } from "./Ecorche";
 
-const COUCHES_CAT: Record<CategorieId, Record<"os" | "muscle" | "tendon" | "artere", number>> = {
-  os: { os: 1, muscle: 0, tendon: 0, artere: 0 },
-  muscles: { os: 1, muscle: 1, tendon: 1, artere: 0 },
-  tendons: { os: 1, muscle: 0.3, tendon: 1, artere: 0 },
-  arteres: { os: 0.45, muscle: 0.1, tendon: 0.08, artere: 1 },
-  corps: COUCHES_DEFAUT,
-};
+/** Ce que montre le corps quand on feuillette une catégorie : sa couche pleine, ce qui la situe en retrait. */
+const couchesDe = (c: CategorieId): Couches => (c === "corps" ? COUCHES_DEFAUT : couchesPour(CATEGORIES[c].couches[0]));
 
 export function Accueil({ stage, detail, nav }: { stage: Stage; detail: string | null; nav: Navigation }) {
   const categorie = IDS_CATEGORIES.find((c) => c === detail?.split("/")[0]) ?? null;
@@ -46,7 +41,7 @@ function Vestibule({ stage, nav }: { stage: Stage; nav: Navigation }) {
     <div className="ec-vestibule">
       <header className="ec-hero">
         <h1 className="ec-hero-titre">{t("accueil.titre") || "Le corps humain, couche par couche"}</h1>
-        <p className="ec-hero-chapo">{t("accueil.chapo") || `Les os, les muscles, les tendons et les artères : ${ELEMENTS.length} structures à reconnaître, à situer et à nommer, du crâne aux orteils.`}</p>
+        <p className="ec-hero-chapo">{t("accueil.chapo") || `Un vrai corps en trois dimensions : ${ELEMENTS.length} structures à explorer, des os aux nerfs, et ${ELEMENTS_APPRIS.length} à reconnaître, à situer et à nommer, planche après planche.`}</p>
       </header>
 
       <section className="ec-jour" aria-label="Aujourd'hui">
@@ -88,7 +83,7 @@ function Vestibule({ stage, nav }: { stage: Stage; nav: Navigation }) {
 
       <section className="ec-registre" aria-labelledby="ec-titre-couches">
         <h2 id="ec-titre-couches" className="ec-section-titre">
-          {t("accueil.categories") || "Les quatre couches"}
+          {t("accueil.categories") || "Les couches du corps"}
         </h2>
         <ol className="ec-registre-liste">
           {IDS_CATEGORIES.map((c) => {
@@ -168,7 +163,7 @@ function Categorie({ stage, categorie, nav }: { stage: Stage; categorie: Categor
   useEffect(() => {
     if (!niv) return;
     const ids = categorie === "corps" ? niv.nouveaux.filter((id) => (PAR_ID.get(id)?.rang ?? 9) <= 1).slice(0, 30) : niv.nouveaux;
-    stage.regler({ couches: COUCHES_CAT[categorie], profondeur: 0, etats: enLumiere(ids, TEINTE.laiton, false), isoler: null, rotation: false, etiquette: null, retrait: false });
+    stage.regler({ couches: couchesDe(categorie), decouvrir: categorie === "muscles" || categorie === "tendons" ? ids : null, profondeur: 0, etats: enLumiere(ids, TEINTE.laiton, false), isoler: null, rotation: false, etiquette: null, retrait: false });
     stage.surChoix((s) => {
       if (s) nav.aller(`explorer/${s.element}`);
     });
@@ -241,10 +236,10 @@ function Categorie({ stage, categorie, nav }: { stage: Stage; categorie: Categor
             <div className="ec-jeux-categorie">
               <p className="ec-note">Ou, sur toute la couche :</p>
               <div className="ec-boutons">
-                <button type="button" className="ec-bouton" onClick={() => nav.jeu({ sorte: "muet", categorie: categorie as "os", grande: REGIONS.find((r) => r.id === PAR_ID.get(niv.nouveaux[0])?.region)?.grande ?? "tronc" })}>
+                <button type="button" className="ec-bouton" onClick={() => nav.jeu({ sorte: "muet", categorie: categorie as Jeu["categorie"], grande: REGIONS.find((r) => r.id === PAR_ID.get(niv.nouveaux[0])?.region)?.grande ?? "tronc" })}>
                   <Crosshair size={15} aria-hidden="true" /> Le corps muet
                 </button>
-                <button type="button" className="ec-bouton" onClick={() => nav.jeu({ sorte: "nomme", categorie: categorie as "os", grande: REGIONS.find((r) => r.id === PAR_ID.get(niv.nouveaux[0])?.region)?.grande ?? "tronc" })}>
+                <button type="button" className="ec-bouton" onClick={() => nav.jeu({ sorte: "nomme", categorie: categorie as Jeu["categorie"], grande: REGIONS.find((r) => r.id === PAR_ID.get(niv.nouveaux[0])?.region)?.grande ?? "tronc" })}>
                   <Type size={15} aria-hidden="true" /> Nomme-les tous
                 </button>
                 <button type="button" className="ec-bouton" onClick={() => nav.jouer({ sorte: "eclair", titre: `Éclair · ${def.nom}`, categorie })}>

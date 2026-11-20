@@ -139,7 +139,9 @@ for e in index:
         continue
     groupes.setdefault((paquet, paire), []).append((cle, e["cle"], objet))
 
-manifeste = {"version": VERSION, "grille": {"origine": ORIGINE, "pas": PAS}, "paquets": {}, "total": {}}
+publication = json.load(open(os.path.join(ICI, "donnees", "publication.json"), encoding="utf-8"))
+# « haute » : le niveau le plus fin est-il publié ? (Tant que non, ses paquets restent hors du dépôt : voir .gitignore.)
+manifeste = {"version": VERSION, "haute": bool(publication.get("haute")), "grille": {"origine": ORIGINE, "pas": PAS}, "paquets": {}, "total": {}}
 vus = set()
 anciens = set(os.listdir(PUBLIC))
 gardes = set()
@@ -151,7 +153,7 @@ for (paquet, paire), membres in sorted(groupes.items()):
         if paquet == "insertion" and lod == 2:
             continue
         entete_pieces = []
-        flux = {k: [] for k in ("px", "py", "pz", "nx", "ny", "w1", "w2", "zo", "ao", "fs", "fa", "fb", "tx", "ty", "ba", "bb", "bw", "ex")}
+        flux = {k: [] for k in ("px", "py", "pz", "nx", "ny", "w1", "w2", "ao", "fs", "fa", "fb", "tx", "ty", "ba", "bb", "bw", "ex")}
         ind = []
         s0 = 0
         i0 = 0
@@ -183,7 +185,7 @@ for (paquet, paire), membres in sorted(groupes.items()):
             flux["ny"].append(zigzag16(np.diff(ny.astype(np.int32), prepend=0)))
             n = len(P)
             W = d["W"][sel]
-            flux["w1"].append(W[:, 0]); flux["w2"].append(W[:, 1]); flux["zo"].append(d["Z"][sel])
+            flux["w1"].append(W[:, 0]); flux["w2"].append(W[:, 1])
             for k, nom, defaut in (("ao", "AO", 255), ("fs", "FS", 0), ("fa", "FA", 128), ("fb", "FB", 128), ("tx", "TX", 128), ("ty", "TY", 128), ("ba", "BA", 0), ("bb", "BB", 0), ("bw", "BW", 255), ("ex", "EX", 0)):
                 flux[k].append(d[nom][sel].astype(np.uint8) if nom in d else np.full(n, defaut, dtype=np.uint8))
             # Les triangles : (a − a précédent), (b − a), (c − a), tous positifs.

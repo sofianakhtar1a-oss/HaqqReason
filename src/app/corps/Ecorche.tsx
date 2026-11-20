@@ -4,19 +4,21 @@ import { GraduationCap, Layers, Rotate3d, Settings, Trophy, Volume2, VolumeX } f
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { BoutonCompte } from "@/components/compte/BoutonCompte";
 import { Logo } from "@/components/Logo";
-import type { Scene } from "@/lib/corps/scene";
+import { useAppareil } from "@/lib/corps/appareil";
+import type { CategorieId } from "@/lib/corps/niveaux";
 import type { StructureScene } from "@/lib/corps/types";
 import { regler, useEcorche } from "@/lib/corps/progression";
 import { useTextes } from "@/lib/modules/textes-client";
 import { Accueil } from "./Accueil";
-import { COUCHES_DEFAUT, type Couches } from "./communs";
+import { type Calques, COUCHES_DEFAUT, type Couches } from "./communs";
 import { Explorer } from "./Explorer";
 import { Fiches } from "./Fiches";
-import { chargerScene } from "./moteur/chargement";
+import { chargerScene, type Scene } from "./moteur/chargement";
 import { Corps3D, type Corps3DPoignee, type EtatStructure } from "./moteur/Corps3D";
 import { type Lancement, Partie } from "./Partie";
 import { Progres } from "./Progres";
 import { Reglages } from "./Reglages";
+import { Sources } from "./Sources";
 import { NommeLesTous, CorpsMuet } from "./Jeux";
 import "./ecorche.css";
 import "@fontsource/eb-garamond/400.css";
@@ -43,6 +45,12 @@ const ONGLETS: { id: Onglet; nom: string; Icone: typeof GraduationCap }[] = [
 
 export type EtatScene = {
   couches: Couches;
+  /** Les enveloppes qu'on ne montre pas d'office (fascias, gaines, bourses, séreuses). */
+  calques: Calques;
+  /** Les muscles dont on montre les surfaces d'insertion. */
+  attaches: string[] | null;
+  /** Les structures qu'on veut voir : ce qui les couvre s'efface. */
+  decouvrir: string[] | null;
   profondeur: number;
   etats: Record<string, EtatStructure>;
   isoler: string[] | null;
@@ -52,11 +60,12 @@ export type EtatScene = {
   retrait: boolean;
 };
 
-const SCENE_DEFAUT: EtatScene = { couches: COUCHES_DEFAUT, profondeur: 0, etats: {}, isoler: null, rotation: true, etiquette: null, retrait: false };
+const SCENE_DEFAUT: EtatScene = { couches: COUCHES_DEFAUT, calques: {}, attaches: null, decouvrir: null, profondeur: 0, etats: {}, isoler: null, rotation: true, etiquette: null, retrait: false };
 
 export type Stage = {
   scene: Scene | null;
   poignee: React.RefObject<Corps3DPoignee | null>;
+  /** Règle la scène ; les enveloppes et les attaches s'éteignent si l'écran ne les demande pas. */
   regler: (s: Partial<EtatScene>) => void;
   /** Ce qui se passe quand on touche le corps (null : rien). */
   surChoix: (f: ((s: StructureScene | null) => void) | null) => void;
@@ -69,7 +78,7 @@ export type Navigation = {
   jeu: (j: Jeu) => void;
 };
 
-export type Jeu = { sorte: "nomme" | "muet"; categorie: "os" | "muscles" | "tendons" | "arteres"; grande: string; graine?: number };
+export type Jeu = { sorte: "nomme" | "muet"; categorie: Exclude<CategorieId, "corps">; grande: string; graine?: number };
 
 type Route = { onglet: Onglet; detail: string | null };
 function lireRoute(): Route {
@@ -81,6 +90,7 @@ function lireRoute(): Route {
 export function Ecorche() {
   const t = useTextes("corps");
   const etat = useEcorche();
+  const appareil = useAppareil();
   const [route, setRoute] = useState<Route>({ onglet: "apprendre", detail: null });
   const [scene, setScene] = useState<Scene | null>(null);
   const [charge, setCharge] = useState(0);
@@ -89,6 +99,7 @@ export function Ecorche() {
   const [partie, setPartie] = useState<Lancement | null>(null);
   const [jeu, setJeu] = useState<Jeu | null>(null);
   const [reglages, setReglages] = useState(false);
+  const [sources, setSources] = useState(false);
   const poignee = useRef<Corps3DPoignee | null>(null);
   const choix = useRef<((s: StructureScene | null) => void) | null>(null);
   const survol = useRef<((s: StructureScene | null) => void) | null>(null);
@@ -117,7 +128,7 @@ export function Ecorche() {
     () => ({
       scene,
       poignee,
-      regler: (s) => setVue((v) => ({ ...v, ...s })),
+      regler: (s) => setVue((v) => ({ ...v, calques: {}, attaches: null, decouvrir: null, ...s })),
       surChoix: (f) => {
         choix.current = f;
       },
@@ -236,6 +247,11 @@ export function Ecorche() {
             ref={poignee}
             scene={scene}
             couches={vue.couches}
+            calques={vue.calques}
+            attaches={vue.attaches}
+            decouvrir={vue.decouvrir}
+            finesse={appareil.finesse}
+            aspect={appareil.aspect}
             profondeur={vue.profondeur}
             etats={vue.etats}
             isoler={vue.isoler}
@@ -250,7 +266,7 @@ export function Ecorche() {
               <span className="ec-chargement-barre">
                 <span style={{ transform: `scaleX(${Math.max(0.04, charge)})` }} />
               </span>
-              <span className="ec-chargement-etape">{charge < 0.3 ? "Le squelette" : charge < 0.65 ? "Les muscles" : charge < 0.78 ? "Les tendons" : "Les artères"}</span>
+              <span className="ec-chargement-etape">{charge < 0.3 ? "Le squelette" : charge < 0.8 ? "Les muscles" : "Les tendons"}</span>
             </div>
           )}
           {erreur && (
@@ -262,6 +278,14 @@ export function Ecorche() {
         </section>
         <section className="ec-panneau" aria-live={enJeu ? "polite" : undefined}>
           {ecran}
+          {!enJeu && (
+            <p className="ec-credits">
+              Modèles : Z-Anatomy et BodyParts3D, CC BY-SA.{" "}
+              <button type="button" className="ec-lien" onClick={() => setSources(true)}>
+                Sources et licences
+              </button>
+            </p>
+          )}
         </section>
       </main>
 
@@ -275,7 +299,8 @@ export function Ecorche() {
           ))}
         </nav>
       )}
-      {reglages && <Reglages fermer={() => setReglages(false)} />}
+      {reglages && <Reglages fermer={() => setReglages(false)} sources={() => setSources(true)} />}
+      {sources && <Sources fermer={() => setSources(false)} />}
     </div>
   );
 }

@@ -28,11 +28,20 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
   chaque muscle : ses faces tendineuses (matière « Tendon »), ses surfaces d'origine et de terminaison posées sur les os,
   son nerf et sa loge (collections), sa famille d'action (matière).
 - **Chaîne** : `scripts/corps/01_exporter.py` (Blender en module Python, `bpy` 5.3) sort chaque objet évalué ;
-  la suite (nettoyage, niveaux de détail, attributs, paquets) est en TypeScript dans `scripts/corps/`.
+  la suite (nettoyage, niveaux de détail, attributs, paquets, catalogue) est en Python dans `scripts/corps/`
+  (voir son `LISEZMOI.md`).
   Les données brutes restent hors du dépôt (`~/donnees-corps`), les paquets finis vont dans `public/corps/`.
 - **Moteur** : on garde et on pousse le moteur WebGL2 maison (quatre dessins par image, sélection au pixel,
   états par structure) plutôt que three.js : il tient déjà des milliers de structures à 60 images par seconde sur
   téléphone, et les matières des tissus demandent de toute façon des shaders écrits à la main.
+- **Zones** : dans Z-Anatomy, un tendon est une partie du maillage de son muscle. Chaque sommet porte un code de
+  zone ; le moteur en fait une structure à part entière (on la touche, on l'allume, on la nomme).
+- **Voiles** : le platysma et la gaine du droit de l'abdomen couvrent ce qu'un écorché montre ; on ne les affiche
+  qu'avec les fascias. La peau de Z-Anatomy ne sert qu'à calculer ce qui couvre chaque muscle : elle n'est jamais affichée.
+- **Planches** : la composition des planches publiées est figée (`scripts/corps/donnees/planches-publiees.json`).
+  Les nouvelles structures s'explorent tout de suite ; leurs planches s'ajouteront à la suite, une fois les rangs relus.
+- **Haute définition** : le niveau le plus fin (45 Mo) reste hors du dépôt tant que les modèles bougent
+  (`donnees/publication.json`, `.gitignore`) ; le site sert alors au mieux le niveau standard.
 - **Repère** : mètres, y vers le haut depuis le sol, x vers la gauche du sujet, z vers l'avant
   (depuis Blender : x = x, y = z, z = −y).
 
@@ -43,16 +52,16 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
 | 1.1 | Sources, licences, export depuis Blender | 4 | 4 |
 | 1.2 | Classement : couches, structures, côtés, noms français et latins (TA2), exclusions | 4 | 4 |
 | 1.3 | Géométrie : soudure, normales, vaisseaux retracés, lissage, trois niveaux de détail | 4 | 3 |
-| 1.4 | Attributs : occlusion précalculée, sens des fibres, tendon et cartilage, poids d'animation, onde artérielle | 4 | 1 |
+| 1.4 | Attributs : occlusion précalculée, sens des fibres, tendon et cartilage, poids d'animation, onde artérielle | 4 | 3 |
 | 1.5 | Paquets compressés, noms hachés, chargement progressif | 2 | 2 |
-| 2.1 | Moteur : chargement des paquets, détail selon l'appareil, sélection, états | 4 | 2 |
+| 2.1 | Moteur : chargement des paquets, détail selon l'appareil, sélection, états | 4 | 3 |
 | 2.2 | Matières physiques par tissu (muscle, tendon, os, cartilage, artère, veine, nerf, viscère) | 5 | 2 |
 | 2.3 | Lumière de studio, ombres, occlusion, mappage tonal, anticrénelage, profondeur de champ | 5 | 1 |
-| 2.4 | Deux rendus (pièce fraîche, pièce plastinée), qualité adaptative | 2 | 0 |
-| 3.1 | Catalogue complet des os, muscles, tendons, artères, relié aux modèles | 4 | 1 |
-| 3.2 | Nouvelles couches : veines, nerfs, ligaments et cartilages, viscères, encéphale | 4 | 0 |
+| 2.4 | Deux rendus (pièce fraîche, pièce plastinée), qualité adaptative | 2 | 1 |
+| 3.1 | Catalogue complet des os, muscles, tendons, artères, relié aux modèles | 4 | 3 |
+| 3.2 | Nouvelles couches : veines, nerfs, ligaments et cartilages, viscères, encéphale | 4 | 1 |
 | 3.3 | Listes de référence TA2, test de couverture, structures manquantes modélisées | 4 | 0 |
-| 4.1 | Dissection au geste, isolement avec les attaches, vue éclatée | 3 | 0 |
+| 4.1 | Dissection au geste, isolement avec les attaches, vue éclatée | 3 | 1 |
 | 4.2 | Plans de coupe avec surfaces de coupe réalistes | 3 | 0 |
 | 4.3 | Squelette articulé : segments, axes, amplitudes | 4 | 0 |
 | 4.4 | Contraction des muscles, action de chaque muscle, cœur et pouls | 4 | 0 |
@@ -65,10 +74,10 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
 | 6.1 | Nouvelles méthodes de quiz sur les fonctions | 6 | 0 |
 | 6.2 | Répétition espacée FSRS par facette, certitude, reprise de la progression | 4 | 0 |
 | 6.3 | Planches exhaustives, examen final, carte de maîtrise par facette | 4 | 0 |
-| 7.1 | Interface : couches, coupes, mouvements, fiches enrichies, page « Sources et licences » | 4 | 0 |
-| 7.2 | Captures de contrôle, tests, performances, mise en ligne, bilan | 4 | 0 |
+| 7.1 | Interface : couches, coupes, mouvements, fiches enrichies, page « Sources et licences » | 4 | 1 |
+| 7.2 | Captures de contrôle, tests, performances, mise en ligne, bilan | 4 | 1 |
 
-**Total fait : 21 / 100.**
+**Total fait : 31 / 100.**
 
 ## Journal
 
@@ -80,6 +89,28 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
   précalculées (`04_attributs.py`, `rayons.c`), les paquets sont écrits (`05_paquets.py` : 40 / 13 / 4 Mo) et le catalogue
   est généré (`06_catalogue.py` : 1 605 éléments). Le nouveau moteur (`src/app/corps/moteur/reel.ts`) affiche le corps réel
   dans la page d'essai `/tmp/ecorche2` (hors dépôt). Reste avant la bascule : fibres, réglage des matières, intégration.
+
+- 20/11 19:57 — Le sens des fibres est calculé pour les muscles, tendons et ligaments (`04b_fibres.py`), et dessiné en
+  relief par le moteur. Les tendons, qui sont dans Z-Anatomy des parties du maillage des muscles, deviennent des
+  structures à part entière grâce aux zones (`04c_zones.py` : 164 zones, 94 tendons, dont les 22 de la première version).
+  Le catalogue compte 1 700 éléments ; 225 des 227 identifiants d'origine sont repris (restent le semi-épineux de la tête
+  et l'aponévrose bicipitale, absents des modèles : à modéliser). Les planches déjà jouées gardent leur contenu
+  (`donnees/planches-publiees.json`). En cours : le branchement du site sur le nouveau moteur (la bascule).
+
+- 20/11 20:26 — Le site est branché sur le nouveau moteur (`Corps3D.tsx`, `modele/modele.ts`, `moteur/chargement.ts`) :
+  le corps réel s'affiche, les dix couches et les enveloppes (fascias, gaines, bourses, séreuses) se montrent à la
+  demande et se téléchargent à ce moment-là, les surfaces d'insertion d'un muscle s'allument (origine en rouge,
+  terminaison en bleu). Les anciens fichiers du corps fabriqué (`anatomie/`, `geometrie.ts`, `scene.ts`, `rendu.ts`)
+  sont retirés. Tests, typage, lint et construction passent. Le platysma et la gaine du droit de l'abdomen deviennent
+  des « voiles » qu'on ne montre qu'avec les fascias (`commun.py`). Reste avant la mise en ligne : recalcul de
+  l'occlusion sans les voiles (en cours), contrôle sur téléphone, parcours d'une partie.
+
+- 20/11 20:55 — La bascule est prête et mise en ligne. Ce qui couvre chaque muscle est calculé
+  (`04d_couvertures.py`) : pour montrer un muscle profond, le site n'ôte plus que ce qui le cache (le petit pectoral
+  apparaît sous le seul grand pectoral). Le moteur mesure sa cadence et s'allège de lui-même (résolution, ombres) ;
+  la sélection ne dessine plus que le pixel visé. Une page « Sources et licences » cite Z-Anatomy et BodyParts3D.
+  Contrôles faits en rendu logiciel, sur ordinateur et téléphone : accueil, planches, explorateur, une partie
+  (reconnaître, situer). Non mesuré ici : les images par seconde sur une vraie carte graphique.
 
 ## Pour reprendre après une interruption
 

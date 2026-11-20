@@ -2,13 +2,13 @@
 
 import { Check, ChevronRight, Lightbulb, RotateCcw, Timer, X } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ELEMENTS, PAR_ID } from "@/lib/corps/catalogue";
-import { CATEGORIES, type CategorieId, COEURS, etoilesPour, niveauxDe } from "@/lib/corps/niveaux";
+import { ELEMENTS, PAR_ID, vautPour } from "@/lib/corps/catalogue";
+import { CATEGORIES, type CategorieId, COEURS, ELEMENTS_APPRIS, EN_PLANCHE, etoilesPour, niveauxDe } from "@/lib/corps/niveaux";
 import { battreRecord, finirNiveau, noterErreur, noterJournal, noterReponse, profilActuel, useEcorche } from "@/lib/corps/progression";
 import { article, type Difficulte, defiDuJour, METHODES, partieDeNiveau, type Question, questionMelangee, questionSur, structuresDe, type TypeQ } from "@/lib/corps/quiz";
 import { jugerNom, type Jugement } from "@/lib/corps/texte";
 import { REGIONS } from "@/lib/corps/types";
-import { Cartel, Coeurs, Etoiles, TEINTE, miseEnScene, romain } from "./communs";
+import { Cartel, Coeurs, COUCHES_DEFAUT, Etoiles, TEINTE, miseEnScene, romain } from "./communs";
 import type { Stage } from "./Ecorche";
 import type { EtatStructure } from "./moteur/Corps3D";
 import { dire, ressentir } from "./sons";
@@ -92,7 +92,9 @@ export function Partie({ lancement, stage, fermer, relancer }: { lancement: Lanc
       const e = PAR_ID.get(montre) ?? PAR_ID.get(question.cible);
       if (!e) return;
       const structures = stage.poignee.current?.structuresDe(e.id) ?? [];
-      const { couches, profondeur } = miseEnScene(e, structures);
+      const { couches, calques, profondeur, decouvrir } = miseEnScene(e);
+      // Un organe ou un noyau du cerveau peut être caché par ses voisins : on le montre seul, le reste en transparence.
+      const enfoui = e.couche === "viscere" || e.couche === "encephale";
       const etats: Record<string, EtatStructure> = {};
       if (!apres) {
         if (question.montrer) etats[question.cible] = { teinte: TEINTE.laiton, pulse: true };
@@ -105,10 +107,12 @@ export function Partie({ lancement, stage, fermer, relancer }: { lancement: Lanc
       }
       const voirTout = !question.montrer && !apres && question.reponse === "clic";
       stage.regler({
-        couches: voirTout || question.montrer || apres ? couches : { os: 1, muscle: 1, tendon: 1, artere: 0 },
+        couches: voirTout || question.montrer || apres ? couches : COUCHES_DEFAUT,
+        calques: voirTout || question.montrer || apres ? calques : {},
         profondeur: voirTout || question.montrer || apres ? profondeur : 0,
+        decouvrir: voirTout || question.montrer || apres ? decouvrir : null,
         etats,
-        isoler: null,
+        isoler: enfoui && (question.montrer || apres) ? Object.keys(etats) : null,
         rotation: false,
         etiquette: apres ? { id: montre, texte: PAR_ID.get(montre)?.nom ?? "" } : null,
         retrait: false,
@@ -119,7 +123,7 @@ export function Partie({ lancement, stage, fermer, relancer }: { lancement: Lanc
       else if (question.reponse === "clic") {
         // Chercher sur le corps : la grande région, sans désigner la structure.
         const g = GRANDE.get(e.region);
-        const voisins = ELEMENTS.filter((x) => x.couche === e.couche && GRANDE.get(x.region) === g).map((x) => x.id);
+        const voisins = (EN_PLANCHE.has(e.id) ? ELEMENTS_APPRIS : ELEMENTS).filter((x) => x.couche === e.couche && GRANDE.get(x.region) === g).map((x) => x.id);
         const cote = structures.length && structures.every((s) => s.cote === "d") ? "d" : "g";
         cam.viser(voisins, { marge: 1.05, cote, depuis: e.id });
       } else cam.vue("ensemble");
@@ -181,7 +185,8 @@ export function Partie({ lancement, stage, fermer, relancer }: { lancement: Lanc
     stage.surChoix((s) => {
       if (!q || reponse || fin || q.reponse !== "clic") return;
       if (!s) return;
-      repondre({ verdict: s.element === q.attendu ? "juste" : "faux", touche: s.element === q.attendu ? undefined : s.element, texte: PAR_ID.get(s.element)?.nom });
+      const juste = vautPour(s.element, q.attendu);
+      repondre({ verdict: juste ? "juste" : "faux", touche: juste ? undefined : s.element, texte: PAR_ID.get(s.element)?.nom });
     });
     return () => stage.surChoix(null);
   }, [stage, q, reponse, fin, repondre]);

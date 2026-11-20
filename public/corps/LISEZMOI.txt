@@ -1,0 +1,16 @@
+Les modèles 3D de L'Écorché (fichiers *.bin de ce dossier)
+
+Ils sont dérivés de :
+  - « Z-Anatomy - The libre 3D atlas of anatomy - CC-BY-SA 4.0 » (https://www.z-anatomy.com)
+  - « BodyParts3D - The Database Center for Life Science - CC-BY-SA 2.1 Japan »
+    BodyParts3D, Copyright (c) 2008 Life Science Integrated Database Center
+  - et, par Z-Anatomy : « Brainder » et « White matter » (University of Washington),
+    « Cranial Nerves and Foramina - by University of Dundee, CAHID - CC-BY 4.0 »
+
+Modifications : modèles allégés en plusieurs niveaux de détail, lissés, vaisseaux et nerfs retracés en tubes,
+occlusion et sens des fibres précalculés, tendons séparés en zones, noms relus en français. La peau, les organes
+génitaux externes et les modèles sous licence non commerciale (oreille interne, rein) ont été écartés.
+
+Licence de ces fichiers : Creative Commons Attribution - Partage dans les mêmes conditions 4.0 International
+(CC BY-SA 4.0) - https://creativecommons.org/licenses/by-sa/4.0/
+La chaîne qui les fabrique est dans le dépôt : scripts/corps/.

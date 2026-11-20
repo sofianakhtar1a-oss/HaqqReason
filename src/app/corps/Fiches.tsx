@@ -3,7 +3,8 @@
 import { Check, RotateCcw, Undo2, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { PAR_ID } from "@/lib/corps/catalogue";
-import { CATEGORIES, type CategorieId, niveauxDe } from "@/lib/corps/niveaux";
+import { CATEGORIES, type CategorieId, IDS_CATEGORIES, niveauxDe } from "@/lib/corps/niveaux";
+import { QUEL } from "@/lib/corps/quiz";
 import { aRevoir, mesFavoris, noterReponse, useEcorche } from "@/lib/corps/progression";
 import { Cartel, TEINTE, miseEnScene } from "./communs";
 import type { Navigation, Stage } from "./Ecorche";
@@ -12,10 +13,7 @@ import { dire, jouer } from "./sons";
 type Paquet = CategorieId | "favoris" | "revoir";
 const PAQUETS: { id: Paquet; nom: string }[] = [
   { id: "revoir", nom: "À revoir" },
-  { id: "os", nom: "Os" },
-  { id: "muscles", nom: "Muscles" },
-  { id: "tendons", nom: "Tendons" },
-  { id: "arteres", nom: "Artères" },
+  ...IDS_CATEGORIES.filter((c) => c !== "corps").map((c) => ({ id: c as Paquet, nom: CATEGORIES[c].nom.replace(/^(Les |Le |L')/, "").replace(/^./, (l) => l.toUpperCase()) })),
   { id: "favoris", nom: "Mes fiches" },
 ];
 
@@ -56,8 +54,8 @@ export function Fiches({ stage, nav }: { stage: Stage; nav: Navigation }) {
       stage.poignee.current?.vue("ensemble");
       return;
     }
-    const { couches, profondeur } = miseEnScene(el, stage.poignee.current?.structuresDe(el.id) ?? []);
-    stage.regler({ couches, profondeur, etats: { [el.id]: { teinte: retournee ? TEINTE.juste : TEINTE.laiton, pulse: !retournee } }, isoler: null, rotation: false, etiquette: retournee ? { id: el.id, texte: el.nom } : null, retrait: false });
+    const { couches, calques, profondeur, decouvrir } = miseEnScene(el);
+    stage.regler({ couches, calques, profondeur, decouvrir, etats: { [el.id]: { teinte: retournee ? TEINTE.juste : TEINTE.laiton, pulse: !retournee } }, isoler: null, rotation: false, etiquette: retournee ? { id: el.id, texte: el.nom } : null, retrait: false });
     stage.poignee.current?.viser([el.id], { marge: 1.6 });
   }, [el, retournee, stage]);
 
@@ -113,7 +111,7 @@ export function Fiches({ stage, nav }: { stage: Stage; nav: Navigation }) {
           </p>
           {!retournee ? (
             <>
-              <h2 className="ec-consigne">{el.couche === "os" ? "Quel est cet os ?" : el.couche === "muscle" ? "Quel est ce muscle ?" : el.couche === "artere" ? "Quelle est cette artère ?" : "Quelle est cette structure ?"}</h2>
+              <h2 className="ec-consigne">{QUEL[el.couche]}</h2>
               <p className="ec-note">Cherche dans ta tête, puis retourne.</p>
               <button
                 type="button"

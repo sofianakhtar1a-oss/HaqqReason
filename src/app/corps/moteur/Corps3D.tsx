@@ -1,12 +1,11 @@
 "use client";
 
 import { forwardRef, useEffect, useImperativeHandle, useMemo, useRef } from "react";
-import { AVANT_BRAS_R, BRAS_R, CENTRE_CRANE, CUISSE_R, JAMBE_R, TETE_HUMERUS } from "@/lib/corps/anatomie/reperes";
 import { PAR_ID } from "@/lib/corps/catalogue";
-import type { Scene } from "@/lib/corps/scene";
 import type { Couche, RegionId, StructureScene } from "@/lib/corps/types";
 import { type V3, borne, fois, longueur, moins, multiplier, perspective, plus, projeter, regarder, scal, unitaire } from "@/lib/corps/vec";
-import { type Camera, COUCHES, Rendu } from "./rendu";
+import { type Finesse, niveauPour, type Scene } from "./chargement";
+import { type Camera, ORDRE, RenduReel } from "./reel";
 
 /*
  * Le corps en 3D, qu'on fait tourner à 360°, qu'on rapproche, qu'on touche.
@@ -17,10 +16,14 @@ import { type Camera, COUCHES, Rendu } from "./rendu";
  *   • La caméra glisse avec inertie, et vole d'une structure à l'autre ; tout est instantané si le
  *     système demande moins d'animations.
  *   • Rien ne se dessine à vide : une image seulement quand quelque chose bouge.
+ *   • Les modèles arrivent couche par couche : ce qu'on demande à voir se télécharge à ce moment-là,
+ *     d'abord en version légère, puis à la finesse que l'appareil peut tenir.
  */
 
 export type EtatStructure = { teinte?: [number, number, number, number]; visible?: number; pulse?: boolean; choisi?: boolean };
 export type NomVue = "face" | "dos" | "gauche" | "droite" | "ensemble";
+/** Les enveloppes qu'on ne montre pas d'office : elles couvrent ce qu'on vient voir. */
+export type CalqueOptionnel = "fascia" | "gaine" | "bourse" | "enveloppe";
 
 export type Corps3DPoignee = {
   /** Cadrer ces éléments ; « depuis » : regarder du côté où cet élément-là se voit (sans le cadrer seul). */
@@ -33,12 +36,22 @@ export type Corps3DPoignee = {
 type Props = {
   scene: Scene | null;
   couches: Record<Couche, number>;
+  /** Les fascias, gaines synoviales, bourses et séreuses (0 à 1). */
+  calques?: Partial<Record<CalqueOptionnel, number>>;
+  /** Montrer les surfaces d'insertion de ces muscles : origines en rouge, terminaisons en bleu. */
+  attaches?: string[] | null;
+  /** La finesse des modèles : selon l'appareil, ou choisie. */
+  finesse?: Finesse;
+  /** La pièce fraîche (humide) ou plastinée (satinée). */
+  aspect?: "frais" | "plastine";
   /** La dissection : les muscles moins profonds que ce seuil s'effacent (0 : tout, 1 : sans les superficiels, 2 : les profonds seuls). */
   profondeur?: number;
   /** L'état de certaines structures (par identifiant d'élément). */
   etats?: Record<string, EtatStructure>;
   /** N'afficher que ces éléments (les autres deviennent des fantômes). */
   isoler?: string[] | null;
+  /** Ôter ce qui couvre ces éléments, et rien d'autre : la dissection qu'il faut pour les voir. */
+  decouvrir?: string[] | null;
   rotation?: boolean;
   interactif?: boolean;
   onChoisir?: (s: StructureScene | null) => void;
@@ -62,51 +75,56 @@ const angleProche = (de: number, vers: number) => {
   return de + d;
 };
 
+/*
+ * Les axes des membres, mesurés sur le modèle (mètres ; x vers la gauche du sujet, y vers le haut, z vers l'avant) :
+ * de l'épaule au coude, du coude au poignet, de la hanche au genou, du genou à la cheville.
+ */
+const AXES: Partial<Record<RegionId, [V3, V3]>> = {
+  bras: [[0.168, 1.385, -0.025], [0.232, 1.095, -0.03]],
+  "avant-bras": [[0.238, 1.09, -0.02], [0.268, 0.86, 0]],
+  cuisse: [[0.1, 0.86, -0.02], [0.068, 0.45, -0.015]],
+  jambe: [[0.072, 0.43, -0.025], [0.075, 0.08, -0.035]],
+};
+const POINTS: Partial<Record<RegionId, V3>> = {
+  main: [0.28, 0.78, 0.005],
+  pied: [0.08, 0.045, 0.02],
+  epaule: [0.165, 1.39, -0.02],
+  hanche: [0.09, 0.87, -0.02],
+  tete: [0, 1.62, -0.005],
+  cou: [0, 1.5, -0.02],
+};
+
 /** D'où regarder une structure : depuis l'axe de son segment (le bras, la cuisse…) vers elle. */
 function directionPour(s: StructureScene): V3 {
   const region = (PAR_ID.get(s.element)?.region ?? "thorax") as RegionId;
   const droite = s.centre[0] < 0;
   const m = (p: V3): V3 => (droite ? [-p[0], p[1], p[2]] : p);
-  const surSegment = (a: V3, b: V3): V3 => {
-    const [A, B] = [m(a), m(b)];
+  let ancre: V3;
+  const axe = AXES[region];
+  const point = POINTS[region];
+  if (axe) {
+    const [A, B] = [m(axe[0]), m(axe[1])];
     const ab = moins(B, A);
     const t = borne(scal(moins(s.centre, A), ab) / scal(ab, ab), 0, 1);
-    return plus(A, fois(ab, t));
-  };
-  const seg = (r: typeof BRAS_R): [V3, V3] => [r.point(0, 0, 0), r.point(1, 0, 0)];
-  let ancre: V3;
-  switch (region) {
-    case "bras":
-      ancre = surSegment(...seg(BRAS_R));
-      break;
-    case "avant-bras":
-      ancre = surSegment(...seg(AVANT_BRAS_R));
-      break;
-    case "cuisse":
-      ancre = surSegment(...seg(CUISSE_R));
-      break;
-    case "jambe":
-      ancre = surSegment(...seg(JAMBE_R));
-      break;
-    case "main":
-      ancre = m([0.258, 0.8, 0.012]);
-      break;
-    case "pied":
-      ancre = m([0.105, 0.05, 0.02]);
-      break;
-    case "epaule":
-      ancre = m(TETE_HUMERUS);
-      break;
-    case "tete":
-      ancre = CENTRE_CRANE;
-      break;
-    default:
-      ancre = [0, s.centre[1], -0.012];
-  }
+    ancre = plus(A, fois(ab, t));
+  } else if (point) ancre = region === "tete" || region === "cou" ? point : m(point);
+  else ancre = [0, s.centre[1], -0.02];
   let d = moins(s.centre, ancre);
   d = [d[0], d[1] * 0.4, d[2]];
-  if (longueur(d) < 0.004) d = [s.centre[0] * 0.5, 0, s.centre[2] + 0.012 >= 0 ? 1 : -1];
+  if (longueur(d) < 0.004) d = [s.centre[0] * 0.5, 0, s.centre[2] + 0.02 >= 0 ? 1 : -1];
   return unitaire(d);
+}
+
+const hexa = (h: string): [number, number, number, number] => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16), 255];
+const SANS_TEINTE: [number, number, number, number] = [0, 0, 0, 0];
+const ROUGE_ORIGINE: [number, number, number, number] = [214, 64, 52, 255];
+const BLEU_TERMINAISON: [number, number, number, number] = [58, 112, 214, 255];
+
+/** L'opacité voulue d'un calque du moteur. */
+function cibleDe(p: Props, calque: string): number {
+  if (calque === "insertion") return p.attaches?.length ? 1 : 0;
+  if (calque in p.couches) return p.couches[calque as Couche] ?? 0;
+  return p.calques?.[calque as CalqueOptionnel] ?? 0;
 }
 
 export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props, ref) {
@@ -119,13 +137,20 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
   });
 
   const moteur = useRef<{
-    r: Rendu;
+    r: RenduReel;
     scene: Scene | null;
     parElement: Map<string, number[]>;
     cam: Cam;
     vise: Cam;
     vitesse: [number, number];
-    opacites: Record<Couche, number>;
+    opacites: Record<string, number>;
+    /** Les calques dont les modèles ont été demandés. */
+    demandes: Set<string>;
+    /** La qualité du dessin, de 0 (tout) à 3 (le plus léger), réglée d'après la cadence mesurée. */
+    qualite: number;
+    mesure: { images: number; somme: number; ignorees: number };
+    tailler: () => void;
+    desabonner: (() => void) | null;
     vis: Float32Array;
     visCible: Float32Array;
     pulses: boolean;
@@ -155,7 +180,24 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     m.image = 0;
     const canvas = toile.current;
     if (!canvas) return;
-    const dt = Math.min(0.05, (t - (m.t0 || t)) / 1000) || 0.016;
+    const ecoule = (t - (m.t0 || t)) / 1000 || 0.016;
+    const dt = Math.min(0.05, ecoule);
+    // La cadence : quand deux images se suivent, le temps qui les sépare. Trop lente, on allège le dessin.
+    if (m.t0 && ecoule < 0.5) {
+      if (m.mesure.ignorees < 8) m.mesure.ignorees++;
+      else {
+        m.mesure.images++;
+        m.mesure.somme += ecoule;
+        if (m.mesure.images >= 20) {
+          const moyenne = m.mesure.somme / m.mesure.images;
+          m.mesure = { images: 0, somme: 0, ignorees: 4 };
+          if (moyenne > 0.024 && m.qualite < 3) {
+            m.qualite++;
+            m.tailler();
+          }
+        }
+      }
+    }
     m.t0 = t;
     const props = p.current;
     let bouge = false;
@@ -183,11 +225,15 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
       c.cible = plus(c.cible, fois(moins(v.cible, c.cible), k));
       bouge = true;
     }
-    // Les couches s'effacent et reviennent en fondu.
-    const ko = m.calmes ? 1 : 1 - Math.exp(-dt * 9);
-    for (const n of COUCHES) {
-      const cible = props.couches[n] ?? 0;
-      const a = m.opacites[n];
+    // Les couches s'effacent et reviennent en fondu ; une couche demandée attend que ses modèles soient là.
+    // Le fondu suit l'horloge, pas le nombre d'images : sur un appareil lent il ne dure pas plus longtemps.
+    const ko = m.calmes ? 1 : 1 - Math.exp(-Math.min(0.4, ecoule) * 9);
+    for (const n of ORDRE) {
+      const voulue = cibleDe(props, n);
+      const prete = m.scene ? m.scene.modele.niveau(n) !== null : false;
+      if (voulue > 0.01 && !prete) demander(n);
+      const cible = prete ? voulue : 0;
+      const a = m.opacites[n] ?? 0;
       if (Math.abs(cible - a) > 0.004) {
         m.opacites[n] = a + (cible - a) * ko;
         bouge = true;
@@ -211,7 +257,7 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     const oeil: V3 = plus(c.cible, [c.dist * Math.cos(c.pitch) * Math.sin(c.yaw), c.dist * Math.sin(c.pitch), c.dist * Math.cos(c.pitch) * Math.cos(c.yaw)]);
     const vue = regarder(oeil, c.cible);
     const proj = perspective(FOV, largeur / Math.max(1, hauteur), 0.02, 30);
-    m.camera = { vue, proj, oeil };
+    m.camera = { vue, proj, oeil, yaw: c.yaw };
     m.r.dessiner(m.camera, t / 1000);
     placerEtiquette();
     if (bouge || m.pulses || m.besoin) {
@@ -228,6 +274,38 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
         }
       }, attente);
     }
+  }
+
+  /** Fait venir les modèles d'un calque : la version légère tout de suite, puis celle que l'appareil peut tenir. */
+  function demander(calque: string) {
+    const m = moteur.current;
+    if (!m || !m.scene || m.demandes.has(calque)) return;
+    m.demandes.add(calque);
+    const modele = m.scene.modele;
+    const cible = niveauPour(p.current.finesse ?? "auto");
+    void modele
+      .demander(calque, 2)
+      .then(() => (cible < 2 ? modele.demander(calque, cible) : undefined))
+      .catch(() => {
+        // Le réseau a manqué : on réessaiera à la prochaine image qui demande ce calque.
+        moteur.current?.demandes.delete(calque);
+      });
+  }
+
+  /** Une zone sans tendon propre (un tendon minuscule) suit son muscle : on rend la pièce. */
+  function pieceDe(i: number): StructureScene | null {
+    const m = moteur.current;
+    const s = m?.scene?.structures[i];
+    if (!m || !m.scene || !s) return null;
+    if (s.zone && s.de !== undefined && m.scene.structures[s.de].element === s.element) return m.scene.structures[s.de];
+    return s;
+  }
+
+  function survoler(i: number, oui: boolean) {
+    const m = moteur.current;
+    if (!m || i < 0) return;
+    m.r.definir(i, { survol: oui });
+    for (const j of m.scene?.modele.suiveuses.get(i) ?? []) m.r.definir(j, { survol: oui });
   }
 
   function placerEtiquette() {
@@ -378,9 +456,9 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
   useEffect(() => {
     const canvas = toile.current;
     if (!canvas) return;
-    let r: Rendu;
+    let r: RenduReel;
     try {
-      r = new Rendu(canvas);
+      r = new RenduReel(canvas);
     } catch {
       canvas.dataset.erreur = "webgl";
       return;
@@ -394,7 +472,12 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
       cam: { ...depart, yaw: calmes ? 0.35 : -0.9, dist: calmes ? 3.1 : 3.8 },
       vise: depart,
       vitesse: [0, 0],
-      opacites: { os: 0, muscle: 0, tendon: 0, artere: 0 },
+      opacites: {},
+      demandes: new Set(),
+      desabonner: null,
+      qualite: 0,
+      mesure: { images: 0, somme: 0, ignorees: 0 },
+      tailler: () => undefined,
       vis: new Float32Array(0),
       visCible: new Float32Array(0),
       pulses: false,
@@ -408,14 +491,22 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
       chaud: 0,
       reveil: null,
     };
-    // La taille : celle de l'élément, en pixels réels (plafonnée pour garder 60 images par seconde).
-    const ro = new ResizeObserver(() => {
+    // La taille : celle de l'élément, en pixels réels, plafonnée selon la qualité que l'appareil tient à 60 images
+    // par seconde (qualité 0 : tout ; 1 : ombres plus petites ; 2 : sans ombres portées ; 3 : un pixel par point).
+    const tailler = () => {
+      const m = moteur.current;
+      const q = m?.qualite ?? 0;
       const rect = canvas.getBoundingClientRect();
       const tactile = window.matchMedia?.("(pointer: coarse)").matches;
-      const dpr = Math.min(window.devicePixelRatio || 1, tactile ? 1.75 : 2);
+      const plafond = [tactile ? 1.75 : 2, 1.5, 1.25, 1][q];
+      const dpr = Math.min(window.devicePixelRatio || 1, plafond);
+      r.reglages.ombres = q < 2;
+      r.reglages.tailleOmbre = q === 0 ? 2048 : 1024;
       r.redimensionner(Math.max(1, Math.round(rect.width * dpr)), Math.max(1, Math.round(rect.height * dpr)));
       reveiller();
-    });
+    };
+    moteur.current.tailler = tailler;
+    const ro = new ResizeObserver(tailler);
     ro.observe(canvas);
     const perdu = (ev: Event) => {
       ev.preventDefault();
@@ -428,6 +519,7 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
       const m = moteur.current;
       if (m?.image) cancelAnimationFrame(m.image);
       if (m?.reveil) clearTimeout(m.reveil);
+      m?.desabonner?.();
       moteur.current = null;
       r.detruire();
     };
@@ -435,54 +527,119 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // La scène arrive (une fois) : les tampons montent sur la carte graphique.
+  // La scène arrive (une fois) : la table des structures ; puis chaque paquet monte sur la carte graphique en arrivant.
   useEffect(() => {
     const m = moteur.current;
     const scene = props.scene;
     if (!m || !scene || m.scene === scene) return;
-    m.r.charger(scene.couches, scene.structures.length);
+    m.desabonner?.();
     m.scene = scene;
-    m.parElement = new Map();
-    scene.structures.forEach((s, i) => {
-      const l = m.parElement.get(s.element) ?? [];
-      l.push(i);
-      m.parElement.set(s.element, l);
-      if (s.teinte) m.r.definir(i, { teinte: s.teinte });
+    m.parElement = scene.parElement;
+    m.demandes = new Set();
+    const n = scene.structures.length;
+    m.r.structures(n);
+    for (const s of scene.structures) {
+      if (s.couleur) m.r.definir(s.id, { propre: hexa(s.couleur) });
+      // Les surfaces d'insertion : l'origine en rouge, la terminaison en bleu.
+      if (s.calque === "insertion") m.r.definir(s.id, { propre: scene.modele.insertionDe.get(s.id)?.sorte === "terminaison" ? BLEU_TERMINAISON : ROUGE_ORIGINE });
+      if (s.zone && s.de !== undefined && scene.structures[s.de].element !== s.element) m.r.definir(s.id, { coucheDesZones: true });
+    }
+    m.vis = new Float32Array(n).fill(m.calmes ? 1 : 0);
+    m.visCible = new Float32Array(n).fill(1);
+    for (let i = 0; i < n; i++) m.r.definir(i, { visible: m.vis[i] });
+    m.desabonner = scene.modele.abonner((paquet, base, zones) => {
+      const mm = moteur.current;
+      if (!mm) return;
+      mm.r.installer(paquet, base, zones);
+      reveiller(900);
     });
-    m.vis = new Float32Array(scene.structures.length).fill(m.calmes ? 1 : 0);
-    m.visCible = new Float32Array(scene.structures.length).fill(1);
-    for (let i = 0; i < m.vis.length; i++) m.r.definir(i, { visible: m.vis[i] });
+    // Ce qui est déjà là (le niveau léger du départ) passe à la finesse de l'appareil, sans bloquer l'affichage.
+    const cible = niveauPour(p.current.finesse ?? "auto");
+    setTimeout(() => {
+      if (moteur.current?.scene !== scene || cible >= 2) return;
+      for (const c of ORDRE) if (scene.modele.niveau(c) !== null) void scene.modele.demander(c, cible).catch(() => undefined);
+    }, 350);
     reveiller(1800);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.scene]);
 
-  // Les états, la dissection, l'isolement : la visibilité voulue de chaque structure.
+  // La finesse change (réglages) : les calques présents passent au nouveau niveau.
   useEffect(() => {
     const m = moteur.current;
     if (!m || !m.scene) return;
-    const { etats = {}, profondeur = 0, isoler } = props;
-    const isole = isoler && isoler.length ? new Set(isoler) : null;
+    const cible = niveauPour(props.finesse ?? "auto");
+    for (const c of ORDRE) if (m.scene.modele.niveau(c) !== null) void m.scene.modele.demander(c, cible).catch(() => undefined);
+  }, [props.finesse]);
+
+  // Les états, la dissection, l'isolement, les attaches : la visibilité et la teinte voulues de chaque structure.
+  useEffect(() => {
+    const m = moteur.current;
+    if (!m || !m.scene) return;
+    const { etats = {}, profondeur = 0, isoler, attaches, decouvrir } = props;
+    const structures = m.scene.structures;
+    const n = structures.length;
+    const garde = isoler && isoler.length ? new Set(isoler.flatMap((id) => m.parElement.get(id) ?? [])) : null;
+    // Ce qu'il faut ôter pour voir les éléments à découvrir : les pièces qui les couvrent (pas celles qu'on veut voir).
+    const voulues = new Set((decouvrir ?? []).flatMap((id) => m.parElement.get(id) ?? []).map((i) => structures[i].de ?? i));
+    const otees = new Set<number>();
+    for (const i of voulues) for (const c of m.scene.modele.couvrants.get(i) ?? []) if (!voulues.has(c)) otees.add(c);
+    const montrees = new Set(attaches ?? []);
+    const vis = new Float32Array(n);
+    const teintes: ([number, number, number, number] | undefined)[] = new Array(n);
+    const marques = new Uint8Array(n); // 1 : pulse, 2 : choisi
+    for (let i = 0; i < n; i++) {
+      const s = structures[i];
+      let v = 1;
+      if ((s.calque === "muscle" || s.calque === "tendon") && s.profondeur < profondeur && !voulues.has(s.de ?? i)) v = 0;
+      if (otees.has(s.de ?? i)) v = 0;
+      if (s.calque === "insertion") {
+        const ins = m.scene.modele.insertionDe.get(i);
+        v = ins && ins.muscles.some((x) => montrees.has(x)) ? 1 : 0;
+      } else {
+        // Un voile ne se montre qu'avec son calque (ou quand c'est lui qu'on étudie : son état le rallume plus bas).
+        const voile = PAR_ID.get(s.element)?.voile;
+        if (voile && !((props.calques?.[voile] ?? 0) > 0)) v = 0;
+        else if (garde && !garde.has(i)) v = Math.min(v, 0.1);
+      }
+      vis[i] = v;
+    }
+    // Les états par élément : les ensembles d'abord, pour qu'un de leurs membres puisse avoir le sien.
+    const entrees = Object.entries(etats).sort((a, b) => (PAR_ID.get(b[0])?.membres ? 1 : 0) - (PAR_ID.get(a[0])?.membres ? 1 : 0));
+    for (const [id, e] of entrees)
+      for (const i of m.parElement.get(id) ?? []) {
+        if (e.visible !== undefined) vis[i] = e.visible;
+        else if (PAR_ID.get(id)?.voile && (e.teinte || e.choisi || e.pulse)) vis[i] = 1;
+        teintes[i] = e.teinte;
+        marques[i] = (e.pulse ? 1 : 0) | (e.choisi ? 2 : 0);
+      }
+    // Une zone sans tendon propre suit sa pièce.
+    for (const [piece, zones] of m.scene.modele.suiveuses)
+      for (const z of zones) {
+        vis[z] = vis[piece];
+        teintes[z] = teintes[piece];
+        marques[z] = marques[piece];
+      }
     let pulses = false;
-    m.scene.structures.forEach((s, i) => {
-      const e = etats[s.element];
-      let vis = s.couche === "muscle" && s.profondeur < profondeur ? 0 : 1;
-      if (isole && !isole.has(s.element)) vis = Math.min(vis, 0.1);
-      if (e?.visible !== undefined) vis = e.visible;
-      m.visCible[i] = vis;
-      const base = s.teinte ?? [0, 0, 0, 0];
-      m.r.definir(i, { teinte: e?.teinte ?? base, pulse: Boolean(e?.pulse), choisi: Boolean(e?.choisi) });
-      if (e?.pulse && vis > 0.05) pulses = true;
-    });
+    for (let i = 0; i < n; i++) {
+      m.visCible[i] = vis[i];
+      m.r.definir(i, { teinte: teintes[i] ?? SANS_TEINTE, pulse: (marques[i] & 1) > 0, choisi: (marques[i] & 2) > 0 });
+      if (marques[i] & 1 && vis[i] > 0.05) pulses = true;
+    }
     m.pulses = pulses && !m.calmes;
     reveiller(900);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [props.scene, props.etats, props.profondeur, props.isoler]);
+  }, [props.scene, props.etats, props.profondeur, props.isoler, props.attaches, props.calques, props.decouvrir]);
 
-  // Les couches, la rotation, l'étiquette : une image de plus.
+  // Les couches, la rotation, l'étiquette, l'aspect de la pièce : une image de plus.
   useEffect(() => {
+    const m = moteur.current;
+    if (m) {
+      m.r.reglages.humide = props.aspect === "plastine" ? 0.22 : 1;
+      m.r.reglages.exposition = props.aspect === "plastine" ? 1.08 : 1;
+    }
     reveiller();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [props.couches, props.rotation, props.etiquette]);
+  }, [props.couches, props.calques, props.rotation, props.etiquette, props.aspect]);
 
   /* ---------- Les gestes ---------- */
 
@@ -503,7 +660,9 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
       const y = ((cy - rect.top) / rect.height) * canvas.height;
       const i = m.r.choisir(m.camera, x, y);
       reveiller();
-      return i >= 0 ? m.scene.structures[i] : null;
+      const s = i >= 0 ? pieceDe(i) : null;
+      // Les surfaces d'insertion ne se choisissent pas : elles montrent seulement où le muscle s'attache.
+      return s && s.element ? s : null;
     };
 
     const deplacer = (dx: number, dy: number) => {
@@ -545,8 +704,8 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
           const s = choisirSous(ev.clientX, ev.clientY);
           const i = s ? s.id : -1;
           if (i !== m.survol) {
-            if (m.survol >= 0) m.r.definir(m.survol, { survol: false });
-            if (i >= 0) m.r.definir(i, { survol: true });
+            survoler(m.survol, false);
+            survoler(i, true);
             m.survol = i;
             canvas.style.cursor = i >= 0 ? "pointer" : "grab";
             p.current.onSurvol(s);
@@ -579,7 +738,7 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
         }
       }
       if (m.survol >= 0) {
-        m.r.definir(m.survol, { survol: false });
+        survoler(m.survol, false);
         m.survol = -1;
       }
       canvas.style.cursor = "grabbing";
@@ -656,7 +815,7 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     const sortie = () => {
       const m = moteur.current;
       if (m && m.survol >= 0) {
-        m.r.definir(m.survol, { survol: false });
+        survoler(m.survol, false);
         m.survol = -1;
         p.current.onSurvol?.(null);
         reveiller();

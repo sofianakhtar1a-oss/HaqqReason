@@ -117,7 +117,7 @@ def classer(o, base, suff):
     if col == "4: Muscular system":
         if "bursa" in n:
             return "ligament", "bourse"
-        if re.search(r"fascia\b|fasciae$|septum|iliopectineal arch|tendinous arch", n) and "tensor" not in n:
+        if re.search(r"fascia\b|fasciae$|septum|iliopectineal arch|tendinous arch|^palmar aponeurosis", n) and "tensor" not in n:
             return "tendon", "fascia"
         if "retinaculum" in n:
             return "tendon", "retinaculum"

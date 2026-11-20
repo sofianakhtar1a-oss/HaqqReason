@@ -23,8 +23,17 @@ Les sources restent hors du dépôt ; seuls les scripts et les paquets finis son
 | 2 | `python 02_classer.py` | Couche, sorte, côté, nom officiel TA2, exclusions (peau, pudeur, licences non commerciales) |
 | 3 | `~/venv-bpy/bin/python 03_geometrie.py` | Soudure, lissage, trois niveaux de détail, tendon et cartilage par sommet, vaisseaux et nerfs retracés |
 | 4 | `python 04_attributs.py` | Profondeur des muscles, occlusion ambiante précalculée (lancer de rayons : `rayons.c`) |
+| 4 bis | `python 04b_fibres.py` | Le sens des fibres des muscles, tendons et ligaments (champ harmonique entre les attaches) |
+| 4 ter | `python 04c_zones.py` | Les zones : le tendon d'origine et le tendon terminal de chaque muscle, le ligament patellaire, l'aponévrose palmaire, la gaine du droit de l'abdomen |
+| 4 quater | `python 04d_couvertures.py` | Qui couvre qui (rayons tirés vers la peau, qui n'est jamais affichée), et la profondeur sous la peau |
 | 5 | `python 05_paquets.py` | Les paquets compressés de `public/corps/` et le manifeste |
-| 6 | `python 06_catalogue.py` | Les éléments, les pièces, les insertions et les repères de `src/lib/corps/modele/` |
+| 6 | `python 06_catalogue.py` | Les éléments, les pièces, les insertions, les repères et les planches de `src/lib/corps/modele/` |
+
+L'étape 4 réécrit les fichiers d'attributs : après elle, relancer 4 bis, 4 ter, puis 5 et 6.
+
+`donnees/` garde ce qui ne se recalcule pas : `heritage.json` (les fiches de la première version),
+`planches-publiees.json` (la composition des planches en ligne : elle ne change plus, la progression de chacun en
+dépend) et `publication.json` (la haute définition est-elle en ligne ? tant que non, ses paquets restent hors du dépôt).
 
 `apercu.py` rend une image de contrôle avec Cycles (indépendante du moteur du site).
 

@@ -1,13 +1,20 @@
 /*
  * L'Écorché — la forme des données : les pièces du modèle 3D (ce qu'on voit et touche) et les éléments
  * à apprendre (ce qu'on nomme). Un élément peut avoir plusieurs pièces : le biceps gauche et le droit,
- * les cinq vertèbres lombaires, les trois parties du sternum…
+ * ses deux chefs ; un ensemble réunit plusieurs éléments (les cinq vertèbres lombaires, les vraies côtes…).
  */
 
-import type { Maillage } from "./geometrie";
 import type { V3 } from "./vec";
 
-export type Couche = "os" | "muscle" | "tendon" | "artere";
+/** Les couches que l'on apprend, de la charpente aux organes. */
+export type Couche = "os" | "muscle" | "tendon" | "ligament" | "artere" | "veine" | "nerf" | "viscere" | "encephale" | "lymphe";
+export const COUCHES: readonly Couche[] = ["os", "muscle", "tendon", "ligament", "artere", "veine", "nerf", "viscere", "encephale", "lymphe"];
+
+/**
+ * Les calques du moteur : une couche, ou une enveloppe qu'on ne montre pas d'office (les fascias couvrent les
+ * muscles comme une peau, la plèvre cache les poumons), ou les surfaces d'insertion des muscles sur les os.
+ */
+export type Calque = Couche | "fascia" | "gaine" | "bourse" | "enveloppe" | "insertion";
 
 export type RegionId = "tete" | "cou" | "thorax" | "abdomen" | "dos" | "bassin" | "epaule" | "bras" | "avant-bras" | "main" | "hanche" | "cuisse" | "jambe" | "pied";
 
@@ -35,19 +42,6 @@ export const GRANDES_REGIONS = [
   { id: "membre-inf", nom: "Membre inférieur" },
 ] as const;
 export type GrandeRegion = (typeof GRANDES_REGIONS)[number]["id"];
-
-/** Une pièce du modèle : un maillage, une couche, l'élément qu'elle représente. */
-export type Piece = {
-  cle: string;
-  element: string;
-  couche: Couche;
-  maillage: Maillage;
-  /** Pour les muscles : 0 superficiel, 1 intermédiaire, 2 profond (la profondeur de dissection). */
-  profondeur: 0 | 1 | 2;
-  cote: "g" | "d" | null;
-  /** Une teinte propre et permanente (le cartilage, bleuté), [r, g, b, force] en 0-255. */
-  teinte?: [number, number, number, number];
-};
 
 export type SorteOs = "long" | "court" | "plat" | "irregulier" | "sesamoide";
 
@@ -87,7 +81,62 @@ export type Element = {
   memo?: string;
   /** Une anecdote, une histoire, un fait clinique. */
   anecdote?: string;
+
+  /* ---------- Ce que donnent les modèles (Z-Anatomy, TA2) ---------- */
+
+  /** Le nom officiel français (Terminologia Anatomica 2), quand le nom usuel en diffère. */
+  officiel?: string;
+  /** Le numéro TA2. */
+  ta2?: string;
+  /** Ce que c'est, dans sa couche : cartilage, dent, aponévrose, rétinaculum, capsule, ménisque, bourse… */
+  nature?: string;
+  /** Une structure que tout le monde n'a pas. */
+  inconstant?: boolean;
+  /** L'ensemble auquel il appartient (une vertèbre lombaire → les vertèbres lombaires). */
+  ensemble?: string;
+  /** Pour un ensemble : ses membres. */
+  membres?: string[];
+  /** Le nombre de chefs ou de parties modélisés. */
+  chefs?: number;
+  /** Muscles : le nerf (identifiant), la loge, la famille d'action, les os d'origine et de terminaison (identifiants). */
+  nerf?: string;
+  loge?: string;
+  famille?: string;
+  tendineux?: boolean;
+  origines?: string[];
+  terminaisons?: string[];
+  /** Muscles et tendons : 0 superficiel, 1 intermédiaire, 2 profond. */
+  profondeur?: number;
+  /** L'article qui convient au nom : « le », « la », « l' », « les ». */
+  art?: string;
+  /** Un tendon porté par le maillage de son muscle (une zone), et non par une pièce à part. */
+  zone?: boolean;
+  /** Une fiche née d'une règle (« Tendon du … ») : pas de nom latin officiel. */
+  genere?: boolean;
+  /**
+   * Un voile : une structure qui couvre ce qu'on vient voir (le platysma devant le cou, la gaine devant le droit de
+   * l'abdomen). On ne la montre qu'avec ce calque, ou quand c'est elle qu'on étudie.
+   */
+  voile?: "fascia" | "gaine" | "bourse" | "enveloppe";
 };
 
-/** Ce que le moteur reçoit : les pièces rangées par couche, prêtes à être dessinées. */
-export type StructureScene = { id: number; cle: string; element: string; couche: Couche; profondeur: 0 | 1 | 2; cote: "g" | "d" | null; centre: V3; rayon: number; teinte?: [number, number, number, number] };
+/** Une structure de la scène : une pièce d'un côté du corps, avec le numéro qui la désigne dans le moteur. */
+export type StructureScene = {
+  id: number;
+  cle: string;
+  /** L'élément qu'elle représente (vide pour une surface d'insertion). */
+  element: string;
+  couche: Couche;
+  calque: Calque;
+  profondeur: 0 | 1 | 2;
+  cote: "g" | "d" | null;
+  centre: V3;
+  rayon: number;
+  /** Le nom de la pièce quand il diffère de celui de l'élément (un chef, une partie). */
+  nom?: string;
+  /** Une couleur propre (les viscères), en hexadécimal. */
+  couleur?: string;
+  /** Une zone d'une pièce (le tendon d'un muscle) : son code, et le numéro de la pièce qui la porte. */
+  zone?: number;
+  de?: number;
+};

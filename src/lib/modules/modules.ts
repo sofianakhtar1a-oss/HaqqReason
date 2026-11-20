@@ -446,7 +446,7 @@ const CORPS: DefModule = {
         {
           cle: "meta.description",
           libelle: "Description pour Google",
-          defaut: "Le corps humain en 3D, sans peau, à faire tourner à 360° : les os, les muscles, les tendons et les artères, en planches progressives, avec des quiz, des fiches mémoire et des jeux.",
+          defaut: "Un vrai corps humain en 3D, sans peau, à faire tourner à 360° : os, muscles, tendons, ligaments, artères, veines, nerfs, viscères et encéphale, avec des planches progressives, des quiz, des fiches mémoire et des jeux.",
           long: true,
         },
         { cle: "tete.titre", libelle: "Nom dans la barre du haut", defaut: "L'Écorché" },
@@ -460,10 +460,10 @@ const CORPS: DefModule = {
         {
           cle: "accueil.chapo",
           libelle: "Introduction",
-          defaut: "Les os, les muscles, les tendons et les artères : chaque structure à reconnaître, à situer et à nommer, du crâne aux orteils.",
+          defaut: "Un vrai corps en trois dimensions, des os aux nerfs : chaque structure à explorer, à reconnaître, à situer et à nommer, du crâne aux orteils.",
           long: true,
         },
-        { cle: "accueil.categories", libelle: "Titre des couches", defaut: "Les quatre couches" },
+        { cle: "accueil.categories", libelle: "Titre des couches", defaut: "Les couches du corps" },
         { cle: "accueil.rapides", libelle: "Titre des jeux rapides", defaut: "Pour quelques minutes" },
       ],
     },

@@ -1,330 +1,21 @@
 /*
- * L'Écorché — le catalogue : chaque structure à apprendre, avec son nom (nomenclature française actuelle,
- * les anciens noms acceptés en réponse), son nom latin et anglais, sa région, son rang (0 : la plus connue),
- * et ce qui la définit : origine, terminaison, action et innervation des muscles ; sorte et articulations des os ;
- * muscle et attache des tendons ; provenance et territoire des artères. Plus une phrase pour retenir.
+ * L'Écorché — le catalogue : chaque structure à apprendre.
+ *
+ * Les éléments viennent des modèles (scripts/corps/06_catalogue.py) : un élément par structure de Z-Anatomy, avec
+ * son nom officiel (Terminologia Anatomica 2 : français, latin, anglais), sa région, son rang (0 : la plus connue),
+ * et ce que l'atlas sait de lui (les os où un muscle s'attache, son nerf, sa loge). Les fiches de la première
+ * version (origine, terminaison, action, mémo, anecdote…) sont reprises sous les mêmes identifiants.
+ * Les ensembles réunissent plusieurs éléments sous un nom courant : les vertèbres lombaires, les vraies côtes.
  */
 
-import type { Couche, Element, RegionId, SorteOs } from "./types";
+import elementsJson from "./modele/elements.json";
+import ensemblesJson from "./modele/ensembles.json";
+import type { Couche, Element } from "./types";
 
-type Extra = Partial<Pick<Element, "noms" | "nombre" | "pair" | "memo" | "anecdote">>;
+const elements = elementsJson as unknown as Element[];
+const ensembles = (ensemblesJson as unknown as Element[]).filter((e) => (e.membres?.length ?? 0) > 0);
 
-const os = (id: string, nom: string, latin: string, anglais: string, region: RegionId, rang: number, sorte: SorteOs | undefined, articulations: string[], x: Extra = {}): Element => ({
-  id,
-  couche: "os",
-  nom,
-  latin,
-  anglais,
-  region,
-  rang,
-  pair: true,
-  sorte,
-  articulations,
-  ...x,
-});
-
-const mu = (id: string, nom: string, latin: string, anglais: string, region: RegionId, rang: number, origine: string, terminaison: string, action: string, innervation: string, x: Extra = {}): Element => ({
-  id,
-  couche: "muscle",
-  nom,
-  latin,
-  anglais,
-  region,
-  rang,
-  pair: true,
-  origine,
-  terminaison,
-  action,
-  innervation,
-  ...x,
-});
-
-const te = (id: string, nom: string, latin: string, anglais: string, region: RegionId, rang: number, muscle: string, attache: string, x: Extra = {}): Element => ({
-  id,
-  couche: "tendon",
-  nom,
-  latin,
-  anglais,
-  region,
-  rang,
-  pair: true,
-  muscle,
-  attache,
-  ...x,
-});
-
-const ar = (id: string, nom: string, latin: string, anglais: string, region: RegionId, rang: number, provenance: string, territoire: string, x: Extra = {}): Element => ({
-  id,
-  couche: "artere",
-  nom,
-  latin,
-  anglais,
-  region,
-  rang,
-  pair: true,
-  provenance,
-  territoire,
-  ...x,
-});
-
-const IMPAIR = { pair: false } as const;
-
-/* ================================================================ les os */
-
-const OS: Element[] = [
-  os("frontal", "Os frontal", "Os frontale", "Frontal bone", "tete", 0, "plat", ["parietal", "os-nasaux", "maxillaire", "zygomatique", "sphenoide"], { ...IMPAIR, noms: ["frontal"], memo: "L'os du front ; il forme aussi le toit des orbites." }),
-  os("parietal", "Pariétal", "Os parietale", "Parietal bone", "tete", 1, "plat", ["frontal", "occipital", "temporal", "sphenoide"], { noms: ["os pariétal"], memo: "Les deux pariétaux forment le dôme du crâne, réunis par la suture sagittale." }),
-  os("occipital", "Os occipital", "Os occipitale", "Occipital bone", "tete", 1, "plat", ["parietal", "temporal", "sphenoide", "atlas"], { ...IMPAIR, noms: ["occipital"], memo: "Percé du foramen magnum, par où passe la moelle épinière." }),
-  os("temporal", "Temporal", "Os temporale", "Temporal bone", "tete", 1, "irregulier", ["parietal", "occipital", "sphenoide", "zygomatique", "mandibule"], { noms: ["os temporal"], memo: "Il abrite l'oreille moyenne et l'oreille interne.", anecdote: "Il contient les trois plus petits os du corps : le marteau, l'enclume et l'étrier." }),
-  os("sphenoide", "Sphénoïde", "Os sphenoidale", "Sphenoid bone", "tete", 3, "irregulier", ["frontal", "parietal", "temporal", "occipital", "zygomatique", "maxillaire"], { ...IMPAIR, noms: ["os sphénoïde"], memo: "En forme de papillon, au centre de la base du crâne : il touche tous les autres os du crâne." }),
-  os("os-nasaux", "Os nasaux", "Ossa nasalia", "Nasal bones", "tete", 2, "plat", ["frontal", "maxillaire"], { nombre: 2, noms: ["os nasal", "os propres du nez"], memo: "Ils forment l'arête osseuse du nez ; le reste est du cartilage." }),
-  os("maxillaire", "Maxillaire", "Maxilla", "Maxilla", "tete", 1, "irregulier", ["frontal", "os-nasaux", "zygomatique", "sphenoide"], { noms: ["maxilla", "maxillaire supérieur"], memo: "Il porte les dents du haut et forme le plancher des orbites." }),
-  os("zygomatique", "Zygomatique", "Os zygomaticum", "Zygomatic bone", "tete", 1, "irregulier", ["frontal", "maxillaire", "temporal", "sphenoide"], { noms: ["os zygomatique", "malaire", "os malaire", "pommette"], memo: "L'os de la pommette ; avec le temporal, il forme l'arcade zygomatique." }),
-  os("mandibule", "Mandibule", "Mandibula", "Mandible", "tete", 0, "irregulier", ["temporal"], { ...IMPAIR, noms: ["maxillaire inférieur", "mâchoire"], memo: "Le seul os mobile du crâne.", anecdote: "C'est l'os le plus solide de la face." }),
-  os("hyoide", "Os hyoïde", "Os hyoideum", "Hyoid bone", "cou", 2, "irregulier", [], { ...IMPAIR, noms: ["hyoïde"], memo: "Le seul os du corps qui ne s'articule avec aucun autre : il est suspendu par des muscles et des ligaments." }),
-  os("atlas", "Atlas", "Atlas", "Atlas", "cou", 1, "irregulier", ["occipital", "axis"], { ...IMPAIR, noms: ["c1", "première vertèbre cervicale"], memo: "Il porte la tête comme le titan Atlas portait le ciel ; il n'a pas de corps vertébral." }),
-  os("axis", "Axis", "Axis", "Axis", "cou", 2, "irregulier", ["atlas", "vertebres-cervicales"], { ...IMPAIR, noms: ["c2", "deuxième vertèbre cervicale"], memo: "Sa dent sert de pivot à l'atlas : c'est elle qui permet de dire « non » de la tête." }),
-  os("vertebres-cervicales", "Vertèbres cervicales", "Vertebrae cervicales", "Cervical vertebrae", "cou", 0, "irregulier", ["axis", "c7"], { ...IMPAIR, nombre: 7, noms: ["cervicales"], memo: "Sept au cou, chez presque tous les mammifères — même chez la girafe." }),
-  os("c7", "Vertèbre proéminente", "Vertebra prominens", "Vertebra prominens", "cou", 2, "irregulier", ["vertebres-cervicales", "vertebres-thoraciques"], { ...IMPAIR, noms: ["c7", "septième vertèbre cervicale"], memo: "Son long processus épineux se sent sous la peau, à la base de la nuque." }),
-  os("vertebres-thoraciques", "Vertèbres thoraciques", "Vertebrae thoracicae", "Thoracic vertebrae", "dos", 0, "irregulier", ["c7", "vertebres-lombaires", "cotes-vraies", "fausses-cotes", "cotes-flottantes"], { ...IMPAIR, nombre: 12, noms: ["vertèbres dorsales", "thoraciques"], memo: "Douze : une par paire de côtes." }),
-  os("vertebres-lombaires", "Vertèbres lombaires", "Vertebrae lumbales", "Lumbar vertebrae", "dos", 0, "irregulier", ["vertebres-thoraciques", "sacrum"], { ...IMPAIR, nombre: 5, noms: ["lombaires"], memo: "Les plus massives : elles portent le poids du haut du corps." }),
-  os("sacrum", "Sacrum", "Os sacrum", "Sacrum", "bassin", 0, "irregulier", ["vertebres-lombaires", "coccyx", "ilium"], { ...IMPAIR, memo: "Cinq vertèbres soudées, la clé de voûte du bassin." }),
-  os("coccyx", "Coccyx", "Os coccygis", "Coccyx", "bassin", 1, "irregulier", ["sacrum"], { ...IMPAIR, memo: "Le vestige de la queue : trois à cinq petites vertèbres soudées." }),
-  os("sternum", "Sternum", "Sternum", "Sternum", "thorax", 0, "plat", ["clavicule", "cotes-vraies"], { ...IMPAIR, memo: "Trois parties : le manubrium, le corps et le processus xiphoïde." }),
-  os("cotes-vraies", "Côtes vraies", "Costae verae", "True ribs", "thorax", 0, "plat", ["vertebres-thoraciques", "sternum"], { nombre: 14, noms: ["côtes"], memo: "Les sept premières paires : chacune rejoint directement le sternum par son cartilage." }),
-  os("fausses-cotes", "Fausses côtes", "Costae spuriae", "False ribs", "thorax", 1, "plat", ["vertebres-thoraciques"], { nombre: 6, memo: "Les 8e, 9e et 10e paires : leur cartilage rejoint celui de la côte du dessus." }),
-  os("cotes-flottantes", "Côtes flottantes", "Costae fluctuantes", "Floating ribs", "thorax", 1, "plat", ["vertebres-thoraciques"], { nombre: 4, memo: "Les 11e et 12e paires, libres en avant." }),
-  os("cartilages-costaux", "Cartilages costaux", "Cartilagines costales", "Costal cartilages", "thorax", 2, undefined, ["sternum", "cotes-vraies", "fausses-cotes"], { nombre: 20, memo: "Ils donnent au thorax sa souplesse pendant la respiration." }),
-  os("clavicule", "Clavicule", "Clavicula", "Clavicle", "epaule", 0, "long", ["sternum", "scapula"], { memo: "Le seul os long horizontal du corps.", anecdote: "C'est l'os le plus souvent fracturé, en tombant sur l'épaule ou la main tendue." }),
-  os("scapula", "Scapula", "Scapula", "Scapula", "epaule", 0, "plat", ["clavicule", "humerus"], { noms: ["omoplate"], memo: "L'ancienne omoplate : un triangle plat qui glisse sur le dos du thorax." }),
-  os("humerus", "Humérus", "Humerus", "Humerus", "bras", 0, "long", ["scapula", "radius", "ulna"], { memo: "L'os du bras.", anecdote: "Le choc électrique du coude vient du nerf ulnaire, qui passe derrière son épicondyle médial." }),
-  os("radius", "Radius", "Radius", "Radius", "avant-bras", 0, "long", ["humerus", "ulna", "scaphoide", "lunatum"], { memo: "Côté pouce : il tourne autour de l'ulna quand la main se retourne." }),
-  os("ulna", "Ulna", "Ulna", "Ulna", "avant-bras", 0, "long", ["humerus", "radius"], { noms: ["cubitus"], memo: "Côté petit doigt ; son olécrâne fait la pointe du coude." }),
-  os("scaphoide", "Scaphoïde", "Os scaphoideum", "Scaphoid", "main", 2, "court", ["radius", "lunatum", "os-trapeze", "trapezoide", "capitatum"], { memo: "Le plus souvent fracturé des os du poignet, en tombant sur la main." }),
-  os("lunatum", "Lunatum", "Os lunatum", "Lunate", "main", 3, "court", ["radius", "scaphoide", "triquetrum", "capitatum", "hamatum"], { noms: ["semi-lunaire"], memo: "En forme de croissant de lune." }),
-  os("triquetrum", "Triquetrum", "Os triquetrum", "Triquetrum", "main", 3, "court", ["lunatum", "pisiforme", "hamatum"], { noms: ["pyramidal"], memo: "Trois faces, d'où son nom." }),
-  os("pisiforme", "Pisiforme", "Os pisiforme", "Pisiform", "main", 3, "sesamoide", ["triquetrum"], { memo: "Gros comme un petit pois ; il se sent à la base de la paume, côté petit doigt." }),
-  os("os-trapeze", "Trapèze", "Os trapezium", "Trapezium", "main", 3, "court", ["scaphoide", "trapezoide", "metacarpiens"], { noms: ["os trapèze"], memo: "À la base du pouce : son articulation en selle permet de l'opposer aux autres doigts." }),
-  os("trapezoide", "Trapézoïde", "Os trapezoideum", "Trapezoid", "main", 3, "court", ["scaphoide", "os-trapeze", "capitatum", "metacarpiens"], { memo: "Le plus petit de la rangée du bas, coincé entre le trapèze et le capitatum." }),
-  os("capitatum", "Capitatum", "Os capitatum", "Capitate", "main", 3, "court", ["scaphoide", "lunatum", "trapezoide", "hamatum", "metacarpiens"], { noms: ["grand os"], memo: "Le plus gros os du poignet, au centre." }),
-  os("hamatum", "Hamatum", "Os hamatum", "Hamate", "main", 3, "court", ["lunatum", "triquetrum", "capitatum", "metacarpiens"], { noms: ["os crochu"], memo: "Reconnaissable à son crochet." }),
-  os("metacarpiens", "Métacarpiens", "Ossa metacarpi", "Metacarpals", "main", 1, "long", ["os-trapeze", "trapezoide", "capitatum", "hamatum", "phalanges-proximales"], { nombre: 10, memo: "Cinq par main : les os de la paume." }),
-  os("phalanges-proximales", "Phalanges proximales", "Phalanges proximales", "Proximal phalanges", "main", 1, "long", ["metacarpiens", "phalanges-moyennes", "phalanges-distales"], { nombre: 10, memo: "La première phalange de chaque doigt." }),
-  os("phalanges-moyennes", "Phalanges moyennes", "Phalanges mediae", "Middle phalanges", "main", 2, "long", ["phalanges-proximales", "phalanges-distales"], { nombre: 8, memo: "Le pouce n'en a pas : il n'a que deux phalanges." }),
-  os("phalanges-distales", "Phalanges distales", "Phalanges distales", "Distal phalanges", "main", 1, "long", ["phalanges-moyennes", "phalanges-proximales"], { nombre: 10, memo: "Celles qui portent les ongles." }),
-  os("ilium", "Ilium", "Os ilium", "Ilium", "bassin", 1, "plat", ["sacrum", "ischium", "pubis", "femur"], { noms: ["os iliaque", "aile iliaque"], memo: "L'aile du bassin ; sa crête se sent sous la ceinture." }),
-  os("ischium", "Ischium", "Os ischii", "Ischium", "bassin", 2, "irregulier", ["ilium", "pubis", "femur"], { memo: "On s'assoit sur ses tubérosités." }),
-  os("pubis", "Pubis", "Os pubis", "Pubis", "bassin", 1, "irregulier", ["ilium", "ischium", "femur"], { memo: "Les deux pubis se rejoignent en avant à la symphyse pubienne." }),
-  os("femur", "Fémur", "Femur", "Femur", "cuisse", 0, "long", ["ilium", "ischium", "pubis", "patella", "tibia"], { memo: "L'os le plus long et le plus solide du corps : environ un quart de la taille." }),
-  os("patella", "Patella", "Patella", "Patella", "cuisse", 0, "sesamoide", ["femur"], { noms: ["rotule"], memo: "L'ancienne rotule : le plus gros os sésamoïde, pris dans le tendon du quadriceps." }),
-  os("tibia", "Tibia", "Tibia", "Tibia", "jambe", 0, "long", ["femur", "fibula", "talus"], { memo: "Sa face médiale est juste sous la peau : c'est l'os qu'on se cogne." }),
-  os("fibula", "Fibula", "Fibula", "Fibula", "jambe", 1, "long", ["tibia", "talus"], { noms: ["péroné"], memo: "L'ancien péroné, grêle et en dehors ; sa pointe fait la malléole latérale." }),
-  os("talus", "Talus", "Talus", "Talus", "pied", 2, "court", ["tibia", "fibula", "calcaneus", "naviculaire"], { noms: ["astragale"], memo: "Il transmet tout le poids du corps au pied ; aucun muscle ne s'y attache." }),
-  os("calcaneus", "Calcanéus", "Calcaneus", "Calcaneus", "pied", 1, "court", ["talus", "cuboide"], { noms: ["calcanéum", "os du talon"], memo: "L'os du talon, le plus gros du pied." }),
-  os("naviculaire", "Naviculaire", "Os naviculare", "Navicular", "pied", 3, "court", ["talus", "cuneiformes", "cuboide"], { noms: ["scaphoïde tarsien"], memo: "En forme de petite barque (navis)." }),
-  os("cuboide", "Cuboïde", "Os cuboideum", "Cuboid", "pied", 3, "court", ["calcaneus", "naviculaire", "cuneiformes", "metatarsiens"], { memo: "Le cube du bord externe du pied." }),
-  os("cuneiformes", "Cunéiformes", "Ossa cuneiformia", "Cuneiforms", "pied", 3, "court", ["naviculaire", "cuboide", "metatarsiens"], { nombre: 6, memo: "Trois par pied (médial, intermédiaire, latéral), taillés en coin." }),
-  os("metatarsiens", "Métatarsiens", "Ossa metatarsi", "Metatarsals", "pied", 1, "long", ["cuneiformes", "cuboide", "phalanges-pied"], { nombre: 10, memo: "Cinq par pied : leur tête forme la plante de l'avant-pied." }),
-  os("phalanges-pied", "Phalanges du pied", "Phalanges digitorum pedis", "Phalanges of the foot", "pied", 1, "long", ["metatarsiens"], { nombre: 28, noms: ["phalanges des orteils"], memo: "Quatorze par pied : deux pour l'hallux, trois pour chacun des autres orteils." }),
-];
-
-/* ================================================================ les muscles */
-
-const NF = "Nerf facial (VII)";
-const MUSCLES: Element[] = [
-  // La tête
-  mu("occipito-frontal", "Occipito-frontal", "M. occipitofrontalis", "Occipitofrontalis", "tete", 1, "Ventre frontal : peau des sourcils ; ventre occipital : ligne nucale suprême de l'occipital", "Aponévrose épicrânienne", "Lève les sourcils et plisse le front", NF, { noms: ["frontal", "muscle frontal", "épicrânien"], memo: "Le muscle de la surprise." }),
-  mu("muscle-temporal", "Temporal", "M. temporalis", "Temporalis", "tete", 1, "Fosse temporale", "Processus coronoïde de la mandibule", "Ferme la mâchoire et tire la mandibule en arrière", "Nerf mandibulaire (V3)", { noms: ["muscle temporal"], memo: "On le sent durcir sur la tempe en serrant les dents." }),
-  mu("masseter", "Masséter", "M. masseter", "Masseter", "tete", 0, "Arcade zygomatique", "Angle et face latérale de la branche de la mandibule", "Ferme la mâchoire avec force", "Nerf massétérique (V3)", { memo: "Le muscle de la mastication, qu'on sent gonfler à l'angle de la mâchoire.", anecdote: "Rapporté à son poids, c'est l'un des muscles les plus puissants du corps." }),
-  mu("orbiculaire-oeil", "Orbiculaire de l'œil", "M. orbicularis oculi", "Orbicularis oculi", "tete", 1, "Rebord médial de l'orbite et ligament palpébral médial", "Peau autour de l'œil : ses fibres font le tour de l'orbite", "Ferme les paupières (cligner, plisser les yeux)", NF, { noms: ["orbiculaire des paupières", "orbiculaire de l'oeil"], memo: "Un anneau autour de l'œil." }),
-  mu("orbiculaire-bouche", "Orbiculaire de la bouche", "M. orbicularis oris", "Orbicularis oris", "tete", 1, "Muscles voisins et peau des lèvres", "Peau des lèvres et commissures", "Ferme et avance les lèvres (siffler, embrasser)", NF, { ...IMPAIR, noms: ["orbiculaire des lèvres"], memo: "Le muscle du baiser." }),
-  mu("grand-zygomatique", "Grand zygomatique", "M. zygomaticus major", "Zygomaticus major", "tete", 1, "Face latérale de l'os zygomatique", "Commissure des lèvres", "Tire le coin de la bouche en haut et en dehors : le sourire", NF, { memo: "Le muscle du sourire." }),
-  mu("releveur-levre-superieure", "Releveur de la lèvre supérieure", "M. levator labii superioris", "Levator labii superioris", "tete", 2, "Rebord infra-orbitaire du maxillaire", "Peau et muscle de la lèvre supérieure", "Élève la lèvre supérieure", NF, { noms: ["releveur de la lèvre"] }),
-  mu("abaisseur-angle-bouche", "Abaisseur de l'angle de la bouche", "M. depressor anguli oris", "Depressor anguli oris", "tete", 2, "Bord inférieur de la mandibule", "Commissure des lèvres", "Abaisse le coin de la bouche (la moue triste)", NF, { noms: ["triangulaire des lèvres"], memo: "Le muscle de la tristesse, opposé du grand zygomatique." }),
-  mu("buccinateur", "Buccinateur", "M. buccinator", "Buccinator", "tete", 2, "Processus alvéolaires du maxillaire et de la mandibule, raphé ptérygo-mandibulaire", "Commissure des lèvres", "Plaque les joues contre les dents (souffler, mâcher)", NF, { memo: "Du latin buccina, la trompette : le muscle des souffleurs." }),
-  // Le cou
-  mu("sterno-cleido-mastoidien", "Sterno-cléido-mastoïdien", "M. sternocleidomastoideus", "Sternocleidomastoid", "cou", 0, "Manubrium du sternum (chef sternal) et tiers médial de la clavicule (chef claviculaire)", "Processus mastoïde du temporal et ligne nucale supérieure", "Seul, il incline la tête de son côté et tourne le visage de l'autre ; les deux ensemble fléchissent le cou", "Nerf accessoire (XI)", { noms: ["scm", "sternocléidomastoïdien"], memo: "Son nom dit ses trois attaches : sternum, clavicule (cléido), mastoïde." }),
-  mu("trapeze", "Trapèze", "M. trapezius", "Trapezius", "dos", 0, "Occipital, ligament nucal, processus épineux de C7 à T12", "Tiers latéral de la clavicule, acromion, épine de la scapula", "Hausse les épaules, rapproche et abaisse les scapulas, étend la tête", "Nerf accessoire (XI)", { noms: ["muscle trapèze"], memo: "À eux deux, les trapèzes dessinent un losange : le capuchon du moine." }),
-  mu("splenius-tete", "Splénius de la tête", "M. splenius capitis", "Splenius capitis", "cou", 2, "Ligament nucal et processus épineux de C7 à T3", "Processus mastoïde et ligne nucale supérieure", "Étend la tête ; seul, la tourne de son côté", "Rameaux dorsaux des nerfs cervicaux", { noms: ["splénius"], memo: "Splenius, le pansement : il couvre les muscles profonds de la nuque." }),
-  mu("semi-epineux-tete", "Semi-épineux de la tête", "M. semispinalis capitis", "Semispinalis capitis", "cou", 3, "Processus transverses de C7 à T6", "Occipital, entre les lignes nucales", "Étend la tête", "Rameaux dorsaux des nerfs spinaux", { noms: ["grand complexus"] }),
-  mu("elevateur-scapula", "Élévateur de la scapula", "M. levator scapulae", "Levator scapulae", "cou", 2, "Processus transverses de C1 à C4", "Angle supérieur de la scapula", "Élève la scapula", "Nerf dorsal de la scapula (C5)", { noms: ["angulaire de l'omoplate", "releveur de la scapula"], memo: "Souvent noué chez ceux qui portent un sac sur une seule épaule." }),
-  mu("scalene-anterieur", "Scalène antérieur", "M. scalenus anterior", "Anterior scalene", "cou", 3, "Processus transverses de C3 à C6", "Première côte", "Élève la première côte (inspiration) ; incline le cou", "Nerfs cervicaux (C4–C6)", { memo: "Entre lui et le scalène moyen passent l'artère subclavière et le plexus brachial." }),
-  mu("scalene-moyen", "Scalène moyen", "M. scalenus medius", "Middle scalene", "cou", 3, "Processus transverses de C2 à C7", "Première côte", "Élève la première côte ; incline le cou", "Nerfs cervicaux (C3–C8)"),
-  mu("sterno-hyoidien", "Sterno-hyoïdien", "M. sternohyoideus", "Sternohyoid", "cou", 3, "Face postérieure du manubrium", "Corps de l'os hyoïde", "Abaisse l'os hyoïde (avaler, parler)", "Anse cervicale (C1–C3)"),
-  mu("sterno-thyroidien", "Sterno-thyroïdien", "M. sternothyroideus", "Sternothyroid", "cou", 3, "Face postérieure du manubrium", "Cartilage thyroïde", "Abaisse le larynx", "Anse cervicale (C1–C3)"),
-  mu("omo-hyoidien", "Omo-hyoïdien", "M. omohyoideus", "Omohyoid", "cou", 3, "Bord supérieur de la scapula", "Os hyoïde", "Abaisse l'os hyoïde", "Anse cervicale (C1–C3)", { memo: "Deux ventres reliés par un tendon ; « omo » veut dire épaule." }),
-  mu("digastrique", "Digastrique", "M. digastricus", "Digastric", "cou", 3, "Ventre postérieur : incisure mastoïdienne ; ventre antérieur : mandibule", "Tendon intermédiaire, fixé à l'os hyoïde", "Élève l'os hyoïde et abaisse la mandibule (ouvrir la bouche)", "Ventre antérieur : nerf mylo-hyoïdien (V3) ; ventre postérieur : nerf facial (VII)", { memo: "Deux ventres, deux nerfs différents." }),
-  // Le tronc, en avant
-  mu("grand-pectoral", "Grand pectoral", "M. pectoralis major", "Pectoralis major", "thorax", 0, "Moitié médiale de la clavicule, sternum, cartilages costaux 1 à 6", "Lèvre latérale du sillon intertuberculaire de l'humérus", "Rapproche le bras du corps, le tourne en dedans et le porte en avant", "Nerfs pectoraux (C5–T1)", { noms: ["pectoral", "pectoraux"], memo: "Il forme le pli avant de l'aisselle." }),
-  mu("petit-pectoral", "Petit pectoral", "M. pectoralis minor", "Pectoralis minor", "thorax", 2, "Côtes 3 à 5", "Processus coracoïde de la scapula", "Abaisse et avance la scapula ; élève les côtes", "Nerf pectoral médial (C8–T1)"),
-  mu("dentele-anterieur", "Dentelé antérieur", "M. serratus anterior", "Serratus anterior", "thorax", 1, "Faces latérales des côtes 1 à 9, par des digitations", "Bord médial de la scapula", "Avance la scapula et la plaque contre le thorax ; la fait tourner pour lever le bras", "Nerf thoracique long (C5–C7)", { noms: ["grand dentelé", "serratus"], memo: "Le muscle du boxeur : il pousse le coup de poing.", anecdote: "Quand il est paralysé, la scapula se décolle du dos : on parle de scapula alata, l'omoplate en aile." }),
-  mu("droit-abdomen", "Droit de l'abdomen", "M. rectus abdominis", "Rectus abdominis", "abdomen", 0, "Crête et symphyse pubiennes", "Processus xiphoïde et cartilages costaux 5 à 7", "Fléchit le tronc ; comprime l'abdomen", "Nerfs intercostaux 7 à 11 et subcostal", { noms: ["grand droit", "grand droit de l'abdomen", "abdominaux"], memo: "Ses intersections tendineuses dessinent les « tablettes de chocolat »." }),
-  mu("oblique-externe", "Oblique externe", "M. obliquus externus abdominis", "External oblique", "abdomen", 1, "Faces externes des côtes 5 à 12", "Ligne blanche, pubis et crête iliaque (par son aponévrose)", "Tourne le tronc vers le côté opposé, l'incline ; comprime l'abdomen", "Nerfs intercostaux 7 à 11 et subcostal", { noms: ["grand oblique", "oblique externe de l'abdomen"], memo: "Ses fibres vont comme les mains dans les poches : en bas et en avant." }),
-  mu("oblique-interne", "Oblique interne", "M. obliquus internus abdominis", "Internal oblique", "abdomen", 2, "Fascia thoraco-lombaire, crête iliaque, ligament inguinal", "Côtes 10 à 12, ligne blanche, pubis", "Tourne le tronc de son côté, l'incline ; comprime l'abdomen", "Nerfs intercostaux 7 à 12, ilio-hypogastrique, ilio-inguinal", { noms: ["petit oblique"], memo: "Ses fibres croisent celles de l'oblique externe à angle droit." }),
-  mu("transverse-abdomen", "Transverse de l'abdomen", "M. transversus abdominis", "Transversus abdominis", "abdomen", 2, "Cartilages costaux 7 à 12, fascia thoraco-lombaire, crête iliaque", "Ligne blanche et pubis", "Comprime l'abdomen, comme une gaine", "Nerfs intercostaux 7 à 12, ilio-hypogastrique, ilio-inguinal", { noms: ["transverse"], memo: "Le plus profond des muscles larges : ses fibres font le tour du ventre comme une ceinture." }),
-  mu("intercostaux", "Intercostaux", "Mm. intercostales", "Intercostal muscles", "thorax", 2, "Bord inférieur de chaque côte", "Bord supérieur de la côte suivante", "Soulèvent ou abaissent les côtes pendant la respiration", "Nerfs intercostaux", { nombre: 22, noms: ["muscles intercostaux"], memo: "Trois couches entre deux côtes : externes, internes et intimes." }),
-  mu("diaphragme", "Diaphragme", "Diaphragma", "Diaphragm", "thorax", 0, "Processus xiphoïde, côtes 7 à 12, vertèbres lombaires (par ses piliers)", "Centre tendineux", "Principal muscle de l'inspiration : il s'abaisse et agrandit le thorax", "Nerf phrénique (C3–C5)", { ...IMPAIR, memo: "« C3, C4, C5 : le diaphragme en vie. »", anecdote: "Le hoquet est une contraction brusque et involontaire du diaphragme." }),
-  mu("grand-psoas", "Grand psoas", "M. psoas major", "Psoas major", "abdomen", 1, "Corps et processus transverses de T12 à L5", "Petit trochanter du fémur (avec l'iliaque)", "Fléchit la cuisse sur le bassin : le plus puissant fléchisseur de la hanche", "Plexus lombaire (L1–L3)", { noms: ["psoas"], memo: "Avec l'iliaque, il forme l'ilio-psoas : le muscle qui fait monter le genou.", anecdote: "Chez l'animal de boucherie, c'est le filet mignon." }),
-  mu("iliaque", "Iliaque", "M. iliacus", "Iliacus", "bassin", 2, "Fosse iliaque", "Petit trochanter du fémur (avec le psoas)", "Fléchit la cuisse", "Nerf fémoral (L2–L4)", { noms: ["muscle iliaque"] }),
-  mu("carre-lombes", "Carré des lombes", "M. quadratus lumborum", "Quadratus lumborum", "dos", 2, "Crête iliaque et ligament ilio-lombaire", "12e côte et processus transverses de L1 à L4", "Incline le tronc de son côté ; fixe la 12e côte pendant l'inspiration", "Nerf subcostal et rameaux de L1 à L4", { noms: ["carré des lombes"], memo: "Souvent en cause dans le lumbago." }),
-  // Le tronc, en arrière, et l'épaule
-  mu("grand-dorsal", "Grand dorsal", "M. latissimus dorsi", "Latissimus dorsi", "dos", 0, "Processus épineux de T7 à L5 et sacrum (par le fascia thoraco-lombaire), crête iliaque, côtes 9 à 12", "Fond du sillon intertuberculaire de l'humérus", "Tire le bras levé vers le bas et en arrière, le rapproche du corps et le tourne en dedans", "Nerf thoraco-dorsal (C6–C8)", { noms: ["dorsaux"], memo: "Le muscle du grimpeur et du nageur.", anecdote: "C'est le muscle le plus large du corps." }),
-  mu("petit-rhomboide", "Petit rhomboïde", "M. rhomboideus minor", "Rhomboid minor", "dos", 2, "Processus épineux de C7 et T1", "Bord médial de la scapula, à hauteur de l'épine", "Rapproche la scapula de la colonne", "Nerf dorsal de la scapula (C5)"),
-  mu("grand-rhomboide", "Grand rhomboïde", "M. rhomboideus major", "Rhomboid major", "dos", 2, "Processus épineux de T2 à T5", "Bord médial de la scapula, sous l'épine", "Rapproche la scapula de la colonne et l'élève", "Nerf dorsal de la scapula (C5)", { noms: ["rhomboïde", "rhomboïdes"], memo: "Il tire les épaules en arrière : le muscle du « tiens-toi droit »." }),
-  mu("supra-epineux", "Supra-épineux", "M. supraspinatus", "Supraspinatus", "epaule", 1, "Fosse supra-épineuse de la scapula", "Facette supérieure du tubercule majeur de l'humérus", "Démarre l'écartement du bras ; tient la tête humérale (coiffe des rotateurs)", "Nerf suprascapulaire (C5–C6)", { noms: ["sus-épineux"], memo: "Le tendon le plus souvent abîmé de la coiffe des rotateurs." }),
-  mu("infra-epineux", "Infra-épineux", "M. infraspinatus", "Infraspinatus", "epaule", 1, "Fosse infra-épineuse de la scapula", "Facette moyenne du tubercule majeur", "Tourne le bras en dehors ; stabilise l'épaule", "Nerf suprascapulaire (C5–C6)", { noms: ["sous-épineux"] }),
-  mu("petit-rond", "Petit rond", "M. teres minor", "Teres minor", "epaule", 2, "Bord latéral de la scapula", "Facette inférieure du tubercule majeur", "Tourne le bras en dehors", "Nerf axillaire (C5–C6)", { memo: "Supra-épineux, infra-épineux, petit rond, subscapulaire : la coiffe des rotateurs." }),
-  mu("grand-rond", "Grand rond", "M. teres major", "Teres major", "epaule", 1, "Angle inférieur de la scapula", "Lèvre médiale du sillon intertuberculaire", "Rapproche le bras du corps, le tourne en dedans et le porte en arrière", "Nerf subscapulaire inférieur (C5–C7)", { memo: "Le petit aide du grand dorsal." }),
-  mu("subscapulaire", "Subscapulaire", "M. subscapularis", "Subscapularis", "epaule", 2, "Fosse subscapulaire, face avant de la scapula", "Tubercule mineur de l'humérus", "Tourne le bras en dedans ; stabilise l'épaule", "Nerfs subscapulaires (C5–C7)", { noms: ["sous-scapulaire"] }),
-  mu("epineux", "Épineux", "M. spinalis", "Spinalis", "dos", 3, "Processus épineux des dernières thoraciques et premières lombaires", "Processus épineux des premières thoraciques", "Étend la colonne", "Rameaux dorsaux des nerfs spinaux", { memo: "La colonne la plus médiale des érecteurs du rachis." }),
-  mu("longissimus", "Longissimus", "M. longissimus", "Longissimus", "dos", 2, "Sacrum, crête iliaque, processus transverses lombaires et thoraciques", "Processus transverses thoraciques et cervicaux, côtes, processus mastoïde", "Étend et incline la colonne", "Rameaux dorsaux des nerfs spinaux", { noms: ["long dorsal"], memo: "La colonne du milieu des érecteurs du rachis, la plus longue." }),
-  mu("ilio-costal", "Ilio-costal", "M. iliocostalis", "Iliocostalis", "dos", 2, "Sacrum et crête iliaque", "Angles des côtes et processus transverses cervicaux", "Étend et incline la colonne", "Rameaux dorsaux des nerfs spinaux", { noms: ["iliocostal"], memo: "La colonne latérale des érecteurs du rachis." }),
-  // La hanche
-  mu("grand-fessier", "Grand fessier", "M. gluteus maximus", "Gluteus maximus", "hanche", 0, "Face postérieure de l'ilium, sacrum, coccyx", "Tractus ilio-tibial et tubérosité glutéale du fémur", "Étend la cuisse (se relever, monter, courir) et la tourne en dehors", "Nerf glutéal inférieur (L5–S2)", { noms: ["fessier", "grand glutéal"], memo: "Le muscle le plus lourd du corps.", anecdote: "Sa taille est propre à l'humain : il nous tient debout et nous fait courir." }),
-  mu("moyen-fessier", "Moyen fessier", "M. gluteus medius", "Gluteus medius", "hanche", 1, "Face externe de l'ilium", "Grand trochanter du fémur", "Écarte la cuisse ; garde le bassin horizontal quand on tient sur une jambe", "Nerf glutéal supérieur (L4–S1)", { noms: ["moyen glutéal"], memo: "Quand il est faible, le bassin bascule à chaque pas (signe de Trendelenburg)." }),
-  mu("petit-fessier", "Petit fessier", "M. gluteus minimus", "Gluteus minimus", "hanche", 2, "Face externe de l'ilium, sous le moyen fessier", "Grand trochanter", "Écarte la cuisse et la tourne en dedans ; stabilise le bassin", "Nerf glutéal supérieur (L4–S1)", { noms: ["petit glutéal"] }),
-  mu("tenseur-fascia-lata", "Tenseur du fascia lata", "M. tensor fasciae latae", "Tensor fasciae latae", "hanche", 2, "Épine iliaque antéro-supérieure", "Tractus ilio-tibial", "Tend le fascia lata ; fléchit, écarte et tourne la cuisse en dedans", "Nerf glutéal supérieur (L4–S1)", { noms: ["tfl"] }),
-  mu("piriforme", "Piriforme", "M. piriformis", "Piriformis", "hanche", 3, "Face antérieure du sacrum", "Bord supérieur du grand trochanter", "Tourne la cuisse en dehors", "Nerf du piriforme (S1–S2)", { noms: ["pyramidal du bassin", "pyramidal"], memo: "Le repère de la fesse : le nerf sciatique sort juste sous lui." }),
-  // Le membre supérieur
-  mu("deltoide", "Deltoïde", "M. deltoideus", "Deltoid", "epaule", 0, "Tiers latéral de la clavicule, acromion, épine de la scapula", "Tubérosité deltoïdienne de l'humérus", "Écarte le bras ; ses fibres avant le portent en avant, ses fibres arrière en arrière", "Nerf axillaire (C5–C6)", { memo: "Triangulaire comme la lettre grecque delta (Δ)." }),
-  mu("biceps-brachial", "Biceps brachial", "M. biceps brachii", "Biceps brachii", "bras", 0, "Chef long : tubercule supra-glénoïdal ; chef court : processus coracoïde", "Tubérosité du radius et aponévrose bicipitale", "Fléchit le coude et tourne la paume vers le haut (supination)", "Nerf musculo-cutané (C5–C6)", { noms: ["biceps"], memo: "Deux têtes. C'est lui qui tourne le tire-bouchon (supination)." }),
-  mu("brachial", "Brachial", "M. brachialis", "Brachialis", "bras", 1, "Moitié inférieure de la face antérieure de l'humérus", "Tubérosité de l'ulna", "Fléchit le coude, quelle que soit la position de la main", "Nerf musculo-cutané (C5–C6)", { noms: ["brachial antérieur"], memo: "Le vrai fléchisseur du coude, caché sous le biceps." }),
-  mu("coraco-brachial", "Coraco-brachial", "M. coracobrachialis", "Coracobrachialis", "bras", 2, "Processus coracoïde", "Face médiale de l'humérus, à mi-hauteur", "Porte le bras en avant et le rapproche du corps", "Nerf musculo-cutané (C5–C7)", { noms: ["coracobrachial"] }),
-  mu("triceps-brachial", "Triceps brachial", "M. triceps brachii", "Triceps brachii", "bras", 0, "Chef long : tubercule infra-glénoïdal ; chefs latéral et médial : face postérieure de l'humérus", "Olécrâne de l'ulna", "Étend le coude", "Nerf radial (C6–C8)", { noms: ["triceps"], memo: "Trois têtes ; il fait les deux tiers du volume du bras." }),
-  mu("ancone", "Anconé", "M. anconeus", "Anconeus", "avant-bras", 3, "Épicondyle latéral de l'humérus", "Olécrâne et face postérieure de l'ulna", "Aide le triceps à étendre le coude", "Nerf radial (C7–C8)"),
-  mu("brachio-radial", "Brachio-radial", "M. brachioradialis", "Brachioradialis", "avant-bras", 1, "Bord latéral de l'humérus, au-dessus de l'épicondyle", "Processus styloïde du radius", "Fléchit le coude, main de profil (le geste de boire un verre)", "Nerf radial (C5–C6)", { noms: ["long supinateur", "brachioradial"], memo: "Le muscle du verre qu'on porte à la bouche." }),
-  mu("long-extenseur-radial-carpe", "Long extenseur radial du carpe", "M. extensor carpi radialis longus", "Extensor carpi radialis longus", "avant-bras", 2, "Crête supracondylaire latérale de l'humérus", "Base du 2e métacarpien (dos)", "Étend le poignet et l'incline côté pouce", "Nerf radial (C6–C7)", { noms: ["premier radial", "long extenseur radial"] }),
-  mu("court-extenseur-radial-carpe", "Court extenseur radial du carpe", "M. extensor carpi radialis brevis", "Extensor carpi radialis brevis", "avant-bras", 3, "Épicondyle latéral de l'humérus", "Base du 3e métacarpien", "Étend le poignet", "Nerf radial (branche profonde)", { noms: ["second radial", "court extenseur radial"], memo: "C'est lui qui souffre dans le « tennis-elbow »." }),
-  mu("extenseur-doigts", "Extenseur des doigts", "M. extensor digitorum", "Extensor digitorum", "avant-bras", 1, "Épicondyle latéral de l'humérus", "Dos des phalanges moyennes et distales des doigts 2 à 5", "Étend les doigts et le poignet", "Nerf interosseux postérieur (radial)", { noms: ["extenseur commun des doigts"] }),
-  mu("extenseur-ulnaire-carpe", "Extenseur ulnaire du carpe", "M. extensor carpi ulnaris", "Extensor carpi ulnaris", "avant-bras", 2, "Épicondyle latéral et bord postérieur de l'ulna", "Base du 5e métacarpien", "Étend le poignet et l'incline côté petit doigt", "Nerf interosseux postérieur (radial)", { noms: ["cubital postérieur"] }),
-  mu("long-abducteur-pouce", "Long abducteur du pouce", "M. abductor pollicis longus", "Abductor pollicis longus", "avant-bras", 3, "Faces postérieures du radius et de l'ulna", "Base du 1er métacarpien", "Écarte le pouce", "Nerf interosseux postérieur (radial)", { memo: "Son tendon borde la tabatière anatomique." }),
-  mu("court-extenseur-pouce", "Court extenseur du pouce", "M. extensor pollicis brevis", "Extensor pollicis brevis", "avant-bras", 3, "Face postérieure du radius", "Base de la phalange proximale du pouce", "Étend le pouce", "Nerf interosseux postérieur (radial)"),
-  mu("supinateur", "Supinateur", "M. supinator", "Supinator", "avant-bras", 3, "Épicondyle latéral et crête du supinateur de l'ulna", "Tiers supérieur du radius", "Tourne la paume vers le haut (supination)", "Nerf radial (branche profonde)", { noms: ["court supinateur"] }),
-  mu("rond-pronateur", "Rond pronateur", "M. pronator teres", "Pronator teres", "avant-bras", 2, "Épicondyle médial de l'humérus et processus coronoïde de l'ulna", "Face latérale du radius, à mi-hauteur", "Tourne la paume vers le bas (pronation) ; fléchit le coude", "Nerf médian (C6–C7)"),
-  mu("flechisseur-radial-carpe", "Fléchisseur radial du carpe", "M. flexor carpi radialis", "Flexor carpi radialis", "avant-bras", 2, "Épicondyle médial de l'humérus", "Base du 2e métacarpien (paume)", "Fléchit le poignet et l'incline côté pouce", "Nerf médian (C6–C7)", { noms: ["grand palmaire"] }),
-  mu("long-palmaire", "Long palmaire", "M. palmaris longus", "Palmaris longus", "avant-bras", 2, "Épicondyle médial de l'humérus", "Aponévrose palmaire", "Fléchit le poignet ; tend l'aponévrose palmaire", "Nerf médian (C7–C8)", { noms: ["petit palmaire"], anecdote: "Il manque chez environ une personne sur six : pincez le pouce et le petit doigt en pliant le poignet pour voir s'il est là." }),
-  mu("flechisseur-ulnaire-carpe", "Fléchisseur ulnaire du carpe", "M. flexor carpi ulnaris", "Flexor carpi ulnaris", "avant-bras", 2, "Épicondyle médial et olécrâne", "Pisiforme, hamatum et base du 5e métacarpien", "Fléchit le poignet et l'incline côté petit doigt", "Nerf ulnaire (C7–T1)", { noms: ["cubital antérieur"] }),
-  mu("flechisseur-superficiel-doigts", "Fléchisseur superficiel des doigts", "M. flexor digitorum superficialis", "Flexor digitorum superficialis", "avant-bras", 2, "Épicondyle médial, processus coronoïde de l'ulna, radius", "Phalanges moyennes des doigts 2 à 5", "Fléchit les doigts et le poignet", "Nerf médian (C7–T1)", { noms: ["fléchisseur commun superficiel des doigts"] }),
-  mu("flechisseur-profond-doigts", "Fléchisseur profond des doigts", "M. flexor digitorum profundus", "Flexor digitorum profundus", "avant-bras", 3, "Faces antérieure et médiale de l'ulna, membrane interosseuse", "Phalanges distales des doigts 2 à 5", "Fléchit le bout des doigts (le seul à le faire)", "Nerfs médian (doigts 2-3) et ulnaire (doigts 4-5)", { noms: ["fléchisseur commun profond des doigts"], memo: "Ses tendons traversent ceux du fléchisseur superficiel par une boutonnière." }),
-  mu("long-flechisseur-pouce", "Long fléchisseur du pouce", "M. flexor pollicis longus", "Flexor pollicis longus", "avant-bras", 3, "Face antérieure du radius", "Phalange distale du pouce", "Fléchit le bout du pouce", "Nerf interosseux antérieur (médian)", { noms: ["long fléchisseur propre du pouce"] }),
-  mu("carre-pronateur", "Carré pronateur", "M. pronator quadratus", "Pronator quadratus", "avant-bras", 3, "Quart inférieur de l'ulna, face antérieure", "Quart inférieur du radius", "Tourne la paume vers le bas : le principal pronateur", "Nerf interosseux antérieur (médian)"),
-  mu("court-abducteur-pouce", "Court abducteur du pouce", "M. abductor pollicis brevis", "Abductor pollicis brevis", "main", 3, "Rétinaculum des fléchisseurs, scaphoïde, trapèze", "Base de la phalange proximale du pouce", "Écarte le pouce de la paume", "Nerf médian (branche thénarienne)", { memo: "Le plus superficiel de l'éminence thénar." }),
-  mu("court-flechisseur-pouce", "Court fléchisseur du pouce", "M. flexor pollicis brevis", "Flexor pollicis brevis", "main", 3, "Rétinaculum des fléchisseurs et trapèze", "Base de la phalange proximale du pouce", "Fléchit le pouce", "Nerf médian (et ulnaire pour le chef profond)"),
-  mu("opposant-pouce", "Opposant du pouce", "M. opponens pollicis", "Opponens pollicis", "main", 3, "Rétinaculum des fléchisseurs et trapèze", "Bord latéral du 1er métacarpien", "Oppose le pouce aux autres doigts (la pince)", "Nerf médian (C8–T1)", { anecdote: "L'opposition du pouce est l'un des gestes qui ont fait la main humaine." }),
-  mu("adducteur-pouce", "Adducteur du pouce", "M. adductor pollicis", "Adductor pollicis", "main", 3, "Capitatum et 2e, 3e métacarpiens", "Base de la phalange proximale du pouce", "Rapproche le pouce de la paume (tenir une clé)", "Nerf ulnaire (branche profonde)"),
-  mu("abducteur-petit-doigt", "Abducteur du petit doigt", "M. abductor digiti minimi", "Abductor digiti minimi", "main", 3, "Pisiforme", "Base de la phalange proximale du petit doigt", "Écarte le petit doigt", "Nerf ulnaire (C8–T1)", { memo: "Le plus superficiel de l'éminence hypothénar." }),
-  mu("interosseux-dorsaux", "Interosseux dorsaux", "Mm. interossei dorsales", "Dorsal interossei", "main", 3, "Faces des métacarpiens voisins (deux chefs chacun)", "Bases des phalanges proximales et appareil extenseur", "Écartent les doigts", "Nerf ulnaire (C8–T1)", { nombre: 8, noms: ["interosseux"], memo: "Les dorsaux écartent, les palmaires rapprochent." }),
-  // Le membre inférieur
-  mu("droit-femoral", "Droit fémoral", "M. rectus femoris", "Rectus femoris", "cuisse", 1, "Épine iliaque antéro-inférieure et sourcil de l'acétabulum", "Patella puis tubérosité tibiale (tendon quadricipital, ligament patellaire)", "Étend le genou ; fléchit la hanche", "Nerf fémoral (L2–L4)", { noms: ["droit antérieur", "droit antérieur de la cuisse"], memo: "Le seul chef du quadriceps qui croise la hanche : le muscle du tir au but." }),
-  mu("vaste-lateral", "Vaste latéral", "M. vastus lateralis", "Vastus lateralis", "cuisse", 1, "Grand trochanter et ligne âpre (lèvre latérale)", "Patella et tubérosité tibiale (tendon quadricipital)", "Étend le genou", "Nerf fémoral (L2–L4)", { noms: ["vaste externe"], memo: "Le plus gros des quatre chefs du quadriceps." }),
-  mu("vaste-medial", "Vaste médial", "M. vastus medialis", "Vastus medialis", "cuisse", 1, "Ligne âpre (lèvre médiale)", "Patella et tubérosité tibiale", "Étend le genou ; stabilise la patella", "Nerf fémoral (L2–L4)", { noms: ["vaste interne"], memo: "La « goutte d'eau » au-dessus du genou, en dedans." }),
-  mu("vaste-intermediaire", "Vaste intermédiaire", "M. vastus intermedius", "Vastus intermedius", "cuisse", 2, "Faces antérieure et latérale du fémur", "Patella et tubérosité tibiale", "Étend le genou", "Nerf fémoral (L2–L4)", { noms: ["crural"], memo: "Caché sous le droit fémoral." }),
-  mu("sartorius", "Sartorius", "M. sartorius", "Sartorius", "cuisse", 1, "Épine iliaque antéro-supérieure", "Face médiale du tibia (patte d'oie)", "Fléchit la hanche et le genou, écarte la cuisse et la tourne en dehors", "Nerf fémoral (L2–L3)", { noms: ["couturier"], memo: "Le plus long muscle du corps.", anecdote: "Il doit son nom au tailleur (sartor), assis en tailleur, justement." }),
-  mu("gracile", "Gracile", "M. gracilis", "Gracilis", "cuisse", 2, "Corps et branche inférieure du pubis", "Face médiale du tibia (patte d'oie)", "Rapproche la cuisse ; fléchit le genou", "Nerf obturateur (L2–L3)", { noms: ["droit interne"] }),
-  mu("pectine", "Pectiné", "M. pectineus", "Pectineus", "cuisse", 3, "Ligne pectinée du pubis", "Ligne pectinée du fémur, sous le petit trochanter", "Fléchit et rapproche la cuisse", "Nerf fémoral (et parfois obturateur)"),
-  mu("long-adducteur", "Long adducteur", "M. adductor longus", "Adductor longus", "cuisse", 1, "Corps du pubis", "Tiers moyen de la ligne âpre du fémur", "Rapproche la cuisse (serrer les genoux)", "Nerf obturateur (L2–L4)", { noms: ["moyen adducteur", "adducteurs"], memo: "Il borde en dedans le triangle fémoral." }),
-  mu("court-adducteur", "Court adducteur", "M. adductor brevis", "Adductor brevis", "cuisse", 3, "Corps et branche inférieure du pubis", "Partie haute de la ligne âpre", "Rapproche la cuisse", "Nerf obturateur (L2–L4)", { noms: ["petit adducteur"] }),
-  mu("grand-adducteur", "Grand adducteur", "M. adductor magnus", "Adductor magnus", "cuisse", 2, "Branche ischio-pubienne et tubérosité ischiatique", "Ligne âpre et tubercule de l'adducteur du fémur", "Rapproche la cuisse ; sa partie ischiatique l'étend", "Nerfs obturateur et sciatique (L2–L4)", { memo: "Le plus gros des adducteurs, innervé par deux nerfs." }),
-  mu("biceps-femoral", "Biceps fémoral", "M. biceps femoris", "Biceps femoris", "cuisse", 1, "Chef long : tubérosité ischiatique ; chef court : ligne âpre du fémur", "Tête de la fibula", "Fléchit le genou ; le chef long étend la hanche", "Nerf sciatique (L5–S2)", { noms: ["biceps crural"], memo: "L'ischio-jambier du dehors." }),
-  mu("semi-tendineux", "Semi-tendineux", "M. semitendinosus", "Semitendinosus", "cuisse", 1, "Tubérosité ischiatique", "Face médiale du tibia (patte d'oie)", "Fléchit le genou ; étend la hanche", "Nerf sciatique (L5–S2)", { noms: ["demi-tendineux"], memo: "Sa moitié basse est un long tendon : d'où son nom." }),
-  mu("semi-membraneux", "Semi-membraneux", "M. semimembranosus", "Semimembranosus", "cuisse", 2, "Tubérosité ischiatique", "Condyle médial du tibia, en arrière", "Fléchit le genou ; étend la hanche", "Nerf sciatique (L5–S2)", { noms: ["demi-membraneux"], memo: "Sa moitié haute est une lame tendineuse : d'où son nom." }),
-  mu("gastrocnemien", "Gastrocnémien", "M. gastrocnemius", "Gastrocnemius", "jambe", 0, "Condyles médial et latéral du fémur (deux chefs)", "Tubérosité du calcanéus (tendon calcanéen)", "Fléchit la plante du pied (se hisser sur la pointe des pieds) ; fléchit le genou", "Nerf tibial (S1–S2)", { noms: ["jumeaux", "jumeaux de la jambe", "mollet"], memo: "Les « jumeaux » qui dessinent le mollet." }),
-  mu("soleaire", "Soléaire", "M. soleus", "Soleus", "jambe", 1, "Tête de la fibula et ligne du soléaire du tibia", "Tubérosité du calcanéus (tendon calcanéen)", "Fléchit la plante du pied ; tient l'équilibre debout", "Nerf tibial (S1–S2)", { memo: "En forme de semelle (solea).", anecdote: "On l'appelle le deuxième cœur : en se contractant, il fait remonter le sang des jambes." }),
-  mu("poplite", "Poplité", "M. popliteus", "Popliteus", "jambe", 3, "Condyle latéral du fémur", "Face postérieure du tibia, au-dessus de la ligne du soléaire", "Déverrouille le genou tendu", "Nerf tibial (L4–S1)", { memo: "La clé qui déverrouille le genou." }),
-  mu("tibial-posterieur", "Tibial postérieur", "M. tibialis posterior", "Tibialis posterior", "jambe", 3, "Membrane interosseuse, tibia et fibula", "Naviculaire, cunéiformes, bases des métatarsiens 2 à 4", "Fléchit la plante, tourne la plante en dedans ; soutient la voûte plantaire", "Nerf tibial (L4–L5)", { noms: ["jambier postérieur"] }),
-  mu("long-flechisseur-orteils", "Long fléchisseur des orteils", "M. flexor digitorum longus", "Flexor digitorum longus", "jambe", 3, "Face postérieure du tibia", "Phalanges distales des orteils 2 à 5", "Fléchit les orteils et la plante du pied", "Nerf tibial (S2–S3)", { noms: ["long fléchisseur commun des orteils"] }),
-  mu("long-flechisseur-hallux", "Long fléchisseur de l'hallux", "M. flexor hallucis longus", "Flexor hallucis longus", "jambe", 3, "Face postérieure de la fibula", "Phalange distale de l'hallux", "Fléchit le gros orteil : la poussée du pas", "Nerf tibial (S2–S3)", { noms: ["long fléchisseur propre du gros orteil"] }),
-  mu("tibial-anterieur", "Tibial antérieur", "M. tibialis anterior", "Tibialis anterior", "jambe", 1, "Condyle latéral et face latérale du tibia", "Cunéiforme médial et base du 1er métatarsien", "Relève le pied (flexion dorsale) et tourne la plante en dedans", "Nerf fibulaire profond (L4–L5)", { noms: ["jambier antérieur"], memo: "S'il est paralysé, le pied tombe et accroche le sol (le steppage)." }),
-  mu("long-extenseur-orteils", "Long extenseur des orteils", "M. extensor digitorum longus", "Extensor digitorum longus", "jambe", 2, "Condyle latéral du tibia, fibula, membrane interosseuse", "Dos des orteils 2 à 5", "Relève les orteils et le pied", "Nerf fibulaire profond (L5–S1)", { noms: ["extenseur commun des orteils"] }),
-  mu("long-extenseur-hallux", "Long extenseur de l'hallux", "M. extensor hallucis longus", "Extensor hallucis longus", "jambe", 3, "Face médiale de la fibula", "Phalange distale de l'hallux", "Relève le gros orteil et le pied", "Nerf fibulaire profond (L5)", { noms: ["extenseur propre du gros orteil"] }),
-  mu("long-fibulaire", "Long fibulaire", "M. fibularis longus", "Fibularis longus", "jambe", 2, "Tête et face latérale de la fibula", "Cunéiforme médial et base du 1er métatarsien, par la plante", "Tourne la plante en dehors et la fléchit ; soutient la voûte", "Nerf fibulaire superficiel (L5–S1)", { noms: ["long péronier", "long péronier latéral"], memo: "Son tendon traverse toute la plante du pied." }),
-  mu("court-fibulaire", "Court fibulaire", "M. fibularis brevis", "Fibularis brevis", "jambe", 3, "Face latérale de la fibula, deux tiers inférieurs", "Base du 5e métatarsien", "Tourne la plante en dehors", "Nerf fibulaire superficiel (L5–S1)", { noms: ["court péronier", "court péronier latéral"] }),
-  mu("court-extenseur-orteils", "Court extenseur des orteils", "M. extensor digitorum brevis", "Extensor digitorum brevis", "pied", 3, "Face dorsale du calcanéus", "Tendons du long extenseur des orteils 2 à 4", "Étend les orteils", "Nerf fibulaire profond (L5–S1)", { noms: ["pédieux"], memo: "Le seul muscle du dos du pied." }),
-  mu("abducteur-hallux", "Abducteur de l'hallux", "M. abductor hallucis", "Abductor hallucis", "pied", 3, "Tubérosité du calcanéus", "Base de la phalange proximale de l'hallux", "Écarte le gros orteil ; soutient l'arche interne", "Nerf plantaire médial (S1–S2)", { noms: ["abducteur du gros orteil"] }),
-  mu("abducteur-petit-orteil", "Abducteur du petit orteil", "M. abductor digiti minimi pedis", "Abductor digiti minimi of the foot", "pied", 3, "Tubérosité du calcanéus", "Base de la phalange proximale du 5e orteil", "Écarte le petit orteil", "Nerf plantaire latéral (S1–S2)"),
-  mu("court-flechisseur-orteils", "Court fléchisseur des orteils", "M. flexor digitorum brevis", "Flexor digitorum brevis", "pied", 3, "Tubérosité du calcanéus et aponévrose plantaire", "Phalanges moyennes des orteils 2 à 5", "Fléchit les orteils", "Nerf plantaire médial (S1–S2)", { noms: ["court fléchisseur plantaire"] }),
-];
-
-/* ================================================================ les tendons, aponévroses et ligaments */
-
-const TENDONS: Element[] = [
-  te("aponevrose-epicranienne", "Aponévrose épicrânienne", "Galea aponeurotica", "Epicranial aponeurosis", "tete", 2, "occipito-frontal", "Relie les ventres frontal et occipital par-dessus le crâne", { noms: ["galéa", "galea"], memo: "Un casque fibreux : galea, en latin, c'est le casque." }),
-  te("ligne-blanche", "Ligne blanche", "Linea alba", "Linea alba", "abdomen", 1, "oblique-externe", "Du processus xiphoïde à la symphyse pubienne", { ...IMPAIR, memo: "La couture où se croisent les aponévroses des muscles larges de l'abdomen." }),
-  te("intersections-tendineuses", "Intersections tendineuses", "Intersectiones tendineae", "Tendinous intersections", "abdomen", 2, "droit-abdomen", "Elles barrent le droit de l'abdomen et adhèrent à sa gaine", { nombre: 6, memo: "Elles découpent les « tablettes »." }),
-  te("ligament-inguinal", "Ligament inguinal", "Ligamentum inguinale", "Inguinal ligament", "bassin", 2, "oblique-externe", "De l'épine iliaque antéro-supérieure au tubercule pubien", { noms: ["arcade crurale"], memo: "Le bord bas de l'aponévrose de l'oblique externe ; l'artère fémorale passe dessous." }),
-  te("fascia-thoraco-lombaire", "Fascia thoraco-lombaire", "Fascia thoracolumbalis", "Thoracolumbar fascia", "dos", 2, "grand-dorsal", "Processus épineux thoraciques bas, lombaires et sacrés ; crête iliaque", { noms: ["aponévrose lombaire"], memo: "Le losange nacré du bas du dos, d'où part le grand dorsal." }),
-  te("centre-tendineux", "Centre tendineux du diaphragme", "Centrum tendineum", "Central tendon of the diaphragm", "thorax", 2, "diaphragme", "Au sommet du dôme : le cœur repose dessus", { ...IMPAIR, noms: ["centre phrénique"], memo: "En forme de trèfle." }),
-  te("tendon-long-biceps", "Tendon du long chef du biceps", "Tendo capitis longi m. bicipitis brachii", "Long head of biceps tendon", "epaule", 3, "biceps-brachial", "Tubercule supra-glénoïdal ; il glisse dans le sillon intertuberculaire", { memo: "Il traverse l'articulation de l'épaule." }),
-  te("tendon-biceps", "Tendon distal du biceps", "Tendo m. bicipitis brachii", "Distal biceps tendon", "avant-bras", 2, "biceps-brachial", "Tubérosité du radius", { noms: ["tendon du biceps"], memo: "La corde qu'on sent au pli du coude." }),
-  te("aponevrose-bicipitale", "Aponévrose bicipitale", "Aponeurosis bicipitalis", "Bicipital aponeurosis", "avant-bras", 3, "biceps-brachial", "Fascia de l'avant-bras, en dedans", { noms: ["lacertus fibrosus", "expansion aponévrotique du biceps"], memo: "Elle protège l'artère humérale au pli du coude." }),
-  te("tendon-triceps", "Tendon du triceps", "Tendo m. tricipitis brachii", "Triceps tendon", "bras", 2, "triceps-brachial", "Olécrâne de l'ulna"),
-  te("tendon-brachio-radial", "Tendon du brachio-radial", "Tendo m. brachioradialis", "Brachioradialis tendon", "avant-bras", 3, "brachio-radial", "Processus styloïde du radius"),
-  te("tendon-flechisseur-radial-carpe", "Tendon du fléchisseur radial du carpe", "Tendo m. flexoris carpi radialis", "Flexor carpi radialis tendon", "avant-bras", 3, "flechisseur-radial-carpe", "Base du 2e métacarpien", { memo: "Le pouls radial se prend juste en dehors de lui." }),
-  te("tendon-long-palmaire", "Tendon du long palmaire", "Tendo m. palmaris longi", "Palmaris longus tendon", "avant-bras", 2, "long-palmaire", "Aponévrose palmaire", { memo: "La corde la plus saillante du poignet quand on pince le pouce et le petit doigt." }),
-  te("tendon-flechisseur-ulnaire-carpe", "Tendon du fléchisseur ulnaire du carpe", "Tendo m. flexoris carpi ulnaris", "Flexor carpi ulnaris tendon", "avant-bras", 3, "flechisseur-ulnaire-carpe", "Pisiforme"),
-  te("tendons-extenseurs-radiaux", "Tendons des extenseurs radiaux du carpe", "Tendines mm. extensorum carpi radialium", "Radial wrist extensor tendons", "avant-bras", 3, "long-extenseur-radial-carpe", "Bases des 2e et 3e métacarpiens", { nombre: 4 }),
-  te("tendon-extenseur-ulnaire-carpe", "Tendon de l'extenseur ulnaire du carpe", "Tendo m. extensoris carpi ulnaris", "Extensor carpi ulnaris tendon", "avant-bras", 3, "extenseur-ulnaire-carpe", "Base du 5e métacarpien"),
-  te("tendons-pouce", "Tendons de la tabatière anatomique", "Tendines mm. abductoris pollicis longi et extensoris pollicis brevis", "Anatomical snuffbox tendons", "main", 3, "long-abducteur-pouce", "Base du 1er métacarpien et phalange proximale du pouce", { nombre: 4, memo: "Ils bordent la tabatière anatomique, où l'on palpe le scaphoïde." }),
-  te("retinaculum-flechisseurs", "Rétinaculum des fléchisseurs", "Retinaculum flexorum", "Flexor retinaculum", "main", 2, "flechisseur-superficiel-doigts", "Du scaphoïde et du trapèze au pisiforme et à l'hamatum", { noms: ["ligament annulaire antérieur du carpe", "ligament transverse du carpe"], memo: "Le toit du canal carpien.", anecdote: "Quand le nerf médian est comprimé dessous, c'est le syndrome du canal carpien." }),
-  te("retinaculum-extenseurs", "Rétinaculum des extenseurs", "Retinaculum extensorum", "Extensor retinaculum", "main", 3, "extenseur-doigts", "En travers du dos du poignet, du radius à l'ulna", { noms: ["ligament annulaire postérieur du carpe"] }),
-  te("aponevrose-palmaire", "Aponévrose palmaire", "Aponeurosis palmaris", "Palmar aponeurosis", "main", 2, "long-palmaire", "Du rétinaculum des fléchisseurs aux bases des doigts", { memo: "Quand elle se rétracte, les doigts se replient : c'est la maladie de Dupuytren." }),
-  te("tendons-flechisseurs-doigts", "Tendons des fléchisseurs des doigts", "Tendines mm. flexorum digitorum", "Finger flexor tendons", "main", 2, "flechisseur-superficiel-doigts", "Phalanges moyennes et distales des doigts 2 à 5", { nombre: 16, memo: "Ils passent dans le canal carpien, puis dans des gaines tenues par des poulies." }),
-  te("tendons-extenseurs-doigts", "Tendons des extenseurs des doigts", "Tendines m. extensoris digitorum", "Finger extensor tendons", "main", 2, "extenseur-doigts", "Dos des phalanges moyennes et distales", { nombre: 8, memo: "On les voit se tendre sur le dos de la main en écartant les doigts." }),
-  te("tendon-quadricipital", "Tendon quadricipital", "Tendo m. quadricipitis femoris", "Quadriceps tendon", "cuisse", 1, "droit-femoral", "Bord supérieur de la patella", { noms: ["tendon du quadriceps"], memo: "Les quatre chefs du quadriceps se rejoignent en lui." }),
-  te("ligament-patellaire", "Ligament patellaire", "Ligamentum patellae", "Patellar ligament", "jambe", 1, "droit-femoral", "De la pointe de la patella à la tubérosité tibiale", { noms: ["tendon rotulien", "ligament rotulien"], memo: "C'est lui que le médecin frappe pour le réflexe du genou." }),
-  te("tractus-ilio-tibial", "Tractus ilio-tibial", "Tractus iliotibialis", "Iliotibial tract", "cuisse", 2, "tenseur-fascia-lata", "Tubercule infra-condylaire latéral du tibia (tubercule de Gerdy)", { noms: ["bandelette ilio-tibiale", "bandelette de maissiat"], memo: "Sa friction sur le genou fait souffrir les coureurs (le syndrome de l'essuie-glace)." }),
-  te("tendon-calcaneen", "Tendon calcanéen", "Tendo calcaneus", "Calcaneal tendon", "jambe", 0, "gastrocnemien", "Tubérosité du calcanéus", { noms: ["tendon d'achille", "achille"], memo: "Le plus gros et le plus solide tendon du corps.", anecdote: "Achille avait été plongé dans le Styx, tenu par le talon : son seul point faible." }),
-  te("tendon-semi-tendineux", "Tendon du semi-tendineux", "Tendo m. semitendinosi", "Semitendinosus tendon", "jambe", 3, "semi-tendineux", "Face médiale du tibia (patte d'oie)", { memo: "Avec le sartorius et le gracile, il forme la patte d'oie." }),
-  te("tendon-tibial-anterieur", "Tendon du tibial antérieur", "Tendo m. tibialis anterioris", "Tibialis anterior tendon", "pied", 2, "tibial-anterieur", "Cunéiforme médial et base du 1er métatarsien", { memo: "La corde la plus saillante du cou-de-pied quand on relève le pied." }),
-  te("tendon-long-extenseur-hallux", "Tendon du long extenseur de l'hallux", "Tendo m. extensoris hallucis longi", "Extensor hallucis longus tendon", "pied", 3, "long-extenseur-hallux", "Phalange distale de l'hallux"),
-  te("tendons-extenseurs-orteils", "Tendons du long extenseur des orteils", "Tendines m. extensoris digitorum longi", "Long toe extensor tendons", "pied", 2, "long-extenseur-orteils", "Dos des orteils 2 à 5", { nombre: 8 }),
-  te("tendons-fibulaires", "Tendons fibulaires", "Tendines mm. fibularium", "Fibular tendons", "pied", 3, "long-fibulaire", "Derrière la malléole latérale, puis base du 5e métatarsien (court) et plante (long)", { nombre: 4, noms: ["tendons péroniers"] }),
-  te("tendons-malleole-mediale", "Tendons rétro-malléolaires médiaux", "Tendines retromalleolares mediales", "Tendons behind the medial malleolus", "pied", 3, "tibial-posterieur", "Naviculaire (tibial postérieur) et orteils (longs fléchisseurs)", { nombre: 4, memo: "D'avant en arrière derrière la malléole : tibial postérieur, fléchisseur des orteils, fléchisseur de l'hallux." }),
-  te("retinaculums-cheville", "Rétinaculums des extenseurs de la cheville", "Retinacula mm. extensorum", "Ankle extensor retinacula", "pied", 3, "tibial-anterieur", "En travers du cou-de-pied, du tibia à la fibula et au calcanéus", { nombre: 4 }),
-  te("aponevrose-plantaire", "Aponévrose plantaire", "Aponeurosis plantaris", "Plantar aponeurosis", "pied", 2, "court-flechisseur-orteils", "Du calcanéus aux bases des orteils", { noms: ["fascia plantaire"], memo: "Elle tend la voûte comme la corde d'un arc.", anecdote: "Son inflammation, la fasciite plantaire, fait mal au talon au premier pas du matin." }),
-];
-
-/* ================================================================ les artères */
-
-const ARTERES: Element[] = [
-  ar("aorte", "Aorte", "Aorta", "Aorta", "thorax", 0, "Ventricule gauche du cœur", "Tout le corps, par ses branches", { ...IMPAIR, memo: "La plus grosse artère du corps : environ 2,5 cm de diamètre." }),
-  ar("tronc-brachio-cephalique", "Tronc brachio-céphalique", "Truncus brachiocephalicus", "Brachiocephalic trunk", "thorax", 2, "aorte", "Membre supérieur droit, côté droit de la tête et du cou", { ...IMPAIR, noms: ["tronc artériel brachio-céphalique"], memo: "Il n'existe qu'à droite." }),
-  ar("carotide-commune", "Carotide commune", "Arteria carotis communis", "Common carotid artery", "cou", 0, "Aorte à gauche, tronc brachio-céphalique à droite", "Tête et cou", { noms: ["carotide primitive", "carotide"], memo: "Son pouls se prend sur le côté du cou, devant le sterno-cléido-mastoïdien." }),
-  ar("carotide-interne", "Carotide interne", "Arteria carotis interna", "Internal carotid artery", "cou", 1, "carotide-commune", "Cerveau et œil"),
-  ar("carotide-externe", "Carotide externe", "Arteria carotis externa", "External carotid artery", "cou", 1, "carotide-commune", "Face, cuir chevelu, cou"),
-  ar("artere-faciale", "Artère faciale", "Arteria facialis", "Facial artery", "tete", 2, "carotide-externe", "Lèvres, nez, joues", { noms: ["faciale"], memo: "Son pouls se sent sur le bord de la mandibule, juste devant le masséter." }),
-  ar("temporale-superficielle", "Artère temporale superficielle", "Arteria temporalis superficialis", "Superficial temporal artery", "tete", 2, "carotide-externe", "Tempe et cuir chevelu", { noms: ["temporale superficielle"], memo: "Son pouls se sent juste devant l'oreille." }),
-  ar("artere-occipitale", "Artère occipitale", "Arteria occipitalis", "Occipital artery", "tete", 3, "carotide-externe", "Arrière du cuir chevelu, muscles de la nuque", { noms: ["occipitale"] }),
-  ar("vertebrale", "Artère vertébrale", "Arteria vertebralis", "Vertebral artery", "cou", 2, "subclaviere", "Tronc cérébral, cervelet, arrière du cerveau", { noms: ["vertébrale"], memo: "Elle monte dans les trous des processus transverses des vertèbres cervicales." }),
-  ar("subclaviere", "Artère subclavière", "Arteria subclavia", "Subclavian artery", "cou", 1, "Aorte à gauche, tronc brachio-céphalique à droite", "Membre supérieur, cou, cerveau, paroi du thorax", { noms: ["sous-clavière", "subclavière"], memo: "Elle passe sous la clavicule, au-dessus de la première côte." }),
-  ar("thoracique-interne", "Artère thoracique interne", "Arteria thoracica interna", "Internal thoracic artery", "thorax", 2, "subclaviere", "Paroi antérieure du thorax et de l'abdomen", { noms: ["mammaire interne", "thoracique interne"], memo: "Les chirurgiens s'en servent pour les pontages du cœur." }),
-  ar("arteres-intercostales", "Artères intercostales", "Arteriae intercostales", "Intercostal arteries", "thorax", 3, "aorte", "Espaces entre les côtes, muscles du dos", { nombre: 22, noms: ["intercostales"], memo: "Elles longent le bord inférieur de chaque côte." }),
-  ar("tronc-coeliaque", "Tronc cœliaque", "Truncus coeliacus", "Celiac trunk", "abdomen", 2, "aorte", "Estomac, foie, rate, pancréas, duodénum", { ...IMPAIR, noms: ["tronc coeliaque"], memo: "Trois branches : gastrique gauche, hépatique commune et splénique." }),
-  ar("mesenterique-superieure", "Artère mésentérique supérieure", "Arteria mesenterica superior", "Superior mesenteric artery", "abdomen", 2, "aorte", "Intestin grêle et moitié droite du côlon", { ...IMPAIR, noms: ["mésentérique supérieure"] }),
-  ar("renale", "Artère rénale", "Arteria renalis", "Renal artery", "abdomen", 2, "aorte", "Rein", { noms: ["rénale"], memo: "Les reins reçoivent environ un cinquième du sang pompé par le cœur." }),
-  ar("iliaque-commune", "Artère iliaque commune", "Arteria iliaca communis", "Common iliac artery", "bassin", 1, "aorte", "Bassin et membre inférieur", { noms: ["iliaque primitive", "iliaque commune"] }),
-  ar("iliaque-interne", "Artère iliaque interne", "Arteria iliaca interna", "Internal iliac artery", "bassin", 2, "iliaque-commune", "Organes du bassin, fesse, périnée", { noms: ["hypogastrique", "iliaque interne"] }),
-  ar("iliaque-externe", "Artère iliaque externe", "Arteria iliaca externa", "External iliac artery", "bassin", 2, "iliaque-commune", "Membre inférieur : elle devient la fémorale sous le ligament inguinal", { noms: ["iliaque externe"] }),
-  ar("epigastrique-inferieure", "Artère épigastrique inférieure", "Arteria epigastrica inferior", "Inferior epigastric artery", "abdomen", 3, "iliaque-externe", "Paroi antérieure de l'abdomen, muscle droit", { noms: ["épigastrique inférieure"] }),
-  ar("axillaire", "Artère axillaire", "Arteria axillaris", "Axillary artery", "epaule", 1, "subclaviere", "Épaule, paroi du thorax, aisselle", { noms: ["axillaire"] }),
-  ar("humerale", "Artère humérale", "Arteria brachialis", "Brachial artery", "bras", 1, "axillaire", "Bras ; au coude, elle se partage en radiale et ulnaire", { noms: ["brachiale", "humérale"], memo: "C'est elle que serre le brassard quand on prend la tension." }),
-  ar("humerale-profonde", "Artère profonde du bras", "Arteria profunda brachii", "Deep brachial artery", "bras", 3, "humerale", "Triceps et face postérieure du bras", { noms: ["humérale profonde"] }),
-  ar("radiale", "Artère radiale", "Arteria radialis", "Radial artery", "avant-bras", 0, "humerale", "Avant-bras côté pouce, arcade palmaire profonde", { noms: ["radiale"], memo: "Le pouls qu'on prend au poignet, côté pouce." }),
-  ar("ulnaire", "Artère ulnaire", "Arteria ulnaris", "Ulnar artery", "avant-bras", 1, "humerale", "Avant-bras côté petit doigt, arcade palmaire superficielle", { noms: ["cubitale", "ulnaire"] }),
-  ar("arcade-palmaire-superficielle", "Arcade palmaire superficielle", "Arcus palmaris superficialis", "Superficial palmar arch", "main", 2, "ulnaire", "Doigts (artères digitales palmaires)"),
-  ar("arcade-palmaire-profonde", "Arcade palmaire profonde", "Arcus palmaris profundus", "Deep palmar arch", "main", 3, "radiale", "Muscles profonds de la main et métacarpiens"),
-  ar("femorale", "Artère fémorale", "Arteria femoralis", "Femoral artery", "cuisse", 0, "iliaque-externe", "Cuisse ; derrière le genou, elle devient la poplitée", { noms: ["fémorale"], memo: "Son pouls se sent au pli de l'aine, sous le ligament inguinal." }),
-  ar("femorale-profonde", "Artère fémorale profonde", "Arteria profunda femoris", "Deep femoral artery", "cuisse", 2, "femorale", "Muscles de la cuisse, tête du fémur", { noms: ["profonde de la cuisse", "fémorale profonde"] }),
-  ar("circonflexe-femorale-laterale", "Artère circonflexe fémorale latérale", "Arteria circumflexa femoris lateralis", "Lateral circumflex femoral artery", "cuisse", 3, "femorale-profonde", "Quadriceps et hanche", { noms: ["circonflexe latérale"] }),
-  ar("poplitee", "Artère poplitée", "Arteria poplitea", "Popliteal artery", "jambe", 1, "femorale", "Genou ; elle se partage en tibiales antérieure et postérieure", { noms: ["poplitée"], memo: "Au fond du creux du genou : la plus profonde des structures de la région." }),
-  ar("tibiale-anterieure", "Artère tibiale antérieure", "Arteria tibialis anterior", "Anterior tibial artery", "jambe", 2, "poplitee", "Loge antérieure de la jambe ; elle devient la dorsale du pied", { noms: ["tibiale antérieure"] }),
-  ar("tibiale-posterieure", "Artère tibiale postérieure", "Arteria tibialis posterior", "Posterior tibial artery", "jambe", 2, "poplitee", "Loge postérieure de la jambe, plante du pied", { noms: ["tibiale postérieure"], memo: "Son pouls se prend derrière la malléole médiale." }),
-  ar("fibulaire", "Artère fibulaire", "Arteria fibularis", "Fibular artery", "jambe", 3, "tibiale-posterieure", "Loge latérale de la jambe, fibula", { noms: ["péronière", "artère péronière"] }),
-  ar("dorsale-du-pied", "Artère dorsale du pied", "Arteria dorsalis pedis", "Dorsalis pedis artery", "pied", 2, "tibiale-anterieure", "Dos du pied et orteils", { noms: ["pédieuse", "artère pédieuse"], memo: "Son pouls se sent sur le dos du pied, en dehors du tendon du long extenseur de l'hallux." }),
-  ar("plantaires", "Artères plantaires", "Arteriae plantares", "Plantar arteries", "pied", 3, "tibiale-posterieure", "Plante du pied et orteils", { nombre: 4, noms: ["plantaire"] }),
-];
-
-export const ELEMENTS: readonly Element[] = [...OS, ...MUSCLES, ...TENDONS, ...ARTERES];
+export const ELEMENTS: readonly Element[] = [...ensembles, ...elements];
 export const PAR_ID: ReadonlyMap<string, Element> = new Map(ELEMENTS.map((e) => [e.id, e]));
 export const element = (id: string): Element | undefined => PAR_ID.get(id);
 export const elementsDe = (couche: Couche): Element[] => ELEMENTS.filter((e) => e.couche === couche);
@@ -332,9 +23,57 @@ export const elementsDe = (couche: Couche): Element[] => ELEMENTS.filter((e) => 
 /** Le nom d'une référence : un identifiant d'élément devient son nom, un texte reste tel quel. */
 export const nomDe = (ref: string | undefined): string => (ref ? (PAR_ID.get(ref)?.nom ?? ref) : "");
 
+/** Les éléments que recouvre un identifiant : lui-même, ou les membres d'un ensemble. */
+export function membresDe(id: string): string[] {
+  const e = PAR_ID.get(id);
+  return e?.membres?.length ? e.membres : [id];
+}
+
+/**
+ * Toucher une structure vaut-il pour celle qu'on demande ? Elle-même, un membre de l'ensemble demandé,
+ * ou, quand on demande un muscle, le tendon qui le prolonge (il en fait partie).
+ */
+export function vautPour(touche: string, attendu: string): boolean {
+  if (touche === attendu) return true;
+  if (membresDe(attendu).includes(touche)) return true;
+  const t = PAR_ID.get(touche);
+  return Boolean(t?.zone && t.muscle === attendu && PAR_ID.get(attendu)?.couche === "muscle");
+}
+
 export const NOMS_COUCHES: Record<Couche, { un: string; des: string; le: string }> = {
   os: { un: "un os", des: "Les os", le: "l'os" },
   muscle: { un: "un muscle", des: "Les muscles", le: "le muscle" },
   tendon: { un: "un tendon", des: "Les tendons", le: "le tendon" },
+  ligament: { un: "un ligament", des: "Les ligaments", le: "le ligament" },
   artere: { un: "une artère", des: "Les artères", le: "l'artère" },
+  veine: { un: "une veine", des: "Les veines", le: "la veine" },
+  nerf: { un: "un nerf", des: "Les nerfs", le: "le nerf" },
+  viscere: { un: "un viscère", des: "Les viscères", le: "le viscère" },
+  encephale: { un: "une structure de l'encéphale", des: "L'encéphale", le: "la structure" },
+  lymphe: { un: "un nœud lymphatique", des: "Les nœuds lymphatiques", le: "le nœud" },
+};
+
+/** Ce qu'est une structure dans sa couche, quand ce n'est pas l'évidence : un cartilage parmi les os, une bourse… */
+export const NOMS_NATURES: Record<string, string> = {
+  cartilage: "Cartilage",
+  dent: "Dent",
+  aponevrose: "Aponévrose",
+  retinaculum: "Rétinaculum",
+  fascia: "Fascia",
+  gaine: "Gaine synoviale",
+  capsule: "Capsule articulaire",
+  menisque: "Ménisque",
+  labrum: "Bourrelet",
+  disque: "Disque",
+  membrane: "Membrane",
+  symphyse: "Symphyse",
+  bourse: "Bourse synoviale",
+  pulmonaire: "Circulation pulmonaire",
+  sinus: "Sinus veineux",
+  ganglion: "Ganglion",
+  coeur: "Cœur",
+  sens: "Organe des sens",
+  lymphoide: "Organe lymphoïde",
+  enveloppe: "Enveloppe",
+  noeud: "Nœud lymphatique",
 };

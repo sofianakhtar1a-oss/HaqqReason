@@ -2,6 +2,8 @@
 
 import { X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { type Aspect, type Finesse, reglerAppareil, useAppareil } from "@/lib/corps/appareil";
+import { HAUTE_DEFINITION } from "@/lib/corps/modele/modele";
 import { CATEGORIES, type CategorieId, IDS_CATEGORIES } from "@/lib/corps/niveaux";
 import { type Profil, regler, remettreAZero, useEcorche } from "@/lib/corps/progression";
 
@@ -32,9 +34,10 @@ function Choix<T extends string | number>({ nom, valeur, options, changer }: { n
   );
 }
 
-export function Reglages({ fermer }: { fermer: () => void }) {
+export function Reglages({ fermer, sources }: { fermer: () => void; sources: () => void }) {
   const e = useEcorche();
   const p = e.profil;
+  const appareil = useAppareil();
   const boite = useRef<HTMLDialogElement>(null);
   const [aZero, setAZero] = useState<CategorieId | null>(null);
   const r = (x: Partial<Profil>) => regler(x as Parameters<typeof regler>[0]);
@@ -71,6 +74,30 @@ export function Reglages({ fermer }: { fermer: () => void }) {
         <Choix nom="Objectif du jour" valeur={p.objectif} options={[10, 20, 40].map((v) => ({ v, nom: `${v} questions` }))} changer={(v) => r({ objectif: v })} />
         <Interrupteur nom="Montrer le latin" aide="Le nom latin et le nom anglais sous chaque nom français." valeur={p.latin} changer={(v) => r({ latin: v })} />
         <h3 className="ec-section-titre">Le corps</h3>
+        <Choix<Aspect>
+          nom="La pièce"
+          valeur={appareil.aspect}
+          options={[
+            { v: "frais", nom: "Fraîche" },
+            { v: "plastine", nom: "Plastinée" },
+          ]}
+          changer={(v) => reglerAppareil({ aspect: v })}
+        />
+        <p className="ec-note">Fraîche : humide et brillante, comme en salle de dissection. Plastinée : satinée, comme une pièce de musée.</p>
+        <Choix<Finesse>
+          nom="La finesse des modèles"
+          valeur={appareil.finesse}
+          options={[
+            { v: "auto" as Finesse, nom: "Selon l'appareil" },
+            { v: "legere" as Finesse, nom: "Légère" },
+            { v: "standard" as Finesse, nom: "Standard" },
+            ...(HAUTE_DEFINITION ? [{ v: "haute" as Finesse, nom: "Haute" }] : []),
+          ]}
+          changer={(v) => reglerAppareil({ finesse: v })}
+        />
+        <p className="ec-note">
+          Légère : un million de triangles, pour les téléphones. Standard : près de quatre millions.{HAUTE_DEFINITION ? " Haute : douze millions, pour une carte graphique puissante (45 Mo à télécharger)." : ""} Ce réglage reste sur cet appareil.
+        </p>
         <Interrupteur nom="Rotation tranquille" aide="Le corps tourne seul quand on ne le touche pas." valeur={p.rotation} changer={(v) => r({ rotation: v })} />
         <h3 className="ec-section-titre">Le son et la lecture</h3>
         <Interrupteur nom="Les sons" valeur={p.son} changer={(v) => r({ son: v })} />
@@ -115,6 +142,18 @@ export function Reglages({ fermer }: { fermer: () => void }) {
             ),
           )}
         </div>
+        <h3 className="ec-section-titre">D’où vient ce corps</h3>
+        <p className="ec-note">Les modèles viennent d’atlas libres (Z-Anatomy, BodyParts3D).</p>
+        <button
+          type="button"
+          className="ec-bouton est-discret"
+          onClick={() => {
+            boite.current?.close();
+            sources();
+          }}
+        >
+          Sources et licences
+        </button>
         <h3 className="ec-section-titre">Au clavier</h3>
         <p className="ec-note">Flèches : tourner le corps · + et − : rapprocher, éloigner · 0 : de face · 1 à 4 : choisir une réponse · Entrée : continuer · Échap : quitter la partie. Maj + glisser ou clic droit : déplacer.</p>
       </div>

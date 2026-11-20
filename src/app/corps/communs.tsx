@@ -1,10 +1,11 @@
 "use client";
 
 import { Heart, Star, Volume2 } from "lucide-react";
-import { PAR_ID, nomDe } from "@/lib/corps/catalogue";
+import { NOMS_NATURES, PAR_ID, nomDe } from "@/lib/corps/catalogue";
+import { calqueDElement } from "@/lib/corps/modele/modele";
 import { nomRegion, nomSorte } from "@/lib/corps/quiz";
-import type { Couche, Element, StructureScene } from "@/lib/corps/types";
-import type { EtatStructure } from "./moteur/Corps3D";
+import type { Couche, Element } from "@/lib/corps/types";
+import type { CalqueOptionnel, EtatStructure } from "./moteur/Corps3D";
 import { dire } from "./sons";
 
 /* ---------- Les teintes de la scène ---------- */
@@ -28,21 +29,47 @@ export function teinteMemoire(boite: number | undefined): [number, number, numbe
 }
 
 export type Couches = Record<Couche, number>;
-export const COUCHES_DEFAUT: Couches = { os: 1, muscle: 1, tendon: 1, artere: 0 };
+export type Calques = Partial<Record<CalqueOptionnel, number>>;
+const AUCUNE: Couches = { os: 0, muscle: 0, tendon: 0, ligament: 0, artere: 0, veine: 0, nerf: 0, viscere: 0, encephale: 0, lymphe: 0 };
+/** Des couches à partir de celles qu'on montre : les autres restent éteintes. */
+export const couches = (c: Partial<Couches> = {}): Couches => ({ ...AUCUNE, ...c });
+export const COUCHES_DEFAUT: Couches = couches({ os: 1, muscle: 1, tendon: 1 });
+const OPTIONNELS: readonly string[] = ["fascia", "gaine", "bourse", "enveloppe"];
+
+/** Ce qu'il faut montrer pour étudier une couche : elle, pleine, et ce qui la situe, en retrait. */
+export function couchesPour(couche: Couche): Couches {
+  switch (couche) {
+    case "os":
+      return couches({ os: 1 });
+    case "muscle":
+      return couches({ os: 1, muscle: 1, tendon: 1 });
+    case "tendon":
+      return couches({ os: 1, muscle: 0.3, tendon: 1 });
+    case "ligament":
+      return couches({ os: 1, ligament: 1 });
+    case "artere":
+      return couches({ os: 0.45, muscle: 0.1, tendon: 0.08, artere: 1 });
+    case "veine":
+      return couches({ os: 0.45, muscle: 0.1, tendon: 0.08, veine: 1 });
+    case "nerf":
+      return couches({ os: 0.45, muscle: 0.1, tendon: 0.08, nerf: 1 });
+    case "viscere":
+      return couches({ os: 0.22, viscere: 1 });
+    case "encephale":
+      return couches({ os: 0.14, encephale: 1 });
+    case "lymphe":
+      return couches({ os: 0.4, veine: 0.3, lymphe: 1 });
+  }
+}
 
 /** Ce qu'il faut montrer pour voir (ou chercher) une structure : sa couche pleine, le reste en retrait. */
-export function miseEnScene(e: Element, structures: StructureScene[] = []): { couches: Couches; profondeur: number } {
-  const prof = structures.length ? Math.min(...structures.map((s) => s.profondeur)) : 0;
-  switch (e.couche) {
-    case "os":
-      return { couches: { os: 1, muscle: 0, tendon: 0, artere: 0 }, profondeur: 0 };
-    case "muscle":
-      return { couches: { os: 1, muscle: 1, tendon: 1, artere: 0 }, profondeur: prof };
-    case "tendon":
-      return { couches: { os: 1, muscle: 0.3, tendon: 1, artere: 0 }, profondeur: 0 };
-    case "artere":
-      return { couches: { os: 0.45, muscle: 0.1, tendon: 0.08, artere: 1 }, profondeur: 0 };
-  }
+export function miseEnScene(e: Element): { couches: Couches; calques: Calques; profondeur: number; decouvrir: string[] | null } {
+  const calque = calqueDElement(e.id);
+  const calques: Calques = OPTIONNELS.includes(calque) ? { [calque]: 1 } : {};
+  // Un fascia couvre les muscles : on les garde pleins dessous.
+  if (calque === "fascia") return { couches: couches({ os: 1, muscle: 1, tendon: 1 }), calques, profondeur: 0, decouvrir: null };
+  // Un muscle ou un tendon profond : on ôte ce qui le couvre, et rien d'autre.
+  return { couches: couchesPour(e.couche), calques, profondeur: 0, decouvrir: e.couche === "muscle" || e.couche === "tendon" ? [e.id] : null };
 }
 
 export const enLumiere = (ids: string[], teinte = TEINTE.laiton, pulse = true): Record<string, EtatStructure> => Object.fromEntries(ids.map((id) => [id, { teinte, pulse }]));
@@ -87,16 +114,25 @@ export function Coeurs({ n, sur = 3 }: { n: number; sur?: number }) {
   );
 }
 
-const NOM_COUCHE: Record<Couche, string> = { os: "Os", muscle: "Muscle", tendon: "Tendon", artere: "Artère" };
+const NOM_COUCHE: Record<Couche, string> = { os: "Os", muscle: "Muscle", tendon: "Tendon", ligament: "Ligament", artere: "Artère", veine: "Veine", nerf: "Nerf", viscere: "Viscère", encephale: "Encéphale", lymphe: "Système lymphatique" };
+const PROFONDEURS = ["Superficiel", "Intermédiaire", "Profond"];
+const liste = (ids: string[] | undefined) => (ids ?? []).map((id) => nomDe(id)).join(", ");
 
 /** Le cartel d'une structure : comme l'étiquette d'une pièce de musée, puis tout ce qu'il faut savoir. */
 export function Cartel({ e, complet = true, latin = true, actions }: { e: Element; complet?: boolean; latin?: boolean; actions?: React.ReactNode }) {
   const lignes: [string, React.ReactNode][] = [];
   if (e.couche === "muscle") {
+    // La fiche rédigée d'abord ; à défaut, ce que l'atlas sait : les os où il s'attache, son nerf.
     if (e.origine) lignes.push(["Origine", e.origine]);
+    else if (e.origines?.length) lignes.push(["Origine", liste(e.origines)]);
     if (e.terminaison) lignes.push(["Terminaison", e.terminaison]);
+    else if (e.terminaisons?.length) lignes.push(["Terminaison", liste(e.terminaisons)]);
     if (e.action) lignes.push(["Action", e.action]);
     if (e.innervation) lignes.push(["Innervation", e.innervation]);
+    else if (e.nerf) lignes.push(["Innervation", nomDe(e.nerf)]);
+    if (e.loge) lignes.push(["Groupe", e.loge]);
+    if (e.profondeur !== undefined) lignes.push(["Plan", PROFONDEURS[e.profondeur] ?? ""]);
+    if (e.chefs) lignes.push(["Chefs", String(e.chefs)]);
   }
   if (e.couche === "os") {
     if (e.sorte) lignes.push(["Forme", nomSorte(e.sorte)]);
@@ -110,12 +146,18 @@ export function Cartel({ e, complet = true, latin = true, actions }: { e: Elemen
     if (e.provenance) lignes.push(["Naît de", nomDe(e.provenance)]);
     if (e.territoire) lignes.push(["Irrigue", e.territoire]);
   }
+  if (e.membres?.length) lignes.push(["Réunit", liste(e.membres)]);
+  else if (e.ensemble) lignes.push(["Fait partie de", nomDe(e.ensemble)]);
+  if (e.officiel && e.officiel !== e.nom && !e.zone) lignes.push(["Nom officiel", e.officiel]);
+  if (e.ta2) lignes.push(["Terminologia Anatomica", `TA2 ${e.ta2}`]);
+  const nature = e.nature ? NOMS_NATURES[e.nature] : undefined;
   return (
     <article className="ec-cartel" data-couche={e.couche}>
       <header>
         <p className="ec-cartel-sur">
-          {NOM_COUCHE[e.couche]} · {nomRegion(e.region)}
+          {nature ?? NOM_COUCHE[e.couche]} · {nomRegion(e.region)}
           {e.nombre ? ` · ${e.nombre} en tout` : e.pair ? " · un de chaque côté" : ""}
+          {e.inconstant ? " · inconstant" : ""}
         </p>
         <h3 className="ec-cartel-nom">
           {e.nom}
@@ -124,9 +166,9 @@ export function Cartel({ e, complet = true, latin = true, actions }: { e: Elemen
           </button>
         </h3>
         {latin && (
-          <p className="ec-cartel-latin" lang="la">
-            {e.latin}
-            <span lang="en"> · {e.anglais}</span>
+          <p className="ec-cartel-latin" lang={e.genere ? "en" : "la"}>
+            {e.genere ? e.anglais : e.latin}
+            {!e.genere && <span lang="en"> · {e.anglais}</span>}
           </p>
         )}
         {e.noms && e.noms.length > 0 && <p className="ec-cartel-aussi">Aussi : {e.noms.slice(0, 4).join(", ")}</p>}

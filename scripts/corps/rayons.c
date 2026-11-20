@@ -11,6 +11,10 @@
  *     mode 0 : occlusion ambiante (1 : dégagé, 0 : enfoui), un obstacle proche pèse plus qu'un lointain
  *     mode 1 : exposition (la part des rayons qui s'échappent sans rien toucher)
  *     mode 2 : épaisseur (la distance, vers l'intérieur, jusqu'à la paroi d'en face ; portée si rien)
+ *     mode 3 : couverture — un septième argument donne l'étiquette de chaque triangle (int32 n, puis n int32) ;
+ *              pour chaque point, les rayons partent dans un cône autour de la normale et notent toutes les
+ *              étiquettes traversées. Sortie : n × rayons × 6 int32 (-1 : rien). Avec une portée nulle, la
+ *              longueur de la « normale » de chaque point donne la portée de ses rayons.
  */
 #include <math.h>
 #include <stdint.h>
@@ -117,6 +121,50 @@ static float tirer(V o, V d, float tmin, float tmax, int nimporte) {
   return touche ? proche : -1.0f;
 }
 
+static int *etiquette; /* mode 3 : la pièce de chaque triangle */
+#define TRAVERSEES 6
+
+/* Toutes les étiquettes traversées par un rayon sur [tmin, tmax] (distinctes, au plus TRAVERSEES). */
+static int traverser(V o, V d, float tmin, float tmax, int *ids) {
+  V inv = {1.0f / (fabsf(d.x) > 1e-12f ? d.x : 1e-12f), 1.0f / (fabsf(d.y) > 1e-12f ? d.y : 1e-12f), 1.0f / (fabsf(d.z) > 1e-12f ? d.z : 1e-12f)};
+  int pile[64], sp = 0, nb = 0;
+  pile[sp++] = 0;
+  while (sp) {
+    const Noeud *n = &noeuds[pile[--sp]];
+    float t1 = (n->mn.x - o.x) * inv.x, t2 = (n->mx.x - o.x) * inv.x;
+    float ta = fminf(t1, t2), tb = fmaxf(t1, t2);
+    t1 = (n->mn.y - o.y) * inv.y; t2 = (n->mx.y - o.y) * inv.y;
+    ta = fmaxf(ta, fminf(t1, t2)); tb = fminf(tb, fmaxf(t1, t2));
+    t1 = (n->mn.z - o.z) * inv.z; t2 = (n->mx.z - o.z) * inv.z;
+    ta = fmaxf(ta, fminf(t1, t2)); tb = fminf(tb, fmaxf(t1, t2));
+    if (tb < fmaxf(ta, tmin) || ta > tmax) continue;
+    if (n->gauche < 0) {
+      for (int i = n->debut; i < n->debut + n->nb; i++) {
+        int t = ordre[i];
+        V p = cross(d, E2[t]);
+        float det = dot(E1[t], p);
+        if (fabsf(det) < 1e-14f) continue;
+        float idet = 1.0f / det;
+        V s = sub(o, A[t]);
+        float u = dot(s, p) * idet;
+        if (u < 0 || u > 1) continue;
+        V q = cross(s, E1[t]);
+        float v = dot(d, q) * idet;
+        if (v < 0 || u + v > 1) continue;
+        float dist = dot(E2[t], q) * idet;
+        if (dist <= tmin || dist >= tmax) continue;
+        int e = etiquette[t], deja = 0;
+        for (int k = 0; k < nb; k++) if (ids[k] == e) deja = 1;
+        if (!deja && nb < TRAVERSEES) ids[nb++] = e;
+      }
+    } else if (sp < 62) {
+      pile[sp++] = n->gauche;
+      pile[sp++] = n->droite;
+    }
+  }
+  return nb;
+}
+
 static inline uint32_t hacher(uint32_t x) { x ^= x >> 16; x *= 0x7feb352dU; x ^= x >> 15; x *= 0x846ca68bU; x ^= x >> 16; return x; }
 static inline float alea(uint32_t *s) { *s = hacher(*s + 0x9e3779b9U); return (*s >> 8) * (1.0f / 16777216.0f); }
 
@@ -150,6 +198,42 @@ int main(int argc, char **argv) {
   float *pts = malloc((size_t)np * 6 * 4);
   if (fread(pts, 4, (size_t)np * 6, f) != (size_t)np * 6) return 1;
   fclose(f);
+  if (mode == 3) {
+    if (argc < 8) { fprintf(stderr, "mode 3 : il manque le fichier des étiquettes\n"); return 2; }
+    f = fopen(argv[7], "rb");
+    if (!f) { perror(argv[7]); return 1; }
+    int ne;
+    if (fread(&ne, 4, 1, f) != 1 || ne != nt) { fprintf(stderr, "étiquettes : %d pour %d triangles\n", ne, nt); return 1; }
+    etiquette = malloc(sizeof(int) * (size_t)nt);
+    if (fread(etiquette, 4, (size_t)nt, f) != (size_t)nt) return 1;
+    fclose(f);
+    size_t taille = (size_t)np * nr * TRAVERSEES;
+    int *vus = malloc(taille * sizeof(int));
+    for (size_t k = 0; k < taille; k++) vus[k] = -1;
+    #pragma omp parallel for schedule(dynamic, 1024)
+    for (int i = 0; i < np; i++) {
+      V p = {pts[i * 6], pts[i * 6 + 1], pts[i * 6 + 2]}, n = {pts[i * 6 + 3], pts[i * 6 + 4], pts[i * 6 + 5]};
+      float ln = sqrtf(dot(n, n));
+      if (ln < 1e-9f || nt == 0) continue;
+      n = mul(n, 1.0f / ln);
+      V t = fabsf(n.x) < 0.9f ? (V){1, 0, 0} : (V){0, 1, 0};
+      V u = cross(n, t); u = mul(u, 1.0f / sqrtf(dot(u, u))); V w = cross(n, u);
+      V o = add(p, mul(n, 4e-4f));
+      uint32_t s = hacher((uint32_t)i * 2654435761U + 5);
+      for (int k = 0; k < nr; k++) {
+        /* Un cône de 35° autour de la normale ; le premier rayon la suit. */
+        float r1 = k == 0 ? 0.0f : alea(&s) * 0.33f, r2 = alea(&s) * 6.2831853f;
+        float sr = sqrtf(r1);
+        V d = add(add(mul(u, sr * cosf(r2)), mul(w, sr * sinf(r2))), mul(n, sqrtf(1 - r1)));
+        /* Portée négative ou nulle : la longueur de la « normale » de chaque point donne la sienne. */
+        traverser(o, d, 3e-4f, portee > 0 ? portee : ln, vus + ((size_t)i * nr + k) * TRAVERSEES);
+      }
+    }
+    f = fopen(argv[3], "wb");
+    fwrite(vus, sizeof(int), taille, f);
+    fclose(f);
+    return 0;
+  }
   float *res = malloc((size_t)np * 4);
   #pragma omp parallel for schedule(dynamic, 2048)
   for (int i = 0; i < np; i++) {

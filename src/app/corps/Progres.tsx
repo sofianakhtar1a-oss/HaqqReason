@@ -3,15 +3,16 @@
 import { Award, Download, Flame, Snowflake, Upload } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ELEMENTS, PAR_ID } from "@/lib/corps/catalogue";
-import { CATEGORIES, IDS_CATEGORIES, nombreNiveaux, titreDuJoueur, TITRES } from "@/lib/corps/niveaux";
+import { CATEGORIES, type CategorieId, ELEMENTS_APPRIS, IDS_CATEGORIES, nombreNiveaux, titreDuJoueur, TITRES } from "@/lib/corps/niveaux";
 import { boite, confusionsFrequentes, type Etat, exporterProgression, importerProgression, niveauxReussis, prevision, resume, useEcorche } from "@/lib/corps/progression";
-import { teinteMemoire } from "./communs";
+import { COUCHES_DEFAUT, teinteMemoire } from "./communs";
 import type { Navigation, Stage } from "./Ecorche";
 import type { EtatStructure } from "./moteur/Corps3D";
 
 type Medaille = { id: string; nom: string; texte: string; metal: "bronze" | "argent" | "or"; obtenue: (e: Etat) => boolean };
-const toutes = (e: Etat, c: "os" | "muscles" | "tendons" | "arteres" | "corps") => niveauxReussis(e, c) === nombreNiveaux(c);
-const sues = (e: Etat) => ELEMENTS.filter((x) => boite(e, x.id) >= 3).length;
+const toutes = (e: Etat, c: CategorieId) => nombreNiveaux(c) > 0 && niveauxReussis(e, c) === nombreNiveaux(c);
+/** Les structures sues, parmi celles qu'on apprend dans les planches. */
+const sues = (e: Etat) => ELEMENTS_APPRIS.filter((x) => boite(e, x.id) >= 3).length;
 
 const MEDAILLES: Medaille[] = [
   { id: "premiere", nom: "Première planche", texte: "Réussir une première planche.", metal: "bronze", obtenue: (e) => Object.values(e.niveaux).some((n) => n.f > 0) },
@@ -25,7 +26,7 @@ const MEDAILLES: Medaille[] = [
   { id: "tendons", nom: "Les cordes", texte: "Toutes les planches des tendons.", metal: "or", obtenue: (e) => toutes(e, "tendons") },
   { id: "arteres", nom: "Angéiologiste", texte: "Toutes les planches des artères.", metal: "or", obtenue: (e) => toutes(e, "arteres") },
   { id: "mois", nom: "Un mois", texte: "Trente jours d'affilée.", metal: "or", obtenue: (e) => e.profil.jours >= 30 },
-  { id: "vesale", nom: "Vésale", texte: "Toutes les structures du corps sues.", metal: "or", obtenue: (e) => sues(e) >= ELEMENTS.length },
+  { id: "vesale", nom: "Vésale", texte: "Toutes les structures du corps sues.", metal: "or", obtenue: (e) => sues(e) >= ELEMENTS_APPRIS.length },
 ];
 
 const JOURS = ["Auj.", "Dem.", "J+2", "J+3", "J+4", "J+5", "J+6"];
@@ -43,7 +44,7 @@ export function Progres({ stage, nav }: { stage: Stage; nav: Navigation }) {
   // Le corps devient la carte de ce qu'on sait : du rouge de l'oubli au vert du su ; le gris, jamais vu.
   const etats = useMemo(() => Object.fromEntries(ELEMENTS.map((x) => [x.id, { teinte: teinteMemoire(e.elements[x.id] ? boite(e, x.id) : undefined) } as EtatStructure])), [e]);
   useEffect(() => {
-    stage.regler({ couches: { os: 1, muscle: 1, tendon: 1, artere: 0 }, profondeur: 0, etats, isoler: null, rotation: true, etiquette: null, retrait: false });
+    stage.regler({ couches: COUCHES_DEFAUT, profondeur: 0, etats, isoler: null, rotation: true, etiquette: null, retrait: false });
     stage.surChoix((s) => {
       if (s) nav.aller(`explorer/${s.element}`);
     });
@@ -73,7 +74,7 @@ export function Progres({ stage, nav }: { stage: Stage; nav: Navigation }) {
           <Snowflake size={14} aria-hidden="true" /> <b>{e.profil.gels}</b> gel{e.profil.gels > 1 ? "s" : ""}
         </span>
         <span>
-          <b>{sues(e)}</b>/{ELEMENTS.length} sues
+          <b>{sues(e)}</b>/{ELEMENTS_APPRIS.length} sues
         </span>
       </p>
       <p className="ec-note">Sur le corps, chaque structure a la couleur de ce que tu en sais : gris, jamais vue ; rouge, oubliée ; vert, sue. Touche-en une pour l’ouvrir.</p>

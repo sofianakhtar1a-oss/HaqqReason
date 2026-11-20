@@ -66,7 +66,7 @@ def ta(anglais):
 
 # ---------------------------------------------------------------- 1. à quel élément appartient chaque pièce
 
-PARTIE = re.compile(r"^(?:.+?)\s(?:head|heads|part|parts|belly)\sof\s(.+)$", re.I)
+PARTIE = re.compile(r"^(?:(?!\bof\b).)+?\s(?:head|heads|part|parts|belly)\sof\s(.+)$", re.I)
 # Quelques rattachements que la règle « … part of X » ne voit pas.
 RATTACHEMENTS = {
     "Inferior vena cava (abdominal part)": "Inferior vena cava",
@@ -90,7 +90,50 @@ HORS_TA = {
     "Meniscotibial ligaments": ("Ligaments ménisco-tibiaux", "Ligamenta meniscotibialia", None),
     "Cingulate gyrus": ("Gyrus cingulaire", "Gyrus cinguli", None),
     "Precentral sulcus": ("Sillon précentral", "Sulcus precentralis", None),
+    # Le gant de Z-Anatomy (voir 02_classer.py) ; la vraie aponévrose palmaire est une zone du long palmaire.
+    "Palmar aponeurosis": ("Fascia palmaire", "Fascia palmaris manus", None),
 }
+
+
+CORRECTIONS = [
+    (r"^\((.*)\)$", r"\1"), (r"\bArtere\b", "Artère"), (r"\bFacia\b", "Fascia"), (r"\bMusclé\b", "Muscle"), (r"\bTroisème\b", "Troisième"), (r"\bCristalin\b", "Cristallin"),
+    (r"\bEpiglotte\b", "Épiglotte"), (r"\bEtrier\b", "Étrier"), (r"\bMoëlle\b", "Moelle"), (r"\bOesophage\b", "Œsophage"), (r"\boesophag", "œsophag"), (r"\bArythénoïde\b", "Aryténoïdien"),
+    (r"ymphonoeud", "ymphonœud"), (r"\bHabenula\b", "Habénula"), (r"\bnoeud", "nœud"), (r"\bNoeud", "Nœud"), (r"\boeil\b", "œil"), (r"\bcoeur\b", "cœur"), (r"métacrapien", "métacarpien"),
+    (r"\bplaxus\b", "plexus"), (r"\bocculaire\b", "oculaire"), (r"cunéïforme", "cunéiforme"), (r"^Os cornet\b", "Cornet"), (r"\bCuneus\b", "Cunéus"), (r"\s+", " "),
+]
+
+
+def nettoyer(nom):
+    for motif, par in CORRECTIONS:
+        nom = re.sub(motif, par, nom)
+    return nom.strip()
+
+
+# L'article : « le biceps », « la clavicule », « l'aorte », « les vertèbres lombaires ».
+PLURIELS = set("artères bourses branches capsules cartilages courts fibres freins gaines ganglions gyri intercostaux interosseux intertransversaires interépineux ligaments lombricaux longs lymphonœuds nœuds multifides nerfs noyaux racines rameaux rotateurs sillons veines muscles tendons rétinaculums vertèbres côtes phalanges métacarpiens métatarsiens cunéiformes dents intersections plantaires fausses vraies vaisseaux glandes".split())
+FEMININS = set("bifurcation bourse branche bronche base capsule carotide chambre clavicule commissure corde corne cornée couche cuspide côte dent division dure-mère faux fibula fosse gaine gencive glande grande lame langue ligne lingula mandibule membrane moelle muqueuse partie patella phalange plèvre prostate pyramide queue-de-cheval racine rate rétine scapula scissure sclère strie substance symphyse tente tonsille trachée trochlée trompe valvule veine vertèbre vessie vésicule zone petite première".split())
+ORDINAUX = set("deuxième troisième quatrième cinquième sixième septième huitième neuvième dixième onzième douzième".split())
+NOMS_FEMININS = set("côte vertèbre phalange molaire prémolaire artère veine branche dent".split())
+
+
+def article(nom):
+    mots = nom.lower().replace("’", "'").split()
+    premier = mots[0]
+    if premier in PLURIELS or (premier == "os" and len(mots) > 1 and re.search(r"[sx]$", mots[1])):
+        return "les "
+    if premier in ORDINAUX:
+        suivant = mots[1] if len(mots) > 1 else ""
+        return "la " if suivant in NOMS_FEMININS else ("le " if premier in ("huitième", "onzième") or not re.match(r"[aeéèêiîoôuœh]", premier) else "l'")
+    if re.match(r"[aeéèêiîoôuœ]", premier) or (premier.startswith("h") and premier not in ("huitième", "hamatum")):
+        return "l'"
+    return "la " if premier in FEMININS else "le "
+
+
+def de(nom):
+    """« du biceps », « de la clavicule », « de l'aorte », « des lombricaux »."""
+    a = article(nom)
+    minus = nom if re.match(r"(C\d|T\d|L\d)", nom) else nom[0].lower() + nom[1:]
+    return {"le ": "du ", "la ": "de la ", "l'": "de l'", "les ": "des "}[a] + minus
 
 
 def element_anglais(p):
@@ -139,7 +182,7 @@ HERITAGE_ANGLAIS = {
     "retinaculum-flechisseurs": ["Flexor retinaculum of wrist"], "retinaculum-extenseurs": ["Extensor retinaculum of wrist"],
     "tronc-coeliaque": ["Coeliac trunk"], "humerale": ["Brachial artery"], "humerale-profonde": ["Deep brachial artery"],
     "semi-tendineux": ["Semitendinosus muscle"], "semi-membraneux": ["Semimembranosus muscle"], "sterno-cleido-mastoidien": ["Sternocleidomastoid muscle"],
-    "sacrum": ["Sacrum"], "coccyx": ["Coccyx"],
+    "sacrum": ["Sacrum"], "coccyx": ["Coccyx"], "tendons-extenseurs-orteils": ["Tendon of extensor digitorum longus"], "aponevrose-palmaire": ["(zone du long palmaire)"],
 }
 # Les éléments d'origine qui étaient des groupes : ils deviennent des ensembles (identifiant → noms anglais des membres).
 ENSEMBLES_HERITES = {
@@ -196,6 +239,7 @@ for (couche, ea), ps in groupes.items():
         fr, la, tid = r["francais"], r["latin"], r["id"]
     else:
         fr, la, tid = ps[0]["francais"] or ea, ps[0]["latin"] or ea, ps[0]["ta2"]
+    fr = nettoyer(fr)
     h = her_par_anglais.get((couche, norme(ea))) or (her_par_anglais.get(("tendon", norme(ea))) if couche == "ligament" else None)
     if h and h["id"] in ENSEMBLES_HERITES:
         h = None
@@ -218,7 +262,7 @@ for (couche, ea), ps in groupes.items():
     ids_pris[ident] = True
     cotes = {p["cote"] for p in ps}
     pair = any(p["miroir"] for p in ps) or ("g" in cotes and "d" in cotes)
-    e = {"id": ident, "couche": couche, "nom": h["nom"] if h else nom, "officiel": fr, "latin": la, "anglais": ea, "ta2": tid, "pair": bool(pair), "sorte": ps[0]["sorte"], "inconstant": any(p.get("inconstant") for p in ps), "_pieces": ps, "_heritage": h}
+    e = {"id": ident, "couche": couche, "nom": h["nom"] if h else nom, "officiel": fr, "latin": la, "anglais": ea, "ta2": tid, "pair": bool(pair), "nature": ps[0]["sorte"], "inconstant": all(p.get("inconstant") for p in ps), "_pieces": ps, "_heritage": h}
     elements.append(e)
     el_par_anglais[(couche, norme(ea))] = e
     el_par_anglais.setdefault(("*", norme(ea)), e)
@@ -303,7 +347,7 @@ def rang_de(e):
     ps = e["_pieces"]
     c = e["couche"]
     if c == "os":
-        if e["sorte"] == "dent" or re.search(r"phalanx|vertebra|rib\b|costal cartilage|sesamoid|corniculate|arytenoid|alar|septal", a):
+        if e["nature"] == "dent" or re.search(r"phalanx|vertebra|rib\b|costal cartilage|sesamoid|corniculate|arytenoid|alar|septal", a):
             return 3
         return 2
     if c == "muscle":
@@ -316,7 +360,7 @@ def rang_de(e):
             return 3
         return 2 if tri > 3500 else 3
     if c == "tendon":
-        return 2 if e["sorte"] in ("aponevrose", "retinaculum", "tendon") else 3
+        return 2 if e["nature"] in ("aponevrose", "retinaculum", "tendon") else 3
     return 2 if sum(p["triangles"] for p in ps) > 6000 else 3
 
 
@@ -426,6 +470,101 @@ for h in heritage:
         e = next(x for x in elements if x["id"] == mid)
         e.setdefault("ensemble", h["id"])
 
+# ---------------------------------------------------------------- 5 bis. les tendons portés par les muscles (zones)
+
+# Dans Z-Anatomy, le tendon d'un muscle est une partie de son maillage. L'étape 4 ter a donné un code à chaque zone
+# (1 : côté de l'origine, 2 : côté de la terminaison, 3 : le ligament patellaire). Chaque zone assez grande devient
+# une structure de la couche des tendons : celle de la première version quand elle existait, sinon « Tendon du … ».
+f_zones = os.path.join(DONNEES, "zones.json")
+zones = json.load(open(f_zones, encoding="utf-8")) if os.path.exists(f_zones) else {}
+SEUIL_ZONE = 0.3  # cm² de tendon pour faire une structure
+QUADRICEPS = ["Rectus femoris muscle", "Vastus lateralis muscle", "Vastus medialis muscle", "Vastus intermedius muscle"]
+ZONES_HERITEES = {
+    "tendon-long-biceps": [("Long head of biceps brachii", 1)],
+    "tendon-biceps": [("Long head of biceps brachii", 2), ("Short head of biceps brachii", 2)],
+    "tendon-triceps": [(n, 2) for n in ("Long head of triceps brachii", "Lateral head of triceps brachii", "Medial head of triceps brachii")],
+    "tendon-brachio-radial": [("Brachioradialis muscle", 2)],
+    "tendon-flechisseur-radial-carpe": [("Flexor carpi radialis", 2)],
+    "tendon-long-palmaire": [("Palmaris longus muscle", 2)],
+    "aponevrose-palmaire": [("Palmaris longus muscle", 3)],
+    "tendon-flechisseur-ulnaire-carpe": [("Humeral head of flexor carpi ulnaris", 2), ("Ulnar head of flexor carpi ulnaris", 2)],
+    "tendons-extenseurs-radiaux": [("Extensor carpi radialis longus", 2), ("Extensor carpi radialis brevis", 2)],
+    "tendon-extenseur-ulnaire-carpe": [("Humeral head of extensor carpi ulnaris", 2), ("Ulnar head of extensor carpi ulnaris", 2)],
+    "tendons-pouce": [("Abductor pollicis longus", 2), ("Extensor pollicis brevis", 2), ("Extensor pollicis longus", 2)],
+    "tendons-flechisseurs-doigts": [("Humero-ulnar head of flexor digitorum superficialis", 2), ("Radial head of flexor digitorum superficialis", 2), ("Flexor digitorum profundus", 2)],
+    "tendons-extenseurs-doigts": [("Extensor digitorum", 2), ("Extensor indicis", 2), ("Extensor digiti minimi", 2)],
+    "tendon-quadricipital": [(n, 2) for n in QUADRICEPS],
+    "ligament-patellaire": [(n, 3) for n in QUADRICEPS],
+    "tendon-semi-tendineux": [("Semitendinosus muscle", 2)],
+    "tendon-tibial-anterieur": [("Tibialis anterior muscle", 2)],
+    "tendon-long-extenseur-hallux": [("Extensor hallucis longus", 2)],
+    "tendons-extenseurs-orteils": [("Extensor digitorum longus", 2)],
+    "tendons-fibulaires": [("Fibularis longus muscle", 2), ("Fibularis brevis muscle", 2)],
+    "tendons-malleole-mediale": [("Tibialis posterior muscle", 2), ("Flexor digitorum longus", 2), ("Flexor hallucis longus", 2)],
+    "intersections-tendineuses": [("Rectus abdominis muscle", 1), ("Rectus abdominis muscle", 2)],
+    "centre-tendineux": [("Diaphragm", 1), ("Diaphragm", 2)],
+    "tendon-calcaneen": [("Soleus muscle", 2), ("Lateral head of gastrocnemius", 2), ("Medial head of gastrocnemius", 2)],
+}
+zone_heritee = {(norme(n), code): ident for ident, l in ZONES_HERITEES.items() for n, code in l}
+her_par_id = {h["id"]: h for h in heritage}
+el_par_id = {e["id"]: e for e in elements}
+zones_de_piece = {}
+nb_zones = collections.Counter()
+# Des tendons que la règle générale nommerait mal.
+ZONES_NOMMEES = {
+    ("Short head of biceps brachii", 1): ("tendon-court-biceps", "Tendon du chef court du biceps", "Tendo capitis brevis musculi bicipitis brachii", "Tendon of short head of biceps brachii"),
+    ("External abdominal oblique muscle", 3): ("gaine-du-droit", "Gaine du droit de l'abdomen", "Vagina musculi recti abdominis (lamina anterior)", "Rectus sheath (anterior layer)"),
+    ("Internal abdominal oblique muscle", 3): ("gaine-du-droit", "Gaine du droit de l'abdomen", "Vagina musculi recti abdominis (lamina anterior)", "Rectus sheath (anterior layer)"),
+}
+# Ce qu'on ne montre qu'avec les fascias (voir commun.py : les voiles).
+VOILES = {"gaine-du-droit": "fascia", "platysma": "fascia"}
+zone_nommee = {(norme(n), code): v for (n, code), v in ZONES_NOMMEES.items()}
+VISAGE = re.compile(r"zygomatic|risorius|procerus|nasalis|mentalis|depressor|levator (labii|nasolabialis|anguli)|platysma|temporoparietalis|frontalis|occipitalis|orbicularis|corrugator|bucinator|auricular", re.I)
+for e in list(elements):
+    if e["couche"] != "muscle" or VISAGE.search(e["anglais"]):
+        continue  # les muscles de la mimique s'attachent à la peau : pas de tendon à apprendre
+    trouvees = []
+    for p in e["_pieces"]:
+        base = norme(re.sub(r"^\((.*)\)$", r"\1", p["anglais"]))
+        for code, info in sorted((zones.get(p["objet"]) or {}).items()):
+            if info["a"] >= SEUIL_ZONE:
+                trouvees.append((p, int(code), info, zone_heritee.get((base, int(code))), zone_nommee.get((base, int(code)))))
+    # Sans tendon terminal propre (il porte déjà un autre nom, ou le muscle n'en a pas), c'est le tendon d'origine.
+    libres = {code for _, code, _, her, nommee in trouvees if not her and not nommee}
+    origine_seule = libres == {1}
+    for p, code, info, her, nommee in trouvees:
+        if her:
+            ident = her
+        elif nommee:
+            ident = nommee[0]
+        else:
+            ident = ("tendon-origine-" if origine_seule else "tendon-") + e["id"]
+        t = el_par_id.get(ident)
+        if t is None:
+            h = her_par_id.get(ident)
+            if h:
+                t = {"id": ident, "couche": "tendon", "nom": h["nom"], "officiel": h["nom"], "latin": h["latin"], "anglais": h["anglais"], "ta2": None, "pair": h["pair"], "nature": "tendon", "inconstant": False, "_pieces": [], "_heritage": h, "region": h["region"], "rang": h["rang"]}
+                her_trouves.add(ident)
+            else:
+                court = re.sub(r" muscle$", "", e["anglais"])
+                if nommee:
+                    nom, latin, anglais = nommee[1], nommee[2], nommee[3]
+                else:
+                    nom = ("Tendon d'origine " if origine_seule else "Tendon ") + de(e["nom"])
+                    latin = "Tendo — " + e["latin"]
+                    anglais = ("Tendon of origin of " if origine_seule else "Tendon of ") + court[0].lower() + court[1:]
+                t = {"id": ident, "couche": "tendon", "nom": nom, "officiel": nom, "latin": latin, "anglais": anglais, "ta2": None, "pair": e["pair"], "nature": "tendon", "inconstant": False, "_pieces": [], "_heritage": None, "region": e["region"], "rang": 3, "muscle": e["id"], "genere": not nommee}
+            t["zone"] = True
+            if "profondeur" in e:
+                t["profondeur"] = e["profondeur"]
+            elements.append(t)
+            el_par_id[ident] = t
+            ids_pris[ident] = True
+        elif t["couche"] != "tendon":
+            continue
+        zones_de_piece.setdefault(p["objet"], {})[str(code)] = [ident] + info["c"] + [info["r"]]
+        nb_zones[ident] += 1
+
 manquants = [h["id"] for h in heritage if h["id"] not in her_trouves]
 
 # ---------------------------------------------------------------- 6. les couleurs propres (viscères, encéphale…)
@@ -467,16 +606,37 @@ for e in elements:
     for p in e["_pieces"]:
         el_de_objet[p["objet"]] = e
 
+# Qui couvre qui (étape 4 quater) : pour chaque pièce, celles qu'il faut ôter pour la voir, et sa profondeur sous la peau.
+f_couv = os.path.join(DONNEES, "couvertures.json")
+couvertures = json.load(open(f_couv, encoding="utf-8")) if os.path.exists(f_couv) else {}
+par_objet = {p["objet"]: p for p in classement["pieces"]}
+
+
+def cle_couvrant(nom):
+    """La clé d'une pièce qui en couvre une autre : « paquet/clé », avec son côté pour une pièce paire (« ~ » : la jumelle)."""
+    autre = nom.endswith("~")
+    q = par_objet.get(nom.rstrip("~"))
+    if not q:
+        return None
+    k = f"{paquet_de(q['couche'], q['sorte'])}/{cle_de(q['objet'], q['cote'], q['miroir'])}"
+    return f"{k}:{'d' if autre else 'g'}" if q["miroir"] else k
+
+
 pieces_json = []
 for p in classement["pieces"]:
     e = el_de_objet[p["objet"]]
     x = {"cle": cle_de(p["objet"], p["cote"], p["miroir"]), "paquet": paquet_de(p["couche"], p["sorte"]), "paire": bool(p["miroir"]), "element": e["id"]}
+    b = boites.get(p["objet"])
+    if b is not None:
+        centre = (b[0] + b[1]) / 2
+        x["c"] = [round(float(v), 3) for v in centre]
+        x["r"] = round(float(np.linalg.norm(b[1] - b[0]) / 2), 3)
     if p["cote"] and not p["miroir"]:
         x["cote"] = p["cote"]
     if p["objet"] in profondeurs:
         x["prof"] = profondeurs[p["objet"]]
     if len(e["_pieces"]) > 1 and norme(p["anglais"]) != norme(e["anglais"]):
-        x["nom"] = (p["francais"] or p["anglais"])
+        x["nom"] = nettoyer(p["francais"] or p["anglais"])
     c = couleur_de(p)
     if c:
         x["couleur"] = c
@@ -484,6 +644,14 @@ for p in classement["pieces"]:
         x["couleur"] = "#c5d3da"
     if p["sorte"] == "pulmonaire":
         x["couleur"] = "#3d4d9c" if p["couche"] == "artere" else "#b3211f"
+    if p["objet"] in zones_de_piece:
+        x["z"] = zones_de_piece[p["objet"]]
+    cv = couvertures.get(p["objet"])
+    if cv:
+        cles = [k for k in (cle_couvrant(n) for n, _ in cv["couvert"]) if k]
+        if cles:
+            x["couv"] = cles
+        x["peau"] = cv["peau"]
     pieces_json.append(x)
 
 CHAMPS_HERITES = ("noms", "nombre", "action", "origine", "terminaison", "innervation", "sorte", "articulations", "provenance", "territoire", "muscle", "attache", "memo", "anecdote")
@@ -495,10 +663,18 @@ for e in elements:
     if h:
         for k in CHAMPS_HERITES:
             if k in h and h[k] not in (None, "", []):
-                x[k if k != "sorte" else "forme"] = h[k]
-    if e["couche"] != "os" and "sorte" in x and x["sorte"] == e["couche"]:
-        del x["sorte"]
+                x[k] = h[k]
+    if x.get("nature") == e["couche"]:
+        del x["nature"]
+    x["art"] = article(x["nom"])
+    if x["id"] in VOILES:
+        x["voile"] = VOILES[x["id"]]
+        if x["id"] == "gaine-du-droit":
+            x["nature"], x["rang"], x["region"] = "aponevrose", 2, "abdomen"
+            x["attache"] = "Elle engaine le droit de l'abdomen et rejoint sa jumelle sur la ligne blanche"
     elements_json.append(x)
+for x in ensembles:
+    x["art"] = article(x["nom"])
 
 reperes_json = []
 vus = set()
@@ -525,6 +701,17 @@ ecrire("elements.json", elements_json)
 ecrire("ensembles.json", ensembles)
 ecrire("insertions.json", insertions_json)
 ecrire("reperes.json", reperes_json)
+# Les planches : celles qui sont publiées gardent leur contenu pour toujours (la progression enregistrée en dépend) ;
+# on en retire seulement les structures qui n'ont pas encore de modèle. Les nouvelles s'ajouteront à la suite.
+with open(os.path.join(ICI, "donnees", "planches-publiees.json"), encoding="utf-8") as f:
+    publiees = json.load(f)
+connus = {e["id"] for e in elements} | {x["id"] for x in ensembles if x["membres"]}
+planches = {c: [[i for i in niveau if i in connus] for niveau in niveaux] for c, niveaux in publiees.items()}
+ecrire("planches.json", planches)
+vieux = os.path.join(MODELE, "niveaux-herites.json")
+if os.path.exists(vieux):
+    os.remove(vieux)
+print("tendons portés par un muscle :", len(nb_zones), "éléments,", sum(nb_zones.values()), "zones")
 par_couche = collections.Counter(e["couche"] for e in elements)
 print("éléments par couche :", dict(par_couche))
 print("éléments d'origine repris :", len(her_trouves), "/", len(heritage), " non retrouvés :", manquants)

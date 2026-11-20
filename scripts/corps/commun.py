@@ -100,3 +100,80 @@ def principale(o):
         if re.match(r"^\d: ", c):
             return c
     return "autre"
+
+
+# Les surfaces d'insertion que Z-Anatomy nomme d'après un muscle entier, et les chefs qui les partagent.
+GROUPES_INSERTION = {
+    "quadriceps femoris muscle": ["rectus femoris muscle", "vastus lateralis muscle", "vastus medialis muscle", "vastus intermedius muscle"],
+    "triceps surae muscle": ["lateral head of gastrocnemius", "medial head of gastrocnemius", "soleus muscle"],
+    "biceps brachii muscle": ["long head of biceps brachii", "short head of biceps brachii"],
+    "triceps brachii muscle": ["long head of triceps brachii", "lateral head of triceps brachii", "medial head of triceps brachii"],
+    "deltoid muscle": ["clavicular part of deltoid muscle", "acromial part of deltoid muscle", "scapular spinal part of deltoid muscle"],
+    "biceps femoris muscle": ["long head of biceps femoris", "short head of biceps femoris"],
+    "pectoralis major muscle": ["clavicular head of pectoralis major muscle", "sternocostal head of pectoralis major muscle", "abdominal part of pectoralis major muscle"],
+    "iliopsoas muscle": ["psoas major", "iliacus muscle"],
+    "adductor pollicis": ["oblique head of adductor pollicis", "transverse head of adductor pollicis"],
+    "flexor digitorum superficialis": ["humero ulnar head of flexor digitorum superficialis", "radial head of flexor digitorum superficialis"],
+    "flexor carpi ulnaris": ["humeral head of flexor carpi ulnaris", "ulnar head of flexor carpi ulnaris"],
+    "extensor carpi ulnaris": ["humeral head of extensor carpi ulnaris", "ulnar head of extensor carpi ulnaris"],
+    "pronator teres": ["superficial head of pronator teres", "deep head of pronator teres"],
+    "masseter": ["superficial part of masseter", "deep part of masseter"],
+    "lateral pterygoid muscle": ["superior head of lateral pterygoid muscle", "inferior head of lateral pterygoid muscle"],
+}
+
+
+def eloignement(p):
+    """À quel point un point est loin du centre du corps en suivant le squelette : l'origine d'un muscle est, par
+    convention, son attache la plus proche du tronc (la plus haute sur un membre, la plus en arrière au pied,
+    la plus proche de l'axe sur le tronc, et à égalité la plus basse)."""
+    x, y, z = abs(float(p[0])), float(p[1]), float(p[2])
+    if x > 0.15 and y < 1.47:  # le membre supérieur, bras le long du corps
+        return 1.0 + (1.47 - y)
+    if y < 0.9 and not (x < 0.12 and y > 0.78):  # le membre inférieur (hors bassin)
+        if y < 0.09:  # le pied : du talon vers les orteils
+            return 2.0 + (0.9 - 0.09) + (z + 0.1)
+        return 2.0 + (0.9 - y)
+    return 2.0 * x + 0.3 * y
+
+
+# ---------------------------------------------------------------- les voiles
+# Ce qui couvre les muscles qu'on vient voir et qu'un écorché classique ôte : le platysma (un peaucier tendu devant
+# le cou) et la lame antérieure de la gaine du droit de l'abdomen (dans Z-Anatomy, les aponévroses des obliques
+# passent devant le droit et font partie du maillage de ces muscles). On ne les montre que sur demande, avec les
+# fascias ; ils ne font d'ombre à personne et ne comptent pas pour décider qu'un muscle est profond.
+VOILE_ENTIER = {"platysma"}
+VOILE_GAINE = {"external abdominal oblique muscle", "internal abdominal oblique muscle"}
+
+
+def bord_du_droit(P):
+    """Le droit de l'abdomen, tranche par tranche (5 mm) : sa limite latérale et sa face arrière."""
+    import numpy as np
+    y = P[:, 1]
+    ys = np.arange(y.min(), y.max() + 0.005, 0.005)
+    xmax = np.full(len(ys), np.nan)
+    zmin = np.full(len(ys), np.nan)
+    for k, y0 in enumerate(ys):
+        m = (y >= y0 - 0.004) & (y < y0 + 0.004)
+        if m.sum() >= 3:
+            xmax[k] = np.abs(P[m, 0]).max()
+            zmin[k] = P[m, 2].min()
+    bon = ~np.isnan(xmax)
+    xmax = np.interp(ys, ys[bon], xmax[bon])
+    zmin = np.interp(ys, ys[bon], zmin[bon])
+    noyau = np.ones(5) / 5
+    lisse = lambda v: np.convolve(np.concatenate([[v[0]] * 2, v, [v[-1]] * 2]), noyau, mode="valid")
+    return ys, lisse(xmax), lisse(zmin)
+
+
+def voile(nom, P, bord):
+    """La part de voile de chaque sommet d'une pièce (0 à 1), ou None si la pièce n'en a pas."""
+    import numpy as np
+    n = norme(nom)
+    if n in VOILE_ENTIER:
+        return np.ones(len(P))
+    if n not in VOILE_GAINE or bord is None:
+        return None
+    ys, xmax, zmin = bord
+    x, y = np.abs(P[:, 0]), P[:, 1]
+    dans = (y >= ys[0] - 0.012) & (y <= ys[-1] + 0.012) & (P[:, 2] > np.interp(y, ys, zmin) - 0.004)
+    return np.clip((np.interp(y, ys, xmax) + 0.005 - x) / 0.006, 0, 1) * dans

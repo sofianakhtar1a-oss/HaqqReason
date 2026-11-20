@@ -490,6 +490,28 @@
 .ec-puce[data-couche="tendon"] {
   border-color: rgb(220 230 230 / 0.35);
 }
+.ec-puce[data-couche="ligament"] {
+  border-color: rgb(201 194 168 / 0.4);
+}
+.ec-puce[data-couche="veine"] {
+  border-color: rgb(90 111 214 / 0.55);
+}
+.ec-puce[data-couche="nerf"] {
+  border-color: rgb(236 217 138 / 0.45);
+}
+.ec-puce[data-couche="viscere"] {
+  border-color: rgb(201 129 112 / 0.5);
+}
+.ec-puce[data-couche="encephale"] {
+  border-color: rgb(219 185 168 / 0.45);
+}
+.ec-puce[data-couche="lymphe"] {
+  border-color: rgb(169 187 132 / 0.5);
+}
+.ec-puce.est-suite {
+  border-style: dashed;
+  color: var(--ec-sepia);
+}
 
 /* ---------------------------------------------------------------- le vestibule */
 
@@ -1095,7 +1117,7 @@
 }
 .ec-couches {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(5.9rem, 1fr));
   gap: 0.35rem;
 }
 .ec-couche {
@@ -1141,6 +1163,24 @@
 }
 .ec-couche[data-couche="artere"] .ec-couche-pastille {
   background: #ff3b3b;
+}
+.ec-couche[data-couche="ligament"] .ec-couche-pastille {
+  background: #c9c2a8;
+}
+.ec-couche[data-couche="veine"] .ec-couche-pastille {
+  background: #5a6fd6;
+}
+.ec-couche[data-couche="nerf"] .ec-couche-pastille {
+  background: #ecd98a;
+}
+.ec-couche[data-couche="viscere"] .ec-couche-pastille {
+  background: #c98170;
+}
+.ec-couche[data-couche="encephale"] .ec-couche-pastille {
+  background: #dbb9a8;
+}
+.ec-couche[data-couche="lymphe"] .ec-couche-pastille {
+  background: #a9bb84;
 }
 .ec-segment {
   display: flex;
@@ -1465,6 +1505,41 @@
   overflow-y: auto;
   max-height: calc(min(48rem, 100dvh - 2rem) - 4.5rem);
 }
+.ec-sources p {
+  margin: 0.5rem 0;
+  color: var(--ec-sepia);
+  font-size: 0.92rem;
+}
+.ec-sources a {
+  color: var(--ec-laiton-clair);
+}
+.ec-sources code {
+  font-size: 0.85em;
+  color: var(--ec-ivoire);
+}
+.ec-sources-liste {
+  margin: 0.4rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+  color: var(--ec-sepia);
+  font-size: 0.92rem;
+}
+.ec-sources-liste b {
+  color: var(--ec-ivoire);
+  font-weight: 500;
+}
+.ec-credits {
+  margin: 2.2rem 0 0;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--ec-filet);
+  color: var(--ec-pale);
+  font-size: 0.78rem;
+}
+.ec-credits .ec-lien {
+  font-size: inherit;
+}
 .ec-interrupteur {
   display: flex;
   align-items: center;
@@ -1605,7 +1680,7 @@
     gap: 0.1rem;
   }
   .ec-couches {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

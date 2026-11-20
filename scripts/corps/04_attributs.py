@@ -8,7 +8,7 @@
 import json, os, subprocess, sys, tempfile, time
 import numpy as np
 from scipy.spatial import cKDTree
-from commun import DONNEES
+from commun import DONNEES, bord_du_droit, decouper, voile
 
 ICI = os.path.dirname(os.path.abspath(__file__))
 GEO = os.path.join(DONNEES, "geo")
@@ -56,14 +56,32 @@ def geo(cle, lod):
     return _cache[k]
 
 
+_bord = {}
+
+
+def bord(lod):
+    """Le bord du droit de l'abdomen à ce niveau de détail (pour reconnaître la gaine qui passe devant)."""
+    if lod not in _bord:
+        droit = next((p for p in pieces if p["objet"] == "Rectus abdominis muscle.l"), None)
+        g = geo(droit["cle"], lod) if droit else None
+        _bord[lod] = bord_du_droit(g[0]) if g is not None else None
+    return _bord[lod]
+
+
 def soupe(liste, lod):
-    """Les triangles (n × 9) d'une liste de pièces, des deux côtés quand la pièce est en miroir."""
+    """Les triangles (n × 9) d'une liste de pièces, des deux côtés quand la pièce est en miroir.
+    Les voiles (platysma, gaine du droit) n'y sont pas : on ne les montre pas d'office, ils ne font pas d'ombre."""
     morceaux = []
     for p in liste:
         g = geo(p["cle"], lod)
         if g is None:
             continue
         P, _, T = g
+        v = voile(decouper(p["objet"])[0], P, bord(lod))
+        if v is not None:
+            T = T[~(v[T] > 0.5).all(1)]
+            if not len(T):
+                continue
         t = P[T].reshape(-1, 9)
         morceaux.append(t)
         if p["miroir"]:

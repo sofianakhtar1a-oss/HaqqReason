@@ -4,7 +4,7 @@ import { useSyncExternalStore } from "react";
 import { tiroir } from "@/lib/client/compte";
 import { noter } from "@/lib/client/synchro/journal";
 import { PAR_ID } from "./catalogue";
-import { type CategorieId, IDS_CATEGORIES, nombreNiveaux, niveauxDe } from "./niveaux";
+import { type CategorieId, ELEMENTS_APPRIS, IDS_CATEGORIES, nombreNiveaux, niveauxDe } from "./niveaux";
 
 /*
  * La progression de L'Écorché : écrite sur l'appareil, recopiée sur le compte quand on est connecté
@@ -188,7 +188,7 @@ export const estSu = (e: Etat, id: string): boolean => boite(e, id) >= 3;
 
 /** Le nombre de structures sues d'une catégorie, sur le total. */
 export function maitrise(e: Etat, c: CategorieId): { sus: number; total: number } {
-  const ids = c === "corps" ? [...PAR_ID.keys()] : niveauxDe(c).flatMap((x) => x.nouveaux);
+  const ids = c === "corps" ? ELEMENTS_APPRIS.map((x) => x.id) : niveauxDe(c).flatMap((x) => x.nouveaux);
   return { sus: ids.filter((id) => estSu(e, id)).length, total: ids.length };
 }
 

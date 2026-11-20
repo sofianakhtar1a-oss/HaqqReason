@@ -2,8 +2,8 @@
 
 import { Flag, Timer, X } from "lucide-react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ELEMENTS, PAR_ID } from "@/lib/corps/catalogue";
-import { CATEGORIES } from "@/lib/corps/niveaux";
+import { PAR_ID, vautPour } from "@/lib/corps/catalogue";
+import { CATEGORIES, ELEMENTS_APPRIS, IDS_CATEGORIES } from "@/lib/corps/niveaux";
 import { battreRecord, noterErreur, noterJournal, noterReponse, useEcorche } from "@/lib/corps/progression";
 import { jugerNom } from "@/lib/corps/texte";
 import { GRANDES_REGIONS, REGIONS } from "@/lib/corps/types";
@@ -13,13 +13,13 @@ import type { Jeu, Stage } from "./Ecorche";
 import type { EtatStructure } from "./moteur/Corps3D";
 import { ressentir } from "./sons";
 
-type Cat = "os" | "muscles" | "tendons" | "arteres";
-const CATS: Cat[] = ["os", "muscles", "tendons", "arteres"];
+type Cat = Jeu["categorie"];
+const CATS = IDS_CATEGORIES.filter((c): c is Cat => c !== "corps");
 const GRISE: [number, number, number, number] = [60, 70, 76, 170];
 
 function structuresDu(c: Cat, grande: string): string[] {
   const couches = CATEGORIES[c].couches;
-  return ELEMENTS.filter((e) => couches.includes(e.couche) && REGIONS.find((r) => r.id === e.region)?.grande === grande).map((e) => e.id);
+  return ELEMENTS_APPRIS.filter((e) => couches.includes(e.couche) && REGIONS.find((r) => r.id === e.region)?.grande === grande).map((e) => e.id);
 }
 
 /** Le choix de la couche et de la grande région, en tête de chaque jeu. */
@@ -114,10 +114,10 @@ export function NommeLesTous({ jeu: depart, stage, fermer }: { jeu: Jeu; stage: 
   useEffect(() => {
     const premier = PAR_ID.get(ids[0]);
     if (!premier) return;
-    const { couches } = miseEnScene(premier);
+    const { couches, calques } = miseEnScene(premier);
     const etats: Record<string, EtatStructure> = {};
     for (const id of ids) etats[id] = { teinte: trouves.includes(id) ? TEINTE.juste : fini ? TEINTE.faux : GRISE, pulse: id === eclat };
-    stage.regler({ couches, profondeur: 0, etats, isoler: ids, rotation: false, etiquette: eclat ? { id: eclat, texte: PAR_ID.get(eclat)?.nom ?? "" } : null, retrait: false });
+    stage.regler({ couches, calques, profondeur: 0, etats, isoler: ids, rotation: false, etiquette: eclat ? { id: eclat, texte: PAR_ID.get(eclat)?.nom ?? "" } : null, retrait: false });
   }, [ids, trouves, fini, eclat, stage]);
   useEffect(() => {
     stage.poignee.current?.viser(ids, { marge: 1.05, cote: "g" });
@@ -223,13 +223,14 @@ export function CorpsMuet({ jeu: depart, stage, fermer }: { jeu: Jeu; stage: Sta
   useEffect(() => {
     const premier = PAR_ID.get(ordre[0]);
     if (!premier) return;
-    const { couches } = miseEnScene(premier);
+    const { couches, calques } = miseEnScene(premier);
     const etats: Record<string, EtatStructure> = {};
     for (const id of justes) etats[id] = { teinte: TEINTE.juste };
     for (const id of ratees) etats[id] = { teinte: TEINTE.faux };
     if (faux) etats[faux] = { teinte: TEINTE.faux, pulse: true };
     if (essais >= 2 && cible) etats[cible] = { teinte: TEINTE.laiton, pulse: true };
-    stage.regler({ couches, profondeur: 0, etats, isoler: ordre, rotation: false, etiquette: null, retrait: false });
+    // Ce qui couvre la structure cherchée s'efface : on ne peut pas toucher un muscle caché sous un autre.
+    stage.regler({ couches, calques, profondeur: 0, decouvrir: cible ? [cible] : null, etats, isoler: ordre, rotation: false, etiquette: null, retrait: false });
   }, [ordre, justes, ratees, faux, essais, cible, stage]);
   useEffect(() => {
     stage.poignee.current?.viser(ordre, { marge: 1.05, cote: "g" });
@@ -247,7 +248,7 @@ export function CorpsMuet({ jeu: depart, stage, fermer }: { jeu: Jeu; stage: Sta
   useEffect(() => {
     stage.surChoix((s) => {
       if (!s || !cible || fini) return;
-      if (s.element === cible) {
+      if (vautPour(s.element, cible)) {
         if (essais === 0) {
           setJustes((l) => [...l, cible]);
           noterReponse(cible, true, 6);
