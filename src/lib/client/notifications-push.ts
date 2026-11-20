@@ -54,3 +54,43 @@ export async function activerNotifications(): Promise<EtatNotifications> {
     return "inactif";
   }
 }
+
+/**
+ * Sans rien demander : si cet appareil a déjà accepté les notifications, on s'assure qu'il est bien
+ * abonné et connu du serveur (nouvelle clé du site, abonnement perdu). Aucune fenêtre ne s'ouvre.
+ */
+export async function abonnerEnSilence(): Promise<boolean> {
+  if (typeof window === "undefined" || !("Notification" in window) || Notification.permission !== "granted") return false;
+  return (await activerNotifications()) === "actif";
+}
+
+const CLE_DEMANDE = "hr-calame-notifications-demandees";
+
+/**
+ * Une seule fois par appareil, au premier geste de l'auteur (le navigateur l'exige) : demander
+ * l'autorisation des notifications, pour que les rappels arrivent sans qu'il ait à chercher le bouton.
+ */
+export function demanderAuPremierGeste(): () => void {
+  if (typeof window === "undefined" || !("Notification" in window) || !("PushManager" in window) || Notification.permission !== "default") return () => undefined;
+  try {
+    if (localStorage.getItem(CLE_DEMANDE)) return () => undefined;
+  } catch {
+    return () => undefined;
+  }
+  const auGeste = () => {
+    window.removeEventListener("pointerup", auGeste, true);
+    window.removeEventListener("keydown", auGeste, true);
+    try {
+      localStorage.setItem(CLE_DEMANDE, "1");
+    } catch {
+      // Stockage indisponible : on redemandera, tant pis.
+    }
+    void activerNotifications();
+  };
+  window.addEventListener("pointerup", auGeste, true);
+  window.addEventListener("keydown", auGeste, true);
+  return () => {
+    window.removeEventListener("pointerup", auGeste, true);
+    window.removeEventListener("keydown", auGeste, true);
+  };
+}

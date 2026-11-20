@@ -2,7 +2,7 @@
 
 import type { Editor } from "@tiptap/core";
 import { useEffect, useMemo, useState } from "react";
-import { Archive, ArchiveRestore, ArrowDown, ArrowLeft, ArrowRight, ArrowUp, CheckSquare, ChevronDown, ChevronRight, Columns2, Copy, FilePlus2, FileText, Folder, FolderOpen, FolderPlus, GripVertical, LayoutGrid, ListTree, LockKeyhole, MoreHorizontal, Pin, RotateCcw, Search, Trash2, Upload, Users } from "lucide-react";
+import { Archive, ArchiveRestore, ArrowDown, ArrowLeft, ArrowRight, ArrowUp, CheckSquare, ChevronDown, ChevronRight, Columns2, Copy, FilePlus2, FileText, Folder, FolderOpen, FolderPlus, GripVertical, LayoutGrid, ListTree, LockKeyhole, MoreHorizontal, Pin, RotateCcw, Search, Trash2, Upload, Users, ClipboardPaste } from "lucide-react";
 import { extrasDe, STATUTS_DOCUMENT, type DocumentAtelier } from "@/lib/atelier/modele";
 import { pagesEstimees } from "@/lib/atelier/pagination";
 import { modifierPreferences, TRIS, type Tri } from "@/lib/atelier/preferences";
@@ -32,6 +32,8 @@ export type ActionsDocuments = {
   surManuscrit?: (ids: string[]) => void;
   /** Ouvrir un document partagé avec moi (une copie liée arrive dans ma liste). */
   surOuvrirPartage?: (id: string) => void;
+  /** Un nouveau document avec ce que contient le presse-papiers (texte, lien, images). */
+  surColler?: () => void;
 };
 
 type Props = ActionsDocuments & {
@@ -88,7 +90,7 @@ export function BarreLaterale(props: Props) {
 
 /* ---------------------------------------------------------------- documents */
 
-function ListeDocuments({ documents, actif, surOuvrir, surNouveau, surImporter, surModifier, surDupliquer, surCorbeille, surSupprimerDefinitivement, surOuvrirACote, surModeles, surExporterSelection, surManuscrit, surOuvrirPartage }: Props) {
+function ListeDocuments({ documents, actif, surOuvrir, surNouveau, surImporter, surModifier, surDupliquer, surCorbeille, surSupprimerDefinitivement, surOuvrirACote, surModeles, surExporterSelection, surManuscrit, surOuvrirPartage, surColler }: Props) {
   const t = useTextes("calame");
   const prefs = usePreferences();
   const [vue, setVue] = useState<Vue>("documents");
@@ -283,6 +285,11 @@ function ListeDocuments({ documents, actif, surOuvrir, surNouveau, surImporter, 
           <FilePlus2 className="size-4" aria-hidden="true" />
           {t("nouveau")}
         </button>
+        {surColler && (
+          <button type="button" className="bouton bouton-discret bouton-petit" onClick={surColler} title="Nouveau document avec ce que tu as copié (texte, lien, image)" aria-label="Coller dans un nouveau document">
+            <ClipboardPaste className="size-4" aria-hidden="true" />
+          </button>
+        )}
         {surModeles && (
           <button type="button" className="bouton bouton-discret bouton-petit" onClick={surModeles} title="Partir d'un modèle">
             <LayoutGrid className="size-4" aria-hidden="true" />

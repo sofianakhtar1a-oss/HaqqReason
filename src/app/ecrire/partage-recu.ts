@@ -108,3 +108,30 @@ export async function departDuPartage(p: PartageRecu, maintenant = new Date()): 
   const titre = (p.titre.trim() || (premiereLigne.length <= 80 ? premiereLigne : `${premiereLigne.slice(0, 77)}…`) || (site ? `Lien : ${site}` : "") || (p.fichiers[0]?.nom ?? "") || `Reçu le ${date}`).slice(0, 120);
   return { depart: { titre, contenu: { type: "doc", content: contenu } }, laisses };
 }
+
+/**
+ * Ce que contient le presse-papiers (texte, lien, images), pour en faire un document : la voie de
+ * l'iPhone, où un site ne peut pas figurer dans « Partager » (copier dans l'autre application, puis coller ici).
+ */
+export async function lirePressePapiers(): Promise<PartageRecu | { erreur: string }> {
+  const vide = { erreur: "Le presse-papiers est vide : copie d'abord un texte, un lien ou une image." };
+  if (typeof navigator === "undefined" || !navigator.clipboard) return { erreur: "Ce navigateur ne laisse pas lire le presse-papiers : colle avec Ctrl+V (ou un appui long) dans un document." };
+  try {
+    if (navigator.clipboard.read) {
+      const elements = await navigator.clipboard.read();
+      let texte = "";
+      const fichiers: FichierRecu[] = [];
+      for (const [i, el] of elements.entries()) {
+        const image = el.types.find((t) => t.startsWith("image/"));
+        if (image) fichiers.push({ nom: `image-${i + 1}.${image.split("/")[1] || "png"}`, type: image, blob: await el.getType(image) });
+        else if (el.types.includes("text/plain")) texte += (texte ? "\n\n" : "") + (await (await el.getType("text/plain")).text());
+      }
+      if (!texte.trim() && fichiers.length === 0) return vide;
+      return { titre: "", texte, lien: "", fichiers, restes: 0 };
+    }
+    const texte = await navigator.clipboard.readText();
+    return texte.trim() ? { titre: "", texte, lien: "", fichiers: [], restes: 0 } : vide;
+  } catch {
+    return { erreur: "Le presse-papiers n'a pas été lu : autorise-le, ou colle avec Ctrl+V (ou un appui long) dans un document." };
+  }
+}

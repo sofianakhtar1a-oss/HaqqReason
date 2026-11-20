@@ -1,13 +1,14 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { LIMITES_PARTAGE, ROLES_PARTAGE, type RolePartage } from "@/lib/atelier/partage-commun";
-import { ajouterMembre, changementsDepuis, ecrireBase, fichiersDeposes, lireBase, peutEcrire, quitter, remettre, rendre, retirerMembre, supprimerPartage } from "@/lib/atelier/partages";
+import { ajouterMembre, changementsDepuis, creerInvitation, ecrireBase, lireInvitation, retirerInvitation, fichiersDeposes, lireBase, peutEcrire, quitter, remettre, rendre, retirerMembre, supprimerPartage } from "@/lib/atelier/partages";
 import { SANS_CACHE, acces, refus } from "@/lib/atelier/partages-acces";
 
 /*
  * Un document partagé.
  *   GET     ce qu'il faut pour l'ouvrir : membres, mon rôle, le texte de départ et les changements depuis ;
  *   POST    { action: "membre", compte, role } | { action: "retirer", compte } | { action: "remettre", classe }
- *           | { action: "rendre" } | { action: "quitter" } | { action: "base", version, contenu, reglages, titre } ;
+ *           | { action: "rendre" } | { action: "quitter" } | { action: "base", version, contenu, reglages, titre }
+ *           | { action: "invitation", role } | { action: "invitation-lire" } | { action: "invitation-retirer" } (le propriétaire) ;
  *   DELETE  arrêter le partage (le propriétaire seul ; chacun garde sa copie).
  */
 type Contexte = { params: Promise<{ id: string }> };
@@ -63,6 +64,19 @@ export async function POST(requete: NextRequest, { params }: Contexte) {
         ? NextResponse.json({ ok: true }, { headers: SANS_CACHE })
         : refus(409, "Version dépassée.");
     }
+    case "invitation": {
+      if (!proprietaire) return refus(403, "Seul le propriétaire invite.");
+      const role = ROLES_PARTAGE.some((r) => r.cle === o.role) ? (o.role as RolePartage) : null;
+      if (!role) return refus(400, "Rôle illisible.");
+      const invitation = await creerInvitation(a.meta, role);
+      return invitation ? NextResponse.json({ invitation }, { headers: SANS_CACHE }) : refus(503, "Le stockage n'a pas répondu.");
+    }
+    case "invitation-lire":
+      if (!proprietaire) return refus(403, "Seul le propriétaire invite.");
+      return NextResponse.json({ invitation: await lireInvitation(a.meta.id) }, { headers: SANS_CACHE });
+    case "invitation-retirer":
+      if (!proprietaire) return refus(403, "Seul le propriétaire invite.");
+      return (await retirerInvitation(a.meta)) ? NextResponse.json({ invitation: null }, { headers: SANS_CACHE }) : refus(503, "Le stockage n'a pas répondu.");
     default:
       return refus(400, "Action inconnue.");
   }

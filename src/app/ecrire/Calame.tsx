@@ -47,6 +47,7 @@ import { departDuPartage, lirePartageRecu } from "./partage-recu";
 import { DialogueManuscrit } from "./DialogueManuscrit";
 import { assemblerManuscrit, type OptionsManuscrit } from "@/lib/atelier/manuscrit";
 import { exporterSelection } from "./sorties";
+import { abonnerEnSilence, demanderAuPremierGeste } from "@/lib/client/notifications-push";
 
 /** Le dernier document ouvert, pour ce compte et sur cet appareil. */
 const dernier = {
@@ -212,6 +213,16 @@ export function Calame() {
     [afficher],
   );
 
+  // Les rappels d'écriture arrivent sur chaque appareil sans chercher de bouton : abonnement silencieux
+  // là où les notifications sont déjà permises, sinon une seule demande, au premier geste.
+  useEffect(() => {
+    if (etat !== "pret") return;
+    const r = lirePreferences().rappel;
+    if (!r.actif && !r.veille) return;
+    void abonnerEnSilence().catch(() => false);
+    return r.actif ? demanderAuPremierGeste() : undefined;
+  }, [etat]);
+
   // Un texte, un lien ou une photo envoyés depuis une autre application (« Partager » du téléphone).
   const partageTraite = useRef(false);
   useEffect(() => {
@@ -263,9 +274,20 @@ export function Calame() {
     if (etat !== "pret" || partageDemande.current) return;
     partageDemande.current = true;
     void (async () => {
-      const id = new URLSearchParams(window.location.search).get("partage");
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("partage");
       if (!id || !/^[0-9a-f-]{36}$/i.test(id)) return;
       window.history.replaceState(null, "", "/ecrire");
+      // Un lien d'invitation : on rejoint d'abord le document, puis il s'ouvre comme les autres.
+      const jeton = params.get("invitation");
+      if (jeton) {
+        const r = await fetch(`/api/calame/partages/${id}/rejoindre`, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ jeton }) }).catch(() => null);
+        if (!r?.ok) {
+          const d = (r ? await r.json().catch(() => ({})) : {}) as { erreur?: string };
+          setMessage(d.erreur ?? "Le lien d'invitation n'a pas pu être ouvert : vérifie ta connexion, puis rouvre-le.");
+          return;
+        }
+      }
       await ouvrirPartage(id);
     })();
   }, [etat, ouvrirPartage]);

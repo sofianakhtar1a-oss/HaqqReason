@@ -1,7 +1,7 @@
 "use client";
 
 import type { Editor } from "@tiptap/core";
-import { Check, GraduationCap, History, LogOut, PenLine, Send, UserMinus, UserPlus, Users, X, MessageSquareText } from "lucide-react";
+import { Check, GraduationCap, History, LogOut, PenLine, Send, UserMinus, UserPlus, Users, X, MessageSquareText, Link2 } from "lucide-react";
 import { useEffect, useState } from "react";
 import type { DocumentAtelier } from "@/lib/atelier/modele";
 import { ROLES_PARTAGE, couleurDe, libelleRole, regrouperHistorique, type LigneHistorique, type MetaPartage, type RolePartage } from "@/lib/atelier/partage-commun";
@@ -45,7 +45,7 @@ function Carnet({ contacts, exclus, surValider, libelle }: { contacts: Contacts 
   if (contacts.amis.length === 0)
     return (
       <p className="inspecteur-aide">
-        Le carnet, ce sont tes amis du Portulan. Ajoute-en d&apos;abord avec leur code d&apos;ami : <a href="/monde">ouvrir le Portulan</a>.
+        Pas encore d&apos;amis dans le Portulan : invite plutôt par un lien, juste en dessous.
       </p>
     );
   if (amis.length === 0) return <p className="inspecteur-aide">Tous tes amis ont déjà ce document.</p>;
@@ -126,6 +126,113 @@ function LigneSuggestion({ editor, s, peutTrancher, moi }: { editor: Editor; s: 
         )}
       </span>
     </li>
+  );
+}
+
+/**
+ * Le lien d'invitation : à envoyer par message, e-mail ou SMS. Qui l'ouvre (connecté à HaqqReason)
+ * rejoint le document avec le rôle choisi, sans être ami dans le Portulan. Désactivable à tout moment.
+ */
+function LienInvitation({ partageId, creer, surMessage }: { partageId: string | null; creer: () => Promise<string>; surMessage: (texte: string) => void }) {
+  const [invitation, setInvitation] = useState<{ jeton: string; role: RolePartage } | null>(null);
+  const [role, setRole] = useState<RolePartage>("ecriture");
+  const [occupe, setOccupe] = useState(false);
+  const [erreur, setErreur] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!partageId) return;
+    let vivant = true;
+    void appeler(`/api/calame/partages/${partageId}`, { action: "invitation-lire" })
+      .then((d) => vivant && setInvitation((d.invitation as typeof invitation) ?? null))
+      .catch(() => undefined);
+    return () => {
+      vivant = false;
+    };
+  }, [partageId]);
+
+  const adresse = invitation && partageId ? `${window.location.origin}/ecrire?partage=${partageId}&invitation=${invitation.jeton}` : "";
+
+  const envoyer = async (lien: string) => {
+    const texte = "Je t'invite à écrire avec moi dans le Calame de HaqqReason :";
+    try {
+      if (navigator.share) await navigator.share({ title: "Le Calame", text: texte, url: lien });
+      else {
+        await navigator.clipboard.writeText(lien);
+        surMessage("Lien copié : colle-le dans un message.");
+      }
+    } catch {
+      // Partage annulé : rien à faire.
+    }
+  };
+
+  const creerLien = async () => {
+    setOccupe(true);
+    setErreur(null);
+    try {
+      const id = partageId ?? (await creer());
+      const d = await appeler(`/api/calame/partages/${id}`, { action: "invitation", role });
+      const inv = d.invitation as { jeton: string; role: RolePartage };
+      setInvitation(inv);
+      void envoyer(`${window.location.origin}/ecrire?partage=${id}&invitation=${inv.jeton}`);
+    } catch (e) {
+      setErreur((e as Error).message);
+    }
+    setOccupe(false);
+  };
+
+  const retirer = async () => {
+    if (!partageId) return;
+    setOccupe(true);
+    try {
+      await appeler(`/api/calame/partages/${partageId}`, { action: "invitation-retirer" });
+      setInvitation(null);
+      surMessage("Lien désactivé : il n'ouvre plus le document.");
+    } catch (e) {
+      setErreur((e as Error).message);
+    }
+    setOccupe(false);
+  };
+
+  return (
+    <div className="calame-invitation">
+      <p className="inspecteur-libelle">
+        <Link2 className="size-4" aria-hidden="true" /> Par un lien, à n&apos;importe qui
+      </p>
+      {invitation ? (
+        <>
+          <p className="inspecteur-aide">Qui ouvre ce lien rejoint le document ({libelleRole(invitation.role).toLowerCase()}).</p>
+          <div className="calame-invitation-lien">
+            <input className="champ" readOnly value={adresse} aria-label="Lien d'invitation" onFocus={(e) => e.currentTarget.select()} />
+            <button type="button" className="bouton bouton-principal bouton-petit" onClick={() => void envoyer(adresse)}>
+              <Send className="size-4" aria-hidden="true" />
+              Envoyer
+            </button>
+          </div>
+          <button type="button" className="bouton bouton-discret bouton-petit" disabled={occupe} onClick={() => void retirer()}>
+            Désactiver le lien
+          </button>
+        </>
+      ) : (
+        <div className="calame-invitation-lien">
+          <select className="champ" value={role} onChange={(e) => setRole(e.target.value as RolePartage)} aria-label="Rôle donné par le lien">
+            {ROLES_PARTAGE.map((r) => (
+              <option key={r.cle} value={r.cle}>
+                {r.libelle}
+              </option>
+            ))}
+          </select>
+          <button type="button" className="bouton bouton-principal bouton-petit" disabled={occupe} onClick={() => void creerLien()}>
+            <Link2 className="size-4" aria-hidden="true" />
+            Créer le lien
+          </button>
+        </div>
+      )}
+      {erreur && (
+        <p className="inspecteur-aide" data-alerte="" role="alert">
+          {erreur}
+        </p>
+      )}
+    </div>
   );
 }
 
@@ -232,6 +339,7 @@ export function PanneauPartage({ editor, doc, titre, liaison, surModifier, surMe
           </h3>
           <p className="inspecteur-aide">Avec tes amis du Portulan : chacun le reçoit dans son Calame. Vous écrivez ensemble, en direct, chacun avec son curseur ; un relecteur commente et propose.</p>
           <Carnet contacts={contacts} exclus={[]} surValider={(c) => void partager(c)} libelle="Partager" />
+          <LienInvitation partageId={null} creer={creer} surMessage={surMessage} />
           {erreur && (
             <p className="inspecteur-aide" data-alerte="" role="alert">
               {erreur}
@@ -306,6 +414,7 @@ export function PanneauPartage({ editor, doc, titre, liaison, surModifier, surMe
               Ajouter des personnes
             </button>
           ))}
+        {proprietaire && <LienInvitation partageId={partage.id} creer={creer} surMessage={surMessage} />}
         {erreur && (
           <p className="inspecteur-aide" data-alerte="" role="alert">
             {erreur}

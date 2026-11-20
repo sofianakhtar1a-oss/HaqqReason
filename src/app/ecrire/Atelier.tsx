@@ -114,6 +114,7 @@ import { Suggestions, etatSuggestions, reglerSuggestions } from "./partage/sugge
 import { enAttente as changementsEnAttente, versionCollab } from "./partage/collab";
 import { definirPartageCourant } from "./partage/contexte";
 import { couleurDe } from "@/lib/atelier/partage-commun";
+import { departDuPartage, lirePressePapiers } from "./partage-recu";
 
 const AIDES: Record<string, string> = {
   versetArabe: "Texte arabe du verset",
@@ -857,6 +858,19 @@ export function Atelier(props: Props) {
     return () => clearInterval(tic);
   }, [seance, annoncer]);
 
+  // Coller dans un nouveau document : la voie de l'iPhone, où un site ne figure pas dans « Partager ».
+  const collerEnDocument = useCallback(async () => {
+    if (!props.surModele) return;
+    const recu = await lirePressePapiers();
+    if ("erreur" in recu) {
+      setMessage(recu.erreur);
+      return;
+    }
+    const { depart, laisses } = await departDuPartage(recu);
+    props.surModele(depart);
+    if (laisses.length) setMessage(`Pas pu entrer : ${laisses.join(", ")}.`);
+  }, [props]);
+
   // F7 : la remarque de relecture suivante (sa bulle s'ouvre), ou la relecture de tout le document s'il n'y en a pas.
   const relireAuClavier = useCallback(() => {
     if (!editor) return;
@@ -1014,6 +1028,7 @@ export function Atelier(props: Props) {
       { cle: "relire", libelle: "Relire", description: "Mesures, répétitions, lecture à voix haute", groupe: "Relire", faire: () => ouvrirOnglet("relire") },
       { cle: "grammaire", libelle: "Relire la grammaire et l'orthographe", description: "Accords, conjugaison, typographie (F7)", groupe: "Relire", faire: relireAuClavier },
       { cle: "synonymes", libelle: "Synonymes du mot", description: "Le mot sous le curseur (Maj+F7)", groupe: "Relire", faire: () => setDialogueMot("synonymes") },
+      { cle: "coller-document", libelle: "Coller dans un nouveau document", description: "Ce que tu as copié ailleurs : texte, lien, image", groupe: "Document", faire: () => void collerEnDocument() },
       { cle: "anglais", libelle: "Traduire le mot en anglais", description: "D'après le Truchement et le Wiktionnaire", groupe: "Relire", faire: () => setDialogueMot("anglais") },
       { cle: "dictionnaire-perso", libelle: "Mon dictionnaire personnel", description: "Les mots que la relecture ne signale plus", groupe: "Relire", faire: () => ouvrirOnglet("relire") },
       { cle: "relecture", libelle: relecture ? "Quitter le mode relecture" : "Mode relecture", description: "Texte en lecture seule, plus grand", groupe: "Relire", faire: () => basculerRelecture(!relecture) },
@@ -1043,7 +1058,7 @@ export function Atelier(props: Props) {
         .slice(0, 200)
         .map((d) => ({ cle: `doc-${d.id}`, libelle: d.titre || "Sans titre", description: `${d.mots.toLocaleString("fr-FR")} mots`, groupe: "Ouvrir", faire: () => props.surOuvrir(d.id) })),
     ],
-    [enregistrer, exporter, documents, doc.id, relecture, basculerRelecture, basculerConcentration, ajusterLargeur, motsActuels, surBienvenue, props, palette, editor, extras.proprietes.auteur, annoncer, relireAuClavier, extras.partage],
+    [enregistrer, exporter, documents, doc.id, relecture, basculerRelecture, basculerConcentration, ajusterLargeur, motsActuels, surBienvenue, props, palette, editor, extras.proprietes.auteur, annoncer, relireAuClavier, extras.partage, collerEnDocument],
   );
 
   function ouvrirOnglet(cle: string) {
@@ -1291,6 +1306,7 @@ export function Atelier(props: Props) {
           surExporterSelection={props.surExporterSelection}
           surManuscrit={props.surManuscrit}
           surOuvrirPartage={props.surOuvrirPartage}
+          surColler={props.surModele ? () => void collerEnDocument() : undefined}
         />
       )}
 

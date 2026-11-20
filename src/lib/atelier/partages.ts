@@ -1,5 +1,5 @@
 import "server-only";
-import { randomUUID } from "node:crypto";
+import { randomBytes, randomUUID, timingSafeEqual } from "node:crypto";
 import { nomPublic } from "@/lib/langues/points";
 import { notifier } from "@/lib/monde/notifications";
 import { lireAmis, mesClasses } from "@/lib/monde/social";
@@ -142,7 +142,7 @@ export async function supprimerPartage(meta: MetaPartage): Promise<boolean> {
       await stockage().remove(data.map((f) => chemin(meta.id, `${sous}/${f.name}`)));
     }
   }
-  const { error } = await stockage().remove(["meta.json", "base.json", "presence.json"].map((f) => chemin(meta.id, f)));
+  const { error } = await stockage().remove(["meta.json", "base.json", "presence.json", "invitation.json"].map((f) => chemin(meta.id, f)));
   for (const c of [meta.proprietaire, ...meta.membres.map((m) => m.compte)]) await modifierIndex(c, meta.id, false);
   return !error;
 }
@@ -316,4 +316,47 @@ export async function quitter(meta: MetaPartage, compte: string): Promise<boolea
   if (meta.proprietaire === compte) return false;
   const r = await retirerMembre(meta, compte);
   return !("erreur" in r);
+}
+
+// ---------------------------------------------------------------- le lien d'invitation
+
+/*
+ * Un lien secret, créé par le propriétaire : quiconque l'ouvre, connecté, rejoint le document avec le
+ * rôle choisi (sans passer par les amis du Portulan). Il est rangé à part, jamais renvoyé aux membres,
+ * et se désactive (ou se remplace) d'un geste.
+ */
+export type Invitation = { jeton: string; role: RolePartage; cree: string };
+
+export const lireInvitation = (id: string) => (valideId(id) ? lireJson<Invitation>(chemin(id, "invitation.json")) : Promise.resolve(null));
+
+export async function creerInvitation(meta: MetaPartage, role: RolePartage): Promise<Invitation | null> {
+  const invitation: Invitation = { jeton: randomBytes(18).toString("base64url"), role, cree: new Date().toISOString() };
+  return (await ecrireJson(chemin(meta.id, "invitation.json"), invitation)) === "ok" ? invitation : null;
+}
+
+export async function retirerInvitation(meta: MetaPartage): Promise<boolean> {
+  const { error } = await stockage().remove([chemin(meta.id, "invitation.json")]);
+  return !error;
+}
+
+const memeJeton = (a: string, b: string) => {
+  const x = Buffer.from(a);
+  const y = Buffer.from(b);
+  return x.length === y.length && timingSafeEqual(x, y);
+};
+
+export async function rejoindreParInvitation(id: string, compte: string, jeton: string): Promise<{ role: MonRole } | { erreur: string }> {
+  const meta = await lireMeta(id);
+  if (!meta) return { erreur: "Ce document n'est plus partagé." };
+  const deja = roleDe(meta, compte);
+  if (deja) return { role: deja };
+  const invitation = await lireInvitation(id);
+  if (!invitation || !memeJeton(invitation.jeton, jeton)) return { erreur: "Ce lien d'invitation n'est plus valable : demande-en un nouveau." };
+  if (meta.membres.length >= LIMITES_PARTAGE.membres) return { erreur: `${LIMITES_PARTAGE.membres} personnes au plus par document.` };
+  const nom = await nomDe(compte);
+  meta.membres.push({ compte, nom, role: invitation.role, ajoute: new Date().toISOString() });
+  if (!(await ecrireMeta(meta))) return { erreur: "Le stockage n'a pas répondu : réessaie dans un instant." };
+  await modifierIndex(compte, id, true);
+  await notifier(meta.proprietaire, { titre: "Le Calame", corps: `${nom} a rejoint « ${meta.titre} » par ton lien (${libelleRole(invitation.role).toLowerCase()}).`, url: `/ecrire?partage=${meta.id}`, etiquette: `calame-${meta.id}`.slice(0, 60) });
+  return { role: invitation.role };
 }

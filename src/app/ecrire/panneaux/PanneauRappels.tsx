@@ -1,10 +1,11 @@
 "use client";
 
-import { Bell, BellOff, BellRing } from "lucide-react";
+import { Bell, BellOff, BellRing, Smartphone } from "lucide-react";
 import { useEffect, useState } from "react";
 import { modifierPreferences } from "@/lib/atelier/preferences";
 import type { RappelEcriture } from "@/lib/atelier/rappels";
 import { activerNotifications, etatNotifications, type EtatNotifications } from "@/lib/client/notifications-push";
+import { installer, useInstallation } from "@/lib/client/installation";
 import { usePreferences } from "../crochets";
 
 const JOURS = [
@@ -39,6 +40,7 @@ export function PanneauRappels() {
   const r = prefs.rappel;
   const [notif, setNotif] = useState<EtatNotifications | null>(null);
   const [essai, setEssai] = useState<string | null>(null);
+  const installation = useInstallation();
 
   useEffect(() => {
     let vivant = true;
@@ -49,7 +51,11 @@ export function PanneauRappels() {
   }, []);
 
   // Le fuseau de l'appareil accompagne chaque réglage : l'heure choisie est celle de l'auteur.
-  const regler = (modif: Partial<RappelEcriture>) => modifierPreferences((p) => ({ rappel: { ...p.rappel, ...modif, fuseau: fuseauIci() || p.rappel.fuseau } }));
+  const regler = (modif: Partial<RappelEcriture>) => {
+    modifierPreferences((p) => ({ rappel: { ...p.rappel, ...modif, fuseau: fuseauIci() || p.rappel.fuseau } }));
+    // Activer un rappel suffit : l'appareil s'abonne dans le même geste (l'autorisation est demandée une fois).
+    if ((modif.actif || modif.veille) && notif === "inactif") void activerNotifications().then(setNotif);
+  };
 
   const activer = async () => setNotif(await activerNotifications());
 
@@ -110,6 +116,20 @@ export function PanneauRappels() {
       {essai && (
         <p className="inspecteur-aide" role="status">
           {essai}
+        </p>
+      )}
+      {installation === "proposable" && (
+        <div className="calame-rappel-appareil">
+          <Smartphone className="size-4" aria-hidden="true" />
+          <p>Installe HaqqReason sur cet appareil : les rappels arrivent plus sûrement, et le Calame apparaît dans « Partager » des autres applications.</p>
+          <button type="button" className="bouton bouton-discret bouton-petit" onClick={() => void installer()}>
+            Installer
+          </button>
+        </div>
+      )}
+      {installation === "iphone" && (
+        <p className="inspecteur-aide">
+          Sur iPhone, les rappels demandent HaqqReason sur l&apos;écran d&apos;accueil : dans Safari, bouton Partager, puis « Sur l&apos;écran d&apos;accueil ». Pour envoyer un texte ou une photo au Calame : copie-le, puis bouton « Coller » de la liste des documents.
         </p>
       )}
       <p className="inspecteur-aide">Les rappels partent du site, même quand le Calame est fermé, à quelques minutes près. Ils arrivent sur chaque appareil où tu les as acceptés.</p>
