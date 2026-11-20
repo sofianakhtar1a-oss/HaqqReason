@@ -242,7 +242,108 @@ export type MiseEnPage = {
   cesure: boolean;
   /** Ni ligne seule en bas de page (orpheline), ni en haut de la suivante (veuve). */
   veuves: boolean;
+  /** Paragraphes justifiés par défaut (un alignement choisi sur un paragraphe l'emporte). */
+  justifier: boolean;
+  /** Styles nommés, de paragraphe ou de caractère (Titre 4, Légende, Verset, et ceux de l'auteur). */
+  stylesNommes: StyleNomme[];
 };
+
+/** Un style nommé : on le pose sur un paragraphe (ou sur quelques mots), il se règle ici une fois pour toutes. */
+export type StyleNomme = {
+  id: string;
+  nom: string;
+  genre: "paragraphe" | "caractere";
+  police: Police;
+  taille: number;
+  graisse: number;
+  couleur: string;
+  italique: boolean;
+  majuscules: boolean;
+  /** Paragraphe seulement. */
+  interligne: number;
+  avant: number;
+  apres: number;
+  alignement: "" | "left" | "center" | "right" | "justify";
+  /** Retrait à gauche, en millimètres. */
+  retrait: number;
+};
+
+const STYLE_BASE: Omit<StyleNomme, "id" | "nom" | "genre"> = {
+  police: "serif",
+  taille: 11.5,
+  graisse: 400,
+  couleur: "#1a1d2e",
+  italique: false,
+  majuscules: false,
+  interligne: 1.5,
+  avant: 0,
+  apres: 8,
+  alignement: "",
+  retrait: 0,
+};
+
+export const STYLES_NOMMES_PAR_DEFAUT: StyleNomme[] = [
+  { ...STYLE_BASE, id: "titre4", nom: "Titre 4", genre: "paragraphe", police: "display", taille: 12, graisse: 600, couleur: "#0d1640", interligne: 1.3, avant: 10, apres: 4 },
+  { ...STYLE_BASE, id: "legende", nom: "Légende", genre: "paragraphe", taille: 9.5, italique: true, couleur: "#424a6b", interligne: 1.35, avant: 2, apres: 10, alignement: "center" },
+  { ...STYLE_BASE, id: "verset", nom: "Verset", genre: "paragraphe", police: "arabe", taille: 15, couleur: "#0d1640", interligne: 1.9, avant: 8, apres: 8, alignement: "center" },
+  { ...STYLE_BASE, id: "terme-arabe", nom: "Terme arabe", genre: "caractere", italique: true },
+  { ...STYLE_BASE, id: "petites-capitales", nom: "Mise en valeur", genre: "caractere", majuscules: true, taille: 10.5, graisse: 600 },
+];
+
+const ID_STYLE = /^[a-z0-9-]{1,40}$/;
+
+export function nettoyerStylesNommes(brut: unknown): StyleNomme[] {
+  if (!Array.isArray(brut)) return structuredCloneSimple(STYLES_NOMMES_PAR_DEFAUT);
+  const vus = new Set<string>();
+  const styles: StyleNomme[] = [];
+  for (const b of brut.slice(0, 60)) {
+    const o = (b ?? {}) as Record<string, unknown>;
+    const id = typeof o.id === "string" && ID_STYLE.test(o.id) ? o.id : "";
+    if (!id || vus.has(id)) continue;
+    vus.add(id);
+    styles.push({
+      id,
+      nom: String(o.nom ?? id).trim().slice(0, 40) || id,
+      genre: o.genre === "caractere" ? "caractere" : "paragraphe",
+      police: dansLaListe(o.police, POLICES.map((x) => x.cle), STYLE_BASE.police),
+      taille: nombre(o.taille, BORNES_JETON.taille.min, BORNES_JETON.taille.max, STYLE_BASE.taille),
+      graisse: dansLaListe(String(o.graisse), GRAISSES.map(String), String(STYLE_BASE.graisse)) as unknown as number,
+      couleur: couleur(o.couleur, STYLE_BASE.couleur),
+      italique: o.italique === true,
+      majuscules: o.majuscules === true,
+      interligne: nombre(o.interligne, BORNES_JETON.interligne.min, BORNES_JETON.interligne.max, STYLE_BASE.interligne),
+      avant: nombre(o.avant, 0, 72, STYLE_BASE.avant),
+      apres: nombre(o.apres, 0, 72, STYLE_BASE.apres),
+      alignement: dansLaListe(o.alignement, ["", "left", "center", "right", "justify"] as const, ""),
+      retrait: nombre(o.retrait, 0, 60, 0),
+    });
+  }
+  return styles;
+}
+
+/** La feuille de style des styles nommés (une règle par style, valable à l'écran comme à l'impression). */
+export function cssStylesNommes(styles: StyleNomme[]): string {
+  return styles
+    .filter((s) => ID_STYLE.test(s.id))
+    .map((s) => {
+      const d = [
+        `font-family: ${pileDePolice(s.police)}`,
+        `font-size: ${s.taille}pt`,
+        `font-weight: ${s.graisse}`,
+        `color: ${s.couleur}`,
+        `font-style: ${s.italique ? "italic" : "normal"}`,
+      ];
+      if (s.majuscules) d.push("font-variant-caps: all-small-caps", "letter-spacing: 0.04em");
+      if (s.genre === "paragraphe") {
+        d.push(`line-height: ${s.interligne}`, `margin-top: ${s.avant}pt`, `margin-bottom: ${s.apres}pt`);
+        if (s.alignement) d.push(`text-align: ${s.alignement}`);
+        if (s.retrait) d.push(`margin-left: ${s.retrait}mm`);
+        return `.calame-texte .tiptap [data-style-nomme="${s.id}"] { ${d.join("; ")}; }`;
+      }
+      return `.calame-texte .tiptap [data-style-car="${s.id}"] { ${d.join("; ")}; }`;
+    })
+    .join("\n");
+}
 
 const ZONES_VIDES: ZonesLigne = { gauche: "", centre: "", droite: "" };
 
@@ -268,6 +369,8 @@ export const MISE_EN_PAGE_PAR_DEFAUT: MiseEnPage = {
   lettrine: false,
   cesure: false,
   veuves: true,
+  justifier: false,
+  stylesNommes: STYLES_NOMMES_PAR_DEFAUT,
 };
 
 export const REGLAGES_PAR_DEFAUT: ReglagesPage = {
@@ -449,6 +552,8 @@ export function nettoyerMiseEnPage(o: Record<string, unknown>): MiseEnPage {
     lettrine: b(o.lettrine, d.lettrine),
     cesure: b(o.cesure, d.cesure),
     veuves: b(o.veuves, d.veuves),
+    justifier: b(o.justifier, d.justifier),
+    stylesNommes: nettoyerStylesNommes(o.stylesNommes),
   };
 }
 

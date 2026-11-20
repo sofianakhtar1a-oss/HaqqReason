@@ -62,9 +62,11 @@ type Props = {
   groupesEcartes?: ReadonlySet<string>;
   /** Commandes propres au contexte (ex. les tableaux, propres à l'atelier d'écriture), ajoutées à la fin du menu. */
   commandesSupplementaires?: readonly Commande[];
+  /** Contrôles propres au contexte, placés au bout de la barre (ex. la liste des styles nommés de l'atelier). */
+  finDeBarre?: React.ReactNode;
 };
 
-export function BarreOutils({ editor, groupesEcartes, commandesSupplementaires }: Props) {
+export function BarreOutils({ editor, groupesEcartes, commandesSupplementaires, finDeBarre }: Props) {
   const e = useEditorState({
     editor,
     selector: ({ editor: ed }) => ({
@@ -334,6 +336,7 @@ export function BarreOutils({ editor, groupesEcartes, commandesSupplementaires }
           );
         }}
       </Deroulant>
+      {finDeBarre}
     </div>
   );
 }

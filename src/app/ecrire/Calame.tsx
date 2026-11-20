@@ -15,6 +15,8 @@ import {
   viderCorbeilleExpiree,
 } from "@/lib/atelier/depot";
 import { documentVide, extrasDe, type DocumentAtelier } from "@/lib/atelier/modele";
+import { reglagesDuJeu } from "@/lib/atelier/jeux-styles";
+import { lirePreferences } from "@/lib/atelier/preferences";
 import { tiroir } from "@/lib/client/compte";
 import { attendreSynchro, EVENEMENT_RECU } from "@/lib/client/synchro/journal";
 import { useTextes } from "@/lib/modules/textes-client";
@@ -161,6 +163,10 @@ export function Calame() {
 
   const nouveau = useCallback(async () => {
     const doc = documentVide(nouvelIdentifiant());
+    // Le jeu de styles choisi pour les nouveaux documents (onglet « Styles »).
+    const jeu = lirePreferences().jeuParDefaut;
+    const reglagesJeu = jeu ? reglagesDuJeu(jeu) : null;
+    if (reglagesJeu) doc.reglages = { ...doc.reglages, ...reglagesJeu };
     await ecrireDocument(doc);
     setDocuments((liste) => [doc, ...liste]);
     setRequete(undefined);

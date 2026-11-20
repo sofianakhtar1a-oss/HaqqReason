@@ -8,6 +8,9 @@ import { extensionsTableau } from "./tableaux";
 import { VueDocumentLocal, VueImageLocale } from "./VuesLocales";
 import { VueSommaireCalame } from "./blocs/SommaireCalame";
 import { PageDeGarde } from "./blocs/PageDeGarde";
+import { StyleCaractere, StylesNommes } from "./extensions/styles-nommes";
+import { Ancres, IndexAlpha, Indexe, Renvoi, TableFigures } from "./blocs/References";
+import { attributsEnveloppe, Galerie, ImageMiseEnPage, VueImageCalame } from "./blocs/ImageCalame";
 
 /**
  * Le vocabulaire des documents du Calame : celui des articles du site (mêmes blocs,
@@ -29,18 +32,25 @@ const VUES: Record<string, (p: NodeViewProps) => React.ReactNode> = {
 /** Des vues propres au Calame : elles passent avant celles des articles (la table des matières d'un livre a des numéros de page). */
 export const VUES_CALAME: Record<string, (p: NodeViewProps) => React.ReactNode> = {
   sommaire: VueSommaireCalame,
+  image: VueImageCalame,
+};
+
+/** Des attributs posés sur l'enveloppe d'une vue (l'image qui flotte porte son habillage et sa largeur). */
+const ENVELOPPES: Record<string, (p: { node: { attrs: Record<string, unknown> } }) => Record<string, string>> = {
+  image: ({ node }) => attributsEnveloppe(node),
 };
 
 export function avecVues(extensions: AnyExtension[]): AnyExtension[] {
   return extensions.map((e) => {
     const Vue = VUES_CALAME[e.name] ?? VUES[e.name];
     if (!Vue) return e;
-    return (e as NoeudTiptap).extend({ addNodeView: () => ReactNodeViewRenderer(Vue as Parameters<typeof ReactNodeViewRenderer>[0]) });
+    const attrs = ENVELOPPES[e.name] as ((p: { node: { attrs: Record<string, unknown> } }) => Record<string, string>) | undefined;
+    return (e as NoeudTiptap).extend({ addNodeView: () => ReactNodeViewRenderer(Vue as Parameters<typeof ReactNodeViewRenderer>[0], attrs ? { attrs } : undefined) });
   });
 }
 
 /** Extensions supplémentaires du Calame (blocs et marques propres à l'atelier). */
-export const EXTENSIONS_CALAME: AnyExtension[] = [PageDeGarde];
+export const EXTENSIONS_CALAME: AnyExtension[] = [PageDeGarde, StylesNommes, StyleCaractere, Ancres, Indexe, Renvoi, TableFigures, IndexAlpha, ImageMiseEnPage, Galerie];
 
 /** Tout ce qu'il faut pour lire (et écrire) un document du Calame. */
 export function extensionsContenu(): AnyExtension[] {

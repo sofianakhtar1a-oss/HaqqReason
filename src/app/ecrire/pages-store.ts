@@ -18,17 +18,33 @@ export type MiseEnPagePubliee = {
   figures: Map<number, string>;
   /** Étiquette de page de chaque tableau, par rang. */
   tableaux: Map<number, string>;
+  /** Page de chaque ancre (cible d'un renvoi), par identifiant. */
+  ancres: Map<string, string>;
+  /** Page de chaque légende numérotée (« figure-3 », « tableau-2 »). */
+  legendes: Map<string, string>;
+  /** Pages où apparaît chaque entrée de l'index, dans l'ordre et sans doublon. */
+  index: Map<string, string[]>;
 };
 
-const VIDE: MiseEnPagePubliee = { pages: 0, titres: new Map(), figures: new Map(), tableaux: new Map() };
+const VIDE: MiseEnPagePubliee = { pages: 0, titres: new Map(), figures: new Map(), tableaux: new Map(), ancres: new Map(), legendes: new Map(), index: new Map() };
 const etats = new WeakMap<Editor, MiseEnPagePubliee>();
 const ecouteurs = new WeakMap<Editor, Set<() => void>>();
 
-const memeCarte = (a: Map<number, string>, b: Map<number, string>) => a.size === b.size && [...a].every(([k, v]) => b.get(k) === v);
+const memeCarte = <K, V>(a: Map<K, V>, b: Map<K, V>) => a.size === b.size && [...a].every(([k, v]) => JSON.stringify(b.get(k)) === JSON.stringify(v));
 
 export function publierMiseEnPage(editor: Editor, m: MiseEnPagePubliee): void {
   const avant = etats.get(editor);
-  if (avant && avant.pages === m.pages && memeCarte(avant.titres, m.titres) && memeCarte(avant.figures, m.figures) && memeCarte(avant.tableaux, m.tableaux)) return;
+  if (
+    avant &&
+    avant.pages === m.pages &&
+    memeCarte(avant.titres, m.titres) &&
+    memeCarte(avant.figures, m.figures) &&
+    memeCarte(avant.tableaux, m.tableaux) &&
+    memeCarte(avant.ancres, m.ancres) &&
+    memeCarte(avant.legendes, m.legendes) &&
+    memeCarte(avant.index, m.index)
+  )
+    return;
   etats.set(editor, m);
   for (const e of ecouteurs.get(editor) ?? []) e();
 }

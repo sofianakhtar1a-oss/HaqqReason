@@ -56,6 +56,11 @@ import { Analyse } from "./extensions/analyse";
 import { Replis, replisActuels, toutDeplier } from "./extensions/replis";
 import { imprimerPages } from "./impression";
 import { PanneauMiseEnPage, PanneauTexte } from "./panneaux/PanneauMiseEnPage";
+import { PanneauStyles } from "./panneaux/PanneauStyles";
+import { SelecteurStyle } from "./SelecteurStyle";
+import { DialogueRenvoi } from "./DialogueRenvoi";
+import { ajouterALIndex } from "./blocs/References";
+import { separerGalerie } from "./blocs/ImageCalame";
 import { BlocCourant } from "./extensions/concentration";
 import { dicteeDisponible, dicter, SurlignageLecture, type Dictee } from "./voix";
 import { BarreRecherche } from "./BarreRecherche";
@@ -142,6 +147,7 @@ export function Atelier(props: Props) {
   const [annonces, setAnnonces] = useState<{ id: number; texte: string }[]>([]);
   const [aide, setAide] = useState(false);
   const [reglagesAtelier, setReglagesAtelier] = useState(false);
+  const [renvoi, setRenvoi] = useState(false);
   const [extras, setExtras] = useState(() => extrasDe(doc));
   // Ouvert (à nouveau) depuis la recherche dans tous les documents : on cherche aussitôt.
   const [requeteVue, setRequeteVue] = useState(requeteInitiale);
@@ -646,6 +652,19 @@ export function Atelier(props: Props) {
         groupe: "Insérer",
         faire: () => editor?.chain().focus().insertContentAt(0, { type: "pageDeGarde", attrs: { titre: courant.current.titre, auteur: extras.proprietes.auteur, modele: "classique" } }).run(),
       },
+      { cle: "galerie-separer", libelle: "Séparer la galerie d'images", description: "Les images reprennent leur place l'une sous l'autre", groupe: "Image", faire: () => editor && separerGalerie(editor) },
+      { cle: "renvoi", libelle: "Insérer un renvoi", description: "« voir partie 2, p. 12 » : se met à jour seul", groupe: "Insérer", faire: () => setRenvoi(true) },
+      {
+        cle: "index-ajouter",
+        libelle: "Ajouter à l'index",
+        description: "Les mots sélectionnés entrent dans l'index alphabétique",
+        groupe: "Insérer",
+        faire: () => {
+          if (!editor || !ajouterALIndex(editor)) setMessage("Sélectionne d'abord les mots à mettre dans l'index.");
+        },
+      },
+      { cle: "index-inserer", libelle: "Insérer l'index", description: "Tous les mots marqués, avec leurs pages", groupe: "Insérer", faire: () => editor?.chain().focus().insertContent({ type: "indexAlpha" }).run() },
+      { cle: "figures-inserer", libelle: "Insérer la table des figures", description: "Images et tableaux légendés, avec leur page", groupe: "Insérer", faire: () => editor?.chain().focus().insertContent({ type: "tableFigures" }).run() },
       {
         cle: "sommaire-insere",
         libelle: "Insérer la table des matières",
@@ -897,7 +916,14 @@ export function Atelier(props: Props) {
         )}
         {!concentration && (
           <div className="calame-outils sans-impression">
-            {editor && <BarreOutils editor={editor} groupesEcartes={GROUPES_ECARTES_ATELIER} commandesSupplementaires={COMMANDES_CALAME} />}
+            {editor && (
+              <BarreOutils
+                editor={editor}
+                groupesEcartes={GROUPES_ECARTES_ATELIER}
+                commandesSupplementaires={COMMANDES_CALAME}
+                finDeBarre={<SelecteurStyle editor={editor} styles={reglages.stylesNommes} />}
+              />
+            )}
           </div>
         )}
         {message && (
@@ -968,11 +994,17 @@ export function Atelier(props: Props) {
           onglet={ongletInspecteur}
           surOnglet={setOngletInspecteur}
           pageEnPlus={<PanneauMiseEnPage reglages={reglages} surReglages={modifierReglages} />}
-          stylesEnPlus={<PanneauTexte reglages={reglages} surReglages={modifierReglages} />}
+          stylesEnPlus={
+            <>
+              <PanneauStyles reglages={reglages} surReglages={modifierReglages} documents={documents} docId={doc.id} />
+              <PanneauTexte reglages={reglages} surReglages={modifierReglages} />
+            </>
+          }
         />
       )}
 
       <ListeSlash />
+      {renvoi && editor && <DialogueRenvoi editor={editor} surFermer={() => setRenvoi(false)} />}
       {palette && <PaletteCommandes editor={editor} actions={actions} surFermer={() => setPalette(false)} />}
       {caracteres && editor && <Caracteres editor={editor} onglet={caracteres} surOnglet={setCaracteres} surFermer={() => setCaracteres(null)} />}
       {aide && (

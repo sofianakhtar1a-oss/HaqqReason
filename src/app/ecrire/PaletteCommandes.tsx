@@ -4,7 +4,8 @@ import type { Editor } from "@tiptap/core";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CornerDownLeft, Search } from "lucide-react";
 import { COMMANDES } from "../createur/_composants/editeur/commandes";
-import { COMMANDE_TABLEAU, COMMANDES_TABLEAU, GROUPES_ECARTES_ATELIER } from "./tableaux";
+import { COMMANDE_TABLEAU, COMMANDE_TEXTE_EN_TABLEAU, COMMANDES_TABLEAU, GROUPES_ECARTES_ATELIER } from "./tableaux";
+import { COMMANDES_CALAME } from "./commandes-calame";
 
 export type ActionPalette = { cle: string; libelle: string; description: string; groupe: string; faire: () => void };
 
@@ -43,7 +44,12 @@ export function PaletteCommandes({ editor, actions, surFermer }: Props) {
       : [];
     // Insérer un nouveau tableau : à part, avant les commandes d'édition d'un tableau existant (qui ne font rien tant qu'on n'y est pas).
     const nouveauTableau: ActionPalette[] = editor
-      ? [{ cle: `inserer-${COMMANDE_TABLEAU.cle}`, libelle: COMMANDE_TABLEAU.libelle, description: COMMANDE_TABLEAU.description, groupe: `Insérer — ${COMMANDE_TABLEAU.groupe}`, faire: () => COMMANDE_TABLEAU.appliquer(editor.chain().focus()).run() }]
+      ? [
+          { cle: `inserer-${COMMANDE_TABLEAU.cle}`, libelle: COMMANDE_TABLEAU.libelle, description: COMMANDE_TABLEAU.description, groupe: `Insérer — ${COMMANDE_TABLEAU.groupe}`, faire: () => COMMANDE_TABLEAU.appliquer(editor.chain().focus()).run() },
+          { cle: COMMANDE_TEXTE_EN_TABLEAU.cle, libelle: COMMANDE_TEXTE_EN_TABLEAU.libelle, description: COMMANDE_TEXTE_EN_TABLEAU.description, groupe: "Tableau", faire: () => COMMANDE_TEXTE_EN_TABLEAU.appliquer(editor.chain().focus()).run() },
+          // Les blocs propres à l'atelier (page de garde, table des figures, index, légende…).
+          ...COMMANDES_CALAME.filter((c) => c.cle !== COMMANDE_TABLEAU.cle).map((c) => ({ cle: `inserer-${c.cle}`, libelle: c.libelle, description: c.description, groupe: `Insérer — ${c.groupe}`, faire: () => c.appliquer(editor.chain().focus()).run() })),
+        ]
       : [];
     const tableaux: ActionPalette[] = editor
       ? COMMANDES_TABLEAU.map((c) => ({

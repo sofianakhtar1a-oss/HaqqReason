@@ -1855,3 +1855,305 @@
 .calame-impression .pdg-titre::after {
   content: none;
 }
+
+/* ---------- styles nommés, jeux de styles, texte justifié ---------- */
+.calame-outils {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.4rem 0.6rem;
+}
+.calame-outils > .barre-outils {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.calame-selecteur-style .champ {
+  width: auto;
+  min-width: 8rem;
+  max-width: 11rem;
+  min-height: 0;
+  height: 2.1rem;
+  padding: 0 1.8rem 0 0.7rem;
+  border-radius: 0.6rem;
+  font-size: 0.85rem;
+}
+.calame-jeux {
+  display: grid;
+  gap: 0.4rem;
+}
+.calame-jeu {
+  display: grid;
+  gap: 0.1rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--trait);
+  border-radius: 0.7rem;
+  text-align: left;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+.calame-jeu:hover {
+  background: var(--surface);
+}
+.calame-jeu[aria-pressed="true"] {
+  border-color: color-mix(in srgb, var(--accent) 70%, transparent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+.calame-jeu-nom {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--encre);
+}
+.calame-jeu-description {
+  font-size: 0.75rem;
+  color: var(--encre-douce);
+  line-height: 1.35;
+}
+.calame-flux[data-justifier] .calame-texte .tiptap :is(p, li > p):not([style*="text-align"]):not([data-style-nomme]) {
+  text-align: justify;
+}
+
+/* ---------- renvois, légendes numérotées, table des figures, index ---------- */
+.calame-texte .tiptap .calame-renvoi {
+  border-radius: 0.2em;
+  color: inherit;
+  text-decoration: underline dotted color-mix(in srgb, var(--or) 70%, transparent);
+  text-underline-offset: 0.2em;
+}
+.calame-texte .tiptap .calame-renvoi[data-selectionne] {
+  background: color-mix(in srgb, var(--or) 25%, transparent);
+}
+.calame-texte .tiptap .calame-renvoi[data-introuvable] {
+  color: #b42318;
+}
+.calame-texte .tiptap [data-legende]::before {
+  content: attr(data-legende) "\00a0—\00a0";
+  font-style: normal;
+  font-weight: 600;
+}
+.calame-texte .tiptap [data-figure] figcaption::before {
+  content: attr(data-figure) "\00a0—\00a0";
+  font-weight: 600;
+  white-space: nowrap;
+}
+.calame-texte .tiptap .calame-indexe {
+  background: linear-gradient(transparent 62%, color-mix(in srgb, var(--or) 22%, transparent) 62%);
+}
+.calame-impression .calame-indexe {
+  background: none !important;
+}
+.calame-sommaire-ligne {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35em;
+  padding: 0.12em 0;
+}
+.calame-table-figures-groupe {
+  margin: 0.5em 0 0.2em;
+  font-weight: 700;
+}
+.calame-texte .tiptap .calame-index {
+  margin: 0.5em 0 1em;
+  font-family: var(--corps-police);
+  color: var(--corps-couleur);
+}
+.calame-index-colonnes {
+  column-count: 2;
+  column-gap: 2em;
+  font-size: 0.92em;
+}
+.calame-index-groupe {
+  break-inside: avoid;
+  margin-bottom: 0.6em;
+}
+.calame-index-lettre {
+  margin: 0 0 0.15em;
+  font-family: var(--titre1-police);
+  font-weight: 700;
+  color: var(--titre1-couleur);
+}
+.calame-index-entree {
+  margin: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+  line-height: 1.4;
+}
+.calame-index-pages {
+  font-variant-numeric: tabular-nums;
+}
+.calame-cibles {
+  display: grid;
+  gap: 0.2rem;
+  max-height: 22rem;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+.calame-cible {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.55rem;
+  text-align: left;
+}
+.calame-cible:hover,
+.calame-cible:focus-visible {
+  background: var(--surface);
+}
+.calame-cible[data-niveau="3"] {
+  padding-left: 1.4rem;
+}
+.calame-cible[data-niveau="4"] {
+  padding-left: 2.2rem;
+}
+.calame-cible-genre {
+  flex-shrink: 0;
+  min-width: 4.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+.calame-cible-texte {
+  min-width: 0;
+  color: var(--encre);
+}
+
+/* Une colonne longue défile : ses rangées gardent la hauteur de leur contenu (sinon les
+   sections repliables, en overflow caché, s'écrasent dès que tout ne tient plus). */
+.calame-cote-corps,
+.calame-inspecteur-corps {
+  grid-auto-rows: max-content;
+}
+
+/* ---------- tableaux : styles prêts, totaux ---------- */
+.calame-texte .tiptap table.calame-tableau[data-style="rayures"] tbody tr:nth-child(even) > td:not([data-fond]) {
+  background: #f3f4f9;
+}
+.calame-texte .tiptap table.calame-tableau[data-style="sobre"] td,
+.calame-texte .tiptap table.calame-tableau[data-style="sobre"] th {
+  border-left: 0;
+  border-right: 0;
+}
+.calame-texte .tiptap table.calame-tableau[data-style="sobre"] th {
+  background: transparent;
+  border-bottom: 1.5px solid #1a1d2e;
+}
+.calame-texte .tiptap table.calame-tableau[data-style="encadre"] th:not([data-fond]) {
+  background: #0d1640;
+  color: #fff;
+  border-color: #0d1640;
+}
+.calame-texte .tiptap table.calame-tableau tr.calame-totaux > td {
+  border-top: 1.5px solid #1a1d2e;
+  font-weight: 700;
+  background: color-mix(in srgb, #eef0f8 70%, transparent);
+}
+.calame-texte .tiptap table.calame-tableau tr.calame-totaux > td.calame-totaux-nombre {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.calame-flux[data-sombre] .calame-texte .tiptap table.calame-tableau[data-style="rayures"] tbody tr:nth-child(even) > td:not([data-fond]) {
+  background: rgb(255 255 255 / 0.05);
+}
+
+/* ---------- images : habillage, taille, rotation, galerie ---------- */
+.calame-texte .tiptap > [data-habillage="gauche"] {
+  float: left;
+  width: var(--taille, 45%);
+  margin: 0.2em 1.4em 0.6em 0;
+}
+.calame-texte .tiptap > [data-habillage="droite"] {
+  float: right;
+  width: var(--taille, 45%);
+  margin: 0.2em 0 0.6em 1.4em;
+}
+.calame-texte .tiptap > [data-taille]:not([data-habillage]) {
+  width: var(--taille);
+  margin-inline: auto;
+}
+.calame-texte .tiptap > :is(h2, h3, h4) {
+  clear: both;
+}
+.calame-texte .tiptap .calame-image {
+  position: relative;
+}
+.calame-texte .tiptap [data-taille] .calame-image img,
+.calame-texte .tiptap [data-habillage] .calame-image img,
+.calame-texte .tiptap .calame-galerie .calame-image img {
+  max-width: 100%;
+  width: 100%;
+}
+.calame-texte .tiptap .calame-image[data-selectionne] .calame-image-cadre {
+  outline: 2px solid color-mix(in srgb, var(--or) 70%, transparent);
+  outline-offset: 2px;
+}
+.calame-image-cadre {
+  position: relative;
+  overflow: hidden;
+}
+.calame-image-poignee {
+  position: absolute;
+  z-index: 3;
+  right: -6px;
+  bottom: 2.2em;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: var(--or);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.35);
+  cursor: ew-resize;
+  touch-action: none;
+}
+.calame-image-outils {
+  position: absolute;
+  z-index: 4;
+  top: 0.4rem;
+  left: 50%;
+  translate: -50% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.15rem;
+  max-width: calc(100% - 0.8rem);
+  padding: 0.25rem;
+  border: 1px solid var(--trait);
+  border-radius: 0.7rem;
+  background: var(--fond);
+  box-shadow: 0 10px 24px -12px rgb(0 0 0 / 0.55);
+  font-family: var(--font-corps, system-ui);
+  font-size: 0.75rem;
+  color: var(--encre);
+}
+.calame-image-outils button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.45rem;
+  border-radius: 0.45rem;
+  white-space: nowrap;
+}
+.calame-image-outils button:hover {
+  background: var(--surface);
+}
+.calame-image-outils button[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--accent) 18%, transparent);
+}
+.calame-image-separateur {
+  width: 1px;
+  margin: 0.15rem 0.2rem;
+  background: var(--trait);
+}
+.calame-texte .tiptap .calame-galerie {
+  display: flex;
+  gap: 0.8em;
+  align-items: flex-start;
+  margin: 0.8em 0;
+}
+.calame-texte .tiptap .calame-galerie > * {
+  flex: 1 1 0;
+  min-width: 0;
+  margin: 0;
+}

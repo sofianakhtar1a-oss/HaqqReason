@@ -56,6 +56,39 @@ export function notesDuDocument(doc: NoeudPM): { pos: number; numero: string; te
   return notes;
 }
 
+export type Legende = { pos: number; genre: "figure" | "tableau"; numero: number; texte: string; cle: string };
+
+/**
+ * Les légendes numérotées, dans l'ordre : une image légendée est une figure ; un paragraphe de
+ * style « Légende » devient « Tableau n » juste après un tableau, « Figure n » ailleurs.
+ */
+export function legendesDuDocument(doc: NoeudPM): Legende[] {
+  const legendes: Legende[] = [];
+  let figure = 0;
+  let tableau = 0;
+  const parcourir = (parent: NoeudPM, debut: number) => {
+    let precedent: NoeudPM | null = null;
+    parent.forEach((n, offset) => {
+      const pos = debut + offset;
+      if (n.type.name === "image" && String(n.attrs.legende ?? "").trim()) {
+        figure++;
+        legendes.push({ pos, genre: "figure", numero: figure, texte: String(n.attrs.legende).trim(), cle: `figure-${figure}` });
+      } else if (n.type.name === "paragraph" && n.attrs.styleNomme === "legende") {
+        if (precedent?.type.name === "table") {
+          tableau++;
+          legendes.push({ pos, genre: "tableau", numero: tableau, texte: n.textContent.trim(), cle: `tableau-${tableau}` });
+        } else {
+          figure++;
+          legendes.push({ pos, genre: "figure", numero: figure, texte: n.textContent.trim(), cle: `figure-${figure}` });
+        }
+      } else if (!n.isTextblock && !n.isAtom && n.childCount > 0 && n.type.name !== "table") parcourir(n, pos + 1);
+      precedent = n;
+    });
+  };
+  parcourir(doc, 0);
+  return legendes;
+}
+
 function calculer(doc: NoeudPM, reglages: ReglagesNumeros): DecorationSet {
   const decorations: Decoration[] = [];
   for (const note of notesDuDocument(doc)) {
@@ -68,16 +101,13 @@ function calculer(doc: NoeudPM, reglages: ReglagesNumeros): DecorationSet {
       if (n) decorations.push(Decoration.node(t.pos, t.pos + n.nodeSize, { "data-numero": t.numero }));
     }
   }
-  // Légendes numérotées : « Figure n » sous les images, « Tableau n » sur les tableaux légendés.
-  let figure = 0;
-  doc.descendants((n, pos) => {
-    if (n.type.name === "image") {
-      figure++;
-      decorations.push(Decoration.node(pos, pos + n.nodeSize, { "data-figure": String(figure) }));
-      return false;
-    }
-    return true;
-  });
+  // Légendes numérotées : « Figure n » sous les images, « Tableau n » sous les tableaux.
+  for (const l of legendesDuDocument(doc)) {
+    const n = doc.nodeAt(l.pos);
+    if (!n) continue;
+    const etiquette = `${l.genre === "tableau" ? "Tableau" : "Figure"} ${l.numero}`;
+    decorations.push(Decoration.node(l.pos, l.pos + n.nodeSize, n.type.name === "image" ? { "data-figure": etiquette, "data-legende-cle": l.cle } : { "data-legende": etiquette, "data-legende-cle": l.cle }));
+  }
   return DecorationSet.create(doc, decorations);
 }
 

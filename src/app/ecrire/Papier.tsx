@@ -3,7 +3,7 @@
 import type { Editor } from "@tiptap/core";
 import { EditorContent } from "@tiptap/react";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { geometrie, margesDeLaPage, MM, variablesDeStyle, zonesDeLaPage, type ReglagesPage, type ZonesLigne } from "@/lib/atelier/modele";
+import { cssStylesNommes, geometrie, margesDeLaPage, MM, variablesDeStyle, zonesDeLaPage, type ReglagesPage, type ZonesLigne } from "@/lib/atelier/modele";
 import { composer, numeroAffiche, partieDeLaPage, remplirGabarit, type LigneMesuree, type UniteMesuree } from "@/lib/atelier/composition";
 import { appliquerCoupures, type Coupure, type NotesFin } from "./pages-extension";
 import { notesDuDocument, reglerNumeros, titresNumerotes } from "./extensions/numeros";
@@ -464,11 +464,28 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
         else tableaux.set(++nt, etiquette(pageDe(y)));
         return false;
       });
+      const pageDeLElement = (el: Element) => etiquette(pageDe(aPlat(ecran(el.getBoundingClientRect().top))));
+      const ancres = new Map<string, string>();
+      for (const el of Array.from(zone.querySelectorAll<HTMLElement>("[data-ancre]"))) if (el.dataset.ancre) ancres.set(el.dataset.ancre, pageDeLElement(el));
+      const legendes = new Map<string, string>();
+      for (const el of Array.from(zone.querySelectorAll<HTMLElement>("[data-legende-cle]"))) if (el.dataset.legendeCle) legendes.set(el.dataset.legendeCle, pageDeLElement(el));
+      const index = new Map<string, string[]>();
+      for (const el of Array.from(zone.querySelectorAll<HTMLElement>("[data-index]"))) {
+        const terme = (el.dataset.index || el.textContent || "").trim();
+        if (!terme) continue;
+        const liste = index.get(terme) ?? [];
+        const p = pageDeLElement(el);
+        if (!liste.includes(p)) liste.push(p);
+        index.set(terme, liste);
+      }
       publierMiseEnPage(editor, {
         pages: pages.length,
         titres: new Map(titres.map((t) => [t.ordinal, etiquette(pageDe(t.y))])),
         figures,
         tableaux,
+        ancres,
+        legendes,
+        index,
       });
 
       // La silhouette des pages (pour les miniatures), positions rapportées à la feuille.
@@ -576,6 +593,7 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
           data-alinea={reglages.alinea > 0 ? "" : undefined}
           data-titres-numerotes={reglages.numeroterTitres ? "" : undefined}
           data-notes={reglages.notes}
+          data-justifier={reglages.justifier ? "" : undefined}
           style={{ ...(variablesDeStyle(reglages) as React.CSSProperties), width: g.page.largeur, height: hauteurTotale, ...(zoom !== 1 ? { transform: `scale(${zoom})`, transformOrigin: "0 0" } : {}) }}
         >
           <div className="calame-feuilles" aria-hidden="true">
@@ -595,6 +613,9 @@ export function Papier({ editor, reglages, titre, auteur = "", surPages, zoom = 
           >
             <EditorContent editor={editor} />
           </div>
+
+          {/* Les styles nommés du document : une règle par style, que l'impression (qui recopie les pages) suit aussi. */}
+          <style>{cssStylesNommes(reglages.stylesNommes)}</style>
 
           {/* Les notes y sont composées une à une, hors de la vue, pour mesurer la place qu'elles prendront en bas de page. */}
           <div ref={mesureNotes} className="calame-notes-bas calame-notes-mesure" aria-hidden="true" style={{ left: margeX(reglages.marges.gauche), right: margeX(reglages.marges.droite) }} />

@@ -11,7 +11,7 @@ import { lireFichier, urlFichier } from "@/lib/atelier/depot";
  * fichier au moment de l'afficher.
  */
 
-function useUrlLocale(id: string): string | null {
+export function useUrlLocale(id: string): string | null {
   const [url, setUrl] = useState<string | null>(null);
   useEffect(() => {
     let vivant = true;
