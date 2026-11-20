@@ -305,6 +305,13 @@ export async function ajouterFichier(blob: Blob, nom: string): Promise<FichierLo
   return fichier;
 }
 
+/** Un fichier reçu d'un document partagé : il garde son identifiant (le texte le cite déjà). */
+export async function rangerFichierRecu(id: string, nom: string, blob: Blob): Promise<void> {
+  const fichier: FichierLocal = { id, nom: nom.slice(0, 200), type: blob.type || "application/octet-stream", taille: blob.size, blob, ajoute: new Date().toISOString() };
+  await enPromesse((await magasin(FICHIERS, "readwrite")).put(fichier));
+  await noter("calame-fichiers", id);
+}
+
 const telechargements = new Map<string, Promise<Blob | null>>();
 
 /** Va chercher sur le compte le contenu d'un fichier ajouté depuis un autre appareil. */

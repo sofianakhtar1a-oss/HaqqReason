@@ -646,6 +646,11 @@ export type ExtrasDocument = {
   verrou: { sel: string; empreinte: string } | null;
   /** Page web publiée en lecture seule (son identifiant), avec ou sans mot de passe. */
   publication: { id: string; protege: boolean; quand: string } | null;
+  /**
+   * Document partagé entre comptes : son identifiant sur le serveur, mon rôle, la version reçue
+   * au dernier enregistrement et s'il restait des changements à envoyer.
+   */
+  partage: { id: string; role: "proprietaire" | "lecture" | "commentaire" | "ecriture"; version: number; attente: boolean } | null;
 };
 
 export const LIMITES_EXTRAS = { etiquettes: 20, etiquette: 40, propriete: 200, motsCles: 400, objectifMots: 10_000_000, corbeilleJours: 30 } as const;
@@ -672,7 +677,17 @@ export function nettoyerExtras(brut: unknown): ExtrasDocument {
     echeance: typeof o.echeance === "string" && JOUR_ISO.test(o.echeance) ? o.echeance : null,
     verrou: verrouValide(o.verrou),
     publication: publicationValide(o.publication),
+    partage: partageValide(o.partage),
   };
+}
+
+const ROLES_PARTAGE_DOC = ["proprietaire", "lecture", "commentaire", "ecriture"] as const;
+
+function partageValide(v: unknown): ExtrasDocument["partage"] {
+  const o = (v ?? {}) as Record<string, unknown>;
+  if (typeof o.id !== "string" || !/^[0-9a-f-]{36}$/i.test(o.id) || !ROLES_PARTAGE_DOC.includes(o.role as (typeof ROLES_PARTAGE_DOC)[number])) return null;
+  const version = Number(o.version);
+  return { id: o.id, role: o.role as (typeof ROLES_PARTAGE_DOC)[number], version: Number.isInteger(version) && version >= 0 ? version : 0, attente: o.attente === true };
 }
 
 function publicationValide(v: unknown): ExtrasDocument["publication"] {

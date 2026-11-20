@@ -29,6 +29,10 @@ import { formesDeRecherche, motSousLeCurseur } from "../src/app/ecrire/DialogueM
 import { FICHIER_LEXIQUE } from "../src/lib/atelier/lexique-fichier";
 import { echeancesCandidates, fuseauValide, momentLocal, nettoyerRappel, rappelDu, veilleDue } from "../src/lib/atelier/rappels";
 import { paragraphesDe } from "../src/app/ecrire/partage-recu";
+import { assemblerManuscrit } from "../src/lib/atelier/manuscrit";
+import { Step } from "@tiptap/pm/transform";
+import { aEnvoyer, pluginCollab, recevoir, versionCollab } from "../src/app/ecrire/partage/collab";
+import { SuggestionAjout, SuggestionRetrait, listerSuggestions, pluginSuggestions, trancherDans, transactionReglage } from "../src/app/ecrire/partage/suggestions";
 
 let echecs = 0;
 const ok = (nom: string, cond: boolean, detail = "") => {
@@ -443,6 +447,113 @@ ok("sens : sans lettre", !commenceEnArabe("12 — 34"));
   const paras = paragraphesDe("Premier paragraphe\nsur deux lignes.\n\nVoir https://haqqreason.vercel.app/islam, merci.");
   ok("partage : paragraphes et retours à la ligne", paras.length === 2 && JSON.stringify(paras[0]).includes("hardBreak"));
   ok("partage : adresses devenues des liens (sans la ponctuation)", JSON.stringify(paras[1]).includes('"href":"https://haqqreason.vercel.app/islam"'));
+}
+
+
+// ---------------------------------------------------------------- manuscrit en chapitres
+{
+  const chap = (titre: string, content: object[]) => ({ id: titre, titre, contenu: { type: "doc", content }, reglages: REGLAGES_PAR_DEFAUT }) as never;
+  const a = chap("Introduction", [{ type: "sommaire", attrs: { titre: "", profondeur: 3 } }, { type: "heading", attrs: { level: 2 }, content: [{ type: "text", text: "Le sujet" }] }, { type: "paragraph", content: [{ type: "text", text: "Texte A." }] }, { type: "bibliographie" }]);
+  const b = chap("Chapitre deux", [{ type: "heading", attrs: { level: 4 }, content: [{ type: "text", text: "Détail" }] }, { type: "paragraph", content: [{ type: "text", text: "Texte B." }] }, { type: "sommaire", attrs: { titre: "", profondeur: 3 } }]);
+  const m = assemblerManuscrit([a, b], { titre: "Mon livre", titresDeChapitre: true, decalerTitres: true, nouvellePage: true, tablesUniques: true });
+  const types = (m.contenu.content ?? []).map((n) => n.type);
+  ok("manuscrit : une seule table des matières, en tête", types.filter((t) => t === "sommaire").length === 1 && types[0] === "sommaire", types.join(","));
+  ok("manuscrit : une seule bibliographie, à la fin", types.filter((t) => t === "bibliographie").length === 1 && types[types.length - 1] === "bibliographie");
+  ok("manuscrit : un titre par chapitre, une page par chapitre", (m.contenu.content ?? []).filter((n) => n.type === "heading" && n.attrs?.level === 2).map((n) => n.content?.[0]?.text).join("|") === "Introduction|Chapitre deux" && types.filter((t) => t === "sautPage").length >= 2);
+  ok("manuscrit : les parties descendent d'un niveau", (m.contenu.content ?? []).some((n) => n.type === "heading" && n.attrs?.level === 3 && n.content?.[0]?.text === "Le sujet"));
+  ok("manuscrit : le plus petit titre devient « Titre 4 »", (m.contenu.content ?? []).some((n) => n.type === "paragraph" && n.attrs?.styleNomme === "titre4" && !("level" in (n.attrs ?? {}))));
+  ok("manuscrit : conforme au schéma", (() => { try { NoeudPM.fromJSON(schema, { ...m.contenu, content: (m.contenu.content ?? []).filter((n) => !["sommaire", "bibliographie"].includes(n.type)).map((n) => (n.attrs?.styleNomme ? { ...n, attrs: {} } : n)) }).check(); return true; } catch (e) { console.log(String(e).slice(0, 160)); return false; } })());
+  const simple = assemblerManuscrit([a, b], { titre: "", titresDeChapitre: false, decalerTitres: true, nouvellePage: false, tablesUniques: false });
+  ok("manuscrit : sans options, les documents bout à bout", simple.titre === "Manuscrit" && (simple.contenu.content ?? []).filter((n) => n.type === "sommaire").length === 2 && !(simple.contenu.content ?? []).some((n) => n.type === "sautPage"));
+}
+
+
+// ---------------------------------------------------------------- écrire à plusieurs : collaboration et suggestions
+{
+  const schemaCollab = getSchema([...extensionsDocument(), SuggestionAjout, SuggestionRetrait]);
+  const depart = schemaCollab.nodeFromJSON({ type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: "Le texte commun." }] }] });
+  // Un serveur minimal : il n'accepte un lot que s'il part de la dernière version.
+  const serveur = { pas: [] as unknown[], clients: [] as number[] };
+  const envoyer = (st: EditorState) => {
+    const s = aEnvoyer(st);
+    if (!s) return false;
+    if (s.version !== serveur.pas.length) return false;
+    for (const p of s.pas) {
+      serveur.pas.push(p.toJSON());
+      serveur.clients.push(s.client);
+    }
+    return true;
+  };
+  const tirer = (st: EditorState) => {
+    const v = versionCollab(st) ?? 0;
+    const pas = serveur.pas.slice(v).map((j) => Step.fromJSON(schemaCollab, j as never));
+    return st.apply(recevoir(st, pas, serveur.clients.slice(v)));
+  };
+  let a = EditorState.create({ schema: schemaCollab, doc: depart, plugins: [pluginCollab(0, 1)] });
+  let b = EditorState.create({ schema: schemaCollab, doc: depart, plugins: [pluginCollab(0, 2)] });
+  // A et B tapent en même temps, chacun à un bout du paragraphe.
+  a = a.apply(a.tr.insertText("Début. ", 1));
+  b = b.apply(b.tr.insertText(" Fin.", b.doc.content.size - 1));
+  ok("collab : A envoie le premier", envoyer(a));
+  ok("collab : B est refusé (il n'est pas à jour)", !envoyer(b));
+  b = tirer(b);
+  ok("collab : B reprend le changement de A et garde le sien", b.doc.textContent === "Début. Le texte commun. Fin." && aEnvoyer(b) !== null, b.doc.textContent);
+  ok("collab : B envoie après rebasage", envoyer(b));
+  a = tirer(a);
+  b = tirer(b);
+  ok("collab : A et B ont le même texte", a.doc.eq(b.doc) && a.doc.textContent === "Début. Le texte commun. Fin.", a.doc.textContent);
+  ok("collab : plus rien en attente", !aEnvoyer(a) && !aEnvoyer(b) && versionCollab(a) === versionCollab(b));
+  // Deux changements au même endroit : les deux restent.
+  a = a.apply(a.tr.insertText("X", 2));
+  b = b.apply(b.tr.insertText("Y", 2));
+  envoyer(a);
+  b = tirer(b);
+  envoyer(b);
+  a = tirer(a);
+  ok("collab : frappes au même endroit, aucune perdue", a.doc.eq(b.doc) && a.doc.textContent.includes("X") && a.doc.textContent.includes("Y"), a.doc.textContent);
+
+  // Le mode suggestion.
+  const moi = { compte: "relecteur", nom: "Amina", couleur: "#2f9e44" };
+  let s = EditorState.create({ schema: schemaCollab, doc: schemaCollab.nodeFromJSON({ type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: "Un texte juste." }] }] }), plugins: [pluginSuggestions()] });
+  s = s.apply(transactionReglage(s, { actif: true, force: false, auteur: moi }));
+  s = s.apply(s.tr.insertText("très ", 10));
+  const marques = (st: EditorState) => {
+    const out: string[] = [];
+    st.doc.descendants((n) => {
+      if (n.isText) out.push(`${n.text}${n.marks.map((m) => (m.type.name === "suggestionAjout" ? "[+]" : m.type.name === "suggestionRetrait" ? "[-]" : "")).join("")}`);
+      return true;
+    });
+    return out.join("|");
+  };
+  ok("suggestion : le texte tapé est un ajout proposé", marques(s) === "Un texte |très [+]|juste.", marques(s));
+  // Effacer « texte » : il reste, barré.
+  s = s.apply(s.tr.delete(4, 9));
+  ok("suggestion : le texte effacé reste, barré", s.doc.textContent === "Un texte très juste." && marques(s).includes("texte[-]"), marques(s));
+  // Effacer son propre ajout : il disparaît vraiment.
+  const deb = s.doc.textContent.indexOf("très") + 1;
+  s = s.apply(s.tr.delete(deb, deb + 5));
+  ok("suggestion : effacer son propre ajout l'efface", s.doc.textContent === "Un texte juste.", s.doc.textContent);
+  // Retour arrière : le curseur passe devant la lettre barrée.
+  let r = EditorState.create({ schema: schemaCollab, doc: schemaCollab.nodeFromJSON({ type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: "abc" }] }] }), plugins: [pluginSuggestions()] });
+  r = r.apply(transactionReglage(r, { actif: true, force: false, auteur: moi }));
+  r = r.apply(r.tr.setSelection(TextSelection.create(r.doc, 4)));
+  r = r.apply(r.tr.delete(3, 4));
+  ok("suggestion : retour arrière, curseur devant la lettre barrée", r.doc.textContent === "abc" && r.selection.head === 3, `${r.doc.textContent} ${r.selection.head}`);
+  r = r.apply(r.tr.delete(2, 3));
+  ok("suggestion : deux retours arrière, deux lettres barrées", r.doc.textContent === "abc" && marques(r).replace(/\|/g, "").replace(/\[-\]/g, "") === "abc" && !marques(r).startsWith("a[-]") && r.selection.head === 2, `${marques(r)} ${r.selection.head}`);
+  const liste = listerSuggestions(r);
+  ok("suggestion : une seule proposition d'un seul tenant", liste.length === 1 && liste[0].genre === "retrait" && liste[0].texte === "bc", JSON.stringify(liste));
+  // Hors mode suggestion, on écrit normalement.
+  let n = r.apply(transactionReglage(r, { actif: false, force: false, auteur: null }));
+  n = n.apply(n.tr.insertText("Z", 1));
+  ok("suggestion : hors mode, la frappe reste normale", !marques(n).startsWith("Z[+]") && n.doc.textContent.startsWith("Z"), marques(n));
+  // Accepter un retrait efface le texte ; refuser un ajout aussi.
+  const apresAccept = (() => {
+    let tr = r.tr;
+    for (const x of listerSuggestions(r).reverse()) tr = trancherDans(tr, x, true);
+    return r.apply(tr).doc.textContent;
+  })();
+  ok("suggestion : accepter le retrait efface « bc »", apresAccept === "a", apresAccept);
 }
 
 console.log(echecs ? `\n${echecs} échec(s).` : "Tout est bon (Calame).");

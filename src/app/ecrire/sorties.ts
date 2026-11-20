@@ -315,10 +315,17 @@ export async function exporterTousLesDocuments(): Promise<number> {
   return nombre;
 }
 
-/** L'archive de tous les documents (pour le téléchargement, ou la sauvegarde automatique dans un dossier). */
-export async function construireArchiveComplete(): Promise<{ octets: Uint8Array; nombre: number }> {
+/** Les documents choisis (sélection multiple), dans une archive .zip. */
+export async function exporterSelection(ids: string[]): Promise<number> {
+  const { octets, nombre } = await construireArchiveComplete(ids);
+  telecharger(`calame-selection-${new Date().toISOString().slice(0, 10)}.zip`, octets, "application/zip");
+  return nombre;
+}
+
+/** L'archive de tous les documents, ou de ceux choisis (pour le téléchargement, ou la sauvegarde automatique dans un dossier). */
+export async function construireArchiveComplete(ids?: string[]): Promise<{ octets: Uint8Array; nombre: number }> {
   // Un document verrouillé ne part dans l'archive que s'il a été ouvert avec son code.
-  const documents = (await listerDocuments()).filter((d) => !extrasDe(d).corbeille && (!extrasDe(d).verrou || estOuvert(d.id)));
+  const documents = (await listerDocuments()).filter((d) => (ids ? ids.includes(d.id) : !extrasDe(d).corbeille) && (!extrasDe(d).verrou || estOuvert(d.id)));
   const archive: Zippable = {};
   const pris = new Set<string>();
   for (const d of documents) {

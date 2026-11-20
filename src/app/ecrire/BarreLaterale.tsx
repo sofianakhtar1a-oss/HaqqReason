@@ -2,7 +2,7 @@
 
 import type { Editor } from "@tiptap/core";
 import { useEffect, useMemo, useState } from "react";
-import { Archive, ArchiveRestore, ArrowDown, ArrowLeft, ArrowRight, ArrowUp, CheckSquare, ChevronDown, ChevronRight, Columns2, Copy, FilePlus2, FileText, Folder, FolderOpen, FolderPlus, GripVertical, LayoutGrid, ListTree, LockKeyhole, MoreHorizontal, Pin, RotateCcw, Search, Trash2, Upload } from "lucide-react";
+import { Archive, ArchiveRestore, ArrowDown, ArrowLeft, ArrowRight, ArrowUp, CheckSquare, ChevronDown, ChevronRight, Columns2, Copy, FilePlus2, FileText, Folder, FolderOpen, FolderPlus, GripVertical, LayoutGrid, ListTree, LockKeyhole, MoreHorizontal, Pin, RotateCcw, Search, Trash2, Upload, Users } from "lucide-react";
 import { extrasDe, STATUTS_DOCUMENT, type DocumentAtelier } from "@/lib/atelier/modele";
 import { pagesEstimees } from "@/lib/atelier/pagination";
 import { modifierPreferences, TRIS, type Tri } from "@/lib/atelier/preferences";
@@ -15,6 +15,7 @@ import { arbreDossiers, compte, documentsDeLaVue, tousLesDossiers, trierDocument
 import { allerAuTitre, changerNiveau, deplacerPartie, planDuDocument } from "./plan";
 import { basculerRepli, replisActuels } from "./extensions/replis";
 import { Miniatures, type ApercuPage } from "./Miniatures";
+import { PartagesRecus } from "./PartagesRecus";
 
 export type ActionsDocuments = {
   surOuvrir: (id: string, requete?: string) => void;
@@ -25,6 +26,12 @@ export type ActionsDocuments = {
   surCorbeille: (id: string, dedans: boolean) => void;
   surSupprimerDefinitivement: (id: string) => void;
   surOuvrirACote: (id: string) => void;
+  /** Les documents choisis, dans une archive .zip. */
+  surExporterSelection?: (ids: string[]) => void;
+  /** Les documents choisis, assemblés en un manuscrit (un chapitre chacun). */
+  surManuscrit?: (ids: string[]) => void;
+  /** Ouvrir un document partagé avec moi (une copie liée arrive dans ma liste). */
+  surOuvrirPartage?: (id: string) => void;
 };
 
 type Props = ActionsDocuments & {
@@ -81,7 +88,7 @@ export function BarreLaterale(props: Props) {
 
 /* ---------------------------------------------------------------- documents */
 
-function ListeDocuments({ documents, actif, surOuvrir, surNouveau, surImporter, surModifier, surDupliquer, surCorbeille, surSupprimerDefinitivement, surOuvrirACote, surModeles }: Props) {
+function ListeDocuments({ documents, actif, surOuvrir, surNouveau, surImporter, surModifier, surDupliquer, surCorbeille, surSupprimerDefinitivement, surOuvrirACote, surModeles, surExporterSelection, surManuscrit, surOuvrirPartage }: Props) {
   const t = useTextes("calame");
   const prefs = usePreferences();
   const [vue, setVue] = useState<Vue>("documents");
@@ -136,6 +143,7 @@ function ListeDocuments({ documents, actif, surOuvrir, surNouveau, surImporter, 
           <span className="calame-document-titre">
             {x.epingle && <Pin className="calame-epingle" aria-label="Épinglé" />}
             {x.verrou && <LockKeyhole className="calame-epingle" aria-label="Verrouillé par un code" />}
+            {x.partage && <Users className="calame-epingle" aria-label="Partagé" />}
             {d.titre || t("sansTitre")}
             {etatsSynchro.get(d.id) && etatsSynchro.get(d.id) !== "compte" && (
               <span
@@ -382,6 +390,8 @@ function ListeDocuments({ documents, actif, surOuvrir, surNouveau, surImporter, 
           surModifier={surModifier}
           surCorbeille={surCorbeille}
           surSupprimerDefinitivement={surSupprimerDefinitivement}
+          surExporterSelection={surExporterSelection}
+          surManuscrit={surManuscrit}
           fini={() => setSelection(null)}
         />
       )}
@@ -408,6 +418,8 @@ function ListeDocuments({ documents, actif, surOuvrir, surNouveau, surImporter, 
           {resultatsTexte.length === 0 && <li className="calame-vide">Aucun document ne contient ce texte.</li>}
         </ul>
       ) : (
+        <>
+        {vue === "documents" && surOuvrirPartage && <PartagesRecus documents={documents} surOuvrir={surOuvrirPartage} />}
         <ul className="calame-documents">
           {vue === "documents" ? (
             <>
@@ -421,6 +433,7 @@ function ListeDocuments({ documents, actif, surOuvrir, surNouveau, surImporter, 
             <li className="calame-vide">{vue === "corbeille" ? "La corbeille est vide. Un document y reste 30 jours." : vue === "archives" ? "Aucun document archivé." : t("recherche.vide")}</li>
           )}
         </ul>
+        </>
       )}
     </div>
   );
@@ -436,6 +449,8 @@ function ActionsSelection({
   surModifier,
   surCorbeille,
   surSupprimerDefinitivement,
+  surExporterSelection,
+  surManuscrit,
   fini,
 }: {
   selection: string[];
@@ -447,6 +462,8 @@ function ActionsSelection({
   surModifier: (id: string, modif: Partial<DocumentAtelier>) => void;
   surCorbeille: (id: string, dedans: boolean) => void;
   surSupprimerDefinitivement: (id: string) => void;
+  surExporterSelection?: (ids: string[]) => void;
+  surManuscrit?: (ids: string[]) => void;
   fini: () => void;
 }) {
   const [confirmer, setConfirmer] = useState(false);
@@ -516,6 +533,16 @@ function ActionsSelection({
           <button type="button" className="bouton bouton-discret bouton-petit" disabled={n === 0} onClick={() => { selection.forEach((id) => surCorbeille(id, true)); fini(); }}>
             Corbeille
           </button>
+          {surExporterSelection && (
+            <button type="button" className="bouton bouton-discret bouton-petit" disabled={n === 0} onClick={() => { surExporterSelection(selection); fini(); }}>
+              Exporter (.zip)
+            </button>
+          )}
+          {surManuscrit && (
+            <button type="button" className="bouton bouton-discret bouton-petit" disabled={n < 2} onClick={() => { surManuscrit(selection); fini(); }} title={n < 2 ? "Choisis au moins deux documents" : undefined}>
+              Assembler en manuscrit
+            </button>
+          )}
         </div>
       )}
     </div>

@@ -62,6 +62,9 @@ function preparerClone(original: HTMLElement, clone: HTMLElement): void {
     for (const c of Array.from(el.classList)) if (/^calame-(lt|analyse|trouve|lu)\b/.test(c)) el.classList.remove(c);
     el.removeAttribute("data-remarque");
   }
+  // Les curseurs des autres auteurs (écriture à plusieurs) non plus.
+  for (const el of Array.from(clone.querySelectorAll<HTMLElement>(".calame-curseur"))) el.remove();
+  for (const el of Array.from(clone.querySelectorAll<HTMLElement>(".calame-curseur-selection"))) el.classList.remove("calame-curseur-selection");
   // Un canevas recopié est vide : on y remet son dessin, en image.
   const sources = Array.from(original.querySelectorAll("canvas"));
   const cibles = Array.from(clone.querySelectorAll("canvas"));

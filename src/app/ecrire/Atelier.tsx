@@ -23,9 +23,10 @@ import {
   X,
   Languages,
   WholeWord,
+  Users,
 } from "lucide-react";
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { compterMots, texteDuDocument } from "@/lib/document-schema";
 import { BoutonCompte } from "@/components/compte/BoutonCompte";
 import { EtatEnregistre } from "@/components/compte/EtatEnregistre";
@@ -106,6 +107,13 @@ import { Grammaire, allerALaRemarque, remarqueSuivante } from "./extensions/gram
 import { lancerRelecture } from "./relecture-grammaire";
 import { BulleGrammaire, ouvrirBulle } from "./BulleGrammaire";
 import { DialogueMot, type OngletMot } from "./DialogueMot";
+import { PanneauPartage } from "./panneaux/PanneauPartage";
+import { LiaisonPartage, type EtatLiaison } from "./partage/liaison";
+import { Curseurs } from "./partage/curseurs";
+import { Suggestions, etatSuggestions, reglerSuggestions } from "./partage/suggestions";
+import { enAttente as changementsEnAttente, versionCollab } from "./partage/collab";
+import { definirPartageCourant } from "./partage/contexte";
+import { couleurDe } from "@/lib/atelier/partage-commun";
 
 const AIDES: Record<string, string> = {
   versetArabe: "Texte arabe du verset",
@@ -134,6 +142,10 @@ type Props = ActionsDocuments & {
   /** Créer un document à partir d'un modèle. */
   surModele?: (depart: DepartDocument) => void;
 };
+
+/* Hors document partagé : rien à suivre. */
+const abonnerRien = () => () => undefined;
+const lireRien = (): EtatLiaison | null => null;
 
 /** Vrai sur téléphone et petite tablette (les colonnes s'y ouvrent par-dessus la page). */
 function ecranEtroit() {
@@ -186,6 +198,10 @@ export function Atelier(props: Props) {
   const [proposer, setProposer] = useState(false);
   const [lienInterne, setLienInterne] = useState(false);
   const [extras, setExtras] = useState(() => extrasDe(doc));
+  // Écrire à plusieurs : la liaison du document partagé ouvert (voir plus bas).
+  const liaisonRef = useRef<LiaisonPartage | null>(null);
+  const extrasRef = useRef(extras);
+  const modifierRef = useRef<(modif: Partial<DocumentAtelier>) => void>(() => undefined);
   // Ouvert (à nouveau) depuis la recherche dans tous les documents : on cherche aussitôt.
   const [requeteVue, setRequeteVue] = useState(requeteInitiale);
   if (requeteInitiale !== requeteVue) {
@@ -236,6 +252,8 @@ export function Atelier(props: Props) {
       SensEcriture,
       Analyse,
       Grammaire,
+      Suggestions,
+      Curseurs,
       Replis,
       BlocCourant,
       SurlignageLecture,
@@ -250,6 +268,70 @@ export function Atelier(props: Props) {
     onUpdate: () => surFrappeRef.current(),
   }));
   const editor = useEditor(options);
+
+  // ---------------------------------------------------------------- écrire à plusieurs
+  const partageId = extras.partage?.id ?? null;
+  const liaison = useMemo(
+    () =>
+      editor && partageId
+        ? new LiaisonPartage(editor, partageId, {
+            attenteLocale: extrasDe(doc).partage?.attente === true,
+            surCopieLocale: (contenu) => void ajouterVersion({ documentId: doc.id, quand: new Date().toISOString(), deltaMots: 0, contenu, titre: courant.current.titre, nom: "Ta copie avant la reprise du partage" }),
+            surOuverture: ({ role, meta, reglages: venus }) => {
+              if (meta.titre && meta.titre !== courant.current.titre) {
+                setTitre(meta.titre);
+                courant.current = { ...courant.current, titre: meta.titre };
+              }
+              if (venus && typeof venus === "object") {
+                const suite = nettoyerReglages({ ...courant.current.reglages, ...(venus as object) });
+                if (JSON.stringify(suite) !== JSON.stringify(courant.current.reglages)) setReglages(suite);
+              }
+              const actuel = extrasRef.current.partage;
+              if (actuel && actuel.role !== role) modifierRef.current({ partage: { ...actuel, role } });
+            },
+            surMotsDistants: (delta) => {
+              if (motsEnregistres.current !== null) motsEnregistres.current += delta;
+            },
+            surFin: (texte) => {
+              setMessage(texte);
+              modifierRef.current({ partage: null });
+            },
+          })
+        : null,
+    // Une liaison par document partagé ouvert ; elle vit tant que l'éditeur et le partage ne changent pas.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [editor, partageId],
+  );
+  const etatLiaison = useSyncExternalStore(liaison ? liaison.abonner : abonnerRien, liaison ? liaison.lire : lireRien, lireRien);
+  useEffect(() => {
+    if (!liaison) return;
+    liaisonRef.current = liaison;
+    void liaison.demarrer();
+    return () => {
+      liaison.arreter();
+      if (liaisonRef.current === liaison) liaisonRef.current = null;
+    };
+  }, [liaison]);
+
+  // Qui je suis dans le document partagé (marge, suggestions), et le mode suggestion imposé au relecteur.
+  const roleLiaison = etatLiaison?.role ?? null;
+  const moiLiaison = etatLiaison?.moi ?? null;
+  const metaLiaison = etatLiaison?.meta ?? null;
+  useEffect(() => {
+    if (!editor || editor.isDestroyed) return;
+    const nom = metaLiaison && moiLiaison ? (metaLiaison.proprietaire === moiLiaison ? metaLiaison.nomProprietaire : (metaLiaison.membres.find((m) => m.compte === moiLiaison)?.nom ?? "Moi")) : null;
+    const moi = moiLiaison && nom ? { compte: moiLiaison, nom, couleur: couleurDe(moiLiaison) } : null;
+    definirPartageCourant(moi ? { moi, role: roleLiaison } : null);
+    const actuel = etatSuggestions(editor.state);
+    if (moi && roleLiaison) {
+      const force = roleLiaison === "commentaire";
+      if (actuel.force !== force || actuel.auteur?.compte !== moi.compte || actuel.auteur?.nom !== moi.nom || (force && !actuel.actif)) reglerSuggestions(editor, { actif: force || actuel.actif, force, auteur: moi });
+    } else if (actuel.auteur || actuel.actif) reglerSuggestions(editor, { actif: false, force: false, auteur: null });
+    // Le partage fini (arrêté, ou retiré), la copie redevient à moi : on peut y écrire.
+    const ecrivable = !relecture && roleLiaison !== "lecture";
+    if (editor.isEditable !== ecrivable) editor.setEditable(ecrivable, false);
+  }, [editor, roleLiaison, moiLiaison, metaLiaison, relecture]);
+  useEffect(() => () => definirPartageCourant(null), []);
   // Les blocs du menu « / » qui ont besoin d'un dialogue (verset, hadith…) le demandent par un événement.
   useEffect(() => {
     const ouvrir = (e: Event) => {
@@ -346,6 +428,9 @@ export function Atelier(props: Props) {
         mots: compterMots(texte),
         signes: texte.length,
       };
+      // Document partagé : la version reçue, et s'il reste des changements à envoyer (pour la prochaine ouverture).
+      const versionPartage = versionCollab(editor.state);
+      if (aJour.partage && versionPartage !== null) aJour.partage = { ...aJour.partage, version: versionPartage, attente: changementsEnAttente(editor.state) > 0 };
       try {
         await ecrireDocument(aJour);
         if (motsEnregistres.current === null) motsEnregistres.current = compterMots(texteDuDocument(doc.contenu));
@@ -400,6 +485,8 @@ export function Atelier(props: Props) {
     const avantFermeture = (e: BeforeUnloadEvent) => {
       viderTampon();
       if (etat !== "propre") e.preventDefault();
+      // Des changements d'un document partagé n'ont pas encore été envoyés.
+      if (liaisonRef.current?.enAttente()) e.preventDefault();
     };
     window.addEventListener("beforeunload", avantFermeture);
     return () => window.removeEventListener("beforeunload", avantFermeture);
@@ -652,7 +739,7 @@ export function Atelier(props: Props) {
   const basculerRelecture = useCallback(
     (actif: boolean) => {
       setRelecture(actif);
-      editor?.setEditable(!actif);
+      editor?.setEditable(!actif && liaisonRef.current?.lire().role !== "lecture");
       if (actif) {
         zoomAvantRelecture.current = zoom;
         setZoom(Math.max(zoom, 1.25));
@@ -879,8 +966,8 @@ export function Atelier(props: Props) {
       },
       {
         cle: "commentaire",
-        libelle: "Ajouter un commentaire pour moi",
-        description: "Dans la marge, à côté du passage choisi ; jamais imprimé",
+        libelle: extras.partage ? "Ajouter un commentaire" : "Ajouter un commentaire pour moi",
+        description: extras.partage ? "Dans la marge, visible de tous ceux qui ont le document ; jamais imprimé" : "Dans la marge, à côté du passage choisi ; jamais imprimé",
         groupe: "Relire",
         faire: () => {
           if (editor?.state.selection.empty) setMessage("Sélectionne d'abord le passage à commenter.");
@@ -956,7 +1043,7 @@ export function Atelier(props: Props) {
         .slice(0, 200)
         .map((d) => ({ cle: `doc-${d.id}`, libelle: d.titre || "Sans titre", description: `${d.mots.toLocaleString("fr-FR")} mots`, groupe: "Ouvrir", faire: () => props.surOuvrir(d.id) })),
     ],
-    [enregistrer, exporter, documents, doc.id, relecture, basculerRelecture, basculerConcentration, ajusterLargeur, motsActuels, surBienvenue, props, palette, editor, extras.proprietes.auteur, annoncer, relireAuClavier],
+    [enregistrer, exporter, documents, doc.id, relecture, basculerRelecture, basculerConcentration, ajusterLargeur, motsActuels, surBienvenue, props, palette, editor, extras.proprietes.auteur, annoncer, relireAuClavier, extras.partage],
   );
 
   function ouvrirOnglet(cle: string) {
@@ -986,6 +1073,11 @@ export function Atelier(props: Props) {
     props.surModifier(doc.id, modif);
     setExtras((x) => ({ ...x, ...modif }) as typeof x);
   };
+  // La liaison du partage les appelle plus tard : toujours la dernière version.
+  useEffect(() => {
+    extrasRef.current = extras;
+    modifierRef.current = modifierDocument;
+  });
 
   const restaurer = async (v: VersionAtelier) => {
     if (!editor) return;
@@ -1028,6 +1120,12 @@ export function Atelier(props: Props) {
           libelle: "Versions",
           Icone: History,
           contenu: <PanneauVersions editor={editor} documentId={doc.id} reglages={reglages} surVersion={(nom) => enregistrer(true, nom)} surRestaurer={restaurer} />,
+        },
+        {
+          cle: "partage",
+          libelle: "Partage",
+          Icone: Users,
+          contenu: <PanneauPartage editor={editor} doc={{ ...doc, ...extras }} titre={titre} liaison={etatLiaison} surModifier={modifierDocument} surMessage={annoncer} />,
         },
         {
           cle: "bilan",
@@ -1093,6 +1191,23 @@ export function Atelier(props: Props) {
             <span className="calame-objectif-jauge" style={{ width: `${Math.min(100, (stats.mots / extras.objectifMots) * 100)}%` }} />
             <span className="calame-objectif-texte">{Math.min(100, Math.round((stats.mots / extras.objectifMots) * 100))} %</span>
           </span>
+        )}
+        {extras.partage && (
+          <button type="button" className="calame-partage-puce" data-etat={etatLiaison?.etat ?? "connexion"} onClick={() => ouvrirOnglet("partage")} title="Document partagé : voir qui écrit, les suggestions, l'historique">
+            <Users className="size-4" aria-hidden="true" />
+            <span className="calame-partage-visages" aria-hidden="true">
+              {(etatLiaison?.presences ?? [])
+                .filter((p, i, toutes) => toutes.findIndex((x) => x.compte === p.compte) === i)
+                .slice(0, 4)
+                .map((p) => (
+                  <span key={p.compte} style={{ background: p.couleur }} title={p.nom}>
+                    {p.nom.charAt(0)}
+                  </span>
+                ))}
+            </span>
+            <span className="sr-only">Document partagé</span>
+            {etatLiaison?.etat === "hors-ligne" ? "Hors ligne" : etatLiaison?.etat === "envoi" ? "Envoi…" : "Partagé"}
+          </button>
         )}
         {delai && (
           <span className="calame-echeance" data-alerte={delai.jours <= 1 ? "" : undefined} title={`Échéance : ${extras.echeance}`}>
@@ -1173,6 +1288,9 @@ export function Atelier(props: Props) {
           surSupprimerDefinitivement={props.surSupprimerDefinitivement}
           surOuvrirACote={(id) => setVueCote(id)}
           surModeles={props.surModele ? () => setDialogueModeles(true) : undefined}
+          surExporterSelection={props.surExporterSelection}
+          surManuscrit={props.surManuscrit}
+          surOuvrirPartage={props.surOuvrirPartage}
         />
       )}
 

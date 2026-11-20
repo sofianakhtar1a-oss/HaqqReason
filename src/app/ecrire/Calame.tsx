@@ -44,6 +44,9 @@ import "@fontsource/opendyslexic/400.css";
 import "@fontsource/opendyslexic/700.css";
 import "./calame-plus.css";
 import { departDuPartage, lirePartageRecu } from "./partage-recu";
+import { DialogueManuscrit } from "./DialogueManuscrit";
+import { assemblerManuscrit, type OptionsManuscrit } from "@/lib/atelier/manuscrit";
+import { exporterSelection } from "./sorties";
 
 /** Le dernier document ouvert, pour ce compte et sur cet appareil. */
 const dernier = {
@@ -87,6 +90,8 @@ export function Calame() {
   const [requete, setRequete] = useState<string | undefined>(undefined);
   const [etat, setEtat] = useState<"chargement" | "pret" | "impossible">("chargement");
   const [message, setMessage] = useState("");
+  // Les documents choisis pour un manuscrit en chapitres (fenêtre ouverte).
+  const [manuscrit, setManuscrit] = useState<string[] | null>(null);
   // Ouvrir ou refermer un verrou redessine la page (document verrouillé ou non).
   useSyncExternalStore(abonnerVerrous, versionVerrous, () => 0);
   const t = useTextes("calame");
@@ -225,6 +230,65 @@ export function Calame() {
       setMessage(laisses.length ? `Reçu dans un nouveau document. Pas pu entrer : ${laisses.join(", ")}.` : "Reçu dans un nouveau document.");
     })();
   }, [etat, depuisModele]);
+
+  /** Un document partagé avec moi : sa copie liée (créée la première fois), qui se met à jour en l'ouvrant. */
+  const ouvrirPartage = useCallback(
+    async (id: string) => {
+      const liste = await listerDocuments();
+      const local = liste.find((d) => extrasDe(d).partage?.id === id && !extrasDe(d).corbeille);
+      if (local) {
+        afficher(local);
+        return;
+      }
+      const r = await fetch(`/api/calame/partages/${encodeURIComponent(id)}`, { cache: "no-store" }).catch(() => null);
+      const d = (r ? await r.json().catch(() => ({})) : {}) as { erreur?: string; role?: "lecture" | "commentaire" | "ecriture" | "proprietaire"; meta?: { titre: string }; base?: { version: number; contenu: unknown; reglages: unknown } };
+      if (!r || !r.ok || !d.base || !d.role || !d.meta) {
+        setMessage(d.erreur ?? "Ce document partagé ne s'ouvre pas pour l'instant : vérifie ta connexion.");
+        return;
+      }
+      const doc = documentVide(nouvelIdentifiant(), d.meta.titre);
+      doc.contenu = d.base.contenu;
+      if (d.base.reglages && typeof d.base.reglages === "object") doc.reglages = nettoyerReglages({ ...doc.reglages, ...(d.base.reglages as object) });
+      doc.partage = { id, role: d.role, version: d.base.version, attente: false };
+      await ecrireDocument(doc);
+      setDocuments((l) => [doc, ...l]);
+      afficher(doc);
+    },
+    [afficher],
+  );
+
+  // Ouvert depuis une notification (« … partage un document avec toi »).
+  const partageDemande = useRef(false);
+  useEffect(() => {
+    if (etat !== "pret" || partageDemande.current) return;
+    partageDemande.current = true;
+    void (async () => {
+      const id = new URLSearchParams(window.location.search).get("partage");
+      if (!id || !/^[0-9a-f-]{36}$/i.test(id)) return;
+      window.history.replaceState(null, "", "/ecrire");
+      await ouvrirPartage(id);
+    })();
+  }, [etat, ouvrirPartage]);
+
+  /** Le manuscrit en chapitres : un nouveau document, les originaux intacts. */
+  const assembler = useCallback(
+    async (ordre: string[], options: OptionsManuscrit) => {
+      setManuscrit(null);
+      const chapitres: DocumentAtelier[] = [];
+      for (const id of ordre) {
+        const d = await lireDocument(id);
+        if (d && (!extrasDe(d).verrou || estOuvert(d.id))) chapitres.push(d);
+      }
+      if (chapitres.length < 2) {
+        setMessage("Il faut au moins deux documents ouverts (un document verrouillé doit d'abord être ouvert avec son code).");
+        return;
+      }
+      const { titre, contenu, reglages } = assemblerManuscrit(chapitres, options);
+      await depuisModele({ titre, contenu, reglages });
+      setMessage(`Manuscrit assemblé : ${chapitres.length} chapitres. Exporte-le d'un seul tenant depuis l'onglet « Sortie ».`);
+    },
+    [depuisModele],
+  );
 
   const bienvenue = useCallback(async () => {
     const doc: DocumentAtelier = { ...documentVide(nouvelIdentifiant(), "Bienvenue dans le Calame"), contenu: documentDeBienvenue() };
@@ -389,7 +453,22 @@ export function Calame() {
         surListeChangee={listeChangee}
         surBienvenue={() => void bienvenue()}
         surModele={(d) => void depuisModele(d)}
+        surExporterSelection={(ids) =>
+          void exporterSelection(ids)
+            .then((n) => setMessage(`${n} document${n > 1 ? "s" : ""} dans l'archive .zip (chacun en .calame et en Markdown).`))
+            .catch(() => setMessage("L'archive n'a pas pu être préparée : réessaie."))
+        }
+        surManuscrit={(ids) => setManuscrit(ids)}
+        surOuvrirPartage={(id) => void ouvrirPartage(id)}
       />
+      )}
+      {manuscrit && (
+        <DialogueManuscrit
+          documents={documents}
+          ids={manuscrit}
+          surFermer={() => setManuscrit(null)}
+          surCreer={(ordre, options) => void assembler(ordre, options)}
+        />
       )}
     </>
   );

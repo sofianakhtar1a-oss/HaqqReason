@@ -99,7 +99,15 @@ export function versNeutre(contenu: unknown, d: DonneesNeutre = {}): Noeud {
   const marques = (n: Noeud): Noeud => {
     if (!n.marks?.length) return n;
     // Les marques propres à l'atelier (glossaire, index, commentaire, style de caractère) ne voyagent pas : le texte reste.
-    const gardees = n.marks.filter((m) => !["termeGlossaire", "commentaire", "styleCaractere"].includes(m.type) && !(m.type === "indexe" && !d.pourWord));
+    // Les propositions d'un relecteur sortent comme à l'écran : l'ajout souligné, le retrait barré, à sa couleur.
+    const traduites = n.marks.flatMap((m) => {
+      const couleur = /^#[0-9a-f]{6}$/i.test(String(m.attrs?.couleur ?? "")) ? String(m.attrs?.couleur) : "#1971c2";
+      if (m.type === "suggestionAjout") return [{ type: "souligne", attrs: { style: "simple", couleur: null } }, { type: "couleur", attrs: { couleur } }];
+      if (m.type === "suggestionRetrait") return [{ type: "strike" }, { type: "couleur", attrs: { couleur } }];
+      return [m];
+    });
+    const uniques = traduites.filter((m, i) => traduites.findIndex((x) => x.type === m.type) === i);
+    const gardees = uniques.filter((m) => !["termeGlossaire", "commentaire", "styleCaractere"].includes(m.type) && !(m.type === "indexe" && !d.pourWord));
     return { ...n, marks: gardees };
   };
 

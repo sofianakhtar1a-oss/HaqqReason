@@ -17,6 +17,7 @@ import { CarteGeo } from "./blocs/CarteGeo";
 import { Commentaire, DeuxColonnes, LienInterne } from "./blocs/Marges";
 import { SautSection } from "./blocs/Sections";
 import { Bibliographie, Glossaire, IndexSources, SourcesCalame, TermeGlossaire, VueLienCarteCalame } from "./blocs/Sources";
+import { SuggestionAjout, SuggestionRetrait } from "./partage/suggestions";
 
 /**
  * Le vocabulaire des documents du Calame : celui des articles du site (mêmes blocs,
@@ -80,6 +81,9 @@ export const EXTENSIONS_CALAME: AnyExtension[] = [
   IndexSources,
   TermeGlossaire,
   Glossaire,
+  // Les propositions d'un relecteur (mode suggestion), dans un document partagé.
+  SuggestionAjout,
+  SuggestionRetrait,
 ];
 
 /** Tout ce qu'il faut pour lire (et écrire) un document du Calame. */

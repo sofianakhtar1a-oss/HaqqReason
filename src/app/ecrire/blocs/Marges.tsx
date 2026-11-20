@@ -22,6 +22,23 @@ export const Commentaire = Mark.create({
     return {
       id: { default: "", parseHTML: (el) => el.getAttribute("data-commentaire") ?? "", renderHTML: (a) => ({ "data-commentaire": String(a.id ?? "") }) },
       texte: { default: "", parseHTML: (el) => el.getAttribute("data-texte") ?? "", renderHTML: (a) => ({ "data-texte": String(a.texte ?? ""), title: `Commentaire : ${String(a.texte ?? "")}` }) },
+      // Dans un document partagé : qui a écrit, quand, les réponses, et s'il est résolu.
+      auteur: { default: "", parseHTML: (el) => el.getAttribute("data-auteur") ?? "", renderHTML: (a) => (a.auteur ? { "data-auteur": String(a.auteur) } : {}) },
+      compte: { default: "", parseHTML: (el) => el.getAttribute("data-compte") ?? "", renderHTML: (a) => (a.compte ? { "data-compte": String(a.compte) } : {}) },
+      quand: { default: "", parseHTML: (el) => el.getAttribute("data-quand") ?? "", renderHTML: (a) => (a.quand ? { "data-quand": String(a.quand) } : {}) },
+      reponses: {
+        default: [],
+        parseHTML: (el) => {
+          try {
+            const v = JSON.parse(el.getAttribute("data-reponses") ?? "[]") as unknown;
+            return Array.isArray(v) ? v : [];
+          } catch {
+            return [];
+          }
+        },
+        renderHTML: (a) => (Array.isArray(a.reponses) && a.reponses.length ? { "data-reponses": JSON.stringify(a.reponses) } : {}),
+      },
+      resolu: { default: false, parseHTML: (el) => el.getAttribute("data-resolu") === "oui", renderHTML: (a) => (a.resolu ? { "data-resolu": "oui" } : {}) },
     };
   },
   parseHTML() {
@@ -32,7 +49,8 @@ export const Commentaire = Mark.create({
   },
 });
 
-export type CommentaireDoc = { id: string; texte: string; extrait: string; from: number; to: number };
+export type ReponseCommentaire = { compte: string; nom: string; texte: string; quand: string };
+export type CommentaireDoc = { id: string; texte: string; extrait: string; from: number; to: number; auteur?: string; compte?: string; quand?: string; reponses?: ReponseCommentaire[]; resolu?: boolean };
 
 /** Les commentaires du document, dans l'ordre, avec le passage qu'ils accompagnent. */
 export function commentairesDuDocument(editor: Editor): CommentaireDoc[] {
@@ -46,18 +64,57 @@ export function commentairesDuDocument(editor: Editor): CommentaireDoc[] {
       if (actuel) {
         actuel.to = pos + n.nodeSize;
         actuel.extrait = `${actuel.extrait}${n.text ?? ""}`.slice(0, 80);
-      } else parId.set(id, { id, texte: String(m.attrs.texte ?? ""), extrait: (n.text ?? "").slice(0, 80), from: pos, to: pos + n.nodeSize });
+      } else
+        parId.set(id, {
+          id,
+          texte: String(m.attrs.texte ?? ""),
+          extrait: (n.text ?? "").slice(0, 80),
+          from: pos,
+          to: pos + n.nodeSize,
+          auteur: String(m.attrs.auteur ?? ""),
+          compte: String(m.attrs.compte ?? ""),
+          quand: String(m.attrs.quand ?? ""),
+          reponses: Array.isArray(m.attrs.reponses) ? (m.attrs.reponses as ReponseCommentaire[]) : [],
+          resolu: m.attrs.resolu === true,
+        });
     }
     return false;
   });
   return [...parId.values()];
 }
 
-export function ajouterCommentaire(editor: Editor, texte: string): boolean {
+export function ajouterCommentaire(editor: Editor, texte: string, auteur?: { compte: string; nom: string } | null): boolean {
   const { empty } = editor.state.selection;
   if (empty || !texte.trim()) return false;
   const id = `c${Date.now().toString(36)}${Math.random().toString(36).slice(2, 5)}`;
-  return editor.chain().focus().setMark("commentaire", { id, texte: texte.trim().slice(0, 2000) }).run();
+  const qui = auteur ? { auteur: auteur.nom, compte: auteur.compte, quand: new Date().toISOString() } : {};
+  return editor.chain().focus().setMark("commentaire", { id, texte: texte.trim().slice(0, 2000), ...qui }).run();
+}
+
+/** Change les attributs d'un commentaire (réponses, résolu), partout où il s'étend. */
+function majCommentaire(editor: Editor, id: string, changer: (attrs: Record<string, unknown>) => Record<string, unknown>): void {
+  const type = editor.schema.marks.commentaire;
+  if (!type) return;
+  const tr = editor.state.tr;
+  editor.state.doc.descendants((n, pos) => {
+    if (!n.isText) return true;
+    const m = n.marks.find((x) => x.type === type && x.attrs.id === id);
+    if (!m) return false;
+    tr.removeMark(pos, pos + n.nodeSize, m);
+    tr.addMark(pos, pos + n.nodeSize, type.create(changer({ ...m.attrs })));
+    return false;
+  });
+  if (tr.docChanged) editor.view.dispatch(tr);
+}
+
+export function repondreCommentaire(editor: Editor, id: string, reponse: { compte: string; nom: string; texte: string }): void {
+  const propre = reponse.texte.trim().slice(0, 2000);
+  if (!propre) return;
+  majCommentaire(editor, id, (a) => ({ ...a, reponses: [...(Array.isArray(a.reponses) ? a.reponses : []), { ...reponse, texte: propre, quand: new Date().toISOString() }].slice(-50) }));
+}
+
+export function resoudreCommentaire(editor: Editor, id: string, resolu: boolean): void {
+  majCommentaire(editor, id, (a) => ({ ...a, resolu }));
 }
 
 /** Change le texte d'un commentaire (ou le retire si `texte` est null). */
@@ -70,7 +127,7 @@ export function modifierCommentaire(editor: Editor, id: string, texte: string | 
     const m = n.marks.find((x) => x.type === type && x.attrs.id === id);
     if (!m) return false;
     tr.removeMark(pos, pos + n.nodeSize, m);
-    if (texte !== null) tr.addMark(pos, pos + n.nodeSize, type.create({ id, texte: texte.slice(0, 2000) }));
+    if (texte !== null) tr.addMark(pos, pos + n.nodeSize, type.create({ ...m.attrs, id, texte: texte.slice(0, 2000) }));
     return false;
   });
   if (tr.docChanged) editor.view.dispatch(tr);

@@ -6,18 +6,21 @@ import type { DocumentAtelier } from "@/lib/atelier/modele";
 import { Fenetre } from "./Fenetre";
 import { ciblesDuDocument } from "./blocs/References";
 import { ajouterCommentaire, poserLienInterne } from "./blocs/Marges";
+import { usePartageCourant } from "./partage/contexte";
 
 /** Écrire un commentaire pour soi sur le passage sélectionné. */
 export function DialogueCommentaire({ editor, surFermer }: { editor: Editor; surFermer: () => void }) {
   const [texte, setTexte] = useState("");
+  // Dans un document partagé, le commentaire porte le nom de son auteur et se voit de tous.
+  const { moi } = usePartageCourant();
   const extrait = useMemo(() => {
     const { from, to } = editor.state.selection;
     return editor.state.doc.textBetween(from, to, " ").slice(0, 140);
   }, [editor]);
   return (
     <Fenetre
-      titre="Commentaire pour toi"
-      sousTitre="Il s'affiche dans la marge, à côté du passage. Il ne s'imprime jamais."
+      titre={moi ? "Commentaire" : "Commentaire pour toi"}
+      sousTitre={moi ? "Il s'affiche dans la marge, à côté du passage, pour tous ceux qui ont le document. Il ne s'imprime jamais." : "Il s'affiche dans la marge, à côté du passage. Il ne s'imprime jamais."}
       surFermer={surFermer}
       largeur={32}
       pied={
@@ -26,7 +29,7 @@ export function DialogueCommentaire({ editor, surFermer }: { editor: Editor; sur
           className="bouton bouton-principal"
           disabled={!texte.trim()}
           onClick={() => {
-            ajouterCommentaire(editor, texte);
+            ajouterCommentaire(editor, texte, moi);
             surFermer();
           }}
         >

@@ -11,6 +11,9 @@ import { lireFichier, urlFichier } from "@/lib/atelier/depot";
  * fichier au moment de l'afficher.
  */
 
+/** Un fichier vient d'arriver sur l'appareil (reçu d'un document partagé) : les vues qui l'attendaient se rechargent. */
+export const EVENEMENT_FICHIER_RECU = "calame:fichier-recu";
+
 export function useUrlLocale(id: string): string | null {
   const [url, setUrl] = useState<string | null>(null);
   useEffect(() => {
@@ -19,8 +22,16 @@ export function useUrlLocale(id: string): string | null {
     void urlFichier(id).then((adresse) => {
       if (vivant) setUrl(adresse);
     });
+    const surRecu = (e: Event) => {
+      if ((e as CustomEvent<string>).detail !== id) return;
+      void urlFichier(id).then((adresse) => {
+        if (vivant && adresse) setUrl(adresse);
+      });
+    };
+    window.addEventListener(EVENEMENT_FICHIER_RECU, surRecu);
     return () => {
       vivant = false;
+      window.removeEventListener(EVENEMENT_FICHIER_RECU, surRecu);
     };
   }, [id]);
   return url;
