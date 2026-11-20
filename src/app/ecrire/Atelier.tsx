@@ -1,55 +1,76 @@
 "use client";
 
 import type { Editor } from "@tiptap/core";
-import { Node as NoeudTiptap, type AnyExtension } from "@tiptap/core";
 import type { Node as ProseMirrorNode } from "@tiptap/pm/model";
-import { ReactNodeViewRenderer, useEditor, type NodeViewProps } from "@tiptap/react";
+import { useEditor } from "@tiptap/react";
 import { Placeholder } from "@tiptap/extensions";
-import { Command, LoaderCircle, PanelLeft, PanelRight, Printer } from "lucide-react";
+import {
+  BarChart3,
+  CalendarClock,
+  Command,
+  FileCog,
+  HelpCircle,
+  History,
+  LoaderCircle,
+  Omega,
+  PanelLeft,
+  PanelRight,
+  Printer,
+  Search,
+  Settings2,
+  SpellCheck2,
+  Timer,
+  X,
+} from "lucide-react";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { compterMots, texteDuDocument } from "@/lib/document-schema";
-import { extensionsDocument } from "@/lib/editeur/extensions";
-import { sommaireDuDocument, type EntreeSommaire } from "@/lib/sommaire";
 import { BoutonCompte } from "@/components/compte/BoutonCompte";
 import { EtatEnregistre } from "@/components/compte/EtatEnregistre";
-import { ajouterFichier, ajouterVersion, ecrireDocument } from "@/lib/atelier/depot";
-import { geometrie, LIMITES_ATELIER, nettoyerReglages, tailleDuPapier, type DocumentAtelier, type ReglagesPage } from "@/lib/atelier/modele";
+import { ajouterFichier, ajouterVersion, ecrireDocument, lireDocument } from "@/lib/atelier/depot";
+import { extrasDe, geometrie, LIMITES_ATELIER, nettoyerReglages, tailleDuPapier, type DocumentAtelier, type ReglagesPage, type VersionAtelier } from "@/lib/atelier/modele";
+import { lirePreferences } from "@/lib/atelier/preferences";
+import { noterEcriture, noterTemps, viderTampon } from "@/lib/atelier/journal-ecriture";
 import { BarreOutils } from "../createur/_composants/editeur/BarreOutils";
 import { actionsSpeciales } from "../createur/_composants/editeur/commandes";
 import { MenuBulle } from "../createur/_composants/editeur/MenuBulle";
 import { ListeSlash, MenuSlash } from "../createur/_composants/editeur/MenuSlash";
 import { OutilsBloc } from "../createur/_composants/editeur/OutilsBloc";
 import { PanneauBloc } from "../createur/_composants/editeur/PanneauBloc";
-import { VueLienCarte, VueLogique, VueSchema, VueSommaire, VueSophisme } from "../createur/_composants/editeur/VuesBlocs";
 import { AtelierImage, type ResultatAtelier } from "../createur/_composants/ateliers/AtelierImage";
 import { BarreLaterale } from "./BarreLaterale";
-import { Inspecteur } from "./Inspecteur";
+import { Inspecteur, type OngletSupplementaire } from "./Inspecteur";
 import { PaletteCommandes, type ActionPalette } from "./PaletteCommandes";
 import { Papier } from "./Papier";
 import { CoupuresDePage } from "./pages-extension";
-import { COMMANDE_TABLEAU, extensionsTableau, GROUPES_ECARTES_ATELIER } from "./tableaux";
-import { VueDocumentLocal, VueImageLocale } from "./VuesLocales";
+import { COMMANDE_TABLEAU, GROUPES_ECARTES_ATELIER } from "./tableaux";
 import { exporterDocx, exporterMarkdown, exporterPaquet, exporterPdf } from "./exporter";
 import { useAccesComplet } from "@/lib/client/acces";
-
-const VUES: Record<string, (p: NodeViewProps) => React.ReactNode> = {
-  schema: VueSchema,
-  logique: VueLogique,
-  lienCarte: VueLienCarte,
-  sophisme: VueSophisme,
-  sommaire: VueSommaire,
-  image: VueImageLocale,
-  documentPdf: VueDocumentLocal,
-};
-
-function avecVues(extensions: AnyExtension[]): AnyExtension[] {
-  return extensions.map((e) => {
-    const Vue = VUES[e.name];
-    if (!Vue) return e;
-    return (e as NoeudTiptap).extend({ addNodeView: () => ReactNodeViewRenderer(Vue as Parameters<typeof ReactNodeViewRenderer>[0]) });
-  });
-}
+import { extensionsContenu } from "./extensions-calame";
+import { Recherche } from "./extensions/recherche";
+import { AidesSaisie, reglagesSaisie } from "./extensions/saisie";
+import { SensEcriture } from "./extensions/sens";
+import { Analyse } from "./extensions/analyse";
+import { Replis, toutDeplier } from "./extensions/replis";
+import { BlocCourant } from "./extensions/concentration";
+import { dicteeDisponible, dicter, SurlignageLecture, type Dictee } from "./voix";
+import { BarreRecherche } from "./BarreRecherche";
+import { Caracteres, type OngletCaracteres } from "./Caracteres";
+import { BarreEtat, ZOOMS } from "./BarreEtat";
+import { BarreMobile } from "./BarreMobile";
+import { Aide } from "./Aide";
+import { ReglagesAtelier } from "./ReglagesAtelier";
+import { VueLecture } from "./VueLecture";
+import { PanneauDocument } from "./panneaux/PanneauDocument";
+import { PanneauRelire } from "./panneaux/PanneauRelire";
+import { PanneauVersions } from "./panneaux/PanneauVersions";
+import { PanneauBilan } from "./panneaux/PanneauBilan";
+import { nouveauxJalons } from "./jalons";
+import { carillon, jouerAmbiance, arreterAmbiance } from "./ambiance";
+import { delaiEcheance, usePreferences } from "./crochets";
+import type { ApercuPage } from "./Miniatures";
+import type { ActionsDocuments } from "./BarreLaterale";
+import { allerAuTitre, planDuDocument } from "./plan";
 
 const AIDES: Record<string, string> = {
   versetArabe: "Texte arabe du verset",
@@ -62,31 +83,66 @@ const AIDES: Record<string, string> = {
 
 const DELAI_ENREGISTREMENT = 1200;
 const DELAI_VERSION_MS = 5 * 60 * 1000;
+const ECART_PAGES = 30;
 
-type Props = {
+type Props = ActionsDocuments & {
   doc: DocumentAtelier;
   documents: DocumentAtelier[];
-  surOuvrir: (id: string) => void;
-  surNouveau: () => void;
-  surSupprimer: (id: string) => void;
-  surImporter: (fichier: File) => void;
   surListeChangee: (doc: DocumentAtelier) => void;
+  /** Documents ouverts en onglets (le document actif compris). */
+  onglets: DocumentAtelier[];
+  surFermerOnglet: (id: string) => void;
+  /** Texte à chercher dès l'ouverture (venu de la recherche dans tous les documents). */
+  requeteInitiale?: string;
+  /** Ouvre un document neuf de bienvenue. */
+  surBienvenue: () => void;
 };
 
-export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, surImporter, surListeChangee }: Props) {
+/** Vrai sur téléphone et petite tablette (les colonnes s'y ouvrent par-dessus la page). */
+function ecranEtroit() {
+  return typeof window !== "undefined" && window.matchMedia("(max-width: 70rem)").matches;
+}
+
+export function Atelier(props: Props) {
+  const { doc, documents, surListeChangee, onglets, surFermerOnglet, requeteInitiale, surBienvenue } = props;
   const accesComplet = useAccesComplet();
+  const prefs = usePreferences();
   const [titre, setTitre] = useState(doc.titre);
   const [reglages, setReglages] = useState<ReglagesPage>(doc.reglages);
   const [etat, setEtat] = useState<"propre" | "modifie" | "enregistrement">("propre");
   const [pages, setPages] = useState(1);
-  const [plan, setPlan] = useState<EntreeSommaire[]>(() => sommaireDuDocument(doc.contenu));
-  const [coteOuvert, setCoteOuvert] = useState(true);
-  const [inspecteurOuvert, setInspecteurOuvert] = useState(true);
+  // Sur un écran étroit, les deux colonnes passent par-dessus la page : on ouvre d'abord la page.
+  const [coteOuvert, setCoteOuvert] = useState(() => !ecranEtroit());
+  const [inspecteurOuvert, setInspecteurOuvert] = useState(() => !ecranEtroit());
+  const [ongletInspecteur, setOngletInspecteur] = useState("page");
   const [palette, setPalette] = useState(false);
   const [imageCollee, setImageCollee] = useState<{ source: Blob; position: number } | null>(null);
   const [exportEnCours, setExportEnCours] = useState("");
   const [message, setMessage] = useState("");
+  const [recherche, setRecherche] = useState<{ remplacement: boolean; requete: string } | null>(requeteInitiale ? { remplacement: false, requete: requeteInitiale } : null);
+  const [caracteres, setCaracteres] = useState<OngletCaracteres | null>(null);
+  const [zoom, setZoom] = useState(1);
+  const [concentration, setConcentration] = useState(false);
+  const [relecture, setRelecture] = useState(false);
+  const [vueCote, setVueCote] = useState<string | null>(null);
+  const [apercuPages, setApercuPages] = useState<ApercuPage[]>([]);
+  const [pageCourante, setPageCourante] = useState(1);
+  const [seance, setSeance] = useState<{ fin: number; motsDebut: number; minutes: number } | null>(null);
+  const [maintenant, setMaintenant] = useState(() => Date.now());
+  const [dictee, setDictee] = useState<"arret" | "ecoute">("arret");
+  const [provisoire, setProvisoire] = useState("");
+  const [annonces, setAnnonces] = useState<{ id: number; texte: string }[]>([]);
+  const [aide, setAide] = useState(false);
+  const [reglagesAtelier, setReglagesAtelier] = useState(false);
+  const [extras, setExtras] = useState(() => extrasDe(doc));
+  // Ouvert (à nouveau) depuis la recherche dans tous les documents : on cherche aussitôt.
+  const [requeteVue, setRequeteVue] = useState(requeteInitiale);
+  if (requeteInitiale !== requeteVue) {
+    setRequeteVue(requeteInitiale);
+    if (requeteInitiale) setRecherche({ remplacement: false, requete: requeteInitiale });
+  }
 
+  const centre = useRef<HTMLDivElement>(null);
   const scene = useRef<HTMLDivElement>(null);
   const choixImage = useRef<HTMLInputElement>(null);
   const choixDocument = useRef<HTMLInputElement>(null);
@@ -95,12 +151,22 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
   const collerRef = useRef<(e: ClipboardEvent) => boolean>(() => false);
   const courant = useRef({ titre: doc.titre, reglages: doc.reglages });
   const surFrappeRef = useRef<() => void>(() => {});
+  // Le point de départ du journal : ce qui est déjà écrit (un document importé ou de bienvenue ne compte pas comme écrit aujourd'hui).
+  const motsEnregistres = useRef<number | null>(null);
+  const derniereFrappe = useRef(0);
+  const dicteeRef = useRef<Dictee | null>(null);
+  const zoomAvantRelecture = useRef(1);
+
+  // Les aides à la frappe lisent ces réglages à chaque touche.
+  useEffect(() => {
+    reglagesSaisie.typographie = prefs.typographie;
+    reglagesSaisie.translit = prefs.translitRapide;
+  }, [prefs.typographie, prefs.translitRapide]);
 
   const [options] = useState(() => ({
     immediatelyRender: false,
     extensions: [
-      ...avecVues(extensionsDocument()),
-      ...extensionsTableau,
+      ...extensionsContenu(),
       Placeholder.configure({
         includeChildren: true,
         showOnlyCurrent: false,
@@ -113,6 +179,13 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
       }),
       MenuSlash,
       CoupuresDePage,
+      Recherche,
+      AidesSaisie,
+      SensEcriture,
+      Analyse,
+      Replis,
+      BlocCourant,
+      SurlignageLecture,
     ],
     content: doc.contenu as object,
     editorProps: {
@@ -124,15 +197,23 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
   const editor = useEditor(options);
 
   // ---------------------------------------------------------------- enregistrement
+  const annoncer = useCallback((texte: string) => {
+    const id = Date.now() + Math.random();
+    setAnnonces((a) => [...a, { id, texte }]);
+    setTimeout(() => setAnnonces((a) => a.filter((x) => x.id !== id)), 6000);
+  }, []);
+
   const enregistrer = useCallback(
-    async (versionAussi = false) => {
+    async (versionAussi = false, nomVersion?: string) => {
       if (!editor) return;
       clearTimeout(minuteur.current);
       setEtat("enregistrement");
       const contenu = JSON.parse(JSON.stringify(editor.getJSON())) as unknown;
       const texte = texteDuDocument(contenu);
+      // Les champs rangés ailleurs (dossier, étiquettes, propriétés) sont relus : on ne les écrase jamais.
+      const stocke = (await lireDocument(doc.id)) ?? doc;
       const aJour: DocumentAtelier = {
-        ...doc,
+        ...stocke,
         titre: courant.current.titre.slice(0, LIMITES_ATELIER.titre),
         reglages: nettoyerReglages(courant.current.reglages),
         contenu,
@@ -142,41 +223,36 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
       };
       try {
         await ecrireDocument(aJour);
-        const maintenant = Date.now();
-        if (versionAussi || maintenant - derniereVersion.current > DELAI_VERSION_MS) {
-          derniereVersion.current = maintenant;
-          await ajouterVersion({ documentId: doc.id, quand: aJour.modifie, deltaMots: aJour.mots - doc.mots, contenu, titre: aJour.titre });
+        if (motsEnregistres.current === null) motsEnregistres.current = compterMots(texteDuDocument(doc.contenu));
+        const delta = aJour.mots - motsEnregistres.current;
+        if (delta !== 0) noterEcriture(doc.id, delta);
+        motsEnregistres.current = aJour.mots;
+        const maintenantMs = Date.now();
+        if (versionAussi || maintenantMs - derniereVersion.current > DELAI_VERSION_MS) {
+          derniereVersion.current = maintenantMs;
+          await ajouterVersion({ documentId: doc.id, quand: aJour.modifie, deltaMots: aJour.mots - doc.mots, contenu, titre: aJour.titre, ...(nomVersion ? { nom: nomVersion } : {}) });
         }
         surListeChangee(aJour);
+        setExtras(extrasDe(aJour));
         setEtat("propre");
+        for (const j of nouveauxJalons({ pages, termine: extrasDe(aJour).proprietes.statut === "termine" })) annoncer(`Jalon : ${j.libelle} !`);
       } catch {
         setEtat("modifie");
         setMessage("Impossible d'enregistrer sur cet appareil. Vérifie qu'il reste de la place, puis fais une sauvegarde complète.");
       }
     },
-    [doc, editor, surListeChangee],
+    [doc, editor, surListeChangee, pages, annoncer],
   );
 
   const marquerModifie = useCallback(() => {
     setEtat("modifie");
+    // Le temps d'écriture : les secondes entre deux frappes rapprochées (moins d'une minute).
+    const ici = Date.now();
+    if (derniereFrappe.current > 0 && ici - derniereFrappe.current < 60_000) noterTemps(doc.id, (ici - derniereFrappe.current) / 1000);
+    derniereFrappe.current = ici;
     clearTimeout(minuteur.current);
     minuteur.current = setTimeout(() => void enregistrer(), DELAI_ENREGISTREMENT);
-  }, [enregistrer]);
-
-  // Le plan suit la frappe, mais sans la gêner.
-  useEffect(() => {
-    if (!editor) return;
-    let attente: ReturnType<typeof setTimeout>;
-    const suivre = () => {
-      clearTimeout(attente);
-      attente = setTimeout(() => setPlan(sommaireDuDocument(editor.getJSON())), 400);
-    };
-    editor.on("update", suivre);
-    return () => {
-      clearTimeout(attente);
-      editor.off("update", suivre);
-    };
-  }, [editor]);
+  }, [enregistrer, doc.id]);
 
   useEffect(() => {
     courant.current = { titre, reglages };
@@ -186,16 +262,24 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
     surFrappeRef.current = marquerModifie;
   }, [marquerModifie]);
 
-  useEffect(() => () => clearTimeout(minuteur.current), []);
+  useEffect(
+    () => () => {
+      clearTimeout(minuteur.current);
+      viderTampon();
+    },
+    [],
+  );
 
   // Enregistrer avant de quitter la page, s'il reste quelque chose à écrire.
   useEffect(() => {
     const avantFermeture = (e: BeforeUnloadEvent) => {
+      viderTampon();
       if (etat !== "propre") e.preventDefault();
     };
     window.addEventListener("beforeunload", avantFermeture);
     return () => window.removeEventListener("beforeunload", avantFermeture);
   }, [etat]);
+
 
   // ---------------------------------------------------------------- fichiers
   const insererImage = useCallback(
@@ -255,7 +339,7 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
 
   // Glisser-déposer un fichier dans la page.
   useEffect(() => {
-    const zone = scene.current;
+    const zone = centre.current;
     if (!zone) return;
     const surDepot = (e: DragEvent) => {
       const fichier = e.dataTransfer?.files?.[0];
@@ -279,15 +363,18 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
     async (quoi: "pdf" | "docx" | "md" | "calame") => {
       if (!editor) return;
       await enregistrer();
+      const stocke = (await lireDocument(doc.id)) ?? doc;
       const aJour: DocumentAtelier = {
-        ...doc,
+        ...stocke,
         titre: courant.current.titre,
         reglages: courant.current.reglages,
         contenu: JSON.parse(JSON.stringify(editor.getJSON())),
       };
       try {
-        if (quoi === "pdf") exporterPdf();
-        else if (quoi === "md") exporterMarkdown(aJour);
+        if (quoi === "pdf") {
+          toutDeplier(editor);
+          exporterPdf();
+        } else if (quoi === "md") exporterMarkdown(aJour);
         else {
           setExportEnCours(quoi);
           if (quoi === "docx") await exporterDocx(aJour);
@@ -302,54 +389,256 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
     [doc, editor, enregistrer],
   );
 
+  // ---------------------------------------------------------------- modes
+  const basculerConcentration = useCallback(() => {
+    setConcentration((avant) => {
+      const suite = !avant;
+      try {
+        if (suite && !document.fullscreenElement) void document.documentElement.requestFullscreen?.().catch(() => undefined);
+        if (!suite && document.fullscreenElement) void document.exitFullscreen?.().catch(() => undefined);
+      } catch {
+        // Le plein écran peut être refusé : le mode concentration reste utile sans lui.
+      }
+      return suite;
+    });
+  }, []);
+
+  useEffect(() => {
+    const surPleinEcran = () => {
+      if (!document.fullscreenElement) setConcentration(false);
+    };
+    document.addEventListener("fullscreenchange", surPleinEcran);
+    return () => document.removeEventListener("fullscreenchange", surPleinEcran);
+  }, []);
+
+  const basculerRelecture = useCallback(
+    (actif: boolean) => {
+      setRelecture(actif);
+      editor?.setEditable(!actif);
+      if (actif) {
+        zoomAvantRelecture.current = zoom;
+        setZoom(Math.max(zoom, 1.25));
+      } else setZoom(zoomAvantRelecture.current);
+    },
+    [editor, zoom],
+  );
+
+  const basculerDictee = useCallback(() => {
+    if (!editor) return;
+    if (dicteeRef.current) {
+      dicteeRef.current.arreter();
+      dicteeRef.current = null;
+      setDictee("arret");
+      return;
+    }
+    const d = dicter(editor, "fr-FR", setProvisoire, (erreur) => {
+      dicteeRef.current = null;
+      setDictee("arret");
+      setProvisoire("");
+      if (erreur) setMessage(erreur);
+    });
+    if (d) {
+      dicteeRef.current = d;
+      setDictee("ecoute");
+    } else setMessage("La dictée n'a pas pu démarrer : ce navigateur ne la permet pas (Chrome, Edge et Safari la permettent).");
+  }, [editor]);
+
+  useEffect(() => () => dicteeRef.current?.arreter(), []);
+
+  // L'ambiance sonore choisie reprend à l'ouverture (après le premier geste, comme l'exige le navigateur).
+  useEffect(() => {
+    if (prefs.ambiance === "aucune") return;
+    const demarrer = () => jouerAmbiance(lirePreferences().ambiance, lirePreferences().volume);
+    window.addEventListener("pointerdown", demarrer, { once: true });
+    return () => {
+      window.removeEventListener("pointerdown", demarrer);
+      arreterAmbiance();
+    };
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // Machine à écrire : la ligne en cours reste au milieu de l'écran.
+  useEffect(() => {
+    if (!editor || !prefs.machineAEcrire) return;
+    const centrer = () => {
+      const s = scene.current;
+      if (!s || !editor.isFocused) return;
+      try {
+        const coords = editor.view.coordsAtPos(editor.state.selection.head);
+        const boite = s.getBoundingClientRect();
+        const ecart = coords.top - (boite.top + boite.height / 2);
+        if (Math.abs(ecart) > 4) s.scrollTop += ecart;
+      } catch {
+        // Position non affichée : rien à centrer.
+      }
+    };
+    editor.on("update", centrer);
+    editor.on("selectionUpdate", centrer);
+    return () => {
+      editor.off("update", centrer);
+      editor.off("selectionUpdate", centrer);
+    };
+  }, [editor, prefs.machineAEcrire]);
+
+  // La page affichée, d'après le défilement.
+  const g = geometrie(reglages);
+  useEffect(() => {
+    const s = scene.current;
+    if (!s) return;
+    const suivre = () => {
+      const pas = (g.page.hauteur + ECART_PAGES) * zoom;
+      setPageCourante(Math.min(pages, Math.max(1, Math.floor((s.scrollTop + s.clientHeight / 3) / pas) + 1)));
+    };
+    suivre();
+    s.addEventListener("scroll", suivre, { passive: true });
+    return () => s.removeEventListener("scroll", suivre);
+  }, [g.page.hauteur, zoom, pages]);
+
+  const allerPage = useCallback(
+    (n: number) => {
+      const s = scene.current;
+      if (!s) return;
+      const pas = (g.page.hauteur + ECART_PAGES) * zoom;
+      s.scrollTo({ top: (n - 1) * pas, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    },
+    [g.page.hauteur, zoom],
+  );
+
+  const ajusterLargeur = useCallback(() => {
+    const s = scene.current;
+    if (!s) return;
+    const disponible = s.clientWidth - 48;
+    // Jusqu'à 30 % : sur téléphone, la page entière doit pouvoir tenir dans l'écran.
+    setZoom(Math.max(0.3, Math.min(ZOOMS[ZOOMS.length - 1], Math.round((disponible / g.page.largeur) * 100) / 100)));
+  }, [g.page.largeur]);
+
+  // Séance chronométrée : un tic par seconde, et le bilan à la fin.
+  const motsActuels = editor ? compterMots(texteDuDocument(editor.getJSON())) : doc.mots;
+  const motsRef = useRef(motsActuels);
+  useEffect(() => {
+    motsRef.current = motsActuels;
+  });
+  useEffect(() => {
+    if (!seance) return;
+    const tic = setInterval(() => {
+      const ici = Date.now();
+      setMaintenant(ici);
+      if (ici < seance.fin) return;
+      clearInterval(tic);
+      const ecrits = motsRef.current - seance.motsDebut;
+      setSeance(null);
+      carillon();
+      annoncer(`Séance de ${seance.minutes} minutes terminée : ${ecrits >= 0 ? "+" : "−"}${Math.abs(ecrits).toLocaleString("fr-FR")} mots.`);
+    }, 1000);
+    return () => clearInterval(tic);
+  }, [seance, annoncer]);
+
   // ---------------------------------------------------------------- clavier
   useEffect(() => {
     const auClavier = (e: KeyboardEvent) => {
       const commande = e.ctrlKey || e.metaKey;
-      if (commande && e.key.toLowerCase() === "k") {
+      const touche = e.key.toLowerCase();
+      if (e.key === "F1" || (commande && e.key === "/")) {
         e.preventDefault();
+        setAide(true);
+      } else if (commande && e.shiftKey && touche === "f") {
+        e.preventDefault();
+        basculerConcentration();
+      } else if (commande && e.shiftKey && touche === "c") {
+        e.preventDefault();
+        setCaracteres("formules");
+      } else if (commande && touche === "k") {
+        // La barre de commande du Calame passe avant la recherche du site (même raccourci).
+        e.preventDefault();
+        e.stopImmediatePropagation();
         setPalette((o) => !o);
-      } else if (commande && e.key.toLowerCase() === "s") {
+      } else if (commande && touche === "f") {
+        e.preventDefault();
+        const choisi = editor && !editor.state.selection.empty ? editor.state.doc.textBetween(editor.state.selection.from, editor.state.selection.to, " ").slice(0, 100) : "";
+        setRecherche((r) => ({ remplacement: r?.remplacement ?? false, requete: choisi || r?.requete || "" }));
+      } else if (commande && touche === "h") {
+        e.preventDefault();
+        setRecherche((r) => ({ remplacement: true, requete: r?.requete ?? "" }));
+      } else if (commande && touche === "s") {
         e.preventDefault();
         void enregistrer(true);
-      } else if (commande && e.key.toLowerCase() === "p") {
+      } else if (commande && touche === "p") {
         e.preventDefault();
         void exporter("pdf");
+      } else if (commande && e.altKey && editor) {
+        const chaine = editor.chain().focus();
+        if (["1", "2", "3"].includes(e.key)) {
+          e.preventDefault();
+          chaine.setNode("heading", { level: Number(e.key) + 1 }).run();
+        } else if (e.key === "0") {
+          e.preventDefault();
+          chaine.setParagraph().run();
+        } else if (touche === "v") {
+          e.preventDefault();
+          chaine.insertContent({ type: "verset", attrs: { reference: "" }, content: [{ type: "versetArabe" }, { type: "versetTraduction" }] }).run();
+        } else if (touche === "h") {
+          e.preventDefault();
+          chaine.insertContent({ type: "hadith", attrs: { recueil: "", numero: "", degre: "" }, content: [{ type: "hadithArabe" }, { type: "hadithTraduction" }] }).run();
+        } else if (touche === "n") {
+          e.preventDefault();
+          chaine.insertContent({ type: "note", attrs: { texte: "" } }).run();
+        }
       }
     };
-    window.addEventListener("keydown", auClavier);
-    return () => window.removeEventListener("keydown", auClavier);
-  }, [enregistrer, exporter]);
+    window.addEventListener("keydown", auClavier, true);
+    return () => window.removeEventListener("keydown", auClavier, true);
+  }, [enregistrer, exporter, editor, basculerConcentration]);
 
-  const allerAu = useCallback((entree: EntreeSommaire) => {
-    const cible = document.getElementById(entree.id) ?? document.querySelector(`[data-plan="${entree.id}"]`);
-    const titres = scene.current?.querySelectorAll<HTMLElement>(".tiptap h2, .tiptap h3, .tiptap h4");
-    const index = Number(entree.id.replace("section-", "")) - 1;
-    const element = cible ?? (titres && titres[index]);
-    element?.scrollIntoView({ behavior: "smooth", block: "center" });
-  }, []);
-
+  // ---------------------------------------------------------------- actions de la barre de commande
   const actions = useMemo<ActionPalette[]>(
     () => [
-      { cle: "nouveau", libelle: "Nouveau document", description: "Commencer une page blanche", groupe: "Document", faire: surNouveau },
+      { cle: "nouveau", libelle: "Nouveau document", description: "Commencer une page blanche", groupe: "Document", faire: props.surNouveau },
       { cle: "enregistrer", libelle: "Enregistrer maintenant", description: "Et garder une version datée", groupe: "Document", faire: () => void enregistrer(true) },
+      { cle: "rechercher", libelle: "Rechercher dans le document", description: "Ctrl+F", groupe: "Document", faire: () => setRecherche({ remplacement: false, requete: "" }) },
+      { cle: "remplacer", libelle: "Rechercher et remplacer", description: "Ctrl+H", groupe: "Document", faire: () => setRecherche({ remplacement: true, requete: "" }) },
+      { cle: "dupliquer", libelle: "Dupliquer ce document", description: "Une copie complète", groupe: "Document", faire: () => props.surDupliquer(doc.id) },
+      { cle: "corbeille", libelle: "Mettre ce document à la corbeille", description: "Il y reste 30 jours", groupe: "Document", faire: () => props.surCorbeille(doc.id, true) },
+      { cle: "versions", libelle: "Versions du document", description: "Voir, comparer, restaurer", groupe: "Document", faire: () => ouvrirOnglet("versions") },
+      { cle: "proprietes", libelle: "Propriétés, objectif et échéance", description: "Onglet « Document »", groupe: "Document", faire: () => ouvrirOnglet("document") },
       { cle: "pdf", libelle: "Imprimer ou enregistrer en PDF", description: "La mise en page de l'écran, à l'identique", groupe: "Sortie", faire: () => void exporter("pdf") },
       { cle: "docx", libelle: "Exporter en Word", description: "Un vrai fichier .docx", groupe: "Sortie", faire: () => void exporter("docx") },
       { cle: "md", libelle: "Exporter en Markdown", description: "Texte structuré, pour un autre outil", groupe: "Sortie", faire: () => void exporter("md") },
       { cle: "paquet", libelle: "Sauvegarde complète", description: "Texte, mise en page et images dans un seul fichier", groupe: "Sortie", faire: () => void exporter("calame") },
+      { cle: "caracteres", libelle: "Caractères et formules de respect", description: "ﷺ, translittération, symboles (Ctrl+Maj+C)", groupe: "Insérer", faire: () => setCaracteres("formules") },
+      { cle: "symboles", libelle: "Symboles", description: "Chercher un caractère par son nom", groupe: "Insérer", faire: () => setCaracteres("symboles") },
+      { cle: "relire", libelle: "Relire", description: "Mesures, répétitions, lecture à voix haute", groupe: "Relire", faire: () => ouvrirOnglet("relire") },
+      { cle: "relecture", libelle: relecture ? "Quitter le mode relecture" : "Mode relecture", description: "Texte en lecture seule, plus grand", groupe: "Relire", faire: () => basculerRelecture(!relecture) },
       { cle: "cote", libelle: "Afficher ou cacher le plan", description: "La colonne de gauche", groupe: "Affichage", faire: () => setCoteOuvert((o) => !o) },
       { cle: "inspecteur", libelle: "Afficher ou cacher l'inspecteur", description: "La colonne de droite", groupe: "Affichage", faire: () => setInspecteurOuvert((o) => !o) },
       { cle: "sombre", libelle: "Papier sombre", description: "Écrire la nuit sans être ébloui", groupe: "Affichage", faire: () => setReglages((r) => ({ ...r, papierSombre: !r.papierSombre })) },
-      ...plan.map((entree) => ({
-        cle: `plan-${entree.id}`,
-        libelle: entree.texte || "Titre sans texte",
-        description: `Aller à cette partie (niveau ${entree.niveau - 1})`,
-        groupe: "Plan",
-        faire: () => allerAu(entree),
-      })),
+      { cle: "concentration", libelle: "Mode concentration", description: "Plein écran, seul le paragraphe en cours (Ctrl+Maj+F)", groupe: "Affichage", faire: basculerConcentration },
+      { cle: "ajuster", libelle: "Ajuster la page à la largeur", description: "Agrandissement à l'écran", groupe: "Affichage", faire: ajusterLargeur },
+      { cle: "taille-reelle", libelle: "Taille réelle (100 %)", description: "Agrandissement à l'écran", groupe: "Affichage", faire: () => setZoom(1) },
+      { cle: "reglages-atelier", libelle: "Réglages de l'atelier", description: "Thème, taille des menus, police pour dyslexiques", groupe: "Affichage", faire: () => setReglagesAtelier(true) },
+      { cle: "bilan", libelle: "Bilan d'écriture", description: "Objectif du jour, série, calendrier", groupe: "Écriture", faire: () => ouvrirOnglet("bilan") },
+      { cle: "seance", libelle: "Séance de 25 minutes", description: "Un compte à rebours, et les mots écrits", groupe: "Écriture", faire: () => setSeance({ fin: Date.now() + 25 * 60_000, motsDebut: motsActuels, minutes: 25 }) },
+      { cle: "aide", libelle: "Raccourcis clavier", description: "F1", groupe: "Aide", faire: () => setAide(true) },
+      { cle: "bienvenue", libelle: "Document de bienvenue", description: "Tout ce que sait faire le Calame", groupe: "Aide", faire: surBienvenue },
+      ...(palette && editor
+        ? planDuDocument(editor.state.doc).map((entree) => ({
+            cle: `plan-${entree.pos}`,
+            libelle: entree.texte || "Titre sans texte",
+            description: `Aller à cette partie (niveau ${entree.niveau - 1})`,
+            groupe: "Plan",
+            faire: () => allerAuTitre(editor, entree.pos),
+          }))
+        : []),
+      ...documents
+        .filter((d) => d.id !== doc.id && !extrasDe(d).corbeille)
+        .slice(0, 200)
+        .map((d) => ({ cle: `doc-${d.id}`, libelle: d.titre || "Sans titre", description: `${d.mots.toLocaleString("fr-FR")} mots`, groupe: "Ouvrir", faire: () => props.surOuvrir(d.id) })),
     ],
-    [allerAu, enregistrer, exporter, plan, surNouveau],
+    [enregistrer, exporter, documents, doc.id, relecture, basculerRelecture, basculerConcentration, ajusterLargeur, motsActuels, surBienvenue, props, palette, editor],
   );
+
+  function ouvrirOnglet(cle: string) {
+    setInspecteurOuvert(true);
+    setOngletInspecteur(cle);
+  }
 
   const papier = tailleDuPapier(reglages.format, reglages.orientation);
   const stats = useMemo(() => {
@@ -358,13 +647,84 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
     return { mots, signes: texte.length, pages, minutes: Math.max(1, Math.round(mots / 220)) };
   }, [editor, pages, etat]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  const motsSelection = useMemo(() => {
+    if (!editor || editor.state.selection.empty) return null;
+    const { from, to } = editor.state.selection;
+    return compterMots(editor.state.doc.textBetween(from, to, " ", " "));
+  }, [editor, etat, maintenant]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const modifierReglages = (modif: Partial<ReglagesPage>) => {
     setReglages((r) => ({ ...r, ...modif }));
     marquerModifie();
   };
 
+  const modifierDocument = (modif: Partial<DocumentAtelier>) => {
+    props.surModifier(doc.id, modif);
+    setExtras((x) => ({ ...x, ...modif }) as typeof x);
+  };
+
+  const restaurer = async (v: VersionAtelier) => {
+    if (!editor) return;
+    await enregistrer(true, "Avant restauration");
+    editor.commands.setContent(v.contenu as object);
+    setTitre(v.titre);
+    courant.current = { ...courant.current, titre: v.titre };
+    await enregistrer(true);
+  };
+
+  const supplementaires: OngletSupplementaire[] = editor
+    ? [
+        {
+          cle: "document",
+          libelle: "Document",
+          Icone: FileCog,
+          contenu: (
+            <PanneauDocument
+              doc={{ ...doc, ...extras, dossier: documents.find((d) => d.id === doc.id)?.dossier ?? doc.dossier }}
+              mots={stats.mots}
+              documents={documents}
+              surModifier={modifierDocument}
+              surDupliquer={() => props.surDupliquer(doc.id)}
+              surCorbeille={() => props.surCorbeille(doc.id, true)}
+            />
+          ),
+        },
+        {
+          cle: "relire",
+          libelle: "Relire",
+          Icone: SpellCheck2,
+          contenu: <PanneauRelire editor={editor} stats={stats} relecture={relecture} surRelecture={basculerRelecture} surChercher={(mot) => setRecherche({ remplacement: false, requete: mot })} />,
+        },
+        {
+          cle: "versions",
+          libelle: "Versions",
+          Icone: History,
+          contenu: <PanneauVersions editor={editor} documentId={doc.id} reglages={reglages} surVersion={(nom) => enregistrer(true, nom)} surRestaurer={restaurer} />,
+        },
+        {
+          cle: "bilan",
+          libelle: "Bilan d'écriture",
+          Icone: BarChart3,
+          contenu: <PanneauBilan seanceEnCours={seance !== null} surSeance={(minutes) => setSeance({ fin: Date.now() + minutes * 60_000, motsDebut: motsActuels, minutes })} />,
+        },
+      ]
+    : [];
+
+  const delai = extras.echeance ? delaiEcheance(extras.echeance) : null;
+  const restant = seance ? Math.max(0, seance.fin - maintenant) : 0;
+  const docCote = vueCote ? (vueCote === doc.id ? null : documents.find((d) => d.id === vueCote)) : null;
+
   return (
-    <div className="calame" data-cote={coteOuvert ? "" : undefined} data-inspecteur={inspecteurOuvert ? "" : undefined}>
+    <div
+      className="calame"
+      data-cote={coteOuvert && !concentration ? "" : undefined}
+      data-inspecteur={inspecteurOuvert && !concentration ? "" : undefined}
+      data-concentration={concentration ? "" : undefined}
+      data-relecture={relecture ? "" : undefined}
+      data-theme-atelier={prefs.theme !== "auto" ? prefs.theme : undefined}
+      data-dyslexie={prefs.dyslexie ? "" : undefined}
+      style={{ "--calame-echelle": prefs.tailleInterface } as React.CSSProperties}
+    >
       {/* La géométrie du papier est donnée à l'imprimante : le PDF sort exactement comme l'écran. */}
       <style>{`@page { size: ${papier.largeur}mm ${papier.hauteur}mm; margin: ${reglages.marges.haut}mm ${reglages.marges.droite}mm ${reglages.marges.bas}mm ${reglages.marges.gauche}mm; }`}</style>
 
@@ -385,6 +745,26 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
           placeholder="Titre du document"
         />
 
+        {extras.objectifMots > 0 && (
+          <span className="calame-objectif" title={`Objectif : ${extras.objectifMots.toLocaleString("fr-FR")} mots`}>
+            <span className="calame-objectif-jauge" style={{ width: `${Math.min(100, (stats.mots / extras.objectifMots) * 100)}%` }} />
+            <span className="calame-objectif-texte">{Math.min(100, Math.round((stats.mots / extras.objectifMots) * 100))} %</span>
+          </span>
+        )}
+        {delai && (
+          <span className="calame-echeance" data-alerte={delai.jours <= 1 ? "" : undefined} title={`Échéance : ${extras.echeance}`}>
+            <CalendarClock className="size-4" aria-hidden="true" />
+            {delai.jours >= 0 ? `J−${delai.jours}` : `+${-delai.jours} j`}
+          </span>
+        )}
+        {seance && (
+          <button type="button" className="calame-seance" onClick={() => setSeance(null)} title="Séance en cours (cliquer pour arrêter)">
+            <Timer className="size-4" aria-hidden="true" />
+            {Math.floor(restant / 60000)}:{String(Math.floor((restant % 60000) / 1000)).padStart(2, "0")}
+            <span className="calame-seance-mots">+{Math.max(0, motsActuels - seance.motsDebut)}</span>
+          </button>
+        )}
+
         <span className="calame-etat" aria-live="polite">
           {etat === "enregistrement" ? (
             <>
@@ -397,6 +777,14 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
           )}
         </span>
 
+        <button type="button" className="calame-icone calame-icone-large" onClick={() => setRecherche((r) => (r ? null : { remplacement: false, requete: "" }))} aria-pressed={recherche !== null} title="Rechercher (Ctrl+F)">
+          <Search className="size-5" aria-hidden="true" />
+          <span className="sr-only">Rechercher dans le document</span>
+        </button>
+        <button type="button" className="calame-icone calame-icone-large" onClick={() => setCaracteres("formules")} title="Caractères et formules (Ctrl+Maj+C)">
+          <Omega className="size-5" aria-hidden="true" />
+          <span className="sr-only">Caractères et formules de respect</span>
+        </button>
         <button type="button" className="calame-icone" onClick={() => setPalette(true)} title="Barre de commande (Ctrl+K)">
           <Command className="size-5" aria-hidden="true" />
           <span className="sr-only">Ouvrir la barre de commande</span>
@@ -404,6 +792,14 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
         <button type="button" className="calame-icone" onClick={() => void exporter("pdf")} title="Imprimer ou enregistrer en PDF (Ctrl+P)">
           <Printer className="size-5" aria-hidden="true" />
           <span className="sr-only">Imprimer</span>
+        </button>
+        <button type="button" className="calame-icone calame-icone-large" onClick={() => setReglagesAtelier(true)} title="Réglages de l'atelier">
+          <Settings2 className="size-5" aria-hidden="true" />
+          <span className="sr-only">Réglages de l&apos;atelier</span>
+        </button>
+        <button type="button" className="calame-icone calame-icone-large" onClick={() => setAide(true)} title="Raccourcis (F1)">
+          <HelpCircle className="size-5" aria-hidden="true" />
+          <span className="sr-only">Aide</span>
         </button>
         <button type="button" className="calame-icone" onClick={() => setInspecteurOuvert((o) => !o)} aria-pressed={inspecteurOuvert} title="Mise en forme">
           <PanelRight className="size-5" aria-hidden="true" />
@@ -417,39 +813,138 @@ export function Atelier({ doc, documents, surOuvrir, surNouveau, surSupprimer, s
         )}
       </header>
 
-      {coteOuvert && (
+      {coteOuvert && !concentration && (
         <BarreLaterale
           documents={documents}
           actif={doc.id}
-          plan={plan}
-          surOuvrir={surOuvrir}
-          surNouveau={surNouveau}
-          surSupprimer={surSupprimer}
-          surImporter={surImporter}
-          surAllerAu={allerAu}
+          editor={editor}
+          pages={apercuPages}
+          pageCourante={pageCourante}
+          surAllerPage={allerPage}
+          surOuvrir={props.surOuvrir}
+          surNouveau={props.surNouveau}
+          surImporter={props.surImporter}
+          surModifier={props.surModifier}
+          surDupliquer={props.surDupliquer}
+          surCorbeille={props.surCorbeille}
+          surSupprimerDefinitivement={props.surSupprimerDefinitivement}
+          surOuvrirACote={(id) => setVueCote(id)}
         />
       )}
 
-      <main className="calame-centre" ref={scene}>
-        <div className="calame-outils sans-impression">
-          {editor && <BarreOutils editor={editor} groupesEcartes={GROUPES_ECARTES_ATELIER} commandesSupplementaires={[COMMANDE_TABLEAU]} />}
-        </div>
+      <main className="calame-centre" ref={centre}>
+        {onglets.length > 1 && (
+          <nav className="calame-onglets-docs sans-impression" aria-label="Documents ouverts">
+            {onglets.map((o) => (
+              <span key={o.id} className="calame-onglet-doc" aria-current={o.id === doc.id ? "page" : undefined}>
+                <button type="button" onClick={() => o.id !== doc.id && props.surOuvrir(o.id)} title={o.titre}>
+                  {o.titre || "Sans titre"}
+                </button>
+                <button type="button" className="calame-onglet-fermer" onClick={() => surFermerOnglet(o.id)} aria-label={`Fermer l'onglet ${o.titre}`}>
+                  <X className="size-3.5" aria-hidden="true" />
+                </button>
+              </span>
+            ))}
+          </nav>
+        )}
+        {!concentration && (
+          <div className="calame-outils sans-impression">
+            {editor && <BarreOutils editor={editor} groupesEcartes={GROUPES_ECARTES_ATELIER} commandesSupplementaires={[COMMANDE_TABLEAU]} />}
+          </div>
+        )}
         {message && (
           <p className="message message-erreur sans-impression" role="alert" onClick={() => setMessage("")}>
             {message}
           </p>
         )}
-        <h1 className="calame-titre-impression">{titre}</h1>
-        <Papier editor={editor} reglages={reglages} titre={titre} surPages={setPages} />
-        {editor && <OutilsBloc editor={editor} conteneur={scene} />}
+        <div className="calame-plateau" data-cote-a-cote={vueCote ? "" : undefined}>
+          {recherche && editor && <BarreRecherche key={recherche.requete} editor={editor} avecRemplacement={recherche.remplacement} requeteInitiale={recherche.requete} surFermer={() => setRecherche(null)} />}
+          <h1 className="calame-titre-impression">{titre}</h1>
+          <Papier editor={editor} reglages={reglages} titre={titre} surPages={setPages} zoom={zoom} surApercu={setApercuPages} refScene={scene} />
+          {vueCote && (
+            <aside className="calame-vue-cote sans-impression" aria-label="Document ouvert à côté">
+              <div className="calame-vue-cote-tete">
+                <select className="champ" value={vueCote} onChange={(e) => setVueCote(e.target.value)} aria-label="Document affiché à côté">
+                  <option value={doc.id}>Ce document (dernier enregistrement)</option>
+                  {documents
+                    .filter((d) => d.id !== doc.id && !extrasDe(d).corbeille)
+                    .map((d) => (
+                      <option key={d.id} value={d.id}>
+                        {d.titre || "Sans titre"}
+                      </option>
+                    ))}
+                </select>
+                <button type="button" className="calame-icone" onClick={() => setVueCote(null)} aria-label="Fermer la vue côte à côte">
+                  <X className="size-4" aria-hidden="true" />
+                </button>
+              </div>
+              <div className="calame-vue-cote-corps">
+                <VueLecture contenu={docCote ? docCote.contenu : (documents.find((d) => d.id === doc.id)?.contenu ?? doc.contenu)} reglages={docCote ? docCote.reglages : reglages} />
+              </div>
+            </aside>
+          )}
+        </div>
+        {editor && <OutilsBloc editor={editor} conteneur={centre} />}
         {editor && <MenuBulle editor={editor} />}
         {editor && <PanneauBloc editor={editor} />}
+        {editor && (
+          <BarreEtat
+            page={pageCourante}
+            pages={pages}
+            mots={stats.mots}
+            motsSelection={motsSelection}
+            zoom={zoom}
+            surZoom={setZoom}
+            surAjuster={ajusterLargeur}
+            surAllerPage={allerPage}
+            concentration={concentration}
+            surConcentration={basculerConcentration}
+            vueCote={vueCote !== null}
+            surVueCote={() => setVueCote((v) => (v ? null : doc.id))}
+            dictee={dicteeDisponible() ? dictee : "indisponible"}
+            surDictee={basculerDictee}
+            provisoire={provisoire}
+          />
+        )}
+        {editor && <BarreMobile editor={editor} surRechercher={() => setRecherche({ remplacement: false, requete: "" })} />}
       </main>
 
-      {inspecteurOuvert && <Inspecteur reglages={reglages} surReglages={modifierReglages} stats={stats} surExport={(q) => void exporter(q)} enCours={exportEnCours} />}
+      {inspecteurOuvert && !concentration && (
+        <Inspecteur
+          reglages={reglages}
+          surReglages={modifierReglages}
+          stats={stats}
+          surExport={(q) => void exporter(q)}
+          enCours={exportEnCours}
+          supplementaires={supplementaires}
+          onglet={ongletInspecteur}
+          surOnglet={setOngletInspecteur}
+        />
+      )}
 
       <ListeSlash />
       {palette && <PaletteCommandes editor={editor} actions={actions} surFermer={() => setPalette(false)} />}
+      {caracteres && editor && <Caracteres editor={editor} onglet={caracteres} surOnglet={setCaracteres} surFermer={() => setCaracteres(null)} />}
+      {aide && (
+        <Aide
+          surFermer={() => setAide(false)}
+          surBienvenue={() => {
+            setAide(false);
+            surBienvenue();
+          }}
+        />
+      )}
+      {reglagesAtelier && <ReglagesAtelier surFermer={() => setReglagesAtelier(false)} />}
+
+      {annonces.length > 0 && (
+        <div className="calame-annonces sans-impression" role="status" aria-live="polite">
+          {annonces.map((a) => (
+            <p key={a.id} className="calame-annonce">
+              {a.texte}
+            </p>
+          ))}
+        </div>
+      )}
 
       <input ref={choixImage} type="file" accept="image/*" className="hidden" onChange={(e) => { void insererFichier(e.target.files?.[0], "image"); e.target.value = ""; }} />
       <input ref={choixDocument} type="file" className="hidden" onChange={(e) => { void insererFichier(e.target.files?.[0], "document"); e.target.value = ""; }} />

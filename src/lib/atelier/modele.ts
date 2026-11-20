@@ -72,12 +72,20 @@ export function geometrie(reglages: Pick<ReglagesPage, "format" | "orientation" 
 // Jetons de style
 // ---------------------------------------------------------------------------
 
+/*
+ * Chaque pile se termine par Amiri avant la famille générique : un ﷺ, un ﷻ ou un mot arabe
+ * glissé dans un paragraphe français s'affiche toujours avec une vraie police arabe.
+ */
 export const POLICES = [
-  { cle: "serif", libelle: "Garamond (serif)", pile: '"EB Garamond", Garamond, "Times New Roman", serif' },
-  { cle: "sans", libelle: "Inter (sans serif)", pile: '"Instrument Sans Variable", "Helvetica Neue", Arial, sans-serif' },
-  { cle: "display", libelle: "Bricolage (titres)", pile: '"Bricolage Grotesque Variable", Georgia, serif' },
-  { cle: "mono", libelle: "Monospace", pile: '"JetBrains Mono", "SFMono-Regular", Consolas, monospace' },
-  { cle: "arabe", libelle: "Amiri (arabe)", pile: '"Amiri", "Scheherazade New", serif' },
+  { cle: "serif", libelle: "Garamond (serif)", pile: '"EB Garamond", Garamond, "Times New Roman", "Amiri", serif', word: "Garamond" },
+  { cle: "sans", libelle: "Inter (sans serif)", pile: '"Instrument Sans Variable", "Helvetica Neue", Arial, "Amiri", sans-serif', word: "Arial" },
+  { cle: "display", libelle: "Bricolage (titres)", pile: '"Bricolage Grotesque Variable", Georgia, "Amiri", serif', word: "Georgia" },
+  { cle: "mono", libelle: "Monospace", pile: '"JetBrains Mono", "SFMono-Regular", Consolas, "Amiri", monospace', word: "Consolas" },
+  { cle: "arabe", libelle: "Amiri (arabe)", pile: '"Amiri", "Scheherazade New", serif', word: "Amiri" },
+  { cle: "literata", libelle: "Literata (livre)", pile: '"Literata Variable", Literata, Georgia, "Amiri", serif', word: "Literata" },
+  { cle: "crimson", libelle: "Crimson Pro (classique)", pile: '"Crimson Pro", Garamond, Georgia, "Amiri", serif', word: "Crimson Pro" },
+  { cle: "naskh", libelle: "Noto Naskh (arabe)", pile: '"Noto Naskh Arabic", "Amiri", serif', word: "Noto Naskh Arabic" },
+  { cle: "scheherazade", libelle: "Scheherazade (arabe)", pile: '"Scheherazade New", "Amiri", serif', word: "Scheherazade New" },
 ] as const;
 export type Police = (typeof POLICES)[number]["cle"];
 
@@ -185,7 +193,7 @@ export type DocumentAtelier = {
   /** Compteurs tenus à jour à l'enregistrement, pour la liste. */
   mots: number;
   signes: number;
-};
+} & Partial<ExtrasDocument>;
 
 export type VersionAtelier = {
   id: string;
@@ -195,6 +203,8 @@ export type VersionAtelier = {
   deltaMots: number;
   contenu: unknown;
   titre: string;
+  /** Nom donné par l'auteur (« Envoyée au jury ») : une version nommée n'est jamais fondue avec les autres. */
+  nom?: string;
 };
 
 export const LIMITES_ATELIER = {
@@ -330,4 +340,71 @@ export function variablesDeStyle(reglages: ReglagesPage): Record<string, string>
     vars[`${p}-apres`] = `${jeton.apres}pt`;
   }
   return vars;
+}
+
+// ---------------------------------------------------------------------------
+// Rangement, propriétés et objectifs d'un document (tous facultatifs : un
+// document d'une version plus ancienne reste valable tel quel).
+// ---------------------------------------------------------------------------
+
+export const STATUTS_DOCUMENT = [
+  { cle: "brouillon", libelle: "Brouillon" },
+  { cle: "relecture", libelle: "En relecture" },
+  { cle: "termine", libelle: "Terminé" },
+] as const;
+export type StatutDocument = (typeof STATUTS_DOCUMENT)[number]["cle"];
+
+export type ProprietesDocument = { auteur: string; sujet: string; motsCles: string; statut: StatutDocument };
+
+export const PROPRIETES_VIDES: ProprietesDocument = { auteur: "", sujet: "", motsCles: "", statut: "brouillon" };
+
+/** Ce qu'un document peut porter en plus de son texte, et que la liste et l'inspecteur exploitent. */
+export type ExtrasDocument = {
+  /** Noms d'étiquettes (leur couleur vit dans les préférences). */
+  etiquettes: string[];
+  epingle: boolean;
+  archive: boolean;
+  /** Date de mise à la corbeille ; null : document actif. */
+  corbeille: string | null;
+  proprietes: ProprietesDocument;
+  /** Nombre de mots visé (0 : aucun objectif). */
+  objectifMots: number;
+  /** Échéance au format AAAA-MM-JJ, ou null. */
+  echeance: string | null;
+};
+
+export const LIMITES_EXTRAS = { etiquettes: 20, etiquette: 40, propriete: 200, motsCles: 400, objectifMots: 10_000_000, corbeilleJours: 30 } as const;
+
+const JOUR_ISO = /^\d{4}-\d{2}-\d{2}$/;
+
+/** Remet d'aplomb les champs facultatifs d'un document (fichier importé, appareil plus ancien). */
+export function nettoyerExtras(brut: unknown): ExtrasDocument {
+  const o = (brut ?? {}) as Record<string, unknown>;
+  const p = (o.proprietes ?? {}) as Record<string, unknown>;
+  const texte = (v: unknown, max: number) => (typeof v === "string" ? v.slice(0, max) : "");
+  const etiquettes = Array.isArray(o.etiquettes)
+    ? [...new Set(o.etiquettes.filter((e): e is string => typeof e === "string").map((e) => e.trim().slice(0, LIMITES_EXTRAS.etiquette)).filter(Boolean))].slice(0, LIMITES_EXTRAS.etiquettes)
+    : [];
+  const corbeille = typeof o.corbeille === "string" && Number.isFinite(Date.parse(o.corbeille)) ? o.corbeille : null;
+  const statut = STATUTS_DOCUMENT.some((s) => s.cle === p.statut) ? (p.statut as StatutDocument) : "brouillon";
+  return {
+    etiquettes,
+    epingle: o.epingle === true,
+    archive: o.archive === true,
+    corbeille,
+    proprietes: { auteur: texte(p.auteur, LIMITES_EXTRAS.propriete), sujet: texte(p.sujet, LIMITES_EXTRAS.propriete), motsCles: texte(p.motsCles, LIMITES_EXTRAS.motsCles), statut },
+    objectifMots: nombre(o.objectifMots, 0, LIMITES_EXTRAS.objectifMots, 0),
+    echeance: typeof o.echeance === "string" && JOUR_ISO.test(o.echeance) ? o.echeance : null,
+  };
+}
+
+/** Les champs facultatifs d'un document, valeurs par défaut comprises. */
+export function extrasDe(doc: DocumentAtelier): ExtrasDocument {
+  return nettoyerExtras(doc);
+}
+
+/** Un document à la corbeille depuis plus de 30 jours peut être effacé pour de bon. */
+export function corbeilleExpiree(doc: Pick<ExtrasDocument, "corbeille">, maintenant = Date.now()): boolean {
+  if (!doc.corbeille) return false;
+  return maintenant - Date.parse(doc.corbeille) > LIMITES_EXTRAS.corbeilleJours * 86_400_000;
 }

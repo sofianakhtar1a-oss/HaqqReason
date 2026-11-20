@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Download, FileDown, FileText, Hash, Palette, Ruler, Sparkles, Type } from "lucide-react";
+import { Download, FileDown, FileText, Hash, Palette, Ruler, Sparkles, Type, type LucideIcon } from "lucide-react";
 import {
   BORNES_JETON,
   FORMATS,
@@ -16,12 +16,25 @@ import {
   type Styles,
 } from "@/lib/atelier/modele";
 
+export type OngletSupplementaire = { cle: string; libelle: string; Icone: LucideIcon; contenu: React.ReactNode };
+
 type Props = {
   reglages: ReglagesPage;
   surReglages: (modif: Partial<ReglagesPage>) => void;
   stats: { mots: number; signes: number; pages: number; minutes: number };
   surExport: (quoi: "pdf" | "docx" | "md" | "calame") => void;
   enCours: string;
+  /** Onglets ajoutés par l'atelier (document, relecture, versions, bilan…). */
+  supplementaires?: OngletSupplementaire[];
+  /** Onglet ouvert, quand l'atelier le pilote (barre de commande, raccourcis). */
+  onglet?: string;
+  surOnglet?: (cle: string) => void;
+  /** Ce qui s'ajoute en bas de l'onglet « Sortie » (autres formats, partage…). */
+  sortieEnPlus?: React.ReactNode;
+  /** Ce qui s'ajoute en bas de l'onglet « Page » (mise en page avancée). */
+  pageEnPlus?: React.ReactNode;
+  /** Ce qui s'ajoute en bas de l'onglet « Styles » (jeux de styles, styles à soi). */
+  stylesEnPlus?: React.ReactNode;
 };
 
 const ONGLETS = [
@@ -125,23 +138,32 @@ function ReglageJeton({ nom, jeton, surChangement }: { nom: keyof Styles; jeton:
   );
 }
 
-export function Inspecteur({ reglages, surReglages, stats, surExport, enCours }: Props) {
-  const [onglet, setOnglet] = useState<(typeof ONGLETS)[number]["cle"]>("page");
+export function Inspecteur({ reglages, surReglages, stats, surExport, enCours, supplementaires = [], onglet: ongletPilote, surOnglet, sortieEnPlus, pageEnPlus, stylesEnPlus }: Props) {
+  const [ongletLocal, setOngletLocal] = useState<string>("page");
+  const onglet = ongletPilote ?? ongletLocal;
+  const setOnglet = (cle: string) => {
+    setOngletLocal(cle);
+    surOnglet?.(cle);
+  };
+  const tous = [...ONGLETS.map((o) => ({ cle: o.cle as string, libelle: o.libelle, Icone: o.Icone as LucideIcon })), ...supplementaires.map(({ cle, libelle, Icone }) => ({ cle, libelle, Icone }))];
+  const supplementaire = supplementaires.find((o) => o.cle === onglet);
   const modifierStyle = (nom: keyof Styles, modif: Partial<Jeton>) =>
     surReglages({ styles: { ...reglages.styles, [nom]: { ...reglages.styles[nom], ...modif } } });
 
   return (
     <aside className="calame-inspecteur" aria-label="Mise en forme et sortie">
-      <div className="calame-onglets" role="tablist">
-        {ONGLETS.map(({ cle, libelle, Icone }) => (
-          <button key={cle} type="button" role="tab" aria-selected={onglet === cle} className="calame-onglet" onClick={() => setOnglet(cle)}>
+      <div className="calame-onglets calame-onglets-icones" role="tablist" aria-label="Panneaux de l'inspecteur">
+        {tous.map(({ cle, libelle, Icone }) => (
+          <button key={cle} type="button" role="tab" aria-selected={onglet === cle} className="calame-onglet" onClick={() => setOnglet(cle)} title={libelle}>
             <Icone className="size-4" aria-hidden="true" />
-            {libelle}
+            <span className={tous.length > 3 ? "sr-only" : undefined}>{libelle}</span>
           </button>
         ))}
       </div>
+      {tous.length > 3 && <p className="calame-inspecteur-titre">{tous.find((o) => o.cle === onglet)?.libelle}</p>}
 
       <div className="calame-inspecteur-corps">
+        {supplementaire?.contenu}
         {onglet === "page" && (
           <>
             <label className="inspecteur-reglage">
@@ -214,6 +236,7 @@ export function Inspecteur({ reglages, surReglages, stats, surExport, enCours }:
                 <span>{libelle}</span>
               </label>
             ))}
+            {pageEnPlus}
           </>
         )}
 
@@ -230,6 +253,7 @@ export function Inspecteur({ reglages, surReglages, stats, surExport, enCours }:
               <Sparkles className="size-4" aria-hidden="true" />
               Revenir aux styles d&apos;origine
             </button>
+            {stylesEnPlus}
           </>
         )}
 
@@ -274,6 +298,7 @@ export function Inspecteur({ reglages, surReglages, stats, surExport, enCours }:
               La sauvegarde complète contient le texte, la mise en page et les images : un fichier à garder ou à transmettre à quelqu&apos;un. Avec ton
               compte, tes documents te suivent déjà d&apos;un appareil à l&apos;autre.
             </p>
+            {sortieEnPlus}
           </>
         )}
       </div>

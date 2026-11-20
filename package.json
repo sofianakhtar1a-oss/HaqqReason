@@ -21,6 +21,7 @@
     "test:compte": "tsx --conditions=react-server tests/test-compte.mts",
     "test:acces": "tsx tests/test-acces.mts",
     "test:monde": "tsx tests/test-monde.mts",
+    "test:calame": "tsx tests/test-calame.mts",
     "captures:monde": "node scripts/monde/captures.mjs"
   },
   "dependencies": {
@@ -33,7 +34,11 @@
     "@fontsource-variable/literata": "^5.3.0",
     "@fontsource-variable/noto-sans-arabic": "^5.3.0",
     "@fontsource/amiri": "^5.3.0",
+    "@fontsource/crimson-pro": "^5.3.0",
+    "@fontsource/eb-garamond": "^5.3.0",
+    "@fontsource/noto-naskh-arabic": "^5.3.0",
     "@fontsource/opendyslexic": "^5.3.0",
+    "@fontsource/scheherazade-new": "^5.3.0",
     "@mediabunny/flac-encoder": "^1.66.0",
     "@mediabunny/mp3-encoder": "^1.66.0",
     "@supabase/supabase-js": "^2.119.0",

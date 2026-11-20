@@ -18,7 +18,7 @@
 
 import { compteLocal, tiroir } from "@/lib/client/compte";
 import { noter } from "@/lib/client/synchro/journal";
-import { documentVide, nettoyerReglages, type DocumentAtelier, type VersionAtelier, LIMITES_ATELIER } from "./modele";
+import { corbeilleExpiree, documentVide, nettoyerExtras, nettoyerReglages, type DocumentAtelier, type VersionAtelier, LIMITES_ATELIER } from "./modele";
 
 const BASE = "haqqreason-calame";
 const VERSION_BASE = 1;
@@ -90,6 +90,7 @@ function remettreDAplomb(brut: unknown): DocumentAtelier {
     contenu: o.contenu ?? vide.contenu,
     mots: Number(o.mots ?? 0),
     signes: Number(o.signes ?? 0),
+    ...nettoyerExtras(o),
   };
 }
 
@@ -135,12 +136,86 @@ export async function listerVersions(documentId: string): Promise<VersionAtelier
   return tout.sort((a, b) => b.quand.localeCompare(a.quand));
 }
 
-export async function ajouterVersion(version: Omit<VersionAtelier, "id">): Promise<void> {
-  await enPromesse((await magasin(VERSIONS, "readwrite")).put({ ...version, id: nouvelIdentifiant() }));
-  const toutes = await listerVersions(version.documentId);
-  for (const vieille of toutes.slice(LIMITES_ATELIER.versions)) {
+export async function ajouterVersion(version: Omit<VersionAtelier, "id">): Promise<string> {
+  const id = nouvelIdentifiant();
+  await enPromesse((await magasin(VERSIONS, "readwrite")).put({ ...version, id }));
+  // Les versions nommées ne comptent pas dans la limite : elles ne s'effacent jamais d'elles-mêmes.
+  const ordinaires = (await listerVersions(version.documentId)).filter((v) => !v.nom);
+  for (const vieille of ordinaires.slice(LIMITES_ATELIER.versions)) {
     await enPromesse((await magasin(VERSIONS, "readwrite")).delete(vieille.id));
   }
+  return id;
+}
+
+export async function lireVersion(id: string): Promise<VersionAtelier | null> {
+  return ((await enPromesse((await magasin(VERSIONS, "readonly")).get(id))) as VersionAtelier | undefined) ?? null;
+}
+
+/** Donne un nom à une version (ou le retire, avec un nom vide). */
+export async function nommerVersion(id: string, nom: string): Promise<void> {
+  const v = await lireVersion(id);
+  if (!v) return;
+  const propre = nom.trim().slice(0, 80);
+  const aJour: VersionAtelier = { ...v };
+  if (propre) aJour.nom = propre;
+  else delete aJour.nom;
+  await enPromesse((await magasin(VERSIONS, "readwrite")).put(aJour));
+}
+
+export async function supprimerVersion(id: string): Promise<void> {
+  await enPromesse((await magasin(VERSIONS, "readwrite")).delete(id));
+}
+
+// ---------------------------------------------------------------------------
+// Corbeille, archives, copies
+// ---------------------------------------------------------------------------
+
+/** Met un document à la corbeille (il y reste 30 jours) ou l'en sort. */
+export async function mettreALaCorbeille(id: string, dedans = true): Promise<DocumentAtelier | null> {
+  const doc = await lireDocument(id);
+  if (!doc) return null;
+  const aJour: DocumentAtelier = { ...doc, corbeille: dedans ? new Date().toISOString() : null };
+  await ecrireDocument(aJour);
+  return aJour;
+}
+
+/** Efface pour de bon les documents restés plus de 30 jours à la corbeille. */
+export async function viderCorbeilleExpiree(): Promise<number> {
+  let effaces = 0;
+  for (const doc of await listerDocuments()) {
+    if (!corbeilleExpiree({ corbeille: doc.corbeille ?? null })) continue;
+    await supprimerDocument(doc.id);
+    effaces++;
+  }
+  return effaces;
+}
+
+/** Une copie complète du document, avec un nouveau titre ; les images restent partagées. */
+export async function dupliquerDocument(id: string, suffixe = " (copie)"): Promise<DocumentAtelier | null> {
+  const doc = await lireDocument(id);
+  if (!doc) return null;
+  const maintenant = new Date().toISOString();
+  const copie: DocumentAtelier = {
+    ...doc,
+    id: nouvelIdentifiant(),
+    titre: `${doc.titre}${suffixe}`.slice(0, LIMITES_ATELIER.titre),
+    cree: maintenant,
+    modifie: maintenant,
+    epingle: false,
+    corbeille: null,
+    archive: false,
+  };
+  await ecrireDocument(copie);
+  return copie;
+}
+
+/** Modifie quelques champs d'un document sans toucher à son texte (rangement, propriétés). */
+export async function modifierDocument(id: string, modif: Partial<DocumentAtelier>): Promise<DocumentAtelier | null> {
+  const doc = await lireDocument(id);
+  if (!doc) return null;
+  const aJour: DocumentAtelier = { ...doc, ...modif, id: doc.id };
+  await ecrireDocument(aJour);
+  return aJour;
 }
 
 // ---------------------------------------------------------------------------

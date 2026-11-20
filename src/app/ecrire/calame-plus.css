@@ -1,0 +1,1379 @@
+/* =====================================================================
+   Le Calame — ce qui s'ajoute à l'atelier (recherche, panneaux, modes,
+   liste des documents, barre d'état…). Mêmes jetons que le reste du site.
+   ===================================================================== */
+
+.calame {
+  font-size: calc(1rem * var(--calame-echelle, 1));
+}
+
+/* ---------- thèmes de l'atelier ---------- */
+.calame[data-theme-atelier="sepia"] {
+  --fond: #f4ecd8;
+  --surface: #ebe1c8;
+  --encre: #3b2f1e;
+  --encre-douce: #6f5f45;
+  --trait: #d6c7a5;
+}
+.calame[data-theme-atelier="sepia"] .calame-feuille {
+  background: #fbf5e6;
+}
+.calame[data-theme-atelier="contraste"] {
+  --fond: #000;
+  --surface: #121212;
+  --encre: #fff;
+  --encre-douce: #e6e6e6;
+  --trait: #8a8a8a;
+  --accent: #ffd54a;
+}
+.calame[data-theme-atelier="contraste"] .calame-feuille {
+  background: #fff;
+  outline: 2px solid #ffd54a;
+}
+
+/* Police pour lecteurs dyslexiques : à l'écran seulement. */
+@media screen {
+  .calame[data-dyslexie] .calame-texte .tiptap {
+    font-family: "OpenDyslexic", "Verdana", sans-serif !important;
+    letter-spacing: 0.04em;
+    word-spacing: 0.16em;
+    line-height: 1.75;
+  }
+  .calame[data-dyslexie] .calame-texte .tiptap :is(p, li, h2, h3, h4, blockquote) {
+    font-family: inherit !important;
+  }
+}
+
+/* ---------- onglets en icônes (inspecteur) ---------- */
+.calame-onglets-icones {
+  flex-wrap: wrap;
+}
+.calame-onglets-icones .calame-onglet {
+  flex: 1 0 auto;
+  min-width: 2.25rem;
+  padding-inline: 0.45rem;
+}
+.calame-inspecteur-titre {
+  margin: 0;
+  padding: 0.55rem 1rem 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--encre);
+}
+.calame-onglets-plats {
+  border-bottom: 1px solid var(--trait);
+  margin-bottom: 0.75rem;
+}
+
+/* ---------- sections des panneaux ---------- */
+.calame-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--trait) 60%, transparent);
+}
+.calame-section:last-child {
+  border-bottom: 0;
+}
+.calame-section-titre {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--encre-douce);
+}
+.calame-actions .bouton {
+  justify-content: flex-start;
+}
+.inspecteur-aide[data-alerte] {
+  color: #b42318;
+}
+
+/* ---------- étiquettes ---------- */
+.calame-etiquettes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.calame-etiquette {
+  --etiquette: var(--accent);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--etiquette) 55%, transparent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+  transition: background-color 0.15s ease;
+}
+.calame-etiquette[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--etiquette) 22%, transparent);
+  color: var(--encre);
+}
+.calame-pastille {
+  --etiquette: var(--encre-douce);
+  display: inline-flex;
+  align-items: center;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: color-mix(in srgb, var(--etiquette) 18%, transparent);
+  color: var(--encre);
+}
+.calame-pastille[data-alerte] {
+  background: color-mix(in srgb, #d92d20 20%, transparent);
+}
+.calame-pastille-statut {
+  --etiquette: var(--accent);
+}
+
+/* ---------- progression (objectif) ---------- */
+.calame-progression {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.calame-progression > span {
+  display: block;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 60%, #fff));
+  transition: width 0.4s ease;
+}
+.calame-progression::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--trait) 70%, transparent);
+  z-index: -1;
+}
+.calame-progression p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}
+
+/* ---------- en-tête : objectif, échéance, séance ---------- */
+.calame-objectif {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 4.5rem;
+  height: 1.5rem;
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--trait);
+}
+.calame-objectif-jauge {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+}
+.calame-objectif-texte {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.calame-echeance,
+.calame-seance {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--encre-douce);
+}
+.calame-echeance[data-alerte] {
+  color: #b42318;
+  border-color: color-mix(in srgb, #d92d20 50%, transparent);
+}
+.calame-seance {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+}
+.calame-seance-mots {
+  color: var(--encre-douce);
+  font-weight: 600;
+}
+@media (max-width: 48rem) {
+  .calame-objectif,
+  .calame-echeance {
+    display: none;
+  }
+}
+
+/* ---------- onglets des documents ouverts ---------- */
+.calame-onglets-docs {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.35rem 0.6rem 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  border-bottom: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 88%, var(--encre) 12%);
+}
+.calame-onglet-doc {
+  display: inline-flex;
+  align-items: center;
+  max-width: 14rem;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  border-radius: 0.6rem 0.6rem 0 0;
+  color: var(--encre-douce);
+}
+.calame-onglet-doc > button:first-child {
+  overflow: hidden;
+  padding: 0.35rem 0.25rem 0.35rem 0.7rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.82rem;
+}
+.calame-onglet-doc[aria-current="page"] {
+  border-color: var(--trait);
+  background: color-mix(in srgb, var(--fond) 92%, var(--encre) 8%);
+  color: var(--encre);
+  font-weight: 600;
+}
+.calame-onglet-fermer {
+  display: inline-flex;
+  padding: 0.25rem;
+  margin-right: 0.25rem;
+  border-radius: 0.35rem;
+  opacity: 0.6;
+}
+.calame-onglet-fermer:hover {
+  opacity: 1;
+  background: var(--surface);
+}
+
+/* ---------- recherche ---------- */
+.calame-recherche {
+  position: absolute;
+  z-index: 25;
+  top: 0.75rem;
+  right: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  width: min(36rem, calc(100% - 2rem));
+  padding: 0.5rem;
+  border-radius: 0.9rem;
+  border: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 96%, var(--encre) 4%);
+  box-shadow: 0 1rem 2.5rem -1rem rgb(5 8 25 / 0.55);
+}
+.calame-recherche-ligne {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.calame-recherche-champ {
+  flex: 1;
+  min-width: 0;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--trait);
+  background: var(--fond);
+  color: var(--encre);
+}
+.calame-recherche-champ:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 0;
+}
+.calame-recherche-compte {
+  min-width: 6.5rem;
+  font-size: 0.78rem;
+  color: var(--encre-douce);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.calame-recherche-option {
+  min-width: 1.9rem;
+  padding: 0.25rem 0.35rem;
+  border-radius: 0.4rem;
+  border: 1px solid transparent;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.calame-recherche-option[aria-pressed="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.calame-recherche-annonce {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}
+.tiptap .calame-trouve {
+  background: color-mix(in srgb, #f7c948 45%, transparent);
+  border-radius: 2px;
+}
+.tiptap .calame-trouve-actif {
+  background: #f7a823;
+  box-shadow: 0 0 0 2px #f7a823;
+  color: #16192b;
+}
+
+/* ---------- relecture assistée ---------- */
+.tiptap .calame-analyse {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+.tiptap .calame-analyse-repetition {
+  text-decoration-color: #7c3aed;
+}
+.tiptap .calame-analyse-longue {
+  text-decoration: none;
+  background: color-mix(in srgb, #0ea5e9 12%, transparent);
+}
+.tiptap .calame-analyse-faible {
+  text-decoration-color: #ea580c;
+}
+.tiptap .calame-analyse-passif {
+  text-decoration-color: #059669;
+  text-decoration-style: dotted;
+}
+.calame-analyse-ligne {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.calame-analyse-ligne[data-genre="repetitions"] strong {
+  color: #7c3aed;
+}
+.calame-analyse-ligne[data-genre="longues"] strong {
+  color: #0284c7;
+}
+.calame-analyse-ligne[data-genre="faibles"] strong {
+  color: #ea580c;
+}
+.calame-analyse-ligne[data-genre="passif"] strong {
+  color: #059669;
+}
+.calame-lisibilite p {
+  margin: 0;
+}
+.calame-mot-frequent {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  font-size: 0.8rem;
+}
+.calame-mot-frequent span {
+  font-size: 0.7rem;
+  color: var(--encre-douce);
+}
+.calame-mot-frequent:hover {
+  border-color: var(--accent);
+}
+.tiptap .calame-lu {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+  border-radius: 3px;
+}
+
+/* ---------- versions ---------- */
+.calame-versions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calame-versions li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 0.7rem;
+  border: 1px solid var(--trait);
+}
+.calame-versions li[data-nommee] {
+  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+.calame-version-tete {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.calame-version-titre {
+  flex: 1;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+.calame-version-date {
+  font-size: 0.75rem;
+  color: var(--encre-douce);
+}
+.calame-version-delta {
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+.calame-version-delta[data-signe="plus"] {
+  color: #067647;
+}
+.calame-version-delta[data-signe="moins"] {
+  color: #b42318;
+}
+.calame-version-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem;
+}
+.calame-version-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 0.4rem;
+  font-size: 0.75rem;
+  color: var(--encre-douce);
+}
+.calame-version-actions button:hover {
+  background: var(--surface);
+  color: var(--encre);
+}
+.calame-diff {
+  max-height: 65vh;
+  overflow: auto;
+  font-family: var(--corps-police, Georgia, serif);
+  line-height: 1.6;
+}
+.calame-diff p {
+  margin: 0 0 0.7em;
+}
+.calame-diff-egal {
+  color: var(--encre-douce);
+}
+.calame-diff ins,
+.calame-diff p[data-genre="ajout"] {
+  background: color-mix(in srgb, #12b76a 22%, transparent);
+  text-decoration: none;
+}
+.calame-diff del,
+.calame-diff p[data-genre="retrait"] {
+  background: color-mix(in srgb, #f04438 18%, transparent);
+  text-decoration: line-through;
+  text-decoration-color: color-mix(in srgb, #f04438 70%, transparent);
+}
+
+/* ---------- bilan ---------- */
+.calame-chiffre-cle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.calame-chiffre-cle span {
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.calame-serie {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  color: var(--encre-douce);
+}
+.calame-serie svg {
+  color: #ea580c;
+}
+.calame-serie strong {
+  color: var(--encre);
+  font-size: 1.1rem;
+}
+.calame-calendrier {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(7, 1fr);
+  gap: 3px;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+}
+.calame-calendrier span,
+.calame-legende-calendrier span {
+  width: 0.62rem;
+  height: 0.62rem;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--trait) 60%, transparent);
+}
+.calame-calendrier span[data-vide] {
+  background: transparent;
+}
+:is(.calame-calendrier, .calame-legende-calendrier) span[data-niveau="1"] {
+  background: color-mix(in srgb, var(--accent) 30%, transparent);
+}
+:is(.calame-calendrier, .calame-legende-calendrier) span[data-niveau="2"] {
+  background: color-mix(in srgb, var(--accent) 55%, transparent);
+}
+:is(.calame-calendrier, .calame-legende-calendrier) span[data-niveau="3"] {
+  background: color-mix(in srgb, var(--accent) 80%, transparent);
+}
+:is(.calame-calendrier, .calame-legende-calendrier) span[data-niveau="4"] {
+  background: var(--accent);
+}
+.calame-legende-calendrier {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin: 0;
+  font-size: 0.7rem;
+  color: var(--encre-douce);
+}
+.calame-legende-calendrier span {
+  display: inline-block;
+}
+.calame-jalons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.85rem;
+  color: var(--encre-douce);
+}
+.calame-jalons li[data-atteint] {
+  color: var(--encre);
+  font-weight: 600;
+}
+.calame-jalons li span {
+  display: inline-block;
+  width: 1.2rem;
+  color: var(--accent);
+}
+
+/* ---------- fenêtres ---------- */
+.calame-fenetre-fond {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 8vh 1rem 1rem;
+  background: rgb(5 8 25 / 0.55);
+  backdrop-filter: blur(3px);
+  animation: calame-apparition 0.18s ease-out;
+}
+.calame-fenetre {
+  display: flex;
+  flex-direction: column;
+  max-height: 84vh;
+  border-radius: 1.25rem;
+  border: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 97%, var(--encre) 3%);
+  color: var(--encre);
+  box-shadow: 0 2rem 4rem -1rem rgb(5 8 25 / 0.7);
+  overflow: hidden;
+  animation: calame-levee 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.calame-fenetre:focus {
+  outline: none;
+}
+.calame-fenetre-tete {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem 0.6rem;
+}
+.calame-fenetre-tete h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+}
+.calame-fenetre-tete p {
+  margin: 0.2rem 0 0;
+  font-size: 0.85rem;
+  color: var(--encre-douce);
+}
+.calame-fenetre-corps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.4rem 1.1rem 1.1rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.calame-fenetre-pied {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 0.75rem 1.1rem;
+  border-top: 1px solid var(--trait);
+}
+@keyframes calame-apparition {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes calame-levee {
+  from {
+    opacity: 0;
+    transform: translateY(0.6rem) scale(0.98);
+  }
+}
+
+/* ---------- caractères ---------- */
+.calame-caracteres-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.calame-formule {
+  display: grid;
+  grid-template-columns: minmax(7rem, auto) 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.7rem;
+  border: 1px solid var(--trait);
+  text-align: left;
+}
+.calame-formule:hover,
+.calame-lettre:hover {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+.calame-formule-texte {
+  font-family: "Amiri", "Scheherazade New", serif;
+  font-size: 1.35rem;
+}
+.calame-formule-libelle {
+  font-size: 0.85rem;
+  color: var(--encre-douce);
+}
+.calame-grille-lettres {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(3.1rem, 1fr));
+  gap: 0.35rem;
+}
+.calame-lettre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  padding: 0.45rem 0.2rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--trait);
+  font-size: 1.2rem;
+}
+.calame-lettre code {
+  font-size: 0.65rem;
+  color: var(--encre-douce);
+}
+
+/* ---------- aide ---------- */
+.calame-aide-groupe dl {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.4rem 0 0.6rem;
+}
+.calame-aide-groupe dl > div {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+.calame-aide-groupe dd {
+  margin: 0;
+  font-size: 0.88rem;
+}
+@media (max-width: 30rem) {
+  .calame-aide-groupe dl > div {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+}
+
+/* ---------- liste des documents ---------- */
+.calame-choix-recherche,
+.calame-vues {
+  display: flex;
+  gap: 0.3rem;
+}
+.calame-vues {
+  padding: 0.2rem;
+  border-radius: 0.7rem;
+  background: var(--surface);
+}
+.calame-vues button {
+  flex: 1;
+  padding: 0.3rem 0.4rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--encre-douce);
+}
+.calame-vues button span {
+  font-size: 0.72rem;
+  opacity: 0.8;
+}
+.calame-vues button[aria-selected="true"] {
+  background: var(--fond);
+  color: var(--encre);
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgb(5 8 25 / 0.15);
+}
+.calame-outils-liste {
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+}
+.calame-outils-liste .champ {
+  flex: 1;
+  min-width: 0;
+}
+.calame-documents li {
+  position: relative;
+}
+.calame-document-case {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.4rem;
+}
+.calame-documents li:has(.calame-document-case) .calame-document {
+  padding-left: 1.9rem;
+}
+.calame-document-marques {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+}
+.calame-epingle {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  margin-right: 0.3rem;
+  color: var(--accent);
+  vertical-align: -0.1rem;
+}
+.calame-document-menu {
+  position: absolute;
+  z-index: 20;
+  right: 0.3rem;
+  top: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 13rem;
+  padding: 0.35rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--trait);
+  background: var(--fond);
+  box-shadow: 0 1rem 2rem -1rem rgb(5 8 25 / 0.55);
+}
+.calame-document-menu > button,
+.calame-document-menu-ligne {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.55rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  text-align: left;
+}
+.calame-document-menu > button:hover {
+  background: var(--surface);
+}
+.calame-document-menu-ligne select {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  color: var(--encre);
+}
+.calame-dossier {
+  list-style: none;
+}
+.calame-dossier-tete {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: 100%;
+  padding: 0.35rem 0.4rem;
+  border-radius: 0.5rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--encre);
+}
+.calame-dossier-tete:hover,
+.calame-dossier[data-survol] > .calame-dossier-tete {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+.calame-selection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.55rem;
+  border-radius: 0.7rem;
+  border: 1px dashed var(--accent);
+  font-size: 0.82rem;
+}
+.calame-selection p {
+  margin: 0;
+}
+.calame-resultats .calame-extrait {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.78rem;
+  color: var(--encre-douce);
+  line-height: 1.4;
+}
+.calame-extrait mark {
+  background: color-mix(in srgb, #f7c948 45%, transparent);
+  color: var(--encre);
+  border-radius: 2px;
+}
+
+/* ---------- plan vivant ---------- */
+.calame-plan-vivant li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  border-radius: 0.5rem;
+}
+.calame-plan-vivant li[data-cible] {
+  box-shadow: inset 0 2px 0 var(--accent);
+}
+.calame-poignee {
+  flex-shrink: 0;
+  width: 0.9rem;
+  height: 0.9rem;
+  color: var(--encre-douce);
+  opacity: 0;
+  cursor: grab;
+}
+.calame-plan-vivant li:hover .calame-poignee {
+  opacity: 0.7;
+}
+.calame-plan-titre {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem;
+  text-align: left;
+}
+.calame-plan-mots {
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  color: var(--encre-douce);
+  font-variant-numeric: tabular-nums;
+}
+.calame-plan-actions {
+  /* Par-dessus la ligne (et non à côté) : le titre garde toute la largeur de la colonne. */
+  position: absolute;
+  top: 50%;
+  right: 0.15rem;
+  display: inline-flex;
+  padding: 0.1rem;
+  border-radius: 0.45rem;
+  background: color-mix(in srgb, var(--fond) 88%, var(--encre) 12%);
+  box-shadow: 0 2px 10px -4px rgb(0 0 0 / 0.45);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: opacity 0.15s ease;
+}
+.calame-plan-vivant li:hover .calame-plan-actions,
+.calame-plan-vivant li:focus-within .calame-plan-actions {
+  opacity: 1;
+  pointer-events: auto;
+}
+.calame-plan-actions button {
+  display: inline-flex;
+  padding: 0.15rem;
+  border-radius: 0.3rem;
+  color: var(--encre-douce);
+}
+.calame-plan-actions button:hover:not(:disabled) {
+  background: var(--surface);
+  color: var(--encre);
+}
+.calame-plan-actions button:disabled {
+  opacity: 0.35;
+}
+@media (pointer: coarse) {
+  .calame-plan-actions {
+    position: static;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+  }
+}
+
+/* ---------- replis dans le texte ---------- */
+.calame-texte .tiptap .calame-replie {
+  display: none !important;
+}
+.calame-texte .tiptap :is(h2, h3, h4) {
+  position: relative;
+}
+.calame-repli-fleche {
+  position: absolute;
+  left: -1.5em;
+  top: 50%;
+  translate: 0 -50%;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 0.3em;
+  font-size: 0.7em;
+  line-height: 1;
+  color: var(--encre-douce);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  user-select: none;
+}
+.calame-texte .tiptap :is(h2, h3, h4):hover > .calame-repli-fleche,
+.calame-repli-fleche[aria-expanded="false"] {
+  opacity: 1;
+}
+.calame-replie-etiquette {
+  display: block;
+  margin: -0.3em 0 0.8em;
+  padding: 0.15em 0.6em;
+  border-radius: 999px;
+  border: 1px dashed var(--trait);
+  font-family: var(--font-sans, sans-serif);
+  font-size: 0.75rem;
+  color: var(--encre-douce);
+}
+
+/* ---------- arabe de droite à gauche ---------- */
+.calame-texte .tiptap .calame-rtl {
+  direction: rtl;
+  text-align: right;
+  font-family: "Amiri", "Scheherazade New", var(--corps-police), serif;
+}
+
+/* ---------- concentration et relecture ---------- */
+.calame[data-concentration] {
+  grid-template-columns: 0 minmax(0, 1fr) 0 !important;
+}
+.calame[data-concentration] .calame-barre {
+  opacity: 0.25;
+  transition: opacity 0.3s ease;
+}
+.calame[data-concentration] .calame-barre:hover,
+.calame[data-concentration] .calame-barre:focus-within {
+  opacity: 1;
+}
+.calame[data-concentration] .calame-texte .tiptap > *:not(.calame-bloc-courant) {
+  opacity: 0.32;
+  transition: opacity 0.35s ease;
+}
+.calame[data-relecture] .calame-texte .tiptap {
+  caret-color: transparent;
+}
+@media (prefers-reduced-motion: reduce) {
+  .calame[data-concentration] .calame-texte .tiptap > *,
+  .calame-fenetre,
+  .calame-fenetre-fond {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* ---------- plateau : la page, et la vue côte à côte ---------- */
+.calame-plateau {
+  position: relative;
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+.calame-plateau > .calame-scene {
+  flex: 1;
+  min-width: 0;
+}
+.calame-zoom {
+  position: relative;
+  flex: none;
+  /* Centrée quand elle tient, collée à gauche (et défilable) quand elle déborde. */
+  margin-inline: auto;
+}
+.calame-plateau .calame-scene,
+.calame-scene:has(> .calame-zoom) {
+  justify-content: flex-start;
+}
+/* À 100 %, comme avant : sur un écran étroit, la page se resserre à la largeur de l'écran. */
+.calame-zoom:not([data-zoom]) {
+  max-width: 100%;
+}
+/* Agrandie ou réduite, la page garde sa vraie largeur : c'est l'échelle qui change. */
+.calame-zoom[data-zoom] > .calame-flux {
+  max-width: none;
+}
+.calame-vue-cote {
+  display: flex;
+  flex-direction: column;
+  width: min(42%, 40rem);
+  min-width: 18rem;
+  border-left: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 96%, var(--encre) 4%);
+}
+.calame-vue-cote-tete {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--trait);
+}
+.calame-vue-cote-tete .champ {
+  flex: 1;
+  min-width: 0;
+}
+.calame-vue-cote-corps {
+  flex: 1;
+  overflow: auto;
+  padding: 1.5rem 1.75rem 3rem;
+}
+.calame-lecture.calame-texte {
+  padding: 0;
+}
+.calame-lecture .tiptap {
+  min-height: 0;
+}
+@media (max-width: 64rem) {
+  .calame-vue-cote {
+    position: absolute;
+    inset: 0 0 0 auto;
+    z-index: 15;
+    width: min(90%, 32rem);
+    box-shadow: -1rem 0 2rem -1rem rgb(5 8 25 / 0.5);
+  }
+}
+.calame-fenetre .calame-lecture {
+  padding: 0.5rem 0.25rem;
+}
+
+/* ---------- barre d'état ---------- */
+.calame-etat-barre {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-top: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 92%, var(--encre) 8%);
+  font-size: 0.78rem;
+  color: var(--encre-douce);
+}
+.calame-etat-groupe {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-width: 0;
+}
+.calame-etat-bouton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 0.4rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.calame-etat-bouton:hover {
+  background: var(--surface);
+  color: var(--encre);
+}
+.calame-etat-champ {
+  width: 3.5rem;
+  padding: 0 0.25rem;
+  border: 1px solid var(--trait);
+  border-radius: 0.3rem;
+  background: var(--fond);
+  color: var(--encre);
+}
+.calame-etat-texte {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-variant-numeric: tabular-nums;
+}
+.calame-etat-icone {
+  display: inline-flex;
+  padding: 0.3rem;
+  border-radius: 0.45rem;
+}
+.calame-etat-icone:hover {
+  background: var(--surface);
+  color: var(--encre);
+}
+.calame-etat-icone[aria-pressed="true"] {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+.calame-etat-icone[data-ecoute] {
+  color: #d92d20;
+  animation: calame-pouls 1.4s ease-in-out infinite;
+}
+@keyframes calame-pouls {
+  50% {
+    opacity: 0.55;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .calame-etat-icone[data-ecoute] {
+    animation: none;
+  }
+}
+.calame-etat-zoom {
+  display: inline-flex;
+  align-items: center;
+}
+.calame-etat-son {
+  position: relative;
+}
+.calame-etat-popover {
+  position: absolute;
+  bottom: calc(100% + 0.5rem);
+  right: 0;
+  z-index: 30;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  width: 15rem;
+  padding: 0.6rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--trait);
+  background: var(--fond);
+  box-shadow: 0 1rem 2rem -1rem rgb(5 8 25 / 0.5);
+}
+.calame-dictee-provisoire {
+  position: absolute;
+  bottom: calc(100% + 0.5rem);
+  left: 50%;
+  translate: -50% 0;
+  max-width: min(36rem, 90%);
+  margin: 0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  background: rgb(5 8 25 / 0.82);
+  color: #fff;
+  font-style: italic;
+}
+@media (max-width: 40rem) {
+  .calame-etat-texte,
+  .calame-etat-zoom {
+    display: none;
+  }
+}
+
+/* ---------- miniatures ---------- */
+.calame-miniatures {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5.5rem, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calame-miniature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  width: 100%;
+}
+.calame-miniature-feuille {
+  position: relative;
+  width: 100%;
+  border-radius: 2px;
+  background: #fdfcfa;
+  box-shadow: 0 1px 3px rgb(5 8 25 / 0.35);
+  overflow: hidden;
+}
+.calame-miniature[aria-current="page"] .calame-miniature-feuille {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.calame-miniature-bloc {
+  position: absolute;
+  left: 12%;
+  right: 12%;
+  border-radius: 1px;
+  background: repeating-linear-gradient(to bottom, #c6cad8 0 1.5px, transparent 1.5px 3.5px);
+}
+.calame-miniature-bloc[data-genre="titre"] {
+  background: none;
+  font-size: 0.42rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #0d1640;
+  overflow: hidden;
+}
+.calame-miniature-bloc[data-genre="image"] {
+  background: #dfe3ee;
+}
+.calame-miniature-bloc[data-genre="tableau"] {
+  background: repeating-linear-gradient(to bottom, #b8bed2 0 1px, #eef0f6 1px 4px);
+  outline: 1px solid #b8bed2;
+}
+.calame-miniature-bloc[data-genre="autre"] {
+  background: color-mix(in srgb, #c9a227 25%, #eee);
+}
+.calame-miniature-numero {
+  font-size: 0.72rem;
+  color: var(--encre-douce);
+}
+
+/* ---------- barre mobile ---------- */
+.calame-barre-mobile {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 40;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.3rem 0.4rem calc(0.3rem + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--trait);
+  background: color-mix(in srgb, var(--fond) 94%, var(--encre) 6%);
+  box-shadow: 0 -0.5rem 1.5rem -1rem rgb(5 8 25 / 0.4);
+}
+.calame-barre-mobile button {
+  display: inline-flex;
+  padding: 0.55rem;
+  border-radius: 0.6rem;
+  color: var(--encre);
+}
+.calame-barre-mobile button[aria-pressed="true"] {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+/* ---------- annonces (jalons, fin de séance) ---------- */
+.calame-annonces {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 3.5rem;
+  z-index: 65;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.calame-annonce {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  border-radius: 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 50%, transparent);
+  background: var(--fond);
+  color: var(--encre);
+  font-weight: 600;
+  box-shadow: 0 1rem 2rem -1rem rgb(5 8 25 / 0.55);
+  animation: calame-levee 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .calame-annonce {
+    animation: none;
+  }
+}
+
+/* ---------- impression : rien de tout cela ---------- */
+@media print {
+  .calame-recherche,
+  .calame-etat-barre,
+  .calame-onglets-docs,
+  .calame-vue-cote,
+  .calame-barre-mobile,
+  .calame-annonces,
+  .calame-repli-fleche,
+  .calame-replie-etiquette {
+    display: none !important;
+  }
+  .calame-plateau {
+    display: block;
+  }
+  .calame-zoom {
+    width: auto !important;
+    height: auto !important;
+  }
+  .calame-flux {
+    transform: none !important;
+  }
+  .tiptap .calame-trouve,
+  .tiptap .calame-trouve-actif,
+  .tiptap .calame-lu {
+    background: none;
+    box-shadow: none;
+  }
+  .tiptap .calame-analyse {
+    text-decoration: none;
+    background: none;
+  }
+}
+
+/* ---------- petits formulaires de l'inspecteur ---------- */
+.calame-ligne-ajout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 3.4rem auto;
+  gap: 0.4rem;
+  align-items: center;
+}
+.calame-ligne-ajout .champ {
+  width: 100%;
+  min-width: 0;
+}
+
+/* ---------- onglets de la colonne de gauche : tiennent dans une colonne étroite ---------- */
+.calame-cote {
+  container-type: inline-size;
+}
+.calame-cote > .calame-onglets .calame-onglet {
+  flex: 1 1 auto;
+  min-width: 0;
+  gap: 0.3rem;
+  padding-inline: 0.4rem;
+  white-space: nowrap;
+}
+@container (max-width: 300px) {
+  .calame-cote > .calame-onglets .calame-onglet > svg {
+    display: none;
+  }
+}
+
+/* ---------- barre du haut sur téléphone : le titre garde sa place ---------- */
+@media (max-width: 40rem) {
+  .calame-barre .calame-icone-large {
+    display: none;
+  }
+  .calame-barre {
+    gap: 0.25rem;
+  }
+}
+.calame-plan-actions button svg {
+  width: 0.9rem;
+  height: 0.9rem;
+}

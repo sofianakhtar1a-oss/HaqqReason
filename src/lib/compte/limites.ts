@@ -7,6 +7,8 @@
 export const MAGASINS = [
   "calame-documents",
   "calame-fichiers",
+  "calame-preferences",
+  "calame-journal",
   "regles",
   "langues-cartes",
   "langues-dictionnaire",

@@ -12,7 +12,12 @@ const CLES = [
   "haqqreason-synchro-etat",
   "haqqreason-reprises-en-attente",
   "calame-dernier-document",
+  "calame-preferences",
+  "calame-onglets",
+  "calame-replis",
 ];
+/** Clés rangées par préfixe (le journal d'écriture du Calame : une clé par mois). */
+const PREFIXES = ["calame-journal-"];
 
 /**
  * Retire de CET appareil les données personnelles du compte connecté (sur un ordinateur partagé, par exemple).
@@ -35,6 +40,13 @@ export async function effacerAppareil(): Promise<void> {
   );
   try {
     for (const cle of CLES) localStorage.removeItem(tiroir(cle));
+    const prefixes = PREFIXES.map((p) => tiroir(p));
+    const aRetirer: string[] = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const k = localStorage.key(i);
+      if (k && prefixes.some((p) => k.startsWith(p))) aRetirer.push(k);
+    }
+    for (const k of aRetirer) localStorage.removeItem(k);
     if (suffixeCompte() === "") localStorage.removeItem("haqqreason-proprietaire");
   } catch {
     /* stockage indisponible : rien à effacer */

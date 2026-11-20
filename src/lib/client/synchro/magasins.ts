@@ -14,6 +14,8 @@ import * as depot from "@/lib/atelier/depot";
 import type { NomMagasin } from "@/lib/compte/limites";
 import { tiroir } from "@/lib/client/compte";
 import { lireFavoris, rangerFavori, type Favori } from "@/lib/client/favoris";
+import * as preferencesCalame from "@/lib/atelier/preferences";
+import * as journalCalame from "@/lib/atelier/journal-ecriture";
 import { historiqueBrut, lireCollections, rangerCollections, rangerHistorique } from "@/lib/client/historique";
 import { rangerRecherchesSauvegardees, recherchesSauvegardees } from "@/lib/client/recherches-locales";
 import * as langues from "@/lib/langues/stockage";
@@ -270,9 +272,29 @@ const reglages: Adaptateur = {
   effacer: async (c) => BLOCS[c]?.ranger(c === "collections" ? {} : []),
 };
 
+/* Les préférences du Calame (un seul bloc) et son journal d'écriture (un objet par mois). */
+const calamePreferences: Adaptateur = {
+  cles: async () => (preferencesCalame.preferencesBrutes() ? [{ c: "preferences" }] : []),
+  lire: async (c) => (c === "preferences" ? preferencesCalame.preferencesBrutes() : undefined),
+  ecrire: async (c, v) => (c === "preferences" ? preferencesCalame.rangerPreferences(v) : undefined),
+  effacer: async () => undefined,
+};
+
+const calameJournal: Adaptateur = {
+  cles: async () => journalCalame.moisLocaux().map((c) => ({ c })),
+  lire: async (c) => {
+    const mois = journalCalame.lireMois(c);
+    return Object.keys(mois).length > 0 ? mois : undefined;
+  },
+  ecrire: async (c, v) => journalCalame.rangerMois(c, v),
+  effacer: async () => undefined,
+};
+
 export const ADAPTATEURS: Record<NomMagasin, Adaptateur> = {
   "calame-documents": calameDocuments,
   "calame-fichiers": calameFichiers,
+  "calame-preferences": calamePreferences,
+  "calame-journal": calameJournal,
   regles,
   "langues-cartes": magasinLangue("cartes"),
   "langues-dictionnaire": magasinLangue("dictionnaire"),
