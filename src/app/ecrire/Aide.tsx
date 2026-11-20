@@ -13,7 +13,7 @@ const RACCOURCIS: { groupe: string; touches: [string, string][] }[] = [
       ["Ctrl + P", "Imprimer ou enregistrer en PDF"],
       ["Ctrl + Maj + F", "Mode concentration"],
       ["Ctrl + Maj + C", "Caractères et formules de respect"],
-      ["F1 ou Ctrl + /", "Cette aide"],
+      ["F1, Ctrl + / ou ?", "Cette aide (« ? » hors du texte)"],
     ],
   },
   {
@@ -26,6 +26,8 @@ const RACCOURCIS: { groupe: string; touches: [string, string][] }[] = [
       ["Ctrl + Maj + B", "Citation"],
       ["Ctrl + Alt + V", "Verset coranique"],
       ["Ctrl + Alt + H", "Hadith"],
+      ["Ctrl + Alt + Maj + V", "Verset par sa référence (2:255)"],
+      ["Ctrl + Alt + Maj + H", "Hadith par recueil et numéro"],
       ["Ctrl + Alt + N", "Note de bas de page"],
       ["/", "Insérer un bloc (tableau, frise, carte mentale…)"],
     ],

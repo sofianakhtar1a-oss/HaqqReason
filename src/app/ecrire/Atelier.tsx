@@ -86,6 +86,10 @@ import { Aide } from "./Aide";
 import { ReglagesAtelier } from "./ReglagesAtelier";
 import { VueLecture } from "./VueLecture";
 import { PanneauDocument } from "./panneaux/PanneauDocument";
+import { PanneauPlace } from "./panneaux/PanneauPlace";
+import { PanneauVerrou } from "./panneaux/PanneauVerrou";
+import { estOuvert } from "./verrou";
+import { dossierPossible, ecrireReglage as ecrireReglageSauvegarde, lireReglage as lireReglageSauvegarde, sauvegardeDue, sauvegarderMaintenant } from "./sauvegarde-auto";
 import { PanneauRelire } from "./panneaux/PanneauRelire";
 import { PanneauVersions } from "./panneaux/PanneauVersions";
 import { PanneauBilan } from "./panneaux/PanneauBilan";
@@ -257,6 +261,29 @@ export function Atelier(props: Props) {
     reglerSources(editor, reglages.styleCitation);
     return abonnerBibliotheque(() => reformaterReferences(editor));
   }, [editor, reglages.styleCitation]);
+
+  // La sauvegarde automatique dans un dossier, à la fréquence choisie (onglet « Sortie »).
+  useEffect(() => {
+    const verifier = () => {
+      const r = lireReglageSauvegarde();
+      if (!sauvegardeDue(r)) return;
+      if (!dossierPossible() || !r.dossier) {
+        // Sans accès à un dossier : un rappel, une fois par période.
+        ecrireReglageSauvegarde({ derniere: Date.now() });
+        setMessage("Il est temps de sauvegarder tes documents : onglet « Sortie », « Tous mes documents (.zip) ».");
+        return;
+      }
+      void sauvegarderMaintenant(false).then((etat) => {
+        if (etat === "permission") setMessage("La sauvegarde automatique attend ton accord : onglet « Sortie », « Sauvegarder maintenant ».");
+      });
+    };
+    const minuteur = setInterval(verifier, 5 * 60_000);
+    const premier = setTimeout(verifier, 20_000);
+    return () => {
+      clearInterval(minuteur);
+      clearTimeout(premier);
+    };
+  }, []);
 
   // « Lire à côté » sur un PDF joint : il s'ouvre dans la colonne de droite.
   useEffect(() => {
@@ -716,9 +743,15 @@ export function Atelier(props: Props) {
     const auClavier = (e: KeyboardEvent) => {
       const commande = e.ctrlKey || e.metaKey;
       const touche = e.key.toLowerCase();
-      if (e.key === "F1" || (commande && e.key === "/")) {
+      const cible = e.target as HTMLElement | null;
+      const enSaisie = Boolean(cible?.closest("input, textarea, select, [contenteditable='true'], .ProseMirror"));
+      if (e.key === "F1" || (commande && e.key === "/") || (e.key === "?" && !enSaisie && !commande && !e.altKey)) {
         e.preventDefault();
         setAide(true);
+      } else if (commande && e.altKey && e.shiftKey && (touche === "v" || touche === "h")) {
+        // Le verset ou le hadith par sa référence (le texte arabe se remplit seul).
+        e.preventDefault();
+        setDialogueSource(touche === "v" ? "verset" : "hadith");
       } else if (commande && e.shiftKey && touche === "f") {
         e.preventDefault();
         basculerConcentration();
@@ -913,14 +946,18 @@ export function Atelier(props: Props) {
           libelle: "Document",
           Icone: FileCog,
           contenu: (
-            <PanneauDocument
-              doc={{ ...doc, ...extras, dossier: documents.find((d) => d.id === doc.id)?.dossier ?? doc.dossier }}
-              mots={stats.mots}
-              documents={documents}
-              surModifier={modifierDocument}
-              surDupliquer={() => props.surDupliquer(doc.id)}
-              surCorbeille={() => props.surCorbeille(doc.id, true)}
-            />
+            <>
+              <PanneauDocument
+                doc={{ ...doc, ...extras, dossier: documents.find((d) => d.id === doc.id)?.dossier ?? doc.dossier }}
+                mots={stats.mots}
+                documents={documents}
+                surModifier={modifierDocument}
+                surDupliquer={() => props.surDupliquer(doc.id)}
+                surCorbeille={() => props.surCorbeille(doc.id, true)}
+              />
+              <PanneauVerrou doc={documents.find((d) => d.id === doc.id) ?? doc} surModifier={modifierDocument} />
+              <PanneauPlace doc={documents.find((d) => d.id === doc.id) ?? doc} documents={documents} />
+            </>
           ),
         },
         {
@@ -1135,7 +1172,7 @@ export function Atelier(props: Props) {
                   <option value={doc.id}>Ce document (dernier enregistrement)</option>
                   <option value="__pdf">Un PDF (joint ou de cet appareil)…</option>
                   {documents
-                    .filter((d) => d.id !== doc.id && !extrasDe(d).corbeille)
+                    .filter((d) => d.id !== doc.id && !extrasDe(d).corbeille && (!extrasDe(d).verrou || estOuvert(d.id)))
                     .map((d) => (
                       <option key={d.id} value={d.id}>
                         {d.titre || "Sans titre"}

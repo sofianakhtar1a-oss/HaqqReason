@@ -2,38 +2,14 @@
 
 import type { Editor } from "@tiptap/core";
 import { useEffect, useMemo, useState } from "react";
-import {
-  Archive,
-  ArchiveRestore,
-  ArrowDown,
-  ArrowLeft,
-  ArrowRight,
-  ArrowUp,
-  CheckSquare,
-  ChevronDown,
-  ChevronRight,
-  Columns2,
-  Copy,
-  FilePlus2,
-  FileText,
-  Folder,
-  FolderOpen,
-  FolderPlus,
-  GripVertical,
-  LayoutGrid,
-  ListTree,
-  MoreHorizontal,
-  Pin,
-  RotateCcw,
-  Search,
-  Trash2,
-  Upload,
-} from "lucide-react";
+import { Archive, ArchiveRestore, ArrowDown, ArrowLeft, ArrowRight, ArrowUp, CheckSquare, ChevronDown, ChevronRight, Columns2, Copy, FilePlus2, FileText, Folder, FolderOpen, FolderPlus, GripVertical, LayoutGrid, ListTree, LockKeyhole, MoreHorizontal, Pin, RotateCcw, Search, Trash2, Upload } from "lucide-react";
 import { extrasDe, STATUTS_DOCUMENT, type DocumentAtelier } from "@/lib/atelier/modele";
 import { pagesEstimees } from "@/lib/atelier/pagination";
 import { modifierPreferences, TRIS, type Tri } from "@/lib/atelier/preferences";
 import { extraits } from "@/lib/atelier/recherche-texte";
 import { useTextes } from "@/lib/modules/textes-client";
+import { useEtatsDocuments } from "./etats-synchro";
+import { estOuvert } from "./verrou";
 import { delaiEcheance, usePreferences, useRevision } from "./crochets";
 import { arbreDossiers, compte, documentsDeLaVue, tousLesDossiers, trierDocuments, type NoeudDossier, type Vue } from "./rangement";
 import { allerAuTitre, changerNiveau, deplacerPartie, planDuDocument } from "./plan";
@@ -117,6 +93,7 @@ function ListeDocuments({ documents, actif, surOuvrir, surNouveau, surImporter, 
   const [aSupprimer, setASupprimer] = useState<string | null>(null);
   const [nouveauDossier, setNouveauDossier] = useState<string | null>(null);
   const [survol, setSurvol] = useState<string | null>(null);
+  const etatsSynchro = useEtatsDocuments();
 
   const dossiers = tousLesDossiers(documents, prefs.dossiers);
   const visibles = useMemo(() => {
@@ -131,6 +108,8 @@ function ListeDocuments({ documents, actif, surOuvrir, surNouveau, surImporter, 
     const q = recherche.trim();
     if (!dansLeTexte || q.length < 2) return null;
     return documentsDeLaVue(documents, vue)
+      // Le texte d'un document verrouillé n'apparaît pas dans la recherche tant qu'il n'est pas ouvert.
+      .filter((d) => !extrasDe(d).verrou || estOuvert(d.id))
       .map((d) => ({ doc: d, ...extraits(d.contenu, q) }))
       .filter((r) => r.total > 0 || r.doc.titre.toLowerCase().includes(q.toLowerCase()))
       .sort((a, b) => b.total - a.total)
@@ -156,7 +135,16 @@ function ListeDocuments({ documents, actif, surOuvrir, surNouveau, surImporter, 
         <button type="button" className="calame-document" aria-current={d.id === actif} onClick={() => (selection ? basculerSelection(d.id) : vue === "corbeille" ? setMenu(d.id) : surOuvrir(d.id))}>
           <span className="calame-document-titre">
             {x.epingle && <Pin className="calame-epingle" aria-label="Épinglé" />}
+            {x.verrou && <LockKeyhole className="calame-epingle" aria-label="Verrouillé par un code" />}
             {d.titre || t("sansTitre")}
+            {etatsSynchro.get(d.id) && etatsSynchro.get(d.id) !== "compte" && (
+              <span
+                className="calame-document-synchro"
+                data-etat={etatsSynchro.get(d.id)}
+                title={etatsSynchro.get(d.id) === "attente" ? "En attente d'envoi sur ton compte" : "Seulement sur cet appareil (trop lourd pour le compte, ou place pleine)"}
+                aria-label={etatsSynchro.get(d.id) === "attente" ? "En attente d'envoi" : "Seulement sur cet appareil"}
+              />
+            )}
           </span>
           <span className="calame-document-detail">
             {vue === "corbeille" && x.corbeille ? `supprimé ${quand(x.corbeille)}` : quand(d.modifie)} · {d.mots.toLocaleString("fr-FR")} mots · {pagesEstimees(d.mots)} p.

@@ -3113,3 +3113,111 @@ html.calame-capture-pdf .calame-impression [data-selectionne] {
     transform: none;
   }
 }
+
+/* ---------- place et état de synchronisation ---------- */
+.calame-document-synchro {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-left: 0.4rem;
+  border-radius: 999px;
+  vertical-align: 0.1em;
+}
+.calame-document-synchro[data-etat="attente"] {
+  background: color-mix(in srgb, var(--or) 85%, transparent);
+}
+.calame-document-synchro[data-etat="appareil"] {
+  background: transparent;
+  box-shadow: inset 0 0 0 1.5px #c2410c;
+}
+.calame-place {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0;
+  font-size: 0.85rem;
+}
+.calame-place div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.calame-place div:first-child {
+  font-weight: 700;
+}
+.calame-place dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+.calame-place-compte {
+  display: grid;
+  gap: 0.35rem;
+  margin-top: 0.4rem;
+}
+.calame-jauge {
+  height: 0.45rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--encre) 12%, transparent);
+}
+.calame-jauge span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--or);
+}
+.calame-jauge span[data-plein] {
+  background: #c2410c;
+}
+.calame-place-alerte {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.6rem 0.7rem;
+  border-radius: 0.6rem;
+  background: color-mix(in srgb, #c2410c 14%, transparent);
+  font-size: 0.82rem;
+}
+.calame-place-alerte p {
+  margin: 0 0 0.3rem;
+}
+.calame-place-alerte ul {
+  margin: 0 0 0.3rem;
+  padding-left: 1rem;
+}
+
+/* ---------- document verrouillé ---------- */
+.calame-verrou {
+  display: grid;
+  place-items: center;
+  min-height: 70vh;
+  padding: 2rem 1rem;
+}
+.calame-verrou-carte {
+  display: grid;
+  justify-items: center;
+  gap: 0.8rem;
+  width: min(22rem, 100%);
+  padding: 2rem 1.5rem;
+  border: 1px solid var(--trait);
+  border-radius: 1.2rem;
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  text-align: center;
+}
+.calame-verrou-carte svg {
+  color: var(--or);
+}
+.calame-verrou-carte h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+.calame-verrou-carte p {
+  margin: 0;
+  color: var(--encre-douce);
+}
+.calame-verrou-carte .champ,
+.calame-verrou-carte .bouton {
+  width: 100%;
+}
+.calame-verrou-carte .champ {
+  text-align: center;
+  letter-spacing: 0.3em;
+}

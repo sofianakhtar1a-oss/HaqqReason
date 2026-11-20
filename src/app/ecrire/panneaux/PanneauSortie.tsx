@@ -2,7 +2,8 @@
 
 import type { Editor } from "@tiptap/core";
 import { AlertTriangle, BookOpen, CheckCircle2, FileArchive, FileCode2, FileDown, FileType2, Printer, Share2, TextSelect } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { choisirDossier, dossierPossible, ecrireReglage, FREQUENCES, lireReglage, sauvegarderMaintenant, type Frequence } from "../sauvegarde-auto";
 import { allerARemarque, verifierDocument, type Remarque } from "../verification";
 import type { FormatPartage } from "../sorties";
 
@@ -24,6 +25,56 @@ const GENRES: Record<Remarque["genre"], string> = { note: "Notes", image: "Image
  * L'onglet « Sortie », suite : vérifier avant d'exporter, les autres formats (PDF direct avec
  * signets, EPUB, page HTML, texte), imprimer une partie ou un livret, tout exporter, partager.
  */
+function SauvegardeAuto() {
+  const [reglage, setReglage] = useState(() => lireReglage());
+  const [etat, setEtat] = useState("");
+  const possible = dossierPossible();
+  useEffect(() => {
+    const relire = () => setReglage(lireReglage());
+    window.addEventListener("calame:sauvegarde-auto", relire);
+    return () => window.removeEventListener("calame:sauvegarde-auto", relire);
+  }, []);
+  const maintenant = async () => {
+    setEtat("…");
+    const r = await sauvegarderMaintenant(true);
+    setEtat(r === "ok" ? "Sauvegarde écrite dans le dossier." : r === "permission" ? "Le navigateur n'a pas donné l'accès au dossier." : r === "sans-dossier" ? "Choisis d'abord un dossier." : "La sauvegarde n'a pas pu s'écrire.");
+  };
+  return (
+    <section className="calame-section" aria-labelledby="sortie-sauvegarde">
+      <h3 className="calame-section-titre" id="sortie-sauvegarde">
+        <FileArchive className="size-4" aria-hidden="true" /> Sauvegarde automatique
+      </h3>
+      <select className="champ" value={reglage.frequence} onChange={(e) => setReglage(ecrireReglage({ frequence: e.target.value as Frequence }))} aria-label="Fréquence de la sauvegarde automatique">
+        {FREQUENCES.map((f) => (
+          <option key={f.cle} value={f.cle}>
+            {f.libelle}
+          </option>
+        ))}
+      </select>
+      {possible ? (
+        <>
+          <button type="button" className="bouton bouton-discret w-full" onClick={() => void choisirDossier().then(() => setReglage(lireReglage()))}>
+            {reglage.dossier ? `Dossier : ${reglage.dossier} (changer)` : "Choisir le dossier de sauvegarde"}
+          </button>
+          {reglage.dossier && (
+            <button type="button" className="bouton bouton-discret w-full" onClick={() => void maintenant()}>
+              Sauvegarder maintenant
+            </button>
+          )}
+          <p className="inspecteur-aide">Tous tes documents, dans une archive .zip datée ; les dix dernières sont gardées.{reglage.derniere ? ` Dernière : ${new Date(reglage.derniere).toLocaleString("fr-FR")}.` : ""}</p>
+        </>
+      ) : (
+        <p className="inspecteur-aide">Ce navigateur ne laisse pas écrire dans un dossier : à l&apos;échéance, le Calame te rappellera de télécharger l&apos;archive de tous tes documents.</p>
+      )}
+      {etat && (
+        <p className="inspecteur-aide" role="status">
+          {etat}
+        </p>
+      )}
+    </section>
+  );
+}
+
 export function PanneauSortie({ editor, pages, enCours, surAction }: Props) {
   const [remarques, setRemarques] = useState<Remarque[] | null>(null);
   const [plages, setPlages] = useState("");
@@ -134,6 +185,7 @@ export function PanneauSortie({ editor, pages, enCours, surAction }: Props) {
           {enCours === "tout" ? "Préparation…" : "Tous mes documents (.zip)"}
         </button>
       </section>
+      <SauvegardeAuto />
     </>
   );
 }

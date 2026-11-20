@@ -299,12 +299,21 @@ const calameBibliotheque: Adaptateur = {
   effacer: async () => undefined,
 };
 
+/* Les versions du Calame : les nommées, et les plus récentes de chaque document. */
+const calameVersions: Adaptateur = {
+  cles: async () => (await depot.versionsSuivies()).map((v) => ({ c: v.id, q: dateIso(v.quand) })),
+  lire: async (c) => depot.versionSuivie(c),
+  ecrire: async (_c, v) => depot.rangerVersion(v),
+  effacer: async (c) => depot.supprimerVersionBrute(c),
+};
+
 export const ADAPTATEURS: Record<NomMagasin, Adaptateur> = {
   "calame-documents": calameDocuments,
   "calame-fichiers": calameFichiers,
   "calame-preferences": calamePreferences,
   "calame-journal": calameJournal,
   "calame-bibliotheque": calameBibliotheque,
+  "calame-versions": calameVersions,
   regles,
   "langues-cartes": magasinLangue("cartes"),
   "langues-dictionnaire": magasinLangue("dictionnaire"),

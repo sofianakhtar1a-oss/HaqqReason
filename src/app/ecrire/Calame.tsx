@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { Feather, LoaderCircle } from "lucide-react";
 import {
   ajouterFichier,
@@ -19,11 +19,14 @@ import { reglagesDuJeu } from "@/lib/atelier/jeux-styles";
 import { lirePreferences } from "@/lib/atelier/preferences";
 import { tiroir } from "@/lib/client/compte";
 import { attendreSynchro, EVENEMENT_RECU } from "@/lib/client/synchro/journal";
+import { EVENEMENT_CONFLIT } from "@/lib/client/synchro/moteur";
 import { useTextes } from "@/lib/modules/textes-client";
 import { Atelier } from "./Atelier";
 import { blobDuFichierPaquet, lirePaquet } from "./exporter";
 import { documentDeBienvenue } from "./bienvenue";
 import type { DepartDocument } from "./DialogueModeles";
+import { EcranVerrou } from "./EcranVerrou";
+import { abonnerVerrous, estOuvert, versionVerrous } from "./verrou";
 import "@fontsource/eb-garamond/400.css";
 import "@fontsource/eb-garamond/400-italic.css";
 import "@fontsource/eb-garamond/600.css";
@@ -83,6 +86,8 @@ export function Calame() {
   const [requete, setRequete] = useState<string | undefined>(undefined);
   const [etat, setEtat] = useState<"chargement" | "pret" | "impossible">("chargement");
   const [message, setMessage] = useState("");
+  // Ouvrir ou refermer un verrou redessine la page (document verrouillé ou non).
+  useSyncExternalStore(abonnerVerrous, versionVerrous, () => 0);
   const t = useTextes("calame");
   const premierTitre = useRef(t("premier"));
 
@@ -150,6 +155,17 @@ export function Calame() {
     };
     window.addEventListener(EVENEMENT_RECU, surReception);
     return () => window.removeEventListener(EVENEMENT_RECU, surReception);
+  }, []);
+
+  // Un document modifié sur deux appareils : les deux versions sont gardées, et on le dit.
+  useEffect(() => {
+    const surConflit = (e: Event) => {
+      const titres = (e as CustomEvent<string[]>).detail ?? [];
+      if (titres.length === 0) return;
+      setMessage(`Modifié sur deux appareils à la fois : rien n'est perdu, l'autre version est gardée à côté (${titres.map((t) => `« ${t} »`).join(", ")}). Compare-les, puis garde celle que tu veux.`);
+    };
+    window.addEventListener(EVENEMENT_CONFLIT, surConflit);
+    return () => window.removeEventListener(EVENEMENT_CONFLIT, surConflit);
   }, []);
 
   const ouvrir = useCallback(
@@ -318,6 +334,11 @@ export function Calame() {
     );
   }
 
+  // Un document verrouillé (appareil partagé) : son code avant tout.
+  // (le verrou se lit sur la liste à jour : il peut avoir été posé depuis l'ouverture du document)
+  const verrouOuvert = extrasDe(documents.find((d) => d.id === ouvert.id) ?? ouvert).verrou;
+  const verrouille = Boolean(verrouOuvert) && !estOuvert(ouvert.id);
+  const autreQueVerrouille = verrouille ? documents.find((d) => d.id !== ouvert.id && actif(d) && (!extrasDe(d).verrou || estOuvert(d.id))) : undefined;
   const docsOnglets = onglets.map((id) => documents.find((d) => d.id === id)).filter((d): d is DocumentAtelier => Boolean(d) && actif(d as DocumentAtelier));
 
   return (
@@ -327,6 +348,9 @@ export function Calame() {
           {message}
         </p>
       )}
+      {verrouille ? (
+        <EcranVerrou doc={ouvert} verrou={verrouOuvert!} surAutre={autreQueVerrouille ? () => afficher(autreQueVerrouille) : undefined} />
+      ) : (
       <Atelier
         key={ouvert.id}
         doc={ouvert}
@@ -346,6 +370,7 @@ export function Calame() {
         surBienvenue={() => void bienvenue()}
         surModele={(d) => void depuisModele(d)}
       />
+      )}
     </>
   );
 }

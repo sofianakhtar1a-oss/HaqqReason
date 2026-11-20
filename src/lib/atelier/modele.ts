@@ -642,6 +642,8 @@ export type ExtrasDocument = {
   objectifMots: number;
   /** Échéance au format AAAA-MM-JJ, ou null. */
   echeance: string | null;
+  /** Verrou par un code (appareil partagé) : le sel et l'empreinte du code, jamais le code lui-même. */
+  verrou: { sel: string; empreinte: string } | null;
 };
 
 export const LIMITES_EXTRAS = { etiquettes: 20, etiquette: 40, propriete: 200, motsCles: 400, objectifMots: 10_000_000, corbeilleJours: 30 } as const;
@@ -666,7 +668,13 @@ export function nettoyerExtras(brut: unknown): ExtrasDocument {
     proprietes: { auteur: texte(p.auteur, LIMITES_EXTRAS.propriete), sujet: texte(p.sujet, LIMITES_EXTRAS.propriete), motsCles: texte(p.motsCles, LIMITES_EXTRAS.motsCles), statut },
     objectifMots: nombre(o.objectifMots, 0, LIMITES_EXTRAS.objectifMots, 0),
     echeance: typeof o.echeance === "string" && JOUR_ISO.test(o.echeance) ? o.echeance : null,
+    verrou: verrouValide(o.verrou),
   };
+}
+
+function verrouValide(v: unknown): ExtrasDocument["verrou"] {
+  const o = (v ?? {}) as Record<string, unknown>;
+  return typeof o.sel === "string" && /^[0-9a-f]{32}$/.test(o.sel) && typeof o.empreinte === "string" && /^[0-9a-f]{64}$/.test(o.empreinte) ? { sel: o.sel, empreinte: o.empreinte } : null;
 }
 
 /** Les champs facultatifs d'un document, valeurs par défaut comprises. */

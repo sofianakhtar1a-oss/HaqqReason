@@ -13,6 +13,7 @@ import { sophismeParCle } from "@/lib/sophismes";
 import { entreesBibliographie, entreesGlossaire, hadithsDuDocument, ouvragesCites, sourcesLibres, styleDe, versetsDuDocument } from "./blocs/Sources";
 import { construirePaquet, nomDeFichier, telecharger } from "./exporter";
 import { rasteriser, type ImageRaster } from "./rasteriser";
+import { estOuvert } from "./verrou";
 
 /*
  * Le Calame — les sorties complètes : Word avec ses notes et ses schémas, Markdown avec ses
@@ -286,7 +287,15 @@ export async function exporterEpub(doc: DocumentAtelier, editor: Editor | null):
 
 /** Chaque document en .calame (tout compris, à rouvrir dans le Calame) et en .md (lisible partout). */
 export async function exporterTousLesDocuments(): Promise<number> {
-  const documents = (await listerDocuments()).filter((d) => !extrasDe(d).corbeille);
+  const { octets, nombre } = await construireArchiveComplete();
+  telecharger(`calame-${new Date().toISOString().slice(0, 10)}.zip`, octets, "application/zip");
+  return nombre;
+}
+
+/** L'archive de tous les documents (pour le téléchargement, ou la sauvegarde automatique dans un dossier). */
+export async function construireArchiveComplete(): Promise<{ octets: Uint8Array; nombre: number }> {
+  // Un document verrouillé ne part dans l'archive que s'il a été ouvert avec son code.
+  const documents = (await listerDocuments()).filter((d) => !extrasDe(d).corbeille && (!extrasDe(d).verrou || estOuvert(d.id)));
   const archive: Zippable = {};
   const pris = new Set<string>();
   for (const d of documents) {
@@ -301,8 +310,7 @@ export async function exporterTousLesDocuments(): Promise<number> {
       `• Les fichiers .calame contiennent tout (texte, mise en page, images) : ouvre-les dans le Calame (bouton « Importer »).\n` +
       `• Le dossier « markdown » contient le texte seul, lisible dans n'importe quel éditeur.\n`,
   );
-  telecharger(`calame-${new Date().toISOString().slice(0, 10)}.zip`, zipSync(archive, { level: 6 }), "application/zip");
-  return documents.length;
+  return { octets: zipSync(archive, { level: 6 }), nombre: documents.length };
 }
 
 // ---------------------------------------------------------------------------

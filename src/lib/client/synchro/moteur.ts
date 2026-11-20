@@ -26,11 +26,33 @@ import {
   type Trace,
 } from "./journal";
 import { ADAPTATEURS } from "./magasins";
+import * as depot from "@/lib/atelier/depot";
 
 type Memoire = { curseur: number; amorce: boolean };
 type Ligne = { m: string; c: string; v: unknown; q: number; j: number };
 
 const SUPPRIME = "supprime";
+/** Envoyé quand un document modifié sur deux appareils a été gardé en double ; detail : les titres des copies. */
+export const EVENEMENT_CONFLIT = "haqqreason:synchro-conflit";
+
+/**
+ * Un document du Calame modifié sur deux appareils depuis leur dernière version commune : au lieu que
+ * la plus récente écrase l'autre, la version perdante est gardée à côté, sous un nom qui le dit.
+ * Rend le titre de la copie (ou null quand il n'y avait rien à garder).
+ */
+async function garderLesDeux(l: Ligne, trace: Trace | undefined): Promise<string | null> {
+  if (l.m !== "calame-documents" || !trace || trace.p !== 1 || trace.qs === undefined || l.v === null || l.q === trace.qs) return null;
+  const adaptateur = ADAPTATEURS["calame-documents"];
+  const local = await adaptateur.lire(l.c);
+  if (!local || empreinte(local) === empreinte(l.v)) return null;
+  const distantGagne = l.q > trace.q;
+  // La version qui va disparaître : celle de cet appareil si le compte l'emporte, celle du compte sinon.
+  const perdante = (distantGagne ? local : l.v) as { titre?: string; id?: string } & Record<string, unknown>;
+  const provenance = distantGagne ? "version de cet appareil" : "version d'un autre appareil";
+  const copie = { ...perdante, id: depot.nouvelIdentifiant(), titre: `${perdante.titre || "Sans titre"} (${provenance})`, modifie: new Date().toISOString() };
+  await depot.ecrireDocument(copie as unknown as Parameters<typeof depot.ecrireDocument>[0]);
+  return copie.titre;
+}
 /** Poids d'un envoi : bien en dessous de ce qu'accepte l'hébergement pour une requête. */
 const POIDS_LOT = 1_500_000;
 
@@ -76,6 +98,7 @@ async function amorcer() {
 
 async function recevoir(memoire: Memoire): Promise<Set<string>> {
   const touches = new Set<string>();
+  const copies: string[] = [];
   for (let tour = 0; tour < 400; tour++) {
     const reponse = await fetch(`/api/compte/donnees?depuis=${memoire.curseur}`, { cache: "no-store" });
     if (reponse.status === 401) throw new Deconnecte();
@@ -87,6 +110,15 @@ async function recevoir(memoire: Memoire): Promise<Set<string>> {
       if (adaptateur) {
         const trace = await lireTrace(l.m, l.c);
         const dejaCommun = trace && !trace.p && trace.qs === l.q;
+        try {
+          const copie = dejaCommun ? null : await garderLesDeux(l, trace);
+          if (copie) {
+            copies.push(copie);
+            touches.add("calame-documents");
+          }
+        } catch {
+          // La copie de sûreté a échoué : on continue comme avant (la plus récente l'emporte).
+        }
         if (!dejaCommun && (!trace || l.q > trace.q || trace.q <= 1)) {
           try {
             const suite = l.v === null ? await adaptateur.effacer(l.c) : await adaptateur.ecrire(l.c, l.v);
@@ -104,6 +136,7 @@ async function recevoir(memoire: Memoire): Promise<Set<string>> {
     }
     ecrireMemoire(memoire);
   }
+  if (copies.length > 0) window.dispatchEvent(new CustomEvent(EVENEMENT_CONFLIT, { detail: copies }));
   return touches;
 }
 

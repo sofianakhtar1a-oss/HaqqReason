@@ -143,8 +143,53 @@ export async function ajouterVersion(version: Omit<VersionAtelier, "id">): Promi
   const ordinaires = (await listerVersions(version.documentId)).filter((v) => !v.nom);
   for (const vieille of ordinaires.slice(LIMITES_ATELIER.versions)) {
     await enPromesse((await magasin(VERSIONS, "readwrite")).delete(vieille.id));
+    await noter("calame-versions", vieille.id);
   }
+  // Suivies sur le compte : la nouvelle, et celle qui sort des plus récentes (elle n'y reste plus).
+  await noter("calame-versions", id);
+  const sortante = ordinaires[VERSIONS_SUIVIES];
+  if (sortante) await noter("calame-versions", sortante.id);
   return id;
+}
+
+/**
+ * Les versions qui suivent le compte d'un appareil à l'autre : toutes les versions nommées, et les
+ * plus récentes des autres (les plus anciennes restent sur l'appareil, pour ménager la place du compte).
+ */
+export const VERSIONS_SUIVIES = 10;
+
+export async function versionsSuivies(): Promise<VersionAtelier[]> {
+  const toutes = (await enPromesse((await magasin(VERSIONS, "readonly")).getAll())) as VersionAtelier[];
+  const parDoc = new Map<string, VersionAtelier[]>();
+  for (const v of toutes) parDoc.set(v.documentId, [...(parDoc.get(v.documentId) ?? []), v]);
+  const suivies: VersionAtelier[] = [];
+  for (const liste of parDoc.values()) {
+    liste.sort((a, b) => b.quand.localeCompare(a.quand));
+    suivies.push(...liste.filter((v) => v.nom), ...liste.filter((v) => !v.nom).slice(0, VERSIONS_SUIVIES));
+  }
+  return suivies;
+}
+
+/** Une version, si elle fait partie de celles qui suivent le compte (sinon : absente du compte). */
+export async function versionSuivie(id: string): Promise<VersionAtelier | undefined> {
+  const v = await lireVersion(id);
+  if (!v) return undefined;
+  if (v.nom) return v;
+  const recentes = (await listerVersions(v.documentId)).filter((x) => !x.nom).slice(0, VERSIONS_SUIVIES);
+  return recentes.some((x) => x.id === id) ? v : undefined;
+}
+
+/** Range une version venue d'un autre appareil (sans rien noter au journal). */
+export async function rangerVersion(brut: unknown): Promise<void> {
+  const v = (brut ?? {}) as Partial<VersionAtelier>;
+  if (typeof v.id !== "string" || typeof v.documentId !== "string" || typeof v.quand !== "string") return;
+  await enPromesse((await magasin(VERSIONS, "readwrite")).put({ ...v, titre: String(v.titre ?? ""), deltaMots: Number(v.deltaMots) || 0 }));
+}
+
+export async function supprimerVersionBrute(id: string): Promise<void> {
+  const v = await lireVersion(id);
+  // Une version nommée n'est retirée que si elle l'a été exprès ailleurs (elle n'arrive alors plus nommée).
+  if (v) await enPromesse((await magasin(VERSIONS, "readwrite")).delete(id));
 }
 
 export async function lireVersion(id: string): Promise<VersionAtelier | null> {
@@ -160,10 +205,32 @@ export async function nommerVersion(id: string, nom: string): Promise<void> {
   if (propre) aJour.nom = propre;
   else delete aJour.nom;
   await enPromesse((await magasin(VERSIONS, "readwrite")).put(aJour));
+  await noter("calame-versions", id);
 }
 
 export async function supprimerVersion(id: string): Promise<void> {
   await enPromesse((await magasin(VERSIONS, "readwrite")).delete(id));
+  await noter("calame-versions", id);
+}
+
+/** La place qu'un document occupe sur l'appareil : son texte, ses versions, ses images et pièces jointes. */
+export async function placeDuDocument(id: string): Promise<{ texte: number; versions: number; fichiers: number; nbVersions: number; nbFichiers: number } | null> {
+  const doc = await lireDocument(id);
+  if (!doc) return null;
+  const texte = new Blob([JSON.stringify(doc)]).size;
+  const versions = await listerVersions(id);
+  let poidsVersions = 0;
+  for (const v of versions) poidsVersions += JSON.stringify(v.contenu ?? null).length;
+  let fichiers = 0;
+  let nbFichiers = 0;
+  for (const f of fichiersCites(doc.contenu)) {
+    const fiche = (await enPromesse((await magasin(FICHIERS, "readonly")).get(f))) as FichierRange | undefined;
+    if (fiche) {
+      fichiers += fiche.taille;
+      nbFichiers++;
+    }
+  }
+  return { texte, versions: poidsVersions, fichiers, nbVersions: versions.length, nbFichiers };
 }
 
 // ---------------------------------------------------------------------------
