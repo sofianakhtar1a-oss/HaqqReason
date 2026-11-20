@@ -909,6 +909,9 @@
 .ec-verdict[data-verdict="faux"] .ec-verdict-titre {
   color: var(--ec-carmin);
 }
+.ec-verdict-titre {
+  scroll-margin-top: 0.8rem;
+}
 
 /* Le bilan */
 .ec-bilan-titre {
@@ -1541,6 +1544,13 @@
     border-right: 0;
     border-top: 1px solid var(--ec-filet);
     padding: 1.1rem 1rem 2rem;
+  }
+  /* Sur téléphone, « Continuer » reste à portée du pouce pendant qu'on lit la fiche. */
+  .ec-continuer {
+    position: sticky;
+    bottom: 0.8rem;
+    z-index: 2;
+    box-shadow: 0 10px 28px rgb(0 0 0 / 0.5);
   }
   .ec-hero-titre {
     font-size: 1.9rem;

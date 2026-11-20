@@ -135,6 +135,16 @@ export function Partie({ lancement, stage, fermer, relancer }: { lancement: Lanc
     if (q?.reponse === "ecrit" && !reponse) champ.current?.focus();
   }, [q, reponse]);
 
+  // Le verdict se lit d'abord (sur téléphone, le panneau défile jusqu'à lui) ; « Continuer » reçoit le focus sans faire défiler.
+  const verdictTitre = useRef<HTMLParagraphElement>(null);
+  const continuer = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    if (!reponse) return;
+    continuer.current?.focus({ preventScroll: true });
+    const calme = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    verdictTitre.current?.scrollIntoView({ block: "nearest", behavior: calme ? "auto" : "smooth" });
+  }, [reponse]);
+
   /* ---------- Répondre ---------- */
 
   const repondre = useCallback(
@@ -372,13 +382,13 @@ export function Partie({ lancement, stage, fermer, relancer }: { lancement: Lanc
 
       {reponse && (
         <div className="ec-verdict" data-verdict={reponse.verdict}>
-          <p className="ec-verdict-titre">
+          <p className="ec-verdict-titre" ref={verdictTitre}>
             {reponse.verdict === "juste" ? "Juste." : reponse.verdict === "presque" ? "Presque : c'est bien cela, à une lettre près." : q.reponse === "clic" && reponse.touche && PAR_ID.has(reponse.touche) ? `Non : tu as touché ${article(PAR_ID.get(reponse.touche)!)}.` : "Non."}
           </p>
           {bon && <Cartel e={bon} complet={lancement.sorte !== "eclair"} latin={p.latin} />}
           {sujet && bon && sujet.id !== bon.id && q.type !== "intrus" && <p className="ec-note">La question portait sur : {sujet.nom}.</p>}
           {lancement.sorte !== "eclair" && (
-            <button type="button" className="ec-bouton est-plein est-grand" onClick={suivante} autoFocus>
+            <button type="button" className="ec-bouton est-plein est-grand ec-continuer" onClick={suivante} ref={continuer}>
               Continuer <ChevronRight size={16} aria-hidden="true" />
             </button>
           )}

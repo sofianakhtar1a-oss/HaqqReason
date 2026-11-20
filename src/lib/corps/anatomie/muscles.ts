@@ -159,11 +159,11 @@ function tete(pieces: Piece[]) {
     "grand-zygomatique",
     fuseau(
       [
-        [0.053, 1.601, 0.052],
-        [0.042, 1.585, 0.068],
-        [0.027, 1.566, 0.08],
+        [0.054, 1.601, 0.06],
+        [0.042, 1.582, 0.0645],
+        [0.03, 1.562, 0.0665],
       ],
-      { rayon: 0.0033, bout: 0.0018, ovale: 0.55, indice: [0.6, 0, 0.8] },
+      { rayon: 0.0048, bout: 0.0024, ovale: 0.42, indice: [0.72, -0.5, -0.41] },
     ),
   );
   m0.pair(
@@ -171,24 +171,40 @@ function tete(pieces: Piece[]) {
     "releveur-levre-superieure",
     fuseau(
       [
-        [0.026, 1.608, 0.074],
-        [0.02, 1.588, 0.083],
-        [0.013, 1.572, 0.089],
+        [0.026, 1.606, 0.064],
+        [0.019, 1.589, 0.0665],
+        [0.013, 1.574, 0.0785],
       ],
-      { rayon: 0.0034, bout: 0.0022, ovale: 0.45, indice: [1, 0, 0] },
+      { rayon: 0.0046, bout: 0.003, ovale: 0.4, indice: [1, 0, 0] },
     ),
   );
   m0.pair(
     "abaisseur-angle-bouche",
     "abaisseur-angle-bouche",
-    fuseau(
-      [
-        [0.036, 1.536, 0.063],
-        [0.031, 1.547, 0.073],
-        [0.026, 1.557, 0.079],
+    nappe({
+      origine: [
+        [0.04, 1.53, 0.045],
+        [0.034, 1.528, 0.054],
+        [0.027, 1.528, 0.062],
       ],
-      { rayon: 0.0048, bout: 0.002, ventre: 0.25, ovale: 0.45, indice: [1, 0, 0] },
-    ),
+      milieux: [
+        [
+          [0.037, 1.543, 0.054],
+          [0.032, 1.543, 0.06],
+          [0.027, 1.544, 0.066],
+        ],
+      ],
+      insertion: [
+        [0.032, 1.557, 0.064],
+        [0.03, 1.558, 0.066],
+        [0.028, 1.559, 0.068],
+      ],
+      epaisseur: 0.0042,
+      dedans: [0.02, 1.545, 0.035],
+      nu: 6,
+      nv: 9,
+      attaches: 0.5,
+    }),
   );
   m1.pair(
     "buccinateur",
@@ -247,7 +263,7 @@ function cou(pieces: Piece[]) {
         [0.051, 1.53, 0.022],
         [0.056, 1.57, -0.012],
       ],
-      { rayon: 0.0118, bout: 0.0035, ventre: 0.35, ovale: 0.36, indice: [0.8, 0, 0.6] },
+      { rayon: 0.0118, bout: 0.0035, ventre: 0.35, ovale: 0.42, indice: [-0.62, 0.3, 0.72] },
     ),
   );
   // Le trapèze : un grand losange, de l'occiput aux dernières vertèbres thoraciques, jusqu'à la clavicule, l'acromion et l'épine.
@@ -1195,12 +1211,13 @@ function membreSuperieur(pieces: Piece[]) {
       { rayon: 0.0068, bout: 0.003, ventre: 0.35, ovale: 0.5, indice: [0, 0, 1] },
     ),
   );
+  // L'avant-bras : des ventres pleins près du coude, qui se touchent et s'effilent en tendons vers le poignet.
+  const avantBras = (pts: Pt[], o: Parameters<typeof surMembre>[2]) => surMembre(A, pts, { ...o, rayon: o.rayon * (o.rayon < 0.008 ? 1.12 : 1.24), pointe: o.pointe ?? 0.46 });
   // L'avant-bras, en dehors et en arrière : les extenseurs et le brachio-radial.
   m0.pair(
     "brachio-radial",
     "brachio-radial",
-    surMembre(
-      A,
+    avantBras(
       [
         [0.05, 86, 0.032],
         [0.25, 76, 0.034],
@@ -1213,8 +1230,7 @@ function membreSuperieur(pieces: Piece[]) {
   m0.pair(
     "lerc",
     "long-extenseur-radial-carpe",
-    surMembre(
-      A,
+    avantBras(
       [
         [0.08, 106, 0.03],
         [0.3, 110, 0.028],
@@ -1226,8 +1242,7 @@ function membreSuperieur(pieces: Piece[]) {
   m1.pair(
     "cerc",
     "court-extenseur-radial-carpe",
-    surMembre(
-      A,
+    avantBras(
       [
         [0.15, 126, 0.026],
         [0.4, 125, 0.024],
@@ -1239,8 +1254,7 @@ function membreSuperieur(pieces: Piece[]) {
   m0.pair(
     "extenseur-doigts",
     "extenseur-doigts",
-    surMembre(
-      A,
+    avantBras(
       [
         [0.12, 150, 0.025],
         [0.4, 160, 0.024],
@@ -1252,8 +1266,7 @@ function membreSuperieur(pieces: Piece[]) {
   m0.pair(
     "extenseur-ulnaire-carpe",
     "extenseur-ulnaire-carpe",
-    surMembre(
-      A,
+    avantBras(
       [
         [0.12, 192, 0.022],
         [0.45, 205, 0.02],
@@ -1265,8 +1278,7 @@ function membreSuperieur(pieces: Piece[]) {
   m0.pair(
     "long-abducteur-pouce",
     "long-abducteur-pouce",
-    surMembre(
-      A,
+    avantBras(
       [
         [0.4, 142, 0.02],
         [0.6, 122, 0.022],
@@ -1279,8 +1291,7 @@ function membreSuperieur(pieces: Piece[]) {
   m0.pair(
     "court-extenseur-pouce",
     "court-extenseur-pouce",
-    surMembre(
-      A,
+    avantBras(
       [
         [0.55, 136, 0.02],
         [0.72, 112, 0.021],
@@ -1306,8 +1317,7 @@ function membreSuperieur(pieces: Piece[]) {
   m0.pair(
     "rond-pronateur",
     "rond-pronateur",
-    surMembre(
-      A,
+    avantBras(
       [
         [0.08, -60, 0.026],
         [0.25, -12, 0.027],
@@ -1319,8 +1329,7 @@ function membreSuperieur(pieces: Piece[]) {
   m0.pair(
     "flechisseur-radial-carpe",
     "flechisseur-radial-carpe",
-    surMembre(
-      A,
+    avantBras(
       [
         [0.1, -55, 0.026],
         [0.35, -35, 0.027],
@@ -1332,8 +1341,7 @@ function membreSuperieur(pieces: Piece[]) {
   m0.pair(
     "long-palmaire",
     "long-palmaire",
-    surMembre(
-      A,
+    avantBras(
       [
         [0.1, -72, 0.027],
         [0.3, -56, 0.03],
@@ -1345,8 +1353,7 @@ function membreSuperieur(pieces: Piece[]) {
   m0.pair(
     "flechisseur-ulnaire-carpe",
     "flechisseur-ulnaire-carpe",
-    surMembre(
-      A,
+    avantBras(
       [
         [0.08, -106, 0.026],
         [0.35, -110, 0.026],
@@ -1359,8 +1366,7 @@ function membreSuperieur(pieces: Piece[]) {
   m1.pair(
     "flechisseur-superficiel-doigts",
     "flechisseur-superficiel-doigts",
-    surMembre(
-      A,
+    avantBras(
       [
         [0.15, -75, 0.02],
         [0.45, -55, 0.021],
@@ -1372,8 +1378,7 @@ function membreSuperieur(pieces: Piece[]) {
   m2.pair(
     "flechisseur-profond-doigts",
     "flechisseur-profond-doigts",
-    surMembre(
-      A,
+    avantBras(
       [
         [0.08, -96, 0.014],
         [0.4, -76, 0.014],
@@ -1385,8 +1390,7 @@ function membreSuperieur(pieces: Piece[]) {
   m2.pair(
     "long-flechisseur-pouce",
     "long-flechisseur-pouce",
-    surMembre(
-      A,
+    avantBras(
       [
         [0.3, 56, 0.014],
         [0.6, 40, 0.015],
