@@ -194,6 +194,7 @@ export function PanneauDocument({ doc, mots, surModifier, surDupliquer, surCorbe
           <input type="date" className="champ" value={extras.echeance ?? ""} onChange={(e) => surModifier({ echeance: e.target.value || null })} />
         </label>
         {delai && <p className="inspecteur-aide" data-alerte={delai.jours < 0 ? "" : undefined}>Échéance {delai.texte}.</p>}
+        {extras.echeance && delai && delai.jours >= 1 && <p className="inspecteur-aide">Un rappel arrive la veille sur ton téléphone si les rappels sont acceptés (onglet « Bilan »).</p>}
       </section>
 
       <section className="calame-section calame-actions">

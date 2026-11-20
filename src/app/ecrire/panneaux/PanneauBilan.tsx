@@ -6,6 +6,7 @@ import { derniersJours, serieEnCours } from "@/lib/atelier/journal-ecriture";
 import { modifierPreferences } from "@/lib/atelier/preferences";
 import { useJournal, usePreferences } from "../crochets";
 import { JALONS } from "../jalons";
+import { PanneauRappels } from "./PanneauRappels";
 
 type Props = {
   /** Démarre une séance chronométrée (minutes). */
@@ -133,6 +134,8 @@ export function PanneauBilan({ surSeance, seanceEnCours }: Props) {
           </div>
         </dl>
       </section>
+
+      <PanneauRappels />
 
       <section className="calame-section">
         <h3 className="calame-section-titre">

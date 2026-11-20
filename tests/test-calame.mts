@@ -27,6 +27,8 @@ import { lemmeDe, sectionFrancaise, synonymesDe, traductionsAnglaises } from "..
 import { decouper, remarqueTue, texteAvecPositions } from "../src/app/ecrire/extensions/grammaire";
 import { formesDeRecherche, motSousLeCurseur } from "../src/app/ecrire/DialogueMot";
 import { FICHIER_LEXIQUE } from "../src/lib/atelier/lexique-fichier";
+import { echeancesCandidates, fuseauValide, momentLocal, nettoyerRappel, rappelDu, veilleDue } from "../src/lib/atelier/rappels";
+import { paragraphesDe } from "../src/app/ecrire/partage-recu";
 
 let echecs = 0;
 const ok = (nom: string, cond: boolean, detail = "") => {
@@ -414,6 +416,33 @@ ok("sens : sans lettre", !commenceEnArabe("12 — 34"));
     const lex = JSON.parse(readFileSync(fichier, "utf8")) as Record<string, [string, string][]>;
     ok("mot : « maison » s'y traduit", (lex.maison ?? []).some(([e]) => e === "house"), JSON.stringify(lex.maison));
   }
+}
+
+
+// ---------------------------------------------------------------- rappels d'écriture et partage reçu
+{
+  const paris = "Europe/Paris";
+  // 20 novembre 2026, 17 h 05 UTC = 18 h 05 à Paris (heure d'hiver), un vendredi.
+  const quand = new Date("2026-11-20T17:05:00Z");
+  ok("rappels : moment local à Paris", JSON.stringify(momentLocal(paris, quand)) === JSON.stringify({ jour: "2026-11-20", minutes: 18 * 60 + 5, semaine: 5 }), JSON.stringify(momentLocal(paris, quand)));
+  const r = nettoyerRappel({ actif: true, heure: "18:00", jours: [5], fuseau: paris });
+  ok("rappels : dû à l'heure choisie", rappelDu(r, quand, undefined) === "2026-11-20");
+  ok("rappels : jamais deux fois le même jour", rappelDu(r, quand, "2026-11-20") === null);
+  ok("rappels : pas avant l'heure", rappelDu(nettoyerRappel({ ...r, heure: "18:30" }), quand, undefined) === null);
+  ok("rappels : pas un autre jour", rappelDu(nettoyerRappel({ ...r, jours: [1, 2] }), quand, undefined) === null);
+  ok("rappels : trop tard, on s'abstient", rappelDu(nettoyerRappel({ ...r, heure: "08:00" }), quand, undefined) === null);
+  ok("rappels : désactivé", rappelDu(nettoyerRappel({ ...r, actif: false }), quand, undefined) === null);
+  ok("rappels : autre fuseau (New York, 12 h 05)", rappelDu(nettoyerRappel({ ...r, heure: "12:00", fuseau: "America/New_York" }), quand, undefined) === "2026-11-20");
+  ok("rappels : la veille d'une échéance", veilleDue(r, quand, "2026-11-21", undefined) && !veilleDue(r, quand, "2026-11-21", "2026-11-21") && !veilleDue(r, quand, "2026-11-22", undefined));
+  ok("rappels : veille désactivée", !veilleDue(nettoyerRappel({ ...r, veille: false }), quand, "2026-11-21", undefined));
+  ok("rappels : échéances candidates autour de demain", echeancesCandidates(quand).includes("2026-11-21"));
+  ok("rappels : réglages abîmés remis d'aplomb", JSON.stringify(nettoyerRappel({ heure: "25:99", jours: [9, "x", 3, 3] })) === JSON.stringify({ actif: false, heure: "18:00", jours: [3], veille: true, fuseau: "" }));
+  ok("rappels : fuseau inconnu → Paris", fuseauValide("Mars/Olympus") === "Europe/Paris" && fuseauValide("Asia/Tokyo") === "Asia/Tokyo");
+  ok("rappels : préférences avec rappel par défaut", nettoyerPreferences({}).rappel.actif === false && nettoyerPreferences({ rappel: { actif: true } }).rappel.actif === true);
+
+  const paras = paragraphesDe("Premier paragraphe\nsur deux lignes.\n\nVoir https://haqqreason.vercel.app/islam, merci.");
+  ok("partage : paragraphes et retours à la ligne", paras.length === 2 && JSON.stringify(paras[0]).includes("hardBreak"));
+  ok("partage : adresses devenues des liens (sans la ponctuation)", JSON.stringify(paras[1]).includes('"href":"https://haqqreason.vercel.app/islam"'));
 }
 
 console.log(echecs ? `\n${echecs} échec(s).` : "Tout est bon (Calame).");

@@ -1,0 +1,14 @@
+name: Rappels du Calame
+# Tous les quarts d'heure : le site envoie les rappels d'écriture dus (à l'heure choisie par chacun)
+# et prévient la veille des échéances. Appeler plus souvent n'envoie rien de plus.
+on:
+  schedule:
+    - cron: "7,22,37,52 * * * *"
+  workflow_dispatch:
+permissions: {}
+jobs:
+  rappels:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - run: curl -fsS -m 90 -X POST "https://haqqreason.vercel.app/api/calame/rappels" || true

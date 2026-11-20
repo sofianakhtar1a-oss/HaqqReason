@@ -22,10 +22,23 @@ export default function manifest(): MetadataRoute.Manifest {
       { src: "/icones/icone-masquable-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
       { src: "/icon.svg", sizes: "any", type: "image/svg+xml", purpose: "any" },
     ],
+    // Le Calame reçoit ce qu'on partage depuis une autre application : un texte, un lien, une photo, un PDF.
+    share_target: {
+      action: "/ecrire/recu",
+      method: "POST",
+      enctype: "multipart/form-data",
+      params: {
+        title: "titre",
+        text: "texte",
+        url: "lien",
+        files: [{ name: "fichiers", accept: ["image/*", "application/pdf", "text/plain", "text/markdown", ".txt", ".md"] }],
+      },
+    },
     shortcuts: [
       { name: "Rechercher", url: "/recherche", icons: [{ src: "/icones/icone-192.png", sizes: "192x192" }] },
       { name: "Débat express", url: "/debat", icons: [{ src: "/icones/icone-192.png", sizes: "192x192" }] },
       { name: "Mes favoris", url: "/favoris", icons: [{ src: "/icones/icone-192.png", sizes: "192x192" }] },
+      { name: "Écrire (le Calame)", url: "/ecrire", icons: [{ src: "/icones/icone-192.png", sizes: "192x192" }] },
     ],
   };
 }

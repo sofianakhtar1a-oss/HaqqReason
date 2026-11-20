@@ -12,6 +12,8 @@ const PAGES = `${VERSION}-pages`;
 const STATIQUE = `${VERSION}-statique`;
 const GARDE = "hr-favoris";
 const PORTULAN = "hr-portulan";
+/* Ce qu'une autre application partage avec le Calame, le temps que la page le prenne. */
+const RECU = "hr-calame-recu";
 const MAX_PORTULAN = 900;
 const MAX_PAGES = 150;
 const PRECHARGE = ["/hors-ligne", "/favoris", "/icon.svg", "/icones/icone-192.png"];
@@ -29,7 +31,7 @@ self.addEventListener("activate", (e) => {
   e.waitUntil(
     caches
       .keys()
-      .then((cles) => Promise.all(cles.filter((c) => ![PAGES, STATIQUE, GARDE, PORTULAN].includes(c)).map((c) => caches.delete(c))))
+      .then((cles) => Promise.all(cles.filter((c) => ![PAGES, STATIQUE, GARDE, PORTULAN, RECU].includes(c)).map((c) => caches.delete(c))))
       .then(() => self.clients.claim()),
   );
 });
@@ -121,6 +123,48 @@ self.addEventListener("fetch", (e) => {
   if (requete.mode === "navigate" && PUBLIC.test(url.pathname) && !url.searchParams.has("_rsc")) {
     e.respondWith(pageDepuisReseau(requete));
   }
+});
+
+/* ---------- Le Calame, destination de partage ---------- */
+
+/*
+ * « Partager » depuis une autre application envoie un formulaire à /ecrire/recu : le service le garde
+ * (texte, lien, fichiers) dans un espace à part, puis ouvre le Calame qui en fait un document.
+ */
+self.addEventListener("fetch", (e) => {
+  const requete = e.request;
+  if (requete.method !== "POST") return;
+  const url = new URL(requete.url);
+  if (url.origin !== self.location.origin || url.pathname !== "/ecrire/recu") return;
+  e.respondWith(
+    (async () => {
+      try {
+        const donnees = await requete.formData();
+        const id = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+        const champ = (nom, max) => String(donnees.get(nom) || "").slice(0, max);
+        const fichiers = donnees
+          .getAll("fichiers")
+          .filter((f) => f && typeof f === "object" && f.size > 0)
+          .slice(0, 12);
+        const cache = await caches.open(RECU);
+        // Un partage ancien jamais ouvert ne s'accumule pas.
+        for (const cle of await cache.keys()) {
+          const morceaux = new URL(cle.url).pathname.split("/");
+          const quand = parseInt((morceaux[3] || "").slice(0, -4), 36);
+          if (!quand || Date.now() - quand > 7 * 86400000) await cache.delete(cle);
+        }
+        const liste = fichiers.map((f, i) => ({ nom: String(f.name || `fichier-${i + 1}`).slice(0, 200), type: f.type || "", taille: f.size, chemin: `/ecrire/recu/${id}/f${i}` }));
+        await Promise.all(fichiers.map((f, i) => cache.put(liste[i].chemin, new Response(f, { headers: { "content-type": f.type || "application/octet-stream" } }))));
+        await cache.put(
+          `/ecrire/recu/${id}/paquet.json`,
+          new Response(JSON.stringify({ titre: champ("titre", 300), texte: champ("texte", 200000), lien: champ("lien", 2000), fichiers: liste, quand: Date.now() }), { headers: { "content-type": "application/json" } }),
+        );
+        return Response.redirect(`/ecrire?recu=${id}`, 303);
+      } catch {
+        return Response.redirect("/ecrire?recu=echec", 303);
+      }
+    })(),
+  );
 });
 
 /* ---------- Le Portulan hors ligne ---------- */

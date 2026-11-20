@@ -43,6 +43,7 @@ import "@fontsource/scheherazade-new/700.css";
 import "@fontsource/opendyslexic/400.css";
 import "@fontsource/opendyslexic/700.css";
 import "./calame-plus.css";
+import { departDuPartage, lirePartageRecu } from "./partage-recu";
 
 /** Le dernier document ouvert, pour ce compte et sur cet appareil. */
 const dernier = {
@@ -205,6 +206,25 @@ export function Calame() {
     },
     [afficher],
   );
+
+  // Un texte, un lien ou une photo envoyés depuis une autre application (« Partager » du téléphone).
+  const partageTraite = useRef(false);
+  useEffect(() => {
+    if (etat !== "pret" || partageTraite.current) return;
+    partageTraite.current = true;
+    void (async () => {
+      const recu = await lirePartageRecu(window.location.search).catch(() => null);
+      if (!recu) return;
+      window.history.replaceState(null, "", "/ecrire");
+      if ("erreur" in recu) {
+        setMessage(recu.erreur);
+        return;
+      }
+      const { depart, laisses } = await departDuPartage(recu);
+      await depuisModele(depart);
+      setMessage(laisses.length ? `Reçu dans un nouveau document. Pas pu entrer : ${laisses.join(", ")}.` : "Reçu dans un nouveau document.");
+    })();
+  }, [etat, depuisModele]);
 
   const bienvenue = useCallback(async () => {
     const doc: DocumentAtelier = { ...documentVide(nouvelIdentifiant(), "Bienvenue dans le Calame"), contenu: documentDeBienvenue() };

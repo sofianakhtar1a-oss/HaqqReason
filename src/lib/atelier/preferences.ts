@@ -11,6 +11,7 @@
  */
 
 import { tiroir } from "@/lib/client/compte";
+import { nettoyerRappel, RAPPEL_PAR_DEFAUT, type RappelEcriture } from "./rappels";
 import { noter } from "@/lib/client/synchro/journal";
 
 export const TRIS = [
@@ -64,6 +65,8 @@ export type PreferencesCalame = {
   jalons: string[];
   /** Mode machine à écrire : la ligne en cours reste au milieu de l'écran. */
   machineAEcrire: boolean;
+  /** Rappels d'écriture sur le téléphone (heure, jours, veille d'échéance). Le serveur les lit sur le compte. */
+  rappel: RappelEcriture;
   /** Dernière modification, en millisecondes : départage deux appareils. */
   q: number;
 };
@@ -85,6 +88,7 @@ export const PREFERENCES_PAR_DEFAUT: PreferencesCalame = {
   jeuParDefaut: null,
   jalons: [],
   machineAEcrire: false,
+  rappel: RAPPEL_PAR_DEFAUT,
   q: 0,
 };
 
@@ -127,6 +131,7 @@ export function nettoyerPreferences(brut: unknown): PreferencesCalame {
     jeuParDefaut: typeof o.jeuParDefaut === "string" && o.jeuParDefaut ? o.jeuParDefaut.slice(0, 40) : null,
     jalons: chaines(o.jalons, 200, 60),
     machineAEcrire: o.machineAEcrire === true,
+    rappel: nettoyerRappel(o.rappel),
     q: nombre(o.q, 0, Number.MAX_SAFE_INTEGER, 0),
   };
 }
