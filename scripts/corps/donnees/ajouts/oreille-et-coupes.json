@@ -1,0 +1,74 @@
+{
+ "structures": [
+  {
+   "nom": "Testicular artery",
+   "couche": "artere",
+   "forme": "coupe",
+   "objet": "testicular artery",
+   "jusqua": {
+    "objet": "Inguinal ligament",
+    "rel": [
+     -0.3,
+     0.3,
+     0
+    ]
+   },
+   "pudeur_ok": true,
+   "texte": "Branche de l'aorte abdominale née sous les artères rénales ; longue et grêle, elle descend sur le muscle grand psoas jusqu'à l'anneau inguinal profond, puis gagne le testicule par le cordon spermatique (partie non montrée)."
+  },
+  {
+   "nom": "Left testicular vein",
+   "couche": "veine",
+   "forme": "coupe",
+   "objet": "testicular vein",
+   "cotes": "gauche",
+   "jusqua": {
+    "objet": "Inguinal ligament",
+    "rel": [
+     -0.3,
+     0.3,
+     0
+    ]
+   },
+   "pudeur_ok": true,
+   "texte": "Née du plexus pampiniforme du cordon spermatique, elle remonte dans l'abdomen et se jette dans la veine rénale gauche, à angle droit."
+  },
+  {
+   "nom": "Right testicular vein",
+   "couche": "veine",
+   "forme": "coupe",
+   "objet": "testicular vein",
+   "cotes": "droite",
+   "jusqua": {
+    "objet": "Inguinal ligament",
+    "rel": [
+     -0.3,
+     0.3,
+     0
+    ]
+   },
+   "pudeur_ok": true,
+   "texte": "Née du plexus pampiniforme du cordon spermatique, elle remonte dans l'abdomen et se jette directement dans la veine cave inférieure, sous la veine rénale droite."
+  },
+  {
+   "nom": "Cochlea",
+   "couche": "viscere",
+   "forme": "spirale",
+   "en": {
+    "objet": "Cochlea",
+    "centre": true
+   },
+   "texte": "L'organe de l'audition : un conduit osseux enroulé sur deux tours et trois quarts autour d'un axe, le modiolus, creusé dans la partie pétreuse de l'os temporal. Tracé d'après la place et la taille de la cochlée de Z-Anatomy."
+  },
+  {
+   "nom": "Semicircular ducts",
+   "couche": "viscere",
+   "forme": "anneaux",
+   "en": {
+    "objet": "Vestibule",
+    "centre": true
+   },
+   "texte": "Trois conduits en anneau, antérieur, postérieur et latéral, disposés presque à angle droit les uns des autres : ils sentent les rotations de la tête et servent à l'équilibre."
+  }
+ ]
+}

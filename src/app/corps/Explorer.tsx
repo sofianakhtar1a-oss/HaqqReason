@@ -11,6 +11,7 @@ import { ATELIER_DEFAUT, Atelier, type EtatAtelier } from "./Atelier";
 import { calqueDElement } from "@/lib/corps/modele/modele";
 import { basculerFavori, boite, estFavori, useEcorche } from "@/lib/corps/progression";
 import { nomRegion } from "@/lib/corps/quiz";
+import { chercherReperes, useReperes } from "@/lib/corps/reperes";
 import { normaliser } from "@/lib/corps/texte";
 import { type Couche, type Element, GRANDES_REGIONS, REGIONS, type StructureScene } from "@/lib/corps/types";
 import { type Calques, Cartel, COUCHES_DEFAUT, type Couches, TEINTE, teinteMemoire, useCalme } from "./communs";
@@ -83,7 +84,20 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
   const [survole, setSurvole] = useState<StructureScene | null>(null);
   const [recherche, setRecherche] = useState("");
   const differee = useDeferredValue(recherche);
-  const choisi = detail && PAR_ID.has(detail) ? PAR_ID.get(detail)! : null;
+  // « explorer/<structure> » ou « explorer/<structure>/<repère> » : un repère se montre sur sa structure.
+  const [idDetail, cleRepere] = (detail ?? "").split("/");
+  const choisi = idDetail && PAR_ID.has(idDetail) ? PAR_ID.get(idDetail)! : null;
+  const reperes = useReperes(Boolean(choisi) || recherche.length >= 3);
+  const sesReperes = (choisi && reperes?.parStructure.get(choisi.id)) || [];
+  const repere = cleRepere && reperes ? reperes.parCle.get(cleRepere) : undefined;
+  const repereChoisi = repere && choisi && repere.sur === choisi.id ? repere : undefined;
+  const [tousReperes, setTousReperes] = useState(false);
+  /** Le repère d'un relief cité par la fiche : même nom, ou un nom qui le précise (« Tête » → « Tête de l'humérus »). */
+  const trouverRepere = (nom: string) => {
+    const n = normaliser(nom);
+    const r = sesReperes.find((x) => normaliser(x.nom) === n) ?? sesReperes.find((x) => normaliser(x.nom).startsWith(`${n} `)) ?? sesReperes.find((x) => n.startsWith(`${normaliser(x.nom)} `));
+    return r?.cle;
+  };
   // Le geste en train de se jouer (l'action d'un muscle), pour la légende sous le nom.
   const [geste, setGeste] = useState<Action | null>(null);
   const { fiche: ficheChoisie } = useFiche(choisi?.id);
@@ -217,16 +231,18 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
       rotation: !choisi,
       etiquette: survole
         ? { id: survole.element, texte: PAR_ID.get(survole.element)?.nom ?? "" }
-        : choisi
-          ? { id: choisi.id, texte: choisi.nom, sous: geste ? `${NOMS_ARTICULATIONS[geste.articulation] ?? geste.articulation} : ${(NOMS_MOUVEMENTS[geste.mouvement] ?? geste.mouvement).toLowerCase()}` : undefined }
-          : null,
+        : choisi && repereChoisi
+          ? { id: choisi.id, texte: repereChoisi.nom, sous: `Repère : ${choisi.nom}`, point: repereChoisi.p }
+          : choisi
+            ? { id: choisi.id, texte: choisi.nom, sous: geste ? `${NOMS_ARTICULATIONS[geste.articulation] ?? geste.articulation} : ${(NOMS_MOUVEMENTS[geste.mouvement] ?? geste.mouvement).toLowerCase()}` : undefined }
+            : null,
       retrait: false,
       coupe: atelier.coupe,
       eclate: atelier.eclate,
       scalpel: atelier.scalpel,
       vivant: atelier.coeur || atelier.souffle ? { coeur: atelier.coeur, souffle: atelier.souffle } : null,
     });
-  }, [stage, vraiesCouches, vraisCalques, voirAttaches, profondeurVue, etats, isole, memoire, choisi, survole, geste, atelier.coupe, atelier.eclate, atelier.scalpel, atelier.coeur, atelier.souffle]);
+  }, [stage, vraiesCouches, vraisCalques, voirAttaches, profondeurVue, etats, isole, memoire, choisi, survole, geste, repereChoisi, atelier.coupe, atelier.eclate, atelier.scalpel, atelier.coeur, atelier.souffle]);
 
   useEffect(() => {
     stage.surChoix((s) => {
@@ -273,6 +289,8 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
       .slice(0, 10)
       .map(([, x]) => x);
   }, [differee]);
+  // Les repères (reliefs des os, parties nommées) qui répondent aussi : après les structures.
+  const reperesTrouves = useMemo(() => (reperes ? chercherReperes(reperes, differee, Math.max(3, 12 - trouves.length)) : []), [reperes, differee, trouves.length]);
 
   return (
     <div className="ec-explorer">
@@ -326,8 +344,25 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
 
       <div className="ec-recherche">
         <Search size={16} aria-hidden="true" />
-        <input type="search" value={recherche} onChange={(ev) => setRecherche(ev.target.value)} placeholder="Chercher : deltoïde, fémur, aorte, rotule…" aria-label="Chercher une structure" />
-        {trouves.length > 0 && (
+        <input
+          type="search"
+          value={recherche}
+          onChange={(ev) => setRecherche(ev.target.value)}
+          onKeyDown={(ev) => {
+            // Entrée : la première réponse.
+            if (ev.key !== "Enter") return;
+            const x = trouves[0];
+            const r = reperesTrouves[0];
+            if (!x && !r) return;
+            ev.preventDefault();
+            setRecherche("");
+            if (x) choisir(x.id);
+            else if (r) nav.aller(`explorer/${r.sur}/${r.cle}`);
+          }}
+          placeholder="Chercher : deltoïde, fémur, aorte, tubercule majeur…"
+          aria-label="Chercher une structure ou un repère"
+        />
+        {trouves.length + reperesTrouves.length > 0 && (
           <ul className="ec-suggestions" role="listbox">
             {trouves.map((x) => (
               <li key={x.id}>
@@ -339,7 +374,22 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
                   }}
                 >
                   <b>{x.nom}</b>
-                  <i lang="la">{x.latin}</i>
+                  <i lang="la">{x.membres?.length ? `Ensemble de ${x.membres.length} structures` : x.latin}</i>
+                </button>
+              </li>
+            ))}
+            {reperesTrouves.map((r) => (
+              <li key={r.cle}>
+                <button
+                  type="button"
+                  className="est-repere"
+                  onClick={() => {
+                    setRecherche("");
+                    nav.aller(`explorer/${r.sur}/${r.cle}`);
+                  }}
+                >
+                  <b>{r.nom}</b>
+                  <i>Repère sur {PAR_ID.get(r.sur ?? "")?.nom ?? "le corps"}</i>
                 </button>
               </li>
             ))}
@@ -354,6 +404,7 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
             latin={e.profil.latin}
             aller={choisir}
             jouer={(a) => jouer([a])}
+            reperes={sesReperes.length ? { trouver: trouverRepere, montrer: (cle) => nav.aller(repereChoisi?.cle === cle ? `explorer/${choisi.id}` : `explorer/${choisi.id}/${cle}`), actif: repereChoisi?.cle } : undefined}
             actions={
               <>
                 {actionsDuMuscle &&
@@ -386,11 +437,30 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
               </>
             }
           />
+          {sesReperes.length > 0 && (
+            <section className="ec-liees ec-reperes">
+              <h3 className="ec-section-titre">
+                Ses repères <span>{sesReperes.length}</span>
+              </h3>
+              <div className="ec-boutons">
+                {(tousReperes ? sesReperes : sesReperes.slice(0, 18)).map((r) => (
+                  <button key={r.cle} type="button" className="ec-puce est-repere" aria-pressed={repereChoisi?.cle === r.cle} title={r.latin} onClick={() => nav.aller(repereChoisi?.cle === r.cle ? `explorer/${choisi.id}` : `explorer/${choisi.id}/${r.cle}`)}>
+                    {r.nom}
+                  </button>
+                ))}
+                {!tousReperes && sesReperes.length > 18 && (
+                  <button type="button" className="ec-puce est-suite" onClick={() => setTousReperes(true)}>
+                    Les {sesReperes.length - 18} autres…
+                  </button>
+                )}
+              </div>
+            </section>
+          )}
           {liees(choisi).length > 0 && (
             <section className="ec-liees">
               <h3 className="ec-section-titre">{choisi.membres?.length ? "Réunit" : choisi.couche === "os" ? "S'articule avec" : choisi.couche === "artere" ? "Son arbre" : "Liée à"}</h3>
               <div className="ec-boutons">
-                {liees(choisi).map((x) => (
+                {liees(choisi).filter((x, i, l) => l.findIndex((y) => y.nom === x.nom) === i).map((x) => (
                   <button key={x.id} type="button" className="ec-puce" data-couche={x.couche} onClick={() => choisir(x.id)}>
                     {x.nom}
                   </button>

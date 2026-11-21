@@ -58,7 +58,7 @@ export type EtatScene = {
   /** Les structures mises en avant : les autres passent en transparence (sans disparaître). */
   voiler: { ids: string[]; reste?: number } | null;
   rotation: boolean;
-  etiquette: { id: string; texte: string; sous?: string } | null;
+  etiquette: { id: string; texte: string; sous?: string; point?: [number, number, number] } | null;
   /** Le corps en retrait (derrière un écran de lecture). */
   retrait: boolean;
   /** Les outils de l'atelier : un plan de coupe, la vue éclatée, le scalpel, le cœur qui bat et la poitrine qui respire. */

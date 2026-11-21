@@ -161,7 +161,7 @@ const liste = (ids: string[] | undefined) => (ids ?? []).map((id) => nomDe(id)).
  * Le cartel d'une structure : comme l'étiquette d'une pièce de musée, puis tout ce qu'il faut savoir.
  * `aller` : ouvrir une structure citée ; `jouer` : montrer sur le corps une action du muscle.
  */
-export function Cartel({ e, complet = true, latin = true, actions, aller, jouer }: { e: Element; complet?: boolean; latin?: boolean; actions?: React.ReactNode; aller?: (id: string) => void; jouer?: (a: Action) => void }) {
+export function Cartel({ e, complet = true, latin = true, actions, aller, jouer, reperes }: { e: Element; complet?: boolean; latin?: boolean; actions?: React.ReactNode; aller?: (id: string) => void; jouer?: (a: Action) => void; reperes?: React.ComponentProps<typeof FicheEnrichie>["reperes"] }) {
   // La fiche enrichie, quand elle est rédigée, remplace ce que la première version et l'atlas en disaient.
   const { fiche } = useFiche(complet ? e.id : null);
   const lignes: [string, React.ReactNode][] = [];
@@ -194,7 +194,10 @@ export function Cartel({ e, complet = true, latin = true, actions, aller, jouer 
     if (e.provenance) lignes.push(["Naît de", nomDe(e.provenance)]);
     if (e.territoire) lignes.push(["Irrigue", e.territoire]);
   }
-  if (e.membres?.length) lignes.push(["Réunit", liste(e.membres)]);
+  if (!fiche && e.resume) lignes.unshift(["En bref", e.resume]);
+  if (e.membres?.length) {
+    if (!aller) lignes.push(["Réunit", [...new Set(e.membres.map((id) => nomDe(id)))].join(", ")]);
+  }
   else if (e.ensemble) lignes.push(["Fait partie de", nomDe(e.ensemble)]);
   if (e.officiel && e.officiel !== e.nom && !e.zone) lignes.push(["Nom officiel", e.officiel]);
   if (e.ta2) lignes.push(["Terminologia Anatomica", `TA2 ${e.ta2}`]);
@@ -206,6 +209,7 @@ export function Cartel({ e, complet = true, latin = true, actions, aller, jouer 
           {nature ?? NOM_COUCHE[e.couche]} · {nomRegion(e.region)}
           {e.nombre ? ` · ${e.nombre} en tout` : e.pair ? " · un de chaque côté" : ""}
           {e.inconstant ? " · inconstant" : ""}
+          {e.construit ? " · tracé d'après les manuels" : ""}
         </p>
         <h3 className="ec-cartel-nom">
           {e.nom}
@@ -222,7 +226,7 @@ export function Cartel({ e, complet = true, latin = true, actions, aller, jouer 
         {e.noms && e.noms.length > 0 && <p className="ec-cartel-aussi">Aussi : {e.noms.slice(0, 4).join(", ")}</p>}
       </header>
       {actions && <div className="ec-cartel-actions">{actions}</div>}
-      {fiche && <FicheEnrichie charge={fiche} aller={aller} jouer={jouer} />}
+      {fiche && <FicheEnrichie charge={fiche} aller={aller} jouer={jouer} reperes={reperes} />}
       {complet && lignes.length > 0 && (
         <dl className="ec-cartel-lignes">
           {lignes.map(([k, v]) => (

@@ -69,8 +69,8 @@ type Props = {
   interactif?: boolean;
   onChoisir?: (s: StructureScene | null) => void;
   onSurvol?: (s: StructureScene | null) => void;
-  /** Une étiquette accrochée à une structure (et son texte). */
-  etiquette?: { id: string; texte: string; sous?: string } | null;
+  /** Une étiquette accrochée à une structure (et son texte) ; `point` : à ce point précis (un repère), pas à son centre. */
+  etiquette?: { id: string; texte: string; sous?: string; point?: V3 } | null;
   /** Un plan de coupe, ou rien. */
   coupe?: Coupe | null;
   /** La vue éclatée : 0 (le corps assemblé) à 1 (les pièces écartées les unes des autres). */
@@ -508,8 +508,19 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     }
     const vp = multiplier(m.camera.proj, m.camera.vue);
     const rect = toile.current.getBoundingClientRect();
+    // Un repère : la pièce du côté où il est posé (un repère porte sur un seul côté d'une structure paire).
+    if (e.point) {
+      const pt = e.point;
+      let proche = meilleure;
+      for (const i of ids) {
+        const s = m.scene.structures[i];
+        if (longueur(moins(s.centre, pt)) < longueur(moins(proche.centre, pt))) proche = s;
+      }
+      meilleure = proche;
+    }
     // Le point d'accroche suit la structure : là où le squelette l'a emmenée, là où on l'a déplacée.
-    let accroche = auRepos(m.pose) || meilleure.segment === undefined ? meilleure.centre : deplacerPoint(m.matrices, meilleure.segment, meilleure.centre);
+    const ancre = e.point ?? meilleure.centre;
+    let accroche = auRepos(m.pose) || meilleure.segment === undefined ? ancre : deplacerPoint(m.matrices, meilleure.segment, ancre);
     const pd = (meilleure.de ?? meilleure.id) * 3;
     if (m.decal[pd] || m.decal[pd + 1] || m.decal[pd + 2]) accroche = plus(accroche, [m.decal[pd], m.decal[pd + 1], m.decal[pd + 2]]);
     const pt = projeter(accroche, vp, rect.width, rect.height);

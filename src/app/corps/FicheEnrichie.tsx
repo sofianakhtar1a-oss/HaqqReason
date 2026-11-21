@@ -14,6 +14,9 @@ import type { Action } from "@/lib/corps/mouvement/gestes";
 
 type Aller = (id: string) => void;
 type Jouer = (a: Action) => void;
+/** Montrer sur le corps le repère d'un relief nommé (s'il en a un) : rend sa clé, ou undefined. */
+export type TrouverRepere = (nom: string) => string | undefined;
+type Montrer = { trouver: TrouverRepere; montrer: (cle: string) => void; actif?: string };
 
 const NOMS_SORTES: Record<FicheOs["sorte"], string> = { long: "Os long", court: "Os court", plat: "Os plat", irregulier: "Os irrégulier", sesamoide: "Os sésamoïde", cartilage: "Cartilage", dent: "Dent", groupe: "Groupe d'os" };
 
@@ -142,7 +145,7 @@ function Artere({ f, aller }: { f: FicheArtere; aller?: Aller }) {
   );
 }
 
-function Os({ f, aller }: { f: FicheOs; aller?: Aller }) {
+function Os({ f, aller, reperes }: { f: FicheOs; aller?: Aller; reperes?: Montrer }) {
   return (
     <>
       <Ligne titre="Forme">{NOMS_SORTES[f.sorte]}</Ligne>
@@ -167,11 +170,22 @@ function Os({ f, aller }: { f: FicheOs; aller?: Aller }) {
       {(f.reliefs?.length ?? 0) > 0 && (
         <Ligne titre="Reliefs">
           <ul className="ec-fiche-liste">
-            {f.reliefs!.map((r) => (
-              <li key={r.nom}>
-                <b>{r.nom}</b> : {r.role}
-              </li>
-            ))}
+            {f.reliefs!.map((r) => {
+              // Un relief que l'atlas a nommé se montre d'un point sur l'os.
+              const cle = reperes?.trouver(r.nom);
+              return (
+                <li key={r.nom}>
+                  {cle ? (
+                    <button type="button" className="ec-relief" aria-pressed={reperes?.actif === cle} onClick={() => reperes?.montrer(cle)} title="Le montrer sur l'os">
+                      {r.nom}
+                    </button>
+                  ) : (
+                    <b>{r.nom}</b>
+                  )}{" "}
+                  : {r.role}
+                </li>
+              );
+            })}
           </ul>
         </Ligne>
       )}
@@ -404,7 +418,7 @@ function Lymphe({ f, aller }: { f: FicheLymphe; aller?: Aller }) {
   );
 }
 
-export function FicheEnrichie({ charge, aller, jouer }: { charge: FicheChargee; aller?: Aller; jouer?: Jouer }) {
+export function FicheEnrichie({ charge, aller, jouer, reperes }: { charge: FicheChargee; aller?: Aller; jouer?: Jouer; reperes?: Montrer }) {
   const f = charge.fiche;
   return (
     <div className="ec-fiche">
@@ -412,7 +426,7 @@ export function FicheEnrichie({ charge, aller, jouer }: { charge: FicheChargee; 
       <dl className="ec-cartel-lignes">
         {charge.couche === "muscle" && <Muscle f={f as FicheMuscle} aller={aller} jouer={jouer} />}
         {charge.couche === "artere" && <Artere f={f as FicheArtere} aller={aller} />}
-        {charge.couche === "os" && <Os f={f as FicheOs} aller={aller} />}
+        {charge.couche === "os" && <Os f={f as FicheOs} aller={aller} reperes={reperes} />}
         {charge.couche === "tendon" && <Tendon f={f as FicheTendon} aller={aller} />}
         {charge.couche === "ligament" && <Ligament f={f as FicheLigament} />}
         {charge.couche === "veine" && <Veine f={f as FicheVeine} aller={aller} />}

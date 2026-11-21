@@ -96,6 +96,10 @@ export type Element = {
   ensemble?: string;
   /** Pour un ensemble : ses membres. */
   membres?: string[];
+  /** Construite ou tracée par L'Écorché d'après ses voisines (les atlas ne l'ont pas). */
+  construit?: boolean;
+  /** En bref : ce qu'elle est, d'où elle vient, ce qu'elle fait (pour une structure construite sans fiche). */
+  resume?: string;
   /** Le nombre de chefs ou de parties modélisés. */
   chefs?: number;
   /** Muscles : le nerf (identifiant), la loge, la famille d'action, les os d'origine et de terminaison (identifiants). */

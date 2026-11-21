@@ -90,6 +90,9 @@ def classer(o, base, suff):
     mats = [m for m in (o.get("mats") or []) if m]
     if col in ("9: Regions of human body", "autre"):
         return None, "peau, régions de surface ou repères"
+    # Les structures construites par l'étape 1 quater disent elles-mêmes leur couche et leur sorte.
+    if o.get("couche") and (o.get("source") or "").startswith("L'Écorché (construit"):
+        return o["couche"], o.get("sorte") or o["couche"]
     if PUDEUR.search(base):
         return None, "organes génitaux externes (pudeur)"
     nu = re.sub(r"^\((.*)\)$", r"\1", base)

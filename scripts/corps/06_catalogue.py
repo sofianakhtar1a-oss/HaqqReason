@@ -697,6 +697,15 @@ for p in classement["pieces"]:
         x["o"], x["i"] = [round(v, 3) for v in bt["o"]], [round(v, 3) for v in bt["e"]]
     pieces_json.append(x)
 
+# Les structures que L'Écorché a construites ou tracées lui-même (étapes 1 ter et 1 quater) : le site le dit, et
+# la description écrite avec elles sert de résumé tant qu'une fiche n'est pas rédigée.
+from commun import objets_bruts as _objets_bruts
+
+CONSTRUITS = {o["nom"] for o in _objets_bruts() if (o.get("source") or "").startswith("L'Écorché (")}
+_f_textes = os.path.join(ICI, "donnees", "ajouts-textes.json")
+TEXTES_AJOUTS = json.load(open(_f_textes, encoding="utf-8")) if os.path.exists(_f_textes) else {}
+# Quelques noms anglais de la TA2 de Z-Anatomy portent une coquille : le site montre le bon.
+ANGLAIS_CORRIGES = {"Lleocolic vein": "Ileocolic vein", "Suprerior laryngeal vein": "Superior laryngeal vein", "Menyngeal veins": "Meningeal veins", "Sollitary tract": "Solitary tract", "Genigulate ganglion": "Geniculate ganglion", "Arterior superior pancreaticoduodenal artery": "Anterior superior pancreaticoduodenal artery", "Interosseus intercarpal ligaments": "Interosseous intercarpal ligaments"}
 CHAMPS_HERITES = ("noms", "nombre", "action", "origine", "terminaison", "innervation", "sorte", "articulations", "provenance", "territoire", "muscle", "attache", "memo", "anecdote")
 elements_json = []
 for e in elements:
@@ -718,6 +727,13 @@ for e in elements:
         x["nom"] = re.sub(r"\bdes doigts\b", "des orteils", x["nom"])
         x["officiel"] = x["nom"] if x.get("officiel") else x.get("officiel")
     x["art"] = article(x["nom"])
+    if any(p["objet"] in CONSTRUITS for p in e["_pieces"]):
+        x["construit"] = True
+        t = TEXTES_AJOUTS.get(e["anglais"]) or TEXTES_AJOUTS.get(re.sub(r"^(Left|Right) ", "", e["anglais"]))
+        if t and not x.get("memo"):
+            x["resume"] = t["texte"]
+    if x["anglais"] in ANGLAIS_CORRIGES:
+        x["anglais"] = ANGLAIS_CORRIGES[x["anglais"]]
     if x["id"] in VOILES:
         x["voile"] = VOILES[x["id"]]
         if x["id"] == "gaine-du-droit":
@@ -727,18 +743,208 @@ for e in elements:
 for x in ensembles:
     x["art"] = article(x["nom"])
 
+# ---------------------------------------------------------------- 7 bis. les ensembles de la nomenclature
+
+# Les ensembles d'origine portent un nom courant ; leur terme officiel, quand il existe, sert à les reconnaître.
+TA2_DES_HERITES = {"metacarpiens": ["Metacarpal bones", "Metacarpal bone"], "metatarsiens": ["Metatarsal bones", "Metatarsal bone"], "occipito-frontal": ["Occipitofrontalis muscle"], "vertebres-cervicales": ["Cervical vertebrae"], "vertebres-thoraciques": ["Thoracic vertebrae"], "vertebres-lombaires": ["Lumbar vertebrae"], "cotes-vraies": ["True ribs"], "fausses-cotes": ["False ribs"], "cotes-flottantes": ["Floating ribs"], "cartilages-costaux": ["Costal cartilage"], "intercostaux": ["Intercostal muscles"]}
+for x in ensembles:
+    termes = [ta(n) for n in TA2_DES_HERITES.get(x["id"], [])]
+    termes = [t for t in termes if t]
+    if termes:
+        x["ta2"] = termes[0]["id"]
+        if len(termes) > 1:
+            x["ta2_aussi"] = [t["id"] for t in termes[1:]]
+
+# Z-Anatomy range ses objets en groupes nommés : une étiquette « .g » dont les objets du groupe sont les enfants (les
+# lobes du cerveau, les groupes de nœuds lymphatiques, les plexus, les côtes, le larynx…). Chaque groupe dont le nom est
+# un terme de la référence (reference.py) devient un ensemble : ses membres sont les éléments de ses descendants.
+# Quelques ensembles d'usage s'y ajoutent par règle (le quadriceps, le triceps sural, les os du carpe), et des noms au
+# singulier désignent n'importe quel membre d'une série (« côte », « os métacarpien »).
+from commun import objets_bruts
+from reference import reference
+
+bruts_tous = objets_bruts()
+enfants_de = collections.defaultdict(list)
+for o in bruts_tous:
+    if o.get("parent"):
+        enfants_de[o["parent"]].append(o["nom"])
+
+
+def descendants(nom):
+    vus, pile = set(), [nom]
+    while pile:
+        for n in enfants_de.get(pile.pop(), []):
+            if n not in vus:
+                vus.add(n)
+                pile.append(n)
+    return vus
+
+
+termes_ref = {norme(l["anglais"]): l for ls in reference().values() for l in ls}
+deja_ens = {norme(x["anglais"]) for x in ensembles} | {str(x.get("ta2")) for x in ensembles if x.get("ta2")}
+par_id_el = {x["id"]: x for x in elements_json}
+el_par_nom = {}
+for x in elements_json:
+    el_par_nom.setdefault(norme(re.sub(r"\b(left|right)\b", "", x["anglais"], flags=re.I)), x)
+ids_pris_tous = set(par_id_el) | {x["id"] for x in ensembles}
+# La couche d'un ensemble est celle de la majorité de ses membres, sauf pour ces organes faits de pièces de plusieurs couches.
+COUCHE_ENSEMBLE = {"Larynx": "viscere", "Eyeball": "viscere", "Thymus": "viscere", "Hypophysis": "viscere", "Pituitary gland": "viscere", "Parathyroid glands": "viscere", "Right lung": "viscere", "Left lung": "viscere", "Cerebellum": "encephale"}
+# Ensembles par règle : terme de la TA2 → noms anglais des membres (éléments du catalogue).
+REGLES_ENSEMBLES = {
+    "Quadriceps femoris muscle": ["Rectus femoris muscle", "Vastus lateralis muscle", "Vastus medialis muscle", "Vastus intermedius muscle"],
+    "Triceps surae muscle": ["Gastrocnemius muscle", "Soleus muscle"],
+    "Carpal bones": ["Scaphoid bone", "Lunate bone", "Triquetrum bone", "Pisiform bone", "Trapezium bone", "Trapezoid bone", "Capitate bone", "Hamate bone"],
+    "Tarsal bones": ["Talus", "Calcaneus", "Navicular bone", "Cuboid bone", "Medial cuneiform bone", "Intermediate cuneiform bone", "Lateral cuneiform bone"],
+    "Iliopsoas muscle": ["Iliacus muscle", "Psoas major muscle"],
+    "Epicranius muscle": ["Frontalis muscle", "Occipitalis muscle", "Temporoparietalis muscle", "Galea aponeurotica"],
+    "Meniscus": ["Medial meniscus", "Lateral meniscus"],
+    "Glenohumeral ligaments": ["Superior glenohumeral ligament", "Middle glenohumeral ligament", "Inferior glenohumeral ligament"],
+    "Coracoclavicular ligament": ["Conoid ligament", "Trapezoid ligament"],
+    "Intervertebral disc": [x["anglais"] for x in elements_json if x["anglais"].startswith("Intervertebral disc ")],
+    "Right lung": ["Superior lobe of right lung", "Middle lobe of right lung", "Inferior lobe of right lung"],
+    "Left lung": ["Superior lobe of left lung", "Inferior lobe of left lung"],
+}
+# Les règles écrites avec les structures construites (donnees/ajouts/ensembles-*.json : terme → membres anglais).
+import glob as _glob
+for _f in sorted(_glob.glob(os.path.join(ICI, "donnees", "ajouts", "ensembles-*.json"))):
+    for _t, _m in json.load(open(_f, encoding="utf-8")).items():
+        REGLES_ENSEMBLES.setdefault(_t, _m)
+# Un nom au singulier qui désigne n'importe quel membre d'une série : le terme de la série → ce nom.
+SINGULIERS = {"Hypophysis": ["Pituitary gland"], "Ribs": ["Rib"], "Metacarpal bones": ["Metacarpal bone"], "Metatarsal bones": ["Metatarsal bone"], "Carpal bones": ["Carpal bone"], "Tarsal bones": ["Tarsal bone"], "Intervertebral disc": [], "Meniscus": []}
+
+
+def nouvel_ensemble(terme, ligne, membres, couche=None):
+    ms = [par_id_el[m] for m in membres if m in par_id_el]
+    if not ms:
+        return None
+    couches = collections.Counter(m["couche"] for m in ms)
+    couche = couche or COUCHE_ENSEMBLE.get(terme) or couches.most_common(1)[0][0]
+    fr = nettoyer(ligne["francais"] or terme)
+    nom = re.sub(r"^Muscles? ", "", fr) if couche == "muscle" else fr
+    nom = nom[0].upper() + nom[1:]
+    ident = slug(nom)
+    if ident in ids_pris_tous:
+        ident = "ensemble-" + ident
+    ids_pris_tous.add(ident)
+    regions = collections.Counter(m["region"] for m in ms)
+    x = {"id": ident, "couche": couche, "nom": nom, "officiel": fr, "latin": ligne["latin"] if "latin" in ligne else None, "anglais": terme, "ta2": str(ligne["id"]), "region": regions.most_common(1)[0][0], "rang": min(m["rang"] for m in ms), "pair": any(m["pair"] for m in ms), "nature": "ensemble", "membres": [m["id"] for m in ms], "art": article(nom)}
+    aussi = [ta(n) for n in SINGULIERS.get(terme, [])]
+    if any(aussi):
+        x["ta2_aussi"] = [t["id"] for t in aussi if t]
+    return {k: v for k, v in x.items() if v not in (None, "")}
+
+
+nouveaux_ens = []
+for o in bruts_tous:
+    if o["type"] != "FONT" or not o["nom"].endswith(".g"):
+        continue
+    terme = o["nom"][:-2].strip()
+    l = termes_ref.get(norme(terme))
+    if not l or norme(terme) in deja_ens or norme(terme) in el_par_nom:
+        continue
+    r = ta(terme) or l
+    membres = []
+    for n in sorted(descendants(o["nom"])):
+        e = el_de_objet.get(n)
+        if e and e["id"] in par_id_el and e["id"] not in membres:
+            membres.append(e["id"])
+    if len(membres) < 2:
+        continue
+    x = nouvel_ensemble(terme, r, membres)
+    if x:
+        nouveaux_ens.append(x)
+        deja_ens.add(norme(terme))
+for terme, noms in REGLES_ENSEMBLES.items():
+    if norme(terme) in deja_ens or norme(terme) in el_par_nom:
+        continue
+    r = ta(terme)
+    if not r:
+        print("  (règle d'ensemble sans terme de la TA2 :", terme, ")")
+        continue
+    membres = [el_par_nom[norme(n)]["id"] for n in noms if norme(n) in el_par_nom]
+    if len(membres) < len(noms):
+        print("  (ensemble", terme, ": membres introuvables", [n for n in noms if norme(n) not in el_par_nom], ")")
+    x = nouvel_ensemble(terme, r, membres)
+    if x:
+        nouveaux_ens.append(x)
+        deja_ens.add(norme(terme))
+# Les ensembles déjà là reçoivent eux aussi leurs noms au singulier.
+for x in ensembles + nouveaux_ens:
+    for n in SINGULIERS.get(x["anglais"], []):
+        t = ta(n)
+        if t and t["id"] not in x.get("ta2_aussi", []):
+            x.setdefault("ta2_aussi", []).append(t["id"])
+ensembles.extend(nouveaux_ens)
+print(f"ensembles de la nomenclature : {len(nouveaux_ens)} ({collections.Counter(x['couche'] for x in nouveaux_ens)})")
+
 reperes_json = []
 vus = set()
+# Un repère est un point nommé sur une structure : un relief d'os (le tubercule majeur), une partie d'organe. Quand
+# Z-Anatomy n'a pas relié son étiquette à une pièce, on prend la pièce la plus proche du point, dans la couche que dit
+# sa collection. On écarte ce qui a déjà sa structure (un nom d'élément ou d'ensemble) et ce que la pudeur tait.
+from scipy.spatial import cKDTree
+
+COUCHES_DE_COLLECTION = {"1: Skeletal system": ("os",), "3: Joints": ("ligament", "os"), "4: Muscular system": ("muscle", "tendon"), "5: Cardiovascular system": ("artere", "veine", "viscere"), "6: Lymphoid organs": ("lymphe", "viscere"), "7: Nervous system & Sense organs": ("encephale", "nerf", "viscere"), "8: Visceral systems": ("viscere",)}
+PUDEUR_REPERES = re.compile(r"penis|testis|testicul|epididym|scrot|spermatic|ductus deferens|ejaculatory|urethr|glans|prepuce|seminal|vulva|vagin|uter|ovar|clitor|labi(um|a) (majus|minus|majora|minora)", re.I)
+arbres = {}
+
+
+def arbre(couche):
+    if couche not in arbres:
+        Ps, qui = [], []
+        for e in elements:
+            if e["couche"] != couche:
+                continue
+            for pc in e["_pieces"]:
+                f = os.path.join(GEO, "lod2", fichier_de.get(pc["objet"], "?") + ".npz")
+                if os.path.exists(f):
+                    P = np.load(f)["P"]
+                    Ps.append(P)
+                    qui += [e] * len(P)
+                    # (une pièce en miroir porte aussi l'autre côté)
+                    if pc.get("miroir"):
+                        Ps.append(P * np.array([-1, 1, 1], dtype=np.float32))
+                        qui += [e] * len(P)
+        arbres[couche] = (cKDTree(np.concatenate(Ps)), qui) if Ps else None
+    return arbres[couche]
+
+
+noms_presents = {norme(re.sub(r"\b(left|right)\b", "", x["anglais"], flags=re.I)) for x in elements_json + ensembles}
+cles_reperes = set()
 for r in classement["reperes"]:
     if not r.get("francais"):
         continue
+    anglais = re.sub(r"^\((.*)\)$", r"\1", r["anglais"]).strip()
+    if PUDEUR_REPERES.search(anglais) or norme(anglais) in noms_presents:
+        continue
     P = vers_repere(np.array([r["ancre"]], dtype=np.float32))[0]
     porteur = os_par_objet.get(r["porteur"]) if r.get("porteur") else None
-    cle = (r["anglais"], round(float(P[0]), 3), round(float(P[1]), 3), round(float(P[2]), 3))
+    if not porteur:
+        meilleur = None
+        for couche in COUCHES_DE_COLLECTION.get(r.get("collection"), ()):
+            a = arbre(couche)
+            if not a:
+                continue
+            d, i = a[0].query(P)
+            if d < 0.03 and (meilleur is None or d < meilleur[0]):
+                meilleur = (d, a[1][i])
+        porteur = meilleur[1] if meilleur else None
+    cle = (anglais, round(float(P[0]), 3), round(float(P[1]), 3), round(float(P[2]), 3))
     if cle in vus:
         continue
     vus.add(cle)
-    reperes_json.append({"nom": r["francais"], "latin": r["latin"], "anglais": r["anglais"], "p": [round(float(v), 4) for v in P], "sur": porteur["id"] if porteur else None, "relief": r["sorte"] == "relief"})
+    nom = re.sub(r"^\((.*)\)$", r"\1", nettoyer(r["francais"])).strip()
+    ident = slug(nom)
+    k = 2
+    while ident in cles_reperes:
+        ident = f"{slug(nom)}-{k}"
+        k += 1
+    cles_reperes.add(ident)
+    x = {"cle": ident, "nom": nom[0].upper() + nom[1:], "latin": re.sub(r"^\((.*)\)$", r"\1", r["latin"] or "").strip(), "anglais": anglais, "p": [round(float(v), 4) for v in P], "sur": porteur["id"] if porteur else None, "relief": r["sorte"] == "relief"}
+    if r.get("ta2"):
+        x["ta2"] = str(r["ta2"])
+    reperes_json.append(x)
+print(f"repères : {len(reperes_json)}, dont {sum(1 for x in reperes_json if x['sur'])} posés sur une structure")
 
 
 def ecrire(nom, donnees):

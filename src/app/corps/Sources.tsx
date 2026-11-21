@@ -9,7 +9,19 @@ import { AMPLITUDES_SOURCES } from "@/lib/corps/mouvement/articulations";
 
 const REFERENCES = referencesJson as { fiches: number; references: { nom: string; url: string; fiches: number }[] };
 const nombre = (n: number) => n.toLocaleString("fr-FR");
-const COUVERTURE = couvertureJson as { couches: Record<string, { reference: number; presents: number; part: number }> };
+const COUVERTURE = couvertureJson as unknown as {
+  raisons: Record<string, string>;
+  couches: Record<string, { reference: number; presents: number; part: number; reperes?: number; hors_champ?: Record<string, string[]> }>;
+};
+const NOMS_RAISONS: Record<string, string> = { pudeur: "Par pudeur", feminin: "Propres au corps de la femme", microscopique: "Microscopiques ou cachées dans un organe", classement: "Termes de classement", inconstant: "Variantes inconstantes" };
+// Les termes hors du champ, toutes couches réunies, par raison.
+const HORS_CHAMP = Object.entries(
+  Object.values(COUVERTURE.couches).reduce<Record<string, string[]>>((acc, c) => {
+    for (const [r, l] of Object.entries(c.hors_champ ?? {})) acc[r] = [...(acc[r] ?? []), ...l];
+    return acc;
+  }, {}),
+);
+const CONSTRUITS = ELEMENTS.filter((e) => e.construit).length;
 const NOMS_COUVERTURE: [string, string, string][] = [
   ["os", "Les os", "os nommés"],
   ["muscle", "Les muscles", "muscles nommés"],
@@ -72,10 +84,10 @@ export function Sources({ fermer }: { fermer: () => void }) {
           Chaque modèle a été allégé en plusieurs niveaux de détail et lissé ; les artères, les veines et les nerfs ont été retracés en tubes ; l’ombre de contact et le sens des fibres ont été calculés ; les tendons, qui font corps avec leur muscle dans l’atlas, sont devenus des structures à part ; les noms ont été relus en français.
         </p>
         <p>
-          Nous avons écarté la peau, par pudeur les organes génitaux externes, et les modèles de Z-Anatomy que leur licence réserve à un usage non commercial. Le rein a été repris de BodyParts3D, placé au centre et à la taille de celui qu’il remplace ; le rectum, l’iléon et le semi-épineux de la tête ont été placés d’après leurs voisins. L’oreille interne manque encore : aucun modèle libre ne la décrit.
+          Nous avons écarté la peau, par pudeur les organes génitaux externes, et les modèles de Z-Anatomy que leur licence réserve à un usage non commercial. Le rein a été repris de BodyParts3D, placé au centre et à la taille de celui qu’il remplace ; le rectum, l’iléon et le semi-épineux de la tête ont été placés d’après leurs voisins.
         </p>
         <p>
-          Trois nerfs importants manquent aux deux atlas : le nerf phrénique, le nerf laryngé récurrent et le nerf glutéal inférieur. Nous les avons tracés nous-mêmes, comme l’atlas trace ses nerfs (un axe et un rayon), sur les structures que les manuels leur donnent pour voisines : le scalène antérieur, les vaisseaux subclaviers, le péricarde et le diaphragme pour le phrénique ; l’artère subclavière ou la crosse de l’aorte, puis le sillon entre la trachée et l’œsophage, pour le récurrent ; le muscle piriforme et l’artère glutéale inférieure pour le glutéal inférieur. Ce sont des tracés fidèles aux descriptions classiques, pas des relevés de dissection.
+          Ce que les deux atlas n’ont pas, nous l’avons construit nous-mêmes{CONSTRUITS > 3 ? ` (${nombre(CONSTRUITS)} structures)` : ""} : les branches des vaisseaux et des nerfs, les ganglions et les plexus, les petits ligaments et muscles, les noyaux et faisceaux de l’encéphale, l’oreille interne. Chacune est décrite d’après les manuels (Gray’s Anatomy, TeachMeAnatomy, Kenhub) : où elle naît, par où elle passe, où elle finit, chaque point étant posé sur une structure du modèle (l’axe d’une artère, le bord d’un muscle, un relief d’os) ; une branche est tracée comme l’atlas trace ses vaisseaux (un axe et un rayon), un ganglion ou un noyau est un petit volume à sa place. Ce sont des tracés fidèles aux descriptions classiques, pas des relevés de dissection : leur fiche le signale (« tracé d’après les manuels »). L’oreille interne de Z-Anatomy n’étant pas libre, nous n’en avons gardé que la place et la taille.
         </p>
 
         <h3 className="ec-section-titre">Ce que vous pouvez en faire</h3>
@@ -94,7 +106,7 @@ export function Sources({ fermer }: { fermer: () => void }) {
 
         <h3 className="ec-section-titre">Ce que le modèle couvre</h3>
         <p>
-          Pour chaque couche, la part des structures que la <i lang="la">Terminologia Anatomica</i> nomme et que le modèle montre. Les manques sont surtout les petits rameaux des vaisseaux et des nerfs crâniens, les sous-parties de l’encéphale, l’oreille interne.
+          Pour chaque couche, la part des structures que la <i lang="la">Terminologia Anatomica</i> nomme et que le modèle montre : par un modèle, par un ensemble (un groupe nommé, comme les lobes du cerveau ou les nœuds axillaires, montre ses membres) ou par un repère (un point nommé sur sa structure, qu’on trouve en le cherchant).
         </p>
         <ul className="ec-facettes">
           {NOMS_COUVERTURE.filter(([c]) => COUVERTURE.couches[c]).map(([c, nom, quoi]) => {
@@ -105,13 +117,28 @@ export function Sources({ fermer }: { fermer: () => void }) {
                 <span className="ec-jauge fine" aria-hidden="true">
                   <span style={{ transform: `scaleX(${x.part})` }} />
                 </span>
-                <span className="ec-facette-chiffre" title={`${x.presents} ${quoi} sur ${x.reference}`}>
-                  {Math.round(x.part * 100)} %
+                <span className="ec-facette-chiffre" title={`${x.presents} ${quoi} sur ${x.reference}${x.reperes ? `, dont ${x.reperes} par un repère` : ""}`}>
+                  {Math.floor(x.part * 100)} %
                 </span>
               </li>
             );
           })}
         </ul>
+        {HORS_CHAMP.length > 0 && (
+          <details className="ec-hors-champ">
+            <summary>Hors du champ ({HORS_CHAMP.reduce((n, [, l]) => n + l.length, 0)} termes)</summary>
+            <p>Le corps de L’Écorché est celui d’un homme adulte, à l’échelle d’un atlas. Ces termes de la nomenclature n’y ont pas de place, pour ces raisons :</p>
+            {HORS_CHAMP.map(([r, l]) => (
+              <div key={r}>
+                <h4>
+                  {NOMS_RAISONS[r] ?? r} <span>{l.length}</span>
+                </h4>
+                <p className="ec-note">{COUVERTURE.raisons[r]}</p>
+                <p className="ec-hors-champ-liste">{l.join(" · ")}</p>
+              </div>
+            ))}
+          </details>
+        )}
 
         <h3 className="ec-section-titre">Les fiches</h3>
         <p>
