@@ -2098,3 +2098,387 @@ mark.rg-change {
     transition: none;
   }
 }
+
+/* ---------- Les outils : test de niveau, carnet d'erreurs, examens ---------- */
+.rg-outils {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+@media (min-width: 48rem) {
+  .rg-outils {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.rg-outil {
+  --c: var(--azur);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.2rem 0.8rem;
+  padding: 1rem 1.15rem;
+  border-radius: 1.25rem;
+  border: 1px solid color-mix(in srgb, var(--c) 35%, var(--trait));
+  background: color-mix(in srgb, var(--c) 7%, var(--surface));
+  text-align: left;
+  color: var(--c);
+  transition: border-color 0.15s ease;
+}
+.rg-outil[data-outil="carnet"] {
+  --c: var(--rg-piste);
+}
+.rg-outil[data-outil="examens"] {
+  --c: var(--or);
+}
+.rg-outil:hover {
+  border-color: var(--c);
+}
+.rg-outil svg {
+  grid-row: span 2;
+}
+.rg-outil-nom {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--encre);
+}
+.rg-outil-badge {
+  min-width: 1.4rem;
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  background: var(--c);
+  font-size: 0.75rem;
+  text-align: center;
+  color: var(--fond);
+}
+.rg-outil-texte {
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--encre-douce);
+}
+
+/* Le carnet d'erreurs. */
+.rg-carnet-action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding: 1rem 1.15rem;
+  border-radius: 1.25rem;
+  background: color-mix(in srgb, var(--rg-piste) 10%, var(--surface));
+}
+.rg-carnet-lecons {
+  display: grid;
+  gap: 0.6rem;
+}
+.rg-carnet-lecons details {
+  border-radius: 1.1rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.rg-carnet-lecons summary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+.rg-carnet-lecons summary::-webkit-details-marker {
+  display: none;
+}
+.rg-carnet-niveau {
+  padding: 0.1rem 0.45rem;
+  border-radius: 0.4rem;
+  background: var(--surface-forte);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.rg-carnet-titre {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+  font-weight: 600;
+}
+.rg-carnet-titre small {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--encre-douce);
+}
+.rg-carnet-nombre {
+  min-width: 1.6rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--rg-piste) 22%, transparent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-align: center;
+}
+.rg-carnet-erreurs {
+  display: grid;
+  gap: 0.35rem;
+  padding: 0 1rem 0.5rem;
+}
+.rg-carnet-erreurs li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0;
+  border-top: 1px dashed var(--trait);
+  font-size: 0.92rem;
+}
+.rg-carnet-enonce {
+  flex: 1;
+  min-width: 0;
+  line-height: 1.45;
+}
+.rg-carnet-suivi {
+  display: inline-flex;
+  gap: 0.1rem;
+  color: color-mix(in srgb, var(--encre-douce) 35%, transparent);
+}
+.rg-carnet-suivi [data-fait] {
+  color: var(--succes);
+}
+.rg-carnet-retirer {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  color: var(--encre-douce);
+}
+.rg-carnet-retirer:hover {
+  background: var(--surface-forte);
+  color: var(--encre);
+}
+.rg-carnet-lecons details > .rg-actions {
+  padding: 0 1rem 1rem;
+}
+
+/* Les examens. */
+.rg-examens-section {
+  --rg-accent: var(--amethyste);
+  margin-bottom: 2rem;
+}
+.rg-examens-section[data-section="grammaire"] {
+  --rg-accent: var(--emeraude);
+}
+.rg-examens-titre {
+  margin-bottom: 0.85rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.rg-examens-titre span {
+  margin-left: 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--encre-douce);
+}
+.rg-examens-grille {
+  display: grid;
+  gap: 0.7rem;
+}
+@media (min-width: 40rem) {
+  .rg-examens-grille {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 64rem) {
+  .rg-examens-grille {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.rg-examen {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 0.15rem 0.75rem;
+  padding: 0.95rem 1.05rem;
+  border-radius: 1.15rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.rg-examen[data-diplome] {
+  border-color: color-mix(in srgb, var(--or) 55%, var(--trait));
+  background: color-mix(in srgb, var(--or) 8%, var(--surface));
+}
+.rg-examen-niveau {
+  grid-row: span 3;
+  display: grid;
+  place-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 0.9rem;
+  background: color-mix(in srgb, var(--rg-accent) 16%, transparent);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--rg-accent);
+}
+.rg-examen-nom {
+  font-weight: 700;
+}
+.rg-examen-infos {
+  font-size: 0.82rem;
+  color: var(--encre-douce);
+}
+.rg-examen-score {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+}
+.rg-examen[data-diplome] .rg-examen-score {
+  color: var(--or);
+}
+.rg-examen .bouton {
+  grid-column: 1 / -1;
+  justify-self: start;
+  margin-top: 0.5rem;
+}
+.rg-examen-tete {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin: 0.75rem 0 1.5rem;
+  color: var(--rg-accent);
+}
+.rg-a-revoir {
+  padding: 1rem 1.15rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.rg-a-revoir > p {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+.rg-a-revoir ul {
+  display: grid;
+  gap: 0.35rem;
+}
+.rg-lien-lecon {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.8rem;
+  background: var(--surface-forte);
+  text-align: left;
+  font-weight: 600;
+}
+.rg-lien-lecon span {
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  color: var(--danger);
+}
+.rg-diplome {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding: 1.75rem 1.5rem 1.5rem;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  border: 2px solid color-mix(in srgb, var(--or) 60%, transparent);
+  background:
+    radial-gradient(90% 120% at 100% 0%, color-mix(in srgb, var(--or) 22%, transparent), transparent 65%),
+    var(--surface-forte);
+  text-align: center;
+}
+.rg-diplome-sceau {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 0.5rem;
+  color: var(--or);
+}
+.rg-diplome-etiquette {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.rg-diplome-niveau {
+  margin-top: 0.25rem;
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+.rg-diplome-grade {
+  font-family: var(--lg-police);
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--or);
+}
+.rg-diplome-detail {
+  margin-top: 0.5rem;
+  font-size: 0.86rem;
+  color: var(--encre-douce);
+}
+
+/* Le test de positionnement. */
+.rg-position-accueil {
+  display: grid;
+  justify-items: center;
+  gap: 0.9rem;
+  max-width: 40rem;
+  margin: 1.5rem auto 0;
+  text-align: center;
+}
+.rg-position-accueil > svg {
+  color: var(--azur);
+}
+.rg-position-precedent {
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  background: var(--azur-doux);
+  font-size: 0.9rem;
+}
+.rg-position-resultat {
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+  margin: 1rem 0 2rem;
+  padding: 1.75rem 1.25rem;
+  border-radius: 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--azur) 40%, var(--trait));
+  background: radial-gradient(90% 120% at 50% 0%, color-mix(in srgb, var(--azur) 16%, transparent), transparent 70%), var(--surface);
+  text-align: center;
+}
+.rg-position-etiquette {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--encre-douce);
+}
+.rg-position-niveau {
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--azur);
+}
+.rg-position-nom {
+  font-weight: 700;
+}
+.rg-position-texte {
+  max-width: 34rem;
+  margin-top: 0.4rem;
+  line-height: 1.6;
+  color: var(--encre-douce);
+}
+.rg-position-resultat .rg-actions {
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+.rg-position-histoires {
+  margin-top: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--encre-douce);
+}

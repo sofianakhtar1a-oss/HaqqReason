@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, BookMarked, Clapperboard, FileText, Flame, Play, Volume2 } from "lucide-react";
+import { ArrowRight, BookMarked, BookOpen, Clapperboard, Compass, Ear, FileText, Flame, NotebookPen, Play, Volume2 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { dureeLisible } from "@/lib/alambic/transcription/exports";
 import { elementDe, elementDEntree } from "@/lib/langues/dictionnaire";
@@ -8,6 +8,11 @@ import { cleJour, estDue } from "@/lib/langues/srs";
 import { type DocumentLangue, listerDocuments, listerMedias, type MediaLangue } from "@/lib/langues/stockage";
 import type { Entree } from "@/lib/langues/types";
 import { useTextes } from "@/lib/modules/textes-client";
+import { HISTOIRES } from "@/lib/langues/histoires/catalogue";
+import { useLectures } from "@/lib/langues/histoires/progression";
+import { SERIE_POSITIONNEMENT, useSuivi } from "@/lib/regles/suivi";
+import { Couverture } from "./histoires/Bibliotheque";
+import "./histoires/histoires.css";
 import { parler, voixDisponible } from "@/lib/langues/voix";
 import { resumeJournal, useDonnees } from "./donnees";
 import type { Lancement } from "./Seance";
@@ -112,6 +117,8 @@ export function Accueil({ lancer, aller }: Props) {
         </button>
       </section>
 
+      <Progresser aller={aller} />
+
       {(recents.media || recents.document) && (
         <section className="lg-reprendre" aria-labelledby="titre-reprendre">
           <h2 id="titre-reprendre" className="lg-sous-titre">
@@ -185,5 +192,72 @@ export function Accueil({ lancer, aller }: Props) {
         </button>
       </section>
     </div>
+  );
+}
+
+/**
+ * Pour progresser : une histoire à lire (celle en cours, ou une de ton niveau), le carnet d'erreurs ou le
+ * test de niveau, et la dictée de ton niveau.
+ */
+function Progresser({ aller }: { aller: (hash: string) => void }) {
+  const lectures = useLectures();
+  const { erreurs, series } = useSuivi();
+  const niveau = series[SERIE_POSITIONNEMENT]?.niveau;
+  const enCours = HISTOIRES.filter((h) => lectures[h.id] && !lectures[h.id].fini).sort((a, b) => lectures[b.id].vu - lectures[a.id].vu)[0];
+  const proposee = enCours ?? HISTOIRES.find((h) => (niveau ? h.niveau === niveau : true) && !lectures[h.id]?.fini) ?? HISTOIRES[0];
+  const nbErreurs = Object.keys(erreurs).length;
+  if (!proposee) return null;
+  return (
+    <section className="lg-progresser" aria-labelledby="titre-progresser">
+      <h2 id="titre-progresser" className="lg-sous-titre">
+        Pour progresser
+      </h2>
+      <div className="lg-progresser-grille">
+        <button type="button" className="lg-progresser-carte" data-niveau={proposee.niveau} onClick={() => aller(`lire/histoire/${proposee.id}`)}>
+          <Couverture h={proposee} petite />
+          <span className="min-w-0 flex-1">
+            <span className="lg-progresser-etiquette">
+              <BookOpen className="size-3.5" aria-hidden="true" />
+              {enCours ? "Reprendre ton histoire" : "Une histoire à lire"}
+            </span>
+            <span className="lg-element-titre">{proposee.titreFr}</span>
+            <span className="lg-element-infos">{enCours ? `Page ${Math.min(lectures[enCours.id].page, enCours.pages)} sur ${enCours.pages}` : `${proposee.niveau} · ${proposee.pages} pages · ${proposee.minutes} min`}</span>
+          </span>
+          <ArrowRight className="size-4" aria-hidden="true" />
+        </button>
+        {nbErreurs > 0 ? (
+          <button type="button" className="lg-progresser-carte" onClick={() => aller("regles/carnet")}>
+            <NotebookPen className="size-6 text-accent" aria-hidden="true" />
+            <span className="min-w-0 flex-1">
+              <span className="lg-progresser-etiquette">Ton carnet d&apos;erreurs</span>
+              <span className="lg-element-titre">
+                {nbErreurs} exercice{nbErreurs > 1 ? "s" : ""} à revoir
+              </span>
+              <span className="lg-element-infos">Réussis-les deux fois : ils quittent le carnet.</span>
+            </span>
+            <ArrowRight className="size-4" aria-hidden="true" />
+          </button>
+        ) : (
+          <button type="button" className="lg-progresser-carte" onClick={() => aller("regles/positionnement")}>
+            <Compass className="size-6 text-accent" aria-hidden="true" />
+            <span className="min-w-0 flex-1">
+              <span className="lg-progresser-etiquette">Test de niveau</span>
+              <span className="lg-element-titre">{niveau ? `Ton niveau : ${niveau}` : "Quel est ton niveau ?"}</span>
+              <span className="lg-element-infos">{niveau ? "Refais le test pour mesurer tes progrès." : "Quelques minutes pour savoir par où commencer."}</span>
+            </span>
+            <ArrowRight className="size-4" aria-hidden="true" />
+          </button>
+        )}
+        <button type="button" className="lg-progresser-carte" onClick={() => aller(`ecouter/dictee/${niveau ?? "A1"}`)}>
+          <Ear className="size-6 text-accent" aria-hidden="true" />
+          <span className="min-w-0 flex-1">
+            <span className="lg-progresser-etiquette">La dictée</span>
+            <span className="lg-element-titre">Six phrases à écouter, niveau {niveau ?? "A1"}</span>
+            <span className="lg-element-infos">Chaque mot corrigé, puis la traduction.</span>
+          </span>
+          <ArrowRight className="size-4" aria-hidden="true" />
+        </button>
+      </div>
+    </section>
   );
 }

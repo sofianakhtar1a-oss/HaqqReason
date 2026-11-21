@@ -389,6 +389,7 @@
     grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
   }
   .lg-reprendre,
+  .lg-progresser,
   .lg-accueil-themes,
   .lg-accueil-dico {
     grid-column: 1 / -1;
@@ -3595,4 +3596,46 @@ html[data-lg-transition]::view-transition-new(root) {
 .lg-pdf-aller input {
   text-align: center;
   font-variant-numeric: tabular-nums;
+}
+
+/* Aujourd'hui : pour progresser (une histoire, le carnet ou le test de niveau, la dictée). */
+.lg-progresser-grille {
+  display: grid;
+  gap: 0.6rem;
+}
+@media (min-width: 56rem) {
+  .lg-progresser-grille {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.lg-progresser-carte {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 1.15rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  text-align: left;
+  transition: border-color 0.15s ease;
+}
+.lg-progresser-carte:hover {
+  border-color: color-mix(in srgb, var(--azur) 50%, var(--trait));
+}
+.lg-progresser-carte .hs-couverture {
+  width: 2.9rem;
+  flex-shrink: 0;
+}
+.lg-progresser-carte > .min-w-0 {
+  display: grid;
+  gap: 0.1rem;
+}
+.lg-progresser-etiquette {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--azur);
 }

@@ -1,19 +1,24 @@
 "use client";
 
-import { ArrowLeft, Clock, Play, Sparkles, Star, Trophy } from "lucide-react";
+import { ArrowLeft, Award, Clock, Compass, NotebookPen, Play, Sparkles, Star, Trophy } from "lucide-react";
 import { sectionDe, NOMS_NIVEAUX, SECTIONS } from "@/lib/regles";
 import { type Resultat, useProgression } from "@/lib/regles/progression";
+import { SERIE_POSITIONNEMENT, serieExamen, useSuivi } from "@/lib/regles/suivi";
+import { Carnet } from "./Carnet";
+import { diplome, Examens } from "./Examens";
 import { NIVEAUX, type Section } from "@/lib/regles/types";
 import { LeconVue } from "./Lecon";
 import { Machine } from "./Machine";
 import { Phrase } from "./Phrase";
+import { Positionnement } from "./Positionnement";
 import "./regles.css";
 
 /*
  * Les Règles de l'anglais : deux mondes, la Conjugaison (la Machine à voyager dans le temps)
  * et la Grammaire (la Cité des mots), du niveau A1 au niveau C2. Les explications sont en français,
  * tout ce qu'on apprend est en anglais.
- * Adresses : #regles, #regles/conjugaison, #regles/conjugaison/<leçon>, #regles/machine.
+ * Adresses : #regles, #regles/conjugaison, #regles/conjugaison/<leçon>, #regles/machine,
+ * #regles/carnet (le carnet d'erreurs), #regles/examens, #regles/positionnement (le test de niveau).
  */
 
 type Props = { detail: string | null; onOuvrir: (chemin: string | null) => void; onRemplacer: (chemin: string) => void };
@@ -21,6 +26,18 @@ type Props = { detail: string | null; onOuvrir: (chemin: string | null) => void;
 export function Regles({ detail, onOuvrir, onRemplacer }: Props) {
   const [sId, lId] = (detail ?? "").split("/");
   if (sId === "machine") return <PageMachine onRetour={() => onOuvrir(null)} />;
+  if (sId === "carnet") return <Carnet onRetour={() => onOuvrir(null)} onLecon={(chemin) => onRemplacer(chemin)} />;
+  if (sId === "examens") return <Examens onRetour={() => onOuvrir(null)} onLecon={(chemin) => onRemplacer(chemin)} />;
+  if (sId === "positionnement")
+    return (
+      <Positionnement
+        onRetour={() => onOuvrir(null)}
+        onOuvrir={(chemin) => onRemplacer(chemin)}
+        onHistoires={() => {
+          window.location.hash = "lire";
+        }}
+      />
+    );
   const section = sectionDe(sId);
   if (section) {
     const lecon = lId ? section.lecons.find((l) => l.id === lId) : undefined;
@@ -110,6 +127,8 @@ function Portes({ onOuvrir }: { onOuvrir: (chemin: string) => void }) {
         })}
       </div>
 
+      <Outils onOuvrir={onOuvrir} />
+
       <button type="button" className="rg-bandeau-machine" onClick={() => onOuvrir("machine")}>
         <Clock className="size-6 shrink-0" aria-hidden="true" />
         <span>
@@ -118,6 +137,40 @@ function Portes({ onOuvrir }: { onOuvrir: (chemin: string) => void }) {
         </span>
       </button>
     </section>
+  );
+}
+
+/* ---------- Les outils : le carnet d'erreurs, les examens, le test de niveau ---------- */
+
+function Outils({ onOuvrir }: { onOuvrir: (chemin: string) => void }) {
+  const { erreurs, series } = useSuivi();
+  const nbErreurs = Object.keys(erreurs).length;
+  const diplomes = SECTIONS.reduce((n, s) => n + (["A1", "A2", "B1", "B2", "C1", "C2"] as const).filter((niv) => diplome(series[serieExamen(s.id, niv)])).length, 0);
+  const position = series[SERIE_POSITIONNEMENT];
+  return (
+    <div className="rg-outils">
+      <button type="button" className="rg-outil" data-outil="positionnement" onClick={() => onOuvrir("positionnement")}>
+        <Compass className="size-6" aria-hidden="true" />
+        <span className="rg-outil-nom">Test de niveau</span>
+        <span className="rg-outil-texte">{position?.niveau ? `Ton niveau estimé : ${position.niveau}. Refais le test quand tu veux.` : "Quelques minutes pour savoir par où commencer."}</span>
+      </button>
+      <button type="button" className="rg-outil" data-outil="carnet" onClick={() => onOuvrir("carnet")}>
+        <NotebookPen className="size-6" aria-hidden="true" />
+        <span className="rg-outil-nom">
+          Mon carnet d&apos;erreurs
+          {nbErreurs > 0 && <span className="rg-outil-badge">{nbErreurs}</span>}
+        </span>
+        <span className="rg-outil-texte">{nbErreurs ? "Tes erreurs reviennent jusqu'à ce que tu les réussisses deux fois." : "Les exercices ratés s'écriront ici, pour y revenir."}</span>
+      </button>
+      <button type="button" className="rg-outil" data-outil="examens" onClick={() => onOuvrir("examens")}>
+        <Award className="size-6" aria-hidden="true" />
+        <span className="rg-outil-nom">
+          Les examens
+          {diplomes > 0 && <span className="rg-outil-badge">{diplomes}</span>}
+        </span>
+        <span className="rg-outil-texte">{diplomes ? `${diplomes} diplôme${diplomes > 1 ? "s" : ""} sur 12. Trente questions par niveau, sans indice.` : "Trente questions par niveau, sans indice : décroche tes diplômes."}</span>
+      </button>
+    </div>
   );
 }
 

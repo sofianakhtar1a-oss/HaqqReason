@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import { HISTOIRES, type FicheHistoire } from "@/lib/langues/histoires/catalogue";
 import { type Lecture, useLectures } from "@/lib/langues/histoires/progression";
 import { NIVEAUX, type Niveau } from "@/lib/langues/types";
+import { SERIE_POSITIONNEMENT, useSuivi } from "@/lib/regles/suivi";
 import { useTextes } from "@/lib/modules/textes-client";
 import "./histoires.css";
 
@@ -44,7 +45,9 @@ function etat(l: Lecture | undefined, h: FicheHistoire) {
 export function Bibliotheque({ onOuvrir }: { onOuvrir: (id: string) => void }) {
   const lectures = useLectures();
   const t = useTextes("langues");
-  const [filtre, setFiltre] = useState<Niveau | "tous">("tous");
+  // Après le test de niveau, la bibliothèque s'ouvre sur les histoires du niveau estimé.
+  const estime = useSuivi().series[SERIE_POSITIONNEMENT]?.niveau as Niveau | undefined;
+  const [filtre, setFiltre] = useState<Niveau | "tous">(() => (estime && NIVEAUX.includes(estime) && HISTOIRES.some((h) => h.niveau === estime) ? estime : "tous"));
   const enCours = useMemo(
     () =>
       HISTOIRES.filter((h) => lectures[h.id] && !lectures[h.id].fini)
@@ -103,6 +106,7 @@ export function Bibliotheque({ onOuvrir }: { onOuvrir: (id: string) => void }) {
             <button key={n} type="button" aria-pressed={filtre === n} data-niveau={n} disabled={!nombre} onClick={() => setFiltre(n)}>
               <strong>{n}</strong>
               <span>{NOMS_NIVEAUX_LECTURE[n]}</span>
+              {n === estime && <span className="hs-ton-niveau">ton niveau</span>}
             </button>
           );
         })}

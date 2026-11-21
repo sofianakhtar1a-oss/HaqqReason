@@ -526,9 +526,11 @@ type PropsBilan = {
   onRefaireErreurs?: (items: Item[]) => void;
   onRecommencer: () => void;
   autres?: React.ReactNode;
+  /** Un encadré entre les boutons et la correction (les leçons à revoir après un examen, par exemple). */
+  complement?: React.ReactNode;
 };
 
-export function BilanSerie({ items, reponses, mode, titre, phrase, onRefaireErreurs, onRecommencer, autres }: PropsBilan) {
+export function BilanSerie({ items, reponses, mode, titre, phrase, onRefaireErreurs, onRecommencer, autres, complement }: PropsBilan) {
   const [filtre, setFiltre] = useState<"tout" | "erreurs">("tout");
   const parRef = new Map(reponses.map((r) => [r.ref, r]));
   const justes = reponses.filter((r) => r.juste).length;
@@ -586,6 +588,8 @@ export function BilanSerie({ items, reponses, mode, titre, phrase, onRefaireErre
         </button>
         {autres}
       </div>
+
+      {complement}
 
       <div className="rg-correction">
         <div className="rg-correction-tete">

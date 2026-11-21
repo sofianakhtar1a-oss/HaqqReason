@@ -3,6 +3,8 @@ import { CONJUGAISON_PLUS } from "../src/lib/regles/conjugaison-plus";
 import { fichiersDe, palierDe } from "../src/lib/regles/cours/index";
 import { fichiersEntrainement } from "../src/lib/regles/entrainement/index";
 import { lireRef, refExercice } from "../src/lib/regles/suivi";
+import { composerExamen, exercicesDe, exercicesDuNiveau } from "../src/lib/regles/banque";
+import { niveauEstime, niveauSuivant } from "../src/app/langues/regles/Positionnement";
 import { bonneReponse, differences, normaliser, ordreJuste, phraseOrdre, verdictEcrit } from "../src/lib/regles/verifier";
 import { controlerExercice, MINIMUM } from "../scripts/langues/entrainement/controle";
 import { TEMPS } from "../src/lib/regles/conjugueur";
@@ -187,6 +189,29 @@ ok("normaliser : guillemets ignorés", normaliser("« Hello »") === normaliser(
 const ref = refExercice("conjugaison", "verbe-voyageur", "e", 12);
 ok("référence d'exercice relue", JSON.stringify(lireRef(ref)) === JSON.stringify({ section: "conjugaison", lecon: "verbe-voyageur", source: "e", rang: 12 }), lireRef(ref));
 vu("vérification des réponses et références");
+
+// Le test de positionnement : il monte tant qu'on réussit, redescend une fois au départ, puis s'arrête.
+ok("départ en A2", niveauSuivant([]) === "A2");
+ok("A2 réussi : B1", niveauSuivant([{ niveau: "A2", justes: 3 }]) === "B1");
+ok("A2 raté : A1", niveauSuivant([{ niveau: "A2", justes: 1 }]) === "A1");
+ok("A2 raté puis A1 : fin", niveauSuivant([{ niveau: "A2", justes: 1 }, { niveau: "A1", justes: 4 }]) === null);
+ok("B2 raté : fin", niveauSuivant([{ niveau: "A2", justes: 4 }, { niveau: "B1", justes: 3 }, { niveau: "B2", justes: 2 }]) === null);
+ok("C2 réussi : fin", niveauSuivant(["A2", "B1", "B2", "C1", "C2"].map((n) => ({ niveau: n as "A2", justes: 4 }))) === null);
+ok("niveau estimé : le plus haut validé", niveauEstime([{ niveau: "A2", justes: 4 }, { niveau: "B1", justes: 3 }, { niveau: "B2", justes: 1 }]) === "B1");
+ok("niveau estimé : aucun", niveauEstime([{ niveau: "A2", justes: 1 }, { niveau: "A1", justes: 2 }]) === null);
+// Les examens : trente questions, toutes les leçons du niveau représentées.
+for (const section of SECTIONS)
+  for (const niveau of NIVEAUX) {
+    const tous = await exercicesDuNiveau(section.id, niveau);
+    const examen = composerExamen(tous, 30);
+    const lecons = new Set(section.lecons.filter((l) => l.niveau === niveau).map((l) => l.id));
+    ok(`examen ${section.id} ${niveau} : 30 questions`, examen.length === 30, examen.length);
+    ok(`examen ${section.id} ${niveau} : chaque leçon représentée`, lecons.size > 30 || [...lecons].every((id) => examen.some((x) => x.lecon.id === id)), [...lecons].filter((id) => !examen.some((x) => x.lecon.id === id)));
+    ok(`examen ${section.id} ${niveau} : pas de doublon`, new Set(examen.map((x) => x.ref)).size === examen.length);
+  }
+const retrouves = await exercicesDe(["conjugaison/verbe-voyageur/d0", "conjugaison/verbe-voyageur/e3", "conjugaison/inconnue/e1"]);
+ok("carnet : les exercices se retrouvent par leur référence", retrouves.length === 2 && retrouves[0].ref === "conjugaison/verbe-voyageur/d0", retrouves.map((x) => x.ref));
+vu("test de positionnement, examens et carnet d'erreurs");
 
 console.log(e ? `\n${e} échec(s)` : "\nTout est bon.");
 process.exit(e ? 1 : 0);

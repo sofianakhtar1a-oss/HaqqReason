@@ -1,0 +1,286 @@
+/* =====================================================================
+   Les dictées du Truchement : écouter, écrire, voir chaque mot corrigé.
+   Les couleurs de niveau sont celles des histoires (histoires.css).
+   ===================================================================== */
+
+.dc-choix {
+  margin-bottom: 2.25rem;
+  padding: 1.15rem 1.25rem 1.25rem;
+  border-radius: 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--azur) 30%, var(--trait));
+  background: radial-gradient(110% 120% at 0% 0%, color-mix(in srgb, var(--azur) 12%, transparent), transparent 60%), var(--surface);
+}
+.dc-choix-titre {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.dc-choix-titre svg {
+  color: var(--azur);
+}
+.dc-choix-texte {
+  max-width: 44rem;
+  margin: 0.35rem 0 1rem;
+  line-height: 1.6;
+  color: var(--encre-douce);
+}
+.dc-niveaux {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+@media (min-width: 48rem) {
+  .dc-niveaux {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.dc-niveaux button {
+  display: grid;
+  gap: 0.1rem;
+  width: 100%;
+  padding: 0.65rem 0.5rem;
+  border-radius: 1rem;
+  border: 1.5px solid color-mix(in srgb, var(--hs-c) 40%, var(--trait));
+  background: color-mix(in srgb, var(--hs-c) 8%, var(--surface));
+  text-align: center;
+}
+.dc-niveaux button:hover {
+  border-color: var(--hs-c);
+}
+.dc-niveaux strong {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--hs-c);
+}
+.dc-niveaux span {
+  font-size: 0.76rem;
+  color: var(--encre-douce);
+}
+.dc {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+.dc-retour {
+  margin-bottom: 1rem;
+}
+.dc-tete {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+  color: var(--hs-c);
+}
+.dc-niveau {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.dc-titre {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--encre);
+}
+.dc-charge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 2.5rem 1rem;
+  color: var(--encre-douce);
+}
+.dc-carte {
+  display: grid;
+  gap: 1.25rem;
+  padding: clamp(1.1rem, 4vw, 1.75rem);
+  border-radius: 1.5rem;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+}
+.dc-ecoute {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+.dc-jouer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.4rem;
+  border-radius: 999px;
+  background: var(--hs-c);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--fond);
+  box-shadow: 0 0.6rem 1.6rem -0.9rem var(--hs-c);
+}
+.dc-jouer:disabled {
+  opacity: 0.5;
+}
+.dc-formulaire {
+  display: grid;
+  gap: 0.6rem;
+}
+.dc-consigne {
+  font-size: 0.88rem;
+  color: var(--encre-douce);
+}
+.dc-formulaire textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 1rem;
+  border: 1.5px solid var(--trait);
+  background: var(--surface-forte);
+  font-family: var(--lg-police);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--encre);
+  resize: vertical;
+}
+.dc-formulaire textarea:focus {
+  border-color: var(--hs-c);
+  outline: none;
+}
+.dc-correction {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.9rem 1rem;
+  border-radius: 1rem;
+  background: var(--surface-forte);
+  animation: rg-apparait 0.3s ease both;
+}
+.dc-correction-score {
+  font-weight: 700;
+  color: var(--rg-piste, var(--or));
+}
+.dc-correction-score[data-parfait] {
+  color: var(--succes);
+}
+.dc-diff {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.4rem;
+  font-family: var(--lg-police);
+  font-size: 1.12rem;
+}
+.dc-diff span,
+.dc-legende span {
+  padding: 0 0.25rem;
+  border-radius: 0.3rem;
+}
+.dc-diff [data-etat="pareil"],
+.dc-legende [data-etat="pareil"] {
+  background: color-mix(in srgb, var(--succes) 18%, transparent);
+}
+.dc-diff [data-etat="manque"],
+.dc-legende [data-etat="manque"] {
+  background: color-mix(in srgb, var(--or) 24%, transparent);
+  font-weight: 700;
+}
+.dc-diff [data-etat="trop"],
+.dc-legende [data-etat="trop"] {
+  background: color-mix(in srgb, var(--danger) 16%, transparent);
+  text-decoration: line-through;
+}
+.dc-juste {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--lg-police);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.dc-reecouter {
+  display: grid;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 999px;
+  background: var(--azur-doux);
+  color: var(--azur);
+}
+.dc-traduction {
+  font-size: 0.95rem;
+  color: var(--encre-douce);
+}
+.dc-legende {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: 0.76rem;
+  color: var(--encre-douce);
+}
+.dc-points {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+}
+.dc-points li {
+  width: 1.6rem;
+  height: 0.4rem;
+  border-radius: 999px;
+  background: var(--surface-forte);
+}
+.dc-points li[data-etat="faite"] {
+  background: color-mix(in srgb, var(--hs-c) 55%, var(--surface-forte));
+}
+.dc-points li[data-etat="juste"] {
+  background: var(--succes);
+}
+.dc-points li[data-etat="ici"] {
+  background: color-mix(in srgb, var(--hs-c) 30%, var(--surface-forte));
+}
+.dc-astuce {
+  margin-top: 1rem;
+  font-size: 0.86rem;
+  text-align: center;
+  color: var(--encre-douce);
+}
+.dc-bilan {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+}
+.dc-bilan-score {
+  font-size: 1.05rem;
+}
+.dc-bilan-score strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--hs-c, var(--azur));
+}
+.dc-bilan-texte {
+  line-height: 1.6;
+  color: var(--encre-douce);
+}
+.dc-bilan-liste {
+  display: grid;
+  gap: 0.5rem;
+  text-align: left;
+}
+.dc-bilan-liste li {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.9rem;
+  border-left: 3px solid var(--or);
+  background: var(--surface);
+}
+.dc-bilan-liste li[data-parfait] {
+  border-left-color: var(--succes);
+}
+.dc-bilan-liste [lang="en"] {
+  font-family: var(--lg-police);
+  font-size: 1.05rem;
+}
+.dc-bilan-liste small {
+  color: var(--encre-douce);
+}
+.dc-bilan .rg-actions {
+  justify-content: center;
+}

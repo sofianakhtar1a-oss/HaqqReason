@@ -239,6 +239,13 @@
   background: color-mix(in srgb, var(--hs-c, var(--azur)) 16%, var(--surface));
   color: var(--encre);
 }
+.hs-ton-niveau {
+  padding: 0 0.4rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--hs-c) 22%, transparent);
+  font-size: 0.72rem;
+  color: var(--encre);
+}
 .hs-niveaux button:disabled {
   opacity: 0.4;
 }

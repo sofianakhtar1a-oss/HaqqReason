@@ -10,6 +10,10 @@ import { useArrivees } from "@/lib/client/synchro/useArrivees";
 import { ecrire, ecrireBlob, listerMedias, lireUn, type MediaLangue, supprimerMedia } from "@/lib/langues/stockage";
 import { BoutonSupprimer, ChoixLangue } from "./communs";
 import { useTextes } from "@/lib/modules/textes-client";
+import { NIVEAUX, type Niveau } from "@/lib/langues/types";
+import { ChoixDictee, Dictee } from "./Dictee";
+import "./histoires/histoires.css";
+import "./regles/regles.css";
 import { Immersion } from "./Immersion";
 
 /*
@@ -23,6 +27,9 @@ const ETAPES: Record<Etape, string> = { preparation: "Préparation du son", dist
 type Travail = { nom: string; etape: Etape; progression: number; apercu: string[] };
 
 const MAGASINS_MEDIAS = ["langues-medias", "reprise"] as const;
+
+/** Adresse d'une dictée : #ecouter/dictee/<niveau>. */
+const DICTEE = "dictee/";
 
 export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (id: string | null) => void }) {
   const [medias, setMedias] = useState<MediaLangue[] | null>(null);
@@ -42,7 +49,7 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
   useEffect(() => () => annulation.current?.abort(), []);
 
   useEffect(() => {
-    if (!ouvert) return;
+    if (!ouvert || ouvert.startsWith(DICTEE)) return;
     let fini = false;
     void lireUn<MediaLangue>("medias", ouvert).then((m) => {
       if (fini) return;
@@ -99,6 +106,10 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
     }, f.name);
   };
 
+  if (ouvert?.startsWith(DICTEE)) {
+    const niveau = ouvert.slice(DICTEE.length) as Niveau;
+    if (NIVEAUX.includes(niveau)) return <Dictee key={niveau} niveau={niveau} onFermer={() => onOuvrir(null)} />;
+  }
   if (courant && courant.id === ouvert) return <Immersion key={courant.id} media={courant} onFermer={() => { onOuvrir(null); recharger(); }} />;
 
   return (
@@ -111,6 +122,8 @@ export function Ecouter({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir:
           <p className="lg-chapo">{t("ecouter.chapo")}</p>
         </div>
       </div>
+
+      <ChoixDictee onOuvrir={(niveau) => onOuvrir(`${DICTEE}${niveau}`)} />
 
       {travail ? (
         <div className="lg-travail" role="status">
