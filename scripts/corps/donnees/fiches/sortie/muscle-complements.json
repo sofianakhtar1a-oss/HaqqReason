@@ -1,0 +1,125 @@
+{
+ "sources": {
+  "kenhub-semi-epineux-tete": {
+   "titre": "Kenhub : Semispinalis capitis muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/semispinalis-capitis-muscle"
+  },
+  "elsevier-semi-epineux-tete": {
+   "titre": "Elsevier (Complete Anatomy) : Semispinalis capitis muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-back/semispinalis-capitis-muscle/23896"
+  },
+  "radiopaedia-transversaires-epineux": {
+   "titre": "Radiopaedia : Transversospinalis muscles",
+   "url": "https://radiopaedia.org/articles/45296"
+  },
+  "elsevier-grand-occipital": {
+   "titre": "Elsevier (Complete Anatomy) : Greater occipital nerve",
+   "url": "https://www.elsevier.com/resources/anatomy/nervous-system/peripheral-nervous-system/greater-occipital-nerve/20989"
+  }
+ },
+ "fiches": [
+  {
+   "id": "semi-epineux-de-la-tete",
+   "resume": "Le gros muscle profond de la nuque, de chaque côté de la ligne médiane : il redresse et soutient la tête.",
+   "origine": [
+    {
+     "texte": "Processus articulaires des vertèbres C4 à C7",
+     "os": [
+      "vertebre-c4",
+      "vertebre-c5",
+      "vertebre-c6"
+     ]
+    },
+    {
+     "texte": "Sommets des processus transverses des vertèbres T1 à T6",
+     "os": [
+      "vertebre-t1",
+      "vertebre-t2",
+      "vertebre-t3",
+      "vertebre-t4",
+      "vertebre-t5",
+      "vertebre-t6"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Écaille de l'os occipital, entre les lignes nucales supérieure et inférieure, de part et d'autre de la crête occipitale externe",
+     "os": [
+      "occipital"
+     ]
+    }
+   ],
+   "action": "Des deux côtés : porte la tête et le cou en arrière et les tient droits ; d'un seul côté : incline la tête de son côté et la tourne légèrement du côté opposé",
+   "actions": [
+    {
+     "articulation": "tete",
+     "mouvement": "extension",
+     "role": "principal"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "extension",
+     "role": "principal"
+    },
+    {
+     "articulation": "tete",
+     "mouvement": "inclinaison",
+     "role": "accessoire",
+     "precision": "contraction d'un seul côté"
+    },
+    {
+     "articulation": "tete",
+     "mouvement": "rotation-controlaterale",
+     "role": "accessoire",
+     "precision": "faible, d'un seul côté"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "stabilisation",
+     "role": "accessoire",
+     "precision": "tient la tête en équilibre sur le cou"
+    }
+   ],
+   "synergistes": [
+    "splenius-tete",
+    "semi-epineux-du-cou",
+    "longissimus-de-la-tete",
+    "trapeze"
+   ],
+   "antagonistes": [
+    "sterno-cleido-mastoidien",
+    "long-de-la-tete"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux postérieurs des nerfs cervicaux : nerf grand occipital (C2) et troisième nerf cervical (C3)",
+    "racines": [
+     "C2",
+     "C3"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère occipitale, artère cervicale profonde et rameaux de l'artère vertébrale ; rameaux dorsaux des premières artères intercostales postérieures",
+    "arteres": [
+     "artere-occipitale",
+     "artere-cervicale-profonde",
+     "vertebrale"
+    ]
+   },
+   "palpation": "Sous le trapèze et le splénius, de part et d'autre de la ligne médiane de la nuque : deux cordes épaisses qui durcissent quand on repousse la tête en arrière contre la main",
+   "test": "Sujet couché sur le ventre, il relève la tête contre une résistance posée sur l'arrière du crâne",
+   "atteinte": "Faiblesse de l'extension de la tête : elle tombe en avant (tête tombante, dans certaines maladies neuromusculaires) ; le nerf grand occipital, qui le traverse, peut y être comprimé et donner une névralgie d'Arnold",
+   "clinique": "Le nerf grand occipital perfore le muscle près de son attache occipitale : c'est un point d'infiltration dans les céphalées d'origine cervicale (névralgie d'Arnold)",
+   "memo": "Le « complexus » des anciens : le câble qui tient la tête droite, sous le trapèze",
+   "variantes": "Les niveaux d'origine varient d'un auteur à l'autre (C4 ou C5 à C7, T1 à T6 ou T7) ; une intersection tendineuse coupe souvent sa partie médiale",
+   "sources": [
+    "kenhub-semi-epineux-tete",
+    "elsevier-semi-epineux-tete",
+    "radiopaedia-transversaires-epineux",
+    "elsevier-grand-occipital"
+   ],
+   "divergences": "Origine : C4-C7 et T1-T6 (Kenhub, Elsevier), C4 ou C5 à C7 et T1 à T6 ou T7 (Radiopaedia) ; la rotation, du côté opposé pour Kenhub, n'est pas précisée par Elsevier"
+  }
+ ]
+}

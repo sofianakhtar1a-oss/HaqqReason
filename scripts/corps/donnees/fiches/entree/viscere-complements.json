@@ -1,0 +1,36 @@
+{
+ "lot": "viscere-complements",
+ "couche": "viscere",
+ "structures": [
+  {
+   "id": "rein",
+   "nom": "Rein",
+   "latin": "Ren",
+   "anglais": "Kidney",
+   "region": "abdomen",
+   "rang": 1,
+   "officiel": "Rein",
+   "ta2": "3358"
+  },
+  {
+   "id": "rectum",
+   "nom": "Rectum",
+   "latin": "Rectum",
+   "anglais": "Rectum",
+   "region": "bassin",
+   "rang": 1,
+   "officiel": "Rectum",
+   "ta2": "2998"
+  },
+  {
+   "id": "ileon",
+   "nom": "Iléon",
+   "latin": "Ileum",
+   "anglais": "Ileum",
+   "region": "abdomen",
+   "rang": 1,
+   "officiel": "Iléon",
+   "ta2": "2959"
+  }
+ ]
+}

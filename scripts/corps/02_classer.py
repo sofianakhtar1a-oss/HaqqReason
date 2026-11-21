@@ -93,7 +93,8 @@ def classer(o, base, suff):
     if PUDEUR.search(base):
         return None, "organes génitaux externes (pudeur)"
     nu = re.sub(r"^\((.*)\)$", r"\1", base)
-    if nu in NON_COMMERCIAL or "intrarenal" in n:
+    # (le rein repris de BodyParts3D, lui, est libre)
+    if o.get("source") != "BodyParts3D" and (nu in NON_COMMERCIAL or "intrarenal" in n):
         return None, "licence non commerciale : " + NON_COMMERCIAL.get(nu, "rein (CC BY-NC)")
     if re.fullmatch(r"\?+x?", base):
         return None, "objet sans nom"

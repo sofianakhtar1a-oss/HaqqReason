@@ -79,6 +79,38 @@ for couche in ("os", "muscle", "tendon", "artere", "ligament", "veine", "nerf", 
     json.dump({"sources": {c: s for c, s in sorted(sources[couche].items()) if c in utiles}, "fiches": fiches[couche]}, open(cible, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
     print(f"{couche:10s} {len(faits):4d} / {len(attendus):4d} fiches  {os.path.getsize(cible) / 1024:6.0f} Ko")
 json.dump(bilan, open(os.path.join(SORTIE, "bilan.json"), "w", encoding="utf-8"), separators=(",", ":"))
+
+# Les références, regroupées par ouvrage ou par site, avec le nombre de fiches qui s'appuient sur chacune
+# (pour la page « Sources et licences », qui ne charge pas les fiches elles-mêmes).
+FAMILLES = [
+    (r"archive\.org|gray", "Gray's Anatomy of the Human Body, 20e éd. (1918), texte intégral sur Internet Archive", "https://archive.org/details/anatomyofhumanbo1918gray"),
+    (r"kenhub", "Kenhub", "https://www.kenhub.com"),
+    (r"teachmeanatomy", "TeachMeAnatomy", "https://teachmeanatomy.info"),
+    (r"statpearls|ncbi\.nlm\.nih\.gov/books", "StatPearls (NCBI Bookshelf)", "https://www.ncbi.nlm.nih.gov/books/NBK430685/"),
+    (r"radiopaedia", "Radiopaedia", "https://radiopaedia.org"),
+    (r"openstax", "OpenStax, Anatomy and Physiology 2e", "https://openstax.org/details/books/anatomy-and-physiology-2e"),
+    (r"elsevier", "Elsevier, Complete Anatomy (fiches en ligne)", "https://www.elsevier.com/resources/anatomy"),
+    (r"ifaa|fipat|terminologia", "FIPAT, Terminologia Anatomica 2", "https://fipat.library.dal.ca/ta2/"),
+    (r"pmc|pubmed|frontiers|doi\.org|amegroups|springer|wiley", "Articles de revues (PubMed Central et éditeurs)", "https://www.ncbi.nlm.nih.gov/pmc/"),
+    (r"seer\.cancer\.gov", "SEER Training (National Cancer Institute)", "https://training.seer.cancer.gov"),
+    (r"wikipedia", "Wikipédia (toujours recoupée avec une autre référence)", "https://www.wikipedia.org"),
+]
+familles = collections.OrderedDict((nom, {"nom": nom, "url": url, "fiches": 0}) for _, nom, url in FAMILLES)
+autres = {"nom": "Autres sites d'enseignement (universités, encyclopédies)", "url": "", "fiches": 0}
+for couche, par in fiches.items():
+    for f in par.values():
+        if f.get("derive"):
+            continue
+        vues = set()
+        for cle in f.get("sources", []):
+            s = sources[couche].get(cle) or {}
+            texte = f"{s.get('url', '')} {s.get('titre', '')}".lower()
+            nom = next((n for motif, n, _ in FAMILLES if re.search(motif, texte)), None)
+            vues.add(nom)
+        for nom in vues:
+            (familles[nom] if nom else autres)["fiches"] += 1
+refs = sorted([x for x in familles.values() if x["fiches"]], key=lambda x: -x["fiches"]) + ([autres] if autres["fiches"] else [])
+json.dump({"fiches": sum(1 for p in fiches.values() for x in p.values() if not x.get("derive")), "references": refs}, open(os.path.join(SORTIE, "references.json"), "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
 print("tendons tirés de leur muscle :", nb_derives)
 if refuses:
     print("lots en attente (contrôle non passé) :", ", ".join(refuses))

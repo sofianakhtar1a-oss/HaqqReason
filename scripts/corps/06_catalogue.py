@@ -902,6 +902,22 @@ for cat, couche in CAT_COUCHE.items():
         continue
     niveaux = publiees.setdefault(cat, [])
     noms = titres.setdefault(cat, {})
+    # Une catégorie déjà publiée qui reçoit quelques structures de plus (un organe repris d'un autre atlas) : elles
+    # forment une planche à elles, à la suite ; les planches en ligne ne bougent pas.
+    if niveaux and len(restants) <= TAILLE + 4:
+        lot = sorted(restants, key=lambda e: (ORDRE_REGIONS.index(e["region"]), e["rang"], e["nom"]))
+        le = lambda e: (e.get("art") or "") + e["nom"][0].lower() + e["nom"][1:] if e.get("art") else e["nom"]
+        if len(lot) <= 3:
+            liste = [le(e) for e in lot]
+            titre = liste[0] if len(liste) == 1 else ", ".join(liste[:-1]) + " et " + liste[-1]
+            titre = titre[0].upper() + titre[1:]
+        else:
+            titre = "Les compléments"
+        noms[str(len(niveaux))] = titre
+        niveaux.append([e["id"] for e in lot])
+        ajouts += 1
+        deja |= {e["id"] for e in restants}
+        continue
     if not niveaux:
         choisis = [i for i in INCONTOURNABLES.get(cat, []) if i in {e["id"] for e in restants}]
         if choisis:

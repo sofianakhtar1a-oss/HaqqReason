@@ -1,0 +1,202 @@
+{
+ "sources": {
+  "tma-rein": {
+   "titre": "TeachMeAnatomy : The Kidneys (position, structure, vasculature)",
+   "url": "https://teachmeanatomy.info/abdomen/viscera/kidney/"
+  },
+  "kenhub-reins": {
+   "titre": "Kenhub : Kidneys, ureters and suprarenal glands",
+   "url": "https://www.kenhub.com/en/library/anatomy/kidneys"
+  },
+  "radiopaedia-rein": {
+   "titre": "Radiopaedia : Kidney",
+   "url": "https://radiopaedia.org/articles/kidney"
+  },
+  "tma-rectum": {
+   "titre": "TeachMeAnatomy : The Rectum (position, neurovascular supply)",
+   "url": "https://teachmeanatomy.info/abdomen/gi-tract/rectum/"
+  },
+  "kenhub-rectum": {
+   "titre": "Kenhub : Rectum (en français)",
+   "url": "https://www.kenhub.com/fr/library/anatomie/rectum-fr"
+  },
+  "statpearls-rectum": {
+   "titre": "StatPearls (NCBI) : Anatomy, Abdomen and Pelvis, Rectum",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK537245/"
+  },
+  "tma-intestin-grele": {
+   "titre": "TeachMeAnatomy : The Small Intestine (duodenum, jejunum, ileum)",
+   "url": "https://teachmeanatomy.info/abdomen/gi-tract/small-intestine/"
+  },
+  "britannica-ileon": {
+   "titre": "Encyclopaedia Britannica : Ileum",
+   "url": "https://www.britannica.com/science/ileum"
+  },
+  "wikipedia-ileon": {
+   "titre": "Wikipedia (en) : Ileum",
+   "url": "https://en.wikipedia.org/wiki/Ileum"
+  }
+ },
+ "fiches": [
+  {
+   "id": "rein",
+   "resume": "L'organe qui filtre le sang et fabrique l'urine : deux haricots de 11 à 12 cm, plaqués contre la paroi postérieure de l'abdomen.",
+   "systeme": "urinaire",
+   "situation": "Derrière le péritoine, de chaque côté de la colonne, de T12 à L3 ; le droit un peu plus bas que le gauche, repoussé par le foie. Chacun est coiffé par sa glande surrénale et enveloppé de graisse et du fascia rénal",
+   "fonction": "Filtre le sang et fabrique l'urine ; règle l'eau, le sel et le potassium du corps, l'équilibre acide-base et la pression artérielle (rénine) ; fabrique l'érythropoïétine et active la vitamine D",
+   "parties": [
+    {
+     "nom": "Cortex",
+     "role": "La couche externe, avec les glomérules qui filtrent le sang ; elle s'insinue entre les pyramides (colonnes rénales)"
+    },
+    {
+     "nom": "Médulla (pyramides)",
+     "role": "Dix à quatorze pyramides dont le sommet, la papille, verse l'urine dans un petit calice"
+    },
+    {
+     "nom": "Calices et bassinet",
+     "role": "Les petits calices se réunissent en deux ou trois grands calices, puis en bassinet, qui se continue par l'uretère"
+    },
+    {
+     "nom": "Hile",
+     "role": "La fente du bord médial : la veine rénale en avant, l'artère au milieu, le bassinet en arrière"
+    }
+   ],
+   "rapports": "En arrière : le diaphragme, les 11e et 12e côtes, le grand psoas et le carré des lombes. En avant, à droite : le foie, le duodénum et l'angle droit du côlon ; à gauche : la rate, l'estomac, le pancréas, l'angle gauche du côlon et le jéjunum",
+   "vascularisation": {
+    "texte": "Artère rénale, née de l'aorte juste sous l'artère mésentérique supérieure, qui se divise au hile en branches antérieure et postérieure puis en artères segmentaires, terminales ; veine rénale vers la veine cave inférieure (la gauche, plus longue, passe devant l'aorte)",
+    "arteres": [
+     "renale",
+     "branche-anterieure-de-l-artere-renale",
+     "branche-posterieure-de-l-artere-renale",
+     "aorte-abdominale"
+    ],
+    "veines": [
+     "veine-renale-gauche",
+     "veine-cave-inferieure"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus rénal : fibres sympathiques venues des nerfs splanchniques (T10 à L1) et fibres parasympathiques du nerf vague ; la douleur rénale se projette au flanc",
+    "nerfs": [
+     "nerfs-sympathiques",
+     "nerf-vague-x"
+    ]
+   },
+   "examen": "Palpé à deux mains, sujet couché, au flanc pendant l'inspiration (le pôle inférieur du rein droit chez un sujet mince) ; percussion de la fosse lombaire douloureuse dans une infection ; échographie",
+   "clinique": "Calculs rénaux (coliques néphrétiques, du flanc vers l'aine) ; insuffisance rénale ; rein en fer à cheval (pôles inférieurs soudés sous l'artère mésentérique inférieure) ou rein resté dans le bassin ; artères segmentaires terminales : une obstruction détruit un segment entier",
+   "memo": "Au hile, d'avant en arrière : Veine, Artère, Uretère (bassinet) — « VAU »",
+   "variantes": "Artères rénales accessoires chez environ un quart des sujets ; rein pelvien, rein en fer à cheval",
+   "sources": [
+    "tma-rein",
+    "kenhub-reins",
+    "radiopaedia-rein"
+   ],
+   "divergences": "Le modèle 3D du rein vient de BodyParts3D, celui de Z-Anatomy étant sous licence non commerciale"
+  },
+  {
+   "id": "rectum",
+   "resume": "La dernière portion du gros intestin, de 12 à 16 cm, qui garde les selles jusqu'au moment de la défécation.",
+   "systeme": "digestif",
+   "situation": "Dans le petit bassin, devant le sacrum et le coccyx : il fait suite au côlon sigmoïde à hauteur de S2-S3 et se termine par le canal anal, au périnée ; c'est le viscère le plus postérieur du bassin",
+   "fonction": "Réservoir temporaire des selles : son ampoule se laisse distendre puis se vide à la défécation ; l'angle anorectal, tenu par le muscle pubo-rectal, participe à la continence ; absorbe un peu d'eau et d'électrolytes",
+   "parties": [
+    {
+     "nom": "Courbure sacrale",
+     "role": "Concave en avant, elle épouse le sacrum"
+    },
+    {
+     "nom": "Courbure anorectale (périnéale)",
+     "role": "Convexe en avant, entretenue par le tonus du muscle pubo-rectal : elle aide à la continence"
+    },
+    {
+     "nom": "Plis transverses (valves de Houston)",
+     "role": "Trois plis du dedans ; le moyen (valve de Kohlrausch), le plus marqué, est à environ 7 cm de l'anus"
+    },
+    {
+     "nom": "Ampoule rectale",
+     "role": "La partie basse, très extensible, entre le pli moyen et la jonction anorectale"
+    }
+   ],
+   "rapports": "En arrière : le sacrum, le coccyx, le plexus sacral, les muscles piriformes et releveurs de l'anus. En avant, chez l'homme : le cul-de-sac recto-vésical, la vessie, les vésicules séminales et la prostate ; chez la femme : le cul-de-sac recto-utérin, le col de l'utérus et le vagin",
+   "vascularisation": {
+    "texte": "Artère rectale supérieure (fin de l'artère mésentérique inférieure), artères rectales moyennes (iliaques internes) et inférieures (pudendales internes) ; la veine rectale supérieure va au système porte, les moyennes et inférieures aux veines iliaques : une anastomose porto-cave",
+    "arteres": [
+     "artere-anorectale-superieure",
+     "artere-mesenterique-inferieure",
+     "iliaque-interne"
+    ],
+    "veines": [
+     "veine-mesenterique-inferieure",
+     "veine-iliaque-interne"
+    ]
+   },
+   "innervation": {
+    "texte": "Sympathique par les nerfs splanchniques lombaires et les plexus hypogastriques ; parasympathique par les nerfs splanchniques pelviens (S2 à S4), qui portent aussi la sensation de besoin",
+    "nerfs": [
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Toucher rectal : on sent la paroi, et en avant la prostate et les vésicules séminales chez l'homme, le col de l'utérus chez la femme ; en arrière, le sacrum et le coccyx",
+   "clinique": "Cancer du rectum (une tumeur sous le pli moyen se sent au toucher rectal) ; varices ano-rectales de l'hypertension portale, distinctes des hémorroïdes ; prolapsus rectal",
+   "memo": "« Recto » comme droit : sur une coupe de face il est droit, de profil il épouse le sacrum",
+   "variantes": "La réflexion du péritoine sur sa face antérieure varie d'un sujet à l'autre (6 à 8 cm de la marge anale environ)",
+   "sources": [
+    "tma-rectum",
+    "kenhub-rectum",
+    "statpearls-rectum"
+   ],
+   "divergences": "Longueur : 12 à 15 cm (StatPearls) ou 12 à 16 cm (Kenhub) ; début à S3 (TeachMeAnatomy) ou à S2-S3 (Kenhub)"
+  },
+  {
+   "id": "ileon",
+   "resume": "La dernière et la plus longue partie de l'intestin grêle, qui finit d'absorber le repas et rejoint le cæcum.",
+   "systeme": "digestif",
+   "situation": "Surtout en bas et à droite de l'abdomen et dans le bassin, suspendu à la paroi postérieure par le mésentère ; il fait suite au jéjunum sans limite nette et s'abouche dans le cæcum par la valve iléo-cæcale",
+   "fonction": "Absorbe ce que le jéjunum a laissé, et surtout la vitamine B12 et les sels biliaires (qui retournent au foie) ; ses plaques de Peyer surveillent les germes de l'intestin ; la valve iléo-cæcale freine le reflux du côlon",
+   "parties": [
+    {
+     "nom": "Plaques de Peyer",
+     "role": "Amas de tissu lymphoïde dans la paroi, abondants dans l'iléon"
+    },
+    {
+     "nom": "Iléon terminal",
+     "role": "Les derniers centimètres, où se font l'absorption de la vitamine B12 et la reprise des sels biliaires"
+    },
+    {
+     "nom": "Valve iléo-cæcale",
+     "role": "L'iléon s'invagine dans le cæcum ; repère de la coloscopie"
+    }
+   ],
+   "rapports": "Les anses du jéjunum en haut et à gauche, le côlon ascendant et le cæcum à droite, la vessie et le rectum en bas ; le grand omentum en avant",
+   "vascularisation": {
+    "texte": "Artères iléales, branches de l'artère mésentérique supérieure, en arcades de plus en plus nombreuses avec des vaisseaux droits courts ; la branche iléale de l'artère iléo-colique pour l'iléon terminal ; veines vers la veine mésentérique supérieure, puis la veine porte",
+    "arteres": [
+     "mesenterique-superieure",
+     "artere-ileocolique",
+     "branche-ileale-de-l-artere-ileocolique"
+    ],
+    "veines": [
+     "veine-mesenterique-superieure"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus mésentérique supérieur : sympathique (ganglions cœliaques et mésentériques) et parasympathique (nerf vague)",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Non palpable ; exploré par l'iléo-coloscopie (l'iléon terminal après la valve) et l'entéro-IRM",
+   "clinique": "Maladie de Crohn (l'iléon terminal en est le siège favori) ; diverticule de Meckel (reste du canal vitellin, chez 2 à 4 % des sujets) ; carence en vitamine B12 après une résection de l'iléon terminal",
+   "memo": "Iléon, comme « il est l'ultime » : le dernier mètre du grêle, celui de la B12",
+   "variantes": "Diverticule de Meckel sur son bord libre chez 2 à 4 % des personnes",
+   "sources": [
+    "tma-intestin-grele",
+    "britannica-ileon",
+    "wikipedia-ileon"
+   ],
+   "divergences": "Longueur : environ 3,5 m, les trois cinquièmes du grêle (Britannica), ou 2 à 4 m (Wikipédia) ; aucune limite nette avec le jéjunum"
+  }
+ ]
+}

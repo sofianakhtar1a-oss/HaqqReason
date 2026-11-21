@@ -3,6 +3,11 @@
 import { X } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { ELEMENTS } from "@/lib/corps/catalogue";
+import referencesJson from "@/lib/corps/fiches/references.json";
+import { AMPLITUDES_SOURCES } from "@/lib/corps/mouvement/articulations";
+
+const REFERENCES = referencesJson as { fiches: number; references: { nom: string; url: string; fiches: number }[] };
+const nombre = (n: number) => n.toLocaleString("fr-FR");
 
 /*
  * D'où vient le corps de L'Écorché, et ce qu'on a le droit d'en faire.
@@ -39,7 +44,7 @@ export function Sources({ fermer }: { fermer: () => void }) {
             </a>
           </li>
           <li>
-            <b>BodyParts3D</b>, dont Z-Anatomy est issu : « BodyParts3D, Copyright © 2008 Life Science Integrated Database Center », The Database Center for Life Science, licence CC BY-SA 2.1 Japon. Modèle d’origine : Kousaku Okubo.{" "}
+            <b>BodyParts3D</b>, dont Z-Anatomy est issu : « BodyParts3D, Copyright © 2008 Life Science Integrated Database Center », The Database Center for Life Science, licence CC BY-SA 2.1 Japon. Modèle d’origine : Kousaku Okubo. Le rein, le rectum, l’iléon et le muscle semi-épineux de la tête, que Z-Anatomy n’offre pas sous une licence libre ou n’a pas, en viennent directement (copie des fichiers publiée par Kevin M. Moerman sur GitHub).{" "}
             <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html" target="_blank" rel="noreferrer">
               dbarchive.biosciencedbc.jp
             </a>
@@ -54,7 +59,7 @@ export function Sources({ fermer }: { fermer: () => void }) {
           Chaque modèle a été allégé en plusieurs niveaux de détail et lissé ; les artères, les veines et les nerfs ont été retracés en tubes ; l’ombre de contact et le sens des fibres ont été calculés ; les tendons, qui font corps avec leur muscle dans l’atlas, sont devenus des structures à part ; les noms ont été relus en français.
         </p>
         <p>
-          Nous avons écarté la peau, par pudeur les organes génitaux externes, et les deux modèles que leur licence réserve à un usage non commercial (l’oreille interne et le rein) : ils seront refaits à partir de sources libres.
+          Nous avons écarté la peau, par pudeur les organes génitaux externes, et les modèles de Z-Anatomy que leur licence réserve à un usage non commercial. Le rein a été repris de BodyParts3D, placé au centre et à la taille de celui qu’il remplace ; le rectum, l’iléon et le semi-épineux de la tête ont été placés d’après leurs voisins. L’oreille interne manque encore : aucun modèle libre ne la décrit.
         </p>
 
         <h3 className="ec-section-titre">Ce que vous pouvez en faire</h3>
@@ -72,7 +77,31 @@ export function Sources({ fermer }: { fermer: () => void }) {
         </p>
 
         <h3 className="ec-section-titre">Les fiches</h3>
-        <p>Les fiches (origine, terminaison, action, innervation, territoire…) sont rédigées pour L’Écorché. Leur vérification, structure par structure, avec deux ouvrages de référence est en cours ; chaque fiche vérifiée citera ses sources.</p>
+        <p>
+          Les {nombre(REFERENCES.fiches)} fiches (attaches, action, innervation et racines, trajet et branches, territoire, rôle, examen, clinique) sont rédigées pour L’Écorché. Chacune est recoupée sur au moins deux références, qu’elle cite ; quand les auteurs divergent, la fiche le dit. Les tendons sans nom propre reprennent la fiche de leur muscle.
+        </p>
+        <ul className="ec-sources-liste">
+          {REFERENCES.references.map((r) => (
+            <li key={r.nom}>
+              {r.url ? (
+                <a href={r.url} target="_blank" rel="noreferrer">
+                  {r.nom}
+                </a>
+              ) : (
+                r.nom
+              )}{" "}
+              : {nombre(r.fiches)} fiche{r.fiches > 1 ? "s" : ""}
+            </li>
+          ))}
+        </ul>
+
+        <h3 className="ec-section-titre">Les mouvements</h3>
+        <p>Les centres et les axes des articulations sont mesurés sur les os du modèle ; les amplitudes suivent ces références :</p>
+        <ul className="ec-sources-liste">
+          {AMPLITUDES_SOURCES.map((s) => (
+            <li key={s}>{s}</li>
+          ))}
+        </ul>
       </div>
     </dialog>
   );

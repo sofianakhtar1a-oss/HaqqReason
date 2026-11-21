@@ -118,7 +118,8 @@ for (const c of IDS_CATEGORIES.filter((x) => x !== "corps")) {
   const vus = niveauxDe(c).flatMap((n) => n.nouveaux);
   ok(`${c} : chaque structure vue une seule fois`, new Set(vus).size === vus.length);
   ok(`${c} : les planches publiées gardent leur contenu`, JSON.stringify(niveauxDe(c).map((n) => n.nouveaux)) === JSON.stringify(publiees[c].map((l) => l.filter((id) => !ABSENTS.includes(id)))));
-  ok(`${c} : aucune planche vide`, niveauxDe(c).every((n) => n.nouveaux.length >= 4));
+  // (la dernière peut être petite : quelques structures arrivées après la publication, comme le rein)
+  ok(`${c} : aucune planche vide`, niveauxDe(c).every((n, k, l) => n.nouveaux.length >= 4 || (k === l.length - 1 && n.nouveaux.length >= 1)));
 }
 ok("les quatre couches de la première version ont leurs planches", ["os", "muscles", "tendons", "arteres"].every((c) => (IDS_CATEGORIES as string[]).includes(c)));
 ok("le grand examen couvre tout ce qu'on apprend", niveauxDe("corps").at(-1)!.nouveaux.length === ELEMENTS_APPRIS.length && ELEMENTS_APPRIS.length >= 225);

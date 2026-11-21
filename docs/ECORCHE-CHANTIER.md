@@ -55,9 +55,9 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
 | 1.4 | Attributs : occlusion précalculée, sens des fibres, tendon et cartilage, poids d'animation, onde artérielle | 4 | 4 |
 | 1.5 | Paquets compressés, noms hachés, chargement progressif | 2 | 2 |
 | 2.1 | Moteur : chargement des paquets, détail selon l'appareil, sélection, états | 4 | 3 |
-| 2.2 | Matières physiques par tissu (muscle, tendon, os, cartilage, artère, veine, nerf, viscère) | 5 | 2 |
-| 2.3 | Lumière de studio, ombres, occlusion, mappage tonal, anticrénelage, profondeur de champ | 5 | 1 |
-| 2.4 | Deux rendus (pièce fraîche, pièce plastinée), qualité adaptative | 2 | 1 |
+| 2.2 | Matières physiques par tissu (muscle, tendon, os, cartilage, artère, veine, nerf, viscère) | 5 | 4 |
+| 2.3 | Lumière de studio, ombres, occlusion, mappage tonal, anticrénelage, profondeur de champ | 5 | 4.5 |
+| 2.4 | Deux rendus (pièce fraîche, pièce plastinée), qualité adaptative | 2 | 1.5 |
 | 3.1 | Catalogue complet des os, muscles, tendons, artères, relié aux modèles | 4 | 3 |
 | 3.2 | Nouvelles couches : veines, nerfs, ligaments et cartilages, viscères, encéphale | 4 | 3 |
 | 3.3 | Listes de référence TA2, test de couverture, structures manquantes modélisées | 4 | 1 |
@@ -70,14 +70,14 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
 | 5.3 | Fiches des muscles | 5 | 5 |
 | 5.4 | Fiches des tendons et aponévroses | 2 | 2 |
 | 5.5 | Fiches des artères | 3 | 3 |
-| 5.6 | Fiches des autres couches | 2 | 1.5 |
-| 6.1 | Nouvelles méthodes de quiz sur les fonctions | 6 | 0 |
-| 6.2 | Répétition espacée FSRS par facette, certitude, reprise de la progression | 4 | 2 |
-| 6.3 | Planches exhaustives, examen final, carte de maîtrise par facette | 4 | 1 |
+| 5.6 | Fiches des autres couches | 2 | 2 |
+| 6.1 | Nouvelles méthodes de quiz sur les fonctions | 6 | 5.5 |
+| 6.2 | Répétition espacée FSRS par facette, certitude, reprise de la progression | 4 | 4 |
+| 6.3 | Planches exhaustives, examen final, carte de maîtrise par facette | 4 | 4 |
 | 7.1 | Interface : couches, coupes, mouvements, fiches enrichies, page « Sources et licences » | 4 | 2 |
 | 7.2 | Captures de contrôle, tests, performances, mise en ligne, bilan | 4 | 1 |
 
-**Total fait : 64.5 / 100.**
+**Total fait : 81.5 / 100.**
 
 ## Journal
 
@@ -129,6 +129,13 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
   exhaustives : 222 planches couvrent les 1 702 structures (viscères par système, encéphale par partie, vaisseaux et
   nerfs par tronc), les planches déjà publiées n'ont pas bougé. L'atelier (poses, curseurs, coupe, éclaté, scalpel,
   cœur et poumons vivants) et la mémoire par facette (FSRS) sont en ligne.
+
+- 21/11 11:30 — Les questions sur les fonctions (quinze méthodes tirées des fiches, le corps qui rejoue la bonne
+  réponse), la certitude qui règle la répétition espacée par facette, la révision du jour entrelacée, l'examen final
+  (40 questions, 80 %) et la carte de maîtrise par facette sont en ligne ; les 1 702 structures ont leur fiche.
+  Le studio du moteur : image multi-échantillonnée hors écran, occlusion d'écran, accumulation à l'arrêt (bords affinés,
+  profondeur de champ en gros plan). Le rein et l'oreille interne de Z-Anatomy sont sous licence non commerciale :
+  on les reprendra de BodyParts3D (CC BY-SA 2.1 JP), déjà sur le disque.
 
 ## Pour reprendre après une interruption
 

@@ -14,6 +14,65 @@ import type { V3 } from "../vec";
 import insertionsJson from "./insertions.json";
 import manifesteJson from "./manifeste.json";
 import { lirePaquet, type Paquet } from "./paquet";
+
+/*
+ * Le décodeur : un Worker quand le navigateur en a (le fil principal reste libre pour l'image), sinon la page.
+ * Les données ne sont pas transférées au Worker mais copiées : s'il échoue, la page les décode elle-même.
+ */
+type Attente = { donnees: ArrayBuffer; ok: (p: Paquet) => void; ko: (e: unknown) => void };
+let decodeur: Worker | null | undefined;
+const attentes = new Map<number, Attente>();
+let numero = 0;
+function sansDecodeur() {
+  decodeur?.terminate();
+  decodeur = null;
+  for (const [n, a] of attentes) {
+    attentes.delete(n);
+    lirePaquet(a.donnees).then(a.ok, a.ko);
+  }
+}
+function creerDecodeur(): Worker {
+  // Le Worker naît d'un Blob qui recopie le décodeur (il se suffit à lui-même) : rien à servir à part.
+  const source = `const lirePaquet = ${lirePaquet.toString()};
+self.onmessage = async (e) => {
+  const { n, donnees } = e.data;
+  try {
+    const p = await lirePaquet(donnees);
+    self.postMessage({ n, paquet: p }, [p.tampon, p.indices.buffer]);
+  } catch (err) {
+    self.postMessage({ n, erreur: String(err) });
+  }
+};`;
+  const url = URL.createObjectURL(new Blob([source], { type: "text/javascript" }));
+  const w = new Worker(url);
+  setTimeout(() => URL.revokeObjectURL(url), 30000);
+  return w;
+}
+function decoder(donnees: ArrayBuffer): Promise<Paquet> {
+  if (decodeur === undefined) {
+    try {
+      decodeur = typeof Worker === "undefined" ? null : creerDecodeur();
+      if (decodeur) {
+        decodeur.onmessage = (ev: MessageEvent<{ n: number; paquet?: Paquet; erreur?: string }>) => {
+          const a = attentes.get(ev.data.n);
+          if (!a) return;
+          attentes.delete(ev.data.n);
+          if (ev.data.paquet) a.ok(ev.data.paquet);
+          else lirePaquet(a.donnees).then(a.ok, a.ko);
+        };
+        decodeur.onerror = () => sansDecodeur();
+      }
+    } catch {
+      decodeur = null;
+    }
+  }
+  if (!decodeur) return lirePaquet(donnees);
+  return new Promise<Paquet>((ok, ko) => {
+    const n = ++numero;
+    attentes.set(n, { donnees, ok, ko });
+    decodeur!.postMessage({ n, donnees });
+  });
+}
 import piecesJson from "./pieces.json";
 
 type DefZone = [element: string, x: number, y: number, z: number, rayon: number];
@@ -265,7 +324,7 @@ export class Modele {
           if (!r.ok) throw new Error(`paquet ${dispo.fichier} : ${r.status}`);
           const donnees = await r.arrayBuffer();
           this.octets += donnees.byteLength;
-          const paquet = await lirePaquet(donnees);
+          const paquet = await decoder(donnees);
           const deja = this.charges.get(cle);
           if (deja && deja.lod <= paquet.lod) return;
           this.charges.set(cle, paquet);
