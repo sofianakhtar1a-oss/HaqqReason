@@ -4,7 +4,9 @@ import { Award, Download, Flame, Snowflake, Upload } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ELEMENTS, PAR_ID } from "@/lib/corps/catalogue";
 import { CATEGORIES, type CategorieId, ELEMENTS_APPRIS, IDS_CATEGORIES, nombreNiveaux, titreDuJoueur, TITRES } from "@/lib/corps/niveaux";
-import { boite, confusionsFrequentes, type Etat, exporterProgression, importerProgression, niveauxReussis, prevision, resume, useEcorche } from "@/lib/corps/progression";
+import { type Facette, FACETTES } from "@/lib/corps/memoire";
+import { boite, confusionsFrequentes, type Etat, exporterProgression, importerProgression, maitriseParFacette, niveauxReussis, prevision, resume, useEcorche } from "@/lib/corps/progression";
+import { structuresDe } from "@/lib/corps/quiz";
 import { COUCHES_DEFAUT, teinteMemoire } from "./communs";
 import type { Navigation, Stage } from "./Ecorche";
 import type { EtatStructure } from "./moteur/Corps3D";
@@ -25,11 +27,33 @@ const MEDAILLES: Medaille[] = [
   { id: "muscles", nom: "Myologiste", texte: "Toutes les planches des muscles.", metal: "or", obtenue: (e) => toutes(e, "muscles") },
   { id: "tendons", nom: "Les cordes", texte: "Toutes les planches des tendons.", metal: "or", obtenue: (e) => toutes(e, "tendons") },
   { id: "arteres", nom: "Angéiologiste", texte: "Toutes les planches des artères.", metal: "or", obtenue: (e) => toutes(e, "arteres") },
+  { id: "ligaments", nom: "Arthrologiste", texte: "Toutes les planches des ligaments.", metal: "or", obtenue: (e) => toutes(e, "ligaments") },
+  { id: "veines", nom: "Phlébologiste", texte: "Toutes les planches des veines.", metal: "or", obtenue: (e) => toutes(e, "veines") },
+  { id: "nerfs", nom: "Névrologiste", texte: "Toutes les planches des nerfs.", metal: "or", obtenue: (e) => toutes(e, "nerfs") },
+  { id: "visceres", nom: "Splanchnologiste", texte: "Toutes les planches des viscères.", metal: "or", obtenue: (e) => toutes(e, "visceres") },
+  { id: "encephale", nom: "Neuro-anatomiste", texte: "Toutes les planches de l'encéphale.", metal: "or", obtenue: (e) => toutes(e, "encephale") },
+  { id: "lymphe", nom: "Les ganglions", texte: "Toutes les planches du système lymphatique.", metal: "or", obtenue: (e) => toutes(e, "lymphe") },
+  { id: "examen", nom: "Le diplôme", texte: "L'examen final réussi, à 80 % au moins.", metal: "or", obtenue: (e) => (e.records.examen ?? 0) >= 80 },
   { id: "mois", nom: "Un mois", texte: "Trente jours d'affilée.", metal: "or", obtenue: (e) => e.profil.jours >= 30 },
   { id: "vesale", nom: "Vésale", texte: "Toutes les structures du corps sues.", metal: "or", obtenue: (e) => sues(e) >= ELEMENTS_APPRIS.length },
 ];
 
 const JOURS = ["Auj.", "Dem.", "J+2", "J+3", "J+4", "J+5", "J+6"];
+
+/** Les facettes qu'on interroge dans chaque couche (une artère n'a pas de nerf à apprendre, un organe pas d'attaches). */
+const FACETTES_DE: Partial<Record<CategorieId, Facette[]>> = {
+  os: ["nom", "situer", "attaches"],
+  muscles: ["nom", "situer", "fonction", "innervation", "attaches", "clinique"],
+  tendons: ["nom", "situer", "attaches", "fonction", "clinique"],
+  ligaments: ["nom", "situer", "fonction", "clinique"],
+  arteres: ["nom", "situer", "vaisseaux"],
+  veines: ["nom", "situer", "vaisseaux"],
+  nerfs: ["nom", "situer", "innervation", "clinique"],
+  visceres: ["nom", "fonction"],
+  encephale: ["nom", "fonction", "clinique"],
+  lymphe: ["nom", "situer"],
+};
+const NOM_FACETTE = Object.fromEntries(FACETTES.map((f) => [f.id, f.nom])) as Record<Facette, string>;
 
 export function Progres({ stage, nav }: { stage: Stage; nav: Navigation }) {
   const e = useEcorche();
@@ -100,6 +124,40 @@ export function Progres({ stage, nav }: { stage: Stage; nav: Navigation }) {
               </a>
             </li>
           ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="ec-section-titre">Facette par facette</h2>
+        <p className="ec-note">Savoir nommer une structure n’est qu’une facette : sa place, ce qu’elle fait, ses nerfs, ses vaisseaux, la clinique s’apprennent à part. Une facette est sue quand elle tient au moins une semaine ; entre parenthèses, celles déjà vues qui ne tiennent pas encore.</p>
+        <ul className="ec-cartes-maitrise">
+          {IDS_CATEGORIES.filter((c) => FACETTES_DE[c]).map((c) => {
+            const fs = FACETTES_DE[c]!;
+            const m = maitriseParFacette(e, structuresDe(c), fs);
+            return (
+              <li key={c} className="ec-carte-maitrise">
+                <h3>{CATEGORIES[c].nom}</h3>
+                <ul className="ec-facettes">
+                  {fs.map((f) => (
+                    <li key={f}>
+                      <span className="ec-facette-nom">{NOM_FACETTE[f]}</span>
+                      <span className="ec-jauge fine est-double" aria-hidden="true">
+                        <span className="est-vue" style={{ transform: `scaleX(${m[f].total ? m[f].vues / m[f].total : 0})` }} />
+                        <span style={{ transform: `scaleX(${m[f].total ? m[f].sues / m[f].total : 0})` }} />
+                      </span>
+                      <span className="ec-facette-chiffre" aria-label={`${m[f].sues} sues et ${m[f].vues} déjà vues sur ${m[f].total}`}>
+                        {m[f].sues}
+                        {m[f].vues > m[f].sues ? <small> (+{m[f].vues - m[f].sues})</small> : null}/{m[f].total}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <button type="button" className="ec-lien" onClick={() => nav.jouer({ sorte: "fonctions", categorie: c, titre: `Les fonctions · ${CATEGORIES[c].nom}` })}>
+                  S’exercer sur les fonctions
+                </button>
+              </li>
+            );
+          })}
         </ul>
       </section>
 

@@ -10,7 +10,8 @@ import { DDL, NOMS_ARTICULATIONS, NOMS_MOUVEMENTS } from "../src/lib/corps/mouve
 import { gesteDe, programmeDe } from "../src/lib/corps/mouvement/gestes";
 import { NB_AXIAUX, NB_LATERAUX, NB_SEGMENTS, type Pose, appliquer, numero, pointMesure, poser } from "../src/lib/corps/mouvement/squelette";
 import { ELEMENTS_APPRIS, IDS_CATEGORIES, niveauxDe, titreDuJoueur, TITRES } from "../src/lib/corps/niveaux";
-import { article, defiDuJour, fabriquer, METHODES, partieDeNiveau, questionMelangee, typesPossibles, type TypeQ } from "../src/lib/corps/quiz";
+import { article, defiDuJour, FACETTE_DE, fabriquer, METHODES, partieDeNiveau, questionMelangee, typesPossibles, type TypeQ } from "../src/lib/corps/quiz";
+import { estFonction, fabriquerFonction, jugerGeste, nomRacines, type Recueils, TYPES_FONCTION, type TypeFonction, typesFonction } from "../src/lib/corps/fonctions";
 import { jugerNom, normaliser } from "../src/lib/corps/texte";
 import { COUCHES } from "../src/lib/corps/types";
 
@@ -284,6 +285,49 @@ ok("un muscle sans articulation à mouvoir se contracte sur place", programmeDe(
       ok("les artères qui se palpent disent où prendre le pouls", ["radiale", "carotide-commune", "femorale", "poplitee"].filter((id) => r.fiches[id]).every((id) => (r.fiches[id].pouls as { ou?: string } | null)?.ou));
     }
   }
+}
+
+/* ---------- Les questions sur les fonctions ---------- */
+{
+  const R: Recueils = {};
+  for (const c of ["muscle", "nerf", "artere", "veine", "tendon", "ligament", "viscere", "encephale", "lymphe", "os"] as const) (R as Record<string, unknown>)[c] = lire(`../src/lib/corps/fiches/${c}.json`);
+  const ctx = { difficulte: "normal" as const, recueils: R };
+  const faites: Partial<Record<TypeFonction, number>> = {};
+  const fautives: string[] = [];
+  for (const e of ELEMENTS)
+    for (const t of typesFonction(e, R)) {
+      const q = fabriquerFonction(11, e.id, t, ctx);
+      if (!q) continue;
+      faites[t] = (faites[t] ?? 0) + 1;
+      if (q.reponse === "qcm" && !q.options.some((o) => o.id === q.attendu)) fautives.push(`${t}:${e.id} (la bonne réponse manque)`);
+      if (q.reponse === "qcm" && new Set(q.options.map((o) => normaliser(o.texte))).size !== q.options.length) fautives.push(`${t}:${e.id} (deux choix identiques)`);
+      if (q.reponse === "ordre" && (q.ordre?.length !== q.options.length || q.ordre.join(">") !== q.attendu)) fautives.push(`${t}:${e.id} (ordre)`);
+      if (q.reponse === "suite" && !(q.ordre ?? []).every((x) => PAR_ID.has(x))) fautives.push(`${t}:${e.id} (suite)`);
+      if (q.indice && ["cas-clinique", "sensibilite", "tester", "role"].includes(t) && normaliser(q.indice).includes(normaliser(e.nom))) fautives.push(`${t}:${e.id} (l'indice donne le nom)`);
+    }
+  ok("chaque méthode de fonction fabrique des questions", TYPES_FONCTION.every((t) => (faites[t] ?? 0) >= 10), JSON.stringify(faites));
+  ok("des milliers de questions de fonction", Object.values(faites).reduce((s, n) => s + (n ?? 0), 0) > 2500, String(Object.values(faites).reduce((s, n) => s + (n ?? 0), 0)));
+  ok("les questions de fonction sont bien formées", fautives.length === 0, fautives.slice(0, 6).join(" ; "));
+  ok("la même graine donne la même question de fonction", JSON.stringify(fabriquerFonction(5, "biceps-brachial", "mouvement", ctx)) === JSON.stringify(fabriquerFonction(5, "biceps-brachial", "mouvement", ctx)));
+  const mvt = fabriquerFonction(5, "biceps-brachial", "mouvement", ctx);
+  ok("« Regarde le mouvement » : le biceps fléchit le coude ou met l'avant-bras en supination", Boolean(mvt && ["coude|flexion", "radio-ulnaire|supination"].includes(mvt.attendu) && mvt.geste?.muscle === "biceps-brachial"), mvt?.attendu);
+  const ago = Array.from({ length: 12 }, (_, k) => fabriquerFonction(k, "biceps-brachial", "agoniste", ctx)).filter(Boolean);
+  ok("« Agoniste ou antagoniste ? » : le triceps est antagoniste de la flexion du coude", ago.every((q) => !(q!.cible === "triceps-brachial" && /flexion du coude/.test(q!.consigne)) || q!.attendu === "antagoniste") && ago.length > 0);
+  const nerf = fabriquerFonction(5, "biceps-brachial", "qui-innerve", ctx);
+  ok("« Qui innerve ? » : le biceps, par le nerf musculo-cutané", nerf?.attendu === "nerf-musculocutane", nerf?.attendu);
+  ok("« Les racines » : C5-C6 pour le biceps", fabriquerFonction(5, "biceps-brachial", "racines", ctx)?.attendu === "C5-C6");
+  ok("« Réflexe et racine » : le réflexe rotulien explore L3-L4", fabriquerFonction(5, "ligament-patellaire", "reflexe", ctx)?.attendu === "L3-L4");
+  const sang = fabriquerFonction(5, "radiale", "sang", ctx);
+  ok("« Suis le sang » : la radiale vient de l'humérale, qui vient de l'axillaire", Boolean(sang?.ordre && sang.ordre.slice(-3).join() === "axillaire,humerale,radiale"), sang?.ordre?.join());
+  const veine = fabriquerFonction(5, "veine-cephalique", "sang", ctx);
+  ok("« Suis le sang » : la veine céphalique mène à la veine cave supérieure", veine?.ordre?.[0] === "veine-cephalique" && veine.ordre[veine.ordre.length - 1] === "veine-cave-superieure", veine?.ordre?.join());
+  ok("« Les branches dans l'ordre » : le tronc cœliaque", fabriquerFonction(5, "tronc-coeliaque", "branches", ctx)?.attendu === "artere-gastrique-gauche>artere-hepatique-commune>artere-splenique");
+  ok("les racines voisines se disent d'un trait", nomRacines(["C6", "C5"]) === "C5-C6" && nomRacines(["C8", "T1"]) === "C8-T1" && nomRacines(["L4", "S1"]) === "L4, S1");
+  ok("« Fais le geste » : fléchir le coude gauche, c'est juste", jugerGeste("coude.flexion:1", { "coude.flexion:g": 110 }));
+  ok("« Fais le geste » : l'étendre, ou bouger surtout l'épaule, c'est faux", !jugerGeste("coude.flexion:1", { "coude.flexion:g": -5 }) && !jugerGeste("coude.flexion:1", { "coude.flexion:g": 40, "epaule.flexion:g": 150 }));
+  ok("chaque méthode exerce une facette de la mémoire (sauf l'intrus et le vrai-faux)", (Object.keys(METHODES) as TypeQ[]).every((t) => FACETTE_DE[t] !== undefined && (FACETTE_DE[t] !== null || t === "intrus" || t === "vrai-faux")));
+  const avecFiches = partieDeNiveau({ categorie: "muscles", n: 8, graine: 3, nombre: 12, difficulte: "normal", ctx: { recueils: R } });
+  ok("les planches avancées mêlent des questions sur les fonctions", avecFiches.some((q) => estFonction(q.type)), avecFiches.map((q) => q.type).join());
 }
 
 console.log(echecs ? `\n${echecs} échec(s)` : "\nTout est vert.");

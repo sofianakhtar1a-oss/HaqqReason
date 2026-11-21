@@ -279,6 +279,21 @@ export function maitriseParFacette(e: Etat, ids: string[], facettes: Facette[], 
   return sortie;
 }
 
+/** La carte d'une facette maintenant (pour revenir sur une note : la certitude choisie après coup). */
+export const carteFacette = (id: string, f: Facette): Carte | undefined => carte(lire(), id, f);
+
+/**
+ * Revenir sur la note d'une réponse : on repart de la carte d'avant la réponse (`avant`), pour qu'une certitude
+ * choisie après coup remplace la note donnée d'abord, sans la compter deux fois.
+ */
+export function reviserFacette(id: string, f: Facette, avant: Carte | undefined, juste: boolean, certitude: Certitude, rapide = false) {
+  if (!PAR_ID.has(id)) return;
+  const e = lire();
+  const k = cleFacette(id, f);
+  ecrire({ ...e, facettes: { ...e.facettes, [k]: revoir(avant, noteDe(juste, certitude, rapide), aujourdhui()) } });
+  void noter("corps", `facette:${k}`);
+}
+
 function majFacette(id: string, f: Facette, juste: boolean, certitude?: Certitude, rapide?: boolean) {
   const e = lire();
   const k = cleFacette(id, f);

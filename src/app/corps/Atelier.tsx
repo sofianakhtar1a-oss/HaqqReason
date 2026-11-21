@@ -76,6 +76,39 @@ function niveauAxial(y: number): string {
 }
 const BORNES: Record<Coupe["plan"], [number, number, number]> = { axial: [0.03, 1.74, 1.22], sagittal: [-0.3, 0.3, 0], frontal: [-0.16, 0.18, 0.02] };
 
+/** Un curseur pour un degré de liberté (ou pour les doigts d'une même articulation, qui bougent ensemble). */
+export function Curseur({ ddl, valeur: v, changer, articulation }: { ddl: Ddl[]; valeur: number; changer: (v: number) => void; articulation: string }) {
+  const d = ddl[0];
+  const sens = v < 0 ? d.moins : v > 0 ? d.plus : null;
+  // Un mouvement qui porte le même nom dans les deux sens (l'inclinaison, la rotation) : on dit de quel côté.
+  const deuxCotes = d.moins === d.plus && d.min < 0;
+  const N = (m: string) => NOMS_MOUVEMENTS[m] ?? m;
+  const aGauche = deuxCotes ? `${N(d.moins)} à droite` : d.moins === d.plus ? "Repos" : N(d.moins);
+  const aDroite = deuxCotes ? `${N(d.plus)} à gauche` : N(d.plus);
+  const mesure = d.unite === "" ? `${Math.round(Math.abs(v) * 100)} %` : `${Math.round(Math.abs(v))}${d.unite === "mm" ? " mm" : "°"}`;
+  const texte = sens ? `${mesure} de ${nomMvt(sens)}${deuxCotes ? (v > 0 ? " vers la gauche" : " vers la droite") : ""}` : "au repos";
+  return (
+    <label className="ec-curseur">
+      <span className="ec-curseur-noms">
+        <span>{aGauche}</span>
+        <output>{texte}</output>
+        <span>{aDroite}</span>
+      </span>
+      <input
+        type="range"
+        style={{ "--zero": `${(100 * (0 - d.min)) / (d.max - d.min)}%` } as React.CSSProperties}
+        min={d.min}
+        max={d.max}
+        step={d.unite === "" ? 0.02 : 1}
+        value={v}
+        aria-valuetext={texte}
+        aria-label={`${NOMS_ARTICULATIONS[articulation] ?? articulation} : ${nomMvt(d.moins)} ou ${nomMvt(d.plus)}`}
+        onChange={(ev) => changer(Number(ev.target.value))}
+      />
+    </label>
+  );
+}
+
 export function Atelier({ etat, regler, calme, surprendre }: { etat: EtatAtelier; regler: (e: Partial<EtatAtelier>) => void; calme: boolean; surprendre: () => void }) {
   const [articulation, setArticulation] = useState("coude");
   const [cote, setCote] = useState<"g" | "d" | "deux">("g");
@@ -174,38 +207,9 @@ export function Atelier({ etat, regler, calme, surprendre }: { etat: EtatAtelier
               </div>
             )}
           </div>
-          {liste.map(({ cle, ddl }) => {
-            const d = ddl[0];
-            const v = valeur(ddl);
-            const sens = v < 0 ? d.moins : v > 0 ? d.plus : null;
-            // Un mouvement qui porte le même nom dans les deux sens (l'inclinaison, la rotation) : on dit de quel côté.
-            const deuxCotes = d.moins === d.plus && d.min < 0;
-            const N = (m: string) => NOMS_MOUVEMENTS[m] ?? m;
-            const aGauche = deuxCotes ? `${N(d.moins)} à droite` : d.moins === d.plus ? "Repos" : N(d.moins);
-            const aDroite = deuxCotes ? `${N(d.plus)} à gauche` : N(d.plus);
-            const mesure = d.unite === "" ? `${Math.round(Math.abs(v) * 100)} %` : `${Math.round(Math.abs(v))}${d.unite === "mm" ? " mm" : "°"}`;
-            const texte = sens ? `${mesure} de ${nomMvt(sens)}${deuxCotes ? (v > 0 ? " vers la gauche" : " vers la droite") : ""}` : "au repos";
-            return (
-              <label key={cle} className="ec-curseur">
-                <span className="ec-curseur-noms">
-                  <span>{aGauche}</span>
-                  <output>{texte}</output>
-                  <span>{aDroite}</span>
-                </span>
-                <input
-                  type="range"
-                  style={{ "--zero": `${(100 * (0 - d.min)) / (d.max - d.min)}%` } as React.CSSProperties}
-                  min={d.min}
-                  max={d.max}
-                  step={d.unite === "" ? 0.02 : 1}
-                  value={v}
-                  aria-valuetext={texte}
-                  aria-label={`${NOMS_ARTICULATIONS[articulation] ?? articulation} : ${nomMvt(d.moins)} ou ${nomMvt(d.plus)}`}
-                  onChange={(ev) => changer(ddl, Number(ev.target.value))}
-                />
-              </label>
-            );
-          })}
+          {liste.map(({ cle, ddl }) => (
+            <Curseur key={cle} ddl={ddl} valeur={valeur(ddl)} changer={(v) => changer(ddl, v)} articulation={articulation} />
+          ))}
           <div className="ec-boutons">
             {POSES.map((p) => (
               <button key={p.nom} type="button" className="ec-puce" onClick={() => regler({ pose: p.pose })}>

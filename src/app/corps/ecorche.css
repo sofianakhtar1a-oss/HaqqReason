@@ -1950,3 +1950,152 @@
     transition: none !important;
   }
 }
+
+/* ---------- Les questions sur les fonctions ---------- */
+
+/* Remettre dans l'ordre : les places numérotées se remplissent au fil des choix. */
+.ec-ordre {
+  display: grid;
+  gap: 0.8rem;
+}
+.ec-ordre-choisi {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.35rem;
+  counter-reset: none;
+}
+.ec-ordre-choisi li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 2.4rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  border: 1px dashed var(--ec-filet-fort);
+  font-family: var(--ec-serif);
+  font-size: 1.08rem;
+}
+.ec-ordre-choisi li:not(.est-vide) {
+  border-style: solid;
+  background: rgb(214 168 90 / 0.07);
+}
+.ec-ordre-choisi li.est-vide {
+  border-color: var(--ec-filet);
+}
+.ec-ordre-choisi li[data-etat="juste"] {
+  border-color: rgb(102 199 155 / 0.6);
+}
+.ec-ordre-choisi li[data-etat="faux"] {
+  border-color: rgb(224 88 92 / 0.6);
+}
+.ec-ordre-rang {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--ec-filet-fort);
+  font-family: var(--ec-sans);
+  font-size: 0.75rem;
+  color: var(--ec-laiton-clair);
+}
+
+/* Fais le geste : les curseurs de l'articulation, comme dans l'atelier. */
+.ec-geste {
+  display: grid;
+  gap: 0.9rem;
+}
+
+/* Ce que dit la fiche, une fois la réponse donnée. */
+.ec-explication {
+  margin: 0;
+  padding-left: 0.8rem;
+  border-left: 2px solid var(--ec-filet-fort);
+  font-family: var(--ec-serif);
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: var(--ec-ivoire);
+  max-width: 62ch;
+}
+
+/* « Tu étais : sûr de toi, hésitant, au hasard. » */
+.ec-certitude {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  color: var(--ec-sepia);
+}
+.ec-certitude .ec-puce[aria-checked="true"] {
+  border-color: var(--ec-laiton);
+  color: var(--ec-laiton-clair);
+  background: rgb(214 168 90 / 0.12);
+}
+
+/* Le bilan d'un examen, et la carte de maîtrise : une jauge par facette. */
+.ec-facettes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+.ec-facettes li {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, 11rem) 1fr auto;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.92rem;
+}
+.ec-facette-nom {
+  color: var(--ec-ivoire);
+}
+.ec-facette-chiffre {
+  font-variant-numeric: tabular-nums;
+  color: var(--ec-sepia);
+}
+.ec-cartes-maitrise {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 0.8rem;
+}
+.ec-carte-maitrise {
+  display: grid;
+  gap: 0.6rem;
+  padding: 0.85rem 0.95rem;
+  border-radius: 12px;
+  border: 1px solid var(--ec-filet);
+  background: rgb(255 255 255 / 0.02);
+}
+.ec-carte-maitrise h3 {
+  margin: 0;
+  font-family: var(--ec-serif);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--ec-laiton-clair);
+}
+.ec-carte-maitrise .ec-lien {
+  justify-self: start;
+  font-size: 0.86rem;
+}
+/* Deux jauges l'une sur l'autre : ce qui est vu (pâle), ce qui est su (plein). */
+.ec-jauge.est-double {
+  display: grid;
+}
+.ec-jauge.est-double > span {
+  grid-area: 1 / 1;
+}
+.ec-jauge.est-double > .est-vue {
+  background: rgb(214 168 90 / 0.4);
+}
+.ec-facette-chiffre small {
+  font-size: 0.78em;
+  color: var(--ec-pale);
+}

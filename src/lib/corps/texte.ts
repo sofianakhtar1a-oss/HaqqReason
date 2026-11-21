@@ -115,3 +115,20 @@ export function jugerNom(e: Element, reponse: string): Jugement {
   for (const x of autres) for (const g of x.entieres) if (ecart(r.entiere, g, meilleur) < meilleur) return "faux";
   return "presque";
 }
+
+/** Le, la, l' : pour écrire « le biceps », « l'aorte », « la clavicule ». */
+export function article(e: Element): string {
+  const n = e.nom;
+  // Le catalogue le sait pour chaque structure ; la règle qui suit ne sert qu'aux fiches sans article.
+  if (e.art) return `${e.art}${minuscule(n)}`;
+  const premier = n.split(/[\s-]/)[0].toLowerCase();
+  const singuliers = /^(biceps|triceps|radius|humérus|talus|pubis|atlas|axis|coccyx|calcanéus|os|longissimus)$/;
+  const pluriel = (/[sx]$/.test(premier) && !singuliers.test(premier)) || /\b\p{L}+aux\b/u.test(n);
+  if (pluriel) return `les ${minuscule(n)}`;
+  if (/^[aeéèêiîoôuœh]/i.test(premier)) return `l'${minuscule(n)}`;
+  const feminin = /^(artère|carotide|aorte|clavicule|scapula|ulna|fibula|patella|mandibule|ligne|aponévrose|arcade|vertèbre|côte|phalange|intersection)/i.test(n) || (e.couche === "artere" && !/^tronc/i.test(n));
+  return `${feminin ? "la" : "le"} ${minuscule(n)}`;
+}
+const SIGLES = /^(C\d|T\d|L\d|SCM|TFL)/;
+export const minuscule = (s: string) => (SIGLES.test(s) ? s : s.charAt(0).toLowerCase() + s.slice(1));
+export const majuscule = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);

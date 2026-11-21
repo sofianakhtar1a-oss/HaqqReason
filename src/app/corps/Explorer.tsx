@@ -1,7 +1,7 @@
 "use client";
 
 import { Dumbbell, Eye, Focus, Minus, Pin, Play, Plus, Scan, Search, Square, Star, X } from "lucide-react";
-import { useDeferredValue, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { ELEMENTS, PAR_ID } from "@/lib/corps/catalogue";
 import { chargerFiches, useFiche } from "@/lib/corps/fiches";
 import type { FicheMuscle } from "@/lib/corps/fiches/types";
@@ -13,7 +13,7 @@ import { basculerFavori, boite, estFavori, useEcorche } from "@/lib/corps/progre
 import { nomRegion } from "@/lib/corps/quiz";
 import { normaliser } from "@/lib/corps/texte";
 import { type Couche, type Element, GRANDES_REGIONS, REGIONS, type StructureScene } from "@/lib/corps/types";
-import { type Calques, Cartel, COUCHES_DEFAUT, type Couches, TEINTE, teinteMemoire } from "./communs";
+import { type Calques, Cartel, COUCHES_DEFAUT, type Couches, TEINTE, teinteMemoire, useCalme } from "./communs";
 import type { Navigation, Stage } from "./Ecorche";
 import type { CalqueOptionnel, EtatStructure, NomVue } from "./moteur/Corps3D";
 
@@ -71,15 +71,6 @@ function liees(e: Element): Element[] {
 
 const LOBES = ["lobe-superieur-du-poumon-droit", "lobe-moyen-du-poumon-droit", "lobe-inferieur-du-poumon-droit", "lobe-superieur-du-poumon-gauche", "lobe-inferieur-du-poumon-gauche"];
 
-/** « Moins d'animations », tel que l'appareil le demande. */
-const REQUETE_CALME = "(prefers-reduced-motion: reduce)";
-function ecouterCalme(f: () => void) {
-  const m = window.matchMedia(REQUETE_CALME);
-  m.addEventListener("change", f);
-  return () => m.removeEventListener("change", f);
-}
-const lireCalme = () => window.matchMedia(REQUETE_CALME).matches;
-
 export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string | null; nav: Navigation }) {
   const e = useEcorche();
   const [couches, setCouches] = useState<Couches>(COUCHES_DEFAUT);
@@ -107,7 +98,7 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
   const poseAtelier = useRef(atelier.pose);
   // « Surprends-moi » : le muscle tiré au sort, dont on joue l'action dès que sa fiche est là.
   const [aJouer, setAJouer] = useState<string | null>(null);
-  const calme = useSyncExternalStore(ecouterCalme, lireCalme, () => false);
+  const calme = useCalme();
 
   const choisir = (id: string | null) => nav.aller(id ? `explorer/${id}` : "explorer");
 

@@ -10,8 +10,11 @@
  */
 
 import { ELEMENTS, PAR_ID } from "./catalogue";
+import { estFonction, fabriquerFonction, METHODES_FONCTION, type Recueils, TYPES_FONCTION, type TypeFonction, typesFonction } from "./fonctions";
+import type { Facette } from "./memoire";
+import type { Action } from "./mouvement/gestes";
 import { type CategorieId, CATEGORIES, ELEMENTS_APPRIS, EN_PLANCHE, niveauxDe, vusJusqua } from "./niveaux";
-import { normaliser } from "./texte";
+import { article, majuscule, minuscule, normaliser } from "./texte";
 import { type Couche, type Element, REGIONS, type RegionId, type SorteOs } from "./types";
 import { hasard } from "./vec";
 
@@ -34,7 +37,8 @@ export type TypeQ =
   | "territoire"
   | "tendon-muscle"
   | "intrus"
-  | "vrai-faux";
+  | "vrai-faux"
+  | TypeFonction;
 
 export type Option = { id: string; texte: string; latin?: boolean };
 export type Question = {
@@ -46,11 +50,25 @@ export type Question = {
   indice?: string;
   options: Option[];
   attendu: string;
-  reponse: "qcm" | "clic" | "ecrit";
+  /** qcm : un choix ; clic : toucher le corps ; ecrit : écrire le nom ; ordre : remettre des choix dans l'ordre ;
+   *  geste : faire bouger le corps avec des curseurs ; suite : toucher plusieurs structures dans l'ordre. */
+  reponse: "qcm" | "clic" | "ecrit" | "ordre" | "geste" | "suite";
   /** Montrer la cible en lumière sur le corps. */
   montrer: boolean;
   /** Pour l'intrus : les structures à montrer ensemble. */
   groupe?: string[];
+  /** La facette de la mémoire que la question exerce (sinon : celle de sa méthode). */
+  facette?: Facette;
+  /** Le geste joué pendant la question : le muscle, l'action, et s'il se contracte (sinon seul le squelette bouge). */
+  geste?: { muscle: string; action: Action; contracter: boolean };
+  /** Ce que le corps montre une fois la réponse donnée : des structures, un geste joué, le pouls qui bat. */
+  apres?: { montrer: string[]; jouer?: { muscle: string; actions: Action[] }; pouls?: boolean };
+  /** Pour « ordre » : les choix dans le bon ordre ; pour « suite » : les structures à toucher l'une après l'autre. */
+  ordre?: string[];
+  /** Pour « geste » : les degrés de liberté proposés aux curseurs. */
+  curseurs?: string[];
+  /** Ce que dit la fiche, montré après la réponse. */
+  explication?: string;
 };
 
 export type Methode = { id: TypeQ; nom: string; texte: string };
@@ -74,7 +92,33 @@ export const METHODES: Record<TypeQ, Methode> = {
   "tendon-muscle": { id: "tendon-muscle", nom: "Tendon et muscle", texte: "Quel muscle prolonge ce tendon ?" },
   intrus: { id: "intrus", nom: "L'intrus", texte: "Trois vont ensemble, un seul n'est pas à sa place." },
   "vrai-faux": { id: "vrai-faux", nom: "Vrai ou faux", texte: "Une affirmation à juger." },
+  ...(Object.fromEntries(TYPES_FONCTION.map((t) => [t, { id: t, nom: METHODES_FONCTION[t].nom, texte: METHODES_FONCTION[t].texte }])) as Record<TypeFonction, Methode>),
 };
+
+/** La facette de la mémoire qu'exerce chaque méthode (null : la question ne porte pas sur une seule structure). */
+export const FACETTE_DE: Record<TypeQ, Facette | null> = {
+  nommer: "nom",
+  situer: "situer",
+  ecrire: "nom",
+  memo: "nom",
+  region: "situer",
+  latin: "nom",
+  "vers-latin": "nom",
+  anglais: "nom",
+  action: "fonction",
+  innervation: "innervation",
+  terminaison: "attaches",
+  origine: "attaches",
+  articulation: "attaches",
+  sorte: "nom",
+  provenance: "vaisseaux",
+  territoire: "vaisseaux",
+  "tendon-muscle": "attaches",
+  intrus: null,
+  "vrai-faux": null,
+  ...(Object.fromEntries(TYPES_FONCTION.map((t) => [t, METHODES_FONCTION[t].facette])) as Record<TypeFonction, Facette>),
+};
+export { TYPES_FONCTION };
 
 const NOMS_SORTES: Record<SorteOs, string> = { long: "Os long", court: "Os court", plat: "Os plat", irregulier: "Os irrégulier", sesamoide: "Os sésamoïde" };
 export const nomSorte = (s: SorteOs) => NOMS_SORTES[s];
@@ -82,22 +126,7 @@ const GRANDE = new Map(REGIONS.map((r) => [r.id, r.grande]));
 const NOM_REGION = new Map(REGIONS.map((r) => [r.id, r.nom]));
 export const nomRegion = (r: RegionId) => NOM_REGION.get(r) ?? r;
 
-/** Le, la, l' : pour écrire « le biceps », « l'aorte », « la clavicule ». */
-export function article(e: Element): string {
-  const n = e.nom;
-  // Le catalogue le sait pour chaque structure ; la règle qui suit ne sert qu'aux fiches sans article.
-  if (e.art) return `${e.art}${minuscule(n)}`;
-  const premier = n.split(/[\s-]/)[0].toLowerCase();
-  const singuliers = /^(biceps|triceps|radius|humérus|talus|pubis|atlas|axis|coccyx|calcanéus|os|longissimus)$/;
-  const pluriel = (/[sx]$/.test(premier) && !singuliers.test(premier)) || /\b\p{L}+aux\b/u.test(n);
-  if (pluriel) return `les ${minuscule(n)}`;
-  if (/^[aeéèêiîoôuœh]/i.test(premier)) return `l'${minuscule(n)}`;
-  const feminin = /^(artère|carotide|aorte|clavicule|scapula|ulna|fibula|patella|mandibule|ligne|aponévrose|arcade|vertèbre|côte|phalange|intersection)/i.test(n) || (e.couche === "artere" && !/^tronc/i.test(n));
-  return `${feminin ? "la" : "le"} ${minuscule(n)}`;
-}
-const SIGLES = /^(C\d|T\d|L\d|SCM|TFL)/;
-export const minuscule = (s: string) => (SIGLES.test(s) ? s : s.charAt(0).toLowerCase() + s.slice(1));
-const majuscule = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+export { article, majuscule, minuscule };
 
 /* ---------- Le hasard réglé ---------- */
 
@@ -135,7 +164,7 @@ const optionsDe = (r: Rnd, bonne: Element, faux: Element[], champ: (e: Element) 
 
 /* ---------- Qui peut être interrogé sur quoi ---------- */
 
-export function typesPossibles(e: Element): TypeQ[] {
+export function typesPossibles(e: Element, recueils?: Recueils): TypeQ[] {
   const t: TypeQ[] = ["nommer", "ecrire", "region"];
   // Toucher sur le corps : ce qui se voit de l'extérieur (un noyau du cerveau, un organe profond ne s'atteignent pas ainsi).
   if (e.couche !== "viscere" && e.couche !== "encephale") t.push("situer");
@@ -162,18 +191,19 @@ export function typesPossibles(e: Element): TypeQ[] {
   }
   if (e.couche === "tendon" && e.muscle && PAR_ID.has(e.muscle)) t.push("tendon-muscle");
   t.push("intrus");
+  if (recueils) t.push(...typesFonction(e, recueils));
   return t;
 }
 
 /** Les méthodes d'un niveau : de plus en plus variées. */
 export function typesDuNiveau(categorie: CategorieId, n: number): TypeQ[] {
   const base: TypeQ[] = ["nommer", "situer"];
-  if (categorie === "corps") return ["nommer", "situer", "ecrire", "memo", "latin", "action", "articulation", "provenance", "tendon-muscle", "intrus", "vrai-faux", "terminaison", "innervation"];
-  if (n >= 2) base.push("memo", "region");
-  if (n >= 3) base.push("ecrire");
-  if (n >= 4) base.push("latin", "sorte", "action", "territoire", "tendon-muscle");
-  if (n >= 5) base.push("vers-latin", "intrus", "articulation", "terminaison", "provenance");
-  if (n >= 6) base.push("anglais", "vrai-faux", "innervation", "origine");
+  if (categorie === "corps") return ["nommer", "situer", "ecrire", "memo", "latin", "action", "articulation", "provenance", "tendon-muscle", "intrus", "vrai-faux", "terminaison", "innervation", ...TYPES_FONCTION];
+  if (n >= 2) base.push("memo", "region", "role");
+  if (n >= 3) base.push("ecrire", "mouvement", "qui-innerve", "pouls");
+  if (n >= 4) base.push("latin", "sorte", "action", "territoire", "tendon-muscle", "quel-muscle", "racines", "sang", "sensibilite");
+  if (n >= 5) base.push("vers-latin", "intrus", "articulation", "terminaison", "provenance", "agoniste", "reflexe", "tester", "branches", "geste");
+  if (n >= 6) base.push("anglais", "vrai-faux", "innervation", "origine", "cas-clinique", "reconstruis");
   return base;
 }
 
@@ -205,13 +235,22 @@ const QUOI: Record<Couche, string> = {
   lymphe: "un groupe de nœuds lymphatiques",
 };
 
-export type Contexte = { difficulte: Difficulte; /** Les structures parmi lesquelles prendre les faux choix (sinon : toutes). */ pool?: Element[] };
+export type Contexte = {
+  difficulte: Difficulte;
+  /** Les structures parmi lesquelles prendre les faux choix (sinon : toutes). */
+  pool?: Element[];
+  /** Les fiches chargées : sans elles, pas de question sur les fonctions. */
+  recueils?: Recueils;
+  /** La difficulté propre à une structure et une méthode (selon ce qu'on en sait déjà). */
+  adapter?: (id: string, type: TypeQ) => Difficulte;
+};
 
 export function fabriquer(graine: number, id: string, type: TypeQ, ctx: Contexte): Question | null {
   const e = PAR_ID.get(id);
   if (!e) return null;
   const r = hasard(graine * 7919 + 17);
-  const d = ctx.difficulte;
+  const d = ctx.adapter?.(id, type) ?? ctx.difficulte;
+  if (estFonction(type)) return ctx.recueils ? fabriquerFonction(graine, id, type, { difficulte: d, recueils: ctx.recueils }) : null;
   const le = article(e);
   switch (type) {
     case "nommer": {
@@ -344,7 +383,7 @@ export function questionSur(graine: number, id: string, permis: TypeQ[], ctx: Co
   const e = PAR_ID.get(id);
   if (!e) return null;
   const r = hasard(graine * 104729 + 3);
-  const permises = typesPossibles(e).filter((t) => permis.includes(t));
+  const permises = typesPossibles(e, ctx.recueils).filter((t) => permis.includes(t));
   // Éviter de reposer la même méthode deux fois de suite, sauf s'il n'y en a qu'une.
   const possibles = permises.filter((t) => t !== eviter).length ? permises.filter((t) => t !== eviter) : permises;
   for (const t of melanger(r, possibles)) {
@@ -356,13 +395,13 @@ export function questionSur(graine: number, id: string, permis: TypeQ[], ctx: Co
 
 /* ---------- Une partie ---------- */
 
-export function partieDeNiveau(o: { categorie: CategorieId; n: number; graine: number; nombre: number; revision?: string[]; difficulte: Difficulte; methode?: TypeQ | null }): Question[] {
+export function partieDeNiveau(o: { categorie: CategorieId; n: number; graine: number; nombre: number; revision?: string[]; difficulte: Difficulte; methode?: TypeQ | null; ctx?: Partial<Contexte> }): Question[] {
   const niveaux = niveauxDe(o.categorie);
   const niv = niveaux[o.n - 1];
   if (!niv) return [];
   const r = hasard(o.graine);
   const permis = o.methode ? [o.methode] : typesDuNiveau(o.categorie, o.n);
-  const ctx: Contexte = { difficulte: o.difficulte };
+  const ctx: Contexte = { ...o.ctx, difficulte: o.difficulte };
   const nouveaux = o.categorie === "corps" ? melanger(r, niv.nouveaux).slice(0, o.nombre) : melanger(r, niv.nouveaux);
   const anciens = o.categorie === "corps" ? [] : vusJusqua(o.categorie, o.n - 1);
   const revus = melanger(r, [...new Set([...(o.revision ?? []).filter((x) => anciens.includes(x)), ...melanger(r, anciens)])]);

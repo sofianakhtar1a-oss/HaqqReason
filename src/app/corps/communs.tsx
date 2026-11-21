@@ -1,6 +1,7 @@
 "use client";
 
 import { Heart, Star, Volume2 } from "lucide-react";
+import { useSyncExternalStore } from "react";
 import { NOMS_NATURES, PAR_ID, nomDe } from "@/lib/corps/catalogue";
 import { useFiche } from "@/lib/corps/fiches";
 import { calqueDElement } from "@/lib/corps/modele/modele";
@@ -75,7 +76,42 @@ export function miseEnScene(e: Element): { couches: Couches; calques: Calques; p
   return { couches: couchesPour(e.couche), calques, profondeur: 0, decouvrir: e.couche === "muscle" || e.couche === "tendon" ? [e.id] : null };
 }
 
+/**
+ * La scène de plusieurs structures à la fois (un muscle et son nerf, une artère et ses branches) : chacune sa couche
+ * pleine ; quand un nerf ou un vaisseau accompagne un muscle, les muscles passent en transparence pour qu'on le voie.
+ */
+export function miseEnSceneDe(ids: string[]): { couches: Couches; calques: Calques; profondeur: number; decouvrir: string[] | null } {
+  const els = ids.map((id) => PAR_ID.get(id)).filter((e): e is Element => Boolean(e));
+  if (!els.length) return { couches: COUCHES_DEFAUT, calques: {}, profondeur: 0, decouvrir: null };
+  const base = miseEnScene(els[0]);
+  const c: Couches = { ...base.couches };
+  const calques: Calques = { ...base.calques };
+  const decouvrir = new Set(base.decouvrir ?? []);
+  for (const e of els.slice(1)) {
+    const m = miseEnScene(e);
+    for (const k of Object.keys(m.couches) as Couche[]) c[k] = Math.max(c[k], m.couches[k]);
+    Object.assign(calques, m.calques);
+    for (const x of m.decouvrir ?? []) decouvrir.add(x);
+  }
+  const fins = els.some((e) => e.couche === "nerf" || e.couche === "artere" || e.couche === "veine");
+  if (fins && els.some((e) => e.couche === "muscle")) {
+    c.muscle = 0.4;
+    c.tendon = Math.min(c.tendon, 0.4);
+  }
+  return { couches: c, calques, profondeur: 0, decouvrir: decouvrir.size ? [...decouvrir] : null };
+}
+
 export const enLumiere = (ids: string[], teinte = TEINTE.laiton, pulse = true): Record<string, EtatStructure> => Object.fromEntries(ids.map((id) => [id, { teinte, pulse }]));
+
+/** « Moins d'animations », tel que l'appareil le demande (et suivi s'il change en cours de route). */
+const REQUETE_CALME = "(prefers-reduced-motion: reduce)";
+function ecouterCalme(f: () => void) {
+  const m = window.matchMedia(REQUETE_CALME);
+  m.addEventListener("change", f);
+  return () => m.removeEventListener("change", f);
+}
+const lireCalme = () => window.matchMedia(REQUETE_CALME).matches;
+export const useCalme = () => useSyncExternalStore(ecouterCalme, lireCalme, () => false);
 
 /* ---------- Petits objets ---------- */
 

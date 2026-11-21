@@ -59,25 +59,25 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
 | 2.3 | Lumière de studio, ombres, occlusion, mappage tonal, anticrénelage, profondeur de champ | 5 | 1 |
 | 2.4 | Deux rendus (pièce fraîche, pièce plastinée), qualité adaptative | 2 | 1 |
 | 3.1 | Catalogue complet des os, muscles, tendons, artères, relié aux modèles | 4 | 3 |
-| 3.2 | Nouvelles couches : veines, nerfs, ligaments et cartilages, viscères, encéphale | 4 | 1 |
-| 3.3 | Listes de référence TA2, test de couverture, structures manquantes modélisées | 4 | 0 |
-| 4.1 | Dissection au geste, isolement avec les attaches, vue éclatée | 3 | 1 |
-| 4.2 | Plans de coupe avec surfaces de coupe réalistes | 3 | 1 |
-| 4.3 | Squelette articulé : segments, axes, amplitudes | 4 | 2 |
-| 4.4 | Contraction des muscles, action de chaque muscle, cœur et pouls | 4 | 1 |
-| 5.1 | Schéma des fiches, données tirées de Z-Anatomy (insertions, nerfs, loges) | 3 | 2 |
-| 5.2 | Fiches des os | 3 | 0 |
-| 5.3 | Fiches des muscles | 5 | 1 |
-| 5.4 | Fiches des tendons et aponévroses | 2 | 0 |
-| 5.5 | Fiches des artères | 3 | 0 |
-| 5.6 | Fiches des autres couches | 2 | 0 |
+| 3.2 | Nouvelles couches : veines, nerfs, ligaments et cartilages, viscères, encéphale | 4 | 3 |
+| 3.3 | Listes de référence TA2, test de couverture, structures manquantes modélisées | 4 | 1 |
+| 4.1 | Dissection au geste, isolement avec les attaches, vue éclatée | 3 | 2 |
+| 4.2 | Plans de coupe avec surfaces de coupe réalistes | 3 | 2 |
+| 4.3 | Squelette articulé : segments, axes, amplitudes | 4 | 3 |
+| 4.4 | Contraction des muscles, action de chaque muscle, cœur et pouls | 4 | 3 |
+| 5.1 | Schéma des fiches, données tirées de Z-Anatomy (insertions, nerfs, loges) | 3 | 3 |
+| 5.2 | Fiches des os | 3 | 3 |
+| 5.3 | Fiches des muscles | 5 | 5 |
+| 5.4 | Fiches des tendons et aponévroses | 2 | 2 |
+| 5.5 | Fiches des artères | 3 | 3 |
+| 5.6 | Fiches des autres couches | 2 | 1.5 |
 | 6.1 | Nouvelles méthodes de quiz sur les fonctions | 6 | 0 |
-| 6.2 | Répétition espacée FSRS par facette, certitude, reprise de la progression | 4 | 0 |
-| 6.3 | Planches exhaustives, examen final, carte de maîtrise par facette | 4 | 0 |
-| 7.1 | Interface : couches, coupes, mouvements, fiches enrichies, page « Sources et licences » | 4 | 1 |
+| 6.2 | Répétition espacée FSRS par facette, certitude, reprise de la progression | 4 | 2 |
+| 6.3 | Planches exhaustives, examen final, carte de maîtrise par facette | 4 | 1 |
+| 7.1 | Interface : couches, coupes, mouvements, fiches enrichies, page « Sources et licences » | 4 | 2 |
 | 7.2 | Captures de contrôle, tests, performances, mise en ligne, bilan | 4 | 1 |
 
-**Total fait : 38 / 100.**
+**Total fait : 64.5 / 100.**
 
 ## Journal
 
@@ -123,6 +123,12 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
   artères, et sait couper le corps par un plan (la tranche prend le grain du tissu). `Corps3D` reçoit la pose, le plan
   de coupe, la vue éclatée et le scalpel ; l'interface de ces outils reste à poser. Les fiches enrichies : cadre en
   place (`donnees/fiches/`), onze lots confiés à des sous-agents, deux rendus (muscles des membres).
+
+- 21/11 10:35 — Fiches : os, muscles, tendons, artères, ligaments, veines, nerfs, lymphonœuds et encéphale complets
+  (1 601 fiches, deux sources au moins chacune) ; viscères de la tête et du cou faits, ceux du tronc en cours. Planches
+  exhaustives : 222 planches couvrent les 1 702 structures (viscères par système, encéphale par partie, vaisseaux et
+  nerfs par tronc), les planches déjà publiées n'ont pas bougé. L'atelier (poses, curseurs, coupe, éclaté, scalpel,
+  cœur et poumons vivants) et la mémoire par facette (FSRS) sont en ligne.
 
 ## Pour reprendre après une interruption
 

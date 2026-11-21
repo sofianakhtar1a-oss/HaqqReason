@@ -1,10 +1,10 @@
 "use client";
 
-import { ChevronLeft, Crosshair, Flame, Lock, Play, Shield, Snowflake, Sparkles, Target, Timer, Type, Zap } from "lucide-react";
+import { Activity, ChevronLeft, Crosshair, Flame, GraduationCap, Lock, Play, Shield, Snowflake, Sparkles, Target, Timer, Type, Zap } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { ELEMENTS, PAR_ID } from "@/lib/corps/catalogue";
 import { CATEGORIES, type CategorieId, ELEMENTS_APPRIS, IDS_CATEGORIES, niveauxDe, titreDuJoueur } from "@/lib/corps/niveaux";
-import { aReviserAvant, etoiles, jourDeParis, maitrise, niveauCourant, niveauOuvert, niveauxReussis, revisionsDues, useEcorche } from "@/lib/corps/progression";
+import { aReviserAvant, etoiles, facettesDues, jourDeParis, maitrise, niveauCourant, niveauOuvert, niveauxReussis, useEcorche } from "@/lib/corps/progression";
 import { METHODES, type TypeQ, typesDuNiveau } from "@/lib/corps/quiz";
 import { REGIONS } from "@/lib/corps/types";
 import { useTextes } from "@/lib/modules/textes-client";
@@ -25,7 +25,8 @@ function Vestibule({ stage, nav }: { stage: Stage; nav: Navigation }) {
   const t = useTextes("corps");
   const e = useEcorche();
   const p = e.profil;
-  const dues = revisionsDues(e);
+  const dues = facettesDues(e);
+  const connues = Object.keys(e.elements).length;
   const { titre, suivant, part } = titreDuJoueur(p.xp);
   const jour = jourDeParis();
   const faites = p.jourObjectif === jour ? p.faites : 0;
@@ -71,9 +72,9 @@ function Vestibule({ stage, nav }: { stage: Stage; nav: Navigation }) {
       </section>
 
       <div className="ec-actions-jour">
-        <button type="button" className="ec-bouton est-plein" disabled={!dues.length} onClick={() => nav.jouer({ sorte: "revision", ids: dues.slice(0, 20), titre: "Révisions du jour" })}>
+        <button type="button" className="ec-bouton est-plein" disabled={!dues.length && !connues} onClick={() => nav.jouer({ sorte: "jour", titre: "La révision du jour" })}>
           <Sparkles size={16} aria-hidden="true" />
-          {dues.length ? `Réviser ${dues.length} structure${dues.length > 1 ? "s" : ""}` : "Rien à réviser aujourd'hui"}
+          {dues.length ? `La révision du jour : ${dues.length} à revoir` : connues ? "Rien qui s'oublie : apprendre plus" : "Rien à réviser aujourd'hui"}
         </button>
         <button type="button" className="ec-bouton" onClick={() => nav.jouer({ sorte: "defi", titre: "Le défi du jour", jour })}>
           <Target size={16} aria-hidden="true" />
@@ -128,6 +129,16 @@ function Vestibule({ stage, nav }: { stage: Stage; nav: Navigation }) {
             <Shield size={20} aria-hidden="true" />
             <b>Survie</b>
             <span>Trois vies, des questions de plus en plus dures. {e.records.survie ? `Record : ${e.records.survie}` : ""}</span>
+          </button>
+          <button type="button" className="ec-rapide" onClick={() => nav.jouer({ sorte: "fonctions", titre: "Les fonctions", categorie: "corps" })}>
+            <Activity size={20} aria-hidden="true" />
+            <b>Les fonctions</b>
+            <span>Le geste d’un muscle, son nerf, le chemin du sang, le pouls, la clinique.</span>
+          </button>
+          <button type="button" className="ec-rapide" onClick={() => nav.jouer({ sorte: "examen", titre: "L'examen final" })}>
+            <GraduationCap size={20} aria-hidden="true" />
+            <b>L’examen final</b>
+            <span>Quarante questions sur tout le corps ; réussi à 80 %. {e.records.examen ? `Meilleur : ${e.records.examen} %` : ""}</span>
           </button>
           <button type="button" className="ec-rapide" onClick={() => nav.jeu({ sorte: "nomme", categorie: "muscles", grande: "membre-sup" })}>
             <Type size={20} aria-hidden="true" />
@@ -244,6 +255,9 @@ function Categorie({ stage, categorie, nav }: { stage: Stage; categorie: Categor
                 </button>
                 <button type="button" className="ec-bouton" onClick={() => nav.jouer({ sorte: "eclair", titre: `Éclair · ${def.nom}`, categorie })}>
                   <Timer size={15} aria-hidden="true" /> Éclair
+                </button>
+                <button type="button" className="ec-bouton" onClick={() => nav.jouer({ sorte: "fonctions", titre: `Les fonctions · ${def.nom}`, categorie })}>
+                  <Activity size={15} aria-hidden="true" /> Les fonctions
                 </button>
               </div>
             </div>

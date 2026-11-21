@@ -1,0 +1,3475 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral (Internet Archive) : cœur, appareil respiratoire, tube digestif, foie, voies biliaires, pancréas, appareil urinaire",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "tma-valves": {
+   "titre": "TeachMeAnatomy : Heart valves",
+   "url": "https://teachmeanatomy.info/thorax/organs/heart/heart-valves/"
+  },
+  "tma-cavites": {
+   "titre": "TeachMeAnatomy : The chambers of the heart",
+   "url": "https://teachmeanatomy.info/thorax/organs/heart/atria-ventricles/"
+  },
+  "tma-poumons": {
+   "titre": "TeachMeAnatomy : The lungs",
+   "url": "https://teachmeanatomy.info/thorax/organs/lungs/"
+  },
+  "tma-foie": {
+   "titre": "TeachMeAnatomy : The liver",
+   "url": "https://teachmeanatomy.info/abdomen/viscera/liver/"
+  },
+  "tma-pancreas": {
+   "titre": "TeachMeAnatomy : The pancreas",
+   "url": "https://teachmeanatomy.info/abdomen/viscera/pancreas/"
+  },
+  "tma-rate": {
+   "titre": "TeachMeAnatomy : The spleen",
+   "url": "https://teachmeanatomy.info/abdomen/viscera/spleen/"
+  },
+  "tma-vesicule": {
+   "titre": "TeachMeAnatomy : The gallbladder and biliary tree",
+   "url": "https://teachmeanatomy.info/abdomen/viscera/gallbladder/"
+  },
+  "tma-intestin-grele": {
+   "titre": "TeachMeAnatomy : The small intestine",
+   "url": "https://teachmeanatomy.info/abdomen/viscera/small-intestine/"
+  },
+  "tma-vessie": {
+   "titre": "TeachMeAnatomy : The urinary bladder",
+   "url": "https://teachmeanatomy.info/pelvis/viscera/bladder/"
+  },
+  "kenhub-valves": {
+   "titre": "Kenhub : Heart valves",
+   "url": "https://www.kenhub.com/en/library/anatomy/heart-valves"
+  },
+  "kenhub-coeur": {
+   "titre": "Kenhub : Heart anatomy",
+   "url": "https://www.kenhub.com/en/library/anatomy/heart-anatomy"
+  },
+  "kenhub-segments": {
+   "titre": "Kenhub : Bronchopulmonary segments",
+   "url": "https://www.kenhub.com/en/library/anatomy/bronchopulmonary-segments"
+  },
+  "kenhub-trachee": {
+   "titre": "Kenhub : The trachea",
+   "url": "https://kenhub.com/en/library/anatomy/the-trachea"
+  },
+  "kenhub-foie": {
+   "titre": "Kenhub : Liver",
+   "url": "https://www.kenhub.com/en/library/anatomy/liver"
+  },
+  "kenhub-thymus": {
+   "titre": "Kenhub : Thymus",
+   "url": "https://www.kenhub.com/en/library/anatomy/thymus"
+  },
+  "kenhub-oesophage": {
+   "titre": "Kenhub : Esophagus",
+   "url": "https://www.kenhub.com/en/library/anatomy/esophagus"
+  },
+  "kenhub-gros-intestin": {
+   "titre": "Kenhub : Large intestine",
+   "url": "https://www.kenhub.com/en/library/anatomy/large-intestine"
+  },
+  "kenhub-prostate": {
+   "titre": "Kenhub : Prostate",
+   "url": "https://www.kenhub.com/en/library/anatomy/prostate"
+  },
+  "kenhub-rate": {
+   "titre": "Kenhub : The spleen",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-spleen"
+  },
+  "openstax-coeur": {
+   "titre": "OpenStax, Anatomy and Physiology 2e, 19.1 Heart Anatomy",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy"
+  },
+  "openstax-estomac": {
+   "titre": "OpenStax, Anatomy and Physiology 2e, 23.4 The Stomach",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach"
+  },
+  "openstax-intestins": {
+   "titre": "OpenStax, Anatomy and Physiology 2e, 23.5 The Small and Large Intestines",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+  },
+  "openstax-foie": {
+   "titre": "OpenStax, Anatomy and Physiology 2e, 23.6 Accessory Organs in Digestion: The Liver, Pancreas, and Gallbladder",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+  },
+  "openstax-respiratoire": {
+   "titre": "OpenStax, Anatomy and Physiology 2e, 22.1 Organs and Structures of the Respiratory System",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+  },
+  "openstax-urinaire": {
+   "titre": "OpenStax, Anatomy and Physiology 2e, 25.2 Gross Anatomy of Urine Transport",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+  },
+  "radiopaedia-couinaud": {
+   "titre": "Radiopaedia : Couinaud classification of hepatic segments",
+   "url": "https://radiopaedia.org/articles/couinaud-classification-of-hepatic-segments"
+  },
+  "statpearls-segments": {
+   "titre": "StatPearls : Anatomy, Thorax, Lung Segments (NCBI Bookshelf NBK470197)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK470197/"
+  },
+  "statpearls-trachee": {
+   "titre": "StatPearls : Anatomy, Thorax, Trachea",
+   "url": "https://www.statpearls.com/point-of-care/30407"
+  },
+  "statpearls-surrenale": {
+   "titre": "StatPearls : Anatomy, Abdomen and Pelvis, Adrenal Glands (Suprarenal Glands)",
+   "url": "https://www.statpearls.com/point-of-care/666"
+  },
+  "statpearls-prostate": {
+   "titre": "StatPearls : Anatomy, Abdomen and Pelvis, Prostate",
+   "url": "https://www.statpearls.com/point-of-care/27831"
+  },
+  "openstax-lymphe": {
+   "titre": "OpenStax, Anatomy and Physiology 2e, 21.1 Anatomy of the Lymphatic and Immune Systems",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-1-anatomy-of-the-lymphatic-and-immune-systems"
+  },
+  "wikipedia-papillaires": {
+   "titre": "Wikipedia (en) : Papillary muscle (recoupement, jamais seule)",
+   "url": "https://en.wikipedia.org/wiki/Papillary_muscle"
+  }
+ },
+ "fiches": [
+  {
+   "id": "canal-pancreatique",
+   "resume": "Le canal principal du pancréas (canal de Wirsung) : il suit la glande sur toute sa longueur jusqu'au duodénum.",
+   "systeme": "digestif",
+   "situation": "Parcourt le pancréas de la queue à la tête, au milieu de la glande, puis s'unit au cholédoque pour former l'ampoule hépato-pancréatique, qui s'ouvre à la papille duodénale majeure",
+   "fonction": "Recueille le suc pancréatique de tous les lobules et le conduit au duodénum ; son orifice est entouré du sphincter d'Oddi, qui le règle avec celui du cholédoque",
+   "rapports": "Au milieu de la glande, plus près de sa face postérieure ; dans la tête, il longe le cholédoque avant de le rejoindre",
+   "vascularisation": {
+    "texte": "Irrigué par les artères qui nourrissent le pancréas (splénique, gastro-duodénale, pancréatico-duodénales)",
+    "arteres": [
+     "artere-splenique",
+     "artere-gastroduodenale",
+     "artere-pancreaticoduodenale-inferieure"
+    ],
+    "veines": [
+     "veine-splenique",
+     "veine-mesenterique-superieure"
+    ]
+   },
+   "examen": "Bili-IRM, écho-endoscopie et CPRE montrent son calibre et ses sténoses",
+   "clinique": "Sa dilatation signe un obstacle (cancer de la tête, calculs de pancréatite chronique) ; un calcul de l'ampoule déclenche une pancréatite aiguë biliaire ; la CPRE peut déclencher une pancréatite",
+   "memo": "Wirsung rejoint le cholédoque : une même porte d'entrée, la papille majeure",
+   "variantes": "Chez quelques personnes (de l'ordre de 5 à 10 %), les canaux principal et accessoire ne se rejoignent pas (pancréas divisum)",
+   "sources": [
+    "gray1918",
+    "tma-pancreas",
+    "openstax-foie"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "canal-pancreatique-accessoire",
+   "resume": "Le canal accessoire du pancréas (canal de Santorini) : un petit canal qui s'ouvre au duodénum un peu au-dessus de la papille majeure.",
+   "systeme": "digestif",
+   "situation": "Naît du canal pancréatique dans la tête, remonte et s'ouvre à la papille duodénale mineure, environ 2 à 3 cm au-dessus de la papille majeure",
+   "fonction": "Reste de la glande dorsale de l'embryon : il draine la partie haute de la tête et peut suppléer le canal principal",
+   "vascularisation": {
+    "texte": "Irrigué par les artères de la tête du pancréas (pancréatico-duodénales, gastro-duodénale)",
+    "arteres": [
+     "artere-gastroduodenale",
+     "artere-pancreaticoduodenale-inferieure"
+    ],
+    "veines": [
+     "veine-mesenterique-superieure"
+    ]
+   },
+   "clinique": "Chez les personnes dont les canaux ne fusionnent pas (pancréas divisum), il draine presque tout le suc et peut causer des pancréatites par obstruction relative ; repère lors de la CPRE",
+   "memo": "Santorini, le petit : une papille mineure, un peu au-dessus de la majeure",
+   "variantes": "Souvent présent mais inconstant ; il peut être oblitéré ou rejoindre le canal principal",
+   "sources": [
+    "openstax-foie",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "colon-ascendant",
+   "resume": "La partie du côlon qui monte le long de la droite de l'abdomen, du cæcum à l'angle droit sous le foie.",
+   "systeme": "digestif",
+   "situation": "Du cæcum (fosse iliaque droite) à l'angle colique droit, sous le foie, dans le flanc droit ; rétropéritonéal, accolé à la paroi postérieure par le fascia de Toldt",
+   "fonction": "Absorbe l'eau et les électrolytes du contenu iléal encore liquide, et l'épaissit en début de formation des selles ; abrite une flore bactérienne dense",
+   "rapports": "Devant, les anses grêles et la paroi abdominale ; derrière, le rein droit et le muscle carré des lombes ; la gouttière pariéto-colique droite le longe à l'extérieur",
+   "vascularisation": {
+    "texte": "Artères iléo-colique et colique droite (mésentérique supérieure) ; veines coliques vers la veine mésentérique supérieure",
+    "arteres": [
+     "artere-ileocolique",
+     "artere-colique-droite",
+     "mesenterique-superieure"
+    ],
+    "veines": [
+     "veine-colique-droite",
+     "veine-mesenterique-superieure"
+    ]
+   },
+   "innervation": {
+    "texte": "Nerf vague et fibres sympathiques (T5-T12) par les plexus mésentériques ; réseau nerveux de la paroi",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Palpation du flanc et de la fosse iliaque droits ; coloscopie : l'angle droit se reconnaît à une teinte bleutée du foie par transparence",
+   "clinique": "Cancer du côlon droit (anémie par saignement chronique, souvent silencieux ; masse palpable) ; diverticulose droite ; appendicite sous-hépatique qui simule une cholécystite",
+   "memo": "Côlon droit : il monte, il est collé à la paroi, il reçoit le sang de la mésentérique supérieure",
+   "variantes": "Un mésocôlon ascendant, normalement absent, est possible et laisse le cæcum et le côlon mobiles",
+   "sources": [
+    "gray1918",
+    "kenhub-gros-intestin",
+    "openstax-intestins"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "colon-transverse",
+   "resume": "La partie du côlon qui traverse l'abdomen, d'un angle à l'autre, suspendue par son mésocôlon.",
+   "systeme": "digestif",
+   "situation": "Entre l'angle colique droit (sous le foie) et l'angle colique gauche (sous la rate), dans la partie haute de l'abdomen ; intrapéritonéal, suspendu par le mésocôlon transverse ; en U, plus bas que l'ombilic chez certains",
+   "fonction": "Poursuit l'absorption de l'eau et des sels et mélange le contenu ; ses mouvements de masse poussent les selles vers le côlon descendant",
+   "rapports": "Au-dessus, l'estomac et le grand omentum ; son mésocôlon divise la cavité en étages sus- et sous-mésocolique ; il est relié à l'estomac par le ligament gastro-colique",
+   "vascularisation": {
+    "texte": "Artère colique moyenne (mésentérique supérieure) pour les deux tiers droits, artère colique gauche (mésentérique inférieure) pour le tiers gauche, reliées par l'arcade marginale ; veines vers les veines mésentériques",
+    "arteres": [
+     "artere-colique-moyenne",
+     "artere-colique-gauche",
+     "artere-colique-marginale"
+    ],
+    "veines": [
+     "veine-colique-moyenne",
+     "veine-mesenterique-inferieure",
+     "veine-mesenterique-superieure"
+    ]
+   },
+   "innervation": {
+    "texte": "Nerf vague jusqu'aux deux tiers proximaux, puis nerfs pelviens (S2-S4) ; fibres sympathiques mésentériques",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Palpation de l'abdomen en haut ; la percussion donne un son tympanique ; coloscopie : triangle de pli caractéristique",
+   "clinique": "Volvulus rare ; mégacôlon toxique ; cancer ; l'angle gauche, entre deux territoires vasculaires, est fragile en cas d'ischémie (zone de jonction des deux mésentériques)",
+   "memo": "Le transverse pend entre deux angles, accroché par son mésocôlon",
+   "variantes": "Plus ou moins long et ptosé, il peut descendre dans le pelvis chez les personnes minces",
+   "sources": [
+    "kenhub-gros-intestin",
+    "gray1918",
+    "openstax-intestins"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "estomac",
+   "resume": "La poche en J qui stocke, brasse et acidifie les aliments avant de les envoyer dans le duodénum.",
+   "systeme": "digestif",
+   "situation": "Entre l'œsophage et le duodénum, dans l'épigastre et l'hypocondre gauche, sous la coupole diaphragmatique gauche ; le cardia est à gauche de la ligne médiane (T10-T11), le pylore à droite, vers L1",
+   "fonction": "Stocke les aliments, les brasse avec le suc gastrique (acide chlorhydrique, pepsine) en une bouillie (chyme) et la libère par petites quantités dans le duodénum ; fabrique le facteur intrinsèque, nécessaire à l'absorption de la vitamine B12",
+   "parties": [
+    {
+     "nom": "Cardia et fundus",
+     "role": "Cardia : orifice d'entrée ; fundus : dôme à gauche du cardia, sous le diaphragme, où se loge la bulle d'air"
+    },
+    {
+     "nom": "Corps",
+     "role": "Partie principale, entre le fundus et l'incisure angulaire de la petite courbure"
+    },
+    {
+     "nom": "Pylore",
+     "role": "Antre pylorique (partie large), canal pylorique, puis sphincter pylorique, valve musculaire qui règle la vidange"
+    },
+    {
+     "nom": "Petite et grande courbures",
+     "role": "Petite courbure, concave, reliée au foie par le petit omentum ; grande courbure, convexe, quatre à cinq fois plus longue, d'où part le grand omentum"
+    }
+   ],
+   "rapports": "Devant : diaphragme, lobe gauche du foie, paroi abdominale ; derrière (lit de l'estomac) : pancréas, rate, rein et surrénale gauches, mésocôlon transverse",
+   "vascularisation": {
+    "texte": "Artère gastrique gauche et rameaux de l'artère hépatique propre et de la gastro-duodénale (droite), de l'artère splénique (gauche et courtes) ; veines gastriques vers la veine porte",
+    "arteres": [
+     "tronc-coeliaque",
+     "artere-gastrique-gauche",
+     "artere-hepatique-propre",
+     "artere-gastroduodenale",
+     "artere-splenique"
+    ],
+    "veines": [
+     "veine-gastro-omentale-droite",
+     "veine-gastro-omentale-gauche",
+     "veine-splenique",
+     "veine-porte-du-foie"
+    ]
+   },
+   "innervation": {
+    "texte": "Nerfs vagues (tronc antérieur, issu du vague gauche, et tronc postérieur, issu du vague droit) et plexus cœliaque (fibres sympathiques), avec les plexus de la paroi",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Palpation de l'épigastre ; la bulle d'air du fundus rend un son tympanique à l'espace semi-lunaire de Traube (en bas à gauche du thorax) ; fibroscopie avec biopsies",
+   "clinique": "Ulcère (Helicobacter pylori, anti-inflammatoires) avec risque d'hémorragie ou de perforation ; cancer gastrique ; reflux gastro-œsophagien ; sténose du pylore chez le nourrisson",
+   "memo": "Deux courbures (petite à droite, grande à gauche), deux orifices (cardia et pylore), trois étages (fundus, corps, pylore)",
+   "variantes": "Forme et position changent beaucoup avec le remplissage et la posture : en J chez la plupart, en corne de bœuf chez d'autres",
+   "sources": [
+    "gray1918",
+    "openstax-estomac",
+    "kenhub-oesophage"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "foie",
+   "resume": "La plus grosse glande du corps : elle filtre le sang venu de l'intestin, fabrique la bile et gère les réserves d'énergie.",
+   "systeme": "digestif",
+   "situation": "Hypocondre droit et épigastre, parfois jusqu'à l'hypocondre gauche, sous la coupole du diaphragme ; abrité par les côtes droites (de la 6e à la 10e en avant) ; environ 1,5 kg",
+   "fonction": "Transforme et stocke ce que l'intestin absorbe, fabrique la bile, les protéines du sang et les facteurs de coagulation, détruit les toxines et les médicaments, stocke le glycogène et des vitamines",
+   "parties": [
+    {
+     "nom": "Lobes droit et gauche",
+     "role": "Séparés en avant par le ligament falciforme, qui porte le ligament rond (reste de la veine ombilicale) ; le droit est environ six fois plus gros"
+    },
+    {
+     "nom": "Lobes carré et caudé",
+     "role": "Sur la face inférieure : le carré entre la vésicule et le ligament rond, le caudé entre la veine cave inférieure et le ligament veineux ; le hile les sépare"
+    },
+    {
+     "nom": "Hile (porte du foie)",
+     "role": "Fissure transversale où entrent la veine porte et l'artère hépatique propre et où sort le conduit hépatique ; le conduit est en avant, l'artère à gauche, la veine en arrière"
+    },
+    {
+     "nom": "Segments de Couinaud (I à VIII)",
+     "role": "Huit territoires indépendants, chacun avec son pédicule, délimités par les veines hépatiques et par le plan de la bifurcation portale ; ils guident la chirurgie"
+    }
+   ],
+   "rapports": "En arrière, la veine cave inférieure, la surrénale et le rein droits ; en bas, la vésicule, le duodénum, l'angle colique droit et l'estomac ; au-dessus, le diaphragme, le cœur et le poumon",
+   "vascularisation": {
+    "texte": "Double arrivée : l'artère hépatique propre (environ un quart du sang, riche en oxygène) et la veine porte (trois quarts, riche en nutriments) ; la sortie se fait par les veines hépatiques, qui se jettent dans la veine cave inférieure",
+    "arteres": [
+     "artere-hepatique-propre",
+     "artere-hepatique-commune",
+     "tronc-coeliaque"
+    ],
+    "veines": [
+     "veine-porte-du-foie",
+     "veines-hepatiques",
+     "veine-cave-inferieure"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus hépatique : fibres sympathiques (plexus cœliaque) et parasympathiques (nerfs vagues), qui entrent par le hile ; la capsule est sensible par les derniers nerfs intercostaux",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques",
+     "nerfs-intercostaux"
+    ]
+   },
+   "examen": "Le bord inférieur se palpe sous le rebord costal droit à l'inspiration profonde ; la hauteur de la matité à la percussion (environ 10 à 12 cm sur la ligne médioclaviculaire) en donne la taille",
+   "clinique": "Cirrhose, hépatites, cancer du foie ; l'hypertension portale fait gonfler les anastomoses porto-caves (varices œsophagiennes) et provoque l'ascite ; l'obstruction des voies biliaires donne un ictère",
+   "memo": "Deux entrées (artère et veine porte), une sortie (veines hépatiques), et huit segments numérotés de I à VIII",
+   "variantes": "Une languette du lobe droit (lobe de Riedel) peut descendre bas dans l'abdomen ; la taille et la forme du foie varient avec la morphologie",
+   "sources": [
+    "gray1918",
+    "tma-foie",
+    "kenhub-foie",
+    "openstax-foie"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "glande-surrenale",
+   "resume": "La petite glande coiffant le pôle supérieur du rein : l'écorce fabrique les corticoïdes, la partie centrale l'adrénaline.",
+   "systeme": "endocrinien",
+   "situation": "Au pôle supérieur de chaque rein, dans la loge rénale (fascia périrénal), vers T12, derrière le péritoine ; la droite est pyramidale, la gauche en croissant ; 4 à 5 g chacune",
+   "fonction": "Le cortex fabrique l'aldostérone (sel et tension), le cortisol (sucre et stress) et des androgènes ; la médullosurrénale libère l'adrénaline et la noradrénaline lors d'un effort ou d'un danger",
+   "parties": [
+    {
+     "nom": "Zone glomérulée",
+     "role": "Couche externe du cortex : aldostérone, qui règle le sel et la tension"
+    },
+    {
+     "nom": "Zone fasciculée",
+     "role": "Couche moyenne : cortisol, contrôlé par l'hormone hypophysaire ACTH"
+    },
+    {
+     "nom": "Zone réticulée",
+     "role": "Couche interne du cortex : androgènes surrénaliens"
+    },
+    {
+     "nom": "Médullosurrénale",
+     "role": "Noyau central : cellules chromaffines à adrénaline et noradrénaline, commandées par le système sympathique"
+    }
+   ],
+   "rapports": "À droite : veine cave inférieure en dedans, foie en avant ; à gauche : pancréas et vaisseaux spléniques en avant ; en arrière, les piliers du diaphragme ; au-dessus du hile rénal",
+   "vascularisation": {
+    "texte": "Trois artères : surrénale supérieure (de la phrénique inférieure), moyenne (de l'aorte abdominale), inférieure (de l'artère rénale) ; la veine droite se jette dans la veine cave inférieure, la gauche dans la veine rénale gauche",
+    "arteres": [
+     "artere-phrenique-inferieure",
+     "aorte-abdominale",
+     "artere-surrenale-inferieure",
+     "renale"
+    ],
+    "veines": [
+     "veine-cave-inferieure",
+     "veine-renale-gauche"
+    ]
+   },
+   "innervation": {
+    "texte": "Fibres sympathiques préganglionnaires des nerfs splanchniques thoraciques, qui font synapse directement sur les cellules de la médullosurrénale",
+    "nerfs": [
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Aucun accès : scanner et IRM ; bilan hormonal (cortisol, aldostérone, métanéphrines) ; on ligature la veine avant de manipuler une tumeur sécrétant des catécholamines",
+   "clinique": "Phéochromocytome (tumeur de la médullosurrénale : crises d'hypertension, sueurs, palpitations) ; syndrome de Cushing (excès de cortisol) ; syndrome de Conn (excès d'aldostérone : hypertension et potassium bas) ; insuffisance surrénale (maladie d'Addison)",
+   "memo": "De dehors en dedans, le cortex fait « sel, sucre, sexe » ; au centre, la médullosurrénale",
+   "variantes": "L'origine et le nombre des artères varient beaucoup ; des tissus surrénaux accessoires existent parfois",
+   "sources": [
+    "statpearls-surrenale",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "grand-omentum",
+   "resume": "Le grand tablier de graisse et de péritoine qui pend de l'estomac devant les intestins.",
+   "systeme": "digestif",
+   "situation": "Repli péritonéal à quatre feuillets qui part de la grande courbure de l'estomac, descend devant les anses intestinales, puis remonte s'attacher au côlon transverse",
+   "fonction": "Protège et isole l'intestin, stocke de la graisse et s'enroule autour d'un foyer d'inflammation pour le limiter ; il contient des vaisseaux et des amas de cellules immunitaires",
+   "parties": [
+    {
+     "nom": "Ligaments gastro-colique, gastro-splénique, gastro-phrénique",
+     "role": "Portions du repli qui relient la grande courbure au côlon, à la rate et au diaphragme"
+    }
+   ],
+   "rapports": "Devant : la paroi abdominale ; derrière : le côlon transverse et son mésocôlon, puis les anses grêles ; en haut : la grande courbure de l'estomac",
+   "vascularisation": {
+    "texte": "Artères gastro-omentales droite (gastro-duodénale) et gauche (splénique) qui courent le long de la grande courbure ; veines gastro-omentales",
+    "arteres": [
+     "artere-gastroduodenale",
+     "artere-splenique"
+    ],
+    "veines": [
+     "veine-gastro-omentale-droite",
+     "veine-gastro-omentale-gauche"
+    ]
+   },
+   "examen": "Non perceptible normalement ; au scanner, la graisse épiploïque épaissie signe une carcinose ou une inflammation voisine",
+   "clinique": "Il enveloppe les foyers infectieux (abcès appendiculaire) ; une carcinose péritonéale l'épaissit en « gâteau » ; torsion et infarctus possibles ; on peut s'en servir comme greffon en chirurgie",
+   "memo": "L'épiploon est le gendarme de l'abdomen : il vient boucher la brèche qui s'infecte",
+   "variantes": "Sa taille et son étendue varient : très développé chez l'obèse, mince chez le nourrisson",
+   "sources": [
+    "gray1918",
+    "openstax-estomac",
+    "kenhub-gros-intestin"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "muqueuse-de-l-estomac",
+   "resume": "La tapisserie interne de l'estomac, plissée en rides, qui fabrique l'acide, la pepsine et le mucus protecteur.",
+   "systeme": "digestif",
+   "situation": "Face interne de l'estomac, du cardia au pylore ; plissée en rides (plis gastriques) qui s'effacent quand l'estomac se remplit ; criblée de fovéoles où s'ouvrent les glandes gastriques",
+   "fonction": "Fabrique le suc gastrique, riche en acide chlorhydrique et en pepsinogène, et un mucus alcalin qui protège la paroi de son propre acide ; sécrète le facteur intrinsèque (vitamine B12) et la gastrine",
+   "parties": [
+    {
+     "nom": "Glandes du fundus et du corps",
+     "role": "Cellules pariétales (acide chlorhydrique, facteur intrinsèque), principales (pepsinogène) et mucus du collet"
+    },
+    {
+     "nom": "Glandes de l'antre pylorique",
+     "role": "Surtout du mucus et de la gastrine (cellules G), qui stimule la sécrétion d'acide"
+    },
+    {
+     "nom": "Plis gastriques (rides)",
+     "role": "Replis de la muqueuse et de la sous-muqueuse qui s'effacent à la distension"
+    }
+   ],
+   "vascularisation": {
+    "texte": "Réseau sous-muqueux alimenté par les artères gastriques ; veines vers le système porte",
+    "arteres": [
+     "artere-gastrique-gauche",
+     "artere-hepatique-propre",
+     "artere-splenique"
+    ],
+    "veines": [
+     "veine-porte-du-foie"
+    ]
+   },
+   "innervation": {
+    "texte": "Nerf vague (stimule la sécrétion par l'acétylcholine) ; fibres sympathiques qui la freinent ; réseau nerveux de la paroi (plexus sous-muqueux)",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Fibroscopie gastrique : on voit les rides, la couleur rose, l'aspect d'une ulcération ; les biopsies recherchent Helicobacter pylori",
+   "clinique": "Gastrite à Helicobacter pylori, ulcère gastrique, gastrite atrophique auto-immune (carence en vitamine B12, anémie de Biermer), cancer gastrique ; la biopsie à la fibroscopie les distingue",
+   "memo": "Pariétale : acide ; principale : pepsinogène ; muqueuse de l'antre : gastrine",
+   "variantes": null,
+   "sources": [
+    "openstax-estomac",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "mesocolon",
+   "resume": "Le repli du péritoine qui suspend le côlon à la paroi abdominale et porte ses vaisseaux : transverse et sigmoïde surtout.",
+   "systeme": "digestif",
+   "situation": "Double feuillet péritonéal qui relie le côlon à la paroi postérieure : mésocôlon transverse (racine le long du pancréas) et mésocôlon sigmoïde ; le côlon ascendant et le descendant, accolés, n'en ont normalement pas",
+   "fonction": "Suspend le côlon et lui laisse sa mobilité ; ses feuillets conduisent les artères, les veines, les lymphatiques et les nerfs ; le mésocôlon transverse sépare les étages sus- et sous-mésocolique",
+   "rapports": "Sa racine suit la tête et le corps du pancréas, puis croise le duodénum ; il est relié au grand omentum par l'avant",
+   "vascularisation": {
+    "texte": "Artères coliques (moyenne, gauche, sigmoïdes) et arcade marginale qui cheminent entre ses feuillets",
+    "arteres": [
+     "artere-colique-moyenne",
+     "artere-colique-gauche",
+     "arteres-sigmoides",
+     "artere-colique-marginale"
+    ],
+    "veines": [
+     "veine-colique-moyenne",
+     "veine-sigmoide"
+    ]
+   },
+   "clinique": "Les inflammations du pancréas se propagent par la racine du mésocôlon transverse ; un mésocôlon sigmoïde long favorise le volvulus ; chirurgie du côlon : on ligature les vaisseaux dans le mésocôlon",
+   "memo": "Mésocôlon : le hamac du côlon, et le chemin de ses vaisseaux",
+   "variantes": "Un mésocôlon ascendant ou descendant peut exister, normalement accolé",
+   "sources": [
+    "kenhub-gros-intestin",
+    "gray1918",
+    "openstax-intestins"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "segment-anterolateral-droit-vi",
+   "resume": "Le segment VI de Couinaud : le bas du secteur postérieur du lobe droit, sous le plan portal, au contact du rein droit.",
+   "systeme": "digestif",
+   "situation": "Face inférieure et latérale du lobe droit, à droite de la veine hépatique droite et sous le plan de la bifurcation portale ; contre le rein droit et l'angle colique droit",
+   "fonction": "Territoire du foie nourri par la branche postérieure de la veine porte droite et de l'artère hépatique droite, drainé par la veine hépatique droite ; avec VII, il forme le secteur postérieur droit",
+   "rapports": "Il touche le rein droit et l'angle colique droit ; il forme le bas du bord droit du foie",
+   "vascularisation": {
+    "texte": "Pédicule propre au centre du segment (branche de la veine porte, branche de l'artère hépatique propre, canal biliaire) ; les veines hépatiques le drainent à sa périphérie",
+    "arteres": [
+     "artere-hepatique-propre"
+    ],
+    "veines": [
+     "veine-porte-du-foie",
+     "veines-hepatiques"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus hépatique : fibres sympathiques (plexus cœliaque) et parasympathiques (nerfs vagues), qui entrent par le hile ; la capsule est sensible par les derniers nerfs intercostaux",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques",
+     "nerfs-intercostaux"
+    ]
+   },
+   "examen": "Palpation du bord inférieur du foie sous le rebord costal droit, à l'inspiration profonde",
+   "clinique": "Le bas du foie droit : tumeurs voisines du rein ; une languette de ce segment descend en lobe de Riedel et simule une hépatomégalie",
+   "memo": "VI : le bas du flanc droit, au contact du rein",
+   "variantes": "Une languette de ce segment peut former un lobe de Riedel, qui descend bien sous le rebord costal",
+   "sources": [
+    "radiopaedia-couinaud",
+    "kenhub-foie",
+    "tma-foie",
+    "gray1918"
+   ],
+   "divergences": "La TA2 le nomme « antérolatéral droit » ; Radiopaedia le place dans le secteur postérieur droit, sous le plan portal"
+  },
+  {
+   "id": "segment-anterolateral-gauche-du-foie-iii",
+   "resume": "Le segment III de Couinaud : le bas du lobe gauche, sous le plan de la bifurcation portale, devant le ligament rond.",
+   "systeme": "digestif",
+   "situation": "Partie inférieure et antérieure du secteur latéral gauche, sous le plan de la bifurcation portale, à gauche de la veine hépatique gauche, contre la paroi de l'épigastre",
+   "fonction": "Territoire autonome, nourri par une branche issue de la portion ombilicale de la veine porte gauche ; drainé par la veine hépatique gauche, il forme avec le segment II le secteur latéral gauche",
+   "rapports": "Le ligament rond et la veine ombilicale de la veine porte gauche le séparent du segment IV ; il touche en avant la paroi abdominale et l'estomac",
+   "vascularisation": {
+    "texte": "Pédicule propre au centre du segment (branche de la veine porte, branche de l'artère hépatique propre, canal biliaire) ; les veines hépatiques le drainent à sa périphérie",
+    "arteres": [
+     "artere-hepatique-propre"
+    ],
+    "veines": [
+     "veine-porte-du-foie",
+     "veines-hepatiques"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus hépatique : fibres sympathiques (plexus cœliaque) et parasympathiques (nerfs vagues), qui entrent par le hile ; la capsule est sensible par les derniers nerfs intercostaux",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques",
+     "nerfs-intercostaux"
+    ]
+   },
+   "examen": "Échographie de l'épigastre : le lobe gauche sous la paroi",
+   "clinique": "Secteur II-III : sectionectomie latérale gauche ; greffe de foie réduit chez l'enfant",
+   "memo": "III : en bas à gauche ; le II est au-dessus",
+   "variantes": null,
+   "sources": [
+    "radiopaedia-couinaud",
+    "kenhub-foie",
+    "tma-foie",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "segment-anteromedial-droit-du-foie-v",
+   "resume": "Le segment V de Couinaud : le bas du secteur antérieur du lobe droit, sous le plan portal, au contact de la vésicule.",
+   "systeme": "digestif",
+   "situation": "Face inférieure du lobe droit, entre la veine hépatique moyenne et la veine hépatique droite, sous le plan de la bifurcation portale ; il touche le lit de la vésicule",
+   "fonction": "Territoire du foie nourri par la branche antérieure de la veine porte droite et de l'artère hépatique droite, drainé par les veines hépatiques moyenne et droite ; avec le VIII, il forme le secteur antérieur droit",
+   "rapports": "Contre la vésicule biliaire et le duodénum en bas ; au-dessus de lui, le segment VIII",
+   "vascularisation": {
+    "texte": "Pédicule propre au centre du segment (branche de la veine porte, branche de l'artère hépatique propre, canal biliaire) ; les veines hépatiques le drainent à sa périphérie",
+    "arteres": [
+     "artere-hepatique-propre"
+    ],
+    "veines": [
+     "veine-porte-du-foie",
+     "veines-hepatiques"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus hépatique : fibres sympathiques (plexus cœliaque) et parasympathiques (nerfs vagues), qui entrent par le hile ; la capsule est sensible par les derniers nerfs intercostaux",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques",
+     "nerfs-intercostaux"
+    ]
+   },
+   "examen": "Échographie : la vésicule sert de repère entre IVb et V",
+   "clinique": "La cholécystectomie, ou la résection pour cancer de la vésicule, touche le lit vésiculaire (IVb et V) ; il est enlevé dans l'hépatectomie droite (V-VIII)",
+   "memo": "V : le bas de l'avant du lobe droit, le plus proche de la vésicule",
+   "variantes": null,
+   "sources": [
+    "radiopaedia-couinaud",
+    "kenhub-foie",
+    "tma-foie",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "segment-medial-gauche-du-foie-iv",
+   "resume": "Le segment IV de Couinaud : le secteur médial du lobe gauche, entre le ligament rond et la veine hépatique moyenne ; il comprend le lobe carré.",
+   "systeme": "digestif",
+   "situation": "Face médiale du lobe gauche, entre la fissure du ligament rond (à gauche) et la veine hépatique moyenne, ligne de Cantlie (à droite) ; IVa en haut, IVb en bas, contre le hile",
+   "fonction": "Territoire du foie nourri par la veine porte gauche et l'artère hépatique gauche et drainé par la veine hépatique moyenne ; sa partie basse, IVb, est le lobe carré",
+   "rapports": "Au contact du hile : les voies biliaires gauches et droites s'y rejoignent ; la vésicule est tout près, entre IVb et V",
+   "vascularisation": {
+    "texte": "Pédicule propre au centre du segment (branche de la veine porte, branche de l'artère hépatique propre, canal biliaire) ; les veines hépatiques le drainent à sa périphérie",
+    "arteres": [
+     "artere-hepatique-propre"
+    ],
+    "veines": [
+     "veine-porte-du-foie",
+     "veines-hepatiques"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus hépatique : fibres sympathiques (plexus cœliaque) et parasympathiques (nerfs vagues), qui entrent par le hile ; la capsule est sensible par les derniers nerfs intercostaux",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques",
+     "nerfs-intercostaux"
+    ]
+   },
+   "examen": "Échographie : le ligament rond le sépare du lobe gauche latéral ; repères de la fissure principale",
+   "clinique": "Sa résection avec les segments II et III est l'hépatectomie gauche ; les tumeurs du hile (cholangiocarcinome de Klatskin) l'envahissent ; le cancer de la vésicule s'étend à IVb et V",
+   "memo": "IV : entre le ligament rond et la veine moyenne ; IVb, en bas, c'est le lobe carré",
+   "variantes": "Il se divise en IVa (en haut) et IVb (en bas, le lobe carré)",
+   "sources": [
+    "radiopaedia-couinaud",
+    "kenhub-foie",
+    "tma-foie",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "segment-posterieur-du-foie-i",
+   "resume": "Le segment I de Couinaud, le lobe caudé : le territoire à part du foie, qui se vide directement dans la veine cave inférieure.",
+   "systeme": "digestif",
+   "situation": "Face postérieure du foie, entre la veine cave inférieure (en arrière), la fissure du ligament veineux (en avant et à gauche) et le hile (en bas)",
+   "fonction": "C'est un segment autonome : il reçoit du sang des deux branches de la veine porte et de l'artère hépatique, et ses courtes veines hépatiques se jettent directement dans la veine cave inférieure, sans passer par les trois grandes veines",
+   "rapports": "Le processus papillaire (en bas à gauche) peut faire une fausse masse à côté du pancréas ; le processus caudé le relie au lobe droit",
+   "vascularisation": {
+    "texte": "Branches des deux côtés de la veine porte et de l'artère hépatique propre ; ses courtes veines hépatiques se jettent directement dans la veine cave inférieure",
+    "arteres": [
+     "artere-hepatique-propre"
+    ],
+    "veines": [
+     "veine-cave-inferieure",
+     "veine-porte-du-foie"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus hépatique : fibres sympathiques (plexus cœliaque) et parasympathiques (nerfs vagues), qui entrent par le hile ; la capsule est sensible par les derniers nerfs intercostaux",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques",
+     "nerfs-intercostaux"
+    ]
+   },
+   "examen": "Aucun accès direct ; au scanner, le caudé hypertrophié est un signe du syndrome de Budd-Chiari",
+   "clinique": "Dans le syndrome de Budd-Chiari (obstruction des veines hépatiques), il est épargné et grossit (drainage direct) ; sa résection est difficile à cause de sa profondeur",
+   "memo": "I est au centre, à part : numérotés dans le sens des aiguilles d'une montre, de II à VIII",
+   "variantes": "Il est aussi appelé lobe caudé ou lobe de Spiegel ; le processus papillaire est un prolongement de sa partie basse",
+   "sources": [
+    "radiopaedia-couinaud",
+    "kenhub-foie",
+    "tma-foie",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tenia-libre",
+   "resume": "La bande musculaire du côlon qui n'a aucune attache : c'est la ténia libre.",
+   "systeme": "digestif",
+   "situation": "Une des trois bandes longitudinales de la couche musculaire du côlon ; c'est celle qui n'a aucune attache : ni mésocôlon, ni grand omentum",
+   "fonction": "Avec les deux autres ténias, elle raccourcit la paroi du côlon et fait naître les haustrations ; leur tonus contracte les segments et favorise le péristaltisme",
+   "rapports": "Large d'environ 12 mm ; elle est plus courte que le reste de la paroi, ce qui plisse le côlon en haustrations",
+   "vascularisation": {
+    "texte": "Vasa recta des artères coliques qui la traversent ; réseau marginal",
+    "arteres": [
+     "artere-colique-marginale"
+    ],
+    "veines": []
+   },
+   "examen": "En coloscopie, les trois ténias dessinent au cæcum un pli en étoile à trois branches (signe de la « marque Mercedes »)",
+   "clinique": "Les diverticules du côlon naissent entre les ténias, aux points où les vaisseaux traversent la paroi ; elles servent de repères en chirurgie (leur convergence conduit à l'appendice)",
+   "memo": "La libre : celle qui ne tient à rien, ni mésocôlon, ni épiploon",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-gros-intestin",
+    "openstax-intestins"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tenia-mesocolique",
+   "resume": "La bande musculaire du côlon où s'accroche le mésocôlon : c'est la ténia mésocolique.",
+   "systeme": "digestif",
+   "situation": "Une des trois bandes longitudinales du côlon, celle où s'insère le mésocôlon",
+   "fonction": "Avec les deux autres ténias, elle raccourcit la paroi du côlon et fait naître les haustrations ; son tonus participe à la propulsion du contenu",
+   "rapports": "Large d'environ 12 mm ; elle porte l'attache du mésocôlon, avec l'artère colique marginale à proximité",
+   "vascularisation": {
+    "texte": "Vasa recta des artères coliques qui entrent dans la paroi à son contact ; réseau marginal",
+    "arteres": [
+     "artere-colique-marginale"
+    ],
+    "veines": []
+   },
+   "examen": "En coloscopie, les trois ténias dessinent au cæcum un pli en étoile à trois branches",
+   "clinique": "Les artères entrent dans la paroi près d'elle : les diverticules s'y forment, au point faible ; son repère guide la libération du côlon en chirurgie",
+   "memo": "Mésocolique : celle où se fixe le mésocôlon",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-gros-intestin",
+    "openstax-intestins"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tenia-omental",
+   "resume": "La bande musculaire du côlon où s'attache le grand omentum : c'est la ténia omentale.",
+   "systeme": "digestif",
+   "situation": "Une des trois bandes longitudinales du côlon, celle où s'attache le grand omentum",
+   "fonction": "Avec les deux autres ténias, elle raccourcit la paroi du côlon et fait naître les haustrations ; son tonus participe à la propulsion du contenu",
+   "rapports": "Large d'environ 12 mm ; les appendices épiploïques, petits sacs graisseux, s'y attachent",
+   "vascularisation": {
+    "texte": "Vasa recta des artères coliques qui entrent dans la paroi ; réseau marginal",
+    "arteres": [
+     "artere-colique-marginale"
+    ],
+    "veines": []
+   },
+   "examen": "En coloscopie, les trois ténias dessinent au cæcum un pli en étoile à trois branches",
+   "clinique": "Repère chirurgical : on détache le grand omentum du côlon le long d'elle (omentectomie) ; les appendices épiploïques s'y attachent",
+   "memo": "Omentale : celle où s'attache l'omentum, avec les appendices graisseux",
+   "variantes": "Sa position sur le pourtour du côlon change d'un segment à l'autre : les trois bandes tournent le long du côlon",
+   "sources": [
+    "gray1918",
+    "kenhub-gros-intestin",
+    "openstax-intestins"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "colon-descendant",
+   "resume": "La partie du côlon qui descend le long de la gauche de l'abdomen, de l'angle gauche à la crête iliaque.",
+   "systeme": "digestif",
+   "situation": "De l'angle colique gauche, sous la rate, à la fosse iliaque gauche où il devient sigmoïde ; rétropéritonéal, accolé par le fascia de Toldt, dans le flanc gauche",
+   "fonction": "Stocke les selles déjà formées et achève l'absorption de l'eau ; leur passage dans le sigmoïde prépare la défécation",
+   "rapports": "Derrière, le rein gauche et le muscle carré des lombes ; devant, les anses grêles ; la gouttière pariéto-colique gauche le longe",
+   "vascularisation": {
+    "texte": "Artère colique gauche (mésentérique inférieure) ; veines vers la veine mésentérique inférieure puis la porte",
+    "arteres": [
+     "artere-colique-gauche",
+     "artere-mesenterique-inferieure"
+    ],
+    "veines": [
+     "veine-mesenterique-inferieure"
+    ]
+   },
+   "innervation": {
+    "texte": "Fibres parasympathiques des nerfs pelviens (S2-S4) et fibres sympathiques lombaires, par les plexus mésentérique inférieur et hypogastrique supérieur",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Palpation de la fosse iliaque gauche : un cordon dur et sensible évoque une diverticulite ; coloscopie",
+   "clinique": "Diverticulose (surtout du sigmoïde), cancer qui rétrécit la lumière étroite (occlusion, selles rubanées), colite ischémique (zone fragile à l'angle gauche)",
+   "memo": "Le descendant : collé à la paroi gauche, nourri par la mésentérique inférieure",
+   "variantes": "Un mésocôlon descendant, normalement absent, peut exister et laisser le côlon mobile",
+   "sources": [
+    "kenhub-gros-intestin",
+    "gray1918",
+    "openstax-intestins"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "jejunum",
+   "resume": "La partie haute de l'intestin grêle mobile, à gauche de l'abdomen : plus épaisse et plus rouge que l'iléon.",
+   "systeme": "digestif",
+   "situation": "De l'angle duodéno-jéjunal (à gauche de L2) vers l'iléon, dans l'étage sous-mésocolique gauche ; il forme les deux cinquièmes proximaux de la partie mobile du grêle, suspendu au mésentère",
+   "fonction": "Poursuit la digestion et absorbe l'essentiel des sucres, des acides aminés et des graisses ; ses replis circulaires (valvules conniventes) multiplient la surface d'échange",
+   "parties": [
+    {
+     "nom": "Différences avec l'iléon",
+     "role": "Calibre plus large, paroi plus épaisse et plus rouge, replis circulaires plus hauts et plus serrés ; vaisseaux droits plus longs, avec moins d'arcades ; peu de plaques de Peyer"
+    }
+   ],
+   "rapports": "Mésentère en éventail, dont la racine (environ 15 cm) va de L2 à l'articulation sacro-iliaque droite ; au contact de l'estomac, du côlon transverse et du côlon descendant",
+   "vascularisation": {
+    "texte": "Artère mésentérique supérieure (artères jéjunales, arcades et vaisseaux droits longs) ; veines vers la veine mésentérique supérieure puis la veine porte",
+    "arteres": [
+     "mesenterique-superieure"
+    ],
+    "veines": [
+     "veine-mesenterique-superieure",
+     "veine-porte-du-foie"
+    ]
+   },
+   "innervation": {
+    "texte": "Nerf vague (parasympathique) et nerfs splanchniques (sympathiques), par les plexus mésentériques",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Palpation et auscultation de l'abdomen (bruits hydro-aériques) ; entéro-scanner et vidéocapsule pour l'explorer",
+   "clinique": "Occlusion (brides, hernies), ischémie mésentérique, maladie de Crohn, maladie cœliaque (atrophie des villosités du jéjunum proximal) ; carence en vitamines après résection étendue",
+   "memo": "Jéjunum : « à jeun » en latin, il est vide, rouge, épais, à gauche et en haut",
+   "variantes": "Pas de limite nette avec l'iléon : le changement de calibre et de couleur est progressif. Un diverticule de Meckel est présent chez environ 2 % des personnes (sur l'iléon)",
+   "sources": [
+    "gray1918",
+    "tma-intestin-grele",
+    "openstax-intestins"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "uretere",
+   "resume": "Le tube musculaire de 25 à 30 cm qui conduit l'urine du rein à la vessie.",
+   "systeme": "urinaire",
+   "situation": "Du bassinet du rein à la vessie, derrière le péritoine : il descend devant le muscle grand psoas, croise la bifurcation des vaisseaux iliaques, puis s'incurve dans le bassin ; 25 à 30 cm",
+   "fonction": "Pousse l'urine vers la vessie par ondes de contraction (péristaltisme) ; son trajet oblique dans la paroi de la vessie le fait fonctionner comme une valve contre le reflux",
+   "parties": [
+    {
+     "nom": "Partie abdominale",
+     "role": "Sur le psoas, croisée en avant par les vaisseaux gonadiques ; la droite est derrière la partie descendante du duodénum à son origine"
+    },
+    {
+     "nom": "Partie pelvienne",
+     "role": "Dans le bassin, il est croisé en avant par le canal déférent chez l'homme ou l'artère utérine chez la femme, puis atteint la vessie"
+    },
+    {
+     "nom": "Partie intramurale",
+     "role": "Traverse obliquement la paroi vésicale : cette obliquité forme la valve qui empêche l'urine de remonter"
+    }
+   ],
+   "rapports": "À droite, à côté de la veine cave inférieure ; à gauche, croisé par les vaisseaux coliques gauches et derrière le côlon sigmoïde",
+   "vascularisation": {
+    "texte": "Artère rénale en haut, artères iliaques internes et vésicales en bas (et rameaux gonadiques) ; veines vers les veines rénale, gonadique et iliaque interne",
+    "arteres": [
+     "renale",
+     "iliaque-interne"
+    ],
+    "veines": [
+     "veine-iliaque-interne"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus rénal et hypogastrique : fibres sympathiques et parasympathiques ; la douleur est ressentie du flanc à l'aine",
+    "nerfs": [
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Non palpable ; échographie ou uroscanner ; la douleur du flanc qui irradie vers l'aine et les organes génitaux évoque un calcul",
+   "clinique": "Colique néphrétique : un calcul qui se bloque aux rétrécissements (jonction pyélo-urétérale, croisement des vaisseaux iliaques, jonction avec la vessie) ; hydronéphrose ; blessure lors d'une chirurgie du côlon ou du pelvis",
+   "memo": "L'eau passe sous le pont : dans le pelvis, l'uretère passe sous le canal déférent ou sous l'artère utérine",
+   "variantes": "Un uretère double (duplication partielle ou complète) est une variante connue",
+   "sources": [
+    "gray1918",
+    "openstax-urinaire"
+   ],
+   "divergences": "Les trois rétrécissements habituels (jonction pyélo-urétérale, croisement iliaque, jonction urétéro-vésicale) ne figurent pas dans Gray ni dans OpenStax, qui décrivent surtout l'obliquité d'entrée dans la vessie"
+  },
+  {
+   "id": "vessie-urinaire",
+   "resume": "Le réservoir musculaire de l'urine, au fond du bassin, qui se vide quand le muscle détrusor se contracte.",
+   "systeme": "urinaire",
+   "situation": "Dans le bassin, derrière la symphyse pubienne ; vide, elle est entièrement pelvienne ; pleine, son sommet remonte dans l'abdomen, en soulevant le péritoine ; capacité de 400 à 600 mL",
+   "fonction": "Stocke l'urine sans fuite puis l'évacue : le détrusor se contracte et les sphincters (interne lisse, externe strié) s'ouvrent lors de la miction ; l'envie d'uriner apparaît vers 150 mL",
+   "parties": [
+    {
+     "nom": "Sommet",
+     "role": "Pointe antérieure, reliée à l'ombilic par le ligament ombilical médian (vestige de l'ouraque)"
+    },
+    {
+     "nom": "Corps",
+     "role": "Partie principale entre le sommet et le fond"
+    },
+    {
+     "nom": "Fond et trigone",
+     "role": "Face postérieure ; le trigone, triangle à paroi lisse, est limité par les deux orifices des uretères et l'orifice de l'urètre"
+    },
+    {
+     "nom": "Col",
+     "role": "Zone qui se continue avec l'urètre, entourée du sphincter interne"
+    }
+   ],
+   "rapports": "Devant : symphyse pubienne ; en arrière : rectum, avec les vésicules séminales chez l'homme ou le vagin et l'utérus chez la femme ; en bas, la prostate chez l'homme ; en haut : péritoine, sigmoïde et anses grêles",
+   "vascularisation": {
+    "texte": "Artères vésicales supérieure et inférieure (branches de l'artère iliaque interne) ; plexus veineux vésical vers les veines iliaques internes",
+    "arteres": [
+     "iliaque-interne",
+     "division-anterieure-de-l-artere-iliaque-interne"
+    ],
+    "veines": [
+     "veine-iliaque-interne"
+    ]
+   },
+   "innervation": {
+    "texte": "Sympathique : nerf hypogastrique (relâche le détrusor, favorise la rétention) ; parasympathique : nerfs pelviens S2-S4 (contractent le détrusor) ; somatique : nerf pudendal pour le sphincter externe",
+    "nerfs": [
+     "nerfs-sympathiques",
+     "nerf-pudendal"
+    ]
+   },
+   "examen": "Percussion et palpation du bas-ventre : une matité arrondie sus-pubienne signe un globe vésical ; échographie pour mesurer le résidu après miction ; sondage",
+   "clinique": "Cystite (plus fréquente chez la femme, au conduit court) ; rétention aiguë d'urine, souvent par adénome prostatique ; vessie neurogène ; cancer de la vessie (sang dans les urines) ; ponction sus-pubienne possible quand elle est pleine",
+   "memo": "Le trigone : deux uretères en haut, l'urètre en bas, trois points qui dessinent un triangle lisse",
+   "variantes": "Capacité et forme varient avec le remplissage, le sexe et l'âge ; la paroi s'épaissit en cas d'obstacle",
+   "sources": [
+    "tma-vessie",
+    "openstax-urinaire",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "atrium-droit",
+   "resume": "La cavité qui reçoit le sang pauvre en oxygène du corps et le passe au ventricule droit ; son mur abrite le nœud sinusal.",
+   "systeme": "circulatoire",
+   "situation": "Forme le bord droit du cœur ; reçoit en haut la veine cave supérieure, en bas la veine cave inférieure, et le sinus coronaire entre cette dernière et l'orifice tricuspide",
+   "fonction": "Reçoit le sang veineux du corps et du cœur lui-même, puis le chasse dans le ventricule droit par la valve tricuspide ; sa contraction en fin de diastole parfait le remplissage du ventricule",
+   "parties": [
+    {
+     "nom": "Sinus des veines caves",
+     "role": "Partie postérieure à paroi lisse, où débouchent les deux veines caves"
+    },
+    {
+     "nom": "Atrium proprement dit et auricule",
+     "role": "Partie antérieure tapissée de muscles pectinés, prolongée par l'auricule droite"
+    },
+    {
+     "nom": "Crête terminale",
+     "role": "Relief qui sépare la zone lisse de la zone pectinée ; le nœud sinusal est près de son extrémité haute"
+    },
+    {
+     "nom": "Fosse ovale",
+     "role": "Dépression de la cloison interatriale, vestige du foramen ovale fœtal ; son bord saillant est le limbe"
+    },
+    {
+     "nom": "Valvules de la veine cave inférieure et du sinus coronaire",
+     "role": "Replis rudimentaires ; le premier dirigeait chez le fœtus le sang vers le foramen ovale"
+    }
+   ],
+   "rapports": "À droite, il touche la plèvre et le poumon droits ; en dedans, la cloison interatriale le sépare de l'atrium gauche ; en bas et en avant, il s'ouvre dans le ventricule droit",
+   "vascularisation": {
+    "texte": "Artère coronaire droite (dont naît souvent l'artère du nœud sinusal) ; le sang veineux du cœur revient par le sinus coronaire, qui s'ouvre dans cette cavité",
+    "arteres": [
+     "artere-coronaire-droite"
+    ],
+    "veines": [
+     "veine-cave-superieure",
+     "veine-cave-inferieure",
+     "sinus-coronaire"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus cardiaque : fibres parasympathiques du nerf vague et fibres sympathiques du tronc sympathique",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Aucun accès direct : sa pression se lit au cou, à la hauteur de la veine jugulaire interne gonflée, patient à 45 degrés",
+   "clinique": "Communication interatriale (le foramen ovale reste ouvert chez environ un adulte sur quatre) ; fibrillation et flutter atriaux ; le cathéter veineux central s'arrête à l'entrée de cette cavité",
+   "memo": "Trois entrées (les deux veines caves, le sinus coronaire), une seule sortie : la valve tricuspide",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-cavites",
+    "kenhub-coeur"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "atrium-gauche",
+   "resume": "La cavité qui reçoit le sang riche en oxygène venu des poumons ; elle forme la face postérieure du cœur.",
+   "systeme": "circulatoire",
+   "situation": "Forme la base (bord postérieur) du cœur, devant l'œsophage et la colonne ; son auricule contourne par la gauche la racine du tronc pulmonaire",
+   "fonction": "Reçoit le sang oxygéné par les quatre veines pulmonaires et le verse dans le ventricule gauche par la valve mitrale",
+   "parties": [
+    {
+     "nom": "Paroi lisse",
+     "role": "Partie postérieure née des veines pulmonaires, sans muscles pectinés"
+    },
+    {
+     "nom": "Auricule gauche",
+     "role": "Prolongement long et étroit, seule zone avec des muscles pectinés ; siège des caillots de la fibrillation"
+    },
+    {
+     "nom": "Cloison interatriale",
+     "role": "Côté gauche de la fosse ovale ; la valve du foramen ovale s'y plaque après la naissance"
+    }
+   ],
+   "rapports": "En arrière, l'œsophage (vue en échographie transœsophagienne) ; en avant, la racine de l'aorte ; à droite, la cloison interatriale",
+   "vascularisation": {
+    "texte": "Artère circonflexe, branche de la coronaire gauche ; le sang veineux du cœur gagne le sinus coronaire ; les quatre veines pulmonaires s'y ouvrent sans valve",
+    "arteres": [
+     "artere-coronaire-gauche",
+     "artere-circonflexe-du-coeur"
+    ],
+    "veines": [
+     "veine-pulmonaire-superieure-gauche",
+     "veine-pulmonaire-inferieure-gauche",
+     "sinus-coronaire"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus cardiaque : fibres parasympathiques du nerf vague et fibres sympathiques du tronc sympathique",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Un rétrécissement mitral, qui dilate cette cavité, s'entend à la pointe : claquement d'ouverture puis roulement diastolique, mieux perçus avec la cloche du stéthoscope",
+   "clinique": "Fibrillation atriale : le sang stagne dans l'auricule, où se forment des caillots qui peuvent gagner le cerveau (accident vasculaire cérébral). Un atrium très dilaté peut comprimer l'œsophage",
+   "memo": "Quatre veines pulmonaires entrent, la valve mitrale sort : tout est lisse, sauf l'auricule",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-cavites",
+    "openstax-coeur"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-segmentaire-apicale-du-poumon-droit-bi",
+   "resume": "La bronche (BI) du segment qui forme le sommet du poumon droit, en haut du lobe supérieur.",
+   "systeme": "respiratoire",
+   "situation": "Branche du lobe supérieur droit, la plus haute : elle monte vers le sommet du poumon, sous la première côte et la clavicule",
+   "fonction": "Ventile le segment apical du lobe supérieur droit (S1), le dôme du poumon qui dépasse la première côte dans le cou",
+   "rapports": "Elle se distingue de BII et BIII par son trajet vertical : BI monte, BII va en arrière, BIII en avant",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-apicale-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-apicale-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation au-dessus de la clavicule, dans la fosse supraclaviculaire ; bronchoscopie : orifice supérieur de la trifurcation",
+   "clinique": "Atteinte du sommet : tumeur de Pancoast (douleur de l'épaule, syndrome de Claude Bernard-Horner), séquelles de tuberculose",
+   "memo": "Apicale : tout en haut, comme un chapeau sous la clavicule",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-segmentaire-apicopost-poumon-gauche-bi-bii",
+   "resume": "La bronche commune (BI+BII) aux segments apical et postérieur du lobe supérieur gauche, qui n'en font qu'un.",
+   "systeme": "respiratoire",
+   "situation": "Branche de la division supérieure de la lobaire supérieure gauche, qui monte puis se divise sous le sommet du poumon gauche",
+   "fonction": "Ventile le segment apicopostérieur (S1+2), le dôme et la partie haute et postérieure du lobe supérieur gauche : l'apical et le postérieur y sont fusionnés",
+   "rapports": "Elle réunit à gauche ce que deux bronches séparées (BI et BII) font à droite, d'où le nom en deux numéros",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-apicale-du-poumon-gauche"
+    ],
+    "veines": [
+     "veine-apicoposterieure-du-poumon-gauche"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation au sommet, en avant au-dessus de la clavicule et en arrière près de l'épine de la scapula",
+   "clinique": "Tuberculose de réactivation et tumeur de Pancoast (sommet) ; séquelles apicales",
+   "memo": "Deux numéros, une bronche : à gauche, l'apical et le postérieur sont fusionnés",
+   "variantes": "Elle se divise en deux branches, apicale et postérieure, de longueur variable : la fusion est plus ou moins nette selon les personnes",
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-segmentaire-superieure-du-poumon-droit-bvi",
+   "resume": "La bronche (BVI) du segment supérieur du lobe inférieur droit, qui regarde le dos.",
+   "systeme": "respiratoire",
+   "situation": "Première branche de la bronche lobaire inférieure droite, naissant en arrière, juste en face de la bronche lobaire moyenne",
+   "fonction": "Ventile le segment supérieur du lobe inférieur droit (S6), entre les omoplates, au-dessus des segments basaux",
+   "rapports": "Elle part en arrière et en haut, avant le tronc basal ; elle est la seule branche du lobe inférieur qui naît au-dessus des bronches basales",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-superieure-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-basale-superieure-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation dans le dos, entre l'omoplate et la colonne ; bronchoscopie : orifice postérieur, face à celui du lobe moyen",
+   "clinique": "Premier siège des pneumonies et des abcès d'inhalation chez un patient couché sur le dos",
+   "memo": "Segment supérieur du lobe inférieur : celui qui reçoit ce qu'on inhale allongé sur le dos",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "cuspide-infefieure-de-la-valve-atrioventriculaire-droite",
+   "resume": "La cuspide de la valve tricuspide qui regarde le diaphragme : on l'appelle aussi cuspide postérieure.",
+   "systeme": "circulatoire",
+   "situation": "Contre la paroi inférieure du ventricule droit, entre les cuspides antérieure et septale de l'orifice atrioventriculaire droit",
+   "fonction": "Participe à la fermeture de la valve tricuspide à la systole ; ses cordages naissent surtout du muscle papillaire inférieur (et du muscle antérieur)",
+   "vascularisation": {
+    "texte": "Valvule presque sans vaisseaux, nourrie par le sang des cavités ; son anneau reçoit des rameaux de l'artère coronaire droite",
+    "arteres": [
+     "artere-coronaire-droite"
+    ],
+    "veines": []
+   },
+   "examen": "Foyer tricuspide : bord gauche du sternum, en bas ; souffle systolique renforcé à l'inspiration",
+   "clinique": "Anomalie d'Ebstein (implantation trop basse des cuspides inférieure et septale) ; insuffisance tricuspide par dilatation de l'anneau lors d'une insuffisance cardiaque droite",
+   "memo": "Inférieure ou postérieure : c'est la cuspide du plancher",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-valves",
+    "tma-valves"
+   ],
+   "divergences": "La TA2 dit « cuspide inférieure » ; Gray et TeachMeAnatomy disent « postérieure » ; Kenhub donne les deux noms (même cuspide)"
+  },
+  {
+   "id": "cuspide-posterieure-de-la-valve-atrioventriculaire-gauche",
+   "resume": "La cuspide de la valve mitrale accrochée à la paroi du ventricule gauche (cuspide murale), plus étroite que l'antérieure.",
+   "systeme": "circulatoire",
+   "situation": "Sur la partie postérieure de l'anneau de l'orifice atrioventriculaire gauche, contre la paroi du ventricule ; l'antérieure fait face à l'aorte",
+   "fonction": "Avec la cuspide antérieure, ferme l'orifice mitral à la systole et empêche le sang de refluer dans l'atrium gauche ; ses cordages viennent des deux muscles papillaires",
+   "rapports": "Elle prolonge, sur l'anneau, la cuspide antérieure, elle-même en continuité fibreuse avec la valve aortique ; l'artère circonflexe longe son anneau",
+   "vascularisation": {
+    "texte": "Valvule presque sans vaisseaux, nourrie par le sang des cavités ; son anneau est voisin de l'artère circonflexe",
+    "arteres": [
+     "artere-circonflexe-du-coeur"
+    ],
+    "veines": []
+   },
+   "examen": "Foyer mitral à la pointe (5e espace intercostal gauche, ligne médioclaviculaire) ; prolapsus : claquement mésosystolique puis souffle télésystolique",
+   "clinique": "Prolapsus mitral et rupture de cordage (insuffisance mitrale : souffle systolique à la pointe) ; rupture de pilier après un infarctus inférieur : insuffisance mitrale aiguë brutale",
+   "memo": "Postérieure : la cuspide longue à porter, courte en hauteur, collée à la paroi",
+   "variantes": "Elle est découpée en trois festons (P1, P2, P3) ; le prolapsus touche le plus souvent le feston médian",
+   "sources": [
+    "gray1918",
+    "kenhub-valves",
+    "openstax-coeur"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "cuspide-septale-de-la-valve-atrioventriculaire-droite",
+   "resume": "La plus petite des trois cuspides de la valve tricuspide : elle s'accroche à la cloison entre les deux ventricules.",
+   "systeme": "circulatoire",
+   "situation": "Côté droit de la cloison interventriculaire, à l'orifice atrioventriculaire droit, près du nœud atrioventriculaire et du faisceau de His",
+   "fonction": "Avec les cuspides antérieure et inférieure, elle ferme l'orifice tricuspide à la systole et empêche le sang de refluer vers l'atrium droit ; ses cordages l'amarrent à la cloison et aux muscles papillaires voisins",
+   "rapports": "Contre le septum membraneux : la chirurgie de la valve ou d'une communication interventriculaire y expose à un bloc atrioventriculaire",
+   "vascularisation": {
+    "texte": "Valvule presque sans vaisseaux, nourrie par le sang des cavités ; son anneau reçoit des rameaux de l'artère coronaire droite",
+    "arteres": [
+     "artere-coronaire-droite"
+    ],
+    "veines": []
+   },
+   "examen": "Foyer tricuspide : bord gauche du sternum, en bas ; le souffle d'insuffisance augmente à l'inspiration profonde",
+   "clinique": "Insuffisance tricuspide (dilatation du ventricule droit, endocardite des usagers de drogues par voie veineuse) : souffle systolique. Anomalie d'Ebstein : cuspides septale et inférieure implantées trop bas",
+   "memo": "La septale est collée à la cloison : c'est elle qui avoisine le faisceau de His",
+   "variantes": "Les trois cuspides sont d'inégale taille ; des cuspides accessoires sont possibles",
+   "sources": [
+    "gray1918",
+    "kenhub-valves",
+    "tma-valves"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lobe-droit-du-thymus",
+   "resume": "Le lobe droit du thymus : l'école où mûrissent les lymphocytes T, très gros chez l'enfant.",
+   "systeme": "lymphatique",
+   "situation": "Dans le médiastin antérieur et supérieur, à droite, derrière le manubrium et les cartilages costaux, en avant de la veine cave supérieure et des gros vaisseaux",
+   "fonction": "Fait mûrir les lymphocytes T : les précurseurs venus de la moelle osseuse y sont sélectionnés pour reconnaître les autres sans attaquer l'organisme ; l'organe est actif surtout dans l'enfance",
+   "rapports": "Le nerf phrénique droit le longe latéralement ; en arrière, les gros vaisseaux (veine brachio-céphalique, veine cave supérieure) et le péricarde",
+   "vascularisation": {
+    "texte": "Rameaux des artères thoracique interne et thyroïdiennes inférieure et supérieure ; veines vers la veine brachio-céphalique gauche et les veines thyroïdiennes",
+    "arteres": [
+     "thoracique-interne",
+     "artere-thyroidienne-inferieure"
+    ],
+    "veines": [
+     "veine-brachiocephalique",
+     "veines-thoraciques-internes"
+    ]
+   },
+   "innervation": {
+    "texte": "Très peu de fibres : nerf vague et tronc sympathique (fibres noradrénergiques)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Non palpable ; visible sur la radiographie de l'enfant (aspect en voile de bateau) ; scanner pour les tumeurs du médiastin antérieur",
+   "clinique": "Thymome, tumeur du médiastin antérieur (associée à la myasthénie dans environ un cas sur cinq ; une grosse masse peut comprimer la veine cave supérieure) ; absence du thymus dans le syndrome de DiGeorge, avec déficit en lymphocytes T",
+   "memo": "Le thymus a deux lobes, comme un papillon, qui fondent avec l'âge",
+   "variantes": "Il régresse à partir de la puberté et se remplace peu à peu par de la graisse ; son volume varie beaucoup selon l'âge",
+   "sources": [
+    "kenhub-thymus",
+    "openstax-lymphe"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lobe-gauche-du-thymus",
+   "resume": "Le lobe gauche du thymus : lui aussi école des lymphocytes T, devant la crosse de l'aorte.",
+   "systeme": "lymphatique",
+   "situation": "Dans le médiastin antérieur et supérieur, à gauche, derrière le sternum, en avant de la crosse de l'aorte et du péricarde ; il remonte parfois jusqu'au pôle inférieur de la thyroïde",
+   "fonction": "Fait mûrir les lymphocytes T : les cellules de la moelle osseuse y apprennent à distinguer le soi du non-soi ; l'organe est actif surtout dans l'enfance",
+   "rapports": "Le nerf phrénique gauche le longe ; la crosse de l'aorte, le péricarde et la plèvre médiastinale sont derrière lui",
+   "vascularisation": {
+    "texte": "Rameaux des artères thoracique interne et thyroïdiennes inférieure et supérieure ; veines vers la veine brachio-céphalique gauche",
+    "arteres": [
+     "thoracique-interne",
+     "artere-thyroidienne-inferieure"
+    ],
+    "veines": [
+     "veine-brachiocephalique",
+     "veines-thoraciques-internes"
+    ]
+   },
+   "innervation": {
+    "texte": "Très peu de fibres : nerf vague et tronc sympathique (fibres noradrénergiques)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Non palpable ; visible sur la radiographie de l'enfant ; scanner du médiastin antérieur",
+   "clinique": "Myasthénie : l'ablation du thymus (thymectomie, par sternotomie ou thoracoscopie) peut réduire les anticorps dirigés contre les récepteurs musculaires ; thymome, ou syndrome de DiGeorge s'il manque",
+   "memo": "Gauche : en avant de la crosse de l'aorte, juste derrière le sternum",
+   "variantes": "Il régresse à partir de la puberté et se remplace peu à peu par de la graisse",
+   "sources": [
+    "kenhub-thymus",
+    "openstax-lymphe"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lobe-inferieur-du-poumon-droit",
+   "resume": "Le grand lobe du bas du poumon droit, qui repose sur le diaphragme et compte cinq segments.",
+   "systeme": "respiratoire",
+   "situation": "Sous la scissure oblique : face postérieure, base du poumon droit sur la coupole diaphragmatique, face latérale en bas",
+   "fonction": "Assure les échanges gazeux de son territoire ; ses cinq segments (supérieur S6 et basaux S7 à S10) sont ventilés par la bronche lobaire inférieure",
+   "parties": [
+    {
+     "nom": "Segment supérieur (S6)",
+     "role": "Au-dessus de la base, en arrière, entre l'omoplate et la colonne"
+    },
+    {
+     "nom": "Segments basaux (S7 à S10)",
+     "role": "Médial (contre le cœur), antérieur, latéral (flanc) et postérieur (gouttière paravertébrale)"
+    }
+   ],
+   "rapports": "La base repose sur le diaphragme et, à travers lui, sur le foie ; en dedans, le cœur et la veine cave inférieure",
+   "vascularisation": {
+    "texte": "Artère lobaire inférieure (branche de l'artère pulmonaire droite) et artères bronchiques ; sang drainé par la veine pulmonaire inférieure droite",
+    "arteres": [
+     "artere-lobaire-inferieure-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-basale-inferieure-du-poumon-droit",
+     "veine-basale-superieure-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (constriction des bronches) et fibres sympathiques du tronc sympathique (dilatation) ; la plèvre viscérale est insensible à la douleur",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation de la base, en bas du dos : crépitants de la pneumonie, abolition du murmure dans l'épanchement ; matité à la percussion",
+   "clinique": "Pneumonie, abcès et corps étrangers inhalés ; épanchement pleural qui comble d'abord l'angle costodiaphragmatique ; lobectomie inférieure droite",
+   "memo": "Cinq segments : un en haut (VI), quatre à la base (VII médial, VIII antérieur, IX latéral, X postérieur)",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-poumons",
+    "openstax-respiratoire",
+    "kenhub-segments"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lobe-inferieur-du-poumon-gauche",
+   "resume": "Le grand lobe du bas du poumon gauche, sous la scissure oblique, sur le diaphragme.",
+   "systeme": "respiratoire",
+   "situation": "Sous la scissure oblique : face postérieure et base du poumon gauche sur la coupole diaphragmatique gauche",
+   "fonction": "Assure les échanges gazeux de son territoire ; ses segments (supérieur S6 et basaux S7 à S10, avec S7 et S8 réunis) sont ventilés par la bronche lobaire inférieure gauche",
+   "parties": [
+    {
+     "nom": "Segment supérieur (S6)",
+     "role": "En arrière, entre l'omoplate et la colonne"
+    },
+    {
+     "nom": "Segments basaux",
+     "role": "Antéromédial (S7+8), latéral (S9) et postérieur (S10), au-dessus du diaphragme"
+    }
+   ],
+   "rapports": "La base repose sur le diaphragme et, à travers lui, sur l'estomac et la rate ; en dedans, le cœur et l'aorte thoracique",
+   "vascularisation": {
+    "texte": "Branches de l'artère pulmonaire gauche et artères bronchiques ; sang drainé par la veine pulmonaire inférieure gauche",
+    "arteres": [
+     "artere-pulmonaire-gauche",
+     "artere-segmentaire-basale-superieure-du-poumon-gauche"
+    ],
+    "veines": [
+     "veine-pulmonaire-inferieure-gauche"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (constriction des bronches) et fibres sympathiques du tronc sympathique (dilatation) ; la plèvre viscérale est insensible à la douleur",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation de la base gauche, en bas du dos ; matité dans l'épanchement",
+   "clinique": "Pneumonie, abcès, inhalation ; épanchement qui comble d'abord l'angle costodiaphragmatique ; lobectomie inférieure gauche",
+   "memo": "Quatre ou cinq segments : un supérieur et les basaux, dont l'antéromédial réunit VII et VIII",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-poumons",
+    "kenhub-segments",
+    "statpearls-segments"
+   ],
+   "divergences": "StatPearls compte 4 ou 5 segments selon que S7 et S8 sont réunis ou non ; la TA2 les sépare"
+  },
+  {
+   "id": "lobe-moyen-du-poumon-droit",
+   "resume": "Le petit lobe du milieu du poumon droit, en forme de coin, entre les deux scissures.",
+   "systeme": "respiratoire",
+   "situation": "Entre la scissure horizontale et le bas de la scissure oblique, sur la face antérieure et latérale du poumon droit, contre le bord droit du cœur",
+   "fonction": "Assure les échanges gazeux de son territoire ; ses deux segments, latéral (S4) et médial (S5), sont ventilés par la bronche lobaire moyenne",
+   "parties": [
+    {
+     "nom": "Segment latéral (S4)",
+     "role": "Contre la paroi latérale du thorax"
+    },
+    {
+     "nom": "Segment médial (S5)",
+     "role": "Contre le médiastin, le long du bord droit du cœur"
+    }
+   ],
+   "rapports": "Contre le bord droit du cœur, en dedans ; contre le diaphragme, en bas",
+   "vascularisation": {
+    "texte": "Artère lobaire moyenne (branche de l'artère pulmonaire droite) et artères bronchiques ; sang drainé par la veine pulmonaire supérieure droite",
+    "arteres": [
+     "artere-lobaire-moyenne-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-mediale-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (constriction des bronches) et fibres sympathiques du tronc sympathique (dilatation) ; la plèvre viscérale est insensible à la douleur",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation et percussion sous l'aisselle droite, du 4e au 6e espace intercostal ; sur la radiographie de profil, triangle entre les deux scissures",
+   "clinique": "Syndrome du lobe moyen (bronche étroite comprimée, collapsus, infections à répétition) ; sa pneumonie efface le bord droit du cœur sur la radiographie de face",
+   "memo": "Le lobe moyen n'existe qu'à droite : un coin entre deux scissures, qui touche le cœur",
+   "variantes": "Il peut être incomplet, fusionné avec le lobe supérieur si la scissure horizontale manque",
+   "sources": [
+    "gray1918",
+    "tma-poumons",
+    "openstax-respiratoire",
+    "kenhub-segments"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lobe-superieur-du-poumon-droit",
+   "resume": "Le lobe du haut du poumon droit : il coiffe le sommet du poumon et compte trois segments.",
+   "systeme": "respiratoire",
+   "situation": "Au-dessus de la scissure horizontale (à hauteur de la 4e côte) : sommet du poumon sous la clavicule, face antérieure et haut de la face postérieure",
+   "fonction": "Assure les échanges gazeux de son territoire ; ses trois segments, apical (S1), postérieur (S2) et antérieur (S3), sont ventilés par la bronche lobaire supérieure droite",
+   "parties": [
+    {
+     "nom": "Segment apical (S1)",
+     "role": "Dôme du poumon, qui dépasse la première côte dans le cou"
+    },
+    {
+     "nom": "Segment postérieur (S2)",
+     "role": "Face postérieure, sous le sommet, contre le haut du dos"
+    },
+    {
+     "nom": "Segment antérieur (S3)",
+     "role": "Face antérieure, sous la clavicule, au-dessus de la scissure horizontale"
+    }
+   ],
+   "rapports": "Le sommet touche l'artère subclavière, le plexus brachial et le ganglion stellaire ; contre le lobe, à droite, la veine cave supérieure et l'arc de l'azygos",
+   "vascularisation": {
+    "texte": "Artère lobaire supérieure (branche de l'artère pulmonaire droite) et artères bronchiques ; sang oxygéné drainé par la veine pulmonaire supérieure droite",
+    "arteres": [
+     "arteres-lobaire-superieure-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-superieure-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (constriction des bronches) et fibres sympathiques du tronc sympathique (dilatation) ; la plèvre viscérale est insensible à la douleur",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Percussion et auscultation du haut du thorax, en avant sous la clavicule et en arrière près de l'épine de la scapula ; sur la radiographie de face, il est au-dessus de la scissure horizontale",
+   "clinique": "Cancers du sommet (tumeur de Pancoast : douleur de l'épaule, syndrome de Claude Bernard-Horner) ; tuberculose de réactivation, avec cavernes au sommet ; lobectomie supérieure droite",
+   "memo": "Droit : trois lobes, et le supérieur a trois segments : apical, postérieur, antérieur",
+   "variantes": "La veine azygos peut s'enfoncer dans le sommet et isoler un petit lobe de l'azygos, variante rare",
+   "sources": [
+    "gray1918",
+    "tma-poumons",
+    "kenhub-segments",
+    "openstax-respiratoire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lobe-superieur-du-poumon-gauche",
+   "resume": "Le lobe du haut du poumon gauche : il comprend le sommet et la lingula, qui remplace le lobe moyen.",
+   "systeme": "respiratoire",
+   "situation": "Au-dessus de la scissure oblique : sommet du poumon gauche, face antérieure, incisure cardiaque et lingula, qui descend contre le cœur",
+   "fonction": "Assure les échanges gazeux de son territoire ; il est ventilé par la bronche lobaire supérieure gauche, qui donne une division supérieure et une division lingulaire",
+   "parties": [
+    {
+     "nom": "Segment apicopostérieur (S1+2)",
+     "role": "Dôme et haut du dos : l'apical et le postérieur sont fusionnés"
+    },
+    {
+     "nom": "Segment antérieur (S3)",
+     "role": "Face antérieure, sous la clavicule"
+    },
+    {
+     "nom": "Lingula (S4 supérieur, S5 inférieur)",
+     "role": "Languette sous l'incisure cardiaque, contre le cœur ; homologue du lobe moyen droit"
+    }
+   ],
+   "rapports": "L'incisure cardiaque, creusée par la pointe du cœur, entaille son bord antérieur ; la crosse de l'aorte et l'artère subclavière gauche laissent leurs empreintes",
+   "vascularisation": {
+    "texte": "Branches de l'artère pulmonaire gauche et artères bronchiques ; sang drainé par la veine pulmonaire supérieure gauche",
+    "arteres": [
+     "artere-pulmonaire-gauche",
+     "artere-lingulaire-superieure-du-poumon-gauche",
+     "artere-lingulaire-inferieure-du-poumon-gauche"
+    ],
+    "veines": [
+     "veine-pulmonaire-superieure-gauche"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (constriction des bronches) et fibres sympathiques du tronc sympathique (dilatation) ; la plèvre viscérale est insensible à la douleur",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation sous la clavicule gauche (segments apicaux et antérieur) ; la lingula s'ausculte près de la pointe du cœur",
+   "clinique": "Pneumonie du lobe ; cancers du sommet ; la lingula malade efface le bord gauche du cœur sur la radiographie de face ; lobectomie supérieure gauche",
+   "memo": "À gauche, pas de lobe moyen, mais une lingula : la languette qui fait son travail",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-poumons",
+    "kenhub-segments",
+    "statpearls-segments"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "plevre",
+   "resume": "La double enveloppe lisse du poumon : une feuille colle au poumon, l'autre à la paroi, et un film de liquide les fait glisser.",
+   "systeme": "respiratoire",
+   "situation": "Sac séreux fermé de chaque côté du médiastin : la plèvre viscérale couvre le poumon, la pariétale tapisse la paroi (costale), le diaphragme, le médiastin et le dôme cervical ; elles se continuent au hile",
+   "fonction": "Laisse glisser le poumon sans frottement dans la cage thoracique grâce à un mince film de liquide ; la dépression de la cavité pleurale colle le poumon à la paroi pendant la respiration",
+   "parties": [
+    {
+     "nom": "Plèvre viscérale",
+     "role": "Colle au poumon et s'enfonce dans les scissures ; insensible à la douleur"
+    },
+    {
+     "nom": "Plèvre pariétale",
+     "role": "Costale, diaphragmatique, médiastinale et cervicale (coupole qui coiffe le sommet) ; sensible à la douleur"
+    },
+    {
+     "nom": "Culs-de-sac pleuraux",
+     "role": "Recoins de la cavité que le poumon n'occupe qu'à l'inspiration forcée, surtout le cul-de-sac costodiaphragmatique"
+    },
+    {
+     "nom": "Ligament pulmonaire",
+     "role": "Repli sous la racine du poumon, entre le poumon et le péricarde"
+    }
+   ],
+   "rapports": "Le sac droit est plus court, plus large et monte plus haut dans le cou que le gauche ; les culs-de-sac descendent plus bas que le poumon",
+   "vascularisation": {
+    "texte": "Plèvre pariétale : artères intercostales postérieures, thoracique interne et musculophrénique ; plèvre viscérale : artères bronchiques",
+    "arteres": [
+     "arteres-intercostales-posterieures",
+     "thoracique-interne",
+     "artere-musculophrenique",
+     "aorte-thoracique"
+    ],
+    "veines": [
+     "veines-thoraciques-internes",
+     "veine-azygos"
+    ]
+   },
+   "innervation": {
+    "texte": "Pariétale : nerfs intercostaux (douleur vive et localisée) et nerf phrénique (centre du diaphragme : douleur ressentie à l'épaule) ; viscérale : plexus pulmonaire, sans douleur",
+    "nerfs": [
+     "nerfs-intercostaux",
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Percussion (matité d'un épanchement, tympanisme d'un pneumothorax) ; auscultation : abolition du murmure vésiculaire ou frottement pleural ; radiographie et échographie",
+   "clinique": "Pneumothorax (air dans la cavité), épanchement pleural, pleurésie, mésothéliome (amiante) ; la ponction se fait au bord supérieur de la côte inférieure, pour éviter le paquet vasculonerveux intercostal",
+   "memo": "Deux feuillets, un film de liquide : le poumon glisse comme une vitre sur du savon",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-poumons",
+    "openstax-respiratoire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "segment-posteromedial-droit-du-foie-viii",
+   "resume": "Le segment VIII de Couinaud : le haut du secteur antérieur du lobe droit, sous la coupole du diaphragme.",
+   "systeme": "digestif",
+   "situation": "Partie haute et antérieure du lobe droit, entre la veine hépatique moyenne et la veine hépatique droite, au-dessus du plan de la bifurcation portale, sous le dôme du diaphragme",
+   "fonction": "Territoire du foie nourri par la branche antérieure de la veine porte droite, drainé par les veines hépatiques moyenne et droite ; avec V, il forme le secteur antérieur droit",
+   "rapports": "Il est sous la coupole droite du diaphragme, près de la veine cave inférieure et du cœur ; la veine hépatique moyenne le sépare du segment IV",
+   "vascularisation": {
+    "texte": "Pédicule propre au centre du segment (branche de la veine porte, branche de l'artère hépatique propre, canal biliaire) ; les veines hépatiques le drainent à sa périphérie",
+    "arteres": [
+     "artere-hepatique-propre"
+    ],
+    "veines": [
+     "veine-porte-du-foie",
+     "veines-hepatiques"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus hépatique : fibres sympathiques (plexus cœliaque) et parasympathiques (nerfs vagues), qui entrent par le hile ; la capsule est sensible par les derniers nerfs intercostaux",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques",
+     "nerfs-intercostaux"
+    ]
+   },
+   "examen": "Échographie sous le rebord costal ou par voie intercostale",
+   "clinique": "Segment le plus haut du foie : les tumeurs y sont proches du diaphragme, ce qui complique l'ablation ; il est enlevé dans l'hépatectomie droite (V-VIII)",
+   "memo": "VIII : le dernier, en haut à l'avant, sous la coupole",
+   "variantes": null,
+   "sources": [
+    "radiopaedia-couinaud",
+    "kenhub-foie",
+    "tma-foie",
+    "gray1918"
+   ],
+   "divergences": "La TA2 le nomme « postéromédial droit » ; Radiopaedia et la classification de Couinaud le décrivent comme antérieur et supérieur"
+  },
+  {
+   "id": "ventricule-droit",
+   "resume": "La pompe qui envoie le sang vers les poumons : une cavité triangulaire à paroi mince, tournée vers le sternum.",
+   "systeme": "circulatoire",
+   "situation": "Forme la face antérieure (sternocostale) et le bord inférieur du cœur, derrière le sternum et les cartilages costaux gauches",
+   "fonction": "Reçoit le sang de l'atrium droit par la valve tricuspide et le chasse dans le tronc pulmonaire par la valve pulmonaire, sous une pression basse",
+   "parties": [
+    {
+     "nom": "Chambre d'admission",
+     "role": "Paroi hérissée de trabécules charnues ; trois muscles papillaires (antérieur, inférieur, septal) et cordages tendineux de la valve tricuspide"
+    },
+    {
+     "nom": "Chambre de chasse (cône artériel)",
+     "role": "Entonnoir à paroi lisse menant à la valve pulmonaire, séparé de l'admission par la crête supraventriculaire"
+    },
+    {
+     "nom": "Trabécule septomarginale",
+     "role": "Pont musculaire qui relie la cloison au muscle papillaire antérieur ; il porte la branche droite du faisceau de His"
+    }
+   ],
+   "rapports": "Derrière lui, l'atrium droit et le ventricule gauche (via la cloison interventriculaire) ; au-dessus, le tronc pulmonaire ; en bas, le diaphragme",
+   "vascularisation": {
+    "texte": "Artère coronaire droite (branche marginale droite) et artère interventriculaire antérieure pour la partie antérieure et la cloison ; drainage par les veines cardiaques vers le sinus coronaire",
+    "arteres": [
+     "artere-coronaire-droite",
+     "branche-inferolaterale-droite-de-l-artere-coronaire-droite",
+     "artere-interventriculaire-anterieure"
+    ],
+    "veines": [
+     "grande-veine-cardiaque",
+     "veine-cardiaque-moyenne",
+     "sinus-coronaire"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus cardiaque : fibres parasympathiques du nerf vague et fibres sympathiques du tronc sympathique",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Un ventricule droit gros se sent comme un soulèvement du bord gauche du sternum ; le foyer tricuspide s'ausculte au bord gauche du sternum, en bas",
+   "clinique": "Infarctus du ventricule droit (occlusion haute de la coronaire droite : veines du cou gonflées, poumons clairs, tension basse) ; cœur pulmonaire ; tétralogie de Fallot (sténose pulmonaire, communication interventriculaire, aorte à cheval, hypertrophie droite)",
+   "memo": "Chambre d'entrée rugueuse (trabécules), chambre de sortie lisse (cône) : la crête supraventriculaire les sépare",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-cavites",
+    "kenhub-coeur"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ventricule-gauche",
+   "resume": "La pompe de la grande circulation : une cavité conique à paroi épaisse qui forme la pointe du cœur.",
+   "systeme": "circulatoire",
+   "situation": "Forme la pointe, le bord gauche et une grande partie de la face diaphragmatique du cœur ; la pointe bat au 5e espace intercostal gauche, sur la ligne médioclaviculaire",
+   "fonction": "Reçoit le sang de l'atrium gauche par la valve mitrale et le projette dans l'aorte par la valve aortique, sous haute pression ; sa paroi est environ trois fois plus épaisse que celle du droit",
+   "parties": [
+    {
+     "nom": "Chambre d'admission",
+     "role": "Trabécules charnues fines et deux muscles papillaires (antérolatéral ou supérieur, postéromédial ou inférieur) pour la valve mitrale"
+    },
+    {
+     "nom": "Vestibule aortique",
+     "role": "Chambre de sortie à paroi lisse, sous la valve aortique ; la grande cuspide mitrale en forme une paroi"
+    },
+    {
+     "nom": "Cloison interventriculaire",
+     "role": "Partie musculaire épaisse, partie membraneuse mince près de l'aorte ; siège des communications interventriculaires"
+    }
+   ],
+   "rapports": "Le ventricule droit le recouvre en avant et à droite ; en arrière, l'atrium gauche ; sa face gauche touche le poumon gauche, la face basse le diaphragme",
+   "vascularisation": {
+    "texte": "Artère interventriculaire antérieure, artère circonflexe et artère coronaire droite (par sa branche interventriculaire postérieure) ; le sang veineux gagne le sinus coronaire",
+    "arteres": [
+     "artere-coronaire-gauche",
+     "artere-interventriculaire-anterieure",
+     "artere-circonflexe-du-coeur",
+     "artere-coronaire-droite"
+    ],
+    "veines": [
+     "grande-veine-cardiaque",
+     "veine-cardiaque-moyenne",
+     "veine-inferieure-du-ventricule-gauche",
+     "sinus-coronaire"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus cardiaque : fibres parasympathiques du nerf vague et fibres sympathiques du tronc sympathique",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Choc de la pointe palpé au 5e espace intercostal gauche (déplacé en bas et en dehors si le ventricule est dilaté) ; foyer mitral à la pointe",
+   "clinique": "Infarctus du myocarde ; insuffisance cardiaque ; hypertrophie de la paroi dans l'hypertension et le rétrécissement aortique ; cardiomyopathies",
+   "memo": "Le gauche est le costaud : paroi trois fois plus épaisse, car il pousse contre la pression de tout le corps",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-cavites",
+    "openstax-coeur"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "oesophage",
+   "resume": "Le tube musculaire qui descend les aliments du pharynx à l'estomac, derrière la trachée et le cœur.",
+   "systeme": "digestif",
+   "situation": "Tube d'environ 25 cm, du bord inférieur du cartilage cricoïde (C6) au cardia (T11), dans le cou puis le médiastin ; il traverse le diaphragme par l'hiatus œsophagien, vers T10",
+   "fonction": "Fait progresser le bol alimentaire jusqu'à l'estomac par des ondes de contraction (péristaltisme) ; le sphincter supérieur (cricopharyngien) et le sphincter inférieur (cardia) l'isolent de l'air et du reflux",
+   "parties": [
+    {
+     "nom": "Partie cervicale",
+     "role": "Du cricoïde au défilé du thorax, derrière la trachée, entre les lobes de la thyroïde ; nerfs laryngés récurrents sur les côtés"
+    },
+    {
+     "nom": "Partie thoracique",
+     "role": "Dans le médiastin, derrière la trachée, la bronche gauche et l'atrium gauche, à droite de l'aorte thoracique"
+    },
+    {
+     "nom": "Partie abdominale",
+     "role": "Segment très court (environ 1,25 cm) sous le diaphragme, dans la gouttière du lobe gauche du foie"
+    },
+    {
+     "nom": "Rétrécissements",
+     "role": "Au départ (cricoïde), au croisement de la crosse de l'aorte et de la bronche gauche, et à l'hiatus diaphragmatique : sièges des corps étrangers"
+    }
+   ],
+   "rapports": "Devant : trachée, bronche gauche, atrium gauche, puis lobe gauche du foie ; derrière : colonne, canal thoracique, azygos ; l'aorte thoracique le longe à gauche",
+   "vascularisation": {
+    "texte": "Cervical : artère thyroïdienne inférieure ; thoracique : rameaux œsophagiens de l'aorte thoracique ; abdominal : artères gastrique gauche et phrénique inférieure. Veines vers l'azygos en haut, vers la veine gastrique gauche (système porte) en bas",
+    "arteres": [
+     "artere-thyroidienne-inferieure",
+     "aorte-thoracique",
+     "artere-gastrique-gauche",
+     "artere-phrenique-inferieure"
+    ],
+    "veines": [
+     "veine-azygos",
+     "veine-hemi-azygos",
+     "veine-porte-du-foie"
+    ]
+   },
+   "innervation": {
+    "texte": "Nerfs vagues (plexus œsophagien ; nerf laryngé récurrent pour le haut) et fibres sympathiques ; le tiers supérieur est un muscle strié, le tiers inférieur un muscle lisse",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Inaccessible à la palpation ; fibroscopie œsogastrique, transit baryté, manométrie ; la dysphagie (gêne à avaler) et la douleur rétrosternale guident l'examen",
+   "clinique": "Reflux gastro-œsophagien (brûlures, endobrachyœsophage), achalasie (le sphincter inférieur ne se relâche pas), cancer, hernie hiatale ; varices œsophagiennes dans l'hypertension portale, par l'anastomose entre système porte et azygos",
+   "memo": "De C6 à T11, il perce le diaphragme à T10 : une veine de la porte et une de la cave s'y rencontrent",
+   "variantes": "Le nombre de rétrécissements varie selon les auteurs (trois dans Kenhub)",
+   "sources": [
+    "gray1918",
+    "kenhub-oesophage",
+    "openstax-estomac"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "canal-biliaire",
+   "resume": "Le conduit qui verse la bile du foie dans le duodénum : le canal cholédoque, né de la réunion des conduits hépatique et cystique.",
+   "systeme": "digestif",
+   "situation": "Naît de la réunion du conduit hépatique commun et du canal cystique dans le bord libre du petit omentum, puis descend derrière le duodénum et la tête du pancréas jusqu'à la papille duodénale majeure ; environ 7,5 cm",
+   "fonction": "Conduit la bile vers le duodénum ; avec le canal pancréatique il forme l'ampoule hépato-pancréatique, entourée du sphincter d'Oddi, qui règle l'écoulement",
+   "parties": [
+    {
+     "nom": "Portion supraduodénale",
+     "role": "Dans le bord libre du petit omentum, à droite de l'artère hépatique propre et devant la veine porte"
+    },
+    {
+     "nom": "Portion rétroduodénale puis pancréatique",
+     "role": "Derrière la partie supérieure du duodénum, puis dans une gouttière ou un tunnel de la tête du pancréas"
+    },
+    {
+     "nom": "Portion intramurale (ampoule)",
+     "role": "S'unit au canal pancréatique dans la paroi du duodénum et s'ouvre à la papille duodénale majeure"
+    }
+   ],
+   "rapports": "Dans le petit omentum, à droite et devant la veine porte ; sa traversée de la tête du pancréas explique l'ictère de ses tumeurs",
+   "vascularisation": {
+    "texte": "Artères hépatique propre et gastro-duodénale (rameaux pancréatico-duodénaux) ; veines vers la veine porte",
+    "arteres": [
+     "artere-hepatique-propre",
+     "artere-gastroduodenale"
+    ],
+    "veines": [
+     "veine-porte-du-foie"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus cœliaque : fibres sympathiques ; nerf vague (parasympathique), qui relâche le sphincter d'Oddi",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Échographie et bili-IRM : dilatation des voies biliaires ; CPRE pour voir et traiter les calculs ; bilan sanguin (bilirubine, phosphatases alcalines)",
+   "clinique": "Lithiase du cholédoque : douleur, ictère, fièvre (angiocholite, triade de Charcot) ; cancer de la tête du pancréas qui le comprime (ictère indolore) ; lésion pendant une cholécystectomie",
+   "memo": "Le cholédoque descend derrière le duodénum et traverse la tête du pancréas pour rejoindre le Wirsung",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-vesicule",
+    "openstax-foie"
+   ],
+   "divergences": "La TA2 nomme « canal biliaire » (Ductus biliaris) ce que les cliniciens et Gray appellent le canal cholédoque (environ 7,5 cm)"
+  },
+  {
+   "id": "duodenum",
+   "resume": "Le premier segment de l'intestin grêle : un C autour de la tête du pancréas qui reçoit la bile et le suc pancréatique.",
+   "systeme": "digestif",
+   "situation": "Du pylore à l'angle duodéno-jéjunal (L2), en C autour de la tête du pancréas, contre la paroi postérieure de l'abdomen entre L1 et L3 ; environ 25 cm",
+   "fonction": "Mélange le chyme acide de l'estomac à la bile et au suc pancréatique, qui s'y déversent par la papille duodénale majeure, et neutralise l'acidité ; première étape de la digestion intestinale",
+   "parties": [
+    {
+     "nom": "Partie supérieure (D1, bulbe)",
+     "role": "Environ 5 cm, la plus mobile, en regard de L1 ; les 3 premiers cm sont intrapéritonéaux ; siège habituel des ulcères"
+    },
+    {
+     "nom": "Partie descendante (D2)",
+     "role": "7 à 10 cm, à droite de la colonne (L1-L3) ; la papille duodénale majeure, où s'ouvrent le cholédoque et le canal pancréatique, est sur sa paroi médiale"
+    },
+    {
+     "nom": "Partie horizontale (D3)",
+     "role": "5 à 7 cm, qui croise en avant la veine cave inférieure et l'aorte à L3, derrière les vaisseaux mésentériques supérieurs"
+    },
+    {
+     "nom": "Partie ascendante (D4)",
+     "role": "Environ 2,5 cm, jusqu'à l'angle duodéno-jéjunal, suspendu par le muscle suspenseur du duodénum"
+    }
+   ],
+   "rapports": "La tête du pancréas remplit la concavité du C ; D2 est en avant du rein droit ; D3 est en arrière de l'artère et de la veine mésentériques supérieures",
+   "vascularisation": {
+    "texte": "Avant la papille : artère gastro-duodénale (branche de l'hépatique commune, tronc cœliaque) ; après la papille : artère pancréatico-duodénale inférieure (mésentérique supérieure) ; veines vers la veine porte",
+    "arteres": [
+     "artere-gastroduodenale",
+     "artere-pancreaticoduodenale-inferieure",
+     "tronc-coeliaque",
+     "mesenterique-superieure"
+    ],
+    "veines": [
+     "veine-mesenterique-superieure",
+     "veine-porte-du-foie"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus cœliaque et plexus mésentérique supérieur : fibres sympathiques, et nerf vague (parasympathique)",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Fibroscopie œsogastroduodénale pour le bulbe et la papille ; douleur épigastrique d'ulcère calmée par les repas, puis réveillée plus tard",
+   "clinique": "Ulcère du bulbe, surtout à la face antérieure (perforation) et postérieure (hémorragie par érosion de l'artère gastro-duodénale) ; cancer de la tête du pancréas qui comprime le cholédoque ; compression de D3 entre l'aorte et l'artère mésentérique supérieure",
+   "memo": "Le duodénum est un C : quatre parties, la bile et le suc pancréatique arrivent par le milieu de D2",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-intestin-grele",
+    "openstax-intestins"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "pancreas",
+   "resume": "La glande allongée derrière l'estomac : elle fabrique les enzymes de la digestion et l'insuline.",
+   "systeme": "digestif",
+   "situation": "Rétropéritonéal, à hauteur de L1-L2 derrière l'estomac, de la concavité du duodénum jusqu'au hile de la rate ; 12 à 15 cm, 60 à 100 g",
+   "fonction": "Glande exocrine (suc pancréatique : enzymes et bicarbonate, déversé dans le duodénum) et endocrine (îlots de Langerhans : insuline, glucagon, somatostatine)",
+   "parties": [
+    {
+     "nom": "Tête et processus unciné",
+     "role": "Dans la concavité du duodénum ; le processus unciné passe derrière les vaisseaux mésentériques supérieurs"
+    },
+    {
+     "nom": "Col",
+     "role": "Devant l'origine de la veine porte, là où la mésentérique supérieure et la splénique se rejoignent"
+    },
+    {
+     "nom": "Corps",
+     "role": "Croise la ligne médiane derrière l'estomac, devant l'aorte et l'artère mésentérique supérieure"
+    },
+    {
+     "nom": "Queue",
+     "role": "Seule partie intrapéritonéale : dans le ligament splénorénal, avec les vaisseaux spléniques, jusqu'au hile de la rate"
+    }
+   ],
+   "rapports": "Derrière : veine cave inférieure, aorte, veine rénale gauche ; devant : estomac et mésocôlon transverse ; le cholédoque traverse la tête",
+   "vascularisation": {
+    "texte": "Artère splénique (rameaux pancréatiques), artères pancréatico-duodénales supérieures (gastro-duodénale) et inférieure (mésentérique supérieure) ; veines vers la veine splénique et la mésentérique supérieure",
+    "arteres": [
+     "artere-splenique",
+     "artere-gastroduodenale",
+     "artere-pancreaticoduodenale-inferieure",
+     "mesenterique-superieure"
+    ],
+    "veines": [
+     "veine-splenique",
+     "veine-mesenterique-superieure",
+     "veine-porte-du-foie"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus cœliaque et mésentérique supérieur : fibres sympathiques (douleur transmise) ; nerf vague (parasympathique), qui stimule la sécrétion",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Non palpable normalement ; échographie, scanner ; douleur épigastrique irradiant dans le dos (organe rétropéritonéal)",
+   "clinique": "Pancréatite aiguë (douleur épigastrique en barre irradiant dans le dos, lipase élevée) ; cancer de la tête (ictère sans douleur) ; diabète lors de l'atteinte de la glande ; pseudokyste",
+   "memo": "Tête dans le C du duodénum, col devant la porte, corps derrière l'estomac, queue à la rate",
+   "variantes": "Pancréas annulaire (la tête entoure le duodénum) et pancréas divisum (deux canaux non réunis) sont possibles",
+   "sources": [
+    "gray1918",
+    "tma-pancreas",
+    "openstax-foie"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "petit-omentum",
+   "resume": "Le fin repli du péritoine qui relie le foie à l'estomac et au duodénum ; son bord droit enserre la triade portale.",
+   "systeme": "digestif",
+   "situation": "Entre le foie (fissure du ligament veineux et hile) et la petite courbure de l'estomac ainsi que le début du duodénum ; ligament hépato-gastrique et ligament hépato-duodénal",
+   "fonction": "Suspend l'estomac au foie et conduit les vaisseaux de la petite courbure ; son bord libre droit, ligament hépato-duodénal, porte la triade portale (cholédoque, artère hépatique propre, veine porte) et borde en avant le foramen épiploïque",
+   "rapports": "En arrière, la bourse omentale (arrière-cavité des épiploons), qu'on atteint en le traversant ; son bord libre est en avant du foramen épiploïque",
+   "vascularisation": {
+    "texte": "Artères gastriques droite et gauche (arcade de la petite courbure) ; l'artère hépatique propre et la veine porte cheminent dans son bord droit",
+    "arteres": [
+     "artere-gastrique-gauche",
+     "artere-hepatique-propre"
+    ],
+    "veines": [
+     "veine-porte-du-foie"
+    ]
+   },
+   "clinique": "Manœuvre de Pringle : on comprime le bord libre pour couper l'arrivée de sang au foie lors d'une hémorragie ; une tumeur de l'estomac s'y étend ; la bourse omentale s'ouvre derrière lui",
+   "memo": "Le petit omentum est la corde qui relie le foie à l'estomac, avec la triade portale en main droite",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "openstax-estomac",
+    "tma-foie"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "rate",
+   "resume": "L'organe de l'hypocondre gauche qui filtre le sang, élimine les vieux globules rouges et participe à l'immunité.",
+   "systeme": "lymphatique",
+   "situation": "Hypocondre gauche, contre la coupole diaphragmatique, à l'abri des 9e à 11e côtes ; intrapéritonéal, de la taille d'un poing",
+   "fonction": "Filtre le sang et détruit les globules rouges vieillis (pulpe rouge), abrite les lymphocytes qui répondent aux antigènes du sang (pulpe blanche), et stocke environ un tiers des plaquettes",
+   "parties": [
+    {
+     "nom": "Face diaphragmatique et face viscérale",
+     "role": "La première épouse le diaphragme ; la seconde porte des empreintes gastrique, rénale et colique, autour du hile"
+    },
+    {
+     "nom": "Hile",
+     "role": "Zone par où entrent et sortent l'artère et la veine spléniques ; sans péritoine"
+    },
+    {
+     "nom": "Ligaments gastro-splénique et spléno-rénal",
+     "role": "Le premier la relie à l'estomac, le second au rein gauche ; la queue du pancréas et les vaisseaux spléniques sont dans le second"
+    }
+   ],
+   "rapports": "Contre l'estomac en avant, le rein gauche en arrière, l'angle colique gauche en bas et la queue du pancréas au hile",
+   "vascularisation": {
+    "texte": "Artère splénique, branche du tronc cœliaque, qui se divise en branches terminales sans anastomose ; la veine splénique rejoint la veine mésentérique supérieure pour former la veine porte",
+    "arteres": [
+     "artere-splenique",
+     "tronc-coeliaque"
+    ],
+    "veines": [
+     "veine-splenique",
+     "veine-porte-du-foie"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus cœliaque (plexus splénique le long de l'artère splénique) : fibres sympathiques et parasympathiques",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Normalement non palpable ; une splénomégalie se sent sous le rebord costal gauche, avec une encoche sur le bord antérieur, en inspiration profonde",
+   "clinique": "Rupture après un traumatisme du flanc gauche (souvent avec des côtes cassées) : hémorragie interne ; splénomégalie ; splénectomie, après laquelle le risque d'infection à germes encapsulés exige des vaccins",
+   "memo": "Rate : sous les côtes 9 à 11, à gauche, de la taille d'un poing ; elle trie et recycle le sang",
+   "variantes": "Une rate accessoire est fréquente (dans une minorité de cas) près du hile ; elle a de l'importance en cas de splénectomie",
+   "sources": [
+    "tma-rate",
+    "kenhub-rate",
+    "openstax-lymphe"
+   ],
+   "divergences": "Les côtes protectrices : 9e à 11e (TeachMeAnatomy), 9e à 10e (Kenhub)"
+  },
+  {
+   "id": "segment-posterolateral-droit-vii",
+   "resume": "Le segment VII de Couinaud : le haut du secteur postérieur du lobe droit, sous le diaphragme, le plus difficile à atteindre.",
+   "systeme": "digestif",
+   "situation": "Partie haute et postérieure du lobe droit, à droite de la veine hépatique droite et au-dessus du plan de la bifurcation portale, sous le diaphragme et contre l'aire nue du foie",
+   "fonction": "Territoire du foie nourri par la branche postérieure de la veine porte droite, drainé par la veine hépatique droite ; avec VI, il forme le secteur postérieur droit",
+   "rapports": "Sous le diaphragme et le poumon droit, contre la veine cave inférieure ; au-dessus de VI",
+   "vascularisation": {
+    "texte": "Pédicule propre au centre du segment (branche de la veine porte, branche de l'artère hépatique propre, canal biliaire) ; les veines hépatiques le drainent à sa périphérie",
+    "arteres": [
+     "artere-hepatique-propre"
+    ],
+    "veines": [
+     "veine-porte-du-foie",
+     "veines-hepatiques"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus hépatique : fibres sympathiques (plexus cœliaque) et parasympathiques (nerfs vagues), qui entrent par le hile ; la capsule est sensible par les derniers nerfs intercostaux",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques",
+     "nerfs-intercostaux"
+    ]
+   },
+   "examen": "Échographie par voie intercostale, car le segment est sous le diaphragme",
+   "clinique": "Segment le plus difficile à atteindre en chirurgie et en radiologie interventionnelle ; les tumeurs de ce segment sont proches du diaphragme et de la plèvre",
+   "memo": "VII : le plus profond, en haut et au dos, le plus caché",
+   "variantes": null,
+   "sources": [
+    "radiopaedia-couinaud",
+    "kenhub-foie",
+    "tma-foie",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "vesicule-biliaire",
+   "resume": "La poche en poire sous le foie qui stocke et concentre la bile entre les repas.",
+   "systeme": "digestif",
+   "situation": "Hypocondre droit, dans la fosse vésiculaire de la face inférieure du foie (entre le lobe droit et le lobe carré) ; son fond affleure sous le rebord costal, au niveau du 9e cartilage costal, en dehors du muscle droit de l'abdomen",
+   "fonction": "Stocke et concentre la bile fabriquée en continu par le foie ; l'hormone cholécystokinine la fait se contracter après un repas gras et chasse la bile vers le duodénum",
+   "parties": [
+    {
+     "nom": "Fond",
+     "role": "Extrémité arrondie, qui dépasse le bord inférieur du foie"
+    },
+    {
+     "nom": "Corps",
+     "role": "La plus grande partie, contre le foie, le côlon transverse et le duodénum"
+    },
+    {
+     "nom": "Col et canal cystique",
+     "role": "Le col porte la poche de Hartmann, où les calculs se bloquent ; le canal cystique, avec sa valve spiralée, rejoint le conduit hépatique commun"
+    }
+   ],
+   "rapports": "Au-dessus, le foie (face inférieure) ; en bas, le duodénum et le côlon transverse ; le triangle de Calot, entre le canal cystique, le conduit hépatique commun et le bord du foie, contient l'artère cystique",
+   "vascularisation": {
+    "texte": "Artère cystique, branche de l'artère hépatique droite ; le sang du col rejoint la veine porte, celui du fond et du corps gagne directement les sinusoïdes du foie",
+    "arteres": [
+     "artere-hepatique-propre"
+    ],
+    "veines": [
+     "veine-porte-du-foie"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus cœliaque : fibres sympathiques et sensitives ; nerf vague (parasympathique), qui la fait se contracter",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Signe de Murphy : l'inspiration profonde coupe le souffle quand les doigts pressent sous le rebord costal droit, à la 9e côte ; une vésicule distendue et indolore se palpe",
+   "clinique": "Lithiase biliaire, cholécystite (douleur de l'hypocondre droit, fièvre, signe de Murphy) ; colique hépatique après un repas gras ; cholécystectomie, le plus souvent par cœlioscopie",
+   "memo": "La vésicule est une réserve de bile : elle la garde, la concentre, la libère au repas",
+   "variantes": "Taille et position varient ; un repli ou un cloisonnement du fond (bonnet phrygien) est fréquent",
+   "sources": [
+    "gray1918",
+    "tma-vesicule",
+    "openstax-foie"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "appendice-vermiforme",
+   "resume": "Le petit tube borgne attaché au cæcum, dont l'inflammation est l'appendicite.",
+   "systeme": "digestif",
+   "situation": "Naît de l'extrémité du cæcum, 2 à 3 cm sous la valve iléo-cæcale, dans la fosse iliaque droite, au point où convergent les trois ténias ; environ 8 cm (2 à 20 cm)",
+   "fonction": "Riche en tissu lymphoïde, il participe à l'immunité de l'intestin et pourrait servir de réservoir à la flore intestinale ; il n'est pas indispensable",
+   "parties": [
+    {
+     "nom": "Positions",
+     "role": "Le plus souvent rétro-cæcale, ou pelvienne, sous-cæcale, pré- ou rétro-iléale ; sa position change les signes de l'appendicite"
+    }
+   ],
+   "rapports": "Fosse iliaque droite ; sa pointe peut toucher l'iléon, le cæcum, le pelvis ou remonter sous le foie",
+   "vascularisation": {
+    "texte": "Artère appendiculaire (branche de l'artère iléo-colique), terminale, dans le méso-appendice ; veine vers la mésentérique supérieure",
+    "arteres": [
+     "artere-appendiculaire",
+     "artere-ileocolique"
+    ],
+    "veines": [
+     "veine-mesenterique-superieure"
+    ]
+   },
+   "innervation": {
+    "texte": "Fibres sympathiques et vague, par le plexus mésentérique supérieur : la douleur de départ est ressentie autour de l'ombilic (T10)",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Douleur au point de McBurney (au tiers externe de la ligne qui joint l'épine iliaque antéro-supérieure droite à l'ombilic) ; défense à la palpation ; décompression douloureuse",
+   "clinique": "Appendicite : douleur autour de l'ombilic puis dans la fosse iliaque droite, fièvre, vomissements ; risque de perforation et de péritonite ; appendicectomie",
+   "memo": "Suivre les trois ténias du côlon : elles mènent à l'appendice",
+   "variantes": "La position de l'extrémité varie beaucoup ; un appendice sous-hépatique est possible",
+   "sources": [
+    "gray1918",
+    "kenhub-gros-intestin",
+    "openstax-intestins"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "colon-sigmoide",
+   "resume": "Le côlon en S de la fosse iliaque gauche, suspendu par son mésocôlon ; il mène au rectum.",
+   "systeme": "digestif",
+   "situation": "De la fosse iliaque gauche au rectum (S3), dans le bassin ; en S, de 40 cm en moyenne, intrapéritonéal et suspendu par le mésocôlon sigmoïde",
+   "fonction": "Stocke les selles avant leur expulsion et en absorbe encore l'eau ; son péristaltisme les pousse vers le rectum",
+   "rapports": "L'uretère gauche et les vaisseaux iliaques sont à la racine de son mésocôlon ; au-dessus de la vessie, de l'utérus ou du rectum",
+   "vascularisation": {
+    "texte": "Artères sigmoïdiennes (mésentérique inférieure) ; veine sigmoïdienne vers la veine mésentérique inférieure",
+    "arteres": [
+     "arteres-sigmoides",
+     "artere-mesenterique-inferieure"
+    ],
+    "veines": [
+     "veine-sigmoide",
+     "veine-mesenterique-inferieure"
+    ]
+   },
+   "innervation": {
+    "texte": "Parasympathique : nerfs pelviens (S2-S4) ; sympathique : plexus hypogastrique ; réseau nerveux de la paroi",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Palpation de la fosse iliaque gauche ; toucher rectal ; rectosigmoïdoscopie et coloscopie",
+   "clinique": "Diverticulite (douleur de la fosse iliaque gauche, fièvre), volvulus du sigmoïde (torsion sur son mésocôlon, occlusion), cancer ; l'uretère gauche passe derrière lui",
+   "memo": "Sigmoïde : un S de 40 cm, long de mésocôlon, il se tord : le volvulus",
+   "variantes": "Sa longueur et la longueur de son mésocôlon varient beaucoup ; une anse longue prédispose au volvulus",
+   "sources": [
+    "gray1918",
+    "kenhub-gros-intestin",
+    "openstax-intestins"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "meso-appendice",
+   "resume": "Le petit repli du péritoine qui suspend l'appendice et porte son artère.",
+   "systeme": "digestif",
+   "situation": "Repli péritonéal triangulaire du feuillet gauche du mésentère de l'iléon terminal, qui relie l'appendice vermiforme au cæcum et à l'iléon",
+   "fonction": "Suspend l'appendice et conduit son artère, sa veine, ses lymphatiques et ses nerfs",
+   "rapports": "Il s'insère sur l'iléon terminal et le cæcum ; son bord libre porte l'artère appendiculaire",
+   "vascularisation": {
+    "texte": "Artère appendiculaire (branche de l'artère iléo-colique), qui court dans son bord libre",
+    "arteres": [
+     "artere-appendiculaire",
+     "artere-ileocolique"
+    ],
+    "veines": [
+     "veine-mesenterique-superieure"
+    ]
+   },
+   "clinique": "Dans l'appendicectomie, on ligature le méso-appendice et l'artère appendiculaire avant de couper l'appendice ; l'artère est terminale : sa thrombose cause la gangrène",
+   "memo": "Méso-appendice : le hamac de l'appendice et le chemin de son artère",
+   "variantes": "Il est parfois très court, ce qui fixe l'appendice et change sa position",
+   "sources": [
+    "gray1918",
+    "kenhub-gros-intestin",
+    "openstax-intestins"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "prostate",
+   "resume": "La glande de la taille d'une noix qui entoure le début de l'urètre sous la vessie et fabrique une partie du liquide du sperme.",
+   "systeme": "genital",
+   "situation": "Sous la vessie, autour de l'urètre prostatique (environ 3 cm), derrière la symphyse pubienne et devant le rectum, dans le petit bassin ; dense, de la taille d'une noix",
+   "fonction": "Fabrique le liquide prostatique, laiteux, qui entre dans la composition du sperme : il contient des enzymes et l'antigène spécifique de la prostate (PSA) ; son muscle se contracte lors de l'éjaculation",
+   "parties": [
+    {
+     "nom": "Zone périphérique",
+     "role": "Environ 70 % de la glande, en arrière : siège de la plupart des cancers, accessible au toucher rectal"
+    },
+    {
+     "nom": "Zone centrale",
+     "role": "Environ 25 %, autour des canaux éjaculateurs, à la base"
+    },
+    {
+     "nom": "Zone de transition",
+     "role": "Environ 5 %, autour de l'urètre : siège de l'hypertrophie bénigne"
+    },
+    {
+     "nom": "Stroma fibromusculaire antérieur",
+     "role": "Tissu non glandulaire en avant, qui correspond à l'isthme"
+    }
+   ],
+   "rapports": "Devant : symphyse pubienne et plexus veineux rétropubien ; derrière : rectum, séparé par le fascia de Denonvilliers ; sur les côtés : releveur de l'anus ; en bas : sphincter externe de l'urètre",
+   "vascularisation": {
+    "texte": "Artère vésicale inférieure (principale), artères rectale moyenne et pudendale interne, branches de l'artère iliaque interne ; plexus veineux prostatique vers les veines iliaques internes",
+    "arteres": [
+     "iliaque-interne",
+     "artere-pudendale-interne"
+    ],
+    "veines": [
+     "veine-iliaque-interne"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus prostatique (plexus hypogastrique inférieur) : fibres sympathiques, qui commandent l'éjaculation, et parasympathiques des nerfs pelviens, qui stimulent la sécrétion",
+    "nerfs": [
+     "nerfs-sympathiques"
+    ]
+   },
+   "examen": "Toucher rectal : la face postérieure se sent lisse et élastique, avec un sillon médian ; un nodule dur ou une asymétrie fait suspecter un cancer ; dosage du PSA",
+   "clinique": "Hypertrophie bénigne (zone de transition : jet faible, envies nocturnes fréquentes), cancer (zone périphérique, souvent silencieux, dosage du PSA), prostatite ; les métastases gagnent la colonne lombaire par les veines",
+   "memo": "La noix autour de l'urètre : le cancer à la périphérie (que le doigt sent), l'adénome au centre (qui bouche)",
+   "variantes": null,
+   "sources": [
+    "kenhub-prostate",
+    "statpearls-prostate",
+    "gray1918"
+   ],
+   "divergences": "Artère principale : Kenhub cite l'artère pudendale interne, StatPearls l'artère vésicale inférieure (la plus admise) ; les deux donnent des branches à la glande"
+  },
+  {
+   "id": "bronche-intermediaire",
+   "resume": "Le court tronc de la bronche droite entre le départ de la lobaire supérieure et la naissance de la lobaire moyenne ; il n'existe pas à gauche.",
+   "systeme": "respiratoire",
+   "situation": "Dans le hile droit, juste derrière l'artère pulmonaire droite ; elle continue la bronche principale droite après la bronche lobaire supérieure",
+   "fonction": "Conduit l'air vers les lobes moyen et inférieur droits ; elle se termine à l'origine de la bronche lobaire moyenne, en avant, et se poursuit en bronche lobaire inférieure",
+   "rapports": "L'artère pulmonaire droite la longe en avant et en dehors, les veines pulmonaires sont plus en avant encore ; les ganglions du hile sont à son contact",
+   "vascularisation": {
+    "texte": "Artères bronchiques de l'aorte thoracique ; l'artère pulmonaire droite la longe ; veines vers l'azygos",
+    "arteres": [
+     "aorte-thoracique"
+    ],
+    "veines": [
+     "veine-azygos"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Vue en bronchoscopie souple : on y voit en avant l'orifice de la lobaire moyenne, puis le trajet de la lobaire inférieure",
+   "clinique": "Un cancer ou des ganglions hilaires droits la rétrécissent ; sa compression ou un bouchon touche à la fois le lobe moyen et le lobe inférieur",
+   "memo": "L'intermédiaire : le couloir entre deux portes, celle du lobe moyen (devant) et celle du lobe inférieur (suite)",
+   "variantes": "Sa longueur varie ; à gauche, aucune bronche intermédiaire : la principale se divise directement en deux lobaires",
+   "sources": [
+    "gray1918",
+    "kenhub-segments",
+    "statpearls-segments"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-lingulaire-inferieure-du-poumon-gauche-bv",
+   "resume": "La bronche (BV) du segment lingulaire inférieur, au contact du bord gauche du cœur.",
+   "systeme": "respiratoire",
+   "situation": "Branche inférieure de la bronche lingulaire, dirigée en bas et en avant, contre la pointe du cœur",
+   "fonction": "Ventile le segment lingulaire inférieur (S5), la partie la plus basse de la lingula, contre le cœur et le diaphragme",
+   "rapports": "Elle correspond à la bronche médiale (BV) du lobe moyen droit ; elle naît sous BIV",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-lingulaire-inferieure-du-poumon-gauche"
+    ],
+    "veines": [
+     "veine-lingulaire-inferieure-du-poumon-gauche"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation près de la pointe du cœur ; bronchoscopie : orifice inférieur de la bronche lingulaire",
+   "clinique": "Pneumonie de la lingula : effacement du bord gauche du cœur ; bronchectasies",
+   "memo": "V est au-dessous de IV : sur la lingula, la supérieure puis l'inférieure",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-lingulaire-superieure-du-poumon-gauche-biv",
+   "resume": "La bronche (BIV) du segment lingulaire supérieur : la lingula est l'équivalent du lobe moyen droit.",
+   "systeme": "respiratoire",
+   "situation": "Branche supérieure de la bronche lingulaire, dirigée en avant et en bas, sous l'incisure cardiaque du poumon gauche",
+   "fonction": "Ventile le segment lingulaire supérieur (S4) de la lingula, languette du lobe supérieur gauche qui épouse le cœur, au-dessus du segment inférieur",
+   "rapports": "Elle correspond à la bronche latérale (BIV) du lobe moyen droit ; le poumon gauche n'a pas de lobe moyen, mais une lingula",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-lingulaire-superieure-du-poumon-gauche"
+    ],
+    "veines": [
+     "veine-lingulaire-superieure-du-poumon-gauche"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation en avant, près du bord gauche du sternum et de la pointe du cœur ; bronchoscopie : orifice supérieur de la bronche lingulaire",
+   "clinique": "Une pneumonie de la lingula efface le bord gauche du cœur sur la radiographie de face (signe de la silhouette) ; bronchectasies",
+   "memo": "Pas de lobe moyen à gauche : sa place est tenue par la lingula, avec ses deux bronches IV et V",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-lobaire-inferieure-droite",
+   "resume": "La bronche du lobe inférieur droit : le prolongement de la bronche intermédiaire, qui donne cinq segmentaires.",
+   "systeme": "respiratoire",
+   "situation": "Continue la bronche intermédiaire après la naissance de la bronche lobaire moyenne ; descend en arrière et en bas dans le lobe inférieur droit",
+   "fonction": "Ventile le lobe inférieur droit : elle donne la bronche du segment supérieur (BVI) puis un tronc basal qui se divise en BVII (médiale), BVIII (antérieure), BIX (latérale) et BX (postérieure)",
+   "vascularisation": {
+    "texte": "Artère lobaire inférieure, branche de l'artère pulmonaire droite, et artères bronchiques",
+    "arteres": [
+     "artere-lobaire-inferieure-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-basale-inferieure-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Bronchoscopie : son orifice de la branche du segment supérieur est en arrière, face à celui de la lobaire moyenne",
+   "clinique": "Siège de choix des corps étrangers inhalés et des pneumonies d'inhalation (bases quand on est debout, segment supérieur quand on est couché sur le dos) ; abcès du poumon",
+   "memo": "L'inférieure est la suite de l'intermédiaire : un départ en haut (VI), puis un tronc basal à quatre branches",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-segments",
+    "kenhub-segments"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-lobaire-inferieure-gauche",
+   "resume": "La bronche du lobe inférieur gauche : le prolongement de la bronche principale gauche vers le bas et l'arrière.",
+   "systeme": "respiratoire",
+   "situation": "Continue la bronche principale gauche après la naissance de la lobaire supérieure ; descend en arrière et en bas dans le lobe inférieur gauche",
+   "fonction": "Ventile le lobe inférieur gauche : elle donne la bronche du segment supérieur (BVI) puis un tronc basal (BVII, BVIII, BIX, BX, avec BVII et BVIII souvent réunies)",
+   "vascularisation": {
+    "texte": "Branches de l'artère pulmonaire gauche et artères bronchiques",
+    "arteres": [
+     "artere-pulmonaire-gauche"
+    ],
+    "veines": [
+     "veine-pulmonaire-inferieure-gauche"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Bronchoscopie : on suit la principale gauche jusqu'à sa division, la voie descendante est l'inférieure",
+   "clinique": "Mêmes risques que du côté droit : pneumonie d'inhalation, abcès, collapsus par une tumeur du hile",
+   "memo": "L'inférieure gauche est la suite de la principale : un départ en haut (VI), puis un tronc basal",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-segments",
+    "statpearls-segments"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-lobaire-moyenne",
+   "resume": "La bronche du lobe moyen droit : étroite, longue et entourée de ganglions, elle se bouche facilement.",
+   "systeme": "respiratoire",
+   "situation": "Naît de la face antérieure de la bronche intermédiaire, au niveau du hile droit, et se dirige en avant, en bas et en dehors",
+   "fonction": "Ventile le lobe moyen droit en se divisant en deux bronches segmentaires : latérale (BIV) et médiale (BV)",
+   "rapports": "Entourée de ganglions du hile (bronchopulmonaires), ce qui explique sa vulnérabilité",
+   "vascularisation": {
+    "texte": "Artère lobaire moyenne, branche de l'artère pulmonaire droite, et artères bronchiques",
+    "arteres": [
+     "artere-lobaire-moyenne-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-mediale-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Bronchoscopie : son orifice s'ouvre en avant, juste en face de celui de la bronche du segment supérieur du lobe inférieur",
+   "clinique": "Syndrome du lobe moyen : la compression de cette bronche étroite par des ganglions ou une tumeur provoque un collapsus et des infections à répétition du lobe",
+   "memo": "Moyenne : un seul lobe à nourrir, mais un couloir étroit qui se bouche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-segments",
+    "statpearls-segments"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-lobaire-superieure-droite",
+   "resume": "La bronche du lobe supérieur droit : elle naît très près de la carène, au-dessus de l'artère pulmonaire (bronche épartérielle).",
+   "systeme": "respiratoire",
+   "situation": "Naît de la bronche principale droite à environ 2 cm de la carène, au-dessus de l'artère pulmonaire droite ; monte vers le haut et en dehors",
+   "fonction": "Ventile tout le lobe supérieur droit en se divisant en trois bronches segmentaires : apicale (BI), postérieure (BII) et antérieure (BIII)",
+   "rapports": "Au-dessus de l'artère pulmonaire droite ; l'azygos passe au-dessus de la racine pulmonaire",
+   "vascularisation": {
+    "texte": "Artère lobaire supérieure, branche de l'artère pulmonaire droite, et artères bronchiques de l'aorte thoracique",
+    "arteres": [
+     "arteres-lobaire-superieure-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-superieure-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Bronchoscopie : trois orifices (trifurcation) se voient à son extrémité, apical en haut, postérieur et antérieur en dedans",
+   "clinique": "Cancer du lobe supérieur droit : le collapsus du lobe dessine à la radiographie un S inversé, avec la scissure horizontale tirée vers le haut (signe de Golden) ; tuberculose, surtout aux segments apical et postérieur",
+   "memo": "Épartérielle : sur l'artère. Trois sorties, apicale, postérieure, antérieure, comme les trois branches d'un trèfle",
+   "variantes": "La bronche du lobe supérieur peut naître directement de la trachée (bronche trachéale), variante rare",
+   "sources": [
+    "gray1918",
+    "statpearls-segments",
+    "kenhub-segments"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-lobaire-superieure-gauche",
+   "resume": "La bronche du lobe supérieur gauche : elle se divise en une branche pour le haut du lobe et une branche pour la lingula.",
+   "systeme": "respiratoire",
+   "situation": "Naît de la bronche principale gauche, en avant et en dehors, sous l'artère pulmonaire gauche ; il n'existe pas de bronche épartérielle à gauche",
+   "fonction": "Ventile tout le lobe supérieur gauche en se divisant en une division supérieure (apicopostérieure BI+BII et antérieure BIII) et une division lingulaire (BIV supérieure, BV inférieure)",
+   "rapports": "Sous l'arc de l'artère pulmonaire gauche ; au-dessous de la crosse de l'aorte",
+   "vascularisation": {
+    "texte": "Branches de l'artère pulmonaire gauche et artères bronchiques ; les artères lingulaires nourrissent la lingula",
+    "arteres": [
+     "artere-pulmonaire-gauche",
+     "artere-lingulaire-superieure-du-poumon-gauche",
+     "artere-lingulaire-inferieure-du-poumon-gauche"
+    ],
+    "veines": [
+     "veine-pulmonaire-superieure-gauche"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Bronchoscopie : l'orifice de la lobaire supérieure s'ouvre en avant et en dehors ; la lobaire inférieure prolonge la principale vers le bas",
+   "clinique": "Tumeurs ou ganglions du hile gauche qui la rétrécissent : collapsus du lobe supérieur ; la bronche lingulaire joue le rôle de la bronche lobaire moyenne droite",
+   "memo": "La supérieure gauche fait deux en un : le haut du lobe, et la lingula qui tient lieu de lobe moyen",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-segments",
+    "statpearls-segments"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-principale",
+   "resume": "Chacune des deux branches de la trachée, qui porte l'air jusqu'au hile d'un poumon ; la droite est plus courte et plus verticale.",
+   "systeme": "respiratoire",
+   "situation": "Naît de la carène, derrière le sternum à hauteur de T4-T5, et gagne le hile du poumon vers T5 (droite) ou T6 (gauche), au milieu de la racine pulmonaire",
+   "fonction": "Distribue l'air à tout un poumon : la droite se divise en trois bronches lobaires, la gauche en deux ; elle reste armée de cartilage",
+   "parties": [
+    {
+     "nom": "Bronche principale droite",
+     "role": "Environ 2,5 cm, large et presque dans l'axe de la trachée ; donne la bronche lobaire supérieure à 2 cm de son origine, au-dessus de l'artère pulmonaire, puis la bronche intermédiaire"
+    },
+    {
+     "nom": "Bronche principale gauche",
+     "role": "Environ 5 cm, plus étroite ; passe sous la crosse de l'aorte, devant l'œsophage et l'aorte thoracique, et se divise en deux bronches lobaires sous l'artère pulmonaire"
+    }
+   ],
+   "rapports": "À droite, l'azygos l'enjambe par le haut ; à gauche, la crosse de l'aorte l'enjambe. Au hile, d'avant en arrière : veine pulmonaire, artère, bronche",
+   "vascularisation": {
+    "texte": "Artères bronchiques de l'aorte thoracique ; veines bronchiques vers l'azygos (droite) et l'hémi-azygos accessoire (gauche) ; l'artère pulmonaire gagne le hile avec elle",
+    "arteres": [
+     "aorte-thoracique"
+    ],
+    "veines": [
+     "veine-azygos",
+     "veine-hemi-azygos-accessoire"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Bronchoscopie (carène aiguë, bronches repérées par leurs anneaux) ; auscultation du murmure vésiculaire de part et d'autre du sternum",
+   "clinique": "Les corps étrangers inhalés se logent surtout à droite ; une intubation trop profonde ventile un seul poumon ; la carène élargie trahit des ganglions sous-carinaires ; un cancer proximal bouche la bronche et collabe le poumon",
+   "memo": "Droite : courte, large, verticale (où l'on inhale) ; gauche : longue, étroite, sous la crosse de l'aorte",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-trachee",
+    "kenhub-trachee",
+    "openstax-respiratoire"
+   ],
+   "divergences": "Gray donne 2,5 cm à droite et 5 cm à gauche ; les références modernes ne chiffrent pas toutes ces longueurs"
+  },
+  {
+   "id": "bronche-segmentaire-anterieure-du-poumon-droit-biii",
+   "resume": "La bronche (BIII) du segment antérieur du lobe supérieur droit, tournée vers le devant du thorax.",
+   "systeme": "respiratoire",
+   "situation": "Branche du lobe supérieur droit, dirigée en avant, sous la clavicule, au-dessus de la scissure horizontale",
+   "fonction": "Ventile le segment antérieur du lobe supérieur droit (S3), contre la paroi thoracique antérieure, au-dessus de la scissure horizontale",
+   "rapports": "Elle part en avant, tandis que BI monte et BII va en arrière ; le segment est bordé en bas par la scissure horizontale",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-anterieure-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-anterieure-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation sous la clavicule, de la 2e à la 4e côte ; bronchoscopie : orifice antérieur de la trifurcation",
+   "clinique": "Pneumonie et tumeurs du lobe supérieur : le segment apparaît au-dessus de la scissure horizontale sur la radiographie de face",
+   "memo": "Antérieure : le devant du lobe, sous la clavicule, au-dessus de la scissure horizontale",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-segmentaire-anterieure-du-poumon-gauche-biii",
+   "resume": "La bronche (BIII) du segment antérieur du lobe supérieur gauche.",
+   "systeme": "respiratoire",
+   "situation": "Branche de la division supérieure de la lobaire supérieure gauche, dirigée en avant, au-dessus de la lingula",
+   "fonction": "Ventile le segment antérieur du lobe supérieur gauche (S3), contre la paroi thoracique antérieure sous la clavicule, au-dessus de la lingula",
+   "rapports": "Elle est la seule autre branche de la division supérieure, avec l'apicopostérieure ; la lingula, plus bas, dépend de l'autre division",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-anterieure-du-poumon-gauche"
+    ],
+    "veines": [
+     "veine-anterieure-du-poumon-gauche"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation sous la clavicule gauche, de la 2e à la 4e côte",
+   "clinique": "Pneumonie du lobe supérieur gauche ; tumeur centrale gauche",
+   "memo": "BIII gauche : l'antérieur, au-dessus de la lingula",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-segmentaire-basale-ant-du-poumon-droit-bviii",
+   "resume": "La bronche (BVIII) du segment basal antérieur du lobe inférieur droit.",
+   "systeme": "respiratoire",
+   "situation": "Branche du tronc basal du lobe inférieur droit, dirigée en avant, vers la partie antérieure du diaphragme",
+   "fonction": "Ventile le segment basal antérieur (S8) du lobe inférieur droit, à l'avant du lobe, contre le diaphragme et la paroi latérale",
+   "rapports": "Elle part en avant, entre BVII (médiale) et BIX (latérale)",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-basale-anterieure-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-basale-inferieure-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation en bas et en avant de l'hémithorax droit ; bronchoscopie : orifice antérieur du tronc basal",
+   "clinique": "Pneumonie de la base droite ; l'inhalation en position debout touche surtout les segments basaux",
+   "memo": "VIII : le basal qui regarde devant",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-segmentaire-basale-anterieure-du-poumon-gau-bviii",
+   "resume": "La bronche (BVIII) du segment basal antérieur du lobe inférieur gauche, souvent confondue avec BVII.",
+   "systeme": "respiratoire",
+   "situation": "Branche du tronc basal gauche, dirigée en avant, vers la partie antérieure du diaphragme",
+   "fonction": "Ventile le segment basal antérieur (S8) du lobe inférieur gauche, à l'avant de la base ; à gauche elle forme le plus souvent un seul segment avec BVII",
+   "rapports": "Elle correspond à la BVIII du côté droit ; à gauche, les deux bronches naissent souvent du même tronc",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-basale-anterieure-du-poumon-gauche"
+    ],
+    "veines": [
+     "veine-basale-inferieure-du-poumon-gauche"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation en bas et en avant de l'hémithorax gauche",
+   "clinique": "Pneumonie de la base gauche ; l'inhalation debout touche les segments basaux",
+   "memo": "Le VIII gauche est collé au VII : deux segments, une bronche commune",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": "La TA2 donne BVII et BVIII séparés ; la plupart des références ne gardent à gauche qu'un segment antéromédial basal (S7+8)"
+  },
+  {
+   "id": "bronche-segmentaire-basale-anteromediale-du-poumon-gauche",
+   "resume": "La bronche commune des segments basaux antérieur et médial du lobe inférieur gauche (BVII+BVIII).",
+   "systeme": "respiratoire",
+   "situation": "Branche du tronc basal gauche, dirigée en avant et en dedans, contre le cœur et le diaphragme",
+   "fonction": "Ventile le segment antéromédial basal (S7+8) du lobe inférieur gauche, qui réunit les deux segments que le poumon droit garde séparés",
+   "rapports": "Elle illustre la différence entre poumon droit et poumon gauche : à droite BVII et BVIII sont distincts, à gauche ils ont un tronc commun",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-basale-anterieure-du-poumon-gauche"
+    ],
+    "veines": [
+     "veine-basale-inferieure-du-poumon-gauche"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation en bas et en avant à gauche, près du sternum",
+   "clinique": "Pneumonie de la base gauche, bronchectasies ; collapsus qui efface le bord gauche du cœur en bas",
+   "memo": "À gauche, VII et VIII n'en font qu'un : l'antéromédial basal",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": "Selon les auteurs, le poumon gauche a 8 à 10 segments : en comptant l'antéromédial basal comme un seul segment, il en a 8 ; StatPearls parle de 8 à 9 segments"
+  },
+  {
+   "id": "bronche-segmentaire-basale-laterale-du-poumon-droit-bix",
+   "resume": "La bronche (BIX) du segment basal latéral du lobe inférieur droit, qui regarde le flanc.",
+   "systeme": "respiratoire",
+   "situation": "Branche du tronc basal du lobe inférieur droit, dirigée en dehors, vers la paroi latérale du thorax",
+   "fonction": "Ventile le segment basal latéral (S9) du lobe inférieur droit, sur le flanc, au-dessus du diaphragme",
+   "rapports": "Elle part en dehors, entre BVIII (devant) et BX (derrière)",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-basale-laterale-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-basale-inferieure-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation sur le flanc, le long de la ligne axillaire, en bas ; bronchoscopie : orifice latéral du tronc basal",
+   "clinique": "Pneumonie et épanchements de la base : l'angle costodiaphragmatique latéral est le premier rempli",
+   "memo": "IX : le basal du flanc, au creux de l'aisselle vers le bas",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-segmentaire-basale-laterale-du-poumon-gauche-bix",
+   "resume": "La bronche (BIX) du segment basal latéral du lobe inférieur gauche, qui regarde le flanc.",
+   "systeme": "respiratoire",
+   "situation": "Branche du tronc basal gauche, dirigée en dehors, vers la paroi latérale du thorax",
+   "fonction": "Ventile le segment basal latéral (S9) du lobe inférieur gauche, sur le flanc, au-dessus du diaphragme",
+   "rapports": "Elle part en dehors, entre le tronc antéromédial (devant) et BX (derrière)",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-basale-laterale-du-poumon-gauche"
+    ],
+    "veines": [
+     "veine-basale-inferieure-du-poumon-gauche"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation sur le flanc gauche, en bas",
+   "clinique": "Pneumonie de la base gauche ; épanchements pleuraux remplissant l'angle costodiaphragmatique latéral",
+   "memo": "IX gauche : le basal du flanc, comme à droite",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-segmentaire-basale-mediale-du-poumon-droit-bvii",
+   "resume": "La bronche (BVII) du segment basal médial du lobe inférieur droit, contre le cœur.",
+   "systeme": "respiratoire",
+   "situation": "Branche du tronc basal du lobe inférieur droit, dirigée vers la ligne médiane, près du cœur et de la veine cave inférieure",
+   "fonction": "Ventile le segment basal médial (S7, segment paracardiaque) du lobe inférieur droit, le long du cœur et au-dessus du diaphragme",
+   "rapports": "Elle naît du tronc basal avant les autres bronches basales et se dirige en dedans, vers le cœur",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-basale-mediale-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-basale-inferieure-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation en bas de l'hémithorax droit, près du sternum ; bronchoscopie : orifice médial du tronc basal",
+   "clinique": "Peut être touchée par des pneumonies ou des collapsus qui effacent la partie basse du bord droit du cœur",
+   "memo": "VII : le plus médial de la base, au pied du cœur",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-segmentaire-basale-mediale-du-poumon-gauche-bvii",
+   "resume": "La bronche (BVII) du segment basal médial du lobe inférieur gauche, le plus souvent réunie à BVIII.",
+   "systeme": "respiratoire",
+   "situation": "Branche du tronc basal gauche, dirigée vers la ligne médiane, contre le cœur",
+   "fonction": "Ventile le segment basal médial (S7) du lobe inférieur gauche, contre le cœur et au-dessus du diaphragme ; elle naît le plus souvent avec BVIII d'un tronc commun, le segment anteromédial basal",
+   "rapports": "Elle correspond à la BVII du côté droit, mais à gauche elle fusionne souvent avec la BVIII voisine",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-basale-mediale-du-poumon-gauche"
+    ],
+    "veines": [
+     "veine-basale-inferieure-du-poumon-gauche"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation en bas de l'hémithorax gauche, près du sternum",
+   "clinique": "Pneumonies de la base gauche, bronchectasies de la base",
+   "memo": "Le VII gauche vit à deux : il partage son tronc avec le VIII",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": "La TA2 liste à gauche des segments BVII et BVIII séparés ; Kenhub et la plupart des descriptions les réunissent en un segment antéromédial basal (S7+8)"
+  },
+  {
+   "id": "bronche-segmentaire-basale-posterieure-du-poumon-droit-bx",
+   "resume": "La bronche (BX) du segment basal postérieur du lobe inférieur droit : le plus grand et le plus postérieur.",
+   "systeme": "respiratoire",
+   "situation": "Branche du tronc basal du lobe inférieur droit, dirigée en arrière, vers la gouttière paravertébrale, au-dessus du diaphragme",
+   "fonction": "Ventile le segment basal postérieur (S10), la base du poumon contre la paroi dorsale, où s'accumule le liquide quand on est couché",
+   "rapports": "Elle est la dernière et la plus postérieure des bronches basales, dans la continuité du tronc basal",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-basale-posterieure-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-basale-inferieure-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation en bas du dos, de chaque côté de la colonne ; matité à la percussion dans les épanchements",
+   "clinique": "Pneumonies d'inhalation et abcès quand on est couché ; premier segment à se remplir dans un épanchement pleural abondant",
+   "memo": "X : le dernier, le plus bas et le plus au dos",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-segmentaire-basale-posterieure-du-poumon-gauche-bx",
+   "resume": "La bronche (BX) du segment basal postérieur du lobe inférieur gauche, le plus grand et le plus postérieur.",
+   "systeme": "respiratoire",
+   "situation": "Branche du tronc basal gauche, dirigée en arrière, vers la gouttière paravertébrale, au-dessus du diaphragme",
+   "fonction": "Ventile le segment basal postérieur (S10) du lobe inférieur gauche, contre la paroi dorsale, là où s'accumule le liquide en position couchée",
+   "rapports": "Elle est la dernière et la plus postérieure des bronches basales, comme du côté droit",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-basale-posterieure-du-poumon-gauche"
+    ],
+    "veines": [
+     "veine-basale-inferieure-du-poumon-gauche"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation en bas du dos, à gauche de la colonne ; matité à la percussion dans un épanchement",
+   "clinique": "Pneumonie d'inhalation et abcès en position couchée ; premier segment touché par un épanchement abondant",
+   "memo": "X gauche : le plus postérieur, comme à droite",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-segmentaire-laterale-biv",
+   "resume": "La bronche (BIV) du segment latéral du lobe moyen droit.",
+   "systeme": "respiratoire",
+   "situation": "Branche du lobe moyen droit, tournée vers le côté (l'aisselle), sous la scissure horizontale",
+   "fonction": "Ventile le segment latéral du lobe moyen (S4), contre la paroi latérale du thorax à hauteur des 4e à 6e côtes",
+   "rapports": "Elle est la plus latérale des deux branches du lobe moyen : BV, médiale, est du côté du cœur. À gauche, la même place est tenue par la bronche lingulaire supérieure (BIV)",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-laterale-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-laterale-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation sur la paroi latérale du thorax (ligne axillaire), du 4e au 6e espace ; bronchoscopie : orifice latéral du lobe moyen",
+   "clinique": "Syndrome du lobe moyen (collapsus par compression bronchique) ; sur une radiographie de profil, le lobe moyen collabé dessine un triangle",
+   "memo": "IV latéral, V médial : le quatrième est du côté de l'aisselle, le cinquième du côté du cœur",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-segmentaire-mediale-bv",
+   "resume": "La bronche (BV) du segment médial du lobe moyen droit, au contact du cœur.",
+   "systeme": "respiratoire",
+   "situation": "Branche du lobe moyen droit, tournée vers la ligne médiane, au contact du bord droit du cœur",
+   "fonction": "Ventile le segment médial du lobe moyen (S5), à l'avant, le long du bord droit du cœur",
+   "rapports": "Elle est la plus médiale des deux branches du lobe moyen ; BIV est latérale. À gauche, la même place est tenue par la bronche lingulaire inférieure (BV)",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-mediale-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-mediale-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation près du bord droit du sternum, entre les 4e et 6e côtes ; bronchoscopie : orifice médial du lobe moyen",
+   "clinique": "Une pneumonie de ce segment efface le bord droit du cœur sur la radiographie de face (signe de la silhouette) ; un collapsus du lobe moyen fait de même",
+   "memo": "BV médiale : celle qui frôle le cœur, donc qui efface son bord quand elle est malade",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-segmentaire-posterieure-du-poumon-droit-bii",
+   "resume": "La bronche (BII) du segment postérieur du lobe supérieur droit, tournée vers le dos.",
+   "systeme": "respiratoire",
+   "situation": "Branche du lobe supérieur droit, dirigée en arrière et en dehors vers la face postérieure du poumon, sous le sommet",
+   "fonction": "Ventile le segment postérieur du lobe supérieur droit (S2), contre la paroi thoracique postérieure du haut du dos",
+   "rapports": "Elle se reconnaît par son trajet vers l'arrière, entre l'apicale (qui monte) et l'antérieure (qui va en avant)",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-posterieure-du-poumon-droit"
+    ],
+    "veines": [
+     "veine-posterieure-du-poumon-droit"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation en haut du dos, près de l'épine de la scapula ; bronchoscopie : orifice postérieur de la trifurcation",
+   "clinique": "Pneumonie d'inhalation chez un patient couché sur le dos ; atteinte fréquente dans la tuberculose de réactivation",
+   "memo": "Postérieure : celle du dos, derrière l'épaule",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bronche-segmentaire-superieure-du-poumon-gauche-bvi",
+   "resume": "La bronche (BVI) du segment supérieur du lobe inférieur gauche, qui regarde le dos.",
+   "systeme": "respiratoire",
+   "situation": "Première branche de la bronche lobaire inférieure gauche, naissant en arrière, au-dessus du tronc basal",
+   "fonction": "Ventile le segment supérieur du lobe inférieur gauche (S6), entre l'omoplate et la colonne, au-dessus des bases",
+   "rapports": "Elle part en arrière et en haut, avant le tronc basal, comme son homologue droite",
+   "vascularisation": {
+    "texte": "Artère segmentaire de même nom, branche de l'artère pulmonaire, qui suit la bronche ; la paroi bronchique est irriguée par les artères bronchiques, issues de l'aorte thoracique ; les veines pulmonaires courent dans les plans entre segments",
+    "arteres": [
+     "artere-segmentaire-basale-superieure-du-poumon-gauche"
+    ],
+    "veines": [
+     "veine-basale-superieure-du-poumon-gauche"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus pulmonaire : fibres parasympathiques du nerf vague (qui resserrent les bronches et stimulent les glandes) et fibres sympathiques du tronc sympathique (qui les dilatent)",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Auscultation dans le dos, entre l'omoplate et la colonne ; bronchoscopie : orifice postérieur de l'inférieure gauche",
+   "clinique": "Inhalation et abcès chez le patient couché sur le dos ; atteintes fréquentes en cas de vomissement chez un patient inconscient",
+   "memo": "Segment supérieur du lobe inférieur : celui qui reçoit ce qu'on inhale allongé sur le dos",
+   "variantes": null,
+   "sources": [
+    "kenhub-segments",
+    "statpearls-segments",
+    "tma-poumons"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "muscle-papillaire-anterieur-du-ventricule-droit",
+   "resume": "Le plus gros des muscles papillaires du ventricule droit : il tend les cordages de la valve tricuspide.",
+   "systeme": "circulatoire",
+   "situation": "Naît de la paroi antérieure du ventricule droit ; la trabécule septomarginale (bande modératrice) le relie à la cloison",
+   "fonction": "Se contracte juste avant la systole pour tendre les cordages vers les cuspides antérieure et inférieure et empêcher le prolapsus de la valve tricuspide dans l'atrium",
+   "rapports": "Ses cordages se fixent sur les cuspides antérieure et inférieure (parfois septale) ; la trabécule septomarginale part de sa base",
+   "vascularisation": {
+    "texte": "Artère coronaire droite (branche marginale droite), et rameaux septaux de l'artère interventriculaire antérieure par la trabécule septomarginale",
+    "arteres": [
+     "artere-coronaire-droite",
+     "branche-inferolaterale-droite-de-l-artere-coronaire-droite",
+     "branches-septales-de-l-artere-interventriculaire-anterieure"
+    ],
+    "veines": []
+   },
+   "examen": "Rien de palpable ; une insuffisance tricuspide aiguë s'entend au bord gauche du sternum",
+   "clinique": "Sa rupture est rare (infarctus du ventricule droit, traumatisme) et donne une insuffisance tricuspide aiguë ; la bande modératrice qui l'attache porte la branche droite du faisceau de His",
+   "memo": "L'antérieur, le grand : le seul relié à la cloison par la bande modératrice",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-valves",
+    "openstax-coeur"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "muscle-papillaire-inferieur-du-ventricule-droit",
+   "resume": "Le muscle papillaire du plancher du ventricule droit, parfois fait de deux ou trois têtes.",
+   "systeme": "circulatoire",
+   "situation": "Naît de la paroi inférieure (diaphragmatique) du ventricule droit",
+   "fonction": "Tend ses cordages vers les cuspides inférieure et septale de la valve tricuspide pendant la systole, pour garder la valve fermée",
+   "rapports": "Ses cordages se fixent sur les cuspides inférieure et septale",
+   "vascularisation": {
+    "texte": "Artère coronaire droite (branche interventriculaire postérieure et rameaux marginaux)",
+    "arteres": [
+     "artere-coronaire-droite"
+    ],
+    "veines": []
+   },
+   "clinique": "L'infarctus inférieur, par occlusion de la coronaire droite, peut dérégler ce pilier et créer une insuffisance tricuspide ; rupture exceptionnelle",
+   "memo": "Inférieur : c'est le pilier du plancher, nourri par la coronaire droite",
+   "variantes": "Il est souvent divisé en deux ou trois têtes",
+   "sources": [
+    "gray1918",
+    "kenhub-valves",
+    "openstax-coeur"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "muscle-papillaire-inferieur-du-ventricule-gauche",
+   "resume": "Le pilier postérieur du ventricule gauche : il retient la valve mitrale, et il se rompt parfois après un infarctus.",
+   "systeme": "circulatoire",
+   "situation": "Naît de la paroi inférieure et postérieure du ventricule gauche (muscle papillaire postéromédial) ; son pendant antérolatéral est le muscle papillaire supérieur",
+   "fonction": "Tend ses cordages vers les moitiés voisines des deux cuspides mitrales pendant la systole, pour empêcher la valve de basculer dans l'atrium gauche",
+   "rapports": "Ses cordages se fixent sur les deux cuspides mitrales, antérieure et postérieure",
+   "vascularisation": {
+    "texte": "Une seule source dans la plupart des cœurs : la branche interventriculaire postérieure de la coronaire droite (ou la circonflexe si elle domine) ; le muscle antérolatéral a une double source",
+    "arteres": [
+     "artere-coronaire-droite",
+     "artere-circonflexe-du-coeur"
+    ],
+    "veines": []
+   },
+   "clinique": "Après un infarctus inférieur, rupture du pilier vers le 2e-7e jour : insuffisance mitrale aiguë, œdème pulmonaire et choc, urgence chirurgicale ; le pilier antérolatéral, à double irrigation, se rompt plus rarement",
+   "memo": "Un pilier, une artère : le postéromédial n'a qu'une source, donc il lâche le premier",
+   "variantes": null,
+   "sources": [
+    "wikipedia-papillaires",
+    "kenhub-valves",
+    "openstax-coeur"
+   ],
+   "divergences": "Le délai de rupture (2e au 7e jour) vient de la clinique et n'est pas détaillé par les pages consultées ; Wikipedia confirme l'irrigation unique et la plus grande fréquence d'atteinte du pilier postéromédial"
+  },
+  {
+   "id": "muscle-papillaire-septal-du-ventricule-droit",
+   "resume": "Le petit muscle papillaire de la cloison, dans le cône de sortie du ventricule droit (muscle de Lancisi).",
+   "systeme": "circulatoire",
+   "situation": "Naît du côté droit de la cloison interventriculaire, près de la crête supraventriculaire",
+   "fonction": "Tend ses cordages vers les cuspides antérieure et septale de la valve tricuspide pour les retenir pendant la systole",
+   "rapports": "Ses cordages se fixent sur les cuspides antérieure et septale ; ses attaches avoisinent la partie membraneuse de la cloison",
+   "vascularisation": {
+    "texte": "Rameaux septaux de l'artère interventriculaire antérieure (artère coronaire gauche)",
+    "arteres": [
+     "branches-septales-de-l-artere-interventriculaire-anterieure",
+     "artere-interventriculaire-anterieure"
+    ],
+    "veines": []
+   },
+   "clinique": "Repère du chirurgien pour la fermeture des communications interventriculaires : il guide vers le faisceau de His, qu'il faut éviter de blesser",
+   "memo": "Le septal, le petit : attaché à la cloison, nourri par l'interventriculaire antérieure",
+   "variantes": "Souvent très petit, parfois fait de plusieurs minuscules mamelons",
+   "sources": [
+    "gray1918",
+    "kenhub-valves",
+    "openstax-coeur"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "segment-posterolateral-gauche-du-foie-ii",
+   "resume": "Le segment II de Couinaud : le haut du lobe gauche, à gauche de la veine hépatique gauche, au-dessus du plan de la bifurcation portale.",
+   "systeme": "digestif",
+   "situation": "Partie supérieure et postérieure du secteur latéral gauche, à gauche de la veine hépatique gauche et au-dessus du plan horizontal de la bifurcation portale ; il touche l'œsophage abdominal et l'estomac",
+   "fonction": "Territoire autonome, avec sa branche portale et artérielle propres, drainé par la veine hépatique gauche ; avec le segment III, il forme le secteur latéral gauche, que l'on peut enlever ou greffer seul",
+   "rapports": "Son extrémité gauche est fixée au diaphragme par le ligament triangulaire gauche ; l'œsophage abdominal est dans une gouttière du lobe gauche",
+   "vascularisation": {
+    "texte": "Pédicule propre au centre du segment (branche de la veine porte, branche de l'artère hépatique propre, canal biliaire) ; les veines hépatiques le drainent à sa périphérie",
+    "arteres": [
+     "artere-hepatique-propre"
+    ],
+    "veines": [
+     "veine-porte-du-foie",
+     "veines-hepatiques"
+    ]
+   },
+   "innervation": {
+    "texte": "Plexus hépatique : fibres sympathiques (plexus cœliaque) et parasympathiques (nerfs vagues), qui entrent par le hile ; la capsule est sensible par les derniers nerfs intercostaux",
+    "nerfs": [
+     "nerf-vague-x",
+     "nerfs-sympathiques",
+     "nerfs-intercostaux"
+    ]
+   },
+   "examen": "Non accessible ; l'échographie voit le lobe gauche sous la peau de l'épigastre",
+   "clinique": "Secteur II-III : sectionectomie latérale gauche et greffe d'un foie réduit à un enfant ; tumeur voisine de l'œsophage ou de l'estomac",
+   "memo": "II : en haut à gauche ; le III est juste en dessous, en avant",
+   "variantes": null,
+   "sources": [
+    "radiopaedia-couinaud",
+    "kenhub-foie",
+    "tma-foie",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "trachee",
+   "resume": "Le tube à anneaux de cartilage qui conduit l'air du larynx aux deux bronches principales.",
+   "systeme": "respiratoire",
+   "situation": "Du bord inférieur du cartilage cricoïde (C6) à la carène, vers T4-T5 (angle sternal) ; elle descend devant l'œsophage, dans la ligne médiane",
+   "fonction": "Conduit l'air jusqu'aux bronches ; ses 16 à 20 anneaux de cartilage en C la gardent ouverte et son muscle postérieur (trachéal) se resserre pour la toux ; l'épithélium cilié remonte le mucus vers le larynx",
+   "parties": [
+    {
+     "nom": "Partie cervicale",
+     "role": "Environ 2 à 4 cm au cou : isthme de la thyroïde devant les anneaux 2 à 4, œsophage derrière, lobes thyroïdiens et nerfs laryngés récurrents sur les côtés"
+    },
+    {
+     "nom": "Partie thoracique",
+     "role": "Dans le médiastin supérieur : crosse de l'aorte et tronc brachio-céphalique devant, nerf vague à droite, œsophage derrière"
+    },
+    {
+     "nom": "Carène",
+     "role": "Crête cartilagineuse de la bifurcation ; son attouchement déclenche une toux violente"
+    }
+   ],
+   "rapports": "Derrière : l'œsophage ; devant : isthme de la thyroïde, puis manubrium, veine brachio-céphalique gauche, tronc brachio-céphalique et crosse de l'aorte ; à droite : veine cave supérieure, veine azygos et plèvre",
+   "vascularisation": {
+    "texte": "Partie cervicale : artères thyroïdiennes inférieures ; partie thoracique : artères bronchiques de l'aorte thoracique ; veines vers le plexus thyroïdien inférieur, les veines brachio-céphaliques et l'azygos",
+    "arteres": [
+     "artere-thyroidienne-inferieure",
+     "aorte-thoracique"
+    ],
+    "veines": [
+     "veine-brachiocephalique",
+     "veine-azygos"
+    ]
+   },
+   "innervation": {
+    "texte": "Nerfs laryngés récurrents (nerf vague) pour les glandes et le muscle trachéal ; fibres sympathiques des ganglions cervicaux et thoraciques supérieurs, qui relâchent le muscle",
+    "nerfs": [
+     "nerf-vague-x",
+     "tronc-sympathique"
+    ]
+   },
+   "examen": "Palpée à l'incisure jugulaire : sa déviation à un côté trahit un pneumothorax sous tension ou une masse du médiastin ; auscultée au cou (souffle trachéal) et explorée par bronchoscopie",
+   "clinique": "Intubation et trachéotomie (vers les 2e-3e anneaux, en écartant ou en coupant l'isthme de la thyroïde) ; sténose ou trachéomalacie ; compression par un goitre plongeant ; une intubation trop profonde entre dans la bronche principale droite",
+   "memo": "Un tuyau de 10 à 12 cm, de C6 à T4-T5, tenu ouvert par des C de cartilage dont l'ouverture regarde l'œsophage",
+   "variantes": "La bifurcation varie de T4 à T7 selon l'âge, la taille et la respiration ; chez l'enfant la trachée est plus courte (5 à 6 cm chez le nourrisson)",
+   "sources": [
+    "gray1918",
+    "kenhub-trachee",
+    "statpearls-trachee",
+    "openstax-respiratoire"
+   ],
+   "divergences": "La longueur varie selon les sources : environ 11 cm (Gray), 9 à 15 cm (Kenhub), 10 à 13 cm (StatPearls). Gray la fait finir à T5 ; les références récentes disent T4-T5"
+  },
+  {
+   "id": "valvule-coronaire-aortique-droite",
+   "resume": "La valvule de la valve aortique dont le sinus donne naissance à l'artère coronaire droite ; c'est la plus antérieure.",
+   "systeme": "circulatoire",
+   "situation": "À la racine de l'aorte, en avant et à droite, face à l'infundibulum pulmonaire ; son sinus de Valsalva porte l'orifice de la coronaire droite",
+   "fonction": "S'applique contre les deux autres valvules à la diastole pour fermer l'aorte ; dans son sinus naît l'artère coronaire droite, qui se remplit pendant la diastole",
+   "vascularisation": {
+    "texte": "Valvule presque sans vaisseaux ; l'artère coronaire droite naît de son sinus",
+    "arteres": [
+     "artere-coronaire-droite",
+     "aorte-ascendante"
+    ],
+    "veines": []
+   },
+   "examen": "Foyer aortique : 2e espace intercostal droit, au bord du sternum ; l'insuffisance s'entend mieux penché en avant, en fin d'expiration",
+   "clinique": "Rétrécissement aortique calcifié (angine de poitrine, syncope, essoufflement ; souffle systolique irradié vers les carotides) ; insuffisance aortique ; valve bicuspide, par fusion fréquente des valvules droite et gauche",
+   "memo": "La droite regarde la coronaire droite : le nom dit où naît l'artère",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-valves",
+    "tma-valves"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "valvule-coronaire-aortique-gauche",
+   "resume": "La valvule de la valve aortique dont le sinus donne naissance à l'artère coronaire gauche.",
+   "systeme": "circulatoire",
+   "situation": "À la racine de l'aorte, en arrière et à gauche ; son sinus porte l'orifice du tronc de la coronaire gauche, qui se divise vite en interventriculaire antérieure et circonflexe",
+   "fonction": "Ferme l'aorte à la diastole avec ses deux voisines ; dans son sinus naît la coronaire gauche, qui irrigue la majeure partie du ventricule gauche",
+   "rapports": "Sa base est en continuité fibreuse avec la cuspide antérieure mitrale (continuité aorto-mitrale), ce qui explique qu'une endocardite passe d'une valve à l'autre",
+   "vascularisation": {
+    "texte": "Valvule presque sans vaisseaux ; l'artère coronaire gauche naît de son sinus",
+    "arteres": [
+     "artere-coronaire-gauche",
+     "aorte-ascendante"
+    ],
+    "veines": []
+   },
+   "examen": "Foyer aortique : 2e espace intercostal droit, au bord du sternum",
+   "clinique": "Calcification dans le rétrécissement aortique ; un obstacle posé trop près de l'orifice coronaire gauche (valve percutanée) peut gêner l'irrigation du cœur ; endocardite, avec abcès de la racine aortique",
+   "memo": "La gauche regarde la coronaire gauche, qui donne l'artère interventriculaire antérieure",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-valves",
+    "tma-valves"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "valvule-non-coronaire-de-la-valve-aortique",
+   "resume": "La valvule de la valve aortique dont le sinus ne donne aucune artère : la valvule postérieure.",
+   "systeme": "circulatoire",
+   "situation": "À la racine de l'aorte, en arrière, contre la cloison interatriale, entre l'atrium droit et l'atrium gauche",
+   "fonction": "Ferme l'aorte à la diastole avec les valvules droite et gauche ; son sinus n'abrite aucun orifice coronaire",
+   "vascularisation": {
+    "texte": "Valvule presque sans vaisseaux ; son sinus ne reçoit pas d'artère coronaire",
+    "arteres": [
+     "aorte-ascendante"
+    ],
+    "veines": []
+   },
+   "examen": "Foyer aortique : 2e espace intercostal droit, au bord du sternum ; souffle systolique éjectionnel du rétrécissement, irradiant vers le cou",
+   "clinique": "Siège fréquent d'un abcès de la racine aortique dans l'endocardite, qui peut atteindre le tissu de conduction voisin et provoquer un bloc atrioventriculaire ; calcifications du rétrécissement aortique",
+   "memo": "La non-coronaire n'a pas d'artère : elle est postérieure, contre les atriums",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-valves",
+    "tma-valves"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "valvule-semilunaire-anterieure-de-la-valve-pulmonaire",
+   "resume": "La valvule de la valve pulmonaire tournée vers l'avant, la seule du côté du sternum.",
+   "systeme": "circulatoire",
+   "situation": "À l'orifice du tronc pulmonaire, au sommet du cône artériel du ventricule droit, derrière le 3e cartilage costal gauche",
+   "fonction": "S'applique contre les valvules droite et gauche à la diastole pour empêcher le sang du tronc pulmonaire de refluer dans le ventricule droit ; sans cordages ni muscle papillaire",
+   "vascularisation": {
+    "texte": "Valvule presque sans vaisseaux, nourrie par le sang des cavités ; aucune artère coronaire ne naît des sinus pulmonaires",
+    "arteres": [],
+    "veines": []
+   },
+   "examen": "Foyer pulmonaire : 2e espace intercostal gauche, au bord du sternum ; souffle systolique éjectionnel dans la sténose",
+   "clinique": "Sténose pulmonaire, le plus souvent congénitale (souffle systolique, ventricule droit hypertrophié), traitée par dilatation au ballon ; tétralogie de Fallot ; insuffisance pulmonaire, rare",
+   "memo": "Pulmonaire : une valvule en avant, une à droite, une à gauche ; aucune coronaire n'y naît",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-valves",
+    "tma-valves"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "valvule-semilunaire-droite-de-la-valve-pulmonaire",
+   "resume": "La valvule de la valve pulmonaire située à droite et en arrière, dos au sinus qui porte son nom.",
+   "systeme": "circulatoire",
+   "situation": "À l'orifice du tronc pulmonaire, en arrière et à droite de la valvule antérieure",
+   "fonction": "S'applique contre les deux autres valvules à la diastole pour empêcher le reflux du tronc pulmonaire vers le ventricule droit ; sa fermeture produit la composante pulmonaire du deuxième bruit du cœur",
+   "vascularisation": {
+    "texte": "Valvule presque sans vaisseaux, nourrie par le sang des cavités",
+    "arteres": [],
+    "veines": []
+   },
+   "examen": "Foyer pulmonaire : 2e espace intercostal gauche, au bord du sternum",
+   "clinique": "Sténose valvulaire pulmonaire, dédoublement du deuxième bruit à l'inspiration (normal) ; atteinte rare au cours de l'endocardite ou du syndrome carcinoïde",
+   "memo": "Trois poches : une en avant, deux en arrière ; la droite est l'une des deux postérieures",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-valves",
+    "tma-valves"
+   ],
+   "divergences": "La TA2 dit « droite » et « gauche » ; Kenhub parle de cuspides droite, gauche et antérieure non adjacente : les noms décrivent la même disposition"
+  },
+  {
+   "id": "valvule-semilunaire-gauche-de-la-valve-pulmonaire",
+   "resume": "La valvule de la valve pulmonaire située à gauche, la plus éloignée de l'aorte.",
+   "systeme": "circulatoire",
+   "situation": "À l'orifice du tronc pulmonaire, en arrière et à gauche de la valvule antérieure",
+   "fonction": "S'applique contre les valvules droite et antérieure à la diastole pour empêcher le reflux du tronc pulmonaire ; sa fermeture contribue au deuxième bruit du cœur",
+   "vascularisation": {
+    "texte": "Valvule presque sans vaisseaux, nourrie par le sang des cavités",
+    "arteres": [],
+    "veines": []
+   },
+   "examen": "Foyer pulmonaire : 2e espace intercostal gauche, au bord du sternum",
+   "clinique": "Sténose valvulaire pulmonaire, souvent congénitale ; la dilatation du tronc pulmonaire (hypertension pulmonaire) distend l'anneau et fait fuir la valve",
+   "memo": "La gauche est la deuxième des deux valvules postérieures ; la troisième est à l'avant",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-valves",
+    "tma-valves"
+   ],
+   "divergences": null
+  }
+ ]
+}
