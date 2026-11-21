@@ -1,0 +1,996 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral sur Internet Archive (articulations p. 287-305, mandibule p. 297-299 ; larynx p. 1076-1079 ; pavillon p. 1035)",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "wikipedia-alaires": {
+   "titre": "Wikipédia (anglais), Alar ligaments",
+   "url": "https://en.wikipedia.org/wiki/Alar_ligaments"
+  },
+  "wikipedia-cruciforme": {
+   "titre": "Wikipédia (anglais), Cruciate ligament of atlas",
+   "url": "https://en.wikipedia.org/wiki/Cruciate_ligament_of_atlas"
+  },
+  "wikipedia-apical": {
+   "titre": "Wikipédia (anglais), Apical ligament of dens",
+   "url": "https://en.wikipedia.org/wiki/Apical_ligament_of_dens"
+  },
+  "wikipedia-atlanto-axial": {
+   "titre": "Wikipédia (anglais), Atlanto-axial joint",
+   "url": "https://en.wikipedia.org/wiki/Atlanto-axial_joint"
+  },
+  "wikipedia-atlanto-occipital": {
+   "titre": "Wikipédia (anglais), Atlanto-occipital joint",
+   "url": "https://en.wikipedia.org/wiki/Atlanto-occipital_joint"
+  },
+  "kenhub-atlanto-axial": {
+   "titre": "Kenhub, Atlantoaxial joint",
+   "url": "https://www.kenhub.com/en/library/anatomy/atlantoaxial-joint"
+  },
+  "kenhub-atlanto-occipital": {
+   "titre": "Kenhub, Atlanto-occipital joint",
+   "url": "https://www.kenhub.com/en/library/anatomy/atlanto-occipital-joint"
+  },
+  "wikipedia-auriculaire-superieur": {
+   "titre": "Wikipédia (anglais), Superior auricular ligament",
+   "url": "https://en.wikipedia.org/wiki/Superior_auricular_ligament"
+  },
+  "wikipedia-auriculaire-posterieur": {
+   "titre": "Wikipédia (anglais), Posterior auricular ligament",
+   "url": "https://en.wikipedia.org/wiki/Posterior_auricular_ligament"
+  },
+  "wikipedia-auriculaire-anterieur": {
+   "titre": "Wikipédia (anglais), Anterior auricular ligament",
+   "url": "https://en.wikipedia.org/wiki/Anterior_auricular_ligament"
+  },
+  "wikipedia-auricule": {
+   "titre": "Wikipédia (anglais), Auricle (anatomy)",
+   "url": "https://en.wikipedia.org/wiki/Auricle_(anatomy)"
+  },
+  "wikipedia-atm": {
+   "titre": "Wikipédia (anglais), Temporomandibular joint",
+   "url": "https://en.wikipedia.org/wiki/Temporomandibular_joint"
+  },
+  "wikipedia-fr-atm": {
+   "titre": "Wikipédia (français), Articulation temporo-mandibulaire",
+   "url": "https://fr.wikipedia.org/wiki/Articulation_temporo-mandibulaire"
+  },
+  "wikipedia-crico-arytenoidien": {
+   "titre": "Wikipédia (anglais), Cricoarytenoid ligament",
+   "url": "https://en.wikipedia.org/wiki/Cricoarytenoid_ligament"
+  },
+  "wikipedia-cricotracheal": {
+   "titre": "Wikipédia (anglais), Cricotracheal ligament",
+   "url": "https://en.wikipedia.org/wiki/Cricotracheal_ligament"
+  },
+  "kenhub-larynx": {
+   "titre": "Kenhub, Larynx",
+   "url": "https://www.kenhub.com/en/library/anatomy/larynx"
+  },
+  "imaios-ceratocricoide": {
+   "titre": "IMAIOS e-Anatomy, Ceratocricoid ligament",
+   "url": "https://www.imaios.cn/en/e-anatomy/anatomical-structures/ceratocricoid-ligament-1159840"
+  },
+  "elsevier-capsule-cricothyroidienne": {
+   "titre": "Elsevier Anatomy, Capsule of cricothyroid joint",
+   "url": "https://www.elsevier.com/resources/anatomy/respiratory-system/upper-respiratory-system/capsule-of-cricothyroid-joint/19590"
+  },
+  "wikipedia-hyo-epiglottique": {
+   "titre": "Wikipédia (anglais), Hyoepiglottic ligament",
+   "url": "https://en.wikipedia.org/wiki/Hyoepiglottic_ligament"
+  },
+  "wikipedia-thyro-epiglottique": {
+   "titre": "Wikipédia (anglais), Thyroepiglottic ligament",
+   "url": "https://en.wikipedia.org/wiki/Thyroepiglottic_ligament"
+  },
+  "wikipedia-vestibulaire": {
+   "titre": "Wikipédia (anglais), Vestibular ligament",
+   "url": "https://en.wikipedia.org/wiki/Vestibular_ligament"
+  },
+  "wikipedia-conus-elasticus": {
+   "titre": "Wikipédia (anglais), Conus elasticus",
+   "url": "https://en.wikipedia.org/wiki/Conus_elasticus"
+  },
+  "wikipedia-pli-vocal": {
+   "titre": "Wikipédia (anglais), Vocal cords (Vocal fold)",
+   "url": "https://en.wikipedia.org/wiki/Vocal_fold"
+  },
+  "wikipedia-articulation-cricothyroidienne": {
+   "titre": "Wikipédia (anglais), Cricothyroid joint",
+   "url": "https://en.wikipedia.org/wiki/Cricothyroid_joint"
+  },
+  "wikipedia-costotransversaire": {
+   "titre": "Wikipédia (anglais), Costotransverse joint",
+   "url": "https://en.wikipedia.org/wiki/Costotransverse_joint"
+  },
+  "wikipedia-costotransversaire-superieur": {
+   "titre": "Wikipédia (anglais), Superior costotransverse ligament",
+   "url": "https://en.wikipedia.org/wiki/Superior_costotransverse_ligament"
+  },
+  "kenhub-sternochondral": {
+   "titre": "Kenhub, Sternocostal (sternochondral) joints",
+   "url": "https://www.kenhub.com/en/library/anatomy/sternocostal-joints"
+  },
+  "wikipedia-sternocostal": {
+   "titre": "Wikipédia (anglais), Sternocostal joints",
+   "url": "https://en.wikipedia.org/wiki/Sternocostal_joints"
+  },
+  "wikipedia-radie": {
+   "titre": "Wikipédia (anglais), Radiate sternocostal ligaments",
+   "url": "https://en.wikipedia.org/wiki/Radiate_sternocostal_ligaments"
+  },
+  "wikipedia-costoxiphoide": {
+   "titre": "Wikipédia (anglais), Costoxiphoid ligaments",
+   "url": "https://en.wikipedia.org/wiki/Costoxiphoid_ligaments"
+  },
+  "wikipedia-interchondral": {
+   "titre": "Wikipédia (anglais), Interchondral joints",
+   "url": "https://en.wikipedia.org/wiki/Interchondral_joints"
+  },
+  "wikipedia-lombocostal": {
+   "titre": "Wikipédia (anglais), Lumbocostal ligament",
+   "url": "https://en.wikipedia.org/wiki/Lumbocostal_ligament"
+  },
+  "wikipedia-disque": {
+   "titre": "Wikipédia (anglais), Intervertebral disc",
+   "url": "https://en.wikipedia.org/wiki/Intervertebral_disc"
+  },
+  "wikipedia-hernie-discale": {
+   "titre": "Wikipédia (anglais), Spinal disc herniation",
+   "url": "https://en.wikipedia.org/wiki/Spinal_disc_herniation"
+  }
+ },
+ "fiches": [
+  {
+   "id": "ligament-apical-de-la-dent",
+   "resume": "Le mince cordon médian entre le sommet de la dent de l'axis et le bord du foramen magnum : un reste de la corde dorsale.",
+   "nature": "ligament",
+   "articulation": "Articulation atlanto-axiale médiane (charnière cranio-cervicale)",
+   "attaches": [
+    {
+     "texte": "Sommet de la dent de l'axis",
+     "os": [
+      "axis"
+     ]
+    },
+    {
+     "texte": "Bord antérieur du foramen magnum, au niveau du basion",
+     "os": [
+      "occipital"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Rôle mécanique discuté : il paraît surtout être un vestige. Il se place dans le triangle entre les ligaments alaires, devant la bande supérieure du ligament cruciforme",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sans rôle mécanique établi, son atteinte isolée ne se traduit par aucun signe. Il intéresse surtout l'embryologie : des traces de la corde dorsale peuvent y persister",
+   "memo": "Le dernier fil de la corde dorsale, tendu entre le sommet de la dent et le crâne",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-apical",
+    "kenhub-atlanto-axial"
+   ],
+   "divergences": "Gray le décrit comme un disque intervertébral rudimentaire ; Kenhub le dit vestige de la corde dorsale au rôle biomécanique discuté"
+  },
+  {
+   "id": "ligament-atlanto-occipital-lateral",
+   "resume": "Le court renfort latéral de la capsule atlanto-occipitale, entre le processus jugulaire de l'occipital et l'atlas.",
+   "nature": "ligament",
+   "articulation": "Articulation atlanto-occipitale",
+   "attaches": [
+    {
+     "texte": "Processus jugulaire de l'os occipital",
+     "os": [
+      "occipital"
+     ]
+    },
+    {
+     "texte": "Base du processus transverse de l'atlas",
+     "os": [
+      "atlas"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Épaissit la capsule de l'articulation atlanto-occipitale sur son côté externe et contribue à la stabiliser",
+   "tendu": null,
+   "test": null,
+   "clinique": "La luxation atlanto-occipitale, rare, survient lors de traumatismes violents (accident de la route) et déchire les moyens d'union de la charnière ; elle se confirme au scanner ou à l'IRM",
+   "memo": "Le petit haubanage externe du « oui » : l'occipital tenu à l'atlas par le côté",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-atlanto-occipital",
+    "wikipedia-atlanto-occipital"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-atlantodental-anterieur",
+   "resume": "Le court faisceau situé devant la dent de l'axis, entre l'arc antérieur de l'atlas et l'axis.",
+   "nature": "ligament",
+   "articulation": "Articulation atlanto-axiale médiane",
+   "attaches": [
+    {
+     "texte": "Bord inférieur de l'arc antérieur de l'atlas",
+     "os": [
+      "atlas"
+     ]
+    },
+    {
+     "texte": "Face antérieure de l'axis, vers la dent et la partie haute du corps",
+     "os": [
+      "axis"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce l'avant de l'articulation atlanto-axiale et prolonge vers le haut le ligament longitudinal antérieur",
+   "tendu": "En extension de la tête sur le cou",
+   "test": null,
+   "clinique": "Une distance atlanto-dentale élargie (plus de 3 mm chez l'adulte) signe l'atteinte du ligament transverse, non de ce faisceau ; il est avant tout un renfort passif en avant de la dent",
+   "memo": "Le ruban placé devant la dent : le prolongement du ligament longitudinal antérieur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-atlanto-axial",
+    "wikipedia-atlanto-axial"
+   ],
+   "divergences": "Gray et Kenhub décrivent un ligament atlanto-axial antérieur qui descend sur le corps de l'axis, non sur la dent seule ; la fiche reprend cette insertion large. Le terme « atlantodental » lui-même n'est pas employé par ces références"
+  },
+  {
+   "id": "ligament-auriculaire-anterieur",
+   "resume": "Le ruban qui retient le pavillon de l'oreille en avant, entre l'hélix, le tragus et la racine de l'arc zygomatique.",
+   "nature": "ligament",
+   "articulation": "Pavillon de l'oreille et crâne",
+   "attaches": [
+    {
+     "texte": "Tragus et épine de l'hélix du pavillon",
+     "os": []
+    },
+    {
+     "texte": "Racine du processus zygomatique de l'os temporal",
+     "os": [
+      "temporal"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Fixe le pavillon de l'oreille au côté de la tête, en avant",
+   "tendu": null,
+   "test": null,
+   "clinique": "Le pavillon étant un cartilage élastique mal vascularisé, un hématome sous le périchondre après un choc peut le déformer en oreille en chou-fleur",
+   "memo": "Antérieur : le pavillon tenu par devant, du tragus à la racine de l'arc zygomatique",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-auriculaire-anterieur",
+    "wikipedia-auricule"
+   ],
+   "divergences": "Gray donne tragus et épine de l'hélix vers la racine du processus zygomatique ; la page anglaise de Wikipédia dit éminence de la conque vers le processus mastoïde, ce qui est l'attache du ligament postérieur : Gray est retenu"
+  },
+  {
+   "id": "ligament-auriculaire-posterieur",
+   "resume": "Le ruban qui retient le pavillon en arrière, de la face postérieure de la conque au processus mastoïde.",
+   "nature": "ligament",
+   "articulation": "Pavillon de l'oreille et crâne",
+   "attaches": [
+    {
+     "texte": "Éminence de la conque, face postérieure du pavillon",
+     "os": []
+    },
+    {
+     "texte": "Face externe du processus mastoïde de l'os temporal",
+     "os": [
+      "temporal"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Fixe le pavillon de l'oreille au côté de la tête, en arrière",
+   "tendu": null,
+   "test": null,
+   "clinique": "Ligament grêle sans pathologie propre ; la cicatrice rétro-auriculaire d'une chirurgie de l'oreille passe dans le sillon où le pavillon se détache du crâne",
+   "memo": "Postérieur : l'oreille tenue par derrière, de la conque à la mastoïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-auriculaire-posterieur"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-auriculaire-superieur",
+   "resume": "Le ruban qui suspend le haut du pavillon, entre l'hélix et la région sus-méatique.",
+   "nature": "ligament",
+   "articulation": "Pavillon de l'oreille et crâne",
+   "attaches": [
+    {
+     "texte": "Épine de l'hélix du pavillon",
+     "os": []
+    },
+    {
+     "texte": "Bord supérieur du méat acoustique externe, par la région temporale",
+     "os": [
+      "temporal"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Suspend le haut du pavillon à la région temporale, au-dessus du conduit auditif",
+   "tendu": null,
+   "test": null,
+   "clinique": "Ligament grêle sans pathologie propre ; il n'a pas de traduction clinique reconnue, les muscles auriculaires, eux, ont très peu d'action chez l'homme",
+   "memo": "Supérieur : l'oreille suspendue par le haut, au-dessus du méat",
+   "variantes": null,
+   "sources": [
+    "wikipedia-auriculaire-superieur",
+    "wikipedia-auricule"
+   ],
+   "divergences": "Gray (1918) ne décrit que deux ligaments, antérieur et postérieur. Wikipédia donne l'épine de l'hélix et le bord supérieur du méat acoustique externe ; la description du tracé parlait de l'aponévrose temporale, non retrouvée dans les références"
+  },
+  {
+   "id": "ligament-cruciforme",
+   "resume": "La croix fibreuse derrière la dent de l'axis : le ligament transverse en barre horizontale, deux bandes verticales vers l'occipital et l'axis.",
+   "nature": "ligament",
+   "articulation": "Articulation atlanto-axiale médiane",
+   "attaches": [
+    {
+     "texte": "Bande supérieure : face postérieure du ligament transverse, jusqu'à la partie basilaire de l'os occipital, près du basion",
+     "os": [
+      "occipital",
+      "ligament-transverse-de-l-atlas"
+     ]
+    },
+    {
+     "texte": "Bande inférieure : ligament transverse vers la face postérieure du corps de l'axis",
+     "os": [
+      "axis"
+     ]
+    },
+    {
+     "texte": "Barre horizontale : ligament transverse, entre les tubercules médiaux des masses latérales de l'atlas",
+     "os": [
+      "atlas"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Maintient la dent plaquée contre l'arc antérieur de l'atlas ; les bandes verticales tiennent le transverse en place et limitent l'hyperflexion et l'hyperextension",
+   "tendu": "En flexion de la tête",
+   "test": null,
+   "clinique": "Une lésion de n'importe quelle partie est une blessure sérieuse, par exemple lors d'une fracture de l'atlas. Elle se voit à la radiographie, au scanner ou à l'IRM ; la dent peut alors comprimer la moelle",
+   "memo": "Une croix derrière la dent : la barre horizontale retient, les bras verticaux ancrent",
+   "variantes": "La bande inférieure peut manquer ; le ligament de Gerber, présent chez environ une personne sur deux, est un faisceau profond sous la bande supérieure",
+   "sources": [
+    "gray1918",
+    "wikipedia-cruciforme",
+    "kenhub-atlanto-axial"
+   ],
+   "divergences": "Gray nomme les deux bandes branches supérieure et inférieure du ligament transverse ; Kenhub et Wikipédia parlent de bandes longitudinales du ligament cruciforme, dont le transverse est la partie horizontale"
+  },
+  {
+   "id": "ligament-temporomandibulaire-medial",
+   "resume": "Le renfort de la face médiale de la capsule de l'articulation temporo-mandibulaire.",
+   "nature": "ligament",
+   "articulation": "Articulation temporo-mandibulaire",
+   "attaches": [
+    {
+     "texte": "Bord médial de la fosse mandibulaire de l'os temporal, avec la face médiale de la capsule",
+     "os": [
+      "temporal"
+     ]
+    },
+    {
+     "texte": "Col du condyle de la mandibule, côté médial",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Épaissit la capsule du côté interne, en regard du ligament latéral, et la maintient avec le disque",
+   "tendu": null,
+   "test": null,
+   "clinique": "Les troubles de l'articulation temporo-mandibulaire se manifestent par des claquements à l'ouverture, un blocage et des douleurs musculaires ; la luxation avant se réduit par une manœuvre vers le bas et l'arrière",
+   "memo": "L'ATM a deux flancs : le ligament latéral bien connu, et le renfort médial, plus discret",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-fr-atm",
+    "wikipedia-atm"
+   ],
+   "divergences": "Ni Gray ni Wikipédia anglais ne décrivent de ligament médial distinct (Gray ne retient que le sphéno-mandibulaire, la page française les ligaments discaux). Fiche prise comme épaississement capsulaire médial ; « épine du sphénoïde » du tracé est l'attache du sphéno-mandibulaire"
+  },
+  {
+   "id": "ligament-transverse-de-l-atlas",
+   "resume": "La forte bande qui passe derrière la dent de l'axis et la plaque contre l'arc antérieur de l'atlas : le verrou qui protège la moelle.",
+   "nature": "ligament",
+   "articulation": "Articulation atlanto-axiale médiane",
+   "attaches": [
+    {
+     "texte": "Tubercule de la face médiale de la masse latérale droite de l'atlas",
+     "os": [
+      "atlas"
+     ]
+    },
+    {
+     "texte": "Tubercule de la face médiale de la masse latérale gauche de l'atlas",
+     "os": [
+      "atlas"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retient la dent contre l'arc antérieur de l'atlas : elle pivote dans cet anneau, mais ne peut pas reculer vers la moelle. C'est le principal stabilisateur de la dent",
+   "tendu": "En flexion de la tête et lors de la translation antérieure de l'atlas",
+   "test": "Radiographie ou scanner : la distance atlanto-dentale ; elle dépasse 3 mm chez l'adulte si le ligament est insuffisant",
+   "clinique": "Sa rupture (traumatisme, polyarthrite rhumatoïde) laisse la dent reculer et comprimer la moelle cervicale haute, avec risque de paralysie. La distance atlanto-dentale normale est inférieure à 2 mm, jusqu'à 3 mm chez l'homme",
+   "memo": "Le verrou de la dent : une sangle derrière elle, entre les deux masses latérales",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-atlanto-axial",
+    "wikipedia-atlanto-axial",
+    "wikipedia-cruciforme"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligaments-alaires",
+   "resume": "Les deux cordons « d'arrêt » qui relient les côtés du sommet de la dent aux condyles de l'occipital et freinent la rotation de la tête.",
+   "nature": "ligament",
+   "articulation": "Charnière cranio-cervicale (atlanto-occipitale et atlanto-axiale)",
+   "attaches": [
+    {
+     "texte": "Faces latérales du sommet de la dent de l'axis",
+     "os": [
+      "axis"
+     ]
+    },
+    {
+     "texte": "Face médiale des condyles de l'os occipital, sur un tubercule",
+     "os": [
+      "occipital"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Limitent la rotation de la tête et freinent l'inclinaison latérale : d'où leur nom de ligaments d'arrêt de la dent. Ils relient le crâne à l'axis",
+   "tendu": "À la rotation de la tête et à l'inclinaison latérale",
+   "test": "Aucun test clinique fiable ; l'imagerie (IRM) les montre",
+   "clinique": "Ils se déchirent lors d'un traumatisme tête fléchie et tournée. Après rupture ou étirement, la rotation dépasse sa limite normale (environ 20 degrés) ; l'étirement des alaires augmente l'amplitude d'environ 30 %",
+   "memo": "Deux ailes de part et d'autre de la dent, qui disent à la tête : pas plus loin",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-alaires",
+    "kenhub-atlanto-axial",
+    "wikipedia-atlanto-axial"
+   ],
+   "divergences": "Wikipédia leur attribue aussi un rôle dans l'inclinaison ; Gray ne parle que de la rotation"
+  },
+  {
+   "id": "ligaments-auriculaires",
+   "resume": "Les trois rubans fibreux qui amarrent le pavillon de l'oreille au crâne : antérieur, supérieur et postérieur.",
+   "nature": "groupe",
+   "articulation": "Pavillon de l'oreille et crâne",
+   "attaches": [
+    {
+     "texte": "Pavillon : tragus, hélix et conque",
+     "os": []
+    },
+    {
+     "texte": "Crâne : racine du processus zygomatique, région sus-méatique, processus mastoïde de l'os temporal",
+     "os": [
+      "temporal"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Fixent le pavillon au côté de la tête sans l'immobiliser : le cartilage reste souple. Chaque ruban retient une région : le haut, l'avant, l'arrière",
+   "tendu": null,
+   "test": null,
+   "clinique": "Ces rubans sont grêles et sans pathologie propre. Le pavillon, cartilage élastique mal vascularisé, se déforme après un hématome (oreille en chou-fleur)",
+   "memo": "Trois haubans de l'oreille : un devant, un dessus, un derrière",
+   "variantes": "Gray (1918) n'en décrit que deux, l'antérieur et le postérieur",
+   "sources": [
+    "gray1918",
+    "wikipedia-auriculaire-superieur",
+    "wikipedia-auriculaire-posterieur"
+   ],
+   "divergences": "Gray (1918) ne cite pas de ligament supérieur ; Wikipédia anglais le décrit"
+  },
+  {
+   "id": "ligament-crico-arytenoide",
+   "resume": "Le ligament qui tient la base de l'aryténoïde sur le bord de la lame du cricoïde, en arrière.",
+   "nature": "ligament",
+   "articulation": "Articulation crico-aryténoïdienne",
+   "attaches": [
+    {
+     "texte": "Lame du cartilage cricoïde, au bord supérieur",
+     "os": [
+      "cartilage-cricoide"
+     ]
+    },
+    {
+     "texte": "Face médiale de la base et processus musculaire de l'aryténoïde",
+     "os": [
+      "cartilage-arytenoide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce en arrière la capsule de l'articulation crico-aryténoïdienne et limite le glissement de l'aryténoïde vers l'avant",
+   "tendu": "Quand l'aryténoïde est tiré en avant, vers le cartilage thyroïde",
+   "test": null,
+   "clinique": "La luxation de l'articulation crico-aryténoïdienne, rare, survient surtout après une intubation ou un traumatisme du larynx ; elle fige un pli vocal et donne une voix faible et rauque",
+   "memo": "Le frein arrière de l'aryténoïde, ancré à la lame du cricoïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-crico-arytenoidien"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-cricotracheal",
+   "resume": "La membrane fibreuse qui relie le bord inférieur du cricoïde au premier anneau de la trachée.",
+   "nature": "membrane",
+   "articulation": "Jonction laryngo-trachéale",
+   "attaches": [
+    {
+     "texte": "Bord inférieur du cartilage cricoïde",
+     "os": [
+      "cartilage-cricoide"
+     ]
+    },
+    {
+     "texte": "Bord supérieur du premier anneau cartilagineux de la trachée",
+     "os": []
+    }
+   ],
+   "situation": null,
+   "role": "Fixe le larynx à la trachée ; il ressemble aux membranes fibreuses qui unissent les anneaux trachéaux entre eux",
+   "tendu": null,
+   "test": null,
+   "clinique": "Repère de la trachéotomie haute : on l'aborde sous le cricoïde, en traversant les premiers anneaux trachéaux. Il prolonge le périchondre de la trachée",
+   "memo": "La couture entre le larynx et la trachée, sous le cricoïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-cricotracheal",
+    "kenhub-larynx"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-ceratocricoide",
+   "resume": "Le petit renfort postérieur de la capsule de l'articulation cricothyroïdienne, entre la corne inférieure du thyroïde et le cricoïde.",
+   "nature": "ligament",
+   "articulation": "Articulation cricothyroïdienne",
+   "attaches": [
+    {
+     "texte": "Corne inférieure du cartilage thyroïde",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    },
+    {
+     "texte": "Face postérieure du cartilage cricoïde, près de l'articulation",
+     "os": [
+      "cartilage-cricoide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Épaissit la capsule de l'articulation cricothyroïdienne et limite les translations du thyroïde sur le cricoïde",
+   "tendu": null,
+   "test": null,
+   "clinique": "Cette articulation règle la tension des plis vocaux, donc la hauteur de la voix ; sa lésion, rare, suit un traumatisme du larynx. Le ligament n'a pas de traduction clinique propre",
+   "memo": "Le petit cordage de la bascule du thyroïde : il tient la corne inférieure contre le cricoïde",
+   "variantes": null,
+   "sources": [
+    "imaios-ceratocricoide",
+    "elsevier-capsule-cricothyroidienne",
+    "wikipedia-articulation-cricothyroidienne"
+   ],
+   "divergences": "Gray (1918) ne décrit pas de ligament cératocricoïde ; les références modernes le présentent comme un épaississement postérieur de la capsule. Seule l'attache sur la corne inférieure du thyroïde est précisée par elles"
+  },
+  {
+   "id": "ligament-hyo-epiglottique",
+   "resume": "La bande élastique médiane qui amarre l'épiglotte au bord supérieur du corps de l'os hyoïde.",
+   "nature": "ligament",
+   "articulation": "Larynx (épiglotte et os hyoïde)",
+   "attaches": [
+    {
+     "texte": "Face antérieure de l'épiglotte",
+     "os": []
+    },
+    {
+     "texte": "Bord supérieur du corps de l'os hyoïde",
+     "os": [
+      "hyoide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Ligament extrinsèque du larynx : il relie l'épiglotte à l'os hyoïde et la stabilise dans ses mouvements",
+   "tendu": null,
+   "test": null,
+   "clinique": "En laryngoscopie directe avec une lame de Macintosh, la pointe est placée dans la vallécule et poussée vers l'avant : le ligament tire l'épiglotte et découvre la glotte",
+   "memo": "Un élastique entre l'hyoïde et l'épiglotte : on tire l'un, l'autre suit",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-hyo-epiglottique",
+    "kenhub-larynx"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-thyro-epiglottique",
+   "resume": "Le court cordon élastique qui attache la tige de l'épiglotte à l'angle intérieur du cartilage thyroïde.",
+   "nature": "ligament",
+   "articulation": "Larynx (épiglotte et cartilage thyroïde)",
+   "attaches": [
+    {
+     "texte": "Tige de l'épiglotte",
+     "os": []
+    },
+    {
+     "texte": "Angle rentrant du cartilage thyroïde, un peu sous l'incisure thyroïdienne supérieure",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Maintient l'épiglotte dressée au-dessus de la glotte et la stabilise lors du recul de la langue à la déglutition",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sans pathologie propre. Il explique que l'épiglotte reste dressée et revienne à sa place après avoir basculé sur l'entrée du larynx à la déglutition",
+   "memo": "L'ancre du pied de l'épiglotte, dans l'angle du thyroïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-thyro-epiglottique",
+    "kenhub-larynx"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-vestibulaire",
+   "resume": "La bande fibreuse du bord libre de la membrane quadrangulaire, noyau du pli vestibulaire, la fausse corde vocale.",
+   "nature": "ligament",
+   "articulation": "Larynx (étage sus-glottique)",
+   "attaches": [
+    {
+     "texte": "Angle du cartilage thyroïde, sous l'attache de l'épiglotte",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    },
+    {
+     "texte": "Face antéro-latérale de l'aryténoïde, un peu au-dessus du processus vocal",
+     "os": [
+      "cartilage-arytenoide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Soutient le pli vestibulaire ; son bord inférieur forme la limite haute du ventricule laryngé",
+   "tendu": null,
+   "test": null,
+   "clinique": "Le pli vestibulaire joue un rôle minime dans la voix parlée, mais peut vibrer avec les plis vocaux (diplophonie) ; il intervient aussi dans la protection des voies aériennes",
+   "memo": "Le faux pli au-dessus du ventricule : le vrai pli, celui qui vibre, est juste dessous",
+   "variantes": null,
+   "sources": [
+    "wikipedia-vestibulaire",
+    "kenhub-larynx",
+    "gray1918"
+   ],
+   "divergences": "Gray (1918) parle de ligament ventriculaire, noyau du pli ventriculaire, sans le nommer vestibulaire"
+  },
+  {
+   "id": "ligament-vocal",
+   "resume": "La bande élastique qui forme l'ossature du pli vocal : de l'angle du thyroïde au processus vocal de l'aryténoïde.",
+   "nature": "ligament",
+   "articulation": "Larynx (glotte)",
+   "attaches": [
+    {
+     "texte": "Face interne de l'angle du cartilage thyroïde, vers le milieu de sa hauteur",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    },
+    {
+     "texte": "Processus vocal de l'aryténoïde",
+     "os": [
+      "cartilage-arytenoide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Bord supérieur épaissi du cône élastique et noyau du pli vocal : sa tension règle la hauteur du son. Sa limite supérieure borde le ventricule",
+   "tendu": "Quand le thyroïde bascule en avant sur le cricoïde : la voix devient plus aiguë",
+   "test": "Laryngoscopie : le pli vocal est blanc nacré ; sa vibration se juge à la stroboscopie",
+   "clinique": "Nodules et polypes naissent sur le revêtement des plis lors d'efforts vocaux répétés ; l'œdème de Reinke abaisse le timbre. Le ligament est absent à la naissance et se forme vers quatre ans",
+   "memo": "La corde vocale, c'est lui : une corde élastique tendue du thyroïde à l'aryténoïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-conus-elasticus",
+    "wikipedia-pli-vocal",
+    "kenhub-larynx"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-costotransversaire-inferieur",
+   "resume": "Le court ligament qui relie le sommet du processus transverse au tubercule de la côte, en dehors.",
+   "nature": "ligament",
+   "articulation": "Articulation costo-transversaire (sixième côte)",
+   "attaches": [
+    {
+     "texte": "Sommet du processus transverse de la sixième vertèbre thoracique",
+     "os": [
+      "vertebre-t6"
+     ]
+    },
+    {
+     "texte": "Partie non articulaire du tubercule de la sixième côte",
+     "os": [
+      "sixieme-cote"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce en dehors l'articulation costo-transversaire et limite le mouvement à un léger glissement",
+   "tendu": "Quand la côte glisse lors de l'inspiration profonde",
+   "test": null,
+   "clinique": "Les articulations costo-transversaires sont innervées par les nerfs intercostaux ; les blocs des rameaux médiaux n'y sont donc pas efficaces contre leur douleur",
+   "memo": "Le ligament du tubercule : du bout du processus transverse à la bosse de la côte",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-costotransversaire"
+   ],
+   "divergences": "Le nom officiel (inférieur) correspond au ligament costo-transversaire latéral de Gray, appelé ligament du tubercule. Wikipédia le nomme sans en préciser les attaches"
+  },
+  {
+   "id": "ligament-costotransversaire-superieur",
+   "resume": "Le ligament qui monte de la crête du col de la côte au processus transverse de la vertèbre au-dessus.",
+   "nature": "ligament",
+   "articulation": "Articulation costo-transversaire (sixième côte)",
+   "attaches": [
+    {
+     "texte": "Crête du col de la sixième côte (couche antérieure) et face postérieure du col (couche postérieure)",
+     "os": [
+      "sixieme-cote"
+     ]
+    },
+    {
+     "texte": "Bord inférieur du processus transverse de la cinquième vertèbre thoracique",
+     "os": [
+      "vertebre-t5"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Rattache le col de la côte à la vertèbre sus-jacente et limite le mouvement au glissement ; avec l'articulation costo-vertébrale, il guide la côte lors de la respiration",
+   "tendu": null,
+   "test": null,
+   "clinique": "Le nerf intercostal et les vaisseaux passent devant sa couche antérieure ; le rameau dorsal d'un nerf spinal passe entre lui et le ligament accessoire. Sans test propre",
+   "memo": "Le hauban montant : du col de la côte vers la transverse de la vertèbre du dessus",
+   "variantes": "Deux lames, antérieure et postérieure ; un ligament accessoire est souvent présent en dedans",
+   "sources": [
+    "gray1918",
+    "wikipedia-costotransversaire-superieur",
+    "wikipedia-costotransversaire"
+   ],
+   "divergences": "Gray le nomme ligament costo-transversaire antérieur (« antéro-supérieur ») et appelle postérieur le faisceau de la couche postérieure"
+  },
+  {
+   "id": "ligament-radie-sternochondral",
+   "resume": "Les faisceaux en éventail qui fixent l'extrémité sternale d'un cartilage costal au sternum, devant et derrière.",
+   "nature": "ligament",
+   "articulation": "Articulation sternocostale (quatrième cartilage)",
+   "attaches": [
+    {
+     "texte": "Extrémité sternale du quatrième cartilage costal",
+     "os": [
+      "cartilage-costal-de-la-quatrieme-cote"
+     ]
+    },
+    {
+     "texte": "Faces antérieure et postérieure du sternum, au bord de l'incisure costale",
+     "os": [
+      "corps-du-sternum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforcent la capsule de l'articulation sternocostale ; les fibres superficielles croisent la ligne médiane et se mêlent au grand pectoral pour former la membrane sternale",
+   "tendu": null,
+   "test": null,
+   "clinique": "La costochondrite et le syndrome de Tietze, inflammations de ces jonctions, sont des causes courantes de douleur thoracique ; ils sont sensibles à la palpation",
+   "memo": "Rayons de roue partant du cartilage et couvrant le sternum",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-sternochondral",
+    "wikipedia-radie"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-sternochondral-intra-articulaire",
+   "resume": "La lame fibreuse à l'intérieur de l'articulation de la deuxième côte, entre le cartilage costal et le sternum.",
+   "nature": "ligament",
+   "articulation": "Articulation sternocostale de la deuxième côte",
+   "attaches": [
+    {
+     "texte": "Extrémité sternale du deuxième cartilage costal",
+     "os": [
+      "cartilage-costal-de-la-deuxieme-cote"
+     ]
+    },
+    {
+     "texte": "Fibrocartilage entre le manubrium et le corps du sternum (angle du sternum)",
+     "os": [
+      "manubrium-sternal",
+      "corps-du-sternum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Ancre le deuxième cartilage au sternum et divise l'articulation en deux cavités synoviales. Il ajoute du soutien en limitant le mouvement",
+   "tendu": null,
+   "test": null,
+   "clinique": "L'angle du sternum, où il s'attache, est le repère pour trouver la deuxième côte et compter les autres. Le cartilage costal peut être le siège d'une costochondrite",
+   "memo": "Le seul ligament de l'intérieur d'une articulation sternocostale : il la coupe en deux, à la deuxième côte",
+   "variantes": "Rarement présent aussi à la troisième articulation (Gray) ; Kenhub signale un lien de la troisième articulation avec la première ou la deuxième",
+   "sources": [
+    "gray1918",
+    "kenhub-sternochondral",
+    "wikipedia-sternocostal"
+   ],
+   "divergences": "Gray le décrit presque constamment à la deuxième articulation et rarement ailleurs ; Kenhub ajoute une variante vers la troisième"
+  },
+  {
+   "id": "ligaments-xiphochondraux",
+   "resume": "Les bandelettes inconstantes qui unissent le processus xiphoïde au cartilage de la septième côte, devant et derrière.",
+   "nature": "ligament",
+   "articulation": "Articulation xiphochondrale (septième cartilage)",
+   "attaches": [
+    {
+     "texte": "Faces antérieure et postérieure du processus xiphoïde",
+     "os": [
+      "processus-xiphoide"
+     ]
+    },
+    {
+     "texte": "Faces antérieure et postérieure du septième cartilage costal, parfois du sixième",
+     "os": [
+      "cartilage-costal-de-la-septieme-cote"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforcent la jonction du xiphoïde au septième cartilage ; le faisceau antérieur est plus net que le postérieur",
+   "tendu": null,
+   "test": null,
+   "clinique": "Ligaments inconstants et grêles, sans pathologie propre ; leur absence est sans conséquence",
+   "memo": "Deux lanières de la pointe du sternum vers le septième cartilage",
+   "variantes": "Longueur et largeur variables ; le faisceau postérieur est parfois à peine visible",
+   "sources": [
+    "gray1918",
+    "wikipedia-costoxiphoide",
+    "kenhub-sternochondral"
+   ],
+   "divergences": "La description du tracé ne retenait que la face antérieure ; Gray et Wikipédia décrivent aussi la face postérieure, moins nette"
+  },
+  {
+   "id": "ligament-lombocostal",
+   "resume": "La bande fibreuse qui retient la douzième côte aux processus transverses des premières vertèbres lombaires.",
+   "nature": "ligament",
+   "articulation": "Douzième côte et vertèbres lombaires supérieures",
+   "attaches": [
+    {
+     "texte": "Bord inférieur et col de la douzième côte",
+     "os": [
+      "douzieme-cote"
+     ]
+    },
+    {
+     "texte": "Processus transverse de la première vertèbre lombaire, parfois de la deuxième",
+     "os": [
+      "vertebre-l1",
+      "vertebre-l2"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Maintient la douzième côte, dépourvue d'attache sternale, solidaire de la colonne lombaire ; il fait partie du fascia lombo-dorsal postérieur",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sans pathologie propre. La douzième côte, flottante, n'a pas d'attache antérieure : ce ligament et le muscle carré des lombes la retiennent",
+   "memo": "L'amarre de la côte flottante, fixée à la première lombaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-lombocostal"
+   ],
+   "divergences": "Gray le fixe à la base du processus transverse de L1 ; Wikipédia, aux sommets des processus transverses de L1 et L2"
+  },
+  {
+   "id": "ligaments-interchondraux",
+   "resume": "Les bandes qui unissent les bords des cartilages costaux voisins, le long de l'arc costal.",
+   "nature": "groupe",
+   "articulation": "Articulations interchondrales (cartilages costaux 6 à 10)",
+   "attaches": [
+    {
+     "texte": "Bords contigus des cartilages des 6e, 7e et 8e côtes",
+     "os": [
+      "cartilage-costal-de-la-sixieme-cote",
+      "cartilage-costal-de-la-septieme-cote",
+      "cartilage-costal-de-la-huitieme-cote"
+     ]
+    },
+    {
+     "texte": "Bords contigus des cartilages des 9e et 10e côtes, parfois seulement par des fibres",
+     "os": [
+      "cartilage-costal-de-la-neuvieme-cote",
+      "cartilage-costal-de-la-dixieme-cote"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforcent les petites articulations entre cartilages voisins, médialement et latéralement, et donnent à l'arc costal son élasticité",
+   "tendu": null,
+   "test": null,
+   "clinique": "La fracture de ces cartilages, souvent invisible à la radiographie, se diagnostique au scanner ; les costochondrites touchent aussi ces jonctions",
+   "memo": "Entre cartilages voisins, une petite articulation de plus : l'arc costal garde sa souplesse",
+   "variantes": "Le cinquième cartilage s'articule parfois avec le sixième, les 9e et 10e le plus souvent par de simples fibres",
+   "sources": [
+    "gray1918",
+    "wikipedia-interchondral"
+   ],
+   "divergences": "Gray décrit de vraies articulations synoviales entre les 6e, 7e et 8e cartilages (parfois 9e et 10e) ; la description du tracé disait 6 à 10"
+  },
+  {
+   "id": "disque-intervertebral",
+   "resume": "Les disques fibrocartilagineux entre les corps vertébraux, de C2 au sacrum : l'amortisseur et la rotule de la colonne.",
+   "nature": "groupe",
+   "articulation": "Colonne vertébrale, de C2-C3 à L5-S1",
+   "attaches": [
+    {
+     "texte": "Entre les corps de deux vertèbres adjacentes, de l'axis au sacrum, par les plateaux cartilagineux",
+     "os": [
+      "vertebres-cervicales",
+      "vertebres-thoraciques",
+      "vertebres-lombaires",
+      "sacrum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Séparent et solidarisent les vertèbres, permettent un léger mouvement et absorbent les chocs : le noyau pulpeux, gélatineux, répartit la pression. Il n'y a pas de disque entre l'atlas et l'axis",
+   "tendu": null,
+   "test": null,
+   "clinique": "Une hernie postéro-latérale comprime la racine qui sort au niveau du disque, par exemple C5-C6 pour la racine C6, L4-L5 pour L5 et L5-S1 pour S1, avec douleur radiculaire, fourmillements ou faiblesse. 95 % des hernies lombaires siègent en L4-L5 ou L5-S1",
+   "memo": "Le beignet à la confiture : une couronne ferme autour d'un cœur mou, qui s'échappe par la fissure",
+   "variantes": "Vingt-trois disques : 6 cervicaux, 12 thoraciques, 5 lombaires. Plus épais en avant qu'en arrière aux étages cervical et lombaire, d'épaisseur uniforme au thorax",
+   "sources": [
+    "gray1918",
+    "wikipedia-disque",
+    "wikipedia-hernie-discale"
+   ],
+   "divergences": "Les références ne s'accordent pas toujours sur la racine atteinte à chaque étage : la règle retenue est celle de la racine émergeant au niveau (cervical) ou sous le disque (lombaire)"
+  }
+ ]
+}

@@ -751,7 +751,10 @@ for e in elements:
         # Ce sur quoi elle s'appuie : le tronc d'une branche, la veine où se jette un affluent, le vaisseau d'un plexus.
         for p in e["_pieces"]:
             a_el = element_d_objet(CONSTRUITS.get(p["objet"]))
-            if a_el and a_el["id"] != e["id"]:
+            # (une branche, un affluent ou un nerf ne « naît » que d'un vaisseau ou d'un nerf : un tracé qui part d'un
+            # organe n'a pas d'appui ; un plexus, un ganglion, un nœud ou un noyau, si)
+            porte = e["couche"] in ("lymphe", "encephale") or re.match(r"^(Plexus|Ganglion)", e["nom"])
+            if a_el and a_el["id"] != e["id"] and (porte or a_el["couche"] == e["couche"]):
                 x["appui"] = a_el["id"]
                 if e["couche"] == "artere" and a_el["couche"] == "artere" and not x.get("provenance"):
                     x["provenance"] = a_el["id"]

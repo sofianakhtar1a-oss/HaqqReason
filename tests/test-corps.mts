@@ -255,9 +255,12 @@ ok("un muscle sans articulation à mouvoir se contracte sur place", programmeDe(
       ok("chaque muscle a au moins une action principale et des racines valides", muscles.every(([, f]) => f.actions.some((a) => a.role === "principal") && f.innervation.racines.length > 0 && f.innervation.racines.every((x) => RACINE.test(x))));
       const inconnus = new Set(muscles.flatMap(([, f]) => f.actions.flatMap((a) => [a.articulation in NOMS_ARTICULATIONS ? "" : a.articulation, a.mouvement in NOMS_MOUVEMENTS ? "" : a.mouvement])).filter(Boolean));
       ok("chaque articulation et chaque mouvement des fiches a un nom à l'écran", inconnus.size === 0, [...inconnus].join());
-      const jouees = muscles.flatMap(([, f]) => f.actions).filter((a) => gesteDe(a.articulation, a.mouvement, "g")).length;
-      const total = muscles.flatMap(([, f]) => f.actions).length;
-      ok("le squelette joue au moins les trois quarts des actions des fiches", jouees / total >= 0.75, `${jouees}/${total}`);
+      // Les actions qui sont des mouvements d'une articulation que le squelette modélise (pas l'expression du visage,
+      // la langue, le larynx, le périnée, ni le simple maintien) : le squelette doit les jouer presque toutes.
+      const modelisees = new Set(DDL.map((d) => d.articulation));
+      const mouvements = muscles.flatMap(([, f]) => f.actions).filter((a) => modelisees.has(a.articulation) && !["stabilisation", "tension", "compression"].includes(a.mouvement));
+      const jouees = mouvements.filter((a) => gesteDe(a.articulation, a.mouvement, "g")).length;
+      ok("le squelette joue presque tous les mouvements des articulations qu'il modélise", jouees / mouvements.length >= 0.95, `${jouees}/${mouvements.length}`);
       ok("la fiche du biceps dit ce qu'il faut (flexion du coude, supination, nerf musculo-cutané, C5-C6)", (() => {
         const b = r.fiches["biceps-brachial"] as unknown as { actions: { articulation: string; mouvement: string }[]; innervation: { nerf: string; racines: string[] } };
         return b.actions.some((a) => a.articulation === "coude" && a.mouvement === "flexion") && b.actions.some((a) => a.mouvement === "supination") && b.innervation.nerf === "nerf-musculocutane" && b.innervation.racines.includes("C5") && b.innervation.racines.includes("C6");

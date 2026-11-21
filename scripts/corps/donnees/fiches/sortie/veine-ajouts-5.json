@@ -1,0 +1,48 @@
+{
+  "sources": {
+    "gray1918": {
+      "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral : veines du cœur (Internet Archive)",
+      "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+    },
+    "wp-small-cardiac": {
+      "titre": "Wikipedia (anglais) — Small cardiac vein",
+      "url": "https://en.wikipedia.org/wiki/Small_cardiac_vein"
+    },
+    "wp-coronary-sinus": {
+      "titre": "Wikipedia (anglais) — Coronary sinus",
+      "url": "https://en.wikipedia.org/wiki/Coronary_sinus"
+    },
+    "kenhub-sinus-coronaire": {
+      "titre": "Kenhub — Coronary sinus",
+      "url": "https://www.kenhub.com/en/library/anatomy/coronary-sinus"
+    }
+  },
+  "fiches": [
+    {
+      "id": "veine-marginale-droite-du-coeur",
+      "resume": "La veine du bord droit du cœur : elle monte le long du ventricule droit et se jette dans la petite veine cardiaque, ou directement dans l'atrium droit.",
+      "plan": "profonde",
+      "origine": {
+        "veine": null,
+        "texte": "Paroi du ventricule droit, près de l'apex, sur son bord droit (aigu)"
+      },
+      "trajet": "Monte le long du bord droit du cœur, au voisinage de l'artère marginale droite, jusqu'au sillon coronaire droit. Elle s'y joint à la petite veine cardiaque, ou traverse le sillon et s'ouvre directement dans l'atrium droit.",
+      "affluents": [],
+      "terminaison": {
+        "veine": null,
+        "viscere": "atrium-droit",
+        "texte": "Atrium droit, par la petite veine cardiaque (puis le sinus coronaire) ou directement dans sa paroi"
+      },
+      "drainage": {
+        "texte": "Bord droit et paroi voisine du ventricule droit",
+        "structures": ["ventricule-droit"]
+      },
+      "rapports": "Elle suit le bord droit du cœur et atteint le sillon coronaire droit, près de la petite veine cardiaque qui l'accueille souvent.",
+      "clinique": "Sans pathologie propre : elle rappelle qu'une partie du sang veineux du cœur peut regagner l'atrium droit sans passer par le sinus coronaire.",
+      "memo": "Marginale droite : la veine du bord droit, qui rejoint la petite veine cardiaque ou file droit dans l'atrium",
+      "variantes": "Sa terminaison varie : petite veine cardiaque ou atrium droit. On la rattache parfois au groupe des veines cardiaques antérieures.",
+      "sources": ["gray1918", "wp-small-cardiac", "wp-coronary-sinus", "kenhub-sinus-coronaire"],
+      "divergences": "Seul Gray décrit explicitement cette veine. Wikipédia et Kenhub ne la nomment pas ; ils confirment seulement que la petite veine cardiaque se termine de façon variable (sinus, atrium droit ou veine moyenne) et que les veines antérieures s'ouvrent directement dans l'atrium droit."
+    }
+  ]
+}

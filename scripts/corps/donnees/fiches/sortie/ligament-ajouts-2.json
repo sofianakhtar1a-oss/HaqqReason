@@ -1,0 +1,994 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral sur Internet Archive (articulations : sacro-coccyx, épaule, poignet, main, genou, cheville, pied)",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "wikipedia-sacrococcygien": {
+   "titre": "Wikipédia (anglais), Sacrococcygeal symphysis",
+   "url": "https://en.wikipedia.org/wiki/Sacrococcygeal_symphysis"
+  },
+  "wikipedia-coracoclaviculaire": {
+   "titre": "Wikipédia (anglais), Coracoclavicular ligament",
+   "url": "https://en.wikipedia.org/wiki/Coracoclavicular_ligament"
+  },
+  "wikipedia-acromioclaviculaire": {
+   "titre": "Wikipédia (anglais), Acromioclavicular joint",
+   "url": "https://en.wikipedia.org/wiki/Acromioclavicular_joint"
+  },
+  "wikipedia-glenohumeraux": {
+   "titre": "Wikipédia (anglais), Glenohumeral ligaments",
+   "url": "https://en.wikipedia.org/wiki/Glenohumeral_ligaments"
+  },
+  "wikipedia-epaule": {
+   "titre": "Wikipédia (anglais), Shoulder joint",
+   "url": "https://en.wikipedia.org/wiki/Shoulder_joint"
+  },
+  "wikipedia-radiocarpien-palmaire": {
+   "titre": "Wikipédia (anglais), Palmar radiocarpal ligament",
+   "url": "https://en.wikipedia.org/wiki/Palmar_radiocarpal_ligament"
+  },
+  "wikipedia-ulnocarpien-palmaire": {
+   "titre": "Wikipédia (anglais), Palmar ulnocarpal ligament",
+   "url": "https://en.wikipedia.org/wiki/Palmar_ulnocarpal_ligament"
+  },
+  "pmc-margulies": {
+   "titre": "Margulies et al., Narrative review of ligamentous wrist injuries, J Hand Microsurg 2021 (PMC8041499)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8041499"
+  },
+  "pmc-echo-poignet": {
+   "titre": "Guide échographique des ligaments du poignet (PMC8534780)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8534780"
+  },
+  "pmc-tests-poignet": {
+   "titre": "Revue des tests d'examen du poignet : ligament lunotriquétral et TFCC (PMC9789218)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9789218"
+  },
+  "tma-poignet": {
+   "titre": "TeachMeAnatomy, Wrist Joint",
+   "url": "https://teachmeanatomy.info/upper-limb/joints/wrist-joint/"
+  },
+  "flexikon-testut": {
+   "titre": "DocCheck Flexikon, Ligamentum radioscapholunatum (ligament de Testut)",
+   "url": "https://flexikon.doccheck.com/de/Ligamentum_radioscapholunatum"
+  },
+  "kenhub-mcp": {
+   "titre": "Kenhub, Metacarpophalangeal (MCP) joints",
+   "url": "https://kenhub.com/en/library/anatomy/metacarpophalangeal-mcp-joints"
+  },
+  "wikipedia-meniscofemoral-posterieur": {
+   "titre": "Wikipédia (anglais), Posterior meniscofemoral ligament",
+   "url": "https://en.wikipedia.org/wiki/Posterior_meniscofemoral_ligament"
+  },
+  "kenhub-genou": {
+   "titre": "Kenhub, Knee joint: anatomy, ligaments and movements",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-knee-joint"
+  },
+  "wikipedia-femoropatellaire-medial": {
+   "titre": "Wikipédia (anglais), Medial patellofemoral ligament",
+   "url": "https://en.wikipedia.org/wiki/Medial_patellofemoral_ligament"
+  },
+  "joo-stabilisateurs-patella": {
+   "titre": "J Orthop Traumatol 2019, anatomie des stabilisateurs médiaux de la patella (doi 10.1186/s10195-019-0525-3)",
+   "url": "https://link.springer.com/doi/10.1186/s10195-019-0525-3"
+  },
+  "washington-flandry": {
+   "titre": "Flandry, Knee Anatomy & Biomechanics (notes de cours, University of Washington)",
+   "url": "https://courses.washington.edu/bioen520/notes/Knee_Anatomy_&_Biomechanics_(Flandry).pdf"
+  },
+  "wikipedia-menisque-lateral": {
+   "titre": "Wikipédia (anglais), Lateral meniscus",
+   "url": "https://en.wikipedia.org/wiki/Lateral_meniscus"
+  },
+  "wikipedia-menisque-medial": {
+   "titre": "Wikipédia (anglais), Medial meniscus",
+   "url": "https://en.wikipedia.org/wiki/Medial_meniscus"
+  },
+  "wikipedia-bifurque": {
+   "titre": "Wikipédia (anglais), Bifurcate ligament",
+   "url": "https://en.wikipedia.org/wiki/Bifurcate_ligament"
+  },
+  "wikipedia-deltoide": {
+   "titre": "Wikipédia (anglais), Deltoid ligament",
+   "url": "https://en.wikipedia.org/wiki/Deltoid_ligament"
+  },
+  "kenhub-cheville": {
+   "titre": "Kenhub, Ankle joint: anatomy, bones, ligaments and movements",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-ankle-joint"
+  },
+  "wikipedia-poignet": {
+   "titre": "Wikipédia (anglais), Wrist",
+   "url": "https://en.wikipedia.org/wiki/Wrist"
+  },
+  "wikipedia-mcp": {
+   "titre": "Wikipédia (anglais), Metacarpophalangeal joint",
+   "url": "https://en.wikipedia.org/wiki/Metacarpophalangeal_joint"
+  }
+ },
+ "fiches": [
+  {
+   "id": "ligament-sacrococcygien-anterieur",
+   "resume": "Quelques fibres irrégulières devant la jonction sacro-coccygienne : la queue du ligament longitudinal antérieur.",
+   "nature": "ligament",
+   "articulation": "Symphyse sacro-coccygienne",
+   "attaches": [
+    {
+     "texte": "Face antérieure du sommet du sacrum",
+     "os": [
+      "sacrum"
+     ]
+    },
+    {
+     "texte": "Face antérieure du coccyx",
+     "os": [
+      "coccyx"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce la jonction sacro-coccygienne par devant, dans le prolongement du ligament longitudinal antérieur. Il compte peu de fibres et se mêle au périoste",
+   "tendu": null,
+   "test": null,
+   "clinique": "Pas de pathologie propre. La jonction qu'il renforce est en cause dans la coccydynie (douleur du coccyx), souvent après une chute sur le siège ou un accouchement",
+   "memo": "Le longitudinal antérieur qui s'effiloche : il s'arrête sur le coccyx",
+   "variantes": "La jonction sacro-coccygienne se soude partiellement ou totalement avec l'âge",
+   "sources": [
+    "gray1918",
+    "wikipedia-sacrococcygien"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-sacrococcygien-lateral",
+   "resume": "La bride de chaque côté entre le sacrum et le coccyx : elle ferme le foramen par où sort le dernier nerf sacral.",
+   "nature": "ligament",
+   "articulation": "Symphyse sacro-coccygienne",
+   "attaches": [
+    {
+     "texte": "Angle inférolatéral du sacrum",
+     "os": [
+      "sacrum"
+     ]
+    },
+    {
+     "texte": "Processus transverse de la première vertèbre coccygienne",
+     "os": [
+      "coccyx"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Transforme l'échancrure latérale en un foramen fermé pour le cinquième nerf sacral et renforce la jonction sacro-coccygienne sur le côté",
+   "tendu": null,
+   "test": null,
+   "clinique": "Pas de pathologie propre. Il fait partie des moyens d'union qui limitent la mobilité du coccyx, surtout sensible en fin de grossesse et à l'accouchement",
+   "memo": "Un pont de chaque côté : il boucle le foramen du dernier nerf sacral",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-sacrococcygien"
+   ],
+   "divergences": "Le tracé initial parlait de la corne du coccyx ; Gray et Wikipédia placent l'attache sur le processus transverse de la première vertèbre coccygienne (les cornes relèvent des ligaments intercornuaux)"
+  },
+  {
+   "id": "ligament-sacrococcygien-posterieur-profond",
+   "resume": "La bande plate du fond du canal sacral : le prolongement du ligament longitudinal postérieur jusqu'au coccyx.",
+   "nature": "ligament",
+   "articulation": "Symphyse sacro-coccygienne",
+   "attaches": [
+    {
+     "texte": "Face postérieure du corps de la cinquième vertèbre sacrale, dans le canal sacral",
+     "os": [
+      "sacrum"
+     ]
+    },
+    {
+     "texte": "Face postérieure du coccyx",
+     "os": [
+      "coccyx"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Prolonge le ligament longitudinal postérieur dans le bas du canal sacral et renforce la jonction sacro-coccygienne par l'arrière. Il est recouvert par le ligament superficiel",
+   "tendu": null,
+   "test": null,
+   "clinique": "Pas de pathologie propre : on le retient pour compléter, jusqu'au coccyx, la chaîne des ligaments du canal rachidien",
+   "memo": "Le longitudinal postérieur qui descend dans le canal sacral, sous le ligament superficiel",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-sacrococcygien"
+   ],
+   "divergences": "Gray décrit une seule bande postérieure en deux plans, l'un profond et court, l'autre superficiel et plus long ; Wikipédia en fait deux ligaments, le profond naissant du corps de S5"
+  },
+  {
+   "id": "ligament-sacrococcygien-posterieur-superficiel",
+   "resume": "La lame qui bouche le hiatus sacral : elle ferme en arrière le bas du canal sacral, comme un ligament jaune.",
+   "nature": "ligament",
+   "articulation": "Symphyse sacro-coccygienne et hiatus sacral",
+   "attaches": [
+    {
+     "texte": "Crête sacrale médiane et bords du hiatus sacral",
+     "os": [
+      "sacrum"
+     ]
+    },
+    {
+     "texte": "Face dorsale du coccyx",
+     "os": [
+      "coccyx"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Ferme en arrière le canal sacral à son extrémité inférieure ; il correspond aux ligaments jaunes. Il est recouvert par le grand glutéal",
+   "tendu": null,
+   "test": "Le hiatus sacral se repère au doigt, en haut du sillon interfessier, en palpant les cornes sacrales de part et d'autre",
+   "clinique": "Il est traversé par l'aiguille de l'anesthésie péridurale caudale, qui entre dans le canal par le hiatus sacral",
+   "memo": "Le bouchon du hiatus : le dernier ligament jaune, tendu jusqu'au coccyx",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-sacrococcygien"
+   ],
+   "divergences": "Le tracé initial le disait prolongement du ligament supra-épineux ; les références consultées le comparent aux ligaments jaunes et ne parlent pas du supra-épineux"
+  },
+  {
+   "id": "ligament-coracoclaviculaire",
+   "resume": "Les haubans de l'épaule : deux faisceaux (conoïde et trapézoïde) qui suspendent la scapula à la clavicule.",
+   "nature": "groupe",
+   "articulation": "Épaule (région acromio-claviculaire, hors capsule)",
+   "attaches": [
+    {
+     "texte": "Processus coracoïde de la scapula (face supérieure et base)",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Face inférieure de la clavicule, ligne trapézoïde et tubercule conoïde",
+     "os": [
+      "clavicule"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Maintient la clavicule contre l'acromion et suspend la scapula à la clavicule ; il transmet le poids du membre supérieur au squelette axial. Le trapézoïde est en avant et en dehors, le conoïde en arrière et en dedans",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sa rupture complète, avec celle du ligament acromio-claviculaire, donne la luxation acromio-claviculaire de grade III : la clavicule remonte au-dessus de l'acromion. Les grades I et II se traitent sans chirurgie",
+   "memo": "Coraco-claviculaire : un pont entre le bec (coracoïde) et la clavicule, deux haubans, conoïde derrière et trapézoïde devant",
+   "variantes": "Il peut comporter trois faisceaux au lieu de deux ; ses insertions varient d'une personne à l'autre",
+   "sources": [
+    "gray1918",
+    "wikipedia-coracoclaviculaire",
+    "wikipedia-acromioclaviculaire"
+   ],
+   "divergences": "Wikipédia ne localise pas les insertions de chaque faisceau ; Gray les décrit : trapézoïde du dessus du processus coracoïde à la ligne trapézoïde, conoïde de la base du processus à un relief plus médial"
+  },
+  {
+   "id": "ligaments-glenohumeraux",
+   "resume": "Trois renforts de la capsule de l'épaule, supérieur, moyen et inférieur : ils freinent la sortie de la tête de l'humérus.",
+   "nature": "groupe",
+   "articulation": "Épaule (articulation gléno-humérale)",
+   "attaches": [
+    {
+     "texte": "Pourtour de la glène, du sommet à son bord inférieur",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Petit tubercule et col anatomique de l'humérus",
+     "os": [
+      "humerus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Épaississements de la face antérieure de la capsule qui freinent la rotation latérale et le glissement antérieur de la tête de l'humérus. Le supérieur est tendu bras le long du corps, le moyen en rotation latérale, l'inférieur en abduction",
+   "tendu": "Supérieur : adduction ; moyen : rotation latérale ; inférieur : abduction, bande antérieure avec rotation latérale, bande postérieure avec rotation médiale",
+   "test": "Test d'appréhension : bras en abduction et rotation latérale, le patient craint la luxation antérieure",
+   "clinique": "Dans la luxation antérieure de l'épaule, après un coup sur le bras en abduction, ces ligaments et le bourrelet glénoïdien cèdent ; l'arrachement du bourrelet antéro-inférieur est la lésion de Bankart. Le nerf axillaire peut souffrir",
+   "memo": "Du haut vers le bas : le supérieur tient le bras le long du corps, le moyen la rotation latérale, l'inférieur l'abduction",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-glenohumeraux",
+    "wikipedia-epaule"
+   ],
+   "divergences": "Gray ne décrit que trois renforts capsulaires ; Wikipédia ajoute que le ligament inférieur a deux bandes, antérieure et postérieure, tendues dans des positions différentes. Wikipédia ne précise pas l'insertion du moyen ; Gray la situe au bord médial de la glène et à la partie basse du petit tubercule"
+  },
+  {
+   "id": "court-ligament-radiolunatum",
+   "resume": "Le faisceau court du devant du poignet, du radius droit au lunatum : il retient le lunatum en avant.",
+   "nature": "ligament",
+   "articulation": "Poignet (articulation radiocarpienne), face palmaire",
+   "attaches": [
+    {
+     "texte": "Partie antéro-médiale de l'extrémité distale du radius, bord palmaire de la fosse lunatienne",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Face palmaire du lunatum",
+     "os": [
+      "lunatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Épaississement palmaire de la capsule, ulnaire au ligament radio-scapho-lunatum ; il retient le lunatum contre le radius et s'oppose à son extension",
+   "tendu": null,
+   "test": null,
+   "clinique": "Il est essentiel dans l'instabilité périlunaire : quand il cède avec ses voisins, le lunatum perd son attache palmaire et se déplace",
+   "memo": "Court et droit : du radius au lunatum juste en face",
+   "variantes": null,
+   "sources": [
+    "pmc-margulies",
+    "pmc-echo-poignet",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-radiocarpien-palmaire",
+   "resume": "La grande lame du devant du poignet : un éventail qui part du radius et converge vers le carpe.",
+   "nature": "groupe",
+   "articulation": "Poignet (articulation radiocarpienne), face palmaire",
+   "attaches": [
+    {
+     "texte": "Bord antérieur de l'extrémité distale du radius et processus styloïde",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Faces palmaires du scaphoïde, du lunatum, du triquetrum et du capitatum",
+     "os": [
+      "scaphoide",
+      "lunatum",
+      "triquetrum",
+      "capitatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Stabilise le poignet par devant ; ses fibres, obliques en bas et en dedans, font suivre la main au radius quand l'avant-bras tourne en supination. Il comprend les ligaments radio-capitatum, radio-scapho-capitatum, radio-lunatum long et court et radio-scapho-lunatum",
+   "tendu": null,
+   "test": null,
+   "clinique": "Entre le radio-scapho-capitatum et le radio-lunatum long, le sillon de Poirier est un point faible : c'est là que passe la luxation périlunaire du carpe",
+   "memo": "Un éventail palmaire : tout part du radius, tout converge vers le lunatum et le capitatum",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-radiocarpien-palmaire",
+    "pmc-margulies",
+    "tma-poignet"
+   ],
+   "divergences": "Gray et Wikipédia y incluent aussi un faisceau superficiel issu de l'ulna ; la nomenclature actuelle le classe avec le ligament ulnocarpien palmaire"
+  },
+  {
+   "id": "ligament-radioscapholunatum",
+   "resume": "Le ligament de Testut : un mince cordon entre le radius et l'interstice scapho-lunaire, au rôle mécanique faible.",
+   "nature": "ligament",
+   "articulation": "Poignet (articulation radiocarpienne), face palmaire",
+   "attaches": [
+    {
+     "texte": "Bord palmaire du radius, entre les fosses scaphoïdienne et lunatienne",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Scaphoïde, lunatum et ligament interosseux scapho-lunaire",
+     "os": [
+      "scaphoide",
+      "lunatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relie le radius à l'interstice scapho-lunaire, entre le radio-lunatum long (radial) et le court (ulnaire). Sa contribution à la stabilité est faible ou discutée",
+   "tendu": null,
+   "test": null,
+   "clinique": "Pas de lésion isolée bien établie. Il est innervé par le nerf interosseux antérieur et contribuerait à la proprioception du poignet",
+   "memo": "Testut : le trait d'union entre le radius et l'interstice scapho-lunaire",
+   "variantes": null,
+   "sources": [
+    "flexikon-testut",
+    "pmc-margulies",
+    "pmc-echo-poignet"
+   ],
+   "divergences": "Le tracé initial en fait un cordon vasculaire de faible rôle mécanique ; DocCheck lui attribue un rôle de stabilisation du scaphoïde et du lunatum et une innervation par le nerf interosseux antérieur ; Margulies le nomme sans préciser sa fonction"
+  },
+  {
+   "id": "ligament-ulnocarpien-palmaire",
+   "resume": "Le complexe du côté ulnaire de la face palmaire du poignet : il rattache le carpe à l'ulna par le disque articulaire.",
+   "nature": "groupe",
+   "articulation": "Poignet (articulation radiocarpienne et complexe ulnocarpien), face palmaire",
+   "attaches": [
+    {
+     "texte": "Complexe fibrocartilagineux triangulaire et ligament radio-ulnaire palmaire, au voisinage du processus styloïde de l'ulna",
+     "os": [
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Lunatum, triquetrum et capitatum",
+     "os": [
+      "lunatum",
+      "triquetrum",
+      "capitatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Trois faisceaux, ulno-lunatum, ulno-triquetrum et ulno-capitatum, relient le carpe ulnaire à l'ulna par le complexe fibrocartilagineux, dont ils forment la paroi palmaire",
+   "tendu": null,
+   "test": null,
+   "clinique": "Le faisceau ulno-triquetral est sujet aux déchirures longitudinales ; ses lésions s'associent à celles du complexe fibrocartilagineux triangulaire, cause fréquente de douleur ulnaire du poignet",
+   "memo": "Ulno- : trois faisceaux qui partent de l'ulna vers lunatum, triquetrum et capitatum",
+   "variantes": null,
+   "sources": [
+    "wikipedia-ulnocarpien-palmaire",
+    "pmc-margulies",
+    "pmc-echo-poignet",
+    "pmc-tests-poignet"
+   ],
+   "divergences": "Wikipédia fait naître l'ensemble du processus styloïde de l'ulna ; Margulies précise que les faisceaux naissent du ligament radio-ulnaire palmaire et de la fovéa ulnaire, c'est-à-dire du complexe fibrocartilagineux"
+  },
+  {
+   "id": "ligaments-intercarpiens-interosseux",
+   "resume": "Les courts ligaments internes de la rangée proximale et de la rangée distale du carpe, qui soudent les os voisins entre eux.",
+   "nature": "groupe",
+   "articulation": "Carpe (articulations intercarpiennes)",
+   "attaches": [
+    {
+     "texte": "Rangée proximale : scaphoïde, lunatum et triquetrum",
+     "os": [
+      "scaphoide",
+      "lunatum",
+      "triquetrum"
+     ]
+    },
+    {
+     "texte": "Rangée distale : trapèze, trapézoïde, capitatum et hamatum",
+     "os": [
+      "os-trapeze",
+      "trapezoide",
+      "capitatum",
+      "hamatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Deux courts ligaments, scapho-lunatum et luno-triquetral, unissent la rangée proximale ; trois, capito-hamatum, trapézoïdo-capitatum et trapézo-trapézoïdal, la rangée distale. Le capito-hamatum est le plus fort",
+   "tendu": null,
+   "test": "Ballottement luno-triquetral et test de cisaillement de Kleinman : on cherche une douleur sur le lunatum et le triquetrum",
+   "clinique": "La rupture du ligament scapho-lunatum, après une chute sur la main en extension, cause une instabilité scapho-lunaire. Le ligament luno-triquetral porte trois parties, dont la palmaire est la plus épaisse",
+   "memo": "Rangée proximale : deux cordons, scapho-lunaire et luno-triquetral ; rangée distale : trois, dont le capito-hamatum, le plus solide",
+   "variantes": "Le ligament trapézo-trapézoïdal manque parfois ; une mince bande scapho-capitée existe chez certains",
+   "sources": [
+    "gray1918",
+    "pmc-margulies",
+    "pmc-tests-poignet"
+   ],
+   "divergences": "Gray compte deux ligaments proximaux et trois distaux ; Margulies décrit le scapho-lunatum en C (partie dorsale la plus épaisse) et le luno-triquetral en fer à cheval (partie palmaire la plus épaisse)"
+  },
+  {
+   "id": "ligaments-intercarpiens-palmaires",
+   "resume": "Les ligaments du devant du carpe, qui relient les os voisins sous les tendons fléchisseurs.",
+   "nature": "groupe",
+   "articulation": "Carpe (articulations intercarpiennes), face palmaire",
+   "attaches": [
+    {
+     "texte": "Faces palmaires des os de la rangée proximale : scaphoïde, lunatum, triquetrum",
+     "os": [
+      "scaphoide",
+      "lunatum",
+      "triquetrum"
+     ]
+    },
+    {
+     "texte": "Faces palmaires des os de la rangée distale, surtout le capitatum",
+     "os": [
+      "capitatum",
+      "hamatum",
+      "trapezoide",
+      "os-trapeze"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relient par devant les os d'une même rangée et la rangée proximale au capitatum. Ils sont plus faibles que les ligaments dorsaux et placés en profondeur derrière les tendons fléchisseurs et le ligament radiocarpien palmaire",
+   "tendu": null,
+   "test": null,
+   "clinique": "Leur lésion isolée est rare. Une rupture scapho-lunaire n'entraîne la bascule du lunatum en extension (DISI) que si le scapho-trapézio-trapézoïdal ou les ligaments intercarpiens dorsaux sont aussi lésés",
+   "memo": "Palmaires, donc cachés : faibles, ils sont à l'abri sous les fléchisseurs",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-poignet",
+    "pmc-margulies",
+    "pmc-echo-poignet"
+   ],
+   "divergences": "Gray en compte deux pour la rangée proximale, trois pour la distale, et des fibres entre les rangées ; la nomenclature actuelle en nomme huit (scapho-triquetral, luno-triquetral, hamato-capitatum, trapézoïdo-capitatum, scapho-capitatum, triquetro-capitatum, triquetro-hamatum, scapho-trapézio-trapézoïdal)"
+  },
+  {
+   "id": "ligaments-metacarpophalangiens-palmaires",
+   "resume": "Les plaques palmaires fibrocartilagineuses des articulations métacarpo-phalangiennes : une butée qui empêche l'hyperextension.",
+   "nature": "ligament",
+   "articulation": "Articulations métacarpo-phalangiennes des doigts II à V",
+   "attaches": [
+    {
+     "texte": "Face palmaire du col du métacarpien, attache lâche",
+     "os": [
+      "metacarpiens"
+     ]
+    },
+    {
+     "texte": "Face palmaire de la base de la phalange proximale, attache ferme",
+     "os": [
+      "phalanges-proximales"
+     ]
+    },
+    {
+     "texte": "Reliées entre elles par le ligament métacarpien transverse profond",
+     "os": [
+      "ligament-metacarpien-transverse-profond"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Épaississement fibrocartilagineux de la capsule, mêlé aux ligaments collatéraux sur les côtés. Il s'oppose à l'hyperextension, prolonge les facettes de la phalange et porte une gouttière pour les tendons fléchisseurs",
+   "tendu": "En extension du doigt",
+   "test": null,
+   "clinique": "L'atteinte des articulations métacarpo-phalangiennes est typique de la polyarthrite rhumatoïde. Le pouce a deux sésamoïdes dans sa plaque palmaire",
+   "memo": "La plaque palmaire : le plancher du doigt, qui glisse sur la tête du métacarpien",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mcp",
+    "wikipedia-mcp"
+   ],
+   "divergences": "Gray dit le ligament transverse profond mêlé aux plaques palmaires ; Kenhub le décrit devant les interosseux et derrière les lombricaux, sans attache directe aux plaques"
+  },
+  {
+   "id": "long-ligament-radiolunatum",
+   "resume": "Le grand soutien du lunatum par devant : il part du radius, près du styloïde, et s'attache à la face palmaire du lunatum.",
+   "nature": "ligament",
+   "articulation": "Poignet (articulation radiocarpienne), face palmaire",
+   "attaches": [
+    {
+     "texte": "Bord palmaire du radius, près du processus styloïde, ulnaire au ligament radio-scapho-capitatum",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Face palmaire du lunatum",
+     "os": [
+      "lunatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Soutient le lunatum par devant ; c'est son principal ligament de soutien palmaire. Des fibres atteignent parfois le triquetrum",
+   "tendu": null,
+   "test": null,
+   "clinique": "Il est souvent lésé avec d'autres ligaments dans les luxations radiocarpiennes de haute énergie. Le sillon de Poirier se trouve entre lui et le radio-scapho-capitatum",
+   "memo": "Long : il part du styloïde, loin du lunatum qu'il tient",
+   "variantes": "Des fibres peuvent rejoindre le triquetrum : on parle alors de ligament radio-luno-triquetral",
+   "sources": [
+    "pmc-margulies",
+    "pmc-echo-poignet",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-fabellofibulaire",
+   "resume": "Un cordon du coin postéro-latéral du genou, de la fabella à la fibula : un renfort du genou en arrière et en dehors.",
+   "nature": "ligament",
+   "articulation": "Genou (angle postéro-latéral)",
+   "attaches": [
+    {
+     "texte": "Fabella, sésamoïde du chef latéral du gastrocnémien, face postérieure de la crête supracondylaire latérale du fémur",
+     "os": [
+      "femur"
+     ]
+    },
+    {
+     "texte": "Bord postéro-latéral du processus styloïde de la fibula",
+     "os": [
+      "fibula"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce l'angle postéro-latéral du genou avec le ligament poplité arqué, le ligament poplitéo-fibulaire et le collatéral fibulaire. Il s'oppose à la bascule du genou en varus et en rotation latérale",
+   "tendu": null,
+   "test": "Test de rotation latérale en décubitus ventral (dial test), à 30° et à 90° de flexion",
+   "clinique": "Fait partie de l'angle postéro-latéral, souvent lésé avec un ligament croisé après un traumatisme en varus ou en hyperextension. Une instabilité postéro-latérale méconnue fait échouer les reconstructions des croisés",
+   "memo": "De la fabella (le petit os du jumeau) au bec de la fibula : le fil de l'angle postéro-latéral",
+   "variantes": "Lié à la fabella, un sésamoïde inconstant : le ligament n'existe de façon nette que si elle est présente",
+   "sources": [
+    "kenhub-genou",
+    "washington-flandry"
+   ],
+   "divergences": "Le tracé initial citait la fabella ou le condyle latéral du fémur ; Kenhub et Flandry ne décrivent que l'attache sur la fabella. Kenhub le place en arrière sur la crête supracondylaire, Flandry le décrit en partie confondu avec le tractus iliotibial"
+  },
+  {
+   "id": "ligament-femoropatellaire-medial",
+   "resume": "Le hauban de la patella du côté médial : il l'empêche de partir en dehors dans les premiers degrés de flexion.",
+   "nature": "ligament",
+   "articulation": "Articulation fémoro-patellaire",
+   "attaches": [
+    {
+     "texte": "Fémur, entre le tubercule de l'adducteur et l'épicondyle médial",
+     "os": [
+      "femur"
+     ]
+    },
+    {
+     "texte": "Bord supéro-médial de la patella, où il se mêle au vaste médial oblique",
+     "os": [
+      "patella"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Principal frein au déplacement latéral de la patella (50 à 60 % de la force de retenue selon les sources). Il agit surtout dans les 20 à 30 premiers degrés de flexion, avant que la patella ne s'engage dans la trochlée",
+   "tendu": "Genou en extension et jusqu'à 30° de flexion environ",
+   "test": "Test d'appréhension de la patella : on pousse la patella vers l'extérieur, genou fléchi à 20-30°",
+   "clinique": "Il est rompu dans environ 90 % des luxations latérales de la patella, souvent par torsion sans contact. Non réparé, il cicatrise lâche ; la récidive atteint 15 à 44 % des cas. La reconstruction est proposée après deux luxations",
+   "memo": "MPFL : le cordon médial qui retient la patella quand elle veut s'échapper vers l'extérieur",
+   "variantes": "Le point d'insertion fémoral varie d'une étude à l'autre, de la gouttière entre épicondyle et tubercule de l'adducteur à environ 1 cm sous ce tubercule",
+   "sources": [
+    "wikipedia-femoropatellaire-medial",
+    "joo-stabilisateurs-patella",
+    "washington-flandry"
+   ],
+   "divergences": "La part de stabilité attribuée au ligament va de 50 à 60 % à 50 à 80 % selon l'endroit de la page Wikipédia ; le site fémoral varie selon les auteurs (Smirk, Nomura, LaPrade, Baldwin)"
+  },
+  {
+   "id": "ligament-meniscofemoral-anterieur",
+   "resume": "Le ligament de Humphry : du ménisque latéral au fémur, il passe devant le ligament croisé postérieur.",
+   "nature": "ligament",
+   "articulation": "Genou (ménisque latéral et condyle médial du fémur)",
+   "attaches": [
+    {
+     "texte": "Corne postérieure du ménisque latéral",
+     "os": [
+      "menisque-lateral"
+     ]
+    },
+    {
+     "texte": "Face latérale du condyle médial du fémur, devant l'insertion du croisé postérieur",
+     "os": [
+      "femur"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Ancre la corne postérieure du ménisque latéral au fémur en longeant le ligament croisé postérieur par devant",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sur l'IRM, il peut ressembler à une lésion de la corne postérieure du ménisque latéral ; il ne faut pas le prendre pour une déchirure",
+   "memo": "Humphry passe devant le croisé postérieur, Wrisberg derrière",
+   "variantes": "Sa présence varie d'une personne à l'autre",
+   "sources": [
+    "kenhub-genou",
+    "washington-flandry",
+    "gray1918"
+   ],
+   "divergences": "Le nom s'écrit Humphry (Kenhub, Flandry) ou Humphrey (tracé initial). Gray ne décrit que le ligament de Wrisberg"
+  },
+  {
+   "id": "ligament-meniscofemoral-posterieur",
+   "resume": "Le ligament de Wrisberg : du ménisque latéral au fémur, il passe derrière le ligament croisé postérieur.",
+   "nature": "ligament",
+   "articulation": "Genou (ménisque latéral et condyle médial du fémur)",
+   "attaches": [
+    {
+     "texte": "Corne postérieure du ménisque latéral",
+     "os": [
+      "menisque-lateral"
+     ]
+    },
+    {
+     "texte": "Condyle médial du fémur, derrière l'insertion du croisé postérieur",
+     "os": [
+      "femur"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Ancre la corne postérieure du ménisque latéral au fémur en passant derrière le ligament croisé postérieur, vers le haut et en dedans",
+   "tendu": null,
+   "test": null,
+   "clinique": "Il se tient derrière la corne postérieure du ménisque latéral près de son insertion, et l'IRM le prend parfois pour une déchirure méniscale (fausse lésion)",
+   "memo": "Humphry devant le croisé postérieur, Wrisberg derrière : ils l'encadrent",
+   "variantes": "Trouvé chez 64 % des sujets à l'IRM dans une série ; sa présence varie",
+   "sources": [
+    "wikipedia-meniscofemoral-posterieur",
+    "wikipedia-menisque-lateral",
+    "gray1918",
+    "washington-flandry"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-meniscotibial-lateral",
+   "resume": "Le ligament coronaire latéral : une attache lâche du pourtour du ménisque latéral au plateau tibial.",
+   "nature": "ligament",
+   "articulation": "Genou (ménisque latéral)",
+   "attaches": [
+    {
+     "texte": "Bord périphérique du ménisque latéral",
+     "os": [
+      "menisque-lateral"
+     ]
+    },
+    {
+     "texte": "Pourtour du plateau tibial latéral",
+     "os": [
+      "tibia"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Épaississement de la capsule qui fixe le bord externe du ménisque au tibia. Il est interrompu par le hiatus poplité, où passe le tendon du poplité, et laisse au ménisque latéral une grande mobilité",
+   "tendu": null,
+   "test": "Test de McMurray : rotation du genou fléchi, avec une douleur ou un ressaut sur l'interligne",
+   "clinique": "Le ménisque latéral, très mobile, se déchire moins souvent que le médial, qui est fixé au ligament collatéral tibial. Une rupture de l'attache périphérique peut le laisser instable",
+   "memo": "Coronaire latéral : une couronne lâche, donc un ménisque qui bouge",
+   "variantes": "Un ménisque latéral discoïde, plus épais et plus large, est une variante connue",
+   "sources": [
+    "gray1918",
+    "wikipedia-menisque-lateral",
+    "wikipedia-menisque-medial",
+    "washington-flandry"
+   ],
+   "divergences": "Gray parle de ligaments coronaires comme de simples portions de la capsule ; Flandry n'utilise pas ce terme et décrit des fibres capsulaires ménisco-tibiales. Aucune des références ne chiffre la mobilité"
+  },
+  {
+   "id": "ligament-meniscotibial-medial",
+   "resume": "Le ligament coronaire médial : il fixe le pourtour du ménisque médial au plateau tibial.",
+   "nature": "ligament",
+   "articulation": "Genou (ménisque médial)",
+   "attaches": [
+    {
+     "texte": "Bord périphérique du ménisque médial",
+     "os": [
+      "menisque-medial"
+     ]
+    },
+    {
+     "texte": "Pourtour du plateau tibial médial, à environ 5 mm du cartilage",
+     "os": [
+      "tibia"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Fixe le bord externe du ménisque médial au tibia ; avec l'union au ligament collatéral tibial, il rend ce ménisque bien moins mobile que le latéral",
+   "tendu": null,
+   "test": "Test de McMurray : rotation du genou fléchi, avec une douleur ou un ressaut sur l'interligne médial",
+   "clinique": "Le ménisque médial est plus souvent lésé, surtout lors d'une torsion du genou, souvent avec le croisé antérieur. Un écart de plus de 5 mm entre ménisque et tibia évoque un arrachement de l'insertion",
+   "memo": "Coronaire médial : une couronne bien tenue, le ménisque ne bouge presque pas",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-menisque-medial",
+    "washington-flandry"
+   ],
+   "divergences": "Gray parle de ligaments coronaires comme de portions de la capsule ; Flandry n'emploie pas le terme et décrit des fibres ménisco-tibiales capsulaires"
+  },
+  {
+   "id": "ligament-patellotibial",
+   "resume": "La bandelette qui retient la patella en bas et en dedans, entre son bord inférieur et le tibia.",
+   "nature": "ligament",
+   "articulation": "Articulation fémoro-patellaire, rétinaculum médial",
+   "attaches": [
+    {
+     "texte": "Bord inféro-médial de la patella",
+     "os": [
+      "patella"
+     ]
+    },
+    {
+     "texte": "Face antéro-médiale de l'extrémité proximale du tibia",
+     "os": [
+      "tibia"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retenue médiale distale de la patella ; il fait pendant au ligament fémoro-patellaire médial, qui retient la patella plus haut. Il existe aussi du côté latéral",
+   "tendu": null,
+   "test": null,
+   "clinique": "On le garde en mémoire pour la reconstruction distale de l'appareil extenseur chez l'enfant à grand angle Q, car il évite de toucher le cartilage de croissance du tibia",
+   "memo": "Patello-tibial : de la patella droit vers le tibia, en bas et en dedans",
+   "variantes": null,
+   "sources": [
+    "washington-flandry",
+    "joo-stabilisateurs-patella"
+   ],
+   "divergences": "Seul Flandry donne ses attaches (patella inféro-médiale, tibia antéro-médial près de la cicatrice de la physe) ; le tracé initial parlait du condyle médial du tibia. Kenhub et Gray n'en parlent pas"
+  },
+  {
+   "id": "menisque-articulaire",
+   "resume": "Les deux croissants de fibrocartilage du genou, médial et latéral : ils amortissent et ajustent le fémur sur le tibia.",
+   "nature": "groupe",
+   "articulation": "Genou (articulation fémoro-tibiale)",
+   "attaches": [
+    {
+     "texte": "Aire intercondylaire du tibia, par les cornes antérieure et postérieure",
+     "os": [
+      "tibia"
+     ]
+    },
+    {
+     "texte": "Cornes antérieures reliées par le ligament transverse du genou ; corne postérieure du latéral rattachée au fémur par les ligaments méniscofémoraux",
+     "os": [
+      "ligament-transverse-du-genou",
+      "ligament-meniscofemoral-anterieur",
+      "ligament-meniscofemoral-posterieur"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Approfondissent les surfaces tibiales, les adaptent aux condyles du fémur, répartissent les charges et amortissent les chocs ; ils laissent glisser et tourner le genou. Le médial est semi-circulaire, le latéral presque circulaire",
+   "tendu": null,
+   "test": "Test de McMurray : genou fléchi, rotations du tibia avec palpation de l'interligne",
+   "clinique": "La déchirure d'un ménisque survient lors d'une torsion du genou ou d'un choc ; le médial est le plus touché. Seul le tiers externe (zone rouge) est vascularisé : les déchirures de la zone blanche cicatrisent mal",
+   "memo": "Médial en C ouvert, latéral en O presque fermé",
+   "variantes": "Ménisque latéral discoïde chez certains",
+   "sources": [
+    "gray1918",
+    "wikipedia-menisque-lateral",
+    "wikipedia-menisque-medial",
+    "washington-flandry"
+   ],
+   "divergences": "Gray décrit le latéral comme presque circulaire et couvrant plus de surface articulaire ; Flandry le dit en forme de soucoupe, triangulaire en coupe"
+  },
+  {
+   "id": "ligament-bifurque",
+   "resume": "Le ligament en Y du dos du pied : une tige sur le calcanéus qui se divise en deux branches vers le cuboïde et le naviculaire.",
+   "nature": "groupe",
+   "articulation": "Articulation transverse du tarse (de Chopart)",
+   "attaches": [
+    {
+     "texte": "Dépression de la face supérieure du calcanéus, en avant",
+     "os": [
+      "calcaneus"
+     ]
+    },
+    {
+     "texte": "Cuboïde, côté médial, et naviculaire, côté latéral",
+     "os": [
+      "cuboide",
+      "naviculaire"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Lie la rangée postérieure du tarse (calcanéus) à l'antérieure (cuboïde et naviculaire). Sa branche calcanéo-cuboïdienne est un lien essentiel entre les deux rangées du tarse",
+   "tendu": null,
+   "test": null,
+   "clinique": "Fréquemment lésé dans l'entorse en inversion : un arrachement de la partie antéro-latérale du calcanéus peut s'y associer",
+   "memo": "Un Y posé sur le calcanéus : une branche vers le cuboïde, l'autre vers le naviculaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-bifurque"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-collateral-lateral-de-la-cheville",
+   "resume": "Le complexe latéral de la cheville : trois faisceaux qui relient la fibula au talus et au calcanéus.",
+   "nature": "groupe",
+   "articulation": "Cheville (articulation talo-crurale)",
+   "attaches": [
+    {
+     "texte": "Malléole latérale de la fibula",
+     "os": [
+      "fibula"
+     ]
+    },
+    {
+     "texte": "Col et tubercule latéral du talus ; tubercule de la face latérale du calcanéus",
+     "os": [
+      "talus",
+      "calcaneus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retient la cheville du côté latéral. Le talo-fibulaire antérieur est mince et freine la flexion plantaire ; le calcanéo-fibulaire, long, la flexion dorsale ; le talo-fibulaire postérieur, le plus fort, retient le talus en arrière",
+   "tendu": "Antérieur : flexion plantaire ; calcanéo-fibulaire : flexion dorsale",
+   "test": "Tiroir antérieur de la cheville et inclinaison du talus (talar tilt) en inversion",
+   "clinique": "L'entorse en inversion, très courante, touche en premier le talo-fibulaire antérieur, puis le calcanéo-fibulaire. Le talo-fibulaire postérieur n'est lésé que dans les traumatismes sévères",
+   "memo": "Trois fils latéraux : avant, milieu vers le calcanéus, arrière — l'antérieur casse d'abord",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cheville"
+   ],
+   "divergences": "Gray et Kenhub s'accordent sur les trois faisceaux ; pour l'antérieur, Gray parle de limiter l'extension du pied, c'est-à-dire la flexion plantaire des auteurs modernes"
+  },
+  {
+   "id": "ligament-collateral-medial-de-la-cheville",
+   "resume": "Le ligament deltoïde : un éventail de la malléole médiale qui retient la cheville contre l'éversion.",
+   "nature": "groupe",
+   "articulation": "Cheville (articulation talo-crurale)",
+   "attaches": [
+    {
+     "texte": "Sommet et bords de la malléole médiale du tibia",
+     "os": [
+      "tibia"
+     ]
+    },
+    {
+     "texte": "Naviculaire, sustentaculum tali du calcanéus et talus",
+     "os": [
+      "naviculaire",
+      "calcaneus",
+      "talus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retient la cheville du côté médial et s'oppose à l'éversion. Les fibres superficielles vont au naviculaire (tibio-naviculaire), au calcanéus (tibio-calcanéen) et au talus (tibio-talaire postérieur) ; une couche profonde va au talus (tibio-talaire antérieur)",
+   "tendu": "En éversion du pied",
+   "test": "Stress en éversion du talus ; palpation sous la malléole médiale",
+   "clinique": "Les entorses médiales sont beaucoup plus rares que les latérales : la rupture du deltoïde accompagne souvent une fracture de la malléole latérale. Les tendons du tibial postérieur et du fléchisseur long des orteils le recouvrent",
+   "memo": "Comme la lettre delta : un sommet à la malléole médiale, une base large sur le naviculaire, le calcanéus et le talus",
+   "variantes": "Le nombre de faisceaux varie de trois à six selon les descriptions",
+   "sources": [
+    "gray1918",
+    "wikipedia-deltoide",
+    "kenhub-cheville"
+   ],
+   "divergences": "Le tibio-talaire postérieur est dit superficiel par Wikipédia et profond par Kenhub ; Gray distingue deux couches. Kenhub assigne la flexion plantaire à la partie antérieure et la dorsale à la partie postérieure"
+  },
+  {
+   "id": "ligament-tibiotalaire-anterieur",
+   "resume": "Le faisceau profond antérieur du ligament deltoïde : de la malléole médiale à la face médiale du talus.",
+   "nature": "ligament",
+   "articulation": "Cheville (articulation talo-crurale), ligament collatéral médial profond",
+   "attaches": [
+    {
+     "texte": "Colliculus antérieur de la malléole médiale du tibia",
+     "os": [
+      "tibia"
+     ]
+    },
+    {
+     "texte": "Face médiale du talus et son tubercule médial",
+     "os": [
+      "talus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retient le talus contre la malléole médiale ; il freine la flexion plantaire et l'éversion de la cheville",
+   "tendu": "En flexion plantaire",
+   "test": null,
+   "clinique": "Il se rompt avec le reste du deltoïde dans l'éversion forcée de la cheville, souvent avec une fracture de la fibula",
+   "memo": "Le tibio-talaire antérieur : le fil profond qui va du colliculus antérieur à la face interne du talus",
+   "variantes": null,
+   "sources": [
+    "wikipedia-deltoide",
+    "kenhub-cheville",
+    "gray1918"
+   ],
+   "divergences": "Wikipédia et Gray le décrivent comme faisceau profond antérieur ; Kenhub le dit inséré sur le tubercule médial du talus et limitant la flexion plantaire, sans le séparer en nom propre"
+  }
+ ]
+}

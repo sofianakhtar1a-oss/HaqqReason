@@ -106,15 +106,15 @@ classement (« muscle biceps », « os compact »).
 | 2.1 | Thème du site : bleu (sombre) ou blanc (clair), bouton soleil ou lune | 8 | 8 |
 | 2.2 | Mise en avant : la structure visée pleine et liserée, le reste en transparence | 8 | 8 |
 | 2.3 | Hors champ argumenté : liste, raisons, affichage | 4 | 4 |
-| 2.4 | Ensembles de la nomenclature (groupes de Z-Anatomy et règles) | 10 | 9 |
-| 2.5 | Repères affichés, cherchables et comptés ; repères de l'encéphale (noyaux, faisceaux, sillons) | 14 | 10 |
-| 2.6 | Vaisseaux et nerfs tracés (branches, veines satellites, ganglions, plexus) | 16 | 12 |
-| 2.7 | Ligaments, muscles, os et oreille interne modélisés | 8 | 6 |
-| 2.8 | Fiches des nouvelles structures | 8 | 1 |
-| 2.9 | Audit du module et améliorations d'expérience | 12 | 5 |
-| 2.10 | Chaîne relancée, tests, captures, envoi, bilan | 12 | 2 |
+| 2.4 | Ensembles de la nomenclature (groupes de Z-Anatomy et règles) | 10 | 10 |
+| 2.5 | Repères affichés, cherchables et comptés ; repères de l'encéphale (noyaux, faisceaux, sillons) | 14 | 14 |
+| 2.6 | Vaisseaux et nerfs tracés (branches, veines satellites, ganglions, plexus) | 16 | 16 |
+| 2.7 | Ligaments, muscles, os et oreille interne modélisés | 8 | 8 |
+| 2.8 | Fiches des nouvelles structures | 8 | 8 |
+| 2.9 | Audit du module et améliorations d'expérience | 12 | 11 |
+| 2.10 | Chaîne relancée, tests, captures, envoi, bilan | 12 | 10 |
 
-**Deuxième chantier : 65 / 100.**
+**Deuxième chantier : 97 / 100.**
 
 ## Journal
 
@@ -212,6 +212,15 @@ classement (« muscle biceps », « os compact »).
   été contrôlée par `01d_ajouts.py --verifier` et regardée région par région. Corrigé à la relecture : le plexus
   lombal postérieur (réseau des rameaux postérieurs, pas les branches du plexus lombal). La chaîne entière tourne
   (2 466 pièces au lieu de 1 708).
+
+- 21/11 19:40 — Les 812 fiches des nouvelles structures sont rédigées (24 lots, deux références au moins par fiche,
+  contrôlées par `valider_fiches.py`) : chaque couche a maintenant toutes ses fiches (2 510 en tout). La couverture
+  est de 100 % dans chaque couche, hors du champ mis à part (128 termes : pudeur, corps féminin, microscopique,
+  classement, inconstant). Corrigé en route : la veine marginale droite du cœur séparée de la gauche, les petites
+  planches nouvelles fondues dans leur voisine, l'appui d'une branche réservé à un vaisseau ou un nerf, des
+  coquilles du français de la TA2 (moelle, nerf facial, lacrymal, linguale profonde). Le test des gestes mesure
+  désormais les mouvements des articulations que le squelette modélise (99 % joués). Contrôlé dans le navigateur :
+  structures construites avec leur fiche, en clair et en sombre, sur ordinateur et sur téléphone.
 
 ## Pour reprendre après une interruption
 

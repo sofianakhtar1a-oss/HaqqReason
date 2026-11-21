@@ -1,0 +1,1257 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), artères : thoracique interne, intercostales, cœliaque et branches, rénales, iléocolique et arcades coliques, artère pulmonaire",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "wp-posterior-intercostal": {
+   "titre": "Wikipedia, Posterior intercostal arteries",
+   "url": "https://en.wikipedia.org/wiki/Posterior_intercostal_arteries"
+  },
+  "radiopaedia-intercostales": {
+   "titre": "Radiopaedia, Posterior intercostal arteries",
+   "url": "https://radiopaedia.org/articles/posterior-intercostal-arteries"
+  },
+  "wp-internal-thoracic": {
+   "titre": "Wikipedia, Internal thoracic artery",
+   "url": "https://en.wikipedia.org/wiki/Internal_thoracic_artery"
+  },
+  "kenhub-thoracique-interne": {
+   "titre": "Kenhub, Internal thoracic artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/internal-thoracic-artery"
+  },
+  "wp-pericardiacophrenic": {
+   "titre": "Wikipedia, Pericardiacophrenic artery",
+   "url": "https://en.wikipedia.org/wiki/Pericardiacophrenic_artery"
+  },
+  "wp-superior-thoracic": {
+   "titre": "Wikipedia, Superior thoracic artery",
+   "url": "https://en.wikipedia.org/wiki/Superior_thoracic_artery"
+  },
+  "wp-inferior-thyroid": {
+   "titre": "Wikipedia, Inferior thyroid artery",
+   "url": "https://en.wikipedia.org/wiki/Inferior_thyroid_artery"
+  },
+  "wp-esophagus": {
+   "titre": "Wikipedia, Esophagus (vascularisation)",
+   "url": "https://en.wikipedia.org/wiki/Esophagus"
+  },
+  "wp-pulmonary-artery": {
+   "titre": "Wikipedia, Pulmonary artery",
+   "url": "https://en.wikipedia.org/wiki/Pulmonary_artery"
+  },
+  "wp-bronchopulmonary": {
+   "titre": "Wikipedia, Bronchopulmonary segment",
+   "url": "https://en.wikipedia.org/wiki/Bronchopulmonary_segment"
+  },
+  "kenhub-segments-pulmonaires": {
+   "titre": "Kenhub, Bronchopulmonary segments",
+   "url": "https://www.kenhub.com/en/library/anatomy/bronchopulmonary-segments"
+  },
+  "wp-marginal": {
+   "titre": "Wikipedia, Marginal artery of the colon",
+   "url": "https://en.wikipedia.org/wiki/Marginal_artery_of_the_colon"
+  },
+  "wp-ileocolic": {
+   "titre": "Wikipedia, Ileocolic artery",
+   "url": "https://en.wikipedia.org/wiki/Ileocolic_artery"
+  },
+  "wp-cystic": {
+   "titre": "Wikipedia, Cystic artery",
+   "url": "https://en.wikipedia.org/wiki/Cystic_artery"
+  },
+  "wp-hepatic-proper": {
+   "titre": "Wikipedia, Hepatic artery proper",
+   "url": "https://en.wikipedia.org/wiki/Hepatic_artery_proper"
+  },
+  "wp-caudate": {
+   "titre": "Wikipedia, Caudate lobe",
+   "url": "https://en.wikipedia.org/wiki/Caudate_lobe"
+  },
+  "pmc-foie": {
+   "titre": "Liver Anatomy, PubMed Central (PMC4994882)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4994882"
+  },
+  "wp-liver": {
+   "titre": "Wikipedia, Liver",
+   "url": "https://en.wikipedia.org/wiki/Liver"
+  },
+  "wp-splenic": {
+   "titre": "Wikipedia, Splenic artery",
+   "url": "https://en.wikipedia.org/wiki/Splenic_artery"
+  },
+  "wp-gastroduodenal": {
+   "titre": "Wikipedia, Gastroduodenal artery",
+   "url": "https://en.wikipedia.org/wiki/Gastroduodenal_artery"
+  },
+  "wp-gastroepiploic": {
+   "titre": "Wikipedia, Gastroepiploic arteries",
+   "url": "https://en.wikipedia.org/wiki/Gastroepiploic_arteries"
+  },
+  "wp-superior-pancreaticoduodenal": {
+   "titre": "Wikipedia, Superior pancreaticoduodenal artery",
+   "url": "https://en.wikipedia.org/wiki/Superior_pancreaticoduodenal_artery"
+  },
+  "wp-post-sup-pancreaticoduodenal": {
+   "titre": "Wikipedia, Posterior superior pancreaticoduodenal artery",
+   "url": "https://en.wikipedia.org/wiki/Posterior_superior_pancreaticoduodenal_artery"
+  },
+  "wp-inferior-pancreaticoduodenal": {
+   "titre": "Wikipedia, Inferior pancreaticoduodenal artery",
+   "url": "https://en.wikipedia.org/wiki/Inferior_pancreaticoduodenal_artery"
+  },
+  "wp-dorsal-pancreatic": {
+   "titre": "Wikipedia, Dorsal pancreatic artery",
+   "url": "https://en.wikipedia.org/wiki/Dorsal_pancreatic_artery"
+  },
+  "wp-pancreas": {
+   "titre": "Wikipedia, Pancreas (vascularisation)",
+   "url": "https://en.wikipedia.org/wiki/Pancreas"
+  },
+  "wp-renal-artery": {
+   "titre": "Wikipedia, Renal artery",
+   "url": "https://en.wikipedia.org/wiki/Renal_artery"
+  },
+  "kenhub-renal": {
+   "titre": "Kenhub, Renal artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/renal-artery"
+  }
+ },
+ "fiches": [
+  {
+   "id": "artere-intercostale-posterieure",
+   "resume": "Les artères qui nourrissent chaque espace intercostal par l'arrière : deux paires viennent de la subclavière, neuf de l'aorte thoracique.",
+   "provenance": {
+    "artere": "aorte-thoracique",
+    "texte": "Les 1re et 2e naissent de l'artère intercostale suprême (tronc costo-cervical, issu de la subclavière) ; les 3e à 11e, de la face postérieure de l'aorte thoracique"
+   },
+   "trajet": "Chacune longe le bord inférieur de sa côte, sous la veine et au-dessus du nerf intercostal, puis se divise en un rameau antérieur et un rameau dorsal. Les droites, plus longues, croisent les corps vertébraux derrière l'œsophage, le canal thoracique et la veine azygos.",
+   "branches": [
+    {
+     "artere": null,
+     "texte": "Branche spinale, qui entre dans le canal vertébral par le foramen intervertébral"
+    },
+    {
+     "artere": "br-cutanees-dorsales-mediales-de-l-artere-intercostale-post",
+     "texte": "Branche cutanée dorsale médiale"
+    },
+    {
+     "artere": "branche-cutanee-dorsale-lat-artere-intercostale-post",
+     "texte": "Branche cutanée dorsale latérale"
+    },
+    {
+     "artere": null,
+     "texte": "Branche collatérale, le long du bord supérieur de la côte inférieure"
+    }
+   ],
+   "terminaison": "Le rameau antérieur poursuit l'espace intercostal vers l'avant et rejoint l'artère intercostale antérieure issue de la thoracique interne",
+   "territoire": {
+    "texte": "Muscles et peau de l'espace intercostal, muscles et peau du dos, vertèbres, moelle spinale et ses enveloppes (par la branche spinale)",
+    "structures": [
+     "intercostaux-externes",
+     "intercostaux-internes"
+    ]
+   },
+   "rapports": "Veine au-dessus, nerf en dessous ; en avant d'elles, le tronc sympathique et les nerfs splanchniques ; le poumon et la plèvre les recouvrent",
+   "pouls": null,
+   "anastomoses": "Avec les artères intercostales antérieures, ce qui ferme un cercle autour de la paroi ; par les branches spinales, avec les artères spinales antérieure et postérieures",
+   "clinique": "Pour un drain ou une ponction pleurale, on passe au bord supérieur de la côte pour éviter l'artère. Dans la coarctation de l'aorte, ces artères se dilatent et creusent le bord inférieur des côtes.",
+   "memo": "VAN, de haut en bas sous la côte : veine, artère, nerf - l'artère est au milieu",
+   "variantes": "Les artères droites sont plus longues que les gauches, car l'aorte est à gauche de la colonne vertébrale",
+   "sources": [
+    "gray1918",
+    "wp-posterior-intercostal",
+    "radiopaedia-intercostales"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-lingulaire-du-poumon-gauche",
+   "resume": "Les artères de la lingula, la languette du lobe supérieur gauche qui joue le rôle du lobe moyen droit.",
+   "provenance": {
+    "artere": "artere-pulmonaire-gauche",
+    "texte": "Branche de l'artère pulmonaire gauche pour le lobe supérieur ; la nomenclature la range sous l'artère lobaire supérieure"
+   },
+   "trajet": "Elle descend en avant du hile avec la bronche lingulaire, sur sa face postéro-latérale, et se divise en deux branches, l'une pour le segment lingulaire supérieur, l'autre pour l'inférieur.",
+   "branches": [
+    {
+     "artere": "artere-lingulaire-superieure-du-poumon-gauche",
+     "texte": "Artère lingulaire supérieure (segment 4)"
+    },
+    {
+     "artere": "artere-lingulaire-inferieure-du-poumon-gauche",
+     "texte": "Artère lingulaire inférieure (segment 5)"
+    }
+   ],
+   "terminaison": "Se résout en artères segmentaires lingulaires supérieure et inférieure, qui se ramifient dans le parenchyme",
+   "territoire": {
+    "texte": "Lingula du poumon gauche : segments lingulaires supérieur et inférieur du lobe supérieur",
+    "structures": [
+     "lobe-superieur-du-poumon-gauche",
+     "poumon-gauche"
+    ]
+   },
+   "rapports": "Elle accompagne la bronche lingulaire ; la lingula est en avant du hile et son segment inférieur repose sur la scissure oblique",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Chaque segment a sa bronche et son artère : la lingula peut être réséquée seule, sans toucher les segments voisins.",
+   "memo": "Lingula, « petite langue » : une languette de poumon gauche, deux artères, une par segment",
+   "variantes": "Le nombre et l'origine des branches du lobe supérieur gauche varient d'une personne à l'autre",
+   "sources": [
+    "gray1918",
+    "wp-pulmonary-artery",
+    "kenhub-segments-pulmonaires",
+    "wp-bronchopulmonary"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-lobaire-superieure-du-poumon-gauche",
+   "resume": "La branche de l'artère pulmonaire gauche qui nourrit le lobe supérieur : une artère par segment, lingula comprise.",
+   "provenance": {
+    "artere": "artere-pulmonaire-gauche",
+    "texte": "Branche de l'artère pulmonaire gauche, au hile du poumon gauche"
+   },
+   "trajet": "L'artère pulmonaire gauche passe au-dessus de la bronche principale gauche, puis donne au hile une branche pour chaque lobe. Celle du lobe supérieur se divise en artères segmentaires, chacune longeant sa bronche.",
+   "branches": [
+    {
+     "artere": "artere-segmentaire-apicale-du-poumon-gauche",
+     "texte": "Artère segmentaire apicale"
+    },
+    {
+     "artere": "artere-segmentaire-posterieure-du-poumon-gauche",
+     "texte": "Artère segmentaire postérieure"
+    },
+    {
+     "artere": "artere-segmentaire-anterieure-du-poumon-gauche",
+     "texte": "Artère segmentaire antérieure"
+    },
+    {
+     "artere": "artere-lingulaire-superieure-du-poumon-gauche",
+     "texte": "Artère lingulaire supérieure"
+    },
+    {
+     "artere": "artere-lingulaire-inferieure-du-poumon-gauche",
+     "texte": "Artère lingulaire inférieure"
+    }
+   ],
+   "terminaison": "Se termine en artères segmentaires qui se subdivisent en artères sous-segmentaires puis intralobulaires",
+   "territoire": {
+    "texte": "Lobe supérieur du poumon gauche : segments apico-postérieur, antérieur et lingulaires",
+    "structures": [
+     "lobe-superieur-du-poumon-gauche"
+    ]
+   },
+   "rapports": "Chaque artère segmentaire suit la face postéro-latérale de la bronche segmentaire du même nom",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Une lobectomie supérieure gauche exige de lier ces branches, nombreuses et variables : l'imagerie en coupes les repère avant l'opération.",
+   "memo": "Un lobe, une branche ; un segment, une artère - elle suit sa bronche comme son ombre",
+   "variantes": "Les artères du lobe supérieur gauche naissent souvent en plusieurs branches séparées plutôt que d'un tronc unique",
+   "sources": [
+    "gray1918",
+    "wp-pulmonary-artery",
+    "kenhub-segments-pulmonaires"
+   ],
+   "divergences": "Gray fait passer l'artère pulmonaire gauche en avant de la bronche gauche, les manuels actuels au-dessus ; la clinique fusionne apical et postérieur en un segment apico-postérieur, que le modèle sépare."
+  },
+  {
+   "id": "artere-lobaire-inferieure-du-poumon-gauche",
+   "resume": "La branche de l'artère pulmonaire gauche pour le lobe inférieur : l'artère du segment supérieur puis celles des segments basaux.",
+   "provenance": {
+    "artere": "artere-pulmonaire-gauche",
+    "texte": "Branche de l'artère pulmonaire gauche, au hile du poumon gauche"
+   },
+   "trajet": "L'artère pulmonaire gauche donne, pour le lobe inférieur, l'artère du segment supérieur, puis des artères basales qui suivent chacune leur bronche.",
+   "branches": [
+    {
+     "artere": "artere-segmentaire-basale-superieure-du-poumon-gauche",
+     "texte": "Artère du segment supérieur (S6), nommée basale supérieure dans le modèle"
+    },
+    {
+     "artere": "artere-segmentaire-basale-anterieure-du-poumon-gauche",
+     "texte": "Artère segmentaire basale antérieure"
+    },
+    {
+     "artere": "artere-segmentaire-basale-mediale-du-poumon-gauche",
+     "texte": "Artère segmentaire basale médiale"
+    },
+    {
+     "artere": "artere-segmentaire-basale-laterale-du-poumon-gauche",
+     "texte": "Artère segmentaire basale latérale"
+    },
+    {
+     "artere": "artere-segmentaire-basale-posterieure-du-poumon-gauche",
+     "texte": "Artère segmentaire basale postérieure"
+    }
+   ],
+   "terminaison": "Se résout en artères segmentaires basales qui se ramifient jusqu'aux artères intralobulaires",
+   "territoire": {
+    "texte": "Lobe inférieur du poumon gauche : segment supérieur et segments basaux",
+    "structures": [
+     "lobe-inferieur-du-poumon-gauche"
+    ]
+   },
+   "rapports": "Chaque artère segmentaire accompagne la bronche du même nom, sur sa face postéro-latérale",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Une segmentectomie basale gauche suit ces artères segmentaires, chacune accolée à sa bronche.",
+   "memo": "Un segment sommital (S6), puis la base : quatre ou cinq artères suivent chacune leur bronche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-pulmonary-artery",
+    "kenhub-segments-pulmonaires"
+   ],
+   "divergences": "À gauche, les segments basaux antérieur et médial se fondent en un segment antéro-médial basal (S7+8) dans les classifications cliniques ; le modèle garde cinq artères, dont une « basale supérieure » qui correspond au segment supérieur S6."
+  },
+  {
+   "id": "artere-mammaire-thoracique-interne-mediale",
+   "resume": "Les rameaux de l'artère thoracique interne qui traversent le grand pectoral pour nourrir la partie médiale du sein.",
+   "provenance": {
+    "artere": "thoracique-interne",
+    "texte": "Branches des rameaux perforants de l'artère thoracique interne, surtout des 2e au 4e espaces intercostaux"
+   },
+   "trajet": "Les rameaux perforants sortent des espaces intercostaux près du sternum, traversent les muscles intercostaux et le grand pectoral, puis gagnent la glande mammaire et la peau. Ceux des 2e au 4e espaces donnent les rameaux mammaires médiaux.",
+   "branches": [],
+   "terminaison": "Se perd dans le tissu glandulaire de la partie médiale du sein et dans la peau qui le recouvre",
+   "territoire": {
+    "texte": "Partie médiale de la glande mammaire, grand pectoral et peau de la région",
+    "structures": [
+     "grand-pectoral"
+    ]
+   },
+   "rapports": "Ils émergent près du bord du sternum, avec les rameaux cutanés des nerfs intercostaux",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Ces rameaux grossissent pendant l'allaitement. L'artère thoracique interne sert de pédicule aux lambeaux de reconstruction du sein, le plus souvent anastomosée dans le 2e espace.",
+   "memo": "Deuxième, troisième, quatrième espaces : trois étages qui nourrissent le sein côté sternum",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-thoracique-interne",
+    "wp-internal-thoracic"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-pericardiacophrenique",
+   "resume": "La fine artère qui descend avec le nerf phrénique entre la plèvre et le péricarde jusqu'au diaphragme.",
+   "provenance": {
+    "artere": "thoracique-interne",
+    "texte": "Branche de l'artère thoracique interne, née vers le premier cartilage costal"
+   },
+   "trajet": "Elle traverse le thorax avec le nerf phrénique, entre la plèvre et le péricarde, et gagne le diaphragme.",
+   "branches": [],
+   "terminaison": "Se perd dans le diaphragme en rejoignant l'artère musculo-phrénique et les artères phréniques",
+   "territoire": {
+    "texte": "Péricarde fibreux, plèvre et partie centrale du diaphragme",
+    "structures": [
+     "diaphragme"
+    ]
+   },
+   "rapports": "Elle accompagne le nerf phrénique sur tout son trajet thoracique",
+   "pouls": null,
+   "anastomoses": "Avec l'artère musculo-phrénique et les artères phréniques",
+   "clinique": "Son repérage au scanner aide à situer le nerf phrénique droit, exposé lors des ablations par ballon du cœur.",
+   "memo": "Péricardio-phrénique : elle accompagne le nerf phrénique, entre plèvre et péricarde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-pericardiacophrenic",
+    "kenhub-thoracique-interne"
+   ],
+   "divergences": "Gray la fait s'anastomoser avec les artères musculo-phrénique et phrénique inférieure, Wikipédia avec les artères musculo-phrénique et phrénique supérieure."
+  },
+  {
+   "id": "artere-thoracique-superieure",
+   "resume": "La petite artère du haut du thorax : elle naît de l'axillaire et nourrit les muscles pectoraux.",
+   "provenance": {
+    "artere": "axillaire",
+    "texte": "Branche de la première partie de l'artère axillaire"
+   },
+   "trajet": "Elle se porte en dedans le long du bord supérieur du petit pectoral, puis passe entre le petit et le grand pectoral pour gagner la paroi du thorax.",
+   "branches": [],
+   "terminaison": "Se termine dans les pectoraux et la paroi thoracique, où elle s'unit à l'artère thoracique interne et aux artères intercostales",
+   "territoire": {
+    "texte": "Petit pectoral, grand pectoral et paroi thoracique voisine",
+    "structures": [
+     "petit-pectoral",
+     "grand-pectoral"
+    ]
+   },
+   "rapports": "Elle passe entre le petit et le grand pectoral, sous la clavicule",
+   "pouls": null,
+   "anastomoses": "Avec l'artère thoracique interne et les artères intercostales supérieures",
+   "clinique": "Elle ne donne aucun syndrome propre ; c'est un petit vaisseau de la paroi antérieure à connaître lors des abords de l'aisselle et du creux sous-claviculaire.",
+   "memo": "Thoracique supérieure : la plus haute des artères thoraciques de l'axillaire",
+   "variantes": "Elle peut naître de l'artère thoraco-acromiale",
+   "sources": [
+    "gray1918",
+    "wp-superior-thoracic"
+   ],
+   "divergences": "Le tracé d'origine lui donne aussi le subclavier et les deux premiers espaces intercostaux : ni Gray ni Wikipédia ne le confirment ; Gray et Wikipédia citent les deux pectoraux et la paroi thoracique."
+  },
+  {
+   "id": "artere-thyroide-oesophagienne",
+   "resume": "Les rameaux œsophagiens de l'artère thyroïdienne inférieure : ils nourrissent l'œsophage cervical.",
+   "provenance": {
+    "artere": "artere-thyroidienne-inferieure",
+    "texte": "Rameaux œsophagiens de l'artère thyroïdienne inférieure, issue du tronc thyro-cervical"
+   },
+   "trajet": "Nés de l'artère thyroïdienne inférieure derrière la thyroïde, ils descendent sur la face de l'œsophage cervical, qu'ils irriguent.",
+   "branches": [],
+   "terminaison": "Se perdent dans la paroi de l'œsophage cervical en s'unissant aux rameaux œsophagiens de l'aorte",
+   "territoire": {
+    "texte": "Segment cervical de l'œsophage",
+    "structures": [
+     "oesophage"
+    ]
+   },
+   "rapports": "Ils naissent près du trajet du nerf laryngé récurrent, en arrière de la glande thyroïde",
+   "pouls": null,
+   "anastomoses": "Avec les rameaux œsophagiens de l'aorte thoracique, plus bas",
+   "clinique": "L'artère thyroïdienne inférieure se lie en chirurgie thyroïdienne près de la glande, pour épargner le nerf laryngé récurrent et les parathyroïdes.",
+   "memo": "L'œsophage cervical boit à la thyroïdienne inférieure ; le reste, à l'aorte et à la gastrique gauche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-inferior-thyroid",
+    "wp-esophagus"
+   ],
+   "divergences": "Le terme « artère thyroïde œsophagienne » est un nom de nomenclature pour les rameaux œsophagiens ; les textes décrivent surtout l'artère thyroïdienne inférieure."
+  },
+  {
+   "id": "br-cutanees-dorsales-mediales-de-l-artere-intercostale-post",
+   "resume": "Le fin rameau de l'artère intercostale postérieure qui nourrit la peau de la ligne médiane du dos.",
+   "provenance": {
+    "artere": "arteres-intercostales-posterieures",
+    "texte": "Rameau du rameau dorsal de l'artère intercostale postérieure"
+   },
+   "trajet": "Après la naissance du rameau dorsal, il passe entre les processus transverses, contourne les muscles profonds du dos près des processus épineux et atteint la peau de la ligne médiane.",
+   "branches": [],
+   "terminaison": "Se termine dans la peau de la ligne médiane du dos",
+   "territoire": {
+    "texte": "Muscles profonds du dos près des processus épineux et peau de la ligne médiane dorsale",
+    "structures": [
+     "epineux-du-thorax",
+     "semi-epineux-du-thorax"
+    ]
+   },
+   "rapports": "Il suit le rameau postérieur du nerf spinal du même niveau",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Sans syndrome propre : ce petit rameau cutané relaie la circulation locale de la peau et des muscles de la ligne médiane du dos.",
+   "memo": "Médial : celui qui reste près de la ligne des épineuses",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-intercostales"
+   ],
+   "divergences": "Gray décrit le rameau dorsal sans nommer de rameau cutané médial ; la division médiale / latérale vient de Radiopaedia et de la nomenclature."
+  },
+  {
+   "id": "branche-cutanee-dorsale-lat-artere-intercostale-post",
+   "resume": "Le rameau de l'artère intercostale postérieure qui traverse les muscles érecteurs du rachis jusqu'à la peau du dos.",
+   "provenance": {
+    "artere": "arteres-intercostales-posterieures",
+    "texte": "Rameau du rameau dorsal de l'artère intercostale postérieure"
+   },
+   "trajet": "Il naît du rameau dorsal, traverse les muscles érecteurs du rachis et atteint la peau de la région dorsale latérale.",
+   "branches": [],
+   "terminaison": "Se termine dans la peau de la région dorsale latérale",
+   "territoire": {
+    "texte": "Muscles érecteurs du rachis traversés et peau de la région dorsale latérale",
+    "structures": [
+     "iliocostal-du-thorax",
+     "longissimus-du-thorax"
+    ]
+   },
+   "rapports": "Il accompagne le rameau postérieur du nerf spinal du même niveau",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Sans syndrome propre : ce petit rameau cutané relaie la circulation locale de la peau du dos et des érecteurs du rachis.",
+   "memo": "Latéral : celui qui traverse les érecteurs, loin de la ligne médiane",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-intercostales"
+   ],
+   "divergences": "Gray ne décrit comme cutanée latérale que celle du rameau antérieur, qui sort sur le flanc ; ici le rameau cutané dorsal latéral naît du rameau dorsal, comme l'indique Radiopaedia."
+  },
+  {
+   "id": "artere-anastomotique-intercolique",
+   "resume": "L'arcade qui relie les artères coliques voisines le long du côlon et entretient l'artère marginale du côlon.",
+   "provenance": {
+    "artere": "branche-colique-de-l-artere-ileocolique",
+    "texte": "Prolonge la branche colique de l'artère iléocolique, qui monte le long du côlon ascendant"
+   },
+   "trajet": "Les branches coliques voisines (iléocolique, colique droite, colique moyenne) se rejoignent par des arcades près de la paroi du côlon. L'anastomose entre l'iléocolique et la colique droite fait partie de cette chaîne.",
+   "branches": [],
+   "terminaison": "S'unit à la branche de la colique droite pour continuer l'arcade vers la colique moyenne",
+   "territoire": {
+    "texte": "Côlon ascendant et région caecale, par les artères droites qui en partent",
+    "structures": [
+     "colon-ascendant",
+     "caecum"
+    ]
+   },
+   "rapports": "Dans le méso-côlon, près de la paroi intestinale",
+   "pouls": null,
+   "anastomoses": "Avec la colique droite et, plus loin, la colique moyenne ; l'ensemble forme l'artère marginale qui relie les territoires des mésentériques supérieure et inférieure",
+   "clinique": "L'artère marginale permet à un territoire colique de rester irrigué si une artère est bouchée ; en cas de colite ischémique chronique, elle peut se dilater et suppléer.",
+   "memo": "Les coliques se donnent la main : l'arcade intercolique ferme la chaîne le long du côlon",
+   "variantes": "L'artère marginale est presque toujours présente ; son absence est une variante",
+   "sources": [
+    "gray1918",
+    "wp-marginal",
+    "wp-ileocolic"
+   ],
+   "divergences": "Cette « artère anastomotique intercolique » n'est décrite comme un vaisseau à part ni par Gray ni par Wikipédia : seules les anastomoses entre iléocolique, colique droite et colique moyenne sont décrites ; la fiche suit ces textes."
+  },
+  {
+   "id": "artere-cystique",
+   "resume": "L'artère de la vésicule biliaire : une branche grêle de l'artère hépatique droite, à repérer avant de retirer la vésicule.",
+   "provenance": {
+    "artere": "artere-hepatique-droite",
+    "texte": "Le plus souvent branche de l'artère hépatique droite, dans le triangle cysto-hépatique"
+   },
+   "trajet": "Elle passe en général derrière le canal hépatique commun, atteint le col de la vésicule biliaire, descend le long de celui-ci et se divise en une branche superficielle et une branche profonde.",
+   "branches": [
+    {
+     "artere": null,
+     "texte": "Branche superficielle, sous la séreuse de la vésicule"
+    },
+    {
+     "artere": null,
+     "texte": "Branche profonde, entre la vésicule et son lit hépatique"
+    }
+   ],
+   "terminaison": "Se divise en branches superficielle et profonde qui irriguent les deux faces de la vésicule, libre et attachée au foie",
+   "territoire": {
+    "texte": "Vésicule biliaire, canal cystique et petites branches pour les voies biliaires extrahépatiques",
+    "structures": [
+     "vesicule-biliaire"
+    ]
+   },
+   "rapports": "Elle chemine dans le triangle cysto-hépatique, en général au-dessus du canal cystique",
+   "pouls": null,
+   "anastomoses": "Un réseau relie ses branches superficielle et profonde sur le corps et le fond de la vésicule",
+   "clinique": "Au cours d'une cholécystectomie, elle doit être repérée et liée avant de couper le col de la vésicule. Une artère hépatique droite remplaçante peut traverser le triangle et gêner son repérage.",
+   "memo": "Cystique, comme cyste, la vésicule : elle arrive par le col et se divise en deux",
+   "variantes": "Double (environ 15 %) ; naissance basse sur la gastroduodénale (environ 5 %) ; naissance sur l'hépatique gauche (moins de 1 %)",
+   "sources": [
+    "gray1918",
+    "wp-cystic",
+    "wp-hepatic-proper"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-droite-du-lobe-caude",
+   "resume": "La branche de l'artère hépatique droite qui irrigue la partie droite du lobe caudé, le segment I du foie.",
+   "provenance": {
+    "artere": "artere-hepatique-droite",
+    "texte": "Petite branche de l'artère hépatique droite, près du hile"
+   },
+   "trajet": "Née près du hile, elle gagne la partie droite du lobe caudé, situé entre la veine cave inférieure et le pédicule portal.",
+   "branches": [],
+   "terminaison": "Se perd dans la partie droite du lobe caudé, où elle s'unit aux autres artères caudées",
+   "territoire": {
+    "texte": "Partie droite du lobe caudé (segment I) du foie",
+    "structures": [
+     "segment-posterieur-du-foie-i"
+    ]
+   },
+   "rapports": "Le lobe caudé est derrière le hile, entre la veine cave inférieure à droite et le ligament veineux à gauche",
+   "pouls": null,
+   "anastomoses": "Avec les artères du lobe caudé nées de l'hépatique gauche et de la branche moyenne",
+   "clinique": "Dans le syndrome de Budd-Chiari, le lobe caudé grossit et reste fonctionnel, car il se draine directement dans la veine cave.",
+   "memo": "Le lobe caudé a deux alimentations, droite et gauche : son artère droite vient de l'hépatique droite",
+   "variantes": "Les artères du lobe caudé naissent des artères hépatiques droite, gauche ou moyenne, et s'anastomosent",
+   "sources": [
+    "gray1918",
+    "wp-caudate",
+    "pmc-foie"
+   ],
+   "divergences": "Wikipédia les fait naître des artères hépatiques droite, gauche et moyenne ; PMC attribue le lobe caudé à l'hépatique gauche : la fiche retient la droite, comme le tracé, avec ces variations."
+  },
+  {
+   "id": "artere-gastrique-posterieure",
+   "resume": "La branche inconstante de l'artère splénique qui nourrit la face postérieure de l'estomac.",
+   "provenance": {
+    "artere": "artere-splenique",
+    "texte": "Branche inconstante de l'artère splénique"
+   },
+   "trajet": "Quand elle existe, elle naît de l'artère splénique et monte vers la face postérieure du corps et du fundus de l'estomac.",
+   "branches": [],
+   "terminaison": "Se perd dans la paroi postérieure de l'estomac, près du fundus",
+   "territoire": {
+    "texte": "Face postérieure du corps et du fundus de l'estomac",
+    "structures": [
+     "estomac"
+    ]
+   },
+   "rapports": "Elle est en arrière de l'estomac, au-dessus de l'artère splénique",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Petite artère sans syndrome propre ; son existence inconstante est surtout à connaître lors de la dissection de l'estomac et du bord supérieur du pancréas.",
+   "memo": "Gastrique postérieure : la discrète, derrière l'estomac, qui n'existe pas toujours",
+   "variantes": "Elle manque chez un certain nombre de personnes",
+   "sources": [
+    "wp-splenic",
+    "gray1918"
+   ],
+   "divergences": "Gray ne la nomme pas ; Wikipédia (page de l'artère splénique) la cite ; la page Estomac ne la mentionne pas."
+  },
+  {
+   "id": "artere-gastro-omentale-droite",
+   "resume": "La branche terminale de la gastroduodénale qui longe la grande courbure de l'estomac dans le grand omentum.",
+   "provenance": {
+    "artere": "artere-gastroduodenale",
+    "texte": "Branche terminale de l'artère gastroduodénale, à la limite inférieure du duodénum"
+   },
+   "trajet": "Elle suit la grande courbure de l'estomac de droite à gauche, entre les feuillets du grand omentum, et donne des rameaux vers les deux faces de l'estomac et vers le grand omentum.",
+   "branches": [
+    {
+     "artere": null,
+     "texte": "Rameaux gastriques ascendants vers les deux faces de l'estomac"
+    },
+    {
+     "artere": null,
+     "texte": "Rameaux omentaux descendants dans le grand omentum"
+    }
+   ],
+   "terminaison": "S'unit à l'artère gastro-omentale gauche vers le milieu de la grande courbure",
+   "territoire": {
+    "texte": "Moitié droite de la grande courbure de l'estomac et grand omentum",
+    "structures": [
+     "estomac",
+     "grand-omentum"
+    ]
+   },
+   "rapports": "Entre les deux feuillets du grand omentum, le long de la grande courbure",
+   "pouls": null,
+   "anastomoses": "Avec l'artère gastro-omentale gauche, formant l'arcade de la grande courbure",
+   "clinique": "Avec la gauche, elle est la seule source de sang du grand omentum ; une omentectomie la sacrifie.",
+   "memo": "Droite et gauche se rencontrent au milieu de la grande courbure, dans le tablier omental",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-gastroepiploic",
+    "wp-gastroduodenal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-gastro-omentale-gauche",
+   "resume": "La plus grosse branche de l'artère splénique pour l'estomac : elle longe la grande courbure dans le grand omentum.",
+   "provenance": {
+    "artere": "artere-splenique",
+    "texte": "La plus grande branche de l'artère splénique, près du hile de la rate"
+   },
+   "trajet": "Elle descend vers la grande courbure de l'estomac, puis suit celle-ci de gauche à droite entre les feuillets du grand omentum, en donnant des rameaux à l'estomac et à l'omentum.",
+   "branches": [
+    {
+     "artere": null,
+     "texte": "Rameaux gastriques vers les deux faces de l'estomac"
+    },
+    {
+     "artere": null,
+     "texte": "Rameaux omentaux dans le grand omentum"
+    }
+   ],
+   "terminaison": "S'unit à l'artère gastro-omentale droite vers le milieu de la grande courbure",
+   "territoire": {
+    "texte": "Partie moyenne de la grande courbure de l'estomac et grand omentum",
+    "structures": [
+     "estomac",
+     "grand-omentum"
+    ]
+   },
+   "rapports": "Entre les deux feuillets du grand omentum, le long de la grande courbure",
+   "pouls": null,
+   "anastomoses": "Avec l'artère gastro-omentale droite dans le grand omentum ; avec les artères gastriques courtes",
+   "clinique": "Les deux artères gastro-omentales sont les seules à nourrir le grand omentum ; les blesser en chirurgie provoque une hémorragie interne.",
+   "memo": "Gastro-omentale gauche : la grande de la rate vers l'estomac, elle rejoint la droite",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-gastroepiploic",
+    "wp-splenic"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-gauche-du-lobe-caude",
+   "resume": "La branche de l'artère hépatique gauche qui irrigue la partie gauche du lobe caudé, le segment I.",
+   "provenance": {
+    "artere": "artere-hepatique-gauche",
+    "texte": "Petite branche de l'artère hépatique gauche"
+   },
+   "trajet": "Elle naît de l'hépatique gauche près du hile et gagne la partie gauche du lobe caudé, au bord du ligament veineux.",
+   "branches": [],
+   "terminaison": "Se perd dans la partie gauche du lobe caudé",
+   "territoire": {
+    "texte": "Partie gauche du lobe caudé (segment I) du foie",
+    "structures": [
+     "segment-posterieur-du-foie-i"
+    ]
+   },
+   "rapports": "Le lobe caudé est limité à gauche par le sillon du ligament veineux",
+   "pouls": null,
+   "anastomoses": "Avec l'artère droite du lobe caudé",
+   "clinique": "Le lobe caudé, drainé directement par la veine cave inférieure, grossit dans le syndrome de Budd-Chiari.",
+   "memo": "Le lobe caudé reçoit par les deux côtés : cette artère-ci vient de la gauche",
+   "variantes": "Les artères du lobe caudé ont des origines variables : hépatique droite, gauche ou moyenne",
+   "sources": [
+    "gray1918",
+    "wp-caudate",
+    "pmc-foie"
+   ],
+   "divergences": "PMC attribue tout le lobe caudé à l'hépatique gauche ; Wikipédia, aux trois hépatiques (droite, gauche, moyenne)."
+  },
+  {
+   "id": "artere-hepatique-droite",
+   "resume": "La branche droite de l'artère hépatique propre : elle irrigue le lobe droit du foie et donne l'artère cystique.",
+   "provenance": {
+    "artere": "artere-hepatique-propre",
+    "texte": "Branche droite de bifurcation de l'artère hépatique propre, dans le pédicule hépatique"
+   },
+   "trajet": "Elle gagne le lobe droit du foie, le plus souvent en passant derrière le canal hépatique commun, donne l'artère cystique, puis se divise en branches segmentaires antérieure et postérieure.",
+   "branches": [
+    {
+     "artere": "artere-cystique",
+     "texte": "Artère cystique"
+    },
+    {
+     "artere": "artere-droite-du-lobe-caude",
+     "texte": "Artère droite du lobe caudé"
+    },
+    {
+     "artere": "artere-segmentaire-anterieure-du-foie",
+     "texte": "Artère segmentaire antérieure (segments V et VIII)"
+    },
+    {
+     "artere": "artere-segmentaire-posterieure-du-foie",
+     "texte": "Artère segmentaire postérieure (segments VI et VII)"
+    }
+   ],
+   "terminaison": "Se divise en branches segmentaires antérieure et postérieure dans le lobe droit",
+   "territoire": {
+    "texte": "Lobe droit du foie (segments V à VIII), vésicule biliaire et voies biliaires",
+    "structures": [
+     "foie",
+     "vesicule-biliaire"
+    ]
+   },
+   "rapports": "Dans le pédicule hépatique, avec la veine porte et les voies biliaires",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Une hépatique droite remplaçante naît de la mésentérique supérieure dans environ 2 à 16 % des cas ; elle passe près du canal cystique et expose à la lésion en cholécystectomie.",
+   "memo": "Hépatique droite : elle donne la vésicule, puis partage le lobe droit en avant et en arrière",
+   "variantes": "Née de la mésentérique supérieure (hépatique remplaçante) ou accessoire ; autres origines possibles : cœliaque, aorte, splénique, gastrique gauche",
+   "sources": [
+    "gray1918",
+    "wp-hepatic-proper",
+    "pmc-foie"
+   ],
+   "divergences": "Le passage de l'artère derrière le canal hépatique commun est la règle des manuels, que les pages lues n'énoncent pas pour l'hépatique elle-même."
+  },
+  {
+   "id": "artere-hepatique-gauche",
+   "resume": "La branche gauche de l'artère hépatique propre : elle irrigue le lobe gauche du foie et une part du lobe caudé.",
+   "provenance": {
+    "artere": "artere-hepatique-propre",
+    "texte": "Branche gauche de bifurcation de l'artère hépatique propre, dans le pédicule hépatique"
+   },
+   "trajet": "Elle monte vers le lobe gauche du foie, donne l'artère du lobe caudé, puis se divise en branches médiale (segment IV) et latérale (segments II et III).",
+   "branches": [
+    {
+     "artere": "artere-gauche-du-lobe-caude",
+     "texte": "Artère gauche du lobe caudé"
+    },
+    {
+     "artere": "artere-segmentaire-mediale-du-foie",
+     "texte": "Artère segmentaire médiale (segment IV)"
+    },
+    {
+     "artere": "artere-segmentaire-laterale-du-foie",
+     "texte": "Artère segmentaire latérale (segments II et III)"
+    }
+   ],
+   "terminaison": "Se divise en branches segmentaires médiale et latérale du lobe gauche",
+   "territoire": {
+    "texte": "Lobe gauche du foie (segments II à IV) et une part du lobe caudé",
+    "structures": [
+     "foie",
+     "segment-medial-gauche-du-foie-iv",
+     "segment-anterolateral-gauche-du-foie-iii",
+     "segment-posterolateral-gauche-du-foie-ii"
+    ]
+   },
+   "rapports": "Dans le pédicule hépatique, avec la veine porte et les voies biliaires",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Une hépatique gauche remplaçante ou accessoire peut naître de la gastrique gauche : à connaître avant une chirurgie gastrique ou hépatique.",
+   "memo": "Hépatique gauche : trois sorties, caudé, médiale, latérale",
+   "variantes": "Née de la gastrique gauche (hépatique remplaçante ou accessoire) ; l'artère du segment IV peut naître de l'hépatique droite",
+   "sources": [
+    "gray1918",
+    "wp-hepatic-proper",
+    "pmc-foie"
+   ],
+   "divergences": "Le tracé fait monter l'artère vers le sillon ombilical ; les pages lues disent seulement qu'elle irrigue le lobe gauche."
+  },
+  {
+   "id": "artere-pancreaticoduodenale-antero-superieure",
+   "resume": "L'artère qui longe la face antérieure de la tête du pancréas et du duodénum, branche terminale de la gastroduodénale.",
+   "provenance": {
+    "artere": "artere-gastroduodenale",
+    "texte": "Branche terminale de l'artère gastroduodénale, avec la gastro-omentale droite"
+   },
+   "trajet": "Elle descend en avant de la tête du pancréas, dans le sillon entre pancréas et duodénum, et rejoint l'artère pancréaticoduodénale inféro-antérieure.",
+   "branches": [],
+   "terminaison": "S'unit à l'artère pancréaticoduodénale inféro-antérieure pour fermer l'arcade antérieure",
+   "territoire": {
+    "texte": "Face antérieure de la tête du pancréas et du duodénum",
+    "structures": [
+     "pancreas",
+     "duodenum"
+    ]
+   },
+   "rapports": "Dans le sillon pancréatico-duodénal, devant la tête du pancréas",
+   "pouls": null,
+   "anastomoses": "Avec l'artère pancréaticoduodénale inféro-antérieure, branche de la mésentérique supérieure ; relie les territoires cœliaque et mésentérique",
+   "clinique": "L'arcade antérieure assure le relais entre le tronc cœliaque et la mésentérique supérieure : elle peut suppléer en cas de sténose de l'un des deux.",
+   "memo": "Antéro-supérieure : devant la tête, elle descend de la gastroduodénale vers la mésentérique supérieure",
+   "variantes": "Les deux artères pancréaticoduodénales supérieures peuvent naître d'un tronc commun",
+   "sources": [
+    "gray1918",
+    "wp-superior-pancreaticoduodenal",
+    "wp-gastroduodenal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-pancreaticoduodenale-infero-posterieure",
+   "resume": "La branche postérieure de la pancréaticoduodénale inférieure : elle remonte derrière la tête du pancréas.",
+   "provenance": {
+    "artere": "artere-pancreaticoduodenale-inferieure",
+    "texte": "Branche postérieure de l'artère pancréaticoduodénale inférieure, née de la mésentérique supérieure"
+   },
+   "trajet": "Elle remonte entre la tête du pancréas et le duodénum, en arrière de la tête, pour rejoindre la pancréaticoduodénale postérosupérieure.",
+   "branches": [],
+   "terminaison": "S'unit à l'artère pancréaticoduodénale postérosupérieure pour fermer l'arcade postérieure",
+   "territoire": {
+    "texte": "Face postérieure de la tête du pancréas et partie descendante et inférieure du duodénum",
+    "structures": [
+     "pancreas",
+     "duodenum"
+    ]
+   },
+   "rapports": "Entre la tête du pancréas et la concavité du duodénum",
+   "pouls": null,
+   "anastomoses": "Avec l'artère pancréaticoduodénale postérosupérieure, branche de la gastroduodénale",
+   "clinique": "Elle fait partie de l'arcade postérieure du pancréas, relais entre cœliaque et mésentérique supérieure.",
+   "memo": "Inféro-postérieure : de la mésentérique supérieure, elle remonte derrière la tête",
+   "variantes": "La pancréaticoduodénale inférieure naît parfois de la première branche intestinale de la mésentérique supérieure",
+   "sources": [
+    "gray1918",
+    "wp-inferior-pancreaticoduodenal",
+    "wp-superior-pancreaticoduodenal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-pancreaticoduodenale-posterosuperieure",
+   "resume": "La branche postérieure de la pancréaticoduodénale supérieure : elle croise le cholédoque et passe derrière la tête du pancréas.",
+   "provenance": {
+    "artere": "artere-gastroduodenale",
+    "texte": "Branche de l'artère gastroduodénale, souvent la première après l'artère supraduodénale"
+   },
+   "trajet": "Elle passe en avant du canal cholédoque, puis descend derrière la tête du pancréas jusqu'à rejoindre la pancréaticoduodénale inféro-postérieure.",
+   "branches": [],
+   "terminaison": "S'unit à l'artère pancréaticoduodénale inféro-postérieure",
+   "territoire": {
+    "texte": "Face postérieure de la tête du pancréas et du duodénum jusqu'à la papille duodénale majeure",
+    "structures": [
+     "pancreas",
+     "duodenum"
+    ]
+   },
+   "rapports": "Elle croise le canal cholédoque en avant, puis longe la face postérieure de la tête du pancréas",
+   "pouls": null,
+   "anastomoses": "Avec l'artère pancréaticoduodénale inféro-postérieure ; avec les branches pancréatiques de la splénique",
+   "clinique": "Née de la gastroduodénale, elle partage son exposition aux saignements des ulcères duodénaux postérieurs profonds.",
+   "memo": "Postéro-supérieure : elle passe devant le cholédoque, puis derrière la tête du pancréas",
+   "variantes": "Les deux pancréaticoduodénales supérieures naissent parfois d'un tronc commun",
+   "sources": [
+    "gray1918",
+    "wp-post-sup-pancreaticoduodenal",
+    "wp-gastroduodenal"
+   ],
+   "divergences": "Le croisement du cholédoque en avant vient du tracé et des manuels ; les pages lues ne mentionnent pas le cholédoque."
+  },
+  {
+   "id": "artere-pancreatique-dorsale",
+   "resume": "La branche de l'artère splénique qui descend derrière le col du pancréas et le nourrit.",
+   "provenance": {
+    "artere": "artere-splenique",
+    "texte": "Branche de l'artère splénique, née dans ses deux premiers centimètres"
+   },
+   "trajet": "Courte, elle descend derrière le col du pancréas et se divise à son bord inférieur en deux branches, l'une prépancréatique, l'autre pancréatique inférieure.",
+   "branches": [
+    {
+     "artere": "artere-prepancreatique",
+     "texte": "Artère prépancréatique (branche droite)"
+    },
+    {
+     "artere": "artere-pancreatique-inferieure",
+     "texte": "Artère pancréatique inférieure (branche gauche)"
+    }
+   ],
+   "terminaison": "Finit près du bord inférieur du pancréas, près de l'origine de la veine porte, en se continuant par l'artère pancréatique inférieure",
+   "territoire": {
+    "texte": "Col et corps du pancréas",
+    "structures": [
+     "pancreas"
+    ]
+   },
+   "rapports": "Derrière le col du pancréas, près de la jonction splénoportale",
+   "pouls": null,
+   "anastomoses": "Avec l'artère pancréaticoduodénale supérieure ; avec la grande artère pancréatique par sa branche inférieure",
+   "clinique": "Sans syndrome propre ; sa naissance variable (hépatique, mésentérique supérieure) est à connaître avant une chirurgie du pancréas ou une embolisation.",
+   "memo": "Dorsale : elle passe derrière le pancréas et se partage au bord inférieur",
+   "variantes": "Elle peut naître de l'hépatique commune, de la mésentérique supérieure ou du tronc cœliaque, ce qui change sa longueur",
+   "sources": [
+    "wp-dorsal-pancreatic",
+    "gray1918",
+    "wp-pancreas"
+   ],
+   "divergences": "Le partage en branche droite (prépancréatique) et gauche (inférieure) vient du tracé et de la nomenclature ; la page lue dit seulement qu'elle se continue par l'artère pancréatique inférieure."
+  },
+  {
+   "id": "artere-pancreatique-inferieure",
+   "resume": "Le prolongement gauche de l'artère pancréatique dorsale : elle longe le bord inférieur du corps du pancréas.",
+   "provenance": {
+    "artere": "artere-pancreatique-dorsale",
+    "texte": "Branche gauche, ou continuation, de l'artère pancréatique dorsale"
+   },
+   "trajet": "Elle suit le bord inférieur du corps du pancréas vers la queue, derrière le pancréas.",
+   "branches": [],
+   "terminaison": "S'unit à la grande artère pancréatique vers la queue du pancréas",
+   "territoire": {
+    "texte": "Bord inférieur du corps du pancréas et sa face postérieure",
+    "structures": [
+     "pancreas"
+    ]
+   },
+   "rapports": "Au bord inférieur du corps du pancréas, avec la veine splénique au-dessus",
+   "pouls": null,
+   "anastomoses": "Avec la grande artère pancréatique, branche de la splénique",
+   "clinique": "Sans syndrome propre ; elle relie les territoires de la dorsale et de la grande pancréatique, ce qui aide si l'une est obstruée.",
+   "memo": "Pancréatique inférieure : elle prolonge la dorsale le long du bord bas du pancréas",
+   "variantes": null,
+   "sources": [
+    "wp-dorsal-pancreatic",
+    "gray1918",
+    "wp-pancreas"
+   ],
+   "divergences": "Gray ne nomme que la grande artère pancréatique ; l'artère pancréatique inférieure, prolongement de la dorsale, vient de Wikipédia et de la nomenclature."
+  },
+  {
+   "id": "artere-prepancreatique",
+   "resume": "La branche droite de l'artère pancréatique dorsale : elle passe en avant de la tête du pancréas.",
+   "provenance": {
+    "artere": "artere-pancreatique-dorsale",
+    "texte": "Branche droite de l'artère pancréatique dorsale"
+   },
+   "trajet": "Elle suit la face antérieure du pancréas vers la droite et s'unit aux arcades pancréaticoduodénales.",
+   "branches": [],
+   "terminaison": "S'unit aux arcades pancréaticoduodénales sur la tête du pancréas",
+   "territoire": {
+    "texte": "Face antérieure de la tête et du col du pancréas",
+    "structures": [
+     "pancreas"
+    ]
+   },
+   "rapports": "En avant du pancréas, sous le péritoine",
+   "pouls": null,
+   "anastomoses": "Avec les arcades pancréaticoduodénales ; relie ainsi les systèmes splénique et gastroduodénal",
+   "clinique": "Elle fait partie du réseau d'anastomoses qui garde le pancréas irrigué si une artère est obstruée.",
+   "memo": "Prépancréatique : devant le pancréas, elle rejoint les arcades de la tête",
+   "variantes": null,
+   "sources": [
+    "wp-dorsal-pancreatic",
+    "wp-pancreas",
+    "gray1918"
+   ],
+   "divergences": "Cette branche n'est pas décrite dans les pages lues : la fiche suit le tracé et la nomenclature."
+  },
+  {
+   "id": "artere-segmentaire-anterieure-du-foie",
+   "resume": "La branche de l'artère hépatique droite pour le secteur antérieur du foie droit, segments V et VIII.",
+   "provenance": {
+    "artere": "artere-hepatique-droite",
+    "texte": "Branche de l'artère hépatique droite pour le secteur antérieur"
+   },
+   "trajet": "Elle naît de la division de l'hépatique droite et se divise en deux branches : l'une inférieure pour le segment V, l'autre supérieure pour le segment VIII.",
+   "branches": [],
+   "terminaison": "Se divise en branche inférieure (segment V) et supérieure (segment VIII)",
+   "territoire": {
+    "texte": "Secteur antérieur du foie droit : segment V, inférieur, et segment VIII, supérieur",
+    "structures": [
+     "segment-anteromedial-droit-du-foie-v",
+     "segment-posteromedial-droit-du-foie-viii"
+    ]
+   },
+   "rapports": "Dans le pédicule du secteur antérieur, avec la branche portale et le canal biliaire",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Elle est liée avec la branche portale lors d'une section antérieure droite ou d'une segmentectomie V-VIII.",
+   "memo": "Antérieure : les segments V et VIII, en avant et en bas, en avant et en haut",
+   "variantes": null,
+   "sources": [
+    "pmc-foie",
+    "wp-liver",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "artere-segmentaire-anteroinferieure-du-rein",
+   "resume": "L'artère du segment antéro-inférieur du rein, branche de la division antérieure de l'artère rénale.",
+   "provenance": {
+    "artere": "branche-anterieure-de-l-artere-renale",
+    "texte": "Branche de la division antérieure de l'artère rénale"
+   },
+   "trajet": "Elle naît de la division antérieure, qui passe en avant du bassinet, et pénètre dans le sinus rénal pour gagner son segment.",
+   "branches": [],
+   "terminaison": "Se divise en artères lobaires puis interlobaires dans le segment antéro-inférieur",
+   "territoire": {
+    "texte": "Segment antéro-inférieur du rein",
+    "structures": [
+     "rein"
+    ]
+   },
+   "rapports": "Entre la veine rénale en avant et l'uretère en arrière",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Artère de type terminal : sa thrombose cause un infarctus limité à son segment, sans retentissement sur les autres.",
+   "memo": "Entre l'antérosupérieure et l'inférieure : le segment du bas, en avant",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-renal-artery",
+    "kenhub-renal"
+   ],
+   "divergences": "Wikipédia nomme les segments antérieurs supérieur, moyen, inférieur et apical, Kenhub apical, antéro-supérieur, antéro-inférieur, inférieur ; la fiche suit la nomenclature de l'atlas. Le caractère terminal vient de l'usage clinique, non des pages lues."
+  },
+  {
+   "id": "artere-segmentaire-anterosuperieure-du-rein",
+   "resume": "L'artère du segment antéro-supérieur du rein, branche de la division antérieure de l'artère rénale.",
+   "provenance": {
+    "artere": "branche-anterieure-de-l-artere-renale",
+    "texte": "Branche de la division antérieure de l'artère rénale"
+   },
+   "trajet": "Elle naît de la division antérieure de l'artère rénale, passe en avant du bassinet et gagne le segment antéro-supérieur par le sinus rénal.",
+   "branches": [],
+   "terminaison": "Se divise en artères lobaires puis interlobaires dans le segment antéro-supérieur",
+   "territoire": {
+    "texte": "Segment antéro-supérieur du rein",
+    "structures": [
+     "rein"
+    ]
+   },
+   "rapports": "Entre la veine rénale en avant et l'uretère en arrière",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Artère de type terminal : sa thrombose cause un infarctus limité à son segment.",
+   "memo": "Antérosupérieure : le segment du haut, côté ventre",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-renal-artery",
+    "kenhub-renal"
+   ],
+   "divergences": "Les noms des segments diffèrent d'une source à l'autre (Wikipédia : supérieur, moyen, inférieur, apical ; Kenhub : apical, antéro-supérieur, antéro-inférieur, inférieur) ; la fiche suit l'atlas."
+  },
+  {
+   "id": "artere-segmentaire-inferieure-du-rein",
+   "resume": "L'artère du segment inférieur du rein, au pôle inférieur, branche de la division antérieure.",
+   "provenance": {
+    "artere": "branche-anterieure-de-l-artere-renale",
+    "texte": "Branche de la division antérieure de l'artère rénale, pour le pôle inférieur"
+   },
+   "trajet": "Elle naît de la division antérieure, descend vers le pôle inférieur du rein et pénètre dans le sinus rénal.",
+   "branches": [],
+   "terminaison": "Se divise en artères lobaires puis interlobaires dans le segment inférieur",
+   "territoire": {
+    "texte": "Segment inférieur du rein, au pôle inférieur",
+    "structures": [
+     "rein"
+    ]
+   },
+   "rapports": "Entre la veine rénale en avant et l'uretère en arrière",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Artère de type terminal : sa thrombose cause un infarctus limité au pôle inférieur.",
+   "memo": "Inférieure : celle du pôle bas du rein",
+   "variantes": "Une artère rénale accessoire peut entrer par le pôle inférieur plutôt que par le hile",
+   "sources": [
+    "gray1918",
+    "wp-renal-artery",
+    "kenhub-renal"
+   ],
+   "divergences": "Les noms des segments diffèrent d'une source à l'autre ; la fiche suit l'atlas."
+  },
+  {
+   "id": "artere-segmentaire-laterale-du-foie",
+   "resume": "La branche de l'artère hépatique gauche pour le secteur latéral du lobe gauche, segments II et III.",
+   "provenance": {
+    "artere": "artere-hepatique-gauche",
+    "texte": "Branche de l'artère hépatique gauche pour le secteur latéral"
+   },
+   "trajet": "Elle naît de la division de l'hépatique gauche et se divise en deux branches : l'une en avant pour le segment III, l'autre en arrière pour le segment II.",
+   "branches": [],
+   "terminaison": "Se divise en branche antérieure (segment III) et postérieure (segment II)",
+   "territoire": {
+    "texte": "Secteur latéral du lobe gauche : segment III en avant et segment II en arrière",
+    "structures": [
+     "segment-anterolateral-gauche-du-foie-iii",
+     "segment-posterolateral-gauche-du-foie-ii"
+    ]
+   },
+   "rapports": "Dans le pédicule du secteur latéral, à gauche du ligament falciforme",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Elle est liée avec la branche portale lors d'une bisegmentectomie latérale gauche (II-III), notamment pour un don de foie.",
+   "memo": "Latérale : à gauche du ligament falciforme, segments II et III",
+   "variantes": null,
+   "sources": [
+    "pmc-foie",
+    "wp-liver",
+    "gray1918"
+   ],
+   "divergences": "Le modèle ancre cette artère au segment IV ; elle irrigue en réalité les segments II et III (le IV est celui de l'artère médiale)."
+  },
+  {
+   "id": "artere-segmentaire-mediale-du-foie",
+   "resume": "La branche de l'artère hépatique gauche pour le segment IV du foie, le lobe carré.",
+   "provenance": {
+    "artere": "artere-hepatique-gauche",
+    "texte": "Branche de l'artère hépatique gauche pour le secteur médial"
+   },
+   "trajet": "Elle naît de l'hépatique gauche et gagne le segment IV, entre le ligament falciforme et la scissure principale.",
+   "branches": [],
+   "terminaison": "Se perd dans le segment IV",
+   "territoire": {
+    "texte": "Segment IV du foie (lobe carré)",
+    "structures": [
+     "segment-medial-gauche-du-foie-iv"
+    ]
+   },
+   "rapports": "Dans le pédicule du secteur médial, entre le ligament falciforme et la vésicule",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Elle peut naître de l'hépatique droite chez certaines personnes, ce qui compte avant une hépatectomie droite ou gauche.",
+   "memo": "Médiale : le segment IV, le lobe carré, entre le ligament rond et la vésicule",
+   "variantes": "Naissance sur l'artère hépatique droite",
+   "sources": [
+    "pmc-foie",
+    "wp-liver",
+    "gray1918"
+   ],
+   "divergences": "Le tracé mentionne le sillon ombilical ; les pages lues ne détaillent pas le trajet."
+  },
+  {
+   "id": "artere-segmentaire-posterieure-du-foie",
+   "resume": "La branche de l'artère hépatique droite pour le secteur postérieur du foie droit, segments VI et VII.",
+   "provenance": {
+    "artere": "artere-hepatique-droite",
+    "texte": "Branche de l'artère hépatique droite pour le secteur postérieur"
+   },
+   "trajet": "Elle naît de la division de l'hépatique droite et se divise en deux branches : l'une inférieure pour le segment VI, l'autre supérieure pour le segment VII.",
+   "branches": [],
+   "terminaison": "Se divise en branche inférieure (segment VI) et supérieure (segment VII)",
+   "territoire": {
+    "texte": "Secteur postérieur du foie droit : segment VI, inférieur, et segment VII, supérieur",
+    "structures": [
+     "segment-anterolateral-droit-vi",
+     "segment-posterolateral-droit-vii"
+    ]
+   },
+   "rapports": "Dans le pédicule du secteur postérieur, avec la branche portale et le canal biliaire",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Elle est liée avec la branche portale pour une section postérieure droite ou une segmentectomie VI-VII.",
+   "memo": "Postérieure : les segments VI et VII, en bas et en haut du secteur postérieur",
+   "variantes": null,
+   "sources": [
+    "pmc-foie",
+    "wp-liver",
+    "gray1918"
+   ],
+   "divergences": "Le modèle ancre cette artère au segment V ; elle irrigue les segments VI et VII (le V est celui de l'artère antérieure)."
+  },
+  {
+   "id": "artere-segmentaire-posterieure-du-rein",
+   "resume": "L'artère du segment postérieur du rein : le prolongement de la division postérieure, qui passe derrière le bassinet.",
+   "provenance": {
+    "artere": "branche-posterieure-de-l-artere-renale",
+    "texte": "Prolongement de la division postérieure de l'artère rénale"
+   },
+   "trajet": "La division postérieure de l'artère rénale passe derrière le bassinet et se continue par l'artère segmentaire postérieure, qui irrigue seule le segment postérieur.",
+   "branches": [],
+   "terminaison": "Se divise en artères lobaires puis interlobaires dans le segment postérieur",
+   "territoire": {
+    "texte": "Segment postérieur du rein, à lui seul",
+    "structures": [
+     "rein"
+    ]
+   },
+   "rapports": "Derrière le bassinet et l'uretère",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Elle irrigue seule le segment postérieur ; la limite entre son territoire et ceux des artères antérieures est un plan peu vascularisé où le chirurgien peut inciser le rein.",
+   "memo": "Postérieure : elle seule nourrit le segment du dos, derrière le bassinet",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-renal-artery",
+    "kenhub-renal"
+   ],
+   "divergences": "Wikipédia dit que la division postérieure passe derrière l'uretère, Kenhub derrière le bassinet ; la fiche retient le bassinet. Le caractère terminal et la limite entre territoires viennent de l'usage clinique, non des pages lues."
+  },
+  {
+   "id": "artere-segmentaire-superieure-du-rein",
+   "resume": "L'artère du segment supérieur du rein, au pôle supérieur, branche de la division antérieure.",
+   "provenance": {
+    "artere": "branche-anterieure-de-l-artere-renale",
+    "texte": "Branche de la division antérieure de l'artère rénale, pour le pôle supérieur"
+   },
+   "trajet": "Elle naît de la division antérieure, monte vers le pôle supérieur du rein et pénètre dans le sinus rénal.",
+   "branches": [],
+   "terminaison": "Se divise en artères lobaires puis interlobaires dans le segment supérieur",
+   "territoire": {
+    "texte": "Segment supérieur du rein, au pôle supérieur",
+    "structures": [
+     "rein"
+    ]
+   },
+   "rapports": "Entre la veine rénale en avant et l'uretère en arrière",
+   "pouls": null,
+   "anastomoses": null,
+   "clinique": "Artère de type terminal : sa thrombose cause un infarctus limité au pôle supérieur.",
+   "memo": "Supérieure : celle du pôle haut du rein, appelée apicale par Kenhub",
+   "variantes": "Une artère rénale accessoire peut entrer par le pôle supérieur plutôt que par le hile",
+   "sources": [
+    "gray1918",
+    "wp-renal-artery",
+    "kenhub-renal"
+   ],
+   "divergences": "Kenhub l'appelle apicale, Wikipédia supérieure ou apicale ; la fiche suit l'atlas."
+  }
+ ]
+}

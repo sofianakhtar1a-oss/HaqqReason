@@ -1,0 +1,23 @@
+{
+ "lot": "veine-ajouts-5",
+ "couche": "veine",
+ "structures": [
+  {
+   "id": "veine-marginale-droite-du-coeur",
+   "nom": "Veine marginale droite du cœur",
+   "latin": "Vena marginalis dextra cordis",
+   "anglais": "Right marginal vein of heart",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Veine marginale droite du cœur",
+   "ta2": "4167",
+   "connu": {
+    "description_du_trace": "Elle longe le bord droit (aigu) du ventricule droit et se jette dans l'atrium droit ou dans la petite veine cardiaque.",
+    "appui_dans_le_modele": {
+     "id": "atrium-droit",
+     "nom": "Atrium droit"
+    }
+   }
+  }
+ ]
+}

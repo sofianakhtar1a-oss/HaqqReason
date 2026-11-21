@@ -1,0 +1,188 @@
+{
+  "sources": {
+    "gray1918": {
+      "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral : ostéologie (côtes, hyoïde, mandibule, main, pied) et arthrologie des côtes (Internet Archive)",
+      "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+    },
+    "wp-hyoid": {
+      "titre": "Wikipedia (anglais) — Hyoid bone",
+      "url": "https://en.wikipedia.org/wiki/Hyoid_bone"
+    },
+    "wp-mandible": {
+      "titre": "Wikipedia (anglais) — Mandible",
+      "url": "https://en.wikipedia.org/wiki/Mandible"
+    },
+    "wp-rib": {
+      "titre": "Wikipedia (anglais) — Rib",
+      "url": "https://en.wikipedia.org/wiki/Rib"
+    },
+    "wp-carpal-bones": {
+      "titre": "Wikipedia (anglais) — Carpal bones",
+      "url": "https://en.wikipedia.org/wiki/Carpal_bones"
+    },
+    "kenhub-os-du-carpe": {
+      "titre": "Kenhub — Carpal bones",
+      "url": "https://www.kenhub.com/en/library/anatomy/carpal-bones"
+    },
+    "wp-sesamoid": {
+      "titre": "Wikipedia (anglais) — Sesamoid bone",
+      "url": "https://en.wikipedia.org/wiki/Sesamoid_bone"
+    },
+    "wp-tarsus": {
+      "titre": "Wikipedia (anglais) — Tarsus (skeleton)",
+      "url": "https://en.wikipedia.org/wiki/Tarsus_(skeleton)"
+    },
+    "wp-metatarsal": {
+      "titre": "Wikipedia (anglais) — Metatarsal bones",
+      "url": "https://en.wikipedia.org/wiki/Metatarsal_bones"
+    }
+  },
+  "fiches": [
+    {
+      "id": "os-extracraniens-de-la-tete",
+      "resume": "Les deux os de la tête hors de la boîte crânienne : la mandibule, seul os mobile du crâne, et l'hyoïde, un os isolé qui flotte entre le menton et le larynx.",
+      "sorte": "groupe",
+      "articulations": [
+        { "os": "temporal", "nom": "Articulation temporo-mandibulaire (par la mandibule)", "type": "ginglyme et plane, avec un disque" }
+      ],
+      "reliefs": [
+        { "nom": "Corps de la mandibule", "role": "Fer à cheval du menton ; son bord supérieur, la partie alvéolaire, porte les seize alvéoles des dents inférieures" },
+        { "nom": "Branche et angle de la mandibule", "role": "Branche montante de chaque côté ; l'angle est son coin postéro-inférieur. Le masséter couvre sa face latérale, le ptérygoïdien médial sa face médiale" },
+        { "nom": "Processus condylaire et processus coronoïde", "role": "Le condyle forme l'articulation temporo-mandibulaire ; le processus coronoïde, en avant de l'incisure mandibulaire, reçoit le temporal" },
+        { "nom": "Corps de l'hyoïde", "role": "Pièce médiane, convexe en avant ; s'y attachent le génio-hyoïdien, le mylo-hyoïdien, le sterno-hyoïdien et l'omo-hyoïdien" },
+        { "nom": "Grandes cornes de l'hyoïde", "role": "Elles partent en arrière du corps ; s'y attachent l'hyo-glosse, le constricteur moyen du pharynx et le thyro-hyoïdien, et la membrane thyro-hyoïdienne" },
+        { "nom": "Petites cornes de l'hyoïde", "role": "Deux petits cônes à la jonction du corps et des grandes cornes ; le ligament stylo-hyoïdien s'attache à leur sommet" }
+      ],
+      "foramens": [
+        { "nom": "Foramen mandibulaire", "contenu": "Face médiale de la branche : nerf alvéolaire inférieur et vaisseaux, qui entrent dans le canal mandibulaire" },
+        { "nom": "Foramen mentonnier", "contenu": "Face latérale du corps, sous les prémolaires : nerf mentonnier et vaisseaux (sensibilité du menton et de la lèvre inférieure)" }
+      ],
+      "ossification": "Mandibule : un centre par moitié, près du foramen mentonnier vers la 6e semaine fœtale ; les moitiés se soudent à la symphyse dans l'année qui suit la naissance. Hyoïde : six centres (deux pour le corps, un par corne) ; corps et grandes cornes restent unis par du tissu fibreux jusqu'à l'âge mûr",
+      "palpation": "Le bord inférieur et l'angle de la mandibule se sentent sous la peau ; l'hyoïde se sent à l'avant du cou, entre le menton et le larynx, vers la hauteur de C3",
+      "clinique": "Mandibule : les fractures sont souvent doubles (col du condyle d'un côté, corps de l'autre) et gênent l'occlusion des dents ; la luxation se fait vers l'avant. Hyoïde : bien protégé, il se fracture rarement ; chez l'adulte, sa fracture fait penser à une strangulation",
+      "memo": "La mandibule est la seule pièce du crâne qui bouge ; l'hyoïde, le seul os du corps qui ne s'articule avec aucun autre",
+      "variantes": "Les petites cornes de l'hyoïde forment parfois une vraie articulation avec les grandes cornes",
+      "sources": ["gray1918", "wp-hyoid", "wp-mandible"],
+      "divergences": null
+    },
+    {
+      "id": "cotes",
+      "resume": "Les douze paires de côtes : des arcs osseux prolongés par des cartilages, qui forment la cage thoracique et se soulèvent à chaque inspiration.",
+      "sorte": "groupe",
+      "articulations": [
+        { "os": "vertebres-thoraciques", "nom": "Articulations costo-vertébrales : la tête avec les corps vertébraux, le tubercule avec le processus transverse", "type": "planes" },
+        { "os": "cartilages-costaux", "nom": "Jonction costo-chondrale, entre le bout de la côte et son cartilage", "type": "synchondrose" },
+        { "os": "sternum", "nom": "Articulations sterno-costales des côtes 2 à 7 ; la première côte est soudée directement au manubrium", "type": "planes (synchondrose pour la première)" }
+      ],
+      "reliefs": [
+        { "nom": "Tête, col et tubercule", "role": "Extrémité postérieure : la tête s'articule avec les vertèbres, le tubercule avec le processus transverse ; le col, long d'environ 2,5 cm, les relie" },
+        { "nom": "Angle et corps", "role": "Le corps est la partie plate et courbe ; l'angle est le coude où la côte change de direction, et sa face interne porte le sillon costal" },
+        { "nom": "Première côte", "role": "Courte, large, plate et très courbe ; ni angle ni sillon costal, une seule facette à la tête, un tubercule du scalène sur sa face supérieure" },
+        { "nom": "Côtes 8 à 10", "role": "Leur cartilage se joint à celui de la côte située au-dessus : attache indirecte au sternum" },
+        { "nom": "Côtes 11 et 12", "role": "Ni col ni tubercule, une seule facette à la tête, extrémité antérieure pointue et libre : ce sont les côtes flottantes" }
+      ],
+      "foramens": [
+        { "nom": "Sillon costal", "contenu": "Face interne du bord inférieur : veine, artère et nerf intercostaux, de haut en bas" }
+      ],
+      "ossification": "Un centre pour le corps dès la fin du 2e mois fœtal (d'abord aux 6e et 7e côtes), puis trois centres épiphysaires (tête et deux pour le tubercule) entre 16 et 20 ans, soudés vers 25 ans ; les côtes 11 et 12 n'ont que deux centres",
+      "palpation": "On compte les côtes entre les doigts sur le thorax, à partir de l'angle sternal (2e côte) ; la première, cachée sous la clavicule, ne se sent pas",
+      "clinique": "Une fracture de côte fait mal à l'inspiration et peut blesser la plèvre (pneumothorax). Plusieurs côtes cassées en deux endroits forment un volet costal qui se creuse quand on inspire. Une côte cervicale peut comprimer le plexus brachial ou l'artère subclavière",
+      "memo": "7 vraies, 3 fausses attachées au cartilage du dessus, 2 flottantes : 7 + 3 + 2 = 12 paires",
+      "variantes": "Côte cervicale chez environ une personne sur 500, d'un côté ou des deux",
+      "sources": ["gray1918", "wp-rib"],
+      "divergences": "Wikipédia anglais dit que les côtes 8 à 10 partagent une attache cartilagineuse au sternum ; Gray précise qu'elles se joignent au cartilage de la côte du dessus, donc indirectement. On retient Gray"
+    },
+    {
+      "id": "os-du-carpe",
+      "resume": "Les huit petits os du poignet, en deux rangées de quatre : ils relient l'avant-bras à la main et creusent la gouttière du canal carpien.",
+      "sorte": "groupe",
+      "articulations": [
+        { "os": "radius", "nom": "Articulation radio-carpienne, par le scaphoïde et le lunatum", "type": "condylaire" },
+        { "os": "metacarpiens", "nom": "Articulations carpo-métacarpiennes, par la rangée distale", "type": "planes (en selle pour le pouce)" }
+      ],
+      "reliefs": [
+        { "nom": "Rangée proximale", "role": "Du côté du pouce vers le petit doigt : scaphoïde, lunatum, triquetrum, pisiforme ; les trois premiers forment la convexité qui s'emboîte dans le radius" },
+        { "nom": "Rangée distale", "role": "Trapèze, trapézoïde, capitatum, hamatum, du pouce vers le petit doigt ; plus rigide, elle bouge avec les métacarpiens" },
+        { "nom": "Gouttière du carpe", "role": "Chaque rangée forme une arche à concavité palmaire ; fermée par le rétinaculum des fléchisseurs, elle devient le canal carpien" },
+        { "nom": "Tubercules du scaphoïde et du trapèze", "role": "Saillies palmaires du côté du pouce, qui bordent le canal carpien ; celui du scaphoïde se sent à la base de la paume" },
+        { "nom": "Pisiforme", "role": "Petit os sésamoïde dans le tendon du fléchisseur ulnaire du carpe, saillant à la base du bord ulnaire de la paume" },
+        { "nom": "Crochet de l'hamatum", "role": "Saillie palmaire qui forme la paroi médiale du canal carpien" }
+      ],
+      "ossification": "Chaque os naît d'un seul centre, après la naissance, en spirale du côté ulnaire vers le côté radial : capitatum vers 2,5 mois, hamatum 4 à 5 mois, triquetrum 2 ans, lunatum 5 ans, trapèze, trapézoïde et scaphoïde vers 6 ans, pisiforme vers 12 ans",
+      "palpation": "Le scaphoïde se sent au fond de la tabatière anatomique, et le pisiforme à la base du bord ulnaire de la paume",
+      "clinique": "Le scaphoïde est le carpien le plus souvent fracturé, après une chute sur la main en extension : douleur dans la tabatière anatomique. Sa vascularisation, issue de rameaux de l'artère radiale, est fragile : la fracture expose à la nécrose avasculaire",
+      "memo": "Du pouce au petit doigt, deux fois quatre : Scaphoïde, Lunatum, Triquetrum, Pisiforme, puis Trapèze, Trapézoïde, Capitatum, Hamatum",
+      "variantes": "Plus de vingt os accessoires ont été décrits, dont quatre seulement sont sûrs (central, styloïde, trapézoïde secondaire, pisiforme secondaire) ; scaphoïde, triquetrum et pisiforme sont parfois divisés en deux",
+      "sources": ["gray1918", "wp-carpal-bones", "kenhub-os-du-carpe"],
+      "divergences": "Les âges d'apparition diffèrent : Gray (1918) donne capitatum et hamatum la 1re année, triquetrum 3 ans, lunatum et trapèze 5 ans, scaphoïde 6 ans, trapézoïde 8 ans, pisiforme 12 ans. On retient les valeurs récentes de Wikipédia"
+    },
+    {
+      "id": "os-sesamoides-de-la-main",
+      "resume": "Deux petits os arrondis, radial et ulnaire, enchâssés dans les tendons à la face palmaire de la tête du premier métacarpien : ils protègent les tendons et augmentent le bras de levier du pouce.",
+      "sorte": "sesamoide",
+      "articulations": [
+        { "os": "premier-metacarpien", "nom": "Facettes palmaires de la tête du premier métacarpien, à l'articulation métacarpo-phalangienne du pouce", "type": "plane" }
+      ],
+      "reliefs": [
+        { "nom": "Éminences palmaires de la tête du premier métacarpien", "role": "Deux saillies sur lesquelles glissent les sésamoïdes ; la latérale est la plus grande" },
+        { "nom": "Sésamoïde radial", "role": "Côté du bord latéral du pouce, dans le tendon du court fléchisseur du pouce" },
+        { "nom": "Sésamoïde ulnaire", "role": "Côté de l'index, dans les tendons du court fléchisseur et de l'adducteur du pouce" }
+      ],
+      "ossification": null,
+      "palpation": null,
+      "clinique": "Très peu vascularisés, ils sont exposés à la nécrose avasculaire. Un sésamoïde accessoire se reconnaît à son contour régulier et à sa forme ovoïde, ce qui le distingue d'un fragment d'avulsion après un traumatisme",
+      "memo": "Deux poulies de la taille d'une graine de sésame sous la tête du premier métacarpien : elles lissent le glissement des tendons du pouce",
+      "variantes": "Un sésamoïde est souvent présent aussi à la tête du deuxième et du cinquième métacarpien ; des sésamoïdes accessoires existent comme variantes",
+      "sources": ["gray1918", "wp-sesamoid"],
+      "divergences": "Gray place les deux sésamoïdes dans les tendons du court fléchisseur du pouce ; Wikipédia anglais cite aussi l'adducteur du pouce. On retient les deux : le court fléchisseur pour chacun, l'adducteur pour l'ulnaire"
+    },
+    {
+      "id": "os-du-tarse",
+      "resume": "Les sept os de l'arrière-pied et du médio-pied : talus et calcanéus en arrière, puis naviculaire, cuboïde et trois cunéiformes en avant.",
+      "sorte": "groupe",
+      "articulations": [
+        { "os": "tibia", "nom": "Articulation talo-crurale, par le talus, avec le tibia et la fibula", "type": "ginglyme" },
+        { "os": "fibula", "nom": "Articulation talo-crurale, par le talus, avec la malléole latérale", "type": "ginglyme" },
+        { "os": "os-metatarsiens", "nom": "Articulations tarso-métatarsiennes, par les cunéiformes et le cuboïde", "type": "planes" }
+      ],
+      "reliefs": [
+        { "nom": "Talus", "role": "Reçoit le poids de la jambe ; il s'articule avec quatre os : tibia, fibula, calcanéus et naviculaire" },
+        { "nom": "Calcanéus", "role": "Le plus gros os du tarse : il forme le talon et s'articule avec le talus (articulation subtalaire) et le cuboïde" },
+        { "nom": "Naviculaire", "role": "Entre la tête du talus et les trois cunéiformes ; il s'articule parfois avec le cuboïde" },
+        { "nom": "Cuboïde", "role": "Côté latéral : il s'articule avec le calcanéus, le troisième cunéiforme et les 4e et 5e métatarsiens" },
+        { "nom": "Cunéiformes médial, intermédiaire et latéral", "role": "Trois coins devant le naviculaire, qui portent les trois premiers métatarsiens et forment la voûte transversale" },
+        { "nom": "Articulation transverse du tarse (de Chopart)", "role": "Talo-naviculaire et calcanéo-cuboïdienne : elle sépare l'arrière-pied du médio-pied" }
+      ],
+      "ossification": "Calcanéus au 6e mois fœtal, talus au 7e, cuboïde au 9e ; troisième cunéiforme la 1re année, premier à 3 ans, deuxième et naviculaire à 4 ans. Une épiphyse postérieure du calcanéus apparaît vers 10 ans et se soude peu après la puberté",
+      "palpation": "Le talon (calcanéus) et la saillie du naviculaire sur le bord médial du pied se sentent sous la peau",
+      "clinique": "Le calcanéus se fracture surtout lors d'une chute de haut sur les talons. Les articulations subtalaire et transverse du tarse rendent le pied tantôt souple (réception du pas), tantôt rigide (poussée), selon la position du talus et du calcanéus",
+      "memo": "Sept os en deux étages : talus et calcanéus derrière, les cinq autres devant",
+      "variantes": "Le cuboïde s'articule parfois avec le naviculaire",
+      "sources": ["gray1918", "wp-tarsus"],
+      "divergences": null
+    },
+    {
+      "id": "os-metatarsiens",
+      "resume": "Les cinq os du métatarse, entre le tarse et les orteils : chacun a une base, un corps et une tête ; le premier est le plus épais, le deuxième le plus long.",
+      "sorte": "groupe",
+      "articulations": [
+        { "os": "cuneiformes", "nom": "Articulations tarso-métatarsiennes : le 1er avec le cunéiforme médial, le 2e avec les trois, le 3e avec le latéral, le 4e avec le latéral et le cuboïde", "type": "planes" },
+        { "os": "cuboide", "nom": "Articulations tarso-métatarsiennes des 4e et 5e métatarsiens avec le cuboïde", "type": "planes" },
+        { "os": "phalanges-pied", "nom": "Articulations métatarso-phalangiennes, par les têtes", "type": "condylaires" }
+      ],
+      "reliefs": [
+        { "nom": "Base", "role": "Extrémité proximale en coin, qui s'articule avec le tarse et avec les bases voisines (articulations intermétatarsiennes)" },
+        { "nom": "Corps", "role": "Effilé vers l'avant, courbé de sorte que sa face plantaire soit concave" },
+        { "nom": "Tête", "role": "Extrémité distale convexe, qui s'articule avec la phalange proximale ; sa face plantaire est creusée pour les tendons fléchisseurs" },
+        { "nom": "Tubérosité du cinquième métatarsien", "role": "Saillie latérale de la base : le fibulaire court s'y insère, le fibulaire tiers sur le dessus de la base" }
+      ],
+      "ossification": "Les 2e à 5e ont deux centres, un pour le corps (vers la 9e semaine fœtale) et un pour la tête (5 à 8 ans) ; le premier a un centre pour le corps et un pour la base (vers 3 ans). Tout se soude aux corps entre 18 et 20 ans",
+      "palpation": "La tubérosité du cinquième métatarsien fait saillie sur le bord latéral du pied, en avant de la cheville",
+      "clinique": "Fractures de fatigue, dites de marche, surtout aux 2e et 3e métatarsiens, qui restent fixes quand on marche. Le cinquième peut se fracturer quand le pied part en supination forcée",
+      "memo": "Le plus long est le deuxième, le plus épais le premier : la longueur va dans l'ordre 2, 3, 4, 5, puis 1",
+      "variantes": "Chez l'enfant, une plaque de croissance distale accessoire est fréquente au premier métatarsien",
+      "sources": ["gray1918", "wp-metatarsal"],
+      "divergences": null
+    }
+  ]
+}

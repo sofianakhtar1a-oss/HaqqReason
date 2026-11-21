@@ -1,0 +1,2158 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral sur Internet Archive",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "wp-epicranius": {
+   "titre": "Wikipédia (en) : Occipitofrontalis (épicrânien)",
+   "url": "https://en.wikipedia.org/wiki/Epicranius_muscle"
+  },
+  "wp-temporoparietalis": {
+   "titre": "Wikipédia (en) : Temporoparietalis",
+   "url": "https://en.wikipedia.org/wiki/Temporoparietalis_muscle"
+  },
+  "wp-auricular-muscles": {
+   "titre": "Wikipédia (en) : Auricular muscles",
+   "url": "https://en.wikipedia.org/wiki/Auricular_muscles"
+  },
+  "wp-helicis-major": {
+   "titre": "Wikipédia (en) : Helicis major",
+   "url": "https://en.wikipedia.org/wiki/Helicis_major_muscle"
+  },
+  "wp-helicis-minor": {
+   "titre": "Wikipédia (en) : Helicis minor",
+   "url": "https://en.wikipedia.org/wiki/Helicis_minor_muscle"
+  },
+  "wp-tragicus": {
+   "titre": "Wikipédia (en) : Tragicus",
+   "url": "https://en.wikipedia.org/wiki/Tragicus_muscle"
+  },
+  "wp-antitragicus": {
+   "titre": "Wikipédia (en) : Antitragicus",
+   "url": "https://en.wikipedia.org/wiki/Antitragicus_muscle"
+  },
+  "wp-transverse-auricle": {
+   "titre": "Wikipédia (en) : Transverse muscle of auricle",
+   "url": "https://en.wikipedia.org/wiki/Transverse_muscle_of_auricle"
+  },
+  "wp-oblique-auricle": {
+   "titre": "Wikipédia (en) : Oblique muscle of auricle",
+   "url": "https://en.wikipedia.org/wiki/Oblique_muscle_of_auricle"
+  },
+  "wp-transversus-menti": {
+   "titre": "Wikipédia (en) : Transversus menti",
+   "url": "https://en.wikipedia.org/wiki/Transversus_menti"
+  },
+  "wp-stapedius": {
+   "titre": "Wikipédia (en) : Stapedius muscle",
+   "url": "https://en.wikipedia.org/wiki/Stapedius_muscle"
+  },
+  "wp-hyoglossus": {
+   "titre": "Wikipédia (en) : Hyoglossus",
+   "url": "https://en.wikipedia.org/wiki/Hyoglossus"
+  },
+  "wp-muscles-tongue": {
+   "titre": "Wikipédia (en) : Muscles of the tongue",
+   "url": "https://en.wikipedia.org/wiki/Muscles_of_the_tongue"
+  },
+  "wp-styloglossus": {
+   "titre": "Wikipédia (en) : Styloglossus",
+   "url": "https://en.wikipedia.org/wiki/Styloglossus"
+  },
+  "wp-palatoglossus": {
+   "titre": "Wikipédia (en) : Palatoglossus",
+   "url": "https://en.wikipedia.org/wiki/Palatoglossus_muscle"
+  },
+  "wp-salpingopharyngeus": {
+   "titre": "Wikipédia (en) : Salpingopharyngeus",
+   "url": "https://en.wikipedia.org/wiki/Salpingopharyngeus_muscle"
+  },
+  "wp-thyroarytenoid": {
+   "titre": "Wikipédia (en) : Thyroarytenoid muscle",
+   "url": "https://en.wikipedia.org/wiki/Thyroarytenoid_muscle"
+  },
+  "wp-vocalis": {
+   "titre": "Wikipédia (en) : Vocalis muscle",
+   "url": "https://en.wikipedia.org/wiki/Vocalis_muscle"
+  },
+  "wp-iliopsoas": {
+   "titre": "Wikipédia (en) : Iliopsoas",
+   "url": "https://en.wikipedia.org/wiki/Iliopsoas"
+  },
+  "wp-quadriceps": {
+   "titre": "Wikipédia (en) : Quadriceps femoris muscle",
+   "url": "https://en.wikipedia.org/wiki/Quadriceps_femoris_muscle"
+  },
+  "wp-articularis-genus": {
+   "titre": "Wikipédia (en) : Articularis genus muscle",
+   "url": "https://en.wikipedia.org/wiki/Articularis_genus_muscle"
+  },
+  "wp-articularis-cubiti": {
+   "titre": "Wikipédia (en) : Articularis cubiti muscle",
+   "url": "https://en.wikipedia.org/wiki/Articularis_cubiti_muscle"
+  },
+  "wp-palmaris-brevis": {
+   "titre": "Wikipédia (en) : Palmaris brevis muscle",
+   "url": "https://en.wikipedia.org/wiki/Palmaris_brevis_muscle"
+  },
+  "wp-triceps-surae": {
+   "titre": "Wikipédia (en) : Triceps surae muscle",
+   "url": "https://en.wikipedia.org/wiki/Triceps_surae_muscle"
+  },
+  "wp-transverse-perineal-profond": {
+   "titre": "Wikipédia (en) : Deep transverse perineal muscle",
+   "url": "https://en.wikipedia.org/wiki/Deep_transverse_perineal_muscle"
+  },
+  "wp-transverse-perineal-superficiel": {
+   "titre": "Wikipédia (en) : Superficial transverse perineal muscle",
+   "url": "https://en.wikipedia.org/wiki/Superficial_transverse_perineal_muscle"
+  },
+  "wp-levator-ani": {
+   "titre": "Wikipédia (en) : Levator ani",
+   "url": "https://en.wikipedia.org/wiki/Levator_ani"
+  },
+  "kenhub-oreille-externe": {
+   "titre": "Kenhub : Outer ear (oreille externe)",
+   "url": "https://www.kenhub.com/en/library/anatomy/outer-ear"
+  },
+  "elsevier-tragicus": {
+   "titre": "Elsevier Anatomy : Tragicus muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/tragicus-muscle-right/21371"
+  },
+  "kenhub-levator-ani": {
+   "titre": "Kenhub : Levator ani",
+   "url": "https://www.kenhub.com/en/library/anatomy/levator-ani"
+  },
+  "ttuhsc-perinee": {
+   "titre": "TTUHSC El Paso : tableau des muscles du bassin et du périnée",
+   "url": "https://anatomy.ttuhscep.edu/anatomytables/muscles_pelvis_perineum.html"
+  }
+ },
+ "fiches": [
+  {
+   "id": "epicranien",
+   "resume": "Le muscle plat du crâne : deux ventres, frontal et occipital, reliés par la galéa aponévrotique, et le temporopariétal sur les côtés.",
+   "origine": [
+    {
+     "texte": "Ventre occipital : deux tiers latéraux de la ligne nuchale suprême et partie mastoïdienne du temporal",
+     "os": [
+      "occipital",
+      "temporal"
+     ]
+    },
+    {
+     "texte": "Ventre frontal : pas d'attache osseuse ; ses fibres naissent de la peau des sourcils et se mêlent à celles du procerus et de l'orbiculaire de l'œil",
+     "os": []
+    },
+    {
+     "texte": "Temporopariétal : face latérale du crâne au-dessus de l'oreille, en continuité avec l'auriculaire supérieur",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Galéa aponévrotique, qui relie les ventres frontal et occipital",
+     "os": [
+      "aponevrose-epicranienne"
+     ]
+    },
+    {
+     "texte": "Peau des sourcils et de la racine du nez (ventre frontal)",
+     "os": []
+    }
+   ],
+   "action": "Lève les sourcils et plisse le front ; tire le cuir chevelu en arrière et le tend",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "Le ventre frontal lève les sourcils et plisse le front (surprise, étonnement) ; l'occipital tire le scalp en arrière"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [
+    "procerus",
+    "corrugateur-du-sourcil",
+    "orbiculaire-oeil"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Nerf facial : rameaux temporaux pour le frontal et le temporopariétal, rameau auriculaire postérieur pour l'occipital",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères supra-orbitaire et supratrochléaire pour le ventre frontal, artère occipitale pour l'occipital, temporale superficielle sur le côté",
+    "arteres": [
+     "artere-occipitale",
+     "temporale-superficielle"
+    ]
+   },
+   "palpation": "Doigts sur le front : en levant les sourcils, le ventre frontal se durcit et le front se plisse",
+   "test": "Demander de lever les sourcils en regardant vers le haut : les rides du front doivent être symétriques",
+   "atteinte": "Paralysie du nerf facial : du côté atteint le front reste lisse et le sourcil ne se lève plus",
+   "clinique": "Le front est épargné dans une paralysie faciale d'origine centrale (cortex, capsule interne) et pris dans une paralysie périphérique : ce signe les distingue",
+   "memo": "Un bonnet à deux ventres : le frontal tire en avant, l'occipital en arrière, la galéa les relie",
+   "variantes": "Certains auteurs décrivent frontal et occipital comme deux muscles distincts ; la TA2 les réunit en un seul avec le temporopariétal",
+   "sources": [
+    "gray1918",
+    "wp-epicranius",
+    "wp-temporoparietalis"
+   ],
+   "divergences": "Les références ne décrivent pas le frontal de la même façon (Gray : pas d'origine osseuse ; Wikipédia : origine sur le tendon intermédiaire) ; on retient la version de Gray. L'attache du temporopariétal est peu détaillée dans les sources."
+  },
+  {
+   "id": "auriculaire-anterieur",
+   "resume": "Petit muscle en avant de l'oreille, né de la galéa : il tire le pavillon un peu vers l'avant, mais chez l'être humain son action est presque nulle.",
+   "origine": [
+    {
+     "texte": "Bord latéral de la galéa aponévrotique, en avant de l'oreille",
+     "os": [
+      "aponevrose-epicranienne"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Saillie antérieure du pavillon : épine de l'hélix",
+     "os": []
+    }
+   ],
+   "action": "Attire le pavillon vers l'avant et un peu vers le haut ; effet à peine visible",
+   "actions": [
+    {
+     "articulation": "oreille",
+     "mouvement": "propulsion",
+     "role": "principal",
+     "precision": "Attire le pavillon vers l'avant"
+    },
+    {
+     "articulation": "oreille",
+     "mouvement": "elevation",
+     "role": "accessoire",
+     "precision": "Légère composante vers le haut"
+    }
+   ],
+   "synergistes": [
+    "auriculaire-superieur"
+   ],
+   "antagonistes": [
+    "auriculaire-posterieur"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Nerf facial, rameaux temporaux",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches de l'artère temporale superficielle et de l'auriculaire postérieure",
+    "arteres": [
+     "temporale-superficielle",
+     "artere-auriculaire-posterieure"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit fonctionnel : muscle vestigial ; il est pris dans une paralysie faciale, sans conséquence visible",
+   "clinique": null,
+   "memo": "Le plus petit des trois muscles extrinsèques, celui qui attire l'oreille vers l'avant",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-oreille-externe",
+    "wp-auricular-muscles"
+   ],
+   "divergences": "Gray et Kenhub situent l'insertion sur la saillie antérieure de l'hélix (épine) ; Wikipédia ne donne pas les attaches."
+  },
+  {
+   "id": "auriculaire-posterieur",
+   "resume": "Deux ou trois faisceaux nés du processus mastoïde qui rejoignent la face postérieure de la conque : il tire le pavillon vers l'arrière.",
+   "origine": [
+    {
+     "texte": "Partie mastoïdienne du temporal, par de courtes fibres aponévrotiques (deux ou trois faisceaux)",
+     "os": [
+      "temporal"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Partie basse de la face crâniale (postérieure) de la conque, sur la saillie appelée ponticule",
+     "os": []
+    }
+   ],
+   "action": "Tire le pavillon vers l'arrière ; se contracte surtout lors d'un bruit soudain",
+   "actions": [
+    {
+     "articulation": "oreille",
+     "mouvement": "retropulsion",
+     "role": "principal",
+     "precision": "Tire le pavillon vers l'arrière et l'aplatit"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [
+    "auriculaire-anterieur"
+   ],
+   "innervation": {
+    "nerf": "nerf-auriculaire-posterieur",
+    "texte": "Rameau auriculaire postérieur du nerf facial",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère auriculaire postérieure",
+    "arteres": [
+     "artere-auriculaire-posterieure"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit fonctionnel : muscle vestigial, simplement pris dans une paralysie faciale",
+   "clinique": "Il se contracte en réflexe à un bruit soudain, comme chez les animaux qui tournent l'oreille vers le danger",
+   "memo": "Le rétracteur de l'oreille : il la rabat en arrière, comme un chat qui s'inquiète",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-oreille-externe",
+    "wp-auricular-muscles"
+   ],
+   "divergences": "Gray décrit de courtes fibres aponévrotiques, Kenhub trois faisceaux : détail sans conséquence."
+  },
+  {
+   "id": "auriculaire-superieur",
+   "resume": "Le plus grand des muscles extrinsèques de l'oreille : un éventail né de la galéa qui se fixe sur la face supérieure du pavillon.",
+   "origine": [
+    {
+     "texte": "Galéa aponévrotique, au-dessus de l'oreille",
+     "os": [
+      "aponevrose-epicranienne"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Partie haute de la face crâniale du pavillon, par un mince tendon aplati",
+     "os": []
+    }
+   ],
+   "action": "Élève très légèrement le pavillon et participe à la tenue de la galéa",
+   "actions": [
+    {
+     "articulation": "oreille",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "Élève faiblement le pavillon"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [
+    "auriculaire-posterieur"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Nerf facial, rameaux temporaux",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère temporale superficielle",
+    "arteres": [
+     "temporale-superficielle"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit fonctionnel : muscle vestigial, pris dans une paralysie faciale",
+   "clinique": null,
+   "memo": "Le releveur de l'oreille (attolens aurem) : le plus large des trois",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-oreille-externe",
+    "wp-auricular-muscles"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "de-l-antitragus",
+   "resume": "Petit muscle de l'oreille externe, de l'antitragus à la queue de l'hélix : il rapproche ces deux reliefs, à peine.",
+   "origine": [
+    {
+     "texte": "Partie externe de l'antitragus",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Queue de l'hélix et anthélix",
+     "os": []
+    }
+   ],
+   "action": "Rapproche l'antitragus et la queue de l'hélix ; ne modifie qu'un peu la forme du pavillon",
+   "actions": [
+    {
+     "articulation": "oreille",
+     "mouvement": "tension",
+     "role": "principal",
+     "precision": "Change légèrement la forme du pavillon"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Nerf facial, rameaux temporaux (muscles de la face latérale du pavillon)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères temporale superficielle et auriculaire postérieure, qui irriguent le pavillon",
+    "arteres": [
+     "temporale-superficielle",
+     "artere-auriculaire-posterieure"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit fonctionnel : muscle vestigial, sans conséquence en cas de paralysie faciale",
+   "clinique": null,
+   "memo": "Le petit pont entre l'antitragus et la queue de l'hélix",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-antitragicus",
+    "kenhub-oreille-externe"
+   ],
+   "divergences": "Les sources décrivent toutes le même trajet ; seule l'action varie (Gray n'en donne pas, Wikipédia parle d'un léger rapprochement)."
+  },
+  {
+   "id": "du-tragus",
+   "resume": "Mince bandelette verticale sur la face latérale du tragus : un muscle presque sans action chez l'être humain.",
+   "origine": [
+    {
+     "texte": "Partie basse de la face latérale du tragus",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Sommet (apex) du tragus, sur la même face",
+     "os": []
+    }
+   ],
+   "action": "Sans effet net ; modifie à peine la forme du tragus, parfois élargit un peu l'entrée du conduit",
+   "actions": [
+    {
+     "articulation": "oreille",
+     "mouvement": "tension",
+     "role": "principal",
+     "precision": "Effet minime sur la forme du tragus"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Nerf facial, rameaux temporaux (muscles de la face latérale du pavillon)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères temporale superficielle et auriculaire postérieure, qui irriguent le pavillon",
+    "arteres": [
+     "temporale-superficielle",
+     "artere-auriculaire-posterieure"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit fonctionnel : muscle vestigial, sans conséquence en cas de paralysie faciale",
+   "clinique": null,
+   "memo": "Une bandelette sur le tragus, la languette qui ferme l'oreille",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "elsevier-tragicus",
+    "wp-tragicus",
+    "kenhub-oreille-externe"
+   ],
+   "divergences": "Gray et Kenhub ne précisent pas les points d'attache, seulement la bandelette verticale ; Elsevier Anatomy donne la partie latérale et l'apex du tragus."
+  },
+  {
+   "id": "grand-muscle-de-l-helix",
+   "resume": "Mince bandelette verticale du bord antérieur de l'hélix, au-dessus du tragus.",
+   "origine": [
+    {
+     "texte": "Épine de l'hélix (spina helicis)",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord antérieur de l'hélix, là où il commence à se recourber vers l'arrière",
+     "os": []
+    }
+   ],
+   "action": "Abaisse un peu le bord antérieur du cartilage de l'oreille",
+   "actions": [
+    {
+     "articulation": "oreille",
+     "mouvement": "tension",
+     "role": "principal",
+     "precision": "Abaisse le bord antérieur de l'hélix"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Nerf facial, rameaux temporaux (muscles de la face latérale du pavillon)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères temporale superficielle et auriculaire postérieure, qui irriguent le pavillon",
+    "arteres": [
+     "temporale-superficielle",
+     "artere-auriculaire-posterieure"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit fonctionnel : muscle vestigial, sans conséquence en cas de paralysie faciale",
+   "clinique": null,
+   "memo": "Le muscle de l'épine de l'hélix : il tire le bord de l'oreille vers le bas",
+   "variantes": "Le grand et le petit muscle de l'hélix ne sont distincts que chez les primates",
+   "sources": [
+    "gray1918",
+    "wp-helicis-major",
+    "kenhub-oreille-externe"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "oblique-de-l-auricule",
+   "resume": "Quelques fibres de la face postérieure du pavillon, entre la saillie de la conque et celle de la fosse triangulaire.",
+   "origine": [
+    {
+     "texte": "Partie haute de l'éminence de la conque, face crâniale",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Saillie située juste au-dessus : éminence de la scapha ou de la fosse triangulaire",
+     "os": []
+    }
+   ],
+   "action": "Aucune action nette ; rapproche faiblement deux saillies de la face postérieure du pavillon",
+   "actions": [
+    {
+     "articulation": "oreille",
+     "mouvement": "tension",
+     "role": "principal",
+     "precision": "Effet minime sur la forme du cartilage"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-auriculaire-posterieur",
+    "texte": "Rameau auriculaire postérieur du nerf facial (muscles de la face postérieure du pavillon)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères temporale superficielle et auriculaire postérieure, qui irriguent le pavillon",
+    "arteres": [
+     "temporale-superficielle",
+     "artere-auriculaire-posterieure"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit fonctionnel : muscle vestigial, sans conséquence en cas de paralysie faciale",
+   "clinique": null,
+   "memo": "Le fil oblique qui relie deux bosses de la face postérieure de l'oreille",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-oblique-auricle",
+    "kenhub-oreille-externe"
+   ],
+   "divergences": "Le point d'arrivée varie : Gray parle de la saillie juste au-dessus de la conque, Kenhub de l'éminence de la scapha ; la description de tracé évoquait la fosse triangulaire."
+  },
+  {
+   "id": "petit-muscle-de-l-helix",
+   "resume": "Petit faisceau oblique sur la racine de l'hélix, devant la conque.",
+   "origine": [
+    {
+     "texte": "Base de la racine (crus) de l'hélix",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face antérieure de la racine de l'hélix, là où elle remonte au-dessus du tragus",
+     "os": []
+    }
+   ],
+   "action": "Ajuste très légèrement le bord antérieur du cartilage de l'oreille",
+   "actions": [
+    {
+     "articulation": "oreille",
+     "mouvement": "tension",
+     "role": "principal",
+     "precision": "Ajuste la forme du bord antérieur du cartilage"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Nerf facial, rameaux temporaux (muscles de la face latérale du pavillon)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères temporale superficielle et auriculaire postérieure, qui irriguent le pavillon",
+    "arteres": [
+     "temporale-superficielle",
+     "artere-auriculaire-posterieure"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit fonctionnel : muscle vestigial, sans conséquence en cas de paralysie faciale",
+   "clinique": null,
+   "memo": "Le petit muscle qui recouvre la racine de l'hélix",
+   "variantes": "Le grand et le petit muscle de l'hélix ne sont distincts que chez les primates",
+   "sources": [
+    "gray1918",
+    "wp-helicis-minor",
+    "kenhub-oreille-externe"
+   ],
+   "divergences": "Gray indique seulement que le muscle recouvre obliquement la racine de l'hélix ; Wikipédia en donne la base et la face antérieure."
+  },
+  {
+   "id": "pyramidal-de-l-auricule",
+   "resume": "Faisceau inconstant de l'oreille externe, entre le tragus et l'épine de l'hélix.",
+   "origine": [
+    {
+     "texte": "Base du tragus",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Épine de l'hélix",
+     "os": []
+    }
+   ],
+   "action": "Aucune action nette ; muscle rudimentaire de l'oreille externe",
+   "actions": [
+    {
+     "articulation": "oreille",
+     "mouvement": "tension",
+     "role": "principal",
+     "precision": "Rudimentaire : pas d'effet visible"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Nerf facial, rameaux temporaux (muscles de la face latérale du pavillon)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères temporale superficielle et auriculaire postérieure, qui irriguent le pavillon",
+    "arteres": [
+     "temporale-superficielle",
+     "artere-auriculaire-posterieure"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit fonctionnel : muscle vestigial, sans conséquence en cas de paralysie faciale",
+   "clinique": null,
+   "memo": "Le pyramidal : le faisceau que l'on peut ne pas trouver",
+   "variantes": "Inconstant : absent chez beaucoup de sujets",
+   "sources": [
+    "gray1918",
+    "kenhub-oreille-externe"
+   ],
+   "divergences": "Ce muscle n'est décrit ni par Gray (1918), ni par Kenhub, ni par Wikipédia : ses attaches viennent de la description de tracé et sont à confirmer dans un traité de nomenclature."
+  },
+  {
+   "id": "transverse-de-l-auricule",
+   "resume": "Fibres de la face postérieure du pavillon, tendues entre la saillie de la conque et celle de la scapha.",
+   "origine": [
+    {
+     "texte": "Face crâniale de l'éminence de la conque",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face crâniale de l'éminence de la scapha",
+     "os": []
+    }
+   ],
+   "action": "Rapproche ces deux saillies et aplatit un peu le profil postérieur du cartilage",
+   "actions": [
+    {
+     "articulation": "oreille",
+     "mouvement": "tension",
+     "role": "principal",
+     "precision": "Aplatit le profil postérieur du cartilage"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-auriculaire-posterieur",
+    "texte": "Rameau auriculaire postérieur du nerf facial (muscles de la face postérieure du pavillon)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères temporale superficielle et auriculaire postérieure, qui irriguent le pavillon",
+    "arteres": [
+     "temporale-superficielle",
+     "artere-auriculaire-posterieure"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit fonctionnel : muscle vestigial, sans conséquence en cas de paralysie faciale",
+   "clinique": null,
+   "memo": "Le pont transversal de la face postérieure de l'oreille",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-transverse-auricle",
+    "kenhub-oreille-externe"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "transverse-du-menton",
+   "resume": "Faisceaux inconstants qui passent sous le menton d'un abaisseur de l'angle de la bouche à l'autre.",
+   "origine": [
+    {
+     "texte": "Fibres superficielles de l'abaisseur de l'angle de la bouche, d'un côté",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Fibres du même muscle de l'autre côté, après croisement sous le menton",
+     "os": []
+    }
+   ],
+   "action": "Renforce l'abaisseur de l'angle de la bouche : tire les commissures vers le bas",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "Renforce l'abaisseur de l'angle de la bouche : moue de tristesse ou de dégoût"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Nerf facial, rameau marginal de la mandibule",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère faciale (rameau labial inférieur)",
+    "arteres": [
+     "artere-faciale"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit propre : pris dans la paralysie faciale, la commissure tombe du côté atteint",
+   "clinique": null,
+   "memo": "Une écharpe sous le menton : des fibres de la moue qui passent d'un côté à l'autre",
+   "variantes": "Inconstant ; souvent considéré comme de simples fibres de l'abaisseur de l'angle de la bouche qui se croisent",
+   "sources": [
+    "gray1918",
+    "wp-transversus-menti"
+   ],
+   "divergences": "Gray ne décrit pas le muscle à part : il parle de fibres qui passent parfois d'un abaisseur à l'autre. Wikipédia le tient aussi pour une dépendance de l'abaisseur. Les attaches sont déduites de ces deux textes."
+  },
+  {
+   "id": "chondroglosse",
+   "resume": "Le faisceau interne du muscle hyoglosse : il monte de l'os hyoïde dans le côté de la langue et l'abaisse.",
+   "origine": [
+    {
+     "texte": "Petite corne et partie voisine du corps de l'os hyoïde",
+     "os": [
+      "hyoide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Fibres intrinsèques du côté de la langue, en dedans de l'hyoglosse",
+     "os": []
+    }
+   ],
+   "action": "Abaisse la langue",
+   "actions": [
+    {
+     "articulation": "langue",
+     "mouvement": "abaissement",
+     "role": "principal",
+     "precision": "Abaisse le côté de la langue"
+    }
+   ],
+   "synergistes": [
+    "hyoglosse",
+    "ceratoglosse"
+   ],
+   "antagonistes": [
+    "styloglosse",
+    "palatoglosse"
+   ],
+   "innervation": {
+    "nerf": "nerf-hypoglosse-xii",
+    "texte": "Nerf hypoglosse (XII)",
+    "racines": [
+     "XII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère linguale",
+    "arteres": [
+     "artere-linguale"
+    ]
+   },
+   "palpation": null,
+   "test": "Observer la langue au repos puis lui faire tirer et bouger : forme, symétrie, force",
+   "atteinte": "Lésion du nerf hypoglosse : hémi-langue amaigrie avec fasciculations ; langue tirée, la pointe dévie vers le côté atteint ; parole et déglutition gênées",
+   "clinique": null,
+   "memo": "Le faisceau de la petite corne : il monte tout droit dans la langue",
+   "variantes": "Selon les auteurs, c'est un muscle distinct ou une partie de l'hyoglosse",
+   "sources": [
+    "gray1918",
+    "wp-hyoglossus",
+    "wp-muscles-tongue"
+   ],
+   "divergences": "Wikipédia (page de l'hyoglosse) ne traite pas du chondroglosse et la page sur les muscles de la langue dit seulement qu'on le regroupe souvent avec l'hyoglosse ; les attaches viennent de Gray."
+  },
+  {
+   "id": "ceratoglosse",
+   "resume": "Le faisceau externe du muscle hyoglosse : il naît de la grande corne de l'os hyoïde et monte dans le côté de la langue.",
+   "origine": [
+    {
+     "texte": "Grande corne de l'os hyoïde",
+     "os": [
+      "hyoide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Côté de la langue, entre le styloglosse et le longitudinal inférieur",
+     "os": []
+    }
+   ],
+   "action": "Abaisse la langue et la tire un peu en arrière",
+   "actions": [
+    {
+     "articulation": "langue",
+     "mouvement": "abaissement",
+     "role": "principal",
+     "precision": "Abaisse les côtés de la langue"
+    },
+    {
+     "articulation": "langue",
+     "mouvement": "retraction",
+     "role": "accessoire",
+     "precision": "Tire la langue vers l'arrière"
+    }
+   ],
+   "synergistes": [
+    "hyoglosse",
+    "chondroglosse"
+   ],
+   "antagonistes": [
+    "styloglosse",
+    "genioglosse"
+   ],
+   "innervation": {
+    "nerf": "nerf-hypoglosse-xii",
+    "texte": "Nerf hypoglosse (XII)",
+    "racines": [
+     "XII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère linguale",
+    "arteres": [
+     "artere-linguale"
+    ]
+   },
+   "palpation": null,
+   "test": "Observer la langue au repos puis lui faire tirer et bouger : forme, symétrie, force",
+   "atteinte": "Lésion du nerf hypoglosse : hémi-langue amaigrie avec fasciculations ; langue tirée, la pointe dévie vers le côté atteint ; parole et déglutition gênées",
+   "clinique": null,
+   "memo": "Le faisceau de la grande corne : il monte en dehors du précédent",
+   "variantes": "Le plus souvent décrit comme la partie du muscle hyoglosse qui vient de la grande corne",
+   "sources": [
+    "gray1918",
+    "wp-hyoglossus"
+   ],
+   "divergences": "Gray et Wikipédia décrivent l'hyoglosse sans distinguer le cératoglosse : l'origine sur la grande corne est celle de l'hyoglosse."
+  },
+  {
+   "id": "longitudinal-inferieur-de-la-langue",
+   "resume": "Cordon de fibres longitudinales de la face inférieure de la langue, entre le génioglosse et l'hyoglosse.",
+   "origine": [
+    {
+     "texte": "Racine de la langue, en partie corps de l'os hyoïde",
+     "os": [
+      "hyoide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Pointe de la langue, où ses fibres se mêlent à celles du styloglosse",
+     "os": []
+    }
+   ],
+   "action": "Raccourcit la langue et abaisse sa pointe",
+   "actions": [
+    {
+     "articulation": "langue",
+     "mouvement": "retraction",
+     "role": "principal",
+     "precision": "Raccourcit la langue"
+    },
+    {
+     "articulation": "langue",
+     "mouvement": "abaissement",
+     "role": "principal",
+     "precision": "Abaisse la pointe et bombe le dos"
+    }
+   ],
+   "synergistes": [
+    "longitudinal-superieur-de-la-langue",
+    "styloglosse"
+   ],
+   "antagonistes": [
+    "genioglosse"
+   ],
+   "innervation": {
+    "nerf": "nerf-hypoglosse-xii",
+    "texte": "Nerf hypoglosse (XII)",
+    "racines": [
+     "XII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère linguale",
+    "arteres": [
+     "artere-linguale"
+    ]
+   },
+   "palpation": null,
+   "test": "Observer la langue au repos puis lui faire tirer et bouger : forme, symétrie, force",
+   "atteinte": "Lésion du nerf hypoglosse : hémi-langue amaigrie avec fasciculations ; langue tirée, la pointe dévie vers le côté atteint ; parole et déglutition gênées",
+   "clinique": null,
+   "memo": "L'inférieur plie la pointe vers le bas, le supérieur vers le haut",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-muscles-tongue"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "longitudinal-superieur-de-la-langue",
+   "resume": "Nappe de fibres longitudinales sous la muqueuse du dos de la langue : elle raccourcit la langue et relève sa pointe.",
+   "origine": [
+    {
+     "texte": "Couche fibreuse près de l'épiglotte et septum médian de la langue",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bords de la langue, sous la muqueuse du dos",
+     "os": []
+    }
+   ],
+   "action": "Raccourcit la langue, relève sa pointe et ses bords et creuse son dos",
+   "actions": [
+    {
+     "articulation": "langue",
+     "mouvement": "retraction",
+     "role": "principal",
+     "precision": "Raccourcit la langue"
+    },
+    {
+     "articulation": "langue",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "Relève la pointe et les bords : dos concave"
+    }
+   ],
+   "synergistes": [
+    "longitudinal-inferieur-de-la-langue",
+    "styloglosse"
+   ],
+   "antagonistes": [
+    "genioglosse"
+   ],
+   "innervation": {
+    "nerf": "nerf-hypoglosse-xii",
+    "texte": "Nerf hypoglosse (XII)",
+    "racines": [
+     "XII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère linguale",
+    "arteres": [
+     "artere-linguale"
+    ]
+   },
+   "palpation": null,
+   "test": "Observer la langue au repos puis lui faire tirer et bouger : forme, symétrie, force",
+   "atteinte": "Lésion du nerf hypoglosse : hémi-langue amaigrie avec fasciculations ; langue tirée, la pointe dévie vers le côté atteint ; parole et déglutition gênées",
+   "clinique": null,
+   "memo": "Le supérieur relève la pointe, comme pour lécher une glace",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-muscles-tongue"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "palatoglosse",
+   "resume": "Le muscle de l'arc palatoglosse : il descend du voile du palais sur le côté de la langue et ferme l'entrée de la gorge.",
+   "origine": [
+    {
+     "texte": "Face orale de l'aponévrose du palais mou, en continuité avec le muscle du côté opposé",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Côté de la langue ; des fibres passent sur le dos, d'autres se mêlent au transverse de la langue",
+     "os": []
+    }
+   ],
+   "action": "Élève la racine de la langue, abaisse le voile et rétrécit l'isthme du gosier",
+   "actions": [
+    {
+     "articulation": "langue",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "Élève la racine de la langue"
+    },
+    {
+     "articulation": "voile-du-palais",
+     "mouvement": "abaissement",
+     "role": "accessoire",
+     "precision": "Abaisse le voile et rapproche les arcs"
+    },
+    {
+     "articulation": "pharynx",
+     "mouvement": "deglutition",
+     "role": "accessoire",
+     "precision": "Ferme l'isthme du gosier au début de la déglutition"
+    }
+   ],
+   "synergistes": [
+    "palatopharyngien",
+    "styloglosse"
+   ],
+   "antagonistes": [
+    "hyoglosse",
+    "genioglosse"
+   ],
+   "innervation": {
+    "nerf": "nerf-vague-x",
+    "texte": "Plexus pharyngien (nerf vague), avec des fibres de la racine crânienne du nerf accessoire",
+    "racines": [
+     "X",
+     "XI"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères palatine ascendante et linguale",
+    "arteres": [
+     "artere-palatine-ascendante",
+     "artere-linguale"
+    ]
+   },
+   "palpation": "L'arc palatoglosse se voit de chaque côté de la gorge, bouche grande ouverte",
+   "test": "Faire dire « ah » : le voile se lève de façon symétrique et la luette reste au milieu",
+   "atteinte": "Atteinte du nerf vague : le voile retombe du côté atteint, la déglutition et la voix sont perturbées",
+   "clinique": "L'arc palatoglosse est le pilier antérieur de la loge de l'amygdale palatine",
+   "memo": "Le seul muscle de la langue qui n'obéit pas à l'hypoglosse : il suit le vague",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-palatoglossus",
+    "wp-muscles-tongue"
+   ],
+   "divergences": "Racines : Gray (nerf accessoire par le plexus pharyngien) et Wikipédia (IX et X, ou XI par le vague) divergent ; on retient le nerf vague avec le contingent du XI. Dans les muscles de la langue, Wikipédia le dit simplement vagal."
+  },
+  {
+   "id": "salpingopharyngien",
+   "resume": "Mince muscle de la paroi du pharynx, né du cartilage de la trompe auditive : il élève le pharynx pendant la déglutition.",
+   "origine": [
+    {
+     "texte": "Partie basse du cartilage de la trompe auditive, près de son ouverture pharyngienne",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Se mêle au faisceau postérieur du palatopharyngien, dans le pli salpingopharyngien",
+     "os": []
+    },
+    {
+     "texte": "Quelques fibres gagnent le bord supérieur du cartilage thyroïde",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    }
+   ],
+   "action": "Élève le pharynx et le larynx, tire les parois latéralement et ouvre la trompe auditive en avalant",
+   "actions": [
+    {
+     "articulation": "pharynx",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "Élève les parties latérales et hautes du pharynx"
+    },
+    {
+     "articulation": "pharynx",
+     "mouvement": "deglutition",
+     "role": "principal",
+     "precision": "Participe à la déglutition"
+    },
+    {
+     "articulation": "oreille",
+     "mouvement": "ouverture",
+     "role": "accessoire",
+     "precision": "Ouvre l'ostium de la trompe auditive en avalant"
+    }
+   ],
+   "synergistes": [
+    "palatopharyngien",
+    "stylopharyngien"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-vague-x",
+    "texte": "Plexus pharyngien (nerf vague)",
+    "racines": [
+     "X"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères palatine ascendante, grande palatine et pharyngienne ascendante",
+    "arteres": [
+     "artere-palatine-ascendante",
+     "artere-grande-palatine",
+     "artere-pharyngienne-ascendante"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit isolé décrit ; l'élévation du pharynx est assurée par les autres muscles de la déglutition",
+   "clinique": "Il équilibre la pression entre la trompe auditive et le pharynx : une partie du travail de l'oreille moyenne en dépend",
+   "memo": "Il relie l'oreille à la gorge : de la trompe auditive au pharynx",
+   "variantes": "Absent chez environ 40 % des personnes, plus souvent chez les sujets minces",
+   "sources": [
+    "gray1918",
+    "wp-salpingopharyngeus"
+   ],
+   "divergences": "Wikipédia ajoute des fibres jusqu'au cartilage thyroïde, que Gray ne mentionne pas."
+  },
+  {
+   "id": "stapedien",
+   "resume": "Le plus petit muscle du corps : logé dans l'oreille moyenne, il retient l'étrier quand le son est trop fort.",
+   "origine": [
+    {
+     "texte": "Paroi de la cavité de l'éminence pyramidale, sur la paroi postérieure de la caisse du tympan",
+     "os": [
+      "temporal"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face postérieure du col de l'étrier",
+     "os": [
+      "etrier"
+     ]
+    }
+   ],
+   "action": "Limite les mouvements de l'étrier et atténue la transmission des sons forts (réflexe stapédien)",
+   "actions": [
+    {
+     "articulation": "oreille",
+     "mouvement": "stabilisation",
+     "role": "principal",
+     "precision": "Amortit les vibrations de l'étrier et protège l'oreille interne des sons forts"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Nerf du muscle stapédien, branche du nerf facial",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameau stapédien de l'artère stylomastoïdienne (branche de l'artère auriculaire postérieure)",
+    "arteres": [
+     "artere-stylomastoidienne",
+     "artere-auriculaire-posterieure"
+    ]
+   },
+   "palpation": null,
+   "test": "Recherche du réflexe stapédien à l'impédancemétrie : un son fort fait se contracter le muscle",
+   "atteinte": "Hyperacousie : sans le frein de l'étrier, les sons normaux paraissent trop forts, comme dans une paralysie faciale de Bell",
+   "clinique": "Le plus petit muscle squelettique du corps, à peine plus d'un millimètre ; ses spasmes causent un myoclonus de l'oreille moyenne",
+   "memo": "Le gardien de l'étrier : il se contracte au bruit fort comme une paupière au soleil",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-stapedius"
+   ],
+   "divergences": "Gray dit que le muscle tire la tête de l'étrier en arrière ; Wikipédia parle d'un amortissement des vibrations. L'artère : Wikipédia cite l'auriculaire postérieure, par sa branche stylomastoïdienne."
+  },
+  {
+   "id": "styloglosse",
+   "resume": "Le muscle styloïdien de la langue : il descend du processus styloïde le long du bord de la langue et la tire en haut et en arrière.",
+   "origine": [
+    {
+     "texte": "Processus styloïde du temporal, près de son sommet",
+     "os": [
+      "temporal"
+     ]
+    },
+    {
+     "texte": "Ligament stylomandibulaire",
+     "os": [
+      "ligament-stylomandibulaire"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Côté et pointe de la langue, où ses fibres se mêlent à celles du longitudinal inférieur",
+     "os": []
+    }
+   ],
+   "action": "Élève et rétracte la langue ; relève ses bords pour former une gouttière",
+   "actions": [
+    {
+     "articulation": "langue",
+     "mouvement": "retraction",
+     "role": "principal",
+     "precision": "Tire la langue vers l'arrière"
+    },
+    {
+     "articulation": "langue",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "Relève les bords : gouttière pour avaler"
+    }
+   ],
+   "synergistes": [
+    "longitudinal-inferieur-de-la-langue",
+    "palatoglosse"
+   ],
+   "antagonistes": [
+    "genioglosse",
+    "hyoglosse"
+   ],
+   "innervation": {
+    "nerf": "nerf-hypoglosse-xii",
+    "texte": "Nerf hypoglosse (XII)",
+    "racines": [
+     "XII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branche sublinguale de l'artère linguale",
+    "arteres": [
+     "artere-linguale",
+     "artere-sublinguale"
+    ]
+   },
+   "palpation": null,
+   "test": "Observer la langue au repos puis lui faire tirer et bouger : forme, symétrie, force",
+   "atteinte": "Lésion du nerf hypoglosse : hémi-langue amaigrie avec fasciculations ; langue tirée, la pointe dévie vers le côté atteint ; parole et déglutition gênées",
+   "clinique": null,
+   "memo": "Le styloglosse part du stylet : il tire la langue vers la nuque",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-styloglossus",
+    "wp-muscles-tongue"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "transverse-de-la-langue",
+   "resume": "Fibres transversales tendues du septum médian de la langue à ses bords : elles la rétrécissent et l'allongent.",
+   "origine": [
+    {
+     "texte": "Septum fibreux médian de la langue",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Tissu sous-muqueux des bords de la langue",
+     "os": []
+    }
+   ],
+   "action": "Rétrécit la langue et l'allonge",
+   "actions": [
+    {
+     "articulation": "langue",
+     "mouvement": "compression",
+     "role": "principal",
+     "precision": "Rétrécit la langue"
+    },
+    {
+     "articulation": "langue",
+     "mouvement": "propulsion",
+     "role": "accessoire",
+     "precision": "L'allonge, ce qui aide à la sortir"
+    }
+   ],
+   "synergistes": [
+    "genioglosse",
+    "vertical-de-la-langue"
+   ],
+   "antagonistes": [
+    "longitudinal-superieur-de-la-langue",
+    "longitudinal-inferieur-de-la-langue"
+   ],
+   "innervation": {
+    "nerf": "nerf-hypoglosse-xii",
+    "texte": "Nerf hypoglosse (XII)",
+    "racines": [
+     "XII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère linguale",
+    "arteres": [
+     "artere-linguale"
+    ]
+   },
+   "palpation": null,
+   "test": "Observer la langue au repos puis lui faire tirer et bouger : forme, symétrie, force",
+   "atteinte": "Lésion du nerf hypoglosse : hémi-langue amaigrie avec fasciculations ; langue tirée, la pointe dévie vers le côté atteint ; parole et déglutition gênées",
+   "clinique": null,
+   "memo": "Le transverse serre comme une ceinture : plus étroite, la langue s'allonge",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-muscles-tongue"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "vertical-de-la-langue",
+   "resume": "Fibres verticales du dos à la face inférieure de la langue, surtout vers les bords de la partie antérieure : elles l'aplatissent.",
+   "origine": [
+    {
+     "texte": "Dos de la langue, dans sa partie antérieure, près des bords",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face inférieure de la langue",
+     "os": []
+    }
+   ],
+   "action": "Aplatit et élargit la partie antérieure de la langue",
+   "actions": [
+    {
+     "articulation": "langue",
+     "mouvement": "compression",
+     "role": "principal",
+     "precision": "Aplatit et élargit la langue"
+    }
+   ],
+   "synergistes": [
+    "transverse-de-la-langue"
+   ],
+   "antagonistes": [
+    "longitudinal-superieur-de-la-langue"
+   ],
+   "innervation": {
+    "nerf": "nerf-hypoglosse-xii",
+    "texte": "Nerf hypoglosse (XII)",
+    "racines": [
+     "XII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère linguale",
+    "arteres": [
+     "artere-linguale"
+    ]
+   },
+   "palpation": null,
+   "test": "Observer la langue au repos puis lui faire tirer et bouger : forme, symétrie, force",
+   "atteinte": "Lésion du nerf hypoglosse : hémi-langue amaigrie avec fasciculations ; langue tirée, la pointe dévie vers le côté atteint ; parole et déglutition gênées",
+   "clinique": null,
+   "memo": "Le vertical presse de haut en bas : la langue s'aplatit comme une crêpe",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-muscles-tongue"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "vocal",
+   "resume": "La partie médiale du muscle thyro-aryténoïdien, collée au ligament vocal : le corps de la corde vocale.",
+   "origine": [
+    {
+     "texte": "Moitié inférieure de l'angle du cartilage thyroïde, en avant",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Processus vocal du cartilage aryténoïde",
+     "os": [
+      "cartilage-arytenoide"
+     ]
+    },
+    {
+     "texte": "Accolé sur toute sa longueur au ligament vocal",
+     "os": [
+      "ligament-vocal"
+     ]
+    }
+   ],
+   "action": "Règle la tension et l'élasticité de la corde vocale ; détend et raccourcit le pli vocal",
+   "actions": [
+    {
+     "articulation": "larynx",
+     "mouvement": "tension",
+     "role": "principal",
+     "precision": "Règle l'élasticité et la tension du pli vocal"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "phonation",
+     "role": "principal",
+     "precision": "Muscle principal de la production de la voix"
+    }
+   ],
+   "synergistes": [
+    "thyro-arytenoidien",
+    "crico-arytenoidien-lateral"
+   ],
+   "antagonistes": [
+    "cricothyroidien"
+   ],
+   "innervation": {
+    "nerf": "nerf-larynge-recurrent",
+    "texte": "Nerf laryngé récurrent, branche du nerf vague",
+    "racines": [
+     "X"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères laryngées supérieure et inférieure",
+    "arteres": [
+     "artere-laryngee-superieure",
+     "artere-laryngee-inferieure"
+    ]
+   },
+   "palpation": null,
+   "test": "Laryngoscopie : mobilité des plis vocaux pendant qu'on fait dire un « é » prolongé",
+   "atteinte": "Paralysie : voix rauque, faible et soufflée ; la corde reste immobile ou arquée",
+   "clinique": "Le nerf laryngé récurrent, sensible à la chirurgie de la thyroïde, commande ce muscle : une voix cassée après l'opération doit le faire évoquer",
+   "memo": "Le muscle de la corde : il règle la tension du fil que l'air fait vibrer",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-thyroarytenoid",
+    "wp-vocalis"
+   ],
+   "divergences": "Wikipédia ne nomme pas le nerf ; Gray l'attribue au récurrent pour tous les muscles du larynx sauf le cricothyroïdien."
+  },
+  {
+   "id": "iliopsoas",
+   "resume": "Le grand fléchisseur de la hanche : le psoas descend des vertèbres, l'iliaque monte du bassin, et tous deux se joignent au petit trochanter.",
+   "origine": [
+    {
+     "texte": "Grand psoas : côtés des corps de T12 à L5 et disques intervertébraux, processus costiformes des vertèbres lombales",
+     "os": [
+      "vertebre-t12",
+      "vertebres-lombaires"
+     ]
+    },
+    {
+     "texte": "Iliaque : fosse iliaque et lèvre interne de la crête iliaque",
+     "os": [
+      "ilium"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Petit trochanter du fémur, par un tendon commun qui reçoit presque tout l'iliaque",
+     "os": [
+      "femur",
+      "tendon-grand-psoas",
+      "tendon-iliaque"
+     ]
+    }
+   ],
+   "action": "Fléchit la cuisse sur le bassin ; fixé sur le fémur, plie le tronc en avant et penche le bassin",
+   "actions": [
+    {
+     "articulation": "hanche",
+     "mouvement": "flexion",
+     "role": "principal",
+     "precision": "Le plus puissant fléchisseur de la hanche"
+    },
+    {
+     "articulation": "rachis-lombaire",
+     "mouvement": "flexion",
+     "role": "accessoire",
+     "precision": "Le psoas, point fixe en bas, plie le rachis lombaire en avant"
+    },
+    {
+     "articulation": "rachis-lombaire",
+     "mouvement": "inclinaison",
+     "role": "accessoire",
+     "precision": "Le psoas penche le rachis lombaire de son côté"
+    }
+   ],
+   "synergistes": [
+    "droit-femoral",
+    "sartorius",
+    "pectine",
+    "tenseur-fascia-lata"
+   ],
+   "antagonistes": [
+    "grand-fessier",
+    "biceps-femoral"
+   ],
+   "innervation": {
+    "nerf": "nerf-femoral",
+    "texte": "Psoas : branches directes du plexus lombal (L1-L3) ; iliaque : nerf fémoral (L2-L4)",
+    "racines": [
+     "L1",
+     "L2",
+     "L3",
+     "L4"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères iliolombaire et circonflexe médiale de la cuisse, rameaux lombaux",
+    "arteres": [
+     "artere-iliolombaire",
+     "artere-circonflexe-mediale-de-la-cuisse"
+    ]
+   },
+   "palpation": null,
+   "test": "Assis, jambe pendante : lever le genou contre la main de l'examinateur",
+   "atteinte": "Faiblesse de la flexion de la hanche : lever la jambe, monter une marche ou sortir d'une voiture devient pénible",
+   "clinique": "Siège fréquent d'hématome chez les patients sous anticoagulants ; un muscle raccourci peut mettre la jambe en rotation latérale",
+   "memo": "Deux muscles, un seul tendon : le psoas descend des vertèbres, l'iliaque monte du bassin, rendez-vous au petit trochanter",
+   "variantes": "Le petit psoas, absent souvent, double le grand psoas ; une partie détachée de l'iliaque, l'iliocapsulaire, est fréquente",
+   "sources": [
+    "gray1918",
+    "wp-iliopsoas"
+   ],
+   "divergences": "Les racines varient : psoas L1-L3 selon Wikipédia, L2-L3 selon Gray ; iliaque L2-L3 (Gray) ou L2-L4 (Wikipédia). On donne L1 à L4 pour l'ensemble."
+  },
+  {
+   "id": "puboperineal",
+   "resume": "Le faisceau le plus interne du releveur de l'anus chez l'homme : du pubis, il longe la prostate et gagne le centre tendineux du périnée.",
+   "origine": [
+    {
+     "texte": "Face postérieure du corps du pubis",
+     "os": [
+      "pubis"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Centre tendineux du périnée, après avoir longé la prostate et rejoint le côté opposé sous elle",
+     "os": []
+    }
+   ],
+   "action": "Soutient la prostate comme un hamac et fixe le centre tendineux du périnée",
+   "actions": [
+    {
+     "articulation": "bassin",
+     "mouvement": "stabilisation",
+     "role": "principal",
+     "precision": "Soutient la prostate et le centre tendineux du périnée"
+    }
+   ],
+   "synergistes": [
+    "pubococcygien",
+    "transverse-superficiel-du-perinee"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-pudendal",
+    "texte": "Branche du nerf du releveur de l'anus (S4) et rameaux du nerf pudendal (périnéal, anal inférieur)",
+    "racines": [
+     "S3",
+     "S4"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux de l'artère pudendale interne et de la division antérieure de l'iliaque interne",
+    "arteres": [
+     "artere-pudendale-interne",
+     "division-anterieure-de-l-artere-iliaque-interne"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Moins de soutien de la prostate et du centre tendineux ; il participe à l'affaiblissement global du plancher pelvien",
+   "clinique": null,
+   "memo": "Le hamac de la prostate : du pubis au centre du périnée, en passant dessous",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-levator-ani",
+    "kenhub-levator-ani"
+   ],
+   "divergences": "Le terme pubopérinéal manque chez Gray, Wikipédia et Kenhub : on y a assimilé les fibres antérieures du releveur (levator prostatae) qui longent la prostate. Innervation : S4 et pudendal (Gray), S3-S4 (Wikipédia)."
+  },
+  {
+   "id": "articulaire-du-coude",
+   "resume": "Petit muscle profond de la face postérieure du coude, détaché du triceps : il retire la capsule de l'articulation pendant l'extension.",
+   "origine": [
+    {
+     "texte": "Face postérieure de l'humérus, au-dessus de la fosse olécrânienne (face profonde du chef médial du triceps)",
+     "os": [
+      "humerus"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Capsule articulaire postérieure du coude",
+     "os": [
+      "capsule-articulaire-de-l-articulation-du-coude"
+     ]
+    }
+   ],
+   "action": "Retire la capsule et la synoviale du coude de l'interligne quand l'avant-bras s'étend",
+   "actions": [
+    {
+     "articulation": "coude",
+     "mouvement": "tension",
+     "role": "principal",
+     "precision": "Tend la capsule postérieure et la retire pendant l'extension"
+    }
+   ],
+   "synergistes": [
+    "triceps-brachial",
+    "ancone"
+   ],
+   "antagonistes": [
+    "brachial"
+   ],
+   "innervation": {
+    "nerf": "nerf-radial",
+    "texte": "Nerf radial, rameau du chef médial du triceps",
+    "racines": [
+     "C6",
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère profonde du bras",
+    "arteres": [
+     "humerale-profonde"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit isolé connu : sa fonction suit celle du triceps ; dans une paralysie radiale haute l'extension du coude est perdue",
+   "clinique": null,
+   "memo": "Le releveur de la capsule : il écarte la capsule du coude pour qu'elle ne soit pas pincée en tendant le bras",
+   "variantes": "Selon les auteurs, c'est un faisceau du triceps (le subanconé) et non un muscle indépendant",
+   "sources": [
+    "gray1918",
+    "wp-articularis-cubiti"
+   ],
+   "divergences": "Gray le décrit sous le nom de subanconé, fibres profondes de la partie inférieure du triceps ; Wikipédia le place sous le chef médial. Les racines ne sont pas précisées par ces sources : on donne celles du triceps (C6-C8)."
+  },
+  {
+   "id": "court-palmaire",
+   "resume": "Mince muscle cutané du bord ulnaire de la paume : il plisse la peau de l'éminence hypothénar et creuse la paume.",
+   "origine": [
+    {
+     "texte": "Fibres issues du rétinaculum des fléchisseurs et de l'aponévrose palmaire",
+     "os": [
+      "retinaculum-flechisseurs",
+      "aponevrose-palmaire"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Peau du bord ulnaire de la paume ; parfois pisiforme",
+     "os": [
+      "pisiforme"
+     ]
+    }
+   ],
+   "action": "Plisse la peau de l'éminence hypothénar et creuse la paume pour mieux serrer",
+   "actions": [
+    {
+     "articulation": "poignet",
+     "mouvement": "tension",
+     "role": "principal",
+     "precision": "Muscle cutané : tend et plisse la peau du bord ulnaire de la paume, sans agir sur une articulation"
+    }
+   ],
+   "synergistes": [
+    "abducteur-petit-doigt"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "branche-superficielle-du-nerf-ulnaire",
+    "texte": "Branche superficielle du nerf ulnaire (son seul muscle)",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux de l'artère ulnaire et des arcades palmaires",
+    "arteres": [
+     "ulnaire",
+     "arcade-palmaire-superficielle"
+    ]
+   },
+   "palpation": "Au bord ulnaire de la paume, la peau se creuse et se plisse quand on serre le poing",
+   "test": "Serrer le poing ou écarter le petit doigt : la peau de l'éminence hypothénar se plisse",
+   "atteinte": "Paralysie : le plissement de la peau du bord ulnaire de la paume disparaît ; peu de gêne",
+   "clinique": "C'est le seul muscle commandé par la branche superficielle du nerf ulnaire",
+   "memo": "Le seul muscle de la main qui s'attache à la peau : il creuse la paume pour mieux serrer",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-palmaris-brevis"
+   ],
+   "divergences": "Gray donne C8 par le nerf ulnaire, Wikipédia C8-T1 ; on retient C8-T1. Irrigation : Wikipédia cite les artères métacarpiennes palmaires (arcade profonde), ici ramenée à l'artère ulnaire. Pas de mouvement d'articulation dans le vocabulaire : « tension » du poignet est un repli."
+  },
+  {
+   "id": "quadriceps-femoral",
+   "resume": "Le grand muscle du devant de la cuisse : quatre chefs, un seul tendon, qui étend le genou.",
+   "origine": [
+    {
+     "texte": "Droit fémoral : épine iliaque antéro-inférieure et sillon au-dessus de l'acétabulum",
+     "os": [
+      "ilium",
+      "tendon-origine-droit-femoral"
+     ]
+    },
+    {
+     "texte": "Vaste latéral : grand trochanter et lèvre latérale de la ligne âpre",
+     "os": [
+      "femur"
+     ]
+    },
+    {
+     "texte": "Vaste médial : ligne intertrochantérique inférieure, lèvre médiale de la ligne âpre et ligne supracondylaire médiale",
+     "os": [
+      "femur"
+     ]
+    },
+    {
+     "texte": "Vaste intermédiaire : faces antérieure et latérale des deux tiers supérieurs du fémur",
+     "os": [
+      "femur"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Base de la patella, par le tendon quadricipital commun",
+     "os": [
+      "tendon-quadricipital",
+      "patella"
+     ]
+    },
+    {
+     "texte": "Tubérosité du tibia, par le ligament patellaire",
+     "os": [
+      "ligament-patellaire",
+      "tibia"
+     ]
+    }
+   ],
+   "action": "Étend le genou ; le droit fémoral fléchit aussi la hanche",
+   "actions": [
+    {
+     "articulation": "genou",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "Étend le genou : marcher, courir, sauter, se relever"
+    },
+    {
+     "articulation": "hanche",
+     "mouvement": "flexion",
+     "role": "accessoire",
+     "precision": "Par le droit fémoral seul"
+    }
+   ],
+   "synergistes": [
+    "articulaire-du-genou",
+    "iliopsoas"
+   ],
+   "antagonistes": [
+    "biceps-femoral",
+    "semi-tendineux",
+    "semi-membraneux"
+   ],
+   "innervation": {
+    "nerf": "nerf-femoral",
+    "texte": "Nerf fémoral",
+    "racines": [
+     "L2",
+     "L3",
+     "L4"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux de l'artère fémorale profonde, surtout la circonflexe latérale de la cuisse",
+    "arteres": [
+     "femorale-profonde",
+     "circonflexe-femorale-laterale"
+    ]
+   },
+   "palpation": "Face antérieure de la cuisse, genou tendu contre résistance ; le vaste médial forme un renflement au-dessus et en dedans de la patella",
+   "test": "Assis, jambes pendantes : étendre le genou contre la main de l'examinateur",
+   "atteinte": "Lésion du nerf fémoral ou rupture du tendon : extension active du genou perdue ou faible ; le genou se dérobe, descendre un escalier est difficile",
+   "clinique": "Son réflexe, le réflexe patellaire, explore surtout les racines L3 et L4 ; c'est le muscle où la myosite ossifiante est la plus fréquente",
+   "memo": "Quatre chefs, un seul tendon : trois vastes et un droit, qui tirent ensemble sur la patella",
+   "variantes": "Un sixième chef, le tenseur du vaste intermédiaire, est décrit sur cadavre ; vaste médial et vaste intermédiaire sont parfois inséparables",
+   "sources": [
+    "gray1918",
+    "wp-quadriceps"
+   ],
+   "divergences": "Gray ne cite que les trois chefs vastes et le droit fémoral ; Wikipédia ajoute l'articulaire du genou comme petit cinquième muscle, souvent exclu du groupe. Les racines du réflexe et l'irrigation viennent de l'enseignement courant, pas de ces deux sources."
+  },
+  {
+   "id": "articulaire-du-genou",
+   "resume": "Petit muscle profond sous le vaste intermédiaire : il tire en haut la capsule et la bourse suprapatellaire quand le genou s'étend.",
+   "origine": [
+    {
+     "texte": "Face antérieure de la diaphyse du fémur, en bas, sous le vaste intermédiaire",
+     "os": [
+      "femur"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Synoviale du genou et bourse suprapatellaire",
+     "os": [
+      "bourse-suprapatellaire",
+      "capsule-articulaire-du-genou"
+     ]
+    }
+   ],
+   "action": "Remonte la bourse suprapatellaire et la synoviale pendant l'extension du genou",
+   "actions": [
+    {
+     "articulation": "genou",
+     "mouvement": "tension",
+     "role": "principal",
+     "precision": "Remonte la synoviale et la bourse suprapatellaire pour éviter leur pincement"
+    }
+   ],
+   "synergistes": [
+    "vaste-intermediaire",
+    "droit-femoral"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-femoral",
+    "texte": "Nerf fémoral, rameaux du nerf du vaste intermédiaire",
+    "racines": [
+     "L2",
+     "L3",
+     "L4"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère circonflexe latérale de la cuisse",
+    "arteres": [
+     "circonflexe-femorale-laterale"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit moteur décrit ; en théorie, la synoviale risque d'être pincée entre patella et fémur pendant l'extension",
+   "clinique": null,
+   "memo": "Le releveur de la synoviale : il évite que la membrane se coince devant le genou qui s'étend",
+   "variantes": "Plat, fin, très variable : formé de plusieurs faisceaux ; séparé du vaste intermédiaire ou fondu avec lui",
+   "sources": [
+    "gray1918",
+    "wp-articularis-genus"
+   ],
+   "divergences": "Wikipédia cite la circonflexe latérale ; l'infobox donne l'artère fémorale. Gray ne dit rien de l'action."
+  },
+  {
+   "id": "transverse-profond-du-perinee",
+   "resume": "Lame musculaire du plan profond du périnée, des branches de l'ischium au centre tendineux, sous la prostate chez l'homme.",
+   "origine": [
+    {
+     "texte": "Face interne de la branche inférieure de l'ischium",
+     "os": [
+      "ischium"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Raphé tendineux médian, où elle s'entrecroise avec celle du côté opposé, et centre tendineux du périnée",
+     "os": []
+    }
+   ],
+   "action": "Fixe le centre tendineux du périnée, soutient le plancher pelvien et aide à vider l'urètre",
+   "actions": [
+    {
+     "articulation": "bassin",
+     "mouvement": "stabilisation",
+     "role": "principal",
+     "precision": "Fixe le centre tendineux et soutient le plancher pelvien"
+    },
+    {
+     "articulation": "bassin",
+     "mouvement": "compression",
+     "role": "accessoire",
+     "precision": "Expulse les dernières gouttes d'urine et, chez l'homme, le sperme"
+    }
+   ],
+   "synergistes": [
+    "transverse-superficiel-du-perinee",
+    "sphincter-anal-externe"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-perineal",
+    "texte": "Nerf périnéal, branche du nerf pudendal",
+    "racines": [
+     "S2",
+     "S3",
+     "S4"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches de l'artère pudendale interne",
+    "arteres": [
+     "artere-pudendale-interne"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Perte de la fixation du centre tendineux : le plancher pelvien est moins bien soutenu et la vidange de l'urètre moins complète",
+   "clinique": "Elle se trouve dans le même plan que le sphincter de l'urètre : on les décrivait autrefois ensemble comme le constricteur de l'urètre",
+   "memo": "La barre profonde du périnée : elle tend un fil d'une branche de l'ischium à l'autre",
+   "variantes": "Certaines études doutent que ce soit un muscle squelettique distinct",
+   "sources": [
+    "gray1918",
+    "wp-transverse-perineal-profond",
+    "ttuhsc-perinee"
+   ],
+   "divergences": "Gray décrit l'origine sur les branches inférieures de l'ischium, le TTUHSC sur la face médiale de la branche de l'ischium ; la description de tracé évoquait la branche ischio-pubienne. Les racines S2-S4 sont celles du nerf pudendal, non précisées par les sources."
+  },
+  {
+   "id": "transverse-superficiel-du-perinee",
+   "resume": "Mince bande née de l'ischium, près de la tubérosité, qui rejoint le centre tendineux du périnée en avant de l'anus.",
+   "origine": [
+    {
+     "texte": "Face interne et partie antérieure de la tubérosité de l'ischium",
+     "os": [
+      "ischium"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Centre tendineux du périnée, avec le muscle opposé, le sphincter externe de l'anus et le bulbospongieux",
+     "os": []
+    }
+   ],
+   "action": "Fixe le centre tendineux du périnée",
+   "actions": [
+    {
+     "articulation": "bassin",
+     "mouvement": "stabilisation",
+     "role": "principal",
+     "precision": "Fixe le centre tendineux du périnée"
+    }
+   ],
+   "synergistes": [
+    "transverse-profond-du-perinee",
+    "sphincter-anal-externe"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-perineal",
+    "texte": "Nerf périnéal, branche du nerf pudendal",
+    "racines": [
+     "S2",
+     "S3",
+     "S4"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère périnéale, branche de l'artère pudendale interne",
+    "arteres": [
+     "artere-perineale",
+     "artere-pudendale-interne"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Pas de déficit isolé ; le centre tendineux perd un peu de sa fixité, au détriment du plancher pelvien",
+   "clinique": null,
+   "memo": "Une planche posée en travers du périnée, d'une tubérosité de l'ischium au centre",
+   "variantes": "Peut manquer ou être doublé ; s'insère parfois sur le bulbospongieux ou le sphincter externe de l'anus",
+   "sources": [
+    "gray1918",
+    "wp-transverse-perineal-superficiel",
+    "ttuhsc-perinee"
+   ],
+   "divergences": "Gray ne donne pas de nerf propre à ce muscle, le TTUHSC la branche profonde du nerf périnéal. Les racines S2-S4 sont celles du nerf pudendal."
+  },
+  {
+   "id": "triceps-sural",
+   "resume": "Le muscle du mollet : deux gastrocnémiens et un soléaire qui s'unissent dans le tendon calcanéen pour étendre la cheville.",
+   "origine": [
+    {
+     "texte": "Gastrocnémien : condyles médial et latéral du fémur, au-dessus du genou",
+     "os": [
+      "femur"
+     ]
+    },
+    {
+     "texte": "Soléaire : tête et tiers supérieur de la fibula, ligne du soléaire et bord médial du tibia",
+     "os": [
+      "fibula",
+      "tibia"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face postérieure du calcanéus, par le tendon calcanéen commun",
+     "os": [
+      "tendon-calcaneen",
+      "calcaneus"
+     ]
+    }
+   ],
+   "action": "Étend la cheville (flexion plantaire) : se hisser sur la pointe, marcher, courir, sauter ; le gastrocnémien fléchit aussi le genou",
+   "actions": [
+    {
+     "articulation": "cheville",
+     "mouvement": "flexion-plantaire",
+     "role": "principal",
+     "precision": "Soulève le talon ; le soléaire retient le corps de basculer en avant debout"
+    },
+    {
+     "articulation": "genou",
+     "mouvement": "flexion",
+     "role": "accessoire",
+     "precision": "Par le gastrocnémien seul"
+    }
+   ],
+   "synergistes": [
+    "plantaire",
+    "tibial-posterieur",
+    "long-flechisseur-hallux",
+    "long-fibulaire"
+   ],
+   "antagonistes": [
+    "tibial-anterieur"
+   ],
+   "innervation": {
+    "nerf": "nerf-tibial",
+    "texte": "Nerf tibial",
+    "racines": [
+     "S1",
+     "S2"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères surales de la poplitée, tibiale postérieure et fibulaire",
+    "arteres": [
+     "arteres-surales",
+     "poplitee",
+     "tibiale-posterieure",
+     "fibulaire"
+    ]
+   },
+   "palpation": "Le mollet se durcit en se mettant sur la pointe des pieds ; le tendon calcanéen se suit jusqu'au talon",
+   "test": "Se hisser sur la pointe d'un seul pied, plusieurs fois ; épreuve de Thompson : le pied doit s'étendre quand on comprime le mollet",
+   "atteinte": "Rupture du tendon calcanéen ou atteinte du nerf tibial : impossible de monter sur la pointe du pied, marche talonnante",
+   "clinique": "Son tendon donne le réflexe achilléen (S1-S2) ; au repos, il pompe le sang des veines du mollet vers le cœur",
+   "memo": "Trois chefs, d'où triceps : les deux jumeaux (gastrocnémien) et le soléaire, tous trois tirés par le même tendon",
+   "variantes": "Le chef latéral du gastrocnémien, voire tout le muscle, peut manquer ; un faisceau supplémentaire du soléaire est possible",
+   "sources": [
+    "gray1918",
+    "wp-triceps-surae"
+   ],
+   "divergences": "Racines : Gray donne S1-S2, Wikipédia L5-S2 ; on retient S1-S2. Les tests (Thompson) et le réflexe viennent de l'enseignement courant, non de ces deux sources."
+  }
+ ]
+}

@@ -1,0 +1,346 @@
+{
+  "sources": {
+    "gray1918": {
+      "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral : œil, oreille interne, poumons, caecum, canal anal (Internet Archive)",
+      "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+    },
+    "wp-human-eye": {
+      "titre": "Wikipedia (anglais) — Human eye",
+      "url": "https://en.wikipedia.org/wiki/Human_eye"
+    },
+    "wp-cochlea": {
+      "titre": "Wikipedia (anglais) — Cochlea",
+      "url": "https://en.wikipedia.org/wiki/Cochlea"
+    },
+    "wp-semicircular": {
+      "titre": "Wikipedia (anglais) — Semicircular canals",
+      "url": "https://en.wikipedia.org/wiki/Semicircular_canals"
+    },
+    "wp-pituitary": {
+      "titre": "Wikipedia (anglais) — Pituitary gland",
+      "url": "https://en.wikipedia.org/wiki/Pituitary_gland"
+    },
+    "kenhub-hypophyse": {
+      "titre": "Kenhub — Pituitary gland",
+      "url": "https://www.kenhub.com/en/library/anatomy/pituitary-gland"
+    },
+    "wp-parathyroid": {
+      "titre": "Wikipedia (anglais) — Parathyroid gland",
+      "url": "https://en.wikipedia.org/wiki/Parathyroid_gland"
+    },
+    "kenhub-parathyroides": {
+      "titre": "Kenhub — Parathyroid glands",
+      "url": "https://www.kenhub.com/en/library/anatomy/parathyroid-glands"
+    },
+    "wp-lung": {
+      "titre": "Wikipedia (anglais) — Lung",
+      "url": "https://en.wikipedia.org/wiki/Lung"
+    },
+    "wp-thymus": {
+      "titre": "Wikipedia (anglais) — Thymus",
+      "url": "https://en.wikipedia.org/wiki/Thymus"
+    },
+    "kenhub-thymus": {
+      "titre": "Kenhub — Thymus",
+      "url": "https://www.kenhub.com/en/library/anatomy/thymus"
+    },
+    "wp-cecum": {
+      "titre": "Wikipedia (anglais) — Cecum",
+      "url": "https://en.wikipedia.org/wiki/Cecum"
+    },
+    "wp-anal-canal": {
+      "titre": "Wikipedia (anglais) — Anal canal",
+      "url": "https://en.wikipedia.org/wiki/Anal_canal"
+    }
+  },
+  "fiches": [
+    {
+      "id": "bulbe-oculaire",
+      "resume": "L'œil lui-même : une sphère d'environ 24 mm qui forme l'image du monde sur la rétine et l'envoie au cerveau par le nerf optique.",
+      "systeme": "sensoriel",
+      "situation": "Dans la partie antérieure de l'orbite, enfoui dans la graisse orbitaire et mû par les muscles oculomoteurs ; le nerf optique le rejoint environ 3 mm en dedans de son pôle postérieur",
+      "fonction": "La cornée et le cristallin concentrent la lumière, l'iris règle la quantité qui entre, la rétine la transforme en signal nerveux que le nerf optique porte au cerveau",
+      "parties": [
+        { "nom": "Tunique fibreuse", "role": "La sclère, blanche et solide, forme les cinq sixièmes postérieurs ; la cornée, transparente et sans vaisseaux, le sixième antérieur" },
+        { "nom": "Tunique vasculaire (uvée)", "role": "Choroïde, corps ciliaire (muscle de l'accommodation) et iris, diaphragme percé de la pupille" },
+        { "nom": "Tunique nerveuse", "role": "La rétine, avec la macula et sa fovéa (vision fine) et le disque optique, point de départ du nerf, sans photorécepteurs : la tache aveugle" },
+        { "nom": "Segment antérieur", "role": "Cornée, iris, cristallin et les chambres antérieure et postérieure, remplies d'humeur aqueuse" },
+        { "nom": "Segment postérieur", "role": "Corps vitré, rétine, choroïde et sclère" },
+        { "nom": "Cristallin et fibres zonulaires", "role": "Lentille biconvexe qui change de courbure pour la mise au point ; les fibres zonulaires la suspendent au corps ciliaire" },
+        { "nom": "Corps vitré", "role": "Gel transparent qui remplit environ les quatre cinquièmes du globe, en arrière du cristallin" }
+      ],
+      "rapports": "Séparé de la graisse orbitaire par le fascia du bulbe ; recouvert en avant par les paupières et la conjonctive ; en arrière, le nerf optique et, tout autour, les muscles oculomoteurs",
+      "vascularisation": {
+        "texte": "Artère ophtalmique : artère centrale de la rétine pour les couches internes de la rétine, artères ciliaires postérieures courtes et longues pour la choroïde, le corps ciliaire et l'iris ; retour par les veines ophtalmiques",
+        "arteres": ["artere-ophtalmique", "artere-centrale-de-la-retine", "arteres-ciliaires-posterieures-courtes", "arteres-ciliaires-posterieures-longues"],
+        "veines": ["veine-ophtalmique-superieure", "veine-ophtalmique-inferieure"]
+      },
+      "innervation": {
+        "texte": "Nerf optique (II) pour la vision ; nerfs ciliaires courts et longs, relais du ganglion ciliaire, pour la pupille, l'accommodation et la sensibilité de la cornée",
+        "nerfs": ["nerf-optique-ii", "courts-nerfs-ciliaires", "longs-nerfs-ciliaires", "ganglion-ciliaire"]
+      },
+      "examen": "Acuité visuelle, champ visuel, réflexe pupillaire à la lumière ; le fond d'œil à l'ophtalmoscope montre la rétine, la macula et le disque optique",
+      "clinique": "Glaucome (pression intra-oculaire trop forte qui abîme le nerf optique), cataracte (cristallin opaque), décollement de rétine, dégénérescence maculaire liée à l'âge qui abolit la vision centrale",
+      "memo": "L'œil est un appareil photo : cornée et cristallin forment l'objectif, l'iris le diaphragme, la rétine le capteur",
+      "variantes": "Le diamètre antéro-postérieur passe d'environ 17,5 mm à la naissance à 20-21 mm à la puberté, puis à environ 24 mm chez l'adulte",
+      "sources": ["gray1918", "wp-human-eye"],
+      "divergences": null
+    },
+    {
+      "id": "cochlee",
+      "resume": "L'organe de l'audition : un conduit enroulé sur deux tours et trois quarts autour d'un axe osseux, dans le rocher, qui change les vibrations du son en signaux nerveux.",
+      "systeme": "sensoriel",
+      "situation": "Dans la partie pétreuse du temporal, en avant du vestibule ; sa base est au fond du méat acoustique interne et son premier tour bombe dans la caisse du tympan, en un relief, le promontoire",
+      "fonction": "Transforme en influx nerveux les vibrations transmises par l'étrier à la fenêtre du vestibule ; chaque fréquence fait vibrer un endroit précis de la membrane basilaire, les aigus près de la base, les graves vers l'apex",
+      "parties": [
+        { "nom": "Modiolus", "role": "Axe conique osseux, creusé de canaux pour les fibres du nerf cochléaire ; autour de lui s'enroule le canal spiral, long d'environ 30 mm" },
+        { "nom": "Rampes vestibulaire et tympanique", "role": "Remplies de périlymphe : la première part de la fenêtre du vestibule, la seconde finit à la fenêtre de la cochlée ; elles se rejoignent à l'apex, à l'hélicotrème" },
+        { "nom": "Canal cochléaire (rampe moyenne)", "role": "Rempli d'endolymphe, pauvre en sodium et riche en potassium ; limité par la membrane vestibulaire (toit) et la membrane basilaire (plancher)" },
+        { "nom": "Organe spiral (de Corti)", "role": "Posé sur la membrane basilaire : une rangée de cellules ciliées internes, qui envoient l'information, et trois rangées de cellules ciliées externes, qui amplifient les sons faibles" },
+        { "nom": "Ganglion spiral", "role": "Dans le modiolus : ses neurones bipolaires donnent les fibres du nerf cochléaire" }
+      ],
+      "rapports": "En dehors, la caisse du tympan (promontoire, fenêtres du vestibule et de la cochlée) ; en dedans, le méat acoustique interne ; en arrière, le vestibule",
+      "vascularisation": {
+        "texte": "Artère labyrinthique (auditive interne), née de l'artère basilaire ; sa branche cochléaire forme un réseau capillaire dans la lame spirale et la membrane basilaire",
+        "arteres": [],
+        "veines": []
+      },
+      "innervation": {
+        "texte": "Nerf cochléaire, partie auditive du nerf vestibulo-cochléaire (VIII), dont les neurones siègent dans le ganglion spiral",
+        "nerfs": ["nerf-cochleaire", "ganglion-cochleaire", "nerf-vestibulocochleaire-viii"]
+      },
+      "examen": "Audiométrie tonale et vocale, diapason (épreuves de Weber et de Rinne) ; les otoémissions acoustiques, produites par les cellules ciliées externes, dépistent la surdité du nouveau-né",
+      "clinique": "Le bruit fort, certains médicaments et l'âge détruisent les cellules ciliées, surtout les externes : surdité de perception, qui touche d'abord les aigus. Quand elle est profonde, un implant cochléaire stimule directement le nerf",
+      "memo": "Cochlée, « escargot » en latin : deux tours et trois quarts, la base pour les aigus, l'apex pour les graves",
+      "variantes": null,
+      "sources": ["gray1918", "wp-cochlea"],
+      "divergences": null
+    },
+    {
+      "id": "conduits-semicirculaires",
+      "resume": "Trois petits conduits en anneau de l'oreille interne, presque à angle droit les uns des autres : ils sentent les rotations de la tête et servent à l'équilibre.",
+      "systeme": "sensoriel",
+      "situation": "Dans la partie pétreuse du temporal, en arrière et au-dessus du vestibule, où ils s'ouvrent par cinq orifices ; les conduits membraneux sont logés dans les canaux semi-circulaires osseux, larges d'environ 0,8 mm",
+      "fonction": "Détectent les rotations de la tête : quand elle tourne, l'endolymphe prend du retard par inertie, courbe la cupule et les cils des cellules de l'ampoule, et un signal part vers le cerveau",
+      "parties": [
+        { "nom": "Conduit antérieur (supérieur)", "role": "Vertical ; sensible aux mouvements de hochement de la tête, comme pour dire oui" },
+        { "nom": "Conduit postérieur", "role": "Vertical, perpendiculaire à l'antérieur ; sensible à l'inclinaison de la tête vers l'épaule" },
+        { "nom": "Conduit latéral (horizontal)", "role": "Incliné d'environ 30° sur l'horizontale ; sensible aux rotations de côté, comme pour dire non" },
+        { "nom": "Ampoules", "role": "Renflement à une extrémité de chaque conduit, avec la crête ampullaire : les cellules ciliées sous une cupule gélatineuse" },
+        { "nom": "Pilier commun", "role": "Les conduits antérieur et postérieur se rejoignent avant de s'ouvrir dans le vestibule : c'est pourquoi cinq orifices seulement s'y ouvrent" }
+      ],
+      "rapports": "Chaque conduit est dans un plan presque perpendiculaire aux deux autres, comme les trois faces d'un coin de cube ; ils débouchent dans le vestibule, en arrière du limaçon",
+      "vascularisation": {
+        "texte": "Branches vestibulaires de l'artère labyrinthique (auditive interne), née de l'artère basilaire",
+        "arteres": [],
+        "veines": []
+      },
+      "innervation": {
+        "texte": "Nerf vestibulaire, partie du nerf vestibulo-cochléaire (VIII), dont les neurones sont dans le ganglion vestibulaire",
+        "nerfs": ["nerf-vestibulaire", "ganglion-vestibulaire", "nerf-vestibulocochleaire-viii"]
+      },
+      "examen": "Recherche d'un nystagmus, manœuvre de Dix-Hallpike pour le conduit postérieur, épreuve calorique pour le conduit latéral",
+      "clinique": "Vertige positionnel paroxystique bénin : des cristaux détachés du vestibule gagnent un conduit, le plus souvent le postérieur, et déclenchent un vertige bref à chaque changement de position de la tête ; la manœuvre d'Epley les ramène dans le vestibule",
+      "memo": "Trois conduits pour trois mouvements de tête : oui (antérieur), non (latéral), l'oreille vers l'épaule (postérieur)",
+      "variantes": null,
+      "sources": ["gray1918", "wp-semicircular"],
+      "divergences": null
+    },
+    {
+      "id": "hypophyse",
+      "resume": "La glande maîtresse du système hormonal : un petit corps ovale d'environ 1 cm, suspendu sous l'hypothalamus et logé dans la selle turcique.",
+      "systeme": "endocrinien",
+      "situation": "Dans la fosse hypophysaire de la selle turcique du sphénoïde, coiffée par le diaphragme de la selle ; elle pend sous l'hypothalamus, auquel la tige pituitaire (infundibulum) la relie. Elle pèse de 0,5 à 1 g",
+      "fonction": "Libère des hormones qui commandent d'autres glandes : croissance (GH), lait (prolactine), thyroïde (TSH), surrénale (ACTH), gonades (FSH, LH) ; le lobe postérieur libère l'ocytocine et l'hormone antidiurétique, fabriquées par l'hypothalamus",
+      "parties": [
+        { "nom": "Adénohypophyse (lobe antérieur)", "role": "Environ 80 % de la glande ; tissu glandulaire (parties distale, tubérale et intermédiaire), commandé par les hormones de libération de l'hypothalamus" },
+        { "nom": "Neurohypophyse (lobe postérieur)", "role": "Prolongement de l'hypothalamus, sans cellules sécrétrices : elle stocke et libère l'ocytocine et l'hormone antidiurétique" },
+        { "nom": "Tige pituitaire (infundibulum)", "role": "Relie la glande à l'hypothalamus ; elle porte les vaisseaux du système porte hypophysaire et les fibres hypothalamo-hypophysaires" }
+      ],
+      "rapports": "En avant et au-dessus : le chiasma optique ; sur les côtés : les sinus caverneux ; en bas et en avant : le sinus sphénoïdal",
+      "vascularisation": {
+        "texte": "Artères hypophysaires supérieures (tige et lobe antérieur, par le système porte) et inférieures (surtout lobe postérieur), branches de la carotide interne ; le sang veineux gagne les sinus caverneux",
+        "arteres": ["carotide-interne"],
+        "veines": ["sinus-caverneux"]
+      },
+      "examen": "Dosage des hormones dans le sang, IRM de la région sellaire ; l'examen du champ visuel cherche une compression du chiasma optique",
+      "clinique": "L'adénome hypophysaire est le plus souvent bénin. Trop gros, il comprime le chiasma : perte de la vision latérale des deux yeux (hémianopsie bitemporale). Sécrétant, il donne un prolactinome (troubles des règles, lait) ou une acromégalie (excès de GH)",
+      "memo": "Deux étages : devant l'adénohypophyse, glande qui fabrique ; derrière la neurohypophyse, prolongement du cerveau qui stocke",
+      "variantes": "Le lobe intermédiaire, entre les deux lobes, est rudimentaire chez l'humain",
+      "sources": ["wp-pituitary", "kenhub-hypophyse"],
+      "divergences": null
+    },
+    {
+      "id": "glandes-parathyroides",
+      "resume": "Quatre minuscules glandes collées à la face postérieure de la thyroïde, qui règlent le calcium du sang grâce à la parathormone.",
+      "systeme": "endocrinien",
+      "situation": "Dans le cou, à la face postérieure des deux lobes de la thyroïde, deux de chaque côté, une supérieure et une inférieure ; chacune est une lentille jaune-brun d'environ 6 mm, ni visible ni palpable",
+      "fonction": "Libèrent la parathormone (PTH) quand le calcium du sang baisse : elle le fait remonter en agissant sur l'os, le rein et l'intestin, et fait baisser les phosphates",
+      "parties": [
+        { "nom": "Glandes supérieures", "role": "Issues de la 4e poche pharyngienne ; elles restent près de la face postérieure de la thyroïde" },
+        { "nom": "Glandes inférieures", "role": "Issues de la 3e poche, elles descendent avec le thymus, ce qui rend leur position plus variable" }
+      ],
+      "rapports": "Contre la face postérieure des lobes thyroïdiens, en avant de la trachée et de l'œsophage, près du nerf laryngé récurrent",
+      "vascularisation": {
+        "texte": "Surtout l'artère thyroïdienne inférieure, aidée de la supérieure ; le sang veineux gagne les veines thyroïdiennes supérieure, moyenne et inférieure",
+        "arteres": ["artere-thyroidienne-inferieure", "artere-thyroidienne-superieure"],
+        "veines": ["veine-thyroidienne-superieure", "veine-thyroidienne-moyenne", "veine-thyroidienne-inferieure"]
+      },
+      "innervation": {
+        "texte": "Rameaux sympathiques des ganglions cervicaux moyen et inférieur, qui règlent surtout la circulation des glandes",
+        "nerfs": ["ganglion-cervical-moyen", "ganglion-cervicothoracique"]
+      },
+      "examen": "Non palpables : on dose le calcium et la PTH dans le sang, et l'échographie du cou ou la scintigraphie localisent une glande malade",
+      "clinique": "Hypoparathyroïdie après une chirurgie de la thyroïde (glandes lésées ou privées de leur artère) : calcium bas, fourmillements autour de la bouche, crampes. Hyperparathyroïdie : le plus souvent un adénome bénin d'une glande, traité par ablation",
+      "memo": "Les supérieures naissent de la 4e poche, les inférieures de la 3e : elles se croisent en route, la 3e descendant avec le thymus",
+      "variantes": "Six ou huit glandes chez certains, parfois moins de quatre ; une glande ectopique peut se trouver dans le thorax, la thyroïde ou le thymus",
+      "sources": ["wp-parathyroid", "kenhub-parathyroides"],
+      "divergences": null
+    },
+    {
+      "id": "poumon-droit",
+      "resume": "Le plus gros des deux poumons : trois lobes séparés par deux scissures, dans la cavité pleurale droite.",
+      "systeme": "respiratoire",
+      "situation": "Dans la moitié droite du thorax, enveloppé de sa plèvre ; son sommet dépasse de 2,5 à 4 cm l'extrémité sternale de la première côte, sa base repose sur la coupole droite du diaphragme",
+      "fonction": "Assure les échanges gazeux : amène l'oxygène de l'air au sang et en retire le gaz carbonique, dans les alvéoles au bout des bronches",
+      "parties": [
+        { "nom": "Lobe supérieur", "role": "Au-dessus de la scissure horizontale ; il contient le sommet du poumon" },
+        { "nom": "Lobe moyen", "role": "Petit lobe en coin entre les deux scissures, propre au poumon droit ; son équivalent à gauche est la lingula" },
+        { "nom": "Lobe inférieur", "role": "En arrière et en bas de la scissure oblique ; il repose sur le diaphragme" },
+        { "nom": "Scissures oblique et horizontale", "role": "L'oblique sépare le lobe inférieur des deux autres ; l'horizontale sépare le lobe supérieur du lobe moyen" },
+        { "nom": "Hile", "role": "Dépression de la face médiale où entrent la bronche principale, l'artère pulmonaire et les veines pulmonaires ; à droite la bronche est la plus haute" }
+      ],
+      "rapports": "En dedans : le cœur (empreinte plus petite qu'à gauche), la veine cave supérieure, l'arche de la veine azygos et l'œsophage ; en bas, le foie sous la coupole diaphragmatique",
+      "vascularisation": {
+        "texte": "Artère pulmonaire droite, qui amène le sang pauvre en oxygène aux alvéoles ; veines pulmonaires, qui ramènent le sang oxygéné à l'atrium gauche ; artères bronchiques pour la nutrition des bronches",
+        "arteres": ["artere-pulmonaire-droite"],
+        "veines": ["veines-pulmonaires"]
+      },
+      "innervation": {
+        "texte": "Plexus pulmonaire : nerf vague (parasympathique, qui resserre les bronches) et fibres du tronc sympathique (qui les dilatent)",
+        "nerfs": ["plexus-pulmonaire", "nerf-vague-x", "tronc-sympathique"]
+      },
+      "examen": "Auscultation et percussion de la paroi du thorax, radiographie et scanner ; les bruits du lobe moyen s'écoutent en avant, sous l'aisselle",
+      "clinique": "La bronche principale droite, plus courte, plus large et plus verticale que la gauche, reçoit plus souvent les corps étrangers inhalés. Pneumonie, cancer, bronchopneumopathie chronique, pneumothorax",
+      "memo": "À droite trois lobes, à gauche deux : le cœur prend la place du troisième",
+      "variantes": "Les lobes et les scissures varient assez souvent (scissures incomplètes, lobe supplémentaire)",
+      "sources": ["gray1918", "wp-lung"],
+      "divergences": "Gray (1918) donne environ 625 g au poumon droit et 567 g au gauche ; Wikipédia, environ 1,3 kg pour les deux. Les deux s'accordent : le droit est plus gros et plus lourd"
+    },
+    {
+      "id": "poumon-gauche",
+      "resume": "Plus petit que le droit : deux lobes séparés par une seule scissure, et une échancrure qui laisse la place au cœur.",
+      "systeme": "respiratoire",
+      "situation": "Dans la moitié gauche du thorax, enveloppé de sa plèvre ; son sommet dépasse de 2,5 à 4 cm l'extrémité sternale de la première côte, sa base repose sur la coupole gauche du diaphragme",
+      "fonction": "Assure les échanges gazeux : amène l'oxygène de l'air au sang et en retire le gaz carbonique, dans les alvéoles au bout des bronches",
+      "parties": [
+        { "nom": "Lobe supérieur", "role": "Au-dessus de la scissure oblique ; il comprend le sommet et, en bas, la lingula" },
+        { "nom": "Lingula", "role": "Languette de la partie antéro-inférieure du lobe supérieur, au bord de l'échancrure cardiaque ; elle correspond au lobe moyen droit" },
+        { "nom": "Lobe inférieur", "role": "En arrière et en bas de la scissure oblique ; il repose sur le diaphragme" },
+        { "nom": "Échancrure cardiaque", "role": "Creux du bord antérieur qui laisse la place à la pointe du cœur" },
+        { "nom": "Hile", "role": "Dépression de la face médiale où entrent la bronche principale, l'artère pulmonaire et les veines pulmonaires ; à gauche l'artère passe au-dessus de la bronche" }
+      ],
+      "rapports": "En dedans : le cœur (large empreinte cardiaque), l'arc de l'aorte et l'aorte descendante, l'œsophage ; en bas, la rate et l'estomac sous la coupole diaphragmatique",
+      "vascularisation": {
+        "texte": "Artère pulmonaire gauche, qui amène le sang pauvre en oxygène aux alvéoles ; veines pulmonaires supérieure et inférieure, qui ramènent le sang oxygéné à l'atrium gauche ; artères bronchiques pour les bronches",
+        "arteres": ["artere-pulmonaire-gauche"],
+        "veines": ["veine-pulmonaire-superieure-gauche", "veine-pulmonaire-inferieure-gauche"]
+      },
+      "innervation": {
+        "texte": "Plexus pulmonaire : nerf vague (parasympathique, qui resserre les bronches) et fibres du tronc sympathique (qui les dilatent)",
+        "nerfs": ["plexus-pulmonaire", "nerf-vague-x", "tronc-sympathique"]
+      },
+      "examen": "Auscultation et percussion de la paroi du thorax, radiographie et scanner ; la matité du cœur à la percussion occupe une partie de la face antérieure gauche",
+      "clinique": "Pneumonie, cancer, bronchopneumopathie chronique, pneumothorax, comme à droite. La bronche principale gauche, plus longue et plus étroite, reçoit moins souvent les corps étrangers inhalés",
+      "memo": "Deux lobes, une scissure, une échancrure : à gauche, le cœur prend de la place",
+      "variantes": "Les lobes et les scissures varient assez souvent ; Gray note que la bronche gauche n'a pas de branche pour le lobe supérieur comparable à celle du droit, d'où des doutes sur le « vrai » lobe supérieur gauche",
+      "sources": ["gray1918", "wp-lung"],
+      "divergences": "Gray (1918) donne environ 567 g au poumon gauche et 625 g au droit ; Wikipédia, environ 1,3 kg pour les deux. Les deux s'accordent : le gauche est plus petit et plus léger"
+    },
+    {
+      "id": "thymus",
+      "resume": "L'école des lymphocytes T : une glande à deux lobes derrière le sternum, grosse chez l'enfant, qui se remplace peu à peu par de la graisse.",
+      "systeme": "lymphatique",
+      "situation": "Médiastin supérieur et partie antérieure du médiastin, derrière le sternum, devant les gros vaisseaux et le péricarde ; il monte jusqu'aux pôles inférieurs de la thyroïde et descend jusqu'au 4e cartilage costal",
+      "fonction": "Fait mûrir les lymphocytes T venus de la moelle osseuse : seuls survivent ceux qui reconnaissent les molécules du soi sans attaquer l'organisme ; ils vont ensuite peupler les ganglions et la rate",
+      "parties": [
+        { "nom": "Lobes droit et gauche", "role": "Unis sur la ligne médiane et enveloppés d'une capsule ; le gauche monte le plus souvent un peu plus haut" },
+        { "nom": "Cortex et médullaire", "role": "Cortex dense en périphérie, médullaire plus clair au centre avec les corpuscules de Hassall" },
+        { "nom": "Involution", "role": "Il grossit jusqu'à la puberté (20 à 50 g), puis diminue : les hormones sexuelles le font remplacer par de la graisse" }
+      ],
+      "rapports": "En avant : le sternum ; en arrière : le péricarde, l'arc aortique et les gros vaisseaux, dont la veine brachio-céphalique gauche ; de chaque côté, les nerfs phréniques",
+      "vascularisation": {
+        "texte": "Artères thoracique interne et thyroïdienne inférieure ; les veines thymiques gagnent surtout la veine brachio-céphalique gauche",
+        "arteres": ["thoracique-interne", "artere-thyroidienne-inferieure"],
+        "veines": ["veines-thymiques", "veine-brachiocephalique"]
+      },
+      "innervation": {
+        "texte": "Quelques rameaux du nerf vague et du tronc sympathique cervical",
+        "nerfs": ["nerf-vague-x", "tronc-sympathique"]
+      },
+      "examen": "Inaccessible à l'examen ; scanner ou IRM du médiastin antérieur quand on cherche une tumeur",
+      "clinique": "Thymome, tumeur de l'épithélium thymique de l'adulte, souvent après 40 ans ; environ un patient sur cinq a une myasthénie, maladie auto-immune pour laquelle l'ablation du thymus est une option. Syndrome de DiGeorge : thymus absent ou minuscule, déficit immunitaire",
+      "memo": "T comme thymus : c'est là que les lymphocytes T apprennent à ne pas attaquer le corps",
+      "variantes": "Du tissu thymique est parfois dispersé dans le cou ou dans la thyroïde",
+      "sources": ["wp-thymus", "kenhub-thymus"],
+      "divergences": "Wikipédia le place dans le médiastin supérieur et antérieur ; Kenhub dans le médiastin supérieur et la partie antérieure du médiastin inférieur. La fiche retient le médiastin antérieur et supérieur"
+    },
+    {
+      "id": "caecum",
+      "resume": "Le cul-de-sac qui ouvre le gros intestin : une poche de la fosse iliaque droite, sous l'abouchement de l'iléon, qui porte l'appendice vermiforme.",
+      "systeme": "digestif",
+      "situation": "Fosse iliaque droite, au-dessus de la moitié latérale du ligament inguinal, sur les muscles iliaque et grand psoas, souvent au contact de la paroi abdominale ; environ 6 cm de long sur 7,5 cm de large",
+      "fonction": "Reçoit ce qui sort de l'iléon et le fait passer dans le côlon ascendant ; absorbe l'eau et les sels et lubrifie les selles qui entrent dans le gros intestin",
+      "parties": [
+        { "nom": "Valve iléo-caecale (de Bauhin)", "role": "Orifice de l'iléon, à deux lèvres, dans la face médiale et postérieure de la jonction caeco-colique ; elle ralentit l'arrivée du contenu de l'iléon" },
+        { "nom": "Appendice vermiforme", "role": "Petit tube qui naît de la face médiale et inférieure, là où se rejoignent les trois ténies" },
+        { "nom": "Ténies et haustrations", "role": "Trois bandelettes longitudinales, plus courtes que la paroi, qui la froncent en bosselures" }
+      ],
+      "rapports": "Presque entièrement entouré de péritoine ; en avant, le grand omentum ou des anses grêles quand il est vide ; il se continue en haut par le côlon ascendant, qui est rétropéritonéal",
+      "vascularisation": {
+        "texte": "Artère iléo-colique (de la mésentérique supérieure) par ses artères caecales antérieure et postérieure et l'artère appendiculaire ; veine iléo-colique vers la veine mésentérique supérieure",
+        "arteres": ["artere-ileocolique", "artere-caecale-anterieure", "artere-caecale-posterieure", "artere-appendiculaire"],
+        "veines": ["veine-ileocolique", "veine-mesenterique-superieure"]
+      },
+      "innervation": {
+        "texte": "Plexus mésentérique supérieur : fibres sympathiques et nerf vague",
+        "nerfs": ["plexus-mesenterique-superieur", "nerf-vague-x"]
+      },
+      "examen": "Palpé dans la fosse iliaque droite, où un caecum plein donne une masse molle qui gargouille ; la coloscopie va jusqu'à lui et le reconnaît à la valve iléo-caecale et à l'orifice appendiculaire",
+      "clinique": "Le cancer du caecum saigne à bas bruit et se découvre souvent par une anémie ; la typhlite, inflammation du caecum chez un patient dont les globules blancs sont effondrés, est une urgence. L'appendicite naît de l'appendice que porte le caecum",
+      "memo": "Caecum, « aveugle » en latin : l'iléon y entre par le côté, l'appendice y pend par le bas",
+      "variantes": "Dans environ 5 % des cas, la partie haute de sa face postérieure est nue de péritoine",
+      "sources": ["gray1918", "wp-cecum"],
+      "divergences": null
+    },
+    {
+      "id": "canal-anal",
+      "resume": "Dernier segment du tube digestif, long de 2,5 à 4 cm : il prolonge le rectum à travers le plancher pelvien, s'ouvre à l'anus et se ferme par deux sphincters.",
+      "systeme": "digestif",
+      "situation": "Sous le diaphragme pelvien, dans le périnée postérieur, entre les deux fosses ischio-anales ; il va de la jonction ano-rectale à l'anus, dirigé en bas et en arrière",
+      "fonction": "Retient les selles et les gaz (continence), puis les laisse sortir à la défécation, grâce à ses deux sphincters",
+      "parties": [
+        { "nom": "Ligne pectinée (dentée)", "role": "Limite entre la zone haute, tapissée de muqueuse, et la zone basse, tapissée de peau ; elle sépare deux territoires de vaisseaux, de nerfs et de lymphe" },
+        { "nom": "Colonnes anales", "role": "Plis longitudinaux de la moitié haute (colonnes de Morgagni), séparés par les sinus anaux et reliés en bas par de petites valvules anales" },
+        { "nom": "Sphincter interne", "role": "Épaississement involontaire de la couche circulaire du rectum" },
+        { "nom": "Sphincter externe", "role": "Volontaire, il entoure l'extrémité du canal ; contracté en permanence au repos, il se relâche à la défécation" }
+      ],
+      "rapports": "De chaque côté, les fosses ischio-anales ; en avant, l'apex de la prostate chez l'homme, la paroi postérieure du vagin chez la femme ; il n'est pas recouvert de péritoine",
+      "vascularisation": {
+        "texte": "Au-dessus de la ligne pectinée : artère et veine anorectales supérieures (veine vers la veine porte). Au-dessous : artère et veines anorectales inférieures (vers la veine cave). L'artère anorectale moyenne est un relais ; un plexus veineux relie les deux systèmes",
+        "arteres": ["artere-anorectale-superieure", "artere-anorectale-moyenne", "artere-anorectale-inferieure"],
+        "veines": ["veine-anorectale-superieure", "veines-anorectales-moyennes", "veines-anorectales-inferieures"]
+      },
+      "innervation": {
+        "texte": "Au-dessus de la ligne pectinée, plexus hypogastrique inférieur (autonome, sensible à l'étirement) ; au-dessous, nerfs rectaux inférieurs, branches du nerf pudendal (sensibles à la douleur, moteurs du sphincter externe)",
+        "nerfs": ["plexus-hypogastrique-inferieur", "nerf-pudendal"]
+      },
+      "examen": "Toucher rectal (tonus des sphincters, masse, prostate) et anuscopie ; la ligne pectinée sépare les hémorroïdes internes, au-dessus et indolores, des externes, au-dessous et douloureuses",
+      "clinique": "Hémorroïdes : coussins veineux dilatés, saignement rouge vif ; fissure anale (déchirure douloureuse), abcès et fistule de la marge anale. Lymphe : nœuds iliaques internes au-dessus de la ligne, inguinaux superficiels au-dessous, ce qui explique les adénopathies de l'aine",
+      "memo": "Ligne pectinée : au-dessus l'intestin (anorectale supérieure, nœuds iliaques, nerfs autonomes), au-dessous la peau (anorectale inférieure, nœuds inguinaux, nerf pudendal)",
+      "variantes": null,
+      "sources": ["gray1918", "wp-anal-canal"],
+      "divergences": "Le tracé donnait 3 à 4 cm ; Gray et Wikipédia donnent 2,5 à 4 cm. Gray cite les artères anorectales moyenne et inférieure pour le canal, Wikipédia la supérieure au-dessus de la ligne pectinée et l'inférieure au-dessous : on garde Wikipédia, la moyenne en relais"
+    }
+  ]
+}
