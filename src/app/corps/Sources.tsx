@@ -4,10 +4,23 @@ import { X } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { ELEMENTS } from "@/lib/corps/catalogue";
 import referencesJson from "@/lib/corps/fiches/references.json";
+import couvertureJson from "@/lib/corps/modele/couverture.json";
 import { AMPLITUDES_SOURCES } from "@/lib/corps/mouvement/articulations";
 
 const REFERENCES = referencesJson as { fiches: number; references: { nom: string; url: string; fiches: number }[] };
 const nombre = (n: number) => n.toLocaleString("fr-FR");
+const COUVERTURE = couvertureJson as { couches: Record<string, { reference: number; presents: number; part: number }> };
+const NOMS_COUVERTURE: [string, string, string][] = [
+  ["os", "Les os", "os nommés"],
+  ["muscle", "Les muscles", "muscles nommés"],
+  ["ligament", "Les ligaments", "ligaments, ménisques et disques"],
+  ["artere", "Les artères", "artères nommées"],
+  ["veine", "Les veines", "veines et sinus nommés"],
+  ["nerf", "Les nerfs", "nerfs, plexus et ganglions"],
+  ["lymphe", "Les nœuds lymphatiques", "groupes de nœuds"],
+  ["encephale", "L'encéphale", "gyrus, sillons, noyaux et voies"],
+  ["viscere", "Les viscères", "organes d'une liste de référence"],
+];
 
 /*
  * D'où vient le corps de L'Écorché, et ce qu'on a le droit d'en faire.
@@ -75,6 +88,27 @@ export function Sources({ fermer }: { fermer: () => void }) {
         <p>
           La nomenclature suit la <i lang="la">Terminologia Anatomica</i>, 2<sup>e</sup> édition (Federative International Programme for Anatomical Terminology, 2019), dont chaque fiche donne le numéro. Les anciens noms français (omoplate, rotule, péroné…) restent acceptés dans les réponses.
         </p>
+
+        <h3 className="ec-section-titre">Ce que le modèle couvre</h3>
+        <p>
+          Pour chaque couche, la part des structures que la <i lang="la">Terminologia Anatomica</i> nomme et que le modèle montre. Les manques sont surtout les petits rameaux des vaisseaux et des nerfs crâniens, les sous-parties de l’encéphale, l’oreille interne.
+        </p>
+        <ul className="ec-facettes">
+          {NOMS_COUVERTURE.filter(([c]) => COUVERTURE.couches[c]).map(([c, nom, quoi]) => {
+            const x = COUVERTURE.couches[c];
+            return (
+              <li key={c}>
+                <span className="ec-facette-nom">{nom}</span>
+                <span className="ec-jauge fine" aria-hidden="true">
+                  <span style={{ transform: `scaleX(${x.part})` }} />
+                </span>
+                <span className="ec-facette-chiffre" title={`${x.presents} ${quoi} sur ${x.reference}`}>
+                  {Math.round(x.part * 100)} %
+                </span>
+              </li>
+            );
+          })}
+        </ul>
 
         <h3 className="ec-section-titre">Les fiches</h3>
         <p>

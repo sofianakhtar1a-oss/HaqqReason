@@ -325,6 +325,16 @@ export function Partie({ lancement, stage, fermer, relancer }: { lancement: Lanc
           if (!trouves) cam?.viser(ids.length ? ids : [question.cible], { marge: 1.25, depuis: ids[ids.length - 1] ?? question.cible });
           return;
         }
+        if (question.reponse === "clic") {
+          // Toucher sur le corps : sa couche visible, la région cadrée, rien de désigné.
+          stage.regler({ ...miseEnScene(cible), etats: {}, isoler: null, rotation: false, etiquette: null, retrait: false });
+          const g = GRANDE.get(cible.region);
+          cam?.viser(
+            ELEMENTS.filter((x) => x.couche === cible.couche && GRANDE.get(x.region) === g).map((x) => x.id),
+            { marge: 1.05, depuis: cible.id },
+          );
+          return;
+        }
         stage.regler({ ...(question.montrer ? miseEnScene(cible) : { couches: COUCHES_DEFAUT, calques: {}, profondeur: 0, decouvrir: null }), etats: question.montrer ? { [cible.id]: { teinte: TEINTE.laiton, pulse: true } } : {}, isoler: null, rotation: false, etiquette: null, retrait: false });
         if (question.montrer) cam?.viser([cible.id], { marge: 1.8 });
         else cam?.vue("ensemble");

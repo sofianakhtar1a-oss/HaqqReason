@@ -694,6 +694,19 @@ export function fabriquerFonction(graine: number, id: string, type: TypeFonction
         .map(([x]) => PAR_ID.get(x)!);
       const faux = proches(r, e, autres, 3, d);
       if (faux.length < 3) return null;
+      // Une fois sur deux, la réponse se donne sur le corps : toucher l'artère qu'on sent battre là.
+      if (r() < 0.5)
+        return {
+          ...base,
+          consigne: "On prend un pouls à cet endroit : touche l'artère qui bat sous les doigts.",
+          indice,
+          options: [],
+          attendu: id,
+          reponse: "clic",
+          montrer: false,
+          apres: { montrer: [id], pouls: true },
+          explication: deplus(f.pouls.ou, indice),
+        };
       return {
         ...base,
         consigne: "On prend un pouls à cet endroit : quelle artère bat sous les doigts ?",

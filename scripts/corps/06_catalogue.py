@@ -281,6 +281,8 @@ for (couche, ea), ps in groupes.items():
     fr, nom = retoucher(fr), retoucher(nom)
     cotes = {p["cote"] for p in ps}
     pair = any(p["miroir"] for p in ps) or ("g" in cotes and "d" in cotes)
+    # (Le rein de BodyParts3D porte sa source dans son nom de pièce, pour ne pas se confondre avec celui de Z-Anatomy.)
+    ea = re.sub(r"\s*\(BodyParts3D\)", "", ea)
     e = {"id": ident, "couche": couche, "nom": h["nom"] if h else nom, "officiel": fr, "latin": la, "anglais": ea, "ta2": tid, "pair": bool(pair), "nature": ps[0]["sorte"], "inconstant": all(p.get("inconstant") for p in ps), "_pieces": ps, "_heritage": h}
     elements.append(e)
     el_par_anglais[(couche, norme(ea))] = e

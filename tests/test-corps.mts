@@ -96,7 +96,7 @@ ok("les surfaces d'insertion nomment leur muscle (ou leur ligament)", modele.ins
 ok("identifiants uniques", new Set(ELEMENTS.map((e) => e.id)).size === ELEMENTS.length);
 ok("plus de 1 600 structures", ELEMENTS.length >= 1600, String(ELEMENTS.length));
 const heritage = lire("../scripts/corps/donnees/heritage.json") as { id: string; couche: string }[];
-const ABSENTS = ["semi-epineux-tete", "aponevrose-bicipitale"]; // pas de modèle dans Z-Anatomy : à modéliser
+const ABSENTS = ["aponevrose-bicipitale"]; // pas de modèle libre (le semi-épineux de la tête vient de BodyParts3D)
 const perdus = heritage.filter((h) => !PAR_ID.has(h.id)).map((h) => h.id);
 ok("les structures de la première version gardent leur identifiant", perdus.every((id) => ABSENTS.includes(id)), perdus.join());
 const anciens = heritage.map((h) => PAR_ID.get(h.id)).filter((e) => e !== undefined);
@@ -286,6 +286,15 @@ ok("un muscle sans articulation à mouvoir se contracte sur place", programmeDe(
       ok("les artères qui se palpent disent où prendre le pouls", ["radiale", "carotide-commune", "femorale", "poplitee"].filter((id) => r.fiches[id]).every((id) => (r.fiches[id].pouls as { ou?: string } | null)?.ou));
     }
   }
+}
+
+/* ---------- La couverture de la nomenclature ---------- */
+{
+  const c = lire("../src/lib/corps/modele/couverture.json") as { elements: number; couches: Record<string, { part: number; presents: number; reference: number }> };
+  ok("la couverture est calculée sur le modèle actuel", c.elements === ELEMENTS.length, `${c.elements} ≠ ${ELEMENTS.length}`);
+  // Des planchers : la couverture ne doit pas reculer (une pièce perdue en route se verrait ici).
+  const planchers: Record<string, number> = { os: 0.7, ligament: 0.65, muscle: 0.7, artere: 0.5, veine: 0.35, lymphe: 0.6, nerf: 0.2, encephale: 0.28, viscere: 0.75 };
+  for (const [couche, min] of Object.entries(planchers)) ok(`couverture ${couche} ≥ ${Math.round(min * 100)} %`, (c.couches[couche]?.part ?? 0) >= min, `${c.couches[couche]?.presents}/${c.couches[couche]?.reference}`);
 }
 
 /* ---------- Les questions sur les fonctions ---------- */

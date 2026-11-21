@@ -19,6 +19,9 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
 - Le même dépôt fournit `TA2.csv` : la Terminologia Anatomica 2 (anglais, latin, français…), notre référence de noms.
 - Éléments sous licence non commerciale, **écartés** : l'oreille interne (Université de Dundee, CC BY-NC-SA) et
   le rein (Lissie Cowley, CC BY-NC). Écartés aussi : la peau et les régions de surface, les organes génitaux externes.
+- **BodyParts3D** (The Database Center for Life Science, CC BY-SA 2.1 Japon), copie du dépôt
+  `Kevin-Mattheus-Moerman/BodyParts3D` : le rein (à la place de celui de Z-Anatomy), le rectum, l'iléon et le semi-épineux
+  de la tête, absents de Z-Anatomy (`scripts/corps/01b_bodyparts.py`, placés sur leurs voisins du modèle).
 - Les modèles dérivés (nos fichiers dans `public/corps/`) sont partagés sous la même licence CC BY-SA 4.0.
 
 ## Les décisions
@@ -54,14 +57,14 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
 | 1.3 | Géométrie : soudure, normales, vaisseaux retracés, lissage, trois niveaux de détail | 4 | 3 |
 | 1.4 | Attributs : occlusion précalculée, sens des fibres, tendon et cartilage, poids d'animation, onde artérielle | 4 | 4 |
 | 1.5 | Paquets compressés, noms hachés, chargement progressif | 2 | 2 |
-| 2.1 | Moteur : chargement des paquets, détail selon l'appareil, sélection, états | 4 | 3 |
+| 2.1 | Moteur : chargement des paquets, détail selon l'appareil, sélection, états | 4 | 4 |
 | 2.2 | Matières physiques par tissu (muscle, tendon, os, cartilage, artère, veine, nerf, viscère) | 5 | 4 |
 | 2.3 | Lumière de studio, ombres, occlusion, mappage tonal, anticrénelage, profondeur de champ | 5 | 4.5 |
-| 2.4 | Deux rendus (pièce fraîche, pièce plastinée), qualité adaptative | 2 | 1.5 |
-| 3.1 | Catalogue complet des os, muscles, tendons, artères, relié aux modèles | 4 | 3 |
-| 3.2 | Nouvelles couches : veines, nerfs, ligaments et cartilages, viscères, encéphale | 4 | 3 |
-| 3.3 | Listes de référence TA2, test de couverture, structures manquantes modélisées | 4 | 1 |
-| 4.1 | Dissection au geste, isolement avec les attaches, vue éclatée | 3 | 2 |
+| 2.4 | Deux rendus (pièce fraîche, pièce plastinée), qualité adaptative | 2 | 2 |
+| 3.1 | Catalogue complet des os, muscles, tendons, artères, relié aux modèles | 4 | 4 |
+| 3.2 | Nouvelles couches : veines, nerfs, ligaments et cartilages, viscères, encéphale | 4 | 4 |
+| 3.3 | Listes de référence TA2, test de couverture, structures manquantes modélisées | 4 | 3 |
+| 4.1 | Dissection au geste, isolement avec les attaches, vue éclatée | 3 | 3 |
 | 4.2 | Plans de coupe avec surfaces de coupe réalistes | 3 | 2 |
 | 4.3 | Squelette articulé : segments, axes, amplitudes | 4 | 3 |
 | 4.4 | Contraction des muscles, action de chaque muscle, cœur et pouls | 4 | 3 |
@@ -71,13 +74,13 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
 | 5.4 | Fiches des tendons et aponévroses | 2 | 2 |
 | 5.5 | Fiches des artères | 3 | 3 |
 | 5.6 | Fiches des autres couches | 2 | 2 |
-| 6.1 | Nouvelles méthodes de quiz sur les fonctions | 6 | 5.5 |
+| 6.1 | Nouvelles méthodes de quiz sur les fonctions | 6 | 6 |
 | 6.2 | Répétition espacée FSRS par facette, certitude, reprise de la progression | 4 | 4 |
 | 6.3 | Planches exhaustives, examen final, carte de maîtrise par facette | 4 | 4 |
-| 7.1 | Interface : couches, coupes, mouvements, fiches enrichies, page « Sources et licences » | 4 | 2 |
+| 7.1 | Interface : couches, coupes, mouvements, fiches enrichies, page « Sources et licences » | 4 | 3.5 |
 | 7.2 | Captures de contrôle, tests, performances, mise en ligne, bilan | 4 | 1 |
 
-**Total fait : 81.5 / 100.**
+**Total fait : 90 / 100.**
 
 ## Journal
 
@@ -136,6 +139,15 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
   Le studio du moteur : image multi-échantillonnée hors écran, occlusion d'écran, accumulation à l'arrêt (bords affinés,
   profondeur de champ en gros plan). Le rein et l'oreille interne de Z-Anatomy sont sous licence non commerciale :
   on les reprendra de BodyParts3D (CC BY-SA 2.1 JP), déjà sur le disque.
+
+- 21/11 12:30 — Quatre pièces manquantes viennent de BodyParts3D (CC BY-SA 2.1 JP, `01b_bodyparts.py`) : les deux reins,
+  le rectum, l'iléon et le semi-épineux de la tête ; la chaîne complète a tourné (1 706 structures, toutes avec leur
+  fiche ; une planche de plus : « Le rein, l'iléon et le rectum »). La couverture de la Terminologia Anatomica est
+  mesurée couche par couche (`08_couverture.py`, affichée dans « Sources et licences », vérifiée par les tests). Une
+  structure profonde choisie dans l'explorateur se voit à travers la chair devenue translucide (l'encéphale, à travers
+  le crâne). La pièce plastinée a ses propres teintes (chair brun-rouge opaque, nerfs et tendons ivoire). « Où prendre
+  le pouls ? » se joue aussi en touchant l'artère. Manquent encore, faute de modèle libre : l'oreille interne et
+  plusieurs nerfs (phrénique, laryngé récurrent, splanchniques…).
 
 ## Pour reprendre après une interruption
 

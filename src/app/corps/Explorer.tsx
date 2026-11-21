@@ -189,7 +189,13 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
     if (atelier.coeur) c = { ...c, artere: c.artere || 1, viscere: c.viscere || 1 };
     if (atelier.souffle) c = { ...c, viscere: c.viscere || 1 };
     if (atelier.coeur || atelier.souffle) c = { ...c, muscle: c.muscle ? 0.16 : 0, tendon: c.tendon ? 0.2 : 0 };
-    return rayonsX ? { ...c, muscle: c.muscle ? 0.28 : 0, tendon: c.tendon ? 0.4 : 0 } : c;
+    // Une structure profonde (vaisseau, nerf, viscère, ligament…) se voit à travers la chair, qui devient translucide ;
+    // l'encéphale, à travers le crâne.
+    if (choisi && !["muscle", "tendon", "os"].includes(choisi.couche)) {
+      c = { ...c, muscle: c.muscle ? Math.min(c.muscle, 0.24) : 0, tendon: c.tendon ? Math.min(c.tendon, 0.36) : 0 };
+      if (choisi.couche === "encephale") c = { ...c, os: c.os ? Math.min(c.os, 0.26) : 0 };
+    }
+    return rayonsX ? { ...c, muscle: c.muscle ? Math.min(c.muscle, 0.28) : 0, tendon: c.tendon ? Math.min(c.tendon, 0.4) : 0 } : c;
   }, [couches, rayonsX, choisi, atelier.coeur, atelier.souffle]);
   const vraisCalques = useMemo<Calques>(() => {
     const calque = choisi ? calqueDElement(choisi.id) : null;

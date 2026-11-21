@@ -73,6 +73,22 @@ export const MATIERES: Record<string, Matiere> = {
   insertion: { base: srvb("#c23a2e"), base2: srvb("#2e5fc2"), rug: 0.55, rug2: 0.55, sss: 0, sssTeinte: [0, 0, 0], vernis: 0, fibres: 0, grain: 0, aniso: 0, tranche: srvb("#c23a2e"), grainTranche: 0 },
 };
 
+/**
+ * La pièce plastinée : le polymère qui remplace l'eau rend la chair opaque et un peu plus sombre (le muscle tire
+ * vers le brun-rouge, le nerf et le tendon vers l'ivoire, l'encéphale vers le gris-beige), et le grain des faisceaux
+ * ressort. On part des matières fraîches vers ces teintes, d'autant plus que la pièce est sèche.
+ */
+const PLASTINEES: Partial<Record<string, [number, number, number]>> = {
+  muscle: srvb("#6a2921"),
+  tendon: srvb("#e1d2ab"),
+  ligament: srvb("#d6cba9"),
+  nerf: srvb("#eadcab"),
+  viscere: srvb("#985a4c"),
+  encephale: srvb("#c9bba8"),
+  os: srvb("#dcc79d"),
+  lymphe: srvb("#a3a97a"),
+};
+
 /** L'ordre du dessin : ce qui couvre d'abord (le test de profondeur épargne ce qui est dessous). */
 export const ORDRE = ["fascia", "enveloppe", "muscle", "tendon", "gaine", "bourse", "lymphe", "viscere", "encephale", "veine", "artere", "nerf", "ligament", "insertion", "os"] as const;
 
@@ -757,6 +773,8 @@ export class RenduReel {
   readonly opacites: Record<string, number> = {};
   readonly matieres: Record<string, Matiere> = MATIERES;
   readonly reglages: Reglages = { ombres: true, tailleOmbre: 2048, humide: 1, exposition: 1, studio: true, occlusion: 0.6, ouverture: 0 };
+  /** Un tampon pour les teintes calculées à chaque image (sans allouer). */
+  private readonly tampon3 = new Float32Array(3);
   private studio: CiblesStudio | null = null;
   /** Le studio a échoué sur cet appareil (une cible refusée) : on dessine à l'ancienne. */
   private studioRefuse = false;
@@ -1069,14 +1087,20 @@ export class RenduReel {
     gl.uniform1f(u.u_exposition, this.reglages.exposition);
     gl.uniform1f(u.u_humide, this.reglages.humide);
     const op2 = this.opacites[COUCHE_DES_ZONES] ?? 0;
+    // 0 : la pièce fraîche ; 1 : la pièce plastinée (humide à 0,22).
+    const plastine = Math.max(0, Math.min(1, (1 - this.reglages.humide) / 0.78));
     for (const nom of ORDRE) {
       const op = this.opacites[nom] ?? 0;
       const m = this.matieres[nom] ?? this.matieres.viscere;
       const sec = 1 - (1 - this.reglages.humide) * 0.5;
-      gl.uniform3fv(u.u_base1, m.base);
+      const teinte = PLASTINEES[nom];
+      if (teinte && plastine > 0) {
+        for (let i = 0; i < 3; i++) this.tampon3[i] = m.base[i] + (teinte[i] - m.base[i]) * plastine;
+        gl.uniform3fv(u.u_base1, this.tampon3);
+      } else gl.uniform3fv(u.u_base1, m.base);
       gl.uniform3fv(u.u_base2, m.base2);
       gl.uniform4f(u.u_surface, Math.min(1, m.rug / sec), Math.min(1, m.rug2 / sec), m.vernis, m.aniso);
-      gl.uniform4f(u.u_chair, m.sss, m.fibres, m.grain, 0);
+      gl.uniform4f(u.u_chair, m.sss * (1 - 0.5 * plastine), m.fibres * (1 + 0.3 * plastine), m.grain * (1 + 0.5 * plastine), 0);
       gl.uniform3fv(u.u_sss, m.sssTeinte);
       gl.uniform1f(u.u_opacite, op);
       gl.uniform1f(u.u_opacite2, op2);

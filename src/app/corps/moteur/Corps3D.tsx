@@ -131,6 +131,10 @@ function directionPour(s: StructureScene): V3 {
   else ancre = [0, s.centre[1], -0.02];
   let d = moins(s.centre, ancre);
   d = [d[0], d[1] * 0.4, d[2]];
+  // Un membre : on ne le regarde pas à travers le corps. Une structure à peine en dedans de l'axe (le biceps, devant
+  // l'humérus) se regarde de face ou de dos ; seule une structure franchement médiale se regarde par le dedans.
+  const dehors = s.centre[0] < 0 ? -1 : 1;
+  if ((axe || (point && region !== "tete" && region !== "cou")) && d[0] * dehors < 0 && Math.abs(d[0]) < 2 * Math.abs(d[2])) d = [0, d[1], d[2]];
   if (longueur(d) < 0.004) d = [s.centre[0] * 0.5, 0, s.centre[2] + 0.02 >= 0 ? 1 : -1];
   return unitaire(d);
 }

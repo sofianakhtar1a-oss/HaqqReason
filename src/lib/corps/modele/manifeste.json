@@ -719,22 +719,22 @@
     "lods": [
      {
       "lod": 0,
-      "fichier": "fascia-i0-5b92c9aef5.bin",
-      "octets": 512382,
+      "fichier": "fascia-i0-176d145668.bin",
+      "octets": 512373,
       "sommets": 29587,
       "triangles": 57763
      },
      {
       "lod": 1,
-      "fichier": "fascia-i1-187762a7c0.bin",
-      "octets": 117588,
+      "fichier": "fascia-i1-0d1c3dc77b.bin",
+      "octets": 117590,
       "sommets": 6463,
       "triangles": 12207
      },
      {
       "lod": 2,
-      "fichier": "fascia-i2-4819416f41.bin",
-      "octets": 62220,
+      "fichier": "fascia-i2-6027037bb3.bin",
+      "octets": 62219,
       "sommets": 3276,
       "triangles": 5927
      }
@@ -772,24 +772,24 @@
     "lods": [
      {
       "lod": 0,
-      "fichier": "fascia-p0-8bbaa4c731.bin",
-      "octets": 1703935,
-      "sommets": 100580,
-      "triangles": 195502
+      "fichier": "fascia-p0-88b8332de8.bin",
+      "octets": 1626695,
+      "sommets": 95902,
+      "triangles": 186540
      },
      {
       "lod": 1,
-      "fichier": "fascia-p1-e1f80468b7.bin",
-      "octets": 579551,
-      "sommets": 33759,
-      "triangles": 65230
+      "fichier": "fascia-p1-99fdefd5ec.bin",
+      "octets": 579080,
+      "sommets": 33728,
+      "triangles": 65168
      },
      {
       "lod": 2,
-      "fichier": "fascia-p2-492fc214e9.bin",
-      "octets": 218064,
-      "sommets": 11814,
-      "triangles": 22213
+      "fichier": "fascia-p2-4d1599405b.bin",
+      "octets": 212023,
+      "sommets": 11511,
+      "triangles": 21669
      }
     ]
    }
@@ -1729,29 +1729,31 @@
      "diaphragm",
      "iliocostalis-colli-muscle",
      "iliocostalis-colli-muscle:d",
+     "semispinalis-capitis-muscle:d",
+     "semispinalis-capitis-muscle:g",
      "transverse-arytenoid-muscle"
     ],
     "lods": [
      {
       "lod": 0,
-      "fichier": "muscle-i0-958135e0a5.bin",
-      "octets": 1168283,
-      "sommets": 73393,
-      "triangles": 146778
+      "fichier": "muscle-i0-9906269361.bin",
+      "octets": 1241002,
+      "sommets": 77441,
+      "triangles": 155051
      },
      {
       "lod": 1,
-      "fichier": "muscle-i1-1f8ae7cfe2.bin",
-      "octets": 468570,
-      "sommets": 25402,
-      "triangles": 50796
+      "fichier": "muscle-i1-be3f2b7868.bin",
+      "octets": 493473,
+      "sommets": 26744,
+      "triangles": 53657
      },
      {
       "lod": 2,
-      "fichier": "muscle-i2-793263331d.bin",
-      "octets": 119589,
-      "sommets": 6000,
-      "triangles": 11992
+      "fichier": "muscle-i2-7087b055ab.bin",
+      "octets": 125600,
+      "sommets": 6301,
+      "triangles": 12771
      }
     ]
    },
@@ -1990,22 +1992,22 @@
     "lods": [
      {
       "lod": 0,
-      "fichier": "muscle-p0-124ef94457.bin",
-      "octets": 16693272,
+      "fichier": "muscle-p0-489b375e94.bin",
+      "octets": 16693493,
       "sommets": 947202,
       "triangles": 1894436
      },
      {
       "lod": 1,
-      "fichier": "muscle-p1-cc632304df.bin",
-      "octets": 5284031,
+      "fichier": "muscle-p1-6b1c33a8cc.bin",
+      "octets": 5283832,
       "sommets": 287267,
       "triangles": 574566
      },
      {
       "lod": 2,
-      "fichier": "muscle-p2-bd8315b77c.bin",
-      "octets": 1480904,
+      "fichier": "muscle-p2-45bd26b4cb.bin",
+      "octets": 1480795,
       "sommets": 77769,
       "triangles": 155619
      }
@@ -2421,22 +2423,22 @@
     "lods": [
      {
       "lod": 0,
-      "fichier": "tendon-i0-64c049e008.bin",
-      "octets": 75348,
+      "fichier": "tendon-i0-d4466c1864.bin",
+      "octets": 75361,
       "sommets": 4058,
       "triangles": 8112
      },
      {
       "lod": 1,
-      "fichier": "tendon-i1-d809e0bea1.bin",
-      "octets": 3974,
+      "fichier": "tendon-i1-4da4dd5764.bin",
+      "octets": 3979,
       "sommets": 171,
       "triangles": 338
      },
      {
       "lod": 2,
-      "fichier": "tendon-i2-63def823f1.bin",
-      "octets": 3976,
+      "fichier": "tendon-i2-71613ed404.bin",
+      "octets": 3981,
       "sommets": 171,
       "triangles": 338
      }
@@ -2470,22 +2472,22 @@
     "lods": [
      {
       "lod": 0,
-      "fichier": "tendon-p0-5bc12ed1a6.bin",
-      "octets": 1305062,
+      "fichier": "tendon-p0-1effb460bc.bin",
+      "octets": 1305105,
       "sommets": 77344,
       "triangles": 154428
      },
      {
       "lod": 1,
-      "fichier": "tendon-p1-f3ead76595.bin",
-      "octets": 388557,
+      "fichier": "tendon-p1-e6d54fb495.bin",
+      "octets": 388474,
       "sommets": 22215,
       "triangles": 44262
      },
      {
       "lod": 2,
-      "fichier": "tendon-p2-6545d20505.bin",
-      "octets": 105440,
+      "fichier": "tendon-p2-4491778567.bin",
+      "octets": 105442,
       "sommets": 5680,
       "triangles": 11250
      }
@@ -2716,6 +2718,7 @@
      "epiglottis",
      "free-taenia",
      "gallbladder",
+     "ileum",
      "inferior-leaflet-of-right-atrioventricular-valve",
      "inferior-lingular-segmental-bronchus-of-left-lung-bv",
      "inferior-lobe-of-left-lung",
@@ -2724,6 +2727,8 @@
      "inferior-papillary-muscle-of-right-ventricle",
      "intermediate-bronchus:d",
      "jejunum",
+     "kidney-bodyparts3d:d",
+     "kidney-bodyparts3d:g",
      "laryngopharynx",
      "lateral-basal-segmental-bronchus-of-left-lung-bix",
      "lateral-basal-segmental-bronchus-of-right-lung-bix",
@@ -2764,6 +2769,7 @@
      "posterior-segment-of-liver-i",
      "posterior-segmental-bronchus-of-right-lung-bii",
      "prostate",
+     "rectum",
      "retina:d",
      "retina:g",
      "right-atrium",
@@ -2804,24 +2810,24 @@
     "lods": [
      {
       "lod": 0,
-      "fichier": "viscere-i0-81a4de0290.bin",
-      "octets": 3784108,
-      "sommets": 332502,
-      "triangles": 661179
+      "fichier": "viscere-i0-4767125a17.bin",
+      "octets": 4187947,
+      "sommets": 364669,
+      "triangles": 725385
      },
      {
       "lod": 1,
-      "fichier": "viscere-i1-03add3d131.bin",
-      "octets": 1553615,
-      "sommets": 121712,
-      "triangles": 240577
+      "fichier": "viscere-i1-f0aa69c19e.bin",
+      "octets": 1701764,
+      "sommets": 133332,
+      "triangles": 263687
      },
      {
       "lod": 2,
-      "fichier": "viscere-i2-547096fb71.bin",
-      "octets": 383498,
-      "sommets": 29024,
-      "triangles": 56302
+      "fichier": "viscere-i2-1f2736582f.bin",
+      "octets": 414668,
+      "sommets": 31370,
+      "triangles": 60864
      }
     ]
    },
@@ -2880,16 +2886,16 @@
  },
  "total": {
   "0": {
-   "octets": 49897122,
-   "triangles_affiches": 11745533
+   "octets": 50296708,
+   "triangles_affiches": 11800088
   },
   "1": {
-   "octets": 16832899,
-   "triangles_affiches": 3745925
+   "octets": 17005205,
+   "triangles_affiches": 3771772
   },
   "2": {
-   "octets": 4964341,
-   "triangles_affiches": 1053875
+   "octets": 4995378,
+   "triangles_affiches": 1058128
   }
  }
 }
