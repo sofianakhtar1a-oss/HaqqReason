@@ -315,7 +315,7 @@
         "n"
        ],
        "sat": [
-        "resta assis",
+        "resta (sat)",
         "sit",
         "v",
         "s'asseoir"
@@ -402,13 +402,13 @@
         "n"
        ],
        "dropped": [
-        "s'était laissé glisser",
+        "s'était endormi (dropped asleep)",
         "drop",
         "v",
         "laisser tomber"
        ],
        "asleep": [
-        "endormi",
+        "(dropped asleep : endormi)",
         "asleep",
         "a"
        ],
@@ -693,7 +693,7 @@
      },
      {
       "en": "I observe that there is a good deal of German music on the programme, which is rather more to my taste than Italian or French.",
-      "fr": "Je vois qu'il y a pas mal de musique allemande au programme, ce qui est bien plus à mon goût que l'italienne ou la française.",
+      "fr": "Je remarque qu'il y a pas mal de musique allemande au programme, ce qui est bien plus à mon goût que l'italienne ou la française.",
       "g": {
        "observe": [
         "remarque",
@@ -763,7 +763,7 @@
      },
      {
       "en": "It is introspective, and I want to introspect.",
-      "fr": "Elle est introspective, et j'ai envie d'introspecter.",
+      "fr": "Elle est introspective, et j'ai envie de me livrer à l'introspection.",
       "g": {
        "introspective": [
         "introspective",
@@ -782,7 +782,7 @@
         "x"
        ],
        "introspect": [
-        "introspecter",
+        "me livrer à l'introspection",
         "introspect",
         "v"
        ]
@@ -864,7 +864,7 @@
         "prendre, conduire"
        ],
        "to": [
-        "(listened to : écoutée)",
+        "à",
         "to",
         "r"
        ],
@@ -891,7 +891,7 @@
         "écouter"
        ],
        "to#2": [
-        "à",
+        "(listened to : écoutée)",
         "to",
         "r"
        ],
@@ -911,11 +911,6 @@
       "en": "It was a poky, little, shabby-genteel place, where four lines of dingy two-storied brick houses looked out into a small railed-in enclosure, where a lawn of weedy grass and a few clumps of faded laurel-bushes made a hard fight against a smoke-laden and uncongenial atmosphere.",
       "fr": "C'était un endroit exigu, minuscule, d'une respectabilité miteuse, où quatre rangées de maisons de brique à deux étages, ternes, donnaient sur un petit enclos entouré de grilles, où une pelouse d'herbe folle et quelques touffes de lauriers fanés livraient un dur combat contre une atmosphère chargée de fumée et peu accueillante.",
       "g": {
-       "a": [
-        "quelques (a few)",
-        "a",
-        "t"
-       ],
        "poky": [
         "exigu",
         "poky",
@@ -1069,6 +1064,11 @@
         "atmosphère",
         "atmosphere",
         "n"
+       ],
+       "a#4": [
+        "quelques (a few)",
+        "a",
+        "t"
        ]
       }
      },
@@ -1498,9 +1498,9 @@
         "souhaiter"
        ],
        "to": [
-        "à",
+        "(infinitif)",
         "to",
-        "r"
+        "x"
        ],
        "ask": [
         "demander",
@@ -1508,10 +1508,25 @@
         "v"
        ],
        "go": [
-        "va (aller)",
+        "va",
         "go",
         "v",
         "aller"
+       ],
+       "to#2": [
+        "au (to the Strand)",
+        "to",
+        "r"
+       ],
+       "you#2": [
+        "vous",
+        "you",
+        "p"
+       ],
+       "you#3": [
+        "vous",
+        "you",
+        "p"
        ]
       }
      }
@@ -1637,7 +1652,7 @@
         "n"
        ],
        "in#2": [
-        "à, dans",
+        "de (in London)",
         "in",
         "r"
        ],
@@ -1667,10 +1682,10 @@
      },
      {
       "en": "I have known something of him before.”",
-      "fr": "J'ai déjà eu un peu affaire à lui. »",
+      "fr": "Je le connais déjà un peu.",
       "g": {
        "known": [
-        "eu affaire (known something of)",
+        "connais (known something of)",
         "know",
         "v",
         "connaître"
@@ -1847,7 +1862,7 @@
     [
      {
       "en": "“What I expected to see.”",
-      "fr": "« Ce que je m'attendais à voir. »",
+      "fr": "« Ce que je comptais voir. »",
       "g": {
        "what": [
         "ce que",
@@ -1855,7 +1870,7 @@
         "p"
        ],
        "expected": [
-        "m'attendais",
+        "comptais",
         "expect",
         "v",
         "s'attendre à"
@@ -1890,7 +1905,7 @@
     [
      {
       "en": "“My dear doctor, this is a time for observation, not for talk.",
-      "fr": "« Mon cher docteur, voici le moment d'observer, non de bavarder.",
+      "fr": "« Mon cher docteur, voici le moment de l'observation, non du bavardage.",
       "g": {
        "dear": [
         "cher",
@@ -1944,7 +1959,7 @@
      },
      {
       "en": "We know something of Saxe-Coburg Square.",
-      "fr": "Nous connaissons déjà un peu Saxe-Coburg Square.",
+      "fr": "Nous connaissons un peu Saxe-Coburg Square.",
       "g": {
        "know": [
         "connaissons",
@@ -2016,7 +2031,7 @@
         "p"
        ],
        "as": [
-        "tandis que",
+        "(as we turned : en tournant)",
         "as",
         "c"
        ],
@@ -2352,7 +2367,7 @@
         "n"
        ],
        "quitted": [
-        "quitter",
+        "quitté",
         "quit",
         "v",
         "quitter"
@@ -2438,7 +2453,7 @@
      },
      {
       "en": "It is a hobby of mine to have an exact knowledge of London.",
-      "fr": "J'ai la marotte de connaître Londres avec exactitude.",
+      "fr": "J'ai pour marotte d'avoir une connaissance exacte de Londres.",
       "g": {
        "hobby": [
         "marotte",
@@ -2446,10 +2461,9 @@
         "n"
        ],
        "have": [
-        "ai (la marotte)",
+        "avoir",
         "have",
-        "v",
-        "avoir"
+        "v"
        ],
        "exact": [
         "exacte",
@@ -2564,7 +2578,7 @@
      },
      {
       "en": "And now, Doctor, we’ve done our work, so it’s time we had some play.",
-      "fr": "Et maintenant, docteur, notre travail est fait, il est temps de nous divertir.",
+      "fr": "Et maintenant, docteur, notre travail est fait, il est donc temps de nous accorder un peu de détente.",
       "g": {
        "doctor": [
         "docteur",
@@ -2577,7 +2591,7 @@
         "n"
        ],
        "so": [
-        "alors",
+        "donc",
         "so",
         "c"
        ],
@@ -2587,13 +2601,13 @@
         "n"
        ],
        "had": [
-        "ayons (it's time we had)",
+        "(had some play : nous accorder)",
         "have",
         "v",
         "avoir"
        ],
        "play": [
-        "détente",
+        "un peu de détente (some play)",
         "play",
         "n",
         "jeu"
@@ -2661,9 +2675,9 @@
         "client"
        ],
        "to#2": [
-        "pour",
+        "(infinitif)",
         "to",
-        "r"
+        "x"
        ],
        "vex": [
         "tourmenter",
@@ -2746,7 +2760,7 @@
         "s'asseoir"
        ],
        "in": [
-        "en (in time)",
+        "dans",
         "in",
         "r"
        ],
@@ -2802,12 +2816,12 @@
         "doigt"
        ],
        "time": [
-        "mesure (in time)",
+        "(in time : en mesure)",
         "time",
         "n"
        ],
        "to": [
-        "avec (in time to)",
+        "(in time to : avec)",
         "to",
         "r"
        ],
@@ -2851,7 +2865,7 @@
         "d"
        ],
        "unlike": [
-        "dissemblables",
+        "peu ressemblants",
         "unlike",
         "a"
        ],
@@ -2901,6 +2915,26 @@
         "conceive",
         "v",
         "concevoir"
+       ],
+       "in#2": [
+        "(wrapped in : de)",
+        "in",
+        "r"
+       ],
+       "in#3": [
+        "en mesure (in time)",
+        "in",
+        "r"
+       ],
+       "to#2": [
+        "(infinitif)",
+        "to",
+        "x"
+       ],
+       "gently#2": [
+        "doux (gently smiling)",
+        "gently",
+        "d"
        ]
       }
      },
@@ -3001,13 +3035,12 @@
      },
      {
       "en": "The swing of his nature took him from extreme languor to devouring energy; and, as I knew well, he was never so truly formidable as when, for days on end, he had been lounging in his armchair amid his improvisations and his black-letter editions.",
-      "fr": "Le balancier de sa nature le menait d'une extrême langueur à une énergie dévorante ; et, je le savais bien, il n'était jamais aussi redoutable que lorsque, des jours durant, il était resté vautré dans son fauteuil au milieu de ses improvisations et de ses éditions en caractères gothiques.",
+      "fr": "Le balancement de sa nature le menait d'une extrême langueur à une énergie dévorante ; et, je le savais bien, il n'était jamais aussi véritablement redoutable que lorsque, des jours durant, il était resté vautré dans son fauteuil au milieu de ses improvisations et de ses éditions en caractères gothiques.",
       "g": {
        "swing": [
-        "balancier",
+        "balancement",
         "swing",
-        "n",
-        "balancement"
+        "n"
        ],
        "nature": [
         "nature",
@@ -3053,7 +3086,7 @@
         "d"
        ],
        "truly": [
-        "vraiment",
+        "véritablement",
         "truly",
         "d"
        ],
@@ -3180,7 +3213,7 @@
         "n"
        ],
        "until": [
-        "jusqu'à ce que",
+        "au point que",
         "until",
         "c"
        ],
@@ -3389,15 +3422,15 @@
     [
      {
       "en": "“Yes, it would be as well.”",
-      "fr": "« Oui, ce serait aussi bien. »",
+      "fr": "« Oui, il vaudrait mieux. »",
       "g": {
        "as": [
-        "aussi (as well)",
+        "il vaudrait mieux (as well)",
         "as",
         "d"
        ],
        "well": [
-        "(as well : aussi bien)",
+        "(as well : il vaudrait mieux)",
         "well",
         "d"
        ]
@@ -3504,7 +3537,7 @@
         "raison"
        ],
        "to": [
-        "pour",
+        "de (raisons de)",
         "to",
         "r"
        ],
@@ -3528,6 +3561,11 @@
         "stop",
         "v",
         "arrêter"
+       ],
+       "to#2": [
+        "pour",
+        "to",
+        "r"
        ]
       }
      },
@@ -3748,7 +3786,7 @@
         "espère",
         "trust",
         "v",
-        "croire"
+        "avoir confiance"
        ],
        "dense": [
         "obtus",
@@ -3793,10 +3831,10 @@
      },
      {
       "en": "Here I had heard what he had heard, I had seen what he had seen, and yet from his words it was evident that he saw clearly not only what had happened but what was about to happen, while to me the whole business was still confused and grotesque.",
-      "fr": "J'avais entendu ce qu'il avait entendu, j'avais vu ce qu'il avait vu ; et cependant, à ses paroles, il était évident qu'il voyait clairement non seulement ce qui s'était passé mais ce qui allait se passer, tandis que pour moi toute l'affaire restait confuse et grotesque.",
+      "fr": "Dans cette affaire, j'avais entendu ce qu'il avait entendu, j'avais vu ce qu'il avait vu ; et cependant, à ses paroles, il était évident qu'il voyait clairement non seulement ce qui s'était passé mais ce qui allait se passer, tandis que pour moi toute l'affaire restait confuse et grotesque.",
       "g": {
        "here": [
-        "sur ce point",
+        "dans cette affaire",
         "here",
         "d"
        ],
@@ -3883,7 +3921,7 @@
         "entier"
        ],
        "business": [
-        "l'affaire",
+        "affaire",
         "business",
         "n"
        ],
@@ -3938,7 +3976,7 @@
         "d"
        ],
        "from": [
-        "(parted from : quitté)",
+        "depuis",
         "from",
         "r"
        ],
@@ -4008,6 +4046,11 @@
         "part",
         "v",
         "se séparer"
+       ],
+       "from#2": [
+        "(parted from : quitté)",
+        "from",
+        "r"
        ]
       }
      },
@@ -4048,7 +4091,7 @@
       "fr": "Où allions-nous, et que devions-nous faire ?",
       "g": {
        "were": [
-        "devions (were to)",
+        "(were going : allions)",
         "be",
         "v",
         "être"
@@ -4063,15 +4106,21 @@
         "(were to : devions)",
         "to",
         "x"
+       ],
+       "were#2": [
+        "devions (were to)",
+        "be",
+        "v",
+        "être"
        ]
       }
      },
      {
       "en": "I had the hint from Holmes that this smooth-faced pawnbroker’s assistant was a formidable man — a man who might play a deep game.",
-      "fr": "Holmes m'avait laissé entendre que cet employé de prêteur sur gages au visage lisse était un homme redoutable, un homme capable de jouer une partie subtile.",
+      "fr": "J'avais compris, par Holmes, que cet employé de prêteur sur gages au visage lisse était un homme redoutable, un homme susceptible de jouer une partie subtile.",
       "g": {
        "had": [
-        "avais reçu (had the hint)",
+        "avais compris (had the hint)",
         "have",
         "v",
         "avoir"
@@ -4108,9 +4157,10 @@
         "n"
        ],
        "might": [
-        "pouvait",
-        "might",
-        "v"
+        "susceptible de",
+        "may",
+        "v",
+        "pouvoir"
        ],
        "play": [
         "jouer",
@@ -4240,15 +4290,16 @@
         "n"
        ],
        "made": [
-        "fis (made my way)",
+        "(made my way : traversai)",
         "make",
         "v",
         "faire"
        ],
        "way": [
-        "(made my way : traversai)",
+        "traversai (made my way)",
         "way",
-        "n"
+        "n",
+        "chemin"
        ],
        "park": [
         "parc",
@@ -4340,7 +4391,7 @@
      },
      {
       "en": "On entering his room I found Holmes in animated conversation with two men, one of whom I recognised as Peter Jones, the official police agent, while the other was a long, thin, sad-faced man, with a very shiny hat and oppressively respectable frock-coat.",
-      "fr": "En entrant dans sa chambre, je trouvai Holmes en conversation animée avec deux hommes, dont l'un était, je le reconnus, Peter Jones, l'agent officiel de la police, tandis que l'autre était un homme long, maigre, au visage triste, coiffé d'un chapeau très luisant et vêtu d'une redingote d'une respectabilité accablante.",
+      "fr": "En entrant chez lui, je trouvai Holmes en conversation animée avec deux hommes, dont l'un était, je le reconnus, Peter Jones, l'agent officiel de la police, tandis que l'autre était un homme long, maigre, au visage triste, coiffé d'un chapeau très luisant et vêtu d'une redingote d'une respectabilité accablante.",
       "g": {
        "on": [
         "(on entering : en)",
@@ -4354,9 +4405,10 @@
         "entrer"
        ],
        "room": [
-        "chambre (pièce)",
+        "chez lui (his room)",
         "room",
-        "n"
+        "n",
+        "pièce"
        ],
        "found": [
         "trouvai",
@@ -4607,7 +4659,7 @@
     [
      {
       "en": "“We’re hunting in couples again, Doctor, you see,” said Jones in his consequential way.",
-      "fr": "« Nous chassons de nouveau en couple, docteur, vous voyez », dit Jones de son air important.",
+      "fr": "« Nous chassons de nouveau par couples, docteur, vous voyez », dit Jones de son air important.",
       "g": {
        "hunting": [
         "chassons",
@@ -4616,7 +4668,7 @@
         "chasser"
        ],
        "in": [
-        "en",
+        "par",
         "in",
         "r"
        ],
@@ -4693,7 +4745,7 @@
      },
      {
       "en": "All he wants is an old dog to help him to do the running down.”",
-      "fr": "Il lui suffit d'un vieux chien pour l'aider à traquer la proie. »",
+      "fr": "Tout ce qu'il lui faut, c'est un vieux chien pour l'aider à mener la traque. »",
       "g": {
        "wants": [
         "lui faut",
@@ -4727,7 +4779,7 @@
         "r"
        ],
        "running": [
-        "traquer (running down)",
+        "mener la traque (running down)",
         "run",
         "v",
         "courir"
@@ -4747,7 +4799,7 @@
     [
      {
       "en": "“I hope a wild goose may not prove to be the end of our chase,” observed Mr. Merryweather gloomily.",
-      "fr": "« J'espère qu'une oie sauvage ne se révélera pas être le terme de notre chasse (autrement dit : une poursuite vaine) », observa M. Merryweather d'un ton lugubre.",
+      "fr": "« J'espère qu'une oie sauvage ne se révélera pas être le terme de notre chasse », observa M. Merryweather d'un ton lugubre.",
       "g": {
        "hope": [
         "espère",
@@ -4760,7 +4812,7 @@
         "a"
        ],
        "goose": [
-        "oie",
+        "oie (wild goose chase : poursuite vaine)",
         "goose",
         "n"
        ],
@@ -4965,13 +5017,13 @@
         "n"
        ],
        "nearly": [
-        "de plus près",
+        "plus près",
         "nearly",
         "d",
         "presque"
        ],
        "correct": [
-        "dans le vrai",
+        "(nearly correct : près de la vérité)",
         "correct",
         "a",
         "exact"
@@ -5490,6 +5542,11 @@
         "next",
         "a",
         "prochain"
+       ],
+       "scotland": [
+        "Écosse",
+        "Scotland",
+        "np"
        ]
       }
      },
@@ -5645,7 +5702,7 @@
         "n"
        ],
        "started": [
-        "partions",
+        "(time that we started : de partir)",
         "start",
         "v",
         "partir"
@@ -5739,7 +5796,7 @@
      },
      {
       "en": "We rattled through an endless labyrinth of gas-lit streets until we emerged into Farrington Street.",
-      "fr": "Nous roulâmes en cahotant à travers un labyrinthe sans fin de rues éclairées au gaz, jusqu'à déboucher dans Farrington Street.",
+      "fr": "Nous roulâmes en cahotant à travers un labyrinthe sans fin de rues éclairées au gaz, jusqu'à ce que nous débouchions dans Farrington Street.",
       "g": {
        "rattled": [
         "roulâmes en cahotant",
@@ -5769,12 +5826,12 @@
         "rue"
        ],
        "until": [
-        "jusqu'à",
+        "jusqu'à ce que",
         "until",
         "c"
        ],
        "emerged": [
-        "déboucher",
+        "débouchions",
         "emerge",
         "v",
         "sortir"
@@ -5882,7 +5939,7 @@
      },
      {
       "en": "He is not a bad fellow, though an absolute imbecile in his profession.",
-      "fr": "Ce n'est pas un mauvais bougre, quoique un parfait imbécile dans son métier.",
+      "fr": "Ce n'est pas un mauvais bougre, bien qu'il soit un parfait imbécile dans son métier.",
       "g": {
        "bad": [
         "mauvais",
@@ -5895,7 +5952,7 @@
         "n"
        ],
        "though": [
-        "quoique",
+        "bien que",
         "though",
         "c"
        ],
@@ -6066,7 +6123,7 @@
      },
      {
       "en": "Our cabs were dismissed, and, following the guidance of Mr. Merryweather, we passed down a narrow passage and through a side door, which he opened for us.",
-      "fr": "Nous congédiâmes nos fiacres et, guidés par M. Merryweather, nous descendîmes un passage étroit et franchîmes une porte latérale qu'il nous ouvrit.",
+      "fr": "Nos fiacres furent congédiés et, sous la conduite de M. Merryweather, nous descendîmes un passage étroit et franchîmes une porte latérale qu'il nous ouvrit.",
       "g": {
        "cabs": [
         "fiacres",
@@ -6081,16 +6138,16 @@
         "congédier"
        ],
        "following": [
-        "guidés par (following the guidance)",
+        "(following the guidance of : sous la conduite de)",
         "follow",
         "v",
         "suivre"
        ],
        "guidance": [
-        "guidance",
+        "conduite (sous la conduite de)",
         "guidance",
         "n",
-        "direction"
+        "conduite"
        ],
        "passed": [
         "descendîmes (passed down)",
@@ -6177,7 +6234,7 @@
      },
      {
       "en": "This also was opened, and led down a flight of winding stone steps, which terminated at another formidable gate.",
-      "fr": "Elle fut ouverte aussi, et donnait sur un escalier de pierre en spirale, qui aboutissait à une autre grille formidable.",
+      "fr": "Elle fut ouverte aussi, et menait vers le bas, par un escalier de pierre en colimaçon, qui aboutissait à une autre grille imposante.",
       "g": {
        "opened": [
         "ouverte",
@@ -6186,23 +6243,24 @@
         "ouvrir"
        ],
        "led": [
-        "donnait",
+        "menait (led down)",
         "lead",
         "v",
         "mener"
        ],
        "down": [
-        "(led down : donnait)",
+        "(led down : vers le bas)",
         "down",
         "d"
        ],
        "flight": [
-        "volée",
+        "(flight of steps : escalier)",
         "flight",
-        "n"
+        "n",
+        "volée"
        ],
        "winding": [
-        "en spirale",
+        "en colimaçon",
         "winding",
         "a"
        ],
@@ -6213,7 +6271,7 @@
         "pierre"
        ],
        "steps": [
-        "marches",
+        "escalier (flight of steps)",
         "step",
         "n",
         "marche"
@@ -6239,7 +6297,7 @@
      },
      {
       "en": "Mr. Merryweather stopped to light a lantern, and then conducted us down a dark, earth-smelling passage, and so, after opening a third door, into a huge vault or cellar, which was piled all round with crates and massive boxes.",
-      "fr": "M. Merryweather s'arrêta pour allumer une lanterne, puis nous conduisit le long d'un couloir sombre, sentant la terre, et ainsi, après avoir ouvert une troisième porte, dans une vaste voûte ou cave, entièrement encombrée de caisses et de grosses boîtes.",
+      "fr": "M. Merryweather s'arrêta pour allumer une lanterne, puis nous conduisit le long d'un couloir sombre, sentant la terre, et ainsi, après avoir ouvert une troisième porte, dans un vaste caveau, ou cave, encombré tout autour de piles de caisses et de lourdes boîtes.",
       "g": {
        "stopped": [
         "s'arrêta",
@@ -6319,9 +6377,10 @@
         "a"
        ],
        "vault": [
-        "voûte",
+        "caveau",
         "vault",
-        "n"
+        "n",
+        "voûte"
        ],
        "cellar": [
         "cave",
@@ -6329,7 +6388,7 @@
         "n"
        ],
        "piled": [
-        "entassée",
+        "encombré de piles (piled with)",
         "pile",
         "v",
         "empiler"
@@ -6345,7 +6404,7 @@
         "d"
        ],
        "with": [
-        "de",
+        "(piled with : de)",
         "with",
         "r"
        ],
@@ -6356,9 +6415,10 @@
         "caisse"
        ],
        "massive": [
-        "massives",
+        "lourdes",
         "massive",
-        "a"
+        "a",
+        "lourd"
        ],
        "boxes": [
         "boîtes",
@@ -6392,7 +6452,8 @@
        "remarked": [
         "remarqua",
         "remark",
-        "v"
+        "v",
+        "remarquer"
        ],
        "held": [
         "levant (held up)",
@@ -6411,7 +6472,7 @@
         "n"
        ],
        "gazed": [
-        "regardait",
+        "regardant",
         "gaze",
         "v",
         "regarder"
@@ -6460,13 +6521,13 @@
         "dalles",
         "flag",
         "n",
-        "drapeau"
+        "dalle"
        ],
        "lined": [
         "couvraient",
         "line",
         "v",
-        "border"
+        "garnir"
        ],
        "floor": [
         "sol",
@@ -6477,10 +6538,10 @@
      },
      {
       "en": "“Why, dear me, it sounds quite hollow!” he remarked, looking up in surprise.",
-      "fr": "« Tiens, mon Dieu, cela sonne creux ! », remarqua-t-il en levant les yeux, surpris.",
+      "fr": "« Mais, mon Dieu, cela sonne tout à fait creux ! », remarqua-t-il en levant les yeux, surpris.",
       "g": {
        "why": [
-        "tiens",
+        "mais",
         "why",
         "d"
        ],
@@ -6514,7 +6575,8 @@
        "remarked": [
         "remarqua",
         "remark",
-        "v"
+        "v",
+        "remarquer"
        ],
        "looking": [
         "levant les yeux (looking up)",
@@ -6659,7 +6721,7 @@
     [
      {
       "en": "The solemn Mr. Merryweather perched himself upon a crate, with a very injured expression upon his face, while Holmes fell upon his knees upon the floor and, with the lantern and a magnifying lens, began to examine minutely the cracks between the stones.",
-      "fr": "Le solennel M. Merryweather se percha sur une caisse, la mine fort offensée, tandis que Holmes se laissait tomber à genoux sur le sol et, à l'aide de la lanterne et d'une loupe, se mit à examiner minutieusement les fentes entre les pierres.",
+      "fr": "Le solennel M. Merryweather se percha sur une caisse, la mine fort offensée, tandis que Holmes se laissa tomber à genoux sur le sol et, à l'aide de la lanterne et d'une loupe, se mit à examiner minutieusement les fentes entre les pierres.",
       "g": {
        "solemn": [
         "solennel",
@@ -6694,7 +6756,7 @@
         "n"
        ],
        "fell": [
-        "se laissait tomber (fell upon his knees)",
+        "se laissa tomber (fell upon his knees)",
         "fall",
         "v",
         "tomber"
@@ -6877,12 +6939,13 @@
         "d"
        ],
        "take": [
-        "prendre (take steps)",
+        "agir (take steps)",
         "take",
-        "v"
+        "v",
+        "prendre"
        ],
        "steps": [
-        "des mesures",
+        "(take steps : agir)",
         "step",
         "n",
         "pas"
@@ -6912,7 +6975,7 @@
      },
      {
       "en": "Then they will not lose a minute, for the sooner they do their work the longer time they will have for their escape.",
-      "fr": "Alors ils ne perdront pas une minute, car plus tôt ils feront leur travail, plus ils auront de temps pour s'enfuir.",
+      "fr": "Alors ils ne perdront pas une minute, car plus tôt ils feront leur travail, plus ils auront de temps pour leur fuite.",
       "g": {
        "lose": [
         "perdront",
@@ -6957,10 +7020,9 @@
         "r"
        ],
        "escape": [
-        "s'enfuir",
+        "fuite",
         "escape",
-        "n",
-        "fuite"
+        "n"
        ]
       }
      },
@@ -7036,7 +7098,7 @@
      },
      {
       "en": "Mr. Merryweather is the chairman of directors, and he will explain to you that there are reasons why the more daring criminals of London should take a considerable interest in this cellar at present.”",
-      "fr": "M. Merryweather est le président du conseil d'administration, et il vous expliquera pourquoi les criminels les plus audacieux de Londres s'intéressent tout particulièrement à cette cave en ce moment. »",
+      "fr": "M. Merryweather est le président du conseil d'administration, et il vous expliquera les raisons pour lesquelles les plus audacieux des criminels de Londres portent un intérêt considérable à cette cave en ce moment. »",
       "g": {
        "chairman": [
         "président",
@@ -7078,19 +7140,18 @@
         "v"
        ],
        "take": [
-        "s'intéressent (take an interest)",
+        "portent (take an interest)",
         "take",
         "v",
         "prendre"
        ],
        "considerable": [
-        "tout particulier",
+        "considérable",
         "considerable",
-        "a",
-        "considérable"
+        "a"
        ],
        "interest": [
-        "(take an interest : s'intéressent)",
+        "(take an interest : portent un intérêt)",
         "interest",
         "n",
         "intérêt"
@@ -7211,7 +7272,7 @@
       "fr": "Nous avons eu l'occasion, il y a quelques mois, de renforcer nos ressources et avons emprunté à cette fin 30 000 napoléons à la Banque de France.",
       "g": {
        "occasion": [
-        "l'occasion",
+        "occasion",
         "occasion",
         "n"
        ],
@@ -7271,19 +7332,19 @@
       "fr": "On a appris que nous n'avons jamais eu l'occasion de déballer l'argent, et qu'il est toujours entreposé dans notre cave.",
       "g": {
        "become": [
-        "est devenu",
+        "(become known : on a appris)",
         "become",
         "v",
         "devenir"
        ],
        "known": [
-        "connu",
+        "on a appris (become known)",
         "know",
         "v",
         "connaître"
        ],
        "occasion": [
-        "l'occasion",
+        "occasion",
         "occasion",
         "n"
        ],
@@ -7293,7 +7354,7 @@
         "v"
        ],
        "money": [
-        "l'argent",
+        "argent",
         "money",
         "n"
        ],
@@ -7428,9 +7489,10 @@
         "n"
        ],
        "office": [
-        "bureau",
+        "(branch office : agence)",
         "office",
-        "n"
+        "n",
+        "bureau"
        ],
        "directors": [
         "administrateurs",
@@ -7625,10 +7687,9 @@
         "r"
        ],
        "dark": [
-        "l'obscurité",
+        "obscurité",
         "dark",
-        "n",
-        "sombre"
+        "n"
        ]
       }
      }

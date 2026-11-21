@@ -6,6 +6,8 @@ import type { Histoire } from "../src/lib/langues/histoires/catalogue";
 import { HISTOIRES } from "../src/lib/langues/histoires/catalogue";
 import { cleMot, estMot, motsDe } from "../src/lib/langues/histoires/texte";
 import { NIVEAUX } from "../src/lib/langues/types";
+import { composerQuiz, FAUX_AMIS, formeDans } from "../src/lib/langues/faux-amis";
+import { controlerExercice } from "../scripts/langues/entrainement/controle";
 
 let e = 0;
 const ok = (nom: string, cond: boolean, detail?: unknown) => {
@@ -50,5 +52,18 @@ for (const fiche of HISTOIRES) {
   pages += h.pages.length;
 }
 vu(`${HISTOIRES.length} histoires, ${pages} pages, ${mots} mots, chacun traduit d'avance`);
+// Les faux amis : une liste complète, et des quiz toujours jouables.
+ok("au moins 120 faux amis", FAUX_AMIS.length >= 120, FAUX_AMIS.length);
+ok("faux amis sans doublon", new Set(FAUX_AMIS.map((f) => f.en.toLowerCase())).size === FAUX_AMIS.length);
+let alea = 1;
+const graine = () => ((alea = (alea * 16807) % 2147483647) / 2147483647);
+for (let tour = 0; tour < 40; tour++)
+  for (const { exercice } of composerQuiz(FAUX_AMIS, 12, graine)) {
+    const p = controlerExercice(exercice, "faux amis");
+    ok("question de faux ami jouable", p.length === 0, { p, exercice });
+  }
+ok("la plupart des exemples contiennent le mot", FAUX_AMIS.filter((f) => formeDans(f)).length >= FAUX_AMIS.length * 0.8, FAUX_AMIS.filter((f) => !formeDans(f)).map((f) => f.en));
+vu(`${FAUX_AMIS.length} faux amis et leurs quiz`);
+
 console.log(e ? `\n${e} échec(s)` : "\nTout est bon.");
 process.exit(e ? 1 : 0);

@@ -1292,7 +1292,14 @@
      },
      {
       "en": "“I hate this rain!” said Tom.",
-      "fr": "« Je déteste cette pluie ! » dit Tom."
+      "fr": "« Je déteste cette pluie ! » dit Tom.",
+      "g": {
+       "hate": [
+        "déteste",
+        "hate",
+        "v"
+       ]
+      }
      },
      {
       "en": "He was sitting at the window with Biscuit, the old dog.",
@@ -1391,6 +1398,11 @@
         "open",
         "v",
         "ouvrir"
+       ],
+       "small": [
+        "petite",
+        "small",
+        "a"
        ]
       }
      },
@@ -1417,16 +1429,36 @@
         "find",
         "v",
         "trouver"
+       ],
+       "dusty": [
+        "poussiéreuse",
+        "dusty",
+        "a"
        ]
       }
      },
      {
       "en": "It was heavier than she thought.",
-      "fr": "Elle était plus lourde qu'elle ne le pensait."
+      "fr": "Elle était plus lourde qu'elle ne le pensait.",
+      "g": {
+       "heavier": [
+        "plus lourde",
+        "heavy",
+        "a",
+        "lourd"
+       ]
+      }
      },
      {
       "en": "Inside, there were some books, a hat, and a small brown envelope.",
-      "fr": "Dedans, il y avait quelques livres, un chapeau et une petite enveloppe marron."
+      "fr": "Dedans, il y avait quelques livres, un chapeau et une petite enveloppe marron.",
+      "g": {
+       "small": [
+        "petite",
+        "small",
+        "a"
+       ]
+      }
      },
      {
       "en": "She opened the envelope carefully.",
@@ -1438,7 +1470,14 @@
      },
      {
       "en": "“Tom, come here!” she said. “I think it’s a map!”",
-      "fr": "« Tom, viens ici ! dit-elle. Je crois que c'est une carte ! »"
+      "fr": "« Tom, viens ici ! dit-elle. Je crois que c'est une carte ! »",
+      "g": {
+       "think": [
+        "crois",
+        "think",
+        "v"
+       ]
+      }
      },
      {
       "en": "They put the paper on the floor, under the lamp.",
@@ -1574,6 +1613,12 @@
         "depuis",
         "for",
         "r"
+       ],
+       "seen": [
+        "ai vu",
+        "see",
+        "v",
+        "voir"
        ]
       }
      },
@@ -1647,6 +1692,11 @@
         "do",
         "v",
         "faire"
+       ],
+       "hide": [
+        "avez caché",
+        "hide",
+        "v"
        ]
       }
      },
@@ -1673,6 +1723,11 @@
         "(a long time ago : il y a longtemps)",
         "ago",
         "d"
+       ],
+       "remember": [
+        "me souviens",
+        "remember",
+        "v"
        ]
       }
      },
@@ -1749,6 +1804,11 @@
         "au cas où (just in case)",
         "case",
         "n"
+       ],
+       "small": [
+        "petite",
+        "small",
+        "a"
        ]
       }
      },
@@ -1789,12 +1849,29 @@
         "(made of : fait de)",
         "of",
         "r"
+       ],
+       "grey": [
+        "grise",
+        "grey",
+        "a"
+       ],
+       "green": [
+        "verte",
+        "green",
+        "a"
        ]
       }
      },
      {
       "en": "The river under it was fast and loud after all the rain.",
-      "fr": "La rivière en dessous était rapide et bruyante après toute cette pluie."
+      "fr": "La rivière en dessous était rapide et bruyante après toute cette pluie.",
+      "g": {
+       "loud": [
+        "bruyante",
+        "loud",
+        "a"
+       ]
+      }
      },
      {
       "en": "Tom jumped onto the wall.",
@@ -1814,6 +1891,11 @@
         "(get down : descendre)",
         "down",
         "d"
+       ],
+       "careful": [
+        "attention (be careful)",
+        "careful",
+        "a"
        ]
       }
      },
@@ -1833,6 +1915,12 @@
         "A (la lettre)",
         "a",
         "n"
+       ],
+       "appeared": [
+        "apparurent",
+        "appear",
+        "v",
+        "apparaître"
        ]
       }
      },
@@ -1855,6 +1943,11 @@
         "vers l'amont (up the river)",
         "up",
         "r"
+       ],
+       "small": [
+        "petite",
+        "small",
+        "a"
        ]
       }
      }
@@ -1944,7 +2037,15 @@
      },
      {
       "en": "The windows were broken, but the door was bright red.",
-      "fr": "Les fenêtres étaient cassées, mais la porte était d'un rouge vif."
+      "fr": "Les fenêtres étaient cassées, mais la porte était d'un rouge vif.",
+      "g": {
+       "broken": [
+        "cassées",
+        "break",
+        "v",
+        "casser"
+       ]
+      }
      },
      {
       "en": "“Look at the map,” said Tom. “It says: Find the red door.”",
@@ -1954,6 +2055,12 @@
         "trouve",
         "find",
         "v"
+       ],
+       "says": [
+        "est écrit",
+        "say",
+        "v",
+        "dire"
        ]
       }
      },
@@ -1962,10 +2069,16 @@
       "fr": "« On l'a trouvée ! dit Léa. Maintenant, il nous faut l'indice suivant. »",
       "g": {
        "found": [
-        "avons trouvé",
+        "a trouvé",
         "find",
         "v",
         "trouver"
+       ],
+       "need": [
+        "il nous faut",
+        "need",
+        "v",
+        "avoir besoin de"
        ]
       }
      },
@@ -2025,7 +2138,15 @@
      },
      {
       "en": "Somebody cut them into the wood with a knife, many years ago.",
-      "fr": "Quelqu'un les avait gravés dans le bois avec un couteau, il y a de nombreuses années."
+      "fr": "Quelqu'un les avait gravés dans le bois avec un couteau, il y a de nombreuses années.",
+      "g": {
+       "years": [
+        "années",
+        "year",
+        "n",
+        "an"
+       ]
+      }
      },
      {
       "en": "“Ask the school clock,” she read.",
@@ -2040,7 +2161,14 @@
      },
      {
       "en": "“The old school is the village library now,” said Léa. “Grandpa told me.”",
-      "fr": "« L'ancienne école est la bibliothèque du village maintenant, dit Léa. Grand-père me l'a dit. »"
+      "fr": "« L'ancienne école est la bibliothèque du village maintenant, dit Léa. Grand-père me l'a dit. »",
+      "g": {
+       "old": [
+        "ancienne",
+        "old",
+        "a"
+       ]
+      }
      },
      {
       "en": "“Then let’s hurry!” said Tom. “I’m hungry, but I’m more curious!”",
@@ -2063,7 +2191,14 @@
     [
      {
       "en": "The old school was a tall stone building with a big clock above the door.",
-      "fr": "L'ancienne école était un grand bâtiment en pierre, avec une grosse horloge au-dessus de la porte."
+      "fr": "L'ancienne école était un grand bâtiment en pierre, avec une grosse horloge au-dessus de la porte.",
+      "g": {
+       "old": [
+        "ancienne",
+        "old",
+        "a"
+       ]
+      }
      },
      {
       "en": "Inside, a woman with white hair was reading behind a desk.",
@@ -2247,6 +2382,12 @@
         "stop",
         "v",
         "arrêter"
+       ],
+       "years": [
+        "années",
+        "year",
+        "n",
+        "an"
        ]
       }
      },
@@ -2264,7 +2405,14 @@
      },
      {
       "en": "It was very quiet, and the stairs were dusty.",
-      "fr": "Il y régnait un grand silence, et les marches étaient poussiéreuses."
+      "fr": "Il y régnait un grand silence, et les marches étaient poussiéreuses.",
+      "g": {
+       "dusty": [
+        "poussiéreuses",
+        "dusty",
+        "a"
+       ]
+      }
      },
      {
       "en": "The big clock was in front of them.",
@@ -2352,18 +2500,33 @@
         "see",
         "v",
         "voir"
+       ],
+       "small": [
+        "petite",
+        "small",
+        "a"
        ]
       }
      },
      {
       "en": "He pulled it, and it opened with a loud click.",
-      "fr": "Il la tira, et elle s'ouvrit avec un grand clic.",
+      "fr": "Il la tira, et elle s'ouvrit dans un déclic sonore.",
       "g": {
        "opened": [
         "s'ouvrit",
         "open",
         "v",
         "ouvrir"
+       ],
+       "loud": [
+        "sonore",
+        "loud",
+        "a"
+       ],
+       "click": [
+        "déclic",
+        "click",
+        "n"
        ]
       }
      },
@@ -2402,6 +2565,11 @@
         "look",
         "v",
         "avoir l'air"
+       ],
+       "careful": [
+        "attention",
+        "careful",
+        "a"
        ]
       }
      },

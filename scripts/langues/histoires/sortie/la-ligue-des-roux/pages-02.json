@@ -68,10 +68,10 @@
     [
      {
       "en": "“I never hope to see such a sight as that again, Mr. Holmes.",
-      "fr": "« Je n'espère plus jamais revoir un tel spectacle, monsieur Holmes.",
+      "fr": "« J'espère ne jamais revoir un tel spectacle, monsieur Holmes.",
       "g": {
        "never": [
-        "ne… plus jamais",
+        "ne… jamais",
         "never",
         "d"
        ],
@@ -147,7 +147,7 @@
         "n"
        ],
        "tramped": [
-        "avait marché d'un pas lourd",
+        "avait fait la route à pied",
         "tramp",
         "v",
         "marcher d'un pas lourd"
@@ -433,7 +433,7 @@
      },
      {
       "en": "When I saw how many were waiting, I would have given it up in despair; but Spaulding would not hear of it.",
-      "fr": "En voyant combien de gens attendaient, j'aurais tout abandonné, désespéré ; mais Spaulding refusait d'en entendre parler.",
+      "fr": "En voyant combien de gens attendaient, j'aurais renoncé, désespéré ; mais Spaulding refusait d'en entendre parler.",
       "g": {
        "saw": [
         "voyais",
@@ -469,23 +469,23 @@
         "v"
        ],
        "given": [
-        "abandonné (given up)",
+        "renoncé (given up)",
         "give",
         "v",
         "donner"
        ],
        "up": [
-        "(given up : abandonné)",
+        "(given up : renoncé)",
         "up",
         "d"
        ],
        "in": [
-        "dans",
+        "(in despair : désespéré)",
         "in",
         "r"
        ],
        "despair": [
-        "désespoir",
+        "(in despair : désespéré)",
         "despair",
         "n"
        ],
@@ -1495,7 +1495,7 @@
      },
      {
       "en": "With that he seized my hair in both his hands, and tugged until I yelled with the pain.",
-      "fr": "Sur ces mots, il m'empoigna les cheveux à deux mains et tira jusqu'à ce que je hurle de douleur.",
+      "fr": "Sur ces mots, il m'empoigna les cheveux à deux mains et tira jusqu'à me faire hurler de douleur.",
       "g": {
        "with": [
         "(with that : sur ces mots)",
@@ -1535,7 +1535,7 @@
         "tirer fort"
        ],
        "yelled": [
-        "hurle",
+        "me faire hurler",
         "yell",
         "v",
         "hurler"
@@ -1934,7 +1934,7 @@
     [
      {
       "en": "“‘My name,’ said he, ‘is Mr. Duncan Ross, and I am myself one of the pensioners upon the fund left by our noble benefactor.",
-      "fr": "« “Je m'appelle M. Duncan Ross, dit-il, et je suis moi-même l'un des pensionnaires de la rente léguée par notre noble bienfaiteur.",
+      "fr": "« “Je m'appelle M. Duncan Ross, dit-il, et je suis moi-même l'un des pensionnaires du fonds légué par notre noble bienfaiteur.",
       "g": {
        "name": [
         "nom (my name is : je m'appelle)",
@@ -1968,12 +1968,12 @@
         "n"
        ],
        "upon": [
-        "de (vivant de)",
+        "(pensioners upon : du)",
         "upon",
         "r"
        ],
        "fund": [
-        "rente (fonds)",
+        "fonds",
         "fund",
         "n"
        ],
@@ -3261,7 +3261,7 @@
     [
      {
       "en": "“‘It’s only four hours a day, and I should not think of leaving,’ said I.",
-      "fr": "« “Ce n'est que quatre heures par jour, et je n'aurais pas l'idée de partir”, dis-je.",
+      "fr": "« “Ce n'est que quatre heures par jour, et je ne songerais pas à partir”, dis-je.",
       "g": {
        "it's": [
         "c'est",
@@ -3289,7 +3289,7 @@
         "n"
        ],
        "should": [
-        "(should not think : n'aurais pas)",
+        "(should not think of : ne songerais pas)",
         "should",
         "v"
        ],
@@ -3322,7 +3322,7 @@
     [
      {
       "en": "“‘No excuse will avail,’ said Mr. Duncan Ross; ‘neither sickness nor business nor anything else.",
-      "fr": "« “Aucune excuse ne vaudra”, dit M. Duncan Ross ; “ni la maladie, ni les affaires, ni quoi que ce soit d'autre.",
+      "fr": "« “Aucune excuse ne servira”, dit M. Duncan Ross ; “ni la maladie, ni les affaires, ni quoi que ce soit d'autre.",
       "g": {
        "no": [
         "aucune",
@@ -3335,12 +3335,12 @@
         "n"
        ],
        "will": [
-        "(futur) : vaudra",
+        "(futur) : servira",
         "will",
         "v"
        ],
        "avail": [
-        "vaudra",
+        "servira",
         "avail",
         "v",
         "servir, valoir"
@@ -3697,16 +3697,16 @@
      },
      {
       "en": "He bowed me out of the room and I went home with my assistant, hardly knowing what to say or do, I was so pleased at my own good fortune.",
-      "fr": "Il me reconduisit en s'inclinant et je rentrai chez moi avec mon employé, sachant à peine que dire ou que faire, tant j'étais content de ma bonne fortune. »",
+      "fr": "Il me raccompagna hors de la pièce avec force courbettes, et je rentrai chez moi avec mon employé, sachant à peine que dire ou que faire, tant j'étais content de ma bonne fortune.",
       "g": {
        "bowed": [
-        "reconduisit en s'inclinant",
+        "raccompagna avec force courbettes",
         "bow",
         "v",
         "s'incliner"
        ],
        "out": [
-        "(bowed out : reconduisit)",
+        "(bowed out : raccompagna hors de)",
         "out",
         "d"
        ],
@@ -4384,7 +4384,7 @@
         "disposer"
        ],
        "out": [
-        "(set out : disposée)",
+        "(set out : dressée)",
         "out",
         "d"
        ],
@@ -4549,7 +4549,7 @@
      },
      {
       "en": "At two o’clock he bade me good-day, complimented me upon the amount that I had written, and locked the door of the office after me.",
-      "fr": "À deux heures, il me souhaitait le bonjour, me complimentait sur la quantité que j'avais écrite, et fermait derrière moi la porte du bureau à clef.",
+      "fr": "À deux heures, il me souhaita le bonjour, me félicita de la quantité que j'avais écrite et ferma à clef la porte du bureau derrière moi.",
       "g": {
        "o'clock": [
         "heures",
@@ -4557,7 +4557,7 @@
         "d"
        ],
        "bade": [
-        "(bade good-day : souhaitait le bonjour)",
+        "souhaita",
         "bid",
         "v",
         "ordonner, souhaiter"
@@ -4568,7 +4568,7 @@
         "n"
        ],
        "complimented": [
-        "complimentait",
+        "félicita",
         "compliment",
         "v",
         "complimenter"
@@ -4595,7 +4595,7 @@
         "écrire"
        ],
        "locked": [
-        "fermait à clef",
+        "ferma à clef",
         "lock",
         "v",
         "verrouiller"
@@ -4621,7 +4621,7 @@
     [
      {
       "en": "“This went on day after day, Mr. Holmes, and on Saturday the manager came in and planked down four golden sovereigns for my week’s work.",
-      "fr": "« Cela dura ainsi jour après jour, monsieur Holmes, et le samedi le directeur entra et aligna quatre souverains d'or pour mon travail de la semaine.",
+      "fr": "« Cela dura ainsi jour après jour, monsieur Holmes, et le samedi le directeur entra et posa d'un geste sec quatre souverains d'or pour mon travail de la semaine.",
       "g": {
        "this": [
         "cela",
@@ -4629,13 +4629,13 @@
         "p"
        ],
        "went": [
-        "dura (went on : continua)",
+        "dura ainsi (went on)",
         "go",
         "v",
         "aller"
        ],
        "on": [
-        "(went on : continua)",
+        "(went on : dura ainsi)",
         "on",
         "d"
        ],
@@ -4676,13 +4676,13 @@
         "d"
        ],
        "planked": [
-        "aligna avec fracas (planked down)",
+        "posa d'un geste sec (planked down)",
         "plank",
         "v",
         "poser avec fracas"
        ],
        "down": [
-        "(planked down : aligna)",
+        "(planked down : posa d'un geste sec)",
         "down",
         "d"
        ],
@@ -5119,7 +5119,7 @@
         "c"
        ],
        "might": [
-        "pourrais",
+        "(might get on : arriver)",
         "might",
         "v"
        ],
@@ -5144,12 +5144,12 @@
         "n"
        ],
        "very": [
-        "(very long : très longtemps)",
+        "(before very long : avant longtemps)",
         "very",
         "d"
        ],
        "long": [
-        "longtemps (before long : avant longtemps)",
+        "(before very long : avant longtemps)",
         "long",
         "d"
        ]
@@ -5324,10 +5324,10 @@
      },
      {
       "en": "I went to my work as usual at ten o’clock, but the door was shut and locked, with a little square of cardboard hammered on to the middle of the panel with a tack.",
-      "fr": "Je suis allé à mon travail comme d'habitude à dix heures, mais la porte était fermée à clef, avec un petit carré de carton cloué au milieu du panneau par une punaise.",
+      "fr": "J'allai à mon travail comme d'habitude à dix heures, mais la porte était fermée à clef, avec un petit carré de carton fixé au milieu du panneau d'un coup de marteau, au moyen d'une petite pointe.",
       "g": {
        "went": [
-        "suis allé",
+        "allai",
         "go",
         "v",
         "aller"
@@ -5364,7 +5364,7 @@
         "fermer"
        ],
        "locked": [
-        "verrouillée",
+        "à clef (shut and locked : fermée à clef)",
         "lock",
         "v",
         "verrouiller"
@@ -5390,7 +5390,7 @@
         "n"
        ],
        "hammered": [
-        "cloué",
+        "fixé d'un coup de marteau",
         "hammer",
         "v",
         "marteler"
@@ -5416,12 +5416,12 @@
         "n"
        ],
        "with#2": [
-        "par",
+        "au moyen de",
         "with",
         "r"
        ],
        "tack": [
-        "punaise (clou à tête large)",
+        "petite pointe (clou à tête plate)",
         "tack",
         "n"
        ]
@@ -5472,16 +5472,16 @@
     [
      {
       "en": "He held up a piece of white cardboard about the size of a sheet of note-paper.",
-      "fr": "Il brandit un morceau de carton blanc de la taille d'une feuille de papier à lettres.",
+      "fr": "Il leva un morceau de carton blanc de la taille d'une feuille de papier à lettres.",
       "g": {
        "held": [
-        "brandit",
+        "leva",
         "hold",
         "v",
         "tenir"
        ],
        "up": [
-        "(held up : brandit)",
+        "(held up : leva)",
         "up",
         "d"
        ],
@@ -6153,10 +6153,10 @@
      },
      {
       "en": "Then I called at the offices round, but none of them seemed to know anything about it.",
-      "fr": "Alors je suis passé dans les bureaux d'alentour, mais aucun ne semblait rien en savoir.",
+      "fr": "Alors je passai dans les bureaux d'alentour, mais aucun ne semblait rien en savoir.",
       "g": {
        "called": [
-        "suis passé",
+        "passai",
         "call",
         "v",
         "appeler, passer"
@@ -6221,7 +6221,7 @@
      },
      {
       "en": "Finally, I went to the landlord, who is an accountant living on the ground-floor, and I asked him if he could tell me what had become of the Red-headed League.",
-      "fr": "Finalement, je suis allé voir le propriétaire, un comptable qui habite au rez-de-chaussée, et je lui ai demandé s'il pouvait me dire ce qu'était devenue la Ligue des Roux.",
+      "fr": "Finalement, j'allai trouver le propriétaire, un comptable qui habite au rez-de-chaussée, et je lui demandai s'il pouvait me dire ce qu'était devenue la Ligue des Roux.",
       "g": {
        "finally": [
         "finalement",
@@ -6229,13 +6229,13 @@
         "d"
        ],
        "went": [
-        "suis allé",
+        "allai",
         "go",
         "v",
         "aller"
        ],
        "to": [
-        "voir",
+        "(went to : allai trouver)",
         "to",
         "r"
        ],
@@ -6266,7 +6266,7 @@
         "n"
        ],
        "asked": [
-        "ai demandé",
+        "demandai",
         "ask",
         "v",
         "demander"
@@ -6382,7 +6382,7 @@
      },
      {
       "en": "He answered that the name was new to him.",
-      "fr": "Il répondit que ce nom lui était nouveau.",
+      "fr": "Il répondit que ce nom lui était inconnu.",
       "g": {
        "answered": [
         "répondit",
@@ -6406,12 +6406,12 @@
         "a"
        ],
        "to": [
-        "(new to him : inconnu de lui)",
+        "(new to him : lui était inconnu)",
         "to",
         "r"
        ],
        "him": [
-        "lui",
+        "(new to him : lui était inconnu)",
         "him",
         "p"
        ]
@@ -6545,7 +6545,7 @@
         "c"
        ],
        "new": [
-        "nouvelles",
+        "nouveaux",
         "new",
         "a"
        ],
@@ -6634,7 +6634,7 @@
      },
      {
       "en": "He did tell me the address.",
-      "fr": "Il m'a bien donné l'adresse.",
+      "fr": "Il m'a bien indiqué l'adresse.",
       "g": {
        "did": [
         "bien",
@@ -6643,7 +6643,7 @@
         "faire"
        ],
        "tell": [
-        "(did tell : a bien dit)",
+        "a indiqué (did tell : a bien indiqué)",
         "tell",
         "v",
         "dire"
@@ -6695,7 +6695,7 @@
     [
      {
       "en": "“I started off, Mr. Holmes, but when I got to that address it was a manufactory of artificial knee-caps, and no one in it had ever heard of either Mr. William Morris or Mr. Duncan Ross.”",
-      "fr": "« Je me mis en route, monsieur Holmes, mais quand j'arrivai à cette adresse, c'était une fabrique de genouillères artificielles, et personne n'y avait jamais entendu parler ni de M. William Morris ni de M. Duncan Ross. »",
+      "fr": "« Je me mis en route, monsieur Holmes, mais quand j'arrivai à cette adresse, c'était une fabrique de rotules artificielles, et personne n'y avait jamais entendu parler ni de M. William Morris ni de M. Duncan Ross. »",
       "g": {
        "started": [
         "me mis (started off : me mis en route)",
@@ -6751,7 +6751,7 @@
         "a"
        ],
        "knee-caps": [
-        "genouillères",
+        "rotules",
         "knee-cap",
         "n"
        ],
@@ -6833,10 +6833,10 @@
     [
      {
       "en": "“I went home to Saxe-Coburg Square, and I took the advice of my assistant.",
-      "fr": "« Je suis rentré chez moi, à Saxe-Coburg Square, et j'ai pris l'avis de mon employé.",
+      "fr": "« Je rentrai chez moi, à Saxe-Coburg Square, et je pris l'avis de mon employé.",
       "g": {
        "went": [
-        "suis rentré",
+        "rentrai",
         "go",
         "v",
         "aller"
@@ -6862,7 +6862,7 @@
         "n"
        ],
        "took": [
-        "ai pris",
+        "pris",
         "take",
         "v",
         "prendre"
@@ -6987,7 +6987,7 @@
      },
      {
       "en": "I did not wish to lose such a place without a struggle, so, as I had heard that you were good enough to give advice to poor folk who were in need of it, I came right away to you.”",
-      "fr": "Je ne voulais pas perdre une telle place sans lutter ; aussi, ayant entendu dire que vous aviez la bonté de conseiller les pauvres gens qui en ont besoin, je suis venu tout de suite chez vous. »",
+      "fr": "Je ne voulais pas perdre une telle place sans lutter ; aussi, ayant entendu dire que vous aviez la bonté de conseiller les pauvres gens qui en ont besoin, je vins tout de suite chez vous. »",
       "g": {
        "did": [
         "(did not wish : ne voulais pas)",
@@ -7032,12 +7032,12 @@
         "c"
        ],
        "as": [
-        "comme",
+        "ayant (as I had heard : ayant entendu dire)",
         "as",
         "c"
        ],
        "had": [
-        "avais",
+        "(had heard : ayant entendu dire)",
         "have",
         "v",
         "avoir"
@@ -7100,7 +7100,7 @@
         "n"
        ],
        "were#2": [
-        "étaient",
+        "(were in need : ont besoin)",
         "be",
         "v",
         "être"
@@ -7126,7 +7126,7 @@
         "p"
        ],
        "came": [
-        "suis venu",
+        "vins",
         "come",
         "v",
         "venir"
@@ -7237,7 +7237,7 @@
      },
      {
       "en": "From what you have told me I think that it is possible that graver issues hang from it than might at first sight appear.”",
-      "fr": "D'après ce que vous m'avez dit, je pense qu'il est possible que des enjeux plus graves en dépendent que ce qui pourrait d'abord paraître. »",
+      "fr": "D'après ce que vous m'avez dit, je pense qu'il est possible que des enjeux plus graves y soient attachés qu'il n'y paraît à première vue. »",
       "g": {
        "from": [
         "d'après",
@@ -7293,18 +7293,18 @@
         "n"
        ],
        "hang": [
-        "dépendent (hang from : dépendre de)",
+        "soient attachés (hang from)",
         "hang",
         "v",
         "pendre"
        ],
        "from#2": [
-        "(hang from : dépendre de)",
+        "(hang from : y soient attachés)",
         "from",
         "r"
        ],
        "might": [
-        "pourrait",
+        "(might appear : n'y paraît)",
         "might",
         "v"
        ],
@@ -7324,7 +7324,7 @@
         "n"
        ],
        "appear": [
-        "paraître",
+        "paraît",
         "appear",
         "v"
        ]
@@ -7487,7 +7487,7 @@
      },
      {
       "en": "On the contrary, you are, as I understand, richer by some 30 pounds, to say nothing of the minute knowledge which you have gained on every subject which comes under the letter A. You have lost nothing by them.”",
-      "fr": "Au contraire, vous êtes, si je comprends bien, plus riche d'environ 30 livres, sans parler de la connaissance minutieuse que vous avez acquise sur tous les sujets qui relèvent de la lettre A. Vous n'avez rien perdu par leur fait. »",
+      "fr": "Au contraire, vous êtes, si je comprends bien, plus riche d'environ 30 livres, sans parler de la connaissance minutieuse que vous avez acquise sur tous les sujets qui relèvent de la lettre A. Vous n'avez rien perdu avec eux. »",
       "g": {
        "on": [
         "(on the contrary : au contraire)",
@@ -7627,12 +7627,12 @@
         "perdre"
        ],
        "by#2": [
-        "(by them : par leur fait)",
+        "(by them : avec eux)",
         "by",
         "r"
        ],
        "them": [
-        "(by them : par leur fait)",
+        "(by them : avec eux)",
         "them",
         "p"
        ]
@@ -8093,20 +8093,20 @@
     [
      {
       "en": "“Because he was handy and would come cheap.”",
-      "fr": "« Parce qu'il était adroit et qu'il ne coûterait pas cher. »",
+      "fr": "« Parce qu'il était débrouillard et qu'il ne demanderait pas cher. »",
       "g": {
        "handy": [
-        "adroit (sous la main)",
+        "débrouillard (pratique, adroit)",
         "handy",
         "a"
        ],
        "would": [
-        "(conditionnel) : coûterait",
+        "(conditionnel) : demanderait",
         "would",
         "v"
        ],
        "come": [
-        "(come cheap : coûter peu)",
+        "(come cheap : demanderait peu)",
         "come",
         "v",
         "venir"
@@ -8180,7 +8180,7 @@
     [
      {
       "en": "“Small, stout-built, very quick in his ways, no hair on his face, though he’s not short of thirty.",
-      "fr": "« Petit, trapu, très vif dans ses manières, sans poil au visage, bien qu'il ait bien trente ans.",
+      "fr": "« Petit, trapu, très vif dans ses manières, sans poil au visage, bien qu'il ait trente ans au moins.",
       "g": {
        "small": [
         "petit",
@@ -8233,17 +8233,17 @@
         "c"
        ],
        "he's": [
-        "il est",
+        "il a",
         "be",
         "v"
        ],
        "short": [
-        "(not short of : pas en dessous de)",
+        "(not short of : pas moins de)",
         "short",
         "a"
        ],
        "of": [
-        "(short of : en dessous de)",
+        "(short of : moins de)",
         "of",
         "r"
        ]
@@ -8599,13 +8599,13 @@
         "être"
        ],
        "attended": [
-        "pris en charge (attended to)",
+        "tenu (attended to)",
         "attend",
         "v",
         "s'occuper de"
        ],
        "to": [
-        "(attended to : pris en charge)",
+        "(attended to : tenu)",
         "to",
         "r"
        ],
@@ -8899,10 +8899,10 @@
     [
      {
       "en": "“I make nothing of it,” I answered frankly.",
-      "fr": "« Je n'en pense rien », répondis-je franchement.",
+      "fr": "« Je n'y comprends rien », répondis-je franchement.",
       "g": {
        "make": [
-        "(make of : penser de)",
+        "(make of : comprendre)",
         "make",
         "v",
         "faire"
@@ -8913,7 +8913,7 @@
         "p"
        ],
        "of": [
-        "(make nothing of : n'en penser rien)",
+        "(make nothing of : n'y comprends rien)",
         "of",
         "r"
        ],
@@ -9131,15 +9131,15 @@
      },
      {
       "en": "But I must be prompt over this matter.”",
-      "fr": "Mais je dois être prompt dans cette affaire. »",
+      "fr": "Mais il me faut agir promptement dans cette affaire. »",
       "g": {
        "must": [
-        "dois",
+        "(must : il me faut)",
         "must",
         "v"
        ],
        "prompt": [
-        "prompt (rapide)",
+        "(be prompt : agir promptement)",
         "prompt",
         "a"
        ],

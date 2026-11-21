@@ -1837,7 +1837,7 @@
         [
           {
             "en": "Adam lifted the suitcase onto the shelf for her.",
-            "fr": "Adam souleva la valise jusqu'à l'étagère pour elle."
+            "fr": "Adam souleva la valise pour la poser sur l'étagère."
           },
           {
             "en": "She introduced herself as Mrs Ward, a retired teacher from Manchester, and she explained that she was visiting her sister in Vienna.",
@@ -1852,9 +1852,15 @@
             "fr": "« Personne ne peut passer devant ma porte sans se faire aboyer dessus. »",
             "g": {
               "at": [
-                "(barked at : aboyé dessus)",
+                "(barked at : aboyer dessus)",
                 "at",
                 "r"
+              ],
+              "barked": [
+                "aboyer dessus",
+                "bark",
+                "v",
+                "aboyer"
               ]
             }
           }
@@ -1889,6 +1895,12 @@
                 "(fall asleep : m'endors)",
                 "asleep",
                 "a"
+              ],
+              "smile": [
+                "en souriant",
+                "smile",
+                "n",
+                "sourire"
               ]
             }
           }
@@ -1971,11 +1983,24 @@
         [
           {
             "en": "“Come in, Mr Benali,” she said warmly. “This is my assistant, Jonas.”",
-            "fr": "« Entrez, monsieur Benali », dit-elle chaleureusement. « Voici mon assistant, Jonas. »"
+            "fr": "« Entrez, monsieur Benali », dit-elle chaleureusement. « Voici mon assistant, Jonas. »",
+            "g": {
+              "come": [
+                "entrez",
+                "come",
+                "v",
+                "venir"
+              ],
+              "in": [
+                "(come in : entrez)",
+                "in",
+                "d"
+              ]
+            }
           },
           {
             "en": "A thin young man jumped up from the corner and shook Adam's hand very quickly.",
-            "fr": "Un jeune homme maigre se leva d'un bond dans le coin et serra très vite la main d'Adam.",
+            "fr": "Un jeune homme maigre se leva d'un bond de son coin et serra très vite la main d'Adam.",
             "g": {
               "jumped": [
                 "se leva d'un bond (jumped up)",
@@ -2353,7 +2378,7 @@
         [
           {
             "en": "Adam wrote his first notes by the small lamp over his bed.",
-            "fr": "Adam écrivit ses premières notes à la petite lampe au-dessus de son lit.",
+            "fr": "Adam écrivit ses premières notes à la lueur de la petite lampe au-dessus de son lit.",
             "g": {
               "first": [
                 "premières",
@@ -2433,6 +2458,12 @@
                 "barking",
                 "n",
                 "aboiement"
+              ],
+              "stopped": [
+                "cessèrent",
+                "stop",
+                "v",
+                "cesser"
               ]
             }
           },

@@ -88,7 +88,7 @@
    "garçon"
   ],
   "officer": [
-   "agent",
+   "policière",
    "officer",
    "n"
   ],
@@ -1029,7 +1029,7 @@
         "c"
        ],
        "to#2": [
-        "pour (to say)",
+        "(to say : te dire)",
         "to",
         "x"
        ]
@@ -1138,7 +1138,7 @@
      },
      {
       "en": "It falls on the floor!",
-      "fr": "Elle tombe par terre !"
+      "fr": "Elle tombe sur le sol !"
      },
      {
       "en": "\"Oh no!\" says Yusuf, and Amira laughs.",
@@ -1471,10 +1471,14 @@
         "regarder"
        ],
        "officer": [
-        "policière",
+        "policière (police officer)",
         "officer",
-        "n",
-        "agent"
+        "n"
+       ],
+       "police": [
+        "(police officer : policière)",
+        "police",
+        "n"
        ]
       }
      },
@@ -1802,10 +1806,9 @@
         "n"
        ],
        "man": [
-        "employé (man)",
+        "homme",
         "man",
-        "n",
-        "homme"
+        "n"
        ]
       }
      },
@@ -1856,7 +1859,7 @@
      },
      {
       "en": "\"You are welcome,\" says the man.",
-      "fr": "« Je vous en prie », dit l'employé.",
+      "fr": "« Je vous en prie », dit l'homme.",
       "g": {
        "are": [
         "(you are welcome : je vous en prie)",
@@ -2026,7 +2029,7 @@
      },
      {
       "en": "\"Thank you for the best week,\" he says.",
-      "fr": "« Merci pour cette merveilleuse semaine », dit-il.",
+      "fr": "« Merci pour la meilleure semaine », dit-il.",
       "g": {
        "thank": [
         "merci (thank you)",
@@ -2039,8 +2042,8 @@
         "p"
        ],
        "best": [
-        "merveilleuse",
-        "best",
+        "meilleure",
+        "good",
         "a",
         "bon"
        ]

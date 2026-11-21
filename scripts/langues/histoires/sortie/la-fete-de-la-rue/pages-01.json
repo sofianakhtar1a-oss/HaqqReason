@@ -1,0 +1,2077 @@
+{
+ "debut": 1,
+ "lexique": {
+  "amira": [
+   "Amira (prénom)",
+   "Amira",
+   "np"
+  ],
+  "bristol": [
+   "Bristol (ville d'Angleterre)",
+   "Bristol",
+   "np"
+  ],
+  "england": [
+   "Angleterre",
+   "England",
+   "np"
+  ],
+  "maple": [
+   "Maple (nom de rue ; érable)",
+   "Maple",
+   "np"
+  ],
+  "street": [
+   "rue",
+   "street",
+   "n"
+  ],
+  "party": [
+   "fête",
+   "party",
+   "n"
+  ],
+  "dish": [
+   "plat",
+   "dish",
+   "n"
+  ],
+  "dishes": [
+   "plats",
+   "dish",
+   "n",
+   "plat"
+  ],
+  "door": [
+   "porte",
+   "door",
+   "n"
+  ],
+  "doors": [
+   "portes",
+   "door",
+   "n",
+   "porte"
+  ],
+  "mum": [
+   "maman",
+   "mum",
+   "n"
+  ],
+  "dad": [
+   "papa",
+   "dad",
+   "n"
+  ],
+  "sun": [
+   "soleil",
+   "sun",
+   "n"
+  ],
+  "tea": [
+   "thé",
+   "tea",
+   "n"
+  ],
+  "cake": [
+   "gâteau",
+   "cake",
+   "n"
+  ],
+  "pizza": [
+   "pizza",
+   "pizza",
+   "n"
+  ],
+  "rice": [
+   "riz",
+   "rice",
+   "n"
+  ],
+  "window": [
+   "fenêtre",
+   "window",
+   "n"
+  ],
+  "garden": [
+   "jardin",
+   "garden",
+   "n"
+  ],
+  "neighbours": [
+   "voisins",
+   "neighbour",
+   "n",
+   "voisin"
+  ],
+  "mr": [
+   "Monsieur (M.)",
+   "Mr",
+   "n"
+  ],
+  "mrs": [
+   "Madame (Mme)",
+   "Mrs",
+   "n"
+  ],
+  "okoye": [
+   "Okoye (nom de famille)",
+   "Okoye",
+   "np"
+  ],
+  "rossi": [
+   "Rossi (nom de famille)",
+   "Rossi",
+   "np"
+  ],
+  "chen": [
+   "Chen (nom de famille)",
+   "Chen",
+   "np"
+  ],
+  "hill": [
+   "Hill (nom de famille)",
+   "Hill",
+   "np"
+  ],
+  "luca": [
+   "Luca (prénom)",
+   "Luca",
+   "np"
+  ],
+  "karim": [
+   "Karim (prénom)",
+   "Karim",
+   "np"
+  ],
+  "oud": [
+   "oud (luth oriental)",
+   "oud",
+   "n"
+  ],
+  "dragons": [
+   "dragons",
+   "dragon",
+   "n",
+   "dragon"
+  ],
+  "chair": [
+   "chaise",
+   "chair",
+   "n"
+  ],
+  "list": [
+   "liste",
+   "list",
+   "n"
+  ],
+  "music": [
+   "musique",
+   "music",
+   "n"
+  ],
+  "table": [
+   "table",
+   "table",
+   "n"
+  ],
+  "number": [
+   "numéro",
+   "number",
+   "n"
+  ],
+  "idea": [
+   "idée",
+   "idea",
+   "n"
+  ],
+  "monday": [
+   "lundi",
+   "Monday",
+   "n"
+  ],
+  "tuesday": [
+   "mardi",
+   "Tuesday",
+   "n"
+  ],
+  "wednesday": [
+   "mercredi",
+   "Wednesday",
+   "n"
+  ],
+  "thursday": [
+   "jeudi",
+   "Thursday",
+   "n"
+  ],
+  "friday": [
+   "vendredi",
+   "Friday",
+   "n"
+  ],
+  "saturday": [
+   "samedi",
+   "Saturday",
+   "n"
+  ],
+  "sunday": [
+   "dimanche",
+   "Sunday",
+   "n"
+  ],
+  "nigeria": [
+   "Nigeria",
+   "Nigeria",
+   "np"
+  ],
+  "couscous": [
+   "couscous",
+   "couscous",
+   "n"
+  ],
+  "jollof": [
+   "jollof (riz épicé d'Afrique de l'Ouest)",
+   "jollof",
+   "a"
+  ],
+  "guitar": [
+   "guitare",
+   "guitar",
+   "n"
+  ]
+ },
+ "pages": [
+  {
+   "p": [
+    [
+     {
+      "en": "Amira is eleven years old.",
+      "fr": "Amira a onze ans.",
+      "g": {
+       "years": [
+        "ans",
+        "year",
+        "n",
+        "an"
+       ],
+       "old": [
+        "(years old : ans)",
+        "old",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "She lives in Bristol, in England.",
+      "fr": "Elle habite à Bristol, en Angleterre.",
+      "g": {
+       "lives": [
+        "habite",
+        "live",
+        "v",
+        "habiter"
+       ]
+      }
+     },
+     {
+      "en": "Her street is called Maple Street.",
+      "fr": "Sa rue s’appelle Maple Street.",
+      "g": {
+       "called": [
+        "s'appelle (is called)",
+        "call",
+        "v",
+        "appeler"
+       ]
+      }
+     },
+     {
+      "en": "There are ten houses in the street.",
+      "fr": "Il y a dix maisons dans la rue.",
+      "g": {
+       "houses": [
+        "maisons",
+        "house",
+        "n",
+        "maison"
+       ]
+      }
+     },
+     {
+      "en": "The people are very quiet.",
+      "fr": "Les gens sont très calmes.",
+      "g": {
+       "people": [
+        "gens",
+        "people",
+        "n"
+       ],
+       "quiet": [
+        "calmes",
+        "quiet",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "They say hello and go inside.",
+      "fr": "Ils disent bonjour et rentrent chez eux.",
+      "g": {
+       "say": [
+        "disent",
+        "say",
+        "v",
+        "dire"
+       ],
+       "go": [
+        "rentrent",
+        "go",
+        "v",
+        "aller"
+       ],
+       "inside": [
+        "chez eux (go inside : rentrer)",
+        "inside",
+        "d"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Amira is not happy.",
+      "fr": "Amira n’est pas contente.",
+      "g": {
+       "happy": [
+        "contente",
+        "happy",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "She is sad about this.",
+      "fr": "Elle en est triste.",
+      "g": {
+       "sad": [
+        "triste",
+        "sad",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Nobody talks in our street,” she says.",
+      "fr": "« Personne ne se parle dans notre rue », dit-elle.",
+      "g": {
+       "talks": [
+        "se parle",
+        "talk",
+        "v",
+        "parler"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“I don’t know my neighbours.”",
+      "fr": "« Je ne connais pas mes voisins. »",
+      "g": {
+       "know": [
+        "connais",
+        "know",
+        "v",
+        "connaître"
+       ]
+      }
+     },
+     {
+      "en": "Her mum smiles at her.",
+      "fr": "Sa maman lui sourit.",
+      "g": {
+       "smiles": [
+        "sourit",
+        "smile",
+        "v",
+        "sourire"
+       ],
+       "her#2": [
+        "lui",
+        "her",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "“People are busy, Amira,” she says.",
+      "fr": "« Les gens sont occupés, Amira », dit-elle.",
+      "g": {
+       "people": [
+        "gens",
+        "people",
+        "n"
+       ],
+       "busy": [
+        "occupés",
+        "busy",
+        "a"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“They work, they cook and they sleep.”",
+      "fr": "« Ils travaillent, ils cuisinent et ils dorment. »",
+      "g": {
+       "work": [
+        "travaillent",
+        "work",
+        "v",
+        "travailler"
+       ],
+       "cook": [
+        "cuisinent",
+        "cook",
+        "v",
+        "cuisiner"
+       ],
+       "sleep": [
+        "dorment",
+        "sleep",
+        "v",
+        "dormir"
+       ]
+      }
+     },
+     {
+      "en": "Amira looks out of the window.",
+      "fr": "Amira regarde par la fenêtre.",
+      "g": {
+       "looks": [
+        "regarde",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "out": [
+        "par (out of : par)",
+        "out",
+        "d"
+       ],
+       "of": [
+        "(out of : par)",
+        "of",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "The street is grey and empty.",
+      "fr": "La rue est grise et vide.",
+      "g": {
+       "grey": [
+        "grise",
+        "grey",
+        "a"
+       ],
+       "empty": [
+        "vide",
+        "empty",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "There is nobody outside.",
+      "fr": "Il n’y a personne dehors.",
+      "g": {}
+     },
+     {
+      "en": "She wants a happy street with friends.",
+      "fr": "Elle veut une rue joyeuse, avec des amis.",
+      "g": {
+       "wants": [
+        "veut",
+        "want",
+        "v",
+        "vouloir"
+       ],
+       "happy": [
+        "joyeuse",
+        "happy",
+        "a"
+       ],
+       "friends": [
+        "amis",
+        "friend",
+        "n",
+        "ami"
+       ]
+      }
+     },
+     {
+      "en": "How can she change that?",
+      "fr": "Comment peut-elle changer cela ?",
+      "g": {
+       "change": [
+        "changer",
+        "change",
+        "v"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 1 — The Quiet Street",
+   "titreFr": "Chapitre 1 — La rue silencieuse"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "It is Sunday evening.",
+      "fr": "C’est dimanche soir.",
+      "g": {
+       "evening": [
+        "soir",
+        "evening",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Amira sits at the table with her dad.",
+      "fr": "Amira est assise à la table avec son père.",
+      "g": {
+       "sits": [
+        "est assise",
+        "sit",
+        "v",
+        "s'asseoir"
+       ]
+      }
+     },
+     {
+      "en": "He drinks a cup of tea.",
+      "fr": "Il boit une tasse de thé.",
+      "g": {
+       "drinks": [
+        "boit",
+        "drink",
+        "v",
+        "boire"
+       ],
+       "cup": [
+        "tasse",
+        "cup",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Dad, I have an idea,” she says.",
+      "fr": "« Papa, j’ai une idée », dit-elle.",
+      "g": {
+       "have": [
+        "ai",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“Let’s have a street party!”",
+      "fr": "« Faisons une fête de rue ! »",
+      "g": {
+       "let's": [
+        "faisons (let's have : faire)",
+        "let",
+        "v"
+       ],
+       "have": [
+        "(let's have : faisons)",
+        "have",
+        "v",
+        "avoir"
+       ]
+      }
+     },
+     {
+      "en": "Her dad laughs.",
+      "fr": "Son père rit.",
+      "g": {
+       "laughs": [
+        "rit",
+        "laugh",
+        "v",
+        "rire"
+       ]
+      }
+     },
+     {
+      "en": "“A party? When?”",
+      "fr": "« Une fête ? Quand ? »",
+      "g": {}
+     },
+     {
+      "en": "“Next Saturday,” says Amira.",
+      "fr": "« Samedi prochain », dit Amira.",
+      "g": {
+       "next": [
+        "prochain",
+        "next",
+        "a"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“Everybody brings a dish from their country.”",
+      "fr": "« Chacun apporte un plat de son pays. »",
+      "g": {
+       "everybody": [
+        "chacun (tout le monde)",
+        "everybody",
+        "p"
+       ],
+       "brings": [
+        "apporte",
+        "bring",
+        "v",
+        "apporter"
+       ],
+       "their": [
+        "son (leur)",
+        "their",
+        "p"
+       ],
+       "country": [
+        "pays",
+        "country",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“But who lives in our street?” asks Dad.",
+      "fr": "« Mais qui habite dans notre rue ? » demande papa.",
+      "g": {
+       "lives": [
+        "habite",
+        "live",
+        "v",
+        "habiter"
+       ],
+       "asks": [
+        "demande",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     },
+     {
+      "en": "“I don’t know!” says Amira.",
+      "fr": "« Je ne sais pas ! » dit Amira.",
+      "g": {
+       "know": [
+        "sais",
+        "know",
+        "v",
+        "savoir"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“That is the problem.”",
+      "fr": "« Voilà le problème. »",
+      "g": {
+       "that": [
+        "voilà (that is : voilà)",
+        "that",
+        "p"
+       ],
+       "problem": [
+        "problème",
+        "problem",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“Then knock on the doors,” says Dad.",
+      "fr": "« Alors frappe aux portes », dit papa.",
+      "g": {
+       "then": [
+        "alors",
+        "then",
+        "c"
+       ],
+       "knock": [
+        "frappe",
+        "knock",
+        "v",
+        "frapper"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "Amira takes a pen and a big piece of paper.",
+      "fr": "Amira prend un stylo et une grande feuille de papier.",
+      "g": {
+       "takes": [
+        "prend",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "pen": [
+        "stylo",
+        "pen",
+        "n"
+       ],
+       "big": [
+        "grande",
+        "big",
+        "a"
+       ],
+       "piece": [
+        "feuille",
+        "piece",
+        "n"
+       ],
+       "paper": [
+        "papier",
+        "paper",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "She writes: “Street Party! Saturday! Bring a dish!”",
+      "fr": "Elle écrit : « Fête de rue ! Samedi ! Apportez un plat ! »",
+      "g": {
+       "writes": [
+        "écrit",
+        "write",
+        "v",
+        "écrire"
+       ],
+       "bring": [
+        "apportez",
+        "bring",
+        "v",
+        "apporter"
+       ]
+      }
+     },
+     {
+      "en": "She draws a sun and a big cake.",
+      "fr": "Elle dessine un soleil et un gros gâteau.",
+      "g": {
+       "draws": [
+        "dessine",
+        "draw",
+        "v",
+        "dessiner"
+       ],
+       "big": [
+        "gros",
+        "big",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“I can knock on the doors this week,” she says.",
+      "fr": "« Je peux frapper aux portes cette semaine », dit-elle.",
+      "g": {
+       "knock": [
+        "frapper",
+        "knock",
+        "v",
+        "frapper"
+       ],
+       "week": [
+        "semaine",
+        "week",
+        "n"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“Good idea,” says Dad.",
+      "fr": "« Bonne idée », dit papa.",
+      "g": {
+       "good": [
+        "bonne",
+        "good",
+        "a"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“Start tomorrow!”",
+      "fr": "« Commence demain ! »",
+      "g": {
+       "start": [
+        "commence",
+        "start",
+        "v",
+        "commencer"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "It is Monday and it is sunny.",
+      "fr": "C’est lundi et il fait beau.",
+      "g": {
+       "sunny": [
+        "il fait beau (sunny)",
+        "sunny",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Amira stands at number one.",
+      "fr": "Amira se tient devant le numéro un.",
+      "g": {
+       "stands": [
+        "se tient",
+        "stand",
+        "v",
+        "se tenir"
+       ],
+       "one": [
+        "un (numéro un)",
+        "one",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Mr and Mrs Okoye live here.",
+      "fr": "M. et Mme Okoye habitent ici.",
+      "g": {
+       "live": [
+        "habitent",
+        "live",
+        "v",
+        "habiter"
+       ]
+      }
+     },
+     {
+      "en": "They are Nigerian.",
+      "fr": "Ils sont nigérians.",
+      "g": {
+       "nigerian": [
+        "nigérians",
+        "Nigerian",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Amira knocks on the door.",
+      "fr": "Amira frappe à la porte.",
+      "g": {
+       "knocks": [
+        "frappe",
+        "knock",
+        "v",
+        "frapper"
+       ]
+      }
+     },
+     {
+      "en": "Mrs Okoye opens it.",
+      "fr": "Mme Okoye l’ouvre.",
+      "g": {
+       "opens": [
+        "ouvre",
+        "open",
+        "v",
+        "ouvrir"
+       ]
+      }
+     },
+     {
+      "en": "“Hello, I am Amira from number five.”",
+      "fr": "« Bonjour, je suis Amira, du numéro cinq. »",
+      "g": {}
+     },
+     {
+      "en": "“We have a street party on Saturday.”",
+      "fr": "« Nous organisons une fête de rue samedi. »",
+      "g": {
+       "have": [
+        "organisons (have a party : organiser)",
+        "have",
+        "v",
+        "avoir"
+       ]
+      }
+     },
+     {
+      "en": "“Can you bring a dish from Nigeria?”",
+      "fr": "« Pouvez-vous apporter un plat du Nigeria ? »",
+      "g": {
+       "bring": [
+        "apporter",
+        "bring",
+        "v"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Mr Okoye comes to the door.",
+      "fr": "M. Okoye vient à la porte.",
+      "g": {
+       "comes": [
+        "vient",
+        "come",
+        "v",
+        "venir"
+       ]
+      }
+     },
+     {
+      "en": "“A party? What a nice idea!”",
+      "fr": "« Une fête ? Quelle bonne idée ! »",
+      "g": {
+       "what": [
+        "quelle (what a : quelle)",
+        "what",
+        "p"
+       ],
+       "nice": [
+        "bonne",
+        "nice",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Of course,” says Mrs Okoye.",
+      "fr": "« Bien sûr », dit Mme Okoye.",
+      "g": {
+       "of": [
+        "(of course : bien sûr)",
+        "of",
+        "r"
+       ],
+       "course": [
+        "bien sûr (of course)",
+        "course",
+        "n"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“I can cook jollof rice.”",
+      "fr": "« Je peux préparer du riz jollof. »",
+      "g": {
+       "cook": [
+        "préparer",
+        "cook",
+        "v",
+        "cuisiner"
+       ]
+      }
+     },
+     {
+      "en": "“It is red, hot and very good!”",
+      "fr": "« Il est rouge, épicé et très bon ! »",
+      "g": {
+       "red": [
+        "rouge",
+        "red",
+        "a"
+       ],
+       "hot": [
+        "épicé",
+        "hot",
+        "a"
+       ],
+       "good": [
+        "bon",
+        "good",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“I like rice,” says Amira.",
+      "fr": "« J’aime le riz », dit Amira.",
+      "g": {
+       "like": [
+        "aime (like : aimer)",
+        "like",
+        "v",
+        "aimer"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "Mr Okoye smiles.",
+      "fr": "M. Okoye sourit.",
+      "g": {
+       "smiles": [
+        "sourit",
+        "smile",
+        "v",
+        "sourire"
+       ]
+      }
+     },
+     {
+      "en": "“I can bring fried plantain,” he says.",
+      "fr": "« Je peux apporter des bananes plantains frites », dit-il.",
+      "g": {
+       "bring": [
+        "apporter",
+        "bring",
+        "v",
+        "apporter"
+       ],
+       "fried": [
+        "frites",
+        "fry",
+        "v",
+        "frire"
+       ],
+       "plantain": [
+        "bananes plantains",
+        "plantain",
+        "n"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "Amira writes on her list.",
+      "fr": "Amira écrit sur sa liste.",
+      "g": {
+       "writes": [
+        "écrit",
+        "write",
+        "v",
+        "écrire"
+       ]
+      }
+     },
+     {
+      "en": "The first door is open!",
+      "fr": "La première porte est ouverte !",
+      "g": {
+       "first": [
+        "première",
+        "first",
+        "a"
+       ],
+       "open": [
+        "ouverte",
+        "open",
+        "a"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "It is Tuesday.",
+      "fr": "C’est mardi.",
+      "g": {}
+     },
+     {
+      "en": "The sky is grey.",
+      "fr": "Le ciel est gris.",
+      "g": {
+       "sky": [
+        "ciel",
+        "sky",
+        "n"
+       ],
+       "grey": [
+        "gris",
+        "grey",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "There are many clouds.",
+      "fr": "Il y a beaucoup de nuages.",
+      "g": {
+       "clouds": [
+        "nuages",
+        "cloud",
+        "n",
+        "nuage"
+       ]
+      }
+     },
+     {
+      "en": "Amira knocks at number three.",
+      "fr": "Amira frappe au numéro trois.",
+      "g": {
+       "knocks": [
+        "frappe",
+        "knock",
+        "v",
+        "frapper"
+       ]
+      }
+     },
+     {
+      "en": "The Rossi family lives here.",
+      "fr": "La famille Rossi habite ici.",
+      "g": {
+       "family": [
+        "famille",
+        "family",
+        "n"
+       ],
+       "lives": [
+        "habite",
+        "live",
+        "v",
+        "habiter"
+       ]
+      }
+     },
+     {
+      "en": "They are Italian.",
+      "fr": "Ils sont italiens.",
+      "g": {
+       "italian": [
+        "italiens",
+        "Italian",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "A boy opens the door.",
+      "fr": "Un garçon ouvre la porte.",
+      "g": {
+       "boy": [
+        "garçon",
+        "boy",
+        "n"
+       ],
+       "opens": [
+        "ouvre",
+        "open",
+        "v",
+        "ouvrir"
+       ]
+      }
+     },
+     {
+      "en": "His name is Luca.",
+      "fr": "Il s’appelle Luca.",
+      "g": {
+       "name": [
+        "s'appelle (name is : s'appelle)",
+        "name",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Mamma, there is a girl!” he shouts.",
+      "fr": "« Maman, il y a une fille ! » crie-t-il.",
+      "g": {
+       "mamma": [
+        "maman (en italien)",
+        "mamma",
+        "n"
+       ],
+       "girl": [
+        "fille",
+        "girl",
+        "n"
+       ],
+       "shouts": [
+        "crie",
+        "shout",
+        "v",
+        "crier"
+       ]
+      }
+     },
+     {
+      "en": "Mr and Mrs Rossi come to the door.",
+      "fr": "M. et Mme Rossi viennent à la porte.",
+      "g": {
+       "come": [
+        "viennent",
+        "come",
+        "v",
+        "venir"
+       ]
+      }
+     },
+     {
+      "en": "Amira tells them her idea.",
+      "fr": "Amira leur explique son idée.",
+      "g": {
+       "tells": [
+        "explique (tells : dire)",
+        "tell",
+        "v",
+        "dire"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“A party? We love parties!” says Mrs Rossi.",
+      "fr": "« Une fête ? Nous adorons les fêtes ! » dit Mme Rossi.",
+      "g": {
+       "love": [
+        "adorons",
+        "love",
+        "v",
+        "adorer"
+       ],
+       "parties": [
+        "fêtes",
+        "party",
+        "n",
+        "fête"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“I can make pizza,” says Mr Rossi.",
+      "fr": "« Je peux faire de la pizza », dit M. Rossi.",
+      "g": {
+       "make": [
+        "faire",
+        "make",
+        "v",
+        "faire"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“We have a big oven in the garden.”",
+      "fr": "« Nous avons un grand four dans le jardin. »",
+      "g": {
+       "have": [
+        "avons",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "big": [
+        "grand",
+        "big",
+        "a"
+       ],
+       "oven": [
+        "four",
+        "oven",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Pizza for everybody!” shouts Luca.",
+      "fr": "« De la pizza pour tout le monde ! » crie Luca.",
+      "g": {
+       "shouts": [
+        "crie",
+        "shout",
+        "v",
+        "crier"
+       ]
+      }
+     },
+     {
+      "en": "“And I can play the guitar,” says Luca.",
+      "fr": "« Et moi, je sais jouer de la guitare », dit Luca.",
+      "g": {
+       "can": [
+        "sais (can play : savoir jouer)",
+        "can",
+        "v"
+       ],
+       "play": [
+        "(can play : jouer)",
+        "play",
+        "v",
+        "jouer"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“Italian music! Yes, please!” says Amira.",
+      "fr": "« De la musique italienne ! Oui, s’il vous plaît ! » dit Amira.",
+      "g": {
+       "italian": [
+        "italienne",
+        "Italian",
+        "a"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "She writes the names on her list.",
+      "fr": "Elle écrit les noms sur sa liste.",
+      "g": {
+       "writes": [
+        "écrit",
+        "write",
+        "v",
+        "écrire"
+       ],
+       "names": [
+        "noms",
+        "name",
+        "n",
+        "nom"
+       ]
+      }
+     },
+     {
+      "en": "Two doors are open now!",
+      "fr": "Deux portes sont ouvertes maintenant !",
+      "g": {
+       "open": [
+        "ouvertes",
+        "open",
+        "a"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 2 — Knock, Knock!",
+   "titreFr": "Chapitre 2 — Toc, toc !"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "It is Wednesday.",
+      "fr": "C’est mercredi.",
+      "g": {}
+     },
+     {
+      "en": "The wind is strong.",
+      "fr": "Le vent est fort.",
+      "g": {
+       "wind": [
+        "vent",
+        "wind",
+        "n"
+       ],
+       "strong": [
+        "fort",
+        "strong",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Amira holds her paper with two hands.",
+      "fr": "Amira tient son papier à deux mains.",
+      "g": {
+       "holds": [
+        "tient",
+        "hold",
+        "v",
+        "tenir"
+       ],
+       "paper": [
+        "papier",
+        "paper",
+        "n"
+       ],
+       "hands": [
+        "mains",
+        "hand",
+        "n",
+        "main"
+       ]
+      }
+     },
+     {
+      "en": "Mr Chen lives at number seven.",
+      "fr": "M. Chen habite au numéro sept.",
+      "g": {
+       "lives": [
+        "habite",
+        "live",
+        "v",
+        "habiter"
+       ]
+      }
+     },
+     {
+      "en": "He is Chinese.",
+      "fr": "Il est chinois.",
+      "g": {
+       "chinese": [
+        "chinois",
+        "Chinese",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "He lives alone.",
+      "fr": "Il vit seul.",
+      "g": {
+       "lives": [
+        "vit",
+        "live",
+        "v",
+        "vivre"
+       ],
+       "alone": [
+        "seul",
+        "alone",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "He has a small garden with many flowers.",
+      "fr": "Il a un petit jardin plein de fleurs.",
+      "g": {
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ],
+       "many": [
+        "plein de (many : beaucoup de)",
+        "many",
+        "t"
+       ],
+       "flowers": [
+        "fleurs",
+        "flower",
+        "n",
+        "fleur"
+       ]
+      }
+     },
+     {
+      "en": "Amira knocks.",
+      "fr": "Amira frappe.",
+      "g": {
+       "knocks": [
+        "frappe",
+        "knock",
+        "v",
+        "frapper"
+       ]
+      }
+     },
+     {
+      "en": "Nobody comes.",
+      "fr": "Personne ne vient.",
+      "g": {
+       "comes": [
+        "vient",
+        "come",
+        "v",
+        "venir"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Slowly, the door opens.",
+      "fr": "Lentement, la porte s’ouvre.",
+      "g": {
+       "slowly": [
+        "lentement",
+        "slowly",
+        "d"
+       ],
+       "opens": [
+        "s'ouvre",
+        "open",
+        "v",
+        "ouvrir"
+       ]
+      }
+     },
+     {
+      "en": "“Yes?” says Mr Chen.",
+      "fr": "« Oui ? » dit M. Chen.",
+      "g": {
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "Amira tells him about the party.",
+      "fr": "Amira lui parle de la fête.",
+      "g": {
+       "tells": [
+        "parle",
+        "tell",
+        "v",
+        "dire"
+       ],
+       "him": [
+        "lui",
+        "him",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Mr Chen is quiet.",
+      "fr": "M. Chen est silencieux.",
+      "g": {
+       "quiet": [
+        "silencieux",
+        "quiet",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Then he smiles.",
+      "fr": "Puis il sourit.",
+      "g": {
+       "smiles": [
+        "sourit",
+        "smile",
+        "v",
+        "sourire"
+       ]
+      }
+     },
+     {
+      "en": "“I like tea,” he says.",
+      "fr": "« J’aime le thé », dit-il.",
+      "g": {
+       "like": [
+        "aime (like : aimer)",
+        "like",
+        "v",
+        "aimer"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“I can make tea for everybody.”",
+      "fr": "« Je peux préparer du thé pour tout le monde. »",
+      "g": {
+       "make": [
+        "préparer",
+        "make",
+        "v",
+        "faire"
+       ]
+      }
+     },
+     {
+      "en": "“And I can make paper dragons.”",
+      "fr": "« Et je peux faire des dragons en papier. »",
+      "g": {
+       "make": [
+        "faire",
+        "make",
+        "v",
+        "faire"
+       ],
+       "paper": [
+        "en papier (paper dragons : dragons en papier)",
+        "paper",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Dragons? Wow!” says Amira.",
+      "fr": "« Des dragons ? Waouh ! » dit Amira.",
+      "g": {
+       "wow": [
+        "waouh",
+        "wow",
+        "d"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“Come in,” says Mr Chen.",
+      "fr": "« Entrez », dit M. Chen.",
+      "g": {
+       "come": [
+        "entrez (come in : entrer)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "in": [
+        "(come in : entrez)",
+        "in",
+        "d"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "There are red and gold dragons on the table.",
+      "fr": "Il y a des dragons rouges et dorés sur la table.",
+      "g": {
+       "red": [
+        "rouges",
+        "red",
+        "a"
+       ],
+       "gold": [
+        "dorés",
+        "gold",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "They are beautiful!",
+      "fr": "Ils sont magnifiques !",
+      "g": {
+       "beautiful": [
+        "magnifiques",
+        "beautiful",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Three doors are open.",
+      "fr": "Trois portes sont ouvertes.",
+      "g": {
+       "open": [
+        "ouvertes",
+        "open",
+        "a"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "It is Thursday.",
+      "fr": "C’est jeudi.",
+      "g": {}
+     },
+     {
+      "en": "It is cold.",
+      "fr": "Il fait froid.",
+      "g": {
+       "cold": [
+        "froid",
+        "cold",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Mrs Hill lives at number nine.",
+      "fr": "Mme Hill habite au numéro neuf.",
+      "g": {
+       "lives": [
+        "habite",
+        "live",
+        "v",
+        "habiter"
+       ]
+      }
+     },
+     {
+      "en": "She is English and very old.",
+      "fr": "Elle est anglaise et très âgée.",
+      "g": {
+       "english": [
+        "anglaise",
+        "English",
+        "a"
+       ],
+       "old": [
+        "âgée",
+        "old",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Her cat sleeps on a chair.",
+      "fr": "Son chat dort sur une chaise.",
+      "g": {
+       "cat": [
+        "chat",
+        "cat",
+        "n"
+       ],
+       "sleeps": [
+        "dort",
+        "sleep",
+        "v",
+        "dormir"
+       ]
+      }
+     },
+     {
+      "en": "The cat is called Biscuit.",
+      "fr": "Le chat s’appelle Biscuit.",
+      "g": {
+       "cat": [
+        "chat",
+        "cat",
+        "n"
+       ],
+       "called": [
+        "s'appelle (is called)",
+        "call",
+        "v",
+        "appeler"
+       ],
+       "biscuit": [
+        "Biscuit (nom de chat)",
+        "Biscuit",
+        "np"
+       ]
+      }
+     },
+     {
+      "en": "“A street party?” she says.",
+      "fr": "« Une fête de rue ? » dit-elle.",
+      "g": {
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“Nobody knocks on my door!”",
+      "fr": "« Personne ne frappe à ma porte ! »",
+      "g": {
+       "knocks": [
+        "frappe",
+        "knock",
+        "v",
+        "frapper"
+       ]
+      }
+     },
+     {
+      "en": "Then she smiles.",
+      "fr": "Puis elle sourit.",
+      "g": {
+       "smiles": [
+        "sourit",
+        "smile",
+        "v",
+        "sourire"
+       ]
+      }
+     },
+     {
+      "en": "“I can make lemon cake and chocolate cake.”",
+      "fr": "« Je peux faire un gâteau au citron et un gâteau au chocolat. »",
+      "g": {
+       "make": [
+        "faire",
+        "make",
+        "v",
+        "faire"
+       ],
+       "lemon": [
+        "au citron",
+        "lemon",
+        "n"
+       ],
+       "chocolate": [
+        "au chocolat",
+        "chocolate",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "It is Friday.",
+      "fr": "C’est vendredi.",
+      "g": {}
+     },
+     {
+      "en": "Amira goes to number eleven.",
+      "fr": "Amira va au numéro onze.",
+      "g": {
+       "goes": [
+        "va",
+        "go",
+        "v",
+        "aller"
+       ]
+      }
+     },
+     {
+      "en": "A new neighbour lives there.",
+      "fr": "Un nouveau voisin y habite.",
+      "g": {
+       "new": [
+        "nouveau",
+        "new",
+        "a"
+       ],
+       "neighbour": [
+        "voisin",
+        "neighbour",
+        "n"
+       ],
+       "lives": [
+        "habite",
+        "live",
+        "v",
+        "habiter"
+       ],
+       "there": [
+        "y",
+        "there",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "His name is Karim.",
+      "fr": "Il s’appelle Karim.",
+      "g": {
+       "name": [
+        "s'appelle (name is : s'appelle)",
+        "name",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He is Moroccan.",
+      "fr": "Il est marocain.",
+      "g": {
+       "moroccan": [
+        "marocain",
+        "Moroccan",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "There are boxes in his garden.",
+      "fr": "Il y a des cartons dans son jardin.",
+      "g": {
+       "boxes": [
+        "cartons",
+        "box",
+        "n",
+        "carton"
+       ]
+      }
+     },
+     {
+      "en": "“Hello, Karim! Can you come to my party?”",
+      "fr": "« Bonjour, Karim ! Peux-tu venir à ma fête ? »",
+      "g": {
+       "come": [
+        "venir",
+        "come",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "“I can cook couscous,” says Karim.",
+      "fr": "« Je peux préparer du couscous », dit Karim.",
+      "g": {
+       "cook": [
+        "préparer",
+        "cook",
+        "v",
+        "cuisiner"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“And I can play the oud.”",
+      "fr": "« Et je peux jouer du oud. »",
+      "g": {
+       "play": [
+        "jouer",
+        "play",
+        "v",
+        "jouer"
+       ]
+      }
+     },
+     {
+      "en": "Five doors are open, and five dishes are ready!",
+      "fr": "Cinq portes sont ouvertes, et cinq plats sont prêts !",
+      "g": {
+       "open": [
+        "ouvertes",
+        "open",
+        "a"
+       ],
+       "ready": [
+        "prêts",
+        "ready",
+        "a"
+       ]
+      }
+     }
+    ]
+   ]
+  }
+ ]
+}

@@ -51,7 +51,7 @@
       "fr": "À Paris, peu après la tombée de la nuit, par un soir d'automne venteux de l'année 18—, je goûtais le double luxe de la méditation et d'une pipe d'écume, en compagnie de mon ami C. Auguste Dupin, dans sa petite bibliothèque de derrière, ou cabinet à livres, au troisième étage, 33, rue Dunot, faubourg Saint-Germain.",
       "g": {
        "dark": [
-        "nuit tombée",
+        "tombée de la nuit (after dark)",
         "dark",
         "n"
        ],
@@ -161,12 +161,27 @@
         "Germain",
         "Germain",
         "np"
+       ],
+       "back": [
+        "de derrière",
+        "back",
+        "a"
+       ],
+       "just": [
+        "peu après (just after)",
+        "just",
+        "d"
+       ],
+       "no": [
+        "n° (numéro)",
+        "no",
+        "n"
        ]
       }
      },
      {
       "en": "For one hour at least we had maintained a profound silence; while each, to any casual observer, might have seemed intently and exclusively occupied with the curling eddies of smoke that oppressed the atmosphere of the chamber.",
-      "fr": "Pendant une heure au moins nous avions gardé un profond silence ; chacun de nous, aux yeux de n'importe quel observateur fortuit, aurait pu sembler absorbé, tout entier, par les volutes de fumée qui alourdissaient l'atmosphère de la pièce.",
+      "fr": "Pendant une heure au moins nous avions gardé un profond silence ; chacun de nous, aux yeux de n'importe quel observateur fortuit, aurait pu sembler attentivement et exclusivement occupé par les tourbillons de fumée en spirales qui alourdissaient l'atmosphère de la pièce.",
       "g": {
        "hour": [
         "heure",
@@ -200,13 +215,13 @@
         "n"
        ],
        "seemed": [
-        "aurait semblé",
+        "sembler",
         "seem",
         "v",
         "sembler"
        ],
        "intently": [
-        "avec attention",
+        "attentivement",
         "intently",
         "d"
        ],
@@ -216,12 +231,12 @@
         "d"
        ],
        "occupied": [
-        "occupé, absorbé",
+        "occupé",
         "occupied",
         "a"
        ],
        "curling": [
-        "qui s'enroulent",
+        "en spirales",
         "curl",
         "v",
         "s'enrouler"
@@ -257,7 +272,7 @@
      },
      {
       "en": "For myself, however, I was mentally discussing certain topics which had formed matter for conversation between us at an earlier period of the evening; I mean the affair of the Rue Morgue, and the mystery attending the murder of Marie Roget.",
-      "fr": "Pour ma part, cependant, je m'entretenais en esprit de certains sujets dont nous avions parlé plus tôt dans la soirée ; je veux dire l'affaire de la rue Morgue et le mystère qui entoure le meurtre de Marie Roget.",
+      "fr": "Pour ma part, cependant, je m'entretenais en esprit de certains sujets qui avaient fourni matière à conversation entre nous plus tôt dans la soirée ; je veux dire l'affaire de la rue Morgue et le mystère qui entoure le meurtre de Marie Roget.",
       "g": {
        "mentally": [
         "en esprit",
@@ -265,7 +280,7 @@
         "d"
        ],
        "discussing": [
-        "discutant",
+        "m'entretenais de",
         "discuss",
         "v",
         "discuter"
@@ -283,7 +298,7 @@
         "sujet"
        ],
        "formed": [
-        "avaient formé",
+        "avaient fourni",
         "form",
         "v",
         "former, constituer"
@@ -341,7 +356,7 @@
         "n"
        ],
        "attending": [
-        "accompagnant, entourant",
+        "entoure",
         "attend",
         "v",
         "accompagner"
@@ -365,10 +380,10 @@
      },
      {
       "en": "I looked upon it, therefore, as something of a coincidence, when the door of our apartment was thrown open and admitted our old acquaintance, Monsieur G — , the Prefect of the Parisian police.",
-      "fr": "Je trouvai donc que c'était un peu une coïncidence lorsque la porte de notre appartement s'ouvrit brusquement pour laisser entrer notre vieille connaissance, Monsieur G—, le préfet de la police parisienne.",
+      "fr": "J'y vis donc quelque chose comme une coïncidence lorsque la porte de notre appartement s'ouvrit brusquement et laissa entrer notre vieille connaissance, Monsieur G—, le préfet de la police parisienne.",
       "g": {
        "looked": [
-        "regardai, considérai",
+        "vis (looked upon as)",
         "look",
         "v",
         "regarder"
@@ -389,13 +404,13 @@
         "n"
        ],
        "thrown": [
-        "jetée",
+        "s'ouvrit brusquement (thrown open)",
         "throw",
         "v",
         "jeter"
        ],
        "open": [
-        "grande ouverte",
+        "(thrown open : s'ouvrit brusquement)",
         "open",
         "a",
         "ouvert"
@@ -432,6 +447,16 @@
         "police",
         "police",
         "n"
+       ],
+       "upon": [
+        "(looked upon as : vis comme)",
+        "upon",
+        "r"
+       ],
+       "as": [
+        "(looked upon as : vis comme)",
+        "as",
+        "r"
        ]
       }
      }
@@ -439,10 +464,10 @@
     [
      {
       "en": "We gave him a hearty welcome; for there was nearly half as much of the entertaining as of the contemptible about the man, and we had not seen him for several years.",
-      "fr": "Nous lui fîmes un accueil chaleureux, car il y avait chez cet homme presque autant de plaisant que de méprisable, et nous ne l'avions pas vu depuis plusieurs années.",
+      "fr": "Nous lui fîmes un accueil chaleureux, car il y avait chez cet homme presque moitié moins de plaisant que de méprisable, et nous ne l'avions pas vu depuis plusieurs années.",
       "g": {
        "gave": [
-        "fîmes (donnâmes)",
+        "fîmes",
         "give",
         "v",
         "donner"
@@ -463,12 +488,12 @@
         "d"
        ],
        "half": [
-        "moitié",
+        "moitié (half as much : moitié moins)",
         "half",
         "n"
        ],
        "entertaining": [
-        "divertissant, plaisant",
+        "plaisant",
         "entertaining",
         "a"
        ],
@@ -518,7 +543,7 @@
         "se lever"
        ],
        "purpose": [
-        "dessein, but",
+        "but (for the purpose of : pour)",
         "purpose",
         "n"
        ],
@@ -540,18 +565,18 @@
         "s'asseoir"
        ],
        "g.'s": [
-        "de G. (dire)",
+        "G.",
         "G",
         "np"
        ],
        "saying": [
-        "disant",
+        "dit",
         "say",
         "v",
         "dire"
        ],
        "called": [
-        "était passé",
+        "était venu",
         "call",
         "v",
         "appeler, passer voir"
@@ -607,6 +632,32 @@
         "tracas",
         "trouble",
         "n"
+       ],
+       "down": [
+        "(sat down again : se rassit)",
+        "down",
+        "d"
+       ],
+       "again": [
+        "(sat down again : se rassit)",
+        "again",
+        "d"
+       ],
+       "doing": [
+        "l'avoir fait (doing so)",
+        "do",
+        "v",
+        "faire"
+       ],
+       "so": [
+        "(doing so : l'avoir fait)",
+        "so",
+        "p"
+       ],
+       "upon": [
+        "quand (upon G.'s saying : quand G. dit)",
+        "upon",
+        "r"
        ]
       }
      }
@@ -622,10 +673,10 @@
         "n"
        ],
        "requiring": [
-        "exigeant",
+        "qui demande",
         "require",
         "v",
-        "exiger"
+        "exiger, demander"
        ],
        "reflection": [
         "réflexion",
@@ -661,18 +712,18 @@
         "examiner"
        ],
        "better": [
-        "meilleur",
+        "mieux (to better purpose)",
         "better",
         "a",
         "bon"
        ],
        "purpose": [
-        "profit, résultat",
+        "(to better purpose : mieux)",
         "purpose",
         "n"
        ],
        "dark": [
-        "obscurité",
+        "noir",
         "dark",
         "n"
        ]
@@ -703,15 +754,15 @@
         "dire"
        ],
        "fashion": [
-        "habitude",
+        "coutume",
         "fashion",
         "n"
        ],
        "calling": [
-        "appelant, qualifiant de",
+        "qualifier de",
         "call",
         "v",
-        "appeler"
+        "appeler, qualifier"
        ],
        "thing": [
         "chose",
@@ -754,6 +805,11 @@
         "oddity",
         "n",
         "bizarrerie"
+       ],
+       "beyond": [
+        "dépassait (beyond his comprehension)",
+        "beyond",
+        "r"
        ]
       }
      }
@@ -835,7 +891,7 @@
      },
      {
       "en": "“Nothing more in the assassination way, I hope?”",
-      "fr": "« Rien de plus du côté des assassinats, j'espère ? »",
+      "fr": "« Rien de plus dans le genre assassinat, j'espère ? »",
       "g": {
        "assassination": [
         "assassinat",
@@ -843,7 +899,7 @@
         "n"
        ],
        "way": [
-        "côté, genre",
+        "genre (in the … way : dans le genre)",
         "way",
         "n"
        ],
@@ -870,7 +926,7 @@
      },
      {
       "en": "The fact is, the business is very simple indeed, and I make no doubt that we can manage it sufficiently well ourselves; but then I thought Dupin would like to hear the details of it, because it is so excessively odd.”",
-      "fr": "Le fait est que l'affaire est tout à fait simple, et je ne doute pas que nous puissions fort bien nous en tirer nous-mêmes ; mais j'ai pensé que Dupin aimerait en connaître les détails, parce qu'elle est excessivement bizarre. »",
+      "fr": "Le fait est que l'affaire est en vérité fort simple, et je ne doute pas que nous puissions nous en tirer suffisamment bien nous-mêmes ; mais j'ai pensé que Dupin aimerait en entendre les détails, parce qu'elle est si excessivement bizarre. »",
       "g": {
        "fact": [
         "fait",
@@ -909,7 +965,7 @@
         "d"
        ],
        "thought": [
-        "pensai",
+        "ai pensé",
         "think",
         "v",
         "penser"
@@ -934,6 +990,27 @@
         "bizarre",
         "odd",
         "a"
+       ],
+       "indeed": [
+        "en vérité",
+        "indeed",
+        "d"
+       ],
+       "like": [
+        "aimerait",
+        "like",
+        "v",
+        "aimer"
+       ],
+       "so": [
+        "si",
+        "so",
+        "d"
+       ],
+       "no": [
+        "(make no doubt : ne doute pas)",
+        "no",
+        "t"
        ]
       }
      }
@@ -1134,7 +1211,7 @@
     [
      {
       "en": "“Oh, good heavens! who ever heard of such an idea?”",
-      "fr": "« Oh, bonté divine ! qui a jamais entendu pareille idée ? »",
+      "fr": "« Oh, bonté divine ! qui a jamais entendu parler d'une telle idée ? »",
       "g": {
        "good": [
         "bonté (good heavens)",
@@ -1148,7 +1225,7 @@
         "ciel"
        ],
        "heard": [
-        "entendu",
+        "entendu parler de",
         "hear",
         "v",
         "entendre"
@@ -1182,7 +1259,7 @@
     [
      {
       "en": "“Ha! ha! ha — ha! ha! ha! — ho! ho! ho!” roared our visiter, profoundly amused, “oh, Dupin, you will be the death of me yet!”",
-      "fr": "« Ha ! ha ! ha — ha ! ha ! ha ! — ho ! ho ! ho ! » rugit notre visiteur, profondément amusé, « oh, Dupin, vous aurez ma mort un de ces jours ! »",
+      "fr": "« Ha ! ha ! ha — ha ! ha ! ha ! — ho ! ho ! ho ! » rugit notre visiteur, profondément amusé, « oh, Dupin, vous serez ma mort un de ces jours ! »",
       "g": {
        "ha": [
         "ha",
@@ -1251,9 +1328,14 @@
         "a"
        ],
        "death": [
-        "mort",
+        "mort (be the death of : être la mort de)",
         "death",
         "n"
+       ],
+       "yet": [
+        "un de ces jours (yet)",
+        "yet",
+        "d"
        ]
       }
      }
@@ -1261,17 +1343,22 @@
     [
      {
       "en": "“And what, after all, is the matter on hand?”",
-      "fr": "« Et de quoi s'agit-il, après tout ? »",
+      "fr": "« Et quelle est, après tout, l'affaire qui nous occupe ? »",
       "g": {
        "matter": [
-        "affaire, sujet",
+        "affaire",
         "matter",
         "n"
        ],
        "hand": [
-        "en cours (on hand)",
+        "(on hand : qui nous occupe)",
         "hand",
         "n"
+       ],
+       "on": [
+        "(on hand : qui nous occupe)",
+        "on",
+        "r"
        ]
       }
      },
@@ -1305,7 +1392,7 @@
         "répondre"
        ],
        "gave": [
-        "tira, donna",
+        "tira (gave a puff)",
         "give",
         "v",
         "donner"
@@ -1346,7 +1433,7 @@
      },
      {
       "en": "“I will tell you in a few words; but, before I begin, let me caution you that this is an affair demanding the greatest secrecy, and that I should most probably lose the position I now hold, were it known that I confided it to any one.”",
-      "fr": "« Je vous le dirai en peu de mots ; mais, avant de commencer, permettez-moi de vous avertir que c'est une affaire qui exige le plus grand secret, et que je perdrais très probablement la place que j'occupe si l'on savait que je l'ai confiée à quiconque. »",
+      "fr": "« Je vous le dirai en quelques mots ; mais, avant de commencer, permettez-moi de vous avertir que c'est une affaire qui exige le plus grand secret, et que je perdrais très probablement la place que j'occupe si l'on savait que je l'ai confiée à quiconque. »",
       "g": {
        "tell": [
         "dirai",
@@ -1405,12 +1492,12 @@
         "d"
        ],
        "lose": [
-        "perdre",
+        "perdrais",
         "lose",
         "v"
        ],
        "position": [
-        "poste, place",
+        "place",
         "position",
         "n"
        ],
@@ -1427,10 +1514,15 @@
         "savoir"
        ],
        "confided": [
-        "confié",
+        "ai confiée",
         "confide",
         "v",
         "confier"
+       ],
+       "few": [
+        "quelques (a few words : quelques mots)",
+        "few",
+        "t"
        ]
       }
      }
@@ -1458,7 +1550,7 @@
     [
      {
       "en": "“Or not,” said Dupin.",
-      "fr": "« Ou pas », dit Dupin.",
+      "fr": "« Ou non », dit Dupin.",
       "g": {
        "said": [
         "dit",
@@ -1496,7 +1588,7 @@
         "a"
        ],
        "quarter": [
-        "lieu, milieu",
+        "lieu (de très haut lieu)",
         "quarter",
         "n"
        ],
@@ -1532,6 +1624,11 @@
         "apartment",
         "n",
         "appartement"
+       ],
+       "last": [
+        "plus haute (of the last importance)",
+        "last",
+        "a"
        ]
       }
      },
@@ -1571,6 +1668,11 @@
         "prendre",
         "take",
         "v"
+       ],
+       "beyond": [
+        "hors de (beyond a doubt)",
+        "beyond",
+        "r"
        ]
       }
      },
@@ -1621,7 +1723,7 @@
     [
      {
       "en": "“It is clearly inferred,” replied the Prefect, “from the nature of the document, and from the non-appearance of certain results which would at once arise from its passing out of the robber’s possession; that is to say, from his employing it as he must design in the end to employ it.”",
-      "fr": "« On l'infère clairement, répondit le préfet, de la nature du document, et de l'absence de certains effets qui se produiraient aussitôt s'il sortait des mains du voleur ; c'est-à-dire de ce qu'il ne l'emploie pas comme il doit se proposer, en fin de compte, de l'employer. »",
+      "fr": "« On le déduit clairement, répondit le préfet, de la nature du document, et de l'absence de certains effets qui se produiraient aussitôt s'il sortait des mains du voleur ; c'est-à-dire de ce qu'il l'emploie comme il doit se proposer, en fin de compte, de l'employer. »",
       "g": {
        "clearly": [
         "clairement",
@@ -1651,7 +1753,7 @@
         "n"
        ],
        "non-appearance": [
-        "absence (de manifestation)",
+        "absence",
         "non-appearance",
         "n"
        ],
@@ -1674,7 +1776,7 @@
         "surgir, se produire"
        ],
        "passing": [
-        "passage",
+        "sortait",
         "pass",
         "v",
         "passer"
@@ -1686,7 +1788,7 @@
         "voleur"
        ],
        "possession": [
-        "possession",
+        "mains (possession)",
         "possession",
         "n"
        ],
@@ -1702,13 +1804,13 @@
         "employer"
        ],
        "design": [
-        "se propose",
+        "se propose de",
         "design",
         "v",
         "projeter"
        ],
        "end": [
-        "fin",
+        "(in the end : en fin de compte)",
         "end",
         "n"
        ],
@@ -1716,6 +1818,16 @@
         "employer",
         "employ",
         "v"
+       ],
+       "out": [
+        "(passing out of : sortait de)",
+        "out",
+        "d"
+       ],
+       "in": [
+        "(in the end : en fin de compte)",
+        "in",
+        "r"
        ]
       }
      }
@@ -1747,7 +1859,7 @@
     [
      {
       "en": "“Well, I may venture so far as to say that the paper gives its holder a certain power in a certain quarter where such power is immensely valuable.”",
-      "fr": "« Eh bien, je puis me risquer jusqu'à dire que ce papier confère à celui qui le détient un certain pouvoir, en un certain lieu où un tel pouvoir est immensément précieux. »",
+      "fr": "« Eh bien, je puis me risquer jusqu'à dire que ce papier confère à celui qui le détient un certain pouvoir, dans un certain milieu où un tel pouvoir est immensément précieux. »",
       "g": {
        "venture": [
         "me risquer",
@@ -1755,7 +1867,7 @@
         "v"
        ],
        "far": [
-        "jusque-là",
+        "jusqu'à (so far as to)",
         "far",
         "d"
        ],
@@ -1796,7 +1908,7 @@
         "a"
        ],
        "quarter": [
-        "milieu, lieu",
+        "milieu",
         "quarter",
         "n"
        ],
@@ -1871,7 +1983,7 @@
      },
      {
       "en": "Well; the disclosure of the document to a third person, who shall be nameless, would bring in question the honor of a personage of most exalted station; and this fact gives the holder of the document an ascendancy over the illustrious personage whose honor and peace are so jeopardized.”",
-      "fr": "Bon ; la divulgation du document à un tiers, que je ne nommerai pas, mettrait en cause l'honneur d'un personnage du rang le plus élevé ; et ce fait donne à celui qui détient le document un ascendant sur l'illustre personnage dont l'honneur et la paix sont ainsi compromis. »",
+      "fr": "Eh bien ; la divulgation du document à un tiers, que je ne nommerai pas, mettrait en cause l'honneur d'un personnage du rang le plus élevé ; et ce fait donne à celui qui détient le document un ascendant sur l'illustre personnage dont l'honneur et la paix sont ainsi compromis. »",
       "g": {
        "disclosure": [
         "divulgation",
@@ -1884,12 +1996,12 @@
         "n"
        ],
        "person": [
-        "personne",
+        "(third person : tiers)",
         "person",
         "n"
        ],
        "nameless": [
-        "que l'on ne nommera pas",
+        "que je ne nommerai pas",
         "nameless",
         "a"
        ],
@@ -1971,10 +2083,15 @@
         "n"
        ],
        "jeopardized": [
-        "compromis, mis en péril",
+        "compromis",
         "jeopardize",
         "v",
         "compromettre"
+       ],
+       "third": [
+        "tiers (third person)",
+        "third",
+        "a"
        ]
       }
      }
@@ -1990,7 +2107,7 @@
         "n"
        ],
        "interposed": [
-        "interposai, glissai",
+        "interposai",
         "interpose",
         "v",
         "interposer"
@@ -2013,10 +2130,10 @@
         "n"
        ],
        "loser's": [
-        "de la personne lésée",
+        "du volé",
         "loser",
         "n",
-        "perdant, lésé"
+        "perdant, volé"
        ],
        "knowledge#2": [
         "connaissance",
@@ -2066,18 +2183,18 @@
         "oser"
        ],
        "things": [
-        "choses",
+        "tout (all things)",
         "thing",
         "n",
         "chose"
        ],
        "unbecoming": [
-        "indécentes, qui ne conviennent pas",
+        "qui ne sied pas",
         "unbecoming",
         "a"
        ],
        "becoming": [
-        "convenables, qui conviennent",
+        "qui sied à",
         "becoming",
         "a"
        ],
@@ -2116,7 +2233,7 @@
      },
      {
       "en": "The document in question — a letter, to be frank — had been received by the personage robbed while alone in the royal boudoir.",
-      "fr": "Le document en question — une lettre, pour parler franchement — avait été reçu par le personnage volé alors qu'il se trouvait seul dans le boudoir royal.",
+      "fr": "Le document en question — une lettre, pour parler franchement — avait été reçu par le personnage volé, alors seule dans le boudoir royal.",
       "g": {
        "document": [
         "document",
@@ -2151,7 +2268,7 @@
         "voler"
        ],
        "alone": [
-        "seul",
+        "seule",
         "alone",
         "a"
        ],
@@ -2169,10 +2286,10 @@
      },
      {
       "en": "During its perusal she was suddenly interrupted by the entrance of the other exalted personage from whom especially it was her wish to conceal it.",
-      "fr": "Pendant qu'elle la lisait, elle fut soudain interrompue par l'entrée de l'autre haut personnage, celui à qui elle tenait tout particulièrement à la cacher.",
+      "fr": "Pendant cette lecture, elle fut soudain interrompue par l'entrée de l'autre haut personnage, celui à qui elle tenait tout particulièrement à la cacher.",
       "g": {
        "perusal": [
-        "lecture attentive",
+        "lecture",
         "perusal",
         "n"
        ],
@@ -2193,7 +2310,7 @@
         "n"
        ],
        "exalted": [
-        "haut placé",
+        "haut",
         "exalted",
         "a"
        ],
@@ -2208,7 +2325,7 @@
         "d"
        ],
        "wish": [
-        "désir",
+        "(it was her wish : elle tenait à)",
         "wish",
         "n"
        ],
@@ -2249,7 +2366,7 @@
         "n"
        ],
        "forced": [
-        "contrainte",
+        "fut contrainte",
         "force",
         "v",
         "forcer, contraindre"
@@ -2260,7 +2377,7 @@
         "v"
        ],
        "open": [
-        "ouverte, dépliée",
+        "dépliée",
         "open",
         "a",
         "ouvert"
@@ -2282,7 +2399,7 @@
         "n"
        ],
        "uppermost": [
-        "au-dessus",
+        "en dessus",
         "uppermost",
         "a"
        ],
@@ -2293,18 +2410,18 @@
         "contenu"
        ],
        "unexposed": [
-        "non exposé, caché",
+        "caché",
         "unexposed",
         "a"
        ],
        "escaped": [
-        "échappa à",
+        "passa inaperçue (escaped notice)",
         "escape",
         "v",
         "échapper"
        ],
        "notice": [
-        "attention, regard",
+        "(escaped notice : passa inaperçue)",
         "notice",
         "n"
        ]
@@ -2413,12 +2530,12 @@
       "fr": "Après quelques affaires courantes, expédiées à sa manière ordinaire, il sort une lettre assez semblable à celle dont il s'agit, l'ouvre, fait semblant de la lire, puis la place tout contre l'autre.",
       "g": {
        "business": [
-        "affaires",
+        "affaires courantes (business transactions)",
         "business",
         "n"
        ],
        "transactions": [
-        "échanges, transactions",
+        "(business transactions : affaires courantes)",
         "transaction",
         "n"
        ],
@@ -2482,12 +2599,12 @@
         "placer"
        ],
        "close": [
-        "tout contre",
+        "tout contre (in close juxtaposition)",
         "close",
         "a"
        ],
        "juxtaposition": [
-        "juxtaposition",
+        "(in close juxtaposition : tout contre)",
         "juxtaposition",
         "n"
        ]
@@ -2567,7 +2684,7 @@
      },
      {
       "en": "Its rightful owner saw, but, of course, dared not call attention to the act, in the presence of the third personage who stood at her elbow.",
-      "fr": "Sa légitime propriétaire le vit, mais, naturellement, n'osa pas attirer l'attention sur cet acte en présence du troisième personnage, qui se tenait à son coude.",
+      "fr": "Sa légitime propriétaire le vit, mais, naturellement, n'osa pas attirer l'attention sur cet acte en présence du troisième personnage, qui se tenait à ses côtés.",
       "g": {
        "rightful": [
         "légitime",
@@ -2597,13 +2714,13 @@
         "oser"
        ],
        "call": [
-        "attirer",
+        "attirer (call attention to)",
         "call",
         "v",
         "appeler"
        ],
        "attention": [
-        "attention",
+        "(call attention : attirer l'attention)",
         "attention",
         "n"
        ],
@@ -2629,7 +2746,7 @@
         "se tenir"
        ],
        "elbow": [
-        "coude",
+        "(at her elbow : à ses côtés)",
         "elbow",
         "n"
        ]
@@ -2671,7 +2788,7 @@
     [
      {
       "en": "“Here, then,” said Dupin to me, “you have precisely what you demand to make the ascendancy complete — the robber’s knowledge of the loser’s knowledge of the robber.”",
-      "fr": "« Voilà donc, me dit Dupin, exactement ce qu'il vous faut pour que l'ascendant soit complet : la connaissance qu'a le voleur de la connaissance qu'a le volé du voleur. »",
+      "fr": "« Voilà donc, me dit Dupin, précisément ce que vous exigez pour rendre l'ascendant complet : la connaissance qu'a le voleur de la connaissance qu'a le volé du voleur. »",
       "g": {
        "said": [
         "dit",
@@ -2685,7 +2802,7 @@
         "d"
        ],
        "demand": [
-        "exigez, demandez",
+        "exigez",
         "demand",
         "v",
         "exiger"
@@ -2718,10 +2835,10 @@
         "n"
        ],
        "loser's": [
-        "de la personne lésée",
+        "du volé",
         "loser",
         "n",
-        "perdant"
+        "perdant, volé"
        ],
        "knowledge#2": [
         "connaissance",
@@ -2743,7 +2860,7 @@
     [
      {
       "en": "“Yes,” replied the Prefect; “and the power thus attained has, for some months past, been wielded, for political purposes, to a very dangerous extent.",
-      "fr": "« Oui, répondit le préfet ; et le pouvoir ainsi acquis a été exercé, depuis quelques mois, à des fins politiques, avec une hardiesse fort dangereuse.",
+      "fr": "« Oui, répondit le préfet ; et le pouvoir ainsi acquis a été exercé, depuis quelques mois, à des fins politiques, jusqu'à un point très dangereux.",
       "g": {
        "replied": [
         "répondit",
@@ -2769,15 +2886,15 @@
         "mois"
        ],
        "past": [
-        "passés, derniers",
+        "(months past : depuis)",
         "past",
         "a"
        ],
        "wielded": [
-        "exercé, brandi",
+        "exercé",
         "wield",
         "v",
-        "manier"
+        "manier, exercer"
        ],
        "political": [
         "politiques",
@@ -2797,7 +2914,7 @@
         "a"
        ],
        "extent": [
-        "mesure, degré",
+        "point (to an extent : jusqu'à un point)",
         "extent",
         "n"
        ]
@@ -2805,7 +2922,7 @@
      },
      {
       "en": "The personage robbed is more thoroughly convinced, every day, of the necessity of reclaiming her letter.",
-      "fr": "Le personnage volé se persuade plus profondément chaque jour de la nécessité de reprendre sa lettre.",
+      "fr": "Chaque jour, le personnage volé est plus profondément convaincu de la nécessité de reprendre sa lettre.",
       "g": {
        "personage": [
         "personnage",
@@ -2824,7 +2941,7 @@
         "d"
        ],
        "convinced": [
-        "persuadé",
+        "convaincu",
         "convinced",
         "a"
        ],
@@ -2839,7 +2956,7 @@
         "n"
        ],
        "reclaiming": [
-        "récupérer, réclamer",
+        "reprendre",
         "reclaim",
         "v"
        ]
@@ -2898,7 +3015,7 @@
     [
      {
       "en": "“Than whom,” said Dupin, amid a perfect whirlwind of smoke, “no more sagacious agent could, I suppose, be desired, or even imagined.”",
-      "fr": "« Nul, dit Dupin au milieu d'un véritable tourbillon de fumée, nul agent plus sagace ne pourrait, je suppose, être désiré, ni même imaginé. »",
+      "fr": "« Nul agent plus sagace que vous, dit Dupin au milieu d'un véritable tourbillon de fumée, ne saurait, je suppose, être désiré, ni même imaginé. »",
       "g": {
        "said": [
         "dit",
@@ -2953,6 +3070,22 @@
         "imagine",
         "v",
         "imaginer"
+       ],
+       "than": [
+        "que vous (than whom)",
+        "than",
+        "r"
+       ],
+       "whom": [
+        "(than whom : que vous)",
+        "who",
+        "p"
+       ],
+       "could": [
+        "saurait",
+        "can",
+        "v",
+        "pouvoir"
        ]
       }
      }
@@ -2960,7 +3093,7 @@
     [
      {
       "en": "“You flatter me,” replied the Prefect; “but it is possible that some such opinion may have been entertained.”",
-      "fr": "« Vous me flattez, répondit le préfet ; mais il est possible qu'on ait eu quelque opinion de cette sorte. »",
+      "fr": "« Vous me flattez, répondit le préfet ; mais il est possible qu'on ait nourri quelque opinion de cette sorte. »",
       "g": {
        "flatter": [
         "flattez",
@@ -2985,7 +3118,7 @@
         "n"
        ],
        "entertained": [
-        "nourrie, eue",
+        "nourri",
         "entertain",
         "v",
         "nourrir, avoir"
@@ -3105,17 +3238,17 @@
         "n"
        ],
        "make": [
-        "faire",
+        "fouiller (make a search)",
         "make",
         "v"
        ],
        "thorough": [
-        "minutieuse",
+        "à fond",
         "thorough",
         "a"
        ],
        "search": [
-        "fouille",
+        "(make a search : fouiller)",
         "search",
         "n"
        ],
@@ -3152,12 +3285,13 @@
         "n"
        ],
        "searching": [
-        "chercher, fouiller",
+        "chercher",
         "search",
-        "v"
+        "v",
+        "chercher, fouiller"
        ],
        "knowledge": [
-        "su",
+        "insu (without his knowledge : à son insu)",
         "knowledge",
         "n"
        ]
@@ -3165,7 +3299,7 @@
      },
      {
       "en": "Beyond all things, I have been warned of the danger which would result from giving him reason to suspect our design.”",
-      "fr": "Par-dessus tout, on m'a averti du danger qui résulterait du fait de lui donner une raison de soupçonner notre dessein. »",
+      "fr": "Par-dessus tout, j'ai été averti du danger qui résulterait du fait de lui donner une raison de soupçonner notre dessein. »",
       "g": {
        "things": [
         "(beyond all things : par-dessus tout)",
@@ -3174,7 +3308,7 @@
         "chose"
        ],
        "warned": [
-        "averti",
+        "ai été averti",
         "warn",
         "v",
         "avertir"
@@ -3210,6 +3344,16 @@
         "dessein",
         "design",
         "n"
+       ],
+       "beyond": [
+        "par-dessus (beyond all things)",
+        "beyond",
+        "r"
+       ],
+       "all": [
+        "(beyond all things : par-dessus tout)",
+        "all",
+        "t"
        ]
       }
      }
@@ -3262,6 +3406,11 @@
         "chose",
         "thing",
         "n"
+       ],
+       "before": [
+        "déjà (often before)",
+        "before",
+        "d"
        ]
       }
      }
@@ -3277,7 +3426,7 @@
         "d"
        ],
        "reason": [
-        "raison",
+        "c'est pourquoi (for this reason)",
         "reason",
         "n"
        ],
@@ -3357,12 +3506,22 @@
         "nombreux",
         "numerous",
         "a"
+       ],
+       "by": [
+        "(by no means : nullement)",
+        "by",
+        "r"
+       ],
+       "no": [
+        "(by no means : nullement)",
+        "no",
+        "t"
        ]
       }
      },
      {
       "en": "They sleep at a distance from their master’s apartment, and, being chiefly Neapolitans, are readily made drunk.",
-      "fr": "Ils dorment loin de l'appartement de leur maître et, étant pour la plupart Napolitains, on les enivre aisément.",
+      "fr": "Ils dorment loin de l'appartement de leur maître et, étant pour la plupart Napolitains, sont aisément enivrés.",
       "g": {
        "sleep": [
         "dorment",
@@ -3403,13 +3562,13 @@
         "d"
        ],
        "made": [
-        "rend, rendus",
+        "enivrés (made drunk)",
         "make",
         "v",
         "faire"
        ],
        "drunk": [
-        "ivres",
+        "(made drunk : enivrés)",
         "drunk",
         "a",
         "ivre"
@@ -3443,7 +3602,7 @@
         "n"
        ],
        "cabinet": [
-        "cabinet, meuble",
+        "cabinet",
         "cabinet",
         "n"
        ]
@@ -3451,7 +3610,7 @@
      },
      {
       "en": "For three months a night has not passed, during the greater part of which I have not been engaged, personally, in ransacking the D — Hotel.",
-      "fr": "Depuis trois mois, il ne s'est pas passé une nuit dont je n'aie consacré la plus grande partie, en personne, à fouiller de fond en comble l'hôtel D—.",
+      "fr": "Depuis trois mois, il ne s'est pas passé une nuit dont je n'aie passé la plus grande partie, en personne, occupé à fouiller de fond en comble l'hôtel D—.",
       "g": {
        "months": [
         "mois",
@@ -3465,7 +3624,7 @@
         "n"
        ],
        "passed": [
-        "passé",
+        "s'est passé",
         "pass",
         "v",
         "passer"
@@ -3493,7 +3652,7 @@
         "d"
        ],
        "ransacking": [
-        "fouillant de fond en comble",
+        "fouiller de fond en comble",
         "ransack",
         "v"
        ],
@@ -3519,7 +3678,7 @@
         "a"
        ],
        "mention": [
-        "confier, mentionner",
+        "confier",
         "mention",
         "v"
        ],
@@ -3548,10 +3707,10 @@
      },
      {
       "en": "So I did not abandon the search until I had become fully satisfied that the thief is a more astute man than myself.",
-      "fr": "Aussi n'ai-je renoncé à la recherche que lorsque je me suis pleinement convaincu que le voleur est un homme plus subtil que moi.",
+      "fr": "Aussi n'ai-je renoncé à la recherche que lorsque je fus pleinement convaincu que le voleur est un homme plus subtil que moi.",
       "g": {
        "abandon": [
-        "ai abandonné, renoncé à",
+        "renoncé à",
         "abandon",
         "v",
         "abandonner"
@@ -3562,7 +3721,7 @@
         "n"
        ],
        "become": [
-        "suis devenu",
+        "fus (had become)",
         "become",
         "v",
         "devenir"
@@ -3573,9 +3732,10 @@
         "d"
        ],
        "satisfied": [
-        "convaincu, satisfait",
+        "convaincu",
         "satisfied",
-        "a"
+        "a",
+        "satisfait"
        ],
        "thief": [
         "voleur",
@@ -3596,10 +3756,10 @@
      },
      {
       "en": "I fancy that I have investigated every nook and corner of the premises in which it is possible that the paper can be concealed.”",
-      "fr": "Je crois avoir exploré chaque recoin des lieux où il est possible que le papier soit caché. »",
+      "fr": "Je crois avoir exploré chaque coin et recoin des lieux où il est possible que le papier soit caché. »",
       "g": {
        "fancy": [
-        "crois, m'imagine",
+        "crois",
         "fancy",
         "v"
        ],
@@ -3722,7 +3882,7 @@
      },
      {
       "en": "“The present peculiar condition of affairs at court, and especially of those intrigues in which D — is known to be involved, would render the instant availability of the document — its susceptibility of being produced at a moment’s notice — a point of nearly equal importance with its possession.”",
-      "fr": "L'état actuel, singulier, des affaires de la cour, et surtout de ces intrigues dans lesquelles D— est connu pour être impliqué, rendrait la disponibilité immédiate du document — la possibilité de le produire à la minute — presque aussi importante que sa possession. »",
+      "fr": "L'état actuel, singulier, des affaires de la cour, et surtout de ces intrigues dans lesquelles D— est connu pour être impliqué, rendrait la disponibilité immédiate du document — la possibilité de le produire à la minute — un point d'une importance presque égale à celle de sa possession. »",
       "g": {
        "present": [
         "actuel",
@@ -3847,7 +4007,7 @@
     [
      {
       "en": "“Its susceptibility of being produced?” said I.",
-      "fr": "« La possibilité de le produire ? dis-je.",
+      "fr": "« La possibilité de le produire ? » dis-je.",
       "g": {
        "susceptibility": [
         "possibilité",
@@ -3872,7 +4032,7 @@
     [
      {
       "en": "“That is to say, of being destroyed,” said Dupin.",
-      "fr": "— C'est-à-dire de le détruire », dit Dupin.",
+      "fr": "« C'est-à-dire d'être détruit », dit Dupin.",
       "g": {
        "say": [
         "(that is to say : c'est-à-dire)",
@@ -3929,7 +4089,7 @@
      },
      {
       "en": "As for its being upon the person of the minister, we may consider that as out of the question.”",
-      "fr": "Quant à le supposer sur la personne du ministre, nous pouvons le tenir pour hors de question. »",
+      "fr": "Quant à ce qu'il soit sur la personne du ministre, nous pouvons le tenir pour hors de question. »",
       "g": {
        "person": [
         "personne",
@@ -3970,18 +4130,19 @@
      },
      {
       "en": "“He has been twice waylaid, as if by footpads, and his person rigorously searched under my own inspection.”",
-      "fr": "Il a été attaqué deux fois, comme par des voleurs de grand chemin, et sa personne rigoureusement fouillée sous mes propres yeux. »",
+      "fr": "Il a été attaqué deux fois, comme par des détrousseurs, et sa personne rigoureusement fouillée sous ma propre surveillance. »",
       "g": {
        "waylaid": [
-        "attaqué, guetté",
+        "attaqué",
         "waylay",
         "v",
         "guetter, attaquer"
        ],
        "footpads": [
-        "voleurs de grand chemin",
+        "détrousseurs",
         "footpad",
-        "n"
+        "n",
+        "voleur à pied"
        ],
        "person": [
         "personne",
@@ -4082,7 +4243,7 @@
     [
      {
       "en": "“Not altogether a fool,” said G., “but then he’s a poet, which I take to be only one remove from a fool.”",
-      "fr": "« Pas tout à fait un sot, dit G., mais enfin c'est un poète, ce que je tiens pour un simple cran au-dessus du sot. »",
+      "fr": "« Pas tout à fait un sot, dit G., mais enfin c'est un poète, ce que je tiens pour n'être qu'à un degré du sot. »",
       "g": {
        "altogether": [
         "tout à fait",
@@ -4112,7 +4273,7 @@
         "prendre, tenir pour"
        ],
        "remove": [
-        "cran, degré",
+        "degré (one remove : à un degré de)",
         "remove",
         "n"
        ],
@@ -4178,7 +4339,7 @@
     [
      {
       "en": "“Suppose you detail,” said I, “the particulars of your search.”",
-      "fr": "« Si vous nous exposiez, dis-je, le détail de vos recherches. »",
+      "fr": "« Et si vous exposiez, dis-je, les détails de vos recherches. »",
       "g": {
        "suppose": [
         "et si (suppose you…)",
@@ -4187,7 +4348,7 @@
         "supposer"
        ],
        "detail": [
-        "exposiez en détail",
+        "exposiez",
         "detail",
         "v",
         "détailler"
@@ -4243,6 +4404,16 @@
         "search",
         "v",
         "fouiller"
+       ],
+       "every": [
+        "partout (every where)",
+        "every",
+        "t"
+       ],
+       "where": [
+        "(every where : partout)",
+        "where",
+        "c"
        ]
       }
      },
@@ -4320,6 +4491,11 @@
         "semaine",
         "week",
         "n"
+       ],
+       "by": [
+        "(room by room : pièce par pièce)",
+        "by",
+        "r"
        ]
       }
      },
@@ -4339,7 +4515,7 @@
         "n"
        ],
        "apartment": [
-        "pièce, appartement",
+        "pièce",
         "apartment",
         "n"
        ]
@@ -4485,7 +4661,7 @@
      },
      {
       "en": "There is a certain amount of bulk — of space — to be accounted for in every cabinet.",
-      "fr": "Il y a, dans chaque meuble, une certaine masse, un certain espace dont il faut rendre compte.",
+      "fr": "Il y a, dans chaque meuble, un certain volume — un certain espace — dont il faut rendre compte.",
       "g": {
        "certain": [
         "certaine",
@@ -4494,7 +4670,7 @@
         "certain"
        ],
        "amount": [
-        "quantité",
+        "quantité (a certain amount of : un certain)",
         "amount",
         "n"
        ],
@@ -4523,7 +4699,7 @@
      },
      {
       "en": "Then we have accurate rules.",
-      "fr": "Ensuite nous avons des règles précises.",
+      "fr": "Or, nous avons des règles précises.",
       "g": {
        "accurate": [
         "précises",
@@ -4536,6 +4712,11 @@
         "rule",
         "n",
         "règle"
+       ],
+       "then": [
+        "or (alors)",
+        "then",
+        "c"
        ]
       }
      },
@@ -4684,23 +4865,23 @@
         "n"
        ],
        "similarly": [
-        "de façon semblable",
+        "semblable (similarly arranged : de construction semblable)",
         "similarly",
         "d"
        ],
        "arranged": [
-        "agencé",
+        "(similarly arranged : de construction semblable)",
         "arrange",
         "v",
         "arranger"
        ],
        "piece": [
-        "pièce, meuble",
+        "meuble (piece of furniture)",
         "piece",
         "n"
        ],
        "furniture": [
-        "mobilier",
+        "(piece of furniture : meuble)",
         "furniture",
         "n"
        ],
@@ -4716,7 +4897,7 @@
         "n"
        ],
        "wishing": [
-        "désirant",
+        "qui veut",
         "wish",
         "v",
         "désirer"
@@ -4737,7 +4918,7 @@
         "n"
        ],
        "excavated": [
-        "creusé",
+        "creuse",
         "excavate",
         "v",
         "creuser"
@@ -4748,7 +4929,7 @@
         "n"
        ],
        "deposited": [
-        "déposé",
+        "dépose",
         "deposit",
         "v",
         "déposer"
@@ -4764,7 +4945,7 @@
         "n"
        ],
        "replaced": [
-        "remis",
+        "remet",
         "replace",
         "v",
         "remettre"
@@ -4829,7 +5010,7 @@
         "déceler"
        ],
        "sounding": [
-        "sondant, en frappant",
+        "en sondant",
         "sound",
         "v",
         "sonder"
@@ -4944,13 +5125,13 @@
         "pièce"
        ],
        "articles": [
-        "objets",
+        "meubles (articles of furniture)",
         "article",
         "n",
         "objet"
        ],
        "furniture": [
-        "mobilier",
+        "(articles of furniture : meubles)",
         "furniture",
         "n"
        ],
@@ -4975,7 +5156,7 @@
         "n"
        ],
        "mention": [
-        "dites, mentionnez",
+        "dites",
         "mention",
         "v"
        ]
@@ -4983,10 +5164,10 @@
      },
      {
       "en": "A letter may be compressed into a thin spiral roll, not differing much in shape or bulk from a large knitting-needle, and in this form it might be inserted into the rung of a chair, for example.",
-      "fr": "Une lettre peut se rouler en une mince spirale, guère différente par la forme ou le volume d'une grosse aiguille à tricoter, et sous cette forme elle pourrait s'insérer, par exemple, dans le barreau d'une chaise.",
+      "fr": "Une lettre peut être comprimée en un mince rouleau spiralé, qui ne diffère guère, par la forme ou le volume, d'une grosse aiguille à tricoter, et sous cette forme elle pourrait être insérée, par exemple, dans le barreau d'une chaise.",
       "g": {
        "compressed": [
-        "roulée serrée",
+        "comprimée",
         "compress",
         "v",
         "comprimer"
@@ -4997,7 +5178,7 @@
         "a"
        ],
        "spiral": [
-        "spirale",
+        "spiralé",
         "spiral",
         "a"
        ],
@@ -5007,7 +5188,7 @@
         "n"
        ],
        "differing": [
-        "différant",
+        "diffère",
         "differ",
         "v",
         "différer"
@@ -5139,12 +5320,12 @@
         "n"
        ],
        "furniture": [
-        "mobilier",
+        "meubles",
         "furniture",
         "n"
        ],
        "aid": [
-        "aide",
+        "aide (by the aid of : à l'aide de)",
         "aid",
         "n"
        ],
@@ -5157,6 +5338,11 @@
         "microscope",
         "microscope",
         "n"
+       ],
+       "indeed": [
+        "à vrai dire",
+        "indeed",
+        "d"
        ]
       }
      },
@@ -5286,7 +5472,7 @@
     [
      {
       "en": "“I presume you looked to the mirrors, between the boards and the plates, and you probed the beds and the bed-clothes, as well as the curtains and carpets.”",
-      "fr": "« Je présume que vous avez regardé aux miroirs, entre le bois et la glace, et sondé les lits et la literie, aussi bien que les rideaux et les tapis. »",
+      "fr": "« Je présume que vous avez examiné les miroirs, entre le bois et la glace, et que vous avez sondé les lits et la literie, aussi bien que les rideaux et les tapis. »",
       "g": {
        "presume": [
         "présume",
@@ -5295,7 +5481,7 @@
         "présumer"
        ],
        "looked": [
-        "avez regardé",
+        "avez examiné (looked to)",
         "look",
         "v",
         "regarder"
@@ -5307,13 +5493,13 @@
         "miroir"
        ],
        "boards": [
-        "planches, bois",
+        "bois",
         "board",
         "n",
         "planche"
        ],
        "plates": [
-        "glaces",
+        "glace",
         "plate",
         "n",
         "plaque, glace"
@@ -5353,7 +5539,7 @@
     [
      {
       "en": "“That of course; and when we had absolutely completed every particle of the furniture in this way, then we examined the house itself.",
-      "fr": "« Cela va de soi ; et quand nous eûmes absolument achevé chaque parcelle du mobilier de cette manière, nous avons alors examiné la maison elle-même.",
+      "fr": "« Cela va de soi ; et quand nous avions absolument achevé chaque parcelle du mobilier de cette manière, nous avons alors examiné la maison elle-même.",
       "g": {
        "course": [
         "cela va de soi (of course)",
@@ -5366,7 +5552,7 @@
         "d"
        ],
        "completed": [
-        "achevé",
+        "avions achevé",
         "complete",
         "v",
         "achever"
@@ -5401,7 +5587,7 @@
      },
      {
       "en": "We divided its entire surface into compartments, which we numbered, so that none might be missed; then we scrutinized each individual square inch throughout the premises, including the two houses immediately adjoining, with the microscope, as before.”",
-      "fr": "Nous avons divisé toute sa surface en compartiments, que nous avons numérotés pour qu'aucun ne fût oublié ; puis nous avons passé au microscope chaque pouce carré des lieux, y compris les deux maisons immédiatement contiguës, comme précédemment. »",
+      "fr": "Nous avons divisé toute sa surface en compartiments, que nous avons numérotés pour qu'aucun ne fût oublié ; puis nous avons scruté, au microscope, chaque pouce carré des lieux, y compris les deux maisons immédiatement contiguës, comme précédemment. »",
       "g": {
        "divided": [
         "avons divisé",
@@ -5444,7 +5630,7 @@
         "scruter"
        ],
        "individual": [
-        "chaque",
+        "chaque (each individual)",
         "individual",
         "a"
        ],
@@ -5541,7 +5727,7 @@
     [
      {
       "en": "“We had; but the reward offered is prodigious!”",
-      "fr": "« En effet ; mais la récompense offerte est prodigieuse ! »",
+      "fr": "« Nous en avons eu ; mais la récompense offerte est prodigieuse ! »",
       "g": {
        "reward": [
         "récompense",
@@ -5565,7 +5751,7 @@
     [
      {
       "en": "“You include the grounds about the houses?”",
-      "fr": "« Vous avez aussi inclus les terrains autour des maisons ? »",
+      "fr": "« Vous avez inclus les terrains autour des maisons ? »",
       "g": {
        "include": [
         "avez inclus",
@@ -5584,6 +5770,11 @@
         "house",
         "n",
         "maison"
+       ],
+       "about": [
+        "autour de",
+        "about",
+        "r"
        ]
       }
      }
@@ -5754,7 +5945,7 @@
         "n"
        ],
        "turned": [
-        "avons tourné",
+        "avons tourné (turned over)",
         "turn",
         "v",
         "tourner"
@@ -5770,7 +5961,7 @@
         "n"
        ],
        "contenting": [
-        "contentant",
+        "nous contenter",
         "content",
         "v",
         "contenter"
@@ -5786,22 +5977,22 @@
         "n"
        ],
        "according": [
-        "selon (according to)",
+        "à la manière de (according to the fashion of)",
         "according",
         "r"
        ],
        "fashion": [
-        "manière",
+        "(according to the fashion of : à la manière de)",
         "fashion",
         "n"
        ],
        "police": [
-        "police",
+        "(police officers : policiers)",
         "police",
         "n"
        ],
        "officers": [
-        "officiers, agents",
+        "policiers (police officers)",
         "officer",
         "n",
         "officier, agent"
@@ -5845,7 +6036,7 @@
         "appliquer, soumettre"
        ],
        "jealous": [
-        "jaloux, rigoureux",
+        "jaloux",
         "jealous",
         "a"
        ],
@@ -5863,7 +6054,7 @@
      },
      {
       "en": "Had any of the bindings been recently meddled with, it would have been utterly impossible that the fact should have escaped observation.",
-      "fr": "Si l'une des reliures avait été récemment trafiquée, il eût été tout à fait impossible que le fait échappât à l'observation.",
+      "fr": "Si l'une des reliures avait été récemment manipulée, il eût été tout à fait impossible que le fait échappât à l'observation.",
       "g": {
        "bindings": [
         "reliures",
@@ -5877,10 +6068,10 @@
         "d"
        ],
        "meddled": [
-        "trafiquée",
+        "manipulée",
         "meddle",
         "v",
-        "tripoter"
+        "tripoter, se mêler de"
        ],
        "utterly": [
         "tout à fait",
@@ -5952,6 +6143,11 @@
         "needle",
         "n",
         "aiguille"
+       ],
+       "just": [
+        "tout frais (just from)",
+        "just",
+        "d"
        ]
       }
      }
@@ -6035,7 +6231,7 @@
       "fr": "« Et le papier des murs ? »",
       "g": {
        "paper": [
-        "papier peint",
+        "papier",
         "paper",
         "n"
        ],

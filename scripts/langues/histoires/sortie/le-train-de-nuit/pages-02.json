@@ -1502,9 +1502,16 @@
             "fr": "Il fixa l'étui vide et resta longtemps sans rien dire.",
             "g": {
               "time": [
-                "temps",
+                "(a long time : longtemps)",
                 "time",
-                "n"
+                "n",
+                "temps"
+              ],
+              "long": [
+                "longtemps (a long time)",
+                "long",
+                "a",
+                "long"
               ]
             }
           },
@@ -1590,7 +1597,7 @@
           },
           {
             "en": "“We will reach the Austrian border at half past nine, and officers will come aboard. Until then, nobody leaves.”",
-            "fr": "« Nous atteindrons la frontière autrichienne à neuf heures et demie, et des agents monteront à bord. D'ici là, personne ne part. »",
+            "fr": "« Nous atteindrons la frontière autrichienne à neuf heures et demie, et des agents monteront à bord. D'ici là, personne ne quitte le train. »",
             "g": {
               "come": [
                 "monteront (come aboard)",
@@ -1602,6 +1609,12 @@
                 "(half past : et demie)",
                 "past",
                 "r"
+              ],
+              "leaves": [
+                "quitte",
+                "leave",
+                "v",
+                "quitter"
               ]
             }
           }
@@ -1773,12 +1786,17 @@
         [
           {
             "en": "He found Lina in the corridor, holding a paper cup of coffee.",
-            "fr": "Il trouva Lina dans le couloir, une tasse de café en carton à la main.",
+            "fr": "Il trouva Lina dans le couloir, un café dans un gobelet en carton à la main.",
             "g": {
               "paper": [
                 "en carton",
                 "paper",
                 "a"
+              ],
+              "cup": [
+                "gobelet",
+                "cup",
+                "n"
               ]
             }
           },
@@ -1787,7 +1805,7 @@
             "fr": "Elle dit qu'elle n'avait pas réussi à dormir et qu'elle avait donc lu là jusqu'à minuit environ.",
             "g": {
               "so": [
-                "alors",
+                "donc",
                 "so",
                 "c"
               ],
@@ -1927,7 +1945,7 @@
           },
           {
             "en": "The room smelled of expensive perfume, and Adam remembered what Mrs Ward had said.",
-            "fr": "La pièce sentait le parfum cher, et Adam se rappela ce qu'avait dit Mrs Ward."
+            "fr": "La pièce sentait un parfum cher, et Adam se rappela ce qu'avait dit Mrs Ward."
           }
         ],
         [
@@ -1996,13 +2014,13 @@
             "fr": "« Elle doit se tromper », répondit Jonas sans lever les yeux. « J'étais au lit à onze heures. »",
             "g": {
               "looking": [
-                "levant (looking up)",
+                "lever les yeux (looking up)",
                 "look",
                 "v",
                 "regarder"
               ],
               "up": [
-                "(looking up : sans lever les yeux)",
+                "(looking up : lever les yeux)",
                 "up",
                 "d"
               ],
@@ -2065,7 +2083,7 @@
           },
           {
             "en": "He knelt down and held his phone close to the dark blue carpet.",
-            "fr": "Il s'agenouilla et approcha son téléphone de la moquette bleu foncé.",
+            "fr": "Il s'agenouilla et tint son téléphone tout près de la moquette bleu foncé.",
             "g": {
               "down": [
                 "(knelt down : s'agenouilla)",
@@ -2073,13 +2091,13 @@
                 "d"
               ],
               "held": [
-                "tenait (held close to)",
+                "tint (held close to)",
                 "hold",
                 "v",
                 "tenir"
               ],
               "close": [
-                "près de",
+                "(held close to : tint près de)",
                 "close",
                 "d"
               ]
@@ -2232,7 +2250,7 @@
                 "d"
               ],
               "had": [
-                "devait",
+                "dut",
                 "have",
                 "v",
                 "avoir"
@@ -2333,7 +2351,7 @@
                 "a"
               ],
               "began": [
-                "commencèrent",
+                "commencent",
                 "begin",
                 "v",
                 "commencer"

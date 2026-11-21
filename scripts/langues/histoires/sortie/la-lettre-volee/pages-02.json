@@ -82,7 +82,7 @@
     [
      {
       "en": "“Then,” I said, “you have been making a miscalculation, and the letter is not upon the premises, as you suppose.”",
-      "fr": "« Alors, dis-je, vous avez commis une erreur de calcul : la lettre ne se trouve pas dans les lieux, comme vous le supposez. »",
+      "fr": "« Alors, dis-je, vous avez commis une erreur de calcul, et la lettre n'est pas dans les lieux, comme vous le supposez. »",
       "g": {
        "said": [
         "dis",
@@ -144,13 +144,13 @@
         "craindre"
        ],
        "are": [
-        "avez (are right : avez raison)",
+        "ayez (are right : ayez raison)",
         "be",
         "v",
         "être"
        ],
        "right": [
-        "raison (are right : avez raison)",
+        "raison (are right : ayez raison)",
         "right",
         "a",
         "juste"
@@ -302,6 +302,11 @@
         "description",
         "description",
         "n"
+       ],
+       "of#2": [
+        "de",
+        "of",
+        "r"
        ]
       }
      }
@@ -443,12 +448,12 @@
         "d"
        ],
        "depressed": [
-        "abattu",
+        "abattu (depressed in spirits)",
         "depressed",
         "a"
        ],
        "spirits": [
-        "moral (in spirits : de moral)",
+        "(depressed in spirits : abattu)",
         "spirit",
         "n",
         "esprit"
@@ -616,12 +621,22 @@
         "volée",
         "purloined",
         "a"
+       ],
+       "what": [
+        "qu'en est-il (what of : qu'en est-il de)",
+        "what",
+        "p"
+       ],
+       "of": [
+        "(what of : qu'en est-il de)",
+        "of",
+        "r"
        ]
       }
      },
      {
       "en": "I presume you have at last made up your mind that there is no such thing as overreaching the Minister?”",
-      "fr": "Je présume que vous vous êtes enfin fait à l'idée qu'on ne peut en aucune façon duper le Ministre ? »",
+      "fr": "Je présume que vous avez enfin conclu qu'il est impossible de duper le Ministre ? »",
       "g": {
        "presume": [
         "présume",
@@ -640,29 +655,29 @@
         "r"
        ],
        "made": [
-        "fait (made up your mind : vous êtes fait à l'idée)",
+        "conclu (made up your mind : avez conclu)",
         "make",
         "v",
         "faire"
        ],
        "up": [
-        "(made up your mind)",
+        "(made up your mind : avez conclu)",
         "up",
         "d"
        ],
        "mind": [
-        "(made up your mind : se faire à l'idée)",
+        "(made up your mind : avez conclu)",
         "mind",
         "n",
         "esprit"
        ],
        "there": [
-        "il (there is : il y a)",
+        "il est impossible (there is no such thing as : il est impossible de)",
         "there",
         "d"
        ],
        "thing": [
-        "chose (no such thing : rien de tel)",
+        "(there is no such thing as : il est impossible de)",
         "thing",
         "n"
        ],
@@ -671,6 +686,27 @@
         "overreach",
         "v",
         "duper, surpasser"
+       ],
+       "have": [
+        "(have made up : avez conclu)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "no": [
+        "(there is no such thing as : il est impossible de)",
+        "no",
+        "t"
+       ],
+       "such": [
+        "(there is no such thing as : il est impossible de)",
+        "such",
+        "t"
+       ],
+       "as": [
+        "(there is no such thing as : il est impossible de)",
+        "as",
+        "c"
        ]
       }
      }
@@ -678,7 +714,7 @@
     [
      {
       "en": "“Confound him, say I — yes; I made the re-examination, however, as Dupin suggested — but it was all labor lost, as I knew it would be.”",
-      "fr": "« Au diable cet homme, dis-je — oui ; j'ai refait l'examen, pourtant, comme Dupin l'avait suggéré — mais ce fut peine perdue, comme je le savais d'avance. »",
+      "fr": "« Au diable cet homme, dis-je — oui ; j'ai fait ce nouvel examen, pourtant, comme Dupin l'avait suggéré — mais ce fut peine perdue, comme je le savais d'avance. »",
       "g": {
        "confound": [
         "au diable (confound him : au diable)",
@@ -741,12 +777,12 @@
         "faire"
        ],
        "how": [
-        "à (how much : à combien)",
+        "à combien (how much)",
         "how",
-        "c"
+        "d"
        ],
        "much": [
-        "combien (how much : à combien)",
+        "(how much : à combien)",
         "much",
         "t"
        ],
@@ -772,6 +808,12 @@
         "ask",
         "v",
         "demander"
+       ],
+       "was": [
+        "s'élevait (how much was : à combien s'élevait)",
+        "be",
+        "v",
+        "être"
        ]
       }
      }
@@ -779,7 +821,7 @@
     [
      {
       "en": "“Why, a very great deal — a very liberal reward — I don’t like to say how much, precisely; but one thing I will say, that I wouldn’t mind giving my individual check for fifty thousand francs to any one who could obtain me that letter.",
-      "fr": "« Eh bien, une très grosse somme — une récompense très généreuse — je n'aime pas dire exactement combien ; mais je dirai une chose : je ne rechignerais pas à donner de ma poche un chèque de cinquante mille francs à quiconque me procurerait cette lettre.",
+      "fr": "Eh bien, une très grosse somme — une récompense très généreuse — je n'aime pas dire exactement combien ; mais je dirai une chose, c'est que je ne rechignerais pas à donner de ma poche un chèque de cinquante mille francs à quiconque pourrait me procurer cette lettre.",
       "g": {
        "why": [
         "eh bien",
@@ -816,7 +858,7 @@
        "how": [
         "combien (how much)",
         "how",
-        "c"
+        "d"
        ],
        "much": [
         "(how much : combien)",
@@ -840,7 +882,7 @@
         "dire"
        ],
        "mind": [
-        "(wouldn't mind : ne rechignerais pas)",
+        "ne rechignerais pas (wouldn't mind)",
         "mind",
         "v",
         "se soucier de"
@@ -866,17 +908,17 @@
         "any",
         "t"
        ],
-       "one": [
-        "(any one : quiconque)",
-        "one",
-        "p"
-       ],
        "obtain": [
         "procurer",
         "obtain",
         "v"
        ],
-       "that": [
+       "one#2": [
+        "(any one : quiconque)",
+        "one",
+        "p"
+       ],
+       "that#2": [
         "cette",
         "that",
         "t"
@@ -885,7 +927,7 @@
      },
      {
       "en": "The fact is, it is becoming of more and more importance every day; and the reward has been lately doubled.",
-      "fr": "Le fait est que cela prend chaque jour plus d'importance ; et la récompense a récemment été doublée.",
+      "fr": "Le fait est que cela prend de plus en plus d'importance chaque jour ; et la récompense a récemment été doublée.",
       "g": {
        "fact": [
         "fait",
@@ -893,7 +935,7 @@
         "n"
        ],
        "becoming": [
-        "devient (is becoming : devient)",
+        "prend (is becoming : prend)",
         "become",
         "v",
         "devenir"
@@ -920,9 +962,30 @@
         "doubler"
        ],
        "more": [
-        "plus",
+        "de plus en plus (more and more)",
         "more",
-        "t"
+        "d"
+       ],
+       "is#2": [
+        "(is becoming : prend)",
+        "be",
+        "v",
+        "être"
+       ],
+       "more#2": [
+        "(more and more : de plus en plus)",
+        "more",
+        "d"
+       ],
+       "and": [
+        "(more and more : de plus en plus)",
+        "and",
+        "c"
+       ],
+       "and#2": [
+        "et",
+        "and",
+        "c"
        ]
       }
      },
@@ -951,7 +1014,12 @@
        "more": [
         "davantage",
         "more",
-        "t"
+        "d"
+       ],
+       "no": [
+        "(no more : ne… davantage)",
+        "no",
+        "d"
        ]
       }
      }
@@ -1011,7 +1079,7 @@
         "p"
        ],
        "utmost": [
-        "maximum (to the utmost : au maximum)",
+        "le mal possible (to the utmost : tout le mal possible)",
         "utmost",
         "n"
        ],
@@ -1084,12 +1152,12 @@
         "v"
        ],
        "employ": [
-        "recourir à",
+        "prendre (employ counsel : prendre conseil)",
         "employ",
         "v"
        ],
        "counsel": [
-        "conseil, avis",
+        "conseil (employ counsel : prendre conseil)",
         "counsel",
         "n"
        ],
@@ -1149,7 +1217,7 @@
       "fr": "« Non ; au diable Abernethy ! »",
       "g": {
        "hang": [
-        "au diable (hang him : au diable)",
+        "au diable",
         "hang",
         "v",
         "pendre"
@@ -1177,12 +1245,23 @@
         "grand bien lui fasse (and welcome)",
         "welcome",
         "a"
+       ],
+       "to": [
+        "(to be sure : bien sûr)",
+        "to",
+        "x"
+       ],
+       "be": [
+        "(to be sure : bien sûr)",
+        "be",
+        "v",
+        "être"
        ]
       }
      },
      {
       "en": "But, once upon a time, a certain rich miser conceived the design of spunging upon this Abernethy for a medical opinion.",
-      "fr": "Mais il était une fois un certain riche avare qui conçut le dessein de soutirer à cet Abernethy une consultation médicale sans la payer.",
+      "fr": "Mais il était une fois un certain riche avare qui conçut le projet de soutirer, en parasite, un avis médical à cet Abernethy.",
       "g": {
        "once": [
         "il était une fois (once upon a time)",
@@ -1221,12 +1300,12 @@
         "concevoir"
        ],
        "design": [
-        "dessein",
+        "projet",
         "design",
         "n"
        ],
        "spunging": [
-        "soutirer (spunging upon : soutirer à)",
+        "soutirer en parasite",
         "sponge",
         "v",
         "écornifler"
@@ -1245,6 +1324,11 @@
         "avis, consultation",
         "opinion",
         "n"
+       ],
+       "upon#2": [
+        "(spunging upon : en parasite)",
+        "upon",
+        "r"
        ]
       }
      },
@@ -1253,7 +1337,7 @@
       "fr": "Ayant amené, dans cette intention, une conversation banale au sein d'une réunion privée, il exposa son cas au médecin à mots couverts, comme celui d'un individu imaginaire.",
       "g": {
        "getting": [
-        "amenant (getting up : amenant)",
+        "ayant amené (getting up : ayant amené)",
         "get",
         "v",
         "obtenir"
@@ -1374,6 +1458,27 @@
         "prendre",
         "take",
         "v"
+       ],
+       "we": [
+        "(we will suppose : supposons)",
+        "we",
+        "p"
+       ],
+       "will": [
+        "(we will suppose : supposons)",
+        "will",
+        "v"
+       ],
+       "would": [
+        "(would have directed : auriez prescrit)",
+        "would",
+        "v"
+       ],
+       "have": [
+        "(would have directed : auriez prescrit)",
+        "have",
+        "v",
+        "avoir"
        ]
       }
      }
@@ -1414,6 +1519,17 @@
         "bien sûr (to be sure)",
         "sure",
         "a"
+       ],
+       "to": [
+        "(to be sure : bien sûr)",
+        "to",
+        "x"
+       ],
+       "be": [
+        "(to be sure : bien sûr)",
+        "be",
+        "v",
+        "être"
        ]
       }
      }
@@ -1619,10 +1735,10 @@
      },
      {
       "en": "The Prefect appeared absolutely thunder-stricken.",
-      "fr": "Le Préfet semblait absolument foudroyé.",
+      "fr": "Le Préfet parut absolument foudroyé.",
       "g": {
        "appeared": [
-        "semblait",
+        "parut",
         "appear",
         "v",
         "sembler"
@@ -1641,7 +1757,7 @@
      },
      {
       "en": "For some minutes he remained speechless and motionless, looking incredulously at my friend with open mouth, and eyes that seemed starting from their sockets; then, apparently recovering himself in some measure, he seized a pen, and after several pauses and vacant stares, finally filled up and signed a check for fifty thousand francs, and handed it across the table to Dupin.",
-      "fr": "Pendant quelques minutes, il demeura sans voix et sans mouvement, regardant mon ami d'un air incrédule, la bouche ouverte et les yeux qui semblaient jaillir de leurs orbites ; puis, se ressaisissant en quelque sorte, il saisit une plume et, après plusieurs pauses et regards vides, il remplit enfin et signa un chèque de cinquante mille francs, qu'il tendit par-dessus la table à Dupin.",
+      "fr": "Pendant quelques minutes, il demeura sans voix et sans mouvement, regardant mon ami d'un air incrédule, la bouche ouverte et les yeux qui semblaient jaillir de leurs orbites ; puis, se ressaisissant apparemment jusqu'à un certain point, il saisit une plume et, après plusieurs pauses et regards vides, il remplit enfin et signa un chèque de cinquante mille francs, qu'il tendit par-dessus la table à Dupin.",
       "g": {
        "minutes": [
         "minutes",
@@ -1726,7 +1842,7 @@
         "c"
        ],
        "apparently": [
-        "en apparence",
+        "apparemment",
         "apparently",
         "d"
        ],
@@ -1742,7 +1858,7 @@
         "p"
        ],
        "measure": [
-        "mesure (in some measure : en quelque sorte)",
+        "(in some measure : jusqu'à un certain point)",
         "measure",
         "n"
        ],
@@ -1769,7 +1885,7 @@
         "a"
        ],
        "stares": [
-        "regards fixes",
+        "regards",
         "stare",
         "n",
         "regard fixe"
@@ -1816,6 +1932,16 @@
         "table",
         "table",
         "n"
+       ],
+       "some#2": [
+        "(in some measure : jusqu'à un certain point)",
+        "some",
+        "t"
+       ],
+       "in": [
+        "(in some measure : jusqu'à un certain point)",
+        "in",
+        "r"
        ]
       }
      },
@@ -1981,11 +2107,6 @@
         "v",
         "se précipiter"
        ],
-       "at": [
-        "(at length : enfin)",
-        "at",
-        "r"
-       ],
        "length": [
         "enfin (at length)",
         "length",
@@ -2055,6 +2176,11 @@
         "chèque",
         "check",
         "n"
+       ],
+       "at#2": [
+        "(at length : enfin)",
+        "at",
+        "r"
        ]
       }
      }
@@ -2215,15 +2341,15 @@
      },
      {
       "en": "Thus, when G — detailed to us his mode of searching the premises at the Hotel D — , I felt entire confidence in his having made a satisfactory investigation — so far as his labors extended.”",
-      "fr": "Aussi, quand G… nous a exposé en détail sa manière de fouiller les lieux à l'Hôtel D…, j'ai eu pleine confiance dans le fait qu'il avait mené une enquête satisfaisante — pour autant que s'étendaient ses travaux. »",
+      "fr": "Ainsi, quand G… nous a exposé en détail sa manière de fouiller les lieux à l'Hôtel D…, j'ai eu pleine confiance dans le fait qu'il avait mené une enquête satisfaisante — pour autant que s'étendaient ses travaux. »",
       "g": {
        "thus": [
-        "aussi (donc)",
+        "ainsi",
         "thus",
         "d"
        ],
        "detailed": [
-        "exposa en détail",
+        "a exposé en détail",
         "detail",
         "v",
         "exposer en détail"
@@ -2245,7 +2371,7 @@
         "n"
        ],
        "felt": [
-        "ai éprouvé",
+        "ai eu (felt confidence : ai eu confiance)",
         "feel",
         "v",
         "éprouver"
@@ -2422,6 +2548,11 @@
         "perfection",
         "perfection",
         "n"
+       ],
+       "not": [
+        "(not only : non seulement)",
+        "not",
+        "d"
        ]
       }
      },
@@ -2498,12 +2629,12 @@
       "fr": "Je me contentai de rire — mais il semblait tout à fait sérieux dans tout ce qu'il disait.",
       "g": {
        "merely": [
-        "simplement",
+        "me contentai de (merely laughed)",
         "merely",
         "d"
        ],
        "laughed": [
-        "ris",
+        "rire (merely laughed : me contentai de rire)",
         "laugh",
         "v",
         "rire"
@@ -2531,7 +2662,7 @@
     [
      {
       "en": "“The measures, then,” he continued, “were good in their kind, and well executed; their defect lay in their being inapplicable to the case, and to the man.",
-      "fr": "« Les mesures, donc, poursuivit-il, étaient bonnes en leur genre et bien exécutées ; leur défaut résidait en ce qu'elles ne convenaient ni au cas ni à l'homme.",
+      "fr": "« Les mesures, donc, poursuivit-il, étaient bonnes en leur genre et bien exécutées ; leur défaut tenait à ce qu'elles étaient inapplicables au cas et à l'homme.",
       "g": {
        "measures": [
         "mesures",
@@ -2572,13 +2703,13 @@
         "n"
        ],
        "lay": [
-        "résidait",
+        "tenait (lay in : tenait à)",
         "lie",
         "v",
         "résider"
        ],
        "being": [
-        "(their being inapplicable : le fait qu'elles ne conviennent pas)",
+        "(their being inapplicable : à ce qu'elles étaient inapplicables)",
         "be",
         "v",
         "être"
@@ -2597,6 +2728,11 @@
         "homme",
         "man",
         "n"
+       ],
+       "in#2": [
+        "(lay in : tenait à)",
+        "in",
+        "r"
        ]
       }
      },
@@ -2747,26 +2883,41 @@
         "n"
        ],
        "better": [
-        "meilleur",
+        "mieux (better reasoner : raisonne mieux)",
         "good",
         "a",
         "bon"
        ],
        "reasoner": [
-        "raisonneur",
+        "raisonne (better reasoner : raisonne mieux)",
         "reasoner",
         "n"
        ],
-       "he": [
+       "he#2": [
         "lui (than he : que lui)",
         "he",
         "p"
+       ],
+       "than": [
+        "(than he : que lui)",
+        "than",
+        "c"
+       ],
+       "a": [
+        "(many a : maint)",
+        "a",
+        "t"
+       ],
+       "a#2": [
+        "un, une",
+        "a",
+        "t"
        ]
       }
      },
      {
       "en": "I knew one about eight years of age, whose success at guessing in the game of ‘even and odd’ attracted universal admiration.",
-      "fr": "J'en connaissais un d'environ huit ans, dont la réussite aux devinettes du jeu de « pair ou impair » suscitait une admiration universelle.",
+      "fr": "J'en connaissais un d'environ huit ans, dont la réussite à deviner au jeu de « pair ou impair » suscitait une admiration universelle.",
       "g": {
        "knew": [
         "connaissais",
@@ -2801,7 +2952,7 @@
         "n"
        ],
        "guessing": [
-        "devinettes (deviner)",
+        "deviner",
         "guess",
         "n",
         "deviner"
@@ -2836,6 +2987,11 @@
         "admiration",
         "admiration",
         "n"
+       ],
+       "and": [
+        "ou (even and odd : pair ou impair)",
+        "and",
+        "c"
        ]
       }
      },
@@ -2854,7 +3010,7 @@
         "a"
        ],
        "played": [
-        "joué (is played : se joue)",
+        "se joue",
         "play",
         "v",
         "jouer"
@@ -2864,6 +3020,12 @@
         "marble",
         "n",
         "bille"
+       ],
+       "is#2": [
+        "(is played : se joue)",
+        "be",
+        "v",
+        "être"
        ]
       }
      },
@@ -2904,11 +3066,6 @@
         "v",
         "demander"
        ],
-       "of": [
-        "à (demands of : demande à)",
-        "of",
-        "r"
-       ],
        "another": [
         "un autre",
         "another",
@@ -2923,15 +3080,20 @@
         "impair",
         "odd",
         "a"
+       ],
+       "of#2": [
+        "à (demands of : demande à)",
+        "of",
+        "r"
        ]
       }
      },
      {
       "en": "If the guess is right, the guesser wins one; if wrong, he loses one.",
-      "fr": "Si la devinette est juste, le devineur en gagne une ; sinon, il en perd une.",
+      "fr": "Si la supposition est juste, celui qui devine en gagne une ; si elle est fausse, il en perd une.",
       "g": {
        "guess": [
-        "devinette, supposition",
+        "supposition",
         "guess",
         "n"
        ],
@@ -2941,7 +3103,7 @@
         "a"
        ],
        "guesser": [
-        "devineur",
+        "celui qui devine",
         "guesser",
         "n"
        ],
@@ -3074,6 +3236,36 @@
         "opponent",
         "n",
         "adversaire"
+       ],
+       "of": [
+        "(of course : bien sûr)",
+        "of",
+        "r"
+       ],
+       "of#2": [
+        "pour (principle of guessing : principe pour deviner)",
+        "of",
+        "r"
+       ],
+       "of#3": [
+        "de",
+        "of",
+        "r"
+       ],
+       "of#4": [
+        "de",
+        "of",
+        "r"
+       ],
+       "some": [
+        "un (some principle : un principe)",
+        "some",
+        "t"
+       ],
+       "in": [
+        "(lay in : consistait en)",
+        "in",
+        "r"
        ]
       }
      },
@@ -3158,7 +3350,7 @@
      },
      {
       "en": "Our schoolboy replies, ‘odd,’ and loses; but upon the second trial he wins, for he then says to himself, ‘the simpleton had them even upon the first trial, and his amount of cunning is just sufficient to make him have them odd upon the second; I will therefore guess odd;’ — he guesses odd, and wins.",
-      "fr": "Notre écolier répond : « impair », et perd ; mais à la deuxième épreuve il gagne, car il se dit alors : « le nigaud les avait pairs à la première épreuve, et sa dose de ruse suffit juste à lui faire les avoir impairs à la seconde ; je devinerai donc impair » — il devine impair, et gagne.",
+      "fr": "Notre écolier répond : « impair », et perd ; mais à la deuxième épreuve il gagne, car il se dit alors : « le nigaud les avait en nombre pair à la première épreuve, et sa dose de ruse suffit tout juste à lui faire les avoir en nombre impair à la seconde ; je devinerai donc impair » — il devine impair, et gagne.",
       "g": {
        "schoolboy": [
         "écolier",
@@ -3231,7 +3423,7 @@
         "p"
        ],
        "even": [
-        "pairs",
+        "en nombre pair",
         "even",
         "a"
        ],
@@ -3261,12 +3453,12 @@
         "n"
        ],
        "just": [
-        "juste",
+        "tout juste",
         "just",
         "d"
        ],
        "sufficient": [
-        "suffisante",
+        "suffit",
         "sufficient",
         "a"
        ],
@@ -3296,7 +3488,7 @@
         "a"
        ],
        "guess": [
-        "deviner (guess odd : deviner impair)",
+        "devinerai (guess odd : devinerai impair)",
         "guess",
         "v"
        ],
@@ -3311,6 +3503,17 @@
         "win",
         "v",
         "gagner"
+       ],
+       "odd#2": [
+        "en nombre impair",
+        "odd",
+        "a"
+       ],
+       "is": [
+        "(is just sufficient : suffit tout juste)",
+        "be",
+        "v",
+        "être"
        ]
       }
      }
@@ -3372,9 +3575,9 @@
         "d"
        ],
        "this": [
-        "c'",
+        "ce",
         "this",
-        "p"
+        "t"
        ],
        "fellow": [
         "gaillard",
@@ -3549,6 +3752,16 @@
         "avant",
         "before",
         "d"
+       ],
+       "this#2": [
+        "c'",
+        "this",
+        "p"
+       ],
+       "with": [
+        "face à (with a simpleton : face à un nigaud)",
+        "with",
+        "r"
        ]
       }
      },
@@ -3557,7 +3770,7 @@
       "fr": "Je devinerai donc pair » — il devine pair, et gagne.",
       "g": {
        "guess": [
-        "deviner",
+        "devinerai",
         "guess",
         "v"
        ],
@@ -3633,7 +3846,7 @@
         "a"
        ],
        "what": [
-        "qu'est-ce que",
+        "qu'est-ce",
         "what",
         "p"
        ],
@@ -3909,11 +4122,6 @@
         "possible",
         "a"
        ],
-       "in": [
-        "(in accordance with : d'après)",
-        "in",
-        "r"
-       ],
        "accordance": [
         "(in accordance with : d'après)",
         "accordance",
@@ -3982,6 +4190,26 @@
         "correspondre",
         "correspond",
         "v"
+       ],
+       "of#2": [
+        "de",
+        "of",
+        "r"
+       ],
+       "of#3": [
+        "de",
+        "of",
+        "r"
+       ],
+       "in#2": [
+        "(in accordance with : d'après)",
+        "in",
+        "r"
+       ],
+       "with#2": [
+        "à (correspond with : y correspondre)",
+        "with",
+        "r"
        ]
       }
      },
@@ -4037,7 +4265,7 @@
         "np"
        ],
        "bougive": [
-        "Bougive (La Bruyère ? moraliste)",
+        "Bougive (sans doute La Bruyère)",
         "bougive",
         "np"
        ],
@@ -4256,12 +4484,17 @@
         "engage",
         "v",
         "engager"
+       ],
+       "this#2": [
+        "cette",
+        "this",
+        "t"
        ]
       }
      },
      {
       "en": "They consider only their own ideas of ingenuity; and, in searching for anything hidden, advert only to the modes in which they would have hidden it.",
-      "fr": "Ils ne considèrent que leurs propres idées de l'ingéniosité ; et, en cherchant quoi que ce soit de caché, ils ne s'arrêtent qu'aux manières dont ils l'auraient caché eux-mêmes.",
+      "fr": "Ils ne considèrent que leurs propres idées de l'ingéniosité ; et, en cherchant quoi que ce soit de caché, ils ne s'arrêtent qu'aux manières dont ils l'auraient caché.",
       "g": {
        "consider": [
         "considèrent",
@@ -4336,7 +4569,7 @@
      },
      {
       "en": "They are right in this much — that their own ingenuity is a faithful representative of that of the mass; but when the cunning of the individual felon is diverse in character from their own, the felon foils them, of course.",
-      "fr": "Ils ont raison sur ce point : que leur propre ingéniosité est une fidèle représentante de celle de la masse ; mais quand la ruse du criminel isolé est d'un tout autre caractère que la leur, le criminel les déjoue, bien sûr.",
+      "fr": "Ils ont raison jusque-là — à savoir que leur propre ingéniosité est une fidèle représentante de celle de la masse ; mais quand la ruse du criminel isolé est d'un caractère différent de la leur, le criminel les déjoue, bien sûr.",
       "g": {
        "are": [
         "ont (are right : ont raison)",
@@ -4350,17 +4583,17 @@
         "a"
        ],
        "in": [
-        "sur",
+        "(in this much : jusque-là)",
         "in",
         "r"
        ],
        "much": [
-        "point (in this much : sur ce point)",
+        "jusque-là (in this much)",
         "much",
-        "t"
+        "d"
        ],
        "that": [
-        "que",
+        "à savoir que",
         "that",
         "c"
        ],
@@ -4439,6 +4672,26 @@
         "bien sûr (of course)",
         "course",
         "n"
+       ],
+       "in#2": [
+        "(in character : d'un caractère)",
+        "in",
+        "r"
+       ],
+       "this": [
+        "(in this much : jusque-là)",
+        "this",
+        "t"
+       ],
+       "from": [
+        "(diverse from : de)",
+        "from",
+        "r"
+       ],
+       "of#4": [
+        "(of course : bien sûr)",
+        "of",
+        "r"
        ]
       }
      },
@@ -4619,10 +4872,10 @@
      },
      {
       "en": "What is all this boring, and probing, and sounding, and scrutinizing with the microscope and dividing the surface of the building into registered square inches — what is it all but an exaggeration of the application of the one principle or set of principles of search, which are based upon the one set of notions regarding human ingenuity, to which the Prefect, in the long routine of his duty, has been accustomed?",
-      "fr": "Que sont tout ce perçage, ce sondage, ces auscultations, cet examen au microscope et ce découpage de la surface de l'édifice en pouces carrés répertoriés — qu'est-ce, sinon une exagération de l'application d'un unique principe, ou ensemble de principes, de recherche, fondés sur un unique ensemble de notions touchant l'ingéniosité humaine, auxquelles le Préfet, dans la longue routine de ses fonctions, s'est habitué ?",
+      "fr": "Qu'est-ce que tout ce perçage, ce sondage, cette auscultation, cet examen au microscope et ce découpage de la surface de l'édifice en pouces carrés répertoriés — qu'est-ce, sinon une exagération de l'application d'un unique principe, ou ensemble de principes, de recherche, fondés sur un unique ensemble de notions touchant l'ingéniosité humaine, auxquelles le Préfet, dans la longue routine de ses fonctions, s'est habitué ?",
       "g": {
        "what": [
-        "que",
+        "qu'est-ce que (what is : qu'est-ce que)",
         "what",
         "p"
        ],
@@ -4685,13 +4938,8 @@
         "pouce"
        ],
        "what#2": [
-        "qu'est-ce",
+        "qu'est-ce (what is it all but : qu'est-ce, sinon)",
         "what",
-        "p"
-       ],
-       "all": [
-        "(all but : rien d'autre que)",
-        "all",
         "p"
        ],
        "but": [
@@ -4736,7 +4984,7 @@
         "n"
        ],
        "which": [
-        "(fondés : qui)",
+        "(which are based : fondés)",
         "which",
         "p"
        ],
@@ -4812,6 +5060,51 @@
         "habitué",
         "accustomed",
         "a"
+       ],
+       "is": [
+        "(what is : qu'est-ce que)",
+        "be",
+        "v",
+        "être"
+       ],
+       "is#2": [
+        "(what is it all but : qu'est-ce, sinon)",
+        "be",
+        "v",
+        "être"
+       ],
+       "it": [
+        "(what is it all but : qu'est-ce, sinon)",
+        "it",
+        "p"
+       ],
+       "all#2": [
+        "(what is it all but : sinon)",
+        "all",
+        "p"
+       ],
+       "into": [
+        "en (into … square inches : en pouces carrés)",
+        "into",
+        "r"
+       ],
+       "are": [
+        "(which are based : fondés)",
+        "be",
+        "v",
+        "être"
+       ],
+       "has": [
+        "(has been accustomed : s'est habitué)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "been": [
+        "(has been accustomed : s'est habitué)",
+        "be",
+        "v",
+        "être"
        ]
       }
      },
@@ -5017,7 +5310,7 @@
         "n"
        ],
        "adapted": [
-        "adaptées",
+        "conviennent (adapted for : conviennent à)",
         "adapt",
         "v",
         "adapter"
@@ -5028,7 +5321,7 @@
         "d"
        ],
        "for#2": [
-        "à (adapted for : adaptées à)",
+        "(adapted for : conviennent à)",
         "for",
         "r"
        ],
@@ -5112,17 +5405,17 @@
         "n"
        ],
        "very": [
-        "(the very first : tout premier)",
+        "(in the very first instance : dès le premier abord)",
         "very",
         "d"
        ],
        "first": [
-        "premier",
+        "(in the very first instance : dès le premier abord)",
         "first",
         "a"
        ],
        "instance": [
-        "abord (in the first instance : dès le premier abord)",
+        "abord (in the very first instance : dès le premier abord)",
         "instance",
         "n"
        ],
@@ -5152,11 +5445,6 @@
         "(not at all : pas du tout)",
         "at",
         "r"
-       ],
-       "all": [
-        "(not at all : pas du tout)",
-        "all",
-        "t"
        ],
        "upon": [
         "(depends upon : dépend de)",
@@ -5225,23 +5513,23 @@
         "p"
        ],
        "amounts": [
-        "revient (amounts to : revient à)",
+        "revient au même (amounts to the same thing)",
         "amount",
         "v",
         "revenir"
        ],
        "to": [
-        "(amounts to : revient à)",
+        "(amounts to the same thing : revient au même)",
         "to",
         "r"
        ],
        "same": [
-        "même",
+        "(amounts to the same thing : revient au même)",
         "same",
         "a"
        ],
        "thing": [
-        "(same thing : même chose)",
+        "(amounts to the same thing : revient au même)",
         "thing",
         "n"
        ],
@@ -5292,6 +5580,17 @@
         "faillir",
         "fail",
         "v"
+       ],
+       "all#2": [
+        "(not at all : pas du tout)",
+        "all",
+        "t"
+       ],
+       "are": [
+        "(are adapted : conviennent)",
+        "be",
+        "v",
+        "être"
        ]
       }
      },
@@ -5416,6 +5715,22 @@
         "doute",
         "question",
         "n"
+       ],
+       "in#2": [
+        "(in other words : en d'autres termes)",
+        "in",
+        "r"
+       ],
+       "would": [
+        "(would have been : aurait été)",
+        "would",
+        "v"
+       ],
+       "have": [
+        "(would have been : aurait été)",
+        "have",
+        "v",
+        "avoir"
        ]
       }
      },
@@ -5471,7 +5786,7 @@
         "n"
        ],
        "acquired": [
-        "acquis",
+        "s'est acquis",
         "acquire",
         "v",
         "acquérir"
@@ -5490,7 +5805,7 @@
      },
      {
       "en": "All fools are poets; this the Prefect feels; and he is merely guilty of a non distributio medii in thence inferring that all poets are fools.”",
-      "fr": "Tous les sots sont poètes ; c'est ce que le Préfet sent ; et il est simplement coupable d'un non distributio medii en en inférant que tous les poètes sont des sots. »",
+      "fr": "Tous les sots sont poètes ; cela, le Préfet le sent ; et il est simplement coupable d'un non distributio medii, en inférant de là que tous les poètes sont des sots. »",
       "g": {
        "fools": [
         "sots",
@@ -5541,7 +5856,7 @@
         "n"
        ],
        "thence": [
-        "en",
+        "de là",
         "thence",
         "d"
        ],
@@ -5626,7 +5941,7 @@
         "v"
        ],
        "attained": [
-        "acquis",
+        "se sont acquis",
         "attain",
         "v",
         "atteindre"
@@ -5686,7 +6001,7 @@
         "n"
        ],
        "no": [
-        "nullement (no poet : pas un poète)",
+        "nullement (no poet : nullement un poète)",
         "no",
         "t"
        ],
@@ -5701,7 +6016,7 @@
     [
      {
       "en": "“You are mistaken; I know him well; he is both.",
-      "fr": "« Vous vous trompez ; je le connais bien ; il est les deux.",
+      "fr": "« Vous vous trompez ; je le connais bien ; il est l'un et l'autre.",
       "g": {
        "are": [
         "(are mistaken : vous trompez)",
@@ -5723,6 +6038,11 @@
         "bien",
         "well",
         "d"
+       ],
+       "both": [
+        "l'un et l'autre",
+        "both",
+        "p"
        ]
       }
      },
@@ -6115,11 +6435,6 @@
         "error",
         "n"
        ],
-       "to": [
-        "(to which : à laquelle)",
-        "to",
-        "r"
-       ],
        "which": [
         "(to which : à laquelle)",
         "which",
@@ -6156,7 +6471,7 @@
         "r"
        ],
        "promulgation": [
-        "promulgation",
+        "promulgation (pour avoir été promulguée)",
         "promulgation",
         "n"
        ],
@@ -6164,12 +6479,23 @@
         "vérité",
         "truth",
         "n"
+       ],
+       "to#2": [
+        "(to which : à laquelle)",
+        "to",
+        "r"
+       ],
+       "have": [
+        "(have done their best : ont fait de leur mieux)",
+        "have",
+        "v",
+        "avoir"
        ]
       }
      },
      {
       "en": "With an art worthy a better cause, for example, they have insinuated the term ‘analysis’ into application to algebra.",
-      "fr": "Avec un art digne d'une meilleure cause, par exemple, ils ont glissé le terme « analyse » dans l'usage appliqué à l'algèbre.",
+      "fr": "Avec un art digne d'une meilleure cause, par exemple, ils ont insinué le terme « analyse » dans son application à l'algèbre.",
       "g": {
        "art": [
         "art",
@@ -6203,7 +6529,7 @@
         "n"
        ],
        "insinuated": [
-        "glissé (insinué)",
+        "insinué",
         "insinuate",
         "v",
         "insinuer"
@@ -6219,7 +6545,7 @@
         "n"
        ],
        "application": [
-        "usage, application",
+        "application",
         "application",
         "n"
        ],
@@ -6227,6 +6553,11 @@
         "algèbre",
         "algebra",
         "n"
+       ],
+       "into": [
+        "dans (into application : dans son application)",
+        "into",
+        "r"
        ]
       }
      },
@@ -6698,7 +7029,7 @@
         "p"
        ],
        "called": [
-        "appelle (is called : s'appelle)",
+        "appelle (is called : ce qu'on appelle)",
         "call",
         "v",
         "appeler"
@@ -7095,6 +7426,12 @@
         "relation",
         "relation",
         "n"
+       ],
+       "are#2": [
+        "sont",
+        "be",
+        "v",
+        "être"
        ]
       }
      },
@@ -7288,7 +7625,7 @@
         "conclusion"
        ],
        "from": [
-        "(inferences from : de)",
+        "(from them : en)",
         "from",
         "r"
        ],
@@ -7302,6 +7639,11 @@
         "reality",
         "n",
         "réalité"
+       ],
+       "them": [
+        "en (from them : en)",
+        "they",
+        "p"
        ]
       }
      },
@@ -7592,7 +7934,7 @@
         "occasion, cas"
        ],
        "may": [
-        "(may occur : peuvent survenir)",
+        "(may occur : il est possible que… surviennent)",
         "may",
         "v"
        ],
@@ -7650,11 +7992,6 @@
         "(get out of : éloignez-vous de)",
         "out",
         "d"
-       ],
-       "of": [
-        "(get out of : éloignez-vous de)",
-        "of",
-        "r"
        ],
        "reach": [
         "portée",
@@ -7717,6 +8054,16 @@
         "(knock down : terrasser)",
         "down",
         "d"
+       ],
+       "of#2": [
+        "(by way of : à titre de)",
+        "of",
+        "r"
+       ],
+       "of#3": [
+        "(get out of : éloignez-vous de)",
+        "of",
+        "r"
        ]
       }
      }

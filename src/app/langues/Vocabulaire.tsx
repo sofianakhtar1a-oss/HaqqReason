@@ -11,6 +11,9 @@ import { parler, voixDisponible } from "@/lib/langues/voix";
 import { Classement } from "./Classement";
 import { ajouterMot, useDonnees } from "./donnees";
 import type { Lancement } from "./Seance";
+import { FAUX_AMIS } from "@/lib/langues/faux-amis";
+import { FauxAmis } from "./FauxAmis";
+import "./histoires/histoires.css";
 
 export const ICONES_THEMES: Record<string, LucideIcon> = {
   Users, Plane, Briefcase, Sun, UtensilsCrossed, HeartPulse, House, Smile, CloudSun, GraduationCap, Building2, Trees,
@@ -71,6 +74,7 @@ type Props = { themeId: string | null; onOuvrir: (id: string | null) => void; la
 
 export function Vocabulaire({ themeId, onOuvrir, lancer }: Props) {
   const themes = useThemes();
+  if (themeId === "faux-amis") return <FauxAmis onRetour={() => onOuvrir(null)} />;
   const theme = themeId ? themes.find((t) => t.id === themeId) : undefined;
   if (theme) return <DetailTheme theme={theme} onRetour={() => onOuvrir(null)} lancer={lancer} />;
   return <Themes onOuvrir={onOuvrir} lancer={lancer} />;
@@ -121,6 +125,16 @@ function Themes({ onOuvrir, lancer }: Pick<Props, "onOuvrir" | "lancer">) {
           </p>
         </div>
       </div>
+
+      <button type="button" className="fa-bandeau" onClick={() => onOuvrir("faux-amis")}>
+        <span className="fa-bandeau-paire" aria-hidden="true">
+          <span lang="en">actually</span>≠<span>actuellement</span>
+        </span>
+        <span>
+          <strong>Les faux amis</strong>
+          <small>Les {FAUX_AMIS.length} pièges des francophones, leur vrai sens et un quiz pour ne plus jamais s&apos;y tromper.</small>
+        </span>
+      </button>
 
       <div className="lg-composer" role="region" aria-labelledby="titre-composer">
         <div className="lg-composer-tete">

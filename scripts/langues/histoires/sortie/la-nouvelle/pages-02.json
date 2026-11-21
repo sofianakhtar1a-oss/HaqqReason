@@ -1444,7 +1444,14 @@
     [
      {
       "en": "Suddenly, a cold drop fell on her nose.",
-      "fr": "Soudain, une goutte froide tomba sur son nez."
+      "fr": "Soudain, une goutte froide tomba sur son nez.",
+      "g": {
+       "cold": [
+        "froide",
+        "cold",
+        "a"
+       ]
+      }
      },
      {
       "en": "Then there were ten drops, then a hundred.",
@@ -1517,6 +1524,11 @@
         "(looked at : regarda)",
         "at",
         "r"
+       ],
+       "wet": [
+        "mouillée",
+        "wet",
+        "a"
        ]
       }
      },
@@ -1757,10 +1769,10 @@
      },
      {
       "en": "“And you should practise every day.”",
-      "fr": "« Et vous devez vous entraîner tous les jours. »",
+      "fr": "« Et vous devriez vous entraîner tous les jours. »",
       "g": {
        "should": [
-        "devez",
+        "devriez",
         "should",
         "v"
        ]
@@ -1850,16 +1862,16 @@
      },
      {
       "en": "Inès stood on a rock and read her text.",
-      "fr": "Inès monta sur un rocher et lut son texte.",
+      "fr": "Inès se tint sur un rocher et lut son texte.",
       "g": {
        "stood": [
-        "monta (stood on)",
+        "se tint (stood on)",
         "stand",
         "v",
         "se tenir"
        ],
        "on": [
-        "(stood on : monta sur)",
+        "(stood on : se tint sur)",
         "on",
         "r"
        ]
@@ -1895,10 +1907,10 @@
      },
      {
       "en": "“But you should say ‘I have seen’, not ‘I have saw’.”",
-      "fr": "« Mais il faut dire “I have seen”, pas “I have saw”. »",
+      "fr": "« Mais tu devrais dire “I have seen”, pas “I have saw”. »",
       "g": {
        "should": [
-        "devrais, il faut",
+        "devrais",
         "should",
         "v"
        ],
@@ -2105,7 +2117,7 @@
      },
      {
       "en": "“I have a terrible cold,” she whispered.",
-      "fr": "« J’ai un horrible rhume », chuchota-t-elle.",
+      "fr": "« J'ai un rhume terrible », chuchota-t-elle.",
       "g": {
        "have": [
         "ai",
@@ -2117,6 +2129,11 @@
         "rhume",
         "cold",
         "n"
+       ],
+       "terrible": [
+        "terrible",
+        "terrible",
+        "a"
        ]
       }
      },
@@ -2202,7 +2219,7 @@
       "fr": "« Mais vous m’avez tellement aidée. »",
       "g": {
        "have": [
-        "ai (auxiliaire du passé composé)",
+        "avez (have helped : avez aidée)",
         "have",
         "v",
         "avoir"
@@ -2216,6 +2233,12 @@
         "(so much : tellement)",
         "much",
         "d"
+       ],
+       "helped": [
+        "aidée",
+        "help",
+        "v",
+        "aider"
        ]
       }
      },
@@ -2366,7 +2389,14 @@
     [
      {
       "en": "Her voice was clear and strong, and she forgot her fear.",
-      "fr": "Sa voix était claire et forte, et elle oublia sa peur."
+      "fr": "Sa voix était claire et forte, et elle oublia sa peur.",
+      "g": {
+       "strong": [
+        "forte",
+        "strong",
+        "a"
+       ]
+      }
      },
      {
       "en": "The judges listened and took notes.",
@@ -2377,6 +2407,12 @@
         "take",
         "v",
         "prendre"
+       ],
+       "listened": [
+        "écoutaient",
+        "listen",
+        "v",
+        "écouter"
        ]
       }
      },
@@ -2386,7 +2422,7 @@
      },
      {
       "en": "“I am agree… I mean, I agree!”",
-      "fr": "« I am agree… je veux dire : I agree ! »",
+      "fr": "« I am agree… je veux dire : I agree ! » (Inès refait sa faute d'anglais, puis se corrige aussitôt.)",
       "g": {
        "am": [
         "suis",
@@ -2690,11 +2726,32 @@
      },
      {
       "en": "The old castle was shining above the streets, full of golden light.",
-      "fr": "Le vieux château brillait au-dessus des rues, plein de lumière dorée."
+      "fr": "Le vieux château brillait au-dessus des rues, plein de lumière dorée.",
+      "g": {
+       "shining": [
+        "brillait",
+        "shine",
+        "v",
+        "briller"
+       ],
+       "light": [
+        "lumière",
+        "light",
+        "n"
+       ]
+      }
      },
      {
       "en": "She wrote to Lina: “We won second prize!”",
-      "fr": "Elle écrivit à Lina : « Nous avons gagné le deuxième prix ! »"
+      "fr": "Elle écrivit à Lina : « Nous avons gagné le deuxième prix ! »",
+      "g": {
+       "won": [
+        "avons gagné",
+        "win",
+        "v",
+        "gagner"
+       ]
+      }
      },
      {
       "en": "“And I have two good friends.”",
@@ -2716,7 +2773,7 @@
      },
      {
       "en": "“I think Edinburgh is my home now.”",
-      "fr": "« Je crois qu’Édimbourg est ma maison, maintenant. »",
+      "fr": "« Je crois qu'Édimbourg, c'est chez moi, maintenant. »",
       "g": {
        "think": [
         "crois",
@@ -2725,7 +2782,7 @@
         "penser"
        ],
        "home": [
-        "maison",
+        "chez moi",
         "home",
         "n"
        ]
@@ -2760,13 +2817,19 @@
      },
      {
       "en": "“Yes,” she said. “I have two homes now.”",
-      "fr": "« Oui, dit-elle. J’ai deux maisons, maintenant. »",
+      "fr": "« Oui, dit-elle. J'ai deux chez-moi, maintenant. »",
       "g": {
        "have": [
         "ai",
         "have",
         "v",
         "avoir"
+       ],
+       "homes": [
+        "chez-moi",
+        "home",
+        "n",
+        "maison"
        ]
       }
      },

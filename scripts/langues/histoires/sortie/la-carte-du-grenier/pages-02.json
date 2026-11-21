@@ -1213,7 +1213,19 @@
      },
      {
       "en": "The earth was wet and heavy.",
-      "fr": "La terre était mouillée et lourde."
+      "fr": "La terre était mouillée et lourde.",
+      "g": {
+       "wet": [
+        "mouillée",
+        "wet",
+        "a"
+       ],
+       "heavy": [
+        "lourde",
+        "heavy",
+        "a"
+       ]
+      }
      },
      {
       "en": "After ten minutes, the spade hit something hard.",
@@ -1240,7 +1252,19 @@
      },
      {
       "en": "It was old and rusty, and it was about the size of a shoebox.",
-      "fr": "Elle était vieille et rouillée, et elle avait à peu près la taille d'une boîte à chaussures."
+      "fr": "Elle était vieille et rouillée, et elle avait à peu près la taille d'une boîte à chaussures.",
+      "g": {
+       "old": [
+        "vieille",
+        "old",
+        "a"
+       ],
+       "rusty": [
+        "rouillée",
+        "rusty",
+        "a"
+       ]
+      }
      }
     ]
    ]
@@ -1250,7 +1274,14 @@
     [
      {
       "en": "The box had a small lock on the front.",
-      "fr": "La boîte avait une petite serrure sur le devant."
+      "fr": "La boîte avait une petite serrure sur le devant.",
+      "g": {
+       "small": [
+        "petite",
+        "small",
+        "a"
+       ]
+      }
      },
      {
       "en": "Léa took the rusty key out of her pocket.",
@@ -1346,12 +1377,17 @@
         "l'un",
         "one",
         "p"
+       ],
+       "red": [
+        "roux",
+        "red",
+        "a"
        ]
       }
      },
      {
       "en": "“Grandpa looks so funny!” said Tom.",
-      "fr": "« Grand-père a l'air trop drôle ! » dit Tom.",
+      "fr": "« Grand-père a l'air tellement drôle ! » dit Tom.",
       "g": {
        "looks": [
         "a l'air",
@@ -1442,6 +1478,11 @@
         "go",
         "v",
         "aller"
+       ],
+       "want": [
+        "veux",
+        "want",
+        "v"
        ]
       }
      },
@@ -1464,6 +1505,11 @@
         "garde",
         "keep",
         "v"
+       ],
+       "old": [
+        "vieille",
+        "old",
+        "a"
        ]
       }
      },
@@ -1580,7 +1626,7 @@
       "fr": "« Il y a quarante Callum Reid ! dit Tom. On ne le trouvera jamais. »",
       "g": {
        "find": [
-        "retrouver",
+        "trouver",
         "find",
         "v"
        ]
@@ -1600,7 +1646,14 @@
      },
      {
       "en": "A small shop appeared on the screen: “Reid Maps, Halifax.”",
-      "fr": "Une petite boutique apparut à l'écran : « Reid Maps, Halifax. »"
+      "fr": "Une petite boutique apparut à l'écran : « Reid Maps, Halifax. »",
+      "g": {
+       "small": [
+        "petite",
+        "small",
+        "a"
+       ]
+      }
      },
      {
       "en": "There was a photo of an old man with a white beard and a kind smile.",
@@ -1909,6 +1962,11 @@
         "(what if : et si)",
         "if",
         "c"
+       ],
+       "recognise": [
+        "reconnaît",
+        "recognise",
+        "v"
        ]
       }
      },
@@ -1936,6 +1994,11 @@
         "(going to : futur proche)",
         "to",
         "x"
+       ],
+       "worry": [
+        "t'inquiète",
+        "worry",
+        "v"
        ]
       }
      },
@@ -2102,6 +2165,11 @@
         "(told about : parla de)",
         "about",
         "r"
+       ],
+       "old": [
+        "ancienne",
+        "old",
+        "a"
        ]
       }
      },
@@ -2124,12 +2192,17 @@
      },
      {
       "en": "“I’m going to visit Kirkbrae next summer,” said Callum.",
-      "fr": "« Je vais venir à Kirkbrae l'été prochain », dit Callum.",
+      "fr": "« Je vais venir visiter Kirkbrae l'été prochain », dit Callum.",
       "g": {
        "to": [
         "(going to : futur proche)",
         "to",
         "x"
+       ],
+       "visit": [
+        "venir visiter",
+        "visit",
+        "v"
        ]
       }
      },
@@ -2174,6 +2247,11 @@
         "(going to : futur proche)",
         "to",
         "x"
+       ],
+       "new": [
+        "nouvelle",
+        "new",
+        "a"
        ]
       }
      },
@@ -2197,6 +2275,12 @@
         "make",
         "v",
         "faire"
+       ],
+       "best": [
+        "meilleurs",
+        "good",
+        "a",
+        "bon"
        ]
       }
      },
@@ -2219,12 +2303,17 @@
         "y (are on it)",
         "it",
         "p"
+       ],
+       "old": [
+        "ancienne",
+        "old",
+        "a"
        ]
       }
      },
      {
       "en": "Grandpa laughed. “Ours was the best treasure in Scotland,” he said.",
-      "fr": "Grand-père rit. « Le nôtre était le plus beau trésor d'Écosse », dit-il.",
+      "fr": "Grand-père rit. « Le nôtre était le meilleur trésor d'Écosse », dit-il.",
       "g": {
        "laughed": [
         "rit",
@@ -2236,7 +2325,14 @@
      },
      {
       "en": "At the top of the new map, Léa wrote four names.",
-      "fr": "En haut de la nouvelle carte, Léa écrivit quatre noms."
+      "fr": "En haut de la nouvelle carte, Léa écrivit quatre noms.",
+      "g": {
+       "new": [
+        "nouvelle",
+        "new",
+        "a"
+       ]
+      }
      },
      {
       "en": "Under them, Tom wrote the last words: “Treasure: friends, together.”",

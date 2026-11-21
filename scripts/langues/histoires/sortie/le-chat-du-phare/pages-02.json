@@ -773,10 +773,10 @@
      },
      {
       "en": "“I hope he comes home soon.”",
-      "fr": "« J'espère qu'il rentre vite. »",
+      "fr": "« J'espère qu'il rentrera bientôt. »",
       "g": {
        "comes": [
-        "rentre (comes home)",
+        "rentrera (comes home)",
         "come",
         "v",
         "venir"
@@ -784,6 +784,11 @@
        "home": [
         "(comes home : rentre)",
         "home",
+        "d"
+       ],
+       "soon": [
+        "bientôt",
+        "soon",
         "d"
        ]
       }
@@ -830,7 +835,14 @@
      },
      {
       "en": "The lighthouse shakes a little.",
-      "fr": "Le phare tremble un peu."
+      "fr": "Le phare tremble un peu.",
+      "g": {
+       "little": [
+        "un peu",
+        "little",
+        "d"
+       ]
+      }
      },
      {
       "en": "Pebble is not happy.",
@@ -885,7 +897,15 @@
      },
      {
       "en": "Mia holds Pebble in her arms.",
-      "fr": "Mia serre Pebble dans ses bras."
+      "fr": "Mia serre Pebble dans ses bras.",
+      "g": {
+       "holds": [
+        "serre",
+        "hold",
+        "v",
+        "tenir"
+       ]
+      }
      },
      {
       "en": "“What is that?” asks Mia.",
@@ -903,7 +923,20 @@
      },
      {
       "en": "He runs up the stairs.",
-      "fr": "Il monte l'escalier en courant."
+      "fr": "Il monte l'escalier en courant.",
+      "g": {
+       "runs": [
+        "monte en courant (runs up)",
+        "run",
+        "v",
+        "courir"
+       ],
+       "up": [
+        "(runs up : monte en courant)",
+        "up",
+        "d"
+       ]
+      }
      },
      {
       "en": "He looks at the great light.",
@@ -1030,7 +1063,20 @@
     [
      {
       "en": "Suddenly, Pebble runs down the stairs.",
-      "fr": "Soudain, Pebble descend l'escalier en courant."
+      "fr": "Soudain, Pebble descend l'escalier en courant.",
+      "g": {
+       "runs": [
+        "descend en courant (runs down)",
+        "run",
+        "v",
+        "courir"
+       ],
+       "down": [
+        "(runs down : descend en courant)",
+        "down",
+        "d"
+       ]
+      }
      },
      {
       "en": "“Meow! Meow!”",
@@ -1088,7 +1134,20 @@
      },
      {
       "en": "She gives him a big hug.",
-      "fr": "Elle le serre fort dans ses bras."
+      "fr": "Elle lui fait un gros câlin.",
+      "g": {
+       "gives": [
+        "fait (gives a hug)",
+        "give",
+        "v",
+        "donner"
+       ],
+       "hug": [
+        "câlin",
+        "hug",
+        "n"
+       ]
+      }
      }
     ]
    ]
@@ -1102,7 +1161,15 @@
      },
      {
       "en": "He lights the lantern.",
-      "fr": "Il allume la lanterne."
+      "fr": "Il allume la lanterne.",
+      "g": {
+       "lights": [
+        "allume",
+        "light",
+        "v",
+        "allumer"
+       ]
+      }
      },
      {
       "en": "A warm yellow light fills the room.",
@@ -1124,7 +1191,14 @@
     [
      {
       "en": "They climb the stairs in the dark.",
-      "fr": "Ils montent l'escalier dans le noir."
+      "fr": "Ils montent l'escalier dans le noir.",
+      "g": {
+       "dark": [
+        "le noir",
+        "dark",
+        "n"
+       ]
+      }
      },
      {
       "en": "The wind is very loud.",
@@ -1171,7 +1245,14 @@
      },
      {
       "en": "The light is small, but it is bright.",
-      "fr": "La lumière est petite, mais elle est vive."
+      "fr": "La lumière est petite, mais elle est lumineuse.",
+      "g": {
+       "bright": [
+        "lumineuse",
+        "bright",
+        "a"
+       ]
+      }
      },
      {
       "en": "“Please, Sam, see our light,” says Mia.",
@@ -1200,7 +1281,7 @@
         "regarder"
        ],
        "at": [
-        "(look at : regarde)",
+        "(look at : regardent)",
         "at",
         "r"
        ]
@@ -1244,7 +1325,20 @@
      },
      {
       "en": "The rain is on his face.",
-      "fr": "La pluie lui coule sur le visage."
+      "fr": "La pluie lui tombe sur le visage.",
+      "g": {
+       "is": [
+        "tombe (is on)",
+        "be",
+        "v",
+        "être"
+       ],
+       "on": [
+        "(is on : tombe sur)",
+        "on",
+        "r"
+       ]
+      }
      },
      {
       "en": "It is very dark.",
@@ -1256,7 +1350,7 @@
      },
      {
       "en": "He is cold and afraid.",
-      "fr": "Il a froid et peur."
+      "fr": "Il a froid et il a peur."
      },
      {
       "en": "“Where is the island?” he says.",
@@ -1292,7 +1386,15 @@
     [
      {
       "en": "Slowly, the boat goes past the rocks.",
-      "fr": "Lentement, le bateau passe devant les rochers."
+      "fr": "Lentement, le bateau passe devant les rochers.",
+      "g": {
+       "goes": [
+        "passe (goes past)",
+        "go",
+        "v",
+        "aller"
+       ]
+      }
      },
      {
       "en": "Soon Sam sees the harbour.",
@@ -1320,6 +1422,12 @@
         "(thank you : merci)",
         "you",
         "p"
+       ],
+       "see": [
+        "vois",
+        "see",
+        "v",
+        "voir"
        ]
       }
      },
@@ -1370,6 +1478,11 @@
         "chez lui",
         "home",
         "d"
+       ],
+       "at": [
+        "(at home : chez lui)",
+        "at",
+        "r"
        ]
       }
      }

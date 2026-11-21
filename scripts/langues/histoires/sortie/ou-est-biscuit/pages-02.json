@@ -1,0 +1,2520 @@
+{
+ "debut": 7,
+ "lexique": {
+  "leo": [
+   "Leo (prénom)",
+   "Leo",
+   "np"
+  ],
+  "nora": [
+   "Nora (prénom)",
+   "Nora",
+   "np"
+  ],
+  "biscuit": [
+   "Biscuit (nom du chien)",
+   "Biscuit",
+   "np"
+  ],
+  "mum": [
+   "maman",
+   "mum",
+   "n"
+  ],
+  "mr": [
+   "Monsieur (Mr)",
+   "Mr",
+   "t"
+  ],
+  "mrs": [
+   "Madame (Mrs)",
+   "Mrs",
+   "t"
+  ],
+  "patel": [
+   "Patel (nom de famille)",
+   "Patel",
+   "np"
+  ],
+  "sam": [
+   "Sam (prénom)",
+   "Sam",
+   "np"
+  ],
+  "khan": [
+   "Khan (nom de famille)",
+   "Khan",
+   "np"
+  ],
+  "oakfield": [
+   "Oakfield (nom de ville)",
+   "Oakfield",
+   "np"
+  ],
+  "england": [
+   "Angleterre",
+   "England",
+   "np"
+  ],
+  "saturday": [
+   "samedi",
+   "Saturday",
+   "n"
+  ],
+  "park": [
+   "parc",
+   "park",
+   "n"
+  ],
+  "dog": [
+   "chien",
+   "dog",
+   "n"
+  ],
+  "ball": [
+   "balle",
+   "ball",
+   "n"
+  ],
+  "balls": [
+   "balles",
+   "ball",
+   "n",
+   "balle"
+  ],
+  "squirrel": [
+   "écureuil",
+   "squirrel",
+   "n"
+  ],
+  "poster": [
+   "affiche",
+   "poster",
+   "n"
+  ],
+  "posters": [
+   "affiches",
+   "poster",
+   "n",
+   "affiche"
+  ],
+  "bakery": [
+   "boulangerie",
+   "bakery",
+   "n"
+  ],
+  "school": [
+   "école",
+   "school",
+   "n"
+  ],
+  "town": [
+   "ville",
+   "town",
+   "n"
+  ],
+  "library": [
+   "bibliothèque",
+   "library",
+   "n"
+  ],
+  "leo's": [
+   "de Leo (Leo's)",
+   "Leo",
+   "np"
+  ],
+  "biscuit's": [
+   "de Biscuit (Biscuit's)",
+   "Biscuit",
+   "np"
+  ],
+  "patel's": [
+   "de Patel (Patel's)",
+   "Patel",
+   "np"
+  ],
+  "mum's": [
+   "de Maman (Mum's)",
+   "mum",
+   "n"
+  ]
+ },
+ "pages": [
+  {
+   "p": [
+    [
+     {
+      "en": "Leo and Nora go to Mr Patel's bakery.",
+      "fr": "Leo et Nora vont à la boulangerie de M. Patel.",
+      "g": {
+       "go": [
+        "vont",
+        "go",
+        "v",
+        "aller"
+       ]
+      }
+     },
+     {
+      "en": "The shop is warm and smells of bread.",
+      "fr": "La boutique est chaude et sent le pain.",
+      "g": {
+       "shop": [
+        "boutique",
+        "shop",
+        "n"
+       ],
+       "warm": [
+        "chaude",
+        "warm",
+        "a"
+       ],
+       "smells": [
+        "sent",
+        "smell",
+        "v",
+        "sentir"
+       ],
+       "of": [
+        "(smells of : sent)",
+        "of",
+        "r"
+       ],
+       "bread": [
+        "pain",
+        "bread",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "There are rolls, cakes and big white loaves.",
+      "fr": "Il y a des petits pains, des gâteaux et de gros pains blancs.",
+      "g": {
+       "there": [
+        "(there are : il y a)",
+        "there",
+        "d"
+       ],
+       "are": [
+        "(there are : il y a)",
+        "be",
+        "v",
+        "être"
+       ],
+       "rolls": [
+        "petits pains",
+        "roll",
+        "n",
+        "petit pain"
+       ],
+       "cakes": [
+        "gâteaux",
+        "cake",
+        "n",
+        "gâteau"
+       ],
+       "big": [
+        "gros",
+        "big",
+        "a",
+        "grand"
+       ],
+       "white": [
+        "blancs",
+        "white",
+        "a",
+        "blanc"
+       ],
+       "loaves": [
+        "pains",
+        "loaf",
+        "n",
+        "pain"
+       ]
+      }
+     },
+     {
+      "en": "Mr Patel is a tall man with a kind smile.",
+      "fr": "M. Patel est un grand homme au sourire gentil.",
+      "g": {
+       "tall": [
+        "grand",
+        "tall",
+        "a"
+       ],
+       "man": [
+        "homme",
+        "man",
+        "n"
+       ],
+       "kind": [
+        "gentil",
+        "kind",
+        "a"
+       ],
+       "smile": [
+        "sourire",
+        "smile",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"Hello, Leo!\" he says.",
+      "fr": "« Bonjour, Leo ! » dit-il.",
+      "g": {
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"What's the matter?\"",
+      "fr": "« Qu'est-ce qui ne va pas ? »",
+      "g": {
+       "what's": [
+        "(what's the matter : qu'est-ce qui ne va pas)",
+        "be",
+        "v",
+        "être"
+       ],
+       "the": [
+        "(what's the matter : ce qui ne va pas)",
+        "the",
+        "t"
+       ],
+       "matter": [
+        "(what's the matter : qu'est-ce qui ne va pas)",
+        "matter",
+        "n",
+        "affaire"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "\"Biscuit is lost,\" says Leo.",
+      "fr": "« Biscuit est perdu », dit Leo.",
+      "g": {
+       "lost": [
+        "perdu",
+        "lost",
+        "a"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"Is he in your shop?\"",
+      "fr": "« Est-il dans votre boutique ? »",
+      "g": {
+       "shop": [
+        "boutique",
+        "shop",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Mr Patel looks around the shop.",
+      "fr": "M. Patel regarde dans toute la boutique.",
+      "g": {
+       "looks": [
+        "regarde",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "shop": [
+        "boutique",
+        "shop",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"No dog here,\" he says. \"I'm sorry.\"",
+      "fr": "« Pas de chien ici, dit-il. Je suis désolé. »",
+      "g": {
+       "no": [
+        "pas de",
+        "no",
+        "t"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "sorry": [
+        "désolé",
+        "sorry",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Leo's face is sad.",
+      "fr": "Leo a l'air triste.",
+      "g": {
+       "face": [
+        "visage (face is sad : a l'air triste)",
+        "face",
+        "n"
+       ],
+       "is": [
+        "(face is sad : a l'air triste)",
+        "be",
+        "v",
+        "être"
+       ],
+       "sad": [
+        "triste",
+        "sad",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Mr Patel gives him a warm bun.",
+      "fr": "M. Patel lui donne un petit pain chaud.",
+      "g": {
+       "gives": [
+        "donne",
+        "give",
+        "v",
+        "donner"
+       ],
+       "warm": [
+        "chaud",
+        "warm",
+        "a"
+       ],
+       "bun": [
+        "petit pain",
+        "bun",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "\"I make bread in the back room,\" he says.",
+      "fr": "« Je fais du pain dans l'arrière-boutique », dit-il.",
+      "g": {
+       "make": [
+        "fais",
+        "make",
+        "v",
+        "faire"
+       ],
+       "bread": [
+        "pain",
+        "bread",
+        "n"
+       ],
+       "back": [
+        "(back room : arrière-boutique)",
+        "back",
+        "a"
+       ],
+       "room": [
+        "arrière-boutique (back room)",
+        "room",
+        "n",
+        "pièce"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"The big oven is hot, so the back door is open.\"",
+      "fr": "« Le grand four est chaud, alors la porte de derrière est ouverte. »",
+      "g": {
+       "big": [
+        "grand",
+        "big",
+        "a"
+       ],
+       "oven": [
+        "four",
+        "oven",
+        "n"
+       ],
+       "hot": [
+        "chaud",
+        "hot",
+        "a"
+       ],
+       "so": [
+        "alors",
+        "so",
+        "c"
+       ],
+       "back": [
+        "de derrière (back door)",
+        "back",
+        "a"
+       ],
+       "door": [
+        "porte",
+        "door",
+        "n"
+       ],
+       "open": [
+        "ouverte",
+        "open",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "\"Make a poster,\" he says.",
+      "fr": "« Faites une affiche », dit-il.",
+      "g": {
+       "make": [
+        "faites",
+        "make",
+        "v",
+        "faire"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"I will put it in my window.\"",
+      "fr": "« Je la mettrai dans ma vitrine. »",
+      "g": {
+       "put": [
+        "mettrai",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "window": [
+        "vitrine",
+        "window",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Leo eats the bun, but he is not hungry.",
+      "fr": "Leo mange le petit pain, mais il n'a pas faim.",
+      "g": {
+       "eats": [
+        "mange",
+        "eat",
+        "v",
+        "manger"
+       ],
+       "bun": [
+        "petit pain",
+        "bun",
+        "n"
+       ],
+       "is": [
+        "(is not hungry : n'a pas faim)",
+        "be",
+        "v",
+        "être"
+       ],
+       "not": [
+        "(is not hungry : n'a pas faim)",
+        "not",
+        "d"
+       ],
+       "hungry": [
+        "faim (not hungry : pas faim)",
+        "hungry",
+        "a"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 4 — The bakery",
+   "titreFr": "Chapitre 4 — La boulangerie"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "The library is next to the bakery.",
+      "fr": "La bibliothèque est à côté de la boulangerie.",
+      "g": {
+       "next": [
+        "à côté (next to)",
+        "next",
+        "d"
+       ],
+       "to": [
+        "(next to : à côté de)",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "It is open on Saturday morning.",
+      "fr": "Elle est ouverte le samedi matin.",
+      "g": {
+       "open": [
+        "ouverte",
+        "open",
+        "a"
+       ],
+       "on": [
+        "le (on Saturday : le samedi)",
+        "on",
+        "r"
+       ],
+       "morning": [
+        "matin",
+        "morning",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Inside, a tall woman is reading a book.",
+      "fr": "À l'intérieur, une grande femme lit un livre.",
+      "g": {
+       "tall": [
+        "grande",
+        "tall",
+        "a"
+       ],
+       "woman": [
+        "femme",
+        "woman",
+        "n"
+       ],
+       "is": [
+        "(is reading : lit)",
+        "be",
+        "v",
+        "être"
+       ],
+       "reading": [
+        "lit",
+        "read",
+        "v",
+        "lire"
+       ],
+       "book": [
+        "livre",
+        "book",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "It is Mrs Khan, and she smiles.",
+      "fr": "C'est Mme Khan, et elle sourit.",
+      "g": {
+       "it": [
+        "(it is : c'est)",
+        "it",
+        "p"
+       ],
+       "is": [
+        "c'est",
+        "be",
+        "v",
+        "être"
+       ],
+       "smiles": [
+        "sourit",
+        "smile",
+        "v",
+        "sourire"
+       ]
+      }
+     },
+     {
+      "en": "\"Can I have paper and pens?\" asks Nora.",
+      "fr": "« Puis-je avoir du papier et des feutres ? » demande Nora.",
+      "g": {
+       "can": [
+        "(can I have : puis-je avoir)",
+        "can",
+        "v",
+        "pouvoir"
+       ],
+       "paper": [
+        "papier",
+        "paper",
+        "n"
+       ],
+       "pens": [
+        "feutres",
+        "pen",
+        "n",
+        "feutre"
+       ],
+       "asks": [
+        "demande",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Mrs Khan has red, black and blue pens.",
+      "fr": "Mme Khan a des feutres rouges, noirs et bleus.",
+      "g": {
+       "red": [
+        "rouges",
+        "red",
+        "a",
+        "rouge"
+       ],
+       "black": [
+        "noirs",
+        "black",
+        "a",
+        "noir"
+       ],
+       "blue": [
+        "bleus",
+        "blue",
+        "a",
+        "bleu"
+       ],
+       "pens": [
+        "feutres",
+        "pen",
+        "n",
+        "feutre"
+       ]
+      }
+     },
+     {
+      "en": "Leo and Nora sit at a big table.",
+      "fr": "Leo et Nora s'assoient à une grande table.",
+      "g": {
+       "sit": [
+        "s'assoient",
+        "sit",
+        "v",
+        "s'asseoir"
+       ],
+       "big": [
+        "grande",
+        "big",
+        "a"
+       ],
+       "table": [
+        "table",
+        "table",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Nora writes the words.",
+      "fr": "Nora écrit les mots.",
+      "g": {
+       "writes": [
+        "écrit",
+        "write",
+        "v",
+        "écrire"
+       ],
+       "words": [
+        "mots",
+        "word",
+        "n",
+        "mot"
+       ]
+      }
+     },
+     {
+      "en": "Leo draws Biscuit.",
+      "fr": "Leo dessine Biscuit.",
+      "g": {
+       "draws": [
+        "dessine",
+        "draw",
+        "v",
+        "dessiner"
+       ]
+      }
+     },
+     {
+      "en": "He draws two big ears and a short tail.",
+      "fr": "Il dessine deux grandes oreilles et une queue courte.",
+      "g": {
+       "draws": [
+        "dessine",
+        "draw",
+        "v",
+        "dessiner"
+       ],
+       "big": [
+        "grandes",
+        "big",
+        "a",
+        "grand"
+       ],
+       "ears": [
+        "oreilles",
+        "ear",
+        "n",
+        "oreille"
+       ],
+       "short": [
+        "courte",
+        "short",
+        "a",
+        "court"
+       ],
+       "tail": [
+        "queue",
+        "tail",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He uses the brown pen for Biscuit.",
+      "fr": "Il utilise le feutre brun pour Biscuit.",
+      "g": {
+       "uses": [
+        "utilise",
+        "use",
+        "v",
+        "utiliser"
+       ],
+       "brown": [
+        "brun",
+        "brown",
+        "a"
+       ],
+       "pen": [
+        "feutre",
+        "pen",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "The red pen is for the ball.",
+      "fr": "Le feutre rouge est pour la balle.",
+      "g": {
+       "red": [
+        "rouge",
+        "red",
+        "a"
+       ],
+       "pen": [
+        "feutre",
+        "pen",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "The poster says: LOST DOG.",
+      "fr": "L'affiche dit : CHIEN PERDU.",
+      "g": {
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "lost": [
+        "perdu",
+        "lost",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "\"Small, brown, very friendly. His name is Biscuit.\"",
+      "fr": "« Petit, brun, très gentil. Il s'appelle Biscuit. »",
+      "g": {
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ],
+       "brown": [
+        "brun",
+        "brown",
+        "a"
+       ],
+       "friendly": [
+        "gentil",
+        "friendly",
+        "a"
+       ],
+       "name": [
+        "(his name is : il s'appelle)",
+        "name",
+        "n"
+       ],
+       "is": [
+        "(his name is : il s'appelle)",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     },
+     {
+      "en": "Nora puts Mum's phone number at the bottom.",
+      "fr": "Nora met le numéro de téléphone de Maman en bas.",
+      "g": {
+       "puts": [
+        "met",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "phone": [
+        "téléphone",
+        "phone",
+        "n"
+       ],
+       "number": [
+        "numéro",
+        "number",
+        "n"
+       ],
+       "at": [
+        "(at the bottom : en bas)",
+        "at",
+        "r"
+       ],
+       "bottom": [
+        "bas (at the bottom : en bas)",
+        "bottom",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"It is a very good poster!\" says Mrs Khan.",
+      "fr": "« C'est une très bonne affiche ! » dit Mme Khan.",
+      "g": {
+       "it": [
+        "(it is : c'est)",
+        "it",
+        "p"
+       ],
+       "is": [
+        "c'est",
+        "be",
+        "v",
+        "être"
+       ],
+       "good": [
+        "bonne",
+        "good",
+        "a"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 5 — The posters",
+   "titreFr": "Chapitre 5 — Les affiches"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Mrs Khan makes ten copies of the poster.",
+      "fr": "Mme Khan fait dix copies de l'affiche.",
+      "g": {
+       "makes": [
+        "fait",
+        "make",
+        "v",
+        "faire"
+       ],
+       "copies": [
+        "copies",
+        "copy",
+        "n",
+        "copie"
+       ]
+      }
+     },
+     {
+      "en": "They put posters on trees and lamp posts.",
+      "fr": "Ils mettent des affiches sur les arbres et les lampadaires.",
+      "g": {
+       "put": [
+        "mettent",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "trees": [
+        "arbres",
+        "tree",
+        "n",
+        "arbre"
+       ],
+       "lamp": [
+        "lampadaires (lamp post)",
+        "lamp",
+        "n"
+       ],
+       "posts": [
+        "(lamp posts : lampadaires)",
+        "post",
+        "n",
+        "poteau"
+       ]
+      }
+     },
+     {
+      "en": "They put one on the school gate.",
+      "fr": "Ils en mettent une sur la grille de l'école.",
+      "g": {
+       "put": [
+        "mettent",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "one": [
+        "une (affiche)",
+        "one",
+        "p"
+       ],
+       "gate": [
+        "grille",
+        "gate",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Sam the postman comes on his red bike.",
+      "fr": "Sam le facteur arrive sur son vélo rouge.",
+      "g": {
+       "postman": [
+        "facteur",
+        "postman",
+        "n"
+       ],
+       "comes": [
+        "arrive",
+        "come",
+        "v",
+        "venir"
+       ],
+       "red": [
+        "rouge",
+        "red",
+        "a"
+       ],
+       "bike": [
+        "vélo",
+        "bike",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He gives posters to all the neighbours.",
+      "fr": "Il donne des affiches à tous les voisins.",
+      "g": {
+       "gives": [
+        "donne",
+        "give",
+        "v",
+        "donner"
+       ],
+       "neighbours": [
+        "voisins",
+        "neighbour",
+        "n",
+        "voisin"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Soon, a lot of people are looking for Biscuit.",
+      "fr": "Bientôt, beaucoup de gens cherchent Biscuit.",
+      "g": {
+       "lot": [
+        "(a lot of : beaucoup de)",
+        "lot",
+        "n"
+       ],
+       "of": [
+        "(a lot of : beaucoup de)",
+        "of",
+        "r"
+       ],
+       "people": [
+        "gens",
+        "people",
+        "n"
+       ],
+       "are": [
+        "(are looking : cherchent)",
+        "be",
+        "v",
+        "être"
+       ],
+       "looking": [
+        "cherchent",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "for": [
+        "(looking for : chercher)",
+        "for",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Mrs Green has her glasses on her nose now.",
+      "fr": "Mme Green a maintenant ses lunettes sur le nez.",
+      "g": {
+       "green": [
+        "Green (nom de famille)",
+        "Green",
+        "np"
+       ],
+       "glasses": [
+        "lunettes",
+        "glasses",
+        "n"
+       ],
+       "nose": [
+        "nez",
+        "nose",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "She looks in every garden.",
+      "fr": "Elle regarde dans chaque jardin.",
+      "g": {
+       "looks": [
+        "regarde",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "garden": [
+        "jardin",
+        "garden",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Mr Patel puts a poster in his window.",
+      "fr": "M. Patel met une affiche dans sa vitrine.",
+      "g": {
+       "puts": [
+        "met",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "window": [
+        "vitrine",
+        "window",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Two boys look under the cars.",
+      "fr": "Deux garçons regardent sous les voitures.",
+      "g": {
+       "boys": [
+        "garçons",
+        "boy",
+        "n",
+        "garçon"
+       ],
+       "look": [
+        "regardent",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "cars": [
+        "voitures",
+        "car",
+        "n",
+        "voiture"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "The sun is going down.",
+      "fr": "Le soleil se couche.",
+      "g": {
+       "sun": [
+        "soleil",
+        "sun",
+        "n"
+       ],
+       "is": [
+        "(is going down : se couche)",
+        "be",
+        "v",
+        "être"
+       ],
+       "going": [
+        "(is going down : se couche)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "down": [
+        "(going down : se couche)",
+        "down",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Leo is tired and sad.",
+      "fr": "Leo est fatigué et triste.",
+      "g": {
+       "tired": [
+        "fatigué",
+        "tired",
+        "a"
+       ],
+       "sad": [
+        "triste",
+        "sad",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "\"I want Biscuit,\" he says.",
+      "fr": "« Je veux Biscuit », dit-il.",
+      "g": {
+       "want": [
+        "veux",
+        "want",
+        "v",
+        "vouloir"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"Come on,\" says Nora. \"Let's go home.\"",
+      "fr": "« Allez, viens, dit Nora. Rentrons. »",
+      "g": {
+       "come": [
+        "viens",
+        "come",
+        "v",
+        "venir"
+       ],
+       "on": [
+        "(come on : allez, viens)",
+        "on",
+        "d"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "go": [
+        "(let's go home : rentrons)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "home": [
+        "(go home : rentrer)",
+        "home",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "\"Mum is waiting for us.\"",
+      "fr": "« Maman nous attend. »",
+      "g": {
+       "is": [
+        "(is waiting for : attend)",
+        "be",
+        "v",
+        "être"
+       ],
+       "waiting": [
+        "attend",
+        "wait",
+        "v",
+        "attendre"
+       ],
+       "for": [
+        "(waiting for : attendre)",
+        "for",
+        "r"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "It is evening, and the family is at home.",
+      "fr": "C'est le soir, et la famille est à la maison.",
+      "g": {
+       "it": [
+        "(it is : c'est)",
+        "it",
+        "p"
+       ],
+       "is": [
+        "c'est",
+        "be",
+        "v",
+        "être"
+       ],
+       "evening": [
+        "soir",
+        "evening",
+        "n"
+       ],
+       "is#2": [
+        "est",
+        "be",
+        "v",
+        "être"
+       ],
+       "family": [
+        "famille",
+        "family",
+        "n"
+       ],
+       "home": [
+        "à la maison",
+        "home",
+        "n"
+       ],
+       "at": [
+        "(at home : à la maison)",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "The kitchen clock says eight.",
+      "fr": "L'horloge de la cuisine indique huit heures.",
+      "g": {
+       "kitchen": [
+        "cuisine",
+        "kitchen",
+        "n"
+       ],
+       "clock": [
+        "horloge",
+        "clock",
+        "n"
+       ],
+       "says": [
+        "indique",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "There is soup on the table, but nobody is eating.",
+      "fr": "Il y a de la soupe sur la table, mais personne ne mange.",
+      "g": {
+       "there": [
+        "(there is : il y a)",
+        "there",
+        "d"
+       ],
+       "is": [
+        "(there is : il y a)",
+        "be",
+        "v",
+        "être"
+       ],
+       "soup": [
+        "soupe",
+        "soup",
+        "n"
+       ],
+       "table": [
+        "table",
+        "table",
+        "n"
+       ],
+       "nobody": [
+        "personne",
+        "nobody",
+        "p"
+       ],
+       "is#2": [
+        "(is eating : mange)",
+        "be",
+        "v",
+        "être"
+       ],
+       "eating": [
+        "mange",
+        "eat",
+        "v",
+        "manger"
+       ]
+      }
+     },
+     {
+      "en": "Leo looks at Biscuit's empty bed.",
+      "fr": "Leo regarde le panier vide de Biscuit.",
+      "g": {
+       "looks": [
+        "regarde",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(look at : regarder)",
+        "at",
+        "r"
+       ],
+       "empty": [
+        "vide",
+        "empty",
+        "a"
+       ],
+       "bed": [
+        "panier",
+        "bed",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "There are only two red balls in it.",
+      "fr": "Il n'y a que deux balles rouges dedans.",
+      "g": {
+       "there": [
+        "(there are : il y a)",
+        "there",
+        "d"
+       ],
+       "are": [
+        "(there are : il y a)",
+        "be",
+        "v",
+        "être"
+       ],
+       "only": [
+        "que (only : seulement)",
+        "only",
+        "d"
+       ],
+       "red": [
+        "rouges",
+        "red",
+        "a",
+        "rouge"
+       ],
+       "in": [
+        "dedans (in it)",
+        "in",
+        "r"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "\"Where is Biscuit tonight?\" asks Leo.",
+      "fr": "« Où est Biscuit ce soir ? » demande Leo.",
+      "g": {
+       "asks": [
+        "demande",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     },
+     {
+      "en": "\"Is he cold?\"",
+      "fr": "« A-t-il froid ? »",
+      "g": {
+       "is": [
+        "(is he cold : a-t-il froid)",
+        "be",
+        "v",
+        "être"
+       ],
+       "cold": [
+        "froid",
+        "cold",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "\"Is he hungry?\"",
+      "fr": "« A-t-il faim ? »",
+      "g": {
+       "is": [
+        "(is he hungry : a-t-il faim)",
+        "be",
+        "v",
+        "être"
+       ],
+       "hungry": [
+        "faim",
+        "hungry",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Mum hugs him.",
+      "fr": "Maman le serre dans ses bras.",
+      "g": {
+       "hugs": [
+        "serre dans ses bras",
+        "hug",
+        "v",
+        "serrer dans ses bras"
+       ]
+      }
+     },
+     {
+      "en": "\"Biscuit is a clever dog,\" she says.",
+      "fr": "« Biscuit est un chien malin », dit-elle.",
+      "g": {
+       "clever": [
+        "malin",
+        "clever",
+        "a"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"Many people are looking for him.\"",
+      "fr": "« Beaucoup de gens le cherchent. »",
+      "g": {
+       "people": [
+        "gens",
+        "people",
+        "n"
+       ],
+       "are": [
+        "(are looking : cherchent)",
+        "be",
+        "v",
+        "être"
+       ],
+       "looking": [
+        "cherchent",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "for": [
+        "(looking for : chercher)",
+        "for",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Nora sits next to Leo and holds his hand.",
+      "fr": "Nora s'assoit à côté de Leo et lui tient la main.",
+      "g": {
+       "sits": [
+        "s'assoit",
+        "sit",
+        "v",
+        "s'asseoir"
+       ],
+       "next": [
+        "à côté (next to)",
+        "next",
+        "d"
+       ],
+       "to": [
+        "(next to : à côté de)",
+        "to",
+        "r"
+       ],
+       "holds": [
+        "tient",
+        "hold",
+        "v",
+        "tenir"
+       ],
+       "hand": [
+        "main",
+        "hand",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "After dinner, Leo goes to bed.",
+      "fr": "Après le dîner, Leo va se coucher.",
+      "g": {
+       "dinner": [
+        "dîner",
+        "dinner",
+        "n"
+       ],
+       "goes": [
+        "va",
+        "go",
+        "v",
+        "aller"
+       ],
+       "to": [
+        "(go to bed : se coucher)",
+        "to",
+        "r"
+       ],
+       "bed": [
+        "(go to bed : se coucher)",
+        "bed",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He can't sleep.",
+      "fr": "Il n'arrive pas à dormir.",
+      "g": {
+       "can't": [
+        "(can't sleep : n'arrive pas à)",
+        "can",
+        "v",
+        "pouvoir"
+       ],
+       "sleep": [
+        "dormir",
+        "sleep",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "He looks at the dark window.",
+      "fr": "Il regarde la fenêtre sombre.",
+      "g": {
+       "looks": [
+        "regarde",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(look at : regarder)",
+        "at",
+        "r"
+       ],
+       "dark": [
+        "sombre",
+        "dark",
+        "a"
+       ],
+       "window": [
+        "fenêtre",
+        "window",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"Come home, Biscuit,\" he says softly.",
+      "fr": "« Reviens à la maison, Biscuit », dit-il doucement.",
+      "g": {
+       "come": [
+        "reviens",
+        "come",
+        "v",
+        "venir"
+       ],
+       "home": [
+        "à la maison",
+        "home",
+        "d"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "softly": [
+        "doucement",
+        "softly",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Then, downstairs, a phone rings.",
+      "fr": "Puis, en bas, un téléphone sonne.",
+      "g": {
+       "downstairs": [
+        "en bas",
+        "downstairs",
+        "d"
+       ],
+       "phone": [
+        "téléphone",
+        "phone",
+        "n"
+       ],
+       "rings": [
+        "sonne",
+        "ring",
+        "v",
+        "sonner"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 6 — A sad evening",
+   "titreFr": "Chapitre 6 — Un soir triste"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Mum picks up the phone.",
+      "fr": "Maman décroche le téléphone.",
+      "g": {
+       "picks": [
+        "décroche (picks up)",
+        "pick",
+        "v",
+        "ramasser"
+       ],
+       "up": [
+        "(picks up : décroche)",
+        "up",
+        "d"
+       ],
+       "phone": [
+        "téléphone",
+        "phone",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"Hello? Yes, this is Leo's mum.\"",
+      "fr": "« Allô ? Oui, c'est la maman de Leo. »",
+      "g": {
+       "hello": [
+        "allô",
+        "hello",
+        "d"
+       ],
+       "this": [
+        "(this is : c'est)",
+        "this",
+        "p"
+       ],
+       "is": [
+        "c'est",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     },
+     {
+      "en": "Her face changes. She smiles!",
+      "fr": "Son visage change. Elle sourit !",
+      "g": {
+       "face": [
+        "visage",
+        "face",
+        "n"
+       ],
+       "changes": [
+        "change",
+        "change",
+        "v",
+        "changer"
+       ],
+       "smiles": [
+        "sourit",
+        "smile",
+        "v",
+        "sourire"
+       ]
+      }
+     },
+     {
+      "en": "\"Really? Oh, thank you, Mr Patel!\"",
+      "fr": "« Vraiment ? Oh, merci, M. Patel ! »",
+      "g": {
+       "thank": [
+        "merci (thank you)",
+        "thank",
+        "v",
+        "remercier"
+       ],
+       "you": [
+        "(thank you : merci)",
+        "you",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Leo runs down the stairs.",
+      "fr": "Leo descend l'escalier en courant.",
+      "g": {
+       "runs": [
+        "descend en courant (runs down)",
+        "run",
+        "v",
+        "courir"
+       ],
+       "down": [
+        "(runs down : descend)",
+        "down",
+        "r"
+       ],
+       "stairs": [
+        "escalier",
+        "stairs",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "\"Biscuit is at the bakery!\" says Mum.",
+      "fr": "« Biscuit est à la boulangerie ! » dit Maman.",
+      "g": {
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"He is asleep near the hot oven.\"",
+      "fr": "« Il dort près du four chaud. »",
+      "g": {
+       "is": [
+        "(is asleep : dort)",
+        "be",
+        "v",
+        "être"
+       ],
+       "asleep": [
+        "dort (is asleep)",
+        "asleep",
+        "a"
+       ],
+       "hot": [
+        "chaud",
+        "hot",
+        "a"
+       ],
+       "oven": [
+        "four",
+        "oven",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"He has a red ball with him!\"",
+      "fr": "« Il a une balle rouge avec lui ! »",
+      "g": {
+       "red": [
+        "rouge",
+        "red",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "\"He is safe and warm.\"",
+      "fr": "« Il est en sécurité et au chaud. »",
+      "g": {
+       "safe": [
+        "en sécurité",
+        "safe",
+        "a"
+       ],
+       "warm": [
+        "au chaud",
+        "warm",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Leo jumps up and down.",
+      "fr": "Leo saute sur place.",
+      "g": {
+       "jumps": [
+        "saute",
+        "jump",
+        "v",
+        "sauter"
+       ],
+       "up": [
+        "(jumps up and down : saute sur place)",
+        "up",
+        "d"
+       ],
+       "down": [
+        "(up and down : sur place)",
+        "down",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Leo hugs his mum.",
+      "fr": "Leo serre sa maman dans ses bras.",
+      "g": {
+       "hugs": [
+        "serre dans ses bras",
+        "hug",
+        "v",
+        "serrer dans ses bras"
+       ]
+      }
+     },
+     {
+      "en": "\"Let's go now!\" says Nora.",
+      "fr": "« Allons-y maintenant ! » dit Nora.",
+      "g": {
+       "go": [
+        "y aller",
+        "go",
+        "v",
+        "aller"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "\"Mr Patel is waiting at the door,\" says Mum.",
+      "fr": "« M. Patel nous attend à la porte », dit Maman.",
+      "g": {
+       "is": [
+        "(is waiting : attend)",
+        "be",
+        "v",
+        "être"
+       ],
+       "waiting": [
+        "attend",
+        "wait",
+        "v",
+        "attendre"
+       ],
+       "door": [
+        "porte",
+        "door",
+        "n"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "They put on their coats and shoes.",
+      "fr": "Ils mettent leurs manteaux et leurs chaussures.",
+      "g": {
+       "put": [
+        "mettent",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "on": [
+        "(put on : mettre)",
+        "on",
+        "x"
+       ],
+       "coats": [
+        "manteaux",
+        "coat",
+        "n",
+        "manteau"
+       ],
+       "shoes": [
+        "chaussures",
+        "shoe",
+        "n",
+        "chaussure"
+       ]
+      }
+     },
+     {
+      "en": "They run down Oak Street in the dark.",
+      "fr": "Ils courent le long d'Oak Street dans l'obscurité.",
+      "g": {
+       "run": [
+        "courent",
+        "run",
+        "v"
+       ],
+       "down": [
+        "le long de",
+        "down",
+        "r"
+       ],
+       "oak": [
+        "Oak (nom de rue)",
+        "Oak",
+        "np"
+       ],
+       "street": [
+        "Street (rue)",
+        "street",
+        "n"
+       ],
+       "dark": [
+        "l'obscurité",
+        "dark",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "The street lamps are yellow and bright.",
+      "fr": "Les lampadaires sont jaunes et brillants.",
+      "g": {
+       "street": [
+        "(street lamps : lampadaires)",
+        "street",
+        "n"
+       ],
+       "lamps": [
+        "lampadaires",
+        "lamp",
+        "n",
+        "lampe"
+       ],
+       "yellow": [
+        "jaunes",
+        "yellow",
+        "a",
+        "jaune"
+       ],
+       "bright": [
+        "brillants",
+        "bright",
+        "a",
+        "brillant"
+       ]
+      }
+     },
+     {
+      "en": "The bakery window shines like a little sun.",
+      "fr": "La vitrine de la boulangerie brille comme un petit soleil.",
+      "g": {
+       "window": [
+        "vitrine",
+        "window",
+        "n"
+       ],
+       "shines": [
+        "brille",
+        "shine",
+        "v",
+        "briller"
+       ],
+       "little": [
+        "petit",
+        "little",
+        "a"
+       ],
+       "sun": [
+        "soleil",
+        "sun",
+        "n"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 7 — Good news",
+   "titreFr": "Chapitre 7 — Une bonne nouvelle"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Mr Patel opens the door.",
+      "fr": "M. Patel ouvre la porte.",
+      "g": {
+       "opens": [
+        "ouvre",
+        "open",
+        "v",
+        "ouvrir"
+       ],
+       "door": [
+        "porte",
+        "door",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"Shh,\" he says. \"Come and see.\"",
+      "fr": "« Chut, dit-il. Venez voir. »",
+      "g": {
+       "shh": [
+        "chut",
+        "shh",
+        "d"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "come": [
+        "venez",
+        "come",
+        "v",
+        "venir"
+       ],
+       "see": [
+        "voir",
+        "see",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "In the back room, Biscuit is asleep on a soft bag of flour.",
+      "fr": "Dans l'arrière-boutique, Biscuit dort sur un sac de farine tout doux.",
+      "g": {
+       "back": [
+        "(back room : arrière-boutique)",
+        "back",
+        "a"
+       ],
+       "room": [
+        "arrière-boutique (back room)",
+        "room",
+        "n",
+        "pièce"
+       ],
+       "is": [
+        "(is asleep : dort)",
+        "be",
+        "v",
+        "être"
+       ],
+       "asleep": [
+        "dort (is asleep)",
+        "asleep",
+        "a"
+       ],
+       "soft": [
+        "doux",
+        "soft",
+        "a"
+       ],
+       "bag": [
+        "sac",
+        "bag",
+        "n"
+       ],
+       "flour": [
+        "farine",
+        "flour",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He holds the red ball with his paws.",
+      "fr": "Il tient la balle rouge avec ses pattes.",
+      "g": {
+       "holds": [
+        "tient",
+        "hold",
+        "v",
+        "tenir"
+       ],
+       "red": [
+        "rouge",
+        "red",
+        "a"
+       ],
+       "paws": [
+        "pattes",
+        "paw",
+        "n",
+        "patte"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "\"Biscuit!\" whispers Leo.",
+      "fr": "« Biscuit ! » murmure Leo.",
+      "g": {
+       "whispers": [
+        "murmure",
+        "whisper",
+        "v",
+        "murmurer"
+       ]
+      }
+     },
+     {
+      "en": "The little dog opens one eye.",
+      "fr": "Le petit chien ouvre un œil.",
+      "g": {
+       "little": [
+        "petit",
+        "little",
+        "a"
+       ],
+       "opens": [
+        "ouvre",
+        "open",
+        "v",
+        "ouvrir"
+       ],
+       "eye": [
+        "œil",
+        "eye",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "His tail wags and wags.",
+      "fr": "Sa queue remue et remue.",
+      "g": {
+       "tail": [
+        "queue",
+        "tail",
+        "n"
+       ],
+       "wags": [
+        "remue",
+        "wag",
+        "v",
+        "remuer"
+       ],
+       "wags#2": [
+        "(wags and wags : remue et remue)",
+        "wag",
+        "v",
+        "remuer"
+       ]
+      }
+     },
+     {
+      "en": "Then he jumps up and licks Leo's face!",
+      "fr": "Puis il bondit et lèche le visage de Leo !",
+      "g": {
+       "jumps": [
+        "bondit",
+        "jump",
+        "v",
+        "sauter"
+       ],
+       "up": [
+        "(jumps up : bondit)",
+        "up",
+        "d"
+       ],
+       "licks": [
+        "lèche",
+        "lick",
+        "v",
+        "lécher"
+       ],
+       "face": [
+        "visage",
+        "face",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Leo laughs and hugs his dog.",
+      "fr": "Leo rit et serre son chien dans ses bras.",
+      "g": {
+       "laughs": [
+        "rit",
+        "laugh",
+        "v",
+        "rire"
+       ],
+       "hugs": [
+        "serre dans ses bras",
+        "hug",
+        "v",
+        "serrer dans ses bras"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "\"He likes the smell of warm bread,\" says Mr Patel.",
+      "fr": "« Il aime l'odeur du pain chaud », dit M. Patel.",
+      "g": {
+       "likes": [
+        "aime",
+        "like",
+        "v",
+        "aimer"
+       ],
+       "smell": [
+        "odeur",
+        "smell",
+        "n"
+       ],
+       "warm": [
+        "chaud",
+        "warm",
+        "a"
+       ],
+       "bread": [
+        "pain",
+        "bread",
+        "n"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"Now he is a very happy dog,\" says Nora.",
+      "fr": "« Maintenant, c'est un chien très heureux », dit Nora.",
+      "g": {
+       "is": [
+        "c'est",
+        "be",
+        "v",
+        "être"
+       ],
+       "happy": [
+        "heureux",
+        "happy",
+        "a"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "Sam and Mrs Green come to the bakery too.",
+      "fr": "Sam et Mme Green viennent aussi à la boulangerie.",
+      "g": {
+       "green": [
+        "Green (nom de famille)",
+        "Green",
+        "np"
+       ],
+       "come": [
+        "viennent",
+        "come",
+        "v",
+        "venir"
+       ],
+       "too": [
+        "aussi",
+        "too",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Mr Patel gives everybody a warm bun.",
+      "fr": "M. Patel donne un petit pain chaud à tout le monde.",
+      "g": {
+       "gives": [
+        "donne",
+        "give",
+        "v",
+        "donner"
+       ],
+       "warm": [
+        "chaud",
+        "warm",
+        "a"
+       ],
+       "bun": [
+        "petit pain",
+        "bun",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "At home, Biscuit sleeps in his bed with three red balls.",
+      "fr": "À la maison, Biscuit dort dans son panier avec trois balles rouges.",
+      "g": {
+       "at": [
+        "(at home : à la maison)",
+        "at",
+        "r"
+       ],
+       "home": [
+        "la maison (at home)",
+        "home",
+        "n"
+       ],
+       "sleeps": [
+        "dort",
+        "sleep",
+        "v",
+        "dormir"
+       ],
+       "bed": [
+        "panier",
+        "bed",
+        "n"
+       ],
+       "red": [
+        "rouges",
+        "red",
+        "a",
+        "rouge"
+       ]
+      }
+     },
+     {
+      "en": "\"Good night, Biscuit,\" says Leo.",
+      "fr": "« Bonne nuit, Biscuit », dit Leo.",
+      "g": {
+       "good": [
+        "bonne",
+        "good",
+        "a"
+       ],
+       "night": [
+        "nuit",
+        "night",
+        "n"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 8 — Home again",
+   "titreFr": "Chapitre 8 — De retour à la maison"
+  }
+ ]
+}

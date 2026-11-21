@@ -417,7 +417,7 @@
      },
      {
       "en": "These are daring men, and though we shall take them at a disadvantage, they may do us some harm unless we are careful.",
-      "fr": "Ce sont des hommes audacieux, et bien que nous allions les prendre au dépourvu, ils peuvent nous faire du mal si nous ne sommes pas prudents.",
+      "fr": "Ce sont des hommes audacieux, et bien que nous allions les prendre au dépourvu, ils peuvent nous faire du mal à moins que nous ne soyons prudents.",
       "g": {
        "these": [
         "ce (These are : ce sont)",
@@ -437,7 +437,7 @@
         "homme"
        ],
        "shall": [
-        "allons",
+        "allions",
         "shall",
         "v",
         "(futur)"
@@ -483,7 +483,7 @@
         "n"
        ],
        "unless": [
-        "à moins que (sauf si)",
+        "à moins que",
         "unless",
         "c"
        ],
@@ -544,13 +544,13 @@
      },
      {
       "en": "Then, when I flash a light upon them, close in swiftly.",
-      "fr": "Alors, quand je projetterai de la lumière sur eux, rabattez-vous vivement sur eux.",
+      "fr": "Alors, quand je braquerai une lumière sur eux, resserrez vivement l'étau.",
       "g": {
        "flash": [
-        "projetterai",
+        "braquerai",
         "flash",
         "v",
-        "projeter"
+        "braquer"
        ],
        "light": [
         "lumière",
@@ -558,13 +558,13 @@
         "n"
        ],
        "close": [
-        "refermez-vous (close in : cernez)",
+        "resserrez (close in : resserrez l'étau)",
         "close",
         "v",
         "fermer"
        ],
        "in": [
-        "(close in : cernez)",
+        "(close in : resserrez l'étau)",
         "in",
         "x",
         "dans"
@@ -578,7 +578,7 @@
      },
      {
       "en": "If they fire, Watson, have no compunction about shooting them down.”",
-      "fr": "S'ils tirent, Watson, n'hésitez pas à les abattre sans scrupule. »",
+      "fr": "S'ils tirent, Watson, n'ayez aucun scrupule à les abattre. »",
       "g": {
        "fire": [
         "tirent",
@@ -587,13 +587,13 @@
         "tirer"
        ],
        "have": [
-        "(have no compunction : n'hésitez pas)",
+        "n'ayez (have no compunction : n'ayez aucun scrupule)",
         "have",
         "v",
         "avoir"
        ],
        "no": [
-        "(have no compunction : n'hésitez pas)",
+        "aucun (have no compunction)",
         "no",
         "t",
         "aucun"
@@ -604,7 +604,7 @@
         "n"
        ],
        "about": [
-        "(compunction about : scrupule à)",
+        "à (compunction about : scrupule à)",
         "about",
         "r",
         "au sujet de"
@@ -678,7 +678,7 @@
      },
      {
       "en": "Holmes shot the slide across the front of his lantern and left us in pitch darkness — such an absolute darkness as I have never before experienced.",
-      "fr": "Holmes fit glisser le volet devant sa lanterne et nous laissa dans une obscurité complète, une obscurité si absolue que je n'en avais jamais connu de pareille.",
+      "fr": "Holmes fit glisser le volet devant sa lanterne et nous laissa dans une obscurité complète, une obscurité si absolue que je n'en ai jamais connu de pareille.",
       "g": {
        "shot": [
         "fit glisser",
@@ -693,13 +693,13 @@
         "glissière"
        ],
        "across": [
-        "en travers de",
+        "(across the front of : devant)",
         "across",
         "r",
         "à travers"
        ],
        "front": [
-        "devant",
+        "devant (across the front of)",
         "front",
         "n",
         "avant"
@@ -921,7 +921,7 @@
         "a"
        ],
        "dank": [
-        "humide et glacé",
+        "humide",
         "dank",
         "a",
         "humide"
@@ -943,7 +943,7 @@
     [
      {
       "en": "“They have but one retreat,” whispered Holmes.",
-      "fr": "« Ils n'ont qu'une seule retraite, murmura Holmes.",
+      "fr": "« Ils n'ont qu'une seule voie de repli, murmura Holmes.",
       "g": {
        "have": [
         "ont",
@@ -979,7 +979,7 @@
      },
      {
       "en": "“That is back through the house into Saxe-Coburg Square.",
-      "fr": "C'est de repasser par la maison, vers Saxe-Coburg Square.",
+      "fr": "C'est de repasser par la maison, jusque dans Saxe-Coburg Square.",
       "g": {
        "that": [
         "c' (That is : c'est)",
@@ -988,7 +988,7 @@
         "ce"
        ],
        "back": [
-        "en repassant (back through : repasser par)",
+        "repasser (back through : repasser par)",
         "back",
         "d",
         "dos, en arrière"
@@ -1005,7 +1005,7 @@
         "n"
        ],
        "into": [
-        "vers",
+        "jusque dans",
         "into",
         "r",
         "dans"
@@ -1287,7 +1287,7 @@
      },
      {
       "en": "My limbs were weary and stiff, for I feared to change my position; yet my nerves were worked up to the highest pitch of tension, and my hearing was so acute that I could not only hear the gentle breathing of my companions, but I could distinguish the deeper, heavier in-breath of the bulky Jones from the thin, sighing note of the bank director.",
-      "fr": "Mes membres étaient las et raides, car je craignais de changer de position ; pourtant mes nerfs étaient tendus à l'extrême, et mon ouïe était si fine que je pouvais non seulement entendre la douce respiration de mes compagnons, mais encore distinguer l'inspiration plus profonde et plus lourde du corpulent Jones du souffle ténu et soupirant du directeur de la banque.",
+      "fr": "Mes membres étaient las et raides, car je craignais de changer de position ; pourtant mes nerfs étaient tendus au plus haut degré de tension, et mon ouïe était si fine que je pouvais non seulement entendre la douce respiration de mes compagnons, mais encore distinguer l'inspiration plus profonde et plus lourde du corpulent Jones du souffle ténu et soupirant du directeur de la banque.",
       "g": {
        "limbs": [
         "membres",
@@ -1347,7 +1347,7 @@
         "n"
        ],
        "tension": [
-        "tension",
+        "(pitch of tension : degré de tension)",
         "tension",
         "n"
        ],
@@ -1992,7 +1992,7 @@
      },
      {
       "en": "Over the edge there peeped a clean-cut, boyish face, which looked keenly about it, and then, with a hand on either side of the aperture, drew itself shoulder-high and waist-high, until one knee rested upon the edge.",
-      "fr": "Par-dessus le bord apparut un visage aux traits nets, d'allure juvénile, qui regarda attentivement autour de lui, puis, une main de chaque côté de l'ouverture, se hissa jusqu'aux épaules puis jusqu'à la taille, jusqu'à ce qu'un genou reposât sur le bord.",
+      "fr": "Par-dessus le bord pointa un visage aux traits nets, d'allure juvénile, qui regarda attentivement autour de lui, puis, une main de chaque côté de l'ouverture, se hissa jusqu'aux épaules et jusqu'à la taille, jusqu'à ce qu'un genou reposât sur le bord.",
       "g": {
        "over": [
         "par-dessus",
@@ -2005,13 +2005,13 @@
         "n"
        ],
        "there": [
-        "(there peeped : apparut)",
+        "(there peeped : pointa)",
         "there",
         "d",
         "là"
        ],
        "peeped": [
-        "apparut furtivement",
+        "pointa",
         "peep",
         "v",
         "jeter un coup d'œil"
@@ -2439,13 +2439,13 @@
      },
      {
       "en": "The light flashed upon the barrel of a revolver, but Holmes’ hunting crop came down on the man’s wrist, and the pistol clinked upon the stone floor.",
-      "fr": "La lumière jaillit sur le canon d'un revolver, mais la cravache de chasse de Holmes s'abattit sur le poignet de l'homme, et le pistolet tinta sur le dallage de pierre.",
+      "fr": "La lumière brilla sur le canon d'un revolver, mais la cravache de chasse de Holmes s'abattit sur le poignet de l'homme, et le pistolet tinta sur le dallage de pierre.",
       "g": {
        "flashed": [
-        "jaillit",
+        "brilla",
         "flash",
         "v",
-        "jaillir"
+        "briller"
        ],
        "barrel": [
         "canon",
@@ -3022,7 +3022,7 @@
         "c"
        ],
        "will": [
-        "(ne… pas)",
+        "(will not : ne pas)",
         "will",
         "v",
         "(futur)"
@@ -3092,7 +3092,7 @@
         "pouvoir"
        ],
        "aware": [
-        "au courant",
+        "(not be aware : ignorez)",
         "aware",
         "a",
         "conscient"
@@ -3232,7 +3232,7 @@
         "n"
        ],
        "march": [
-        "monter d'un pas ferme",
+        "monter (march)",
         "march",
         "v",
         "marcher"
@@ -3270,6 +3270,12 @@
         "poste de police",
         "police-station",
         "n"
+       ],
+       "can": [
+        "pourrons",
+        "can",
+        "v",
+        "pouvoir"
        ]
       }
      }
@@ -3301,7 +3307,7 @@
      },
      {
       "en": "He made a sweeping bow to the three of us and walked quietly off in the custody of the detective.",
-      "fr": "Il fit une ample révérence à nous trois et s'éloigna paisiblement sous la garde du détective.",
+      "fr": "Il fit une ample révérence devant nous trois et s'éloigna paisiblement sous la garde du détective.",
       "g": {
        "made": [
         "fit",
@@ -3405,6 +3411,12 @@
         "repay",
         "v",
         "rembourser"
+       ],
+       "can": [
+        "pourra",
+        "can",
+        "v",
+        "pouvoir"
        ]
       }
      },
@@ -3570,7 +3582,7 @@
      },
      {
       "en": "“I have been at some small expense over this matter, which I shall expect the bank to refund, but beyond that I am amply repaid by having had an experience which is in many ways unique, and by hearing the very remarkable narrative of the Red-headed League.”",
-      "fr": "J'ai engagé quelques menus frais dans cette affaire, que j'attends de la banque qu'elle me rembourse ; mais, au-delà, je suis amplement payé par l'expérience, à bien des égards unique, que j'ai vécue, et par le récit très remarquable de la Ligue des Roux. »",
+      "fr": "J'ai engagé quelques menus frais dans cette affaire, que j'attends de la banque qu'elle me rembourse ; mais, au-delà, je suis amplement payé par l'expérience, à bien des égards unique, que j'ai vécue, et par le fait d'avoir entendu le très remarquable récit de la Ligue des Roux. »",
       "g": {
        "have": [
         "ai",
@@ -3648,7 +3660,7 @@
         "rembourser"
        ],
        "having": [
-        "ayant",
+        "(having had : avoir vécu)",
         "have",
         "v",
         "avoir"
@@ -3682,7 +3694,7 @@
         "a"
        ],
        "hearing": [
-        "le fait d'entendre",
+        "d'avoir entendu",
         "hear",
         "v",
         "entendre"
@@ -3826,7 +3838,7 @@
         "d"
        ],
        "fantastic": [
-        "fantastique, extravagant",
+        "fantastique",
         "fantastic",
         "a"
        ],
@@ -4091,21 +4103,27 @@
         "thousand",
         "n",
         "mille"
+       ],
+       "was#2": [
+        "(what was it : qu'était-ce)",
+        "be",
+        "v",
+        "être"
        ]
       }
      },
      {
       "en": "They put in the advertisement, one rogue has the temporary office, the other rogue incites the man to apply for it, and together they manage to secure his absence every morning in the week.",
-      "fr": "Ils font passer l'annonce, un coquin occupe le bureau provisoire, l'autre coquin pousse l'homme à postuler, et à eux deux ils parviennent à s'assurer de son absence chaque matin de la semaine.",
+      "fr": "Ils font paraître l'annonce, un coquin occupe le bureau provisoire, l'autre coquin pousse l'homme à postuler, et à eux deux ils parviennent à s'assurer de son absence chaque matin de la semaine.",
       "g": {
        "put": [
-        "font passer",
+        "font paraître (put in)",
         "put",
         "v",
         "mettre"
        ],
        "in": [
-        "(put in : faire passer)",
+        "(put in : font paraître)",
         "in",
         "x",
         "dans"
@@ -4397,7 +4415,7 @@
      },
      {
       "en": "That, however, was out of the question.",
-      "fr": "Mais cela était hors de question.",
+      "fr": "Cela, cependant, était hors de question.",
       "g": {
        "that": [
         "cela",
@@ -4406,7 +4424,7 @@
         "ce"
        ],
        "however": [
-        "mais",
+        "cependant",
         "however",
         "d",
         "cependant"
@@ -4426,7 +4444,7 @@
      },
      {
       "en": "The man’s business was a small one, and there was nothing in his house which could account for such elaborate preparations, and such an expenditure as they were at.",
-      "fr": "Le commerce de cet homme était petit, et rien dans sa maison ne pouvait expliquer des préparatifs aussi élaborés, ni une dépense telle que celle qu'ils engageaient.",
+      "fr": "Le commerce de cet homme était modeste, et rien dans sa maison ne pouvait expliquer des préparatifs aussi élaborés, ni une dépense telle que celle qu'ils engageaient.",
       "g": {
        "man's": [
         "de cet homme",
@@ -4441,7 +4459,7 @@
         "affaires"
        ],
        "one": [
-        "(a small one : un petit)",
+        "(a small one : modeste)",
         "one",
         "p",
         "un"
@@ -4514,6 +4532,11 @@
         "at",
         "r",
         "à"
+       ],
+       "small": [
+        "modeste",
+        "small",
+        "a"
        ]
       }
      },
@@ -4661,13 +4684,13 @@
       "fr": "Puis je me suis renseigné sur ce mystérieux employé et découvert que j'avais affaire à l'un des criminels les plus froids et les plus audacieux de Londres.",
       "g": {
        "made": [
-        "ai fait",
+        "(made inquiries : me suis renseigné)",
         "make",
         "v",
         "faire"
        ],
        "inquiries": [
-        "recherches",
+        "(made inquiries : me suis renseigné)",
         "inquiry",
         "n",
         "enquête"
@@ -5382,22 +5405,22 @@
      },
      {
       "en": "I walked round the corner, saw the City and Suburban Bank abutted on our friend’s premises, and felt that I had solved my problem.",
-      "fr": "J'ai fait le tour du coin, j'ai vu que la City and Suburban Bank jouxtait les locaux de notre ami, et j'ai senti que j'avais résolu mon problème.",
+      "fr": "J'ai tourné au coin de la rue, j'ai vu que la City and Suburban Bank jouxtait les locaux de notre ami, et j'ai senti que j'avais résolu mon problème.",
       "g": {
        "walked": [
-        "ai fait (walked round : fis le tour)",
+        "ai tourné (walked round : tourné au coin)",
         "walk",
         "v",
         "marcher"
        ],
        "round": [
-        "(walked round : j'ai fait le tour)",
+        "(walked round : tourné au coin)",
         "round",
         "r",
         "autour de"
        ],
        "corner": [
-        "coin",
+        "coin de la rue",
         "corner",
         "n"
        ],
@@ -5471,7 +5494,7 @@
      },
      {
       "en": "When you drove home after the concert I called upon Scotland Yard and upon the chairman of the bank directors, with the result that you have seen.”",
-      "fr": "Quand vous êtes rentré en voiture après le concert, je suis allé voir Scotland Yard puis le président du conseil des directeurs de la banque, avec le résultat que vous avez vu. »",
+      "fr": "Quand vous êtes rentré en voiture après le concert, je suis allé voir Scotland Yard et le président des directeurs de la banque, avec le résultat que vous avez vu. »",
       "g": {
        "drove": [
         "êtes rentré en voiture",
@@ -5573,13 +5596,13 @@
         "(conditionnel)"
        ],
        "make": [
-        "tenteraient",
+        "(make an attempt : tenteraient)",
         "make",
         "v",
         "faire"
        ],
        "attempt": [
-        "coup, tentative",
+        "coup (tentative)",
         "attempt",
         "n",
         "tentative"
@@ -5715,6 +5738,11 @@
         "tunnel",
         "tunnel",
         "n"
+       ],
+       "that#3": [
+        "que",
+        "that",
+        "c"
        ]
       }
      },

@@ -1,0 +1,2453 @@
+{
+ "debut": 1,
+ "lexique": {
+  "leo": [
+   "Leo (prénom)",
+   "Leo",
+   "np"
+  ],
+  "nora": [
+   "Nora (prénom)",
+   "Nora",
+   "np"
+  ],
+  "biscuit": [
+   "Biscuit (nom du chien)",
+   "Biscuit",
+   "np"
+  ],
+  "mum": [
+   "maman",
+   "mum",
+   "n"
+  ],
+  "mr": [
+   "Monsieur (Mr)",
+   "Mr",
+   "t"
+  ],
+  "mrs": [
+   "Madame (Mrs)",
+   "Mrs",
+   "t"
+  ],
+  "patel": [
+   "Patel (nom de famille)",
+   "Patel",
+   "np"
+  ],
+  "sam": [
+   "Sam (prénom)",
+   "Sam",
+   "np"
+  ],
+  "khan": [
+   "Khan (nom de famille)",
+   "Khan",
+   "np"
+  ],
+  "oakfield": [
+   "Oakfield (nom de ville)",
+   "Oakfield",
+   "np"
+  ],
+  "england": [
+   "Angleterre",
+   "England",
+   "np"
+  ],
+  "saturday": [
+   "samedi",
+   "Saturday",
+   "n"
+  ],
+  "park": [
+   "parc",
+   "park",
+   "n"
+  ],
+  "dog": [
+   "chien",
+   "dog",
+   "n"
+  ],
+  "ball": [
+   "balle",
+   "ball",
+   "n"
+  ],
+  "balls": [
+   "balles",
+   "ball",
+   "n",
+   "balle"
+  ],
+  "squirrel": [
+   "écureuil",
+   "squirrel",
+   "n"
+  ],
+  "poster": [
+   "affiche",
+   "poster",
+   "n"
+  ],
+  "posters": [
+   "affiches",
+   "poster",
+   "n",
+   "affiche"
+  ],
+  "bakery": [
+   "boulangerie",
+   "bakery",
+   "n"
+  ],
+  "school": [
+   "école",
+   "school",
+   "n"
+  ],
+  "town": [
+   "ville",
+   "town",
+   "n"
+  ],
+  "library": [
+   "bibliothèque",
+   "library",
+   "n"
+  ],
+  "leo's": [
+   "de Leo (Leo's)",
+   "Leo",
+   "np"
+  ],
+  "biscuit's": [
+   "de Biscuit (Biscuit's)",
+   "Biscuit",
+   "np"
+  ],
+  "patel's": [
+   "de Patel (Patel's)",
+   "Patel",
+   "np"
+  ],
+  "mum's": [
+   "de Maman (Mum's)",
+   "mum",
+   "n"
+  ]
+ },
+ "pages": [
+  {
+   "p": [
+    [
+     {
+      "en": "Leo is eight years old.",
+      "fr": "Leo a huit ans.",
+      "g": {
+       "is": [
+        "(is… years old : a)",
+        "be",
+        "v",
+        "être"
+       ],
+       "years": [
+        "ans",
+        "year",
+        "n",
+        "an"
+       ],
+       "old": [
+        "(years old : ans)",
+        "old",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "He lives in a small town in England.",
+      "fr": "Il habite dans une petite ville en Angleterre.",
+      "g": {
+       "lives": [
+        "habite",
+        "live",
+        "v",
+        "vivre"
+       ],
+       "small": [
+        "petite",
+        "small",
+        "a",
+        "petit"
+       ],
+       "in": [
+        "dans",
+        "in",
+        "r"
+       ],
+       "in#2": [
+        "en (en Angleterre)",
+        "in",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "It is a nice town.",
+      "fr": "C'est une jolie ville.",
+      "g": {
+       "it": [
+        "(it is : c'est)",
+        "it",
+        "p"
+       ],
+       "is": [
+        "c'est",
+        "be",
+        "v",
+        "être"
+       ],
+       "nice": [
+        "jolie",
+        "nice",
+        "a",
+        "joli"
+       ]
+      }
+     },
+     {
+      "en": "Leo lives with his mum and his big sister, Nora.",
+      "fr": "Leo vit avec sa maman et sa grande sœur, Nora.",
+      "g": {
+       "lives": [
+        "vit",
+        "live",
+        "v",
+        "vivre"
+       ],
+       "big": [
+        "grande",
+        "big",
+        "a",
+        "grand"
+       ],
+       "sister": [
+        "sœur",
+        "sister",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Nora is twelve.",
+      "fr": "Nora a douze ans.",
+      "g": {
+       "is": [
+        "a (is twelve : a douze ans)",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "They have a dog.",
+      "fr": "Ils ont un chien."
+     },
+     {
+      "en": "His name is Biscuit.",
+      "fr": "Il s'appelle Biscuit.",
+      "g": {
+       "name": [
+        "(his name is : il s'appelle)",
+        "name",
+        "n"
+       ],
+       "is": [
+        "(his name is : il s'appelle)",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     },
+     {
+      "en": "Biscuit is small and brown.",
+      "fr": "Biscuit est petit et brun.",
+      "g": {
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ],
+       "brown": [
+        "brun",
+        "brown",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "He has big ears and a short tail.",
+      "fr": "Il a de grandes oreilles et une queue courte.",
+      "g": {
+       "big": [
+        "grandes",
+        "big",
+        "a",
+        "grand"
+       ],
+       "ears": [
+        "oreilles",
+        "ear",
+        "n",
+        "oreille"
+       ],
+       "short": [
+        "courte",
+        "short",
+        "a",
+        "court"
+       ],
+       "tail": [
+        "queue",
+        "tail",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He likes to run and jump.",
+      "fr": "Il aime courir et sauter.",
+      "g": {
+       "likes": [
+        "aime",
+        "like",
+        "v",
+        "aimer"
+       ],
+       "to": [
+        "(to run : courir)",
+        "to",
+        "x"
+       ],
+       "run": [
+        "courir",
+        "run",
+        "v"
+       ],
+       "jump": [
+        "sauter",
+        "jump",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "Biscuit loves red balls.",
+      "fr": "Biscuit adore les balles rouges.",
+      "g": {
+       "loves": [
+        "adore",
+        "love",
+        "v",
+        "aimer"
+       ],
+       "red": [
+        "rouges",
+        "red",
+        "a",
+        "rouge"
+       ]
+      }
+     },
+     {
+      "en": "He has three red balls in his bed.",
+      "fr": "Il a trois balles rouges dans son panier.",
+      "g": {
+       "red": [
+        "rouges",
+        "red",
+        "a",
+        "rouge"
+       ],
+       "bed": [
+        "panier",
+        "bed",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Today is Saturday.",
+      "fr": "Aujourd'hui, c'est samedi.",
+      "g": {
+       "is": [
+        "c'est",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     },
+     {
+      "en": "The sun is shining.",
+      "fr": "Le soleil brille.",
+      "g": {
+       "sun": [
+        "soleil",
+        "sun",
+        "n"
+       ],
+       "is": [
+        "(is shining : brille)",
+        "be",
+        "v",
+        "être"
+       ],
+       "shining": [
+        "brille",
+        "shine",
+        "v",
+        "briller"
+       ]
+      }
+     },
+     {
+      "en": "Leo puts on his yellow coat.",
+      "fr": "Leo met son manteau jaune.",
+      "g": {
+       "puts": [
+        "met",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "on": [
+        "(puts on : met)",
+        "on",
+        "x"
+       ],
+       "yellow": [
+        "jaune",
+        "yellow",
+        "a"
+       ],
+       "coat": [
+        "manteau",
+        "coat",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Mum takes her bag and her book.",
+      "fr": "Maman prend son sac et son livre.",
+      "g": {
+       "takes": [
+        "prend",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "bag": [
+        "sac",
+        "bag",
+        "n"
+       ],
+       "book": [
+        "livre",
+        "book",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"Let's go to the park!\" says Leo.",
+      "fr": "« Allons au parc ! » dit Leo.",
+      "g": {
+       "go": [
+        "aller",
+        "go",
+        "v"
+       ],
+       "to": [
+        "au",
+        "to",
+        "r"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"Yes!\" says Nora.",
+      "fr": "« Oui ! » dit Nora.",
+      "g": {
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "Biscuit hears the word \"park\".",
+      "fr": "Biscuit entend le mot « parc ».",
+      "g": {
+       "hears": [
+        "entend",
+        "hear",
+        "v",
+        "entendre"
+       ],
+       "word": [
+        "mot",
+        "word",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "His tail goes round and round.",
+      "fr": "Sa queue tourne en rond.",
+      "g": {
+       "tail": [
+        "queue",
+        "tail",
+        "n"
+       ],
+       "goes": [
+        "tourne",
+        "go",
+        "v",
+        "aller"
+       ],
+       "round": [
+        "en rond (round and round)",
+        "round",
+        "d"
+       ],
+       "round#2": [
+        "(round and round : en rond)",
+        "round",
+        "d"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 1 — A Saturday in Oakfield",
+   "titreFr": "Chapitre 1 — Un samedi à Oakfield"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "The family walks along Oak Street.",
+      "fr": "La famille marche le long d'Oak Street.",
+      "g": {
+       "family": [
+        "famille",
+        "family",
+        "n"
+       ],
+       "walks": [
+        "marche",
+        "walk",
+        "v",
+        "marcher"
+       ],
+       "oak": [
+        "Oak (nom de rue)",
+        "Oak",
+        "np"
+       ],
+       "street": [
+        "Street (rue)",
+        "street",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "They pass the bakery and the school.",
+      "fr": "Ils passent devant la boulangerie et l'école.",
+      "g": {
+       "pass": [
+        "passent devant",
+        "pass",
+        "v",
+        "passer"
+       ]
+      }
+     },
+     {
+      "en": "The bakery smells of warm bread.",
+      "fr": "La boulangerie sent le pain chaud.",
+      "g": {
+       "smells": [
+        "sent",
+        "smell",
+        "v",
+        "sentir"
+       ],
+       "of": [
+        "(smells of : sent)",
+        "of",
+        "r"
+       ],
+       "warm": [
+        "chaud",
+        "warm",
+        "a"
+       ],
+       "bread": [
+        "pain",
+        "bread",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Mr Patel waves from the door.",
+      "fr": "M. Patel fait signe de la main depuis la porte.",
+      "g": {
+       "waves": [
+        "fait signe de la main",
+        "wave",
+        "v",
+        "faire signe"
+       ],
+       "door": [
+        "porte",
+        "door",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"Hello, Leo! Hello, Biscuit!\" he says.",
+      "fr": "« Bonjour, Leo ! Bonjour, Biscuit ! » dit-il.",
+      "g": {
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "The park is big and green.",
+      "fr": "Le parc est grand et vert.",
+      "g": {
+       "big": [
+        "grand",
+        "big",
+        "a"
+       ],
+       "green": [
+        "vert",
+        "green",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "There are trees, flowers and a pond.",
+      "fr": "Il y a des arbres, des fleurs et un étang.",
+      "g": {
+       "there": [
+        "(there are : il y a)",
+        "there",
+        "d"
+       ],
+       "are": [
+        "(there are : il y a)",
+        "be",
+        "v",
+        "être"
+       ],
+       "trees": [
+        "arbres",
+        "tree",
+        "n",
+        "arbre"
+       ],
+       "flowers": [
+        "fleurs",
+        "flower",
+        "n",
+        "fleur"
+       ],
+       "pond": [
+        "étang",
+        "pond",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Two ducks are on the pond.",
+      "fr": "Deux canards sont sur l'étang.",
+      "g": {
+       "ducks": [
+        "canards",
+        "duck",
+        "n",
+        "canard"
+       ],
+       "pond": [
+        "étang",
+        "pond",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Mum sits on a bench with her book.",
+      "fr": "Maman s'assoit sur un banc avec son livre.",
+      "g": {
+       "sits": [
+        "s'assoit",
+        "sit",
+        "v",
+        "s'asseoir"
+       ],
+       "bench": [
+        "banc",
+        "bench",
+        "n"
+       ],
+       "book": [
+        "livre",
+        "book",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"Stay together,\" she says.",
+      "fr": "« Restez ensemble », dit-elle.",
+      "g": {
+       "stay": [
+        "restez",
+        "stay",
+        "v",
+        "rester"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"I am here, near the pond.\"",
+      "fr": "« Je suis ici, près de l'étang. »",
+      "g": {
+       "pond": [
+        "étang",
+        "pond",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Leo throws the red ball.",
+      "fr": "Leo lance la balle rouge.",
+      "g": {
+       "throws": [
+        "lance",
+        "throw",
+        "v",
+        "lancer"
+       ],
+       "red": [
+        "rouge",
+        "red",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Biscuit runs very fast.",
+      "fr": "Biscuit court très vite.",
+      "g": {
+       "runs": [
+        "court",
+        "run",
+        "v",
+        "courir"
+       ],
+       "fast": [
+        "vite",
+        "fast",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "He catches the ball in his mouth.",
+      "fr": "Il attrape la balle dans sa gueule.",
+      "g": {
+       "catches": [
+        "attrape",
+        "catch",
+        "v",
+        "attraper"
+       ],
+       "mouth": [
+        "gueule",
+        "mouth",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"Good dog!\" says Leo.",
+      "fr": "« Bon chien ! » dit Leo.",
+      "g": {
+       "good": [
+        "bon",
+        "good",
+        "a"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "Nora laughs and takes a photo.",
+      "fr": "Nora rit et prend une photo.",
+      "g": {
+       "laughs": [
+        "rit",
+        "laugh",
+        "v",
+        "rire"
+       ],
+       "takes": [
+        "prend",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "photo": [
+        "photo",
+        "photo",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Biscuit is happy, and so is Leo.",
+      "fr": "Biscuit est content, et Leo aussi.",
+      "g": {
+       "happy": [
+        "content",
+        "happy",
+        "a"
+       ],
+       "so": [
+        "(so is Leo : Leo aussi)",
+        "so",
+        "d"
+       ],
+       "is#2": [
+        "(so is Leo : Leo aussi)",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Suddenly, Biscuit stops.",
+      "fr": "Soudain, Biscuit s'arrête.",
+      "g": {
+       "suddenly": [
+        "soudain",
+        "suddenly",
+        "d"
+       ],
+       "stops": [
+        "s'arrête",
+        "stop",
+        "v",
+        "s'arrêter"
+       ]
+      }
+     },
+     {
+      "en": "His ears go up.",
+      "fr": "Ses oreilles se dressent.",
+      "g": {
+       "ears": [
+        "oreilles",
+        "ear",
+        "n",
+        "oreille"
+       ],
+       "go": [
+        "(go up : se dressent)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "up": [
+        "(go up : se dressent)",
+        "up",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "There is a squirrel under a tree!",
+      "fr": "Il y a un écureuil sous un arbre !",
+      "g": {
+       "there": [
+        "(there is : il y a)",
+        "there",
+        "d"
+       ],
+       "is": [
+        "(there is : il y a)",
+        "be",
+        "v",
+        "être"
+       ],
+       "tree": [
+        "arbre",
+        "tree",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "The squirrel is small and fast.",
+      "fr": "L'écureuil est petit et rapide.",
+      "g": {
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ],
+       "fast": [
+        "rapide",
+        "fast",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "The squirrel looks at Biscuit.",
+      "fr": "L'écureuil regarde Biscuit.",
+      "g": {
+       "looks": [
+        "regarde",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(look at : regarder)",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "It has a long grey tail.",
+      "fr": "Il a une longue queue grise.",
+      "g": {
+       "long": [
+        "longue",
+        "long",
+        "a"
+       ],
+       "grey": [
+        "grise",
+        "grey",
+        "a",
+        "gris"
+       ],
+       "tail": [
+        "queue",
+        "tail",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Then it runs up the tree.",
+      "fr": "Puis il grimpe dans l'arbre en courant.",
+      "g": {
+       "runs": [
+        "grimpe en courant (runs up)",
+        "run",
+        "v",
+        "courir"
+       ],
+       "up": [
+        "(runs up : grimpe)",
+        "up",
+        "r"
+       ],
+       "tree": [
+        "arbre",
+        "tree",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "\"Biscuit, no!\" shouts Leo.",
+      "fr": "« Biscuit, non ! » crie Leo.",
+      "g": {
+       "shouts": [
+        "crie",
+        "shout",
+        "v",
+        "crier"
+       ]
+      }
+     },
+     {
+      "en": "But the little dog does not listen.",
+      "fr": "Mais le petit chien n'écoute pas.",
+      "g": {
+       "little": [
+        "petit",
+        "little",
+        "a"
+       ],
+       "does": [
+        "(does not listen : n'écoute pas)",
+        "do",
+        "v",
+        "faire"
+       ],
+       "not": [
+        "(does not : ne… pas)",
+        "not",
+        "d"
+       ],
+       "listen": [
+        "écoute",
+        "listen",
+        "v",
+        "écouter"
+       ]
+      }
+     },
+     {
+      "en": "He runs with the ball in his mouth.",
+      "fr": "Il court avec la balle dans la gueule.",
+      "g": {
+       "runs": [
+        "court",
+        "run",
+        "v",
+        "courir"
+       ],
+       "mouth": [
+        "gueule",
+        "mouth",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "The squirrel jumps to another tree.",
+      "fr": "L'écureuil saute dans un autre arbre.",
+      "g": {
+       "jumps": [
+        "saute",
+        "jump",
+        "v",
+        "sauter"
+       ],
+       "to": [
+        "dans",
+        "to",
+        "r"
+       ],
+       "tree": [
+        "arbre",
+        "tree",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Biscuit runs after it, past the pond.",
+      "fr": "Biscuit court après lui, devant l'étang.",
+      "g": {
+       "runs": [
+        "court",
+        "run",
+        "v",
+        "courir"
+       ],
+       "past": [
+        "devant (past the pond)",
+        "past",
+        "r"
+       ],
+       "pond": [
+        "étang",
+        "pond",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Leo and Nora run too.",
+      "fr": "Leo et Nora courent aussi.",
+      "g": {
+       "run": [
+        "courent",
+        "run",
+        "v"
+       ],
+       "too": [
+        "aussi",
+        "too",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "\"Biscuit! Biscuit!\" they shout.",
+      "fr": "« Biscuit ! Biscuit ! » crient-ils.",
+      "g": {
+       "shout": [
+        "crient",
+        "shout",
+        "v",
+        "crier"
+       ]
+      }
+     },
+     {
+      "en": "The dog goes behind some big bushes.",
+      "fr": "Le chien passe derrière de gros buissons.",
+      "g": {
+       "goes": [
+        "passe",
+        "go",
+        "v",
+        "aller"
+       ],
+       "big": [
+        "gros",
+        "big",
+        "a",
+        "grand"
+       ],
+       "bushes": [
+        "buissons",
+        "bush",
+        "n",
+        "buisson"
+       ]
+      }
+     },
+     {
+      "en": "Then the squirrel and the dog are gone.",
+      "fr": "Puis l'écureuil et le chien ont disparu.",
+      "g": {
+       "are": [
+        "ont (are gone)",
+        "be",
+        "v",
+        "être"
+       ],
+       "gone": [
+        "disparu",
+        "go",
+        "v",
+        "aller"
+       ]
+      }
+     },
+     {
+      "en": "No dog. No squirrel. Only some green grass.",
+      "fr": "Plus de chien. Plus d'écureuil. Seulement de l'herbe verte.",
+      "g": {
+       "no": [
+        "plus de (no dog)",
+        "no",
+        "t"
+       ],
+       "no#2": [
+        "plus d' (no squirrel)",
+        "no",
+        "t"
+       ],
+       "green": [
+        "verte",
+        "green",
+        "a",
+        "vert"
+       ],
+       "grass": [
+        "herbe",
+        "grass",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Leo's heart is going very fast.",
+      "fr": "Le cœur de Leo bat très vite.",
+      "g": {
+       "heart": [
+        "cœur",
+        "heart",
+        "n"
+       ],
+       "is": [
+        "(is going : bat)",
+        "be",
+        "v",
+        "être"
+       ],
+       "going": [
+        "bat",
+        "go",
+        "v",
+        "aller"
+       ],
+       "fast": [
+        "vite",
+        "fast",
+        "d"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 2 — The squirrel",
+   "titreFr": "Chapitre 2 — L'écureuil"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "\"Where is he?\" asks Leo.",
+      "fr": "« Où est-il ? » demande Leo.",
+      "g": {
+       "asks": [
+        "demande",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     },
+     {
+      "en": "\"I don't know,\" says Nora.",
+      "fr": "« Je ne sais pas », dit Nora.",
+      "g": {
+       "know": [
+        "sais",
+        "know",
+        "v",
+        "savoir"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"Let's look around the pond.\"",
+      "fr": "« Cherchons autour de l'étang. »",
+      "g": {
+       "look": [
+        "cherchons du regard",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "pond": [
+        "étang",
+        "pond",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "They look under the trees.",
+      "fr": "Ils cherchent sous les arbres.",
+      "g": {
+       "look": [
+        "cherchent",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "trees": [
+        "arbres",
+        "tree",
+        "n",
+        "arbre"
+       ]
+      }
+     },
+     {
+      "en": "They look behind the bench.",
+      "fr": "Ils regardent derrière le banc.",
+      "g": {
+       "look": [
+        "regardent",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "bench": [
+        "banc",
+        "bench",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "They look in the flowers and in the bushes.",
+      "fr": "Ils regardent dans les fleurs et dans les buissons.",
+      "g": {
+       "look": [
+        "regardent",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "flowers": [
+        "fleurs",
+        "flower",
+        "n",
+        "fleur"
+       ],
+       "bushes": [
+        "buissons",
+        "bush",
+        "n",
+        "buisson"
+       ]
+      }
+     },
+     {
+      "en": "Leo looks at the pond. Two ducks swim away.",
+      "fr": "Leo regarde l'étang. Deux canards s'éloignent à la nage.",
+      "g": {
+       "looks": [
+        "regarde",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(look at : regarder)",
+        "at",
+        "r"
+       ],
+       "pond": [
+        "étang",
+        "pond",
+        "n"
+       ],
+       "ducks": [
+        "canards",
+        "duck",
+        "n",
+        "canard"
+       ],
+       "swim": [
+        "s'éloignent à la nage (swim away)",
+        "swim",
+        "v",
+        "nager"
+       ],
+       "away": [
+        "(swim away : s'éloignent à la nage)",
+        "away",
+        "d"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "A man is walking with a big white dog.",
+      "fr": "Un homme se promène avec un gros chien blanc.",
+      "g": {
+       "man": [
+        "homme",
+        "man",
+        "n"
+       ],
+       "is": [
+        "(is walking : se promène)",
+        "be",
+        "v",
+        "être"
+       ],
+       "walking": [
+        "se promène",
+        "walk",
+        "v",
+        "marcher"
+       ],
+       "big": [
+        "gros",
+        "big",
+        "a",
+        "grand"
+       ],
+       "white": [
+        "blanc",
+        "white",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "\"Excuse me,\" says Leo.",
+      "fr": "« Excusez-moi », dit Leo.",
+      "g": {
+       "excuse": [
+        "excusez (excuse me)",
+        "excuse",
+        "v"
+       ],
+       "me": [
+        "(excuse me : excusez-moi)",
+        "me",
+        "p"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"Is there a small brown dog here?\"",
+      "fr": "« Y a-t-il un petit chien brun ici ? »",
+      "g": {
+       "is": [
+        "(is there : y a-t-il)",
+        "be",
+        "v",
+        "être"
+       ],
+       "there": [
+        "(is there : y a-t-il)",
+        "there",
+        "d"
+       ],
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ],
+       "brown": [
+        "brun",
+        "brown",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "\"No, I'm sorry,\" says the man.",
+      "fr": "« Non, désolé », dit l'homme.",
+      "g": {
+       "sorry": [
+        "désolé",
+        "sorry",
+        "a"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "man": [
+        "homme",
+        "man",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "His big white dog looks at Leo.",
+      "fr": "Son gros chien blanc regarde Leo.",
+      "g": {
+       "big": [
+        "gros",
+        "big",
+        "a",
+        "grand"
+       ],
+       "white": [
+        "blanc",
+        "white",
+        "a"
+       ],
+       "looks": [
+        "regarde",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(look at : regarder)",
+        "at",
+        "r"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Mum comes to the pond.",
+      "fr": "Maman vient à l'étang.",
+      "g": {
+       "comes": [
+        "vient",
+        "come",
+        "v",
+        "venir"
+       ],
+       "pond": [
+        "étang",
+        "pond",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"Where is Biscuit?\" she asks.",
+      "fr": "« Où est Biscuit ? » demande-t-elle.",
+      "g": {
+       "asks": [
+        "demande",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     },
+     {
+      "en": "\"He is running after a squirrel,\" says Leo.",
+      "fr": "« Il court après un écureuil », dit Leo.",
+      "g": {
+       "is": [
+        "(is running : court)",
+        "be",
+        "v",
+        "être"
+       ],
+       "running": [
+        "court",
+        "run",
+        "v",
+        "courir"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "Leo's eyes are wet.",
+      "fr": "Les yeux de Leo sont humides.",
+      "g": {
+       "eyes": [
+        "yeux",
+        "eye",
+        "n",
+        "œil"
+       ],
+       "wet": [
+        "humides",
+        "wet",
+        "a",
+        "humide"
+       ]
+      }
+     },
+     {
+      "en": "Mum puts her arm around him.",
+      "fr": "Maman passe son bras autour de lui.",
+      "g": {
+       "puts": [
+        "passe",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "arm": [
+        "bras",
+        "arm",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"We can find him,\" she says.",
+      "fr": "« On peut le retrouver », dit-elle.",
+      "g": {
+       "can": [
+        "(can find : peut retrouver)",
+        "can",
+        "v",
+        "pouvoir"
+       ],
+       "find": [
+        "retrouver",
+        "find",
+        "v",
+        "trouver"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "\"Nora, take my phone,\" says Mum.",
+      "fr": "« Nora, prends mon téléphone », dit Maman.",
+      "g": {
+       "take": [
+        "prends",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "phone": [
+        "téléphone",
+        "phone",
+        "n"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"Look in the streets with Leo.\"",
+      "fr": "« Cherchez dans les rues avec Leo. »",
+      "g": {
+       "look": [
+        "cherchez",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "streets": [
+        "rues",
+        "street",
+        "n",
+        "rue"
+       ]
+      }
+     },
+     {
+      "en": "\"I stay here, in case he comes back.\"",
+      "fr": "« Je reste ici, au cas où il reviendrait. »",
+      "g": {
+       "stay": [
+        "reste",
+        "stay",
+        "v",
+        "rester"
+       ],
+       "in": [
+        "(in case : au cas où)",
+        "in",
+        "r"
+       ],
+       "case": [
+        "au cas où (in case)",
+        "case",
+        "n"
+       ],
+       "comes": [
+        "reviendrait (comes back)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "back": [
+        "(comes back : reviendrait)",
+        "back",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "\"Yes, Mum!\" says Nora.",
+      "fr": "« Oui, maman ! » dit Nora.",
+      "g": {
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "She is twelve, and she is very brave.",
+      "fr": "Elle a douze ans, et elle est très courageuse.",
+      "g": {
+       "is": [
+        "a (is twelve : a douze ans)",
+        "be",
+        "v",
+        "être"
+       ],
+       "is#2": [
+        "est",
+        "be",
+        "v",
+        "être"
+       ],
+       "brave": [
+        "courageuse",
+        "brave",
+        "a",
+        "courageux"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "The children walk down Oak Street.",
+      "fr": "Les enfants marchent dans Oak Street.",
+      "g": {
+       "children": [
+        "enfants",
+        "child",
+        "n",
+        "enfant"
+       ],
+       "walk": [
+        "marchent",
+        "walk",
+        "v",
+        "marcher"
+       ],
+       "down": [
+        "le long de (down the street)",
+        "down",
+        "r"
+       ],
+       "oak": [
+        "Oak (nom de rue)",
+        "Oak",
+        "np"
+       ],
+       "street": [
+        "Street (rue)",
+        "street",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "They look in a garden by a small house.",
+      "fr": "Ils regardent dans un jardin près d'une petite maison.",
+      "g": {
+       "look": [
+        "regardent",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "garden": [
+        "jardin",
+        "garden",
+        "n"
+       ],
+       "small": [
+        "petite",
+        "small",
+        "a",
+        "petit"
+       ],
+       "house": [
+        "maison",
+        "house",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "An old woman is in the garden.",
+      "fr": "Une vieille dame est dans le jardin.",
+      "g": {
+       "old": [
+        "vieille",
+        "old",
+        "a",
+        "vieux"
+       ],
+       "woman": [
+        "dame",
+        "woman",
+        "n"
+       ],
+       "garden": [
+        "jardin",
+        "garden",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "She has big round glasses.",
+      "fr": "Elle a de grosses lunettes rondes.",
+      "g": {
+       "has": [
+        "a",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "big": [
+        "grosses",
+        "big",
+        "a",
+        "grand"
+       ],
+       "round": [
+        "rondes",
+        "round",
+        "a",
+        "rond"
+       ],
+       "glasses": [
+        "lunettes",
+        "glasses",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "It is Mrs Green.",
+      "fr": "C'est Mme Green.",
+      "g": {
+       "it": [
+        "(it is : c'est)",
+        "it",
+        "p"
+       ],
+       "is": [
+        "c'est",
+        "be",
+        "v",
+        "être"
+       ],
+       "green": [
+        "Green (nom de famille)",
+        "Green",
+        "np"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "\"Hello, Mrs Green! Can you see a dog?\"",
+      "fr": "« Bonjour, Mme Green ! Voyez-vous un chien ? »",
+      "g": {
+       "can": [
+        "(can you see : voyez-vous)",
+        "can",
+        "v",
+        "pouvoir"
+       ],
+       "see": [
+        "voir",
+        "see",
+        "v"
+       ],
+       "green": [
+        "Green (nom de famille)",
+        "Green",
+        "np"
+       ]
+      }
+     },
+     {
+      "en": "\"A small brown dog,\" says Nora.",
+      "fr": "« Un petit chien brun », dit Nora.",
+      "g": {
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ],
+       "brown": [
+        "brun",
+        "brown",
+        "a"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"I can't see well,\" says Mrs Green.",
+      "fr": "« Je ne vois pas bien », dit Mme Green.",
+      "g": {
+       "can't": [
+        "(can't see : ne vois pas)",
+        "can",
+        "v",
+        "pouvoir"
+       ],
+       "see": [
+        "vois",
+        "see",
+        "v",
+        "voir"
+       ],
+       "well": [
+        "bien",
+        "well",
+        "d"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "green": [
+        "Green (nom de famille)",
+        "Green",
+        "np"
+       ]
+      }
+     },
+     {
+      "en": "\"I am looking for my glasses!\"",
+      "fr": "« Je cherche mes lunettes ! »",
+      "g": {
+       "am": [
+        "(am looking : cherche)",
+        "be",
+        "v",
+        "être"
+       ],
+       "looking": [
+        "cherche",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "for": [
+        "(looking for : chercher)",
+        "for",
+        "r"
+       ],
+       "glasses": [
+        "lunettes",
+        "glasses",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Leo looks up.",
+      "fr": "Leo lève les yeux.",
+      "g": {
+       "looks": [
+        "lève les yeux",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "up": [
+        "(looks up : lève les yeux)",
+        "up",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "The glasses are on her head!",
+      "fr": "Les lunettes sont sur sa tête !",
+      "g": {
+       "glasses": [
+        "lunettes",
+        "glasses",
+        "n"
+       ],
+       "head": [
+        "tête",
+        "head",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"Oh, thank you, Leo!\" laughs Mrs Green.",
+      "fr": "« Oh, merci, Leo ! » rit Mme Green.",
+      "g": {
+       "thank": [
+        "merci (thank you)",
+        "thank",
+        "v",
+        "remercier"
+       ],
+       "you": [
+        "(thank you : merci)",
+        "you",
+        "p"
+       ],
+       "laughs": [
+        "rit",
+        "laugh",
+        "v",
+        "rire"
+       ],
+       "green": [
+        "Green (nom de famille)",
+        "Green",
+        "np"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 3 — Looking everywhere",
+   "titreFr": "Chapitre 3 — On cherche partout"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "\"A small brown dog? No, I am sorry,\" says Mrs Green.",
+      "fr": "« Un petit chien brun ? Non, je suis désolée », dit Mme Green.",
+      "g": {
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ],
+       "brown": [
+        "brun",
+        "brown",
+        "a"
+       ],
+       "sorry": [
+        "désolée",
+        "sorry",
+        "a"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "green": [
+        "Green (nom de famille)",
+        "Green",
+        "np"
+       ]
+      }
+     },
+     {
+      "en": "\"But Sam the postman is in the street.\"",
+      "fr": "« Mais Sam le facteur est dans la rue. »",
+      "g": {
+       "postman": [
+        "facteur",
+        "postman",
+        "n"
+       ],
+       "street": [
+        "rue",
+        "street",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"He knows every dog in town!\"",
+      "fr": "« Il connaît tous les chiens de la ville ! »",
+      "g": {
+       "knows": [
+        "connaît",
+        "know",
+        "v",
+        "connaître"
+       ],
+       "every": [
+        "tous les",
+        "every",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "Sam has a red bike and a big bag.",
+      "fr": "Sam a un vélo rouge et un grand sac.",
+      "g": {
+       "red": [
+        "rouge",
+        "red",
+        "a"
+       ],
+       "bike": [
+        "vélo",
+        "bike",
+        "n"
+       ],
+       "big": [
+        "grand",
+        "big",
+        "a"
+       ],
+       "bag": [
+        "sac",
+        "bag",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"Hello, Sam!\" shouts Leo.",
+      "fr": "« Bonjour, Sam ! » crie Leo.",
+      "g": {
+       "shouts": [
+        "crie",
+        "shout",
+        "v",
+        "crier"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "\"Biscuit is lost,\" says Nora.",
+      "fr": "« Biscuit est perdu », dit Nora.",
+      "g": {
+       "lost": [
+        "perdu",
+        "lost",
+        "a"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"Can you help us?\"",
+      "fr": "« Pouvez-vous nous aider ? »",
+      "g": {
+       "can": [
+        "(can you help : pouvez-vous aider)",
+        "can",
+        "v",
+        "pouvoir"
+       ],
+       "help": [
+        "aider",
+        "help",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "\"Of course!\" says Sam.",
+      "fr": "« Bien sûr ! » dit Sam.",
+      "g": {
+       "of": [
+        "(of course : bien sûr)",
+        "of",
+        "r"
+       ],
+       "course": [
+        "bien sûr (of course)",
+        "course",
+        "n"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"I am going to the school. Maybe he is there.\"",
+      "fr": "« Je vais à l'école. Il y est peut-être. »",
+      "g": {
+       "going": [
+        "vais",
+        "go",
+        "v",
+        "aller"
+       ],
+       "there": [
+        "y (là)",
+        "there",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "The children run to the school with Sam.",
+      "fr": "Les enfants courent vers l'école avec Sam.",
+      "g": {
+       "children": [
+        "enfants",
+        "child",
+        "n",
+        "enfant"
+       ],
+       "run": [
+        "courent",
+        "run",
+        "v",
+        "courir"
+       ],
+       "to": [
+        "vers",
+        "to",
+        "r"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "The school is closed on Saturday.",
+      "fr": "L'école est fermée le samedi.",
+      "g": {
+       "closed": [
+        "fermée",
+        "closed",
+        "a",
+        "fermé"
+       ],
+       "on": [
+        "le (on Saturday : le samedi)",
+        "on",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Nobody is in the playground.",
+      "fr": "Il n'y a personne dans la cour.",
+      "g": {
+       "nobody": [
+        "personne",
+        "nobody",
+        "p"
+       ],
+       "is": [
+        "(nobody is… : il n'y a)",
+        "be",
+        "v",
+        "être"
+       ],
+       "playground": [
+        "cour de récréation",
+        "playground",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "There are two swings and a green slide.",
+      "fr": "Il y a deux balançoires et un toboggan vert.",
+      "g": {
+       "there": [
+        "(there are : il y a)",
+        "there",
+        "d"
+       ],
+       "are": [
+        "(there are : il y a)",
+        "be",
+        "v",
+        "être"
+       ],
+       "swings": [
+        "balançoires",
+        "swing",
+        "n",
+        "balançoire"
+       ],
+       "green": [
+        "vert",
+        "green",
+        "a"
+       ],
+       "slide": [
+        "toboggan",
+        "slide",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Leo calls, \"Biscuit! Come here!\"",
+      "fr": "Leo appelle : « Biscuit ! Viens ici ! »",
+      "g": {
+       "calls": [
+        "appelle",
+        "call",
+        "v",
+        "appeler"
+       ],
+       "come": [
+        "viens",
+        "come",
+        "v",
+        "venir"
+       ]
+      }
+     },
+     {
+      "en": "Nothing. Only a bird is singing in the tree.",
+      "fr": "Rien. Seul un oiseau chante dans l'arbre.",
+      "g": {
+       "bird": [
+        "oiseau",
+        "bird",
+        "n"
+       ],
+       "is": [
+        "(is singing : chante)",
+        "be",
+        "v",
+        "être"
+       ],
+       "singing": [
+        "chante",
+        "sing",
+        "v",
+        "chanter"
+       ],
+       "tree": [
+        "arbre",
+        "tree",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"He is not here,\" says Sam.",
+      "fr": "« Il n'est pas ici », dit Sam.",
+      "g": {
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"I can look on my round, too.\"",
+      "fr": "« Je peux aussi chercher pendant ma tournée. »",
+      "g": {
+       "can": [
+        "peux",
+        "can",
+        "v",
+        "pouvoir"
+       ],
+       "look": [
+        "chercher",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "round": [
+        "tournée",
+        "round",
+        "n"
+       ]
+      }
+     }
+    ]
+   ]
+  }
+ ]
+}

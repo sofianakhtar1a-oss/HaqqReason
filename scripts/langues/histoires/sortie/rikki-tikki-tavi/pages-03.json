@@ -247,18 +247,17 @@
         "n"
        ],
        "easy": [
-        "facile",
+        "aisée (à bonne portée)",
         "easy",
         "a"
        ],
        "striking": [
-        "de frappe",
-        "strike",
-        "v",
-        "frapper"
+        "de frappe (à bonne portée)",
+        "striking",
+        "a"
        ],
        "distance": [
-        "distance",
+        "portée",
         "distance",
         "n"
        ],
@@ -280,22 +279,22 @@
         "se balancer"
        ],
        "to": [
-        "d'avant",
+        "(to and fro : d'avant en arrière)",
         "to",
-        "d"
+        "r"
        ],
        "and#2": [
-        "en",
+        "(to and fro : d'avant en arrière)",
         "and",
         "c"
        ],
        "fro": [
-        "arrière",
+        "(to and fro : d'avant en arrière)",
         "fro",
         "d"
        ],
        "singing": [
-        "chantant",
+        "en chantant",
         "sing",
         "v",
         "chanter"
@@ -740,7 +739,7 @@
      },
      {
       "en": "They dare not move, and if you come a step nearer I strike.”",
-      "fr": "Ils n'osent pas bouger, et si tu t'approches d'un pas de plus, je frappe. »",
+      "fr": "Ils n'osent pas bouger, et si tu avances d'un pas de plus, je frappe. »",
       "g": {
        "dare": [
         "osent",
@@ -754,19 +753,18 @@
         "v"
        ],
        "come": [
-        "t'approches",
+        "avances",
         "come",
         "v",
         "venir"
        ],
        "step": [
-        "d'un pas",
+        "(a step nearer : d'un pas de plus)",
         "step",
-        "n",
-        "pas"
+        "n"
        ],
        "nearer": [
-        "de plus",
+        "(a step nearer : d'un pas de plus)",
         "near",
         "a",
         "proche"
@@ -1149,7 +1147,7 @@
      },
      {
       "en": "Rikki-tikki saw Teddy’s father shoot out a big hand, catch Teddy by the shoulder, and drag him across the little table with the tea-cups, safe and out of reach of Nagaina.",
-      "fr": "Rikki-tikki vit le père de Teddy lancer une grande main, attraper Teddy par l'épaule et le tirer de l'autre côté de la petite table aux tasses de thé, sain et sauf, hors de portée de Nagaina.",
+      "fr": "Rikki-tikki vit le père de Teddy tendre brusquement une grande main, attraper Teddy par l'épaule et le tirer par-dessus la petite table aux tasses de thé, sain et sauf, hors de portée de Nagaina.",
       "g": {
        "saw": [
         "vit",
@@ -1163,13 +1161,12 @@
         "n"
        ],
        "shoot": [
-        "lancer",
+        "tendre brusquement",
         "shoot",
-        "v",
-        "tirer"
+        "v"
        ],
        "out": [
-        "(shoot out : lancer)",
+        "(shoot out : tendre brusquement)",
         "out",
         "d"
        ],
@@ -1232,6 +1229,11 @@
         "portée",
         "reach",
         "n"
+       ],
+       "across": [
+        "par-dessus",
+        "across",
+        "r"
        ]
       }
      }
@@ -1292,7 +1294,7 @@
      },
      {
       "en": "“The boy is safe, and it was I — I — I that caught Nag by the hood last night in the bathroom.”",
-      "fr": "Le garçon est sauvé, et c'est moi — moi — moi qui ai attrapé Nag par le capuchon la nuit dernière dans la salle de bains. »",
+      "fr": "Le garçon est en sécurité, et c'est moi — moi — moi qui ai attrapé Nag par le capuchon la nuit dernière dans la salle de bains. »",
       "g": {
        "boy": [
         "garçon",
@@ -1300,10 +1302,9 @@
         "n"
        ],
        "safe": [
-        "sauvé",
+        "en sécurité",
         "safe",
-        "a",
-        "sûr"
+        "a"
        ],
        "i": [
         "moi",
@@ -1419,26 +1420,26 @@
      },
      {
       "en": "“He threw me to and fro, but he could not shake me off.",
-      "fr": "Il m'a ballotté de droite et de gauche, mais il n'a pas pu me faire lâcher prise.",
+      "fr": "Il m'a secoué de droite et de gauche, mais il n'a pas pu me faire lâcher prise.",
       "g": {
        "threw": [
-        "a ballotté",
+        "a secoué (a jeté)",
         "throw",
         "v",
         "jeter"
        ],
        "to": [
-        "de droite",
+        "(to and fro : de droite et de gauche)",
         "to",
         "r"
        ],
        "and": [
-        "et",
+        "(to and fro : de droite et de gauche)",
         "and",
         "c"
        ],
        "fro": [
-        "de gauche",
+        "(to and fro : de droite et de gauche)",
         "fro",
         "d"
        ],
@@ -1552,15 +1553,15 @@
      },
      {
       "en": "You shall not be a widow long.”",
-      "fr": "Tu ne resteras pas veuve longtemps. »",
+      "fr": "Tu ne seras pas veuve longtemps. »",
       "g": {
        "shall": [
-        "(futur)",
+        "(futur : ne seras pas)",
         "shall",
         "v"
        ],
        "be": [
-        "resteras",
+        "seras",
         "be",
         "v",
         "être"
@@ -1644,7 +1645,7 @@
      },
      {
       "en": "Give me the last of my eggs, and I will go away and never come back,” she said, lowering her hood.",
-      "fr": "Donne-moi le dernier de mes œufs, et je m'en irai pour ne jamais revenir, dit-elle en baissant son capuchon.",
+      "fr": "Donne-moi le dernier de mes œufs, et je m'en irai et ne reviendrai jamais, dit-elle en baissant son capuchon.",
       "g": {
        "give": [
         "donne",
@@ -1675,7 +1676,7 @@
         "d"
        ],
        "come": [
-        "revenir",
+        "reviendrai",
         "come",
         "v",
         "venir"
@@ -2230,13 +2231,7 @@
         "venir"
        ],
        "nearer": [
-        "de plus (nearer and nearer : de plus en plus)",
-        "near",
-        "a",
-        "proche"
-       ],
-       "nearer#2": [
-        "en plus",
+        "(nearer and nearer : de plus en plus)",
         "near",
         "a",
         "proche"
@@ -2311,6 +2306,11 @@
         "sentier",
         "path",
         "n"
+       ],
+       "and#2": [
+        "(nearer and nearer : de plus en plus)",
+        "and",
+        "c"
        ]
       }
      },
@@ -2421,7 +2421,7 @@
      },
      {
       "en": "She headed straight for the long grass by the thorn-bush, and as he was running Rikki-tikki heard Darzee still singing his foolish little song of triumph.",
-      "fr": "Elle fonça droit vers les hautes herbes près du buisson d'épines, et tandis qu'il courait, Rikki-tikki entendit Darzee qui chantait toujours sa petite chanson stupide de triomphe.",
+      "fr": "Elle fonça droit vers les hautes herbes près du buisson d'épines, et tandis qu'il courait, Rikki-tikki entendit Darzee qui chantait toujours sa sotte petite chanson de triomphe.",
       "g": {
        "headed": [
         "fonça",
@@ -2475,9 +2475,10 @@
         "chanter"
        ],
        "foolish": [
-        "stupide",
+        "sotte",
         "foolish",
-        "a"
+        "a",
+        "sot"
        ],
        "little": [
         "petite",
@@ -2637,7 +2638,7 @@
     [
      {
       "en": "Still, the instant’s delay brought Rikki-tikki up to her, and as she plunged into the rat-hole where she and Nag used to live, his little white teeth were clenched on her tail, and he went down with her — and very few mongooses, however wise and old they may be, care to follow a cobra into its hole.",
-      "fr": "Pourtant, ce bref retard permit à Rikki-tikki de la rattraper, et tandis qu'elle plongeait dans le trou de rat où elle et Nag avaient l'habitude de vivre, ses petites dents blanches étaient refermées sur sa queue, et il descendit avec elle — or très peu de mangoustes, si sages et vieilles soient-elles, se soucient de suivre un cobra dans son trou.",
+      "fr": "Pourtant, ce bref retard permit à Rikki-tikki de la rattraper, et tandis qu'elle plongeait dans le trou de rat où elle et Nag avaient l'habitude de vivre, ses petites dents blanches se serraient sur sa queue, et il descendit avec elle — et très peu de mangoustes, si sages et vieilles soient-elles, ont envie de suivre un cobra dans son trou.",
       "g": {
        "still": [
         "pourtant",
@@ -2722,7 +2723,7 @@
         "dent"
        ],
        "clenched": [
-        "refermées",
+        "se serraient (serrées)",
         "clench",
         "v",
         "serrer"
@@ -2783,13 +2784,13 @@
         "être"
        ],
        "care": [
-        "se soucient",
+        "ont envie",
         "care",
         "v",
         "se soucier"
        ],
        "to#3": [
-        "de",
+        "(care to : ont envie de)",
         "to",
         "x"
        ],
@@ -2893,21 +2894,21 @@
      },
      {
       "en": "He held on savagely, and stuck out his feet to act as brakes on the dark slope of the hot, moist earth.",
-      "fr": "Il tint bon avec sauvagerie et tendit les pattes pour faire office de freins sur la pente sombre de la terre chaude et humide.",
+      "fr": "Il s'accrocha farouchement et tendit les pattes pour faire office de freins sur la pente sombre de la terre chaude et humide.",
       "g": {
        "held": [
-        "tint",
+        "s'accrocha",
         "hold",
         "v",
         "tenir"
        ],
        "on": [
-        "(held on : tint bon)",
+        "(held on : s'accrocha)",
         "on",
         "d"
        ],
        "savagely": [
-        "avec sauvagerie",
+        "farouchement",
         "savagely",
         "d"
        ],
@@ -3479,7 +3480,7 @@
     [
      {
       "en": "Rikki-tikki curled himself up in the grass and slept where he was — slept and slept till it was late in the afternoon, for he had done a hard day’s work.",
-      "fr": "Rikki-tikki s'enroula dans l'herbe et dormit là où il était — dormit et dormit jusqu'à ce qu'il soit tard dans l'après-midi, car il avait accompli une dure journée de travail.",
+      "fr": "Rikki-tikki s'enroula dans l'herbe et dormit là où il était — dormit et dormit jusqu'à ce qu'il fût tard dans l'après-midi, car il avait fait une rude journée de travail.",
       "g": {
        "curled": [
         "s'enroula",
@@ -3546,13 +3547,13 @@
         "c"
        ],
        "done": [
-        "accompli",
+        "fait",
         "do",
         "v",
         "faire"
        ],
        "hard": [
-        "dure",
+        "rude",
         "hard",
         "a",
         "dur"
@@ -3613,7 +3614,7 @@
      },
      {
       "en": "Tell the Coppersmith, Darzee, and he will tell the garden that Nagaina is dead.”",
-      "fr": "Préviens le Chaudronnier, Darzee, et il avertira le jardin que Nagaina est morte. »",
+      "fr": "Préviens le Chaudronnier, Darzee, et il annoncera au jardin que Nagaina est morte. »",
       "g": {
        "tell": [
         "préviens",
@@ -3622,7 +3623,7 @@
         "dire"
        ],
        "tell#2": [
-        "avertira",
+        "annoncera",
         "tell",
         "v",
         "dire"
@@ -3730,7 +3731,7 @@
        "to": [
         "de",
         "to",
-        "x"
+        "r"
        ],
        "indian": [
         "indien",
@@ -3988,7 +3989,7 @@
     [
      {
       "en": "When Rikki got to the house, Teddy and Teddy’s mother (she looked very white still, for she had been fainting) and Teddy’s father came out and almost cried over him; and that night he ate all that was given him till he could eat no more, and went to bed on Teddy’s shoulder, where Teddy’s mother saw him when she came to look late at night.",
-      "fr": "Quand Rikki arriva à la maison, Teddy, la mère de Teddy (elle avait encore l'air très blanche, car elle s'était évanouie) et le père de Teddy sortirent et pleurèrent presque sur lui ; et ce soir-là, il mangea tout ce qu'on lui donna jusqu'à n'en plus pouvoir, et alla se coucher sur l'épaule de Teddy, où la mère de Teddy le vit quand elle vint regarder tard dans la nuit.",
+      "fr": "Quand Rikki arriva à la maison, Teddy, la mère de Teddy (elle avait encore l'air très blanche, car elle s'était évanouie) et le père de Teddy sortirent et faillirent pleurer sur lui ; et ce soir-là, il mangea tout ce qu'on lui donna jusqu'à n'en plus pouvoir, et alla se coucher sur l'épaule de Teddy, où la mère de Teddy le vit quand elle vint jeter un coup d'œil tard dans la nuit.",
       "g": {
        "got": [
         "arriva",
@@ -4062,12 +4063,12 @@
         "d"
        ],
        "almost": [
-        "presque",
+        "faillirent",
         "almost",
         "d"
        ],
        "cried": [
-        "pleurèrent",
+        "pleurer",
         "cry",
         "v",
         "pleurer"
@@ -4175,9 +4176,10 @@
         "x"
        ],
        "look": [
-        "regarder",
+        "jeter un coup d'œil",
         "look",
-        "v"
+        "v",
+        "regarder"
        ],
        "late": [
         "tard",
@@ -4376,10 +4378,10 @@
      },
      {
       "en": "And if they weren’t, I’m here.”",
-      "fr": "Et même s'ils ne l'étaient pas, je suis là. »",
+      "fr": "Et s'ils ne l'étaient pas, je suis là. »",
       "g": {
        "if": [
-        "même si",
+        "si",
         "if",
         "c"
        ]
@@ -4410,7 +4412,7 @@
      },
      {
       "en": "But he did not grow too proud, and he kept that garden as a mongoose should keep it, with tooth and jump and spring and bite, till never a cobra dared show its head inside the walls.",
-      "fr": "Mais il ne devint pas trop fier, et il garda ce jardin comme une mangouste doit le garder, à coups de dents, de bonds, de sauts et de morsures, jusqu'à ce qu'aucun cobra n'ose plus montrer la tête à l'intérieur des murs.",
+      "fr": "Mais il ne devint pas trop fier, et il garda ce jardin comme une mangouste doit le garder, à coups de dents, de bonds, de sauts et de morsures, jusqu'à ce qu'aucun cobra n'osât montrer la tête à l'intérieur des murs.",
       "g": {
        "grow": [
         "devint",
@@ -4494,7 +4496,7 @@
         "n"
        ],
        "dared": [
-        "ose",
+        "osât",
         "dare",
         "v",
         "oser"

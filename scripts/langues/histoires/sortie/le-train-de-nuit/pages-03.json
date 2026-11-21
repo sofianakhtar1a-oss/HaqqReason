@@ -240,10 +240,10 @@
       "regarder"
     ],
     "planned": [
-      "comptait",
+      "comptais",
       "plan",
       "v",
-      "prévoir"
+      "compter"
     ],
     "bring": [
       "rapporter",
@@ -1243,6 +1243,11 @@
                 "si",
                 "so",
                 "d"
+              ],
+              "big": [
+                "grand",
+                "big",
+                "a"
               ]
             }
           },
@@ -1286,13 +1291,18 @@
           },
           {
             "en": "Around two o'clock, he had come to check on it.",
-            "fr": "Vers deux heures, il était revenu voir comment il allait.",
+            "fr": "Vers deux heures, il était venu s'assurer qu'il était bien là.",
             "g": {
               "come": [
                 "venu",
                 "come",
                 "v",
                 "venir"
+              ],
+              "check": [
+                "s'assurer (check on)",
+                "check",
+                "v"
               ]
             }
           },
@@ -1422,19 +1432,19 @@
         [
           {
             "en": "Adam, however, was still thinking.",
-            "fr": "Adam, lui, réfléchissait encore."
+            "fr": "Adam, cependant, réfléchissait encore."
           },
           {
             "en": "“Someone else was in the luggage van last night,” he said to the conductor. “The large footprints don't belong to Jonas.”",
-            "fr": "« Quelqu'un d'autre est allé dans le fourgon à bagages cette nuit », dit-il au contrôleur. « Les grandes empreintes ne sont pas celles de Jonas. »",
+            "fr": "« Quelqu'un d'autre se trouvait dans le fourgon à bagages cette nuit », dit-il au contrôleur. « Les grandes traces de pas n'appartiennent pas à Jonas. »",
             "g": {
               "last": [
-                "(last night : hier soir)",
+                "(last night : cette nuit)",
                 "last",
                 "a"
               ],
               "night": [
-                "hier soir (last night)",
+                "cette nuit (last night)",
                 "night",
                 "n"
               ],
@@ -1535,7 +1545,7 @@
           },
           {
             "en": "Everybody was watching Mr Kessler, who was sitting very still.",
-            "fr": "Tout le monde regardait M. Kessler, qui restait très immobile.",
+            "fr": "Tout le monde regardait M. Kessler, qui était assis, très immobile.",
             "g": {
               "sitting": [
                 "assis",
@@ -1609,7 +1619,7 @@
           },
           {
             "en": "At last, he gave his ticket to the conductor. A small corner had been torn off it.",
-            "fr": "Il finit par donner son billet au contrôleur. Un petit coin en avait été arraché.",
+            "fr": "Enfin, il donna son billet au contrôleur. Un petit coin en avait été arraché.",
             "g": {
               "at": [
                 "enfin (at last)",
@@ -1636,7 +1646,15 @@
           },
           {
             "en": "Without a word, Adam placed the piece from the carpet against the edge, and it fitted perfectly.",
-            "fr": "Sans un mot, Adam posa contre le bord le morceau trouvé sur la moquette, et il s'ajustait parfaitement."
+            "fr": "Sans un mot, Adam posa contre le bord le morceau trouvé sur la moquette, et il s'ajusta parfaitement.",
+            "g": {
+              "fitted": [
+                "s'ajusta",
+                "fit",
+                "v",
+                "s'ajuster"
+              ]
+            }
           }
         ]
       ]
@@ -1755,6 +1773,17 @@
                 "call",
                 "v",
                 "appeler"
+              ],
+              "police": [
+                "(police officers : policiers)",
+                "police",
+                "n"
+              ],
+              "officers": [
+                "policiers (police officers)",
+                "officer",
+                "n",
+                "agent"
               ]
             }
           },
@@ -1815,7 +1844,7 @@
                 "appeler"
               ],
               "dressed": [
-                "vêtu",
+                "s'habillait",
                 "dress",
                 "v",
                 "habiller"
@@ -2161,6 +2190,12 @@
                 "depuis",
                 "for",
                 "r"
+              ],
+              "sung": [
+                "chantait",
+                "sing",
+                "v",
+                "chanter"
               ]
             }
           },

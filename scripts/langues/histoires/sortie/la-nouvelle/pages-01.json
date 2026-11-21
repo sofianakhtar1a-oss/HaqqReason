@@ -1429,12 +1429,30 @@
         "hublot",
         "window",
         "n"
+       ],
+       "looked": [
+        "regardait",
+        "look",
+        "v",
+        "regarder"
        ]
       }
      },
      {
       "en": "Under the white clouds, she could see the blue sea.",
-      "fr": "Sous les nuages blancs, elle voyait la mer bleue."
+      "fr": "Sous les nuages blancs, elle voyait la mer bleue.",
+      "g": {
+       "see": [
+        "voyait (could see)",
+        "see",
+        "v"
+       ],
+       "could": [
+        "(could see : voyait)",
+        "can",
+        "v"
+       ]
+      }
      },
      {
       "en": "It was the Mediterranean Sea, and she was leaving it behind.",
@@ -1561,6 +1579,11 @@
         "do",
         "v",
         "faire"
+       ],
+       "want": [
+        "voulait",
+        "want",
+        "v"
        ]
       }
      },
@@ -1968,7 +1991,14 @@
      },
      {
       "en": "Her hands were cold and her heart was beating fast.",
-      "fr": "Ses mains étaient froides et son cœur battait vite."
+      "fr": "Ses mains étaient froides et son cœur battait vite.",
+      "g": {
+       "cold": [
+        "froides",
+        "cold",
+        "a"
+       ]
+      }
      },
      {
       "en": "“Be brave,” she whispered.",
@@ -2408,7 +2438,14 @@
      },
      {
       "en": "“Hi,” he said quietly.",
-      "fr": "« Salut », dit-il tout bas."
+      "fr": "« Salut », dit-il tout bas.",
+      "g": {
+       "quietly": [
+        "tout bas",
+        "quietly",
+        "d"
+       ]
+      }
      },
      {
       "en": "He took out a small notebook full of drawings of insects.",
@@ -2429,7 +2466,14 @@
      },
      {
       "en": "“I want to be a scientist,” he added.",
-      "fr": "« Je veux devenir scientifique », ajouta-t-il."
+      "fr": "« Je veux devenir scientifique », ajouta-t-il.",
+      "g": {
+       "want": [
+        "veux",
+        "want",
+        "v"
+       ]
+      }
      }
     ],
     [
@@ -2609,10 +2653,10 @@
      },
      {
       "en": "“You should work in groups of three.”",
-      "fr": "« Vous devez travailler par groupes de trois. »",
+      "fr": "« Vous devriez travailler par groupes de trois. »",
       "g": {
        "should": [
-        "devez (should)",
+        "devriez (should)",
         "should",
         "v"
        ]
@@ -2792,16 +2836,16 @@
      },
      {
       "en": "“I have helped him since I was six!”",
-      "fr": "« Je l’aide depuis que j’ai six ans ! »",
+      "fr": "« Je l'aide depuis mes six ans ! »",
       "g": {
        "have": [
-        "ai (auxiliaire du passé composé)",
+        "(have helped : aide depuis)",
         "have",
         "v",
         "avoir"
        ],
        "helped": [
-        "aidé",
+        "aide",
         "help",
         "v",
         "aider"

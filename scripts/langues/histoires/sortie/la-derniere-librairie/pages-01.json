@@ -654,7 +654,8 @@
   "invented": [
    "inventer",
    "invent",
-   "v"
+   "v",
+   "inventer"
   ],
   "passion": [
    "passion",
@@ -1178,7 +1179,7 @@
    "n"
   ],
   "dear": [
-   "chère",
+   "cher",
    "dear",
    "a"
   ],
@@ -1589,12 +1590,12 @@
         "x"
        ],
        "every": [
-        "chaque",
+        "chaque (every single one : chaque fois)",
         "every",
         "t"
        ],
        "single": [
-        "seul, unique",
+        "(every single one : sans exception)",
         "single",
         "a"
        ]
@@ -1668,23 +1669,23 @@
       "fr": "Mardi matin, il rentra par le chemin le plus long, le long de Harbour Street, surtout pour éviter sa petite sœur et ses questions sans fin.",
       "g": {
        "took": [
-        "prit",
+        "rentra (took the long way home : rentra par le chemin le plus long)",
         "take",
         "v",
         "prendre"
        ],
        "long": [
-        "long",
+        "(took the long way home : par le chemin le plus long)",
         "long",
         "a"
        ],
        "way": [
-        "chemin",
+        "(took the long way home : par le chemin le plus long)",
         "way",
         "n"
        ],
        "home": [
-        "à la maison",
+        "(took the long way home : rentra)",
         "home",
         "d"
        ],
@@ -1706,13 +1707,13 @@
         "voir"
        ],
        "better": [
-        "meilleurs",
+        "(had seen better days : avait connu des jours meilleurs)",
         "good",
         "a",
         "bon"
        ],
        "days": [
-        "jours",
+        "(had seen better days : des jours meilleurs)",
         "day",
         "n"
        ]
@@ -1789,15 +1790,25 @@
         "livre"
        ],
        "with": [
-        "peinte en",
+        "(with green paint : peinte en vert)",
         "with",
         "r"
+       ],
+       "green": [
+        "vert",
+        "green",
+        "a"
+       ],
+       "paint": [
+        "(with green paint : peinte en vert)",
+        "paint",
+        "n"
        ]
       }
      },
      {
       "en": "“Help wanted,” the sign read. “Must love books. Must not mind cats. Bad jokes will be tolerated.”",
-      "fr": "« On recherche de l’aide », disait la pancarte. « Il faut aimer les livres. Il ne faut pas craindre les chats. Les mauvaises blagues seront tolérées. »",
+      "fr": "« On recherche de l’aide », disait la pancarte. « Il faut aimer les livres. Les chats ne doivent pas vous gêner. Les mauvaises blagues seront tolérées. »",
       "g": {
        "wanted": [
         "recherché (help wanted : on recherche de l'aide)",
@@ -1812,22 +1823,19 @@
         "lire"
        ],
        "mind": [
-        "craindre, être gêné par",
+        "gêner (must not mind : ne doivent pas gêner)",
         "mind",
-        "v",
-        ""
+        "v"
        ],
        "will": [
-        "seront",
+        "(will be tolerated : seront tolérées)",
         "will",
-        "v",
-        ""
+        "v"
        ],
        "be": [
-        "être",
+        "(will be tolerated : seront tolérées)",
         "be",
-        "v",
-        ""
+        "v"
        ]
       }
      }
@@ -1848,7 +1856,7 @@
         "lire"
        ],
        "whole": [
-        "entière",
+        "toute (whole life : toute sa vie)",
         "whole",
         "a"
        ],
@@ -1862,6 +1870,11 @@
         "de",
         "about",
         "r"
+       ],
+       "life": [
+        "vie",
+        "life",
+        "n"
        ]
       }
      },
@@ -1968,6 +1981,18 @@
         "qui",
         "who",
         "p"
+       ],
+       "whistle": [
+        "sifflent",
+        "whistle",
+        "v",
+        "siffler"
+       ],
+       "whistle#2": [
+        "sifflez",
+        "whistle",
+        "v",
+        "siffler"
        ]
       }
      },
@@ -2008,10 +2033,10 @@
      },
      {
       "en": "She had to be well over seventy, but she moved like someone half her age.",
-      "fr": "Elle devait avoir bien plus de soixante-dix ans, mais elle se déplaçait comme quelqu’un de deux fois plus jeune.",
+      "fr": "Elle devait avoir bien plus de soixante-dix ans, mais elle se déplaçait comme une personne deux fois plus jeune.",
       "g": {
        "had": [
-        "devait (had to be : devait être)",
+        "devait (had to be : devait avoir)",
         "have",
         "v",
         "avoir"
@@ -2022,7 +2047,7 @@
         "x"
        ],
        "be": [
-        "(had to be : devait être)",
+        "(had to be : devait avoir)",
         "be",
         "v",
         "être"
@@ -2033,9 +2058,19 @@
         "r"
        ],
        "half": [
-        "deux fois plus",
+        "(half her age : deux fois plus jeune)",
         "half",
         "t"
+       ],
+       "age": [
+        "(half her age : deux fois plus jeune)",
+        "age",
+        "n"
+       ],
+       "someone": [
+        "une personne",
+        "someone",
+        "p"
        ]
       }
      },
@@ -2063,7 +2098,7 @@
      },
      {
       "en": "“I taught English at Saltmarsh Grammar for thirty-four years, so I can spot a nervous teenager from across the street.”",
-      "fr": "« J’ai enseigné l’anglais au lycée Saltmarsh Grammar pendant trente-quatre ans, alors je repère un adolescent nerveux à cent mètres. »",
+      "fr": "« J’ai enseigné l’anglais au lycée Saltmarsh Grammar pendant trente-quatre ans, alors je repère un adolescent nerveux depuis l’autre côté de la rue. »",
       "g": {
        "grammar": [
         "Grammar (lycée traditionnel)",
@@ -2071,13 +2106,13 @@
         "np"
        ],
        "spot": [
-        "repérer",
+        "repère",
         "spot",
         "v",
-        ""
+        "repérer"
        ],
        "across": [
-        "(from across the street : de l'autre côté de la rue)",
+        "(from across the street : depuis l’autre côté de la rue)",
         "across",
         "r"
        ],
@@ -2112,12 +2147,12 @@
       "fr": "L’entretien dura dix minutes, et il porta surtout sur les chats.",
       "g": {
        "most": [
-        "la plupart",
+        "(most of it : surtout)",
         "most",
         "p"
        ],
        "about": [
-        "sur",
+        "(was about : portait sur)",
         "about",
         "r"
        ]
@@ -2171,6 +2206,11 @@
         "(a little : un peu)",
         "little",
         "d"
+       ],
+       "course": [
+        "(of course : évidemment)",
+        "course",
+        "n"
        ]
       }
      },
@@ -2451,10 +2491,10 @@
      },
      {
       "en": "Mrs Okafor was a surprisingly good teacher, mainly because she never told him the answer.",
-      "fr": "Mme Okafor était une enseignante étonnamment bonne, surtout parce qu’elle ne lui donnait jamais la réponse.",
+      "fr": "Mme Okafor était une enseignante étonnamment bonne, surtout parce qu’elle ne lui disait jamais la réponse.",
       "g": {
        "told": [
-        "donnait",
+        "disait",
         "tell",
         "v",
         "dire"
@@ -2469,7 +2509,7 @@
      },
      {
       "en": "“Don’t ask me,” she would say. “Look it up, think it over, and then tell me I was wrong.”",
-      "fr": "« Ne me demandez pas, disait-elle. Cherchez dans un livre, réfléchissez-y, et ensuite dites-moi que j’avais tort. »",
+      "fr": "« Ne me demandez pas, disait-elle. Cherchez-le, réfléchissez-y, et ensuite dites-moi que j’avais tort. »",
       "g": {
        "would": [
         "(she would say : disait-elle)",
@@ -2504,6 +2544,17 @@
         "tell",
         "v",
         "dire"
+       ],
+       "ask": [
+        "demandez",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "wrong": [
+        "tort (was wrong : avais tort)",
+        "wrong",
+        "a"
        ]
       }
      }
@@ -2535,15 +2586,15 @@
       "fr": "« Salut, je suis Zara, dit-elle. Je viens tous les lundis dessiner le chat de la boutique, s’il veut bien. »",
       "g": {
        "come": [
-        "viens (come in : entrer)",
-        "come in",
+        "viens (come in : venir)",
+        "come",
         "v",
-        "entrer"
+        "venir"
        ],
        "in": [
-        "(come in : entrer, venir)",
-        "come in",
-        "x"
+        "(come in : venir)",
+        "in",
+        "d"
        ],
        "every": [
         "tous les",
@@ -2551,7 +2602,7 @@
         "t"
        ],
        "lets": [
-        "veut bien",
+        "veut bien (if he lets me : s’il veut bien)",
         "let",
         "v",
         "laisser"
@@ -2574,10 +2625,20 @@
         "faire"
        ],
        "good": [
-        "bonne",
+        "(in a good mood : de bonne humeur)",
         "good",
         "a",
         "bon"
+       ],
+       "in": [
+        "(in a good mood : de bonne humeur)",
+        "in",
+        "r"
+       ],
+       "mood": [
+        "(in a good mood : de bonne humeur)",
+        "mood",
+        "n"
        ]
       }
      }
@@ -2658,7 +2719,7 @@
      },
      {
       "en": "“So you’re the new guy,” she said, flipping a page. “Mrs O never hires anyone, so you must be special.” “I’m just the only one who applied,” said Noah.",
-      "fr": "« Alors c’est toi, le nouveau, dit-elle en tournant une page. Mme O n’embauche jamais personne : tu dois être spécial. — Je suis juste le seul à avoir postulé », dit Noah.",
+      "fr": "« Alors c’est toi, le nouveau, dit-elle en tournant une page. Mme O n’embauche jamais personne, donc tu dois être spécial. — Je suis juste le seul à avoir postulé », dit Noah.",
       "g": {
        "so": [
         "alors",
@@ -2680,6 +2741,11 @@
         "personne",
         "anyone",
         "p"
+       ],
+       "so#2": [
+        "donc",
+        "so",
+        "c"
        ]
       }
      }
@@ -2746,8 +2812,18 @@
       "fr": "« Il y avait un magasin de jouets, un disquaire et trois cafés, dit-elle. Maintenant, il y a une laverie, un dentiste et Mme O. »",
       "g": {
        "record": [
-        "disque (record shop : disquaire)",
+        "(record shop : disquaire)",
         "record",
+        "n"
+       ],
+       "shop": [
+        "magasin",
+        "shop",
+        "n"
+       ],
+       "shop#2": [
+        "(record shop : disquaire)",
+        "shop",
         "n"
        ]
       }
@@ -2786,7 +2862,7 @@
      },
      {
       "en": "“Then let’s make sure it never closes,” said Zara lightly. Neither of them knew how soon they would have to keep that promise.",
-      "fr": "« Alors faisons en sorte qu’elle ne ferme jamais », dit Zara d’un ton léger. Ni l’un ni l’autre ne savait à quel point il leur faudrait bientôt tenir cette promesse.",
+      "fr": "« Alors faisons en sorte qu’elle ne ferme jamais », dit Zara d’un ton léger. Ni l’un ni l’autre ne savait avec quelle rapidité ils auraient à tenir cette promesse.",
       "g": {
        "make": [
         "faisons en sorte (make sure)",
@@ -2816,7 +2892,7 @@
     [
      {
       "en": "One Thursday in late July, the postman handed Noah a thick cream envelope with a gold logo in the corner.",
-      "fr": "Un jeudi de la fin juillet, le facteur remit à Noah une épaisse enveloppe crème ornée d’un logo doré dans le coin.",
+      "fr": "Un jeudi de fin juillet, le facteur remit à Noah une épaisse enveloppe crème ornée d’un logo doré dans le coin.",
       "g": {
        "late": [
         "fin (late July : fin juillet)",
@@ -2905,7 +2981,7 @@
      },
      {
       "en": "“Dear Tenant,” she read. “Harbour Properties wishes to thank you for your many years of loyal tenancy. From the first of September, your monthly rent will increase from twelve hundred pounds to thirty-six hundred pounds.”",
-      "fr": "« Chère locataire, lut-elle. Harbour Properties tient à vous remercier pour vos nombreuses années de fidèle location. À partir du 1er septembre, votre loyer mensuel passera de mille deux cents livres à trois mille six cents livres. »",
+      "fr": "« Cher locataire, lut-elle. Harbour Properties tient à vous remercier pour vos nombreuses années de fidèle location. À partir du 1er septembre, votre loyer mensuel passera de mille deux cents livres à trois mille six cents livres. »",
       "g": {
        "read": [
         "lut",
@@ -2979,10 +3055,10 @@
         "faire"
        ],
        "sums": [
-        "calcul",
+        "calcul (did the sums : fit le calcul)",
         "sum",
         "n",
-        "somme"
+        "calcul"
        ],
        "felt": [
         "sentit",
@@ -2991,10 +3067,10 @@
         "sentir"
        ],
        "drop": [
-        "se nouer (drop : chuter)",
+        "se nouer (drop : tomber)",
         "drop",
         "v",
-        "chuter"
+        "tomber"
        ]
       }
      },
@@ -3049,10 +3125,10 @@
      },
      {
       "en": "“Landlords only ever make mistakes in their own favour, Noah.”",
-      "fr": "« Les propriétaires ne se trompent qu’à leur avantage, Noah. »",
+      "fr": "« Les propriétaires ne font d’erreurs qu’à leur propre avantage, Noah. »",
       "g": {
        "make": [
-        "commettent",
+        "font",
         "make",
         "v",
         "faire"
@@ -3066,6 +3142,11 @@
         "(only ever : ne… qu')",
         "ever",
         "d"
+       ],
+       "own": [
+        "propre",
+        "own",
+        "a"
        ]
       }
      },
@@ -3117,7 +3198,7 @@
      },
      {
       "en": "“I looked into it,” she said, waving her phone. “Harbour Properties belongs to a man called Julian Hale.”",
-      "fr": "« J’ai fait des recherches, dit-elle en agitant son téléphone. Harbour Properties appartient à un certain Julian Hale. »",
+      "fr": "« J’ai fait des recherches, dit-elle en agitant son téléphone. Harbour Properties appartient à un homme nommé Julian Hale. »",
       "g": {
        "looked": [
         "ai fait des recherches (looked into)",
@@ -3131,7 +3212,7 @@
         "x"
        ],
        "called": [
-        "appelé",
+        "nommé",
         "call",
         "v",
         "appeler"
@@ -3279,10 +3360,10 @@
         "faire"
        ],
        "look": [
-        "(made … look : faisait paraître)",
+        "(made … look : donnait l’impression que … était)",
         "look",
         "v",
-        "regarder"
+        "avoir l’air"
        ]
       }
      },
@@ -3306,7 +3387,7 @@
         "a"
        ],
        "too": [
-        "de trop",
+        "(too long : de trop)",
         "too",
         "d"
        ],
@@ -3314,6 +3395,17 @@
         "seconde",
         "second",
         "n"
+       ],
+       "lasted": [
+        "durait",
+        "last",
+        "v",
+        "durer"
+       ],
+       "long": [
+        "(too long : de trop)",
+        "long",
+        "d"
        ]
       }
      },
@@ -3328,13 +3420,13 @@
         ""
        ],
        "fall": [
-        "tomber",
+        "tomber (fall on : tomber dessus)",
         "fall",
         "v",
-        ""
+        "tomber"
        ],
        "on": [
-        "sur",
+        "(fall on him : lui tomber dessus)",
         "on",
         "r"
        ],
@@ -3461,7 +3553,7 @@
      },
      {
       "en": "“I have been selling books since before your parents met,” she said sweetly. “People said exactly the same about television.”",
-      "fr": "« Je vends des livres depuis avant la rencontre de vos parents, dit-elle d’une voix douce. On disait exactement la même chose de la télévision. »",
+      "fr": "« Je vends des livres depuis avant que vos parents se rencontrent, dit-elle d’une voix douce. Les gens disaient exactement la même chose de la télévision. »",
       "g": {
        "selling": [
         "vends",
@@ -3475,10 +3567,22 @@
         "a"
        ],
        "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "said#2": [
         "disaient",
         "say",
         "v",
         "dire"
+       ],
+       "met": [
+        "se rencontrent",
+        "meet",
+        "v",
+        "rencontrer"
        ]
       }
      },
@@ -3534,6 +3638,11 @@
         "avant",
         "by",
         "r"
+       ],
+       "end": [
+        "fin",
+        "end",
+        "n"
        ]
       }
      }
@@ -3553,7 +3662,7 @@
      },
      {
       "en": "“Then the rent goes up on the first of September, and you will be out by October.”",
-      "fr": "« Alors le loyer augmentera le 1er septembre, et vous serez dehors en octobre. »",
+      "fr": "« Alors le loyer augmentera le 1er septembre, et vous serez dehors d’ici octobre. »",
       "g": {
        "goes": [
         "augmentera (goes up : augmente)",

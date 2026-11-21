@@ -680,11 +680,21 @@
   backdrop-filter: blur(18px);
 }
 .hs-navigation-numero {
+  white-space: nowrap;
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--encre-douce);
 }
+.hs-nav-court {
+  display: none;
+}
 @media (max-width: 30rem) {
+  .hs-nav-long {
+    display: none;
+  }
+  .hs-nav-court {
+    display: inline;
+  }
   .hs-navigation .bouton {
     padding-inline: 0.8rem;
     font-size: 0.86rem;
@@ -749,5 +759,186 @@
   .hs-phrase,
   .hs-avancee::after {
     transition: none;
+  }
+}
+
+/* ---------- Les faux amis (onglet Vocabulaire) ---------- */
+.fa-outils {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.fa-recherche {
+  display: flex;
+  flex: 1 1 14rem;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--trait);
+  background: var(--surface);
+  color: var(--encre-douce);
+}
+.fa-recherche input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  color: var(--encre);
+  outline: none;
+}
+.fa-liste {
+  display: grid;
+  gap: 0.8rem;
+}
+@media (min-width: 48rem) {
+  .fa-liste {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 76rem) {
+  .fa-liste {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.fa-carte {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 1.1rem;
+  border-radius: 1.25rem;
+  border: 1px solid var(--trait);
+  border-top: 3px solid var(--hs-c);
+  background: var(--surface);
+}
+.fa-carte-tete {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.fa-paire {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 0.55rem;
+}
+.fa-en {
+  font-family: var(--lg-police);
+  font-size: 1.35rem;
+  font-weight: 650;
+}
+.fa-different {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--danger);
+}
+.fa-piege {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--encre-douce);
+  text-decoration: line-through;
+  text-decoration-color: color-mix(in srgb, var(--danger) 60%, transparent);
+}
+.fa-niveau {
+  flex-shrink: 0;
+  padding: 0.05rem 0.45rem;
+  border-radius: 0.4rem;
+  background: color-mix(in srgb, var(--hs-c) 18%, transparent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--hs-c);
+}
+.fa-sens {
+  font-weight: 600;
+}
+.fa-sens span {
+  margin-right: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--succes);
+}
+.fa-traduire {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--encre-douce);
+}
+.fa-traduire svg {
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+  color: var(--or);
+}
+.fa-traduire strong {
+  font-family: var(--lg-police);
+  color: var(--encre);
+}
+.fa-exemple {
+  padding: 0.55rem 0.8rem;
+  border-radius: 0.8rem;
+  background: var(--surface-forte);
+}
+.fa-exemple blockquote {
+  font-family: var(--lg-police);
+  font-style: italic;
+}
+.fa-exemple figcaption {
+  margin-top: 0.15rem;
+  font-size: 0.85rem;
+  color: var(--encre-douce);
+}
+.fa-note {
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: var(--encre-douce);
+}
+.fa-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.25rem;
+  margin-top: auto;
+}
+.fa-bandeau {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 1rem 1.25rem;
+  border-radius: 1.25rem;
+  border: 1.5px solid color-mix(in srgb, var(--danger) 35%, var(--trait));
+  background: color-mix(in srgb, var(--danger) 6%, var(--surface));
+  text-align: left;
+}
+.fa-bandeau:hover {
+  border-color: color-mix(in srgb, var(--danger) 60%, var(--trait));
+}
+.fa-bandeau-paire {
+  flex-shrink: 0;
+  font-family: var(--lg-police);
+  font-size: 1.15rem;
+  font-weight: 650;
+}
+.fa-bandeau-paire span {
+  margin: 0 0.3rem;
+  color: var(--danger);
+}
+.fa-bandeau > span:last-child {
+  display: grid;
+  gap: 0.1rem;
+}
+.fa-bandeau strong {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+}
+.fa-bandeau small {
+  font-size: 0.86rem;
+  color: var(--encre-douce);
+}
+@media (max-width: 30rem) {
+  .fa-bandeau-paire {
+    display: none;
   }
 }

@@ -1,0 +1,2933 @@
+{
+ "debut": 8,
+ "lexique": {
+  "paul": [
+   "Paul (prénom)",
+   "Paul",
+   "np"
+  ],
+  "claire": [
+   "Claire (prénom)",
+   "Claire",
+   "np"
+  ],
+  "lucie": [
+   "Lucie (prénom)",
+   "Lucie",
+   "np"
+  ],
+  "hugo": [
+   "Hugo (prénom)",
+   "Hugo",
+   "np"
+  ],
+  "said": [
+   "dit",
+   "say",
+   "v",
+   "dire"
+  ],
+  "mr": [
+   "M. (monsieur)",
+   "Mr",
+   "n"
+  ],
+  "evans": [
+   "Evans (nom de famille)",
+   "Evans",
+   "np"
+  ]
+ },
+ "pages": [
+  {
+   "p": [
+    [
+     {
+      "en": "On Sunday, the storm was even worse.",
+      "fr": "Dimanche, la tempête était encore pire.",
+      "g": {
+       "sunday": [
+        "dimanche",
+        "Sunday",
+        "n"
+       ],
+       "storm": [
+        "tempête",
+        "storm",
+        "n"
+       ],
+       "worse": [
+        "pire",
+        "bad",
+        "a",
+        "mauvais"
+       ]
+      }
+     },
+     {
+      "en": "The wind screamed around the cabin, and the snow hit the windows like small stones.",
+      "fr": "Le vent hurlait autour du chalet, et la neige frappait les fenêtres comme de petits cailloux.",
+      "g": {
+       "wind": [
+        "vent",
+        "wind",
+        "n"
+       ],
+       "screamed": [
+        "hurlait",
+        "scream",
+        "v",
+        "hurler"
+       ],
+       "cabin": [
+        "chalet",
+        "cabin",
+        "n"
+       ],
+       "snow": [
+        "neige",
+        "snow",
+        "n"
+       ],
+       "hit": [
+        "frappait",
+        "hit",
+        "v",
+        "frapper"
+       ],
+       "windows": [
+        "fenêtres",
+        "window",
+        "n",
+        "fenêtre"
+       ],
+       "small": [
+        "petits",
+        "small",
+        "a"
+       ],
+       "stones": [
+        "cailloux",
+        "stone",
+        "n",
+        "pierre"
+       ]
+      }
+     },
+     {
+      "en": "The cabin was like a small boat in a big white sea.",
+      "fr": "Le chalet était comme un petit bateau sur une grande mer blanche.",
+      "g": {
+       "cabin": [
+        "chalet",
+        "cabin",
+        "n"
+       ],
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ],
+       "boat": [
+        "bateau",
+        "boat",
+        "n"
+       ],
+       "big": [
+        "grande",
+        "big",
+        "a"
+       ],
+       "white": [
+        "blanche",
+        "white",
+        "a"
+       ],
+       "sea": [
+        "mer",
+        "sea",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Inside, it was dark even in the middle of the day.",
+      "fr": "À l’intérieur, il faisait sombre même en plein milieu de la journée.",
+      "g": {
+       "dark": [
+        "sombre",
+        "dark",
+        "a"
+       ],
+       "middle": [
+        "milieu (in the middle of : au milieu de)",
+        "middle",
+        "n"
+       ],
+       "day": [
+        "journée",
+        "day",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Hugo stayed close to the fire and did not want to move.",
+      "fr": "Hugo resta près du feu et ne voulait pas bouger.",
+      "g": {
+       "stayed": [
+        "resta",
+        "stay",
+        "v",
+        "rester"
+       ],
+       "close": [
+        "près",
+        "close",
+        "d"
+       ],
+       "fire": [
+        "feu",
+        "fire",
+        "n"
+       ],
+       "want": [
+        "voulait",
+        "want",
+        "v",
+        "vouloir"
+       ],
+       "move": [
+        "bouger",
+        "move",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "Claire offered him a biscuit, but he did not want it.",
+      "fr": "Claire lui offrit un biscuit, mais il n’en voulait pas.",
+      "g": {
+       "offered": [
+        "offrit",
+        "offer",
+        "v",
+        "offrir"
+       ],
+       "biscuit": [
+        "biscuit",
+        "biscuit",
+        "n"
+       ],
+       "want": [
+        "voulait",
+        "want",
+        "v",
+        "vouloir"
+       ]
+      }
+     },
+     {
+      "en": "“What if the roof falls on us?” he asked in a low voice.",
+      "fr": "« Et si le toit nous tombait dessus ? » demanda-t-il d’une voix basse.",
+      "g": {
+       "what": [
+        "et (what if : et si)",
+        "what",
+        "p"
+       ],
+       "if": [
+        "(what if : et si)",
+        "if",
+        "c"
+       ],
+       "roof": [
+        "toit",
+        "roof",
+        "n"
+       ],
+       "falls": [
+        "tombait",
+        "fall",
+        "v",
+        "tomber"
+       ],
+       "asked": [
+        "demanda",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "low": [
+        "basse",
+        "low",
+        "a"
+       ],
+       "voice": [
+        "voix",
+        "voice",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Paul smiled.",
+      "fr": "Paul sourit.",
+      "g": {
+       "smiled": [
+        "sourit",
+        "smile",
+        "v",
+        "sourire"
+       ]
+      }
+     },
+     {
+      "en": "“This cabin is a hundred years old, Hugo.”",
+      "fr": "« Ce chalet a cent ans, Hugo. »",
+      "g": {
+       "cabin": [
+        "chalet",
+        "cabin",
+        "n"
+       ],
+       "years": [
+        "ans",
+        "year",
+        "n",
+        "an"
+       ],
+       "old": [
+        "ans (a hundred years old : cent ans)",
+        "old",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“It’s stronger than the storm.”",
+      "fr": "« Il est plus solide que la tempête. »",
+      "g": {
+       "stronger": [
+        "plus solide",
+        "strong",
+        "a",
+        "solide"
+       ],
+       "storm": [
+        "tempête",
+        "storm",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "But Hugo could not forget the noise of the wind.",
+      "fr": "Mais Hugo n’arrivait pas à oublier le bruit du vent.",
+      "g": {
+       "forget": [
+        "oublier",
+        "forget",
+        "v"
+       ],
+       "noise": [
+        "bruit",
+        "noise",
+        "n"
+       ],
+       "wind": [
+        "vent",
+        "wind",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Lucie watched her little brother.",
+      "fr": "Lucie observa son petit frère.",
+      "g": {
+       "watched": [
+        "observa",
+        "watch",
+        "v",
+        "observer"
+       ],
+       "little": [
+        "petit",
+        "little",
+        "a"
+       ],
+       "brother": [
+        "frère",
+        "brother",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "She wanted to help him, but she did not know how.",
+      "fr": "Elle voulait l’aider, mais elle ne savait pas comment.",
+      "g": {
+       "wanted": [
+        "voulait",
+        "want",
+        "v",
+        "vouloir"
+       ],
+       "help": [
+        "aider",
+        "help",
+        "v"
+       ],
+       "know": [
+        "savait",
+        "know",
+        "v",
+        "savoir"
+       ]
+      }
+     },
+     {
+      "en": "Then she had an idea.",
+      "fr": "Puis elle eut une idée.",
+      "g": {
+       "idea": [
+        "idée",
+        "idea",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Hugo, do you remember the stories I told you when you were little?”",
+      "fr": "« Hugo, tu te souviens des histoires que je te racontais quand tu étais petit ? »",
+      "g": {
+       "remember": [
+        "te souviens (remember : se souvenir)",
+        "remember",
+        "v"
+       ],
+       "stories": [
+        "histoires",
+        "story",
+        "n",
+        "histoire"
+       ],
+       "told": [
+        "racontais",
+        "tell",
+        "v",
+        "raconter"
+       ],
+       "little": [
+        "petit",
+        "little",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Yes,” said Hugo. “The one about the dragon.”",
+      "fr": "« Oui », dit Hugo. « Celle du dragon. »",
+      "g": {
+       "one": [
+        "celle (the one about : celle du)",
+        "one",
+        "p"
+       ],
+       "about": [
+        "(the one about : celle avec)",
+        "about",
+        "r"
+       ],
+       "dragon": [
+        "dragon",
+        "dragon",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Come here,” said Lucie. “Tonight I’m going to tell you a new story.”",
+      "fr": "« Viens ici », dit Lucie. « Ce soir, je vais te raconter une nouvelle histoire. »",
+      "g": {
+       "come": [
+        "viens",
+        "come",
+        "v",
+        "venir"
+       ],
+       "going": [
+        "vais (going to : vais)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "to": [
+        "(going to : vais)",
+        "to",
+        "r"
+       ],
+       "tell": [
+        "raconter",
+        "tell",
+        "v"
+       ],
+       "new": [
+        "nouvelle",
+        "new",
+        "a"
+       ],
+       "story": [
+        "histoire",
+        "story",
+        "n"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 3 — The storytellers",
+   "titreFr": "Chapitre 3 — Les conteurs"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "That evening, the family sat around the fire with a cup of hot tea.",
+      "fr": "Ce soir-là, la famille s’assit autour du feu avec une tasse de thé chaud.",
+      "g": {
+       "evening": [
+        "soir",
+        "evening",
+        "n"
+       ],
+       "family": [
+        "famille",
+        "family",
+        "n"
+       ],
+       "sat": [
+        "s’assit",
+        "sit",
+        "v",
+        "s’asseoir"
+       ],
+       "fire": [
+        "feu",
+        "fire",
+        "n"
+       ],
+       "cup": [
+        "tasse",
+        "cup",
+        "n"
+       ],
+       "hot": [
+        "chaud",
+        "hot",
+        "a"
+       ],
+       "tea": [
+        "thé",
+        "tea",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Lucie sat next to Hugo and began her story in a quiet voice.",
+      "fr": "Lucie s’assit à côté de Hugo et commença son histoire d’une voix calme.",
+      "g": {
+       "sat": [
+        "s’assit",
+        "sit",
+        "v",
+        "s’asseoir"
+       ],
+       "next": [
+        "à côté (next to : à côté de)",
+        "next",
+        "a"
+       ],
+       "to": [
+        "(next to : à côté de)",
+        "to",
+        "r"
+       ],
+       "began": [
+        "commença",
+        "begin",
+        "v",
+        "commencer"
+       ],
+       "story": [
+        "histoire",
+        "story",
+        "n"
+       ],
+       "quiet": [
+        "calme",
+        "quiet",
+        "a"
+       ],
+       "voice": [
+        "voix",
+        "voice",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Long ago, a small dragon lived in a cold cave under a mountain.”",
+      "fr": "« Il y a longtemps, un petit dragon vivait dans une grotte froide, sous une montagne. »",
+      "g": {
+       "long": [
+        "longtemps (long ago : il y a longtemps)",
+        "long",
+        "d"
+       ],
+       "ago": [
+        "(long ago : il y a longtemps)",
+        "ago",
+        "d"
+       ],
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ],
+       "dragon": [
+        "dragon",
+        "dragon",
+        "n"
+       ],
+       "lived": [
+        "vivait",
+        "live",
+        "v",
+        "vivre"
+       ],
+       "cold": [
+        "froide",
+        "cold",
+        "a"
+       ],
+       "cave": [
+        "grotte",
+        "cave",
+        "n"
+       ],
+       "mountain": [
+        "montagne",
+        "mountain",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“He was afraid of the dark, but he had a secret.”",
+      "fr": "« Il avait peur du noir, mais il avait un secret. »",
+      "g": {
+       "afraid": [
+        "peur (afraid of : avoir peur de)",
+        "afraid",
+        "a"
+       ],
+       "dark": [
+        "noir (l’obscurité)",
+        "dark",
+        "n"
+       ],
+       "secret": [
+        "secret",
+        "secret",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“He could make fire, but only a tiny flame.”",
+      "fr": "« Il pouvait faire du feu, mais seulement une toute petite flamme. »",
+      "g": {
+       "make": [
+        "faire",
+        "make",
+        "v"
+       ],
+       "fire": [
+        "feu",
+        "fire",
+        "n"
+       ],
+       "tiny": [
+        "tout petite",
+        "tiny",
+        "a"
+       ],
+       "flame": [
+        "flamme",
+        "flame",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Every night, he sat alone in his cave and shivered.”",
+      "fr": "« Chaque nuit, il restait assis, seul, dans sa grotte, et frissonnait. »",
+      "g": {
+       "night": [
+        "nuit",
+        "night",
+        "n"
+       ],
+       "sat": [
+        "restait assis",
+        "sit",
+        "v",
+        "s’asseoir"
+       ],
+       "alone": [
+        "seul",
+        "alone",
+        "a"
+       ],
+       "cave": [
+        "grotte",
+        "cave",
+        "n"
+       ],
+       "shivered": [
+        "frissonnait",
+        "shiver",
+        "v",
+        "frissonner"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Hugo listened with big eyes.",
+      "fr": "Hugo écoutait, les yeux grands ouverts.",
+      "g": {
+       "listened": [
+        "écoutait",
+        "listen",
+        "v",
+        "écouter"
+       ],
+       "big": [
+        "grands",
+        "big",
+        "a"
+       ],
+       "eyes": [
+        "yeux",
+        "eye",
+        "n",
+        "œil"
+       ]
+      }
+     },
+     {
+      "en": "The fire cracked softly, and nobody moved.",
+      "fr": "Le feu crépitait doucement, et personne ne bougeait.",
+      "g": {
+       "fire": [
+        "feu",
+        "fire",
+        "n"
+       ],
+       "cracked": [
+        "crépitait",
+        "crack",
+        "v",
+        "craquer"
+       ],
+       "softly": [
+        "doucement",
+        "softly",
+        "d"
+       ],
+       "moved": [
+        "bougeait",
+        "move",
+        "v",
+        "bouger"
+       ]
+      }
+     },
+     {
+      "en": "“One night, a girl with a lamp walked into his cave.”",
+      "fr": "« Une nuit, une fille avec une lampe entra dans sa grotte. »",
+      "g": {
+       "one": [
+        "une (One night : une nuit)",
+        "one",
+        "p"
+       ],
+       "night": [
+        "nuit",
+        "night",
+        "n"
+       ],
+       "girl": [
+        "fille",
+        "girl",
+        "n"
+       ],
+       "lamp": [
+        "lampe",
+        "lamp",
+        "n"
+       ],
+       "walked": [
+        "entra",
+        "walk",
+        "v",
+        "marcher"
+       ],
+       "cave": [
+        "grotte",
+        "cave",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“The dragon was afraid, and he hid behind a big rock.”",
+      "fr": "« Le dragon avait peur, et il se cacha derrière un gros rocher. »",
+      "g": {
+       "dragon": [
+        "dragon",
+        "dragon",
+        "n"
+       ],
+       "afraid": [
+        "peur (avoir peur)",
+        "afraid",
+        "a"
+       ],
+       "hid": [
+        "se cacha",
+        "hide",
+        "v",
+        "se cacher"
+       ],
+       "big": [
+        "gros",
+        "big",
+        "a"
+       ],
+       "rock": [
+        "rocher",
+        "rock",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“She lit her lamp with his tiny flame.”",
+      "fr": "« Elle alluma sa lampe avec sa toute petite flamme. »",
+      "g": {
+       "lit": [
+        "alluma",
+        "light",
+        "v",
+        "allumer"
+       ],
+       "lamp": [
+        "lampe",
+        "lamp",
+        "n"
+       ],
+       "tiny": [
+        "toute petite",
+        "tiny",
+        "a"
+       ],
+       "flame": [
+        "flamme",
+        "flame",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Now the cave was warm and bright, and they were friends.”",
+      "fr": "« Maintenant, la grotte était chaude et lumineuse, et ils étaient amis. »",
+      "g": {
+       "cave": [
+        "grotte",
+        "cave",
+        "n"
+       ],
+       "warm": [
+        "chaude",
+        "warm",
+        "a"
+       ],
+       "bright": [
+        "lumineuse",
+        "bright",
+        "a"
+       ],
+       "friends": [
+        "amis",
+        "friend",
+        "n",
+        "ami"
+       ]
+      }
+     },
+     {
+      "en": "“Your flame is small, but it makes the dark smaller,” said the girl.",
+      "fr": "« Ta flamme est petite, mais elle rend l’obscurité plus petite », dit la fille.",
+      "g": {
+       "flame": [
+        "flamme",
+        "flame",
+        "n"
+       ],
+       "small": [
+        "petite",
+        "small",
+        "a"
+       ],
+       "makes": [
+        "rend",
+        "make",
+        "v",
+        "faire"
+       ],
+       "dark": [
+        "obscurité",
+        "dark",
+        "n"
+       ],
+       "smaller": [
+        "plus petite",
+        "small",
+        "a",
+        "petit"
+       ],
+       "girl": [
+        "fille",
+        "girl",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Hugo smiled.",
+      "fr": "Hugo sourit.",
+      "g": {
+       "smiled": [
+        "sourit",
+        "smile",
+        "v",
+        "sourire"
+       ]
+      }
+     },
+     {
+      "en": "“I like your dragon,” he said.",
+      "fr": "« J’aime bien ton dragon », dit-il.",
+      "g": {
+       "like": [
+        "aime bien",
+        "like",
+        "v",
+        "aimer"
+       ],
+       "dragon": [
+        "dragon",
+        "dragon",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "When the story ended, nobody wanted to go to bed.",
+      "fr": "Quand l’histoire se termina, personne ne voulait aller se coucher.",
+      "g": {
+       "story": [
+        "histoire",
+        "story",
+        "n"
+       ],
+       "ended": [
+        "se termina",
+        "end",
+        "v",
+        "terminer"
+       ],
+       "wanted": [
+        "voulait",
+        "want",
+        "v",
+        "vouloir"
+       ],
+       "go": [
+        "aller (go to bed : aller se coucher)",
+        "go",
+        "v"
+       ],
+       "to": [
+        "(go to bed : aller se coucher)",
+        "to",
+        "r"
+       ],
+       "bed": [
+        "(go to bed : aller se coucher)",
+        "bed",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Hugo asked for another story for tomorrow.",
+      "fr": "Hugo demanda une autre histoire pour demain.",
+      "g": {
+       "asked": [
+        "demanda (asked for)",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "story": [
+        "histoire",
+        "story",
+        "n"
+       ],
+       "for": [
+        "(asked for : demanda)",
+        "for",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Lucie was surprised: it was better than any game on her phone.",
+      "fr": "Lucie était surprise : c’était mieux que n’importe quel jeu sur son téléphone.",
+      "g": {
+       "surprised": [
+        "surprise",
+        "surprised",
+        "a"
+       ],
+       "better": [
+        "mieux",
+        "good",
+        "a",
+        "bon"
+       ],
+       "game": [
+        "jeu",
+        "game",
+        "n"
+       ],
+       "phone": [
+        "téléphone",
+        "phone",
+        "n"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "On Monday morning, the storm was finally over.",
+      "fr": "Le lundi matin, la tempête était enfin terminée.",
+      "g": {
+       "monday": [
+        "lundi",
+        "Monday",
+        "n"
+       ],
+       "morning": [
+        "matin",
+        "morning",
+        "n"
+       ],
+       "storm": [
+        "tempête",
+        "storm",
+        "n"
+       ],
+       "finally": [
+        "enfin",
+        "finally",
+        "d"
+       ],
+       "over": [
+        "terminée (was over : était terminée)",
+        "over",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "The sky was blue, and the sun made the snow shine like diamonds.",
+      "fr": "Le ciel était bleu, et le soleil faisait briller la neige comme des diamants.",
+      "g": {
+       "sky": [
+        "ciel",
+        "sky",
+        "n"
+       ],
+       "blue": [
+        "bleu",
+        "blue",
+        "a"
+       ],
+       "sun": [
+        "soleil",
+        "sun",
+        "n"
+       ],
+       "made": [
+        "faisait",
+        "make",
+        "v",
+        "faire"
+       ],
+       "snow": [
+        "neige",
+        "snow",
+        "n"
+       ],
+       "shine": [
+        "briller",
+        "shine",
+        "v"
+       ],
+       "diamonds": [
+        "diamants",
+        "diamond",
+        "n",
+        "diamant"
+       ]
+      }
+     },
+     {
+      "en": "But the road was still closed, and the food was getting low.",
+      "fr": "Mais la route était toujours fermée, et les provisions diminuaient.",
+      "g": {
+       "road": [
+        "route",
+        "road",
+        "n"
+       ],
+       "closed": [
+        "fermée",
+        "closed",
+        "a"
+       ],
+       "food": [
+        "provisions",
+        "food",
+        "n"
+       ],
+       "getting": [
+        "diminuaient (getting low : diminuaient)",
+        "get",
+        "v",
+        "devenir"
+       ],
+       "low": [
+        "(getting low : diminuaient)",
+        "low",
+        "a"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Claire counted what was left: five eggs, some rice and one tin of soup.",
+      "fr": "Claire compta ce qu’il restait : cinq œufs, un peu de riz et une boîte de soupe.",
+      "g": {
+       "counted": [
+        "compta",
+        "count",
+        "v",
+        "compter"
+       ],
+       "left": [
+        "restait (what was left : ce qu’il restait)",
+        "leave",
+        "v",
+        "laisser"
+       ],
+       "eggs": [
+        "œufs",
+        "egg",
+        "n",
+        "œuf"
+       ],
+       "rice": [
+        "riz",
+        "rice",
+        "n"
+       ],
+       "tin": [
+        "boîte",
+        "tin",
+        "n",
+        "boîte"
+       ],
+       "soup": [
+        "soupe",
+        "soup",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“We must share it carefully,” she said, “like a real team.”",
+      "fr": "« Nous devons le partager avec soin », dit-elle, « comme une vraie équipe. »",
+      "g": {
+       "share": [
+        "partager",
+        "share",
+        "v"
+       ],
+       "carefully": [
+        "avec soin",
+        "carefully",
+        "d"
+       ],
+       "real": [
+        "vraie",
+        "real",
+        "a"
+       ],
+       "team": [
+        "équipe",
+        "team",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Everyone agreed.",
+      "fr": "Tout le monde fut d’accord.",
+      "g": {
+       "agreed": [
+        "fut d’accord",
+        "agree",
+        "v",
+        "être d’accord"
+       ]
+      }
+     },
+     {
+      "en": "Lucie even gave her last biscuit to Hugo.",
+      "fr": "Lucie donna même son dernier biscuit à Hugo.",
+      "g": {
+       "gave": [
+        "donna",
+        "give",
+        "v",
+        "donner"
+       ],
+       "biscuit": [
+        "biscuit",
+        "biscuit",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Thanks,” said Hugo. “You’re kinder than before.”",
+      "fr": "« Merci », dit Hugo. « Tu es plus gentille qu’avant. »",
+      "g": {
+       "thanks": [
+        "merci",
+        "thanks",
+        "n"
+       ],
+       "kinder": [
+        "plus gentille",
+        "kind",
+        "a",
+        "gentil"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "After breakfast, Paul decided to dig a path to the gate.",
+      "fr": "Après le petit-déjeuner, Paul décida de creuser un chemin jusqu’au portail.",
+      "g": {
+       "breakfast": [
+        "petit-déjeuner",
+        "breakfast",
+        "n"
+       ],
+       "decided": [
+        "décida",
+        "decide",
+        "v",
+        "décider"
+       ],
+       "dig": [
+        "creuser",
+        "dig",
+        "v"
+       ],
+       "path": [
+        "chemin",
+        "path",
+        "n"
+       ],
+       "gate": [
+        "portail",
+        "gate",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Can I come?” asked Hugo. “I’m not afraid now.”",
+      "fr": "« Je peux venir ? » demanda Hugo. « Je n’ai plus peur, maintenant. »",
+      "g": {
+       "come": [
+        "venir",
+        "come",
+        "v"
+       ],
+       "asked": [
+        "demanda",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "afraid": [
+        "peur (avoir peur)",
+        "afraid",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Paul and Hugo dug for an hour and made a long path through the snow.",
+      "fr": "Paul et Hugo creusèrent pendant une heure et firent un long chemin à travers la neige.",
+      "g": {
+       "dug": [
+        "creusèrent",
+        "dig",
+        "v",
+        "creuser"
+       ],
+       "hour": [
+        "heure",
+        "hour",
+        "n"
+       ],
+       "made": [
+        "firent",
+        "make",
+        "v",
+        "faire"
+       ],
+       "long": [
+        "long",
+        "long",
+        "a"
+       ],
+       "path": [
+        "chemin",
+        "path",
+        "n"
+       ],
+       "snow": [
+        "neige",
+        "snow",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "It was hard work, and they were hot in their big coats.",
+      "fr": "C’était un travail dur, et ils avaient chaud dans leurs gros manteaux.",
+      "g": {
+       "hard": [
+        "dur",
+        "hard",
+        "a"
+       ],
+       "work": [
+        "travail",
+        "work",
+        "n"
+       ],
+       "hot": [
+        "chaud (ils avaient chaud)",
+        "hot",
+        "a"
+       ],
+       "big": [
+        "gros",
+        "big",
+        "a"
+       ],
+       "coats": [
+        "manteaux",
+        "coat",
+        "n",
+        "manteau"
+       ]
+      }
+     },
+     {
+      "en": "At the end, Hugo made a small snowman with a carrot for a nose.",
+      "fr": "Au bout, Hugo fit un petit bonhomme de neige avec une carotte pour nez.",
+      "g": {
+       "end": [
+        "bout",
+        "end",
+        "n"
+       ],
+       "made": [
+        "fit",
+        "make",
+        "v",
+        "faire"
+       ],
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ],
+       "snowman": [
+        "bonhomme de neige",
+        "snowman",
+        "n"
+       ],
+       "carrot": [
+        "carotte",
+        "carrot",
+        "n"
+       ],
+       "nose": [
+        "nez",
+        "nose",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Paul laughed and said it was the best snowman in Wales.",
+      "fr": "Paul rit et dit que c’était le meilleur bonhomme de neige du pays de Galles.",
+      "g": {
+       "laughed": [
+        "rit",
+        "laugh",
+        "v",
+        "rire"
+       ],
+       "said": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "best": [
+        "meilleur",
+        "good",
+        "a",
+        "bon"
+       ],
+       "snowman": [
+        "bonhomme de neige",
+        "snowman",
+        "n"
+       ],
+       "wales": [
+        "pays de Galles",
+        "Wales",
+        "np"
+       ]
+      }
+     },
+     {
+      "en": "Then they heard a strange noise in the distance.",
+      "fr": "Puis ils entendirent un bruit étrange au loin.",
+      "g": {
+       "heard": [
+        "entendirent",
+        "hear",
+        "v",
+        "entendre"
+       ],
+       "strange": [
+        "étrange",
+        "strange",
+        "a"
+       ],
+       "noise": [
+        "bruit",
+        "noise",
+        "n"
+       ],
+       "distance": [
+        "loin (in the distance : au loin)",
+        "distance",
+        "n"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 4 — Sharing everything",
+   "titreFr": "Chapitre 4 — Tout partager"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "It was a loud, heavy sound, and it was coming nearer.",
+      "fr": "C’était un bruit fort et lourd, et il se rapprochait.",
+      "g": {
+       "loud": [
+        "fort",
+        "loud",
+        "a"
+       ],
+       "heavy": [
+        "lourd",
+        "heavy",
+        "a"
+       ],
+       "sound": [
+        "bruit",
+        "sound",
+        "n"
+       ],
+       "coming": [
+        "se rapprochait (coming nearer : se rapprochait)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "nearer": [
+        "(coming nearer : se rapprochait)",
+        "near",
+        "a",
+        "proche"
+       ]
+      }
+     },
+     {
+      "en": "Hugo ran to the top of the hill and shouted, “Dad! Come and look!”",
+      "fr": "Hugo courut jusqu’en haut de la colline et cria : « Papa ! Viens voir ! »",
+      "g": {
+       "ran": [
+        "courut",
+        "run",
+        "v",
+        "courir"
+       ],
+       "top": [
+        "haut (sommet)",
+        "top",
+        "n"
+       ],
+       "hill": [
+        "colline",
+        "hill",
+        "n"
+       ],
+       "shouted": [
+        "cria",
+        "shout",
+        "v",
+        "crier"
+       ],
+       "dad": [
+        "papa",
+        "dad",
+        "n"
+       ],
+       "come": [
+        "viens",
+        "come",
+        "v",
+        "venir"
+       ],
+       "look": [
+        "voir (look : regarder)",
+        "look",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "A big green tractor was crossing the white field.",
+      "fr": "Un gros tracteur vert traversait le champ blanc.",
+      "g": {
+       "big": [
+        "gros",
+        "big",
+        "a"
+       ],
+       "green": [
+        "vert",
+        "green",
+        "a"
+       ],
+       "tractor": [
+        "tracteur",
+        "tractor",
+        "n"
+       ],
+       "crossing": [
+        "traversait",
+        "cross",
+        "v",
+        "traverser"
+       ],
+       "white": [
+        "blanc",
+        "white",
+        "a"
+       ],
+       "field": [
+        "champ",
+        "field",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "The tractor made a lot of noise, but it moved very slowly.",
+      "fr": "Le tracteur faisait beaucoup de bruit, mais il avançait très lentement.",
+      "g": {
+       "tractor": [
+        "tracteur",
+        "tractor",
+        "n"
+       ],
+       "made": [
+        "faisait",
+        "make",
+        "v",
+        "faire"
+       ],
+       "a": [
+        "beaucoup (a lot of : beaucoup de)",
+        "a",
+        "t"
+       ],
+       "lot": [
+        "(a lot of : beaucoup de)",
+        "lot",
+        "n"
+       ],
+       "of": [
+        "(a lot of : beaucoup de)",
+        "of",
+        "r"
+       ],
+       "noise": [
+        "bruit",
+        "noise",
+        "n"
+       ],
+       "moved": [
+        "avançait",
+        "move",
+        "v",
+        "bouger"
+       ],
+       "slowly": [
+        "lentement",
+        "slowly",
+        "d"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "A man in a thick coat waved from the seat.",
+      "fr": "Un homme en gros manteau fit un signe depuis le siège.",
+      "g": {
+       "man": [
+        "homme",
+        "man",
+        "n"
+       ],
+       "thick": [
+        "gros",
+        "thick",
+        "a"
+       ],
+       "coat": [
+        "manteau",
+        "coat",
+        "n"
+       ],
+       "waved": [
+        "fit un signe",
+        "wave",
+        "v",
+        "faire signe"
+       ],
+       "seat": [
+        "siège",
+        "seat",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Hello there!” he called. “I’m Mr Evans, from the farm over the hill.”",
+      "fr": "« Bonjour ! » appela-t-il. « Je suis M. Evans, de la ferme de l’autre côté de la colline. »",
+      "g": {
+       "called": [
+        "appela",
+        "call",
+        "v",
+        "appeler"
+       ],
+       "farm": [
+        "ferme",
+        "farm",
+        "n"
+       ],
+       "over": [
+        "de l’autre côté de (over the hill : de l’autre côté de la colline)",
+        "over",
+        "r"
+       ],
+       "hill": [
+        "colline",
+        "hill",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“I saw your smoke from my farm. Is everybody OK?”",
+      "fr": "« J’ai vu votre fumée depuis ma ferme. Tout le monde va bien ? »",
+      "g": {
+       "saw": [
+        "ai vu",
+        "see",
+        "v",
+        "voir"
+       ],
+       "smoke": [
+        "fumée",
+        "smoke",
+        "n"
+       ],
+       "farm": [
+        "ferme",
+        "farm",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“We’re fine,” said Paul, “but we can’t leave the cabin.”",
+      "fr": "« Nous allons bien », dit Paul, « mais nous ne pouvons pas quitter le chalet. »",
+      "g": {
+       "fine": [
+        "bien",
+        "fine",
+        "a"
+       ],
+       "leave": [
+        "quitter",
+        "leave",
+        "v"
+       ],
+       "cabin": [
+        "chalet",
+        "cabin",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“I know,” laughed Mr Evans. “Nobody can leave in this weather.”",
+      "fr": "« Je sais », dit M. Evans en riant. « Personne ne peut partir par un temps pareil. »",
+      "g": {
+       "know": [
+        "sais",
+        "know",
+        "v",
+        "savoir"
+       ],
+       "laughed": [
+        "dit en riant",
+        "laugh",
+        "v",
+        "rire"
+       ],
+       "leave": [
+        "partir",
+        "leave",
+        "v"
+       ],
+       "weather": [
+        "temps",
+        "weather",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“The snow plough is going to clear the road tomorrow.”",
+      "fr": "« Le chasse-neige va déblayer la route demain. »",
+      "g": {
+       "snow": [
+        "chasse-neige (snow plough : chasse-neige)",
+        "snow",
+        "n"
+       ],
+       "plough": [
+        "(snow plough : chasse-neige)",
+        "plough",
+        "n"
+       ],
+       "going": [
+        "va (going to : va)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "to": [
+        "(going to : va)",
+        "to",
+        "r"
+       ],
+       "clear": [
+        "déblayer",
+        "clear",
+        "v"
+       ],
+       "road": [
+        "route",
+        "road",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“But today I have a present for you.”",
+      "fr": "« Mais aujourd’hui, j’ai un cadeau pour vous. »",
+      "g": {
+       "present": [
+        "cadeau",
+        "present",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He opened a big box behind the seat.",
+      "fr": "Il ouvrit une grande caisse derrière le siège.",
+      "g": {
+       "opened": [
+        "ouvrit",
+        "open",
+        "v",
+        "ouvrir"
+       ],
+       "big": [
+        "grande",
+        "big",
+        "a"
+       ],
+       "box": [
+        "caisse",
+        "box",
+        "n"
+       ],
+       "seat": [
+        "siège",
+        "seat",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "It was full of fresh bread, eggs, butter and a huge bottle of warm milk.",
+      "fr": "Elle était pleine de pain frais, d’œufs, de beurre et d’une énorme bouteille de lait chaud.",
+      "g": {
+       "full": [
+        "pleine",
+        "full",
+        "a"
+       ],
+       "fresh": [
+        "frais",
+        "fresh",
+        "a"
+       ],
+       "bread": [
+        "pain",
+        "bread",
+        "n"
+       ],
+       "eggs": [
+        "œufs",
+        "egg",
+        "n",
+        "œuf"
+       ],
+       "butter": [
+        "beurre",
+        "butter",
+        "n"
+       ],
+       "huge": [
+        "énorme",
+        "huge",
+        "a"
+       ],
+       "bottle": [
+        "bouteille",
+        "bottle",
+        "n"
+       ],
+       "warm": [
+        "chaud",
+        "warm",
+        "a"
+       ],
+       "milk": [
+        "lait",
+        "milk",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Claire clapped her hands.",
+      "fr": "Claire applaudit.",
+      "g": {
+       "clapped": [
+        "applaudit",
+        "clap",
+        "v",
+        "applaudir"
+       ],
+       "hands": [
+        "mains (clapped her hands : applaudit)",
+        "hand",
+        "n",
+        "main"
+       ]
+      }
+     },
+     {
+      "en": "“Mr Evans, you’re an angel!”",
+      "fr": "« Monsieur Evans, vous êtes un ange ! »",
+      "g": {
+       "angel": [
+        "ange (you’re an angel : vous êtes un ange)",
+        "angel",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Hugo touched the big wheel of the tractor and smiled.",
+      "fr": "Hugo toucha la grosse roue du tracteur et sourit.",
+      "g": {
+       "touched": [
+        "toucha",
+        "touch",
+        "v",
+        "toucher"
+       ],
+       "big": [
+        "grosse",
+        "big",
+        "a"
+       ],
+       "wheel": [
+        "roue",
+        "wheel",
+        "n"
+       ],
+       "tractor": [
+        "tracteur",
+        "tractor",
+        "n"
+       ],
+       "smiled": [
+        "sourit",
+        "smile",
+        "v",
+        "sourire"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 5 — A visitor",
+   "titreFr": "Chapitre 5 — Un visiteur"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Mr Evans came into the cabin and sat by the fire.",
+      "fr": "M. Evans entra dans le chalet et s’assit près du feu.",
+      "g": {
+       "came": [
+        "entra",
+        "come",
+        "v",
+        "venir"
+       ],
+       "cabin": [
+        "chalet",
+        "cabin",
+        "n"
+       ],
+       "sat": [
+        "s’assit",
+        "sit",
+        "v",
+        "s’asseoir"
+       ],
+       "fire": [
+        "feu",
+        "fire",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Claire heated the milk in a pot and gave a hot cup to everyone.",
+      "fr": "Claire fit chauffer le lait dans une casserole et donna une tasse chaude à chacun.",
+      "g": {
+       "heated": [
+        "fit chauffer",
+        "heat",
+        "v",
+        "chauffer"
+       ],
+       "milk": [
+        "lait",
+        "milk",
+        "n"
+       ],
+       "pot": [
+        "casserole",
+        "pot",
+        "n"
+       ],
+       "gave": [
+        "donna",
+        "give",
+        "v",
+        "donner"
+       ],
+       "hot": [
+        "chaude",
+        "hot",
+        "a"
+       ],
+       "cup": [
+        "tasse",
+        "cup",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“This is the best milk of my life,” said Hugo.",
+      "fr": "« C’est le meilleur lait de ma vie », dit Hugo.",
+      "g": {
+       "best": [
+        "meilleur",
+        "good",
+        "a",
+        "bon"
+       ],
+       "milk": [
+        "lait",
+        "milk",
+        "n"
+       ],
+       "life": [
+        "vie",
+        "life",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“It’s from my cows,” said Mr Evans proudly.",
+      "fr": "« Il vient de mes vaches », dit M. Evans avec fierté.",
+      "g": {
+       "cows": [
+        "vaches",
+        "cow",
+        "n",
+        "vache"
+       ],
+       "proudly": [
+        "avec fierté",
+        "proudly",
+        "d"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "He looked at the board games on the floor.",
+      "fr": "Il regarda les jeux de société posés sur le sol.",
+      "g": {
+       "looked": [
+        "regarda",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "board": [
+        "de société (board games : jeux de société)",
+        "board",
+        "n"
+       ],
+       "games": [
+        "jeux",
+        "game",
+        "n",
+        "jeu"
+       ],
+       "floor": [
+        "sol",
+        "floor",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Snakes and ladders! I haven’t played that for forty years.”",
+      "fr": "« Serpents et échelles ! Je n’y ai pas joué depuis quarante ans. »",
+      "g": {
+       "snakes": [
+        "serpents",
+        "snake",
+        "n",
+        "serpent"
+       ],
+       "ladders": [
+        "échelles",
+        "ladder",
+        "n",
+        "échelle"
+       ],
+       "played": [
+        "joué",
+        "play",
+        "v",
+        "jouer"
+       ],
+       "for": [
+        "depuis (for forty years : depuis quarante ans)",
+        "for",
+        "r"
+       ],
+       "years": [
+        "ans",
+        "year",
+        "n",
+        "an"
+       ]
+      }
+     },
+     {
+      "en": "“Stay and play with us!” said Hugo.",
+      "fr": "« Restez jouer avec nous ! » dit Hugo.",
+      "g": {
+       "stay": [
+        "restez",
+        "stay",
+        "v",
+        "rester"
+       ],
+       "play": [
+        "jouer",
+        "play",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "Mr Evans stayed for two games.",
+      "fr": "M. Evans resta pour deux parties.",
+      "g": {
+       "stayed": [
+        "resta",
+        "stay",
+        "v",
+        "rester"
+       ],
+       "games": [
+        "parties",
+        "game",
+        "n",
+        "jeu"
+       ]
+      }
+     },
+     {
+      "en": "He told them a funny story about a sheep in his kitchen.",
+      "fr": "Il leur raconta une histoire drôle sur un mouton dans sa cuisine.",
+      "g": {
+       "told": [
+        "raconta",
+        "tell",
+        "v",
+        "raconter"
+       ],
+       "funny": [
+        "drôle",
+        "funny",
+        "a"
+       ],
+       "story": [
+        "histoire",
+        "story",
+        "n"
+       ],
+       "sheep": [
+        "mouton",
+        "sheep",
+        "n"
+       ],
+       "kitchen": [
+        "cuisine",
+        "kitchen",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Everyone laughed until their stomachs hurt.",
+      "fr": "Tout le monde rit à en avoir mal au ventre.",
+      "g": {
+       "laughed": [
+        "rit",
+        "laugh",
+        "v",
+        "rire"
+       ],
+       "stomachs": [
+        "ventre (until their stomachs hurt : à en avoir mal au ventre)",
+        "stomach",
+        "n",
+        "ventre"
+       ],
+       "hurt": [
+        "(until their stomachs hurt : à en avoir mal au ventre)",
+        "hurt",
+        "v"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“In the mountains, we always help our neighbours,” said Mr Evans.",
+      "fr": "« Dans les montagnes, nous aidons toujours nos voisins », dit M. Evans.",
+      "g": {
+       "mountains": [
+        "montagnes",
+        "mountain",
+        "n",
+        "montagne"
+       ],
+       "help": [
+        "aidons",
+        "help",
+        "v",
+        "aider"
+       ],
+       "neighbours": [
+        "voisins",
+        "neighbour",
+        "n",
+        "voisin"
+       ]
+      }
+     },
+     {
+      "en": "“Was there ever a worse storm?” asked Lucie.",
+      "fr": "« Y a-t-il déjà eu une tempête pire ? » demanda Lucie.",
+      "g": {
+       "worse": [
+        "pire",
+        "bad",
+        "a",
+        "mauvais"
+       ],
+       "storm": [
+        "tempête",
+        "storm",
+        "n"
+       ],
+       "asked": [
+        "demanda",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     },
+     {
+      "en": "“Yes, when I was a boy,” he answered. “We were blocked for a week!”",
+      "fr": "« Oui, quand j’étais petit », répondit-il. « Nous avons été bloqués pendant une semaine ! »",
+      "g": {
+       "boy": [
+        "petit (garçon)",
+        "boy",
+        "n"
+       ],
+       "answered": [
+        "répondit",
+        "answer",
+        "v",
+        "répondre"
+       ],
+       "blocked": [
+        "bloqués",
+        "block",
+        "v",
+        "bloquer"
+       ],
+       "week": [
+        "semaine",
+        "week",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“A week!” cried Hugo. “That’s longer than our holiday!”",
+      "fr": "« Une semaine ! » s’écria Hugo. « C’est plus long que nos vacances ! »",
+      "g": {
+       "week": [
+        "semaine",
+        "week",
+        "n"
+       ],
+       "cried": [
+        "s’écria",
+        "cry",
+        "v",
+        "crier"
+       ],
+       "longer": [
+        "plus long",
+        "long",
+        "a",
+        "long"
+       ],
+       "holiday": [
+        "vacances",
+        "holiday",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "When he left, he said, “Tomorrow you’re going to be free.”",
+      "fr": "Quand il partit, il dit : « Demain, vous serez libres. »",
+      "g": {
+       "left": [
+        "partit",
+        "leave",
+        "v",
+        "partir"
+       ],
+       "going": [
+        "(going to be : serez)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "to": [
+        "(going to be : serez)",
+        "to",
+        "r"
+       ],
+       "free": [
+        "libres",
+        "free",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Hugo waved until the tractor disappeared behind the white hill.",
+      "fr": "Hugo agita la main jusqu’à ce que le tracteur disparaisse derrière la colline blanche.",
+      "g": {
+       "waved": [
+        "agita la main",
+        "wave",
+        "v"
+       ],
+       "tractor": [
+        "tracteur",
+        "tractor",
+        "n"
+       ],
+       "disappeared": [
+        "disparaisse",
+        "disappear",
+        "v",
+        "disparaître"
+       ],
+       "white": [
+        "blanche",
+        "white",
+        "a"
+       ],
+       "hill": [
+        "colline",
+        "hill",
+        "n"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "On Tuesday, the snow plough cleared the road, and the electricity came back.",
+      "fr": "Mardi, le chasse-neige dégagea la route, et le courant revint.",
+      "g": {
+       "tuesday": [
+        "mardi",
+        "Tuesday",
+        "n"
+       ],
+       "snow": [
+        "chasse-neige (snow plough : chasse-neige)",
+        "snow",
+        "n"
+       ],
+       "plough": [
+        "(snow plough : chasse-neige)",
+        "plough",
+        "n"
+       ],
+       "cleared": [
+        "dégagea",
+        "clear",
+        "v",
+        "dégager"
+       ],
+       "road": [
+        "route",
+        "road",
+        "n"
+       ],
+       "electricity": [
+        "courant",
+        "electricity",
+        "n"
+       ],
+       "came": [
+        "revint (came back : revint)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "back": [
+        "(came back : revint)",
+        "back",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "The lights went on, the fridge began to hum, and Hugo cheered.",
+      "fr": "Les lumières s’allumèrent, le réfrigérateur se mit à bourdonner, et Hugo poussa un cri de joie.",
+      "g": {
+       "lights": [
+        "lumières",
+        "light",
+        "n",
+        "lumière"
+       ],
+       "went": [
+        "s’allumèrent (went on : s’allumèrent)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "on": [
+        "(went on : s’allumèrent)",
+        "on",
+        "d"
+       ],
+       "fridge": [
+        "réfrigérateur",
+        "fridge",
+        "n"
+       ],
+       "began": [
+        "se mit (began to : se mit à)",
+        "begin",
+        "v",
+        "commencer"
+       ],
+       "hum": [
+        "bourdonner",
+        "hum",
+        "v",
+        "bourdonner"
+       ],
+       "cheered": [
+        "poussa un cri de joie",
+        "cheer",
+        "v",
+        "acclamer"
+       ]
+      }
+     },
+     {
+      "en": "But strangely, nobody was in a hurry to leave.",
+      "fr": "Mais, curieusement, personne n’était pressé de partir.",
+      "g": {
+       "strangely": [
+        "curieusement",
+        "strangely",
+        "d"
+       ],
+       "in": [
+        "(in a hurry : être pressé)",
+        "in",
+        "r"
+       ],
+       "hurry": [
+        "pressé (in a hurry : être pressé)",
+        "hurry",
+        "n"
+       ],
+       "leave": [
+        "partir",
+        "leave",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "The family packed their bags and said goodbye to the little cabin.",
+      "fr": "La famille fit ses valises et dit au revoir au petit chalet.",
+      "g": {
+       "family": [
+        "famille",
+        "family",
+        "n"
+       ],
+       "packed": [
+        "fit (packed their bags : fit leurs valises)",
+        "pack",
+        "v",
+        "faire ses valises"
+       ],
+       "bags": [
+        "valises",
+        "bag",
+        "n",
+        "sac"
+       ],
+       "goodbye": [
+        "au revoir",
+        "goodbye",
+        "n"
+       ],
+       "little": [
+        "petit",
+        "little",
+        "a"
+       ],
+       "cabin": [
+        "chalet",
+        "cabin",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "On the way home, Lucie turned on her phone.",
+      "fr": "Sur le chemin du retour, Lucie alluma son téléphone.",
+      "g": {
+       "way": [
+        "chemin",
+        "way",
+        "n"
+       ],
+       "home": [
+        "du retour (on the way home : sur le chemin du retour)",
+        "home",
+        "d"
+       ],
+       "turned": [
+        "alluma (turned on : alluma)",
+        "turn",
+        "v",
+        "tourner"
+       ],
+       "on": [
+        "(turned on : alluma)",
+        "on",
+        "d"
+       ],
+       "phone": [
+        "téléphone",
+        "phone",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "It buzzed twenty times with messages from her friends.",
+      "fr": "Il vibra vingt fois avec les messages de ses amis.",
+      "g": {
+       "buzzed": [
+        "vibra",
+        "buzz",
+        "v",
+        "vibrer"
+       ],
+       "times": [
+        "fois",
+        "time",
+        "n",
+        "fois"
+       ],
+       "messages": [
+        "messages",
+        "message",
+        "n",
+        "message"
+       ],
+       "friends": [
+        "amis",
+        "friend",
+        "n",
+        "ami"
+       ]
+      }
+     },
+     {
+      "en": "She looked at them for a minute, then put the phone in her pocket.",
+      "fr": "Elle les regarda pendant une minute, puis mit le téléphone dans sa poche.",
+      "g": {
+       "looked": [
+        "regarda",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "minute": [
+        "minute",
+        "minute",
+        "n"
+       ],
+       "put": [
+        "mit",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "phone": [
+        "téléphone",
+        "phone",
+        "n"
+       ],
+       "pocket": [
+        "poche",
+        "pocket",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“I’m going to write a book,” she said. “A book of stories.”",
+      "fr": "« Je vais écrire un livre », dit-elle. « Un livre d’histoires. »",
+      "g": {
+       "going": [
+        "vais (going to : vais)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "to": [
+        "(going to : vais)",
+        "to",
+        "r"
+       ],
+       "write": [
+        "écrire",
+        "write",
+        "v"
+       ],
+       "book": [
+        "livre",
+        "book",
+        "n"
+       ],
+       "stories": [
+        "histoires",
+        "story",
+        "n",
+        "histoire"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“About a dragon?” asked Hugo.",
+      "fr": "« Sur un dragon ? » demanda Hugo.",
+      "g": {
+       "about": [
+        "sur (au sujet de)",
+        "about",
+        "r"
+       ],
+       "dragon": [
+        "dragon",
+        "dragon",
+        "n"
+       ],
+       "asked": [
+        "demanda",
+        "ask",
+        "v",
+        "demander"
+       ]
+      }
+     },
+     {
+      "en": "“About a dragon, a snow storm and a very brave little brother,” said Lucie.",
+      "fr": "« Sur un dragon, une tempête de neige et un petit frère très courageux », dit Lucie.",
+      "g": {
+       "dragon": [
+        "dragon",
+        "dragon",
+        "n"
+       ],
+       "snow": [
+        "neige",
+        "snow",
+        "n"
+       ],
+       "storm": [
+        "tempête",
+        "storm",
+        "n"
+       ],
+       "brave": [
+        "courageux",
+        "brave",
+        "a"
+       ],
+       "little": [
+        "petit",
+        "little",
+        "a"
+       ],
+       "brother": [
+        "frère",
+        "brother",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "In the car, Paul asked, “Was it a terrible holiday?”",
+      "fr": "Dans la voiture, Paul demanda : « Ces vacances étaient-elles terribles ? »",
+      "g": {
+       "car": [
+        "voiture",
+        "car",
+        "n"
+       ],
+       "asked": [
+        "demanda",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "terrible": [
+        "terribles",
+        "terrible",
+        "a"
+       ],
+       "holiday": [
+        "vacances",
+        "holiday",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“No!” shouted everyone. “It was our best holiday ever!”",
+      "fr": "« Non ! » crièrent-ils tous. « C’étaient nos meilleures vacances de tous les temps ! »",
+      "g": {
+       "shouted": [
+        "crièrent",
+        "shout",
+        "v",
+        "crier"
+       ],
+       "best": [
+        "meilleures",
+        "good",
+        "a",
+        "bon"
+       ],
+       "holiday": [
+        "vacances",
+        "holiday",
+        "n"
+       ],
+       "ever": [
+        "de tous les temps",
+        "ever",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Behind them, the cabin grew smaller and smaller, but the memory grew bigger.",
+      "fr": "Derrière eux, le chalet devenait de plus en plus petit, mais le souvenir grandissait.",
+      "g": {
+       "cabin": [
+        "chalet",
+        "cabin",
+        "n"
+       ],
+       "grew": [
+        "devenait",
+        "grow",
+        "v",
+        "grandir"
+       ],
+       "smaller": [
+        "plus petit",
+        "small",
+        "a",
+        "petit"
+       ],
+       "smaller#2": [
+        "plus petit",
+        "small",
+        "a",
+        "petit"
+       ],
+       "memory": [
+        "souvenir",
+        "memory",
+        "n"
+       ],
+       "grew#2": [
+        "grandissait",
+        "grow",
+        "v",
+        "grandir"
+       ],
+       "bigger": [
+        "plus grand",
+        "big",
+        "a",
+        "grand"
+       ]
+      }
+     },
+     {
+      "en": "“Tonight it’s my turn,” said Hugo. “I’m going to tell you a story.”",
+      "fr": "« Ce soir, c’est mon tour », dit Hugo. « Je vais te raconter une histoire. »",
+      "g": {
+       "turn": [
+        "tour",
+        "turn",
+        "n"
+       ],
+       "going": [
+        "vais (going to : vais)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "to": [
+        "(going to : vais)",
+        "to",
+        "r"
+       ],
+       "tell": [
+        "raconter",
+        "tell",
+        "v"
+       ],
+       "story": [
+        "histoire",
+        "story",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Lucie smiled.",
+      "fr": "Lucie sourit.",
+      "g": {
+       "smiled": [
+        "sourit",
+        "smile",
+        "v",
+        "sourire"
+       ]
+      }
+     },
+     {
+      "en": "“I can’t wait,” she said.",
+      "fr": "« J’ai hâte », dit-elle.",
+      "g": {
+       "wait": [
+        "hâte (can’t wait : avoir hâte)",
+        "wait",
+        "v",
+        "attendre"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 6 — The best holiday",
+   "titreFr": "Chapitre 6 — Les plus belles vacances"
+  }
+ ]
+}

@@ -604,6 +604,11 @@
         "entre",
         "between",
         "r"
+       ],
+       "bag": [
+        "sachet",
+        "bag",
+        "n"
        ]
       }
      },
@@ -753,6 +758,11 @@
         "cabine",
         "cabin",
         "n"
+       ],
+       "window": [
+        "vitrine",
+        "window",
+        "n"
        ]
       }
      },
@@ -785,7 +795,7 @@
      },
      {
       "en": "“Books,” said Zara. “Stories. And a retired English teacher with a terrifying stare.”",
-      "fr": "« Des livres, dit Zara. Des histoires. Et une ancienne prof d’anglais au regard terrifiant. »",
+      "fr": "« Des livres, dit Zara. Des histoires. Et une prof d’anglais à la retraite au regard terrifiant. »",
       "g": {
        "books": [
         "livres",
@@ -810,8 +820,13 @@
         "a"
        ],
        "stare": [
-        "regard fixe",
+        "regard",
         "stare",
+        "n"
+       ],
+       "teacher": [
+        "prof",
+        "teacher",
         "n"
        ]
       }
@@ -1124,9 +1139,21 @@
         "x"
        ],
        "people": [
+        "on (people feeling : qu’on ait)",
+        "people",
+        "n",
+        "personne"
+       ],
+       "people#2": [
         "ceux",
         "people",
-        "n"
+        "n",
+        "personne"
+       ],
+       "for#2": [
+        "pour",
+        "for",
+        "r"
        ]
       }
      },
@@ -1152,15 +1179,20 @@
         "soupirer"
        ],
        "moment": [
-        "moment",
+        "(for a long moment : longuement)",
         "moment",
         "n"
+       ],
+       "long": [
+        "(for a long moment : longuement)",
+        "long",
+        "a"
        ]
       }
      },
      {
       "en": "“Very well. But I choose the opening reading, and nobody reads vampire poetry in my shop.”",
-      "fr": "« Très bien. Mais c’est moi qui choisis la lecture d’ouverture, et personne ne lira de poésie de vampires dans ma boutique. »",
+      "fr": "« Très bien. Mais c’est moi qui choisis la lecture d’ouverture, et personne ne lit de poésie de vampires dans ma boutique. »",
       "g": {
        "well": [
         "bien",
@@ -1184,7 +1216,7 @@
         "n"
        ],
        "reads": [
-        "lira",
+        "lit",
         "read",
         "v",
         "lire"
@@ -1593,9 +1625,19 @@
         "c"
        ],
        "thing": [
-        "chose",
+        "(the whole thing : tout cela)",
         "thing",
         "n"
+       ],
+       "shop": [
+        "magasin",
+        "shop",
+        "n"
+       ],
+       "whole": [
+        "tout (the whole thing : tout cela)",
+        "whole",
+        "a"
        ]
       }
      },
@@ -1634,6 +1676,11 @@
         "have",
         "v",
         "avoir"
+       ],
+       "night": [
+        "soir",
+        "night",
+        "n"
        ]
       }
      },
@@ -1685,14 +1732,14 @@
         "n"
        ],
        "year": [
-        "Year (classe de 13-14 ans)",
+        "(Year Nine : la quatrième)",
         "year",
-        "n"
+        "np"
        ],
        "nine": [
-        "Nine (neuf)",
+        "(Year Nine : la quatrième)",
         "nine",
-        "a"
+        "np"
        ],
        "friday": [
         "vendredi",
@@ -1705,7 +1752,7 @@
         "n"
        ],
        "taught#2": [
-        "enseigné à",
+        "eu (taught Year Nine : eu la quatrième)",
         "teach",
         "v",
         "enseigner"
@@ -1717,10 +1764,15 @@
         "personne"
        ],
        "taught": [
-        "enseigné à (j'ai eu)",
+        "eu (taught a class : eu une classe)",
         "teach",
         "v",
         "enseigner"
+       ],
+       "once": [
+        "déjà (once taught : j’ai déjà eu)",
+        "once",
+        "d"
        ]
       }
      },
@@ -1735,13 +1787,13 @@
         "rire"
        ],
        "butterflies": [
-        "noué (full of butterflies : noué par le trac)",
+        "papillons (full of butterflies : l’estomac noué)",
         "butterfly",
         "n",
         "papillon"
        ],
        "full": [
-        "(full of butterflies : noué par le trac)",
+        "(full of butterflies : l’estomac noué)",
         "full",
         "a"
        ],
@@ -1835,12 +1887,12 @@
         "aller"
        ],
        "all": [
-        "(all the way : jusqu'au bout)",
+        "(all the way to : jusqu’à)",
         "all",
         "t"
        ],
        "way": [
-        "(all the way to : jusqu'à)",
+        "(all the way to : jusqu’à)",
         "way",
         "n"
        ],
@@ -1853,7 +1905,7 @@
      },
      {
       "en": "Zara had set up two cameras, a ring light and a banner that read “READ ON, SALTMARSH BAY”.",
-      "fr": "Zara avait installé deux caméras, un anneau lumineux et une banderole qui disait « LISEZ ENCORE, SALTMARSH BAY ».",
+      "fr": "Zara avait installé deux caméras, un anneau lumineux et une banderole qui disait « CONTINUEZ À LIRE, SALTMARSH BAY ».",
       "g": {
        "set": [
         "installé (set up)",
@@ -1899,12 +1951,12 @@
         "lire"
        ],
        "on": [
-        "encore (read on : continuez à lire)",
+        "(read on : continuez à lire)",
         "on",
         "d"
        ],
        "read#2": [
-        "lisez",
+        "continuez (read on : continuez à lire)",
         "read",
         "v",
         "lire"
@@ -2027,7 +2079,7 @@
      },
      {
       "en": "“It is a truth universally acknowledged,” she began, “that a bookshop in want of customers must be in want of a miracle.”",
-      "fr": "« C’est une vérité universellement reconnue, commença-t-elle, qu’une librairie qui manque de clients doit manquer d’un miracle. »",
+      "fr": "« C’est une vérité universellement reconnue, commença-t-elle, qu’une librairie qui manque de clients doit avoir besoin d’un miracle. »",
       "g": {
        "universally": [
         "universellement",
@@ -2062,14 +2114,15 @@
         "r"
        ],
        "must": [
-        "doit",
+        "doit (must be in want of : doit avoir besoin de)",
         "must",
         "v"
        ],
        "be": [
-        "être",
+        "(must be in want of : doit avoir besoin de)",
         "be",
-        "v"
+        "v",
+        "être"
        ],
        "miracle": [
         "miracle",
@@ -2080,6 +2133,21 @@
         "que",
         "that",
         "c"
+       ],
+       "in#2": [
+        "(in want of : avoir besoin de)",
+        "in",
+        "r"
+       ],
+       "want#2": [
+        "(in want of : avoir besoin de)",
+        "want",
+        "n"
+       ],
+       "of#2": [
+        "(in want of : avoir besoin de)",
+        "of",
+        "r"
        ]
       }
      },
@@ -2203,7 +2271,7 @@
      },
      {
       "en": "Dr Bernard read a poem in French and then in English, and half the audience pretended they had not been moved.",
-      "fr": "La docteure Bernard lut un poème en français puis en anglais, et la moitié du public fit semblant de ne pas être ému.",
+      "fr": "La docteure Bernard lut un poème en français puis en anglais, et la moitié du public fit semblant de ne pas avoir été émue.",
       "g": {
        "read": [
         "lut",
@@ -2228,7 +2296,7 @@
         "faire semblant"
        ],
        "moved": [
-        "ému",
+        "émue (had not been moved : ne pas avoir été émue)",
         "move",
         "v",
         "émouvoir"
@@ -2242,16 +2310,16 @@
      },
      {
       "en": "Even Mr Patel took a turn, reading the football results in a voice so dramatic that people cried with laughter.",
-      "fr": "Même M. Patel prit son tour, lisant les résultats de football d’une voix si dramatique que les gens pleuraient de rire.",
+      "fr": "Même M. Patel s’y mit à son tour, lisant les résultats de football d’une voix si dramatique que les gens pleuraient de rire.",
       "g": {
        "took": [
-        "prit (took a turn : prit son tour)",
+        "s’y mit (took a turn : s’y mit à son tour)",
         "take",
         "v",
         "prendre"
        ],
        "turn": [
-        "(took a turn : prit son tour)",
+        "(took a turn : à son tour)",
         "turn",
         "n"
        ],
@@ -2357,7 +2425,7 @@
      },
      {
       "en": "“Strangers from Scotland are donating,” she whispered. “Someone in Canada just gave fifty pounds and wrote a message saying, save the cat.”",
-      "fr": "« Des inconnus d’Écosse font des dons, murmura-t-elle. Quelqu’un au Canada vient de donner cinquante livres en écrivant : sauvez le chat. »",
+      "fr": "« Des inconnus d’Écosse font des dons, murmura-t-elle. Quelqu’un au Canada vient de donner cinquante livres et d’écrire un message disant : sauvez le chat. »",
       "g": {
        "strangers": [
         "inconnus",
@@ -2399,7 +2467,7 @@
         "d"
        ],
        "wrote": [
-        "écrivant",
+        "écrire",
         "write",
         "v",
         "écrire"
@@ -2438,7 +2506,7 @@
         "a"
        ],
        "drove": [
-        "descendit en roulant",
+        "descendit (drove down : descendit)",
         "drive",
         "v",
         "conduire"
@@ -2527,6 +2595,12 @@
         "let",
         "v",
         "laisser"
+       ],
+       "said#2": [
+        "disait",
+        "say",
+        "v",
+        "dire"
        ]
       }
      },
@@ -2753,7 +2827,7 @@
       "fr": "Vers le chapitre quatre, il se rendit compte qu’il ne lisait plus pour faire passer les heures : il lisait parce qu’il voulait savoir la suite.",
       "g": {
        "somewhere": [
-        "vers",
+        "(somewhere around : vers)",
         "somewhere",
         "d"
        ],
@@ -2813,13 +2887,13 @@
         "v"
        ],
        "happened": [
-        "se passait",
+        "(what happened next : la suite)",
         "happen",
         "v",
         "arriver"
        ],
        "next": [
-        "ensuite",
+        "(what happened next : la suite)",
         "next",
         "d"
        ]
@@ -2829,21 +2903,21 @@
     [
      {
       "en": "Mrs Okafor lowered herself into the chair beside him with a small groan.",
-      "fr": "Mme Okafor se laissa descendre dans le fauteuil à côté de lui avec un petit grognement.",
+      "fr": "Mme Okafor s’installa avec précaution sur la chaise à côté de lui, avec un petit grognement.",
       "g": {
        "lowered": [
-        "laissa descendre",
+        "s’installa avec précaution (lowered herself)",
         "lower",
         "v",
         "baisser"
        ],
        "herself": [
-        "se",
+        "(lowered herself : s’installa)",
         "herself",
         "p"
        ],
        "chair": [
-        "fauteuil",
+        "chaise",
         "chair",
         "n"
        ],
@@ -2861,7 +2935,7 @@
      },
      {
       "en": "“I never thought I would like books,” Noah admitted. “I thought they were for other people.”",
-      "fr": "« Je n’aurais jamais cru aimer les livres, reconnut Noah. Je pensais que c’était pour les autres. »",
+      "fr": "« Je n’aurais jamais cru aimer les livres, reconnut Noah. Je pensais que les livres, c’était pour les autres. »",
       "g": {
        "thought": [
         "aurais cru",
@@ -2888,14 +2962,15 @@
         "penser"
        ],
        "other": [
-        "les autres",
+        "(other people : les autres)",
         "other",
         "a"
        ],
        "people": [
-        "gens",
+        "(other people : les autres)",
         "people",
-        "n"
+        "n",
+        "personne"
        ],
        "were": [
         "c'était",
@@ -2982,7 +3057,7 @@
         "a"
        ],
        "beard": [
-        "barbe (avec une barbe : barbu)",
+        "barbe (with a beard : barbu)",
         "beard",
         "n"
        ],
@@ -3006,7 +3081,7 @@
      },
      {
       "en": "“Daniel and I opened this place in 1979,” she said. “We had no money, no customers and a leaking roof. He said a bookshop was the only place where you could travel without leaving your seat.”",
-      "fr": "« Daniel et moi avons ouvert cet endroit en 1979, dit-elle. Nous n’avions ni argent, ni clients, mais un toit qui fuyait. Il disait qu’une librairie était le seul endroit où l’on pouvait voyager sans quitter son siège. »",
+      "fr": "« Daniel et moi avons ouvert cet endroit en 1979, dit-elle. Nous n’avions pas d’argent, pas de clients et un toit qui fuyait. Il disait qu’une librairie était le seul endroit où l’on pouvait voyager sans quitter son siège. »",
       "g": {
        "daniel": [
         "Daniel (prénom)",
@@ -3072,6 +3147,12 @@
         "can",
         "v",
         "pouvoir"
+       ],
+       "said#2": [
+        "disait",
+        "say",
+        "v",
+        "dire"
        ]
       }
      },
@@ -3316,7 +3397,7 @@
     [
      {
       "en": "At six o’clock on Sunday evening, forty-eight hours after it had started, the marathon ended.",
-      "fr": "À dix-huit heures le dimanche, quarante-huit heures après son début, le marathon prit fin.",
+      "fr": "À dix-huit heures, le dimanche soir, quarante-huit heures après son début, le marathon prit fin.",
       "g": {
        "sunday": [
         "dimanche",
@@ -3349,7 +3430,7 @@
      },
      {
       "en": "Harbour Street was so full that the traffic had stopped, and the bus driver had joined the crowd with his engine switched off.",
-      "fr": "Harbour Street était si pleine que la circulation s’était arrêtée, et le chauffeur du bus avait rejoint la foule, moteur coupé.",
+      "fr": "Harbour Street était si bondée que la circulation s’était arrêtée, et le chauffeur du bus avait rejoint la foule, moteur coupé.",
       "g": {
        "so": [
         "si",
@@ -3403,6 +3484,11 @@
         "(switched off : coupé)",
         "switch off",
         "x"
+       ],
+       "full": [
+        "bondée",
+        "full",
+        "a"
        ]
       }
      },
@@ -3582,7 +3668,7 @@
         "a"
        ],
        "kissed": [
-        "embrassé",
+        "se fit embrasser (was kissed)",
         "kiss",
         "v",
         "embrasser"
@@ -3727,12 +3813,12 @@
         "v"
        ],
        "no": [
-        "pas",
+        "(no more : pas plus)",
         "no",
-        "a"
+        "d"
        ],
        "more": [
-        "plus",
+        "(no more : pas plus)",
         "more",
         "d"
        ],
@@ -3769,6 +3855,12 @@
         "lents",
         "slow",
         "a"
+       ],
+       "came": [
+        "retentirent (came from : retentirent depuis)",
+        "come",
+        "v",
+        "venir"
        ]
       }
      },
@@ -3801,7 +3893,7 @@
      },
      {
       "en": "“Touching,” he said. “Truly. Three months of rent. I wish you every success.”",
-      "fr": "« Touchant, dit-il. Vraiment. Trois mois de loyer. Je vous souhaite plein succès. »",
+      "fr": "« Touchant, dit-il. Vraiment. Trois mois de loyer. Je vous souhaite tout le succès possible. »",
       "g": {
        "touching": [
         "touchant",
@@ -3820,12 +3912,12 @@
         "souhaiter"
        ],
        "success": [
-        "succès",
+        "(every success : tout le succès possible)",
         "success",
         "n"
        ],
        "every": [
-        "plein",
+        "tout (every success : tout le succès possible)",
         "every",
         "t"
        ]
@@ -3833,7 +3925,7 @@
      },
      {
       "en": "“Would you sell me the building, Mr Hale?” asked Mrs Okafor, quite calmly.",
-      "fr": "« Me vendriez-vous l’immeuble, monsieur Hale ? » demanda Mme Okafor, très calmement.",
+      "fr": "« Me vendriez-vous l’immeuble, monsieur Hale ? » demanda Mme Okafor, assez calmement.",
       "g": {
        "would": [
         "vendriez-vous",
@@ -3848,7 +3940,7 @@
         ""
        ],
        "quite": [
-        "très",
+        "assez",
         "quite",
         "d"
        ],
@@ -3861,7 +3953,7 @@
      },
      {
       "en": "He laughed. “For a hundred and fifty thousand pounds, by the end of November? I’d be delighted. Good luck.”",
-      "fr": "Il éclata de rire. « Pour cent cinquante mille livres, avant la fin novembre ? Avec plaisir. Bonne chance. »",
+      "fr": "Il éclata de rire. « Pour cent cinquante mille livres, avant la fin novembre ? J’en serais ravi. Bonne chance. »",
       "g": {
        "laughed": [
         "éclata de rire",
@@ -3903,6 +3995,11 @@
         "avant",
         "by",
         "r"
+       ],
+       "end": [
+        "fin",
+        "end",
+        "n"
        ]
       }
      },
@@ -3928,10 +4025,10 @@
         "siffler"
        ],
        "hissed": [
-        "siffla",
+        "feula",
         "hiss",
         "v",
-        "siffler"
+        "feuler"
        ],
        "like": [
         "aime",
@@ -3951,7 +4048,7 @@
         "siffler"
        ],
        "wrong": [
-        "se trompe (être dans l'erreur)",
+        "(never wrong : ne se trompe jamais)",
         "wrong",
         "a"
        ],

@@ -11,51 +11,83 @@
   "questions": [
     {
       "q": "How did Rikki-tikki come to the family's garden?",
-      "o": ["A flood washed him out of his burrow", "He ran away from a circus", "He followed Teddy home from school"],
+      "o": [
+        "A flood washed him out of his burrow",
+        "He ran away from a circus",
+        "He followed Teddy home from school"
+      ],
       "i": "Relis le début de l'histoire, avant l'arrivée dans la maison.",
-      "e": "Une crue d'été l'a emporté hors de son terrier et l'a entraîné dans un fossé ; il a été retrouvé à demi noyé sur une allée du jardin."
+      "e": "Une crue d'été l'a emporté hors de son terrier et l'a entraîné dans un fossé ; il a été retrouvé inanimé sur une allée du jardin, puis la famille l'a recueilli."
     },
     {
       "q": "Why does Teddy's father say Teddy is safe with Rikki-tikki?",
-      "o": ["Because the mongoose would protect him if a snake came", "Because mongooses never bite", "Because Rikki-tikki sleeps in a cage"],
+      "o": [
+        "Because the mongoose would protect him if a snake came",
+        "Because mongooses never bite",
+        "Because Rikki-tikki sleeps in a cage"
+      ],
       "i": "Pense à la discussion près de l'oreiller de Teddy, le premier soir.",
-      "e": "Le père dit que Teddy est plus en sécurité avec lui qu'avec un limier : si un serpent entrait dans la chambre, la mangouste saurait le combattre."
+      "e": "Le père dit que Teddy est plus en sécurité avec cette petite bête que s'il avait un limier pour le garder, et il pense à un serpent qui entrerait dans la chambre."
     },
     {
       "q": "What happened to one of Darzee's babies?",
-      "o": ["It fell out of the nest and Nag ate it", "It flew away", "Rikki-tikki rescued it"],
+      "o": [
+        "It fell out of the nest and Nag ate it",
+        "It flew away",
+        "Rikki-tikki rescued it"
+      ],
       "i": "Relis la rencontre avec Darzee et sa femme dans le buisson d'épines.",
       "e": "Un des petits est tombé du nid la veille et Nag l'a mangé : c'est pourquoi Darzee et sa femme sont si malheureux."
     },
     {
       "q": "How does Rikki-tikki deal with Karait?",
-      "o": ["He jumps on the snake's back and bites it behind the head", "He runs away to the house", "He waits for Teddy's father to kill it"],
+      "o": [
+        "He jumps on the snake's back and bites it high up the back",
+        "He runs away to the house",
+        "He waits for Teddy's father to kill it"
+      ],
       "i": "Souviens-toi du serpent minuscule qui se cache dans la poussière.",
-      "e": "Rikki-tikki bondit sur le dos de Karait et le mord le plus haut possible : cette morsure paralyse le serpent avant que le père de Teddy n'arrive."
+      "e": "Rikki-tikki bondit sur le dos de Karait et le mord le plus haut possible : cette morsure paralyse le serpent avant que le père de Teddy ne l'atteigne avec son bâton."
     },
     {
-      "q": "What does Chuchundra the musk-rat warn Rikki-tikki about?",
-      "o": ["That Nag and Nagaina are creeping into the house", "That the family will leave", "That a flood is coming"],
-      "i": "Pense à ce que Rikki-tikki entend dans la nuit, près de la salle de bain.",
-      "e": "Chuchundra, terrifié, laisse entendre que Nag est partout ; Rikki-tikki perçoit alors un bruit d'écailles : un cobra se glisse dans la salle de bain."
+      "q": "What does Rikki-tikki hear in the night after talking to Chuchundra?",
+      "o": [
+        "A snake's scales scratching on brickwork",
+        "A thunderclap from the garden",
+        "Teddy crying for help"
+      ],
+      "i": "Pense à ce que Chuchundra l'invite à écouter, dans la salle de bain.",
+      "e": "Chuchundra, terrifié, refuse de parler et dit seulement que Nag est partout ; Rikki-tikki tend l'oreille et perçoit le grattement des écailles d'un serpent sur la brique : un cobra se glisse par l'évacuation du bain."
     },
     {
       "q": "How does Rikki-tikki kill Nag?",
-      "o": ["He holds Nag by the head until the big man shoots him", "He pushes him into the bath", "He tricks him into leaving the garden"],
+      "o": [
+        "He holds Nag by the head until the big man shoots him",
+        "He pushes him into the bath",
+        "He tricks him into leaving the garden"
+      ],
       "i": "Rappelle-toi la bataille nocturne autour de la grande jarre d'eau.",
       "e": "Rikki-tikki saisit Nag par la tête pendant qu'il dort et ne lâche pas, malgré les secousses, jusqu'à ce que le grand homme tire un coup de fusil."
     },
     {
       "q": "Why does Rikki-tikki break the eggs in the melon bed?",
-      "o": ["Because each young cobra could kill a man or a mongoose", "Because he is hungry", "Because Darzee asked him to"],
+      "o": [
+        "Because each young cobra could kill a man or a mongoose",
+        "Because he is hungry",
+        "Because Darzee asked him to"
+      ],
       "i": "Relis ce que Rikki-tikki voit à l'intérieur des œufs.",
       "e": "Il voit les bébés cobras recroquevillés dans les œufs et sait qu'à peine éclos, chacun pourrait tuer un homme ou une mangouste."
     },
     {
       "q": "How does Rikki-tikki save the family from Nagaina on the veranda?",
-      "o": ["He threatens her last egg so that she turns away", "He bites her tail at once", "He asks Darzee to scare her"],
+      "o": [
+        "He shows her the last egg so that she forgets Teddy",
+        "He bites her tail at once",
+        "He asks Darzee to scare her"
+      ],
       "i": "Pense à l'objet que Rikki-tikki tient entre ses pattes.",
-      "e": "Rikki-tikki apporte le dernier œuf ; Nagaina oublie tout pour lui et se retourne, ce qui laisse au père de Teddy le temps de tirer son fils hors de sa portée."
+      "e": "Rikki-tikki apporte le dernier œuf et le tient entre ses pattes ; Nagaina oublie tout pour lui et se retourne, ce qui laisse au père de Teddy le temps d'attraper son fils et de le tirer hors de sa portée."
     }
   ]
 }

@@ -872,7 +872,15 @@
      },
      {
       "en": "The train goes under the sea.",
-      "fr": "Le train passe sous la mer."
+      "fr": "Le train passe sous la mer.",
+      "g": {
+       "goes": [
+        "passe (goes under)",
+        "go",
+        "v",
+        "aller"
+       ]
+      }
      },
      {
       "en": "Yusuf looks out of the window.",
@@ -959,6 +967,12 @@
         "(next to : à côté de)",
         "to",
         "r"
+       ],
+       "sits": [
+        "est assise",
+        "sit",
+        "v",
+        "s'asseoir"
        ]
       }
      },
@@ -985,20 +999,8 @@
      },
      {
       "en": "His aunt Sarah is at the station.",
-      "fr": "Sa tante Sarah l'attend à la gare.",
-      "g": {
-       "is": [
-        "attend",
-        "be",
-        "v",
-        "être"
-       ],
-       "at": [
-        "à",
-        "at",
-        "r"
-       ]
-      }
+      "fr": "Sa tante Sarah est à la gare.",
+      "g": {}
      },
      {
       "en": "Next to her is his cousin Amira.",
@@ -1105,10 +1107,10 @@
      },
      {
       "en": "\"Come with us to the market!\" says Aunt Sarah.",
-      "fr": "« Venez avec nous au marché ! » dit tante Sarah.",
+      "fr": "« Viens avec nous au marché ! » dit tante Sarah.",
       "g": {
        "come": [
-        "venez",
+        "viens",
         "come",
         "v",
         "venir"
@@ -1141,7 +1143,7 @@
      },
      {
       "en": "It smells of fresh bread and cheese.",
-      "fr": "Cela sent le pain frais et le fromage.",
+      "fr": "Ça sent le pain frais et le fromage.",
       "g": {
        "of": [
         "(smells of : sent)",
@@ -1686,6 +1688,16 @@
         "grande",
         "tall",
         "a"
+       ],
+       "phone": [
+        "(phone box : cabine téléphonique)",
+        "phone",
+        "n"
+       ],
+       "box": [
+        "cabine téléphonique (phone box)",
+        "box",
+        "n"
        ]
       }
      },
@@ -2076,15 +2088,8 @@
      },
      {
       "en": "Aunt Sarah has a picnic: bread, cheese and apples.",
-      "fr": "Tante Sarah a préparé un pique-nique : du pain, du fromage et des pommes.",
-      "g": {
-       "has": [
-        "a préparé",
-        "have",
-        "v",
-        "avoir"
-       ]
-      }
+      "fr": "Tante Sarah a un pique-nique : du pain, du fromage et des pommes.",
+      "g": {}
      },
      {
       "en": "People run, walk and ride bikes.",
@@ -2095,6 +2100,18 @@
         "run",
         "v",
         "courir"
+       ],
+       "ride": [
+        "font (ride bikes : font du vélo)",
+        "ride",
+        "v",
+        "faire du vélo, monter"
+       ],
+       "bikes": [
+        "(ride bikes : du vélo)",
+        "bike",
+        "n",
+        "vélo"
        ]
       }
      },
@@ -2252,7 +2269,14 @@
      },
      {
       "en": "\"Yes, please!\" says Yusuf.",
-      "fr": "« Oui, avec plaisir ! » dit Yusuf."
+      "fr": "« Oui, avec plaisir ! » dit Yusuf.",
+      "g": {
+       "please": [
+        "avec plaisir (yes, please)",
+        "please",
+        "d"
+       ]
+      }
      },
      {
       "en": "Leo is twelve, too.",

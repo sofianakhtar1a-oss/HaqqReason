@@ -406,7 +406,8 @@ export function LiseuseHistoire({ id, onFermer, onOuvrir }: { id: string; onFerm
           <nav className="hs-navigation" aria-label="Pages">
             <button type="button" className="bouton" disabled={page === 0} onClick={() => allerPage(page - 1)}>
               <ArrowLeft className="size-4" aria-hidden="true" />
-              Page précédente
+              <span className="hs-nav-long">Page précédente</span>
+              <span className="hs-nav-court">Précédente</span>
             </button>
             <span className="hs-navigation-numero">
               {page + 1} / {total}
@@ -427,7 +428,8 @@ export function LiseuseHistoire({ id, onFermer, onOuvrir }: { id: string; onFerm
               </button>
             ) : (
               <button type="button" className="bouton bouton-principal" onClick={() => allerPage(page + 1)}>
-                Page suivante
+                <span className="hs-nav-long">Page suivante</span>
+                <span className="hs-nav-court">Suivante</span>
                 <ArrowRight className="size-4" aria-hidden="true" />
               </button>
             )}

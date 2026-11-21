@@ -475,10 +475,10 @@
     [
      {
       "en": "Summer slipped into September, and the weather turned.",
-      "fr": "L’été glissa vers septembre, et le temps tourna.",
+      "fr": "L’été glissa vers septembre, et le temps changea.",
       "g": {
        "turned": [
-        "tourna",
+        "changea",
         "turn",
         "v",
         "tourner"
@@ -520,6 +520,11 @@
         "forte",
         "heavy",
         "a"
+       ],
+       "night": [
+        "soir",
+        "night",
+        "n"
        ]
       }
      },
@@ -597,7 +602,7 @@
      },
      {
       "en": "She came down in her slippers and dressing gown, looking like a very small, very cross general.",
-      "fr": "Elle descendit en pantoufles et en robe de chambre, l’air d’un tout petit général très contrarié.",
+      "fr": "Elle descendit en pantoufles et en robe de chambre, l’air d’un tout petit général très fâché.",
       "g": {
        "came": [
         "descendit (came down)",
@@ -611,18 +616,18 @@
         "x"
        ],
        "looking": [
-        "l'air",
+        "l’air (looking like : l’air de)",
         "look",
         "v",
         "regarder"
        ],
        "like": [
-        "de",
+        "(looking like : l’air de)",
         "like",
         "r"
        ],
        "cross": [
-        "contrarié",
+        "fâché",
         "cross",
         "a"
        ],
@@ -746,7 +751,7 @@
         "courir"
        ],
        "inch": [
-        "centimètre (inch : pouce)",
+        "(inch by inch : centimètre par centimètre)",
         "inch",
         "n",
         "pouce"
@@ -919,13 +924,13 @@
      },
      {
       "en": "She peered in and let out a low whistle. “It must have been hidden for decades. Nobody could have reached that without moving the bookcase.”",
-      "fr": "Elle jeta un coup d’œil et laissa échapper un sifflement bas. « Ça doit être caché depuis des décennies. Personne n’aurait pu l’atteindre sans déplacer la bibliothèque. »",
+      "fr": "Elle se pencha pour regarder à l’intérieur et laissa échapper un sifflement bas. « Ça doit être caché depuis des décennies. Personne n’aurait pu l’atteindre sans déplacer la bibliothèque. »",
       "g": {
        "peered": [
-        "jeta un coup d'œil",
+        "se pencha pour regarder (peered in)",
         "peer",
         "v",
-        "regarder"
+        "scruter"
        ],
        "let": [
         "laissa échapper (let out)",
@@ -1000,6 +1005,11 @@
         "bas",
         "low",
         "a"
+       ],
+       "in": [
+        "(peered in : à l’intérieur)",
+        "in",
+        "d"
        ]
       }
      },
@@ -1270,7 +1280,7 @@
      },
      {
       "en": "For a moment, nobody spoke. Then Zara grabbed her phone with trembling hands.",
-      "fr": "Pendant un instant, personne ne parla. Puis Zara saisit son téléphone d’une main tremblante.",
+      "fr": "Pendant un instant, personne ne parla. Puis Zara saisit son téléphone de ses mains tremblantes.",
       "g": {
        "spoke": [
         "parla",
@@ -1347,10 +1357,10 @@
         "image"
        ],
        "looked": [
-        "avaient l'air",
+        "(how the pictures looked : l’aspect des images)",
         "look",
         "v",
-        "regarder"
+        "avoir l’air"
        ],
        "copy": [
         "exemplaire",
@@ -1370,7 +1380,7 @@
         "détruire"
        ],
        "known": [
-        "connus",
+        "(are known to exist : on en connaît)",
         "know",
         "v",
         "connaître"
@@ -1625,7 +1635,7 @@
      },
      {
       "en": "She wiped her eyes. “He always said he was saving something for a rainy day. For forty years, I assumed he meant an umbrella.”",
-      "fr": "Elle s’essuya les yeux. « Il disait toujours qu’il gardait quelque chose pour un jour de pluie. Pendant quarante ans, j’ai cru qu’il parlait d’un parapluie. »",
+      "fr": "Elle s’essuya les yeux. « Il disait toujours qu’il mettait quelque chose de côté pour un jour de pluie. Pendant quarante ans, j’ai cru qu’il parlait d’un parapluie. »",
       "g": {
        "wiped": [
         "s'essuya",
@@ -1634,7 +1644,7 @@
         "essuyer"
        ],
        "saving": [
-        "gardait",
+        "mettait de côté",
         "save",
         "v",
         "mettre de côté"
@@ -1660,6 +1670,12 @@
         "toujours",
         "always",
         "d"
+       ],
+       "said": [
+        "disait",
+        "say",
+        "v",
+        "dire"
        ]
       }
      },
@@ -1746,7 +1762,7 @@
         "d"
        ],
        "told": [
-        "dit",
+        "avait dit",
         "tell",
         "v",
         "dire"
@@ -2074,7 +2090,7 @@
         "prouver"
        ],
        "owned": [
-        "possédait",
+        "appartenait",
         "own",
         "v",
         "posséder"
@@ -2223,7 +2239,7 @@
         "n"
        ],
        "travels": [
-        "voyagent (vont)",
+        "vont",
         "travel",
         "v",
         "voyager"
@@ -2397,6 +2413,12 @@
         "gilet",
         "cardigan",
         "n"
+       ],
+       "read": [
+        "lis",
+        "read",
+        "v",
+        "lire"
        ]
       }
      },
@@ -2594,7 +2616,7 @@
       "fr": "À Saltmarsh Bay, la moitié de la ville s’était entassée dans la boutique pour suivre la diffusion en direct, M. Patel étant chargé du pop-corn.",
       "g": {
        "back": [
-        "là-bas (back in : là-bas, à)",
+        "(back in : à)",
         "back",
         "d"
        ],
@@ -3474,9 +3496,9 @@
         "n"
        ],
        "one": [
-        "une seule",
+        "un (one day : un jour)",
         "one",
-        "a"
+        "t"
        ],
        "should": [
         "devrait",
@@ -3499,6 +3521,11 @@
         "will",
         "v",
         ""
+       ],
+       "one#2": [
+        "une seule",
+        "one",
+        "t"
        ]
       }
      },
@@ -3651,7 +3678,7 @@
      },
      {
       "en": "Mrs Okafor kept the title of Chief Troublemaker, which she said was the only job she had ever wanted.",
-      "fr": "Mme Okafor garda le titre de Cheffe des Fauteurs de troubles, qui était, disait-elle, le seul poste qu’elle ait jamais voulu.",
+      "fr": "Mme Okafor garda le titre de Fauteuse de troubles en chef, qui était, disait-elle, le seul poste qu’elle ait jamais voulu.",
       "g": {
        "kept": [
         "garda",
@@ -3665,12 +3692,12 @@
         "n"
        ],
        "chief": [
-        "Cheffe",
+        "en chef",
         "chief",
-        "n"
+        "a"
        ],
        "troublemaker": [
-        "Fauteurs de troubles",
+        "fauteuse de troubles",
         "troublemaker",
         "n"
        ],
@@ -3712,7 +3739,7 @@
     [
      {
       "en": "The following August, Noah opened an email with trembling fingers.",
-      "fr": "En août suivant, Noah ouvrit un e-mail d’une main tremblante.",
+      "fr": "Au mois d’août suivant, Noah ouvrit un e-mail, les doigts tremblants.",
       "g": {
        "following": [
         "suivant",
@@ -3730,9 +3757,10 @@
         "n"
        ],
        "trembling": [
-        "tremblantes",
-        "trembling",
-        "a"
+        "tremblants",
+        "tremble",
+        "v",
+        "trembler"
        ],
        "fingers": [
         "doigts",
@@ -3967,7 +3995,7 @@
      },
      {
       "en": "That afternoon, Noah wrote a sign for the window: “Help wanted. Must love books. Must not mind cats. Bad jokes will still be tolerated.”",
-      "fr": "Cet après-midi-là, Noah écrivit une pancarte pour la vitrine : « On recherche de l’aide. Il faut aimer les livres. Il ne faut pas craindre les chats. Les mauvaises blagues seront toujours tolérées. »",
+      "fr": "Cet après-midi-là, Noah écrivit une pancarte pour la vitrine : « On recherche de l’aide. Il faut aimer les livres. Les chats ne doivent pas vous gêner. Les mauvaises blagues seront toujours tolérées. »",
       "g": {
        "afternoon": [
         "après-midi",
@@ -3997,25 +4025,22 @@
         "vouloir"
        ],
        "mind": [
-        "craindre",
+        "gêner (must not mind : ne doivent pas gêner)",
         "mind",
-        "v",
-        ""
+        "v"
        ],
        "will": [
-        "seront",
+        "(will still be tolerated : seront toujours tolérées)",
         "will",
-        "v",
-        ""
+        "v"
        ],
        "be": [
-        "être",
+        "(will still be tolerated : seront toujours tolérées)",
         "be",
-        "v",
-        ""
+        "v"
        ],
        "still": [
-        "toujours",
+        "(will still be tolerated : seront toujours tolérées)",
         "still",
         "d"
        ],
