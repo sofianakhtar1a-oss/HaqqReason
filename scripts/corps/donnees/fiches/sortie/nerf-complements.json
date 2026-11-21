@@ -1,0 +1,185 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral sur Internet Archive : plexus cervical, nerf vague, plexus sacral",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "tma-diaphragme": {
+   "titre": "TeachMeAnatomy, The Diaphragm (innervation par les nerfs phréniques)",
+   "url": "https://teachmeanatomy.info/thorax/muscles/diaphragm/"
+  },
+  "kenhub-diaphragme": {
+   "titre": "Kenhub, Diaphragm (innervation, douleur projetée)",
+   "url": "https://www.kenhub.com/en/library/anatomy/diaphragm"
+  },
+  "tma-vague": {
+   "titre": "TeachMeAnatomy, Vagus nerve (CN X) : trajet des nerfs laryngés récurrents",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/vagus-nerve-cn-x/"
+  },
+  "tma-muscles-larynx": {
+   "titre": "TeachMeAnatomy, Muscles of the Larynx",
+   "url": "https://teachmeanatomy.info/neck/viscera/larynx/muscles/"
+  },
+  "tma-fessiers": {
+   "titre": "TeachMeAnatomy, Muscles of the Gluteal Region (nerfs glutéaux)",
+   "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/"
+  },
+  "kenhub-grand-fessier": {
+   "titre": "Kenhub, Gluteus maximus muscle (innervation)",
+   "url": "https://www.kenhub.com/en/library/anatomy/gluteus-maximus-muscle"
+  }
+ },
+ "fiches": [
+  {
+   "id": "nerf-phrenique",
+   "resume": "Le nerf du diaphragme : né de C3 à C5 dans le cou, il descend de chaque côté du cœur jusqu'au muscle de la respiration, qu'il est seul à commander.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Plexus cervical : rameaux antérieurs de C3, C4 et C5 (surtout C4)",
+    "racines": [
+     "C3",
+     "C4",
+     "C5"
+    ]
+   },
+   "trajet": "Descend sur la face antérieure du scalène antérieur, de son bord latéral à son bord médial, passe entre l'artère et la veine subclavières puis traverse le médiastin en avant du hile du poumon, entre la plèvre et le péricarde : le droit le long de la veine cave supérieure et de l'atrium droit, le gauche sur la crosse de l'aorte et le ventricule gauche",
+   "orifices": [
+    "Ouverture supérieure du thorax",
+    "Foramen de la veine cave (le nerf droit)"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameaux péricardiques et pleuraux, sensitifs"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux terminaux : ils traversent le diaphragme et s'étalent sur sa face inférieure"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux phrénico-abdominaux : péritoine sous le diaphragme et, à droite, capsule du foie"
+    }
+   ],
+   "moteur": {
+    "texte": "Le diaphragme, chaque nerf pour sa moitié : il en est le seul nerf moteur",
+    "muscles": [
+     "diaphragme"
+    ]
+   },
+   "sensitif": {
+    "texte": "Plèvre médiastinale et centre de la plèvre diaphragmatique, péricarde, péritoine sous le centre du diaphragme"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "La moitié du diaphragme se paralyse : sa coupole monte, visible à la radiographie, et remonte au lieu de descendre à l'inspiration ; essoufflement à l'effort et couché. Si les deux nerfs sont touchés, la respiration ne tient plus seule",
+   "test": "Radioscopie ou échographie du diaphragme pendant un reniflement : la coupole paralysée monte au lieu de descendre",
+   "clinique": "Une irritation du diaphragme (abcès sous le diaphragme, sang après une rupture de la rate) se fait sentir à l'épaule, dans le territoire de C4 ; une section de la moelle au-dessus de C3 abolit la respiration spontanée ; le hoquet est une contraction réflexe du diaphragme",
+   "memo": "« Trois, quatre, cinq, le diaphragme vit » : ses racines C3, C4 et C5 le tiennent en vie",
+   "variantes": "Un nerf phrénique accessoire, fréquent, venu de C5 (souvent par le nerf subclavier), le rejoint dans le thorax",
+   "sources": [
+    "gray1918",
+    "tma-diaphragme",
+    "kenhub-diaphragme"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-larynge-recurrent",
+   "resume": "Le nerf de la voix : branche du vague, il descend dans le thorax, fait demi-tour sous une artère et remonte commander presque tous les muscles du larynx.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-vague-x",
+    "texte": "Nerf vague (X) : à droite devant l'artère subclavière, à gauche sur la crosse de l'aorte",
+    "racines": [
+     "X"
+    ]
+   },
+   "trajet": "Le droit passe sous l'artère subclavière droite ; le gauche, plus long, sous la crosse de l'aorte, en arrière du ligament artériel. Chacun remonte dans le sillon entre la trachée et l'œsophage, croise l'artère thyroïdienne inférieure et entre dans le larynx sous le constricteur inférieur, derrière l'articulation crico-thyroïdienne",
+   "orifices": [
+    "Ouverture supérieure du thorax (le nerf gauche)"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameaux cardiaques, trachéaux et œsophagiens"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf laryngé inférieur : muscles intrinsèques du larynx sauf le crico-thyroïdien, muqueuse sous les plis vocaux"
+    }
+   ],
+   "moteur": {
+    "texte": "Les muscles intrinsèques du larynx sauf le crico-thyroïdien : le crico-aryténoïdien postérieur, seul à ouvrir la glotte, et ceux qui la ferment",
+    "muscles": [
+     "crico-arytenoidien-posterieur",
+     "crico-arytenoidien-lateral",
+     "thyro-arytenoidien",
+     "arytenoidien-transverse",
+     "arythenoide-oblique"
+    ]
+   },
+   "sensitif": {
+    "texte": "Muqueuse du larynx sous les plis vocaux, de la trachée et de l'œsophage cervical"
+   },
+   "autonome": "Fibres parasympathiques du vague pour les glandes et les muscles lisses de la trachée et de l'œsophage",
+   "reflexe": null,
+   "atteinte": "D'un côté : le pli vocal reste immobile près de la ligne médiane, la voix devient rauque et soufflée. Des deux côtés : les plis restent rapprochés, la voix change peu mais l'air passe mal (stridor), parfois une urgence",
+   "test": "Écouter la voix et la toux ; laryngoscopie : les plis vocaux s'écartent-ils à l'inspiration et se rejoignent-ils pour parler ?",
+   "clinique": "Menacé pendant l'ablation de la thyroïde, où il croise l'artère thyroïdienne inférieure ; le gauche, plus long, peut être comprimé par un cancer du poumon, un anévrisme de la crosse de l'aorte ou un gros atrium gauche : la voix devient rauque",
+   "memo": "Récurrent : il « revient » vers le haut ; le gauche fait le grand tour sous l'aorte, le droit le petit, sous la subclavière",
+   "variantes": "Nerf laryngé non récurrent à droite (moins d'un sujet sur cent), quand l'artère subclavière droite naît en dernier de l'aorte",
+   "sources": [
+    "gray1918",
+    "tma-vague",
+    "tma-muscles-larynx"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-gluteal-inferieur",
+   "resume": "Le nerf du grand fessier : né du plexus sacral, il sort du bassin sous le piriforme et commande le muscle qui étend la hanche avec force.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Plexus sacral : divisions postérieures des rameaux antérieurs de L5, S1 et S2",
+    "racines": [
+     "L5",
+     "S1",
+     "S2"
+    ]
+   },
+   "trajet": "Quitte le bassin par le grand foramen ischiatique, sous le muscle piriforme, avec l'artère glutéale inférieure, en dedans et en arrière du nerf sciatique, puis se divise sous le grand fessier, qu'il aborde par sa face profonde",
+   "orifices": [
+    "Grand foramen ischiatique, sous le piriforme"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameaux musculaires pour le grand fessier, par sa face profonde"
+    }
+   ],
+   "moteur": {
+    "texte": "Le grand fessier, seul",
+    "muscles": [
+     "grand-fessier"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Le grand fessier faiblit : se relever d'une chaise, monter un escalier ou une pente devient difficile ; à la marche, le tronc bascule en arrière au moment de l'appui (démarche du grand fessier)",
+   "test": "Couché sur le ventre, genou fléchi, soulever la cuisse contre une résistance : le grand fessier se durcit sous la main",
+   "clinique": "Une injection dans la fesse mal placée peut le léser, comme le nerf sciatique : on pique dans le quadrant supéro-latéral ; il est aussi exposé dans les fractures du bassin et les abords postérieurs de la hanche",
+   "memo": "Inférieur : sous le piriforme, pour le grand fessier ; le supérieur passe au-dessus et commande le moyen et le petit fessier",
+   "variantes": "Il peut traverser le piriforme, ou partager un tronc avec le nerf cutané postérieur de la cuisse",
+   "sources": [
+    "gray1918",
+    "tma-fessiers",
+    "kenhub-grand-fessier"
+   ],
+   "divergences": null
+  }
+ ]
+}

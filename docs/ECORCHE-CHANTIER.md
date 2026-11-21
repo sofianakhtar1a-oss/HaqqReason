@@ -43,8 +43,15 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
   qu'avec les fascias. La peau de Z-Anatomy ne sert qu'à calculer ce qui couvre chaque muscle : elle n'est jamais affichée.
 - **Planches** : la composition des planches publiées est figée (`scripts/corps/donnees/planches-publiees.json`).
   Les nouvelles structures s'explorent tout de suite ; leurs planches s'ajouteront à la suite, une fois les rangs relus.
-- **Haute définition** : le niveau le plus fin (45 Mo) reste hors du dépôt tant que les modèles bougent
-  (`donnees/publication.json`, `.gitignore`) ; le site sert alors au mieux le niveau standard.
+- **Haute définition** : le niveau le plus fin (environ 50 Mo, douze millions de triangles) est publié dans le dépôt
+  depuis le 21 novembre (`donnees/publication.json`). Le site ne le charge que si on le choisit dans les réglages :
+  « auto » donne le niveau standard à un ordinateur et le niveau léger à un téléphone.
+- **Nerfs tracés** : le nerf phrénique, le nerf laryngé récurrent et le nerf glutéal inférieur manquent aux deux atlas ;
+  `01c_traces.py` les trace en courbes de Bézier sur leurs repères (scalène antérieur, vaisseaux subclaviers, péricarde,
+  diaphragme ; artère subclavière, crosse de l'aorte, sillon trachéo-œsophagien ; piriforme, artère glutéale
+  inférieure). La page « Sources et licences » dit que ce sont des tracés, pas des relevés.
+- **Voir à travers** : une structure profonde choisie dans l'explorateur (vaisseau, nerf, viscère, ligament) se voit à
+  travers la chair, rendue translucide ; l'encéphale, à travers le crâne.
 - **Repère** : mètres, y vers le haut depuis le sol, x vers la gauche du sujet, z vers l'avant
   (depuis Blender : x = x, y = z, z = −y).
 
@@ -54,20 +61,20 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
 |----|-------|-------|------|
 | 1.1 | Sources, licences, export depuis Blender | 4 | 4 |
 | 1.2 | Classement : couches, structures, côtés, noms français et latins (TA2), exclusions | 4 | 4 |
-| 1.3 | Géométrie : soudure, normales, vaisseaux retracés, lissage, trois niveaux de détail | 4 | 3 |
+| 1.3 | Géométrie : soudure, normales, vaisseaux retracés, lissage, trois niveaux de détail | 4 | 4 |
 | 1.4 | Attributs : occlusion précalculée, sens des fibres, tendon et cartilage, poids d'animation, onde artérielle | 4 | 4 |
 | 1.5 | Paquets compressés, noms hachés, chargement progressif | 2 | 2 |
 | 2.1 | Moteur : chargement des paquets, détail selon l'appareil, sélection, états | 4 | 4 |
-| 2.2 | Matières physiques par tissu (muscle, tendon, os, cartilage, artère, veine, nerf, viscère) | 5 | 4 |
+| 2.2 | Matières physiques par tissu (muscle, tendon, os, cartilage, artère, veine, nerf, viscère) | 5 | 5 |
 | 2.3 | Lumière de studio, ombres, occlusion, mappage tonal, anticrénelage, profondeur de champ | 5 | 4.5 |
 | 2.4 | Deux rendus (pièce fraîche, pièce plastinée), qualité adaptative | 2 | 2 |
 | 3.1 | Catalogue complet des os, muscles, tendons, artères, relié aux modèles | 4 | 4 |
 | 3.2 | Nouvelles couches : veines, nerfs, ligaments et cartilages, viscères, encéphale | 4 | 4 |
-| 3.3 | Listes de référence TA2, test de couverture, structures manquantes modélisées | 4 | 3 |
+| 3.3 | Listes de référence TA2, test de couverture, structures manquantes modélisées | 4 | 3.5 |
 | 4.1 | Dissection au geste, isolement avec les attaches, vue éclatée | 3 | 3 |
-| 4.2 | Plans de coupe avec surfaces de coupe réalistes | 3 | 2 |
+| 4.2 | Plans de coupe avec surfaces de coupe réalistes | 3 | 3 |
 | 4.3 | Squelette articulé : segments, axes, amplitudes | 4 | 3 |
-| 4.4 | Contraction des muscles, action de chaque muscle, cœur et pouls | 4 | 3 |
+| 4.4 | Contraction des muscles, action de chaque muscle, cœur et pouls | 4 | 4 |
 | 5.1 | Schéma des fiches, données tirées de Z-Anatomy (insertions, nerfs, loges) | 3 | 3 |
 | 5.2 | Fiches des os | 3 | 3 |
 | 5.3 | Fiches des muscles | 5 | 5 |
@@ -77,10 +84,10 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
 | 6.1 | Nouvelles méthodes de quiz sur les fonctions | 6 | 6 |
 | 6.2 | Répétition espacée FSRS par facette, certitude, reprise de la progression | 4 | 4 |
 | 6.3 | Planches exhaustives, examen final, carte de maîtrise par facette | 4 | 4 |
-| 7.1 | Interface : couches, coupes, mouvements, fiches enrichies, page « Sources et licences » | 4 | 3.5 |
-| 7.2 | Captures de contrôle, tests, performances, mise en ligne, bilan | 4 | 1 |
+| 7.1 | Interface : couches, coupes, mouvements, fiches enrichies, page « Sources et licences » | 4 | 4 |
+| 7.2 | Captures de contrôle, tests, performances, mise en ligne, bilan | 4 | 3 |
 
-**Total fait : 90 / 100.**
+**Total fait : 97 / 100.**
 
 ## Journal
 
@@ -148,6 +155,14 @@ Le pourcentage annoncé à chaque point d'étape est la somme des poids des tâc
   le crâne). La pièce plastinée a ses propres teintes (chair brun-rouge opaque, nerfs et tendons ivoire). « Où prendre
   le pouls ? » se joue aussi en touchant l'artère. Manquent encore, faute de modèle libre : l'oreille interne et
   plusieurs nerfs (phrénique, laryngé récurrent, splanchniques…).
+
+- 21/11 13:40 — Trois nerfs absents des deux atlas sont tracés sur leurs repères (`01c_traces.py`) : le phrénique, le
+  laryngé récurrent et le glutéal inférieur, avec leurs fiches ; le diaphragme, le grand fessier et les muscles du
+  larynx retrouvent leur nerf dans « Qui innerve ? ». La chaîne complète a tourné : 1 709 structures, 224 planches,
+  toutes les fiches. La haute définition (niveau 0, 50 Mo, douze millions de triangles) est publiée ; on la choisit
+  dans les réglages. Vérifié dans le navigateur : coupes frontale et sagittale (la tranche prend le grain du tissu),
+  chargement de la haute définition, nerfs vus de face à travers la chair translucide. Reste : l'oreille interne
+  (aucun modèle libre), une mesure des images par seconde sur une vraie carte graphique, le bilan.
 
 ## Pour reprendre après une interruption
 

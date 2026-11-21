@@ -325,6 +325,11 @@ ok("un muscle sans articulation à mouvoir se contracte sur place", programmeDe(
   ok("« Agoniste ou antagoniste ? » : le triceps est antagoniste de la flexion du coude", ago.every((q) => !(q!.cible === "triceps-brachial" && /flexion du coude/.test(q!.consigne)) || q!.attendu === "antagoniste") && ago.length > 0);
   const nerf = fabriquerFonction(5, "biceps-brachial", "qui-innerve", ctx);
   ok("« Qui innerve ? » : le biceps, par le nerf musculo-cutané", nerf?.attendu === "nerf-musculocutane", nerf?.attendu);
+  // Les nerfs que les atlas n'ont pas, tracés d'après leurs repères (01c_traces.py) : les muscles les retrouvent.
+  ok("les nerfs tracés existent : phrénique, laryngé récurrent, glutéal inférieur", ["nerf-phrenique", "nerf-larynge-recurrent", "nerf-gluteal-inferieur"].every((id) => PAR_ID.get(id)?.couche === "nerf"));
+  ok("« Qui innerve ? » : le diaphragme, par le nerf phrénique", fabriquerFonction(5, "diaphragme", "qui-innerve", ctx)?.attendu === "nerf-phrenique");
+  ok("« Qui innerve ? » : le grand fessier, par le nerf glutéal inférieur", fabriquerFonction(5, "grand-fessier", "qui-innerve", ctx)?.attendu === "nerf-gluteal-inferieur");
+  ok("« Qui innerve ? » : le crico-aryténoïdien postérieur, par le nerf laryngé récurrent", fabriquerFonction(5, "crico-arytenoidien-posterieur", "qui-innerve", ctx)?.attendu === "nerf-larynge-recurrent");
   ok("« Les racines » : C5-C6 pour le biceps", fabriquerFonction(5, "biceps-brachial", "racines", ctx)?.attendu === "C5-C6");
   ok("« Réflexe et racine » : le réflexe rotulien explore L3-L4", fabriquerFonction(5, "ligament-patellaire", "reflexe", ctx)?.attendu === "L3-L4");
   const sang = fabriquerFonction(5, "radiale", "sang", ctx);

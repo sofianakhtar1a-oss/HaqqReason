@@ -74,6 +74,9 @@ export function Sources({ fermer }: { fermer: () => void }) {
         <p>
           Nous avons écarté la peau, par pudeur les organes génitaux externes, et les modèles de Z-Anatomy que leur licence réserve à un usage non commercial. Le rein a été repris de BodyParts3D, placé au centre et à la taille de celui qu’il remplace ; le rectum, l’iléon et le semi-épineux de la tête ont été placés d’après leurs voisins. L’oreille interne manque encore : aucun modèle libre ne la décrit.
         </p>
+        <p>
+          Trois nerfs importants manquent aux deux atlas : le nerf phrénique, le nerf laryngé récurrent et le nerf glutéal inférieur. Nous les avons tracés nous-mêmes, comme l’atlas trace ses nerfs (un axe et un rayon), sur les structures que les manuels leur donnent pour voisines : le scalène antérieur, les vaisseaux subclaviers, le péricarde et le diaphragme pour le phrénique ; l’artère subclavière ou la crosse de l’aorte, puis le sillon entre la trachée et l’œsophage, pour le récurrent ; le muscle piriforme et l’artère glutéale inférieure pour le glutéal inférieur. Ce sont des tracés fidèles aux descriptions classiques, pas des relevés de dissection.
+        </p>
 
         <h3 className="ec-section-titre">Ce que vous pouvez en faire</h3>
         <p>

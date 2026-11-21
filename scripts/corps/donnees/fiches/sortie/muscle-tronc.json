@@ -193,7 +193,7 @@
    ],
    "synergistes": ["intercostaux-externes", "scalene-anterieur", "scalene-moyen"],
    "antagonistes": ["transverse-abdomen", "oblique-interne", "oblique-externe", "intercostaux-internes"],
-   "innervation": { "nerf": null, "texte": "Nerf phrénique, un par hémi-coupole ; la périphérie reçoit des fibres sensitives des derniers nerfs intercostaux", "racines": ["C3", "C4", "C5"] },
+   "innervation": { "nerf": "nerf-phrenique", "texte": "Nerf phrénique, un par hémi-coupole ; la périphérie reçoit des fibres sensitives des derniers nerfs intercostaux", "racines": ["C3", "C4", "C5"] },
    "vascularisation": { "texte": "Artères phréniques inférieures surtout ; artères phréniques supérieures, musculo-phréniques et péricardiaco-phréniques, dernières intercostales", "arteres": ["artere-phrenique-inferieure", "arteres-phreniques-superieures", "artere-musculophrenique", "arteres-intercostales-posterieures"] },
    "palpation": null,
    "test": "Pas de test manuel : la radiographie montre une coupole paralysée surélevée, qui monte à l'inspiration au lieu de descendre (mouvement paradoxal)",

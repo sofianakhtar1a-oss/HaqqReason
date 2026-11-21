@@ -96,7 +96,7 @@ export function Reglages({ fermer, sources }: { fermer: () => void; sources: () 
           changer={(v) => reglerAppareil({ finesse: v })}
         />
         <p className="ec-note">
-          Légère : un million de triangles, pour les téléphones. Standard : près de quatre millions.{HAUTE_DEFINITION ? " Haute : douze millions, pour une carte graphique puissante (45 Mo à télécharger)." : ""} Ce réglage reste sur cet appareil.
+          Légère : un million de triangles, pour les téléphones. Standard : près de quatre millions.{HAUTE_DEFINITION ? " Haute : douze millions, pour une carte graphique puissante (50 Mo à télécharger)." : ""} Ce réglage reste sur cet appareil.
         </p>
         <Interrupteur nom="Rotation tranquille" aide="Le corps tourne seul quand on ne le touche pas." valeur={p.rotation} changer={(v) => r({ rotation: v })} />
         <h3 className="ec-section-titre">Le son et la lecture</h3>

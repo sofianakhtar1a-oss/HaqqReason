@@ -107,7 +107,7 @@
 },
 {
 "id": "phalange-distale-du-cinquieme-doigt-de-pied",
-"nom": "Phalange distale du cinquième doigt de pied",
+"nom": "Phalange distale du cinquième orteil",
 "region": "pied"
 },
 {
@@ -117,7 +117,7 @@
 },
 {
 "id": "phalange-distale-du-premier-doigt-de-pied",
-"nom": "Phalange distale du premier doigt de pied",
+"nom": "Phalange distale du premier orteil",
 "region": "pied"
 },
 {
@@ -127,7 +127,7 @@
 },
 {
 "id": "phalange-distale-du-quatrieme-doigt-de-pied",
-"nom": "Phalange distale du quatrième doigt de pied",
+"nom": "Phalange distale du quatrième orteil",
 "region": "pied"
 },
 {
@@ -137,7 +137,7 @@
 },
 {
 "id": "phalange-distale-du-deuxieme-doigt-de-pied",
-"nom": "Phalange distale du deuxième doigt de pied",
+"nom": "Phalange distale du deuxième orteil",
 "region": "pied"
 },
 {
@@ -147,7 +147,7 @@
 },
 {
 "id": "phalange-distale-du-troisieme-doigt-de-pied",
-"nom": "Phalange distale du troisième doigt de pied",
+"nom": "Phalange distale du troisième orteil",
 "region": "pied"
 },
 {
@@ -352,7 +352,7 @@
 },
 {
 "id": "phalange-moyenne-du-cinqueme-doigt-de-pied",
-"nom": "Phalange moyenne du cinquème doigt de pied",
+"nom": "Phalange moyenne du cinquième orteil",
 "region": "pied"
 },
 {
@@ -362,7 +362,7 @@
 },
 {
 "id": "phalange-moyenne-du-quatrieme-doigt-de-pied",
-"nom": "Phalange moyenne du quatrième doigt de pied",
+"nom": "Phalange moyenne du quatrième orteil",
 "region": "pied"
 },
 {
@@ -372,7 +372,7 @@
 },
 {
 "id": "phalange-moyenne-du-deuxieme-doigt-de-pied",
-"nom": "Phalange moyenne du deuxième doigt de pied",
+"nom": "Phalange moyenne du deuxième orteil",
 "region": "pied"
 },
 {
@@ -382,7 +382,7 @@
 },
 {
 "id": "phalange-moyenne-du-troiseme-doigt-de-pied",
-"nom": "Phalange moyenne du troisème doigt de pied",
+"nom": "Phalange moyenne du troisième orteil",
 "region": "pied"
 },
 {
@@ -437,7 +437,7 @@
 },
 {
 "id": "phalange-proximale-du-cinquieme-doigt-de-pied",
-"nom": "Phalange proximale du cinquième doigt de pied",
+"nom": "Phalange proximale du cinquième orteil",
 "region": "pied"
 },
 {
@@ -447,7 +447,7 @@
 },
 {
 "id": "phalange-proximale-du-premier-doigt-de-pied",
-"nom": "Phalange proximale du premier doigt de pied",
+"nom": "Phalange proximale du premier orteil",
 "region": "pied"
 },
 {
@@ -457,7 +457,7 @@
 },
 {
 "id": "phalange-proximale-du-quatrieme-doigt-de-pied",
-"nom": "Phalange proximale du quatrième doigt de pied",
+"nom": "Phalange proximale du quatrième orteil",
 "region": "pied"
 },
 {
@@ -467,7 +467,7 @@
 },
 {
 "id": "phalange-proximale-du-deuxieme-doigt-de-pied",
-"nom": "Phalange proximale du deuxième doigt de pied",
+"nom": "Phalange proximale du deuxième orteil",
 "region": "pied"
 },
 {
@@ -477,7 +477,7 @@
 },
 {
 "id": "phalange-proximale-du-troisieme-doigt-de-pied",
-"nom": "Phalange proximale du troisième doigt de pied",
+"nom": "Phalange proximale du troisième orteil",
 "region": "pied"
 },
 {
@@ -874,7 +874,7 @@
 },
 {
 "id": "opposant-du-petit-doigt",
-"nom": "Opposant du petit doigt",
+"nom": "Opposant du petit orteil",
 "region": "pied"
 },
 {
@@ -1119,7 +1119,7 @@
 },
 {
 "id": "flechisseur-du-petit-doigt",
-"nom": "Fléchisseur du petit doigt",
+"nom": "Fléchisseur du petit orteil",
 "region": "pied"
 },
 {
@@ -1893,6 +1893,11 @@
 "region": "tete"
 },
 {
+"id": "semi-epineux-tete",
+"nom": "Semi-épineux de la tête",
+"region": "cou"
+},
+{
 "id": "occipito-frontal",
 "nom": "Occipito-frontal",
 "region": "tete"
@@ -2221,7 +2226,7 @@
 },
 {
 "id": "gaine-tendineuse-du-long-extenseur-des-doigts",
-"nom": "Gaine tendineuse du long extenseur des doigts",
+"nom": "Gaine tendineuse du long extenseur des orteils",
 "region": "pied"
 },
 {
@@ -3388,7 +3393,7 @@
 },
 {
 "id": "ligament-talocalcaneen",
-"nom": "Ligament talocalcanéen",
+"nom": "Ligament talo-calcanéen latéral",
 "region": "pied"
 },
 {
@@ -3733,12 +3738,12 @@
 },
 {
 "id": "ligament-talocalcaneen-lateral",
-"nom": "Ligament talocalcanéen latéral",
+"nom": "Ligament talo-calcanéen postérieur",
 "region": "pied"
 },
 {
 "id": "ligament-tibiofibullaire-posterieur",
-"nom": "Ligament tibiofibullaire postérieur",
+"nom": "Ligament talo-fibulaire postérieur",
 "region": "pied"
 },
 {
@@ -3909,7 +3914,7 @@
 {
 "id": "bourse-trochanterique-sous-cutanee",
 "nom": "Bourse trochantérique sous-cutanée",
-"region": "main"
+"region": "cuisse"
 },
 {
 "id": "bourse-subdeltoidienne",
@@ -4074,12 +4079,12 @@
 {
 "id": "bourse-trochanterique-du-moyen-fessier",
 "nom": "Bourse trochantérique du moyen fessier",
-"region": "main"
+"region": "hanche"
 },
 {
 "id": "bourse-trochanterique-du-muscle-petit-fessier",
 "nom": "Bourse trochantérique du muscle petit fessier",
-"region": "main"
+"region": "hanche"
 },
 {
 "id": "ligament-collateral-ulnaire-du-carpe",
@@ -6681,6 +6686,21 @@
 "id": "nerf-vestibulocochleaire-viii",
 "nom": "Nerf vestibulocochléaire (VIII)",
 "region": "tete"
+},
+{
+"id": "nerf-phrenique",
+"nom": "Nerf phrénique",
+"region": "cou"
+},
+{
+"id": "nerf-larynge-recurrent",
+"nom": "Nerf laryngé récurrent",
+"region": "cou"
+},
+{
+"id": "nerf-gluteal-inferieur",
+"nom": "Nerf glutéal inférieur",
+"region": "bassin"
 }
 ],
 "viscere": [
@@ -6826,7 +6846,7 @@
 },
 {
 "id": "cuspide-infefieure-de-la-valve-atrioventriculaire-droite",
-"nom": "Cuspide inféfieure de la valve atrioventriculaire droite",
+"nom": "Cuspide inférieure de la valve atrioventriculaire droite",
 "region": "thorax"
 },
 {
@@ -7328,6 +7348,21 @@
 "id": "fibres-zonulaires",
 "nom": "Fibres zonulaires",
 "region": "tete"
+},
+{
+"id": "rein",
+"nom": "Rein",
+"region": "abdomen"
+},
+{
+"id": "rectum",
+"nom": "Rectum",
+"region": "bassin"
+},
+{
+"id": "ileon",
+"nom": "Iléon",
+"region": "bassin"
 }
 ],
 "encephale": [

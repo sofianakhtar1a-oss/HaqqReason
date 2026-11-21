@@ -68,6 +68,8 @@ GENERAUX = re.compile(r"^(Skeletal|Long|Short|Flat|Irregular|Pneumatized|Pneumat
 
 
 def tete(n):
+    # (les nerfs crâniens portent leur numéro : « Abducens nerve (VI) » est un nerf comme un autre)
+    n = re.sub(r"\s*\((?:[IVX]+)\)$", "", n)
     return n.split(" of ")[0] if " of " in n else n
 
 

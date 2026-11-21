@@ -1,0 +1,36 @@
+{
+ "lot": "nerf-complements",
+ "couche": "nerf",
+ "structures": [
+  {
+   "id": "nerf-phrenique",
+   "nom": "Nerf phrénique",
+   "latin": "Nervus phrenicus",
+   "anglais": "Phrenic nerve",
+   "region": "thorax",
+   "rang": 1,
+   "officiel": "Nerf phrénique",
+   "ta2": "6380"
+  },
+  {
+   "id": "nerf-larynge-recurrent",
+   "nom": "Nerf laryngé récurrent",
+   "latin": "Nervus laryngeus recurrens",
+   "anglais": "Recurrent laryngeal nerve",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Nerf laryngé récurrent",
+   "ta2": "6344"
+  },
+  {
+   "id": "nerf-gluteal-inferieur",
+   "nom": "Nerf glutéal inférieur",
+   "latin": "Nervus gluteus inferior",
+   "anglais": "Inferior gluteal nerve",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Nerf glutéal inférieur",
+   "ta2": "6544"
+  }
+ ]
+}

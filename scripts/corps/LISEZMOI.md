@@ -20,6 +20,8 @@ Les sources restent hors du dépôt ; seuls les scripts et les paquets finis son
 | Étape | Commande | Ce qu'elle fait |
 |-------|----------|-----------------|
 | 1 | `~/venv-bpy/bin/python -I 01_exporter.py -- <Startup.blend> ~/donnees-corps/brut <début> <fin>` par tranches de 1 500 objets | Chaque objet évalué par Blender (modificateurs appliqués), sans exécuter les scripts du fichier |
+| 1 bis | `python3 -I 01b_bodyparts.py` | Le rein, le rectum, l'iléon et le semi-épineux de la tête repris de BodyParts3D, placés sur leurs voisins |
+| 1 ter | `python3 -I 01c_traces.py` | Les nerfs que les deux atlas n'ont pas (phrénique, laryngé récurrent, glutéal inférieur), tracés en courbes de Bézier sur leurs repères anatomiques |
 | 2 | `python 02_classer.py` | Couche, sorte, côté, nom officiel TA2, exclusions (peau, pudeur, licences non commerciales) |
 | 3 | `~/venv-bpy/bin/python 03_geometrie.py` | Soudure, lissage, trois niveaux de détail, tendon et cartilage par sommet, vaisseaux et nerfs retracés |
 | 4 | `python 04_attributs.py` | Profondeur des muscles, occlusion ambiante précalculée (lancer de rayons : `rayons.c`) |
@@ -30,6 +32,8 @@ Les sources restent hors du dépôt ; seuls les scripts et les paquets finis son
 | 4 sexies | `python 04f_pouls.py` | La distance de chaque sommet d'artère au cœur le long de l'arbre artériel (pour l'onde du pouls) |
 | 5 | `python 05_paquets.py` | Les paquets compressés de `public/corps/` et le manifeste |
 | 6 | `python 06_catalogue.py` | Les éléments, les pièces, les insertions, les repères et les planches de `src/lib/corps/modele/` |
+| 7 | `python 07_fiches.py` | Les fiches du site, un fichier par couche (`src/lib/corps/fiches/`), et le bilan des références |
+| 8 | `python 08_couverture.py` | La part de la Terminologia Anatomica que le modèle montre, couche par couche |
 
 L'étape 4 réécrit les fichiers d'attributs : après elle, relancer 4 bis, 4 ter, 4 quinquies, 4 sexies, puis 5 et 6.
 

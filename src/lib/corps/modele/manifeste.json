@@ -1,6 +1,6 @@
 {
  "version": 1,
- "haute": false,
+ "haute": true,
  "grille": {
   "origine": [
    -1.024,
@@ -2023,30 +2023,34 @@
      "cochlear-nerve:g",
      "common-plantar-digital-branches-of-medial-plantar-nerve",
      "common-plantar-digital-branches-of-medial-plantar-nerve:g",
+     "phrenic-nerve:d",
+     "phrenic-nerve:g",
+     "recurrent-laryngeal-nerve:d",
+     "recurrent-laryngeal-nerve:g",
      "vagus-nerve-x:d",
      "vagus-nerve-x:g"
     ],
     "lods": [
      {
       "lod": 0,
-      "fichier": "nerf-i0-db7e3acc29.bin",
-      "octets": 91168,
-      "sommets": 9588,
-      "triangles": 18992
+      "fichier": "nerf-i0-80f0ed6d78.bin",
+      "octets": 124007,
+      "sommets": 13060,
+      "triangles": 25896
      },
      {
       "lod": 1,
-      "fichier": "nerf-i1-af7fe75614.bin",
-      "octets": 48953,
-      "sommets": 4498,
-      "triangles": 8812
+      "fichier": "nerf-i1-bcb6406f4e.bin",
+      "octets": 67939,
+      "sommets": 6360,
+      "triangles": 12496
      },
      {
       "lod": 2,
-      "fichier": "nerf-i2-3762656890.bin",
-      "octets": 26640,
-      "sommets": 2240,
-      "triangles": 4296
+      "fichier": "nerf-i2-df5583d74c.bin",
+      "octets": 38462,
+      "sommets": 3304,
+      "triangles": 6384
      }
     ]
    },
@@ -2092,6 +2096,7 @@
      "ilio-inguinal-nerve",
      "iliohypogastric-nerve",
      "inferior-alveolar-nerve",
+     "inferior-gluteal-nerve",
      "inferior-lateral-brachial-cutaneous-nerve",
      "inferior-subscapular-nerve",
      "inferior-trunk-of-brachial-plexus",
@@ -2182,24 +2187,24 @@
     "lods": [
      {
       "lod": 0,
-      "fichier": "nerf-p0-b0410d1996.bin",
-      "octets": 610422,
-      "sommets": 63902,
-      "triangles": 126116
+      "fichier": "nerf-p0-fc8d5e6e92.bin",
+      "octets": 618833,
+      "sommets": 64830,
+      "triangles": 127952
      },
      {
       "lod": 1,
-      "fichier": "nerf-p1-3777f04064.bin",
-      "octets": 323075,
-      "sommets": 30252,
-      "triangles": 58816
+      "fichier": "nerf-p1-806e4c98e5.bin",
+      "octets": 327654,
+      "sommets": 30737,
+      "triangles": 59766
      },
      {
       "lod": 2,
-      "fichier": "nerf-p2-66f6afb340.bin",
-      "octets": 175110,
-      "sommets": 15403,
-      "triangles": 29118
+      "fichier": "nerf-p2-56954151bd.bin",
+      "octets": 177794,
+      "sommets": 15661,
+      "triangles": 29614
      }
     ]
    }
@@ -2886,16 +2891,16 @@
  },
  "total": {
   "0": {
-   "octets": 50296708,
-   "triangles_affiches": 11800088
+   "octets": 50337958,
+   "triangles_affiches": 11810664
   },
   "1": {
-   "octets": 17005205,
-   "triangles_affiches": 3771772
+   "octets": 17028770,
+   "triangles_affiches": 3777356
   },
   "2": {
-   "octets": 4995378,
-   "triangles_affiches": 1058128
+   "octets": 5009884,
+   "triangles_affiches": 1061208
   }
  }
 }

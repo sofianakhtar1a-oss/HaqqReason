@@ -47,8 +47,6 @@ next-env.d.ts
 # Les captures comparées du Portulan (références et rapport) restent sur la machine qui les fait.
 /tests/captures/
 
-# L'Écorché : la haute définition (niveau 0) n'est versionnée qu'une fois publiée (scripts/corps/donnees/publication.json)
-/public/corps/*-[pi]0-*.bin
 
 # Python
 __pycache__/

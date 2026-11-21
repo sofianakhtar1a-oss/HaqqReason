@@ -107,7 +107,7 @@
    ],
    "synergistes": ["semi-tendineux", "semi-membraneux", "biceps-femoral", "grand-adducteur"],
    "antagonistes": ["grand-psoas", "iliaque", "droit-femoral"],
-   "innervation": { "nerf": null, "texte": "Nerf glutéal inférieur", "racines": ["L5", "S1", "S2"] },
+   "innervation": { "nerf": "nerf-gluteal-inferieur", "texte": "Nerf glutéal inférieur", "racines": ["L5", "S1", "S2"] },
    "vascularisation": { "texte": "Artères glutéales inférieure et supérieure, branches de l'artère iliaque interne", "arteres": ["artere-gluteale-inferieure", "artere-gluteale-superieure"] },
    "palpation": "Il forme le relief de la fesse et durcit sous la main quand on serre les fesses ou qu'on étend la hanche",
    "test": "Sujet à plat ventre, jambes tendues : extension de la hanche contre résistance, la main posée sur le muscle",
