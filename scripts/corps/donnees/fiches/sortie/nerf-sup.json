@@ -1,0 +1,2065 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918) — nerfs spinaux, plexus brachial et nerfs du membre supérieur (texte intégral, Internet Archive)",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "teachmeanatomy-plexus": {
+   "titre": "TeachMeAnatomy — Le plexus brachial : structure, branches, lésions",
+   "url": "https://teachmeanatomy.info/upper-limb/nerves/brachial-plexus/"
+  },
+  "teachmeanatomy-radial": {
+   "titre": "TeachMeAnatomy — Le nerf radial",
+   "url": "https://teachmeanatomy.info/upper-limb/nerves/radial-nerve/"
+  },
+  "teachmeanatomy-ulnaire": {
+   "titre": "TeachMeAnatomy — Le nerf ulnaire",
+   "url": "https://teachmeanatomy.info/upper-limb/nerves/ulnar-nerve/"
+  },
+  "teachmeanatomy-median": {
+   "titre": "TeachMeAnatomy — Le nerf médian",
+   "url": "https://teachmeanatomy.info/upper-limb/nerves/median-nerve/"
+  },
+  "teachmeanatomy-axillaire": {
+   "titre": "TeachMeAnatomy — Le nerf axillaire",
+   "url": "https://teachmeanatomy.info/upper-limb/nerves/axillary-nerve/"
+  },
+  "teachmeanatomy-musculocutane": {
+   "titre": "TeachMeAnatomy — Le nerf musculo-cutané",
+   "url": "https://teachmeanatomy.info/upper-limb/nerves/musculocutaneous-nerve/"
+  },
+  "statpearls-plexus": {
+   "titre": "StatPearls — Anatomy, Shoulder and Upper Limb, Brachial Plexus",
+   "url": "https://statpearls.com/point-of-care/32394"
+  },
+  "statpearls-nerfs": {
+   "titre": "StatPearls — Anatomy, Shoulder and Upper Limb, Nerves",
+   "url": "https://www.statpearls.com/point-of-care/22525"
+  },
+  "statpearls-nerfs-cervicaux": {
+   "titre": "StatPearls — Anatomy, Head and Neck: Cervical Nerves",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK538136/"
+  },
+  "statpearls-thoracique-long": {
+   "titre": "StatPearls — nerf thoracique long : anatomie, atteinte et examen",
+   "url": "https://statpearls.com/sp/al/40/24414/"
+  },
+  "statpearls-suprascapulaire": {
+   "titre": "StatPearls — Anatomy, Shoulder and Upper Limb, Suprascapular Nerve",
+   "url": "https://statpearls.com/point-of-care/29747"
+  },
+  "kenhub-radial": {
+   "titre": "Kenhub — Nerf radial",
+   "url": "https://kenhub.com/en/library/anatomy/radial-nerve"
+  },
+  "kenhub-axillaire": {
+   "titre": "Kenhub — Nerf axillaire",
+   "url": "https://kenhub.com/en/library/anatomy/axillary-nerve"
+  },
+  "kenhub-thoracique-long": {
+   "titre": "Kenhub — Nerf thoracique long",
+   "url": "https://kenhub.com/en/library/anatomy/long-thoracic-nerve"
+  },
+  "kenhub-nerf-dorsal-scapula": {
+   "titre": "Kenhub — Nerf dorsal de la scapula",
+   "url": "https://kenhub.com/en/library/anatomy/dorsal-scapular-nerve"
+  },
+  "kenhub-thoracodorsal": {
+   "titre": "Kenhub — Nerf thoracodorsal",
+   "url": "https://kenhub.com/en/library/anatomy/thoracodorsal-nerve"
+  },
+  "wustl-neuromuscular": {
+   "titre": "Washington University Neuromuscular — Cervical root anatomy (racines et réflexes du membre supérieur)",
+   "url": "https://neuromuscular.wustl.edu/nanatomy/cervanat.htm"
+  }
+ },
+ "fiches": [
+  {
+   "id": "nerf-median",
+   "resume": "Le nerf de la pince du pouce : il commande la flexion du poignet et des doigts, l'opposition du pouce, et sent la paume et les trois premiers doigts.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Union d'une racine du faisceau latéral et d'une racine du faisceau médial du plexus brachial, en avant de l'artère axillaire",
+    "racines": [
+     "C6",
+     "C7",
+     "C8",
+     "T1"
+    ]
+   },
+   "orifices": [
+    "Canal carpien"
+   ],
+   "trajet": "Descend dans le bras sans autre branche que le rond pronateur, passe entre les deux chefs du rond pronateur, chemine sous le fléchisseur superficiel des doigts puis traverse le canal carpien pour gagner la paume",
+   "branches": [
+    {
+     "nerf": "branches-musculaires-du-nerf-median",
+     "texte": "Rameaux musculaires de l'avant-bras (rond pronateur, fléchisseurs superficiels)"
+    },
+    {
+     "nerf": "nerf-interosseux-anterieur-de-l-avant-bras",
+     "texte": "Nerf interosseux antérieur, pour les muscles profonds"
+    },
+    {
+     "nerf": "branche-palmaire-du-nerf-median",
+     "texte": "Branche palmaire, sensitive, avant le canal carpien"
+    },
+    {
+     "nerf": "branches-digitales-palmaires-communes-du-nerf-median",
+     "texte": "Nerfs digitaux palmaires communs, dans la paume"
+    },
+    {
+     "nerf": "branches-digitales-palmaires-propres-du-nerf-median",
+     "texte": "Nerfs digitaux palmaires propres, jusqu'aux doigts"
+    }
+   ],
+   "moteur": {
+    "texte": "Presque tous les fléchisseurs et pronateurs de l'avant-bras (sauf le fléchisseur ulnaire du carpe et la moitié ulnaire du fléchisseur profond), les muscles latéraux du thénar et les deux premiers lombricaux",
+    "muscles": [
+     "rond-pronateur",
+     "flechisseur-radial-carpe",
+     "long-palmaire",
+     "flechisseur-superficiel-doigts",
+     "flechisseur-profond-doigts",
+     "long-flechisseur-pouce",
+     "carre-pronateur",
+     "court-abducteur-pouce",
+     "opposant-pouce",
+     "court-flechisseur-pouce",
+     "lombricaux-de-la-main"
+    ]
+   },
+   "sensitif": {
+    "texte": "Moitié latérale de la paume, face palmaire du pouce, de l'index, du majeur et de la moitié latérale de l'annulaire, avec la pulpe et le lit de l'ongle de ces doigts"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Au poignet (canal carpien) : fourmillements des trois premiers doigts, surtout la nuit, puis fonte du thénar et perte de l'opposition du pouce. Au coude : plus d'opposition ni de flexion du pouce et de l'index",
+   "test": "Pince pouce-index en « O » ; opposition du pouce ; signe de Tinel et manœuvre de Phalen au poignet",
+   "clinique": "Le syndrome du canal carpien est la plus fréquente des compressions nerveuses ; la paume est épargnée car la branche palmaire naît avant le canal. Lésion haute : à l'effort de serrer le poing, l'index et le majeur restent tendus",
+   "memo": "Médian : au milieu du poignet, il tient la pince du pouce",
+   "variantes": "Le nerf du rond pronateur peut naître au-dessus du coude ; la branche communicante avec l'ulnaire dans la paume est inconstante",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-median",
+    "statpearls-nerfs",
+    "teachmeanatomy-plexus"
+   ],
+   "divergences": "Racines : C6 à T1 chez Gray et TeachMeAnatomy (C5 parfois ajouté) ; C5 à T1 chez StatPearls"
+  },
+  {
+   "id": "nerf-thoracodorsal",
+   "resume": "Le nerf du grand dorsal : un nerf purement moteur qui descend sur la paroi postérieure de l'aisselle.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "faisceau-posterieur-du-plexus-brachial",
+    "texte": "Faisceau postérieur du plexus brachial, entre les nerfs subscapulaires supérieur et inférieur",
+    "racines": [
+     "C6",
+     "C7",
+     "C8"
+    ]
+   },
+   "trajet": "Naît près du sommet de l'aisselle, descend sur sa paroi postérieure avec les vaisseaux thoracodorsaux, croise le bord inférieur du grand rond et se distribue dans le grand dorsal",
+   "moteur": {
+    "texte": "Le grand dorsal, seul muscle qu'il innerve",
+    "muscles": [
+     "grand-dorsal"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Grand dorsal paralysé : l'adduction, l'extension et la rotation médiale du bras faiblissent (se hisser, tirer, grimper). Lésion surtout lors d'un curage axillaire",
+   "test": "Palper le bord du grand dorsal en arrière de l'aisselle pendant une toux ou pendant que le sujet abaisse le bras tendu contre résistance",
+   "clinique": "Repéré et ménagé pendant le curage axillaire ; il peut servir de greffon pour réparer le nerf thoracique long",
+   "memo": "Le nerf du grimpeur : il commande le grand dorsal qui tire le corps vers les bras",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-thoracodorsal",
+    "wustl-neuromuscular",
+    "statpearls-plexus"
+   ],
+   "divergences": "Racines : C6 à C8 avec C7 dominante (Kenhub, WUSTL) ; C5 à C7 chez Gray"
+  },
+  {
+   "id": "nerf-pectoral-lateral",
+   "resume": "Le nerf du haut du grand pectoral : il naît du faisceau latéral et traverse le fascia clavi-pectoral.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Faisceau latéral du plexus brachial",
+    "racines": [
+     "C5",
+     "C6",
+     "C7"
+    ]
+   },
+   "trajet": "Naît du faisceau latéral en avant de l'artère axillaire, traverse le fascia clavi-pectoral et gagne la face profonde du grand pectoral ; une anse le relie au nerf pectoral médial",
+   "moteur": {
+    "texte": "Le grand pectoral, surtout sa partie claviculaire et la partie haute de sa partie sterno-costale",
+    "muscles": [
+     "grand-pectoral"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Atteinte isolée rare : la partie claviculaire du grand pectoral s'affaiblit, l'adduction et la rotation médiale du bras sont moins fortes. Elle accompagne les lésions du faisceau latéral ou du plexus",
+   "test": "Mains jointes devant la poitrine, presser l'une contre l'autre : le bord antérieur de l'aisselle se tend et se palpe",
+   "memo": "Le nerf latéral nourrit le grand pectoral ; le médial traverse le petit pectoral avant de le rejoindre",
+   "variantes": "Le nerf peut naître de la division postérieure du tronc supérieur",
+   "sources": [
+    "gray1918",
+    "statpearls-plexus",
+    "teachmeanatomy-plexus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-suprascapulaire",
+   "resume": "Le nerf des deux muscles de la fosse supra- et infra-épineuse : il passe par l'incisure de la scapula et donne l'abduction et la rotation latérale de l'épaule.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "tronc-superieur-du-plexus-brachial",
+    "texte": "Bord supérieur du tronc supérieur du plexus brachial, au-dessus de la clavicule",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "orifices": [
+    "Incisure de la scapula (sous le ligament transverse supérieur)",
+    "Incisure spino-glénoïdale"
+   ],
+   "trajet": "Traverse la région cervicale latérale, passe sous le ligament transverse supérieur de la scapula dans l'incisure scapulaire, innerve le supra-épineux, contourne le col de la scapula par l'incisure spino-glénoïdale et gagne l'infra-épineux",
+   "moteur": {
+    "texte": "Le supra-épineux (abduction de l'épaule) et l'infra-épineux (rotation latérale)",
+    "muscles": [
+     "supra-epineux",
+     "infra-epineux"
+    ]
+   },
+   "sensitif": {
+    "texte": "Pas de peau : il envoie des rameaux sensitifs aux articulations gléno-humérale et acromio-claviculaire"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Au niveau de l'incisure scapulaire : atrophie du supra-épineux et de l'infra-épineux, douleur postérieure de l'épaule, abduction initiale et rotation latérale faibles. À l'incisure spino-glénoïdale : seul l'infra-épineux fond",
+   "test": "Abduction contre résistance (supra-épineux) et rotation latérale coude au corps (infra-épineux) ; creux visibles au-dessus et au-dessous de l'épine",
+   "clinique": "Compression connue chez les volleyeurs et lanceurs (spino-glénoïdale) ; risque lors des grandes réparations de la coiffe ; cible du bloc nerveux contre la douleur d'épaule",
+   "memo": "Il passe sous le pont (ligament) puis contourne l'épine : un nerf, deux fosses",
+   "variantes": "Une contribution de C4 est fréquente",
+   "sources": [
+    "gray1918",
+    "statpearls-suprascapulaire",
+    "wustl-neuromuscular",
+    "statpearls-plexus"
+   ],
+   "divergences": "Racines : C5-C6 chez Gray, StatPearls et WUSTL, avec parfois un apport de C4"
+  },
+  {
+   "id": "nerf-thoracique-long",
+   "resume": "Le nerf du dentelé antérieur : long, superficiel, il descend sur la paroi latérale du thorax ; sa lésion décolle la scapula.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "racines-du-plexus-brachial",
+    "texte": "Trois racines (C5, C6, C7) qui naissent directement des rameaux antérieurs, avant la formation des troncs",
+    "racines": [
+     "C5",
+     "C6",
+     "C7"
+    ]
+   },
+   "trajet": "Les racines traversent le scalène moyen et s'unissent, puis le nerf passe en arrière du plexus et des vaisseaux axillaires, croise les première et deuxième côtes et descend sur la face externe du dentelé antérieur, sur la ligne axillaire moyenne",
+   "moteur": {
+    "texte": "Le dentelé antérieur, qu'il innerve seul : il porte la scapula en avant et la fait pivoter vers le haut",
+    "muscles": [
+     "dentele-anterieur"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Scapula alata : le bord médial de la scapula se décolle de la paroi thoracique, surtout quand on pousse un mur ou qu'on lève le bras vers l'avant ; l'élévation du bras au-delà de l'horizontale est limitée. Cause fréquente : chirurgie du sein ou de l'aisselle",
+   "test": "Épreuve du mur : mains à plat sur un mur à bout de bras, pousser ; une scapula qui décolle indique la lésion",
+   "clinique": "L'aile médiale de la scapula (dentelé) se distingue de l'aile latérale, plus rare, due au trapèze (nerf accessoire)",
+   "memo": "Long thoracique : un nerf long et exposé pour un seul muscle, le dentelé qui plaque la scapula",
+   "variantes": "Les racines se réunissent parfois au-dessus de l'aisselle, près de la clavicule, au lieu de s'unir dans l'aisselle",
+   "sources": [
+    "gray1918",
+    "kenhub-thoracique-long",
+    "statpearls-thoracique-long",
+    "teachmeanatomy-plexus"
+   ],
+   "divergences": "Racines : C5 à C7 chez Gray, Kenhub et StatPearls ; Gray note que C7 peut manquer, StatPearls (article dédié) ajoute C8 chez environ 10 % des personnes"
+  },
+  {
+   "id": "racines-du-plexus-brachial",
+   "resume": "Les cinq racines du plexus brachial : les rameaux antérieurs de C5, C6, C7, C8 et T1, entre les scalènes.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": null,
+    "texte": "Rameaux antérieurs des nerfs spinaux C5 à T1, à la sortie des foramens intervertébraux",
+    "racines": [
+     "C5",
+     "C6",
+     "C7",
+     "C8",
+     "T1"
+    ]
+   },
+   "trajet": "Sortent du rachis, passent entre le scalène antérieur et le scalène moyen dans le triangle interscalénique, avec l'artère subclavière, puis s'unissent en trois troncs",
+   "branches": [
+    {
+     "nerf": "nerf-dorsal-de-la-scapula",
+     "texte": "Nerf dorsal de la scapula, né de C5"
+    },
+    {
+     "nerf": "nerf-thoracique-long",
+     "texte": "Nerf thoracique long, né de C5 à C7"
+    }
+   ],
+   "moteur": {
+    "texte": "Par leurs deux branches : rhomboïdes, élévateur de la scapula et dentelé antérieur",
+    "muscles": [
+     "grand-rhomboide",
+     "petit-rhomboide",
+     "elevateur-scapula",
+     "dentele-anterieur"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion haute (C5-C6), paralysie de Duchenne-Erb : bras pendant en rotation médiale, coude étendu, avant-bras en pronation, la « main du serveur ». Lésion basse (C8-T1), paralysie de Klumpke : main en griffe, atteinte du bord médial, parfois syndrome de Horner",
+   "test": "Les racines se testent par groupes de muscles : C5 deltoïde et biceps, C6 extenseurs du poignet, C7 triceps, C8 fléchisseurs des doigts, T1 interosseux",
+   "clinique": "Un arrachement de racine (accident de moto, naissance difficile) est plus grave qu'un étirement : la racine ne repousse pas. Un syndrome de Horner associé signe une atteinte de T1",
+   "memo": "Racines, troncs, divisions, faisceaux, branches : cinq étages, de C5 à T1",
+   "variantes": "C4 envoie souvent un rameau à C5 et T2 un rameau à T1 : le plexus peut être remonté ou descendu d'un étage",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-plexus",
+    "statpearls-nerfs"
+   ],
+   "divergences": "Racines : C5 à T1 admises partout ; l'apport inconstant de C4 et de T2 n'est pas décompté de la même façon selon les auteurs"
+  },
+  {
+   "id": "branche-anterieure-du-nerf-cutane-medial-de-l-avant-bras",
+   "resume": "La branche antérieure du cutané médial de l'avant-bras : la peau de la face antéro-médiale de l'avant-bras.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-cutane-medial-de-l-avant-bras",
+    "texte": "Branche de division du nerf cutané médial de l'avant-bras, dans le bras"
+   },
+   "trajet": "Descend à la face antéro-médiale de l'avant-bras, devant la veine médiane du coude ou à son voisinage, et se distribue à la peau jusqu'au poignet",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la face antéro-médiale de l'avant-bras, du coude au poignet"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Engourdissement de la face antéro-médiale de l'avant-bras, sans déficit moteur ; possible lors d'une ponction veineuse au pli du coude ou d'une chirurgie de la face médiale du coude",
+   "test": null,
+   "memo": "Antérieure : la peau du devant de l'avant-bras, côté interne",
+   "variantes": "Sa position par rapport à la veine médiane du coude varie d'une personne à l'autre",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-plexus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branche-palmaire-du-nerf-median",
+   "resume": "La branche cutanée du médian pour la paume : elle naît avant le canal carpien et l'évite.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-median",
+    "texte": "Branche du nerf médian, dans la partie basse de l'avant-bras"
+   },
+   "trajet": "Naît à quelques centimètres au-dessus du poignet, traverse le fascia au-dessus du rétinaculum des fléchisseurs, sans passer dans le canal carpien, et se divise en branches latérale et médiale",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de l'éminence thénar et de la partie centrale de la paume"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Hypoesthésie de l'éminence thénar et de la paume centrale après une plaie du poignet ou une chirurgie à ce niveau ; elle est épargnée dans le syndrome du canal carpien",
+   "test": "Toucher et piquer l'éminence thénar : une peau sensible malgré des doigts engourdis oriente vers le canal carpien",
+   "memo": "La branche palmaire passe au-dessus du canal : dans le canal carpien, la paume reste sensible",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-median",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branche-palmaire-du-nerf-ulnaire",
+   "resume": "La branche cutanée de l'ulnaire pour la paume : elle naît à mi-avant-bras et épargne le canal ulnaire.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-ulnaire",
+    "texte": "Branche du nerf ulnaire, vers le milieu de l'avant-bras"
+   },
+   "trajet": "Naît vers le milieu de l'avant-bras, descend sur l'artère ulnaire, perfore le fascia au-dessus du rétinaculum des fléchisseurs et se distribue à la peau du bord médial de la paume ; elle s'anastomose avec la branche palmaire du médian",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la moitié médiale de la paume, au niveau de l'hypothénar"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Hypoesthésie du bord médial de la paume après une atteinte de l'avant-bras ou du coude ; elle est épargnée par une lésion du canal ulnaire au poignet",
+   "test": "Toucher et piquer l'éminence hypothénar et comparer au côté sain",
+   "memo": "Palmaire, cutanée : elle contourne le canal de Guyon et sent le bord interne de la paume",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-ulnaire",
+    "statpearls-plexus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branche-posterieure-du-nerf-cutane-medial-de-l-avant-bras",
+   "resume": "La branche postérieure du cutané médial de l'avant-bras : la peau de la face postéro-médiale de l'avant-bras.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-cutane-medial-de-l-avant-bras",
+    "texte": "Branche de division du nerf cutané médial de l'avant-bras, dans le bras"
+   },
+   "trajet": "Descend à la face médiale puis postérieure de l'avant-bras, en avant de l'épicondyle médial, et se distribue à la peau de la face postéro-médiale jusqu'au poignet",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la face postéro-médiale de l'avant-bras, du coude au poignet"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Engourdissement de la face postéro-médiale de l'avant-bras, sans déficit moteur ; possible lors d'une chirurgie de la face médiale du coude",
+   "test": null,
+   "memo": "Postérieure : la peau du dos de l'avant-bras, côté interne",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-plexus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branche-profonde-du-nerf-radial",
+   "resume": "La branche motrice du radial à l'avant-bras : elle perfore le supinateur et devient le nerf interosseux postérieur.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-radial",
+    "texte": "Branche terminale motrice du nerf radial, en avant de l'épicondyle latéral"
+   },
+   "orifices": [
+    "Supinateur (entre ses deux plans)"
+   ],
+   "trajet": "Naît devant l'épicondyle latéral, perfore le supinateur, contourne le radius entre ses deux plans et devient, à sa sortie, le nerf interosseux postérieur de l'avant-bras",
+   "branches": [
+    {
+     "nerf": "nerf-interosseux-posterieur-de-l-avant-bras",
+     "texte": "Nerf interosseux postérieur, sa continuation"
+    }
+   ],
+   "moteur": {
+    "texte": "Le supinateur, le court extenseur radial du carpe et, par son prolongement, les extenseurs des doigts, du poignet et du pouce",
+    "muscles": [
+     "supinateur",
+     "court-extenseur-radial-carpe",
+     "extenseur-doigts",
+     "extenseur-du-petit-doigt",
+     "extenseur-ulnaire-carpe",
+     "long-abducteur-pouce",
+     "court-extenseur-pouce",
+     "long-extenseur-du-pouce",
+     "extenseur-de-l-index"
+    ]
+   },
+   "sensitif": {
+    "texte": "Pas de peau : de fins filets pour les articulations du poignet"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Fracture de la tête du radius, luxation postérieure ou compression à l'arcade du supinateur : la main ne peut plus étendre les doigts et le pouce ; le poignet s'étend encore, en déviation radiale, car le long extenseur radial est épargné ; pas de trouble de la sensibilité",
+   "test": "Extension des doigts à l'articulation métacarpo-phalangienne contre résistance ; le poignet s'étend en déviation radiale",
+   "memo": "La branche profonde perfore le supinateur : motricité pure, sans peau",
+   "variantes": "Le court extenseur radial du carpe peut venir de la branche superficielle",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-radial",
+    "kenhub-radial",
+    "statpearls-nerfs"
+   ],
+   "divergences": "Kenhub range aussi le long extenseur radial du carpe dans cette branche ; Gray et TeachMeAnatomy le font innerver plus haut, par le tronc du radial"
+  },
+  {
+   "id": "branche-superficielle-du-nerf-radial",
+   "resume": "La branche sensitive du radial : elle suit l'artère radiale sous le brachio-radial et sent le dos de la main côté pouce.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-radial",
+    "texte": "Branche terminale sensitive du nerf radial, en avant de l'épicondyle latéral"
+   },
+   "trajet": "Descend sous le brachio-radial, en dehors de l'artère radiale, quitte l'artère à environ 7 cm du poignet, passe sous le tendon du brachio-radial, perce le fascia et se divise en nerfs digitaux dorsaux",
+   "branches": [
+    {
+     "nerf": "branches-digitales-dorsales-du-nerf-radial",
+     "texte": "Nerfs digitaux dorsaux"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Dos de la main côté pouce, éminence thénar côté dorsal, face dorsale du pouce, de l'index, du majeur et de la moitié latérale de l'annulaire (phalanges proximales)"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Perte de sensibilité du dos de la main côté pouce et de la face dorsale des trois premiers doigts, sans déficit moteur. Causes : plaie du poignet, compression par une montre ou des menottes trop serrées",
+   "test": "Toucher ou piquer la peau entre le pouce et l'index sur le dos de la main",
+   "clinique": "La zone entre pouce et index sur le dos de la main est la zone autonome du radial, utilisée pour tester le nerf",
+   "memo": "Superficielle, sensitive : elle ne sent que le dos de la main, côté pouce",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-radial",
+    "kenhub-radial",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branches-musculaires-du-nerf-median",
+   "resume": "Les rameaux moteurs du médian à l'avant-bras : rond pronateur, fléchisseur radial du carpe, long palmaire et fléchisseur superficiel.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-median",
+    "texte": "Rameaux du nerf médian, au pli du coude et dans l'avant-bras"
+   },
+   "trajet": "Naissent près du pli du coude : le rameau du rond pronateur parfois au-dessus de l'épicondyle, les autres pour le fléchisseur radial du carpe, le long palmaire et le fléchisseur superficiel des doigts",
+   "moteur": {
+    "texte": "Le rond pronateur, le fléchisseur radial du carpe, le long palmaire et le fléchisseur superficiel des doigts",
+    "muscles": [
+     "rond-pronateur",
+     "flechisseur-radial-carpe",
+     "long-palmaire",
+     "flechisseur-superficiel-doigts"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion au coude : pronation affaiblie, flexion du poignet en déviation ulnaire (fléchisseur ulnaire intact), flexion des doigts perdue sauf annulaire et auriculaire ; à l'effort de serrer le poing, l'index et le majeur restent tendus",
+   "test": "Pronation contre résistance, flexion du poignet (le poignet part vers l'ulnaire), flexion de l'articulation interphalangienne proximale de chaque doigt",
+   "memo": "Les superficiels de l'avant-bras sont au médian, sauf l'ulnaire du carpe",
+   "variantes": "Le long palmaire manque chez une proportion notable de personnes",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-median",
+    "statpearls-nerfs",
+    "statpearls-plexus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branches-musculaires-du-nerf-ulnaire",
+   "resume": "Les deux rameaux moteurs de l'ulnaire à l'avant-bras : fléchisseur ulnaire du carpe et moitié ulnaire du fléchisseur profond.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-ulnaire",
+    "texte": "Rameaux du nerf ulnaire, près du coude"
+   },
+   "trajet": "Naissent près du coude, dans la gouttière ou juste après : l'un pour le fléchisseur ulnaire du carpe, l'autre pour la moitié ulnaire du fléchisseur profond des doigts, destinée à l'annulaire et à l'auriculaire",
+   "moteur": {
+    "texte": "Le fléchisseur ulnaire du carpe et la moitié médiale du fléchisseur profond des doigts (annulaire et petit doigt)",
+    "muscles": [
+     "flechisseur-ulnaire-carpe",
+     "flechisseur-profond-doigts"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion au coude : la flexion du poignet part en déviation radiale (le fléchisseur ulnaire du carpe est paralysé) et la dernière phalange de l'annulaire et du petit doigt ne plie plus",
+   "test": "Flexion du poignet avec inclinaison ulnaire ; flexion de la dernière phalange de l'annulaire et du petit doigt contre résistance",
+   "memo": "Deux rameaux au coude : le fléchisseur ulnaire du carpe et les deux derniers tendons profonds",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-ulnaire",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-cutane-antebrachial-lateral",
+   "resume": "Le prolongement cutané du musculo-cutané : il sent la face latérale de l'avant-bras.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-musculocutane",
+    "texte": "Branche terminale du nerf musculo-cutané, au pli du coude",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "trajet": "Émerge en dehors du tendon du biceps, perfore le fascia profond, longe la veine céphalique et se divise en une branche antérieure, qui descend à la face antéro-latérale de l'avant-bras, et une branche postérieure, plus dorsale",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la face latérale de l'avant-bras, devant et derrière, jusqu'au poignet"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Engourdissement du bord latéral de l'avant-bras, sans déficit moteur. Lésion lors d'une ponction veineuse au pli du coude ou d'un abord chirurgical du tendon du biceps",
+   "test": "Toucher et piquer le bord latéral de l'avant-bras et comparer au côté sain",
+   "memo": "Le nerf cutané de la face externe de l'avant-bras : la suite du musculo-cutané, au bord du biceps",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-musculocutane",
+    "statpearls-nerfs",
+    "statpearls-plexus"
+   ],
+   "divergences": "Racines : C5-C6 ou C5-C7 selon la valeur retenue pour le musculo-cutané"
+  },
+  {
+   "id": "nerf-cutane-posterieur-de-l-avant-bras",
+   "resume": "Le nerf cutané de la face postérieure de l'avant-bras, jusqu'au poignet : une branche sensitive du radial.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-radial",
+    "texte": "Branche collatérale sensitive du nerf radial, dans le bras"
+   },
+   "trajet": "Naît du radial dans le bras, perce le chef latéral du triceps, longe la face latérale du bras puis descend au milieu de la face postérieure de l'avant-bras jusqu'au poignet",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Une bande de peau au milieu de la face postérieure de l'avant-bras, jusqu'au poignet"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Perte de sensibilité sur une bande médiane de la face postérieure de l'avant-bras. Atteint dans les lésions hautes du radial (aisselle), souvent épargné par une lésion de la gouttière",
+   "test": null,
+   "memo": "Le cutané postérieur de l'avant-bras : une bande de peau au milieu du dos de l'avant-bras",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-radial",
+    "kenhub-radial"
+   ],
+   "divergences": "Gray le fait perforer le chef latéral du triceps près de l'humérus ; TeachMeAnatomy le dit atteint par une lésion de l'aisselle mais épargné par celle de la gouttière, donc né plus haut"
+  },
+  {
+   "id": "nerf-interosseux-anterieur-de-l-avant-bras",
+   "resume": "Le nerf des muscles profonds de la face antérieure : il commande la pince pouce-index.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-median",
+    "texte": "Branche profonde du nerf médian, dans le pli du coude"
+   },
+   "trajet": "Naît du médian à la hauteur du pli du coude, descend contre la membrane interosseuse avec l'artère interosseuse antérieure, entre le long fléchisseur du pouce et le fléchisseur profond, et se termine derrière le carré pronateur par des filets articulaires du poignet",
+   "moteur": {
+    "texte": "Le long fléchisseur du pouce, la moitié latérale du fléchisseur profond des doigts (index et majeur) et le carré pronateur",
+    "muscles": [
+     "long-flechisseur-pouce",
+     "flechisseur-profond-doigts",
+     "carre-pronateur"
+    ]
+   },
+   "sensitif": {
+    "texte": "Pas de peau : filets articulaires pour le poignet"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Syndrome de Kiloh-Nevin : le pouce et l'index ne plient plus leur dernière phalange, et la pince se fait pulpes à plat au lieu de pointes (signe du « O » impossible) ; la sensibilité est normale",
+   "test": "Pince pouce-index en « O », pulpe contre pulpe ; flexion de la dernière phalange du pouce et de l'index",
+   "memo": "L'interosseux antérieur : le pouce, l'index et le carré pronateur, motricité pure",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-median",
+    "statpearls-nerfs",
+    "statpearls-plexus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-interosseux-posterieur-de-l-avant-bras",
+   "resume": "La suite de la branche profonde du radial après le supinateur : elle commande les extenseurs des doigts et du pouce.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "branche-profonde-du-nerf-radial",
+    "texte": "Continuation de la branche profonde du nerf radial, à la sortie du supinateur"
+   },
+   "trajet": "Sort du supinateur, descend entre les muscles superficiels et profonds de la loge postérieure, puis sur la membrane interosseuse, en arrière du long extenseur du pouce, jusqu'au dos du carpe où il se renfle",
+   "moteur": {
+    "texte": "Les extenseurs des doigts, de l'index et du petit doigt, l'extenseur ulnaire du carpe et les muscles du pouce (long abducteur, court et long extenseurs)",
+    "muscles": [
+     "extenseur-doigts",
+     "extenseur-du-petit-doigt",
+     "extenseur-ulnaire-carpe",
+     "long-abducteur-pouce",
+     "court-extenseur-pouce",
+     "long-extenseur-du-pouce",
+     "extenseur-de-l-index"
+    ]
+   },
+   "sensitif": {
+    "texte": "Pas de peau : filets sensitifs pour les ligaments et articulations du poignet"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Syndrome de l'interosseux postérieur : doigts et pouce ne s'étendent plus (doigts tombants), le poignet s'étend en déviation radiale, la sensibilité reste normale ; causes : compression à l'arcade du supinateur, fracture, tumeur",
+   "test": "Extension des doigts, puis du pouce, contre résistance ; le poignet est maintenu étendu par le long extenseur radial du carpe",
+   "memo": "L'interosseux postérieur : tout le dos de l'avant-bras sauf trois muscles, et aucune peau",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-radial",
+    "kenhub-radial",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branches-musculaires-du-nerf-radial",
+   "resume": "Les rameaux moteurs du radial au bras : triceps, anconé, brachio-radial et long extenseur radial du carpe.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-radial",
+    "texte": "Rameaux du nerf radial, de l'aisselle à l'épicondyle latéral"
+   },
+   "trajet": "Les rameaux du chef long et du chef médial du triceps naissent dans l'aisselle ; celui du chef latéral, du chef médial et de l'anconé dans la gouttière du nerf radial ; ceux du brachio-radial et du long extenseur radial du carpe en avant de l'épicondyle latéral",
+   "moteur": {
+    "texte": "Le triceps brachial (trois chefs), l'anconé, le brachio-radial et le long extenseur radial du carpe",
+    "muscles": [
+     "triceps-brachial",
+     "ancone",
+     "brachio-radial",
+     "long-extenseur-radial-carpe"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": {
+    "nom": "Réflexes tricipital (C7) et stylo-radial (C6)",
+    "racines": [
+     "C6",
+     "C7"
+    ]
+   },
+   "atteinte": "Lésion dans l'aisselle : triceps paralysé, extension du coude perdue. Lésion dans la gouttière : triceps épargné, brachio-radial et extenseurs du poignet touchés, donc main tombante",
+   "test": "Extension du coude contre résistance (triceps) ; flexion du coude en demi-pronation (brachio-radial) ; extension du poignet en déviation radiale",
+   "memo": "Du haut en bas : triceps, anconé, puis brachio-radial et long extenseur radial du carpe",
+   "variantes": "Le brachial reçoit une petite part latérale du radial (Gray)",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-radial",
+    "kenhub-radial",
+    "statpearls-nerfs"
+   ],
+   "divergences": "Les sources ne rangent pas toujours le court extenseur radial du carpe avec ces rameaux : Gray le met dans la branche profonde"
+  },
+  {
+   "id": "nerf-cutane-brachial-lateroposterieur",
+   "resume": "Le nerf cutané brachial latéral supérieur : il sent la « médaille militaire » sur le bas du deltoïde.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-axillaire",
+    "texte": "Prolongement de la branche postérieure du nerf axillaire, qui contourne le bord postérieur du deltoïde",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "trajet": "Naît de la branche postérieure de l'axillaire, contourne le bord postérieur du deltoïde, perfore le fascia et gagne la peau de la partie basse du deltoïde et du haut du bras",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la partie basse du deltoïde et du haut de la face latérale du bras"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Perte de sensibilité sur un disque cutané au bas du deltoïde : le signe de la médaille militaire, utile pour reconnaître une lésion du nerf axillaire",
+   "test": "Toucher et piquer la peau du bas du deltoïde et comparer au côté sain",
+   "memo": "La médaille militaire, sur le bas du deltoïde : si la peau y est sensible, l'axillaire est intact",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-axillaire",
+    "kenhub-axillaire",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-cutane-lateral-inferieur-du-bras",
+   "resume": "Le nerf cutané de la face latérale du bras, sous l'insertion du deltoïde : une branche sensitive du radial.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-radial",
+    "texte": "Branche collatérale sensitive du nerf radial, dans le bras"
+   },
+   "trajet": "Naît du radial dans le bras, perce le chef latéral du triceps près de son attache sur l'humérus, perce le fascia sous l'insertion du deltoïde et longe la face latérale du bras jusqu'au coude",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la face latérale du bras, sous l'insertion du deltoïde, jusqu'au coude"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Perte de sensibilité sur la face latérale de la moitié basse du bras. Atteint dans les lésions hautes du radial (aisselle), souvent épargné par une lésion de la gouttière",
+   "test": null,
+   "memo": "Le cutané latéral inférieur : la peau du bras sous la médaille du deltoïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-radial",
+    "kenhub-radial"
+   ],
+   "divergences": "Gray le fait perforer le chef latéral du triceps près de l'humérus ; TeachMeAnatomy le dit atteint par une lésion de l'aisselle mais épargné par celle de la gouttière, donc né plus haut"
+  },
+  {
+   "id": "nerf-cutane-medial-de-l-avant-bras",
+   "resume": "Le nerf cutané de la face médiale de l'avant-bras : un rameau sensitif du faisceau médial qui se divise en deux branches.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Faisceau médial du plexus brachial",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "trajet": "Naît du faisceau médial, descend dans le bras avec l'artère brachiale et la veine basilique, perfore le fascia vers le milieu du bras et se divise en une branche antérieure et une branche postérieure",
+   "branches": [
+    {
+     "nerf": "branche-anterieure-du-nerf-cutane-medial-de-l-avant-bras",
+     "texte": "Branche antérieure"
+    },
+    {
+     "nerf": "branche-posterieure-du-nerf-cutane-medial-de-l-avant-bras",
+     "texte": "Branche postérieure"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la face médiale de l'avant-bras, devant et derrière, jusqu'au poignet"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Perte de sensibilité sur la face médiale de l'avant-bras, sans déficit moteur ; atteint avec le tronc inférieur ou le faisceau médial (paralysie de Klumpke), ou lors d'une ponction veineuse près de la veine basilique",
+   "test": "Toucher et piquer le bord médial de l'avant-bras et comparer au côté sain",
+   "memo": "Le cutané médial de l'avant-bras : l'intérieur de l'avant-bras, du coude au poignet",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-plexus",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-cutane-medial-du-bras",
+   "resume": "Le nerf cutané de la face médiale du bras : un fin rameau sensitif du faisceau médial.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Faisceau médial du plexus brachial",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "trajet": "Mince nerf né du faisceau médial, il descend contre la veine axillaire puis sur la face médiale du bras, perfore le fascia et se distribue à la peau jusqu'au coude",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la face médiale du bras, de l'aisselle au coude"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Perte de sensibilité sur la face médiale du bras, sans déficit moteur ; atteint avec le tronc inférieur ou le faisceau médial (paralysie de Klumpke)",
+   "test": "Toucher et piquer la face médiale du bras et comparer au côté sain",
+   "memo": "Le cutané médial du bras : la peau de l'intérieur du bras, vers l'aisselle",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-plexus",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-musculocutane",
+   "resume": "Le nerf des muscles fléchisseurs du bras : il perfore le coraco-brachial et finit comme nerf cutané de l'avant-bras.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Branche terminale du faisceau latéral du plexus brachial, au bord inférieur du petit pectoral",
+    "racines": [
+     "C5",
+     "C6",
+     "C7"
+    ]
+   },
+   "trajet": "Naît dans l'aisselle, perfore le coraco-brachial, descend entre le biceps et le brachial et se prolonge, en dehors du tendon du biceps, par le nerf cutané antébrachial latéral",
+   "branches": [
+    {
+     "nerf": "nerf-cutane-antebrachial-lateral",
+     "texte": "Nerf cutané antébrachial latéral, sa branche terminale sensitive"
+    }
+   ],
+   "moteur": {
+    "texte": "Les trois muscles de la loge antérieure du bras : coraco-brachial, biceps brachial et brachial (celui-ci aussi un peu par le radial)",
+    "muscles": [
+     "coraco-brachial",
+     "biceps-brachial",
+     "brachial"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau de la face latérale de l'avant-bras, jusqu'au poignet, par le nerf cutané antébrachial latéral"
+   },
+   "autonome": null,
+   "reflexe": {
+    "nom": "Réflexe bicipital",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "atteinte": "Rare, car il est bien protégé : plaie de l'aisselle, traction lors d'une voie d'abord. Flexion du coude et supination affaiblies (brachio-radial et supinateur compensent en partie), perte du réflexe bicipital, engourdissement du bord latéral de l'avant-bras",
+   "test": "Flexion du coude contre résistance, avant-bras en supination ; réflexe bicipital ; sensibilité du bord latéral de l'avant-bras",
+   "memo": "Musculo-cutané : il perfore le coraco-brachial, nourrit biceps et brachial, puis finit à la peau",
+   "variantes": "Anastomose avec le nerf médian ; trajet à travers le biceps ou sous le coraco-brachial",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-musculocutane",
+    "statpearls-nerfs",
+    "wustl-neuromuscular"
+   ],
+   "divergences": "Racines : C5 à C7 chez Gray, TeachMeAnatomy et StatPearls (Nerves) ; C5-C6 chez StatPearls (Brachial Plexus) et WUSTL"
+  },
+  {
+   "id": "nerf-radial",
+   "resume": "Le nerf de l'extension : il étend le coude, le poignet et les doigts, et sent le dos de la main côté pouce.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "faisceau-posterieur-du-plexus-brachial",
+    "texte": "Branche terminale du faisceau postérieur du plexus brachial, la plus grosse du plexus",
+    "racines": [
+     "C5",
+     "C6",
+     "C7",
+     "C8",
+     "T1"
+    ]
+   },
+   "orifices": [
+    "Gouttière du nerf radial de l'humérus"
+   ],
+   "trajet": "Descend derrière l'artère axillaire, s'enroule autour de l'humérus dans la gouttière du nerf radial, entre les chefs du triceps, perce le septum intermusculaire latéral, passe entre le brachial et le brachio-radial et se divise en avant de l'épicondyle latéral",
+   "branches": [
+    {
+     "nerf": "branches-musculaires-du-nerf-radial",
+     "texte": "Rameaux du triceps, de l'anconé, du brachio-radial et du long extenseur radial du carpe"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf cutané postérieur du bras"
+    },
+    {
+     "nerf": "nerf-cutane-lateral-inferieur-du-bras",
+     "texte": "Nerf cutané latéral inférieur du bras"
+    },
+    {
+     "nerf": "nerf-cutane-posterieur-de-l-avant-bras",
+     "texte": "Nerf cutané postérieur de l'avant-bras"
+    },
+    {
+     "nerf": "branche-profonde-du-nerf-radial",
+     "texte": "Branche profonde, motrice"
+    },
+    {
+     "nerf": "branche-superficielle-du-nerf-radial",
+     "texte": "Branche superficielle, sensitive"
+    }
+   ],
+   "moteur": {
+    "texte": "Le triceps, l'anconé, le brachio-radial et tous les muscles de la loge postérieure de l'avant-bras : extension du coude, du poignet et des doigts, supination",
+    "muscles": [
+     "triceps-brachial",
+     "ancone",
+     "brachio-radial",
+     "long-extenseur-radial-carpe",
+     "supinateur",
+     "court-extenseur-radial-carpe",
+     "extenseur-doigts",
+     "extenseur-du-petit-doigt",
+     "extenseur-ulnaire-carpe",
+     "long-abducteur-pouce",
+     "court-extenseur-pouce",
+     "long-extenseur-du-pouce",
+     "extenseur-de-l-index"
+    ]
+   },
+   "sensitif": {
+    "texte": "Face postérieure du bras et de l'avant-bras, partie basse du bras en dehors, dos de la main côté pouce et face dorsale des trois premiers doigts et demi (phalanges proximales)"
+   },
+   "autonome": null,
+   "reflexe": {
+    "nom": "Réflexes tricipital (C7) et stylo-radial (C6)",
+    "racines": [
+     "C6",
+     "C7"
+    ]
+   },
+   "atteinte": "Gouttière du nerf radial (fracture de la diaphyse humérale, compression prolongée) : main tombante, extension du poignet et des doigts perdue, anesthésie du dos de la main côté pouce ; le triceps est épargné, ses branches naissant plus haut. Dans l'aisselle, le triceps est aussi paralysé",
+   "test": "Extension du poignet et des doigts contre résistance, avant-bras en pronation ; extension du coude ; sensibilité du dos de la main entre pouce et index",
+   "clinique": "Le plus fréquemment lésé des nerfs du membre supérieur ; la « paralysie du samedi soir » est la compression du nerf dans la gouttière par un bras laissé sur un dossier",
+   "memo": "Radial : le nerf de l'extension ; si le poignet tombe, c'est lui",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-radial",
+    "kenhub-radial",
+    "statpearls-nerfs"
+   ],
+   "divergences": "Racines : C5 à T1 chez Gray, TeachMeAnatomy, Kenhub et StatPearls ; C6 à T1 chez WUSTL, où l'essentiel des muscles vient de C6-C8"
+  },
+  {
+   "id": "nerf-subscapulaire-inferieur",
+   "resume": "Le nerf de la partie basse du subscapulaire et du grand rond, né du faisceau postérieur.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "faisceau-posterieur-du-plexus-brachial",
+    "texte": "Faisceau postérieur du plexus brachial, sous le nerf subscapulaire supérieur",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "trajet": "Naît du faisceau postérieur, descend sur la paroi postérieure de l'aisselle, donne un rameau à la partie basse du subscapulaire puis gagne le grand rond",
+   "moteur": {
+    "texte": "La partie basse du subscapulaire et le grand rond",
+    "muscles": [
+     "subscapulaire",
+     "grand-rond"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Rotation médiale et adduction du bras affaiblies. Atteinte rarement isolée : elle accompagne celles du faisceau postérieur ou la chirurgie de l'épaule",
+   "test": "Adduction et rotation médiale du bras, coude collé au corps, contre résistance",
+   "memo": "L'inférieur double l'effort : subscapulaire bas et grand rond, les deux rotateurs médiaux",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-plexus",
+    "teachmeanatomy-plexus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-ulnaire",
+   "resume": "Le nerf de la force de la main : il commande la plupart des petits muscles de la main et sent le petit doigt.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Branche terminale du faisceau médial du plexus brachial",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "orifices": [
+    "Gouttière du nerf ulnaire (derrière l'épicondyle médial)",
+    "Canal ulnaire (loge de Guyon)"
+   ],
+   "trajet": "Descend à la face médiale du bras, perfore le septum intermusculaire médial, passe derrière l'épicondyle médial, entre les deux chefs du fléchisseur ulnaire du carpe, longe l'ulna sous ce muscle et entre dans la main par le canal ulnaire, où il se divise",
+   "branches": [
+    {
+     "nerf": "branches-musculaires-du-nerf-ulnaire",
+     "texte": "Rameaux du fléchisseur ulnaire du carpe et de la moitié ulnaire du fléchisseur profond"
+    },
+    {
+     "nerf": "branche-palmaire-du-nerf-ulnaire",
+     "texte": "Branche palmaire, cutanée"
+    },
+    {
+     "nerf": "branche-dorsale-du-nerf-ulnaire",
+     "texte": "Branche dorsale, cutanée"
+    },
+    {
+     "nerf": "branche-superficielle-du-nerf-ulnaire",
+     "texte": "Branche superficielle, sensitive et palmaire court"
+    },
+    {
+     "nerf": "branche-profonde-du-nerf-ulnaire",
+     "texte": "Branche profonde, motrice"
+    }
+   ],
+   "moteur": {
+    "texte": "Le fléchisseur ulnaire du carpe, la moitié ulnaire du fléchisseur profond, les muscles du petit doigt, tous les interosseux, les deux lombricaux médiaux et l'adducteur du pouce",
+    "muscles": [
+     "flechisseur-ulnaire-carpe",
+     "flechisseur-profond-doigts",
+     "abducteur-petit-doigt",
+     "flechisseur-du-petit-doigt-de-la-main",
+     "muscle-opposant-du-petit-doigt",
+     "interosseux-dorsaux",
+     "interosseux-palmaires",
+     "lombricaux-de-la-main",
+     "adducteur-pouce",
+     "court-flechisseur-pouce"
+    ]
+   },
+   "sensitif": {
+    "texte": "Face palmaire et dorsale du petit doigt et de la moitié médiale de l'annulaire, bord médial de la paume et du dos de la main"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Au coude (gouttière derrière l'épicondyle médial, tunnel cubital, fracture) : griffe des deux derniers doigts, perte de l'écartement et du rapprochement des doigts, signe de Froment, fonte de l'hypothénar ; sensibilité perdue sur le petit doigt et la moitié de l'annulaire. Au poignet : mêmes signes moteurs, dos de la main épargné",
+   "test": "Signe de Froment (tenir une feuille entre pouce et index : le pouce plie sa dernière phalange) ; écarter et rapprocher les doigts ; sensibilité de la pulpe du petit doigt",
+   "clinique": "Le nerf glisse derrière l'épicondyle médial : un choc à cet endroit donne des fourmillements jusqu'au petit doigt. La griffe est plus nette dans les lésions basses que dans les lésions hautes, où le fléchisseur profond est lui aussi atteint",
+   "memo": "Ulnaire : le nerf du petit doigt et de la griffe, dans la gouttière derrière le coude",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-ulnaire",
+    "statpearls-nerfs",
+    "statpearls-plexus"
+   ],
+   "divergences": "Racines : C8-T1 chez Gray, TeachMeAnatomy et StatPearls ; C7 à T1 chez WUSTL"
+  },
+  {
+   "id": "branches-musculaires-du-nerf-axillaire",
+   "resume": "Les rameaux moteurs de l'axillaire : la branche antérieure du deltoïde, la branche postérieure du petit rond et du deltoïde postérieur.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-axillaire",
+    "texte": "Branches antérieure et postérieure du nerf axillaire, après l'espace quadrilatère",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "trajet": "La branche antérieure contourne le col chirurgical de l'humérus avec les vaisseaux circonflexes postérieurs et gagne le deltoïde antérieur ; la branche postérieure donne le petit rond, puis le deltoïde postérieur",
+   "moteur": {
+    "texte": "Le deltoïde (faisceaux antérieur, moyen et postérieur) et le petit rond",
+    "muscles": [
+     "deltoide",
+     "petit-rond"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion au col chirurgical de l'humérus : deltoïde et petit rond paralysés, abduction faible, rotation latérale affaiblie, aplatissement du moignon de l'épaule",
+   "test": "Abduction du bras contre résistance, et rotation latérale coude au corps",
+   "memo": "Une branche pour l'avant du deltoïde, une branche pour l'arrière et le petit rond",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-axillaire",
+    "kenhub-axillaire",
+    "statpearls-plexus"
+   ],
+   "divergences": "Racines : C5-C6 chez Gray, TeachMeAnatomy et StatPearls ; fibres C7 au deltoïde chez quelques sujets"
+  },
+  {
+   "id": "division-anterieure-du-tronc-inferieur-du-plexus-brachial",
+   "resume": "La moitié antérieure du tronc inférieur (C8-T1) : elle prolonge seule en faisceau médial.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "tronc-inferieur-du-plexus-brachial",
+    "texte": "Division antérieure du tronc inférieur, derrière la clavicule",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "trajet": "Naît du tronc inférieur derrière la clavicule, longe le côté médial de l'artère axillaire et devient à elle seule le faisceau médial",
+   "moteur": null,
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Pas de syndrome propre : sa lésion est celle du tronc inférieur, avec les signes de Klumpke (ulnaire, racine médiale du médian, nerfs cutanés médiaux : griffe de la main, anesthésie du bord médial)",
+   "test": null,
+   "memo": "À elle seule, la division antérieure du tronc inférieur devient le faisceau médial",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "division-anterieure-du-tronc-moyen-du-plexus-brachial",
+   "resume": "La moitié antérieure du tronc moyen (C7) : elle s'unit à celle du tronc supérieur pour former le faisceau latéral.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "tronc-moyen-du-plexus-brachial",
+    "texte": "Division antérieure du tronc moyen, derrière la clavicule",
+    "racines": [
+     "C7"
+    ]
+   },
+   "trajet": "Naît du tronc moyen derrière la clavicule, rejoint la division antérieure du tronc supérieur et forme avec elle le faisceau latéral",
+   "moteur": null,
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Pas de syndrome propre : sa lésion s'ajoute à celle du tronc supérieur dans les atteintes étendues C5-C7 (nerf musculo-cutané, racine latérale du médian)",
+   "test": null,
+   "memo": "Division antérieure du tronc moyen : C7 qui s'ajoute à C5-C6 pour faire le faisceau latéral",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "division-anterieure-du-tronc-superieur-du-plexus-brachial",
+   "resume": "La moitié antérieure du tronc supérieur : elle porte les fibres de C5-C6 destinées aux fléchisseurs et rejoint le faisceau latéral.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "tronc-superieur-du-plexus-brachial",
+    "texte": "Division antérieure du tronc supérieur, derrière la clavicule",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "trajet": "Naît du tronc supérieur derrière la clavicule et s'unit à la division antérieure du tronc moyen pour former le faisceau latéral",
+   "moteur": null,
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Pas de syndrome propre : sa lésion est celle du tronc supérieur et retentit sur le nerf musculo-cutané, le nerf pectoral latéral et la racine latérale du nerf médian (flexion du coude et supination affaiblies)",
+   "test": null,
+   "memo": "Les divisions antérieures vont aux fléchisseurs, les postérieures aux extenseurs",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "division-posterieure-du-tronc-inferieur-du-plexus-brachial",
+   "resume": "La moitié postérieure du tronc inférieur (C8-T1) : la plus petite des trois divisions postérieures.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "tronc-inferieur-du-plexus-brachial",
+    "texte": "Division postérieure du tronc inférieur, derrière la clavicule",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "trajet": "Naît du tronc inférieur derrière la clavicule et se joint aux deux autres divisions postérieures pour former le faisceau postérieur ; elle est bien plus petite que les autres",
+   "moteur": null,
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Pas de syndrome propre : sa lésion est celle du tronc inférieur et touche le contingent C8-T1 du faisceau postérieur, donc du radial",
+   "test": null,
+   "memo": "Postérieure, inférieure : petit contingent C8, il finit dans le radial",
+   "variantes": "Elle peut provenir de C8 seulement",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-nerfs"
+   ],
+   "divergences": "Racines : C8-T1 par convention ; Gray la décrit comme plus petite et parfois issue de C8 seul"
+  },
+  {
+   "id": "division-posterieure-du-tronc-moyen-du-plexus-brachial",
+   "resume": "La moitié postérieure du tronc moyen (C7) : le contingent C7 du faisceau postérieur.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "tronc-moyen-du-plexus-brachial",
+    "texte": "Division postérieure du tronc moyen, derrière la clavicule",
+    "racines": [
+     "C7"
+    ]
+   },
+   "trajet": "Naît du tronc moyen derrière la clavicule et rejoint les deux autres divisions postérieures pour former le faisceau postérieur",
+   "moteur": null,
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Pas de syndrome propre : sa lésion s'ajoute à celle du tronc supérieur dans les atteintes C5-C7 et prive le radial de ses fibres C7 (triceps, extenseurs)",
+   "test": null,
+   "memo": "Postérieure, moyenne : le C7 qui donne la force d'extension au radial",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "division-posterieure-du-tronc-superieur-du-plexus-brachial",
+   "resume": "La moitié postérieure du tronc supérieur (C5-C6) : elle s'unit aux deux autres divisions postérieures pour former le faisceau postérieur.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "tronc-superieur-du-plexus-brachial",
+    "texte": "Division postérieure du tronc supérieur, derrière la clavicule",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "trajet": "Naît du tronc supérieur derrière la clavicule et se joint aux divisions postérieures des troncs moyen et inférieur pour former le faisceau postérieur",
+   "moteur": null,
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Pas de syndrome propre : sa lésion est celle du tronc supérieur et touche l'axillaire (abduction, rotation latérale) et la part C5-C6 du radial (extension)",
+   "test": null,
+   "memo": "Postérieure, supérieure : le contingent C5-C6 du faisceau postérieur, celui de l'épaule",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "faisceau-posterieur-du-plexus-brachial",
+   "resume": "Le faisceau qui réunit les trois divisions postérieures (C5-T1) et donne l'axillaire et le radial.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": null,
+    "texte": "Union des divisions postérieures des troncs supérieur, moyen et inférieur, derrière l'artère axillaire",
+    "racines": [
+     "C5",
+     "C6",
+     "C7",
+     "C8",
+     "T1"
+    ]
+   },
+   "trajet": "Se place derrière l'artère axillaire, donne ses branches dans l'aisselle puis se divise en nerf axillaire, qui traverse l'espace quadrilatère, et en nerf radial, qui continue derrière l'artère",
+   "branches": [
+    {
+     "nerf": "nerf-subscapulaire-superieur",
+     "texte": "Nerf subscapulaire supérieur"
+    },
+    {
+     "nerf": "nerf-thoracodorsal",
+     "texte": "Nerf thoracodorsal"
+    },
+    {
+     "nerf": "nerf-subscapulaire-inferieur",
+     "texte": "Nerf subscapulaire inférieur"
+    },
+    {
+     "nerf": "nerf-axillaire",
+     "texte": "Nerf axillaire"
+    },
+    {
+     "nerf": "nerf-radial",
+     "texte": "Nerf radial"
+    }
+   ],
+   "moteur": {
+    "texte": "Par ses branches : subscapulaire, grand rond, grand dorsal, deltoïde, petit rond, triceps, anconé et tous les muscles de la loge postérieure de l'avant-bras",
+    "muscles": [
+     "subscapulaire",
+     "grand-rond",
+     "grand-dorsal",
+     "deltoide",
+     "petit-rond",
+     "triceps-brachial",
+     "ancone",
+     "brachio-radial",
+     "long-extenseur-radial-carpe",
+     "court-extenseur-radial-carpe",
+     "supinateur",
+     "extenseur-doigts",
+     "extenseur-du-petit-doigt",
+     "extenseur-ulnaire-carpe",
+     "long-abducteur-pouce",
+     "court-extenseur-pouce",
+     "long-extenseur-du-pouce",
+     "extenseur-de-l-index"
+    ]
+   },
+   "sensitif": {
+    "texte": "Par ses branches : peau de l'épaule latérale, de la face postérieure du bras et de l'avant-bras et du dos de la main côté pouce"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion dans l'aisselle (béquille mal ajustée, luxation de l'épaule, fracture de l'extrémité haute de l'humérus) : abduction faible, perte de l'extension du coude, du poignet et des doigts (main tombante), anesthésie de la face postérieure du membre",
+   "test": "Abduction, extension du coude et du poignet contre résistance ; sensibilité de la face externe de l'épaule et du dos de la main",
+   "memo": "Le faisceau postérieur donne tous les nerfs de l'extension : radial pour le coude et le poignet, axillaire pour l'épaule",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-plexus",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-axillaire",
+   "resume": "Le nerf du deltoïde : il passe par l'espace quadrilatère et contourne le col chirurgical de l'humérus.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "faisceau-posterieur-du-plexus-brachial",
+    "texte": "Branche terminale du faisceau postérieur du plexus brachial, avec le nerf radial",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "orifices": [
+    "Espace quadrilatère"
+   ],
+   "trajet": "Descend derrière l'artère axillaire, devant le subscapulaire, quitte l'aisselle par l'espace quadrilatère avec l'artère circonflexe postérieure de l'humérus et contourne en arrière le col chirurgical de l'humérus",
+   "branches": [
+    {
+     "nerf": "branches-musculaires-du-nerf-axillaire",
+     "texte": "Rameaux musculaires : branche antérieure (deltoïde) et branche postérieure (petit rond, deltoïde)"
+    },
+    {
+     "nerf": "nerf-cutane-brachial-lateroposterieur",
+     "texte": "Nerf cutané brachial latéral supérieur, prolongement de la branche postérieure"
+    }
+   ],
+   "moteur": {
+    "texte": "Le deltoïde (abduction) et le petit rond (rotation latérale)",
+    "muscles": [
+     "deltoide",
+     "petit-rond"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau de la partie basse du deltoïde et du haut de la face latérale du bras (la « médaille militaire »), par le nerf cutané brachial latéral supérieur ; rameau articulaire pour l'articulation gléno-humérale"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Fracture du col chirurgical ou luxation antérieure de l'épaule : deltoïde et petit rond paralysés, abduction faible au-delà de 15°, aplatissement du galbe de l'épaule, anesthésie en « médaille militaire » sur le bas du deltoïde",
+   "test": "Contraction du deltoïde palpée quand on tente d'écarter le bras contre résistance ; sensibilité de la zone de la médaille",
+   "clinique": "Dans le syndrome de l'espace quadrilatère, le nerf est comprimé chez les sportifs aux bras levés, et le petit rond peut s'atrophier",
+   "memo": "Axillaire : il passe dans le quadrilatère, enveloppe le col chirurgical, et sa médaille est sur le deltoïde",
+   "variantes": "Une part du chef latéral du triceps pourrait recevoir une branche du nerf (études sur cadavre)",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-axillaire",
+    "kenhub-axillaire",
+    "statpearls-plexus"
+   ],
+   "divergences": "Racines : C5-C6 chez Gray, TeachMeAnatomy et StatPearls ; Kenhub cite aussi C5-T1 (pour l'ensemble du plexus) ; le deltoïde reçoit parfois des fibres C7"
+  },
+  {
+   "id": "nerf-dorsal-de-la-scapula",
+   "resume": "Le nerf des rhomboïdes : il naît de C5, perfore le scalène moyen et longe le bord médial de la scapula.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "racines-du-plexus-brachial",
+    "texte": "Racine C5, avant la formation du tronc supérieur",
+    "racines": [
+     "C5"
+    ]
+   },
+   "trajet": "Naît juste au-dessus de la clavicule, perfore le scalène moyen, passe sous l'élévateur de la scapula puis descend le long du bord médial de la scapula, contre le bord antérieur des rhomboïdes, avec l'artère scapulaire dorsale",
+   "moteur": {
+    "texte": "Les rhomboïdes, qui rapprochent la scapula du rachis ; l'élévateur de la scapula reçoit aussi une part de C3-C4",
+    "muscles": [
+     "grand-rhomboide",
+     "petit-rhomboide",
+     "elevateur-scapula"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Les rhomboïdes ne retiennent plus la scapula : elle s'écarte légèrement du rachis, parfois avec un décollement discret de son bord médial, et une douleur le long de ce bord. Cause : compression dans le scalène moyen, chez les sujets aux bras souvent levés",
+   "test": "Mains sur les hanches, pousser les coudes en arrière contre résistance : les rhomboïdes se contractent entre la scapula et le rachis",
+   "memo": "Dorsal de la scapula : il perce le scalène et va tenir la scapula contre le dos",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-nerf-dorsal-scapula",
+    "statpearls-nerfs",
+    "wustl-neuromuscular"
+   ],
+   "divergences": "Racines : C5 chez Gray et Kenhub ; C4-C5 chez WUSTL. L'élévateur de la scapula dépend de ce nerf et des rameaux cervicaux C3-C4 (Kenhub), alors que Gray ne cite que les rhomboïdes"
+  },
+  {
+   "id": "nerf-pectoral-medial",
+   "resume": "Le nerf du petit pectoral : il naît du faisceau médial, perfore le petit pectoral et atteint aussi le grand pectoral.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Faisceau médial du plexus brachial",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "trajet": "Naît du faisceau médial derrière l'artère axillaire, passe en avant d'elle, reçoit un filet du nerf pectoral latéral, innerve le petit pectoral puis le traverse pour atteindre le grand pectoral",
+   "moteur": {
+    "texte": "Le petit pectoral et la partie sterno-costale du grand pectoral",
+    "muscles": [
+     "petit-pectoral",
+     "grand-pectoral"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Atteinte isolée rare : le petit pectoral et la partie basse du grand pectoral s'affaiblissent. Elle accompagne les lésions du faisceau médial ou du tronc inférieur (Klumpke)",
+   "test": null,
+   "memo": "Le médial traverse le petit pectoral avant de nourrir le grand ; le latéral va droit au grand pectoral",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-plexus",
+    "teachmeanatomy-plexus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-subclavier",
+   "resume": "Le plus petit des nerfs collatéraux : un filet du tronc supérieur pour le muscle subclavier.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "tronc-superieur-du-plexus-brachial",
+    "texte": "Tronc supérieur du plexus brachial, à la jonction des racines C5 et C6",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "trajet": "Naît au bord latéral du scalène moyen, descend en avant du plexus et de l'artère subclavière jusqu'au subclavier ; un filet inconstant rejoint le nerf phrénique (nerf phrénique accessoire)",
+   "moteur": {
+    "texte": "Le subclavier, tendu sous la clavicule",
+    "muscles": [
+     "subclavier"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Sans conséquence notable : le subclavier ne fait qu'abaisser et stabiliser la clavicule. Il est touché avec les autres nerfs du tronc supérieur dans la paralysie de Duchenne-Erb (C5-C6)",
+   "test": null,
+   "memo": "Subclavier : un nerf, un muscle, sous la clavicule",
+   "variantes": "Une partie des fibres de C5 passe parfois par le nerf phrénique avant d'atteindre le subclavier",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-plexus"
+   ],
+   "divergences": "Le nerf est rattaché à la jonction C5-C6 (Gray) ou au tronc supérieur (TeachMeAnatomy, StatPearls) ; ce sont les mêmes fibres"
+  },
+  {
+   "id": "nerf-subscapulaire-superieur",
+   "resume": "Le nerf de la partie haute du subscapulaire, né du faisceau postérieur.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "faisceau-posterieur-du-plexus-brachial",
+    "texte": "Faisceau postérieur du plexus brachial",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "trajet": "Naît du faisceau postérieur près du sommet de l'aisselle, descend sur la paroi postérieure de l'aisselle et gagne la partie haute du subscapulaire",
+   "moteur": {
+    "texte": "Le subscapulaire (sa partie haute)",
+    "muscles": [
+     "subscapulaire"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Rotation médiale de l'épaule affaiblie. Atteinte rarement isolée : elle accompagne celles du faisceau postérieur ou la chirurgie de l'épaule",
+   "test": "Test de décollement de la main du dos (lift-off) pour le subscapulaire",
+   "memo": "Le supérieur sert le haut du subscapulaire ; l'inférieur sert le bas et le grand rond",
+   "variantes": "Il existe souvent deux ou trois rameaux au lieu d'un seul",
+   "sources": [
+    "gray1918",
+    "statpearls-plexus",
+    "teachmeanatomy-plexus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tronc-inferieur-du-plexus-brachial",
+   "resume": "Le tronc bas du plexus : l'union de C8 et T1, qui passe sur la première côte.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "racines-du-plexus-brachial",
+    "texte": "Union des racines C8 et T1, derrière le scalène antérieur",
+    "racines": [
+     "C8",
+     "T1"
+    ]
+   },
+   "trajet": "Monte sur la première côte, derrière l'artère subclavière, puis se divise derrière la clavicule en une division antérieure et une division postérieure",
+   "branches": [
+    {
+     "nerf": "division-anterieure-du-tronc-inferieur-du-plexus-brachial",
+     "texte": "Division antérieure"
+    },
+    {
+     "nerf": "division-posterieure-du-tronc-inferieur-du-plexus-brachial",
+     "texte": "Division postérieure"
+    }
+   ],
+   "moteur": null,
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Paralysie basse de Klumpke (C8-T1) : atteinte des petits muscles de la main et de l'ulnaire, main en griffe, perte de sensibilité du bord médial de l'avant-bras et de la main ; un syndrome de Horner s'y ajoute parfois. Causes : traction du bras vers le haut, défilé cervico-thoracique",
+   "test": null,
+   "clinique": "Le tronc croise la première côte : une côte cervicale ou une compression du défilé thoracique le comprime en premier",
+   "memo": "Le tronc inférieur, c'est C8-T1 : la main, la griffe de Klumpke",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-plexus",
+    "statpearls-nerfs-cervicaux"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tronc-moyen-du-plexus-brachial",
+   "resume": "Le tronc du milieu : le prolongement de la seule racine C7.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "racines-du-plexus-brachial",
+    "texte": "Prolongement de la racine C7",
+    "racines": [
+     "C7"
+    ]
+   },
+   "trajet": "Passe sur la première côte, entre les scalènes, au-dessus de l'artère subclavière, et se divise derrière la clavicule en une division antérieure et une division postérieure",
+   "branches": [
+    {
+     "nerf": "division-anterieure-du-tronc-moyen-du-plexus-brachial",
+     "texte": "Division antérieure"
+    },
+    {
+     "nerf": "division-posterieure-du-tronc-moyen-du-plexus-brachial",
+     "texte": "Division postérieure"
+    }
+   ],
+   "moteur": null,
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Rarement atteint seul. Dans une lésion étendue C5-C7, s'ajoutent l'extension du coude (triceps), du poignet et des doigts aux déficits de la paralysie de Duchenne-Erb ; la sensibilité du majeur est modifiée",
+   "test": "Extension du coude contre résistance (triceps) et sensibilité du majeur : explorent C7",
+   "clinique": "Une hernie discale C6-C7 comprime la racine C7 ; le réflexe tricipital explore ce niveau",
+   "memo": "Le tronc moyen est C7 seul : le triceps et l'extension, le majeur pour la peau",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-plexus",
+    "statpearls-nerfs-cervicaux"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tronc-superieur-du-plexus-brachial",
+   "resume": "Le tronc haut du plexus : l'union de C5 et C6, point de départ du suprascapulaire et du nerf du subclavier.",
+   "sorte": "plexus",
+   "origine": {
+    "nerf": "racines-du-plexus-brachial",
+    "texte": "Union des racines C5 et C6, au bord latéral du scalène moyen",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "trajet": "Descend dans la région cervicale latérale, au-dessus de la clavicule, puis se divise en une division antérieure et une division postérieure derrière la clavicule",
+   "branches": [
+    {
+     "nerf": "nerf-suprascapulaire",
+     "texte": "Nerf suprascapulaire"
+    },
+    {
+     "nerf": "nerf-subclavier",
+     "texte": "Nerf du subclavier"
+    },
+    {
+     "nerf": "division-anterieure-du-tronc-superieur-du-plexus-brachial",
+     "texte": "Division antérieure"
+    },
+    {
+     "nerf": "division-posterieure-du-tronc-superieur-du-plexus-brachial",
+     "texte": "Division postérieure"
+    }
+   ],
+   "moteur": {
+    "texte": "Par ses collatérales : supra-épineux, infra-épineux et subclavier ; ses divisions fournissent ensuite le deltoïde, le biceps, le brachial et les autres muscles de C5-C6",
+    "muscles": [
+     "supra-epineux",
+     "infra-epineux",
+     "subclavier"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Paralysie haute de Duchenne-Erb (C5-C6) : bras pendant en rotation médiale, coude étendu, avant-bras en pronation (main du serveur) ; perte de l'abduction, de la rotation latérale et de la flexion du coude, anesthésie du bord latéral du membre. Cause : étirement à la naissance ou chute sur l'épaule",
+   "test": null,
+   "clinique": "La lésion peut aussi provenir d'une hernie discale cervicale ou d'une traction qui écarte la tête de l'épaule ; le point où les racines C5 et C6 s'unissent est dit point d'Erb",
+   "memo": "Le tronc supérieur, c'est C5 et C6 : abduction et flexion du coude, perdues dans Erb",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-plexus",
+    "statpearls-plexus",
+    "statpearls-nerfs-cervicaux"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branche-communiquante-du-nerf-median-avec-le-nerf-ulnaire",
+   "resume": "Un petit rameau inconstant qui relie le médian et l'ulnaire dans la paume.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "branches-digitales-palmaires-communes-du-nerf-ulnaire",
+    "texte": "Anastomose entre le nerf digital commun de l'ulnaire et le nerf digital commun du médian"
+   },
+   "trajet": "Dans la paume, un rameau du nerf digital commun de l'ulnaire rejoint le nerf digital commun du médian pour le troisième espace",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Fibres sensitives échangées entre les territoires du médian et de l'ulnaire, au niveau de l'annulaire"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Sans conséquence clinique propre ; il explique que la limite entre les territoires du médian et de l'ulnaire sur l'annulaire n'est pas toujours nette",
+   "test": null,
+   "memo": "Entre médian et ulnaire, un petit pont dans la paume, pour l'annulaire",
+   "variantes": "Inconstant : il manque chez une partie des personnes",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-ulnaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branche-dorsale-du-nerf-ulnaire",
+   "resume": "La branche cutanée de l'ulnaire pour le dos de la main : elle quitte le tronc à quelques centimètres du poignet.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-ulnaire",
+    "texte": "Branche du nerf ulnaire, à environ 5 cm au-dessus du poignet"
+   },
+   "trajet": "Naît à environ 5 cm au-dessus du poignet, passe sous le fléchisseur ulnaire du carpe, perfore le fascia et longe le bord médial du poignet et du dos de la main où elle se divise en nerfs digitaux dorsaux",
+   "branches": [
+    {
+     "nerf": "branches-digitales-dorsales-du-nerf-ulnaire",
+     "texte": "Nerfs digitaux dorsaux"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau du bord médial du dos de la main et face dorsale du petit doigt et de la moitié médiale de l'annulaire"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Hypoesthésie du dos de la main côté ulnaire et du dos du petit doigt et de la moitié de l'annulaire. Atteinte dans les lésions du coude ou de l'avant-bras ; épargnée par une lésion du poignet, car elle naît plus haut",
+   "test": "Toucher et piquer le dos du petit doigt et le bord ulnaire du dos de la main",
+   "memo": "Dorsale : elle part avant le poignet, donc elle échappe aux lésions du poignet",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-ulnaire",
+    "statpearls-plexus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branche-profonde-du-nerf-ulnaire",
+   "resume": "La branche motrice de l'ulnaire dans la main : elle suit l'arcade palmaire profonde et commande presque tous les muscles intrinsèques.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-ulnaire",
+    "texte": "Branche terminale profonde du nerf ulnaire, à l'entrée du canal ulnaire"
+   },
+   "orifices": [
+    "Canal ulnaire (loge de Guyon)"
+   ],
+   "trajet": "Se détache en dehors du pisiforme avec l'artère ulnaire profonde, contourne le crochet de l'hamatum, passe entre l'abducteur et le fléchisseur du petit doigt, perfore l'opposant, puis suit l'arcade palmaire profonde sous les tendons fléchisseurs en donnant ses rameaux",
+   "moteur": {
+    "texte": "Les trois muscles du petit doigt, tous les interosseux, les deux lombricaux médiaux, l'adducteur du pouce et le chef profond du court fléchisseur du pouce",
+    "muscles": [
+     "abducteur-petit-doigt",
+     "flechisseur-du-petit-doigt-de-la-main",
+     "muscle-opposant-du-petit-doigt",
+     "interosseux-dorsaux",
+     "interosseux-palmaires",
+     "lombricaux-de-la-main",
+     "adducteur-pouce",
+     "court-flechisseur-pouce"
+    ]
+   },
+   "sensitif": {
+    "texte": "Pas de peau : filets articulaires pour le poignet"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Fracture du crochet de l'hamatum ou lésion au poignet : paralysie des muscles intrinsèques ulnaires, griffe, perte de l'écartement et du rapprochement des doigts, signe de Froment, fonte de l'hypothénar, sensibilité intacte",
+   "test": "Écarter et rapprocher les doigts contre résistance ; tenir une feuille entre pouce et index (signe de Froment) ; opposition du petit doigt",
+   "clinique": "Sans les interosseux ni les lombricaux médiaux, les doigts s'hyperétendent à leur base et plient à leur extrémité : c'est la griffe",
+   "memo": "La branche profonde plonge dans la paume avec l'arcade : motricité pure, griffe si elle manque",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-ulnaire",
+    "statpearls-plexus",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branche-superficielle-du-nerf-ulnaire",
+   "resume": "La branche sensitive de l'ulnaire dans la paume : elle sent le petit doigt et commande le palmaire court.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-ulnaire",
+    "texte": "Branche terminale superficielle du nerf ulnaire, à l'entrée du canal ulnaire"
+   },
+   "orifices": [
+    "Canal ulnaire (loge de Guyon)"
+   ],
+   "trajet": "Naît à l'entrée de la loge de Guyon, en dehors du pisiforme, croise le rétinaculum des fléchisseurs en dedans de l'artère ulnaire, innerve le palmaire court et donne un nerf digital propre au bord ulnaire du petit doigt et un nerf digital commun",
+   "branches": [
+    {
+     "nerf": "branches-digitales-palmaires-communes-du-nerf-ulnaire",
+     "texte": "Nerf digital palmaire commun"
+    },
+    {
+     "nerf": "branches-digitales-palmaires-propres-du-nerf-ulnaire",
+     "texte": "Nerfs digitaux palmaires propres"
+    },
+    {
+     "nerf": "branche-communiquante-du-nerf-median-avec-le-nerf-ulnaire",
+     "texte": "Rameau communicant avec le médian, inconstant"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la face palmaire du petit doigt et de la moitié médiale de l'annulaire ; palmaire court, muscle cutané de l'hypothénar"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Perte de sensibilité de la face palmaire du petit doigt et de la moitié de l'annulaire, sans griffe ni faiblesse intrinsèque si elle est seule en cause ; le palmaire court, petit muscle cutané, n'a pas d'intérêt clinique",
+   "test": "Sensibilité de la pulpe du petit doigt et du côté médial de l'annulaire",
+   "memo": "La branche superficielle est la voie des sensations : petit doigt et moitié de l'annulaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-ulnaire",
+    "statpearls-plexus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branches-digitales-dorsales-du-nerf-radial",
+   "resume": "Les nerfs des faces dorsales du pouce, de l'index, du majeur et de la moitié de l'annulaire, jusqu'à la première articulation interphalangienne.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "branche-superficielle-du-nerf-radial",
+    "texte": "Division de la branche superficielle du nerf radial sur le dos de la main"
+   },
+   "trajet": "La branche latérale va au côté radial du pouce et à la peau du thénar ; la branche médiale donne le côté ulnaire du pouce, le côté radial de l'index, puis les côtés voisins de l'index et du majeur, et du majeur et de l'annulaire (avec un filet de l'ulnaire)",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Face dorsale des phalanges proximales du pouce, de l'index, du majeur et de la moitié latérale de l'annulaire"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Perte de sensibilité sur le dos des phalanges proximales du pouce, de l'index, du majeur et d'une moitié de l'annulaire, souvent à la suite d'une plaie ou d'un névrome au poignet",
+   "test": null,
+   "memo": "Le radial pour le dos, le médian pour la pulpe : l'un des deux fait toujours la face de chaque doigt",
+   "variantes": "Le territoire du radial et celui de l'ulnaire se partagent l'annulaire de façon variable",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-radial",
+    "kenhub-radial"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branches-digitales-dorsales-du-nerf-ulnaire",
+   "resume": "Les nerfs des faces dorsales du petit doigt et de la moitié médiale de l'annulaire.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "branche-dorsale-du-nerf-ulnaire",
+    "texte": "Division de la branche dorsale du nerf ulnaire, sur le dos de la main"
+   },
+   "trajet": "Un nerf va au bord ulnaire du petit doigt, un autre aux côtés voisins du petit doigt et de l'annulaire ; le territoire de l'annulaire est partagé avec un filet du radial",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Face dorsale du petit doigt et de la moitié médiale de l'annulaire (jusqu'à la base de la phalange distale pour le petit doigt, de la phalange moyenne pour l'annulaire)"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Hypoesthésie du dos du petit doigt et de la moitié de l'annulaire, jusqu'à la base de la phalange distale du petit doigt et de la phalange moyenne de l'annulaire ; au-delà, la peau dépend des nerfs palmaires",
+   "test": null,
+   "memo": "Dorsaux ulnaires : le dos du petit doigt et de la moitié de l'annulaire, jusqu'au milieu du doigt",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-ulnaire",
+    "statpearls-plexus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branches-digitales-palmaires-communes-du-nerf-median",
+   "resume": "Les nerfs de la paume qui se divisent en nerfs digitaux : le médian s'y sépare en un contingent latéral et un contingent médial.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-median",
+    "texte": "Terminaison du nerf médian dans la paume, après le canal carpien"
+   },
+   "trajet": "Le contingent latéral donne la branche récurrente du thénar et les nerfs du pouce et du bord radial de l'index ; le contingent médial donne deux nerfs communs, l'un pour les côtés voisins de l'index et du majeur, l'autre pour ceux du majeur et de l'annulaire, qui s'anastomose avec l'ulnaire",
+   "branches": [
+    {
+     "nerf": "branche-communiquante-du-nerf-median-avec-le-nerf-ulnaire",
+     "texte": "Branche communicante avec le nerf ulnaire, inconstante"
+    },
+    {
+     "nerf": "branches-digitales-palmaires-propres-du-nerf-median",
+     "texte": "Nerfs digitaux palmaires propres"
+    }
+   ],
+   "moteur": {
+    "texte": "Les deux lombricaux latéraux, par des rameaux nés des nerfs digitaux communs ; la branche récurrente innerve les muscles du thénar",
+    "muscles": [
+     "lombricaux-de-la-main"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau de la paume et face palmaire des trois premiers doigts et demi, par les nerfs digitaux propres qui en naissent"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Plaie de la paume : engourdissement des doigts correspondants ; si la branche récurrente est coupée, l'opposition du pouce est perdue. Les deux premiers lombricaux sont paralysés",
+   "test": null,
+   "memo": "Dans la paume, le médian se divise : un rameau récurrent pour le thénar, des nerfs communs pour les doigts",
+   "variantes": "Le troisième lombrical reçoit parfois un rameau du médian",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-median",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branches-digitales-palmaires-communes-du-nerf-ulnaire",
+   "resume": "Le nerf digital commun de l'ulnaire : un tronc de la paume qui se divise pour le petit doigt et l'annulaire.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "branche-superficielle-du-nerf-ulnaire",
+    "texte": "Branche de la branche superficielle du nerf ulnaire, dans la paume"
+   },
+   "trajet": "Naît de la branche superficielle de l'ulnaire, envoie un rameau communicant au médian, puis se divise en deux nerfs digitaux propres pour les côtés voisins du petit doigt et de l'annulaire",
+   "branches": [
+    {
+     "nerf": "branche-communiquante-du-nerf-median-avec-le-nerf-ulnaire",
+     "texte": "Rameau communicant avec le médian"
+    },
+    {
+     "nerf": "branches-digitales-palmaires-propres-du-nerf-ulnaire",
+     "texte": "Nerfs digitaux palmaires propres"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la face palmaire du petit doigt et de la moitié médiale de l'annulaire, par les nerfs propres qui en naissent"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Plaie de la paume : engourdissement du petit doigt et de la moitié de l'annulaire du côté lésé, sans paralysie car ce nerf est sensitif",
+   "test": null,
+   "memo": "Le commun de l'ulnaire dans la paume se divise pour les deux derniers doigts",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-ulnaire",
+    "statpearls-plexus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branches-digitales-palmaires-propres-du-nerf-median",
+   "resume": "Les nerfs des faces palmaires du pouce, de l'index, du majeur et d'une moitié de l'annulaire : ils sentent aussi la pulpe et le lit de l'ongle.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "branches-digitales-palmaires-communes-du-nerf-median",
+    "texte": "Division des nerfs digitaux palmaires communs du médian, à la base des doigts"
+   },
+   "trajet": "Deux nerfs pour le pouce, deux pour l'index, deux pour le majeur et un pour le côté radial de l'annulaire ; chacun longe le bord du doigt contre le tendon fléchisseur et donne un rameau dorsal près de la base de la première phalange, pour la peau dorsale des phalanges moyenne et distale",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Face palmaire du pouce, de l'index, du majeur et de la moitié latérale de l'annulaire, avec la pulpe et le lit de l'ongle de ces doigts"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Section d'un nerf digital : perte de sensibilité du côté correspondant du doigt, risque de brûlures et de blessures non ressenties dans la pince. Plaie fréquente des doigts",
+   "test": "Discrimination de deux points sur la pulpe des doigts : le seuil normal est de quelques millimètres au bout du doigt",
+   "memo": "Le médian prend les pulpes : pouce, index, majeur et la moitié de l'annulaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-median",
+    "statpearls-nerfs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "branches-digitales-palmaires-propres-du-nerf-ulnaire",
+   "resume": "Les nerfs des faces palmaires du petit doigt et du côté ulnaire de l'annulaire, avec la pulpe et le lit de l'ongle.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "branches-digitales-palmaires-communes-du-nerf-ulnaire",
+    "texte": "Division du nerf digital commun de l'ulnaire, à la base des doigts"
+   },
+   "trajet": "Trois nerfs : l'un pour le bord ulnaire du petit doigt, deux issus du nerf commun pour le bord radial du petit doigt et le bord ulnaire de l'annulaire ; chacun longe le doigt contre les tendons fléchisseurs",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Face palmaire du petit doigt et du côté médial de l'annulaire, avec la pulpe et le lit de l'ongle"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Section d'un nerf digital : perte de sensibilité du côté du doigt correspondant, risque de blessures non ressenties. Plaie fréquente",
+   "test": "Discrimination de deux points sur la pulpe du petit doigt",
+   "memo": "L'ulnaire prend les pulpes du petit doigt et de la moitié de l'annulaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-ulnaire",
+    "statpearls-plexus"
+   ],
+   "divergences": null
+  }
+ ]
+}

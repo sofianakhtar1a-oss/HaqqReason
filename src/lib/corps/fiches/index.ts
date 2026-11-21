@@ -14,6 +14,12 @@ const CHARGEURS: Record<CoucheAFiches, () => Promise<unknown>> = {
   artere: () => import("./artere.json").then((m) => m.default),
   os: () => import("./os.json").then((m) => m.default),
   tendon: () => import("./tendon.json").then((m) => m.default),
+  ligament: () => import("./ligament.json").then((m) => m.default),
+  veine: () => import("./veine.json").then((m) => m.default),
+  nerf: () => import("./nerf.json").then((m) => m.default),
+  viscere: () => import("./viscere.json").then((m) => m.default),
+  encephale: () => import("./encephale.json").then((m) => m.default),
+  lymphe: () => import("./lymphe.json").then((m) => m.default),
 };
 export const COUCHES_A_FICHES = Object.keys(CHARGEURS) as CoucheAFiches[];
 export const aDesFiches = (couche: string): couche is CoucheAFiches => couche in CHARGEURS;

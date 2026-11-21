@@ -1,0 +1,922 @@
+{
+ "lot": "viscere-tronc",
+ "couche": "viscere",
+ "structures": [
+  {
+   "id": "canal-pancreatique",
+   "nom": "Canal pancréatique",
+   "latin": "Ductus pancreaticus",
+   "anglais": "Pancreatic duct",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Canal pancréatique",
+   "ta2": "3129"
+  },
+  {
+   "id": "canal-pancreatique-accessoire",
+   "nom": "Canal pancréatique accessoire",
+   "latin": "Ductus pancreaticus accessorius",
+   "anglais": "Accessory pancreatic duct",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Canal pancréatique accessoire",
+   "ta2": "3131"
+  },
+  {
+   "id": "colon-ascendant",
+   "nom": "Côlon ascendant",
+   "latin": "Colon ascendens",
+   "anglais": "Ascending colon",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Côlon ascendant",
+   "ta2": "2982"
+  },
+  {
+   "id": "colon-transverse",
+   "nom": "Côlon transverse",
+   "latin": "Colon transversum",
+   "anglais": "Transverse colon",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Côlon transverse",
+   "ta2": "2984"
+  },
+  {
+   "id": "estomac",
+   "nom": "Estomac",
+   "latin": "Gaster",
+   "anglais": "Stomach",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Estomac",
+   "ta2": "2901"
+  },
+  {
+   "id": "foie",
+   "nom": "Foie",
+   "latin": "Hepar",
+   "anglais": "Liver",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Foie",
+   "ta2": "3023"
+  },
+  {
+   "id": "glande-surrenale",
+   "nom": "Glande surrénale",
+   "latin": "Glandula suprarenalis",
+   "anglais": "Suprarenal gland",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Glande surrénale",
+   "ta2": "3874"
+  },
+  {
+   "id": "grand-omentum",
+   "nom": "Grand omentum",
+   "latin": "Omentum maius",
+   "anglais": "Greater omentum",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Grand omentum",
+   "ta2": "3757",
+   "nature": "enveloppe"
+  },
+  {
+   "id": "muqueuse-de-l-estomac",
+   "nom": "Muqueuse de l'estomac",
+   "latin": "Tunica mucosa gastris",
+   "anglais": "Mucosa of stomach",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Muqueuse de l'estomac",
+   "ta2": "2914"
+  },
+  {
+   "id": "mesocolon",
+   "nom": "Mésocôlon",
+   "latin": "Mesocolon",
+   "anglais": "Mesocolon",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Mésocôlon",
+   "ta2": "3744",
+   "nature": "enveloppe"
+  },
+  {
+   "id": "segment-anterolateral-droit-vi",
+   "nom": "Segment antérolatéral droit (VI)",
+   "latin": "Segmentum anterius laterale dextrum hepatis (VI)",
+   "anglais": "Anterior lateral segment of liver (VI)",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Segment antérolatéral droit (VI)",
+   "ta2": "3079"
+  },
+  {
+   "id": "segment-anterolateral-gauche-du-foie-iii",
+   "nom": "Segment antérolatéral gauche du foie (III)",
+   "latin": "Segmentum anterius laterale sinistrum hepatis (III)",
+   "anglais": "Left anterior lateral segment of liver (III)",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Segment antérolatéral gauche du foie (III)",
+   "ta2": "3069"
+  },
+  {
+   "id": "segment-anteromedial-droit-du-foie-v",
+   "nom": "Segment antéromédial droit du foie (V)",
+   "latin": "Segmentum anterius mediale dextrum hepatis (V)",
+   "anglais": "Anterior medial segment of liver (V)",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Segment antéromédial droit du foie (V)",
+   "ta2": "3076"
+  },
+  {
+   "id": "segment-medial-gauche-du-foie-iv",
+   "nom": "Segment médial gauche du foie (IV)",
+   "latin": "Segmentum mediale sinistrum hepatis (IV)",
+   "anglais": "Left medial segment of liver (IV)",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Segment médial gauche du foie (IV)",
+   "ta2": "3071"
+  },
+  {
+   "id": "segment-posterieur-du-foie-i",
+   "nom": "Segment postérieur du foie (I)",
+   "latin": "Segmentum posterius hepatis (I)",
+   "anglais": "Posterior segment of liver (I)",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Segment postérieur du foie (I)",
+   "ta2": "3073"
+  },
+  {
+   "id": "tenia-libre",
+   "nom": "Ténia libre",
+   "latin": "Taenia libera",
+   "anglais": "Free taenia",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Ténia libre",
+   "ta2": "2996"
+  },
+  {
+   "id": "tenia-mesocolique",
+   "nom": "Ténia mésocolique",
+   "latin": "Taenia mesocolica",
+   "anglais": "Mesocolic taenia",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Ténia mésocolique",
+   "ta2": "2994"
+  },
+  {
+   "id": "tenia-omental",
+   "nom": "Ténia omental",
+   "latin": "Taenia omentalis",
+   "anglais": "Omental taenia",
+   "region": "abdomen",
+   "rang": 2,
+   "officiel": "Ténia omental",
+   "ta2": "2995"
+  },
+  {
+   "id": "colon-descendant",
+   "nom": "Côlon descendant",
+   "latin": "Colon descendens",
+   "anglais": "Descending colon",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Côlon descendant",
+   "ta2": "2986"
+  },
+  {
+   "id": "jejunum",
+   "nom": "Jéjunum",
+   "latin": "Jejunum",
+   "anglais": "Jejunum",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Jéjunum",
+   "ta2": "2958"
+  },
+  {
+   "id": "uretere",
+   "nom": "Uretère",
+   "latin": "Ureter",
+   "anglais": "Ureter",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Uretère",
+   "ta2": "3394"
+  },
+  {
+   "id": "vessie-urinaire",
+   "nom": "Vessie urinaire",
+   "latin": "Vesica urinaria",
+   "anglais": "Urinary bladder",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Vessie urinaire",
+   "ta2": "3401"
+  },
+  {
+   "id": "atrium-droit",
+   "nom": "Atrium droit",
+   "latin": "Atrium dextrum",
+   "anglais": "Right atrium",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Atrium droit",
+   "ta2": "4022",
+   "nature": "coeur"
+  },
+  {
+   "id": "atrium-gauche",
+   "nom": "Atrium gauche",
+   "latin": "Atrium sinistrum",
+   "anglais": "Left atrium",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Atrium gauche",
+   "ta2": "4054",
+   "nature": "coeur"
+  },
+  {
+   "id": "bronche-segmentaire-apicale-du-poumon-droit-bi",
+   "nom": "Bronche segmentaire apicale du poumon droit (BI)",
+   "latin": "Bronchus segmentalis apicalis pulmonis dextri (BI)",
+   "anglais": "Apical segmental bronchus of right lung (BI)",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Bronche segmentaire apicale du poumon droit (BI)",
+   "ta2": "3239"
+  },
+  {
+   "id": "bronche-segmentaire-apicopost-poumon-gauche-bi-bii",
+   "nom": "Bronche segmentaire apicopost.-poumon gauche (BI+BII)",
+   "latin": "Bronchus segmentalis apicopost. pulmonis sinistri (BI+BII)",
+   "anglais": "Apicoposterior segmental bronchus of left lung (BI+BII)",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Bronche segmentaire apicopost.-poumon gauche (BI+BII)",
+   "ta2": "3254"
+  },
+  {
+   "id": "bronche-segmentaire-superieure-du-poumon-droit-bvi",
+   "nom": "Bronche segmentaire supérieure du poumon droit (BVI)",
+   "latin": "Bronchus segmentalis superior pulmonis dextri (BVI)",
+   "anglais": "Superior segmental bronchus of right lung (BVI)",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Bronche segmentaire supérieure du poumon droit (BVI)",
+   "ta2": "3247"
+  },
+  {
+   "id": "cuspide-infefieure-de-la-valve-atrioventriculaire-droite",
+   "nom": "Cuspide inféfieure de la valve atrioventriculaire droite",
+   "latin": "Cuspis inferior valvae atrioventricularis dextrae",
+   "anglais": "Inferior leaflet of right atrioventricular valve",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Cuspide inféfieure de la valve atrioventriculaire droite",
+   "ta2": "3985",
+   "nature": "coeur"
+  },
+  {
+   "id": "cuspide-posterieure-de-la-valve-atrioventriculaire-gauche",
+   "nom": "Cuspide postérieure de la valve atrioventriculaire gauche",
+   "latin": "Cuspis posterior valvae atrioventricularis sinistrae",
+   "anglais": "Posterior leaflet of left atrioventricular valve",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Cuspide postérieure de la valve atrioventriculaire gauche",
+   "ta2": "3990",
+   "nature": "coeur"
+  },
+  {
+   "id": "cuspide-septale-de-la-valve-atrioventriculaire-droite",
+   "nom": "Cuspide septale de la valve atrioventriculaire droite",
+   "latin": "Cuspis septalis valvae atrioventricularis dextrae",
+   "anglais": "Septal leaflet of right atrioventricular valve",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Cuspide septale de la valve atrioventriculaire droite",
+   "ta2": "3986",
+   "nature": "coeur"
+  },
+  {
+   "id": "lobe-droit-du-thymus",
+   "nom": "Lobe droit du thymus",
+   "latin": "Lobus thymi dextri",
+   "anglais": "Right lobe of thymus",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Lobe droit du thymus",
+   "ta2": "7223",
+   "nature": "lymphoide"
+  },
+  {
+   "id": "lobe-gauche-du-thymus",
+   "nom": "Lobe gauche du thymus",
+   "latin": "Lobus thymi sinistri",
+   "anglais": "Left lobe of thymus",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Lobe gauche du thymus",
+   "ta2": "7224",
+   "nature": "lymphoide"
+  },
+  {
+   "id": "lobe-inferieur-du-poumon-droit",
+   "nom": "Lobe inférieur du poumon droit",
+   "latin": "Lobus inferior pulmonis dextri",
+   "anglais": "Inferior lobe of right lung",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Lobe inférieur du poumon droit",
+   "ta2": "3293"
+  },
+  {
+   "id": "lobe-inferieur-du-poumon-gauche",
+   "nom": "Lobe inférieur du poumon gauche",
+   "latin": "Lobus inferior pulmonis sinistri",
+   "anglais": "Inferior lobe of left lung",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Lobe inférieur du poumon gauche",
+   "ta2": "3308"
+  },
+  {
+   "id": "lobe-moyen-du-poumon-droit",
+   "nom": "Lobe moyen du poumon droit",
+   "latin": "Lobus medius pulmonis dextri",
+   "anglais": "Middle lobe of right lung",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Lobe moyen du poumon droit",
+   "ta2": "3289"
+  },
+  {
+   "id": "lobe-superieur-du-poumon-droit",
+   "nom": "Lobe supérieur du poumon droit",
+   "latin": "Lobus superior pulmonis dextri",
+   "anglais": "Superior lobe of right lung",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Lobe supérieur du poumon droit",
+   "ta2": "3284"
+  },
+  {
+   "id": "lobe-superieur-du-poumon-gauche",
+   "nom": "Lobe supérieur du poumon gauche",
+   "latin": "Lobus superior pulmonis sinistri",
+   "anglais": "Superior lobe of left lung",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Lobe supérieur du poumon gauche",
+   "ta2": "3300"
+  },
+  {
+   "id": "plevre",
+   "nom": "Plèvre",
+   "latin": "Pleura",
+   "anglais": "Pleura",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Plèvre",
+   "ta2": "3322",
+   "nature": "enveloppe"
+  },
+  {
+   "id": "segment-posteromedial-droit-du-foie-viii",
+   "nom": "Segment postéromédial droit du foie (VIII)",
+   "latin": "Segmentum posterius mediale dextrum hepatis (VIII)",
+   "anglais": "Posterior medial segment of liver (VIII)",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Segment postéromédial droit du foie (VIII)",
+   "ta2": "3077"
+  },
+  {
+   "id": "ventricule-droit",
+   "nom": "Ventricule droit",
+   "latin": "Ventriculus dexter",
+   "anglais": "Right ventricle",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Ventricule droit",
+   "ta2": "4038",
+   "nature": "coeur"
+  },
+  {
+   "id": "ventricule-gauche",
+   "nom": "Ventricule gauche",
+   "latin": "Ventriculus sinister",
+   "anglais": "Left ventricle",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Ventricule gauche",
+   "ta2": "4062",
+   "nature": "coeur"
+  },
+  {
+   "id": "oesophage",
+   "nom": "Œsophage",
+   "latin": "Oesophagus",
+   "anglais": "Oesophagus",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Œsophage",
+   "ta2": "2887"
+  },
+  {
+   "id": "canal-biliaire",
+   "nom": "Canal biliaire",
+   "latin": "Ductus biliaris",
+   "anglais": "Bile duct",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Canal biliaire",
+   "ta2": "3103"
+  },
+  {
+   "id": "duodenum",
+   "nom": "Duodénum",
+   "latin": "Duodenum",
+   "anglais": "Duodenum",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Duodénum",
+   "ta2": "2944"
+  },
+  {
+   "id": "pancreas",
+   "nom": "Pancréas",
+   "latin": "Pancreas",
+   "anglais": "Pancreas",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Pancréas",
+   "ta2": "3114"
+  },
+  {
+   "id": "petit-omentum",
+   "nom": "Petit omentum",
+   "latin": "Omentum minus",
+   "anglais": "Lesser omentum",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Petit omentum",
+   "ta2": "3750",
+   "nature": "enveloppe"
+  },
+  {
+   "id": "rate",
+   "nom": "Rate",
+   "latin": "Lien",
+   "anglais": "Spleen",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Rate",
+   "ta2": "5159",
+   "nature": "lymphoide"
+  },
+  {
+   "id": "segment-posterolateral-droit-vii",
+   "nom": "Segment postérolatéral droit (VII)",
+   "latin": "Segmentum posterius laterale dextrum hepatis (VII)",
+   "anglais": "Posterior lateral segment of liver (VII)",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Segment postérolatéral droit (VII)",
+   "ta2": "3080"
+  },
+  {
+   "id": "vesicule-biliaire",
+   "nom": "Vésicule biliaire",
+   "latin": "Vesica biliaris",
+   "anglais": "Gallbladder",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Vésicule biliaire",
+   "ta2": "3081"
+  },
+  {
+   "id": "appendice-vermiforme",
+   "nom": "Appendice vermiforme",
+   "latin": "Appendix vermiformis",
+   "anglais": "Vermiform appendix",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Appendice vermiforme",
+   "ta2": "2976"
+  },
+  {
+   "id": "colon-sigmoide",
+   "nom": "Côlon sigmoïde",
+   "latin": "Colon sigmoideum",
+   "anglais": "Sigmoid colon",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Côlon sigmoïde",
+   "ta2": "2987"
+  },
+  {
+   "id": "meso-appendice",
+   "nom": "Méso-appendice",
+   "latin": "Mesoappendix",
+   "anglais": "Meso-appendix",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Méso-appendice",
+   "ta2": "3749",
+   "nature": "enveloppe"
+  },
+  {
+   "id": "prostate",
+   "nom": "Prostate",
+   "latin": "Prostata",
+   "anglais": "Prostate",
+   "region": "bassin",
+   "rang": 3,
+   "officiel": "Prostate",
+   "ta2": "3637"
+  },
+  {
+   "id": "bronche-intermediaire",
+   "nom": "Bronche intermédiaire",
+   "latin": "Bronchus intermedius",
+   "anglais": "Intermediate bronchus",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche intermédiaire",
+   "ta2": "3242"
+  },
+  {
+   "id": "bronche-lingulaire-inferieure-du-poumon-gauche-bv",
+   "nom": "Bronche lingulaire inférieure du poumon gauche (BV)",
+   "latin": "Bronchus segmentalis lingularis inf. pulmonis sinistri (BV)",
+   "anglais": "Inferior lingular segmental bronchus of left lung (BV)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche lingulaire inférieure du poumon gauche (BV)",
+   "ta2": "3257"
+  },
+  {
+   "id": "bronche-lingulaire-superieure-du-poumon-gauche-biv",
+   "nom": "Bronche lingulaire supérieure du poumon gauche (BIV)",
+   "latin": "Bronchus segm. lingularis sup. pulmonis sinistri (BIV)",
+   "anglais": "Superior lingular segmental bronchus of left lung (BIV)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche lingulaire supérieure du poumon gauche (BIV)",
+   "ta2": "3256"
+  },
+  {
+   "id": "bronche-lobaire-inferieure-droite",
+   "nom": "Bronche lobaire inférieure droite",
+   "latin": "Bronchus lobaris inferior dexter",
+   "anglais": "Right inferior lobar bronchus",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche lobaire inférieure droite",
+   "ta2": "3246"
+  },
+  {
+   "id": "bronche-lobaire-inferieure-gauche",
+   "nom": "Bronche lobaire inférieure gauche",
+   "latin": "Bronchus lobaris inferior sinister",
+   "anglais": "Left inferior lobar bronchus",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche lobaire inférieure gauche",
+   "ta2": "3258"
+  },
+  {
+   "id": "bronche-lobaire-moyenne",
+   "nom": "Bronche lobaire moyenne",
+   "latin": "Bronchus lobaris medius",
+   "anglais": "Middle lobar bronchus",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche lobaire moyenne",
+   "ta2": "3243"
+  },
+  {
+   "id": "bronche-lobaire-superieure-droite",
+   "nom": "Bronche lobaire supérieure droite",
+   "latin": "Bronchus lobaris superior dexter",
+   "anglais": "Right superior lobar bronchus",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche lobaire supérieure droite",
+   "ta2": "3238"
+  },
+  {
+   "id": "bronche-lobaire-superieure-gauche",
+   "nom": "Bronche lobaire supérieure gauche",
+   "latin": "Bronchus lobaris superior sinister",
+   "anglais": "Left superior lobar bronchus",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche lobaire supérieure gauche",
+   "ta2": "3253"
+  },
+  {
+   "id": "bronche-principale",
+   "nom": "Bronche principale",
+   "latin": "Bronchus principalis",
+   "anglais": "Main bronchus",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche principale",
+   "ta2": "3227"
+  },
+  {
+   "id": "bronche-segmentaire-anterieure-du-poumon-droit-biii",
+   "nom": "Bronche segmentaire antérieure du poumon droit (BIII)",
+   "latin": "Bronchus segmentalis anterior pulmonis dextri (BIII)",
+   "anglais": "Anterior segmental bronchus of right lung (BIII)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche segmentaire antérieure du poumon droit (BIII)",
+   "ta2": "3241"
+  },
+  {
+   "id": "bronche-segmentaire-anterieure-du-poumon-gauche-biii",
+   "nom": "Bronche segmentaire antérieure du poumon gauche (BIII)",
+   "latin": "Bronchus segmentalis anterior pulmonis sinistri (BIII)",
+   "anglais": "Anterior segmental bronchus of left lung (BIII)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche segmentaire antérieure du poumon gauche (BIII)",
+   "ta2": "3255"
+  },
+  {
+   "id": "bronche-segmentaire-basale-ant-du-poumon-droit-bviii",
+   "nom": "Bronche segmentaire basale ant. du poumon droit (BVIII)",
+   "latin": "Bronchus segmentalis basalis ant. pulmonis dextri (BVIII)",
+   "anglais": "Anterior basal segmental bronchus of right lung (BVIII)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche segmentaire basale ant. du poumon droit (BVIII)",
+   "ta2": "3249"
+  },
+  {
+   "id": "bronche-segmentaire-basale-anterieure-du-poumon-gau-bviii",
+   "nom": "Bronche segmentaire basale antérieure du poumon gau. (BVIII)",
+   "latin": "Bronchus segmentalis basalis ant. pulmonis sinistri (BVIII)",
+   "anglais": "Anterior basal segmental bronchus of left lung (BVIII)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche segmentaire basale antérieure du poumon gau. (BVIII)",
+   "ta2": "3262"
+  },
+  {
+   "id": "bronche-segmentaire-basale-anteromediale-du-poumon-gauche",
+   "nom": "Bronche segmentaire basale antéromédiale du poumon gauche",
+   "latin": "(Bronchus segmentalis basalis anteromed. pulmonis sinistri)",
+   "anglais": "Anteromedial basal segmental bronchus of left lung",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche segmentaire basale antéromédiale du poumon gauche",
+   "ta2": "3261",
+   "inconstant": true
+  },
+  {
+   "id": "bronche-segmentaire-basale-laterale-du-poumon-droit-bix",
+   "nom": "Bronche segmentaire basale latérale du poumon droit (BIX)",
+   "latin": "Bronchus segmentalis basalis lat. pulmonis dextri (BIX)",
+   "anglais": "Lateral basal segmental bronchus of right lung (BIX)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche segmentaire basale latérale du poumon droit (BIX)",
+   "ta2": "3250"
+  },
+  {
+   "id": "bronche-segmentaire-basale-laterale-du-poumon-gauche-bix",
+   "nom": "Bronche segmentaire basale latérale du poumon gauche (BIX)",
+   "latin": "Bronchus segmentalis basalis lat. pulmonis sinistri (BIX)",
+   "anglais": "Lateral basal segmental bronchus of left lung (BIX)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche segmentaire basale latérale du poumon gauche (BIX)",
+   "ta2": "3263"
+  },
+  {
+   "id": "bronche-segmentaire-basale-mediale-du-poumon-droit-bvii",
+   "nom": "Bronche segmentaire basale médiale du poumon droit (BVII)",
+   "latin": "Bronchus segmentalis basalis med. pulmonis dextri (BVII)",
+   "anglais": "Medial basal segmental bronchus of right lung (BVII)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche segmentaire basale médiale du poumon droit (BVII)",
+   "ta2": "3248"
+  },
+  {
+   "id": "bronche-segmentaire-basale-mediale-du-poumon-gauche-bvii",
+   "nom": "Bronche segmentaire basale médiale du poumon gauche (BVII)",
+   "latin": "Bronchus segmentalis basalis med. pulmonis sinistri (BVII)",
+   "anglais": "Medial basal segmental bronchus of left lung (BVII)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche segmentaire basale médiale du poumon gauche (BVII)",
+   "ta2": "3260"
+  },
+  {
+   "id": "bronche-segmentaire-basale-posterieure-du-poumon-droit-bx",
+   "nom": "Bronche segmentaire basale postérieure du poumon droit (BX)",
+   "latin": "Bronchus segmentalis basalis posterior pulmonis dextri (BX)",
+   "anglais": "Posterior basal segmental bronchus of right lung (BX)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche segmentaire basale postérieure du poumon droit (BX)",
+   "ta2": "3251"
+  },
+  {
+   "id": "bronche-segmentaire-basale-posterieure-du-poumon-gauche-bx",
+   "nom": "Bronche segmentaire basale postérieure du poumon gauche (BX)",
+   "latin": "Bronchus segmentalis basalis posterior pulmonis sinistri (BX)",
+   "anglais": "Posterior basal segmental bronchus of left lung (BX)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche segmentaire basale postérieure du poumon gauche (BX)",
+   "ta2": "3264"
+  },
+  {
+   "id": "bronche-segmentaire-laterale-biv",
+   "nom": "Bronche segmentaire latérale (BIV)",
+   "latin": "Bronchus segmentalis lateralis pulmonis dextri (BIV)",
+   "anglais": "Lateral segmental bronchus of right lung (BIV)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche segmentaire latérale (BIV)",
+   "ta2": "3244"
+  },
+  {
+   "id": "bronche-segmentaire-mediale-bv",
+   "nom": "Bronche segmentaire médiale (BV)",
+   "latin": "Bronchus segmentalis medialis pulmonis dextri (BV)",
+   "anglais": "Medial segmental bronchus of right lung (BV)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche segmentaire médiale (BV)",
+   "ta2": "3245"
+  },
+  {
+   "id": "bronche-segmentaire-posterieure-du-poumon-droit-bii",
+   "nom": "Bronche segmentaire postérieure du poumon droit (BII)",
+   "latin": "Bronchus segmentalis posterior pulmonis dextri (BII)",
+   "anglais": "Posterior segmental bronchus of right lung (BII)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche segmentaire postérieure du poumon droit (BII)",
+   "ta2": "3240"
+  },
+  {
+   "id": "bronche-segmentaire-superieure-du-poumon-gauche-bvi",
+   "nom": "Bronche segmentaire supérieure du poumon gauche (BVI)",
+   "latin": "Bronchus segmentalis superior pulmonis sinistri(bvi)",
+   "anglais": "Superior segmental bronchus of left lung (BVI)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Bronche segmentaire supérieure du poumon gauche (BVI)",
+   "ta2": "3259"
+  },
+  {
+   "id": "muscle-papillaire-anterieur-du-ventricule-droit",
+   "nom": "Muscle papillaire antérieur du ventricule droit",
+   "latin": "Musculus papillaris anterior ventriculi dextri",
+   "anglais": "Anterior papillary muscle of right ventricle",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Muscle papillaire antérieur du ventricule droit",
+   "ta2": "4044",
+   "nature": "coeur"
+  },
+  {
+   "id": "muscle-papillaire-inferieur-du-ventricule-droit",
+   "nom": "Muscle papillaire inférieur du ventricule droit",
+   "latin": "Musculus papillaris inferior ventriculi dextri",
+   "anglais": "Inferior papillary muscle of right ventricle",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Muscle papillaire inférieur du ventricule droit",
+   "ta2": "4045",
+   "nature": "coeur"
+  },
+  {
+   "id": "muscle-papillaire-inferieur-du-ventricule-gauche",
+   "nom": "Muscle papillaire inférieur du ventricule gauche",
+   "latin": "Musculus papillaris inferior ventriculi sinistri",
+   "anglais": "Inferior papillary muscle of left ventricle",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Muscle papillaire inférieur du ventricule gauche",
+   "ta2": "4068",
+   "nature": "coeur"
+  },
+  {
+   "id": "muscle-papillaire-septal-du-ventricule-droit",
+   "nom": "Muscle papillaire septal du ventricule droit",
+   "latin": "Musculus papillaris septalis ventriculi dextri",
+   "anglais": "Septal papillary muscle of right ventricle",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Muscle papillaire septal du ventricule droit",
+   "ta2": "4046",
+   "nature": "coeur"
+  },
+  {
+   "id": "segment-posterolateral-gauche-du-foie-ii",
+   "nom": "Segment postérolatéral gauche du foie (II)",
+   "latin": "Segmentum posterius laterale sinistrum hepatis (II)",
+   "anglais": "Left posterior lateral segment of liver (II)",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Segment postérolatéral gauche du foie (II)",
+   "ta2": "3068"
+  },
+  {
+   "id": "trachee",
+   "nom": "Trachée",
+   "latin": "Trachea",
+   "anglais": "Trachea",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Trachée",
+   "ta2": "3213"
+  },
+  {
+   "id": "valvule-coronaire-aortique-droite",
+   "nom": "Valvule coronaire aortique droite",
+   "latin": "Valvula coronaria dextra aortae",
+   "anglais": "Right coronary leaflet",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Valvule coronaire aortique droite",
+   "ta2": "3995",
+   "nature": "coeur"
+  },
+  {
+   "id": "valvule-coronaire-aortique-gauche",
+   "nom": "Valvule coronaire aortique gauche",
+   "latin": "Valvula coronaria sinistra aortae",
+   "anglais": "Left coronary leaflet",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Valvule coronaire aortique gauche",
+   "ta2": "3996",
+   "nature": "coeur"
+  },
+  {
+   "id": "valvule-non-coronaire-de-la-valve-aortique",
+   "nom": "Valvule non-coronaire de la valve aortique",
+   "latin": "Valvula noncoronaria valvae aortae",
+   "anglais": "Non-coronary leaflet",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Valvule non-coronaire de la valve aortique",
+   "ta2": "3997",
+   "nature": "coeur"
+  },
+  {
+   "id": "valvule-semilunaire-anterieure-de-la-valve-pulmonaire",
+   "nom": "Valvule semilunaire antérieure de la valve pulmonaire",
+   "latin": "Valvula semilunaris anterior valvae trunci pulmonalis",
+   "anglais": "Anterior semilunar leaflet of pulmonary valve",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Valvule semilunaire antérieure de la valve pulmonaire",
+   "ta2": "4012",
+   "nature": "coeur"
+  },
+  {
+   "id": "valvule-semilunaire-droite-de-la-valve-pulmonaire",
+   "nom": "Valvule semilunaire droite de la valve pulmonaire",
+   "latin": "Valvula semilunaris dextra valvae trunci pulmonalis",
+   "anglais": "Right semilunar leaflet of pulmonary valve",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Valvule semilunaire droite de la valve pulmonaire",
+   "ta2": "4010",
+   "nature": "coeur"
+  },
+  {
+   "id": "valvule-semilunaire-gauche-de-la-valve-pulmonaire",
+   "nom": "Valvule semilunaire gauche de la valve pulmonaire",
+   "latin": "Valvula semilunaris sinistra valvae trunci pulmonalis",
+   "anglais": "Left semilunar leaflet of pulmonary valve",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Valvule semilunaire gauche de la valve pulmonaire",
+   "ta2": "4011",
+   "nature": "coeur"
+  }
+ ]
+}

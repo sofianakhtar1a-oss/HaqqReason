@@ -1,0 +1,1880 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918)",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "kenhub-cortex": {
+   "titre": "Kenhub, Cerebral cortex",
+   "url": "https://www.kenhub.com/en/library/anatomy/cerebral-cortex"
+  },
+  "kenhub-frontal": {
+   "titre": "Kenhub, Frontal lobe",
+   "url": "https://www.kenhub.com/en/library/anatomy/frontal-lobe"
+  },
+  "kenhub-parietal": {
+   "titre": "Kenhub, Parietal lobe",
+   "url": "https://www.kenhub.com/en/library/anatomy/parietal-lobe"
+  },
+  "kenhub-temporal": {
+   "titre": "Kenhub, Temporal lobe",
+   "url": "https://www.kenhub.com/en/library/anatomy/temporal-lobe"
+  },
+  "kenhub-occipital": {
+   "titre": "Kenhub, Occipital lobe",
+   "url": "https://www.kenhub.com/en/library/anatomy/occipital-lobe"
+  },
+  "kenhub-cingulaire": {
+   "titre": "Kenhub, Cingulate gyrus",
+   "url": "https://www.kenhub.com/en/library/anatomy/cingulate-gyrus"
+  },
+  "kenhub-cervelet": {
+   "titre": "Kenhub, Structure of the cerebellum",
+   "url": "https://www.kenhub.com/en/start/structure-of-cerebellum"
+  },
+  "tma-cerveau": {
+   "titre": "TeachMeAnatomy, The cerebrum",
+   "url": "https://teachmeanatomy.info/neuro/structures/cerebrum/"
+  },
+  "tma-cervelet": {
+   "titre": "TeachMeAnatomy, The cerebellum",
+   "url": "https://teachmeanatomy.info/neuro/structures/cerebellum/"
+  },
+  "radiopaedia-frontal": {
+   "titre": "Radiopaedia, Frontal lobe",
+   "url": "https://radiopaedia.org/articles/frontal-lobe"
+  },
+  "radiopaedia-cervelet": {
+   "titre": "Radiopaedia, Cerebellum",
+   "url": "https://radiopaedia.org/articles/cerebellum"
+  },
+  "ta2-cervelet": {
+   "titre": "Terminologia Anatomica (FIPAT), cervelet : lobes et lobules",
+   "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/part/EN/TAH5686 P3F EN.htm"
+  },
+  "pmc-jensen": {
+   "titre": "PMC, sillon intermédiaire primaire de Jensen (étude anatomique)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5573296"
+  },
+  "frontiers-sillons": {
+   "titre": "Frontiers in Neuroanatomy 2018, nomenclature des sillons corticaux",
+   "url": "https://www.frontiersin.org/journals/neuroanatomy/articles/10.3389/fnana.2018.00093/full"
+  },
+  "wp-insula": {
+   "titre": "Wikipédia (en), Insular cortex",
+   "url": "https://en.wikipedia.org/wiki/Insular_cortex"
+  },
+  "wp-angulaire": {
+   "titre": "Wikipédia (en), Angular gyrus",
+   "url": "https://en.wikipedia.org/wiki/Angular_gyrus"
+  },
+  "wp-supramarginal": {
+   "titre": "Wikipédia (en), Supramarginal gyrus",
+   "url": "https://en.wikipedia.org/wiki/Supramarginal_gyrus"
+  },
+  "wp-frontal-inf": {
+   "titre": "Wikipédia (en), Inferior frontal gyrus",
+   "url": "https://en.wikipedia.org/wiki/Inferior_frontal_gyrus"
+  },
+  "wp-orbitofrontal": {
+   "titre": "Wikipédia (en), Orbitofrontal cortex",
+   "url": "https://en.wikipedia.org/wiki/Orbitofrontal_cortex"
+  },
+  "wp-fusiforme": {
+   "titre": "Wikipédia (en), Fusiform gyrus",
+   "url": "https://en.wikipedia.org/wiki/Fusiform_gyrus"
+  },
+  "wp-lobe-temporal": {
+   "titre": "Wikipédia (en), Temporal lobe",
+   "url": "https://en.wikipedia.org/wiki/Temporal_lobe"
+  },
+  "wp-precuneus": {
+   "titre": "Wikipédia (en), Precuneus",
+   "url": "https://en.wikipedia.org/wiki/Precuneus"
+  },
+  "wp-paracentral": {
+   "titre": "Wikipédia (en), Paracentral lobule",
+   "url": "https://en.wikipedia.org/wiki/Paracentral_lobule"
+  },
+  "wp-calcarin": {
+   "titre": "Wikipédia (en), Calcarine sulcus",
+   "url": "https://en.wikipedia.org/wiki/Calcarine_sulcus"
+  },
+  "wp-parietal-sup": {
+   "titre": "Wikipédia (en), Superior parietal lobule",
+   "url": "https://en.wikipedia.org/wiki/Superior_parietal_lobule"
+  },
+  "wp-frontal-moyen": {
+   "titre": "Wikipédia (en), Middle frontal gyrus",
+   "url": "https://en.wikipedia.org/wiki/Middle_frontal_gyrus"
+  },
+  "wp-temporal-sup": {
+   "titre": "Wikipédia (en), Superior temporal gyrus",
+   "url": "https://en.wikipedia.org/wiki/Superior_temporal_gyrus"
+  },
+  "wp-lunaire": {
+   "titre": "Wikipédia (en), Lunate sulcus",
+   "url": "https://en.wikipedia.org/wiki/Lunate_sulcus"
+  },
+  "wp-lobe-occipital": {
+   "titre": "Wikipédia (en), Occipital lobe",
+   "url": "https://en.wikipedia.org/wiki/Occipital_lobe"
+  },
+  "wp-cervelet": {
+   "titre": "Wikipédia (en), Cerebellum",
+   "url": "https://en.wikipedia.org/wiki/Cerebellum"
+  },
+  "wp-frontal-sup": {
+   "titre": "Wikipédia (en), Superior frontal gyrus",
+   "url": "https://en.wikipedia.org/wiki/Superior_frontal_gyrus"
+  },
+  "wp-champ-oculomoteur": {
+   "titre": "Wikipédia (en), Frontal eye fields",
+   "url": "https://en.wikipedia.org/wiki/Frontal_eye_fields"
+  },
+  "wp-cortex-moteur": {
+   "titre": "Wikipédia (en), Primary motor cortex",
+   "url": "https://en.wikipedia.org/wiki/Primary_motor_cortex"
+  },
+  "wp-cortex-somesthesique": {
+   "titre": "Wikipédia (en), Primary somatosensory cortex",
+   "url": "https://en.wikipedia.org/wiki/Primary_somatosensory_cortex"
+  }
+ },
+ "fiches": [
+  {
+   "id": "lobule-biventral",
+   "resume": "Le lobule de la face inférieure du cervelet, de chaque côté, qui prolonge la pyramide du vermis.",
+   "partie": "cervelet",
+   "situation": "Face inférieure de l'hémisphère cérébelleux, lobe postérieur (lobule HVIII), entre le lobule gracile en arrière et la tonsille en avant ; il correspond à la pyramide du vermis",
+   "fonction": "Cortex de l'hémisphère cérébelleux : il corrige le mouvement en cours et règle la coordination et le tonus des muscles du même côté du corps",
+   "connexions": {
+    "texte": "Correspond à la pyramide du vermis ; voisin du lobule gracile et de la tonsille du cervelet",
+    "structures": [
+     "pyramide-du-vermis",
+     "lobule-gracile",
+     "tonsille-du-cervelet"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Surtout l'artère cérébelleuse inféro-postérieure, pour la face inférieure des hémisphères",
+    "arteres": [
+     "artere-cerebelleuse-inferoposterieure"
+    ]
+   },
+   "atteinte": "Syndrome cérébelleux du même côté que la lésion : mouvements imprécis (dysmétrie), tremblement d'intention, adiadococinésie, tonus diminué, démarche ataxique",
+   "clinique": "Un syndrome cérébelleux unilatéral signe une atteinte du même côté, à l'inverse du cortex cérébral",
+   "memo": "Biventral, « à deux ventres » : le jumeau, de chaque côté, de la pyramide du vermis",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "ta2-cervelet",
+    "kenhub-cervelet",
+    "tma-cervelet",
+    "radiopaedia-cervelet"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lobule-gracile",
+   "resume": "Le lobule mince de la face inférieure de l'hémisphère cérébelleux, dans le lobe postérieur.",
+   "partie": "cervelet",
+   "situation": "Face inférieure de l'hémisphère cérébelleux, lobe postérieur (lobule HVIIB), entre le lobule semilunaire inférieur en arrière et le lobule biventral en avant",
+   "fonction": "Cortex de l'hémisphère cérébelleux : il compare l'ordre moteur au mouvement réalisé et participe à la coordination, au tonus et à l'apprentissage moteur",
+   "connexions": {
+    "texte": "Voisin du lobule semilunaire inférieur et du lobule biventral",
+    "structures": [
+     "lobule-semilunaire-inferieur",
+     "lobule-biventral"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Surtout l'artère cérébelleuse inféro-postérieure, pour la face inférieure des hémisphères",
+    "arteres": [
+     "artere-cerebelleuse-inferoposterieure"
+    ]
+   },
+   "atteinte": "Syndrome cérébelleux du même côté que la lésion : mouvements imprécis (dysmétrie), tremblement d'intention, adiadococinésie, tonus diminué, démarche ataxique",
+   "clinique": "Les infarctus de la face inférieure du cervelet (territoire de l'artère cérébelleuse inféro-postérieure) donnent vertiges et déséquilibre",
+   "memo": "Gracile, le mince : un petit lobule coincé entre deux plus gros",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "ta2-cervelet",
+    "kenhub-cervelet",
+    "tma-cervelet",
+    "radiopaedia-cervelet"
+   ],
+   "divergences": "Gray (1918) ne nomme pas le lobule gracile ; sa place suit la Terminologia Anatomica et Kenhub"
+  },
+  {
+   "id": "lobule-quadrangulaire-anterieur",
+   "resume": "Le lobule de l'hémisphère cérébelleux situé devant la scissure primaire, à l'avant de la face supérieure.",
+   "partie": "cervelet",
+   "situation": "Face supérieure de l'hémisphère cérébelleux, lobe antérieur, en avant de la scissure primaire ; il correspond du côté de l'hémisphère au culmen du vermis",
+   "fonction": "Le lobe antérieur reçoit les informations de position venues de la moelle : il règle le tonus et la coordination des membres du même côté, surtout du membre inférieur et de la marche",
+   "connexions": {
+    "texte": "Correspond au culmen du vermis ; séparé du lobule quadrangulaire postérieur par la scissure primaire",
+    "structures": [
+     "culmen",
+     "lobule-quadrangulaire-posterieur"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébelleuse supérieure, qui irrigue la face supérieure du cervelet",
+    "arteres": [
+     "artere-cerebelleuse-superieure"
+    ]
+   },
+   "atteinte": "Syndrome cérébelleux du même côté que la lésion : mouvements imprécis (dysmétrie), tremblement d'intention, adiadococinésie, tonus diminué, démarche ataxique",
+   "clinique": "Les atteintes du lobe antérieur (dégénérescence alcoolique par exemple) touchent surtout la marche et la coordination des jambes",
+   "memo": "Devant la scissure primaire : l'antérieur, celui des jambes et de la marche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "ta2-cervelet",
+    "kenhub-cervelet",
+    "tma-cervelet",
+    "radiopaedia-cervelet",
+    "wp-cervelet"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lobule-semilunaire-inferieur",
+   "resume": "Le lobule arrondi de l'hémisphère cérébelleux, au-dessous de la scissure horizontale (le crus II).",
+   "partie": "cervelet",
+   "situation": "Face postéro-inférieure de l'hémisphère cérébelleux, lobe postérieur, sous la scissure horizontale ; il correspond au tuber du vermis",
+   "fonction": "Cortex de l'hémisphère latéral, relié au cortex cérébral par le pont : il participe à la planification et à la coordination des mouvements habiles et à l'apprentissage moteur",
+   "connexions": {
+    "texte": "Correspond au tuber du vermis ; la scissure horizontale le sépare du lobule semilunaire supérieur",
+    "structures": [
+     "tuber-vermis",
+     "lobule-semilunaire-superieur"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Surtout l'artère cérébelleuse inféro-postérieure, pour la face inférieure des hémisphères",
+    "arteres": [
+     "artere-cerebelleuse-inferoposterieure"
+    ]
+   },
+   "atteinte": "Syndrome cérébelleux du même côté que la lésion : mouvements imprécis (dysmétrie), tremblement d'intention, adiadococinésie, tonus diminué, démarche ataxique",
+   "clinique": "Une lésion d'un hémisphère cérébelleux garde la même latéralité que le syndrome : tout se voit du côté de la lésion",
+   "memo": "Semilunaire inférieur : sous la scissure horizontale, face au supérieur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "ta2-cervelet",
+    "kenhub-cervelet",
+    "tma-cervelet",
+    "radiopaedia-cervelet"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lobule-semilunaire-superieur",
+   "resume": "Le lobule arrondi de l'hémisphère cérébelleux, au-dessus de la scissure horizontale (le crus I).",
+   "partie": "cervelet",
+   "situation": "Face postéro-supérieure de l'hémisphère cérébelleux, lobe postérieur, au-dessus de la scissure horizontale ; il correspond au folium du vermis",
+   "fonction": "Cortex de l'hémisphère latéral, relié au cortex cérébral par le pont : il participe à la planification et à la coordination des mouvements habiles et à l'apprentissage moteur",
+   "connexions": {
+    "texte": "Correspond au folium du vermis ; la scissure horizontale le sépare du lobule semilunaire inférieur",
+    "structures": [
+     "folium-vermis",
+     "lobule-semilunaire-inferieur"
+    ]
+   },
+   "atteinte": "Syndrome cérébelleux du même côté que la lésion : mouvements imprécis (dysmétrie), tremblement d'intention, adiadococinésie, tonus diminué, démarche ataxique",
+   "clinique": "Les lésions des hémisphères cérébelleux (accident vasculaire, tumeur) se voient surtout aux membres du même côté, plus qu'à la marche",
+   "memo": "Semilunaire : en demi-lune ; le supérieur est au-dessus de la scissure horizontale",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "ta2-cervelet",
+    "kenhub-cervelet",
+    "tma-cervelet",
+    "radiopaedia-cervelet"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "cortex-insulaire",
+   "resume": "L'insula, le cortex caché au fond du sillon latéral : goût, sensations viscérales et conscience du corps.",
+   "partie": "telencephale",
+   "situation": "Au fond du sillon latéral, recouverte par les opercules frontal, pariétal et temporal ; le sillon circulaire l'entoure et son sillon central la divise en gyrus courts (devant) et gyrus long (derrière)",
+   "fonction": "Goût (partie antérieure), sensations viscérales et douleur, perception de l'état interne du corps (faim, rythme du cœur), émotions comme le dégoût ; l'insula antérieure intervient aussi dans la commande motrice de la parole",
+   "connexions": {
+    "texte": "Entourée par le sillon circulaire ; recouverte par les opercules, dont l'aire de Broca en avant",
+    "structures": [
+     "sillon-circulaire-de-l-insula",
+     "sillon-lateral-rameau-posterieur",
+     "partie-operculaire-du-gyrus-frontal-inferieur"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches insulaires (segment M2) de l'artère cérébrale moyenne",
+    "arteres": [
+     "branches-insulaires-de-l-artere-cerebrale-moyenne-m2",
+     "artere-cerebrale-moyenne"
+    ]
+   },
+   "atteinte": "Atteinte de la douleur et de la sensibilité piquante du côté opposé, vertige ; une lésion de l'insula antérieure gauche peut donner une apraxie de la parole (articulation désorganisée, compréhension intacte)",
+   "clinique": "Un infarctus du territoire de l'artère cérébrale moyenne touche souvent l'insula",
+   "memo": "Insula, l'île : une île de cortex cachée au fond du sillon latéral",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cortex",
+    "wp-insula",
+    "tma-cerveau"
+   ],
+   "divergences": "Gray (1918) la nomme lobe central (île de Reil) ; la nomenclature actuelle parle d'insula ou de cortex insulaire"
+  },
+  {
+   "id": "cuneus",
+   "resume": "Le coin de cortex de la face médiale du lobe occipital, au-dessus du sillon calcarin : le champ visuel inférieur.",
+   "partie": "telencephale",
+   "situation": "Face médiale du lobe occipital, en forme de coin entre le sillon pariéto-occipital (devant) et le sillon calcarin (dessous)",
+   "fonction": "Il porte la lèvre supérieure du cortex visuel primaire (aire de Brodmann 17) : il reçoit la moitié inférieure du champ visuel du côté opposé ; autour, les aires 18 et 19 analysent formes, couleurs et mouvement",
+   "connexions": {
+    "texte": "Limité par le sillon calcarin en dessous et le sillon pariéto-occipital en avant",
+    "structures": [
+     "sillon-calcarin",
+     "sillon-parieto-occipital",
+     "gyrus-lingual",
+     "precuneus"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale postérieure, par sa branche calcarine (artère occipitale médiale)",
+    "arteres": [
+     "artere-cerebrale-posterieure",
+     "artere-occipitale-mediale"
+    ]
+   },
+   "atteinte": "Lésion d'un cunéus : perte du quart inférieur du champ visuel du côté opposé (quadranopsie latérale homonyme inférieure) ; si tout le cortex calcarin est atteint, hémianopsie opposée, souvent avec épargne de la macula",
+   "clinique": "Une atteinte des deux cunéus supprime le champ visuel inférieur des deux côtés",
+   "memo": "Cuneus, le coin ; il est au-dessus du sillon calcarin, donc il voit en dessous",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-occipital",
+    "wp-calcarin",
+    "tma-cerveau"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gyri-occipitaux-superieurs",
+   "resume": "Les gyrus du haut de la face latérale du lobe occipital : cortex visuel d'association.",
+   "partie": "telencephale",
+   "situation": "Face latérale du lobe occipital, au-dessus du sillon intra-occipital qui les sépare du gyrus occipital moyen ; ils joignent le lobule pariétal supérieur",
+   "fonction": "Cortex visuel d'association (aires de Brodmann 18 et 19) : il analyse les images venues du cortex visuel primaire et sert à repérer les objets dans l'espace",
+   "connexions": {
+    "texte": "Prolongent vers l'arrière le lobule pariétal supérieur ; séparés du gyrus occipital moyen par le sillon intra-occipital",
+    "structures": [
+     "lobule-parietal-superieur",
+     "gyrus-occipital-lateral"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale moyenne et artère cérébrale postérieure",
+    "arteres": [
+     "artere-cerebrale-moyenne",
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Lésion limitée : peu de signes nets ; atteinte étendue ou des deux côtés : vision conservée mais mauvaise interprétation des images (agnosie visuelle), difficultés à se repérer dans l'espace",
+   "memo": "Supérieurs : les plus hauts, ceux qui voient où sont les choses",
+   "variantes": "Le gyrus occipital supérieur est le plus constant des gyrus occipitaux ; leur nombre varie de deux à trois",
+   "sources": [
+    "gray1918",
+    "kenhub-occipital",
+    "wp-lobe-occipital"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gyri-orbitaires",
+   "resume": "Les gyrus de la face inférieure du lobe frontal, posés sur le toit de l'orbite.",
+   "partie": "telencephale",
+   "situation": "Face orbitaire du lobe frontal, sur le toit de l'orbite ; les sillons orbitaires en H la divisent en quatre gyrus : médial, antérieur, latéral et postérieur",
+   "fonction": "Cortex orbitofrontal : il reçoit l'odorat et le goût et évalue la récompense et la punition ; il guide les décisions et la conduite sociale",
+   "connexions": {
+    "texte": "Séparés du gyrus rectus par le sillon olfactif ; divisés entre eux par les sillons orbitaires",
+    "structures": [
+     "sillons-orbitaires",
+     "sillon-olfactif",
+     "gyrus-rectus"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches orbitofrontales des artères cérébrales antérieure et moyenne",
+    "arteres": [
+     "branches-oritofrontales-de-l-artere-cerebrale-anterieure",
+     "artere-cerebrale-moyenne"
+    ]
+   },
+   "atteinte": "Désinhibition, impulsivité, conduite sociale inadaptée, persistance d'un comportement devenu inadapté ; pas de paralysie",
+   "clinique": "Les traumatismes crâniens frontaux contusionnent volontiers la face orbitaire, qui repose sur le plancher osseux irrégulier de l'étage antérieur du crâne",
+   "memo": "Orbitaires, car posés sur l'orbite : le cortex du jugement repose sur le plafond de l'œil",
+   "variantes": "Le dessin des sillons, en H ou en K, change selon les personnes",
+   "sources": [
+    "gray1918",
+    "wp-orbitofrontal",
+    "radiopaedia-frontal",
+    "kenhub-frontal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "encephale-gyri-orbitaires",
+   "resume": "Les gyrus orbitaires : les replis de cortex du plancher du lobe frontal, au-dessus de l'orbite.",
+   "partie": "telencephale",
+   "situation": "Face inférieure du lobe frontal, au-dessus du toit de l'orbite, de part et d'autre du sillon olfactif ; ils sont répartis en quatre gyrus par les sillons orbitaires",
+   "fonction": "Cortex orbitofrontal : il reçoit les informations d'odorat et de goût et compare récompenses et punitions pour orienter les décisions et le comportement social",
+   "connexions": {
+    "texte": "Bordés en dedans par le sillon olfactif ; divisés par les sillons orbitaires",
+    "structures": [
+     "encephale-sillons-orbitaires",
+     "sillon-olfactif",
+     "gyrus-rectus"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches orbitofrontales des artères cérébrales antérieure et moyenne",
+    "arteres": [
+     "branches-oritofrontales-de-l-artere-cerebrale-anterieure",
+     "artere-cerebrale-moyenne"
+    ]
+   },
+   "atteinte": "Désinhibition, impulsivité, mauvais jugement social ; on persiste dans un comportement qui ne rapporte plus ; aucune paralysie",
+   "clinique": "Les contusions de la face orbitaire sont fréquentes dans les chocs frontaux, à cause du relief osseux sous-jacent",
+   "memo": "Les gyrus orbitaires : le siège du bon sens, juste au-dessus de l'œil",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-orbitofrontal",
+    "radiopaedia-frontal",
+    "kenhub-frontal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gyrus-angulaire",
+   "resume": "Le gyrus qui coiffe l'extrémité du sillon temporal supérieur : lecture, écriture et calcul.",
+   "partie": "telencephale",
+   "situation": "Partie postérieure du lobule pariétal inférieur, derrière le gyrus supramarginal, au-dessus de l'extrémité du sillon temporal supérieur (aire de Brodmann 39)",
+   "fonction": "Relie la vision au langage pour lire, écrire et calculer (hémisphère dominant), repère la droite et la gauche et les doigts ; à droite, il gère l'attention dans l'espace",
+   "connexions": {
+    "texte": "Derrière le gyrus supramarginal, dont le sépare le sillon de Jensen ; le sillon intrapariétal le limite en haut",
+    "structures": [
+     "gyrus-supramarginal",
+     "sillon-intermediaire-primaire-de-jensen",
+     "sillon-intraparietal",
+     "sillon-temporal-superieur"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale moyenne, branches pariétales (artère du gyrus angulaire)",
+    "arteres": [
+     "artere-cerebrale-moyenne",
+     "branches-parietales-de-l-artere-cerebrale-moyenne"
+    ]
+   },
+   "atteinte": "Hémisphère dominant : syndrome de Gerstmann (agnosie des doigts, agraphie, acalculie, confusion droite-gauche), alexie ; hémisphère non dominant : négligence de l'espace du côté opposé",
+   "clinique": "Un accident vasculaire de l'artère cérébrale moyenne gauche peut priver soudain de la lecture et du calcul",
+   "memo": "Angulaire : il coiffe le bout du sillon temporal supérieur ; Gerstmann, quatre signes : doigts, écriture, calcul, droite-gauche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-parietal",
+    "wp-angulaire",
+    "kenhub-cortex"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gyrus-cingulaire",
+   "resume": "Le gyrus en arche autour du corps calleux : émotions, motivation, attention.",
+   "partie": "telencephale",
+   "situation": "Face médiale de l'hémisphère, en arche au-dessus du corps calleux, de dessous le rostre jusqu'en arrière du splénium, où l'isthme le relie au gyrus parahippocampique ; limité par le sillon calleux et le sillon cingulaire",
+   "fonction": "Cortex limbique : l'avant règle les réponses émotionnelles et végétatives, la motivation et la décision ; la partie médiane, l'attention et le geste voulu ; l'arrière, la mémoire autobiographique et l'orientation",
+   "connexions": {
+    "texte": "Bordé par le corps calleux en dessous et le sillon cingulaire au-dessus ; se continue par l'isthme avec le gyrus parahippocampique",
+    "structures": [
+     "corps-calleux",
+     "sillon-cingulaire",
+     "hippocampe",
+     "corps-amygdaloide"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères péricalleuse et calloso-marginale, branches de la cérébrale antérieure",
+    "arteres": [
+     "artere-pericalleuse",
+     "artere-callosomarginale",
+     "artere-cerebrale-anterieure"
+    ]
+   },
+   "atteinte": "Lésion du cingulaire antérieur : émotions émoussées, perte de motivation et d'initiative, parfois irritabilité ; ses anomalies sont liées à la dépression et aux troubles obsessionnels",
+   "clinique": "Un infarctus de l'artère cérébrale antérieure peut le toucher avec le lobule paracentral",
+   "memo": "Cingulaire, la ceinture : une ceinture de cortex autour du corps calleux",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cingulaire",
+    "kenhub-cortex",
+    "tma-cerveau"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gyrus-et-sillon-frontopolaires-transverses",
+   "resume": "Les petits replis transversaux du pôle frontal, à l'extrémité avant du lobe frontal.",
+   "partie": "telencephale",
+   "situation": "Pôle frontal, à l'extrémité antérieure du lobe frontal, en avant des gyrus frontaux supérieur et moyen ; un sillon transverse isole un gyrus frontopolaire",
+   "fonction": "Cortex préfrontal rostral (aire de Brodmann 10) : planification à long terme, organisation de projets, attention, motivation",
+   "connexions": {
+    "texte": "Prolonge vers l'avant les gyrus frontaux supérieur et moyen",
+    "structures": [
+     "gyrus-frontal-superieur",
+     "gyrus-frontal-moyen"
+    ]
+   },
+   "atteinte": "Une lésion du pôle frontal donne des troubles de la planification et du jugement, une perte de motivation ou une désinhibition, sans paralysie ni perte de sensibilité",
+   "memo": "Le pôle frontal : l'avant-poste du cerveau, celui qui prévoit",
+   "variantes": "Le dessin de ces replis varie beaucoup d'une personne à l'autre",
+   "sources": [
+    "gray1918",
+    "kenhub-cortex",
+    "radiopaedia-frontal"
+   ],
+   "divergences": "Radiopaedia ne nomme pas de gyrus frontopolaire et Gray parle seulement du pôle frontal ; seule la Terminologia Anatomica décrit ces replis transverses"
+  },
+  {
+   "id": "gyrus-frontal-moyen",
+   "resume": "Le gyrus du milieu du lobe frontal : cortex préfrontal et champ oculomoteur frontal.",
+   "partie": "telencephale",
+   "situation": "Lobe frontal, entre les sillons frontaux supérieur et inférieur, en avant du sillon précentral ; il occupe environ un tiers du lobe frontal",
+   "fonction": "Cortex préfrontal dorsolatéral : mémoire de travail, attention, planification ; sa partie postérieure contient le champ oculomoteur frontal (aire 8), qui commande le regard volontaire vers le côté opposé",
+   "connexions": {
+    "texte": "Entre les sillons frontaux supérieur et inférieur",
+    "structures": [
+     "sillon-frontal-superieur",
+     "sillon-frontal-inferieur",
+     "gyrus-precentral"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale moyenne",
+    "arteres": [
+     "artere-cerebrale-moyenne"
+    ]
+   },
+   "atteinte": "Lésion destructrice du champ oculomoteur : les deux yeux dévient vers le côté de la lésion ; atteinte préfrontale : difficulté à planifier, distractibilité, persévération",
+   "clinique": "Dans un accident vasculaire de l'hémisphère, les yeux regardent la lésion ; une crise épileptique née ici les tourne du côté opposé",
+   "memo": "Le champ oculomoteur frontal pousse le regard à l'opposé : s'il est détruit, les yeux regardent la lésion",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-champ-oculomoteur",
+    "wp-frontal-moyen",
+    "kenhub-frontal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gyrus-frontal-superieur",
+   "resume": "Le gyrus du haut du lobe frontal, qui passe sur la face médiale : planification et initiative.",
+   "partie": "telencephale",
+   "situation": "Lobe frontal, au-dessus du sillon frontal supérieur ; il se prolonge sur la face médiale jusqu'au sillon cingulaire, où sa partie postérieure est le lobule paracentral",
+   "fonction": "Cortex préfrontal et prémoteur : planification, mémoire de travail, initiative des mouvements et de la parole ; sa partie médiale contient l'aire motrice supplémentaire, qui prépare les gestes",
+   "connexions": {
+    "texte": "Sépare du gyrus frontal moyen par le sillon frontal supérieur ; limité en bas, sur la face médiale, par le sillon cingulaire",
+    "structures": [
+     "sillon-frontal-superieur",
+     "gyrus-frontal-moyen",
+     "sillon-cingulaire"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale antérieure",
+    "arteres": [
+     "artere-cerebrale-anterieure"
+    ]
+   },
+   "atteinte": "Perte d'initiative des gestes et de la parole (apathie, lenteur à démarrer) ; à gauche, la mémoire de travail diminue ; la jambe opposée peut être faible si la région médiale est touchée",
+   "clinique": "Un infarctus de l'artère cérébrale antérieure touche ce gyrus avec le lobule paracentral : jambe opposée faible et perte d'initiative",
+   "memo": "Le gyrus du dessus : il dirige le projet, le précentral l'exécute",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-frontal",
+    "wp-frontal-sup",
+    "radiopaedia-frontal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gyrus-lingual",
+   "resume": "Le gyrus de la face médiale et inférieure du lobe occipital, sous le sillon calcarin : le champ visuel supérieur.",
+   "partie": "telencephale",
+   "situation": "Face médiale et inférieure du lobe occipital, entre le sillon calcarin au-dessus et la scissure collatérale au-dessous ; il atteint le pôle occipital et se prolonge en avant par le gyrus parahippocampique",
+   "fonction": "Il porte la lèvre inférieure du cortex visuel primaire (aire 17) : il reçoit la moitié supérieure du champ visuel du côté opposé",
+   "connexions": {
+    "texte": "Limité par le sillon calcarin et la scissure collatérale ; relié en avant au gyrus parahippocampique",
+    "structures": [
+     "sillon-calcarin",
+     "scissure-collaterale",
+     "cuneus",
+     "gyrus-occipitotemporal-medial"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale postérieure, branche calcarine (artère occipitale médiale)",
+    "arteres": [
+     "artere-cerebrale-posterieure",
+     "artere-occipitale-mediale"
+    ]
+   },
+   "atteinte": "Lésion d'un gyrus lingual : perte du quart supérieur du champ visuel du côté opposé (quadranopsie latérale homonyme supérieure) ; toute l'aire calcarine : hémianopsie du côté opposé",
+   "clinique": "Les infarctus de l'artère cérébrale postérieure touchent le cortex calcarin : hémianopsie soudaine, la macula souvent épargnée",
+   "memo": "Lingual, la petite langue (lingula) : sous le sillon calcarin, il voit le haut",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-occipital",
+    "wp-lobe-occipital",
+    "wp-calcarin"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gyrus-occipital-inferieur",
+   "resume": "Le gyrus du bas de la face latérale du lobe occipital, au-dessous du sillon occipital latéral.",
+   "partie": "telencephale",
+   "situation": "Face latérale du lobe occipital, au-dessous du sillon occipital latéral (ou occipital inférieur) ; il joint en avant le gyrus temporal inférieur",
+   "fonction": "Cortex visuel d'association (aires 18 et 19) : reconnaissance des formes et des objets, en lien avec la voie ventrale qui mène au lobe temporal",
+   "connexions": {
+    "texte": "Prolonge en arrière le gyrus temporal inférieur ; limité par le sillon occipital latéral",
+    "structures": [
+     "gyrus-occipital-lateral",
+     "gyrus-temporal-inferieur",
+     "sillon-occipital-anterieur"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale postérieure",
+    "arteres": [
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Lésion étendue ou des deux côtés : mauvaise interprétation des images vues (agnosie visuelle) alors que la vue est intacte",
+   "memo": "Inférieur : le plus bas des gyrus occipitaux, déjà tourné vers le temporal",
+   "variantes": "Variable : il peut fusionner avec le gyrus occipital moyen",
+   "sources": [
+    "gray1918",
+    "kenhub-occipital",
+    "wp-lobe-occipital"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gyrus-occipital-lateral",
+   "resume": "Le gyrus occipital moyen ou latéral, au milieu de la face latérale du lobe occipital.",
+   "partie": "telencephale",
+   "situation": "Face latérale du lobe occipital, entre le sillon intra-occipital au-dessus et le sillon occipital latéral au-dessous ; c'est le plus grand des gyrus occipitaux",
+   "fonction": "Cortex visuel d'association (aires de Brodmann 18 et 19) : il analyse les formes, les objets et le mouvement venus du cortex visuel primaire",
+   "connexions": {
+    "texte": "Entre les gyrus occipitaux supérieurs et le gyrus occipital inférieur",
+    "structures": [
+     "gyri-occipitaux-superieurs",
+     "gyrus-occipital-inferieur",
+     "sillon-lunaire"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale moyenne et artère cérébrale postérieure",
+    "arteres": [
+     "artere-cerebrale-moyenne",
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Lésion étendue ou des deux côtés : vision conservée mais difficulté à reconnaître les objets et leur mouvement (agnosie visuelle) ; à gauche, une alexie sans agraphie est possible",
+   "memo": "Le gyrus du milieu, à l'extérieur : le plus grand des trois gyrus occipitaux",
+   "variantes": "Appelé gyrus occipital moyen par certains auteurs",
+   "sources": [
+    "gray1918",
+    "kenhub-occipital",
+    "wp-lobe-occipital",
+    "frontiers-sillons"
+   ],
+   "divergences": "Certains ouvrages distinguent trois gyrus (supérieur, moyen, inférieur), la Terminologia Anatomica un gyrus latéral ; le nombre varie selon les cerveaux"
+  },
+  {
+   "id": "gyrus-occipitotemporal-lateral",
+   "resume": "Le gyrus fusiforme latéral, sur la face inférieure du lobe temporal : visages et mots écrits.",
+   "partie": "telencephale",
+   "situation": "Face inférieure des lobes temporal et occipital, entre le sillon occipitotemporal en dehors et le sillon médio-fusiforme en dedans (aire de Brodmann 37)",
+   "fonction": "Reconnaissance des visages (aire fusiforme des visages) et, à gauche, des mots écrits ; il reconnaît aussi les corps et les formes",
+   "connexions": {
+    "texte": "Bordé en dehors par le sillon occipitotemporal ; le gyrus occipitotemporal médial le suit en dedans",
+    "structures": [
+     "sillon-occipitotemporal",
+     "gyrus-occipitotemporal-medial",
+     "gyrus-temporal-inferieur"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale postérieure, face inférieure du lobe temporal",
+    "arteres": [
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Prosopagnosie (ne plus reconnaître les visages), surtout si l'atteinte est bilatérale ou droite ; à gauche, difficulté à lire (alexie)",
+   "memo": "Fusiforme : en forme de fuseau, le gyrus des visages",
+   "variantes": null,
+   "sources": [
+    "wp-fusiforme",
+    "kenhub-temporal",
+    "gray1918",
+    "kenhub-occipital"
+   ],
+   "divergences": "Gray (1918) nomme la région « circonvolution occipitotemporale », ce que la nomenclature actuelle appelle gyrus fusiforme"
+  },
+  {
+   "id": "gyrus-occipitotemporal-medial",
+   "resume": "Le gyrus fusiforme médial, sur la face inférieure du lobe temporal, près de la scissure collatérale.",
+   "partie": "telencephale",
+   "situation": "Face inférieure des lobes temporal et occipital, entre la scissure collatérale en dedans et le sillon médio-fusiforme en dehors",
+   "fonction": "Partie médiale du gyrus fusiforme : reconnaissance visuelle des formes, des objets et des visages, avec le gyrus occipitotemporal latéral",
+   "connexions": {
+    "texte": "Entre la scissure collatérale et le gyrus occipitotemporal latéral",
+    "structures": [
+     "scissure-collaterale",
+     "gyrus-occipitotemporal-lateral",
+     "gyrus-lingual"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale postérieure",
+    "arteres": [
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Difficulté à reconnaître visages ou objets (prosopagnosie, agnosie visuelle) quand l'atteinte est étendue ou des deux côtés",
+   "memo": "Le versant interne du fuseau : celui qui touche la scissure collatérale",
+   "variantes": null,
+   "sources": [
+    "wp-fusiforme",
+    "kenhub-temporal",
+    "gray1918"
+   ],
+   "divergences": "Selon les ouvrages, le gyrus fusiforme est une seule structure ou deux (latérale et médiale) ; la Terminologia Anatomica les distingue"
+  },
+  {
+   "id": "gyrus-postcentral",
+   "resume": "Le gyrus du cortex somesthésique primaire : il reçoit le toucher, la position et la douleur du côté opposé.",
+   "partie": "telencephale",
+   "situation": "Lobe pariétal, juste en arrière du sillon central, entre ce sillon et le sillon postcentral",
+   "fonction": "Cortex somesthésique primaire (aires de Brodmann 3, 1 et 2) : il reçoit du thalamus le toucher fin, la position des membres, la vibration et, plus faiblement, la douleur et la température du côté opposé ; son homoncule fait une grande place aux lèvres et aux mains",
+   "connexions": {
+    "texte": "Reçoit les fibres du thalamus ; bordé en avant par le sillon central, en arrière par le sillon postcentral",
+    "structures": [
+     "thalamus",
+     "sillon-central",
+     "sillon-postcentral"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale moyenne pour la face latérale, cérébrale antérieure pour la jambe, sur la face médiale",
+    "arteres": [
+     "artere-cerebrale-moyenne",
+     "artere-cerebrale-anterieure"
+    ]
+   },
+   "atteinte": "Perte ou diminution de la sensibilité du côté opposé : toucher fin, position, vibration ; difficulté à reconnaître un objet au toucher (astéréognosie) ou un chiffre tracé sur la peau (agraphesthésie)",
+   "clinique": "Une atteinte de l'hémisphère non dominant peut y ajouter une négligence de l'hémicorps opposé",
+   "memo": "Post-central : derrière le sillon central, c'est la zone où l'on sent",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-parietal",
+    "wp-cortex-somesthesique",
+    "tma-cerveau"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gyrus-precentral",
+   "resume": "Le gyrus du cortex moteur primaire : il commande les muscles volontaires du côté opposé du corps.",
+   "partie": "telencephale",
+   "situation": "Lobe frontal, juste en avant du sillon central, entre ce sillon et le sillon précentral ; il se poursuit sur la face médiale par le lobule paracentral",
+   "fonction": "Cortex moteur primaire (aire de Brodmann 4, cellules de Betz) : il envoie les ordres du mouvement volontaire au côté opposé, selon un homoncule inversé (pied en haut et en dedans, main, puis visage et langue en bas) où la main et le visage occupent le plus de place",
+   "connexions": {
+    "texte": "Ses fibres forment la voie corticospinale ; il est bordé par le sillon central en arrière et le sillon précentral en avant",
+    "structures": [
+     "sillon-central",
+     "sillon-precentral",
+     "lobule-paracentral",
+     "gyrus-postcentral"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale moyenne pour la face latérale (main, visage), cérébrale antérieure pour la région médiale de la jambe",
+    "arteres": [
+     "artere-cerebrale-moyenne",
+     "artere-cerebrale-anterieure"
+    ]
+   },
+   "atteinte": "Faiblesse ou paralysie du côté opposé à la lésion : visage et bras surtout si la lésion est latérale (artère cérébrale moyenne), jambe surtout si elle est médiale (artère cérébrale antérieure)",
+   "clinique": "La paralysie est d'autant plus ciblée (un seul membre, le visage) que la lésion corticale est petite ; la lésion de la capsule interne, où les fibres se resserrent, paralyse tout un hémicorps",
+   "memo": "Pré-central : devant le sillon central, il commande ; le post-central, derrière, ressent",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-frontal",
+    "wp-cortex-moteur",
+    "tma-cerveau"
+   ],
+   "divergences": "Kenhub attribue le cortex moteur primaire à l'aire 4 dans son tableau mais à l'aire 6 dans un autre passage ; c'est l'aire 4 (Gray, Wikipédia) qui est retenue"
+  },
+  {
+   "id": "gyrus-rectus",
+   "resume": "Le gyrus droit du bord médial de la face inférieure du lobe frontal, le long de la scissure longitudinale.",
+   "partie": "telencephale",
+   "situation": "Face orbitaire du lobe frontal, bord médial, entre la fissure longitudinale et le sillon olfactif ; il se continue avec le gyrus frontal supérieur",
+   "fonction": "Cortex orbitofrontal médial : valeur des récompenses, décisions, régulation des émotions ; il est voisin du bulbe olfactif et des aires de l'odorat",
+   "connexions": {
+    "texte": "Bordé en dehors par le sillon olfactif et les gyrus orbitaires",
+    "structures": [
+     "sillon-olfactif",
+     "gyri-orbitaires",
+     "gyrus-frontal-superieur"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale antérieure, par ses branches orbitofrontales",
+    "arteres": [
+     "artere-cerebrale-anterieure",
+     "branches-oritofrontales-de-l-artere-cerebrale-anterieure"
+    ]
+   },
+   "atteinte": "Désinhibition, indifférence ou comportement social inadapté ; pas de paralysie ; le cortex orbitofrontal atteint des deux côtés a des effets plus nets",
+   "memo": "Rectus, le droit : un gyrus rectiligne, le long de la ligne médiane",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-frontal",
+    "wp-orbitofrontal",
+    "kenhub-frontal"
+   ],
+   "divergences": "Gray (1918) n'emploie pas le nom gyrus rectus : il parle de la partie du gyrus orbitaire médial située en dedans du sillon olfactif"
+  },
+  {
+   "id": "gyrus-supramarginal",
+   "resume": "Le gyrus qui coiffe l'extrémité de la branche postérieure du sillon latéral, à l'avant du lobule pariétal inférieur.",
+   "partie": "telencephale",
+   "situation": "Lobule pariétal inférieur, devant le gyrus angulaire ; il arque autour de l'extrémité relevée du sillon latéral, sous le sillon intrapariétal (aire de Brodmann 40)",
+   "fonction": "Compréhension et traitement des sons du langage (hémisphère dominant), association somesthésique (reconnaître la position des membres), gestes et usage des outils ; à droite, attention à l'espace et empathie",
+   "connexions": {
+    "texte": "Coiffe le sillon latéral ; séparé du gyrus angulaire par le sillon intermédiaire primaire de Jensen",
+    "structures": [
+     "gyrus-angulaire",
+     "sillon-lateral-rameau-posterieur",
+     "sillon-intermediaire-primaire-de-jensen",
+     "sillon-intraparietal"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale moyenne, branches pariétales",
+    "arteres": [
+     "artere-cerebrale-moyenne",
+     "branches-parietales-de-l-artere-cerebrale-moyenne"
+    ]
+   },
+   "atteinte": "Hémisphère dominant : troubles du langage (compréhension et répétition) et gestes maladroits (apraxie) ; hémisphère non dominant : négligence de l'espace opposé",
+   "clinique": "Il fait partie, avec le gyrus angulaire et la partie postérieure du gyrus temporal supérieur, de la zone de Wernicke au sens large",
+   "memo": "Supramarginal : il enjambe le bout du sillon latéral comme une arche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-parietal",
+    "kenhub-cortex",
+    "wp-supramarginal"
+   ],
+   "divergences": "Kenhub rattache le gyrus supramarginal à l'aire de Wernicke ; d'autres auteurs limitent cette aire à l'aire 22 du temporal : la limite varie selon les ouvrages"
+  },
+  {
+   "id": "gyrus-temporal-inferieur",
+   "resume": "Le gyrus du bas de la face latérale du lobe temporal : la reconnaissance des objets et des visages.",
+   "partie": "telencephale",
+   "situation": "Bord inférieur de la face latérale du lobe temporal, sous le sillon temporal inférieur ; il déborde sur la face inférieure, où le sillon occipitotemporal le limite",
+   "fonction": "Dernière étape de la voie visuelle ventrale : reconnaissance des objets, des visages et des formes, en lien avec la mémoire",
+   "connexions": {
+    "texte": "Sous le sillon temporal inférieur ; le sillon occipitotemporal le sépare du gyrus occipitotemporal latéral",
+    "structures": [
+     "sillon-temporal-inferieur",
+     "sillon-occipitotemporal",
+     "gyrus-occipitotemporal-lateral"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale moyenne pour la face latérale, cérébrale postérieure pour la face inférieure",
+    "arteres": [
+     "artere-cerebrale-moyenne",
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Agnosie visuelle (voir sans reconnaître les objets) et prosopagnosie (ne plus reconnaître les visages), surtout si l'atteinte touche les deux côtés ou l'hémisphère droit",
+   "memo": "Le gyrus d'en bas : il reconnaît le visage de ceux qu'on aime",
+   "variantes": null,
+   "sources": [
+    "kenhub-cortex",
+    "wp-lobe-temporal",
+    "wp-fusiforme",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gyrus-temporal-moyen",
+   "resume": "Le gyrus du milieu du lobe temporal : perception du mouvement et sens des mots.",
+   "partie": "telencephale",
+   "situation": "Face latérale du lobe temporal, entre les sillons temporaux supérieur et inférieur (aire de Brodmann 21)",
+   "fonction": "Perception du mouvement visuel (à son extrémité postérieure), accès au sens des mots et des concepts dans l'hémisphère dominant ; il relie audition, vision et mémoire",
+   "connexions": {
+    "texte": "Entre les sillons temporaux supérieur et inférieur",
+    "structures": [
+     "sillon-temporal-superieur",
+     "sillon-temporal-inferieur"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale moyenne, branches temporales",
+    "arteres": [
+     "artere-cerebrale-moyenne",
+     "branches-temporales-de-l-artere-cerebrale-moyenne"
+    ]
+   },
+   "atteinte": "Lésion de l'hémisphère dominant : difficulté à comprendre le sens des mots et à les retrouver (anomie, aphasie fluente) ; des deux côtés, la perception du mouvement peut être altérée",
+   "memo": "Le gyrus du milieu : il fait le lien entre ce qu'on entend, ce qu'on voit et ce que l'on sait",
+   "variantes": null,
+   "sources": [
+    "kenhub-cortex",
+    "kenhub-temporal",
+    "gray1918",
+    "wp-lobe-temporal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gyrus-temporal-superieur",
+   "resume": "Le gyrus du haut du lobe temporal : l'audition et la compréhension du langage.",
+   "partie": "telencephale",
+   "situation": "Face latérale du lobe temporal, sous le sillon latéral et au-dessus du sillon temporal supérieur ; il porte sur sa face supérieure, cachée, les gyrus temporaux transverses",
+   "fonction": "Audition (aires 41 et 42 sur les gyrus transverses) et compréhension du langage : la partie postérieure de l'aire 22 forme l'aire de Wernicke, dans l'hémisphère dominant",
+   "connexions": {
+    "texte": "Limité par le sillon latéral au-dessus et le sillon temporal supérieur au-dessous ; porte les gyrus temporaux transverses",
+    "structures": [
+     "gyrus-temporal-transverse",
+     "sillon-temporal-superieur",
+     "planum-temporal"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale moyenne, branches temporales",
+    "arteres": [
+     "artere-cerebrale-moyenne",
+     "branches-temporales-de-l-artere-cerebrale-moyenne"
+    ]
+   },
+   "atteinte": "Lésion de l'aire de Wernicke (hémisphère dominant) : aphasie de Wernicke, parole fluide mais vide de sens, compréhension abolie, le patient n'a souvent pas conscience du trouble ; des deux côtés : surdité corticale",
+   "memo": "Wernicke se trouve sous le sillon latéral : il comprend ce que l'oreille apporte",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-temporal",
+    "wp-temporal-sup",
+    "tma-cerveau"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gyrus-temporal-transverse",
+   "resume": "Les gyrus de Heschl : le cortex auditif primaire, enfoui sur le dessus du lobe temporal.",
+   "partie": "telencephale",
+   "situation": "Face supérieure du gyrus temporal supérieur, cachés dans le plancher du sillon latéral, obliques d'arrière en avant et en dehors ; aires de Brodmann 41 et 42",
+   "fonction": "Cortex auditif primaire : il reçoit les sons du corps genouillé médial, classés par hauteur (organisation tonotopique) ; chaque oreille y arrive des deux côtés",
+   "connexions": {
+    "texte": "Reçoit du corps genouillé médial ; voisin du planum temporal, où se poursuit le traitement du langage",
+    "structures": [
+     "corps-genicule-medial",
+     "planum-temporal",
+     "gyrus-temporal-superieur"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale moyenne, branches temporales",
+    "arteres": [
+     "artere-cerebrale-moyenne",
+     "branches-temporales-de-l-artere-cerebrale-moyenne"
+    ]
+   },
+   "atteinte": "Lésion d'un seul côté : surdité légère, difficulté à situer l'origine d'un son et à reconnaître les sons ; des deux côtés : surdité corticale (le patient n'entend plus alors que l'oreille est saine)",
+   "memo": "Heschl, dans le sous-sol du sillon latéral : la salle de réception des sons",
+   "variantes": "Le nombre de gyrus varie d'une personne à l'autre (un seul, ou plusieurs)",
+   "sources": [
+    "kenhub-temporal",
+    "kenhub-cortex",
+    "gray1918",
+    "wp-temporal-sup"
+   ],
+   "divergences": "Gray (1918) situe l'aire auditive sur le tiers moyen du gyrus temporal supérieur et dans le sillon latéral, sans nommer Heschl ni les aires de Brodmann"
+  },
+  {
+   "id": "lobule-central",
+   "resume": "Le petit lobule de la ligne médiane, à l'avant de la face supérieure du cervelet : il règle l'équilibre et la marche.",
+   "partie": "cervelet",
+   "situation": "Lobe antérieur du cervelet, sur le vermis, entre la lingula en avant et le culmen en arrière ; il se prolonge de chaque côté par l'aile du lobule central",
+   "fonction": "Fait partie du spinocérébellum : il reçoit les informations de position venues de la moelle et ajuste le tonus et la coordination du tronc et des jambes pendant la station debout et la marche",
+   "connexions": {
+    "texte": "Prolongé de chaque côté par l'aile du lobule central ; voisin de la lingula et du culmen",
+    "structures": [
+     "aile-du-lobule-central",
+     "culmen",
+     "lingula-du-cervelet"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Surtout l'artère cérébelleuse supérieure, pour la face supérieure du vermis",
+    "arteres": [
+     "artere-cerebelleuse-superieure"
+    ]
+   },
+   "atteinte": "Une atteinte de la ligne médiane trouble l'équilibre du tronc et la marche (jambes écartées, titubation), souvent des deux côtés ; l'alcoolisme chronique en est une cause classique",
+   "clinique": "Le vermis réglant l'axe du corps, ses lésions touchent surtout la station et la marche plus que les mouvements fins des mains",
+   "memo": "Central parce qu'il est au centre de la ligne médiane : le centre de gravité de la marche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "ta2-cervelet",
+    "kenhub-cervelet",
+    "tma-cervelet",
+    "radiopaedia-cervelet"
+   ],
+   "divergences": "Gray (1918) ne distingue pas lobes antérieur et postérieur : il regroupe lingula, lobule central et monticule ; la répartition en trois lobes suit la Terminologia Anatomica"
+  },
+  {
+   "id": "lobule-paracentral",
+   "resume": "Le lobule de la face médiale qui prolonge les gyrus pré- et postcentral : la commande et la sensibilité de la jambe.",
+   "partie": "telencephale",
+   "situation": "Face médiale de l'hémisphère, au-dessus du sillon cingulaire, entre le sillon paracentral en avant et le rameau marginal du sillon cingulaire en arrière ; le sillon central l'atteint et le divise",
+   "fonction": "Commande motrice (partie antérieure) et sensibilité (partie postérieure) de la jambe et du pied du côté opposé ; il intervient aussi dans le contrôle volontaire de la vessie et de l'intestin",
+   "connexions": {
+    "texte": "Prolonge les gyrus précentral et postcentral ; limité en avant par le sillon paracentral",
+    "structures": [
+     "gyrus-precentral",
+     "gyrus-postcentral",
+     "sillon-paracentral",
+     "sillon-cingulaire"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale antérieure, par ses branches de la face médiale",
+    "arteres": [
+     "artere-cerebrale-anterieure"
+    ]
+   },
+   "atteinte": "Occlusion de l'artère cérébrale antérieure : faiblesse et perte de sensibilité de la jambe du côté opposé (le pied surtout), avec parfois incontinence urinaire",
+   "clinique": "Une faiblesse de la jambe plus marquée que celle du bras fait penser à l'artère cérébrale antérieure, non à la cérébrale moyenne",
+   "memo": "Para-central : à côté du sillon central, là où il atteint la face médiale ; c'est la jambe",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-paracentral",
+    "kenhub-frontal",
+    "kenhub-cingulaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lobule-parietal-superieur",
+   "resume": "Le lobule du haut du lobe pariétal : il intègre les sensations pour situer le corps et guider la main.",
+   "partie": "telencephale",
+   "situation": "Lobe pariétal, au-dessus du sillon intrapariétal, entre le sillon postcentral en avant et le sillon pariéto-occipital en arrière (aires de Brodmann 5 et 7)",
+   "fonction": "Cortex d'association : il combine toucher, position des membres et vision pour orienter le corps dans l'espace, reconnaître un objet au toucher et guider la main vers une cible",
+   "connexions": {
+    "texte": "Sous le sillon intrapariétal ; le précuneus le prolonge sur la face médiale",
+    "structures": [
+     "sillon-intraparietal",
+     "precuneus",
+     "sillon-parieto-occipital",
+     "sillon-postcentral"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale moyenne, branches pariétales",
+    "arteres": [
+     "artere-cerebrale-moyenne",
+     "branches-parietales-de-l-artere-cerebrale-moyenne"
+    ]
+   },
+   "atteinte": "Du côté opposé : impossibilité de reconnaître un objet au toucher (astéréognosie), maladresse de la main guidée par la vue ; à droite, négligence de l'hémiespace gauche",
+   "memo": "Le lobule supérieur : le chef d'orchestre qui dit où est la main dans l'espace",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-parietal-sup",
+    "kenhub-parietal",
+    "tma-cerveau"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lobule-quadrangulaire-posterieur",
+   "resume": "Le lobule de l'hémisphère cérébelleux situé derrière la scissure primaire, sur la face supérieure.",
+   "partie": "cervelet",
+   "situation": "Face supérieure de l'hémisphère cérébelleux, lobe postérieur, derrière la scissure primaire ; il correspond au déclive du vermis (aussi appelé lobule simple)",
+   "fonction": "Le cortex de l'hémisphère compare le mouvement voulu et le mouvement réel : planification, apprentissage et coordination des gestes habiles du membre du même côté",
+   "connexions": {
+    "texte": "Correspond au déclive du vermis ; séparé du lobule quadrangulaire antérieur par la scissure primaire",
+    "structures": [
+     "declive",
+     "lobule-quadrangulaire-anterieur"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébelleuse supérieure, qui irrigue la face supérieure du cervelet",
+    "arteres": [
+     "artere-cerebelleuse-superieure"
+    ]
+   },
+   "atteinte": "Syndrome cérébelleux du même côté que la lésion : mouvements imprécis (dysmétrie), tremblement d'intention, adiadococinésie, tonus diminué, démarche ataxique",
+   "clinique": "Un syndrome cérébelleux est du même côté que la lésion, à l'inverse du cortex cérébral dont les signes sont croisés",
+   "memo": "Derrière la scissure primaire : le postérieur, jumeau du quadrangulaire antérieur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "ta2-cervelet",
+    "kenhub-cervelet",
+    "tma-cervelet",
+    "radiopaedia-cervelet"
+   ],
+   "divergences": "Gray (1918) décrit un seul lobule quadrangulaire, que la scissure primaire coupe en deux parties (culmen et clivus) ; la nomenclature actuelle en fait deux lobules"
+  },
+  {
+   "id": "precuneus",
+   "resume": "Le carré de cortex de la face médiale du lobe pariétal, en arrière : mémoire des événements, repérage dans l'espace.",
+   "partie": "telencephale",
+   "situation": "Face médiale du lobe pariétal, entre le sillon pariéto-occipital en arrière, le sillon subpariétal en dessous et le rameau marginal du sillon cingulaire en avant ; au-dessus du gyrus cingulaire",
+   "fonction": "Mémoire des événements vécus (épisodique), imagerie mentale, repérage visuospatial, conscience de soi ; c'est un nœud du réseau du mode par défaut, actif au repos",
+   "connexions": {
+    "texte": "Prolonge sur la face médiale le lobule pariétal supérieur ; borné par les sillons subpariétal et pariéto-occipital",
+    "structures": [
+     "lobule-parietal-superieur",
+     "sillon-subparietal",
+     "sillon-parieto-occipital",
+     "gyrus-cingulaire"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale antérieure (branches péricalleuses) et artère cérébrale postérieure",
+    "arteres": [
+     "artere-cerebrale-anterieure",
+     "artere-cerebrale-posterieure"
+    ]
+   },
+   "atteinte": "Rarement lésé seul ; une atteinte étendue peut troubler l'attention visuospatiale, la mémoire des événements et le repérage dans l'espace, sans déficit moteur ni sensitif net",
+   "memo": "Pré-cuneus : devant le cunéus, derrière le lobule paracentral : le carré de la face médiale",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-precuneus",
+    "kenhub-parietal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "pole-occipital",
+   "resume": "L'extrémité postérieure de l'hémisphère, au bout du lobe occipital : la vision centrale.",
+   "partie": "telencephale",
+   "situation": "Extrémité postérieure de l'hémisphère, au bout du lobe occipital, posé sur la tente du cervelet ; le sillon calcarin y naît",
+   "fonction": "Le cortex visuel qui y est représente la vision centrale (macula) du champ visuel opposé, la plus précise ; le sillon calcarin y commence",
+   "connexions": {
+    "texte": "Point de départ du sillon calcarin ; le gyrus lingual et le cunéus s'y rejoignent",
+    "structures": [
+     "sillon-calcarin",
+     "cuneus",
+     "gyrus-lingual",
+     "tente-du-cervelet"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères cérébrale postérieure et, en bordure, cérébrale moyenne",
+    "arteres": [
+     "artere-cerebrale-posterieure",
+     "artere-cerebrale-moyenne"
+    ]
+   },
+   "atteinte": "Lésion du pôle occipital : tache aveugle centrale dans le champ visuel du côté opposé (scotome homonyme)",
+   "memo": "Le pôle arrière du cerveau : le centre de l'image tombe au bout",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-occipital",
+    "wp-calcarin",
+    "tma-cerveau"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "pole-temporal",
+   "resume": "L'extrémité avant du lobe temporal, logée dans la fosse crânienne moyenne.",
+   "partie": "telencephale",
+   "situation": "Extrémité antérieure du lobe temporal, en avant du gyrus temporal supérieur, sous la grande aile du sphénoïde dans la fosse crânienne moyenne",
+   "fonction": "Cortex d'association : il relie ce qu'on perçoit à la mémoire des mots, des personnes et des objets (mémoire sémantique) et aux émotions",
+   "connexions": {
+    "texte": "Prolonge en avant les gyrus temporaux supérieur, moyen et inférieur ; voisin de l'amygdale et de l'hippocampe",
+    "structures": [
+     "gyrus-temporal-superieur",
+     "corps-amygdaloide",
+     "hippocampe"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cérébrale moyenne, rameau temporal antérieur",
+    "arteres": [
+     "artere-cerebrale-moyenne"
+    ]
+   },
+   "atteinte": "Atteinte du pôle gauche : perte du sens des mots et des objets (démence sémantique) ; atteinte des deux côtés avec l'amygdale : syndrome de Klüver-Bucy (hyperoralité, perte de la peur)",
+   "clinique": "Les chocs sur la tempe contusionnent volontiers les pôles temporaux, contre l'aile du sphénoïde",
+   "memo": "Le pôle temporal : la pointe du lobe, calée contre la grande aile du sphénoïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-temporal",
+    "wp-lobe-temporal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "scissure-collaterale",
+   "resume": "La scissure de la face inférieure qui sépare le gyrus lingual et le gyrus parahippocampique du gyrus fusiforme.",
+   "partie": "telencephale",
+   "situation": "Face inférieure de l'hémisphère, de près du pôle occipital presque jusqu'au pôle temporal ; elle sépare le gyrus fusiforme (en dehors) du gyrus lingual et du gyrus parahippocampique (en dedans)",
+   "fonction": "Repère : elle sépare le lobe limbique (gyrus parahippocampique, en dedans) du lobe temporal, et le gyrus lingual du gyrus fusiforme",
+   "connexions": {
+    "texte": "Entre les gyrus occipitotemporal médial, lingual et parahippocampique",
+    "structures": [
+     "gyrus-lingual",
+     "gyrus-occipitotemporal-medial",
+     "hippocampe"
+    ]
+   },
+   "atteinte": "Lésion du cortex voisin : troubles de la mémoire et de l'orientation (parahippocampique), de la reconnaissance des visages ou des objets (fusiforme), défaut du champ visuel (lingual)",
+   "memo": "La scissure collatérale : le fossé qui place le fusiforme d'un côté, le lingual de l'autre",
+   "variantes": "Son tracé est parfois interrompu ou double",
+   "sources": [
+    "gray1918",
+    "kenhub-cortex",
+    "kenhub-temporal",
+    "wp-fusiforme"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-calcarin",
+   "resume": "Le sillon de la face médiale du lobe occipital qui contient le cortex visuel primaire.",
+   "partie": "telencephale",
+   "situation": "Face médiale du lobe occipital, du pôle occipital vers l'avant jusqu'au-dessous du splénium, où le sillon pariéto-occipital le rejoint ; il sépare le cunéus (au-dessus) du gyrus lingual (au-dessous)",
+   "fonction": "Le cortex visuel primaire (aire 17) borde ses deux lèvres : cunéus pour le champ visuel inférieur, gyrus lingual pour le champ visuel supérieur du côté opposé ; vision centrale en arrière, périphérique en avant",
+   "connexions": {
+    "texte": "Sépare le cunéus du gyrus lingual ; reçoit le sillon pariéto-occipital ; la voie optique y aboutit via le corps genouillé latéral",
+    "structures": [
+     "cuneus",
+     "gyrus-lingual",
+     "sillon-parieto-occipital",
+     "corps-genicule-lateral"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branche calcarine de l'artère cérébrale postérieure",
+    "arteres": [
+     "artere-cerebrale-posterieure",
+     "artere-occipitale-mediale"
+    ]
+   },
+   "atteinte": "Lésion du cortex calcarin : hémianopsie latérale homonyme du côté opposé, avec souvent épargne de la macula ; des deux côtés : cécité corticale (parfois niée par le patient, syndrome d'Anton)",
+   "clinique": "Son avant forme la saillie du calcar avis dans la corne occipitale du ventricule latéral",
+   "memo": "Calcarin : en éperon (calcar) ; le sillon de la vision, du pôle occipital au splénium",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-occipital",
+    "wp-calcarin",
+    "tma-cerveau"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-central",
+   "resume": "Le sillon qui sépare le lobe frontal du lobe pariétal, entre le cortex moteur et le cortex sensitif.",
+   "partie": "telencephale",
+   "situation": "Face latérale de l'hémisphère : il naît près du bord supérieur, au voisinage de la fissure longitudinale, descend obliquement en avant et s'arrête au-dessus du rameau postérieur du sillon latéral",
+   "fonction": "Repère majeur : il sépare le gyrus précentral (cortex moteur) en avant du gyrus postcentral (cortex somesthésique) en arrière ; l'aire motrice borde sa paroi antérieure",
+   "connexions": {
+    "texte": "Bordé en avant par le gyrus précentral, en arrière par le gyrus postcentral",
+    "structures": [
+     "gyrus-precentral",
+     "gyrus-postcentral"
+    ]
+   },
+   "atteinte": "Une lésion de ses bords donne un déficit moteur (devant) et sensitif (derrière) du côté opposé du corps",
+   "clinique": "Sur l'imagerie, le sillon central sert de point de départ pour reconnaître le gyrus précentral, donc la région motrice, avant une opération",
+   "memo": "Sillon de Rolando, l'ancien nom : la frontière entre agir et sentir",
+   "variantes": "Son tracé est reconnaissable chez tous, mais sa forme (coudes, interruptions) varie d'un hémisphère à l'autre",
+   "sources": [
+    "gray1918",
+    "kenhub-cortex",
+    "tma-cerveau",
+    "wp-cortex-moteur"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-cingulaire",
+   "resume": "Le sillon de la face médiale qui sépare le gyrus cingulaire du gyrus frontal supérieur et du lobe pariétal.",
+   "partie": "telencephale",
+   "situation": "Face médiale de l'hémisphère, en arche au-dessus du corps calleux, parallèle à lui ; il remonte en arrière par son rameau marginal pour atteindre le bord supérieur",
+   "fonction": "Repère : il sépare le gyrus cingulaire (lobe limbique) du gyrus frontal supérieur et du lobule paracentral, puis du précuneus ; le cortex cingulaire qui le borde règle émotions et motivation",
+   "connexions": {
+    "texte": "Entre le gyrus cingulaire et les gyrus de la face médiale (frontal supérieur, lobule paracentral, précuneus)",
+    "structures": [
+     "gyrus-cingulaire",
+     "gyrus-frontal-superieur",
+     "lobule-paracentral",
+     "precuneus"
+    ]
+   },
+   "atteinte": "Lésion du cortex cingulaire voisin : indifférence, perte d'initiative, émotions émoussées",
+   "memo": "Le sillon qui borde la ceinture, cingulum en latin : il en est la couture",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cortex",
+    "kenhub-cingulaire",
+    "kenhub-frontal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-circulaire-de-l-insula",
+   "resume": "Le sillon en arc qui entoure l'insula et la sépare des opercules qui la recouvrent.",
+   "partie": "telencephale",
+   "situation": "Au fond du sillon latéral, il contourne l'insula en avant, en haut et en arrière, entre elle et les opercules frontal, pariétal et temporal",
+   "fonction": "Repère : il délimite l'insula (aussi appelé sillon de Reil) ; le cortex insulaire qu'il borde traite le goût, la douleur et les sensations viscérales",
+   "connexions": {
+    "texte": "Entoure le cortex insulaire",
+    "structures": [
+     "cortex-insulaire"
+    ]
+   },
+   "atteinte": "Une lésion du cortex insulaire voisin perturbe la perception de la douleur du côté opposé et la parole articulée ; l'artère cérébrale moyenne est souvent en cause",
+   "memo": "Un cercle autour de l'île : le sillon circulaire fait le tour de l'insula",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cortex",
+    "wp-insula"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-collateral-transverse-posterieur",
+   "resume": "Un petit sillon transversal de la face inférieure du lobe occipital, près de la scissure collatérale.",
+   "partie": "telencephale",
+   "situation": "Face inférieure du lobe occipital, en arrière de la scissure collatérale ; il fait partie des sillons accessoires de la région occipitotemporale",
+   "fonction": "Repère mineur : il découpe le cortex de la face inférieure du lobe occipital ; le cortex visuel (gyrus lingual, aires 17 et 18) et le gyrus fusiforme le bordent",
+   "connexions": {
+    "texte": "Voisin de la scissure collatérale et du gyrus lingual",
+    "structures": [
+     "scissure-collaterale",
+     "gyrus-lingual"
+    ]
+   },
+   "atteinte": "Pas d'atteinte propre : la lésion du cortex voisin donne un déficit du champ visuel supérieur du côté opposé (gyrus lingual) ou une difficulté à reconnaître les visages",
+   "memo": "Un sillon d'appoint près de la scissure collatérale, à l'arrière de la face inférieure",
+   "variantes": "Inconstant et variable",
+   "sources": [
+    "gray1918",
+    "kenhub-occipital",
+    "wp-fusiforme"
+   ],
+   "divergences": "Ce nom n'apparaît dans aucune référence consultée (Gray, Kenhub, Wikipédia, un article sur la nomenclature des sillons) : sa place est déduite de la nomenclature et reste incertaine"
+  },
+  {
+   "id": "sillon-frontal-inferieur",
+   "resume": "Le sillon qui sépare le gyrus frontal moyen du gyrus frontal inférieur, où se trouve l'aire de Broca.",
+   "partie": "telencephale",
+   "situation": "Face latérale du lobe frontal, il part du sillon précentral et court vers l'avant, au-dessous du sillon frontal supérieur",
+   "fonction": "Repère : il sépare les gyrus frontaux moyen et inférieur ; sous lui, la partie opercularis et la partie triangularis du gyrus frontal inférieur forment l'aire de Broca (aires 44 et 45) de l'hémisphère dominant",
+   "connexions": {
+    "texte": "Entre le gyrus frontal moyen et le gyrus frontal inférieur",
+    "structures": [
+     "gyrus-frontal-moyen",
+     "partie-operculaire-du-gyrus-frontal-inferieur",
+     "partie-triangulaire-du-gyrus-frontal-inferieur",
+     "sillon-precentral"
+    ]
+   },
+   "atteinte": "Lésion du cortex de Broca qu'il borde, à gauche chez la plupart : aphasie de Broca (parole hachée et laborieuse, compréhension conservée), souvent avec une faiblesse du côté droit du corps",
+   "memo": "Sous le sillon frontal inférieur, Broca : l'endroit où l'on met les mots en bouche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-frontal",
+    "wp-frontal-inf"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-frontal-superieur",
+   "resume": "Le sillon qui sépare le gyrus frontal supérieur du gyrus frontal moyen.",
+   "partie": "telencephale",
+   "situation": "Face latérale du lobe frontal, il part du sillon précentral et court vers l'avant, parallèle au bord supérieur de l'hémisphère",
+   "fonction": "Repère : il sépare les gyrus frontaux supérieur et moyen ; le cortex préfrontal dorsolatéral, qui gère la mémoire de travail et la planification, le borde",
+   "connexions": {
+    "texte": "Entre les gyrus frontaux supérieur et moyen ; naît du sillon précentral",
+    "structures": [
+     "gyrus-frontal-superieur",
+     "gyrus-frontal-moyen",
+     "sillon-precentral"
+    ]
+   },
+   "atteinte": "Une lésion du cortex préfrontal qui le borde gêne la planification et la mémoire de travail ; aucune paralysie",
+   "memo": "Supérieur : le plus haut des deux sillons frontaux, sous le bord de l'hémisphère",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-frontal",
+    "kenhub-cortex"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-intermediaire-primaire-de-jensen",
+   "resume": "Le petit sillon qui part du sillon intrapariétal et sépare le gyrus supramarginal du gyrus angulaire.",
+   "partie": "telencephale",
+   "situation": "Lobule pariétal inférieur, il naît du sillon intrapariétal et descend vers le bas ; il marque la limite postérieure du gyrus supramarginal",
+   "fonction": "Repère : il aide à distinguer le gyrus supramarginal (devant) du gyrus angulaire (derrière) ; le cortex qui le borde participe au langage, à la lecture et à l'attention spatiale",
+   "connexions": {
+    "texte": "Naît du sillon intrapariétal ; sépare le gyrus supramarginal du gyrus angulaire",
+    "structures": [
+     "sillon-intraparietal",
+     "gyrus-supramarginal",
+     "gyrus-angulaire"
+    ]
+   },
+   "atteinte": "Il n'a pas d'atteinte propre : la lésion du cortex voisin trouble le langage et la lecture (hémisphère dominant) ou l'attention spatiale (non dominant)",
+   "memo": "Jensen : le petit trait qui sépare deux voisins, supramarginal devant, angulaire derrière",
+   "variantes": "Variable : franc, simple fossette, ou absent selon les hémisphères ; une étude l'a trouvé au moins esquissé dans 59 hémisphères sur 60",
+   "sources": [
+    "pmc-jensen",
+    "frontiers-sillons",
+    "kenhub-parietal"
+   ],
+   "divergences": "Les sources ne s'accordent pas sur sa constance : certaines le disent très variable, une étude le retrouve presque toujours (au moins esquissé)"
+  },
+  {
+   "id": "sillon-intraparietal",
+   "resume": "Le sillon horizontal qui sépare le lobule pariétal supérieur du lobule pariétal inférieur.",
+   "partie": "telencephale",
+   "situation": "Face latérale du lobe pariétal, horizontal ; il part souvent du sillon postcentral et se termine vers l'arrière, dans le lobe occipital",
+   "fonction": "Repère : il sépare les lobules pariétaux supérieur et inférieur ; le cortex qui le borde intègre la vision et la position pour guider les gestes et l'attention dans l'espace",
+   "connexions": {
+    "texte": "Entre le lobule pariétal supérieur et les gyrus supramarginal et angulaire",
+    "structures": [
+     "lobule-parietal-superieur",
+     "gyrus-supramarginal",
+     "gyrus-angulaire",
+     "sillon-postcentral"
+    ]
+   },
+   "atteinte": "Lésion du cortex pariétal voisin : négligence de l'espace opposé (surtout à droite), difficulté à saisir ou viser un objet vu",
+   "memo": "Intra-pariétal : un fossé horizontal à l'intérieur du lobe pariétal, qui coupe en haut et en bas",
+   "variantes": "Parfois continu, parfois en plusieurs segments ; ses jonctions varient d'un hémisphère à l'autre",
+   "sources": [
+    "gray1918",
+    "kenhub-parietal",
+    "pmc-jensen",
+    "wp-parietal-sup"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-lateral-rameau-posterieur",
+   "resume": "La branche postérieure du sillon latéral, la plus longue : elle sépare le lobe temporal des lobes frontal et pariétal.",
+   "partie": "telencephale",
+   "situation": "Face latérale de l'hémisphère, elle part du fond du sillon latéral, file vers l'arrière et remonte légèrement dans le lobe pariétal ; elle est coiffée par le gyrus supramarginal",
+   "fonction": "Repère majeur : elle sépare le lobe temporal en dessous des lobes frontal et pariétal ; la zone du langage de l'hémisphère dominant l'entoure (Broca en avant, Wernicke en arrière), d'où le nom de zone périsylvienne",
+   "connexions": {
+    "texte": "Bordée par le gyrus temporal supérieur, le gyrus supramarginal et l'insula, qu'elle recouvre",
+    "structures": [
+     "gyrus-temporal-superieur",
+     "gyrus-supramarginal",
+     "cortex-insulaire"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Les branches de l'artère cérébrale moyenne cheminent dans sa profondeur",
+    "arteres": [
+     "artere-cerebrale-moyenne"
+    ]
+   },
+   "atteinte": "Une lésion de la zone périsylvienne de l'hémisphère dominant donne une aphasie (Broca en avant, Wernicke en arrière) ; du côté opposé, une atteinte motrice ou sensitive peut s'y ajouter",
+   "clinique": "Un accident vasculaire dans le territoire de l'artère cérébrale moyenne atteint le plus souvent ces régions, d'où l'aphasie et l'hémiplégie associées",
+   "memo": "Le sillon de Sylvius : la rivière qui longe les deux aires du langage, Broca devant, Wernicke derrière",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cortex",
+    "tma-cerveau",
+    "kenhub-frontal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-lunaire",
+   "resume": "Un sillon de la face latérale du lobe occipital, net chez les singes mais discret ou absent chez l'humain.",
+   "partie": "telencephale",
+   "situation": "Face latérale du lobe occipital, en arrière ; chez l'humain, il est inconstant et plus petit que chez les singes ; il divise parfois le gyrus occipital moyen",
+   "fonction": "Repère inconstant : il marque la limite entre l'aire visuelle primaire et l'aire secondaire chez les singes ; le cortex occipital voisin est visuel (aires 18 et 19)",
+   "connexions": {
+    "texte": "Dans le gyrus occipital latéral, au voisinage du pôle occipital",
+    "structures": [
+     "gyrus-occipital-lateral",
+     "pole-occipital"
+    ]
+   },
+   "atteinte": "Pas d'atteinte propre : la lésion du cortex visuel voisin donne des troubles de l'interprétation des images (aires d'association) ou un déficit du champ visuel (aire primaire)",
+   "memo": "Lunaire, en croissant : le sillon des singes, que l'humain a presque perdu",
+   "variantes": "Inconstant : une étude sur 220 cerveaux humains n'en a pas trouvé de trace nette",
+   "sources": [
+    "wp-lunaire",
+    "frontiers-sillons",
+    "tma-cerveau",
+    "kenhub-occipital"
+   ],
+   "divergences": "Son existence chez l'humain est discutée : certains auteurs le décrivent, une étude en IRM n'en trouve pas d'équivalent"
+  },
+  {
+   "id": "sillon-occipital-anterieur",
+   "resume": "Le sillon vertical qui marque la limite avant du lobe occipital, sur la face latérale.",
+   "partie": "telencephale",
+   "situation": "Face latérale de l'hémisphère, vers l'encoche préoccipitale ; il correspond à la limite antérieure du lobe occipital, en bas, sur la vue latérale",
+   "fonction": "Repère : il aide à situer la limite entre le lobe occipital et le lobe temporal ; le cortex visuel d'association (aires 18 et 19) le borde",
+   "connexions": {
+    "texte": "À la jonction des gyrus occipital inférieur et temporal inférieur",
+    "structures": [
+     "gyrus-occipital-inferieur",
+     "gyrus-temporal-inferieur"
+    ]
+   },
+   "atteinte": "Pas d'atteinte propre : la lésion du cortex voisin trouble l'analyse des images (agnosie visuelle) ou la reconnaissance des visages et des objets",
+   "memo": "Le sillon d'avant le lobe occipital : une borne sur la face latérale",
+   "variantes": "Variable et parfois difficile à reconnaître",
+   "sources": [
+    "frontiers-sillons",
+    "wp-lobe-occipital",
+    "kenhub-occipital"
+   ],
+   "divergences": "Les références consultées le décrivent peu : sa place suit surtout la nomenclature et un article de nomenclature des sillons"
+  },
+  {
+   "id": "sillon-occipital-transverse",
+   "resume": "Un sillon de la face latérale du lobe occipital, orienté en travers.",
+   "partie": "telencephale",
+   "situation": "Face postéro-latérale du lobe occipital, près de sa limite antérieure, d'orientation transversale ; il se situe à la partie supérieure du lobe",
+   "fonction": "Repère : il découpe la face latérale du lobe occipital ; le cortex visuel d'association (aires 18 et 19) qui le borde analyse formes et espace",
+   "connexions": {
+    "texte": "Face latérale du lobe occipital, près des gyrus occipitaux supérieurs",
+    "structures": [
+     "gyri-occipitaux-superieurs",
+     "gyrus-occipital-lateral"
+    ]
+   },
+   "atteinte": "Pas d'atteinte propre : la lésion du cortex d'association voisin trouble l'interprétation des images vues ou le repérage visuel dans l'espace",
+   "memo": "Le sillon de travers : une encoche transversale sur la face latérale de l'occiput",
+   "variantes": "Variable d'un cerveau à l'autre",
+   "sources": [
+    "frontiers-sillons",
+    "kenhub-occipital",
+    "wp-lobe-occipital"
+   ],
+   "divergences": "Sa place exacte est peu décrite dans les références consultées"
+  },
+  {
+   "id": "sillon-occipitotemporal",
+   "resume": "Le sillon qui borde en dehors le gyrus fusiforme, sur la face inférieure du lobe temporal.",
+   "partie": "telencephale",
+   "situation": "Face inférieure des lobes temporal et occipital, parallèle à la scissure collatérale, entre le gyrus fusiforme (en dedans) et le gyrus temporal inférieur (en dehors)",
+   "fonction": "Repère : il limite le gyrus occipitotemporal latéral et le sépare du gyrus temporal inférieur ; le cortex qui le borde reconnaît visages et objets",
+   "connexions": {
+    "texte": "Entre le gyrus occipitotemporal latéral et le gyrus temporal inférieur",
+    "structures": [
+     "gyrus-occipitotemporal-lateral",
+     "gyrus-temporal-inferieur"
+    ]
+   },
+   "atteinte": "Lésion du cortex voisin : prosopagnosie (visages) ou agnosie visuelle, surtout si elle atteint les deux côtés ou l'hémisphère droit",
+   "memo": "Le sillon qui borde l'endroit où l'on reconnaît les visages",
+   "variantes": null,
+   "sources": [
+    "wp-fusiforme",
+    "kenhub-temporal",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-olfactif",
+   "resume": "Le sillon de la face inférieure du lobe frontal qui loge le bulbe et le tractus olfactifs.",
+   "partie": "telencephale",
+   "situation": "Face orbitaire du lobe frontal, orienté d'avant en arrière, séparant le gyrus rectus (en dedans) des gyrus orbitaires (en dehors)",
+   "fonction": "Repère : il abrite le bulbe et le tractus olfactifs, qui portent l'information de l'odorat jusqu'au cortex ; il limite le gyrus rectus",
+   "connexions": {
+    "texte": "Loge le bulbe et le tractus olfactifs ; sépare le gyrus rectus des gyrus orbitaires",
+    "structures": [
+     "nerf-olfactif-i",
+     "gyrus-rectus",
+     "gyri-orbitaires"
+    ]
+   },
+   "atteinte": "Une lésion du bulbe ou du tractus olfactif qu'il loge abolit l'odorat du même côté (anosmie unilatérale) ; celle du cortex orbitofrontal voisin trouble le comportement",
+   "memo": "Le sillon de l'odorat : on y trouve le tractus olfactif, comme un câble dans sa gouttière",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-frontal",
+    "radiopaedia-frontal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-paracentral",
+   "resume": "Le petit sillon médial qui limite en avant le lobule paracentral.",
+   "partie": "telencephale",
+   "situation": "Face médiale de l'hémisphère, vertical, entre le gyrus frontal supérieur en avant et le lobule paracentral en arrière ; il s'ouvre vers le haut près du sillon cingulaire",
+   "fonction": "Repère : il marque la limite antérieure du lobule paracentral ; le cortex qu'il borde commande et sent la jambe opposée",
+   "connexions": {
+    "texte": "Limite en avant le lobule paracentral",
+    "structures": [
+     "lobule-paracentral",
+     "gyrus-frontal-superieur",
+     "sillon-cingulaire"
+    ]
+   },
+   "atteinte": "Une lésion du cortex voisin (artère cérébrale antérieure) donne une faiblesse de la jambe du côté opposé, avec un déficit sensitif et des troubles urinaires",
+   "memo": "Le sillon qui annonce la jambe : devant lui, le frontal ; derrière, le lobule paracentral",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-paracentral",
+    "kenhub-frontal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-parieto-occipital",
+   "resume": "Le sillon de la face médiale qui sépare le lobe pariétal du lobe occipital.",
+   "partie": "telencephale",
+   "situation": "Face médiale de l'hémisphère, il descend du bord supérieur et rejoint le sillon calcarin en arrière du splénium ; une courte entaille de la face latérale le prolonge, à environ 5 cm du pôle occipital",
+   "fonction": "Repère : il sépare le précuneus (devant) du cunéus (derrière), donc le lobe pariétal du lobe occipital ; il borde le cortex visuel et le cortex d'association pariétale",
+   "connexions": {
+    "texte": "Sépare le précuneus du cunéus ; rejoint le sillon calcarin",
+    "structures": [
+     "precuneus",
+     "cuneus",
+     "sillon-calcarin"
+    ]
+   },
+   "atteinte": "Une lésion du cortex voisin atteint le champ visuel inférieur du côté opposé (cunéus) ou l'orientation visuospatiale (pariétal) ; on parle d'ataxie optique quand la main n'atteint plus la cible vue",
+   "memo": "Le sillon-frontière : en avant le précuneus pariétal, en arrière le cunéus occipital",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-occipital",
+    "kenhub-parietal",
+    "wp-precuneus"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-postcentral",
+   "resume": "Le sillon en arrière du gyrus postcentral, qui le sépare du lobule pariétal supérieur.",
+   "partie": "telencephale",
+   "situation": "Face latérale du lobe pariétal, parallèle au sillon central et en arrière de lui ; il se prolonge souvent par le sillon intrapariétal",
+   "fonction": "Repère : il limite en arrière le gyrus postcentral ; au-delà, le cortex d'association somesthésique (aires 5 et 7) intègre les sensations pour reconnaître les objets et guider la main",
+   "connexions": {
+    "texte": "Limite en arrière le gyrus postcentral ; se continue par le sillon intrapariétal",
+    "structures": [
+     "gyrus-postcentral",
+     "sillon-intraparietal"
+    ]
+   },
+   "atteinte": "Une lésion du cortex pariétal qu'il borde empêche de reconnaître un objet au toucher (astéréognosie) et peut donner une négligence de l'hémicorps opposé, surtout à droite",
+   "memo": "Le sillon d'après la bande sensitive : au-delà, le cerveau comprend ce que la main a senti",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-parietal",
+    "wp-parietal-sup"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-precentral",
+   "resume": "Le sillon en avant du gyrus précentral, qui le sépare du cortex prémoteur du lobe frontal.",
+   "partie": "telencephale",
+   "situation": "Face latérale du lobe frontal, parallèle au sillon central et en avant de lui ; de lui partent vers l'avant les sillons frontaux supérieur et inférieur",
+   "fonction": "Repère : il limite en avant le gyrus précentral et marque le début des gyrus frontaux ; le cortex prémoteur qui le borde prépare et enchaîne les mouvements",
+   "connexions": {
+    "texte": "Limite en avant le gyrus précentral ; donne naissance aux sillons frontaux",
+    "structures": [
+     "gyrus-precentral",
+     "sillon-frontal-superieur",
+     "sillon-frontal-inferieur"
+    ]
+   },
+   "atteinte": "Une lésion du cortex prémoteur qui le borde désorganise les gestes (mal enchaînés, maladroits) sans paralysie franche",
+   "memo": "Le sillon d'avant la bande motrice : il prépare le geste que le gyrus précentral exécute",
+   "variantes": "Souvent interrompu en une partie supérieure et une partie inférieure",
+   "sources": [
+    "gray1918",
+    "kenhub-frontal",
+    "kenhub-cortex"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-subparietal",
+   "resume": "Le sillon de la face médiale qui sépare le précuneus du gyrus cingulaire.",
+   "partie": "telencephale",
+   "situation": "Face médiale du lobe pariétal, au-dessus du gyrus cingulaire, il limite le précuneus par en dessous ; court, souvent ramifié",
+   "fonction": "Repère : il sépare le précuneus (au-dessus) du gyrus cingulaire postérieur (au-dessous) ; ces deux régions forment avec d'autres le réseau du mode par défaut",
+   "connexions": {
+    "texte": "Entre le précuneus et le gyrus cingulaire",
+    "structures": [
+     "precuneus",
+     "gyrus-cingulaire"
+    ]
+   },
+   "atteinte": "Pas de signe propre : la lésion du précuneus ou du cingulaire postérieur voisin touche la mémoire des événements et le repérage visuospatial",
+   "memo": "Sous-pariétal : le sillon qui court sous le précuneus",
+   "variantes": "Court et souvent ramifié ; sa forme varie beaucoup",
+   "sources": [
+    "gray1918",
+    "wp-precuneus",
+    "kenhub-cingulaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-temporal-inferieur",
+   "resume": "Le sillon qui sépare le gyrus temporal moyen du gyrus temporal inférieur.",
+   "partie": "telencephale",
+   "situation": "Face latérale du lobe temporal, sous le sillon temporal supérieur, parallèle à lui ; souvent interrompu",
+   "fonction": "Repère : il sépare les gyrus temporaux moyen et inférieur ; le cortex qui le borde est celui de la reconnaissance visuelle des objets et des visages",
+   "connexions": {
+    "texte": "Entre les gyrus temporaux moyen et inférieur",
+    "structures": [
+     "gyrus-temporal-moyen",
+     "gyrus-temporal-inferieur"
+    ]
+   },
+   "atteinte": "Lésion du cortex voisin : difficulté à reconnaître les objets ou les visages (agnosie visuelle, prosopagnosie), surtout si elle atteint les deux côtés",
+   "memo": "Le sillon du bas : il sépare ce qu'on perçoit du mouvement de ce qu'on reconnaît",
+   "variantes": "Souvent interrompu en plusieurs segments",
+   "sources": [
+    "gray1918",
+    "kenhub-cortex",
+    "kenhub-temporal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillon-temporal-superieur",
+   "resume": "Le sillon qui sépare le gyrus temporal supérieur du gyrus temporal moyen.",
+   "partie": "telencephale",
+   "situation": "Face latérale du lobe temporal, parallèle au sillon latéral ; son extrémité postérieure remonte dans le lobe pariétal, où le gyrus angulaire la coiffe",
+   "fonction": "Repère : il sépare les gyrus temporaux supérieur et moyen ; son cortex traite la parole et les signaux sociaux (voix, regard), à côté de l'aire de Wernicke",
+   "connexions": {
+    "texte": "Entre les gyrus temporaux supérieur et moyen ; coiffé en arrière par le gyrus angulaire",
+    "structures": [
+     "gyrus-temporal-superieur",
+     "gyrus-temporal-moyen",
+     "gyrus-angulaire"
+    ]
+   },
+   "atteinte": "Lésion du cortex qui le borde, dans l'hémisphère dominant : aphasie de Wernicke (parole fluide, compréhension perdue) ; des deux côtés, troubles de la reconnaissance des voix",
+   "memo": "Il sépare le gyrus de l'audition de celui du milieu et finit sous le gyrus angulaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cortex",
+    "kenhub-temporal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sillons-orbitaires",
+   "resume": "Les sillons en forme de H qui divisent la face orbitaire du lobe frontal en quatre gyrus.",
+   "partie": "telencephale",
+   "situation": "Face orbitaire du lobe frontal ; l'ensemble dessine un H (parfois un K) dont les branches séparent les gyrus orbitaires médial, antérieur, latéral et postérieur",
+   "fonction": "Repère : ils découpent la face orbitaire ; le cortex orbitofrontal qui les borde évalue récompenses et punitions et guide le comportement",
+   "connexions": {
+    "texte": "Divisent les gyrus orbitaires ; le sillon olfactif les borde en dedans",
+    "structures": [
+     "gyri-orbitaires",
+     "sillon-olfactif"
+    ]
+   },
+   "atteinte": "Lésion du cortex orbitofrontal qu'ils bordent : désinhibition, impulsivité, mauvaise conduite sociale, sans paralysie",
+   "memo": "Un H sur le plafond de l'orbite : ses branches dessinent les quatre gyrus",
+   "variantes": "Leur dessin varie : H chez beaucoup, K chez d'autres",
+   "sources": [
+    "gray1918",
+    "wp-orbitofrontal",
+    "kenhub-frontal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "encephale-sillons-orbitaires",
+   "resume": "Les sillons orbitaires, vus ici surtout par leur branche latérale, qui limite le gyrus orbitaire latéral.",
+   "partie": "telencephale",
+   "situation": "Face orbitaire du lobe frontal ; la branche latérale du H sépare le gyrus orbitaire latéral des gyrus antérieur et postérieur",
+   "fonction": "Repère : ils découpent la face orbitaire en gyrus ; le cortex orbitofrontal qui les borde évalue récompenses et punitions et guide le comportement",
+   "connexions": {
+    "texte": "Divisent les gyrus orbitaires",
+    "structures": [
+     "encephale-gyri-orbitaires",
+     "sillon-olfactif"
+    ]
+   },
+   "atteinte": "Lésion du cortex orbitofrontal voisin : désinhibition, impulsivité, jugement social altéré, sans paralysie",
+   "memo": "Le côté du H : la branche qui garde le bord externe de la face orbitaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wp-orbitofrontal",
+    "kenhub-frontal"
+   ],
+   "divergences": null
+  }
+ ]
+}

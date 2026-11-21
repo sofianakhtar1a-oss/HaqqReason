@@ -4,6 +4,7 @@ import { useSyncExternalStore } from "react";
 import { tiroir } from "@/lib/client/compte";
 import { noter } from "@/lib/client/synchro/journal";
 import { PAR_ID } from "./catalogue";
+import { type Carte, type Certitude, carteDeBoite, degre, due, type Facette, noteDe, retenue, revoir } from "./memoire";
 import { type CategorieId, ELEMENTS_APPRIS, IDS_CATEGORIES, nombreNiveaux, niveauxDe } from "./niveaux";
 
 /*
@@ -17,6 +18,9 @@ import { type CategorieId, ELEMENTS_APPRIS, IDS_CATEGORIES, nombreNiveaux, nivea
  *     « sue » ; elle revient au bon moment pour le rester (1, 2, 4, 8, 16 jours).
  *   • Le profil : l'expérience, la série de jours (et ses gels), l'objectif du jour, les records,
  *     les réglages.
+ *   • La mémoire de chaque facette (le nom, la place, la fonction, les nerfs, les attaches, les vaisseaux,
+ *     la clinique) de chaque structure : une carte FSRS (voir memoire.ts), clé « facette:<id>|<facette> ».
+ *     La boîte de Leitner continue d'avancer à côté : rien de ce qui existait ne se perd.
  */
 
 /** [bonnes, fautes, boîte 0-5, jour du dernier passage (jours depuis 1970)] */
@@ -62,6 +66,8 @@ export type Etat = {
   confusions: Record<string, number>;
   favoris: Record<string, number>;
   journal: EntreeJournal[];
+  /** Les cartes de mémoire par facette : « <id>|<facette> » → carte FSRS. */
+  facettes: Record<string, Carte>;
 };
 
 const NOM = "haqqreason-ecorche";
@@ -87,7 +93,7 @@ export const profilVide = (): Profil => ({
   plusDeTemps: false,
   q: 0,
 });
-const vide = (): Etat => ({ niveaux: {}, elements: {}, profil: profilVide(), records: {}, erreurs: [], confusions: {}, favoris: {}, journal: [] });
+const vide = (): Etat => ({ niveaux: {}, elements: {}, profil: profilVide(), records: {}, erreurs: [], confusions: {}, favoris: {}, journal: [], facettes: {} });
 
 let etat: Etat | null = null;
 const abonnes = new Set<() => void>();
@@ -107,6 +113,7 @@ function lire(): Etat {
             confusions: brut.confusions ?? {},
             favoris: brut.favoris ?? {},
             journal: Array.isArray(brut.journal) ? brut.journal : [],
+            facettes: brut.facettes && typeof brut.facettes === "object" ? brut.facettes : {},
           }
         : vide();
   } catch {
@@ -224,6 +231,62 @@ export function prevision(e: Etat, jours = 7): number[] {
   return sortie;
 }
 
+/* ---------- La mémoire par facette ---------- */
+
+export const cleFacette = (id: string, f: Facette) => `${id}|${f}`;
+
+/** La carte d'une facette ; pour le nom, celle que donne l'ancienne boîte de Leitner tant qu'il n'y en a pas d'autre. */
+export function carte(e: Etat, id: string, f: Facette): Carte | undefined {
+  const c = e.facettes[cleFacette(id, f)];
+  if (c) return c;
+  const m = e.elements[id];
+  return f === "nom" && m && m[0] + m[1] > 0 ? carteDeBoite(m) : undefined;
+}
+
+export const degreFacette = (e: Etat, id: string, f: Facette, jour = aujourdhui()) => degre(carte(e, id, f), jour);
+
+/** Les facettes à revoir aujourd'hui, les plus près d'être oubliées d'abord. */
+export function facettesDues(e: Etat, jour = aujourdhui()): { id: string; facette: Facette; retenue: number }[] {
+  const sortie: { id: string; facette: Facette; retenue: number }[] = [];
+  const vues = new Set<string>();
+  for (const [k, c] of Object.entries(e.facettes)) {
+    const [id, f] = k.split("|") as [string, Facette];
+    vues.add(k);
+    if (PAR_ID.has(id) && due(c, jour)) sortie.push({ id, facette: f, retenue: retenue(jour - c[2], c[0]) });
+  }
+  // Les noms appris avant les facettes : leur boîte dit s'ils sont dus.
+  for (const [id, m] of Object.entries(e.elements)) {
+    if (vues.has(cleFacette(id, "nom")) || !PAR_ID.has(id) || m[0] + m[1] === 0) continue;
+    const c = carteDeBoite(m);
+    if (due(c, jour)) sortie.push({ id, facette: "nom", retenue: retenue(jour - c[2], c[0]) });
+  }
+  return sortie.sort((a, b) => a.retenue - b.retenue);
+}
+
+/** Pour une liste de structures : combien sont sues (au moins une semaine de stabilité), facette par facette. */
+export function maitriseParFacette(e: Etat, ids: string[], facettes: Facette[], jour = aujourdhui()): Record<Facette, { sues: number; vues: number; total: number }> {
+  const sortie = {} as Record<Facette, { sues: number; vues: number; total: number }>;
+  for (const f of facettes) {
+    let sues = 0;
+    let vues = 0;
+    for (const id of ids) {
+      const d = degre(carte(e, id, f), jour);
+      if (d > 0) vues++;
+      if (d >= 3) sues++;
+    }
+    sortie[f] = { sues, vues, total: ids.length };
+  }
+  return sortie;
+}
+
+function majFacette(id: string, f: Facette, juste: boolean, certitude?: Certitude, rapide?: boolean) {
+  const e = lire();
+  const k = cleFacette(id, f);
+  const nouvelle = revoir(carte(e, id, f), noteDe(juste, certitude, rapide), aujourdhui());
+  ecrire({ ...e, facettes: { ...e.facettes, [k]: nouvelle } });
+  void noter("corps", `facette:${k}`);
+}
+
 /* ---------- Écrire ---------- */
 
 function majElement(id: string, juste: boolean) {
@@ -256,9 +319,15 @@ function avancerObjectif(p: Profil): Profil {
   return suite;
 }
 
-/** Une réponse donnée (dans une partie, une fiche retournée, un jeu). */
-export function noterReponse(id: string, juste: boolean, xp = 0) {
-  if (PAR_ID.has(id)) majElement(id, juste);
+/**
+ * Une réponse donnée (dans une partie, une fiche retournée, un jeu). `facette` : ce que la question interrogeait
+ * (le nom par défaut) ; `certitude` : ce que la personne en dit ; `rapide` : répondu sans hésiter.
+ */
+export function noterReponse(id: string, juste: boolean, xp = 0, o: { facette?: Facette; certitude?: Certitude; rapide?: boolean } = {}) {
+  if (PAR_ID.has(id)) {
+    majElement(id, juste);
+    majFacette(id, o.facette ?? "nom", juste, o.certitude, o.rapide);
+  }
   const e = lire();
   const profil = avancerObjectif({ ...e.profil, xp: e.profil.xp + Math.max(0, xp) });
   ecrire({ ...e, profil: { ...profil, q: Date.now() } });
@@ -339,7 +408,9 @@ export function remettreAZero(c: CategorieId) {
   const niveaux = Object.fromEntries(Object.entries(e.niveaux).filter(([k]) => !k.startsWith(`${c}:`)));
   const ids = new Set(c === "corps" ? [] : niveauxDe(c).flatMap((x) => x.nouveaux));
   const elements = Object.fromEntries(Object.entries(e.elements).filter(([id]) => !ids.has(id)));
-  ecrire({ ...e, niveaux, elements });
+  const facettes = Object.fromEntries(Object.entries(e.facettes).filter(([k]) => !ids.has(k.split("|")[0])));
+  for (const k of Object.keys(e.facettes)) if (!(k in facettes)) void noter("corps", `facette:${k}`);
+  ecrire({ ...e, niveaux, elements, facettes });
   for (let n = 1; n <= nombreNiveaux(c); n++) void noter("corps", `niveau:${c}:${n}`);
   for (const id of ids) void noter("corps", `element:${id}`);
 }
@@ -362,6 +433,7 @@ export function importerProgression(texte: string): boolean {
   if (x.profil) rangerValeur("profil", x.profil);
   for (const [k, v] of Object.entries(x.niveaux ?? {})) rangerValeur(`niveau:${k}`, v);
   for (const [k, v] of Object.entries(x.elements ?? {})) rangerValeur(`element:${k}`, v);
+  for (const [k, v] of Object.entries(x.facettes ?? {})) rangerValeur(`facette:${k}`, v);
   for (const c of ["records", "erreurs", "confusions", "favoris", "journal"] as const) if (x[c]) rangerValeur(c, x[c]);
   for (const { c } of clesLocales()) void noter("corps", c);
   return true;
@@ -375,6 +447,7 @@ export function clesLocales(): { c: string; q?: number }[] {
     { c: "profil", q: e.profil.q || undefined },
     ...Object.keys(e.niveaux).map((k) => ({ c: `niveau:${k}` })),
     ...Object.keys(e.elements).map((id) => ({ c: `element:${id}` })),
+    ...Object.keys(e.facettes).map((k) => ({ c: `facette:${k}` })),
     ...(Object.keys(e.records).length ? [{ c: "records" }] : []),
     ...(e.erreurs.length ? [{ c: "erreurs" }] : []),
     ...(Object.keys(e.confusions).length ? [{ c: "confusions" }] : []),
@@ -388,6 +461,7 @@ export function valeurLocale(c: string): unknown {
   if (c === "profil") return e.profil;
   if (c.startsWith("niveau:")) return e.niveaux[c.slice(7)];
   if (c.startsWith("element:")) return e.elements[c.slice(8)];
+  if (c.startsWith("facette:")) return e.facettes[c.slice(8)];
   if (c === "records") return e.records;
   if (c === "erreurs") return e.erreurs;
   if (c === "confusions") return e.confusions;
@@ -448,6 +522,16 @@ export function rangerValeur(c: string, v: unknown): boolean {
     ecrire({ ...e, elements: { ...e.elements, [id]: garde } });
     return garde !== b;
   }
+  if (c.startsWith("facette:")) {
+    const k = c.slice(8);
+    const a = e.facettes[k];
+    const b = Array.isArray(v) && v.length === 5 ? (v.map(nombre) as Carte) : undefined;
+    if (!b) return Boolean(a);
+    // Le passage le plus récent l'emporte (à égalité, la mémoire la plus stable).
+    const garde = !a || b[2] > a[2] || (b[2] === a[2] && b[0] >= a[0]) ? b : a;
+    ecrire({ ...e, facettes: { ...e.facettes, [k]: garde } });
+    return garde !== b;
+  }
   if (c === "records") {
     const r = (v ?? {}) as Record<string, unknown>;
     const records = { ...e.records };
@@ -500,6 +584,10 @@ export function effacerValeur(c: string) {
     const elements = { ...e.elements };
     delete elements[c.slice(8)];
     ecrire({ ...e, elements });
+  } else if (c.startsWith("facette:")) {
+    const facettes = { ...e.facettes };
+    delete facettes[c.slice(8)];
+    ecrire({ ...e, facettes });
   }
 }
 

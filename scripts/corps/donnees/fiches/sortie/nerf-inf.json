@@ -1,0 +1,1939 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), « The Lumbar Plexus » et « The Sacral Plexus » (texte intégral, Internet Archive)",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "tma-femoral": {
+   "titre": "TeachMeAnatomy, The Femoral Nerve",
+   "url": "https://teachmeanatomy.info/lower-limb/nerves/femoral-nerve/"
+  },
+  "tma-obturateur": {
+   "titre": "TeachMeAnatomy, The Obturator Nerve",
+   "url": "https://teachmeanatomy.info/lower-limb/nerves/obturator-nerve/"
+  },
+  "tma-sciatique": {
+   "titre": "TeachMeAnatomy, The Sciatic Nerve",
+   "url": "https://teachmeanatomy.info/lower-limb/nerves/sciatic-nerve/"
+  },
+  "tma-tibial": {
+   "titre": "TeachMeAnatomy, The Tibial Nerve",
+   "url": "https://teachmeanatomy.info/lower-limb/nerves/tibial-nerve/"
+  },
+  "tma-fibulaire-commun": {
+   "titre": "TeachMeAnatomy, The Common Fibular Nerve",
+   "url": "https://teachmeanatomy.info/lower-limb/nerves/common-fibular-nerve/"
+  },
+  "tma-fibulaire-superficiel": {
+   "titre": "TeachMeAnatomy, The Superficial Fibular Nerve",
+   "url": "https://teachmeanatomy.info/lower-limb/nerves/superficial-fibular-nerve/"
+  },
+  "tma-cutane-inf": {
+   "titre": "TeachMeAnatomy, Cutaneous Innervation of the Lower Limb",
+   "url": "https://teachmeanatomy.info/lower-limb/nerves/cutaneous-innervation/"
+  },
+  "tma-fessiers": {
+   "titre": "TeachMeAnatomy, Muscles of the Gluteal Region",
+   "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/"
+  },
+  "kenhub-femoral": {
+   "titre": "Kenhub, Femoral nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/femoral-nerve"
+  },
+  "kenhub-obturateur": {
+   "titre": "Kenhub, Obturator nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/obturator-nerve"
+  },
+  "kenhub-cutane-femoral-lateral": {
+   "titre": "Kenhub, Lateral femoral cutaneous nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/lateral-femoral-cutaneous-nerve"
+  },
+  "kenhub-gluteal-superieur": {
+   "titre": "Kenhub, Superior gluteal nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/superior-gluteal-nerve"
+  },
+  "kenhub-tibial": {
+   "titre": "Kenhub, Tibial nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/tibial-nerve"
+  },
+  "kenhub-fibulaire-commun": {
+   "titre": "Kenhub, Common fibular nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/common-fibular-nerve"
+  },
+  "kenhub-saphene": {
+   "titre": "Kenhub, Saphenous nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/saphenous-nerve"
+  },
+  "kenhub-sural": {
+   "titre": "Kenhub, Sural nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/sural-nerve"
+  },
+  "kenhub-genitofemoral": {
+   "titre": "Kenhub, Genitofemoral nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/genitofemoral-nerve"
+  },
+  "kenhub-ilio-inguinal": {
+   "titre": "Kenhub, Ilioinguinal nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/ilioinguinal-nerve"
+  },
+  "statpearls-meralgie": {
+   "titre": "StatPearls, Meralgia Paresthetica (NCBI Bookshelf NBK557735), lu sur statpearls.com",
+   "url": "https://www.statpearls.com/point-of-care/76580"
+  },
+  "wikipedia-fibulaire-commun": {
+   "titre": "Wikipedia (en), Common fibular nerve (en recoupement)",
+   "url": "https://en.wikipedia.org/wiki/Common_fibular_nerve"
+  },
+  "wikipedia-fibulaire-profond": {
+   "titre": "Wikipedia (en), Deep fibular nerve (en recoupement)",
+   "url": "https://en.wikipedia.org/wiki/Deep_fibular_nerve"
+  },
+  "wikipedia-plantaire-medial": {
+   "titre": "Wikipedia (en), Medial plantar nerve (en recoupement)",
+   "url": "https://en.wikipedia.org/wiki/Medial_plantar_nerve"
+  },
+  "wikipedia-plantaire-lateral": {
+   "titre": "Wikipedia (en), Lateral plantar nerve (en recoupement)",
+   "url": "https://en.wikipedia.org/wiki/Lateral_plantar_nerve"
+  },
+  "wikipedia-cutane-posterieur-cuisse": {
+   "titre": "Wikipedia (en), Posterior cutaneous nerve of thigh (en recoupement)",
+   "url": "https://en.wikipedia.org/wiki/Posterior_cutaneous_nerve_of_thigh"
+  },
+  "wikipedia-gluteal-superieur": {
+   "titre": "Wikipedia (en), Superior gluteal nerve (en recoupement)",
+   "url": "https://en.wikipedia.org/wiki/Superior_gluteal_nerve"
+  },
+  "wikipedia-carre-femoral": {
+   "titre": "Wikipedia (en), Nerve to quadratus femoris (en recoupement)",
+   "url": "https://en.wikipedia.org/wiki/Nerve_to_quadratus_femoris"
+  },
+  "wikipedia-piriforme": {
+   "titre": "Wikipedia (en), Nerve to piriformis (en recoupement)",
+   "url": "https://en.wikipedia.org/wiki/Nerve_to_piriformis"
+  },
+  "wikipedia-sural-medial": {
+   "titre": "Wikipedia (en), Medial sural cutaneous nerve (en recoupement)",
+   "url": "https://en.wikipedia.org/wiki/Medial_sural_cutaneous_nerve"
+  },
+  "wikipedia-sural": {
+   "titre": "Wikipedia (en), Sural nerve (en recoupement)",
+   "url": "https://en.wikipedia.org/wiki/Sural_nerve"
+  },
+  "wikipedia-reflexe-rotulien": {
+   "titre": "Wikipedia (en), Patellar reflex (en recoupement)",
+   "url": "https://en.wikipedia.org/wiki/Patellar_reflex"
+  },
+  "wikipedia-reflexe-achilleen": {
+   "titre": "Wikipedia (en), Ankle jerk reflex (en recoupement)",
+   "url": "https://en.wikipedia.org/wiki/Ankle_jerk_reflex"
+  },
+  "wikipedia-canal-tarsien": {
+   "titre": "Wikipedia (en), Tarsal tunnel syndrome (en recoupement)",
+   "url": "https://en.wikipedia.org/wiki/Tarsal_tunnel_syndrome"
+  }
+ },
+ "fiches": [
+  {
+   "id": "nerf-cutane-femoral-lateral",
+   "resume": "Le nerf sensitif du côté de la cuisse : il sent la peau de la face latérale de la cuisse, du grand trochanter jusqu'au genou.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Branche du plexus lombaire, issue des divisions postérieures des rameaux antérieurs de L2 et L3",
+    "racines": [
+     "L2",
+     "L3"
+    ]
+   },
+   "trajet": "Sort du bord latéral du grand psoas, croise l'iliaque vers l'épine iliaque antéro-supérieure, passe sous le ligament inguinal (parfois au travers) puis se divise en branches antérieure et postérieure",
+   "orifices": [
+    "Sous le ligament inguinal, près de l'épine iliaque antéro-supérieure"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Branche antérieure : face antérieure et latérale de la cuisse jusqu'au genou"
+    },
+    {
+     "nerf": null,
+     "texte": "Branche postérieure : face latérale de la cuisse, du grand trochanter au milieu de la cuisse"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la face antéro-latérale de la cuisse, du grand trochanter jusqu'au genou"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Compression sous le ligament inguinal, près de l'épine iliaque antéro-supérieure (méralgie paresthésique) : brûlures, fourmillements et engourdissement du haut de la face latérale de la cuisse, sans déficit moteur",
+   "test": "Tact et piqûre de la face latérale de la cuisse ; force et réflexes normaux ; gêne majorée hanche en extension (debout), soulagée hanche fléchie (assis)",
+   "clinique": "Favorisée par la ceinture serrée, l'obésité, la grossesse, le diabète ou une chirurgie de la hanche ou de l'abdomen ; le plus souvent bénigne, elle guérit souvent seule",
+   "memo": "Un nerf uniquement sensitif qui rase l'épine iliaque, là où serre la ceinture : l'engourdissement du côté de la cuisse",
+   "variantes": "Il peut passer au-dessus du ligament inguinal, au travers, ou entrer dans la cuisse en dehors de l'épine iliaque antéro-supérieure",
+   "sources": [
+    "gray1918",
+    "kenhub-cutane-femoral-lateral",
+    "statpearls-meralgie",
+    "tma-cutane-inf"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-sciatique",
+   "resume": "Le plus gros nerf du corps : il passe sous le piriforme, descend derrière la cuisse, commande les ischio-jambiers puis, par ses deux branches, toute la jambe et le pied.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Branche terminale du plexus sacral : tronc lombo-sacral (L4-L5) et rameaux antérieurs de S1 à S3",
+    "racines": [
+     "L4",
+     "L5",
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   "trajet": "Quitte le bassin par le foramen sciatique majeur sous le piriforme, descend sous le grand fessier entre le grand trochanter et l'ischion, passe derrière la cuisse sous le biceps fémoral et se divise vers le haut du creux poplité",
+   "orifices": [
+    "Foramen sciatique majeur, sous le piriforme"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameau articulaire de la hanche"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux musculaires aux ischio-jambiers et à la partie ischio-condylienne du grand adducteur"
+    },
+    {
+     "nerf": "nerf-tibial",
+     "texte": "Nerf tibial, branche terminale médiale et la plus volumineuse"
+    },
+    {
+     "nerf": "nerf-fibulaire-commun",
+     "texte": "Nerf fibulaire commun, branche terminale latérale"
+    }
+   ],
+   "moteur": {
+    "texte": "Les ischio-jambiers et la partie ischio-condylienne du grand adducteur ; la courte portion du biceps vient de sa part fibulaire. Sous le genou, tous les muscles par le tibial et le fibulaire commun",
+    "muscles": [
+     "biceps-femoral",
+     "semi-tendineux",
+     "semi-membraneux",
+     "grand-adducteur"
+    ]
+   },
+   "sensitif": {
+    "texte": "Pas de peau en propre : la jambe et le pied (sauf leur bord médial) sont sentis par le tibial et le fibulaire commun"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion haute (luxation de la hanche, fracture du cotyle, injection fessière) : ischio-jambiers et muscles sous le genou paralysés, pied ballant, anesthésie de la jambe et du pied sauf son bord médial ; la part fibulaire souffre souvent le plus",
+   "test": "Flexion du genou contre résistance, mouvements de la cheville et des orteils, sensibilité du pied ; signe de Lasègue (jambe tendue relevée) pour l'irritation de la racine",
+   "clinique": "La sciatique est la douleur qui suit son trajet, le plus souvent par conflit discal sur L5 ou S1. Le muscle piriforme peut le comprimer (syndrome du piriforme) ; on pique la fesse dans le quadrant supéro-latéral pour l'éviter",
+   "memo": "Sciatique, de l'ischion : il passe au ras de l'ischion, sous le piriforme, et gagne le creux poplité",
+   "variantes": "Chez environ 12 % des personnes, ses deux branches se séparent dès la sortie du bassin",
+   "sources": [
+    "gray1918",
+    "tma-sciatique",
+    "kenhub-tibial",
+    "kenhub-fibulaire-commun"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-du-muscle-carre-femoral",
+   "resume": "Le petit nerf profond de la fesse : il commande le carré fémoral et le jumeau inférieur, deux rotateurs latéraux de la hanche.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Branche du plexus sacral, issue des divisions antérieures de L4, L5 et S1",
+    "racines": [
+     "L4",
+     "L5",
+     "S1"
+    ]
+   },
+   "trajet": "Sort du bassin sous le piriforme, descend sur l'ischion en avant du sciatique, des jumeaux et du tendon de l'obturateur interne, longe l'arrière de l'articulation de la hanche et aborde la face antérieure du carré fémoral et du jumeau inférieur",
+   "orifices": [
+    "Foramen sciatique majeur, sous le piriforme"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameau articulaire sensitif de la hanche, au passage derrière l'articulation"
+    }
+   ],
+   "moteur": {
+    "texte": "Le carré fémoral et le jumeau inférieur",
+    "muscles": [
+     "carre-femoral",
+     "jumeau-inferieur"
+    ]
+   },
+   "sensitif": {
+    "texte": "Articulation de la hanche, par un rameau articulaire"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Rarement lésé seul : la rotation latérale de la hanche est un peu affaiblie, sans gêne nette car d'autres rotateurs suppléent ; il est exposé près du sciatique, derrière la hanche",
+   "test": "Rotation latérale de la hanche contre résistance, hanche et genou fléchis, patient assis",
+   "clinique": null,
+   "memo": "Un seul nerf pour deux muscles voisins : le carré fémoral et le jumeau inférieur, sous le piriforme",
+   "variantes": "Il donne rarement un rameau au jumeau supérieur ou à la partie haute du grand adducteur",
+   "sources": [
+    "gray1918",
+    "tma-fessiers",
+    "wikipedia-carre-femoral"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-femoral",
+   "resume": "Le nerf de l'extension du genou : il commande le quadriceps, aide à fléchir la hanche et sent le devant de la cuisse et le côté médial de la jambe.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Plus gros nerf du plexus lombaire, formé des divisions postérieures des rameaux antérieurs de L2, L3 et L4",
+    "racines": [
+     "L2",
+     "L3",
+     "L4"
+    ]
+   },
+   "trajet": "Descend dans le grand psoas, en sort par son bord latéral, passe sous le ligament inguinal en dehors des vaisseaux fémoraux, puis se divise dans le triangle fémoral en branches antérieures et postérieures",
+   "orifices": [
+    "Sous le ligament inguinal, en dehors des vaisseaux fémoraux"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameaux à l'iliaque, dans la fosse iliaque"
+    },
+    {
+     "nerf": "branches-cutanees-anterieures-du-nerf-femoral",
+     "texte": "Branches cutanées antérieures (nerfs cutanés fémoraux intermédiaire et médial)"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux au pectiné et au sartorius"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux musculaires du quadriceps, rameaux articulaires de la hanche et du genou"
+    },
+    {
+     "nerf": "nerf-saphene",
+     "texte": "Nerf saphène, branche terminale sensitive"
+    }
+   ],
+   "moteur": {
+    "texte": "L'iliaque, le pectiné, le sartorius et les quatre chefs du quadriceps fémoral",
+    "muscles": [
+     "iliaque",
+     "pectine",
+     "sartorius",
+     "droit-femoral",
+     "vaste-lateral",
+     "vaste-medial",
+     "vaste-intermediaire"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau du devant et du côté médial de la cuisse, puis, par le saphène, côté médial du genou, de la jambe et du pied ; articulations de la hanche et du genou"
+   },
+   "autonome": null,
+   "reflexe": {
+    "nom": "Réflexe rotulien",
+    "racines": [
+     "L3",
+     "L4"
+    ]
+   },
+   "atteinte": "Lésion dans le bassin, à l'aine ou après une chirurgie de la hanche par voie antérieure : le genou se dérobe (extension impossible, escaliers difficiles), réflexe rotulien aboli, anesthésie du devant de la cuisse et du bord médial de la jambe",
+   "test": "Extension du genou contre résistance ; percussion du tendon patellaire (réflexe rotulien) ; sensibilité du devant de la cuisse et du bord médial de la jambe",
+   "clinique": "Le bloc fémoral, souvent associé au bloc sciatique, anesthésie le membre inférieur ; il soulage aussi la douleur d'une fracture du col du fémur",
+   "memo": "Dans le triangle fémoral, du dehors en dedans : Nerf, Artère, Veine (NAVY) ; le fémoral est le plus latéral",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-femoral",
+    "kenhub-femoral",
+    "wikipedia-reflexe-rotulien"
+   ],
+   "divergences": "Réflexe rotulien : L3-L4 (valeur retenue) ; une référence situe l'arc sur L2 à L4. Une page décrit le fémoral tantôt comme le plus gros, tantôt comme le plus long nerf du plexus lombaire"
+  },
+  {
+   "id": "nerf-ilio-inguinal",
+   "resume": "Le nerf de l'aine : il traverse la paroi abdominale et le canal inguinal, commande les muscles larges profonds et sent le haut de la cuisse et la région pubienne.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Branche du plexus lombaire, issue du rameau antérieur de L1 (parfois avec un apport de T12)",
+    "racines": [
+     "L1"
+    ]
+   },
+   "trajet": "Passe derrière le grand psoas, croise le carré des lombes et l'iliaque, perfore le transverse de l'abdomen près de la crête iliaque, traverse l'oblique interne puis longe le cordon spermatique en avant de lui jusqu'à l'anneau inguinal superficiel",
+   "orifices": [
+    "Canal inguinal, jusqu'à l'anneau inguinal superficiel"
+   ],
+   "branches": null,
+   "moteur": {
+    "texte": "L'oblique interne et le transverse de l'abdomen, dans leur partie basse",
+    "muscles": [
+     "oblique-interne",
+     "transverse-abdomen"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau de la partie haute et médiale de la cuisse, du mont du pubis et de la grande lèvre ou, chez l'homme, de la racine du pénis et de la partie antérieure du scrotum"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion à l'incision d'une hernie inguinale ou d'une chirurgie basse de l'abdomen : douleur de l'aine irradiant vers les organes génitaux externes et la cuisse, hypoesthésie de ce territoire ; douleur persistant plus de trois mois : syndrome post-herniorraphie",
+   "test": "Sensibilité de la partie haute et médiale de la cuisse et de la région pubienne ; un bloc anesthésique ilio-inguinal soulage la douleur",
+   "clinique": "L'incision pour une hernie inguinale est la situation la plus exposée : le nerf peut être sectionné ou pris dans un fil de suture",
+   "memo": "Ilio-inguinal : de l'ilion à l'aine, il suit le cordon dans le canal inguinal, en avant de lui",
+   "variantes": "Il peut recevoir des fibres de T12 ou de L2",
+   "sources": [
+    "gray1918",
+    "kenhub-ilio-inguinal",
+    "tma-cutane-inf"
+   ],
+   "divergences": "Racines : L1 pour Gray ; une référence ajoute un apport possible de T12 ou de L2 (consigné dans les variantes)"
+  },
+  {
+   "id": "racine-posterieure-du-nerf-cutane-posterieur-de-la-cuisse",
+   "resume": "L'une des deux racines du nerf cutané postérieur de la cuisse : celle qui vient des divisions postérieures de S1 et S2.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Plexus sacral : division postérieure des rameaux antérieurs de S1 et S2",
+    "racines": [
+     "S1",
+     "S2"
+    ]
+   },
+   "trajet": "Naît à la face dorsale du plexus sacral, quitte le bassin sous le piriforme et se joint à la racine antérieure (S2-S3) pour former le nerf cutané postérieur de la cuisse",
+   "orifices": [
+    "Foramen sciatique majeur, sous le piriforme"
+   ],
+   "branches": null,
+   "moteur": null,
+   "sensitif": {
+    "texte": "Fibres S1-S2 du nerf cutané postérieur de la cuisse : fesse basse, face postérieure de la cuisse, creux poplité"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Isolée, elle est rarissime ; l'atteinte du nerf cutané postérieur de la cuisse donne un engourdissement de l'arrière de la cuisse, sans déficit moteur, et une lésion de la racine S1 s'accompagne d'autres signes (réflexe achilléen)",
+   "test": "Sensibilité de la face postérieure de la cuisse et du creux poplité",
+   "clinique": null,
+   "memo": "Racine postérieure : S1-S2, la moitié dorsale ; la racine antérieure, S2-S3, vient du ventre du plexus",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-cutane-posterieur-cuisse",
+    "tma-cutane-inf"
+   ],
+   "divergences": "Aucune référence ne décrit cette racine à part : les racines S1-S2 viennent de la description du nerf cutané postérieur de la cuisse"
+  },
+  {
+   "id": "nerf-fibulaire-profond",
+   "resume": "Le nerf des releveurs du pied : il commande les extenseurs de la cheville et des orteils et sent la peau entre l'hallux et le deuxième orteil.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-fibulaire-commun",
+    "texte": "Branche terminale du nerf fibulaire commun, née au col de la fibula, sous le long fibulaire",
+    "racines": [
+     "L4",
+     "L5",
+     "S1"
+    ]
+   },
+   "trajet": "Perce le septum intermusculaire antérieur, descend sur la membrane interosseuse avec l'artère tibiale antérieure, en profondeur du long extenseur des orteils, passe devant la cheville puis se divise en branches terminales latérale et médiale",
+   "orifices": [
+    "Septum intermusculaire antérieur de la jambe"
+   ],
+   "branches": [
+    {
+     "nerf": "branches-musculaires-du-nerf-fibulaire-profond",
+     "texte": "Rameaux musculaires de la loge antérieure de la jambe"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau articulaire de la cheville"
+    },
+    {
+     "nerf": null,
+     "texte": "Branche latérale : court extenseur des orteils, articulations du tarse et des orteils"
+    },
+    {
+     "nerf": "branches-digitales-dorsales-du-nerf-fibulaire-profond",
+     "texte": "Branche médiale : nerfs digitaux dorsaux du premier espace interdigital"
+    }
+   ],
+   "moteur": {
+    "texte": "Le tibial antérieur, les extenseurs des orteils et de l'hallux, le troisième fibulaire et, au pied, les courts extenseurs",
+    "muscles": [
+     "tibial-anterieur",
+     "long-extenseur-hallux",
+     "long-extenseur-orteils",
+     "troisieme-fibulaire",
+     "court-extenseur-orteils",
+     "court-extenseur-de-l-hallux"
+    ]
+   },
+   "sensitif": {
+    "texte": "Petit territoire cutané du premier espace interdigital : faces adjacentes de l'hallux et du deuxième orteil"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion au col de la fibula ou dans la loge antérieure : pied tombant (steppage), extension de la cheville et des orteils impossible, anesthésie du premier espace interdigital",
+   "test": "Dorsiflexion de la cheville et extension des orteils contre résistance, marche sur les talons ; piqûre de la peau entre l'hallux et le deuxième orteil",
+   "clinique": "À la cheville, un ligament du court extenseur peut le comprimer : on libère alors chirurgicalement le nerf",
+   "memo": "Profond, il sert les muscles de devant et ne sent que la peau entre le gros orteil et le deuxième",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-fibulaire-profond",
+    "tma-fibulaire-commun",
+    "kenhub-fibulaire-commun"
+   ],
+   "divergences": "Racines : aucune référence consultée ne donne celles de la branche profonde seule ; on retient L4-S1 (valeur donnée pour le fibulaire superficiel), dans le cadre du fibulaire commun L4-S2"
+  },
+  {
+   "id": "nerf-saphene",
+   "resume": "Le plus long nerf sensitif du membre inférieur : branche terminale du fémoral, il descend le long de la veine grande saphène jusqu'au pied.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-femoral",
+    "texte": "Branche terminale de la division postérieure du nerf fémoral, née dans le triangle fémoral",
+    "racines": [
+     "L3",
+     "L4"
+    ]
+   },
+   "trajet": "Descend dans le canal des adducteurs avec l'artère fémorale, en sort entre le sartorius et le gracile en traversant le fascia lata, puis longe la veine grande saphène sur le côté médial de la jambe jusqu'au pied",
+   "orifices": [
+    "Canal des adducteurs"
+   ],
+   "branches": [
+    {
+     "nerf": "branche-infrapatellaire-du-nerf-saphene",
+     "texte": "Branche infrapatellaire, à la sortie du canal des adducteurs"
+    },
+    {
+     "nerf": "branches-cutanees-crurales-mediales-du-nerf-saphene",
+     "texte": "Branches cutanées crurales médiales, dans la jambe"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau du devant du genou, de la face médiale de la jambe et du bord médial du pied, jusqu'à la base de l'hallux"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Blessé à l'éveinage de la grande saphène ou piégé dans le canal des adducteurs : douleur, engourdissement ou perte de sensibilité du côté médial de la jambe, douleur profonde de la cuisse et du genou ; aucun déficit moteur",
+   "test": "Tact et piqûre du bord médial de la jambe et du pied",
+   "clinique": "Le bloc du saphène complète le bloc sciatique pour opérer la jambe, la cheville ou le genou",
+   "memo": "Il suit la veine saphène comme son ombre : qui retire la veine risque le nerf",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-saphene",
+    "tma-femoral",
+    "tma-cutane-inf"
+   ],
+   "divergences": "Racines : L3-L4 pour Kenhub ; il porte les fibres du fémoral (L2-L4) selon Gray et TeachMeAnatomy"
+  },
+  {
+   "id": "nerf-sural",
+   "resume": "Le nerf cutané du bord latéral du pied : il sent le bas de la jambe en arrière et en dehors, le talon latéral et le bord latéral du pied.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Union du nerf cutané sural médial (venu du tibial) et de la branche surale communiquante (venue du fibulaire commun)",
+    "racines": [
+     "S1",
+     "S2"
+    ]
+   },
+   "trajet": "Descend à l'arrière de la jambe contre le bord latéral du tendon calcanéen avec la petite veine saphène, passe entre la malléole latérale et le calcanéus puis se prolonge sur le pied en nerf cutané dorsal latéral",
+   "orifices": null,
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameaux calcanéens latéraux, pour le talon"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf cutané dorsal latéral du pied, jusqu'au bord latéral du petit orteil"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau postéro-latérale du tiers inférieur de la jambe, talon latéral, bord latéral du dos du pied et du petit orteil"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Sectionné ou étiré lors d'une chirurgie du tendon calcanéen ou de la cheville, ou piégé : brûlures et engourdissement de la partie postéro-latérale de la jambe et du bord latéral du pied, sans déficit moteur",
+   "test": "Sensibilité du bord latéral du pied ; étude de conduction nerveuse du sural",
+   "clinique": "Nerf le plus utilisé pour les greffes nerveuses et la biopsie des neuropathies : son prélèvement ne coûte aucun muscle, seulement une zone d'engourdissement",
+   "memo": "Sural, de sura, le mollet : il naît au mollet et finit au bord latéral du pied",
+   "variantes": "Huit schémas de formation décrits ; l'union des deux racines se fait n'importe où entre le creux poplité et la cheville",
+   "sources": [
+    "gray1918",
+    "kenhub-sural",
+    "wikipedia-sural",
+    "tma-cutane-inf"
+   ],
+   "divergences": "Racines : S1-S2 pour Kenhub, L4-S1 pour une autre référence ; Gray n'en donne pas. On retient S1-S2"
+  },
+  {
+   "id": "nerf-cutane-dorsal-medial-du-pied",
+   "resume": "Une des deux branches cutanées du nerf fibulaire superficiel : elle sent le dos du pied du côté médial, avec l'hallux.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-fibulaire-superficiel",
+    "texte": "Branche terminale du nerf fibulaire superficiel, née au tiers inférieur de la jambe",
+    "racines": [
+     "L4",
+     "L5",
+     "S1"
+    ]
+   },
+   "trajet": "Perce le fascia profond au tiers inférieur de la jambe, gagne le dos du pied devant la cheville et se divise en nerfs digitaux dorsaux pour l'hallux et les faces adjacentes des deuxième et troisième orteils",
+   "orifices": null,
+   "branches": [
+    {
+     "nerf": "branches-digitales-dorsales-du-nerf-fibulaire-superficiel",
+     "texte": "Nerfs digitaux dorsaux de l'hallux et des deuxième et troisième orteils"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau du côté médial du dos du pied, de l'hallux et des faces adjacentes des deuxième et troisième orteils"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Étiré lors d'une entorse de cheville ou piégé à sa sortie du fascia : douleur, brûlures ou fourmillements du dos du pied, sans déficit moteur",
+   "test": "Sensibilité du côté médial du dos du pied ; percussion sur le trajet (signe de Tinel)",
+   "clinique": null,
+   "memo": "Médial et intermédiaire : les deux branches cutanées du fibulaire superficiel, qui se partagent le dos du pied",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-fibulaire-superficiel"
+   ],
+   "divergences": "Racines : L4-S1 pour TeachMeAnatomy (superficiel) ; L4-S2 pour l'ensemble du fibulaire commun"
+  },
+  {
+   "id": "branche-anterieure-du-nerf-obturateur",
+   "resume": "La branche antérieure de l'obturateur : elle commande les adducteurs superficiels de la cuisse et sent la face médiale de la cuisse.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-obturateur",
+    "texte": "Branche de division antérieure du nerf obturateur, dans ou sous le canal obturateur",
+    "racines": [
+     "L2",
+     "L3",
+     "L4"
+    ]
+   },
+   "trajet": "Sort du canal obturateur et descend entre le long adducteur (en avant) et le court adducteur (en arrière), puis devient cutanée en perçant le fascia à la face médiale de la cuisse",
+   "orifices": [
+    "Canal obturateur"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameau articulaire de la hanche"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux musculaires du long adducteur, du court adducteur et du gracile"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau cutané de la face médiale de la cuisse"
+    }
+   ],
+   "moteur": {
+    "texte": "Le long adducteur, le court adducteur (le plus souvent) et le gracile ; parfois le pectiné",
+    "muscles": [
+     "long-adducteur",
+     "court-adducteur",
+     "gracile"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau de la partie moyenne de la face médiale de la cuisse, parfois jusqu'au genou et à la jambe ; articulation de la hanche"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion de l'obturateur (chirurgie ou tumeur pelvienne) : adduction de la cuisse affaiblie, engourdissement de la face médiale de la cuisse ; la branche antérieure porte l'essentiel du déficit cutané",
+   "test": "Adduction de la cuisse contre résistance, genoux joints ; sensibilité de la face médiale de la cuisse",
+   "clinique": null,
+   "memo": "Antérieure : elle passe devant le court adducteur et commande les adducteurs de devant, long et court, avec le gracile",
+   "variantes": "Elle peut aussi innerver le pectiné ; elle s'unit parfois à un nerf obturateur accessoire",
+   "sources": [
+    "gray1918",
+    "tma-obturateur",
+    "kenhub-obturateur"
+   ],
+   "divergences": "Court adducteur : Gray le dit commun aux deux branches, TeachMeAnatomy et Kenhub le rattachent à la branche antérieure"
+  },
+  {
+   "id": "branche-posterieure-du-nerf-obturateur",
+   "resume": "La branche postérieure de l'obturateur : elle traverse l'obturateur externe, commande lui et la partie adductrice du grand adducteur, et sent le genou.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-obturateur",
+    "texte": "Branche de division postérieure du nerf obturateur, dans ou sous le canal obturateur",
+    "racines": [
+     "L2",
+     "L3",
+     "L4"
+    ]
+   },
+   "trajet": "Perfore l'obturateur externe, descend entre le court adducteur (en avant) et le grand adducteur (en arrière) puis atteint le genou par un rameau articulaire",
+   "orifices": [
+    "Canal obturateur"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameaux musculaires de l'obturateur externe et du grand adducteur"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau articulaire du genou"
+    }
+   ],
+   "moteur": {
+    "texte": "L'obturateur externe et la partie adductrice du grand adducteur ; parfois le court adducteur",
+    "muscles": [
+     "obturateur-externe",
+     "grand-adducteur"
+    ]
+   },
+   "sensitif": {
+    "texte": "Pas de peau en propre : articulation du genou, par un rameau articulaire"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion de l'obturateur : adduction et rotation latérale de la hanche affaiblies (obturateur externe, grand adducteur), sans anesthésie cutanée nette car le territoire cutané est surtout antérieur",
+   "test": "Adduction de la cuisse contre résistance ; rotation latérale de la hanche",
+   "clinique": null,
+   "memo": "Postérieure : elle perce l'obturateur externe et passe derrière le court adducteur, vers le grand adducteur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-obturateur",
+    "kenhub-obturateur"
+   ],
+   "divergences": "La partie ischio-condylienne du grand adducteur vient du sciatique (tibial) ; le résumé de Kenhub la rattache à l'obturateur alors que son texte la donne au sciatique"
+  },
+  {
+   "id": "branches-cutanees-anterieures-du-nerf-femoral",
+   "resume": "Les nerfs cutanés du devant de la cuisse, branches du fémoral : le cutané intermédiaire et le cutané médial.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-femoral",
+    "texte": "Branches antérieures du nerf fémoral : nerfs cutanés fémoraux intermédiaire et médial, nés dans le triangle fémoral",
+    "racines": [
+     "L2",
+     "L3",
+     "L4"
+    ]
+   },
+   "trajet": "Naissent dans le triangle fémoral, traversent le fascia lata (l'intermédiaire souvent en perçant le sartorius) et descendent sous la peau du devant de la cuisse jusqu'au genou, où elles forment le plexus patellaire",
+   "orifices": null,
+   "branches": null,
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la face antérieure et antéro-médiale de la cuisse, jusqu'au genou"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Rarement atteintes seules : hypoesthésie du devant de la cuisse, sans déficit moteur ; elles s'ajoutent aux signes moteurs quand tout le fémoral est lésé",
+   "test": "Tact et piqûre du devant de la cuisse",
+   "clinique": null,
+   "memo": "Les rameaux de peau du fémoral : ils sentent le devant de la cuisse, comme le saphène sent le bas de la jambe",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-femoral",
+    "tma-femoral"
+   ],
+   "divergences": "Gray et Kenhub nomment les nerfs cutanés fémoraux intermédiaire et médial ; TeachMeAnatomy parle de branches cutanées antérieures. Racines non précisées par branche : on garde celles du fémoral"
+  },
+  {
+   "id": "branches-cutanees-crurales-mediales-du-nerf-saphene",
+   "resume": "Les rameaux de peau du saphène dans la jambe : ils sentent les faces antérieure et médiale de la jambe, jusqu'à la cheville.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-saphene",
+    "texte": "Branches du nerf saphène, détachées surtout dans le tiers inférieur de la jambe",
+    "racines": [
+     "L3",
+     "L4"
+    ]
+   },
+   "trajet": "Se détachent du saphène dans la jambe, longent la veine grande saphène, traversent le fascia profond et se distribuent à la peau ; elles communiquent avec des rameaux cutanés de l'obturateur et du fémoral",
+   "orifices": null,
+   "branches": null,
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau des faces antérieure et médiale de la jambe, jusqu'à la cheville et au bord médial du pied"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Blessées à l'éveinage de la grande saphène ou lors d'un prélèvement veineux : douleur, fourmillements ou engourdissement du côté médial de la jambe, sans déficit moteur",
+   "test": "Tact et piqûre de la face médiale de la jambe",
+   "clinique": null,
+   "memo": "Crurales, de crus, la jambe ; médiales : elles sentent la peau du côté médial de la jambe",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-saphene",
+    "tma-cutane-inf"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-cutane-sural-medial",
+   "resume": "Le nerf de peau du mollet : branche du tibial, il descend entre les deux chefs du gastrocnémien et forme le nerf sural.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-tibial",
+    "texte": "Branche du nerf tibial, née dans le creux poplité",
+    "racines": [
+     "L4",
+     "L5",
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   "trajet": "Descend entre les deux chefs du gastrocnémien, perce le fascia profond vers le milieu de la jambe et s'unit à la branche surale communiquante pour former le nerf sural",
+   "orifices": null,
+   "branches": null,
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la face postérieure de la jambe (mollet), jusqu'à sa jonction avec le nerf sural"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Rarement lésé seul : hypoesthésie de la face postérieure du mollet ; son atteinte survient surtout avec celle du nerf sural ou du tibial",
+   "test": "Tact et piqûre du mollet",
+   "clinique": null,
+   "memo": "Cutané sural médial : la branche du tibial qui va à la rencontre de la branche surale venue du fibulaire",
+   "variantes": "Il peut descendre seul jusqu'à la cheville et donner lui-même les rameaux calcanéens latéraux",
+   "sources": [
+    "gray1918",
+    "wikipedia-sural-medial",
+    "kenhub-sural",
+    "tma-tibial"
+   ],
+   "divergences": "Racines non précisées pour cette branche : on garde celles du tibial (L4-S3). Une page dit qu'il s'unit au nerf cutané sural latéral, Gray et la plupart des auteurs à la branche surale communiquante"
+  },
+  {
+   "id": "nerf-fibulaire-commun",
+   "resume": "La branche latérale du sciatique : il contourne le col de la fibula, commande les muscles qui relèvent et tournent le pied et sent le dessus de la jambe et du pied.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-sciatique",
+    "texte": "Branche terminale latérale du nerf sciatique, au sommet du creux poplité",
+    "racines": [
+     "L4",
+     "L5",
+     "S1",
+     "S2"
+    ]
+   },
+   "trajet": "Longe le bord médial du biceps fémoral, passe sur la tête latérale du gastrocnémien, contourne le col de la fibula sous la peau et traverse le long fibulaire, où il se divise en nerfs fibulaires superficiel et profond",
+   "orifices": [
+    "Contre le col de la fibula, sous le long fibulaire"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameau à la courte portion du biceps fémoral"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux articulaires du genou"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf cutané sural latéral : face latérale du haut de la jambe"
+    },
+    {
+     "nerf": "branche-surale-communiquante-du-nerf-fibulaire-commun",
+     "texte": "Branche surale communiquante, qui rejoint le nerf cutané sural médial"
+    },
+    {
+     "nerf": "nerf-fibulaire-superficiel",
+     "texte": "Nerf fibulaire superficiel, pour la loge latérale"
+    },
+    {
+     "nerf": "nerf-fibulaire-profond",
+     "texte": "Nerf fibulaire profond, pour la loge antérieure"
+    }
+   ],
+   "moteur": {
+    "texte": "La courte portion du biceps fémoral, puis la loge latérale (fibulaires) et la loge antérieure (releveurs du pied et des orteils) par ses deux branches",
+    "muscles": [
+     "biceps-femoral",
+     "long-fibulaire",
+     "court-fibulaire",
+     "tibial-anterieur",
+     "long-extenseur-hallux",
+     "long-extenseur-orteils",
+     "troisieme-fibulaire",
+     "court-extenseur-orteils",
+     "court-extenseur-de-l-hallux"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau du haut de la face latérale de la jambe, de la face antéro-latérale de la jambe, du dos du pied et des orteils, avec le premier espace interdigital"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Au col de la fibula (fracture, plâtre serré, jambes croisées, appui prolongé) : pied tombant avec steppage, dorsiflexion et éversion perdues, anesthésie de la face antéro-latérale de la jambe et du dos du pied ; la flexion plantaire est conservée",
+   "test": "Marche sur les talons, dorsiflexion et éversion contre résistance ; sensibilité du dos du pied et du premier espace interdigital",
+   "clinique": "C'est la lésion nerveuse isolée la plus fréquente du membre inférieur : le nerf est tout près de la peau, contre l'os, au col de la fibula",
+   "memo": "Commun avant la division : il contourne le col de la fibula, juste sous la peau, et lâche le pied quand on croise trop les jambes",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-fibulaire-commun",
+    "kenhub-fibulaire-commun",
+    "wikipedia-fibulaire-commun",
+    "wikipedia-fibulaire-profond"
+   ],
+   "divergences": "Racines : L4-S2 pour Gray, TeachMeAnatomy, Kenhub et Wikipédia ; TeachMeAnatomy donne L4-S1 pour la branche superficielle"
+  },
+  {
+   "id": "branche-femorale-du-nerf-genitofemoral",
+   "resume": "La branche sensitive du génitofémoral : elle passe sous le ligament inguinal et sent la peau du triangle fémoral.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-genitofemoral",
+    "texte": "Branche latérale du nerf génitofémoral, appelée aussi branche lombo-inguinale",
+    "racines": [
+     "L1",
+     "L2"
+    ]
+   },
+   "trajet": "Descend sur le psoas en dehors de l'artère iliaque externe, passe sous le ligament inguinal, traverse la gaine fémorale et le fascia lata et atteint la peau du haut de la cuisse",
+   "orifices": [
+    "Sous le ligament inguinal, dans la gaine fémorale"
+   ],
+   "branches": null,
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau du haut de la face antérieure de la cuisse, sur le triangle fémoral"
+   },
+   "autonome": null,
+   "reflexe": {
+    "nom": "Réflexe crémastérien (voie sensitive)",
+    "racines": [
+     "L1",
+     "L2"
+    ]
+   },
+   "atteinte": "Lésion à l'aine (chirurgie herniaire, compression) : douleur ou engourdissement de la peau sous le ligament inguinal, en haut du devant de la cuisse (neuralgie génitofémorale), sans déficit moteur",
+   "test": "Effleurer la peau de la face médiale du haut de la cuisse : le testicule remonte (réflexe crémastérien) ; sensibilité du triangle fémoral",
+   "clinique": null,
+   "memo": "Fémorale : celle qui suit les vaisseaux fémoraux sous l'aine ; la génitale suit le cordon",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-genitofemoral",
+    "tma-cutane-inf"
+   ],
+   "divergences": "Territoire : « haut de la face antérieure de la cuisse » (Gray), « face antérieure, haute et médiale » (Kenhub), « partie latérale du triangle fémoral » (TeachMeAnatomy)"
+  },
+  {
+   "id": "branche-genitale-du-nerf-genitofemoral",
+   "resume": "La branche du génitofémoral qui entre dans le canal inguinal : elle commande le crémaster et sent la peau antérieure du scrotum ou de la région pubienne.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-genitofemoral",
+    "texte": "Branche médiale du nerf génitofémoral, appelée aussi nerf spermatique externe",
+    "racines": [
+     "L1",
+     "L2"
+    ]
+   },
+   "trajet": "Croise l'artère iliaque externe, entre dans le canal inguinal par l'anneau inguinal profond, accompagne le cordon spermatique (le ligament rond chez la femme) et sort par l'anneau inguinal superficiel",
+   "orifices": [
+    "Canal inguinal"
+   ],
+   "branches": null,
+   "moteur": {
+    "texte": "Le muscle crémaster chez l'homme (relève le testicule)",
+    "muscles": []
+   },
+   "sensitif": {
+    "texte": "Peau antérieure du scrotum chez l'homme, du mont du pubis et de la grande lèvre chez la femme"
+   },
+   "autonome": null,
+   "reflexe": {
+    "nom": "Réflexe crémastérien (voie motrice)",
+    "racines": [
+     "L1",
+     "L2"
+    ]
+   },
+   "atteinte": "Lésion dans le canal inguinal (chirurgie de hernie) : douleur de l'aine irradiant au scrotum ou à la grande lèvre, réflexe crémastérien diminué ou aboli, sans autre déficit moteur",
+   "test": "Réflexe crémastérien : effleurer la face médiale du haut de la cuisse et observer la remontée du testicule",
+   "clinique": "En cas de douleur scrotale aiguë, un réflexe crémastérien absent oriente vers une torsion du testicule",
+   "memo": "Génitale : elle suit le cordon dans le canal inguinal et fait remonter le testicule par le crémaster",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-genitofemoral",
+    "kenhub-ilio-inguinal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-cutane-posterieur-de-la-cuisse",
+   "resume": "Le nerf de peau de l'arrière de la cuisse : il sent le bas de la fesse, le creux poplité et le haut du mollet.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Plexus sacral : union de la racine postérieure (S1-S2) et de la racine antérieure (S2-S3)",
+    "racines": [
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   "trajet": "Sort du bassin sous le piriforme, descend sous le grand fessier en arrière du sciatique puis sous le fascia lata, sur les ischio-jambiers, jusqu'au creux poplité ; il accompagne ensuite la petite veine saphène vers le mollet",
+   "orifices": [
+    "Foramen sciatique majeur, sous le piriforme"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Nerfs clunéaux inférieurs, pour le bas de la fesse"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux périnéaux, pour le haut de la face médiale de la cuisse et le périnée"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux fémoraux et suraux, jusqu'au milieu du mollet"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau du bas de la fesse, de la face postérieure de la cuisse, du creux poplité, du haut du mollet et du périnée"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion à la sortie du bassin ou sous le grand fessier : engourdissement et brûlures de l'arrière de la cuisse, du bas de la fesse et du creux poplité, sans déficit moteur ; elle accompagne souvent l'atteinte du sciatique",
+   "test": "Tact et piqûre de la face postérieure de la cuisse et du creux poplité",
+   "clinique": null,
+   "memo": "Cutané postérieur de la cuisse : un nerf de peau seulement, qui longe le sciatique sous le grand fessier",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-cutane-posterieur-cuisse",
+    "tma-cutane-inf"
+   ],
+   "divergences": "Racines : divisions postérieures de S1-S2 et antérieures de S2-S3 (Gray, Wikipédia)"
+  },
+  {
+   "id": "nerf-du-muscle-piriforme",
+   "resume": "Le petit nerf du piriforme : il naît du plexus sacral et entre dans la face pelvienne du muscle.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Branche du plexus sacral, issue des divisions postérieures de S1 et S2, parfois de S2 seul",
+    "racines": [
+     "S1",
+     "S2"
+    ]
+   },
+   "trajet": "Naît à la face dorsale du plexus sacral, dans le bassin, et pénètre dans le piriforme par sa face antérieure (pelvienne)",
+   "orifices": null,
+   "branches": null,
+   "moteur": {
+    "texte": "Le piriforme",
+    "muscles": [
+     "piriforme"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Isolée, elle affaiblit à peine la rotation latérale de la hanche ; un piriforme tendu ou hypertrophié comprime plutôt le sciatique (syndrome du piriforme : douleur fessière irradiant dans la cuisse)",
+   "test": "Rotation latérale de la hanche contre résistance, hanche fléchie",
+   "clinique": null,
+   "memo": "Un seul muscle, le piriforme : son nom dit son territoire",
+   "variantes": "Il peut être doublé ou renforcé par un rameau du glutéal supérieur ; il naît de S2 seule chez certains",
+   "sources": [
+    "gray1918",
+    "wikipedia-piriforme",
+    "tma-fessiers"
+   ],
+   "divergences": "Racines : S1-S2 (Gray : face dorsale de S2, ou S1 et S2 ; Wikipédia : S1-S2, parfois S2 seule)"
+  },
+  {
+   "id": "nerf-gluteal-superieur",
+   "resume": "Le nerf qui tient le bassin : il sort au-dessus du piriforme et commande le moyen et le petit fessier et le tenseur du fascia lata, abducteurs de la hanche.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Branche collatérale du plexus sacral, issue des divisions postérieures de L4, L5 et S1",
+    "racines": [
+     "L4",
+     "L5",
+     "S1"
+    ]
+   },
+   "trajet": "Quitte le bassin par le foramen sciatique majeur, au-dessus du piriforme, avec les vaisseaux glutéaux supérieurs, passe entre moyen et petit fessiers et se divise en branches supérieure et inférieure, qui finit dans le tenseur du fascia lata",
+   "orifices": [
+    "Foramen sciatique majeur, au-dessus du piriforme"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Branche supérieure, pour le moyen fessier"
+    },
+    {
+     "nerf": null,
+     "texte": "Branche inférieure, pour les fessiers moyen et petit et le tenseur du fascia lata"
+    }
+   ],
+   "moteur": {
+    "texte": "Le moyen fessier, le petit fessier et le tenseur du fascia lata, abducteurs et stabilisateurs du bassin",
+    "muscles": [
+     "moyen-fessier",
+     "petit-fessier",
+     "tenseur-fascia-lata"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Injection fessière mal placée ou lésion du plexus : abduction de la hanche affaiblie, signe de Trendelenburg positif (le bassin bascule du côté du pied levé), boiterie de Duchenne ; démarche dandinante si l'atteinte est bilatérale",
+   "test": "Signe de Trendelenburg : debout sur une jambe, le bassin du côté soulevé doit rester horizontal ; abduction contre résistance en décubitus latéral",
+   "clinique": "Le grand fessier n'en dépend pas : il est commandé par le nerf glutéal inférieur, qui sort sous le piriforme",
+   "memo": "Supérieur, au-dessus du piriforme : il tient le bassin horizontal quand on lève l'autre pied",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-gluteal-superieur",
+    "tma-fessiers",
+    "wikipedia-gluteal-superieur"
+   ],
+   "divergences": "Wikipédia signale qu'il peut contribuer à l'innervation du piriforme ; non retenu (Gray, Kenhub, TeachMeAnatomy : nerf propre du piriforme)"
+  },
+  {
+   "id": "nerf-genitofemoral",
+   "resume": "Le nerf du plexus lombaire qui naît dans le psoas et se divise en deux : une branche pour les organes génitaux externes, l'autre pour le haut de la cuisse.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Branche du plexus lombaire, issue des rameaux antérieurs de L1 et L2",
+    "racines": [
+     "L1",
+     "L2"
+    ]
+   },
+   "trajet": "Se forme dans le grand psoas, sort par sa face antérieure, descend derrière le péritoine en croisant l'uretère et se divise près du ligament inguinal en branches génitale et fémorale",
+   "orifices": null,
+   "branches": [
+    {
+     "nerf": "branche-genitale-du-nerf-genitofemoral",
+     "texte": "Branche génitale, qui suit le cordon spermatique ou le ligament rond"
+    },
+    {
+     "nerf": "branche-femorale-du-nerf-genitofemoral",
+     "texte": "Branche fémorale, qui passe sous le ligament inguinal"
+    }
+   ],
+   "moteur": {
+    "texte": "Le crémaster chez l'homme, par la branche génitale",
+    "muscles": []
+   },
+   "sensitif": {
+    "texte": "Peau antérieure du scrotum ou du mont du pubis et de la grande lèvre ; peau du haut de la cuisse sous l'aine"
+   },
+   "autonome": null,
+   "reflexe": {
+    "nom": "Réflexe crémastérien",
+    "racines": [
+     "L1",
+     "L2"
+    ]
+   },
+   "atteinte": "Neuralgie génitofémorale (compression dans le canal inguinal, souvent après une hernie opérée) : douleur unilatérale de l'aine irradiant à la cuisse et aux organes génitaux externes, réflexe crémastérien aboli",
+   "test": "Réflexe crémastérien : effleurer la face médiale du haut de la cuisse ; le testicule remonte",
+   "clinique": "Un réflexe crémastérien absent oriente vers une torsion du testicule en cas de douleur scrotale aiguë",
+   "memo": "Génito-fémoral : deux branches, la génitale pour le cordon, la fémorale pour la cuisse ; le crémaster entre les deux",
+   "variantes": "Le point de division est variable, parfois haut dans le psoas",
+   "sources": [
+    "gray1918",
+    "kenhub-genitofemoral",
+    "tma-cutane-inf"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-obturateur",
+   "resume": "Le nerf des adducteurs : il traverse le canal obturateur, rapproche les cuisses et sent la partie médiale de la cuisse.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Branche du plexus lombaire, issue des divisions antérieures des rameaux antérieurs de L2, L3 et L4",
+    "racines": [
+     "L2",
+     "L3",
+     "L4"
+    ]
+   },
+   "trajet": "Descend dans le grand psoas et en sort par son bord médial, longe la paroi pelvienne derrière les vaisseaux iliaques communs, traverse le canal obturateur et se divise en branches antérieure et postérieure de part et d'autre du court adducteur",
+   "orifices": [
+    "Canal obturateur"
+   ],
+   "branches": [
+    {
+     "nerf": "branche-anterieure-du-nerf-obturateur",
+     "texte": "Branche antérieure : long et court adducteurs, gracile, peau de la cuisse"
+    },
+    {
+     "nerf": "branche-posterieure-du-nerf-obturateur",
+     "texte": "Branche postérieure : obturateur externe, grand adducteur, genou"
+    }
+   ],
+   "moteur": {
+    "texte": "Les adducteurs de la cuisse (long, court, partie adductrice du grand), le gracile et l'obturateur externe ; parfois le pectiné",
+    "muscles": [
+     "long-adducteur",
+     "court-adducteur",
+     "grand-adducteur",
+     "gracile",
+     "obturateur-externe"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau de la partie moyenne de la face médiale de la cuisse ; articulations de la hanche et du genou"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion dans le bassin (chirurgie pelvienne ou abdominale, compression) : adduction de la cuisse affaiblie, jambe croisée difficile, démarche en circumduction, engourdissement de la face médiale de la cuisse",
+   "test": "Adduction contre résistance, genoux serrés ; sensibilité de la face médiale de la cuisse",
+   "clinique": "Un bloc obturateur soulage la douleur de la hanche ; on l'injecte sous le tubercule pubien, en dehors du tendon du long adducteur",
+   "memo": "Obturateur : il passe par le canal obturateur et fait serrer les cuisses",
+   "variantes": "Un nerf obturateur accessoire (L3-L4) existe chez environ 29 % des personnes : il innerve le pectiné et la hanche",
+   "sources": [
+    "gray1918",
+    "tma-obturateur",
+    "kenhub-obturateur"
+   ],
+   "divergences": "Grand adducteur : seule la partie adductrice vient de l'obturateur, la partie ischio-condylienne vient du sciatique (TeachMeAnatomy, Gray) ; le résumé de Kenhub se contredit sur ce point"
+  },
+  {
+   "id": "racine-anterieure-du-nerf-cutane-posterieur-de-la-cuisse",
+   "resume": "L'une des deux racines du nerf cutané postérieur de la cuisse : celle qui vient des divisions antérieures de S2 et S3.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Plexus sacral : division antérieure des rameaux antérieurs de S2 et S3",
+    "racines": [
+     "S2",
+     "S3"
+    ]
+   },
+   "trajet": "Naît à la face ventrale du plexus sacral, quitte le bassin sous le piriforme et s'unit à la racine postérieure (S1-S2) pour former le nerf cutané postérieur de la cuisse",
+   "orifices": [
+    "Foramen sciatique majeur, sous le piriforme"
+   ],
+   "branches": null,
+   "moteur": null,
+   "sensitif": {
+    "texte": "Fibres S2-S3 du nerf cutané postérieur de la cuisse : cuisse, creux poplité, périnée"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Isolée, elle est rarissime ; l'atteinte du nerf cutané postérieur de la cuisse donne un engourdissement de l'arrière de la cuisse et du périnée, sans déficit moteur",
+   "test": "Sensibilité de la face postérieure de la cuisse et du périnée",
+   "clinique": null,
+   "memo": "Racine antérieure : S2-S3, la moitié ventrale ; la racine postérieure, S1-S2, vient du dos du plexus",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-cutane-posterieur-cuisse",
+    "tma-cutane-inf"
+   ],
+   "divergences": "Aucune référence ne décrit cette racine à part : les racines S2-S3 viennent de la description du nerf cutané postérieur de la cuisse"
+  },
+  {
+   "id": "branche-infrapatellaire-du-nerf-saphene",
+   "resume": "La branche du saphène qui sent le devant du genou : elle forme, avec d'autres nerfs, le plexus patellaire.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-saphene",
+    "texte": "Branche du nerf saphène, détachée à sa sortie du canal des adducteurs, près du condyle médial du fémur",
+    "racines": [
+     "L3",
+     "L4"
+    ]
+   },
+   "trajet": "Perce le sartorius et le fascia lata, descend vers le devant du genou et s'unit aux branches cutanées du fémoral et du cutané fémoral latéral pour former le plexus patellaire",
+   "orifices": null,
+   "branches": null,
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau du devant et du côté médial du genou, sous la patella"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Sectionnée lors d'une chirurgie du genou ou d'un prélèvement de tendon : zone d'engourdissement sur le devant et le côté médial du genou, sans déficit moteur",
+   "test": "Tact et piqûre de la peau sous et en dedans de la patella",
+   "clinique": null,
+   "memo": "Infrapatellaire : le saphène la lâche au genou pour sentir la peau sous la patella",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-saphene",
+    "kenhub-cutane-femoral-lateral"
+   ],
+   "divergences": "Racines non précisées pour cette branche : on garde celles du saphène (L3-L4)"
+  },
+  {
+   "id": "branche-surale-communiquante-du-nerf-fibulaire-commun",
+   "resume": "La branche du fibulaire commun qui descend dans le mollet pour rejoindre le nerf cutané sural médial et former le nerf sural.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-fibulaire-commun",
+    "texte": "Branche du nerf fibulaire commun, détachée dans le creux poplité ; appelée aussi branche anastomotique fibulaire",
+    "racines": [
+     "L4",
+     "L5",
+     "S1",
+     "S2"
+    ]
+   },
+   "trajet": "Descend sur la face postéro-latérale du mollet et rejoint le nerf cutané sural médial, en général vers le milieu de la jambe, pour former le nerf sural",
+   "orifices": null,
+   "branches": null,
+   "moteur": null,
+   "sensitif": {
+    "texte": "Pas de peau en propre : ses fibres rejoignent le nerf sural (partie postéro-latérale du bas de la jambe et bord latéral du pied)"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Rarement lésée seule : l'engourdissement du bord latéral du pied et du bas de la jambe est celui du nerf sural",
+   "test": "Sensibilité du bord latéral du pied",
+   "clinique": null,
+   "memo": "Surale communiquante : elle vient du fibulaire à la rencontre du cutané sural médial, venu du tibial",
+   "variantes": "Dans plus de 70 % des cas elle rejoint le cutané sural médial ; sinon elle descend parallèle à lui",
+   "sources": [
+    "gray1918",
+    "wikipedia-sural",
+    "wikipedia-fibulaire-commun",
+    "tma-fibulaire-commun"
+   ],
+   "divergences": "Racines non précisées pour cette branche : on garde celles du fibulaire commun (L4-S2)"
+  },
+  {
+   "id": "nerf-fibulaire-superficiel",
+   "resume": "Le nerf des fibulaires : il commande les muscles qui tournent le pied vers l'extérieur et sent le dos du pied.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-fibulaire-commun",
+    "texte": "Branche terminale du nerf fibulaire commun, née sous le long fibulaire, au col de la fibula",
+    "racines": [
+     "L4",
+     "L5",
+     "S1"
+    ]
+   },
+   "trajet": "Descend dans la loge latérale de la jambe entre les fibulaires et le long extenseur des orteils, perce le fascia profond au tiers inférieur de la jambe et se divise en nerfs cutanés dorsaux médial et intermédiaire",
+   "orifices": null,
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameaux musculaires du long et du court fibulaires"
+    },
+    {
+     "nerf": "nerf-cutane-dorsal-medial-du-pied",
+     "texte": "Nerf cutané dorsal médial du pied"
+    },
+    {
+     "nerf": "nerf-cutane-dorsal-intermediaire-du-pied",
+     "texte": "Nerf cutané dorsal intermédiaire du pied"
+    }
+   ],
+   "moteur": {
+    "texte": "Le long fibulaire et le court fibulaire, qui tournent la plante du pied vers l'extérieur (éversion)",
+    "muscles": [
+     "long-fibulaire",
+     "court-fibulaire"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau du bas de la face antéro-latérale de la jambe et de presque tout le dos du pied, sauf le premier espace interdigital"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion au col de la fibula, fracture ou plaie : éversion affaiblie, anesthésie du dos du pied et du bas de la jambe en dehors ; piégé à sa sortie du fascia (après entorse) : douleur et fourmillements du dos du pied",
+   "test": "Éversion du pied contre résistance ; sensibilité du dos du pied",
+   "clinique": "Un piégeage à la sortie du fascia est parfois libéré chirurgicalement",
+   "memo": "Superficiel : il commande les fibulaires de la loge latérale et sent la peau du dos du pied",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-fibulaire-superficiel",
+    "tma-fibulaire-commun",
+    "kenhub-fibulaire-commun"
+   ],
+   "divergences": "Racines : L4-S1 pour TeachMeAnatomy ; L4-S2 pour l'ensemble du fibulaire commun (Gray, Kenhub)"
+  },
+  {
+   "id": "nerf-tibial",
+   "resume": "Le nerf du mollet et de la plante : il commande les fléchisseurs de la cheville et des orteils et sent le talon et la plante.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-sciatique",
+    "texte": "Branche terminale médiale, la plus grosse, du nerf sciatique, au sommet du creux poplité",
+    "racines": [
+     "L4",
+     "L5",
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   "trajet": "Traverse le creux poplité, passe sous l'arcade du soléaire, descend dans la loge postérieure profonde avec les vaisseaux tibiaux postérieurs, contourne la malléole médiale dans le canal tarsien et se divise en nerfs plantaires médial et latéral",
+   "orifices": [
+    "Arcade du soléaire",
+    "Canal tarsien, derrière la malléole médiale"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameaux musculaires du triceps sural, du plantaire, du poplité et de la loge postérieure profonde"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux articulaires du genou et de la cheville"
+    },
+    {
+     "nerf": "nerf-cutane-sural-medial",
+     "texte": "Nerf cutané sural médial, qui forme le nerf sural"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux calcanéens médiaux, pour le talon"
+    },
+    {
+     "nerf": "nerf-plantaire-medial",
+     "texte": "Nerf plantaire médial"
+    },
+    {
+     "nerf": "nerf-plantaire-lateral",
+     "texte": "Nerf plantaire latéral"
+    }
+   ],
+   "moteur": {
+    "texte": "Tous les muscles de la loge postérieure de la jambe, puis, par les nerfs plantaires, les muscles courts de la plante du pied",
+    "muscles": [
+     "gastrocnemien",
+     "soleaire",
+     "plantaire",
+     "poplite",
+     "tibial-posterieur",
+     "long-flechisseur-orteils",
+     "long-flechisseur-hallux",
+     "abducteur-hallux",
+     "court-flechisseur-orteils",
+     "court-flechisseur-de-l-hallux",
+     "carre-plantaire",
+     "abducteur-petit-orteil",
+     "flechisseur-du-petit-doigt",
+     "adducteur-de-l-hallux",
+     "lombricaux-du-pied",
+     "interosseux-plantaires",
+     "interosseux-dorsaux-du-pied"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau du talon et de la plante du pied ; par le nerf sural, issu en partie de lui, bord latéral de la jambe et du pied"
+   },
+   "autonome": null,
+   "reflexe": {
+    "nom": "Réflexe achilléen",
+    "racines": [
+     "S1"
+    ]
+   },
+   "atteinte": "Lésion haute (genou, jambe) : flexion plantaire impossible (pointe des pieds), orteils non fléchis, anesthésie de la plante, réflexe achilléen aboli. Au cou-de-pied : syndrome du tunnel tarsien, brûlures de la plante aggravées par la station debout, fonte des muscles courts dans les formes sévères",
+   "test": "Se mettre sur la pointe des pieds, fléchir les orteils ; percussion du tendon calcanéen (réflexe achilléen) ; signe de Tinel derrière la malléole médiale",
+   "clinique": "Le tunnel tarsien est l'équivalent, à la cheville, du canal carpien : le nerf y est serré entre l'os et le rétinaculum des fléchisseurs",
+   "memo": "Tibial : il descend derrière le tibia, passe derrière la malléole médiale (tunnel tarsien) et finit dans la plante",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-tibial",
+    "kenhub-tibial",
+    "wikipedia-canal-tarsien",
+    "wikipedia-reflexe-achilleen"
+   ],
+   "divergences": "Réflexe achilléen : S1 (racine principale) ; une référence cite S1 et S2. Racines du nerf : L4-S3 pour Gray, TeachMeAnatomy et Kenhub"
+  },
+  {
+   "id": "branches-digitales-dorsales-du-nerf-fibulaire-profond",
+   "resume": "Les deux nerfs de peau du premier espace du pied, terminaison du fibulaire profond : ils sentent les faces adjacentes de l'hallux et du deuxième orteil.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-fibulaire-profond",
+    "texte": "Branche terminale médiale du nerf fibulaire profond, sur le dos du pied",
+    "racines": [
+     "L4",
+     "L5",
+     "S1"
+    ]
+   },
+   "trajet": "Suivent l'artère dorsale du pied sur le dos du pied, puis se divisent en deux nerfs digitaux dorsaux pour l'hallux et le deuxième orteil",
+   "orifices": null,
+   "branches": null,
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau du premier espace interdigital : faces adjacentes de l'hallux et du deuxième orteil"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Atteinte isolée rare : engourdissement du premier espace interdigital ; il est aussi perdu quand le fibulaire profond ou commun est lésé, car c'est le seul territoire cutané de la branche profonde",
+   "test": "Piqûre de la peau entre l'hallux et le deuxième orteil : le territoire propre du fibulaire profond",
+   "clinique": null,
+   "memo": "Le premier espace interdigital, entre gros orteil et deuxième : la peau du fibulaire profond",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-fibulaire-profond",
+    "tma-fibulaire-commun",
+    "kenhub-fibulaire-commun"
+   ],
+   "divergences": "Racines non précisées pour cette branche : on garde celles du fibulaire profond"
+  },
+  {
+   "id": "branches-digitales-dorsales-du-nerf-fibulaire-superficiel",
+   "resume": "Les nerfs de peau du dessus des orteils, terminaison du fibulaire superficiel : ils sentent le dos de l'hallux et des orteils, sauf le premier espace.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-fibulaire-superficiel",
+    "texte": "Branches terminales des nerfs cutanés dorsaux médial et intermédiaire du pied",
+    "racines": [
+     "L4",
+     "L5",
+     "S1"
+    ]
+   },
+   "trajet": "Naissent des deux branches cutanées dorsales sur le dos du pied et gagnent la peau du dessus des orteils",
+   "orifices": null,
+   "branches": null,
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau du dos de l'hallux et des faces adjacentes des deuxième-troisième, troisième-quatrième et quatrième-cinquième orteils ; le bord latéral du cinquième orteil vient du sural"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion du fibulaire superficiel : anesthésie du dos des orteils, sauf le premier espace ; isolée, elle est rare et suit une plaie du dos du pied",
+   "test": "Tact et piqûre du dos des orteils",
+   "clinique": null,
+   "memo": "Dorsales : elles sentent le dessus des orteils, le premier espace étant laissé au fibulaire profond",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-fibulaire-superficiel",
+    "kenhub-sural"
+   ],
+   "divergences": "Racines non précisées pour ces branches : on garde celles du fibulaire superficiel"
+  },
+  {
+   "id": "branches-digitales-plantaires-communes-du-nerf-plantaire-lat",
+   "resume": "La branche commune du nerf plantaire latéral pour le quatrième espace : elle se divise en nerfs propres pour les faces adjacentes des quatrième et cinquième orteils.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-plantaire-lateral",
+    "texte": "Branche du rameau superficiel du nerf plantaire latéral",
+    "racines": [
+     "L4",
+     "L5",
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   "trajet": "Naît du rameau superficiel, communique avec la troisième branche commune du plantaire médial et se divise en deux nerfs digitaux plantaires propres pour les faces adjacentes des quatrième et cinquième orteils",
+   "orifices": null,
+   "branches": [
+    {
+     "nerf": "branches-digitales-plantaires-propres-du-nerf-plantaire-lat",
+     "texte": "Nerfs digitaux plantaires propres des quatrième et cinquième orteils"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la plante au niveau du quatrième espace et des faces adjacentes des quatrième et cinquième orteils"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Isolée, elle est rare : engourdissement du quatrième espace de la plante ; elle s'ajoute à ceux de la branche superficielle ou du plantaire latéral",
+   "test": "Piqûre de la plante entre les quatrième et cinquième orteils",
+   "clinique": null,
+   "memo": "Une seule branche commune au côté latéral, pour le quatrième espace, là où elle rencontre celle du médial",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-plantaire-lateral",
+    "wikipedia-plantaire-medial",
+    "kenhub-tibial"
+   ],
+   "divergences": "Aucune référence consultée ne donne de racines propres aux nerfs plantaires : on garde celles du tibial. La plupart des auteurs décrivent une seule branche commune latérale"
+  },
+  {
+   "id": "branches-digitales-plantaires-communes-du-nerf-plantaire-med",
+   "resume": "Les trois branches du nerf plantaire médial dans la plante : chacune se divise en deux nerfs propres pour les faces adjacentes de deux orteils.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-plantaire-medial",
+    "texte": "Trois branches terminales du nerf plantaire médial, nées au niveau des bases des métatarsiens",
+    "racines": [
+     "L4",
+     "L5",
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   "trajet": "Passent entre les lames de l'aponévrose plantaire et se divisent chacune en deux nerfs digitaux propres : premier espace (hallux et deuxième orteil), deuxième espace, troisième espace (avec une communication vers le plantaire latéral)",
+   "orifices": null,
+   "branches": [
+    {
+     "nerf": "branches-digitales-plantaires-propres-du-nerf-plantaire-med",
+     "texte": "Nerfs digitaux plantaires propres des trois premiers espaces"
+    }
+   ],
+   "moteur": {
+    "texte": "Un rameau de la première branche va au premier lombrical",
+    "muscles": [
+     "lombricaux-du-pied"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau de la plante au niveau des trois premiers espaces et des faces adjacentes des orteils 1-2, 2-3 et 3-4"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Compression entre les têtes métatarsiennes ou dans le tunnel tarsien : douleur et engourdissement de la plante et des orteils concernés ; les fonctions motrices sont peu touchées",
+   "test": "Tact et piqûre de la plante et des faces adjacentes des orteils",
+   "clinique": null,
+   "memo": "Trois communes, trois espaces : entre 1 et 2, 2 et 3, 3 et 4",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-plantaire-medial",
+    "kenhub-tibial",
+    "tma-tibial"
+   ],
+   "divergences": "Aucune référence consultée ne donne de racines propres aux nerfs plantaires : on garde celles du tibial"
+  },
+  {
+   "id": "branches-digitales-plantaires-propres-du-nerf-plantaire-lat",
+   "resume": "Les nerfs de peau des orteils côté latéral : ils sentent le bord latéral du cinquième orteil et les faces adjacentes des quatrième et cinquième orteils.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-plantaire-lateral",
+    "texte": "Un nerf pour le bord latéral du cinquième orteil, naissant du rameau superficiel, et deux issus de la branche commune du quatrième espace",
+    "racines": [
+     "L4",
+     "L5",
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   "trajet": "Courent de chaque côté de l'orteil, sous la peau de la face plantaire, jusqu'à la pulpe",
+   "orifices": null,
+   "branches": null,
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la face plantaire du cinquième orteil et du côté latéral du quatrième, y compris la pulpe"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion du plantaire latéral ou de sa branche superficielle : engourdissement de la plante du petit orteil et du côté latéral du quatrième ; atteinte isolée rare",
+   "test": "Piqûre de la pulpe du cinquième orteil",
+   "clinique": null,
+   "memo": "Le petit orteil et la moitié latérale du quatrième : le territoire du plantaire latéral",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-plantaire-lateral",
+    "kenhub-tibial"
+   ],
+   "divergences": "Aucune référence consultée ne donne de racines propres aux nerfs plantaires : on garde celles du tibial"
+  },
+  {
+   "id": "branches-digitales-plantaires-propres-du-nerf-plantaire-med",
+   "resume": "Les nerfs de peau des orteils côté médial : ils sentent la face médiale de l'hallux et les faces adjacentes des quatre premiers orteils.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-plantaire-medial",
+    "texte": "Un nerf pour la face médiale de l'hallux, né directement du plantaire médial, et deux pour chacune des trois branches communes",
+    "racines": [
+     "L4",
+     "L5",
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   "trajet": "Courent de chaque côté de l'orteil sous la peau de la face plantaire ; près de la dernière phalange, chacun envoie un rameau dorsal vers l'ongle, puis se termine à la pulpe",
+   "orifices": null,
+   "branches": null,
+   "moteur": {
+    "texte": "Le nerf de la face médiale de l'hallux donne un rameau au court fléchisseur de l'hallux",
+    "muscles": [
+     "court-flechisseur-de-l-hallux"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau plantaire du bord médial de l'hallux et des faces adjacentes des orteils 1-2, 2-3 et 3-4, avec la pulpe et la région de l'ongle"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion du plantaire médial : engourdissement de la plante et des orteils, de l'hallux au quatrième orteil ; atteinte isolée rare, par plaie ou compression digitale",
+   "test": "Piqûre de la pulpe de l'hallux et des orteils",
+   "clinique": null,
+   "memo": "Sept nerfs propres pour trois orteils et demi : un pour le bord de l'hallux, deux pour chacun des trois espaces",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-plantaire-medial",
+    "kenhub-tibial",
+    "tma-tibial"
+   ],
+   "divergences": "Aucune référence consultée ne donne de racines propres aux nerfs plantaires : on garde celles du tibial"
+  },
+  {
+   "id": "branches-musculaires-du-nerf-fibulaire-profond",
+   "resume": "Les rameaux du fibulaire profond pour la loge antérieure de la jambe et le dos du pied : ils commandent les muscles qui relèvent le pied et étendent les orteils.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "nerf-fibulaire-profond",
+    "texte": "Rameaux du nerf fibulaire profond, détachés dans la loge antérieure de la jambe, puis au pied par sa branche latérale",
+    "racines": [
+     "L4",
+     "L5",
+     "S1"
+    ]
+   },
+   "trajet": "Dans la loge antérieure, ils entrent dans le tibial antérieur, les extenseurs et le troisième fibulaire ; au pied, la branche latérale glisse sous le court extenseur des orteils et le commande",
+   "orifices": null,
+   "branches": null,
+   "moteur": {
+    "texte": "Tibial antérieur, long extenseur des orteils, long extenseur de l'hallux, troisième fibulaire ; au pied, court extenseur des orteils et de l'hallux",
+    "muscles": [
+     "tibial-anterieur",
+     "long-extenseur-orteils",
+     "long-extenseur-hallux",
+     "troisieme-fibulaire",
+     "court-extenseur-orteils",
+     "court-extenseur-de-l-hallux"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion du fibulaire profond ou du fibulaire commun : pied tombant (steppage), dorsiflexion de la cheville et extension des orteils impossibles, marche sur les talons impossible",
+   "test": "Dorsiflexion de la cheville et extension des orteils contre résistance ; marche sur les talons",
+   "clinique": "Le pied tombant est le signe central d'une lésion du fibulaire commun au col de la fibula",
+   "memo": "Les rameaux de la loge de devant : ceux qui relèvent la pointe du pied et lèvent les orteils",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-fibulaire-profond",
+    "tma-fibulaire-commun",
+    "kenhub-fibulaire-commun"
+   ],
+   "divergences": "Racines non précisées pour ces rameaux : on garde celles du fibulaire profond. Kenhub cite aussi le court extenseur de l'hallux, que Gray rattache au court extenseur des orteils"
+  },
+  {
+   "id": "nerf-cutane-dorsal-intermediaire-du-pied",
+   "resume": "L'une des deux branches cutanées du nerf fibulaire superficiel : elle sent le dos du pied en dehors et les orteils du côté latéral.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-fibulaire-superficiel",
+    "texte": "Branche terminale du nerf fibulaire superficiel, née au tiers inférieur de la jambe",
+    "racines": [
+     "L4",
+     "L5",
+     "S1"
+    ]
+   },
+   "trajet": "Perce le fascia profond au tiers inférieur de la jambe, passe devant la cheville et se divise en nerfs digitaux dorsaux pour les faces adjacentes des troisième-quatrième et quatrième-cinquième orteils",
+   "orifices": null,
+   "branches": [
+    {
+     "nerf": "branches-digitales-dorsales-du-nerf-fibulaire-superficiel",
+     "texte": "Nerfs digitaux dorsaux des orteils 3 à 5"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau du côté latéral du dos du pied et des faces adjacentes des troisième-quatrième et quatrième-cinquième orteils"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Étiré lors d'une entorse de cheville ou piégé à sa sortie du fascia : douleur, brûlures ou fourmillements du dos du pied en dehors, sans déficit moteur",
+   "test": "Sensibilité du côté latéral du dos du pied ; percussion sur le trajet (signe de Tinel)",
+   "clinique": null,
+   "memo": "Intermédiaire : au milieu et en dehors du dos du pied, pour les derniers orteils",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-fibulaire-superficiel"
+   ],
+   "divergences": "Racines : L4-S1 pour TeachMeAnatomy ; L4-S2 pour l'ensemble du fibulaire commun"
+  },
+  {
+   "id": "nerf-plantaire-lateral",
+   "resume": "Le nerf de la plante côté latéral : il commande la plupart des petits muscles profonds du pied et sent le bord latéral de la plante.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-tibial",
+    "texte": "Branche terminale latérale du nerf tibial, née derrière la malléole médiale",
+    "racines": [
+     "L4",
+     "L5",
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   "trajet": "Passe obliquement en avant avec l'artère plantaire latérale, entre le court fléchisseur des orteils et le carré plantaire, puis se divise, entre ce muscle et l'abducteur du petit orteil, en branches superficielle et profonde",
+   "orifices": null,
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameaux du carré plantaire et de l'abducteur du petit orteil"
+    },
+    {
+     "nerf": "branches-digitales-plantaires-propres-du-nerf-plantaire-lat",
+     "texte": "Branche superficielle : peau du cinquième orteil et du côté latéral du quatrième, court fléchisseur du petit orteil"
+    },
+    {
+     "nerf": "branches-digitales-plantaires-communes-du-nerf-plantaire-lat",
+     "texte": "Branche commune du quatrième espace"
+    },
+    {
+     "nerf": null,
+     "texte": "Branche profonde : interosseux, deuxième à quatrième lombricaux, adducteur de l'hallux"
+    }
+   ],
+   "moteur": {
+    "texte": "Carré plantaire, abducteur et court fléchisseur du petit orteil, adducteur de l'hallux, interosseux, deuxième à quatrième lombricaux",
+    "muscles": [
+     "carre-plantaire",
+     "abducteur-petit-orteil",
+     "flechisseur-du-petit-doigt",
+     "adducteur-de-l-hallux",
+     "interosseux-plantaires",
+     "interosseux-dorsaux-du-pied",
+     "lombricaux-du-pied"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau du bord latéral de la plante, du cinquième orteil et de la moitié latérale du quatrième"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Compression au tunnel tarsien ou au pied : brûlures et engourdissement du bord latéral de la plante et des deux derniers orteils ; dans les formes sévères, fonte des petits muscles de la plante",
+   "test": "Piqûre du bord latéral de la plante ; écarter et rapprocher les orteils contre résistance",
+   "clinique": "Son territoire ressemble à celui du nerf ulnaire à la main : petits muscles profonds, interosseux et bord latéral",
+   "memo": "Plantaire latéral : l'équivalent du nerf ulnaire au pied, il garde les interosseux et le petit orteil",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-plantaire-lateral",
+    "kenhub-tibial",
+    "tma-tibial"
+   ],
+   "divergences": "Aucune référence consultée ne donne de racines propres aux nerfs plantaires : on garde celles du tibial. Kenhub attribue au plantaire latéral « tous les autres muscles intrinsèques » du pied, Gray précise les muscles un à un"
+  },
+  {
+   "id": "nerf-plantaire-medial",
+   "resume": "Le nerf de la plante côté médial, le plus gros : il commande l'abducteur de l'hallux et des muscles du gros orteil et sent les trois orteils et demi médiaux.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-tibial",
+    "texte": "Branche terminale médiale, la plus volumineuse, du nerf tibial, née sous le rétinaculum des fléchisseurs, derrière la malléole médiale",
+    "racines": [
+     "L4",
+     "L5",
+     "S1",
+     "S2",
+     "S3"
+    ]
+   },
+   "trajet": "Accompagne l'artère plantaire médiale sous l'abducteur de l'hallux, émerge entre lui et le court fléchisseur des orteils, donne un nerf propre à l'hallux et se divise en trois nerfs digitaux plantaires communs",
+   "orifices": null,
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameaux cutanés de la plante, rameaux musculaires et articulaires"
+    },
+    {
+     "nerf": "branches-digitales-plantaires-propres-du-nerf-plantaire-med",
+     "texte": "Nerf digital plantaire propre de la face médiale de l'hallux"
+    },
+    {
+     "nerf": "branches-digitales-plantaires-communes-du-nerf-plantaire-med",
+     "texte": "Trois nerfs digitaux plantaires communs, pour les trois premiers espaces"
+    }
+   ],
+   "moteur": {
+    "texte": "L'abducteur de l'hallux, le court fléchisseur des orteils, le court fléchisseur de l'hallux et le premier lombrical",
+    "muscles": [
+     "abducteur-hallux",
+     "court-flechisseur-orteils",
+     "court-flechisseur-de-l-hallux",
+     "lombricaux-du-pied"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau des deux tiers antérieurs du côté médial de la plante, de l'hallux, des deuxième et troisième orteils et de la moitié médiale du quatrième"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Tunnel tarsien : fourmillements et brûlures de la plante et des trois premiers orteils, aggravés par la station debout ; sensibilité à la percussion derrière la malléole médiale ; faiblesse de l'hallux dans les formes sévères",
+   "test": "Piqûre de la plante et des orteils médiaux ; percussion derrière la malléole médiale (signe de Tinel)",
+   "clinique": "Son territoire rappelle celui du nerf médian à la main : trois orteils et demi, comme trois doigts et demi",
+   "memo": "Plantaire médial, le plus gros : il sert l'hallux et les orteils médiaux (trois et demi), comme le médian à la main",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-plantaire-medial",
+    "kenhub-tibial",
+    "tma-tibial",
+    "wikipedia-canal-tarsien"
+   ],
+   "divergences": "Aucune référence consultée ne donne de racines propres aux nerfs plantaires : on garde celles du tibial"
+  }
+ ]
+}

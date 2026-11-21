@@ -1,0 +1,1513 @@
+{
+ "sources": {
+  "gray1918-sinus": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), « The Sinuses of the Dura Mater » (texte reproduit par Theodora)",
+   "url": "https://theodora.com/anatomy/the_sinuses_of_the_dura_mater.html"
+  },
+  "gray1918-veines": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), chapitre des veines : face, cou, ophtalmiques (pp. 630-660 environ), texte intégral sur Internet Archive",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "teachmeanatomy-sinus": {
+   "titre": "TeachMeAnatomy, « Dural Venous Sinuses »",
+   "url": "https://teachmeanatomy.info/neuroanatomy/vessels/dural-venous-sinuses/"
+  },
+  "kenhub-sinus": {
+   "titre": "Kenhub, « Dural venous sinuses »",
+   "url": "https://kenhub.com/en/library/anatomy/dural-sinuses"
+  },
+  "statpearls-sinus": {
+   "titre": "StatPearls (NCBI Bookshelf), « Neuroanatomy, Dural Venous Sinuses »",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK482257/"
+  },
+  "statpearls-caverneux": {
+   "titre": "StatPearls, « Neuroanatomy, Cavernous Sinus »",
+   "url": "https://www.statpearls.com/point-of-care/19031"
+  },
+  "radiopaedia-sinus": {
+   "titre": "Radiopaedia, « Dural venous sinuses »",
+   "url": "https://radiopaedia.org/articles/dural-venous-sinuses"
+  },
+  "radiopaedia-caverneux": {
+   "titre": "Radiopaedia, « Cavernous sinus »",
+   "url": "https://radiopaedia.org/articles/cavernous-sinus"
+  },
+  "radiopaedia-sigmoide": {
+   "titre": "Radiopaedia, « Sigmoid sinus »",
+   "url": "https://radiopaedia.org/articles/sigmoid-sinus"
+  },
+  "radiopaedia-faciale-commune": {
+   "titre": "Radiopaedia, « Common facial vein »",
+   "url": "https://radiopaedia.org/articles/54516"
+  },
+  "teachmeanatomy-veines-cou": {
+   "titre": "TeachMeAnatomy, « Venous Drainage of the Head and Neck »",
+   "url": "https://teachmeanatomy.info/neck/vessels/venous-drainage"
+  },
+  "kenhub-veines-face": {
+   "titre": "Kenhub, « Superficial arteries and veins of the face and scalp »",
+   "url": "https://www.kenhub.com/en/library/anatomy/superficial-arteries-and-veins-of-the-face-and-scalp"
+  },
+  "kenhub-faciale": {
+   "titre": "Kenhub, « Facial vein »",
+   "url": "https://kenhub.com/en/library/anatomy/facial-vein"
+  },
+  "kenhub-retromandibulaire": {
+   "titre": "Kenhub, « Retromandibular vein »",
+   "url": "https://www.kenhub.com/en/library/anatomy/retromandibular-vein"
+  },
+  "kenhub-jugulaire-externe": {
+   "titre": "Kenhub, « External jugular vein »",
+   "url": "https://kenhub.com/en/library/anatomy/external-jugular-vein"
+  },
+  "kenhub-jugulaire-interne": {
+   "titre": "Kenhub, « Internal jugular vein »",
+   "url": "https://kenhub.com/en/library/anatomy/internal-jugular-vein"
+  },
+  "uams-veines-tete-cou": {
+   "titre": "Université de l'Arkansas (UAMS), tableau « Selected veins of the head and neck »",
+   "url": "https://medicine.uams.edu/neuroscience/education/medical-school-courses/human-structure-module/anatomy-tables/vein-tables/selected-veins-of-the-head-and-neck/"
+  },
+  "ttuhsc-veines-tete-cou": {
+   "titre": "Texas Tech (TTUHSC El Paso), tableau « Veins of the head and neck »",
+   "url": "https://anatomy.ttuhscep.edu/anatomytables/veins_head_neck.html"
+  },
+  "msd-jugulaire-interne": {
+   "titre": "Manuel MSD, « How to do internal jugular vein cannulation, ultrasound-guided »",
+   "url": "https://www.merckmanuals.com/professional/critical-care-medicine/how-to-do-central-vascular-procedures/how-to-do-internal-jugular-vein-cannulation-ultrasound-guided"
+  },
+  "frontiers-thrombose-veineuse-cerebrale": {
+   "titre": "Luo et al., « Diagnosis and Treatment of Cerebral Venous Thrombosis: A Review », Frontiers in Aging Neuroscience, 2018",
+   "url": "https://www.frontiersin.org/articles/10.3389/fnagi.2018.00002/full"
+  },
+  "wikipedia-en-jugulaire-interne": {
+   "titre": "Wikipédia (anglais), « Internal jugular vein »",
+   "url": "https://en.wikipedia.org/wiki/Internal_jugular_vein"
+  },
+  "wikipedia-en-occipitale": {
+   "titre": "Wikipédia (anglais), « Occipital vein »",
+   "url": "https://en.wikipedia.org/wiki/Occipital_vein"
+  },
+  "wikipedia-en-linguale": {
+   "titre": "Wikipédia (anglais), « Lingual vein »",
+   "url": "https://en.wikipedia.org/wiki/Lingual_vein"
+  },
+  "wikipedia-en-thyroidienne-superieure": {
+   "titre": "Wikipédia (anglais), « Superior thyroid vein »",
+   "url": "https://en.wikipedia.org/wiki/Superior_thyroid_vein"
+  },
+  "wikipedia-en-ophtalmique-superieure": {
+   "titre": "Wikipédia (anglais), « Superior ophthalmic vein »",
+   "url": "https://en.wikipedia.org/wiki/Superior_ophthalmic_vein"
+  },
+  "wikipedia-en-ophtalmique-inferieure": {
+   "titre": "Wikipédia (anglais), « Inferior ophthalmic vein »",
+   "url": "https://en.wikipedia.org/wiki/Inferior_ophthalmic_vein"
+  },
+  "wikipedia-en-faciale": {
+   "titre": "Wikipédia (anglais), « Facial vein »",
+   "url": "https://en.wikipedia.org/wiki/Facial_vein"
+  },
+  "wikipedia-en-maxillaire": {
+   "titre": "Wikipédia (anglais), « Maxillary vein »",
+   "url": "https://en.wikipedia.org/wiki/Maxillary_vein"
+  },
+  "wikipedia-en-temporale-superficielle": {
+   "titre": "Wikipédia (anglais), « Superficial temporal vein »",
+   "url": "https://en.wikipedia.org/wiki/Superficial_temporal_vein"
+  },
+  "wikipedia-en-jugulaire-anterieure": {
+   "titre": "Wikipédia (anglais), « Anterior jugular vein »",
+   "url": "https://en.wikipedia.org/wiki/Anterior_jugular_vein"
+  },
+  "wikipedia-en-vertebrale": {
+   "titre": "Wikipédia (anglais), « Vertebral vein »",
+   "url": "https://en.wikipedia.org/wiki/Vertebral_vein"
+  }
+ },
+ "fiches": [
+  {
+   "id": "plexus-veineux-basilaire",
+   "resume": "Le lacis de canaux veineux posé sur le clivus : il relie les deux sinus pétreux inférieurs et communique avec les plexus veineux du rachis.",
+   "plan": "sinus",
+   "origine": {
+    "veine": null,
+    "texte": "Canaux veineux entrelacés entre les feuillets de la dure-mère, sur la partie basilaire de l'occipital, en arrière de la selle turcique"
+   },
+   "trajet": "Étalé sur le clivus, il unit les sinus pétreux inférieurs droit et gauche ; vers le bas, il se prolonge par le foramen magnum dans le plexus veineux vertébral interne",
+   "affluents": [
+    {
+     "veine": "sinus-petreux-inferieur",
+     "texte": "Sinus pétreux inférieurs, que le plexus relie l'un à l'autre"
+    }
+   ],
+   "terminaison": {
+    "veine": "sinus-petreux-inferieur",
+    "texte": "Écoule son sang vers les sinus pétreux inférieurs, donc la jugulaire interne, ou vers le plexus veineux vertébral interne"
+   },
+   "drainage": {
+    "texte": "Relais entre les sinus de la base du crâne (caverneux, pétreux) et les plexus vertébraux ; il reçoit le sang de la fosse crânienne postérieure par les sinus pétreux",
+    "structures": [
+     "occipital"
+    ]
+   },
+   "rapports": "Entre les feuillets de la dure-mère du clivus, en arrière de la selle turcique, sur la partie basilaire de l'occipital",
+   "clinique": "Carrefour sans valvule entre les sinus de la base et les plexus vertébraux : le sang peut y circuler dans les deux sens selon les pressions, ce qui relie le crâne et le rachis",
+   "memo": "Le pont veineux du clivus : il relie les deux sinus pétreux inférieurs",
+   "variantes": null,
+   "sources": [
+    "gray1918-sinus",
+    "teachmeanatomy-sinus",
+    "ttuhsc-veines-tete-cou",
+    "radiopaedia-sinus"
+   ],
+   "divergences": "TTUHSC range le plexus parmi les veines qui rejoignent le plexus vertébral interne ; Gray insiste sur son rôle de pont entre les deux sinus pétreux inférieurs. Les deux descriptions sont compatibles"
+  },
+  {
+   "id": "sinus-caverneux",
+   "resume": "Le réseau veineux de part et d'autre de la selle turcique : il reçoit le sang de l'orbite et enserre la carotide interne et les nerfs oculomoteurs.",
+   "plan": "sinus",
+   "origine": {
+    "veine": "veine-ophtalmique-superieure",
+    "texte": "Commence à la fente orbitaire supérieure, où se jette la veine ophtalmique supérieure, de chaque côté du corps du sphénoïde"
+   },
+   "trajet": "Long d'environ 2 cm et large de 1 cm, il va de la fente orbitaire supérieure à l'apex du rocher du temporal ; des cloisons fibreuses lui donnent un aspect spongieux",
+   "affluents": [
+    {
+     "veine": "veine-ophtalmique-superieure",
+     "texte": "Veine ophtalmique supérieure"
+    },
+    {
+     "veine": "veine-ophtalmique-inferieure",
+     "texte": "Veine ophtalmique inférieure (en totalité ou par une branche)"
+    },
+    {
+     "veine": null,
+     "texte": "Veine cérébrale moyenne superficielle"
+    },
+    {
+     "veine": null,
+     "texte": "Sinus sphéno-pariétal"
+    },
+    {
+     "veine": null,
+     "texte": "Veines hypophysaires efférentes"
+    }
+   ],
+   "terminaison": {
+    "veine": "sinus-petreux-inferieur",
+    "texte": "Se vide en arrière dans les sinus pétreux : l'inférieur gagne la jugulaire interne, le supérieur rejoint le sinus sigmoïde"
+   },
+   "drainage": {
+    "texte": "Orbite (globe, paupières, muscles), partie du lobe temporal, hypophyse ; il relie aussi la face au crâne par la veine ophtalmique et le plexus ptérygoïdien",
+    "structures": [
+     "adenohypophyse"
+    ]
+   },
+   "rapports": "Dans le sinus : la carotide interne (avec son plexus sympathique) et le nerf abducens (VI). Dans sa paroi latérale : les nerfs III, IV, V1 et V2, séparés du sang par le revêtement du sinus",
+   "clinique": "Thrombophlébite du sinus caverneux, née d'une infection du triangle dangereux de la face (veines faciale, angulaire, ophtalmique) : œdème de l'orbite, exophtalmie, atteinte du VI d'abord. Fistule carotido-caverneuse : exophtalmie pulsatile",
+   "memo": "La boîte à bijoux : la carotide y baigne dans le sang veineux, et les nerfs III, IV, V1, V2 longent sa paroi",
+   "variantes": null,
+   "sources": [
+    "gray1918-sinus",
+    "statpearls-caverneux",
+    "kenhub-sinus",
+    "teachmeanatomy-sinus",
+    "radiopaedia-caverneux"
+   ],
+   "divergences": "Le nerf abducens est décrit tantôt contre la paroi médiale près de la carotide (Gray), tantôt dans le sang du sinus, sous la carotide (StatPearls) : la position exacte du VI varie selon les auteurs"
+  },
+  {
+   "id": "sinus-sagittal-superieur",
+   "resume": "Le grand sinus médian de la voûte du crâne : il longe le bord convexe de la faux du cerveau et reçoit le sang de la surface des hémisphères.",
+   "plan": "sinus",
+   "origine": {
+    "veine": null,
+    "texte": "Au foramen cécum, où il reçoit une petite veine venue de la cavité nasale"
+   },
+   "trajet": "Court d'avant en arrière dans le bord adhérent de la faux du cerveau, sous la ligne médiane de la voûte, de plus en plus large ; sa coupe est triangulaire. À la protubérance occipitale interne, il dévie le plus souvent à droite",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines cérébrales supérieures"
+    },
+    {
+     "veine": null,
+     "texte": "Veines de la diploé et de la dure-mère"
+    },
+    {
+     "veine": null,
+     "texte": "Lacunes veineuses latérales, où font saillie les granulations arachnoïdiennes"
+    },
+    {
+     "veine": null,
+     "texte": "Veines émissaires pariétales, venues du cuir chevelu"
+    }
+   ],
+   "terminaison": {
+    "veine": "sinus-transverse",
+    "texte": "Se dilate en confluent des sinus à la protubérance occipitale interne, puis se poursuit par le sinus transverse, le plus souvent le droit"
+   },
+   "drainage": {
+    "texte": "Face supérieure et latérale des hémisphères cérébraux, diploé et dure-mère de la voûte ; il résorbe aussi le liquide cérébrospinal par les granulations arachnoïdiennes",
+    "structures": [
+     "faux-du-cerveau"
+    ]
+   },
+   "rapports": "Accolé au bord convexe de la faux du cerveau, sous les os frontal, pariétaux et occipital ; de fines cordes fibreuses traversent sa lumière",
+   "clinique": "Sa thrombose (thrombose veineuse cérébrale) donne céphalées, crises convulsives, parfois œdème papillaire et infarctus veineux ; avec le sinus transverse, c'est l'un des sinus les plus souvent atteints",
+   "memo": "Le plus grand des sinus : il court du foramen cécum à la protubérance occipitale interne, au sommet de la faux",
+   "variantes": "Il dévie le plus souvent à droite au confluent, parfois à gauche",
+   "sources": [
+    "gray1918-sinus",
+    "teachmeanatomy-sinus",
+    "statpearls-sinus",
+    "kenhub-sinus",
+    "frontiers-thrombose-veineuse-cerebrale"
+   ],
+   "divergences": "Gray le fait se poursuivre par le sinus transverse droit ; TeachMeAnatomy, StatPearls et Kenhub le font déboucher dans le confluent, d'où partent les deux sinus transverses"
+  },
+  {
+   "id": "veine-angulaire",
+   "resume": "La veine de l'angle de l'œil : elle descend le long du nez, communique avec la veine ophtalmique supérieure et ouvre le triangle dangereux de la face.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Réunion de la veine supratrochléaire (frontale) et de la veine supra-orbitaire, à l'angle médial de l'orbite"
+   },
+   "trajet": "Descend le long de la racine et du côté du nez, puis devient la veine faciale au bord inférieur de l'orbite ; à l'angle de l'œil, elle communique avec la veine ophtalmique supérieure par la veine nasofrontale",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines supratrochléaire et supra-orbitaire"
+    },
+    {
+     "veine": null,
+     "texte": "Veines nasales externes, venues de l'aile du nez"
+    },
+    {
+     "veine": "veine-ophtalmique-superieure",
+     "texte": "Veine ophtalmique supérieure, par la veine nasofrontale (anastomose)"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-faciale",
+    "texte": "Se continue par la veine faciale, sous le bord inférieur de l'orbite"
+   },
+   "drainage": {
+    "texte": "Front, paupière supérieure, racine et côté du nez ; elle relie les veines de la face au sinus caverneux",
+    "structures": []
+   },
+   "rapports": "Dépourvue de valvules : le sang peut y couler dans les deux sens, de la face vers l'orbite ou l'inverse",
+   "clinique": "Voie d'entrée du triangle dangereux de la face (commissures des lèvres, racine du nez) : une infection, un bouton pressé peuvent gagner par elle l'ophtalmique supérieure puis le sinus caverneux (thrombophlébite)",
+   "memo": "Angle de l'œil, porte du crâne : angulaire, ophtalmique supérieure, sinus caverneux",
+   "variantes": "Rarement, les deux veines supratrochléaires forment un tronc unique qui draine les deux veines angulaires",
+   "sources": [
+    "kenhub-veines-face",
+    "kenhub-faciale",
+    "uams-veines-tete-cou",
+    "ttuhsc-veines-tete-cou",
+    "gray1918-veines",
+    "wikipedia-en-ophtalmique-superieure"
+   ]
+  },
+  {
+   "id": "veine-occipitale",
+   "resume": "La veine de l'arrière du cuir chevelu : elle naît de la région occipitale, passe sous le trapèze et rejoint le plus souvent la jugulaire interne.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Plexus veineux de la partie postérieure du cuir chevelu, autour de la protubérance occipitale externe, jusqu'à l'arrière du vertex"
+   },
+   "trajet": "Perce l'insertion crânienne du trapèze, croise la partie mastoïdienne du temporal et plonge dans le plexus sous-occipital, où elle rejoint les veines cervicale profonde et vertébrale",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veine émissaire mastoïdienne, qui la relie au sinus sigmoïde"
+    },
+    {
+     "veine": null,
+     "texte": "Veine émissaire pariétale, qui la relie au sinus sagittal supérieur"
+    },
+    {
+     "veine": null,
+     "texte": "Veine diploïque occipitale (parfois)"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-jugulaire-interne",
+    "texte": "Le plus souvent dans la jugulaire interne ; parfois dans la jugulaire externe par la veine auriculaire postérieure, ou dans les veines vertébrale et cervicale profonde"
+   },
+   "drainage": {
+    "texte": "Cuir chevelu de la région occipitale ; par les émissaires, elle relie les sinus de la dure-mère aux veines du dehors",
+    "structures": [
+     "occipital"
+    ]
+   },
+   "rapports": null,
+   "clinique": "Ses veines émissaires, sans valvule, relient le cuir chevelu aux sinus de la dure-mère : elles peuvent laisser passer une infection du scalp vers l'intérieur du crâne",
+   "memo": "Occipitale : elle part de l'arrière du crâne et plonge sous le trapèze vers le cou",
+   "variantes": "Sa terminaison varie : jugulaire interne le plus souvent, jugulaire externe ou veines profondes du cou chez d'autres",
+   "sources": [
+    "gray1918-veines",
+    "wikipedia-en-occipitale",
+    "teachmeanatomy-veines-cou",
+    "ttuhsc-veines-tete-cou"
+   ],
+   "divergences": "Gray la décrit surtout comme se jetant dans les veines vertébrale et cervicale profonde, parfois dans les jugulaires ; Wikipédia et TeachMeAnatomy retiennent la jugulaire interne (version adoptée)"
+  },
+  {
+   "id": "veines-labiales-inferieures",
+   "resume": "Les veines de la lèvre inférieure : elles se jettent dans la veine faciale, sur le côté de la bouche.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Veines de la lèvre inférieure, dans son épaisseur"
+   },
+   "trajet": "Quittent la lèvre inférieure pour rejoindre la veine faciale de leur côté",
+   "affluents": null,
+   "terminaison": {
+    "veine": "veine-faciale",
+    "texte": "Se jettent dans la veine faciale, du côté de la commissure labiale"
+   },
+   "drainage": {
+    "texte": "Lèvre inférieure",
+    "structures": []
+   },
+   "rapports": null,
+   "clinique": "Elles appartiennent au territoire du triangle dangereux (commissures des lèvres, racine du nez) : une infection de la lèvre peut gagner la veine faciale, puis le sinus caverneux. Le risque est surtout cité pour la lèvre supérieure et le nez",
+   "memo": "Labiales inférieures : lèvre du bas, vers la faciale",
+   "variantes": null,
+   "sources": [
+    "kenhub-veines-face",
+    "kenhub-faciale",
+    "gray1918-veines"
+   ]
+  },
+  {
+   "id": "veine-thyroidienne-superieure",
+   "resume": "La veine du pôle supérieur de la thyroïde : elle suit l'artère du même nom et se jette dans la jugulaire interne.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Réunion de veines superficielles et profondes de la partie supérieure de la thyroïde, correspondant aux branches de l'artère thyroïdienne supérieure"
+   },
+   "trajet": "Satellite de l'artère thyroïdienne supérieure, elle part du pôle supérieur de la glande et gagne latéralement la jugulaire interne",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veine laryngée supérieure"
+    },
+    {
+     "veine": null,
+     "texte": "Veine cricothyroïdienne"
+    },
+    {
+     "veine": null,
+     "texte": "Veine sterno-cléido-mastoïdienne"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-jugulaire-interne",
+    "texte": "Se jette dans la partie haute de la jugulaire interne, parfois dans la veine faciale"
+   },
+   "drainage": {
+    "texte": "Partie supérieure de la glande thyroïde, avec le larynx par la veine laryngée supérieure",
+    "structures": [
+     "glande-thyroide"
+    ]
+   },
+   "rapports": "Accompagne l'artère thyroïdienne supérieure ; c'est la seule veine thyroïdienne à suivre une artère",
+   "clinique": "Au pôle supérieur de la thyroïde, elle forme avec l'artère le pédicule supérieur, que le chirurgien lie lors d'une thyroïdectomie",
+   "memo": "Seule veine thyroïdienne à suivre son artère : les deux autres sont seules",
+   "variantes": "Elle se termine parfois dans la veine faciale au lieu de la jugulaire interne",
+   "sources": [
+    "gray1918-veines",
+    "uams-veines-tete-cou",
+    "ttuhsc-veines-tete-cou",
+    "wikipedia-en-thyroidienne-superieure",
+    "kenhub-jugulaire-interne"
+   ]
+  },
+  {
+   "id": "veine-vertebrale",
+   "resume": "La veine qui enveloppe l'artère vertébrale dans le canal des foramens transversaires et se jette dans la veine brachio-céphalique.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Petites veines du triangle sous-occipital, issues des plexus vertébraux internes et des muscles profonds de la nuque, au-dessus de l'arc postérieur de l'atlas"
+   },
+   "trajet": "Entre dans le foramen transversaire de l'atlas, descend en lacis dense autour de l'artère vertébrale dans le canal des foramens transversaires, puis sort en un tronc unique par le foramen transversaire de C6",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veine occipitale (par le plexus sous-occipital)"
+    },
+    {
+     "veine": null,
+     "texte": "Veine cervicale profonde"
+    },
+    {
+     "veine": null,
+     "texte": "Veines vertébrales antérieures"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-brachiocephalique",
+    "texte": "Se jette à la racine du cou dans la face postérieure de la veine brachio-céphalique, près de son origine ; son ostium porte une paire de valvules"
+   },
+   "drainage": {
+    "texte": "Plexus vertébraux internes, muscles profonds de la nuque, région sous-occipitale ; elle communique avec le sinus transverse par le canal condylien",
+    "structures": [
+     "atlas"
+    ]
+   },
+   "rapports": "Entoure l'artère vertébrale ; à droite, elle croise la première partie de l'artère subclavière",
+   "clinique": "Par le canal condylien et les plexus vertébraux, elle relie le sinus transverse au rachis : une voie de dérivation entre le crâne et la colonne cervicale",
+   "memo": "Un manchon veineux autour de l'artère vertébrale : l'artère monte, la veine descend dans le même canal",
+   "variantes": null,
+   "sources": [
+    "gray1918-veines",
+    "wikipedia-en-vertebrale",
+    "ttuhsc-veines-tete-cou",
+    "uams-veines-tete-cou"
+   ]
+  },
+  {
+   "id": "division-anterieure-de-la-veine-retromandibulaire",
+   "resume": "La branche antérieure de la veine rétromandibulaire : elle sort de la parotide et rejoint la veine faciale pour former la faciale commune.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "veine-retromandibulaire",
+    "texte": "Bifurcation de la veine rétromandibulaire, au pôle inférieur de la glande parotide"
+   },
+   "trajet": "Se porte en avant et en bas, jusque sous l'angle de la mandibule, où elle rejoint la veine faciale",
+   "affluents": null,
+   "terminaison": {
+    "veine": "veine-faciale-commune",
+    "texte": "S'unit à la veine faciale pour former la veine faciale commune, qui se jette dans la jugulaire interne"
+   },
+   "drainage": {
+    "texte": "Territoire de la rétromandibulaire : tempe, cuir chevelu latéral, glande parotide, région du masséter et de la mandibule",
+    "structures": [
+     "glande-parotide",
+     "mandibule"
+    ]
+   },
+   "rapports": "Naît dans la parotide ; la faciale commune qu'elle forme croise ensuite la carotide externe",
+   "clinique": "Dans la parotide, la veine rétromandibulaire est profonde par rapport au nerf facial et superficielle par rapport à la carotide externe : un repère en chirurgie parotidienne",
+   "memo": "Antérieure : vers l'avant, la faciale puis la jugulaire interne",
+   "variantes": null,
+   "sources": [
+    "kenhub-retromandibulaire",
+    "gray1918-veines",
+    "uams-veines-tete-cou",
+    "ttuhsc-veines-tete-cou",
+    "radiopaedia-faciale-commune"
+   ]
+  },
+  {
+   "id": "division-posterieure-de-la-veine-retromandibulaire",
+   "resume": "La branche postérieure de la veine rétromandibulaire : elle s'unit à l'auriculaire postérieure pour former la jugulaire externe.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "veine-retromandibulaire",
+    "texte": "Bifurcation de la veine rétromandibulaire, au pôle inférieur de la glande parotide"
+   },
+   "trajet": "Descend en arrière, traverse la couche superficielle de l'aponévrose cervicale profonde et rejoint la veine auriculaire postérieure juste sous le sommet de la parotide",
+   "affluents": [
+    {
+     "veine": "veine-auriculaire-posterieure",
+     "texte": "Veine auriculaire postérieure, avec laquelle elle s'unit"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-jugulaire-externe",
+    "texte": "S'unit à la veine auriculaire postérieure pour former la veine jugulaire externe"
+   },
+   "drainage": {
+    "texte": "Territoire de la rétromandibulaire : tempe, cuir chevelu latéral, glande parotide, région du masséter",
+    "structures": [
+     "glande-parotide"
+    ]
+   },
+   "rapports": "Elle traverse l'aponévrose cervicale profonde à la sortie de la parotide",
+   "clinique": "Dans la parotide, la veine rétromandibulaire est profonde par rapport au nerf facial : un repère en chirurgie parotidienne. Sa branche postérieure est l'origine de la jugulaire externe",
+   "memo": "Postérieure : elle se joint à l'auriculaire postérieure et fait la jugulaire externe",
+   "variantes": "Elle ne rejoint pas toujours l'auriculaire postérieure : la jugulaire externe est alors petite et l'antérieure plus développée",
+   "sources": [
+    "kenhub-retromandibulaire",
+    "kenhub-jugulaire-externe",
+    "gray1918-veines",
+    "teachmeanatomy-veines-cou"
+   ]
+  },
+  {
+   "id": "sinus-droit",
+   "resume": "Le sinus qui descend à la jonction de la faux du cerveau et de la tente du cervelet : il draine les parties profondes du cerveau vers le confluent.",
+   "plan": "sinus",
+   "origine": {
+    "veine": "sinus-sagittal-inferieur",
+    "texte": "Jonction du sinus sagittal inférieur et de la grande veine cérébrale (veine de Galien), à l'union de la faux et de la tente"
+   },
+   "trajet": "Descend en arrière le long de la jonction de la faux du cerveau et de la tente du cervelet, de plus en plus large ; sa coupe est triangulaire",
+   "affluents": [
+    {
+     "veine": "sinus-sagittal-inferieur",
+     "texte": "Sinus sagittal inférieur"
+    },
+    {
+     "veine": null,
+     "texte": "Grande veine cérébrale (veine de Galien)"
+    },
+    {
+     "veine": null,
+     "texte": "Veines cérébelleuses supérieures"
+    }
+   ],
+   "terminaison": {
+    "veine": "sinus-transverse",
+    "texte": "Débouche dans le confluent des sinus, à la protubérance occipitale interne, d'où part le sinus transverse (selon Gray, le gauche quand le sagittal supérieur va à droite)"
+   },
+   "drainage": {
+    "texte": "Parties profondes du cerveau (par la veine de Galien), face médiale des hémisphères, face supérieure du cervelet",
+    "structures": [
+     "faux-du-cerveau",
+     "tente-du-cervelet"
+    ]
+   },
+   "rapports": "Dans l'angle où la faux du cerveau s'attache à la tente du cervelet",
+   "clinique": "La grande veine cérébrale s'y jette : son blocage retient le sang du cerveau profond. Comme tous les sinus, il est sans valvule",
+   "memo": "Droit comme son nom : il court droit de l'union faux-tente vers le confluent",
+   "variantes": null,
+   "sources": [
+    "gray1918-sinus",
+    "teachmeanatomy-sinus",
+    "kenhub-sinus",
+    "statpearls-sinus",
+    "ttuhsc-veines-tete-cou"
+   ],
+   "divergences": "Gray le fait rejoindre le sinus transverse opposé à celui du sagittal supérieur ; TeachMeAnatomy, Kenhub, StatPearls et TTUHSC le font déboucher dans le confluent"
+  },
+  {
+   "id": "sinus-intercaverneux-anterieur",
+   "resume": "Le pont veineux devant l'hypophyse : il relie les deux sinus caverneux à travers la ligne médiane.",
+   "plan": "sinus",
+   "origine": {
+    "veine": "sinus-caverneux",
+    "texte": "Part de l'un des sinus caverneux, en avant de l'hypophyse et de sa tige"
+   },
+   "trajet": "Traverse la ligne médiane en avant de l'hypophyse, sur le diaphragme de la selle ; avec le sinus intercaverneux postérieur, il ferme un cercle veineux (sinus circulaire) autour de la glande",
+   "affluents": null,
+   "terminaison": {
+    "veine": "sinus-caverneux",
+    "texte": "Se jette dans le sinus caverneux du côté opposé"
+   },
+   "drainage": {
+    "texte": "Pas de territoire propre : il fait communiquer les deux sinus caverneux et répartit le sang entre eux",
+    "structures": []
+   },
+   "rapports": "Devant l'hypophyse et sa tige, arqué sur le diaphragme de la selle",
+   "clinique": "Il laisse le sang, et donc une infection ou un caillot, passer d'un sinus caverneux à l'autre : l'atteinte d'un côté peut gagner le côté opposé",
+   "memo": "Antérieur : devant l'hypophyse ; avec le postérieur, il fait un anneau autour d'elle",
+   "variantes": "Il est en général le plus gros des deux ; l'un des deux peut manquer",
+   "sources": [
+    "gray1918-sinus",
+    "teachmeanatomy-sinus",
+    "kenhub-sinus",
+    "statpearls-caverneux"
+   ]
+  },
+  {
+   "id": "sinus-intercaverneux-posterieur",
+   "resume": "Le pont veineux derrière l'hypophyse : il relie les deux sinus caverneux à travers la ligne médiane.",
+   "plan": "sinus",
+   "origine": {
+    "veine": "sinus-caverneux",
+    "texte": "Part de l'un des sinus caverneux, en arrière de l'hypophyse et de sa tige"
+   },
+   "trajet": "Traverse la ligne médiane en arrière de l'hypophyse, sur le diaphragme de la selle ; avec le sinus intercaverneux antérieur, il ferme un cercle veineux (sinus circulaire) autour de la glande",
+   "affluents": null,
+   "terminaison": {
+    "veine": "sinus-caverneux",
+    "texte": "Se jette dans le sinus caverneux du côté opposé"
+   },
+   "drainage": {
+    "texte": "Pas de territoire propre : il fait communiquer les deux sinus caverneux et répartit le sang entre eux",
+    "structures": []
+   },
+   "rapports": "Derrière l'hypophyse et sa tige, arqué sur le diaphragme de la selle",
+   "clinique": "Il laisse le sang, et donc une infection ou un caillot, passer d'un sinus caverneux à l'autre : l'atteinte d'un côté peut gagner le côté opposé",
+   "memo": "Postérieur : derrière l'hypophyse ; avec l'antérieur, il fait un anneau autour d'elle",
+   "variantes": "Il est en général le plus petit des deux ; l'un des deux peut manquer",
+   "sources": [
+    "gray1918-sinus",
+    "teachmeanatomy-sinus",
+    "kenhub-sinus",
+    "statpearls-caverneux"
+   ]
+  },
+  {
+   "id": "sinus-occipital",
+   "resume": "Le plus petit des sinus : il naît autour du foramen magnum, longe la faux du cervelet et se jette dans le confluent des sinus.",
+   "plan": "sinus",
+   "origine": {
+    "veine": null,
+    "texte": "Plusieurs petits canaux veineux autour du bord du foramen magnum"
+   },
+   "trajet": "Monte dans le bord adhérent de la faux du cervelet, sur l'occipital, jusqu'à la protubérance occipitale interne ; il est le plus souvent unique, parfois double",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Plexus veineux vertébraux internes postérieurs (communication autour du foramen magnum)"
+    }
+   ],
+   "terminaison": {
+    "veine": "sinus-transverse",
+    "texte": "Se jette dans le confluent des sinus, d'où partent les sinus transverses ; l'un de ses canaux d'origine rejoint la fin du sinus transverse"
+   },
+   "drainage": {
+    "texte": "Fosse crânienne postérieure, région du foramen magnum et cervelet ; il relie les veines du rachis au confluent",
+    "structures": [
+     "occipital"
+    ]
+   },
+   "rapports": "Dans la faux du cervelet, contre la face interne de l'occipital",
+   "clinique": "Il fait communiquer le confluent avec les plexus vertébraux internes autour du foramen magnum, sans valvule : une voie entre le rachis et la voûte du crâne",
+   "memo": "Occipital : le petit sinus du foramen magnum, qui court sur la faux du cervelet",
+   "variantes": "Parfois double",
+   "sources": [
+    "gray1918-sinus",
+    "teachmeanatomy-sinus",
+    "kenhub-sinus",
+    "statpearls-sinus",
+    "ttuhsc-veines-tete-cou"
+   ],
+   "divergences": "StatPearls le situe sur la tente du cervelet ; Gray, TeachMeAnatomy et Kenhub, dans la faux du cervelet (version retenue)"
+  },
+  {
+   "id": "sinus-petreux-inferieur",
+   "resume": "Le sinus qui conduit le sang du sinus caverneux à la jugulaire interne, par le sillon entre le rocher et l'occipital.",
+   "plan": "sinus",
+   "origine": {
+    "veine": "sinus-caverneux",
+    "texte": "Part de la partie postéro-inférieure du sinus caverneux"
+   },
+   "trajet": "Descend en arrière et en dehors dans le sillon pétreux inférieur, entre le rocher du temporal et la partie basilaire de l'occipital, et traverse la partie antérieure du foramen jugulaire",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines labyrinthiques (auditives internes)"
+    },
+    {
+     "veine": null,
+     "texte": "Veines du bulbe, de la protubérance et de la face inférieure du cervelet"
+    },
+    {
+     "veine": "plexus-veineux-basilaire",
+     "texte": "Plexus veineux basilaire, qui relie les deux sinus pétreux inférieurs"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-jugulaire-interne",
+    "texte": "Se jette dans le bulbe supérieur de la jugulaire interne, au foramen jugulaire"
+   },
+   "drainage": {
+    "texte": "Sinus caverneux, bulbe, protubérance, face inférieure du cervelet, oreille interne",
+    "structures": [
+     "temporal",
+     "occipital"
+    ]
+   },
+   "rapports": "Dans le foramen jugulaire, il occupe la partie antérieure et médiale, en avant des nerfs IX, X et XI, avec une branche méningée de l'artère pharyngienne ascendante",
+   "clinique": "C'est la voie la plus directe du sinus caverneux vers la jugulaire interne : une thrombophlébite caverneuse peut l'emprunter",
+   "memo": "Inférieur : le sinus qui descend vers la jugulaire interne, le supérieur va vers le sigmoïde",
+   "variantes": null,
+   "sources": [
+    "gray1918-sinus",
+    "kenhub-sinus",
+    "statpearls-caverneux",
+    "teachmeanatomy-sinus",
+    "ttuhsc-veines-tete-cou"
+   ],
+   "divergences": "Gray et TeachMeAnatomy : il se jette dans le bulbe de la jugulaire interne ; Kenhub et TTUHSC : dans le sinus sigmoïde distal. Les deux désignent la région du foramen jugulaire ; la jugulaire interne est retenue"
+  },
+  {
+   "id": "sinus-petreux-superieur",
+   "resume": "Le petit sinus qui relie le sinus caverneux à la jonction des sinus transverse et sigmoïde, le long du rocher.",
+   "plan": "sinus",
+   "origine": {
+    "veine": "sinus-caverneux",
+    "texte": "Part de l'extrémité postérieure du sinus caverneux"
+   },
+   "trajet": "Petit et étroit, il passe au-dessus du nerf trijumeau, dans le bord adhérent de la tente du cervelet et le sillon pétreux supérieur, vers l'arrière et le dehors",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines cérébrales et cérébelleuses inférieures"
+    },
+    {
+     "veine": null,
+     "texte": "Veines de la cavité tympanique et du labyrinthe"
+    }
+   ],
+   "terminaison": {
+    "veine": "sinus-sigmoide",
+    "texte": "Se jette dans le sinus transverse, à l'endroit où il se courbe vers le bas pour devenir le sinus sigmoïde"
+   },
+   "drainage": {
+    "texte": "Sinus caverneux, face inférieure du cerveau et du cervelet, cavité tympanique",
+    "structures": [
+     "temporal"
+    ]
+   },
+   "rapports": "Sur le rocher du temporal, dans l'insertion de la tente du cervelet ; il passe au-dessus du trijumeau",
+   "clinique": "Il offre au sinus caverneux une seconde voie d'évacuation, vers le sinus sigmoïde, en plus du sinus pétreux inférieur",
+   "memo": "Supérieur : il passe sur le rocher, au-dessus du trijumeau, vers le sigmoïde",
+   "variantes": null,
+   "sources": [
+    "gray1918-sinus",
+    "kenhub-sinus",
+    "statpearls-sinus",
+    "teachmeanatomy-sinus",
+    "radiopaedia-sigmoide",
+    "ttuhsc-veines-tete-cou"
+   ],
+   "divergences": "Gray et TeachMeAnatomy : il se jette dans le sinus transverse ; Kenhub, StatPearls, Radiopaedia et TTUHSC : dans le sinus sigmoïde. Ils décrivent le même point, à la jonction transverse-sigmoïde (sigmoïde retenu)"
+  },
+  {
+   "id": "sinus-sagittal-inferieur",
+   "resume": "Le petit sinus du bord libre de la faux du cerveau : il rejoint la grande veine cérébrale pour former le sinus droit.",
+   "plan": "sinus",
+   "origine": {
+    "veine": null,
+    "texte": "Bord libre de la faux du cerveau, dans sa moitié ou ses deux tiers postérieurs"
+   },
+   "trajet": "Cylindrique et plus petit que le supérieur, il suit le bord libre de la faux du cerveau, au-dessus du corps calleux, en s'élargissant vers l'arrière",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines de la faux du cerveau"
+    },
+    {
+     "veine": null,
+     "texte": "Veines de la face médiale des hémisphères (parfois)"
+    }
+   ],
+   "terminaison": {
+    "veine": "sinus-droit",
+    "texte": "S'unit à la grande veine cérébrale (veine de Galien) pour former le sinus droit, à la jonction de la faux et de la tente"
+   },
+   "drainage": {
+    "texte": "Faux du cerveau et face médiale des hémisphères",
+    "structures": [
+     "faux-du-cerveau",
+     "corps-calleux"
+    ]
+   },
+   "rapports": "Dans le bord libre (inférieur) de la faux du cerveau, sous le sinus sagittal supérieur et au-dessus du corps calleux",
+   "clinique": "Son sang passe par le sinus droit : un blocage en aval gêne le drainage de la face médiale des hémisphères",
+   "memo": "Inférieur : au bas de la faux, il fait le sinus droit avec la veine de Galien",
+   "variantes": null,
+   "sources": [
+    "gray1918-sinus",
+    "teachmeanatomy-sinus",
+    "kenhub-sinus",
+    "statpearls-sinus",
+    "ttuhsc-veines-tete-cou"
+   ]
+  },
+  {
+   "id": "sinus-sigmoide",
+   "resume": "Le sinus en S qui prolonge le transverse et descend jusqu'au foramen jugulaire, où il devient la jugulaire interne.",
+   "plan": "sinus",
+   "origine": {
+    "veine": "sinus-transverse",
+    "texte": "Prolonge le sinus transverse à la fin de la tente du cervelet, sur le rocher du temporal ; il reçoit alors le sinus pétreux supérieur"
+   },
+   "trajet": "Descend en S dans un sillon creusé dans la partie mastoïdienne du temporal et l'occipital, en arrière des cellules mastoïdiennes, jusqu'au foramen jugulaire",
+   "affluents": [
+    {
+     "veine": "sinus-petreux-superieur",
+     "texte": "Sinus pétreux supérieur"
+    },
+    {
+     "veine": null,
+     "texte": "Veines émissaires mastoïdienne et condylienne (communications avec les veines du dehors)"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-jugulaire-interne",
+    "texte": "Forme le bulbe jugulaire dans la partie postérieure du foramen jugulaire, puis devient la veine jugulaire interne"
+   },
+   "drainage": {
+    "texte": "Tout le sang des sinus de la voûte (par le transverse) et de la base (par les sinus pétreux) ; il est le dernier sinus avant la jugulaire interne",
+    "structures": [
+     "temporal",
+     "occipital"
+    ]
+   },
+   "rapports": "Contre les cellules mastoïdiennes ; il sort du crâne par le foramen jugulaire avec les nerfs IX, X et XI",
+   "clinique": "L'un des sinus les plus souvent thrombosés dans les thromboses veineuses cérébrales ; son voisinage avec les cellules mastoïdiennes expose à l'extension d'une infection de l'oreille",
+   "memo": "En S, comme le sigma grec : il descend jusqu'au foramen jugulaire et devient la jugulaire interne",
+   "variantes": "Son calibre est inégal d'un côté à l'autre, comme celui du sinus transverse",
+   "sources": [
+    "gray1918-sinus",
+    "teachmeanatomy-sinus",
+    "kenhub-sinus",
+    "statpearls-sinus",
+    "radiopaedia-sigmoide",
+    "frontiers-thrombose-veineuse-cerebrale"
+   ],
+   "divergences": "Gray ne le décrit pas comme un sinus à part : la partie qui occupe le sillon de la mastoïde est pour lui le sinus transverse. Les autres références en font un sinus distinct (version retenue)"
+  },
+  {
+   "id": "sinus-transverse",
+   "resume": "Le sinus qui part du confluent et suit le bord adhérent de la tente du cervelet : il conduit le sang de la voûte vers le sinus sigmoïde.",
+   "plan": "sinus",
+   "origine": {
+    "veine": null,
+    "texte": "Naît au confluent des sinus, à la protubérance occipitale interne ; l'un prolonge le sagittal supérieur, l'autre le sinus droit"
+   },
+   "trajet": "Part en dehors et en avant en un arc convexe vers le haut, dans le bord adhérent de la tente du cervelet, contre l'occipital, jusqu'à la base du rocher du temporal où il devient sigmoïde",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines cérébrales inférieures et veine anastomotique inférieure (de Labbé)"
+    },
+    {
+     "veine": null,
+     "texte": "Veines cérébelleuses inférieures"
+    },
+    {
+     "veine": null,
+     "texte": "Veines de la diploé"
+    }
+   ],
+   "terminaison": {
+    "veine": "sinus-sigmoide",
+    "texte": "Se continue par le sinus sigmoïde, à la base du rocher du temporal"
+   },
+   "drainage": {
+    "texte": "Tout le sang du confluent (sagittal supérieur, sinus droit, occipital), face inférieure des hémisphères et du cervelet",
+    "structures": [
+     "occipital",
+     "tente-du-cervelet"
+    ]
+   },
+   "rapports": "Dans le bord adhérent de la tente du cervelet, sur l'occipital puis l'angle mastoïdien du pariétal ; il communique avec les veines du dehors par les émissaires mastoïdienne et condylienne",
+   "clinique": "Avec le sagittal supérieur, c'est l'un des sinus les plus souvent thrombosés : céphalées, crises convulsives, œdème papillaire par hypertension intracrânienne",
+   "memo": "Transverse : il va de côté, de la protubérance occipitale vers le rocher",
+   "variantes": "Calibre souvent inégal : le plus gros prolonge le sinus sagittal supérieur, en général le droit",
+   "sources": [
+    "gray1918-sinus",
+    "teachmeanatomy-sinus",
+    "kenhub-sinus",
+    "statpearls-sinus",
+    "frontiers-thrombose-veineuse-cerebrale"
+   ],
+   "divergences": "Gray fait descendre le sinus transverse jusqu'à la jugulaire interne, sans sinus sigmoïde distinct ; les autres références le terminent au sinus sigmoïde (version retenue)"
+  },
+  {
+   "id": "veine-auriculaire-posterieure",
+   "resume": "La veine du cuir chevelu derrière l'oreille : elle s'unit à la branche postérieure de la rétromandibulaire pour faire la jugulaire externe.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Plexus veineux du côté de la tête, derrière le pavillon, en communication avec les veines occipitale et temporale superficielle"
+   },
+   "trajet": "Descend derrière le pavillon de l'oreille, reçoit les veines du pavillon et la veine stylo-mastoïdienne, puis rejoint la division postérieure de la rétromandibulaire",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines du pavillon de l'oreille"
+    },
+    {
+     "veine": null,
+     "texte": "Veine stylo-mastoïdienne"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-jugulaire-externe",
+    "texte": "S'unit à la division postérieure de la veine rétromandibulaire, juste sous la parotide, pour former la veine jugulaire externe"
+   },
+   "drainage": {
+    "texte": "Cuir chevelu au-dessus et en arrière de l'oreille, pavillon de l'oreille",
+    "structures": []
+   },
+   "rapports": null,
+   "clinique": "Quand elle ne rejoint pas la rétromandibulaire, la jugulaire externe est petite et la jugulaire antérieure se développe pour compenser",
+   "memo": "Postérieure à l'oreille : elle fait avec la rétromandibulaire postérieure la jugulaire externe",
+   "variantes": "Elle ne rejoint pas toujours la rétromandibulaire",
+   "sources": [
+    "kenhub-veines-face",
+    "kenhub-jugulaire-externe",
+    "teachmeanatomy-veines-cou",
+    "uams-veines-tete-cou",
+    "ttuhsc-veines-tete-cou",
+    "gray1918-veines"
+   ]
+  },
+  {
+   "id": "veine-faciale",
+   "resume": "La veine principale du visage : elle prolonge l'angulaire, traverse la joue et gagne le cou pour former la faciale commune.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": "veine-angulaire",
+    "texte": "Continue la veine angulaire, au bord inférieur de l'orbite, sur le côté du nez"
+   },
+   "trajet": "Descend en diagonale sur la face, en arrière de l'artère faciale et plus droite qu'elle, sous le zygomatique majeur et le long du masséter, contourne la mandibule et passe sous le peaucier, en avant de la glande submandibulaire",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines palpébrale inférieure et nasale externe"
+    },
+    {
+     "veine": "veine-labiale-superieure",
+     "texte": "Veine labiale supérieure"
+    },
+    {
+     "veine": "veines-labiales-inferieures",
+     "texte": "Veines labiales inférieures"
+    },
+    {
+     "veine": null,
+     "texte": "Veine faciale profonde (du plexus ptérygoïdien), veines buccale, massétérine, parotidienne"
+    },
+    {
+     "veine": "veine-submentonniere",
+     "texte": "Veine submentonnière"
+    },
+    {
+     "veine": null,
+     "texte": "Veine palatine externe"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-faciale-commune",
+    "texte": "Rejoint la division antérieure de la veine rétromandibulaire, sous l'angle de la mandibule, pour former la veine faciale commune"
+   },
+   "drainage": {
+    "texte": "Face antérieure : paupières, nez, lèvres, joue, menton ; par la faciale profonde, une partie du plexus ptérygoïdien",
+    "structures": [
+     "masseter"
+    ]
+   },
+   "rapports": "À la face, en arrière de l'artère faciale ; au cou, sous le peaucier et au-dessus de la glande submandibulaire, du digastrique et du stylo-hyoïdien",
+   "clinique": "Triangle dangereux de la face : par l'angulaire et l'ophtalmique, ou par la faciale profonde et le plexus ptérygoïdien, une infection des lèvres ou du nez peut gagner le sinus caverneux (thrombophlébite)",
+   "memo": "La faciale suit l'artère mais en arrière et plus droite, vers la faciale commune",
+   "variantes": "Elle peut se jeter directement dans la jugulaire interne, ou dans la jugulaire externe ou antérieure",
+   "sources": [
+    "kenhub-faciale",
+    "kenhub-veines-face",
+    "gray1918-veines",
+    "wikipedia-en-faciale",
+    "uams-veines-tete-cou"
+   ],
+   "divergences": "Valvules : Gray la dit sans valvules, Wikipédia lui en attribue ; point non tranché. Terminaison : la plupart la joignent à la rétromandibulaire (faciale commune), certaines la jettent seule dans la jugulaire interne"
+  },
+  {
+   "id": "veine-faciale-commune",
+   "resume": "Le court tronc né de la faciale et de la rétromandibulaire : il se jette dans la jugulaire interne, sous l'os hyoïde.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "veine-faciale",
+    "texte": "Union de la veine faciale et de la division antérieure de la veine rétromandibulaire, sous l'angle de la mandibule"
+   },
+   "trajet": "Descend en croisant en superficie la carotide externe, puis la carotide interne et le nerf hypoglosse, vers le triangle carotidien",
+   "affluents": [
+    {
+     "veine": "veine-linguale",
+     "texte": "Veine linguale (parfois)"
+    },
+    {
+     "veine": "veine-thyroidienne-superieure",
+     "texte": "Veine thyroïdienne supérieure (parfois)"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-jugulaire-interne",
+    "texte": "Se jette dans la jugulaire interne, à un niveau variable sous l'os hyoïde"
+   },
+   "drainage": {
+    "texte": "Face, cuir chevelu antérieur et face profonde (par la rétromandibulaire)",
+    "structures": []
+   },
+   "rapports": "Elle passe en superficie de la carotide externe, de l'interne et du nerf hypoglosse",
+   "clinique": "Dans le triangle carotidien, c'est le tronc veineux que l'on rencontre avant la carotide : il collecte le sang de la face avant la jugulaire interne",
+   "memo": "Faciale commune = faciale + branche antérieure de la rétromandibulaire, vers la jugulaire interne",
+   "variantes": "Elle peut se jeter dans la jugulaire externe, la jugulaire antérieure ou la subclavière",
+   "sources": [
+    "radiopaedia-faciale-commune",
+    "kenhub-faciale",
+    "kenhub-retromandibulaire",
+    "uams-veines-tete-cou",
+    "gray1918-veines"
+   ]
+  },
+  {
+   "id": "veine-jugulaire-anterieure",
+   "resume": "La veine superficielle du devant du cou : elle descend près de la ligne médiane et se jette dans la jugulaire externe.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Réunion de petites veines superficielles de la région sous-mentale, près de l'os hyoïde"
+   },
+   "trajet": "Descend entre la ligne médiane et le bord antérieur du sterno-cléido-mastoïdien, longe la membrane cricothyroïdienne, puis passe sous le muscle à la partie basse du cou",
+   "affluents": [
+    {
+     "veine": "veine-submentonniere",
+     "texte": "Veine submentonnière"
+    },
+    {
+     "veine": null,
+     "texte": "Veines laryngées et petite veine thyroïdienne"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-jugulaire-externe",
+    "texte": "Se jette dans la fin de la jugulaire externe, parfois directement dans la veine subclavière"
+   },
+   "drainage": {
+    "texte": "Peau et muscles superficiels de la partie antérieure du cou",
+    "structures": [
+     "platysma"
+    ]
+   },
+   "rapports": "Les deux veines communiquent au-dessus du sternum par l'arc veineux jugulaire, qui reçoit des veines thyroïdiennes inférieures. Pas de valvules",
+   "clinique": "Facile à voir à l'échographie ; elle peut saigner abondamment lors d'une trachéotomie, surtout si elle est double ou volumineuse : une incision médiane l'évite",
+   "memo": "Antérieure : sur le devant du cou, près de la ligne médiane, vers la jugulaire externe",
+   "variantes": "Calibre en général inverse de celui de la jugulaire externe ; souvent deux veines, parfois une seule",
+   "sources": [
+    "wikipedia-en-jugulaire-anterieure",
+    "gray1918-veines",
+    "uams-veines-tete-cou",
+    "ttuhsc-veines-tete-cou",
+    "teachmeanatomy-veines-cou"
+   ],
+   "divergences": "Gray la fait aboutir à la jugulaire externe ou à la subclavière ; les autres références, à la jugulaire externe (version retenue)"
+  },
+  {
+   "id": "veine-jugulaire-externe",
+   "resume": "La veine superficielle du cou : on la voit sous la peau, de l'angle de la mandibule à la clavicule, et elle gonfle quand la pression veineuse monte.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": "division-posterieure-de-la-veine-retromandibulaire",
+    "texte": "Union de la division postérieure de la veine rétromandibulaire et de la veine auriculaire postérieure, près de l'angle de la mandibule"
+   },
+   "trajet": "Descend obliquement sur le sterno-cléido-mastoïdien, sous le platysma et dans le fascia superficiel, croise le nerf transverse du cou, puis perce le fascia profond vers le milieu de la clavicule",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veine jugulaire externe postérieure"
+    },
+    {
+     "veine": null,
+     "texte": "Veine cervicale transverse"
+    },
+    {
+     "veine": null,
+     "texte": "Veine suprascapulaire"
+    },
+    {
+     "veine": "veine-jugulaire-anterieure",
+     "texte": "Veine jugulaire antérieure"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-sous-claviere",
+    "texte": "Se jette dans la veine subclavière, en dehors ou en avant du scalène antérieur"
+   },
+   "drainage": {
+    "texte": "Cuir chevelu et face superficiels, régions profondes de la tête, nuque et épaule",
+    "structures": []
+   },
+   "rapports": "Au-dessus du sterno-cléido-mastoïdien, dont la sépare le fascia cervical profond ; elle passe sur le nerf transverse du cou, parallèle au nerf grand auriculaire",
+   "clinique": "Sa turgescence trahit une pression veineuse élevée (insuffisance cardiaque droite, tamponnade, obstruction de la veine cave supérieure). Sectionnée, elle peut aspirer de l'air : on comprime la plaie",
+   "memo": "Externe : sous la peau, celle qu'on voit gonfler ; elle plonge sous la clavicule dans la subclavière",
+   "variantes": "Petite quand l'auriculaire postérieure ne rejoint pas la rétromandibulaire ; la jugulaire antérieure est alors plus grosse",
+   "sources": [
+    "kenhub-jugulaire-externe",
+    "teachmeanatomy-veines-cou",
+    "gray1918-veines",
+    "uams-veines-tete-cou",
+    "ttuhsc-veines-tete-cou",
+    "kenhub-retromandibulaire"
+   ]
+  },
+  {
+   "id": "veine-jugulaire-interne",
+   "resume": "La grande veine du cou : elle ramène le sang de l'encéphale, de la face et du cou jusqu'à la veine brachio-céphalique.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "sinus-sigmoide",
+    "texte": "Prolonge le sinus sigmoïde au foramen jugulaire, dont elle forme le bulbe supérieur"
+   },
+   "trajet": "Sort du crâne en arrière de la carotide interne, puis descend presque verticalement dans la gaine carotidienne, en dehors de la carotide commune ; le nerf vague passe entre les deux vaisseaux, en arrière",
+   "affluents": [
+    {
+     "veine": "sinus-petreux-inferieur",
+     "texte": "Sinus pétreux inférieur"
+    },
+    {
+     "veine": null,
+     "texte": "Veines pharyngiennes (plexus pharyngé)"
+    },
+    {
+     "veine": "veine-linguale",
+     "texte": "Veine linguale"
+    },
+    {
+     "veine": "veine-faciale-commune",
+     "texte": "Veine faciale commune"
+    },
+    {
+     "veine": "veine-occipitale",
+     "texte": "Veine occipitale (le plus souvent)"
+    },
+    {
+     "veine": "veine-thyroidienne-superieure",
+     "texte": "Veine thyroïdienne supérieure"
+    },
+    {
+     "veine": null,
+     "texte": "Veine thyroïdienne moyenne"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-brachiocephalique",
+    "texte": "S'unit à la veine subclavière derrière l'extrémité sternale de la clavicule pour former la veine brachio-céphalique ; un bulbe inférieur précède la jonction"
+   },
+   "drainage": {
+    "texte": "Encéphale et méninges (par les sinus), crâne, face, langue, thyroïde, pharynx et larynx, muscles du cou",
+    "structures": [
+     "langue",
+     "glande-thyroide"
+    ]
+   },
+   "rapports": "Recouverte par le sterno-cléido-mastoïdien, croisée par le ventre postérieur du digastrique, l'omo-hyoïdien et le nerf accessoire (XI). Une paire de valvules se trouve près de sa terminaison",
+   "clinique": "Voie classique du cathéter central, de préférence à droite (plus large, trajet direct vers la veine cave supérieure), sous échographie : risque de ponction carotidienne et de pneumothorax. Sa pulsation, patient à 45°, reflète la pression de l'oreillette droite",
+   "memo": "Jugulaire interne : dans la gaine carotidienne, en dehors de la carotide, avec le vague en arrière",
+   "variantes": "Taille, forme ou trajet anormaux chez environ 9 à 12 % des personnes ; la gauche est en général plus petite que la droite",
+   "sources": [
+    "gray1918-veines",
+    "kenhub-jugulaire-interne",
+    "teachmeanatomy-veines-cou",
+    "wikipedia-en-jugulaire-interne",
+    "msd-jugulaire-interne",
+    "uams-veines-tete-cou"
+   ],
+   "divergences": "Valvules : Gray et Wikipédia décrivent une paire de valvules près de la terminaison ; TeachMeAnatomy mentionne une valvule au bulbe inférieur. Position par rapport à la carotide : latérale et superficielle, avec 9 à 19 % de variantes (MSD)"
+  },
+  {
+   "id": "veine-labiale-superieure",
+   "resume": "La veine de la lèvre supérieure : elle se jette dans la veine faciale, près de la commissure.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Veines de la lèvre supérieure, dans son épaisseur"
+   },
+   "trajet": "Quitte la lèvre supérieure pour rejoindre la veine faciale de son côté, avant que celle-ci ne gagne la joue",
+   "affluents": null,
+   "terminaison": {
+    "veine": "veine-faciale",
+    "texte": "Se jette dans la veine faciale, sur le côté de la bouche"
+   },
+   "drainage": {
+    "texte": "Lèvre supérieure",
+    "structures": []
+   },
+   "rapports": null,
+   "clinique": "Dans le triangle dangereux (commissures des lèvres, racine du nez) : presser un gros bouton de la lèvre supérieure ou du côté du nez peut propager l'infection par la faciale et l'angulaire jusqu'au sinus caverneux",
+   "memo": "Labiale supérieure : lèvre du haut, dans le triangle dangereux, vers la faciale",
+   "variantes": null,
+   "sources": [
+    "kenhub-veines-face",
+    "kenhub-faciale",
+    "gray1918-veines"
+   ]
+  },
+  {
+   "id": "veine-linguale",
+   "resume": "Les veines de la langue : elles suivent l'artère linguale et se jettent dans la jugulaire interne.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Veines du dos, des côtés et de la face inférieure de la langue"
+   },
+   "trajet": "Accompagne l'artère linguale dans la région sous-mandibulaire ; elle reçoit en général la veine qui accompagne le nerf hypoglosse",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veine accompagnant le nerf hypoglosse (satellite)"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-jugulaire-interne",
+    "texte": "Se jette dans la jugulaire interne, parfois dans la veine faciale commune"
+   },
+   "drainage": {
+    "texte": "Face dorsale, bords et face inférieure de la langue",
+    "structures": [
+     "langue"
+    ]
+   },
+   "rapports": "Suit l'artère linguale ; la veine satellite de l'hypoglosse la rejoint souvent",
+   "clinique": "Sous la langue, les veines absorbent vite certains médicaments : c'est pourquoi la nitroglycérine se donne par voie sublinguale dans l'angine de poitrine",
+   "memo": "Linguale : elle suit l'artère linguale, de la langue à la jugulaire interne",
+   "variantes": "La veine satellite de l'hypoglosse rejoint parfois la faciale commune au lieu de la linguale",
+   "sources": [
+    "gray1918-veines",
+    "wikipedia-en-linguale",
+    "uams-veines-tete-cou",
+    "kenhub-jugulaire-interne"
+   ],
+   "divergences": "Gray et Kenhub : la linguale se jette dans la jugulaire interne ; Wikipédia et UAMS admettent aussi la faciale commune comme voie de drainage (variante)"
+  },
+  {
+   "id": "veine-ophtalmique-inferieure",
+   "resume": "La veine du plancher de l'orbite : elle rejoint le sinus caverneux (directement ou par l'ophtalmique supérieure) et communique avec le plexus ptérygoïdien.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Réseau veineux de la partie antérieure du plancher et de la paroi médiale de l'orbite"
+   },
+   "trajet": "Descend en arrière sur le plancher de l'orbite, sur le droit inférieur, au-dessus de la fente orbitaire inférieure sans la traverser ; elle se divise parfois en deux branches",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines des muscles droit inférieur, oblique inférieur et droit latéral"
+    },
+    {
+     "veine": null,
+     "texte": "Veines du sac lacrymal et de la conjonctive inférieure"
+    },
+    {
+     "veine": null,
+     "texte": "Veines vortiqueuses inférieures"
+    }
+   ],
+   "terminaison": {
+    "veine": "sinus-caverneux",
+    "texte": "Se jette dans le sinus caverneux, directement ou par la veine ophtalmique supérieure ; une branche rejoint le plexus ptérygoïdien par la fente orbitaire inférieure"
+   },
+   "drainage": {
+    "texte": "Plancher et paroi médiale de l'orbite, muscles inférieurs de l'orbite, sac lacrymal, conjonctive inférieure",
+    "structures": []
+   },
+   "rapports": "Sans valvules ; elle passe sur le droit inférieur, au-dessus de la fente orbitaire inférieure",
+   "clinique": "Avec l'ophtalmique supérieure, elle relie la face au sinus caverneux : une infection de l'orbite ou de la face peut gagner le crâne. Une cellulite périorbitaire comprime ses veines et donne un œdème",
+   "memo": "Inférieure : le plancher de l'orbite, et une branche de secours vers le plexus ptérygoïdien",
+   "variantes": "Elle peut rejoindre le sinus caverneux directement, par la veine ophtalmique supérieure, ou se diviser entre les deux",
+   "sources": [
+    "gray1918-veines",
+    "wikipedia-en-ophtalmique-inferieure",
+    "statpearls-caverneux",
+    "uams-veines-tete-cou",
+    "ttuhsc-veines-tete-cou"
+   ],
+   "divergences": "Gray et StatPearls : deux branches, l'une vers le sinus caverneux, l'autre vers le plexus ptérygoïdien ; UAMS et TTUHSC : elle se jette dans l'ophtalmique supérieure ; Wikipédia admet les deux. Le sinus caverneux, point d'arrivée commun, est retenu"
+  },
+  {
+   "id": "veine-ophtalmique-superieure",
+   "resume": "La grande veine de l'orbite : née de l'angle de l'œil, elle traverse l'orbite avec l'artère ophtalmique et se jette dans le sinus caverneux.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "veine-angulaire",
+    "texte": "Naît près du bord supéro-médial de l'orbite par la veine nasofrontale, qui l'unit à la veine angulaire"
+   },
+   "trajet": "Court d'avant en arrière dans l'orbite avec l'artère ophtalmique, passe sous le droit supérieur puis croise le nerf optique, et sort par la partie supérieure de la fente orbitaire supérieure",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines nasofrontale, ethmoïdales antérieure et postérieure"
+    },
+    {
+     "veine": null,
+     "texte": "Veine lacrymale et veines des muscles de l'orbite"
+    },
+    {
+     "veine": null,
+     "texte": "Veines ciliaires, veines vortiqueuses supérieures et veine centrale de la rétine (parfois)"
+    },
+    {
+     "veine": "veine-ophtalmique-inferieure",
+     "texte": "Veine ophtalmique inférieure (parfois)"
+    }
+   ],
+   "terminaison": {
+    "veine": "sinus-caverneux",
+    "texte": "Se jette dans le sinus caverneux, après la fente orbitaire supérieure"
+   },
+   "drainage": {
+    "texte": "Globe oculaire, partie haute de l'orbite, cellules ethmoïdales, front",
+    "structures": []
+   },
+   "rapports": "Dépourvue de valvules ; elle croise le nerf optique et sort de l'orbite en général au-dessus de l'anneau tendineux commun",
+   "clinique": "Voie de propagation d'une infection du triangle dangereux vers le sinus caverneux (thrombophlébite). Dans une fistule carotido-caverneuse, le sang reflue par elle : exophtalmie, œil rouge et pulsatile",
+   "memo": "Ophtalmique supérieure : de l'angle de l'œil au sinus caverneux, sans valvule, dans les deux sens",
+   "variantes": "Ses affluents varient d'une personne à l'autre",
+   "sources": [
+    "wikipedia-en-ophtalmique-superieure",
+    "gray1918-veines",
+    "statpearls-caverneux",
+    "uams-veines-tete-cou",
+    "ttuhsc-veines-tete-cou",
+    "kenhub-veines-face"
+   ]
+  },
+  {
+   "id": "veine-retromandibulaire",
+   "resume": "La veine de la parotide, appelée aussi faciale postérieure : née des veines temporale superficielle et maxillaire, elle se divise en deux branches.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "veines-temporales-superficielles",
+    "texte": "Union de la veine temporale superficielle et de la veine maxillaire, derrière le ramus de la mandibule, dans la parotide"
+   },
+   "trajet": "Descend dans la glande parotide, en arrière du ramus de la mandibule, en profondeur du nerf facial et en superficie de la carotide externe, puis se divise au pôle inférieur de la glande",
+   "affluents": [
+    {
+     "veine": "veines-temporales-superficielles",
+     "texte": "Veine temporale superficielle"
+    },
+    {
+     "veine": "veines-maxillaires",
+     "texte": "Veine maxillaire"
+    }
+   ],
+   "terminaison": {
+    "veine": "division-anterieure-de-la-veine-retromandibulaire",
+    "texte": "Se divise : la branche antérieure rejoint la faciale (jugulaire interne), la branche postérieure forme la jugulaire externe avec l'auriculaire postérieure"
+   },
+   "drainage": {
+    "texte": "Côté de la tête et cuir chevelu, parotide, masséter, mandibule, face profonde (par la maxillaire)",
+    "structures": [
+     "glande-parotide",
+     "masseter",
+     "mandibule"
+    ]
+   },
+   "rapports": "Dans la glande parotide, profonde par rapport au nerf facial et superficielle par rapport à la carotide externe, au digastrique et au stylo-hyoïdien",
+   "clinique": "Repère de la chirurgie de la parotide : la veine rétromandibulaire est profonde par rapport au nerf facial et superficielle par rapport à la carotide externe",
+   "memo": "Rétro-mandibulaire : derrière la mandibule, dans la parotide ; elle se fend en deux (jugulaire interne, jugulaire externe)",
+   "variantes": "Elle ne s'unit pas toujours à l'auriculaire postérieure : la jugulaire externe est alors petite",
+   "sources": [
+    "kenhub-retromandibulaire",
+    "gray1918-veines",
+    "uams-veines-tete-cou",
+    "ttuhsc-veines-tete-cou",
+    "teachmeanatomy-veines-cou"
+   ]
+  },
+  {
+   "id": "veine-submentonniere",
+   "resume": "La petite veine du dessous du menton : elle rejoint la veine faciale et participe à l'origine de la jugulaire antérieure.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Petites veines de la région sous-mentale, sous le menton, près de l'os hyoïde"
+   },
+   "trajet": "Draine la région sous-mentale et rejoint la veine faciale dans sa partie cervicale ; des veines communicantes la relient aussi à l'origine de la jugulaire antérieure",
+   "affluents": null,
+   "terminaison": {
+    "veine": "veine-faciale",
+    "texte": "Se jette dans la veine faciale, dans sa partie cervicale"
+   },
+   "drainage": {
+    "texte": "Peau et tissus de la région sous-mentale",
+    "structures": []
+   },
+   "rapports": null,
+   "clinique": "Sans enjeu clinique propre ; elle illustre les deux voies de drainage de la région sous-mentale : la faciale, vers la jugulaire interne, ou la jugulaire antérieure, vers l'externe",
+   "memo": "Sous-mentale : sous le menton, elle va à la faciale ou à la jugulaire antérieure",
+   "variantes": "Elle contribue parfois davantage à la jugulaire antérieure qu'à la faciale",
+   "sources": [
+    "kenhub-faciale",
+    "gray1918-veines",
+    "uams-veines-tete-cou",
+    "ttuhsc-veines-tete-cou"
+   ],
+   "divergences": "Gray et Kenhub : affluent de la veine faciale ; UAMS et TTUHSC : elle forme, avec une veine communicante, la jugulaire antérieure. Version retenue : faciale, avec lien à la jugulaire antérieure"
+  },
+  {
+   "id": "veines-maxillaires",
+   "resume": "Le court tronc veineux qui naît du plexus ptérygoïdien et rejoint la veine temporale superficielle dans la parotide.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Plexus ptérygoïdien, entre les muscles temporal et ptérygoïdiens de la fosse infratemporale"
+   },
+   "trajet": "Court tronc qui accompagne la première partie de l'artère maxillaire, passe entre le ligament sphéno-mandibulaire et le col de la mandibule, puis entre dans la parotide",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines du plexus ptérygoïdien (palatine descendante, sphéno-palatine, infra-orbitaire, alvéolaires, temporales profondes, méningée moyenne, massétérine)"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-retromandibulaire",
+    "texte": "S'unit à la veine temporale superficielle dans la parotide pour former la veine rétromandibulaire"
+   },
+   "drainage": {
+    "texte": "Fosse infratemporale, fosses nasales, méninges et régions profondes de la face, par le plexus ptérygoïdien",
+    "structures": []
+   },
+   "rapports": "Elle longe l'artère maxillaire et passe entre le ligament sphéno-mandibulaire et le col de la mandibule",
+   "clinique": "Le plexus ptérygoïdien, sans valvule, communique avec le sinus caverneux (foramens ovale, de Vésale, déchiré), avec la faciale profonde et l'ophtalmique inférieure : une voie vers le crâne",
+   "memo": "Maxillaires : un court tronc qui suit le début de l'artère maxillaire jusqu'à la parotide",
+   "variantes": null,
+   "sources": [
+    "wikipedia-en-maxillaire",
+    "gray1918-veines",
+    "gray1918-sinus",
+    "kenhub-retromandibulaire",
+    "ttuhsc-veines-tete-cou"
+   ]
+  },
+  {
+   "id": "veines-temporales-superficielles",
+   "resume": "Les veines de la tempe et du côté du crâne : elles s'unissent à la maxillaire dans la parotide pour former la rétromandibulaire.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Plexus veineux du côté et du sommet du crâne, en communication avec les veines frontale, supra-orbitaire, occipitale et auriculaire postérieure"
+   },
+   "trajet": "Les branches frontale et pariétale se réunissent au-dessus de l'arcade zygomatique ; le tronc passe sous la racine postérieure de l'arcade, puis entre dans la parotide",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veine temporale moyenne"
+    },
+    {
+     "veine": null,
+     "texte": "Veine faciale transverse"
+    },
+    {
+     "veine": null,
+     "texte": "Veines articulaires, parotidiennes et auriculaires antérieures"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-retromandibulaire",
+    "texte": "S'unit à la veine maxillaire dans la parotide pour former la veine rétromandibulaire"
+   },
+   "drainage": {
+    "texte": "Tempe, côté et sommet du cuir chevelu",
+    "structures": [
+     "muscle-temporal"
+    ]
+   },
+   "rapports": null,
+   "clinique": "Sans enjeu clinique propre ; on la retient comme l'origine de la veine rétromandibulaire, avec la maxillaire",
+   "memo": "Temporale superficielle : la veine de la tempe, qui descend devant l'oreille vers la parotide",
+   "variantes": null,
+   "sources": [
+    "wikipedia-en-temporale-superficielle",
+    "kenhub-veines-face",
+    "gray1918-veines",
+    "uams-veines-tete-cou"
+   ],
+   "divergences": "Gray et certaines pages la font former la « veine faciale postérieure », ancien nom de la rétromandibulaire : même vaisseau"
+  }
+ ]
+}

@@ -1,0 +1,1082 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918) : lymphatiques de la tête, du cou et du thorax",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "teachme-cou": {
+   "titre": "TeachMeAnatomy : lymphatiques du cou",
+   "url": "https://teachmeanatomy.info/neck/vessels/lymphatics/"
+  },
+  "teachme-axillaires": {
+   "titre": "TeachMeAnatomy : lymphatiques du membre supérieur (nœuds axillaires)",
+   "url": "https://teachmeanatomy.info/upper-limb/vessels/lymphatics/"
+  },
+  "kenhub-tete-cou-bras": {
+   "titre": "Kenhub : nœuds lymphatiques de la tête, du cou et du bras",
+   "url": "https://www.kenhub.com/en/library/anatomy/lymph-nodes-of-the-head-neck-and-arm"
+  },
+  "kenhub-lymphatiques-tete-cou": {
+   "titre": "Kenhub : lymphatiques de la tête et du cou",
+   "url": "https://kenhub.com/en/study/lymphatics-of-the-head-and-neck"
+  },
+  "kenhub-sein": {
+   "titre": "Kenhub : drainage lymphatique du sein",
+   "url": "https://www.kenhub.com/en/library/anatomy/lymphatic-drainage-of-the-breast"
+  },
+  "kenhub-thorax-mediastin": {
+   "titre": "Kenhub : nœuds et vaisseaux lymphatiques du thorax et du médiastin",
+   "url": "https://kenhub.com/en/library/anatomy/the-lymphatic-system-of-the-thoracic-cavity-and-mediastinum"
+  },
+  "kenhub-mediastin": {
+   "titre": "Kenhub : nœuds lymphatiques du médiastin",
+   "url": "https://kenhub.com/en/library/anatomy/mediastinal-lymph-nodes"
+  },
+  "radiopaedia-niveaux": {
+   "titre": "Radiopaedia : niveaux ganglionnaires cervicaux",
+   "url": "https://images.radiopaedia.org/articles/cervical-lymph-node-levels?lang=us"
+  },
+  "seer-tete-cou": {
+   "titre": "SEER Training : chaînes ganglionnaires de la tête et du cou",
+   "url": "https://www.training.seer.cancer.gov/head-neck/anatomy/lymph-node.html"
+  },
+  "seer-poumon": {
+   "titre": "SEER Training : nœuds lymphatiques régionaux du poumon",
+   "url": "https://training.seer.cancer.gov/lung/anatomy/lymph-nodes.html"
+  },
+  "uams-thorax": {
+   "titre": "UAMS : tableau des lymphatiques du thorax",
+   "url": "https://medicine.uams.edu/neurobiology/education/medical-school-courses/human-structure-module/anatomy-tables/lymphatic-tables/lymphatics-of-the-thorax"
+  },
+  "fipat-ta2-cou": {
+   "titre": "FIPAT, Terminologia Anatomica 2 : nœuds lymphatiques cervicaux",
+   "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/tax/LAFR/TAH16679 T4 EN.htm"
+  },
+  "fipat-ta2-thorax": {
+   "titre": "FIPAT, Terminologia Anatomica 2 : nœuds lymphatiques du thorax",
+   "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/tax/LAEN/TAH4953 T4 EN.htm"
+  }
+ },
+ "fiches": [
+  {
+   "id": "lymphonoeuds-cervicaux-anterieurs-superficiels",
+   "resume": "Quelques petits nœuds sous la peau du devant du cou, le long de la veine jugulaire antérieure.",
+   "situation": "Sous la peau du devant du cou, de part et d'autre de la ligne médiane, le long de la veine jugulaire antérieure ; leur nombre varie d'une personne à l'autre",
+   "recoit": {
+    "texte": "La lymphe de la peau et des muscles sous-hyoïdiens du devant du cou",
+    "structures": [
+     "sterno-hyoidien",
+     "sterno-thyroidien"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-cervicaux-lateraux-profonds-inferieurs",
+    "texte": "Vers les nœuds cervicaux latéraux profonds ou, directement, vers les nœuds supraclaviculaires, puis le tronc jugulaire"
+   },
+   "palpation": null,
+   "clinique": "Ils appartiennent au niveau VI (compartiment central du cou), avec les nœuds prétrachéaux et paratrachéaux : ce niveau est vidé lors du curage central d'un cancer de la thyroïde",
+   "memo": "Antérieurs superficiels : ils suivent la veine jugulaire antérieure, juste sous la peau",
+   "variantes": "Groupe irrégulier et inconstant",
+   "sources": [
+    "gray1918",
+    "kenhub-tete-cou-bras",
+    "radiopaedia-niveaux",
+    "fipat-ta2-cou"
+   ],
+   "divergences": "Gray envoie leurs efférents au plus bas des nœuds cervicaux profonds supérieurs ; Kenhub aux nœuds latéraux profonds ou supraclaviculaires"
+  },
+  {
+   "id": "lymphonoeuds-cervicaux-lateraux-profonds-inferieurs",
+   "resume": "Le bas de la chaîne jugulaire : les nœuds qui bordent la veine jugulaire interne près de la base du cou.",
+   "situation": "Le long de la veine jugulaire interne, sous le croisement de l'omo-hyoïdien (du cricoïde à la clavicule) ; leur extrémité basse gagne le creux supraclaviculaire",
+   "recoit": {
+    "texte": "Les efférents des nœuds jugulaires supérieurs et des nœuds cervicaux superficiels et antérieurs ; aussi la nuque, la région pectorale et une partie du bras",
+    "structures": [
+     "lymphonoeud-jugulodigastrique",
+     "lymphonoeuds-cervicaux-lateraux-superficiels",
+     "lymphonoeuds-cervicaux-anterieurs-superficiels"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers le tronc jugulaire, qui s'ouvre à droite dans le conduit lymphatique droit et à gauche dans le conduit thoracique, au confluent jugulo-subclavien"
+   },
+   "palpation": "Les plus bas se sentent au creux supraclaviculaire, derrière le chef claviculaire du sterno-cléido-mastoïdien, quand ils sont augmentés de volume",
+   "clinique": "Ils répondent surtout aux niveaux III et IV du curage cervical ; ils reçoivent en dernier la lymphe de la tête et du cou, d'où leur atteinte fréquente dans les cancers de cette région",
+   "memo": "Chaîne jugulaire : elle commence en haut au jugulodigastrique et finit en bas dans le creux supraclaviculaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-tete-cou-bras",
+    "teachme-cou",
+    "radiopaedia-niveaux"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-cervicaux-lateraux-superficiels",
+   "resume": "Les nœuds posés sur le sterno-cléido-mastoïdien, le long de la veine jugulaire externe.",
+   "situation": "Le long de la veine jugulaire externe, sur la face superficielle du muscle sterno-cléido-mastoïdien",
+   "recoit": {
+    "texte": "La lymphe de la région parotidienne et du bas de l'oreille, par les nœuds parotidiens",
+    "structures": [
+     "lymphonoeuds-parotidiens-superficiels",
+     "sterno-cleido-mastoidien"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds cervicaux latéraux profonds, en contournant le bord antérieur du sterno-cléido-mastoïdien ; Kenhub cite les nœuds supraclaviculaires"
+   },
+   "palpation": "Se sentent sur le sterno-cléido-mastoïdien, le long de la veine jugulaire externe, quand ils sont enflammés",
+   "clinique": "Adénopathie réactionnelle des infections de l'oreille et de la région parotidienne ; posés sur le muscle, ils se distinguent des nœuds profonds, cachés sous lui",
+   "memo": "Sur la jugulaire externe, par-dessus le sterno-cléido-mastoïdien : superficiels, donc faciles à sentir",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-tete-cou-bras",
+    "fipat-ta2-cou"
+   ],
+   "divergences": "Gray envoie les efférents aux nœuds cervicaux profonds supérieurs, Kenhub aux nœuds supraclaviculaires ; seule la voie vers les nœuds profonds latéraux est commune aux deux"
+  },
+  {
+   "id": "lymphonoeuds-cervicaux-paratracheaux",
+   "resume": "De petits nœuds de chaque côté de la trachée cervicale, au contact des nerfs laryngés récurrents.",
+   "situation": "De chaque côté de la trachée cervicale, près des lobes de la glande thyroïde, au contact des nerfs laryngés récurrents",
+   "recoit": {
+    "texte": "La lymphe du larynx, de la thyroïde, de la trachée et de l'œsophage cervical",
+    "structures": [
+     "glande-thyroide",
+     "trachee",
+     "oesophage"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-cervicaux-lateraux-profonds-inferieurs",
+    "texte": "Vers les nœuds cervicaux latéraux profonds ; les plus bas se continuent avec les nœuds paratrachéaux du thorax"
+   },
+   "palpation": null,
+   "clinique": "Niveau VI : on les cure avec la thyroïde dans un cancer papillaire, au risque de léser le nerf laryngé récurrent qui les longe ; ils sont aussi atteints dans les cancers du larynx",
+   "memo": "Paratrachéaux : de part et d'autre de la trachée, avec le nerf récurrent pour voisin",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-tete-cou-bras",
+    "radiopaedia-niveaux",
+    "seer-tete-cou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-jugulaires-antero-inferieurs",
+   "resume": "Les nœuds du bas de la chaîne jugulaire situés en avant de la veine jugulaire interne.",
+   "situation": "Dans la partie basse de la chaîne jugulaire interne, en avant de la veine (c'est ce que dit leur nom), sous l'omo-hyoïdien",
+   "recoit": {
+    "texte": "Comme le groupe profond inférieur auquel ils appartiennent : les efférents des nœuds jugulaires supérieurs et des nœuds cervicaux antérieurs",
+    "structures": [
+     "lymphonoeuds-cervicaux-anterieurs-superficiels"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-cervicaux-lateraux-profonds-inferieurs",
+    "texte": "Vers les autres nœuds jugulaires inférieurs, puis le tronc jugulaire"
+   },
+   "palpation": null,
+   "clinique": "Ils se confondent avec les niveaux III et IV, vidés lors d'un curage jugulaire",
+   "memo": "Antéro-inférieurs : en bas de la chaîne jugulaire, devant la veine",
+   "variantes": null,
+   "sources": [
+    "fipat-ta2-cou",
+    "kenhub-lymphatiques-tete-cou"
+   ],
+   "divergences": "Groupe nommé seulement par la nomenclature TA2 ; les manuels l'intègrent aux nœuds jugulaires inférieurs. Sa place exacte, en avant de la veine, se déduit de son nom"
+  },
+  {
+   "id": "lymphonoeuds-pretracheaux",
+   "resume": "Les nœuds posés devant la trachée cervicale, sous l'isthme de la thyroïde.",
+   "situation": "Devant la trachée cervicale, sous l'isthme de la glande thyroïde, dans le compartiment central du cou",
+   "recoit": {
+    "texte": "La lymphe de la thyroïde, du bas du larynx et de la trachée supérieure",
+    "structures": [
+     "glande-thyroide",
+     "trachee"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-cervicaux-lateraux-profonds-inferieurs",
+    "texte": "Vers les nœuds cervicaux latéraux profonds, surtout inférieurs ; certains plongent vers le médiastin supérieur"
+   },
+   "palpation": null,
+   "clinique": "Niveau VI, vidé avec la thyroïde dans un cancer papillaire ; le nœud prélaryngé (delphien), juste au-dessus de l'isthme, relaie les cancers du larynx et de la thyroïde",
+   "memo": "Prétrachéaux : juste devant la trachée, sous l'isthme de la thyroïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-tete-cou-bras",
+    "radiopaedia-niveaux",
+    "seer-tete-cou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-supraclaviculaires",
+   "resume": "Les nœuds du creux supraclaviculaire, au bout de la chaîne jugulaire : leur gonflement alerte.",
+   "situation": "Dans la fosse supraclaviculaire, au-dessus de la clavicule, près de la veine subclavière et du plexus brachial ; ils prolongent vers le bas la chaîne jugulaire",
+   "recoit": {
+    "texte": "Les nœuds cervicaux profonds et accessoires, donc la lymphe de la tête et du cou",
+    "structures": [
+     "lymphonoeuds-cervicaux-lateraux-profonds-inferieurs",
+     "lymphonoeuds-cervicaux-lateraux-superficiels"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers le tronc jugulaire, puis le conduit lymphatique droit à droite et le conduit thoracique à gauche, au confluent jugulo-subclavien"
+   },
+   "palpation": "Dans le creux au-dessus de la clavicule, derrière le chef claviculaire du sterno-cléido-mastoïdien, patient assis, épaules relâchées, du bout des doigts",
+   "clinique": "À gauche, un ganglion dur (signe de Troisier, ganglion de Virchow) évoque un cancer digestif, d'abord de l'estomac ; ces nœuds comptent aussi dans la stadification du cancer du poumon. Niveaux IV (médiaux) et Vb (latéraux)",
+   "memo": "Sus-claviculaire gauche, Troisier : le ganglion qui trahit un cancer de l'estomac",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachme-cou",
+    "radiopaedia-niveaux",
+    "seer-poumon"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-thyroidiens",
+   "resume": "De petits nœuds posés sur la thyroïde, premiers relais de la glande dans le compartiment central du cou.",
+   "situation": "Contre la face antérieure de la glande thyroïde et de son isthme, dans le compartiment central du cou",
+   "recoit": {
+    "texte": "La lymphe de la glande thyroïde",
+    "structures": [
+     "glande-thyroide"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-pretracheaux",
+    "texte": "Vers les nœuds prétrachéaux et paratrachéaux, puis les nœuds cervicaux latéraux profonds"
+   },
+   "palpation": null,
+   "clinique": "Niveau VI : un cancer de la thyroïde y envoie ses premières métastases ganglionnaires, d'où le curage central ; la chaîne jugulaire est le deuxième relais",
+   "memo": "Thyroïdiens : les nœuds posés sur la glande, premiers relais de la thyroïde",
+   "variantes": null,
+   "sources": [
+    "kenhub-tete-cou-bras",
+    "radiopaedia-niveaux",
+    "seer-tete-cou",
+    "fipat-ta2-cou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeud-buccinateur",
+   "resume": "Un petit nœud de la joue, posé sur le muscle buccinateur : un relais facial avant la mâchoire.",
+   "situation": "Sur le muscle buccinateur, au niveau de la commissure des lèvres, parmi les nœuds faciaux qui suivent la veine faciale",
+   "recoit": {
+    "texte": "La lymphe de la joue, du nez, des paupières et de la conjonctive",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-submandibulaires",
+    "texte": "Vers les nœuds submandibulaires"
+   },
+   "palpation": null,
+   "clinique": "Inconstant, il relaie la joue avant les nœuds submandibulaires, où l'on cherche d'abord l'adénopathie d'une infection ou d'une tumeur de la joue",
+   "memo": "Buccinateur : le nœud posé sur le muscle de la joue, en route vers la mâchoire",
+   "variantes": "Les nœuds faciaux sont inconstants et leur nombre varie",
+   "sources": [
+    "gray1918",
+    "kenhub-tete-cou-bras"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeud-jugulaire-laterosuperieur",
+   "resume": "Un nœud de la partie haute de la chaîne jugulaire, en dehors de la veine jugulaire interne.",
+   "situation": "Dans le groupe jugulaire supérieur, au-dessus de l'omo-hyoïdien, sur le côté latéral de la veine jugulaire interne",
+   "recoit": {
+    "texte": "Comme le groupe supérieur : la lymphe de la tête par les nœuds parotidiens, mastoïdiens, occipitaux et submandibulaires",
+    "structures": [
+     "lymphonoeud-jugulodigastrique",
+     "lymphonoeuds-submandibulaires",
+     "lymphonoeuds-mastoidiens",
+     "lymphonoeuds-occipitaux"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-cervicaux-lateraux-profonds-inferieurs",
+    "texte": "Vers les nœuds jugulaires inférieurs, puis le tronc jugulaire"
+   },
+   "palpation": null,
+   "clinique": "Il fait partie du niveau II, vidé lors d'un curage cervical pour un cancer de la bouche, du pharynx ou du larynx",
+   "memo": "Latérosupérieur : en haut de la chaîne, sur le côté de la jugulaire interne",
+   "variantes": null,
+   "sources": [
+    "fipat-ta2-cou",
+    "kenhub-lymphatiques-tete-cou",
+    "radiopaedia-niveaux"
+   ],
+   "divergences": "Groupe nommé seulement par la nomenclature TA2 ; les manuels le réunissent aux nœuds jugulaires supérieurs. Sa position exacte se déduit de son nom"
+  },
+  {
+   "id": "lymphonoeud-jugulodigastrique",
+   "resume": "Le plus gros nœud de la chaîne jugulaire haute, sous l'angle de la mandibule : le nœud des amygdalites.",
+   "situation": "Là où le ventre postérieur du digastrique croise la veine jugulaire interne, sous l'angle de la mandibule ; le plus volumineux du groupe jugulaire supérieur",
+   "recoit": {
+    "texte": "La lymphe de la tonsille palatine, de la langue et, par les nœuds submandibulaires, du bas du visage",
+    "structures": [
+     "tonsille-palatine",
+     "langue",
+     "lymphonoeuds-submandibulaires"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-cervicaux-lateraux-profonds-inferieurs",
+    "texte": "Vers les nœuds jugulaires situés plus bas, puis le tronc jugulaire"
+   },
+   "palpation": "Sous l'angle de la mandibule, en avant du sterno-cléido-mastoïdien, quand il grossit",
+   "clinique": "Il gonfle dans les amygdalites et relaie les cancers de l'amygdale, de la langue et du pharynx ; il appartient au niveau IIa du curage cervical",
+   "memo": "Jugulodigastrique : là où le digastrique croise la jugulaire, le nœud des amygdales",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachme-cou",
+    "kenhub-tete-cou-bras",
+    "radiopaedia-niveaux"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeud-mandibulaire",
+   "resume": "Un petit nœud facial posé sur le bord de la mandibule, en avant du masséter.",
+   "situation": "Sur la face externe de la mandibule, en avant du muscle masséter, parmi les nœuds faciaux qui suivent la veine faciale",
+   "recoit": {
+    "texte": "La lymphe de la joue, du nez et des paupières, par les vaisseaux faciaux",
+    "structures": [
+     "masseter"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-submandibulaires",
+    "texte": "Vers les nœuds submandibulaires"
+   },
+   "palpation": null,
+   "clinique": "Inconstant ; il précède les nœuds submandibulaires, vers lesquels convergent tous les nœuds faciaux",
+   "memo": "Mandibulaire : le nœud du bord de la mâchoire, avant la loge submandibulaire",
+   "variantes": "Les nœuds faciaux sont inconstants et leur nombre varie",
+   "sources": [
+    "gray1918",
+    "kenhub-tete-cou-bras"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeud-nasolabial",
+   "resume": "Un nœud de la joue près du pli nasolabial, sur la voie lymphatique du nez vers la mâchoire.",
+   "situation": "Dans la joue, près du pli nasolabial, parmi les nœuds faciaux qui suivent la veine faciale",
+   "recoit": {
+    "texte": "La lymphe du nez et de la joue",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-submandibulaires",
+    "texte": "Vers les nœuds submandibulaires"
+   },
+   "palpation": null,
+   "clinique": "Inconstant ; les nœuds faciaux, dont celui-ci, relaient le nez et la joue avant les nœuds submandibulaires",
+   "memo": "Nasolabial : posé près du pli entre l'aile du nez et la joue",
+   "variantes": "Les nœuds faciaux sont inconstants et leur nombre varie",
+   "sources": [
+    "kenhub-tete-cou-bras",
+    "kenhub-lymphatiques-tete-cou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-infra-auriculaires",
+   "resume": "Les nœuds situés sous l'oreille, au bas de la région parotidienne.",
+   "situation": "Au-dessous du pavillon de l'oreille, au bas de la région parotidienne, parmi les nœuds du cercle péricervical",
+   "recoit": {
+    "texte": "La lymphe de la partie basse du pavillon, du conduit auditif externe et de la région parotidienne",
+    "structures": [
+     "glande-parotide"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds cervicaux latéraux, superficiels ou profonds supérieurs"
+   },
+   "palpation": "Sous le lobule de l'oreille, du bout des doigts, quand ils grossissent",
+   "clinique": "Une adénopathie sous l'oreille accompagne les infections de l'oreille externe ; il faut la distinguer d'une tumeur de la glande parotide",
+   "memo": "Infra-auriculaires : sous l'oreille, au bas de la parotide",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-lymphatiques-tete-cou"
+   ],
+   "divergences": "Les manuels ne décrivent pas ce groupe à part : ils l'incluent dans les nœuds parotidiens. Sa place exacte se déduit de son nom TA2"
+  },
+  {
+   "id": "lymphonoeuds-mastoidiens",
+   "resume": "Les nœuds derrière l'oreille, sur la mastoïde : relais du cuir chevelu et du pavillon en arrière.",
+   "situation": "Sur le processus mastoïde, à l'insertion du sterno-cléido-mastoïdien, sous le muscle auriculaire postérieur ; en général deux",
+   "recoit": {
+    "texte": "La lymphe de la région temporo-pariétale postérieure du cuir chevelu, de la face postérieure du pavillon et de la paroi postérieure du conduit auditif externe",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds cervicaux profonds supérieurs, ou vers les nœuds cervicaux superficiels"
+   },
+   "palpation": "Derrière l'oreille, sur le processus mastoïde, du bout des doigts",
+   "clinique": "Ils gonflent dans les infections du cuir chevelu et de l'oreille externe",
+   "memo": "Mastoïdiens : derrière l'oreille, sur l'os mastoïde",
+   "variantes": "Habituellement deux nœuds",
+   "sources": [
+    "gray1918",
+    "teachme-cou",
+    "kenhub-lymphatiques-tete-cou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-occipitaux",
+   "resume": "Un à trois nœuds à l'arrière du crâne, relais du cuir chevelu occipital.",
+   "situation": "Sur l'occiput, au bord latéral de l'insertion du trapèze, contre le semi-épineux de la tête ; un à trois nœuds",
+   "recoit": {
+    "texte": "La lymphe du cuir chevelu de l'occiput",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds cervicaux profonds supérieurs, ou vers les nœuds de la chaîne accessoire"
+   },
+   "palpation": "À la base du crâne, juste en dehors de la ligne médiane, du bout des doigts, quand ils grossissent",
+   "clinique": "Une adénopathie occipitale oriente vers une infection ou une lésion du cuir chevelu postérieur",
+   "memo": "Occipitaux : un à trois nœuds au bord du trapèze, sous l'occiput",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachme-cou",
+    "kenhub-tete-cou-bras"
+   ],
+   "divergences": "Gray envoie leurs efférents aux nœuds cervicaux profonds supérieurs ; Kenhub les range dans le cercle péricervical, drainé vers les nœuds cervicaux superficiels ou profonds"
+  },
+  {
+   "id": "lymphonoeuds-parotidiens-infraglandulaires",
+   "resume": "Les nœuds enfouis dans l'épaisseur de la glande parotide.",
+   "situation": "Dans l'épaisseur de la glande parotide, sous son fascia",
+   "recoit": {
+    "texte": "La lymphe de la racine du nez, des paupières, de la région fronto-temporale, du conduit auditif externe et de la caisse du tympan",
+    "structures": [
+     "glande-parotide"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds cervicaux profonds supérieurs ; certains rejoignent les nœuds cervicaux superficiels"
+   },
+   "palpation": null,
+   "clinique": "Ils gonflent avec les infections de l'œil, des paupières ou de l'oreille ; une masse de la parotide peut être un nœud et non la glande",
+   "memo": "Intraglandulaires : à l'intérieur de la parotide, pas à sa surface",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-lymphatiques-tete-cou",
+    "teachme-cou"
+   ],
+   "divergences": "Le nom français de l'atlas dit « infraglandulaires », le latin TA2 « intraglandulares » : ces nœuds siègent dans la glande"
+  },
+  {
+   "id": "lymphonoeuds-parotidiens-superficiels",
+   "resume": "Les nœuds posés sur la face externe de la glande parotide, devant l'oreille.",
+   "situation": "Sur la face superficielle de la glande parotide, au-dessus de son fascia, devant le tragus",
+   "recoit": {
+    "texte": "La lymphe de la peau de la tempe, de la face latérale du pavillon et de la partie latérale des paupières",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-cervicaux-lateraux-superficiels",
+    "texte": "Vers les nœuds cervicaux superficiels, le long de la veine jugulaire externe, ou vers les nœuds profonds supérieurs"
+   },
+   "palpation": "Devant le tragus, sur la glande parotide, du bout des doigts",
+   "clinique": "Une adénopathie devant le tragus oriente vers une infection de la paupière, de la tempe ou du pavillon ; on la distingue d'une tumeur de la parotide",
+   "memo": "Superficiels : sur la parotide, juste devant le tragus",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachme-cou",
+    "kenhub-tete-cou-bras"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-pre-auriculaires",
+   "resume": "Un à trois nœuds juste devant l'oreille, relais de la tempe.",
+   "situation": "Juste devant le tragus de l'oreille, à la face superficielle de la région parotidienne ; un à trois nœuds",
+   "recoit": {
+    "texte": "La lymphe de la face latérale du pavillon, de la peau de la tempe et de la partie latérale des paupières",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds cervicaux profonds supérieurs, ou vers les nœuds cervicaux superficiels"
+   },
+   "palpation": "Devant le tragus, du bout des doigts",
+   "clinique": "Ils gonflent dans les infections de l'œil et des paupières, et dans celles du cuir chevelu temporal",
+   "memo": "Pré-auriculaires : devant l'oreille, au pied du tragus",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachme-cou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-retropharyngiens",
+   "resume": "Les nœuds du fond de la gorge, derrière le pharynx : relais du nez et du rhinopharynx.",
+   "situation": "Derrière la partie haute du pharynx, dans le fascia bucco-pharyngien, devant l'arc de l'atlas ; un à trois nœuds",
+   "recoit": {
+    "texte": "La lymphe des cavités nasales, des sinus, du rhinopharynx, de la trompe auditive et de l'oreille moyenne",
+    "structures": [
+     "nasopharynx",
+     "muqueuse-de-la-cavite-nasale"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds cervicaux latéraux profonds, supérieurs puis inférieurs"
+   },
+   "palpation": null,
+   "clinique": "Premier relais du cancer du rhinopharynx ; hors de portée des doigts, un nœud rétropharyngien se voit au scanner ou à l'IRM",
+   "memo": "Rétropharyngiens : derrière le pharynx, devant l'atlas, hors de portée des doigts",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-tete-cou-bras",
+    "seer-tete-cou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-submandibulaires",
+   "resume": "Trois à six nœuds sous la mandibule : le relais des gencives, de la langue et du visage.",
+   "situation": "Sous le corps de la mandibule, au contact de la glande submandibulaire ; trois à six nœuds, dont le moyen (nœud de Stahr) est le plus constant",
+   "recoit": {
+    "texte": "La lymphe de l'angle interne de l'œil, de la joue, du nez, de la lèvre supérieure, de la partie latérale de la lèvre inférieure, des gencives et du bord antérieur de la langue ; aussi celle des nœuds faciaux et submentaux",
+    "structures": [
+     "gencive",
+     "langue",
+     "lymphonoeuds-submentaux",
+     "lymphonoeud-buccinateur",
+     "lymphonoeud-mandibulaire"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeud-jugulodigastrique",
+    "texte": "Vers les nœuds cervicaux profonds supérieurs, notamment le nœud jugulodigastrique"
+   },
+   "palpation": "Sous le bord de la mandibule, tête légèrement penchée du côté examiné, en roulant les nœuds contre l'os ; à ne pas confondre avec la glande submandibulaire",
+   "clinique": "Ils gonflent dans les infections dentaires, gingivales et buccales ; ils relaient les cancers de la langue, du plancher buccal et des lèvres. Niveau IB du curage cervical",
+   "memo": "Submandibulaires : sous la mâchoire, contre la glande, avec le nœud de Stahr au milieu",
+   "variantes": "Trois à six nœuds selon les personnes",
+   "sources": [
+    "gray1918",
+    "teachme-cou",
+    "kenhub-tete-cou-bras",
+    "radiopaedia-niveaux"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-submentaux",
+   "resume": "Les nœuds sous le menton : relais du centre de la lèvre inférieure, du plancher de la bouche et de la pointe de la langue.",
+   "situation": "Sous le menton, entre les ventres antérieurs des deux digastriques, en avant du mylo-hyoïdien",
+   "recoit": {
+    "texte": "La lymphe du centre de la lèvre inférieure, du plancher de la bouche et de la pointe de la langue",
+    "structures": [
+     "langue"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-submandibulaires",
+    "texte": "Vers les nœuds submandibulaires et, pour une part, directement vers un nœud jugulaire profond à hauteur du cricoïde"
+   },
+   "palpation": "Sous le menton, entre les deux ventres antérieurs du digastrique, doigts à plat",
+   "clinique": "Niveau IA du curage cervical : ils relaient les cancers du centre de la lèvre inférieure, du plancher buccal et de la pointe de la langue",
+   "memo": "Submentaux : sous le menton, entre les deux digastriques",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachme-cou",
+    "radiopaedia-niveaux"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeud-de-l-arcade-de-la-veine-azygos",
+   "resume": "Le nœud posé sur la crosse de la veine azygos, là où elle se jette dans la veine cave supérieure.",
+   "situation": "À droite de la trachée, sur l'arcade de la veine azygos, au point où elle rejoint la veine cave supérieure",
+   "recoit": {
+    "texte": "La lymphe du poumon droit, relayée par les nœuds trachéobronchiques",
+    "structures": [
+     "lymphonoeuds-tracheobronchiques-superieurs"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-thoraciques-paratracheaux",
+    "texte": "Vers les nœuds paratrachéaux du thorax, puis le tronc bronchomédiastinal droit"
+   },
+   "palpation": null,
+   "clinique": "En stadification du cancer du poumon, il se range avec les nœuds paratrachéaux inférieurs droits (station 4R) ; la médiastinoscopie permet de le prélever",
+   "memo": "Crosse de l'azygos : un nœud posté à droite de la trachée, au carrefour avec la veine cave",
+   "variantes": null,
+   "sources": [
+    "fipat-ta2-thorax",
+    "seer-poumon"
+   ],
+   "divergences": "Les références consultées ne décrivent pas ce nœud à part ; son rattachement à la station 4R vient des conventions de stadification"
+  },
+  {
+   "id": "lymphonoeud-du-ligament-arterosum",
+   "resume": "Le nœud du ligament artériel, sous la crosse de l'aorte : le relais de la fenêtre aorto-pulmonaire.",
+   "situation": "Sous la crosse de l'aorte, à côté du ligament artériel et près de l'artère pulmonaire gauche (fenêtre aorto-pulmonaire)",
+   "recoit": {
+    "texte": "La lymphe du poumon gauche, surtout de son lobe supérieur",
+    "structures": [
+     "lobe-superieur-du-poumon-gauche"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-thoraciques-paratracheaux",
+    "texte": "Vers les nœuds paratrachéaux du thorax, puis le tronc bronchomédiastinal gauche"
+   },
+   "palpation": null,
+   "clinique": "Station 5 (sous-aortique) du cancer du poumon ; on l'atteint par médiastinotomie. Sa tumeur peut comprimer le nerf laryngé récurrent gauche, qui contourne la crosse : voix enrouée",
+   "memo": "Ligament artériel : le vestige du canal artériel du fœtus, et son nœud, sous la crosse",
+   "variantes": null,
+   "sources": [
+    "fipat-ta2-thorax",
+    "kenhub-thorax-mediastin",
+    "seer-poumon"
+   ],
+   "divergences": "Kenhub ne le nomme pas comme groupe : il place les nœuds sous-aortiques (station 5) à côté du ligament artériel. Le territoire d'origine est celui des conventions de stadification"
+  },
+  {
+   "id": "lymphonoeuds-axillaires-anterieurs",
+   "resume": "Les nœuds pectoraux du bord du petit pectoral : un premier relais du sein.",
+   "situation": "Sur la paroi médiale de l'aisselle, le long du bord inférieur du petit pectoral et des vaisseaux thoraciques latéraux ; trois à cinq nœuds",
+   "recoit": {
+    "texte": "La lymphe de la paroi antérolatérale du thorax et de la plus grande partie de la glande mammaire",
+    "structures": [
+     "petit-pectoral",
+     "grand-pectoral"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-axillaires-centraux",
+    "texte": "Vers les nœuds axillaires centraux, puis apicaux, puis le tronc subclavier"
+   },
+   "palpation": "Dans le pli axillaire antérieur, contre la paroi du thorax, en remontant sous le bord du grand pectoral, bras relâché",
+   "clinique": "Premier relais fréquent du cancer du sein : le ganglion sentinelle repère l'atteinte axillaire ; le curage peut léser le nerf thoracique long (scapula alata) ou causer un lymphœdème. Niveau I",
+   "memo": "Pectoraux, comme le muscle : ils veillent sur le sein",
+   "variantes": null,
+   "sources": [
+    "teachme-axillaires",
+    "kenhub-tete-cou-bras",
+    "kenhub-sein",
+    "uams-thorax"
+   ],
+   "divergences": "Kenhub (article sur le sein) dit qu'ils drainent surtout la partie latérale du sein ; TeachMeAnatomy et Kenhub (nœuds de la tête, du cou et du bras) disent la plus grande partie"
+  },
+  {
+   "id": "lymphonoeuds-brachiocephaliques",
+   "resume": "Les nœuds devant les gros vaisseaux du haut du médiastin : relais du thymus, du péricarde et du cœur.",
+   "situation": "Dans le médiastin antérieur, en avant des gros vaisseaux (veine brachio-céphalique, crosse de l'aorte) ; deux à cinq nœuds",
+   "recoit": {
+    "texte": "La lymphe du thymus, du péricarde, de la face antérieure du diaphragme et d'une partie du cœur",
+    "structures": [
+     "lobe-gauche-du-thymus",
+     "lobe-droit-du-thymus",
+     "lymphonoeuds-prepericardiques"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers le tronc bronchomédiastinal, qui s'ouvre dans le conduit lymphatique droit à droite, dans le conduit thoracique à gauche, ou au confluent jugulo-subclavien"
+   },
+   "palpation": null,
+   "clinique": "Nœuds dits prévasculaires : leur gonflement évoque un cancer du poumon ou de l'œsophage, une métastase ou une infection",
+   "memo": "Brachiocéphaliques : devant les gros vaisseaux, au carrefour du thymus et du cœur",
+   "variantes": null,
+   "sources": [
+    "kenhub-thorax-mediastin",
+    "kenhub-mediastin",
+    "uams-thorax",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-diaphragmatiques-superieurs",
+   "resume": "Les nœuds de la face thoracique du diaphragme : un passage de la lymphe du foie et du diaphragme vers le thorax.",
+   "situation": "Sur la face supérieure du diaphragme, en trois groupes : antérieur près du xiphoïde, latéral près des nerfs phréniques, postérieur sur les piliers",
+   "recoit": {
+    "texte": "La lymphe du diaphragme et de la face convexe du foie",
+    "structures": [
+     "diaphragme",
+     "foie"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-parasternaux",
+    "texte": "Vers les nœuds parasternaux, brachiocéphaliques et médiastinaux postérieurs ; le groupe postérieur communique avec les nœuds lombaux"
+   },
+   "palpation": null,
+   "clinique": "Voie de passage de la lymphe du dôme du foie vers le thorax : un cancer de cette région peut gagner les nœuds du médiastin",
+   "memo": "Diaphragmatiques supérieurs : sur le dôme du diaphragme, côté thorax",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-thorax-mediastin",
+    "uams-thorax",
+    "fipat-ta2-thorax"
+   ],
+   "divergences": "La TA2 range avec eux les nœuds prépéricardiques et péricardiques latéraux, que les manuels décrivent à part"
+  },
+  {
+   "id": "lymphonoeuds-infraclaviculaires",
+   "resume": "Un à deux nœuds du sillon delto-pectoral, sur la veine céphalique : un relais de la voie superficielle du bras.",
+   "situation": "Dans le sillon delto-pectoral, sous la clavicule, le long de la veine céphalique ; un à deux nœuds",
+   "recoit": {
+    "texte": "La lymphe superficielle du membre supérieur qui accompagne la veine céphalique ; aussi la paroi antérieure du thorax",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-axillaires-apicaux",
+    "texte": "Vers les nœuds axillaires apicaux, à travers le fascia clavipectoral"
+   },
+   "palpation": "Sous la clavicule, dans le sillon entre le deltoïde et le grand pectoral, quand ils grossissent",
+   "clinique": "Une partie de la lymphe superficielle du bras les traverse sans passer par le creux axillaire ; ils peuvent gonfler dans les infections de la main et de l'avant-bras",
+   "memo": "Infraclaviculaires : sous la clavicule, dans le sillon de la veine céphalique",
+   "variantes": null,
+   "sources": [
+    "kenhub-tete-cou-bras",
+    "kenhub-sein",
+    "uams-thorax"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-intercostaux",
+   "resume": "Les nœuds des espaces intercostaux postérieurs, près des têtes de côtes : relais de la paroi postérieure du thorax.",
+   "situation": "Dans la partie postérieure des espaces intercostaux, près des têtes de côtes, avec les vaisseaux intercostaux ; en général deux par espace",
+   "recoit": {
+    "texte": "La lymphe de la paroi thoracique postérolatérale",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers le conduit thoracique : les espaces inférieurs se réunissent en un tronc ; en haut, les nœuds de gauche gagnent le conduit thoracique et ceux de droite le conduit lymphatique droit"
+   },
+   "palpation": null,
+   "clinique": "Leurs efférents alimentent le conduit thoracique, dont la blessure donne un chylothorax (lymphe dans la cavité pleurale)",
+   "memo": "Intercostaux : à la racine des côtes, ils se vident dans le conduit thoracique",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-thorax-mediastin",
+    "uams-thorax"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-interpectoraux",
+   "resume": "Un à quatre petits nœuds entre le grand et le petit pectoral, sur la route du sein vers le sommet de l'aisselle.",
+   "situation": "Entre le grand pectoral et le petit pectoral ; un à quatre nœuds",
+   "recoit": {
+    "texte": "La lymphe des muscles pectoraux et des tissus voisins, dont une part directe de la glande mammaire",
+    "structures": [
+     "grand-pectoral",
+     "petit-pectoral"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-axillaires-apicaux",
+    "texte": "Vers les nœuds axillaires apicaux"
+   },
+   "palpation": null,
+   "clinique": "Nœuds de Rotter : cachés entre les deux pectoraux, ils ne se palpent pas, mais un cancer du sein peut les atteindre",
+   "memo": "Interpectoraux : pris en sandwich entre le grand et le petit pectoral",
+   "variantes": "Un à quatre nœuds",
+   "sources": [
+    "kenhub-tete-cou-bras",
+    "kenhub-sein"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-intrapulmonaires",
+   "resume": "Les petits nœuds enfouis dans le poumon, le long des grosses bronches : le tout premier relais pulmonaire.",
+   "situation": "Dans le parenchyme pulmonaire, le long des grosses bronches et de leurs divisions, juste en dehors du hile",
+   "recoit": {
+    "texte": "La lymphe du parenchyme pulmonaire et de l'arbre bronchique",
+    "structures": [
+     "bronche-principale"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds bronchopulmonaires (hilaires), puis les nœuds trachéobronchiques et le tronc bronchomédiastinal"
+   },
+   "palpation": null,
+   "clinique": "Leur atteinte classe un cancer du poumon en N1, avec les nœuds hilaires ; ils gonflent aussi dans les maladies professionnelles du poumon et la tuberculose",
+   "memo": "Intrapulmonaires : dans le poumon, sur les bronches, avant même le hile",
+   "variantes": null,
+   "sources": [
+    "fipat-ta2-thorax",
+    "kenhub-thorax-mediastin",
+    "uams-thorax"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-juxta-oesophagiens",
+   "resume": "Les nœuds qui longent l'œsophage dans le thorax : relais de l'œsophage et du médiastin postérieur.",
+   "situation": "Le long des deux bords de l'œsophage thoracique, dans le médiastin postérieur",
+   "recoit": {
+    "texte": "La lymphe de l'œsophage thoracique",
+    "structures": [
+     "oesophage"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds médiastinaux postérieurs, puis surtout le conduit thoracique ; certains gagnent les nœuds trachéobronchiques"
+   },
+   "palpation": null,
+   "clinique": "Relais du cancer de l'œsophage : leur gonflement fait chercher cette cause, avec les autres tumeurs du médiastin postérieur",
+   "memo": "Juxta-œsophagiens : de part et d'autre du tube œsophagien",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-thorax-mediastin",
+    "kenhub-mediastin",
+    "uams-thorax"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-parasternaux",
+   "resume": "Les nœuds le long du sternum, près des vaisseaux thoraciques internes : le second chemin du sein.",
+   "situation": "De chaque côté du sternum, à l'extrémité antérieure des espaces intercostaux, le long de l'artère thoracique interne ; quatre ou cinq nœuds",
+   "recoit": {
+    "texte": "La lymphe de la partie médiale du sein, de la paroi thoracique antérieure, de la paroi abdominale antérieure haute et de la face supérieure du foie",
+    "structures": [
+     "foie"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers le tronc bronchomédiastinal, qui s'ouvre à droite dans le conduit lymphatique droit, à gauche dans le conduit thoracique ou le confluent jugulo-subclavien"
+   },
+   "palpation": null,
+   "clinique": "Chaîne mammaire interne : les cancers profonds ou médiaux du sein y envoient des métastases, qu'on cherche à l'imagerie ; le curage axillaire ne les atteint pas",
+   "memo": "Parasternaux : le long du sternum, sur la route du sein et du foie",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-thorax-mediastin",
+    "kenhub-sein",
+    "uams-thorax"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-phreniques-inferieurs",
+   "resume": "Les nœuds de la face abdominale du diaphragme : relais du diaphragme et du dôme du foie vers l'abdomen.",
+   "situation": "Sur la face inférieure (abdominale) du diaphragme, le long des artères phréniques inférieures",
+   "recoit": {
+    "texte": "La lymphe de la face inférieure du diaphragme et de la face supérieure du foie",
+    "structures": [
+     "diaphragme",
+     "foie"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds lombaux, le long de l'aorte, puis le tronc lombal et le conduit thoracique"
+   },
+   "palpation": null,
+   "clinique": "Sur la voie de dissémination des cancers du dôme du foie et de la coupole diaphragmatique vers les nœuds lombaux",
+   "memo": "Phréniques inférieurs : sous le diaphragme, côté abdomen",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "uams-thorax"
+   ],
+   "divergences": "Les références consultées décrivent surtout les nœuds de la face thoracique du diaphragme ; la description des nœuds inférieurs repose sur leur nom TA2 et sur leurs voies vers les nœuds lombaux"
+  },
+  {
+   "id": "lymphonoeuds-prepericardiques",
+   "resume": "Les nœuds devant le péricarde, derrière le bas du sternum : relais du péricarde et du diaphragme antérieur.",
+   "situation": "En avant du péricarde, derrière le bas du sternum, dans le médiastin antérieur",
+   "recoit": {
+    "texte": "La lymphe du péricarde, de la face antérieure du diaphragme et d'une partie du cœur",
+    "structures": [
+     "diaphragme"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds parasternaux et brachiocéphaliques, puis le tronc bronchomédiastinal"
+   },
+   "palpation": null,
+   "clinique": "Ils ne se voient qu'à l'imagerie ; ils gonflent avec les tumeurs du médiastin antérieur et les maladies du péricarde",
+   "memo": "Prépéricardiques : devant le péricarde, sous le sternum",
+   "variantes": null,
+   "sources": [
+    "fipat-ta2-thorax",
+    "kenhub-mediastin",
+    "uams-thorax"
+   ],
+   "divergences": "La TA2 les range avec les nœuds diaphragmatiques supérieurs ; Kenhub et UAMS les placent dans le médiastin antérieur"
+  },
+  {
+   "id": "lymphonoeuds-prevertebraux",
+   "resume": "Les nœuds posés devant les corps vertébraux thoraciques, dans le médiastin postérieur.",
+   "situation": "Devant les corps des vertèbres thoraciques, de chaque côté de la ligne médiane, dans le médiastin postérieur",
+   "recoit": {
+    "texte": "La lymphe du médiastin postérieur, au voisinage des corps vertébraux",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds médiastinaux postérieurs et le conduit thoracique, qui monte contre eux"
+   },
+   "palpation": null,
+   "clinique": "Cachés devant le rachis, ils ne s'examinent qu'à l'imagerie ; ils grossissent avec les tumeurs et les infections du médiastin postérieur",
+   "memo": "Prévertébraux : sur le rachis, avec le conduit thoracique pour voisin",
+   "variantes": null,
+   "sources": [
+    "fipat-ta2-thorax",
+    "kenhub-mediastin",
+    "uams-thorax"
+   ],
+   "divergences": "Groupe peu décrit : Kenhub le nomme « juxtavertébral », sa description repose surtout sur la TA2"
+  },
+  {
+   "id": "lymphonoeuds-pericardiques-lateraux",
+   "resume": "Les nœuds sur les flancs du péricarde, près des nerfs phréniques.",
+   "situation": "Sur chaque face latérale du péricarde, au voisinage du nerf phrénique",
+   "recoit": {
+    "texte": "La lymphe du péricarde, du diaphragme et de la plèvre voisine",
+    "structures": [
+     "diaphragme",
+     "plevre"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds parasternaux, médiastinaux postérieurs et brachiocéphaliques"
+   },
+   "palpation": null,
+   "clinique": "Visibles seulement à l'imagerie ; leur gonflement accompagne les tumeurs du médiastin moyen et du poumon",
+   "memo": "Péricardiques latéraux : à côté du nerf phrénique, sur le flanc du péricarde",
+   "variantes": null,
+   "sources": [
+    "fipat-ta2-thorax",
+    "kenhub-thorax-mediastin",
+    "uams-thorax"
+   ],
+   "divergences": "Kenhub ne les nomme pas : ils sont rapprochés ici du groupe latéral des nœuds diaphragmatiques, comme le fait la TA2"
+  },
+  {
+   "id": "lymphonoeuds-thoraciques-paratracheaux",
+   "resume": "Les nœuds de chaque côté de la trachée dans le thorax : relais du poumon, de la trachée et de l'œsophage.",
+   "situation": "De chaque côté de la trachée thoracique, entre la base du cou et la bifurcation trachéale",
+   "recoit": {
+    "texte": "La lymphe des poumons (par les nœuds trachéobronchiques), de la trachée, de l'œsophage haut et du larynx sous les cordes vocales",
+    "structures": [
+     "trachee",
+     "oesophage",
+     "lymphonoeuds-tracheobronchiques-superieurs"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers le tronc bronchomédiastinal, puis le conduit lymphatique droit à droite et le conduit thoracique à gauche"
+   },
+   "palpation": null,
+   "clinique": "Stations 2 et 4 du cancer du poumon : un nœud paratrachéal envahi classe la maladie en N2 ; on les prélève par médiastinoscopie ou échoendoscopie bronchique",
+   "memo": "Paratrachéaux thoraciques : le long de la trachée, de la base du cou à la carène",
+   "variantes": null,
+   "sources": [
+    "kenhub-thorax-mediastin",
+    "uams-thorax",
+    "seer-poumon",
+    "fipat-ta2-thorax"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-tracheobronchiques-inferieurs",
+   "resume": "Les nœuds sous la carène : relais des lobes inférieurs, carrefour du médiastin.",
+   "situation": "Sous la bifurcation de la trachée (carène), entre les deux bronches principales ; station 7 (sous-carinale)",
+   "recoit": {
+    "texte": "La lymphe des lobes inférieurs des poumons, de l'œsophage et du médiastin moyen et postérieur",
+    "structures": [
+     "lobe-inferieur-du-poumon-droit",
+     "lobe-inferieur-du-poumon-gauche",
+     "oesophage"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-tracheobronchiques-superieurs",
+    "texte": "Vers les nœuds trachéobronchiques supérieurs droits, puis les nœuds paratrachéaux et le tronc bronchomédiastinal"
+   },
+   "palpation": null,
+   "clinique": "Station 7 : un nœud sous-carinal envahi classe un cancer du poumon en N2 ; on le ponctionne sous échoendoscopie bronchique",
+   "memo": "Sous-carinaux : sous la carène, là où les deux poumons se rejoignent",
+   "variantes": null,
+   "sources": [
+    "kenhub-thorax-mediastin",
+    "uams-thorax",
+    "seer-poumon",
+    "fipat-ta2-thorax"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-tracheobronchiques-superieurs",
+   "resume": "Les nœuds de l'angle entre la trachée et chaque bronche principale : relais des lobes supérieurs.",
+   "situation": "De chaque côté, dans l'angle entre la trachée et la bronche principale, au bord supérieur de la bifurcation",
+   "recoit": {
+    "texte": "La lymphe des poumons, surtout des lobes supérieurs, et du médiastin moyen et postérieur",
+    "structures": [
+     "lobe-superieur-du-poumon-droit",
+     "lobe-superieur-du-poumon-gauche",
+     "bronche-principale"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-thoraciques-paratracheaux",
+    "texte": "Vers les nœuds paratrachéaux du thorax, puis le tronc bronchomédiastinal"
+   },
+   "palpation": null,
+   "clinique": "Leur gonflement s'observe dans les cancers du poumon, la tuberculose et d'autres maladies pulmonaires, et élargit la silhouette du médiastin à l'imagerie",
+   "memo": "Trachéobronchiques supérieurs : dans l'angle de la trachée et de chaque bronche, côté lobes supérieurs",
+   "variantes": null,
+   "sources": [
+    "kenhub-thorax-mediastin",
+    "uams-thorax",
+    "kenhub-mediastin",
+    "fipat-ta2-thorax"
+   ],
+   "divergences": null
+  }
+ ]
+}

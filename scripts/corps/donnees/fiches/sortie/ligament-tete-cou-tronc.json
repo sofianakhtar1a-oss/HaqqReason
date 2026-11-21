@@ -1,0 +1,2535 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral numérisé (Internet Archive) : articulations du rachis, de la mandibule, des côtes et du bassin ; muscles intercostaux ; larynx ; sphénoïde et processus styloïde",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "teachmeanatomy-tmj": {
+   "titre": "TeachMeAnatomy, The Temporomandibular Joint",
+   "url": "https://teachmeanatomy.info/head/joints/temporomandibular/"
+  },
+  "teachmeanatomy-rachis-cervical": {
+   "titre": "TeachMeAnatomy, The Cervical Spine",
+   "url": "https://teachmeanatomy.info/neck/bones/cervical-spine/"
+  },
+  "teachmeanatomy-hyoide": {
+   "titre": "TeachMeAnatomy, The Hyoid Bone",
+   "url": "https://teachmeanatomy.info/neck/bones/hyoid-bone/"
+  },
+  "kenhub-costovertebral": {
+   "titre": "Kenhub, Costovertebral joints",
+   "url": "https://www.kenhub.com/en/library/anatomy/costovertebral-joints"
+  },
+  "kenhub-vertebres-lombaires": {
+   "titre": "Kenhub, Lumbar vertebrae",
+   "url": "https://www.kenhub.com/en/library/anatomy/lumbar-vertebrae"
+  },
+  "kenhub-espaces-intercostaux": {
+   "titre": "Kenhub, Intercostal spaces",
+   "url": "https://www.kenhub.com/en/library/anatomy/intercostal-spaces"
+  },
+  "statpearls-dos": {
+   "titre": "StatPearls, Anatomy, Back",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK539746/"
+  },
+  "statpearls-articulations-bassin": {
+   "titre": "StatPearls, Anatomy, Bony Pelvis and Lower Limb: Pelvic Joints",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK538523/"
+  },
+  "statpearls-hernie-lombaire": {
+   "titre": "StatPearls, hernie discale lombaire (article 24453, lu sur statpearls.com)",
+   "url": "https://statpearls.com/point-of-care/24453"
+  },
+  "statpearls-radiculopathie-lombosacree": {
+   "titre": "StatPearls, Lumbosacral Radiculopathy",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK430837/"
+  },
+  "statpearls-hernie-cervicale": {
+   "titre": "StatPearls, Cervical Disc Herniation",
+   "url": "https://www.statpearls.com/ArticleLibrary/viewarticle/19225"
+  },
+  "radiopaedia-disque": {
+   "titre": "Radiopaedia, Intervertebral disc",
+   "url": "https://radiopaedia.org/articles/intervertebral-disc"
+  },
+  "radiopaedia-ligament-jaune": {
+   "titre": "Radiopaedia, Ligamentum flavum",
+   "url": "https://radiopaedia.org/articles/ligamentum-flavum"
+  },
+  "radiopaedia-ligament-longitudinal-anterieur": {
+   "titre": "Radiopaedia, Anterior longitudinal ligament",
+   "url": "https://radiopaedia.org/articles/anterior-longitudinal-ligament"
+  },
+  "radiopaedia-ligament-longitudinal-posterieur": {
+   "titre": "Radiopaedia, Posterior longitudinal ligament",
+   "url": "https://radiopaedia.org/articles/posterior-longitudinal-ligament"
+  },
+  "radiopaedia-hernie-thoracique": {
+   "titre": "Radiopaedia, cas 34634 : hernie discale thoracique (discussion)",
+   "url": "https://radiopaedia.org/cases/34634?lang=us"
+  },
+  "aapmr-thoracique": {
+   "titre": "AAPMR PM&R KnowledgeNow, Thoracic radiculopathy/myelopathy",
+   "url": "https://now.aapmr.org/thoracic-radiculopathymyelopathy/"
+  },
+  "orthobullets-thoracique": {
+   "titre": "Orthobullets, Thoracic disc herniation",
+   "url": "https://www.orthobullets.com/spine/2033/thoracic-disc-herniation"
+  },
+  "wikipedia-hernie-discale": {
+   "titre": "Wikipédia (en), Spinal disc herniation",
+   "url": "https://en.wikipedia.org/wiki/Spinal_disc_herniation"
+  },
+  "wikipedia-ligament-nuchal": {
+   "titre": "Wikipédia (en), Nuchal ligament",
+   "url": "https://en.wikipedia.org/wiki/Nuchal_ligament"
+  },
+  "wikipedia-ligament-pterygo-epineux": {
+   "titre": "Wikipédia (en), Pterygospinous ligament",
+   "url": "https://en.wikipedia.org/wiki/Pterygospinous_ligament"
+  },
+  "wikipedia-ligament-stylohyoidien": {
+   "titre": "Wikipédia (en), Stylohyoid ligament",
+   "url": "https://en.wikipedia.org/wiki/Stylohyoid_ligament"
+  },
+  "wikipedia-membrane-quadrangulaire": {
+   "titre": "Wikipédia (en), Quadrangular membrane",
+   "url": "https://en.wikipedia.org/wiki/Quadrangular_membrane"
+  },
+  "wikipedia-ligament-cricopharyngien": {
+   "titre": "Wikipédia (en), Cricopharyngeal ligament",
+   "url": "https://en.wikipedia.org/wiki/Cricopharyngeal_ligament"
+  },
+  "wikipedia-symphyse-sacrococcygienne": {
+   "titre": "Wikipédia (en), Sacrococcygeal symphysis",
+   "url": "https://en.wikipedia.org/wiki/Sacrococcygeal_symphysis"
+  },
+  "kenhub-nerf-laryngee-superieur": {
+   "titre": "Kenhub, Superior laryngeal nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/superior-laryngeal-nerve"
+  },
+  "fipat-ta98-ligament-cricopharyngien": {
+   "titre": "FIPAT, Terminologia Anatomica 98 : lig. cricopharyngeum (A06.2.04.017)",
+   "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98 Tree/Entity TA98 EN/06.2.04.017 Entity TA98 EN.htm"
+  },
+  "imaios-ligament-cricopharyngien": {
+   "titre": "IMAIOS e-Anatomy, Cricopharyngeal ligament",
+   "url": "https://www.imaios.cn/en/e-anatomy/anatomical-structures/cricopharyngeal-ligament-1159944"
+  },
+  "elsevier-membrane-intercostale-externe": {
+   "titre": "Elsevier Complete Anatomy, External intercostal membrane",
+   "url": "https://elsevier.com/resources/anatomy/muscular-system/muscles-of-thorax/external-intercostal-membrane/16780"
+  },
+  "elsevier-membrane-intercostale-interne": {
+   "titre": "Elsevier Complete Anatomy, Internal intercostal membrane",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-thorax/internal-intercostal-membrane/24884"
+  }
+ },
+ "fiches": [
+  {
+   "id": "ligament-jaune",
+   "resume": "Le ligament élastique entre deux lames vertébrales : il ferme le canal vertébral en arrière et redresse le tronc après la flexion.",
+   "nature": "ligament",
+   "articulation": "Rachis, de l'axis au sacrum (entre les lames de deux vertèbres voisines)",
+   "attaches": [
+    {
+     "texte": "Face antérieure de la lame de la vertèbre sus-jacente",
+     "os": [
+      "vertebres-cervicales",
+      "vertebres-thoraciques",
+      "vertebres-lombaires"
+     ]
+    },
+    {
+     "texte": "Bord supérieur et face postérieure de la lame de la vertèbre sous-jacente",
+     "os": [
+      "vertebres-cervicales",
+      "vertebres-thoraciques",
+      "vertebres-lombaires"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Tapisse le canal vertébral en arrière ; son élasticité aide à revenir de la flexion et à tenir le tronc droit",
+   "tendu": "En flexion du rachis",
+   "test": null,
+   "clinique": "Il est mince au cou et le plus épais aux lombes : son épaississement y rétrécit le canal (canal lombaire étroit). L'aiguille de l'anesthésie péridurale le traverse, d'où la perte de résistance qui signale l'espace péridural",
+   "memo": "Jaune, car élastique : le ressort qui remet le dos droit",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-ligament-jaune",
+    "teachmeanatomy-rachis-cervical"
+   ]
+  },
+  {
+   "id": "ligament-longitudinal-anterieur",
+   "resume": "La longue bande qui court sur le devant des corps vertébraux et des disques : elle freine l'extension du rachis.",
+   "nature": "ligament",
+   "articulation": "Rachis, de la base du crâne ou de l'axis jusqu'au sacrum (face antérieure des corps vertébraux)",
+   "attaches": [
+    {
+     "texte": "Face antérieure des corps vertébraux et des disques, depuis l'axis (ou la base de l'occipital), fortement fixée au périoste",
+     "os": [
+      "axis",
+      "occipital",
+      "vertebres-cervicales",
+      "vertebres-thoraciques",
+      "vertebres-lombaires"
+     ]
+    },
+    {
+     "texte": "Se termine à la face antérieure du sacrum",
+     "os": [
+      "sacrum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Empêche l'hyperextension du rachis et renforce les disques en avant ; plus large vers le bas, plus épais au thorax",
+   "tendu": "En extension",
+   "test": null,
+   "clinique": "Une hyperextension brutale du cou (coup du lapin) peut la déchirer : douleur vive. Dans l'hyperostose vertébrale (maladie de Forestier), elle s'ossifie en commençant par sa couche profonde",
+   "memo": "Comme un lacet devant la colonne : il se tend quand on se cambre",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-ligament-longitudinal-anterieur",
+    "teachmeanatomy-rachis-cervical"
+   ],
+   "divergences": "Gray (1918) place son extrémité supérieure sur l'axis ; Radiopaedia la fait partir de la partie basilaire de l'occipital, en continuité avec la membrane atlanto-occipitale antérieure. La version moderne est retenue pour l'attache haute."
+  },
+  {
+   "id": "ligament-longitudinal-posterieur",
+   "resume": "La bande du fond du canal vertébral, sur la face postérieure des corps : elle freine la flexion et retient les disques en arrière.",
+   "nature": "ligament",
+   "articulation": "Rachis, de l'axis au sacrum (face postérieure des corps, dans le canal vertébral)",
+   "attaches": [
+    {
+     "texte": "Face postérieure de l'axis, où il se continue par la membrane tectoriale vers l'occipital",
+     "os": [
+      "axis"
+     ]
+    },
+    {
+     "texte": "Face postérieure des corps vertébraux, solidement fixé aux disques, jusqu'au sacrum",
+     "os": [
+      "sacrum",
+      "vertebres-cervicales",
+      "vertebres-thoraciques",
+      "vertebres-lombaires"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Limite la flexion et empêche le disque de s'échapper vers l'arrière ; large en haut, plus étroit en bas, et rétréci en regard du milieu des corps",
+   "tendu": "En flexion",
+   "test": null,
+   "clinique": "Plus étroit que le ligament antérieur, il ne couvre pas les côtés du disque, où l'anneau est le plus mince : les hernies sortent surtout en arrière et de côté (postéro-latéral), aux lombes en particulier. Plus robuste au thorax, il protège un peu ces disques",
+   "memo": "Un rideau derrière les disques, mais percé sur les côtés",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-ligament-longitudinal-posterieur",
+    "wikipedia-hernie-discale",
+    "aapmr-thoracique"
+   ]
+  },
+  {
+   "id": "ligaments-intertransversaires",
+   "resume": "Les petits ligaments entre deux processus transverses voisins : ils freinent l'inclinaison latérale du rachis.",
+   "nature": "groupe",
+   "articulation": "Rachis (entre les processus transverses de deux vertèbres voisines)",
+   "attaches": [
+    {
+     "texte": "Processus transverse de la vertèbre sus-jacente",
+     "os": [
+      "vertebres-cervicales",
+      "vertebres-thoraciques",
+      "vertebres-lombaires"
+     ]
+    },
+    {
+     "texte": "Processus transverse de la vertèbre sous-jacente",
+     "os": [
+      "vertebres-cervicales",
+      "vertebres-thoraciques",
+      "vertebres-lombaires"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retiennent l'inclinaison latérale du côté opposé ; fibres éparses au cou, cordons ronds au thorax, membranes minces aux lombes",
+   "tendu": "Du côté opposé à l'inclinaison latérale",
+   "test": null,
+   "clinique": "Pas de syndrome propre : on les compte parmi les freins passifs de l'inclinaison latérale, avec les capsules articulaires et les autres ligaments du rachis",
+   "memo": "Les haubans de côté : de la transverse à la transverse",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-dos"
+   ]
+  },
+  {
+   "id": "capsule-articulaire-de-l-articulation-temporo-mandibulaire",
+   "resume": "Le manchon fibreux, mince et lâche, qui entoure l'articulation de la mâchoire.",
+   "nature": "capsule",
+   "articulation": "Articulation temporo-mandibulaire (mâchoire)",
+   "attaches": [
+    {
+     "texte": "Bord de la fosse mandibulaire et tubercule articulaire du temporal",
+     "os": [
+      "temporal"
+     ]
+    },
+    {
+     "texte": "Col du processus condylaire de la mandibule",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Enveloppe l'articulation et sa cavité synoviale ; sa laxité autorise l'ouverture large et la propulsion, son renfort latéral est le ligament temporo-mandibulaire",
+   "tendu": null,
+   "test": "Doigts devant le tragus, pendant l'ouverture : on sent le condyle glisser vers l'avant, et l'on note un claquement ou une déviation",
+   "clinique": "Luxation antérieure sur un bâillement, une grosse bouchée ou un choc : le condyle dépasse le tubercule articulaire et la bouche reste ouverte. La luxation postérieure est exceptionnelle",
+   "memo": "Une capsule lâche : la bouche s'ouvre grand, mais la mâchoire peut sortir",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-tmj"
+   ]
+  },
+  {
+   "id": "ligament-radie-de-la-tete-costale",
+   "resume": "Le ligament en éventail qui amarre la tête de la côte à deux vertèbres voisines et au disque entre elles.",
+   "nature": "ligament",
+   "articulation": "Articulation de la tête de la côte (costo-vertébrale)",
+   "attaches": [
+    {
+     "texte": "Face antérieure de la tête de la côte",
+     "os": [
+      "cotes-vraies",
+      "fausses-cotes",
+      "cotes-flottantes"
+     ]
+    },
+    {
+     "texte": "Corps des deux vertèbres voisines (faisceaux montant et descendant) et disque intervertébral (faisceau horizontal)",
+     "os": [
+      "vertebres-thoraciques"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Maintient la tête costale contre la colonne : trois faisceaux (montant, horizontal vers le disque, descendant) pour les côtes moyennes ; plus simple aux côtes 1, 11 et 12",
+   "tendu": null,
+   "test": null,
+   "clinique": "Une douleur dorsale entre les omoplates qui augmente à l'inspiration profonde ou à la rotation du tronc fait penser à l'atteinte des articulations costo-vertébrales, après avoir écarté les causes graves",
+   "memo": "Un éventail à trois branches : la vertèbre du dessus, le disque, la vertèbre du dessous",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-costovertebral"
+   ],
+   "divergences": "Kenhub donne trois faisceaux pour les côtes 2 à 10 ; Gray note que la 10e côte, comme la 1re, la 11e et la 12e, ne s'articule qu'avec une seule vertèbre."
+  },
+  {
+   "id": "membrane-intercostale-externe",
+   "resume": "La membrane mince qui prolonge le muscle intercostal externe jusqu'au sternum, entre les cartilages costaux.",
+   "nature": "membrane",
+   "articulation": "Espaces intercostaux, partie antérieure (entre cartilages costaux et sternum)",
+   "attaches": [
+    {
+     "texte": "Bords supérieur et inférieur des cartilages costaux voisins",
+     "os": [
+      "cotes-vraies"
+     ]
+    },
+    {
+     "texte": "Bord latéral du sternum",
+     "os": [
+      "sternum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Remplace le muscle intercostal externe en avant, là où les côtes deviennent cartilages ; ses fibres suivent celles du muscle, obliques vers le bas et en dedans",
+   "tendu": null,
+   "test": null,
+   "clinique": "Pas de maladie propre ; près du sternum, la paroi de l'espace intercostal n'a plus de muscle externe, seulement cette membrane, et y est plus mince",
+   "memo": "L'externe : le muscle se fait membrane en avant, vers le sternum",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "elsevier-membrane-intercostale-externe",
+    "kenhub-espaces-intercostaux"
+   ]
+  },
+  {
+   "id": "membrane-intercostale-interne",
+   "resume": "La membrane mince qui prolonge le muscle intercostal interne vers la colonne, derrière l'angle des côtes.",
+   "nature": "membrane",
+   "articulation": "Espaces intercostaux, partie postérieure (entre angle des côtes et colonne)",
+   "attaches": [
+    {
+     "texte": "Bords supérieur et inférieur du col et du corps des côtes voisines",
+     "os": [
+      "cotes-vraies",
+      "fausses-cotes"
+     ]
+    },
+    {
+     "texte": "Ligaments costo-transversaires supérieurs, vers la colonne",
+     "os": [
+      "ligament-costotransversaire"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Remplace le muscle intercostal interne en arrière, de l'angle costal vers la colonne ; ses fibres suivent celles du muscle, obliques vers le bas et en dedans",
+   "tendu": null,
+   "test": null,
+   "clinique": "Pas de maladie propre ; en arrière, la paroi de l'espace n'a plus de muscle interne ; le paquet vasculo-nerveux intercostal est en profondeur de cette membrane",
+   "memo": "L'interne : le muscle se fait membrane en arrière, vers la colonne",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "elsevier-membrane-intercostale-interne",
+    "kenhub-espaces-intercostaux"
+   ]
+  },
+  {
+   "id": "disque-interpubien",
+   "resume": "La lame de fibrocartilage entre les deux pubis : le coussin de la symphyse pubienne.",
+   "nature": "disque",
+   "articulation": "Symphyse pubienne",
+   "attaches": [
+    {
+     "texte": "Face symphysaire du corps du pubis droit, recouverte de cartilage hyalin",
+     "os": [
+      "pubis"
+     ]
+    },
+    {
+     "texte": "Face symphysaire du corps du pubis gauche, recouverte de cartilage hyalin",
+     "os": [
+      "pubis"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Unit les deux pubis en autorisant un mouvement très faible ; plus large et plus épais chez la femme, il peut contenir une petite fente, sans membrane synoviale",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sous l'effet des hormones de la grossesse (relaxine), il devient plus mobile : la symphyse peut devenir douloureuse à la marche ou à l'appui sur une jambe",
+   "memo": "Le coussin du milieu du bassin : deux pubis, une lame de fibrocartilage",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-articulations-bassin"
+   ]
+  },
+  {
+   "id": "ligament-intercornual",
+   "resume": "Les petits ligaments qui joignent chaque corne du sacrum à la corne du coccyx, de part et d'autre de la ligne médiane.",
+   "nature": "ligament",
+   "articulation": "Symphyse sacro-coccygienne",
+   "attaches": [
+    {
+     "texte": "Corne du sacrum (bord du hiatus sacré)",
+     "os": [
+      "sacrum"
+     ]
+    },
+    {
+     "texte": "Corne du coccyx",
+     "os": [
+      "coccyx"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Resserrent l'articulation entre le sacrum et le coccyx, corne contre corne ; ils limitent les mouvements, faibles et passifs",
+   "tendu": null,
+   "test": null,
+   "clinique": "L'articulation peut devenir douloureuse (coccygodynie), en particulier assis ou après une chute sur le coccyx ; elle bouge pendant la défécation et l'accouchement",
+   "memo": "Corne contre corne : le sacrum et le coccyx se donnent la main",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-symphyse-sacrococcygienne",
+    "statpearls-articulations-bassin"
+   ]
+  },
+  {
+   "id": "ligament-pubien-inferieur",
+   "resume": "L'arche de fibres épaisses sous la symphyse pubienne : elle forme le bord supérieur de l'arcade pubienne.",
+   "nature": "ligament",
+   "articulation": "Symphyse pubienne",
+   "attaches": [
+    {
+     "texte": "Bord inférieur du corps du pubis droit",
+     "os": [
+      "pubis"
+     ]
+    },
+    {
+     "texte": "Bord inférieur du corps du pubis gauche",
+     "os": [
+      "pubis"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce la symphyse par en bas en réunissant les deux pubis ; sa courbe, appelée aussi ligament arqué du pubis, borde en haut l'arcade pubienne",
+   "tendu": null,
+   "test": null,
+   "clinique": "Fait partie de l'ensemble que la grossesse relâche : douleur de la symphyse pubienne à la marche ou à l'appui monopodal",
+   "memo": "L'arche sous le pubis : elle ferme le bas de la symphyse",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-articulations-bassin"
+   ]
+  },
+  {
+   "id": "ligament-pubien-superieur",
+   "resume": "La bande de fibres qui renforce le dessus de la symphyse pubienne et gagne les tubercules pubiens.",
+   "nature": "ligament",
+   "articulation": "Symphyse pubienne",
+   "attaches": [
+    {
+     "texte": "Bord supérieur du corps du pubis droit, jusqu'au tubercule pubien",
+     "os": [
+      "pubis"
+     ]
+    },
+    {
+     "texte": "Bord supérieur du corps du pubis gauche, jusqu'au tubercule pubien",
+     "os": [
+      "pubis"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce la symphyse par le haut en reliant les deux pubis de part et d'autre de la ligne médiane",
+   "tendu": null,
+   "test": null,
+   "clinique": "Le relâchement hormonal de la grossesse touche l'ensemble des ligaments de la symphyse : douleur du pubis à la marche",
+   "memo": "En haut, le toit de la symphyse : le ligament pubien supérieur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-articulations-bassin"
+   ]
+  },
+  {
+   "id": "symphyse-pubienne",
+   "resume": "L'articulation fibro-cartilagineuse qui joint les deux pubis sur la ligne médiane, à l'avant du bassin.",
+   "nature": "symphyse",
+   "articulation": "Symphyse pubienne (articulation interpubienne)",
+   "attaches": [
+    {
+     "texte": "Corps du pubis droit, face symphysaire",
+     "os": [
+      "pubis"
+     ]
+    },
+    {
+     "texte": "Corps du pubis gauche, face symphysaire",
+     "os": [
+      "pubis"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Ferme l'anneau pelvien en avant avec un jeu très faible, qui augmente en fin de grossesse ; renforcée par quatre ligaments (supérieur, inférieur, antérieur, postérieur) et le disque interpubien",
+   "tendu": null,
+   "test": "Palpation de la jonction médiane, puis appui sur une seule jambe : une douleur à la pression ou à l'appui oriente vers la symphyse",
+   "clinique": "Douleur à la marche et à l'appui monopodal pendant la grossesse (laxité hormonale) ; elle peut irradier vers l'aine et le bas-ventre",
+   "memo": "Deux pubis, un disque, quatre ligaments : la jointure de devant du bassin",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-articulations-bassin"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-c4-c5",
+   "resume": "Le disque entre C4 et C5, au milieu du cou, dont la hernie touche la racine C5 et l'épaule.",
+   "nature": "disque",
+   "articulation": "Rachis cervical, étage C4-C5 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de C4",
+     "os": [
+      "vertebre-c4"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de C5",
+     "os": [
+      "vertebre-c5"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit les charges entre C4 et C5 et permet la flexion-extension ; son anneau épais en avant entretient la lordose cervicale",
+   "tendu": null,
+   "test": "Manœuvre de Spurling ; on cherche aussi un réflexe bicipital diminué",
+   "clinique": "Hernie postéro-latérale : racine C5. Douleur du cou, de l'épaule et de la scapula, engourdissement de la face latérale du bras, faiblesse de l'abduction de l'épaule (deltoïde) et de la flexion du coude, réflexe bicipital diminué",
+   "memo": "C4-C5 libère la racine C5 : le bras ne se lève plus, le deltoïde est faible",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-cervicale",
+    "teachmeanatomy-rachis-cervical",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-c5-c6",
+   "resume": "Le disque entre C5 et C6, l'un des deux plus souvent hernié du cou : il comprime la racine C6.",
+   "nature": "disque",
+   "articulation": "Rachis cervical, étage C5-C6 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de C5",
+     "os": [
+      "vertebre-c5"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de C6",
+     "os": [
+      "vertebre-c6"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Absorbe les charges entre C5 et C6 ; très sollicité par les flexions et extensions du cou, il s'use tôt (discarthrose cervicale)",
+   "tendu": null,
+   "test": "Manœuvre de Spurling ; réflexe stylo-radial (brachio-radial) à comparer des deux côtés",
+   "clinique": "Hernie postéro-latérale : racine C6. Douleur cou-épaule-scapula, fourmillements de la face latérale de l'avant-bras, du pouce et de l'index, faiblesse de la flexion du coude et de l'extension du poignet, réflexe stylo-radial diminué",
+   "memo": "C5-C6, racine C6 : le pouce et l'index, côté du radius",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-cervicale",
+    "teachmeanatomy-rachis-cervical",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-c6-c7",
+   "resume": "Le disque entre C6 et C7, l'autre étage cervical fréquemment hernié : il comprime la racine C7.",
+   "nature": "disque",
+   "articulation": "Rachis cervical, étage C6-C7 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de C6",
+     "os": [
+      "vertebre-c6"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de C7",
+     "os": [
+      "c7"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit les charges entre C6 et C7, juste au-dessus de la vertèbre proéminente ; sa hauteur contribue à la courbure du bas du cou",
+   "tendu": null,
+   "test": "Manœuvre de Spurling ; recherche d'un réflexe tricipital diminué",
+   "clinique": "Hernie postéro-latérale : racine C7. Douleur cou-épaule, fourmillements de la face postérieure de l'avant-bras et du majeur, faiblesse de l'extension du coude et de la flexion du poignet, réflexe tricipital diminué",
+   "memo": "C6-C7, racine C7 : le majeur, et le triceps qui s'éteint",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-cervicale",
+    "teachmeanatomy-rachis-cervical",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-c7-t1",
+   "resume": "Le disque entre C7 et T1, charnière du cou et du thorax : sa hernie, rare, comprime la racine C8.",
+   "nature": "disque",
+   "articulation": "Rachis cervical, étage C7-T1 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de C7",
+     "os": [
+      "c7"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de T1",
+     "os": [
+      "vertebre-t1"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit la charge à la jonction du rachis cervical (lordose) et du rachis thoracique (cyphose) ; sa hauteur est moindre qu'aux étages du milieu du cou",
+   "tendu": null,
+   "test": "Manœuvre de Spurling ; force de serrage de la main et flexion des doigts",
+   "clinique": "Hernie postéro-latérale : racine C8, qui sort sous C7 (huit racines cervicales pour sept vertèbres). Douleur cou-épaule, fourmillements du bord médial de l'avant-bras et de la main, faiblesse de la flexion des doigts et de la prise. Pas de réflexe d'examen courant",
+   "memo": "C7-T1 : huit racines pour sept vertèbres, et c'est ici que sort C8",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-cervicale",
+    "teachmeanatomy-rachis-cervical",
+    "wikipedia-hernie-discale"
+   ],
+   "divergences": "StatPearls et TeachMeAnatomy : la racine C8 sort sous C7, donc une hernie C7-T1 touche C8. Wikipédia (en) déduit T1 en appliquant mécaniquement la règle du niveau inférieur ; non retenu."
+  },
+  {
+   "id": "ligament-cricopharyngien",
+   "resume": "Un ligament du larynx : il va de la face postérieure du cricoïde vers la paroi du pharynx.",
+   "nature": "ligament",
+   "articulation": "Larynx et pharynx (face postérieure du cartilage cricoïde)",
+   "attaches": [
+    {
+     "texte": "Face postérieure du cartilage cricoïde (lame)",
+     "os": [
+      "cartilage-cricoide"
+     ]
+    },
+    {
+     "texte": "Ligne médiane de la paroi postérieure du pharynx",
+     "os": []
+    }
+   ],
+   "situation": null,
+   "role": "Ligament extrinsèque du larynx, présent de chaque côté : il rattache le cricoïde à la paroi du pharynx qui le borde",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sans pathologie propre connue ; il se trouve à la jonction du larynx et du pharynx, au niveau du cartilage cricoïde",
+   "memo": "Du cricoïde au pharynx : le fil entre la voix et la gorge",
+   "variantes": null,
+   "sources": [
+    "wikipedia-ligament-cricopharyngien",
+    "imaios-ligament-cricopharyngien",
+    "fipat-ta98-ligament-cricopharyngien"
+   ],
+   "divergences": "Wikipédia décrit l'attache pharyngée à la ligne médiane du pharynx ; IMAIOS le fait partir du cartilage corniculé et le décrit sous la muqueuse du pharynx. La fiche retient l'attache sur le cricoïde, commune aux deux. Peu de sources : fiche à confirmer."
+  },
+  {
+   "id": "ligament-cricothyroide-median",
+   "resume": "Le plan fibreux épais qui unit en avant le cartilage thyroïde au cartilage cricoïde.",
+   "nature": "ligament",
+   "articulation": "Larynx (cartilages thyroïde et cricoïde)",
+   "attaches": [
+    {
+     "texte": "Bord inférieur de la partie antérieure du cartilage thyroïde",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    },
+    {
+     "texte": "Bord supérieur de l'arc du cartilage cricoïde",
+     "os": [
+      "cartilage-cricoide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Partie antérieure épaisse de la membrane cricothyroïdienne, de tissu élastique : elle ferme l'espace entre les deux cartilages et se prolonge en dedans par le cône élastique",
+   "tendu": null,
+   "test": "Sous le cartilage thyroïde, le doigt sent un petit creux souple avant le relief du cricoïde",
+   "clinique": "Il se trouve sous la peau, à portée du doigt : c'est là qu'on ouvre en urgence la voie aérienne (cricothyroïdotomie) quand le larynx est obstrué",
+   "memo": "Une fenêtre entre deux cartilages : on y entre quand le larynx est bouché",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-hyoide"
+   ]
+  },
+  {
+   "id": "ligament-thyrohyoide-median",
+   "resume": "L'épais renfort central de la membrane thyro-hyoïdienne : il suspend le larynx à l'os hyoïde.",
+   "nature": "ligament",
+   "articulation": "Larynx et os hyoïde (membrane thyro-hyoïdienne)",
+   "attaches": [
+    {
+     "texte": "Bord supérieur du cartilage thyroïde",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    },
+    {
+     "texte": "Bord supérieur de la face postérieure du corps de l'hyoïde",
+     "os": [
+      "hyoide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Partie médiane épaissie de la membrane thyro-hyoïdienne : elle suspend le larynx à l'hyoïde tout en laissant le larynx monter à la déglutition",
+   "tendu": null,
+   "test": null,
+   "clinique": "La membrane est traversée de chaque côté par la branche interne du nerf laryngé supérieur et l'artère laryngée supérieure : ce nerf sent la muqueuse du larynx au-dessus des cordes vocales",
+   "memo": "La suspente du larynx : l'hyoïde le tient, il monte avec lui quand on avale",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-nerf-laryngee-superieur",
+    "teachmeanatomy-hyoide"
+   ]
+  },
+  {
+   "id": "ligaments-interepineux",
+   "resume": "Les lames fibreuses entre deux processus épineux voisins : elles freinent la flexion du rachis.",
+   "nature": "groupe",
+   "articulation": "Rachis (entre les processus épineux de deux vertèbres voisines)",
+   "attaches": [
+    {
+     "texte": "Bord inférieur du processus épineux de la vertèbre sus-jacente",
+     "os": [
+      "vertebres-cervicales",
+      "vertebres-thoraciques",
+      "vertebres-lombaires"
+     ]
+    },
+    {
+     "texte": "Bord supérieur du processus épineux de la vertèbre sous-jacente",
+     "os": [
+      "vertebres-cervicales",
+      "vertebres-thoraciques",
+      "vertebres-lombaires"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retiennent la flexion en reliant les épineuses : fines et étroites au thorax, larges et quadrilatères aux lombes, à peine marquées au cou",
+   "tendu": "En flexion du rachis",
+   "test": null,
+   "clinique": "Étirés ou rompus avec le ligament supra-épineux après une flexion forcée : douleur à la pression entre deux épineuses, instabilité du segment atteint",
+   "memo": "Entre deux pointes d'épineuses, une lame : le frein de la flexion",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-rachis-cervical"
+   ]
+  },
+  {
+   "id": "membrane-quadrangulaire",
+   "resume": "La lame élastique du vestibule du larynx, du bord de l'épiglotte au cartilage aryténoïde.",
+   "nature": "membrane",
+   "articulation": "Larynx (paroi du vestibule laryngé)",
+   "attaches": [
+    {
+     "texte": "Bord latéral de l'épiglotte",
+     "os": []
+    },
+    {
+     "texte": "Apex et fovéa triangulaire du cartilage aryténoïde du même côté",
+     "os": [
+      "cartilage-arytenoide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Forme la paroi latérale du vestibule du larynx : son bord supérieur libre porte le pli ary-épiglottique et son bord inférieur libre forme le ligament vestibulaire du pli vestibulaire (fausse corde vocale)",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sans pathologie propre ; elle forme la paroi du pli ary-épiglottique, que l'on voit",
+   "memo": "Un quadrilatère élastique : de l'épiglotte à l'aryténoïde, sous les fausses cordes",
+   "variantes": null,
+   "sources": [
+    "wikipedia-membrane-quadrangulaire",
+    "gray1918"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-c3-c4",
+   "resume": "Le noyau pulpeux de C3-C4, à mi-hauteur de la partie haute du cou.",
+   "nature": "noyau",
+   "articulation": "Rachis cervical, noyau du disque C3-C4",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de C3 et de C4",
+     "os": [
+      "vertebre-c3",
+      "vertebre-c4"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Coussinet gélatineux au centre du disque : il encaisse les pressions, l'anneau supporte les tensions",
+   "tendu": null,
+   "test": null,
+   "clinique": "Un noyau qui fuse en arrière et sur le côté comprime la racine C4 : douleur nuque-épaule, peau du moignon de l'épaule engourdie. Plus fréquent après 60 ans à ce niveau",
+   "memo": "Noyau C3-C4 : s'il fuse, il atteint l'épaulette (racine C4)",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-cervicale",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-c4-c5",
+   "resume": "Le noyau de C4-C5 : sa fuite vers l'arrière pince la racine C5.",
+   "nature": "noyau",
+   "articulation": "Rachis cervical, noyau du disque C4-C5",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de C4 et de C5",
+     "os": [
+      "vertebre-c4",
+      "vertebre-c5"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Masse centrale souple du disque ; elle déforme l'anneau quand le cou fléchit ou s'étend et le repousse vers l'arrière",
+   "tendu": null,
+   "test": null,
+   "clinique": "Quand ce noyau s'échappe en arrière et sur le côté, il comprime la racine C5 : douleur d'épaule, perte de force à l'abduction du bras, réflexe bicipital diminué",
+   "memo": "Noyau C4-C5 : fuite, racine C5, deltoïde en panne",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-cervicale",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-c5-c6",
+   "resume": "Le noyau de C5-C6, le plus souvent en cause dans une hernie du cou, avec celui de C6-C7.",
+   "nature": "noyau",
+   "articulation": "Rachis cervical, noyau du disque C5-C6",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de C5 et de C6",
+     "os": [
+      "vertebre-c5",
+      "vertebre-c6"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Cœur gélatineux du disque : en cas de fissure postérieure de l'anneau, il peut faire saillie vers le canal ou le foramen",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sa hernie postéro-latérale touche la racine C6 : fourmillements du pouce et de l'index, faiblesse d'extension du poignet. Avec C6-C7, c'est l'étage où le noyau s'échappe le plus souvent au cou",
+   "memo": "Noyau C5-C6 : celui qui s'échappe le plus, il pince C6",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-cervicale",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-c6-c7",
+   "resume": "Le noyau de C6-C7, sous le cartilage cricoïde et juste au-dessus de la vertèbre proéminente.",
+   "nature": "noyau",
+   "articulation": "Rachis cervical, noyau du disque C6-C7",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de C6 et de C7",
+     "os": [
+      "vertebre-c6",
+      "c7"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel central du disque, qui s'aplatit en flexion et reprend sa forme à la détente",
+   "tendu": null,
+   "test": null,
+   "clinique": "Fuite postéro-latérale : racine C7, majeur engourdi, triceps faible, réflexe tricipital diminué. Étage fréquent avec C5-C6",
+   "memo": "Noyau C6-C7 : la fuite pince C7, le majeur fourmille",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-cervicale",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-c7-t1",
+   "resume": "Le noyau de C7-T1, à la charnière entre cou et thorax.",
+   "nature": "noyau",
+   "articulation": "Rachis cervical, noyau du disque C7-T1",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de C7 et de T1",
+     "os": [
+      "c7",
+      "vertebre-t1"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel central du disque, assis sur une zone de transition entre deux courbures opposées",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sa fuite postéro-latérale comprime la racine C8 (et non T1) : bord ulnaire de la main engourdi, serrage faible. Cette hernie reste rare",
+   "memo": "Noyau C7-T1 : la fuite pince C8, la racine du petit doigt",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-cervicale",
+    "wikipedia-hernie-discale"
+   ],
+   "divergences": "StatPearls et TeachMeAnatomy : la racine C8 sort sous C7, donc une hernie C7-T1 touche C8. Wikipédia (en) déduit T1 en appliquant mécaniquement la règle du niveau inférieur ; non retenu."
+  },
+  {
+   "id": "disque-intervertebral-l1-l2",
+   "resume": "Le disque lombaire le plus haut : sa hernie est rare et touche la racine L2, à l'avant de la cuisse.",
+   "nature": "disque",
+   "articulation": "Rachis lombaire, étage L1-L2 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de L1",
+     "os": [
+      "vertebre-l1"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de L2",
+     "os": [
+      "vertebre-l2"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relie L1 à L2 ; plus épais en avant qu'en arrière, il entretient la lordose lombaire et supporte une part croissante du poids vers le bas",
+   "tendu": null,
+   "test": "Test d'étirement fémoral (patient à plat ventre, genou fléchi, hanche étendue) : douleur à l'avant de la cuisse",
+   "clinique": "Hernie rare. Une hernie postéro-latérale comprime la racine L2 : douleur de l'aine et de la face antérieure de la cuisse, faiblesse de la flexion de la hanche. Le signe de Lasègue, utile pour L4 à S1, est souvent négatif ; c'est le test fémoral qui s'éveille",
+   "memo": "L1-L2, racine L2 : le haut de la cuisse, et c'est le test fémoral qui parle",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-lombaire",
+    "statpearls-radiculopathie-lombosacree",
+    "kenhub-vertebres-lombaires",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-l2-l3",
+   "resume": "Un disque lombaire haut, rarement hernié ; la racine L3 touchée donne une douleur du devant de la cuisse et du genou.",
+   "nature": "disque",
+   "articulation": "Rachis lombaire, étage L2-L3 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de L2",
+     "os": [
+      "vertebre-l2"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de L3",
+     "os": [
+      "vertebre-l3"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit entre L2 et L3 ; son noyau, volumineux, encaisse la compression lombaire, l'anneau plus épais en avant entretient la lordose",
+   "tendu": null,
+   "test": "Test d'étirement fémoral ; on explore la force de l'extension du genou (quadriceps)",
+   "clinique": "Hernie peu fréquente. Racine L3 : douleur de la face antérieure de la cuisse et du genou, quadriceps faible. Les hernies des étages hauts du rachis lombaire donnent des signes dans la cuisse, rarement dans la jambe",
+   "memo": "L2-L3, racine L3 : le devant de la cuisse, vers le genou",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-lombaire",
+    "statpearls-radiculopathie-lombosacree",
+    "kenhub-vertebres-lombaires",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-l3-l4",
+   "resume": "Un disque lombaire du milieu : sa hernie comprime la racine L4 (devant de la cuisse, face interne de la jambe).",
+   "nature": "disque",
+   "articulation": "Rachis lombaire, étage L3-L4 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de L3",
+     "os": [
+      "vertebre-l3"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de L4",
+     "os": [
+      "vertebre-l4"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit entre L3 et L4 ; plus épais en avant, il porte la lordose lombaire et supporte le poids du tronc",
+   "tendu": null,
+   "test": "Test d'étirement fémoral ; réflexe patellaire à comparer des deux côtés",
+   "clinique": "Hernie postéro-latérale : racine L4. Douleur de la face antérieure de la cuisse et de la face interne de la jambe, extension du genou faible, réflexe patellaire diminué. Moins fréquente qu'aux deux étages du bas, qui regroupent 95 % des hernies lombaires",
+   "memo": "L3-L4, racine L4 : le genou qui lâche, le réflexe patellaire éteint",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-lombaire",
+    "statpearls-radiculopathie-lombosacree",
+    "kenhub-vertebres-lombaires",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-l4-l5",
+   "resume": "Le plus souvent hernié avec L5-S1 : sa hernie postéro-latérale comprime la racine L5, du côté latéral de la jambe jusqu'au gros orteil.",
+   "nature": "disque",
+   "articulation": "Rachis lombaire, étage L4-L5 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de L4",
+     "os": [
+      "vertebre-l4"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de L5",
+     "os": [
+      "vertebre-l5"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit entre L4 et L5, dans la partie basse de la lordose lombaire ; très soumis aux contraintes de flexion et de port de charge",
+   "tendu": null,
+   "test": "Signe de Lasègue (jambe tendue relevée à moins de 45° : douleur qui descend sous le genou) ; marche sur les talons difficile",
+   "clinique": "Hernie postéro-latérale : racine L5 (une hernie latérale extrême comprimerait L4). Douleur de la fesse, de la face latérale de la jambe, du dos du pied jusqu'au gros orteil ; releveurs du pied et du gros orteil faibles (steppage), difficulté à marcher sur les talons",
+   "memo": "L4-L5, racine L5 : le gros orteil qui ne se relève plus",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-lombaire",
+    "statpearls-radiculopathie-lombosacree",
+    "kenhub-vertebres-lombaires",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-l5-s1",
+   "resume": "Le disque lombo-sacré, le plus bas : sa hernie comprime la racine S1 (arrière de la cuisse, bord latéral du pied).",
+   "nature": "disque",
+   "articulation": "Rachis lombaire, étage L5-S1 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de L5",
+     "os": [
+      "vertebre-l5"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de le sacrum (S1)",
+     "os": [
+      "sacrum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relie L5 au sacrum à la charnière lombo-sacrée, où la colonne s'incline vers le bassin ; il est mince et étroit quand L5 se soude au sacrum (sacralisation)",
+   "tendu": null,
+   "test": "Signe de Lasègue ; manœuvre de Bragard (dorsiflexion de la cheville) ; marche sur la pointe des pieds difficile",
+   "clinique": "Hernie postéro-latérale : racine S1. Douleur de la fesse, du dos de la cuisse, du mollet jusqu'au bord latéral du pied et à la plante, faiblesse de la flexion plantaire (marche sur la pointe des pieds), réflexe achilléen diminué. Une hernie volumineuse peut toucher la queue-de-cheval",
+   "memo": "L5-S1, racine S1 : le talon d'Achille qui ne répond plus",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-lombaire",
+    "statpearls-radiculopathie-lombosacree",
+    "kenhub-vertebres-lombaires",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-t1-t2",
+   "resume": "Le premier disque thoracique, sous T1 : les hernies y sont très rares.",
+   "nature": "disque",
+   "articulation": "Rachis thoracique, étage T1-T2 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de T1",
+     "os": [
+      "vertebre-t1"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de T2",
+     "os": [
+      "vertebre-t2"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relie T1 à T2 à la sortie du cou ; il est mince et peu mobile, la première côte et la cage thoracique raidissant ce segment",
+   "tendu": null,
+   "test": "Examen neurologique : réflexes des membres inférieurs, signe de Babinski, sensibilité en bande du tronc ; l'IRM confirme",
+   "clinique": "Hernie exceptionnelle. La racine T1 sort à ce niveau : fourmillements de la face médiale de l'avant-bras, faiblesse des muscles qui écartent et rapprochent les doigts. Une hernie médiane menace la moelle : jambes raides, réflexes vifs",
+   "memo": "T1-T2 : la racine T1 sort ici, vers le bord médial de l'avant-bras",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique",
+    "radiopaedia-hernie-thoracique"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-t10-t11",
+   "resume": "Un disque du bas du thorax, juste avant les deux côtes flottantes : zone où la colonne devient plus mobile.",
+   "nature": "disque",
+   "articulation": "Rachis thoracique, étage T10-T11 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de T10",
+     "os": [
+      "vertebre-t10"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de T11",
+     "os": [
+      "vertebre-t11"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit entre T10 et T11 ; les côtes 11 et 12 ne se rattachent pas au sternum, ce qui laisse plus de jeu à ce segment",
+   "tendu": null,
+   "test": "Examen neurologique : réflexes des membres inférieurs, signe de Babinski, sensibilité en bande du tronc ; l'IRM confirme",
+   "clinique": "Hernie qui devient plus fréquente. Racine T10 : douleur en ceinture à hauteur de l'ombilic. La moelle lombaire, qui commande les jambes, se trouve juste derrière : jambes faibles, réflexes vifs ou troubles de la vessie selon l'atteinte",
+   "memo": "T10-T11 : la douleur au niveau de l'ombilic",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique",
+    "radiopaedia-hernie-thoracique"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-t11-t12",
+   "resume": "Le disque thoracique le plus souvent hernié : les côtes 11 et 12 ne forment pas d'articulation complète et laissent le segment mobile.",
+   "nature": "disque",
+   "articulation": "Rachis thoracique, étage T11-T12 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de T11",
+     "os": [
+      "vertebre-t11"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de T12",
+     "os": [
+      "vertebre-t12"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit entre T11 et T12 ; ce segment est peu tenu par la cage costale et supporte les contraintes de la charnière thoraco-lombaire",
+   "tendu": null,
+   "test": "Examen neurologique : réflexes des membres inférieurs, signe de Babinski, sensibilité en bande du tronc ; l'IRM confirme",
+   "clinique": "L'étage thoracique de loin le plus souvent hernié. Racine T11 : douleur en ceinture du bas-ventre. La moelle lombo-sacrée est juste derrière : faiblesse des jambes, troubles de la vessie ou de l'intestin à surveiller sans attendre",
+   "memo": "T11-T12 : le disque thoracique qui hernie le plus, là où les côtes flottent",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique",
+    "radiopaedia-hernie-thoracique"
+   ],
+   "divergences": "La fréquence des hernies thoraciques varie selon les sources (0,25 à 0,75 % pour Radiopaedia, environ 1 % pour Orthobullets, 1 à 2 % pour Wikipédia, moins de 5 % pour AAPMR) ; toutes s'accordent sur T11-T12 comme niveau le plus atteint."
+  },
+  {
+   "id": "disque-intervertebral-t12-l1",
+   "resume": "Le disque de la charnière thoraco-lombaire, entre T12 et L1 : là où les vertèbres changent de forme et de mouvement.",
+   "nature": "disque",
+   "articulation": "Rachis thoracique, étage T12-L1 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de T12",
+     "os": [
+      "vertebre-t12"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de L1",
+     "os": [
+      "vertebre-l1"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relie la dernière vertèbre thoracique à la première lombaire ; il passe de la rigidité du thorax à la mobilité du rachis lombaire",
+   "tendu": null,
+   "test": "Examen neurologique : réflexes des membres inférieurs, signe de Babinski, sensibilité en bande du tronc ; l'IRM confirme",
+   "clinique": "Hernie peu fréquente mais délicate : la racine T12 sort à ce niveau (douleur de l'aine et de la hanche), et le cône terminal de la moelle est tout près (faiblesse des jambes, vessie, sphincters).",
+   "memo": "T12-L1 : la charnière, où la moelle finit et où les racines commencent",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique",
+    "radiopaedia-hernie-thoracique"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-t2-t3",
+   "resume": "Un disque thoracique haut, très rarement hernié ; les hernies des étages T2 à T5 peuvent irradier au bras.",
+   "nature": "disque",
+   "articulation": "Rachis thoracique, étage T2-T3 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de T2",
+     "os": [
+      "vertebre-t2"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de T3",
+     "os": [
+      "vertebre-t3"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit entre T2 et T3 ; aussi épais devant que derrière, comme tous les disques thoraciques, il ne creuse pas de lordose",
+   "tendu": null,
+   "test": "Examen neurologique : réflexes des membres inférieurs, signe de Babinski, sensibilité en bande du tronc ; l'IRM confirme",
+   "clinique": "Hernie très rare. Racine T2 : douleur vers l'aisselle et la face interne du bras possible ; des cas décrits à T2-T5 ajoutent un syndrome de Claude Bernard-Horner. La moelle est le risque principal : raideur des jambes, troubles sphinctériens",
+   "memo": "T2-T3 : un disque du haut du thorax qui peut envoyer la douleur dans le bras",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique",
+    "radiopaedia-hernie-thoracique"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-t3-t4",
+   "resume": "Un disque thoracique haut ; hernie très rare, avec douleur en bande possible dans la partie haute du thorax.",
+   "nature": "disque",
+   "articulation": "Rachis thoracique, étage T3-T4 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de T3",
+     "os": [
+      "vertebre-t3"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de T4",
+     "os": [
+      "vertebre-t4"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit entre T3 et T4 ; le rachis thoracique supérieur est rigidifié par les côtes, ce qui protège le disque",
+   "tendu": null,
+   "test": "Examen neurologique : réflexes des membres inférieurs, signe de Babinski, sensibilité en bande du tronc ; l'IRM confirme",
+   "clinique": "Hernie très rare. Racine T3 : douleur en bande de la partie haute du thorax, parfois du bras (cas décrits de T2 à T5, avec syndrome de Claude Bernard-Horner). Une compression médiane de la moelle donne une marche raide et des réflexes vifs",
+   "memo": "T3-T4 : la bande douloureuse du haut du thorax, plutôt qu'une sciatique",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique",
+    "radiopaedia-hernie-thoracique"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-t4-t5",
+   "resume": "Un disque thoracique du tiers supérieur du dos ; il est rarement hernié, mais ce niveau est cité parmi ceux qui irradient au bras.",
+   "nature": "disque",
+   "articulation": "Rachis thoracique, étage T4-T5 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de T4",
+     "os": [
+      "vertebre-t4"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de T5",
+     "os": [
+      "vertebre-t5"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit entre T4 et T5 ; il suit la cyphose thoracique, en s'aplatissant un peu plus en avant avec l'âge",
+   "tendu": null,
+   "test": "Examen neurologique : réflexes des membres inférieurs, signe de Babinski, sensibilité en bande du tronc ; l'IRM confirme",
+   "clinique": "Hernie rare, signalée de T2 à T5 avec irradiation au bras et parfois syndrome de Claude Bernard-Horner. Racine T4 : douleur en bande à hauteur des mamelons. Compression médullaire : faiblesse des jambes, troubles urinaires, signe de Babinski",
+   "memo": "T4-T5 : encore dans la zone où la douleur peut gagner le bras",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique",
+    "radiopaedia-hernie-thoracique"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-t5-t6",
+   "resume": "Un disque thoracique moyen, à la partie haute de la cyphose ; la moelle y est vulnérable car son irrigation est fragile.",
+   "nature": "disque",
+   "articulation": "Rachis thoracique, étage T5-T6 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de T5",
+     "os": [
+      "vertebre-t5"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de T6",
+     "os": [
+      "vertebre-t6"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit entre T5 et T6 ; reste bien fixé par les articulations costo-vertébrales, qui limitent sa mobilité",
+   "tendu": null,
+   "test": "Examen neurologique : réflexes des membres inférieurs, signe de Babinski, sensibilité en bande du tronc ; l'IRM confirme",
+   "clinique": "Hernie rare. Racine T5 : douleur en bande au milieu du thorax. Le canal est étroit autour de la moelle, dont l'irrigation est fragile dans la région thoracique (zone de partage) : une compression médiane donne vite des signes pyramidaux aux jambes",
+   "memo": "T5-T6 : une bande autour du thorax, mais surtout la moelle à protéger",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique",
+    "radiopaedia-hernie-thoracique"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-t6-t7",
+   "resume": "Un disque du milieu du dos : même une grosse extrusion y reste parfois muette, mais elle peut rétrécir le canal.",
+   "nature": "disque",
+   "articulation": "Rachis thoracique, étage T6-T7 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de T6",
+     "os": [
+      "vertebre-t6"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de T7",
+     "os": [
+      "vertebre-t7"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit entre T6 et T7, près du sommet de la cyphose thoracique, où la charge est portée plus en avant",
+   "tendu": null,
+   "test": "Examen neurologique : réflexes des membres inférieurs, signe de Babinski, sensibilité en bande du tronc ; l'IRM confirme",
+   "clinique": "Hernie rare. Racine T6 : douleur en ceinture au milieu du thorax. Une extrusion peut rétrécir le canal et comprimer la moelle sans déficit apparent ; l'IRM la montre, parfois avec un signal anormal de la moelle",
+   "memo": "T6-T7 : le canal se rétrécit sans bruit, d'où l'intérêt de l'IRM",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique",
+    "radiopaedia-hernie-thoracique"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-t7-t8",
+   "resume": "Un disque du milieu du dos, à l'entrée de la zone T8-T12 où se concentrent trois quarts des hernies thoraciques.",
+   "nature": "disque",
+   "articulation": "Rachis thoracique, étage T7-T8 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de T7",
+     "os": [
+      "vertebre-t7"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de T8",
+     "os": [
+      "vertebre-t8"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit entre T7 et T8, au voisinage du sommet de la cyphose ; plus bas, les côtes laissent plus de jeu au rachis",
+   "tendu": null,
+   "test": "Examen neurologique : réflexes des membres inférieurs, signe de Babinski, sensibilité en bande du tronc ; l'IRM confirme",
+   "clinique": "Hernie rare. Racine T7 : douleur en bande du bas du thorax. Au-dessous de ce niveau, la fréquence augmente ; une compression de la moelle expose à des troubles de la marche",
+   "memo": "T7-T8 : on entre dans la zone où le thorax commence à bouger",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique",
+    "radiopaedia-hernie-thoracique"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-t8-t9",
+   "resume": "Un disque de la moitié basse du thorax, dans la zone T8-T12 où l'on rencontre le plus de hernies thoraciques.",
+   "nature": "disque",
+   "articulation": "Rachis thoracique, étage T8-T9 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de T8",
+     "os": [
+      "vertebre-t8"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de T9",
+     "os": [
+      "vertebre-t9"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit entre T8 et T9 ; le rachis, moins tenu par la cage costale, a plus de mobilité qu'en haut",
+   "tendu": null,
+   "test": "Examen neurologique : réflexes des membres inférieurs, signe de Babinski, sensibilité en bande du tronc ; l'IRM confirme",
+   "clinique": "Hernie rare mais de ce niveau vers le bas, plus fréquente. Racine T8 : douleur en bande à hauteur du rebord costal inférieur, parfois de la paroi abdominale haute. Compression médullaire : paraparésie, réflexes vifs",
+   "memo": "T8-T9 : la zone T8-T12 réunit les trois quarts des hernies du thorax",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique",
+    "radiopaedia-hernie-thoracique"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-t9-t10",
+   "resume": "Un disque du bas du thorax ; la douleur de sa racine descend vers la paroi de l'abdomen.",
+   "nature": "disque",
+   "articulation": "Rachis thoracique, étage T9-T10 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de T9",
+     "os": [
+      "vertebre-t9"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de T10",
+     "os": [
+      "vertebre-t10"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit entre T9 et T10, à l'approche des côtes basses qui tiennent moins la colonne",
+   "tendu": null,
+   "test": "Examen neurologique : réflexes des membres inférieurs, signe de Babinski, sensibilité en bande du tronc ; l'IRM confirme",
+   "clinique": "Hernie moins rare qu'en haut. Racine T9 : douleur en ceinture de la paroi abdominale haute, qui peut simuler une affection digestive. Compression de la moelle : faiblesse et raideur des jambes, troubles sphinctériens",
+   "memo": "T9-T10 : une douleur de ventre qui vient du dos",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique",
+    "radiopaedia-hernie-thoracique"
+   ]
+  },
+  {
+   "id": "ligament-supra-epineux",
+   "resume": "Le cordon qui relie le sommet des processus épineux, de C7 au sacrum ; vers le haut, il se prolonge par le ligament nuchal.",
+   "nature": "ligament",
+   "articulation": "Rachis, de C7 au sacrum (sommet des processus épineux)",
+   "attaches": [
+    {
+     "texte": "Sommet du processus épineux de chaque vertèbre, de C7 vers le bas",
+     "os": [
+      "c7",
+      "vertebres-thoraciques",
+      "vertebres-lombaires"
+     ]
+    },
+    {
+     "texte": "Se termine sur la crête sacrale médiane",
+     "os": [
+      "sacrum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Réunit les sommets des épineuses en arrière du rachis et freine la flexion ; plus épais et plus large aux lombes",
+   "tendu": "En flexion du rachis",
+   "test": "Palpation de la ligne des épineuses : une douleur localisée ou un creux entre deux épineuses sont anormaux",
+   "clinique": "Il se rompt avec les ligaments interépineux dans les flexions-distractions violentes : le rachis devient instable, et l'on sent parfois un vide entre deux épineuses à la palpation",
+   "memo": "La corde de la crête du dos : elle relie les pointes des épineuses",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-rachis-cervical"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-l1-l2",
+   "resume": "Le noyau de L1-L2, au sommet de la zone lombaire.",
+   "nature": "noyau",
+   "articulation": "Rachis lombaire, noyau du disque L1-L2",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de L1 et de L2",
+     "os": [
+      "vertebre-l1",
+      "vertebre-l2"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel central, bien développé dans la région lombaire ; sa hernie à ce niveau est rare",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sa fuite postéro-latérale pince la racine L2 : douleur de l'aine et du devant de la cuisse, flexion de hanche faible ; le test fémoral est positif, pas Lasègue",
+   "memo": "Noyau L1-L2 : vers l'avant de la cuisse, pas vers le talon",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-lombaire",
+    "statpearls-radiculopathie-lombosacree",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-l2-l3",
+   "resume": "Le noyau de L2-L3, dans la partie haute des lombes.",
+   "nature": "noyau",
+   "articulation": "Rachis lombaire, noyau du disque L2-L3",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de L2 et de L3",
+     "os": [
+      "vertebre-l2",
+      "vertebre-l3"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel central soumis à de fortes pressions en position debout ou assise penchée en avant",
+   "tendu": null,
+   "test": null,
+   "clinique": "Fuite postéro-latérale : racine L3, douleur antérieure de cuisse et genou, quadriceps affaibli ; peu fréquent à ce niveau",
+   "memo": "Noyau L2-L3 : la cuisse, pas la jambe",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-lombaire",
+    "statpearls-radiculopathie-lombosacree",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-l3-l4",
+   "resume": "Le noyau de L3-L4, au milieu de la région lombaire.",
+   "nature": "noyau",
+   "articulation": "Rachis lombaire, noyau du disque L3-L4",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de L3 et de L4",
+     "os": [
+      "vertebre-l3",
+      "vertebre-l4"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Cœur gélatineux du disque : il fuse vers l'arrière là où l'anneau est le plus mince, sur le côté du ligament longitudinal postérieur",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sa fuite postéro-latérale touche la racine L4 : cuisse antérieure et jambe interne douloureuses, quadriceps faible, réflexe patellaire diminué",
+   "memo": "Noyau L3-L4 : la rotule rate son réflexe",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-lombaire",
+    "statpearls-radiculopathie-lombosacree",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-l4-l5",
+   "resume": "Le noyau de L4-L5, l'un des deux plus souvent hernié du dos.",
+   "nature": "noyau",
+   "articulation": "Rachis lombaire, noyau du disque L4-L5",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de L4 et de L5",
+     "os": [
+      "vertebre-l4",
+      "vertebre-l5"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Cœur gélatineux d'un disque très chargé ; une fissure de l'anneau en arrière et sur le côté le laisse saillir vers la racine voisine",
+   "tendu": null,
+   "test": null,
+   "clinique": "Fuite postéro-latérale : racine L5 pincée (sciatique L5), dos du pied et gros orteil engourdis, dorsiflexion faible. Une grosse fuite médiane peut atteindre la queue-de-cheval",
+   "memo": "Noyau L4-L5 : le gel qui sort et pince L5",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-lombaire",
+    "statpearls-radiculopathie-lombosacree",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-l5-s1",
+   "resume": "Le noyau de L5-S1, au bas de la colonne, juste au-dessus du sacrum.",
+   "nature": "noyau",
+   "articulation": "Rachis lombaire, noyau du disque L5-S1",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de L5 et de le sacrum (S1)",
+     "os": [
+      "vertebre-l5",
+      "sacrum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel central qui supporte le poids transmis au bassin ; son anneau est plus mince en arrière et sur le côté",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sa fuite postéro-latérale pince la racine S1 : douleur de la fesse au bord latéral du pied, réflexe achilléen diminué, pointe du pied faible ; avec L4-L5, étage le plus souvent en cause",
+   "memo": "Noyau L5-S1 : en bas, il pince S1",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-lombaire",
+    "statpearls-radiculopathie-lombosacree",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-t1-t2",
+   "resume": "Le noyau de T1-T2, au sommet du rachis thoracique.",
+   "nature": "noyau",
+   "articulation": "Rachis thoracique, noyau du disque T1-T2",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de T1 et de T2",
+     "os": [
+      "vertebre-t1",
+      "vertebre-t2"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel central d'un disque mince : l'amortissement vertical est assuré, la mobilité est faible",
+   "tendu": null,
+   "test": null,
+   "clinique": "Une fuite latérale atteint la racine T1 (bord médial de l'avant-bras, petits muscles de la main) ; une fuite centrale comprime la moelle. Niveau où elle est très rare",
+   "memo": "Noyau T1-T2 : très haut, très rare, sensation au bord médial de l'avant-bras",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-t10-t11",
+   "resume": "Le noyau de T10-T11, avant les côtes flottantes.",
+   "nature": "noyau",
+   "articulation": "Rachis thoracique, noyau du disque T10-T11",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de T10 et de T11",
+     "os": [
+      "vertebre-t10",
+      "vertebre-t11"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel central dont l'anneau est de plus en plus sollicité à l'approche de la charnière thoraco-lombaire",
+   "tendu": null,
+   "test": null,
+   "clinique": "Fuite latérale : racine T10, douleur à hauteur de l'ombilic ; fuite médiane : atteinte de la moelle lombaire",
+   "memo": "Noyau T10-T11 : la racine de l'ombilic",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-t11-t12",
+   "resume": "Le noyau de T11-T12, le plus exposé du thorax.",
+   "nature": "noyau",
+   "articulation": "Rachis thoracique, noyau du disque T11-T12",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de T11 et de T12",
+     "os": [
+      "vertebre-t11",
+      "vertebre-t12"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel central mal protégé par la cage costale : cisaillement et flexion répétés le poussent vers l'arrière",
+   "tendu": null,
+   "test": null,
+   "clinique": "Siège le plus fréquent de la hernie thoracique : racine T11 irritée, douleur du bas-ventre ; la moelle lombo-sacrée, juste derrière, rend une fuite centrale dangereuse",
+   "memo": "Noyau T11-T12 : le plus fragile du thorax, près des côtes flottantes",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique"
+   ],
+   "divergences": "La fréquence des hernies thoraciques varie selon les sources (0,25 à 0,75 % pour Radiopaedia, environ 1 % pour Orthobullets, 1 à 2 % pour Wikipédia, moins de 5 % pour AAPMR) ; toutes s'accordent sur T11-T12 comme niveau le plus atteint."
+  },
+  {
+   "id": "noyau-pulpeux-t12-l1",
+   "resume": "Le noyau de T12-L1, à la charnière entre thorax et lombes.",
+   "nature": "noyau",
+   "articulation": "Rachis thoracique, noyau du disque T12-L1",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de T12 et de L1",
+     "os": [
+      "vertebre-t12",
+      "vertebre-l1"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel central soumis à de fortes contraintes de flexion-torsion, car la mobilité change brusquement entre thorax et lombes",
+   "tendu": null,
+   "test": null,
+   "clinique": "Une fuite latérale irrite la racine T12 (douleur du pli de l'aine, du haut de la hanche) ; une fuite centrale touche le cône terminal ou les racines de la queue-de-cheval",
+   "memo": "Noyau T12-L1 : la charnière qui concentre les contraintes",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-t2-t3",
+   "resume": "Le noyau de T2-T3, protégé par le cadre costal.",
+   "nature": "noyau",
+   "articulation": "Rachis thoracique, noyau du disque T2-T3",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de T2 et de T3",
+     "os": [
+      "vertebre-t2",
+      "vertebre-t3"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Noyau central d'un disque aussi haut devant que derrière, tenu par le cadre des côtes qui limite sa mobilité",
+   "tendu": null,
+   "test": null,
+   "clinique": "Fuite exceptionnelle ; si elle est latérale, la racine T2 est irritée (douleur axillaire et brachiale interne), si elle est centrale, la moelle est comprimée",
+   "memo": "Noyau T2-T3 : pas de lordose, donc rarement délogé",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-t3-t4",
+   "resume": "Le noyau de T3-T4, noyé dans un segment rigide.",
+   "nature": "noyau",
+   "articulation": "Rachis thoracique, noyau du disque T3-T4",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de T3 et de T4",
+     "os": [
+      "vertebre-t3",
+      "vertebre-t4"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel central : comme sa mobilité est faible, il subit peu de cisaillement et fait rarement hernie",
+   "tendu": null,
+   "test": null,
+   "clinique": "Fuite rare : racine T3 irritée, douleur thoracique en demi-ceinture ; fuite centrale, risque médullaire",
+   "memo": "Noyau T3-T4 : segment raide, noyau tranquille",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-t4-t5",
+   "resume": "Le noyau de T4-T5, au tiers supérieur du dos.",
+   "nature": "noyau",
+   "articulation": "Rachis thoracique, noyau du disque T4-T5",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de T4 et de T5",
+     "os": [
+      "vertebre-t4",
+      "vertebre-t5"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Cœur gélatineux d'un disque dont l'anneau s'amincit avec l'âge ; la cyphose le charge un peu plus en avant",
+   "tendu": null,
+   "test": null,
+   "clinique": "Si le noyau fuse sur le côté, la racine T4 est irritée : douleur en bande à hauteur des mamelons ; sa fuite médiane comprime la moelle",
+   "memo": "Noyau T4-T5 : douleur en bande, jamais très loin de la moelle",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-t5-t6",
+   "resume": "Le noyau de T5-T6, entre deux côtes qui le tiennent en cage.",
+   "nature": "noyau",
+   "articulation": "Rachis thoracique, noyau du disque T5-T6",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de T5 et de T6",
+     "os": [
+      "vertebre-t5",
+      "vertebre-t6"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel central, maintenu par la cage costale ; sa mobilité réduite limite les cisaillements",
+   "tendu": null,
+   "test": null,
+   "clinique": "Fuite latérale : racine T5, douleur en ceinture thoracique. Fuite médiane : moelle comprimée, jambes raides, réflexes vifs",
+   "memo": "Noyau T5-T6 : en ceinture si latéral, en myélopathie si central",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-t6-t7",
+   "resume": "Le noyau de T6-T7, au sommet de la courbure du dos.",
+   "nature": "noyau",
+   "articulation": "Rachis thoracique, noyau du disque T6-T7",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de T6 et de T7",
+     "os": [
+      "vertebre-t6",
+      "vertebre-t7"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel central chargé en avant par la cyphose ; sa sortie se fait pourtant vers l'arrière, où l'anneau est le plus mince",
+   "tendu": null,
+   "test": null,
+   "clinique": "Une extrusion de ce noyau peut rester asymptomatique, ou comprimer la moelle (signal anormal en IRM) ou la racine T6",
+   "memo": "Noyau T6-T7 : on peut l'avoir hernié sans le savoir",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-t7-t8",
+   "resume": "Le noyau de T7-T8, au seuil de la zone la plus exposée.",
+   "nature": "noyau",
+   "articulation": "Rachis thoracique, noyau du disque T7-T8",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de T7 et de T8",
+     "os": [
+      "vertebre-t7",
+      "vertebre-t8"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel central dont l'anneau, d'épaisseur égale devant et derrière, supporte surtout des tensions",
+   "tendu": null,
+   "test": null,
+   "clinique": "Fuite latérale : racine T7, douleur en demi-ceinture ; fuite médiane : moelle comprimée. Ce noyau précède la zone T8-T12, où se logent environ les trois quarts des hernies",
+   "memo": "Noyau T7-T8 : avant la zone à risque",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-t8-t9",
+   "resume": "Le noyau de T8-T9, dans la moitié basse du thorax.",
+   "nature": "noyau",
+   "articulation": "Rachis thoracique, noyau du disque T8-T9",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de T8 et de T9",
+     "os": [
+      "vertebre-t8",
+      "vertebre-t9"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel central plus sollicité qu'en haut, car les côtes tiennent moins le segment",
+   "tendu": null,
+   "test": null,
+   "clinique": "Fuite latérale : racine T8, douleur de la paroi du thorax et de l'abdomen haut ; fuite médiane : paraparésie. Étage où ces hernies se multiplient",
+   "memo": "Noyau T8-T9 : début de la zone qui hernie",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-t9-t10",
+   "resume": "Le noyau de T9-T10, dans le bas du thorax.",
+   "nature": "noyau",
+   "articulation": "Rachis thoracique, noyau du disque T9-T10",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de T9 et de T10",
+     "os": [
+      "vertebre-t9",
+      "vertebre-t10"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel central dans une zone où la mobilité augmente progressivement vers le bas",
+   "tendu": null,
+   "test": null,
+   "clinique": "Fuite latérale : racine T9, douleur de ceinture abdominale haute pouvant faire croire à une maladie digestive ; fuite médiane : atteinte médullaire",
+   "memo": "Noyau T9-T10 : un mal de ventre qui part du dos",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "aapmr-thoracique",
+    "orthobullets-thoracique"
+   ]
+  },
+  {
+   "id": "symphyse-sacrococcygienne",
+   "resume": "L'articulation entre le sommet du sacrum et la base du coccyx, peu mobile, reliée par un petit disque.",
+   "nature": "symphyse",
+   "articulation": "Sacrum et coccyx (symphyse sacro-coccygienne)",
+   "attaches": [
+    {
+     "texte": "Sommet du sacrum (face inférieure de S5)",
+     "os": [
+      "sacrum"
+     ]
+    },
+    {
+     "texte": "Base du coccyx",
+     "os": [
+      "coccyx"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Unit le coccyx au sacrum par un disque mince et des ligaments antérieur, postérieur, latéraux et intercornuaux ; elle fléchit et s'étend passivement (défécation, accouchement)",
+   "tendu": null,
+   "test": "Palpation douce de la jonction sacro-coccygienne dans le sillon interfessier : douleur à la pression ou en s'asseyant",
+   "clinique": "Siège de la coccygodynie, douleur qui s'aggrave assis ; cette articulation se palpe dans le sillon interfessier. Chez certaines personnes, elle est mobile surtout pendant la grossesse",
+   "memo": "Le dernier maillon de la chaîne : sacrum, petit disque, coccyx",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-symphyse-sacrococcygienne",
+    "statpearls-articulations-bassin"
+   ]
+  },
+  {
+   "id": "disque-articulaire-de-l-articulation-temporomandibulaire",
+   "resume": "La lame ovale de fibrocartilage entre le condyle de la mandibule et la fosse du temporal.",
+   "nature": "disque",
+   "articulation": "Articulation temporo-mandibulaire",
+   "attaches": [
+    {
+     "texte": "Pourtour fixé à la capsule de l'articulation ; en avant, au tendon du ptérygoïdien latéral",
+     "os": []
+    },
+    {
+     "texte": "Face supérieure du condyle de la mandibule, sur laquelle il repose",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Sépare l'articulation en deux étages : le disque et le condyle font charnière à l'ouverture (étage inférieur) ; le disque glisse sur le tubercule articulaire à la propulsion (étage supérieur)",
+   "tendu": null,
+   "test": "Doigts devant le tragus, bouche qui s'ouvre et se ferme : un claquement ou un blocage évoque un déplacement du disque",
+   "clinique": "Un déplacement du disque vers l'avant provoque claquement ou blocage à l'ouverture de la bouche, douleur devant le tragus",
+   "memo": "Un coussin mobile : charnière en bas, glissière en haut",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-tmj"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-c2-c3",
+   "resume": "Le plus haut disque du rachis, sous l'axis : entre l'occiput, l'atlas et l'axis, il n'y en a aucun.",
+   "nature": "disque",
+   "articulation": "Rachis cervical, étage C2-C3 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de l'axis (C2)",
+     "os": [
+      "axis"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de C3",
+     "os": [
+      "vertebre-c3"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relie le corps de l'axis à celui de C3 : amortit les charges et laisse jouer flexion, extension et inclinaison ; plus épais en avant, il participe à la lordose cervicale",
+   "tendu": null,
+   "test": "Manœuvre de Spurling si la douleur irradie : cou en extension et tourné du côté douloureux, pression axiale sur la tête",
+   "clinique": "Hernie rare à ce niveau. Elle comprime la racine C3 : douleur et fourmillements de la nuque et du côté du cou, sans déficit moteur ni réflexe tendineux du bras modifié. Une grosse hernie médiane menace la moelle cervicale haute",
+   "memo": "Vingt-trois disques de C2-C3 à L5-S1 : celui-ci ouvre la série",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-cervicale",
+    "teachmeanatomy-rachis-cervical",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "disque-intervertebral-c3-c4",
+   "resume": "Le disque du haut du cou, entre C3 et C4, moins souvent touché que ses voisins du bas.",
+   "nature": "disque",
+   "articulation": "Rachis cervical, étage C3-C4 (articulation intervertébrale)",
+   "attaches": [
+    {
+     "texte": "Plateau vertébral inférieur de C3",
+     "os": [
+      "vertebre-c3"
+     ]
+    },
+    {
+     "texte": "Plateau vertébral supérieur de C4",
+     "os": [
+      "vertebre-c4"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amortit et guide les mouvements entre C3 et C4 ; son anneau, plus épais en avant, maintient la courbure en lordose du cou",
+   "tendu": null,
+   "test": "Manœuvre de Spurling : extension et rotation du cou du côté douloureux avec pression axiale sur la tête",
+   "clinique": "Hernie postéro-latérale : racine C4. Douleur de la nuque et du dessus de l'épaule, engourdissement du moignon de l'épaule ; pas de réflexe tendineux propre à C4. Ce niveau est plus souvent atteint après 60 ans",
+   "memo": "C3-C4 : la racine C4, celle du dessus de l'épaule, comme une épaulette",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-cervicale",
+    "teachmeanatomy-rachis-cervical",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "ligament-nuchal",
+   "resume": "La lame fibro-élastique médiane de la nuque, de l'occiput à C7, qui prolonge le ligament supra-épineux.",
+   "nature": "ligament",
+   "articulation": "Nuque (rachis cervical et base du crâne)",
+   "attaches": [
+    {
+     "texte": "Protubérance occipitale externe et crête nucale médiane",
+     "os": [
+      "occipital"
+     ]
+    },
+    {
+     "texte": "Sommet du processus épineux de C7 ; une lame se détache vers le tubercule postérieur de l'atlas et les épineuses cervicales",
+     "os": [
+      "c7",
+      "atlas"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Cloison médiane entre les muscles droits et gauches de la nuque, où s'insèrent le trapèze, le splénius de la tête et d'autres muscles ; peu développé chez l'humain, il freine la flexion du cou",
+   "tendu": "En flexion du cou",
+   "test": "La tête fléchie, un cordon tendu se perçoit sur la ligne médiane de la nuque, sous la peau",
+   "clinique": "Voie d'abord médiane de la nuque en chirurgie du rachis cervical ; on a aussi utilisé du ligament nuchal comme greffe dans le traitement de la malformation de Chiari",
+   "memo": "La corde au milieu de la nuque : chez le cheval elle porte la tête, chez nous elle n'en reste qu'un vestige",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-ligament-nuchal",
+    "statpearls-dos"
+   ]
+  },
+  {
+   "id": "ligament-pterygo-epineux",
+   "resume": "Le ligament entre l'épine du sphénoïde et le bord de la lame latérale du processus ptérygoïde ; ossifié, il ménage un orifice.",
+   "nature": "ligament",
+   "articulation": "Région infratemporale (sphénoïde)",
+   "attaches": [
+    {
+     "texte": "Épine du sphénoïde",
+     "os": [
+      "sphenoide"
+     ]
+    },
+    {
+     "texte": "Partie haute du bord postérieur de la lame latérale du processus ptérygoïde",
+     "os": [
+      "sphenoide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Pont fibreux du sphénoïde, bord postérieur de la fosse infratemporale ; il n'appartient pas à l'articulation de la mâchoire",
+   "tendu": null,
+   "test": null,
+   "clinique": "Il s'ossifie parfois : le pont osseux forme alors le foramen ptérygo-épineux (de Civinini), où passent des rameaux du nerf mandibulaire vers les muscles masticateurs",
+   "memo": "Entre l'épine et la plaque ptérygoïde, un pont qui peut se faire os",
+   "variantes": "Ossification chez certaines personnes, qui crée le foramen ptérygo-épineux",
+   "sources": [
+    "gray1918",
+    "wikipedia-ligament-pterygo-epineux"
+   ]
+  },
+  {
+   "id": "ligament-sphenomandibulaire",
+   "resume": "Le ligament plat qui va de l'épine du sphénoïde à la lingula de la mandibule : il suspend la mâchoire.",
+   "nature": "ligament",
+   "articulation": "Articulation temporo-mandibulaire (ligament accessoire)",
+   "attaches": [
+    {
+     "texte": "Épine du sphénoïde",
+     "os": [
+      "sphenoide"
+     ]
+    },
+    {
+     "texte": "Lingula du foramen mandibulaire",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Ligament accessoire de l'articulation : il suspend la mandibule au sphénoïde et la maintient pendant ses mouvements",
+   "tendu": null,
+   "test": null,
+   "clinique": "Le nerf alvéolaire inférieur passe entre ce ligament et la branche de la mandibule pour gagner le foramen mandibulaire : repère de l'anesthésie dentaire du nerf alvéolaire inférieur",
+   "memo": "Du sphénoïde à la lingula : la suspente interne de la mandibule",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-tmj"
+   ]
+  },
+  {
+   "id": "ligament-stylohyoide",
+   "resume": "Le cordon qui relie le processus styloïde du temporal à la petite corne de l'os hyoïde.",
+   "nature": "ligament",
+   "articulation": "Os hyoïde et base du crâne",
+   "attaches": [
+    {
+     "texte": "Sommet du processus styloïde du temporal",
+     "os": [
+      "temporal"
+     ]
+    },
+    {
+     "texte": "Sommet de la petite corne de l'os hyoïde",
+     "os": [
+      "hyoide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Suspend l'hyoïde à la base du crâne ; il donne aussi attache aux fibres les plus hautes du constricteur moyen du pharynx",
+   "tendu": null,
+   "test": null,
+   "clinique": "Il s'ossifie en partie, parfois en totalité : un ligament ossifié ou un processus styloïde allongé peut causer une douleur du cou et de la gorge (syndrome d'Eagle)",
+   "memo": "Le fil de la marionnette : du styloïde à la petite corne de l'hyoïde",
+   "variantes": "Ossification partielle ou totale chez certaines personnes",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-hyoide",
+    "wikipedia-ligament-stylohyoidien"
+   ]
+  },
+  {
+   "id": "ligament-stylomandibulaire",
+   "resume": "La bande de fascia qui va du processus styloïde à l'angle de la mandibule ; elle soutient la mâchoire.",
+   "nature": "ligament",
+   "articulation": "Articulation temporo-mandibulaire (ligament accessoire)",
+   "attaches": [
+    {
+     "texte": "Processus styloïde du temporal",
+     "os": [
+      "temporal"
+     ]
+    },
+    {
+     "texte": "Angle et bord postérieur de la branche de la mandibule",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Épaississement du fascia cervical (fascia de la glande parotide) : accessoire de l'articulation, il aide à soutenir le poids de la mandibule",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sans pathologie propre ; avec le ligament sphénomandibulaire, il appartient aux ligaments accessoires qui ne stabilisent pas à eux seuls l'articulation",
+   "memo": "Du styloïde à l'angle de la mandibule : le hamac de la mâchoire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-tmj"
+   ]
+  },
+  {
+   "id": "ligament-temporomandibulaire-lateral",
+   "resume": "Le renfort latéral de la capsule de l'articulation de la mâchoire : il retient la mandibule vers l'arrière.",
+   "nature": "ligament",
+   "articulation": "Articulation temporo-mandibulaire",
+   "attaches": [
+    {
+     "texte": "Arcade zygomatique et tubercule articulaire du temporal",
+     "os": [
+      "temporal"
+     ]
+    },
+    {
+     "texte": "Face latérale et bord postérieur du col de la mandibule",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce la capsule en dehors ; ses deux faisceaux courts s'opposent à la luxation postérieure et limitent le recul du condyle",
+   "tendu": null,
+   "test": null,
+   "clinique": "Il retient le recul du condyle : la luxation postérieure n'est possible qu'après un traumatisme majeur. La luxation antérieure (bâillement) est bien plus courante",
+   "memo": "Le ligament latéral : le frein arrière de la mâchoire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-tmj"
+   ]
+  },
+  {
+   "id": "ligament-thyrohyoide-lateral",
+   "resume": "Le cordon élastique du bord de la membrane thyro-hyoïdienne, de chaque côté, entre les cornes de l'hyoïde et du thyroïde.",
+   "nature": "ligament",
+   "articulation": "Larynx et os hyoïde (bord postérieur de la membrane thyro-hyoïdienne)",
+   "attaches": [
+    {
+     "texte": "Sommet de la corne supérieure du cartilage thyroïde",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    },
+    {
+     "texte": "Extrémité de la grande corne de l'hyoïde",
+     "os": [
+      "hyoide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Borde chaque côté de la membrane thyro-hyoïdienne ; son cordon renferme souvent un petit nodule cartilagineux (cartilage triticé)",
+   "tendu": null,
+   "test": null,
+   "clinique": "Le cartilage triticé qu'il contient peut se calcifier et se voir sur une radiographie ou un scanner du cou, à ne pas confondre avec un corps étranger",
+   "memo": "Le cordon du côté : une corne du thyroïde, une corne de l'hyoïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-hyoide"
+   ]
+  },
+  {
+   "id": "noyau-pulpeux-c2-c3",
+   "resume": "Le noyau le plus haut du rachis, au centre du premier disque, sous l'axis.",
+   "nature": "noyau",
+   "articulation": "Rachis cervical, noyau du disque C2-C3",
+   "attaches": [
+    {
+     "texte": "Centre du disque, entre les plateaux de l'axis (C2) et de C3",
+     "os": [
+      "axis",
+      "vertebre-c3"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Gel hydraté qui répartit les pressions sur l'anneau ; encore volumineux chez le sujet jeune, il se dessèche avec l'âge",
+   "tendu": null,
+   "test": null,
+   "clinique": "Son passage à travers l'anneau, vers l'arrière et le côté, comprime la racine C3 : douleur et fourmillements de la nuque, sans signe moteur au bras. Niveau rarement en cause",
+   "memo": "Le noyau d'en haut : tout au sommet de la pile de gels",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-disque",
+    "statpearls-hernie-cervicale",
+    "wikipedia-hernie-discale"
+   ]
+  },
+  {
+   "id": "ligament-costotransversaire",
+   "resume": "Le ligament court qui comble l'espace entre le col de la côte et le processus transverse de la vertèbre.",
+   "nature": "ligament",
+   "articulation": "Articulation costo-transversaire (côtes 1 à 10)",
+   "attaches": [
+    {
+     "texte": "Face postérieure du col de la côte",
+     "os": [
+      "cotes-vraies",
+      "fausses-cotes"
+     ]
+    },
+    {
+     "texte": "Face antérieure du processus transverse de la vertèbre thoracique voisine",
+     "os": [
+      "vertebres-thoraciques"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Amarre la côte au processus transverse ; il guide le mouvement des côtes : rotation du col pour les six premières, glissement vers l'arrière et le dedans pour les côtes 7 à 10",
+   "tendu": null,
+   "test": null,
+   "clinique": "Ces articulations guident le mouvement des côtes à la respiration ; leur raideur (arthrose, spondylarthrite) limite l'expansion du thorax",
+   "memo": "Col de la côte, transverse de la vertèbre : le ligament comble l'espace entre les deux",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-costovertebral"
+   ]
+  },
+  {
+   "id": "ligament-intra-articulaire-de-la-tete-costale",
+   "resume": "Le ligament à l'intérieur de l'articulation de la tête de la côte, de la crête costale au disque.",
+   "nature": "ligament",
+   "articulation": "Articulation de la tête de la côte (costo-vertébrale, côtes 2 à 9)",
+   "attaches": [
+    {
+     "texte": "Crête de la tête de la côte",
+     "os": [
+      "cotes-vraies",
+      "fausses-cotes"
+     ]
+    },
+    {
+     "texte": "Disque intervertébral voisin",
+     "os": []
+    }
+   ],
+   "situation": null,
+   "role": "Cloisonne l'articulation en deux cavités, supérieure et inférieure ; il fixe la tête costale au disque. Il manque aux côtes 1, 10, 11 et 12, qui ne s'articulent qu'avec une vertèbre",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sans pathologie propre ; il relie la tête de la côte au disque et fait de cette articulation une articulation double, à deux cavités",
+   "memo": "Au centre de l'articulation : un fil de la crête de la côte au disque",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-costovertebral"
+   ],
+   "divergences": "Kenhub écrit qu'il est présent aux côtes 2 à 9 ; Gray l'estime absent des côtes 1, 10, 11 et 12 : les deux versions concordent, la 10e côte ne s'articulant qu'avec une vertèbre."
+  }
+ ]
+}

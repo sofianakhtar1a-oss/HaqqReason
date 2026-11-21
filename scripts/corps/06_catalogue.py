@@ -103,6 +103,23 @@ CORRECTIONS = [
 ]
 
 
+RETOUCHES = [(r"inféfieure", "inférieure"), (r"\bcinqu[eè]me\b", "cinquième"), (r"\btrois[eè]me\b", "troisième"), (r"\bdoigt de pied\b", "orteil"), (r"\bdoigts de pied\b", "orteils")]
+
+
+# Des noms français de l'atlas qui ne disent pas ce que dit le latin (relevés en rédigeant les fiches).
+NOMS_PAR_ID = {
+    "ligament-tibiofibullaire-posterieur": "Ligament talo-fibulaire postérieur",
+    "ligament-talocalcaneen": "Ligament talo-calcanéen latéral",
+    "ligament-talocalcaneen-lateral": "Ligament talo-calcanéen postérieur",
+}
+
+
+def retoucher(nom):
+    for motif, par in RETOUCHES:
+        nom = re.sub(motif, par, nom)
+    return nom
+
+
 def nettoyer(nom):
     for motif, par in CORRECTIONS:
         nom = re.sub(motif, par, nom)
@@ -260,6 +277,8 @@ for (couche, ea), ps in groupes.items():
             ident = f"{base_id}-{k}"
             k += 1
     ids_pris[ident] = True
+    # Les retouches de noms viennent après l'identifiant, déjà distribué (fiches, progression) : il ne change pas.
+    fr, nom = retoucher(fr), retoucher(nom)
     cotes = {p["cote"] for p in ps}
     pair = any(p["miroir"] for p in ps) or ("g" in cotes and "d" in cotes)
     e = {"id": ident, "couche": couche, "nom": h["nom"] if h else nom, "officiel": fr, "latin": la, "anglais": ea, "ta2": tid, "pair": bool(pair), "nature": ps[0]["sorte"], "inconstant": all(p.get("inconstant") for p in ps), "_pieces": ps, "_heritage": h}
@@ -310,7 +329,8 @@ def region_de(e):
             return "epaule"
     haut = cols & {"Left upper limb", "Right upper limb", "Left hand", "Right hand"}
     bas = cols & {"Left lower limb", "Right lower limb", "Left foot", "Right foot"}
-    if haut and not bas or (not cols & {"Trunk", "Head", "Neck"} and x > X_EPAULE - 0.01 and y < Y["epaule"] + 0.02 and y > Y["poignet"] - 0.25):
+    # (la géométrie ne départage que ce que les collections de l'atlas ne disent pas : la main qui pend frôle la hanche)
+    if (haut and not bas) or (not haut and not bas and not cols & {"Trunk", "Head", "Neck"} and x > X_EPAULE - 0.01 and y < Y["epaule"] + 0.02 and y > Y["poignet"] - 0.25):
         if y > Y["epaule"] - 0.07:
             return "epaule"
         if y > Y["coude"] - 0.015:
@@ -688,6 +708,13 @@ for e in elements:
                 x[k] = h[k]
     if x.get("nature") == e["couche"]:
         del x["nature"]
+    if x["id"] in NOMS_PAR_ID:
+        x["nom"] = x["officiel"] = NOMS_PAR_ID[x["id"]]
+    # Au pied, les « doigts » sont des orteils.
+    if x["region"] == "pied" and re.search(r"\bdoigts?\b", x["nom"]):
+        x["nom"] = re.sub(r"\bpetit doigt\b", "petit orteil", x["nom"])
+        x["nom"] = re.sub(r"\bdes doigts\b", "des orteils", x["nom"])
+        x["officiel"] = x["nom"] if x.get("officiel") else x.get("officiel")
     x["art"] = article(x["nom"])
     if x["id"] in VOILES:
         x["voile"] = VOILES[x["id"]]
@@ -728,6 +755,236 @@ ecrire("reperes.json", reperes_json)
 with open(os.path.join(ICI, "donnees", "planches-publiees.json"), encoding="utf-8") as f:
     publiees = json.load(f)
 connus = {e["id"] for e in elements} | {x["id"] for x in ensembles if x["membres"]}
+# Les planches exhaustives : toute structure qui n'est encore dans aucune planche en reçoit une, à la suite des
+# planches publiées, région par région (de la tête aux pieds), les plus importantes d'abord. Une catégorie
+# nouvelle commence par ses incontournables. Une fois écrites, ces planches sont publiées à leur tour.
+CAT_COUCHE = {"os": "os", "muscles": "muscle", "tendons": "tendon", "ligaments": "ligament", "arteres": "artere", "veines": "veine", "nerfs": "nerf", "visceres": "viscere", "encephale": "encephale", "lymphe": "lymphe"}
+ORDRE_REGIONS = ["tete", "cou", "thorax", "abdomen", "dos", "bassin", "epaule", "bras", "avant-bras", "main", "hanche", "cuisse", "jambe", "pied"]
+TAILLE = 8
+
+# Les viscères se rangent par système et par organe, l'encéphale par partie : une planche réunit ce qui va ensemble.
+# Le premier motif qui convient l'emporte (l'ordre compte : « segment-…-du-globe » avant les segments du foie).
+CLASSES = {
+    "viscere": [
+        ("Le cœur", r"^(atrium|ventricule|valvule|cuspide|muscle-papillaire)"),
+        ("Les poumons et les grosses bronches", r"^(lobe-(superieur|moyen|inferieur)-du-poumon|trachee|bronche-(principale|intermediaire|lobaire)|plevre)"),
+        ("Les bronches segmentaires du poumon gauche", r"^bronche-(segmentaire|lingulaire).*(gauche|gau-)"),
+        ("Les bronches segmentaires du poumon droit", r"^bronche-(segmentaire|lingulaire)"),
+        ("La bouche et les glandes salivaires", r"^(langue|gencive|palais-mou|uvule-du-palais|tonsille-palatine|glande-(parotide|submandibulaire|sublinguale)|canal-(porotidien|submandibulaire))"),
+        ("Le pharynx et le larynx", r"^(nasopharynx|oropharynx|laryngopharynx|epiglotte)"),
+        ("L'œil", r"^(cornee|sclere|iris|cristallin|retine|corps-vitre|chambre-anterieure|segment-(anterieur|posterieur)-du-globe|fibres-zonulaires|ligament-suspenseur-du-bulbe)"),
+        ("Les voies lacrymales, le nez et l'oreille", r"^(glande-lacrymale|canalicule-lacrymal|ampoule-du-canalicule|sac-lacrymal|canal-lacrymonasal|muqueuse-de-la-cavite-nasale|membrane-tympanique|trompe-auditive)"),
+        ("L'œsophage, l'estomac et l'intestin", r"^(oesophage|estomac|muqueuse-de-l-estomac|duodenum|jejunum|ileon|colon|caecum|rectum|appendice|meso-appendice|tenia)"),
+        ("Le foie et les voies biliaires", r"^(foie|segment-|vesicule-biliaire|canal-biliaire|canal-hepatique|canal-choledoque)"),
+        ("Le pancréas, la rate et le péritoine", r"^(pancreas|canal-pancreatique|rate|grand-omentum|petit-omentum|mesocolon|mesentere|peritoine)"),
+        ("Les glandes endocrines et le thymus", r"^(glande-(thyroide|parathyroide|pineale)|adenohypophyse|neurohypophyse|lobe-(droit|gauche)-du-thymus)"),
+        ("La surrénale, l'uretère, la vessie et la prostate", r"^(glande-surrenale|rein|uretere|vessie|uretre|prostate)"),
+        ("Les autres viscères", r""),
+    ],
+    "encephale": [
+        ("Le lobe frontal", r"^(gyrus-frontal|sillon-frontal|gyrus-precentral|sillon-precentral|sillon-central|partie-(operculaire|orbitaire|triangulaire)|gyri-orbitaires|sillons-orbitaires|encephale-(gyri|sillons)-orbitaires|gyrus-rectus|sillon-olfactif|gyrus-et-sillon-frontopolaires)"),
+        ("Le lobe pariétal", r"^(gyrus-postcentral|sillon-postcentral|lobule-parietal|gyrus-supramarginal|gyrus-angulaire|sillon-intraparietal|sillon-subparietal|precuneus|sillon-intermediaire-primaire)"),
+        ("Le lobe temporal et l'insula", r"^(gyrus-temporal|sillon-temporal|planum-temporal|pole-temporal|sillon-lateral|rameau-(anterieur|ascendant)-du-sillon-lateral|cortex-insulaire|sillon-circulaire-de-l-insula)"),
+        ("Le lobe occipital", r"^(gyrus-occipital|gyri-occipitaux|sillon-occipital|pole-occipital|cuneus|gyrus-lingual|sillon-calcarin|sillon-lunaire|sillon-parieto-occipital|gyrus-occipitotemporal|sillon-occipitotemporal|scissure-collaterale|sillon-collateral)"),
+        ("La face médiale et le système limbique", r"^(gyrus-cingulaire|sillon-cingulaire|lobule-paracentral|sillon-paracentral|hippocampe|corps-amygdaloide|fornix|noyaux-septaux|septum-pellucidum|corps-calleux|commissure-(anterieure|hippocampale))"),
+        ("Les noyaux gris centraux", r"^(noyau-caude|putamen|globus-pallidus|noyau-lenticulaire|substance-blanche-du-telencephale|claustrum|capsule)"),
+        ("Le diencéphale", r"^(thalamus|hypothalamus|corps-mamillaire|habenula|strie-medullaire|corps-genicule|commissure-posterieure)"),
+        ("La substance grise de la moelle spinale", r"^(corne-|noyau-(intermediolateral|intermediomedial|propre)|substance-intermediaire|processus-reticulaire)"),
+        ("Les noyaux des nerfs crâniens", r"^(noyau-(accessoire-du-nerf|du-nerf|moteur-du-ne|ambigu|salivaire|cochleaire|posterieur-du-nerf|du-tractus-solitaire)|noyaux-vestibulaires)"),
+        ("Le tronc cérébral", r"^(mesencephale|pont$|moelle-allongee|olive|pyramide-de-la-moelle|colliculus|base-du-pedoncule|fosse-interpedonculaire|noyau-rouge|racine-sensitive-du-nerf-trijumeau)"),
+        ("Le cervelet", r"^(lobule-(quadrangulaire|biventral|central|gracile|semilunaire)|aile-du-lobule|culmen|declive|flocculus|folium|nodule|pyramide-du-vermis|tuber|uvule-du-vermis|lingula|tonsille-du-cervelet|pedoncule-(du-flocculus|cerebelleux))"),
+        ("Les ventricules et les méninges", r"^(ventricule|troisieme-ventricule|quatrieme-ventricule|aqueduc|plexus-choroide|faux-du-cerveau|tente-du-cervelet|dure-mere|canal-central)"),
+        ("Les voies de la moelle spinale", r"^(tractus-|faisceau-|substance-blanche-de-la-moelle)"),
+        ("Les autres structures de l'encéphale", r""),
+    ],
+}
+
+
+# La première planche d'une catégorie neuve : ce que tout le monde doit connaître (le rang ne départage pas ces couches).
+INCONTOURNABLES = {
+    "ligaments": ["ligament-croise-anterieur", "ligament-croise-posterieur", "menisque-medial", "menisque-lateral", "ligament-collateral-tibial", "ligament-collateral-fibulaire", "ligament-longitudinal-anterieur", "ligament-iliofemoral"],
+    "veines": ["veine-cave-superieure", "veine-cave-inferieure", "veine-porte-du-foie", "veine-jugulaire-interne", "veine-brachiocephalique", "veine-grande-saphene", "veine-femorale", "veine-mediane-du-coude"],
+    "nerfs": ["nerf-median", "nerf-ulnaire", "nerf-radial", "nerf-musculocutane", "nerf-axillaire", "nerf-sciatique", "nerf-femoral", "nerf-fibulaire-commun"],
+    "visceres": ["foie", "estomac", "pancreas", "rate", "oesophage", "trachee", "langue", "glande-thyroide"],
+    "encephale": ["thalamus", "hypothalamus", "corps-calleux", "hippocampe", "mesencephale", "pont", "moelle-allongee", "ventricule-lateral"],
+    "lymphe": ["lymphonoeud-jugulodigastrique", "lymphonoeuds-supraclaviculaires", "lymphonoeuds-axillaires-centraux", "lymphonoeuds-axillaires-anterieurs", "lymphonoeuds-tracheobronchiques-inferieurs", "lymphonoeuds-coeliaques", "lymphonoeuds-pre-aortiques", "lymphonoeuds-inguinaux-superficiels-superomediaux"],
+}
+
+
+def classe(couche, e):
+    for i, (titre, motif) in enumerate(CLASSES[couche]):
+        if re.search(motif, e["id"]):
+            return i, titre
+    return len(CLASSES[couche]), ""
+
+
+# Pour les vaisseaux, les nerfs et les nœuds, une planche suit un arbre : la branche avec son tronc, l'affluent avec sa
+# veine. Le parent vient des fiches (provenance d'une artère, terminaison d'une veine, origine d'un nerf, drainage d'un nœud).
+PARENT_DE = {"artere": ("provenance", "artere"), "veine": ("terminaison", "veine"), "nerf": ("origine", "nerf"), "lymphe": ("draine_vers", "lymphe")}
+SUITE = {"artere": "et ses branches", "veine": "et ses affluents", "nerf": "et ses branches"}
+
+
+def parents(couche):
+    if couche not in PARENT_DE:
+        return {}
+    champ, cle = PARENT_DE[couche]
+    chemin = os.path.join(ICI, "..", "..", "src", "lib", "corps", "fiches", f"{couche}.json")
+    if not os.path.exists(chemin):
+        return {}
+    with open(chemin, encoding="utf-8") as fl:
+        fiches = json.load(fl).get("fiches", {})
+    sortie = {}
+    for i, fi in fiches.items():
+        lien = fi.get(champ)
+        if isinstance(lien, dict) and lien.get(cle):
+            sortie[i] = lien[cle]
+    return sortie
+
+
+def paqueter(groupes):
+    """Range des groupes ordonnés en planches de taille voisine (TAILLE environ), sans couper un groupe qui tient."""
+    total = sum(len(g) for g in groupes)
+    if not total:
+        return []
+    k = max(1, round(total / TAILLE))
+    cible = total / k
+    paquets, courant = [], []
+    for g in groupes:
+        if len(g) > cible + 2:
+            if courant:
+                paquets.append(courant)
+                courant = []
+            n = max(1, round(len(g) / cible))
+            pas = len(g) / n
+            paquets.extend(g[round(i * pas) : round((i + 1) * pas)] for i in range(n))
+        elif not courant or len(courant) + len(g) <= cible + 2:
+            courant = courant + g
+        else:
+            paquets.append(courant)
+            courant = list(g)
+    if courant:
+        if paquets and len(courant) < TAILLE // 2:
+            ensemble = paquets.pop() + courant
+            if len(ensemble) <= TAILLE + 3:
+                paquets.append(ensemble)
+            else:
+                moitie = len(ensemble) // 2
+                paquets.extend([ensemble[:moitie], ensemble[moitie:]])
+        else:
+            paquets.append(courant)
+    return paquets
+
+
+def titre_arbre(e, couche):
+    """« L'artère maxillaire et ses branches », « Le plexus brachial et ses branches »."""
+    nom = re.sub(r"^Racines du ", "", e["nom"])
+    art = "le " if nom != e["nom"] else e.get("art", "")
+    pluriel = art == "les "
+    suite = SUITE[couche].replace("ses ", "leurs ") if pluriel else SUITE[couche]
+    tete = (art + nom[0].lower() + nom[1:]) if art else nom
+    return f"{tete[0].upper()}{tete[1:]} {suite}"
+
+
+GRANDE = {"tete": "tete-cou", "cou": "tete-cou", "thorax": "tronc", "abdomen": "tronc", "dos": "tronc", "bassin": "tronc", "epaule": "membre-sup", "bras": "membre-sup", "avant-bras": "membre-sup", "main": "membre-sup", "hanche": "membre-inf", "cuisse": "membre-inf", "jambe": "membre-inf", "pied": "membre-inf"}
+
+
+titres_chemin = os.path.join(ICI, "donnees", "planches-titres.json")
+titres = {}
+if os.path.exists(titres_chemin):
+    with open(titres_chemin, encoding="utf-8") as fl:
+        titres = json.load(fl)
+deja = {i for niveaux in publiees.values() for niveau in niveaux for i in niveau}
+ajouts = 0
+par_id_json = {e["id"]: e for e in elements_json}
+for cat, couche in CAT_COUCHE.items():
+    restants = [e for e in elements_json if e["couche"] == couche and e["id"] not in deja]
+    if not restants:
+        continue
+    niveaux = publiees.setdefault(cat, [])
+    noms = titres.setdefault(cat, {})
+    if not niveaux:
+        choisis = [i for i in INCONTOURNABLES.get(cat, []) if i in {e["id"] for e in restants}]
+        if choisis:
+            tete = [par_id_json[i] for i in choisis]
+        else:
+            tete = sorted(restants, key=lambda e: (e["rang"], ORDRE_REGIONS.index(e["region"]), e["nom"]))[:TAILLE]
+        niveaux.append([e["id"] for e in tete])
+        restants = [e for e in restants if e not in tete]
+    nouveaux = []  # (paquet, titre ou None)
+    if couche in CLASSES:
+        par_classe = collections.defaultdict(list)
+        for e in restants:
+            par_classe[classe(couche, e)].append(e)
+        for (_, titre), lot in sorted(par_classe.items()):
+            lot.sort(key=lambda e: (e["rang"], e["nom"]))
+            n = max(1, round(len(lot) / TAILLE))
+            pas = len(lot) / n
+            for i in range(n):
+                nouveaux.append((lot[round(i * pas) : round((i + 1) * pas)], titre))
+    elif couche not in PARENT_DE:
+        # Os, muscles, tendons, ligaments : par région, les petites régions rejoignant leurs voisines de la même grande région.
+        for grande in ("tete-cou", "tronc", "membre-sup", "membre-inf"):
+            groupes = []
+            for region in ORDRE_REGIONS:
+                if GRANDE[region] != grande:
+                    continue
+                lot = sorted((e for e in restants if e["region"] == region), key=lambda e: (e["rang"], e["nom"]))
+                if lot:
+                    groupes.append(lot)
+            for p in paqueter(groupes):
+                nouveaux.append((p, None))
+    else:
+        parent = parents(couche)
+        rangees_par_grande = collections.defaultdict(list)
+        troncs = {}
+        for region in ORDRE_REGIONS:
+            lot = [e for e in restants if e["region"] == region]
+            if not lot:
+                continue
+            ici = {e["id"] for e in lot}
+
+            def tronc(i):
+                vus = set()
+                while parent.get(i) in ici and i not in vus:
+                    vus.add(i)
+                    i = parent[i]
+                return i
+
+            groupes = collections.defaultdict(list)
+            for e in lot:
+                groupes[tronc(e["id"])].append(e)
+            ordre = sorted(groupes.items(), key=lambda kv: (min(x["rang"] for x in kv[1]), -len(kv[1]), kv[0]))
+            rangees = []
+            for t, membres in ordre:
+                membres.sort(key=lambda e: (e["id"] != t, e["rang"], e["nom"]))
+                rangees.append(membres)
+            for membres in rangees:
+                for e in membres:
+                    troncs[e["id"]] = tronc(e["id"])
+            rangees_par_grande[GRANDE[region]].extend(rangees)
+        for grande in ("tete-cou", "tronc", "membre-sup", "membre-inf"):
+            for p in paqueter(rangees_par_grande.get(grande, [])):
+                titre = None
+                if couche in SUITE:
+                    compte = collections.Counter(troncs[e["id"]] for e in p)
+                    t, n = compte.most_common(1)[0]
+                    if n >= max(4, 0.7 * len(p)) and t in par_id_json:
+                        titre = titre_arbre(par_id_json[t], couche)
+                nouveaux.append((p, titre))
+    for p, titre in nouveaux:
+        if titre:
+            noms[str(len(niveaux))] = titre
+        niveaux.append([e["id"] for e in p])
+        ajouts += 1
+    deja |= {e["id"] for e in restants}
+titres = {c: t for c, t in titres.items() if t}
+if ajouts:
+    with open(os.path.join(ICI, "donnees", "planches-publiees.json"), "w", encoding="utf-8") as fl:
+        json.dump(publiees, fl, ensure_ascii=False, indent=0)
+    with open(titres_chemin, "w", encoding="utf-8") as fl:
+        json.dump(titres, fl, ensure_ascii=False, indent=1)
+    print("planches ajoutées :", ajouts)
+ecrire("planches-titres.json", titres)
 planches = {c: [[i for i in niveau if i in connus] for niveau in niveaux] for c, niveaux in publiees.items()}
 ecrire("planches.json", planches)
 vieux = os.path.join(MODELE, "niveaux-herites.json")

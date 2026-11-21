@@ -1,0 +1,396 @@
+{
+ "lot": "veine-sup-inf",
+ "couche": "veine",
+ "structures": [
+  {
+   "id": "veine-antebrachiale-mediane",
+   "nom": "Veine antébrachiale médiane",
+   "latin": "Vena mediana antebrachii",
+   "anglais": "Median antebrachial vein",
+   "region": "avant-bras",
+   "rang": 2,
+   "officiel": "Veine antébrachiale médiane",
+   "ta2": "4981"
+  },
+  {
+   "id": "veine-basilique",
+   "nom": "Veine basilique",
+   "latin": "Vena basilica",
+   "anglais": "Basilic vein",
+   "region": "bras",
+   "rang": 2,
+   "officiel": "Veine basilique",
+   "ta2": "4979"
+  },
+  {
+   "id": "veine-cephalique",
+   "nom": "Veine céphalique",
+   "latin": "Vena cephalica",
+   "anglais": "Cephalic vein",
+   "region": "bras",
+   "rang": 2,
+   "officiel": "Veine céphalique",
+   "ta2": "4964"
+  },
+  {
+   "id": "veine-femorale",
+   "nom": "Veine fémorale",
+   "latin": "Vena femoralis",
+   "anglais": "Femoral vein",
+   "region": "cuisse",
+   "rang": 2,
+   "officiel": "Veine fémorale",
+   "ta2": "5055"
+  },
+  {
+   "id": "veine-grande-saphene",
+   "nom": "Veine grande saphène",
+   "latin": "Vena saphena magna",
+   "anglais": "Great saphenous vein",
+   "region": "cuisse",
+   "rang": 2,
+   "officiel": "Veine grande saphène",
+   "ta2": "5058"
+  },
+  {
+   "id": "veines-du-genou",
+   "nom": "Veines du genou",
+   "latin": "Venae geniculares",
+   "anglais": "Genicular veins",
+   "region": "cuisse",
+   "rang": 2,
+   "officiel": "Veines du genou",
+   "ta2": "5074"
+  },
+  {
+   "id": "veine-circonflexe-humerale-anterieure",
+   "nom": "Veine circonflexe humérale antérieure",
+   "latin": "Vena circumflexa anterior humeri",
+   "anglais": "Anterior circumflex humeral vein",
+   "region": "epaule",
+   "rang": 2,
+   "officiel": "Veine circonflexe humérale antérieure",
+   "ta2": "4976"
+  },
+  {
+   "id": "veine-epigastrique-superficielle",
+   "nom": "Veine épigastrique superficielle",
+   "latin": "Vena epigastrica superficialis",
+   "anglais": "Superficial epigastric vein",
+   "region": "hanche",
+   "rang": 2,
+   "officiel": "Veine épigastrique superficielle",
+   "ta2": "5067"
+  },
+  {
+   "id": "veine-petite-saphene",
+   "nom": "Veine petite saphène",
+   "latin": "Vena saphena parva",
+   "anglais": "Small saphenous vein",
+   "region": "jambe",
+   "rang": 2,
+   "officiel": "Veine petite saphène",
+   "ta2": "5085"
+  },
+  {
+   "id": "veines-tibiales-anterieures",
+   "nom": "Veines tibiales antérieures",
+   "latin": "Venae tibiales anteriores",
+   "anglais": "Anterior tibial veins",
+   "region": "jambe",
+   "rang": 2,
+   "officiel": "Veines tibiales antérieures",
+   "ta2": "5075"
+  },
+  {
+   "id": "veines-tibiales-posterieures",
+   "nom": "Veines tibiales postérieures",
+   "latin": "Venae tibiales posteriores",
+   "anglais": "Posterior tibial veins",
+   "region": "jambe",
+   "rang": 2,
+   "officiel": "Veines tibiales postérieures",
+   "ta2": "5077"
+  },
+  {
+   "id": "arcade-veineuse-palmaire-profonde",
+   "nom": "Arcade veineuse palmaire profonde",
+   "latin": "Arcus venosus palmaris profundus",
+   "anglais": "Deep venous palmar arch",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Arcade veineuse palmaire profonde",
+   "ta2": "4989"
+  },
+  {
+   "id": "arcade-veineuse-palmaire-superficielle",
+   "nom": "Arcade veineuse palmaire superficielle",
+   "latin": "Arcus venosus palmaris superficialis",
+   "anglais": "Superficial venous palmar arch",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Arcade veineuse palmaire superficielle",
+   "ta2": "4986"
+  },
+  {
+   "id": "veines-intercapitales-du-pied",
+   "nom": "Veines intercapitales du pied",
+   "latin": "Venae intercapitulares pedis",
+   "anglais": "Intercapitular veins of foot",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Veines intercapitales du pied",
+   "ta2": "5091"
+  },
+  {
+   "id": "veines-radiales",
+   "nom": "Veines radiales",
+   "latin": "Venae radiales",
+   "anglais": "Radial veins",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Veines radiales",
+   "ta2": "4988"
+  },
+  {
+   "id": "veines-ulnaires",
+   "nom": "Veines ulnaires",
+   "latin": "Venae ulnares",
+   "anglais": "Ulnar veins",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Veines ulnaires",
+   "ta2": "4985"
+  },
+  {
+   "id": "veine-mediane-du-coude",
+   "nom": "Veine médiane du coude",
+   "latin": "Vena mediana cubiti",
+   "anglais": "Median cubital vein",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Veine médiane du coude",
+   "ta2": "4980"
+  },
+  {
+   "id": "veines-brachiales",
+   "nom": "Veines brachiales",
+   "latin": "Venae brachiales",
+   "anglais": "Brachial veins",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Veines brachiales",
+   "ta2": "4982"
+  },
+  {
+   "id": "veine-femorale-profonde",
+   "nom": "Veine fémorale profonde",
+   "latin": "Vena profunda femoris",
+   "anglais": "Deep femoral vein",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Veine fémorale profonde",
+   "ta2": "5070"
+  },
+  {
+   "id": "veine-poplitee",
+   "nom": "Veine poplitée",
+   "latin": "Vena poplitea",
+   "anglais": "Popliteal vein",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Veine poplitée",
+   "ta2": "5072"
+  },
+  {
+   "id": "veines-perforantes",
+   "nom": "Veines perforantes",
+   "latin": "Venae perforantes",
+   "anglais": "Perforating veins",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Veines perforantes",
+   "ta2": "5071"
+  },
+  {
+   "id": "veines-pudendales-externes",
+   "nom": "Veines pudendales externes",
+   "latin": "Venae pudendales extemae",
+   "anglais": "External pudendal veins",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Veines pudendales externes",
+   "ta2": "5059"
+  },
+  {
+   "id": "veine-axillaire",
+   "nom": "Veine axillaire",
+   "latin": "Vena axillaris",
+   "anglais": "Axillary vein",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Veine axillaire",
+   "ta2": "4963"
+  },
+  {
+   "id": "veine-circonflexe-de-la-scapula",
+   "nom": "Veine circonflexe de la scapula",
+   "latin": "Vena circumflexa scapulae",
+   "anglais": "Circumflex scapular vein",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Veine circonflexe de la scapula",
+   "ta2": "4973"
+  },
+  {
+   "id": "veine-circonflexe-humerale-posterieure",
+   "nom": "Veine circonflexe humérale postérieure",
+   "latin": "Vena circumflexa posterior humeri",
+   "anglais": "Posterior circumflex humeral vein",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Veine circonflexe humérale postérieure",
+   "ta2": "4975"
+  },
+  {
+   "id": "veines-circonflexes-laterales-de-la-cuisse",
+   "nom": "Veines circonflexes latérales de la cuisse",
+   "latin": "Venae circumflexae latérales",
+   "anglais": "Lateral circumflex femoral veins",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Veines circonflexes latérales de la cuisse",
+   "ta2": "5057"
+  },
+  {
+   "id": "veines-circonflexes-mediales-de-la-cuisse",
+   "nom": "Veines circonflexes médiales de la cuisse",
+   "latin": "Venae circumflexae mediales",
+   "anglais": "Medial circumflex femoral veins",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Veines circonflexes médiales de la cuisse",
+   "ta2": "5056"
+  },
+  {
+   "id": "veines-fibulaires",
+   "nom": "Veines fibulaires",
+   "latin": "Venae fibulares",
+   "anglais": "Fibular veins",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Veines fibulaires",
+   "ta2": "5078"
+  },
+  {
+   "id": "reseau-veineux-dorsal-de-la-main",
+   "nom": "Réseau veineux dorsal de la main",
+   "latin": "Rete venosum dorsale manus",
+   "anglais": "Dorsal venous network of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Réseau veineux dorsal de la main",
+   "ta2": "4967"
+  },
+  {
+   "id": "veines-digitales-dorsales-de-la-main",
+   "nom": "Veines digitales dorsales de la main",
+   "latin": "Venae digitales dorsales manus",
+   "anglais": "Dorsal digital veins of hand",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Veines digitales dorsales de la main",
+   "ta2": "4970"
+  },
+  {
+   "id": "veines-digitales-palmaires",
+   "nom": "Veines digitales palmaires",
+   "latin": "Venae digitales palmares",
+   "anglais": "Palmar digital veins",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Veines digitales palmaires",
+   "ta2": "4987"
+  },
+  {
+   "id": "arcade-veineuse-dorsale-du-pied",
+   "nom": "Arcade veineuse dorsale du pied",
+   "latin": "Arcus venosus dorsalis pedis",
+   "anglais": "Dorsal venous arch of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Arcade veineuse dorsale du pied",
+   "ta2": "5088"
+  },
+  {
+   "id": "arcade-veineuse-plantaire",
+   "nom": "Arcade veineuse plantaire",
+   "latin": "Arcus venosus plantaris",
+   "anglais": "Plantar venous arch",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Arcade veineuse plantaire",
+   "ta2": "5082"
+  },
+  {
+   "id": "veines-digitales-dorsales-du-pied",
+   "nom": "Veines digitales dorsales du pied",
+   "latin": "Venae digitales dorsales pedis",
+   "anglais": "Dorsal digital veins of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Veines digitales dorsales du pied",
+   "ta2": "5090"
+  },
+  {
+   "id": "veines-digitales-plantaires",
+   "nom": "Veines digitales plantaires",
+   "latin": "Venae digitales plantares",
+   "anglais": "Plantar digital veins",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Veines digitales plantaires",
+   "ta2": "5084"
+  },
+  {
+   "id": "veines-metatarsiennes-dorsales",
+   "nom": "Veines métatarsiennes dorsales",
+   "latin": "Venae metatarseae dorsales",
+   "anglais": "Dorsal metatarsal veins",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Veines métatarsiennes dorsales",
+   "ta2": "5089"
+  },
+  {
+   "id": "veines-metatarsiennes-plantaires",
+   "nom": "Veines métatarsiennes plantaires",
+   "latin": "Venae metatarseae plantares",
+   "anglais": "Plantar metatarsal veins",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Veines métatarsiennes plantaires",
+   "ta2": "5083"
+  },
+  {
+   "id": "veines-plantaires-laterales",
+   "nom": "Veines plantaires latérales",
+   "latin": "Venae plantares latérales",
+   "anglais": "Lateral plantar veins",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Veines plantaires latérales",
+   "ta2": "5081"
+  },
+  {
+   "id": "veines-plantaires-mediales",
+   "nom": "Veines plantaires médiales",
+   "latin": "Venae plantares mediales",
+   "anglais": "Medial plantar veins",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Veines plantaires médiales",
+   "ta2": "5079"
+  }
+ ]
+}

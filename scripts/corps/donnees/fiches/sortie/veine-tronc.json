@@ -1,0 +1,2599 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral (Internet Archive) : chapitre « The Veins » (veines pulmonaires, cardiaques, thoraciques, abdominales, système porte)",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "openstax-20-5": {
+   "titre": "OpenStax, Anatomy and Physiology 2e, 20.5 Circulatory Pathways",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways"
+  },
+  "kenhub-azygos": {
+   "titre": "Kenhub : Azygos vein",
+   "url": "https://www.kenhub.com/en/library/anatomy/azygos-vein"
+  },
+  "kenhub-porte": {
+   "titre": "Kenhub : Hepatic portal vein",
+   "url": "https://www.kenhub.com/en/library/anatomy/hepatic-portal-vein"
+  },
+  "kenhub-cave-inferieure": {
+   "titre": "Kenhub : Inferior vena cava",
+   "url": "https://www.kenhub.com/en/library/anatomy/inferior-vena-cava"
+  },
+  "kenhub-cave-superieure": {
+   "titre": "Kenhub : Superior vena cava",
+   "url": "https://www.kenhub.com/en/library/anatomy/superior-vena-cava"
+  },
+  "kenhub-pulmonaires": {
+   "titre": "Kenhub : Pulmonary veins",
+   "url": "https://www.kenhub.com/en/library/anatomy/pulmonary-veins"
+  },
+  "kenhub-axillaire": {
+   "titre": "Kenhub : Axillary vein",
+   "url": "https://kenhub.com/en/library/anatomy/axillary-vein"
+  },
+  "kenhub-renale": {
+   "titre": "Kenhub : Renal vein",
+   "url": "https://kenhub.com/en/library/anatomy/renal-vein"
+  },
+  "kenhub-iliaque-interne": {
+   "titre": "Kenhub : Internal iliac vein",
+   "url": "https://kenhub.com/en/library/anatomy/internal-iliac-vein"
+  },
+  "teachmeanatomy-veines-abdomen": {
+   "titre": "TeachMeAnatomy : Venous drainage of the abdomen (système porte, veine cave inférieure)",
+   "url": "https://teachmeanatomy.info/abdomen/vasculature/venous-drainage/"
+  },
+  "teachmeanatomy-coeur": {
+   "titre": "TeachMeAnatomy : Vascularisation du cœur (veines cardiaques)",
+   "url": "https://teachmeanatomy.info/thorax/organs/heart/heart-vasculature/"
+  },
+  "radiopaedia-azygos": {
+   "titre": "Radiopaedia : Azygos vein",
+   "url": "https://radiopaedia.org/articles/azygos-vein"
+  },
+  "radiopaedia-hemiazygos": {
+   "titre": "Radiopaedia : Hemiazygos vein",
+   "url": "https://radiopaedia.org/articles/hemiazygos-vein"
+  },
+  "radiopaedia-porte": {
+   "titre": "Radiopaedia : Portal vein",
+   "url": "https://radiopaedia.org/articles/portal-vein"
+  },
+  "radiopaedia-mesenterique-inferieure": {
+   "titre": "Radiopaedia : Inferior mesenteric vein",
+   "url": "https://radiopaedia.org/articles/inferior-mesenteric-vein"
+  },
+  "radiopaedia-splenique": {
+   "titre": "Radiopaedia : Splenic vein",
+   "url": "https://radiopaedia.org/articles/splenic-vein"
+  },
+  "radiopaedia-sinus-coronaire": {
+   "titre": "Radiopaedia : Coronary sinus",
+   "url": "https://radiopaedia.org/articles/coronary-sinus"
+  },
+  "radiopaedia-iliaque-commune": {
+   "titre": "Radiopaedia : Common iliac vein",
+   "url": "https://radiopaedia.org/articles/common-iliac-vein"
+  },
+  "radiopaedia-hepatiques": {
+   "titre": "Radiopaedia : Hepatic veins",
+   "url": "https://radiopaedia.org/articles/hepatic-veins"
+  },
+  "radiopaedia-veines-pulmonaires": {
+   "titre": "Radiopaedia : Pulmonary veins",
+   "url": "https://radiopaedia.org/articles/pulmonary-veins"
+  },
+  "radiopaedia-paroi-thoracique": {
+   "titre": "Radiopaedia : Venous drainage of the thoracic wall",
+   "url": "https://www.radiopaedia.org/articles/venous-drainage-of-the-thoracic-wall?lang=us"
+  },
+  "elsevier-vp-droite": {
+   "titre": "Elsevier Anatomy : Pulmonary veins of right lung",
+   "url": "https://elsevier.com/resources/anatomy/cardiovascular-system/veins/pulmonary-veins-of-right-lung/21415"
+  },
+  "elsevier-vp-gauche": {
+   "titre": "Elsevier Anatomy : Pulmonary veins of left lung",
+   "url": "https://www.elsevier.com/resources/anatomy/cardiovascular-system/veins/pulmonary-veins-of-left-lung/18367"
+  },
+  "elsevier-vp-inferieure-gauche": {
+   "titre": "Elsevier Anatomy : Left inferior pulmonary vein",
+   "url": "https://www.elsevier.com/resources/anatomy/cardiovascular-system/veins/left-inferior-pulmonary-vein/20251"
+  },
+  "elsevier-basale-commune-gauche": {
+   "titre": "Elsevier Anatomy : Common basal vein of left lung",
+   "url": "https://www.elsevier.com/resources/anatomy/cardiovascular-system/veins/common-basal-vein-of-left-lung/20897"
+  },
+  "elsevier-basale-sup-gauche": {
+   "titre": "Elsevier Anatomy : Superior basal vein of left lung",
+   "url": "https://www.elsevier.com/resources/anatomy/cardiovascular-system/veins/superior-basal-vein-of-left-lung/23277"
+  },
+  "elsevier-basale-inf-gauche": {
+   "titre": "Elsevier Anatomy : Inferior basal vein of left lung",
+   "url": "https://www.elsevier.com/resources/anatomy/cardiovascular-system/veins/inferior-basal-vein-of-left-lung/18691"
+  },
+  "elsevier-basale-sup-droite": {
+   "titre": "Elsevier Anatomy : Superior basal vein of right lung",
+   "url": "https://www.elsevier.com/resources/anatomy/cardiovascular-system/veins/superior-basal-vein-of-right-lung/23947"
+  },
+  "elsevier-basale-inf-droite": {
+   "titre": "Elsevier Anatomy : Inferior basal vein of right lung",
+   "url": "https://www.elsevier.com/resources/anatomy/cardiovascular-system/veins/inferior-basal-vein-of-right-lung/19035"
+  },
+  "elsevier-thoracodorsale": {
+   "titre": "Elsevier Anatomy : Thoracodorsal vein",
+   "url": "https://www.elsevier.com/resources/anatomy/cardiovascular-system/veins/thoracodorsal-vein-left/21756"
+  },
+  "elsevier-subscapulaire": {
+   "titre": "Elsevier Anatomy : Subscapular vein",
+   "url": "https://www.elsevier.com/resources/anatomy/cardiovascular-system/veins/subscapular-vein/20730"
+  },
+  "elsevier-musculophreniques": {
+   "titre": "Elsevier Anatomy : Musculophrenic veins",
+   "url": "https://www.elsevier.com/resources/anatomy/cardiovascular-system/veins/musculophrenic-veins/24093"
+  },
+  "amegroups-pulmonaires": {
+   "titre": "Kandathil A, Chamarthy M. Pulmonary vascular anatomy & anatomical variants. Cardiovasc Diagn Ther 2018;8(3):201-207",
+   "url": "https://cdt.amegroups.org/article/view/19060/html"
+  },
+  "wikipedia-veine-pulmonaire": {
+   "titre": "Wikipedia (en) : Pulmonary vein",
+   "url": "https://en.wikipedia.org/wiki/Pulmonary_vein"
+  },
+  "wikipedia-iliaque-interne": {
+   "titre": "Wikipedia (en) : Internal iliac vein",
+   "url": "https://en.wikipedia.org/wiki/Internal_iliac_vein"
+  },
+  "wikipedia-pudendale-interne": {
+   "titre": "Wikipedia (en) : Internal pudendal vein",
+   "url": "https://en.wikipedia.org/wiki/Internal_pudendal_vein"
+  },
+  "wikipedia-epigastrique-inferieure": {
+   "titre": "Wikipedia (en) : Inferior epigastric vein",
+   "url": "https://en.wikipedia.org/wiki/Inferior_epigastric_vein"
+  },
+  "wikipedia-epigastrique-superieure": {
+   "titre": "Wikipedia (en) : Superior epigastric vein",
+   "url": "https://en.wikipedia.org/wiki/Superior_epigastric_vein"
+  },
+  "wikipedia-iliolombale": {
+   "titre": "Wikipedia (en) : Iliolumbar vein",
+   "url": "https://en.wikipedia.org/wiki/Iliolumbar_vein"
+  },
+  "wikipedia-thoracique-laterale": {
+   "titre": "Wikipedia (en) : Lateral thoracic vein",
+   "url": "https://en.wikipedia.org/wiki/Lateral_thoracic_vein"
+  },
+  "wikipedia-suprascapulaire": {
+   "titre": "Wikipedia (en) : Suprascapular vein",
+   "url": "https://en.wikipedia.org/wiki/Suprascapular_vein"
+  },
+  "wikipedia-thoracique-interne": {
+   "titre": "Wikipedia (en) : Internal thoracic vein",
+   "url": "https://en.wikipedia.org/wiki/Internal_thoracic_vein"
+  },
+  "wikipedia-phrenique-superieure": {
+   "titre": "Wikipedia (en) : Superior phrenic veins",
+   "url": "https://en.wikipedia.org/wiki/Superior_phrenic_veins"
+  },
+  "wikipedia-varicocele": {
+   "titre": "Wikipedia (en) : Varicocele",
+   "url": "https://en.wikipedia.org/wiki/Varicocele"
+  },
+  "wikipedia-may-thurner": {
+   "titre": "Wikipedia (en) : May-Thurner syndrome",
+   "url": "https://en.wikipedia.org/wiki/May%E2%80%93Thurner_syndrome"
+  },
+  "wikipedia-budd-chiari": {
+   "titre": "Wikipedia (en) : Budd-Chiari syndrome",
+   "url": "https://en.wikipedia.org/wiki/Budd%E2%80%93Chiari_syndrome"
+  }
+ },
+ "fiches": [
+  {
+   "id": "veine-colique-droite",
+   "resume": "La veine du côlon droit : elle ramène le sang de l'angle colique droit et du côlon ascendant vers la veine mésentérique supérieure.",
+   "plan": "portale",
+   "origine": {
+    "veine": null,
+    "texte": "Racines issues du côlon ascendant et de l'angle colique droit"
+   },
+   "trajet": "Chemine dans le méso-côlon ascendant, en suivant l'artère colique droite, puis se jette dans la veine mésentérique supérieure",
+   "terminaison": {
+    "veine": "veine-mesenterique-superieure",
+    "texte": "Se jette dans la veine mésentérique supérieure, qui la conduit à la veine porte"
+   },
+   "drainage": {
+    "texte": "Côlon ascendant et angle colique droit",
+    "structures": [
+     "colon-ascendant"
+    ]
+   },
+   "rapports": "Elle accompagne l'artère colique droite, branche de l'artère mésentérique supérieure",
+   "clinique": "Son sang gagne le foie avant la circulation générale : un cancer du côlon droit donne volontiers des métastases hépatiques",
+   "memo": "Colique droite : la veine qui conduit le sang du côlon droit vers la mésentérique supérieure, puis le foie",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-veines-abdomen"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-colique-moyenne",
+   "resume": "La veine du côlon transverse : elle suit le méso-côlon transverse et se jette dans la veine mésentérique supérieure.",
+   "plan": "portale",
+   "origine": {
+    "veine": null,
+    "texte": "Racines issues du côlon transverse"
+   },
+   "trajet": "Chemine dans le méso-côlon transverse avec l'artère colique moyenne, puis se jette dans la veine mésentérique supérieure",
+   "terminaison": {
+    "veine": "veine-mesenterique-superieure",
+    "texte": "Se jette dans la veine mésentérique supérieure, d'où le sang gagne la veine porte"
+   },
+   "drainage": {
+    "texte": "Côlon transverse",
+    "structures": [
+     "colon-transverse"
+    ]
+   },
+   "rapports": "Elle suit l'artère colique moyenne, branche de l'artère mésentérique supérieure",
+   "clinique": "Le sang du côlon transverse passe par la veine porte puis par le foie : un cancer de ce segment donne volontiers des métastases hépatiques",
+   "memo": "Colique moyenne : la veine du côlon du milieu, qui monte vers la mésentérique supérieure",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-veines-abdomen"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-gastro-omentale-droite",
+   "resume": "La veine de la moitié droite de la grande courbure de l'estomac : elle longe la courbure, dans le grand omentum, et se jette dans la veine mésentérique supérieure.",
+   "plan": "portale",
+   "origine": {
+    "veine": null,
+    "texte": "Grande courbure de l'estomac et grand omentum, par des rameaux des deux faces de l'estomac"
+   },
+   "trajet": "Court de gauche à droite le long de la grande courbure, entre les deux feuillets du grand omentum, puis rejoint la veine mésentérique supérieure",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veine pancréatico-duodénale inférieure, qui s'y jette souvent"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-mesenterique-superieure",
+    "texte": "Se jette dans la veine mésentérique supérieure, qui conduit au foie par la veine porte"
+   },
+   "drainage": {
+    "texte": "Partie droite de la grande courbure de l'estomac et grand omentum",
+    "structures": [
+     "estomac",
+     "grand-omentum"
+    ]
+   },
+   "rapports": "Elle accompagne l'artère gastro-omentale droite",
+   "clinique": "Son sang rejoint le foie par la veine porte : un cancer de l'estomac donne volontiers des métastases hépatiques",
+   "memo": "Gastro-omentale droite : à droite elle descend vers la mésentérique supérieure, sa jumelle de gauche monte vers la splénique",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-veines-abdomen"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-lombaire-ascendante-droite",
+   "resume": "La veine qui relie en hauteur les veines lombaires droites et se prolonge dans le thorax pour former, avec la subcostale, l'azygos.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Commence en bas près de la veine iliaque commune et de la veine iliolombale droites, avec lesquelles elle communique"
+   },
+   "trajet": "Monte devant les processus transverses des vertèbres lombaires en reliant les veines lombaires, puis s'unit à la veine subcostale droite ; leur tronc commun forme l'azygos ou le rejoint devant la douzième vertèbre thoracique",
+   "terminaison": {
+    "veine": "veine-azygos",
+    "texte": "Se continue avec la veine azygos après avoir rejoint la veine subcostale droite"
+   },
+   "drainage": {
+    "texte": "Muscles du dos et de la loge lombaire droite, plexus veineux vertébral",
+    "structures": [
+     "carre-lombes"
+    ]
+   },
+   "clinique": "Chemin de suppléance quand la veine cave inférieure est obstruée : le sang des jambes remonte par les lombaires et l'azygos vers la veine cave supérieure",
+   "memo": "L'ascendante droite monte les lombaires comme un escalier et devient azygos",
+   "variantes": "Le segment lombaire de l'azygos peut manquer : le tronc commun de l'ascendante droite et de la subcostale forme alors l'azygos",
+   "sources": [
+    "gray1918",
+    "kenhub-azygos",
+    "radiopaedia-azygos"
+   ],
+   "divergences": "Gray fait naître l'azygos de la lombaire ascendante vers L1-L2 ; Kenhub situe leur jonction devant T12 ; Radiopaedia entre T12 et L2"
+  },
+  {
+   "id": "veine-lombaire-ascendante-gauche",
+   "resume": "La veine qui relie en hauteur les veines lombaires gauches et donne, avec la subcostale gauche, l'hémi-azygos.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Commence en bas près de la veine iliaque commune et de la veine iliolombale gauches, avec lesquelles elle communique"
+   },
+   "trajet": "Monte devant les processus transverses lombaires gauches en reliant les veines lombaires, puis s'unit à la veine subcostale gauche ; leur tronc commun forme l'hémi-azygos",
+   "terminaison": {
+    "veine": "veine-hemi-azygos",
+    "texte": "Se continue avec la veine hémi-azygos après avoir rejoint la veine subcostale gauche"
+   },
+   "drainage": {
+    "texte": "Muscles du dos et de la loge lombaire gauche, plexus veineux vertébral",
+    "structures": [
+     "carre-lombes"
+    ]
+   },
+   "clinique": "Comme la droite, elle supplée la veine cave inférieure obstruée en dérivant le sang vers l'hémi-azygos puis l'azygos",
+   "memo": "À gauche, l'ascendante lombaire devient hémi-azygos ; à droite, azygos",
+   "variantes": "L'hémi-azygos peut naître de la veine rénale gauche plutôt que de la veine lombaire ascendante gauche",
+   "sources": [
+    "gray1918",
+    "kenhub-azygos",
+    "radiopaedia-hemiazygos"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-mesenterique-superieure",
+   "resume": "La veine de l'intestin grêle et du côlon droit : elle rejoint la splénique derrière le pancréas pour former la veine porte.",
+   "plan": "portale",
+   "origine": {
+    "veine": null,
+    "texte": "Fosse iliaque droite, par la réunion des veines de l'iléon terminal, du cæcum et de l'appendice"
+   },
+   "trajet": "Monte dans la racine du mésentère, à droite de l'artère mésentérique supérieure, en avant de la partie inférieure du duodénum et de la tête du pancréas, puis rejoint la veine splénique derrière le col du pancréas",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines jéjunales et iléales"
+    },
+    {
+     "veine": null,
+     "texte": "Veine iléo-colique"
+    },
+    {
+     "veine": "veine-colique-droite",
+     "texte": "Veine colique droite"
+    },
+    {
+     "veine": "veine-colique-moyenne",
+     "texte": "Veine colique moyenne"
+    },
+    {
+     "veine": null,
+     "texte": "Veines pancréatico-duodénales"
+    },
+    {
+     "veine": "veine-gastro-omentale-droite",
+     "texte": "Veine gastro-omentale droite"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-porte-du-foie",
+    "texte": "S'unit à la veine splénique derrière le col du pancréas pour former la veine porte du foie"
+   },
+   "drainage": {
+    "texte": "Intestin grêle, cæcum, appendice, côlon ascendant et transverse, partie du pancréas",
+    "structures": [
+     "jejunum",
+     "colon-ascendant",
+     "colon-transverse",
+     "appendice-vermiforme",
+     "pancreas"
+    ]
+   },
+   "rapports": "À droite de l'artère mésentérique supérieure, en avant de l'uretère droit, de la veine cave inférieure et du duodénum inférieur",
+   "clinique": "Sa thrombose bloque le retour veineux de l'intestin et peut provoquer un infarctus veineux ; elle est l'une des deux racines de la veine porte",
+   "memo": "À droite de son artère, elle monte du bas-ventre et s'unit à la splénique pour faire la porte",
+   "variantes": "La veine mésentérique inférieure s'y jette dans environ 40 % des cas, au lieu de la splénique",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-veines-abdomen",
+    "openstax-20-5"
+   ],
+   "divergences": "OpenStax lui attribue aussi une partie de l'estomac ; Gray et TeachMeAnatomy ne retiennent que la veine gastro-omentale droite"
+  },
+  {
+   "id": "veine-phrenique-superieure-droite",
+   "resume": "La petite veine de la face supérieure du diaphragme à droite : elle rejoint l'azygos.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Face supérieure du diaphragme, à droite"
+   },
+   "trajet": "Longe la face thoracique du diaphragme à droite, avec l'artère péricardo-phrénique, puis gagne l'azygos",
+   "terminaison": {
+    "veine": "veine-azygos",
+    "texte": "Se jette dans la veine azygos"
+   },
+   "drainage": {
+    "texte": "Face supérieure du diaphragme à droite",
+    "structures": [
+     "diaphragme"
+    ]
+   },
+   "clinique": "Veine sans pathologie propre ; avec la gauche vers l'hémi-azygos, elle relie le diaphragme au système azygos, voie de suppléance de la cave inférieure",
+   "memo": "Phrénique supérieure droite : le diaphragme envoie son sang à l'azygos",
+   "variantes": null,
+   "sources": [
+    "radiopaedia-azygos",
+    "wikipedia-phrenique-superieure",
+    "gray1918"
+   ],
+   "divergences": "Gray décrit la veine phrénique supérieure comme s'ouvrant d'ordinaire dans la veine thoracique interne ; Radiopaedia et Wikipedia la font aboutir à l'azygos à droite"
+  },
+  {
+   "id": "veine-splenique",
+   "resume": "La veine de la rate et du pancréas : elle passe derrière le pancréas et s'unit à la mésentérique supérieure pour former la porte.",
+   "plan": "portale",
+   "origine": {
+    "veine": null,
+    "texte": "Hile de la rate, par la réunion de cinq ou six branches issues de la rate"
+   },
+   "trajet": "Court de gauche à droite derrière le corps du pancréas, sous l'artère splénique, et rejoint la veine mésentérique supérieure derrière le col du pancréas",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines gastriques courtes"
+    },
+    {
+     "veine": "veine-gastro-omentale-gauche",
+     "texte": "Veine gastro-omentale gauche"
+    },
+    {
+     "veine": null,
+     "texte": "Veines pancréatiques"
+    },
+    {
+     "veine": "veine-mesenterique-inferieure",
+     "texte": "Veine mésentérique inférieure (le plus souvent)"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-porte-du-foie",
+    "texte": "S'unit à la veine mésentérique supérieure derrière le col du pancréas pour former la veine porte du foie"
+   },
+   "drainage": {
+    "texte": "Rate, corps et queue du pancréas, fundus et grande courbure de l'estomac",
+    "structures": [
+     "rate",
+     "pancreas",
+     "estomac"
+    ]
+   },
+   "rapports": "Sous l'artère splénique et derrière le pancréas, devant le rein gauche, l'aorte et la veine rénale gauche",
+   "clinique": "Sa thrombose (pancréatite, tumeur du pancréas) isole le drainage de la rate et de l'estomac : hypertension portale segmentaire avec varices gastriques",
+   "memo": "Splénique : elle ramène la rate, longe le pancréas par-derrière et fait la porte avec la mésentérique",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-splenique",
+    "teachmeanatomy-veines-abdomen"
+   ],
+   "divergences": "La mésentérique inférieure s'y jette le plus souvent selon Gray ; Radiopaedia chiffre environ 40 % dans la splénique, 40 % dans la mésentérique supérieure et 20 % dans le confluent"
+  },
+  {
+   "id": "veine-subcostale-droite",
+   "resume": "La veine du douzième espace intercostal droit : elle longe la douzième côte et se jette dans l'azygos.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Paroi postérieure de l'abdomen, sous la douzième côte, avec l'artère et le nerf subcostaux"
+   },
+   "trajet": "Longe le bord inférieur de la douzième côte, puis s'unit à la veine lombaire ascendante droite : leur tronc commun forme l'azygos ou le rejoint devant la douzième vertèbre thoracique",
+   "terminaison": {
+    "veine": "veine-azygos",
+    "texte": "Se jette dans la veine azygos"
+   },
+   "drainage": {
+    "texte": "Paroi postérieure de l'abdomen et muscles voisins de la douzième côte",
+    "structures": [
+     "douzieme-cote",
+     "carre-lombes"
+    ]
+   },
+   "clinique": "Elle relie l'abdomen au système azygos : en cas d'obstruction de la veine cave inférieure, elle participe à la circulation collatérale",
+   "memo": "Subcostale : la veine sous la douzième côte ; à droite, elle va dans l'azygos",
+   "variantes": "Son tronc commun avec la veine lombaire ascendante droite peut constituer lui-même l'azygos quand le segment lombaire manque",
+   "sources": [
+    "gray1918",
+    "radiopaedia-paroi-thoracique",
+    "kenhub-azygos"
+   ],
+   "divergences": "Kenhub place leur jonction devant T12 ; Radiopaedia situe la naissance de l'azygos entre T12 et L2"
+  },
+  {
+   "id": "veine-subcostale-gauche",
+   "resume": "La veine du douzième espace intercostal gauche : elle longe la douzième côte et se jette dans l'hémi-azygos.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Paroi postérieure de l'abdomen, sous la douzième côte, avec l'artère et le nerf subcostaux"
+   },
+   "trajet": "Longe le bord inférieur de la douzième côte, puis s'unit à la veine lombaire ascendante gauche : leur tronc commun forme l'hémi-azygos, qui entre dans le thorax par le pilier gauche du diaphragme",
+   "terminaison": {
+    "veine": "veine-hemi-azygos",
+    "texte": "Se jette dans la veine hémi-azygos"
+   },
+   "drainage": {
+    "texte": "Paroi postérieure de l'abdomen et muscles voisins de la douzième côte",
+    "structures": [
+     "douzieme-cote",
+     "carre-lombes"
+    ]
+   },
+   "clinique": "Elle relie l'abdomen au système azygos : en cas d'obstruction de la veine cave inférieure, elle participe à la circulation collatérale",
+   "memo": "Subcostale : la veine sous la douzième côte ; à gauche, elle va dans l'hémi-azygos",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-hemiazygos",
+    "radiopaedia-paroi-thoracique"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-thoracique-laterale",
+   "resume": "La veine du côté du thorax : elle draine le grand pectoral et le dentelé antérieur, et se jette dans la veine axillaire.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Parois latérales du thorax, par les veines du dentelé antérieur et du grand pectoral"
+   },
+   "trajet": "Descend sur la paroi latérale du thorax avec l'artère thoracique latérale, puis rejoint la veine axillaire",
+   "terminaison": {
+    "veine": "veine-axillaire",
+    "texte": "Se jette dans la veine axillaire"
+   },
+   "drainage": {
+    "texte": "Dentelé antérieur et grand pectoral",
+    "structures": [
+     "dentele-anterieur",
+     "grand-pectoral"
+    ]
+   },
+   "rapports": "Elle accompagne l'artère thoracique latérale",
+   "clinique": "Par la veine thoraco-épigastrique, elle communique avec la veine épigastrique superficielle : voie de suppléance entre les territoires des deux veines caves",
+   "memo": "Thoracique latérale : la veine du flanc du thorax, qui monte à l'aisselle",
+   "variantes": null,
+   "sources": [
+    "wikipedia-thoracique-laterale",
+    "kenhub-axillaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-lombaires",
+   "resume": "Les quatre paires de veines des lombes : elles drainent le dos et la paroi de l'abdomen et se jettent surtout dans la veine cave inférieure.",
+   "plan": "groupe",
+   "origine": {
+    "veine": null,
+    "texte": "Muscles du dos et des lombes, peau et paroi de l'abdomen, en communication avec les veines épigastriques et les plexus vertébraux"
+   },
+   "trajet": "Contournent le corps des vertèbres sous le grand psoas ; les veines gauches, plus longues, passent derrière l'aorte ; toutes sont reliées entre elles en hauteur par la veine lombaire ascendante",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines du plexus vertébral et de la paroi abdominale"
+    },
+    {
+     "veine": "veine-lombaire-ascendante-droite",
+     "texte": "Veine lombaire ascendante droite (communication)"
+    },
+    {
+     "veine": "veine-lombaire-ascendante-gauche",
+     "texte": "Veine lombaire ascendante gauche (communication)"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-cave-inferieure",
+    "texte": "Se jettent à la face postérieure de la veine cave inférieure ; par l'ascendante lombaire, une partie du sang gagne l'azygos ou l'hémi-azygos"
+   },
+   "drainage": {
+    "texte": "Muscles du dos et des lombes, peau, paroi abdominale, plexus veineux vertébral",
+    "structures": [
+     "carre-lombes"
+    ]
+   },
+   "clinique": "Par la lombaire ascendante et l'azygos, elles forment une voie de suppléance vers la veine cave supérieure quand la veine cave inférieure est obstruée",
+   "memo": "Les lombaires vont à la cave ; l'ascendante lombaire les relie en hauteur et les envoie vers l'azygos",
+   "variantes": "Le nombre de veines varie ; Gray en compte quatre de chaque côté",
+   "sources": [
+    "gray1918",
+    "openstax-20-5",
+    "kenhub-azygos"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-sigmoide",
+   "resume": "Les veines du côlon sigmoïde : elles se rassemblent et se jettent dans la veine mésentérique inférieure.",
+   "plan": "portale",
+   "origine": {
+    "veine": null,
+    "texte": "Racines issues du côlon sigmoïde"
+   },
+   "trajet": "Cheminent dans le méso-sigmoïde avec les artères sigmoïdiennes, puis rejoignent la veine mésentérique inférieure",
+   "terminaison": {
+    "veine": "veine-mesenterique-inferieure",
+    "texte": "Se jettent dans la veine mésentérique inférieure, qui conduit à la veine splénique puis à la veine porte"
+   },
+   "drainage": {
+    "texte": "Côlon sigmoïde",
+    "structures": [
+     "colon-sigmoide"
+    ]
+   },
+   "clinique": "Leur sang gagne le foie par la porte ; plus bas, la mésentérique inférieure communique avec les veines rectales : anastomose porto-cave en cas d'hypertension portale",
+   "memo": "Sigmoïdes : la veine du côlon en S, première étape vers la mésentérique inférieure",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-mesenterique-inferieure",
+    "teachmeanatomy-veines-abdomen"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-gluteales-inferieures",
+   "resume": "Les veines de la fesse sous le piriforme : elles rassemblent le sang des muscles de la fesse et rejoignent la veine iliaque interne.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Muscles de la fesse et de la partie haute de la face postérieure de la cuisse"
+   },
+   "trajet": "Accompagnent l'artère glutéale inférieure, entrent dans le bassin par la partie basse du grand foramen ischiatique, sous le piriforme, et forment un tronc unique",
+   "terminaison": {
+    "veine": "veine-iliaque-interne",
+    "texte": "Se jettent dans la veine iliaque interne"
+   },
+   "drainage": {
+    "texte": "Grand fessier et muscles voisins de la fesse",
+    "structures": [
+     "grand-fessier"
+    ]
+   },
+   "rapports": "Elles sortent du bassin sous le muscle piriforme",
+   "clinique": "Elles font partie des tributaires de la veine iliaque interne qui deviennent la voie de retour du membre inférieur quand la veine iliaque externe est obstruée",
+   "memo": "Inférieure : sous le piriforme, comme son artère",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-iliaque-interne",
+    "kenhub-iliaque-interne"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-gluteales-superieures",
+   "resume": "Les veines de la fesse au-dessus du piriforme : elles drainent les muscles fessiers et rejoignent la veine iliaque interne.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Muscles fessiers"
+   },
+   "trajet": "Accompagnent l'artère glutéale supérieure, entrent dans le bassin par le grand foramen ischiatique, au-dessus du piriforme, souvent par deux veines qui s'unissent",
+   "terminaison": {
+    "veine": "veine-iliaque-interne",
+    "texte": "Se jettent dans la veine iliaque interne"
+   },
+   "drainage": {
+    "texte": "Grand, moyen et petit fessiers",
+    "structures": [
+     "grand-fessier",
+     "moyen-fessier",
+     "petit-fessier"
+    ]
+   },
+   "rapports": "Elles sortent du bassin au-dessus du muscle piriforme",
+   "clinique": "Elles font partie des tributaires de la veine iliaque interne qui deviennent la voie de retour du membre inférieur quand la veine iliaque externe est obstruée",
+   "memo": "Supérieure : au-dessus du piriforme, comme son artère",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-iliaque-interne",
+    "kenhub-iliaque-interne"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "grande-veine-cardiaque",
+   "resume": "La plus grande veine du cœur : elle monte du sommet dans le sillon antérieur, contourne le cœur à gauche et s'élargit en sinus coronaire.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Sommet (apex) du cœur"
+   },
+   "trajet": "Monte dans le sillon interventriculaire antérieur, puis s'incurve vers la gauche dans le sillon atrio-ventriculaire jusqu'à la face postérieure, où elle s'élargit en sinus coronaire",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veine marginale gauche"
+    },
+    {
+     "veine": "veine-inferieure-du-ventricule-gauche",
+     "texte": "Veine postérieure du ventricule gauche (parfois)"
+    }
+   ],
+   "terminaison": {
+    "veine": "sinus-coronaire",
+    "texte": "Se continue avec le sinus coronaire, à l'extrémité gauche de celui-ci"
+   },
+   "drainage": {
+    "texte": "Face antérieure du cœur : ventricule gauche et cloison interventriculaire antérieure",
+    "structures": [
+     "ventricule-gauche"
+    ]
+   },
+   "clinique": "Premier segment de la voie coronaire veineuse : le sinus coronaire et ses branches servent à placer la sonde gauche des stimulateurs de resynchronisation",
+   "memo": "La grande veine cardiaque : elle part de la pointe et grandit jusqu'à devenir le sinus coronaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-coeur",
+    "radiopaedia-sinus-coronaire"
+   ],
+   "divergences": "Gray la fait finir à l'extrémité gauche du sinus coronaire ; TeachMeAnatomy dit qu'elle s'élargit peu à peu pour le former"
+  },
+  {
+   "id": "veine-apicale-du-poumon-droit",
+   "resume": "La veine du sommet du lobe supérieur droit : elle s'unit aux veines antérieure et postérieure pour former la veine pulmonaire supérieure droite.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Capillaires du segment apical du lobe supérieur droit"
+   },
+   "trajet": "Court dans les cloisons situées entre les segments, et non le long des bronches, puis converge vers le hile du poumon droit, avec les veines antérieure et postérieure du même lobe",
+   "terminaison": {
+    "veine": null,
+    "texte": "Forme la veine pulmonaire supérieure droite avec les veines antérieure, postérieure et du lobe moyen ; celle-ci s'ouvre dans l'atrium gauche",
+    "viscere": "atrium-gauche"
+   },
+   "drainage": {
+    "texte": "Segment apical du lobe supérieur droit et territoires voisins",
+    "structures": [
+     "lobe-superieur-du-poumon-droit"
+    ]
+   },
+   "clinique": "Les veines segmentaires cheminent entre les segments : le chirurgien les suit pour séparer un segment lors d'une segmentectomie",
+   "memo": "Apicale : la veine du sommet, la première des trois qui font la supérieure droite",
+   "variantes": "Une veine « top » supplémentaire, qui draine surtout le segment postérieur du lobe supérieur, existe chez certaines personnes",
+   "sources": [
+    "elsevier-vp-droite",
+    "gray1918",
+    "radiopaedia-veines-pulmonaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-apicoposterieure-du-poumon-gauche",
+   "resume": "La veine du sommet et de l'arrière du lobe supérieur gauche : avec l'antérieure et la lingulaire, elle forme la veine pulmonaire supérieure gauche.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Capillaires des segments apical et postérieur du lobe supérieur gauche, qui n'en font qu'un à gauche"
+   },
+   "trajet": "Court dans les cloisons situées entre les segments, et non le long des bronches, puis converge vers le hile du poumon gauche, avec les veines antérieure et lingulaire",
+   "terminaison": {
+    "veine": "veine-pulmonaire-superieure-gauche",
+    "texte": "Rejoint les veines antérieure et lingulaire pour former la veine pulmonaire supérieure gauche"
+   },
+   "drainage": {
+    "texte": "Segment apicopostérieur du lobe supérieur gauche et territoires voisins",
+    "structures": [
+     "lobe-superieur-du-poumon-gauche"
+    ]
+   },
+   "clinique": "Les veines segmentaires cheminent entre les segments : le chirurgien les suit pour séparer un segment lors d'une segmentectomie",
+   "memo": "Apicopostérieure : à gauche, sommet et arrière ne font qu'un, comme la bronche qui les dessert",
+   "variantes": null,
+   "sources": [
+    "elsevier-vp-gauche",
+    "gray1918",
+    "radiopaedia-veines-pulmonaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-azygos",
+   "resume": "La grande veine du côté droit du rachis : elle collecte les veines de la paroi du thorax et se jette dans la veine cave supérieure.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Union des veines lombaire ascendante et subcostale droites vers T12-L2 ; parfois branche de la veine cave inférieure ou de la veine rénale droite"
+   },
+   "trajet": "Entre dans le thorax par l'hiatus aortique, monte à droite du rachis dans le médiastin postérieur jusqu'à T4, puis s'arque au-dessus de la racine du poumon droit pour atteindre la veine cave supérieure",
+   "affluents": [
+    {
+     "veine": "veine-lombaire-ascendante-droite",
+     "texte": "Veine lombaire ascendante droite, avec la subcostale droite"
+    },
+    {
+     "veine": "veine-subcostale-droite",
+     "texte": "Veine subcostale droite"
+    },
+    {
+     "veine": null,
+     "texte": "Veines intercostales postérieures droites (4e à 11e espaces)"
+    },
+    {
+     "veine": "veine-hemi-azygos",
+     "texte": "Veine hémi-azygos"
+    },
+    {
+     "veine": "veine-hemi-azygos-accessoire",
+     "texte": "Veine hémi-azygos accessoire"
+    },
+    {
+     "veine": "veine-intercostale-superieure-droite",
+     "texte": "Veine intercostale supérieure droite"
+    },
+    {
+     "veine": "veine-phrenique-superieure-droite",
+     "texte": "Veine phrénique supérieure droite"
+    },
+    {
+     "veine": null,
+     "texte": "Veines œsophagiennes, médiastinales, péricardiques et bronchique droite"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-cave-superieure",
+    "texte": "Se jette dans la veine cave supérieure, juste avant qu'elle ne perce le péricarde"
+   },
+   "drainage": {
+    "texte": "Paroi postérieure du thorax et de l'abdomen à droite, œsophage, bronches, médiastin",
+    "structures": [
+     "oesophage"
+    ]
+   },
+   "rapports": "Elle ne possède que quelques valves incomplètes",
+   "clinique": "Si la veine cave inférieure est obstruée, l'azygos se dilate et ramène le sang des jambes vers la veine cave supérieure ; sa rupture à la crosse, lors d'un traumatisme fermé du thorax, donne un hémothorax",
+   "memo": "Azygos, la « sans paire » : seule du côté droit, elle monte contre le rachis et franchit la racine du poumon droit en crosse",
+   "variantes": "Continuation azygos de la veine cave inférieure (segment hépatique absent), chez environ 0,3 % des personnes, associée à des cardiopathies ou à un syndrome d'asplénie",
+   "sources": [
+    "gray1918",
+    "kenhub-azygos",
+    "radiopaedia-azygos",
+    "openstax-20-5"
+   ],
+   "divergences": "La crosse est située à T4 selon Gray et Kenhub, à T5-T6 selon Radiopaedia ; OpenStax place son abouchement vers T2. Son origine varie (lombaire ascendante, cave inférieure, rénale droite)"
+  },
+  {
+   "id": "veine-basale-inferieure-du-poumon-droit",
+   "resume": "La veine de la base postérieure et latérale du lobe inférieur droit : avec la basale supérieure, elle forme la veine basale commune.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Capillaires des segments basaux postérieur et latéral du lobe inférieur droit"
+   },
+   "trajet": "Court dans les cloisons situées entre les segments, et non le long des bronches, puis converge vers le hile du poumon droit, et s'unit à la veine basale supérieure pour former la veine basale commune",
+   "terminaison": {
+    "veine": null,
+    "texte": "Forme la veine basale commune avec la basale supérieure ; celle-ci rejoint la veine du segment supérieur pour former la veine pulmonaire inférieure droite, qui s'ouvre dans l'atrium gauche",
+    "viscere": "atrium-gauche"
+   },
+   "drainage": {
+    "texte": "Segments basaux postérieur et latéral du lobe inférieur droit",
+    "structures": [
+     "lobe-inferieur-du-poumon-droit"
+    ]
+   },
+   "clinique": "Le sang des bases pulmonaires revient par les veines inférieures : le diamètre des veines pulmonaires augmente vers le bas, ce que l'on voit sur la radiographie du thorax",
+   "memo": "Basale inférieure : le bas de la base, derrière et sur le côté",
+   "variantes": null,
+   "sources": [
+    "elsevier-basale-inf-droite",
+    "elsevier-vp-droite",
+    "radiopaedia-veines-pulmonaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-basale-inferieure-du-poumon-gauche",
+   "resume": "La veine de la base postérieure et latérale du lobe inférieur gauche : avec la basale supérieure, elle forme la veine basale commune.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Capillaires des segments basaux postérieur et latéral du lobe inférieur gauche"
+   },
+   "trajet": "Court dans les cloisons situées entre les segments, et non le long des bronches, puis converge vers le hile du poumon gauche, puis s'unit à la veine basale supérieure pour former la veine basale commune",
+   "terminaison": {
+    "veine": "veine-pulmonaire-inferieure-gauche",
+    "texte": "Forme la veine basale commune avec la basale supérieure ; celle-ci s'unit à la veine du segment supérieur pour former la veine pulmonaire inférieure gauche"
+   },
+   "drainage": {
+    "texte": "Segments basaux postérieur et latéral du lobe inférieur gauche",
+    "structures": [
+     "lobe-inferieur-du-poumon-gauche"
+    ]
+   },
+   "clinique": "Le sang des bases pulmonaires revient par la veine inférieure : le calibre des veines pulmonaires augmente vers le bas sur la radiographie du thorax",
+   "memo": "Basale inférieure gauche : le bas de la base, derrière et sur le côté",
+   "variantes": null,
+   "sources": [
+    "elsevier-basale-inf-gauche",
+    "elsevier-basale-commune-gauche",
+    "radiopaedia-veines-pulmonaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-basale-superieure-du-poumon-droit",
+   "resume": "La veine de la base médiale du lobe inférieur droit : avec la basale inférieure, elle forme la veine basale commune.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Capillaires de la base du lobe inférieur droit, surtout le segment basal médial"
+   },
+   "trajet": "Court dans les cloisons situées entre les segments, et non le long des bronches, puis converge vers le hile du poumon droit, et s'unit à la veine basale inférieure pour former la veine basale commune",
+   "terminaison": {
+    "veine": null,
+    "texte": "Forme la veine basale commune avec la basale inférieure ; celle-ci rejoint la veine du segment supérieur pour former la veine pulmonaire inférieure droite, qui s'ouvre dans l'atrium gauche",
+    "viscere": "atrium-gauche"
+   },
+   "drainage": {
+    "texte": "Base du lobe inférieur droit, surtout segment basal médial",
+    "structures": [
+     "lobe-inferieur-du-poumon-droit"
+    ]
+   },
+   "clinique": "Les ostiums des veines pulmonaires inférieures sont plus postéro-médiaux que ceux des supérieures : un repère du scanner avant un acte sur l'atrium gauche",
+   "memo": "Basale supérieure : la moitié haute de la base, qui rejoint la basale inférieure",
+   "variantes": null,
+   "sources": [
+    "elsevier-basale-sup-droite",
+    "elsevier-vp-droite",
+    "radiopaedia-veines-pulmonaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-basale-superieure-du-poumon-gauche",
+   "resume": "La veine de la base antéro-médiale du lobe inférieur gauche : avec la basale inférieure, elle forme la veine basale commune.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Capillaires des segments basaux antérieur et médial du lobe inférieur gauche"
+   },
+   "trajet": "Court dans les cloisons situées entre les segments, et non le long des bronches, puis converge vers le hile du poumon gauche, puis s'unit à la veine basale inférieure pour former la veine basale commune",
+   "terminaison": {
+    "veine": "veine-pulmonaire-inferieure-gauche",
+    "texte": "Forme la veine basale commune avec la basale inférieure ; celle-ci s'unit à la veine du segment supérieur pour former la veine pulmonaire inférieure gauche"
+   },
+   "drainage": {
+    "texte": "Segments basaux antérieur et médial du lobe inférieur gauche",
+    "structures": [
+     "lobe-inferieur-du-poumon-gauche"
+    ]
+   },
+   "clinique": "Les ostiums des veines pulmonaires inférieures sont plus postéro-médiaux que ceux des supérieures : un repère du scanner avant un acte sur l'atrium gauche",
+   "memo": "Basale supérieure gauche : le haut de la base, devant et contre le cœur",
+   "variantes": null,
+   "sources": [
+    "elsevier-basale-sup-gauche",
+    "elsevier-basale-commune-gauche",
+    "radiopaedia-veines-pulmonaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-cardiaque-moyenne",
+   "resume": "La veine du sillon interventriculaire postérieur : elle monte du sommet du cœur vers le sinus coronaire.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Sommet (apex) du cœur"
+   },
+   "trajet": "Monte dans le sillon interventriculaire postérieur, avec l'artère interventriculaire postérieure, et se jette dans le sinus coronaire près de son extrémité droite",
+   "terminaison": {
+    "veine": "sinus-coronaire",
+    "texte": "Se jette dans le sinus coronaire, près de son extrémité droite"
+   },
+   "drainage": {
+    "texte": "Face inférieure des ventricules et partie postérieure de la cloison interventriculaire",
+    "structures": [
+     "ventricule-gauche",
+     "ventricule-droit"
+    ]
+   },
+   "rapports": "Dans le sillon interventriculaire postérieur, elle est la veine jumelle de l'artère interventriculaire postérieure",
+   "clinique": "Le sinus coronaire et ses branches sont cathétérisés pour la stimulation biventriculaire et pour certaines ablations d'arythmies",
+   "memo": "Cardiaque moyenne : celle du sillon du milieu, derrière, qui remonte du bas du cœur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-coeur",
+    "radiopaedia-sinus-coronaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-hemi-azygos-accessoire",
+   "resume": "Le prolongement supérieur de l'hémi-azygos : elle collecte les intercostales gauches moyennes et traverse le rachis pour rejoindre l'azygos.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Veines des 4e à 7e espaces intercostaux gauches (parfois 8e), parfois la veine bronchique gauche"
+   },
+   "trajet": "Descend sur le flanc gauche du rachis, croise la ligne médiane devant les vertèbres T7-T8 et rejoint l'azygos ; elle peut aussi s'ouvrir d'abord dans l'hémi-azygos",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines intercostales gauches des 4e à 7e espaces"
+    },
+    {
+     "veine": null,
+     "texte": "Veine bronchique gauche (parfois)"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-azygos",
+    "texte": "Se jette dans la veine azygos, ou dans l'hémi-azygos dont le tronc rejoint ensuite l'azygos"
+   },
+   "drainage": {
+    "texte": "Paroi postérieure du thorax à gauche, espaces intercostaux moyens",
+    "structures": []
+   },
+   "clinique": "Elle relie le thorax gauche au système azygos ; sa taille varie en sens inverse de celle de la veine intercostale supérieure gauche",
+   "memo": "L'accessoire prend les intercostales gauches du milieu et passe à droite pour entrer dans l'azygos",
+   "variantes": "Sa taille varie : elle est d'autant plus grosse que la veine intercostale supérieure gauche est petite",
+   "sources": [
+    "gray1918",
+    "kenhub-azygos",
+    "radiopaedia-paroi-thoracique"
+   ],
+   "divergences": "Elle croise le rachis à T7 selon Kenhub et à T8 selon Gray ; le nombre d'espaces drainés varie de trois à cinq selon les auteurs"
+  },
+  {
+   "id": "veine-inferieure-du-ventricule-gauche",
+   "resume": "La veine de la face inférieure du ventricule gauche : elle rejoint le sinus coronaire, parfois la grande veine cardiaque.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Face inférieure (diaphragmatique) du ventricule gauche"
+   },
+   "trajet": "Court sur la face inférieure du ventricule gauche, à gauche de la veine cardiaque moyenne, puis se jette dans le sinus coronaire",
+   "terminaison": {
+    "veine": "sinus-coronaire",
+    "texte": "Se jette dans le sinus coronaire, plus rarement dans la grande veine cardiaque"
+   },
+   "drainage": {
+    "texte": "Face inférieure du ventricule gauche",
+    "structures": [
+     "ventricule-gauche"
+    ]
+   },
+   "rapports": "À gauche de la veine cardiaque moyenne, sur la face postérieure du ventricule gauche",
+   "clinique": "Le sinus coronaire et ses branches du ventricule gauche sont la voie de pose de la sonde gauche des stimulateurs de resynchronisation",
+   "memo": "Veine postérieure du ventricule gauche : elle vide le dessous du cœur gauche dans le sinus",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-coeur",
+    "radiopaedia-sinus-coronaire"
+   ],
+   "divergences": "Gray signale qu'elle peut s'ouvrir dans la grande veine cardiaque ; TeachMeAnatomy la décrit comme aboutissant au sinus coronaire"
+  },
+  {
+   "id": "veine-veine-inferieure-du-ventricule-gauche",
+   "resume": "Doublon de l'atlas pour la veine inférieure du ventricule gauche, dite aussi veine postérieure : elle draine la face diaphragmatique du ventricule gauche.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Face diaphragmatique du ventricule gauche"
+   },
+   "trajet": "Descend sur la face diaphragmatique du ventricule gauche, à gauche de la veine cardiaque moyenne, et rejoint le sinus coronaire",
+   "terminaison": {
+    "veine": "sinus-coronaire",
+    "texte": "Se jette dans le sinus coronaire, plus rarement dans la grande veine cardiaque"
+   },
+   "drainage": {
+    "texte": "Face diaphragmatique du ventricule gauche",
+    "structures": [
+     "ventricule-gauche"
+    ]
+   },
+   "clinique": "Comme les autres branches du sinus coronaire, elle peut servir à loger la sonde gauche d'un stimulateur de resynchronisation",
+   "memo": "Postérieure ou inférieure, c'est la même veine : celle du dessous du ventricule gauche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-coeur",
+    "radiopaedia-sinus-coronaire"
+   ],
+   "divergences": "Gray signale qu'elle peut s'ouvrir dans la grande veine cardiaque ; TeachMeAnatomy la décrit comme aboutissant au sinus coronaire"
+  },
+  {
+   "id": "veine-intercostale-superieure-droite",
+   "resume": "La veine des espaces intercostaux supérieurs droits : elle descend et se jette dans l'azygos.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Veines intercostales postérieures des deuxième et troisième espaces droits, parfois du quatrième"
+   },
+   "trajet": "Collecte les veines des espaces supérieurs, descend contre la paroi postérieure du thorax et s'ouvre dans l'azygos",
+   "terminaison": {
+    "veine": "veine-azygos",
+    "texte": "Se jette dans la veine azygos"
+   },
+   "drainage": {
+    "texte": "Espaces intercostaux supérieurs droits, face postérieure du thorax",
+    "structures": [
+     "intercostaux"
+    ]
+   },
+   "clinique": "Elle appartient au système azygos, voie de suppléance quand la veine cave inférieure est obstruée",
+   "memo": "À droite, la supérieure descend vers l'azygos ; à gauche, elle monte vers la brachio-céphalique",
+   "variantes": "La veine intercostale suprême (premier espace) est distincte : elle s'ouvre dans la veine vertébrale ou la veine brachio-céphalique",
+   "sources": [
+    "gray1918",
+    "radiopaedia-paroi-thoracique",
+    "kenhub-azygos"
+   ],
+   "divergences": "Gray lui attribue trois ou quatre espaces ; Radiopaedia les deuxième et troisième, parfois le quatrième"
+  },
+  {
+   "id": "veine-intercostale-superieure-gauche",
+   "resume": "La veine des espaces intercostaux supérieurs gauches : elle croise l'arc aortique et se jette dans la veine brachio-céphalique gauche.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Veines intercostales postérieures des deuxième et troisième espaces gauches, parfois du quatrième"
+   },
+   "trajet": "Monte en croisant la crosse de l'aorte et les origines de l'artère subclavière gauche et de la carotide commune gauche, puis s'ouvre dans la veine brachio-céphalique gauche",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veine bronchique gauche (le plus souvent)"
+    },
+    {
+     "veine": null,
+     "texte": "Veine phrénique supérieure gauche (parfois)"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-brachiocephalique",
+    "texte": "Se jette dans la veine brachio-céphalique gauche"
+   },
+   "drainage": {
+    "texte": "Espaces intercostaux supérieurs gauches, face postérieure du thorax",
+    "structures": [
+     "intercostaux"
+    ]
+   },
+   "rapports": "Elle communique en bas avec la veine hémi-azygos accessoire",
+   "clinique": "Dilatée, elle forme sur la radiographie de thorax la « tétine aortique », saillie du bord gauche de l'arc aortique",
+   "memo": "À gauche, la supérieure monte : elle croise l'arc de l'aorte pour entrer dans la brachio-céphalique",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-paroi-thoracique",
+    "openstax-20-5"
+   ],
+   "divergences": "OpenStax fait rejoindre la brachio-céphalique par l'hémi-azygos via cette veine ; Gray et Kenhub le font rejoindre l'azygos, la communication avec la veine intercostale supérieure existant seulement en haut"
+  },
+  {
+   "id": "veine-laterale-du-poumon-droit",
+   "resume": "La veine du segment latéral du lobe moyen : elle s'unit à la veine médiale pour former la veine du lobe moyen.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Capillaires du segment latéral du lobe moyen droit"
+   },
+   "trajet": "Court dans les cloisons situées entre les segments, et non le long des bronches, puis converge vers le hile du poumon droit, en direction de la veine médiale, avec laquelle elle forme la veine du lobe moyen",
+   "terminaison": {
+    "veine": null,
+    "texte": "Forme avec la veine médiale la veine du lobe moyen, qui rejoint la veine pulmonaire supérieure droite ; celle-ci s'ouvre dans l'atrium gauche",
+    "viscere": "atrium-gauche"
+   },
+   "drainage": {
+    "texte": "Segment latéral du lobe moyen droit",
+    "structures": [
+     "lobe-moyen-du-poumon-droit"
+    ]
+   },
+   "clinique": "Une veine accessoire du lobe moyen existe chez environ 10 % des personnes : l'imagerie la repère avant une ablation ou une lobectomie",
+   "memo": "Latérale : la veine du côté du lobe moyen, la médiale est sa jumelle",
+   "variantes": "La veine du lobe moyen peut s'ouvrir seule dans l'atrium gauche ou être doublée (environ 10 % des personnes ont une veine moyenne accessoire)",
+   "sources": [
+    "elsevier-vp-droite",
+    "gray1918",
+    "radiopaedia-veines-pulmonaires"
+   ],
+   "divergences": "Gray dit qu'elle rejoint d'ordinaire la veine du lobe supérieur, mais que les trois veines lobaires droites peuvent rester séparées"
+  },
+  {
+   "id": "veine-posterieure-du-poumon-droit",
+   "resume": "La veine du segment postérieur du lobe supérieur droit : elle forme avec l'apicale et l'antérieure la veine pulmonaire supérieure droite.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Capillaires du segment postérieur du lobe supérieur droit"
+   },
+   "trajet": "Court dans les cloisons situées entre les segments, et non le long des bronches, puis converge vers le hile du poumon droit, avec les veines apicale et antérieure",
+   "terminaison": {
+    "veine": null,
+    "texte": "Forme la veine pulmonaire supérieure droite avec les veines apicale, antérieure et du lobe moyen ; celle-ci s'ouvre dans l'atrium gauche",
+    "viscere": "atrium-gauche"
+   },
+   "drainage": {
+    "texte": "Segment postérieur du lobe supérieur droit et territoires voisins",
+    "structures": [
+     "lobe-superieur-du-poumon-droit"
+    ]
+   },
+   "clinique": "Ses variantes importent en chirurgie thoracique et pour l'ablation de la fibrillation atriale, car l'imagerie doit repérer les veines supplémentaires",
+   "memo": "Postérieure : la veine de l'arrière du lobe supérieur, troisième tributaire de la supérieure droite",
+   "variantes": "Une veine « top » supplémentaire draine surtout le segment postérieur du lobe supérieur et une partie du segment supérieur du lobe inférieur",
+   "sources": [
+    "elsevier-vp-droite",
+    "radiopaedia-veines-pulmonaires",
+    "amegroups-pulmonaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-superieure-du-poumon-droit",
+   "resume": "La veine du segment supérieur du lobe inférieur droit : elle s'unit à la veine basale commune pour former la veine pulmonaire inférieure droite.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Capillaires du segment supérieur du lobe inférieur droit"
+   },
+   "trajet": "Court dans les cloisons situées entre les segments, et non le long des bronches, puis converge vers le hile du poumon droit, puis rejoint la veine basale commune",
+   "terminaison": {
+    "veine": null,
+    "texte": "Forme la veine pulmonaire inférieure droite avec la veine basale commune ; celle-ci s'ouvre dans l'atrium gauche",
+    "viscere": "atrium-gauche"
+   },
+   "drainage": {
+    "texte": "Segment supérieur du lobe inférieur droit",
+    "structures": [
+     "lobe-inferieur-du-poumon-droit"
+    ]
+   },
+   "clinique": "Elle peut s'ouvrir seule dans l'atrium gauche : variante à connaître avant une ablation de fibrillation atriale",
+   "memo": "Supérieure du lobe inférieur : elle prend le haut du lobe et rejoint la basale commune",
+   "variantes": "Une veine du segment supérieur ou de la base du lobe inférieur droit peut s'ouvrir séparément dans l'atrium gauche",
+   "sources": [
+    "elsevier-vp-droite",
+    "radiopaedia-veines-pulmonaires",
+    "amegroups-pulmonaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-superieure-du-poumon-gauche",
+   "resume": "La veine du segment supérieur du lobe inférieur gauche : elle s'unit à la veine basale commune pour former la veine pulmonaire inférieure gauche.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Capillaires du segment supérieur du lobe inférieur gauche"
+   },
+   "trajet": "Court dans les cloisons situées entre les segments, et non le long des bronches, puis converge vers le hile du poumon gauche, puis rejoint la veine basale commune",
+   "terminaison": {
+    "veine": "veine-pulmonaire-inferieure-gauche",
+    "texte": "Forme la veine pulmonaire inférieure gauche avec la veine basale commune"
+   },
+   "drainage": {
+    "texte": "Segment supérieur du lobe inférieur gauche",
+    "structures": [
+     "lobe-inferieur-du-poumon-gauche"
+    ]
+   },
+   "clinique": "À gauche, le lobe inférieur est drainé par la veine pulmonaire inférieure : la ligature de celle-ci est le temps veineux d'une lobectomie inférieure",
+   "memo": "Supérieure du lobe inférieur : elle prend le haut du lobe et se joint à la basale commune",
+   "variantes": null,
+   "sources": [
+    "elsevier-vp-inferieure-gauche",
+    "elsevier-vp-gauche",
+    "radiopaedia-veines-pulmonaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-cave-inferieure",
+   "resume": "La plus grosse veine du corps : elle remonte à droite de l'aorte, traverse le foie et le diaphragme et vide tout le sang sous-diaphragmatique dans l'atrium droit.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Union des deux veines iliaques communes, à droite de la cinquième vertèbre lombaire"
+   },
+   "trajet": "Monte devant le rachis, à droite de l'aorte, jusqu'au foie dont elle suit un sillon postérieur, traverse le centre tendineux du diaphragme (T8) et le péricarde fibreux, puis s'ouvre dans l'atrium droit",
+   "affluents": [
+    {
+     "veine": "veine-iliaque-commune",
+     "texte": "Veines iliaques communes (origine)"
+    },
+    {
+     "veine": "veines-lombaires",
+     "texte": "Veines lombaires"
+    },
+    {
+     "veine": null,
+     "texte": "Veine gonadique droite"
+    },
+    {
+     "veine": "veine-renale-gauche",
+     "texte": "Veine rénale gauche"
+    },
+    {
+     "veine": null,
+     "texte": "Veine rénale droite"
+    },
+    {
+     "veine": null,
+     "texte": "Veine surrénale droite"
+    },
+    {
+     "veine": "veines-hepatiques",
+     "texte": "Veines hépatiques"
+    },
+    {
+     "veine": null,
+     "texte": "Veines phréniques inférieures"
+    }
+   ],
+   "terminaison": {
+    "veine": null,
+    "texte": "S'ouvre dans la partie basse et postérieure de l'atrium droit, où une valve rudimentaire chez l'adulte garde l'orifice",
+    "viscere": "atrium-droit"
+   },
+   "drainage": {
+    "texte": "Tout ce qui est sous le diaphragme : membres inférieurs, bassin, paroi abdominale, reins, surrénales, foie (par les veines hépatiques)",
+    "structures": [
+     "foie",
+     "glande-surrenale",
+     "diaphragme"
+    ]
+   },
+   "rapports": "En avant : mésentère, duodénum, pancréas, canal cholédoque, veine porte, foie. En arrière : rachis, psoas et pilier droits, artères rénale et surrénale droites. À droite : rein et uretère ; à gauche : aorte",
+   "clinique": "La thrombose veineuse profonde des jambes peut remonter jusqu'à elle puis gagner les poumons (embolie) ; obstruée, elle est suppléée par l'azygos, les lombaires et les plexus vertébraux",
+   "memo": "La cave inférieure : à droite de l'aorte, du bassin à l'atrium droit ; les affluents de gauche passent par la rénale",
+   "variantes": "Elle peut se placer à gauche de l'aorte ou se prolonger par l'azygos (absence du segment hépatique, environ 0,3 % des personnes)",
+   "sources": [
+    "gray1918",
+    "kenhub-cave-inferieure",
+    "teachmeanatomy-veines-abdomen",
+    "openstax-20-5"
+   ],
+   "divergences": "Gray décrit la veine phrénique inférieure gauche en deux branches, l'une vers la rénale ou la surrénale gauche, l'autre vers la cave par l'hiatus œsophagien ; OpenStax et Kenhub la font aboutir à la rénale gauche"
+  },
+  {
+   "id": "veine-gastro-omentale-gauche",
+   "resume": "La veine de la moitié gauche de la grande courbure de l'estomac : elle longe la courbure et se jette dans la veine splénique.",
+   "plan": "portale",
+   "origine": {
+    "veine": null,
+    "texte": "Grande courbure de l'estomac et grand omentum, à gauche"
+   },
+   "trajet": "Longe la grande courbure de l'estomac avec l'artère gastro-omentale gauche, vers la rate, puis rejoint la veine splénique",
+   "terminaison": {
+    "veine": "veine-splenique",
+    "texte": "Se jette dans la veine splénique, qui rejoint la veine mésentérique supérieure pour former la porte"
+   },
+   "drainage": {
+    "texte": "Partie gauche de la grande courbure de l'estomac et grand omentum",
+    "structures": [
+     "estomac",
+     "grand-omentum"
+    ]
+   },
+   "rapports": "Elle accompagne l'artère gastro-omentale gauche",
+   "clinique": "Quand la splénique est bouchée, le sang de la rate et de l'estomac reflue par les veines gastriques courtes et gastro-omentale gauche : varices gastriques",
+   "memo": "Gastro-omentale gauche : à gauche, elle monte vers la splénique ; sa jumelle droite descend vers la mésentérique supérieure",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-veines-abdomen"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-iliaque-commune",
+   "resume": "La veine du bassin : née de l'union de l'iliaque externe et de l'interne, elle rejoint sa jumelle pour former la veine cave inférieure.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Union des veines iliaques externe et interne, devant l'articulation sacro-iliaque"
+   },
+   "trajet": "Monte obliquement ; la droite, courte et presque verticale, longe son artère ; la gauche, plus longue et plus oblique, passe derrière l'artère iliaque commune droite pour joindre sa jumelle à droite de la cinquième vertèbre lombaire",
+   "affluents": [
+    {
+     "veine": "veine-iliaque-externe",
+     "texte": "Veine iliaque externe"
+    },
+    {
+     "veine": "veine-iliaque-interne",
+     "texte": "Veine iliaque interne"
+    },
+    {
+     "veine": "veine-iliolombale",
+     "texte": "Veine iliolombale"
+    },
+    {
+     "veine": "veines-sacrales-laterales",
+     "texte": "Veines sacrales latérales (parfois)"
+    },
+    {
+     "veine": null,
+     "texte": "Veine sacrale médiane (à gauche seulement)"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-cave-inferieure",
+    "texte": "Rejoint la veine iliaque commune opposée, à droite de L5, pour former la veine cave inférieure"
+   },
+   "drainage": {
+    "texte": "Membre inférieur et bassin du côté correspondant",
+    "structures": []
+   },
+   "rapports": "Elle n'a pas de valves ; à droite l'artère iliaque commune est en avant d'elle, à gauche en dehors",
+   "clinique": "La veine gauche peut être comprimée par l'artère iliaque commune droite contre le rachis (syndrome de May-Thurner) : thrombose veineuse profonde du membre inférieur gauche",
+   "memo": "Deux communes, une cave : elles se rejoignent à droite de L5, la gauche passe derrière l'artère droite",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-iliaque-commune",
+    "wikipedia-may-thurner",
+    "openstax-20-5"
+   ],
+   "divergences": "Gray rattache les veines sacrales latérales à l'iliaque interne, parfois à l'iliaque commune ; Radiopaedia les fait aboutir à l'iliaque commune"
+  },
+  {
+   "id": "veine-mesenterique-inferieure",
+   "resume": "La veine du côlon gauche et du haut du rectum : elle monte derrière le pancréas et rejoint le plus souvent la veine splénique.",
+   "plan": "portale",
+   "origine": {
+    "veine": null,
+    "texte": "Haut du rectum, par la veine rectale supérieure issue du plexus hémorroïdaire"
+   },
+   "trajet": "Croise les vaisseaux iliaques communs gauches, monte à gauche de son artère devant le grand psoas gauche, puis passe derrière le corps du pancréas pour se jeter dans la veine splénique",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veine rectale supérieure"
+    },
+    {
+     "veine": "veine-sigmoide",
+     "texte": "Veines sigmoïdes"
+    },
+    {
+     "veine": null,
+     "texte": "Veine colique gauche"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-splenique",
+    "texte": "Se jette le plus souvent dans la veine splénique, parfois dans la mésentérique supérieure ou dans leur confluent"
+   },
+   "drainage": {
+    "texte": "Côlon descendant, côlon sigmoïde, haut du rectum et partie du côlon transverse",
+    "structures": [
+     "colon-descendant",
+     "colon-sigmoide",
+     "colon-transverse"
+    ]
+   },
+   "clinique": "Zone d'anastomose porto-cave : en cas d'hypertension portale, le sang reflue du rectum par les veines rectales moyenne et inférieure vers les veines iliaques internes",
+   "memo": "Mésentérique inférieure : elle vide le côlon gauche et monte à gauche de son artère",
+   "variantes": "Son embouchure varie : splénique, mésentérique supérieure ou confluent selon les personnes",
+   "sources": [
+    "gray1918",
+    "radiopaedia-mesenterique-inferieure",
+    "teachmeanatomy-veines-abdomen",
+    "radiopaedia-porte"
+   ],
+   "divergences": "Gray la dit « usuellement » dans la splénique ; Radiopaedia chiffre environ 40 % dans la splénique, 40 % dans la mésentérique supérieure et 20 % dans le confluent"
+  },
+  {
+   "id": "veine-porte-du-foie",
+   "resume": "La grande veine qui conduit au foie le sang de l'intestin, de l'estomac, de la rate et du pancréas.",
+   "plan": "portale",
+   "origine": {
+    "veine": null,
+    "texte": "Union des veines mésentérique supérieure et splénique, derrière le col du pancréas, au niveau de L2"
+   },
+   "trajet": "Monte derrière la partie supérieure du duodénum puis dans le bord libre du petit omentum, derrière le canal cholédoque et l'artère hépatique, jusqu'au hile du foie où elle se divise en branches droite et gauche",
+   "affluents": [
+    {
+     "veine": "veine-mesenterique-superieure",
+     "texte": "Veine mésentérique supérieure"
+    },
+    {
+     "veine": "veine-splenique",
+     "texte": "Veine splénique"
+    },
+    {
+     "veine": null,
+     "texte": "Veines gastriques gauche (coronaire) et droite (pylorique)"
+    },
+    {
+     "veine": null,
+     "texte": "Veine cystique"
+    },
+    {
+     "veine": null,
+     "texte": "Veines paraombilicales"
+    },
+    {
+     "veine": null,
+     "texte": "Veine pancréatico-duodénale postéro-supérieure"
+    },
+    {
+     "veine": "veine-mesenterique-inferieure",
+     "texte": "Veine mésentérique inférieure (chez certains)"
+    }
+   ],
+   "terminaison": {
+    "veine": null,
+    "texte": "Se divise en branches droite et gauche au hile du foie, qui se ramifient jusqu'aux sinusoïdes hépatiques",
+    "viscere": "foie"
+   },
+   "drainage": {
+    "texte": "Tube digestif sous-diaphragmatique (sauf le bas du rectum), rate, pancréas, vésicule biliaire",
+    "structures": [
+     "estomac",
+     "rate",
+     "pancreas",
+     "vesicule-biliaire",
+     "jejunum"
+    ]
+   },
+   "rapports": "Longue d'environ 8 cm, elle passe devant la veine cave inférieure, dont la sépare l'hiatus omental (foramen épiploïque)",
+   "clinique": "Hypertension portale (cirrhose, thrombose) : le sang dérive par les anastomoses porto-caves, varices de l'œsophage, hémorroïdes, circulation collatérale périombilicale (« tête de méduse »)",
+   "memo": "La porte : deux capillaires à la suite, ceux de l'intestin puis ceux du foie ; pas de valves",
+   "variantes": "Une variante existe chez environ un quart des personnes ; la trifurcation est la plus fréquente",
+   "sources": [
+    "gray1918",
+    "kenhub-porte",
+    "teachmeanatomy-veines-abdomen",
+    "radiopaedia-porte"
+   ],
+   "divergences": "Veine cystique : dans la branche droite de la porte selon Gray, dans le tronc selon TeachMeAnatomy. Mésentérique inférieure : dans la splénique (Gray), parfois directement dans la porte (Kenhub)"
+  },
+  {
+   "id": "veine-renale-gauche",
+   "resume": "La veine du rein gauche : longue, elle croise l'aorte sous l'artère mésentérique supérieure et reçoit les veines gonadique, surrénale et phrénique gauches.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Union des veines interlobaires du rein gauche, au hile"
+   },
+   "trajet": "Quitte le hile, passe derrière la veine splénique et le pancréas, croise l'aorte en avant, sous l'origine de l'artère mésentérique supérieure, puis s'ouvre dans la veine cave inférieure ; elle mesure environ 7 cm",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veine gonadique gauche, à angle droit"
+    },
+    {
+     "veine": null,
+     "texte": "Veine surrénale gauche"
+    },
+    {
+     "veine": null,
+     "texte": "Veine phrénique inférieure gauche"
+    },
+    {
+     "veine": null,
+     "texte": "Veines capsulaires gauches"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-cave-inferieure",
+    "texte": "S'ouvre dans la veine cave inférieure, un peu plus haut que la veine rénale droite"
+   },
+   "drainage": {
+    "texte": "Rein gauche, glande surrénale gauche, gonade gauche, diaphragme à gauche",
+    "structures": [
+     "glande-surrenale"
+    ]
+   },
+   "rapports": "La veine rénale droite, courte (2 à 3 cm), passe derrière le duodénum et s'ouvre directement dans la cave",
+   "clinique": "Comprimée entre l'aorte et l'artère mésentérique supérieure, elle donne le syndrome de casse-noix (hématurie, douleur du flanc) ; elle explique la fréquence du varicocèle gauche",
+   "memo": "Gauche, donc longue : elle passe devant l'aorte et reçoit à gauche ce que la cave reçoit directement à droite",
+   "variantes": "Elle peut être double : veine rénale gauche circumaortique (une branche passe derrière l'aorte, collier rénal) ou rétro-aortique",
+   "sources": [
+    "gray1918",
+    "kenhub-renale",
+    "openstax-20-5",
+    "wikipedia-varicocele"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-epigastrique-inferieure",
+   "resume": "La veine de la paroi antérieure de l'abdomen : elle suit l'artère épigastrique inférieure et se jette dans la veine iliaque externe.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Gaine du muscle droit de l'abdomen, par anastomose avec la veine épigastrique supérieure"
+   },
+   "trajet": "Monte dans la gaine du droit de l'abdomen avec l'artère épigastrique inférieure, en un ou deux troncs, puis s'ouvre dans la veine iliaque externe un peu au-dessus de l'arcade inguinale",
+   "terminaison": {
+    "veine": "veine-iliaque-externe",
+    "texte": "Se jette dans la veine iliaque externe, environ 1,25 cm au-dessus de l'arcade inguinale"
+   },
+   "drainage": {
+    "texte": "Paroi antérieure du bas-ventre, muscle droit de l'abdomen",
+    "structures": [
+     "droit-abdomen"
+    ]
+   },
+   "rapports": "Elle accompagne l'artère épigastrique inférieure",
+   "clinique": "Par son anastomose avec l'épigastrique supérieure, elle relie le territoire de la cave inférieure à celui de la cave supérieure : voie de suppléance de l'abdomen",
+   "memo": "Épigastrique inférieure : elle remonte dans le droit et redescend dans l'iliaque externe, au-dessus de l'arcade",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-epigastrique-inferieure"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-musculophreniques",
+   "resume": "Les veines du bord inférieur du thorax : elles drainent le diaphragme et la paroi du haut de l'abdomen et se jettent dans les veines thoraciques internes.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Diaphragme, muscles des espaces intercostaux inférieurs, paroi abdominale supérieure, bas du péricarde"
+   },
+   "trajet": "Longent le rebord costal avec l'artère musculo-phrénique en recevant les veines intercostales antérieures, puis remontent vers les veines thoraciques internes",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines intercostales antérieures des espaces inférieurs"
+    }
+   ],
+   "terminaison": {
+    "veine": "veines-thoraciques-internes",
+    "texte": "Se jettent dans les veines thoraciques internes, au niveau du 6e cartilage costal"
+   },
+   "drainage": {
+    "texte": "Diaphragme, espaces intercostaux inférieurs, paroi abdominale haute",
+    "structures": [
+     "diaphragme"
+    ]
+   },
+   "clinique": "Elles relient le diaphragme et la paroi de l'abdomen aux veines thoraciques internes : voie de suppléance entre les territoires des deux veines caves",
+   "memo": "Musculo-phrénique : la veine du rebord costal, entre muscle et diaphragme, qui monte aux thoraciques internes",
+   "variantes": null,
+   "sources": [
+    "elsevier-musculophreniques",
+    "radiopaedia-paroi-thoracique",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-epigastriques-superieures",
+   "resume": "Les veines du haut de la paroi abdominale antérieure : elles remontent dans la gaine du droit de l'abdomen vers les veines thoraciques internes.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Gaine du muscle droit de l'abdomen, par anastomose avec la veine épigastrique inférieure"
+   },
+   "trajet": "Accompagnent l'artère épigastrique supérieure en arrière du droit de l'abdomen, passent entre les parties sternale et costale du diaphragme et s'ouvrent dans la veine thoracique interne",
+   "terminaison": {
+    "veine": "veines-thoraciques-internes",
+    "texte": "Se jettent dans les veines thoraciques internes"
+   },
+   "drainage": {
+    "texte": "Paroi abdominale antérieure haute, muscle droit de l'abdomen",
+    "structures": [
+     "droit-abdomen"
+    ]
+   },
+   "rapports": "Elles sont deux veines ou plus accompagnant l'artère épigastrique supérieure",
+   "clinique": "Par l'anastomose avec les veines épigastriques inférieures, elles relient les territoires des deux veines caves : voie de suppléance en cas d'obstruction d'une cave",
+   "memo": "Épigastriques supérieures : elles montent dans le droit et finissent dans les thoraciques internes",
+   "variantes": null,
+   "sources": [
+    "wikipedia-epigastrique-superieure",
+    "wikipedia-thoracique-interne",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-iliaque-externe",
+   "resume": "La veine qui prolonge la fémorale au bassin : elle longe le détroit supérieur et s'unit à l'iliaque interne pour former l'iliaque commune.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "veine-femorale",
+    "texte": "Prolonge la veine fémorale à l'arcade inguinale"
+   },
+   "trajet": "Monte derrière l'arcade inguinale, puis le long du détroit supérieur du bassin jusqu'à l'articulation sacro-iliaque, où elle s'unit à la veine iliaque interne",
+   "affluents": [
+    {
+     "veine": "veine-epigastrique-inferieure",
+     "texte": "Veine épigastrique inférieure"
+    },
+    {
+     "veine": null,
+     "texte": "Veine circonflexe iliaque profonde"
+    },
+    {
+     "veine": null,
+     "texte": "Veine pubienne"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-iliaque-commune",
+    "texte": "S'unit à la veine iliaque interne devant l'articulation sacro-iliaque pour former la veine iliaque commune"
+   },
+   "drainage": {
+    "texte": "Membre inférieur entier et partie basse de la paroi abdominale",
+    "structures": []
+   },
+   "rapports": "Une valve, parfois deux, garnit sa lumière",
+   "clinique": "La thrombose iliofémorale gonfle tout le membre ; si elle est bouchée, les tributaires de l'iliaque interne deviennent la voie de retour du membre inférieur",
+   "memo": "L'externe prolonge la fémorale et se joint à l'interne pour faire la commune",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "openstax-20-5",
+    "wikipedia-iliaque-interne"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-iliaque-interne",
+   "resume": "La veine du bassin : courte et large, elle recueille les viscères pelviens et la région glutéale et rejoint l'iliaque externe pour former l'iliaque commune.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Au-dessus du grand foramen ischiatique, par la réunion de veines de la région glutéale, du périnée et des viscères du bassin"
+   },
+   "trajet": "Monte sur la paroi du bassin, derrière et un peu en dedans de l'artère iliaque interne, sur environ 3 cm, jusqu'au détroit supérieur",
+   "affluents": [
+    {
+     "veine": "veines-gluteales-superieures",
+     "texte": "Veines glutéales supérieures"
+    },
+    {
+     "veine": "veines-gluteales-inferieures",
+     "texte": "Veines glutéales inférieures"
+    },
+    {
+     "veine": "veine-pudendale-interne",
+     "texte": "Veine pudendale interne"
+    },
+    {
+     "veine": null,
+     "texte": "Veine obturatrice"
+    },
+    {
+     "veine": "veines-sacrales-laterales",
+     "texte": "Veines sacrales latérales"
+    },
+    {
+     "veine": null,
+     "texte": "Veines des plexus pelviens : rectale moyenne, vésicales, prostatiques, utérines et vaginales"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-iliaque-commune",
+    "texte": "S'unit à la veine iliaque externe au détroit supérieur, devant l'articulation sacro-iliaque, pour former la veine iliaque commune"
+   },
+   "drainage": {
+    "texte": "Viscères du bassin, périnée et région glutéale",
+    "structures": [
+     "vessie-urinaire",
+     "prostate",
+     "grand-fessier"
+    ]
+   },
+   "clinique": "Si l'iliaque externe est bouchée, ses tributaires deviennent une voie majeure de retour du membre inférieur ; leur lésion en chirurgie pelvienne peut faire gonfler la jambe",
+   "memo": "L'interne : le carrefour veineux du bassin, derrière l'artère du même nom, qui rejoint l'externe",
+   "variantes": "La veine iliolombale, contrairement aux autres veines parallèles aux branches de l'artère, se jette d'ordinaire dans l'iliaque commune",
+   "sources": [
+    "gray1918",
+    "wikipedia-iliaque-interne",
+    "kenhub-iliaque-interne"
+   ],
+   "divergences": "Kenhub ne cite ni les sacrales latérales ni l'iliolombale parmi ses tributaires ; Gray et Wikipedia retiennent les sacrales latérales"
+  },
+  {
+   "id": "veine-iliolombale",
+   "resume": "La veine de la fosse iliaque et des deux dernières vertèbres lombaires : elle rejoint d'ordinaire la veine iliaque commune.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Muscle ilio-psoas et vertèbres L4 et L5"
+   },
+   "trajet": "Accompagne l'artère iliolombaire, reste en rapport étroit avec la veine lombaire ascendante et se jette dans la veine iliaque commune",
+   "terminaison": {
+    "veine": "veine-iliaque-commune",
+    "texte": "Se jette dans la veine iliaque commune, plus rarement dans l'iliaque interne"
+   },
+   "drainage": {
+    "texte": "Muscle ilio-psoas, vertèbres L4 et L5",
+    "structures": [
+     "grand-psoas"
+    ]
+   },
+   "rapports": "Le nerf obturateur la croise en avant",
+   "clinique": "Reliée à la lombaire ascendante, elle ouvre une voie de suppléance entre la veine iliaque commune et l'azygos quand la veine cave inférieure est obstruée",
+   "memo": "Iliolombale : elle relie l'iliaque commune aux lombaires et ouvre la voie de l'ascendante",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-iliolombale",
+    "radiopaedia-iliaque-commune"
+   ],
+   "divergences": "Gray souligne qu'elle fait exception parmi les veines pelviennes : elle se jette d'ordinaire dans l'iliaque commune et non dans l'interne"
+  },
+  {
+   "id": "veine-pudendale-interne",
+   "resume": "Les veines du périnée : elles accompagnent l'artère pudendale interne et rejoignent la veine iliaque interne.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Veines profondes du périnée et du bulbe, avec les veines périnéales et rectales inférieures"
+   },
+   "trajet": "Accompagnent l'artère pudendale interne dans le canal pudendal, s'unissent en un tronc unique et se jettent dans la veine iliaque interne",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines du bulbe de l'urètre et du vestibule"
+    },
+    {
+     "veine": null,
+     "texte": "Veines périnéales"
+    },
+    {
+     "veine": null,
+     "texte": "Veines rectales inférieures"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-iliaque-interne",
+    "texte": "Se jette dans la veine iliaque interne"
+   },
+   "drainage": {
+    "texte": "Périnée, bas du canal anal, bulbe du périnée",
+    "structures": []
+   },
+   "rapports": "Dans le canal pudendal, avec l'artère pudendale interne et le nerf pudendal",
+   "clinique": "Par la veine rectale inférieure, elle conduit le sang du bas du canal anal vers la cave : zone d'anastomose porto-cave rectale en cas d'hypertension portale",
+   "memo": "Pudendale interne : celle du périnée, dans le canal pudendal avec l'artère et le nerf",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-pudendale-interne",
+    "kenhub-iliaque-interne"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-sacrales-laterales",
+   "resume": "Les veines du devant du sacrum : elles drainent la face antérieure du sacrum et rejoignent la veine iliaque interne.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Face antérieure du sacrum, canal sacral et plexus veineux présacral"
+   },
+   "trajet": "Descendent sur la face antérieure du sacrum, de chaque côté, avec les artères sacrales latérales, et se jettent dans la veine iliaque interne",
+   "terminaison": {
+    "veine": "veine-iliaque-interne",
+    "texte": "Se jettent dans la veine iliaque interne"
+   },
+   "drainage": {
+    "texte": "Sacrum",
+    "structures": [
+     "sacrum"
+    ]
+   },
+   "clinique": "Le plexus veineux présacral qu'elles forment saigne facilement quand on décolle le rectum du sacrum en chirurgie pelvienne",
+   "memo": "Sacrales latérales : de chaque côté du sacrum, elles se vident dans l'iliaque interne",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-iliaque-interne",
+    "radiopaedia-iliaque-commune"
+   ],
+   "divergences": "Gray et Wikipedia en font des tributaires de l'iliaque interne (Gray signale parfois l'iliaque commune) ; Radiopaedia les fait aboutir à l'iliaque commune"
+  },
+  {
+   "id": "sinus-coronaire",
+   "resume": "Le collecteur veineux du cœur : un large tronc à l'arrière du sillon coronaire, qui reçoit presque toutes les veines cardiaques et s'ouvre dans l'atrium droit.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "grande-veine-cardiaque",
+    "texte": "Prolonge la grande veine cardiaque à la face postérieure du cœur"
+   },
+   "trajet": "Longe la paroi postérieure de l'atrium gauche dans la partie postérieure du sillon coronaire, sur environ 2,25 cm, puis s'ouvre dans l'atrium droit entre l'orifice de la veine cave inférieure et l'orifice atrio-ventriculaire",
+   "affluents": [
+    {
+     "veine": "grande-veine-cardiaque",
+     "texte": "Grande veine cardiaque (extrémité gauche)"
+    },
+    {
+     "veine": null,
+     "texte": "Veine oblique de l'atrium gauche"
+    },
+    {
+     "veine": "veine-inferieure-du-ventricule-gauche",
+     "texte": "Veine postérieure du ventricule gauche"
+    },
+    {
+     "veine": "veine-cardiaque-moyenne",
+     "texte": "Veine cardiaque moyenne"
+    },
+    {
+     "veine": null,
+     "texte": "Petite veine cardiaque (extrémité droite)"
+    }
+   ],
+   "terminaison": {
+    "veine": null,
+    "texte": "S'ouvre dans l'atrium droit, son orifice étant en partie recouvert par la valve semi-lunaire (de Thébésius)",
+    "viscere": "atrium-droit"
+   },
+   "drainage": {
+    "texte": "Presque tout le sang veineux du myocarde, surtout du ventricule gauche",
+    "structures": [
+     "ventricule-gauche",
+     "ventricule-droit"
+    ]
+   },
+   "rapports": "Trois ou quatre veines cardiaques antérieures s'ouvrent directement dans l'atrium droit, sans passer par le sinus",
+   "clinique": "Voie d'implantation de la sonde gauche des stimulateurs de resynchronisation ; cible de certaines ablations d'arythmies ; une veine cave supérieure gauche persistante s'y jette",
+   "memo": "Le sinus coronaire : le grand collecteur du cœur, derrière, qui débouche dans l'atrium droit près de la cave inférieure",
+   "variantes": "Un sinus coronaire sans toit (« unroofed ») peut s'ouvrir dans l'atrium gauche, rare communication associée à une veine cave supérieure gauche persistante",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-coeur",
+    "radiopaedia-sinus-coronaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-anterieure-du-poumon-droit",
+   "resume": "La veine du segment antérieur du lobe supérieur droit : elle forme avec l'apicale et la postérieure la veine pulmonaire supérieure droite.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Capillaires du segment antérieur du lobe supérieur droit"
+   },
+   "trajet": "Court dans les cloisons situées entre les segments, et non le long des bronches, puis converge vers le hile du poumon droit, avec les veines apicale et postérieure",
+   "terminaison": {
+    "veine": null,
+    "texte": "Forme la veine pulmonaire supérieure droite avec les veines apicale, postérieure et du lobe moyen ; celle-ci s'ouvre dans l'atrium gauche",
+    "viscere": "atrium-gauche"
+   },
+   "drainage": {
+    "texte": "Segment antérieur du lobe supérieur droit et territoires voisins",
+    "structures": [
+     "lobe-superieur-du-poumon-droit"
+    ]
+   },
+   "clinique": "Un retour veineux pulmonaire partiel anormal peut les faire aboutir à la veine cave supérieure, à l'azygos ou au sinus coronaire au lieu de l'atrium gauche",
+   "memo": "Antérieure : la veine de l'avant du lobe supérieur, qui monte avec l'apicale vers la supérieure droite",
+   "variantes": null,
+   "sources": [
+    "elsevier-vp-droite",
+    "amegroups-pulmonaires",
+    "radiopaedia-veines-pulmonaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-anterieure-du-poumon-gauche",
+   "resume": "La veine du segment antérieur du lobe supérieur gauche : elle forme avec l'apicopostérieure et la lingulaire la veine pulmonaire supérieure gauche.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Capillaires du segment antérieur du lobe supérieur gauche"
+   },
+   "trajet": "Court dans les cloisons situées entre les segments, et non le long des bronches, puis converge vers le hile du poumon gauche, avec les veines apicopostérieure et lingulaire",
+   "terminaison": {
+    "veine": "veine-pulmonaire-superieure-gauche",
+    "texte": "Rejoint les veines apicopostérieure et lingulaire pour former la veine pulmonaire supérieure gauche"
+   },
+   "drainage": {
+    "texte": "Segment antérieur du lobe supérieur gauche et territoires voisins",
+    "structures": [
+     "lobe-superieur-du-poumon-gauche"
+    ]
+   },
+   "clinique": "Un retour veineux pulmonaire partiel anormal peut faire monter les veines du lobe supérieur gauche vers la veine brachio-céphalique gauche ou le sinus coronaire",
+   "memo": "Antérieure gauche : la veine de l'avant du lobe supérieur, avec l'apicopostérieure et la lingulaire",
+   "variantes": null,
+   "sources": [
+    "elsevier-vp-gauche",
+    "amegroups-pulmonaires",
+    "radiopaedia-veines-pulmonaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-brachiocephalique",
+   "resume": "Le tronc veineux de la tête, du cou et du membre supérieur : il naît de l'union de la jugulaire interne et de la sous-clavière, et deux d'entre eux forment la veine cave supérieure.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Union de la veine jugulaire interne et de la veine sous-clavière, derrière l'articulation sterno-claviculaire"
+   },
+   "trajet": "La droite, longue d'environ 2,5 cm, descend presque verticalement ; la gauche, d'environ 6 cm, traverse obliquement derrière le manubrium sternal pour rejoindre la droite derrière le premier cartilage costal droit",
+   "affluents": [
+    {
+     "veine": "veine-jugulaire-interne",
+     "texte": "Veine jugulaire interne"
+    },
+    {
+     "veine": "veine-sous-claviere",
+     "texte": "Veine sous-clavière"
+    },
+    {
+     "veine": "veine-vertebrale",
+     "texte": "Veine vertébrale"
+    },
+    {
+     "veine": "veines-thoraciques-internes",
+     "texte": "Veines thoraciques internes"
+    },
+    {
+     "veine": null,
+     "texte": "Veine thyroïdienne inférieure"
+    },
+    {
+     "veine": "veine-intercostale-superieure-gauche",
+     "texte": "Veine intercostale supérieure gauche (à gauche)"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-cave-superieure",
+    "texte": "S'unit à la veine brachio-céphalique opposée derrière le bord inférieur du premier cartilage costal droit pour former la veine cave supérieure"
+   },
+   "drainage": {
+    "texte": "Tête, cou et membre supérieur du côté correspondant, paroi antérieure du thorax",
+    "structures": []
+   },
+   "rapports": "Elles n'ont pas de valves",
+   "clinique": "Les cathéters veineux centraux, posés par la jugulaire interne ou la sous-clavière, passent par elle avant la veine cave supérieure",
+   "memo": "Brachio-céphalique : la gauche, longue, traverse en biais ; la droite, courte, descend droit ; ensemble elles font la cave supérieure",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cave-superieure",
+    "openstax-20-5"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-cave-superieure",
+   "resume": "La veine qui ramène au cœur le sang de la tête, du cou, des membres supérieurs et du thorax : elle naît de la réunion des deux veines brachio-céphaliques.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Union des deux veines brachio-céphaliques, derrière le bord inférieur du premier cartilage costal droit"
+   },
+   "trajet": "Descend verticalement dans le médiastin supérieur à droite, sur environ 7 cm, perce le péricarde fibreux (2e cartilage costal) et s'ouvre dans l'atrium droit au niveau du 3e cartilage costal",
+   "affluents": [
+    {
+     "veine": "veine-brachiocephalique",
+     "texte": "Veines brachio-céphaliques droite et gauche"
+    },
+    {
+     "veine": "veine-azygos",
+     "texte": "Veine azygos"
+    }
+   ],
+   "terminaison": {
+    "veine": null,
+    "texte": "S'ouvre dans la partie haute de l'atrium droit ; aucune valve ne la sépare de lui",
+    "viscere": "atrium-droit"
+   },
+   "drainage": {
+    "texte": "Tête, cou, membres supérieurs, paroi du thorax (par l'azygos) et organes du médiastin",
+    "structures": []
+   },
+   "rapports": "Sa moitié inférieure est dans le péricarde ; elle n'a pas de valves",
+   "clinique": "Son obstruction, le plus souvent par un cancer bronchique (plus de 90 % des cas), donne le syndrome cave supérieur : œdème du visage et des bras, circulation collatérale thoracique",
+   "memo": "Cave supérieure : 7 cm, deux brachio-céphaliques en haut, l'azygos juste avant le cœur",
+   "variantes": "Une veine cave supérieure gauche persistante, reliquat embryonnaire qui descend à gauche vers le sinus coronaire, est la variante veineuse thoracique la plus fréquente",
+   "sources": [
+    "gray1918",
+    "kenhub-cave-superieure",
+    "openstax-20-5"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-hemi-azygos",
+   "resume": "La veine azygos mineure du côté gauche du rachis : elle monte à gauche, puis traverse devant la colonne pour rejoindre l'azygos.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "veine-lombaire-ascendante-gauche",
+    "texte": "Union des veines lombaire ascendante gauche et subcostale gauche ; parfois issue de la veine rénale gauche"
+   },
+   "trajet": "Entre dans le thorax par le pilier gauche du diaphragme, monte à gauche du rachis jusqu'à T8-T9, puis croise la colonne derrière l'aorte, l'œsophage et le canal thoracique pour rejoindre l'azygos",
+   "affluents": [
+    {
+     "veine": "veine-lombaire-ascendante-gauche",
+     "texte": "Veine lombaire ascendante gauche"
+    },
+    {
+     "veine": "veine-subcostale-gauche",
+     "texte": "Veine subcostale gauche"
+    },
+    {
+     "veine": null,
+     "texte": "Veines intercostales gauches inférieures (8e à 11e espaces)"
+    },
+    {
+     "veine": null,
+     "texte": "Veines œsophagiennes et médiastinales"
+    },
+    {
+     "veine": "veine-hemi-azygos-accessoire",
+     "texte": "Veine hémi-azygos accessoire (parfois)"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-azygos",
+    "texte": "Se jette dans la veine azygos, après avoir croisé la ligne médiane"
+   },
+   "drainage": {
+    "texte": "Paroi postérieure du thorax et de l'abdomen à gauche, œsophage, médiastin",
+    "structures": [
+     "oesophage"
+    ]
+   },
+   "clinique": "Avec l'azygos, elle supplée la veine cave inférieure obstruée ; dans l'hypertension portale, les varices de l'œsophage et de l'estomac peuvent s'y drainer",
+   "memo": "Hémi-azygos : la moitié gauche de l'azygos, qui passe à droite derrière l'aorte à mi-hauteur du thorax",
+   "variantes": "Elle peut naître de la veine rénale gauche ou de la veine cave inférieure ; elle peut entrer dans le thorax par l'hiatus aortique",
+   "sources": [
+    "gray1918",
+    "kenhub-azygos",
+    "radiopaedia-hemiazygos"
+   ],
+   "divergences": "Elle croise le rachis à T9 selon Gray, à T8 selon Kenhub, à T8 ou T9 selon Radiopaedia ; le nombre de veines intercostales reçues varie (trois à cinq). OpenStax la fait aboutir à la veine brachio-céphalique par la veine intercostale supérieure"
+  },
+  {
+   "id": "veine-lingulaire-du-poumon-gauche",
+   "resume": "La veine de la lingula, partie inférieure du lobe supérieur gauche : elle rejoint la veine pulmonaire supérieure gauche.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Union des veines lingulaires supérieure et inférieure"
+   },
+   "trajet": "Quitte la lingula dans les cloisons entre segments et rejoint les veines apicopostérieure et antérieure au hile du poumon gauche",
+   "affluents": [
+    {
+     "veine": "veine-lingulaire-superieure-du-poumon-gauche",
+     "texte": "Veine lingulaire supérieure"
+    },
+    {
+     "veine": "veine-lingulaire-inferieure-du-poumon-gauche",
+     "texte": "Veine lingulaire inférieure"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-pulmonaire-superieure-gauche",
+    "texte": "Forme avec les veines apicopostérieure et antérieure la veine pulmonaire supérieure gauche"
+   },
+   "drainage": {
+    "texte": "Lingula du lobe supérieur gauche",
+    "structures": [
+     "lobe-superieur-du-poumon-gauche"
+    ]
+   },
+   "clinique": "Une lobectomie supérieure gauche emporte aussi la lingula : sa veine est l'une des branches de la supérieure gauche à lier",
+   "memo": "Lingulaire : la petite langue du poumon gauche envoie son sang à la supérieure",
+   "variantes": null,
+   "sources": [
+    "elsevier-vp-gauche",
+    "radiopaedia-veines-pulmonaires",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-lingulaire-inferieure-du-poumon-gauche",
+   "resume": "La veine du segment lingulaire inférieur : elle s'unit à la lingulaire supérieure pour former la veine lingulaire.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Capillaires du segment lingulaire inférieur du lobe supérieur gauche"
+   },
+   "trajet": "Court dans les cloisons situées entre les segments, et non le long des bronches, puis converge vers le hile du poumon gauche, en direction de la veine lingulaire supérieure",
+   "terminaison": {
+    "veine": "veine-lingulaire-du-poumon-gauche",
+    "texte": "Forme avec la veine lingulaire supérieure la veine lingulaire, tributaire de la veine pulmonaire supérieure gauche"
+   },
+   "drainage": {
+    "texte": "Segment lingulaire inférieur du lobe supérieur gauche",
+    "structures": [
+     "lobe-superieur-du-poumon-gauche"
+    ]
+   },
+   "clinique": "Ses veines suivent les cloisons entre segments : repère pour séparer la lingula du reste du lobe supérieur lors d'une segmentectomie",
+   "memo": "Lingulaire inférieure : le bas de la petite langue du poumon gauche",
+   "variantes": null,
+   "sources": [
+    "elsevier-vp-gauche",
+    "amegroups-pulmonaires",
+    "radiopaedia-veines-pulmonaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-lingulaire-superieure-du-poumon-gauche",
+   "resume": "La veine du segment lingulaire supérieur : elle s'unit à la lingulaire inférieure pour former la veine lingulaire.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Capillaires du segment lingulaire supérieur du lobe supérieur gauche"
+   },
+   "trajet": "Court dans les cloisons situées entre les segments, et non le long des bronches, puis converge vers le hile du poumon gauche, en direction de la veine lingulaire inférieure",
+   "terminaison": {
+    "veine": "veine-lingulaire-du-poumon-gauche",
+    "texte": "Forme avec la veine lingulaire inférieure la veine lingulaire, tributaire de la veine pulmonaire supérieure gauche"
+   },
+   "drainage": {
+    "texte": "Segment lingulaire supérieur du lobe supérieur gauche",
+    "structures": [
+     "lobe-superieur-du-poumon-gauche"
+    ]
+   },
+   "clinique": "La lingula, équivalent à gauche du lobe moyen droit, est drainée par la veine pulmonaire supérieure gauche, comme le lobe supérieur",
+   "memo": "Lingulaire supérieure : le haut de la petite langue du poumon gauche",
+   "variantes": null,
+   "sources": [
+    "elsevier-vp-gauche",
+    "amegroups-pulmonaires",
+    "radiopaedia-veines-pulmonaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-mediale-du-poumon-droit",
+   "resume": "La veine du segment médial du lobe moyen : elle s'unit à la veine latérale pour former la veine du lobe moyen.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Capillaires du segment médial du lobe moyen droit"
+   },
+   "trajet": "Court dans les cloisons situées entre les segments, et non le long des bronches, puis converge vers le hile du poumon droit, en direction de la veine latérale, avec laquelle elle forme la veine du lobe moyen",
+   "terminaison": {
+    "veine": null,
+    "texte": "Forme avec la veine latérale la veine du lobe moyen, qui rejoint la veine pulmonaire supérieure droite ; celle-ci s'ouvre dans l'atrium gauche",
+    "viscere": "atrium-gauche"
+   },
+   "drainage": {
+    "texte": "Segment médial du lobe moyen droit",
+    "structures": [
+     "lobe-moyen-du-poumon-droit"
+    ]
+   },
+   "clinique": "Le lobe moyen droit est drainé par la veine pulmonaire supérieure et non par l'inférieure, ce qui compte pour lire les scanners avant une lobectomie",
+   "memo": "Médiale : la veine du côté du cœur, dans le lobe moyen",
+   "variantes": null,
+   "sources": [
+    "elsevier-vp-droite",
+    "radiopaedia-veines-pulmonaires",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-pulmonaire-inferieure-gauche",
+   "resume": "La veine du lobe inférieur gauche : elle ramène du sang oxygéné à l'atrium gauche par sa partie postéro-inférieure.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Union de la veine du segment supérieur et de la veine basale commune du lobe inférieur gauche"
+   },
+   "trajet": "Gagne le hile du poumon gauche, passe en avant de l'aorte thoracique descendante, perce le péricarde fibreux et s'ouvre dans l'atrium gauche",
+   "affluents": [
+    {
+     "veine": "veine-superieure-du-poumon-gauche",
+     "texte": "Veine du segment supérieur"
+    },
+    {
+     "veine": "veine-basale-superieure-du-poumon-gauche",
+     "texte": "Veine basale supérieure (par la basale commune)"
+    },
+    {
+     "veine": "veine-basale-inferieure-du-poumon-gauche",
+     "texte": "Veine basale inférieure (par la basale commune)"
+    }
+   ],
+   "terminaison": {
+    "veine": null,
+    "texte": "S'ouvre dans la partie postéro-inférieure de l'atrium gauche",
+    "viscere": "atrium-gauche"
+   },
+   "drainage": {
+    "texte": "Lobe inférieur gauche",
+    "structures": [
+     "lobe-inferieur-du-poumon-gauche"
+    ]
+   },
+   "rapports": "Elle est la plus basse des deux veines gauches au hile ; les veines gauches passent en avant de l'aorte thoracique descendante",
+   "clinique": "Les veines pulmonaires sont un foyer fréquent de fibrillation atriale, traitée par isolation des veines au cathéter d'ablation",
+   "memo": "Inférieure gauche : le sang rouge du lobe inférieur, qui entre en bas et en arrière de l'atrium gauche",
+   "variantes": "Les deux veines pulmonaires gauches peuvent s'unir en un tronc court ou long avant l'atrium, chez environ un quart des personnes",
+   "sources": [
+    "elsevier-vp-inferieure-gauche",
+    "gray1918",
+    "radiopaedia-veines-pulmonaires",
+    "kenhub-pulmonaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-pulmonaire-superieure-gauche",
+   "resume": "La veine du lobe supérieur gauche et de la lingula : elle ramène du sang oxygéné à l'atrium gauche.",
+   "plan": "pulmonaire",
+   "origine": {
+    "veine": null,
+    "texte": "Union des veines apicopostérieure, antérieure et lingulaire du lobe supérieur gauche"
+   },
+   "trajet": "Descend obliquement vers l'intérieur au hile, en avant et un peu au-dessous de l'artère pulmonaire, passe devant l'aorte thoracique descendante, traverse le péricarde et s'ouvre dans l'atrium gauche",
+   "affluents": [
+    {
+     "veine": "veine-apicoposterieure-du-poumon-gauche",
+     "texte": "Veine apicopostérieure"
+    },
+    {
+     "veine": "veine-anterieure-du-poumon-gauche",
+     "texte": "Veine antérieure"
+    },
+    {
+     "veine": "veine-lingulaire-du-poumon-gauche",
+     "texte": "Veine lingulaire"
+    }
+   ],
+   "terminaison": {
+    "veine": null,
+    "texte": "S'ouvre dans la partie haute de la paroi postérieure de l'atrium gauche",
+    "viscere": "atrium-gauche"
+   },
+   "drainage": {
+    "texte": "Lobe supérieur gauche et lingula",
+    "structures": [
+     "lobe-superieur-du-poumon-gauche"
+    ]
+   },
+   "clinique": "Elle porte près de la moitié des foyers veineux de fibrillation atriale ; son manchon musculaire est la cible de l'isolation des veines pulmonaires",
+   "memo": "Supérieure gauche : lobe supérieur plus lingula, devant l'artère, en haut de l'atrium gauche",
+   "variantes": "Elle s'unit à l'inférieure en un tronc commun chez environ une personne sur quatre",
+   "sources": [
+    "gray1918",
+    "elsevier-vp-gauche",
+    "radiopaedia-veines-pulmonaires",
+    "wikipedia-veine-pulmonaire"
+   ],
+   "divergences": "Gray compte deux veines gauches ouvertes séparément ou par un orifice commun ; Wikipedia chiffre le tronc commun à environ 25 %"
+  },
+  {
+   "id": "veine-sous-claviere",
+   "resume": "La veine qui prolonge l'axillaire sous la clavicule : elle rejoint la jugulaire interne pour former la veine brachio-céphalique.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "veine-axillaire",
+    "texte": "Prolonge la veine axillaire au bord latéral de la première côte"
+   },
+   "trajet": "Passe du bord latéral de la première côte jusqu'à l'extrémité sternale de la clavicule, puis s'unit à la veine jugulaire interne",
+   "affluents": [
+    {
+     "veine": "veine-jugulaire-externe",
+     "texte": "Veine jugulaire externe"
+    },
+    {
+     "veine": "veine-jugulaire-anterieure",
+     "texte": "Veine jugulaire antérieure (parfois)"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-brachiocephalique",
+    "texte": "S'unit à la veine jugulaire interne, derrière l'articulation sterno-claviculaire, pour former la veine brachio-céphalique"
+   },
+   "drainage": {
+    "texte": "Membre supérieur (par l'axillaire) et veines superficielles du cou (par la jugulaire externe)",
+    "structures": []
+   },
+   "rapports": "Une paire de valves se trouve à environ 2,5 cm de sa terminaison",
+   "clinique": "Voie d'abord classique des cathéters veineux centraux ; à gauche, le canal thoracique s'y jette, à droite le canal lymphatique droit",
+   "memo": "Sous-clavière : sous la clavicule, du bord de la première côte à l'union avec la jugulaire interne",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-axillaire",
+    "openstax-20-5"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-subscapulaire",
+   "resume": "La veine de la région scapulaire : née de l'union de la circonflexe de la scapula et de la thoraco-dorsale, elle se jette dans la veine axillaire.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "veine-circonflexe-de-la-scapula",
+    "texte": "Union des veines circonflexe de la scapula et thoraco-dorsale"
+   },
+   "trajet": "Suit l'artère subscapulaire sur un court trajet, puis se jette dans la veine axillaire",
+   "affluents": [
+    {
+     "veine": "veine-circonflexe-de-la-scapula",
+     "texte": "Veine circonflexe de la scapula"
+    },
+    {
+     "veine": "veine-thoracodorsale",
+     "texte": "Veine thoraco-dorsale"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-axillaire",
+    "texte": "Se jette dans la veine axillaire après un court trajet"
+   },
+   "drainage": {
+    "texte": "Région scapulaire, muscle subscapulaire et grand dorsal",
+    "structures": [
+     "subscapulaire",
+     "grand-dorsal"
+    ]
+   },
+   "rapports": "Elle accompagne l'artère subscapulaire",
+   "clinique": "Son pédicule, avec l'artère, sert de base aux lambeaux libres de la scapula et du grand dorsal ; on le retrouve lors d'un curage axillaire",
+   "memo": "Subscapulaire : circonflexe plus thoraco-dorsale, deux veines qui font une, courte, vers l'axillaire",
+   "variantes": null,
+   "sources": [
+    "elsevier-subscapulaire",
+    "elsevier-thoracodorsale",
+    "kenhub-axillaire",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-suprascapulaire",
+   "resume": "La veine de la région postérieure de la scapula : elle accompagne l'artère suprascapulaire et se jette dans la veine jugulaire externe.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Région postérieure de la scapula"
+   },
+   "trajet": "Accompagne l'artère suprascapulaire et passe au-dessus du ligament transverse supérieur de la scapula, alors que le nerf passe en dessous, puis rejoint la veine jugulaire externe près de sa terminaison",
+   "terminaison": {
+    "veine": "veine-jugulaire-externe",
+    "texte": "Se jette dans la veine jugulaire externe, près de sa terminaison dans la sous-clavière"
+   },
+   "drainage": {
+    "texte": "Région postérieure de la scapula, supra-épineux et infra-épineux",
+    "structures": [
+     "supra-epineux",
+     "infra-epineux"
+    ]
+   },
+   "rapports": "Elle accompagne l'artère suprascapulaire",
+   "clinique": "À l'incisure scapulaire, vaisseaux au-dessus du ligament et nerf en dessous : la compression du nerf supra-scapulaire en ce point est une cause d'épaule douloureuse",
+   "memo": "Suprascapulaire : l'artère et la veine passent au-dessus du ligament, le nerf dessous",
+   "variantes": null,
+   "sources": [
+    "wikipedia-suprascapulaire",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-thoracodorsale",
+   "resume": "La veine du grand dorsal : elle rejoint la circonflexe de la scapula pour former la veine subscapulaire.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Muscle grand dorsal"
+   },
+   "trajet": "Accompagne l'artère thoraco-dorsale le long du grand dorsal, puis s'unit à la veine circonflexe de la scapula pour former la veine subscapulaire",
+   "terminaison": {
+    "veine": "veine-subscapulaire",
+    "texte": "S'unit à la veine circonflexe de la scapula pour former la veine subscapulaire"
+   },
+   "drainage": {
+    "texte": "Muscle grand dorsal",
+    "structures": [
+     "grand-dorsal"
+    ]
+   },
+   "rapports": "Elle accompagne l'artère thoraco-dorsale",
+   "clinique": "Son pédicule, avec l'artère, nourrit le lambeau libre du grand dorsal ; elle est exposée lors d'un curage axillaire",
+   "memo": "Thoraco-dorsale : la veine du grand dorsal, qui fait la subscapulaire avec la circonflexe",
+   "variantes": null,
+   "sources": [
+    "elsevier-thoracodorsale",
+    "elsevier-subscapulaire",
+    "kenhub-axillaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-hepatiques",
+   "resume": "Les trois grandes veines du foie : elles évacuent le sang filtré dans la veine cave inférieure, sous le diaphragme.",
+   "plan": "groupe",
+   "origine": {
+    "veine": null,
+    "texte": "Veines centrolobulaires du foie, là où se terminent l'artère hépatique et la veine porte"
+   },
+   "trajet": "Convergent vers la face postérieure du foie, où trois grandes veines (droite, moyenne, gauche) s'ouvrent dans la veine cave inférieure, tandis que de petites veines drainent le lobe droit et le lobe caudé ; sans valves, au contact du tissu hépatique",
+   "terminaison": {
+    "veine": "veine-cave-inferieure",
+    "texte": "S'ouvrent dans la veine cave inférieure, à la face postérieure du foie, juste sous le diaphragme"
+   },
+   "drainage": {
+    "texte": "Tout le foie : la droite draine les segments V à VIII, la moyenne IV, V et VIII, la gauche II à IV ; le lobe caudé se vide directement dans la cave",
+    "structures": [
+     "foie"
+    ]
+   },
+   "rapports": "Elles cheminent seules, en contact direct avec le tissu hépatique ; la gauche est toujours en avant de la branche gauche de la veine porte",
+   "clinique": "Leur thrombose donne le syndrome de Budd-Chiari : douleur, ascite, gros foie ; leurs trajets séparent les segments du foie, repères de la chirurgie hépatique",
+   "memo": "Deux entrées (artère et porte), une sortie : les trois hépatiques, droite, moyenne et gauche, vont à la cave",
+   "variantes": "La veine hépatique droite est unique et dominante chez environ 70 % des personnes ; elle peut aussi se diviser tôt ou être multiple",
+   "sources": [
+    "gray1918",
+    "radiopaedia-hepatiques",
+    "wikipedia-budd-chiari",
+    "kenhub-porte"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-thoraciques-internes",
+   "resume": "Les veines de la paroi antérieure du thorax : elles accompagnent l'artère thoracique interne près du sternum et se jettent dans la veine brachio-céphalique.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Veines épigastrique supérieure et musculo-phrénique, avec les veines intercostales antérieures"
+   },
+   "trajet": "Une ou deux veines accompagnent l'artère thoracique interne, sur son bord médial dans la moitié inférieure, puis s'unissent en un tronc unique qui monte jusqu'à la veine brachio-céphalique",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines intercostales antérieures"
+    },
+    {
+     "veine": "veines-musculophreniques",
+     "texte": "Veines musculo-phréniques"
+    },
+    {
+     "veine": "veines-epigastriques-superieures",
+     "texte": "Veines épigastriques supérieures"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-brachiocephalique",
+    "texte": "Se jettent dans la veine brachio-céphalique du même côté"
+   },
+   "drainage": {
+    "texte": "Paroi antérieure du thorax et du haut de l'abdomen, diaphragme",
+    "structures": [
+     "diaphragme"
+    ]
+   },
+   "rapports": "Juste en dehors du sternum, larges de 2 à 3 mm",
+   "clinique": "Collatérale entre les deux veines caves par les épigastriques ; une sonde veineuse centrale mal placée dans cette veine peut donner un épanchement pleural",
+   "memo": "Thoraciques internes : des deux côtés du sternum, avec l'artère, vers la brachio-céphalique",
+   "variantes": "Elles se divisent souvent en deux troncs ; la bifurcation siège entre les côtes 2 et 4 à droite et 3 et 4 à gauche",
+   "sources": [
+    "gray1918",
+    "wikipedia-thoracique-interne",
+    "openstax-20-5"
+   ],
+   "divergences": null
+  }
+ ]
+}

@@ -1,0 +1,880 @@
+{
+ "lot": "ligament-sup",
+ "couche": "ligament",
+ "structures": [
+  {
+   "id": "bourse-sous-tendineuse-du-muscle-trapeze",
+   "nom": "Bourse sous-tendineuse du muscle trapèze",
+   "latin": "Bursa subtendinea musculi trapezii",
+   "anglais": "Subtendinous bursa of trapezius muscle",
+   "region": "epaule",
+   "rang": 2,
+   "officiel": "Bourse sous-tendineuse du muscle trapèze",
+   "ta2": "2555",
+   "nature": "bourse"
+  },
+  {
+   "id": "capsule-articulaire-de-l-articulation-glenohumerale",
+   "nom": "Capsule articulaire de l'articulation glénohumérale",
+   "latin": "Capsula articularis articulatio glenohumeralis",
+   "anglais": "Articular capsule of glenohumeral joint",
+   "region": "epaule",
+   "rang": 2,
+   "officiel": "Capsule articulaire de l'articulation glénohumérale",
+   "ta2": "7138",
+   "nature": "capsule"
+  },
+  {
+   "id": "capsules-articulaires-des-art-interphalangiennes-distales",
+   "nom": "Capsules articulaires des art. interphalangiennes distales",
+   "latin": "Capsulae articulareae articulationes interphalangeae distalis",
+   "anglais": "Articular capsules of distal interphalangeal joints",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Capsules articulaires des art. interphalangiennes distales",
+   "ta2": "7141",
+   "nature": "capsule"
+  },
+  {
+   "id": "capsules-articulaires-des-articulations-metacarpophalang",
+   "nom": "Capsules articulaires des articulations métacarpophalang.",
+   "latin": "Capsulae articulariae articulationes metacarpophalnageae",
+   "anglais": "Articular capsules of metacarpophalangeal joints",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Capsules articulaires des articulations métacarpophalang.",
+   "ta2": "1835*1",
+   "nature": "capsule"
+  },
+  {
+   "id": "ligaments-interphalangiens-collateraux-de-la-main",
+   "nom": "Ligaments interphalangiens collatéraux de la main",
+   "latin": "Ligamenta interphalangea collateralia manus",
+   "anglais": "Collateral interphalangeal ligaments of hand",
+   "region": "main",
+   "rang": 2,
+   "officiel": "Ligaments interphalangiens collatéraux de la main",
+   "ta2": "1843"
+  },
+  {
+   "id": "bourse-bicipitoradiale",
+   "nom": "Bourse bicipitoradiale",
+   "latin": "Bursa bicipitoradialis",
+   "anglais": "Bicipitoradial bursa",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Bourse bicipitoradiale",
+   "ta2": "2567",
+   "nature": "bourse"
+  },
+  {
+   "id": "corde-oblique",
+   "nom": "Corde oblique",
+   "latin": "Chorda obliqua",
+   "anglais": "Oblique cord",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Corde oblique",
+   "ta2": "1762"
+  },
+  {
+   "id": "ligament-radio-ulnaire-palmaire",
+   "nom": "Ligament radio-ulnaire palmaire",
+   "latin": "Ligamentum radioulnare palmare",
+   "anglais": "Palmar radio-ulnar ligament",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Ligament radio-ulnaire palmaire",
+   "ta2": "1785"
+  },
+  {
+   "id": "membrane-interosseuse-de-l-avant-bras",
+   "nom": "Membrane interosseuse de l'avant-bras",
+   "latin": "Membrana interossea antebrachii",
+   "anglais": "Interosseous membrane of forearm",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Membrane interosseuse de l'avant-bras",
+   "ta2": "1761",
+   "nature": "membrane"
+  },
+  {
+   "id": "bourse-subtendineuse-du-muscle-grand-rond",
+   "nom": "Bourse subtendineuse du muscle grand rond",
+   "latin": "Bursa subtendinea musculi teretis majoris",
+   "anglais": "Subtendinous bursa of teres major muscle",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Bourse subtendineuse du muscle grand rond",
+   "ta2": "2562",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-subtendineuse-du-muscle-triceps-brachial",
+   "nom": "Bourse subtendineuse du muscle triceps brachial",
+   "latin": "Bursa subtendinea musculi tricipitis",
+   "anglais": "Subtendinous bursa of triceps brachii muscle",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Bourse subtendineuse du muscle triceps brachial",
+   "ta2": "2566",
+   "nature": "bourse"
+  },
+  {
+   "id": "capsule-articulaire-de-l-articulation-du-coude",
+   "nom": "Capsule articulaire de l'articulation du coude",
+   "latin": "Capsula articularis articulation cubiti",
+   "anglais": "Articular capsule of elbow joint",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Capsule articulaire de l'articulation du coude",
+   "ta2": "1772*1",
+   "nature": "capsule"
+  },
+  {
+   "id": "ligament-annulaire-du-radius",
+   "nom": "Ligament annulaire du radius",
+   "latin": "Ligamentum anulare radii",
+   "anglais": "Annular ligament of radius",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Ligament annulaire du radius",
+   "ta2": "1778"
+  },
+  {
+   "id": "ligament-carre",
+   "nom": "Ligament carré",
+   "latin": "Ligamentum quadratum",
+   "anglais": "Quadrate ligament",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Ligament carré",
+   "ta2": "1779"
+  },
+  {
+   "id": "ligament-collateral-radial",
+   "nom": "Ligament collatéral radial",
+   "latin": "Ligamentum collaterale radiale cubiti",
+   "anglais": "Radial collateral ligament",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Ligament collatéral radial",
+   "ta2": "1777"
+  },
+  {
+   "id": "ligament-collateral-ulnaire",
+   "nom": "Ligament collatéral ulnaire",
+   "latin": "Ligamentum collaterale ulnare cubiti",
+   "anglais": "Ulnar collateral ligament",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Ligament collatéral ulnaire",
+   "ta2": "1776"
+  },
+  {
+   "id": "bourrelet-glenoidal",
+   "nom": "Bourrelet glénoïdal",
+   "latin": "Labrum glenoideum",
+   "anglais": "Glenoid labrum",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Bourrelet glénoïdal",
+   "ta2": "1765",
+   "nature": "labrum"
+  },
+  {
+   "id": "bourse-acromiale-sous-cutanee",
+   "nom": "Bourse acromiale sous-cutanée",
+   "latin": "(Bursa subcutanea acromialis)",
+   "anglais": "Subcutaneous acromial bursa",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Bourse acromiale sous-cutanée",
+   "ta2": "2556",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-coracobrachiale",
+   "nom": "Bourse coracobrachiale",
+   "latin": "(Bursa musculi coracobrachialis)",
+   "anglais": "Coracobrachial bursa",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Bourse coracobrachiale",
+   "ta2": "2559",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-subacromiale",
+   "nom": "Bourse subacromiale",
+   "latin": "Bursa subacromialis",
+   "anglais": "Subacromial bursa",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Bourse subacromiale",
+   "ta2": "2557",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-subdeltoidienne",
+   "nom": "Bourse subdeltoïdienne",
+   "latin": "Bursa subdeltoidea",
+   "anglais": "Subdeltoid bursa",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Bourse subdeltoïdienne",
+   "ta2": "2558",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-subtendineuse-du-muscle-infra-epineux",
+   "nom": "Bourse subtendineuse du muscle infra-épineux",
+   "latin": "Bursa subtendinea musculi infraspinati",
+   "anglais": "Subtendinous bursa of infraspinatus muscle",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Bourse subtendineuse du muscle infra-épineux",
+   "ta2": "2560",
+   "nature": "bourse"
+  },
+  {
+   "id": "capsule-articulaire-de-l-articulation-acromio-claviculaire",
+   "nom": "Capsule articulaire de l'articulation acromio-claviculaire",
+   "latin": "Capsula articularis articularis acromioclavicularis",
+   "anglais": "Articular capsule of acromioclavicular joint",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Capsule articulaire de l'articulation acromio-claviculaire",
+   "ta2": "7152",
+   "nature": "capsule"
+  },
+  {
+   "id": "capsule-articulaire-de-l-articulation-sternoclaviculaire",
+   "nom": "Capsule articulaire de l'articulation sternoclaviculaire",
+   "latin": "Capsula articularis articuli sternoclavicularis",
+   "anglais": "Articular capsule of sternoclavicular joint",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Capsule articulaire de l'articulation sternoclaviculaire",
+   "ta2": "7153",
+   "nature": "capsule"
+  },
+  {
+   "id": "disque-articulaire-de-l-articulation-acromioclaviculaire",
+   "nom": "Disque articulaire de l'articulation acromioclaviculaire",
+   "latin": "Discus articulationis acromioclavicularis",
+   "anglais": "Articular disc of acromioclavicular joint",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Disque articulaire de l'articulation acromioclaviculaire",
+   "ta2": "1746",
+   "nature": "disque"
+  },
+  {
+   "id": "disque-articulaire-de-l-articulation-sternoclaviculaire",
+   "nom": "Disque articulaire de l'articulation sternoclaviculaire",
+   "latin": "Discus articulationis sternoclavicularis",
+   "anglais": "Articular disc of sternoclavicular joint",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Disque articulaire de l'articulation sternoclaviculaire",
+   "ta2": "1751",
+   "nature": "disque"
+  },
+  {
+   "id": "ligament-acromioclaviculaire",
+   "nom": "Ligament acromioclaviculaire",
+   "latin": "Ligamentum acromioclaviculare",
+   "anglais": "Acromioclavicular ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament acromioclaviculaire",
+   "ta2": "1745"
+  },
+  {
+   "id": "ligament-conoide",
+   "nom": "Ligament conoïde",
+   "latin": "Ligamentum conoideum",
+   "anglais": "Conoid ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament conoïde",
+   "ta2": "1749"
+  },
+  {
+   "id": "ligament-coraco-acromial",
+   "nom": "Ligament coraco-acromial",
+   "latin": "Ligamentum coracoacromiale",
+   "anglais": "Coraco-acromial ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament coraco-acromial",
+   "ta2": "1740"
+  },
+  {
+   "id": "ligament-coracohumeral",
+   "nom": "Ligament coracohuméral",
+   "latin": "Ligamentum coracohumerale",
+   "anglais": "Coracohumeral ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament coracohuméral",
+   "ta2": "1770"
+  },
+  {
+   "id": "ligament-costoclaviculaire",
+   "nom": "Ligament costoclaviculaire",
+   "latin": "Ligamentum costoclaviculare",
+   "anglais": "Costoclavicular ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament costoclaviculaire",
+   "ta2": "1756"
+  },
+  {
+   "id": "ligament-glenohumeral-inferieur",
+   "nom": "Ligament glénohuméral inférieur",
+   "latin": "Ligamentum glenohumerale inferius",
+   "anglais": "Inferior glenohumeral ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament glénohuméral inférieur",
+   "ta2": "1769"
+  },
+  {
+   "id": "ligament-glenohumeral-moyen",
+   "nom": "Ligament glénohuméral moyen",
+   "latin": "Ligamentum glenohumerale medium",
+   "anglais": "Middle glenohumeral ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament glénohuméral moyen",
+   "ta2": "1768"
+  },
+  {
+   "id": "ligament-glenohumeral-superieur",
+   "nom": "Ligament glénohuméral supérieur",
+   "latin": "Ligamentum glenohumerale superius",
+   "anglais": "Superior glenohumeral ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament glénohuméral supérieur",
+   "ta2": "1767"
+  },
+  {
+   "id": "ligament-interclaviculaire",
+   "nom": "Ligament interclaviculaire",
+   "latin": "Ligamentum interclaviculare",
+   "anglais": "Interclavicular ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament interclaviculaire",
+   "ta2": "1757"
+  },
+  {
+   "id": "ligament-sternoclaviculaire-anterieur",
+   "nom": "Ligament sternoclaviculaire antérieur",
+   "latin": "Ligamentum sternoclaviculare anterius",
+   "anglais": "Anterior sternoclavicular ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament sternoclaviculaire antérieur",
+   "ta2": "1754"
+  },
+  {
+   "id": "ligament-sternoclaviculaire-posterieur",
+   "nom": "Ligament sternoclaviculaire postérieur",
+   "latin": "Ligamentum sternoclaviculare posterius",
+   "anglais": "Posterior sternoclavicular ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament sternoclaviculaire postérieur",
+   "ta2": "1755"
+  },
+  {
+   "id": "ligament-transverse-de-l-humerus",
+   "nom": "Ligament transverse de l'humérus",
+   "latin": "Ligamentum transversum humeri",
+   "anglais": "Transverse humeral ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament transverse de l'humérus",
+   "ta2": "1771"
+  },
+  {
+   "id": "ligament-transverse-inferieur-de-la-scapula",
+   "nom": "Ligament transverse inférieur de la scapula",
+   "latin": "Ligamentum transversum inferius scapulae",
+   "anglais": "Inferior transverse scapular ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament transverse inférieur de la scapula",
+   "ta2": "1742"
+  },
+  {
+   "id": "ligament-transverse-superieur-de-la-scapula",
+   "nom": "Ligament transverse supérieur de la scapula",
+   "latin": "Ligamentum transversum superius scapulae",
+   "anglais": "Superior transverse scapular ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament transverse supérieur de la scapula",
+   "ta2": "1741"
+  },
+  {
+   "id": "ligament-trapezoide",
+   "nom": "Ligament trapézoïde",
+   "latin": "Ligamentum trapezoideum",
+   "anglais": "Trapezoid ligament",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Ligament trapézoïde",
+   "ta2": "1748"
+  },
+  {
+   "id": "bourse-trochanterique-du-moyen-fessier",
+   "nom": "Bourse trochantérique du moyen fessier",
+   "latin": "Bursa trochanterica musculi glutei medii",
+   "anglais": "Trochanteric bursa of gluteus medius muscle",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Bourse trochantérique du moyen fessier",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-trochanterique-du-muscle-petit-fessier",
+   "nom": "Bourse trochantérique du muscle petit fessier",
+   "latin": "Bursa trochanterica musculi glutei minimi",
+   "anglais": "Trochanteric bursa of gluteus minimus muscle",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Bourse trochantérique du muscle petit fessier",
+   "ta2": "2726",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-trochanterique-sous-cutanee",
+   "nom": "Bourse trochantérique sous-cutanée",
+   "latin": "Bursa subcutanea trochanterica",
+   "anglais": "Subcutaneous trochanteric bursa",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Bourse trochantérique sous-cutanée",
+   "ta2": "2723",
+   "nature": "bourse"
+  },
+  {
+   "id": "capsule-articulaire-de-l-articulation-radiocarpienne",
+   "nom": "Capsule articulaire de l'articulation radiocarpienne",
+   "latin": "Capsula articularis articulatio radiocarpea",
+   "anglais": "Articular capsule of radiocarpal joint",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Capsule articulaire de l'articulation radiocarpienne",
+   "ta2": "1786*1",
+   "nature": "capsule"
+  },
+  {
+   "id": "capsules-articulaires-des-art-interphalangiennes-proximales",
+   "nom": "Capsules articulaires des art. interphalangiennes proximales",
+   "latin": "Capsulae articulareae art. interphalangeae proximalis",
+   "anglais": "Articular capsules of proximal interphalangeal joints",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Capsules articulaires des art. interphalangiennes proximales",
+   "ta2": "7140",
+   "nature": "capsule"
+  },
+  {
+   "id": "disque-articulaire-de-l-articulation-radio-ulnaire-distale",
+   "nom": "Disque articulaire de l'articulation radio-ulnaire distale",
+   "latin": "Discus articulationis radioulnaris distalis",
+   "anglais": "Articular disc of distal radio-ulnar joint",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Disque articulaire de l'articulation radio-ulnaire distale",
+   "ta2": "1782",
+   "nature": "disque"
+  },
+  {
+   "id": "ligament-collateral-radial-du-carpe",
+   "nom": "Ligament collatéral radial du carpe",
+   "latin": "Ligamentum collaterale radiale carpi",
+   "anglais": "Radial collateral ligament of wrist joint",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament collatéral radial du carpe",
+   "ta2": "1801"
+  },
+  {
+   "id": "ligament-collateral-ulnaire-du-carpe",
+   "nom": "Ligament collatéral ulnaire du carpe",
+   "latin": "Ligamentum collaterale ulnare carpi",
+   "anglais": "Ulnar collateral ligament of wrist joint",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament collatéral ulnaire du carpe",
+   "ta2": "1800"
+  },
+  {
+   "id": "ligament-hamatocapitatum",
+   "nom": "Ligament hamatocapitatum",
+   "latin": "Ligamentum capitohamatum palmare",
+   "anglais": "Palmar capitohamate ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament hamatocapitatum",
+   "ta2": "1815"
+  },
+  {
+   "id": "ligament-interosseux-capitohamatum",
+   "nom": "Ligament interosseux capitohamatum",
+   "latin": "Ligamentum capitohamatum interosseum",
+   "anglais": "Capitohamate interosseous ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament interosseux capitohamatum",
+   "ta2": "1821"
+  },
+  {
+   "id": "ligament-interosseux-lunotriquetral",
+   "nom": "Ligament interosseux lunotriquetral",
+   "latin": "Ligamentum lunotriquetrum interosseum",
+   "anglais": "Lunotriquetral interosseous ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament interosseux lunotriquetral",
+   "ta2": "1823"
+  },
+  {
+   "id": "ligament-interosseux-scapholunatum",
+   "nom": "Ligament interosseux scapholunatum",
+   "latin": "Ligamentum scapholunatum interosseum",
+   "anglais": "Scapholunate interosseous ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament interosseux scapholunatum",
+   "ta2": "1819"
+  },
+  {
+   "id": "ligament-interosseux-trapeziotrapezoidal",
+   "nom": "Ligament interosseux trapeziotrapezoïdal",
+   "latin": "Ligamentum trapeziotrapezoideum interosseum",
+   "anglais": "Trapeziotrapezoidal interosseous ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament interosseux trapeziotrapezoïdal",
+   "ta2": "1820"
+  },
+  {
+   "id": "ligament-interosseux-trapezoidocapitatum",
+   "nom": "Ligament interosseux trapezoïdocapitatum",
+   "latin": "Ligamentum trapezoideocapitatum interosseum",
+   "anglais": "Trapezoideocapitate interosseous ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament interosseux trapezoïdocapitatum",
+   "ta2": "1822"
+  },
+  {
+   "id": "ligament-lunotriquetral-palmaire",
+   "nom": "Ligament lunotriquetral palmaire",
+   "latin": "Ligamentum lunotriquetrum palmare",
+   "anglais": "Palmar lunotriquetral ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament lunotriquetral palmaire",
+   "ta2": "1817"
+  },
+  {
+   "id": "ligament-metacarpien-transverse-profond",
+   "nom": "Ligament métacarpien transverse profond",
+   "latin": "Ligamentum metacarpeum transversum profundum",
+   "anglais": "Deep transverse metacarpal ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament métacarpien transverse profond",
+   "ta2": "1838"
+  },
+  {
+   "id": "ligament-pisohamatum",
+   "nom": "Ligament pisohamatum",
+   "latin": "Ligamentum pisohamatum",
+   "anglais": "Pisohamate ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament pisohamatum",
+   "ta2": "1825"
+  },
+  {
+   "id": "ligament-pisometacarpien",
+   "nom": "Ligament pisométacarpien",
+   "latin": "Ligamentum pisometacarpeum",
+   "anglais": "Pisometacarpal ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament pisométacarpien",
+   "ta2": "1826"
+  },
+  {
+   "id": "ligament-pisotriquetral",
+   "nom": "Ligament pisotriquetral",
+   "latin": "Ligamentum pisotriquetrum",
+   "anglais": "Pisotriquetral ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament pisotriquetral",
+   "ta2": "1814"
+  },
+  {
+   "id": "ligament-radio-scaphocapitatum",
+   "nom": "Ligament radio-scaphocapitatum",
+   "latin": "Ligamentum radioscaphocapitatum",
+   "anglais": "Radioscaphocapitate ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament radio-scaphocapitatum",
+   "ta2": "1789"
+  },
+  {
+   "id": "ligament-radio-ulnaire-dorsal",
+   "nom": "Ligament radio-ulnaire dorsal",
+   "latin": "Ligamentum radioulnare dorsale",
+   "anglais": "Dorsal radio-ulnar ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament radio-ulnaire dorsal",
+   "ta2": "1784"
+  },
+  {
+   "id": "ligament-radiocapitatum",
+   "nom": "Ligament radiocapitatum",
+   "latin": "Ligamentum radiocapitatum",
+   "anglais": "Radiocapitate ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament radiocapitatum",
+   "ta2": "1790"
+  },
+  {
+   "id": "ligament-radiocarpien-dorsal",
+   "nom": "Ligament radiocarpien dorsal",
+   "latin": "Ligamentum radiocarpeum dorsale",
+   "anglais": "Dorsal radiocarpal ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament radiocarpien dorsal",
+   "ta2": "1787"
+  },
+  {
+   "id": "ligament-radie-du-carpe",
+   "nom": "Ligament radié du carpe",
+   "latin": "Ligamentum radiatum carpi",
+   "anglais": "Radiate carpal ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament radié du carpe",
+   "ta2": "1805"
+  },
+  {
+   "id": "ligament-scaphocapitatum",
+   "nom": "Ligament scaphocapitatum",
+   "latin": "Ligamentum scaphocapitatum",
+   "anglais": "Scaphocapitate ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament scaphocapitatum",
+   "ta2": "1810"
+  },
+  {
+   "id": "ligament-scaphotrapeziotrapezoidal",
+   "nom": "Ligament scaphotrapéziotrapézoïdal",
+   "latin": "Ligamentum scaphotrapeziotrapezoideum",
+   "anglais": "Scaphotrapeziotrapezoidal ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament scaphotrapéziotrapézoïdal",
+   "ta2": "1809"
+  },
+  {
+   "id": "ligament-scaphotriquetral-dorsal",
+   "nom": "Ligament scaphotriquetral dorsal",
+   "latin": "Ligamentum scaphotriquetrum dorsale",
+   "anglais": "Dorsal scaphotriquetral ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament scaphotriquetral dorsal",
+   "ta2": "1807"
+  },
+  {
+   "id": "ligament-scaphotriquetral-palmaire",
+   "nom": "Ligament scaphotriquétral palmaire",
+   "latin": "Ligamentum scaphotriquetrum palmare",
+   "anglais": "Palmar scaphotriquetral ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament scaphotriquétral palmaire",
+   "ta2": "1811"
+  },
+  {
+   "id": "ligament-trapezoidocapitatum",
+   "nom": "Ligament trapézoïdocapitatum",
+   "latin": "Ligamentum trapezoideocapitatum palmare",
+   "anglais": "Palmar trapezoideocapitate ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament trapézoïdocapitatum",
+   "ta2": "1816"
+  },
+  {
+   "id": "ligament-triquetrocapitatum",
+   "nom": "Ligament triquetrocapitatum",
+   "latin": "Ligamentum triquetrocapitatum",
+   "anglais": "Triquetrocapitate ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament triquetrocapitatum",
+   "ta2": "1812"
+  },
+  {
+   "id": "ligament-triquetrohamatum",
+   "nom": "Ligament triquetrohamatum",
+   "latin": "Ligamentum triquetrohamatum",
+   "anglais": "Triquetrohamate ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament triquetrohamatum",
+   "ta2": "1813"
+  },
+  {
+   "id": "ligament-ulnocapitatum",
+   "nom": "Ligament ulnocapitatum",
+   "latin": "Ligamentum ulnocapitatum",
+   "anglais": "Ulnocapitate ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament ulnocapitatum",
+   "ta2": "1796"
+  },
+  {
+   "id": "ligament-ulnocarpien-dorsal",
+   "nom": "Ligament ulnocarpien dorsal",
+   "latin": "Ligamentum ulnocarpeum dorsale",
+   "anglais": "Dorsal ulnocarpal ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament ulnocarpien dorsal",
+   "ta2": "1794"
+  },
+  {
+   "id": "ligament-ulnolunatum",
+   "nom": "Ligament ulnolunatum",
+   "latin": "Ligamentum ulnolunatum",
+   "anglais": "Ulnolunate ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament ulnolunatum",
+   "ta2": "1797"
+  },
+  {
+   "id": "ligament-ulnopisiforme",
+   "nom": "Ligament ulnopisiforme",
+   "latin": "Ligamentum ulnopisiforme",
+   "anglais": "Ulnopisiform ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament ulnopisiforme",
+   "ta2": "1799"
+  },
+  {
+   "id": "ligament-ulnotriquetrum",
+   "nom": "Ligament ulnotriquetrum",
+   "latin": "Ligamentum ulnotriquetrum",
+   "anglais": "Ulnotriquetral ligament",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligament ulnotriquetrum",
+   "ta2": "1798"
+  },
+  {
+   "id": "ligaments-carpometacarpiens-dorsaux",
+   "nom": "Ligaments carpométacarpiens dorsaux",
+   "latin": "Ligamenta carpometacarpea dorsalia",
+   "anglais": "Dorsal carpometacarpal ligaments",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligaments carpométacarpiens dorsaux",
+   "ta2": "1828"
+  },
+  {
+   "id": "ligaments-carpometacarpiens-palmaires",
+   "nom": "Ligaments carpométacarpiens palmaires",
+   "latin": "Ligamenta carpometacarpea palmaria",
+   "anglais": "Palmar carpometacarpal ligaments",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligaments carpométacarpiens palmaires",
+   "ta2": "1829"
+  },
+  {
+   "id": "ligaments-intercarpiens-dorsaux",
+   "nom": "Ligaments intercarpiens dorsaux",
+   "latin": "Ligamenta intercarpea dorsalia",
+   "anglais": "Dorsal intercarpal ligaments",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligaments intercarpiens dorsaux",
+   "ta2": "1806"
+  },
+  {
+   "id": "ligaments-interphalangiens-palmaires",
+   "nom": "Ligaments interphalangiens palmaires",
+   "latin": "Ligamenta interphalangea palmaria",
+   "anglais": "Palmar interphalangeal ligaments",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligaments interphalangiens palmaires",
+   "ta2": "1844"
+  },
+  {
+   "id": "ligaments-metacarpiens-dorsaux",
+   "nom": "Ligaments métacarpiens dorsaux",
+   "latin": "Ligamenta metacarpea dorsalia",
+   "anglais": "Dorsal metacarpal ligaments",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligaments métacarpiens dorsaux",
+   "ta2": "1832"
+  },
+  {
+   "id": "ligaments-metacarpiens-interosseux",
+   "nom": "Ligaments métacarpiens interosseux",
+   "latin": "Ligamenta metacarpea interossea",
+   "anglais": "Interosseous metacarpal ligaments",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligaments métacarpiens interosseux",
+   "ta2": "1834"
+  },
+  {
+   "id": "ligaments-metacarpiens-palmaires",
+   "nom": "Ligaments métacarpiens palmaires",
+   "latin": "Ligamenta metacarpea palmaria",
+   "anglais": "Palmar metacarpal ligaments",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligaments métacarpiens palmaires",
+   "ta2": "1833"
+  },
+  {
+   "id": "ligaments-metacarpophalangiens-collateraux",
+   "nom": "Ligaments métacarpophalangiens collatéraux",
+   "latin": "Ligamenta metacarpophalangea collateralia",
+   "anglais": "Collateral metacarpophalangeal ligaments",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Ligaments métacarpophalangiens collatéraux",
+   "ta2": "1836"
+  }
+ ]
+}

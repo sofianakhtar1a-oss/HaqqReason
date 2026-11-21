@@ -220,27 +220,28 @@ ok("un muscle sans articulation à mouvoir se contracte sur place", programmeDe(
   const bilan = lire("../src/lib/corps/fiches/bilan.json") as Record<string, [number, number]>;
   const RACINE = /^(C[1-8]|T(1[0-2]|[1-9])|L[1-5]|S[1-5]|Co|I|II|III|IV|V|V1|V2|V3|VI|VII|VIII|IX|X|XI|XII)$/;
   const existe = (id: string | null | undefined) => !id || PAR_ID.has(id);
-  for (const couche of ["os", "muscle", "artere", "tendon"] as const) {
+  for (const couche of ["os", "muscle", "artere", "tendon", "ligament", "veine", "nerf", "viscere", "encephale", "lymphe"] as const) {
     const chemin = `../src/lib/corps/fiches/${couche}.json`;
     if (!existsSync(new URL(chemin, import.meta.url))) continue;
     const r = lire(chemin) as { sources: Record<string, { titre: string; url: string }>; fiches: Record<string, Record<string, unknown> & { sources: string[] }> };
     const ids = Object.keys(r.fiches);
     ok(`fiches ${couche} : chacune est une structure de la couche`, ids.every((id) => PAR_ID.get(id)?.couche === couche), ids.filter((id) => PAR_ID.get(id)?.couche !== couche).slice(0, 5).join());
+    if (!ids.length) continue;
     ok(`fiches ${couche} : au moins deux sources réelles par fiche (sauf les tendons tirés de leur muscle)`, Object.values(r.fiches).every((f) => f.derive || (new Set(f.sources).size >= 2 && f.sources.every((c) => r.sources[c]?.url?.startsWith("http")))));
     ok(`fiches ${couche} : le bilan est juste`, bilan[couche]?.[0] === ids.length);
+    // Tout ce qui renvoie à une autre structure (quel que soit le format de la couche) doit y mener.
+    const CLES = new Set(["os", "artere", "veine", "nerf", "viscere", "lymphe", "muscles", "synergistes", "antagonistes", "structures", "arteres", "veines", "nerfs"]);
     const renvois: string[] = [];
     for (const [id, f] of Object.entries(r.fiches)) {
-      const voir = (x: unknown, ou: string) => {
-        if (typeof x === "string" && !existe(x)) renvois.push(`${id}.${ou} → ${x}`);
+      const fouiller = (v: unknown, ou: string) => {
+        if (Array.isArray(v)) v.forEach((x, k) => fouiller(x, `${ou}[${k}]`));
+        else if (v && typeof v === "object")
+          for (const [k, x] of Object.entries(v)) {
+            if (CLES.has(k)) for (const y of Array.isArray(x) ? x : [x]) if (typeof y === "string" && !existe(y)) renvois.push(`${id}.${ou}.${k} → ${y}`);
+            if (typeof x === "object") fouiller(x, `${ou}.${k}`);
+          }
       };
-      for (const cle of ["synergistes", "antagonistes", "muscles"]) for (const x of (f[cle] as string[] | undefined) ?? []) voir(x, cle);
-      for (const cle of ["origine", "terminaison"]) for (const a of (f[cle] as { os?: string[] }[] | undefined) ?? []) for (const x of a.os ?? []) voir(x, cle);
-      const v = f.vascularisation as { arteres?: string[] } | undefined;
-      for (const x of v?.arteres ?? []) voir(x, "vascularisation");
-      for (const b of (f.branches as { artere?: string }[] | undefined) ?? []) voir(b.artere, "branches");
-      for (const a of (f.articulations as { os?: string }[] | undefined) ?? []) voir(a.os, "articulations");
-      voir((f.provenance as { artere?: string } | undefined)?.artere, "provenance");
-      voir((f.innervation as { nerf?: string } | undefined)?.nerf, "innervation");
+      fouiller(f, "");
     }
     ok(`fiches ${couche} : tous les renvois mènent à une structure`, renvois.length === 0, renvois.slice(0, 5).join(" ; "));
     if (couche === "muscle") {
@@ -255,6 +256,27 @@ ok("un muscle sans articulation à mouvoir se contracte sur place", programmeDe(
         const b = r.fiches["biceps-brachial"] as unknown as { actions: { articulation: string; mouvement: string }[]; innervation: { nerf: string; racines: string[] } };
         return b.actions.some((a) => a.articulation === "coude" && a.mouvement === "flexion") && b.actions.some((a) => a.mouvement === "supination") && b.innervation.nerf === "nerf-musculocutane" && b.innervation.racines.includes("C5") && b.innervation.racines.includes("C6");
       })());
+    }
+    if (couche === "veine") {
+      // « Suis le sang » : de proche en proche, chaque veine mène au cœur sans tourner en rond.
+      const fiches = r.fiches as unknown as Record<string, { terminaison: { veine?: string | null; viscere?: string | null } }>;
+      const boucles: string[] = [];
+      for (const id of Object.keys(fiches)) {
+        const vus = new Set<string>();
+        let x: string | null | undefined = id;
+        while (x && fiches[x] && !vus.has(x)) {
+          vus.add(x);
+          x = fiches[x].terminaison.veine;
+        }
+        if (x && vus.has(x)) boucles.push(id);
+      }
+      ok("le sang veineux ne tourne jamais en rond", boucles.length === 0, boucles.slice(0, 4).join());
+    }
+    if (couche === "nerf") {
+      const n = r.fiches as unknown as Record<string, { moteur?: { muscles?: string[] } | null; sensitif?: unknown; autonome?: unknown; sorte: string }>;
+      ok("chaque nerf est moteur, sensitif ou autonome (sauf les plexus et les groupes)", Object.values(n).every((f) => f.moteur || f.sensitif || f.autonome || ["plexus", "groupe", "ganglion"].includes(f.sorte)));
+      const median = n["nerf-median"];
+      ok("le nerf médian commande le rond pronateur", !median || Boolean(median.moteur?.muscles?.includes("rond-pronateur")));
     }
     if (couche === "artere") {
       const t = r.fiches["tronc-coeliaque"] as unknown as { branches: { artere: string }[] } | undefined;

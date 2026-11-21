@@ -1382,6 +1382,110 @@
   border-color: var(--ec-laiton);
   background: rgb(214 168 90 / 0.1);
 }
+/* L'atelier : bouger, couper, éclater, ôter, faire battre et respirer. */
+.ec-atelier {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--ec-filet);
+}
+.ec-atelier-outils {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.ec-atelier .ec-note {
+  margin: 0;
+}
+.ec-atelier-panneau {
+  display: grid;
+  gap: 0.7rem;
+  padding: 0.75rem 0.8rem 0.85rem;
+  border: 1px solid var(--ec-filet);
+  border-radius: 10px;
+  background: rgb(214 168 90 / 0.035);
+}
+.ec-atelier-ligne {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 0.6rem;
+}
+.ec-atelier-ligne .ec-champ {
+  margin: 0;
+  flex: 1 1 11rem;
+}
+.ec-curseur {
+  display: grid;
+  gap: 0.3rem;
+}
+.ec-curseur-noms {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 0.76rem;
+  color: var(--ec-pale);
+}
+.ec-curseur-noms span:last-child {
+  text-align: right;
+}
+.ec-curseur-noms output {
+  color: var(--ec-laiton-clair);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+/* Un curseur à deux sens : la piste est neutre, un trait marque le zéro (la position anatomique). */
+.ec-curseur input[type="range"] {
+  --zero: 0%;
+  width: 100%;
+  margin: 0;
+  height: 1.4rem;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+.ec-curseur input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background:
+    linear-gradient(to right, transparent calc(var(--zero) - 1px), var(--ec-laiton) calc(var(--zero) - 1px), var(--ec-laiton) calc(var(--zero) + 1px), transparent calc(var(--zero) + 1px)) center / 100% 12px no-repeat,
+    rgb(214 168 90 / 0.22);
+}
+.ec-curseur input[type="range"]::-moz-range-track {
+  height: 4px;
+  border-radius: 2px;
+  background: rgb(214 168 90 / 0.22);
+}
+.ec-curseur input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  margin-top: calc(2px - 0.5rem);
+  border-radius: 50%;
+  border: 2px solid var(--ec-nuit);
+  background: var(--ec-laiton-clair);
+  box-shadow: 0 0 0 1px var(--ec-laiton);
+}
+.ec-curseur input[type="range"]::-moz-range-thumb {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  border: 2px solid var(--ec-nuit);
+  background: var(--ec-laiton-clair);
+}
+.ec-curseur input[type="range"]:focus-visible {
+  outline: 2px solid var(--ec-laiton-clair);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.ec-atelier .ec-puce {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
 .ec-recherche {
   position: relative;
   display: flex;

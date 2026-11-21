@@ -1,0 +1,1801 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), chap. Lymphatiques (membres, abdomen, bassin ; texte intégral, Internet Archive)",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "kenhub-abdomen-bassin": {
+   "titre": "Kenhub — Lymphatics of abdomen and pelvis",
+   "url": "https://www.kenhub.com/en/library/anatomy/lymphatics-of-abdomen-and-pelvis"
+  },
+  "kenhub-retroperitoine": {
+   "titre": "Kenhub — Lymphatics of the retroperitoneal space",
+   "url": "https://www.kenhub.com/en/library/anatomy/lymphatics-of-the-retroperitoneal-space"
+  },
+  "kenhub-bassin-parietal": {
+   "titre": "Kenhub — Parietal lymph nodes in abdomen and pelvis",
+   "url": "https://www.kenhub.com/en/start/parietal-lymph-nodes-in-abdomen-and-pelvis"
+  },
+  "kenhub-bassin-membre-inf": {
+   "titre": "Kenhub — Lymph nodes of the pelvis and lower limb",
+   "url": "https://www.kenhub.com/en/library/anatomy/lymph-nodes-of-the-pelvis-and-lower-limb"
+  },
+  "kenhub-inguinaux": {
+   "titre": "Kenhub — Inguinal lymph nodes",
+   "url": "https://www.kenhub.com/en/library/anatomy/inguinal-lymph-nodes"
+  },
+  "kenhub-poplites": {
+   "titre": "Kenhub — Popliteal lymph nodes",
+   "url": "https://www.kenhub.com/en/library/anatomy/popliteal-lymph-nodes"
+  },
+  "kenhub-axillaires": {
+   "titre": "Kenhub — Axillary lymph nodes",
+   "url": "https://www.kenhub.com/en/library/anatomy/axillary-lymph-nodes"
+  },
+  "teachmeanatomy-membre-inf": {
+   "titre": "TeachMeAnatomy — Lymphatics of the lower limb",
+   "url": "https://teachmeanatomy.info/lower-limb/vessels/lymphatics/"
+  },
+  "teachmeanatomy-membre-sup": {
+   "titre": "TeachMeAnatomy — Lymphatics of the upper limb",
+   "url": "https://teachmeanatomy.info/upper-limb/vessels/lymphatics/"
+  },
+  "radiopaedia-gastrique": {
+   "titre": "Radiopaedia — Gastric lymph node stations",
+   "url": "https://radiopaedia.org/articles/41369"
+  },
+  "radiopaedia-inguinaux-profonds": {
+   "titre": "Radiopaedia — Deep inguinal lymph nodes",
+   "url": "https://radiopaedia.org/articles/45365"
+  },
+  "uams-abdomen": {
+   "titre": "UAMS Human Structure — Lymphatics of the abdomen (tableau)",
+   "url": "https://medicine.uams.edu/neuroscience/education/medical-school-courses/human-structure-module/anatomy-tables/lymphatic-tables/lymphatics-of-the-abdomen/"
+  },
+  "uams-membre-inf": {
+   "titre": "UAMS Human Structure — Lymphatics of the lower limb (tableau)",
+   "url": "https://medicine.uams.edu/neuroscience/education/medical-school-courses/human-structure-module/anatomy-tables/lymphatic-tables/lymphatics-of-the-lower-limb/"
+  },
+  "uams-membre-sup": {
+   "titre": "UAMS Human Structure — Lymphatics of the upper limb (tableau)",
+   "url": "https://medicine.uams.edu/neuroscience/education/medical-school-courses/human-structure-module/anatomy-tables/lymphatic-tables/lymphatics-of-the-upper-limb/"
+  },
+  "wikipedia-inguinaux": {
+   "titre": "Wikipedia (en) — Inguinal lymph nodes",
+   "url": "https://en.wikipedia.org/wiki/Inguinal_lymph_nodes"
+  },
+  "wikipedia-cloquet": {
+   "titre": "Wikipedia (en) — Cloquet's node",
+   "url": "https://en.wikipedia.org/wiki/Cloquet%27s_node"
+  },
+  "wikipedia-iliaques-communs": {
+   "titre": "Wikipedia (en) — Common iliac lymph nodes",
+   "url": "https://en.wikipedia.org/wiki/Common_iliac_lymph_nodes"
+  },
+  "wikipedia-iliaques-externes": {
+   "titre": "Wikipedia (en) — External iliac lymph nodes",
+   "url": "https://en.wikipedia.org/wiki/External_iliac_lymph_nodes"
+  },
+  "wikipedia-poplites": {
+   "titre": "Wikipedia (en) — Popliteal lymph nodes",
+   "url": "https://en.wikipedia.org/wiki/Popliteal_lymph_nodes"
+  },
+  "wikipedia-mesenteriques-inf": {
+   "titre": "Wikipedia (en) — Inferior mesenteric lymph nodes",
+   "url": "https://en.wikipedia.org/wiki/Inferior_mesenteric_lymph_nodes"
+  },
+  "seer-bassin": {
+   "titre": "SEER Training — Lymph nodes of the pelvis (liste des groupes)",
+   "url": "https://training.seer.cancer.gov/lymphoma/anatomy/chains/pariental-pelvis.html"
+  },
+  "seer-biliaire": {
+   "titre": "SEER Training — Regional lymph nodes (pancréas et voies biliaires)",
+   "url": "https://www.training.seer.cancer.gov/biliary/anatomy/lymph-nodes.html"
+  },
+  "ta98": {
+   "titre": "Terminologia Anatomica (FIPAT) — nodus tibialis posterior, nodus fibularis (A13.3.05.015-016)",
+   "url": "https://ifaa.unifr.ch/Public/EntryPage/TA98%20Tree/Entity%20TA98%20EN/13.3.05.015%20Entity%20TA98%20EN.htm"
+  },
+  "elsevier-iliaques-mediaux": {
+   "titre": "Elsevier e-Anatomy — Medial external iliac nodes (et pages sur les nœuds iliaques communs médiaux et obturateurs)",
+   "url": "https://www.elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/medial-external-iliac-nodes/17198"
+  },
+  "elsevier-iliaques-intermediaires": {
+   "titre": "Elsevier e-Anatomy — Intermediate external iliac nodes",
+   "url": "https://www.elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/intermediate-external-iliac-nodes/20130"
+  },
+  "elsevier-iliaques-lateraux": {
+   "titre": "Elsevier e-Anatomy — Lateral external iliac nodes (et nœuds iliaques communs latéraux)",
+   "url": "https://www.elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/lateral-external-iliac-nodes/19802"
+  },
+  "elsevier-iliaques-communs": {
+   "titre": "Elsevier e-Anatomy — Intermediate common iliac nodes (et nœuds promontoriaux, sacraux, glutéaux)",
+   "url": "https://www.elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/intermediate-common-iliac-nodes-right/18305"
+  },
+  "elsevier-pelvis-viscerales": {
+   "titre": "Elsevier e-Anatomy — Obturator nodes (et nœuds paravésicaux, sacraux, glutéaux)",
+   "url": "https://www.elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/obturator-nodes-right/22058"
+  },
+  "elsevier-inguinaux-profonds": {
+   "titre": "Elsevier e-Anatomy — Deep inguinal nodes",
+   "url": "https://elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/deep-inguinal-nodes/17024"
+  },
+  "elsevier-inguinaux-superficiels": {
+   "titre": "Elsevier e-Anatomy — Inferior superficial inguinal nodes (et groupes supéro-latéral, supéro-médial)",
+   "url": "https://www.elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/inferior-superficial-inguinal-nodes/19467"
+  },
+  "elsevier-lombaires": {
+   "titre": "Elsevier e-Anatomy — Lateral aortic nodes (et nœuds caves latéraux, préaortiques, rétro-aortiques, lombaires droits)",
+   "url": "https://elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/lateral-aortic-nodes/22693"
+  },
+  "elsevier-gastriques": {
+   "titre": "Elsevier e-Anatomy — Pyloric nodes (et nœuds gastro-omentaux droits)",
+   "url": "https://elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/pyloric-nodes/22194"
+  },
+  "elsevier-hepatiques": {
+   "titre": "Elsevier e-Anatomy — Hepatic nodes (et nœud cystique)",
+   "url": "https://www.elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/hepatic-nodes/21076"
+  },
+  "elsevier-pancreatiques-sup": {
+   "titre": "Elsevier e-Anatomy — Superior pancreatic nodes",
+   "url": "https://www.elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/superior-pancreatic-nodes/18390"
+  },
+  "elsevier-pancreatiques-inf": {
+   "titre": "Elsevier e-Anatomy — Inferior pancreatic nodes",
+   "url": "https://www.elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/inferior-pancreatic-nodes/24548"
+  },
+  "elsevier-pancreatico-duodenaux": {
+   "titre": "Elsevier e-Anatomy — Pancreaticoduodenal nodes",
+   "url": "https://www.elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/pancreaticoduodenal-nodes/23428"
+  },
+  "elsevier-mesenteriques": {
+   "titre": "Elsevier e-Anatomy — Superior mesenteric nodes (et nœuds centraux, iléocoliques, précæcaux, rétrocæcaux, appendiculaires)",
+   "url": "https://www.elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/superior-mesenteric-nodes/19794"
+  },
+  "elsevier-coliques": {
+   "titre": "Elsevier e-Anatomy — Right colic nodes (et nœuds coliques moyens, gauches, paracoliques)",
+   "url": "https://www.elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/right-colic-nodes/18958"
+  },
+  "elsevier-axillaires": {
+   "titre": "Elsevier e-Anatomy — Central axillary nodes (et groupes latéral, postérieur)",
+   "url": "https://www.elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/central-axillary-nodes-left/21701"
+  },
+  "elsevier-cubitaux": {
+   "titre": "Elsevier e-Anatomy — Supratrochlear nodes (et nœuds cubitaux)",
+   "url": "https://www.elsevier.com/resources/anatomy/lymphoid-system/lymph-nodes/supratrochlear-nodes-left/17404"
+  }
+ },
+ "fiches": [
+  {
+   "id": "lymphonoeud-cystique",
+   "resume": "Le nœud posé au collet de la vésicule biliaire : le premier relais de la lymphe de la vésicule.",
+   "situation": "Contre le collet de la vésicule biliaire, près de l'origine du canal cystique ; il est rattaché au groupe des nœuds hépatiques",
+   "recoit": {
+    "texte": "La lymphe de la vésicule biliaire et du canal cystique, avec une part de celle du foie",
+    "structures": [
+     "vesicule-biliaire",
+     "foie"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers le nœud du bord antérieur du foramen omental et les nœuds hépatiques le long de l'artère hépatique commune, puis les nœuds cœliaques"
+   },
+   "clinique": "Les nœuds du cystique comptent parmi les nœuds régionaux d'un cancer de la vésicule : on les examine et on les retire avec le pédicule hépatique lors d'une chirurgie carcinologique",
+   "memo": "Au collet de la vésicule, un seul nœud fait sentinelle",
+   "variantes": "Nœud unique, parfois deux ; son nom varie selon les auteurs (nœud de Lund, nœud de Mascagni)",
+   "sources": [
+    "elsevier-hepatiques",
+    "uams-abdomen",
+    "seer-biliaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeud-suprapylorique",
+   "resume": "Le nœud du bord supérieur du pylore, contre l'artère gastrique droite.",
+   "situation": "Au-dessus du pylore, le long de l'artère gastrique droite, dans le petit omentum ; petit groupe inconstant des nœuds pyloriques",
+   "recoit": {
+    "texte": "La lymphe du pylore, de l'antre voisin et du début du duodénum",
+    "structures": [
+     "estomac",
+     "duodenum"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds hépatiques, le long de l'artère hépatique commune, puis les nœuds cœliaques"
+   },
+   "clinique": "Station du curage d'un cancer de l'antre gastrique : on l'emporte avec la pièce de gastrectomie, en même temps que la chaîne infrapylorique",
+   "memo": "Supra : au-dessus du pylore, sur l'artère gastrique droite",
+   "variantes": "Inconstant ; certains auteurs le comptent parmi les nœuds gastriques droits",
+   "sources": [
+    "elsevier-gastriques",
+    "radiopaedia-gastrique"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-aortiques-lateraux",
+   "resume": "La chaîne qui longe l'aorte abdominale : le grand relais lombaire des reins, des gonades et du bassin.",
+   "situation": "À gauche de l'aorte abdominale, contre le psoas et le pilier du diaphragme, de la bifurcation aortique à l'hiatus aortique ; neuf à douze nœuds en chaîne",
+   "recoit": {
+    "texte": "Les efférents des nœuds iliaques communs (membre inférieur, bassin), les reins, surrénales, uretères, gonades et la paroi postérieure de l'abdomen",
+    "structures": [
+     "glande-surrenale",
+     "uretere",
+     "lymphonoeuds-iliaques-communs-lateraux",
+     "lymphonoeuds-iliaques-communs-mediaux",
+     "lymphonoeuds-iliaques-communs-intermediaires"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers le tronc lombaire gauche, puis la citerne du chyle et le conduit thoracique ; quelques vaisseaux traversent le pilier du diaphragme jusqu'au conduit thoracique"
+   },
+   "clinique": "Reçoivent d'emblée le testicule (sans passage par l'aine) : siège des métastases d'un cancer testiculaire ; le curage rétropéritonéal sert aussi pour le rein et les voies urinaires hautes",
+   "memo": "Latéraux à l'aorte, à gauche : le chapelet lombaire qui monte jusqu'au diaphragme",
+   "variantes": null,
+   "sources": [
+    "elsevier-lombaires",
+    "gray1918",
+    "kenhub-retroperitoine",
+    "teachmeanatomy-membre-inf"
+   ],
+   "divergences": "Gray 1918 décrit des nœuds aortiques latéraux droits et gauches ; la nomenclature actuelle réserve ce nom au côté gauche et nomme caves latéraux le groupe droit"
+  },
+  {
+   "id": "lymphonoeuds-caves-lateraux",
+   "resume": "Les nœuds du bord droit de la veine cave inférieure, collecteurs lombaires du côté droit.",
+   "situation": "Contre le bord droit de la veine cave inférieure, sur le psoas et le pilier droit, souvent là où la veine rénale droite la rejoint ; trois ou quatre nœuds",
+   "recoit": {
+    "texte": "Les efférents des nœuds iliaques communs, le rein droit, la surrénale, l'uretère, la gonade droite et la paroi postérieure de l'abdomen",
+    "structures": [
+     "glande-surrenale",
+     "uretere",
+     "lymphonoeuds-iliaques-communs-lateraux"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers le tronc lombaire droit, puis la citerne du chyle et le conduit thoracique"
+   },
+   "clinique": "Atteints par les cancers du rein droit et du testicule droit ; leur curage fait partie du traitement chirurgical de certaines tumeurs rénales et testiculaires",
+   "memo": "Caves latéraux : le côté droit de la veine cave, comme les aortiques le côté gauche de l'aorte",
+   "variantes": null,
+   "sources": [
+    "elsevier-lombaires",
+    "kenhub-retroperitoine",
+    "kenhub-abdomen-bassin"
+   ],
+   "divergences": "Gray 1918 range ces nœuds avec les aortiques latéraux (groupe droit) ; Elsevier les nomme caves latéraux"
+  },
+  {
+   "id": "lymphonoeuds-coeliaques",
+   "resume": "Les nœuds du tronc cœliaque : le grand relais de la lymphe de l'estomac, du foie, du pancréas et de la rate.",
+   "situation": "Autour de l'origine du tronc cœliaque, devant l'aorte, sous le diaphragme ; trois à six nœuds, groupe préaortique supérieur",
+   "recoit": {
+    "texte": "Les efférents des nœuds gastriques, hépatiques et pancréatico-spléniques : estomac, duodénum, foie, vésicule, pancréas, rate",
+    "structures": [
+     "estomac",
+     "duodenum",
+     "foie",
+     "vesicule-biliaire",
+     "pancreas",
+     "rate"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers le tronc intestinal, qui se jette dans la citerne du chyle ou le tronc lombaire gauche"
+   },
+   "clinique": "Leur envahissement par un cancer de l'estomac, du pancréas ou des voies biliaires pèse sur la décision opératoire ; par le conduit thoracique, il peut se révéler par un ganglion sus-claviculaire gauche (nœud de Troisier)",
+   "memo": "Cœliaque : le carrefour d'en haut, estomac, foie, pancréas, rate",
+   "variantes": null,
+   "sources": [
+    "uams-abdomen",
+    "gray1918",
+    "kenhub-abdomen-bassin",
+    "elsevier-gastriques"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-coliques-droits",
+   "resume": "Les nœuds de l'artère colique droite, relais du côlon ascendant.",
+   "situation": "Le long de l'artère colique droite et de ses branches, dans le mésocôlon ascendant ; un à deux nœuds",
+   "recoit": {
+    "texte": "Les nœuds paracoliques de la partie distale du côlon ascendant et du début du côlon transverse",
+    "structures": [
+     "colon-ascendant",
+     "colon-transverse",
+     "lymphonoeuds-mesenteriques-paracoliques-superieurs"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-mesenteriques-superieurs-centraux",
+    "texte": "Vers les nœuds mésentériques supérieurs centraux, puis le tronc intestinal"
+   },
+   "clinique": "Sur la voie d'un cancer du côlon droit : l'hémicolectomie droite les emporte avec les vaisseaux liés à leur origine, et l'on examine au moins douze nœuds pour fixer le stade",
+   "memo": "Colique droite : la route du côlon droit vers la racine du mésentère",
+   "variantes": null,
+   "sources": [
+    "elsevier-coliques",
+    "uams-abdomen",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-coliques-gauches",
+   "resume": "Les nœuds de l'artère colique gauche, relais du côlon descendant.",
+   "situation": "Le long de l'artère colique gauche, dans le mésocôlon descendant",
+   "recoit": {
+    "texte": "Les nœuds paracoliques de la partie distale du côlon transverse et du côlon descendant",
+    "structures": [
+     "colon-descendant",
+     "colon-transverse"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-pre-aortiques",
+    "texte": "Vers les nœuds mésentériques inférieurs, autour de l'origine de l'artère mésentérique inférieure (groupe préaortique), puis les nœuds aortiques latéraux"
+   },
+   "clinique": "Voie de diffusion du cancer du côlon descendant ; l'hémicolectomie gauche emporte la chaîne qui accompagne l'artère mésentérique inférieure",
+   "memo": "Colique gauche : le chemin du côlon gauche vers l'aorte, par l'artère mésentérique inférieure",
+   "variantes": null,
+   "sources": [
+    "elsevier-coliques",
+    "uams-abdomen",
+    "wikipedia-mesenteriques-inf"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-coliques-moyens",
+   "resume": "Les nœuds de l'artère colique moyenne, relais du côlon transverse.",
+   "situation": "Le long de l'artère colique moyenne et de ses branches, dans le mésocôlon transverse ; deux ou trois nœuds",
+   "recoit": {
+    "texte": "Les deux tiers proximaux du côlon transverse",
+    "structures": [
+     "colon-transverse"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-mesenteriques-superieurs-centraux",
+    "texte": "Vers les nœuds mésentériques supérieurs centraux, puis le tronc intestinal"
+   },
+   "clinique": "Le côlon transverse est à cheval sur deux territoires artériels : un cancer de ce segment peut diffuser vers les nœuds mésentériques supérieurs ou inférieurs, ce qui complique le curage",
+   "memo": "Colique moyenne : au milieu du transverse, vers la racine du mésentère",
+   "variantes": null,
+   "sources": [
+    "elsevier-coliques",
+    "uams-abdomen",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-gastriques-droits",
+   "resume": "Les nœuds de l'artère gastrique droite, au bas de la petite courbure de l'estomac.",
+   "situation": "Le long de l'artère gastrique droite, dans le petit omentum, près du pylore ; deux ou trois nœuds",
+   "recoit": {
+    "texte": "La partie basse de la petite courbure et la région pylorique de l'estomac",
+    "structures": [
+     "estomac",
+     "petit-omentum"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-coeliaques",
+    "texte": "Vers les nœuds cœliaques, souvent par les nœuds hépatiques de l'artère hépatique commune"
+   },
+   "clinique": "Retirés avec le petit omentum lors de la gastrectomie d'un cancer de l'antre ou de la petite courbure basse",
+   "memo": "Gastrique droite : en bas de la petite courbure, vers le pylore",
+   "variantes": null,
+   "sources": [
+    "uams-abdomen",
+    "radiopaedia-gastrique",
+    "kenhub-abdomen-bassin"
+   ],
+   "divergences": "Les tables universitaires envoient ces nœuds directement aux cœliaques ; Elsevier fait passer les nœuds pyloriques par les hépatiques"
+  },
+  {
+   "id": "lymphonoeuds-gastro-omentaux-droits",
+   "resume": "La chaîne de la grande courbure, côté pylore, dans le grand omentum.",
+   "situation": "Dans le grand omentum, le long de l'artère gastro-omentale droite, du milieu de la grande courbure jusqu'aux nœuds subpyloriques",
+   "recoit": {
+    "texte": "La moitié droite de la grande courbure de l'estomac et le grand omentum",
+    "structures": [
+     "estomac",
+     "grand-omentum"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-subpyloriques",
+    "texte": "Vers les nœuds subpyloriques, puis les nœuds hépatiques et cœliaques"
+   },
+   "clinique": "Retirés avec le grand omentum dans la gastrectomie d'un cancer du bas de l'estomac ; leur atteinte précise le stade de la tumeur",
+   "memo": "Gastro-omentaux droits : la grande courbure, côté pylore, qui descend vers les infrapyloriques",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "elsevier-gastriques",
+    "uams-abdomen"
+   ],
+   "divergences": "Le nombre de nœuds varie : quatre à sept (Gray), six à douze (tables universitaires), deux à onze (Elsevier)"
+  },
+  {
+   "id": "lymphonoeuds-iliaques-communs-intermediaires",
+   "resume": "Les nœuds du milieu de la chaîne iliaque commune, logés dans le creux lombo-sacral.",
+   "situation": "Derrière l'artère et la veine iliaques communes, près de la cinquième vertèbre lombaire, en avant du psoas ; deux à cinq nœuds",
+   "recoit": {
+    "texte": "Les efférents des nœuds iliaques internes et externes : lymphe du bassin et de tout le membre inférieur",
+    "structures": [
+     "lymphonoeuds-iliaques-externes-intermediaires",
+     "lymphonoeuds-iliaques-externes-mediaux"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-aortiques-lateraux",
+    "texte": "Vers les nœuds aortiques latéraux à gauche et caves latéraux à droite ; leurs efférents s'unissent à ceux du groupe latéral, vers L4, pour former les troncs lombaires"
+   },
+   "clinique": "Les cancers pelviens (col de l'utérus, vessie, prostate, rectum) s'y étendent après les relais iliaques internes et externes ; au scanner, ils marquent le passage du bassin vers la région aortique",
+   "memo": "Au creux de L5, le relais entre le bassin et l'aorte",
+   "variantes": null,
+   "sources": [
+    "elsevier-iliaques-communs",
+    "wikipedia-iliaques-communs",
+    "uams-abdomen"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-iliaques-communs-lateraux",
+   "resume": "Les plus gros nœuds iliaques communs, posés sur le psoas : la grande voie de sortie du membre inférieur.",
+   "situation": "Contre le bord latéral de l'artère iliaque commune, sur le muscle grand psoas ; un à trois nœuds, les plus volumineux du groupe",
+   "recoit": {
+    "texte": "Les efférents des nœuds iliaques externes : lymphe du membre inférieur, du périnée et du bassin",
+    "structures": [
+     "grand-psoas",
+     "lymphonoeuds-iliaques-externes-intermediaires"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-aortiques-lateraux",
+    "texte": "Vers les nœuds aortiques latéraux à gauche et caves latéraux à droite ; avec ceux du groupe intermédiaire, leurs efférents forment les troncs lombaires vers L4"
+   },
+   "clinique": "Un nœud iliaque commun gonflé suit l'envahissement de la chaîne iliaque externe : mélanome du membre inférieur, cancer de l'anus ou du périnée ; il se voit au scanner",
+   "memo": "Latéraux, sur le psoas : la porte de sortie du membre inférieur",
+   "variantes": null,
+   "sources": [
+    "elsevier-iliaques-lateraux",
+    "wikipedia-iliaques-communs",
+    "kenhub-abdomen-bassin"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-iliaques-communs-mediaux",
+   "resume": "Les nœuds du bord interne de l'artère iliaque commune, devant le promontoire du sacrum.",
+   "situation": "En dedans de l'artère iliaque commune (à droite) ou de la veine (à gauche), devant le promontoire ; avec les nœuds subaortiques, ils forment les nœuds promontoriaux",
+   "recoit": {
+    "texte": "Les efférents des nœuds iliaques externes médiaux et obturateurs, des nœuds sacraux et du rectum, par les nœuds du promontoire",
+    "structures": [
+     "lymphonoeuds-iliaques-externes-mediaux",
+     "lymphonoeuds-obturateurs",
+     "lymphonoeuds-sacraux-lateraux",
+     "lymphonoeuds-sacraux-medians"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-aortiques-lateraux",
+    "texte": "Vers les nœuds aortiques latéraux à gauche et caves latéraux à droite, parfois vers les nœuds lombaires intermédiaires"
+   },
+   "clinique": "Relais du rectum et des organes pelviens : un cancer du rectum peut y donner des métastases par les nœuds sacraux et promontoriaux",
+   "memo": "Médiaux : du côté du promontoire, là où le bassin rencontre le rachis",
+   "variantes": null,
+   "sources": [
+    "elsevier-iliaques-communs",
+    "uams-abdomen",
+    "wikipedia-iliaques-communs"
+   ],
+   "divergences": "Une page d'Elsevier fait passer leurs efférents par un tronc lombaire intermédiaire puis les nœuds lombaires intermédiaires, tandis que les autres références les envoient aux aortiques latéraux et caves latéraux"
+  },
+  {
+   "id": "lymphonoeuds-ileocoliques",
+   "resume": "La chaîne de l'artère iléocolique : relais de l'iléon terminal, du cæcum et de l'appendice.",
+   "situation": "Chaîne de dix à vingt nœuds le long de l'artère iléocolique, dans le mésentère près de l'angle iléocæcal",
+   "recoit": {
+    "texte": "L'iléon terminal, le cæcum, l'appendice et le côlon ascendant, par les nœuds précæcaux, rétrocæcaux, appendiculaires et paracoliques",
+    "structures": [
+     "appendice-vermiforme",
+     "colon-ascendant",
+     "lymphonoeuds-precaecaux",
+     "lymphonoeuds-retrocaecaux",
+     "lymphonoeuds-appendiculaires"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-mesenteriques-superieurs-centraux",
+    "texte": "Vers les nœuds mésentériques supérieurs centraux, puis le tronc intestinal"
+   },
+   "clinique": "Ils gonflent dans l'adénite mésentérique de l'enfant, qui simule une appendicite ; dans un cancer du côlon droit, on les retire avec le pédicule iléocolique",
+   "memo": "Iléocoliques : l'étape où l'intestin grêle débouche sur le côlon",
+   "variantes": null,
+   "sources": [
+    "elsevier-mesenteriques",
+    "gray1918",
+    "uams-abdomen"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-lombaux-intermediaires",
+   "resume": "Les nœuds coincés entre l'aorte et la veine cave inférieure.",
+   "situation": "Dans l'espace interaortico-cave, entre l'aorte abdominale et la veine cave inférieure, de la bifurcation aux piliers du diaphragme",
+   "recoit": {
+    "texte": "Les mêmes territoires que les chaînes voisines : reins, surrénales, uretères, gonades, paroi postérieure et nœuds iliaques communs",
+    "structures": [
+     "glande-surrenale",
+     "uretere",
+     "lymphonoeuds-aortiques-lateraux",
+     "lymphonoeuds-caves-lateraux"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les troncs lombaires droit et gauche (surtout le droit selon une source), puis la citerne du chyle"
+   },
+   "clinique": "Classiquement, premier relais du testicule droit, dont la lymphe rejoint cet espace ; ils sont retirés lors du curage rétropéritonéal d'un cancer testiculaire",
+   "memo": "Entre aorte et cave : les intermédiaires, au milieu de la chaîne lombaire",
+   "variantes": null,
+   "sources": [
+    "kenhub-retroperitoine",
+    "kenhub-bassin-parietal",
+    "kenhub-abdomen-bassin"
+   ],
+   "divergences": "Kenhub rattache les nœuds intermédiaires au tronc lombaire droit ; d'autres références ne précisent pas leur tronc de sortie"
+  },
+  {
+   "id": "lymphonoeuds-mesenteriques-paracoliques-superieurs",
+   "resume": "Les petits nœuds posés sur l'arcade vasculaire du côlon droit et du début du transverse.",
+   "situation": "Le long des arcades vasculaires, au contact de la paroi du côlon ascendant et du côlon transverse proximal, dans le territoire de l'artère mésentérique supérieure",
+   "recoit": {
+    "texte": "Le côlon ascendant et le côlon transverse proximal, par de minuscules nodules de la séreuse du côlon",
+    "structures": [
+     "colon-ascendant",
+     "colon-transverse"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds iléocoliques, coliques droits et coliques moyens, puis les nœuds mésentériques supérieurs centraux"
+   },
+   "clinique": "Premier échelon d'un cancer du côlon droit : leur exérèse avec la pièce opératoire conditionne la qualité du curage",
+   "memo": "Paracoliques : collés au côlon, tout au bout de la chaîne",
+   "variantes": null,
+   "sources": [
+    "elsevier-coliques",
+    "elsevier-mesenteriques"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-mesenteriques-superieurs-centraux",
+   "resume": "Le grand relais central du mésentère : la lymphe de l'intestin grêle et du côlon droit s'y réunit.",
+   "situation": "En chaîne le long de l'artère mésentérique supérieure, de son origine jusqu'à la racine du mésentère",
+   "recoit": {
+    "texte": "Les nœuds juxta-intestinaux, iléocoliques, coliques droits et moyens, avec une part du pancréas et du duodénum",
+    "structures": [
+     "lymphonoeuds-mesenteriques-juxta-intestinaux",
+     "lymphonoeuds-ileocoliques",
+     "lymphonoeuds-coliques-droits",
+     "lymphonoeuds-coliques-moyens",
+     "pancreas",
+     "duodenum",
+     "jejunum"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers le tronc intestinal, qui se jette dans la citerne du chyle ou le tronc lombaire gauche"
+   },
+   "clinique": "Leur atteinte fait la gravité des cancers du côlon droit et de l'intestin grêle ; les lymphomes y forment parfois de grosses masses ganglionnaires mésentériques",
+   "memo": "Au centre du mésentère, la place où tout converge avant le tronc intestinal",
+   "variantes": null,
+   "sources": [
+    "elsevier-mesenteriques",
+    "uams-abdomen",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-pancreaticoduodenaux-superieurs",
+   "resume": "Les nœuds de l'arcade pancréatico-duodénale supérieure, contre la tête du pancréas.",
+   "situation": "Au bord supérieur de la tête du pancréas, devant et derrière elle, le long de l'arcade des artères pancréatico-duodénales supérieures et du cholédoque",
+   "recoit": {
+    "texte": "La tête du pancréas, le duodénum, le bas de l'estomac et le canal biliaire",
+    "structures": [
+     "pancreas",
+     "duodenum",
+     "estomac",
+     "canal-biliaire"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds hépatiques puis cœliaques ; une part gagne les nœuds mésentériques supérieurs centraux"
+   },
+   "clinique": "Premiers nœuds atteints par un cancer de la tête du pancréas ou de l'ampoule hépato-pancréatique ; ils sont retirés avec la pièce de duodéno-pancréatectomie céphalique",
+   "memo": "Pancréatico-duodénaux : l'étape de la tête du pancréas vers le pédicule hépatique",
+   "variantes": null,
+   "sources": [
+    "elsevier-pancreatico-duodenaux",
+    "uams-abdomen",
+    "seer-biliaire"
+   ],
+   "divergences": "Elsevier propose deux routes (hépatiques puis cœliaques, ou mésentériques supérieurs centraux) ; les tables universitaires indiquent seulement les nœuds pyloriques puis hépatiques"
+  },
+  {
+   "id": "lymphonoeuds-pancreatiques-inferieurs",
+   "resume": "Les nœuds du bord inférieur du pancréas, sous son corps et sa queue.",
+   "situation": "Le long du bord inférieur du pancréas : un groupe médial près de l'incisure pancréatique, un groupe latéral sous le corps distal et la queue",
+   "recoit": {
+    "texte": "Le pancréas, surtout son corps et sa queue",
+    "structures": [
+     "pancreas"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-mesenteriques-superieurs-centraux",
+    "texte": "Vers les nœuds mésentériques supérieurs centraux (surtout le groupe médial) et le tronc intestinal"
+   },
+   "clinique": "Voie de diffusion des cancers du corps et de la queue du pancréas ; leur atteinte est un critère de stade et de résécabilité",
+   "memo": "Inférieurs : sous le pancréas, la voie qui part vers la racine du mésentère",
+   "variantes": null,
+   "sources": [
+    "elsevier-pancreatiques-inf",
+    "uams-abdomen",
+    "seer-biliaire"
+   ],
+   "divergences": "Elsevier envoie les deux groupes vers le tronc intestinal et les nœuds aortiques latéraux, et le groupe médial aussi vers les mésentériques supérieurs ; les tables universitaires disent « drainage dans trois directions » (pancréatico-duodénale, splénique, mésentérique supérieure)"
+  },
+  {
+   "id": "lymphonoeuds-pancreatiques-superieurs",
+   "resume": "Les nœuds du bord supérieur du pancréas, le long de l'artère splénique.",
+   "situation": "Sur le bord supérieur du pancréas, trois ou quatre nœuds le long de l'artère splénique ; on les nomme aussi pancréatico-spléniques",
+   "recoit": {
+    "texte": "Le corps et la queue du pancréas, la partie gauche de la grande courbure de l'estomac et, par les nœuds spléniques, la rate",
+    "structures": [
+     "pancreas",
+     "estomac",
+     "rate",
+     "lymphonoeuds-spleniques"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-coeliaques",
+    "texte": "Vers les nœuds cœliaques, autour du tronc cœliaque"
+   },
+   "clinique": "Retirés avec la pièce dans la pancréatectomie gauche ; leur envahissement par un cancer du corps ou de la queue classe la tumeur comme N+",
+   "memo": "Supérieurs : au sommet du pancréas, sur la crête de l'artère splénique",
+   "variantes": null,
+   "sources": [
+    "elsevier-pancreatiques-sup",
+    "gray1918",
+    "uams-abdomen"
+   ],
+   "divergences": "Gray et les tables universitaires envoient ces nœuds aux cœliaques ; Elsevier indique le tronc intestinal et les nœuds aortiques latéraux"
+  },
+  {
+   "id": "lymphonoeuds-pre-aortiques",
+   "resume": "Les nœuds devant l'aorte, autour des trois artères digestives : cœliaque, mésentérique supérieure et inférieure.",
+   "situation": "Devant l'aorte abdominale, en amas de deux ou trois nœuds près de l'origine du tronc cœliaque et des artères mésentériques supérieure et inférieure",
+   "recoit": {
+    "texte": "Tout le tube digestif abdominal, de l'œsophage au haut du rectum, avec le foie, le pancréas et la rate",
+    "structures": [
+     "estomac",
+     "foie",
+     "pancreas",
+     "rate",
+     "lymphonoeuds-coeliaques",
+     "lymphonoeuds-mesenteriques-superieurs-centraux"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers le tronc intestinal, puis la citerne du chyle"
+   },
+   "clinique": "Les cancers digestifs y arrivent en dernier : une atteinte préaortique sort du champ du curage standard et traduit une maladie avancée",
+   "memo": "Trois artères, trois étages : cœliaque, mésentérique supérieure, mésentérique inférieure",
+   "variantes": null,
+   "sources": [
+    "elsevier-lombaires",
+    "gray1918",
+    "kenhub-retroperitoine"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-precaves",
+   "resume": "Les nœuds devant la veine cave inférieure, côté droit des collecteurs lombaires.",
+   "situation": "Sur la face antérieure de la veine cave inférieure, qu'ils entourent avec les nœuds caves latéraux et rétrocaves",
+   "recoit": {
+    "texte": "Les nœuds iliaques communs et les organes drainés vers la chaîne lombaire droite : rein droit, surrénale, gonade droite",
+    "structures": [
+     "glande-surrenale",
+     "uretere",
+     "lymphonoeuds-iliaques-communs-lateraux"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers le tronc lombaire droit, puis la citerne du chyle"
+   },
+   "clinique": "Concernés par les métastases des cancers du rein droit et du testicule droit ; un volumineux amas précave peut comprimer la veine cave",
+   "memo": "Précaves : devant la cave, comme les rétrocaves sont derrière",
+   "variantes": null,
+   "sources": [
+    "elsevier-lombaires",
+    "kenhub-retroperitoine"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-retro-aortiques",
+   "resume": "Les plus petits nœuds lombaires, cachés derrière l'aorte.",
+   "situation": "Derrière l'aorte abdominale, sur les corps de L3 et L4, près du tronc sympathique, sous la citerne du chyle ; cinq ou six nœuds",
+   "recoit": {
+    "texte": "Les vaisseaux des nœuds aortiques latéraux et préaortiques ; probablement aussi le rachis lombaire",
+    "structures": [
+     "lymphonoeuds-aortiques-lateraux",
+     "lymphonoeuds-pre-aortiques"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers la citerne du chyle, parfois par le tronc lombaire gauche"
+   },
+   "clinique": "Inaccessibles à l'examen : leur gonflement ne se voit qu'au scanner, entre l'aorte et le rachis, et accompagne souvent un lymphome",
+   "memo": "Rétro-aortiques : dans le dos de l'aorte, sur le rachis",
+   "variantes": null,
+   "sources": [
+    "elsevier-lombaires",
+    "gray1918",
+    "kenhub-retroperitoine"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-retrocaves",
+   "resume": "Les nœuds derrière la veine cave inférieure, contre le pilier droit.",
+   "situation": "Derrière la veine cave inférieure, contre le pilier droit du diaphragme et les vertèbres lombaires",
+   "recoit": {
+    "texte": "Les territoires de la chaîne lombaire droite : rein droit, surrénale, gonade droite et paroi postérieure de l'abdomen",
+    "structures": [
+     "glande-surrenale",
+     "uretere"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers le tronc lombaire droit, puis la citerne du chyle"
+   },
+   "clinique": "Visibles au scanner derrière la veine cave ; ils sont retirés avec le curage lombaire droit des cancers du testicule ou du rein",
+   "memo": "Rétrocaves : au dos de la veine cave inférieure",
+   "variantes": null,
+   "sources": [
+    "elsevier-lombaires",
+    "kenhub-retroperitoine"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-retropyloriques",
+   "resume": "Les nœuds derrière le pylore, au contact de la tête du pancréas.",
+   "situation": "Derrière le pylore, le long de l'artère gastro-duodénale, devant la tête du pancréas ; petit groupe inconstant",
+   "recoit": {
+    "texte": "Le pylore, le début du duodénum et la région voisine de la tête du pancréas",
+    "structures": [
+     "estomac",
+     "duodenum",
+     "pancreas"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds hépatiques, puis les nœuds cœliaques"
+   },
+   "clinique": "Atteints par les cancers de l'antre et de la tête du pancréas ; retirés avec la pièce de duodéno-pancréatectomie",
+   "memo": "Rétro : derrière le pylore, sur la gastro-duodénale",
+   "variantes": "Groupe inconstant",
+   "sources": [
+    "elsevier-gastriques",
+    "radiopaedia-gastrique",
+    "uams-abdomen"
+   ],
+   "divergences": "Radiopaedia ne liste pas de station rétropylorique distincte dans la classification des nœuds gastriques ; Elsevier et Kenhub les citent parmi les nœuds pyloriques"
+  },
+  {
+   "id": "lymphonoeuds-spleniques",
+   "resume": "Les nœuds du hile de la rate, au bout de l'artère splénique.",
+   "situation": "Dans le hile de la rate et le ligament gastro-splénique, le long de l'artère splénique, en continuité avec les nœuds pancréatiques supérieurs",
+   "recoit": {
+    "texte": "La rate, la partie haute de la grande courbure de l'estomac et la queue du pancréas",
+    "structures": [
+     "rate",
+     "estomac",
+     "pancreas"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-coeliaques",
+    "texte": "Vers les nœuds le long de l'artère splénique (pancréatico-spléniques), puis les nœuds cœliaques"
+   },
+   "clinique": "Atteints par les cancers de la grande courbure haute de l'estomac et du pancréas gauche ; leur exérèse n'impose plus systématiquement de retirer la rate",
+   "memo": "Spléniques : au hile de la rate, début de la route vers le cœliaque",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-gastrique",
+    "uams-abdomen"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-subaortiques",
+   "resume": "Un ou deux nœuds sous la bifurcation de l'aorte, devant la cinquième vertèbre lombaire.",
+   "situation": "Sous la bifurcation aortique, devant L5, rangés avec les nœuds iliaques communs ; avec les médiaux, ils forment les nœuds promontoriaux",
+   "recoit": {
+    "texte": "Les efférents des nœuds iliaques internes et externes, et le rectum par les nœuds du promontoire",
+    "structures": [
+     "lymphonoeuds-iliaques-communs-mediaux",
+     "lymphonoeuds-sacraux-medians"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-aortiques-lateraux",
+    "texte": "Vers les nœuds aortiques latéraux à gauche et caves latéraux à droite, ou les nœuds lombaires intermédiaires"
+   },
+   "clinique": "Dernier relais pelvien avant la région aortique : une atteinte ici traduit une extension large d'un cancer du rectum ou des organes pelviens",
+   "memo": "Sous l'aorte, au promontoire : le carrefour du bassin et de l'abdomen",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-iliaques-communs",
+    "elsevier-iliaques-communs"
+   ],
+   "divergences": "Certaines sources les confondent avec les nœuds iliaques communs médiaux ou promontoriaux ; Gray les décrit seulement comme un ou deux nœuds sous la bifurcation"
+  },
+  {
+   "id": "lymphonoeuds-subpyloriques",
+   "resume": "Les nœuds sous le pylore, à la bifurcation de l'artère gastro-duodénale.",
+   "situation": "Sous le pylore, à la bifurcation de l'artère gastro-duodénale ; quatre ou cinq nœuds, aussi appelés infrapyloriques",
+   "recoit": {
+    "texte": "La chaîne gastro-omentale droite, le pylore et la grande courbure du bas de l'estomac",
+    "structures": [
+     "estomac",
+     "lymphonoeuds-gastro-omentaux-droits"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds hépatiques, puis les nœuds cœliaques"
+   },
+   "clinique": "Station obligée du curage d'un cancer de l'antre, au bas de la grande courbure ; on les retire avec le grand omentum",
+   "memo": "Sub : sous le pylore, là où la gastro-duodénale se partage",
+   "variantes": "Groupe inconstant dans la liste officielle",
+   "sources": [
+    "gray1918",
+    "elsevier-gastriques",
+    "radiopaedia-gastrique"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeud-inguinal-profond-intermediaire",
+   "resume": "Le nœud inguinal profond du canal fémoral, au milieu de la chaîne profonde.",
+   "situation": "Dans la gaine vasculaire de la cuisse, en dedans de la veine fémorale, dans le canal fémoral, entre le nœud proximal et le nœud distal ; inconstant",
+   "recoit": {
+    "texte": "Les vaisseaux lymphatiques profonds de la cuisse, qui suivent les vaisseaux fémoraux, et les efférents des nœuds inguinaux superficiels",
+    "structures": [
+     "lymphonoeuds-inguinaux-superficiels-inferieurs",
+     "lymphonoeuds-poplites-profonds"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-iliaques-externes-mediaux",
+    "texte": "Vers les nœuds iliaques externes médiaux, en passant sous le ligament inguinal par la lacune vasculaire"
+   },
+   "clinique": "Il gonfle avec les nœuds superficiels dans les infections du membre inférieur ; une hernie fémorale peut être confondue avec un tel ganglion",
+   "memo": "Au milieu de la chaîne fémorale profonde : celui qu'on trouve dans le canal",
+   "variantes": "Les nœuds inguinaux profonds sont de zéro à cinq selon les personnes, parfois aucun ; le nœud moyen est le plus inconstant",
+   "sources": [
+    "gray1918",
+    "elsevier-inguinaux-profonds",
+    "radiopaedia-inguinaux-profonds"
+   ],
+   "divergences": "Gray situe le nœud moyen dans le canal fémoral et le plus haut dans l'anneau ; les tables universitaires placent le nœud de Cloquet dans le canal fémoral"
+  },
+  {
+   "id": "lymphonoeud-inguinal-profond-proximal",
+   "resume": "Le nœud de Cloquet (ou de Rosenmüller), tout en haut de la chaîne inguinale profonde, dans l'anneau fémoral.",
+   "situation": "Dans l'anneau fémoral, en dedans de la veine fémorale, juste sous le ligament inguinal ; c'est le plus constant des nœuds inguinaux profonds",
+   "recoit": {
+    "texte": "Le reste de la chaîne profonde (muscles, articulations et fascias du membre inférieur), les nœuds inguinaux superficiels et une part de la région génitale externe",
+    "structures": [
+     "lymphonoeuds-inguinaux-superficiels-inferieurs",
+     "ligament-inguinal"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-iliaques-externes-mediaux",
+    "texte": "Vers les nœuds iliaques externes médiaux, dont il prolonge la chaîne"
+   },
+   "clinique": "Autrefois recherché pour juger d'une extension pelvienne d'un mélanome du membre inférieur, il ne la prédit que médiocrement ; on le retire parfois avec le curage inguinal",
+   "memo": "Cloquet : le dernier nœud de l'aine avant le bassin",
+   "variantes": "Présent chez la plupart des personnes mais pas toutes",
+   "sources": [
+    "gray1918",
+    "elsevier-inguinaux-profonds",
+    "radiopaedia-inguinaux-profonds",
+    "wikipedia-cloquet"
+   ],
+   "divergences": "Selon les auteurs, ce nœud est le plus proximal des inguinaux profonds ou le plus bas des iliaques externes (nœud lacunaire médial, très voisin) ; Gray le place dans la partie latérale de l'anneau fémoral"
+  },
+  {
+   "id": "lymphonoeud-lacunaire-intermediaire",
+   "resume": "Le nœud du groupe iliaque externe qui se glisse entre l'artère et la veine fémorales, sous le ligament inguinal.",
+   "situation": "Derrière le ligament inguinal, entre l'artère et la veine fémorales, dans la lacune vasculaire ; c'est le nœud le plus bas de la chaîne iliaque externe intermédiaire, souvent absent",
+   "recoit": {
+    "texte": "Le bassin (fond de la vessie, urètre, col de l'utérus, prostate) et, par les nœuds inguinaux, la paroi abdominale profonde sous-ombilicale, le périnée et le membre inférieur",
+    "structures": [
+     "vessie-urinaire",
+     "prostate",
+     "ligament-inguinal",
+     "lymphonoeud-inguinal-profond-proximal"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-iliaques-communs-intermediaires",
+    "texte": "Vers les nœuds iliaques externes voisins, puis les nœuds iliaques communs intermédiaires et médiaux"
+   },
+   "clinique": "Un nœud ferme sous le ligament inguinal, après une lésion du membre inférieur ou du périnée, fait craindre l'extension vers le pelvis",
+   "memo": "Lacune : le passage étroit sous le ligament inguinal, où se glisse ce nœud",
+   "variantes": "Souvent absent",
+   "sources": [
+    "elsevier-iliaques-intermediaires",
+    "wikipedia-iliaques-externes",
+    "seer-bassin"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeud-lacunaire-lateral",
+   "resume": "Le nœud le plus bas de la chaîne iliaque externe latérale, tout contre le ligament inguinal.",
+   "situation": "Derrière le ligament inguinal, en dehors de l'artère fémorale, dans la lacune vasculaire ; nœud inférieur du groupe iliaque externe latéral",
+   "recoit": {
+    "texte": "Le bassin (fond de la vessie, urètre, col de l'utérus, prostate) et, par les nœuds inguinaux, la paroi abdominale profonde sous-ombilicale, le périnée et le membre inférieur",
+    "structures": [
+     "vessie-urinaire",
+     "prostate",
+     "ligament-inguinal"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-iliaques-communs-lateraux",
+    "texte": "Vers les nœuds iliaques externes latéraux, puis les nœuds iliaques communs latéraux"
+   },
+   "clinique": "Il enfle avec la chaîne inguinale quand le membre inférieur est infecté ; une adénopathie profonde dure signale un envahissement au-delà de l'aine",
+   "memo": "Lacunaire latéral : en dehors de l'artère, tout contre l'arcade crurale",
+   "variantes": "Souvent absent",
+   "sources": [
+    "elsevier-iliaques-lateraux",
+    "wikipedia-iliaques-externes",
+    "seer-bassin"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeud-lacunaire-medial",
+   "resume": "Le nœud lacunaire du côté médial, en dedans de la veine fémorale : le plus constant des trois.",
+   "situation": "Derrière le ligament inguinal, en dedans de la veine fémorale, dans la partie médiale de la lacune vasculaire ; nœud inférieur de la chaîne iliaque externe médiale",
+   "recoit": {
+    "texte": "Les viscères pelviens (fond de la vessie, urètre, col de l'utérus, haut du vagin, prostate) et, par les nœuds inguinaux, la paroi profonde sous-ombilicale, le périnée et le membre inférieur",
+    "structures": [
+     "vessie-urinaire",
+     "prostate",
+     "ligament-inguinal",
+     "lymphonoeud-inguinal-profond-proximal"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-iliaques-communs-mediaux",
+    "texte": "Vers les nœuds iliaques externes médiaux, puis les nœuds iliaques communs intermédiaires et médiaux"
+   },
+   "clinique": "Présent dans la grande majorité des cas, il se confond avec le nœud de Cloquet ; on le retire avec le curage inguinal-iliaque d'un cancer ou d'un mélanome du membre inférieur",
+   "memo": "Lacunaire médial : près de la veine, tout au bout de la chaîne inguinale profonde",
+   "variantes": null,
+   "sources": [
+    "elsevier-iliaques-mediaux",
+    "wikipedia-iliaques-externes",
+    "seer-bassin"
+   ],
+   "divergences": "Elsevier le dit présent dans 98 % des cas et très proche du nœud inguinal profond proximal de Rosenmüller, avec lequel certains le confondent"
+  },
+  {
+   "id": "lymphonoeuds-anorectaux",
+   "resume": "Les petits nœuds collés au rectum, sur ses vaisseaux.",
+   "situation": "Contre la paroi musculaire du rectum, le long des vaisseaux rectaux supérieurs, dans le mésorectum",
+   "recoit": {
+    "texte": "Le rectum et la partie haute du canal anal",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-sigmoidiens",
+    "texte": "Vers les nœuds du mésosigmoïde puis les nœuds mésentériques inférieurs et préaortiques ; le bas rectum rejoint aussi les nœuds iliaques internes"
+   },
+   "clinique": "Dans le cancer du rectum, le mésorectum qui porte ces nœuds est retiré en bloc (exérèse totale du mésorectum) ; un cancer du bas rectum peut diffuser aussi vers les nœuds iliaques",
+   "memo": "Anorectaux : collés au rectum, ils portent la lymphe vers les mésentériques inférieurs",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "uams-abdomen",
+    "wikipedia-mesenteriques-inf"
+   ],
+   "divergences": "Pour le canal anal, Gray envoie la lymphe vers les nœuds hypogastriques (iliaques internes) ; la peau de l'anus, sous la ligne pectinée, va aux nœuds inguinaux superficiels"
+  },
+  {
+   "id": "lymphonoeuds-appendiculaires",
+   "resume": "Le ou les petits nœuds du méso-appendice, au bord de l'appendice.",
+   "situation": "Dans le méso-appendice, près de l'artère appendiculaire ; l'un d'eux se trouve en général à l'angle iléocæcal ; groupe inconstant",
+   "recoit": {
+    "texte": "L'appendice vermiforme et le cæcum",
+    "structures": [
+     "appendice-vermiforme",
+     "meso-appendice"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-ileocoliques",
+    "texte": "Vers les nœuds iléocoliques, parfois directement vers les nœuds mésentériques supérieurs centraux"
+   },
+   "clinique": "Ils réagissent à l'appendicite aiguë ; une tumeur de l'appendice qui les atteint justifie une hémicolectomie droite",
+   "memo": "Appendiculaires : dans le méso-appendice, au pied de l'appendice",
+   "variantes": "Absents chez certaines personnes",
+   "sources": [
+    "elsevier-mesenteriques",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-gluteaux-inferieurs",
+   "resume": "Un ou deux nœuds profonds du fessier, le long de l'artère glutéale inférieure.",
+   "situation": "Contre l'artère glutéale inférieure, sous le muscle piriforme, à la sortie du bassin par le foramen ischiatique ; un ou deux nœuds",
+   "recoit": {
+    "texte": "Les couches profondes de la région glutéale et de la cuisse ; les nœuds les plus bas reçoivent aussi des organes pelviens",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds iliaques communs, par les nœuds iliaques internes ; Gray les dit rejoindre les nœuds hypogastriques"
+   },
+   "clinique": "Profonds, ils ne se voient qu'à l'imagerie ; un nœud glutéal élargi fait chercher une lésion de la fesse, de la face postérieure de la cuisse ou du bassin",
+   "memo": "Glutéaux inférieurs : sous le piriforme, avec l'artère du même nom",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "elsevier-iliaques-communs"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-gluteaux-superieurs",
+   "resume": "Deux ou trois nœuds profonds du fessier, le long de l'artère glutéale supérieure.",
+   "situation": "Contre l'artère glutéale supérieure, en dedans de l'artère iliaque interne, près du bord supérieur du foramen ischiatique majeur ; deux ou trois nœuds",
+   "recoit": {
+    "texte": "Les couches profondes de la région glutéale et de la cuisse",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds iliaques communs, parfois les nœuds sacraux latéraux"
+   },
+   "clinique": "Profonds : seul le scanner les montre ; ils gonflent dans les infections ou les tumeurs profondes de la fesse et du bassin postérieur",
+   "memo": "Glutéaux supérieurs : au-dessus du piriforme, avec l'artère du même nom",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "elsevier-iliaques-communs"
+   ],
+   "divergences": "Gray les fait aboutir aux nœuds hypogastriques ; Elsevier aux nœuds iliaques communs, parfois aux sacraux latéraux"
+  },
+  {
+   "id": "lymphonoeuds-iliaques-externes-intermediaires",
+   "resume": "Les nœuds de l'iliaque externe qui se glissent entre l'artère et la veine, souvent absents.",
+   "situation": "Entre l'artère et la veine iliaques externes ; deux ou trois nœuds, absents chez environ un cinquième des personnes",
+   "recoit": {
+    "texte": "Les viscères pelviens (fond de la vessie, urètre, col de l'utérus, haut du vagin, prostate) et, par l'inguinal, la paroi sous-ombilicale, le périnée et le membre inférieur",
+    "structures": [
+     "vessie-urinaire",
+     "prostate"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-iliaques-communs-intermediaires",
+    "texte": "Vers les nœuds iliaques communs intermédiaires et médiaux, puis aortiques latéraux (à gauche) et caves latéraux (à droite)"
+   },
+   "clinique": "Retirés lors du curage pelvien d'un cancer de la prostate, de la vessie ou du col utérin ; leur atteinte guide le traitement",
+   "memo": "Intermédiaires : entre l'artère et la veine, l'étage du milieu",
+   "variantes": null,
+   "sources": [
+    "elsevier-iliaques-intermediaires",
+    "wikipedia-iliaques-externes",
+    "kenhub-abdomen-bassin"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-iliaques-externes-mediaux",
+   "resume": "Les nœuds de la face interne de la veine iliaque externe, avec les nœuds obturateurs.",
+   "situation": "Sur la face médiale de la veine iliaque externe, formant avec les nœuds obturateurs une chaîne médiale ; leur nombre varie car ils fusionnent souvent",
+   "recoit": {
+    "texte": "Les viscères pelviens (fond de la vessie, urètre, col de l'utérus, haut du vagin, prostate) et, par les nœuds inguinaux, la paroi sous-ombilicale, le périnée et le membre inférieur",
+    "structures": [
+     "vessie-urinaire",
+     "prostate",
+     "lymphonoeud-lacunaire-medial",
+     "lymphonoeud-inguinal-profond-proximal"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-iliaques-communs-mediaux",
+    "texte": "Vers les nœuds iliaques communs intermédiaires et médiaux, puis aortiques latéraux (à gauche) et caves latéraux (à droite)"
+   },
+   "clinique": "Chaîne la plus souvent explorée dans le curage pelvien des cancers du col, de la vessie et de la prostate ; les tumeurs de l'anus ou du membre inférieur la rejoignent par l'aine",
+   "memo": "Médiaux : contre la veine, au creux du bassin, tout près des obturateurs",
+   "variantes": null,
+   "sources": [
+    "elsevier-iliaques-mediaux",
+    "uams-abdomen",
+    "wikipedia-iliaques-externes"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-inguinaux-superficiels-superolateraux",
+   "resume": "Les nœuds du haut et du dehors de l'aine : ils recueillent la fesse et le flanc sous l'ombilic.",
+   "situation": "Sous le ligament inguinal, en dehors de la crosse de la grande saphène, le long de la veine circonflexe iliaque superficielle ; environ quatre nœuds",
+   "recoit": {
+    "texte": "La peau de la fesse, de la paroi abdominale latérale sous l'ombilic et du dos au-dessous de la crête iliaque",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds iliaques externes, avec quelques vaisseaux directs vers les nœuds inguinaux profonds"
+   },
+   "palpation": "Dans le pli de l'aine, juste sous le ligament inguinal, doigts à plat, patient allongé cuisse un peu fléchie ; de petits nœuds mobiles et indolores (moins de 1 cm) sont normaux",
+   "clinique": "Ils gonflent dans les plaies et infections de la fesse et du flanc ; un mélanome de cette peau justifie la recherche du ganglion sentinelle à l'aine",
+   "memo": "Supéro-latéral : le haut et le dehors de l'aine, côté fesse et flanc",
+   "variantes": null,
+   "sources": [
+    "elsevier-inguinaux-superficiels",
+    "kenhub-inguinaux",
+    "wikipedia-inguinaux"
+   ],
+   "divergences": "Gray et Elsevier font passer la lymphe des nœuds superficiels vers les iliaques externes ou les inguinaux profonds, alors que Wikipedia et Kenhub citent seulement les profonds"
+  },
+  {
+   "id": "lymphonoeuds-inguinaux-superficiels-superomediaux",
+   "resume": "Les nœuds du haut et du dedans de l'aine, qui recueillent le périnée, l'anus et la région génitale.",
+   "situation": "Sous le ligament inguinal, près de la crosse de la grande saphène (ouverture saphène), à proximité de la veine épigastrique superficielle ; environ deux nœuds",
+   "recoit": {
+    "texte": "La peau de la paroi abdominale sous l'ombilic, du périnée, de l'anus, de la région génitale externe et du tiers inférieur du vagin",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds iliaques externes, avec quelques vaisseaux directs vers les nœuds inguinaux profonds"
+   },
+   "palpation": "Dans le pli de l'aine, au dedans de la crosse de la saphène, doigts à plat, patient allongé cuisse légèrement écartée ; un nœud normal reste petit, mobile et indolore",
+   "clinique": "Un nœud ici fait chercher une lésion de la peau du périnée, de l'anus ou de la région génitale (infection, cancer de l'anus ou de la vulve, mélanome)",
+   "memo": "Supéro-médial : le haut et le dedans de l'aine, côté périnée et anus",
+   "variantes": null,
+   "sources": [
+    "elsevier-inguinaux-superficiels",
+    "kenhub-inguinaux",
+    "wikipedia-inguinaux"
+   ],
+   "divergences": "Même désaccord que pour les autres groupes superficiels : iliaques externes (Elsevier) ou inguinaux profonds d'abord (Wikipedia, Kenhub)"
+  },
+  {
+   "id": "lymphonoeuds-mesenteriques-juxta-intestinaux",
+   "resume": "Les nœuds posés contre la paroi de l'intestin grêle, sur les arcades de ses vaisseaux.",
+   "situation": "Le long des arcades vasculaires du jéjunum et de l'iléon, au contact de l'intestin, dans l'épaisseur du mésentère",
+   "recoit": {
+    "texte": "La lymphe des chylifères du jéjunum et de l'iléon",
+    "structures": [
+     "jejunum"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-mesenteriques-superieurs-centraux",
+    "texte": "Vers les nœuds mésentériques intermédiaires le long des branches de l'artère mésentérique supérieure, puis les nœuds centraux"
+   },
+   "clinique": "Premiers nœuds d'une tumeur de l'intestin grêle ; ils gonflent dans l'adénite mésentérique de l'enfant (virale ou à Yersinia), qui simule une appendicite",
+   "memo": "Juxta-intestinaux : collés à l'intestin, les premiers du mésentère",
+   "variantes": null,
+   "sources": [
+    "elsevier-mesenteriques",
+    "gray1918",
+    "uams-abdomen"
+   ],
+   "divergences": "Le nombre total de nœuds mésentériques varie : 100 à 150 (Gray, Elsevier), jusqu'à environ 200 (tables universitaires)"
+  },
+  {
+   "id": "lymphonoeuds-obturateurs",
+   "resume": "Les nœuds du canal obturateur, relais de la prostate, du corps et du col de l'utérus.",
+   "situation": "Dans le canal obturateur, contre l'artère obturatrice, sur la paroi latérale du pelvis, rattachés au groupe iliaque externe ; souvent absents",
+   "recoit": {
+    "texte": "La prostate chez l'homme, le corps et le col de l'utérus chez la femme",
+    "structures": [
+     "prostate"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-iliaques-externes-mediaux",
+    "texte": "Vers les nœuds iliaques externes médiaux et iliaques communs, puis aortiques latéraux (à gauche) et caves latéraux (à droite)"
+   },
+   "clinique": "Premier relais des cancers de la prostate et du col utérin : le curage de la fosse obturatrice est le geste de référence pour juger de l'extension",
+   "memo": "Obturateurs : dans le canal obturateur, avec l'artère du même nom",
+   "variantes": "Souvent absents : Elsevier cite 0 à 3,5 % de présence, chiffre très bas qui varie selon les études",
+   "sources": [
+    "elsevier-pelvis-viscerales",
+    "elsevier-iliaques-mediaux",
+    "wikipedia-iliaques-externes"
+   ],
+   "divergences": "Gray les range avec les nœuds hypogastriques (iliaques internes) ; la nomenclature actuelle et Elsevier les rattachent au groupe iliaque externe"
+  },
+  {
+   "id": "lymphonoeuds-precaecaux",
+   "resume": "Les nœuds devant le cæcum, dans le pli iléocæcal.",
+   "situation": "Le long de l'artère cæcale antérieure, dans le pli iléocæcal, devant le cæcum",
+   "recoit": {
+    "texte": "Le cæcum",
+    "structures": [
+     "colon-ascendant",
+     "appendice-vermiforme"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-ileocoliques",
+    "texte": "Vers les nœuds iléocoliques, ou directement les nœuds mésentériques supérieurs centraux"
+   },
+   "clinique": "Ils gonflent dans les inflammations de la fosse iliaque droite et sont retirés avec la pièce d'un cancer du cæcum",
+   "memo": "Précæcaux : devant le cæcum, sur l'artère cæcale antérieure",
+   "variantes": null,
+   "sources": [
+    "elsevier-mesenteriques",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-prevesicaux",
+   "resume": "Les nœuds devant la vessie, dans l'espace pré-vésical.",
+   "situation": "Devant la vessie, dans le tissu sous-péritonéal de l'espace pré-vésical",
+   "recoit": {
+    "texte": "La face antérieure de la vessie",
+    "structures": [
+     "vessie-urinaire"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds iliaques externes, par la chaîne vésicale antérieure"
+   },
+   "clinique": "Relais de la face antérieure de la vessie : un cancer de cette face les atteint, et ils sont retirés avec la vessie dans le curage pelvien",
+   "memo": "Pré-vésicaux : devant la vessie, au premier rang",
+   "variantes": null,
+   "sources": [
+    "elsevier-pelvis-viscerales",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-retrocaecaux",
+   "resume": "Les nœuds derrière le cæcum, sur la face postérieure de la jonction iléocæcale.",
+   "situation": "Le long de l'artère cæcale postérieure, derrière le cæcum et la jonction iléocæcale, en descendant vers l'appendice",
+   "recoit": {
+    "texte": "Le cæcum et l'appendice",
+    "structures": [
+     "colon-ascendant",
+     "appendice-vermiforme"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-ileocoliques",
+    "texte": "Vers les nœuds iléocoliques, ou directement les nœuds mésentériques supérieurs centraux"
+   },
+   "clinique": "Ils accompagnent une appendicite rétrocæcale ; ils sont retirés avec la pièce d'un cancer du cæcum",
+   "memo": "Rétrocæcaux : derrière le cæcum, sur l'artère cæcale postérieure",
+   "variantes": null,
+   "sources": [
+    "elsevier-mesenteriques",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-retrovesicaux",
+   "resume": "Les nœuds derrière la vessie, entre elle et le rectum.",
+   "situation": "Derrière la vessie, dans le tissu sous-péritonéal, entre la vessie et le rectum (chez la femme, le vagin)",
+   "recoit": {
+    "texte": "La face postérieure de la vessie",
+    "structures": [
+     "vessie-urinaire"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds iliaques internes, externes puis communs"
+   },
+   "clinique": "Relais de la face postérieure de la vessie, retirés avec la pièce de cystectomie dans le curage pelvien",
+   "memo": "Rétro-vésicaux : derrière la vessie",
+   "variantes": null,
+   "sources": [
+    "elsevier-pelvis-viscerales",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-sacraux-lateraux",
+   "resume": "Les nœuds de la concavité du sacrum, le long des artères sacrales latérales.",
+   "situation": "Dans la concavité du sacrum, le long des artères sacrales latérales, en avant des foramens sacraux antérieurs",
+   "recoit": {
+    "texte": "Le rectum, la prostate, l'utérus et le vagin, la paroi pelvienne postérieure et la région coccygienne",
+    "structures": [
+     "sacrum",
+     "prostate"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-iliaques-communs-mediaux",
+    "texte": "Vers les nœuds iliaques communs médiaux et les nœuds iliaques externes"
+   },
+   "clinique": "Relais des cancers du rectum et des organes pelviens ; une récidive rectale peut s'y loger et se voit à l'IRM",
+   "memo": "Sacraux latéraux : dans le sacrum, le long des artères latérales",
+   "variantes": null,
+   "sources": [
+    "elsevier-pelvis-viscerales",
+    "uams-abdomen",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-sacraux-medians",
+   "resume": "Les nœuds devant le sacrum, le long de l'artère sacrale médiane.",
+   "situation": "Devant le sacrum, le long de l'artère sacrale médiane, dans la concavité sacrale",
+   "recoit": {
+    "texte": "Le rectum, les organes pelviens et la région coccygienne",
+    "structures": [
+     "sacrum"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-iliaques-communs-mediaux",
+    "texte": "Vers les nœuds iliaques communs médiaux, puis aortiques latéraux (à gauche) et caves latéraux (à droite)"
+   },
+   "clinique": "Concernés par l'extension d'un cancer du bas rectum ; leur atteinte se juge à l'IRM",
+   "memo": "Sacraux médians : au milieu du sacrum, sur l'artère sacrale médiane",
+   "variantes": null,
+   "sources": [
+    "elsevier-pelvis-viscerales",
+    "uams-abdomen",
+    "gray1918"
+   ],
+   "divergences": "Gray ne décrit que les nœuds sacraux d'ensemble ; la distinction médians / latéraux vient d'Elsevier"
+  },
+  {
+   "id": "lymphonoeuds-sigmoidiens",
+   "resume": "Les nœuds du mésosigmoïde, sur les artères sigmoïdiennes.",
+   "situation": "Dans le mésosigmoïde, le long des artères sigmoïdiennes et de l'artère rectale supérieure",
+   "recoit": {
+    "texte": "Le côlon sigmoïde et la partie haute du rectum",
+    "structures": [
+     "colon-sigmoide"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-pre-aortiques",
+    "texte": "Vers les nœuds mésentériques inférieurs, autour de l'origine de l'artère mésentérique inférieure, puis préaortiques"
+   },
+   "clinique": "Le curage d'un cancer du sigmoïde retire cette chaîne avec l'artère ; l'examen d'au moins douze nœuds fixe le stade et guide la chimiothérapie",
+   "memo": "Sigmoïdiens : le S du côlon, ses nœuds dans son méso",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "uams-abdomen",
+    "wikipedia-mesenteriques-inf",
+    "elsevier-coliques"
+   ],
+   "divergences": "Wikipedia dit que la lymphe passe par les nœuds mésentériques supérieurs avant les préaortiques ; Gray et Elsevier la mènent aux nœuds mésentériques inférieurs puis préaortiques"
+  },
+  {
+   "id": "lymphonoeuds-vesicaux-lateraux",
+   "resume": "Les nœuds sur les côtés de la vessie, près des artères vésicales : le groupe le plus constant autour de la vessie.",
+   "situation": "De chaque côté de la vessie, dans le tissu sous-péritonéal, le long des artères vésicales",
+   "recoit": {
+    "texte": "La vessie, par ses faces latérales",
+    "structures": [
+     "vessie-urinaire"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds iliaques externes et internes, puis les nœuds iliaques communs"
+   },
+   "clinique": "Premier relais du cancer de la vessie : on les retire avec la pièce, dans le curage pelvien",
+   "memo": "Vésicaux latéraux : de chaque côté de la vessie, sur ses artères",
+   "variantes": null,
+   "sources": [
+    "elsevier-pelvis-viscerales",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-epigastriques-inferieurs",
+   "resume": "Les petits nœuds de la paroi abdominale basse, le long des vaisseaux épigastriques inférieurs.",
+   "situation": "Contre les vaisseaux épigastriques inférieurs, dans la partie basse de la paroi abdominale, au-dessus de l'arcade crurale ; trois ou quatre nœuds",
+   "recoit": {
+    "texte": "Les couches profondes de la paroi abdominale sous l'ombilic",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds iliaques externes"
+   },
+   "clinique": "Invisibles à l'examen : ils ne se montrent qu'à l'imagerie, quand une tumeur ou une infection de la paroi abdominale basse les envahit",
+   "memo": "Épigastriques inférieurs : sur les vaisseaux de la paroi, juste au-dessus de l'aine",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "uams-abdomen",
+    "kenhub-abdomen-bassin"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-axillaires-apicaux",
+   "resume": "Les nœuds de la pointe de l'aisselle : le dernier relais avant le tronc subclavier.",
+   "situation": "À la pointe de l'aisselle, en dedans de la veine axillaire et du bord latéral de la première côte, en partie derrière le petit pectoral ; six à douze nœuds",
+   "recoit": {
+    "texte": "Les efférents des autres groupes axillaires, les vaisseaux qui suivent la veine céphalique et la partie haute du sein",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers le tronc subclavier, qui s'ouvre près de la jonction jugulo-subclavière (à gauche, parfois dans le conduit thoracique ; à droite, dans le conduit lymphatique droit)"
+   },
+   "clinique": "Dernier étage du curage axillaire (niveau III) ; une atteinte apicale ou infraclaviculaire classe un cancer du sein en stade N3",
+   "memo": "Apicaux : au sommet de l'aisselle, la dernière marche avant le cou",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-axillaires",
+    "uams-membre-sup",
+    "teachmeanatomy-membre-sup"
+   ],
+   "divergences": "Elsevier ne nomme pas de groupe « apical » et parle de nœuds infraclaviculaires ; Gray les appelle nœuds médiaux ou subclaviculaires"
+  },
+  {
+   "id": "lymphonoeuds-axillaires-centraux",
+   "resume": "Les gros nœuds du creux de l'aisselle, enfouis dans la graisse : le carrefour axillaire.",
+   "situation": "Au centre de la base de l'aisselle, dans la graisse axillaire, près des nerfs intercosto-brachiaux ; trois à quatre gros nœuds, parfois plus",
+   "recoit": {
+    "texte": "Les efférents des groupes latéral, antérieur (pectoral) et postérieur (subscapulaire) : bras, sein, paroi thoracique et dos",
+    "structures": [
+     "lymphonoeuds-axillaires-lateraux",
+     "lymphonoeuds-axillaires-posterieurs"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-axillaires-apicaux",
+    "texte": "Vers les nœuds apicaux, puis le tronc subclavier"
+   },
+   "palpation": "Aisselle dégagée, bras du patient relâché et soutenu par l'examinateur : les doigts remontent dans la graisse du creux et roulent le tissu contre la paroi thoracique ; on sent parfois un nœud mou et mobile",
+   "clinique": "Un ganglion dur et fixé au creux de l'aisselle fait chercher un cancer du sein ; le curage axillaire peut léser le nerf thoracique long ou le nerf thoraco-dorsal, ou donner un lymphœdème du bras",
+   "memo": "Au centre de l'aisselle : c'est ici que tout converge",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-axillaires",
+    "elsevier-axillaires",
+    "teachmeanatomy-membre-sup"
+   ],
+   "divergences": "Le nombre de nœuds varie : trois ou quatre (Gray, Kenhub), quatre ou cinq (tables universitaires), jusqu'à dix (Elsevier)"
+  },
+  {
+   "id": "lymphonoeuds-axillaires-lateraux",
+   "resume": "Les nœuds du côté du bras dans l'aisselle : ils reçoivent presque toute la lymphe du membre supérieur.",
+   "situation": "Le long de la veine axillaire, sur sa face médiale et postérieure, dans la paroi latérale de l'aisselle ; quatre à six nœuds (nœuds huméraux)",
+   "recoit": {
+    "texte": "Presque toute la lymphe du membre supérieur, sauf celle qui suit la veine céphalique, et les efférents des nœuds cubitaux et brachiaux",
+    "structures": [
+     "lymphonoeuds-cubitaux",
+     "lymphonoeuds-brachiaux"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-axillaires-centraux",
+    "texte": "Vers les nœuds axillaires centraux, puis apicaux"
+   },
+   "palpation": "Bras légèrement écarté, doigts glissés contre la face interne de l'humérus au creux de l'aisselle ; un nœud normal est petit, mobile et indolore",
+   "clinique": "Ils gonflent les premiers dans les infections de la main, du bras et de l'épaule (lymphangite) ; l'axillaire douloureuse est un signe d'infection du membre",
+   "memo": "Latéraux : le côté du bras, la porte d'entrée de la lymphe du membre supérieur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-axillaires",
+    "uams-membre-sup",
+    "elsevier-axillaires"
+   ],
+   "divergences": "Elsevier et les tables universitaires appellent aussi ce groupe « brachial » (TA : nœuds huméraux) ; Gray le décrit sans l'appeler ainsi"
+  },
+  {
+   "id": "lymphonoeuds-cubitaux",
+   "resume": "Les nœuds du coude, où se rejoignent les vaisseaux de la main et de l'avant-bras.",
+   "situation": "Dans la fosse cubitale et au-dessus de l'épicondyle médial, en dedans de la veine basilique ; un à cinq nœuds, surtout superficiels",
+   "recoit": {
+    "texte": "La peau et les tissus profonds de l'avant-bras et de la main, surtout les doigts du bord ulnaire",
+    "structures": [
+     "humerus"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-axillaires-lateraux",
+    "texte": "Vers les nœuds axillaires latéraux, en suivant la veine basilique"
+   },
+   "palpation": "Coude fléchi à 90° et soutenu : un doigt glisse dans la gouttière au-dessus de l'épicondyle médial, entre le biceps et le triceps ; normalement on ne sent rien ou un très petit nœud",
+   "clinique": "Un nœud épitrochléen palpable oriente vers une infection ou une plaie de la main ou de l'avant-bras ; il est classique dans la syphilis secondaire, la maladie des griffes du chat et les lymphomes",
+   "memo": "Cubital : au coude, juste au-dessus de l'épicondyle médial",
+   "variantes": null,
+   "sources": [
+    "uams-membre-sup",
+    "elsevier-cubitaux",
+    "teachmeanatomy-membre-sup"
+   ],
+   "divergences": "Les tables universitaires comptent cinq ou six nœuds ; Gray ne parle que d'un ou deux nœuds supratrochléaires superficiels"
+  },
+  {
+   "id": "lymphonoeuds-supratrochleaires",
+   "resume": "Un ou deux nœuds juste au-dessus de l'épicondyle médial : les nœuds épitrochléens.",
+   "situation": "Au-dessus de l'épicondyle médial de l'humérus, en dedans de la veine basilique ; un ou deux nœuds, qui font partie des nœuds cubitaux",
+   "recoit": {
+    "texte": "Les troisième, quatrième et cinquième doigts, le bord médial de la main et la partie médiale de l'avant-bras",
+    "structures": [
+     "humerus"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-axillaires-lateraux",
+    "texte": "Vers les nœuds axillaires latéraux, par des vaisseaux qui suivent la veine basilique"
+   },
+   "palpation": "Coude fléchi à 90° : on sent, au-dessus de l'épicondyle médial, dans le sillon entre biceps et triceps, un nœud de la taille d'un grain ; normalement impalpable",
+   "clinique": "Un nœud épitrochléen gonflé fait chercher une plaie ou une infection du bord ulnaire de la main (annulaire, auriculaire) ou de l'avant-bras",
+   "memo": "Supra-trochléaires : au-dessus de la trochlée, en dedans, le long de la basilique",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "elsevier-cubitaux",
+    "teachmeanatomy-membre-sup"
+   ],
+   "divergences": "Les tables universitaires ne citent pas ce groupe à part ; la TA le range parmi les nœuds cubitaux"
+  },
+  {
+   "id": "lymphonoeuds-inguinaux-superficiels-inferieurs",
+   "resume": "Les nœuds de la chaîne verticale de l'aine, le long de la grande saphène : ils recueillent le membre inférieur.",
+   "situation": "Le long de la grande saphène et de la saphène accessoire latérale, sous l'ouverture saphène, en avant du sartorius ; environ quatre nœuds",
+   "recoit": {
+    "texte": "Les vaisseaux superficiels du membre inférieur qui suivent la grande saphène (pied, jambe, cuisse) et une partie de la région génitale et du périnée",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds inguinaux profonds, puis les nœuds iliaques externes ; Elsevier fait passer la plupart d'entre eux directement aux iliaques externes"
+   },
+   "palpation": "Sur la face antéro-médiale de la cuisse, sous le pli de l'aine, le long de la saphène : doigts à plat, patient allongé, jambe détendue ; les petits nœuds mobiles sont fréquents",
+   "clinique": "Ils gonflent quand le pied ou la jambe sont infectés (plaie, mycose entre les orteils, érysipèle) ; un nœud dur après un mélanome du membre inférieur fait chercher le ganglion sentinelle",
+   "memo": "Inférieurs : la chaîne verticale, accrochée à la saphène comme les grains d'un chapelet",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-inguinaux",
+    "elsevier-inguinaux-superficiels",
+    "wikipedia-inguinaux"
+   ],
+   "divergences": "Les tables universitaires et Wikipedia mènent d'abord aux nœuds inguinaux profonds ; Elsevier aux iliaques externes, avec quelques vaisseaux vers les profonds"
+  },
+  {
+   "id": "lymphonoeuds-poplites-profonds",
+   "resume": "Les nœuds enfouis dans la graisse du creux poplité, autour des vaisseaux poplités.",
+   "situation": "Dans la fosse poplitée, autour de l'artère et de la veine poplitées, dont un entre l'artère et la capsule articulaire du genou ; quatre à six nœuds",
+   "recoit": {
+    "texte": "Les vaisseaux profonds de la jambe (tibiaux antérieurs et postérieurs, fibulaires), l'articulation du genou et les nœuds poplités superficiels",
+    "structures": [
+     "lymphonoeuds-poplites-superficiels",
+     "lymphonoeud-tibial-anterieur",
+     "lymphonoeud-tibial-posterieur",
+     "lymphonoeud-fibulaire"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": null,
+    "texte": "Vers les nœuds inguinaux profonds, en suivant les vaisseaux fémoraux ; quelques-uns rejoignent les nœuds inguinaux superficiels par la grande saphène"
+   },
+   "palpation": "Hors d'atteinte à l'état normal ; un nœud gros se devine genou fléchi à 45°, doigts dans le creux poplité, et se confirme à l'échographie",
+   "clinique": "Ils gonflent dans les infections profondes de la jambe ou du pied et dans les arthrites du genou",
+   "memo": "Poplités profonds : dans le creux du genou, collés aux vaisseaux",
+   "variantes": "Cinq à sept nœuds poplités au total selon les sources, dont un ou deux superficiels",
+   "sources": [
+    "gray1918",
+    "kenhub-poplites",
+    "uams-membre-inf",
+    "wikipedia-poplites"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lymphonoeuds-poplites-superficiels",
+   "resume": "Le ou les nœuds poplités sous le fascia, au bout de la petite saphène.",
+   "situation": "Dans la fosse poplitée, sous le fascia poplité, près de la terminaison de la petite saphène ; un ou deux nœuds",
+   "recoit": {
+    "texte": "Le territoire de la petite saphène : talon, bord latéral du pied et face postérolatérale du mollet",
+    "structures": [
+     "fascia-poplite"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-poplites-profonds",
+    "texte": "Vers les nœuds poplités profonds, puis les nœuds inguinaux profonds"
+   },
+   "palpation": "Genou fléchi à 45° pour relâcher le fascia et les ischio-jambiers : la pulpe des doigts presse le creux poplité ; un nœud normal ne se sent pas",
+   "clinique": "Un nœud poplité gonflé fait chercher une plaie ou une infection du talon, de la plante ou du bord latéral du pied, ou un mélanome de ce territoire ; on pense aussi à un kyste poplité ou un anévrisme",
+   "memo": "Poplités superficiels : au bout de la petite saphène, sous le fascia",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-poplites",
+    "uams-membre-inf",
+    "wikipedia-poplites"
+   ],
+   "divergences": "Les tables universitaires ne distinguent pas de groupe superficiel et profond ; Gray, Kenhub et Wikipedia décrivent un nœud sous le fascia près de la petite saphène"
+  },
+  {
+   "id": "lymphonoeuds-axillaires-posterieurs",
+   "resume": "Les nœuds de la paroi postérieure de l'aisselle, le long des vaisseaux subscapulaires.",
+   "situation": "Sur la paroi postérieure de l'aisselle, le long des vaisseaux subscapulaires et thoraco-dorsaux, entre le grand rond et le grand dorsal ; six ou sept nœuds, jusqu'à douze",
+   "recoit": {
+    "texte": "La peau du dos, de la nuque basse, de l'épaule et de la paroi postérieure du thorax, jusqu'à la crête iliaque",
+    "structures": []
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-axillaires-centraux",
+    "texte": "Vers les nœuds axillaires centraux, puis apicaux"
+   },
+   "palpation": "Pouce et doigts pincent le pli axillaire postérieur (grand dorsal et grand rond), bras relâché ; les nœuds normaux ne se sentent pas",
+   "clinique": "Premiers nœuds d'un mélanome du dos ou de l'épaule ; lors du curage, on prend garde au nerf thoraco-dorsal qui les accompagne",
+   "memo": "Postérieurs : le dos de l'aisselle, le long des vaisseaux subscapulaires",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-axillaires",
+    "uams-membre-sup",
+    "elsevier-axillaires"
+   ],
+   "divergences": "Le nombre de nœuds varie : cinq ou six (tables universitaires), six ou sept (Gray), jusqu'à douze (Elsevier)"
+  },
+  {
+   "id": "lymphonoeuds-brachiaux",
+   "resume": "Quelques petits nœuds profonds du bras, le long de l'artère brachiale.",
+   "situation": "Au bras, contre l'artère brachiale, sur son côté médial ; groupe petit et inconstant",
+   "recoit": {
+    "texte": "Les vaisseaux lymphatiques profonds de l'avant-bras et du bras, qui accompagnent les artères radiale, ulnaire, interosseuse et brachiale",
+    "structures": [
+     "humerus"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-axillaires-lateraux",
+    "texte": "Vers les nœuds axillaires latéraux, puis centraux"
+   },
+   "clinique": "Rarement perçus : leur gonflement accompagne une infection profonde de l'avant-bras ou du bras",
+   "memo": "Brachiaux : le long de l'artère brachiale, au creux du bras",
+   "variantes": "Groupe inconstant ; quelques nœuds seulement, parfois un seul",
+   "sources": [
+    "gray1918",
+    "elsevier-cubitaux",
+    "uams-membre-sup"
+   ],
+   "divergences": "Gray ne décrit pas de groupe brachial distinct ; les tables universitaires appellent « brachiaux » les nœuds axillaires latéraux ; Elsevier place des nœuds brachiaux entre les cubitaux et les axillaires centraux"
+  },
+  {
+   "id": "lymphonoeud-fibulaire",
+   "resume": "Un petit nœud inconstant de la jambe, sur le trajet des vaisseaux fibulaires.",
+   "situation": "Dans la loge postérieure profonde de la jambe, sur le trajet des vaisseaux fibulaires, près de la fibula ; nœud inconstant",
+   "recoit": {
+    "texte": "Les vaisseaux lymphatiques profonds qui accompagnent l'artère fibulaire, du côté latéral de la jambe",
+    "structures": [
+     "lymphonoeuds-poplites-profonds"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-poplites-profonds",
+    "texte": "Vers les nœuds poplités profonds"
+   },
+   "clinique": "Trop petit et profond pour être senti ; il n'a pas de rôle clinique propre en dehors de l'imagerie",
+   "memo": "Fibulaire : le nœud de la fibula, relais sur la voie du creux poplité",
+   "variantes": "Inconstant ; la plupart des personnes n'en ont pas",
+   "sources": [
+    "ta98",
+    "gray1918"
+   ],
+   "divergences": "Gray ne décrit que le nœud tibial antérieur et dit que les vaisseaux profonds fibulaires et tibiaux postérieurs gagnent les nœuds poplités ; la Terminologia Anatomica nomme aussi un nœud fibulaire (inconstant)"
+  },
+  {
+   "id": "lymphonoeud-tibial-anterieur",
+   "resume": "Un petit nœud inconstant de la jambe, sur la membrane interosseuse, contre l'artère tibiale antérieure.",
+   "situation": "Sur la membrane interosseuse de la jambe, près de la partie haute des vaisseaux tibiaux antérieurs, dans la loge antérieure ; nœud petit et inconstant",
+   "recoit": {
+    "texte": "Les vaisseaux lymphatiques profonds de la loge antérieure de la jambe, qui accompagnent l'artère tibiale antérieure",
+    "structures": [
+     "lymphonoeuds-poplites-profonds"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-poplites-profonds",
+    "texte": "Vers les nœuds poplités profonds"
+   },
+   "clinique": "Trop petit et profond pour être senti ; il importe peu en pratique, hors la lymphographie",
+   "memo": "Tibial antérieur : sur la membrane interosseuse, au premier relais de la loge antérieure",
+   "variantes": "Inconstant",
+   "sources": [
+    "gray1918",
+    "kenhub-bassin-membre-inf",
+    "wikipedia-poplites"
+   ],
+   "divergences": "Kenhub ne le mentionne qu'en passant ; Gray le décrit comme petit et inconstant, relais des vaisseaux tibiaux antérieurs"
+  },
+  {
+   "id": "lymphonoeud-tibial-posterieur",
+   "resume": "Un petit nœud inconstant de la jambe, le long des vaisseaux tibiaux postérieurs.",
+   "situation": "Dans la loge postérieure profonde de la jambe, sur le trajet des vaisseaux tibiaux postérieurs ; nœud inconstant",
+   "recoit": {
+    "texte": "Les vaisseaux lymphatiques profonds de la loge postérieure de la jambe, qui accompagnent l'artère tibiale postérieure",
+    "structures": [
+     "lymphonoeuds-poplites-profonds"
+    ]
+   },
+   "draine_vers": {
+    "lymphe": "lymphonoeuds-poplites-profonds",
+    "texte": "Vers les nœuds poplités profonds"
+   },
+   "clinique": "Trop petit et profond pour être senti ; il n'a pas de rôle clinique propre en dehors de l'imagerie",
+   "memo": "Tibial postérieur : le relais de la loge postérieure profonde, sur la voie du creux poplité",
+   "variantes": "Inconstant",
+   "sources": [
+    "ta98",
+    "gray1918",
+    "wikipedia-poplites"
+   ],
+   "divergences": "Gray ne décrit que le nœud tibial antérieur, mais dit que les vaisseaux profonds tibiaux postérieurs vont aux nœuds poplités ; la Terminologia Anatomica nomme aussi ce nœud (inconstant)"
+  }
+ ]
+}

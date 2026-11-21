@@ -12,6 +12,7 @@
 
 import { ELEMENTS, PAR_ID } from "./catalogue";
 import planchesJson from "./modele/planches.json";
+import titresJson from "./modele/planches-titres.json";
 import type { Couche, Element, RegionId } from "./types";
 import { REGIONS } from "./types";
 
@@ -26,6 +27,8 @@ export type DefCategorie = {
 };
 
 const planches = planchesJson as unknown as Partial<Record<CategorieId, string[][]>>;
+/** Les titres écrits avec la planche (système, partie de l'encéphale, tronc et ses branches), par rang dans la catégorie. */
+const titresEcrits = titresJson as unknown as Partial<Record<CategorieId, Record<string, string>>>;
 
 const TOUTES: Record<CategorieId, DefCategorie> = {
   os: { id: "os", nom: "Les os", texte: "Le squelette, du crâne aux phalanges du pied.", couches: ["os"] },
@@ -62,22 +65,47 @@ export type Niveau = {
   nouveaux: string[];
 };
 
-/** Le titre d'un niveau : les régions qu'il couvre (au plus deux), ou « Les incontournables ». */
+const grandeDe = (r: RegionId) => REGIONS.find((x) => x.id === r)?.grande;
+const NOMS_GRANDES: Record<string, string> = { "tete-cou": "Tête et cou", tronc: "Le tronc", "membre-sup": "Le membre supérieur", "membre-inf": "Le membre inférieur" };
+const SUITES_GRANDES: Record<string, string> = { "tete-cou": "la tête et le cou", tronc: "le tronc", "membre-sup": "le membre supérieur", "membre-inf": "le membre inférieur" };
+
+/**
+ * Le titre d'un niveau : « Les incontournables » pour le premier, sinon la région qu'il couvre (la région fine si elle
+ * en tient au moins 70 %, sinon une ou deux grandes régions). Les titres répétés sont numérotés ensuite (II, III…).
+ */
 function titreDe(els: Element[], n: number, categorie: CategorieId): string {
   if (n === 1 && categorie !== "corps") return "Les incontournables";
-  const compte = new Map<string, number>();
+  if (!els.length) return "Planche";
+  const fines = new Map<RegionId, number>();
+  const grandes = new Map<string, number>();
   for (const e of els) {
-    const g = REGIONS.find((r) => r.id === e.region)?.grande ?? "tronc";
-    compte.set(g, (compte.get(g) ?? 0) + 1);
+    fines.set(e.region, (fines.get(e.region) ?? 0) + 1);
+    const g = grandeDe(e.region) ?? "tronc";
+    grandes.set(g, (grandes.get(g) ?? 0) + 1);
   }
-  const noms: Record<string, string> = { "tete-cou": "Tête et cou", tronc: "Le tronc", "membre-sup": "Le membre supérieur", "membre-inf": "Le membre inférieur" };
-  const tri = [...compte].sort((a, b) => b[1] - a[1]);
-  if (!tri.length) return "Planche";
-  if (tri.length === 1 || tri[0][1] >= els.length * 0.7) return noms[tri[0][0]];
-  return `${noms[tri[0][0]]}, ${noms[tri[1][0]].replace(/^Le /, "le ")}`;
+  const [fine, nFine] = [...fines].sort((a, b) => b[1] - a[1])[0];
+  if (nFine >= els.length * 0.7) return REGIONS.find((r) => r.id === fine)?.nom ?? "Planche";
+  const tri = [...grandes].sort((a, b) => b[1] - a[1]);
+  if (tri.length === 1 || tri[0][1] >= els.length * 0.7) return NOMS_GRANDES[tri[0][0]];
+  return `${NOMS_GRANDES[tri[0][0]]}, ${SUITES_GRANDES[tri[1][0]]}`;
 }
 
-const grandeDe = (r: RegionId) => REGIONS.find((x) => x.id === r)?.grande;
+const ROMAINS = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX"];
+const romain = (k: number) => ROMAINS[k] ?? String(k);
+
+/** Numérote les titres qui reviennent : « La main I », « La main II »… */
+function numeroter(niveaux: Niveau[]): Niveau[] {
+  const total = new Map<string, number>();
+  for (const x of niveaux) total.set(x.titre, (total.get(x.titre) ?? 0) + 1);
+  const vu = new Map<string, number>();
+  return niveaux.map((x) => {
+    if ((total.get(x.titre) ?? 0) < 2) return x;
+    const k = (vu.get(x.titre) ?? 0) + 1;
+    vu.set(x.titre, k);
+    return { ...x, titre: `${x.titre} ${romain(k)}` };
+  });
+}
+
 const cache = new Map<CategorieId, Niveau[]>();
 
 export function niveauxDe(categorie: CategorieId): Niveau[] {
@@ -96,10 +124,12 @@ export function niveauxDe(categorie: CategorieId): Niveau[] {
     niveaux.push({ categorie, n: 5, titre: "Les incontournables du corps", nouveaux: ELEMENTS_APPRIS.filter((e) => e.rang <= 1).map((e) => e.id) });
     niveaux.push({ categorie, n: 6, titre: "Le grand examen", nouveaux: ELEMENTS_APPRIS.map((e) => e.id) });
   } else {
-    niveaux = (planches[categorie] ?? []).map((ids, i) => {
-      const els = ids.map((id) => PAR_ID.get(id)).filter((e): e is Element => Boolean(e));
-      return { categorie, n: i + 1, titre: titreDe(els, i + 1, categorie), nouveaux: els.map((e) => e.id) };
-    });
+    niveaux = numeroter(
+      (planches[categorie] ?? []).map((ids, i) => {
+        const els = ids.map((id) => PAR_ID.get(id)).filter((e): e is Element => Boolean(e));
+        return { categorie, n: i + 1, titre: titresEcrits[categorie]?.[String(i)] ?? titreDe(els, i + 1, categorie), nouveaux: els.map((e) => e.id) };
+      }),
+    );
   }
   cache.set(categorie, niveaux);
   return niveaux;

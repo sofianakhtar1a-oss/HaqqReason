@@ -1,0 +1,2820 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral sur Internet Archive (articulations p. 313-333 ; myologie p. 432-445)",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "tma-coude": {
+   "titre": "TeachMeAnatomy, Elbow Joint",
+   "url": "https://teachmeanatomy.info/upper-limb/joints/elbow-joint/"
+  },
+  "tma-poignet": {
+   "titre": "TeachMeAnatomy, Wrist Joint",
+   "url": "https://teachmeanatomy.info/upper-limb/joints/wrist-joint/"
+  },
+  "kenhub-coude": {
+   "titre": "Kenhub, Elbow joint",
+   "url": "https://www.kenhub.com/en/library/anatomy/elbow-joint"
+  },
+  "kenhub-sternoclaviculaire": {
+   "titre": "Kenhub, Sternoclavicular joint",
+   "url": "https://www.kenhub.com/en/library/anatomy/sternoclavicular-joint"
+  },
+  "kenhub-mcp": {
+   "titre": "Kenhub, Metacarpophalangeal (MCP) joints",
+   "url": "https://kenhub.com/en/library/anatomy/metacarpophalangeal-mcp-joints"
+  },
+  "kenhub-os-carpe": {
+   "titre": "Kenhub, Carpal bones",
+   "url": "https://www.kenhub.com/en/library/anatomy/carpal-bones"
+  },
+  "statpearls-lcu-pouce": {
+   "titre": "StatPearls, Ulnar collateral ligament injury of the thumb (gamekeeper's/skier's thumb)",
+   "url": "https://www.statpearls.com/point-of-care/30737"
+  },
+  "pmc-margulies": {
+   "titre": "Margulies et al., Narrative review of ligamentous wrist injuries, J Hand Microsurg 2021 (PMC8041499)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8041499"
+  },
+  "pmc-echo-poignet": {
+   "titre": "Guide échographique des ligaments du poignet (PMC8534780)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8534780"
+  },
+  "pmc-tests-poignet": {
+   "titre": "Revue des tests d'examen du poignet : ligament lunotriquétral et TFCC (PMC9789218)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9789218"
+  },
+  "pmc-bourses-epaule": {
+   "titre": "Étude anatomique des bourses de l'épaule : subacromiale, coraco-brachiale, subcoracoïdienne, subscapulaire (PMC9005683)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9005683"
+  },
+  "pmc-sous-deltoidienne": {
+   "titre": "Étude anatomique et innervation de la bourse sous-deltoïdienne, BioMed Res Int 2018 (PMC6247731)",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6247731"
+  },
+  "physiopedia-glenohumeral": {
+   "titre": "Physiopedia, Glenohumeral Joint",
+   "url": "https://www.physio-pedia.com/Glenohumeral_Joint"
+  },
+  "physiopedia-gtps": {
+   "titre": "Physiopedia, Greater Trochanteric Pain Syndrome",
+   "url": "https://www.physio-pedia.com/Greater_Trochanteric_Pain_Syndrome"
+  },
+  "physiopedia-valgus": {
+   "titre": "Physiopedia, Moving Valgus Stress Test",
+   "url": "https://physio-pedia.com/Moving_Valgus_Stress_Test"
+  },
+  "pubmed-gtps": {
+   "titre": "PubMed (StatPearls), Greater trochanteric pain syndrome (greater trochanteric bursitis)",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32491365/"
+  },
+  "elsevier-bourse-grand-rond": {
+   "titre": "Elsevier Anatomy, Subtendinous bursa of teres major",
+   "url": "https://www.elsevier.com/resources/anatomy/connective-tissue/connective-tissue-of-upper-limb-left/subtendinous-bursa-of-teres-major-muscle-left/21292"
+  },
+  "elsevier-bourse-infra-epineux": {
+   "titre": "Elsevier Anatomy, Subtendinous bursa of infraspinatus",
+   "url": "https://www.elsevier.com/resources/anatomy/connective-tissue/connective-tissue-of-upper-limb-left/subtendinous-bursa-of-infraspinatus-muscle-left/24270"
+  },
+  "elsevier-trochanterique-moyen": {
+   "titre": "Elsevier Anatomy, Trochanteric bursae of gluteus medius",
+   "url": "https://www.elsevier.com/resources/anatomy/connective-tissue/connective-tissue-of-lower-limb-right/trochanteric-bursae-of-gluteus-medius-muscle-right/19029"
+  },
+  "elsevier-trochanterique-petit": {
+   "titre": "Elsevier Anatomy, Trochanteric bursa of gluteus minimus",
+   "url": "https://www.elsevier.com/resources/anatomy/connective-tissue/connective-tissue-of-lower-limb-right/trochanteric-bursa-of-gluteus-minimus-muscle-right/21324"
+  },
+  "wiki-glenohumeraux": {
+   "titre": "Wikipédia (anglais), Glenohumeral ligaments",
+   "url": "https://en.wikipedia.org/wiki/Glenohumeral_ligaments"
+  },
+  "wiki-bourse-subacromiale": {
+   "titre": "Wikipédia (anglais), Subacromial bursa",
+   "url": "https://en.wikipedia.org/wiki/Subacromial_bursa"
+  },
+  "wiki-luxation-epaule": {
+   "titre": "Wikipédia (anglais), Shoulder dislocation",
+   "url": "https://en.wikipedia.org/wiki/Shoulder_dislocation"
+  },
+  "wiki-conflit": {
+   "titre": "Wikipédia (anglais), Shoulder impingement syndrome",
+   "url": "https://en.wikipedia.org/wiki/Shoulder_impingement_syndrome"
+  },
+  "wiki-annulaire": {
+   "titre": "Wikipédia (anglais), Annular ligament of radius",
+   "url": "https://en.wikipedia.org/wiki/Annular_ligament_of_radius"
+  },
+  "wiki-lcu-coude": {
+   "titre": "Wikipédia (anglais), Ulnar collateral ligament of elbow joint",
+   "url": "https://en.wikipedia.org/wiki/Ulnar_collateral_ligament_of_elbow_joint"
+  },
+  "wiki-acromioclaviculaire": {
+   "titre": "Wikipédia (anglais), Acromioclavicular joint",
+   "url": "https://en.wikipedia.org/wiki/Acromioclavicular_joint"
+  },
+  "wiki-coracoclaviculaire": {
+   "titre": "Wikipédia (anglais), Coracoclavicular ligament",
+   "url": "https://en.wikipedia.org/wiki/Coracoclavicular_ligament"
+  },
+  "wiki-coracoacromial": {
+   "titre": "Wikipédia (anglais), Coracoacromial ligament",
+   "url": "https://en.wikipedia.org/wiki/Coracoacromial_ligament"
+  },
+  "wiki-coracohumeral": {
+   "titre": "Wikipédia (anglais), Coracohumeral ligament",
+   "url": "https://en.wikipedia.org/wiki/Coracohumeral_ligament"
+  },
+  "wiki-transverse-scapula": {
+   "titre": "Wikipédia (anglais), Superior transverse scapular ligament",
+   "url": "https://en.wikipedia.org/wiki/Superior_transverse_scapular_ligament"
+  },
+  "wiki-transverse-humerus": {
+   "titre": "Wikipédia (anglais), Transverse humeral ligament",
+   "url": "https://en.wikipedia.org/wiki/Transverse_humeral_ligament"
+  },
+  "wiki-costoclaviculaire": {
+   "titre": "Wikipédia (anglais), Costoclavicular ligament",
+   "url": "https://en.wikipedia.org/wiki/Costoclavicular_ligament"
+  },
+  "wiki-sternoclaviculaire": {
+   "titre": "Wikipédia (anglais), Sternoclavicular joint",
+   "url": "https://en.wikipedia.org/wiki/Sternoclavicular_joint"
+  },
+  "wiki-labrum": {
+   "titre": "Wikipédia (anglais), Glenoid labrum",
+   "url": "https://en.wikipedia.org/wiki/Glenoid_labrum"
+  },
+  "wiki-bourse-bicipitoradiale": {
+   "titre": "Wikipédia (anglais), Bicipitoradial bursa",
+   "url": "https://en.wikipedia.org/wiki/Bicipitoradial_bursa"
+  },
+  "wiki-bursite-olecranienne": {
+   "titre": "Wikipédia (anglais), Olecranon bursitis",
+   "url": "https://en.wikipedia.org/wiki/Olecranon_bursitis"
+  },
+  "wiki-bursa": {
+   "titre": "Wikipédia (anglais), Bursa (anatomy)",
+   "url": "https://en.wikipedia.org/wiki/Bursa_(anatomy)"
+  },
+  "wiki-gtps": {
+   "titre": "Wikipédia (anglais), Trochanteric bursa (greater trochanteric pain syndrome)",
+   "url": "https://en.wikipedia.org/wiki/Trochanteric_bursa"
+  },
+  "wiki-moyen-fessier": {
+   "titre": "Wikipédia (anglais), Gluteus medius",
+   "url": "https://en.wikipedia.org/wiki/Gluteus_medius"
+  },
+  "wiki-trapeze": {
+   "titre": "Wikipédia (anglais), Trapezius",
+   "url": "https://en.wikipedia.org/wiki/Trapezius"
+  },
+  "wiki-membrane-interosseuse": {
+   "titre": "Wikipédia (anglais), Interosseous membrane of the forearm",
+   "url": "https://en.wikipedia.org/wiki/Interosseous_membrane_of_the_forearm"
+  },
+  "wiki-lig-radie": {
+   "titre": "Wikipédia (anglais), Radiate carpal ligament",
+   "url": "https://en.wikipedia.org/wiki/Radiate_carpal_ligament"
+  },
+  "wiki-metacarpien-transverse": {
+   "titre": "Wikipédia (anglais), Deep transverse metacarpal ligament",
+   "url": "https://en.wikipedia.org/wiki/Deep_transverse_metacarpal_ligament"
+  },
+  "wiki-pisohamatum": {
+   "titre": "Wikipédia (anglais), Pisohamate ligament",
+   "url": "https://en.wikipedia.org/wiki/Pisohamate_ligament"
+  },
+  "wiki-collateraux-mcp": {
+   "titre": "Wikipédia (anglais), Collateral ligaments of metacarpophalangeal joints",
+   "url": "https://en.wikipedia.org/wiki/Collateral_ligaments_of_metacarpophalangeal_joints"
+  },
+  "wiki-tfcc": {
+   "titre": "Wikipédia (anglais), Triangular fibrocartilage",
+   "url": "https://en.wikipedia.org/wiki/Triangular_fibrocartilage"
+  },
+  "wiki-radiocarpal-palmaire": {
+   "titre": "Wikipédia (anglais), Palmar radiocarpal ligament",
+   "url": "https://en.wikipedia.org/wiki/Palmar_radiocarpal_ligament"
+  },
+  "wiki-intercarpiens-palmaires": {
+   "titre": "Wikipédia (anglais), Palmar intercarpal ligaments",
+   "url": "https://en.wikipedia.org/wiki/Palmar_intercarpal_ligaments"
+  },
+  "wiki-poignet": {
+   "titre": "Wikipédia (anglais), Wrist",
+   "url": "https://en.wikipedia.org/wiki/Wrist"
+  },
+  "wiki-palmar-plate": {
+   "titre": "Wikipédia (anglais), Palmar plate",
+   "url": "https://en.wikipedia.org/wiki/Palmar_plate"
+  },
+  "wiki-ip-main": {
+   "titre": "Wikipédia (anglais), Interphalangeal joints of the hand",
+   "url": "https://en.wikipedia.org/wiki/Interphalangeal_joints_of_the_hand"
+  },
+  "wiki-cmc": {
+   "titre": "Wikipédia (anglais), Carpometacarpal joint",
+   "url": "https://en.wikipedia.org/wiki/Carpometacarpal_joint"
+  }
+ },
+ "fiches": [
+  {
+   "id": "bourse-sous-tendineuse-du-muscle-trapeze",
+   "resume": "Une petite bourse inconstante, à la racine de l'épine de la scapula, sous le tendon des fibres inférieures du trapèze.",
+   "nature": "bourse",
+   "articulation": "Épaule (racine de l'épine de la scapula)",
+   "attaches": [],
+   "situation": "Entre le tendon du trapèze et la surface triangulaire lisse de la racine de l'épine de la scapula, sur laquelle il glisse avant de s'insérer sur le petit tubercule qui la termine",
+   "role": "Facilite le glissement du tendon des fibres inférieures du trapèze sur l'os lorsque la scapula bouge",
+   "tendu": null,
+   "test": null,
+   "clinique": "Aucune bursite typique n'est décrite à cet endroit ; son intérêt est de rappeler que le tendon du trapèze inférieur glisse sur la racine de l'épine",
+   "memo": "La bourse du bas du trapèze : elle amortit le tendon au pied de l'épine",
+   "variantes": "Inconstante",
+   "sources": [
+    "gray1918",
+    "wiki-trapeze"
+   ],
+   "divergences": "Ni Gray ni Wikipédia ne citent cette bourse ; ils décrivent seulement le glissement du tendon sur la surface triangulaire. L'existence et la place de la bourse reposent sur la nomenclature (Terminologia Anatomica) ; non confirmées dans une seconde source"
+  },
+  {
+   "id": "capsule-articulaire-de-l-articulation-glenohumerale",
+   "resume": "Le manchon lâche qui enveloppe l'articulation de l'épaule : il laisse une grande liberté, au prix d'une stabilité confiée aux muscles.",
+   "nature": "capsule",
+   "articulation": "Épaule (articulation gléno-humérale)",
+   "attaches": [
+    {
+     "texte": "Pourtour de la cavité glénoïdale de la scapula, au-delà du bourrelet glénoïdal",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Col anatomique de l'humérus, tout autour de la tête",
+     "os": [
+      "humerus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Contient la tête humérale et son liquide synovial ; très ample, elle autorise tous les mouvements. Les tendons de la coiffe la renforcent ; elle est épaissie par les ligaments gléno-huméraux et coraco-huméral",
+   "tendu": "Selon la zone : la partie antérieure se tend en rotation latérale et abduction, la partie supérieure en adduction",
+   "test": "Test d'appréhension (bras à 90° d'abduction, rotation latérale) pour l'instabilité antérieure ; signe du sillon (traction du bras vers le bas) pour l'instabilité inférieure",
+   "clinique": "Son versant inférieur, mince et sans renfort musculaire, est le point faible : la tête humérale sort le plus souvent vers l'avant (luxation antérieure, 97 % des cas), parfois avec atteinte du nerf axillaire",
+   "memo": "Une capsule ample comme un sac de voile : bonne pour naviguer, mauvaise pour tenir en place",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "physiopedia-glenohumeral",
+    "wiki-luxation-epaule"
+   ],
+   "divergences": "Gray rattache le bas de la capsule au col anatomique et cite le chef long du triceps comme seul renfort inférieur ; les auteurs récents décrivent surtout un recessus axillaire lâche"
+  },
+  {
+   "id": "capsules-articulaires-des-art-interphalangiennes-distales",
+   "resume": "Les capsules des articulations en charnière entre phalange moyenne et distale, à structure semblable à celles des interphalangiennes proximales.",
+   "nature": "groupe",
+   "articulation": "Main (articulations interphalangiennes distales)",
+   "attaches": [
+    {
+     "texte": "Tête de chaque phalange moyenne",
+     "os": [
+      "phalanges-moyennes"
+     ]
+    },
+    {
+     "texte": "Base de chaque phalange distale",
+     "os": [
+      "phalanges-distales"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Enveloppent la dernière charnière du doigt, avec plaque palmaire et collatéraux ; seules la flexion et l'extension sont permises",
+   "tendu": null,
+   "test": null,
+   "clinique": "Même architecture que pour l'interphalangienne proximale : une extension forcée peut léser la plaque palmaire ; la flexion y est moindre (environ 80°, contre environ 100° en proximal)",
+   "memo": "La dernière charnière du doigt : même plan que la précédente, en plus petit",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-ip-main"
+   ]
+  },
+  {
+   "id": "capsules-articulaires-des-articulations-metacarpophalang",
+   "resume": "Les capsules des cinq articulations entre métacarpiens et phalanges proximales, lâches, avec les collatéraux sur les côtés.",
+   "nature": "groupe",
+   "articulation": "Main (articulations métacarpo-phalangiennes)",
+   "attaches": [
+    {
+     "texte": "Pourtour des surfaces articulaires de la tête de chaque métacarpien",
+     "os": [
+      "metacarpiens"
+     ]
+    },
+    {
+     "texte": "Base de chaque phalange proximale",
+     "os": [
+      "phalanges-proximales"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Entourent les articulations condylaires : lâche, épaissie sur les côtés par les collatéraux et en avant par la plaque palmaire, elle reçoit en arrière des fibres des tendons extenseurs",
+   "tendu": "En flexion complète, quand les collatéraux sont tendus",
+   "test": null,
+   "clinique": "La plaque palmaire empêche l'hyperextension ; l'articulation du pouce, plus charnière, est exposée dans le pouce du skieur (rupture du collatéral ulnaire)",
+   "memo": "Lâche en arrière, solide devant et sur les côtés : une capsule en U",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mcp",
+    "wiki-palmar-plate"
+   ]
+  },
+  {
+   "id": "ligaments-interphalangiens-collateraux-de-la-main",
+   "resume": "Les deux cordons latéraux de chaque articulation interphalangienne : les parois d'une charnière qui ne bouge que d'avant en arrière.",
+   "nature": "groupe",
+   "articulation": "Main (articulations interphalangiennes)",
+   "attaches": [
+    {
+     "texte": "Côtés de la tête de la phalange proximale (articulation proximale) ou moyenne (distale)",
+     "os": [
+      "phalanges-proximales",
+      "phalanges-moyennes"
+     ]
+    },
+    {
+     "texte": "Côtés de la base de la phalange suivante, moyenne ou distale",
+     "os": [
+      "phalanges-moyennes",
+      "phalanges-distales"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Empêchent la déviation latérale ; avec la plaque palmaire comme plancher, ils forment une boîte mobile, et un ligament collatéral accessoire, plus bas, double chacun d'eux",
+   "tendu": null,
+   "test": "Test de déviation latérale du doigt en extension, comparé au doigt voisin et au côté sain",
+   "clinique": "L'entorse latérale d'une interphalangienne proximale (sport de balle) est fréquente ; une laxité latérale franche indique une rupture du collatéral",
+   "memo": "Un doigt ne pivote pas : ses collatéraux le tiennent droit",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-ip-main"
+   ],
+   "divergences": "La fréquence des entorses latérales des interphalangiennes et le test de déviation latérale sont un savoir courant, non détaillé dans les pages consultées"
+  },
+  {
+   "id": "bourse-bicipitoradiale",
+   "resume": "La bourse qui entoure le tendon distal du biceps, devant la tubérosité du radius, pour qu'il glisse pendant la rotation de l'avant-bras.",
+   "nature": "bourse",
+   "articulation": "Coude (tubérosité du radius)",
+   "attaches": [],
+   "situation": "Entre le tendon distal du biceps brachial et la partie antérieure de la tubérosité du radius, qu'elle entoure en partie ou en totalité",
+   "role": "Laisse glisser le tendon du biceps contre le radius ; en pronation, elle se comprime entre le tendon et la tubérosité",
+   "tendu": null,
+   "test": null,
+   "clinique": "Bursite rare, avec douleur au pli du coude ; très distendue, elle peut comprimer le nerf interosseux postérieur",
+   "memo": "Bicipitoradiale : entre le tendon du biceps et la tubérosité du radius",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-bourse-bicipitoradiale"
+   ]
+  },
+  {
+   "id": "corde-oblique",
+   "resume": "Une petite bande oblique entre l'ulna et le radius, sous le coude, qui croise la membrane interosseuse en sens inverse.",
+   "nature": "ligament",
+   "articulation": "Avant-bras (articulation radio-ulnaire proximale)",
+   "attaches": [
+    {
+     "texte": "Tubercule de l'ulna, sous le processus coronoïde",
+     "os": [
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Radius, juste sous la tubérosité radiale",
+     "os": [
+      "radius"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relie le haut des deux os de l'avant-bras ; ses fibres vont dans le sens opposé à celles de la membrane interosseuse, qu'elle complète",
+   "tendu": null,
+   "test": null,
+   "clinique": "Inconstante ; fait partie du complexe de la membrane interosseuse, dont les lésions gênent la rotation de l'avant-bras",
+   "memo": "Une corde en travers : elle croise la membrane interosseuse",
+   "variantes": "Absente dans certains cas",
+   "sources": [
+    "gray1918",
+    "wiki-membrane-interosseuse"
+   ]
+  },
+  {
+   "id": "ligament-radio-ulnaire-palmaire",
+   "resume": "La bande qui relie en avant le radius à l'ulna, juste au-dessus du poignet.",
+   "nature": "ligament",
+   "articulation": "Avant-bras (articulation radio-ulnaire distale)",
+   "attaches": [
+    {
+     "texte": "Bord antérieur de l'incisure ulnaire du radius",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Face antérieure de la tête de l'ulna (jusqu'à la styloïde et à la fovéa)",
+     "os": [
+      "ulna"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce en avant la capsule de la radio-ulnaire distale et stabilise l'ulna contre le radius pendant la prono-supination, avec le disque et le ligament dorsal",
+   "tendu": null,
+   "test": "Test de la touche de piano : on mobilise la tête de l'ulna d'avant en arrière, radius fixé ; douleur ou laxité font suspecter une instabilité de l'articulation",
+   "clinique": "Sa lésion, souvent avec celle du complexe fibrocartilagineux triangulaire, laisse l'ulna instable : ressaut de la tête ulnaire et douleur à la rotation de l'avant-bras",
+   "memo": "Radio-ulnaire palmaire : devant, entre radius et ulna, au bout de l'avant-bras",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-tfcc",
+    "pmc-tests-poignet"
+   ],
+   "divergences": "Gray l'arrête à la face antérieure de la tête de l'ulna ; Wikipédia le prolonge vers la styloïde et la fovéa ulnaires"
+  },
+  {
+   "id": "membrane-interosseuse-de-l-avant-bras",
+   "resume": "La lame fibreuse tendue entre le radius et l'ulna : elle partage les charges et sépare les loges de l'avant-bras.",
+   "nature": "membrane",
+   "articulation": "Avant-bras (syndesmose radio-ulnaire)",
+   "attaches": [
+    {
+     "texte": "Bord interosseux (crête interosseuse) du radius",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Bord interosseux (crête interosseuse) de l'ulna",
+     "os": [
+      "ulna"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Transmet les charges de la main du radius à l'ulna, sépare les loges antérieure et postérieure et donne attache aux muscles profonds de l'avant-bras ; ses fibres descendent obliquement vers l'ulna",
+   "tendu": "En position neutre, ni pronation ni supination",
+   "test": null,
+   "clinique": "Sa rupture, lors d'une luxation radio-ulnaire sévère, laisse le radius migrer vers le haut (lésion d'Essex-Lopresti) et allonge en apparence l'ulna au poignet",
+   "memo": "Un hamac entre deux os qui répartit la charge de la main",
+   "variantes": "Absente à son extrémité supérieure, avec une ouverture pour les vaisseaux interosseux antérieurs près du bord inférieur",
+   "sources": [
+    "gray1918",
+    "wiki-membrane-interosseuse"
+   ],
+   "divergences": "Le nom « Essex-Lopresti » ne figure pas dans la page consultée, qui décrit la migration du radius ; Gray ne parle pas de lésion"
+  },
+  {
+   "id": "bourse-subtendineuse-du-muscle-grand-rond",
+   "resume": "La bourse de la face profonde du tendon du grand rond, au contact de celui du grand dorsal.",
+   "nature": "bourse",
+   "articulation": "Épaule et bras (insertion humérale du grand rond)",
+   "attaches": [],
+   "situation": "Entre le tendon du grand rond et le tendon du grand dorsal qui le croise devant lui, près de leur insertion sur le versant médial de la gouttière intertuberculaire",
+   "role": "Laisse glisser l'un sur l'autre les tendons du grand rond et du grand dorsal et protège le tendon du grand rond de l'os",
+   "tendu": null,
+   "test": null,
+   "clinique": "Peu décrite en pathologie : on ne lui connaît pas de bursite typique",
+   "memo": "Grand rond, grand dorsal : deux tendons voisins, une bourse pour les séparer",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "elsevier-bourse-grand-rond"
+   ],
+   "divergences": "Gray la situe tantôt entre les tendons du grand rond et du grand dorsal (p. 434, 442), tantôt entre le grand rond et le chef long du triceps (p. 319). Elsevier la place entre les deux tendons. Aucune des deux sources ne décrit de pathologie propre"
+  },
+  {
+   "id": "bourse-subtendineuse-du-muscle-triceps-brachial",
+   "resume": "La bourse entre le tendon du triceps et la pointe de l'olécrane, qui amortit son glissement.",
+   "nature": "bourse",
+   "articulation": "Coude (olécrane)",
+   "attaches": [],
+   "situation": "Entre le tendon du triceps brachial et la face postérieure de l'olécrane de l'ulna ; la bourse olécrânienne sous-cutanée est un étage plus superficiel, sous la peau",
+   "role": "Protège le tendon du triceps de l'os lors de la flexion et de l'extension du coude",
+   "tendu": null,
+   "test": null,
+   "clinique": "Les bursites olécrâniennes viennent surtout de la bourse sous-cutanée : choc, appui répété sur le coude, parfois infection, goutte ou polyarthrite ; gonflement postérieur du coude et, si elle est septique, rougeur et fièvre",
+   "memo": "Olécrane : la bourse du triceps, le coude du bureau",
+   "variantes": "Trois bourses olécrâniennes : intratendineuse, sous-tendineuse et sous-cutanée",
+   "sources": [
+    "tma-coude",
+    "wiki-bursite-olecranienne"
+   ]
+  },
+  {
+   "id": "capsule-articulaire-de-l-articulation-du-coude",
+   "resume": "Le manchon commun du coude : il enferme les trois articulations humérus-ulna, humérus-radius et radio-ulnaire proximale.",
+   "nature": "capsule",
+   "articulation": "Coude (articulation du coude)",
+   "attaches": [
+    {
+     "texte": "Humérus : au-dessus des fosses coronoïdienne et radiale en avant, de la fosse olécrânienne en arrière, au-dessus des épicondyles",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Ulna : processus coronoïde et olécrane ; elle se fixe aussi au ligament annulaire du radius",
+     "os": [
+      "ulna",
+      "ligament-annulaire-du-radius"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Une seule cavité synoviale pour les trois articulations ; mince devant et derrière, épaisse sur les côtés où elle forme les ligaments collatéraux",
+   "tendu": "Flexion : le feuillet postérieur ; extension : le feuillet antérieur",
+   "test": null,
+   "clinique": "Dans la luxation postérieure du coude (chute sur la main, coude en extension), la capsule et le collatéral ulnaire cèdent et le nerf ulnaire peut être touché ; dans les fractures supracondyliennes de l'enfant, c'est l'artère brachiale qui est menacée",
+   "memo": "Un seul sac pour trois joints, fin devant et derrière, soutenu sur les côtés",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-coude",
+    "kenhub-coude"
+   ]
+  },
+  {
+   "id": "ligament-annulaire-du-radius",
+   "resume": "L'anneau fibreux qui serre la tête du radius contre l'ulna et la laisse tourner dans la prono-supination.",
+   "nature": "ligament",
+   "articulation": "Coude (articulation radio-ulnaire proximale)",
+   "attaches": [
+    {
+     "texte": "Bord antérieur de l'incisure radiale de l'ulna",
+     "os": [
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Bord postérieur de l'incisure radiale de l'ulna, après avoir entouré la tête et le col du radius",
+     "os": [
+      "ulna",
+      "radius"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Forme environ les quatre cinquièmes d'un anneau ostéo-fibreux autour de la tête radiale, la maintient contre l'ulna et l'empêche de quitter l'articulation, notamment sous la traction du biceps",
+   "tendu": null,
+   "test": null,
+   "clinique": "Subluxation de la tête radiale (« pronation douloureuse ») : un enfant tiré brusquement par le bras, la tête du radius sort de l'anneau ; elle touche les enfants dont l'ossification n'est pas finie",
+   "memo": "L'anneau du radius : il le tient et le laisse tourner",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-annulaire",
+    "kenhub-coude"
+   ]
+  },
+  {
+   "id": "ligament-carre",
+   "resume": "Une mince bande en dessous du ligament annulaire, entre le bord inférieur de l'incisure radiale et le col du radius.",
+   "nature": "ligament",
+   "articulation": "Coude (articulation radio-ulnaire proximale)",
+   "attaches": [
+    {
+     "texte": "Bord inférieur de l'incisure radiale de l'ulna",
+     "os": [
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Col du radius",
+     "os": [
+      "radius"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Épaissit le bord inférieur de la capsule sous l'anneau et reste tendu quelle que soit la rotation, pour guider la tête radiale",
+   "tendu": "Pendant toute la prono-supination",
+   "test": null,
+   "clinique": "Pas de pathologie propre décrite ; on l'évoque avec le ligament annulaire, dont la tête radiale peut s'échapper chez le jeune enfant (pronation douloureuse)",
+   "memo": "Carré, le petit carré sous l'anneau",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-coude",
+    "wiki-annulaire"
+   ],
+   "divergences": "Gray le décrit comme un épaississement sous l'annulaire atteignant le col du radius ; Wikipédia et Kenhub concordent. Le rôle clinique est le savoir courant"
+  },
+  {
+   "id": "ligament-collateral-radial",
+   "resume": "Le ligament latéral du coude : une bande courte qui descend de l'épicondyle latéral et se fond dans le ligament annulaire.",
+   "nature": "ligament",
+   "articulation": "Coude (articulation du coude)",
+   "attaches": [
+    {
+     "texte": "Dépression sous l'épicondyle latéral de l'humérus",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Ligament annulaire du radius, certaines fibres postérieures passant au-dessus pour gagner l'ulna",
+     "os": [
+      "ligament-annulaire-du-radius",
+      "ulna"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retient le coude contre les contraintes en varus et suspend le ligament annulaire autour de la tête radiale ; il se mêle à l'origine du supinateur et des extenseurs",
+   "tendu": "En varus",
+   "test": null,
+   "clinique": "Court et peu distinct, il est mêlé à l'origine des muscles extenseurs, où siège l'épicondylite latérale (tennis elbow)",
+   "memo": "Radial : de l'épicondyle latéral vers la tête du radius, qu'il rattache",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-coude",
+    "kenhub-coude"
+   ]
+  },
+  {
+   "id": "ligament-collateral-ulnaire",
+   "resume": "Le ligament médial du coude : un éventail épais qui empêche l'avant-bras de s'ouvrir vers l'extérieur.",
+   "nature": "ligament",
+   "articulation": "Coude (articulation du coude)",
+   "attaches": [
+    {
+     "texte": "Épicondyle médial de l'humérus (sommet de l'éventail)",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Bord médial du processus coronoïde (bande antérieure) et de l'olécrane (bande postérieure) de l'ulna",
+     "os": [
+      "ulna"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retient le coude contre les contraintes en valgus ; la bande antérieure, oblique en avant, va à la coronoïde ; la bande postérieure à l'olécrane ; un renfort transversal les relie",
+   "tendu": "En valgus (contrainte qui ouvre le côté médial du coude)",
+   "test": "Test de valgus en mouvement : contrainte en valgus sur le coude fléchi que l'on étend jusqu'à 30°, épaule à 90° ; douleur médiale entre 120 et 70° de flexion",
+   "clinique": "Lésion du lanceur (baseball, javelot) : douleur médiale du coude et instabilité en valgus, que l'on répare par greffe (opération « Tommy John ») ; rompu aussi dans les luxations du coude",
+   "memo": "Le médial est un éventail : sommet à l'épicondyle, base sur l'ulna",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-lcu-coude",
+    "kenhub-coude",
+    "physiopedia-valgus",
+    "tma-coude"
+   ],
+   "divergences": "Gray et Wikipédia décrivent des bandes antérieure, postérieure et transverse ; Kenhub parle d'une bande inférieure. Le nom « Tommy John » est un savoir courant, non lu dans les pages consultées"
+  },
+  {
+   "id": "bourrelet-glenoidal",
+   "resume": "L'anneau de fibrocartilage qui agrandit le creux de la scapula pour mieux caler la tête de l'humérus.",
+   "nature": "labrum",
+   "articulation": "Épaule (articulation gléno-humérale)",
+   "attaches": [
+    {
+     "texte": "Pourtour de la cavité glénoïdale de la scapula, par sa base",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "En haut, se continue avec le tendon du long chef du biceps brachial",
+     "os": [
+      "tendon-long-biceps"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Approfondit la glène, d'environ la moitié selon certains auteurs, et augmente la surface de contact avec la tête humérale ; protège le bord osseux et reçoit le tendon du biceps",
+   "tendu": null,
+   "test": "Tests d'O'Brien et d'appréhension antérieure : une douleur ou une appréhension évoquent une lésion du bourrelet",
+   "clinique": "Lésion de Bankart : arrachement du bourrelet antéro-inférieur lors d'une luxation antérieure. Lésion SLAP : atteinte du bourrelet supérieur, là où s'insère le biceps, chez les lanceurs et nageurs",
+   "memo": "Le bourrelet est le rebord d'une assiette creuse : sans lui, la tête glisse",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-labrum",
+    "physiopedia-glenohumeral"
+   ],
+   "divergences": "Les références ne donnent pas toutes le même gain de profondeur : seule une source chiffre l'approfondissement (environ 50 %)"
+  },
+  {
+   "id": "bourse-acromiale-sous-cutanee",
+   "resume": "Une bourse entre la peau et le dessus de l'acromion, qui permet à la peau de glisser sur l'os.",
+   "nature": "bourse",
+   "articulation": "Épaule (acromion)",
+   "attaches": [],
+   "situation": "Entre la peau et la face supérieure de l'acromion, sans rapport avec l'articulation gléno-humérale",
+   "role": "Laisse la peau glisser sur l'acromion et amortit les appuis et les chocs sur le sommet de l'épaule",
+   "tendu": null,
+   "test": null,
+   "clinique": "Comme toute bourse sous-cutanée, elle peut s'enflammer après un choc ou un frottement répété (bursite) ; elle se distingue de la bourse sous-acromiale, située en profondeur sous l'acromion",
+   "memo": "Sur l'acromion, juste sous la peau : celle qui se voit gonfler",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-bursa"
+   ],
+   "divergences": "Gray cite « une grande bourse au sommet de l'acromion » sans la dire sous-cutanée ; Wikipédia (généralités) classe les bourses sous-cutanées entre peau et os. Les images de l'atlas la situent sous la peau"
+  },
+  {
+   "id": "bourse-coracobrachiale",
+   "resume": "La bourse profonde du devant de l'épaule : elle glisse sous le tendon commun du coraco-brachial et du chef court du biceps.",
+   "nature": "bourse",
+   "articulation": "Épaule (processus coracoïde)",
+   "attaches": [],
+   "situation": "Sous le tendon conjoint du coraco-brachial et du chef court du biceps et sous le sommet du processus coracoïde, devant le tendon du subscapulaire",
+   "role": "Réduit le frottement du tendon commun sur les plans profonds lors des mouvements de l'épaule",
+   "tendu": null,
+   "test": null,
+   "clinique": "Présente dans 15 des 16 épaules d'une série d'anatomie ; son inflammation peut s'associer aux autres bursites de l'épaule, avec une douleur à la face antérieure sous le bec coracoïdien",
+   "memo": "Coraco-brachial : la bourse sous le bec, devant le subscapulaire",
+   "variantes": "Presque constante selon une étude",
+   "sources": [
+    "gray1918",
+    "pmc-bourses-epaule"
+   ]
+  },
+  {
+   "id": "bourse-subacromiale",
+   "resume": "La grande bourse de glissement sous l'acromion : elle laisse la coiffe des rotateurs coulisser sous le toit de l'épaule.",
+   "nature": "bourse",
+   "articulation": "Épaule (espace sous-acromial)",
+   "attaches": [],
+   "situation": "Entre la face profonde de l'acromion, du ligament coraco-acromial et du deltoïde, et le tendon du supra-épineux sur le tubercule majeur ; elle s'étend en dehors au contact de la coiffe",
+   "role": "Permet à la coiffe des rotateurs de glisser sans frottement sous l'arche coraco-acromiale et le deltoïde",
+   "tendu": null,
+   "test": "Tests de Neer et de Hawkins-Kennedy (bras élevé ou tourné vers l'intérieur) : douleur dans le conflit sous-acromial ; la disparition de la douleur après infiltration conforte le diagnostic",
+   "clinique": "Bursite et conflit sous-acromial : douleur de l'épaule en élevant le bras, avec un arc douloureux entre 60 et 120° ; elle s'épaissit sous l'effet de l'inflammation et pince le supra-épineux",
+   "memo": "Subacromiale : la glissière entre le toit et le supra-épineux",
+   "variantes": "Communique le plus souvent avec la bourse sous-deltoïdienne, formant une seule bourse sous-acromio-deltoïdienne",
+   "sources": [
+    "gray1918",
+    "wiki-bourse-subacromiale",
+    "pmc-bourses-epaule",
+    "wiki-conflit"
+   ]
+  },
+  {
+   "id": "bourse-subdeltoidienne",
+   "resume": "La bourse située sous le deltoïde, qui permet à ce muscle de glisser sur la coiffe des rotateurs.",
+   "nature": "bourse",
+   "articulation": "Épaule (face profonde du deltoïde)",
+   "attaches": [],
+   "situation": "Entre la face profonde du deltoïde et la capsule de l'épaule ou les tendons de la coiffe, sur le tubercule majeur ; elle se prolonge sous l'acromion et ne communique pas avec l'articulation",
+   "role": "Facilite le glissement du deltoïde sur la coiffe des rotateurs et sur le tubercule majeur lors de l'abduction",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sa bursite, souvent jointe à celle de la bourse sous-acromiale, donne une douleur latérale de l'épaule ; son innervation vient surtout du nerf axillaire, ce qui peut expliquer des douleurs latérales persistantes après infiltration",
+   "memo": "Sous le deltoïde : la bourse qui le laisse glisser sur la coiffe",
+   "variantes": "Le plus souvent continue avec la bourse sous-acromiale ; une bourse sous-deltoïdienne séparée est rare",
+   "sources": [
+    "gray1918",
+    "pmc-sous-deltoidienne",
+    "wiki-bourse-subacromiale"
+   ]
+  },
+  {
+   "id": "bourse-subtendineuse-du-muscle-infra-epineux",
+   "resume": "La petite bourse sous le tendon de l'infra-épineux, sur le côté postérieur de l'épaule.",
+   "nature": "bourse",
+   "articulation": "Épaule (face postérieure)",
+   "attaches": [],
+   "situation": "Sous le tendon de l'infra-épineux, entre lui et la capsule ou l'os de la scapula juste sous l'épine ; elle communique parfois avec l'articulation gléno-humérale",
+   "role": "Réduit le frottement du tendon de l'infra-épineux sur la capsule et l'os pendant les rotations latérales du bras",
+   "tendu": null,
+   "test": null,
+   "clinique": "Inconstante, elle peut s'enflammer (bursite) ou s'infecter ; elle peut communiquer avec la capsule de l'épaule",
+   "memo": "Sous le tendon de l'infra-épineux : la glissière de la rotation latérale",
+   "variantes": "Inconstante",
+   "sources": [
+    "gray1918",
+    "elsevier-bourse-infra-epineux"
+   ],
+   "divergences": "Gray la place entre le tendon et la capsule, Elsevier Anatomy entre le tendon et l'os, sous l'épine de la scapula"
+  },
+  {
+   "id": "capsule-articulaire-de-l-articulation-acromio-claviculaire",
+   "resume": "La fine capsule de la jonction entre l'acromion et la clavicule, renforcée par les ligaments acromio-claviculaires.",
+   "nature": "capsule",
+   "articulation": "Articulation acromio-claviculaire",
+   "attaches": [
+    {
+     "texte": "Pourtour de la surface articulaire de l'extrémité acromiale de la clavicule",
+     "os": [
+      "clavicule"
+     ]
+    },
+    {
+     "texte": "Pourtour de la surface articulaire de l'acromion de la scapula",
+     "os": [
+      "scapula"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Entoure l'articulation plane, assez lâche, renforcée en haut et en bas par les ligaments acromio-claviculaires ; elle permet des glissements et la rotation de la scapula sous la clavicule",
+   "tendu": null,
+   "test": null,
+   "clinique": "Dans une entorse acromio-claviculaire, elle se rompt avec le ligament (grade III de la classification : la clavicule remonte au-dessus de l'acromion) ; la dégénérescence de l'articulation est fréquente",
+   "memo": "Une capsule fine, car le vrai verrou est plus bas : le ligament coraco-claviculaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-acromioclaviculaire"
+   ]
+  },
+  {
+   "id": "capsule-articulaire-de-l-articulation-sternoclaviculaire",
+   "resume": "Le manchon de la jonction clavicule-sternum, épaissi devant et derrière, mince en haut et en bas.",
+   "nature": "capsule",
+   "articulation": "Articulation sterno-claviculaire",
+   "attaches": [
+    {
+     "texte": "Extrémité sternale de la clavicule, sur le pourtour de sa surface articulaire",
+     "os": [
+      "clavicule"
+     ]
+    },
+    {
+     "texte": "Incisure claviculaire du manubrium sternal et face supérieure du cartilage de la première côte",
+     "os": [
+      "manubrium-sternal",
+      "cartilage-costal-de-la-premiere-cote"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Enferme les deux cavités articulaires séparées par le disque ; ses épaississements antérieur et postérieur forment les ligaments sterno-claviculaires",
+   "tendu": null,
+   "test": null,
+   "clinique": "Articulation en selle très mobile mais solide, rarement luxée. La luxation postérieure est la plus redoutée : la clavicule peut menacer les organes du médiastin (trachée, gros vaisseaux), c'est une urgence",
+   "memo": "Un manche de cuillère dans une poche épaisse devant et derrière : c'est là que ça tient",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-sternoclaviculaire",
+    "wiki-sternoclaviculaire"
+   ]
+  },
+  {
+   "id": "disque-articulaire-de-l-articulation-acromioclaviculaire",
+   "resume": "Un petit coussin fibrocartilagineux, souvent absent ou incomplet, à l'intérieur de la jonction acromio-claviculaire.",
+   "nature": "disque",
+   "articulation": "Articulation acromio-claviculaire",
+   "attaches": [
+    {
+     "texte": "Pourtour de la capsule, entre la clavicule et l'acromion",
+     "os": [
+      "clavicule",
+      "scapula"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Quand il existe, il coiffe en partie les surfaces articulaires et épouse leurs défauts de forme ; il est variable, parfois lame partielle, parfois cloison complète",
+   "tendu": null,
+   "test": null,
+   "clinique": "L'arthrose acromio-claviculaire, après un traumatisme ou par usure, est fréquente et s'associe souvent à un conflit sous-acromial",
+   "memo": "Un disque souvent manquant : ne comptez pas dessus",
+   "variantes": "Absent, partiel ou complet selon les personnes",
+   "sources": [
+    "gray1918",
+    "wiki-acromioclaviculaire"
+   ]
+  },
+  {
+   "id": "disque-articulaire-de-l-articulation-sternoclaviculaire",
+   "resume": "Le coussinet fibrocartilagineux qui coupe en deux la jonction clavicule-sternum et lui donne sa mobilité.",
+   "nature": "disque",
+   "articulation": "Articulation sterno-claviculaire",
+   "attaches": [
+    {
+     "texte": "Bord postéro-supérieur de la surface articulaire de la clavicule",
+     "os": [
+      "clavicule"
+     ]
+    },
+    {
+     "texte": "Cartilage de la première côte, près de sa jonction avec le sternum ; son pourtour se fond dans la capsule",
+     "os": [
+      "cartilage-costal-de-la-premiere-cote"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Divise l'articulation en deux compartiments, améliore l'emboîtement et agit comme une double charnière : la clavicule bouge sur le disque (élévation, abaissement), le disque sur le sternum (avant, arrière). Il limite l'abaissement",
+   "tendu": null,
+   "test": null,
+   "clinique": "Plus mince au centre, il peut s'y perforer avec l'âge, ce qui met en communication les deux compartiments articulaires",
+   "memo": "Le disque fait deux étages d'un seul joint",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-sternoclaviculaire",
+    "wiki-sternoclaviculaire"
+   ]
+  },
+  {
+   "id": "ligament-acromioclaviculaire",
+   "resume": "La bande qui recouvre le dessus de l'articulation acromio-claviculaire et la maintient.",
+   "nature": "ligament",
+   "articulation": "Articulation acromio-claviculaire",
+   "attaches": [
+    {
+     "texte": "Face supérieure de l'extrémité acromiale de la clavicule",
+     "os": [
+      "clavicule"
+     ]
+    },
+    {
+     "texte": "Face supérieure de l'acromion de la scapula ; ses fibres se mêlent aux fascias du trapèze et du deltoïde",
+     "os": [
+      "scapula"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce la capsule par le haut (bande supérieure, forte) et par le bas (bande inférieure, plus mince) ; maintient la clavicule contre l'acromion avec le ligament coraco-claviculaire",
+   "tendu": null,
+   "test": null,
+   "clinique": "Entorse acromio-claviculaire, souvent après une chute sur le moignon de l'épaule : grade I si le ligament est seulement étiré, grade II s'il est complètement rompu avec atteinte partielle des ligaments coraco-claviculaires",
+   "memo": "Acromio-claviculaire : un toit tendu sur le joint, du côté du moignon de l'épaule",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-acromioclaviculaire",
+    "wiki-coracoclaviculaire"
+   ]
+  },
+  {
+   "id": "ligament-conoide",
+   "resume": "Le faisceau en cône du ligament coraco-claviculaire : il suspend la scapula à la clavicule.",
+   "nature": "ligament",
+   "articulation": "Articulation acromio-claviculaire (ligament coraco-claviculaire)",
+   "attaches": [
+    {
+     "texte": "Sommet : impression rugueuse à la base du processus coracoïde, en dedans du trapézoïde",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Base : tubercule conoïde sous la face inférieure de la clavicule et ligne qui le prolonge en dedans",
+     "os": [
+      "clavicule"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Ancre solidement la clavicule au processus coracoïde, transmet au squelette axial le poids du membre supérieur et aide à garder la clavicule au contact de l'acromion",
+   "tendu": "Quand la scapula descend ou tourne vers l'arrière",
+   "test": null,
+   "clinique": "Sa rupture, avec celle du ligament trapézoïde et de l'acromio-claviculaire, fait le grade III de la luxation acromio-claviculaire : la clavicule remonte et forme une marche sous la peau",
+   "memo": "Conoïde, le cône : la pointe sur la coracoïde, le large sur la clavicule",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-coracoclaviculaire",
+    "wiki-acromioclaviculaire"
+   ],
+   "divergences": "Gray attribue au conoïde le frein de la rotation postérieure de la scapula et au trapézoïde celui de la rotation antérieure ; Wikipédia insiste sur le rôle de suspension et de transmission de charge"
+  },
+  {
+   "id": "ligament-coraco-acromial",
+   "resume": "L'arche entre le bec coracoïdien et l'acromion : le toit qui protège la tête de l'humérus et les tendons qui passent dessous.",
+   "nature": "ligament",
+   "articulation": "Épaule (arche coraco-acromiale)",
+   "attaches": [
+    {
+     "texte": "Sommet de l'acromion de la scapula, en avant de la surface articulaire de la clavicule",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Bord latéral du processus coracoïde de la scapula, sur toute sa longueur",
+     "os": [
+      "scapula"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Forme avec l'acromion et le processus coracoïde la voûte coraco-acromiale, un toit rigide au-dessus de la tête humérale et du tendon du supra-épineux",
+   "tendu": null,
+   "test": "Tests de Neer et de Hawkins-Kennedy (bras élevé ou tourné vers l'intérieur) : la douleur indique un conflit sous-acromial",
+   "clinique": "Épaissi ou calcifié, il rétrécit l'espace sous-acromial et pince le supra-épineux et la bourse (conflit sous-acromial) ; l'arc douloureux se situe entre 60 et 120° d'élévation",
+   "memo": "Le toit de l'épaule : sous lui passe le supra-épineux, et c'est là qu'il se coince",
+   "variantes": "Peut être formé de deux bandes reliées par une partie mince",
+   "sources": [
+    "gray1918",
+    "wiki-coracoacromial",
+    "wiki-conflit"
+   ]
+  },
+  {
+   "id": "ligament-coracohumeral",
+   "resume": "Un large ruban qui descend du bec coracoïdien vers l'humérus : il suspend la tête et renforce le toit de la capsule.",
+   "nature": "ligament",
+   "articulation": "Épaule (articulation gléno-humérale)",
+   "attaches": [
+    {
+     "texte": "Bord latéral (base) du processus coracoïde de la scapula",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Tubercules majeur et mineur de l'humérus, de part et d'autre du tendon du biceps",
+     "os": [
+      "humerus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce la face supérieure de la capsule, aide à porter le bras pendant et freine la translation inférieure et postérieure de la tête",
+   "tendu": "Aux extrêmes de flexion et d'extension, et en rotation latérale",
+   "test": null,
+   "clinique": "Son épaississement et sa rétraction font partie de la capsulite rétractile de l'épaule, qui limite surtout la rotation latérale",
+   "memo": "Il part du bec et s'accroche à l'os, comme un câble de suspension",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-coracohumeral",
+    "physiopedia-glenohumeral"
+   ],
+   "divergences": "Gray ne cite que le tubercule majeur comme insertion humérale ; Wikipédia distingue une bande antérieure vers le mineur et une bande postérieure vers le majeur. Le rôle dans la capsulite rétractile n'est pas détaillé dans les pages consultées (savoir courant)"
+  },
+  {
+   "id": "ligament-costoclaviculaire",
+   "resume": "Le court ligament en losange entre la première côte et la clavicule : le stabilisateur principal de la jonction sterno-claviculaire.",
+   "nature": "ligament",
+   "articulation": "Articulation sterno-claviculaire",
+   "attaches": [
+    {
+     "texte": "Partie supérieure et médiale du cartilage de la première côte",
+     "os": [
+      "cartilage-costal-de-la-premiere-cote",
+      "premiere-cote"
+     ]
+    },
+    {
+     "texte": "Tubérosité costale, sous la face inférieure de la clavicule",
+     "os": [
+      "clavicule"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Court et très solide, il fait office d'axe de mouvement de la clavicule et en limite l'élévation, la projection antérieure et la rétraction",
+   "tendu": "En élévation de l'épaule",
+   "test": null,
+   "clinique": "Il est le principal frein de l'articulation ; il a en avant le tendon du subclavier et en arrière la veine subclavière, voisinage à garder en tête devant un traumatisme",
+   "memo": "Costo-claviculaire : de la côte à la clavicule, court, solide, en losange",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-costoclaviculaire",
+    "kenhub-sternoclaviculaire"
+   ],
+   "divergences": "Kenhub décrit deux lames de fibres de directions différentes, Gray un seul ruban rhomboïde ; Wikipédia le qualifie de stabilisateur principal sans citer de source"
+  },
+  {
+   "id": "ligament-glenohumeral-inferieur",
+   "resume": "Le hamac de l'épaule : le plus important des ligaments gléno-huméraux, tendu sous la tête quand le bras est levé et tourné.",
+   "nature": "ligament",
+   "articulation": "Épaule (articulation gléno-humérale)",
+   "attaches": [
+    {
+     "texte": "Bord inférieur de la glène et bourrelet, par une bande antérieure, une bande postérieure et le recessus axillaire entre elles",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Face inférieure du col anatomique de l'humérus",
+     "os": [
+      "humerus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Soutient la tête par le dessous quand le bras est écarté : la bande antérieure freine la rotation latérale et le glissement antérieur, la postérieure la rotation médiale et le glissement postérieur",
+   "tendu": "En abduction : bande antérieure associée à la rotation latérale, bande postérieure à la rotation médiale",
+   "test": "Test d'appréhension et de relocalisation (abduction 90°, rotation latérale) ; signe du sillon pour la laxité inférieure",
+   "clinique": "Cause de la luxation antérieure : il se déchire ou s'arrache de la glène (lésion de Bankart) lors d'un geste en abduction et rotation latérale, avec récidive fréquente chez le sujet jeune",
+   "memo": "Le hamac sous la tête : il se tend dès qu'on lève le bras",
+   "variantes": "Le recessus axillaire, replié, forme un cul-de-sac de longueur variable",
+   "sources": [
+    "gray1918",
+    "wiki-glenohumeraux",
+    "wiki-luxation-epaule",
+    "physiopedia-glenohumeral"
+   ],
+   "divergences": "Gray décrit les rubans sans les nommer comme aujourd'hui ; les sources récentes concordent sur le rôle de verrou antérieur de la bande antérieure"
+  },
+  {
+   "id": "ligament-glenohumeral-moyen",
+   "resume": "Le ruban gléno-huméral du milieu : il bloque la rotation latérale et le glissement vers l'avant, à mi-abduction.",
+   "nature": "ligament",
+   "articulation": "Épaule (articulation gléno-humérale)",
+   "attaches": [
+    {
+     "texte": "Bord médial de la glène et bourrelet antérieur de la scapula",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Face antérieure de l'humérus, vers la partie basse du tubercule mineur",
+     "os": [
+      "humerus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Limite la rotation latérale et la translation antérieure de la tête humérale",
+   "tendu": "En rotation latérale",
+   "test": null,
+   "clinique": "Fine et inconstante, elle peut manquer ; son insuffisance laisse la tête glisser vers l'avant dans les luxations antérieures à répétition",
+   "memo": "Moyen : il garde le devant quand on tourne le bras vers l'extérieur",
+   "variantes": "Peut être absent, en cordon ou en voile large",
+   "sources": [
+    "gray1918",
+    "wiki-glenohumeraux",
+    "physiopedia-glenohumeral"
+   ],
+   "divergences": "Gray attribue au ligament moyen un trajet vers le bas de la glène et le col anatomique : sa description des trois rubans est décalée par rapport à celle des auteurs modernes (Wikipédia, Physiopedia)"
+  },
+  {
+   "id": "ligament-glenohumeral-superieur",
+   "resume": "Le plus haut des trois rubans gléno-huméraux : il retient la tête humérale quand le bras pend le long du corps.",
+   "nature": "ligament",
+   "articulation": "Épaule (articulation gléno-humérale)",
+   "attaches": [
+    {
+     "texte": "Partie supérieure de la glène, près de la base du processus coracoïde de la scapula",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Petite dépression au-dessus du tubercule mineur de l'humérus, le long du tendon du long chef du biceps",
+     "os": [
+      "humerus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Freine la translation inférieure de la tête humérale et la rotation latérale, bras le long du corps ; participe, avec le ligament coraco-huméral, à la suspension du bras",
+   "tendu": "En adduction, bras le long du corps, et en rotation latérale",
+   "test": "Signe du sillon (traction vers le bas du bras pendant) : un creux sous l'acromion signe une laxité inférieure",
+   "clinique": "Rarement lésé seul ; sa laxité s'ajoute à celle du coraco-huméral dans l'instabilité inférieure de l'épaule",
+   "memo": "Supérieur, donc il retient le bras qui pend",
+   "variantes": "Taille très variable, parfois absent ou épais comme une corde",
+   "sources": [
+    "gray1918",
+    "wiki-glenohumeraux",
+    "physiopedia-glenohumeral"
+   ]
+  },
+  {
+   "id": "ligament-interclaviculaire",
+   "resume": "La sangle qui relie les deux clavicules en passant au-dessus du sternum, dans la fossette jugulaire.",
+   "nature": "ligament",
+   "articulation": "Articulation sterno-claviculaire",
+   "attaches": [
+    {
+     "texte": "Extrémité sternale de la clavicule droite, par sa face supérieure",
+     "os": [
+      "clavicule"
+     ]
+    },
+    {
+     "texte": "Extrémité sternale de la clavicule gauche et bord supérieur du manubrium sternal",
+     "os": [
+      "clavicule",
+      "manubrium-sternal"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce la partie supérieure des deux capsules sterno-claviculaires et limite avec le disque l'abaissement de l'épaule",
+   "tendu": "En abaissement des épaules",
+   "test": null,
+   "clinique": "Il franchit la fossette jugulaire au-dessus du sternum ; on ne lui connaît pas de pathologie propre, il entre dans le bilan des traumatismes sterno-claviculaires",
+   "memo": "Une sangle d'une clavicule à l'autre, comme une bretelle qui tient les deux épaules écartées",
+   "variantes": "Largeur et épaisseur variables",
+   "sources": [
+    "gray1918",
+    "kenhub-sternoclaviculaire"
+   ],
+   "divergences": "Kenhub le décrit comme un ligament extrinsèque né du fascia profond du cou ; Gray le détaille comme un ruban fixé aux deux clavicules et au sternum. Son rôle clinique est le savoir courant"
+  },
+  {
+   "id": "ligament-sternoclaviculaire-anterieur",
+   "resume": "Le renfort épais de la face antérieure de l'articulation sterno-claviculaire.",
+   "nature": "ligament",
+   "articulation": "Articulation sterno-claviculaire",
+   "attaches": [
+    {
+     "texte": "Face antérieure et supérieure de l'extrémité sternale de la clavicule",
+     "os": [
+      "clavicule"
+     ]
+    },
+    {
+     "texte": "Face antérieure du manubrium sternal, près du cartilage de la première côte",
+     "os": [
+      "manubrium-sternal"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce l'avant de la capsule, plus solide que le postérieur ; limite avec le ligament costo-claviculaire la projection de la clavicule vers l'avant (protraction)",
+   "tendu": "En protraction de la clavicule (épaule portée en avant)",
+   "test": null,
+   "clinique": "Couvert par le sterno-cléido-mastoïdien et plus fort que le postérieur : ce sont les luxations postérieures, plus dangereuses pour le médiastin, qu'il faut redouter",
+   "memo": "Devant, il est large et fort, derrière plus fin : c'est le côté du sternum qui se voit",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-sternoclaviculaire"
+   ]
+  },
+  {
+   "id": "ligament-sternoclaviculaire-posterieur",
+   "resume": "Le renfort de la face postérieure de l'articulation sterno-claviculaire, plus mince que l'antérieur.",
+   "nature": "ligament",
+   "articulation": "Articulation sterno-claviculaire",
+   "attaches": [
+    {
+     "texte": "Face postérieure de l'extrémité sternale de la clavicule",
+     "os": [
+      "clavicule"
+     ]
+    },
+    {
+     "texte": "Face postérieure du manubrium sternal",
+     "os": [
+      "manubrium-sternal"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce l'arrière de la capsule ; limite avec le ligament costo-claviculaire la rétraction de la clavicule (épaule portée en arrière)",
+   "tendu": "En rétraction de la clavicule (épaule portée en arrière)",
+   "test": null,
+   "clinique": "Sa rupture permet la luxation postérieure, rare mais potentiellement grave : la clavicule se dirige vers les organes du médiastin",
+   "memo": "Derrière le sternum, il est fin mais il garde l'arrière",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-sternoclaviculaire",
+    "wiki-sternoclaviculaire"
+   ]
+  },
+  {
+   "id": "ligament-transverse-de-l-humerus",
+   "resume": "Le pont fibreux qui ferme la gouttière intertuberculaire et tient le tendon du long chef du biceps en place.",
+   "nature": "ligament",
+   "articulation": "Épaule (humérus, gouttière intertuberculaire)",
+   "attaches": [
+    {
+     "texte": "Tubercule mineur de l'humérus",
+     "os": [
+      "humerus"
+     ]
+    },
+    {
+     "texte": "Tubercule majeur de l'humérus, au-dessus de la ligne épiphysaire",
+     "os": [
+      "humerus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Transforme la gouttière intertuberculaire en canal et maintient le tendon du long chef du biceps contre l'os",
+   "tendu": null,
+   "test": null,
+   "clinique": "Quand il cède ou s'effiloche, le tendon du long chef du biceps peut sortir de sa gouttière (subluxation) avec un ressaut douloureux. Certains auteurs y voient une expansion du supra-épineux plutôt qu'un vrai ligament",
+   "memo": "Un pont au-dessus d'un rail : le tendon du biceps ne déraille pas",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-transverse-humerus"
+   ]
+  },
+  {
+   "id": "ligament-transverse-inferieur-de-la-scapula",
+   "resume": "Une bande mince derrière le col de la scapula, qui forme avec le bord de la glène l'arche de l'incisure spino-glénoïdale.",
+   "nature": "ligament",
+   "articulation": "Épaule (incisure spino-glénoïdale de la scapula)",
+   "attaches": [
+    {
+     "texte": "Bord latéral de l'épine de la scapula",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Bord de la cavité glénoïdale de la scapula",
+     "os": [
+      "scapula"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Ferme en arche l'incisure spino-glénoïdale : le nerf supra-scapulaire et les vaisseaux supra-scapulaires s'y engagent pour atteindre la fosse infra-épineuse",
+   "tendu": null,
+   "test": null,
+   "clinique": "Le nerf supra-scapulaire peut y être comprimé (kyste, microtraumatismes des sportifs de lancer) : atrophie isolée de l'infra-épineux, sans atteinte du supra-épineux",
+   "memo": "Spino-glénoïdal : entre l'épine et la glène, le deuxième pont du nerf supra-scapulaire",
+   "variantes": "Faible, parfois absent",
+   "sources": [
+    "gray1918",
+    "wiki-transverse-scapula"
+   ],
+   "divergences": "La page Wikipédia consultée ne décrit pas ce ligament ; seul Gray le détaille. La clinique (compression du nerf, atrophie de l'infra-épineux) est le savoir courant, non retrouvé dans les pages lues"
+  },
+  {
+   "id": "ligament-transverse-superieur-de-la-scapula",
+   "resume": "Le pont qui ferme l'incisure scapulaire : le nerf supra-scapulaire passe dessous, les vaisseaux surtout dessus.",
+   "nature": "ligament",
+   "articulation": "Épaule (incisure de la scapula)",
+   "attaches": [
+    {
+     "texte": "Base du processus coracoïde de la scapula",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Extrémité médiale de l'incisure scapulaire",
+     "os": [
+      "scapula"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Convertit l'incisure scapulaire en foramen ; le nerf supra-scapulaire le franchit en dessous, les vaisseaux supra-scapulaires passent le plus souvent au-dessus",
+   "tendu": null,
+   "test": null,
+   "clinique": "Une ossification totale ou partielle réduit l'orifice et favorise la compression du nerf supra-scapulaire : douleur postérieure de l'épaule et faiblesse du supra-épineux et de l'infra-épineux",
+   "memo": "Sous le pont passe le nerf, au-dessus l'artère",
+   "variantes": "Peut s'ossifier ou se dédoubler",
+   "sources": [
+    "gray1918",
+    "wiki-transverse-scapula"
+   ]
+  },
+  {
+   "id": "ligament-trapezoide",
+   "resume": "Le faisceau antérieur et latéral du ligament coraco-claviculaire, en forme de lame quadrilatère.",
+   "nature": "ligament",
+   "articulation": "Articulation acromio-claviculaire (ligament coraco-claviculaire)",
+   "attaches": [
+    {
+     "texte": "Face supérieure du processus coracoïde de la scapula",
+     "os": [
+      "scapula"
+     ]
+    },
+    {
+     "texte": "Ligne oblique (ligne trapézoïde) sous la face inférieure de la clavicule",
+     "os": [
+      "clavicule"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Avec le conoïde, il retient la clavicule contre la scapula ; il est en avant et en dehors du conoïde. Selon Gray, il limite la rotation antérieure de la scapula",
+   "tendu": "Quand la scapula se déplace vers l'avant",
+   "test": null,
+   "clinique": "Il se rompt avec le conoïde et les ligaments acromio-claviculaires dans les luxations de grade III et plus : la clavicule remonte au-dessus de l'acromion",
+   "memo": "Le trapézoïde, la lame plate : devant et dehors, le conoïde derrière et dedans",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-coracoclaviculaire",
+    "wiki-acromioclaviculaire"
+   ],
+   "divergences": "Gray attribue au trapézoïde le frein de la rotation antérieure de la scapula ; les sources récentes ne détaillent pas son rôle propre"
+  },
+  {
+   "id": "bourse-trochanterique-du-moyen-fessier",
+   "resume": "La bourse du côté de la hanche, sous le tendon du moyen fessier, au contact du grand trochanter.",
+   "nature": "bourse",
+   "articulation": "Hanche (région du grand trochanter)",
+   "attaches": [],
+   "situation": "Entre le tendon du moyen fessier et la partie antéro-supérieure du grand trochanter du fémur, sur le côté de la hanche",
+   "role": "Laisse glisser le tendon du moyen fessier sur le grand trochanter pendant la marche et la montée d'escalier",
+   "tendu": null,
+   "test": "Palpation du grand trochanter (douleur « en ressaut »), station unipodale de trente secondes, test de FABER pour reproduire la douleur latérale, et signe de Trendelenburg si le tendon du moyen fessier est atteint",
+   "clinique": "Syndrome douloureux du grand trochanter (bursite trochantérienne) : douleur du côté de la hanche à la marche ou en dormant sur ce côté, surtout chez la femme d'âge moyen ; il vient souvent d'une tendinopathie des fessiers",
+   "memo": "Sous le moyen fessier : la bourse du coup de hanche douloureux",
+   "variantes": null,
+   "sources": [
+    "elsevier-trochanterique-moyen",
+    "wiki-moyen-fessier",
+    "physiopedia-gtps",
+    "wiki-gtps"
+   ],
+   "divergences": "Cette structure est classée « main » dans les données d'entrée : c'est une bourse de la hanche, décrite comme telle ici"
+  },
+  {
+   "id": "bourse-trochanterique-du-muscle-petit-fessier",
+   "resume": "La petite bourse entre le tendon du petit fessier et la face antérieure du grand trochanter.",
+   "nature": "bourse",
+   "articulation": "Hanche (région du grand trochanter)",
+   "attaches": [],
+   "situation": "Entre le tendon du petit fessier et la partie antérieure du grand trochanter du fémur, côté médial",
+   "role": "Réduit le frottement du tendon du petit fessier sur le grand trochanter lors des mouvements de la hanche",
+   "tendu": null,
+   "test": "Palpation du grand trochanter, station unipodale de trente secondes et test de FABER dans le syndrome douloureux du grand trochanter",
+   "clinique": "Elle participe au syndrome douloureux du grand trochanter : douleur latérale de la hanche, aggravée par la position assise prolongée, la montée d'escalier ou les sports à impact ; l'origine est le plus souvent tendineuse",
+   "memo": "Petit fessier, petite bourse : tout devant, près de l'angle antérieur du trochanter",
+   "variantes": null,
+   "sources": [
+    "elsevier-trochanterique-petit",
+    "physiopedia-gtps",
+    "pubmed-gtps"
+   ],
+   "divergences": "Cette structure est classée « main » dans les données d'entrée : c'est une bourse de la hanche. Une source ne mentionne que la bourse trochantérienne du grand fessier, une autre les bourses sous les moyen et petit fessiers"
+  },
+  {
+   "id": "bourse-trochanterique-sous-cutanee",
+   "resume": "La bourse située entre la peau et le grand trochanter, au creux du côté de la hanche.",
+   "nature": "bourse",
+   "articulation": "Hanche (région du grand trochanter)",
+   "attaches": [],
+   "situation": "Entre la peau et le fascia qui recouvre le grand trochanter du fémur, sur le côté de la hanche, en dehors de tous les plans musculaires",
+   "role": "Laisse la peau glisser sur le grand trochanter et amortit l'appui sur le côté de la hanche",
+   "tendu": null,
+   "test": "Palpation du grand trochanter, qui reproduit la douleur chez la personne atteinte",
+   "clinique": "Elle peut s'enflammer après un appui répété ou une chute sur la hanche ; dans le syndrome douloureux du grand trochanter, on la distingue des bourses profondes (sous le grand fessier, le moyen et le petit fessier)",
+   "memo": "Trochantérique sous-cutanée : celle qu'on sent sous la peau, pas sous les muscles",
+   "variantes": null,
+   "sources": [
+    "wiki-bursa",
+    "pubmed-gtps",
+    "wiki-gtps"
+   ],
+   "divergences": "Cette structure est classée « main » dans les données d'entrée : c'est une bourse de la hanche. Les pages consultées décrivent surtout la bourse trochantérienne profonde ; la bourse sous-cutanée y est définie seulement par la règle générale des bourses sous-cutanées (entre peau et os)"
+  },
+  {
+   "id": "capsule-articulaire-de-l-articulation-radiocarpienne",
+   "resume": "Le manchon du poignet : il enferme la jonction entre l'avant-bras (radius et disque) et la première rangée du carpe.",
+   "nature": "capsule",
+   "articulation": "Poignet (articulation radiocarpienne)",
+   "attaches": [
+    {
+     "texte": "Extrémité distale du radius et de l'ulna (par le disque articulaire), sur le pourtour de la surface articulaire",
+     "os": [
+      "radius",
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Scaphoïde, lunatum et triquetrum (le pisiforme n'y participe pas)",
+     "os": [
+      "scaphoide",
+      "lunatum",
+      "triquetrum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Enveloppe l'articulation condylaire du poignet ; ses ligaments palmaire, dorsal, collatéral radial et collatéral ulnaire la renforcent. Elle permet flexion, extension, inclinaisons et circumduction",
+   "tendu": null,
+   "test": null,
+   "clinique": "Dans la chute sur la main en extension, le scaphoïde se fracture souvent (douleur dans la tabatière anatomique) et le lunatum peut se luxer vers l'avant, comprimant le nerf médian dans le canal carpien",
+   "memo": "Un seul sac pour deux étages : l'avant-bras d'un côté, le carpe de l'autre",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-poignet",
+    "wiki-poignet"
+   ]
+  },
+  {
+   "id": "capsules-articulaires-des-art-interphalangiennes-proximales",
+   "resume": "Les capsules des articulations en charnière entre phalange proximale et moyenne : plaque palmaire devant, collatéraux de chaque côté.",
+   "nature": "groupe",
+   "articulation": "Main (articulations interphalangiennes proximales)",
+   "attaches": [
+    {
+     "texte": "Tête de chaque phalange proximale",
+     "os": [
+      "phalanges-proximales"
+     ]
+    },
+    {
+     "texte": "Base de chaque phalange moyenne",
+     "os": [
+      "phalanges-moyennes"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Enveloppent les charnières du doigt ; la plaque palmaire en avant et les collatéraux sur les côtés les renforcent, les tendons extenseurs tenant lieu de ligament dorsal",
+   "tendu": null,
+   "test": null,
+   "clinique": "L'extension forcée du doigt (balle, chute) peut déchirer ou arracher la plaque palmaire, avec un fragment osseux",
+   "memo": "Une charnière de porte : un cadre à trois côtés, le dos étant les tendons",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-ip-main",
+    "wiki-palmar-plate"
+   ]
+  },
+  {
+   "id": "disque-articulaire-de-l-articulation-radio-ulnaire-distale",
+   "resume": "Le fibrocartilage triangulaire qui comble l'espace entre l'ulna et le carpe et sépare l'articulation du poignet de la radio-ulnaire distale.",
+   "nature": "disque",
+   "articulation": "Poignet (articulation radio-ulnaire distale, complexe fibrocartilagineux triangulaire)",
+   "attaches": [
+    {
+     "texte": "Bord du radius entre l'incisure ulnaire et la surface articulaire du carpe",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Dépression entre le processus styloïde et la tête de l'ulna",
+     "os": [
+      "ulna"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Prolonge la surface articulaire du radius jusque sous la tête de l'ulna, répartit et amortit les charges du côté ulnaire du poignet et stabilise l'articulation radio-ulnaire distale pendant la prono-supination",
+   "tendu": null,
+   "test": "Signe de la fovéa ulnaire (douleur à la palpation entre le tendon de l'extenseur ulnaire du carpe et le fléchisseur ulnaire du carpe) ; test de contrainte ulno-carpienne ; test de la touche de piano pour la radio-ulnaire distale",
+   "clinique": "Les déchirures du disque (complexe fibrocartilagineux triangulaire) donnent une douleur du bord ulnaire du poignet à la rotation ; la périphérie est vascularisée et cicatrise, le centre mince ne cicatrise pas",
+   "memo": "Le disque triangulaire : l'amortisseur du côté de l'ulna",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-tfcc",
+    "pmc-tests-poignet",
+    "tma-poignet"
+   ],
+   "divergences": "Gray place le sommet du triangle à l'ulna et la base au radius ; Wikipédia parle d'une base épaisse fixée à la styloïde ulnaire et d'un bord mince au radius : les deux concordent sur les attaches, pas sur le vocabulaire"
+  },
+  {
+   "id": "ligament-collateral-radial-du-carpe",
+   "resume": "Le ligament latéral du poignet : de la styloïde radiale au scaphoïde, il retient le poignet qui dévie vers l'ulna.",
+   "nature": "ligament",
+   "articulation": "Poignet (articulation radiocarpienne)",
+   "attaches": [
+    {
+     "texte": "Processus styloïde du radius",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Scaphoïde, avec des fibres vers le trapèze et le rétinaculum des fléchisseurs",
+     "os": [
+      "scaphoide",
+      "os-trapeze"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce la capsule du côté radial et limite l'inclinaison ulnaire excessive du poignet",
+   "tendu": "En inclinaison ulnaire du poignet",
+   "test": null,
+   "clinique": "Il longe la tabatière anatomique, où se palpe le scaphoïde, l'os du carpe le plus souvent fracturé (chute sur la main en extension) : une douleur radiale après chute fait chercher cette fracture",
+   "memo": "Radial : de la styloïde radiale, du côté du pouce, au scaphoïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-poignet"
+   ]
+  },
+  {
+   "id": "ligament-collateral-ulnaire-du-carpe",
+   "resume": "Le ligament médial du poignet : un cordon rond de la styloïde ulnaire au triquetrum et au pisiforme.",
+   "nature": "ligament",
+   "articulation": "Poignet (articulation radiocarpienne)",
+   "attaches": [
+    {
+     "texte": "Processus styloïde de l'ulna",
+     "os": [
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Triquetrum et pisiforme, avec des fibres vers le rétinaculum des fléchisseurs",
+     "os": [
+      "triquetrum",
+      "pisiforme"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce la capsule du côté ulnaire et limite l'inclinaison radiale excessive du poignet",
+   "tendu": "En inclinaison radiale du poignet",
+   "test": null,
+   "clinique": "Une entorse du côté ulnaire du poignet est à distinguer d'une atteinte du complexe fibrocartilagineux triangulaire, voisin ; les deux donnent une douleur ulnaire",
+   "memo": "Ulnaire : de la styloïde de l'ulna au triquetrum et au pisiforme",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-poignet"
+   ],
+   "divergences": "Gray et TeachMeAnatomy concordent sur le triquetrum et le pisiforme ; Gray ajoute des fibres vers le rétinaculum des fléchisseurs. La distinction avec le complexe fibrocartilagineux est un savoir courant"
+  },
+  {
+   "id": "ligament-hamatocapitatum",
+   "resume": "Les bandes dorsale et palmaire qui rattachent l'hamatum au capitatum, deux os de la rangée distale du carpe.",
+   "nature": "ligament",
+   "articulation": "Carpe (articulation capito-hamatique)",
+   "attaches": [
+    {
+     "texte": "Capitatum",
+     "os": [
+      "capitatum"
+     ]
+    },
+    {
+     "texte": "Hamatum",
+     "os": [
+      "hamatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Liaison dorsale et palmaire entre capitatum et hamatum, qui fait de la rangée distale du carpe un bloc quasi rigide ; il est complété par le ligament interosseux capito-hamatique",
+   "tendu": null,
+   "test": null,
+   "clinique": "Pas de pathologie isolée connue ; la rangée distale du carpe est la partie la plus fixe du poignet, ses ligaments se lèsent surtout dans les traumatismes à haute énergie",
+   "memo": "Capitato-hamatique : les deux os du milieu de la rangée distale, reliés devant et derrière",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-poignet"
+   ],
+   "divergences": "Gray décrit un ligament dorsal et un palmaire entre capitatum et hamatum, sans nom propre dans l'atlas ; la clinique est déduite de la rigidité de la rangée distale"
+  },
+  {
+   "id": "ligament-interosseux-capitohamatum",
+   "resume": "Le plus solide des ligaments interosseux du carpe : il attache l'hamatum au capitatum entre leurs surfaces articulaires.",
+   "nature": "ligament",
+   "articulation": "Carpe (articulation capito-hamatique)",
+   "attaches": [
+    {
+     "texte": "Capitatum, face articulaire latérale",
+     "os": [
+      "capitatum"
+     ]
+    },
+    {
+     "texte": "Hamatum, face articulaire médiale",
+     "os": [
+      "hamatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relie solidement capitatum et hamatum à l'intérieur de la rangée distale du carpe, qu'il rend très rigide",
+   "tendu": null,
+   "test": null,
+   "clinique": "Pas de pathologie propre décrite ; il garde la rangée distale du carpe presque rigide",
+   "memo": "Le plus fort des interosseux : le capitatum et l'hamatum sont soudés",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-poignet"
+   ],
+   "divergences": "Gray le désigne comme le plus fort des ligaments interosseux du carpe ; la seconde source, générale, ne le détaille pas"
+  },
+  {
+   "id": "ligament-interosseux-lunotriquetral",
+   "resume": "Le ligament en fer à cheval entre le lunatum et le triquetrum, côté ulnaire de la première rangée.",
+   "nature": "ligament",
+   "articulation": "Carpe (articulation lunotriquétrale)",
+   "attaches": [
+    {
+     "texte": "Bord médial du lunatum",
+     "os": [
+      "lunatum"
+     ]
+    },
+    {
+     "texte": "Bord latéral du triquetrum",
+     "os": [
+      "triquetrum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Unit lunatum et triquetrum par trois parties, dorsale, proximale et palmaire (la palmaire étant la plus épaisse) ; sa face supérieure complète la surface articulaire du poignet",
+   "tendu": null,
+   "test": "Ballottement lunotriquétral (pouce du côté ulnaire du pisiforme, pression radiale), test de Regan (on mobilise ensemble triquetrum et pisiforme d'avant en arrière) et test de Kleinman : douleur ou laxité",
+   "clinique": "Sa lésion donne une douleur du bord ulnaire du poignet ; l'instabilité en VISI nécessite aussi l'atteinte du radiocarpien dorsal, de l'intercarpien dorsal ou du ligament arqué ulnaire, rarement le seul LT",
+   "memo": "Lunotriquétral : le fer à cheval, côté ulnaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "pmc-margulies",
+    "pmc-tests-poignet"
+   ]
+  },
+  {
+   "id": "ligament-interosseux-scapholunatum",
+   "resume": "Le fin ligament en C entre le scaphoïde et le lunatum : la clef de la cohésion de la première rangée du carpe.",
+   "nature": "ligament",
+   "articulation": "Carpe (articulation scapho-lunaire)",
+   "attaches": [
+    {
+     "texte": "Bord médial du scaphoïde",
+     "os": [
+      "scaphoide"
+     ]
+    },
+    {
+     "texte": "Bord latéral du lunatum",
+     "os": [
+      "lunatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Unit scaphoïde et lunatum en C par trois parties, dorsale, proximale et palmaire (la dorsale étant la plus épaisse) ; sa face supérieure fait partie de la surface articulaire du poignet",
+   "tendu": null,
+   "test": "Test de Watson (scaphoïde en bascule) : du pouce sur le tubercule du scaphoïde, on mène le poignet de l'inclinaison ulnaire à la radiale ; un ressaut ou une douleur évoque une lésion",
+   "clinique": "Une rupture ouvre l'espace scapho-lunaire (signe de Terry-Thomas) ; le test de Watson a une sensibilité de 69 % et une spécificité de 66 %, donc insuffisant seul. L'instabilité en DISI exige d'autres lésions associées",
+   "memo": "Scapho-lunaire : le C qui garde ensemble les deux premiers os du carpe",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "pmc-margulies",
+    "wiki-poignet"
+   ]
+  },
+  {
+   "id": "ligament-interosseux-trapeziotrapezoidal",
+   "resume": "Le petit ligament interosseux entre le trapèze et le trapézoïde, parfois absent.",
+   "nature": "ligament",
+   "articulation": "Carpe (articulation trapézo-trapézoïdienne)",
+   "attaches": [
+    {
+     "texte": "Trapèze",
+     "os": [
+      "os-trapeze"
+     ]
+    },
+    {
+     "texte": "Trapézoïde",
+     "os": [
+      "trapezoide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Lie le trapèze et le trapézoïde l'un à l'autre à l'intérieur de la rangée distale du carpe",
+   "tendu": null,
+   "test": null,
+   "clinique": "Inconstant, il n'a pas de pathologie propre ; l'ensemble scapho-trapézo-trapézoïdien, voisin, est plus souvent en cause dans l'instabilité du scaphoïde",
+   "memo": "Trapèze et trapézoïde : deux voisins qu'une petite bande attache",
+   "variantes": "Parfois absent",
+   "sources": [
+    "gray1918",
+    "pmc-margulies"
+   ],
+   "divergences": "Gray le dit parfois absent ; Margulies cite seulement le complexe scapho-trapézo-trapézoïdien"
+  },
+  {
+   "id": "ligament-interosseux-trapezoidocapitatum",
+   "resume": "Le ligament interosseux qui unit le trapézoïde au capitatum à l'intérieur de la rangée distale.",
+   "nature": "ligament",
+   "articulation": "Carpe (articulation trapézoïdo-capitatum)",
+   "attaches": [
+    {
+     "texte": "Trapézoïde",
+     "os": [
+      "trapezoide"
+     ]
+    },
+    {
+     "texte": "Capitatum",
+     "os": [
+      "capitatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Attache le trapézoïde au capitatum, deux os de la rangée distale, et participe à la rigidité de cette rangée",
+   "tendu": null,
+   "test": null,
+   "clinique": "Pas de pathologie propre décrite ; la solidité de la rangée distale tient à l'ensemble des ligaments interosseux, palmaires et dorsaux",
+   "memo": "Trapézoïde, capitatum : même rangée, même ligament",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-poignet"
+   ]
+  },
+  {
+   "id": "ligament-lunotriquetral-palmaire",
+   "resume": "La partie palmaire du ligament lunotriquétral : la plus épaisse et la plus importante des trois.",
+   "nature": "ligament",
+   "articulation": "Carpe (articulation lunotriquétrale)",
+   "attaches": [
+    {
+     "texte": "Face palmaire du lunatum",
+     "os": [
+      "lunatum"
+     ]
+    },
+    {
+     "texte": "Face palmaire du triquetrum",
+     "os": [
+      "triquetrum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Lie le lunatum au triquetrum sur la face palmaire ; c'est la portion maîtresse du ligament lunotriquétral, plus profonde que les ligaments extrinsèques",
+   "tendu": null,
+   "test": "Ballottement lunotriquétral, test de Regan et test de Kleinman : douleur ou laxité",
+   "clinique": "Sa lésion donne une douleur du bord ulnaire du poignet, avec ressaut ; une arthrose pisotriquétrale doit être écartée avant d'incriminer le ligament",
+   "memo": "La partie palmaire est la plus épaisse : c'est elle qui tient",
+   "variantes": null,
+   "sources": [
+    "pmc-margulies",
+    "pmc-echo-poignet",
+    "pmc-tests-poignet"
+   ]
+  },
+  {
+   "id": "ligament-metacarpien-transverse-profond",
+   "resume": "La bande qui réunit en travers les têtes des métacarpiens 2 à 5, du côté de la paume.",
+   "nature": "ligament",
+   "articulation": "Main (articulations métacarpo-phalangiennes)",
+   "attaches": [
+    {
+     "texte": "Tête du deuxième au cinquième métacarpien, chacune reliée à la voisine ; il se fond dans les plaques palmaires",
+     "os": [
+      "deuxieme-metacarpien",
+      "troisieme-metacarpien",
+      "quatrieme-metacarpien",
+      "cinquieme-metacarpien"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Lie les têtes métacarpiennes entre elles et empêche l'écartement des têtes pendant la préhension ; les tendons fléchisseurs passent devant, ceux des interosseux derrière. Le pouce en est exclu",
+   "tendu": null,
+   "test": null,
+   "clinique": "Rarement rompu ; il contribue à la stabilité des articulations métacarpo-phalangiennes lors de la préhension",
+   "memo": "Transverse profond : une sangle qui tient les têtes des métacarpiens serrées",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-metacarpien-transverse",
+    "kenhub-mcp"
+   ]
+  },
+  {
+   "id": "ligament-pisohamatum",
+   "resume": "Le prolongement du tendon du fléchisseur ulnaire du carpe depuis le pisiforme jusqu'au crochet de l'hamatum.",
+   "nature": "ligament",
+   "articulation": "Carpe (pisiforme)",
+   "attaches": [
+    {
+     "texte": "Pisiforme",
+     "os": [
+      "pisiforme"
+     ]
+    },
+    {
+     "texte": "Crochet (hamulus) de l'hamatum",
+     "os": [
+      "hamatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Prolonge le tendon du fléchisseur ulnaire du carpe, dont le pisiforme est un sésamoïde ; sert d'attache à l'abducteur du petit doigt et fait le plancher du canal ulnaire",
+   "tendu": null,
+   "test": null,
+   "clinique": "Il forme le plancher du canal ulnaire (loge de Guyon) où passent le nerf et l'artère ulnaires ; ils peuvent y être comprimés",
+   "memo": "Du pisiforme au crochet de l'hamatum : le plancher de la loge de Guyon",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-pisohamatum",
+    "pmc-echo-poignet"
+   ],
+   "divergences": "La compression du nerf ulnaire dans la loge de Guyon est un savoir courant non détaillé dans les pages lues, qui notent seulement que le nerf et l'artère passent sur ce ligament"
+  },
+  {
+   "id": "ligament-pisometacarpien",
+   "resume": "Le second prolongement du tendon du fléchisseur ulnaire du carpe : du pisiforme à la base du 5e métacarpien.",
+   "nature": "ligament",
+   "articulation": "Carpe (pisiforme)",
+   "attaches": [
+    {
+     "texte": "Pisiforme",
+     "os": [
+      "pisiforme"
+     ]
+    },
+    {
+     "texte": "Base du cinquième métacarpien",
+     "os": [
+      "cinquieme-metacarpien"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Prolonge le tendon du fléchisseur ulnaire du carpe jusqu'au cinquième métacarpien : le muscle agit sur la main par le pisiforme et ces deux ligaments",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sans pathologie propre ; il montre que le fléchisseur ulnaire du carpe a, outre le pisiforme, deux attaches distales",
+   "memo": "Pisiforme, 5e métacarpien : le muscle tire plus loin que l'os",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-poignet"
+   ]
+  },
+  {
+   "id": "ligament-pisotriquetral",
+   "resume": "Le ligament de la capsule qui retient le pisiforme sur la face palmaire du triquetrum.",
+   "nature": "ligament",
+   "articulation": "Carpe (articulation pisotriquétrale)",
+   "attaches": [
+    {
+     "texte": "Pisiforme",
+     "os": [
+      "pisiforme"
+     ]
+    },
+    {
+     "texte": "Triquetrum",
+     "os": [
+      "triquetrum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Maintient le pisiforme contre le triquetrum ; la capsule de cette articulation, indépendante du poignet, le relie à l'os sous-jacent",
+   "tendu": null,
+   "test": null,
+   "clinique": "L'arthrose pisotriquétrale donne une douleur du bord ulnaire qui peut simuler une lésion lunotriquétrale : il faut l'écarter avant le test de Kleinman",
+   "memo": "Pisotriquétral : le pisiforme tient au triquetrum par sa capsule",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "pmc-tests-poignet",
+    "kenhub-os-carpe"
+   ]
+  },
+  {
+   "id": "ligament-radio-scaphocapitatum",
+   "resume": "Le ligament en hamac qui part du radius, passe devant le scaphoïde et se fixe au capitatum : le scaphoïde tourne autour de lui.",
+   "nature": "ligament",
+   "articulation": "Poignet (articulation radiocarpienne et médio-carpienne)",
+   "attaches": [
+    {
+     "texte": "Bord antéro-latéral du radius, près de la styloïde",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Capitatum, après avoir croisé la taille du scaphoïde",
+     "os": [
+      "capitatum",
+      "scaphoide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Forme une écharpe autour de laquelle le scaphoïde pivote ; stabilise le scaphoïde et la médio-carpienne lors de l'extension du poignet",
+   "tendu": "En extension du poignet",
+   "test": null,
+   "clinique": "Après une carpectomie de la première rangée, il devient le principal stabilisateur du carpe et doit être préservé",
+   "memo": "Radio-scapho-capitatum : du radius au capitatum, avec le scaphoïde sur le trajet",
+   "variantes": null,
+   "sources": [
+    "pmc-margulies",
+    "wiki-radiocarpal-palmaire",
+    "gray1918"
+   ],
+   "divergences": "Wikipédia énumère séparément radio-scaphoïdien et radio-capitatum, que d'autres sources fusionnent en radio-scapho-capitatum ; Gray ne détaille pas ce ligament"
+  },
+  {
+   "id": "ligament-radio-ulnaire-dorsal",
+   "resume": "Le pendant postérieur du ligament radio-ulnaire palmaire, sur le dos de l'articulation radio-ulnaire distale.",
+   "nature": "ligament",
+   "articulation": "Avant-bras (articulation radio-ulnaire distale)",
+   "attaches": [
+    {
+     "texte": "Bord postérieur de l'incisure ulnaire du radius",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Face postérieure de la tête de l'ulna (jusqu'à la styloïde et à la fovéa)",
+     "os": [
+      "ulna"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce en arrière la capsule de la radio-ulnaire distale et maintient l'ulna contre le radius, surtout en pronation",
+   "tendu": null,
+   "test": "Test de la touche de piano pour l'instabilité de l'articulation radio-ulnaire distale",
+   "clinique": "Sa lésion, avec celle du complexe fibrocartilagineux triangulaire, donne une tête de l'ulna instable vers l'arrière et une douleur ulnaire à la rotation",
+   "memo": "Dorsal : derrière, le même pont que le palmaire, mais côté dos",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-tfcc",
+    "pmc-tests-poignet"
+   ]
+  },
+  {
+   "id": "ligament-radiocapitatum",
+   "resume": "Les fibres du ligament palmaire qui vont du radius au capitatum, souvent décrites avec le radio-scapho-capitatum.",
+   "nature": "ligament",
+   "articulation": "Poignet (articulation radiocarpienne)",
+   "attaches": [
+    {
+     "texte": "Face palmaire de l'extrémité distale du radius, près de la styloïde",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Capitatum",
+     "os": [
+      "capitatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce l'avant de la capsule et fait le lien entre le radius et la rangée distale du carpe ; sa part avec le radio-scapho-capitatum guide le scaphoïde",
+   "tendu": null,
+   "test": null,
+   "clinique": "Peu de pathologie propre ; ses lésions se rangent avec celles des ligaments palmaires extrinsèques dans les traumatismes du poignet",
+   "memo": "Radiocapitatum : du radius au capitatum, en droite ligne",
+   "variantes": null,
+   "sources": [
+    "wiki-radiocarpal-palmaire",
+    "pmc-margulies",
+    "gray1918"
+   ],
+   "divergences": "Wikipédia en fait un composant distinct du ligament radiocarpien palmaire ; d'autres le fusionnent avec le radio-scapho-capitatum. Gray note seulement que quelques fibres de la nappe palmaire atteignent le capitatum"
+  },
+  {
+   "id": "ligament-radiocarpien-dorsal",
+   "resume": "Le ligament postérieur du poignet : de la face dorsale du radius au lunatum et au triquetrum, sur le dos du carpe.",
+   "nature": "ligament",
+   "articulation": "Poignet (articulation radiocarpienne)",
+   "attaches": [
+    {
+     "texte": "Bord dorsal de l'extrémité distale du radius",
+     "os": [
+      "radius"
+     ]
+    },
+    {
+     "texte": "Faces dorsales du scaphoïde, du lunatum et du triquetrum (surtout lunatum et triquetrum)",
+     "os": [
+      "scaphoide",
+      "lunatum",
+      "triquetrum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Plus mince que le palmaire, il stabilise le poignet sur sa face dorsale et accompagne la main dans la pronation ; avec le ligament intercarpien dorsal, il forme un V qui stabilise l'articulation médio-carpienne",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sa lésion associée à d'autres ligaments contribue à l'instabilité en VISI (le lunatum bascule vers l'avant) ; il est rarement atteint seul",
+   "memo": "Le dorsal est un V : radius en haut, lunatum et triquetrum en bas",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-poignet",
+    "pmc-margulies"
+   ]
+  },
+  {
+   "id": "ligament-radie-du-carpe",
+   "resume": "Un éventail de bandes sur la face palmaire du carpe, partant de la tête du capitatum.",
+   "nature": "ligament",
+   "articulation": "Carpe (face palmaire)",
+   "attaches": [
+    {
+     "texte": "Tête du capitatum, sur sa face palmaire",
+     "os": [
+      "capitatum"
+     ]
+    },
+    {
+     "texte": "Scaphoïde, lunatum et triquetrum, par environ sept bandes divergentes",
+     "os": [
+      "scaphoide",
+      "lunatum",
+      "triquetrum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Bandes en éventail qui relient le capitatum aux os voisins de la première rangée ; forment le fond du canal carpien",
+   "tendu": null,
+   "test": null,
+   "clinique": "Pas de pathologie propre : ce plan ligamentaire palmaire se trouve sous le canal carpien, dont le nerf médian souffre dans les luxations antérieures du lunatum",
+   "memo": "Radié : comme les rayons d'un soleil dont le capitatum est le centre",
+   "variantes": null,
+   "sources": [
+    "wiki-lig-radie",
+    "wiki-poignet"
+   ],
+   "divergences": "Wikipédia ne décrit pas sa fonction ; Gray ne le nomme pas. Le rôle de fond du canal carpien est déduit de sa situation palmaire"
+  },
+  {
+   "id": "ligament-scaphocapitatum",
+   "resume": "Une bande palmaire qui rattache le scaphoïde au capitatum, devant la médio-carpienne.",
+   "nature": "ligament",
+   "articulation": "Carpe (articulation médio-carpienne, face palmaire)",
+   "attaches": [
+    {
+     "texte": "Scaphoïde",
+     "os": [
+      "scaphoide"
+     ]
+    },
+    {
+     "texte": "Capitatum",
+     "os": [
+      "capitatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Fait partie des ligaments palmaires de la médio-carpienne qui relient les deux rangées du carpe",
+   "tendu": null,
+   "test": null,
+   "clinique": "Pas de pathologie propre décrite dans les sources ; il se lèse avec les autres ligaments palmaires dans les traumatismes graves du carpe",
+   "memo": "Scapho-capitatum : un pont court entre les deux rangées, devant",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-intercarpiens-palmaires"
+   ],
+   "divergences": "Gray évoque les ligaments palmaires de la médio-carpienne sans les nommer un à un ; peu de détails dans les sources consultées pour ce ligament précis"
+  },
+  {
+   "id": "ligament-scaphotrapeziotrapezoidal",
+   "resume": "Le complexe qui attache le scaphoïde au trapèze et au trapézoïde : il stabilise le scaphoïde côté pouce.",
+   "nature": "ligament",
+   "articulation": "Carpe (articulation médio-carpienne, côté radial)",
+   "attaches": [
+    {
+     "texte": "Scaphoïde",
+     "os": [
+      "scaphoide"
+     ]
+    },
+    {
+     "texte": "Trapèze et trapézoïde",
+     "os": [
+      "os-trapeze",
+      "trapezoide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retient le scaphoïde contre la rangée distale du côté radial ; avec le ligament intercarpien dorsal, il empêche le scaphoïde de basculer vers l'avant",
+   "tendu": null,
+   "test": "Test de Watson (scaphoïde en bascule) explore la stabilité du scaphoïde",
+   "clinique": "Sa lésion associée à celle du scapho-lunaire ou de l'intercarpien dorsal permet l'instabilité en DISI",
+   "memo": "Scapho-trapézo-trapézoïdien : le point d'ancrage du scaphoïde sur les os du pouce",
+   "variantes": null,
+   "sources": [
+    "pmc-margulies",
+    "gray1918"
+   ],
+   "divergences": "Gray décrit un ligament collatéral médio-carpien du scaphoïde au trapèze ; Margulies cite le complexe scapho-trapézo-trapézoïdien parmi les stabilisateurs du scaphoïde sans détailler ses attaches"
+  },
+  {
+   "id": "ligament-scaphotriquetral-dorsal",
+   "resume": "La bande dorsale qui relie le triquetrum au scaphoïde : c'est le ligament intercarpien dorsal.",
+   "nature": "ligament",
+   "articulation": "Carpe (face dorsale)",
+   "attaches": [
+    {
+     "texte": "Tubercule dorsal du triquetrum",
+     "os": [
+      "triquetrum"
+     ]
+    },
+    {
+     "texte": "Scaphoïde (gouttière dorsale), après avoir croisé le lunatum",
+     "os": [
+      "scaphoide",
+      "lunatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Stabilise dorsalement le scaphoïde, riche en récepteurs proprioceptifs ; forme avec le radiocarpien dorsal un V qui assure la stabilité médio-carpienne",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sa lésion associée à celle du scapho-lunaire permet l'instabilité en DISI (le scaphoïde bascule vers l'avant)",
+   "memo": "Dorsal : de la pointe du triquetrum au scaphoïde, avec le radiocarpien en V",
+   "variantes": null,
+   "sources": [
+    "pmc-margulies",
+    "pmc-echo-poignet",
+    "gray1918"
+   ],
+   "divergences": "Margulies et le guide échographique le nomment ligament intercarpien dorsal (il atteint aussi le trapèze et le trapézoïde) ; Gray décrit deux ligaments dorsaux séparés entre scaphoïde-lunatum et lunatum-triquetrum"
+  },
+  {
+   "id": "ligament-scaphotriquetral-palmaire",
+   "resume": "La bande palmaire qui va du tubercule du scaphoïde au triquetrum en passant devant le capitatum et l'hamatum.",
+   "nature": "ligament",
+   "articulation": "Carpe (articulation médio-carpienne, face palmaire)",
+   "attaches": [
+    {
+     "texte": "Tubercule du scaphoïde",
+     "os": [
+      "scaphoide"
+     ]
+    },
+    {
+     "texte": "Triquetrum",
+     "os": [
+      "triquetrum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relie les deux extrémités de la rangée proximale en arc palmaire, devant la rangée distale ; contribue à la stabilité du carpe en extension",
+   "tendu": null,
+   "test": null,
+   "clinique": "Fait partie des ligaments palmaires dont l'atteinte accompagne les instabilités du carpe ; peu de pathologie isolée",
+   "memo": "Scapho-triquétral : d'un bout à l'autre de la rangée, devant",
+   "variantes": null,
+   "sources": [
+    "pmc-echo-poignet",
+    "wiki-intercarpiens-palmaires"
+   ],
+   "divergences": "Le guide échographique en décrit le trajet ; Gray ne le nomme pas. La clinique est déduite du rôle des arcs palmaires"
+  },
+  {
+   "id": "ligament-trapezoidocapitatum",
+   "resume": "Les bandes dorsale et palmaire qui relient le trapézoïde au capitatum.",
+   "nature": "ligament",
+   "articulation": "Carpe (articulation trapézoïdo-capitatum)",
+   "attaches": [
+    {
+     "texte": "Trapézoïde",
+     "os": [
+      "trapezoide"
+     ]
+    },
+    {
+     "texte": "Capitatum",
+     "os": [
+      "capitatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce l'articulation trapézoïdo-capitatum sur les faces palmaire et dorsale de la rangée distale du carpe",
+   "tendu": null,
+   "test": null,
+   "clinique": "Pas de pathologie propre décrite ; il se lèse dans les traumatismes sévères du carpe",
+   "memo": "Devant et derrière : le même couple, trapézoïde et capitatum",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-intercarpiens-palmaires"
+   ],
+   "divergences": "Gray décrit trois ligaments dorsaux et trois palmaires dans la rangée distale ; la source secondaire ne donne que la définition générale des ligaments intercarpiens palmaires"
+  },
+  {
+   "id": "ligament-triquetrocapitatum",
+   "resume": "Une bande palmaire qui rattache le triquetrum au capitatum, devant la médio-carpienne.",
+   "nature": "ligament",
+   "articulation": "Carpe (articulation médio-carpienne, face palmaire)",
+   "attaches": [
+    {
+     "texte": "Triquetrum",
+     "os": [
+      "triquetrum"
+     ]
+    },
+    {
+     "texte": "Capitatum",
+     "os": [
+      "capitatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relie le triquetrum au capitatum et fait partie de l'arc ligamentaire palmaire (triquetro-hamato-capitatum) qui soutient la médio-carpienne",
+   "tendu": null,
+   "test": null,
+   "clinique": "Pas de pathologie propre décrite dans les sources ; il se lèse avec les autres ligaments palmaires dans les traumatismes graves du carpe",
+   "memo": "Triquetro-capitatum : du côté ulnaire au centre, par devant",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-intercarpiens-palmaires"
+   ],
+   "divergences": "Peu de précisions dans les sources consultées : Margulies cite le ligament triquetro-hamato-capitatum sans en donner les attaches"
+  },
+  {
+   "id": "ligament-triquetrohamatum",
+   "resume": "La bande ulnaire de la médio-carpienne : elle attache le triquetrum à l'hamatum.",
+   "nature": "ligament",
+   "articulation": "Carpe (articulation médio-carpienne, côté ulnaire)",
+   "attaches": [
+    {
+     "texte": "Triquetrum",
+     "os": [
+      "triquetrum"
+     ]
+    },
+    {
+     "texte": "Hamatum",
+     "os": [
+      "hamatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Ligament collatéral du côté ulnaire de la médio-carpienne : il relie le triquetrum à l'hamatum",
+   "tendu": null,
+   "test": null,
+   "clinique": "Pas de pathologie propre décrite dans les sources ; il se lèse avec le lunotriquétral dans les atteintes ulnaires du carpe",
+   "memo": "Triquetro-hamatum : le lien côté ulnaire entre les deux rangées",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-intercarpiens-palmaires"
+   ],
+   "divergences": "Gray le cite comme collatéral médio-carpien du triquetrum à l'hamatum ; les sources récentes ne détaillent pas ses attaches"
+  },
+  {
+   "id": "ligament-ulnocapitatum",
+   "resume": "La bande palmaire qui part de la fovéa de l'ulna et rejoint le capitatum : avec le radio-scapho-capitatum, elle forme l'arc palmaire.",
+   "nature": "ligament",
+   "articulation": "Poignet (côté ulnaire, face palmaire)",
+   "attaches": [
+    {
+     "texte": "Fovéa de l'ulna, au pied de la styloïde ulnaire",
+     "os": [
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Capitatum, en passant devant le lunatum",
+     "os": [
+      "capitatum",
+      "lunatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relie l'ulna au capitatum et s'unit au radio-scapho-capitatum pour former le ligament arqué palmaire, qui soutient la médio-carpienne",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sa lésion s'inscrit dans les atteintes ulnaires du carpe ; ces arcs palmaires protègent surtout lors de l'extension du poignet",
+   "memo": "Ulno-capitatum : de l'ulna au capitatum, en arc avec le radio-scapho-capitatum",
+   "variantes": null,
+   "sources": [
+    "pmc-margulies",
+    "pmc-echo-poignet"
+   ]
+  },
+  {
+   "id": "ligament-ulnocarpien-dorsal",
+   "resume": "Le renfort de l'angle dorsal et ulnaire de la capsule du poignet, de l'ulna au triquetrum.",
+   "nature": "ligament",
+   "articulation": "Poignet (articulation radiocarpienne)",
+   "attaches": [
+    {
+     "texte": "Extrémité distale de l'ulna, côté dorsal",
+     "os": [
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Face dorsale du triquetrum",
+     "os": [
+      "triquetrum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Épaissit la capsule du côté dorsal et ulnaire et participe à la stabilité de l'ulna distale",
+   "tendu": null,
+   "test": null,
+   "clinique": "À l'échographie il apparaît comme un épaississement de la capsule plus que comme un ligament distinct ; il est évoqué dans les douleurs ulnaires dorsales du poignet",
+   "memo": "Dorsal et ulnaire : le coin arrière de la capsule",
+   "variantes": null,
+   "sources": [
+    "pmc-echo-poignet",
+    "wiki-tfcc"
+   ],
+   "divergences": "Le guide échographique décrit une portion de capsule, non un ligament net ; Gray ne le nomme pas. L'existence propre de ce ligament reste discutée"
+  },
+  {
+   "id": "ligament-ulnolunatum",
+   "resume": "La bande palmaire qui rattache l'ulna au lunatum, devant le poignet.",
+   "nature": "ligament",
+   "articulation": "Poignet (côté ulnaire, face palmaire)",
+   "attaches": [
+    {
+     "texte": "Ligament radio-ulnaire palmaire, près de l'ulna distale",
+     "os": [
+      "ligament-radio-ulnaire-palmaire",
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Face palmaire du lunatum",
+     "os": [
+      "lunatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relie le côté ulnaire de l'avant-bras au lunatum et fait partie de l'ensemble ulno-carpien palmaire qui soutient le carpe contre l'extension",
+   "tendu": null,
+   "test": null,
+   "clinique": "Ses lésions se voient avec celles du complexe fibrocartilagineux triangulaire (douleur ulnaire, signe de la fovéa ulnaire)",
+   "memo": "Ulno-lunatum : de l'ulna au lunatum, côté paume",
+   "variantes": null,
+   "sources": [
+    "pmc-margulies",
+    "pmc-echo-poignet",
+    "wiki-tfcc"
+   ],
+   "divergences": "Margulies place son origine sur le ligament radio-ulnaire palmaire, le guide échographique sur l'ulna ; Wikipédia le range dans les ligaments ulno-carpiens du complexe fibrocartilagineux"
+  },
+  {
+   "id": "ligament-ulnopisiforme",
+   "resume": "Le faisceau du ligament collatéral ulnaire qui rejoint le pisiforme, du côté ulnaire du poignet.",
+   "nature": "ligament",
+   "articulation": "Poignet (côté ulnaire)",
+   "attaches": [
+    {
+     "texte": "Processus styloïde de l'ulna",
+     "os": [
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Pisiforme",
+     "os": [
+      "pisiforme"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce la face ulnaire de la capsule et attache le pisiforme à l'ulna ; fait suite au ligament collatéral ulnaire du carpe",
+   "tendu": null,
+   "test": null,
+   "clinique": "Le pisiforme, os sésamoïde du tendon du fléchisseur ulnaire du carpe, reçoit donc des ligaments de l'ulna ; une douleur à ce niveau fait penser à une atteinte pisotriquétrale ou ulnaire",
+   "memo": "Ulno-pisiforme : de la styloïde ulnaire au pisiforme",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-poignet"
+   ],
+   "divergences": "Gray et TeachMeAnatomy citent les fibres vers le pisiforme du collatéral ulnaire du carpe ; le nom de ligament distinct figure dans la nomenclature sans description détaillée dans les sources lues"
+  },
+  {
+   "id": "ligament-ulnotriquetrum",
+   "resume": "La bande palmaire de l'ulna au triquetrum : elle forme la paroi antérieure du complexe fibrocartilagineux triangulaire.",
+   "nature": "ligament",
+   "articulation": "Poignet (côté ulnaire, face palmaire)",
+   "attaches": [
+    {
+     "texte": "Ligament radio-ulnaire palmaire et ulna distale",
+     "os": [
+      "ligament-radio-ulnaire-palmaire",
+      "ulna"
+     ]
+    },
+    {
+     "texte": "Partie proximale et ulnaire du triquetrum",
+     "os": [
+      "triquetrum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Rattache l'ulna au triquetrum, forme la paroi ventrale du complexe fibrocartilagineux triangulaire et stabilise le côté ulnaire du carpe",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteint dans les lésions du complexe fibrocartilagineux triangulaire, avec douleur du bord ulnaire du poignet à la rotation",
+   "memo": "Ulno-triquétral : de l'ulna au triquetrum, devant",
+   "variantes": null,
+   "sources": [
+    "pmc-margulies",
+    "pmc-echo-poignet",
+    "wiki-tfcc"
+   ]
+  },
+  {
+   "id": "ligaments-carpometacarpiens-dorsaux",
+   "resume": "Les bandes du dos de la base de la main qui relient le carpe distal aux métacarpiens 2 à 5 : les plus solides des ligaments carpo-métacarpiens.",
+   "nature": "groupe",
+   "articulation": "Main (articulations carpo-métacarpiennes)",
+   "attaches": [
+    {
+     "texte": "Rangée distale du carpe : trapèze, trapézoïde, capitatum, hamatum",
+     "os": [
+      "os-trapeze",
+      "trapezoide",
+      "capitatum",
+      "hamatum"
+     ]
+    },
+    {
+     "texte": "Bases des deuxième à cinquième métacarpiens, par deux bandes pour les 2e, 3e et 4e et une pour le 5e",
+     "os": [
+      "deuxieme-metacarpien",
+      "troisieme-metacarpien",
+      "quatrieme-metacarpien",
+      "cinquieme-metacarpien"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Fixent chaque base métacarpienne à deux os du carpe distal ; très solides, ils rendent presque immobiles les 2e et 3e métacarpiens, plus mobiles les 4e et 5e",
+   "tendu": null,
+   "test": null,
+   "clinique": "Un choc violent sur le poing ou la main en flexion peut les rompre : luxation carpo-métacarpienne, surtout à la base du 5e métacarpien",
+   "memo": "Le dos de la main : deux amarres par métacarpien, une seulement pour le petit doigt",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-cmc"
+   ],
+   "divergences": "La luxation carpo-métacarpienne est un savoir courant, non détaillé dans la page Wikipédia consultée, qui note la mobilité plus grande des 4e et 5e métacarpiens"
+  },
+  {
+   "id": "ligaments-carpometacarpiens-palmaires",
+   "resume": "Les bandes de la paume qui relient le carpe distal aux métacarpiens 2 à 5, plus faibles que les dorsales.",
+   "nature": "groupe",
+   "articulation": "Main (articulations carpo-métacarpiennes)",
+   "attaches": [
+    {
+     "texte": "Rangée distale du carpe : trapèze, trapézoïde, capitatum, hamatum",
+     "os": [
+      "os-trapeze",
+      "trapezoide",
+      "capitatum",
+      "hamatum"
+     ]
+    },
+    {
+     "texte": "Bases des deuxième à cinquième métacarpiens ; le troisième reçoit trois bandes (latérale, intermédiaire, médiale)",
+     "os": [
+      "deuxieme-metacarpien",
+      "troisieme-metacarpien",
+      "quatrieme-metacarpien",
+      "cinquieme-metacarpien"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retiennent en avant les bases métacarpiennes, de façon voisine des dorsaux ; le 3e métacarpien en reçoit trois bandes (latérale, intermédiaire, médiale)",
+   "tendu": null,
+   "test": null,
+   "clinique": "Moins résistants que les dorsaux, ils laissent jouer les 4e et 5e métacarpiens, ce qui permet à la main de se creuser en arche, avec le pouce, pour saisir",
+   "memo": "Palmaires : les ligaments du creux de la main, plus fins que ceux du dos",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-cmc"
+   ]
+  },
+  {
+   "id": "ligaments-intercarpiens-dorsaux",
+   "resume": "Les bandes du dos du carpe qui relient les os voisins : elles stabilisent le carpe en arrière.",
+   "nature": "groupe",
+   "articulation": "Carpe (face dorsale)",
+   "attaches": [
+    {
+     "texte": "Entre les os de la première rangée : scaphoïde, lunatum et triquetrum",
+     "os": [
+      "scaphoide",
+      "lunatum",
+      "triquetrum"
+     ]
+    },
+    {
+     "texte": "Entre les os de la rangée distale : trapèze, trapézoïde, capitatum et hamatum",
+     "os": [
+      "os-trapeze",
+      "trapezoide",
+      "capitatum",
+      "hamatum"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Tapissent la face dorsale du carpe et unissent chaque os à son voisin ; le ligament intercarpien dorsal, du triquetrum au scaphoïde, au trapèze et au trapézoïde, est le principal",
+   "tendu": null,
+   "test": null,
+   "clinique": "Les lésions du ligament intercarpien dorsal, avec celles du scapho-lunaire, sont à l'origine de l'instabilité en DISI ; avec le radiocarpien dorsal, elles favorisent le VISI",
+   "memo": "Dorsaux : les ligaments du dos du carpe, en V avec le radiocarpien",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "pmc-margulies"
+   ],
+   "divergences": "Gray décrit deux ligaments dorsaux dans la rangée proximale et trois dans la distale ; Margulies met en avant le ligament intercarpien dorsal, de la forme d'un V avec le radiocarpien dorsal"
+  },
+  {
+   "id": "ligaments-interphalangiens-palmaires",
+   "resume": "Les plaques palmaires des articulations interphalangiennes : un plancher fibrocartilagineux qui empêche l'hyperextension.",
+   "nature": "groupe",
+   "articulation": "Main (articulations interphalangiennes)",
+   "attaches": [
+    {
+     "texte": "Face palmaire de la base de la phalange moyenne (ou distale), avec des attaches latérales aux collatéraux",
+     "os": [
+      "phalanges-moyennes",
+      "phalanges-distales"
+     ]
+    },
+    {
+     "texte": "Capsule, vers la phalange proximale ou moyenne, par une partie plus membraneuse",
+     "os": [
+      "phalanges-proximales",
+      "phalanges-moyennes"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Épaisseur de 2 à 3 mm, elles limitent l'hyperextension, protègent les tendons fléchisseurs et glissent vers la base du doigt pendant la flexion",
+   "tendu": "En extension complète",
+   "test": null,
+   "clinique": "Une extension forcée du doigt déchire la plaque palmaire, ou l'arrache avec un fragment osseux",
+   "memo": "Le plancher du doigt : il retient le doigt de se plier à l'envers",
+   "variantes": null,
+   "sources": [
+    "wiki-palmar-plate",
+    "wiki-ip-main",
+    "gray1918"
+   ]
+  },
+  {
+   "id": "ligaments-metacarpiens-dorsaux",
+   "resume": "Les bandes transversales du dos qui relient les bases des métacarpiens 2 à 5.",
+   "nature": "groupe",
+   "articulation": "Main (articulations intermétacarpiennes)",
+   "attaches": [
+    {
+     "texte": "Bases des métacarpiens 2 à 5, sur la face dorsale, juste en dessous des surfaces articulaires",
+     "os": [
+      "deuxieme-metacarpien",
+      "troisieme-metacarpien",
+      "quatrieme-metacarpien",
+      "cinquieme-metacarpien"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Maintiennent les bases métacarpiennes côte à côte, en arrière ; ils forment avec les ligaments palmaires et interosseux l'unité de la base de la main",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sans pathologie propre décrite ; l'ensemble des ligaments de la base de la main se lèse dans les écrasements et les luxations carpo-métacarpiennes",
+   "memo": "Dorsaux : le lien transversal côté dos entre les bases des métacarpiens",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-poignet"
+   ]
+  },
+  {
+   "id": "ligaments-metacarpiens-interosseux",
+   "resume": "Les courtes fibres entre les faces voisines des bases des métacarpiens 2 à 5, sous les surfaces articulaires.",
+   "nature": "groupe",
+   "articulation": "Main (articulations intermétacarpiennes)",
+   "attaches": [
+    {
+     "texte": "Faces latérales voisines des bases des métacarpiens 2 à 5, juste distalement aux facettes articulaires",
+     "os": [
+      "deuxieme-metacarpien",
+      "troisieme-metacarpien",
+      "quatrieme-metacarpien",
+      "cinquieme-metacarpien"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relient profondément les bases des métacarpiens voisins ; avec les ligaments dorsaux et palmaires ils scellent la base de la main",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sans pathologie propre décrite ; la cohésion de la base de la main empêche l'écartement des métacarpiens",
+   "memo": "Interosseux : les fibres cachées entre deux bases voisines",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-poignet"
+   ]
+  },
+  {
+   "id": "ligaments-metacarpiens-palmaires",
+   "resume": "Les bandes transversales de la paume qui relient les bases des métacarpiens 2 à 5.",
+   "nature": "groupe",
+   "articulation": "Main (articulations intermétacarpiennes)",
+   "attaches": [
+    {
+     "texte": "Bases des métacarpiens 2 à 5, sur la face palmaire",
+     "os": [
+      "deuxieme-metacarpien",
+      "troisieme-metacarpien",
+      "quatrieme-metacarpien",
+      "cinquieme-metacarpien"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retiennent les bases métacarpiennes côte à côte, en avant ; leur synoviale se continue avec celle des articulations carpo-métacarpiennes",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sans pathologie propre décrite ; ils font partie des ligaments de la base de la main touchés dans les écrasements",
+   "memo": "Palmaires : le même lien que les dorsaux, mais devant",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-poignet"
+   ]
+  },
+  {
+   "id": "ligaments-metacarpophalangiens-collateraux",
+   "resume": "Les cordons latéraux des articulations métacarpo-phalangiennes : ils laissent écarter les doigts main ouverte et les bloquent en poing.",
+   "nature": "groupe",
+   "articulation": "Main (articulations métacarpo-phalangiennes)",
+   "attaches": [
+    {
+     "texte": "Dépression sur le côté de la tête du métacarpien, avec un tubercule dorsal",
+     "os": [
+      "metacarpiens"
+     ]
+    },
+    {
+     "texte": "Base de la phalange proximale, côté palmaire ; le collatéral accessoire va à la plaque palmaire",
+     "os": [
+      "phalanges-proximales"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Stabilisateurs principaux : le collatéral propre limite surtout la flexion, l'accessoire, tendu en extension, limite l'extension ; main fermée, ils bloquent l'écartement des doigts",
+   "tendu": "Collatéral propre : en flexion de la métacarpo-phalangienne ; collatéral accessoire : en extension",
+   "test": "Pouce : contrainte en valgus de la métacarpo-phalangienne comparée au côté sain ; laxité de 15 à 20° de plus que l'autre côté suspecte, plus de 30° ou absence de butée = rupture",
+   "clinique": "Pouce du skieur (ou « de garde-chasse ») : rupture du collatéral ulnaire du pouce lors d'une abduction forcée (bâton de ski) ; si le ligament passe au-dessus de l'aponévrose de l'adducteur (lésion de Stener), il ne cicatrise pas",
+   "memo": "Poing fermé, collatéraux tendus ; main ouverte, doigts libres",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mcp",
+    "wiki-collateraux-mcp",
+    "statpearls-lcu-pouce"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,386 @@
+{
+ "lot": "nerf-inf",
+ "couche": "nerf",
+ "structures": [
+  {
+   "id": "nerf-cutane-femoral-lateral",
+   "nom": "Nerf cutané fémoral latéral",
+   "latin": "Nervus cutaneus lateralis femoris",
+   "anglais": "Lateral femoral cutaneous nerve",
+   "region": "cuisse",
+   "rang": 2,
+   "officiel": "Nerf cutané fémoral latéral",
+   "ta2": "6521"
+  },
+  {
+   "id": "nerf-sciatique",
+   "nom": "Nerf sciatique",
+   "latin": "Nervus ischiadicus",
+   "anglais": "Sciatic nerve",
+   "region": "cuisse",
+   "rang": 2,
+   "officiel": "Nerf sciatique",
+   "ta2": "6569"
+  },
+  {
+   "id": "nerf-du-muscle-carre-femoral",
+   "nom": "Nerf du muscle carré fémoral",
+   "latin": "Nervus musculi quadrati femoris",
+   "anglais": "Nerve to quadratus femoris muscle",
+   "region": "hanche",
+   "rang": 2,
+   "officiel": "Nerf du muscle carré fémoral",
+   "ta2": "6551"
+  },
+  {
+   "id": "nerf-femoral",
+   "nom": "Nerf fémoral",
+   "latin": "Nervus femoralis",
+   "anglais": "Femoral nerve",
+   "region": "hanche",
+   "rang": 2,
+   "officiel": "Nerf fémoral",
+   "ta2": "6522"
+  },
+  {
+   "id": "nerf-ilio-inguinal",
+   "nom": "Nerf ilio-inguinal",
+   "latin": "Nervus ilioinguinalis",
+   "anglais": "Ilio-inguinal nerve",
+   "region": "hanche",
+   "rang": 2,
+   "officiel": "Nerf ilio-inguinal",
+   "ta2": "6499"
+  },
+  {
+   "id": "racine-posterieure-du-nerf-cutane-posterieur-de-la-cuisse",
+   "nom": "Racine postérieure du nerf cutané postérieur de la cuisse",
+   "latin": "Radix posterior nervi cutanei posterioris femoris",
+   "anglais": "Posterior root of posterior femoral cutaneous nerve",
+   "region": "hanche",
+   "rang": 2,
+   "officiel": "Racine postérieure du nerf cutané postérieur de la cuisse",
+   "ta2": "6547"
+  },
+  {
+   "id": "nerf-fibulaire-profond",
+   "nom": "Nerf fibulaire profond",
+   "latin": "Nervus fibularis profundus",
+   "anglais": "Deep fibular nerve",
+   "region": "jambe",
+   "rang": 2,
+   "officiel": "Nerf fibulaire profond",
+   "ta2": "6579"
+  },
+  {
+   "id": "nerf-saphene",
+   "nom": "Nerf saphène",
+   "latin": "Nervus saphenus",
+   "anglais": "Saphenous nerve",
+   "region": "jambe",
+   "rang": 2,
+   "officiel": "Nerf saphène",
+   "ta2": "6525"
+  },
+  {
+   "id": "nerf-sural",
+   "nom": "Nerf sural",
+   "latin": "Nervus suralis",
+   "anglais": "Sural nerve",
+   "region": "jambe",
+   "rang": 2,
+   "officiel": "Nerf sural",
+   "ta2": "6586"
+  },
+  {
+   "id": "nerf-cutane-dorsal-medial-du-pied",
+   "nom": "Nerf cutané dorsal médial du pied",
+   "latin": "Nervus cutaneus medialis dorsalis pedis",
+   "anglais": "Medial dorsal cutaneous nerve of foot",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Nerf cutané dorsal médial du pied",
+   "ta2": "6576"
+  },
+  {
+   "id": "branche-anterieure-du-nerf-obturateur",
+   "nom": "Branche antérieure du nerf obturateur",
+   "latin": "Ramus anterior nervi obturatorii",
+   "anglais": "Anterior branch of obturator nerve",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Branche antérieure du nerf obturateur",
+   "ta2": "6533"
+  },
+  {
+   "id": "branche-posterieure-du-nerf-obturateur",
+   "nom": "Branche postérieure du nerf obturateur",
+   "latin": "Ramus posterior nervi obturatorii",
+   "anglais": "Posterior branch of obturator nerve",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Branche postérieure du nerf obturateur",
+   "ta2": "6536"
+  },
+  {
+   "id": "branches-cutanees-anterieures-du-nerf-femoral",
+   "nom": "Branches cutanées antérieures du nerf fémoral",
+   "latin": "Rami cutanei anteriores nervi femoralis",
+   "anglais": "Anterior cutaneous branches of femoral nerve",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Branches cutanées antérieures du nerf fémoral",
+   "ta2": "6524"
+  },
+  {
+   "id": "branches-cutanees-crurales-mediales-du-nerf-saphene",
+   "nom": "Branches cutanées crurales médiales du nerf saphène",
+   "latin": "Rami cutanei mediales cruris nervi sapheni",
+   "anglais": "Medial crural cutaneous branches of saphenous nerve",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Branches cutanées crurales médiales du nerf saphène",
+   "ta2": "6527"
+  },
+  {
+   "id": "nerf-cutane-sural-medial",
+   "nom": "Nerf cutané sural médial",
+   "latin": "Nervus cutaneus medialis surae",
+   "anglais": "Medial sural cutaneous nerve",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Nerf cutané sural médial",
+   "ta2": "6585"
+  },
+  {
+   "id": "nerf-fibulaire-commun",
+   "nom": "Nerf fibulaire commun",
+   "latin": "Nervus fibularis communis",
+   "anglais": "Common fibular nerve",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Nerf fibulaire commun",
+   "ta2": "6571"
+  },
+  {
+   "id": "branche-femorale-du-nerf-genitofemoral",
+   "nom": "Branche fémorale du nerf génitofémoral",
+   "latin": "Ramus femoralis nervi genitofemoralis",
+   "anglais": "Femoral branch of genitofemoral nerve",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Branche fémorale du nerf génitofémoral",
+   "ta2": "6531"
+  },
+  {
+   "id": "branche-genitale-du-nerf-genitofemoral",
+   "nom": "Branche génitale du nerf génitofémoral",
+   "latin": "Ramus genitalis nervi genitofemoralis",
+   "anglais": "Genital branch of genitofemoral nerve",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Branche génitale du nerf génitofémoral",
+   "ta2": "6530"
+  },
+  {
+   "id": "nerf-cutane-posterieur-de-la-cuisse",
+   "nom": "Nerf cutané postérieur de la cuisse",
+   "latin": "Nervus cutaneus posterior femoris",
+   "anglais": "Posterior femoral cutaneous nerve",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Nerf cutané postérieur de la cuisse",
+   "ta2": "6566"
+  },
+  {
+   "id": "nerf-du-muscle-piriforme",
+   "nom": "Nerf du muscle piriforme",
+   "latin": "Nervus musculi piriformis",
+   "anglais": "Nerve to piriformis muscle",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Nerf du muscle piriforme",
+   "ta2": "6545"
+  },
+  {
+   "id": "nerf-gluteal-superieur",
+   "nom": "Nerf glutéal supérieur",
+   "latin": "Nervus gluteus superior",
+   "anglais": "Superior gluteal nerve",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Nerf glutéal supérieur",
+   "ta2": "6543"
+  },
+  {
+   "id": "nerf-genitofemoral",
+   "nom": "Nerf génitofémoral",
+   "latin": "Nervus genitofemoralis",
+   "anglais": "Genitofemoral nerve",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Nerf génitofémoral",
+   "ta2": "6529"
+  },
+  {
+   "id": "nerf-obturateur",
+   "nom": "Nerf obturateur",
+   "latin": "Nervus obturatorius",
+   "anglais": "Obturator nerve",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Nerf obturateur",
+   "ta2": "6532"
+  },
+  {
+   "id": "racine-anterieure-du-nerf-cutane-posterieur-de-la-cuisse",
+   "nom": "Racine antérieure du nerf cutané postérieur de la cuisse",
+   "latin": "Radix anterior nervi cutanei femoris",
+   "anglais": "Anterior root of posterior femoral cutaneous nerve",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Racine antérieure du nerf cutané postérieur de la cuisse",
+   "ta2": "6564"
+  },
+  {
+   "id": "branche-infrapatellaire-du-nerf-saphene",
+   "nom": "Branche infrapatellaire du nerf saphène",
+   "latin": "Ramus infrapatellaris nervi sapheni",
+   "anglais": "Infrapatellar branch of saphenous nerve",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Branche infrapatellaire du nerf saphène",
+   "ta2": "6526"
+  },
+  {
+   "id": "branche-surale-communiquante-du-nerf-fibulaire-commun",
+   "nom": "Branche surale communiquante du nerf fibulaire commun",
+   "latin": "Ramus communicans suralis nervi fibularis communis",
+   "anglais": "Sural communicating branch of common fibular nerve",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Branche surale communiquante du nerf fibulaire commun",
+   "ta2": "6573"
+  },
+  {
+   "id": "nerf-fibulaire-superficiel",
+   "nom": "Nerf fibulaire superficiel",
+   "latin": "Nervus fibularis superficialis",
+   "anglais": "Superficial fibular nerve",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Nerf fibulaire superficiel",
+   "ta2": "6574"
+  },
+  {
+   "id": "nerf-tibial",
+   "nom": "Nerf tibial",
+   "latin": "Nervus tibialis",
+   "anglais": "Tibial nerve",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Nerf tibial",
+   "ta2": "6582"
+  },
+  {
+   "id": "branches-digitales-dorsales-du-nerf-fibulaire-profond",
+   "nom": "Branches digitales dorsales du nerf fibulaire profond",
+   "latin": "Rami digitales dorsales nervi fibularis profundi",
+   "anglais": "Dorsal digital branches of deep fibular nerve",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Branches digitales dorsales du nerf fibulaire profond",
+   "ta2": "6581"
+  },
+  {
+   "id": "branches-digitales-dorsales-du-nerf-fibulaire-superficiel",
+   "nom": "Branches digitales dorsales du nerf fibulaire superficiel",
+   "latin": "Rami digitales dorsales nervi fibularis superficialis",
+   "anglais": "Dorsal digital branches of superficial fibular nerve",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Branches digitales dorsales du nerf fibulaire superficiel",
+   "ta2": "6578"
+  },
+  {
+   "id": "branches-digitales-plantaires-communes-du-nerf-plantaire-lat",
+   "nom": "Branches digitales plantaires communes du nerf plantaire lat.",
+   "latin": "Rami digitales plantares communes nervi plantaris lateralis",
+   "anglais": "Common plantar digital branches of lateral plantar nerve",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Branches digitales plantaires communes du nerf plantaire lat.",
+   "ta2": "6595"
+  },
+  {
+   "id": "branches-digitales-plantaires-communes-du-nerf-plantaire-med",
+   "nom": "Branches digitales plantaires communes du nerf plantaire méd.",
+   "latin": "Rami digitales plantares communes nervi plantaris medialis",
+   "anglais": "Common plantar digital branches of medial plantar nerve",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Branches digitales plantaires communes du nerf plantaire méd.",
+   "ta2": "6591"
+  },
+  {
+   "id": "branches-digitales-plantaires-propres-du-nerf-plantaire-lat",
+   "nom": "Branches digitales plantaires propres du nerf plantaire lat.",
+   "latin": "Rami digitales plantares proprii nervi plantaris lateralis",
+   "anglais": "Proper plantar digital branches of lateral plantar nerve",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Branches digitales plantaires propres du nerf plantaire lat.",
+   "ta2": "6596"
+  },
+  {
+   "id": "branches-digitales-plantaires-propres-du-nerf-plantaire-med",
+   "nom": "Branches digitales plantaires propres du nerf plantaire méd.",
+   "latin": "Rami digitales plantares proprii nervi plantaris medialis",
+   "anglais": "Proper plantar digital branches of medial plantar nerve",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Branches digitales plantaires propres du nerf plantaire méd.",
+   "ta2": "6592"
+  },
+  {
+   "id": "branches-musculaires-du-nerf-fibulaire-profond",
+   "nom": "Branches musculaires du nerf fibulaire profond",
+   "latin": "Rami musculares nervi fibularis profundi",
+   "anglais": "Muscular branches of deep fibular nerve",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Branches musculaires du nerf fibulaire profond",
+   "ta2": "6580"
+  },
+  {
+   "id": "nerf-cutane-dorsal-intermediaire-du-pied",
+   "nom": "Nerf cutané dorsal intermédiaire du pied",
+   "latin": "Nervus cutaneus intermedius dorsalis pedis",
+   "anglais": "Intermediate dorsal cutaneous nerve of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Nerf cutané dorsal intermédiaire du pied",
+   "ta2": "6577"
+  },
+  {
+   "id": "nerf-plantaire-lateral",
+   "nom": "Nerf plantaire latéral",
+   "latin": "Nervus plantaris lateralis",
+   "anglais": "Lateral plantar nerve",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Nerf plantaire latéral",
+   "ta2": "6593"
+  },
+  {
+   "id": "nerf-plantaire-medial",
+   "nom": "Nerf plantaire médial",
+   "latin": "Nervus plantaris medialis",
+   "anglais": "Medial plantar nerve",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Nerf plantaire médial",
+   "ta2": "6590"
+  }
+ ]
+}

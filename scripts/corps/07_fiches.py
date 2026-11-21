@@ -74,12 +74,10 @@ for couche in ("os", "muscle", "tendon", "artere", "ligament", "veine", "nerf", 
     faits = [i for i in attendus if i in fiches[couche]]
     bilan[couche] = [len(faits), len(attendus)]
     cible = os.path.join(SORTIE, couche + ".json")
-    if fiches[couche]:
-        utiles = {c for f in fiches[couche].values() for c in f.get("sources", [])}
-        json.dump({"sources": {c: s for c, s in sorted(sources[couche].items()) if c in utiles}, "fiches": fiches[couche]}, open(cible, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-        print(f"{couche:10s} {len(faits):4d} / {len(attendus):4d} fiches  {os.path.getsize(cible) / 1024:6.0f} Ko")
-    else:
-        print(f"{couche:10s}    0 / {len(attendus):4d}")
+    # (un fichier par couche, même vide : le site importe chacun d'eux)
+    utiles = {c for f in fiches[couche].values() for c in f.get("sources", [])}
+    json.dump({"sources": {c: s for c, s in sorted(sources[couche].items()) if c in utiles}, "fiches": fiches[couche]}, open(cible, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    print(f"{couche:10s} {len(faits):4d} / {len(attendus):4d} fiches  {os.path.getsize(cible) / 1024:6.0f} Ko")
 json.dump(bilan, open(os.path.join(SORTIE, "bilan.json"), "w", encoding="utf-8"), separators=(",", ":"))
 print("tendons tirés de leur muscle :", nb_derives)
 if refuses:

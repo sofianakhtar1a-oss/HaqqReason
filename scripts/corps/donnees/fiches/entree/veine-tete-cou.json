@@ -1,0 +1,347 @@
+{
+ "lot": "veine-tete-cou",
+ "couche": "veine",
+ "structures": [
+  {
+   "id": "plexus-veineux-basilaire",
+   "nom": "Plexus veineux basilaire",
+   "latin": "Plexus venosus basilaris",
+   "anglais": "Basilar venous plexus",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Plexus veineux basilaire",
+   "ta2": "4866"
+  },
+  {
+   "id": "sinus-caverneux",
+   "nom": "Sinus caverneux",
+   "latin": "Sinus cavernosus",
+   "anglais": "Cavernous sinus",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Sinus caverneux",
+   "ta2": "4860",
+   "nature": "sinus"
+  },
+  {
+   "id": "sinus-sagittal-superieur",
+   "nom": "Sinus sagittal supérieur",
+   "latin": "Sinus sagittalis superior",
+   "anglais": "Superior sagittal sinus",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Sinus sagittal supérieur",
+   "ta2": "4856",
+   "nature": "sinus"
+  },
+  {
+   "id": "veine-angulaire",
+   "nom": "Veine angulaire",
+   "latin": "Vena angularis",
+   "anglais": "Angular vein",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Veine angulaire",
+   "ta2": "4818"
+  },
+  {
+   "id": "veine-occipitale",
+   "nom": "Veine occipitale",
+   "latin": "Vena occipitalis",
+   "anglais": "Occipital vein",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Veine occipitale",
+   "ta2": "4781"
+  },
+  {
+   "id": "veines-labiales-inferieures",
+   "nom": "Veines labiales inférieures",
+   "latin": "Venae labiales inferiores",
+   "anglais": "Inferior labial veins",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Veines labiales inférieures",
+   "ta2": "4825"
+  },
+  {
+   "id": "veine-thyroidienne-superieure",
+   "nom": "Veine thyroïdienne supérieure",
+   "latin": "Vena thyreoidea superior",
+   "anglais": "Superior thyroid vein",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Veine thyroïdienne supérieure",
+   "ta2": "4812"
+  },
+  {
+   "id": "veine-vertebrale",
+   "nom": "Veine vertébrale",
+   "latin": "Vena vertebralis",
+   "anglais": "Vertebral vein",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Veine vertébrale",
+   "ta2": "4780"
+  },
+  {
+   "id": "division-anterieure-de-la-veine-retromandibulaire",
+   "nom": "Division antérieure de la veine rétromandibulaire",
+   "latin": "Divisio anterior venae mandibularis",
+   "anglais": "Anterior division of retromandibular vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Division antérieure de la veine rétromandibulaire",
+   "ta2": "4830"
+  },
+  {
+   "id": "division-posterieure-de-la-veine-retromandibulaire",
+   "nom": "Division postérieure de la veine rétromandibulaire",
+   "latin": "Divisio posterior venae retromandibularis",
+   "anglais": "Posterior division of retromandibular vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Division postérieure de la veine rétromandibulaire",
+   "ta2": "4957"
+  },
+  {
+   "id": "sinus-droit",
+   "nom": "Sinus droit",
+   "latin": "Sinus rectus",
+   "anglais": "Straight sinus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sinus droit",
+   "ta2": "4853",
+   "nature": "sinus"
+  },
+  {
+   "id": "sinus-intercaverneux-anterieur",
+   "nom": "Sinus intercaverneux antérieur",
+   "latin": "Sinus intercavernosus anterior",
+   "anglais": "Anterior intercavernous sinus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sinus intercaverneux antérieur",
+   "ta2": "4863",
+   "nature": "sinus"
+  },
+  {
+   "id": "sinus-intercaverneux-posterieur",
+   "nom": "Sinus intercaverneux postérieur",
+   "latin": "Sinus intercavernosus posterior",
+   "anglais": "Posterior intercavernous sinus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sinus intercaverneux postérieur",
+   "ta2": "4864",
+   "nature": "sinus"
+  },
+  {
+   "id": "sinus-occipital",
+   "nom": "Sinus occipital",
+   "latin": "Sinus occipitalis",
+   "anglais": "Occipital sinus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sinus occipital",
+   "ta2": "4855",
+   "nature": "sinus"
+  },
+  {
+   "id": "sinus-petreux-inferieur",
+   "nom": "Sinus pétreux inférieur",
+   "latin": "Sinus petrosus inferior",
+   "anglais": "Inferior petrosal sinus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sinus pétreux inférieur",
+   "ta2": "4858",
+   "nature": "sinus"
+  },
+  {
+   "id": "sinus-petreux-superieur",
+   "nom": "Sinus pétreux supérieur",
+   "latin": "Sinus petrosus superior",
+   "anglais": "Superior petrosal sinus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sinus pétreux supérieur",
+   "ta2": "4850",
+   "nature": "sinus"
+  },
+  {
+   "id": "sinus-sagittal-inferieur",
+   "nom": "Sinus sagittal inférieur",
+   "latin": "Sinus sagittalis inferior",
+   "anglais": "Inferior sagittal sinus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sinus sagittal inférieur",
+   "ta2": "4854",
+   "nature": "sinus"
+  },
+  {
+   "id": "sinus-sigmoide",
+   "nom": "Sinus sigmoïde",
+   "latin": "Sinus sigmoideus",
+   "anglais": "Sigmoid sinus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sinus sigmoïde",
+   "ta2": "4847",
+   "nature": "sinus"
+  },
+  {
+   "id": "sinus-transverse",
+   "nom": "Sinus transverse",
+   "latin": "Sinus transversus",
+   "anglais": "Transverse sinus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sinus transverse",
+   "ta2": "4849",
+   "nature": "sinus"
+  },
+  {
+   "id": "veine-auriculaire-posterieure",
+   "nom": "Veine auriculaire postérieure",
+   "latin": "Vena auricularis posterior",
+   "anglais": "Posterior auricular vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine auriculaire postérieure",
+   "ta2": "4958"
+  },
+  {
+   "id": "veine-faciale",
+   "nom": "Veine faciale",
+   "latin": "Vena facialis",
+   "anglais": "Facial vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine faciale",
+   "ta2": "4817"
+  },
+  {
+   "id": "veine-faciale-commune",
+   "nom": "Veine faciale commune",
+   "latin": "Vena facialis communis",
+   "anglais": "Common facial vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine faciale commune",
+   "ta2": "4816"
+  },
+  {
+   "id": "veine-jugulaire-anterieure",
+   "nom": "Veine jugulaire antérieure",
+   "latin": "Vena iugularis anterior",
+   "anglais": "Anterior jugular vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine jugulaire antérieure",
+   "ta2": "4959"
+  },
+  {
+   "id": "veine-jugulaire-externe",
+   "nom": "Veine jugulaire externe",
+   "latin": "Vena iugularis externa",
+   "anglais": "External jugular vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine jugulaire externe",
+   "ta2": "4956"
+  },
+  {
+   "id": "veine-jugulaire-interne",
+   "nom": "Veine jugulaire interne",
+   "latin": "Vena jugularis interna",
+   "anglais": "Internal jugular vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine jugulaire interne",
+   "ta2": "4800"
+  },
+  {
+   "id": "veine-labiale-superieure",
+   "nom": "Veine labiale supérieure",
+   "latin": "Vena labialis superior",
+   "anglais": "Superior labial vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine labiale supérieure",
+   "ta2": "4824"
+  },
+  {
+   "id": "veine-linguale",
+   "nom": "Veine linguale",
+   "latin": "Vena lingualis",
+   "anglais": "Lingual vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine linguale",
+   "ta2": "4807"
+  },
+  {
+   "id": "veine-ophtalmique-inferieure",
+   "nom": "Veine ophtalmique inférieure",
+   "latin": "Vena ophthalmica inferior",
+   "anglais": "Inferior ophthalmic vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine ophtalmique inférieure",
+   "ta2": "4900"
+  },
+  {
+   "id": "veine-ophtalmique-superieure",
+   "nom": "Veine ophtalmique supérieure",
+   "latin": "Vena ophthalmica superior",
+   "anglais": "Superior ophthalmic vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine ophtalmique supérieure",
+   "ta2": "4887"
+  },
+  {
+   "id": "veine-retromandibulaire",
+   "nom": "Veine rétromandibulaire",
+   "latin": "Vena retromandibularis",
+   "anglais": "Retromandibular vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine rétromandibulaire",
+   "ta2": "4831"
+  },
+  {
+   "id": "veine-submentonniere",
+   "nom": "Veine submentonnière",
+   "latin": "Vena submentalis",
+   "anglais": "Submental vein",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veine submentonnière",
+   "ta2": "4829"
+  },
+  {
+   "id": "veines-maxillaires",
+   "nom": "Veines maxillaires",
+   "latin": "Venae maxillares",
+   "anglais": "Maxillary veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines maxillaires",
+   "ta2": "4835"
+  },
+  {
+   "id": "veines-temporales-superficielles",
+   "nom": "Veines temporales superficielles",
+   "latin": "Venae temporales superficiales",
+   "anglais": "Superficial temporal veins",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Veines temporales superficielles",
+   "ta2": "4832"
+  }
+ ]
+}

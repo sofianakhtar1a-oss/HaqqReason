@@ -1,0 +1,428 @@
+{
+ "lot": "viscere-tete-cou",
+ "couche": "viscere",
+ "structures": [
+  {
+   "id": "glande-thyroide",
+   "nom": "Glande thyroïde",
+   "latin": "Glandula thyreoidea",
+   "anglais": "Thyroid gland",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Glande thyroïde",
+   "ta2": "3863"
+  },
+  {
+   "id": "laryngopharynx",
+   "nom": "Laryngopharynx",
+   "latin": "Pars laryngea pharyngis",
+   "anglais": "Laryngopharynx",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Laryngopharynx",
+   "ta2": "2879"
+  },
+  {
+   "id": "chambre-anterieure-du-globe-oculaire",
+   "nom": "Chambre antérieure du globe oculaire",
+   "latin": "Camera anterior bulbi oculi",
+   "anglais": "Anterior chamber of eyeball",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Chambre antérieure du globe oculaire",
+   "ta2": "6792",
+   "nature": "sens"
+  },
+  {
+   "id": "cornee",
+   "nom": "Cornée",
+   "latin": "Cornea",
+   "anglais": "Cornea",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Cornée",
+   "ta2": "6744",
+   "nature": "sens"
+  },
+  {
+   "id": "fibres-zonulaires",
+   "nom": "Fibres zonulaires",
+   "latin": "Fibrae zonulares",
+   "anglais": "Zonular fibres",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Fibres zonulaires",
+   "ta2": "6796",
+   "nature": "sens"
+  },
+  {
+   "id": "gencive",
+   "nom": "Gencive",
+   "latin": "Gingiva",
+   "anglais": "Gingiva",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Gencive",
+   "ta2": "2790",
+   "nature": "enveloppe"
+  },
+  {
+   "id": "glande-parotide",
+   "nom": "Glande parotide",
+   "latin": "Glandula parotidea",
+   "anglais": "Parotid gland",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Glande parotide",
+   "ta2": "2800"
+  },
+  {
+   "id": "muqueuse-de-la-cavite-nasale",
+   "nom": "Muqueuse de la cavité nasale",
+   "latin": "Tunica mucosa nasi",
+   "anglais": "Mucosa of nasal cavity",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Muqueuse de la cavité nasale",
+   "ta2": "3158",
+   "nature": "enveloppe"
+  },
+  {
+   "id": "nasopharynx",
+   "nom": "Nasopharynx",
+   "latin": "Pars nasalis pharyngis",
+   "anglais": "Nasopharynx",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Nasopharynx",
+   "ta2": "2862"
+  },
+  {
+   "id": "oropharynx",
+   "nom": "Oropharynx",
+   "latin": "Pars oralis pharyngis",
+   "anglais": "Oropharynx",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Oropharynx",
+   "ta2": "2875"
+  },
+  {
+   "id": "palais-mou",
+   "nom": "Palais mou",
+   "latin": "Palatum molle",
+   "anglais": "Soft palate",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Palais mou",
+   "ta2": "2780"
+  },
+  {
+   "id": "retine",
+   "nom": "Rétine",
+   "latin": "Retina",
+   "anglais": "Retina",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Rétine",
+   "ta2": "6776",
+   "nature": "sens"
+  },
+  {
+   "id": "sclere",
+   "nom": "Sclère",
+   "latin": "Sclera",
+   "anglais": "Sclera",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Sclère",
+   "ta2": "6750",
+   "nature": "sens"
+  },
+  {
+   "id": "segment-anterieur-du-globe-oculaire",
+   "nom": "Segment antérieur du globe oculaire",
+   "latin": "Segmentum anterius bulbi oculi",
+   "anglais": "Anterior segment of eyeball",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Segment antérieur du globe oculaire",
+   "ta2": "6790",
+   "nature": "sens"
+  },
+  {
+   "id": "segment-posterieur-du-globe-oculaire",
+   "nom": "Segment postérieur du globe oculaire",
+   "latin": "Segmentum posterius bulbi oculi",
+   "anglais": "Posterior segment of eyeball",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Segment postérieur du globe oculaire",
+   "ta2": "6806",
+   "nature": "sens"
+  },
+  {
+   "id": "trompe-auditive",
+   "nom": "Trompe auditive",
+   "latin": "Tuba auditiva",
+   "anglais": "Auditory tube",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Trompe auditive",
+   "ta2": "6926",
+   "nature": "sens"
+  },
+  {
+   "id": "glande-parathyroide-inferieure",
+   "nom": "Glande parathyroïde inférieure",
+   "latin": "Glandula parathyreoidea inferior",
+   "anglais": "Inferior parathyroid gland",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Glande parathyroïde inférieure",
+   "ta2": "3872"
+  },
+  {
+   "id": "glande-parathyroide-superieure",
+   "nom": "Glande parathyroïde supérieure",
+   "latin": "Glandula parathyreoidea superior",
+   "anglais": "Superior parathyroid gland",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Glande parathyroïde supérieure",
+   "ta2": "3871"
+  },
+  {
+   "id": "epiglotte",
+   "nom": "Épiglotte",
+   "latin": "Epiglottis",
+   "anglais": "Epiglottis",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Épiglotte",
+   "ta2": "3190"
+  },
+  {
+   "id": "adenohypophyse",
+   "nom": "Adénohypophyse",
+   "latin": "Adenohypophysis",
+   "anglais": "Adenohypophysis",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Adénohypophyse",
+   "ta2": "3855"
+  },
+  {
+   "id": "ampoule-du-canalicule-lacrymal",
+   "nom": "Ampoule du canalicule lacrymal",
+   "latin": "Ampulla canaliculi lacrimalis",
+   "anglais": "Ampulla of lacrimal canaliculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Ampoule du canalicule lacrymal",
+   "ta2": "6856",
+   "nature": "sens"
+  },
+  {
+   "id": "canal-lacrymonasal",
+   "nom": "Canal lacrymonasal",
+   "latin": "Ductus nasolacrimalis",
+   "anglais": "Nasolacrimal duct",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Canal lacrymonasal",
+   "ta2": "6859",
+   "nature": "sens"
+  },
+  {
+   "id": "canal-porotidien",
+   "nom": "Canal porotidien",
+   "latin": "Ductus parotideus",
+   "anglais": "Parotid duct",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Canal porotidien",
+   "ta2": "2805"
+  },
+  {
+   "id": "canal-submandibulaire",
+   "nom": "Canal submandibulaire",
+   "latin": "Ductus submandibularis",
+   "anglais": "Submandibular duct",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Canal submandibulaire",
+   "ta2": "2811"
+  },
+  {
+   "id": "canalicule-lacrymal",
+   "nom": "Canalicule lacrymal",
+   "latin": "Canaliculus lacrimalis",
+   "anglais": "Lacrimal canaliculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Canalicule lacrymal",
+   "ta2": "6855",
+   "nature": "sens"
+  },
+  {
+   "id": "corps-vitre",
+   "nom": "Corps vitré",
+   "latin": "Corpus vitreum",
+   "anglais": "Vitreous body",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Corps vitré",
+   "ta2": "6809",
+   "nature": "sens"
+  },
+  {
+   "id": "cristallin",
+   "nom": "Cristallin",
+   "latin": "Lens",
+   "anglais": "Lens",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Cristallin",
+   "ta2": "6798",
+   "nature": "sens"
+  },
+  {
+   "id": "glande-lacrymale",
+   "nom": "Glande lacrymale",
+   "latin": "Glandula lacrimalis",
+   "anglais": "Lacrimal gland",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Glande lacrymale",
+   "ta2": "6846",
+   "nature": "sens"
+  },
+  {
+   "id": "glande-parotide-accessoire",
+   "nom": "Glande parotide accessoire",
+   "latin": "(Glandula parotidea accessoria)",
+   "anglais": "Accessory parotid gland",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Glande parotide accessoire",
+   "ta2": "2806",
+   "inconstant": true
+  },
+  {
+   "id": "glande-pineale",
+   "nom": "Glande pinéale",
+   "latin": "Glandula pinealis",
+   "anglais": "Pineal gland",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Glande pinéale",
+   "ta2": "3862"
+  },
+  {
+   "id": "glande-sublinguale",
+   "nom": "Glande sublinguale",
+   "latin": "Glandula sublingualis",
+   "anglais": "Sublingual gland",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Glande sublinguale",
+   "ta2": "2807"
+  },
+  {
+   "id": "glande-submandibulaire",
+   "nom": "Glande submandibulaire",
+   "latin": "Glandula submandibularis",
+   "anglais": "Submandibular gland",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Glande submandibulaire",
+   "ta2": "2810"
+  },
+  {
+   "id": "iris",
+   "nom": "Iris",
+   "latin": "Iris",
+   "anglais": "Iris",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Iris",
+   "ta2": "6753",
+   "nature": "sens"
+  },
+  {
+   "id": "langue",
+   "nom": "Langue",
+   "latin": "Lingua",
+   "anglais": "Tongue",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Langue",
+   "ta2": "2820"
+  },
+  {
+   "id": "ligament-suspenseur-du-bulbe",
+   "nom": "Ligament suspenseur du bulbe",
+   "latin": "Ligamentum suspensorium bulbi",
+   "anglais": "Suspensory ligament of eyeball",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Ligament suspenseur du bulbe",
+   "ta2": "6818",
+   "nature": "sens"
+  },
+  {
+   "id": "membrane-tympanique",
+   "nom": "Membrane tympanique",
+   "latin": "Membrana tympanica",
+   "anglais": "Tympanic membrane",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Membrane tympanique",
+   "ta2": "6870",
+   "nature": "sens"
+  },
+  {
+   "id": "neurohypophyse",
+   "nom": "Neurohypophyse",
+   "latin": "Neurohypophysis",
+   "anglais": "Neurohypophysis",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Neurohypophyse",
+   "ta2": "3859"
+  },
+  {
+   "id": "sac-lacrymal",
+   "nom": "Sac lacrymal",
+   "latin": "Saccus lacrimalis",
+   "anglais": "Lacrimal sac",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sac lacrymal",
+   "ta2": "6857",
+   "nature": "sens"
+  },
+  {
+   "id": "tonsille-palatine",
+   "nom": "Tonsille palatine",
+   "latin": "Tonsilla palatina",
+   "anglais": "Palatine tonsil",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tonsille palatine",
+   "ta2": "2853",
+   "nature": "lymphoide"
+  },
+  {
+   "id": "uvule-du-palais",
+   "nom": "Uvule du palais",
+   "latin": "Uvula palatina",
+   "anglais": "Uvula of palate",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Uvule du palais",
+   "ta2": "2781"
+  }
+ ]
+}

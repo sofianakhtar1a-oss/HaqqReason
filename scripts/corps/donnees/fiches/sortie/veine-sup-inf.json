@@ -1,0 +1,1431 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), chap. Veines (pp. 660-673 : membres supérieur et inférieur ; texte intégral, Internet Archive)",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "kenhub-veines-sup": {
+   "titre": "Kenhub — Veins of the upper limb",
+   "url": "https://www.kenhub.com/en/library/anatomy/veins-of-the-upper-limb"
+  },
+  "kenhub-veines-inf": {
+   "titre": "Kenhub — Veins of the lower limb",
+   "url": "https://www.kenhub.com/en/library/anatomy/veins-of-the-lower-limb"
+  },
+  "kenhub-axillaire": {
+   "titre": "Kenhub — Axillary vein",
+   "url": "https://kenhub.com/en/library/anatomy/axillary-vein"
+  },
+  "teachmeanatomy-veines-sup": {
+   "titre": "TeachMeAnatomy — Veins of the upper limb",
+   "url": "https://teachmeanatomy.info/upper-limb/vessels/veins/"
+  },
+  "statpearls-saphenes": {
+   "titre": "StatPearls — Anatomy, Bony Pelvis and Lower Limb: Saphenous Nerve, Artery, and Vein",
+   "url": "https://statpearls.com/point-of-care/28716"
+  },
+  "radiopaedia-grande-saphene": {
+   "titre": "Radiopaedia — Great saphenous vein",
+   "url": "https://radiopaedia.org/articles/great-saphenous-vein"
+  },
+  "radiopaedia-petite-saphene": {
+   "titre": "Radiopaedia — Small saphenous vein",
+   "url": "https://radiopaedia.org/articles/small-saphenous-vein"
+  },
+  "radiopaedia-axillaire": {
+   "titre": "Radiopaedia — Axillary vein",
+   "url": "https://radiopaedia.org/articles/axillary-vein-1"
+  },
+  "radiopaedia-poplitee": {
+   "titre": "Radiopaedia — Popliteal vein",
+   "url": "https://radiopaedia.org/articles/popliteal-vein"
+  },
+  "radiopaedia-femorale": {
+   "titre": "Radiopaedia — Femoral vein",
+   "url": "https://radiopaedia.org/articles/femoral-vein"
+  },
+  "radiopaedia-perforantes": {
+   "titre": "Radiopaedia — Perforating veins of the lower limb",
+   "url": "https://radiopaedia.org/articles/perforating-veins-of-the-lower-limb"
+  },
+  "openstax-circulation": {
+   "titre": "OpenStax, Anatomy and Physiology 2e, chap. 20.5 « Circulatory pathways » (tableaux des veines des membres)",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways"
+  },
+  "elsevier-subscapulaire": {
+   "titre": "Elsevier Anatomy — Subscapular vein",
+   "url": "https://www.elsevier.com/resources/anatomy/cardiovascular-system/veins/subscapular-vein/20730"
+  },
+  "elsevier-circonflexe-scapulaire": {
+   "titre": "Elsevier Anatomy — Circumflex scapular vein",
+   "url": "https://elsevier.com/resources/anatomy/cardiovascular-system/veins/circumflex-scapular-vein-right/24138"
+  },
+  "wikipedia-poplitee": {
+   "titre": "Wikipédia (en) — Popliteal vein",
+   "url": "https://en.wikipedia.org/wiki/Popliteal_vein"
+  },
+  "wikipedia-axillaire": {
+   "titre": "Wikipédia (en) — Axillary vein",
+   "url": "https://en.wikipedia.org/wiki/Axillary_vein"
+  },
+  "wikipedia-femorale": {
+   "titre": "Wikipédia (en) — Femoral vein",
+   "url": "https://en.wikipedia.org/wiki/Femoral_vein"
+  },
+  "wikipedia-perforantes": {
+   "titre": "Wikipédia (en) — Perforator veins",
+   "url": "https://en.wikipedia.org/wiki/Perforator_veins"
+  },
+  "wikipedia-epigastrique": {
+   "titre": "Wikipédia (en) — Superficial epigastric vein",
+   "url": "https://en.wikipedia.org/wiki/Superficial_epigastric_vein"
+  },
+  "wikipedia-arcade-dorsale-pied": {
+   "titre": "Wikipédia (en) — Dorsal venous arch of the foot",
+   "url": "https://en.wikipedia.org/wiki/Dorsal_venous_arch_of_the_foot"
+  }
+ },
+ "fiches": [
+  {
+   "id": "veine-antebrachiale-mediane",
+   "resume": "La petite veine du milieu de la face antérieure de l'avant-bras : elle recueille le réseau veineux de la paume et monte vers le coude.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Réseaux veineux sous-cutanés de la paume et du poignet, sur la face antérieure de l'avant-bras"
+   },
+   "trajet": "Monte sous la peau le long de la face antérieure de l'avant-bras, plutôt du côté ulnaire, et se jette dans la veine basilique ou dans la veine médiane du coude ; elle se divise parfois pour rejoindre les deux",
+   "terminaison": {
+    "veine": "veine-basilique",
+    "texte": "Se jette dans la veine basilique (parfois dans la médiane du coude, ou dans les deux après division en Y)"
+   },
+   "drainage": {
+    "texte": "Peau et tissu sous-cutané de la face antérieure de l'avant-bras ; reçoit une partie du sang palmaire",
+    "structures": []
+   },
+   "rapports": "Sans artère satellite : elle chemine dans la graisse sous-cutanée, au-dessus du fascia antébrachial",
+   "clinique": "Veine d'appoint pour une perfusion à l'avant-bras quand le pli du coude est inutilisable ; sa division en Y est la disposition « en M » du pli du coude",
+   "memo": "Antébrachiale médiane : la veine du milieu de l'avant-bras, qui monte du poignet vers le coude",
+   "variantes": "Environ une personne sur cinq : elle se divise en une branche médiane basilique et une branche médiane céphalique (disposition en M ou en Y)",
+   "sources": [
+    "gray1918",
+    "kenhub-veines-sup",
+    "openstax-circulation"
+   ],
+   "divergences": "Gray la termine dans la basilique ou la médiane du coude, Kenhub et OpenStax dans la basilique ; la version retenue est la basilique"
+  },
+  {
+   "id": "veine-basilique",
+   "resume": "La grande veine superficielle du bord médial du membre supérieur : elle remonte la face interne de l'avant-bras et du bras jusqu'à l'aisselle.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Bord ulnaire (médial) du réseau veineux dorsal de la main"
+   },
+   "trajet": "Monte sur le bord ulnaire de l'avant-bras, passe en avant du coude où elle reçoit la veine médiane du coude, puis longe la face médiale du bras ; vers la mi-bras elle traverse le fascia brachial (hiatus basilique) et accompagne l'artère brachiale",
+   "affluents": [
+    {
+     "veine": "veine-antebrachiale-mediane",
+     "texte": "Veine antébrachiale médiane"
+    },
+    {
+     "veine": "veine-mediane-du-coude",
+     "texte": "Veine médiane du coude"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-axillaire",
+    "texte": "S'unit aux veines brachiales, au bord inférieur du grand rond, pour former la veine axillaire"
+   },
+   "drainage": {
+    "texte": "Face médiale de la main, de l'avant-bras et du bras",
+    "structures": []
+   },
+   "rapports": "Au pli du coude, elle croise l'artère brachiale en étant séparée d'elle par le lacertus fibrosus ; le nerf cutané médial de l'avant-bras la longe",
+   "clinique": "Choisie pour poser un cathéter central par voie périphérique (PICC) car large et rectiligne, ou pour confectionner une fistule artério-veineuse ; en piquant, on garde en tête l'artère et le nerf médian sous elle",
+   "memo": "Basilique côté petit doigt, céphalique côté pouce : la basilique plonge sous le fascia à mi-bras",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-sup",
+    "teachmeanatomy-veines-sup",
+    "openstax-circulation"
+   ],
+   "divergences": "Pour Gray, la basilique se continue directement en veine axillaire au bord inférieur du grand rond ; Kenhub et TeachMeAnatomy font naître l'axillaire de la réunion de la basilique et des veines brachiales ; la seconde formulation est retenue"
+  },
+  {
+   "id": "veine-cephalique",
+   "resume": "La grande veine superficielle du bord latéral du membre supérieur : elle remonte le long du bord du radius, puis dans la gouttière delto-pectorale, jusqu'à l'aisselle.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Bord radial (latéral) du réseau veineux dorsal de la main, à la tabatière anatomique"
+   },
+   "trajet": "Monte sur le bord radial de l'avant-bras, se continue au bras entre le biceps et le brachio-radial, puis dans la gouttière delto-pectorale ; traverse le trigone clavi-pectoral et le fascia clavi-pectoral, et croise l'artère axillaire",
+   "affluents": [
+    {
+     "veine": "veine-mediane-du-coude",
+     "texte": "Veine médiane du coude, qui la relie à la basilique sous le pli du coude"
+    },
+    {
+     "veine": null,
+     "texte": "Veine céphalique accessoire, sous le coude"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-axillaire",
+    "texte": "Se jette dans la veine axillaire, juste sous la clavicule, après avoir percé le fascia clavi-pectoral"
+   },
+   "drainage": {
+    "texte": "Face latérale de la main, de l'avant-bras et du bras ; réseau dorsal du côté du pouce",
+    "structures": []
+   },
+   "rapports": "Dans la gouttière delto-pectorale entre le grand pectoral et le deltoïde ; elle rejoint l'axillaire au-dessus du petit pectoral",
+   "clinique": "Voie d'abord pour la pose d'une sonde de stimulateur cardiaque par dénudation dans la gouttière delto-pectorale, et site habituel de la fistule radio-céphalique du poignet pour l'hémodialyse",
+   "memo": "Céphalique côté pouce, basilique côté petit doigt ; la médiane du coude les relie au pli du coude",
+   "variantes": "Une branche réunit parfois la céphalique à la veine jugulaire externe, devant la clavicule ; elle peut aussi être très grêle ou absente",
+   "sources": [
+    "gray1918",
+    "kenhub-veines-sup",
+    "teachmeanatomy-veines-sup",
+    "openstax-circulation"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-femorale",
+   "resume": "La grande veine profonde de la cuisse : elle suit l'artère fémorale, de l'anneau du grand adducteur jusqu'au ligament inguinal.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "veine-poplitee",
+    "texte": "Continue la veine poplitée à l'hiatus du grand adducteur, au passage de la loge postérieure à la loge antérieure de la cuisse"
+   },
+   "trajet": "Monte avec l'artère fémorale dans le canal des adducteurs, puis dans le trigone fémoral, dans la gaine fémorale ; elle est postéro-latérale à l'artère en bas, derrière elle plus haut, et passe en dedans d'elle à la base du trigone",
+   "affluents": [
+    {
+     "veine": "veine-femorale-profonde",
+     "texte": "Veine fémorale profonde, quelques centimètres sous le ligament inguinal"
+    },
+    {
+     "veine": "veine-grande-saphene",
+     "texte": "Veine grande saphène, au niveau de la crosse"
+    },
+    {
+     "veine": "veines-circonflexes-mediales-de-la-cuisse",
+     "texte": "Veines circonflexes médiale et latérale de la cuisse"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-iliaque-externe",
+    "texte": "Passe sous le ligament inguinal et devient la veine iliaque externe"
+   },
+   "drainage": {
+    "texte": "Membre inférieur : tout le sang des veines profondes, plus celui de la grande saphène",
+    "structures": []
+   },
+   "rapports": "Au pli de l'aine, elle est le plus médial des éléments du paquet : de dehors en dedans, le nerf fémoral, l'artère, la veine, puis le canal fémoral",
+   "clinique": "Siège fréquent des thromboses veineuses profondes (le segment ilio-fémoral expose le plus à l'embolie pulmonaire) et voie de cathéter central au pli de l'aine ; on ne la nomme plus « veine fémorale superficielle »",
+   "memo": "Au pli de l'aine, de dehors en dedans : nerf, artère, veine — la veine est du côté du pubis",
+   "variantes": "Dédoublée sur une partie de son trajet chez certaines personnes",
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "radiopaedia-femorale",
+    "wikipedia-femorale"
+   ],
+   "divergences": "Pour Gray, les circonflexes se jettent dans la fémorale profonde ; Kenhub et Wikipédia les rattachent surtout à la fémorale ; la fémorale est retenue"
+  },
+  {
+   "id": "veine-grande-saphene",
+   "resume": "La plus longue veine du corps : elle monte sous la peau de la face médiale du pied jusqu'à l'aine, où elle se jette dans la veine fémorale.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": "arcade-veineuse-dorsale-du-pied",
+    "texte": "Prolonge la veine marginale médiale du pied, issue de l'arcade veineuse dorsale"
+   },
+   "trajet": "Passe en avant de la malléole médiale, monte sur la face médiale de la jambe avec le nerf saphène, contourne en arrière les condyles médiaux du tibia et du fémur, gagne la face médiale de la cuisse et traverse le hiatus saphène (fosse ovale)",
+   "affluents": [
+    {
+     "veine": "veines-perforantes",
+     "texte": "Veines perforantes, tout le long du trajet"
+    },
+    {
+     "veine": "veine-epigastrique-superficielle",
+     "texte": "Veine épigastrique superficielle"
+    },
+    {
+     "veine": "veines-pudendales-externes",
+     "texte": "Veines pudendales externes"
+    },
+    {
+     "veine": null,
+     "texte": "Veine circonflexe iliaque superficielle"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-femorale",
+    "texte": "Se jette dans la veine fémorale environ 3 cm sous le ligament inguinal, par la crosse, au niveau du hiatus saphène"
+   },
+   "drainage": {
+    "texte": "Peau et tissu sous-cutané de la face médiale de la jambe et de la cuisse, du pied jusqu'à la région inguinale",
+    "structures": []
+   },
+   "rapports": "Dans la graisse sous la peau, entre la peau et le fascia profond, dans un compartiment saphène ; le nerf saphène l'accompagne sous le genou",
+   "clinique": "Siège des varices (valves insuffisantes, reflux depuis la crosse) ; greffon le plus utilisé des pontages coronaires, retourné pour que ses valves ne gênent pas le flux ; on évite de la léser sous le genou à cause du nerf saphène",
+   "memo": "Grande saphène : elle monte devant la malléole médiale, jusqu'au creux de l'aine",
+   "variantes": "Une veine saphène accessoire accompagne parfois la grande saphène à la cuisse ; elle peut aussi être dupliquée à la cuisse chez environ 1 % des personnes",
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "radiopaedia-grande-saphene",
+    "statpearls-saphenes"
+   ],
+   "divergences": "Distance de la crosse au ligament inguinal : environ 3 cm pour Gray, 1 à 3 cm pour Radiopaedia, 2,5 à 3,5 cm sous et en dehors du tubercule pubien pour Kenhub ; l'ordre de grandeur de 3 cm est retenu"
+  },
+  {
+   "id": "veines-du-genou",
+   "resume": "Les petites veines qui entourent le genou : elles accompagnent les artères du genou et se jettent dans la veine poplitée.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Réseau péri-articulaire du genou, face aux artères supérieures et inférieures, médiales et latérales du genou"
+   },
+   "trajet": "Veines satellites des artères du genou : elles entourent l'articulation, en haut et en bas, du côté médial et du côté latéral, et rejoignent la veine poplitée dans le creux poplité",
+   "terminaison": {
+    "veine": "veine-poplitee",
+    "texte": "Se jettent dans la veine poplitée, à laquelle elles correspondent branche par branche"
+   },
+   "drainage": {
+    "texte": "Articulation du genou, capsule, extrémités du fémur et du tibia, patella",
+    "structures": []
+   },
+   "rapports": "Contre la capsule du genou, à l'arrière dans le creux poplité, au contact de l'artère poplitée",
+   "clinique": "Pas de syndrome propre : elles suivent le sort de la veine poplitée (thrombose, compression) et sont de petites veines à coaguler lors des abords chirurgicaux du genou",
+   "memo": "Autant d'artères du genou, autant de veines : elles tournent autour de l'articulation et vont à la poplitée",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "wikipedia-poplitee"
+   ],
+   "divergences": "Les pages consultées ne détaillent pas ces veines ; Gray et Wikipédia disent que les tributaires de la poplitée correspondent aux branches de l'artère poplitée, d'où leur place ici"
+  },
+  {
+   "id": "veine-circonflexe-humerale-anterieure",
+   "resume": "La petite veine qui accompagne l'artère circonflexe antérieure de l'humérus, devant le col chirurgical, et se jette dans la veine axillaire.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Muscles et capsule de la face antérieure de l'épaule, autour du col chirurgical de l'humérus"
+   },
+   "trajet": "Satellite de l'artère circonflexe antérieure de l'humérus : elle passe devant le col chirurgical de l'humérus, sous le coraco-brachial et le court biceps, et se dirige vers l'axillaire",
+   "terminaison": {
+    "veine": "veine-axillaire",
+    "texte": "Se jette dans la veine axillaire, avec la veine circonflexe humérale postérieure"
+   },
+   "drainage": {
+    "texte": "Deltoïde, articulation de l'épaule, extrémité supérieure de l'humérus",
+    "structures": []
+   },
+   "rapports": "Contre le col chirurgical de l'humérus, formant avec la veine circonflexe humérale postérieure un cercle autour du col",
+   "clinique": "Peut être lésée avec l'artère dans les fractures du col chirurgical et les luxations de l'épaule, d'où un hématome ; le nerf axillaire passe tout près",
+   "memo": "Circonflexe antérieure : la petite veine qui entoure le col chirurgical par devant",
+   "variantes": null,
+   "sources": [
+    "kenhub-axillaire",
+    "radiopaedia-axillaire",
+    "wikipedia-axillaire"
+   ],
+   "divergences": "Les pages consultées donnent les veines circonflexes humérales comme tributaires de l'axillaire, sans les décrire séparément ; trajet déduit de l'artère satellite"
+  },
+  {
+   "id": "veine-epigastrique-superficielle",
+   "resume": "La veine sous-cutanée de la paroi abdominale basse : elle descend vers l'aine et se jette dans la grande saphène.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Tissu sous-cutané de la paroi abdominale antérieure, sous l'ombilic"
+   },
+   "trajet": "Descend dans la graisse de la paroi abdominale basse, avec l'artère épigastrique superficielle, franchit le ligament inguinal et rejoint la crosse de la grande saphène près de la fosse ovale",
+   "terminaison": {
+    "veine": "veine-grande-saphene",
+    "texte": "Se jette dans la grande saphène, près de la fosse ovale"
+   },
+   "drainage": {
+    "texte": "Peau et tissu sous-cutané de la paroi abdominale sous l'ombilic",
+    "structures": []
+   },
+   "rapports": "Dans la couche sous-cutanée, au-dessus du fascia abdominal ; elle est reliée vers le haut à la veine thoracique latérale",
+   "clinique": "Fait partie de la voie cave-cave : si la veine cave inférieure est obstruée, le sang passe par elle et la veine thoraco-épigastrique vers la veine axillaire, d'où des veines dilatées sur le flanc",
+   "memo": "Épigastrique superficielle : sous la peau du ventre, elle descend vers la crosse de la saphène",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-epigastrique",
+    "kenhub-veines-inf"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-petite-saphene",
+   "resume": "La veine superficielle de la face postérieure de la jambe : elle naît derrière la malléole latérale et se jette dans la veine poplitée.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": "arcade-veineuse-dorsale-du-pied",
+    "texte": "Prolonge la veine marginale latérale du pied, derrière la malléole latérale"
+   },
+   "trajet": "Passe derrière la malléole latérale, monte le long du bord latéral du tendon calcanéen puis au milieu du mollet, perce le fascia profond dans le creux poplité et gagne la veine poplitée entre les deux chefs du gastrocnémien",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines superficielles de la face postérieure de la jambe"
+    },
+    {
+     "veine": null,
+     "texte": "Branche d'anastomose vers la grande saphène, avant la perforation du fascia"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-poplitee",
+    "texte": "Se jette dans la veine poplitée, dans le creux poplité, 3 à 7,5 cm au-dessus de l'interligne du genou"
+   },
+   "drainage": {
+    "texte": "Peau et tissu sous-cutané du bord latéral du pied et de la face postérieure de la jambe",
+    "structures": []
+   },
+   "rapports": "Elle longe le nerf sural dans le tiers inférieur de la jambe, puis le nerf cutané sural médial dans les deux tiers supérieurs",
+   "clinique": "Siège de varices à la face postérieure de la jambe ; la hauteur de sa jonction avec la poplitée varie, ce que l'échographie vérifie avant une intervention ; le nerf sural peut être lésé lors de son abord",
+   "memo": "Petite saphène : derrière la malléole latérale, elle monte au milieu du mollet",
+   "variantes": "Dédoublée chez environ 3,5 % des personnes ; sa terminaison peut s'écarter de la poplitée (jonction plus haute, rattachement à la grande saphène)",
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "radiopaedia-petite-saphene",
+    "openstax-circulation"
+   ],
+   "divergences": "Gray la termine dans la poplitée entre les deux chefs du gastrocnémien ; Kenhub situe la jonction 3 à 7,5 cm au-dessus du genou, Radiopaedia signale des terminaisons variables ; StatPearls, plus vague, la rattache à la fémorale, ce qui n'est pas retenu"
+  },
+  {
+   "id": "veines-tibiales-anterieures",
+   "resume": "Les deux veines satellites de l'artère tibiale antérieure : elles remontent à la face antérieure de la jambe et forment la poplitée avec les tibiales postérieures.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Prolongent les veines satellites de l'artère dorsale du pied, à la cheville"
+   },
+   "trajet": "Remontent de part et d'autre de l'artère tibiale antérieure sur la face antérieure de la membrane interosseuse, puis traversent l'espace entre le tibia et la fibula, par le haut de la membrane, pour gagner la loge postérieure",
+   "terminaison": {
+    "veine": "veine-poplitee",
+    "texte": "S'unissent aux veines tibiales postérieures, au bord inférieur du poplité, pour former la veine poplitée"
+   },
+   "drainage": {
+    "texte": "Loge antérieure de la jambe et dos du pied (muscles fléchisseurs dorsaux)",
+    "structures": []
+   },
+   "rapports": "Paires, de chaque côté de l'artère tibiale antérieure, sur la membrane interosseuse, avec le nerf fibulaire profond",
+   "clinique": "Concernées par la thrombose veineuse profonde de la jambe (gonflement, douleur à la palpation) ; la pompe musculaire de la jambe les vide à chaque pas",
+   "memo": "Tibiales antérieures : deux veines pour une artère, qui montent sur la membrane interosseuse et passent par son orifice supérieur",
+   "variantes": "Les deux veines sont reliées par de multiples anastomoses transversales",
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "openstax-circulation"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-tibiales-posterieures",
+   "resume": "Les deux veines satellites de l'artère tibiale postérieure : elles montent à l'arrière de la jambe et forment la poplitée avec les tibiales antérieures.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "veines-plantaires-mediales",
+    "texte": "Réunion des veines plantaires médiales et latérales, derrière la malléole médiale"
+   },
+   "trajet": "Montent de part et d'autre de l'artère tibiale postérieure, entre les muscles du mollet, reçoivent les veines fibulaires et les veines des muscles du mollet, puis s'unissent aux tibiales antérieures",
+   "affluents": [
+    {
+     "veine": "veines-plantaires-laterales",
+     "texte": "Veines plantaires latérales"
+    },
+    {
+     "veine": "veines-fibulaires",
+     "texte": "Veines fibulaires"
+    },
+    {
+     "veine": null,
+     "texte": "Veines du soléaire et du gastrocnémien"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-poplitee",
+    "texte": "S'unissent aux veines tibiales antérieures, au bord inférieur du poplité, pour former la veine poplitée"
+   },
+   "drainage": {
+    "texte": "Loge postérieure de la jambe (triceps sural) et plante du pied",
+    "structures": []
+   },
+   "rapports": "Paires, de chaque côté de l'artère tibiale postérieure, derrière la malléole médiale, avec le nerf tibial",
+   "clinique": "Siège habituel de la thrombose veineuse profonde du mollet (douleur, gonflement, rougeur) ; la pompe du mollet les vide à chaque pas, et leurs valves empêchent le reflux",
+   "memo": "Tibiales postérieures : deux veines pour une artère, qui naissent derrière la malléole médiale et montent dans le mollet",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "openstax-circulation"
+   ],
+   "divergences": "Gray et Kenhub font naître les tibiales postérieures des veines plantaires ; Kenhub fait aussi naître les fibulaires des plantaires, alors que Gray les joint aux tibiales postérieures ; version de Gray retenue"
+  },
+  {
+   "id": "arcade-veineuse-palmaire-profonde",
+   "resume": "L'arcade veineuse de la profondeur de la paume : elle accompagne l'arcade artérielle profonde et se jette surtout dans les veines radiales.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Veines métacarpiennes palmaires, par les veines satellites de l'arcade artérielle profonde"
+   },
+   "trajet": "Double (deux veines satellites) l'arcade artérielle palmaire profonde, à la base des métacarpiens, sous les tendons fléchisseurs ; elle reçoit les veines métacarpiennes palmaires",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines métacarpiennes palmaires"
+    }
+   ],
+   "terminaison": {
+    "veine": "veines-radiales",
+    "texte": "Se jette surtout dans les veines radiales ; elle envoie aussi du sang aux veines ulnaires"
+   },
+   "drainage": {
+    "texte": "Profondeur de la paume, muscles interosseux et métacarpiens",
+    "structures": []
+   },
+   "rapports": "En profondeur dans la paume, avec l'arcade artérielle profonde et la branche profonde du nerf ulnaire",
+   "clinique": "Dans une plaie profonde de la paume, elle saigne avec l'arcade artérielle profonde, qu'elle double ; elle n'est pas accessible à la ponction",
+   "memo": "Arcade profonde : elle se jette dans les veines radiales",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-sup",
+    "openstax-circulation"
+   ],
+   "divergences": "Gray fait des veines radiales et ulnaires la suite des deux arcades ; Kenhub fait aboutir l'arcade profonde surtout aux veines radiales ; OpenStax donne le même drainage aux arcades réunies (radiales, ulnaires, médiane antébrachiale) ; version de Kenhub retenue"
+  },
+  {
+   "id": "arcade-veineuse-palmaire-superficielle",
+   "resume": "L'arcade veineuse de la paume : elle accompagne l'arcade artérielle superficielle et recueille les veines digitales palmaires.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Veines digitales palmaires communes, par les veines satellites de l'arcade artérielle superficielle"
+   },
+   "trajet": "Double (deux veines satellites) l'arcade artérielle palmaire superficielle, sous l'aponévrose palmaire ; elle reçoit les veines digitales palmaires et se draine surtout vers le dos de la main par les veines intercapitales",
+   "affluents": [
+    {
+     "veine": "veines-digitales-palmaires",
+     "texte": "Veines digitales palmaires"
+    }
+   ],
+   "terminaison": {
+    "veine": "veines-ulnaires",
+    "texte": "Se continue par les veines ulnaires ; une partie du sang gagne le réseau dorsal et la veine antébrachiale médiane"
+   },
+   "drainage": {
+    "texte": "Peau, aponévrose palmaire et doigts du côté palmaire",
+    "structures": []
+   },
+   "rapports": "Sous l'aponévrose palmaire, avec l'arcade artérielle superficielle",
+   "clinique": "La paume draine peu vers l'avant-bras : en cas d'œdème ou de blessure de la paume, le dos de la main gonfle parce que le sang passe par les veines intercapitales",
+   "memo": "Arcade superficielle : les veines des doigts s'y jettent, puis le sang file vers les veines ulnaires",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-sup",
+    "openstax-circulation"
+   ],
+   "divergences": "Gray rattache l'arcade superficielle aux veines ulnaires ; Kenhub la fait surtout se drainer vers le réseau dorsal par les intercapitales, un peu vers la veine antébrachiale médiane ; OpenStax cite radiales, ulnaires et médiane antébrachiale ; version de Gray retenue pour la terminaison"
+  },
+  {
+   "id": "veines-intercapitales-du-pied",
+   "resume": "Les veines qui traversent les espaces entre les têtes des métatarsiens : elles relient les veines plantaires aux veines dorsales du pied.",
+   "plan": "groupe",
+   "origine": {
+    "veine": null,
+    "texte": "Veines digitales plantaires et plexus de la plante, au niveau des têtes des métatarsiens"
+   },
+   "trajet": "Traversent les espaces entre les têtes des métatarsiens pour relier le système plantaire au système dorsal ; le sang va de la plante vers le dos du pied",
+   "terminaison": {
+    "veine": "veines-digitales-dorsales-du-pied",
+    "texte": "Se jettent dans les veines digitales dorsales, dans les commissures des orteils, et par elles dans l'arcade dorsale"
+   },
+   "drainage": {
+    "texte": "Plante et orteils : le sang de la plante gagne le dos du pied",
+    "structures": []
+   },
+   "rapports": "Dans les espaces entre les têtes des métatarsiens, entre la plante et le dos du pied",
+   "clinique": "Elles font partie de la pompe veineuse du pied : l'appui plantaire chasse le sang vers le dos du pied puis vers la jambe",
+   "memo": "Intercapitales : elles passent entre les têtes, de la plante vers le dos",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "wikipedia-arcade-dorsale-pied"
+   ],
+   "divergences": "Les pages consultées ne détaillent guère ces veines ; Gray les cite comme communications entre veines plantaires et dorsales, ce qui fonde leur terminaison dorsale"
+  },
+  {
+   "id": "veines-radiales",
+   "resume": "Les deux veines satellites de l'artère radiale : elles montent le long du radius jusqu'au pli du coude pour former les veines brachiales avec les ulnaires.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "arcade-veineuse-palmaire-profonde",
+    "texte": "Prolongent l'arcade veineuse palmaire profonde ; elles reçoivent les veines métacarpiennes dorsales"
+   },
+   "trajet": "Accompagnent l'artère radiale sur le bord latéral de l'avant-bras, sous le brachio-radial, en s'anastomosant entre elles ; elles reçoivent des veines profondes de l'avant-bras",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines métacarpiennes dorsales"
+    },
+    {
+     "veine": null,
+     "texte": "Veines profondes de l'avant-bras"
+    }
+   ],
+   "terminaison": {
+    "veine": "veines-brachiales",
+    "texte": "S'unissent aux veines ulnaires, dans la fosse du coude, pour former les veines brachiales"
+   },
+   "drainage": {
+    "texte": "Loge latérale de l'avant-bras et du poignet",
+    "structures": []
+   },
+   "rapports": "De chaque côté de l'artère radiale, sous le brachio-radial, jusqu'au pli du coude",
+   "clinique": "Peu accessibles à la ponction ; très anastomosées entre elles et avec les ulnaires, elles gardent le retour profond si une voie est interrompue ; elles saignent avec l'artère dans une plaie profonde du bord radial",
+   "memo": "Radiales : deux veines autour de l'artère radiale",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-sup",
+    "openstax-circulation"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-ulnaires",
+   "resume": "Les deux veines satellites de l'artère ulnaire : elles montent sur le bord médial de l'avant-bras et forment les veines brachiales avec les radiales.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "arcade-veineuse-palmaire-superficielle",
+    "texte": "Prolongent l'arcade veineuse palmaire superficielle ; elles reçoivent des veines de l'arcade profonde"
+   },
+   "trajet": "Accompagnent l'artère ulnaire sous les fléchisseurs, reçoivent les veines interosseuses antérieure et postérieure, communiquent avec les veines superficielles au poignet et envoient, près du coude, une branche à la veine médiane du coude",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines interosseuses antérieure et postérieure"
+    },
+    {
+     "veine": null,
+     "texte": "Veines profondes de l'avant-bras"
+    }
+   ],
+   "terminaison": {
+    "veine": "veines-brachiales",
+    "texte": "S'unissent aux veines radiales, dans la fosse du coude, pour former les veines brachiales"
+   },
+   "drainage": {
+    "texte": "Loge médiale et antérieure de l'avant-bras et du poignet",
+    "structures": []
+   },
+   "rapports": "De chaque côté de l'artère ulnaire, avec le nerf ulnaire dans la partie basse de l'avant-bras",
+   "clinique": "Elles voyagent avec l'artère et le nerf ulnaires : une plaie du bord médial du poignet les lèse ensemble ; par une branche profonde, elles se relient à la veine médiane du coude",
+   "memo": "Ulnaires : deux veines qui accompagnent l'artère ulnaire et le nerf ulnaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-sup",
+    "openstax-circulation"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veine-mediane-du-coude",
+   "resume": "La veine qui relie la céphalique à la basilique au pli du coude : le site classique de la prise de sang.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": "veine-cephalique",
+    "texte": "Naît de la veine céphalique, sous le pli du coude"
+   },
+   "trajet": "Monte obliquement de dehors en dedans, devant le coude, au-dessus du lacertus fibrosus, et se jette dans la basilique",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Branche profonde venue des veines ulnaires"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-basilique",
+    "texte": "Se jette dans la veine basilique, au-dessus du pli du coude"
+   },
+   "drainage": {
+    "texte": "Anastomose entre les veines superficielles latérales et médiales du membre",
+    "structures": []
+   },
+   "rapports": "Elle repose sur le lacertus fibrosus, qui la sépare de l'artère brachiale et du nerf médian ; des perforantes la maintiennent contre cette aponévrose",
+   "clinique": "Site classique des ponctions veineuses et des perfusions : veine bien visible et maintenue en place ; le lacertus fibrosus protège l'artère brachiale et le nerf médian, mais l'injection de produits irritants garde un risque intra-artériel",
+   "memo": "Médiane du coude : le pont entre céphalique et basilique, juste sur le lacertus fibrosus qui protège l'artère",
+   "variantes": "Chez environ une personne sur cinq, elle prend la forme d'un M avec la veine médiane basilique et la veine médiane céphalique",
+   "sources": [
+    "gray1918",
+    "kenhub-veines-sup",
+    "teachmeanatomy-veines-sup",
+    "openstax-circulation"
+   ],
+   "divergences": "Gray la nomme aussi veine médiane basilique ; dans la disposition en M, la médiane du coude se divise en médiane basilique et médiane céphalique"
+  },
+  {
+   "id": "veines-brachiales",
+   "resume": "Les deux veines satellites de l'artère brachiale : elles montent dans le bras et forment la veine axillaire avec la basilique.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "veines-radiales",
+    "texte": "Réunion des veines radiales et ulnaires, dans la fosse du coude"
+   },
+   "trajet": "Montent de part et d'autre de l'artère brachiale, dans le sillon bicipital médial, avec le nerf médian, reliées entre elles par des branches transversales ; reçoivent les veines des branches de l'artère brachiale",
+   "affluents": [
+    {
+     "veine": "veines-radiales",
+     "texte": "Veines radiales"
+    },
+    {
+     "veine": "veines-ulnaires",
+     "texte": "Veines ulnaires"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-axillaire",
+    "texte": "S'unissent à la veine basilique, au bord inférieur du grand rond, pour former la veine axillaire"
+   },
+   "drainage": {
+    "texte": "Bras (muscles fléchisseurs et extenseurs) et avant-bras par les veines radiales et ulnaires",
+    "structures": []
+   },
+   "rapports": "De chaque côté de l'artère brachiale, avec le nerf médian ; la veine médiale rejoint souvent la basilique",
+   "clinique": "Siège de thromboses veineuses profondes du membre supérieur, souvent liées à un cathéter ; leur pulsation transmise par l'artère aide le retour du sang",
+   "memo": "Brachiales : deux veines pour une artère, qui rejoignent la basilique à l'aisselle",
+   "variantes": "Les deux veines sont reliées par des anastomoses transversales ; la veine médiale se jette parfois dans la basilique plus haut",
+   "sources": [
+    "gray1918",
+    "kenhub-veines-sup",
+    "teachmeanatomy-veines-sup",
+    "openstax-circulation"
+   ],
+   "divergences": "Gray joint les brachiales à l'axillaire près du bord inférieur du subscapulaire ; Kenhub et TeachMeAnatomy les unissent à la basilique au bord inférieur du grand rond ; version de Kenhub retenue"
+  },
+  {
+   "id": "veine-femorale-profonde",
+   "resume": "La grosse veine de la profondeur de la cuisse : elle recueille les muscles de la cuisse et se jette dans la veine fémorale.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Veines perforantes, qui correspondent aux branches perforantes de l'artère fémorale profonde"
+   },
+   "trajet": "Monte en dedans de la cuisse avec l'artère fémorale profonde, qu'elle recouvre ; elle reçoit les veines perforantes et les veines circonflexes fémorales, et rejoint la veine fémorale",
+   "affluents": [
+    {
+     "veine": "veines-perforantes",
+     "texte": "Veines perforantes"
+    },
+    {
+     "veine": "veines-circonflexes-mediales-de-la-cuisse",
+     "texte": "Veines circonflexes fémorales médiale et latérale, selon Gray"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-femorale",
+    "texte": "Se jette dans la veine fémorale, quelques centimètres sous le ligament inguinal (environ 4 cm)"
+   },
+   "drainage": {
+    "texte": "Muscles de la cuisse (adducteurs, ischio-jambiers, quadriceps) et fémur",
+    "structures": []
+   },
+   "rapports": "En avant de l'artère fémorale profonde, qu'elle accompagne dans la profondeur de la cuisse",
+   "clinique": "Par ses affluents perforants, elle relie la veine poplitée en bas et la veine glutéale inférieure en haut : une voie collatérale possible si la veine fémorale est obstruée",
+   "memo": "Fémorale profonde : la veine des muscles de la cuisse, qui rejoint la fémorale sous l'aine",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "wikipedia-femorale"
+   ],
+   "divergences": "Distance sous le ligament inguinal : 4 cm pour Gray, 4 à 12 cm pour Kenhub ; les circonflexes se jettent dans la fémorale profonde pour Gray, dans la fémorale pour Kenhub (parfois dans la profonde)"
+  },
+  {
+   "id": "veine-poplitee",
+   "resume": "La veine du creux poplité : elle naît de la réunion des veines tibiales et se continue en veine fémorale.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "veines-tibiales-posterieures",
+    "texte": "Réunion des veines tibiales antérieures et postérieures, au bord inférieur du poplité"
+   },
+   "trajet": "Monte dans le creux poplité avec l'artère poplitée, change de position par rapport à elle (en dedans en bas, en arrière entre les chefs du gastrocnémien, sur son côté latéral au-dessus du genou) et traverse l'hiatus du grand adducteur",
+   "affluents": [
+    {
+     "veine": "veines-tibiales-anterieures",
+     "texte": "Veines tibiales antérieures"
+    },
+    {
+     "veine": "veines-fibulaires",
+     "texte": "Veines fibulaires"
+    },
+    {
+     "veine": "veine-petite-saphene",
+     "texte": "Veine petite saphène"
+    },
+    {
+     "veine": "veines-du-genou",
+     "texte": "Veines du genou"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-femorale",
+    "texte": "Traverse l'hiatus du grand adducteur et devient la veine fémorale"
+   },
+   "drainage": {
+    "texte": "Jambe, genou et pied",
+    "structures": []
+   },
+   "rapports": "Entre l'artère poplitée, en avant, et le nerf tibial, en arrière",
+   "clinique": "Siège fréquent de thrombose veineuse profonde ; elle peut être comprimée par le gastrocnémien (enclavement poplité : gonflement, douleur, ulcères veineux), ce que l'écho-Doppler ou l'IRM explorent",
+   "memo": "Poplitée : le carrefour des veines de la jambe, derrière le genou, entre artère et nerf tibial",
+   "variantes": "Dédoublée chez jusqu'à 35 % des personnes selon une source, rare selon une autre ; sa formation peut se faire plus haut",
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "radiopaedia-poplitee",
+    "wikipedia-poplitee"
+   ],
+   "divergences": "Les trois veines de la jambe la forment pour Kenhub et Radiopaedia ; pour Gray, la poplitée naît des tibiales antérieure et postérieure, les fibulaires joignant la tibiale postérieure ; fréquence des doublements divergente (35 % pour Wikipédia, rare pour Radiopaedia)"
+  },
+  {
+   "id": "veines-perforantes",
+   "resume": "Les veines courtes qui traversent le fascia profond du membre inférieur : elles font passer le sang des veines superficielles vers les veines profondes.",
+   "plan": "groupe",
+   "origine": {
+    "veine": null,
+    "texte": "Veines superficielles du membre inférieur (grande et petite saphènes et leurs branches)"
+   },
+   "trajet": "Traversent le fascia profond de la cuisse, du genou, de la jambe, de la cheville et du pied ; plus nombreuses à la jambe qu'à la cuisse ; leurs valves ne laissent passer le sang que de la superficie vers la profondeur",
+   "terminaison": {
+    "veine": null,
+    "texte": "Se jettent dans les veines profondes du membre (fémorale, poplitée, tibiales, fibulaires), selon le niveau"
+   },
+   "drainage": {
+    "texte": "Peau et tissu sous-cutané du membre inférieur, dont le sang est repris par les veines profondes",
+    "structures": []
+   },
+   "rapports": "Reconnues par leur siège : médiales, latérales, antérieures ou postérieures, à la cuisse, au genou, à la jambe, à la cheville, au pied et à la région glutéale ; anciens noms de Hunter et Dodd (cuisse), Boyd (genou), Cockett (jambe)",
+   "clinique": "Quand leurs valves lâchent, la contraction du mollet repousse le sang du profond vers le superficiel : varices, récidive après chirurgie, ulcère veineux de la jambe ; elles se repèrent à l'échographie",
+   "memo": "Perforantes : à sens unique, de la superficie vers la profondeur, et leurs valves en gardent la porte",
+   "variantes": "Leur nombre et leur siège varient d'une personne à l'autre ; elles se rassemblent surtout à la jambe",
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "radiopaedia-perforantes",
+    "wikipedia-perforantes"
+   ],
+   "divergences": "Aucune des références ne donne de liste complète : la nomenclature par groupes topographiques (cuisse, genou, jambe, cheville, pied) remplace les noms propres anciens"
+  },
+  {
+   "id": "veines-pudendales-externes",
+   "resume": "Les petites veines de la région pubienne et du pli de l'aine : elles se jettent dans la grande saphène, près de sa terminaison.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Peau et tissu sous-cutané de la région pubienne et des organes génitaux externes"
+   },
+   "trajet": "Les veines pudendales externes, superficielles et profondes, gagnent le pli de l'aine en cheminant sous la peau et rejoignent la grande saphène près de la fosse ovale",
+   "terminaison": {
+    "veine": "veine-grande-saphene",
+    "texte": "Se jettent dans la veine grande saphène, près de la fosse ovale"
+   },
+   "drainage": {
+    "texte": "Peau de la région pubienne et de la partie haute de la cuisse",
+    "structures": []
+   },
+   "rapports": "Dans la graisse sous-cutanée du pli de l'aine, avec l'artère pudendale externe",
+   "clinique": "Elles font partie des tributaires de la crosse, avec l'épigastrique superficielle et la circonflexe iliaque superficielle : on les repère et on les lie dans la chirurgie de la crosse",
+   "memo": "Pudendales externes : de petits affluents de la crosse, comme l'épigastrique et la circonflexe iliaque superficielles",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "wikipedia-epigastrique"
+   ],
+   "divergences": "Gray ne cite que la veine pudendale externe superficielle ; Kenhub compte aussi une veine pudendale externe profonde parmi les affluents de la grande saphène"
+  },
+  {
+   "id": "veine-axillaire",
+   "resume": "La veine de l'aisselle : elle prolonge la basilique et les brachiales et devient la veine sous-clavière au bord de la première côte.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "veine-basilique",
+    "texte": "Naît au bord inférieur du grand rond, par la réunion de la basilique et des veines brachiales"
+   },
+   "trajet": "Monte dans l'aisselle en dedans de l'artère axillaire, qu'elle recouvre en partie, au sein du paquet vasculo-nerveux de l'aisselle, jusqu'au bord latéral de la première côte",
+   "affluents": [
+    {
+     "veine": "veines-brachiales",
+     "texte": "Veines brachiales"
+    },
+    {
+     "veine": "veine-cephalique",
+     "texte": "Veine céphalique, au-dessus du petit pectoral"
+    },
+    {
+     "veine": "veine-subscapulaire",
+     "texte": "Veine subscapulaire"
+    },
+    {
+     "veine": "veine-circonflexe-humerale-anterieure",
+     "texte": "Veines circonflexes humérales antérieure et postérieure"
+    },
+    {
+     "veine": "veine-thoracique-laterale",
+     "texte": "Veine thoracique latérale"
+    },
+    {
+     "veine": null,
+     "texte": "Veine thoraco-acromiale"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-sous-claviere",
+    "texte": "Devient la veine sous-clavière au bord latéral de la première côte"
+   },
+   "drainage": {
+    "texte": "Tout le membre supérieur, l'aisselle et la paroi latérale du thorax",
+    "structures": []
+   },
+   "rapports": "En dedans de l'artère axillaire, avec le faisceau médial du plexus brachial et les nerfs pectoraux, ulnaire et cutané médial du bras",
+   "clinique": "Dédoublée chez environ 14 % des personnes : la veine inférieure peut être blessée lors du curage axillaire pour cancer du sein ; elle peut aussi être comprimée au défilé thoraco-brachial, avec thrombose de l'effort",
+   "memo": "Axillaire : médiale à l'artère, et elle devient sous-clavière au bord de la première côte",
+   "variantes": "Double dans environ 14 % des cas",
+   "sources": [
+    "gray1918",
+    "kenhub-veines-sup",
+    "kenhub-axillaire",
+    "radiopaedia-axillaire",
+    "wikipedia-axillaire"
+   ],
+   "divergences": "Pour Gray, elle prolonge la basilique ; Kenhub, Radiopaedia et Wikipédia la font naître de la basilique et des brachiales ; la céphalique s'y jette près du terme, au-dessus du petit pectoral"
+  },
+  {
+   "id": "veine-circonflexe-de-la-scapula",
+   "resume": "La petite veine qui contourne le bord latéral de la scapula : elle se réunit à la veine thoraco-dorsale pour former la veine subscapulaire.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Fosse infra-épineuse, par la réunion de petites veines"
+   },
+   "trajet": "Naît dans la fosse infra-épineuse, passe par l'espace triangulaire omo-tricipital avec l'artère circonflexe de la scapula, contourne le bord latéral de la scapula et rejoint la veine thoraco-dorsale pour former la veine subscapulaire",
+   "terminaison": {
+    "veine": "veine-subscapulaire",
+    "texte": "Se réunit à la veine thoraco-dorsale pour former la veine subscapulaire"
+   },
+   "drainage": {
+    "texte": "Fosse infra-épineuse et région du bord latéral de la scapula",
+    "structures": []
+   },
+   "rapports": "Avec l'artère circonflexe de la scapula, dans l'espace triangulaire ; la veine subscapulaire se jette ensuite dans l'axillaire",
+   "clinique": "Elle intervient dans les lambeaux scapulaires, dont le pédicule est formé de l'artère et des veines circonflexes de la scapula",
+   "memo": "Circonflexe de la scapula : elle contourne le bord latéral de la scapula puis s'unit à la thoraco-dorsale",
+   "variantes": null,
+   "sources": [
+    "elsevier-circonflexe-scapulaire",
+    "elsevier-subscapulaire",
+    "openstax-circulation"
+   ],
+   "divergences": "Gray ne décrit pas cette veine ; la formation de la subscapulaire par la circonflexe de la scapula et la thoraco-dorsale vient d'Elsevier Anatomy, et la subscapulaire se jette dans l'axillaire pour OpenStax ; le passage par l'espace triangulaire est déduit de l'artère"
+  },
+  {
+   "id": "veine-circonflexe-humerale-posterieure",
+   "resume": "La petite veine qui accompagne l'artère circonflexe postérieure de l'humérus, derrière le col chirurgical, et se jette dans la veine axillaire.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Deltoïde, petit rond et articulation de l'épaule, en arrière du col chirurgical de l'humérus"
+   },
+   "trajet": "Satellite de l'artère circonflexe postérieure de l'humérus : elle traverse l'espace axillaire latéral (quadrilatère huméro-tricipital) avec le nerf axillaire et contourne l'humérus par l'arrière",
+   "terminaison": {
+    "veine": "veine-axillaire",
+    "texte": "Se jette dans la veine axillaire, avec la veine circonflexe humérale antérieure"
+   },
+   "drainage": {
+    "texte": "Deltoïde, petit rond, articulation de l'épaule",
+    "structures": []
+   },
+   "rapports": "Dans l'espace axillaire latéral, avec l'artère circonflexe humérale postérieure et le nerf axillaire, entre le petit rond et le grand rond",
+   "clinique": "Une luxation de l'épaule ou une fracture du col chirurgical peut atteindre ensemble la veine, l'artère et le nerf axillaire : hématome, déficit du deltoïde",
+   "memo": "Circonflexe postérieure : la veine du quadrilatère, avec l'artère et le nerf axillaire",
+   "variantes": null,
+   "sources": [
+    "kenhub-axillaire",
+    "radiopaedia-axillaire",
+    "wikipedia-axillaire"
+   ],
+   "divergences": "Les pages consultées donnent les veines circonflexes humérales comme tributaires de l'axillaire sans les décrire séparément ; trajet déduit de l'artère satellite"
+  },
+  {
+   "id": "veines-circonflexes-laterales-de-la-cuisse",
+   "resume": "Les veines qui accompagnent l'artère circonflexe latérale de la cuisse : elles drainent le quadriceps et se jettent dans la fémorale ou la fémorale profonde.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Veines des muscles de la face antérieure et latérale de la cuisse, satellites de l'artère circonflexe fémorale latérale"
+   },
+   "trajet": "Accompagnent les branches ascendante, descendante et transverse de l'artère circonflexe latérale, sous le droit fémoral et le sartorius, et rejoignent la veine fémorale près de la fémorale profonde",
+   "terminaison": {
+    "veine": "veine-femorale",
+    "texte": "Se jettent dans la veine fémorale, ou dans la fémorale profonde selon les personnes"
+   },
+   "drainage": {
+    "texte": "Quadriceps, tenseur du fascia lata et fémur, en dehors de la cuisse",
+    "structures": []
+   },
+   "rapports": "Sous le sartorius et le droit fémoral, avec l'artère circonflexe fémorale latérale et des branches du nerf fémoral",
+   "clinique": "Elles croisent la voie d'abord antérieure de la hanche et de la cuisse : le chirurgien les coagule ou les lie à ce temps de l'intervention",
+   "memo": "Circonflexes latérales : les veines du quadriceps, sous le sartorius et le droit fémoral",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "wikipedia-femorale"
+   ],
+   "divergences": "Gray les rattache à la fémorale profonde ; Kenhub et Wikipédia surtout à la fémorale (parfois à la profonde) ; la fémorale est retenue"
+  },
+  {
+   "id": "veines-circonflexes-mediales-de-la-cuisse",
+   "resume": "Les veines qui accompagnent l'artère circonflexe médiale de la cuisse : elles contournent le col du fémur et se jettent dans la fémorale ou la fémorale profonde.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Veines des adducteurs, du col du fémur et de l'articulation de la hanche, satellites de l'artère circonflexe fémorale médiale"
+   },
+   "trajet": "Passent entre le pectiné et le psoas-iliaque, contournent le col du fémur par l'arrière et rejoignent la veine fémorale ; elles s'anastomosent avec la veine glutéale inférieure",
+   "terminaison": {
+    "veine": "veine-femorale",
+    "texte": "Se jettent dans la veine fémorale, ou dans la fémorale profonde selon les personnes"
+   },
+   "drainage": {
+    "texte": "Adducteurs, col du fémur, articulation de la hanche",
+    "structures": []
+   },
+   "rapports": "Contre le col du fémur, entre le pectiné et le psoas-iliaque, avec l'artère circonflexe fémorale médiale",
+   "clinique": "Leur artère satellite est la principale nourricière de la tête du fémur : dans une fracture du col, l'atteinte de ce pédicule fait craindre une nécrose de la tête",
+   "memo": "Circonflexes médiales : elles contournent le col du fémur et relient la cuisse aux veines glutéales",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "wikipedia-femorale"
+   ],
+   "divergences": "Gray les rattache à la fémorale profonde ; Kenhub et Wikipédia surtout à la fémorale ; la fémorale est retenue"
+  },
+  {
+   "id": "veines-fibulaires",
+   "resume": "Les deux veines satellites de l'artère fibulaire : elles montent le long de la fibula et rejoignent les veines tibiales postérieures.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Muscles latéraux et postérieurs de la jambe, face à l'artère fibulaire"
+   },
+   "trajet": "Accompagnent l'artère fibulaire dans la loge postérieure profonde, contre la fibula, reçoivent des veines du soléaire et des veines superficielles, puis rejoignent les veines tibiales postérieures",
+   "affluents": [
+    {
+     "veine": null,
+     "texte": "Veines du soléaire"
+    },
+    {
+     "veine": null,
+     "texte": "Veines superficielles"
+    }
+   ],
+   "terminaison": {
+    "veine": "veines-tibiales-posterieures",
+    "texte": "Se jettent dans les veines tibiales postérieures"
+   },
+   "drainage": {
+    "texte": "Muscles fibulaires et soléaire, face latérale et postérieure de la jambe",
+    "structures": []
+   },
+   "rapports": "Paires, de chaque côté de l'artère fibulaire, contre la fibula, près du fléchisseur long de l'hallux",
+   "clinique": "Avec les veines du soléaire, elles font partie des veines du mollet où naissent souvent les thromboses veineuses profondes de la jambe",
+   "memo": "Fibulaires : deux veines pour une artère, contre la fibula, qui rejoignent les tibiales postérieures",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "radiopaedia-poplitee"
+   ],
+   "divergences": "Gray joint les fibulaires aux tibiales postérieures ; Radiopaedia et Kenhub comptent trois veines qui forment la poplitée ; Kenhub les fait naître des veines plantaires ; version de Gray retenue"
+  },
+  {
+   "id": "reseau-veineux-dorsal-de-la-main",
+   "resume": "Le réseau de veines sous la peau du dos de la main : il est l'origine des veines céphalique et basilique.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Veines digitales dorsales, puis métacarpiennes dorsales ; le sang palmaire lui parvient par les intercapitales"
+   },
+   "trajet": "Étalé sous la peau du dos de la main, il reçoit les veines métacarpiennes dorsales et le sang de la paume par les veines intercapitales ; son bord radial donne la céphalique, son bord ulnaire la basilique",
+   "affluents": [
+    {
+     "veine": "veines-digitales-dorsales-de-la-main",
+     "texte": "Veines digitales dorsales"
+    },
+    {
+     "veine": null,
+     "texte": "Veines métacarpiennes dorsales"
+    },
+    {
+     "veine": null,
+     "texte": "Veines intercapitales de la paume"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-cephalique",
+    "texte": "Se continue, du côté radial par la veine céphalique, du côté ulnaire par la veine basilique"
+   },
+   "drainage": {
+    "texte": "Dos de la main et des doigts, et une grande part du sang de la paume",
+    "structures": []
+   },
+   "rapports": "Sous la peau du dos de la main, au-dessus des tendons extenseurs ; le sang de la paume lui parvient par les veines intercapitales",
+   "clinique": "Lieu usuel de pose d'un cathéter veineux de petit calibre ; une main tenue basse et un garrot font saillir ses veines",
+   "memo": "Réseau dorsal : il naît des doigts et donne céphalique et basilique",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-sup",
+    "teachmeanatomy-veines-sup",
+    "openstax-circulation"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-digitales-dorsales-de-la-main",
+   "resume": "Les veines qui longent les côtés des doigts, sur le dos : elles forment les veines métacarpiennes dorsales.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Face dorsale et côtés des doigts"
+   },
+   "trajet": "Longent les bords des doigts et sont reliées par de petites branches obliques ; celles de deux doigts voisins se réunissent en trois veines métacarpiennes dorsales qui gagnent le réseau veineux dorsal de la main",
+   "terminaison": {
+    "veine": "reseau-veineux-dorsal-de-la-main",
+    "texte": "Se jettent dans le réseau veineux dorsal de la main, par les veines métacarpiennes dorsales"
+   },
+   "drainage": {
+    "texte": "Dos et côtés des doigts",
+    "structures": []
+   },
+   "rapports": "Sous la peau du dos des doigts, de part et d'autre de chaque doigt ; elles communiquent avec les veines palmaires par les veines intercapitales",
+   "clinique": "Sans geste propre : elles drainent doigts et paume vers le dos de la main, d'où le gonflement du dos du doigt et de la main dans un œdème ou une infection de la paume",
+   "memo": "Digitales dorsales : sur le dos des doigts, deux par doigt, qui montent au réseau dorsal",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-sup",
+    "openstax-circulation"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-digitales-palmaires",
+   "resume": "Les veines de la face palmaire des doigts : elles drainent la pulpe et se jettent dans l'arcade veineuse palmaire superficielle.",
+   "plan": "groupe",
+   "origine": {
+    "veine": null,
+    "texte": "Plexus de la pulpe et de la face palmaire des doigts"
+   },
+   "trajet": "Longent les côtés de la face palmaire de chaque doigt, reçoivent des branches de la pulpe, puis gagnent la paume ; une partie du sang passe vers le dos des doigts par les veines intercapitales",
+   "terminaison": {
+    "veine": "arcade-veineuse-palmaire-superficielle",
+    "texte": "Se jettent dans l'arcade veineuse palmaire superficielle ; une partie passe au réseau dorsal par les veines intercapitales"
+   },
+   "drainage": {
+    "texte": "Face palmaire des doigts",
+    "structures": []
+   },
+   "rapports": "Sur les côtés de la face palmaire des doigts, du côté des gaines des fléchisseurs",
+   "clinique": "Sans pathologie propre ; une plaie palmaire du doigt les lèse avec l'artère et le nerf digitaux",
+   "memo": "Digitales palmaires : elles vont vers l'arcade superficielle ou, par les intercapitales, vers le dos",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-sup",
+    "openstax-circulation"
+   ],
+   "divergences": "Gray les donne tributaires des arcades palmaires, Kenhub de l'arcade superficielle seule, OpenStax du réseau palmaire en général ; version de Kenhub retenue"
+  },
+  {
+   "id": "arcade-veineuse-dorsale-du-pied",
+   "resume": "L'arcade de veines sous la peau du dos du pied : elle recueille le sang des orteils et donne les veines grande et petite saphènes.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Réunion des veines métatarsiennes dorsales, au niveau de l'extrémité distale des métatarsiens"
+   },
+   "trajet": "Se tend sous la peau du dos du pied, en travers des métatarsiens, reçoit les veines métatarsiennes dorsales et des branches de la plante, puis se continue par les veines marginales médiale et latérale",
+   "affluents": [
+    {
+     "veine": "veines-metatarsiennes-dorsales",
+     "texte": "Veines métatarsiennes dorsales"
+    },
+    {
+     "veine": "veines-digitales-dorsales-du-pied",
+     "texte": "Veines digitales dorsales"
+    }
+   ],
+   "terminaison": {
+    "veine": "veine-grande-saphene",
+    "texte": "Se continue, du côté médial par la veine marginale médiale puis la grande saphène, du côté latéral par la veine marginale latérale puis la petite saphène"
+   },
+   "drainage": {
+    "texte": "Dos du pied et orteils, et une part du sang de la plante",
+    "structures": []
+   },
+   "rapports": "Sous la peau du dos du pied, à mi-hauteur des métatarsiens, visible et palpable à pied nu",
+   "clinique": "Veine facile à voir et à piquer chez l'adulte pour poser un cathéter court quand les veines des bras manquent ; son sang est repris par les saphènes",
+   "memo": "Arcade dorsale : elle est la source des deux saphènes, médiale et latérale",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "wikipedia-arcade-dorsale-pied",
+    "statpearls-saphenes"
+   ],
+   "divergences": "Selon OpenStax, l'arcade se jette dans les veines tibiales ; Gray, Kenhub, StatPearls et Wikipédia la prolongent par les saphènes, version retenue"
+  },
+  {
+   "id": "arcade-veineuse-plantaire",
+   "resume": "L'arcade veineuse profonde de la plante du pied : elle accompagne l'arcade artérielle plantaire et se vide dans les veines plantaires.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Réunion des quatre veines métatarsiennes plantaires, à la base des métatarsiens"
+   },
+   "trajet": "Double l'arcade artérielle plantaire, en profondeur dans la plante, à la base des métatarsiens ; elle reçoit les veines métatarsiennes plantaires et communique avec le dos du pied par des perforantes",
+   "affluents": [
+    {
+     "veine": "veines-metatarsiennes-plantaires",
+     "texte": "Veines métatarsiennes plantaires"
+    }
+   ],
+   "terminaison": {
+    "veine": "veines-plantaires-laterales",
+    "texte": "Se jette dans les veines plantaires latérales et médiales"
+   },
+   "drainage": {
+    "texte": "Profondeur de la plante, muscles interosseux et métatarsiens",
+    "structures": []
+   },
+   "rapports": "En profondeur dans la plante, avec l'arcade artérielle plantaire profonde et la branche profonde du nerf plantaire latéral",
+   "clinique": "Sans pathologie propre ; ses veines saignent avec l'artère dans une plaie profonde de la plante (clou, éclat de verre)",
+   "memo": "Arcade plantaire : les veines métatarsiennes s'y réunissent, puis les veines plantaires la vident",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "openstax-circulation"
+   ],
+   "divergences": "OpenStax décrit les veines plantaires qui se jettent dans l'arcade plantaire (sens inverse) ; Gray et Kenhub font naître les veines plantaires de l'arcade, version retenue"
+  },
+  {
+   "id": "veines-digitales-dorsales-du-pied",
+   "resume": "Les veines des orteils, sur leur face dorsale : elles passent dans les commissures et rejoignent les veines métatarsiennes dorsales.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Face dorsale des orteils et commissures interdigitales"
+   },
+   "trajet": "Cheminent dans les commissures entre les orteils, reçoivent les veines intercapitales de la plante, puis se réunissent en veines digitales communes et en veines métatarsiennes dorsales",
+   "affluents": [
+    {
+     "veine": "veines-intercapitales-du-pied",
+     "texte": "Veines intercapitales"
+    }
+   ],
+   "terminaison": {
+    "veine": "veines-metatarsiennes-dorsales",
+    "texte": "Se jettent dans les veines métatarsiennes dorsales, qui forment l'arcade veineuse dorsale"
+   },
+   "drainage": {
+    "texte": "Dos des orteils, et sang plantaire des orteils par les intercapitales",
+    "structures": []
+   },
+   "rapports": "Sous la peau des orteils, dans les commissures ; elles reçoivent le sang plantaire par les intercapitales",
+   "clinique": "Sans pathologie propre : c'est le départ du long chemin du sang des orteils vers les saphènes",
+   "memo": "Digitales dorsales : elles passent entre les orteils et rejoignent l'arcade dorsale",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "openstax-circulation"
+   ],
+   "divergences": "Gray réunit directement les veines digitales communes dans l'arcade ; Kenhub passe par les veines métatarsiennes dorsales, version retenue"
+  },
+  {
+   "id": "veines-digitales-plantaires",
+   "resume": "Les veines de la face plantaire des orteils : elles se réunissent en veines métatarsiennes plantaires.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Plexus de la face plantaire des orteils"
+   },
+   "trajet": "Drainent les plexus de la face plantaire des orteils, relient les veines dorsales par les veines intercapitales, puis se réunissent en quatre veines métatarsiennes plantaires",
+   "terminaison": {
+    "veine": "veines-metatarsiennes-plantaires",
+    "texte": "Se réunissent en quatre veines métatarsiennes plantaires"
+   },
+   "drainage": {
+    "texte": "Face plantaire des orteils",
+    "structures": []
+   },
+   "rapports": "Sur la face plantaire des orteils, avec les artères digitales plantaires propres",
+   "clinique": "Sans pathologie propre ; une plaie de la face plantaire de l'orteil saigne par ces veines et par les artères digitales plantaires",
+   "memo": "Digitales plantaires : des orteils, quatre veines métatarsiennes en sortent",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "openstax-circulation"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-metatarsiennes-dorsales",
+   "resume": "Les veines qui longent les espaces entre les métatarsiens, sur le dos du pied : elles forment l'arcade veineuse dorsale.",
+   "plan": "superficielle",
+   "origine": {
+    "veine": null,
+    "texte": "Réunion des veines digitales dorsales, dans les espaces entre les métatarsiens"
+   },
+   "trajet": "Longent les espaces entre les métatarsiens, sous la peau du dos du pied, reçoivent les veines digitales dorsales et se réunissent en arcade au niveau de l'extrémité distale des métatarsiens",
+   "affluents": [
+    {
+     "veine": "veines-digitales-dorsales-du-pied",
+     "texte": "Veines digitales dorsales"
+    }
+   ],
+   "terminaison": {
+    "veine": "arcade-veineuse-dorsale-du-pied",
+    "texte": "Forment l'arcade veineuse dorsale du pied"
+   },
+   "drainage": {
+    "texte": "Dos du pied et orteils",
+    "structures": []
+   },
+   "rapports": "Sous la peau du dos du pied, dans les espaces intermétatarsiens, avec les veines digitales dorsales",
+   "clinique": "Sans pathologie propre ; le gonflement du dos du pied dans l'œdème (insuffisance veineuse, station debout prolongée) traduit la stase dans ce réseau",
+   "memo": "Métatarsiennes dorsales : sur le dos du pied, elles s'assemblent en arcade",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "wikipedia-arcade-dorsale-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-metatarsiennes-plantaires",
+   "resume": "Les quatre veines qui passent entre les métatarsiens, du côté plantaire : elles se réunissent en arcade veineuse plantaire.",
+   "plan": "profonde",
+   "origine": {
+    "veine": null,
+    "texte": "Réunion des veines digitales plantaires, dans les espaces entre les métatarsiens"
+   },
+   "trajet": "Au nombre de quatre, elles passent dans les espaces intermétatarsiens et communiquent avec le dos du pied par des veines perforantes, avant de rejoindre l'arcade veineuse plantaire",
+   "affluents": [
+    {
+     "veine": "veines-digitales-plantaires",
+     "texte": "Veines digitales plantaires"
+    }
+   ],
+   "terminaison": {
+    "veine": "arcade-veineuse-plantaire",
+    "texte": "Se réunissent pour former l'arcade veineuse plantaire"
+   },
+   "drainage": {
+    "texte": "Plante du pied, muscles interosseux",
+    "structures": []
+   },
+   "rapports": "Dans les espaces entre les métatarsiens, du côté plantaire, avec les artères métatarsiennes plantaires",
+   "clinique": "Sans pathologie propre ; une plaie profonde de l'avant-pied les lèse avec les artères métatarsiennes plantaires",
+   "memo": "Métatarsiennes plantaires : au nombre de quatre, elles vont à l'arcade plantaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "openstax-circulation"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "veines-plantaires-laterales",
+   "resume": "Les veines satellites de l'artère plantaire latérale : elles naissent de l'arcade plantaire et rejoignent les veines plantaires médiales pour former les tibiales postérieures.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "arcade-veineuse-plantaire",
+    "texte": "Issues de l'arcade veineuse plantaire, du côté latéral de la plante"
+   },
+   "trajet": "Remontent de la plante, du côté latéral, avec l'artère plantaire latérale, communiquent avec les veines saphènes et s'unissent aux veines plantaires médiales derrière la malléole médiale",
+   "terminaison": {
+    "veine": "veines-tibiales-posterieures",
+    "texte": "S'unissent aux veines plantaires médiales, derrière la malléole médiale, pour former les veines tibiales postérieures"
+   },
+   "drainage": {
+    "texte": "Côté latéral de la plante, muscles intrinsèques latéraux du pied",
+    "structures": []
+   },
+   "rapports": "Paires, avec l'artère plantaire latérale et le nerf plantaire latéral, sous l'abducteur de l'hallux",
+   "clinique": "Sans pathologie propre ; une thrombose isolée reste limitée à la plante, mais peut s'étendre aux veines tibiales postérieures",
+   "memo": "Plantaires latérales : avec la médiale, elles se réunissent pour former les tibiales postérieures",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "openstax-circulation"
+   ],
+   "divergences": "Gray fait naître les tibiales postérieures de la réunion des veines plantaires ; Kenhub y ajoute les veines fibulaires, version de Gray retenue ; OpenStax les relie à l'arcade plantaire"
+  },
+  {
+   "id": "veines-plantaires-mediales",
+   "resume": "Les veines satellites de l'artère plantaire médiale : elles remontent du bord médial de la plante et rejoignent les veines plantaires latérales pour former les tibiales postérieures.",
+   "plan": "profonde",
+   "origine": {
+    "veine": "arcade-veineuse-plantaire",
+    "texte": "Issues de l'arcade veineuse plantaire, du côté médial de la plante"
+   },
+   "trajet": "Remontent de la plante, du côté médial, avec l'artère plantaire médiale, communiquent avec les saphènes et s'unissent aux veines plantaires latérales derrière la malléole médiale",
+   "terminaison": {
+    "veine": "veines-tibiales-posterieures",
+    "texte": "S'unissent aux veines plantaires latérales, derrière la malléole médiale, pour former les veines tibiales postérieures"
+   },
+   "drainage": {
+    "texte": "Côté médial de la plante, muscles de l'éminence médiale",
+    "structures": []
+   },
+   "rapports": "Paires, avec l'artère plantaire médiale et le nerf plantaire médial, au-dessus de l'abducteur de l'hallux",
+   "clinique": "Elles passent dans le canal tarsien, derrière la malléole médiale, avec le tendon du tibial postérieur : une compression du canal tarsien les concerne avec le nerf tibial",
+   "memo": "Plantaires médiales : elles montent derrière la malléole médiale et donnent, avec les latérales, les tibiales postérieures",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-veines-inf",
+    "openstax-circulation"
+   ],
+   "divergences": "Gray fait naître les tibiales postérieures de la réunion des veines plantaires ; Kenhub y ajoute les veines fibulaires, version de Gray retenue"
+  }
+ ]
+}

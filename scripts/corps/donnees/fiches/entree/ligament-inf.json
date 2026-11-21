@@ -1,0 +1,1143 @@
+{
+ "lot": "ligament-inf",
+ "couche": "ligament",
+ "structures": [
+  {
+   "id": "bourses-gluteales-intermusculaires",
+   "nom": "Bourses glutéales intermusculaires",
+   "latin": "Bursae intermusculares gluteae",
+   "anglais": "Intermuscular gluteal bursae",
+   "region": "cuisse",
+   "rang": 2,
+   "officiel": "Bourses glutéales intermusculaires",
+   "ta2": "2730",
+   "nature": "bourse"
+  },
+  {
+   "id": "capsule-articulaire-du-genou",
+   "nom": "Capsule articulaire du genou",
+   "latin": "Capsula articularis genus",
+   "anglais": "Articular capsule of knee joint",
+   "region": "cuisse",
+   "rang": 2,
+   "officiel": "Capsule articulaire du genou",
+   "ta2": "1883*1",
+   "nature": "capsule"
+  },
+  {
+   "id": "zone-orbiculaire",
+   "nom": "Zone orbiculaire",
+   "latin": "Zona orbicularis",
+   "anglais": "Zona orbicularis",
+   "region": "hanche",
+   "rang": 2,
+   "officiel": "Zone orbiculaire",
+   "ta2": "1874"
+  },
+  {
+   "id": "membrane-interosseuse-de-la-jambe",
+   "nom": "Membrane interosseuse de la jambe",
+   "latin": "Membrana interossea cruris",
+   "anglais": "Interosseous membrane of leg",
+   "region": "jambe",
+   "rang": 2,
+   "officiel": "Membrane interosseuse de la jambe",
+   "ta2": "1867",
+   "nature": "membrane"
+  },
+  {
+   "id": "capsules-articulaires-des-art-metatarsophalangiennes",
+   "nom": "Capsules articulaires des art. métatarsophalangiennes",
+   "latin": "Capsulae articulareae articulationes glenohumerae",
+   "anglais": "Articular capsules of metatarsophalangeal joints",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Capsules articulaires des art. métatarsophalangiennes",
+   "ta2": "7139",
+   "nature": "capsule"
+  },
+  {
+   "id": "ligaments-interphalangiens-collateraux-du-pied",
+   "nom": "Ligaments interphalangiens collatéraux du pied",
+   "latin": "Ligamenta interphalangea collateralia pedis",
+   "anglais": "Collateral interphalangeal ligaments of foot",
+   "region": "pied",
+   "rang": 2,
+   "officiel": "Ligaments interphalangiens collatéraux du pied",
+   "ta2": "1972"
+  },
+  {
+   "id": "bourse-infrapatellaire-profonde",
+   "nom": "Bourse infrapatellaire profonde",
+   "latin": "Bursa infrapatellaris profunda",
+   "anglais": "Deep infrapatellar bursa",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Bourse infrapatellaire profonde",
+   "ta2": "2740",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-ischiatique-du-grand-fessier",
+   "nom": "Bourse ischiatique du grand fessier",
+   "latin": "Bursa ischiadica musculi glutei maximi",
+   "anglais": "Sciatic bursa of gluteus maximus muscle",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Bourse ischiatique du grand fessier",
+   "ta2": "2731",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-prepatellaire-sous-cutanee",
+   "nom": "Bourse prépatellaire sous-cutanée",
+   "latin": "Bursa subcutanea prepatellaris",
+   "anglais": "Subcutaneous prepatellar bursa",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Bourse prépatellaire sous-cutanée",
+   "ta2": "2735",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-prepatellaire-subfasciale",
+   "nom": "Bourse prépatellaire subfasciale",
+   "latin": "Bursa subfascialis prepatellaris",
+   "anglais": "Subfacial prepatellar bursa",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Bourse prépatellaire subfasciale",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-sous-cutanee-infrapatellaire",
+   "nom": "Bourse sous-cutanée infrapatellaire",
+   "latin": "Bursa subcutanea infrapatellaris",
+   "anglais": "Subcutaneous infrapatellar bursa",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Bourse sous-cutanée infrapatellaire",
+   "ta2": "2739",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-subtendineuse-du-muscle-iliaque",
+   "nom": "Bourse subtendineuse du muscle iliaque",
+   "latin": "Bursa subtendinea iliaca",
+   "anglais": "Subtendinous bursa of iliacus muscle",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Bourse subtendineuse du muscle iliaque",
+   "ta2": "2733",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-subtendineuse-laterale-des-muscles-gastrocnemiens",
+   "nom": "Bourse subtendineuse latérale des muscles gastrocnémiens",
+   "latin": "Bursa subtendinea lateralis musculi gastrocnemii",
+   "anglais": "Lateral subtendinous bursa of gastrocnemius muscle",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Bourse subtendineuse latérale des muscles gastrocnémiens",
+   "ta2": "2746",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-subtendineuse-mediale",
+   "nom": "Bourse subtendineuse médiale",
+   "latin": "Bursa subtendinea medialis musculi gastrocnemii",
+   "anglais": "Medial subtendinous bursa of gastrocnemius muscle",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Bourse subtendineuse médiale",
+   "ta2": "2747",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-subtendineuse-prepatellaire",
+   "nom": "Bourse subtendineuse prépatellaire",
+   "latin": "(Bursa subtendinea prepatellaris)",
+   "anglais": "Subtendinous prepatellar bursa",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Bourse subtendineuse prépatellaire",
+   "ta2": "2737",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-suprapatellaire",
+   "nom": "Bourse suprapatellaire",
+   "latin": "Bursa suprapatellaris",
+   "anglais": "Suprapatellar bursa",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Bourse suprapatellaire",
+   "ta2": "2738",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-superieure-du-muscle-biceps-femoral",
+   "nom": "Bourse supérieure du muscle biceps fémoral",
+   "latin": "Bursa superior musculi bicipitis femoris",
+   "anglais": "Superior bursa of biceps femoris muscle",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Bourse supérieure du muscle biceps fémoral",
+   "ta2": "2734",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-trochanterique-du-muscle-grand-fessier",
+   "nom": "Bourse trochantérique du muscle grand fessier",
+   "latin": "Bursa trochanterica musculi glutei maximi",
+   "anglais": "Trochanteric bursa of gluteus maximus muscle",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Bourse trochantérique du muscle grand fessier",
+   "ta2": "2724",
+   "nature": "bourse"
+  },
+  {
+   "id": "freins-de-la-capsule",
+   "nom": "Freins de la capsule",
+   "latin": "Frenula capsulae",
+   "anglais": "Frenula capsulae",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Freins de la capsule"
+  },
+  {
+   "id": "ligament-collateral-fibulaire",
+   "nom": "Ligament collatéral fibulaire",
+   "latin": "Ligamentum collaterale fibulare",
+   "anglais": "Fibular collateral ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament collatéral fibulaire",
+   "ta2": "1895"
+  },
+  {
+   "id": "ligament-collateral-tibial",
+   "nom": "Ligament collatéral tibial",
+   "latin": "Ligamentum collaterale tibiale",
+   "anglais": "Tibial collateral ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament collatéral tibial",
+   "ta2": "1896",
+   "connu": {
+    "parties_modelisees": [
+     "Partie profonde du ligament collatéral tibial",
+     "Partie superficielle du ligament collatéral tibial"
+    ]
+   }
+  },
+  {
+   "id": "ligament-croise-anterieur",
+   "nom": "Ligament croisé antérieur",
+   "latin": "Ligamentum cruciatum anterius",
+   "anglais": "Anterior cruciate ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament croisé antérieur",
+   "ta2": "1890"
+  },
+  {
+   "id": "ligament-croise-posterieur",
+   "nom": "Ligament croisé postérieur",
+   "latin": "Ligamentum decussatum posterius",
+   "anglais": "Posterior cruciate ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament croisé postérieur",
+   "ta2": "1891"
+  },
+  {
+   "id": "ligament-meniscopatellaire",
+   "nom": "Ligament méniscopatellaire",
+   "latin": "Ligamentum meniscopatellare",
+   "anglais": "Meniscopatellar ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament méniscopatellaire",
+   "ta2": "1904"
+  },
+  {
+   "id": "ligament-poplite-arque",
+   "nom": "Ligament poplité arqué",
+   "latin": "Ligamentum popliteum arcuatum",
+   "anglais": "Arcuate popliteal ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament poplité arqué",
+   "ta2": "1900"
+  },
+  {
+   "id": "ligament-poplite-oblique",
+   "nom": "Ligament poplité oblique",
+   "latin": "Ligamentum popliteum obliquum",
+   "anglais": "Oblique popliteal ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament poplité oblique",
+   "ta2": "1899"
+  },
+  {
+   "id": "ligament-popliteofibulaire",
+   "nom": "Ligament poplitéofibulaire",
+   "latin": "Ligamentum popliteofibulare",
+   "anglais": "Popliteofibular ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament poplitéofibulaire",
+   "ta2": "1906"
+  },
+  {
+   "id": "ligament-pubofemoral",
+   "nom": "Ligament pubofémoral",
+   "latin": "Ligamentum pubofemorale",
+   "anglais": "Pubofemoral ligament",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament pubofémoral",
+   "ta2": "1879"
+  },
+  {
+   "id": "ligament-transverse-du-genou",
+   "nom": "Ligament transverse du genou",
+   "latin": "Ligamentum transversum genus",
+   "anglais": "Transverse ligament of knee",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligament transverse du genou",
+   "ta2": "1889"
+  },
+  {
+   "id": "ligaments-menisco-tibiaux",
+   "nom": "Ligaments ménisco-tibiaux",
+   "latin": "Ligamenta meniscotibialia",
+   "anglais": "Meniscotibial ligaments",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ligaments ménisco-tibiaux",
+   "nature": "menisque",
+   "connu": {
+    "parties_modelisees": [
+     "Ligament méniscotibial antérieur (Ménisque lateral)",
+     "Ligament méniscotibial antérieur (Ménisque médial)",
+     "Ligament méniscotibial postérieur (Ménisque lateral)",
+     "Ligament méniscotibial postérieur (Ménisque médial)"
+    ]
+   }
+  },
+  {
+   "id": "membrane-obturatrice",
+   "nom": "Membrane obturatrice",
+   "latin": "Membrana obturatoria",
+   "anglais": "Obturator membrane",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Membrane obturatrice",
+   "ta2": "1848",
+   "nature": "membrane"
+  },
+  {
+   "id": "menisque-lateral",
+   "nom": "Ménisque latéral",
+   "latin": "Meniscus lateralis",
+   "anglais": "Lateral meniscus",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ménisque latéral",
+   "ta2": "1885",
+   "nature": "menisque"
+  },
+  {
+   "id": "menisque-medial",
+   "nom": "Ménisque médial",
+   "latin": "Meniscus medialis",
+   "anglais": "Medial meniscus",
+   "region": "cuisse",
+   "rang": 3,
+   "officiel": "Ménisque médial",
+   "ta2": "1888",
+   "nature": "menisque"
+  },
+  {
+   "id": "bourrelet-acetabulaire",
+   "nom": "Bourrelet acétabulaire",
+   "latin": "Labrum acetabuli",
+   "anglais": "Acetabular labrum",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Bourrelet acétabulaire",
+   "ta2": "1880",
+   "nature": "labrum"
+  },
+  {
+   "id": "bourse-du-muscle-piriforme",
+   "nom": "Bourse du muscle piriforme",
+   "latin": "Bursa musculi piriformis",
+   "anglais": "Bursa of piriformis muscle",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Bourse du muscle piriforme",
+   "ta2": "2727",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-iliopectinee",
+   "nom": "Bourse iliopectinée",
+   "latin": "(Bursa iliopectinea)",
+   "anglais": "Iliopectineal bursa",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Bourse iliopectinée",
+   "ta2": "2732",
+   "nature": "bourse",
+   "inconstant": true
+  },
+  {
+   "id": "bourse-ischiatique-de-l-obturateur-interne",
+   "nom": "Bourse ischiatique de l'obturateur interne",
+   "latin": "Bursa ischiadica obturatoris interni",
+   "anglais": "Sciatic bursa of obturator internus",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Bourse ischiatique de l'obturateur interne",
+   "ta2": "2728",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-subtendineuse-de-l-obturateur-interne",
+   "nom": "Bourse subtendineuse de l'obturateur interne",
+   "latin": "Bursa subtendinea obturatoris interni",
+   "anglais": "Subtendinous bursa of obturator internus",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Bourse subtendineuse de l'obturateur interne",
+   "ta2": "2729",
+   "nature": "bourse"
+  },
+  {
+   "id": "capsule-articulaire-de-l-articulation-de-la-hanche",
+   "nom": "Capsule articulaire de l'articulation de la hanche",
+   "latin": "Capsula articularis coxae",
+   "anglais": "Articular capsule of hip joint",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Capsule articulaire de l'articulation de la hanche",
+   "ta2": "7142",
+   "nature": "capsule"
+  },
+  {
+   "id": "ligament-acetabulaire-transverse",
+   "nom": "Ligament acétabulaire transverse",
+   "latin": "Ligamentum transversum acetabuli",
+   "anglais": "Transverse acetabular ligament",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Ligament acétabulaire transverse",
+   "ta2": "1881"
+  },
+  {
+   "id": "ligament-de-la-tete-du-femur",
+   "nom": "Ligament de la tête du fémur",
+   "latin": "Ligamentum capitis femoris",
+   "anglais": "Ligament of head of femur",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Ligament de la tête du fémur",
+   "ta2": "1882"
+  },
+  {
+   "id": "ligament-iliofemoral",
+   "nom": "Ligament iliofémoral",
+   "latin": "Ligamentum iliofemorale",
+   "anglais": "Iliofemoral ligament",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Ligament iliofémoral",
+   "ta2": "1875",
+   "connu": {
+    "parties_modelisees": [
+     "Partie descendante du ligament iliofémoral",
+     "Partie transverse du ligament iliofémoral"
+    ]
+   }
+  },
+  {
+   "id": "ligament-iliolombaire",
+   "nom": "Ligament iliolombaire",
+   "latin": "Ligamentum iliolumbale",
+   "anglais": "Iliolumbar ligament",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Ligament iliolombaire",
+   "ta2": "1853"
+  },
+  {
+   "id": "ligament-ischiofemoral",
+   "nom": "Ligament ischiofémoral",
+   "latin": "Ligamentum ischiofemorale",
+   "anglais": "Ischiofemoral ligament",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Ligament ischiofémoral",
+   "ta2": "1878"
+  },
+  {
+   "id": "ligament-sacro-iliaque-anterieur",
+   "nom": "Ligament sacro-iliaque antérieur",
+   "latin": "Ligamentum sacroiliacum anterius",
+   "anglais": "Anterior sacro-iliac ligament",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Ligament sacro-iliaque antérieur",
+   "ta2": "1862"
+  },
+  {
+   "id": "ligament-sacro-iliaque-interosseux",
+   "nom": "Ligament sacro-iliaque interosseux",
+   "latin": "Ligamentum sacroiliacum interosseum",
+   "anglais": "Interosseous sacro-iliac ligament",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Ligament sacro-iliaque interosseux",
+   "ta2": "1863"
+  },
+  {
+   "id": "ligament-sacro-iliaque-posterieur",
+   "nom": "Ligament sacro-iliaque postérieur",
+   "latin": "Ligamentum sacroiliacum posterius",
+   "anglais": "Posterior sacro-iliac ligament",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Ligament sacro-iliaque postérieur",
+   "ta2": "1864"
+  },
+  {
+   "id": "ligament-sacro-epineux",
+   "nom": "Ligament sacro-épineux",
+   "latin": "Ligamentum sacrospinale",
+   "anglais": "Sacrospinous ligament",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Ligament sacro-épineux",
+   "ta2": "1852"
+  },
+  {
+   "id": "ligament-sacrotuberal",
+   "nom": "Ligament sacrotubéral",
+   "latin": "Ligamentum sacrotuberale",
+   "anglais": "Sacrotuberous ligament",
+   "region": "hanche",
+   "rang": 3,
+   "officiel": "Ligament sacrotubéral",
+   "ta2": "1850"
+  },
+  {
+   "id": "bourse-anserine",
+   "nom": "Bourse ansérine",
+   "latin": "Bursa anserina",
+   "anglais": "Anserine bursa",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Bourse ansérine",
+   "ta2": "2743",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-du-muscle-semimembraneux",
+   "nom": "Bourse du muscle semimembraneux",
+   "latin": "Bursa musculi semimembranosi",
+   "anglais": "Semimembranosus bursa",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Bourse du muscle semimembraneux",
+   "ta2": "2748",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-sous-cutanee-de-la-tuberosite-tibiale",
+   "nom": "Bourse sous-cutanée de la tubérosité tibiale",
+   "latin": "Bursa subcutanea tuberositatis tibiae",
+   "anglais": "Subcutaneous bursa of tuberosity of tibia",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Bourse sous-cutanée de la tubérosité tibiale",
+   "ta2": "2741",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-subtendineuse-du-muscle-sartorius",
+   "nom": "Bourse subtendineuse du muscle sartorius",
+   "latin": "Bursa subtendinea musculi sartorii",
+   "anglais": "Subtendinous bursa of sartorius muscle",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Bourse subtendineuse du muscle sartorius",
+   "ta2": "2742",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-subtendineuse-inferieure-du-muscle-biceps-femoral",
+   "nom": "Bourse subtendineuse inférieure du muscle biceps fémoral",
+   "latin": "Bursa subtendinea inferior musculi bicipitis femoris",
+   "anglais": "Inferior subtendinous bursa of biceps femoris muscle",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Bourse subtendineuse inférieure du muscle biceps fémoral",
+   "ta2": "2744",
+   "nature": "bourse"
+  },
+  {
+   "id": "capsule-articulaire-de-l-art-tibiofibulaire-superieure",
+   "nom": "Capsule articulaire de l'art. tibiofibulaire supérieure",
+   "latin": "Capsula articularis articularis tibiofibularis superior",
+   "anglais": "Articular capsule of superior tibiofibular joint",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Capsule articulaire de l'art. tibiofibulaire supérieure",
+   "ta2": "7150",
+   "nature": "capsule"
+  },
+  {
+   "id": "ligament-anterieur-de-la-tete-fibullaire",
+   "nom": "Ligament antérieur de la tête fibullaire",
+   "latin": "Ligamentum anterius capitis fibulae",
+   "anglais": "Anterior ligament of fibular head",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Ligament antérieur de la tête fibullaire",
+   "ta2": "1910"
+  },
+  {
+   "id": "ligament-posterieur-de-la-tete-fibullaire",
+   "nom": "Ligament postérieur de la tête fibullaire",
+   "latin": "Ligamentum posterius capitis fibulae",
+   "anglais": "Posterior ligament of fibular head",
+   "region": "jambe",
+   "rang": 3,
+   "officiel": "Ligament postérieur de la tête fibullaire",
+   "ta2": "1911"
+  },
+  {
+   "id": "bourse-sous-cutanee-calcaneenne",
+   "nom": "Bourse sous-cutanée calcanéenne",
+   "latin": "Bursa subcutanea calcanea",
+   "anglais": "Subcutaneous calcaneal bursa",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Bourse sous-cutanée calcanéenne",
+   "ta2": "2752",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-sous-cutanee-de-la-malleole-laterale",
+   "nom": "Bourse sous-cutanée de la malléole latérale",
+   "latin": "Bursa subcutanea malleoli lateralis",
+   "anglais": "Subcutaneous bursa of lateral malleolus",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Bourse sous-cutanée de la malléole latérale",
+   "ta2": "2749",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-sous-cutanee-malleolaire",
+   "nom": "Bourse sous-cutanée malléolaire",
+   "latin": "Bursa subcutanea malleoli",
+   "anglais": "Subcutaneous bursa of medial malleolus",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Bourse sous-cutanée malléolaire",
+   "ta2": "2750",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-subtendineuse-calcaneenne",
+   "nom": "Bourse subtendineuse calcanéenne",
+   "latin": "Bursa subtendinea calcanea",
+   "anglais": "Subtendinous calcaneal bursa",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Bourse subtendineuse calcanéenne",
+   "ta2": "2753",
+   "nature": "bourse"
+  },
+  {
+   "id": "bourse-subtendineuse-du-muscle-tibial-anterieur",
+   "nom": "Bourse subtendineuse du muscle tibial antérieur",
+   "latin": "Bursa subtendinea musculi tibialis anterioris",
+   "anglais": "Subtendinous bursa of tibialis anterior",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Bourse subtendineuse du muscle tibial antérieur",
+   "ta2": "2751",
+   "nature": "bourse"
+  },
+  {
+   "id": "capsule-articulaire-de-l-art-interphalangienne-de-l-hallux",
+   "nom": "Capsule articulaire de l'art. interphalangienne de l'hallux",
+   "latin": "Capsula articularis articuli interphalangealis hallucis",
+   "anglais": "Articular capsule of interphalangeal joint of great toe",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Capsule articulaire de l'art. interphalangienne de l'hallux",
+   "ta2": "7143",
+   "nature": "capsule"
+  },
+  {
+   "id": "capsules-art-des-art-interphalangiennes-dist-du-pied",
+   "nom": "Capsules art. des art. interphalangiennes dist. du pied",
+   "latin": "Capsulae articulares distali art. interphalangelorum pedis",
+   "anglais": "Articular capsules of distal interphalangeal joints of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Capsules art. des art. interphalangiennes dist. du pied",
+   "ta2": "7144",
+   "nature": "capsule"
+  },
+  {
+   "id": "capsules-art-des-art-interphalangiennes-prox-du-pied",
+   "nom": "Capsules art. des art. interphalangiennes prox. du pied",
+   "latin": "Capsulae articulares art. interphalangelorum prox. pedis",
+   "anglais": "Articular capsules of proximal interphalangeal joints of foot",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Capsules art. des art. interphalangiennes prox. du pied",
+   "ta2": "7145",
+   "nature": "capsule"
+  },
+  {
+   "id": "ligament-calcaneofibullaire",
+   "nom": "Ligament calcaneofibullaire",
+   "latin": "Ligamentum calcaneofibulare",
+   "anglais": "Calcaneofibular ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament calcaneofibullaire",
+   "ta2": "1921"
+  },
+  {
+   "id": "ligament-calcaneocuboide",
+   "nom": "Ligament calcanéocuboïde",
+   "latin": "Ligamentum calcaneocuboideum",
+   "anglais": "Calcaneocuboid ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament calcanéocuboïde",
+   "ta2": "1933"
+  },
+  {
+   "id": "ligament-calcaneocuboidien",
+   "nom": "Ligament calcanéocuboïdien",
+   "latin": "Ligamentum calcaneocuboideum dorsale",
+   "anglais": "Dorsal calcaneocuboid ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament calcanéocuboïdien",
+   "ta2": "1939"
+  },
+  {
+   "id": "ligament-calcaneocuboidien-plantaire",
+   "nom": "Ligament calcanéocuboïdien plantaire",
+   "latin": "Ligamentum calcaneocuboideum plantare",
+   "anglais": "Plantar calcaneocuboid ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament calcanéocuboïdien plantaire",
+   "ta2": "1940"
+  },
+  {
+   "id": "ligament-calcaneonaviculaire",
+   "nom": "Ligament calcanéonaviculaire",
+   "latin": "Ligamentum calcaneonaviculare",
+   "anglais": "Calcaneonavicular ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament calcanéonaviculaire",
+   "ta2": "1932"
+  },
+  {
+   "id": "ligament-calcaneonaviculaire-plantaire",
+   "nom": "Ligament calcanéonaviculaire plantaire",
+   "latin": "Ligamentum calcaneonaviculare plantare",
+   "anglais": "Plantar calcaneonavicular ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament calcanéonaviculaire plantaire",
+   "ta2": "1937"
+  },
+  {
+   "id": "ligament-cuboidonaviculaire-dorsal",
+   "nom": "Ligament cuboïdonaviculaire dorsal",
+   "latin": "Ligamentum cuboideonaviculare dorsale",
+   "anglais": "Dorsal cuboideonavicular ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament cuboïdonaviculaire dorsal",
+   "ta2": "1949"
+  },
+  {
+   "id": "ligament-cuboidonaviculaire-plantaire",
+   "nom": "Ligament cuboïdonaviculaire plantaire",
+   "latin": "Ligamentum cuboideonaviculare plantare",
+   "anglais": "Plantar cuboideonavicular ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament cuboïdonaviculaire plantaire",
+   "ta2": "1950"
+  },
+  {
+   "id": "ligament-cuneocuboidien-dorsal",
+   "nom": "Ligament cunéocuboïdien dorsal",
+   "latin": "Ligamentum cuneocuboideum dorsale",
+   "anglais": "Dorsal cuneocuboid ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament cunéocuboïdien dorsal",
+   "ta2": "1946"
+  },
+  {
+   "id": "ligament-cuneocuboidien-plantaire",
+   "nom": "Ligament cunéocuboïdien plantaire",
+   "latin": "Ligamentum cuneocuboideum plantare",
+   "anglais": "Plantar cuneocuboid ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament cunéocuboïdien plantaire",
+   "ta2": "1947"
+  },
+  {
+   "id": "ligament-interosseux-cuneocuboidien",
+   "nom": "Ligament interosseux cunéocuboïdien",
+   "latin": "Ligamentum cuneocuboideum interosseum",
+   "anglais": "Cuneocuboid interosseous ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament interosseux cunéocuboïdien",
+   "ta2": "1945"
+  },
+  {
+   "id": "ligament-intersesamoide",
+   "nom": "Ligament intersésamoïde",
+   "latin": "Ligamentum intersesamoideum",
+   "anglais": "Intersesamoid ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament intersésamoïde",
+   "ta2": "1963"
+  },
+  {
+   "id": "ligament-metatarsien-transverse-profond",
+   "nom": "Ligament métatarsien transverse profond",
+   "latin": "Ligamentum metatarseum transversum profundum",
+   "anglais": "Deep transverse metatarsal ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament métatarsien transverse profond",
+   "ta2": "1967"
+  },
+  {
+   "id": "ligament-plantaire-long",
+   "nom": "Ligament plantaire long",
+   "latin": "Ligamentum plantare longum",
+   "anglais": "Long plantar ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament plantaire long",
+   "ta2": "1934",
+   "connu": {
+    "os_d_origine_selon_l_atlas": [
+     "Premier métatarsien",
+     "Deuxième os métatarsien",
+     "Troisième métatarsien",
+     "Quatrième métatarsien",
+     "Calcanéus"
+    ]
+   }
+  },
+  {
+   "id": "ligament-talocalcaneen",
+   "nom": "Ligament talocalcanéen",
+   "latin": "Ligamentum talocalcaneum laterale",
+   "anglais": "Lateral talocalcaneal ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament talocalcanéen",
+   "ta2": "1925"
+  },
+  {
+   "id": "ligament-talocalcaneen-anterieur",
+   "nom": "Ligament talocalcanéen antérieur",
+   "latin": "Ligamentum talocalcaneum anterius",
+   "anglais": "Anterior talocalcaneal ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament talocalcanéen antérieur",
+   "ta2": "1929"
+  },
+  {
+   "id": "ligament-talocalcaneen-interosseux",
+   "nom": "Ligament talocalcanéen interosseux",
+   "latin": "Ligamentum talocalcaneum interosseum",
+   "anglais": "Talocalcaneal interosseous ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament talocalcanéen interosseux",
+   "ta2": "1928"
+  },
+  {
+   "id": "ligament-talocalcaneen-lateral",
+   "nom": "Ligament talocalcanéen latéral",
+   "latin": "Ligamentum talocalcaneum posterius",
+   "anglais": "Posterior talocalcaneal ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament talocalcanéen latéral",
+   "ta2": "1927"
+  },
+  {
+   "id": "ligament-talocalcaneen-medial",
+   "nom": "Ligament talocalcanéen médial",
+   "latin": "Ligamentum talocalcaneum mediale",
+   "anglais": "Medial talocalcaneal ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament talocalcanéen médial",
+   "ta2": "1926"
+  },
+  {
+   "id": "ligament-talofibullaire-anterieur",
+   "nom": "Ligament talofibullaire antérieur",
+   "latin": "Ligamentum talofibulare anterius",
+   "anglais": "Anterior talofibular ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament talofibullaire antérieur",
+   "ta2": "1919"
+  },
+  {
+   "id": "ligament-talonaviculaire",
+   "nom": "Ligament talonaviculaire",
+   "latin": "Ligamentum talonaviculare",
+   "anglais": "Talonavicular ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament talonaviculaire",
+   "ta2": "1936"
+  },
+  {
+   "id": "ligament-tibiocalcaneen",
+   "nom": "Ligament tibiocalcanéen",
+   "latin": "Ligamentum calcaneotibiale",
+   "anglais": "Tibiocalcaneal ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament tibiocalcanéen",
+   "ta2": "1915"
+  },
+  {
+   "id": "ligament-tibiofibulaire-anterieur",
+   "nom": "Ligament tibiofibulaire antérieur",
+   "latin": "Ligamentum tibiofibulare anterius",
+   "anglais": "Anterior tibiofibular ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament tibiofibulaire antérieur",
+   "ta2": "1869"
+  },
+  {
+   "id": "ligament-tibiofibulaire-posterieur",
+   "nom": "Ligament tibiofibulaire postérieur",
+   "latin": "Ligamentum tibiofibulare posterius",
+   "anglais": "Posterior tibiofibular ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament tibiofibulaire postérieur",
+   "ta2": "1870"
+  },
+  {
+   "id": "ligament-tibiofibulaire-transverse",
+   "nom": "Ligament tibiofibulaire transverse",
+   "latin": "Ligamentum tibiofibulare transversum",
+   "anglais": "Transverse tibiofibular ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament tibiofibulaire transverse",
+   "ta2": "1871"
+  },
+  {
+   "id": "ligament-tibiofibullaire-posterieur",
+   "nom": "Ligament tibiofibullaire postérieur",
+   "latin": "Ligamentum talofibulare posterius",
+   "anglais": "Posterior talofibular ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament tibiofibullaire postérieur",
+   "ta2": "1920"
+  },
+  {
+   "id": "ligament-tibionaviculaire",
+   "nom": "Ligament tibionaviculaire",
+   "latin": "Ligamentum tibionaviculare",
+   "anglais": "Tibionavicular ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament tibionaviculaire",
+   "ta2": "1914"
+  },
+  {
+   "id": "ligament-tibiotalaire-posterieur",
+   "nom": "Ligament tibiotalaire postérieur",
+   "latin": "Ligamentum talotibiale posterius",
+   "anglais": "Posterior tibiotalar ligament",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligament tibiotalaire postérieur",
+   "ta2": "1917"
+  },
+  {
+   "id": "ligaments-cuneometatarsiens-interosseux",
+   "nom": "Ligaments cunéométatarsiens interosseux",
+   "latin": "Ligamenta cuneometatarsea interossea",
+   "anglais": "Cuneometatarsal interosseous ligaments",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligaments cunéométatarsiens interosseux",
+   "ta2": "1958"
+  },
+  {
+   "id": "ligaments-cuneonaviculaires-dorsaux",
+   "nom": "Ligaments cunéonaviculaires dorsaux",
+   "latin": "Ligamenta cuneonavicularia dorsalia",
+   "anglais": "Dorsal cuneonavicular ligaments",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligaments cunéonaviculaires dorsaux",
+   "ta2": "1942"
+  },
+  {
+   "id": "ligaments-cuneonaviculaires-plantaires",
+   "nom": "Ligaments cunéonaviculaires plantaires",
+   "latin": "Ligamenta cuneonavicularia plantaria",
+   "anglais": "Plantar cuneonavicular ligaments",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligaments cunéonaviculaires plantaires",
+   "ta2": "1943"
+  },
+  {
+   "id": "ligaments-intercuneiformes-dorsaux",
+   "nom": "Ligaments intercunéiformes dorsaux",
+   "latin": "Ligamenta intercuneiformia dorsalia",
+   "anglais": "Dorsal intercuneiform ligaments",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligaments intercunéiformes dorsaux",
+   "ta2": "1953"
+  },
+  {
+   "id": "ligaments-intercuneiformes-interosseux",
+   "nom": "Ligaments intercunéiformes interosseux",
+   "latin": "Ligamenta intercuneiformia interossea",
+   "anglais": "Intercuneiform interosseous ligaments",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligaments intercunéiformes interosseux",
+   "ta2": "1952"
+  },
+  {
+   "id": "ligaments-intercuneiformes-plantaires",
+   "nom": "Ligaments intercunéiformes plantaires",
+   "latin": "Ligamenta intercuneiformia plantaria",
+   "anglais": "Plantar intercuneiform ligaments",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligaments intercunéiformes plantaires",
+   "ta2": "1954"
+  },
+  {
+   "id": "ligaments-interphalangiens-plantaires",
+   "nom": "Ligaments interphalangiens plantaires",
+   "latin": "Ligamenta interphalangea plantaria",
+   "anglais": "Plantar interphalangeal ligaments",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligaments interphalangiens plantaires",
+   "ta2": "1973"
+  },
+  {
+   "id": "ligaments-metatarsiens-dorsaux",
+   "nom": "Ligaments métatarsiens dorsaux",
+   "latin": "Ligamenta metatarsea dorsalia",
+   "anglais": "Dorsal metatarsal ligaments",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligaments métatarsiens dorsaux",
+   "ta2": "1961"
+  },
+  {
+   "id": "ligaments-metatarsiens-interosseux",
+   "nom": "Ligaments métatarsiens interosseux",
+   "latin": "Ligamenta metatarsea interossea",
+   "anglais": "Metatarsal interosseous ligaments",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligaments métatarsiens interosseux",
+   "ta2": "1960"
+  },
+  {
+   "id": "ligaments-metatarsiens-plantaires",
+   "nom": "Ligaments métatarsiens plantaires",
+   "latin": "Ligamenta metatarsea plantaria",
+   "anglais": "Plantar metatarsal ligaments",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligaments métatarsiens plantaires",
+   "ta2": "1962"
+  },
+  {
+   "id": "ligaments-metatarsophalangiens-collateraux",
+   "nom": "Ligaments métatarsophalangiens collatéraux",
+   "latin": "Ligamenta metatarsophalangea collateralia",
+   "anglais": "Collateral metatarsophalangeal ligaments",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligaments métatarsophalangiens collatéraux",
+   "ta2": "1965"
+  },
+  {
+   "id": "ligaments-metatarsophalangiens-plantaires",
+   "nom": "Ligaments métatarsophalangiens plantaires",
+   "latin": "Ligamenta metatarsophalangea plantaria",
+   "anglais": "Plantar metatarsophalangeal ligaments",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligaments métatarsophalangiens plantaires",
+   "ta2": "1966"
+  },
+  {
+   "id": "ligaments-tarsometatarsiens-dorsaux",
+   "nom": "Ligaments tarsométatarsiens dorsaux",
+   "latin": "Ligamenta tarsometatarsea dorsalia",
+   "anglais": "Dorsal tarsometatarsal ligaments",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligaments tarsométatarsiens dorsaux",
+   "ta2": "1956"
+  },
+  {
+   "id": "ligaments-tarsometatarsiens-plantaires",
+   "nom": "Ligaments tarsométatarsiens plantaires",
+   "latin": "Ligamenta tarsometatarsea plantaria",
+   "anglais": "Plantar tarsometatarsal ligaments",
+   "region": "pied",
+   "rang": 3,
+   "officiel": "Ligaments tarsométatarsiens plantaires",
+   "ta2": "1957"
+  }
+ ]
+}

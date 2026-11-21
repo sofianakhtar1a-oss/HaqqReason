@@ -14,7 +14,7 @@ import { type Calques, COUCHES_DEFAUT, type Couches } from "./communs";
 import { Explorer } from "./Explorer";
 import { Fiches } from "./Fiches";
 import { chargerScene, type Scene } from "./moteur/chargement";
-import { Corps3D, type Corps3DPoignee, type EtatStructure } from "./moteur/Corps3D";
+import { type Coupe, Corps3D, type Corps3DPoignee, type EtatStructure } from "./moteur/Corps3D";
 import { type Lancement, Partie } from "./Partie";
 import { Progres } from "./Progres";
 import { Reglages } from "./Reglages";
@@ -58,9 +58,16 @@ export type EtatScene = {
   etiquette: { id: string; texte: string; sous?: string } | null;
   /** Le corps en retrait (derrière un écran de lecture). */
   retrait: boolean;
+  /** Les outils de l'atelier : un plan de coupe, la vue éclatée, le scalpel, le cœur qui bat et la poitrine qui respire. */
+  coupe: Coupe | null;
+  eclate: number;
+  scalpel: boolean;
+  vivant: { coeur?: boolean; souffle?: boolean } | null;
 };
 
-const SCENE_DEFAUT: EtatScene = { couches: COUCHES_DEFAUT, calques: {}, attaches: null, decouvrir: null, profondeur: 0, etats: {}, isoler: null, rotation: true, etiquette: null, retrait: false };
+const SCENE_DEFAUT: EtatScene = { couches: COUCHES_DEFAUT, calques: {}, attaches: null, decouvrir: null, profondeur: 0, etats: {}, isoler: null, rotation: true, etiquette: null, retrait: false, coupe: null, eclate: 0, scalpel: false, vivant: null };
+/** Ce qu'un écran qui ne le demande pas retrouve éteint. */
+const PASSAGERS: Partial<EtatScene> = { calques: {}, attaches: null, decouvrir: null, coupe: null, eclate: 0, scalpel: false, vivant: null };
 
 export type Stage = {
   scene: Scene | null;
@@ -70,6 +77,8 @@ export type Stage = {
   /** Ce qui se passe quand on touche le corps (null : rien). */
   surChoix: (f: ((s: StructureScene | null) => void) | null) => void;
   surSurvol: (f: ((s: StructureScene | null) => void) | null) => void;
+  /** Ce qui se passe quand le scalpel ôte une structure. */
+  surOter: (f: ((s: StructureScene) => void) | null) => void;
 };
 
 export type Navigation = {
@@ -103,6 +112,7 @@ export function Ecorche() {
   const poignee = useRef<Corps3DPoignee | null>(null);
   const choix = useRef<((s: StructureScene | null) => void) | null>(null);
   const survol = useRef<((s: StructureScene | null) => void) | null>(null);
+  const oter = useRef<((s: StructureScene) => void) | null>(null);
 
   useEffect(() => {
     const lire = () => setRoute(lireRoute());
@@ -128,12 +138,15 @@ export function Ecorche() {
     () => ({
       scene,
       poignee,
-      regler: (s) => setVue((v) => ({ ...v, calques: {}, attaches: null, decouvrir: null, ...s })),
+      regler: (s) => setVue((v) => ({ ...v, ...PASSAGERS, ...s })),
       surChoix: (f) => {
         choix.current = f;
       },
       surSurvol: (f) => {
         survol.current = f;
+      },
+      surOter: (f) => {
+        oter.current = f;
       },
     }),
     [scene],
@@ -259,6 +272,11 @@ export function Ecorche() {
             etiquette={vue.etiquette}
             onChoisir={(s) => choix.current?.(s)}
             onSurvol={(s) => survol.current?.(s)}
+            coupe={vue.coupe}
+            eclate={vue.eclate}
+            scalpel={vue.scalpel}
+            onOter={(s) => oter.current?.(s)}
+            vivant={vue.vivant}
           />
           {!scene && !erreur && (
             <div className="ec-chargement" role="status">

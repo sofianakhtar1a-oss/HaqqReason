@@ -76,6 +76,8 @@ type Props = {
   /** Le scalpel : on saisit une structure et on la tire hors du corps pour l'ôter. */
   scalpel?: boolean;
   onOter?: (s: StructureScene) => void;
+  /** Le corps vivant : le cœur bat et le pouls court dans les artères ; la poitrine respire. */
+  vivant?: { coeur?: boolean; souffle?: boolean } | null;
   className?: string;
   /** Le libellé pour les lecteurs d'écran. */
   libelle?: string;
@@ -193,6 +195,10 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     decal: Float32Array;
     decalCible: Float32Array;
     decalEnRoute: boolean;
+    /** Les pièces du cœur et des poumons, et l'état de la respiration (0 : expiration, 1 : inspiration profonde). */
+    vivants: { coeur: { i: number; c: V3; atrium: boolean }[]; poumons: { i: number; c: V3 }[] } | null;
+    vivantActif: boolean;
+    souffle: number;
   } | null>(null);
 
   const reveiller = (duree = 0) => {
@@ -325,7 +331,32 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
       poseChange = true;
       if (reste) bouge = true;
     }
-    if (poseChange) m.r.poser(auRepos(m.pose) ? null : poser(m.pose, m.matrices), NB_AXIAUX, NB_LATERAUX);
+    // Le corps vivant : le cœur bat à 60 par minute (les oreillettes, puis les ventricules) et l'onde du pouls court
+    // le long des artères à 6 mètres par seconde ; la poitrine se soulève une quinzaine de fois par minute.
+    const vivant = props.vivant;
+    if ((vivant?.coeur || vivant?.souffle || m.vivantActif) && m.scene) {
+      if (!m.vivants) m.vivants = preparerVivants();
+      const anime = !m.calmes;
+      const temps = t / 1000;
+      const phase = anime ? temps % 1 : 0.3;
+      const oreillettes = vivant?.coeur ? (phase < 0.12 ? Math.sin((Math.PI * phase) / 0.12) : 0) : 0;
+      const ventricules = vivant?.coeur ? (phase >= 0.12 && phase < 0.45 ? Math.sin((Math.PI * (phase - 0.12)) / 0.33) : 0) : 0;
+      for (const h of m.vivants.coeur) m.r.contracter(h.i, { origine: h.c, terminaison: [0, 0, 0], rond: true, raccourci: h.atrium ? 0.05 * oreillettes : 0.08 * ventricules });
+      m.r.pouls = vivant?.coeur && anime ? { amplitude: 0.0007, instant: phase - 0.05, etalement: 0.33 } : { amplitude: 0, instant: 0, etalement: 1 };
+      const souffle = vivant?.souffle ? (anime ? 0.3 + 0.3 * Math.sin((temps * 2 * Math.PI) / 4.4) : 0.6) : 0;
+      for (const l of m.vivants.poumons) m.r.contracter(l.i, { origine: l.c, terminaison: [0, 0, 0], rond: true, raccourci: -0.04 * souffle });
+      if (souffle !== m.souffle) {
+        m.souffle = souffle;
+        poseChange = true;
+      }
+      m.vivantActif = Boolean(vivant?.coeur || vivant?.souffle);
+      if (anime && m.vivantActif) bouge = true;
+      else m.besoin = true;
+    }
+    if (poseChange) {
+      const pose = m.souffle ? { ...m.pose, "respiration.inspiration": (m.pose["respiration.inspiration"] ?? 0) + m.souffle } : m.pose;
+      m.r.poser(auRepos(pose) ? null : poser(pose, m.matrices), NB_AXIAUX, NB_LATERAUX);
+    }
     // Les pièces déplacées (vue éclatée, scalpel) glissent vers leur place.
     if (m.decalEnRoute) {
       let reste = false;
@@ -368,6 +399,30 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
         }
       }, attente);
     }
+  }
+
+  /** Les pièces qui vivent : celles du cœur (oreillettes et ventricules) et les lobes des poumons, avec leur centre. */
+  function preparerVivants() {
+    const m = moteur.current!;
+    const structures = m.scene!.structures;
+    const coeur: { i: number; c: V3; atrium: boolean }[] = [];
+    const lobes: Record<string, number[]> = { droit: [], gauche: [] };
+    for (const s of structures) {
+      if (s.zone) continue;
+      if (/^(atrium|ventricule)-/.test(s.element)) coeur.push({ i: s.id, c: s.centre, atrium: s.element.startsWith("atrium") });
+      const l = /^lobe-(superieur|moyen|inferieur)-du-poumon-(droit|gauche)$/.exec(s.element);
+      if (l) lobes[l[2]].push(s.id);
+    }
+    // Les lobes d'un poumon se gonflent ensemble, autour du centre du poumon (sinon ils s'écarteraient).
+    const poumons: { i: number; c: V3 }[] = [];
+    for (const ids of Object.values(lobes)) {
+      if (!ids.length) continue;
+      let c: V3 = [0, 0, 0];
+      for (const i of ids) c = plus(c, structures[i].centre);
+      c = fois(c, 1 / ids.length);
+      for (const i of ids) poumons.push({ i, c });
+    }
+    return { coeur, poumons };
   }
 
   /** L'activité des muscles : leur ventre gonfle ; sans articulation à mouvoir, ils se raccourcissent sur place. */
@@ -650,6 +705,9 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
       decal: new Float32Array(0),
       decalCible: new Float32Array(0),
       decalEnRoute: false,
+      vivants: null,
+      vivantActif: false,
+      souffle: 0,
     };
     // La taille : celle de l'élément, en pixels réels, plafonnée selon la qualité que l'appareil tient à 60 images
     // par seconde (qualité 0 : tout ; 1 : ombres plus petites ; 2 : sans ombres portées ; 3 : un pixel par point).
@@ -708,6 +766,7 @@ export const Corps3D = forwardRef<Corps3DPoignee, Props>(function Corps3D(props,
     m.visCible = new Float32Array(n).fill(1);
     m.decal = new Float32Array(n * 3);
     m.decalCible = new Float32Array(n * 3);
+    m.vivants = null;
     for (let i = 0; i < n; i++) m.r.definir(i, { visible: m.vis[i] });
     m.desabonner = scene.modele.abonner((paquet, base, zones) => {
       const mm = moteur.current;

@@ -1,0 +1,408 @@
+{
+ "lot": "nerf-tete-cou-tronc",
+ "couche": "nerf",
+ "structures": [
+  {
+   "id": "nerf-pudendal",
+   "nom": "Nerf pudendal",
+   "latin": "Nervus pudendalis",
+   "anglais": "Pudendal nerve",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Nerf pudendal",
+   "ta2": "6554"
+  },
+  {
+   "id": "queue-de-cheval",
+   "nom": "Queue-de-cheval",
+   "latin": "Cauda equina",
+   "anglais": "Cauda equina",
+   "region": "bassin",
+   "rang": 2,
+   "officiel": "Queue-de-cheval",
+   "ta2": "6163"
+  },
+  {
+   "id": "ganglions-du-tronc-sympathique",
+   "nom": "Ganglions du tronc sympathique",
+   "latin": "Ganglia trunci sympathici",
+   "anglais": "Ganglia of sympathetic trunk",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Ganglions du tronc sympathique",
+   "ta2": "6606",
+   "nature": "ganglion"
+  },
+  {
+   "id": "nerfs-sympathiques",
+   "nom": "Nerfs sympathiques",
+   "latin": "Nervi sympathici",
+   "anglais": "Sympathetic nerves",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Nerfs sympathiques",
+   "ta2": "6617"
+  },
+  {
+   "id": "tronc-sympathique",
+   "nom": "Tronc sympathique",
+   "latin": "Truncus sympathicus",
+   "anglais": "Sympathetic trunk",
+   "region": "cou",
+   "rang": 2,
+   "officiel": "Tronc sympathique",
+   "ta2": "6602"
+  },
+  {
+   "id": "nerf-abducens-vi",
+   "nom": "Nerf abducens (VI)",
+   "latin": "Nervus abducens (VI)",
+   "anglais": "Abducens nerve (VI)",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Nerf abducens (VI)",
+   "ta2": "6283"
+  },
+  {
+   "id": "nerf-accessoire-xi",
+   "nom": "Nerf accessoire (XI)",
+   "latin": "Nervus accessorius (XI)",
+   "anglais": "Accessory nerve (XI)",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Nerf accessoire (XI)",
+   "ta2": "6352"
+  },
+  {
+   "id": "nerf-alveolaire-inferieur",
+   "nom": "Nerf alvéolaire inférieur",
+   "latin": "Nervus alveolaris inferior",
+   "anglais": "Inferior alveolar nerve",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Nerf alvéolaire inférieur",
+   "ta2": "6274"
+  },
+  {
+   "id": "nerf-facial-vii",
+   "nom": "Nerf facial (VII)",
+   "latin": "Nervus facialis (VII)",
+   "anglais": "Facial nerve (VII)",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Nerf facial (VII)",
+   "ta2": "6284"
+  },
+  {
+   "id": "nerf-glossopharyngien-ix",
+   "nom": "Nerf glossopharyngien (IX)",
+   "latin": "Nervus glossopharyngeus (IX)",
+   "anglais": "Glossopharyngeal nerve (IX)",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Nerf glossopharyngien (IX)",
+   "ta2": "6320"
+  },
+  {
+   "id": "nerf-hypoglosse-xii",
+   "nom": "Nerf hypoglosse (XII)",
+   "latin": "Nervus hypoglossus (XII)",
+   "anglais": "Hypoglossal nerve (XII)",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Nerf hypoglosse (XII)",
+   "ta2": "6357"
+  },
+  {
+   "id": "nerf-maxillaire",
+   "nom": "Nerf maxillaire",
+   "latin": "Nervus maxillaris",
+   "anglais": "Maxillary nerve",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Nerf maxillaire",
+   "ta2": "6216"
+  },
+  {
+   "id": "nerf-oculomoteur-iii",
+   "nom": "Nerf oculomoteur (III)",
+   "latin": "Nervus oculomotorius (III)",
+   "anglais": "Oculomotor nerve (III)",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Nerf oculomoteur (III)",
+   "ta2": "6187"
+  },
+  {
+   "id": "nerf-olfactif-i",
+   "nom": "Nerf olfactif (I)",
+   "latin": "Nervus olfactorius (I)",
+   "anglais": "Olfactory nerve (I)",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Nerf olfactif (I)",
+   "ta2": "6181"
+  },
+  {
+   "id": "nerf-ophtalmique",
+   "nom": "Nerf ophtalmique",
+   "latin": "Nervus ophthalmicus",
+   "anglais": "Ophthalmic nerve",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Nerf ophtalmique",
+   "ta2": "6196"
+  },
+  {
+   "id": "nerf-trochleaire-iv",
+   "nom": "Nerf trochléaire (IV)",
+   "latin": "Nervus trochlearis (IV)",
+   "anglais": "Trochlear nerve (IV)",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Nerf trochléaire (IV)",
+   "ta2": "6191"
+  },
+  {
+   "id": "nerf-vague-x",
+   "nom": "Nerf vague (X)",
+   "latin": "Nervus vagus (X)",
+   "anglais": "Vagus nerve (X)",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Nerf vague (X)",
+   "ta2": "6332"
+  },
+  {
+   "id": "nerf-vestibulaire",
+   "nom": "Nerf vestibulaire",
+   "latin": "Nervus vestibularis",
+   "anglais": "Vestibular nerve",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Nerf vestibulaire",
+   "ta2": "6308"
+  },
+  {
+   "id": "racine-motrice-du-nerf-trijumeau",
+   "nom": "Racine motrice du nerf trijumeau",
+   "latin": "Radix motoria nervi trigemini",
+   "anglais": "Motor root of trigeminal nerve",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Racine motrice du nerf trijumeau",
+   "ta2": "6195"
+  },
+  {
+   "id": "nerfs-intercostaux",
+   "nom": "Nerfs intercostaux",
+   "latin": "Nervi intercostales",
+   "anglais": "Intercostal nerves",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Nerfs intercostaux",
+   "ta2": "6471"
+  },
+  {
+   "id": "racine-anterieure-motrice-du-nerf-spinal",
+   "nom": "Racine antérieure (motrice) du nerf spinal",
+   "latin": "Radix anterior nervi spinalis",
+   "anglais": "Anterior root of spinal nerve",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Racine antérieure (motrice) du nerf spinal",
+   "ta2": "6145"
+  },
+  {
+   "id": "racine-posterieure-sensitive-du-nerf-spinal",
+   "nom": "Racine postérieure (sensitive) du nerf spinal",
+   "latin": "Radix posterior nervi spinalis",
+   "anglais": "Posterior root of spinal nerve",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Racine postérieure (sensitive) du nerf spinal",
+   "ta2": "6146"
+  },
+  {
+   "id": "nerf-iliohypogastrique",
+   "nom": "Nerf iliohypogastrique",
+   "latin": "Nervus iliohypogastricus",
+   "anglais": "Iliohypogastric nerve",
+   "region": "abdomen",
+   "rang": 3,
+   "officiel": "Nerf iliohypogastrique",
+   "ta2": "6496"
+  },
+  {
+   "id": "branche-meningee-du-nerf-maxillaire",
+   "nom": "Branche méningée du nerf maxillaire",
+   "latin": "Ramus meningeus nervi maxillaris",
+   "anglais": "Meningeal branch of maxillary nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Branche méningée du nerf maxillaire",
+   "ta2": "6217"
+  },
+  {
+   "id": "nerf-canal-central",
+   "nom": "Canal central",
+   "latin": "Canalis centralis",
+   "anglais": "Central canal'",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Canal central",
+   "ta2": "6127"
+  },
+  {
+   "id": "chiasma-optique",
+   "nom": "Chiasma optique",
+   "latin": "Chiasma opticum",
+   "anglais": "Optic chiasm",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Chiasma optique",
+   "ta2": "5668"
+  },
+  {
+   "id": "corde-du-tympan",
+   "nom": "Corde du tympan",
+   "latin": "Chorda tympani",
+   "anglais": "Chorda tympani",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Corde du tympan",
+   "ta2": "6292"
+  },
+  {
+   "id": "division-anterieure-du-nerf-mandibulaire",
+   "nom": "Division antérieure du nerf mandibulaire",
+   "latin": "Divisio anterior nervi mandibularis",
+   "anglais": "Anterior division of mandibular nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Division antérieure du nerf mandibulaire",
+   "ta2": "6249"
+  },
+  {
+   "id": "division-posterieure-du-nerf-mandibulaire",
+   "nom": "Division postérieure du nerf mandibulaire",
+   "latin": "Divisio posterior nervi mandibularis",
+   "anglais": "Posterior division of mandibular nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Division postérieure du nerf mandibulaire",
+   "ta2": "6260"
+  },
+  {
+   "id": "nerf-buccal",
+   "nom": "Nerf buccal",
+   "latin": "Nervus buccalis",
+   "anglais": "Buccal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf buccal",
+   "ta2": "6258"
+  },
+  {
+   "id": "nerf-cochleaire",
+   "nom": "Nerf cochléaire",
+   "latin": "Nervus cochlearis",
+   "anglais": "Cochlear nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf cochléaire",
+   "ta2": "6318"
+  },
+  {
+   "id": "nerf-lingual",
+   "nom": "Nerf lingual",
+   "latin": "Nervus lingualis",
+   "anglais": "Lingual nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf lingual",
+   "ta2": "6267"
+  },
+  {
+   "id": "nerf-mentonnier",
+   "nom": "Nerf mentonnier",
+   "latin": "Nervus mentalis",
+   "anglais": "Mental nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf mentonnier",
+   "ta2": "6279"
+  },
+  {
+   "id": "nerf-mylohyoidien",
+   "nom": "Nerf mylohyoïdien",
+   "latin": "Nervus mylohyoideus",
+   "anglais": "Nerve to mylohyoid muscle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf mylohyoïdien",
+   "ta2": "6275"
+  },
+  {
+   "id": "nerf-optique-ii",
+   "nom": "Nerf optique (II)",
+   "latin": "Nervus opticus (II)",
+   "anglais": "Optic nerve (II)",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf optique (II)",
+   "ta2": "6183"
+  },
+  {
+   "id": "nerf-trijumeau-v",
+   "nom": "Nerf trijumeau (V)",
+   "latin": "Nervus trigeminus (V)",
+   "anglais": "Trigeminal nerve (V)",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf trijumeau (V)",
+   "ta2": "6192"
+  },
+  {
+   "id": "nerf-vestibulocochleaire-viii",
+   "nom": "Nerf vestibulocochléaire (VIII)",
+   "latin": "Nervus vestibulocochlearis (VIII)",
+   "anglais": "Vestibulocochlear nerve (VIII)",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nerf vestibulocochléaire (VIII)",
+   "ta2": "6307"
+  },
+  {
+   "id": "strie-terminale",
+   "nom": "Strie terminale",
+   "latin": "Stria terminalis",
+   "anglais": "Stria terminalis",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Strie terminale",
+   "ta2": "5592"
+  },
+  {
+   "id": "tractus-optique",
+   "nom": "Tractus optique",
+   "latin": "Tractus opticus",
+   "anglais": "Optic tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tractus optique",
+   "ta2": "5669"
+  },
+  {
+   "id": "ganglion-spinal",
+   "nom": "Ganglion spinal",
+   "latin": "Ganglion spinale",
+   "anglais": "Spinal ganglion",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Ganglion spinal",
+   "ta2": "6167",
+   "nature": "ganglion"
+  }
+ ]
+}

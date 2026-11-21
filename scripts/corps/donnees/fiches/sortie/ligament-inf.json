@@ -1,0 +1,3442 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918) : syndesmologie (articulations du bassin, de la hanche, du genou, de la cheville et du pied) et myologie de la région fessière (texte intégral, Internet Archive)",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "kenhub-hanche": {
+   "titre": "Kenhub, Hip joint",
+   "url": "https://www.kenhub.com/en/library/anatomy/hip-joint"
+  },
+  "kenhub-genou": {
+   "titre": "Kenhub, Knee joint: anatomy, ligaments and movements",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-knee-joint"
+  },
+  "kenhub-cheville": {
+   "titre": "Kenhub, Ankle joint: anatomy, bones, ligaments and movements",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-ankle-joint"
+  },
+  "kenhub-pied": {
+   "titre": "Kenhub, Joints and ligaments of the foot",
+   "url": "https://www.kenhub.com/en/library/anatomy/joints-and-ligaments-of-the-foot"
+  },
+  "kenhub-ligaments-mi": {
+   "titre": "Kenhub, Ligaments of the lower limb: pelvis, knee, ankle",
+   "url": "https://www.kenhub.com/en/library/anatomy/ligaments-of-the-lower-limb"
+  },
+  "kenhub-latfl": {
+   "titre": "Kenhub, Anterior talofibular ligament",
+   "url": "https://www.kenhub.com/en/library/anatomy/anterior-talofibular-ligament"
+  },
+  "kenhub-lcf": {
+   "titre": "Kenhub, Calcaneofibular ligament",
+   "url": "https://www.kenhub.com/en/library/anatomy/calcaneofibular-ligament"
+  },
+  "kenhub-menisque-medial": {
+   "titre": "Kenhub, Medial meniscus",
+   "url": "https://www.kenhub.com/en/library/anatomy/medial-meniscus"
+  },
+  "kenhub-menisque-lateral": {
+   "titre": "Kenhub, Lateral meniscus of the knee",
+   "url": "https://www.kenhub.com/en/library/anatomy/lateral-meniscus"
+  },
+  "kenhub-transverse-tarse": {
+   "titre": "Kenhub, Transverse tarsal joint",
+   "url": "https://www.kenhub.com/en/library/anatomy/transverse-tarsal-joint"
+  },
+  "kenhub-mtp": {
+   "titre": "Kenhub, Metatarsophalangeal (MTP) joints",
+   "url": "https://www.kenhub.com/en/library/anatomy/metatarsophalangeal-mtp-joints"
+  },
+  "kenhub-tarsometatarsien": {
+   "titre": "Kenhub, Tarsometatarsal joints",
+   "url": "https://www.kenhub.com/en/library/anatomy/tarsometatarsal-joint"
+  },
+  "kenhub-bursa": {
+   "titre": "Kenhub, Bursa: anatomy, structure and function",
+   "url": "https://www.kenhub.com/en/library/anatomy/bursa"
+  },
+  "tma-genou": {
+   "titre": "TeachMeAnatomy, The Knee Joint",
+   "url": "https://teachmeanatomy.info/lower-limb/joints/knee-joint/"
+  },
+  "tma-hanche": {
+   "titre": "TeachMeAnatomy, The Hip Joint",
+   "url": "https://teachmeanatomy.info/lower-limb/joints/hip-joint/"
+  },
+  "tma-cheville": {
+   "titre": "TeachMeAnatomy, The Ankle Joint",
+   "url": "https://teachmeanatomy.info/lower-limb/joints/ankle-joint/"
+  },
+  "tma-tibiofibulaires": {
+   "titre": "TeachMeAnatomy, Tibiofibular joints",
+   "url": "https://teachmeanatomy.info/lower-limb/joints/tibiofibular-joints/"
+  },
+  "sp-cheville": {
+   "titre": "StatPearls, Anatomy, Bony Pelvis and Lower Limb: Ankle Joint",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK545158/"
+  },
+  "sp-entorse": {
+   "titre": "StatPearls, Acute Ankle Sprain",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK459212/"
+  },
+  "sp-lca": {
+   "titre": "StatPearls, Anterior Cruciate Ligament Knee Injury",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK499848/"
+  },
+  "sp-lcp-anat": {
+   "titre": "StatPearls, Anatomy, Bony Pelvis and Lower Limb: Knee Posterior Cruciate Ligament",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535416/"
+  },
+  "sp-lcp-lesion": {
+   "titre": "StatPearls, Posterior Cruciate Ligament Knee Injuries",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK430726/"
+  },
+  "sp-lcm": {
+   "titre": "StatPearls, Medial Collateral Ligament Knee Injury",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK431095/"
+  },
+  "sp-lcl": {
+   "titre": "StatPearls, Lateral Collateral Ligament Knee Injury",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK560847/"
+  },
+  "sp-menisque-medial": {
+   "titre": "StatPearls, Anatomy, Bony Pelvis and Lower Limb: Medial Meniscus",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK537276/"
+  },
+  "sp-menisque-lateral": {
+   "titre": "StatPearls, Anatomy, Bony Pelvis and Lower Limb, Knee Lateral Meniscus",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK519494/"
+  },
+  "sp-lesions-meniscales": {
+   "titre": "StatPearls, Knee Meniscal Tears",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK431067/"
+  },
+  "sp-genou": {
+   "titre": "StatPearls, Anatomy, Bony Pelvis and Lower Limb, Knee",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK500017/"
+  },
+  "sp-bourses-cutanees": {
+   "titre": "StatPearls, Anatomy, Skin Bursa",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK554438/"
+  },
+  "sp-bursite-prepatellaire": {
+   "titre": "StatPearls, Prepatellar Bursitis",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK557508/"
+  },
+  "sp-conflit-hanche": {
+   "titre": "StatPearls, Femoroacetabular Impingement",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK547699/"
+  },
+  "rp-bourse-iliopsoas": {
+   "titre": "Radiopaedia, Iliopsoas bursa",
+   "url": "https://radiopaedia.org/articles/iliopsoas-bursa"
+  },
+  "rp-bifurque": {
+   "titre": "Radiopaedia, Bifurcate ligament",
+   "url": "https://radiopaedia.org/articles/bifurcate-ligament"
+  },
+  "rp-ressort": {
+   "titre": "Radiopaedia, Spring ligament complex",
+   "url": "https://radiopaedia.org/articles/spring-ligament-complex"
+  },
+  "rp-lisfranc": {
+   "titre": "Radiopaedia, Lisfranc injury",
+   "url": "https://radiopaedia.org/articles/lisfranc-injury"
+  },
+  "rp-cheville": {
+   "titre": "Radiopaedia, Ankle joint",
+   "url": "https://radiopaedia.org/articles/ankle-joint-2"
+  },
+  "rp-anserine": {
+   "titre": "Radiopaedia, Pes anserinus bursa",
+   "url": "https://radiopaedia.org/articles/pes-anserinus-bursa"
+  },
+  "rp-calcaneen": {
+   "titre": "Radiopaedia, Retrocalcaneal bursitis",
+   "url": "https://radiopaedia.org/articles/retrocalcaneal-bursitis"
+  },
+  "rp-trochanterien": {
+   "titre": "Radiopaedia, Trochanteric bursitis",
+   "url": "https://radiopaedia.org/articles/trochanteric-bursitis"
+  },
+  "rp-maisonneuve": {
+   "titre": "Radiopaedia, Maisonneuve fracture",
+   "url": "https://radiopaedia.org/articles/maisonneuve-fracture"
+  },
+  "rp-replis-hanche": {
+   "titre": "Radiopaedia, Synovial folds of the hip",
+   "url": "https://images.radiopaedia.org/articles/synovial-folds-of-the-hip?lang=us"
+  },
+  "pmc-bourses-genou": {
+   "titre": "PMC, Knee Bursae: A Comprehensive Review of Clinical Evaluation, Imaging Differentiation, and the Expanding Role of Biologic Therapies",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12619696/"
+  },
+  "wiki-bourses-genou": {
+   "titre": "Wikipedia (en), Knee bursae",
+   "url": "https://en.wikipedia.org/wiki/Knee_bursae"
+  },
+  "wiki-bursa": {
+   "titre": "Wikipedia (en), Bursa (anatomy)",
+   "url": "https://en.wikipedia.org/wiki/Bursa_(anatomy)"
+  },
+  "wiki-membrane-obturatrice": {
+   "titre": "Wikipedia (en), Obturator membrane",
+   "url": "https://en.wikipedia.org/wiki/Obturator_membrane"
+  },
+  "wiki-capsule-hanche": {
+   "titre": "Wikipedia (en), Capsule of hip joint",
+   "url": "https://en.wikipedia.org/wiki/Capsule_of_hip_joint"
+  },
+  "anatomytool-bourses": {
+   "titre": "AnatomyTool, Bursae membri inferioris (liste de la nomenclature, sans description)",
+   "url": "https://anatomytool.org/node/50225"
+  },
+  "imaios-bourse-biceps-sup": {
+   "titre": "IMAIOS e-Anatomy, Superior bursa of biceps femoris muscle",
+   "url": "https://www.imaios.cn/en/e-anatomy/anatomical-structures/superior-bursa-of-biceps-femoris-muscle-1541090276"
+  },
+  "imaios-meniscopatellaire": {
+   "titre": "IMAIOS e-Anatomy, Meniscopatellar ligament",
+   "url": "https://www.imaios.cn/en/e-anatomy/anatomical-structures/meniscopatellar-ligament-1537029652"
+  },
+  "wikism-meniscopatellaire": {
+   "titre": "WikiSM, Meniscopatellar ligament",
+   "url": "https://wikism.org/Meniscopatellar_Ligament"
+  },
+  "flexikon-bourse-piriforme": {
+   "titre": "DocCheck Flexikon, Bursa musculi piriformis",
+   "url": "https://flexikon.doccheck.com/de/Bursa_musculi_piriformis"
+  },
+  "flexikon-bourse-tibial-ant": {
+   "titre": "DocCheck Flexikon, Bursa subtendinea musculi tibialis anterioris",
+   "url": "https://flexikon.doccheck.com/de/Bursa_subtendinea_musculi_tibialis_anterioris"
+  },
+  "flexikon-bourse-obt-int": {
+   "titre": "DocCheck Flexikon, Bursa ischiadica musculi obturatorii interni",
+   "url": "https://flexikon.doccheck.com/de/Bursa_ischiadica_musculi_obturatorii_interni"
+  },
+  "flexikon-bourse-biceps-inf": {
+   "titre": "DocCheck Flexikon, Bursa subtendinea musculi bicipitis femoris inferior",
+   "url": "https://flexikon.doccheck.com/de/Bursa_subtendinea_musculi_bicipitis_femoris_inferior"
+  }
+ },
+ "fiches": [
+  {
+   "id": "bourses-gluteales-intermusculaires",
+   "resume": "Les petits sacs lubrifiés glissés entre les muscles et tendons fessiers, au voisinage du grand trochanter.",
+   "nature": "bourse",
+   "articulation": "Hanche (région glutéale)",
+   "attaches": [],
+   "situation": "Entre les muscles fessiers entre eux, et entre le tendon du grand fessier et celui du vaste latéral",
+   "role": "Réduisent le frottement entre les couches fessières quand elles glissent l'une sur l'autre",
+   "tendu": null,
+   "test": null,
+   "clinique": "Leur irritation participe au syndrome douloureux du grand trochanter : douleur du côté de la hanche, sensible à la palpation",
+   "memo": "Entre les fessiers, ces sacs sont les coussinets du glissement",
+   "variantes": "Nombre et taille variables d'une personne à l'autre",
+   "sources": [
+    "gray1918",
+    "anatomytool-bourses",
+    "rp-trochanterien"
+   ],
+   "divergences": "La nomenclature parle de bourses intermusculaires fessières sans les décrire ; l'emplacement vient de Gray (tendons du grand fessier et du vaste latéral)"
+  },
+  {
+   "id": "capsule-articulaire-du-genou",
+   "resume": "Le manchon fibreux du genou : mince en avant et en arrière, renforcé par les ligaments et les tendons voisins.",
+   "nature": "capsule",
+   "articulation": "Genou (articulations fémoro-tibiale et fémoro-patellaire)",
+   "attaches": [
+    {
+     "texte": "Fémur : au-dessus des surfaces articulaires des condyles et autour de la fosse intercondylaire",
+     "os": [
+      "femur"
+     ]
+    },
+    {
+     "texte": "Tibia : pourtour des condyles tibiaux",
+     "os": [
+      "tibia"
+     ]
+    },
+    {
+     "texte": "Patella : bords de la patella",
+     "os": [
+      "patella"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Enveloppe l'articulation et la maintient ; mince et renforcée par fascia lata, tendons du quadriceps et des ischio-jambiers et ligaments",
+   "tendu": "Surtout sa partie postérieure, en extension",
+   "test": null,
+   "clinique": "Un épanchement ou un saignement (hémarthrose, après une rupture du ligament croisé antérieur) la distend ; la bourse gastrocnémienne médiale communique avec elle et peut former un kyste poplité",
+   "memo": "Le genou a la plus grande synoviale du corps, tendue dans un manchon peu épais",
+   "variantes": "Au-dessus de la patella, la capsule est remplacée par la seule membrane synoviale (poche suprapatellaire)",
+   "sources": [
+    "gray1918",
+    "sp-genou",
+    "sp-lca",
+    "pmc-bourses-genou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "zone-orbiculaire",
+   "resume": "Le collier de fibres circulaires qui serre le col du fémur à l'intérieur de la capsule de la hanche.",
+   "nature": "capsule",
+   "articulation": "Hanche (articulation coxo-fémorale)",
+   "attaches": [
+    {
+     "texte": "Fibres circulaires autour du col du fémur, sans attache osseuse propre",
+     "os": [
+      "femur"
+     ]
+    },
+    {
+     "texte": "En avant, elles se mêlent à la couche profonde du ligament iliofémoral et à l'épine iliaque antéro-inférieure",
+     "os": [
+      "ilium"
+     ]
+    }
+   ],
+   "situation": "Épaississement profond de la capsule, plus dense en bas et en arrière du col fémoral",
+   "role": "Forme un collier autour du col et aide à retenir la tête du fémur dans l'acétabulum",
+   "tendu": null,
+   "test": null,
+   "clinique": "La capsule est la plus mince en bas et en arrière : la tête y passe dans la luxation postérieure, la plus fréquente (environ 90 % des luxations acquises)",
+   "memo": "Un anneau autour du col : la tête ne peut pas sortir par le goulot",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-hanche",
+    "tma-hanche"
+   ],
+   "divergences": "Appelée aussi ligament annulaire par certains auteurs ; Gray la décrit comme les fibres circulaires de la capsule"
+  },
+  {
+   "id": "membrane-interosseuse-de-la-jambe",
+   "resume": "La lame fibreuse tendue entre le tibia et la fibula, qui les lie et sépare les loges de la jambe.",
+   "nature": "membrane",
+   "articulation": "Jambe (entre tibia et fibula)",
+   "attaches": [
+    {
+     "texte": "Crête interosseuse du tibia",
+     "os": [
+      "tibia"
+     ]
+    },
+    {
+     "texte": "Crête interosseuse de la fibula",
+     "os": [
+      "fibula"
+     ]
+    }
+   ],
+   "situation": "Entre les deux crêtes interosseuses, de l'extrémité haute de la jambe jusqu'à la syndesmose tibio-fibulaire",
+   "role": "Lie solidement les deux os, sépare les loges antérieure et postérieure, laisse passer les vaisseaux tibiaux antérieurs par son orifice haut",
+   "tendu": null,
+   "test": null,
+   "clinique": "Dans la fracture de Maisonneuve (rotation externe), la fibula casse en haut et la syndesmose s'ouvre à la cheville : on radiographie toute la jambe",
+   "memo": "Un hamac de fibres obliques, percé en haut pour l'artère tibiale antérieure",
+   "variantes": "Largeur variable ; les fibres vont surtout vers le bas et le dehors, quelques-unes en sens inverse",
+   "sources": [
+    "gray1918",
+    "tma-tibiofibulaires",
+    "rp-maisonneuve"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "capsules-articulaires-des-art-metatarsophalangiennes",
+   "resume": "Les manchons lâches des articulations entre métatarsiens et orteils, renforcés sous le pied par les plaques plantaires.",
+   "nature": "capsule",
+   "articulation": "Pied (articulations métatarsophalangiennes)",
+   "attaches": [
+    {
+     "texte": "Tête du métatarsien, près du bord articulaire",
+     "os": [
+      "metatarsiens"
+     ]
+    },
+    {
+     "texte": "Base de la phalange proximale, près du bord articulaire",
+     "os": [
+      "phalanges-pied"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Enveloppent l'articulation ; très fines sur le dessus où les tendons extenseurs les doublent, épaissies sous le pied par les ligaments plantaires",
+   "tendu": null,
+   "test": null,
+   "clinique": "Le hallux valgus déforme la première : le métatarsien dévie vers le dedans, le gros orteil vers le dehors, et un oignon (bursite) se forme",
+   "memo": "Une capsule fine sur le dessus, épaisse sous la plante",
+   "variantes": "Cinq articulations, la première étant la plus grosse et munie de deux sésamoïdes",
+   "sources": [
+    "gray1918",
+    "kenhub-mtp"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligaments-interphalangiens-collateraux-du-pied",
+   "resume": "Les cordons latéraux qui tiennent chaque articulation entre phalanges des orteils de part et d'autre.",
+   "nature": "groupe",
+   "articulation": "Pied (articulations interphalangiennes)",
+   "attaches": [
+    {
+     "texte": "Côtés des têtes des phalanges proximale et moyenne",
+     "os": [
+      "phalanges-pied"
+     ]
+    },
+    {
+     "texte": "Côtés des bases des phalanges moyenne et distale",
+     "os": [
+      "phalanges-pied"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Empêchent le fléchissement latéral des orteils : chaque articulation n'a que la flexion et l'extension",
+   "tendu": null,
+   "test": null,
+   "clinique": "Une entorse d'orteil (choc contre un obstacle) touche d'abord ces ligaments : douleur, gonflement, orteil instable ou dévié",
+   "memo": "Deux ficelles latérales et un plancher : l'orteil ne se plie que d'avant en arrière",
+   "variantes": "Chaque orteil en a deux par articulation ; le gros orteil n'a qu'une seule articulation interphalangienne",
+   "sources": [
+    "gray1918",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bourse-infrapatellaire-profonde",
+   "resume": "Le coussinet situé derrière le bas du ligament patellaire, contre le tibia.",
+   "nature": "bourse",
+   "articulation": "Genou (face antérieure)",
+   "attaches": [],
+   "situation": "Entre le ligament patellaire et la partie haute de la face antérieure du tibia, près de la tubérosité tibiale",
+   "role": "Évite le frottement du ligament patellaire sur le tibia, surtout quand le genou fléchit",
+   "tendu": null,
+   "test": null,
+   "clinique": "Une bursite se voit dans les sauts répétés, avec douleur sous la patella ; elle peut se confondre avec la tendinopathie patellaire",
+   "memo": "Profonde = sous le ligament, contre l'os ; superficielle = au-dessus, contre la peau",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "pmc-bourses-genou",
+    "wiki-bourses-genou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bourse-ischiatique-du-grand-fessier",
+   "resume": "Le sac de glissement entre le grand fessier et la tubérosité ischiatique, souvent absent.",
+   "nature": "bourse",
+   "articulation": "Hanche (région glutéale)",
+   "attaches": [],
+   "situation": "Entre le bord inférieur du grand fessier et la tubérosité ischiatique",
+   "role": "Protège le bas du grand fessier au contact de la tubérosité ischiatique quand on s'assoit",
+   "tendu": null,
+   "test": null,
+   "clinique": "Quand elle existe et s'enflamme, elle donne une douleur de la fesse à l'appui sur l'ischium, en position assise prolongée",
+   "memo": "Le coussin sous l'os sur lequel on s'assoit",
+   "variantes": "Souvent absente selon Gray",
+   "sources": [
+    "gray1918",
+    "anatomytool-bourses"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bourse-prepatellaire-sous-cutanee",
+   "resume": "Le coussinet entre la peau et le devant de la patella.",
+   "nature": "bourse",
+   "articulation": "Genou (face antérieure)",
+   "attaches": [],
+   "situation": "Entre la peau et la face antérieure de la patella, au-dessus du fascia",
+   "role": "Permet à la peau de glisser sur la patella quand le genou plie",
+   "tendu": null,
+   "test": null,
+   "clinique": "Bursite prépatellaire (genou de la ménagère) : gonflement rouge et chaud devant la patella après agenouillement répété ; un tiers des cas sont septiques",
+   "memo": "Celle sur laquelle on s'agenouille pour frotter le sol",
+   "variantes": null,
+   "sources": [
+    "sp-bursite-prepatellaire",
+    "gray1918",
+    "wiki-bourses-genou",
+    "sp-bourses-cutanees"
+   ],
+   "divergences": "Les références décrivent une seule bourse prépatellaire ; la distinction entre sous-cutanée, subfasciale et sous-tendineuse vient de la nomenclature"
+  },
+  {
+   "id": "bourse-prepatellaire-subfasciale",
+   "resume": "La couche moyenne des bourses prépatellaires : sous le fascia, devant la patella.",
+   "nature": "bourse",
+   "articulation": "Genou (face antérieure)",
+   "attaches": [],
+   "situation": "Entre le fascia superficiel de la cuisse et la face antérieure de la patella, sous la bourse sous-cutanée",
+   "role": "Facilite le glissement du fascia de la cuisse sur la patella",
+   "tendu": null,
+   "test": null,
+   "clinique": "Elle participe à la bursite prépatellaire (genou de la ménagère) : gonflement douloureux devant la patella après un traumatisme ou un agenouillement répété",
+   "memo": "Subfasciale : sous la gaine fibreuse, avant la patella",
+   "variantes": "Inconstante en tant que sac distinct",
+   "sources": [
+    "sp-bursite-prepatellaire",
+    "gray1918",
+    "anatomytool-bourses"
+   ],
+   "divergences": "Les références consultées ne séparent pas cette bourse de la prépatellaire ; la couche subfasciale vient de la nomenclature"
+  },
+  {
+   "id": "bourse-sous-cutanee-infrapatellaire",
+   "resume": "Le coussinet entre la peau et le ligament patellaire, juste sous la patella.",
+   "nature": "bourse",
+   "articulation": "Genou (face antérieure)",
+   "attaches": [],
+   "situation": "Entre la peau et le ligament patellaire, sous la patella, jusqu'à la tubérosité tibiale",
+   "role": "Amortit la peau qui frotte sur le ligament patellaire et la tubérosité tibiale",
+   "tendu": null,
+   "test": null,
+   "clinique": "Bursite infrapatellaire (genou du bedeau) : gonflement douloureux sous la patella après agenouillement répété",
+   "memo": "Le genou du bedeau : celui qui s'agenouille longtemps pour prier",
+   "variantes": null,
+   "sources": [
+    "tma-genou",
+    "gray1918",
+    "wiki-bourses-genou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bourse-subtendineuse-du-muscle-iliaque",
+   "resume": "Le sac sous le tendon de l'iliopsoas, qui le protège près de son insertion sur le fémur.",
+   "nature": "bourse",
+   "articulation": "Hanche (région inguinale)",
+   "attaches": [],
+   "situation": "Sous le tendon terminal de l'iliopsoas, entre ce tendon et le petit trochanter du fémur",
+   "role": "Réduit le frottement du tendon de l'iliopsoas sur l'os",
+   "tendu": null,
+   "test": null,
+   "clinique": "Bursite iliopsoas : la bourse, normalement collabée, se distend ; elle est située en dehors des vaisseaux fémoraux communs",
+   "memo": "Un sac sous la corde du psoas-iliaque",
+   "variantes": null,
+   "sources": [
+    "rp-bourse-iliopsoas",
+    "kenhub-hanche",
+    "gray1918"
+   ],
+   "divergences": "Gray, Radiopaedia et Kenhub décrivent surtout la bourse iliopectinée devant la capsule de la hanche ; la bourse du petit trochanter est celle de la nomenclature"
+  },
+  {
+   "id": "bourse-subtendineuse-laterale-des-muscles-gastrocnemiens",
+   "resume": "Le sac derrière le genou, sous le chef latéral du gastrocnémien.",
+   "nature": "bourse",
+   "articulation": "Genou (face postérieure, côté latéral)",
+   "attaches": [],
+   "situation": "Entre le tendon d'origine du chef latéral du gastrocnémien et la capsule du genou, contre le condyle latéral du fémur",
+   "role": "Facilite le glissement du chef latéral du gastrocnémien sur la capsule et le condyle latéral",
+   "tendu": null,
+   "test": null,
+   "clinique": "Peut communiquer avec l'articulation : un épanchement du genou s'y étend alors vers l'arrière",
+   "memo": "Le sac latéral, jumeau du médial",
+   "variantes": "Communique parfois avec la cavité articulaire",
+   "sources": [
+    "gray1918",
+    "wiki-bourses-genou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bourse-subtendineuse-mediale",
+   "resume": "Le sac derrière le genou, sous le chef médial du gastrocnémien : celui du kyste de Baker.",
+   "nature": "bourse",
+   "articulation": "Genou (face postérieure, côté médial)",
+   "attaches": [],
+   "situation": "Entre le tendon du chef médial du gastrocnémien et la capsule du genou, avec une extension vers le tendon du semi-membraneux",
+   "role": "Facilite le glissement du chef médial du gastrocnémien sur la capsule ; elle se prolonge vers le tendon du semi-membraneux",
+   "tendu": null,
+   "test": null,
+   "clinique": "Kyste poplité (de Baker) : renflement derrière le genou fait de liquide articulaire, dans l'arthrose ou une lésion de la corne postérieure du ménisque médial",
+   "memo": "Médiale et poplitée : le Baker y habite",
+   "variantes": "Communique souvent avec l'articulation par un canal à sens unique",
+   "sources": [
+    "gray1918",
+    "pmc-bourses-genou",
+    "wiki-bourses-genou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bourse-subtendineuse-prepatellaire",
+   "resume": "La couche profonde des bourses prépatellaires : sous le tendon du quadriceps, devant la patella.",
+   "nature": "bourse",
+   "articulation": "Genou (face antérieure)",
+   "attaches": [],
+   "situation": "Entre le tendon du quadriceps (ou son aponévrose) et la face antérieure de la patella",
+   "role": "Aide le glissement du tendon du quadriceps sur la patella",
+   "tendu": null,
+   "test": null,
+   "clinique": "Elle peut s'enflammer avec les autres bourses prépatellaires : gonflement douloureux devant la patella, mobilité du genou conservée",
+   "memo": "La plus profonde des trois : au contact de l'os",
+   "variantes": "Inconstante",
+   "sources": [
+    "sp-bursite-prepatellaire",
+    "gray1918",
+    "wiki-bourses-genou"
+   ],
+   "divergences": "Les références consultées n'individualisent pas cette bourse ; elle est mentionnée par la nomenclature entre parenthèses"
+  },
+  {
+   "id": "bourse-suprapatellaire",
+   "resume": "La poche au-dessus de la patella, qui prolonge la cavité du genou sous le quadriceps.",
+   "nature": "bourse",
+   "articulation": "Genou (face antérieure, au-dessus de la patella)",
+   "attaches": [],
+   "situation": "Entre la face antérieure de la partie basse du fémur et la face profonde du quadriceps, au-dessus de la patella",
+   "role": "Permet le glissement du tendon du quadriceps sur la face antérieure du fémur quand le genou plie",
+   "tendu": null,
+   "test": null,
+   "clinique": "Un épanchement du genou (arthrose, hémarthrose, infection) la distend : gonflement au-dessus de la patella",
+   "memo": "Suprapatellaire : au-dessus de la rotule, sous le quadriceps",
+   "variantes": "Communique avec l'articulation chez la plupart des adultes (environ 85 %)",
+   "sources": [
+    "gray1918",
+    "pmc-bourses-genou",
+    "wiki-bourses-genou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bourse-superieure-du-muscle-biceps-femoral",
+   "resume": "Le petit sac sous l'origine du biceps fémoral, près de l'ischium.",
+   "nature": "bourse",
+   "articulation": "Hanche (région postérieure de la cuisse)",
+   "attaches": [],
+   "situation": "Entre le tendon commun du chef long du biceps fémoral et du semi-tendineux, et la tubérosité ischiatique avec le tendon du semi-membraneux",
+   "role": "Réduit le frottement à l'origine proximale des ischio-jambiers",
+   "tendu": null,
+   "test": null,
+   "clinique": "Peu documentée : son inflammation donnerait une douleur profonde de la fesse basse à l'assise ou à la course",
+   "memo": "Le haut du biceps, près de l'os sur lequel on s'assoit",
+   "variantes": "Inconstante",
+   "sources": [
+    "imaios-bourse-biceps-sup",
+    "anatomytool-bourses"
+   ],
+   "divergences": "Les références détaillées sont rares ; le seul emplacement vient d'un atlas d'imagerie"
+  },
+  {
+   "id": "bourse-trochanterique-du-muscle-grand-fessier",
+   "resume": "Le grand sac entre le grand fessier et le grand trochanter.",
+   "nature": "bourse",
+   "articulation": "Hanche (face latérale)",
+   "attaches": [],
+   "situation": "Entre le tendon du grand fessier et la face latérale du grand trochanter",
+   "role": "Amortit le grand fessier qui glisse sur le grand trochanter",
+   "tendu": null,
+   "test": null,
+   "clinique": "Bursite trochantérienne : douleur latérale de hanche, vers le genou, sensible à la palpation ; on parle plutôt de syndrome douloureux du grand trochanter, car les tendons fessiers sont souvent en cause",
+   "memo": "Trochantérique : le coussin sous le fessier, sur la saillie de la hanche",
+   "variantes": "Souvent cloisonnée en plusieurs loges (multiloculaire)",
+   "sources": [
+    "gray1918",
+    "wiki-bursa",
+    "rp-trochanterien"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "freins-de-la-capsule",
+   "resume": "Les replis de la capsule de la hanche qui remontent le long du col du fémur et portent de petites artères.",
+   "nature": "capsule",
+   "articulation": "Hanche (col du fémur)",
+   "attaches": [
+    {
+     "texte": "Col du fémur, depuis l'insertion de la capsule jusqu'au bord de la surface articulaire de la tête",
+     "os": [
+      "femur"
+     ]
+    }
+   ],
+   "situation": "Replis qui montent du pourtour du col du fémur vers la tête, en avant, en bas et en dehors",
+   "role": "Replis synoviaux et fibreux qui guident les artères rétinaculaires vers la tête fémorale",
+   "tendu": null,
+   "test": null,
+   "clinique": "Leur vascularisation est fragile : une fracture du col peut priver la tête de sang et provoquer une nécrose avasculaire",
+   "memo": "Des rênes fixées au col : les petites artères de la tête y passent",
+   "variantes": "Le repli antérieur manque chez environ 60 % des personnes",
+   "sources": [
+    "gray1918",
+    "rp-replis-hanche",
+    "kenhub-hanche",
+    "tma-hanche"
+   ],
+   "divergences": "Gray parle de rétinaculums de la capsule sans employer le mot « freins » ; nous supposons qu'il s'agit des mêmes structures"
+  },
+  {
+   "id": "ligament-collateral-fibulaire",
+   "resume": "Le cordon rond du côté externe du genou, qui s'oppose au varus.",
+   "nature": "ligament",
+   "articulation": "Genou (articulation fémoro-tibiale)",
+   "attaches": [
+    {
+     "texte": "Épicondyle latéral du fémur, juste en arrière et au-dessus de l'origine du poplité",
+     "os": [
+      "femur"
+     ]
+    },
+    {
+     "texte": "Face latérale de la tête de la fibula",
+     "os": [
+      "fibula"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Résiste à la poussée vers l'intérieur du genou (varus) à toutes les flexions ; limite la rotation externe du tibia",
+   "tendu": "En extension ; il se relâche quand le genou fléchit",
+   "test": "Varus forcé à 0° et à 30° : une laxité à 30° seule oriente vers le ligament, persistante en extension elle fait craindre une atteinte du coin postéro-latéral",
+   "clinique": "Rupture rare, par coup sur le côté interne en hyperextension ; elle s'associe souvent à une lésion du coin postéro-latéral et peut atteindre le nerf fibulaire commun (environ 35 %)",
+   "memo": "Latéral = un cordon rond sans lien avec le ménisque ; médial = un large ruban collé au ménisque",
+   "variantes": "Séparé de la capsule ; le tendon du biceps fémoral le recouvre et le tendon du poplité passe sous lui",
+   "sources": [
+    "gray1918",
+    "sp-lcl",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-collateral-tibial",
+   "resume": "Le large ruban du côté interne du genou, qui s'oppose au valgus et tient le ménisque médial.",
+   "nature": "ligament",
+   "articulation": "Genou (articulation fémoro-tibiale)",
+   "attaches": [
+    {
+     "texte": "Partie superficielle : épicondyle médial du fémur",
+     "os": [
+      "femur"
+     ]
+    },
+    {
+     "texte": "Partie superficielle : face médiale du tibia, à plusieurs centimètres sous l'interligne",
+     "os": [
+      "tibia"
+     ]
+    },
+    {
+     "texte": "Partie profonde : bord du ménisque médial et tibia, épaississement de la capsule",
+     "os": [
+      "menisque-medial",
+      "tibia"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Résiste à la poussée vers l'extérieur du genou (valgus) ; freine la rotation externe du tibia ; rattache le ménisque médial",
+   "tendu": "En extension et en rotation externe",
+   "test": "Valgus forcé à 30° de flexion, puis en extension : un bâillement persistant en extension signe plus qu'une lésion isolée du ligament",
+   "clinique": "Lésion la plus fréquente des collatéraux, par coup sur le côté externe, pied appuyé ; avec le ligament croisé antérieur et le ménisque médial, elle compose la triade du genou",
+   "memo": "Médial = le large ruban attaché au ménisque, d'où des déchirures qui vont de pair",
+   "variantes": "Partie superficielle et partie profonde modélisées séparément",
+   "sources": [
+    "gray1918",
+    "sp-lcm",
+    "tma-genou",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-croise-anterieur",
+   "resume": "Le pivot central du genou : il empêche le tibia de partir en avant sous le fémur.",
+   "nature": "ligament",
+   "articulation": "Genou (articulation fémoro-tibiale)",
+   "attaches": [
+    {
+     "texte": "Face médiale du condyle latéral du fémur, en arrière",
+     "os": [
+      "femur"
+     ]
+    },
+    {
+     "texte": "Aire intercondylaire antérieure du tibia",
+     "os": [
+      "tibia"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Freine la translation antérieure du tibia et la rotation médiale ; limite l'hyperextension ; guide le roulement-glissement des condyles",
+   "tendu": "Faisceau postéro-latéral en extension, faisceau antéro-médial en flexion",
+   "test": "Test de Lachman (genou fléchi à 30°), tiroir antérieur (genou fléchi à 90°), ressaut rotatoire (pivot shift)",
+   "clinique": "Rupture lors d'un pivot genou à demi fléchi, pied bloqué (ski, football) : craquement, gonflement rapide (hémarthrose), puis dérobement ; souvent associée à une déchirure méniscale",
+   "memo": "Croisés comme les doigts : l'antérieur part de l'avant du tibia, le postérieur de l'arrière",
+   "variantes": "Deux faisceaux (antéro-médial et postéro-latéral)",
+   "sources": [
+    "gray1918",
+    "sp-lca",
+    "kenhub-genou",
+    "tma-genou"
+   ],
+   "divergences": "Gray le dit tendu en extension et le relie au ménisque latéral ; les sources récentes distinguent deux faisceaux selon la flexion"
+  },
+  {
+   "id": "ligament-croise-posterieur",
+   "resume": "Le pivot arrière du genou : il empêche le tibia de reculer sous le fémur.",
+   "nature": "ligament",
+   "articulation": "Genou (articulation fémoro-tibiale)",
+   "attaches": [
+    {
+     "texte": "Face latérale du condyle médial du fémur, en avant",
+     "os": [
+      "femur"
+     ]
+    },
+    {
+     "texte": "Aire intercondylaire postérieure du tibia",
+     "os": [
+      "tibia"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Freine la translation postérieure du tibia ; c'est le plus solide des deux croisés ; il contrôle aussi la rotation entre 90° et 120° de flexion",
+   "tendu": "En flexion (surtout le faisceau antéro-latéral) ; relâché en extension complète",
+   "test": "Tiroir postérieur (hanche à 45°, genou à 90°), signe du ballant postérieur du tibia",
+   "clinique": "Rupture par coup sur le haut du tibia fléchi (tableau de bord) ou chute sur le genou plié ; l'atteinte isolée est rare, le plus souvent associée à d'autres lésions",
+   "memo": "Le croisé postérieur retient le tibia qui voudrait reculer, comme un frein de recul",
+   "variantes": "Deux faisceaux, antéro-latéral plus gros et postéro-médial",
+   "sources": [
+    "gray1918",
+    "sp-lcp-anat",
+    "sp-lcp-lesion",
+    "kenhub-genou"
+   ],
+   "divergences": "Gray et StatPearls diffèrent sur la tension : Gray le dit tendu en extension, StatPearls en flexion ; nous retenons la flexion, plus admise"
+  },
+  {
+   "id": "ligament-meniscopatellaire",
+   "resume": "Le petit ligament qui relie le ménisque médial au bas de la patella.",
+   "nature": "ligament",
+   "articulation": "Genou (articulation fémoro-patellaire)",
+   "attaches": [
+    {
+     "texte": "Ménisque médial, vers sa corne antérieure",
+     "os": [
+      "menisque-medial"
+     ]
+    },
+    {
+     "texte": "Pôle inférieur de la patella",
+     "os": [
+      "patella"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Stabilise la patella du côté médial en renfort du rétinaculum patellaire médial ; retient la patella contre un déplacement latéral",
+   "tendu": null,
+   "test": null,
+   "clinique": "Il fait partie du plan médial qui s'oppose à la luxation latérale de la patella ; une lésion est cherchée après une luxation de la patella",
+   "memo": "Un lien discret entre le ménisque et la patella : une corde de renfort sur le côté médial",
+   "variantes": null,
+   "sources": [
+    "imaios-meniscopatellaire",
+    "wikism-meniscopatellaire",
+    "gray1918"
+   ],
+   "divergences": "Gray ne le décrit pas ; il parle seulement des rétinaculums patellaires médial et latéral qui comblent l'espace entre les ligaments"
+  },
+  {
+   "id": "ligament-poplite-arque",
+   "resume": "Le renfort en arc de la face postéro-latérale du genou, au-dessus du poplité.",
+   "nature": "ligament",
+   "articulation": "Genou (coin postéro-latéral)",
+   "attaches": [
+    {
+     "texte": "Face postérieure de la tête de la fibula",
+     "os": [
+      "fibula"
+     ]
+    },
+    {
+     "texte": "Capsule postérieure du genou, en passant en pont au-dessus du tendon du poplité",
+     "os": []
+    }
+   ],
+   "situation": null,
+   "role": "Renforce la capsule postéro-latérale, passe en pont sur le tendon du poplité et, avec le ligament poplité oblique, limite l'hyperextension",
+   "tendu": "En extension",
+   "test": null,
+   "clinique": "Un arrachement de la tête de la fibula (signe de l'arc) signe une lésion du coin postéro-latéral du genou, avec instabilité",
+   "memo": "Arqué comme un pont au-dessus du tendon du poplité",
+   "variantes": null,
+   "sources": [
+    "kenhub-genou",
+    "sp-genou",
+    "sp-lcl"
+   ],
+   "divergences": "Gray ne le décrit pas ; il n'y a que le ligament poplité oblique ; la forme exacte varie selon les auteurs"
+  },
+  {
+   "id": "ligament-poplite-oblique",
+   "resume": "L'expansion du semi-membraneux qui renforce l'arrière de la capsule du genou.",
+   "nature": "ligament",
+   "articulation": "Genou (face postérieure)",
+   "attaches": [
+    {
+     "texte": "Face postérieure du tibia, à l'arrière du condyle médial, en continuité avec le tendon du semi-membraneux",
+     "os": [
+      "tibia",
+      "tendon-semi-membraneux"
+     ]
+    },
+    {
+     "texte": "Fémur : au-dessus de la fosse intercondylaire, vers le condyle latéral",
+     "os": [
+      "femur"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce l'arrière de la capsule et limite l'hyperextension du genou",
+   "tendu": "En extension",
+   "test": null,
+   "clinique": "Frein du recurvatum : un genou qui s'hyperétend anormalement fait suspecter une atteinte de la capsule postérieure et des structures voisines",
+   "memo": "Un éventail tendu depuis le semi-membraneux, comme un gousset à l'arrière du genou",
+   "variantes": "Un faisceau du tendon du semi-membraneux le renforce",
+   "sources": [
+    "gray1918",
+    "kenhub-genou",
+    "sp-genou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-popliteofibulaire",
+   "resume": "Le haubane du coin postéro-latéral : il relie le tendon du poplité à la tête de la fibula.",
+   "nature": "ligament",
+   "articulation": "Genou (coin postéro-latéral)",
+   "attaches": [
+    {
+     "texte": "Jonction musculo-tendineuse du poplité",
+     "os": []
+    },
+    {
+     "texte": "Face postérieure de la tête de la fibula",
+     "os": [
+      "fibula"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Limite la rotation externe du tibia et le varus, surtout au-delà de 60° de flexion",
+   "tendu": "En rotation externe, surtout en flexion de plus de 60°",
+   "test": "Test de rotation externe (dial test) à 30° puis à 90° de flexion : écart de 10° ou plus avec l'autre côté",
+   "clinique": "Sa rupture entre dans les lésions du coin postéro-latéral, souvent avec le ligament croisé ; l'atteinte du nerf fibulaire commun est possible",
+   "memo": "Poplité, fibula : un fil tendu de l'un à l'autre qui retient la rotation externe",
+   "variantes": null,
+   "sources": [
+    "sp-lcl",
+    "sp-lcp-lesion",
+    "kenhub-genou"
+   ],
+   "divergences": "Gray ne décrit pas ce ligament ; sa description actuelle vient des travaux sur le coin postéro-latéral"
+  },
+  {
+   "id": "ligament-pubofemoral",
+   "resume": "Le renfort en bas et en avant de la capsule de la hanche, qui limite l'abduction.",
+   "nature": "ligament",
+   "articulation": "Hanche (articulation coxo-fémorale)",
+   "attaches": [
+    {
+     "texte": "Crête obturatrice et branche supérieure du pubis",
+     "os": [
+      "pubis"
+     ]
+    },
+    {
+     "texte": "Capsule et ligament iliofémoral, vers le bas du col du fémur",
+     "os": [
+      "femur",
+      "ligament-iliofemoral"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce la capsule en bas et en avant et limite l'abduction (et l'extension)",
+   "tendu": "En abduction et en extension",
+   "test": null,
+   "clinique": "La capsule est la plus fragile en arrière et en bas : les luxations acquises de la hanche sont postérieures dans environ 90 % des cas ; l'avant, renforcé par ce ligament, cède rarement",
+   "memo": "Pubis et fémur : le ligament du bas, qui empêche d'écarter la cuisse trop loin",
+   "variantes": "Se fond avec le ligament iliofémoral",
+   "sources": [
+    "gray1918",
+    "kenhub-hanche",
+    "tma-hanche",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-transverse-du-genou",
+   "resume": "Le trait d'union entre les cornes antérieures des deux ménisques, devant le plateau tibial.",
+   "nature": "ligament",
+   "articulation": "Genou (ménisques)",
+   "attaches": [
+    {
+     "texte": "Bord antérieur du ménisque latéral",
+     "os": [
+      "menisque-lateral"
+     ]
+    },
+    {
+     "texte": "Corne antérieure du ménisque médial",
+     "os": [
+      "menisque-medial"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relie les cornes antérieures des ménisques et participe à leur stabilité ; rôle exact incertain",
+   "tendu": null,
+   "test": null,
+   "clinique": "Lésion isolée rarissime ; en imagerie ou en arthroscopie, il se distingue d'une fissure de la corne antérieure",
+   "memo": "Un pont devant le plateau tibial entre les deux croissants",
+   "variantes": "Épaisseur variable ; parfois absent",
+   "sources": [
+    "gray1918",
+    "kenhub-genou",
+    "sp-menisque-medial",
+    "sp-menisque-lateral"
+   ],
+   "divergences": "Kenhub juge son rôle incertain ; Gray note qu'il manque parfois"
+  },
+  {
+   "id": "ligaments-menisco-tibiaux",
+   "resume": "Les attaches qui fixent le pourtour des ménisques au bord du plateau tibial.",
+   "nature": "menisque",
+   "articulation": "Genou (ménisques)",
+   "attaches": [
+    {
+     "texte": "Pourtour de chaque ménisque, de la corne antérieure à la corne postérieure",
+     "os": [
+      "menisque-medial",
+      "menisque-lateral"
+     ]
+    },
+    {
+     "texte": "Bord du plateau tibial, tout autour",
+     "os": [
+      "tibia"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retiennent chaque ménisque sur le tibia tout en le laissant glisser ; plus lâches du côté latéral, d'où un ménisque plus mobile",
+   "tendu": null,
+   "test": null,
+   "clinique": "Un arrachement de la racine méniscale (corne postérieure) fait sortir le ménisque de l'articulation (extrusion) et use le cartilage",
+   "memo": "Des courroies sous les croissants : elles les gardent sur le plateau",
+   "variantes": "Modélisés ici en quatre parties : antérieure et postérieure, de chaque ménisque",
+   "sources": [
+    "gray1918",
+    "sp-menisque-medial",
+    "kenhub-menisque-lateral"
+   ],
+   "divergences": "Gray ne les appelle pas ligaments : ce sont, pour lui, les parties de la capsule qui joignent le pourtour des ménisques au tibia (ligaments coronaires)"
+  },
+  {
+   "id": "membrane-obturatrice",
+   "resume": "La lame fibreuse qui ferme presque tout le foramen obturé du bassin.",
+   "nature": "membrane",
+   "articulation": "Bassin (foramen obturé)",
+   "attaches": [
+    {
+     "texte": "Pourtour du foramen obturé, sur le pubis",
+     "os": [
+      "pubis"
+     ]
+    },
+    {
+     "texte": "Pourtour du foramen obturé, sur l'ischium",
+     "os": [
+      "ischium"
+     ]
+    }
+   ],
+   "situation": "Dans le foramen obturé, entre les branches du pubis et de l'ischium",
+   "role": "Ferme le foramen obturé, sert d'insertion aux muscles obturateurs externe et interne et ménage en haut le canal obturateur",
+   "tendu": null,
+   "test": null,
+   "clinique": "Le canal obturateur laisse passer les vaisseaux et le nerf obturateurs ; c'est la voie, rare, de la hernie obturatrice",
+   "memo": "Un tambour fibreux tendu dans le cadre obturé, avec une fente en haut pour le nerf",
+   "variantes": null,
+   "sources": [
+    "wiki-membrane-obturatrice",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": "Gray ne la décrit pas dans le passage consulté ; elle n'est pas, au sens strict, un ligament"
+  },
+  {
+   "id": "menisque-lateral",
+   "resume": "Le croissant externe du genou : plus rond, plus mobile, il amortit et répartit la charge.",
+   "nature": "menisque",
+   "articulation": "Genou (articulation fémoro-tibiale)",
+   "attaches": [
+    {
+     "texte": "Corne antérieure : aire intercondylaire du tibia, devant l'éminence intercondylaire, près du ligament croisé antérieur",
+     "os": [
+      "tibia"
+     ]
+    },
+    {
+     "texte": "Corne postérieure : derrière l'éminence intercondylaire, devant la corne postérieure du ménisque médial",
+     "os": [
+      "tibia"
+     ]
+    },
+    {
+     "texte": "Corne postérieure : ligaments ménisco-fémoraux vers le condyle médial du fémur",
+     "os": [
+      "femur"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Approfondit la surface tibiale, répartit les charges, amortit et stabilise ; plus mobile, il n'est pas fixé au ligament collatéral fibulaire",
+   "tendu": null,
+   "test": "Test de McMurray, sensibilité de l'interligne externe (genou à 90°), test de Thessaly",
+   "clinique": "Déchirure moins fréquente que celle du médial, mais plus souvent associée à une rupture aiguë du ligament croisé antérieur ; douleur de l'interligne externe",
+   "memo": "Le croissant externe est presque un rond libre : il bouge, donc il se déchire moins",
+   "variantes": "Une forme discoïde, plus épaisse, existe chez certaines personnes",
+   "sources": [
+    "gray1918",
+    "sp-menisque-lateral",
+    "kenhub-menisque-lateral",
+    "sp-lesions-meniscales"
+   ],
+   "divergences": "Gray cite le ligament de Wrisberg ; StatPearls ne nomme pas les ligaments ménisco-fémoraux"
+  },
+  {
+   "id": "menisque-medial",
+   "resume": "Le croissant interne du genou : plus ouvert, fixé à la capsule et au ligament collatéral, donc plus exposé.",
+   "nature": "menisque",
+   "articulation": "Genou (articulation fémoro-tibiale)",
+   "attaches": [
+    {
+     "texte": "Corne antérieure : aire intercondylaire du tibia, devant le ligament croisé antérieur",
+     "os": [
+      "tibia",
+      "ligament-croise-anterieur"
+     ]
+    },
+    {
+     "texte": "Corne postérieure : aire intercondylaire postérieure, devant l'attache du ligament croisé postérieur",
+     "os": [
+      "tibia",
+      "ligament-croise-posterieur"
+     ]
+    },
+    {
+     "texte": "Pourtour fixé à la capsule et à la partie profonde du ligament collatéral tibial",
+     "os": [
+      "ligament-collateral-tibial"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Approfondit la surface tibiale médiale, répartit les charges, amortit et stabilise ; peu mobile car fixé au collatéral",
+   "tendu": null,
+   "test": "Test de McMurray, sensibilité de l'interligne interne (genou à 90°), test de Thessaly",
+   "clinique": "Déchirure fréquente, par torsion genou fléchi sous charge, associée à la rupture du croisé antérieur ; déchirure en anse de seau : genou bloqué ; triade du genou avec le croisé antérieur et le collatéral tibial",
+   "memo": "Le croissant interne est tenu par le collatéral : peu mobile, il casse plus souvent",
+   "variantes": "Seul le tiers externe est vascularisé (zone rouge) ; le reste, blanc, cicatrise mal",
+   "sources": [
+    "gray1918",
+    "sp-menisque-medial",
+    "kenhub-menisque-medial",
+    "sp-lesions-meniscales",
+    "tma-genou"
+   ],
+   "divergences": "Gray et TeachMeAnatomy diffèrent sur le ligament croisé antérieur : Gray le relie au ménisque latéral, TeachMeAnatomy au médial"
+  },
+  {
+   "id": "bourrelet-acetabulaire",
+   "resume": "Le bourrelet de fibrocartilage qui borde l'acétabulum et approfondit la cavité de la hanche.",
+   "nature": "labrum",
+   "articulation": "Hanche (articulation coxo-fémorale)",
+   "attaches": [
+    {
+     "texte": "Bord de l'acétabulum, sur toute la circonférence",
+     "os": [
+      "os-coxal"
+     ]
+    },
+    {
+     "texte": "En bas, il se continue par le ligament acétabulaire transverse qui ferme l'incisure",
+     "os": [
+      "ligament-acetabulaire-transverse"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Approfondit la cavité (environ 10 % de surface en plus), assure l'étanchéité autour de la tête et stabilise la hanche",
+   "tendu": null,
+   "test": "Test de conflit antérieur : hanche à 90° de flexion, en adduction et en rotation interne, douleur d'aine ; test FABER",
+   "clinique": "Déchirure du bourrelet : douleur d'aine, claquement ou accrochage, souvent avec un conflit fémoro-acétabulaire",
+   "memo": "Le joint d'étanchéité de la hanche : il serre la tête comme un anneau",
+   "variantes": "Plus épais en haut et en arrière",
+   "sources": [
+    "gray1918",
+    "kenhub-hanche",
+    "tma-hanche",
+    "sp-conflit-hanche"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bourse-du-muscle-piriforme",
+   "resume": "Le petit sac à l'insertion du piriforme, sur le grand trochanter.",
+   "nature": "bourse",
+   "articulation": "Hanche (région glutéale profonde)",
+   "attaches": [],
+   "situation": "Entre le tendon du piriforme d'un côté, le fémur et une partie du muscle jumeau supérieur de l'autre",
+   "role": "Réduit le frottement du tendon du piriforme sur le fémur et sur le muscle jumeau supérieur",
+   "tendu": null,
+   "test": null,
+   "clinique": "Rarement isolée : une douleur latérale de hanche vient le plus souvent des tendons fessiers (syndrome douloureux du grand trochanter)",
+   "memo": "Piriforme : un sac sous son tendon, tout contre le grand trochanter",
+   "variantes": "Inconstante",
+   "sources": [
+    "flexikon-bourse-piriforme",
+    "rp-trochanterien"
+   ],
+   "divergences": "Gray ne mentionne pas de bourse du piriforme"
+  },
+  {
+   "id": "bourse-iliopectinee",
+   "resume": "Le grand sac devant la hanche, entre le tendon de l'iliopsoas et la capsule.",
+   "nature": "bourse",
+   "articulation": "Hanche (région inguinale)",
+   "attaches": [],
+   "situation": "Entre l'iliopsoas (muscle et tendon) et la capsule antérieure de la hanche",
+   "role": "Amortit le tendon de l'iliopsoas sur la capsule et la tête du fémur quand la hanche bouge",
+   "tendu": null,
+   "test": null,
+   "clinique": "Bursite de l'iliopsoas : douleur d'aine ; la bourse, normalement collabée, se distend ; elle est en dehors des vaisseaux fémoraux communs",
+   "memo": "Sac de l'iliopsoas : il glisse sur la hanche comme un coussin d'aine",
+   "variantes": "Inconstante ; elle communique avec l'articulation dans environ 15 % des cas selon Radiopaedia",
+   "sources": [
+    "gray1918",
+    "rp-bourse-iliopsoas",
+    "kenhub-hanche"
+   ],
+   "divergences": "Kenhub la dit communiquante avec l'articulation, Radiopaedia chez environ 15 % des personnes, Gray parfois"
+  },
+  {
+   "id": "bourse-ischiatique-de-l-obturateur-interne",
+   "resume": "Le sac qui protège le tendon de l'obturateur interne là où il tourne sur l'ischium.",
+   "nature": "bourse",
+   "articulation": "Hanche (région glutéale profonde)",
+   "attaches": [],
+   "situation": "Entre le tendon de l'obturateur interne et la petite incisure ischiatique (partie cartilagineuse de l'ischium)",
+   "role": "Sert de poulie lisse au tendon de l'obturateur interne quand il change de direction sur l'ischium",
+   "tendu": null,
+   "test": null,
+   "clinique": "Une bursite est possible mais rare et peu documentée ; elle se manifeste par une douleur profonde de la fesse",
+   "memo": "Poulie de l'obturateur interne : un sac sur le coude de l'ischium",
+   "variantes": "Peut communiquer avec la bourse subtendineuse voisine",
+   "sources": [
+    "gray1918",
+    "flexikon-bourse-obt-int"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bourse-subtendineuse-de-l-obturateur-interne",
+   "resume": "Le sac étroit entre le tendon de l'obturateur interne et la capsule de la hanche.",
+   "nature": "bourse",
+   "articulation": "Hanche (région glutéale profonde)",
+   "attaches": [],
+   "situation": "Entre le tendon de l'obturateur interne et la capsule de la hanche, sac long et étroit",
+   "role": "Facilite le glissement du tendon de l'obturateur interne sur la capsule articulaire",
+   "tendu": null,
+   "test": null,
+   "clinique": "Une bursite est possible mais rare et peu documentée ; elle se manifeste par une douleur profonde de la fesse",
+   "memo": "Un petit sac étiré entre le tendon et la capsule",
+   "variantes": "Communique parfois avec la bourse ischiatique de l'obturateur interne",
+   "sources": [
+    "gray1918",
+    "anatomytool-bourses"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "capsule-articulaire-de-l-articulation-de-la-hanche",
+   "resume": "Le manchon fibreux de la hanche, épais en avant et en haut, mince en arrière et en bas.",
+   "nature": "capsule",
+   "articulation": "Hanche (articulation coxo-fémorale)",
+   "attaches": [
+    {
+     "texte": "Bord de l'acétabulum, au-delà du bourrelet, et ligament acétabulaire transverse",
+     "os": [
+      "os-coxal",
+      "ligament-acetabulaire-transverse"
+     ]
+    },
+    {
+     "texte": "Fémur : ligne intertrochantérienne en avant, col du fémur en arrière à environ 1,25 cm au-dessus de la crête intertrochantérique",
+     "os": [
+      "femur"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Enveloppe l'articulation et la stabilise, renforcée par les ligaments iliofémoral, pubofémoral et ischiofémoral",
+   "tendu": "En extension",
+   "test": null,
+   "clinique": "Luxation postérieure : la tête traverse la partie postéro-inférieure, la plus mince, et le nerf sciatique est menacé ; fracture du col intracapsulaire : risque de nécrose de la tête",
+   "memo": "Un manchon épais devant, mince derrière : la tête sort en arrière",
+   "variantes": "Fibres circulaires (zone orbiculaire) et longitudinales",
+   "sources": [
+    "gray1918",
+    "kenhub-hanche",
+    "tma-hanche",
+    "wiki-capsule-hanche"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-acetabulaire-transverse",
+   "resume": "Le pont qui ferme l'incisure de l'acétabulum et prolonge le bourrelet.",
+   "nature": "ligament",
+   "articulation": "Hanche (articulation coxo-fémorale)",
+   "attaches": [
+    {
+     "texte": "Bord de l'incisure acétabulaire, côté ischium",
+     "os": [
+      "ischium"
+     ]
+    },
+    {
+     "texte": "Bord de l'incisure acétabulaire, côté pubis",
+     "os": [
+      "pubis"
+     ]
+    }
+   ],
+   "situation": "Sur l'incisure de l'acétabulum, en bas du cotyle",
+   "role": "Complète en bas l'anneau du bourrelet acétabulaire et transforme l'incisure en un orifice pour les vaisseaux de l'articulation",
+   "tendu": null,
+   "test": null,
+   "clinique": "Il est lié au bourrelet : en cas de lésion labrale on l'examine avec lui ; lésion isolée très rare",
+   "memo": "Il bouche le trou du bas de la coupe, mais laisse passer l'artère",
+   "variantes": "Pauvre en cellules cartilagineuses, contrairement au bourrelet",
+   "sources": [
+    "gray1918",
+    "kenhub-hanche",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-de-la-tete-du-femur",
+   "resume": "Le ligament rond de la hanche : une petite bande interne, qui porte une artère pour la tête fémorale.",
+   "nature": "ligament",
+   "articulation": "Hanche (articulation coxo-fémorale)",
+   "attaches": [
+    {
+     "texte": "Fovéa de la tête du fémur",
+     "os": [
+      "femur"
+     ]
+    },
+    {
+     "texte": "Bords de l'incisure acétabulaire, en se mêlant au ligament transverse",
+     "os": [
+      "ischium",
+      "pubis",
+      "ligament-acetabulaire-transverse"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Apporte peu de stabilité mécanique ; il porte un rameau de l'artère obturatrice vers la tête du fémur",
+   "tendu": "Hanche à demi fléchie, en adduction ou en rotation externe ; relâché en abduction",
+   "test": null,
+   "clinique": "Dans la fracture du col fémoral, la tête dépend surtout des artères rétinaculaires : l'artère du ligament, grêle, la sauve mal ; risque de nécrose avasculaire",
+   "memo": "Le seul ligament dans la hanche : un cordon de vie plus qu'un cordon de force",
+   "variantes": "Parfois absent ou très mince",
+   "sources": [
+    "gray1918",
+    "kenhub-hanche",
+    "tma-hanche"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-iliofemoral",
+   "resume": "Le ligament en Y de la hanche : le plus fort du corps, il limite l'extension.",
+   "nature": "ligament",
+   "articulation": "Hanche (articulation coxo-fémorale)",
+   "attaches": [
+    {
+     "texte": "Épine iliaque antéro-inférieure et bord de l'acétabulum",
+     "os": [
+      "ilium"
+     ]
+    },
+    {
+     "texte": "Ligne intertrochantérienne du fémur, par deux faisceaux (latéral et médial)",
+     "os": [
+      "femur"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Empêche l'hyperextension de la hanche et permet de se tenir debout sans fatigue musculaire ; le faisceau latéral freine la rotation externe, le médial l'abduction",
+   "tendu": "En extension",
+   "test": null,
+   "clinique": "Les luxations acquises de la hanche sont postérieures dans environ 90 % des cas : l'avant, tenu par ce ligament, cède rarement",
+   "memo": "Le Y de Bigelow : une corde tendue sur le devant, qui nous retient quand on se tient droit",
+   "variantes": "Parties descendante (faisceau latéral) et transverse modélisées séparément",
+   "sources": [
+    "gray1918",
+    "kenhub-hanche",
+    "tma-hanche",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-iliolombaire",
+   "resume": "Le haubanage entre la dernière vertèbre lombale et l'ilium.",
+   "nature": "ligament",
+   "articulation": "Charnière lombo-sacrée (bassin)",
+   "attaches": [
+    {
+     "texte": "Processus transverse de la vertèbre L5",
+     "os": [
+      "vertebre-l5"
+     ]
+    },
+    {
+     "texte": "Crête iliaque, par une bande supérieure",
+     "os": [
+      "ilium"
+     ]
+    },
+    {
+     "texte": "Base du sacrum, en se mêlant au ligament sacro-iliaque antérieur",
+     "os": [
+      "sacrum",
+      "ligament-sacro-iliaque-anterieur"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relie L5 au bassin, empêche le glissement de L5 vers l'avant et résiste à l'écartement des os iliaques",
+   "tendu": null,
+   "test": null,
+   "clinique": "Évoqué dans les douleurs lombo-pelviennes basses, à côté de L5 et de la crête iliaque",
+   "memo": "Un hauban tendu de L5 aux deux côtés du bassin",
+   "variantes": "Musculaire dans l'enfance, il devient ligamentaire vers 50 à 60 ans selon Kenhub",
+   "sources": [
+    "gray1918",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": "Les bandes et leurs insertions varient selon les auteurs (deux bandes chez Gray)"
+  },
+  {
+   "id": "ligament-ischiofemoral",
+   "resume": "Le ligament postérieur de la hanche, en spirale autour du col du fémur.",
+   "nature": "ligament",
+   "articulation": "Hanche (articulation coxo-fémorale)",
+   "attaches": [
+    {
+     "texte": "Corps de l'ischium, en arrière et en dessous de l'acétabulum",
+     "os": [
+      "ischium"
+     ]
+    },
+    {
+     "texte": "Col du fémur et grand trochanter, en se fondant dans les fibres circulaires de la capsule",
+     "os": [
+      "femur"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce la capsule en arrière, freine la rotation médiale et l'hyperextension, et aide à garder la tête dans l'acétabulum",
+   "tendu": "En extension et en rotation médiale",
+   "test": null,
+   "clinique": "Dans la luxation postérieure, la tête perce la capsule en arrière et en bas ; le nerf sciatique est atteint dans 10 à 20 % des cas",
+   "memo": "Ischion et fémur : la spirale du fond de la hanche, la plus faible des trois",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-hanche",
+    "kenhub-hanche",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": "Gray lui attribue la limitation de la rotation médiale, TeachMeAnatomy celle de l'hyperextension ; Kenhub le dit le plus faible des trois"
+  },
+  {
+   "id": "ligament-sacro-iliaque-anterieur",
+   "resume": "La mince bande qui double la face antérieure de l'articulation sacro-iliaque.",
+   "nature": "ligament",
+   "articulation": "Bassin (articulation sacro-iliaque)",
+   "attaches": [
+    {
+     "texte": "Face antérieure du sacrum, partie latérale",
+     "os": [
+      "sacrum"
+     ]
+    },
+    {
+     "texte": "Bord de la surface auriculaire de l'ilium et sillon préauriculaire",
+     "os": [
+      "ilium"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Forme la partie antérieure de la capsule et maintient l'articulation ; limite l'ouverture vers l'avant",
+   "tendu": null,
+   "test": null,
+   "clinique": "Les articulations sacro-iliaques se relâchent pendant la grossesse, ce qui augmente leur mobilité",
+   "memo": "Le devant du joint du bassin : fin, mais continu avec le haubanage lombaire",
+   "variantes": "Fines bandes nombreuses plutôt qu'une lame unique",
+   "sources": [
+    "gray1918",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-sacro-iliaque-interosseux",
+   "resume": "Le lien profond et très court, entre les rugosités du sacrum et de l'ilium.",
+   "nature": "ligament",
+   "articulation": "Bassin (articulation sacro-iliaque)",
+   "attaches": [
+    {
+     "texte": "Tubérosité sacrée",
+     "os": [
+      "sacrum"
+     ]
+    },
+    {
+     "texte": "Tubérosité iliaque",
+     "os": [
+      "ilium"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Maintient très solidement le sacrum entre les deux os iliaques et résiste à son glissement vers le bas sous la charge",
+   "tendu": null,
+   "test": null,
+   "clinique": "Les articulations sacro-iliaques se relâchent pendant la grossesse : ce ligament cède avec les autres liens de l'articulation",
+   "memo": "La colle profonde du joint du bassin",
+   "variantes": "Fibres courtes et fortes, en profondeur du ligament postérieur",
+   "sources": [
+    "gray1918",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-sacro-iliaque-posterieur",
+   "resume": "Le ligament le plus puissant de l'articulation sacro-iliaque : il la renforce par l'arrière.",
+   "nature": "ligament",
+   "articulation": "Bassin (articulation sacro-iliaque)",
+   "attaches": [
+    {
+     "texte": "Tubercules transverses des vertèbres sacrées (S1 à S3)",
+     "os": [
+      "sacrum"
+     ]
+    },
+    {
+     "texte": "Tubérosité iliaque et épine iliaque postéro-supérieure",
+     "os": [
+      "ilium"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retient le sacrum entre les os iliaques et limite la bascule de la partie antérieure du bassin",
+   "tendu": null,
+   "test": null,
+   "clinique": "Il se relâche pendant la grossesse, d'où une mobilité sacro-iliaque plus grande",
+   "memo": "Le cordage du dos du bassin : le plus gros câble du joint",
+   "variantes": "Une partie courte, presque horizontale, et une partie longue oblique",
+   "sources": [
+    "gray1918",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-sacro-epineux",
+   "resume": "Le triangle fibreux entre le sacrum et l'épine ischiatique, qui sépare les deux foramens ischiatiques.",
+   "nature": "ligament",
+   "articulation": "Bassin (région sacro-ischiatique)",
+   "attaches": [
+    {
+     "texte": "Bords latéraux du sacrum et du coccyx",
+     "os": [
+      "sacrum",
+      "coccyx"
+     ]
+    },
+    {
+     "texte": "Épine ischiatique, au sommet du triangle",
+     "os": [
+      "ischium"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Ferme en bas le grand foramen ischiatique, forme une partie du petit et limite la rotation postérieure du sacrum",
+   "tendu": null,
+   "test": null,
+   "clinique": "Il sépare le grand du petit foramen ischiatique : c'est par ce dernier que le nerf et les vaisseaux pudendaux regagnent le périnée",
+   "memo": "Épineux : de l'épine ischiatique, comme sa pointe de triangle",
+   "variantes": "Se mêle aux fibres du sacrotubéral",
+   "sources": [
+    "gray1918",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-sacrotuberal",
+   "resume": "Le grand ligament de la fesse, du sacrum à l'ischion : il retient le sacrum contre la bascule.",
+   "nature": "ligament",
+   "articulation": "Bassin (région sacro-ischiatique)",
+   "attaches": [
+    {
+     "texte": "Épine iliaque postéro-inférieure, tubercules du sacrum, bord latéral du sacrum et coccyx",
+     "os": [
+      "ilium",
+      "sacrum",
+      "coccyx"
+     ]
+    },
+    {
+     "texte": "Bord médial de la tubérosité ischiatique, avec un prolongement falciforme",
+     "os": [
+      "ischium"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Limite la bascule du sacrum, forme le bord postérieur du grand foramen ischiatique et donne origine au grand fessier et au tendon du biceps fémoral",
+   "tendu": null,
+   "test": null,
+   "clinique": "Il s'étire pendant l'accouchement, quand le bassin s'élargit pour laisser passer l'enfant",
+   "memo": "Sacro-tubéral : du sacrum à la tubérosité de l'ischion",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bourse-anserine",
+   "resume": "Le sac entre la patte d'oie et le ligament collatéral tibial, sur le tibia médial.",
+   "nature": "bourse",
+   "articulation": "Genou (face médiale)",
+   "attaches": [],
+   "situation": "Entre les tendons de la patte d'oie (sartorius, gracile, semi-tendineux) et le ligament collatéral tibial, sur la face médiale du tibia proximal",
+   "role": "Réduit le frottement des tendons du sartorius, du gracile et du semi-tendineux sur le ligament collatéral tibial",
+   "tendu": null,
+   "test": null,
+   "clinique": "Bursite anserine : douleur à la face interne du genou, surtout dans l'arthrose, l'obésité ou le valgus, à ne pas confondre avec une atteinte du collatéral",
+   "memo": "Patte d'oie : trois tendons étalés, un sac dessous",
+   "variantes": "Ne communique pas avec l'articulation",
+   "sources": [
+    "rp-anserine",
+    "wiki-bourses-genou",
+    "pmc-bourses-genou",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bourse-du-muscle-semimembraneux",
+   "resume": "Le sac du tendon du semi-membraneux, à l'arrière et au côté interne du genou.",
+   "nature": "bourse",
+   "articulation": "Genou (face postéro-médiale)",
+   "attaches": [],
+   "situation": "Entre le tendon du semi-membraneux et le condyle médial du tibia, parfois sous le ligament collatéral tibial",
+   "role": "Facilite le glissement du tendon du semi-membraneux sur le tibia et le ligament collatéral tibial",
+   "tendu": null,
+   "test": null,
+   "clinique": "Kyste de Baker : le liquide articulaire peut s'y accumuler entre le gastrocnémien médial et le semi-membraneux, derrière le genou",
+   "memo": "Le sac du semi-membraneux : il fait la liaison avec le kyste poplité",
+   "variantes": "Trois bourses décrites autour du tendon ; la troisième (avec le semi-tendineux) n'existe qu'occasionnellement",
+   "sources": [
+    "wiki-bourses-genou",
+    "pmc-bourses-genou",
+    "gray1918"
+   ],
+   "divergences": "Gray et Wikipédia en décrivent plusieurs (sous le collatéral tibial, sur le tibia, entre semi-membraneux et semi-tendineux)"
+  },
+  {
+   "id": "bourse-sous-cutanee-de-la-tuberosite-tibiale",
+   "resume": "Le coussinet sous la peau, au-dessus de la tubérosité du tibia.",
+   "nature": "bourse",
+   "articulation": "Genou (face antérieure, sous la patella)",
+   "attaches": [],
+   "situation": "Entre la peau et la tubérosité tibiale, sous l'insertion du ligament patellaire",
+   "role": "Protège la peau et la tubérosité tibiale lors de l'appui à genoux",
+   "tendu": null,
+   "test": null,
+   "clinique": "Bursite après agenouillement répété : gonflement douloureux sous la patella (genou du bedeau)",
+   "memo": "Une peau, un sac, un os : le coussin de la tubérosité du tibia",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wiki-bourses-genou",
+    "tma-genou"
+   ],
+   "divergences": "Gray la nomme sous-cutanée infrapatellaire ; la nomenclature actuelle distingue deux bourses voisines"
+  },
+  {
+   "id": "bourse-subtendineuse-du-muscle-sartorius",
+   "resume": "Le petit sac sous le tendon du sartorius, sur la face médiale du tibia.",
+   "nature": "bourse",
+   "articulation": "Genou (face médiale)",
+   "attaches": [],
+   "situation": "Sous le tendon du sartorius, près de son insertion sur le tibia médial, dans la région de la patte d'oie",
+   "role": "Réduit le frottement du tendon du sartorius à son insertion sur le tibia",
+   "tendu": null,
+   "test": null,
+   "clinique": "Peu documentée en clinique ; elle se confond souvent avec la bourse anserine, sa voisine",
+   "memo": "Un sac sous la plus longue des sangles de la cuisse",
+   "variantes": "Inconstante en tant que sac distinct",
+   "sources": [
+    "rp-anserine",
+    "wiki-bourses-genou",
+    "anatomytool-bourses"
+   ],
+   "divergences": "Wikipédia ne décrit pas de bourse propre au sartorius : la bourse sous la patte d'oie est la bourse anserine"
+  },
+  {
+   "id": "bourse-subtendineuse-inferieure-du-muscle-biceps-femoral",
+   "resume": "Le sac du biceps fémoral entre son tendon et le ligament collatéral fibulaire.",
+   "nature": "bourse",
+   "articulation": "Genou (face latérale)",
+   "attaches": [],
+   "situation": "Entre le tendon du biceps fémoral et le ligament collatéral fibulaire",
+   "role": "Réduit le frottement du tendon du biceps fémoral sur le ligament collatéral fibulaire",
+   "tendu": null,
+   "test": null,
+   "clinique": "Une bursite donne une douleur latérale du genou, parfois avec un ressaut, en cas de contrainte répétée en varus",
+   "memo": "Le sac sous le biceps, là où il passe sur le collatéral externe",
+   "variantes": null,
+   "sources": [
+    "flexikon-bourse-biceps-inf",
+    "wiki-bourses-genou",
+    "pmc-bourses-genou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "capsule-articulaire-de-l-art-tibiofibulaire-superieure",
+   "resume": "Le petit manchon de l'articulation entre la tête de la fibula et le tibia, sous le genou.",
+   "nature": "capsule",
+   "articulation": "Articulation tibio-fibulaire supérieure",
+   "attaches": [
+    {
+     "texte": "Pourtour de la facette articulaire de la tête de la fibula",
+     "os": [
+      "fibula"
+     ]
+    },
+    {
+     "texte": "Pourtour de la facette du condyle latéral du tibia",
+     "os": [
+      "tibia"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Enveloppe une articulation plane qui ne glisse que très peu ; plus épaisse en avant",
+   "tendu": null,
+   "test": null,
+   "clinique": "La luxation de l'articulation est rare : chute sur le genou fléchi et adducté, avec risque pour le nerf fibulaire commun",
+   "memo": "Un petit manchon plat entre deux os qui ne bougent presque pas",
+   "variantes": "La synoviale communique avec celle du genou dans certains cas",
+   "sources": [
+    "gray1918",
+    "tma-tibiofibulaires",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-anterieur-de-la-tete-fibullaire",
+   "resume": "Les bandes avant qui tiennent la tête de la fibula contre le tibia.",
+   "nature": "ligament",
+   "articulation": "Articulation tibio-fibulaire supérieure",
+   "attaches": [
+    {
+     "texte": "Face antérieure de la tête de la fibula",
+     "os": [
+      "fibula"
+     ]
+    },
+    {
+     "texte": "Face antérieure du condyle latéral du tibia",
+     "os": [
+      "tibia"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Stabilise l'articulation tibio-fibulaire supérieure en avant : deux ou trois bandes obliques",
+   "tendu": null,
+   "test": null,
+   "clinique": "En cas de luxation de la tête de la fibula (rare, chute sur le genou fléchi), il est déchiré ; le nerf fibulaire commun peut être touché",
+   "memo": "Des bandes à l'avant, une seule à l'arrière : c'est l'avant qui est le plus lâche",
+   "variantes": "Deux ou trois bandes plates selon les personnes",
+   "sources": [
+    "gray1918",
+    "tma-tibiofibulaires",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-posterieur-de-la-tete-fibullaire",
+   "resume": "La bande arrière, épaisse, qui retient la tête de la fibula contre le tibia.",
+   "nature": "ligament",
+   "articulation": "Articulation tibio-fibulaire supérieure",
+   "attaches": [
+    {
+     "texte": "Face postérieure de la tête de la fibula",
+     "os": [
+      "fibula"
+     ]
+    },
+    {
+     "texte": "Face postérieure du condyle latéral du tibia",
+     "os": [
+      "tibia"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Stabilise l'articulation tibio-fibulaire supérieure en arrière ; une bande épaisse recouverte par le tendon du poplité",
+   "tendu": null,
+   "test": null,
+   "clinique": "En cas de luxation de la tête de la fibula, il peut être déchiré ; le nerf fibulaire commun, voisin, est exposé",
+   "memo": "Une seule bande derrière, sous le tendon du poplité",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-tibiofibulaires",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bourse-sous-cutanee-calcaneenne",
+   "resume": "Le coussinet entre la peau et le tendon calcanéen, à l'arrière du talon.",
+   "nature": "bourse",
+   "articulation": "Cheville (face postérieure)",
+   "attaches": [],
+   "situation": "Entre la peau et le tendon calcanéen, à l'arrière du talon",
+   "role": "Amortit la peau qui frotte sur le tendon calcanéen",
+   "tendu": null,
+   "test": null,
+   "clinique": "Bursite superficielle : gonflement rouge et douloureux derrière le talon, après frottements répétés ; à distinguer de la bursite rétrocalcanéenne, plus profonde",
+   "memo": "La bourse du dessous de la peau, quand la profonde est celle du dessous du tendon",
+   "variantes": "Parfois acquise par frottement (adventice)",
+   "sources": [
+    "sp-bourses-cutanees",
+    "rp-calcaneen"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bourse-sous-cutanee-de-la-malleole-laterale",
+   "resume": "Le coussinet sous la peau de la malléole latérale.",
+   "nature": "bourse",
+   "articulation": "Cheville (face latérale)",
+   "attaches": [],
+   "situation": "Entre la peau et la face latérale de la malléole latérale",
+   "role": "Protège la peau de la malléole latérale contre les frottements",
+   "tendu": null,
+   "test": null,
+   "clinique": "Bursite possible après frottements répétés ou appui prolongé ; gonflement rouge, douloureux, sur la saillie latérale",
+   "memo": "Sac de peau sur la bosse externe de la cheville",
+   "variantes": "Souvent absente ou acquise (adventice)",
+   "sources": [
+    "anatomytool-bourses",
+    "sp-bourses-cutanees"
+   ],
+   "divergences": "StatPearls ne mentionne pas la bourse de la malléole latérale ; seule la nomenclature la cite"
+  },
+  {
+   "id": "bourse-sous-cutanee-malleolaire",
+   "resume": "Le coussinet sous la peau de la malléole médiale.",
+   "nature": "bourse",
+   "articulation": "Cheville (face médiale)",
+   "attaches": [],
+   "situation": "Entre la peau et la face médiale de la malléole médiale",
+   "role": "Protège la peau de la malléole médiale contre les frottements",
+   "tendu": null,
+   "test": null,
+   "clinique": "Bursite possible après frottements répétés ; gonflement rouge, douloureux, sur la saillie médiale",
+   "memo": "Sac de peau sur la bosse interne de la cheville",
+   "variantes": "Présente de façon occasionnelle",
+   "sources": [
+    "sp-bourses-cutanees",
+    "anatomytool-bourses"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bourse-subtendineuse-calcaneenne",
+   "resume": "Le sac rétrocalcanéen : il sépare le tendon d'Achille de l'os du talon.",
+   "nature": "bourse",
+   "articulation": "Cheville (face postérieure)",
+   "attaches": [],
+   "situation": "Entre le tendon calcanéen et la partie haute de la face postérieure du calcanéus",
+   "role": "Réduit le frottement du tendon calcanéen sur la partie haute de la face postérieure du calcanéus",
+   "tendu": null,
+   "test": null,
+   "clinique": "Bursite rétrocalcanéenne : douleur derrière le talon, au-dessus de l'insertion du tendon, souvent dans le syndrome de Haglund",
+   "memo": "Entre le tendon d'Achille et le talon : le coussin de la corde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "rp-calcaneen",
+    "sp-bourses-cutanees"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "bourse-subtendineuse-du-muscle-tibial-anterieur",
+   "resume": "Le sac sous le tendon du tibial antérieur, près de son insertion sur le premier cunéiforme.",
+   "nature": "bourse",
+   "articulation": "Cheville et pied (face médiale)",
+   "attaches": [],
+   "situation": "Entre le tendon du tibial antérieur et le premier cunéiforme, près de l'insertion ; peut communiquer avec l'articulation tarso-métatarsienne",
+   "role": "Réduit le frottement du tendon du tibial antérieur sur le premier cunéiforme",
+   "tendu": null,
+   "test": null,
+   "clinique": "Peu documentée ; une inflammation donnerait une douleur du bord médial du dos du pied, près de l'insertion du tendon",
+   "memo": "Sous le tendon de la montée du pied, tout contre l'os",
+   "variantes": "Inconstante",
+   "sources": [
+    "flexikon-bourse-tibial-ant",
+    "anatomytool-bourses"
+   ],
+   "divergences": "Gray ne cite pas de bourse : le tendon y est entouré d'une gaine synoviale"
+  },
+  {
+   "id": "capsule-articulaire-de-l-art-interphalangienne-de-l-hallux",
+   "resume": "Le petit manchon de l'articulation du bout du gros orteil.",
+   "nature": "capsule",
+   "articulation": "Pied (articulation interphalangienne de l'hallux)",
+   "attaches": [
+    {
+     "texte": "Tête de la phalange proximale du gros orteil",
+     "os": [
+      "phalange-proximale-du-premier-doigt-de-pied"
+     ]
+    },
+    {
+     "texte": "Base de la phalange distale du gros orteil",
+     "os": [
+      "phalange-distale-du-premier-doigt-de-pied"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Enveloppe une articulation à un seul axe (flexion et extension), renforcée par deux ligaments collatéraux et un plantaire",
+   "tendu": null,
+   "test": null,
+   "clinique": "Entorse ou luxation du gros orteil après un choc ; douleur, gonflement, limitation de la flexion",
+   "memo": "Le seul joint du gros orteil, un charnière, sous un manchon serré",
+   "variantes": "Pas de ligament dorsal : le tendon extenseur le remplace",
+   "sources": [
+    "gray1918",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "capsules-art-des-art-interphalangiennes-dist-du-pied",
+   "resume": "Les petits manchons des articulations distales des orteils 2 à 5.",
+   "nature": "capsule",
+   "articulation": "Pied (articulations interphalangiennes distales)",
+   "attaches": [
+    {
+     "texte": "Tête de la phalange moyenne",
+     "os": [
+      "phalanges-pied"
+     ]
+    },
+    {
+     "texte": "Base de la phalange distale",
+     "os": [
+      "phalanges-pied"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Enveloppent chaque articulation distale, où seules la flexion et l'extension sont permises ; le tendon extenseur remplace le ligament dorsal",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteintes dans les entorses ou luxations d'orteils par choc ; la flexion y est moindre que dans les articulations proximales",
+   "memo": "Charnières de bout d'orteil : un seul mouvement, d'avant en arrière",
+   "variantes": "Ces articulations n'existent qu'aux orteils 2 à 5",
+   "sources": [
+    "gray1918",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "capsules-art-des-art-interphalangiennes-prox-du-pied",
+   "resume": "Les petits manchons des articulations proximales des orteils 2 à 5.",
+   "nature": "capsule",
+   "articulation": "Pied (articulations interphalangiennes proximales)",
+   "attaches": [
+    {
+     "texte": "Tête de la phalange proximale",
+     "os": [
+      "phalanges-pied"
+     ]
+    },
+    {
+     "texte": "Base de la phalange moyenne",
+     "os": [
+      "phalanges-pied"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Enveloppent chaque articulation proximale, où seules la flexion et l'extension sont permises ; elles plient plus que les distales",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteintes dans les entorses ou luxations d'orteils par choc ; douleur, gonflement, limitation de la flexion",
+   "memo": "Charnières du milieu de l'orteil : plus mobiles que celles du bout",
+   "variantes": "Ces articulations n'existent qu'aux orteils 2 à 5",
+   "sources": [
+    "gray1918",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-calcaneofibullaire",
+   "resume": "Le cordon long qui relie la malléole latérale au talon : l'étage moyen des ligaments latéraux.",
+   "nature": "ligament",
+   "articulation": "Cheville (ligaments collatéraux latéraux)",
+   "attaches": [
+    {
+     "texte": "Sommet de la malléole latérale (fibula), juste en avant",
+     "os": [
+      "fibula"
+     ]
+    },
+    {
+     "texte": "Tubercule de la face latérale du calcanéus",
+     "os": [
+      "calcaneus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Stabilise la cheville et l'articulation subtalaire du côté latéral ; limite la dorsiflexion et l'inversion ; les tendons fibulaires le croisent",
+   "tendu": "En dorsiflexion",
+   "test": "Test d'inclinaison du talus (talar tilt) : talon basculé en varus, cheville au neutre ; écart de plus de 15° avec le côté sain",
+   "clinique": "Lésé après le ligament talo-fibulaire antérieur, dans une entorse en inversion plus sévère ; instabilité chronique si cicatrisation insuffisante",
+   "memo": "Fibula, calcanéus : la corde du milieu, qui tient le talon sous la malléole externe",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cheville",
+    "kenhub-lcf",
+    "sp-entorse"
+   ],
+   "divergences": "Kenhub place la limitation de la dorsiflexion dans ce ligament ; Gray insiste sur la résistance au déplacement postérieur du pied"
+  },
+  {
+   "id": "ligament-calcaneocuboide",
+   "resume": "La branche cuboïdienne du ligament en Y entre calcanéus et os du médio-pied.",
+   "nature": "ligament",
+   "articulation": "Médio-tarse (articulation calcanéo-cuboïdienne)",
+   "attaches": [
+    {
+     "texte": "Calcanéus, dans le creux de sa face supérieure, sur le processus antérieur",
+     "os": [
+      "calcaneus"
+     ]
+    },
+    {
+     "texte": "Face supérieure et médiale du cuboïde",
+     "os": [
+      "cuboide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Stabilise l'articulation calcanéo-cuboïdienne et l'articulation subtalaire ; relie les deux rangées des os du tarse",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteint dans les entorses du médio-pied ; un arrachement du processus antérieur du calcanéus est possible",
+   "memo": "Bifurqué : la patte du Y qui va au cuboïde",
+   "variantes": "Absente chez environ un quart des personnes selon Radiopaedia",
+   "sources": [
+    "gray1918",
+    "rp-bifurque",
+    "kenhub-pied"
+   ],
+   "divergences": "Cette fiche désigne la partie calcanéo-cuboïdienne du ligament bifurqué ; la partie calcanéo-naviculaire fait l'objet d'une autre fiche"
+  },
+  {
+   "id": "ligament-calcaneocuboidien",
+   "resume": "La lame fine sur le dos de l'articulation calcanéo-cuboïdienne.",
+   "nature": "ligament",
+   "articulation": "Médio-tarse (articulation calcanéo-cuboïdienne)",
+   "attaches": [
+    {
+     "texte": "Face dorsale du calcanéus, en avant",
+     "os": [
+      "calcaneus"
+     ]
+    },
+    {
+     "texte": "Face dorsale du cuboïde",
+     "os": [
+      "cuboide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce la capsule de l'articulation calcanéo-cuboïdienne par le dessus ; une bande fine et large",
+   "tendu": null,
+   "test": null,
+   "clinique": "Il fait partie des ligaments touchés dans les entorses de l'articulation transverse du tarse (médio-pied)",
+   "memo": "Un voile sur le dos de l'articulation du cuboïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-transverse-tarse",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-calcaneocuboidien-plantaire",
+   "resume": "Le court plantaire : un ligament épais sous le calcanéus et le cuboïde, qui soutient l'arche externe.",
+   "nature": "ligament",
+   "articulation": "Médio-tarse (articulation calcanéo-cuboïdienne)",
+   "attaches": [
+    {
+     "texte": "Tubercule antérieur du calcanéus et dépression devant lui",
+     "os": [
+      "calcaneus"
+     ]
+    },
+    {
+     "texte": "Face plantaire du cuboïde, en arrière de la gouttière du long fibulaire",
+     "os": [
+      "cuboide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce le dessous de la capsule et aide à tenir l'arche longitudinale latérale sous charge",
+   "tendu": null,
+   "test": null,
+   "clinique": "Son affaiblissement, avec celui du ligament plantaire long, favorise l'affaissement de l'arche latérale",
+   "memo": "Court, large et profond : le coussin sous le cuboïde",
+   "variantes": "Profond par rapport au ligament plantaire long",
+   "sources": [
+    "gray1918",
+    "kenhub-transverse-tarse",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-calcaneonaviculaire",
+   "resume": "La branche naviculaire du ligament en Y, qui tient le côté externe de l'articulation talo-naviculaire.",
+   "nature": "ligament",
+   "articulation": "Médio-tarse (articulation talo-calcanéo-naviculaire)",
+   "attaches": [
+    {
+     "texte": "Calcanéus, sur le processus antérieur, sous le ligament interosseux talo-calcanéen",
+     "os": [
+      "calcaneus"
+     ]
+    },
+    {
+     "texte": "Face supérieure et latérale du naviculaire",
+     "os": [
+      "naviculaire"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Soutient le côté latéral de l'articulation talo-naviculaire et relie les deux rangées du tarse",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteint dans les entorses du médio-pied, en inversion et flexion plantaire",
+   "memo": "Bifurqué : la patte du Y qui va au naviculaire, la plus longue et la plus épaisse",
+   "variantes": "Presque toujours présent (environ 99 %)",
+   "sources": [
+    "gray1918",
+    "rp-bifurque",
+    "kenhub-transverse-tarse"
+   ],
+   "divergences": "Cette fiche désigne la partie calcanéo-naviculaire du ligament bifurqué, distincte du ligament plantaire (spring ligament)"
+  },
+  {
+   "id": "ligament-calcaneonaviculaire-plantaire",
+   "resume": "Le ligament en ressort : il soutient la tête du talus et la voûte médiale du pied.",
+   "nature": "ligament",
+   "articulation": "Médio-tarse (articulation talo-calcanéo-naviculaire)",
+   "attaches": [
+    {
+     "texte": "Bord antérieur du sustentaculum tali du calcanéus",
+     "os": [
+      "calcaneus"
+     ]
+    },
+    {
+     "texte": "Face plantaire du naviculaire",
+     "os": [
+      "naviculaire"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Porte la tête du talus par sa surface fibrocartilagineuse et soutient l'arche médiale ; le tendon du tibial postérieur le renforce dessous",
+   "tendu": null,
+   "test": null,
+   "clinique": "Son insuffisance, avec celle du tibial postérieur, affaisse l'arche : pied plat acquis de l'adulte",
+   "memo": "Le ressort : un hamac entre sustentaculum et naviculaire sous la tête du talus",
+   "variantes": "Complexe de plusieurs bandes (inféro-plantaire et médio-plantaire)",
+   "sources": [
+    "gray1918",
+    "kenhub-pied",
+    "rp-ressort",
+    "kenhub-transverse-tarse"
+   ],
+   "divergences": "Radiopaedia décrit un complexe de deux bandes, Gray et Kenhub un ligament unique"
+  },
+  {
+   "id": "ligament-cuboidonaviculaire-dorsal",
+   "resume": "La bande dorsale entre le naviculaire et le cuboïde.",
+   "nature": "ligament",
+   "articulation": "Médio-tarse (articulation cuboïdo-naviculaire)",
+   "attaches": [
+    {
+     "texte": "Face dorsale du naviculaire",
+     "os": [
+      "naviculaire"
+     ]
+    },
+    {
+     "texte": "Face dorsale du cuboïde",
+     "os": [
+      "cuboide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Tient le naviculaire et le cuboïde ensemble sur le dessus ; ne laisse qu'un léger glissement",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteint dans les entorses du médio-pied ; douleur sur le dos du pied",
+   "memo": "Le lien du dos, oblique du naviculaire vers le cuboïde",
+   "variantes": "Une petite cavité existe parfois entre les deux os",
+   "sources": [
+    "gray1918",
+    "kenhub-transverse-tarse"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-cuboidonaviculaire-plantaire",
+   "resume": "La bande plantaire entre le naviculaire et le cuboïde.",
+   "nature": "ligament",
+   "articulation": "Médio-tarse (articulation cuboïdo-naviculaire)",
+   "attaches": [
+    {
+     "texte": "Face plantaire du naviculaire",
+     "os": [
+      "naviculaire"
+     ]
+    },
+    {
+     "texte": "Face plantaire du cuboïde",
+     "os": [
+      "cuboide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Tient le naviculaire et le cuboïde sous le pied ; un trajet presque transversal, glissement léger",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteint dans les entorses du médio-pied ; douleur sous la voûte",
+   "memo": "Le lien du dessous, transversal entre les deux os",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-transverse-tarse"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-cuneocuboidien-dorsal",
+   "resume": "La bande dorsale qui relie le cunéiforme latéral au cuboïde.",
+   "nature": "ligament",
+   "articulation": "Tarse (articulation cunéo-cuboïdienne)",
+   "attaches": [
+    {
+     "texte": "Face dorsale du cunéiforme latéral",
+     "os": [
+      "os-cuneiforme-lateral"
+     ]
+    },
+    {
+     "texte": "Face dorsale du cuboïde",
+     "os": [
+      "cuboide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retient le cunéiforme latéral contre le cuboïde ; glissement léger seulement",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteint dans les entorses du médio-pied ; douleur du dos du pied",
+   "memo": "Le pont du dos entre le dernier cunéiforme et le cuboïde",
+   "variantes": "Trois bandes transversales dorsales en série avec les intercunéiformes",
+   "sources": [
+    "gray1918",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-cuneocuboidien-plantaire",
+   "resume": "La bande plantaire entre le cunéiforme latéral et le cuboïde, renforcée par le tibial postérieur.",
+   "nature": "ligament",
+   "articulation": "Tarse (articulation cunéo-cuboïdienne)",
+   "attaches": [
+    {
+     "texte": "Face plantaire du cunéiforme latéral",
+     "os": [
+      "os-cuneiforme-lateral"
+     ]
+    },
+    {
+     "texte": "Face plantaire du cuboïde",
+     "os": [
+      "cuboide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retient le cunéiforme latéral contre le cuboïde sous le pied ; une expansion du tibial postérieur le renforce",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteint dans les entorses du médio-pied ; douleur plantaire sous la voûte",
+   "memo": "Le lien plantaire, aidé par le tibial postérieur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-interosseux-cuneocuboidien",
+   "resume": "Le lien profond, entre les faces rugueuses du cunéiforme latéral et du cuboïde.",
+   "nature": "ligament",
+   "articulation": "Tarse (articulation cunéo-cuboïdienne)",
+   "attaches": [
+    {
+     "texte": "Partie rugueuse non articulaire du cunéiforme latéral",
+     "os": [
+      "os-cuneiforme-lateral"
+     ]
+    },
+    {
+     "texte": "Partie rugueuse non articulaire du cuboïde",
+     "os": [
+      "cuboide"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Unit solidement les deux os par des fibres transversales courtes ; le glissement est léger",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteint dans les entorses graves du médio-pied ; une instabilité de la colonne latérale en découle",
+   "memo": "La colle profonde entre deux os voisins",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-intersesamoide",
+   "resume": "La bande transversale qui relie les deux sésamoïdes sous la tête du premier métatarsien.",
+   "nature": "ligament",
+   "articulation": "Pied (articulation métatarsophalangienne du gros orteil)",
+   "attaches": [
+    {
+     "texte": "Sésamoïde médial et sésamoïde latéral du gros orteil",
+     "os": [
+      "os-sesamoides-du-pied"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relie les deux sésamoïdes ; avec eux et la plaque plantaire, il forme le canal du long fléchisseur de l'hallux",
+   "tendu": null,
+   "test": null,
+   "clinique": "Au gros orteil, une hyperextension forcée (turf toe) peut léser la plaque plantaire et les sésamoïdes",
+   "memo": "La barre entre les deux sésamoïdes : deux petits os, un seul pont",
+   "variantes": null,
+   "sources": [
+    "kenhub-pied",
+    "kenhub-mtp"
+   ],
+   "divergences": "Gray ne le cite pas ; Kenhub (pied) le nomme, Kenhub (MTP) ne parle que de bandes sans nom"
+  },
+  {
+   "id": "ligament-metatarsien-transverse-profond",
+   "resume": "Le lien qui réunit les têtes des métatarsiens et limite l'écartement de l'avant-pied.",
+   "nature": "ligament",
+   "articulation": "Pied (avant-pied, têtes des métatarsiens)",
+   "attaches": [
+    {
+     "texte": "Plaque plantaire de chaque articulation métatarsophalangienne",
+     "os": [
+      "metatarsiens"
+     ]
+    },
+    {
+     "texte": "Plaque plantaire de l'articulation voisine",
+     "os": [
+      "metatarsiens"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Unit les plaques plantaires des têtes métatarsiennes et empêche l'avant-pied de s'étaler ; les interosseux passent au-dessus, les lombricaux, vaisseaux et nerfs en dessous",
+   "tendu": null,
+   "test": null,
+   "clinique": "Le nerf digital plantaire passe sous lui : sa compression est à l'origine du névrome de Morton",
+   "memo": "Un lien en travers sous les têtes : l'avant-pied ne s'écarte pas",
+   "variantes": "Quatre bandes courtes selon Kenhub",
+   "sources": [
+    "gray1918",
+    "kenhub-pied",
+    "kenhub-mtp",
+    "kenhub-tarsometatarsien"
+   ],
+   "divergences": "Gray le décrit comme une bande réunissant les cinq têtes, Kenhub comme quatre bandes entre les plaques plantaires"
+  },
+  {
+   "id": "ligament-plantaire-long",
+   "resume": "Le plus long ligament du tarse : il relie le calcanéus au cuboïde et aux métatarsiens, sous le pied.",
+   "nature": "ligament",
+   "articulation": "Médio-tarse (arche longitudinale latérale)",
+   "attaches": [
+    {
+     "texte": "Face plantaire du calcanéus, devant la tubérosité",
+     "os": [
+      "calcaneus"
+     ]
+    },
+    {
+     "texte": "Tubérosité plantaire du cuboïde",
+     "os": [
+      "cuboide"
+     ]
+    },
+    {
+     "texte": "Fibres superficielles : bases des 2e, 3e et 4e métatarsiens (parfois le 5e)",
+     "os": [
+      "deuxieme-os-metatarsien",
+      "troisieme-metatarsien",
+      "quatrieme-metatarsien"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Soutient l'arche longitudinale latérale, limite son affaissement et transforme la gouttière du cuboïde en canal pour le tendon du long fibulaire",
+   "tendu": null,
+   "test": null,
+   "clinique": "Sa rupture ou son relâchement contribue à l'affaissement de la voûte latérale du pied",
+   "memo": "Long plantaire : de la plante du talon aux métatarsiens, comme un câble sous l'arche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pied",
+    "kenhub-transverse-tarse"
+   ],
+   "divergences": "L'atlas 3D montre aussi le premier métatarsien parmi les attaches ; ni Gray ni Kenhub ne le citent (bases des 2e à 4e, parfois 5e)"
+  },
+  {
+   "id": "ligament-talocalcaneen",
+   "resume": "Le ligament latéral qui relie le talus au calcanéus, en avant et plus profond que le calcanéo-fibulaire.",
+   "nature": "ligament",
+   "articulation": "Articulation subtalaire (talo-calcanéenne)",
+   "attaches": [
+    {
+     "texte": "Face latérale du talus, sous la facette fibulaire",
+     "os": [
+      "talus"
+     ]
+    },
+    {
+     "texte": "Face latérale du calcanéus",
+     "os": [
+      "calcaneus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Stabilise l'articulation subtalaire du côté latéral, en renfort du ligament calcanéo-fibulaire",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteint dans les entorses sévères en inversion avec le ligament calcanéo-fibulaire ; douleur sous la malléole latérale",
+   "memo": "Talus, calcanéus : le fil latéral, sous le calcanéo-fibulaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pied",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": "Le nom français « talo-calcanéen » correspond dans l'atlas au ligament talo-calcanéen latéral de la nomenclature latine"
+  },
+  {
+   "id": "ligament-talocalcaneen-anterieur",
+   "resume": "Le ligament antérieur de l'articulation subtalaire, au col du talus.",
+   "nature": "ligament",
+   "articulation": "Articulation subtalaire (talo-calcanéenne)",
+   "attaches": [
+    {
+     "texte": "Col du talus",
+     "os": [
+      "talus"
+     ]
+    },
+    {
+     "texte": "Face supérieure du calcanéus",
+     "os": [
+      "calcaneus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Stabilise l'articulation subtalaire ; il forme la limite postérieure de l'articulation talo-calcanéo-naviculaire",
+   "tendu": "En inversion",
+   "test": null,
+   "clinique": "Atteint dans les entorses en inversion, mouvement où il se tend",
+   "memo": "Le ligament du col : avant du talus au calcanéus",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pied",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": "Le ligament cervical décrit par Kenhub correspond sans doute à ce ligament, ou au ligament interosseux selon les auteurs"
+  },
+  {
+   "id": "ligament-talocalcaneen-interosseux",
+   "resume": "Le lien principal entre talus et calcanéus, au cœur du sinus du tarse.",
+   "nature": "ligament",
+   "articulation": "Articulation subtalaire (talo-calcanéenne)",
+   "attaches": [
+    {
+     "texte": "Sillon du talus",
+     "os": [
+      "talus"
+     ]
+    },
+    {
+     "texte": "Sillon du calcanéus",
+     "os": [
+      "calcaneus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Unit solidement le talus au calcanéus dans le canal du tarse ; c'est le principal frein de l'articulation subtalaire",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteint dans les entorses graves en inversion ; douleur et instabilité sous la malléole latérale",
+   "memo": "Le noyau du sinus du tarse : un pilier entre le talus et le calcanéus",
+   "variantes": "Au moins 2,5 cm de large selon Gray",
+   "sources": [
+    "gray1918",
+    "kenhub-pied",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-talocalcaneen-lateral",
+   "resume": "Le court ligament en éventail à l'arrière de l'articulation subtalaire (talo-calcanéen postérieur).",
+   "nature": "ligament",
+   "articulation": "Articulation subtalaire (talo-calcanéenne)",
+   "attaches": [
+    {
+     "texte": "Tubercule latéral du talus",
+     "os": [
+      "talus"
+     ]
+    },
+    {
+     "texte": "Face supérieure et médiale du calcanéus, en arrière",
+     "os": [
+      "calcaneus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce l'arrière de l'articulation subtalaire par des fibres courtes en éventail",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteint dans les entorses subtalaires sévères ; douleur postéro-latérale du talon",
+   "memo": "Le bord arrière du talus accroché au calcanéus",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": "Le nom français de l'atlas dit « latéral », le latin et l'anglais disent « postérieur » : nous suivons le latin (ligamentum talocalcaneum posterius)"
+  },
+  {
+   "id": "ligament-talocalcaneen-medial",
+   "resume": "Le ligament de la face interne de l'articulation subtalaire.",
+   "nature": "ligament",
+   "articulation": "Articulation subtalaire (talo-calcanéenne)",
+   "attaches": [
+    {
+     "texte": "Tubercule médial du talus",
+     "os": [
+      "talus"
+     ]
+    },
+    {
+     "texte": "Arrière du sustentaculum tali du calcanéus",
+     "os": [
+      "calcaneus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Stabilise l'articulation subtalaire du côté médial ; ses fibres se mêlent au ligament plantaire calcanéo-naviculaire",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteint dans les entorses en éversion ; douleur interne sous la malléole médiale",
+   "memo": "Le fil interne : du tubercule médial du talus au sustentaculum",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pied",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-talofibullaire-anterieur",
+   "resume": "Le ligament le plus souvent touché dans l'entorse de la cheville : il relie la malléole latérale au talus.",
+   "nature": "ligament",
+   "articulation": "Cheville (ligaments collatéraux latéraux)",
+   "attaches": [
+    {
+     "texte": "Bord antérieur de la malléole latérale (fibula)",
+     "os": [
+      "fibula"
+     ]
+    },
+    {
+     "texte": "Col du talus, en avant de la facette latérale",
+     "os": [
+      "talus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retient le talus vers l'avant et limite la flexion plantaire et l'inversion ; le plus mince des trois ligaments latéraux",
+   "tendu": "En flexion plantaire",
+   "test": "Tiroir antérieur de cheville : cheville à 20° de flexion plantaire, talus tiré vers l'avant ; plus de 8 à 10 mm, ou 1 cm de plus que l'autre côté, évoque une rupture",
+   "clinique": "Entorse en inversion, pied en flexion plantaire : douleur et gonflement devant la malléole latérale ; il est atteint seul dans environ 70 % des entorses latérales",
+   "memo": "Antérieur et faible : le premier à céder quand la cheville se tord vers l'intérieur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-latfl",
+    "sp-entorse",
+    "sp-cheville"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-talonaviculaire",
+   "resume": "La bande fine sur le dos de l'articulation entre le talus et le naviculaire.",
+   "nature": "ligament",
+   "articulation": "Médio-tarse (articulation talo-naviculaire)",
+   "attaches": [
+    {
+     "texte": "Col du talus, face dorsale",
+     "os": [
+      "talus"
+     ]
+    },
+    {
+     "texte": "Face dorsale du naviculaire",
+     "os": [
+      "naviculaire"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Renforce le dessus de la capsule talo-naviculaire ; bande large et mince recouverte par les tendons extenseurs",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteint dans les entorses du médio-pied ; douleur dorsale du pied",
+   "memo": "Un voile entre le col du talus et le naviculaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pied",
+    "kenhub-transverse-tarse"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-tibiocalcaneen",
+   "resume": "La bande moyenne du ligament deltoïde, qui descend de la malléole médiale au sustentaculum tali.",
+   "nature": "ligament",
+   "articulation": "Cheville (ligament collatéral médial, deltoïde)",
+   "attaches": [
+    {
+     "texte": "Sommet et bord de la malléole médiale (tibia)",
+     "os": [
+      "tibia"
+     ]
+    },
+    {
+     "texte": "Sustentaculum tali du calcanéus, sur toute sa longueur",
+     "os": [
+      "calcaneus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Une des parties du deltoïde : s'oppose à l'éversion et à la bascule du talon vers l'extérieur",
+   "tendu": null,
+   "test": "Éversion forcée du talon : laxité ou douleur médiale",
+   "clinique": "Éversion forcée : le deltoïde, très solide, cède souvent en arrachant la malléole médiale ; test en éversion forcée",
+   "memo": "Du tibia au calcanéus : la sangle verticale du deltoïde",
+   "variantes": "Le deltoïde est décrit en trois à six parties selon les auteurs",
+   "sources": [
+    "gray1918",
+    "kenhub-cheville",
+    "sp-cheville",
+    "tma-cheville"
+   ],
+   "divergences": "Gray l'appelle ligament calcanéo-tibial ; Kenhub tibio-calcanéen"
+  },
+  {
+   "id": "ligament-tibiofibulaire-anterieur",
+   "resume": "Le ligament de devant de la syndesmose : il tient la fibula contre le tibia à la cheville.",
+   "nature": "ligament",
+   "articulation": "Cheville (syndesmose tibio-fibulaire inférieure)",
+   "attaches": [
+    {
+     "texte": "Bord antérieur de l'incisure fibulaire du tibia (tubercule antérieur)",
+     "os": [
+      "tibia"
+     ]
+    },
+    {
+     "texte": "Face antérieure de la malléole latérale",
+     "os": [
+      "fibula"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retient la fibula contre le tibia et maintient la pince de la cheville fermée ; il se tend en dorsiflexion quand le talus s'enfonce entre les malléoles",
+   "tendu": "En dorsiflexion et en rotation externe",
+   "test": "Test de compression (squeeze) à mi-jambe et test de rotation externe, cheville en dorsiflexion : douleur à la syndesmose",
+   "clinique": "Entorse haute de la cheville (rotation externe, dorsiflexion) : douleur au-dessus de l'articulation, appui difficile ; test de la compression et de la rotation externe",
+   "memo": "Tibia, fibula : le lien d'avant qui tient la pince de la cheville",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "sp-entorse",
+    "tma-tibiofibulaires",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-tibiofibulaire-posterieur",
+   "resume": "Le ligament de derrière de la syndesmose, plus petit que l'antérieur.",
+   "nature": "ligament",
+   "articulation": "Cheville (syndesmose tibio-fibulaire inférieure)",
+   "attaches": [
+    {
+     "texte": "Bord postérieur de l'incisure fibulaire du tibia",
+     "os": [
+      "tibia"
+     ]
+    },
+    {
+     "texte": "Face postérieure de la malléole latérale",
+     "os": [
+      "fibula"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retient la fibula contre le tibia par l'arrière ; plus petit que l'antérieur ; il se continue par le ligament transverse",
+   "tendu": "En dorsiflexion",
+   "test": "Test de compression (squeeze) et test de rotation externe : douleur à la syndesmose",
+   "clinique": "Entorse haute (syndesmose) : douleur au-dessus de l'articulation après rotation externe, dorsiflexion ; elle représente 1 à 10 % des entorses",
+   "memo": "L'arrière de la pince : plus petit, mais tout aussi nécessaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "sp-entorse",
+    "tma-tibiofibulaires",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-tibiofibulaire-transverse",
+   "resume": "Le ligament épais qui prolonge le ligament tibio-fibulaire postérieur et forme un bord de la mortaise.",
+   "nature": "ligament",
+   "articulation": "Cheville (syndesmose tibio-fibulaire inférieure)",
+   "attaches": [
+    {
+     "texte": "Malléole latérale (fibula), face postérieure",
+     "os": [
+      "fibula"
+     ]
+    },
+    {
+     "texte": "Bord postérieur de la surface articulaire du tibia",
+     "os": [
+      "tibia"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Approfondit la mortaise en arrière : il dépasse sous les os et participe à la surface où roule le talus",
+   "tendu": null,
+   "test": null,
+   "clinique": "Lésé avec le ligament tibio-fibulaire postérieur dans les entorses hautes et les fractures de la cheville",
+   "memo": "Le rebord arrière de la mortaise : un renflement de ligament",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-tibiofibulaires",
+    "kenhub-ligaments-mi"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-tibiofibullaire-posterieur",
+   "resume": "Le plus fort des trois ligaments latéraux de la cheville : horizontal, entre la malléole latérale et l'arrière du talus.",
+   "nature": "ligament",
+   "articulation": "Cheville (ligaments collatéraux latéraux)",
+   "attaches": [
+    {
+     "texte": "Fosse malléolaire, face médiale et postérieure de la malléole latérale (fibula)",
+     "os": [
+      "fibula"
+     ]
+    },
+    {
+     "texte": "Tubercule postérieur du talus, en dehors du sillon du long fléchisseur de l'hallux",
+     "os": [
+      "talus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Retient le talus vers l'arrière, avec le calcanéo-fibulaire ; c'est le plus fort et le plus profond des trois, presque horizontal",
+   "tendu": null,
+   "test": null,
+   "clinique": "Rarement rompu seul : il cède surtout dans les entorses sévères, avec luxation de la cheville",
+   "memo": "Le ligament arrière du trio latéral : puissant et peu atteint",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cheville",
+    "sp-entorse",
+    "sp-cheville"
+   ],
+   "divergences": "Le nom français de l'atlas dit « tibio-fibulaire postérieur », mais le latin et l'anglais désignent le ligament talo-fibulaire postérieur : nous suivons le latin"
+  },
+  {
+   "id": "ligament-tibionaviculaire",
+   "resume": "La partie antérieure du deltoïde, de la malléole médiale à la tubérosité du naviculaire.",
+   "nature": "ligament",
+   "articulation": "Cheville (ligament collatéral médial, deltoïde)",
+   "attaches": [
+    {
+     "texte": "Sommet et bord de la malléole médiale (tibia)",
+     "os": [
+      "tibia"
+     ]
+    },
+    {
+     "texte": "Tubérosité du naviculaire, en se mêlant au bord médial du ligament plantaire calcanéo-naviculaire",
+     "os": [
+      "naviculaire"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Une des parties du deltoïde : limite la flexion plantaire et l'éversion ; il rejoint le ligament en ressort",
+   "tendu": "En flexion plantaire et en éversion",
+   "test": "Éversion forcée du talon : douleur ou laxité médiale",
+   "clinique": "Éversion forcée : lésion du deltoïde, souvent avec arrachement de la malléole médiale ; premier temps d'une fracture de Pott",
+   "memo": "Du tibia au naviculaire : le bras avant du deltoïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cheville",
+    "tma-cheville",
+    "rp-cheville"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-tibiotalaire-posterieur",
+   "resume": "La partie postérieure du deltoïde, de la malléole médiale à l'arrière du talus.",
+   "nature": "ligament",
+   "articulation": "Cheville (ligament collatéral médial, deltoïde)",
+   "attaches": [
+    {
+     "texte": "Malléole médiale (tibia)",
+     "os": [
+      "tibia"
+     ]
+    },
+    {
+     "texte": "Face médiale du talus et tubercule postérieur, en dedans du sillon du long fléchisseur de l'hallux",
+     "os": [
+      "talus"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Une des parties du deltoïde : limite la dorsiflexion ; il retient le talus en arrière et en dedans",
+   "tendu": "En dorsiflexion",
+   "test": "Éversion forcée du talon : douleur ou laxité médiale",
+   "clinique": "Éversion forcée : lésion du deltoïde, avec arrachement possible de la malléole médiale",
+   "memo": "Le bras arrière du deltoïde, tendu en dorsiflexion",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cheville",
+    "sp-cheville",
+    "tma-cheville"
+   ],
+   "divergences": "Gray l'appelle tibio-talaire postérieur superficiel ; il décrit en outre un tibio-talaire antérieur profond, hors de ce lot"
+  },
+  {
+   "id": "ligaments-cuneometatarsiens-interosseux",
+   "resume": "Les liens profonds entre cunéiformes et métatarsiens, dont le ligament de Lisfranc, clé de la stabilité de l'avant-pied.",
+   "nature": "groupe",
+   "articulation": "Pied (articulations tarso-métatarsiennes)",
+   "attaches": [
+    {
+     "texte": "Face latérale du cunéiforme médial, vers l'angle voisin de la base du 2e métatarsien (ligament de Lisfranc)",
+     "os": [
+      "os-cuneiforme-medial",
+      "deuxieme-os-metatarsien"
+     ]
+    },
+    {
+     "texte": "Cunéiforme latéral, vers l'angle voisin de la base du 2e métatarsien",
+     "os": [
+      "os-cuneiforme-lateral",
+      "deuxieme-os-metatarsien"
+     ]
+    },
+    {
+     "texte": "Angle latéral du cunéiforme latéral, vers la base du 3e métatarsien",
+     "os": [
+      "os-cuneiforme-lateral",
+      "troisieme-metatarsien"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Unissent le tarse et les métatarsiens ; trois bandes, la plus forte étant celle de Lisfranc, qui tient le 2e métatarsien dans sa mortaise",
+   "tendu": null,
+   "test": "Radiographie de face en appui : écart de plus de 2,5 mm entre le cunéiforme médial et la base du 2e métatarsien évoque une rupture",
+   "clinique": "Lésion de Lisfranc : écrasement du pied ou chute sur le pied en flexion plantaire ; élargissement entre cunéiforme médial et 2e métatarsien sur une radiographie en appui",
+   "memo": "Lisfranc : le haubanage du 2e métatarsien, accroché au cunéiforme médial",
+   "variantes": "Trois bandes interosseuses ; aucun ligament ne relie les bases des 1er et 2e métatarsiens",
+   "sources": [
+    "gray1918",
+    "kenhub-pied",
+    "rp-lisfranc",
+    "kenhub-tarsometatarsien"
+   ],
+   "divergences": "Gray décrit les bandes sans nommer Lisfranc ; Kenhub et Radiopaedia placent le ligament de Lisfranc entre le cunéiforme médial et le 2e métatarsien"
+  },
+  {
+   "id": "ligaments-cuneonaviculaires-dorsaux",
+   "resume": "Les trois petites bandes du dos qui relient le naviculaire à chaque cunéiforme.",
+   "nature": "groupe",
+   "articulation": "Tarse (articulation cunéo-naviculaire)",
+   "attaches": [
+    {
+     "texte": "Face dorsale du naviculaire",
+     "os": [
+      "naviculaire"
+     ]
+    },
+    {
+     "texte": "Face dorsale de chacun des trois cunéiformes",
+     "os": [
+      "cuneiformes"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Tiennent chaque cunéiforme contre le naviculaire sur le dessus ; glissement léger seulement",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteints dans les entorses du médio-pied ; douleur sur le dos du pied",
+   "memo": "Trois fils du naviculaire vers trois cunéiformes : un par os",
+   "variantes": "Le faisceau du premier cunéiforme contourne son bord médial pour rejoindre le ligament plantaire",
+   "sources": [
+    "gray1918",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligaments-cuneonaviculaires-plantaires",
+   "resume": "Les bandes plantaires du naviculaire aux cunéiformes, renforcées par des expansions du tibial postérieur.",
+   "nature": "groupe",
+   "articulation": "Tarse (articulation cunéo-naviculaire)",
+   "attaches": [
+    {
+     "texte": "Face plantaire du naviculaire",
+     "os": [
+      "naviculaire"
+     ]
+    },
+    {
+     "texte": "Face plantaire de chacun des trois cunéiformes",
+     "os": [
+      "cuneiformes"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Tiennent les cunéiformes contre le naviculaire sous le pied ; le tendon du tibial postérieur les renforce",
+   "tendu": null,
+   "test": null,
+   "clinique": "Leur soutien s'ajoute à celui du tibial postérieur : sa défaillance retire un appui à l'arche médiale",
+   "memo": "Disposées comme celles du dos, mais soutenues par le tibial postérieur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligaments-intercuneiformes-dorsaux",
+   "resume": "Les bandes transversales du dos qui relient les cunéiformes entre eux.",
+   "nature": "groupe",
+   "articulation": "Tarse (articulations intercunéiformes)",
+   "attaches": [
+    {
+     "texte": "Entre les cunéiformes médial et intermédiaire, face dorsale",
+     "os": [
+      "os-cuneiforme-medial",
+      "os-cuneiforme-intermediaire"
+     ]
+    },
+    {
+     "texte": "Entre les cunéiformes intermédiaire et latéral, face dorsale",
+     "os": [
+      "os-cuneiforme-intermediaire",
+      "os-cuneiforme-lateral"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Unissent les cunéiformes côte à côte par le dessus ; un léger glissement seulement",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteints dans les lésions de Lisfranc, qui peuvent écarter les cunéiformes",
+   "memo": "Des sangles du dos entre les trois cunéiformes",
+   "variantes": "Gray les décrit avec le ligament cunéo-cuboïdien dorsal, en trois bandes dorsales transversales",
+   "sources": [
+    "gray1918",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligaments-intercuneiformes-interosseux",
+   "resume": "Les liens profonds, entre les faces rugueuses des cunéiformes voisins.",
+   "nature": "groupe",
+   "articulation": "Tarse (articulations intercunéiformes)",
+   "attaches": [
+    {
+     "texte": "Parties rugueuses non articulaires des cunéiformes médial et intermédiaire",
+     "os": [
+      "os-cuneiforme-medial",
+      "os-cuneiforme-intermediaire"
+     ]
+    },
+    {
+     "texte": "Parties rugueuses non articulaires des cunéiformes intermédiaire et latéral",
+     "os": [
+      "os-cuneiforme-intermediaire",
+      "os-cuneiforme-lateral"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Unissent solidement les cunéiformes par des fibres transversales courtes ; ils forment la voûte transversale du tarse",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteints dans les lésions de Lisfranc, qui peuvent écarter les cunéiformes",
+   "memo": "La colle profonde de la voûte transversale",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligaments-intercuneiformes-plantaires",
+   "resume": "Les bandes plantaires qui relient les cunéiformes entre eux, soutenues par le tibial postérieur.",
+   "nature": "groupe",
+   "articulation": "Tarse (articulations intercunéiformes)",
+   "attaches": [
+    {
+     "texte": "Entre les cunéiformes médial et intermédiaire, face plantaire",
+     "os": [
+      "os-cuneiforme-medial",
+      "os-cuneiforme-intermediaire"
+     ]
+    },
+    {
+     "texte": "Entre les cunéiformes intermédiaire et latéral, face plantaire",
+     "os": [
+      "os-cuneiforme-intermediaire",
+      "os-cuneiforme-lateral"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Unissent les cunéiformes sous le pied ; le tendon du tibial postérieur les renforce par des expansions",
+   "tendu": null,
+   "test": null,
+   "clinique": "Leur renfort par le tibial postérieur explique l'importance de ce muscle pour la voûte transversale",
+   "memo": "Sangles plantaires entre cunéiformes, aidées par le tibial postérieur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligaments-interphalangiens-plantaires",
+   "resume": "Les épaississements du dessous des articulations des orteils, qui limitent l'extension.",
+   "nature": "groupe",
+   "articulation": "Pied (articulations interphalangiennes)",
+   "attaches": [
+    {
+     "texte": "Face plantaire des phalanges, à chaque articulation interphalangienne",
+     "os": [
+      "phalanges-pied"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Forment le plancher de chaque articulation interphalangienne et limitent son extension, avec les collatéraux",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteints dans les entorses ou luxations des orteils ; douleur et gonflement sous l'articulation",
+   "memo": "Un plancher sous chaque charnière : il empêche l'orteil de se relever trop loin",
+   "variantes": "Une plaque par articulation",
+   "sources": [
+    "gray1918",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligaments-metatarsiens-dorsaux",
+   "resume": "Les bandes transversales du dos du pied, entre les bases des métatarsiens voisins.",
+   "nature": "groupe",
+   "articulation": "Pied (articulations intermétatarsiennes)",
+   "attaches": [
+    {
+     "texte": "Face dorsale de la base de chaque métatarsien",
+     "os": [
+      "metatarsiens"
+     ]
+    },
+    {
+     "texte": "Face dorsale de la base du métatarsien voisin",
+     "os": [
+      "metatarsiens"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relient les bases des métatarsiens 2 à 5 par le dessus ; glissement léger",
+   "tendu": null,
+   "test": null,
+   "clinique": "Le premier métatarsien n'est pas relié au deuxième par un ligament : c'est ce qui rend la région de Lisfranc fragile",
+   "memo": "Des ponts du dos entre voisins, sauf entre le premier et le deuxième",
+   "variantes": "Pas de ligament entre les bases des 1er et 2e métatarsiens",
+   "sources": [
+    "gray1918",
+    "kenhub-pied",
+    "rp-lisfranc"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligaments-metatarsiens-interosseux",
+   "resume": "Les liens profonds entre les bases des métatarsiens voisins.",
+   "nature": "groupe",
+   "articulation": "Pied (articulations intermétatarsiennes)",
+   "attaches": [
+    {
+     "texte": "Parties rugueuses non articulaires de la base de chaque métatarsien",
+     "os": [
+      "metatarsiens"
+     ]
+    },
+    {
+     "texte": "Parties rugueuses non articulaires de la base du métatarsien voisin",
+     "os": [
+      "metatarsiens"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Unissent solidement les bases des métatarsiens 2 à 5 par des fibres transversales courtes",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteints dans les lésions de Lisfranc, avec écartement des bases métatarsiennes",
+   "memo": "La colle profonde des bases : elle garde les métatarsiens en rang",
+   "variantes": "Pas de ligament entre les bases des 1er et 2e métatarsiens",
+   "sources": [
+    "gray1918",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligaments-metatarsiens-plantaires",
+   "resume": "Les bandes transversales du dessous du pied, entre les bases des métatarsiens voisins.",
+   "nature": "groupe",
+   "articulation": "Pied (articulations intermétatarsiennes)",
+   "attaches": [
+    {
+     "texte": "Face plantaire de la base de chaque métatarsien",
+     "os": [
+      "metatarsiens"
+     ]
+    },
+    {
+     "texte": "Face plantaire de la base du métatarsien voisin",
+     "os": [
+      "metatarsiens"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Relient les bases des métatarsiens 2 à 5 par le dessous ; disposés comme les dorsaux ; ils renforcent la voûte transversale",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteints dans les lésions de Lisfranc, avec écartement des bases métatarsiennes",
+   "memo": "Des ponts du dessous entre voisins, comme au dos",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligaments-metatarsophalangiens-collateraux",
+   "resume": "Les cordons latéraux des articulations entre métatarsiens et orteils.",
+   "nature": "groupe",
+   "articulation": "Pied (articulations métatarsophalangiennes)",
+   "attaches": [
+    {
+     "texte": "Tubercule de la tête du métatarsien, de chaque côté",
+     "os": [
+      "metatarsiens"
+     ]
+    },
+    {
+     "texte": "Base de la phalange proximale et plaque plantaire",
+     "os": [
+      "phalanges-pied"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Tiennent les articulations métatarsophalangiennes de chaque côté ; cordons obliques et solides",
+   "tendu": null,
+   "test": null,
+   "clinique": "Atteints dans les entorses des orteils (choc contre une butée) ; au gros orteil, ils interviennent dans le hallux valgus",
+   "memo": "Deux cordes de chaque côté de l'articulation, qui partent du tubercule",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mtp",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligaments-metatarsophalangiens-plantaires",
+   "resume": "Les plaques plantaires : des plateaux fibreux, sous les têtes des métatarsiens, qui portent l'appui des orteils.",
+   "nature": "groupe",
+   "articulation": "Pied (articulations métatarsophalangiennes)",
+   "attaches": [
+    {
+     "texte": "Base de la phalange proximale, fermement",
+     "os": [
+      "phalanges-pied"
+     ]
+    },
+    {
+     "texte": "Tête du métatarsien, lâchement",
+     "os": [
+      "metatarsiens"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Plateaux de fibrocartilage qui prolongent la surface articulaire et portent les gouttières des tendons fléchisseurs ; au gros orteil, les sésamoïdes les remplacent",
+   "tendu": null,
+   "test": null,
+   "clinique": "Au gros orteil, les sésamoïdes prennent la place de la plaque ; c'est cette articulation que déforme le hallux valgus (gros orteil dévié vers le dehors)",
+   "memo": "Sous chaque tête : un plateau qui porte le poids des orteils",
+   "variantes": "Au gros orteil, deux sésamoïdes remplacent en grande partie la plaque",
+   "sources": [
+    "gray1918",
+    "kenhub-mtp",
+    "kenhub-pied"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligaments-tarsometatarsiens-dorsaux",
+   "resume": "Les fortes bandes plates du dos du pied entre le tarse et les métatarsiens.",
+   "nature": "groupe",
+   "articulation": "Pied (articulations tarso-métatarsiennes)",
+   "attaches": [
+    {
+     "texte": "Face dorsale des cunéiformes et du cuboïde",
+     "os": [
+      "cuneiformes",
+      "cuboide"
+     ]
+    },
+    {
+     "texte": "Face dorsale des bases des cinq métatarsiens",
+     "os": [
+      "metatarsiens"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Tiennent chaque métatarsien à son cunéiforme ou au cuboïde ; le 1er par une bande large, le 2e par une bande de chaque cunéiforme ; glissement léger",
+   "tendu": null,
+   "test": null,
+   "clinique": "Rupture dans les lésions de Lisfranc : douleur du dos du pied, impossibilité d'appui",
+   "memo": "Un pont par métatarsien, du dos du tarse à sa base",
+   "variantes": "Le 2e métatarsien reçoit une bande de chaque cunéiforme, le 3e du cunéiforme latéral, le 4e du latéral et du cuboïde, le 5e du cuboïde",
+   "sources": [
+    "gray1918",
+    "kenhub-pied",
+    "rp-lisfranc"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligaments-tarsometatarsiens-plantaires",
+   "resume": "Les bandes longitudinales et obliques sous le pied, entre le tarse et les métatarsiens.",
+   "nature": "groupe",
+   "articulation": "Pied (articulations tarso-métatarsiennes)",
+   "attaches": [
+    {
+     "texte": "Face plantaire des cunéiformes et du cuboïde",
+     "os": [
+      "cuneiformes",
+      "cuboide"
+     ]
+    },
+    {
+     "texte": "Face plantaire des bases des métatarsiens",
+     "os": [
+      "metatarsiens"
+     ]
+    }
+   ],
+   "situation": null,
+   "role": "Tiennent les métatarsiens au tarse sous le pied ; plus irrégulières que les dorsales, les plus fortes concernent les 1er et 2e métatarsiens",
+   "tendu": null,
+   "test": null,
+   "clinique": "Rupture dans les lésions de Lisfranc, avec instabilité de l'avant-pied et affaissement de l'arche",
+   "memo": "Dessous du pied : des sangles obliques, plus fortes pour les deux premiers rayons",
+   "variantes": "Des bandes obliques relient les 2e et 3e métatarsiens au cunéiforme médial",
+   "sources": [
+    "gray1918",
+    "kenhub-pied",
+    "rp-lisfranc"
+   ],
+   "divergences": null
+  }
+ ]
+}

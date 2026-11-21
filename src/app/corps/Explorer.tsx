@@ -1,12 +1,13 @@
 "use client";
 
 import { Dumbbell, Eye, Focus, Minus, Pin, Play, Plus, Scan, Search, Square, Star, X } from "lucide-react";
-import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { ELEMENTS, PAR_ID } from "@/lib/corps/catalogue";
-import { useFiche } from "@/lib/corps/fiches";
+import { chargerFiches, useFiche } from "@/lib/corps/fiches";
 import type { FicheMuscle } from "@/lib/corps/fiches/types";
 import { NOMS_ARTICULATIONS, NOMS_MOUVEMENTS } from "@/lib/corps/mouvement/articulations";
-import { type Action, programmeDe } from "@/lib/corps/mouvement/gestes";
+import { type Action, gesteDe, programmeDe } from "@/lib/corps/mouvement/gestes";
+import { ATELIER_DEFAUT, Atelier, type EtatAtelier } from "./Atelier";
 import { calqueDElement } from "@/lib/corps/modele/modele";
 import { basculerFavori, boite, estFavori, useEcorche } from "@/lib/corps/progression";
 import { nomRegion } from "@/lib/corps/quiz";
@@ -68,6 +69,17 @@ function liees(e: Element): Element[] {
   return l;
 }
 
+const LOBES = ["lobe-superieur-du-poumon-droit", "lobe-moyen-du-poumon-droit", "lobe-inferieur-du-poumon-droit", "lobe-superieur-du-poumon-gauche", "lobe-inferieur-du-poumon-gauche"];
+
+/** « Moins d'animations », tel que l'appareil le demande. */
+const REQUETE_CALME = "(prefers-reduced-motion: reduce)";
+function ecouterCalme(f: () => void) {
+  const m = window.matchMedia(REQUETE_CALME);
+  m.addEventListener("change", f);
+  return () => m.removeEventListener("change", f);
+}
+const lireCalme = () => window.matchMedia(REQUETE_CALME).matches;
+
 export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string | null; nav: Navigation }) {
   const e = useEcorche();
   const [couches, setCouches] = useState<Couches>(COUCHES_DEFAUT);
@@ -85,6 +97,17 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
   const [geste, setGeste] = useState<Action | null>(null);
   const { fiche: ficheChoisie } = useFiche(choisi?.id);
   const actionsDuMuscle = ficheChoisie?.couche === "muscle" ? (ficheChoisie.fiche as FicheMuscle).actions : null;
+  // L'atelier : la pose du squelette, la coupe, la vue éclatée, le scalpel, le cœur et le souffle.
+  const [atelier, setAtelier] = useState<EtatAtelier>(ATELIER_DEFAUT);
+  const reglerAtelier = (x: Partial<EtatAtelier>) => {
+    setAtelier((a) => ({ ...a, ...x }));
+    // Le cœur ou le souffle qu'on allume : la caméra vient sur la poitrine.
+    if ((x.coeur && !atelier.coeur) || (x.souffle && !atelier.souffle)) stage.poignee.current?.viser(x.coeur ? ["atrium-droit", "atrium-gauche", "ventricule-droit", "ventricule-gauche"] : ["lobe-superieur-du-poumon-droit", "lobe-superieur-du-poumon-gauche", "lobe-inferieur-du-poumon-droit", "lobe-inferieur-du-poumon-gauche"], { marge: x.coeur ? 3.4 : 1.6 });
+  };
+  const poseAtelier = useRef(atelier.pose);
+  // « Surprends-moi » : le muscle tiré au sort, dont on joue l'action dès que sa fiche est là.
+  const [aJouer, setAJouer] = useState<string | null>(null);
+  const calme = useSyncExternalStore(ecouterCalme, lireCalme, () => false);
 
   const choisir = (id: string | null) => nav.aller(id ? `explorer/${id}` : "explorer");
 
@@ -92,6 +115,7 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
   const jouer = (actions: Action[]) => {
     if (!choisi || !actions.length) return;
     const programme = programmeDe(choisi.id, actions, "g", { toutes: actions.length === 1 });
+    if (Object.keys(atelier.pose).length) setAtelier((a) => ({ ...a, pose: {} }));
     stage.poignee.current?.viser([choisi.id], { marge: 3.2, cote: "g" });
     stage.poignee.current?.jouer(programme, {
       etape: (rang) => {
@@ -103,17 +127,52 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
   };
   const arreter = () => {
     stage.poignee.current?.arreter();
+    stage.poignee.current?.poser(atelier.pose);
     setGeste(null);
   };
-  // On change de structure : le corps reprend la position anatomique.
+  // On change de structure : le geste s'arrête et le corps reprend la pose de l'atelier.
   const idChoisi = choisi?.id;
   useEffect(
     () => () => {
       stage.poignee.current?.arreter();
+      stage.poignee.current?.poser(poseAtelier.current);
       setGeste(null);
     },
     [idChoisi, stage],
   );
+  // La pose de l'atelier ; en quittant l'explorateur, le corps reprend la position anatomique.
+  useEffect(() => {
+    poseAtelier.current = atelier.pose;
+    stage.poignee.current?.poser(atelier.pose);
+  }, [atelier.pose, stage]);
+  useEffect(() => () => stage.poignee.current?.poser({}), [stage]);
+  // Le scalpel ôte une structure : elle s'en va (son élément entier, d'un seul côté si elle est paire).
+  useEffect(() => {
+    stage.surOter((s) => setAtelier((a) => (a.otees.includes(s.element) ? a : { ...a, otees: [...a.otees, s.element] })));
+    return () => stage.surOter(null);
+  }, [stage]);
+  const surprendre = () => {
+    chargerFiches("muscle").then((r) => {
+      const jouables = Object.entries(r.fiches)
+        .filter(([, f]) => f.actions.some((a) => a.role === "principal" && gesteDe(a.articulation, a.mouvement, "g")))
+        .map(([id]) => id)
+        .filter((id) => id !== choisi?.id && PAR_ID.has(id));
+      if (!jouables.length) return;
+      const id = jouables[Math.floor(Math.random() * jouables.length)];
+      setAJouer(id);
+      choisir(id);
+    }, () => undefined);
+  };
+  useEffect(() => {
+    if (!aJouer || choisi?.id !== aJouer || !actionsDuMuscle) return;
+    // (le temps que la caméra arrive sur le muscle)
+    const minuterie = setTimeout(() => {
+      setAJouer(null);
+      jouer(actionsDuMuscle);
+    }, 500);
+    return () => clearTimeout(minuterie);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [aJouer, choisi?.id, actionsDuMuscle]);
 
   // Le corps : les couches, les rayons X, la dissection, la carte de ce qu'on sait, la structure choisie.
   // Les surfaces d'insertion du muscle choisi : origines en rouge, terminaisons en bleu.
@@ -124,15 +183,23 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
     if (memoire) for (const x of ELEMENTS) sortie[x.id] = { teinte: teinteMemoire(e.elements[x.id] ? boite(e, x.id) : undefined) };
     // Avec ses attaches, le muscle choisi devient translucide : on voit sur l'os d'où il part et où il se termine.
     if (choisi) sortie[choisi.id] = { teinte: TEINTE.choisi, choisi: true, visible: voirAttaches ? 0.3 : 1 };
+    for (const id of atelier.otees) if (id !== choisi?.id) sortie[id] = { ...sortie[id], visible: 0 };
+    // Pour voir battre le cœur, les poumons qui le couvrent s'effacent à demi (sauf si l'on regarde respirer).
+    if (atelier.coeur && !atelier.souffle) for (const id of LOBES) if (id !== choisi?.id) sortie[id] = { ...sortie[id], visible: 0.18 };
     return sortie;
-  }, [memoire, choisi, e, voirAttaches]);
+  }, [memoire, choisi, e, voirAttaches, atelier.otees, atelier.coeur, atelier.souffle]);
   // La structure choisie se voit toujours : sa couche s'allume (et son enveloppe), la dissection descend jusqu'à elle.
   const profChoisi = choisi ? (stage.scene?.structures.find((s) => s.element === choisi.id)?.profondeur ?? choisi.profondeur ?? 0) : 0;
   const profondeurVue = choisi?.couche === "muscle" || choisi?.couche === "tendon" ? Math.min(profondeur, profChoisi) : profondeur;
   const vraiesCouches = useMemo<Couches>(() => {
-    const c = choisi && !couches[choisi.couche] ? { ...couches, [choisi.couche]: 1 } : couches;
+    let c = choisi && !couches[choisi.couche] ? { ...couches, [choisi.couche]: 1 } : couches;
+    // Le cœur qui bat se voit avec ses artères ; le souffle, avec les poumons et les côtes : la chair devient
+    // translucide pour les laisser voir.
+    if (atelier.coeur) c = { ...c, artere: c.artere || 1, viscere: c.viscere || 1 };
+    if (atelier.souffle) c = { ...c, viscere: c.viscere || 1 };
+    if (atelier.coeur || atelier.souffle) c = { ...c, muscle: c.muscle ? 0.16 : 0, tendon: c.tendon ? 0.2 : 0 };
     return rayonsX ? { ...c, muscle: c.muscle ? 0.28 : 0, tendon: c.tendon ? 0.4 : 0 } : c;
-  }, [couches, rayonsX, choisi]);
+  }, [couches, rayonsX, choisi, atelier.coeur, atelier.souffle]);
   const vraisCalques = useMemo<Calques>(() => {
     const calque = choisi ? calqueDElement(choisi.id) : null;
     return calque && OPTIONNELS.includes(calque) && !calques[calque as CalqueOptionnel] ? { ...calques, [calque]: 1 } : calques;
@@ -154,8 +221,12 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
           ? { id: choisi.id, texte: choisi.nom, sous: geste ? `${NOMS_ARTICULATIONS[geste.articulation] ?? geste.articulation} : ${(NOMS_MOUVEMENTS[geste.mouvement] ?? geste.mouvement).toLowerCase()}` : undefined }
           : null,
       retrait: false,
+      coupe: atelier.coupe,
+      eclate: atelier.eclate,
+      scalpel: atelier.scalpel,
+      vivant: atelier.coeur || atelier.souffle ? { coeur: atelier.coeur, souffle: atelier.souffle } : null,
     });
-  }, [stage, vraiesCouches, vraisCalques, voirAttaches, profondeurVue, etats, isole, choisi, survole, geste]);
+  }, [stage, vraiesCouches, vraisCalques, voirAttaches, profondeurVue, etats, isole, choisi, survole, geste, atelier.coupe, atelier.eclate, atelier.scalpel, atelier.coeur, atelier.souffle]);
 
   useEffect(() => {
     stage.surChoix((s) => {
@@ -250,6 +321,8 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
           </button>
         </div>
       </div>
+
+      <Atelier etat={atelier} regler={reglerAtelier} calme={calme} surprendre={surprendre} />
 
       <div className="ec-recherche">
         <Search size={16} aria-hidden="true" />

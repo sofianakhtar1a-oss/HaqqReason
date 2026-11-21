@@ -1,0 +1,611 @@
+{
+ "lot": "encephale-cortex",
+ "couche": "encephale",
+ "structures": [
+  {
+   "id": "lobule-biventral",
+   "nom": "Lobule biventral",
+   "latin": "Lobulus biventer",
+   "anglais": "Biventral lobule",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Lobule biventral",
+   "ta2": "5816"
+  },
+  {
+   "id": "lobule-gracile",
+   "nom": "Lobule gracile",
+   "latin": "Lobulus gracilis",
+   "anglais": "Gracile lobule",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Lobule gracile",
+   "ta2": "5815"
+  },
+  {
+   "id": "lobule-quadrangulaire-anterieur",
+   "nom": "Lobule quadrangulaire antérieur",
+   "latin": "Lobulus quadrangularis anterior",
+   "anglais": "Anterior quadrangular lobule",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Lobule quadrangulaire antérieur",
+   "ta2": "5808"
+  },
+  {
+   "id": "lobule-semilunaire-inferieur",
+   "nom": "Lobule semilunaire inférieur",
+   "latin": "Lobulus semilunaris inferior",
+   "anglais": "Inferior semilunar lobule",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Lobule semilunaire inférieur",
+   "ta2": "5814"
+  },
+  {
+   "id": "lobule-semilunaire-superieur",
+   "nom": "Lobule semilunaire supérieur",
+   "latin": "Lobulus semilunaris superior",
+   "anglais": "Superior semilunar lobule",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Lobule semilunaire supérieur",
+   "ta2": "5813"
+  },
+  {
+   "id": "cortex-insulaire",
+   "nom": "Cortex insulaire",
+   "latin": "Insula",
+   "anglais": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Cortex insulaire",
+   "ta2": "5502"
+  },
+  {
+   "id": "cuneus",
+   "nom": "Cunéus",
+   "latin": "Cuneus",
+   "anglais": "Cuneus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Cunéus",
+   "ta2": "5485"
+  },
+  {
+   "id": "gyri-occipitaux-superieurs",
+   "nom": "Gyri occipitaux supérieurs",
+   "latin": "Gyri occipitales superiores",
+   "anglais": "Superior occipital gyri",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyri occipitaux supérieurs",
+   "ta2": "5481"
+  },
+  {
+   "id": "gyri-orbitaires",
+   "nom": "Gyri orbitaires",
+   "latin": "Gyri orbitales",
+   "anglais": "Orbital gyri (Frontomarginal gyrus and sulcus*)",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyri orbitaires",
+   "ta2": "5464"
+  },
+  {
+   "id": "encephale-gyri-orbitaires",
+   "nom": "Gyri orbitaires",
+   "latin": "Gyri orbitales",
+   "anglais": "Orbital gyri",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyri orbitaires",
+   "ta2": "5464"
+  },
+  {
+   "id": "gyrus-angulaire",
+   "nom": "Gyrus angulaire",
+   "latin": "Gyrus angularis",
+   "anglais": "Angular gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus angulaire",
+   "ta2": "5472"
+  },
+  {
+   "id": "gyrus-cingulaire",
+   "nom": "Gyrus cingulaire",
+   "latin": "Gyrus cinguli",
+   "anglais": "Cingulate gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus cingulaire",
+   "connu": {
+    "parties_modelisees": [
+     "Gyrus cingulaire (partie moyenne antérieure)",
+     "Gyrus cingulaire (partie moyenne postérieure)",
+     "Gyrus cingulaire (partie postéro-dorsale)",
+     "Gyrus cingulaire (partie postéro-ventrale)"
+    ]
+   }
+  },
+  {
+   "id": "gyrus-et-sillon-frontopolaires-transverses",
+   "nom": "Gyrus et sillon frontopolaires transverses",
+   "latin": "Gyrus et sulcus transversus frontopolar",
+   "anglais": "Transverse frontopolar gyrus and sulcus*",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus et sillon frontopolaires transverses",
+   "ta2": "7210"
+  },
+  {
+   "id": "gyrus-frontal-moyen",
+   "nom": "Gyrus frontal moyen",
+   "latin": "Gyrus frontalis medius",
+   "anglais": "Middle frontal gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus frontal moyen",
+   "ta2": "5454"
+  },
+  {
+   "id": "gyrus-frontal-superieur",
+   "nom": "Gyrus frontal supérieur",
+   "latin": "Gyrus frontalis superior",
+   "anglais": "Superior frontal gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus frontal supérieur",
+   "ta2": "5456"
+  },
+  {
+   "id": "gyrus-lingual",
+   "nom": "Gyrus lingual",
+   "latin": "Gyrus lingualis",
+   "anglais": "Lingual gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus lingual",
+   "ta2": "5487"
+  },
+  {
+   "id": "gyrus-occipital-inferieur",
+   "nom": "Gyrus occipital inférieur",
+   "latin": "Gyrus occipitalis inferior",
+   "anglais": "Inferior occipital gyrus and sulcus*",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus occipital inférieur"
+  },
+  {
+   "id": "gyrus-occipital-lateral",
+   "nom": "Gyrus occipital latéral",
+   "latin": "Gyrus occipitalis lateralis",
+   "anglais": "Lateral occipital gyrus (Middle occipital gyrus*)",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus occipital latéral"
+  },
+  {
+   "id": "gyrus-occipitotemporal-lateral",
+   "nom": "Gyrus occipitotemporal latéral",
+   "latin": "Gyrus occipitotemporalis lateralis",
+   "anglais": "Lateral occipitotemporal gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus occipitotemporal latéral",
+   "ta2": "5500"
+  },
+  {
+   "id": "gyrus-occipitotemporal-medial",
+   "nom": "Gyrus occipitotemporal médial",
+   "latin": "Gyrus occipitotemporalis medialis",
+   "anglais": "Medial occipitotemporal gyrus (Parahippocampal*)",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus occipitotemporal médial",
+   "ta2": "5501"
+  },
+  {
+   "id": "gyrus-postcentral",
+   "nom": "Gyrus postcentral",
+   "latin": "Gyrus postcentralis",
+   "anglais": "Postcentral gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus postcentral",
+   "ta2": "5469"
+  },
+  {
+   "id": "gyrus-precentral",
+   "nom": "Gyrus précentral",
+   "latin": "Gyrus precentralis",
+   "anglais": "Precentral gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus précentral",
+   "ta2": "5458"
+  },
+  {
+   "id": "gyrus-rectus",
+   "nom": "Gyrus rectus",
+   "latin": "Gyrus rectus",
+   "anglais": "Straight gyrus (Gyrus rectus)",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus rectus",
+   "ta2": "5462"
+  },
+  {
+   "id": "gyrus-supramarginal",
+   "nom": "Gyrus supramarginal",
+   "latin": "Gyrus supramarginalis",
+   "anglais": "Supramarginal gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus supramarginal",
+   "ta2": "5473"
+  },
+  {
+   "id": "gyrus-temporal-inferieur",
+   "nom": "Gyrus temporal inférieur",
+   "latin": "Gyrus temporalis inferior",
+   "anglais": "Inferior temporal gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus temporal inférieur",
+   "ta2": "5497"
+  },
+  {
+   "id": "gyrus-temporal-moyen",
+   "nom": "Gyrus temporal moyen",
+   "latin": "Gyrus temporalis medius",
+   "anglais": "Middle temporal gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus temporal moyen",
+   "ta2": "5495"
+  },
+  {
+   "id": "gyrus-temporal-superieur",
+   "nom": "Gyrus temporal supérieur",
+   "latin": "Gyrus temporalis superior",
+   "anglais": "Superior temporal gyrus (Lateral part)",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus temporal supérieur",
+   "ta2": "5489"
+  },
+  {
+   "id": "gyrus-temporal-transverse",
+   "nom": "Gyrus temporal transverse",
+   "latin": "Gyri temporales transversi",
+   "anglais": "Transverse temporal gyri",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Gyrus temporal transverse",
+   "ta2": "5491"
+  },
+  {
+   "id": "lobule-central",
+   "nom": "Lobule central",
+   "latin": "Lobulus centralis vermis",
+   "anglais": "Central lobule",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lobule central",
+   "ta2": "5821"
+  },
+  {
+   "id": "lobule-paracentral",
+   "nom": "Lobule paracentral",
+   "latin": "Lobulus paracentralis",
+   "anglais": "Paracentral gyrus and sulcus*",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lobule paracentral"
+  },
+  {
+   "id": "lobule-parietal-superieur",
+   "nom": "Lobule pariétal supérieur",
+   "latin": "Lobulus parietalis superior",
+   "anglais": "Superior parietal lobule",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lobule pariétal supérieur",
+   "ta2": "5476"
+  },
+  {
+   "id": "lobule-quadrangulaire-posterieur",
+   "nom": "Lobule quadrangulaire postérieur",
+   "latin": "Lobulus quadrangularis posterior",
+   "anglais": "Posterior quadrangular lobule",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lobule quadrangulaire postérieur",
+   "ta2": "5811"
+  },
+  {
+   "id": "precuneus",
+   "nom": "Précuneus",
+   "latin": "Precuneus",
+   "anglais": "Precuneus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Précuneus",
+   "ta2": "5479"
+  },
+  {
+   "id": "pole-occipital",
+   "nom": "Pôle occipital",
+   "latin": "Polus occipitalis",
+   "anglais": "Occipital pole",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Pôle occipital",
+   "ta2": "5421"
+  },
+  {
+   "id": "pole-temporal",
+   "nom": "Pôle temporal",
+   "latin": "Polus temporalis",
+   "anglais": "Temporal pole",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Pôle temporal",
+   "ta2": "5420"
+  },
+  {
+   "id": "scissure-collaterale",
+   "nom": "Scissure collatérale",
+   "latin": "Sulcus collateralis",
+   "anglais": "Collateral sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Scissure collatérale",
+   "ta2": "5442"
+  },
+  {
+   "id": "sillon-calcarin",
+   "nom": "Sillon calcarin",
+   "latin": "Sulcus calcarinus",
+   "anglais": "Calcarine sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon calcarin",
+   "ta2": "5486"
+  },
+  {
+   "id": "sillon-central",
+   "nom": "Sillon central",
+   "latin": "Sulcus centralis",
+   "anglais": "Central sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon central",
+   "ta2": "5435"
+  },
+  {
+   "id": "sillon-cingulaire",
+   "nom": "Sillon cingulaire",
+   "latin": "Sulcus cinguli",
+   "anglais": "Cingulate sulcus (Marginal part*)",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon cingulaire",
+   "ta2": "5440"
+  },
+  {
+   "id": "sillon-circulaire-de-l-insula",
+   "nom": "Sillon circulaire de l'insula",
+   "latin": "Sulcus circularis insulae",
+   "anglais": "Circular sulcus of insula",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon circulaire de l'insula",
+   "ta2": "5444"
+  },
+  {
+   "id": "sillon-collateral-transverse-posterieur",
+   "nom": "Sillon collatéral transverse postérieur",
+   "latin": "Sulcus collateralis transversus posterior",
+   "anglais": "Posterior transverse collateral sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon collatéral transverse postérieur"
+  },
+  {
+   "id": "sillon-frontal-inferieur",
+   "nom": "Sillon frontal inférieur",
+   "latin": "Sulcus frontalis inferior",
+   "anglais": "Inferior frontal sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon frontal inférieur",
+   "ta2": "5453"
+  },
+  {
+   "id": "sillon-frontal-superieur",
+   "nom": "Sillon frontal supérieur",
+   "latin": "Sulcus frontalis superior",
+   "anglais": "Superior frontal sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon frontal supérieur",
+   "ta2": "5455"
+  },
+  {
+   "id": "sillon-intermediaire-primaire-de-jensen",
+   "nom": "Sillon intermédiaire primaire (de Jensen)",
+   "latin": "Sulcus intermedius primus",
+   "anglais": "Sulcus interm_prim-Jensen",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon intermédiaire primaire (de Jensen)"
+  },
+  {
+   "id": "sillon-intraparietal",
+   "nom": "Sillon intrapariétal",
+   "latin": "Sulcus intraparietalis",
+   "anglais": "Intraparietal sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon intrapariétal",
+   "ta2": "5475"
+  },
+  {
+   "id": "sillon-lateral-rameau-posterieur",
+   "nom": "Sillon latéral (rameau postérieur)",
+   "latin": "Ramus posterior sulci lateralis",
+   "anglais": "Lat_Fis-post",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon latéral (rameau postérieur)"
+  },
+  {
+   "id": "sillon-lunaire",
+   "nom": "Sillon lunaire",
+   "latin": "(Sulcus lunatus)",
+   "anglais": "Lunate sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon lunaire",
+   "ta2": "5483"
+  },
+  {
+   "id": "sillon-occipital-anterieur",
+   "nom": "Sillon occipital antérieur",
+   "latin": "Sulcus occipitalis anterior",
+   "anglais": "Anterior occipital sulcus*",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon occipital antérieur"
+  },
+  {
+   "id": "sillon-occipital-transverse",
+   "nom": "Sillon occipital transverse",
+   "latin": "Sulcus occipitalis transversus",
+   "anglais": "Transverse occipital sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon occipital transverse",
+   "ta2": "5484"
+  },
+  {
+   "id": "sillon-occipitotemporal",
+   "nom": "Sillon occipitotemporal",
+   "latin": "Sulcus occipitotemporalis",
+   "anglais": "Occipitotemporal sulcus (Lateral part*)",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon occipitotemporal",
+   "ta2": "5498"
+  },
+  {
+   "id": "sillon-olfactif",
+   "nom": "Sillon olfactif",
+   "latin": "Sulcus olfactorius",
+   "anglais": "Olfactory sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon olfactif",
+   "ta2": "5463"
+  },
+  {
+   "id": "sillon-paracentral",
+   "nom": "Sillon paracentral",
+   "latin": "Sulcus paracentralis",
+   "anglais": "Paracentral sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon paracentral",
+   "ta2": "5460"
+  },
+  {
+   "id": "sillon-parieto-occipital",
+   "nom": "Sillon pariéto-occipital",
+   "latin": "Sulcus parietooccipitalis",
+   "anglais": "Parieto-occipital sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon pariéto-occipital",
+   "ta2": "5437"
+  },
+  {
+   "id": "sillon-postcentral",
+   "nom": "Sillon postcentral",
+   "latin": "Sulcus postcentralis",
+   "anglais": "Postcentral sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon postcentral",
+   "ta2": "5470"
+  },
+  {
+   "id": "sillon-precentral",
+   "nom": "Sillon précentral",
+   "latin": "Sulcus precentralis",
+   "anglais": "Precentral sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon précentral",
+   "connu": {
+    "parties_modelisees": [
+     "Sillon précentral (partie inférieure)",
+     "Sillon précentral (partie supérieure)"
+    ]
+   }
+  },
+  {
+   "id": "sillon-subparietal",
+   "nom": "Sillon subpariétal",
+   "latin": "Sulcus subparietalis",
+   "anglais": "Subparietal sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon subpariétal",
+   "ta2": "5441"
+  },
+  {
+   "id": "sillon-temporal-inferieur",
+   "nom": "Sillon temporal inférieur",
+   "latin": "Sulcus temporalis inferior",
+   "anglais": "Inferior temporal sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon temporal inférieur",
+   "ta2": "5496"
+  },
+  {
+   "id": "sillon-temporal-superieur",
+   "nom": "Sillon temporal supérieur",
+   "latin": "Sulcus temporalis superior",
+   "anglais": "Superior temporal sulcus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillon temporal supérieur",
+   "ta2": "5494"
+  },
+  {
+   "id": "sillons-orbitaires",
+   "nom": "Sillons orbitaires",
+   "latin": "Sulci orbitales",
+   "anglais": "Orbital sulci (H-shaped orbital sulci*)",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillons orbitaires",
+   "ta2": "5465"
+  },
+  {
+   "id": "encephale-sillons-orbitaires",
+   "nom": "Sillons orbitaires",
+   "latin": "Sulci orbitales",
+   "anglais": "Orbital sulci (Lateral Orbital sulcus*)",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Sillons orbitaires",
+   "ta2": "5465"
+  }
+ ]
+}

@@ -1,0 +1,1969 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral sur Internet Archive",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "tma-craniens-resume": {
+   "titre": "TeachMeAnatomy, Summary of the cranial nerves",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/summary/"
+  },
+  "tma-olfactif": {
+   "titre": "TeachMeAnatomy, Olfactory nerve (CN I)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/olfactory-cni/"
+  },
+  "tma-optique": {
+   "titre": "TeachMeAnatomy, Optic nerve (CN II)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/optic-cnii/"
+  },
+  "tma-oculomoteur": {
+   "titre": "TeachMeAnatomy, Oculomotor nerve (CN III)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/oculomotor/"
+  },
+  "tma-trochleaire": {
+   "titre": "TeachMeAnatomy, Trochlear nerve (CN IV)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/trochlear-nerve/"
+  },
+  "tma-trijumeau": {
+   "titre": "TeachMeAnatomy, Trigeminal nerve (CN V)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/trigeminal-nerve/"
+  },
+  "tma-ophtalmique": {
+   "titre": "TeachMeAnatomy, Ophthalmic nerve (V1)",
+   "url": "https://teachmeanatomy.info/head/nerves/ophthalmic-nerve/"
+  },
+  "tma-maxillaire": {
+   "titre": "TeachMeAnatomy, Maxillary nerve (V2)",
+   "url": "https://teachmeanatomy.info/head/nerves/maxillary-nerve/"
+  },
+  "tma-mandibulaire": {
+   "titre": "TeachMeAnatomy, Mandibular nerve (V3)",
+   "url": "https://teachmeanatomy.info/head/nerves/mandibular-nerve/"
+  },
+  "tma-abducens": {
+   "titre": "TeachMeAnatomy, Abducens nerve (CN VI)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/abducens-nerve/"
+  },
+  "tma-facial": {
+   "titre": "TeachMeAnatomy, Facial nerve (CN VII)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/facial-nerve/"
+  },
+  "tma-vestibulocochleaire": {
+   "titre": "TeachMeAnatomy, Vestibulocochlear nerve (CN VIII)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/vestibulocochlear/"
+  },
+  "tma-glossopharyngien": {
+   "titre": "TeachMeAnatomy, Glossopharyngeal nerve (CN IX)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/glossopharyngeal-nerve/"
+  },
+  "tma-vague": {
+   "titre": "TeachMeAnatomy, Vagus nerve (CN X)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/vagus-nerve-cn-x/"
+  },
+  "tma-accessoire": {
+   "titre": "TeachMeAnatomy, Accessory nerve (CN XI)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/accessory/"
+  },
+  "tma-hypoglosse": {
+   "titre": "TeachMeAnatomy, Hypoglossal nerve (CN XII)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/hypoglossal/"
+  },
+  "kenhub-pudendal": {
+   "titre": "Kenhub, Pudendal nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/pudendal-nerve"
+  },
+  "kenhub-intercostaux": {
+   "titre": "Kenhub, Intercostal nerves",
+   "url": "https://www.kenhub.com/en/library/anatomy/intercostal-nerves"
+  },
+  "kenhub-iliohypogastrique": {
+   "titre": "Kenhub, Iliohypogastric nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/iliohypogastric-nerve"
+  },
+  "kenhub-lingual": {
+   "titre": "Kenhub, Lingual nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/lingual-nerve"
+  },
+  "kenhub-alveolaire-inferieur": {
+   "titre": "Kenhub, Inferior alveolar nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/inferior-alveolar-nerve"
+  },
+  "kenhub-mentonnier": {
+   "titre": "Kenhub, Mental nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/mental-nerve"
+  },
+  "kenhub-corde-du-tympan": {
+   "titre": "Kenhub, Chorda tympani",
+   "url": "https://www.kenhub.com/en/library/anatomy/chorda-tympani"
+  },
+  "kenhub-nerfs-spinaux": {
+   "titre": "Kenhub, Spinal nerves",
+   "url": "https://www.kenhub.com/en/library/anatomy/spinal-nerves"
+  },
+  "kenhub-ganglion-spinal": {
+   "titre": "Kenhub, Dorsal root ganglion",
+   "url": "https://kenhub.com/en/library/anatomy/dorsal-root-ganglion"
+  },
+  "statpearls-chaine-sympathique": {
+   "titre": "StatPearls, chaîne sympathique cervicale (Anatomy, Head and Neck)",
+   "url": "https://www.statpearls.com/point-of-care/120417"
+  },
+  "statpearls-queue-de-cheval": {
+   "titre": "StatPearls, Cauda equina syndrome",
+   "url": "https://www.statpearls.com/point-of-care/19024"
+  },
+  "radiopaedia-tractus-optique": {
+   "titre": "Radiopaedia, Optic tract",
+   "url": "https://radiopaedia.org/articles/optic-tract"
+  },
+  "radiopaedia-chiasma": {
+   "titre": "Radiopaedia, Optic chiasm",
+   "url": "https://radiopaedia.org/articles/optic-chiasm"
+  },
+  "wikipedia-strie-terminale": {
+   "titre": "Wikipedia (anglais), Stria terminalis",
+   "url": "https://en.wikipedia.org/wiki/Stria_terminalis"
+  },
+  "wikipedia-canal-central": {
+   "titre": "Wikipedia (anglais), Central canal",
+   "url": "https://en.wikipedia.org/wiki/Central_canal"
+  }
+ },
+ "fiches": [
+  {
+   "id": "nerf-pudendal",
+   "resume": "Le nerf du périnée : il commande le sphincter externe de l'anus et sent la peau du périnée et des organes génitaux externes.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Plexus sacral : rameaux antérieurs de S2, S3 et S4",
+    "racines": [
+     "S2",
+     "S3",
+     "S4"
+    ]
+   },
+   "trajet": "Passe entre le piriforme et le coccygien, quitte le bassin par le foramen ischiatique majeur, contourne l'épine ischiatique, rentre par le foramen ischiatique mineur et longe la paroi de la fosse ischio-rectale dans le canal pudendal",
+   "orifices": [
+    "Foramen ischiatique majeur",
+    "Foramen ischiatique mineur",
+    "Canal pudendal (d'Alcock)"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Nerf rectal inférieur : sphincter externe de l'anus et peau péri-anale"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf périnéal : muscles du périnée et peau de la partie postérieure de la région génitale"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf dorsal du pénis ou du clitoris : branche terminale, sensitive"
+    }
+   ],
+   "moteur": {
+    "texte": "Sphincter externe de l'anus et muscles du périnée, commandés pour la plupart par le nerf périnéal",
+    "muscles": [
+     "sphincter-anal-externe"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau du périnée et de la marge anale, muqueuse du canal anal sous la ligne pectinée, organes génitaux externes (par le nerf dorsal du pénis ou du clitoris)"
+   },
+   "autonome": null,
+   "reflexe": {
+    "nom": "Réflexe anal",
+    "racines": [
+     "S2",
+     "S3",
+     "S4"
+    ]
+   },
+   "atteinte": "Compression ou étirement (entre les ligaments sacro-épineux et sacro-tubéral, dans le canal pudendal) : douleur brûlante du périnée aggravée assis (névralgie pudendale), engourdissement, parfois faiblesse du sphincter anal",
+   "test": "Sensibilité de la peau du périnée, contraction du sphincter au toucher rectal, réflexe anal",
+   "clinique": "Le bloc pudendal, repéré à l'épine ischiatique, anesthésiait le périnée à l'accouchement ; il est devenu rare au profit de la péridurale",
+   "memo": "S2, S3, S4 : il sort du bassin par le grand foramen, contourne l'épine ischiatique et y rentre par le petit",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pudendal"
+   ],
+   "divergences": "Kenhub range dans la branche périnéale le releveur de l'anus et le sphincter externe de l'urètre ; Gray ne cite que les muscles du périnée. Le nerf rectal inférieur est nommé « hémorroïdal inférieur » chez Gray"
+  },
+  {
+   "id": "queue-de-cheval",
+   "resume": "Le faisceau de racines nerveuses qui descend sous la fin de la moelle, dans le sac dural lombaire, comme une queue de cheval.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": null,
+    "texte": "Racines antérieures et postérieures lombales, sacrales et coccygiennes, nées sous le cône médullaire",
+    "racines": [
+     "L2",
+     "L3",
+     "L4",
+     "L5",
+     "S1",
+     "S2",
+     "S3",
+     "S4",
+     "S5",
+     "Co"
+    ]
+   },
+   "trajet": "La moelle s'arrête vers L1-L2 ; les racines descendent presque à la verticale autour du filum terminal, dans le sac dural, jusqu'à leur foramen de sortie ; le sac dural se termine vers S2",
+   "orifices": [
+    "Canal vertébral lombaire et sacral",
+    "Foramens intervertébraux lombaires",
+    "Foramens sacraux"
+   ],
+   "moteur": {
+    "texte": "Muscles des membres inférieurs et du périnée, sphincters de la vessie et de l'anus",
+    "muscles": []
+   },
+   "sensitif": {
+    "texte": "Peau des membres inférieurs, du périnée et de la région anale ; sa perte réalise l'anesthésie « en selle »"
+   },
+   "autonome": "Parasympathique sacral (S2 à S4) vers la vessie, le rectum et les organes pelviens",
+   "reflexe": null,
+   "atteinte": "Syndrome de la queue-de-cheval : douleur lombo-radiculaire, faiblesse des jambes, anesthésie en selle, rétention ou incontinence urinaire, troubles anorectaux et sexuels, réflexes abolis ; urgence chirurgicale",
+   "test": "Sensibilité du périnée et de la marge anale, tonus du sphincter au toucher rectal, force et réflexes des jambes (patellaire, achilléen) ; IRM lombaire en urgence",
+   "clinique": "Cause la plus fréquente : une hernie discale lombaire basse, volumineuse ; une décompression chirurgicale rapide (idéalement avant 48 heures) améliore la récupération. Une lésion du cône médullaire épargne souvent le réflexe patellaire, pas celle de la queue-de-cheval",
+   "memo": "Cauda equina, « queue de cheval » : sous le cône de la moelle, les racines pendent comme une crinière",
+   "variantes": "Le niveau du cône varie : bas de L1 ou haut de L2 chez l'adulte, vers L3 à la naissance",
+   "sources": [
+    "gray1918",
+    "statpearls-queue-de-cheval"
+   ],
+   "divergences": "Gray parle de racines lombales et sacrales ; StatPearls précise L2 à S5. Le nerf coccygien s'y joint aussi"
+  },
+  {
+   "id": "ganglions-du-tronc-sympathique",
+   "resume": "Les relais en chapelet du tronc sympathique, de chaque côté du rachis, où les neurones préganglionnaires font synapse.",
+   "sorte": "ganglion",
+   "origine": {
+    "nerf": "tronc-sympathique",
+    "texte": "Renflements du tronc sympathique ; reçoivent les fibres préganglionnaires de la moelle (T1 à L2) par les rameaux communicants blancs",
+    "racines": [
+     "T1",
+     "T2",
+     "T3",
+     "T4",
+     "T5",
+     "T6",
+     "T7",
+     "T8",
+     "T9",
+     "T10",
+     "T11",
+     "T12",
+     "L1",
+     "L2"
+    ]
+   },
+   "trajet": "Trois ganglions cervicaux (supérieur en C2-C3, moyen en C6, inférieur près de la première côte), une douzaine de thoraciques contre les têtes des côtes, quatre lombaux, quatre ou cinq sacraux ; les deux chaînes s'unissent au ganglion impair devant le coccyx",
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameaux communicants gris vers chaque nerf spinal (fibres postganglionnaires)"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerfs cardiaques cervicaux supérieur, moyen et inférieur"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerfs splanchniques thoraciques : grand, petit et le plus bas"
+    }
+   ],
+   "moteur": null,
+   "sensitif": null,
+   "autonome": "Relais sympathique : fibres postganglionnaires vers la peau (sueur, vaisseaux, poils), le cœur et l'œil (dilatateur de la pupille) ; les splanchniques traversent sans relais vers les ganglions du plexus cœliaque",
+   "reflexe": null,
+   "atteinte": "Lésion de la chaîne cervicale ou du ganglion cervical supérieur : syndrome de Claude Bernard-Horner (ptosis, myosis, anhidrose de l'hémiface) ; l'anesthésie du ganglion stellaire le reproduit volontairement",
+   "test": "Pupilles à la lumière forte et faible, ptosis, sudation ; tests pharmacologiques (cocaïne, hydroxyamphétamine) pour situer la lésion",
+   "clinique": "Au cou, la chaîne est exposée lors d'une chirurgie de la gaine carotidienne ou du rachis cervical ; sa lésion peut causer un syndrome de la première bouchée (douleur parotidienne au début du repas)",
+   "memo": "Une perle par étage : trois au cou, une douzaine au thorax, quatre aux lombes, quatre ou cinq au sacrum, et la dernière, impaire, devant le coccyx",
+   "variantes": "Le ganglion cervical inférieur fusionne avec le premier thoracique chez environ 80 % des sujets (ganglion stellaire) ; le ganglion moyen manque parfois",
+   "sources": [
+    "gray1918",
+    "statpearls-chaine-sympathique"
+   ],
+   "divergences": "Gray ne nomme pas le ganglion stellaire et donne C7 et C8 aux rameaux gris du ganglion inférieur ; StatPearls ajoute T1 pour le stellaire"
+  },
+  {
+   "id": "nerfs-sympathiques",
+   "resume": "Les nerfs qui conduisent le sympathique hors du tronc : rameaux communicants, nerfs cardiaques, splanchniques et plexus des artères.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": "tronc-sympathique",
+    "texte": "Fibres préganglionnaires nées de la moelle thoraco-lombaire (T1 à L2), relayées dans les ganglions du tronc ou, pour les splanchniques, plus loin",
+    "racines": [
+     "T1",
+     "T2",
+     "T3",
+     "T4",
+     "T5",
+     "T6",
+     "T7",
+     "T8",
+     "T9",
+     "T10",
+     "T11",
+     "T12",
+     "L1",
+     "L2"
+    ]
+   },
+   "trajet": "Les rameaux blancs (T1-L2) amènent les fibres au tronc, les rameaux gris les reconduisent à tous les nerfs spinaux ; nerfs cardiaques, plexus des artères et nerfs splanchniques gagnent cœur, vaisseaux et viscères",
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameaux communicants blancs (T1-L2) et gris (tous les nerfs spinaux)"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf carotidien interne et plexus carotidiens, pour la tête"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerfs cardiaques cervicaux"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerfs splanchniques thoraciques, vers l'abdomen"
+    }
+   ],
+   "moteur": null,
+   "sensitif": null,
+   "autonome": "Sympathique : vasoconstriction, sudation, érection des poils, accélération du cœur, dilatation de la pupille, frein digestif ; les neurones préganglionnaires sont myélinisés, les postganglionnaires non",
+   "reflexe": null,
+   "atteinte": "Perte du tonus sympathique : vasodilatation et absence de sueur dans le territoire, syndrome de Horner à la tête ; une atteinte étendue donne une hypotension à la position debout",
+   "clinique": "Le blocage anesthésique du ganglion stellaire, guidé par échographie, soulage certaines douleurs chroniques",
+   "memo": "Blanc va, gris revient : le rameau blanc (T1-L2) entre dans le tronc, le gris en repart vers chaque nerf spinal",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-chaine-sympathique"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tronc-sympathique",
+   "resume": "La chaîne sympathique : un cordon de ganglions de chaque côté du rachis, de la base du crâne au coccyx.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": null,
+    "texte": "Alimenté par les rameaux communicants blancs de T1 à L2 ; se prolonge en haut par le nerf carotidien interne",
+    "racines": [
+     "T1",
+     "T2",
+     "T3",
+     "T4",
+     "T5",
+     "T6",
+     "T7",
+     "T8",
+     "T9",
+     "T10",
+     "T11",
+     "T12",
+     "L1",
+     "L2"
+    ]
+   },
+   "trajet": "Cordon pair, de la base du crâne au coccyx : devant les processus transverses au cou, contre les têtes des côtes au thorax, sur le flanc des corps vertébraux aux lombes, devant le sacrum ; les deux chaînes se rejoignent devant le coccyx",
+   "orifices": [
+    "Canal carotidien (par le nerf carotidien interne)"
+   ],
+   "branches": [
+    {
+     "nerf": "ganglions-du-tronc-sympathique",
+     "texte": "Ganglions du tronc : trois cervicaux, une douzaine de thoraciques, quatre lombaux, quatre ou cinq sacraux"
+    },
+    {
+     "nerf": "nerfs-sympathiques",
+     "texte": "Rameaux communicants, nerfs cardiaques et nerfs splanchniques"
+    }
+   ],
+   "moteur": null,
+   "sensitif": null,
+   "autonome": "Sympathique : relais et distribution vers la tête, le cou, les membres, le cœur et les viscères",
+   "reflexe": null,
+   "atteinte": "Lésion du cou ou de l'apex pulmonaire (tumeur de Pancoast) : syndrome de Claude Bernard-Horner du même côté, avec ptosis, myosis et anhidrose",
+   "test": "Pupilles, paupières et sudation de l'hémiface",
+   "memo": "Un collier de chaque côté du rachis, du crâne au coccyx, fermé par une perle impaire",
+   "variantes": "Les ganglions cervicaux résultent de fusions : le supérieur en réunirait quatre, le moyen deux",
+   "sources": [
+    "gray1918",
+    "statpearls-chaine-sympathique"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-abducens-vi",
+   "resume": "Le nerf du muscle droit latéral : il tourne l'œil vers l'extérieur.",
+   "sorte": "cranien",
+   "origine": {
+    "nerf": null,
+    "texte": "Noyau de l'abducens, sous le colliculus facial dans la protubérance ; émerge au sillon bulbo-pontique",
+    "racines": [
+     "VI"
+    ]
+   },
+   "trajet": "Long trajet : monte contre le clivus, perfore la dure-mère, passe dans le canal de Dorello à la pointe du rocher, longe la carotide interne dans le sinus caverneux, entre dans l'orbite et atteint le droit latéral",
+   "orifices": [
+    "Canal de Dorello",
+    "Fissure orbitaire supérieure"
+   ],
+   "moteur": {
+    "texte": "Droit latéral de l'œil, seul muscle qu'il commande",
+    "muscles": [
+     "droit-lateral-de-l-oeil"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Paralysie du VI : diplopie horizontale, maximale en regardant du côté atteint ; l'œil reste en adduction (strabisme convergent) et ne peut aller en dehors ; torticolis compensateur",
+   "test": "Suivre un doigt qui trace un H, sans bouger la tête : l'œil atteint n'abduit pas",
+   "clinique": "Sa longue course le rend fragile : une hypertension intracrânienne l'étire contre le rocher, de même que le diabète ou une thrombophlébite du sinus caverneux",
+   "memo": "L'abducens abduit : droit latéral au VI, oblique supérieur au IV, tout le reste au III",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-abducens",
+    "tma-craniens-resume"
+   ],
+   "divergences": "Gray fait percer la dure-mère sur le dos de la selle ; TeachMeAnatomy décrit le canal de Dorello, à la pointe du rocher, précision moderne du même passage"
+  },
+  {
+   "id": "nerf-accessoire-xi",
+   "resume": "Le nerf du trapèze et du sterno-cléido-mastoïdien : il fait tourner la tête et hausser l'épaule.",
+   "sorte": "cranien",
+   "origine": {
+    "nerf": null,
+    "texte": "Racine spinale : segments cervicaux C1 à C5, parfois C6 ; racine crânienne : noyau ambigu du bulbe, qui s'unit au vague",
+    "racines": [
+     "XI"
+    ]
+   },
+   "trajet": "La racine spinale monte dans le canal vertébral, entre par le foramen magnum et sort par le foramen jugulaire ; le nerf descend contre la carotide interne, innerve le sterno-cléido-mastoïdien, puis traverse sous la peau le triangle postérieur du cou jusqu'au trapèze",
+   "orifices": [
+    "Foramen magnum (racine spinale, en montant)",
+    "Foramen jugulaire"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameau interne (partie crânienne) : se joint au vague, pour les muscles du pharynx et du larynx"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau externe (partie spinale) : sterno-cléido-mastoïdien et trapèze"
+    }
+   ],
+   "moteur": {
+    "texte": "Sterno-cléido-mastoïdien et trapèze",
+    "muscles": [
+     "sterno-cleido-mastoidien",
+     "trapeze"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion du rameau externe : atrophie du trapèze, épaule tombante, difficulté à hausser l'épaule et à lever le bras ; rotation de la tête vers le côté opposé affaiblie",
+   "test": "Hausser les épaules contre résistance ; tourner la tête contre la main de l'examinateur en regardant le sterno-cléido-mastoïdien du côté opposé se contracter",
+   "clinique": "Le nerf, superficiel dans le triangle postérieur, est souvent lésé lors d'une biopsie de ganglion cervical ou de la pose d'un cathéter",
+   "memo": "Il sert à dire « je ne sais pas » (les épaules) et « non » (la tête)",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-accessoire"
+   ],
+   "divergences": "Gray arrête la racine spinale à C5 ; TeachMeAnatomy dit C1 à C5 ou C6"
+  },
+  {
+   "id": "nerf-alveolaire-inferieur",
+   "resume": "Le nerf des dents du bas : il parcourt le canal de la mandibule et sort au menton pour sentir la lèvre inférieure.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "division-posterieure-du-nerf-mandibulaire",
+    "texte": "Plus grosse branche de la division postérieure du nerf mandibulaire (V3)",
+    "racines": [
+     "V3"
+    ]
+   },
+   "trajet": "Descend sous le ptérygoïdien latéral, entre les deux ptérygoïdiens, pénètre dans le foramen mandibulaire, suit le canal mandibulaire sous les racines des dents et se termine au foramen mentonnier",
+   "orifices": [
+    "Foramen mandibulaire",
+    "Canal mandibulaire",
+    "Foramen mentonnier"
+   ],
+   "branches": [
+    {
+     "nerf": "nerf-mylohyoidien",
+     "texte": "Nerf mylohyoïdien, avant le foramen mandibulaire"
+    },
+    {
+     "nerf": null,
+     "texte": "Plexus dentaire inférieur : dents et gencive"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau incisif, pour les incisives et la canine"
+    },
+    {
+     "nerf": "nerf-mentonnier",
+     "texte": "Nerf mentonnier, branche terminale qui sort au menton"
+    }
+   ],
+   "moteur": {
+    "texte": "Uniquement par le nerf mylohyoïdien : mylohyoïdien et ventre antérieur du digastrique",
+    "muscles": [
+     "mylohyoidien",
+     "digastrique"
+    ]
+   },
+   "sensitif": {
+    "texte": "Dents inférieures et gencive voisine, os de la mandibule, par le nerf mentonnier le menton et la lèvre inférieure"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion : engourdissement de la lèvre inférieure, du menton et des dents du côté atteint (signe du menton engourdi) ; causes : fracture de la mandibule, extraction ou implant près du canal, métastase",
+   "test": "Toucher léger et piqûre du menton et de la lèvre inférieure, comparés à l'autre côté",
+   "clinique": "Cible de l'anesthésie dentaire à l'entrée du foramen mandibulaire, qui endort souvent aussi le nerf lingual voisin",
+   "memo": "Il entre par le foramen mandibulaire et sort par le foramen mentonnier : tout le long, il sent les dents du bas",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-alveolaire-inferieur",
+    "tma-mandibulaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-facial-vii",
+   "resume": "Le nerf de la mimique : il commande les muscles du visage, fait pleurer et saliver, et donne le goût des deux tiers antérieurs de la langue.",
+   "sorte": "cranien",
+   "origine": {
+    "nerf": null,
+    "texte": "Noyau moteur de la protubérance (racine motrice) et nerf intermédiaire, sensitif et parasympathique ; émerge au sillon bulbo-pontique",
+    "racines": [
+     "VII"
+    ]
+   },
+   "trajet": "Entre dans le méat acoustique interne, parcourt le canal facial (coude au ganglion géniculé), sort par le foramen stylo-mastoïdien et s'étale dans la parotide en cinq branches, sans la commander",
+   "orifices": [
+    "Méat acoustique interne",
+    "Canal facial",
+    "Foramen stylo-mastoïdien"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Grand nerf pétreux : parasympathique pour la glande lacrymale et les glandes du nez et du palais"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf du muscle stapédien"
+    },
+    {
+     "nerf": "corde-du-tympan",
+     "texte": "Corde du tympan : goût des deux tiers antérieurs de la langue, glandes submandibulaire et sublinguale"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf auriculaire postérieur, puis rameaux du ventre postérieur du digastrique et du stylo-hyoïdien"
+    },
+    {
+     "nerf": null,
+     "texte": "Cinq branches terminales dans la parotide : temporale, zygomatique, buccale, marginale de la mandibule, cervicale"
+    }
+   ],
+   "moteur": {
+    "texte": "Muscles de la mimique, stapédien, ventre postérieur du digastrique et stylo-hyoïdien",
+    "muscles": [
+     "muscle-frontal",
+     "occipito-frontal",
+     "muscle-occipital",
+     "temporoparietal",
+     "corrugateur-du-sourcil",
+     "procerus",
+     "orbiculaire-oeil",
+     "nasal",
+     "abaisseur-du-septum-nasal",
+     "elevateur-nasolabial",
+     "releveur-levre-superieure",
+     "petit-zygomatique",
+     "grand-zygomatique",
+     "elevateur-de-l-angle-de-la-bouche",
+     "risorius",
+     "buccinateur",
+     "orbiculaire-bouche",
+     "abaisseur-angle-bouche",
+     "abaisseur-de-la-levre-inferieure",
+     "mentonnier",
+     "platysma",
+     "digastrique",
+     "stylohyoidien"
+    ]
+   },
+   "sensitif": {
+    "texte": "Petite zone de la conque et du conduit auditif externe ; goût des deux tiers antérieurs de la langue, par la corde du tympan"
+   },
+   "autonome": "Parasympathique : glande lacrymale et glandes muqueuses du nez et du palais (grand nerf pétreux, ganglion ptérygo-palatin) ; glandes submandibulaire et sublinguale (corde du tympan, ganglion submandibulaire)",
+   "reflexe": {
+    "nom": "Réflexe cornéen (le facial en est la voie motrice, V1 la voie sensitive)",
+    "racines": [
+     "V1",
+     "VII"
+    ]
+   },
+   "atteinte": "Paralysie faciale périphérique : toute l'hémiface est paralysée, front compris, l'œil ne se ferme plus ; selon le niveau s'y ajoutent hyperacousie, perte du goût, sécheresse des yeux. Une lésion centrale épargne le front",
+   "test": "Froncer le front, serrer les paupières, montrer les dents, gonfler les joues, siffler ; goût et réflexe cornéen",
+   "clinique": "La paralysie de Bell est la cause la plus fréquente de paralysie faciale périphérique (sans cause retrouvée) ; au-delà du foramen stylo-mastoïdien (parotide, forceps) l'atteinte est purement motrice",
+   "memo": "Il sort derrière l'oreille par le foramen stylo-mastoïdien et s'ouvre en patte d'oie dans la parotide, sans la commander",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-facial",
+    "tma-craniens-resume"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-glossopharyngien-ix",
+   "resume": "Le nerf de l'arrière-gorge : il sent le pharynx et le tiers postérieur de la langue, détecte la pression du sinus carotidien et fait saliver la parotide.",
+   "sorte": "cranien",
+   "origine": {
+    "nerf": null,
+    "texte": "Noyaux du bulbe (ambigu, salivaire inférieur, solitaire) ; émerge du sillon rétro-olivaire",
+    "racines": [
+     "IX"
+    ]
+   },
+   "trajet": "Sort par le foramen jugulaire où il porte deux ganglions, descend contre la carotide interne, longe le stylo-pharyngien et entre dans le pharynx entre les constricteurs supérieur et moyen",
+   "orifices": [
+    "Foramen jugulaire"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Nerf tympanique : plexus tympanique et petit nerf pétreux"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf du sinus carotidien"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux pharyngiens, qui forment le plexus pharyngien avec le vague"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau du stylo-pharyngien"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux tonsillaires et rameaux linguaux"
+    }
+   ],
+   "moteur": {
+    "texte": "Stylo-pharyngien, seul muscle qu'il commande",
+    "muscles": [
+     "stylopharyngien"
+    ]
+   },
+   "sensitif": {
+    "texte": "Muqueuse de l'oropharynx et amygdale palatine, tiers postérieur de la langue (sensibilité et goût), caisse du tympan et trompe auditive ; sinus carotidien (pression) et glomus carotidien (oxygène)"
+   },
+   "autonome": "Parasympathique : glande parotide, par le nerf tympanique, le petit nerf pétreux, le ganglion otique puis le nerf auriculo-temporal",
+   "reflexe": {
+    "nom": "Réflexe nauséeux (le IX en est la voie sensitive, le X la voie motrice)",
+    "racines": [
+     "IX",
+     "X"
+    ]
+   },
+   "atteinte": "Lésion rare et isolée : réflexe nauséeux aboli du côté atteint, goût du tiers postérieur de la langue perdu ; la névralgie glosso-pharyngienne donne des douleurs fulgurantes de la gorge, déclenchées par la déglutition",
+   "test": "Toucher la paroi postérieure du pharynx avec un abaisse-langue : une nausée absente évoque une atteinte du IX ou du X",
+   "clinique": "Dans le syndrome du foramen jugulaire, les nerfs IX, X et XI sont atteints ensemble : déglutition, voix et épaule touchées",
+   "memo": "Un seul muscle à commander, le stylo-pharyngien, qui élève le pharynx à la déglutition ; pour le reste, le IX sent",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-glossopharyngien",
+    "tma-craniens-resume"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-hypoglosse-xii",
+   "resume": "Le nerf moteur de la langue : il la fait sortir, rentrer et se mouvoir.",
+   "sorte": "cranien",
+   "origine": {
+    "nerf": null,
+    "texte": "Noyau de l'hypoglosse, dans le bulbe ; émerge dans le sillon pré-olivaire, entre la pyramide et l'olive",
+    "racines": [
+     "XII"
+    ]
+   },
+   "trajet": "Sort du crâne par le canal du nerf hypoglosse, décrit une arche sous l'angle de la mandibule en croisant les carotides interne et externe (il contourne l'artère occipitale) puis gagne la langue",
+   "orifices": [
+    "Canal du nerf hypoglosse"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameau méningé, pour la dure-mère de la fosse postérieure (selon Gray)"
+    },
+    {
+     "nerf": null,
+     "texte": "Branche descendante (racine supérieure de l'anse cervicale) : muscles infra-hyoïdiens, avec des fibres C1"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau du thyro-hyoïdien, avec des fibres C1"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux linguaux : muscles de la langue"
+    }
+   ],
+   "moteur": {
+    "texte": "Tous les muscles de la langue, extrinsèques et intrinsèques, sauf le palato-glosse (vague)",
+    "muscles": [
+     "genioglosse",
+     "hyoglosse"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion d'un côté : la langue tirée dévie vers le côté lésé (le génioglosse sain pousse vers le côté malade), avec atrophie et fasciculations ; articulation et déglutition gênées",
+   "test": "Tirer la langue, qui doit rester médiane ; la pousser dans la joue contre le doigt de l'examinateur",
+   "clinique": "Un cancer de la tête et du cou ou un traumatisme pénétrant l'atteint ; une douleur aiguë du cou avec atteinte du XII évoque une dissection de la carotide interne",
+   "memo": "La langue montre du doigt le côté malade : elle dévie vers la lésion",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-hypoglosse",
+    "tma-craniens-resume"
+   ],
+   "divergences": "Gray attribue au XII les branches descendante et du thyro-hyoïdien ; TeachMeAnatomy précise que ce sont des fibres C1, qui voyagent seulement dans sa gaine (anse cervicale, géniohyoïdien, thyro-hyoïdien)"
+  },
+  {
+   "id": "nerf-maxillaire",
+   "resume": "Le nerf sensitif de l'étage moyen du visage : joue, lèvre supérieure, dents du haut, palais et fosse nasale.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-trijumeau-v",
+    "texte": "Division moyenne, purement sensitive, issue du ganglion trigéminal (de Gasser), dans la fosse crânienne moyenne",
+    "racines": [
+     "V2"
+    ]
+   },
+   "trajet": "Longe la paroi latérale du sinus caverneux, sort par le foramen rond dans la fosse ptérygo-palatine, entre dans l'orbite par la fissure orbitaire inférieure, suit le canal infra-orbitaire et émerge à la face par le foramen infra-orbitaire",
+   "orifices": [
+    "Foramen rond",
+    "Fissure orbitaire inférieure",
+    "Canal infra-orbitaire",
+    "Foramen infra-orbitaire"
+   ],
+   "branches": [
+    {
+     "nerf": "branche-meningee-du-nerf-maxillaire",
+     "texte": "Rameau méningé (nerf méningé moyen), dans la fosse crânienne moyenne"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux ganglionnaires vers le ganglion ptérygo-palatin, d'où partent les nerfs palatins, nasopalatin et pharyngien"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf zygomatique : peau de la tempe et de la pommette"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerfs alvéolaires supérieurs postérieur, moyen et antérieur : dents et sinus maxillaires"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf infra-orbitaire et ses rameaux : paupière inférieure, aile du nez, lèvre supérieure"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau de la joue, de la paupière inférieure, de l'aile du nez et de la lèvre supérieure ; dents et gencive du maxillaire, sinus maxillaire, palais, muqueuse de la partie postéro-inférieure de la cavité nasale"
+   },
+   "autonome": "Porte les fibres parasympathiques postganglionnaires du ganglion ptérygo-palatin vers la glande lacrymale et les glandes du nez",
+   "reflexe": null,
+   "atteinte": "Perte de sensibilité de la joue, de la lèvre supérieure et des dents du haut ; une fracture du plancher de l'orbite blesse le nerf infra-orbitaire et engourdit joue et lèvre ; la névralgie du trijumeau peut toucher V2",
+   "test": "Toucher léger de la pommette et de la lèvre supérieure, comparé à l'autre côté",
+   "clinique": "La névralgie du trijumeau, douleur fulgurante dans le territoire du nerf, se traite d'abord par la carbamazépine ; en cas d'échec, la destruction chirurgicale du nerf laisse une perte de sensibilité de la face",
+   "memo": "V2, l'étage du milieu : il traverse le foramen rond et ressort sous l'œil par le foramen infra-orbitaire",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-maxillaire",
+    "tma-trijumeau"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-oculomoteur-iii",
+   "resume": "Le nerf qui bouge l'œil : il commande quatre muscles oculomoteurs, relève la paupière et rétrécit la pupille.",
+   "sorte": "cranien",
+   "origine": {
+    "nerf": null,
+    "texte": "Noyau oculomoteur et noyau accessoire (parasympathique) du mésencéphale ; émerge dans la fosse interpédonculaire",
+    "racines": [
+     "III"
+    ]
+   },
+   "trajet": "Passe entre les artères cérébelleuse supérieure et cérébrale postérieure, perfore la dure-mère près du bord libre de la tente du cervelet, longe la paroi du sinus caverneux, entre dans l'orbite par la fissure orbitaire supérieure et se divise en deux rameaux",
+   "orifices": [
+    "Fissure orbitaire supérieure"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameau supérieur : droit supérieur et releveur de la paupière supérieure"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau inférieur : droit médial, droit inférieur, oblique inférieur ; il donne la racine parasympathique du ganglion ciliaire"
+    }
+   ],
+   "moteur": {
+    "texte": "Tous les muscles de l'œil sauf le droit latéral et l'oblique supérieur, plus le releveur de la paupière supérieure",
+    "muscles": [
+     "elevateur-de-la-paupiere-superieure",
+     "droit-superieur-de-l-oeil",
+     "droit-medial-de-l-oeil",
+     "droit-inferieur-de-l-oeil",
+     "oblique-inferieur-de-l-oeil"
+    ]
+   },
+   "sensitif": null,
+   "autonome": "Parasympathique : noyau accessoire, ganglion ciliaire, nerfs ciliaires courts ; sphincter de la pupille (myosis) et muscle ciliaire (accommodation)",
+   "reflexe": {
+    "nom": "Réflexe photomoteur (voie sensitive par le II, voie motrice par le III)",
+    "racines": [
+     "II",
+     "III"
+    ]
+   },
+   "atteinte": "Paralysie du III : ptosis, œil dévié en bas et en dehors, diplopie, élévation, abaissement et adduction impossibles ; si les fibres pupillaires sont atteintes, pupille dilatée et sans réflexe à la lumière",
+   "test": "Suivre un doigt qui trace un H ; ptosis ; taille des pupilles et réflexe à la lumière, des deux côtés",
+   "clinique": "Une pupille dilatée avec paralysie du III fait chercher en urgence un anévrisme de l'artère communicante postérieure qui comprime le nerf ; l'atteinte vasculaire du diabète épargne en général la pupille",
+   "memo": "Le III fait tout le reste (quatre muscles, paupière, pupille) : le IV et le VI n'ont qu'un muscle chacun",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-oculomoteur",
+    "tma-craniens-resume"
+   ],
+   "divergences": "TeachMeAnatomy explique la pupille dilatée tantôt par l'action du dilatateur non opposée, tantôt (FAQ) par la paralysie du sphincter ; c'est bien la perte du sphincter, commandé par le III (Gray), qui laisse agir le dilatateur"
+  },
+  {
+   "id": "nerf-olfactif-i",
+   "resume": "Le nerf de l'odorat : de fins filets qui traversent la lame criblée de l'ethmoïde jusqu'au bulbe olfactif.",
+   "sorte": "cranien",
+   "origine": {
+    "nerf": null,
+    "texte": "Cellules olfactives de la muqueuse du toit de la cavité nasale (cornet supérieur et partie voisine de la cloison)",
+    "racines": [
+     "I"
+    ]
+   },
+   "trajet": "Les prolongements des cellules olfactives se réunissent en une vingtaine de filets de chaque côté, traversent la lame criblée de l'ethmoïde et se terminent dans les glomérules du bulbe olfactif, d'où part le tractus olfactif",
+   "orifices": [
+    "Lame criblée de l'ethmoïde"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Odorat : sensibilité spéciale de la muqueuse olfactive ; la sensibilité générale de la muqueuse nasale revient au trijumeau"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Anosmie (perte de l'odorat) : après un traumatisme crânien qui arrache les filets, par un méningiome du sillon olfactif, une infection ou une maladie neurodégénérative (Parkinson, Alzheimer)",
+   "test": "Odeur familière non irritante (menthe, café), narine par narine, yeux fermés",
+   "clinique": "Une anosmie peut précéder de plusieurs années les signes moteurs de la maladie de Parkinson, souvent sans que le patient la remarque",
+   "memo": "Le I traverse la lame criblée comme une passoire : un fil par trou, du nez au bulbe",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-olfactif",
+    "tma-craniens-resume"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-ophtalmique",
+   "resume": "La branche supérieure du trijumeau : sensitive pour l'œil, le front, le cuir chevelu antérieur et le dos du nez.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-trijumeau-v",
+    "texte": "Division supérieure, purement sensitive, issue du ganglion trigéminal",
+    "racines": [
+     "V1"
+    ]
+   },
+   "trajet": "Longe la paroi latérale du sinus caverneux, donne le rameau tentoriel, puis se divise en nerfs lacrymal, frontal et naso-ciliaire à la fissure orbitaire supérieure, par laquelle il entre dans l'orbite",
+   "orifices": [
+    "Fissure orbitaire supérieure"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameau tentoriel récurrent : tente du cervelet"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf lacrymal : glande lacrymale, conjonctive, paupière supérieure"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf frontal, le plus gros : nerfs supra-orbitaire et supra-trochléaire"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf naso-ciliaire : nerfs ethmoïdaux, infra-trochléaire et ciliaires longs, racine sensitive du ganglion ciliaire"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Cornée et conjonctive, front et cuir chevelu antérieur, paupière supérieure, dos du nez, muqueuse nasale antéro-supérieure, sinus frontal, ethmoïdal et sphénoïdal, tente du cervelet"
+   },
+   "autonome": "Les nerfs ciliaires longs portent des fibres sympathiques pour le dilatateur de la pupille ; le nerf lacrymal reçoit les fibres parasympathiques de la glande lacrymale, venues du nerf zygomatique",
+   "reflexe": {
+    "nom": "Réflexe cornéen (V1 en est la voie sensitive, le facial la voie motrice)",
+    "racines": [
+     "V1",
+     "VII"
+    ]
+   },
+   "atteinte": "Perte de sensibilité de la cornée et du front, avec risque d'ulcère de cornée non ressenti ; le zona ophtalmique donne des vésicules douloureuses du front, et celles du bout du nez annoncent une atteinte de la cornée",
+   "test": "Effleurer la cornée avec un coton : le clignement doit survenir ; sensibilité du front comparée des deux côtés",
+   "memo": "V1, c'est le haut du visage (yeux, front, nez) : il entre dans l'orbite par la fissure orbitaire supérieure",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-ophtalmique",
+    "tma-trijumeau"
+   ],
+   "divergences": "Gray fait se diviser le nerf juste avant la fissure orbitaire supérieure ; TeachMeAnatomy le fait sortir par la fissure puis se diviser"
+  },
+  {
+   "id": "nerf-trochleaire-iv",
+   "resume": "Le plus fin des nerfs crâniens : il commande l'oblique supérieur de l'œil, qui abaisse le regard et fait pivoter l'œil vers le nez (intorsion).",
+   "sorte": "cranien",
+   "origine": {
+    "nerf": null,
+    "texte": "Noyau du trochléaire, dans le mésencéphale, sur le plancher de l'aqueduc ; les fibres se croisent dans le voile médullaire supérieur",
+    "racines": [
+     "IV"
+    ]
+   },
+   "trajet": "Seul nerf crânien à émerger de la face postérieure du tronc cérébral, sous le colliculus inférieur ; contourne le pédoncule cérébral, perfore la dure-mère au bord de la tente du cervelet, longe le sinus caverneux et entre dans l'orbite",
+   "orifices": [
+    "Fissure orbitaire supérieure"
+   ],
+   "moteur": {
+    "texte": "Oblique supérieur de l'œil, seul muscle qu'il commande",
+    "muscles": [
+     "oblique-superieur-de-l-oeil"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Paralysie du IV : diplopie verticale, surtout en regardant en bas et en dedans (lecture, escalier) ; la tête s'incline du côté sain. Lésion du nerf : œil du même côté ; lésion du noyau : œil du côté opposé",
+   "test": "Regard en bas et en dedans : l'œil atteint ne descend pas ; inclinaison compensatrice de la tête",
+   "clinique": "Causes : atteinte vasculaire (diabète, hypertension), malformation congénitale, thrombophlébite du sinus caverneux, hypertension intracrânienne",
+   "memo": "Le plus fin, le seul à sortir par le dos, le seul dont les fibres se croisent avant de sortir : oblique supérieur au IV",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-trochleaire",
+    "tma-craniens-resume"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-vague-x",
+   "resume": "Le grand nerf viscéral : il commande le pharynx et le larynx, ralentit le cœur et gouverne le tube digestif jusqu'à l'angle colique gauche.",
+   "sorte": "cranien",
+   "origine": {
+    "nerf": null,
+    "texte": "Noyaux du bulbe (ambigu, dorsal du vague, solitaire) ; émerge du sillon rétro-olivaire, sous le IX",
+    "racines": [
+     "X"
+    ]
+   },
+   "trajet": "Sort par le foramen jugulaire (ganglions supérieur et inférieur), descend dans la gaine carotidienne, traverse le thorax en formant le plexus œsophagien, puis passe le hiatus œsophagien en deux troncs : antérieur (surtout le gauche) et postérieur (surtout le droit)",
+   "orifices": [
+    "Foramen jugulaire",
+    "Hiatus œsophagien du diaphragme"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameau méningé et rameau auriculaire (sensibilité du conduit auditif externe)"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux pharyngiens : muscles du pharynx et du voile du palais"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf laryngé supérieur : rameau interne sensitif, rameau externe moteur du cricothyroïdien"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf laryngé récurrent : le droit sous l'artère subclavière, le gauche sous la crosse de l'aorte ; muscles du larynx sauf le cricothyroïdien"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerfs cardiaques et rameaux bronchiques"
+    },
+    {
+     "nerf": null,
+     "texte": "Plexus œsophagien, puis troncs vagaux antérieur et postérieur : rameaux gastriques, hépatiques et cœliaques"
+    }
+   ],
+   "moteur": {
+    "texte": "Muscles du pharynx (sauf le stylo-pharyngien), du voile du palais (sauf le tenseur) et du larynx",
+    "muscles": [
+     "constricteur-superieur-du-pharynx",
+     "constricteur-moyen-du-pharynx",
+     "constricteur-inferieur-du-pharynx",
+     "palatopharyngien",
+     "cricothyroidien",
+     "thyro-arytenoidien",
+     "arythenoide-oblique",
+     "arytenoidien-transverse",
+     "crico-arytenoidien-lateral",
+     "crico-arytenoidien-posterieur"
+    ]
+   },
+   "sensitif": {
+    "texte": "Conduit auditif externe et pavillon, muqueuse du pharynx et du larynx, viscères du thorax et de l'abdomen ; goût de la base de la langue et de l'épiglotte"
+   },
+   "autonome": "Parasympathique (noyau dorsal du vague) : ralentit le cœur, resserre les bronches, active motricité et sécrétions de l'œsophage jusqu'à l'angle colique gauche environ",
+   "reflexe": {
+    "nom": "Réflexe nauséeux (le IX en est la voie sensitive, le X la voie motrice)",
+    "racines": [
+     "IX",
+     "X"
+    ]
+   },
+   "atteinte": "Lésion du laryngé récurrent : voix rauque (dysphonie), aphonie et stridor si elle est bilatérale. Lésion pharyngée : dysphagie, luette déviée du côté sain. Lésion haute : réflexe nauséeux aboli",
+   "test": "Dire « Aaah » : le voile se lève et la luette reste médiane ; qualité de la voix, déglutition, réflexe nauséeux",
+   "clinique": "Le récurrent gauche, qui contourne la crosse de l'aorte, peut être irrité par un canal artériel persistant ou une masse du médiastin : voix rauque. La pression du sinus carotidien peut ralentir le cœur par voie vagale",
+   "memo": "Le vagabond : il descend jusqu'au ventre ; le récurrent gauche remonte sous l'aorte, le droit sous la subclavière",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-vague",
+    "tma-craniens-resume"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-vestibulaire",
+   "resume": "La moitié du VIII qui porte l'équilibre : il relie les organes vestibulaires de l'oreille interne aux noyaux vestibulaires du tronc cérébral.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-vestibulocochleaire-viii",
+    "texte": "Prolongements du ganglion vestibulaire (de Scarpa), dans le méat acoustique interne, vers les noyaux vestibulaires du pont et du bulbe",
+    "racines": [
+     "VIII"
+    ]
+   },
+   "trajet": "Part du ganglion vestibulaire, au fond du méat acoustique interne, s'associe au nerf cochléaire pour former le VIII, traverse l'angle ponto-cérébelleux et gagne les noyaux vestibulaires",
+   "orifices": [
+    "Méat acoustique interne"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameau supérieur : utricule et ampoules des canaux antérieur et latéral"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau inférieur : saccule"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau postérieur : ampoule du canal semi-circulaire postérieur"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Équilibre : accélérations linéaires (utricule, saccule) et rotations de la tête (ampoules des canaux semi-circulaires)"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Névrite vestibulaire : vertige rotatoire intense et brutal, nystagmus, nausées et vomissements, déséquilibre, sans surdité",
+   "test": "Recherche d'un nystagmus, épreuve de Romberg, test d'impulsion de la tête",
+   "clinique": "Le vertige positionnel paroxystique bénin vient de cristaux de calcium qui se déplacent dans un canal semi-circulaire : vertiges brefs déclenchés par un changement de position",
+   "memo": "Le nerf du vestibule et des canaux : il dit à la tête où elle est et comment elle tourne",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-vestibulocochleaire"
+   ],
+   "divergences": "TeachMeAnatomy ne cite que les ganglions spiraux ; Gray décrit aussi le ganglion vestibulaire (de Scarpa), d'où naît ce nerf"
+  },
+  {
+   "id": "racine-motrice-du-nerf-trijumeau",
+   "resume": "La petite racine motrice du trijumeau : elle passe sous le ganglion trigéminal et rejoint le V3 pour commander les muscles masticateurs.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-trijumeau-v",
+    "texte": "Noyau moteur du trijumeau, dans la partie haute de la protubérance ; sort en avant et en dedans de la grosse racine sensitive",
+    "racines": [
+     "V"
+    ]
+   },
+   "trajet": "Longe le plancher du cavum trigéminal sous la racine sensitive et le ganglion, sort par le foramen ovale et s'unit au nerf mandibulaire (V3) juste en dessous",
+   "orifices": [
+    "Foramen ovale"
+   ],
+   "moteur": {
+    "texte": "Muscles masticateurs, mylohyoïdien, ventre antérieur du digastrique, tenseur du voile du palais et tenseur du tympan",
+    "muscles": [
+     "masseter",
+     "muscle-temporal",
+     "pterygoidien-lateral",
+     "pterygoidien-medial",
+     "mylohyoidien",
+     "digastrique"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Paralysie des muscles masticateurs du côté atteint : serrement des dents faible, fonte du masséter et du temporal ; à l'ouverture, la mandibule dévie vers le côté paralysé (ptérygoïdien latéral)",
+   "test": "Serrer les dents en palpant masséters et temporaux ; ouvrir la bouche : la mandibule doit rester centrée",
+   "memo": "M comme motrice et comme mastication : elle passe sous le ganglion sans s'y arrêter",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-trijumeau",
+    "tma-mandibulaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerfs-intercostaux",
+   "resume": "Les nerfs des espaces entre les côtes : ils commandent les muscles de la paroi et sentent la peau du thorax et du haut de l'abdomen.",
+   "sorte": "spinal",
+   "origine": {
+    "nerf": null,
+    "texte": "Rameaux antérieurs des nerfs spinaux T1 à T11 ; le douzième forme le nerf subcostal",
+    "racines": [
+     "T1",
+     "T2",
+     "T3",
+     "T4",
+     "T5",
+     "T6",
+     "T7",
+     "T8",
+     "T9",
+     "T10",
+     "T11"
+    ]
+   },
+   "trajet": "Entrent dans l'espace intercostal en arrière, courent dans le sillon costal sous la veine et l'artère, entre les intercostaux interne et intime ; les inférieurs (T7 à T11) passent dans la paroi abdominale, entre le transverse et l'oblique interne",
+   "orifices": [
+    "Foramen intervertébral thoracique"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameau collatéral, près de l'angle de la côte"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau cutané latéral : à T2, le nerf intercosto-brachial pour la face médiale du bras"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau cutané antérieur, près du sternum ou de la ligne blanche"
+    }
+   ],
+   "moteur": {
+    "texte": "Muscles intercostaux, transverse du thorax et muscles de la paroi abdominale (T7 à T11)",
+    "muscles": [
+     "intercostaux-externes",
+     "intercostaux-internes",
+     "intercostaux-intimes",
+     "transverse-du-thorax",
+     "oblique-externe",
+     "oblique-interne",
+     "transverse-abdomen",
+     "droit-abdomen"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau de la paroi du thorax et du haut de l'abdomen, plèvre pariétale, péritoine pariétal ; à T2, face médiale du bras"
+   },
+   "autonome": "Fibres sympathiques vers les glandes sudoripares et les vaisseaux de la paroi, par les rameaux communicants",
+   "reflexe": null,
+   "atteinte": "Zona intercostal : douleur en hémiceinture et vésicules sur un dermatome ; une lésion chirurgicale (thoracotomie) laisse douleur et engourdissement du territoire et une faiblesse localisée de la paroi abdominale",
+   "test": "Sensibilité des dermatomes thoraciques (T4 au mamelon, T10 à l'ombilic) ; mouvements de la paroi",
+   "clinique": "Le nerf intercosto-brachial (T2) peut participer à la douleur du bras gauche de l'infarctus du myocarde",
+   "memo": "VAN, de haut en bas sous chaque côte : Veine, Artère, Nerf",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-intercostaux"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "racine-anterieure-motrice-du-nerf-spinal",
+   "resume": "La racine motrice du nerf spinal : elle sort de la face antérieure de la moelle et conduit les ordres vers les muscles.",
+   "sorte": "spinal",
+   "origine": {
+    "nerf": null,
+    "texte": "Radicelles issues des neurones moteurs de la corne antérieure de la moelle et, en T1-L2 et S2-S4, des neurones préganglionnaires autonomes"
+   },
+   "trajet": "Naît de plusieurs radicelles de la face antérieure de la moelle, traverse le sac dural, passe devant le ganglion spinal et s'unit à la racine postérieure dans le foramen intervertébral pour former le nerf spinal",
+   "orifices": [
+    "Foramen intervertébral"
+   ],
+   "moteur": {
+    "texte": "Fibres motrices somatiques vers les muscles squelettiques",
+    "muscles": []
+   },
+   "sensitif": null,
+   "autonome": "Porte les fibres préganglionnaires sympathiques (T1 à L2) et parasympathiques sacrales (S2 à S4)",
+   "reflexe": null,
+   "atteinte": "Lésion de la racine (hernie discale, tumeur) ou de la corne antérieure (poliomyélite) : paralysie flasque du myotome, fonte musculaire, fasciculations, réflexe aboli ; la sensibilité n'est touchée que si la racine postérieure l'est aussi",
+   "test": "Force des muscles du myotome et réflexes ostéo-tendineux du niveau",
+   "memo": "Loi de Bell-Magendie : l'antérieure Agit (motrice), la postérieure Perçoit (sensitive)",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-nerfs-spinaux"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "racine-posterieure-sensitive-du-nerf-spinal",
+   "resume": "La racine sensitive du nerf spinal : elle porte vers la moelle les sensations et porte le ganglion spinal.",
+   "sorte": "spinal",
+   "origine": {
+    "nerf": null,
+    "texte": "Prolongements centraux des neurones du ganglion spinal, qui pénètrent dans la face postérieure de la moelle"
+   },
+   "trajet": "Part du ganglion spinal, dans le foramen intervertébral, traverse le sac dural en radicelles jusqu'à la face postérieure de la moelle ; en dehors du ganglion, elle s'unit à la racine antérieure pour former le nerf spinal",
+   "orifices": [
+    "Foramen intervertébral"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Toutes les sensations venues de la peau, des muscles, des articulations et des viscères : toucher, vibration, position, douleur, température"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion de la racine (hernie discale, tumeur) : douleur radiculaire, fourmillements et perte de sensibilité dans le dermatome, réflexe aboli ; le zona touche le ganglion qu'elle porte",
+   "test": "Sensibilité au tact et à la piqûre des dermatomes, réflexes, manœuvre de Lasègue pour les racines du nerf sciatique",
+   "clinique": "Au rachis lombaire, une hernie postéro-latérale L4-L5 comprime la racine L5 : douleur et déficit sensitif dans le dermatome L5",
+   "memo": "La postérieure Perçoit : elle porte le ganglion, boîte aux lettres des sensations",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-nerfs-spinaux",
+    "kenhub-ganglion-spinal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-iliohypogastrique",
+   "resume": "Le nerf de la paroi abdominale basse : il commande le transverse et l'oblique interne et sent la peau au-dessus du pubis et la fesse haute.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Plexus lombaire : rameau antérieur de L1, né avec le nerf ilio-inguinal",
+    "racines": [
+     "L1"
+    ]
+   },
+   "trajet": "Sort du bord supéro-latéral du psoas, croise le carré des lombes derrière le pôle inférieur du rein, perfore le transverse de l'abdomen au-dessus de la crête iliaque et court entre lui et l'oblique interne ; le rameau antérieur émerge près de l'anneau inguinal superficiel",
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameau cutané latéral : perce les obliques au-dessus de la crête iliaque, peau de la fesse"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameau cutané antérieur : perce l'oblique interne puis l'aponévrose de l'oblique externe au-dessus de l'anneau inguinal superficiel"
+    }
+   ],
+   "moteur": {
+    "texte": "Transverse de l'abdomen et oblique interne",
+    "muscles": [
+     "transverse-abdomen",
+     "oblique-interne"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau de la région sus-pubienne (rameau antérieur) et de la partie supéro-latérale de la fesse (rameau latéral)"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Douleur brûlante sus-pubienne et inguinale, peau du territoire engourdie ; causes : chirurgie (appendicectomie oblique, incision transversale basse, hystérectomie), prise dans une cicatrice, sport, fin de grossesse",
+   "test": "Sensibilité de la peau au-dessus du pubis et de la fesse haute ; l'infiltration anesthésique qui soulage la douleur confirme l'atteinte",
+   "clinique": "Sectionné au-dessus de l'épine iliaque antéro-supérieure, il peut affaiblir la paroi postérieure du canal inguinal et favoriser une hernie inguinale directe",
+   "memo": "Ilio-hypogastrique : de la crête iliaque à l'hypogastre, entre le transverse et l'oblique interne",
+   "variantes": "Sa taille varie en sens inverse de celle du nerf ilio-inguinal, né du même tronc, qui peut manquer",
+   "sources": [
+    "gray1918",
+    "kenhub-iliohypogastrique"
+   ],
+   "divergences": "Gray et Kenhub donnent L1 seul ; T12 est parfois citée en plus dans d'autres manuels, ce que ni l'un ni l'autre ne mentionne"
+  },
+  {
+   "id": "branche-meningee-du-nerf-maxillaire",
+   "resume": "Le petit rameau sensitif du V2 pour la dure-mère de la fosse crânienne moyenne, qui suit l'artère méningée moyenne.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-maxillaire",
+    "texte": "Naît du nerf maxillaire dans la fosse crânienne moyenne, avant le foramen rond",
+    "racines": [
+     "V2"
+    ]
+   },
+   "trajet": "Accompagne les branches de l'artère méningée moyenne dans la dure-mère de la fosse crânienne moyenne et s'anastomose avec le rameau méningé du nerf mandibulaire (nerf épineux)",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Dure-mère de la fosse crânienne moyenne"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Pas de déficit isolé : la dure-mère est sensible à la douleur, et l'irritation de son territoire (méningite, hématome, traction) donne des céphalées relayées par le trijumeau",
+   "memo": "Le seul rameau du V2 qui reste dans le crâne : il suit l'artère méningée moyenne",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-maxillaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-canal-central",
+   "resume": "Le fin conduit au centre de la moelle spinale : reste du tube neural, rempli de liquide cérébro-spinal.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": null,
+    "texte": "Prolonge le quatrième ventricule à l'obex, dans la partie basse du bulbe"
+   },
+   "trajet": "Descend au centre de la moelle, dans la commissure grise, bordé de cellules épendymaires, jusqu'au cône médullaire où il s'élargit en ventricule terminal, puis pénètre sur 5 à 6 cm dans le filum terminal",
+   "moteur": null,
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Une cavité dans son prolongement (syringomyélie) coupe les fibres de la douleur et de la température qui croisent devant lui : perte de ces sensations en cape sur les épaules et les bras, toucher conservé",
+   "clinique": "Une dilatation du canal par un excès de liquide s'appelle hydromyélie ; la syringomyélie est une cavité qui le prolonge ou le remplace",
+   "memo": "Le canal central est le souvenir du tube neural : un fil d'eau au milieu de la moelle",
+   "variantes": "Le ventricule terminal, visible chez le fœtus et l'enfant, est le plus souvent absent chez l'adulte ; le canal lui-même tend à s'oblitérer avec l'âge",
+   "sources": [
+    "gray1918",
+    "wikipedia-canal-central"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "chiasma-optique",
+   "resume": "Le carrefour en X des nerfs optiques : les fibres de la moitié nasale de chaque rétine y passent du côté opposé.",
+   "sorte": "cranien",
+   "origine": {
+    "nerf": "nerf-optique-ii",
+    "texte": "Réunion des deux nerfs optiques, au plancher du troisième ventricule, devant le tuber cinereum",
+    "racines": [
+     "II"
+    ]
+   },
+   "trajet": "Lame aplatie dans la citerne chiasmatique, au-dessus de l'hypophyse et de sa tige ; les fibres nasales croisent, les temporales restent du même côté, puis tout repart dans les tractus optiques (un petit contingent forme la commissure de Gudden)",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Vision : fibres rétiniennes des deux yeux ; le croisement des fibres nasales envoie le champ visuel gauche vers l'hémisphère droit"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Compression : hémianopsie bitemporale, perte des champs visuels latéraux des deux yeux, comme avec des œillères",
+   "test": "Champ visuel par confrontation, un œil puis l'autre",
+   "clinique": "Un adénome de l'hypophyse, un craniopharyngiome ou un méningiome de la selle turcique peuvent le comprimer",
+   "memo": "Chiasma : en X, comme la lettre grecque chi ; les fibres nasales s'y croisent, les temporales passent tout droit",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-chiasma",
+    "tma-optique"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "corde-du-tympan",
+   "resume": "Le fin rameau du facial qui traverse l'oreille moyenne et porte le goût des deux tiers antérieurs de la langue.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Naît du facial dans le canal facial, avant le foramen stylo-mastoïdien",
+    "racines": [
+     "VII"
+    ]
+   },
+   "trajet": "Quitte le canal facial par le canalicule de la corde du tympan, traverse la caisse du tympan en arc contre la membrane tympanique, entre le marteau et l'enclume, sort par la fissure pétro-tympanique et s'unit au nerf lingual dans la fosse infratemporale",
+   "orifices": [
+    "Canalicule de la corde du tympan",
+    "Fissure pétro-tympanique (de Glaser)"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Goût des deux tiers antérieurs de la langue (fibres du ganglion géniculé)"
+   },
+   "autonome": "Parasympathique : fibres du noyau salivaire supérieur, relais dans le ganglion submandibulaire, vers les glandes submandibulaire, sublinguale et linguales antérieures",
+   "reflexe": null,
+   "atteinte": "Goût altéré ou perdu sur les deux tiers antérieurs de la langue du même côté, bouche sèche ; blessée par la chirurgie de l'oreille moyenne ou une fracture du condyle de la mandibule",
+   "test": "Goût (sucré, salé) posé sur les bords de la langue, côté par côté",
+   "memo": "Une corde tendue dans l'oreille moyenne entre marteau et enclume, comme sur un tambour : elle va rejoindre le lingual",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-corde-du-tympan",
+    "tma-facial"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "division-anterieure-du-nerf-mandibulaire",
+   "resume": "La petite division antérieure du V3, surtout motrice : elle commande masséter, temporal et ptérygoïdien latéral et donne le nerf buccal.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Nerf mandibulaire (V3), sous le foramen ovale, dans la fosse infratemporale",
+    "racines": [
+     "V3"
+    ]
+   },
+   "trajet": "Naît du tronc du V3 dans la fosse infratemporale ; ses nerfs massétérique, temporaux profonds et du ptérygoïdien latéral gagnent les muscles masticateurs, le nerf buccal passe entre les deux chefs du ptérygoïdien latéral",
+   "orifices": [
+    "Foramen ovale"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Nerf massétérique, qui donne aussi un filet à l'articulation temporo-mandibulaire"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerfs temporaux profonds antérieur et postérieur"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf du ptérygoïdien latéral"
+    },
+    {
+     "nerf": "nerf-buccal",
+     "texte": "Nerf buccal, sensitif pour la joue"
+    }
+   ],
+   "moteur": {
+    "texte": "Muscles de la mastication : masséter, temporal, ptérygoïdien latéral",
+    "muscles": [
+     "masseter",
+     "muscle-temporal",
+     "pterygoidien-lateral"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau et muqueuse de la joue, par le nerf buccal"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Paralysie des muscles de la mastication du côté atteint : fermeture de la mâchoire faible, mastication difficile ; sensibilité de la joue diminuée",
+   "test": "Serrer les dents en palpant masséter et temporal ; sensibilité de la joue",
+   "memo": "Antérieure = motrice : elle fait mâcher ; la postérieure est sensitive",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-mandibulaire"
+   ],
+   "divergences": "TeachMeAnatomy ne distingue pas de divisions et décrit quatre branches (auriculo-temporal, buccal, alvéolaire inférieur, lingual) ; Gray donne la division classique, et fait naître le nerf du ptérygoïdien médial du tronc"
+  },
+  {
+   "id": "division-posterieure-du-nerf-mandibulaire",
+   "resume": "La grosse division postérieure du V3, surtout sensitive : elle donne les nerfs auriculo-temporal, lingual et alvéolaire inférieur.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": null,
+    "texte": "Nerf mandibulaire (V3), sous le foramen ovale, dans la fosse infratemporale",
+    "racines": [
+     "V3"
+    ]
+   },
+   "trajet": "Naît du tronc du V3 dans la fosse infratemporale et se divise en trois : l'auriculo-temporal (autour de l'artère méningée moyenne, vers l'oreille et la tempe), le lingual et l'alvéolaire inférieur, qui descendent sous le ptérygoïdien latéral",
+   "orifices": [
+    "Foramen ovale"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Nerf auriculo-temporal : tempe, pavillon, conduit auditif externe, tympan"
+    },
+    {
+     "nerf": "nerf-lingual",
+     "texte": "Nerf lingual : langue et plancher de la bouche"
+    },
+    {
+     "nerf": "nerf-alveolaire-inferieur",
+     "texte": "Nerf alvéolaire inférieur : dents du bas, lèvre inférieure, menton"
+    }
+   ],
+   "moteur": {
+    "texte": "Quelques fibres motrices, par le nerf mylohyoïdien (branche de l'alvéolaire inférieur) : mylohyoïdien et ventre antérieur du digastrique",
+    "muscles": [
+     "mylohyoidien",
+     "digastrique"
+    ]
+   },
+   "sensitif": {
+    "texte": "Tempe, pavillon antérieur, conduit auditif externe et tympan ; deux tiers antérieurs de la langue et plancher de la bouche ; dents inférieures, lèvre inférieure, menton"
+   },
+   "autonome": "Véhicule des fibres parasympathiques : celles du IX vers la parotide (par l'auriculo-temporal), celles du VII, par la corde du tympan, vers les glandes sublinguale et submandibulaire (par le lingual)",
+   "reflexe": null,
+   "atteinte": "Hypoesthésie de l'hémi-langue antérieure, du menton, de la lèvre inférieure ou des dents du côté atteint ; le lingual et l'alvéolaire inférieur sont les plus exposés en chirurgie dentaire",
+   "test": "Sensibilité de la langue, du menton et de la tempe, comparée à l'autre côté",
+   "memo": "Postérieure = sensitive : auriculo-temporal, lingual, alvéolaire inférieur, trois nerfs qui sentent",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-mandibulaire",
+    "kenhub-lingual"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-buccal",
+   "resume": "Le nerf sensitif de la joue : il sent la peau et la muqueuse de la joue et la gencive des molaires inférieures.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "division-anterieure-du-nerf-mandibulaire",
+    "texte": "Branche de la division antérieure du nerf mandibulaire (V3)",
+    "racines": [
+     "V3"
+    ]
+   },
+   "trajet": "Passe entre les deux chefs du ptérygoïdien latéral, émerge au bord antérieur du masséter, longe le buccinateur et s'unit aux rameaux buccaux du facial",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau et muqueuse de la joue, gencive vestibulaire des molaires et prémolaires inférieures"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Engourdissement de la joue et de la gencive des molaires du bas, par exemple après une extraction de dent de sagesse ; aucun déficit moteur",
+   "test": "Toucher de la joue, face externe et face interne, comparé à l'autre côté",
+   "clinique": "Malgré son ancien nom de nerf buccinateur, il ne commande pas le muscle buccinateur : c'est le facial qui le fait",
+   "memo": "Buccal = joue : lui sent, le facial commande",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-mandibulaire"
+   ],
+   "divergences": "Gray l'appelle nerf buccinateur et lui fait donner un filet au ptérygoïdien latéral ; TeachMeAnatomy le décrit comme purement sensitif"
+  },
+  {
+   "id": "nerf-cochleaire",
+   "resume": "La moitié du VIII qui porte l'audition : elle relie la cochlée aux noyaux cochléaires du tronc cérébral.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-vestibulocochleaire-viii",
+    "texte": "Prolongements du ganglion spiral, dans le modiolus de la cochlée, qui recueillent les signaux des cellules ciliées",
+    "racines": [
+     "VIII"
+    ]
+   },
+   "trajet": "Part de la cochlée, traverse le fond du méat acoustique interne, s'associe au nerf vestibulaire pour former le VIII, traverse l'angle ponto-cérébelleux et gagne les noyaux cochléaires du tronc cérébral, d'où la voie monte par le lemnisque latéral vers le cortex auditif",
+   "orifices": [
+    "Méat acoustique interne"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Audition : les sons captés par les cellules ciliées internes de la cochlée, la hauteur selon leur position le long de la membrane basilaire"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Surdité de perception du côté atteint, avec acouphènes",
+   "test": "Voix chuchotée, diapason (épreuves de Weber et de Rinne), audiométrie",
+   "clinique": "Une surdité de perception unilatérale impose une IRM de l'angle ponto-cérébelleux pour chercher un schwannome vestibulaire",
+   "memo": "Cochléaire : le nerf du limaçon, il entend ; le vestibulaire, lui, tient l'équilibre",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-vestibulocochleaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-lingual",
+   "resume": "Le nerf sensitif de la langue : il sent les deux tiers antérieurs de la langue et le plancher de la bouche, et accueille la corde du tympan.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "division-posterieure-du-nerf-mandibulaire",
+    "texte": "Branche de la division postérieure du nerf mandibulaire (V3), sous le ptérygoïdien latéral",
+    "racines": [
+     "V3"
+    ]
+   },
+   "trajet": "Descend entre le ptérygoïdien latéral et le tenseur du voile du palais, reçoit la corde du tympan, longe la face médiale de la mandibule sous le mylohyoïdien, passe sous la glande submandibulaire et entre dans la langue par son bord latéral",
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameaux sublinguaux et gingivaux"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux linguaux, pour la muqueuse de la langue"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux vers le ganglion submandibulaire, où font relais les fibres de la corde du tympan"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Muqueuse des deux tiers antérieurs de la langue (sensibilité générale), plancher de la bouche, gencive linguale ; le goût vient de la corde du tympan qui l'accompagne"
+   },
+   "autonome": "Porte les fibres parasympathiques de la corde du tympan vers les glandes submandibulaire, sublinguale et salivaires mineures",
+   "reflexe": null,
+   "atteinte": "Perte de sensibilité et du goût de l'hémi-langue antérieure : brûlures et morsures non senties ; lésion fréquente lors de l'extraction d'une dent de sagesse inférieure, contre laquelle il passe",
+   "test": "Sensibilité de la langue (coton, piqûre) de chaque côté ; goût par la corde du tympan",
+   "memo": "Lingual : il sent la langue, mais le goût lui est prêté par la corde du tympan",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-lingual",
+    "tma-mandibulaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-mentonnier",
+   "resume": "Le nerf sensitif du menton : branche terminale de l'alvéolaire inférieur, il sort de la mandibule par le foramen mentonnier.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-alveolaire-inferieur",
+    "texte": "Branche terminale du nerf alvéolaire inférieur, dans le canal mandibulaire",
+    "racines": [
+     "V3"
+    ]
+   },
+   "trajet": "Naît dans le canal mandibulaire, sort de la mandibule par le foramen mentonnier et se divise aussitôt en rameaux pour le menton, la lèvre inférieure et la gencive",
+   "orifices": [
+    "Canal mandibulaire",
+    "Foramen mentonnier"
+   ],
+   "branches": [
+    {
+     "nerf": null,
+     "texte": "Rameau mentonnier : peau du menton"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux labiaux inférieurs : peau et muqueuse de la lèvre inférieure"
+    },
+    {
+     "nerf": null,
+     "texte": "Rameaux gingivaux : gencive du côté de la lèvre"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Peau du menton, peau et muqueuse de la lèvre inférieure, gencive du côté de la lèvre"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Engourdissement du menton et de la lèvre inférieure (signe du menton engourdi), parfois premier signe d'une métastase de la mandibule ; autres causes : fracture, chirurgie ou anesthésie dentaire",
+   "test": "Toucher et piqûre du menton et de la lèvre inférieure, comparés à l'autre côté",
+   "clinique": "Le foramen mentonnier, sous les prémolaires, sert de repère à l'anesthésie locale du menton et de la lèvre",
+   "memo": "Le nerf du menton (mentum) : l'alvéolaire inférieur s'y termine, par ce foramen",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mentonnier",
+    "kenhub-alveolaire-inferieur"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-mylohyoidien",
+   "resume": "Le nerf moteur du plancher de la bouche : il commande le mylohyoïdien et le ventre antérieur du digastrique.",
+   "sorte": "branche",
+   "origine": {
+    "nerf": "nerf-alveolaire-inferieur",
+    "texte": "Naît du nerf alvéolaire inférieur juste avant le foramen mandibulaire",
+    "racines": [
+     "V3"
+    ]
+   },
+   "trajet": "Se détache avant le foramen mandibulaire, descend dans le sillon mylo-hyoïdien de la face médiale de la mandibule, puis chemine sous le mylohyoïdien",
+   "moteur": {
+    "texte": "Mylohyoïdien et ventre antérieur du digastrique",
+    "muscles": [
+     "mylohyoidien",
+     "digastrique"
+    ]
+   },
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Lésion isolée rare, sans signe frappant : l'élévation du plancher de la bouche et de l'os hyoïde à la déglutition s'affaiblit",
+   "memo": "Mylohyoïdien : le nerf qui quitte l'alvéolaire inférieur avant son entrée dans la mandibule, pour aller au plancher de la bouche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-alveolaire-inferieur",
+    "tma-mandibulaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-optique-ii",
+   "resume": "Le nerf de la vue : il relie la rétine au chiasma optique en passant par le canal optique.",
+   "sorte": "cranien",
+   "origine": {
+    "nerf": null,
+    "texte": "Axones des cellules ganglionnaires de la rétine, réunis à la papille (disque optique)",
+    "racines": [
+     "II"
+    ]
+   },
+   "trajet": "Quitte l'œil à la papille, traverse l'orbite et le canal optique, l'artère ophtalmique passant sous lui, puis rejoint le chiasma optique ; l'artère et la veine centrales de la rétine entrent dans le nerf juste derrière le globe",
+   "orifices": [
+    "Canal optique"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Vision : l'information de la rétine (cônes et bâtonnets) vers le cerveau"
+   },
+   "autonome": null,
+   "reflexe": {
+    "nom": "Réflexe photomoteur (le II en est la voie sensitive, le III la voie motrice)",
+    "racines": [
+     "II",
+     "III"
+    ]
+   },
+   "atteinte": "Baisse brutale de la vue d'un œil, couleurs ternes, douleur à la mobilisation (névrite optique, souvent liée à la sclérose en plaques) ; le réflexe à la lumière est affaibli de ce côté",
+   "test": "Acuité visuelle, couleurs, champ visuel, réflexe photomoteur, fond d'œil",
+   "clinique": "Ses gaines prolongent les trois méninges : une hypertension intracrânienne se transmet à la papille, d'où l'œdème papillaire visible au fond d'œil",
+   "memo": "Le II n'est pas un vrai nerf périphérique mais un prolongement du cerveau, enveloppé de ses trois méninges",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-optique",
+    "tma-craniens-resume"
+   ],
+   "divergences": "Gray écrit « foramen optique » ; la nomenclature actuelle, comme TeachMeAnatomy, dit canal optique"
+  },
+  {
+   "id": "nerf-trijumeau-v",
+   "resume": "Le grand nerf sensitif de la face : il sent le visage, la bouche et les dents, et commande les muscles de la mastication.",
+   "sorte": "cranien",
+   "origine": {
+    "nerf": null,
+    "texte": "Quatre noyaux dans le tronc cérébral ; émerge de la protubérance par une grosse racine sensitive et une petite racine motrice",
+    "racines": [
+     "V"
+    ]
+   },
+   "trajet": "Les fibres sensitives se renflent en ganglion trigéminal (de Gasser) dans le cavum trigéminal, sur le rocher ; trois divisions en partent : ophtalmique, maxillaire et mandibulaire, ce dernier rejoint par la racine motrice sous le foramen ovale",
+   "orifices": [
+    "Fissure orbitaire supérieure (V1)",
+    "Foramen rond (V2)",
+    "Foramen ovale (V3)"
+   ],
+   "branches": [
+    {
+     "nerf": "nerf-ophtalmique",
+     "texte": "Nerf ophtalmique (V1), sensitif"
+    },
+    {
+     "nerf": "nerf-maxillaire",
+     "texte": "Nerf maxillaire (V2), sensitif"
+    },
+    {
+     "nerf": null,
+     "texte": "Nerf mandibulaire (V3), mixte : divisions antérieure et postérieure"
+    }
+   ],
+   "moteur": {
+    "texte": "Par la racine motrice, dans le V3 seulement : muscles masticateurs, mylohyoïdien, ventre antérieur du digastrique, tenseur du voile du palais, tenseur du tympan",
+    "muscles": [
+     "masseter",
+     "muscle-temporal",
+     "pterygoidien-lateral",
+     "pterygoidien-medial",
+     "mylohyoidien",
+     "digastrique"
+    ]
+   },
+   "sensitif": {
+    "texte": "Peau du visage et du cuir chevelu antérieur, cornée, muqueuses de la bouche et du nez, sinus, dents, deux tiers antérieurs de la langue (sensibilité générale), dure-mère"
+   },
+   "autonome": "Ne porte pas de fibres autonomes propres, mais ses branches servent de véhicule aux fibres parasympathiques du VII et du IX vers les glandes lacrymale, salivaires et nasales",
+   "reflexe": {
+    "nom": "Réflexe cornéen (V1 en est la voie sensitive, le facial la voie motrice)",
+    "racines": [
+     "V1",
+     "VII"
+    ]
+   },
+   "atteinte": "Perte de sensibilité du territoire touché, faiblesse des muscles masticateurs (mandibule déviée vers le côté atteint à l'ouverture) ; la névralgie du trijumeau donne des éclairs douloureux d'un côté, déclenchés par le toucher ou la mastication",
+   "test": "Toucher léger et piqûre aux trois étages du visage, réflexe cornéen, serrer les dents en palpant masséters et temporaux",
+   "clinique": "La névralgie du trijumeau, de cause souvent inconnue, peut suivre une sclérose en plaques, un AVC ou un traumatisme",
+   "memo": "Trois branches, trois trous, de haut en bas : fissure orbitaire supérieure (V1), foramen rond (V2), foramen ovale (V3)",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-trijumeau",
+    "tma-craniens-resume"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "nerf-vestibulocochleaire-viii",
+   "resume": "Le nerf de l'audition et de l'équilibre : il entre dans le tronc cérébral à l'angle ponto-cérébelleux, à côté du facial.",
+   "sorte": "cranien",
+   "origine": {
+    "nerf": null,
+    "texte": "Ganglion spiral de la cochlée (partie cochléaire) et ganglion vestibulaire de Scarpa (partie vestibulaire) ; émerge au sillon bulbo-pontique, en dehors du facial",
+    "racines": [
+     "VIII"
+    ]
+   },
+   "trajet": "Sort de l'oreille interne par le méat acoustique interne, avec le facial, traverse l'angle ponto-cérébelleux et pénètre dans le tronc cérébral ; les fibres cochléaires gagnent les noyaux cochléaires, les vestibulaires les noyaux vestibulaires",
+   "orifices": [
+    "Méat acoustique interne"
+   ],
+   "branches": [
+    {
+     "nerf": "nerf-vestibulaire",
+     "texte": "Nerf vestibulaire : équilibre"
+    },
+    {
+     "nerf": "nerf-cochleaire",
+     "texte": "Nerf cochléaire : audition"
+    }
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Audition (partie cochléaire) et équilibre (partie vestibulaire)"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Surdité de perception, acouphènes, vertiges et nystagmus ; le schwannome vestibulaire de l'angle ponto-cérébelleux donne d'abord une surdité unilatérale progressive, puis atteint le trijumeau et le facial voisins",
+   "test": "Voix chuchotée, diapason (épreuves de Weber et de Rinne), recherche d'un nystagmus, épreuve de Romberg",
+   "clinique": "Une fracture de la base du crâne peut léser le nerf dans le méat acoustique interne : surdité et vertiges, parfois écoulement de liquide cérébro-spinal par l'oreille ou le nez",
+   "memo": "Le VIII a deux voix : le cochléaire pour entendre, le vestibulaire pour tenir debout ; il partage le méat acoustique interne avec le VII",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-vestibulocochleaire",
+    "tma-craniens-resume"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "strie-terminale",
+   "resume": "Le mince faisceau blanc qui relie l'amygdale du lobe temporal aux noyaux du septum et de l'hypothalamus.",
+   "sorte": "groupe",
+   "origine": {
+    "nerf": null,
+    "texte": "Noyaux de l'amygdale, dans le lobe temporal (surtout sa partie centro-médiale)"
+   },
+   "trajet": "Part de l'amygdale, passe dans le toit de la corne temporale du ventricule latéral, longe le sillon entre le thalamus et le noyau caudé sous la veine terminale, jusqu'au foramen interventriculaire ; ses fibres se dispersent vers le septum, l'hypothalamus, le fornix et la commissure antérieure",
+   "moteur": null,
+   "sensitif": null,
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Pas de syndrome isolé connu en clinique : elle fait partie des voies de l'amygdale vers l'hypothalamus et le septum, impliquées dans l'anxiété et la réponse au stress",
+   "clinique": "Sur un cerveau vu d'en haut, elle recouvre la veine thalamo-striée, qui marque la limite entre le thalamus et le noyau caudé",
+   "memo": "Strie terminale : le fil blanc de l'amygdale à l'hypothalamus, qui suit l'arc du noyau caudé",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "wikipedia-strie-terminale"
+   ],
+   "divergences": "Gray insiste sur la terminaison de ses fibres dans la colonne du fornix, la commissure antérieure et le noyau caudé ; les sources modernes citent plutôt l'hypothalamus, le septum et le noyau du lit de la strie terminale"
+  },
+  {
+   "id": "tractus-optique",
+   "resume": "Le prolongement du chiasma : il porte les fibres visuelles du champ visuel opposé jusqu'au corps géniculé latéral.",
+   "sorte": "cranien",
+   "origine": {
+    "nerf": "chiasma-optique",
+    "texte": "Angles postéro-latéraux du chiasma ; il contient les fibres temporales du même côté et les fibres nasales croisées de l'autre",
+    "racines": [
+     "II"
+    ]
+   },
+   "trajet": "S'écarte en arrière et en dehors du chiasma, contourne le pédoncule cérébral ; la plupart des fibres gagnent le corps géniculé latéral, un contingent le colliculus supérieur (réflexe à la lumière)",
+   "moteur": null,
+   "sensitif": {
+    "texte": "Vision : rétine temporale du même côté et rétine nasale de l'autre, donc le champ visuel du côté opposé"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Hémianopsie latérale homonyme controlatérale : un tractus droit lésé fait perdre le champ visuel gauche des deux yeux",
+   "test": "Champ visuel par confrontation",
+   "clinique": "Irrigué par de petites branches de l'artère choroïdienne antérieure et de la communicante postérieure, il peut souffrir de leur occlusion ou d'une compression",
+   "memo": "Tractus droit = champ visuel gauche : chaque tractus voit de l'autre côté",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-tractus-optique",
+    "tma-optique"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ganglion-spinal",
+   "resume": "Le renflement de la racine postérieure, dans le foramen intervertébral, qui contient les corps cellulaires des neurones sensitifs.",
+   "sorte": "ganglion",
+   "origine": {
+    "nerf": "racine-posterieure-sensitive-du-nerf-spinal",
+    "texte": "Renflement de la racine postérieure, juste avant sa jonction avec la racine antérieure, dans le foramen intervertébral"
+   },
+   "trajet": "Sur chaque racine postérieure, au foramen intervertébral ; ses neurones pseudo-unipolaires envoient un prolongement central vers la moelle et un prolongement périphérique vers le nerf spinal, sans relais dans le ganglion",
+   "orifices": [
+    "Foramen intervertébral"
+   ],
+   "moteur": null,
+   "sensitif": {
+    "texte": "Aucun territoire propre : il contient les corps cellulaires des neurones sensitifs du dermatome correspondant (toucher, douleur, température, position)"
+   },
+   "autonome": null,
+   "reflexe": null,
+   "atteinte": "Zona : réactivation du virus varicelle-zona dans le ganglion, éruption vésiculeuse douloureuse sur le dermatome ; compression ou lésion : douleur et fourmillements dans le territoire",
+   "memo": "La boîte aux lettres de la sensibilité : un fil qui se divise en T, sans arrêt dans le ganglion",
+   "variantes": "Kenhub signale son absence pour le nerf spinal C1",
+   "sources": [
+    "gray1918",
+    "kenhub-ganglion-spinal",
+    "kenhub-nerfs-spinaux"
+   ],
+   "divergences": null
+  }
+ ]
+}

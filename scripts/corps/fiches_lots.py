@@ -1,8 +1,9 @@
 # L'Écorché — préparer les lots de fiches à rédiger.
 # Chaque lot (une couche, une région) reçoit la liste de ses structures avec ce que l'atlas sait déjà d'elles ;
 # la rédaction se fait lot par lot (voir donnees/fiches/CONSIGNES.md), puis valider_fiches.py contrôle le résultat.
-# Usage : python fiches_lots.py   → donnees/fiches/entree/*.json
-import collections, json, os
+# Usage : python fiches_lots.py [--refaire]   → donnees/fiches/entree/*.json (les lots existants ne sont réécrits
+#         qu'avec --refaire)
+import collections, json, os, re, sys
 
 ICI = os.path.dirname(os.path.abspath(__file__))
 MODELE = os.path.abspath(os.path.join(ICI, "..", "..", "src", "lib", "corps", "modele"))
@@ -59,16 +60,41 @@ LOTS = {
     "artere": ["tete+cou", "tronc", "membre-sup+membre-inf"],
     "os": ["tete+cou", "tronc", "membre-sup+membre-inf"],
     "tendon": ["tete+cou+tronc+membre-sup+membre-inf"],
+    "ligament": ["tete+cou+tronc", "membre-sup", "membre-inf"],
+    "veine": ["tete+cou", "tronc", "membre-sup+membre-inf"],
+    "nerf": ["tete+cou+tronc", "membre-sup", "membre-inf"],
+    "viscere": ["tete+cou", "tronc"],
+    "encephale": ["cortex", "profond"],
+    "lymphe": ["tete+cou+tronc", "abdomen+bassin+membres"],
 }
+# L'encéphale est presque entier dans la tête : on le partage entre le cortex (lobes, gyrus, sillons) et le reste.
+CORTEX = re.compile(r"^(gyrus|gyri|sillon|lobe|lobule|scissure|p[oô]le|insula|op[ée]rcule|cun[ée]us|pr[ée]cun[ée]us|uncus|cortex|aire|fissure|incisure)", re.I)
+
+
+def dans(e, couche, groupe):
+    gs = groupe.split("+")
+    if couche == "encephale":
+        return (groupe == "cortex") == bool(CORTEX.match(e["nom"]))
+    if couche == "lymphe":
+        tronc = e["region"] in ("tete", "cou", "thorax")
+        return tronc if groupe == "tete+cou+tronc" else not tronc
+    return GRANDE[e["region"]] in gs
 os.makedirs(os.path.join(FICHES, "entree"), exist_ok=True)
 bilan = []
 for couche, regions in LOTS.items():
     for groupe in regions:
         gs = groupe.split("+")
-        els = [e for e in elements + ensembles if e["couche"] == couche and GRANDE[e["region"]] in gs and not (couche == "tendon" and e.get("genere"))]
+        els = [e for e in elements + ensembles if e["couche"] == couche and dans(e, couche, groupe) and not (couche == "tendon" and e.get("genere"))]
         els.sort(key=lambda e: (e["rang"], e["region"], e["nom"]))
         lot = f"{couche}-{'-'.join(g.replace('membre-', '') for g in gs)}" if len(gs) < 5 else couche
-        json.dump({"lot": lot, "couche": couche, "structures": [contexte(e) for e in els]}, open(os.path.join(FICHES, "entree", lot + ".json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        if couche in ("encephale", "lymphe"):
+            lot = f"{couche}-{groupe.replace('+', '-')}"
+        cible = os.path.join(FICHES, "entree", lot + ".json")
+        # Un lot déjà distribué ne change plus (sa rédaction s'y réfère), sauf demande expresse.
+        if os.path.exists(cible) and "--refaire" not in sys.argv:
+            bilan.append((lot + " (inchangé)", len(els)))
+            continue
+        json.dump({"lot": lot, "couche": couche, "structures": [contexte(e) for e in els]}, open(cible, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
         bilan.append((lot, len(els)))
 # L'index : tous les identifiants valides pour les renvois (un muscle cite ses os, son nerf, ses artères, ses antagonistes).
 index = {c: [{"id": e["id"], "nom": e["nom"], "region": e["region"]} for e in elements + ensembles if e["couche"] == c] for c in ("os", "muscle", "tendon", "ligament", "artere", "veine", "nerf", "viscere", "encephale", "lymphe")}

@@ -205,7 +205,193 @@ def tendon(L, f):
     L.texte(f, "variantes", requis=False)
 
 
-PAR_COUCHE = {"muscle": muscle, "artere": artere, "os": os_, "tendon": tendon}
+def lien(L, f, cle, couches, requis=True, champ="texte", mini=6, maxi=260):
+    """Un objet { <identifiant> , texte } : `couches` dit où l'identifiant doit se trouver (clé = nom de la couche)."""
+    v = f.get(cle)
+    ou = f"{f['id']}.{cle}"
+    if v is None:
+        if requis:
+            L.dire(ou, "manque")
+        return
+    if not isinstance(v, dict) or not isinstance(v.get(champ), str) or len(v[champ].strip()) < mini:
+        return L.dire(ou, f"il faut {{ {', '.join(couches)}, {champ} }}")
+    if len(v[champ]) > maxi:
+        L.dire(f"{ou}.{champ}", f"trop long ({len(v[champ])} caractères, {maxi} au plus)")
+    for c in couches:
+        if v.get(c) is not None:
+            L.renvois(f, f"{cle}.{c}", [v[c]], [c])
+
+
+def liste_liens(L, f, cle, couche, requis=False):
+    v = f.get(cle)
+    ou = f"{f['id']}.{cle}"
+    if v is None:
+        if requis:
+            L.dire(ou, "manque")
+        return
+    if not isinstance(v, list):
+        return L.dire(ou, "doit être une liste")
+    for k, b in enumerate(v):
+        if not isinstance(b, dict) or not isinstance(b.get("texte"), str) or len(b["texte"]) < 3:
+            L.dire(f"{ou}[{k}]", f"il faut {{ {couche}, texte }}")
+        elif b.get(couche) is not None:
+            L.renvois(f, f"{cle}[{k}].{couche}", [b[couche]], [couche])
+
+
+def structures(L, f, cle, couches, requis=True):
+    """Un objet { texte, structures : [identifiants] }."""
+    v = f.get(cle)
+    ou = f"{f['id']}.{cle}"
+    if v is None:
+        if requis:
+            L.dire(ou, "manque")
+        return
+    if not isinstance(v, dict) or not isinstance(v.get("texte"), str) or len(v["texte"].strip()) < 6:
+        return L.dire(ou, "il faut { texte, structures }")
+    if len(v["texte"]) > 320:
+        L.dire(f"{ou}.texte", "trop long (320 au plus)")
+    for k, liste in v.items():
+        if k != "texte":
+            L.renvois(f, f"{cle}.{k}", liste, couches if k == "structures" else [{"arteres": "artere", "veines": "veine", "nerfs": "nerf", "muscles": "muscle"}.get(k, k)])
+
+
+def racines(L, f, ou, rac, requis=True):
+    if rac is None and not requis:
+        return
+    if not isinstance(rac, list) or (requis and not rac):
+        return L.dire(ou, "liste manquante ou vide (C5, L4, VII…)")
+    for r in rac:
+        if not RACINE.match(str(r)):
+            L.dire(ou, f"« {r} » : attendu C1-C8, T1-T12, L1-L5, S1-S5, Co ou un nerf crânien (VII, V3…)")
+
+
+NATURES_LIGAMENT = ("ligament", "capsule", "disque", "noyau", "bourse", "menisque", "labrum", "membrane", "symphyse", "cartilage", "groupe")
+
+
+def ligament(L, f):
+    L.texte(f, "resume", 20, 220)
+    if f.get("nature") not in NATURES_LIGAMENT:
+        L.dire(f"{f['id']}.nature", " ou ".join(NATURES_LIGAMENT))
+    L.texte(f, "articulation", 4, 160)
+    att = f.get("attaches")
+    if not isinstance(att, list):
+        L.dire(f"{f['id']}.attaches", "liste manquante (vide pour une bourse : dire alors où elle est dans « situation »)")
+    elif att:
+        L.attaches(f, "attaches")
+    L.texte(f, "situation", 8, 260, requis=not att)
+    L.texte(f, "role", 10, 300)
+    L.texte(f, "tendu", requis=False, maxi=200)
+    L.texte(f, "test", requis=False)
+    L.texte(f, "clinique", 12, 360)
+    L.texte(f, "memo", 8, 220)
+    L.texte(f, "variantes", requis=False)
+
+
+def veine(L, f):
+    L.texte(f, "resume", 20, 220)
+    if f.get("plan") not in ("superficielle", "profonde", "sinus", "pulmonaire", "portale", "groupe"):
+        L.dire(f"{f['id']}.plan", "superficielle, profonde, sinus, pulmonaire, portale ou groupe")
+    lien(L, f, "origine", ["veine"])
+    L.texte(f, "trajet", 12, 360)
+    liste_liens(L, f, "affluents", "veine")
+    lien(L, f, "terminaison", ["veine", "viscere"])
+    structures(L, f, "drainage", ["os", "muscle", "viscere", "encephale", "tendon", "ligament"])
+    L.texte(f, "rapports", requis=False, maxi=360)
+    L.texte(f, "clinique", 12, 360)
+    L.texte(f, "memo", 8, 220)
+    L.texte(f, "variantes", requis=False)
+
+
+def nerf(L, f):
+    L.texte(f, "resume", 20, 220)
+    if f.get("sorte") not in ("cranien", "spinal", "plexus", "branche", "ganglion", "groupe"):
+        L.dire(f"{f['id']}.sorte", "cranien, spinal, plexus, branche, ganglion ou groupe")
+    o = f.get("origine")
+    lien(L, f, "origine", ["nerf"])
+    if isinstance(o, dict):
+        racines(L, f, f"{f['id']}.origine.racines", o.get("racines"), requis=False)
+    L.texte(f, "trajet", 12, 360)
+    orif = f.get("orifices")
+    if orif is not None and (not isinstance(orif, list) or not all(isinstance(x, str) and 3 <= len(x) <= 120 for x in orif)):
+        L.dire(f"{f['id']}.orifices", "une liste de noms (foramen, canal, fissure…)")
+    liste_liens(L, f, "branches", "nerf")
+    m = f.get("moteur")
+    if m is not None:
+        structures(L, f, "moteur", ["muscle"])
+    sens = f.get("sensitif")
+    if sens is not None and (not isinstance(sens, dict) or not isinstance(sens.get("texte"), str) or len(sens["texte"]) < 6):
+        L.dire(f"{f['id']}.sensitif", "null, ou { texte }")
+    if m is None and sens is None and f.get("autonome") is None and f.get("sorte") not in ("plexus", "groupe", "ganglion"):
+        L.dire(f"{f['id']}", "un nerf est moteur, sensitif ou autonome : remplis au moins un des trois")
+    L.texte(f, "autonome", requis=False)
+    r = f.get("reflexe")
+    if r is not None:
+        if not isinstance(r, dict) or not isinstance(r.get("nom"), str):
+            L.dire(f"{f['id']}.reflexe", "null, ou { nom, racines }")
+        else:
+            racines(L, f, f"{f['id']}.reflexe.racines", r.get("racines"))
+    L.texte(f, "atteinte", 12, 360)
+    L.texte(f, "test", requis=False)
+    L.texte(f, "clinique", requis=False, maxi=360)
+    L.texte(f, "memo", 8, 220)
+    L.texte(f, "variantes", requis=False)
+
+
+SYSTEMES = ("digestif", "respiratoire", "circulatoire", "urinaire", "genital", "endocrinien", "lymphatique", "sensoriel", "nerveux", "tegumentaire")
+
+
+def viscere(L, f):
+    L.texte(f, "resume", 20, 220)
+    if f.get("systeme") not in SYSTEMES:
+        L.dire(f"{f['id']}.systeme", " ou ".join(SYSTEMES))
+    L.texte(f, "situation", 10, 300)
+    L.texte(f, "fonction", 10, 320)
+    for k, p in enumerate(f.get("parties", []) or []):
+        if not isinstance(p, dict) or not isinstance(p.get("nom"), str) or not isinstance(p.get("role"), str):
+            L.dire(f"{f['id']}.parties[{k}]", "il faut { nom, role }")
+        elif len(p["role"]) > 240:
+            L.dire(f"{f['id']}.parties[{k}].role", "trop long (240 au plus)")
+    L.texte(f, "rapports", requis=False, maxi=360)
+    structures(L, f, "vascularisation", ["artere"])
+    if f.get("innervation") is not None:
+        structures(L, f, "innervation", ["nerf"])
+    L.texte(f, "examen", requis=False, maxi=320)
+    L.texte(f, "clinique", 12, 360)
+    L.texte(f, "memo", 8, 220)
+    L.texte(f, "variantes", requis=False)
+
+
+PARTIES = ("telencephale", "diencephale", "tronc-cerebral", "cervelet", "moelle-spinale", "ventricules", "meninges", "voies")
+
+
+def encephale(L, f):
+    L.texte(f, "resume", 20, 220)
+    if f.get("partie") not in PARTIES:
+        L.dire(f"{f['id']}.partie", " ou ".join(PARTIES))
+    L.texte(f, "situation", 10, 300)
+    L.texte(f, "fonction", 10, 320)
+    if f.get("connexions") is not None:
+        structures(L, f, "connexions", ["encephale", "nerf", "viscere"])
+    if f.get("vascularisation") is not None:
+        structures(L, f, "vascularisation", ["artere"])
+    L.texte(f, "atteinte", 12, 360)
+    L.texte(f, "clinique", requis=False, maxi=360)
+    L.texte(f, "memo", 8, 220)
+    L.texte(f, "variantes", requis=False)
+
+
+def lymphe(L, f):
+    L.texte(f, "resume", 20, 220)
+    L.texte(f, "situation", 10, 300)
+    structures(L, f, "recoit", ["os", "muscle", "viscere", "lymphe", "encephale", "tendon", "ligament"])
+    lien(L, f, "draine_vers", ["lymphe", "veine"])
+    L.texte(f, "palpation", requis=False)
+    L.texte(f, "clinique", 12, 360)
+    L.texte(f, "memo", 8, 220)
+    L.texte(f, "variantes", requis=False)
+
+
+PAR_COUCHE = {"muscle": muscle, "artere": artere, "os": os_, "tendon": tendon, "ligament": ligament, "veine": veine, "nerf": nerf, "viscere": viscere, "encephale": encephale, "lymphe": lymphe}
 
 
 def valider(nom):

@@ -1,0 +1,1027 @@
+{
+ "lot": "encephale-profond",
+ "couche": "encephale",
+ "structures": [
+  {
+   "id": "commissure-hippocampale",
+   "nom": "Commissure hippocampale",
+   "latin": "Commissura hippocampi",
+   "anglais": "Hippocampal commissure",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Commissure hippocampale",
+   "ta2": "5616"
+  },
+  {
+   "id": "faux-du-cerveau",
+   "nom": "Faux du cerveau",
+   "latin": "Falx cerebri",
+   "anglais": "Falx cerebri",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Faux du cerveau",
+   "ta2": "5374",
+   "nature": "enveloppe"
+  },
+  {
+   "id": "moelle-allongee",
+   "nom": "Moelle allongée",
+   "latin": "Medulla oblongata",
+   "anglais": "Medulla oblongata",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Moelle allongée",
+   "ta2": "5983"
+  },
+  {
+   "id": "mesencephale",
+   "nom": "Mésencéphale",
+   "latin": "Mesencephalon",
+   "anglais": "Midbrain",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Mésencéphale",
+   "ta2": "5874"
+  },
+  {
+   "id": "noyaux-vestibulaires",
+   "nom": "Noyaux vestibulaires",
+   "latin": "Nuclei vestibulares",
+   "anglais": "Vestibular nuclei",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Noyaux vestibulaires",
+   "ta2": "5933"
+  },
+  {
+   "id": "pont",
+   "nom": "Pont",
+   "latin": "Pons",
+   "anglais": "Pons",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Pont",
+   "ta2": "5921"
+  },
+  {
+   "id": "pedoncule-cerebelleux-superieur",
+   "nom": "Pédoncule cérébelleux supérieur",
+   "latin": "Pedunculus cerebellaris superior",
+   "anglais": "Superior cerebellar peduncle",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Pédoncule cérébelleux supérieur",
+   "ta2": "5846"
+  },
+  {
+   "id": "racine-sensitive-du-nerf-trijumeau",
+   "nom": "Racine sensitive du nerf trijumeau",
+   "latin": "Radix sensoria nervi trigemini",
+   "anglais": "Sensory root of trigeminal nerve",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Racine sensitive du nerf trijumeau",
+   "ta2": "6193"
+  },
+  {
+   "id": "substance-blanche-du-telencephale",
+   "nom": "Substance blanche du télencéphale",
+   "latin": "Substantia alba telencephali",
+   "anglais": "White matter of telencephalon",
+   "region": "tete",
+   "rang": 2,
+   "officiel": "Substance blanche du télencéphale",
+   "ta2": "5573"
+  },
+  {
+   "id": "corne-anterieure-de-la-moelle-epiniere",
+   "nom": "Corne antérieure de la moëlle épinière",
+   "latin": "Cornu anterius medullae spinalis",
+   "anglais": "Anterior horn of spinal cord",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Corne antérieure de la moëlle épinière",
+   "ta2": "6079"
+  },
+  {
+   "id": "corne-posterieure-de-la-moelle-epiniere",
+   "nom": "Corne postérieure de la moëlle épinière",
+   "latin": "Cornu posterius medullae spinalis",
+   "anglais": "Posterior horn of spinal cord",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Corne postérieure de la moëlle épinière",
+   "ta2": "6064"
+  },
+  {
+   "id": "dure-mere-spinale",
+   "nom": "Dure-mère spinale",
+   "latin": "Dura spinalis",
+   "anglais": "Spinal dura",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Dure-mère spinale",
+   "ta2": "5382",
+   "nature": "enveloppe"
+  },
+  {
+   "id": "faisceau-anterieur-propre",
+   "nom": "Faisceau antérieur propre",
+   "latin": "Fasciculus proprius anterior",
+   "anglais": "Anterior fasciculus proprius",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Faisceau antérieur propre",
+   "ta2": "6111"
+  },
+  {
+   "id": "faisceau-corticospinal-lateral",
+   "nom": "Faisceau corticospinal latéral",
+   "latin": "Tractus corticospinalis lateralis",
+   "anglais": "Lateral corticospinal tract",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Faisceau corticospinal latéral",
+   "ta2": "6095"
+  },
+  {
+   "id": "faisceau-gracile",
+   "nom": "Faisceau gracile",
+   "latin": "Fasciculus gracilis",
+   "anglais": "Gracile fasciculus",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Faisceau gracile",
+   "ta2": "6088"
+  },
+  {
+   "id": "faisceau-lateral-propre",
+   "nom": "Faisceau latéral propre",
+   "latin": "Fasciculus proprius lateralis",
+   "anglais": "Lateral fasciculus proprius",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Faisceau latéral propre",
+   "ta2": "6094"
+  },
+  {
+   "id": "faisceau-posterieur-propre",
+   "nom": "Faisceau postérieur propre",
+   "latin": "Fasciculus proprius posterior",
+   "anglais": "Posterior fasciculus proprius",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Faisceau postérieur propre",
+   "ta2": "6087"
+  },
+  {
+   "id": "faisceau-rubrospinal",
+   "nom": "Faisceau rubrospinal",
+   "latin": "Tractus rubrospinalis",
+   "anglais": "Rubrospinal tract",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Faisceau rubrospinal",
+   "ta2": "6097"
+  },
+  {
+   "id": "noyau-intermediomedial",
+   "nom": "Noyau intermédiomédial",
+   "latin": "Nucleus intermediomedialis",
+   "anglais": "Intermediomedial nucleus",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Noyau intermédiomédial",
+   "ta2": "7221"
+  },
+  {
+   "id": "processus-reticulaire-spinal",
+   "nom": "Processus réticulaire spinal",
+   "latin": "Processus reticularis spinalis",
+   "anglais": "Spinal reticular process",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Processus réticulaire spinal",
+   "ta2": "6071"
+  },
+  {
+   "id": "substance-blanche-de-la-moelle-epiniere",
+   "nom": "Substance blanche de la moëlle épinière",
+   "latin": "Substantia alba medullae spinalis",
+   "anglais": "White matter of spinal cord",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Substance blanche de la moëlle épinière",
+   "ta2": "6085"
+  },
+  {
+   "id": "substance-intermediaire-laterale",
+   "nom": "Substance intermédiaire latérale",
+   "latin": "Substantia intermedia lateralis",
+   "anglais": "Lateral intermediate substance",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Substance intermédiaire latérale",
+   "ta2": "6075"
+  },
+  {
+   "id": "tractus-corticospinal-anterieur",
+   "nom": "Tractus corticospinal antérieur",
+   "latin": "Tractus corticospinalis anterior",
+   "anglais": "Anterior corticospinal tract",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Tractus corticospinal antérieur",
+   "ta2": "6112"
+  },
+  {
+   "id": "tractus-posterolateral",
+   "nom": "Tractus postérolatéral",
+   "latin": "Fasciculus posterolateralis",
+   "anglais": "Posterolateral tract",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Tractus postérolatéral",
+   "ta2": "6092"
+  },
+  {
+   "id": "tractus-reticulospinal-medial",
+   "nom": "Tractus réticulospinal médial",
+   "latin": "Tractus reticulospinalis medialis tractus",
+   "anglais": "Medial reticulospinal tract",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Tractus réticulospinal médial",
+   "ta2": "6118"
+  },
+  {
+   "id": "tractus-spinocerebelleux-anterieur",
+   "nom": "Tractus spinocérébelleux antérieur",
+   "latin": "Tractus spinocerebellaris anterior",
+   "anglais": "Anterior spinocerebellar tract",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Tractus spinocérébelleux antérieur",
+   "ta2": "6100"
+  },
+  {
+   "id": "tractus-spinocerebelleux-posterieur",
+   "nom": "Tractus spinocérébelleux postérieur",
+   "latin": "Tractus spinocerebellaris posterior",
+   "anglais": "Posterior spinocerebellar tract",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Tractus spinocérébelleux postérieur",
+   "ta2": "6099"
+  },
+  {
+   "id": "tractus-spinothalamique-anterieur",
+   "nom": "Tractus spinothalamique antérieur",
+   "latin": "Tractus spinothalamicus anterior",
+   "anglais": "Anterior spinothalamic tract",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Tractus spinothalamique antérieur",
+   "ta2": "6103"
+  },
+  {
+   "id": "tractus-spinothalamique-lateral",
+   "nom": "Tractus spinothalamique latéral",
+   "latin": "Tractus spinothalamicus lateralis",
+   "anglais": "Lateral spinothalamic tract",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Tractus spinothalamique latéral",
+   "ta2": "6104"
+  },
+  {
+   "id": "tractus-vestibulospinal-lateral",
+   "nom": "Tractus vestibulospinal latéral",
+   "latin": "Tractus vestibulospinalis lateralis",
+   "anglais": "Lateral vestibulospinal tract",
+   "region": "thorax",
+   "rang": 2,
+   "officiel": "Tractus vestibulospinal latéral",
+   "ta2": "6113"
+  },
+  {
+   "id": "faisceau-cuneiforme",
+   "nom": "Faisceau cunéiforme",
+   "latin": "Fasciculus cuneatus",
+   "anglais": "Cuneate fasciculus",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Faisceau cunéiforme",
+   "ta2": "6089"
+  },
+  {
+   "id": "tractus-vestibulospinal-medial",
+   "nom": "Tractus vestibulospinal médial",
+   "latin": "Tractus vestibulospinalis medialis",
+   "anglais": "Medial vestibulospinal tract",
+   "region": "cou",
+   "rang": 3,
+   "officiel": "Tractus vestibulospinal médial",
+   "ta2": "6114"
+  },
+  {
+   "id": "aile-du-lobule-central",
+   "nom": "Aile du lobule central",
+   "latin": "Ala lobuli centralis",
+   "anglais": "Wing of central lobule",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Aile du lobule central",
+   "ta2": "5805"
+  },
+  {
+   "id": "aqueduc-du-mesencephale",
+   "nom": "Aqueduc du mésencéphale",
+   "latin": "Aquaeductus mesencephali",
+   "anglais": "Aqueduct of midbrain",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Aqueduc du mésencéphale",
+   "ta2": "5910"
+  },
+  {
+   "id": "base-du-pedoncule",
+   "nom": "Base du pédoncule",
+   "latin": "Basis pedunculi",
+   "anglais": "Base of peduncle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Base du pédoncule",
+   "ta2": "5879"
+  },
+  {
+   "id": "colliculus-inferieur",
+   "nom": "Colliculus inférieur",
+   "latin": "Colliculus inferior",
+   "anglais": "Inferior colliculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Colliculus inférieur",
+   "ta2": "5916"
+  },
+  {
+   "id": "colliculus-superieur",
+   "nom": "Colliculus supérieur",
+   "latin": "Colliculus superior",
+   "anglais": "Superior colliculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Colliculus supérieur",
+   "ta2": "5912"
+  },
+  {
+   "id": "commissure-anterieure",
+   "nom": "Commissure antérieure",
+   "latin": "Commissura anterior",
+   "anglais": "Anterior commissure",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Commissure antérieure",
+   "ta2": "5613"
+  },
+  {
+   "id": "commissure-posterieure",
+   "nom": "Commissure postérieure",
+   "latin": "Commissura posterior",
+   "anglais": "Posterior commissure",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Commissure postérieure",
+   "ta2": "5749"
+  },
+  {
+   "id": "corps-amygdaloide",
+   "nom": "Corps amygdaloïde",
+   "latin": "Corpus amygdaloideum",
+   "anglais": "Amygdaloid body",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Corps amygdaloïde",
+   "ta2": "5549"
+  },
+  {
+   "id": "corps-calleux",
+   "nom": "Corps calleux",
+   "latin": "Corpus callosum",
+   "anglais": "Corpus callosum",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Corps calleux",
+   "ta2": "5604"
+  },
+  {
+   "id": "corps-genicule-lateral",
+   "nom": "Corps géniculé latéral",
+   "latin": "Corpus geniculatum laterale",
+   "anglais": "Lateral geniculate body",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Corps géniculé latéral",
+   "ta2": "5666"
+  },
+  {
+   "id": "corps-genicule-medial",
+   "nom": "Corps géniculé médial",
+   "latin": "Corpus geniculatum mediale",
+   "anglais": "Medial geniculate body",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Corps géniculé médial",
+   "ta2": "5667"
+  },
+  {
+   "id": "corps-mamillaire",
+   "nom": "Corps mamillaire",
+   "latin": "Corpus mammillare",
+   "anglais": "Mamillary body",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Corps mamillaire",
+   "ta2": "5674"
+  },
+  {
+   "id": "culmen",
+   "nom": "Culmen",
+   "latin": "Culmen",
+   "anglais": "Culmen",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Culmen",
+   "ta2": "5824"
+  },
+  {
+   "id": "declive",
+   "nom": "Déclive",
+   "latin": "Declive",
+   "anglais": "Declive",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Déclive",
+   "ta2": "5827"
+  },
+  {
+   "id": "flocculus",
+   "nom": "Flocculus",
+   "latin": "Flocculus",
+   "anglais": "Flocculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Flocculus",
+   "ta2": "5818"
+  },
+  {
+   "id": "folium-vermis",
+   "nom": "Folium vermis",
+   "latin": "Folium vermis",
+   "anglais": "Folium of vermis",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Folium vermis",
+   "ta2": "5828"
+  },
+  {
+   "id": "fornix",
+   "nom": "Fornix",
+   "latin": "Fornix",
+   "anglais": "Fornix",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Fornix",
+   "ta2": "5633"
+  },
+  {
+   "id": "fosse-interpedonculaire",
+   "nom": "Fosse interpédonculaire",
+   "latin": "Fossa interpeduncularis",
+   "anglais": "Interpeduncular fossa",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Fosse interpédonculaire",
+   "ta2": "5875"
+  },
+  {
+   "id": "globus-pallidus",
+   "nom": "Globus pallidus",
+   "latin": "Globus pallidus",
+   "anglais": "Globus pallidus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Globus pallidus",
+   "ta2": "5569"
+  },
+  {
+   "id": "habenula",
+   "nom": "Habénula",
+   "latin": "Habenula",
+   "anglais": "Habenula",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Habénula",
+   "ta2": "5662"
+  },
+  {
+   "id": "hippocampe",
+   "nom": "Hippocampe",
+   "latin": "Hippocampus",
+   "anglais": "Hippocampus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Hippocampe",
+   "ta2": "5518"
+  },
+  {
+   "id": "hypothalamus",
+   "nom": "Hypothalamus",
+   "latin": "Hypothalamus",
+   "anglais": "Hypothalamus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Hypothalamus",
+   "ta2": "5714"
+  },
+  {
+   "id": "lingula-du-cervelet",
+   "nom": "Lingula du cervelet",
+   "latin": "Lingula cerebelli",
+   "anglais": "Lingula of cerebellum",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Lingula du cervelet",
+   "ta2": "5820"
+  },
+  {
+   "id": "nodule-du-vermis",
+   "nom": "Nodule du vermis",
+   "latin": "Nodulus vermis",
+   "anglais": "Nodule of vermis",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Nodule du vermis",
+   "ta2": "5832"
+  },
+  {
+   "id": "noyau-accessoire-du-nerf-oculomoteur",
+   "nom": "Noyau accessoire du nerf oculomoteur",
+   "latin": "Nucleus accessorius nervi oculomotorii",
+   "anglais": "Accessory nucleus of oculomotor nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau accessoire du nerf oculomoteur",
+   "ta2": "5893"
+  },
+  {
+   "id": "noyau-ambigu",
+   "nom": "Noyau ambigu",
+   "latin": "Nucleus ambiguus",
+   "anglais": "Nucleus ambiguus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau ambigu",
+   "ta2": "6011"
+  },
+  {
+   "id": "noyau-caude",
+   "nom": "Noyau caudé",
+   "latin": "Nucleus caudatus",
+   "anglais": "Caudate nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau caudé",
+   "ta2": "5561"
+  },
+  {
+   "id": "noyau-cochleaire-anterieur",
+   "nom": "Noyau cochléaire antérieur",
+   "latin": "Nucleus cochlearis anterior",
+   "anglais": "Anterior cochlear nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau cochléaire antérieur",
+   "ta2": "6006"
+  },
+  {
+   "id": "noyau-cochleaire-posterieur",
+   "nom": "Noyau cochléaire postérieur",
+   "latin": "Nucleus cochlearis posterior",
+   "anglais": "Posterior cochlear nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau cochléaire postérieur",
+   "ta2": "6007"
+  },
+  {
+   "id": "noyau-du-nerf-abducens",
+   "nom": "Noyau du nerf abducens",
+   "latin": "Nucleus nervi abducentis",
+   "anglais": "Nucleus of abducens nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau du nerf abducens",
+   "ta2": "5941"
+  },
+  {
+   "id": "noyau-du-nerf-accessoire",
+   "nom": "Noyau du nerf accessoire",
+   "latin": "Nucleus nervi accessorii",
+   "anglais": "Nucleus of accessory nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau du nerf accessoire",
+   "ta2": "6082"
+  },
+  {
+   "id": "noyau-du-nerf-hypoglosse",
+   "nom": "Noyau du nerf hypoglosse",
+   "latin": "Nucleus nervi hypoglossi",
+   "anglais": "Nucleus of hypoglossal nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau du nerf hypoglosse",
+   "ta2": "6010"
+  },
+  {
+   "id": "noyau-du-nerf-oculomoteur",
+   "nom": "Noyau du nerf oculomoteur",
+   "latin": "Nucleus nervi oculomotorius",
+   "anglais": "Nucleus of oculomotor nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau du nerf oculomoteur",
+   "ta2": "5892"
+  },
+  {
+   "id": "noyau-du-nerf-trochleaire",
+   "nom": "Noyau du nerf trochléaire",
+   "latin": "Nucleus nervi trochlearis",
+   "anglais": "Nucleus of trochlear nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau du nerf trochléaire",
+   "ta2": "5890"
+  },
+  {
+   "id": "noyau-du-tractus-solitaire",
+   "nom": "Noyau du tractus solitaire",
+   "latin": "Nucleus tractus solitarii",
+   "anglais": "Nucleus of solitary tract",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau du tractus solitaire",
+   "ta2": "6008"
+  },
+  {
+   "id": "noyau-lenticulaire",
+   "nom": "Noyau lenticulaire",
+   "latin": "Nucleus lentiformis",
+   "anglais": "Lentiform nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau lenticulaire",
+   "ta2": "5567"
+  },
+  {
+   "id": "noyau-moteur-du-nef-facial",
+   "nom": "Noyau moteur du nef facial",
+   "latin": "Nucleus nervi facialis",
+   "anglais": "Motor nucleus of facial nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau moteur du nef facial",
+   "ta2": "5939"
+  },
+  {
+   "id": "noyau-posterieur-du-nerf-vague",
+   "nom": "Noyau postérieur du nerf vague",
+   "latin": "Nucleus posterior nervi vagi",
+   "anglais": "Posterior nucleus of vagus nerve",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau postérieur du nerf vague",
+   "ta2": "6013"
+  },
+  {
+   "id": "noyau-rouge",
+   "nom": "Noyau rouge",
+   "latin": "Nucleus ruber",
+   "anglais": "Red nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau rouge",
+   "ta2": "5898"
+  },
+  {
+   "id": "noyau-salivaire-inferieur",
+   "nom": "Noyau salivaire inférieur",
+   "latin": "Nucleus salivatorius inferior",
+   "anglais": "Inferior salivatory nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau salivaire inférieur",
+   "ta2": "6014"
+  },
+  {
+   "id": "noyau-salivaire-superieur",
+   "nom": "Noyau salivaire supérieur",
+   "latin": "Nucleus salivatorius superior",
+   "anglais": "Superior salivatory nucleus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyau salivaire supérieur",
+   "ta2": "5942"
+  },
+  {
+   "id": "noyaux-septaux",
+   "nom": "Noyaux septaux",
+   "latin": "Nuclei septales",
+   "anglais": "Septal nuclei",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Noyaux septaux",
+   "ta2": "5548"
+  },
+  {
+   "id": "olive",
+   "nom": "Olive",
+   "latin": "Oliva",
+   "anglais": "Olive",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Olive",
+   "ta2": "5988"
+  },
+  {
+   "id": "partie-operculaire-du-gyrus-frontal-inferieur",
+   "nom": "Partie operculaire du gyrus frontal inférieur",
+   "latin": "Pars opercularis gyri frontalis inferioris",
+   "anglais": "Opercular part of inferior frontal gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Partie operculaire du gyrus frontal inférieur",
+   "ta2": "5452"
+  },
+  {
+   "id": "partie-orbitaire-du-gyrus-frontal-inferieur",
+   "nom": "Partie orbitaire du gyrus frontal inférieur",
+   "latin": "Pars orbitalis gyri frontalis inferioris",
+   "anglais": "Orbital part of  inferior frontal gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Partie orbitaire du gyrus frontal inférieur",
+   "ta2": "5448"
+  },
+  {
+   "id": "partie-triangulaire-du-gyrus-frontal-inferieur",
+   "nom": "Partie triangulaire du gyrus frontal inférieur",
+   "latin": "Pars triangularis gyri frontalis inferioris",
+   "anglais": "Triangular part of inferior frontal gyrus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Partie triangulaire du gyrus frontal inférieur",
+   "ta2": "5450"
+  },
+  {
+   "id": "planum-temporal",
+   "nom": "Planum temporal",
+   "latin": "Planum temporale",
+   "anglais": "Temporal plane",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Planum temporal",
+   "ta2": "5493"
+  },
+  {
+   "id": "plexus-choroide",
+   "nom": "Plexus choroïde",
+   "latin": "Plexus chorioideus",
+   "anglais": "Choroid plexus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Plexus choroïde",
+   "ta2": "5409"
+  },
+  {
+   "id": "putamen",
+   "nom": "Putamen",
+   "latin": "Putamen",
+   "anglais": "Putamen",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Putamen",
+   "ta2": "5566"
+  },
+  {
+   "id": "pyramide-de-la-moelle-allongee",
+   "nom": "Pyramide de la moëlle allongée",
+   "latin": "Pyramis medullae oblongatae",
+   "anglais": "Pyramid of medulla oblongata",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Pyramide de la moëlle allongée",
+   "ta2": "5985"
+  },
+  {
+   "id": "pyramide-du-vermis",
+   "nom": "Pyramide du vermis",
+   "latin": "Pyramis vermis",
+   "anglais": "Pyramis of vermis",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Pyramide du vermis",
+   "ta2": "5830"
+  },
+  {
+   "id": "pedoncule-du-flocculus",
+   "nom": "Pédoncule du flocculus",
+   "latin": "Pedunculus flocculi",
+   "anglais": "Peduncle of flocculus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Pédoncule du flocculus",
+   "ta2": "5844"
+  },
+  {
+   "id": "quatrieme-ventricule",
+   "nom": "Quatrième ventricule",
+   "latin": "Ventriculus quartus",
+   "anglais": "Fourth ventricle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Quatrième ventricule",
+   "ta2": "5966"
+  },
+  {
+   "id": "rameau-anterieur-du-sillon-lateral",
+   "nom": "Rameau antérieur du sillon latéral",
+   "latin": "Ramus anterior sulci lateralis",
+   "anglais": "Lat_Fis-ant-Horizont",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Rameau antérieur du sillon latéral"
+  },
+  {
+   "id": "rameau-ascendant-du-sillon-lateral",
+   "nom": "Rameau ascendant du sillon latéral",
+   "latin": "Ramus ascendens sulci lateralis",
+   "anglais": "Lat_Fis-ant-Vertical",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Rameau ascendant du sillon latéral"
+  },
+  {
+   "id": "septum-pellucidum",
+   "nom": "Septum pellucidum",
+   "latin": "Septum pellucidum",
+   "anglais": "Septum pellucidum",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Septum pellucidum",
+   "ta2": "5647"
+  },
+  {
+   "id": "strie-medullaire-thalamique",
+   "nom": "Strie médullaire thalamique",
+   "latin": "Stria medullaris thalami",
+   "anglais": "Stria medullaris thalami",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Strie médullaire thalamique",
+   "ta2": "5747"
+  },
+  {
+   "id": "tente-du-cervelet",
+   "nom": "Tente du cervelet",
+   "latin": "Tentorium cerebelli",
+   "anglais": "Tentorium cerebelli",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tente du cervelet",
+   "ta2": "5375",
+   "nature": "enveloppe"
+  },
+  {
+   "id": "thalamus",
+   "nom": "Thalamus",
+   "latin": "Thalamus",
+   "anglais": "Thalamus",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Thalamus",
+   "ta2": "5678"
+  },
+  {
+   "id": "tonsille-du-cervelet",
+   "nom": "Tonsille du cervelet",
+   "latin": "Tonsilla cerebelli",
+   "anglais": "Tonsil of cerebellum",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tonsille du cervelet",
+   "ta2": "5817"
+  },
+  {
+   "id": "troisieme-ventricule",
+   "nom": "Troisième ventricule",
+   "latin": "Ventriculus tertius",
+   "anglais": "Third ventricle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Troisième ventricule",
+   "ta2": "5769"
+  },
+  {
+   "id": "tuber-vermis",
+   "nom": "Tuber vermis",
+   "latin": "Tuber vermis",
+   "anglais": "Tuber of vermis",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Tuber vermis",
+   "ta2": "5829"
+  },
+  {
+   "id": "uvule-du-vermis",
+   "nom": "Uvule du vermis",
+   "latin": "Uvula vermis",
+   "anglais": "Uvula of vermis",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Uvule du vermis",
+   "ta2": "5831"
+  },
+  {
+   "id": "ventricule-lateral",
+   "nom": "Ventricule latéral",
+   "latin": "Ventriculus lateralis",
+   "anglais": "Lateral ventricle",
+   "region": "tete",
+   "rang": 3,
+   "officiel": "Ventricule latéral",
+   "ta2": "5639"
+  },
+  {
+   "id": "canal-central",
+   "nom": "Canal central",
+   "latin": "Canalis centralis",
+   "anglais": "Central canal",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Canal central",
+   "ta2": "6127"
+  },
+  {
+   "id": "noyau-intermediolateral",
+   "nom": "Noyau intermédiolatéral",
+   "latin": "Nucleus intermediolateralis",
+   "anglais": "Intermediolateral nucleus",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Noyau intermédiolatéral",
+   "ta2": "6078"
+  },
+  {
+   "id": "noyau-propre",
+   "nom": "Noyau propre",
+   "latin": "Nucleus proprius",
+   "anglais": "Nucleus proprius",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Noyau propre",
+   "ta2": "6068"
+  },
+  {
+   "id": "tractus-reticulospinal-lateral",
+   "nom": "Tractus réticulospinal latéral",
+   "latin": "Tractus reticulospinalis lateralis",
+   "anglais": "Lateral reticulospinal tract",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Tractus réticulospinal latéral",
+   "ta2": "6096"
+  },
+  {
+   "id": "tractus-spinotectal",
+   "nom": "Tractus spinotectal",
+   "latin": "Tractus spinotectalis",
+   "anglais": "Spinotectal tract",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Tractus spinotectal",
+   "ta2": "6107"
+  },
+  {
+   "id": "tractus-tectospinal",
+   "nom": "Tractus tectospinal",
+   "latin": "Tractus tectospinalis",
+   "anglais": "Tectospinal tract",
+   "region": "thorax",
+   "rang": 3,
+   "officiel": "Tractus tectospinal",
+   "ta2": "6119"
+  }
+ ]
+}

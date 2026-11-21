@@ -1,0 +1,537 @@
+{
+ "lot": "nerf-sup",
+ "couche": "nerf",
+ "structures": [
+  {
+   "id": "nerf-median",
+   "nom": "Nerf médian",
+   "latin": "Nervus medianus",
+   "anglais": "Median nerve",
+   "region": "bras",
+   "rang": 2,
+   "officiel": "Nerf médian",
+   "ta2": "6459"
+  },
+  {
+   "id": "nerf-thoracodorsal",
+   "nom": "Nerf thoracodorsal",
+   "latin": "Nervus thoracodorsalis",
+   "anglais": "Thoracodorsal nerve",
+   "region": "bras",
+   "rang": 2,
+   "officiel": "Nerf thoracodorsal",
+   "ta2": "6430"
+  },
+  {
+   "id": "nerf-pectoral-lateral",
+   "nom": "Nerf pectoral latéral",
+   "latin": "Nervus pectoralis lateralis",
+   "anglais": "Lateral pectoral nerve",
+   "region": "epaule",
+   "rang": 2,
+   "officiel": "Nerf pectoral latéral",
+   "ta2": "6419"
+  },
+  {
+   "id": "nerf-suprascapulaire",
+   "nom": "Nerf suprascapulaire",
+   "latin": "Nervus suprascapularis",
+   "anglais": "Suprascapular nerve",
+   "region": "epaule",
+   "rang": 2,
+   "officiel": "Nerf suprascapulaire",
+   "ta2": "6411"
+  },
+  {
+   "id": "nerf-thoracique-long",
+   "nom": "Nerf thoracique long",
+   "latin": "Nervus thoracicus longus",
+   "anglais": "Long thoracic nerve",
+   "region": "epaule",
+   "rang": 2,
+   "officiel": "Nerf thoracique long",
+   "ta2": "6410"
+  },
+  {
+   "id": "racines-du-plexus-brachial",
+   "nom": "Racines du plexus brachial",
+   "latin": "Radices plexus brachialis",
+   "anglais": "Roots of brachial plexus",
+   "region": "epaule",
+   "rang": 2,
+   "officiel": "Racines du plexus brachial",
+   "ta2": "6397"
+  },
+  {
+   "id": "branche-anterieure-du-nerf-cutane-medial-de-l-avant-bras",
+   "nom": "Branche antérieure du nerf cutané médial de l'avant-bras",
+   "latin": "Ramus anterior nervi cutanei medialis antebrachii",
+   "anglais": "Anterior branch of medial antebrachial cutaneous nerve",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Branche antérieure du nerf cutané médial de l'avant-bras",
+   "ta2": "6447"
+  },
+  {
+   "id": "branche-palmaire-du-nerf-median",
+   "nom": "Branche palmaire du nerf médian",
+   "latin": "Ramus palmaris nervi mediani",
+   "anglais": "Palmar branch of median nerve",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Branche palmaire du nerf médian",
+   "ta2": "6462"
+  },
+  {
+   "id": "branche-palmaire-du-nerf-ulnaire",
+   "nom": "Branche palmaire du nerf ulnaire",
+   "latin": "Ramus palmaris nervi ulnaris",
+   "anglais": "Palmar branch of ulnar nerve",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Branche palmaire du nerf ulnaire",
+   "ta2": "6453"
+  },
+  {
+   "id": "branche-posterieure-du-nerf-cutane-medial-de-l-avant-bras",
+   "nom": "Branche postérieure du nerf cutané médial de l'avant-bras",
+   "latin": "Ramus posterior nervi cutanei medialis antebrachii",
+   "anglais": "Posterior branch of medial antebrachial cutaneous nerve",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Branche postérieure du nerf cutané médial de l'avant-bras",
+   "ta2": "6448"
+  },
+  {
+   "id": "branche-profonde-du-nerf-radial",
+   "nom": "Branche profonde du nerf radial",
+   "latin": "Ramus profundus nervi radialis",
+   "anglais": "Deep branch of radial nerve",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Branche profonde du nerf radial",
+   "ta2": "6436"
+  },
+  {
+   "id": "branche-superficielle-du-nerf-radial",
+   "nom": "Branche superficielle du nerf radial",
+   "latin": "Ramus superficialis nervi radialis",
+   "anglais": "Superficial branch of radial nerve",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Branche superficielle du nerf radial",
+   "ta2": "6438"
+  },
+  {
+   "id": "branches-musculaires-du-nerf-median",
+   "nom": "Branches musculaires du nerf médian",
+   "latin": "Rami musculares nervi mediani",
+   "anglais": "Muscular branches of median nerve",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Branches musculaires du nerf médian",
+   "ta2": "6461"
+  },
+  {
+   "id": "branches-musculaires-du-nerf-ulnaire",
+   "nom": "Branches musculaires du nerf ulnaire",
+   "latin": "Rami musculares nervi ulnaris",
+   "anglais": "Muscular branches of ulnar nerve",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Branches musculaires du nerf ulnaire",
+   "ta2": "6450"
+  },
+  {
+   "id": "nerf-cutane-antebrachial-lateral",
+   "nom": "Nerf cutané antébrachial latéral",
+   "latin": "Nervus cutaneus lateralis antebrachii",
+   "anglais": "Lateral antebrachial cutaneous nerve",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Nerf cutané antébrachial latéral",
+   "ta2": "6423"
+  },
+  {
+   "id": "nerf-cutane-posterieur-de-l-avant-bras",
+   "nom": "Nerf cutané postérieur de l'avant-bras",
+   "latin": "Nervus cutaneus posterior antebrachii",
+   "anglais": "Posterior antebrachial cutaneous nerve",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Nerf cutané postérieur de l'avant-bras",
+   "ta2": "6434"
+  },
+  {
+   "id": "nerf-interosseux-anterieur-de-l-avant-bras",
+   "nom": "Nerf interosseux antérieur de l'avant-bras",
+   "latin": "Nervus interosseus anterior antebrachii",
+   "anglais": "Anterior interosseous nerve of forearm",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Nerf interosseux antérieur de l'avant-bras",
+   "ta2": "6460"
+  },
+  {
+   "id": "nerf-interosseux-posterieur-de-l-avant-bras",
+   "nom": "Nerf interosseux postérieur de l'avant-bras",
+   "latin": "Nervus interosseus posterior antebrachii",
+   "anglais": "Posterior interosseous nerve of forearm",
+   "region": "avant-bras",
+   "rang": 3,
+   "officiel": "Nerf interosseux postérieur de l'avant-bras",
+   "ta2": "6437"
+  },
+  {
+   "id": "branches-musculaires-du-nerf-radial",
+   "nom": "Branches musculaires du nerf radial",
+   "latin": "Rami musculares nervi radialis",
+   "anglais": "Muscular branches of radial nerve",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Branches musculaires du nerf radial",
+   "ta2": "6435"
+  },
+  {
+   "id": "nerf-cutane-brachial-lateroposterieur",
+   "nom": "Nerf cutané brachial latéropostérieur",
+   "latin": "Nervus cutaneus lateralis posterioris femoris",
+   "anglais": "Superior lateral brachial cutaneous nerve",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Nerf cutané brachial latéropostérieur",
+   "ta2": "6442"
+  },
+  {
+   "id": "nerf-cutane-lateral-inferieur-du-bras",
+   "nom": "Nerf cutané latéral inférieur du bras",
+   "latin": "Nervus cutaneus lateralis inferior brachii",
+   "anglais": "Inferior lateral brachial cutaneous nerve",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Nerf cutané latéral inférieur du bras",
+   "ta2": "6433"
+  },
+  {
+   "id": "nerf-cutane-medial-de-l-avant-bras",
+   "nom": "Nerf cutané médial de l'avant-bras",
+   "latin": "Nervus cutaneus medialis antebrachii",
+   "anglais": "Medial antebrachial cutaneous nerve",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Nerf cutané médial de l'avant-bras",
+   "ta2": "6446"
+  },
+  {
+   "id": "nerf-cutane-medial-du-bras",
+   "nom": "Nerf cutané médial du bras",
+   "latin": "Nervus cutaneus medialis brachii",
+   "anglais": "Medial brachial cutaneous nerve",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Nerf cutané médial du bras",
+   "ta2": "6445"
+  },
+  {
+   "id": "nerf-musculocutane",
+   "nom": "Nerf musculocutané",
+   "latin": "Nervus musculocutaneus",
+   "anglais": "Musculocutaneous nerve",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Nerf musculocutané",
+   "ta2": "6421"
+  },
+  {
+   "id": "nerf-radial",
+   "nom": "Nerf radial",
+   "latin": "Nervus radialis",
+   "anglais": "Radial nerve",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Nerf radial",
+   "ta2": "6431"
+  },
+  {
+   "id": "nerf-subscapulaire-inferieur",
+   "nom": "Nerf subscapulaire inférieur",
+   "latin": "Nervus subscapularis inferior",
+   "anglais": "Inferior subscapular nerve",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Nerf subscapulaire inférieur",
+   "ta2": "6429"
+  },
+  {
+   "id": "nerf-ulnaire",
+   "nom": "Nerf ulnaire",
+   "latin": "Nervus ulnaris",
+   "anglais": "Ulnar nerve",
+   "region": "bras",
+   "rang": 3,
+   "officiel": "Nerf ulnaire",
+   "ta2": "6449"
+  },
+  {
+   "id": "branches-musculaires-du-nerf-axillaire",
+   "nom": "Branches musculaires du nerf axillaire",
+   "latin": "Rami musculares nervi axillaris",
+   "anglais": "Muscular branches of axillary nerve",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Branches musculaires du nerf axillaire",
+   "ta2": "6441"
+  },
+  {
+   "id": "division-anterieure-du-tronc-inferieur-du-plexus-brachial",
+   "nom": "Division antérieure du tronc inférieur du plexus brachial",
+   "latin": "Divisio anterior trunci inferioris plexus brachialis",
+   "anglais": "Anterior division of inferior trunk of brachial plexus",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Division antérieure du tronc inférieur du plexus brachial",
+   "ta2": "6405"
+  },
+  {
+   "id": "division-anterieure-du-tronc-moyen-du-plexus-brachial",
+   "nom": "Division antérieure du tronc moyen du plexus brachial",
+   "latin": "Divisio anterior trunci medii plexus brachialis",
+   "anglais": "Anterior division of middle trunk of brachial plexus",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Division antérieure du tronc moyen du plexus brachial",
+   "ta2": "6402"
+  },
+  {
+   "id": "division-anterieure-du-tronc-superieur-du-plexus-brachial",
+   "nom": "Division antérieure du tronc supérieur du plexus brachial",
+   "latin": "Divisio anterior trunci superioris plexus brachialis",
+   "anglais": "Anterior division of superior trunk of brachial plexus",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Division antérieure du tronc supérieur du plexus brachial",
+   "ta2": "6399"
+  },
+  {
+   "id": "division-posterieure-du-tronc-inferieur-du-plexus-brachial",
+   "nom": "Division postérieure du tronc inférieur du plexus brachial",
+   "latin": "Divisio posterior trunci inferioris plexus brachialis",
+   "anglais": "Posterior division of inferior trunk of brachial plexus",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Division postérieure du tronc inférieur du plexus brachial",
+   "ta2": "6406"
+  },
+  {
+   "id": "division-posterieure-du-tronc-moyen-du-plexus-brachial",
+   "nom": "Division postérieure du tronc moyen du plexus brachial",
+   "latin": "Divisio posterior trunci medii plexus brachialis",
+   "anglais": "Posterior division of middle trunk of brachial plexus",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Division postérieure du tronc moyen du plexus brachial",
+   "ta2": "6403"
+  },
+  {
+   "id": "division-posterieure-du-tronc-superieur-du-plexus-brachial",
+   "nom": "Division postérieure du tronc supérieur du plexus brachial",
+   "latin": "Divisio posterior trunci superioris plexus brachialis",
+   "anglais": "Posterior division of superior trunk of brachial plexus",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Division postérieure du tronc supérieur du plexus brachial",
+   "ta2": "6400"
+  },
+  {
+   "id": "faisceau-posterieur-du-plexus-brachial",
+   "nom": "Faisceau postérieur du plexus brachial",
+   "latin": "Fasciculus posterior plexus brachialis",
+   "anglais": "Posterior cord of brachial plexus",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Faisceau postérieur du plexus brachial",
+   "ta2": "6416"
+  },
+  {
+   "id": "nerf-axillaire",
+   "nom": "Nerf axillaire",
+   "latin": "Nervus axillaris",
+   "anglais": "Axillary nerve",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Nerf axillaire",
+   "ta2": "6440"
+  },
+  {
+   "id": "nerf-dorsal-de-la-scapula",
+   "nom": "Nerf dorsal de la scapula",
+   "latin": "Nervus dorsalis scapulae",
+   "anglais": "Dorsal scapular nerve",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Nerf dorsal de la scapula",
+   "ta2": "6409"
+  },
+  {
+   "id": "nerf-pectoral-medial",
+   "nom": "Nerf pectoral médial",
+   "latin": "Nervus pectoralis medialis",
+   "anglais": "Medial pectoral nerve",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Nerf pectoral médial",
+   "ta2": "6444"
+  },
+  {
+   "id": "nerf-subclavier",
+   "nom": "Nerf subclavier",
+   "latin": "Nervus subclavius",
+   "anglais": "Subclavian nerve",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Nerf subclavier",
+   "ta2": "6412"
+  },
+  {
+   "id": "nerf-subscapulaire-superieur",
+   "nom": "Nerf subscapulaire supérieur",
+   "latin": "Nervus subscapularis superior",
+   "anglais": "Superior subscapular nerve",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Nerf subscapulaire supérieur",
+   "ta2": "6428"
+  },
+  {
+   "id": "tronc-inferieur-du-plexus-brachial",
+   "nom": "Tronc inférieur du plexus brachial",
+   "latin": "Truncus inferior plexus brachialis",
+   "anglais": "Inferior trunk of brachial plexus",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Tronc inférieur du plexus brachial",
+   "ta2": "6404"
+  },
+  {
+   "id": "tronc-moyen-du-plexus-brachial",
+   "nom": "Tronc moyen du plexus brachial",
+   "latin": "Truncus medius plexus brachialis",
+   "anglais": "Middle trunk of brachial plexus",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Tronc moyen du plexus brachial",
+   "ta2": "6401"
+  },
+  {
+   "id": "tronc-superieur-du-plexus-brachial",
+   "nom": "Tronc supérieur du plexus brachial",
+   "latin": "Truncus superior plexus brachialis",
+   "anglais": "Superior trunk of brachial plexus",
+   "region": "epaule",
+   "rang": 3,
+   "officiel": "Tronc supérieur du plexus brachial",
+   "ta2": "6398"
+  },
+  {
+   "id": "branche-communiquante-du-nerf-median-avec-le-nerf-ulnaire",
+   "nom": "Branche communiquante du nerf médian avec le nerf ulnaire",
+   "latin": "(Ramus communicans ulnaris nervi mediani)",
+   "anglais": "Communicating branch of median nerve with ulnar nerve",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Branche communiquante du nerf médian avec le nerf ulnaire",
+   "ta2": "6463",
+   "inconstant": true
+  },
+  {
+   "id": "branche-dorsale-du-nerf-ulnaire",
+   "nom": "Branche dorsale du nerf ulnaire",
+   "latin": "Ramus dorsalis nervi ulnaris",
+   "anglais": "Dorsal branch of ulnar nerve",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Branche dorsale du nerf ulnaire",
+   "ta2": "6451"
+  },
+  {
+   "id": "branche-profonde-du-nerf-ulnaire",
+   "nom": "Branche profonde du nerf ulnaire",
+   "latin": "Ramus profundus nervi ulnaris",
+   "anglais": "Deep branch of ulnar nerve",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Branche profonde du nerf ulnaire",
+   "ta2": "6457"
+  },
+  {
+   "id": "branche-superficielle-du-nerf-ulnaire",
+   "nom": "Branche superficielle du nerf ulnaire",
+   "latin": "Ramus superficialis nervi ulnaris",
+   "anglais": "Superficial branch of ulnar nerve",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Branche superficielle du nerf ulnaire",
+   "ta2": "6454"
+  },
+  {
+   "id": "branches-digitales-dorsales-du-nerf-radial",
+   "nom": "Branches digitales dorsales du nerf radial",
+   "latin": "Rami digitales dorsales nervi radialis",
+   "anglais": "Dorsal digital branches of radial nerve",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Branches digitales dorsales du nerf radial",
+   "ta2": "6439"
+  },
+  {
+   "id": "branches-digitales-dorsales-du-nerf-ulnaire",
+   "nom": "Branches digitales dorsales du nerf ulnaire",
+   "latin": "Rami digitales dorsales nervi ulnaris",
+   "anglais": "Dorsal digital branches of ulnar nerve",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Branches digitales dorsales du nerf ulnaire",
+   "ta2": "6452"
+  },
+  {
+   "id": "branches-digitales-palmaires-communes-du-nerf-median",
+   "nom": "Branches digitales palmaires communes du nerf médian",
+   "latin": "Rami digitales palmares communes nervi mediani",
+   "anglais": "Common palmar digital branches of median nerve",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Branches digitales palmaires communes du nerf médian",
+   "ta2": "6465"
+  },
+  {
+   "id": "branches-digitales-palmaires-communes-du-nerf-ulnaire",
+   "nom": "Branches digitales palmaires communes du nerf ulnaire",
+   "latin": "Rami digitales palmares communes nervi ulnaris",
+   "anglais": "Common palmar digital branches of ulnar nerve",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Branches digitales palmaires communes du nerf ulnaire",
+   "ta2": "6455"
+  },
+  {
+   "id": "branches-digitales-palmaires-propres-du-nerf-median",
+   "nom": "Branches digitales palmaires propres du nerf médian",
+   "latin": "Rami digitales palmares proprii nervi mediani",
+   "anglais": "Proper palmar digital branches of median nerve",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Branches digitales palmaires propres du nerf médian",
+   "ta2": "6466"
+  },
+  {
+   "id": "branches-digitales-palmaires-propres-du-nerf-ulnaire",
+   "nom": "Branches digitales palmaires propres du nerf ulnaire",
+   "latin": "Rami digitales palmares proprii nervi ulnaris",
+   "anglais": "Proper palmar digital branches of ulnar nerve",
+   "region": "main",
+   "rang": 3,
+   "officiel": "Branches digitales palmaires propres du nerf ulnaire",
+   "ta2": "6456"
+  }
+ ]
+}

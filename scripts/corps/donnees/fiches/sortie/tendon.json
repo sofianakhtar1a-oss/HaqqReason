@@ -1,0 +1,2568 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral (Internet Archive)",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "kenhub-achille": {
+   "titre": "Kenhub : tendon calcanéen",
+   "url": "https://www.kenhub.com/en/library/anatomy/achilles-tendon"
+  },
+  "kenhub-rectus-sheath": {
+   "titre": "Kenhub : gaine du droit de l'abdomen",
+   "url": "https://www.kenhub.com/en/library/anatomy/rectus-sheath"
+  },
+  "kenhub-rectus-abdominis": {
+   "titre": "Kenhub : muscle droit de l'abdomen",
+   "url": "https://www.kenhub.com/en/library/anatomy/rectus-abdominis-muscle"
+  },
+  "kenhub-abdominal-wall": {
+   "titre": "Kenhub : paroi abdominale, couches et fascias",
+   "url": "https://www.kenhub.com/en/library/anatomy/anterior-abdominal-wall"
+  },
+  "kenhub-thoracolumbar": {
+   "titre": "Kenhub : fascia thoraco-lombaire",
+   "url": "https://www.kenhub.com/en/library/anatomy/thoracolumbar-fascia"
+  },
+  "kenhub-palmar-aponeurosis": {
+   "titre": "Kenhub : aponévrose palmaire",
+   "url": "https://www.kenhub.com/en/library/anatomy/palmar-aponeurosis"
+  },
+  "kenhub-carpal-sheaths": {
+   "titre": "Kenhub : gaines tendineuses du carpe",
+   "url": "https://www.kenhub.com/en/library/anatomy/carpal-tendinous-sheaths"
+  },
+  "kenhub-carpal-tunnel": {
+   "titre": "Kenhub : canal carpien",
+   "url": "https://www.kenhub.com/en/library/anatomy/carpal-tunnel"
+  },
+  "kenhub-iliotibial": {
+   "titre": "Kenhub : tractus ilio-tibial",
+   "url": "https://www.kenhub.com/en/library/anatomy/iliotibial-band"
+  },
+  "kenhub-hip-thigh-fasciae": {
+   "titre": "Kenhub : fascias de la hanche et de la cuisse",
+   "url": "https://www.kenhub.com/en/library/anatomy/fasciae-of-the-hip-and-thigh"
+  },
+  "kenhub-leg-foot-fascias": {
+   "titre": "Kenhub : fascias de la jambe et du pied",
+   "url": "https://www.kenhub.com/en/library/anatomy/fascias-of-the-leg-and-foot"
+  },
+  "kenhub-patellar-tendon": {
+   "titre": "Kenhub : tendon (ligament) patellaire",
+   "url": "https://www.kenhub.com/en/library/anatomy/patellar-tendon"
+  },
+  "kenhub-orbit-muscles": {
+   "titre": "Kenhub : muscles extrinsèques de l'œil",
+   "url": "https://www.kenhub.com/en/library/anatomy/muscles-of-the-orbit"
+  },
+  "kenhub-eyelid": {
+   "titre": "Kenhub : paupière",
+   "url": "https://www.kenhub.com/en/library/anatomy/eyelid"
+  },
+  "kenhub-digastric": {
+   "titre": "Kenhub : muscle digastrique",
+   "url": "https://www.kenhub.com/en/library/anatomy/digastric-muscle"
+  },
+  "kenhub-diaphragm": {
+   "titre": "Kenhub : diaphragme",
+   "url": "https://www.kenhub.com/en/library/anatomy/diaphragm"
+  },
+  "kenhub-cervical-fascias": {
+   "titre": "Kenhub : fascias cervicaux",
+   "url": "https://www.kenhub.com/en/library/anatomy/cervical-fascias"
+  },
+  "kenhub-pelvic-floor": {
+   "titre": "Kenhub : muscles du plancher pelvien",
+   "url": "https://www.kenhub.com/en/library/anatomy/muscles-of-the-pelvic-floor"
+  },
+  "kenhub-inguinal-ligament": {
+   "titre": "Kenhub : ligament inguinal",
+   "url": "https://www.kenhub.com/en/library/anatomy/inguinal-ligament"
+  },
+  "kenhub-clavipectoral": {
+   "titre": "Kenhub : fascia clavi-pectoral",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-clavipectoral-fascia"
+  },
+  "kenhub-shoulder-fascias": {
+   "titre": "Kenhub : fascias de la ceinture scapulaire",
+   "url": "https://www.kenhub.com/en/library/anatomy/fascias-and-spaces-of-the-shoulder-girdle-region"
+  },
+  "kenhub-popliteal-fossa": {
+   "titre": "Kenhub : fosse poplitée",
+   "url": "https://www.kenhub.com/en/library/anatomy/popliteal-fossa"
+  },
+  "kenhub-biceps": {
+   "titre": "Kenhub : biceps brachial",
+   "url": "https://www.kenhub.com/en/library/anatomy/biceps-brachii-muscle"
+  },
+  "kenhub-parotid": {
+   "titre": "Kenhub : glande parotide",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-parotid-gland"
+  },
+  "kenhub-temporalis": {
+   "titre": "Kenhub : muscle temporal",
+   "url": "https://www.kenhub.com/en/library/anatomy/temporalis-muscle"
+  },
+  "tma-hand-fascia": {
+   "titre": "TeachMeAnatomy : fascia et ligaments de la main",
+   "url": "https://teachmeanatomy.info/upper-limb/misc/fascia-and-ligaments-of-the-hand/"
+  },
+  "tma-fascia-lata": {
+   "titre": "TeachMeAnatomy : fascia lata",
+   "url": "https://teachmeanatomy.info/lower-limb/muscles/fascia-lata/"
+  },
+  "tma-tarsal-tunnel": {
+   "titre": "TeachMeAnatomy : tunnel tarsien",
+   "url": "https://teachmeanatomy.info/lower-limb/areas/tarsal-tunnel/"
+  },
+  "tma-scalp": {
+   "titre": "TeachMeAnatomy : scalp",
+   "url": "https://teachmeanatomy.info/head/areas/scalp/"
+  },
+  "tma-forearm-post": {
+   "titre": "TeachMeAnatomy : muscles postérieurs de l'avant-bras",
+   "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/"
+  },
+  "tma-biceps": {
+   "titre": "TeachMeAnatomy : biceps brachial",
+   "url": "https://teachmeanatomy.info/encyclopaedia/b/biceps-brachii/"
+  },
+  "tma-triceps": {
+   "titre": "TeachMeAnatomy : triceps brachial",
+   "url": "https://teachmeanatomy.info/encyclopaedia/t/triceps-brachii/"
+  },
+  "tma-long-palmaire": {
+   "titre": "TeachMeAnatomy : long palmaire",
+   "url": "https://teachmeanatomy.info/encyclopaedia/p/palmaris-longus/"
+  },
+  "tma-tibial-anterieur": {
+   "titre": "TeachMeAnatomy : tibial antérieur",
+   "url": "https://teachmeanatomy.info/encyclopaedia/t/tibialis-anterior/"
+  },
+  "tma-ecu": {
+   "titre": "TeachMeAnatomy : extenseur ulnaire du carpe",
+   "url": "https://teachmeanatomy.info/encyclopaedia/e/extensor-carpi-ulnaris/"
+  },
+  "tma-fcr": {
+   "titre": "TeachMeAnatomy : fléchisseur radial du carpe",
+   "url": "https://teachmeanatomy.info/encyclopaedia/f/flexor-carpi-radialis/"
+  },
+  "tma-fcu": {
+   "titre": "TeachMeAnatomy : fléchisseur ulnaire du carpe",
+   "url": "https://teachmeanatomy.info/encyclopaedia/f/flexor-carpi-ulnaris/"
+  },
+  "tma-brachio-radial": {
+   "titre": "TeachMeAnatomy : brachio-radial",
+   "url": "https://teachmeanatomy.info/encyclopaedia/b/brachioradialis/"
+  },
+  "tma-ecrl": {
+   "titre": "TeachMeAnatomy : long extenseur radial du carpe",
+   "url": "https://teachmeanatomy.info/encyclopaedia/e/extensor-carpi-radialis-longus/"
+  },
+  "tma-ecrb": {
+   "titre": "TeachMeAnatomy : court extenseur radial du carpe",
+   "url": "https://teachmeanatomy.info/encyclopaedia/e/extensor-carpi-radialis-brevis/"
+  },
+  "tma-edc": {
+   "titre": "TeachMeAnatomy : extenseur des doigts",
+   "url": "https://teachmeanatomy.info/encyclopaedia/e/extensor-digitorum/"
+  },
+  "tma-epl": {
+   "titre": "TeachMeAnatomy : long extenseur du pouce",
+   "url": "https://teachmeanatomy.info/encyclopaedia/e/extensor-pollicis-longus/"
+  },
+  "tma-epb": {
+   "titre": "TeachMeAnatomy : court extenseur du pouce",
+   "url": "https://teachmeanatomy.info/encyclopaedia/e/extensor-pollicis-brevis/"
+  },
+  "tma-fdp": {
+   "titre": "TeachMeAnatomy : fléchisseur profond des doigts",
+   "url": "https://teachmeanatomy.info/encyclopaedia/f/flexor-digitorum-profundus/"
+  },
+  "tma-fds": {
+   "titre": "TeachMeAnatomy : fléchisseur superficiel des doigts",
+   "url": "https://teachmeanatomy.info/encyclopaedia/f/flexor-digitorum-superficialis/"
+  },
+  "tma-edl": {
+   "titre": "TeachMeAnatomy : long extenseur des orteils",
+   "url": "https://teachmeanatomy.info/encyclopaedia/e/extensor-digitorum-longus/"
+  },
+  "tma-ehl": {
+   "titre": "TeachMeAnatomy : long extenseur de l'hallux",
+   "url": "https://teachmeanatomy.info/encyclopaedia/e/extensor-hallucis-longus/"
+  },
+  "tma-tp": {
+   "titre": "TeachMeAnatomy : tibial postérieur",
+   "url": "https://teachmeanatomy.info/encyclopaedia/t/tibialis-posterior/"
+  },
+  "tma-fdl": {
+   "titre": "TeachMeAnatomy : long fléchisseur des orteils",
+   "url": "https://teachmeanatomy.info/encyclopaedia/f/flexor-digitorum-longus/"
+  },
+  "tma-fhl": {
+   "titre": "TeachMeAnatomy : long fléchisseur de l'hallux",
+   "url": "https://teachmeanatomy.info/encyclopaedia/f/flexor-hallucis-longus/"
+  },
+  "tma-semi-tendineux": {
+   "titre": "TeachMeAnatomy : semi-tendineux",
+   "url": "https://teachmeanatomy.info/encyclopaedia/s/semitendinosus/"
+  },
+  "sp-flexor-retinaculum": {
+   "titre": "StatPearls : rétinaculum des fléchisseurs du poignet",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK545198/"
+  },
+  "sp-itb": {
+   "titre": "StatPearls : tractus ilio-tibial",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK537097/"
+  },
+  "sp-foot-fascia": {
+   "titre": "StatPearls : fascia du pied",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK526043/"
+  },
+  "sp-patellar-rupture": {
+   "titre": "StatPearls : rupture du tendon patellaire",
+   "url": "https://www.statpearls.com/point-of-care/26730"
+  },
+  "sp-superior-oblique": {
+   "titre": "StatPearls : muscle oblique supérieur de l'œil",
+   "url": "https://www.statpearls.com/point-of-care/29709"
+  },
+  "sp-eyelid": {
+   "titre": "StatPearls : paupière",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK482304/"
+  },
+  "sp-peroneal": {
+   "titre": "StatPearls : syndromes des tendons fibulaires",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK544354/"
+  },
+  "sp-achilles-rupture": {
+   "titre": "StatPearls : rupture du tendon calcanéen",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK430844/"
+  },
+  "sp-achilles-reflex": {
+   "titre": "StatPearls : réflexe achilléen",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK459229/"
+  },
+  "sp-biceps-rupture": {
+   "titre": "StatPearls : rupture du tendon du biceps",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK513235/"
+  },
+  "sp-dequervain": {
+   "titre": "StatPearls : ténosynovite de De Quervain",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK442005/"
+  },
+  "sp-dupuytren": {
+   "titre": "StatPearls : maladie de Dupuytren",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK526074/"
+  },
+  "sp-loge-anterieure": {
+   "titre": "StatPearls : syndrome de loge antérieure de jambe",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK518970/"
+  },
+  "sp-loge-posterieure": {
+   "titre": "StatPearls : loge postérieure de jambe",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK537340/"
+  },
+  "sp-fascia-lata": {
+   "titre": "StatPearls : fascia lata",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK557497/"
+  },
+  "sp-loges-avant-bras": {
+   "titre": "StatPearls : loges de l'avant-bras",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK539784/"
+  },
+  "sp-reflexes": {
+   "titre": "StatPearls : réflexes ostéo-tendineux",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK562238/"
+  },
+  "sp-brachioradial-reflex": {
+   "titre": "StatPearls : réflexe brachio-radial",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK554537/"
+  },
+  "rad-quadriceps": {
+   "titre": "Radiopaedia : tendon quadricipital",
+   "url": "https://radiopaedia.org/articles/quadriceps-tendon"
+  },
+  "rad-anneau": {
+   "titre": "Radiopaedia : anneau tendineux commun",
+   "url": "https://radiopaedia.org/articles/tendinous-ring?lang=us"
+  },
+  "rad-centre": {
+   "titre": "Radiopaedia : centre tendineux du diaphragme",
+   "url": "https://radiopaedia.org/articles/central-tendon-of-diaphragm?lang=us"
+  },
+  "rad-plantar": {
+   "titre": "Radiopaedia : fascia plantaire",
+   "url": "https://radiopaedia.org/articles/plantar-fascia?lang=us"
+  },
+  "rad-trigger": {
+   "titre": "Radiopaedia : doigt à ressaut",
+   "url": "https://radiopaedia.org/articles/trigger-finger"
+  },
+  "rad-bras-loge": {
+   "titre": "Radiopaedia : loge antérieure du bras",
+   "url": "https://radiopaedia.org/articles/anterior-compartment-of-the-arm?lang=us"
+  },
+  "pmc-reflexes": {
+   "titre": "PMC : réflexes ostéo-tendineux et rachis lombaire",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10999014/"
+  },
+  "pmc-quadriceps": {
+   "titre": "PMC : anatomie clinique du quadriceps et de l'appareil extenseur",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2772911/"
+  },
+  "pmc-pelvic-fasciae": {
+   "titre": "PMC : fascias pelviens en urologie",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2727803/"
+  },
+  "pmc-triceps": {
+   "titre": "PMC : rupture du tendon distal du triceps",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11727740/"
+  },
+  "pmc-ankle-us": {
+   "titre": "PMC : échographie des rétinaculums de la cheville",
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11359401/"
+  }
+ },
+ "fiches": [
+  {
+   "id": "tendon-calcaneen",
+   "resume": "Le tendon d'Achille : le plus épais et le plus solide du corps, commun au triceps sural, à l'arrière de la cheville.",
+   "muscles": [
+    "gastrocnemien",
+    "soleaire"
+   ],
+   "attache": "Partie moyenne de la face postérieure du calcanéus, une bourse le séparant de la partie haute de cette face",
+   "role": "Transmet au talon la force du triceps sural : marcher, courir, sauter, se dresser sur la pointe des pieds",
+   "rapports": "Long d'environ 15 cm, il se rétrécit à 4 cm de son insertion et ses fibres se vrillent ; le tendon du plantaire le longe en dedans, le nerf sural croise son bord latéral",
+   "reflexe": {
+    "nom": "Réflexe achilléen",
+    "racines": [
+     "S1",
+     "S2"
+    ]
+   },
+   "palpation": "Corde épaisse derrière la cheville, bien visible quand on se dresse sur la pointe des pieds",
+   "clinique": "Rupture 2 à 6 cm au-dessus de l'insertion, zone la moins vascularisée : claquement, sensation de coup dans le mollet, pointe du pied impossible ; signe de Thompson (la compression du mollet ne fait plus bouger le pied)",
+   "memo": "Achille, tenu par le talon quand on le plongea dans le Styx : son seul point faible",
+   "variantes": "Le tendon du plantaire s'y fond parfois, ou se termine à part ; ce petit muscle manque chez certaines personnes",
+   "sources": [
+    "gray1918",
+    "kenhub-achille",
+    "sp-achilles-rupture",
+    "sp-achilles-reflex"
+   ],
+   "divergences": "Gray précise la partie moyenne de la face postérieure du calcanéus ; Kenhub dit seulement face postérieure"
+  },
+  {
+   "id": "ligne-blanche",
+   "resume": "La couture fibreuse médiane de l'abdomen, du processus xiphoïde à la symphyse pubienne, où s'unissent les aponévroses des muscles larges.",
+   "muscles": [
+    "oblique-externe",
+    "oblique-interne",
+    "transverse-abdomen",
+    "droit-abdomen"
+   ],
+   "attache": "Processus xiphoïde en haut, symphyse pubienne en bas ; l'ombilic s'y situe",
+   "role": "Réunit les aponévroses des trois muscles larges de chaque côté et sépare les deux muscles droits : elle ancre la paroi sur la ligne médiane",
+   "rapports": "Étroite sous l'ombilic, où les droits se touchent, large au-dessus, où ils s'écartent ; de petits orifices laissent passer vaisseaux et nerfs",
+   "reflexe": null,
+   "palpation": "Sillon médian entre les deux droits, net quand l'abdomen est contracté",
+   "clinique": "Point faible de la paroi : hernie épigastrique au-dessus de l'ombilic, hernie ombilicale ; elle sert aussi de voie d'abord chirurgicale médiane",
+   "memo": "Blanche parce que fibreuse : un trait nacré, sans fibres musculaires, entre les deux droits",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-rectus-sheath",
+    "kenhub-rectus-abdominis"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendon-quadricipital",
+   "resume": "Le tendon commun des quatre chefs du quadriceps : il s'attache à la base de la patella et se prolonge par le ligament patellaire.",
+   "muscles": [
+    "droit-femoral",
+    "vaste-lateral",
+    "vaste-medial",
+    "vaste-intermediaire"
+   ],
+   "attache": "Base de la patella (bord supérieur), des fibres superficielles passant devant elle",
+   "role": "Transmet la force du quadriceps à la patella puis au tibia pour étendre le genou : se lever, monter, sauter",
+   "rapports": "Trois couches : droit fémoral en surface, vastes médial et latéral au milieu, vaste intermédiaire en profondeur ; une bourse sous lui communique souvent avec l'articulation",
+   "reflexe": null,
+   "palpation": "Au-dessus de la patella, quadriceps contracté, une bande épaisse se sent",
+   "clinique": "Rupture lors d'une réception de saut ou d'un faux pas : creux au-dessus de la patella, extension active du genou très affaiblie ou impossible ; le réflexe rotulien se frappe plus bas, sur le ligament patellaire",
+   "memo": "Quatre vastes en un câble : quatre chefs, un tendon, une patella",
+   "variantes": "Les couches fusionnent souvent à 2 cm de la patella ; la disposition classique en trois couches n'apparaît que dans une minorité de dissections",
+   "sources": [
+    "gray1918",
+    "rad-quadriceps",
+    "pmc-quadriceps",
+    "sp-patellar-rupture"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-patellaire",
+   "resume": "Le prolongement du tendon du quadriceps sous la patella, de son apex à la tubérosité tibiale ; c'est lui que le marteau frappe.",
+   "muscles": [
+    "droit-femoral",
+    "vaste-lateral",
+    "vaste-medial",
+    "vaste-intermediaire"
+   ],
+   "attache": "De l'apex de la patella à la tubérosité du tibia",
+   "role": "Relaie la patella, os sésamoïde, jusqu'au tibia : il transmet la poussée du quadriceps pour étendre le genou",
+   "rapports": "Ses fibres superficielles se continuent avec celles du tendon quadricipital devant la patella ; les rétinaculums patellaires le bordent et gardent une extension partielle s'il est rompu",
+   "reflexe": {
+    "nom": "Réflexe rotulien (patellaire)",
+    "racines": [
+     "L3",
+     "L4"
+    ]
+   },
+   "palpation": "Cordon épais sous la patella, genou fléchi, entre l'apex de la patella et la tubérosité tibiale",
+   "clinique": "Tendinopathie du sauteur (douleur à l'apex) ; rupture : patella haute, extension impossible ; apophysite de la tubérosité tibiale (Osgood-Schlatter) chez l'adolescent sportif ; source de greffon pour le ligament croisé antérieur",
+   "memo": "Un ligament qui porte le nom d'un tendon : il relie deux os mais prolonge un muscle",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-patellar-tendon",
+    "sp-patellar-rupture",
+    "pmc-reflexes",
+    "sp-reflexes"
+   ],
+   "divergences": "Longueur : 6 à 8 cm pour Kenhub, 39 mm en moyenne pour StatPearls. Racines du réflexe : L3-L4 (PMC), L2-L4 (StatPearls) ; L3-L4 retenu"
+  },
+  {
+   "id": "gaine-du-droit",
+   "resume": "L'étui fibreux du muscle droit de l'abdomen, formé par les aponévroses des muscles larges ; il se ferme en arrière au-dessus de la ligne arquée seulement.",
+   "muscles": [
+    "droit-abdomen",
+    "pyramidal-de-l-abdomen",
+    "oblique-externe",
+    "oblique-interne",
+    "transverse-abdomen"
+   ],
+   "attache": "En dedans, ligne blanche ; en dehors, bord latéral du droit, où l'aponévrose de l'oblique interne se dédouble",
+   "role": "Contient le droit et le pyramidal, les plaque contre la paroi et transmet à la ligne blanche la traction des muscles larges",
+   "rapports": "Au-dessus de la ligne arquée : feuillet antérieur (oblique externe et interne), postérieur (oblique interne et transverse). Au-dessous : trois aponévroses en avant, le droit repose sur le fascia transversalis. Vaisseaux épigastriques et nerfs T7-T12 à l'intérieur",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Hématome de la gaine : saignement des vaisseaux épigastriques, surtout sous la ligne arquée où seul le fascia transversalis retient le sang ; il guérit souvent seul",
+   "memo": "Au-dessus de la ligne arquée la gaine est complète ; au-dessous, tout passe devant le droit",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-rectus-sheath",
+    "kenhub-abdominal-wall"
+   ],
+   "divergences": "Gray écrit « linea semicircularis » là où les manuels actuels disent ligne arquée"
+  },
+  {
+   "id": "intersections-tendineuses",
+   "resume": "Les barres fibreuses qui coupent le droit de l'abdomen en segments : elles dessinent les « tablettes de chocolat ».",
+   "muscles": [
+    "droit-abdomen"
+   ],
+   "attache": "Incluses dans le droit de l'abdomen, soudées à la face antérieure de sa gaine",
+   "role": "Segmentent le muscle, vestiges de sa segmentation embryonnaire, et lui donnent son relief en tablettes",
+   "rapports": "Une à l'ombilic, une à la pointe du xiphoïde, une entre les deux ; une ou deux autres, incomplètes, parfois sous l'ombilic. Elles ne traversent pas toujours toute l'épaisseur du muscle",
+   "reflexe": null,
+   "palpation": "Sillons transversaux visibles chez les sujets minces et musclés",
+   "clinique": "Chez les sujets à faible masse grasse, elles forment le « six-pack » ; leur adhérence à la gaine antérieure compte quand on ouvre la gaine du droit",
+   "memo": "Une au xiphoïde, une à l'ombilic, une entre les deux : le trio qui découpe les tablettes",
+   "variantes": "Trois par muscle d'ordinaire, parfois une ou deux de plus sous l'ombilic",
+   "sources": [
+    "gray1918",
+    "kenhub-rectus-abdominis"
+   ],
+   "divergences": "L'atlas en compte 6 (deux côtés) ; Gray et Kenhub décrivent trois par muscle"
+  },
+  {
+   "id": "tendon-biceps",
+   "resume": "Le tendon distal du biceps : la corde du pli du coude, qui s'accroche à la tubérosité du radius.",
+   "muscles": [
+    "biceps-brachial"
+   ],
+   "attache": "Tubérosité du radius, une bourse devant elle ; l'aponévrose bicipitale se détache de son bord médial",
+   "role": "Transmet au radius la force du biceps : plier le coude et surtout visser l'avant-bras en supination",
+   "rapports": "L'aponévrose bicipitale (lacertus fibrosus) part de lui et se perd dans le fascia de l'avant-bras",
+   "reflexe": {
+    "nom": "Réflexe bicipital",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "palpation": "Au pli du coude, tendu quand on plie le coude contre résistance, avant-bras en supination ; le doigt s'y « accroche » (test du crochet)",
+   "clinique": "Rupture distale : douleur brusque en soulevant une charge, forte perte de force de supination et moindre de flexion ; le test du crochet échoue ; l'aponévrose bicipitale intacte peut masquer la rupture",
+   "memo": "Le tendon du tire-bouchon : il s'ancre au radius pour visser puis tirer",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-biceps",
+    "sp-biceps-rupture",
+    "tma-biceps",
+    "sp-reflexes"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendon-long-palmaire",
+   "resume": "Le fin tendon central du poignet : il file vers la paume et s'étale dans l'aponévrose palmaire.",
+   "muscles": [
+    "long-palmaire"
+   ],
+   "attache": "Face antérieure du rétinaculum des fléchisseurs et aponévrose palmaire",
+   "role": "Tend l'aponévrose palmaire et fléchit faiblement le poignet",
+   "rapports": "Passe devant le rétinaculum des fléchisseurs, donc en dehors du canal carpien",
+   "reflexe": null,
+   "palpation": "Corde centrale du poignet, saillante quand on pince pouce et petit doigt en fléchissant un peu le poignet",
+   "clinique": "Repère au poignet : il marque la ligne médiane au-dessus du canal carpien ; son absence, fréquente, est sans conséquence fonctionnelle",
+   "memo": "La corde du milieu qu'on voit en serrant le petit doigt contre le pouce",
+   "variantes": "Absent chez environ 14 à 15 % des personnes",
+   "sources": [
+    "gray1918",
+    "tma-long-palmaire",
+    "sp-flexor-retinaculum",
+    "kenhub-carpal-tunnel"
+   ],
+   "divergences": "Absence : 15 % (TeachMeAnatomy), 14 % (StatPearls)"
+  },
+  {
+   "id": "ligament-inguinal",
+   "resume": "Le bord inférieur épaissi de l'aponévrose de l'oblique externe, tendu de l'épine iliaque antéro-supérieure au tubercule pubien.",
+   "muscles": [
+    "oblique-externe"
+   ],
+   "attache": "Épine iliaque antéro-supérieure en dehors, tubercule pubien en dedans",
+   "role": "Ancre l'aponévrose de l'oblique externe au bassin ; plancher du canal inguinal et limite entre abdomen et cuisse",
+   "rapports": "Dessous : iliopsoas, nerf fémoral puis vaisseaux fémoraux (l'iliaque externe devient fémorale à son niveau). En dedans, il se réfléchit en ligament lacunaire",
+   "reflexe": null,
+   "palpation": "Corde tendue dans le pli de l'aine, entre l'épine iliaque et le pubis",
+   "clinique": "Repère des hernies : l'inguinale apparaît au-dessus du ligament, la fémorale en dessous, près du tubercule pubien ; l'anneau inguinal profond est à mi-longueur, au-dessus de lui",
+   "memo": "Arcade crurale : sous elle commence la cuisse, au-dessus s'arrête l'abdomen",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-inguinal-ligament",
+    "kenhub-hip-thigh-fasciae"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendon-triceps",
+   "resume": "Le tendon commun des trois chefs du triceps brachial, ancré sur l'olécrane.",
+   "muscles": [
+    "triceps-brachial"
+   ],
+   "attache": "Olécrane de l'ulna, sur sa face postérieure",
+   "role": "Transmet la force du triceps pour étendre le coude : pousser, lancer, se redresser sur les bras",
+   "rapports": null,
+   "reflexe": {
+    "nom": "Réflexe tricipital",
+    "racines": [
+     "C7",
+     "C8"
+    ]
+   },
+   "palpation": "Plat et large au-dessus de l'olécrane, net coude tendu contre résistance",
+   "clinique": "Rupture rare, à l'insertion sur l'olécrane, après une chute sur la main ou une contraction brutale : creux palpable, extension du coude contre pesanteur impossible ; un petit éclat osseux peut se voir à la radio",
+   "memo": "Trois chefs, un seul câble, accroché au bout du coude",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-triceps",
+    "pmc-triceps",
+    "sp-reflexes"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "retinaculum-patellaire-lateral",
+   "resume": "L'expansion fibreuse du côté latéral de la patella : elle prolonge le vaste latéral et le tractus ilio-tibial vers le tibia et la capsule du genou.",
+   "muscles": [
+    "vaste-lateral",
+    "tenseur-fascia-lata"
+   ],
+   "attache": "Bords latéraux de la patella et du tendon quadricipital, vers le condyle latéral du tibia et la capsule du genou",
+   "role": "Retient la patella vers le dehors et garde une extension partielle du genou si le ligament patellaire est rompu",
+   "rapports": "Sa couche superficielle est un renfort épais du tractus ilio-tibial ; sa profonde se fond avec la capsule et les fibres du vaste latéral",
+   "reflexe": null,
+   "palpation": "Face latérale de la patella, palpable en la déplaçant vers le dehors, genou fléchi",
+   "clinique": "Un rétinaculum latéral trop tendu tire la patella en dehors (douleur fémoro-patellaire) ; sa section (libération latérale) corrige cette bascule",
+   "memo": "La sangle latérale de la patella, renforcée par la bandelette de Maissiat",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "pmc-quadriceps",
+    "sp-patellar-rupture",
+    "kenhub-iliotibial"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "retinaculum-patellaire-medial",
+   "resume": "L'expansion fibreuse du côté médial de la patella, tendue du vaste médial vers le tibia, qui s'oppose au déplacement de la patella en dehors.",
+   "muscles": [
+    "vaste-medial",
+    "sartorius"
+   ],
+   "attache": "Bords médiaux de la patella et du tendon quadricipital, vers le condyle médial du tibia et la capsule",
+   "role": "Retient la patella vers le dedans et garde une extension partielle du genou après rupture du ligament patellaire",
+   "rapports": "Reçoit les fibres du vaste médial ; une expansion fine du sartorius forme sa couche superficielle. Le ligament fémoro-patellaire médial en renforce la profondeur",
+   "reflexe": null,
+   "palpation": "Bord médial de la patella, sous la peau",
+   "clinique": "Rupture lors d'une luxation latérale de la patella ; sa reconstruction (ligament fémoro-patellaire médial) prévient les récidives",
+   "memo": "La sangle médiale : elle empêche la patella de fuir vers le dehors",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "pmc-quadriceps",
+    "sp-patellar-rupture"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tractus-ilio-tibial",
+   "resume": "La bandelette fibreuse du côté latéral de la cuisse, épaississement du fascia lata, de la crête iliaque au tibia.",
+   "muscles": [
+    "tenseur-fascia-lata",
+    "grand-fessier"
+   ],
+   "attache": "Crête iliaque et capsule latérale de la hanche en haut ; tubercule de Gerdy sur le condyle latéral du tibia en bas",
+   "role": "Prolonge le tenseur du fascia lata et une partie du grand fessier ; stabilise latéralement la hanche et le genou étendu",
+   "rapports": "Le tenseur du fascia lata s'y insère au tiers supérieur ; la cloison intermusculaire latérale et le rétinaculum patellaire latéral s'y rattachent",
+   "reflexe": null,
+   "palpation": "Bande tendue sur la face latérale de la cuisse, nette en appui sur une jambe",
+   "clinique": "Syndrome de la bandelette (coureurs, cyclistes) : douleur latérale du genou à 30-40° de flexion ; hanche à ressaut externe ; test d'Ober pour sa rétraction",
+   "memo": "La corde latérale du coureur : de la hanche au tubercule de Gerdy",
+   "variantes": "Appelée bandelette de Maissiat",
+   "sources": [
+    "gray1918",
+    "kenhub-iliotibial",
+    "sp-itb",
+    "tma-fascia-lata"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-thoraco-lombaire",
+   "resume": "La grande lame fibreuse en losange du bas du dos : elle enveloppe les muscles du rachis et sert d'attache à de nombreux muscles.",
+   "muscles": [
+    "iliocostal-des-lombes",
+    "longissimus-du-thorax",
+    "epineux-du-thorax",
+    "multifides-lombaire",
+    "carre-lombes",
+    "grand-dorsal",
+    "transverse-abdomen",
+    "dentele-postero-inferieur"
+   ],
+   "attache": "Processus épineux thoraciques bas, lombaires et sacrés, crête iliaque, douzième côte et processus transverses lombaires",
+   "role": "Contient les extenseurs du rachis, transmet les tractions du grand dorsal, du transverse et du grand fessier, et répartit les charges entre tronc et membres",
+   "rapports": "Trois lames : postérieure (derrière les érecteurs), moyenne (entre érecteurs et carré des lombes), antérieure (devant le carré des lombes)",
+   "reflexe": null,
+   "palpation": "Le losange du bas du dos, palpable de part et d'autre des épineuses",
+   "clinique": "Impliqué dans les lombalgies ; les muscles qu'il enferme peuvent se contracturer et devenir douloureux",
+   "memo": "Le losange nacré du dos : trois lames, deux loges musculaires",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-thoracolumbar",
+    "kenhub-abdominal-wall"
+   ],
+   "divergences": "Gray décrit deux feuillets (antérieur et postérieur) ; les manuels actuels en décrivent trois"
+  },
+  {
+   "id": "retinaculum-superieur-des-extenseurs",
+   "resume": "La bande fibreuse transversale du bas de la jambe qui maintient plaqués contre la cheville les tendons des extenseurs.",
+   "muscles": [
+    "tibial-anterieur",
+    "long-extenseur-hallux",
+    "long-extenseur-orteils",
+    "troisieme-fibulaire"
+   ],
+   "attache": "Bord antérieur du tibia en dedans, fibula en dehors, juste au-dessus des malléoles",
+   "role": "Empêche les tendons de la loge antérieure de se tendre en corde devant la cheville quand on relève le pied",
+   "rapports": "Se continue avec le fascia crural ; en profondeur passent les vaisseaux tibiaux antérieurs et le nerf fibulaire profond",
+   "reflexe": null,
+   "palpation": "Bande transversale au-dessus de la cheville, devant les tendons",
+   "clinique": "Une entorse répétée de cheville peut épaissir cette bande",
+   "memo": "Le bracelet du cou-de-pied : il tient les tendons contre l'os",
+   "variantes": "Appelée aussi ligament annulaire transverse du tarse",
+   "sources": [
+    "gray1918",
+    "kenhub-leg-foot-fascias",
+    "pmc-ankle-us"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "aponevrose-palmaire",
+   "resume": "La lame fibreuse triangulaire du milieu de la paume : elle fixe la peau et protège les tendons fléchisseurs.",
+   "muscles": [
+    "long-palmaire"
+   ],
+   "attache": "Sommet sur le rétinaculum des fléchisseurs et le tendon du long palmaire ; base divisée en quatre languettes vers les doigts",
+   "role": "Ancre la peau de la paume pour améliorer la prise et protège les tendons fléchisseurs, les vaisseaux et les nerfs",
+   "rapports": "Chaque languette envoie un faisceau superficiel vers la peau et un profond vers la gaine fibreuse et les ligaments métacarpiens transverses",
+   "reflexe": null,
+   "palpation": "Dans la paume, sous la peau épaisse, à l'alignement des doigts",
+   "clinique": "Maladie de Dupuytren : nodules puis cordes dans la paume, flexion fixe des doigts (annulaire et auriculaire surtout), signe de la table positif",
+   "memo": "Quand elle se rétracte, les doigts se ferment pour ne plus s'ouvrir",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-palmar-aponeurosis",
+    "tma-hand-fascia",
+    "sp-dupuytren"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-metacarpien-transverse-superficiel",
+   "resume": "La fine bande transversale qui croise la racine des quatre doigts, sous la peau de la paume.",
+   "muscles": [],
+   "attache": "Fibres transversales à la base des quatre derniers doigts, sur les têtes métacarpiennes",
+   "role": "Maintient ensemble les racines des doigts et protège les tendons et pédicules digitaux",
+   "rapports": "Superficiel par rapport aux tendons fléchisseurs et aux pédicules, il se relie aux languettes de l'aponévrose palmaire",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Épargné habituellement par la maladie de Dupuytren",
+   "memo": "Une sangle tendue à la racine des doigts, dans la paume",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-hand-fascia",
+    "sp-dupuytren"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "retinaculum-flechisseurs",
+   "resume": "La bande fibreuse qui ferme en avant le canal carpien : elle maintient les tendons fléchisseurs au poignet.",
+   "muscles": [
+    "flechisseur-superficiel-doigts",
+    "flechisseur-profond-doigts",
+    "long-flechisseur-pouce"
+   ],
+   "attache": "Tubercule du scaphoïde et crête du trapèze en dehors ; pisiforme et crochet de l'hamatum en dedans",
+   "role": "Toit du canal carpien : empêche les tendons fléchisseurs de se tendre en corde quand on plie le poignet",
+   "rapports": "Sous lui : 9 tendons (4 superficiels, 4 profonds, long fléchisseur du pouce) et le nerf médian. En avant : long palmaire, artère et nerf ulnaires (canal de Guyon). Le fléchisseur radial du carpe a sa propre loge",
+   "reflexe": null,
+   "palpation": "Au creux du poignet, entre l'éminence thénar et l'éminence hypothénar",
+   "clinique": "Syndrome du canal carpien : fourmillements nocturnes des trois premiers doigts, puis faiblesse du thénar ; on soulage par section du rétinaculum",
+   "memo": "Un pont fibreux sur le poignet : sous lui, neuf tendons et un nerf se serrent",
+   "variantes": "Appelé aussi ligament transverse du carpe",
+   "sources": [
+    "gray1918",
+    "kenhub-carpal-tunnel",
+    "sp-flexor-retinaculum",
+    "tma-hand-fascia"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendons-extenseurs-doigts",
+   "resume": "Les tendons du dos de la main qui redressent les doigts : quatre pour l'extenseur des doigts, avec ceux de l'index et du petit doigt.",
+   "muscles": [
+    "extenseur-doigts",
+    "extenseur-de-l-index",
+    "extenseur-du-petit-doigt"
+   ],
+   "attache": "Capuchon extenseur de chaque doigt : bandelette centrale sur la phalange moyenne, bandelettes latérales sur la phalange distale",
+   "role": "Étendent les articulations métacarpo-phalangiennes et interphalangiennes des doigts",
+   "rapports": "Passent sous le rétinaculum des extenseurs (4e compartiment, avec l'extenseur de l'index ; 5e pour l'extenseur du petit doigt) ; des bandes obliques relient les tendons du majeur, de l'annulaire et de l'auriculaire sur le dos de la main",
+   "reflexe": null,
+   "palpation": "Cordes visibles sur le dos de la main quand on redresse les doigts",
+   "clinique": "Rupture ou arrachement du capuchon : doigt en maillet (phalange distale) ou en boutonnière (phalange moyenne)",
+   "memo": "Quatre cordes sur le dos de la main, reliées entre elles par des bandes obliques",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-edc",
+    "kenhub-carpal-sheaths"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendons-flechisseurs-doigts",
+   "resume": "Les seize tendons des fléchisseurs des doigts : superficiels et profonds, ils traversent le canal carpien puis les gaines des doigts.",
+   "muscles": [
+    "flechisseur-superficiel-doigts",
+    "flechisseur-profond-doigts"
+   ],
+   "attache": "Superficiels : phalanges moyennes des doigts 2 à 5 ; profonds : phalanges distales des doigts 2 à 5",
+   "role": "Plient les doigts : le superficiel les articulations proximales, le profond jusqu'à l'articulation distale",
+   "rapports": "Le tendon superficiel se fend au niveau de la phalange proximale pour laisser passer le profond",
+   "reflexe": null,
+   "palpation": "Cordes sur la face palmaire du poignet et des doigts quand on serre le poing",
+   "clinique": "Doigt à ressaut quand le tendon accroche à la poulie A1 ; ténosynovite suppurée possible le long des gaines",
+   "memo": "Le profond passe au travers du superficiel, comme dans une boutonnière",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-carpal-sheaths",
+    "tma-fds",
+    "tma-fdp"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "aponevrose-plantaire",
+   "resume": "La lame fibreuse nacrée de la plante du pied : elle tend la voûte comme la corde d'un arc, du calcanéus aux orteils.",
+   "muscles": [
+    "court-flechisseur-orteils",
+    "abducteur-hallux",
+    "abducteur-petit-orteil"
+   ],
+   "attache": "Processus médial de la tubérosité du calcanéus en arrière ; cinq languettes vers les orteils, près des têtes métatarsiennes",
+   "role": "Soutient l'arche longitudinale médiale (mécanisme du treuil) et protège les muscles et pédicules de la plante",
+   "rapports": "Trois parties : centrale (la plus épaisse), latérale (vers la base du 5e métatarsien), médiale (mince). Des cloisons verticales séparent les loges médiale, centrale et latérale",
+   "reflexe": null,
+   "palpation": "Bande tendue sous la voûte quand on relève les orteils",
+   "clinique": "Fasciite plantaire : douleur vive du talon, pire au premier pas du matin ; fibromatose plantaire (maladie de Ledderhose) : nodule indolore de la plante",
+   "memo": "La corde de l'arc plantaire : plus elle tire, plus la voûte se creuse",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "sp-foot-fascia",
+    "rad-plantar",
+    "kenhub-leg-foot-fascias"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "ligament-metatarsien-superficiel-transverse",
+   "resume": "La fine bande transversale à la racine des orteils : elle relie les languettes de l'aponévrose plantaire.",
+   "muscles": [],
+   "attache": "Fibres transversales à la racine des orteils, sur les têtes métatarsiennes",
+   "role": "Maintient ensemble les languettes de l'aponévrose plantaire et soutient les tendons des orteils",
+   "rapports": "Il soutient en bas l'aponévrose plantaire ; superficiel par rapport aux pédicules digitaux",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Peu de pathologie propre ; il solidarise les languettes de l'aponévrose plantaire, que la fasciite plantaire peut toucher",
+   "memo": "La sangle des orteils : un petit lien transversal sous la peau de la plante",
+   "variantes": null,
+   "sources": [
+    "sp-foot-fascia",
+    "kenhub-leg-foot-fascias",
+    "gray1918"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "retinaculum-des-flechisseurs",
+   "resume": "La bande fibreuse du côté médial de la cheville : elle ferme le tunnel tarsien et retient les tendons fléchisseurs.",
+   "muscles": [
+    "tibial-posterieur",
+    "long-flechisseur-orteils",
+    "long-flechisseur-hallux"
+   ],
+   "attache": "Malléole médiale en haut, tubercule médial du calcanéus en bas",
+   "role": "Toit du tunnel tarsien : plaque contre l'os les tendons du tibial postérieur et des longs fléchisseurs, avec le pédicule tibial postérieur",
+   "rapports": "De devant en arrière : tibial postérieur, long fléchisseur des orteils, artère et veines tibiales postérieures, nerf tibial, long fléchisseur de l'hallux",
+   "reflexe": null,
+   "palpation": "Bande oblique derrière la malléole médiale, tendons sous la peau",
+   "clinique": "Syndrome du tunnel tarsien : compression du nerf tibial, picotements et douleur de la plante, faiblesse des muscles intrinsèques du pied dans les formes sévères",
+   "memo": "Derrière la malléole médiale : deux tendons, le pédicule et le nerf, puis le tendon de l'hallux",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-tarsal-tunnel",
+    "kenhub-leg-foot-fascias",
+    "sp-loge-posterieure"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "retinaculum-inferieur-des-extenseurs",
+   "resume": "La sangle en Y du cou-de-pied : elle retient les tendons extenseurs et se fixe sur le calcanéus.",
+   "muscles": [
+    "tibial-anterieur",
+    "long-extenseur-hallux",
+    "long-extenseur-orteils",
+    "troisieme-fibulaire"
+   ],
+   "attache": "Face antéro-supérieure du calcanéus (pied du Y) ; deux branches vers la malléole médiale et la face plantaire médiale",
+   "role": "Garde les tendons extenseurs contre le cou-de-pied pendant la dorsiflexion",
+   "rapports": "Forme une boucle serrée autour des tendons du long extenseur des orteils et du troisième fibulaire ; elle se continue avec le fascia dorsal du pied",
+   "reflexe": null,
+   "palpation": "Bande en Y sur le cou-de-pied, sous la peau, sous les tendons extenseurs",
+   "clinique": "Elle peut être lésée lors des entorses de cheville",
+   "memo": "Un Y couché sur le cou-de-pied, pied ancré au calcanéus",
+   "variantes": "Appelé aussi ligament annulaire croisé",
+   "sources": [
+    "gray1918",
+    "kenhub-leg-foot-fascias",
+    "pmc-ankle-us"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "retinaculum-inferieur-des-fibulaires",
+   "resume": "La bande fibreuse du côté latéral du talon : elle maintient les tendons fibulaires contre le calcanéus.",
+   "muscles": [
+    "long-fibulaire",
+    "court-fibulaire"
+   ],
+   "attache": "Face latérale du calcanéus, prolongeant en avant le rétinaculum inférieur des extenseurs",
+   "role": "Retient les tendons des fibulaires long et court ; une cloison sépare les deux tendons à la trochlée fibulaire",
+   "rapports": "Sous la malléole latérale ; les deux tendons y glissent dans une gaine synoviale commune",
+   "reflexe": null,
+   "palpation": "Sous et devant la malléole latérale, la bande se devine sur les tendons",
+   "clinique": "Sa rupture isolée peut laisser le tendon du long fibulaire se luxer vers le bas",
+   "memo": "Le second collier des fibulaires : il les retient sous la malléole",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "sp-peroneal",
+    "pmc-ankle-us"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "retinaculum-superieur-des-fibulaires",
+   "resume": "La bande fibreuse qui maintient les tendons fibulaires dans la gouttière derrière la malléole latérale.",
+   "muscles": [
+    "long-fibulaire",
+    "court-fibulaire"
+   ],
+   "attache": "De la malléole latérale à la face latérale du calcanéus",
+   "role": "Plaque les tendons des fibulaires contre la gouttière rétro-malléolaire pour les empêcher de se luxer en avant",
+   "rapports": "Forme avec la gouttière de la fibula et le ligament calcanéo-fibulaire le tunnel des tendons fibulaires, dans une gaine commune",
+   "reflexe": null,
+   "palpation": "Derrière la malléole latérale, tendons sous la peau en éversion contre résistance",
+   "clinique": "Entorse en inversion forcée : rupture de la bande, claquement ou ressaut des tendons à la malléole latérale, luxation des fibulaires",
+   "memo": "La porte de la gouttière : si elle cède, les tendons sautent devant la malléole",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "sp-peroneal",
+    "pmc-ankle-us"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendon-tibial-anterieur",
+   "resume": "Le tendon qui soulève le bord médial du pied : la corde la plus saillante du cou-de-pied.",
+   "muscles": [
+    "tibial-anterieur"
+   ],
+   "attache": "Face médiale et plantaire du cunéiforme médial et base du 1er métatarsien",
+   "role": "Relève le pied (dorsiflexion) et le tourne en inversion",
+   "rapports": "Passe dans les compartiments médiaux des rétinaculums des extenseurs, dans sa propre gaine synoviale",
+   "reflexe": null,
+   "palpation": "Corde saillante devant la cheville quand on relève le pied",
+   "clinique": "Rupture rare, avec chute du bord médial du pied ; foot drop par atteinte du nerf fibulaire commun ou du syndrome de loge antérieure",
+   "memo": "La corde qui relève la pointe : saillante avant que le pied ne tombe",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-tibial-anterieur",
+    "sp-loge-anterieure",
+    "kenhub-leg-foot-fascias"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendons-extenseurs-orteils",
+   "resume": "Les quatre tendons du long extenseur des orteils sur le dos du pied : ils redressent les quatre derniers orteils.",
+   "muscles": [
+    "long-extenseur-orteils",
+    "troisieme-fibulaire"
+   ],
+   "attache": "Phalanges moyennes et distales des orteils 2 à 5, par un capuchon extenseur",
+   "role": "Étendent les orteils 2 à 5 et relèvent le pied",
+   "rapports": "Passent sous les rétinaculums supérieur et inférieur des extenseurs, dans une gaine commune avec le troisième fibulaire",
+   "reflexe": null,
+   "palpation": "Cordes visibles sur le dos du pied quand on relève les orteils",
+   "clinique": "Orteils en griffe en cas de déséquilibre musculaire ; atteinte du nerf fibulaire profond : orteils difficiles à relever",
+   "memo": "Quatre cordes pour quatre orteils : le gros orteil a son propre tendon",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-edl",
+    "kenhub-leg-foot-fascias"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "anneau-tendineux-commun",
+   "resume": "L'anneau fibreux du fond de l'orbite, à cheval sur la fissure orbitaire supérieure, d'où naissent les quatre muscles droits.",
+   "muscles": [
+    "droit-superieur-de-l-oeil",
+    "droit-inferieur-de-l-oeil",
+    "droit-medial-de-l-oeil",
+    "droit-lateral-de-l-oeil"
+   ],
+   "attache": "Tubercule de la grande aile du sphénoïde, au bord de la fissure orbitaire supérieure, englobant le canal optique en dedans",
+   "role": "Origine commune des quatre muscles droits de l'œil",
+   "rapports": "Le traversent le nerf optique, les deux divisions de l'oculomoteur, le nerf nasociliaire et le nerf abducens",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Une lésion de l'apex orbitaire atteint ces nerfs ensemble : paralysies oculomotrices et baisse de la vue",
+   "memo": "L'anneau de Zinn : une seule bague, quatre muscles droits",
+   "variantes": "Appelé aussi anneau de Zinn",
+   "sources": [
+    "rad-anneau",
+    "kenhub-orbit-muscles",
+    "sp-superior-oblique"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "aponevrose-epicranienne",
+   "resume": "Le casque fibreux du crâne : elle relie les muscles frontal et occipital par-dessus la voûte.",
+   "muscles": [
+    "muscle-frontal",
+    "muscle-occipital",
+    "occipito-frontal"
+   ],
+   "attache": "En arrière, os occipital ; sur les côtés, elle se prolonge par le fascia temporal jusqu'à l'arcade zygomatique",
+   "role": "Transmet la traction des ventres frontal et occipital, mobilise le cuir chevelu",
+   "rapports": "Troisième couche du scalp, solidaire de la peau et de la couche dense : les trois se déplacent ensemble au-dessus d'un tissu lâche",
+   "reflexe": null,
+   "palpation": "Sous le cuir chevelu, il se devine en tirant les sourcils",
+   "clinique": "Une plaie profonde du scalp bâille et saigne beaucoup parce que le muscle tire sur la galéa ; le tissu lâche sous-jacent est une zone de diffusion des infections",
+   "memo": "Galea : le casque, en latin",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-scalp"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tarse-inferieur",
+   "resume": "La plaque fibreuse qui raidit la paupière inférieure ; elle porte les glandes tarsales.",
+   "muscles": [
+    "orbiculaire-oeil"
+   ],
+   "attache": "Fixée aux ligaments palpébraux médial et latéral, sur le périoste ; le fascia capsulo-palpébral s'insère sur son bord inférieur",
+   "role": "Donne sa forme et sa rigidité à la paupière inférieure et loge ses glandes de Meibomius (environ 20)",
+   "rapports": "Fait partie du feuillet postérieur de la paupière, avec la conjonctive ; plus étroite que le tarse supérieur (environ 4 mm au centre)",
+   "reflexe": null,
+   "palpation": "Sous le bord libre de la paupière, en la retournant",
+   "clinique": "Chalazion : une glande tarsale obstruée forme un nodule dur indolore ; l'orgelet est sa forme infectée",
+   "memo": "La petite plaque du bas : quatre millimètres, vingt glandes",
+   "variantes": null,
+   "sources": [
+    "sp-eyelid",
+    "kenhub-eyelid"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tarse-superieur",
+   "resume": "La plaque fibreuse qui raidit la paupière supérieure ; elle reçoit le tendon du releveur et porte les glandes tarsales.",
+   "muscles": [
+    "elevateur-de-la-paupiere-superieure",
+    "orbiculaire-oeil"
+   ],
+   "attache": "Ligaments palpébraux médial et latéral ; l'aponévrose du releveur s'insère sur sa face antérieure haute, le muscle tarsal supérieur sur son bord supérieur",
+   "role": "Donne sa forme à la paupière supérieure, transmet la traction du releveur et loge environ 30 glandes de Meibomius",
+   "rapports": "Large de 10 à 12 mm au centre et 29 mm de long ; le septum orbitaire rejoint l'aponévrose du releveur au-dessus de son bord supérieur",
+   "reflexe": null,
+   "palpation": "Sous la paupière retournée, plaque ferme au-dessus du bord libre",
+   "clinique": "Chalazion ; le muscle tarsal supérieur (sympathique) relève la paupière de 2 mm environ, sa paralysie donne un ptosis léger (syndrome de Claude Bernard-Horner)",
+   "memo": "La grande plaque du haut : dix à douze millimètres, trente glandes",
+   "variantes": null,
+   "sources": [
+    "sp-eyelid",
+    "kenhub-eyelid"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendon-intermediaire-du-muscle-digastrique",
+   "resume": "Le tendon qui relie les deux ventres du digastrique au-dessus de l'os hyoïde, retenu par une boucle fibreuse.",
+   "muscles": [
+    "digastrique"
+   ],
+   "attache": "Boucle fibreuse fixée sur le côté du corps de l'hyoïde et sa grande corne",
+   "role": "Permet au digastrique de changer de direction : il abaisse la mandibule, fixe l'hyoïde, ou l'élève, la mandibule fixée",
+   "rapports": "Poulie en U, épaississement du fascia cervical profond, tapissée parfois d'une gaine synoviale ; ventre postérieur : nerf facial ; ventre antérieur : nerf du mylo-hyoïdien (V3)",
+   "reflexe": null,
+   "palpation": "Sous l'angle de la mandibule, au-dessus de la corne de l'hyoïde, à peine perceptible",
+   "clinique": "Anomalies de la boucle ou du ventre : rares ; le ventre postérieur est un repère de chirurgie du cou (parotide, nerf facial)",
+   "memo": "Deux ventres et un tendon : une corde à poulie au-dessus de l'hyoïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-digastric"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "trochlee-du-muscle-oblique-superieur",
+   "resume": "La poulie fibro-cartilagineuse du coin supéro-médial de l'orbite, où le tendon de l'oblique supérieur se réfléchit.",
+   "muscles": [
+    "oblique-superieur-de-l-oeil"
+   ],
+   "attache": "Fovéa trochléaire de l'os frontal, en haut et en dedans de l'orbite",
+   "role": "Renvoie le tendon de l'oblique supérieur en arrière et en dehors vers l'œil : l'oblique abaisse alors l'œil en dehors et le tourne vers l'intérieur",
+   "rapports": "Le tendon passe dans la poulie et se coude d'environ 53° ; il se glisse ensuite sous le droit supérieur pour s'insérer sur la sclère postéro-latérale",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Syndrome de Brown : un tendon qui coulisse mal dans la poulie limite l'élévation de l'œil en adduction ; la paralysie du IV donne une diplopie verticale en descendant l'escalier",
+   "memo": "Le seul tendon de l'œil à passer par une poulie : il fait demi-tour",
+   "variantes": "Certains auteurs font naître l'oblique supérieur à l'anneau tendineux ; d'autres, au-dessus de lui",
+   "sources": [
+    "sp-superior-oblique",
+    "kenhub-orbit-muscles"
+   ],
+   "divergences": "Kenhub rattache l'origine de l'oblique supérieur à l'anneau de Zinn ; StatPearls la place au-dessus de lui, sur le périoste du sphénoïde"
+  },
+  {
+   "id": "centre-tendineux",
+   "resume": "La lame fibreuse en trèfle au sommet du diaphragme, sur laquelle repose le cœur.",
+   "muscles": [
+    "diaphragme"
+   ],
+   "attache": "Reçoit toutes les fibres charnues du diaphragme (sternales, costales, lombaires)",
+   "role": "Point fixe des fibres musculaires : leur contraction l'abaisse, agrandit le thorax et fait entrer l'air",
+   "rapports": "Trois folioles : droite (la plus grande), moyenne (vers le xiphoïde), gauche (la plus petite). Il est soudé au péricarde fibreux. Le foramen de la veine cave inférieure le traverse à T8",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Il évite à la veine cave inférieure d'être comprimée à son passage ; hernies diaphragmatiques congénitales ou traumatiques",
+   "memo": "Un trèfle : la feuille du milieu regarde le xiphoïde",
+   "variantes": "Appelé aussi centre phrénique",
+   "sources": [
+    "gray1918",
+    "rad-centre",
+    "kenhub-diaphragm"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-diaphragmique",
+   "resume": "La fine lame fibreuse qui tapisse les faces du diaphragme.",
+   "muscles": [
+    "diaphragme"
+   ],
+   "attache": "Recouvre les faces inférieure et supérieure du diaphragme ; se continue avec le fascia transversalis en bas",
+   "role": "Enveloppe du diaphragme, il le sépare des organes sous-jacents et prolonge les fascias de la paroi",
+   "rapports": "Se fond avec le fascia transversalis qui monte sous le diaphragme et se perd dans la graisse des reins",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Sans pathologie propre ; il participe aux hernies diaphragmatiques (hiatales ou traumatiques)",
+   "memo": "Le diaphragme porte son propre voile : le fascia diaphragmatique",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-diaphragm"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-engainant-de-l-abdomen",
+   "resume": "La mince couche fibreuse qui revêt les muscles larges de l'abdomen.",
+   "muscles": [
+    "oblique-externe",
+    "oblique-interne",
+    "transverse-abdomen"
+   ],
+   "attache": "Face superficielle de l'aponévrose de l'oblique externe et des muscles larges",
+   "role": "Enveloppe les muscles de la paroi ; il se confond avec leurs aponévroses",
+   "rapports": "Sous le fascia superficiel (Camper puis Scarpa) et au-dessus du fascia transversalis",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Une infection superficielle, comme la fasciite nécrosante, suit les plans fasciaux de la paroi",
+   "memo": "Le gant fin des muscles larges, sous le fascia de Scarpa",
+   "variantes": "Mal individualisé dans la plupart des descriptions classiques",
+   "sources": [
+    "gray1918",
+    "kenhub-abdominal-wall"
+   ],
+   "divergences": "Gray et Kenhub décrivent surtout le fascia superficiel et les aponévroses, pas un fascia engainant distinct"
+  },
+  {
+   "id": "fascia-transversalis",
+   "resume": "La membrane fibreuse sous le transverse de l'abdomen, qui sépare la paroi de la graisse extra-péritonéale.",
+   "muscles": [
+    "transverse-abdomen",
+    "droit-abdomen"
+   ],
+   "attache": "Crête iliaque, bord postérieur du ligament inguinal jusqu'aux vaisseaux fémoraux, pubis et ligne pectinée ; se continue avec le fascia iliaque et le fascia pelvien",
+   "role": "Tapisse la face profonde de la paroi abdominale ; sous la ligne arquée, seule couche entre le droit et le péritoine ; forme la paroi antérieure de la gaine fémorale",
+   "rapports": "Traversé par le cordon spermatique à l'anneau inguinal profond ; les vaisseaux épigastriques inférieurs le percent pour entrer dans la gaine du droit",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Sa faiblesse laisse passer les hernies inguinales ; l'hématome de la gaine du droit s'étend sous la ligne arquée",
+   "memo": "Le voile profond : il ne laisse passer que ce qui doit passer",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-abdominal-wall",
+    "kenhub-rectus-sheath"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-antebrachial",
+   "resume": "Le manchon fibreux de l'avant-bras : il enveloppe les muscles, forme les loges et s'épaissit aux rétinaculums du poignet.",
+   "muscles": [
+    "rond-pronateur",
+    "flechisseur-radial-carpe",
+    "long-palmaire",
+    "flechisseur-ulnaire-carpe",
+    "flechisseur-superficiel-doigts",
+    "brachio-radial",
+    "extenseur-doigts",
+    "extenseur-ulnaire-carpe"
+   ],
+   "attache": "Se continue avec le fascia brachial en haut ; épaissi en bandes aux faces palmaire et dorsale du poignet (rétinaculums)",
+   "role": "Contient les muscles de l'avant-bras et les groupe en loges : antérieure, postérieure, latérale (mobile wad)",
+   "rapports": "Reçoit l'aponévrose bicipitale ; envoie des cloisons entre les muscles ; l'aponévrose et la membrane interosseuse limitent les loges",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Syndrome de loge de l'avant-bras après fracture : douleur à l'extension passive des doigts, loge profonde antérieure la plus exposée ; on ouvre le fascia en urgence",
+   "memo": "L'étui de l'avant-bras : trois loges, une seule gaine",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "sp-loges-avant-bras",
+    "tma-hand-fascia"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendon-extenseur-ulnaire-carpe",
+   "resume": "Le tendon du bord ulnaire du poignet, dans la gouttière contre la styloïde de l'ulna, qui s'insère sur le 5e métacarpien.",
+   "muscles": [
+    "extenseur-ulnaire-carpe"
+   ],
+   "attache": "Tubercule de la base du 5e métacarpien",
+   "role": "Étend le poignet et l'incline du côté ulnaire",
+   "rapports": "Passe dans le 6e compartiment des extenseurs, gaine propre, contre la styloïde de l'ulna",
+   "reflexe": null,
+   "palpation": "Corde sur le bord interne du poignet, en dehors de la tête de l'ulna, quand on étend et incline le poignet vers l'ulna",
+   "clinique": "Ténosynovite : douleur du bord ulnaire du poignet à l'extension-inclinaison ; le tendon peut s'y luxer en supination",
+   "memo": "Le tendon de l'ulna : dans son sixième compartiment, tout au bout",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-ecu",
+    "kenhub-carpal-sheaths"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendon-brachio-radial",
+   "resume": "Le tendon du brachio-radial : une corde du bord latéral de l'avant-bras qui s'attache à la styloïde du radius.",
+   "muscles": [
+    "brachio-radial"
+   ],
+   "attache": "Base de la styloïde du radius",
+   "role": "Transmet au radius la force du brachio-radial pour fléchir le coude, surtout avant-bras en position moyenne",
+   "rapports": "Longe le bord latéral du radius ; l'artère radiale et le rameau superficiel du nerf radial passent sous le muscle",
+   "reflexe": {
+    "nom": "Réflexe brachio-radial (stylo-radial)",
+    "racines": [
+     "C5",
+     "C6"
+    ]
+   },
+   "palpation": "Bord latéral de l'avant-bras, corde tendue quand on fléchit le coude contre résistance",
+   "clinique": "Un réflexe absent ou vif oriente vers C5-C6 (compression cervicale) ; signe du supinateur inversé : flexion des doigts à la place",
+   "memo": "Le réflexe du radius : on frappe juste au-dessus de la styloïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-brachio-radial",
+    "sp-brachioradial-reflex",
+    "sp-reflexes"
+   ],
+   "divergences": "Gray : sur la styloïde ; TeachMeAnatomy : juste au-dessus de la styloïde. Racines : C5-C6 (StatPearls) ou surtout C6"
+  },
+  {
+   "id": "tendon-flechisseur-radial-carpe",
+   "resume": "Le tendon du fléchisseur radial du carpe : une corde du bord radial du poignet, juste en dedans du pouls radial.",
+   "muscles": [
+    "flechisseur-radial-carpe"
+   ],
+   "attache": "Base du 2e métacarpien, avec une expansion vers la base du 3e",
+   "role": "Fléchit le poignet et l'incline du côté radial",
+   "rapports": "Hors du canal carpien : sa gaine passe dans la gouttière du trapèze, sur le bord latéral du rétinaculum des fléchisseurs",
+   "reflexe": null,
+   "palpation": "Corde nette en dedans de l'artère radiale, au pli du poignet, quand on fléchit le poignet contre résistance",
+   "clinique": "Repère du pouls radial, qui se prend juste en dehors de lui ; il guide l'abord chirurgical du côté radial du poignet",
+   "memo": "À côté du pouls : il le borde du côté de l'ulna",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-fcr",
+    "kenhub-carpal-sheaths",
+    "kenhub-carpal-tunnel"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendon-flechisseur-ulnaire-carpe",
+   "resume": "Le tendon du fléchisseur ulnaire du carpe : la corde du bord ulnaire de la face palmaire du poignet, qui se fixe au pisiforme.",
+   "muscles": [
+    "flechisseur-ulnaire-carpe"
+   ],
+   "attache": "Pisiforme, avec des prolongements vers l'hamatum et le 5e métacarpien",
+   "role": "Fléchit le poignet et l'incline du côté ulnaire",
+   "rapports": "Devant le rétinaculum, hors du canal carpien ; le canal de Guyon, avec nerf et artère ulnaires, se situe en dehors de lui",
+   "reflexe": null,
+   "palpation": "Corde du bord interne de la face palmaire du poignet, quand on fléchit et incline le poignet vers l'ulna",
+   "clinique": "Repère du nerf ulnaire au poignet ; une fracture du crochet de l'hamatum peut léser ce nerf",
+   "memo": "Il se fixe au pisiforme : le petit os rond qu'on touche au bord du poignet",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-fcu",
+    "sp-flexor-retinaculum"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendons-extenseurs-radiaux",
+   "resume": "Les tendons des deux extenseurs radiaux du carpe : ils étendent le poignet en l'inclinant vers le pouce.",
+   "muscles": [
+    "long-extenseur-radial-carpe",
+    "court-extenseur-radial-carpe"
+   ],
+   "attache": "Long extenseur radial : base du 2e métacarpien ; court extenseur radial : base du 3e métacarpien",
+   "role": "Étendent le poignet et l'inclinent du côté radial ; fixent le poignet pendant la prise",
+   "rapports": "Dans le 2e compartiment des extenseurs, chacun dans sa gaine, sous le rétinaculum des extenseurs",
+   "reflexe": null,
+   "palpation": "Cordes sur le dos du poignet, en dehors du tubercule de Lister, quand on serre le poing",
+   "clinique": "Épicondylalgie latérale (tennis elbow) : l'origine du court extenseur radial est la plus touchée ; douleur à l'extension du poignet contre résistance",
+   "memo": "Deux tendons parallèles pour le 2e et le 3e métacarpien : poing serré, poignet en arrière",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-ecrl",
+    "tma-ecrb",
+    "kenhub-carpal-sheaths"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "arcade-tendineuse-de-l-elevateur-de-l-anus",
+   "resume": "L'épaississement blanc du fascia obturateur d'où naît le muscle élévateur de l'anus, du pubis à l'épine ischiatique.",
+   "muscles": [
+    "iliococcygien",
+    "pubococcygien",
+    "obturateur-interne"
+   ],
+   "attache": "Du bas de la symphyse pubienne à l'épine ischiatique, sur le fascia de l'obturateur interne",
+   "role": "Offre une origine à l'élévateur de l'anus entre le pubis et l'ischium et ancre le fascia pelvien",
+   "rapports": "Sur le fascia obturateur ; l'iliococcygien naît de sa partie postérieure et de l'épine ischiatique ; le fascia endopelvien s'y accroche",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Une faiblesse du plancher pelvien favorise le prolapsus (cystocèle, rectocèle, utérus) ; en chirurgie pelvienne l'arcade est un repère de fixation",
+   "memo": "Une ligne blanche entre le pubis et l'épine ischiatique : le toit de l'obturateur",
+   "variantes": "Sa netteté varie d'une personne à l'autre",
+   "sources": [
+    "gray1918",
+    "kenhub-pelvic-floor",
+    "pmc-pelvic-fasciae"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-iliopsoas",
+   "resume": "La lame fibreuse qui recouvre le psoas et l'iliaque ; elle forme la paroi postérieure de la gaine fémorale.",
+   "muscles": [
+    "grand-psoas",
+    "iliaque"
+   ],
+   "attache": "Lèvre interne de la crête iliaque et ligne terminale ; en haut, arcade lombo-costale médiale",
+   "role": "Enveloppe le psoas et l'iliaque, ferme leur loge sous le ligament inguinal et accompagne le nerf fémoral",
+   "rapports": "Sous le ligament inguinal, elle se continue avec le fascia lata ; elle se fond en haut avec le fascia du carré des lombes",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Un hématome de l'iliopsoas, sous ce fascia, peut comprimer le nerf fémoral",
+   "memo": "Une seule lame pour deux muscles, du bassin à la cuisse",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-hip-thigh-fasciae"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-brachial",
+   "resume": "Le manchon fibreux du bras : continuation du fascia deltoïdien et pectoral, il enveloppe les muscles et envoie deux cloisons à l'humérus.",
+   "muscles": [
+    "biceps-brachial",
+    "brachial",
+    "coraco-brachial",
+    "triceps-brachial"
+   ],
+   "attache": "En haut, fascia deltoïdien et pectoral ; en bas, il se continue avec le fascia de l'avant-bras et se fixe aux épicondyles",
+   "role": "Forme deux loges, antérieure et postérieure, par ses cloisons intermusculaires",
+   "rapports": "Mince sur le biceps, plus épais sur le triceps ; le tendon du grand dorsal lui envoie une expansion",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Syndrome de loge du bras, rare, après fracture ou compression prolongée",
+   "memo": "Le manchon du bras : deux cloisons, deux loges",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "rad-bras-loge",
+    "kenhub-shoulder-fascias"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "septum-intermusculaire-lateral-du-bras",
+   "resume": "La cloison fibreuse latérale du bras : elle relie le fascia à l'humérus et sépare les loges antérieure et postérieure.",
+   "muscles": [
+    "brachial",
+    "triceps-brachial",
+    "brachio-radial"
+   ],
+   "attache": "Du tubercule majeur de l'humérus à l'épicondyle latéral, le long de la crête supracondylaire latérale",
+   "role": "Sépare les muscles antérieurs (brachial) des postérieurs (triceps) et leur offre une surface d'attache",
+   "rapports": "Reliée au fascia brachial ; le brachio-radial et le long extenseur radial du carpe y prennent une partie de leur origine",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Limite des loges du bras en cas de syndrome de loge",
+   "memo": "Une cloison pour chaque côté, deux loges en tout",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "rad-bras-loge",
+    "sp-loges-avant-bras"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "septum-intermusculaire-medial-du-bras",
+   "resume": "La cloison fibreuse médiale du bras : elle relie le fascia à l'humérus et sépare les loges antérieure et postérieure.",
+   "muscles": [
+    "brachial",
+    "triceps-brachial",
+    "coraco-brachial"
+   ],
+   "attache": "Du petit tubercule de l'humérus à l'épicondyle médial, le long de la crête supracondylaire médiale",
+   "role": "Sépare les muscles antérieurs (coraco-brachial, brachial) des postérieurs (triceps)",
+   "rapports": "Plus épaisse en bas ; le coraco-brachial s'y accroche en haut",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Limite des loges du bras en cas de syndrome de loge",
+   "memo": "La cloison du côté de l'épitrochlée : elle sépare devant et derrière",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "rad-bras-loge"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendon-court-biceps",
+   "resume": "Le tendon du chef court du biceps, attaché à l'apex du processus coracoïde, commun avec le coraco-brachial.",
+   "muscles": [
+    "biceps-brachial",
+    "coraco-brachial"
+   ],
+   "attache": "Apex du processus coracoïde de la scapula, en commun avec le coraco-brachial",
+   "role": "Ancre le chef court : il aide à fléchir l'épaule vers l'avant et à rapprocher le bras du corps",
+   "rapports": "Passe devant la capsule de l'épaule ; en bas, ses fibres se mêlent à celles du chef long dans le tendon distal du biceps",
+   "reflexe": null,
+   "palpation": "Sous le deltoïde, à la pointe du processus coracoïde, palpable en poussant sous la clavicule",
+   "clinique": "Une rupture isolée du chef court est rare ; les ruptures du biceps touchent surtout le chef long",
+   "memo": "Le chef court : un tendon qui part de la coracoïde, un muscle qui descend au coude",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-biceps",
+    "sp-biceps-rupture"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-engainant-superficiel-du-cou",
+   "resume": "Le collier fibreux le plus superficiel du cou : il entoure le cou entier et se dédouble pour envelopper le sterno-cléido-mastoïdien et le trapèze.",
+   "muscles": [
+    "sterno-cleido-mastoidien",
+    "trapeze"
+   ],
+   "attache": "Derrière : ligament nuchal et épineuse de C7 ; en haut : ligne nuchale supérieure, mastoïde, mandibule et hyoïde ; en bas : manubrium, clavicules, acromion et scapula",
+   "role": "Enveloppe tout le cou et ses muscles superficiels ; son dédoublement forme aussi la loge de la glande submandibulaire et la capsule de la parotide",
+   "rapports": "Sous le platysma ; son feuillet profond donne la gaine carotidienne et retient le tendon de l'omo-hyoïdien ; il fournit la poulie du digastrique",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Les fascias cervicaux limitent la diffusion du pus : une infection entre ce fascia et le fascia prétrachéal ne dépasse en général pas le bord supérieur du manubrium",
+   "memo": "Un col de chemise fibreux, du crâne à la clavicule",
+   "variantes": "Gray le nomme couche d'enveloppement du fascia cervical profond",
+   "sources": [
+    "gray1918",
+    "kenhub-cervical-fascias",
+    "kenhub-parotid"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-lata",
+   "resume": "Le fascia profond de la cuisse : un manchon fibreux épais, plus fin sur les adducteurs, qui se continue par le fascia crural.",
+   "muscles": [
+    "tenseur-fascia-lata",
+    "grand-fessier",
+    "sartorius",
+    "droit-femoral",
+    "vaste-lateral",
+    "gracile"
+   ],
+   "attache": "Sacrum, coccyx, crête iliaque, ligament inguinal, branche supérieure du pubis ; branche inférieure, ischium et ligament sacro-tubéral ; en bas condyles du fémur et du tibia, patella, tête de la fibula",
+   "role": "Enveloppe les muscles de la cuisse, les groupe en loges et transmet la traction du tenseur du fascia lata et du grand fessier par le tractus ilio-tibial",
+   "rapports": "Il s'ouvre à l'hiatus saphène, sous le ligament inguinal, pour la veine grande saphène ; ses cloisons rejoignent la ligne âpre",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Hernie fémorale par l'hiatus saphène ; syndrome de loge de cuisse, rare ; le fascia lata est un greffon utilisé pour réparer la dure-mère ou les tendons",
+   "memo": "Un manchon fibreux : il tient la cuisse et se prolonge à la jambe",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-fascia-lata",
+    "sp-fascia-lata",
+    "kenhub-hip-thigh-fasciae"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-poplite",
+   "resume": "Le fascia du creux poplité : une lame dense, renforcée de fibres transversales, qui en fait le toit.",
+   "muscles": [
+    "biceps-femoral",
+    "semi-tendineux",
+    "semi-membraneux",
+    "gastrocnemien"
+   ],
+   "attache": "Continu avec le fascia lata en haut et le fascia crural en bas ; fixé aux bords de la fosse (tendons des ischio-jambiers et chefs du gastrocnémien)",
+   "role": "Couvre et protège le contenu du creux poplité : nerf tibial, nerf fibulaire commun, vaisseaux poplités",
+   "rapports": "Percé par la veine petite saphène, qui gagne la veine poplitée ; il reçoit des expansions des tendons voisins",
+   "reflexe": null,
+   "palpation": "Toit du creux du genou, tendu quand on étend le genou",
+   "clinique": "Les abcès et hématomes du creux poplité y sont tendus ; la veine petite saphène et le nerf sural le traversent, repères de chirurgie",
+   "memo": "Le toit du creux du genou, avec une seule porte : la petite saphène",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-popliteal-fossa"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "septum-intermusculaire-lateral-de-la-cuisse",
+   "resume": "La cloison fibreuse latérale de la cuisse : elle relie le fascia lata au fémur et sépare vaste latéral et biceps fémoral.",
+   "muscles": [
+    "vaste-lateral",
+    "biceps-femoral"
+   ],
+   "attache": "Du fascia lata à la lèvre latérale de la ligne âpre, du grand fessier au condyle latéral",
+   "role": "Sépare les loges antérieure et postérieure ; donne attache à des fibres du vaste latéral et du court chef du biceps",
+   "rapports": "La plus forte des cloisons, renforcée par le tractus ilio-tibial",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Plan de voie d'abord chirurgical du fémur entre deux territoires nerveux",
+   "memo": "La cloison forte : elle porte la bandelette de Maissiat",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-fascia-lata",
+    "sp-fascia-lata"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "septum-intermusculaire-medial-de-la-cuisse",
+   "resume": "La cloison fibreuse médiale de la cuisse : plus mince, elle sépare le vaste médial des adducteurs et du pectiné.",
+   "muscles": [
+    "vaste-medial",
+    "pectine",
+    "long-adducteur",
+    "court-adducteur"
+   ],
+   "attache": "Du fascia lata à la lèvre médiale de la ligne âpre",
+   "role": "Sépare les loges antérieure et médiale",
+   "rapports": "Plus faible que la latérale ; elle donne attache au vaste médial",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Limite les loges de la cuisse en cas de syndrome de loge",
+   "memo": "La cloison fine, côté adducteurs",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-fascia-lata",
+    "kenhub-hip-thigh-fasciae"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lame-anterieure-du-fascia-thoracolombaire",
+   "resume": "La lame la plus profonde du fascia thoraco-lombaire : elle couvre le carré des lombes par-devant.",
+   "muscles": [
+    "carre-lombes"
+   ],
+   "attache": "Processus transverses des vertèbres lombaires et ligament ilio-lombaire ; en haut, douzième côte (arcade lombo-costale latérale)",
+   "role": "Enveloppe la face antérieure du carré des lombes ; en dehors, elle s'unit à la lame postérieure pour donner naissance au transverse de l'abdomen",
+   "rapports": "Entre le carré des lombes (devant) et la lame moyenne ; le psoas est plus en avant",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Elle transmet les tensions du tronc au bassin ; ses tensions sont évoquées dans certaines lombalgies",
+   "memo": "La plus antérieure des trois lames : elle couvre le carré des lombes",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-thoracolumbar"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "lame-moyenne-du-fascia-thoracolombaire",
+   "resume": "La lame du milieu du fascia thoraco-lombaire : elle sépare les érecteurs du rachis du carré des lombes.",
+   "muscles": [
+    "carre-lombes",
+    "transverse-abdomen",
+    "iliocostal-des-lombes"
+   ],
+   "attache": "Processus transverses lombaires en dedans ; crête iliaque, douzième côte et ligament lombo-costal en dehors",
+   "role": "Sépare les muscles érecteurs du carré des lombes ; elle donne à l'abdominal transverse une origine",
+   "rapports": "Entre la lame postérieure (derrière les érecteurs) et la lame antérieure (devant le carré)",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Ses tensions sont en cause dans certaines lombalgies chroniques",
+   "memo": "Le feuillet du milieu : il sépare les érecteurs du carré",
+   "variantes": "Gray ne distingue pas de lame moyenne",
+   "sources": [
+    "gray1918",
+    "kenhub-thoracolumbar"
+   ],
+   "divergences": "Gray décrit deux feuillets seulement, antérieur et postérieur"
+  },
+  {
+   "id": "lame-posterieure-du-fascia-thoracolombaire",
+   "resume": "La lame la plus superficielle du fascia thoraco-lombaire : elle couvre les érecteurs du rachis et reçoit le grand dorsal.",
+   "muscles": [
+    "iliocostal-des-lombes",
+    "longissimus-du-thorax",
+    "epineux-du-thorax",
+    "multifides-lombaire",
+    "grand-dorsal",
+    "dentele-postero-inferieur"
+   ],
+   "attache": "Processus épineux lombaires et sacrés et ligaments supra-épineux ; crête iliaque",
+   "role": "Enveloppe les érecteurs du rachis et transmet les tractions du grand dorsal et du dentelé postéro-inférieur",
+   "rapports": "Les aponévroses du grand dorsal et du dentelé postéro-inférieur se fondent avec elle ; en dehors elle s'unit à la lame moyenne",
+   "reflexe": null,
+   "palpation": "Losange nacré du bas du dos, à plat sous la peau",
+   "clinique": "Lombalgies ; douleurs de la fesse (syndrome du piriforme) et de l'articulation sacro-iliaque lui sont attribuées",
+   "memo": "La lame du dos visible : le losange nacré",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-thoracolumbar",
+    "kenhub-abdominal-wall"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-deltoidien",
+   "resume": "Le fascia qui enveloppe le deltoïde, avec des cloisons entre ses faisceaux ; il se prolonge vers le bras.",
+   "muscles": [
+    "deltoide"
+   ],
+   "attache": "Clavicule, acromion et épine de la scapula ; en avant, fascia pectoral ; en arrière, fascia infra-épineux",
+   "role": "Enveloppe le deltoïde et cloisonne ses faisceaux ; il se continue par le fascia du bras",
+   "rapports": "Continu en bas avec le fascia brachial",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Fasciite et rétraction rares ; un abcès sous-deltoïdien reste dans sa loge",
+   "memo": "Le manteau du deltoïde : il s'arrête là où le bras commence",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-shoulder-fascias"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tendineuse-intertuberculaire",
+   "resume": "La gaine synoviale qui entoure le tendon du chef long du biceps dans le sillon entre les tubercules de l'humérus.",
+   "muscles": [
+    "biceps-brachial"
+   ],
+   "attache": "Prolongement de la synoviale de l'articulation de l'épaule, tapissant le sillon intertuberculaire de l'humérus",
+   "role": "Fait glisser le tendon du chef long du biceps dans son sillon, en l'isolant de la cavité articulaire",
+   "rapports": "Le tendon traverse l'articulation de l'épaule en passant sous la capsule ; des ligaments de la poulie du biceps le maintiennent dans le sillon",
+   "reflexe": null,
+   "palpation": "Sillon de la face antérieure de la tête humérale, douleur à la palpation sous l'acromion",
+   "clinique": "Ténosynovite bicipitale : douleur antérieure de l'épaule ; lésion de la poulie : subluxation du tendon hors du sillon ; rupture du chef long : signe de Popeye",
+   "memo": "Un tendon dans un tunnel : il glisse dans une gaine, au milieu de l'épaule",
+   "variantes": "Kenhub précise que le tendon est dans la capsule mais extra-synovial",
+   "sources": [
+    "gray1918",
+    "kenhub-biceps",
+    "sp-biceps-rupture"
+   ],
+   "divergences": "Gray parle d'une gaine synoviale ; Kenhub, d'un tendon intra-capsulaire mais extra-synovial"
+  },
+  {
+   "id": "tendon-long-biceps",
+   "resume": "Le tendon du chef long du biceps : il naît dans l'épaule, traverse l'articulation puis glisse dans le sillon de l'humérus.",
+   "muscles": [
+    "biceps-brachial"
+   ],
+   "attache": "Tubercule supra-glénoïdal de la scapula et bourrelet glénoïdien supérieur",
+   "role": "Stabilise l'articulation de l'épaule (il retient la tête humérale) et transmet au biceps la force qui fléchit l'épaule et le coude",
+   "rapports": "Intra-capsulaire mais extra-synovial ; coudé dans le sillon intertuberculaire sous le ligament transverse, retenu par la poulie du biceps",
+   "reflexe": null,
+   "palpation": "Dans le sillon, devant la tête humérale, douleur à la pression sous l'acromion",
+   "clinique": "Rupture proximale, la plus fréquente des ruptures du biceps : boule du muscle au milieu du bras (signe de Popeye), peu de gêne fonctionnelle, souvent associée à une atteinte de la coiffe des rotateurs",
+   "memo": "Il traverse l'épaule : le seul tendon de bras qui entre dans l'articulation",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-biceps",
+    "sp-biceps-rupture",
+    "tma-biceps"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "arcade-iliopectinee",
+   "resume": "La bande fibreuse du fascia iliaque, du ligament inguinal à l'éminence ilio-pectinée : elle sépare la lacune musculaire de la lacune vasculaire.",
+   "muscles": [
+    "grand-psoas",
+    "iliaque",
+    "pectine"
+   ],
+   "attache": "Ligament inguinal en avant, éminence ilio-pectinée de l'os coxal en arrière",
+   "role": "Cloisonne l'espace sous le ligament inguinal : le nerf fémoral et l'iliopsoas passent en dehors, les vaisseaux fémoraux en dedans",
+   "rapports": "Appartient au fascia iliaque ; elle forme la limite médiale de la lacune musculaire et la limite latérale de la lacune vasculaire",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Elle explique que la hernie fémorale sort par la lacune vasculaire, en dedans des vaisseaux, et non par la lacune musculaire",
+   "memo": "Une arcade, deux lacunes : les muscles dehors, les vaisseaux dedans",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-hip-thigh-fasciae",
+    "kenhub-inguinal-ligament"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-du-muscle-piriforme",
+   "resume": "La mince lame fibreuse qui recouvre la face pelvienne du muscle piriforme.",
+   "muscles": [
+    "piriforme"
+   ],
+   "attache": "Face antérieure du sacrum et bords du grand foramen ischiatique",
+   "role": "Enveloppe le piriforme dans le pelvis et engaine les nerfs sacraux à leur sortie des foramens sacraux",
+   "rapports": "Très mince ; elle fait partie du fascia pariétal du pelvis, avec le fascia obturateur",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Un nerf sacral peut être pris dans sa gaine lors d'une lésion du plexus sacral",
+   "memo": "Une pellicule sur le piriforme : elle suit les nerfs sacraux",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "pmc-pelvic-fasciae"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-crural",
+   "resume": "Le fascia profond de la jambe : enveloppe tous les muscles, adhère aux os sous-cutanés et forme les loges.",
+   "muscles": [
+    "tibial-anterieur",
+    "long-extenseur-orteils",
+    "long-fibulaire",
+    "court-fibulaire",
+    "gastrocnemien",
+    "soleaire",
+    "tibial-posterieur"
+   ],
+   "attache": "Continu avec le fascia lata ; fixé à la patella, au ligament patellaire, à la tubérosité du tibia, aux condyles et à la tête de la fibula ; au périoste des faces sous-cutanées",
+   "role": "Contient les muscles de la jambe en quatre loges (antérieure, latérale, postérieure superficielle et profonde) et les maintient pendant l'effort",
+   "rapports": "Épais devant et en haut, plus mince derrière ; il se prolonge par les rétinaculums du cou-de-pied",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Syndrome de loge de la jambe : douleur disproportionnée, tension, paresthésies ; la loge antérieure est la plus souvent touchée ; on ouvre toutes les loges par fasciotomie",
+   "memo": "Quatre loges dans une seule gaine : si elle serre, le muscle souffre",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-leg-foot-fascias",
+    "sp-loge-anterieure",
+    "sp-loge-posterieure"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tendineuse-du-muscle-tibial-anterieur",
+   "resume": "La gaine synoviale du tendon du tibial antérieur sous les rétinaculums des extenseurs, devant la cheville.",
+   "muscles": [
+    "tibial-anterieur"
+   ],
+   "attache": "Du bord supérieur du rétinaculum supérieur à l'intervalle entre les branches du rétinaculum inférieur, environ 8 cm",
+   "role": "Fait glisser le tendon du tibial antérieur sous les rétinaculums, sans friction",
+   "rapports": "Le tendon passe dans les compartiments médiaux des deux rétinaculums ; la gaine précède les gaines de l'extenseur de l'hallux et des orteils",
+   "reflexe": null,
+   "palpation": "Gonflement devant la cheville, en dedans de la corde du tendon",
+   "clinique": "Ténosynovite du tibial antérieur : douleur et gonflement du cou-de-pied, tendinopathie du coureur",
+   "memo": "La plus médiale des gaines antérieures du cou-de-pied",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-leg-foot-fascias",
+    "tma-tibial-anterieur"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "septum-intermusculaire-anterieur-de-la-jambe",
+   "resume": "La cloison fibreuse qui sépare les muscles antérieurs de la jambe des fibulaires.",
+   "muscles": [
+    "long-extenseur-orteils",
+    "long-fibulaire",
+    "court-fibulaire"
+   ],
+   "attache": "Du fascia crural à la face antérieure de la fibula",
+   "role": "Sépare la loge antérieure (extenseurs) de la loge latérale (fibulaires)",
+   "rapports": "Naît de la face profonde latérale du fascia crural ; le nerf fibulaire superficiel suit la loge latérale",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Les incisions de fasciotomie se placent près d'elle, en protégeant le nerf fibulaire superficiel",
+   "memo": "Une cloison devant les fibulaires, entre extenseurs et péroniers",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "sp-loge-anterieure"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "septum-intermusculaire-posterieur-de-la-jambe",
+   "resume": "La cloison fibreuse qui sépare les fibulaires des muscles postérieurs de la jambe.",
+   "muscles": [
+    "long-fibulaire",
+    "court-fibulaire",
+    "soleaire"
+   ],
+   "attache": "Du fascia crural à la face postérieure de la fibula",
+   "role": "Sépare la loge latérale (fibulaires) de la loge postérieure",
+   "rapports": "Naît de la face profonde latérale du fascia crural, parallèle au septum antérieur",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Limite de loge dans les syndromes de loge de la jambe",
+   "memo": "La cloison de derrière : elle ferme la loge des fibulaires",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "sp-loge-posterieure"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "septum-intermusculaire-transverse-de-la-jambe",
+   "resume": "La lame fibreuse transversale qui sépare les muscles postérieurs superficiels des profonds.",
+   "muscles": [
+    "gastrocnemien",
+    "soleaire",
+    "tibial-posterieur",
+    "long-flechisseur-orteils",
+    "long-flechisseur-hallux",
+    "poplite"
+   ],
+   "attache": "Sur les bords du tibia et de la fibula",
+   "role": "Sépare le triceps sural, en surface, des muscles profonds (poplité, tibial postérieur, long fléchisseur des orteils et de l'hallux)",
+   "rapports": "Épaisse en haut sur le poplité, mince au milieu de la jambe, épaissie en bas, où elle se continue avec le rétinaculum des fléchisseurs",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Le syndrome de loge postérieure profonde est diagnostiqué tardivement",
+   "memo": "Un plancher entre le mollet et les muscles profonds",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "sp-loge-posterieure"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendon-semi-tendineux",
+   "resume": "Le tendon du semi-tendineux : une longue corde du creux poplité qui rejoint la face médiale du tibia, dans la patte d'oie.",
+   "muscles": [
+    "semi-tendineux",
+    "sartorius",
+    "gracile"
+   ],
+   "attache": "Face médiale de l'extrémité supérieure du tibia, derrière le sartorius et sous le gracile (patte d'oie)",
+   "role": "Transmet la force du semi-tendineux pour fléchir le genou, étendre la hanche et tourner la jambe vers l'intérieur",
+   "rapports": "Contourne le condyle médial du tibia ; une bourse commune avec le gracile le sépare du ligament collatéral tibial",
+   "reflexe": null,
+   "palpation": "Corde au bord médial du creux poplité, contre résistance de la flexion du genou",
+   "clinique": "Son tendon sert de greffon pour la reconstruction du ligament croisé antérieur ; douleurs de la patte d'oie chez le coureur",
+   "memo": "Patte d'oie : trois tendons, sartorius, gracile et semi-tendineux, en patte palmée",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-semi-tendineux"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-dorsal-de-la-main",
+   "resume": "La mince lame fibreuse du dos de la main, sous la peau : elle se continue avec le rétinaculum des extenseurs.",
+   "muscles": [
+    "extenseur-doigts",
+    "interosseux-dorsaux"
+   ],
+   "attache": "Se continue en haut avec le rétinaculum des extenseurs et le fascia de l'avant-bras ; en bas, se perd sur le dos des doigts",
+   "role": "Enveloppe les tendons extenseurs et les interosseux dorsaux et les sépare de la peau",
+   "rapports": "Fine et lâche, ce qui laisse glisser la peau sur les tendons",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Un œdème de la main apparaît surtout au dos, où le tissu est lâche",
+   "memo": "Un voile sur le dos de la main : il laisse la peau glisser",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-hand-fascia"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-palmaire",
+   "resume": "Le fascia profond de la paume : épais au centre (aponévrose palmaire), mince sur les éminences thénar et hypothénar.",
+   "muscles": [
+    "long-palmaire",
+    "court-abducteur-pouce",
+    "abducteur-petit-doigt"
+   ],
+   "attache": "Continu avec le rétinaculum des fléchisseurs et le fascia de l'avant-bras en haut ; vers les doigts, languettes de l'aponévrose palmaire",
+   "role": "Protège les tendons, les vaisseaux et les nerfs de la paume et ancre la peau pour la prise",
+   "rapports": "Partie centrale triangulaire et épaisse ; parties latérale et médiale minces, sur le thénar et l'hypothénar",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Maladie de Dupuytren : épaississement de la partie centrale, cordes et flexion fixe des doigts ; infections de la paume cantonnées dans ses loges",
+   "memo": "Le gant de la paume : épais au centre, fin sur les éminences",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-hand-fascia",
+    "kenhub-palmar-aponeurosis"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-des-tendons-des-extenseurs-radiaux-du-carpe",
+   "resume": "La gaine synoviale du 2e compartiment des extenseurs : elle entoure les deux extenseurs radiaux du carpe.",
+   "muscles": [
+    "long-extenseur-radial-carpe",
+    "court-extenseur-radial-carpe"
+   ],
+   "attache": "Sous le rétinaculum des extenseurs, côté radial, derrière le radius ; chaque tendon a sa propre gaine",
+   "role": "Fait glisser les tendons sous le rétinaculum quand le poignet s'étend",
+   "rapports": "Les tendons passent derrière les tendons du 1er compartiment, qu'ils croisent juste au-dessus du poignet",
+   "reflexe": null,
+   "palpation": "Côté radial du dos du poignet, en dehors du tubercule de Lister",
+   "clinique": "Ténosynovite du 2e compartiment, ou syndrome d'intersection, douleur et crépitement au dos de l'avant-bras",
+   "memo": "Deuxième compartiment, deux extenseurs radiaux : deux tendons, deux gaines",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-carpal-sheaths"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-du-tendon-de-l-extenseur-du-petit-doigt",
+   "resume": "La gaine synoviale du 5e compartiment des extenseurs, qui entoure le tendon de l'extenseur du petit doigt.",
+   "muscles": [
+    "extenseur-du-petit-doigt"
+   ],
+   "attache": "Sous le rétinaculum des extenseurs, au-dessus de l'articulation radio-ulnaire distale",
+   "role": "Fait glisser le tendon de l'extenseur du petit doigt, qui redresse l'auriculaire",
+   "rapports": "Le tendon s'unit à celui de l'extenseur des doigts pour le petit doigt, sur la première phalange",
+   "reflexe": null,
+   "palpation": "Cordon fin du dos du poignet, du côté de la tête de l'ulna",
+   "clinique": "La rupture du tendon (syndrome de Vaughan-Jackson) fait perdre l'extension du petit doigt ; ténosynovite rare",
+   "memo": "Cinquième compartiment : le petit doigt a son tendon propre",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-carpal-sheaths"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tend-du-long-abducteur-et-du-court-ext-du-pouce",
+   "resume": "La gaine synoviale du 1er compartiment des extenseurs : elle entoure les tendons du long abducteur et du court extenseur du pouce.",
+   "muscles": [
+    "long-abducteur-pouce",
+    "court-extenseur-pouce"
+   ],
+   "attache": "Dans un tunnel fibreux d'environ 2 cm sur la styloïde du radius",
+   "role": "Fait glisser les deux tendons qui bordent la tabatière anatomique du côté radial",
+   "rapports": "Un septum sépare souvent les deux tendons dans le tunnel ; des rameaux du nerf radial superficiel le croisent",
+   "reflexe": null,
+   "palpation": "Sur la styloïde du radius, bord radial de la tabatière anatomique",
+   "clinique": "Ténosynovite de De Quervain : douleur de la styloïde radiale, test de Finkelstein positif, fréquente chez les jeunes mères ; infiltration ou section de la gaine",
+   "memo": "Premier compartiment, premier ennui : celui des mères qui portent leur bébé",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "sp-dequervain",
+    "kenhub-carpal-sheaths",
+    "tma-epb"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tendineuse-commune-des-flechisseurs",
+   "resume": "La gaine synoviale commune des tendons fléchisseurs des doigts, dans le canal carpien : la bourse ulnaire.",
+   "muscles": [
+    "flechisseur-superficiel-doigts",
+    "flechisseur-profond-doigts"
+   ],
+   "attache": "Un peu au-dessus du poignet, jusqu'au milieu de la paume ; elle se prolonge sur le petit doigt",
+   "role": "Fait glisser les huit tendons fléchisseurs sous le rétinaculum des fléchisseurs",
+   "rapports": "Incomplète du côté radial ; elle communique avec la gaine du long fléchisseur du pouce chez environ la moitié des personnes ; le petit doigt partage sa gaine",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Ténosynovite suppurée du petit doigt : l'infection gagne le canal carpien par la bourse ulnaire, parfois la gaine du pouce ; urgence chirurgicale",
+   "memo": "La bourse ulnaire : le côté du petit doigt, large comme le canal carpien",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-carpal-sheaths"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tendineuse-de-l-extenseur-ulnaire-du-carpe",
+   "resume": "La gaine synoviale du 6e compartiment des extenseurs : elle entoure le tendon de l'extenseur ulnaire du carpe.",
+   "muscles": [
+    "extenseur-ulnaire-carpe"
+   ],
+   "attache": "Dans une gouttière contre la base de la styloïde ulnaire, sous le rétinaculum des extenseurs",
+   "role": "Fait glisser le tendon qui étend et incline le poignet du côté ulnaire",
+   "rapports": "Gaine propre, la plus médiale du dos du poignet",
+   "reflexe": null,
+   "palpation": "Corde sur le bord interne du poignet, en dehors de la tête de l'ulna",
+   "clinique": "Ténosynovite et luxation du tendon : douleur du bord ulnaire du poignet",
+   "memo": "Sixième compartiment, tout au bout du côté de l'ulna",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-carpal-sheaths",
+    "tma-ecu"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tendineuse-des-m-extenseurs-des-doigts-et-de-l-index",
+   "resume": "La gaine synoviale commune du 4e compartiment des extenseurs : quatre tendons de l'extenseur des doigts et celui de l'index.",
+   "muscles": [
+    "extenseur-doigts",
+    "extenseur-de-l-index"
+   ],
+   "attache": "Sous le rétinaculum des extenseurs, devant le tubercule de Lister",
+   "role": "Fait glisser les cinq tendons qui redressent les doigts",
+   "rapports": "Une seule gaine entoure les cinq tendons ; elle s'étend jusqu'aux métacarpiens",
+   "reflexe": null,
+   "palpation": "Au milieu du dos du poignet, un renflement quand le poignet est fléchi",
+   "clinique": "Ténosynovite et kyste synovial dorsal du poignet ; rupture des tendons dans les polyarthrites",
+   "memo": "Quatrième compartiment : cinq tendons, une seule gaine",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-carpal-sheaths"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tendineuse-du-flechisseur-de-radial-du-carpe",
+   "resume": "La gaine synoviale du tendon du fléchisseur radial du carpe, dans la gouttière du trapèze.",
+   "muscles": [
+    "flechisseur-radial-carpe"
+   ],
+   "attache": "Dans la gouttière du trapèze, sur le bord latéral du rétinaculum des fléchisseurs, hors du canal carpien",
+   "role": "Fait glisser le tendon dans le sillon osseux du trapèze",
+   "rapports": "Propre au tendon : il n'est pas dans la bourse radiale ni dans la bourse ulnaire",
+   "reflexe": null,
+   "palpation": "Corde radiale du poignet, au creux du pli de flexion",
+   "clinique": "Ténosynovite : douleur à la base du pouce côté radial, parfois confondue avec l'arthrose trapézo-métacarpienne",
+   "memo": "Le tendon à part : sa gaine ne se mêle pas à celles du canal carpien",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-carpal-sheaths",
+    "kenhub-carpal-tunnel"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tendineuse-du-long-flechisseur-du-pouce",
+   "resume": "La gaine synoviale du long fléchisseur du pouce : la bourse radiale.",
+   "muscles": [
+    "long-flechisseur-pouce"
+   ],
+   "attache": "Sur toute la longueur du tendon dans le canal carpien et sur le pouce, jusqu'à la phalange distale",
+   "role": "Fait glisser le tendon qui plie la dernière phalange du pouce",
+   "rapports": "Elle communique avec la bourse ulnaire chez environ la moitié des personnes",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Ténosynovite suppurée du pouce : doigt en flexion, douleur à l'extension passive ; l'infection peut passer à la bourse ulnaire",
+   "memo": "Bourse radiale : le tendon du pouce, de la paume à l'ongle",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-carpal-sheaths"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tendineuse-du-muscle-long-extenseur-du-pouce",
+   "resume": "La gaine synoviale du 3e compartiment des extenseurs : elle entoure le tendon du long extenseur du pouce.",
+   "muscles": [
+    "long-extenseur-du-pouce"
+   ],
+   "attache": "Canal oblique sur le côté ulnaire du tubercule de Lister, sous le rétinaculum des extenseurs",
+   "role": "Fait glisser le tendon qui étend la dernière phalange du pouce et forme le bord ulnaire de la tabatière",
+   "rapports": "Le tendon contourne le tubercule de Lister, qui lui sert de poulie",
+   "reflexe": null,
+   "palpation": "Bord ulnaire de la tabatière anatomique quand on relève le pouce",
+   "clinique": "Rupture après fracture du radius distal : impossible d'étendre la phalange distale du pouce ; ténosynovite des tendons du pouce",
+   "memo": "Troisième compartiment : le tendon prend un virage sur le tubercule",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-carpal-sheaths",
+    "tma-epl"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaines-synoviales-des-doigts-de-la-main",
+   "resume": "Les gaines synoviales qui entourent les tendons fléchisseurs dans les doigts : elles les font glisser dans leur tunnel fibreux.",
+   "muscles": [
+    "flechisseur-superficiel-doigts",
+    "flechisseur-profond-doigts",
+    "long-flechisseur-pouce"
+   ],
+   "attache": "Du col des métacarpiens à la base de la phalange distale ; le pouce et le petit doigt prolongent les bourses radiale et ulnaire",
+   "role": "Lubrifient et nourrissent les tendons fléchisseurs sous les poulies de la gaine fibreuse",
+   "rapports": "Index, majeur et annulaire ont chacun leur gaine fermée ; le petit doigt partage la bourse ulnaire ; le pouce, celle du long fléchisseur. Des vincula portent les vaisseaux",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Ténosynovite suppurée : doigt en flexion, gonflement en fuseau, douleur à l'extension passive, douleur le long de la gaine (signes de Kanavel) ; urgence chirurgicale",
+   "memo": "Trois gaines closes, deux gaines ouvertes sur la paume : index à annulaire, petit doigt et pouce",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-carpal-sheaths",
+    "tma-hand-fascia"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "partie-cruciforme-de-la-gaine-fibreuse-des-doigts-de-la-main",
+   "resume": "Les poulies en croix de la gaine fibreuse des doigts, fines et souples, qui alternent avec les poulies annulaires.",
+   "muscles": [
+    "flechisseur-superficiel-doigts",
+    "flechisseur-profond-doigts"
+   ],
+   "attache": "Fixées sur les bords de la gaine fibreuse, devant les articulations interphalangiennes",
+   "role": "Gardent les tendons fléchisseurs contre l'os pour éviter l'effet de corde d'arc et laissent les articulations se plier",
+   "rapports": "Trois poulies cruciformes (C1 à C3) alternent avec cinq poulies annulaires (A1 à A5) ; il n'y en a pas entre A1 et A2",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Rupture des poulies annulaires : le tendon se tend en corde d'arc au doigt fléchi ; le doigt à ressaut touche la poulie A1",
+   "memo": "Cinq annulaires, trois cruciformes : le tunnel des tendons du doigt",
+   "variantes": "Gray les décrit comme ligaments vaginaux, annulaires et cruciformes",
+   "sources": [
+    "gray1918",
+    "kenhub-carpal-sheaths",
+    "rad-trigger"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "retinaculum-extenseurs",
+   "resume": "La bande fibreuse du dos du poignet : elle retient en six compartiments les tendons des extenseurs.",
+   "muscles": [
+    "extenseur-doigts",
+    "extenseur-de-l-index",
+    "extenseur-du-petit-doigt",
+    "long-extenseur-radial-carpe",
+    "court-extenseur-radial-carpe",
+    "extenseur-ulnaire-carpe",
+    "long-abducteur-pouce",
+    "court-extenseur-pouce",
+    "long-extenseur-du-pouce"
+   ],
+   "attache": "Radius en dehors ; styloïde de l'ulna, triquétrum et pisiforme en dedans",
+   "role": "Empêche les tendons extenseurs de se tendre en corde quand on étend le poignet",
+   "rapports": "Des cloisons de sa face profonde la relient au radius et forment six compartiments : 1 long abducteur et court extenseur du pouce ; 2 extenseurs radiaux ; 3 long extenseur du pouce ; 4 extenseur des doigts et de l'index ; 5 extenseur du petit doigt ; 6 extenseur ulnaire",
+   "reflexe": null,
+   "palpation": "Bande à peine visible sur le dos du poignet",
+   "clinique": "Ténosynovite de De Quervain dans le 1er compartiment ; rupture du long extenseur du pouce (3e compartiment) après une fracture du radius",
+   "memo": "Six boîtes, d'un bord à l'autre : pouce, radiaux, long du pouce, doigts, petit doigt, ulnaire",
+   "variantes": "Appelé ligament annulaire postérieur du carpe",
+   "sources": [
+    "gray1918",
+    "kenhub-carpal-sheaths",
+    "tma-hand-fascia",
+    "sp-dequervain"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendons-pouce",
+   "resume": "Les tendons qui bordent la tabatière anatomique : long abducteur, court extenseur et long extenseur du pouce.",
+   "muscles": [
+    "long-abducteur-pouce",
+    "court-extenseur-pouce",
+    "long-extenseur-du-pouce"
+   ],
+   "attache": "Long abducteur : base du 1er métacarpien ; court extenseur : phalange proximale ; long extenseur : phalange distale du pouce",
+   "role": "Écartent et étendent le pouce ; ils dessinent les bords de la tabatière anatomique",
+   "rapports": "Les deux premiers passent par le 1er compartiment (bord radial) ; le long extenseur par le 3e (bord ulnaire). Le scaphoïde est au fond de la tabatière",
+   "reflexe": null,
+   "palpation": "Les deux cordes qui encadrent le creux de la tabatière quand on redresse le pouce",
+   "clinique": "Douleur à la pression de la tabatière après une chute sur la main : fracture du scaphoïde à rechercher ; ténosynovite de De Quervain pour les deux tendons radiaux",
+   "memo": "La tabatière : un creux entre deux cordes, et le scaphoïde au fond",
+   "variantes": "L'atlas en nomme quatre (deux tendons radiaux, doublés)",
+   "sources": [
+    "gray1918",
+    "tma-forearm-post",
+    "tma-epb",
+    "tma-epl",
+    "sp-dequervain"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tendineurse-du-long-extenseur-de-l-hallux",
+   "resume": "La gaine synoviale du tendon du long extenseur de l'hallux, devant la cheville et sur le dos du pied.",
+   "muscles": [
+    "long-extenseur-hallux"
+   ],
+   "attache": "Sous les rétinaculums des extenseurs, jusqu'à la base du 1er métatarsien (environ 8 cm)",
+   "role": "Fait glisser le tendon qui relève le gros orteil",
+   "rapports": "Gaine séparée de celle du tibial antérieur et de celle du long extenseur des orteils",
+   "reflexe": null,
+   "palpation": "Cordon au milieu du cou-de-pied, quand on redresse le gros orteil",
+   "clinique": "Ténosynovite : gonflement et douleur devant la cheville en marchant en descente",
+   "memo": "La gaine du gros orteil : elle va jusqu'au métatarsien",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-leg-foot-fascias",
+    "tma-ehl"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tendineurse-du-muscle-long-flechisseur-de-l-hallux",
+   "resume": "La gaine synoviale du long fléchisseur de l'hallux, derrière la malléole médiale.",
+   "muscles": [
+    "long-flechisseur-hallux"
+   ],
+   "attache": "Derrière la malléole médiale, sous le rétinaculum des fléchisseurs, jusqu'à la base du 1er métatarsien",
+   "role": "Fait glisser le tendon dans le tunnel tarsien et sous le sustentaculum du talus",
+   "rapports": "Le tendon passe dans une gouttière du talus et du calcanéus, la plus postérieure des gaines du tunnel tarsien",
+   "reflexe": null,
+   "palpation": "Derrière la malléole médiale, profond",
+   "clinique": "Ténosynovite du long fléchisseur de l'hallux : douleur postéro-médiale de la cheville chez les danseurs ; rupture rare",
+   "memo": "La dernière gaine, la plus en arrière derrière la malléole médiale",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-tarsal-tunnel",
+    "tma-fhl"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tendineurse-du-muscle-long-flechisseur-des-orteils",
+   "resume": "La gaine synoviale du long fléchisseur des orteils, derrière la malléole médiale.",
+   "muscles": [
+    "long-flechisseur-orteils"
+   ],
+   "attache": "Derrière la malléole médiale, jusqu'au niveau du 1er cunéiforme",
+   "role": "Fait glisser le tendon qui plie les orteils",
+   "rapports": "Gaine individuelle entre celle du tibial postérieur, en avant, et le pédicule tibial postérieur, en arrière",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Ténosynovite dans le syndrome du tunnel tarsien",
+   "memo": "Deuxième gaine derrière la malléole : elle suit le tibial postérieur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-tarsal-tunnel",
+    "tma-fdl"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tendineuse-commune-des-muscles-fibulaires",
+   "resume": "La gaine synoviale commune des tendons des fibulaires long et court, derrière la malléole latérale.",
+   "muscles": [
+    "long-fibulaire",
+    "court-fibulaire"
+   ],
+   "attache": "Environ 4 cm au-dessus de la pointe de la malléole latérale, et autant vers le bas et l'avant",
+   "role": "Fait glisser les deux tendons dans la gouttière rétro-malléolaire, sous le rétinaculum supérieur",
+   "rapports": "Le court fibulaire est devant et en dedans du long ; les deux gaines se séparent après la fibula",
+   "reflexe": null,
+   "palpation": "Gonflement derrière la malléole latérale",
+   "clinique": "Ténosynovite et ruptures longitudinales du court fibulaire ; subluxation des tendons par atteinte du rétinaculum supérieur",
+   "memo": "Une gaine pour deux : le court devant, le long derrière",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "sp-peroneal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tendineuse-du-long-extenseur-des-doigts",
+   "resume": "La gaine synoviale du long extenseur des orteils, devant la cheville.",
+   "muscles": [
+    "long-extenseur-orteils",
+    "troisieme-fibulaire"
+   ],
+   "attache": "Sous les rétinaculums des extenseurs, jusqu'à la base du 5e métatarsien",
+   "role": "Fait glisser les tendons du long extenseur des orteils et du troisième fibulaire",
+   "rapports": "La plus latérale des gaines de la face antérieure du cou-de-pied",
+   "reflexe": null,
+   "palpation": "Devant la cheville, entre l'extenseur de l'hallux et la malléole latérale",
+   "clinique": "Ténosynovite, rare",
+   "memo": "La plus latérale des gaines du cou-de-pied",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-leg-foot-fascias",
+    "tma-edl"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tendineuse-du-muscle-tibial-posterieur",
+   "resume": "La gaine synoviale du tibial postérieur, derrière la malléole médiale : la plus haute des gaines médiales.",
+   "muscles": [
+    "tibial-posterieur"
+   ],
+   "attache": "De 4 cm au-dessus de la pointe de la malléole médiale à l'avant de la tubérosité du naviculaire",
+   "role": "Fait glisser le tendon qui soutient la voûte plantaire",
+   "rapports": "Première structure derrière la malléole médiale, avant le fléchisseur des orteils",
+   "reflexe": null,
+   "palpation": "Derrière la malléole médiale, tendon palpable en inversion contre résistance",
+   "clinique": "Dysfonction du tendon tibial postérieur : pied plat acquis de l'adulte ; ténosynovite en tête",
+   "memo": "Première en place derrière la malléole : le tibial postérieur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-tarsal-tunnel",
+    "tma-tp"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "gaine-tendineuse-plantaire-du-muscle-long-fibulaire",
+   "resume": "La gaine synoviale du tendon du long fibulaire dans la plante, sous le cuboïde.",
+   "muscles": [
+    "long-fibulaire"
+   ],
+   "attache": "Dans la gouttière du cuboïde puis sur la plante, jusqu'au 1er métatarsien et au cunéiforme médial",
+   "role": "Fait glisser le tendon du long fibulaire quand il traverse obliquement la plante et abaisse le bord médial du pied",
+   "rapports": "Le tendon passe dans un tunnel fibreux sous le cuboïde ; il a sa propre gaine après la fibula, distincte de celle du court fibulaire",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Ténosynovite et ruptures au niveau du tunnel du cuboïde ; douleur de la plante du pied en marche",
+   "memo": "Un tendon qui traverse la plante : sa gaine l'accompagne dans le tunnel du cuboïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "sp-peroneal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "retinaculums-cheville",
+   "resume": "Les rétinaculums des extenseurs du cou-de-pied : deux bandes, supérieure et inférieure, qui plaquent les tendons contre la cheville.",
+   "muscles": [
+    "tibial-anterieur",
+    "long-extenseur-hallux",
+    "long-extenseur-orteils",
+    "troisieme-fibulaire"
+   ],
+   "attache": "Du tibia à la fibula (supérieur) ; Y fixé sur le calcanéus (inférieur)",
+   "role": "Empêchent les tendons extenseurs de se tendre en corde devant la cheville pendant la dorsiflexion",
+   "rapports": "Rétinaculum supérieur : bande transversale au-dessus des malléoles. Rétinaculum inférieur : Y avec une boucle autour du long extenseur des orteils et du troisième fibulaire",
+   "reflexe": null,
+   "palpation": "Bandes transversales discrètes devant la cheville, sur les tendons",
+   "clinique": "Entorses de cheville ; la bande peut s'épaissir après des entorses répétées",
+   "memo": "Deux bracelets en haut, un Y en bas",
+   "variantes": "Gray les nomme ligament transverse et ligament croisé de la jambe",
+   "sources": [
+    "gray1918",
+    "kenhub-leg-foot-fascias",
+    "pmc-ankle-us"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendon-long-extenseur-hallux",
+   "resume": "Le tendon qui redresse le gros orteil : il traverse le cou-de-pied et rejoint la phalange distale.",
+   "muscles": [
+    "long-extenseur-hallux"
+   ],
+   "attache": "Base de la phalange distale de l'hallux",
+   "role": "Étend l'hallux et aide à relever le pied",
+   "rapports": "Passe sous les deux rétinaculums des extenseurs, dans une gaine propre, croise l'artère tibiale antérieure de dehors en dedans près de la cheville",
+   "reflexe": null,
+   "palpation": "Corde au milieu du cou-de-pied quand on redresse le gros orteil",
+   "clinique": "Une atteinte du nerf fibulaire profond affaiblit l'extension de l'hallux",
+   "memo": "Le gros orteil a son tendon propre : extenseur de l'hallux",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-ehl"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendons-fibulaires",
+   "resume": "Les tendons des fibulaires long et court : ils passent derrière la malléole latérale et se séparent vers le 5e métatarsien et la plante.",
+   "muscles": [
+    "long-fibulaire",
+    "court-fibulaire"
+   ],
+   "attache": "Court : tubérosité du 5e métatarsien ; long : base du 1er métatarsien et cunéiforme médial",
+   "role": "Évertent le pied et stabilisent la cheville ; le long soutient l'arche transversale",
+   "rapports": "Gaine commune derrière la malléole, sous le rétinaculum supérieur ; le court est devant et en dedans du long",
+   "reflexe": null,
+   "palpation": "Cordes derrière la malléole latérale en éversion contre résistance",
+   "clinique": "Luxation, ruptures longitudinales (court fibulaire surtout), entorses chroniques de cheville",
+   "memo": "Le court devant, le long derrière : la paire du bord latéral",
+   "variantes": "Appelés aussi tendons péroniers",
+   "sources": [
+    "gray1918",
+    "sp-peroneal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "tendons-malleole-mediale",
+   "resume": "Les tendons qui passent derrière la malléole médiale : tibial postérieur, long fléchisseur des orteils et long fléchisseur de l'hallux.",
+   "muscles": [
+    "tibial-posterieur",
+    "long-flechisseur-orteils",
+    "long-flechisseur-hallux"
+   ],
+   "attache": "Tibial postérieur : naviculaire ; long fléchisseur des orteils : phalanges distales 2 à 5 ; long fléchisseur de l'hallux : phalange distale du gros orteil",
+   "role": "Fléchissent la cheville vers la plante et les orteils ; le tibial postérieur soutient la voûte et inverse le pied",
+   "rapports": "Chacun dans sa propre gaine sous le rétinaculum des fléchisseurs, avec le pédicule tibial postérieur entre le 2e et le 3e",
+   "reflexe": null,
+   "palpation": "Cordes derrière la malléole médiale, le tibial postérieur le plus près",
+   "clinique": "Syndrome du tunnel tarsien ; ténosynovite et dysfonction du tibial postérieur",
+   "memo": "Tom, Dick et Harry : tibial postérieur, fléchisseur des orteils, fléchisseur de l'hallux",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "tma-tarsal-tunnel",
+    "sp-loge-posterieure"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "couche-superficielle-du-fascia-temporal",
+   "resume": "La lame fibreuse superficielle du fascia du muscle temporal, qui s'attache au bord latéral de l'arcade zygomatique.",
+   "muscles": [
+    "muscle-temporal"
+   ],
+   "attache": "Ligne temporale supérieure ; en bas, bord latéral de l'arcade zygomatique",
+   "role": "Recouvre le muscle temporal et le protège ; elle sert d'origine à une partie de ses fibres",
+   "rapports": "Entre ses deux feuillets passent un peu de graisse, l'artère temporale superficielle et un filet du nerf zygomatique ; les vaisseaux temporaux superficiels la croisent",
+   "reflexe": null,
+   "palpation": "Creux temporal, ferme sous les doigts",
+   "clinique": "Le muscle temporal et son fascia sont atteints dans les douleurs de mâchoire et les céphalées de tension",
+   "memo": "Le casque du temporal : un seul feuillet en haut, deux en bas",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-temporalis"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-masseterin",
+   "resume": "Le fascia qui recouvre le masséter : prolongement vers le haut de l'enveloppe de la parotide, fixé à l'arcade zygomatique.",
+   "muscles": [
+    "masseter"
+   ],
+   "attache": "Arcade zygomatique en haut ; continu en arrière avec la capsule de la parotide",
+   "role": "Enveloppe le masséter et la parotide, qu'il isole des plans voisins",
+   "rapports": "Appelé aussi fascia parotido-massétérin ; il est issu du feuillet superficiel du fascia cervical",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Une tuméfaction de la parotide, enfermée dans cette loge inextensible, est douloureuse",
+   "memo": "Le manteau du masséter : un seul fascia pour la joue et la parotide",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cervical-fascias",
+    "kenhub-parotid"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-clavipectoral",
+   "resume": "La forte lame fibreuse entre le petit pectoral et le subclavier ; elle protège les vaisseaux et nerfs axillaires.",
+   "muscles": [
+    "petit-pectoral",
+    "subclavier"
+   ],
+   "attache": "Clavicule, première côte, processus coracoïde",
+   "role": "Enveloppe le subclavier et le petit pectoral et forme la paroi antérieure de l'axilla",
+   "rapports": "Le ligament costo-coracoïdien en est le bord épaissi ; la veine céphalique, l'artère acromio-thoracique, le nerf pectoral latéral et des lymphatiques la traversent",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Dans l'axilla, les abcès se ferment le long de ses feuillets ; il est souvent excisé dans les prothèses d'épaule, où sa fibrose raidit l'articulation",
+   "memo": "Un hamac entre la clavicule et la coracoïde : il enferme deux muscles",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-clavipectoral",
+    "kenhub-shoulder-fascias"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "fascia-pectoral",
+   "resume": "Le mince fascia du grand pectoral, avec des prolongements entre ses faisceaux ; il se continue avec le fascia du creux axillaire.",
+   "muscles": [
+    "grand-pectoral"
+   ],
+   "attache": "Sternum, clavicule ; en bas et en dehors, fascias de l'épaule, de l'aisselle et du thorax ; en bas, gaine du droit",
+   "role": "Enveloppe le grand pectoral et forme, en dehors, le fascia axillaire",
+   "rapports": "Plus épais entre le grand pectoral et le grand dorsal, il retient la peau de l'aisselle et creuse le creux axillaire",
+   "reflexe": null,
+   "palpation": null,
+   "clinique": "Les infections du creux axillaire suivent les plans de ce fascia ; le prolongement de la glande mammaire le traverse",
+   "memo": "Un voile sur le pectoral : il creuse le creux de l'aisselle",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-shoulder-fascias"
+   ],
+   "divergences": null
+  }
+ ]
+}
