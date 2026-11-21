@@ -111,10 +111,10 @@ classement (« muscle biceps », « os compact »).
 | 2.6 | Vaisseaux et nerfs tracés (branches, veines satellites, ganglions, plexus) | 16 | 16 |
 | 2.7 | Ligaments, muscles, os et oreille interne modélisés | 8 | 8 |
 | 2.8 | Fiches des nouvelles structures | 8 | 8 |
-| 2.9 | Audit du module et améliorations d'expérience | 12 | 11 |
-| 2.10 | Chaîne relancée, tests, captures, envoi, bilan | 12 | 10 |
+| 2.9 | Audit du module et améliorations d'expérience | 12 | 12 |
+| 2.10 | Chaîne relancée, tests, captures, envoi, bilan | 12 | 12 |
 
-**Deuxième chantier : 97 / 100.**
+**Deuxième chantier : 100 / 100.**
 
 ## Journal
 
@@ -221,6 +221,12 @@ classement (« muscle biceps », « os compact »).
   coquilles du français de la TA2 (moelle, nerf facial, lacrymal, linguale profonde). Le test des gestes mesure
   désormais les mouvements des articulations que le squelette modélise (99 % joués). Contrôlé dans le navigateur :
   structures construites avec leur fiche, en clair et en sombre, sur ordinateur et sur téléphone.
+
+- 21/11 19:32 — Deuxième chantier terminé. Les trois envois (e3dab04, 945aa67, 9c5db63) sont en ligne (Vercel :
+  déploiement réussi). Le bilan « L'Écorché — bilan du grand chantier » a sa section « Deuxième chantier » (tableau
+  par couche, ce qui a été construit, le hors champ) ; ses manques « oreille interne » et « petites structures » sont
+  marqués résolus. Restent hors de portée ici : une mesure de fluidité sur une vraie carte graphique, la relecture
+  des tracés les plus fins par un anatomiste, un modèle libre du labyrinthe pour affiner la forme de l'oreille interne.
 
 ## Pour reprendre après une interruption
 
