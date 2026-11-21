@@ -1,0 +1,1877 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), chap. VI « The Arteries » : artères des membres supérieur et inférieur (texte intégral, Internet Archive)",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "statpearls-axillaire": {
+   "titre": "StatPearls — Anatomy, Shoulder and Upper Limb, Axillary Artery",
+   "url": "https://www.statpearls.com/point-of-care/18054"
+  },
+  "statpearls-epaule": {
+   "titre": "StatPearls (NCBI Bookshelf) — Anatomy, Shoulder and Upper Limb, Shoulder",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK536933/"
+  },
+  "statpearls-brachiale": {
+   "titre": "StatPearls — Anatomy, Shoulder and Upper Limb, Brachial Artery",
+   "url": "https://statpearls.com/sp/al/13/32382/"
+  },
+  "statpearls-radiale": {
+   "titre": "StatPearls — Anatomy, Shoulder and Upper Limb, Forearm Radial Artery",
+   "url": "https://statpearls.com/point-of-care/28160"
+  },
+  "statpearls-ulnaire": {
+   "titre": "StatPearls — Anatomy, Shoulder and Upper Limb, Ulnar Artery",
+   "url": "https://statpearls.com/point-of-care/30731"
+  },
+  "statpearls-femorale": {
+   "titre": "StatPearls — Anatomy, Bony Pelvis and Lower Limb: Femoral Artery",
+   "url": "https://statpearls.com/point-of-care/21675"
+  },
+  "statpearls-poplitee": {
+   "titre": "StatPearls — Anatomy, Bony Pelvis and Lower Limb: Popliteal Artery",
+   "url": "https://statpearls.com/sp/al/21/36323/"
+  },
+  "statpearls-tibiales": {
+   "titre": "StatPearls — Anatomy, Bony Pelvis and Lower Limb: Tibial Artery",
+   "url": "https://statpearls.com/point-of-care/30183"
+  },
+  "statpearls-pied": {
+   "titre": "StatPearls — Anatomy, Bony Pelvis and Lower Limb: Foot Arteries",
+   "url": "https://www.statpearls.com/sp/al/40/32228/"
+  },
+  "statpearls-circonflexe-laterale": {
+   "titre": "StatPearls — Anatomy, Bony Pelvis and Lower Limb: Lateral Circumflex Femoral Artery",
+   "url": "https://www.statpearls.com/point-of-care/24091"
+  },
+  "statpearls-pouls": {
+   "titre": "StatPearls — Peripheral Pulse",
+   "url": "https://statpearls.com/sp/al/8/27016/"
+  },
+  "tma-sup": {
+   "titre": "TeachMeAnatomy — Arterial Supply to the Upper Limb",
+   "url": "https://teachmeanatomy.info/upper-limb/vessels/arteries/"
+  },
+  "tma-inf": {
+   "titre": "TeachMeAnatomy — Arterial Supply to the Lower Limb",
+   "url": "https://teachmeanatomy.info/lower-limb/vessels/arterial-supply"
+  },
+  "openstax": {
+   "titre": "OpenStax, Anatomy and Physiology 2e, 20.5 Circulatory Pathways",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/20-5-circulatory-pathways"
+  },
+  "uams-sup": {
+   "titre": "University of Arkansas for Medical Sciences — Anatomy Tables: Arteries of the Upper Limb",
+   "url": "https://medicine.uams.edu/neuroscience/education/medical-school-courses/human-structure-module/anatomy-tables/artery-tables/arteries-of-the-upper-limb/"
+  },
+  "uams-inf": {
+   "titre": "University of Arkansas for Medical Sciences — Anatomy Tables: Arteries of the Lower Limb",
+   "url": "https://medicine.uams.edu/neuroscience/education/medical-school-courses/human-structure-module/anatomy-tables/artery-tables/arteries-of-the-lower-limb/"
+  },
+  "kenhub-axillaire": {
+   "titre": "Kenhub — Axillary artery",
+   "url": "https://kenhub.com/en/library/anatomy/the-axillary-artery"
+  },
+  "kenhub-membre-sup": {
+   "titre": "Kenhub — Upper limb: arteries, veins and nerves",
+   "url": "https://www.kenhub.com/en/library/anatomy/neurovasculature-of-the-upper-limb"
+  },
+  "kenhub-brachiale": {
+   "titre": "Kenhub — Brachial artery: anatomy and branches",
+   "url": "https://www.kenhub.com/en/library/anatomy/brachial-artery"
+  },
+  "kenhub-profonde-bras": {
+   "titre": "Kenhub — Deep brachial artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/deep-brachial-artery"
+  },
+  "kenhub-radiale": {
+   "titre": "Kenhub — Radial artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/radial-artery"
+  },
+  "kenhub-ulnaire": {
+   "titre": "Kenhub — Ulnar artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-ulnar-artery"
+  },
+  "kenhub-arcade-superficielle": {
+   "titre": "Kenhub — Superficial palmar arch",
+   "url": "https://www.kenhub.com/en/library/anatomy/superficial-palmar-arch"
+  },
+  "kenhub-arcade-profonde": {
+   "titre": "Kenhub — Deep palmar arch",
+   "url": "https://www.kenhub.com/en/library/anatomy/deep-palmar-arch"
+  },
+  "kenhub-interosseuse-commune": {
+   "titre": "Kenhub — Common interosseous artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/common-interosseous-artery"
+  },
+  "kenhub-interosseuse-posterieure": {
+   "titre": "Kenhub — Posterior interosseous artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/posterior-interosseous-artery"
+  },
+  "kenhub-anastomoses-sup": {
+   "titre": "Kenhub — Arterial anastomoses of the upper extremity",
+   "url": "https://www.kenhub.com/en/library/anatomy/arterial-anastomoses-of-the-upper-extremity"
+  },
+  "kenhub-anastomoses-inf": {
+   "titre": "Kenhub — Arterial anastomoses of the lower extremity",
+   "url": "https://www.kenhub.com/en/library/anatomy/arterial-anastomoses-of-the-lower-extremity"
+  },
+  "kenhub-femorale": {
+   "titre": "Kenhub — Femoral artery: anatomy and branches",
+   "url": "https://www.kenhub.com/en/library/anatomy/femoral-artery"
+  },
+  "kenhub-profonde-cuisse": {
+   "titre": "Kenhub — Deep femoral artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/deep-femoral-artery"
+  },
+  "kenhub-circonflexe-laterale": {
+   "titre": "Kenhub — Lateral circumflex femoral artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/lateral-circumflex-femoral-artery"
+  },
+  "kenhub-circonflexe-mediale": {
+   "titre": "Kenhub — Medial circumflex femoral artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/medial-circumflex-femoral-artery"
+  },
+  "kenhub-epigastrique-superficielle": {
+   "titre": "Kenhub — Superficial epigastric artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/superficial-epigastric-artery"
+  },
+  "kenhub-poplitee": {
+   "titre": "Kenhub — Popliteal artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/popliteal-artery"
+  },
+  "kenhub-genou": {
+   "titre": "Kenhub — Knee joint (vascularisation : anastomose du genou)",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-knee-joint"
+  },
+  "kenhub-jambe-pied": {
+   "titre": "Kenhub — Arteries of the leg and foot",
+   "url": "https://www.kenhub.com/en/library/anatomy/arteries-of-the-leg-and-foot"
+  },
+  "kenhub-tibiale-anterieure": {
+   "titre": "Kenhub — Anterior tibial artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/anterior-tibial-artery"
+  },
+  "kenhub-tibiale-posterieure": {
+   "titre": "Kenhub — Posterior tibial artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/posterior-tibial-artery"
+  },
+  "kenhub-fibulaire": {
+   "titre": "Kenhub — Fibular (peroneal) artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/fibular-peroneal-artery"
+  },
+  "kenhub-dorsale-pied": {
+   "titre": "Kenhub — Dorsalis pedis artery",
+   "url": "https://www.kenhub.com/en/library/anatomy/dorsalis-pedis-artery"
+  },
+  "kenhub-arquee": {
+   "titre": "Kenhub — Arcuate artery of the foot",
+   "url": "https://www.kenhub.com/en/library/anatomy/arcuate-artery-of-the-foot"
+  },
+  "kenhub-fr-brachiale": {
+   "titre": "Kenhub (français) — Artère brachiale : anatomie et branches",
+   "url": "https://www.kenhub.com/fr/library/anatomie/artere-brachiale"
+  },
+  "kenhub-fr-femorale": {
+   "titre": "Kenhub (français) — Artère fémorale : anatomie et branches",
+   "url": "https://www.kenhub.com/fr/library/anatomie/artere-femorale"
+  },
+  "kenhub-fr-genou": {
+   "titre": "Kenhub (français) — Articulation du genou",
+   "url": "https://www.kenhub.com/fr/library/anatomie/articulation-du-genou"
+  },
+  "kenhub-fr-main": {
+   "titre": "Kenhub (français) — Anatomie de la main : os, muscles, artères et nerfs",
+   "url": "https://www.kenhub.com/fr/library/anatomie/anatomie-de-la-main"
+  },
+  "radiopaedia-membre-sup": {
+   "titre": "Radiopaedia — Arterial supply of the upper limb",
+   "url": "https://radiopaedia.org/articles/arterial-supply-of-the-upper-limb?lang=us"
+  },
+  "radiopaedia-axillaire": {
+   "titre": "Radiopaedia — Axillary artery",
+   "url": "https://radiopaedia.org/articles/axillary-artery"
+  },
+  "radiopaedia-circonflexe-post-humerus": {
+   "titre": "Radiopaedia — Posterior humeral circumflex artery",
+   "url": "https://radiopaedia.org/articles/47122"
+  },
+  "radiopaedia-main": {
+   "titre": "Radiopaedia — Arterial supply to the hand",
+   "url": "https://radiopaedia.org/articles/arterial-supply-to-the-hand-1"
+  },
+  "radiopaedia-membre-inf": {
+   "titre": "Radiopaedia — Arterial supply of the lower limb",
+   "url": "https://radiopaedia.org/articles/17108"
+  },
+  "radiopaedia-circonflexe-mediale": {
+   "titre": "Radiopaedia — Medial circumflex femoral artery",
+   "url": "https://www.radiopaedia.org/articles/medial-circumflex-femoral-artery?lang=us"
+  },
+  "radiopaedia-poplitee": {
+   "titre": "Radiopaedia — Popliteal artery",
+   "url": "https://radiopaedia.org/articles/popliteal-artery"
+  },
+  "radiopaedia-pied": {
+   "titre": "Radiopaedia — Arterial supply to the foot",
+   "url": "https://radiopaedia.org/articles/arterial-supply-to-the-foot"
+  },
+  "orthobullets-main": {
+   "titre": "Orthobullets — Blood Supply to Hand",
+   "url": "https://www.orthobullets.com/hand/6007/blood-supply-to-hand?hideLeftMenu=true"
+  },
+  "elsevier-plantaire-mediale": {
+   "titre": "Elsevier Complete Anatomy — Medial plantar artery",
+   "url": "https://www.elsevier.com/resources/anatomy/cardiovascular-system/arteries/medial-plantar-artery/20374"
+  },
+  "elsevier-plantaire-mediale-profonde": {
+   "titre": "Elsevier Complete Anatomy — Deep branch of medial plantar artery",
+   "url": "https://www.elsevier.com/resources/anatomy/cardiovascular-system/arteries/deep-branch-of-medial-plantar-artery-right/22581"
+  },
+  "elsevier-metatarsiennes-plantaires": {
+   "titre": "Elsevier Complete Anatomy — Plantar metatarsal arteries",
+   "url": "https://www.elsevier.com/resources/anatomy/cardiovascular-system/arteries/plantar-metatarsal-arteries-right/22132"
+  },
+  "elsevier-digitales-plantaires": {
+   "titre": "Elsevier Complete Anatomy — Plantar digital arteries",
+   "url": "https://www.elsevier.com/resources/anatomy/cardiovascular-system/arteries/plantar-digital-arteries/22589"
+  },
+  "qut-plantaires": {
+   "titre": "Queensland University of Technology, Podiatry Anatomy — Medial and lateral plantar artery",
+   "url": "https://podiatry-anatomy-app.qut.edu.au/content/arteries/medial-and-lateral-plantar-artery.html"
+  },
+  "fmpm-sup": {
+   "titre": "Faculté de médecine et de pharmacie de Marrakech (anatomie) — cours « Vascularisation du membre supérieur »",
+   "url": "https://anatomie-fmpm.uca.ma/wp-content/uploads/2020/09/VASCULARISATION-DU-MEMBRE-SUPERIEUR.pdf"
+  },
+  "fmpm-sup2": {
+   "titre": "Faculté de médecine et de pharmacie de Marrakech (anatomie) — cours « La vascularisation artérielle et veineuse du membre supérieur »",
+   "url": "https://anatomie-fmpm.uca.ma/wp-content/uploads/2021/09/La-Vascularisation-arterielle-et-veineuse-du-membre-superieur.pdf"
+  },
+  "fmpm-inf": {
+   "titre": "Faculté de médecine et de pharmacie de Marrakech (anatomie) — cours « La vascularisation du membre inférieur »",
+   "url": "https://anatomie-fmpm.uca.ma/wp-content/uploads/2021/05/LA-VASCULARISATION-DE-MEMBRE-INFERIEUR.pdf"
+  },
+  "ifaa-ta-femorale": {
+   "titre": "FIPAT / IFAA — Terminologia Anatomica, rameaux de l'artère fémorale (liste latin-français)",
+   "url": "https://ifaa.unifr.ch/Public/TNAEntryPage/auto/tax/LAFR/TAH10479%20T4%20EN.htm"
+  },
+  "wikipedia-fr-axillaire": {
+   "titre": "Wikipédia (français) — Artère axillaire",
+   "url": "https://fr.wikipedia.org/wiki/Art%C3%A8re_axillaire"
+  },
+  "wikipedia-en-axillaire": {
+   "titre": "Wikipedia (anglais) — Axillary artery",
+   "url": "https://en.wikipedia.org/wiki/Axillary_artery"
+  },
+  "wikipedia-metacarpiennes-dorsales": {
+   "titre": "Wikipedia (anglais) — Dorsal metacarpal arteries",
+   "url": "https://en.wikipedia.org/wiki/Dorsal_metacarpal_arteries"
+  },
+  "wikipedia-plantaire-mediale": {
+   "titre": "Wikipedia (anglais) — Medial plantar artery",
+   "url": "https://en.wikipedia.org/wiki/Medial_plantar_artery"
+  },
+  "wikipedia-metatarsiennes-plantaires": {
+   "titre": "Wikipedia (anglais) — Plantar metatarsal arteries",
+   "url": "https://en.wikipedia.org/wiki/Plantar_metatarsal_arteries"
+  },
+  "wikipedia-digitales-plantaires-communes": {
+   "titre": "Wikipedia (anglais) — Common plantar digital arteries",
+   "url": "https://en.wikipedia.org/wiki/Common_plantar_digital_arteries"
+  }
+ },
+ "fiches": [
+  {
+   "id": "radiale",
+   "resume": "L'artère du pouls : née au pli du coude, elle longe le bord latéral de l'avant-bras, contourne le poignet par la tabatière anatomique et forme l'arcade palmaire profonde.",
+   "provenance": {
+    "artere": "humerale",
+    "texte": "Branche terminale latérale de l'artère brachiale, dans la fosse cubitale, à hauteur du col du radius"
+   },
+   "trajet": "Descend sous le bord médial du brachio-radial puis, superficielle, entre son tendon et celui du fléchisseur radial du carpe ; au poignet, contourne le carpe par le fond de la tabatière anatomique, traverse le premier espace interosseux entre les deux chefs du premier interosseux dorsal et gagne la paume",
+   "branches": [
+    { "artere": null, "texte": "Artère récurrente radiale" },
+    { "artere": "branche-carpienne-palmaire-de-l-artere-radiale", "texte": "Rameau carpien palmaire" },
+    { "artere": null, "texte": "Rameau palmaire superficiel" },
+    { "artere": null, "texte": "Rameau carpien dorsal" },
+    { "artere": "arteres-metacarpiennes-dorsales", "texte": "Première artère métacarpienne dorsale" },
+    { "artere": null, "texte": "Artère principale du pouce" },
+    { "artere": null, "texte": "Artère radiale de l'index" }
+   ],
+   "terminaison": "Se continue dans la paume par l'arcade palmaire profonde, que ferme en dedans le rameau palmaire profond de l'artère ulnaire",
+   "territoire": {
+    "texte": "Muscles latéraux de l'avant-bras, coude, os du carpe (dont le scaphoïde), pouce, bord latéral de l'index et plan profond de la paume",
+    "structures": ["brachio-radial", "supinateur", "scaphoide", "adducteur-pouce"]
+   },
+   "rapports": "À l'avant-bras, la branche superficielle du nerf radial la longe en dehors ; au poignet, elle repose sur le radius entre les tendons du brachio-radial et du fléchisseur radial du carpe, puis passe sous les tendons du long abducteur et des extenseurs du pouce",
+   "pouls": {
+    "ou": "Dans la gouttière du pouls, au bas de la face antérieure de l'avant-bras : deux ou trois doigts à plat en dehors du tendon du fléchisseur radial du carpe, l'artère plaquée contre le radius ; il se perçoit aussi au fond de la tabatière anatomique"
+   },
+   "anastomoses": "Avec l'artère ulnaire par les deux arcades palmaires et les réseaux du carpe ; au coude, sa récurrente rejoint l'artère collatérale radiale, branche de l'artère profonde du bras",
+   "clinique": "Voie d'abord des cathétérismes cardiaques, des gaz du sang et des cathéters artériels ; prélevée pour les pontages coronariens. Le test d'Allen vérifie au préalable que l'artère ulnaire suffit à irriguer la main",
+   "memo": "Radiale comme radius, du côté du pouce : le pouls du poignet, puis la tabatière anatomique, puis l'arcade profonde",
+   "variantes": "Naissance haute, au bras ou dans l'aisselle, chez environ une personne sur dix ; trajet parfois superficiel, par-dessus le fascia ou les tendons de la tabatière anatomique",
+   "sources": ["gray1918", "statpearls-radiale", "kenhub-radiale", "uams-sup", "tma-sup", "fmpm-sup2"],
+   "divergences": null
+  },
+  {
+   "id": "femorale",
+   "resume": "La grande artère de la cuisse : elle prolonge l'iliaque externe sous le ligament inguinal, descend en avant puis en dedans du fémur et devient l'artère poplitée.",
+   "provenance": {
+    "artere": "iliaque-externe",
+    "texte": "Fait suite à l'artère iliaque externe en arrière du ligament inguinal, à mi-distance de l'épine iliaque antéro-supérieure et de la symphyse pubienne"
+   },
+   "trajet": "Descend à la face antéro-médiale de la cuisse : d'abord dans le trigone fémoral, superficielle, entre le sartorius et le long adducteur, puis dans le canal des adducteurs, sous le sartorius, jusqu'au hiatus du grand adducteur, à l'union du tiers moyen et du tiers inférieur de la cuisse",
+   "branches": [
+    { "artere": "artere-epigastrique-superficielle", "texte": "Artère épigastrique superficielle" },
+    { "artere": null, "texte": "Artère circonflexe iliaque superficielle" },
+    { "artere": "artere-pudendale-externe-superficielle", "texte": "Artère pudendale externe superficielle" },
+    { "artere": "artere-pudendale-externe-profonde", "texte": "Artère pudendale externe profonde" },
+    { "artere": "femorale-profonde", "texte": "Artère profonde de la cuisse" },
+    { "artere": null, "texte": "Artère descendante du genou" }
+   ],
+   "terminaison": "Devient l'artère poplitée en traversant le hiatus du grand adducteur",
+   "territoire": {
+    "texte": "Peau de l'aine, du bas de l'abdomen et des organes génitaux externes ; muscles et os de la cuisse, surtout par l'artère profonde de la cuisse ; par ses suites, tout le membre inférieur",
+    "structures": ["sartorius", "vaste-medial", "long-adducteur", "pectine", "femur"]
+   },
+   "rapports": "Dans le trigone fémoral, de dehors en dedans : nerf fémoral, artère, veine (artère et veine dans la gaine fémorale, le nerf en dehors d'elle). Dans le canal des adducteurs, la veine passe en arrière de l'artère et le nerf saphène la croise en avant, de dehors en dedans",
+   "pouls": {
+    "ou": "Juste sous le ligament inguinal, à mi-distance de l'épine iliaque antéro-supérieure et de la symphyse pubienne : appuyer franchement vers l'arrière, l'artère s'écrase sur la tête du fémur"
+   },
+   "anastomoses": "Autour de la hanche, les circonflexes et les perforantes rejoignent les branches de l'iliaque interne (glutéales, obturatrice) ; les pudendales externes rejoignent la pudendale interne ; autour du genou, l'artère descendante du genou rejoint les branches de la poplitée",
+   "clinique": "Abord habituel des cathétérismes artériels (coronarographie, angioplastie) : on la ponctionne en regard de la tête fémorale pour pouvoir la comprimer ensuite. Siège fréquent de l'artériopathie des membres inférieurs, cause de claudication du mollet",
+   "memo": "Au pli de l'aine, de dehors en dedans : Nerf, Artère, Veine (NAV) ; la veine est du côté du pubis",
+   "variantes": "Une circonflexe fémorale, médiale ou latérale, naît parfois directement d'elle ; très rarement, une artère sciatique persistante, issue de la glutéale inférieure, la remplace",
+   "sources": ["gray1918", "statpearls-femorale", "kenhub-femorale", "tma-inf", "uams-inf", "kenhub-fr-femorale", "openstax"],
+   "divergences": "Les cliniciens distinguent une fémorale commune, jusqu'à la naissance de la profonde, puis une fémorale superficielle ; la nomenclature anatomique ne connaît qu'une artère fémorale"
+  },
+  {
+   "id": "ulnaire",
+   "resume": "L'artère du bord médial de l'avant-bras (ancienne artère cubitale) : la plus grosse des deux branches de la brachiale, elle gagne la paume et y forme l'arcade palmaire superficielle.",
+   "provenance": {
+    "artere": "humerale",
+    "texte": "Branche terminale médiale, la plus grosse, de l'artère brachiale, dans la fosse cubitale, à hauteur du col du radius"
+   },
+   "trajet": "Oblique en bas et en dedans sous le rond pronateur et les fléchisseurs superficiels, elle atteint le bord médial de l'avant-bras à mi-hauteur, puis descend sous le fléchisseur ulnaire du carpe ; au poignet, elle passe en avant du rétinaculum des fléchisseurs, en dehors du pisiforme, dans le canal ulnaire (loge de Guyon)",
+   "branches": [
+    { "artere": "artere-recurrente-ulnaire", "texte": "Artère récurrente ulnaire (rameaux antérieur et postérieur)" },
+    { "artere": "artere-interosseuse-commune", "texte": "Artère interosseuse commune" },
+    { "artere": null, "texte": "Rameau carpien palmaire" },
+    { "artere": "branche-carpienne-dorsale-de-l-artere-ulnaire", "texte": "Rameau carpien dorsal" },
+    { "artere": null, "texte": "Rameau palmaire profond" }
+   ],
+   "terminaison": "Au-delà du pisiforme, donne son rameau palmaire profond et se continue par l'arcade palmaire superficielle",
+   "territoire": {
+    "texte": "Muscles médiaux et, par les interosseuses, muscles profonds de l'avant-bras ; coude, carpe, muscles hypothénariens, paume superficielle et doigts, sauf le pouce et le bord latéral de l'index",
+    "structures": ["flechisseur-ulnaire-carpe", "flechisseur-profond-doigts", "flechisseur-superficiel-doigts", "abducteur-petit-doigt", "ulna"]
+   },
+   "rapports": "Le nerf médian la croise en avant près de son origine, séparé d'elle par le chef ulnaire du rond pronateur ; le nerf ulnaire la longe en dedans dans les deux tiers inférieurs de l'avant-bras et au poignet",
+   "pouls": {
+    "ou": "Au poignet, juste en dehors du tendon du fléchisseur ulnaire du carpe, au-dessus du pisiforme ; plus profond que le pouls radial, il est moins net et souvent difficile à sentir"
+   },
+   "anastomoses": "Avec l'artère radiale par les deux arcades palmaires et les réseaux du carpe ; au coude, ses récurrentes rejoignent les collatérales ulnaires de l'artère brachiale",
+   "clinique": "Elle irrigue l'essentiel des doigts par l'arcade superficielle : le test d'Allen vérifie sa perméabilité avant toute ponction ou prélèvement de l'artère radiale. Des chocs répétés du talon de la main la thrombosent (syndrome du marteau hypothénarien)",
+   "memo": "Ulnaire comme ulna, du côté du petit doigt : elle passe par-dessus le rétinaculum, hors du canal carpien, et fait l'arcade superficielle",
+   "variantes": "Naissance haute, au bras ou dans l'aisselle (rare) : elle court alors en surface, devant les muscles fléchisseurs, sous le fascia ou sous la peau",
+   "sources": ["gray1918", "statpearls-ulnaire", "kenhub-ulnaire", "uams-sup", "fmpm-sup2"],
+   "divergences": "Le rameau carpien dorsal est cité avant ou après le rameau carpien palmaire selon les ouvrages : tous deux naissent au poignet. La Terminologia Anatomica décrit une artère récurrente ulnaire à deux rameaux, Gray deux artères récurrentes distinctes"
+  },
+  {
+   "id": "humerale",
+   "resume": "L'artère brachiale (ancienne artère humérale) : artère principale du bras, elle prolonge l'axillaire, descend en dedans du biceps et se divise au pli du coude en radiale et ulnaire.",
+   "provenance": {
+    "artere": "axillaire",
+    "texte": "Fait suite à l'artère axillaire au bord inférieur du tendon du grand rond"
+   },
+   "trajet": "Superficielle sur toute sa longueur, elle descend dans le sillon situé en dedans du biceps, d'abord en dedans de l'humérus puis en avant de lui, sur le triceps puis sur le brachial ; au coude, elle passe sous l'aponévrose bicipitale, en dedans du tendon du biceps",
+   "branches": [
+    { "artere": "humerale-profonde", "texte": "Artère profonde du bras" },
+    { "artere": null, "texte": "Artère nourricière de l'humérus" },
+    { "artere": "artere-collaterale-ulnaire", "texte": "Artère collatérale ulnaire supérieure" },
+    { "artere": "artere-collaterale-ulnaire-inferieure", "texte": "Artère collatérale ulnaire inférieure" },
+    { "artere": "radiale", "texte": "Artère radiale (branche terminale latérale)" },
+    { "artere": "ulnaire", "texte": "Artère ulnaire (branche terminale médiale)" }
+   ],
+   "terminaison": "Se divise en artères radiale et ulnaire dans la fosse cubitale, environ 1 cm sous l'interligne du coude, à hauteur du col du radius",
+   "territoire": {
+    "texte": "Muscles des loges antérieure et postérieure du bras, humérus, articulation du coude ; par ses branches terminales, l'avant-bras et la main",
+    "structures": ["biceps-brachial", "brachial", "coraco-brachial", "triceps-brachial", "humerus"]
+   },
+   "rapports": "Le nerf médian, d'abord en dehors, la croise en avant vers le milieu du bras et se place en dedans ; le nerf ulnaire et la veine basilique sont en dedans d'elle dans la moitié supérieure ; au coude, l'aponévrose bicipitale la sépare de la veine médiane du coude",
+   "pouls": {
+    "ou": "Au bras, dans le sillon en dedans du biceps, en appuyant en dehors contre l'humérus ; au pli du coude, juste en dedans du tendon du biceps, là où l'on pose le stéthoscope pour mesurer la tension"
+   },
+   "anastomoses": "Réseau artériel du coude : ses collatérales (profonde du bras, ulnaires supérieure et inférieure) rejoignent les récurrentes radiale, ulnaire et interosseuse, ce qui supplée une obstruction située au-dessous de la profonde du bras",
+   "clinique": "Artère de la mesure de la tension : brassard au bras, stéthoscope au pli du coude. Menacée par la fracture supracondylienne de l'enfant ; l'ischémie des fléchisseurs de l'avant-bras qui s'ensuit laisse une rétraction en griffe (syndrome de Volkmann)",
+   "memo": "Le brassard à tension l'écrase contre l'humérus ; le nerf médian la croise en X, de dehors en dedans",
+   "variantes": "Division haute, au bras : le plus souvent c'est la radiale qui naît haut (environ une personne sur dix) ; l'artère profonde du bras naît parfois de l'axillaire ; trajet possible derrière un processus supracondylaire",
+   "sources": ["gray1918", "statpearls-brachiale", "kenhub-brachiale", "kenhub-fr-brachiale", "kenhub-membre-sup", "tma-sup", "uams-sup", "fmpm-sup", "fmpm-sup2"],
+   "divergences": "Les traités français classiques la font commencer au bord inférieur du grand pectoral ; la nomenclature internationale et les ouvrages anglo-saxons, au bord inférieur du grand rond"
+  },
+  {
+   "id": "axillaire",
+   "resume": "L'artère de l'aisselle : elle prolonge la subclavière, traverse le creux axillaire au milieu du plexus brachial, donne six branches à l'épaule et au thorax et devient l'artère brachiale.",
+   "provenance": {
+    "artere": "subclaviere",
+    "texte": "Fait suite à l'artère subclavière au bord latéral de la première côte, derrière le milieu de la clavicule"
+   },
+   "trajet": "Traverse le creux de l'aisselle en bas et en dehors, entourée des faisceaux du plexus brachial ; le petit pectoral, qui la croise en avant, la partage en trois portions : au-dessus, en arrière et au-dessous du muscle",
+   "branches": [
+    { "artere": null, "texte": "Artère thoracique supérieure (1re portion)" },
+    { "artere": "artere-thoraco-acromiale", "texte": "Artère thoraco-acromiale (2e portion)" },
+    { "artere": "artere-thoracique-laterale", "texte": "Artère thoracique latérale (2e portion)" },
+    { "artere": "artere-subscapulaire", "texte": "Artère subscapulaire (3e portion)" },
+    { "artere": "artere-circonflexe-anterieure-de-l-humerus", "texte": "Artère circonflexe antérieure de l'humérus (3e portion)" },
+    { "artere": "artere-circonflexe-posterieure-de-l-humerus", "texte": "Artère circonflexe postérieure de l'humérus (3e portion)" }
+   ],
+   "terminaison": "Devient l'artère brachiale au bord inférieur du tendon du grand rond",
+   "territoire": {
+    "texte": "Paroi latérale du thorax et sein, muscles pectoraux, moignon de l'épaule, scapula et muscles de l'aisselle, tête de l'humérus ; par ses suites, tout le membre supérieur",
+    "structures": ["grand-pectoral", "petit-pectoral", "dentele-anterieur", "deltoide", "subscapulaire", "grand-dorsal", "scapula"]
+   },
+   "rapports": "La veine axillaire reste en dedans d'elle. Les faisceaux latéral, médial et postérieur du plexus brachial tirent leur nom de leur place autour de sa deuxième portion ; autour de la troisième : nerfs médian et musculo-cutané en dehors, ulnaire en dedans, radial et axillaire en arrière",
+   "pouls": {
+    "ou": "Au fond du creux de l'aisselle, bras relâché et à peine écarté du corps : appuyer vers le haut et le dehors pour écraser l'artère contre l'humérus, en arrière du relief du coraco-brachial"
+   },
+   "anastomoses": "Cercle artériel de la scapula : l'artère circonflexe de la scapula, branche de la subscapulaire, rejoint les artères suprascapulaire et dorsale de la scapula, nées de la subclavière ; cette voie supplée une obstruction située en amont de la subscapulaire",
+   "clinique": "Une luxation de l'épaule, une fracture du col de l'humérus ou une plaie de l'aisselle peuvent la léser ; les suppléances de l'épaule masquent parfois l'ischémie du bras. Un anévrisme comprime le plexus brachial : fourmillements, faiblesse",
+   "memo": "Un, deux, trois : une branche pour la première portion, deux pour la deuxième, trois pour la troisième",
+   "variantes": "Branches très variables : tronc commun fréquent entre la subscapulaire et la circonflexe postérieure, ou entre les deux circonflexes ; division haute en radiale et ulnaire chez 5 à 10 % des personnes",
+   "sources": ["gray1918", "statpearls-axillaire", "statpearls-epaule", "kenhub-axillaire", "radiopaedia-axillaire", "radiopaedia-membre-sup", "tma-sup", "uams-sup", "wikipedia-en-axillaire", "wikipedia-fr-axillaire", "fmpm-sup", "fmpm-sup2"],
+   "divergences": "Gray (1918) cite la circonflexe postérieure avant l'antérieure : elles naissent face à face, au même niveau. Les traités français classiques terminent l'artère au bord inférieur du grand pectoral ; la nomenclature internationale, au bord inférieur du grand rond"
+  },
+  {
+   "id": "poplitee",
+   "resume": "L'artère du creux du genou : elle prolonge la fémorale, descend derrière le genou au contact de l'os, donne les artères du genou et se divise en tibiales antérieure et postérieure.",
+   "provenance": {
+    "artere": "femorale",
+    "texte": "Fait suite à l'artère fémorale au hiatus du grand adducteur, à l'union du tiers moyen et du tiers inférieur de la cuisse"
+   },
+   "trajet": "Oblique en bas et en dehors jusqu'au milieu de la fosse poplitée, puis verticale, plaquée contre la face postérieure du fémur, la capsule du genou et le muscle poplité ; elle s'engage entre les deux chefs du gastrocnémien",
+   "branches": [
+    { "artere": "artere-superieure-mediale-du-genou", "texte": "Artère supérieure médiale du genou" },
+    { "artere": "artere-superieure-laterale-du-genou", "texte": "Artère supérieure latérale du genou" },
+    { "artere": "artere-moyenne-du-genou", "texte": "Artère moyenne du genou" },
+    { "artere": null, "texte": "Artères surales (pour le gastrocnémien, le soléaire et le plantaire)" },
+    { "artere": "artere-inferomediale-du-genou", "texte": "Artère inféro-médiale du genou" },
+    { "artere": "artere-inferolaterale-du-genou", "texte": "Artère inféro-latérale du genou" },
+    { "artere": "tibiale-anterieure", "texte": "Artère tibiale antérieure (branche terminale)" },
+    { "artere": "tibiale-posterieure", "texte": "Artère tibiale postérieure (branche terminale)" }
+   ],
+   "terminaison": "Se divise au bord inférieur du muscle poplité en artères tibiale antérieure et tibiale postérieure",
+   "territoire": {
+    "texte": "Articulation du genou, bas des ischio-jambiers et du grand adducteur, muscles du mollet, peau de la face postérieure de la jambe ; par ses branches terminales, la jambe et le pied",
+    "structures": ["gastrocnemien", "soleaire", "plantaire", "poplite", "capsule-articulaire-du-genou", "ligament-croise-anterieur", "ligament-croise-posterieur"]
+   },
+   "rapports": "Élément le plus profond de la fosse poplitée, contre le plan osseux : en arrière d'elle la veine poplitée, qui lui adhère, puis le nerf tibial, le plus superficiel ; veine et nerf la croisent de dehors en dedans",
+   "pouls": {
+    "ou": "Genou fléchi et relâché, les doigts des deux mains crochetés au milieu du creux poplité : appuyer profondément vers l'avant pour plaquer l'artère contre l'os ; c'est le pouls le plus difficile à trouver"
+   },
+   "anastomoses": "Réseau artériel du genou : ses artères supérieures et inférieures du genou s'y unissent à l'artère descendante du genou (fémorale), au rameau descendant de la circonflexe fémorale latérale et aux récurrentes tibiales ; en haut, ses rameaux musculaires rejoignent la profonde de la cuisse",
+   "clinique": "Siège le plus fréquent des anévrismes périphériques, une fois sur deux bilatéral et souvent associé à un anévrisme de l'aorte. Fixée derrière le genou, elle se rompt dans 4 à 20 % des luxations : palper les pouls du pied avant et après réduction",
+   "memo": "Tout au fond du creux du genou, contre l'os : la plus profonde, donc la plus difficile à palper",
+   "variantes": "Division habituelle chez neuf personnes sur dix ; sinon vraie trifurcation (tibiale antérieure, tibiale postérieure, fibulaire), naissance haute de la tibiale antérieure au-dessus du muscle poplité, ou tibiale postérieure grêle",
+   "sources": ["gray1918", "statpearls-poplitee", "kenhub-poplitee", "radiopaedia-poplitee", "radiopaedia-membre-inf", "tma-inf", "uams-inf"],
+   "divergences": "Gray et la nomenclature anatomique décrivent une division en tibiales antérieure et postérieure ; radiologues et chirurgiens parlent d'une tibiale antérieure et d'un tronc tibio-fibulaire, qui donne la tibiale postérieure et la fibulaire"
+  },
+  {
+   "id": "femorale-profonde",
+   "resume": "L'artère profonde de la cuisse (fémorale profonde) : la plus grosse branche de la fémorale, véritable artère nourricière de la cuisse, de ses muscles et du fémur.",
+   "provenance": {
+    "artere": "femorale",
+    "texte": "Naît de la face postéro-latérale de l'artère fémorale, dans le trigone fémoral, à 3 ou 4 cm sous le ligament inguinal"
+   },
+   "trajet": "D'abord en dehors puis en arrière de l'artère et de la veine fémorales, elle descend au ras du fémur : entre le pectiné et le long adducteur, puis derrière le long adducteur, sur le court puis le grand adducteur",
+   "branches": [
+    { "artere": "circonflexe-femorale-laterale", "texte": "Artère circonflexe fémorale latérale" },
+    { "artere": "artere-circonflexe-mediale-de-la-cuisse", "texte": "Artère circonflexe fémorale médiale" },
+    { "artere": "arteres-femorales-perforantes", "texte": "Artères perforantes (trois, plus la terminaison)" }
+   ],
+   "terminaison": "S'épuise au tiers inférieur de la cuisse en une dernière branche qui traverse le grand adducteur : la quatrième perforante",
+   "territoire": {
+    "texte": "Quadriceps, adducteurs, ischio-jambiers, fémur (artère nourricière) et, par les circonflexes, hanche, tête et col du fémur",
+    "structures": ["vaste-lateral", "grand-adducteur", "court-adducteur", "biceps-femoral", "semi-membraneux", "femur"]
+   },
+   "rapports": "Séparée de l'artère fémorale par les veines fémorale et profonde de la cuisse en haut, puis par le long adducteur ; elle repose successivement sur l'iliaque, le pectiné, le court adducteur et le grand adducteur",
+   "pouls": null,
+   "anastomoses": "Anastomose cruciforme derrière le haut du fémur (première perforante, les deux circonflexes, glutéale inférieure) ; en bas, sa terminaison et ses perforantes rejoignent les rameaux musculaires de la poplitée",
+   "clinique": "Quand l'artère fémorale se bouche au-dessous de sa naissance, c'est elle qui maintient le membre en vie grâce à ses anastomoses avec la poplitée : le débit en aval est alors meilleur qu'attendu. Faux anévrismes décrits après fracture du massif trochantérien",
+   "memo": "La fémorale traverse la cuisse, la profonde la nourrit",
+   "variantes": "Naît entre 2 et 5 cm sous le ligament inguinal dans trois quarts des cas, rarement plus haut ou plus bas ; une circonflexe naît souvent directement de la fémorale (la médiale dans 20 à 40 % des cas, la latérale dans environ 14 %)",
+   "sources": ["gray1918", "kenhub-profonde-cuisse", "kenhub-femorale", "tma-inf", "uams-inf", "statpearls-femorale"],
+   "divergences": "Les deux circonflexes naissent près de l'origine et leur ordre varie : Gray, Kenhub et StatPearls citent la latérale en premier ; Radiopaedia et l'ordre de la Terminologia Anatomica, la médiale"
+  },
+  {
+   "id": "artere-moyenne-du-genou",
+   "resume": "La seule artère du genou qui entre dans l'articulation : petite branche impaire de la poplitée, elle traverse la capsule postérieure pour nourrir les ligaments croisés.",
+   "provenance": {
+    "artere": "poplitee",
+    "texte": "Naît de la face antérieure de l'artère poplitée, en regard de l'interligne du genou, derrière l'échancrure intercondylaire du fémur"
+   },
+   "trajet": "Courte, elle se dirige droit en avant, perfore le ligament poplité oblique et la capsule postérieure, et pénètre dans l'échancrure intercondylaire",
+   "branches": [],
+   "terminaison": "Se ramifie dans les ligaments croisés et la membrane synoviale",
+   "territoire": {
+    "texte": "Ligaments croisés (le postérieur et la partie postérieure de l'antérieur), membrane synoviale, cornes postérieures des ménisques",
+    "structures": ["ligament-croise-anterieur", "ligament-croise-posterieur", "menisque-medial", "menisque-lateral", "capsule-articulaire-du-genou"]
+   },
+   "rapports": "Elle traverse le plan fibreux postérieur du genou au lieu de contourner les condyles comme les quatre autres artères du genou",
+   "pouls": null,
+   "anastomoses": "Reste intra-articulaire : contrairement aux artères supérieures et inférieures du genou, elle ne contribue guère au réseau patellaire",
+   "clinique": "Artère des ligaments croisés : quand le ligament croisé antérieur se rompt, ses rameaux se déchirent et le genou se remplit de sang en quelques heures (hémarthrose)",
+   "memo": "Moyenne = au milieu : ni dessus ni dessous, elle va droit au centre du genou, vers le pivot des ligaments croisés",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-poplitee", "statpearls-poplitee", "uams-inf"],
+   "divergences": null
+  },
+  {
+   "id": "artere-pudendale-externe-superficielle",
+   "resume": "Petite artère cutanée née de la fémorale à l'aine : elle croise le cordon spermatique ou le ligament rond et irrigue la peau du pubis et des organes génitaux externes.",
+   "provenance": {
+    "artere": "femorale",
+    "texte": "Naît de la face médiale de l'artère fémorale, juste sous le ligament inguinal, près de l'épigastrique superficielle et de la circonflexe iliaque superficielle"
+   },
+   "trajet": "Traverse la gaine fémorale et le fascia criblé, puis se porte en dedans sous la peau, en croisant le cordon spermatique chez l'homme, le ligament rond de l'utérus chez la femme",
+   "branches": [],
+   "terminaison": "Se ramifie dans la peau du bas de l'abdomen, du pénis et du scrotum, ou des grandes lèvres",
+   "territoire": {
+    "texte": "Peau de la région pubienne et du bas de l'abdomen, peau du pénis et du scrotum chez l'homme, des grandes lèvres chez la femme",
+    "structures": []
+   },
+   "rapports": "Elle croise la terminaison de la grande veine saphène, le plus souvent en passant sous elle, puis passe en avant du cordon spermatique",
+   "pouls": null,
+   "anastomoses": "Avec les rameaux de l'artère pudendale interne",
+   "clinique": "Repère et source de saignement dans la chirurgie de la crosse de la grande veine saphène (varices), qu'elle croise. Avec la pudendale externe profonde, elle relie l'artère fémorale à la pudendale interne : voie de suppléance",
+   "memo": "Pudendale « externe » : née de la fémorale, hors du bassin ; la pudendale « interne » vient de l'iliaque interne",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-femorale", "uams-inf", "ifaa-ta-femorale"],
+   "divergences": "Nomenclature : la liste latin-français de l'IFAA et les cours classiques gardent « artère honteuse externe » superficielle (ou supérieure) ; les ouvrages récents en français disent « pudendale externe »"
+  },
+  {
+   "id": "artere-superieure-mediale-du-genou",
+   "resume": "Artère du genou qui contourne le fémur au-dessus du condyle médial : branche de la poplitée, elle rejoint en avant le réseau artériel qui entoure la patella.",
+   "provenance": {
+    "artere": "poplitee",
+    "texte": "Naît de l'artère poplitée dans le haut de la fosse poplitée, au-dessus du condyle médial du fémur"
+   },
+   "trajet": "Contourne le fémur en dedans, au-dessus du condyle médial et du chef médial du gastrocnémien, en avant du semi-membraneux et du semi-tendineux, puis passe sous le tendon du grand adducteur",
+   "branches": [
+    { "artere": null, "texte": "Rameau pour le vaste médial" },
+    { "artere": null, "texte": "Rameau osseux et articulaire, plaqué contre le fémur" }
+   ],
+   "terminaison": "Se jette dans le réseau patellaire, à la face antéro-médiale du genou",
+   "territoire": {
+    "texte": "Vaste médial, extrémité inférieure du fémur (condyle médial), capsule et synoviale du genou, bord supéro-médial de la patella",
+    "structures": ["vaste-medial", "femur", "patella", "capsule-articulaire-du-genou"]
+   },
+   "rapports": "Plaquée contre le fémur, elle croise par en dessous le tendon du grand adducteur",
+   "pouls": null,
+   "anastomoses": "Avec l'artère descendante du genou, l'artère inféro-médiale et l'artère supérieure latérale du genou",
+   "clinique": "Souvent grêle : l'artère descendante du genou, branche de la fémorale, est alors plus grosse et la supplée. Elle fait partie des voies qui contournent une artère poplitée obstruée",
+   "memo": "Supérieure : au-dessus du condyle ; médiale : du côté du grand adducteur, dont elle croise le tendon par en dessous",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-poplitee", "kenhub-anastomoses-inf", "uams-inf"],
+   "divergences": null
+  },
+  {
+   "id": "reseau-patellaire",
+   "resume": "Le filet d'artères qui entoure la patella et les extrémités du fémur et du tibia : il nourrit le genou et relie entre elles les artères fémorale, poplitée et tibiale antérieure.",
+   "provenance": {
+    "artere": "poplitee",
+    "texte": "Réseau anastomotique alimenté surtout par les artères supérieures et inférieures du genou, branches de la poplitée, avec des apports de la fémorale, de la profonde de la cuisse et de la tibiale antérieure"
+   },
+   "trajet": "S'étale autour de la patella en deux plans : un plan superficiel, entre le fascia et la peau, fait d'une arcade au-dessus de la patella et de deux arcades au-dessous, derrière le ligament patellaire ; un plan profond, serré contre le fémur et le tibia, autour des surfaces articulaires",
+   "branches": [
+    { "artere": null, "texte": "Rameaux osseux pour la patella et les extrémités du fémur et du tibia" },
+    { "artere": null, "texte": "Rameaux articulaires pour la capsule et la synoviale" }
+   ],
+   "terminaison": "Ses mailles se résolvent en rameaux pour la patella, les os voisins, la capsule, la synoviale et la peau du genou",
+   "territoire": {
+    "texte": "Patella, extrémités du fémur et du tibia, capsule et synoviale du genou, tendon quadricipital, ligament patellaire, peau de la face antérieure du genou",
+    "structures": ["patella", "capsule-articulaire-du-genou", "ligament-patellaire", "tendon-quadricipital", "femur", "tibia"]
+   },
+   "rapports": null,
+   "pouls": null,
+   "anastomoses": "Y convergent les artères supérieures et inférieures, médiales et latérales, du genou (poplitée), l'artère descendante du genou (fémorale), le rameau descendant de la circonflexe fémorale latérale et la récurrente tibiale antérieure ; s'y ajoutent la récurrente tibiale postérieure et le rameau circonflexe de la fibula",
+   "clinique": "Voie de suppléance quand l'artère fémorale ou la poplitée se bouche lentement. Mais ces anastomoses sont grêles et inconstantes (une étude de dissection de 2013 n'a pas retrouvé de communication franche), d'où la gravité d'une interruption brutale de la poplitée",
+   "memo": "Quatre artères du genou en cadre autour de la patella, renforcées d'en haut par la fémorale et d'en bas par la tibiale antérieure",
+   "variantes": "Calibre et communications très variables d'une personne à l'autre",
+   "sources": ["gray1918", "kenhub-anastomoses-inf", "kenhub-genou", "kenhub-fr-genou", "kenhub-tibiale-anterieure"],
+   "divergences": "Gray (1918) ne compte pas l'artère moyenne du genou parmi ses sources ; Kenhub décrit une anastomose du genou à une dizaine d'artères, moyenne comprise"
+  },
+  {
+   "id": "artere-epigastrique-superficielle",
+   "resume": "Fine artère sous-cutanée née de la fémorale à l'aine : elle remonte par-dessus le ligament inguinal vers l'ombilic et irrigue la peau du bas de l'abdomen.",
+   "provenance": {
+    "artere": "femorale",
+    "texte": "Naît de la face antérieure de l'artère fémorale, environ 1 cm sous le ligament inguinal"
+   },
+   "trajet": "Traverse la gaine fémorale et le fascia criblé, croise en avant le ligament inguinal et monte dans le tissu sous-cutané de la paroi abdominale, entre les deux feuillets du fascia superficiel, presque jusqu'à l'ombilic",
+   "branches": [],
+   "terminaison": "S'épuise sous la peau de la région de l'ombilic",
+   "territoire": {
+    "texte": "Peau et tissu sous-cutané de la paroi abdominale au-dessous de l'ombilic, nœuds lymphatiques inguinaux superficiels",
+    "structures": []
+   },
+   "rapports": "Entièrement superficielle au-dessus du ligament inguinal, en avant de l'aponévrose de l'oblique externe",
+   "pouls": null,
+   "anastomoses": "Avec l'artère épigastrique inférieure et avec son homologue du côté opposé",
+   "clinique": "Son territoire cutané, sous l'ombilic, sert en chirurgie reconstructrice : un lambeau de peau et de graisse du bas-ventre peut vivre sur elle seule, sans prélever de muscle (reconstruction du sein)",
+   "memo": "Épigastrique « superficielle » : sous la peau, née de la fémorale ; l'épigastrique inférieure, profonde, vient de l'iliaque externe",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-epigastrique-superficielle", "uams-inf", "fmpm-inf"],
+   "divergences": "Nomenclature : le cours de Marrakech emploie encore l'ancien nom, artère sous-cutanée abdominale"
+  },
+  {
+   "id": "tibiale-anterieure",
+   "resume": "L'artère de la loge antérieure de la jambe : née de la poplitée, elle passe en avant par-dessus la membrane interosseuse et descend jusqu'au cou-de-pied, où elle devient l'artère dorsale du pied.",
+   "provenance": {
+    "artere": "poplitee",
+    "texte": "Branche terminale antérieure de l'artère poplitée, au bord inférieur du muscle poplité"
+   },
+   "trajet": "Se porte en avant entre les deux chefs du tibial postérieur, franchit le bord supérieur de la membrane interosseuse en dedans du col de la fibula, puis descend dans la loge antérieure, sur la membrane puis sur le tibia, jusqu'au milieu du cou-de-pied",
+   "branches": [
+    { "artere": null, "texte": "Artère récurrente tibiale postérieure (inconstante)" },
+    { "artere": null, "texte": "Artère récurrente tibiale antérieure" },
+    { "artere": null, "texte": "Artère malléolaire antérieure médiale" },
+    { "artere": null, "texte": "Artère malléolaire antérieure latérale" }
+   ],
+   "terminaison": "Devient l'artère dorsale du pied en avant de l'articulation de la cheville, à mi-distance des deux malléoles",
+   "territoire": {
+    "texte": "Muscles de la loge antérieure de la jambe et peau en regard, genou par ses récurrentes, cheville par ses malléolaires ; par sa suite, le dos du pied",
+    "structures": ["tibial-anterieur", "long-extenseur-orteils", "long-extenseur-hallux", "troisieme-fibulaire", "tibia"]
+   },
+   "rapports": "Entre le tibial antérieur en dedans et, en dehors, le long extenseur des orteils puis le long extenseur de l'hallux ; le nerf fibulaire profond l'accompagne, en dehors puis en avant d'elle ; au cou-de-pied, le tendon du long extenseur de l'hallux la croise de dehors en dedans",
+   "pouls": null,
+   "anastomoses": "Réseau du genou par ses récurrentes ; réseaux des malléoles, où ses malléolaires rejoignent les rameaux de la tibiale postérieure et le rameau perforant de l'artère fibulaire",
+   "clinique": "Artère d'une loge inextensible : après un traumatisme ou une revascularisation, l'œdème y écrase vaisseaux et nerf (syndrome des loges), urgence qui impose d'ouvrir le fascia. Son pouls se cherche au dos du pied, sur l'artère dorsale du pied",
+   "memo": "Elle enjambe la membrane interosseuse pour passer devant, puis descend avec le nerf fibulaire profond",
+   "variantes": "Parfois grêle ou absente, remplacée par des perforantes de la tibiale postérieure ou par le rameau perforant de la fibulaire ; naissance haute, au-dessus du muscle poplité, dans 1 à 4 % des cas",
+   "sources": ["gray1918", "kenhub-tibiale-anterieure", "statpearls-tibiales", "radiopaedia-poplitee", "tma-inf", "uams-inf"],
+   "divergences": "Le rameau circonflexe de la fibula est rattaché tantôt à la tibiale antérieure, tantôt à la tibiale postérieure (Gray admet les deux origines)"
+  },
+  {
+   "id": "tibiale-posterieure",
+   "resume": "L'artère de la loge postérieure de la jambe : née de la poplitée, elle descend derrière le tibia, passe derrière la malléole médiale et se divise en artères plantaires.",
+   "provenance": {
+    "artere": "poplitee",
+    "texte": "Branche terminale postérieure de l'artère poplitée, au bord inférieur du muscle poplité"
+   },
+   "trajet": "Descend dans la loge postérieure profonde, sous le soléaire et le fascia profond, sur le tibial postérieur puis le long fléchisseur des orteils, en se rapprochant du bord médial de la jambe ; superficielle en bas, elle longe le bord médial du tendon calcanéen et passe derrière la malléole médiale, sous le rétinaculum des fléchisseurs",
+   "branches": [
+    { "artere": null, "texte": "Rameau circonflexe de la fibula" },
+    { "artere": "fibulaire", "texte": "Artère fibulaire" },
+    { "artere": null, "texte": "Artère nourricière du tibia" },
+    { "artere": null, "texte": "Rameau communicant (vers l'artère fibulaire)" },
+    { "artere": null, "texte": "Rameaux malléolaires médiaux" },
+    { "artere": "rameaux-calcaneens-de-l-artere-tibiale-posterieure", "texte": "Rameaux calcanéens" },
+    { "artere": "artere-plantaire-mediale", "texte": "Artère plantaire médiale (branche terminale)" },
+    { "artere": "artere-plantaire-laterale", "texte": "Artère plantaire latérale (branche terminale)" }
+   ],
+   "terminaison": "Se divise en artères plantaires médiale et latérale sous le rétinaculum des fléchisseurs, à mi-distance de la malléole médiale et du talon, sous l'origine de l'abducteur de l'hallux",
+   "territoire": {
+    "texte": "Muscles de la loge postérieure de la jambe, tibia (artère nourricière), fibula et loge latérale par l'artère fibulaire, talon, plante du pied et orteils",
+    "structures": ["soleaire", "tibial-posterieur", "long-flechisseur-orteils", "long-flechisseur-hallux", "poplite", "tibia", "calcaneus"]
+   },
+   "rapports": "Le nerf tibial, d'abord en dedans, la croise en arrière et se place en dehors d'elle. Derrière la malléole médiale, d'avant en arrière : tendons du tibial postérieur et du long fléchisseur des orteils, artère entre ses deux veines, nerf tibial, tendon du long fléchisseur de l'hallux",
+   "pouls": {
+    "ou": "Derrière et un peu au-dessous de la malléole médiale, à mi-chemin entre la malléole et le tendon calcanéen, pied relâché : trois doigts posés dans la gouttière, l'artère pressée contre l'os"
+   },
+   "anastomoses": "Avec l'artère fibulaire par le rameau communicant et les rameaux calcanéens ; réseau de la malléole médiale ; dans le pied, l'arcade plantaire s'unit à l'artère plantaire profonde, issue de la dorsale du pied",
+   "clinique": "Son pouls sert à mesurer l'index de pression systolique : pression à la cheville divisée par la pression au bras ; 0,9 ou moins signe une artériopathie des membres inférieurs. C'est le pouls du pied le plus difficile à percevoir, surtout en cas d'œdème",
+   "memo": "Derrière la malléole médiale, d'avant en arrière : Tibial postérieur, long fléchisseur des orteils, Artère, Nerf, long fléchisseur de l'Hallux",
+   "variantes": "Grêle ou absente dans environ 5 % des membres : une grosse artère fibulaire la remplace alors jusqu'à la plante",
+   "sources": ["gray1918", "kenhub-tibiale-posterieure", "kenhub-jambe-pied", "statpearls-tibiales", "statpearls-pied", "statpearls-pouls", "tma-inf", "uams-inf"],
+   "divergences": "Pour les cliniciens, la poplitée donne la tibiale antérieure et un tronc tibio-fibulaire, qui se divise en tibiale postérieure et fibulaire ; les anatomistes font de ce tronc le début de la tibiale postérieure, et de la fibulaire sa branche"
+  },
+  {
+   "id": "arcade-palmaire-superficielle",
+   "resume": "L'arcade artérielle la plus superficielle de la paume : prolongement de l'artère ulnaire, juste sous l'aponévrose palmaire, elle distribue les artères des quatre derniers doigts.",
+   "provenance": {
+    "artere": "ulnaire",
+    "texte": "Continuation de l'artère ulnaire dans la paume, au-delà du pisiforme, après la naissance de son rameau palmaire profond"
+   },
+   "trajet": "Décrit dans la paume une courbe à convexité distale, sous le court palmaire et l'aponévrose palmaire, en avant des tendons fléchisseurs, des lombricaux et des branches des nerfs médian et ulnaire ; son sommet se projette à hauteur du bord distal du pouce écarté",
+   "branches": [
+    { "artere": "arteres-digitales-palmaires-propres", "texte": "Artère digitale palmaire propre du bord ulnaire du petit doigt" },
+    { "artere": "arteres-digitales-palmaires-communes", "texte": "Trois artères digitales palmaires communes" }
+   ],
+   "terminaison": "Fermée en dehors par une branche de l'artère radiale : rameau palmaire superficiel, artère radiale de l'index ou artère principale du pouce",
+   "territoire": {
+    "texte": "Plan superficiel de la paume, lombricaux, quatre derniers doigts (sauf le bord latéral de l'index) : faces palmaires, pulpes et dos des deux dernières phalanges",
+    "structures": ["lombricaux-de-la-main", "phalanges-proximales", "phalanges-moyennes", "phalanges-distales"]
+   },
+   "rapports": "En avant du rétinaculum des fléchisseurs puis des tendons fléchisseurs ; elle est plus distale que l'arcade profonde, d'environ 1 cm",
+   "pouls": null,
+   "anastomoses": "Avec l'arcade palmaire profonde : chaque artère digitale palmaire commune reçoit une artère métacarpienne palmaire ; avec le réseau dorsal de la main par des rameaux perforants",
+   "clinique": "Alimentée par ses deux bouts, ulnaire et radial, une plaie de la paume qui l'ouvre saigne des deux côtés. Le test d'Allen juge cette double alimentation. Des chocs répétés du talon de la main thrombosent l'ulnaire à son entrée dans l'arcade (syndrome du marteau hypothénarien)",
+   "memo": "Superficielle = ulnaire, profonde = radiale ; la superficielle est la plus distale des deux et donne les artères des doigts",
+   "variantes": "Vraie boucle fermée par le rameau palmaire superficiel de la radiale dans un tiers des mains seulement ; ailleurs, l'ulnaire la forme seule, ou bien l'artère radiale de l'index ou l'artère principale du pouce la complète",
+   "sources": ["gray1918", "kenhub-arcade-superficielle", "radiopaedia-main", "uams-sup", "orthobullets-main"],
+   "divergences": "Gray (1918) la dit le plus souvent complétée par l'artère radiale de l'index ; la plupart des ouvrages actuels citent le rameau palmaire superficiel de la radiale. Selon la définition retenue, elle est dite complète dans un tiers à 80 % des mains"
+  },
+  {
+   "id": "dorsale-du-pied",
+   "resume": "L'artère du dos du pied (ancienne artère pédieuse) : elle prolonge la tibiale antérieure du cou-de-pied au premier espace intermétatarsien, où elle plonge vers la plante.",
+   "provenance": {
+    "artere": "tibiale-anterieure",
+    "texte": "Fait suite à l'artère tibiale antérieure en avant de l'articulation de la cheville, à mi-distance des deux malléoles"
+   },
+   "trajet": "Chemine sur le dos du pied, du milieu du cou-de-pied vers le premier espace intermétatarsien, sur le talus, le naviculaire et le cunéiforme intermédiaire, entre le tendon du long extenseur de l'hallux en dedans et le premier tendon du long extenseur des orteils en dehors",
+   "branches": [
+    { "artere": "artere-tarsienne-laterale", "texte": "Artère tarsienne latérale" },
+    { "artere": null, "texte": "Artères tarsiennes médiales" },
+    { "artere": "artere-arquee", "texte": "Artère arquée" },
+    { "artere": "arteres-metatarsiennes-dorsales", "texte": "Première artère métatarsienne dorsale (branche terminale)" },
+    { "artere": "artere-plantaire-profonde", "texte": "Artère plantaire profonde (branche terminale)" }
+   ],
+   "terminaison": "Se divise, à l'extrémité proximale du premier espace intermétatarsien, en première artère métatarsienne dorsale et artère plantaire profonde",
+   "territoire": {
+    "texte": "Os et articulations du tarse, court extenseur des orteils et de l'hallux, interosseux dorsaux, peau du dos du pied et des orteils ; par l'artère plantaire profonde, elle contribue à l'arcade plantaire",
+    "structures": ["court-extenseur-orteils", "court-extenseur-de-l-hallux", "interosseux-dorsaux-du-pied", "talus", "naviculaire"]
+   },
+   "rapports": "Sous la peau, le fascia et le rétinaculum inférieur des extenseurs ; le nerf fibulaire profond la longe en dehors ; près de sa terminaison, le tendon du court extenseur de l'hallux la croise",
+   "pouls": {
+    "ou": "Sur le dos du pied, juste en dehors du tendon du long extenseur de l'hallux (que l'on fait saillir en relevant le gros orteil), contre les os du tarse, près du relief du naviculaire"
+   },
+   "anastomoses": "Avec l'artère plantaire latérale par l'artère plantaire profonde, qui ferme l'arcade plantaire ; avec les malléolaires antérieures et le rameau perforant de l'artère fibulaire par la tarsienne latérale",
+   "clinique": "Pouls de référence pour juger la circulation du pied (artériopathie, diabète, traumatisme). Il manque chez environ une personne sur dix sans maladie : chercher alors le pouls tibial postérieur avant de conclure",
+   "memo": "Ancienne « pédieuse » : elle court vers le premier espace, puis plonge vers la plante pour boucler l'arcade plantaire",
+   "variantes": "Absente ou grêle, parfois remplacée par le rameau perforant de l'artère fibulaire ; trajet souvent dévié en dehors ; plus grosse quand les artères plantaires sont grêles",
+   "sources": ["gray1918", "kenhub-dorsale-pied", "statpearls-pied", "statpearls-pouls", "tma-inf", "uams-inf"],
+   "divergences": null
+  },
+  {
+   "id": "artere-interosseuse-commune",
+   "resume": "Tronc très court né de l'ulnaire sous le coude : il se divise aussitôt en deux artères interosseuses, antérieure et postérieure, qui nourrissent les muscles profonds de l'avant-bras.",
+   "provenance": {
+    "artere": "ulnaire",
+    "texte": "Naît de la face postéro-latérale de l'artère ulnaire, au bas de la fosse cubitale, à hauteur de la tubérosité du radius"
+   },
+   "trajet": "Tronc d'environ 1 cm, dirigé en arrière et en profondeur vers le bord supérieur de la membrane interosseuse",
+   "branches": [
+    { "artere": null, "texte": "Artère interosseuse antérieure" },
+    { "artere": "artere-interosseuse-posterieure", "texte": "Artère interosseuse postérieure" }
+   ],
+   "terminaison": "Se divise au bord supérieur de la membrane interosseuse en artères interosseuses antérieure et postérieure",
+   "territoire": {
+    "texte": "Par ses deux branches : muscles profonds des loges antérieure et postérieure de l'avant-bras, radius et ulna (artères nourricières), nerf médian",
+    "structures": ["flechisseur-profond-doigts", "long-flechisseur-pouce", "carre-pronateur", "supinateur", "radius", "ulna"]
+   },
+   "rapports": "Profonde, sous le rond pronateur et les fléchisseurs ; le nerf interosseux antérieur, branche du médian, accompagne sa branche antérieure sur la membrane",
+   "pouls": null,
+   "anastomoses": "Ses deux branches se rejoignent au bas de l'avant-bras, où l'antérieure traverse la membrane, et gagnent les réseaux du carpe ; en haut, l'interosseuse récurrente participe au réseau du coude",
+   "clinique": "Sa branche antérieure donne l'artère du nerf médian ; chez certaines personnes, cette artère médiane reste volumineuse, vestige de l'embryon, et accompagne le nerf jusque dans la paume",
+   "memo": "Un tronc d'un centimètre qui se fend sur la membrane interosseuse : une branche devant, une branche derrière",
+   "variantes": "Peut naître haut, directement de l'artère brachiale, quand celle-ci se divise au bras en trois branches",
+   "sources": ["gray1918", "kenhub-interosseuse-commune", "statpearls-ulnaire", "uams-sup"],
+   "divergences": null
+  },
+  {
+   "id": "artere-interosseuse-posterieure",
+   "resume": "L'artère de la loge postérieure de l'avant-bras : branche de l'interosseuse commune, elle passe au-dessus de la membrane interosseuse et descend entre les muscles extenseurs.",
+   "provenance": {
+    "artere": "artere-interosseuse-commune",
+    "texte": "Branche de division postérieure, la plus grêle, de l'artère interosseuse commune"
+   },
+   "trajet": "Passe en arrière entre la corde oblique et le bord supérieur de la membrane interosseuse, apparaît entre le supinateur et le long abducteur du pouce, puis descend entre les couches superficielle et profonde des muscles extenseurs jusqu'au dos du poignet",
+   "branches": [
+    { "artere": "artere-interosseuse-recurrente", "texte": "Artère interosseuse récurrente" },
+    { "artere": null, "texte": "Rameaux musculaires et perforantes cutanées" }
+   ],
+   "terminaison": "S'anastomose au bas de l'avant-bras avec la fin de l'interosseuse antérieure, qui a traversé la membrane, et se jette dans le réseau carpien dorsal",
+   "territoire": {
+    "texte": "Muscles extenseurs de la loge postérieure de l'avant-bras et bande de peau qui les recouvre",
+    "structures": ["supinateur", "extenseur-doigts", "extenseur-ulnaire-carpe", "long-abducteur-pouce", "long-extenseur-du-pouce", "court-extenseur-pouce", "extenseur-de-l-index"]
+   },
+   "rapports": "Descend entre l'extenseur ulnaire du carpe et l'extenseur du petit doigt ; le nerf interosseux postérieur l'accompagne sur le long abducteur et le court extenseur du pouce",
+   "pouls": null,
+   "anastomoses": "En bas avec l'interosseuse antérieure et le réseau carpien dorsal ; en haut, sa récurrente gagne le réseau du coude",
+   "clinique": "Ses perforantes cutanées, étagées sur la face postérieure de l'avant-bras, permettent d'y lever un lambeau de peau que l'on retourne vers le dos de la main grâce à l'anastomose distale avec l'interosseuse antérieure",
+   "memo": "Elle passe au-dessus de la membrane, pas à travers : c'est l'interosseuse antérieure qui la perfore, en bas",
+   "variantes": "S'arrête parfois à mi-avant-bras : l'interosseuse antérieure prend alors le relais jusqu'au dos du poignet",
+   "sources": ["gray1918", "kenhub-interosseuse-posterieure", "kenhub-interosseuse-commune", "uams-sup"],
+   "divergences": null
+  },
+  {
+   "id": "artere-interosseuse-recurrente",
+   "resume": "Petite artère qui rebrousse chemin de l'avant-bras vers l'arrière du coude : branche de l'interosseuse postérieure, elle complète le réseau artériel du coude.",
+   "provenance": {
+    "artere": "artere-interosseuse-posterieure",
+    "texte": "Naît de l'artère interosseuse postérieure, près de son origine"
+   },
+   "trajet": "Remonte vers le coude, sur le supinateur ou à travers lui, sous l'anconé, jusqu'à l'intervalle entre l'épicondyle latéral et l'olécrâne",
+   "branches": [],
+   "terminaison": "Se jette dans le réseau artériel du coude, en arrière de l'épicondyle latéral",
+   "territoire": {
+    "texte": "Anconé, supinateur, articulation du coude et peau de sa face postéro-latérale",
+    "structures": ["ancone", "supinateur", "capsule-articulaire-de-l-articulation-du-coude"]
+   },
+   "rapports": "Recouverte par l'anconé, contre la face postérieure de l'articulation du coude",
+   "pouls": null,
+   "anastomoses": "Avec l'artère collatérale moyenne, branche de la profonde du bras, et, au-dessus de l'olécrâne, avec le rameau postérieur de la récurrente ulnaire et la collatérale ulnaire inférieure",
+   "clinique": "Maillon postérieur du réseau du coude : avec la collatérale moyenne, elle entretient l'apport de sang à l'avant-bras quand l'artère brachiale est liée ou obstruée au-dessous de la profonde du bras",
+   "memo": "Récurrente : elle rebrousse chemin vers le coude, sous l'anconé, à la rencontre de la collatérale moyenne",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-interosseuse-posterieure", "kenhub-profonde-bras", "uams-sup"],
+   "divergences": "Gray (1918) la fait s'unir au rameau « collatéral radial » de la profonde du bras ; les ouvrages actuels appellent ce vaisseau postérieur artère collatérale moyenne"
+  },
+  {
+   "id": "artere-recurrente-ulnaire",
+   "resume": "L'artère qui remonte de l'ulnaire vers le côté médial du coude : un tronc inconstant, ou d'emblée deux rameaux, antérieur et postérieur, de part et d'autre de l'épicondyle médial.",
+   "provenance": {
+    "artere": "ulnaire",
+    "texte": "Première branche de l'artère ulnaire, née juste sous le coude ; souvent remplacée par deux artères séparées, antérieure et postérieure"
+   },
+   "trajet": "Le rameau antérieur monte entre le brachial et le rond pronateur, en avant de l'épicondyle médial ; le rameau postérieur, plus gros et né un peu plus bas, passe derrière l'épicondyle médial, entre les deux chefs du fléchisseur ulnaire du carpe",
+   "branches": [
+    { "artere": null, "texte": "Rameau antérieur (artère récurrente ulnaire antérieure)" },
+    { "artere": null, "texte": "Rameau postérieur (artère récurrente ulnaire postérieure)" }
+   ],
+   "terminaison": "Ses deux rameaux se jettent dans le réseau artériel du coude, en avant et en arrière de l'épicondyle médial",
+   "territoire": {
+    "texte": "Muscles fléchisseurs insérés sur l'épicondyle médial, brachial, articulation du coude, nerf ulnaire",
+    "structures": ["rond-pronateur", "brachial", "flechisseur-ulnaire-carpe", "flechisseur-profond-doigts", "nerf-ulnaire"]
+   },
+   "rapports": "Le rameau postérieur accompagne le nerf ulnaire dans la gouttière située derrière l'épicondyle médial",
+   "pouls": null,
+   "anastomoses": "Rameau antérieur avec la collatérale ulnaire inférieure, en avant de l'épicondyle médial ; rameau postérieur avec la collatérale ulnaire supérieure, en arrière, et avec l'interosseuse récurrente au-dessus de l'olécrâne",
+   "clinique": "Suppléance médiale du coude : elle relie l'ulnaire aux collatérales de la brachiale et entretient la circulation quand le coude est fléchi ou l'artère brachiale obstruée. Son rameau postérieur, collé au nerf ulnaire, se rencontre dans la chirurgie de ce nerf",
+   "memo": "Antérieure avec Inférieure, Postérieure avec Supérieure : chaque récurrente ulnaire retrouve sa collatérale",
+   "variantes": "Tronc commun inconstant : les rameaux antérieur et postérieur naissent souvent séparément de l'artère ulnaire",
+   "sources": ["gray1918", "kenhub-ulnaire", "kenhub-brachiale", "uams-sup", "statpearls-ulnaire"],
+   "divergences": "Gray (1918) et les ouvrages anglo-saxons décrivent deux artères, récurrentes ulnaires antérieure et postérieure ; la Terminologia Anatomica, une seule artère récurrente ulnaire à deux rameaux"
+  },
+  {
+   "id": "branche-carpienne-palmaire-de-l-artere-radiale",
+   "resume": "Petit rameau transversal de la radiale à la face antérieure du poignet : uni à son homologue ulnaire, il forme le réseau carpien palmaire, qui nourrit le radius distal et le carpe.",
+   "provenance": {
+    "artere": "radiale",
+    "texte": "Naît de l'artère radiale au bas de l'avant-bras, près du bord inférieur du carré pronateur"
+   },
+   "trajet": "Se dirige en dedans, en travers de la face antérieure du carpe, plaqué contre l'os, derrière les tendons fléchisseurs",
+   "branches": [],
+   "terminaison": "S'unit au rameau carpien palmaire de l'artère ulnaire pour former le réseau carpien palmaire",
+   "territoire": {
+    "texte": "Extrémité inférieure du radius, os et articulations du carpe par leur face palmaire",
+    "structures": ["radius", "scaphoide", "lunatum", "capsule-articulaire-de-l-articulation-radiocarpienne"]
+   },
+   "rapports": "Au ras du bord distal du carré pronateur, contre le radius et les ligaments antérieurs du poignet",
+   "pouls": null,
+   "anastomoses": "Le réseau carpien palmaire reçoit aussi un rameau descendant de l'interosseuse antérieure et les rameaux récurrents de l'arcade palmaire profonde",
+   "clinique": "Avec son homologue ulnaire, il forme au ras du carré pronateur une arcade qui nourrit le radius distal et le carpe ; un greffon osseux du radius, laissé pédiculé sur elle, peut être basculé vers le scaphoïde pour traiter une pseudarthrose",
+   "memo": "Carpien palmaire : en travers, devant le carpe, au ras du carré pronateur ; le carpien dorsal fait de même derrière",
+   "variantes": null,
+   "sources": ["gray1918", "statpearls-radiale", "kenhub-radiale", "uams-sup"],
+   "divergences": null
+  },
+  {
+   "id": "artere-collaterale-moyenne",
+   "resume": "Branche terminale postérieure de l'artère profonde du bras : elle descend derrière l'humérus, dans le triceps, jusqu'en arrière de l'épicondyle latéral, où elle rejoint le réseau du coude.",
+   "provenance": {
+    "artere": "humerale-profonde",
+    "texte": "Branche terminale postérieure de l'artère profonde du bras, à la face postérieure de l'humérus"
+   },
+   "trajet": "Descend en arrière du septum intermusculaire latéral, dans le chef médial du triceps ou contre lui, jusqu'en arrière de l'épicondyle latéral de l'humérus",
+   "branches": [],
+   "terminaison": "S'anastomose avec l'artère interosseuse récurrente, en arrière de l'épicondyle latéral",
+   "territoire": {
+    "texte": "Chef médial du triceps, anconé, peau de la face postéro-latérale du bas du bras",
+    "structures": ["triceps-brachial", "ancone"]
+   },
+   "rapports": "Derrière le septum intermusculaire latéral, alors que la collatérale radiale le traverse avec le nerf radial pour passer devant",
+   "pouls": null,
+   "anastomoses": "Réseau du coude : artère interosseuse récurrente surtout ; elle forme aussi, avec la collatérale ulnaire inférieure, une arcade au-dessus de la fosse olécrânienne",
+   "clinique": "Maillon postérieur du réseau du coude : par elle et l'interosseuse récurrente, le sang contourne une artère brachiale obstruée ou liée au-dessous de la profonde du bras",
+   "memo": "Moyenne : au milieu, derrière l'humérus, dans le triceps ; elle retrouve l'interosseuse récurrente derrière le coude",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-profonde-bras", "kenhub-fr-brachiale", "uams-sup"],
+   "divergences": "Gray (1918) la fait descendre dans le triceps vers l'arcade sus-olécrânienne et attribue à un rameau « collatéral radial » postérieur l'union avec l'interosseuse récurrente ; les ouvrages actuels donnent cette anastomose à la collatérale moyenne"
+  },
+  {
+   "id": "artere-collaterale-radiale",
+   "resume": "Branche terminale antérieure de l'artère profonde du bras : elle suit le nerf radial à travers le septum latéral et descend devant l'épicondyle latéral rejoindre la récurrente radiale.",
+   "provenance": {
+    "artere": "humerale-profonde",
+    "texte": "Branche terminale antérieure de l'artère profonde du bras, dont elle continue le trajet"
+   },
+   "trajet": "Accompagne le nerf radial, traverse avec lui le septum intermusculaire latéral et descend dans la gouttière entre le brachial et le brachio-radial, jusqu'en avant de l'épicondyle latéral",
+   "branches": [],
+   "terminaison": "S'anastomose avec l'artère récurrente radiale, en avant de l'épicondyle latéral",
+   "territoire": {
+    "texte": "Brachial, brachio-radial, nerf radial, septum intermusculaire latéral et peau de la partie basse et latérale du bras",
+    "structures": ["brachial", "brachio-radial", "nerf-radial", "septum-intermusculaire-lateral-du-bras"]
+   },
+   "rapports": "Satellite du nerf radial dans la gouttière située entre le brachial et le brachio-radial",
+   "pouls": null,
+   "anastomoses": "Réseau du coude : artère récurrente radiale en avant ; un rameau postérieur rejoint la collatérale moyenne et l'interosseuse récurrente en arrière de l'épicondyle latéral",
+   "clinique": "Suppléance latérale du coude : par elle et la récurrente radiale, le sang contourne une artère brachiale obstruée au-dessous de la profonde du bras. Comme elle suit le nerf radial, on la rencontre dans l'abord latéral du bas de l'humérus",
+   "memo": "Collatérale radiale : elle suit le nerf radial et descend rejoindre la récurrente radiale, qui monte à sa rencontre",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-profonde-bras", "kenhub-anastomoses-sup", "uams-sup"],
+   "divergences": "Gray (1918) nomme « collatéral radial » un rameau postérieur qui gagne l'arrière de l'épicondyle latéral et décrit la portion antérieure comme la terminaison de l'artère profonde du bras elle-même"
+  },
+  {
+   "id": "artere-collaterale-ulnaire",
+   "resume": "L'artère collatérale ulnaire supérieure : fine branche de la brachiale qui accompagne le nerf ulnaire derrière le septum médial jusqu'à l'arrière de l'épicondyle médial.",
+   "provenance": {
+    "artere": "humerale",
+    "texte": "Naît de l'artère brachiale un peu au-dessous du milieu du bras ; souvent de la partie haute de l'artère profonde du bras"
+   },
+   "trajet": "Traverse le septum intermusculaire médial avec le nerf ulnaire et descend sur le chef médial du triceps jusqu'à la gouttière entre l'épicondyle médial et l'olécrâne",
+   "branches": [],
+   "terminaison": "S'anastomose, sous le fléchisseur ulnaire du carpe, avec le rameau postérieur de la récurrente ulnaire et avec la collatérale ulnaire inférieure",
+   "territoire": {
+    "texte": "Chef médial du triceps, nerf ulnaire, articulation du coude",
+    "structures": ["triceps-brachial", "nerf-ulnaire", "capsule-articulaire-de-l-articulation-du-coude"]
+   },
+   "rapports": "Satellite du nerf ulnaire dans la loge postérieure du bras, en arrière du septum intermusculaire médial",
+   "pouls": null,
+   "anastomoses": "Réseau du coude, en arrière de l'épicondyle médial ; un rameau inconstant passe en avant de l'épicondyle rejoindre le rameau antérieur de la récurrente ulnaire",
+   "clinique": "C'est l'artère qui accompagne le nerf ulnaire au bras : elle est à ménager quand on libère ou déplace ce nerf au coude. Elle participe à la suppléance médiale du coude",
+   "memo": "Supérieure avec Postérieure : elle descend derrière l'épicondyle médial, avec le nerf ulnaire, à la rencontre de la récurrente ulnaire postérieure",
+   "variantes": "Naît fréquemment de l'artère profonde du bras",
+   "sources": ["gray1918", "kenhub-brachiale", "kenhub-fr-brachiale", "statpearls-brachiale", "uams-sup"],
+   "divergences": null
+  },
+  {
+   "id": "artere-collaterale-ulnaire-inferieure",
+   "resume": "Dernière branche de la brachiale avant le coude : née à cinq centimètres de l'interligne, elle contourne le bas de l'humérus et alimente le réseau du coude autour de l'épicondyle médial.",
+   "provenance": {
+    "artere": "humerale",
+    "texte": "Naît de l'artère brachiale environ 5 cm au-dessus du coude"
+   },
+   "trajet": "Se porte en dedans sur le brachial, entre ce muscle et le nerf médian, traverse le septum intermusculaire médial et contourne l'humérus par en arrière, entre l'os et le triceps",
+   "branches": [
+    { "artere": null, "texte": "Rameau antérieur, en avant de l'épicondyle médial" },
+    { "artere": null, "texte": "Rameau postérieur, en arrière de l'épicondyle médial" }
+   ],
+   "terminaison": "Forme, avec un rameau de l'artère profonde du bras, une arcade au-dessus de la fosse olécrânienne",
+   "territoire": {
+    "texte": "Brachial, partie basse du triceps, articulation du coude",
+    "structures": ["brachial", "triceps-brachial", "capsule-articulaire-de-l-articulation-du-coude"]
+   },
+   "rapports": "Croise la face antérieure du brachial en passant sous le nerf médian",
+   "pouls": null,
+   "anastomoses": "En avant de l'épicondyle médial avec le rameau antérieur de la récurrente ulnaire ; en arrière avec la collatérale ulnaire supérieure et le rameau postérieur de la récurrente ulnaire ; au-dessus de l'olécrâne avec la collatérale moyenne",
+   "clinique": "Pilier médial du réseau du coude : par elle et les autres collatérales, le sang contourne une artère brachiale obstruée ou liée au-dessous de l'origine de la profonde du bras",
+   "memo": "Inférieure avec Antérieure : née à cinq centimètres du coude, elle rejoint en avant la récurrente ulnaire antérieure",
+   "variantes": "Une collatérale ulnaire moyenne, intercalée entre la supérieure et l'inférieure, existe chez certaines personnes",
+   "sources": ["gray1918", "kenhub-brachiale", "kenhub-fr-brachiale", "kenhub-anastomoses-sup", "uams-sup"],
+   "divergences": null
+  },
+  {
+   "id": "humerale-profonde",
+   "resume": "L'artère profonde du bras (ancienne humérale profonde) : première et plus grosse branche de la brachiale, elle contourne l'humérus par en arrière avec le nerf radial et nourrit le triceps.",
+   "provenance": {
+    "artere": "humerale",
+    "texte": "Naît de la face postéro-médiale de l'artère brachiale, juste sous le bord inférieur du grand rond"
+   },
+   "trajet": "Se porte en arrière avec le nerf radial, entre le chef long et le chef médial du triceps, puis suit le sillon du nerf radial à la face postérieure de l'humérus, sous le chef latéral, en spirale vers le bord latéral du bras",
+   "branches": [
+    { "artere": null, "texte": "Artère nourricière de l'humérus (inconstante)" },
+    { "artere": null, "texte": "Rameau deltoïdien (ascendant)" },
+    { "artere": "artere-collaterale-moyenne", "texte": "Artère collatérale moyenne (branche terminale postérieure)" },
+    { "artere": "artere-collaterale-radiale", "texte": "Artère collatérale radiale (branche terminale antérieure)" }
+   ],
+   "terminaison": "Se divise, à la face postérieure de l'humérus, en artères collatérales moyenne et radiale",
+   "territoire": {
+    "texte": "Triceps brachial, deltoïde (rameau ascendant), anconé, brachial et brachio-radial par ses collatérales, humérus, nerf radial",
+    "structures": ["triceps-brachial", "deltoide", "ancone", "humerus", "nerf-radial"]
+   },
+   "rapports": "Accompagne le nerf radial dans le sillon du nerf radial, au contact de l'os",
+   "pouls": null,
+   "anastomoses": "En haut avec l'artère circonflexe postérieure de l'humérus, par son rameau deltoïdien ; en bas avec le réseau du coude, par ses deux collatérales",
+   "clinique": "Plaquée contre l'humérus avec le nerf radial, elle est exposée dans les fractures du milieu de la diaphyse. Une artère brachiale liée ou obstruée au-dessous de son origine reste suppléée par le réseau du coude",
+   "memo": "La profonde du bras s'enroule derrière l'humérus avec le nerf radial : même sillon, même danger en cas de fracture",
+   "variantes": "Naît de l'artère axillaire dans 2 à 17 % des cas selon les séries, parfois par un tronc commun avec la circonflexe postérieure de l'humérus ou la subscapulaire",
+   "sources": ["gray1918", "kenhub-profonde-bras", "statpearls-brachiale", "uams-sup", "tma-sup"],
+   "divergences": "Gray (1918) fait de la portion antérieure, satellite du nerf radial, la terminaison de l'artère et décrit les deux collatérales comme de simples rameaux ; les ouvrages actuels en font ses deux branches terminales"
+  },
+  {
+   "id": "circonflexe-femorale-laterale",
+   "resume": "Branche latérale de l'artère profonde de la cuisse : elle passe sous le droit fémoral et s'y divise en trois rameaux, pour la hanche, le tour du fémur et le quadriceps.",
+   "provenance": {
+    "artere": "femorale-profonde",
+    "texte": "Naît de la face latérale de l'artère profonde de la cuisse, près de son origine ; parfois directement de l'artère fémorale"
+   },
+   "trajet": "Se porte en dehors, à l'horizontale, entre les branches du nerf fémoral, derrière le sartorius et le droit fémoral, où elle se divise",
+   "branches": [
+    { "artere": null, "texte": "Rameau ascendant" },
+    { "artere": null, "texte": "Rameau transverse" },
+    { "artere": "branche-descendante-de-l-artere-circonflexe-lat-de-la-cuisse", "texte": "Rameau descendant" }
+   ],
+   "terminaison": "Se divise sous le droit fémoral en rameaux ascendant, transverse et descendant",
+   "territoire": {
+    "texte": "Quadriceps (surtout vaste latéral et droit fémoral), tenseur du fascia lata, face antérieure du col et tête du fémur, grand trochanter, peau antéro-latérale de la cuisse",
+    "structures": ["vaste-lateral", "vaste-intermediaire", "droit-femoral", "tenseur-fascia-lata", "femur"]
+   },
+   "rapports": "Traverse l'éventail des branches du nerf fémoral ; son rameau ascendant passe sous le tenseur du fascia lata, son rameau transverse perfore le vaste latéral sous le grand trochanter",
+   "pouls": null,
+   "anastomoses": "Rameau ascendant avec la glutéale supérieure et la circonflexe iliaque profonde ; rameau transverse dans l'anastomose cruciforme (circonflexe médiale, glutéale inférieure, première perforante) ; rameau descendant avec l'artère supérieure latérale du genou",
+   "clinique": "Son rameau ascendant apporte environ un cinquième du sang de la tête fémorale, par sa partie antérieure : il est exposé dans les fractures et la chirurgie du col. Son rameau descendant porte le lambeau antéro-latéral de cuisse",
+   "memo": "Trois rameaux en fourche : un qui monte vers la hanche, un qui ceinture le fémur, un qui descend vers le genou",
+   "variantes": "Naît directement de l'artère fémorale dans environ 14 % des cas ; ses rameaux ascendant et descendant peuvent naître séparément",
+   "sources": ["gray1918", "kenhub-circonflexe-laterale", "statpearls-circonflexe-laterale", "uams-inf", "tma-inf"],
+   "divergences": null
+  },
+  {
+   "id": "artere-inferolaterale-du-genou",
+   "resume": "Artère du genou qui contourne le tibia par le côté latéral, sous le ligament collatéral fibulaire : branche de la poplitée, elle rejoint en avant le réseau artériel du genou.",
+   "provenance": {
+    "artere": "poplitee",
+    "texte": "Naît de l'artère poplitée à hauteur de l'interligne du genou, sous le chef latéral du gastrocnémien"
+   },
+   "trajet": "Se porte en dehors au-dessus de la tête de la fibula, sous le chef latéral du gastrocnémien, puis sous le ligament collatéral fibulaire et le tendon du biceps fémoral, et gagne la face antérieure du genou",
+   "branches": [],
+   "terminaison": "Se ramifie à la face antéro-latérale du genou, dans le réseau patellaire",
+   "territoire": {
+    "texte": "Condyle latéral du tibia, capsule du genou, ligament collatéral fibulaire, ménisque latéral, partie basse de la patella",
+    "structures": ["tibia", "ligament-collateral-fibulaire", "menisque-lateral", "capsule-articulaire-du-genou", "patella"]
+   },
+   "rapports": "Passe entre le ligament collatéral fibulaire et la capsule, à hauteur de l'interligne, donc au ras du ménisque latéral",
+   "pouls": null,
+   "anastomoses": "Avec l'artère inféro-médiale et l'artère supérieure latérale du genou, la récurrente tibiale antérieure, la récurrente tibiale postérieure et le rameau circonflexe de la fibula",
+   "clinique": "Collée au bord du ménisque latéral, elle peut saigner lors d'une méniscectomie latérale ou d'un geste sur l'angle postéro-latéral du genou. Maillon latéral des suppléances qui contournent une poplitée obstruée",
+   "memo": "Inféro-latérale : elle passe sous le ligament collatéral fibulaire, juste au-dessus de la tête de la fibula",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-poplitee", "kenhub-anastomoses-inf", "uams-inf"],
+   "divergences": null
+  },
+  {
+   "id": "artere-inferomediale-du-genou",
+   "resume": "Artère du genou qui contourne le tibia sous son condyle médial, sous le ligament collatéral tibial : branche de la poplitée, elle rejoint en avant le réseau artériel du genou.",
+   "provenance": {
+    "artere": "poplitee",
+    "texte": "Naît de l'artère poplitée au-dessous de l'interligne du genou, au bord supérieur du muscle poplité"
+   },
+   "trajet": "Descend le long du bord supérieur du muscle poplité, contourne le tibia sous son condyle médial, passe sous le ligament collatéral tibial, puis remonte à son bord antérieur vers la face antéro-médiale du genou",
+   "branches": [],
+   "terminaison": "Se ramifie à la face antéro-médiale du genou, dans le réseau patellaire",
+   "territoire": {
+    "texte": "Extrémité supérieure du tibia, muscle poplité, capsule du genou, ligament collatéral tibial, partie basse de la patella",
+    "structures": ["tibia", "poplite", "ligament-collateral-tibial", "capsule-articulaire-du-genou", "patella"]
+   },
+   "rapports": "Sous le chef médial du gastrocnémien puis sous le ligament collatéral tibial, plaquée contre l'os",
+   "pouls": null,
+   "anastomoses": "Avec l'artère inféro-latérale et l'artère supérieure médiale du genou, et avec le rameau saphène de l'artère descendante du genou",
+   "clinique": "Maillon médial du réseau du genou. Plaquée contre le tibia sous le ligament collatéral tibial, elle est exposée dans la chirurgie de ce ligament et dans les abords médiaux du haut du tibia",
+   "memo": "Inféro-médiale : sous le condyle médial du tibia et sous le ligament collatéral tibial, comme sous un pont",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-poplitee", "kenhub-anastomoses-inf", "uams-inf"],
+   "divergences": null
+  },
+  {
+   "id": "artere-pudendale-externe-profonde",
+   "resume": "Branche de la fémorale pour les organes génitaux externes : plus profonde que la pudendale externe superficielle, elle chemine sous le fascia lata vers le scrotum ou la grande lèvre.",
+   "provenance": {
+    "artere": "femorale",
+    "texte": "Naît de la face médiale de l'artère fémorale, un peu au-dessous de la pudendale externe superficielle"
+   },
+   "trajet": "Se porte en dedans sur le pectiné et le long adducteur, recouverte par le fascia lata, qu'elle perfore à la face médiale de la cuisse",
+   "branches": [
+    { "artere": null, "texte": "Rameaux scrotaux antérieurs (homme) ou labiaux antérieurs (femme)" },
+    { "artere": null, "texte": "Rameaux inguinaux" }
+   ],
+   "terminaison": "Se distribue à la peau du scrotum et du périnée chez l'homme, de la grande lèvre chez la femme",
+   "territoire": {
+    "texte": "Peau du scrotum ou de la grande lèvre, peau du périnée et du haut de la face médiale de la cuisse ; origines du pectiné et du long adducteur",
+    "structures": ["pectine", "long-adducteur"]
+   },
+   "rapports": "Sous le fascia lata, en avant du pectiné et du long adducteur",
+   "pouls": null,
+   "anastomoses": "Avec les rameaux scrotaux ou labiaux postérieurs de l'artère périnéale, branche de la pudendale interne",
+   "clinique": "Pont entre le système fémoral et l'iliaque interne : ses anastomoses avec la pudendale interne contribuent à suppléer une artère fémorale ou iliaque obstruée. Elle saigne dans les plaies et la chirurgie du scrotum ou de la vulve",
+   "memo": "Profonde : elle reste sous le fascia lata, sur le pectiné, alors que la superficielle court sous la peau",
+   "variantes": "Peut naître de l'artère circonflexe fémorale médiale",
+   "sources": ["gray1918", "kenhub-femorale", "uams-inf", "ifaa-ta-femorale"],
+   "divergences": "Nomenclature : « artère honteuse externe profonde » (ou inférieure) dans la liste latin-français de l'IFAA et les cours classiques ; « pudendale externe profonde » dans les ouvrages récents"
+  },
+  {
+   "id": "artere-superieure-laterale-du-genou",
+   "resume": "Artère du genou qui contourne le fémur au-dessus du condyle latéral, sous le tendon du biceps fémoral : branche de la poplitée, elle rejoint en avant le réseau artériel de la patella.",
+   "provenance": {
+    "artere": "poplitee",
+    "texte": "Naît de l'artère poplitée dans le haut de la fosse poplitée, au-dessus du condyle latéral du fémur"
+   },
+   "trajet": "Contourne le fémur en dehors, au-dessus du condyle latéral, en passant sous le tendon du biceps fémoral, et gagne la face antéro-latérale du genou",
+   "branches": [
+    { "artere": null, "texte": "Rameau superficiel, pour le vaste latéral" },
+    { "artere": null, "texte": "Rameau profond, osseux et articulaire" }
+   ],
+   "terminaison": "Se ramifie à la face antéro-latérale du genou, dans le réseau patellaire",
+   "territoire": {
+    "texte": "Vaste latéral, extrémité inférieure du fémur (condyle latéral), capsule et synoviale du genou, bord supéro-latéral de la patella",
+    "structures": ["vaste-lateral", "femur", "patella", "capsule-articulaire-du-genou"]
+   },
+   "rapports": "Plaquée contre le fémur, sous le tendon du biceps fémoral puis sous le vaste latéral",
+   "pouls": null,
+   "anastomoses": "Rameau superficiel avec le rameau descendant de la circonflexe fémorale latérale et l'artère inféro-latérale du genou ; rameau profond en arcade devant le fémur avec l'artère descendante du genou et les artères médiales du genou",
+   "clinique": "Elle longe le bord supéro-latéral de la patella, sous le rétinaculum patellaire latéral : sa section lors de la libération chirurgicale de ce rétinaculum est une cause classique d'épanchement de sang dans le genou",
+   "memo": "Supérieure latérale : au-dessus du condyle latéral, sous le biceps fémoral ; elle donne la main au rameau descendant de la circonflexe latérale",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-poplitee", "kenhub-anastomoses-inf", "kenhub-circonflexe-laterale"],
+   "divergences": null
+  },
+  {
+   "id": "arteres-femorales-perforantes",
+   "resume": "Les branches de la profonde de la cuisse qui traversent les adducteurs au ras du fémur pour gagner l'arrière de la cuisse : elles nourrissent les ischio-jambiers et le fémur.",
+   "provenance": {
+    "artere": "femorale-profonde",
+    "texte": "Naissent en étages de l'artère profonde de la cuisse, derrière le long adducteur : la première au-dessus du court adducteur, la deuxième en avant de lui, la troisième au-dessous"
+   },
+   "trajet": "Chacune se dirige en arrière et traverse le grand adducteur (les deux premières souvent aussi le court adducteur) au ras de la ligne âpre du fémur, sous de petites arcades tendineuses, pour déboucher dans la loge postérieure de la cuisse",
+   "branches": [
+    { "artere": null, "texte": "Première artère perforante" },
+    { "artere": null, "texte": "Deuxième artère perforante (donne le plus souvent l'artère nourricière du fémur)" },
+    { "artere": null, "texte": "Troisième artère perforante" },
+    { "artere": null, "texte": "Quatrième perforante : terminaison de l'artère profonde de la cuisse" }
+   ],
+   "terminaison": "Se ramifient dans les muscles de la loge postérieure et s'anastomosent en chaîne le long du fémur",
+   "territoire": {
+    "texte": "Muscles ischio-jambiers (biceps fémoral, semi-tendineux, semi-membraneux), adducteurs, grand fessier pour la première, fémur par ses artères nourricières",
+    "structures": ["biceps-femoral", "semi-tendineux", "semi-membraneux", "grand-adducteur", "court-adducteur", "femur"]
+   },
+   "rapports": "Collées au fémur, près de la ligne âpre, à l'endroit où elles traversent le grand adducteur",
+   "pouls": null,
+   "anastomoses": "En haut, la première participe à l'anastomose cruciforme avec les deux circonflexes et la glutéale inférieure ; en bas, la dernière rejoint les rameaux musculaires de la poplitée : une chaîne de suppléance entre l'iliaque interne, la fémorale et la poplitée",
+   "clinique": "Plaquées contre le fémur, elles saignent abondamment dans les fractures de la diaphyse fémorale et lors des abords chirurgicaux latéral et postérieur de l'os : il faut les lier une à une",
+   "memo": "Trois perforantes repérées par le court adducteur : au-dessus, en avant, au-dessous ; la quatrième est la fin de la profonde",
+   "variantes": "Trois le plus souvent, quatre en comptant la terminaison ; la première et la deuxième naissent souvent d'un tronc commun ; l'artère nourricière du fémur peut venir de la troisième",
+   "sources": ["gray1918", "kenhub-profonde-cuisse", "statpearls-femorale", "tma-inf", "uams-inf"],
+   "divergences": null
+  },
+  {
+   "id": "branche-descendante-de-l-artere-circonflexe-lat-de-la-cuisse",
+   "resume": "Le rameau descendant de la circonflexe fémorale latérale : il longe le vaste latéral de la hanche au genou, nourrit le quadriceps et la peau antéro-latérale de la cuisse.",
+   "provenance": {
+    "artere": "circonflexe-femorale-laterale",
+    "texte": "Rameau de division inférieur de l'artère circonflexe fémorale latérale, né sous le droit fémoral"
+   },
+   "trajet": "Descend derrière le droit fémoral, le long du bord antérieur du vaste latéral, dans le sillon qui le sépare du vaste intermédiaire, avec le nerf du vaste latéral ; un long rameau atteint le genou",
+   "branches": [
+    { "artere": null, "texte": "Rameaux musculaires pour le vaste latéral et le droit fémoral" },
+    { "artere": null, "texte": "Perforantes cutanées de la face antéro-latérale de la cuisse" }
+   ],
+   "terminaison": "S'anastomose au genou avec l'artère supérieure latérale du genou et se jette dans le réseau patellaire",
+   "territoire": {
+    "texte": "Vaste latéral, vaste intermédiaire, droit fémoral, peau de la face antéro-latérale de la cuisse",
+    "structures": ["vaste-lateral", "vaste-intermediaire", "droit-femoral"]
+   },
+   "rapports": "Accompagné par le nerf du vaste latéral, branche du nerf fémoral",
+   "pouls": null,
+   "anastomoses": "Avec l'artère supérieure latérale du genou : il relie ainsi l'artère profonde de la cuisse au réseau du genou",
+   "clinique": "Pédicule du lambeau antéro-latéral de cuisse, très employé en chirurgie reconstructrice ; il sert aussi de greffon pour des pontages. C'est une voie de suppléance vers le genou quand l'artère fémorale est obstruée",
+   "memo": "Il descend de la hanche au genou le long du vaste latéral : c'est l'artère du lambeau antéro-latéral de cuisse",
+   "variantes": "Peut naître séparément du rameau ascendant, directement de la fémorale ou de la profonde de la cuisse",
+   "sources": ["gray1918", "kenhub-circonflexe-laterale", "statpearls-circonflexe-laterale", "kenhub-anastomoses-inf"],
+   "divergences": null
+  },
+  {
+   "id": "artere-circonflexe-anterieure-de-l-humerus",
+   "resume": "La plus petite des deux artères qui encerclent le col chirurgical de l'humérus : née de l'axillaire, elle passe devant l'os et envoie un rameau à la tête humérale.",
+   "provenance": {
+    "artere": "axillaire",
+    "texte": "Naît de la face latérale de la troisième portion de l'artère axillaire, au bord inférieur du subscapulaire, presque en face de la circonflexe postérieure"
+   },
+   "trajet": "Grêle, elle se porte en dehors à l'horizontale, sous le coraco-brachial et le chef court du biceps, en avant du col chirurgical de l'humérus, puis passe sous le chef long du biceps et le deltoïde",
+   "branches": [
+    { "artere": null, "texte": "Rameau ascendant, dans le sillon intertuberculaire, pour la tête de l'humérus et l'articulation de l'épaule" }
+   ],
+   "terminaison": "S'anastomose avec l'artère circonflexe postérieure de l'humérus, sous le deltoïde",
+   "territoire": {
+    "texte": "Tête de l'humérus, articulation de l'épaule, tendon du chef long du biceps, deltoïde, coraco-brachial",
+    "structures": ["humerus", "capsule-articulaire-de-l-articulation-glenohumerale", "tendon-long-biceps", "deltoide", "coraco-brachial"]
+   },
+   "rapports": "Croise le sillon intertuberculaire en passant sous le tendon du chef long du biceps",
+   "pouls": null,
+   "anastomoses": "Cercle artériel du col chirurgical, avec la circonflexe postérieure ; rameaux pour le réseau de l'acromion, avec l'artère thoraco-acromiale",
+   "clinique": "Son rameau ascendant suit le sillon intertuberculaire et pénètre dans la tête humérale : une fracture du col de l'humérus peut le rompre et compromettre la vitalité de la tête",
+   "memo": "L'antérieure est la petite des deux circonflexes : elle passe devant le col et envoie un rameau dans le sillon du biceps",
+   "variantes": "Naît souvent d'un tronc commun avec la circonflexe postérieure",
+   "sources": ["gray1918", "kenhub-axillaire", "radiopaedia-axillaire", "statpearls-axillaire", "wikipedia-en-axillaire", "uams-sup"],
+   "divergences": null
+  },
+  {
+   "id": "artere-circonflexe-posterieure-de-l-humerus",
+   "resume": "La plus grosse des deux artères qui encerclent le col chirurgical de l'humérus : née de l'axillaire, elle passe derrière l'os avec le nerf axillaire et nourrit le deltoïde.",
+   "provenance": {
+    "artere": "axillaire",
+    "texte": "Naît de la troisième portion de l'artère axillaire, au bord inférieur du subscapulaire, en face de la circonflexe antérieure"
+   },
+   "trajet": "Se dirige en arrière avec le nerf axillaire, traverse l'espace axillaire latéral (quadrilatère huméro-tricipital) et contourne le col chirurgical de l'humérus sous le deltoïde",
+   "branches": [
+    { "artere": null, "texte": "Rameaux pour le deltoïde et l'articulation de l'épaule" },
+    { "artere": null, "texte": "Rameau descendant, anastomosé avec l'artère profonde du bras" }
+   ],
+   "terminaison": "S'anastomose avec l'artère circonflexe antérieure de l'humérus autour du col chirurgical",
+   "territoire": {
+    "texte": "Deltoïde, petit rond et grand rond, chefs long et latéral du triceps, articulation de l'épaule, tête de l'humérus",
+    "structures": ["deltoide", "petit-rond", "grand-rond", "triceps-brachial", "humerus", "capsule-articulaire-de-l-articulation-glenohumerale"]
+   },
+   "rapports": "Satellite du nerf axillaire dans l'espace axillaire latéral, limité par le subscapulaire et le petit rond en haut, le grand rond en bas, le chef long du triceps en dedans et le col de l'humérus en dehors",
+   "pouls": null,
+   "anastomoses": "Avec la circonflexe antérieure (cercle du col chirurgical), avec l'artère profonde du bras par son rameau descendant, et avec la thoraco-acromiale et la suprascapulaire dans le réseau de l'acromion",
+   "clinique": "Elle peut être lésée, avec le nerf axillaire, dans les fractures du col chirurgical et les luxations de l'épaule ; elle est comprimée dans l'espace axillaire latéral chez certains sportifs du lancer",
+   "memo": "Postérieure : la grosse, celle qui voyage avec le nerf axillaire à travers le quadrilatère",
+   "variantes": "Très variable : tronc commun avec la subscapulaire ou avec la circonflexe antérieure, naissance sur la profonde du bras ; dans une série, les variations de la subscapulaire et de cette artère touchaient près de deux épaules sur trois",
+   "sources": ["gray1918", "radiopaedia-circonflexe-post-humerus", "radiopaedia-axillaire", "kenhub-axillaire", "uams-sup"],
+   "divergences": null
+  },
+  {
+   "id": "artere-circonflexe-mediale-de-la-cuisse",
+   "resume": "L'artère circonflexe fémorale médiale : branche de la profonde de la cuisse, elle contourne le col du fémur par en dedans et en arrière ; c'est la principale artère de la tête fémorale.",
+   "provenance": {
+    "artere": "femorale-profonde",
+    "texte": "Naît de la face postéro-médiale de l'artère profonde de la cuisse, près de son origine ; assez souvent directement de l'artère fémorale"
+   },
+   "trajet": "Contourne le fémur en dedans puis en arrière : entre le psoas et le pectiné, puis entre l'obturateur externe et le court adducteur, enfin entre le carré fémoral et le bord supérieur du grand adducteur, à la face postérieure du col",
+   "branches": [
+    { "artere": null, "texte": "Rameaux pour les adducteurs, le gracile et l'obturateur externe" },
+    { "artere": null, "texte": "Rameau acétabulaire" },
+    { "artere": null, "texte": "Rameau ascendant (profond), vers la fosse trochantérique" },
+    { "artere": null, "texte": "Rameau transverse (superficiel), vers l'anastomose cruciforme" }
+   ],
+   "terminaison": "Se divise à la face postérieure du col du fémur en un rameau ascendant, pour la fosse trochantérique, et un rameau transverse, pour l'anastomose cruciforme",
+   "territoire": {
+    "texte": "Tête et col du fémur, articulation de la hanche ; adducteurs, gracile, obturateur externe, haut des ischio-jambiers",
+    "structures": ["femur", "long-adducteur", "court-adducteur", "grand-adducteur", "gracile", "obturateur-externe", "capsule-articulaire-de-l-articulation-de-la-hanche", "ligament-de-la-tete-du-femur"]
+   },
+   "rapports": "Passe au contact du tendon de l'obturateur externe puis en avant du carré fémoral, à la face postérieure du col",
+   "pouls": null,
+   "anastomoses": "Anastomose cruciforme avec la circonflexe latérale, la glutéale inférieure et la première perforante ; anastomose de la fosse trochantérique avec les glutéales et la circonflexe latérale ; artère obturatrice par ses rameaux musculaires et acétabulaire",
+   "clinique": "Ses rameaux remontent le long du col pour nourrir la tête du fémur : une fracture du col ou une luxation de la hanche peut les rompre, d'où la nécrose de la tête. Ils sont à respecter dans les abords postérieurs de la hanche",
+   "memo": "Médiale : celle de la tête du fémur ; col cassé, circonflexe médiale coupée, tête menacée",
+   "variantes": "Naît directement de l'artère fémorale dans 20 à 40 % des cas selon les séries ; rarement absente",
+   "sources": ["gray1918", "kenhub-circonflexe-mediale", "radiopaedia-circonflexe-mediale", "tma-inf", "uams-inf"],
+   "divergences": "Les noms de ses rameaux varient : Gray décrit des rameaux superficiel, profond et acétabulaire ; d'autres, des rameaux ascendant et transverse (ou descendant)"
+  },
+  {
+   "id": "fibulaire",
+   "resume": "L'artère fibulaire (ancienne artère péronière) : branche de la tibiale postérieure, elle descend derrière la fibula dans la loge postérieure profonde et finit sur le talon.",
+   "provenance": {
+    "artere": "tibiale-posterieure",
+    "texte": "Naît de l'artère tibiale postérieure environ 2,5 cm sous le bord inférieur du muscle poplité"
+   },
+   "trajet": "Oblique vers la fibula, elle descend le long de sa crête médiale, entre le tibial postérieur et le long fléchisseur de l'hallux ou dans l'épaisseur de ce dernier, puis en arrière de la syndesmose tibio-fibulaire",
+   "branches": [
+    { "artere": null, "texte": "Artère nourricière de la fibula" },
+    { "artere": null, "texte": "Rameau perforant (traverse la membrane interosseuse)" },
+    { "artere": null, "texte": "Rameau communicant (vers la tibiale postérieure)" },
+    { "artere": null, "texte": "Rameaux malléolaires latéraux" },
+    { "artere": "branches-calcaneennes-de-l-artere-fibulaire", "texte": "Rameaux calcanéens (branches terminales)" }
+   ],
+   "terminaison": "Se termine en rameaux calcanéens sur les faces latérale et postérieure du calcanéus",
+   "territoire": {
+    "texte": "Fibula (artère nourricière), soléaire, tibial postérieur, long fléchisseur de l'hallux ; muscles fibulaires de la loge latérale par des perforantes ; malléole latérale et talon",
+    "structures": ["fibula", "long-flechisseur-hallux", "tibial-posterieur", "soleaire", "long-fibulaire", "court-fibulaire", "calcaneus"]
+   },
+   "rapports": "Recouverte par le soléaire et le fascia profond en haut, puis par le long fléchisseur de l'hallux, contre la fibula et la membrane interosseuse",
+   "pouls": null,
+   "anastomoses": "Rameau perforant avec la malléolaire antérieure latérale et la tarsienne latérale ; rameau communicant avec la tibiale postérieure ; rameaux calcanéens avec ceux de la tibiale postérieure",
+   "clinique": "Artère nourricière de la fibula : elle permet de transplanter un segment de cet os avec ses vaisseaux pour reconstruire une mandibule ou un os long. Quand une artère tibiale manque, c'est elle qui grossit et la remplace jusqu'au pied",
+   "memo": "Fibulaire : elle court derrière la fibula, dans la loge postérieure, mais nourrit la loge latérale par ses perforantes",
+   "variantes": "Naît parfois plus bas (7 à 8 cm sous le muscle poplité), plus haut, voire de la poplitée elle-même ; volumineuse quand une tibiale est grêle, elle fournit alors la dorsale du pied ou les artères plantaires",
+   "sources": ["gray1918", "kenhub-fibulaire", "kenhub-jambe-pied", "statpearls-tibiales", "radiopaedia-membre-inf", "tma-inf", "uams-inf"],
+   "divergences": "Pour les cliniciens, elle naît du tronc tibio-fibulaire, comme la tibiale postérieure ; pour les anatomistes, elle est une branche de la tibiale postérieure elle-même"
+  },
+  {
+   "id": "arteres-digitales-palmaires-communes",
+   "resume": "Les trois artères nées de l'arcade palmaire superficielle qui descendent dans la paume vers les commissures, où chacune se dédouble pour deux doigts voisins.",
+   "provenance": {
+    "artere": "arcade-palmaire-superficielle",
+    "texte": "Naissent de la convexité de l'arcade palmaire superficielle"
+   },
+   "trajet": "Au nombre de trois, elles descendent dans la paume sur les deuxième, troisième et quatrième lombricaux, en avant des nerfs digitaux, vers les deuxième, troisième et quatrième espaces interdigitaux",
+   "branches": [
+    { "artere": "arteres-digitales-palmaires-propres", "texte": "Deux artères digitales palmaires propres chacune" }
+   ],
+   "terminaison": "Chacune se divise, à la base des doigts, en deux artères digitales palmaires propres pour les bords en regard de deux doigts voisins",
+   "territoire": {
+    "texte": "Lombricaux, commissures et bords adjacents de l'index, du médius, de l'annulaire et du petit doigt",
+    "structures": ["lombricaux-de-la-main"]
+   },
+   "rapports": "Sous l'aponévrose palmaire, entre les tendons fléchisseurs ; dans la paume l'artère est en avant du nerf, dans le doigt elle passe en arrière de lui",
+   "pouls": null,
+   "anastomoses": "Chacune reçoit, près de sa bifurcation, l'artère métacarpienne palmaire correspondante, venue de l'arcade profonde, et un rameau perforant issu des métacarpiennes dorsales",
+   "clinique": "Dans la paume, elles passent en avant des nerfs digitaux : une plaie palmaire atteint donc l'artère avant le nerf, à l'inverse de ce qui se passe au doigt. Grâce aux métacarpiennes palmaires, elles restent alimentées si l'arcade superficielle est interrompue",
+   "memo": "Trois communes pour quatre doigts : chacune se dédouble dans une commissure, comme un Y",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-arcade-superficielle", "radiopaedia-main", "uams-sup", "orthobullets-main", "fmpm-sup", "fmpm-sup2"],
+   "divergences": "Certains cours français en comptent quatre, en y joignant l'artère du bord ulnaire du petit doigt, que la nomenclature range parmi les digitales propres"
+  },
+  {
+   "id": "arcade-palmaire-profonde",
+   "resume": "L'arcade artérielle profonde de la paume : prolongement de l'artère radiale, au ras des bases des métacarpiens, sous les tendons fléchisseurs.",
+   "provenance": {
+    "artere": "radiale",
+    "texte": "Continuation de l'artère radiale dans la paume, après sa traversée du premier espace interosseux"
+   },
+   "trajet": "Passe entre les chefs oblique et transverse de l'adducteur du pouce puis croise la paume en dedans, sur les bases des métacarpiens et les muscles interosseux, sous les tendons fléchisseurs et les lombricaux ; elle est plus proximale que l'arcade superficielle, d'environ 1 cm",
+   "branches": [
+    { "artere": "arteres-metacarpiennes-palmaires", "texte": "Artères métacarpiennes palmaires" },
+    { "artere": null, "texte": "Rameaux perforants (vers les artères métacarpiennes dorsales)" },
+    { "artere": null, "texte": "Rameaux récurrents (vers le réseau carpien palmaire)" }
+   ],
+   "terminaison": "Fermée en dedans, à la base du cinquième métacarpien, par le rameau palmaire profond de l'artère ulnaire",
+   "territoire": {
+    "texte": "Métacarpiens, muscles interosseux, adducteur du pouce, lombricaux, articulations du carpe et métacarpo-phalangiennes ; elle renforce les artères des doigts",
+    "structures": ["interosseux-palmaires", "interosseux-dorsaux", "adducteur-pouce", "metacarpiens"]
+   },
+   "rapports": "La branche profonde du nerf ulnaire la longe, en sens inverse ; le chef oblique de l'adducteur du pouce la recouvre",
+   "pouls": null,
+   "anastomoses": "Avec l'arcade superficielle par les métacarpiennes palmaires ; avec le réseau dorsal par les rameaux perforants ; avec le réseau carpien palmaire par les rameaux récurrents",
+   "clinique": "Presque toujours complète (97 % des mains dans une série), à la différence de la superficielle : elle garantit l'irrigation des doigts si l'une des deux artères du poignet est interrompue. Profonde, elle est rarement atteinte par les plaies",
+   "memo": "Profonde = radiale : au ras des bases des métacarpiens, un centimètre en amont de la superficielle",
+   "variantes": "Rarement incomplète : elle s'arrête alors avant d'avoir rejoint le rameau profond de l'ulnaire",
+   "sources": ["gray1918", "kenhub-arcade-profonde", "radiopaedia-main", "uams-sup", "orthobullets-main"],
+   "divergences": null
+  },
+  {
+   "id": "arteres-digitales-dorsales-de-la-main",
+   "resume": "Les fines artères du dos des doigts : nées des métacarpiennes dorsales, elles ne dépassent guère la première phalange ; le reste du doigt dépend des artères palmaires.",
+   "provenance": {
+    "artere": "arteres-metacarpiennes-dorsales",
+    "texte": "Naissent de la bifurcation des artères métacarpiennes dorsales, à hauteur des commissures"
+   },
+   "trajet": "Longent les bords dorsaux de deux doigts voisins ; grêles, elles s'épuisent sur le dos de la phalange proximale",
+   "branches": [],
+   "terminaison": "S'épuisent sur le dos de la phalange proximale en s'anastomosant avec les rameaux dorsaux des artères digitales palmaires propres",
+   "territoire": {
+    "texte": "Peau et tendons extenseurs du dos de la phalange proximale des doigts ; le dos des deux dernières phalanges et le lit de l'ongle dépendent des artères digitales palmaires",
+    "structures": ["phalanges-proximales", "tendons-extenseurs-doigts"]
+   },
+   "rapports": "Sous la peau du dos des doigts, de part et d'autre du tendon extenseur",
+   "pouls": null,
+   "anastomoses": "Avec les artères digitales palmaires propres, dont les rameaux dorsaux prennent le relais au-delà de la première phalange",
+   "clinique": "Trop grêles pour faire vivre un doigt à elles seules : la survie d'un doigt blessé ou réimplanté repose sur ses artères digitales palmaires",
+   "memo": "Dorsales : courtes, elles s'arrêtent à la première phalange ; l'ongle est nourri par les palmaires",
+   "variantes": "Celles des bords en regard du pouce et de l'index viennent de la première métacarpienne dorsale, branche directe de la radiale ; celle du bord médial du petit doigt, du rameau carpien dorsal de l'ulnaire",
+   "sources": ["gray1918", "uams-sup", "radiopaedia-main", "wikipedia-metacarpiennes-dorsales"],
+   "divergences": null
+  },
+  {
+   "id": "arteres-digitales-palmaires-propres",
+   "resume": "Les artères des bords des doigts (anciennes artères collatérales) : deux par doigt, elles longent la gaine des fléchisseurs jusqu'à la pulpe et nourrissent presque tout le doigt.",
+   "provenance": {
+    "artere": "arteres-digitales-palmaires-communes",
+    "texte": "Naissent deux par deux de la bifurcation des artères digitales palmaires communes, à la base des doigts"
+   },
+   "trajet": "Longent les bords médial et latéral de la face palmaire de chaque doigt, de part et d'autre de la gaine des fléchisseurs, en arrière du nerf digital correspondant, jusqu'à la pulpe",
+   "branches": [
+    { "artere": null, "texte": "Rameaux dorsaux, pour le dos des deux dernières phalanges et la matrice de l'ongle" },
+    { "artere": null, "texte": "Rameaux anastomotiques transversaux, près des articulations interphalangiennes" }
+   ],
+   "terminaison": "Les deux artères d'un même doigt s'unissent en arcade dans la pulpe, sous la phalange distale",
+   "territoire": {
+    "texte": "Face palmaire des doigts, gaines et tendons fléchisseurs, articulations interphalangiennes, pulpe, dos des deux dernières phalanges et lit de l'ongle",
+    "structures": ["phalanges-proximales", "phalanges-moyennes", "phalanges-distales", "gaines-synoviales-des-doigts-de-la-main"]
+   },
+   "rapports": "Dans le doigt, l'artère est en arrière du nerf digital palmaire ; dans la paume, c'était l'inverse",
+   "pouls": null,
+   "anastomoses": "Entre elles par des rameaux transversaux et par l'arcade de la pulpe ; avec les artères digitales dorsales par leurs rameaux dorsaux",
+   "clinique": "Une plaie du bord d'un doigt coupe ensemble le nerf, plus superficiel, et l'artère. Ce sont elles que l'on suture au microscope pour réimplanter un doigt ; une seule artère perméable suffit en général à le faire vivre",
+   "memo": "Deux par doigt, une sur chaque bord, derrière le nerf : les anciennes « collatérales » des doigts",
+   "variantes": "L'artère du bord ulnaire du petit doigt naît directement de l'arcade superficielle ou de l'ulnaire ; celles du pouce viennent de l'artère principale du pouce, celle du bord radial de l'index de l'artère radiale de l'index",
+   "sources": ["gray1918", "kenhub-arcade-superficielle", "radiopaedia-main", "uams-sup", "orthobullets-main"],
+   "divergences": null
+  },
+  {
+   "id": "arteres-metacarpiennes-dorsales",
+   "resume": "Les artères du dos de la main : elles descendent sur les muscles interosseux dorsaux et se divisent près des commissures en artères digitales dorsales.",
+   "provenance": {
+    "artere": "reseau-carpien-dorsal",
+    "texte": "Les deuxième, troisième et quatrième naissent du réseau carpien dorsal ; la première naît directement de l'artère radiale, juste avant qu'elle ne traverse le premier espace interosseux"
+   },
+   "trajet": "Descendent sur le dos de la main, à la surface des muscles interosseux dorsaux, dans les espaces intermétacarpiens, sous les tendons extenseurs",
+   "branches": [
+    { "artere": "arteres-digitales-dorsales-de-la-main", "texte": "Artères digitales dorsales" }
+   ],
+   "terminaison": "Chacune se divise, près de la commissure, en deux artères digitales dorsales pour les bords en regard de deux doigts voisins",
+   "territoire": {
+    "texte": "Muscles interosseux dorsaux, métacarpiens, peau du dos de la main et de la première phalange des doigts",
+    "structures": ["interosseux-dorsaux", "metacarpiens", "tendons-extenseurs-doigts"]
+   },
+   "rapports": "Entre les métacarpiens, sous les tendons extenseurs et le fascia dorsal de la main",
+   "pouls": null,
+   "anastomoses": "À leur origine avec l'arcade palmaire profonde, par les rameaux perforants proximaux ; près de leur bifurcation avec les artères digitales palmaires communes, par les rameaux perforants distaux",
+   "clinique": "Leurs rameaux cutanés permettent de tailler de petits lambeaux sur le dos de la main pour recouvrir les doigts ; la première et la deuxième sont les plus constantes",
+   "memo": "Quatre artères sur les quatre interosseux dorsaux : la première vient de la radiale, les trois autres du réseau carpien dorsal",
+   "variantes": "Les troisième et quatrième sont souvent grêles ou absentes",
+   "sources": ["gray1918", "uams-sup", "radiopaedia-main", "orthobullets-main", "wikipedia-metacarpiennes-dorsales"],
+   "divergences": null
+  },
+  {
+   "id": "arteres-metacarpiennes-palmaires",
+   "resume": "Les branches de l'arcade palmaire profonde : elles descendent sur les muscles interosseux et rejoignent, près des commissures, les artères digitales venues de l'arcade superficielle.",
+   "provenance": {
+    "artere": "arcade-palmaire-profonde",
+    "texte": "Naissent de la convexité de l'arcade palmaire profonde"
+   },
+   "trajet": "Au nombre de trois ou quatre, elles descendent dans les espaces intermétacarpiens, à la face palmaire des muscles interosseux, jusqu'aux commissures",
+   "branches": [
+    { "artere": null, "texte": "Rameaux pour les muscles interosseux et les métacarpiens" }
+   ],
+   "terminaison": "Chacune se jette dans l'artère digitale palmaire commune correspondante, à hauteur des têtes des métacarpiens",
+   "territoire": {
+    "texte": "Muscles interosseux, métacarpiens, articulations métacarpo-phalangiennes ; elles renforcent les artères des doigts",
+    "structures": ["interosseux-palmaires", "interosseux-dorsaux", "metacarpiens"]
+   },
+   "rapports": "En profondeur de la paume, contre les interosseux, sous les tendons fléchisseurs",
+   "pouls": null,
+   "anastomoses": "Elles unissent l'arcade profonde aux branches de l'arcade superficielle ; des rameaux perforants les relient aux artères métacarpiennes dorsales",
+   "clinique": "C'est par elles que l'arcade profonde, donc l'artère radiale, supplée l'arcade superficielle quand l'artère ulnaire est lésée : ce relais explique qu'un doigt reste irrigué après la section d'une des deux artères du poignet",
+   "memo": "Métacarpiennes palmaires : les échelons qui relient l'arcade profonde aux artères digitales communes",
+   "variantes": "Trois ou quatre selon les auteurs ; le tronc commun de l'artère principale du pouce et de l'artère radiale de l'index est parfois appelé première métacarpienne palmaire",
+   "sources": ["gray1918", "kenhub-arcade-profonde", "radiopaedia-main", "uams-sup", "fmpm-sup2"],
+   "divergences": null
+  },
+  {
+   "id": "branche-carpienne-dorsale-de-l-artere-ulnaire",
+   "resume": "Rameau de l'ulnaire qui contourne le bord médial du poignet pour gagner le dos du carpe : uni à son homologue radial, il forme le réseau carpien dorsal.",
+   "provenance": {
+    "artere": "ulnaire",
+    "texte": "Naît de l'artère ulnaire juste au-dessus du pisiforme"
+   },
+   "trajet": "Contourne le bord médial du poignet en passant sous le tendon du fléchisseur ulnaire du carpe, puis croise le dos du carpe sous les tendons extenseurs",
+   "branches": [
+    { "artere": null, "texte": "Rameau pour le bord médial du cinquième métacarpien et le dos du petit doigt" }
+   ],
+   "terminaison": "S'unit au rameau carpien dorsal de l'artère radiale pour former le réseau carpien dorsal",
+   "territoire": {
+    "texte": "Bord médial du carpe (triquétrum, pisiforme, hamatum), dos du poignet, bord ulnaire du dos de la main et du petit doigt",
+    "structures": ["triquetrum", "pisiforme", "hamatum", "cinquieme-metacarpien"]
+   },
+   "rapports": "Passe entre le tendon du fléchisseur ulnaire du carpe et l'os, puis sous les tendons extenseurs",
+   "pouls": null,
+   "anastomoses": "Réseau carpien dorsal, avec le rameau carpien dorsal de la radiale et la terminaison des artères interosseuses",
+   "clinique": "C'est l'apport ulnaire du réseau dorsal du poignet. La peau du bord ulnaire du poignet et de la main qu'elle irrigue peut être levée en lambeau sans sacrifier l'artère ulnaire",
+   "memo": "Elle fait le tour du poignet par le bord du petit doigt pour rejoindre, au dos du carpe, sa jumelle venue de la radiale",
+   "variantes": null,
+   "sources": ["gray1918", "statpearls-ulnaire", "uams-sup", "fmpm-sup2"],
+   "divergences": "Nomenclature : un cours français classique l'appelle encore artère cubito-dorsale"
+  },
+  {
+   "id": "reseau-carpien-dorsal",
+   "resume": "Le réseau artériel du dos du poignet : formé par les rameaux carpiens dorsaux de la radiale et de l'ulnaire, il nourrit le carpe et donne les artères métacarpiennes dorsales.",
+   "provenance": {
+    "artere": "radiale",
+    "texte": "Formé au dos du carpe par l'union des rameaux carpiens dorsaux de l'artère radiale (apport principal) et de l'artère ulnaire, rejoints par la terminaison des artères interosseuses antérieure et postérieure"
+   },
+   "trajet": "S'étale en arcade transversale sur la face dorsale des os du carpe, plaqué contre les ligaments, sous les tendons extenseurs",
+   "branches": [
+    { "artere": "arteres-metacarpiennes-dorsales", "texte": "Deuxième, troisième et quatrième artères métacarpiennes dorsales" },
+    { "artere": null, "texte": "Rameaux pour les os et les articulations du carpe" }
+   ],
+   "terminaison": "Se résout en artères métacarpiennes dorsales et en rameaux osseux pour le carpe",
+   "territoire": {
+    "texte": "Os du carpe par leur face dorsale (dont le scaphoïde), articulations du poignet, dos de la main",
+    "structures": ["scaphoide", "lunatum", "capitatum", "triquetrum", "hamatum"]
+   },
+   "rapports": "Sous le rétinaculum des extenseurs et les tendons extenseurs, contre la capsule dorsale du poignet",
+   "pouls": null,
+   "anastomoses": "Avec l'arcade palmaire profonde par les rameaux perforants des espaces intermétacarpiens ; avec le réseau carpien palmaire autour du carpe",
+   "clinique": "Le rameau carpien dorsal de la radiale, qui l'alimente, nourrit le scaphoïde : après une fracture de cet os, un fragment peut être privé de sang, se nécroser ou ne pas consolider",
+   "memo": "Radiale et ulnaire se donnent la main derrière le carpe comme devant : de cette arcade partent les métacarpiennes dorsales",
+   "variantes": "Forme et calibre variables ; l'apport des artères interosseuses peut dominer",
+   "sources": ["gray1918", "radiopaedia-main", "uams-sup", "orthobullets-main", "statpearls-radiale", "kenhub-fr-main"],
+   "divergences": "Gray et les tables de l'UAMS le font naître surtout des rameaux carpiens dorsaux de la radiale et de l'ulnaire ; Orthobullets, des artères interosseuses postérieure et antérieure"
+  },
+  {
+   "id": "arcade-plantaire",
+   "resume": "La seule arcade artérielle de la plante du pied : partie profonde de l'artère plantaire latérale, elle croise les bases des métatarsiens et s'unit à l'artère plantaire profonde.",
+   "provenance": {
+    "artere": "artere-plantaire-laterale",
+    "texte": "Portion transversale, profonde, de l'artère plantaire latérale, à partir de la base du cinquième métatarsien"
+   },
+   "trajet": "Se dirige en dedans, convexe en avant, sous les bases des deuxième, troisième et quatrième métatarsiens, entre les muscles interosseux et le chef oblique de l'adducteur de l'hallux, jusqu'à la partie proximale du premier espace intermétatarsien",
+   "branches": [
+    { "artere": null, "texte": "Trois rameaux perforants (postérieurs), vers les artères métatarsiennes dorsales" },
+    { "artere": "arteres-metatarsiennes-plantaires", "texte": "Quatre artères métatarsiennes plantaires" }
+   ],
+   "terminaison": "S'unit, dans le premier espace intermétatarsien, à l'artère plantaire profonde venue de la dorsale du pied",
+   "territoire": {
+    "texte": "Muscles interosseux, adducteur de l'hallux, métatarsiens, articulations tarso-métatarsiennes ; orteils par les artères métatarsiennes plantaires",
+    "structures": ["interosseux-plantaires", "interosseux-dorsaux-du-pied", "adducteur-de-l-hallux", "metatarsiens"]
+   },
+   "rapports": "Dans le plan le plus profond de la plante, contre les interosseux ; la branche profonde du nerf plantaire latéral l'accompagne",
+   "pouls": null,
+   "anastomoses": "Boucle entre le système tibial postérieur et le système tibial antérieur : artère plantaire profonde en dedans, rameaux perforants vers les métatarsiennes dorsales dans chaque espace",
+   "clinique": "Alimentée par ses deux bouts, cette boucle entre la plante et le dos du pied est la principale voie de suppléance entre les deux artères tibiales : le pied reste irrigué si l'une d'elles s'obstrue",
+   "memo": "L'arcade plantaire est au pied ce que l'arcade palmaire profonde est à la main : profonde, sur les bases des métatarsiens, bouclée par une artère venue du dos",
+   "variantes": "Quand la plantaire latérale est grêle, c'est la dorsale du pied, par l'artère plantaire profonde, qui l'alimente pour l'essentiel",
+   "sources": ["gray1918", "radiopaedia-pied", "statpearls-pied", "kenhub-tibiale-posterieure", "kenhub-jambe-pied", "openstax", "uams-inf"],
+   "divergences": "OpenStax et un article de Kenhub la disent formée par les deux artères plantaires ; Gray, Radiopaedia et StatPearls, par la seule plantaire latérale unie à l'artère plantaire profonde"
+  },
+  {
+   "id": "artere-arquee",
+   "resume": "Artère du dos de l'avant-pied : née de la dorsale du pied, elle décrit un arc sur les bases des métatarsiens et donne les artères des trois derniers espaces.",
+   "provenance": {
+    "artere": "dorsale-du-pied",
+    "texte": "Naît de l'artère dorsale du pied à hauteur des cunéiformes, près de l'interligne tarso-métatarsien, un peu en avant de la tarsienne latérale"
+   },
+   "trajet": "Décrit une courbe vers le bord latéral du pied, sur les bases des métatarsiens, sous les tendons des extenseurs des orteils",
+   "branches": [
+    { "artere": "arteres-metatarsiennes-dorsales", "texte": "Deuxième, troisième et quatrième artères métatarsiennes dorsales" }
+   ],
+   "terminaison": "S'anastomose, au bord latéral du pied, avec l'artère tarsienne latérale et l'artère plantaire latérale",
+   "territoire": {
+    "texte": "Dos de l'avant-pied : métatarsiens, muscles interosseux dorsaux, orteils du deuxième au cinquième",
+    "structures": ["interosseux-dorsaux-du-pied", "metatarsiens"]
+   },
+   "rapports": "Plaquée sur les bases des métatarsiens, sous les tendons du court extenseur des orteils",
+   "pouls": null,
+   "anastomoses": "Avec la tarsienne latérale, qui ferme la boucle artérielle du dos du pied ; avec l'arcade plantaire par les rameaux perforants des espaces",
+   "clinique": "Inconstante : quand elle manque, les artères métatarsiennes dorsales naissent de la tarsienne latérale ou montent de l'arcade plantaire par les perforantes ; mieux vaut le savoir avant un lambeau ou une amputation du dos de l'avant-pied",
+   "memo": "Arquée comme un arc tendu en travers des métatarsiens : de sa convexité partent les artères des trois derniers espaces",
+   "variantes": "Absente ou grêle chez de nombreuses personnes ; elle peut naître de la tarsienne latérale ou former une boucle",
+   "sources": ["gray1918", "kenhub-arquee", "radiopaedia-pied", "statpearls-pied", "uams-inf"],
+   "divergences": null
+  },
+  {
+   "id": "artere-digitales-plantaires-communes",
+   "resume": "Courts troncs qui prolongent les artères métatarsiennes plantaires jusqu'aux commissures des orteils, où chacun se divise en deux artères digitales plantaires propres.",
+   "provenance": {
+    "artere": "arteres-metatarsiennes-plantaires",
+    "texte": "Chacune prolonge une artère métatarsienne plantaire à l'extrémité distale de l'espace intermétatarsien, au-delà de son rameau perforant"
+   },
+   "trajet": "Tronc très court, à hauteur des articulations métatarso-phalangiennes, dirigé vers la commissure des orteils",
+   "branches": [
+    { "artere": "arteres-digitales-plantaires-propres", "texte": "Deux artères digitales plantaires propres chacune" }
+   ],
+   "terminaison": "Se divise en deux artères digitales plantaires propres pour les bords en regard de deux orteils voisins",
+   "territoire": {
+    "texte": "Commissures et bords adjacents des orteils",
+    "structures": ["phalanges-pied"]
+   },
+   "rapports": "Entre les têtes des métatarsiens, avec les nerfs digitaux plantaires communs",
+   "pouls": null,
+   "anastomoses": "Reçoivent les rameaux digitaux superficiels de l'artère plantaire médiale dans les trois premiers espaces ; reliées aux artères métatarsiennes dorsales par les rameaux perforants antérieurs",
+   "clinique": "Elles cheminent avec les nerfs digitaux plantaires communs entre les têtes des métatarsiens, là où se développe le névrome de Morton : la chirurgie de ce nerf doit les ménager",
+   "memo": "Comme à la main : un tronc commun par espace, qui se dédouble en deux artères propres à la commissure",
+   "variantes": null,
+   "sources": ["gray1918", "elsevier-metatarsiennes-plantaires", "wikipedia-digitales-plantaires-communes", "uams-inf"],
+   "divergences": "Gray (1918) et les tables de l'UAMS ne les distinguent pas : ils font naître les artères digitales directement de la bifurcation des métatarsiennes plantaires"
+  },
+  {
+   "id": "artere-plantaire-laterale",
+   "resume": "La plus grosse des deux artères de la plante : branche de la tibiale postérieure, elle croise la plante vers le cinquième métatarsien puis revient en dedans former l'arcade plantaire.",
+   "provenance": {
+    "artere": "tibiale-posterieure",
+    "texte": "Branche terminale latérale, la plus grosse, de l'artère tibiale postérieure, née sous le rétinaculum des fléchisseurs"
+   },
+   "trajet": "Croise obliquement la plante en avant et en dehors, entre le calcanéus et l'abducteur de l'hallux, puis entre le court fléchisseur des orteils et le carré plantaire, jusqu'à la base du cinquième métatarsien ; là, elle plonge et tourne en dedans",
+   "branches": [
+    { "artere": null, "texte": "Rameaux musculaires et cutanés du bord latéral de la plante" },
+    { "artere": "arteres-digitales-plantaires-propres", "texte": "Artère digitale plantaire propre du bord latéral du cinquième orteil" }
+   ],
+   "terminaison": "Se continue par l'arcade plantaire, qui s'unit à l'artère plantaire profonde dans le premier espace intermétatarsien",
+   "territoire": {
+    "texte": "Talon, muscles et peau de la partie latérale de la plante puis, par l'arcade plantaire, muscles interosseux et orteils",
+    "structures": ["carre-plantaire", "court-flechisseur-orteils", "abducteur-petit-orteil", "calcaneus"]
+   },
+   "rapports": "Accompagnée par le nerf plantaire latéral, entre la première et la deuxième couche des muscles de la plante ; près du petit orteil, elle est superficielle, entre le court fléchisseur des orteils et l'abducteur du petit orteil",
+   "pouls": null,
+   "anastomoses": "Avec la dorsale du pied par l'arcade plantaire et l'artère plantaire profonde ; avec l'artère arquée et la tarsienne latérale au bord latéral du pied",
+   "clinique": "C'est elle, et non la plantaire médiale, qui apporte l'essentiel du sang de la plante et des orteils ; avec l'artère plantaire profonde, elle forme la boucle par laquelle une artère tibiale supplée l'autre",
+   "memo": "Latérale : la grosse ; elle file vers le cinquième métatarsien puis revient en dedans pour faire l'arcade",
+   "variantes": "Grêle quand la dorsale du pied, par l'artère plantaire profonde, fournit l'essentiel de l'arcade",
+   "sources": ["gray1918", "kenhub-tibiale-posterieure", "radiopaedia-pied", "statpearls-pied", "uams-inf"],
+   "divergences": null
+  },
+  {
+   "id": "artere-plantaire-mediale",
+   "resume": "La plus petite des deux artères de la plante : branche de la tibiale postérieure, elle longe le bord médial du pied, le long de l'abducteur de l'hallux, jusqu'au gros orteil.",
+   "provenance": {
+    "artere": "tibiale-posterieure",
+    "texte": "Branche terminale médiale, la plus petite, de l'artère tibiale postérieure, née sous le rétinaculum des fléchisseurs"
+   },
+   "trajet": "Se dirige en avant le long du bord médial du pied, d'abord sous l'abducteur de l'hallux, puis entre ce muscle et le court fléchisseur des orteils, avec le nerf plantaire médial ; très amincie à la base du premier métatarsien, elle gagne le bord médial de l'hallux",
+   "branches": [
+    { "artere": null, "texte": "Rameau profond" },
+    { "artere": "branche-superficielle-de-l-artere-plantaire-mediale", "texte": "Rameau superficiel" }
+   ],
+   "terminaison": "Se divise près de la base du premier métatarsien en rameaux profond et superficiel ; elle s'unit, au bord médial de l'hallux, à un rameau de la première artère métatarsienne plantaire",
+   "territoire": {
+    "texte": "Abducteur de l'hallux, court fléchisseur des orteils, peau du bord médial de la plante, bord médial de l'hallux",
+    "structures": ["abducteur-hallux", "court-flechisseur-orteils"]
+   },
+   "rapports": "Recouverte par l'abducteur de l'hallux, elle longe le nerf plantaire médial, en dedans de lui",
+   "pouls": null,
+   "anastomoses": "Avec la première artère métatarsienne plantaire et la première métatarsienne dorsale au bord de l'hallux ; ses rameaux digitaux superficiels rejoignent les trois premières métatarsiennes plantaires ; réseau de la malléole médiale",
+   "clinique": "Elle porte la peau de la voûte plantaire, épaisse, sensible et hors appui : levée en lambeau sur elle, cette peau sert à reconstruire le talon. Elle ne participe en règle pas à l'arcade plantaire",
+   "memo": "Médiale : la petite ; elle suit l'abducteur de l'hallux vers le gros orteil et laisse l'arcade à la latérale",
+   "variantes": "Peut fournir les artères des orteils médiaux quand les branches de la dorsale du pied manquent",
+   "sources": ["gray1918", "kenhub-tibiale-posterieure", "elsevier-plantaire-mediale", "elsevier-plantaire-mediale-profonde", "statpearls-pied", "uams-inf"],
+   "divergences": "Les descriptions de ses deux rameaux se contredisent : pour la plupart, le superficiel gagne le bord médial de l'hallux et le profond rejoint les métatarsiennes plantaires ; StatPearls inverse ces rôles"
+  },
+  {
+   "id": "artere-plantaire-profonde",
+   "resume": "La branche de la dorsale du pied qui plonge vers la plante à travers le premier espace intermétatarsien : elle y ferme l'arcade plantaire.",
+   "provenance": {
+    "artere": "dorsale-du-pied",
+    "texte": "Branche terminale de l'artère dorsale du pied, à l'extrémité proximale du premier espace intermétatarsien"
+   },
+   "trajet": "Plonge vers la plante entre les deux chefs du premier muscle interosseux dorsal, entre les bases des deux premiers métatarsiens",
+   "branches": [
+    { "artere": "arteres-metatarsiennes-plantaires", "texte": "Première artère métatarsienne plantaire (née à sa jonction avec l'arcade plantaire)" }
+   ],
+   "terminaison": "S'unit à l'extrémité de l'artère plantaire latérale pour fermer l'arcade plantaire",
+   "territoire": {
+    "texte": "Premier muscle interosseux dorsal, premier espace intermétatarsien ; hallux et bord médial du deuxième orteil par la première métatarsienne plantaire",
+    "structures": ["interosseux-dorsaux-du-pied", "premier-metatarsien", "deuxieme-os-metatarsien"]
+   },
+   "rapports": "Passe entre les bases du premier et du deuxième métatarsien, au contact de l'articulation tarso-métatarsienne",
+   "pouls": null,
+   "anastomoses": "Trait d'union entre la dorsale du pied (système tibial antérieur) et la plantaire latérale (système tibial postérieur)",
+   "clinique": "Boucle entre le dos et la plante : par elle, la dorsale du pied peut remplir l'arcade plantaire quand la tibiale postérieure est obstruée, et inversement. Elle est exposée dans les luxations tarso-métatarsiennes du premier espace",
+   "memo": "Homologue de la radiale à la main : une artère dorsale qui traverse le premier espace pour boucler l'arcade profonde",
+   "variantes": "Volumineuse quand la plantaire latérale est grêle : elle fournit alors l'essentiel de l'arcade plantaire",
+   "sources": ["gray1918", "kenhub-dorsale-pied", "statpearls-pied", "radiopaedia-pied", "uams-inf"],
+   "divergences": null
+  },
+  {
+   "id": "artere-tarsienne-laterale",
+   "resume": "Branche de la dorsale du pied qui s'étale en dehors sur le tarse, sous le court extenseur des orteils, qu'elle nourrit avec les os et les articulations voisins.",
+   "provenance": {
+    "artere": "dorsale-du-pied",
+    "texte": "Naît de l'artère dorsale du pied au moment où elle croise le naviculaire"
+   },
+   "trajet": "Se dirige en dehors et en avant, en arche sur les os du tarse, sous le court extenseur des orteils",
+   "branches": [],
+   "terminaison": "S'anastomose, au bord latéral du pied, avec l'artère arquée",
+   "territoire": {
+    "texte": "Court extenseur des orteils et de l'hallux, os et articulations de la partie latérale du tarse",
+    "structures": ["court-extenseur-orteils", "court-extenseur-de-l-hallux", "cuboide", "os-cuneiforme-lateral"]
+   },
+   "rapports": "Plaquée sur le tarse, recouverte par le court extenseur des orteils",
+   "pouls": null,
+   "anastomoses": "Avec l'artère arquée, la malléolaire antérieure latérale, le rameau perforant de l'artère fibulaire et l'artère plantaire latérale",
+   "clinique": "Quand l'artère arquée manque, c'est elle qui donne les artères métatarsiennes dorsales. Par son anastomose avec le rameau perforant de la fibulaire, elle peut alimenter le dos du pied si la tibiale antérieure est obstruée",
+   "memo": "Tarsienne latérale en arrière, arquée en avant : deux arches parallèles sur le dos du pied, réunies au bord latéral",
+   "variantes": "Parfois plusieurs artères tarsiennes latérales au lieu d'une",
+   "sources": ["gray1918", "kenhub-dorsale-pied", "radiopaedia-pied", "statpearls-pied", "uams-inf"],
+   "divergences": null
+  },
+  {
+   "id": "arteres-digitales-dorsales-du-pied",
+   "resume": "Les fines artères du dos des orteils : nées de la division des artères métatarsiennes dorsales, elles longent les bords en regard de deux orteils voisins.",
+   "provenance": {
+    "artere": "arteres-metatarsiennes-dorsales",
+    "texte": "Naissent de la bifurcation des artères métatarsiennes dorsales, à la commissure des orteils"
+   },
+   "trajet": "Longent les bords dorsaux de deux orteils voisins, sous la peau",
+   "branches": [],
+   "terminaison": "S'épuisent sur le dos des orteils, sans atteindre la phalange distale",
+   "territoire": {
+    "texte": "Peau et tendons extenseurs du dos des orteils, hors la phalange distale et le lit de l'ongle, qui dépendent des artères digitales plantaires",
+    "structures": ["phalanges-pied", "tendons-extenseurs-orteils"]
+   },
+   "rapports": "De part et d'autre des tendons extenseurs, sur le dos de chaque orteil",
+   "pouls": null,
+   "anastomoses": "Avec les artères digitales plantaires propres, qui prennent le relais à l'extrémité de l'orteil",
+   "clinique": "Grêles : la vitalité d'un orteil repose avant tout sur ses artères plantaires. La couleur et la chaleur des orteils renseignent sur l'ensemble de ce réseau distal chez l'artéritique et le diabétique",
+   "memo": "Comme à la main : les dorsales s'arrêtent avant l'ongle, nourri par les artères plantaires",
+   "variantes": "Celle du bord médial de l'hallux vient de la première métatarsienne dorsale ; celle du bord latéral du petit orteil, de la quatrième",
+   "sources": ["gray1918", "kenhub-arquee", "kenhub-dorsale-pied", "statpearls-pied", "uams-inf"],
+   "divergences": null
+  },
+  {
+   "id": "arteres-digitales-plantaires-propres",
+   "resume": "Les artères des bords des orteils, côté plante : deux par orteil, elles nourrissent la face plantaire, la pulpe et le lit de l'ongle.",
+   "provenance": {
+    "artere": "artere-digitales-plantaires-communes",
+    "texte": "Naissent deux par deux de la bifurcation des artères métatarsiennes plantaires, par leurs troncs digitaux communs, à hauteur des articulations métatarso-phalangiennes"
+   },
+   "trajet": "Longent la face plantaire de chaque orteil, une sur chaque bord, jusqu'à l'extrémité de la phalange distale",
+   "branches": [],
+   "terminaison": "Se terminent dans la pulpe de l'orteil, à l'extrémité de la phalange distale",
+   "territoire": {
+    "texte": "Face plantaire et pulpe des orteils, dos de la phalange distale et lit de l'ongle",
+    "structures": ["phalanges-pied"]
+   },
+   "rapports": "Le long des bords de l'orteil, avec les nerfs digitaux plantaires propres",
+   "pouls": null,
+   "anastomoses": "Avec les artères digitales dorsales",
+   "clinique": "Dix artères, deux par orteil : l'occlusion de ces petits vaisseaux (embolie, artérite distale) donne un orteil bleu ou une gangrène limitée alors que les pouls du pied restent perçus",
+   "memo": "Deux par orteil ; aux extrémités, l'artère du bord médial de l'hallux et celle du bord latéral du petit orteil ont une origine à part",
+   "variantes": "Bord médial de l'hallux : rameau de la première métatarsienne plantaire ou de la plantaire médiale ; bord latéral du cinquième orteil : rameau né directement de la plantaire latérale",
+   "sources": ["gray1918", "elsevier-digitales-plantaires", "uams-inf", "wikipedia-metatarsiennes-plantaires"],
+   "divergences": null
+  },
+  {
+   "id": "arteres-metatarsiennes-dorsales",
+   "resume": "Les artères du dos de l'avant-pied : elles avancent sur les muscles interosseux dorsaux et se divisent à la commissure en artères digitales dorsales.",
+   "provenance": {
+    "artere": "artere-arquee",
+    "texte": "Les deuxième, troisième et quatrième naissent de l'artère arquée ; la première est une branche terminale de l'artère dorsale du pied"
+   },
+   "trajet": "Avancent sur le dos des muscles interosseux dorsaux, dans les espaces intermétatarsiens, jusqu'aux commissures des orteils",
+   "branches": [
+    { "artere": "arteres-digitales-dorsales-du-pied", "texte": "Artères digitales dorsales" }
+   ],
+   "terminaison": "Chacune se divise à la commissure en deux artères digitales dorsales pour les bords en regard de deux orteils voisins",
+   "territoire": {
+    "texte": "Muscles interosseux dorsaux, métatarsiens, peau du dos de l'avant-pied et des orteils",
+    "structures": ["interosseux-dorsaux-du-pied", "metatarsiens"]
+   },
+   "rapports": "Entre les métatarsiens, sous les tendons extenseurs des orteils",
+   "pouls": null,
+   "anastomoses": "Avec l'arcade plantaire par les rameaux perforants postérieurs, à l'origine des espaces ; avec les artères métatarsiennes plantaires par les rameaux perforants antérieurs, près des commissures",
+   "clinique": "La première, la plus grosse, est le pédicule des lambeaux du premier espace et des transferts d'orteil vers la main ; sa profondeur par rapport au muscle interosseux varie, ce qui impose de la repérer avant l'intervention",
+   "memo": "Même plan qu'à la main : la première vient de l'artère principale (dorsale du pied), les trois autres de l'arche (artère arquée)",
+   "variantes": "Si l'artère arquée manque, elles naissent de la tarsienne latérale ou montent de l'arcade plantaire par les rameaux perforants",
+   "sources": ["gray1918", "kenhub-arquee", "kenhub-dorsale-pied", "radiopaedia-pied", "uams-inf"],
+   "divergences": null
+  },
+  {
+   "id": "arteres-metatarsiennes-plantaires",
+   "resume": "Les branches de l'arcade plantaire : quatre artères qui avancent entre les métatarsiens, contre les interosseux, et donnent les artères des orteils.",
+   "provenance": {
+    "artere": "arcade-plantaire",
+    "texte": "Naissent de la convexité de l'arcade plantaire ; la première, à la jonction de l'arcade et de l'artère plantaire profonde"
+   },
+   "trajet": "Au nombre de quatre, elles avancent dans les espaces intermétatarsiens, au contact des muscles interosseux, jusqu'aux commissures des orteils",
+   "branches": [
+    { "artere": "branches-perforantes-des-arteres-metatarsiennes-plantaires", "texte": "Rameaux perforants (antérieurs), vers les artères métatarsiennes dorsales" },
+    { "artere": "artere-digitales-plantaires-communes", "texte": "Artères digitales plantaires communes" }
+   ],
+   "terminaison": "Chacune se prolonge par une artère digitale plantaire commune, qui se divise en deux artères digitales plantaires propres",
+   "territoire": {
+    "texte": "Muscles interosseux, métatarsiens, articulations métatarso-phalangiennes, orteils",
+    "structures": ["interosseux-plantaires", "interosseux-dorsaux-du-pied", "metatarsiens"]
+   },
+   "rapports": "Dans le plan profond de la plante, entre les métatarsiens, contre la face plantaire des muscles interosseux",
+   "pouls": null,
+   "anastomoses": "Avec les artères métatarsiennes dorsales par les rameaux perforants antérieurs ; avec les rameaux digitaux superficiels de la plantaire médiale dans les trois premiers espaces",
+   "clinique": "La première, dite artère principale de l'hallux, est la grande artère du gros orteil : elle donne l'artère de son bord médial et celles du premier espace ; il faut la repérer avant un transfert d'orteil ou une amputation du premier rayon",
+   "memo": "Quatre métatarsiennes plantaires pour quatre espaces, plus une artère à part pour le bord latéral du petit orteil",
+   "variantes": "L'artère du bord latéral du cinquième orteil naît de la plantaire latérale, avant l'arcade : certains la comptent comme une cinquième métatarsienne plantaire",
+   "sources": ["gray1918", "radiopaedia-pied", "elsevier-metatarsiennes-plantaires", "wikipedia-metatarsiennes-plantaires", "uams-inf"],
+   "divergences": null
+  },
+  {
+   "id": "plantaires",
+   "resume": "Les deux artères de la plante du pied, médiale et latérale : branches terminales de la tibiale postérieure, elles nourrissent la plante et les orteils.",
+   "provenance": {
+    "artere": "tibiale-posterieure",
+    "texte": "Branches terminales de l'artère tibiale postérieure, nées sous le rétinaculum des fléchisseurs, entre la malléole médiale et le talon, sous l'origine de l'abducteur de l'hallux"
+   },
+   "trajet": "Toutes deux entrent dans la plante sous l'abducteur de l'hallux, chacune avec le nerf plantaire de même nom : la médiale, grêle, longe le bord médial du pied ; la latérale, volumineuse, croise la plante vers le cinquième métatarsien puis revient en dedans former l'arcade plantaire",
+   "branches": [
+    { "artere": "artere-plantaire-mediale", "texte": "Artère plantaire médiale" },
+    { "artere": "artere-plantaire-laterale", "texte": "Artère plantaire latérale" }
+   ],
+   "terminaison": "La médiale s'épuise au bord médial de l'hallux ; la latérale se continue par l'arcade plantaire, unie à l'artère plantaire profonde",
+   "territoire": {
+    "texte": "Muscles, os et peau de la plante du pied, talon, orteils",
+    "structures": ["abducteur-hallux", "court-flechisseur-orteils", "carre-plantaire", "abducteur-petit-orteil", "interosseux-plantaires"]
+   },
+   "rapports": "Chacune accompagne un nerf plantaire, entre la première et la deuxième couche des muscles de la plante",
+   "pouls": null,
+   "anastomoses": "Entre elles par les rameaux digitaux de la médiale, qui rejoignent les artères métatarsiennes plantaires ; avec la dorsale du pied par l'artère plantaire profonde et les rameaux perforants",
+   "clinique": "Elles prolongent la tibiale postérieure : quand celle-ci est obstruée, la plante dépend de la boucle formée avec la dorsale du pied par l'artère plantaire profonde",
+   "memo": "Médiale la mince, latérale la large : c'est la latérale qui fait l'arcade",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-tibiale-posterieure", "radiopaedia-pied", "statpearls-pied", "tma-inf", "qut-plantaires"],
+   "divergences": null
+  },
+  {
+   "id": "branche-superficielle-de-l-artere-plantaire-mediale",
+   "resume": "Le rameau superficiel de l'artère plantaire médiale : il continue l'artère le long du bord médial du pied jusqu'au bord médial du gros orteil.",
+   "provenance": {
+    "artere": "artere-plantaire-mediale",
+    "texte": "Rameau de division de l'artère plantaire médiale, à hauteur de l'interligne tarso-métatarsien, près de la base du premier métatarsien"
+   },
+   "trajet": "Continue la direction de l'artère le long du bord médial du pied, contre l'abducteur de l'hallux, jusqu'au bord médial du gros orteil",
+   "branches": [
+    { "artere": null, "texte": "Rameaux cutanés du bord médial de la plante" },
+    { "artere": "arteres-digitales-plantaires-propres", "texte": "Artère digitale plantaire propre du bord médial de l'hallux" }
+   ],
+   "terminaison": "Devient l'artère du bord médial de l'hallux après s'être unie à un rameau de la première artère métatarsienne plantaire",
+   "territoire": {
+    "texte": "Peau du bord médial de la plante et de l'hallux, abducteur de l'hallux",
+    "structures": ["abducteur-hallux"]
+   },
+   "rapports": "Longe le bord médial du pied, au contact de l'abducteur de l'hallux",
+   "pouls": null,
+   "anastomoses": "Avec la première artère métatarsienne plantaire ; avec les artères tarsiennes médiales de la dorsale du pied, dans le réseau de la malléole médiale",
+   "clinique": "C'est l'artère de la peau du bord médial de la voûte plantaire, zone qui ne porte pas le poids du corps : les lambeaux prélevés à cet endroit pour recouvrir le talon ou l'avant-pied reposent sur elle",
+   "memo": "Superficiel : il reste en surface, le long de l'abducteur de l'hallux, et finit sur le bord médial du gros orteil",
+   "variantes": null,
+   "sources": ["gray1918", "elsevier-plantaire-mediale", "wikipedia-plantaire-mediale", "fmpm-inf", "statpearls-pied"],
+   "divergences": "StatPearls lui fait rejoindre les artères tarsiennes médiales et attribue le bord médial de l'hallux au rameau profond ; Gray (1918) ne nomme que des rameaux digitaux superficiels, unis aux trois premières métatarsiennes plantaires"
+  },
+  {
+   "id": "branches-calcaneennes-de-l-artere-fibulaire",
+   "resume": "Les rameaux terminaux de l'artère fibulaire : ils descendent derrière la malléole latérale et se ramifient sur la face latérale du talon.",
+   "provenance": {
+    "artere": "fibulaire",
+    "texte": "Branches terminales de l'artère fibulaire, nées en arrière de la syndesmose tibio-fibulaire"
+   },
+   "trajet": "Descendent derrière la malléole latérale, au bord latéral du tendon calcanéen, et se ramifient sur les faces latérale et postérieure du calcanéus",
+   "branches": [],
+   "terminaison": "Rejoignent, en arrière du talon, les rameaux calcanéens de la tibiale postérieure",
+   "territoire": {
+    "texte": "Face latérale du calcanéus, peau du bord latéral du talon, bord latéral du tendon calcanéen",
+    "structures": ["calcaneus", "tendon-calcaneen"]
+   },
+   "rapports": "En arrière de la malléole latérale et des tendons fibulaires",
+   "pouls": null,
+   "anastomoses": "Avec les rameaux calcanéens de la tibiale postérieure, en arrière du talon, et avec les artères malléolaires latérales",
+   "clinique": "Ils nourrissent la peau fine du bord latéral du talon : l'abord chirurgical latéral des fractures du calcanéus doit ménager cet apport, faute de quoi la cicatrice se nécrose",
+   "memo": "Deux apports pour un talon : la fibulaire pour le versant latéral, la tibiale postérieure pour le versant médial",
+   "variantes": "Volumineux quand l'artère fibulaire remplace une tibiale postérieure grêle",
+   "sources": ["gray1918", "kenhub-fibulaire", "statpearls-pied", "kenhub-anastomoses-inf"],
+   "divergences": null
+  },
+  {
+   "id": "branches-perforantes-des-arteres-metatarsiennes-plantaires",
+   "resume": "Courts rameaux verticaux qui montent des artères métatarsiennes plantaires vers le dos du pied, à l'extrémité des espaces intermétatarsiens : ils relient les réseaux plantaire et dorsal.",
+   "provenance": {
+    "artere": "arteres-metatarsiennes-plantaires",
+    "texte": "Naissent des artères métatarsiennes plantaires juste avant leur division, à l'extrémité distale des espaces intermétatarsiens"
+   },
+   "trajet": "Montent verticalement à travers l'extrémité antérieure de l'espace intermétatarsien, entre les métatarsiens",
+   "branches": [],
+   "terminaison": "Se jettent dans les artères métatarsiennes dorsales correspondantes, près de leur bifurcation",
+   "territoire": {
+    "texte": "Extrémité distale des espaces intermétatarsiens : muscles interosseux et tissus voisins des articulations métatarso-phalangiennes",
+    "structures": ["interosseux-dorsaux-du-pied", "metatarsiens"]
+   },
+   "rapports": "Entre les extrémités distales de deux métatarsiens voisins, à travers le muscle interosseux",
+   "pouls": null,
+   "anastomoses": "Relient le réseau plantaire au réseau dorsal en avant ; les rameaux perforants postérieurs, nés de l'arcade plantaire à la base des espaces, font de même en arrière",
+   "clinique": "Par ces ponts, le sang de la plante gagne le dos des orteils quand la dorsale du pied ou l'artère arquée fait défaut ; ils expliquent qu'un orteil reste irrigué malgré l'obstruction de l'un des deux réseaux",
+   "memo": "Perforantes antérieures : des barreaux d'échelle entre la plante et le dos du pied, au bout de chaque espace",
+   "variantes": "Peuvent manquer : les réseaux dorsal et plantaire ne communiquent alors pas",
+   "sources": ["gray1918", "kenhub-arquee", "radiopaedia-pied", "wikipedia-metatarsiennes-plantaires", "uams-inf"],
+   "divergences": null
+  },
+  {
+   "id": "rameaux-calcaneens-de-l-artere-tibiale-posterieure",
+   "resume": "Les rameaux de la tibiale postérieure pour le talon : nés derrière la malléole médiale, ils traversent le rétinaculum des fléchisseurs et se ramifient sur la face médiale du calcanéus.",
+   "provenance": {
+    "artere": "tibiale-posterieure",
+    "texte": "Naissent de l'artère tibiale postérieure juste avant sa division, derrière la malléole médiale"
+   },
+   "trajet": "Plusieurs rameaux volumineux qui traversent le rétinaculum des fléchisseurs et descendent sur la face médiale du talon",
+   "branches": [],
+   "terminaison": "Se ramifient dans la graisse et la peau du talon, où ils rejoignent les rameaux calcanéens de l'artère fibulaire",
+   "territoire": {
+    "texte": "Face médiale du calcanéus, graisse et peau du talon, bord médial du tendon calcanéen, muscles du bord médial de la plante",
+    "structures": ["calcaneus", "tendon-calcaneen", "abducteur-hallux"]
+   },
+   "rapports": "Traversent le rétinaculum des fléchisseurs en arrière de la malléole médiale",
+   "pouls": null,
+   "anastomoses": "Avec les rameaux calcanéens de l'artère fibulaire et les rameaux malléolaires médiaux : réseau artériel du talon",
+   "clinique": "Ils nourrissent la peau d'appui du talon : chez le diabétique ou l'artéritique dont la tibiale postérieure est obstruée, une escarre ou une plaie du talon cicatrise mal",
+   "memo": "Les calcanéens médiaux traversent le rétinaculum des fléchisseurs ; les latéraux, venus de la fibulaire, passent derrière la malléole latérale",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-tibiale-posterieure", "statpearls-pied", "kenhub-anastomoses-inf"],
+   "divergences": null
+  }
+ ]
+}

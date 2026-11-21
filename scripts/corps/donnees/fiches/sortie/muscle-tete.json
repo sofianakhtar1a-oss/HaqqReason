@@ -1,0 +1,3666 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral numérisé (Internet Archive)",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "openstax-11-3": {
+   "titre": "OpenStax, Anatomy and Physiology 2e, § 11.3 Axial Muscles of the Head, Neck, and Back",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"
+  },
+  "teachme-mimique": {
+   "titre": "TeachMeAnatomy, The Muscles of Facial Expression",
+   "url": "https://teachmeanatomy.info/head/muscles/facial-expression/"
+  },
+  "teachme-mastication": {
+   "titre": "TeachMeAnatomy, The Muscles of Mastication",
+   "url": "https://teachmeanatomy.info/head/muscles/mastication/"
+  },
+  "teachme-oeil": {
+   "titre": "TeachMeAnatomy, The Extraocular Muscles",
+   "url": "https://teachmeanatomy.info/head/organs/eye/extraocular-muscles/"
+  },
+  "teachme-langue": {
+   "titre": "TeachMeAnatomy, The Muscles of the Tongue",
+   "url": "https://teachmeanatomy.info/head/muscles/tongue/"
+  },
+  "teachme-suprahyoidiens": {
+   "titre": "TeachMeAnatomy, The Suprahyoid Muscles",
+   "url": "https://teachmeanatomy.info/neck/muscles/suprahyoid-muscles/"
+  },
+  "teachme-pharynx": {
+   "titre": "TeachMeAnatomy, The Pharynx",
+   "url": "https://teachmeanatomy.info/neck/viscera/pharynx/"
+  },
+  "teachme-sous-occipitaux": {
+   "titre": "TeachMeAnatomy, The Suboccipital Muscles",
+   "url": "https://teachmeanatomy.info/neck/muscles/suboccipital/"
+  },
+  "teachme-prevertebraux": {
+   "titre": "TeachMeAnatomy, The Prevertebral Muscles",
+   "url": "https://teachmeanatomy.info/neck/muscles/prevertebral/"
+  },
+  "teachme-atm": {
+   "titre": "TeachMeAnatomy, The Temporomandibular Joint",
+   "url": "https://teachmeanatomy.info/head/joints/temporomandibular/"
+  },
+  "teachme-nerf-facial": {
+   "titre": "TeachMeAnatomy, The Facial Nerve (CN VII)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/facial-nerve/"
+  },
+  "teachme-nerf-vague": {
+   "titre": "TeachMeAnatomy, The Vagus Nerve (CN X)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/vagus-nerve-cn-x/"
+  },
+  "teachme-nerf-hypoglosse": {
+   "titre": "TeachMeAnatomy, The Hypoglossal Nerve (CN XII)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/hypoglossal"
+  },
+  "teachme-nerf-trochleaire": {
+   "titre": "TeachMeAnatomy, The Trochlear Nerve (CN IV)",
+   "url": "https://teachmeanatomy.info/head/cranial-nerves/trochlear-nerve/"
+  },
+  "teachme-nerf-mandibulaire": {
+   "titre": "TeachMeAnatomy, The Mandibular Division of the Trigeminal Nerve (CN V3)",
+   "url": "https://teachmeanatomy.info/head/nerves/mandibular-nerve/"
+  },
+  "kenhub-mimique": {
+   "titre": "Kenhub, Facial muscles",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-facial-muscles"
+  },
+  "kenhub-mastication": {
+   "titre": "Kenhub, Muscles of mastication",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-muscles-of-mastication"
+  },
+  "kenhub-suprahyoidiens": {
+   "titre": "Kenhub, Suprahyoid muscles",
+   "url": "https://www.kenhub.com/en/library/anatomy/suprahyoid-muscles"
+  },
+  "kenhub-pharynx": {
+   "titre": "Kenhub, Muscles and walls of the pharynx",
+   "url": "https://www.kenhub.com/en/library/anatomy/muscles-and-walls-of-the-pharynx"
+  },
+  "kenhub-sous-occipitaux": {
+   "titre": "Kenhub, Suboccipital muscles",
+   "url": "https://kenhub.com/en/library/anatomy/suboccipital-muscles"
+  },
+  "kenhub-prevertebraux": {
+   "titre": "Kenhub, Prevertebral muscles",
+   "url": "https://www.kenhub.com/en/library/anatomy/prevertebral-muscles"
+  },
+  "kenhub-epineux": {
+   "titre": "Kenhub, Spinalis muscle",
+   "url": "https://kenhub.com/en/library/anatomy/spinalis-muscle"
+  },
+  "kenhub-semi-epineux-tete": {
+   "titre": "Kenhub, Semispinalis capitis muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/semispinalis-capitis-muscle"
+  },
+  "kenhub-droit-superieur": {
+   "titre": "Kenhub, Superior rectus muscle",
+   "url": "https://kenhub.com/en/library/anatomy/superior-rectus-muscle"
+  },
+  "kenhub-droit-lateral": {
+   "titre": "Kenhub, Lateral rectus muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/lateral-rectus-muscle"
+  },
+  "kenhub-oblique-superieur": {
+   "titre": "Kenhub, Superior oblique muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/superior-oblique-muscle"
+  },
+  "kenhub-oblique-inferieur": {
+   "titre": "Kenhub, Inferior oblique muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/inferior-oblique-muscle"
+  },
+  "kenhub-elevateur-paupiere": {
+   "titre": "Kenhub, Levator palpebrae superioris muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/levator-palpebrae-superioris-muscle"
+  },
+  "kenhub-genioglosse": {
+   "titre": "Kenhub, Genioglossus muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/genioglossus"
+  },
+  "kenhub-hyoglosse": {
+   "titre": "Kenhub, Hyoglossus muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/hyoglossus"
+  },
+  "statpearls-muscles-face": {
+   "titre": "StatPearls, Anatomy, Head and Neck: Facial Muscles (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK493209/"
+  },
+  "statpearls-masseter": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Masseter Muscle (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK539869/"
+  },
+  "statpearls-pterygoidien-lateral": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Lateral Pterygoid Muscle (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK549799/"
+  },
+  "statpearls-prevertebraux": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Prevertebral Muscles (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK560569/"
+  },
+  "statpearls-scalp": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Scalp (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK551565/"
+  },
+  "statpearls-frontal": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Frontalis Muscle (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK557752/"
+  },
+  "statpearls-droit-inferieur": {
+   "titre": "StatPearls, Anatomy, Head and Neck: Eye Inferior Rectus Muscle (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK518978/"
+  },
+  "eyewiki-muscles-oculomoteurs": {
+   "titre": "EyeWiki (American Academy of Ophthalmology), Extraocular Muscles",
+   "url": "https://eyewiki.aao.org/Extraocular_Muscles"
+  },
+  "physiopedia-mastication": {
+   "titre": "Physiopedia, Muscles of Mastication",
+   "url": "https://physio-pedia.com/Muscles_of_Mastication"
+  },
+  "elsevier-temporoparietal": {
+   "titre": "Elsevier Complete Anatomy, Temporoparietalis Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-head/temporoparietalis-muscle/20233"
+  },
+  "wikipedia-temporoparietal": {
+   "titre": "Wikipedia (en), Temporoparietalis muscle",
+   "url": "https://en.wikipedia.org/wiki/Temporoparietalis_muscle"
+  },
+  "wikipedia-occipito-frontal": {
+   "titre": "Wikipedia (en), Occipitofrontalis muscle",
+   "url": "https://en.wikipedia.org/wiki/Occipitofrontalis_muscle"
+  },
+  "wikipedia-orbiculaire-oeil": {
+   "titre": "Wikipedia (en), Orbicularis oculi muscle",
+   "url": "https://en.wikipedia.org/wiki/Orbicularis_oculi_muscle"
+  },
+  "wikipedia-buccinateur": {
+   "titre": "Wikipedia (en), Buccinator muscle",
+   "url": "https://en.wikipedia.org/wiki/Buccinator_muscle"
+  },
+  "wikipedia-abaisseur-septum": {
+   "titre": "Wikipedia (en), Depressor septi nasi muscle",
+   "url": "https://en.wikipedia.org/wiki/Depressor_septi_nasi_muscle"
+  },
+  "wikipedia-abaisseur-levre-inferieure": {
+   "titre": "Wikipedia (en), Depressor labii inferioris muscle",
+   "url": "https://en.wikipedia.org/wiki/Depressor_labii_inferioris_muscle"
+  },
+  "wikipedia-genioglosse": {
+   "titre": "Wikipedia (en), Genioglossus",
+   "url": "https://en.wikipedia.org/wiki/Genioglossus"
+  },
+  "wikipedia-hyoglosse": {
+   "titre": "Wikipedia (en), Hyoglossus",
+   "url": "https://en.wikipedia.org/wiki/Hyoglossus"
+  },
+  "wikipedia-fr-muscles": {
+   "titre": "Wikipédia (fr), Liste des muscles du corps humain (nomenclature française)",
+   "url": "https://fr.wikipedia.org/wiki/Liste_des_muscles_du_corps_humain"
+  },
+  "rml-paralysie-faciale": {
+   "titre": "Jedidi Z., Sadzot B., « La paralysie faciale... pas toujours si facile que cela ! », Revue Médicale de Liège, 2011, 66 (11), 596-602",
+   "url": "https://rmlg.uliege.be/download/2231/1536/Z.-Jedidi_2011_66_11_0.pdf"
+  },
+  "elsevier-masson-paralysie-faciale": {
+   "titre": "Item 99, Paralysie faciale (chapitre de neurologie, Elsevier Masson, 2016), extrait",
+   "url": "https://www.medshake.net/librairie_medias/pdf/2-9782294743863.pdf"
+  },
+  "hithera-gray-scalp": {
+   "titre": "Hithera, Gray's Anatomy (édition postérieure à 1918, non précisée), Muscles of the Scalp",
+   "url": "https://www.hithera.com/anatomy/grays-anatomy/index-7/index-7-2/muscles_of_the_scalp/"
+  }
+ },
+ "fiches": [
+  {
+   "id": "masseter",
+   "resume": "Le puissant muscle de la mastication : tendu de l'arcade zygomatique à l'angle de la mandibule, il serre les dents.",
+   "origine": [
+    {
+     "texte": "Faisceau superficiel : processus zygomatique du maxillaire et deux tiers antérieurs du bord inférieur de l'arcade zygomatique",
+     "os": [
+      "maxillaire",
+      "zygomatique"
+     ]
+    },
+    {
+     "texte": "Faisceau profond : tiers postérieur du bord inférieur et toute la face médiale de l'arcade zygomatique",
+     "os": [
+      "zygomatique",
+      "temporal"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Faisceau superficiel : angle de la mandibule et moitié inférieure de la face latérale de sa branche",
+     "os": [
+      "mandibule"
+     ]
+    },
+    {
+     "texte": "Faisceau profond : moitié supérieure de la branche et face latérale du processus coronoïde",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "action": "Élève la mandibule avec force : ferme la bouche et serre les dents ; ses fibres superficielles portent aussi la mâchoire un peu en avant",
+   "actions": [
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "fermeture",
+     "role": "principal",
+     "precision": "élève la mandibule et serre les dents"
+    },
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "propulsion",
+     "role": "accessoire",
+     "precision": "fibres superficielles, obliques en bas et en arrière"
+    },
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "mastication",
+     "role": "principal",
+     "precision": "écrase les aliments entre les molaires"
+    }
+   ],
+   "synergistes": [
+    "muscle-temporal",
+    "pterygoidien-medial"
+   ],
+   "antagonistes": [
+    "pterygoidien-lateral",
+    "digastrique",
+    "mylohyoidien",
+    "geniohyoidien"
+   ],
+   "innervation": {
+    "nerf": "nerf-trijumeau-v",
+    "texte": "Nerf massétérique, branche du nerf mandibulaire (V3)",
+    "racines": [
+     "V3"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère massétérique, branche de l'artère maxillaire ; anastomoses avec l'artère faciale et l'artère faciale transverse",
+    "arteres": [
+     "artere-maxillaire"
+    ]
+   },
+   "palpation": "Sur la joue, juste en avant de l'angle de la mandibule : il durcit et fait saillie sous les doigts quand on serre les dents",
+   "test": "Faire serrer les dents en palpant les deux muscles : on compare leur volume et leur fermeté",
+   "atteinte": "Lésion du nerf mandibulaire : fermeture de la bouche affaiblie du côté atteint. À l'inverse, sa contracture bloque la mâchoire fermée (trismus) : c'est un signe d'alerte du tétanos",
+   "clinique": "Le réflexe massétérin, obtenu en percutant le menton bouche entrouverte, est normalement faible ; vif, il oriente vers une atteinte du motoneurone central. Le conduit parotidien croise la face superficielle du muscle",
+   "memo": "Masséter vient du grec « mâcher » : c'est lui qui gonfle à l'angle de la mâchoire quand on serre les dents",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mastication",
+    "teachme-mastication",
+    "statpearls-masseter",
+    "physiopedia-mastication"
+   ],
+   "divergences": "Origine du faisceau superficiel : processus zygomatique du maxillaire pour Gray, processus maxillaire de l'os zygomatique pour Kenhub et TeachMeAnatomy, processus temporal du zygomatique pour StatPearls (reliefs voisins)"
+  },
+  {
+   "id": "muscle-frontal",
+   "resume": "Le ventre antérieur de l'occipito-frontal : plaqué sous la peau du front, sans attache osseuse, il lève les sourcils.",
+   "origine": [
+    {
+     "texte": "Aponévrose épicrânienne, un peu en avant de la suture coronale",
+     "os": [
+      "aponevrose-epicranienne"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Peau des sourcils et de la racine du nez ; ses fibres se mêlent au procérus, au corrugateur du sourcil et à l'orbiculaire de l'œil",
+     "os": []
+    }
+   ],
+   "action": "Lève les sourcils et la peau de la racine du nez, ce qui plisse le front en rides horizontales : la surprise, l'attention",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "lève les sourcils et creuse les rides horizontales du front : la surprise"
+    }
+   ],
+   "synergistes": [
+    "muscle-occipital"
+   ],
+   "antagonistes": [
+    "corrugateur-du-sourcil",
+    "procerus",
+    "orbiculaire-oeil"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameaux temporaux du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères supra-orbitaire et supratrochléaire (artère ophtalmique) ; branche frontale de l'artère temporale superficielle sur le côté",
+    "arteres": [
+     "artere-supra-orbitaire",
+     "artere-supratrochleaire",
+     "branche-frontale-de-l-artere-temporale-superficielle"
+    ]
+   },
+   "palpation": "Main à plat sur le front : on le sent se contracter et la peau glisser vers le haut quand le sujet hausse les sourcils",
+   "test": "Faire hausser les sourcils et comparer les rides des deux moitiés du front",
+   "atteinte": "Paralysie faciale périphérique : front lisse et sourcil immobile du côté atteint. Dans une paralysie d'origine centrale (accident vasculaire cérébral), le front reste mobile, car il reçoit une commande des deux hémisphères",
+   "clinique": "Cible de la toxine botulique contre les rides du front ; si le produit diffuse jusqu'à l'élévateur de la paupière supérieure, il provoque un ptosis transitoire",
+   "memo": "Le muscle de l'étonnement : c'est le seul à lever les sourcils",
+   "variantes": "Étendue latérale et séparation médiane des deux muscles très variables ; asymétrie fréquente entre droite et gauche",
+   "sources": [
+    "gray1918",
+    "statpearls-frontal",
+    "kenhub-mimique",
+    "wikipedia-occipito-frontal",
+    "rml-paralysie-faciale",
+    "elsevier-masson-paralysie-faciale"
+   ],
+   "divergences": "Sens des attaches : Kenhub le fait naître de la peau du sourcil et se terminer sur l'aponévrose ; StatPearls et Wikipedia font l'inverse. On retient ici l'aponévrose comme attache fixe"
+  },
+  {
+   "id": "grand-zygomatique",
+   "resume": "Le muscle du sourire : de la pommette à la commissure des lèvres, il tire le coin de la bouche en haut et en dehors.",
+   "origine": [
+    {
+     "texte": "Face latérale de l'os zygomatique, en avant de sa suture avec le temporal",
+     "os": [
+      "zygomatique"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Commissure des lèvres (modiolus), où il se mêle à l'élévateur et à l'abaisseur de l'angle de la bouche et à l'orbiculaire de la bouche",
+     "os": []
+    }
+   ],
+   "action": "Tire la commissure des lèvres en haut et en dehors : le sourire, le rire",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "tire le coin de la bouche en haut et en dehors : le sourire"
+    }
+   ],
+   "synergistes": [
+    "petit-zygomatique",
+    "elevateur-de-l-angle-de-la-bouche",
+    "risorius"
+   ],
+   "antagonistes": [
+    "abaisseur-angle-bouche"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameaux zygomatiques et buccaux du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère labiale supérieure, branche de l'artère faciale",
+    "arteres": [
+     "artere-labiale-superieure",
+     "artere-faciale"
+    ]
+   },
+   "palpation": "Cordon oblique entre la pommette et le coin de la bouche, qui se tend sous le doigt pendant le sourire",
+   "test": "Demander de sourire en montrant les dents : les deux commissures doivent monter de façon symétrique",
+   "atteinte": "Paralysie faciale : la commissure tombe et le sillon nasolabial s'efface du côté atteint ; au sourire, la bouche est attirée vers le côté sain",
+   "clinique": "Avec le buccinateur, l'orbiculaire de la bouche, le risorius et l'abaisseur de l'angle de la bouche, il forme le modiolus, nœud fibro-musculaire du coin de la bouche",
+   "memo": "Zygomatique comme l'os de la pommette dont il part : il hisse le coin de la bouche vers elle",
+   "variantes": "Parfois dédoublé ; rarement absent, à la différence du petit zygomatique et du risorius, qui manquent souvent",
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "statpearls-muscles-face",
+    "rml-paralysie-faciale"
+   ],
+   "divergences": "Innervation : rameaux zygomatiques et buccaux pour Kenhub ; rameaux buccaux seuls pour Gray et TeachMeAnatomy"
+  },
+  {
+   "id": "occipito-frontal",
+   "resume": "Le muscle du cuir chevelu : un ventre frontal et un ventre occipital, réunis par l'aponévrose épicrânienne, qui mobilisent le scalp et les sourcils.",
+   "origine": [
+    {
+     "texte": "Ventre occipital : deux tiers latéraux de la ligne nucale suprême de l'occipital et processus mastoïde du temporal",
+     "os": [
+      "occipital",
+      "temporal"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Aponévrose épicrânienne, large tendon intermédiaire sur lequel se fixent les deux ventres",
+     "os": [
+      "aponevrose-epicranienne"
+     ]
+    },
+    {
+     "texte": "Ventre frontal : peau des sourcils et de la racine du nez, sans attache osseuse",
+     "os": []
+    }
+   ],
+   "action": "Son ventre antérieur lève les sourcils et plisse le front ; son ventre postérieur tire le cuir chevelu en arrière ; en se relayant, ils font glisser tout le scalp sur le crâne",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "lève les sourcils, plisse le front et fait glisser le cuir chevelu d'avant en arrière"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [
+    "corrugateur-du-sourcil",
+    "procerus",
+    "orbiculaire-oeil"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Nerf facial (VII) : rameaux temporaux pour le ventre frontal, nerf auriculaire postérieur pour le ventre occipital",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "En avant, artères supra-orbitaire, supratrochléaire et temporale superficielle ; en arrière, artères occipitale et auriculaire postérieure",
+    "arteres": [
+     "artere-supra-orbitaire",
+     "artere-supratrochleaire",
+     "temporale-superficielle",
+     "artere-occipitale"
+    ]
+   },
+   "palpation": "Main à plat sur le front ou sur l'occiput : le cuir chevelu glisse sous la paume quand le sujet hausse les sourcils",
+   "test": "Faire hausser les sourcils : le front doit se plisser des deux côtés",
+   "atteinte": "Paralysie faciale périphérique : le front ne se plisse plus du côté atteint ; il reste mobile dans une paralysie faciale d'origine centrale",
+   "clinique": "Sous l'aponévrose, un tissu lâche laisse le sang ou le pus s'étaler sur tout le crâne et descendre jusqu'aux paupières (œil au beurre noir) ; chez le nouveau-né, c'est le siège de l'hématome sous-galéal",
+   "memo": "Un digastrique posé à plat sur le crâne : deux ventres charnus, un large tendon au milieu, l'aponévrose épicrânienne",
+   "variantes": "Les deux ventres varient en taille et l'un d'eux peut manquer",
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "statpearls-scalp",
+    "statpearls-frontal",
+    "wikipedia-occipito-frontal",
+    "hithera-gray-scalp"
+   ],
+   "divergences": "Ligne d'attache occipitale : ligne nucale suprême pour Wikipedia et pour une édition plus récente de Gray (Hithera) ; ligne nucale supérieure pour Gray (1918), Kenhub et StatPearls"
+  },
+  {
+   "id": "orbiculaire-oeil",
+   "resume": "Le sphincter des paupières : un anneau plat autour de l'orbite, qui ferme l'œil, du simple clignement à l'occlusion forcée.",
+   "origine": [
+    {
+     "texte": "Partie orbitaire : partie nasale de l'os frontal, processus frontal du maxillaire et ligament palpébral médial",
+     "os": [
+      "frontal",
+      "maxillaire"
+     ]
+    },
+    {
+     "texte": "Partie palpébrale : ligament palpébral médial",
+     "os": []
+    },
+    {
+     "texte": "Partie lacrymale : crête lacrymale postérieure de l'os lacrymal",
+     "os": [
+      "os-lacrymal"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Partie orbitaire : ses fibres font le tour de l'orbite en ellipse et se mêlent, en haut, au frontal et au corrugateur",
+     "os": []
+    },
+    {
+     "texte": "Partie palpébrale : raphé palpébral latéral",
+     "os": []
+    },
+    {
+     "texte": "Partie lacrymale : tarses supérieur et inférieur, en dedans des points lacrymaux",
+     "os": [
+      "tarse-superieur",
+      "tarse-inferieur"
+     ]
+    }
+   ],
+   "action": "Ferme les paupières : en douceur pour cligner ou dormir (partie palpébrale), avec force pour protéger l'œil (partie orbitaire) ; chasse les larmes vers le sac lacrymal",
+   "actions": [
+    {
+     "articulation": "paupiere",
+     "mouvement": "fermeture",
+     "role": "principal",
+     "precision": "clignement par la partie palpébrale, occlusion forcée par la partie orbitaire"
+    },
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "accessoire",
+     "precision": "plisse la peau autour de l'œil (pattes d'oie) et abaisse le sourcil"
+    }
+   ],
+   "synergistes": [
+    "corrugateur-du-sourcil",
+    "procerus"
+   ],
+   "antagonistes": [
+    "elevateur-de-la-paupiere-superieure",
+    "muscle-frontal"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameaux temporaux et zygomatiques du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches des artères faciale (artère angulaire), temporale superficielle et maxillaire ; rameaux de l'artère ophtalmique",
+    "arteres": [
+     "artere-faciale",
+     "artere-angulaire",
+     "temporale-superficielle",
+     "artere-ophtalmique"
+    ]
+   },
+   "palpation": "Sous la peau fine des paupières et du pourtour de l'orbite : il se contracte sous le doigt quand le sujet ferme fort les yeux",
+   "test": "Faire fermer les yeux avec force et tenter de les ouvrir : normalement, on n'y parvient pas et les cils sont enfouis",
+   "atteinte": "Paralysie faciale périphérique : l'œil ne se ferme plus et le globe bascule vers le haut à l'effort (signe de Charles Bell) ; la paupière inférieure s'éverse, les larmes s'accumulent et la cornée, non protégée, s'ulcère",
+   "clinique": "Dans les formes légères, les cils restent plus visibles du côté paralysé à l'occlusion forcée (signe des cils de Souques). Son spasme involontaire est le blépharospasme, soulagé par la toxine botulique",
+   "memo": "Le VII ferme l'œil, le III l'ouvre : orbiculaire contre élévateur de la paupière supérieure",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachme-mimique",
+    "kenhub-mimique",
+    "wikipedia-orbiculaire-oeil",
+    "statpearls-muscles-face",
+    "rml-paralysie-faciale",
+    "elsevier-masson-paralysie-faciale"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "orbiculaire-bouche",
+   "resume": "Le muscle des lèvres : non pas un simple anneau, mais un carrefour de fibres qui ferme la bouche, serre les lèvres et les avance.",
+   "origine": [
+    {
+     "texte": "Fibres venues des muscles voisins, surtout du buccinateur, qui se croisent à la commissure (modiolus)",
+     "os": []
+    },
+    {
+     "texte": "Faisceaux incisifs : bord alvéolaire du maxillaire en regard de l'incisive latérale ; mandibule, en dehors du muscle mentonnier",
+     "os": [
+      "maxillaire",
+      "mandibule"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Peau et muqueuse des lèvres ; des fibres rejoignent la ligne médiane et, en haut, le septum nasal",
+     "os": []
+    }
+   ],
+   "action": "Ferme la bouche, plaque les lèvres contre les dents et les projette en avant : retenir les aliments, siffler, embrasser, articuler",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "fermeture",
+     "role": "principal",
+     "precision": "ferme l'orifice de la bouche et retient salive et aliments"
+    },
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "pince ou avance les lèvres : la moue, le baiser, le sifflement"
+    }
+   ],
+   "synergistes": [
+    "buccinateur",
+    "mentonnier"
+   ],
+   "antagonistes": [
+    "releveur-levre-superieure",
+    "abaisseur-de-la-levre-inferieure",
+    "grand-zygomatique"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameaux buccaux et rameau marginal de la mandibule du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères labiales supérieure et inférieure, branches de l'artère faciale",
+    "arteres": [
+     "artere-labiale-superieure",
+     "artere-labiale-inferieure",
+     "artere-faciale"
+    ]
+   },
+   "palpation": "Dans l'épaisseur des lèvres, entre peau et muqueuse : il durcit entre deux doigts quand le sujet pince les lèvres",
+   "test": "Faire siffler, gonfler les joues ou serrer les lèvres pendant qu'on tente de les écarter",
+   "atteinte": "Paralysie faciale : la bouche ferme mal et la commissure s'affaisse du côté atteint ; impossible de siffler ou de garder les joues gonflées",
+   "clinique": "Ses contractions répétées marquent autour des lèvres de fines rides verticales, dites rides du fumeur",
+   "memo": "Le muscle du baiser et du sifflet : ses fibres profondes prolongent le buccinateur, en se croisant au coin de la bouche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "teachme-mimique",
+    "statpearls-muscles-face",
+    "rml-paralysie-faciale",
+    "elsevier-masson-paralysie-faciale"
+   ],
+   "divergences": "Origine : modiolus pour Kenhub ; maxillaire et muscles de la joue pour TeachMeAnatomy ; Gray décrit des couches venues des muscles voisins et des faisceaux incisifs fixés à l'os"
+  },
+  {
+   "id": "muscle-temporal",
+   "resume": "Le grand éventail de la tempe : il remplit la fosse temporale, glisse sous l'arcade zygomatique et ferme la mâchoire.",
+   "origine": [
+    {
+     "texte": "Fosse temporale, jusqu'à la ligne temporale inférieure : os frontal, pariétal, écaille du temporal et grande aile du sphénoïde",
+     "os": [
+      "frontal",
+      "parietal",
+      "temporal",
+      "sphenoide"
+     ]
+    },
+    {
+     "texte": "Face profonde du fascia temporal",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Sommet, face médiale et bord antérieur du processus coronoïde ; bord antérieur de la branche de la mandibule, presque jusqu'à la dernière molaire",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "action": "Élève la mandibule et ferme la bouche ; ses fibres postérieures, presque horizontales, ramènent la mâchoire en arrière",
+   "actions": [
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "fermeture",
+     "role": "principal",
+     "precision": "fibres antérieures et moyennes, verticales"
+    },
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "retropulsion",
+     "role": "principal",
+     "precision": "fibres postérieures, presque horizontales"
+    },
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "diduction",
+     "role": "accessoire",
+     "precision": "participe au broyage par mouvements latéraux"
+    },
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "mastication",
+     "role": "principal"
+    }
+   ],
+   "synergistes": [
+    "masseter",
+    "pterygoidien-medial"
+   ],
+   "antagonistes": [
+    "pterygoidien-lateral",
+    "digastrique",
+    "mylohyoidien",
+    "geniohyoidien"
+   ],
+   "innervation": {
+    "nerf": "nerf-trijumeau-v",
+    "texte": "Nerfs temporaux profonds, branches du nerf mandibulaire (V3)",
+    "racines": [
+     "V3"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères temporales profondes antérieure et postérieure (artère maxillaire) ; artère temporale moyenne (artère temporale superficielle)",
+    "arteres": [
+     "artere-temporale-profonde-anterieure",
+     "artere-temporale-profonde-posterieure",
+     "artere-maxillaire",
+     "temporale-superficielle"
+    ]
+   },
+   "palpation": "Sur la tempe, au-dessus de l'arcade zygomatique : il durcit sous les doigts quand on serre les dents",
+   "test": "Faire serrer les dents en palpant les deux tempes : la contraction doit être égale des deux côtés",
+   "atteinte": "Lésion du nerf mandibulaire : au serrage des dents, la tempe du côté atteint reste molle sous les doigts ; la fermeture de la bouche et le recul de la mandibule sont affaiblis",
+   "clinique": "Siège de douleurs musculaires, souvent des deux côtés, dans le bruxisme et les troubles de l'articulation temporo-mandibulaire. Son fascia sert de greffon pour réparer un tympan perforé (myringoplastie)",
+   "memo": "Un éventail dont le manche est le processus coronoïde : fibres verticales pour fermer, fibres horizontales pour reculer",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mastication",
+    "teachme-mastication",
+    "physiopedia-mastication",
+    "openstax-11-3"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "temporoparietal",
+   "resume": "Mince muscle peaucier inconstant de la tempe : au-dessus de l'oreille, il va du fascia temporal à l'aponévrose épicrânienne.",
+   "origine": [
+    {
+     "texte": "Fascia temporal, au-dessus du pavillon de l'oreille, entre les muscles auriculaires antérieur et supérieur",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord latéral de l'aponévrose épicrânienne",
+     "os": [
+      "aponevrose-epicranienne"
+     ]
+    }
+   ],
+   "action": "Tend le cuir chevelu de la tempe et le tire un peu vers le haut ; aiderait à soulever le pavillon de l'oreille",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "tend la peau de la tempe et la tire vers le haut"
+    },
+    {
+     "articulation": "oreille",
+     "mouvement": "elevation",
+     "role": "accessoire",
+     "precision": "soulèverait un peu le pavillon ; rôle discuté"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameaux temporaux du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branche postérieure de l'artère temporale superficielle ; artère auriculaire postérieure selon d'autres auteurs",
+    "arteres": [
+     "temporale-superficielle"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Paralysé avec les autres muscles peauciers dans une atteinte du nerf facial ; son déficit passe inaperçu, tant son rôle est mince chez l'être humain",
+   "clinique": "Le plan qui le contient, le fascia temporopariétal, fournit un lambeau utilisé pour reconstruire le pavillon de l'oreille",
+   "memo": "Son nom dit sa place : sur la tempe, entre l'oreille et l'aponévrose du crâne, à cheval sur le temporal et le pariétal",
+   "variantes": "Inconstant, souvent réduit à quelques fibres",
+   "sources": [
+    "statpearls-muscles-face",
+    "elsevier-temporoparietal",
+    "wikipedia-temporoparietal"
+   ],
+   "divergences": "Origine : fascia temporal (Elsevier) ou muscles auriculaires (Wikipedia). Artère : temporale superficielle (StatPearls) ou auriculaire postérieure (Elsevier). Gray (1918) ne le décrit pas à part"
+  },
+  {
+   "id": "abaisseur-angle-bouche",
+   "resume": "Le muscle de la tristesse : un triangle dont la base est sur la mandibule et la pointe à la commissure, qu'il tire vers le bas.",
+   "origine": [
+    {
+     "texte": "Ligne oblique de la mandibule, jusqu'au tubercule mentonnier ; ses fibres continuent celles du platysma",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Commissure des lèvres (modiolus), où il se mêle à l'orbiculaire de la bouche et au risorius",
+     "os": []
+    }
+   ],
+   "action": "Abaisse la commissure des lèvres : la tristesse, la colère ; aide à ouvrir la bouche pour parler ou manger",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "abaisse le coin de la bouche : la moue triste"
+    }
+   ],
+   "synergistes": [
+    "abaisseur-de-la-levre-inferieure",
+    "platysma"
+   ],
+   "antagonistes": [
+    "grand-zygomatique",
+    "elevateur-de-l-angle-de-la-bouche"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameau marginal de la mandibule et rameaux buccaux du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère labiale inférieure (artère faciale) et artère mentonnière (artère alvéolaire inférieure)",
+    "arteres": [
+     "artere-labiale-inferieure",
+     "artere-faciale",
+     "branche-mentonniere-de-l-artere-alveolaire-inferieure"
+    ]
+   },
+   "palpation": "De chaque côté du menton, sous la commissure, quand le sujet abaisse les coins de la bouche",
+   "test": "Demander d'abaisser les coins de la bouche, comme pour exprimer la tristesse",
+   "atteinte": "Lésion du rameau marginal de la mandibule ou paralysie faciale : la commissure ne s'abaisse plus du côté atteint et la bouche devient asymétrique dans la mimique",
+   "clinique": "Un tonus excessif tire en permanence les commissures vers le bas et donne un air triste ; on le détend par la toxine botulique",
+   "memo": "L'ancien triangulaire des lèvres : il défait ce que fait le grand zygomatique, la tristesse contre le sourire",
+   "variantes": "Des fibres passent parfois d'un côté à l'autre sous le menton : c'est le muscle transverse du menton",
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "statpearls-muscles-face",
+    "teachme-nerf-facial"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "abaisseur-de-la-levre-inferieure",
+   "resume": "Petit muscle carré du menton : il tire la lèvre inférieure en bas et un peu en dehors et découvre les dents du bas.",
+   "origine": [
+    {
+     "texte": "Ligne oblique de la mandibule, entre la symphyse et le foramen mentonnier ; ses fibres continuent celles du platysma",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Peau et muqueuse de la lèvre inférieure ; fibres mêlées à l'orbiculaire de la bouche et au muscle du côté opposé",
+     "os": []
+    }
+   ],
+   "action": "Abaisse la lèvre inférieure, la tire un peu en dehors et l'éverse, ce qui découvre les dents du bas : l'ironie",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "abaisse et éverse la lèvre inférieure : l'ironie, le dégoût"
+    }
+   ],
+   "synergistes": [
+    "abaisseur-angle-bouche",
+    "platysma"
+   ],
+   "antagonistes": [
+    "orbiculaire-bouche",
+    "mentonnier"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameau marginal de la mandibule du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère labiale inférieure (artère faciale) et artère mentonnière (artère alvéolaire inférieure)",
+    "arteres": [
+     "artere-labiale-inferieure",
+     "artere-faciale",
+     "branche-mentonniere-de-l-artere-alveolaire-inferieure"
+    ]
+   },
+   "palpation": "Sous la lèvre inférieure, de part et d'autre du menton, quand le sujet découvre ses dents du bas",
+   "test": "Demander de montrer les dents du bas : la lèvre doit descendre de façon symétrique",
+   "atteinte": "Paralysie du rameau marginal de la mandibule : la lèvre inférieure ne s'abaisse plus du côté atteint, d'où un sourire asymétrique",
+   "clinique": "Pour rendre sa symétrie au sourire après une paralysie d'un seul côté, on peut affaiblir le muscle sain en le réséquant",
+   "memo": "L'ancien carré du menton : il découvre les incisives du bas, comme dans une moue d'ironie",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "wikipedia-abaisseur-levre-inferieure",
+    "statpearls-muscles-face",
+    "teachme-nerf-facial"
+   ],
+   "divergences": "Innervation : rameau marginal de la mandibule pour Gray, StatPearls, TeachMeAnatomy et Wikipedia ; Kenhub cite le rameau cervical du nerf facial"
+  },
+  {
+   "id": "abaisseur-du-septum-nasal",
+   "resume": "Petit muscle caché sous la lèvre supérieure : du maxillaire, au-dessus des incisives, il monte à la cloison du nez et en abaisse la pointe.",
+   "origine": [
+    {
+     "texte": "Fosse incisive du maxillaire, au-dessus des incisives ; quelques fibres naissent parfois de l'orbiculaire de la bouche",
+     "os": [
+      "maxillaire"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Partie mobile du septum nasal et partie postérieure de l'aile du nez",
+     "os": [
+      "cartilage-septal-nasal"
+     ]
+    }
+   ],
+   "action": "Abaisse la cloison, la pointe et l'aile du nez ; il accompagne les mouvements de la lèvre supérieure dans la parole et le sourire",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "tire la pointe et l'aile du nez vers le bas quand la lèvre supérieure bouge"
+    }
+   ],
+   "synergistes": [
+    "nasal"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameaux buccaux du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Non détaillée par les sources consultées ; les muscles voisins de la lèvre supérieure et du nez dépendent de l'artère labiale supérieure, branche de l'artère faciale",
+    "arteres": []
+   },
+   "palpation": null,
+   "test": "Observer le nez de profil pendant le sourire ou la parole : la pointe s'abaisse légèrement",
+   "atteinte": "Paralysé avec les autres muscles du nez dans la paralysie faciale : la narine du côté atteint perd sa mobilité ; son déficit isolé n'a pas de signe propre",
+   "clinique": "En rhinoplastie, le chirurgien peut repositionner son attache pour régler la position de la pointe du nez",
+   "memo": "L'ancien muscle myrtiforme : un petit tirant tendu sous la narine, qui fait plonger la pointe du nez quand la lèvre supérieure bouge",
+   "variantes": "Comme les autres muscles du nez, il varie beaucoup en volume et peut manquer",
+   "sources": [
+    "gray1918",
+    "teachme-mimique",
+    "wikipedia-abaisseur-septum",
+    "statpearls-muscles-face"
+   ],
+   "divergences": "Effet sur la narine : il la rétrécit en abaissant l'aile du nez pour Gray et Wikipedia ; il l'élargit, en aidant la partie alaire du muscle nasal, pour TeachMeAnatomy"
+  },
+  {
+   "id": "buccinateur",
+   "resume": "Le muscle de la joue : une lame profonde tendue entre les deux mâchoires, qui plaque la joue contre les dents et chasse l'air de la bouche.",
+   "origine": [
+    {
+     "texte": "Face externe des processus alvéolaires du maxillaire et de la mandibule, en regard des trois molaires",
+     "os": [
+      "maxillaire",
+      "mandibule"
+     ]
+    },
+    {
+     "texte": "Bord antérieur du raphé ptérygomandibulaire, qui le sépare du constricteur supérieur du pharynx",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Commissure des lèvres (modiolus) : ses fibres moyennes s'y croisent, puis toutes se prolongent dans l'orbiculaire de la bouche",
+     "os": []
+    }
+   ],
+   "action": "Plaque la joue contre les dents pour maintenir les aliments sous les molaires ; chasse l'air entre les lèvres : souffler, siffler, jouer de la trompette",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "compression",
+     "role": "principal",
+     "precision": "plaque la joue contre les arcades dentaires et expulse l'air de la bouche"
+    },
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "accessoire",
+     "precision": "tire la commissure des lèvres en arrière : souffler, siffler, sourire"
+    },
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "mastication",
+     "role": "accessoire",
+     "precision": "ramène les aliments entre les dents, sans mobiliser la mâchoire"
+    }
+   ],
+   "synergistes": [
+    "orbiculaire-bouche"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameaux buccaux du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère buccale, branche de l'artère maxillaire ; rameaux de l'artère faciale",
+    "arteres": [
+     "artere-buccale",
+     "artere-maxillaire",
+     "artere-faciale"
+    ]
+   },
+   "palpation": "Entre deux doigts, l'un dans la bouche, l'autre sur la joue : il se tend quand le sujet souffle en serrant les joues",
+   "test": "Faire gonfler les joues et appuyer dessus : l'air ne doit pas s'échapper ; faire souffler ou siffler",
+   "atteinte": "Paralysie faciale : la joue flasque ne retient plus les aliments, qui s'accumulent entre elle et les dents ; impossible de gonfler les joues ou de souffler",
+   "clinique": "Le conduit parotidien le traverse en regard de la deuxième molaire supérieure. Le nerf buccal du trijumeau (V3), qui court à sa surface, ne lui apporte que la sensibilité de la joue",
+   "memo": "Du latin bucina, la trompette : le muscle des souffleurs. Moteur par le VII, sensible par le V",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "teachme-mimique",
+    "wikipedia-buccinateur",
+    "statpearls-muscles-face",
+    "rml-paralysie-faciale"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "constricteur-moyen-du-pharynx",
+   "resume": "L'éventail moyen de la paroi du pharynx : parti de l'os hyoïde, il s'étale vers l'arrière et resserre le pharynx pendant la déglutition.",
+   "origine": [
+    {
+     "texte": "Petite corne et bord supérieur de la grande corne de l'os hyoïde, sur toute sa longueur",
+     "os": [
+      "hyoide"
+     ]
+    },
+    {
+     "texte": "Partie inférieure du ligament stylohyoïdien",
+     "os": [
+      "ligament-stylohyoide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Raphé pharyngien, sur la ligne médiane postérieure, où il rejoint le muscle du côté opposé",
+     "os": []
+    }
+   ],
+   "action": "Resserre la partie moyenne du pharynx et relaie l'onde de contraction qui pousse le bol alimentaire vers l'œsophage",
+   "actions": [
+    {
+     "articulation": "pharynx",
+     "mouvement": "compression",
+     "role": "principal",
+     "precision": "rétrécit le pharynx à la hauteur de l'os hyoïde"
+    },
+    {
+     "articulation": "pharynx",
+     "mouvement": "deglutition",
+     "role": "principal",
+     "precision": "relaie l'onde de contraction qui descend du constricteur supérieur vers l'inférieur"
+    }
+   ],
+   "synergistes": [
+    "constricteur-superieur-du-pharynx",
+    "constricteur-inferieur-du-pharynx"
+   ],
+   "antagonistes": [
+    "stylopharyngien",
+    "palatopharyngien"
+   ],
+   "innervation": {
+    "nerf": "nerf-vague-x",
+    "texte": "Plexus pharyngien : fibres motrices du nerf vague (X)",
+    "racines": [
+     "X"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère pharyngienne ascendante ; rameaux pharyngiens des artères faciale, linguale et maxillaire",
+    "arteres": [
+     "artere-pharyngienne-ascendante",
+     "artere-faciale"
+    ]
+   },
+   "palpation": null,
+   "test": "Non testable isolément : on observe la déglutition et la contraction du pharynx lors du réflexe nauséeux",
+   "atteinte": "Lésion du nerf vague ou de ses rameaux pharyngiens : déglutition difficile (dysphagie) et réflexe nauséeux aboli du côté atteint",
+   "clinique": "Au-dessus de lui passent le muscle stylopharyngien et le nerf glossopharyngien ; au-dessous, le rameau interne du nerf laryngé supérieur et les vaisseaux laryngés supérieurs gagnent le larynx",
+   "memo": "Trois constricteurs emboîtés comme des gobelets : le moyen, accroché à l'os hyoïde, recouvre le supérieur et s'engage sous l'inférieur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pharynx",
+    "teachme-pharynx",
+    "teachme-nerf-vague"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "corrugateur-du-sourcil",
+   "resume": "Le muscle du froncement : caché sous la tête du sourcil, il le tire en bas et en dedans et creuse les rides verticales entre les yeux.",
+   "origine": [
+    {
+     "texte": "Extrémité médiale de l'arcade sourcilière de l'os frontal",
+     "os": [
+      "frontal"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face profonde de la peau du sourcil, au-dessus du milieu du rebord orbitaire, après être passé entre les fibres de l'orbiculaire de l'œil",
+     "os": []
+    }
+   ],
+   "action": "Tire le sourcil en bas et en dedans et plisse la peau en rides verticales entre les sourcils : le froncement, la contrariété",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "rapproche et abaisse les sourcils : le froncement, rides verticales de la glabelle"
+    }
+   ],
+   "synergistes": [
+    "procerus",
+    "orbiculaire-oeil"
+   ],
+   "antagonistes": [
+    "muscle-frontal"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameaux temporaux du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artères supra-orbitaire et supratrochléaire (artère ophtalmique) ; rameaux de l'artère temporale superficielle",
+    "arteres": [
+     "artere-supra-orbitaire",
+     "artere-supratrochleaire",
+     "artere-ophtalmique",
+     "temporale-superficielle"
+    ]
+   },
+   "palpation": "Au-dessus de l'angle interne de l'œil, sous la tête du sourcil : il roule sous le doigt pendant le froncement",
+   "test": "Demander de froncer les sourcils : les deux têtes doivent se rapprocher et des plis verticaux apparaître",
+   "atteinte": "Paralysie faciale périphérique : le sourcil ne se fronce plus du côté atteint",
+   "clinique": "Responsable des rides verticales entre les sourcils ; c'est une cible habituelle de la toxine botulique, en même temps que le procérus",
+   "memo": "Corrugare, en latin : rider, plisser. Petit, profond, plaqué contre l'os : il fait les plis du souci",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "teachme-mimique",
+    "statpearls-muscles-face",
+    "statpearls-frontal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "droit-inferieur-de-l-oeil",
+   "resume": "Le muscle droit du plancher de l'orbite : il abaisse le regard.",
+   "origine": [
+    {
+     "texte": "Anneau tendineux commun, par sa partie inférieure, au sommet de l'orbite",
+     "os": [
+      "anneau-tendineux-commun"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Sclère, face inférieure du globe, à environ 6,5 mm du limbe de la cornée",
+     "os": []
+    }
+   ],
+   "action": "Abaisse le regard ; accessoirement, porte l'œil en dedans et le fait tourner sur son axe vers le dehors (extorsion)",
+   "actions": [
+    {
+     "articulation": "oeil",
+     "mouvement": "abaissement",
+     "role": "principal",
+     "precision": "le plus efficace quand l'œil est tourné en dehors"
+    },
+    {
+     "articulation": "oeil",
+     "mouvement": "adduction",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "oeil",
+     "mouvement": "rotation-laterale",
+     "role": "accessoire",
+     "precision": "extorsion"
+    }
+   ],
+   "synergistes": [
+    "oblique-superieur-de-l-oeil"
+   ],
+   "antagonistes": [
+    "droit-superieur-de-l-oeil",
+    "oblique-inferieur-de-l-oeil"
+   ],
+   "innervation": {
+    "nerf": "nerf-oculomoteur-iii",
+    "texte": "Nerf oculomoteur (III), branche inférieure",
+    "racines": [
+     "III"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branche musculaire médiale de l'artère ophtalmique ; apport de l'artère infra-orbitaire",
+    "arteres": [
+     "artere-ophtalmique",
+     "artere-infra-orbitaire"
+    ]
+   },
+   "palpation": null,
+   "test": "Faire suivre du regard un doigt qui trace un grand H, tête immobile : œil porté en dehors, puis vers le bas",
+   "atteinte": "Paralysie : l'œil atteint se place plus haut que l'autre et la vision se dédouble, surtout dans le regard vers le bas",
+   "clinique": "Proche du plancher de l'orbite, il peut être lésé ou incarcéré dans une fracture de ce plancher : les mouvements verticaux de l'œil sont alors limités et la vision se dédouble",
+   "memo": "Droits verticaux adducteurs, obliques abducteurs ; les deux muscles supérieurs font l'intorsion, les deux inférieurs l'extorsion",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachme-oeil",
+    "statpearls-droit-inferieur",
+    "eyewiki-muscles-oculomoteurs",
+    "openstax-11-3"
+   ],
+   "divergences": "Ordre des actions accessoires : adduction puis extorsion pour StatPearls et TeachMeAnatomy, extorsion puis adduction pour EyeWiki. Gray situe toutes les insertions des droits à 6 mm environ de la cornée"
+  },
+  {
+   "id": "droit-lateral-de-l-oeil",
+   "resume": "Le muscle droit du côté de la tempe : il tourne l'œil en dehors. C'est le seul muscle du nerf abducens.",
+   "origine": [
+    {
+     "texte": "Anneau tendineux commun, par sa partie latérale, au sommet de l'orbite ; ses deux chefs enjambent la fissure orbitaire supérieure",
+     "os": [
+      "anneau-tendineux-commun"
+     ]
+    },
+    {
+     "texte": "Un petit faisceau se fixe sur la grande aile du sphénoïde",
+     "os": [
+      "sphenoide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Sclère, face latérale du globe, à environ 7 mm du limbe de la cornée",
+     "os": []
+    }
+   ],
+   "action": "Porte l'œil en dehors, vers la tempe, dans un plan strictement horizontal",
+   "actions": [
+    {
+     "articulation": "oeil",
+     "mouvement": "abduction",
+     "role": "principal",
+     "precision": "seul abducteur pur du globe"
+    }
+   ],
+   "synergistes": [
+    "oblique-superieur-de-l-oeil",
+    "oblique-inferieur-de-l-oeil"
+   ],
+   "antagonistes": [
+    "droit-medial-de-l-oeil"
+   ],
+   "innervation": {
+    "nerf": "nerf-abducens-vi",
+    "texte": "Nerf abducens (VI)",
+    "racines": [
+     "VI"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branche musculaire latérale de l'artère ophtalmique et rameau de l'artère lacrymale",
+    "arteres": [
+     "artere-ophtalmique",
+     "artere-lacrymale"
+    ]
+   },
+   "palpation": null,
+   "test": "Faire regarder en dehors, vers la tempe, tête immobile : l'œil doit atteindre l'angle externe des paupières",
+   "atteinte": "Paralysie du VI : l'œil ne peut plus se porter en dehors et reste dévié vers le nez, tiré par le droit médial ; le patient voit double et tourne la tête du côté atteint pour compenser",
+   "clinique": "Entre ses deux chefs passent les deux branches du nerf oculomoteur, le nerf nasociliaire et le nerf abducens lui-même",
+   "memo": "Abducens : « qui écarte ». Le VI n'a qu'un seul muscle, celui qui écarte l'œil du nez",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachme-oeil",
+    "kenhub-droit-lateral",
+    "eyewiki-muscles-oculomoteurs",
+    "openstax-11-3"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "droit-medial-de-l-oeil",
+   "resume": "Le muscle droit du côté du nez, le plus large des quatre : il tourne l'œil en dedans et fait converger les deux yeux.",
+   "origine": [
+    {
+     "texte": "Anneau tendineux commun, par sa partie médiale, au sommet de l'orbite",
+     "os": [
+      "anneau-tendineux-commun"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Sclère, face médiale du globe, à environ 5,5 mm du limbe : la plus proche de la cornée des quatre insertions",
+     "os": []
+    }
+   ],
+   "action": "Porte l'œil en dedans, vers le nez, dans un plan strictement horizontal ; les deux muscles ensemble font converger les yeux sur un objet proche",
+   "actions": [
+    {
+     "articulation": "oeil",
+     "mouvement": "adduction",
+     "role": "principal",
+     "precision": "seul adducteur pur ; convergence quand les deux muscles agissent ensemble"
+    }
+   ],
+   "synergistes": [
+    "droit-superieur-de-l-oeil",
+    "droit-inferieur-de-l-oeil"
+   ],
+   "antagonistes": [
+    "droit-lateral-de-l-oeil"
+   ],
+   "innervation": {
+    "nerf": "nerf-oculomoteur-iii",
+    "texte": "Nerf oculomoteur (III), branche inférieure",
+    "racines": [
+     "III"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branche musculaire médiale de l'artère ophtalmique",
+    "arteres": [
+     "artere-ophtalmique"
+    ]
+   },
+   "palpation": null,
+   "test": "Faire regarder en dedans, vers le nez ; tester la convergence en approchant un doigt de la racine du nez",
+   "atteinte": "Paralysie du III : l'œil ne peut plus se porter en dedans ; tiré par le droit latéral et l'oblique supérieur, il regarde en bas et en dehors, paupière tombante",
+   "clinique": "Dans le regard de côté, il se contracte en même temps que le droit latéral de l'autre œil : c'est le couple des mouvements conjugués",
+   "memo": "Médial : il regarde le nez. Les deux droits médiaux ensemble font loucher sur un doigt qui s'approche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachme-oeil",
+    "eyewiki-muscles-oculomoteurs",
+    "statpearls-droit-inferieur",
+    "openstax-11-3"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "long-de-la-tete",
+   "resume": "Muscle profond du devant du cou, plaqué contre les vertèbres cervicales : il fléchit la tête.",
+   "origine": [
+    {
+     "texte": "Tubercules antérieurs des processus transverses de C3 à C6, par quatre languettes tendineuses",
+     "os": [
+      "vertebre-c3",
+      "vertebre-c4",
+      "vertebre-c5",
+      "vertebre-c6"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face inférieure de la partie basilaire de l'os occipital",
+     "os": [
+      "occipital"
+     ]
+    }
+   ],
+   "action": "Fléchit la tête sur le cou ; d'un seul côté, la tourne légèrement de son côté ; stabilise le haut du rachis cervical",
+   "actions": [
+    {
+     "articulation": "tete",
+     "mouvement": "flexion",
+     "role": "principal"
+    },
+    {
+     "articulation": "tete",
+     "mouvement": "rotation-homolaterale",
+     "role": "accessoire",
+     "precision": "faible, par l'obliquité de ses fibres"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "stabilisation",
+     "role": "accessoire",
+     "precision": "haut du rachis cervical"
+    }
+   ],
+   "synergistes": [
+    "droit-anterieur-de-la-tete",
+    "long-du-cou",
+    "sterno-cleido-mastoidien"
+   ],
+   "antagonistes": [
+    "splenius-tete",
+    "grand-droit-posterieur-de-la-tete",
+    "trapeze"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux ventraux des nerfs spinaux C1 à C3",
+    "racines": [
+     "C1",
+     "C2",
+     "C3"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère pharyngienne ascendante, artère cervicale ascendante (artère thyroïdienne inférieure) et artère vertébrale",
+    "arteres": [
+     "artere-pharyngienne-ascendante",
+     "artere-thyroidienne-inferieure",
+     "vertebrale"
+    ]
+   },
+   "palpation": null,
+   "test": "Flexion de la tête contre résistance, menton rentré : il est testé avec les autres fléchisseurs profonds du cou",
+   "atteinte": "Rarement atteint seul. Après un traumatisme en coup de fouet cervical, son étirement et sa contracture participent aux douleurs et à la raideur du cou",
+   "clinique": "Il repose contre les vertèbres, au voisinage du tronc sympathique cervical et de la gaine carotidienne",
+   "memo": "Devant la colonne, il fait contrepoids aux muscles de la nuque : il ramène en avant la tête qu'ils ont tirée en arrière",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-prevertebraux",
+    "teachme-prevertebraux",
+    "statpearls-prevertebraux"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "mentonnier",
+   "resume": "Le muscle de la moue : de la mandibule à la peau du menton, il fronce le menton et pousse la lèvre inférieure vers le haut.",
+   "origine": [
+    {
+     "texte": "Fosse incisive de la mandibule, sous les incisives",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Peau du menton",
+     "os": []
+    }
+   ],
+   "action": "Soulève et fronce la peau du menton, ce qui pousse la lèvre inférieure en haut et en avant : la moue, le doute, le dédain",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "fronce le menton, élève et avance la lèvre inférieure : la moue, le doute"
+    }
+   ],
+   "synergistes": [
+    "orbiculaire-bouche"
+   ],
+   "antagonistes": [
+    "abaisseur-de-la-levre-inferieure"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameau marginal de la mandibule du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère labiale inférieure (artère faciale) et artère mentonnière (artère alvéolaire inférieure)",
+    "arteres": [
+     "artere-labiale-inferieure",
+     "artere-faciale",
+     "branche-mentonniere-de-l-artere-alveolaire-inferieure"
+    ]
+   },
+   "palpation": "Sur la pointe du menton, de part et d'autre de la ligne médiane : la peau s'y fronce et se soulève pendant la moue",
+   "test": "Demander de faire la moue en remontant la lèvre inférieure",
+   "atteinte": "Paralysie du rameau marginal de la mandibule : le menton ne se fronce plus et la lèvre inférieure ne remonte plus du côté atteint ; la moue devient asymétrique",
+   "clinique": "Muscle profond de la mimique, comme le buccinateur et l'élévateur de l'angle de la bouche : le nerf facial l'aborde par sa face superficielle",
+   "memo": "L'ancienne houppe du menton : menton froncé, lèvre inférieure retroussée, c'est la moue boudeuse",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "statpearls-muscles-face",
+    "teachme-nerf-facial",
+    "openstax-11-3"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "mylohyoidien",
+   "resume": "Le plancher musculaire de la bouche : une sangle tendue entre les deux moitiés de la mandibule, sous la langue.",
+   "origine": [
+    {
+     "texte": "Ligne mylohyoïdienne de la face interne de la mandibule, de la symphyse à la dernière molaire",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Raphé médian tendu de la symphyse mentonnière à l'os hyoïde, où il rejoint le muscle opposé (fibres antérieures et moyennes)",
+     "os": []
+    },
+    {
+     "texte": "Corps de l'os hyoïde (fibres postérieures)",
+     "os": [
+      "hyoide"
+     ]
+    }
+   ],
+   "action": "Soulève le plancher de la bouche, la langue et l'os hyoïde au début de la déglutition ; os hyoïde fixé, aide à abaisser la mandibule",
+   "actions": [
+    {
+     "articulation": "os-hyoide",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "le porte en haut et en avant au premier temps de la déglutition"
+    },
+    {
+     "articulation": "langue",
+     "mouvement": "elevation",
+     "role": "accessoire",
+     "precision": "en soulevant le plancher de la bouche, il plaque la langue vers le palais"
+    },
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "ouverture",
+     "role": "accessoire",
+     "precision": "quand l'os hyoïde est fixé par les muscles infra-hyoïdiens"
+    }
+   ],
+   "synergistes": [
+    "geniohyoidien",
+    "digastrique",
+    "stylohyoidien"
+   ],
+   "antagonistes": [
+    "sterno-hyoidien",
+    "omo-hyoidien",
+    "sterno-thyroidien"
+   ],
+   "innervation": {
+    "nerf": "nerf-mylohyoidien",
+    "texte": "Nerf mylohyoïdien, branche du nerf alvéolaire inférieur (V3)",
+    "racines": [
+     "V3"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère submentale (artère faciale) et rameau mylohyoïdien de l'artère alvéolaire inférieure",
+    "arteres": [
+     "artere-submentale",
+     "branche-mylohyoidien-de-l-artere-alveolaire-inferieure"
+    ]
+   },
+   "palpation": "Sous le menton, entre les deux bords de la mandibule : le plancher durcit quand on avale ou qu'on appuie la langue contre le palais",
+   "test": "Palper le plancher de la bouche sous le menton pendant la déglutition",
+   "atteinte": "Lésion du nerf mandibulaire ou du nerf alvéolaire inférieur avant le départ du nerf mylohyoïdien : plancher de la bouche affaibli d'un côté, déficit discret car les autres muscles supra-hyoïdiens compensent",
+   "clinique": "Il sépare la région sublinguale, au-dessus, de la région submandibulaire, au-dessous ; l'infection qui diffuse dans ce plancher, souvent d'origine dentaire, est l'angine de Ludwig",
+   "memo": "Mylo- vient du grec « meule », la molaire : c'est le hamac tendu sous la langue, des molaires à l'os hyoïde",
+   "variantes": "Raphé médian parfois absent ; peut fusionner avec le ventre antérieur du digastrique",
+   "sources": [
+    "gray1918",
+    "kenhub-suprahyoidiens",
+    "teachme-suprahyoidiens",
+    "statpearls-muscles-face",
+    "teachme-nerf-mandibulaire"
+   ],
+   "divergences": "TeachMeAnatomy (muscles supra-hyoïdiens) et StatPearls citent le nerf alvéolaire inférieur sans nommer sa branche mylohyoïdienne"
+  },
+  {
+   "id": "nasal",
+   "resume": "Le muscle de la narine : une partie transverse qui pince le nez, une partie alaire qui écarte l'aile et ouvre la narine.",
+   "origine": [
+    {
+     "texte": "Partie transverse : maxillaire, au-dessus et en dehors de la fosse incisive",
+     "os": [
+      "maxillaire"
+     ]
+    },
+    {
+     "texte": "Partie alaire : maxillaire, au-dessus de l'incisive latérale",
+     "os": [
+      "maxillaire"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Partie transverse : aponévrose du dos du nez, unie à celle du côté opposé et à celle du procérus",
+     "os": []
+    },
+    {
+     "texte": "Partie alaire : grand cartilage alaire et peau de l'aile du nez",
+     "os": [
+      "grand-cartilage-alaire"
+     ]
+    }
+   ],
+   "action": "Sa partie transverse comprime le nez cartilagineux et resserre la narine ; sa partie alaire écarte l'aile du nez et dilate la narine",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "pince le nez (partie transverse) ou dilate la narine (partie alaire) : la colère, l'effort"
+    },
+    {
+     "articulation": "respiration",
+     "mouvement": "inspiration",
+     "role": "accessoire",
+     "precision": "la partie alaire ouvre la narine à l'inspiration forcée"
+    }
+   ],
+   "synergistes": [
+    "abaisseur-du-septum-nasal",
+    "elevateur-nasolabial"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameaux buccaux du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère labiale supérieure et rameaux nasaux de l'artère faciale ; artère infra-orbitaire",
+    "arteres": [
+     "artere-labiale-superieure",
+     "artere-faciale",
+     "artere-infra-orbitaire"
+    ]
+   },
+   "palpation": "Sur l'aile du nez, entre le pouce et l'index, pendant que le sujet dilate les narines",
+   "test": "Demander de dilater les narines, ou d'inspirer fort par le nez",
+   "atteinte": "Paralysie faciale : l'aile du nez ne s'écarte plus à l'inspiration du côté atteint",
+   "clinique": "Ses fibres dilatatrices se contractent fortement quand la respiration est difficile : le battement des ailes du nez à chaque inspiration en est le signe",
+   "memo": "Deux gestes opposés pour un seul muscle : la partie transverse pince, la partie alaire ouvre",
+   "variantes": "Comme les autres muscles du nez, il varie beaucoup en volume et peut manquer",
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "teachme-mimique"
+   ],
+   "divergences": "Gray (1918) décrit à part deux dilatateurs de la narine, aujourd'hui réunis dans la partie alaire, et fait de sa partie alaire un faisceau tendu du cartilage alaire à la peau de la pointe du nez"
+  },
+  {
+   "id": "oblique-inferieur-de-l-oeil",
+   "resume": "Le seul muscle de l'œil né à l'avant de l'orbite : il passe sous le globe, le fait tourner vers le dehors et élève le regard.",
+   "origine": [
+    {
+     "texte": "Face orbitaire du maxillaire, à la partie antéro-médiale du plancher de l'orbite, juste en dehors du sillon lacrymal",
+     "os": [
+      "maxillaire"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Sclère, quadrant inféro-latéral et postérieur du globe, en arrière de l'équateur, sous le droit latéral",
+     "os": []
+    }
+   ],
+   "action": "Fait tourner l'œil sur son axe vers le dehors (extorsion), élève le regard, surtout quand l'œil est tourné vers le nez, et le porte en dehors",
+   "actions": [
+    {
+     "articulation": "oeil",
+     "mouvement": "rotation-laterale",
+     "role": "principal",
+     "precision": "extorsion"
+    },
+    {
+     "articulation": "oeil",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "surtout quand l'œil est en adduction"
+    },
+    {
+     "articulation": "oeil",
+     "mouvement": "abduction",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "droit-superieur-de-l-oeil"
+   ],
+   "antagonistes": [
+    "oblique-superieur-de-l-oeil",
+    "droit-inferieur-de-l-oeil"
+   ],
+   "innervation": {
+    "nerf": "nerf-oculomoteur-iii",
+    "texte": "Nerf oculomoteur (III), branche inférieure",
+    "racines": [
+     "III"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branche musculaire médiale de l'artère ophtalmique ; apport de l'artère infra-orbitaire",
+    "arteres": [
+     "artere-ophtalmique",
+     "artere-infra-orbitaire"
+    ]
+   },
+   "palpation": null,
+   "test": "Faire suivre un doigt du regard, tête immobile : œil porté en dedans, vers le nez, puis vers le haut",
+   "atteinte": "Paralysie du III : il est paralysé avec les droits supérieur, inférieur et médial ; l'œil, livré au droit latéral et à l'oblique supérieur, reste dévié en bas et en dehors",
+   "clinique": "Les fibres parasympathiques de la pupille cheminent avec son rameau nerveux : une chirurgie à son contact peut laisser une anomalie pupillaire",
+   "memo": "Les obliques font le contraire de leur nom : l'inférieur élève, le supérieur abaisse. Et tous deux écartent l'œil du nez",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachme-oeil",
+    "kenhub-oblique-inferieur",
+    "eyewiki-muscles-oculomoteurs",
+    "statpearls-droit-inferieur",
+    "openstax-11-3"
+   ],
+   "divergences": "Action première : l'extorsion pour EyeWiki (classement ophtalmologique) ; l'élévation et l'abduction pour OpenStax et TeachMeAnatomy, qui citent la rotation en dernier"
+  },
+  {
+   "id": "oblique-superieur-de-l-oeil",
+   "resume": "Le muscle à poulie : son tendon se réfléchit dans la trochlée, à l'angle supéro-médial de l'orbite, avant de coiffer le globe.",
+   "origine": [
+    {
+     "texte": "Corps du sphénoïde, au-dessus et en dedans du canal optique",
+     "os": [
+      "sphenoide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Sclère, quadrant supéro-latéral et postérieur du globe, sous le droit supérieur ; son tendon y arrive après s'être réfléchi dans la trochlée, poulie fixée à l'os frontal",
+     "os": []
+    }
+   ],
+   "action": "Fait tourner l'œil sur son axe vers le dedans (intorsion), abaisse le regard, surtout quand l'œil est tourné vers le nez, et le porte en dehors",
+   "actions": [
+    {
+     "articulation": "oeil",
+     "mouvement": "rotation-mediale",
+     "role": "principal",
+     "precision": "intorsion"
+    },
+    {
+     "articulation": "oeil",
+     "mouvement": "abaissement",
+     "role": "principal",
+     "precision": "surtout quand l'œil est en adduction : lire, descendre un escalier"
+    },
+    {
+     "articulation": "oeil",
+     "mouvement": "abduction",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "droit-inferieur-de-l-oeil"
+   ],
+   "antagonistes": [
+    "oblique-inferieur-de-l-oeil",
+    "droit-superieur-de-l-oeil"
+   ],
+   "innervation": {
+    "nerf": "nerf-trochleaire-iv",
+    "texte": "Nerf trochléaire (IV)",
+    "racines": [
+     "IV"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux musculaires de l'artère ophtalmique",
+    "arteres": [
+     "artere-ophtalmique"
+    ]
+   },
+   "palpation": null,
+   "test": "Faire suivre un doigt du regard, tête immobile : œil porté en dedans, vers le nez, puis vers le bas",
+   "atteinte": "Paralysie du IV : vision double verticale, maximale en regardant en bas et en dedans (lire, descendre un escalier) ; le patient incline la tête vers le côté sain pour compenser",
+   "clinique": "Le nerf trochléaire est le plus grêle des nerfs crâniens, le seul à sortir par la face postérieure du tronc cérébral, et celui dont le trajet dans le crâne est le plus long",
+   "memo": "Trochlée veut dire poulie : le nerf trochléaire (IV) est le nerf du muscle à poulie, et de lui seul",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachme-oeil",
+    "kenhub-oblique-superieur",
+    "teachme-nerf-trochleaire",
+    "eyewiki-muscles-oculomoteurs",
+    "openstax-11-3"
+   ],
+   "divergences": "Action première : l'intorsion pour EyeWiki ; l'abaissement pour TeachMeAnatomy et OpenStax. Kenhub dit l'abaissement maximal en adduction mais décrit une diplopie surtout en abduction"
+  },
+  {
+   "id": "oblique-superieur-de-la-tete",
+   "resume": "Petit muscle de la nuque profonde, tendu de l'atlas à l'occipital : il étend la tête et l'incline de son côté.",
+   "origine": [
+    {
+     "texte": "Face supérieure du processus transverse de l'atlas",
+     "os": [
+      "atlas"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Os occipital, entre les lignes nucales supérieure et inférieure, en dehors du muscle semi-épineux de la tête",
+     "os": [
+      "occipital"
+     ]
+    }
+   ],
+   "action": "Étend la tête sur l'atlas et l'incline de son côté",
+   "actions": [
+    {
+     "articulation": "tete",
+     "mouvement": "extension",
+     "role": "principal"
+    },
+    {
+     "articulation": "tete",
+     "mouvement": "inclinaison",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "grand-droit-posterieur-de-la-tete",
+    "petit-droit-posterieur-de-la-tete",
+    "splenius-tete"
+   ],
+   "antagonistes": [
+    "droit-anterieur-de-la-tete",
+    "long-de-la-tete"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Nerf sous-occipital (rameau dorsal du premier nerf cervical)",
+    "racines": [
+     "C1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère vertébrale et branche descendante de l'artère occipitale",
+    "arteres": [
+     "vertebrale",
+     "artere-occipitale"
+    ]
+   },
+   "palpation": "Trop profond pour être isolé : la région se palpe sous l'occiput, en dehors de la ligne médiane, à travers le trapèze et le semi-épineux de la tête",
+   "test": "Extension de la tête contre résistance : il est testé avec l'ensemble des extenseurs de la nuque",
+   "atteinte": "Contracture ou points douloureux, favorisés par les mauvaises postures : douleur sous l'occiput irradiant vers la tempe et l'arrière de l'œil, céphalées de tension",
+   "clinique": "Il forme le bord supéro-latéral du triangle sous-occipital, où l'artère vertébrale et le nerf sous-occipital reposent sur l'arc postérieur de l'atlas",
+   "memo": "Des deux obliques de la nuque, le supérieur monte de l'atlas au crâne : il ne tourne pas la tête, il l'étend et la penche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-sous-occipitaux",
+    "teachme-sous-occipitaux"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "muscle-occipital",
+   "resume": "Le ventre postérieur de l'occipito-frontal : une lame mince et carrée à l'arrière du crâne, qui tire le cuir chevelu en arrière.",
+   "origine": [
+    {
+     "texte": "Deux tiers latéraux de la ligne nucale suprême de l'occipital et processus mastoïde du temporal, par de courtes fibres tendineuses",
+     "os": [
+      "occipital",
+      "temporal"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord postérieur de l'aponévrose épicrânienne",
+     "os": [
+      "aponevrose-epicranienne"
+     ]
+    }
+   ],
+   "action": "Tire le cuir chevelu en arrière et tend l'aponévrose épicrânienne, ce qui donne un point d'appui au muscle qui lève les sourcils",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "tire le cuir chevelu en arrière et fixe l'aponévrose pendant que le frontal lève les sourcils"
+    }
+   ],
+   "synergistes": [
+    "muscle-frontal"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Nerf auriculaire postérieur, branche du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère occipitale et artère auriculaire postérieure",
+    "arteres": [
+     "artere-occipitale"
+    ]
+   },
+   "palpation": "À l'arrière du crâne, au-dessus de la ligne nucale, de chaque côté : on perçoit surtout le glissement du cuir chevelu",
+   "test": null,
+   "atteinte": "Paralysé quand le nerf facial est lésé avant le départ du nerf auriculaire postérieur : le cuir chevelu ne recule plus de ce côté, sans gêne pour le patient",
+   "clinique": null,
+   "memo": "Il amarre l'aponévrose épicrânienne à l'occiput et donne ainsi son point d'appui au muscle frontal",
+   "variantes": "Volume variable ; peut manquer. Un faisceau transverse de la nuque existe chez une personne sur quatre environ",
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "statpearls-scalp",
+    "wikipedia-occipito-frontal",
+    "teachme-nerf-facial",
+    "hithera-gray-scalp"
+   ],
+   "divergences": "Ligne d'attache occipitale : ligne nucale suprême pour Wikipedia et pour une édition plus récente de Gray (Hithera) ; ligne nucale supérieure pour Gray (1918), Kenhub et StatPearls"
+  },
+  {
+   "id": "petit-zygomatique",
+   "resume": "Mince bandelette tendue de la pommette à la lèvre supérieure : il la relève et creuse le sillon nasolabial.",
+   "origine": [
+    {
+     "texte": "Face latérale de l'os zygomatique, juste en arrière de la suture qui l'unit au maxillaire",
+     "os": [
+      "zygomatique"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Peau et muscle de la lèvre supérieure, en dedans de la commissure",
+     "os": []
+    }
+   ],
+   "action": "Élève la lèvre supérieure, la tire un peu en dehors et accentue le sillon nasolabial : le sourire, le dédain, la tristesse",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "relève la lèvre supérieure et creuse le sillon nasolabial"
+    }
+   ],
+   "synergistes": [
+    "releveur-levre-superieure",
+    "elevateur-nasolabial",
+    "grand-zygomatique"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameaux zygomatiques et buccaux du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère labiale supérieure, branche de l'artère faciale",
+    "arteres": [
+     "artere-labiale-superieure",
+     "artere-faciale"
+    ]
+   },
+   "palpation": null,
+   "test": "Demander de retrousser la lèvre supérieure en montrant les dents du haut",
+   "atteinte": "Paralysie faciale : la lèvre supérieure ne se relève plus du côté atteint et le sillon nasolabial s'efface",
+   "clinique": null,
+   "memo": "Petit et grand zygomatiques partent du même os : le petit va à la lèvre supérieure, le grand à la commissure",
+   "variantes": "Souvent absent",
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "statpearls-muscles-face"
+   ],
+   "divergences": "Gray (1918) en fait le chef zygomatique du « carré de la lèvre supérieure », avec l'élévateur de la lèvre supérieure et l'élévateur nasolabial ; StatPearls le termine à la commissure"
+  },
+  {
+   "id": "procerus",
+   "resume": "Petit muscle de la racine du nez : il tire vers le bas la peau située entre les sourcils et creuse un pli horizontal.",
+   "origine": [
+    {
+     "texte": "Fascia recouvrant le bas de l'os nasal et le haut du cartilage latéral du nez",
+     "os": [
+      "os-nasaux",
+      "processus-lateral-du-cartilage-septal"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Peau de la glabelle, entre les sourcils, où ses fibres croisent celles du frontal",
+     "os": []
+    }
+   ],
+   "action": "Abaisse la tête des sourcils et la peau de la glabelle, ce qui plisse en travers la racine du nez : le froncement, l'air sévère",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "abaisse la tête des sourcils et creuse un pli horizontal à la racine du nez"
+    }
+   ],
+   "synergistes": [
+    "corrugateur-du-sourcil",
+    "orbiculaire-oeil"
+   ],
+   "antagonistes": [
+    "muscle-frontal"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Nerf facial (VII) : rameaux temporaux ou buccaux selon les auteurs",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère angulaire et rameaux nasaux de l'artère faciale ; artères supratrochléaire et supra-orbitaire",
+    "arteres": [
+     "artere-angulaire",
+     "artere-faciale",
+     "artere-supratrochleaire",
+     "artere-supra-orbitaire"
+    ]
+   },
+   "palpation": "Sur la racine du nez, entre les sourcils, quand le sujet fronce les sourcils en les abaissant",
+   "test": "Demander de froncer les sourcils en les abaissant : un pli horizontal doit barrer la racine du nez",
+   "atteinte": "Paralysie faciale : la peau de la glabelle ne s'abaisse plus du côté atteint, sans gêne fonctionnelle",
+   "clinique": "Son pli horizontal de la racine du nez se traite par la toxine botulique, injectée en même temps que dans les corrugateurs",
+   "memo": "L'ancien pyramidal du nez : il prolonge le frontal vers le bas, mais tire en sens inverse",
+   "variantes": "Comme les autres muscles du nez, il varie beaucoup en volume et peut manquer",
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "teachme-mimique",
+    "statpearls-muscles-face",
+    "statpearls-frontal"
+   ],
+   "divergences": "Innervation : rameaux buccaux pour Gray et TeachMeAnatomy, rameau temporal pour StatPearls ; Kenhub admet les rameaux temporaux, zygomatiques inférieurs ou buccaux"
+  },
+  {
+   "id": "pterygoidien-lateral",
+   "resume": "Le seul masticateur à fibres horizontales : il tire en avant le condyle de la mandibule et son disque, pour avancer la mâchoire et ouvrir la bouche.",
+   "origine": [
+    {
+     "texte": "Chef supérieur : face et crête infra-temporales de la grande aile du sphénoïde",
+     "os": [
+      "sphenoide"
+     ]
+    },
+    {
+     "texte": "Chef inférieur : face latérale de la lame latérale du processus ptérygoïde ; pour certains auteurs, aussi le processus pyramidal du palatin et la tubérosité du maxillaire",
+     "os": [
+      "sphenoide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Fossette ptérygoïdienne, à la face antérieure du col de la mandibule",
+     "os": [
+      "mandibule"
+     ]
+    },
+    {
+     "texte": "Capsule et disque articulaire de l'articulation temporo-mandibulaire",
+     "os": [
+      "capsule-articulaire-de-l-articulation-temporo-mandibulaire",
+      "disque-articulaire-de-l-articulation-temporomandibulaire"
+     ]
+    }
+   ],
+   "action": "Les deux ensemble avancent la mandibule et aident à ouvrir la bouche ; un seul porte le menton vers le côté opposé, pour le broyage",
+   "actions": [
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "propulsion",
+     "role": "principal",
+     "precision": "contraction des deux côtés : condyle et disque glissent en avant"
+    },
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "ouverture",
+     "role": "principal",
+     "precision": "seul masticateur à abaisser la mandibule, aidé par la pesanteur et les muscles supra-hyoïdiens"
+    },
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "diduction",
+     "role": "principal",
+     "precision": "contraction d'un seul côté : le menton part vers le côté opposé"
+    },
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "mastication",
+     "role": "principal",
+     "precision": "mouvements de broyage"
+    }
+   ],
+   "synergistes": [
+    "pterygoidien-medial",
+    "digastrique",
+    "mylohyoidien",
+    "geniohyoidien"
+   ],
+   "antagonistes": [
+    "muscle-temporal",
+    "masseter"
+   ],
+   "innervation": {
+    "nerf": "nerf-trijumeau-v",
+    "texte": "Nerf du ptérygoïdien latéral, branche du nerf mandibulaire (V3)",
+    "racines": [
+     "V3"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux ptérygoïdiens de l'artère maxillaire, qui passe entre ses deux chefs ou à leur contact",
+    "arteres": [
+     "artere-maxillaire"
+    ]
+   },
+   "palpation": "Très profond, dans la fosse infra-temporale : à peine accessible par la bouche, en arrière de la tubérosité du maxillaire, par un praticien entraîné",
+   "test": "Faire avancer le menton, puis le déplacer de côté contre résistance ; à l'ouverture de la bouche, la mandibule ne doit pas dévier",
+   "atteinte": "Paralysie d'un côté (lésion du nerf mandibulaire) : à l'ouverture de la bouche, le menton dévie vers le côté paralysé",
+   "clinique": "Son spasme, douloureux, limite l'ouverture de la bouche. Une traction prolongée de son chef supérieur sur le disque est mise en cause dans les déplacements antérieurs du disque de l'articulation",
+   "memo": "Le seul des quatre masticateurs à ouvrir la bouche : ses fibres courent à l'horizontale, d'avant en arrière",
+   "variantes": "Deux chefs dans plus de neuf cas sur dix ; parfois un seul, très rarement trois",
+   "sources": [
+    "gray1918",
+    "kenhub-mastication",
+    "teachme-mastication",
+    "statpearls-pterygoidien-lateral",
+    "physiopedia-mastication",
+    "teachme-atm"
+   ],
+   "divergences": "Rôle du chef supérieur : actif à la fermeture de la bouche selon la vision classique ; à l'ouverture et à la propulsion, comme le chef inférieur, selon des travaux récents (StatPearls)"
+  },
+  {
+   "id": "releveur-levre-superieure",
+   "resume": "Lame musculaire du dessous de l'orbite : elle relève la lèvre supérieure et découvre les dents du haut.",
+   "origine": [
+    {
+     "texte": "Rebord inférieur de l'orbite, juste au-dessus du foramen infra-orbitaire, sur le maxillaire et l'os zygomatique voisin",
+     "os": [
+      "maxillaire",
+      "zygomatique"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Peau et muscle de la lèvre supérieure, entre l'élévateur nasolabial et l'élévateur de l'angle de la bouche",
+     "os": []
+    }
+   ],
+   "action": "Élève et éverse la lèvre supérieure, découvre les dents du haut et creuse le sillon nasolabial : le dédain, le sourire",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "relève et éverse la lèvre supérieure, montre les dents du haut"
+    }
+   ],
+   "synergistes": [
+    "elevateur-nasolabial",
+    "petit-zygomatique",
+    "elevateur-de-l-angle-de-la-bouche"
+   ],
+   "antagonistes": [
+    "orbiculaire-bouche"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameaux zygomatiques et buccaux du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère faciale et artère infra-orbitaire, branche de l'artère maxillaire",
+    "arteres": [
+     "artere-faciale",
+     "artere-infra-orbitaire"
+    ]
+   },
+   "palpation": "Sous le rebord inférieur de l'orbite, en dehors de l'aile du nez, quand le sujet retrousse la lèvre supérieure",
+   "test": "Demander de retrousser la lèvre supérieure pour montrer la gencive du haut",
+   "atteinte": "Paralysie faciale : la lèvre supérieure reste basse du côté atteint, les dents du haut ne se découvrent plus et le sillon nasolabial s'efface",
+   "clinique": "Il naît au-dessus du foramen infra-orbitaire et l'élévateur de l'angle de la bouche au-dessous : le nerf et les vaisseaux infra-orbitaires sortent entre les deux muscles",
+   "memo": "Trois releveurs en éventail sous l'orbite, de dedans en dehors : le nasolabial, celui de la lèvre supérieure, le petit zygomatique",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "statpearls-muscles-face"
+   ],
+   "divergences": "Gray (1918) en fait le chef infra-orbitaire du « carré de la lèvre supérieure » ; Kenhub situe son origine sur le processus zygomatique du maxillaire et le processus maxillaire du zygomatique"
+  },
+  {
+   "id": "risorius",
+   "resume": "Mince faisceau horizontal de la joue : il tire la commissure des lèvres en dehors, pour un sourire pincé.",
+   "origine": [
+    {
+     "texte": "Fascia recouvrant le masséter et la glande parotide ; parfois le fascia du platysma",
+     "os": [
+      "fascia-masseterin"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Peau de la commissure des lèvres (modiolus)",
+     "os": []
+    }
+   ],
+   "action": "Tire la commissure des lèvres en dehors et étire la bouche : le sourire forcé, le rictus",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "étire la commissure vers l'arrière : sourire crispé, rictus"
+    }
+   ],
+   "synergistes": [
+    "grand-zygomatique"
+   ],
+   "antagonistes": [
+    "orbiculaire-bouche"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameaux buccaux du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère labiale supérieure, branche de l'artère faciale",
+    "arteres": [
+     "artere-labiale-superieure",
+     "artere-faciale"
+    ]
+   },
+   "palpation": null,
+   "test": "Demander d'étirer les lèvres sur le côté, bouche fermée",
+   "atteinte": "Paralysie faciale : la commissure n'est plus tirée en dehors du côté atteint et la bouche dévie vers le côté sain",
+   "clinique": "Dans le tétanos, la contracture des muscles de la face fige un rictus appelé rire sardonique",
+   "memo": "Risorius vient de risus, le rire ; pourtant il n'étire qu'un sourire crispé : le vrai sourire appartient au grand zygomatique",
+   "variantes": "Très variable de taille et de forme, souvent absent ; parfois double ou confondu avec le platysma",
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "statpearls-muscles-face",
+    "statpearls-masseter"
+   ],
+   "divergences": "Geste : commissure tirée en dehors pour Gray et StatPearls, en dehors et en haut pour Kenhub ; OpenStax lui prête le pincement des lèvres"
+  },
+  {
+   "id": "stylohyoidien",
+   "resume": "Mince muscle tendu du processus styloïde à l'os hyoïde : il tire l'os hyoïde en haut et en arrière pendant la déglutition.",
+   "origine": [
+    {
+     "texte": "Face postéro-latérale du processus styloïde du temporal, près de sa base",
+     "os": [
+      "temporal"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Corps de l'os hyoïde, à sa jonction avec la grande corne ; près de son insertion, il est traversé par le tendon intermédiaire du digastrique",
+     "os": [
+      "hyoide"
+     ]
+    }
+   ],
+   "action": "Élève l'os hyoïde et le tire en arrière, ce qui allonge le plancher de la bouche ; après le passage de la bouchée, il empêche son retour vers la bouche",
+   "actions": [
+    {
+     "articulation": "os-hyoide",
+     "mouvement": "elevation",
+     "role": "principal"
+    },
+    {
+     "articulation": "os-hyoide",
+     "mouvement": "retraction",
+     "role": "principal",
+     "precision": "avec le ventre postérieur du digastrique, en fin de déglutition"
+    }
+   ],
+   "synergistes": [
+    "digastrique",
+    "mylohyoidien",
+    "geniohyoidien"
+   ],
+   "antagonistes": [
+    "sterno-hyoidien",
+    "omo-hyoidien"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameau stylohyoïdien du nerf facial (VII), né à la sortie du foramen stylo-mastoïdien, avant la glande parotide",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches des artères faciale, occipitale et linguale, données pour l'ensemble des muscles supra-hyoïdiens",
+    "arteres": [
+     "artere-faciale",
+     "artere-occipitale"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Paralysé quand le nerf facial est lésé à sa sortie du crâne ou en amont ; ce déficit n'a pas de signe propre, les autres muscles supra-hyoïdiens assurant l'élévation de l'os hyoïde",
+   "clinique": "Le tendon intermédiaire du digastrique le perfore le plus souvent juste au-dessus de l'os hyoïde : c'est ainsi qu'on reconnaît les deux muscles",
+   "memo": "Il porte ses deux attaches dans son nom : du processus styloïde à l'os hyoïde",
+   "variantes": "Peut manquer ou être double ; se termine parfois sur un muscle voisin (omo-hyoïdien, thyrohyoïdien ou mylohyoïdien)",
+   "sources": [
+    "gray1918",
+    "kenhub-suprahyoidiens",
+    "teachme-suprahyoidiens",
+    "teachme-nerf-facial"
+   ],
+   "divergences": "Terminaison : corps de l'os hyoïde pour Gray et Kenhub, face latérale de l'os pour TeachMeAnatomy, qui ne voit le tendon du digastrique le traverser que sur certains sujets"
+  },
+  {
+   "id": "stylopharyngien",
+   "resume": "Long muscle grêle qui descend du processus styloïde dans la paroi du pharynx : il l'élève et l'élargit pour accueillir la bouchée.",
+   "origine": [
+    {
+     "texte": "Face médiale de la base du processus styloïde du temporal",
+     "os": [
+      "temporal"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Paroi du pharynx, sous la muqueuse : il s'y glisse entre les constricteurs supérieur et moyen et s'y mêle à leurs fibres",
+     "os": []
+    },
+    {
+     "texte": "Bord postérieur du cartilage thyroïde, avec le palatopharyngien",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    }
+   ],
+   "action": "Tire les côtés du pharynx en haut et en dehors, ce qui l'élève et l'élargit ; soulève aussi le larynx pendant la déglutition",
+   "actions": [
+    {
+     "articulation": "pharynx",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "élève le pharynx et l'élargit en tirant ses côtés en dehors"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "elevation",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "pharynx",
+     "mouvement": "deglutition",
+     "role": "accessoire",
+     "precision": "ouvre le pharynx devant le bol alimentaire"
+    }
+   ],
+   "synergistes": [
+    "palatopharyngien"
+   ],
+   "antagonistes": [
+    "constricteur-superieur-du-pharynx",
+    "constricteur-moyen-du-pharynx",
+    "constricteur-inferieur-du-pharynx"
+   ],
+   "innervation": {
+    "nerf": "nerf-glossopharyngien-ix",
+    "texte": "Nerf glossopharyngien (IX), par son rameau stylopharyngien",
+    "racines": [
+     "IX"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère pharyngienne ascendante et rameaux pharyngiens voisins",
+    "arteres": [
+     "artere-pharyngienne-ascendante"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Lésion du nerf glossopharyngien : le déficit moteur est discret ; dominent la perte de la sensibilité du pharynx et l'abolition du réflexe nauséeux du côté atteint",
+   "clinique": "Le nerf glossopharyngien longe son bord latéral puis le croise pour gagner la langue : le muscle sert de fil conducteur vers le nerf",
+   "memo": "Le seul muscle du nerf glossopharyngien, et le seul muscle du pharynx à échapper au nerf vague",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pharynx",
+    "teachme-pharynx",
+    "teachme-nerf-vague"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "elevateur-de-l-angle-de-la-bouche",
+   "resume": "L'ancien muscle canin : caché sous l'élévateur de la lèvre supérieure, il hisse le coin de la bouche.",
+   "origine": [
+    {
+     "texte": "Fosse canine du maxillaire, juste au-dessous du foramen infra-orbitaire",
+     "os": [
+      "maxillaire"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Commissure des lèvres (modiolus), où il se mêle au grand zygomatique, à l'abaisseur de l'angle de la bouche et à l'orbiculaire de la bouche",
+     "os": []
+    }
+   ],
+   "action": "Élève la commissure des lèvres et creuse le sillon nasolabial : le sourire",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "hisse le coin de la bouche : le sourire"
+    }
+   ],
+   "synergistes": [
+    "grand-zygomatique",
+    "petit-zygomatique",
+    "releveur-levre-superieure"
+   ],
+   "antagonistes": [
+    "abaisseur-angle-bouche"
+   ],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameaux zygomatiques et buccaux du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère labiale supérieure (artère faciale) et artère infra-orbitaire (artère maxillaire)",
+    "arteres": [
+     "artere-labiale-superieure",
+     "artere-faciale",
+     "artere-infra-orbitaire"
+    ]
+   },
+   "palpation": null,
+   "test": "Faire sourire en découvrant les canines : les deux commissures doivent monter ensemble",
+   "atteinte": "Paralysie faciale : la commissure tombe du côté atteint et ne monte plus au sourire",
+   "clinique": "Muscle profond de la mimique, comme le buccinateur et le mentonnier : le nerf facial l'aborde par sa face superficielle, alors qu'il gagne les autres par leur face profonde",
+   "memo": "Canin par son origine, la fosse canine : il soulève le coin de la bouche au-dessus de la canine",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "statpearls-muscles-face"
+   ],
+   "divergences": "Gray (1918) le nomme caninus et lui fait aussi porter la commissure en dedans, avec l'abaisseur de l'angle de la bouche"
+  },
+  {
+   "id": "elevateur-de-la-paupiere-superieure",
+   "resume": "Le muscle qui ouvre l'œil : du fond de l'orbite, il s'étale en éventail dans la paupière supérieure.",
+   "origine": [
+    {
+     "texte": "Face inférieure de la petite aile du sphénoïde, au-dessus et en avant du canal optique",
+     "os": [
+      "sphenoide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Peau de la paupière supérieure, à travers l'orbiculaire de l'œil (lame superficielle de son aponévrose)",
+     "os": []
+    },
+    {
+     "texte": "Tarse supérieur : face antérieure et bord supérieur",
+     "os": [
+      "tarse-superieur"
+     ]
+    },
+    {
+     "texte": "Fornix supérieur de la conjonctive (lame profonde)",
+     "os": []
+    }
+   ],
+   "action": "Relève la paupière supérieure et maintient l'œil ouvert",
+   "actions": [
+    {
+     "articulation": "paupiere",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "ouvre l'œil"
+    }
+   ],
+   "synergistes": [
+    "droit-superieur-de-l-oeil",
+    "muscle-frontal"
+   ],
+   "antagonistes": [
+    "orbiculaire-oeil"
+   ],
+   "innervation": {
+    "nerf": "nerf-oculomoteur-iii",
+    "texte": "Nerf oculomoteur (III), branche supérieure ; ses fibres lisses (muscle tarsal supérieur) dépendent du sympathique",
+    "racines": [
+     "III"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère ophtalmique, par ses rameaux musculaires et sa branche supra-orbitaire",
+    "arteres": [
+     "artere-ophtalmique",
+     "artere-supra-orbitaire"
+    ]
+   },
+   "palpation": null,
+   "test": "Faire regarder vers le bas puis vers le haut : la paupière supérieure doit suivre le regard et dégager la pupille",
+   "atteinte": "Paralysie du III : la paupière tombe (ptosis) et couvre l'œil. Dans le syndrome de Claude Bernard-Horner, seules les fibres lisses sont paralysées : le ptosis est partiel, avec une pupille serrée",
+   "clinique": "L'épaississement de sa gaine, le ligament transverse de Whitnall, limite sa course ; une expansion l'unit au droit supérieur, si bien que la paupière monte avec le regard",
+   "memo": "Paupière qui tombe : pensez au III ou au sympathique. Œil qui ne se ferme plus : pensez au VII",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachme-oeil",
+    "kenhub-elevateur-paupiere",
+    "eyewiki-muscles-oculomoteurs",
+    "openstax-11-3"
+   ],
+   "divergences": "Terminaison : tarse seul pour TeachMeAnatomy, peau seule pour OpenStax, tarse et peau pour Kenhub ; Gray décrit trois lames (peau, tarse, conjonctive)"
+  },
+  {
+   "id": "elevateur-nasolabial",
+   "resume": "Petit muscle du flanc du nez, l'ancien releveur de la lèvre supérieure et de l'aile du nez : il retrousse la lèvre et dilate la narine.",
+   "origine": [
+    {
+     "texte": "Partie haute du processus frontal du maxillaire, près de l'angle interne de l'œil",
+     "os": [
+      "maxillaire"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Faisceau médial : grand cartilage alaire et peau de l'aile du nez",
+     "os": [
+      "grand-cartilage-alaire"
+     ]
+    },
+    {
+     "texte": "Faisceau latéral : partie latérale de la lèvre supérieure, avec l'élévateur de la lèvre supérieure et l'orbiculaire de la bouche",
+     "os": []
+    }
+   ],
+   "action": "Relève la lèvre supérieure et l'aile du nez, dilate la narine et creuse le haut du sillon nasolabial : le dégoût, le mépris",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "retrousse la lèvre supérieure et dilate la narine : le dégoût, le mépris"
+    }
+   ],
+   "synergistes": [
+    "releveur-levre-superieure",
+    "petit-zygomatique",
+    "nasal"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameaux zygomatiques et buccaux du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère faciale et artère infra-orbitaire, branche de l'artère maxillaire",
+    "arteres": [
+     "artere-faciale",
+     "artere-infra-orbitaire"
+    ]
+   },
+   "palpation": "Le long du flanc du nez, de l'angle interne de l'œil à l'aile du nez, quand le sujet fronce le nez",
+   "test": "Demander de froncer le nez en retroussant la lèvre supérieure",
+   "atteinte": "Paralysie faciale : la narine ne se dilate plus et la lèvre supérieure ne se retrousse plus du côté atteint ; le sillon nasolabial s'efface",
+   "clinique": null,
+   "memo": "Son ancien nom dit tout : releveur de la lèvre supérieure et de l'aile du nez. Un faisceau pour la narine, un faisceau pour la lèvre",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mimique",
+    "wikipedia-fr-muscles"
+   ],
+   "divergences": "Gray (1918) en fait le chef angulaire du « carré de la lèvre supérieure » et rattache son innervation aux rameaux buccaux ; Kenhub cite les rameaux zygomatiques et buccaux"
+  },
+  {
+   "id": "epineux-de-la-tete",
+   "resume": "Faisceau inconstant de l'érecteur du rachis, à la nuque : il monte des dernières vertèbres cervicales à l'occipital, confondu avec le semi-épineux de la tête.",
+   "origine": [
+    {
+     "texte": "Processus épineux de C7 et de T1",
+     "os": [
+      "c7",
+      "vertebre-t1"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Os occipital, près de la ligne médiane, entre les lignes nucales supérieure et inférieure, avec le semi-épineux de la tête",
+     "os": [
+      "occipital"
+     ]
+    }
+   ],
+   "action": "Étend la tête et le cou quand les deux côtés se contractent ; d'un seul côté, incline la tête de ce côté",
+   "actions": [
+    {
+     "articulation": "tete",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "faible : il renforce le semi-épineux de la tête"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "extension",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "tete",
+     "mouvement": "inclinaison",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "splenius-tete",
+    "longissimus-de-la-tete",
+    "grand-droit-posterieur-de-la-tete"
+   ],
+   "antagonistes": [
+    "long-de-la-tete",
+    "droit-anterieur-de-la-tete",
+    "sterno-cleido-mastoidien"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux dorsaux des nerfs spinaux cervicaux ; pour ce faisceau, on retient ceux du semi-épineux de la tête : nerf grand occipital (C2) et troisième nerf cervical",
+    "racines": [
+     "C2",
+     "C3"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux musculaires des artères vertébrale et cervicale profonde ; branches descendantes de l'artère occipitale",
+    "arteres": [
+     "vertebrale",
+     "artere-cervicale-profonde",
+     "artere-occipitale"
+    ]
+   },
+   "palpation": null,
+   "test": "Extension de la tête contre résistance : il est testé avec l'ensemble des extenseurs de la nuque",
+   "atteinte": "Jamais atteint isolément ; son absence, fréquente, est sans conséquence : le semi-épineux de la tête assure l'essentiel de l'extension",
+   "clinique": null,
+   "memo": "L'épineux a trois étages, thorax, cou et tête : celui de la tête est le plus haut et le plus inconstant",
+   "variantes": "Souvent absent ou réduit à quelques fibres ; en général inséparable du semi-épineux de la tête, dont il forme la partie médiale (ancien biventer cervicis)",
+   "sources": [
+    "gray1918",
+    "kenhub-epineux",
+    "kenhub-semi-epineux-tete"
+   ],
+   "divergences": "Gray ne lui donne ni attaches ni nerf propres et le décrit comme la partie médiale du semi-épineux de la tête ; Kenhub lui attribue C7-T1 et l'occipital. Racines non précisées : celles du semi-épineux sont retenues"
+  },
+  {
+   "id": "constricteur-superieur-du-pharynx",
+   "resume": "La lame musculaire haute du pharynx : mince et quadrilatère, elle prolonge le buccinateur vers l'arrière et resserre le pharynx derrière la bouche.",
+   "origine": [
+    {
+     "texte": "Hamulus et tiers inférieur du bord postérieur de la lame médiale du processus ptérygoïde",
+     "os": [
+      "sphenoide"
+     ]
+    },
+    {
+     "texte": "Bord postérieur du raphé ptérygomandibulaire, qu'il partage avec le buccinateur",
+     "os": []
+    },
+    {
+     "texte": "Extrémité postérieure de la ligne mylohyoïdienne et processus alvéolaire voisin de la mandibule",
+     "os": [
+      "mandibule"
+     ]
+    },
+    {
+     "texte": "Quelques fibres venues du bord de la langue",
+     "os": []
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Raphé pharyngien, sur la ligne médiane postérieure",
+     "os": []
+    },
+    {
+     "texte": "Tubercule pharyngien de la partie basilaire de l'occipital, par une lame aponévrotique",
+     "os": [
+      "occipital"
+     ]
+    }
+   ],
+   "action": "Resserre la partie haute du pharynx et amorce l'onde de contraction qui pousse le bol alimentaire vers l'œsophage",
+   "actions": [
+    {
+     "articulation": "pharynx",
+     "mouvement": "compression",
+     "role": "principal",
+     "precision": "rétrécit le pharynx derrière la bouche"
+    },
+    {
+     "articulation": "pharynx",
+     "mouvement": "deglutition",
+     "role": "principal",
+     "precision": "premier des trois constricteurs à se contracter, de haut en bas"
+    }
+   ],
+   "synergistes": [
+    "constricteur-moyen-du-pharynx",
+    "constricteur-inferieur-du-pharynx"
+   ],
+   "antagonistes": [
+    "stylopharyngien",
+    "palatopharyngien"
+   ],
+   "innervation": {
+    "nerf": "nerf-vague-x",
+    "texte": "Plexus pharyngien : fibres motrices du nerf vague (X)",
+    "racines": [
+     "X"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère pharyngienne ascendante ; rameau tonsillaire et artère palatine ascendante, branches de l'artère faciale",
+    "arteres": [
+     "artere-pharyngienne-ascendante",
+     "artere-faciale"
+    ]
+   },
+   "palpation": null,
+   "test": "Faire dire « ah » et déclencher le réflexe nauséeux : la paroi postérieure du pharynx doit se contracter de façon symétrique",
+   "atteinte": "Paralysie d'un côté (lésion du nerf vague ou du plexus pharyngien) : à la phonation, la paroi postérieure du pharynx est tirée vers le côté sain, comme un rideau (signe du rideau) ; dysphagie et réflexe nauséeux aboli",
+   "clinique": "Entre son bord supérieur et la base du crâne, un intervalle fermé par l'aponévrose du pharynx laisse passer la trompe auditive et le muscle élévateur du voile du palais",
+   "memo": "Il continue le buccinateur vers l'arrière : même raphé ptérygomandibulaire, la joue devant, le pharynx derrière",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pharynx",
+    "teachme-pharynx",
+    "teachme-nerf-vague"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "droit-anterieur-de-la-tete",
+   "resume": "Tout petit muscle tendu de l'atlas à la base du crâne, juste devant l'articulation : il fléchit la tête et la stabilise.",
+   "origine": [
+    {
+     "texte": "Face antérieure de la masse latérale de l'atlas et racine de son processus transverse",
+     "os": [
+      "atlas"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face inférieure de la partie basilaire de l'occipital, juste en avant du foramen magnum",
+     "os": [
+      "occipital"
+     ]
+    }
+   ],
+   "action": "Fléchit la tête sur l'atlas et stabilise l'articulation atlanto-occipitale",
+   "actions": [
+    {
+     "articulation": "tete",
+     "mouvement": "flexion",
+     "role": "principal",
+     "precision": "à l'articulation atlanto-occipitale"
+    },
+    {
+     "articulation": "tete",
+     "mouvement": "stabilisation",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "long-de-la-tete",
+    "droit-lateral-de-la-tete"
+   ],
+   "antagonistes": [
+    "petit-droit-posterieur-de-la-tete",
+    "grand-droit-posterieur-de-la-tete",
+    "oblique-superieur-de-la-tete"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux ventraux des nerfs spinaux C1 et C2, par l'anse qui les unit",
+    "racines": [
+     "C1",
+     "C2"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère pharyngienne ascendante",
+    "arteres": [
+     "artere-pharyngienne-ascendante"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Jamais lésé isolément ; étiré dans un coup de fouet cervical, il participe aux douleurs et à la raideur du haut du cou",
+   "clinique": null,
+   "memo": "Les muscles droits de la tête encadrent l'articulation du crâne et de l'atlas : antérieur devant, latéral sur le côté, postérieurs derrière",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-prevertebraux",
+    "teachme-prevertebraux",
+    "statpearls-prevertebraux"
+   ],
+   "divergences": "Racines : C1 et C2 pour Gray, Kenhub et TeachMeAnatomy ; C1 seul pour StatPearls, qui le termine sur le processus jugulaire, comme le droit latéral"
+  },
+  {
+   "id": "droit-lateral-de-la-tete",
+   "resume": "Court muscle vertical tendu du processus transverse de l'atlas à l'occipital : il incline la tête de son côté.",
+   "origine": [
+    {
+     "texte": "Face supérieure du processus transverse de l'atlas",
+     "os": [
+      "atlas"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face inférieure du processus jugulaire de l'os occipital",
+     "os": [
+      "occipital"
+     ]
+    }
+   ],
+   "action": "Incline la tête de son côté sur l'atlas et stabilise l'articulation atlanto-occipitale",
+   "actions": [
+    {
+     "articulation": "tete",
+     "mouvement": "inclinaison",
+     "role": "principal",
+     "precision": "à l'articulation atlanto-occipitale"
+    },
+    {
+     "articulation": "tete",
+     "mouvement": "stabilisation",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "oblique-superieur-de-la-tete",
+    "sterno-cleido-mastoidien",
+    "splenius-tete"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux ventraux des nerfs spinaux C1 et C2",
+    "racines": [
+     "C1",
+     "C2"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches des artères vertébrale, occipitale et pharyngienne ascendante",
+    "arteres": [
+     "vertebrale",
+     "artere-occipitale",
+     "artere-pharyngienne-ascendante"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Jamais lésé isolément ; son déficit serait masqué par les autres muscles qui inclinent la tête",
+   "clinique": "Repère du chirurgien de la base du crâne : au contact de la veine jugulaire interne et de l'artère vertébrale, il guide l'abord du foramen jugulaire",
+   "memo": "Latéral comme l'inclinaison latérale : de l'aile de l'atlas au crâne, il penche la tête sur le côté",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-prevertebraux",
+    "teachme-prevertebraux",
+    "statpearls-prevertebraux"
+   ],
+   "divergences": "Racines : C1 et C2 pour TeachMeAnatomy et le tableau de Kenhub ; C1 seul pour StatPearls, le texte de Kenhub et le tableau du plexus cervical de Gray"
+  },
+  {
+   "id": "droit-superieur-de-l-oeil",
+   "resume": "Le muscle droit du toit de l'orbite, sous l'élévateur de la paupière supérieure : il élève le regard.",
+   "origine": [
+    {
+     "texte": "Anneau tendineux commun, par sa partie supérieure, au sommet de l'orbite",
+     "os": [
+      "anneau-tendineux-commun"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Sclère, face supérieure du globe, à environ 7,7 mm du limbe : la plus reculée des insertions des quatre droits",
+     "os": []
+    }
+   ],
+   "action": "Élève le regard ; accessoirement, porte l'œil en dedans et le fait tourner sur son axe vers le dedans (intorsion)",
+   "actions": [
+    {
+     "articulation": "oeil",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "le plus efficace quand l'œil est tourné en dehors"
+    },
+    {
+     "articulation": "oeil",
+     "mouvement": "adduction",
+     "role": "accessoire"
+    },
+    {
+     "articulation": "oeil",
+     "mouvement": "rotation-mediale",
+     "role": "accessoire",
+     "precision": "intorsion"
+    }
+   ],
+   "synergistes": [
+    "oblique-inferieur-de-l-oeil",
+    "elevateur-de-la-paupiere-superieure"
+   ],
+   "antagonistes": [
+    "droit-inferieur-de-l-oeil",
+    "oblique-superieur-de-l-oeil"
+   ],
+   "innervation": {
+    "nerf": "nerf-oculomoteur-iii",
+    "texte": "Nerf oculomoteur (III), branche supérieure",
+    "racines": [
+     "III"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branche musculaire latérale de l'artère ophtalmique ; artère supra-orbitaire",
+    "arteres": [
+     "artere-ophtalmique",
+     "artere-supra-orbitaire"
+    ]
+   },
+   "palpation": null,
+   "test": "Faire suivre un doigt du regard, tête immobile : œil porté en dehors, vers la tempe, puis vers le haut",
+   "atteinte": "Paralysie du III : l'œil ne monte plus et reste dévié en bas et en dehors ; l'élévateur de la paupière, innervé par la même branche, est paralysé en même temps (ptosis)",
+   "clinique": "Une expansion de sa gaine le relie à l'élévateur de la paupière supérieure : les deux muscles travaillent ensemble et la paupière monte avec le regard",
+   "memo": "Les droits font ce que dit leur nom : le supérieur élève, l'inférieur abaisse. Les obliques font le contraire du leur",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "teachme-oeil",
+    "kenhub-droit-superieur",
+    "eyewiki-muscles-oculomoteurs",
+    "openstax-11-3"
+   ],
+   "divergences": "Ordre des actions accessoires : adduction puis intorsion pour TeachMeAnatomy, intorsion puis adduction pour EyeWiki. Gray situe l'insertion des droits à 6 mm environ de la cornée"
+  },
+  {
+   "id": "grand-droit-posterieur-de-la-tete",
+   "resume": "Muscle triangulaire de la nuque profonde, tendu de l'axis à l'occipital : il étend la tête et la tourne de son côté.",
+   "origine": [
+    {
+     "texte": "Processus épineux de l'axis, par un tendon pointu",
+     "os": [
+      "axis"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Partie latérale de la ligne nucale inférieure de l'occipital et surface osseuse située juste au-dessous",
+     "os": [
+      "occipital"
+     ]
+    }
+   ],
+   "action": "Étend la tête ; d'un seul côté, par son obliquité, fait tourner le crâne et l'atlas autour de la dent de l'axis : la face regarde de son côté",
+   "actions": [
+    {
+     "articulation": "tete",
+     "mouvement": "extension",
+     "role": "principal"
+    },
+    {
+     "articulation": "tete",
+     "mouvement": "rotation-homolaterale",
+     "role": "principal",
+     "precision": "contraction d'un seul côté"
+    }
+   ],
+   "synergistes": [
+    "petit-droit-posterieur-de-la-tete",
+    "oblique-inferieur-de-la-tete",
+    "oblique-superieur-de-la-tete",
+    "splenius-tete"
+   ],
+   "antagonistes": [
+    "long-de-la-tete",
+    "droit-anterieur-de-la-tete"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Nerf sous-occipital (rameau dorsal du premier nerf cervical)",
+    "racines": [
+     "C1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère vertébrale et branche descendante de l'artère occipitale",
+    "arteres": [
+     "vertebrale",
+     "artere-occipitale"
+    ]
+   },
+   "palpation": "Sous l'occiput, à un travers de doigt de la ligne médiane, à travers le trapèze et le semi-épineux de la tête : perçu en masse avec ses voisins",
+   "test": "Extension et rotation de la tête contre résistance : il est testé avec les autres muscles de la nuque",
+   "atteinte": "Contracture ou points douloureux, favorisés par les mauvaises postures : douleur sous l'occiput irradiant vers la tempe et l'arrière de l'œil, céphalées de tension",
+   "clinique": "Il forme le bord supéro-médial du triangle sous-occipital, qui contient l'artère vertébrale et le nerf sous-occipital",
+   "memo": "Grand droit : de l'axis (C2). Petit droit : de l'atlas (C1). Le grand, oblique, tourne aussi la tête ; le petit ne fait que l'étendre",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-sous-occipitaux",
+    "teachme-sous-occipitaux"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "genioglosse",
+   "resume": "Le gros muscle en éventail de la langue : parti du menton, il rayonne dans toute la langue, la tire en avant et l'abaisse.",
+   "origine": [
+    {
+     "texte": "Épine mentonnière supérieure, à la face postérieure de la symphyse de la mandibule, par un court tendon",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face profonde de la langue, de la racine à la pointe (fibres moyennes et supérieures)",
+     "os": []
+    },
+    {
+     "texte": "Corps de l'os hyoïde, par une mince aponévrose (fibres inférieures)",
+     "os": [
+      "hyoide"
+     ]
+    }
+   ],
+   "action": "Tire la langue hors de la bouche et l'abaisse en creusant son dos en gouttière ; d'un seul côté, porte la pointe vers le côté opposé",
+   "actions": [
+    {
+     "articulation": "langue",
+     "mouvement": "protraction",
+     "role": "principal",
+     "precision": "fibres postérieures : tirent la racine en avant et font sortir la pointe"
+    },
+    {
+     "articulation": "langue",
+     "mouvement": "abaissement",
+     "role": "principal",
+     "precision": "abaisse le centre de la langue et creuse son dos"
+    },
+    {
+     "articulation": "langue",
+     "mouvement": "retraction",
+     "role": "accessoire",
+     "precision": "fibres antérieures : ramènent la pointe en arrière et en bas"
+    }
+   ],
+   "synergistes": [
+    "hyoglosse"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-hypoglosse-xii",
+    "texte": "Nerf hypoglosse (XII)",
+    "racines": [
+     "XII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère sublinguale, branche de l'artère linguale ; rameaux de l'artère faciale",
+    "arteres": []
+   },
+   "palpation": null,
+   "test": "Faire tirer la langue droit devant, puis la faire pousser contre la joue pendant qu'on résiste du dehors",
+   "atteinte": "Paralysie du XII : la langue tirée dévie vers le côté paralysé, poussée par le muscle sain ; avec le temps, la moitié atteinte fond et se couvre de fasciculations",
+   "clinique": "Il maintient ouvertes les voies aériennes derrière la langue. Son relâchement pendant le sommeil est en cause dans l'apnée obstructive ; chez le patient inconscient, on avance la mandibule pour empêcher la langue de tomber en arrière",
+   "memo": "Génio- vient du grec « menton » : parti du menton, il tire la langue. Et la langue tirée désigne le côté paralysé",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-genioglosse",
+    "teachme-langue",
+    "teachme-nerf-hypoglosse",
+    "wikipedia-genioglosse",
+    "openstax-11-3"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "geniohyoidien",
+   "resume": "Petit muscle étroit du plancher de la bouche, posé sur le mylohyoïdien : il tire l'os hyoïde en haut et en avant.",
+   "origine": [
+    {
+     "texte": "Épine mentonnière inférieure, à la face postérieure de la symphyse de la mandibule",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face antérieure du corps de l'os hyoïde",
+     "os": [
+      "hyoide"
+     ]
+    }
+   ],
+   "action": "Tire l'os hyoïde en haut et en avant au début de la déglutition ; os hyoïde fixé, aide à abaisser la mandibule",
+   "actions": [
+    {
+     "articulation": "os-hyoide",
+     "mouvement": "elevation",
+     "role": "principal"
+    },
+    {
+     "articulation": "os-hyoide",
+     "mouvement": "protraction",
+     "role": "principal",
+     "precision": "porte l'os hyoïde et la base de la langue en avant"
+    },
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "ouverture",
+     "role": "accessoire",
+     "precision": "quand l'os hyoïde est fixé par les muscles infra-hyoïdiens"
+    }
+   ],
+   "synergistes": [
+    "mylohyoidien",
+    "digastrique"
+   ],
+   "antagonistes": [
+    "stylohyoidien",
+    "sterno-hyoidien"
+   ],
+   "innervation": {
+    "nerf": "nerf-hypoglosse-xii",
+    "texte": "Fibres du premier nerf cervical (C1), qui empruntent le trajet du nerf hypoglosse sans se mêler à lui",
+    "racines": [
+     "C1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branches de l'artère linguale surtout ; l'irrigation n'est donnée que pour l'ensemble des muscles supra-hyoïdiens (artères faciale, occipitale et linguale)",
+    "arteres": []
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Paralysé quand le nerf hypoglosse est lésé après avoir reçu les fibres de C1 : l'élévation de l'os hyoïde faiblit un peu, sans signe propre car les autres muscles supra-hyoïdiens compensent",
+   "clinique": "Trois étages sous la langue, de bas en haut : le mylohyoïdien, le géniohyoïdien, puis le génioglosse, né juste au-dessus de lui sur la même symphyse",
+   "memo": "Du menton (génio-) à l'os hyoïde. Son nerf est un passager clandestin : des fibres de C1 qui voyagent avec le nerf hypoglosse",
+   "variantes": "Peut fusionner avec le muscle du côté opposé ou se dédoubler",
+   "sources": [
+    "gray1918",
+    "kenhub-suprahyoidiens",
+    "teachme-suprahyoidiens",
+    "teachme-nerf-hypoglosse"
+   ],
+   "divergences": "Gray (1918) le dit innervé par le nerf hypoglosse, tout en notant que ce rameau vient probablement de l'anse entre C1 et C2 ; les références actuelles retiennent C1"
+  },
+  {
+   "id": "hyoglosse",
+   "resume": "Lame carrée sur le côté de la langue, montée de l'os hyoïde : elle abaisse la langue et la ramène en arrière.",
+   "origine": [
+    {
+     "texte": "Corps et grande corne de l'os hyoïde, sur toute sa longueur",
+     "os": [
+      "hyoide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord latéral de la langue, où ses fibres presque verticales s'engagent entre le styloglosse et le muscle longitudinal inférieur",
+     "os": []
+    }
+   ],
+   "action": "Abaisse la langue, tire ses bords vers le bas et la ramène en arrière dans la bouche",
+   "actions": [
+    {
+     "articulation": "langue",
+     "mouvement": "abaissement",
+     "role": "principal",
+     "precision": "abaisse la langue et tire ses bords vers le bas"
+    },
+    {
+     "articulation": "langue",
+     "mouvement": "retraction",
+     "role": "principal"
+    }
+   ],
+   "synergistes": [
+    "genioglosse"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-hypoglosse-xii",
+    "texte": "Nerf hypoglosse (XII)",
+    "racines": [
+     "XII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère linguale surtout ; rameaux de l'artère faciale",
+    "arteres": []
+   },
+   "palpation": null,
+   "test": "Faire rentrer la langue au fond de la bouche et l'aplatir : il est testé avec les autres muscles de la langue",
+   "atteinte": "Paralysie du XII : il est touché avec les autres muscles de la langue ; la moitié atteinte fond, s'abaisse et recule mal",
+   "clinique": "Sur sa face latérale passent, de haut en bas, le nerf lingual, le conduit submandibulaire et le nerf hypoglosse ; l'artère linguale, elle, chemine sous sa face profonde",
+   "memo": "De l'os hyoïde à la langue (glossa) : il tire la langue vers son os, en bas et en arrière",
+   "variantes": "Un petit faisceau né de la petite corne de l'os hyoïde, le chondroglosse, est parfois décrit à part",
+   "sources": [
+    "gray1918",
+    "kenhub-hyoglosse",
+    "teachme-langue",
+    "wikipedia-hyoglosse",
+    "teachme-nerf-hypoglosse",
+    "openstax-11-3"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "oblique-inferieur-de-la-tete",
+   "resume": "Le plus gros des deux obliques de la nuque, tendu de l'axis à l'atlas : c'est le rotateur de la tête.",
+   "origine": [
+    {
+     "texte": "Sommet du processus épineux de l'axis",
+     "os": [
+      "axis"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Partie inférieure et postérieure du processus transverse de l'atlas",
+     "os": [
+      "atlas"
+     ]
+    }
+   ],
+   "action": "Fait tourner l'atlas, et le crâne avec lui, autour de la dent de l'axis : la face regarde du côté du muscle",
+   "actions": [
+    {
+     "articulation": "tete",
+     "mouvement": "rotation-homolaterale",
+     "role": "principal",
+     "precision": "rotation de l'atlas sur l'axis"
+    }
+   ],
+   "synergistes": [
+    "grand-droit-posterieur-de-la-tete",
+    "splenius-tete"
+   ],
+   "antagonistes": [
+    "sterno-cleido-mastoidien"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Nerf sous-occipital (rameau dorsal du premier nerf cervical)",
+    "racines": [
+     "C1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère vertébrale et branche descendante de l'artère occipitale",
+    "arteres": [
+     "vertebrale",
+     "artere-occipitale"
+    ]
+   },
+   "palpation": "En profondeur, entre le processus épineux de l'axis et le processus transverse de l'atlas, à travers les muscles superficiels de la nuque",
+   "test": "Rotation de la tête contre résistance : il est testé avec les autres rotateurs",
+   "atteinte": "Contracture ou points douloureux : rotation de la tête limitée et douloureuse, douleur sous l'occiput, céphalées de tension",
+   "clinique": "Il forme le bord inférieur du triangle sous-occipital. Le rameau dorsal de C2 émerge sous son bord inférieur, et le nerf grand occipital monte entre lui et le semi-épineux de la tête",
+   "memo": "Le seul muscle sous-occipital qui n'atteint pas le crâne : d'axis à atlas, il fait pivoter la tête pour dire « non »",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-sous-occipitaux",
+    "teachme-sous-occipitaux"
+   ],
+   "divergences": "TeachMeAnatomy lui prête aussi une extension de la tête ; Gray et Kenhub, la seule rotation. Gray ajoute à son innervation un filet du rameau dorsal de C2"
+  },
+  {
+   "id": "palatopharyngien",
+   "resume": "Le muscle du pilier postérieur du voile : du palais au pharynx, il passe derrière la tonsille palatine et soulève le pharynx sur la bouchée.",
+   "origine": [
+    {
+     "texte": "Aponévrose palatine et bord postérieur du palais osseux, par deux faisceaux que séparent l'élévateur du voile et le muscle uvulaire",
+     "os": [
+      "os-palatin"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord postérieur du cartilage thyroïde, avec le stylopharyngien",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    },
+    {
+     "texte": "Paroi latérale et postérieure du pharynx, où certaines fibres croisent la ligne médiane",
+     "os": []
+    }
+   ],
+   "action": "Tire le pharynx et le larynx vers le haut pendant la déglutition ; les deux muscles se rapprochent et, avec la luette, barrent au bol alimentaire la route du nez",
+   "actions": [
+    {
+     "articulation": "pharynx",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "hisse le pharynx par-dessus le bol alimentaire et le raccourcit"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "elevation",
+     "role": "accessoire",
+     "precision": "par son attache au cartilage thyroïde"
+    },
+    {
+     "articulation": "voile-du-palais",
+     "mouvement": "fermeture",
+     "role": "accessoire",
+     "precision": "les deux arcs palatopharyngiens se rapprochent et, avec la luette, ferment l'accès au nasopharynx"
+    },
+    {
+     "articulation": "pharynx",
+     "mouvement": "deglutition",
+     "role": "accessoire"
+    }
+   ],
+   "synergistes": [
+    "stylopharyngien"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-vague-x",
+    "texte": "Plexus pharyngien : fibres motrices du nerf vague (X)",
+    "racines": [
+     "X"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère palatine ascendante (artère faciale), artère pharyngienne ascendante et artère palatine descendante (artère maxillaire)",
+    "arteres": [
+     "artere-faciale",
+     "artere-pharyngienne-ascendante",
+     "artere-palatine-descendante"
+    ]
+   },
+   "palpation": "Visible bouche grande ouverte : c'est le relief de l'arc palatopharyngien, le pilier postérieur, en arrière de la tonsille palatine",
+   "test": "Faire dire « ah » : les deux piliers postérieurs doivent se rapprocher et le voile monter de façon symétrique",
+   "atteinte": "Lésion du nerf vague : du côté atteint, l'arc du voile s'affaisse et la luette est déviée vers le côté sain ; déglutition difficile et réflexe nauséeux aboli",
+   "clinique": "La tonsille palatine est logée entre deux arcs musculaires : le palatoglosse en avant, le palatopharyngien en arrière",
+   "memo": "Du palais au pharynx par le pilier postérieur ; le pilier antérieur, lui, appartient au palatoglosse",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-pharynx",
+    "teachme-pharynx",
+    "teachme-nerf-vague"
+   ],
+   "divergences": "Origine : voile du palais pour Gray, palais osseux pour TeachMeAnatomy, aponévrose palatine et bord postérieur du palais dur pour Kenhub. Gray (1918) attribuait son innervation au nerf accessoire par le plexus pharyngien"
+  },
+  {
+   "id": "petit-droit-posterieur-de-la-tete",
+   "resume": "Le plus petit et le plus médial des muscles sous-occipitaux, tendu de l'atlas à l'occipital : un court extenseur de la tête.",
+   "origine": [
+    {
+     "texte": "Tubercule postérieur de l'arc postérieur de l'atlas",
+     "os": [
+      "atlas"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Partie médiale de la ligne nucale inférieure de l'occipital et surface comprise entre cette ligne et le foramen magnum",
+     "os": [
+      "occipital"
+     ]
+    }
+   ],
+   "action": "Étend la tête sur l'atlas",
+   "actions": [
+    {
+     "articulation": "tete",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "à l'articulation atlanto-occipitale"
+    }
+   ],
+   "synergistes": [
+    "grand-droit-posterieur-de-la-tete",
+    "oblique-superieur-de-la-tete"
+   ],
+   "antagonistes": [
+    "droit-anterieur-de-la-tete",
+    "long-de-la-tete"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Nerf sous-occipital (rameau dorsal du premier nerf cervical)",
+    "racines": [
+     "C1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère vertébrale et branche descendante de l'artère occipitale",
+    "arteres": [
+     "vertebrale",
+     "artere-occipitale"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Sa contracture participe aux douleurs sous-occipitales ; par son lien avec la dure-mère, il est mis en cause dans certaines céphalées d'origine cervicale",
+   "clinique": "Un pont de tissu conjonctif le relie à la dure-mère, au niveau de la membrane atlanto-occipitale postérieure",
+   "memo": "Petit droit : de l'atlas, qui n'a qu'un tubercule en guise de processus épineux. Trop médial pour tourner la tête, il ne fait que l'étendre",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-sous-occipitaux",
+    "teachme-sous-occipitaux"
+   ],
+   "divergences": "Kenhub lui prête aussi une rotation de la tête de son côté ; Gray et TeachMeAnatomy, la seule extension"
+  },
+  {
+   "id": "pterygoidien-medial",
+   "resume": "Le pendant profond du masséter : plaqué à la face interne de la branche de la mandibule, il la soulève et forme avec lui une sangle autour de l'angle.",
+   "origine": [
+    {
+     "texte": "Chef profond : face médiale de la lame latérale du processus ptérygoïde et processus pyramidal de l'os palatin",
+     "os": [
+      "sphenoide",
+      "os-palatin"
+     ]
+    },
+    {
+     "texte": "Chef superficiel : tubérosité du maxillaire et processus pyramidal de l'os palatin",
+     "os": [
+      "maxillaire",
+      "os-palatin"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Partie inférieure et postérieure de la face médiale de la branche et de l'angle de la mandibule, jusqu'à la hauteur du foramen mandibulaire",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "action": "Élève la mandibule et aide à l'avancer ; d'un seul côté, porte le menton vers le côté opposé pour broyer les aliments",
+   "actions": [
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "fermeture",
+     "role": "principal",
+     "precision": "élève la mandibule, avec le masséter et le temporal"
+    },
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "propulsion",
+     "role": "accessoire",
+     "precision": "aide le ptérygoïdien latéral"
+    },
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "diduction",
+     "role": "principal",
+     "precision": "avec le ptérygoïdien latéral du même côté : le menton part vers le côté opposé"
+    },
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "mastication",
+     "role": "principal",
+     "precision": "mouvements de broyage"
+    }
+   ],
+   "synergistes": [
+    "masseter",
+    "muscle-temporal",
+    "pterygoidien-lateral"
+   ],
+   "antagonistes": [
+    "digastrique",
+    "mylohyoidien",
+    "geniohyoidien"
+   ],
+   "innervation": {
+    "nerf": "nerf-trijumeau-v",
+    "texte": "Nerf du ptérygoïdien médial, branche du nerf mandibulaire (V3)",
+    "racines": [
+     "V3"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux ptérygoïdiens de l'artère maxillaire",
+    "arteres": [
+     "artere-maxillaire"
+    ]
+   },
+   "palpation": "Par la bouche, en arrière des dernières molaires, contre la face interne de la branche de la mandibule : geste de praticien entraîné",
+   "test": "Faire serrer les dents, puis avancer le menton et le déplacer de côté contre résistance",
+   "atteinte": "Lésion du nerf mandibulaire : fermeture de la bouche et mouvements latéraux affaiblis du côté atteint ; à l'ouverture, la mandibule dévie vers le côté paralysé",
+   "clinique": "Le nerf lingual et le nerf alvéolaire inférieur descendent entre lui et la branche de la mandibule : c'est dans cet espace qu'on infiltre l'anesthésique pour endormir les dents du bas",
+   "memo": "Masséter dehors, ptérygoïdien médial dedans : deux muscles jumeaux qui prennent l'angle de la mandibule en écharpe",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-mastication",
+    "teachme-mastication",
+    "physiopedia-mastication",
+    "teachme-nerf-mandibulaire",
+    "statpearls-muscles-face"
+   ],
+   "divergences": "Répartition des chefs : Kenhub réserve la tubérosité du maxillaire au chef superficiel, TeachMeAnatomy lui ajoute le processus pyramidal du palatin ; OpenStax cite une terminaison sur l'articulation, non retrouvée ailleurs"
+  }
+ ]
+}

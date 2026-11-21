@@ -1098,6 +1098,160 @@
   font-size: 0.86rem;
   color: var(--ec-sepia);
 }
+/* ---------- La fiche enrichie ---------- */
+.ec-visuel-cache {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.ec-fiche {
+  margin-top: 0.9rem;
+}
+.ec-fiche-resume {
+  margin: 0;
+  max-width: 34rem;
+  font-family: var(--ec-serif);
+  font-size: 1.18rem;
+  line-height: 1.35;
+}
+.ec-fiche .ec-cartel-lignes dd {
+  max-width: 36rem;
+  line-height: 1.45;
+}
+.ec-fiche-liste {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.3rem;
+}
+.ec-fiche-liste li {
+  position: relative;
+  padding-left: 0.9rem;
+}
+.ec-fiche-liste li::before {
+  content: "";
+  position: absolute;
+  left: 0.1rem;
+  top: 0.62em;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  background: var(--ec-laiton);
+  opacity: 0.7;
+}
+.ec-fiche-liste.est-ordonnee {
+  counter-reset: branche;
+}
+.ec-fiche-liste.est-ordonnee li {
+  counter-increment: branche;
+  padding-left: 1.5rem;
+}
+.ec-fiche-liste.est-ordonnee li::before {
+  content: counter(branche);
+  top: 0.08em;
+  left: 0;
+  width: auto;
+  height: auto;
+  background: none;
+  color: var(--ec-laiton);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  opacity: 1;
+}
+.ec-fiche-liste b {
+  font-weight: 500;
+  color: var(--ec-laiton-clair);
+}
+.ec-fiche-liste i {
+  color: var(--ec-pale);
+}
+.ec-fiche-puces,
+.ec-fiche-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.4rem;
+}
+.ec-fiche-puces .ec-puce {
+  padding: 0.2rem 0.55rem;
+  color: inherit;
+  font-size: 0.8rem;
+}
+.ec-fiche-puces .ec-puce:disabled,
+.ec-action:disabled,
+.ec-fiche .ec-lien:disabled {
+  cursor: default;
+}
+.ec-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.22rem 0.6rem;
+  border: 1px solid var(--ec-filet-fort);
+  border-radius: 0.3rem;
+  background: rgb(214 168 90 / 0.08);
+  color: var(--ec-ivoire);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.ec-action span:first-of-type {
+  color: var(--ec-laiton-clair);
+}
+.ec-action[data-role="accessoire"] {
+  border-style: dashed;
+  border-color: var(--ec-filet);
+  background: none;
+  color: var(--ec-sepia);
+}
+.ec-action:hover:not(:disabled) {
+  border-color: var(--ec-laiton);
+}
+.ec-action[aria-pressed="true"] {
+  border-color: var(--ec-laiton-clair);
+  background: rgb(214 168 90 / 0.22);
+}
+.ec-fiche-racines {
+  display: inline-flex;
+  gap: 0.2rem;
+  margin-left: 0.3rem;
+}
+.ec-fiche-racines b {
+  padding: 0.05rem 0.32rem;
+  border-radius: 0.2rem;
+  background: rgb(232 217 143 / 0.14);
+  color: #e8d98f;
+  font-size: 0.72rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.ec-fiche > .ec-memo {
+  margin-top: 0.9rem;
+}
+.ec-fiche-sources {
+  margin-top: 0.8rem;
+  color: var(--ec-pale);
+  font-size: 0.8rem;
+}
+.ec-fiche-sources summary {
+  cursor: pointer;
+}
+.ec-fiche-sources ul {
+  display: grid;
+  gap: 0.2rem;
+  margin: 0.4rem 0 0;
+  padding-left: 1.1rem;
+}
+.ec-fiche-sources a {
+  color: var(--ec-sepia);
+}
+.ec-fiche-sources p {
+  margin: 0.4rem 0 0;
+  color: var(--ec-sepia);
+}
 .ec-cartel-actions {
   display: flex;
   flex-wrap: wrap;

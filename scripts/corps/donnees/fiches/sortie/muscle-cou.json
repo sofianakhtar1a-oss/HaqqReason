@@ -1,0 +1,2790 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918) : texte intégral de l'Internet Archive (sections 5b et 5c lues aussi sur Bartleby.com)",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "openstax-11-3": {
+   "titre": "OpenStax, Anatomy and Physiology 2e, § 11.3 Axial Muscles of the Head, Neck, and Back",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"
+  },
+  "bha-dos": {
+   "titre": "O'Rahilly, Müller, Carpenter, Swenson, Basic Human Anatomy, chap. 40 (muscles du dos), Dartmouth",
+   "url": "https://humananatomy.host.dartmouth.edu/BHA/public_html/part_7/chapter_40.html"
+  },
+  "kenhub-scm": {
+   "titre": "Kenhub, Sternocleidomastoid muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle"
+  },
+  "kenhub-platysma": {
+   "titre": "Kenhub, Platysma",
+   "url": "https://www.kenhub.com/en/library/anatomy/platysma"
+  },
+  "kenhub-constricteur-inferieur": {
+   "titre": "Kenhub, Inferior pharyngeal constrictor",
+   "url": "https://www.kenhub.com/en/library/anatomy/inferior-pharyngeal-constrictor"
+  },
+  "kenhub-long-du-cou": {
+   "titre": "Kenhub, Longus colli muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/longus-colli-muscle"
+  },
+  "kenhub-scalenes": {
+   "titre": "Kenhub, Scalene muscles",
+   "url": "https://www.kenhub.com/en/library/anatomy/scalene-muscles"
+  },
+  "kenhub-splenius-tete": {
+   "titre": "Kenhub, Splenius capitis muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/splenius-capitis-muscle"
+  },
+  "kenhub-splenius-du-cou": {
+   "titre": "Kenhub, Splenius cervicis muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/splenius-cervicis-muscle"
+  },
+  "kenhub-thyrohyoidien": {
+   "titre": "Kenhub, Thyrohyoid muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/thyrohyoid-muscle"
+  },
+  "kenhub-elevateur-scapula": {
+   "titre": "Kenhub, Levator scapulae muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/levator-scapulae-muscle"
+  },
+  "kenhub-arytenoidien-oblique": {
+   "titre": "Kenhub, Oblique arytenoid muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/oblique-arytenoid-muscle"
+  },
+  "kenhub-arytenoidien-transverse": {
+   "titre": "Kenhub, Transverse arytenoid muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/transverse-arytenoid-muscle"
+  },
+  "kenhub-crico-arytenoidien-lateral": {
+   "titre": "Kenhub, Lateral cricoarytenoid muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/lateral-cricoarytenoid-muscle"
+  },
+  "kenhub-crico-arytenoidien-posterieur": {
+   "titre": "Kenhub, Posterior cricoarytenoid muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/posterior-cricoarytenoid-muscle"
+  },
+  "kenhub-cricothyroidien": {
+   "titre": "Kenhub, Cricothyroid muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/cricothyroid-muscle"
+  },
+  "kenhub-digastrique": {
+   "titre": "Kenhub, Digastric muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/digastric-muscle"
+  },
+  "kenhub-iliocostal": {
+   "titre": "Kenhub, Iliocostalis muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/iliocostalis-muscle"
+  },
+  "kenhub-interepineux": {
+   "titre": "Kenhub, Interspinales muscles",
+   "url": "https://www.kenhub.com/en/library/anatomy/interspinales-muscles"
+  },
+  "kenhub-longissimus": {
+   "titre": "Kenhub, Longissimus muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/longissimus-muscle"
+  },
+  "kenhub-multifides": {
+   "titre": "Kenhub, Multifidus muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/multifidus-muscle"
+  },
+  "kenhub-omo-hyoidien": {
+   "titre": "Kenhub, Omohyoid muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/omohyoid-muscle"
+  },
+  "kenhub-rotateurs": {
+   "titre": "Kenhub, Rotatores muscles",
+   "url": "https://www.kenhub.com/en/library/anatomy/rotatores-muscles"
+  },
+  "kenhub-semi-epineux-du-cou": {
+   "titre": "Kenhub, Semispinalis cervicis muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/semispinalis-cervicis-muscle"
+  },
+  "kenhub-sterno-hyoidien": {
+   "titre": "Kenhub, Sternohyoid muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/sternohyoid-muscle"
+  },
+  "kenhub-sterno-thyroidien": {
+   "titre": "Kenhub, Sternothyroid muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/sternothyroid-muscle"
+  },
+  "kenhub-thyro-arytenoidien": {
+   "titre": "Kenhub, Thyroarytenoid muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/thyroarytenoid-muscle"
+  },
+  "kenhub-epineux": {
+   "titre": "Kenhub, Spinalis muscle",
+   "url": "https://www.kenhub.com/en/library/anatomy/spinalis-muscle"
+  },
+  "kenhub-nerf-larynge-superieur": {
+   "titre": "Kenhub, Superior laryngeal nerve",
+   "url": "https://www.kenhub.com/en/library/anatomy/superior-laryngeal-nerve"
+  },
+  "kenhub-fr-cou": {
+   "titre": "Kenhub (en français), Muscles du cou",
+   "url": "https://www.kenhub.com/fr/library/anatomie/muscles-du-cou"
+  },
+  "kenhub-fr-dos": {
+   "titre": "Kenhub (en français), Muscles profonds du dos",
+   "url": "https://www.kenhub.com/fr/library/anatomie/muscles-profonds-du-dos"
+  },
+  "elsevier-scm": {
+   "titre": "Elsevier, Complete Anatomy : Sternocleidomastoid Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-neck/sternocleidomastoid-muscle-left/19084"
+  },
+  "elsevier-long-du-cou": {
+   "titre": "Elsevier, Complete Anatomy : Longus Colli Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-neck/longus-colli-muscle/22341"
+  },
+  "elsevier-scalene-anterieur": {
+   "titre": "Elsevier, Complete Anatomy : Scalenus Anterior Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-neck/scalenus-anterior-muscle/23141"
+  },
+  "elsevier-scalene-moyen": {
+   "titre": "Elsevier, Complete Anatomy : Scalenus Medius Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-neck/scalenus-medius-muscle/23432"
+  },
+  "elsevier-scalene-posterieur": {
+   "titre": "Elsevier, Complete Anatomy : Scalenus Posterior Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-neck/scalenus-posterior-muscle/22158"
+  },
+  "elsevier-digastrique": {
+   "titre": "Elsevier, Complete Anatomy : Digastric Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-neck/digastric-muscle-left/21762"
+  },
+  "elsevier-omo-hyoidien": {
+   "titre": "Elsevier, Complete Anatomy : Omohyoid Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-neck/omohyoid-muscle-left/21027"
+  },
+  "elsevier-sterno-hyoidien": {
+   "titre": "Elsevier, Complete Anatomy : Sternohyoid Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-neck/sternohyoid-muscle/17301"
+  },
+  "elsevier-sterno-thyroidien": {
+   "titre": "Elsevier, Complete Anatomy : Sternothyroid Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-neck/sternothyroid-muscle/20022"
+  },
+  "elsevier-thyrohyoidien": {
+   "titre": "Elsevier, Complete Anatomy : Thyrohyoid Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-neck/thyrohyoid-muscle/22497"
+  },
+  "elsevier-muscles-larynx": {
+   "titre": "Elsevier, Complete Anatomy : Laryngeal Muscles",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-neck/laryngeal-muscles/19951"
+  },
+  "elsevier-elevateur-scapula": {
+   "titre": "Elsevier, Complete Anatomy : Levator Scapulae",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-back/levator-scapulae/18540"
+  },
+  "elsevier-splenius-tete": {
+   "titre": "Elsevier, Complete Anatomy : Splenius Capitis Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-back/splenius-capitis-muscle/24194"
+  },
+  "elsevier-splenius-du-cou": {
+   "titre": "Elsevier, Complete Anatomy : Splenius Colli Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-back/splenius-colli-muscle/18089"
+  },
+  "elsevier-iliocostal-du-cou": {
+   "titre": "Elsevier, Complete Anatomy : Iliocostalis Colli Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-back/iliocostalis-colli-muscle/22796"
+  },
+  "elsevier-longissimus-tete": {
+   "titre": "Elsevier, Complete Anatomy : Longissimus Capitis Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-back/longissimus-capitis-muscle/16765"
+  },
+  "elsevier-longissimus-du-cou": {
+   "titre": "Elsevier, Complete Anatomy : Longissimus Colli Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-back/longissimus-colli-muscle/18595"
+  },
+  "elsevier-epineux-du-cou": {
+   "titre": "Elsevier, Complete Anatomy : Spinalis Colli Muscle",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-back/spinalis-colli-muscle/18031"
+  },
+  "elsevier-semi-epineux": {
+   "titre": "Elsevier, Complete Anatomy : Semispinalis Muscles",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-back/semispinalis-muscles-left/22982"
+  },
+  "elsevier-multifides": {
+   "titre": "Elsevier, Complete Anatomy : Multifidus Muscles",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-back/multifidus-muscles/18007"
+  },
+  "elsevier-rotateurs": {
+   "titre": "Elsevier, Complete Anatomy : Rotatores",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-back/rotatores-left/16970"
+  },
+  "elsevier-interepineux-du-cou": {
+   "titre": "Elsevier, Complete Anatomy : Interspinales Colli Muscles",
+   "url": "https://www.elsevier.com/resources/anatomy/muscular-system/muscles-of-back/interspinales-colli-muscles-right/21290"
+  },
+  "elsevier-rameaux-posterieurs-cervicaux": {
+   "titre": "Elsevier, Complete Anatomy : Posterior Rami of Cervical Nerves",
+   "url": "https://elsevier.com/resources/anatomy/nervous-system/peripheral-nervous-system/posterior-rami-of-cervical-nerves-left/23814"
+  },
+  "tma-scalenes": {
+   "titre": "TeachMeAnatomy, The Scalene Muscles",
+   "url": "https://teachmeanatomy.info/neck/muscles/scalene/"
+  },
+  "tma-infrahyoidiens": {
+   "titre": "TeachMeAnatomy, The Infrahyoid Muscles",
+   "url": "https://teachmeanatomy.info/neck/muscles/infrahyoid/"
+  },
+  "tma-muscles-larynx": {
+   "titre": "TeachMeAnatomy, Muscles of the Larynx",
+   "url": "https://teachmeanatomy.info/neck/viscera/larynx/muscles/"
+  },
+  "tma-pharynx": {
+   "titre": "TeachMeAnatomy, The Pharynx",
+   "url": "https://teachmeanatomy.info/neck/viscera/pharynx/"
+  },
+  "tma-dos-superficiel": {
+   "titre": "TeachMeAnatomy, The Superficial Back Muscles",
+   "url": "https://teachmeanatomy.info/back/muscles/superficial/"
+  },
+  "physiopedia-scm": {
+   "titre": "Physiopedia, Sternocleidomastoid",
+   "url": "https://www.physio-pedia.com/Sternocleidomastoid"
+  },
+  "physiopedia-scalenes": {
+   "titre": "Physiopedia, Scalene",
+   "url": "https://www.physio-pedia.com/Scalene"
+  },
+  "physiopedia-semi-epineux-du-cou": {
+   "titre": "Physiopedia, Semispinalis Cervicis",
+   "url": "https://www.physio-pedia.com/Semispinalis_Cervicis"
+  },
+  "physiopedia-longissimus-tete": {
+   "titre": "Physiopedia, Longissimus Capitis",
+   "url": "https://www.physio-pedia.com/Longissimus_Capitis"
+  },
+  "physiopedia-splenius-tete": {
+   "titre": "Physiopedia, Splenius Capitis",
+   "url": "https://www.physio-pedia.com/Splenius_Capitis"
+  },
+  "physiopedia-elevateur-scapula": {
+   "titre": "Physiopedia, Levator Scapulae",
+   "url": "https://www.physio-pedia.com/Levator_Scapulae"
+  },
+  "wikipedia-fr-long-du-cou": {
+   "titre": "Wikipédia (fr), Muscle long du cou (nomenclature)",
+   "url": "https://fr.wikipedia.org/wiki/Muscle_long_du_cou"
+  },
+  "wikipedia-fr-scalene-anterieur": {
+   "titre": "Wikipédia (fr), Muscle scalène antérieur (nomenclature)",
+   "url": "https://fr.wikipedia.org/wiki/Muscle_scal%C3%A8ne_ant%C3%A9rieur"
+  },
+  "wikipedia-fr-scalene-posterieur": {
+   "titre": "Wikipédia (fr), Muscle scalène postérieur (nomenclature)",
+   "url": "https://fr.wikipedia.org/wiki/Muscle_scal%C3%A8ne_post%C3%A9rieur"
+  },
+  "wikipedia-fr-splenius-tete": {
+   "titre": "Wikipédia (fr), Muscle splénius de la tête (nomenclature)",
+   "url": "https://fr.wikipedia.org/wiki/Muscle_spl%C3%A9nius_de_la_t%C3%AAte"
+  },
+  "wikipedia-fr-crico-arytenoidien-posterieur": {
+   "titre": "Wikipédia (fr), Muscle crico-aryténoïdien postérieur (nomenclature)",
+   "url": "https://fr.wikipedia.org/wiki/Muscle_crico-aryt%C3%A9no%C3%AFdien_post%C3%A9rieur"
+  }
+ },
+ "fiches": [
+  {
+   "id": "sterno-cleido-mastoidien",
+   "resume": "Le grand muscle oblique du cou, du sternum et de la clavicule à la mastoïde : il tourne et incline la tête, et sépare les triangles antérieur et postérieur du cou.",
+   "origine": [
+    {
+     "texte": "Chef sternal : partie haute de la face antérieure du manubrium sternal, par un tendon arrondi",
+     "os": [
+      "manubrium-sternal"
+     ]
+    },
+    {
+     "texte": "Chef claviculaire : face supérieure du tiers médial de la clavicule",
+     "os": [
+      "clavicule"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face latérale du processus mastoïde de l'os temporal, par un fort tendon",
+     "os": [
+      "temporal"
+     ]
+    },
+    {
+     "texte": "Moitié latérale de la ligne nuchale supérieure de l'os occipital, par une mince aponévrose",
+     "os": [
+      "occipital"
+     ]
+    }
+   ],
+   "action": "Un seul côté : incline la tête de son côté et tourne le visage du côté opposé. Les deux ensemble : fléchissent le cou ; tête fixée, soulèvent le sternum et les clavicules à l'inspiration forcée",
+   "actions": [
+    {
+     "articulation": "tete",
+     "mouvement": "rotation-controlaterale",
+     "role": "principal",
+     "precision": "contraction d'un seul côté : le visage se tourne vers le côté opposé"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "inclinaison",
+     "role": "principal",
+     "precision": "contraction d'un seul côté : l'oreille se rapproche de l'épaule"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "flexion",
+     "role": "principal",
+     "precision": "les deux côtés ensemble"
+    },
+    {
+     "articulation": "tete",
+     "mouvement": "extension",
+     "role": "accessoire",
+     "precision": "les deux côtés : étend la tête sur l'atlas, menton en avant"
+    },
+    {
+     "articulation": "respiration",
+     "mouvement": "inspiration",
+     "role": "accessoire",
+     "precision": "tête fixée : soulève le sternum et les clavicules en inspiration forcée"
+    }
+   ],
+   "synergistes": [
+    "scalene-anterieur",
+    "scalene-moyen",
+    "long-du-cou"
+   ],
+   "antagonistes": [
+    "splenius-tete",
+    "longissimus-de-la-tete",
+    "semi-epineux-du-cou"
+   ],
+   "innervation": {
+    "nerf": "nerf-accessoire-xi",
+    "texte": "Nerf accessoire (XI) pour la motricité ; rameaux antérieurs de C2 et C3 (plexus cervical), surtout proprioceptifs",
+    "racines": [
+     "XI",
+     "C2",
+     "C3"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux des artères occipitale, auriculaire postérieure, thyroïdienne supérieure et suprascapulaire",
+    "arteres": [
+     "artere-occipitale",
+     "artere-suprascapulaire"
+    ]
+   },
+   "palpation": "Tourner la tête du côté opposé contre résistance : il fait saillie comme une corde tendue du sternum à la mastoïde",
+   "test": "Rotation de la tête vers le côté opposé contre la main de l'examinateur ; les deux ensemble : flexion du cou contre résistance",
+   "atteinte": "Lésion du nerf accessoire, souvent après un geste dans le cou (biopsie ganglionnaire, cathéter jugulaire) : le muscle fond, la tête tourne mal vers le côté opposé, et le haussement d'épaule faiblit avec le trapèze",
+   "clinique": "Torticolis : sa rétraction ou son spasme incline la tête de son côté et tourne le visage de l'autre. Son bord antérieur guide vers le pouls carotidien et sert de repère pour ponctionner la veine jugulaire interne",
+   "memo": "Son nom récite ses trois attaches : sternum, clavicule (cléido), mastoïde",
+   "variantes": "Chef claviculaire de largeur très variable, parfois divisé en plusieurs faisceaux ; chefs surnuméraires possibles",
+   "sources": [
+    "gray1918",
+    "kenhub-scm",
+    "elsevier-scm",
+    "physiopedia-scm",
+    "openstax-11-3",
+    "tma-dos-superficiel"
+   ],
+   "divergences": "Terminaison occipitale : moitié latérale de la ligne nuchale supérieure (Gray 1918, Kenhub) ou tiers latéral (Complete Anatomy). Rameaux cervicaux : C2-C3, ou C2-C4 pour Complete Anatomy, donnés comme proprioceptifs"
+  },
+  {
+   "id": "platysma",
+   "resume": "Une mince nappe musculaire glissée sous la peau du cou, du haut du thorax à la mâchoire : il tend la peau du cou et abaisse le coin des lèvres.",
+   "origine": [
+    {
+     "texte": "Peau et fascia qui recouvrent le haut du grand pectoral et du deltoïde, sous la clavicule",
+     "os": [
+      "fascia-pectoral",
+      "fascia-deltoidien"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord inférieur du corps de la mandibule",
+     "os": [
+      "mandibule"
+     ]
+    },
+    {
+     "texte": "Peau du bas du visage et commissure des lèvres, où ses fibres se mêlent aux abaisseurs de la lèvre inférieure et de l'angle de la bouche",
+     "os": []
+    }
+   ],
+   "action": "Tend et plisse la peau du cou, tire vers le bas la lèvre inférieure et le coin de la bouche (effroi, tristesse) et aide à abaisser la mandibule",
+   "actions": [
+    {
+     "articulation": "visage",
+     "mouvement": "expression",
+     "role": "principal",
+     "precision": "tend la peau du cou et abaisse la commissure des lèvres et la lèvre inférieure : effroi, tristesse"
+    },
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "ouverture",
+     "role": "accessoire",
+     "precision": "aide à abaisser la mandibule"
+    }
+   ],
+   "synergistes": [
+    "abaisseur-angle-bouche",
+    "abaisseur-de-la-levre-inferieure"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": "nerf-facial-vii",
+    "texte": "Rameau cervical du nerf facial (VII)",
+    "racines": [
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère submentale (branche de la faciale) et artère suprascapulaire (tronc thyrocervical)",
+    "arteres": [
+     "artere-submentale",
+     "artere-suprascapulaire"
+    ]
+   },
+   "palpation": "Sous la peau du devant du cou : il la soulève en cordes verticales quand on abaisse fortement les coins de la bouche, dents serrées",
+   "test": "Demander d'abaisser les coins de la bouche en tendant la peau du cou, et comparer les deux côtés",
+   "atteinte": "Lésion du rameau cervical du nerf facial, qui chemine juste sous lui (chirurgie du cou) : la peau du cou se relâche de ce côté et la bouche se déforme, la lèvre inférieure s'abaissant mal",
+   "clinique": "Une plaie ou une incision du cou se suture plan par plan : mal réparé, il tire sur la cicatrice et l'élargit. Avec l'âge, il dessine les bandes verticales du cou",
+   "memo": "Platysma veut dire plaque plate en grec : une feuille de muscle glissée sous la peau du cou",
+   "variantes": "Peut manquer ou croiser celui du côté opposé sur la ligne médiane ; des faisceaux gagnent parfois la clavicule, la mastoïde ou l'occipital",
+   "sources": [
+    "gray1918",
+    "kenhub-platysma",
+    "kenhub-fr-cou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "constricteur-inferieur-du-pharynx",
+   "resume": "Le plus bas et le plus épais des trois constricteurs du pharynx : il pousse le bol alimentaire vers l'œsophage, dont il garde l'entrée.",
+   "origine": [
+    {
+     "texte": "Partie thyropharyngienne : ligne oblique de la lame du cartilage thyroïde, surface située en arrière d'elle et corne inférieure",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    },
+    {
+     "texte": "Partie cricopharyngienne : face latérale du cartilage cricoïde, en arrière de l'attache du muscle cricothyroïdien",
+     "os": [
+      "cartilage-cricoide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Raphé médian de la paroi postérieure du pharynx, où il rejoint le muscle du côté opposé",
+     "os": []
+    },
+    {
+     "texte": "Fibres les plus basses, horizontales : en continuité avec les fibres circulaires de l'œsophage",
+     "os": []
+    }
+   ],
+   "action": "Resserre la partie basse du pharynx pour chasser le bol alimentaire vers l'œsophage ; ses fibres basses ferment l'entrée de l'œsophage au repos et se relâchent quand on avale",
+   "actions": [
+    {
+     "articulation": "pharynx",
+     "mouvement": "deglutition",
+     "role": "principal",
+     "precision": "se contracte après les constricteurs supérieur et moyen et pousse le bol vers l'œsophage"
+    },
+    {
+     "articulation": "pharynx",
+     "mouvement": "fermeture",
+     "role": "principal",
+     "precision": "partie cricopharyngienne : sphincter supérieur de l'œsophage, fermé au repos, relâché à la déglutition"
+    }
+   ],
+   "synergistes": [
+    "constricteur-moyen-du-pharynx",
+    "constricteur-superieur-du-pharynx"
+   ],
+   "antagonistes": [
+    "stylopharyngien",
+    "palatopharyngien"
+   ],
+   "innervation": {
+    "nerf": "nerf-vague-x",
+    "texte": "Plexus pharyngien (nerf vague, X) ; la partie cricopharyngienne reçoit aussi des filets du nerf laryngé récurrent et du rameau externe du nerf laryngé supérieur",
+    "racines": [
+     "X"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère pharyngienne ascendante et rameaux de l'artère thyroïdienne inférieure",
+    "arteres": [
+     "artere-pharyngienne-ascendante",
+     "artere-thyroidienne-inferieure"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Si sa partie cricopharyngienne ne se relâche pas quand on avale, le bol bute à l'entrée de l'œsophage et la pression monte dans le pharynx : dysphagie haute. Paralysé par une atteinte du nerf vague, il propulse mal le bol",
+   "clinique": "Diverticule de Zenker : la muqueuse fait hernie en arrière par le point faible de Killian, entre ses deux parties ; les aliments s'y accumulent",
+   "memo": "Deux parties, deux rôles : la thyropharyngienne pousse, la cricopharyngienne fait le portier de l'œsophage",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-constricteur-inferieur",
+    "tma-pharynx",
+    "kenhub-nerf-larynge-superieur"
+   ],
+   "divergences": "Gray 1918 décrit un seul muscle, innervé par le plexus pharyngien avec des filets des nerfs laryngé externe et récurrent ; les auteurs récents distinguent deux parties et réservent ces filets à la partie cricopharyngienne"
+  },
+  {
+   "id": "long-du-cou",
+   "resume": "Le muscle prévertébral plaqué sur la face antérieure du rachis, de l'atlas à T3 : fléchisseur profond du cou, fait de trois faisceaux.",
+   "origine": [
+    {
+     "texte": "Partie oblique supérieure : tubercules antérieurs des processus transverses de C3 à C5",
+     "os": [
+      "vertebre-c3",
+      "vertebre-c4",
+      "vertebre-c5"
+     ]
+    },
+    {
+     "texte": "Partie verticale : face antérieure des corps vertébraux de C5 à T3",
+     "os": [
+      "vertebre-c5",
+      "vertebre-c6",
+      "c7",
+      "vertebre-t1",
+      "vertebre-t2",
+      "vertebre-t3"
+     ]
+    },
+    {
+     "texte": "Partie oblique inférieure : face antérieure des corps de T1 à T3",
+     "os": [
+      "vertebre-t1",
+      "vertebre-t2",
+      "vertebre-t3"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Partie oblique supérieure : tubercule antérieur de l'arc antérieur de l'atlas",
+     "os": [
+      "atlas"
+     ]
+    },
+    {
+     "texte": "Partie verticale : face antérieure des corps de C2 à C4",
+     "os": [
+      "axis",
+      "vertebre-c3",
+      "vertebre-c4"
+     ]
+    },
+    {
+     "texte": "Partie oblique inférieure : tubercules antérieurs des processus transverses de C5 et C6",
+     "os": [
+      "vertebre-c5",
+      "vertebre-c6"
+     ]
+    }
+   ],
+   "action": "Fléchit le cou quand les deux côtés se contractent ; un seul côté l'incline un peu et le tourne vers le côté opposé. Il tient le rachis cervical par l'avant",
+   "actions": [
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "flexion",
+     "role": "principal",
+     "precision": "les deux côtés ensemble"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "rotation-controlaterale",
+     "role": "accessoire",
+     "precision": "surtout par sa partie oblique inférieure"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "inclinaison",
+     "role": "accessoire",
+     "precision": "faible"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "stabilisation",
+     "role": "accessoire",
+     "precision": "plaqué en avant des vertèbres, il aide à tenir le cou et la tête droits"
+    }
+   ],
+   "synergistes": [
+    "long-de-la-tete",
+    "sterno-cleido-mastoidien",
+    "scalene-anterieur"
+   ],
+   "antagonistes": [
+    "semi-epineux-du-cou",
+    "splenius-du-cou",
+    "longissimus-du-cou"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux antérieurs des nerfs cervicaux C2 à C6",
+    "racines": [
+     "C2",
+     "C3",
+     "C4",
+     "C5",
+     "C6"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux des artères vertébrale, thyroïdienne inférieure et pharyngienne ascendante",
+    "arteres": [
+     "vertebrale",
+     "artere-thyroidienne-inferieure",
+     "artere-pharyngienne-ascendante"
+    ]
+   },
+   "palpation": null,
+   "test": "Flexion du cou contre résistance, sujet couché sur le dos : il n'est pas testé isolément des autres fléchisseurs",
+   "atteinte": "Tendinite calcifiante : des cristaux d'hydroxyapatite se déposent dans ses tendons ; cou douloureux et raide, déglutition douloureuse, parfois fièvre. Il peut aussi être lésé lors d'un coup du lapin violent",
+   "clinique": "Le ganglion cervico-thoracique (stellaire) du sympathique est accolé à son bord latéral, à hauteur de C7 ; l'artère vertébrale monte entre lui et le scalène antérieur",
+   "memo": "Un triangle couché le long des vertèbres : deux faisceaux obliques pour les côtés, un vertical pour la base",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-long-du-cou",
+    "elsevier-long-du-cou",
+    "wikipedia-fr-long-du-cou",
+    "kenhub-fr-cou",
+    "physiopedia-longissimus-tete"
+   ],
+   "divergences": "Innervation : C2 à C6 (Kenhub, Complete Anatomy) ou C2 à C7 (Gray 1918). Rotation : vers le côté opposé pour les auteurs récents, mais discutée, le muscle étant presque médian"
+  },
+  {
+   "id": "scalene-posterieur",
+   "resume": "Le plus petit et le plus profond des trois scalènes, derrière le scalène moyen : il descend des vertèbres cervicales basses jusqu'à la deuxième côte.",
+   "origine": [
+    {
+     "texte": "Tubercules postérieurs des processus transverses de C4 à C6, par deux ou trois languettes tendineuses",
+     "os": [
+      "vertebre-c4",
+      "vertebre-c5",
+      "vertebre-c6"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face externe de la deuxième côte, en arrière de l'attache du dentelé antérieur",
+     "os": [
+      "deuxieme-cote"
+     ]
+    }
+   ],
+   "action": "Soulève la deuxième côte à l'inspiration quand le cou est fixe ; côtes fixes, incline le cou de son côté",
+   "actions": [
+    {
+     "articulation": "cotes",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "deuxième côte"
+    },
+    {
+     "articulation": "respiration",
+     "mouvement": "inspiration",
+     "role": "accessoire",
+     "precision": "surtout en inspiration forcée"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "inclinaison",
+     "role": "accessoire",
+     "precision": "côtes fixes"
+    }
+   ],
+   "synergistes": [
+    "scalene-moyen",
+    "scalene-anterieur",
+    "intercostaux-externes"
+   ],
+   "antagonistes": [
+    "intercostaux-internes"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux antérieurs des trois derniers nerfs cervicaux (C6 à C8)",
+    "racines": [
+     "C6",
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cervicale ascendante (branche de la thyroïdienne inférieure) et branche superficielle de l'artère transverse du cou",
+    "arteres": [
+     "artere-thyroidienne-inferieure",
+     "branche-superficielle-de-l-artere-transverse-du-cou"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Rarement atteint seul. Contracturé avec les autres scalènes (toux prolongée, respiration difficile, coup du lapin), il donne une douleur du côté du cou qui peut descendre vers l'épaule et le bras",
+   "clinique": "Les scalènes ne servent guère à la respiration calme : les voir se tendre à chaque inspiration signale une détresse respiratoire",
+   "memo": "Le seul scalène qui vise la deuxième côte : les deux autres s'arrêtent à la première",
+   "variantes": "Souvent fusionné au scalène moyen ; ses attaches varient beaucoup, et son innervation avec elles",
+   "sources": [
+    "gray1918",
+    "kenhub-scalenes",
+    "elsevier-scalene-posterieur",
+    "tma-scalenes",
+    "physiopedia-scalenes",
+    "wikipedia-fr-scalene-posterieur"
+   ],
+   "divergences": "Origine : C4 à C6 (Complete Anatomy, tableau Kenhub, sources françaises) ou C5 à C7 (TeachMeAnatomy, Physiopedia) ; « deux ou trois dernières cervicales » pour Gray 1918. Racines : C6-C8 le plus souvent ; C7-C8, C5-C7 ou C4-C6 selon les sources"
+  },
+  {
+   "id": "splenius-tete",
+   "resume": "Un large bandage musculaire de la nuque, sous le trapèze : il monte des épineuses jusqu'à la mastoïde, étend la tête et la tourne de son côté.",
+   "origine": [
+    {
+     "texte": "Moitié inférieure du ligament nuchal",
+     "os": [
+      "ligament-nuchal"
+     ]
+    },
+    {
+     "texte": "Processus épineux de C7 et des trois ou quatre premières vertèbres thoraciques",
+     "os": [
+      "c7",
+      "vertebre-t1",
+      "vertebre-t2",
+      "vertebre-t3"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Processus mastoïde de l'os temporal, sous le sterno-cléido-mastoïdien",
+     "os": [
+      "temporal"
+     ]
+    },
+    {
+     "texte": "Os occipital, juste sous le tiers latéral de la ligne nuchale supérieure",
+     "os": [
+      "occipital"
+     ]
+    }
+   ],
+   "action": "Les deux ensemble étendent la tête et le cou ; un seul incline la tête et tourne le visage de son côté",
+   "actions": [
+    {
+     "articulation": "tete",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "les deux côtés ensemble"
+    },
+    {
+     "articulation": "tete",
+     "mouvement": "rotation-homolaterale",
+     "role": "principal",
+     "precision": "un seul côté : le visage se tourne de ce côté"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "les deux côtés ensemble"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "inclinaison",
+     "role": "accessoire",
+     "precision": "un seul côté"
+    }
+   ],
+   "synergistes": [
+    "splenius-du-cou",
+    "longissimus-de-la-tete",
+    "trapeze"
+   ],
+   "antagonistes": [
+    "sterno-cleido-mastoidien",
+    "long-de-la-tete",
+    "long-du-cou"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux latéraux des rameaux postérieurs des nerfs cervicaux, surtout C2 et C3",
+    "racines": [
+     "C2",
+     "C3"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux musculaires de l'artère occipitale ; artère cervicale profonde",
+    "arteres": [
+     "artere-occipitale",
+     "artere-cervicale-profonde"
+    ]
+   },
+   "palpation": "À la nuque, entre le bord du trapèze et le sterno-cléido-mastoïdien, sous la mastoïde ; il se durcit quand la tête tourne de son côté contre résistance",
+   "test": "Extension de la tête contre résistance, visage tourné du côté examiné",
+   "atteinte": "Rarement paralysé seul. Contracturé, il tire la tête en arrière et la tourne de son côté ; l'inflammation de son attache occipitale donne des céphalées de tension, qui peuvent simuler une migraine",
+   "clinique": "Souvent hyperactif dans les cervicalgies chroniques et après un coup du lapin ; on y injecte de la toxine botulique dans certains tremblements et dystonies de la tête",
+   "memo": "Splenion, le bandage en grec : il enroule la nuque comme une bande, des épineuses à la mastoïde",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-splenius-tete",
+    "elsevier-splenius-tete",
+    "physiopedia-splenius-tete",
+    "openstax-11-3",
+    "wikipedia-fr-splenius-tete",
+    "kenhub-fr-dos"
+   ],
+   "divergences": "Racines : C2-C3 (Kenhub, Complete Anatomy) ; « nerfs cervicaux moyens et inférieurs » (Gray 1918, Physiopedia) ; C1 à C5 pour Wikipédia. Terminaison occipitale : tiers latéral (Gray 1918) ou moitié latérale de la ligne nuchale supérieure"
+  },
+  {
+   "id": "thyrohyoidien",
+   "resume": "Le petit muscle carré qui relie le larynx à l'os hyoïde, dans le prolongement du sterno-thyroïdien : il rapproche l'un de l'autre.",
+   "origine": [
+    {
+     "texte": "Ligne oblique de la lame du cartilage thyroïde",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord inférieur de la grande corne de l'os hyoïde et de la partie voisine du corps",
+     "os": [
+      "hyoide"
+     ]
+    }
+   ],
+   "action": "Abaisse l'os hyoïde ; quand celui-ci est fixé par les muscles supra-hyoïdiens, élève le larynx (déglutition, sons aigus)",
+   "actions": [
+    {
+     "articulation": "os-hyoide",
+     "mouvement": "abaissement",
+     "role": "principal"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "os hyoïde fixé : remonte le cartilage thyroïde, à la déglutition et dans les sons aigus"
+    }
+   ],
+   "synergistes": [
+    "sterno-hyoidien",
+    "omo-hyoidien"
+   ],
+   "antagonistes": [
+    "sterno-thyroidien",
+    "digastrique",
+    "mylohyoidien"
+   ],
+   "innervation": {
+    "nerf": "nerf-hypoglosse-xii",
+    "texte": "Rameau thyrohyoïdien : fibres du rameau antérieur de C1 qui cheminent avec le nerf hypoglosse (XII)",
+    "racines": [
+     "C1"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameau infra-hyoïdien de l'artère thyroïdienne supérieure ; rameaux de l'artère linguale",
+    "arteres": []
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Son déficit isolé est discret : le larynx remonte moins bien vers l'os hyoïde quand on avale. Son nerf venant de C1 par le nerf hypoglosse, une lésion de l'anse cervicale l'épargne",
+   "clinique": "Il recouvre la membrane thyrohyoïdienne, que traversent le rameau interne du nerf laryngé supérieur et l'artère laryngée supérieure",
+   "memo": "Du cartilage thyroïde à l'os hyoïde, comme son nom l'indique ; le seul muscle infra-hyoïdien qui échappe à l'anse cervicale",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-thyrohyoidien",
+    "elsevier-thyrohyoidien",
+    "tma-infrahyoidiens",
+    "kenhub-nerf-larynge-superieur",
+    "kenhub-fr-cou"
+   ],
+   "divergences": "Gray 1918 rattache son nerf à C1 et C2 ; les auteurs récents à C1 seul"
+  },
+  {
+   "id": "elevateur-scapula",
+   "resume": "Une sangle tendue des quatre premières vertèbres cervicales à l'angle supérieur de la scapula : il hausse l'épaule et incline le cou.",
+   "origine": [
+    {
+     "texte": "Processus transverses de l'atlas et de l'axis",
+     "os": [
+      "atlas",
+      "axis"
+     ]
+    },
+    {
+     "texte": "Tubercules postérieurs des processus transverses de C3 et C4",
+     "os": [
+      "vertebre-c3",
+      "vertebre-c4"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord médial de la scapula, de l'angle supérieur à la racine de l'épine",
+     "os": [
+      "scapula"
+     ]
+    }
+   ],
+   "action": "Élève la scapula et fait basculer la glène vers le bas ; scapula fixée, incline et tourne le cou de son côté ; les deux ensemble étendent le cou",
+   "actions": [
+    {
+     "articulation": "scapula",
+     "mouvement": "elevation",
+     "role": "principal"
+    },
+    {
+     "articulation": "scapula",
+     "mouvement": "sonnette-mediale",
+     "role": "principal",
+     "precision": "avec les rhomboïdes"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "inclinaison",
+     "role": "accessoire",
+     "precision": "scapula fixée"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "rotation-homolaterale",
+     "role": "accessoire",
+     "precision": "scapula fixée"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "extension",
+     "role": "accessoire",
+     "precision": "les deux côtés, scapulas fixées"
+    }
+   ],
+   "synergistes": [
+    "trapeze",
+    "grand-rhomboide",
+    "petit-rhomboide"
+   ],
+   "antagonistes": [
+    "dentele-anterieur"
+   ],
+   "innervation": {
+    "nerf": "nerf-dorsal-de-la-scapula",
+    "texte": "Rameaux antérieurs de C3 et C4 (plexus cervical) et nerf dorsal de la scapula (C5)",
+    "racines": [
+     "C3",
+     "C4",
+     "C5"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère transverse du cou (ou dorsale de la scapula) et artère cervicale ascendante ; artère vertébrale pour ses chefs d'origine",
+    "arteres": [
+     "artere-transverse-du-cou",
+     "vertebrale"
+    ]
+   },
+   "palpation": "Dans le triangle postérieur du cou, entre sterno-cléido-mastoïdien et trapèze, là où rien ne le recouvre ; son attache se cherche à l'angle supérieur de la scapula",
+   "test": "Hausser l'épaule contre résistance (il agit avec le trapèze). Longueur : sujet couché, scapula maintenue, incliner et tourner la tête du côté opposé",
+   "atteinte": "Lésion isolée du nerf dorsal de la scapula, très rare : scapula un peu décollée, fonte de l'élévateur et des rhomboïdes, peu de plaintes. Bien plus souvent il est raide et douloureux (sac porté à l'épaule, épaules haussées au bureau)",
+   "clinique": "La tête projetée en avant le met en tension permanente : douleurs à ses attaches et céphalées d'origine cervicale",
+   "memo": "Son nom dit sa fonction : c'est le muscle du haussement d'épaules, souvent noué chez qui porte un sac sur une seule épaule",
+   "variantes": "Nombre de chefs d'origine variable ; faisceaux possibles vers l'occipital, la mastoïde, le trapèze, les scalènes ou les premières côtes",
+   "sources": [
+    "gray1918",
+    "kenhub-elevateur-scapula",
+    "elsevier-elevateur-scapula",
+    "physiopedia-elevateur-scapula",
+    "tma-dos-superficiel"
+   ],
+   "divergences": "Gray 1918 : nerfs C3 et C4, et « souvent » un rameau du nerf dorsal de la scapula ; les auteurs récents citent les deux ; TeachMeAnatomy ne retient que le nerf dorsal de la scapula"
+  },
+  {
+   "id": "arythenoide-oblique",
+   "resume": "Muscle aryténoïdien oblique : deux fins faisceaux croisés en X derrière le larynx, d'un cartilage aryténoïde à l'autre, qui resserrent l'entrée du larynx.",
+   "origine": [
+    {
+     "texte": "Face postérieure du processus musculaire d'un cartilage aryténoïde",
+     "os": [
+      "cartilage-arytenoide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Sommet (apex) du cartilage aryténoïde du côté opposé, après croisement en X sur la ligne médiane",
+     "os": [
+      "cartilage-arytenoide"
+     ]
+    },
+    {
+     "texte": "Quelques fibres contournent ce sommet et se prolongent dans le pli aryépiglottique : c'est le muscle aryépiglottique",
+     "os": []
+    }
+   ],
+   "action": "Rapproche les deux cartilages aryténoïdes : ferme l'arrière de la glotte et, avec ses fibres aryépiglottiques, resserre l'entrée du larynx quand on avale ou qu'on tousse",
+   "actions": [
+    {
+     "articulation": "larynx",
+     "mouvement": "fermeture",
+     "role": "principal",
+     "precision": "rapproche les cartilages aryténoïdes : ferme la partie postérieure de la glotte"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "deglutition",
+     "role": "principal",
+     "precision": "sphincter de l'entrée du larynx avec le muscle aryépiglottique : protège les voies aériennes"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "phonation",
+     "role": "accessoire",
+     "precision": "aide à accoler les cordes vocales"
+    }
+   ],
+   "synergistes": [
+    "arytenoidien-transverse",
+    "crico-arytenoidien-lateral",
+    "thyro-arytenoidien"
+   ],
+   "antagonistes": [
+    "crico-arytenoidien-posterieur"
+   ],
+   "innervation": {
+    "nerf": "nerf-vague-x",
+    "texte": "Nerf laryngé récurrent (nerf laryngé inférieur), branche du nerf vague (X)",
+    "racines": [
+     "X"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux laryngés des artères thyroïdiennes supérieure et inférieure",
+    "arteres": [
+     "artere-thyroidienne-inferieure"
+    ]
+   },
+   "palpation": null,
+   "test": "Pas de test direct : la mobilité des cordes vocales et des cartilages aryténoïdes s'observe en laryngoscopie",
+   "atteinte": "Paralysie du nerf laryngé récurrent : les cartilages aryténoïdes ne se rapprochent plus complètement, l'arrière de la glotte reste entrouvert ; voix soufflée, et fermeture réflexe du larynx moins sûre quand on avale",
+   "clinique": null,
+   "memo": "Un X derrière le larynx : chaque branche part de la base d'un aryténoïde et vise la pointe de l'autre",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-arytenoidien-oblique",
+    "tma-muscles-larynx",
+    "elsevier-muscles-larynx"
+   ],
+   "divergences": "Gray 1918 décrit un seul muscle aryténoïdien, à parties oblique et transverse, les auteurs récents deux muscles ; il lui prête de possibles filets moteurs du rameau interne du nerf laryngé supérieur, discutés aujourd'hui"
+  },
+  {
+   "id": "arytenoidien-transverse",
+   "resume": "Le seul muscle impair du larynx : une bande horizontale tendue entre les deux cartilages aryténoïdes, qui ferme l'arrière de la glotte.",
+   "origine": [
+    {
+     "texte": "Bord latéral et face postérieure (processus musculaire) d'un cartilage aryténoïde",
+     "os": [
+      "cartilage-arytenoide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord latéral et face postérieure du cartilage aryténoïde opposé, dont il comble la concavité",
+     "os": [
+      "cartilage-arytenoide"
+     ]
+    }
+   ],
+   "action": "Serre les deux cartilages aryténoïdes l'un contre l'autre : ferme la partie postérieure de la glotte, pour la voix comme pour protéger les voies aériennes",
+   "actions": [
+    {
+     "articulation": "larynx",
+     "mouvement": "fermeture",
+     "role": "principal",
+     "precision": "accole les cartilages aryténoïdes : ferme la partie postérieure de la glotte"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "phonation",
+     "role": "accessoire",
+     "precision": "glotte fermée, l'air expiré fait vibrer les cordes vocales"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "deglutition",
+     "role": "accessoire",
+     "precision": "participe à la fermeture réflexe du larynx"
+    }
+   ],
+   "synergistes": [
+    "arythenoide-oblique",
+    "crico-arytenoidien-lateral",
+    "thyro-arytenoidien"
+   ],
+   "antagonistes": [
+    "crico-arytenoidien-posterieur"
+   ],
+   "innervation": {
+    "nerf": "nerf-vague-x",
+    "texte": "Nerfs laryngés récurrents, branches du nerf vague (X)",
+    "racines": [
+     "X"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux laryngés des artères thyroïdiennes supérieure et inférieure",
+    "arteres": [
+     "artere-thyroidienne-inferieure"
+    ]
+   },
+   "palpation": null,
+   "test": "Pas de test direct : la mobilité des cordes vocales et des cartilages aryténoïdes s'observe en laryngoscopie",
+   "atteinte": "Sans lui, les cartilages aryténoïdes restent écartés : un triangle demeure ouvert à l'arrière de la glotte, l'air s'y échappe et la voix devient chuchotée",
+   "clinique": "La voix chuchotée reproduit cette situation : les cordes vocales s'accolent en avant, mais les muscles aryténoïdiens relâchés laissent passer l'air en arrière",
+   "memo": "Un trait d'union horizontal entre les deux aryténoïdes : impair, médian, il les serre l'un contre l'autre",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-arytenoidien-transverse",
+    "kenhub-crico-arytenoidien-lateral",
+    "tma-muscles-larynx"
+   ],
+   "divergences": "Des filets du rameau interne du nerf laryngé supérieur lui parviennent : leur rôle moteur, évoqué par Gray 1918, est contesté aujourd'hui, ce rameau étant tenu pour sensitif"
+  },
+  {
+   "id": "crico-arytenoidien-lateral",
+   "resume": "Petit muscle caché sous la lame du cartilage thyroïde, de l'arc du cricoïde à l'aryténoïde : il fait pivoter l'aryténoïde pour accoler les cordes vocales.",
+   "origine": [
+    {
+     "texte": "Bord supérieur de l'arc du cartilage cricoïde",
+     "os": [
+      "cartilage-cricoide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face antérieure du processus musculaire du cartilage aryténoïde",
+     "os": [
+      "cartilage-arytenoide"
+     ]
+    }
+   ],
+   "action": "Fait pivoter le cartilage aryténoïde vers le dedans : les processus vocaux se rejoignent, les cordes vocales s'accolent et la glotte se ferme",
+   "actions": [
+    {
+     "articulation": "larynx",
+     "mouvement": "fermeture",
+     "role": "principal",
+     "precision": "rotation médiale de l'aryténoïde : accole les cordes vocales, ferme la partie antérieure de la glotte"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "phonation",
+     "role": "accessoire",
+     "precision": "met les cordes vocales en position de voix"
+    }
+   ],
+   "synergistes": [
+    "arytenoidien-transverse",
+    "arythenoide-oblique",
+    "thyro-arytenoidien"
+   ],
+   "antagonistes": [
+    "crico-arytenoidien-posterieur"
+   ],
+   "innervation": {
+    "nerf": "nerf-vague-x",
+    "texte": "Nerf laryngé récurrent (nerf laryngé inférieur), branche du nerf vague (X)",
+    "racines": [
+     "X"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux laryngés des artères thyroïdiennes supérieure et inférieure",
+    "arteres": [
+     "artere-thyroidienne-inferieure"
+    ]
+   },
+   "palpation": null,
+   "test": "Pas de test direct : la mobilité des cordes vocales et des cartilages aryténoïdes s'observe en laryngoscopie",
+   "atteinte": "Paralysie du nerf laryngé récurrent d'un côté : la corde vocale ne vient plus au contact de l'autre ; voix enrouée et vite fatiguée",
+   "clinique": "Seul, il ne ferme que l'avant de la glotte : sans les muscles aryténoïdiens pour clore l'arrière, la voix reste chuchotée",
+   "memo": "Latéral et postérieur tirent en sens inverse sur le même processus musculaire : le latéral ferme la glotte, le postérieur l'ouvre",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-crico-arytenoidien-lateral",
+    "kenhub-crico-arytenoidien-posterieur",
+    "tma-muscles-larynx"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "crico-arytenoidien-posterieur",
+   "resume": "Le seul muscle qui ouvre la glotte : plaqué derrière la lame du cartilage cricoïde, il écarte les cordes vocales pour laisser passer l'air.",
+   "origine": [
+    {
+     "texte": "Dépression de la face postérieure de la lame du cartilage cricoïde, de son côté de la ligne médiane",
+     "os": [
+      "cartilage-cricoide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face postérieure du processus musculaire du cartilage aryténoïde",
+     "os": [
+      "cartilage-arytenoide"
+     ]
+    }
+   ],
+   "action": "Fait pivoter le cartilage aryténoïde vers le dehors : les processus vocaux s'écartent, les cordes vocales s'ouvrent et l'air passe",
+   "actions": [
+    {
+     "articulation": "larynx",
+     "mouvement": "ouverture",
+     "role": "principal",
+     "precision": "rotation latérale de l'aryténoïde : écarte les cordes vocales, seul dilatateur de la glotte"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [
+    "crico-arytenoidien-lateral",
+    "arytenoidien-transverse",
+    "arythenoide-oblique"
+   ],
+   "innervation": {
+    "nerf": "nerf-vague-x",
+    "texte": "Nerf laryngé récurrent (nerf laryngé inférieur), branche du nerf vague (X)",
+    "racines": [
+     "X"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux laryngés des artères thyroïdiennes supérieure et inférieure",
+    "arteres": [
+     "artere-thyroidienne-inferieure"
+    ]
+   },
+   "palpation": null,
+   "test": "Pas de test direct : la mobilité des cordes vocales et des cartilages aryténoïdes s'observe en laryngoscopie",
+   "atteinte": "Paralysie du nerf laryngé récurrent (chirurgie de la thyroïde, tumeur bronchique, goitre). D'un côté : corde vocale immobile, voix enrouée. Des deux côtés : la glotte ne s'ouvre plus, risque d'asphyxie",
+   "clinique": "Devant une corde vocale immobile, le diagnostic repose sur la laryngoscopie, au besoin complétée par un électromyogramme du larynx",
+   "memo": "Postérieur comme portier : il ouvre la porte de l'air ; tous les autres muscles de la glotte la ferment ou la tendent",
+   "variantes": "Un faisceau inconstant gagne parfois la corne inférieure du cartilage thyroïde (muscle cérato-cricoïdien)",
+   "sources": [
+    "gray1918",
+    "kenhub-crico-arytenoidien-posterieur",
+    "tma-muscles-larynx",
+    "wikipedia-fr-crico-arytenoidien-posterieur"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "cricothyroidien",
+   "resume": "Le tenseur des cordes vocales, seul muscle du larynx posé sur sa face externe : il fait basculer le cartilage thyroïde sur le cricoïde pour monter dans les aigus.",
+   "origine": [
+    {
+     "texte": "Face antéro-latérale de l'arc du cartilage cricoïde",
+     "os": [
+      "cartilage-cricoide"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Partie droite : bord inférieur de la lame du cartilage thyroïde",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    },
+    {
+     "texte": "Partie oblique : bord antérieur de la corne inférieure du cartilage thyroïde",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    }
+   ],
+   "action": "Rapproche en avant l'arc du cricoïde et le cartilage thyroïde, qui bascule : les cordes vocales s'allongent, se tendent et s'amincissent, la voix monte",
+   "actions": [
+    {
+     "articulation": "larynx",
+     "mouvement": "tension",
+     "role": "principal",
+     "precision": "bascule à l'articulation cricothyroïdienne : allonge et tend les cordes vocales"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "phonation",
+     "role": "principal",
+     "precision": "règle la hauteur de la voix : sons aigus"
+    }
+   ],
+   "synergistes": [],
+   "antagonistes": [
+    "thyro-arytenoidien"
+   ],
+   "innervation": {
+    "nerf": "nerf-vague-x",
+    "texte": "Rameau externe du nerf laryngé supérieur, branche du nerf vague (X) : c'est le seul muscle du larynx qui échappe au nerf récurrent",
+    "racines": [
+     "X"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameau cricothyroïdien de l'artère thyroïdienne supérieure",
+    "arteres": []
+   },
+   "palpation": "Lui-même ne se sent guère sous les muscles infra-hyoïdiens ; mais le creux médian qui sépare le droit du gauche, entre cartilages thyroïde et cricoïde, se repère au doigt",
+   "test": "Faire monter la voix du grave à l'aigu : en laryngoscopie, les cordes vocales s'allongent et se tendent",
+   "atteinte": "Privée de lui (lésion du rameau externe du nerf laryngé supérieur), la corde vocale ne se tend plus : la voix perd ses aigus et sa force",
+   "clinique": "Le creux qui sépare les deux muscles est fermé par le ligament cricothyroïdien médian : c'est là que l'on ouvre les voies aériennes en urgence (cricothyrotomie), au risque de blesser le muscle",
+   "memo": "Le muscle du chanteur : il tend la corde vocale comme on accorde une corde de guitare vers l'aigu",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cricothyroidien",
+    "tma-muscles-larynx",
+    "kenhub-nerf-larynge-superieur"
+   ],
+   "divergences": "Bascule : pour Gray 1918 l'arc du cricoïde monte vers le thyroïde, pour Kenhub le cartilage thyroïde descend et avance. Le résultat est le même : la distance entre thyroïde et aryténoïdes augmente"
+  },
+  {
+   "id": "digastrique",
+   "resume": "Deux ventres réunis par un tendon amarré à l'os hyoïde, de la mastoïde au menton : il ouvre la bouche et soulève l'os hyoïde.",
+   "origine": [
+    {
+     "texte": "Ventre postérieur : incisure mastoïdienne de l'os temporal, en dedans du processus mastoïde",
+     "os": [
+      "temporal"
+     ]
+    },
+    {
+     "texte": "Ventre antérieur : fosse digastrique de la mandibule, sur son bord inférieur, près de la symphyse",
+     "os": [
+      "mandibule"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Tendon intermédiaire, qui traverse le muscle stylohyoïdien et qu'une boucle fibreuse retient au corps et à la grande corne de l'os hyoïde",
+     "os": [
+      "tendon-intermediaire-du-muscle-digastrique",
+      "hyoide"
+     ]
+    }
+   ],
+   "action": "Abaisse la mandibule quand l'os hyoïde est fixé (ouvrir la bouche) ; mandibule fixée, élève l'os hyoïde et le larynx pendant la déglutition",
+   "actions": [
+    {
+     "articulation": "temporo-mandibulaire",
+     "mouvement": "ouverture",
+     "role": "principal",
+     "precision": "os hyoïde fixé par les muscles infra-hyoïdiens : abaisse la mandibule"
+    },
+    {
+     "articulation": "os-hyoide",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "mandibule fixée ; le ventre postérieur le tire aussi en arrière"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "elevation",
+     "role": "accessoire",
+     "precision": "le larynx suit l'os hyoïde à la déglutition"
+    }
+   ],
+   "synergistes": [
+    "mylohyoidien",
+    "geniohyoidien",
+    "stylohyoidien"
+   ],
+   "antagonistes": [
+    "sterno-hyoidien",
+    "omo-hyoidien",
+    "masseter",
+    "muscle-temporal"
+   ],
+   "innervation": {
+    "nerf": "nerf-mylohyoidien",
+    "texte": "Ventre antérieur : nerf mylohyoïdien, branche du nerf alvéolaire inférieur (V3). Ventre postérieur : rameau digastrique du nerf facial (VII)",
+    "racines": [
+     "V3",
+     "VII"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Ventre antérieur : artère submentale (branche de la faciale). Ventre postérieur : artères occipitale et auriculaire postérieure",
+    "arteres": [
+     "artere-submentale",
+     "artere-occipitale"
+    ]
+   },
+   "palpation": "Ventre antérieur : sous le menton, de part et d'autre de la ligne médiane, quand on ouvre la bouche contre résistance",
+   "test": "Ouvrir la bouche contre une main placée sous le menton : le ventre antérieur durcit sous les doigts",
+   "atteinte": "Chaque ventre suit son nerf : le postérieur est paralysé avec le nerf facial, l'antérieur avec le nerf mandibulaire (V3). La gêne reste modeste, les autres muscles supra-hyoïdiens prenant le relais",
+   "clinique": "Son ventre postérieur est un repère en chirurgie du cou : la veine jugulaire interne, les deux carotides et les nerfs IX, X et XII passent sous lui",
+   "memo": "Di-gastrique : deux ventres. Et deux nerfs, car deux arcs pharyngiens : le premier (V3) pour le ventre antérieur, le deuxième (VII) pour le postérieur",
+   "variantes": "Ventre antérieur parfois dédoublé ou uni à celui du côté opposé ; le ventre postérieur peut naître en partie du processus styloïde",
+   "sources": [
+    "gray1918",
+    "kenhub-digastrique",
+    "elsevier-digastrique",
+    "kenhub-fr-cou"
+   ],
+   "divergences": "Le tendon intermédiaire est retenu au corps et à la grande corne de l'os hyoïde pour Gray 1918, au corps seul pour Kenhub"
+  },
+  {
+   "id": "iliocostal-du-cou",
+   "resume": "Le faisceau le plus haut de l'ilio-costal, colonne latérale de l'érecteur du rachis : il monte des côtes 3 à 6 aux processus transverses de C4 à C6.",
+   "origine": [
+    {
+     "texte": "Angles des côtes 3 à 6",
+     "os": [
+      "troisieme-cote",
+      "quatrieme-cote",
+      "cinquieme-cote",
+      "sixieme-cote"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Tubercules postérieurs des processus transverses de C4 à C6",
+     "os": [
+      "vertebre-c4",
+      "vertebre-c5",
+      "vertebre-c6"
+     ]
+    }
+   ],
+   "action": "Les deux ensemble étendent le bas du cou ; un seul l'incline de son côté",
+   "actions": [
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "les deux côtés ensemble"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "inclinaison",
+     "role": "principal",
+     "precision": "un seul côté"
+    }
+   ],
+   "synergistes": [
+    "longissimus-du-cou",
+    "splenius-du-cou",
+    "semi-epineux-du-cou"
+   ],
+   "antagonistes": [
+    "long-du-cou",
+    "sterno-cleido-mastoidien",
+    "scalene-anterieur"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux latéraux des rameaux postérieurs des nerfs cervicaux inférieurs et thoraciques supérieurs",
+    "racines": [
+     "C6",
+     "C7",
+     "C8",
+     "T1",
+     "T2"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux des artères occipitale, cervicale profonde et vertébrale ; rameaux dorsaux des premières artères intercostales postérieures",
+    "arteres": [
+     "artere-occipitale",
+     "artere-cervicale-profonde",
+     "vertebrale",
+     "arteres-intercostales-posterieures"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Pas de paralysie isolée : son innervation est étagée et ses voisins le suppléent. Comme les autres extenseurs, il souffre d'un coup du lapin ou d'une tête longtemps penchée en avant : bas de la nuque raide et douloureux",
+   "clinique": null,
+   "memo": "Ilio-costal : la colonne qui s'accroche aux côtes. Au cou, elle part des côtes 3 à 6 pour finir sur les transverses de C4 à C6",
+   "variantes": "Niveaux d'attache variables d'un sujet à l'autre",
+   "sources": [
+    "gray1918",
+    "kenhub-iliocostal",
+    "elsevier-iliocostal-du-cou",
+    "elsevier-rameaux-posterieurs-cervicaux",
+    "kenhub-fr-dos"
+   ],
+   "divergences": "Les références ne chiffrent pas les racines (« nerfs cervicaux inférieurs et thoraciques supérieurs ») : les niveaux donnés sont indicatifs"
+  },
+  {
+   "id": "interepineux-du-cou",
+   "resume": "Six paires de petits muscles tendus d'un processus épineux cervical au suivant, de chaque côté du ligament interépineux, de l'axis à T1.",
+   "origine": [
+    {
+     "texte": "Bord supérieur du processus épineux de la vertèbre du dessous, de C3 à T1",
+     "os": [
+      "vertebre-c3",
+      "vertebre-c4",
+      "vertebre-c5",
+      "vertebre-c6",
+      "c7",
+      "vertebre-t1"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord inférieur du processus épineux de la vertèbre du dessus, de l'axis à C7",
+     "os": [
+      "axis",
+      "vertebre-c3",
+      "vertebre-c4",
+      "vertebre-c5",
+      "vertebre-c6",
+      "c7"
+     ]
+    }
+   ],
+   "action": "Rapprochent les processus épineux voisins : aident un peu à étendre le cou, mais servent surtout à stabiliser les vertèbres et à renseigner sur leur position",
+   "actions": [
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "stabilisation",
+     "role": "principal",
+     "precision": "tiennent les vertèbres voisines pendant le mouvement ; riches en fuseaux neuromusculaires"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "extension",
+     "role": "accessoire",
+     "precision": "force faible"
+    }
+   ],
+   "synergistes": [
+    "multifides-du-cou",
+    "semi-epineux-du-cou",
+    "epineux-du-cou"
+   ],
+   "antagonistes": [
+    "long-du-cou"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux postérieurs des nerfs cervicaux",
+    "racines": [
+     "C3",
+     "C4",
+     "C5",
+     "C6",
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux des artères vertébrale, cervicale profonde et occipitale",
+    "arteres": [
+     "vertebrale",
+     "artere-cervicale-profonde",
+     "artere-occipitale"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Leur atteinte isolée ne se voit pas : trop faibles pour mouvoir les vertèbres, ils sont suppléés par les autres extenseurs du cou",
+   "clinique": null,
+   "memo": "Inter-épineux : entre deux épineuses. Six paires au cou, de l'espace C2-C3 à l'espace C7-T1",
+   "variantes": "Bien développés au cou et aux lombes ; au thorax, ils sont réduits à quelques paires ou absents",
+   "sources": [
+    "gray1918",
+    "kenhub-interepineux",
+    "elsevier-interepineux-du-cou",
+    "elsevier-rameaux-posterieurs-cervicaux",
+    "bha-dos",
+    "kenhub-fr-cou"
+   ],
+   "divergences": "Les références ne chiffrent pas les racines (« rameaux postérieurs des nerfs cervicaux ») ; C3 à C8 d'après la page de Complete Anatomy consacrée à ces rameaux"
+  },
+  {
+   "id": "longissimus-de-la-tete",
+   "resume": "La partie crânienne du longissimus, sous le splénius : un ruban qui monte des premières vertèbres thoraciques au bord postérieur de la mastoïde.",
+   "origine": [
+    {
+     "texte": "Processus transverses des quatre ou cinq premières vertèbres thoraciques",
+     "os": [
+      "vertebre-t1",
+      "vertebre-t2",
+      "vertebre-t3",
+      "vertebre-t4",
+      "vertebre-t5"
+     ]
+    },
+    {
+     "texte": "Processus articulaires des trois ou quatre dernières vertèbres cervicales (C4 ou C5 à C7)",
+     "os": [
+      "vertebre-c4",
+      "vertebre-c5",
+      "vertebre-c6",
+      "c7"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord postérieur du processus mastoïde de l'os temporal, sous le splénius de la tête et le sterno-cléido-mastoïdien",
+     "os": [
+      "temporal"
+     ]
+    }
+   ],
+   "action": "Les deux ensemble étendent la tête ; un seul l'incline et tourne le visage de son côté",
+   "actions": [
+    {
+     "articulation": "tete",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "les deux côtés ensemble"
+    },
+    {
+     "articulation": "tete",
+     "mouvement": "inclinaison",
+     "role": "principal",
+     "precision": "un seul côté"
+    },
+    {
+     "articulation": "tete",
+     "mouvement": "rotation-homolaterale",
+     "role": "principal",
+     "precision": "un seul côté : le visage se tourne de ce côté"
+    }
+   ],
+   "synergistes": [
+    "splenius-tete",
+    "longissimus-du-cou",
+    "epineux-de-la-tete"
+   ],
+   "antagonistes": [
+    "sterno-cleido-mastoidien",
+    "long-de-la-tete"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux latéraux des rameaux postérieurs des nerfs cervicaux",
+    "racines": [
+     "C2",
+     "C3",
+     "C4",
+     "C5",
+     "C6",
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux des artères occipitale, cervicale profonde et vertébrale",
+    "arteres": [
+     "artere-occipitale",
+     "artere-cervicale-profonde",
+     "vertebrale"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Rarement lésé seul. Étiré par un coup du lapin ou surmené par une posture prolongée, il donne une douleur derrière l'oreille, des céphalées et une raideur de la nuque",
+   "clinique": "Il compte parmi les muscles en cause dans la dystonie cervicale (torticolis spasmodique), que l'on traite par injections de toxine botulique",
+   "memo": "Longissimus, le plus long en latin : sa partie « de la tête » est celle qui atteint le crâne, à la mastoïde",
+   "variantes": "Nombre de languettes d'origine variable d'un sujet à l'autre",
+   "sources": [
+    "gray1918",
+    "kenhub-longissimus",
+    "elsevier-longissimus-tete",
+    "physiopedia-longissimus-tete",
+    "openstax-11-3",
+    "elsevier-rameaux-posterieurs-cervicaux",
+    "kenhub-fr-dos"
+   ],
+   "divergences": "Origine : processus transverses de T1 à T4 ou T5 et processus articulaires de C4 ou C5 à C7 selon les sources. Racines non chiffrées par Gray 1918, Kenhub et Complete Anatomy (« nerfs cervicaux », parfois avec les premiers thoraciques) ; C6 à T4 pour Physiopedia"
+  },
+  {
+   "id": "longissimus-du-cou",
+   "resume": "La partie cervicale du longissimus : de fins tendons montent des processus transverses des premières vertèbres thoraciques à ceux des cervicales, de C2 à C6.",
+   "origine": [
+    {
+     "texte": "Sommet des processus transverses des quatre ou cinq premières vertèbres thoraciques, par de longs tendons grêles",
+     "os": [
+      "vertebre-t1",
+      "vertebre-t2",
+      "vertebre-t3",
+      "vertebre-t4",
+      "vertebre-t5"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Tubercules postérieurs des processus transverses de C2 à C6",
+     "os": [
+      "axis",
+      "vertebre-c3",
+      "vertebre-c4",
+      "vertebre-c5",
+      "vertebre-c6"
+     ]
+    }
+   ],
+   "action": "Les deux ensemble étendent le cou ; un seul l'incline de son côté",
+   "actions": [
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "les deux côtés ensemble"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "inclinaison",
+     "role": "principal",
+     "precision": "un seul côté"
+    }
+   ],
+   "synergistes": [
+    "iliocostal-du-cou",
+    "splenius-du-cou",
+    "semi-epineux-du-cou"
+   ],
+   "antagonistes": [
+    "long-du-cou",
+    "sterno-cleido-mastoidien",
+    "scalene-anterieur"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux latéraux des rameaux postérieurs des nerfs cervicaux et des premiers nerfs thoraciques",
+    "racines": [
+     "C3",
+     "C4",
+     "C5",
+     "C6",
+     "C7",
+     "C8",
+     "T1",
+     "T2"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux des artères vertébrale, cervicale profonde et occipitale ; rameaux dorsaux des premières artères intercostales postérieures",
+    "arteres": [
+     "vertebrale",
+     "artere-cervicale-profonde",
+     "artere-occipitale",
+     "arteres-intercostales-posterieures"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Pas de paralysie isolée, son innervation étant étagée. Avec les autres extenseurs, il est étiré par un coup du lapin ou surmené quand la tête reste longtemps penchée en avant : nuque raide et douloureuse",
+   "clinique": null,
+   "memo": "Ilio-costal en dehors, épineux en dedans : le longissimus est la colonne du milieu de l'érecteur du rachis",
+   "variantes": "Niveaux d'attache variables d'un sujet à l'autre",
+   "sources": [
+    "gray1918",
+    "kenhub-longissimus",
+    "elsevier-longissimus-du-cou",
+    "elsevier-rameaux-posterieurs-cervicaux",
+    "kenhub-fr-dos"
+   ],
+   "divergences": "Origine : T1 à T4 ou T5 (Gray 1918, Kenhub) ou T1 à T6 (Complete Anatomy). Racines non chiffrées par les références (« nerfs cervicaux et thoraciques supérieurs ») : les niveaux donnés sont indicatifs"
+  },
+  {
+   "id": "multifides-du-cou",
+   "resume": "Faisceaux courts et obliques logés dans la gouttière vertébrale du cou, des processus articulaires aux épineuses situées quelques étages plus haut.",
+   "origine": [
+    {
+     "texte": "Processus articulaires des quatre dernières vertèbres cervicales (C4 à C7)",
+     "os": [
+      "vertebre-c4",
+      "vertebre-c5",
+      "vertebre-c6",
+      "c7"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Processus épineux situés deux à cinq vertèbres plus haut, de l'axis à C5",
+     "os": [
+      "axis",
+      "vertebre-c3",
+      "vertebre-c4",
+      "vertebre-c5"
+     ]
+    }
+   ],
+   "action": "Tiennent les vertèbres cervicales étage par étage ; les deux côtés étendent le cou, un seul l'incline de son côté et le tourne vers le côté opposé",
+   "actions": [
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "stabilisation",
+     "role": "principal",
+     "precision": "comme des ligaments réglables, vertèbre par vertèbre"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "les deux côtés ensemble"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "rotation-controlaterale",
+     "role": "accessoire",
+     "precision": "un seul côté"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "inclinaison",
+     "role": "accessoire",
+     "precision": "un seul côté"
+    }
+   ],
+   "synergistes": [
+    "semi-epineux-du-cou",
+    "rotateurs",
+    "interepineux-du-cou"
+   ],
+   "antagonistes": [
+    "long-du-cou"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux médiaux des rameaux postérieurs des nerfs cervicaux",
+    "racines": [
+     "C3",
+     "C4",
+     "C5",
+     "C6",
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux des artères vertébrale, cervicale profonde et occipitale",
+    "arteres": [
+     "vertebrale",
+     "artere-cervicale-profonde",
+     "artere-occipitale"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Leur faiblesse est surtout connue aux lombes, où elle s'accompagne d'instabilité et de douleurs ; au cou, ils sont trop profonds pour être atteints ou examinés seuls",
+   "clinique": null,
+   "memo": "Multifide : fendu en multiples faisceaux, chacun enjambant quelques vertèbres, comme les lacets croisés d'un corset",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-multifides",
+    "elsevier-multifides",
+    "elsevier-rameaux-posterieurs-cervicaux",
+    "kenhub-fr-dos"
+   ],
+   "divergences": "Terminaison : de C2 à C5 (Kenhub) ou jusqu'à C7 (Complete Anatomy). Racines non chiffrées par les références ; C3 à C8 d'après la page de Complete Anatomy consacrée aux rameaux postérieurs cervicaux"
+  },
+  {
+   "id": "omo-hyoidien",
+   "resume": "Un long ruban à deux ventres qui traverse le cou en biais, de la scapula à l'os hyoïde, coudé par un tendon retenu à la clavicule.",
+   "origine": [
+    {
+     "texte": "Ventre inférieur : bord supérieur de la scapula, en dedans de l'incisure scapulaire, parfois ligament transverse supérieur de la scapula",
+     "os": [
+      "scapula"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Ventre supérieur : bord inférieur du corps de l'os hyoïde, en dehors du sterno-hyoïdien",
+     "os": [
+      "hyoide"
+     ]
+    },
+    {
+     "texte": "Tendon intermédiaire : retenu à la clavicule et à la première côte par une expansion du fascia cervical, derrière le sterno-cléido-mastoïdien",
+     "os": [
+      "clavicule",
+      "premiere-cote"
+     ]
+    }
+   ],
+   "action": "Abaisse l'os hyoïde et le tire un peu en arrière après la déglutition ; tend le fascia cervical, ce qui garde ouvertes les grosses veines du cou à l'inspiration profonde",
+   "actions": [
+    {
+     "articulation": "os-hyoide",
+     "mouvement": "abaissement",
+     "role": "principal"
+    },
+    {
+     "articulation": "os-hyoide",
+     "mouvement": "stabilisation",
+     "role": "accessoire",
+     "precision": "s'oppose aux muscles qui élèvent l'os hyoïde"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "abaissement",
+     "role": "accessoire",
+     "precision": "le larynx redescend avec l'os hyoïde"
+    }
+   ],
+   "synergistes": [
+    "sterno-hyoidien",
+    "thyrohyoidien",
+    "sterno-thyroidien"
+   ],
+   "antagonistes": [
+    "digastrique",
+    "stylohyoidien",
+    "mylohyoidien",
+    "geniohyoidien"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Anse cervicale (plexus cervical) : sa racine supérieure (C1) pour le ventre supérieur, l'anse elle-même (C1 à C3) pour le ventre inférieur",
+    "racines": [
+     "C1",
+     "C2",
+     "C3"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameau infra-hyoïdien de l'artère thyroïdienne supérieure ; artère thyroïdienne inférieure",
+    "arteres": [
+     "artere-thyroidienne-inferieure"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Lésion de l'anse cervicale, surtout lors d'une chirurgie du cou : avec les autres muscles infra-hyoïdiens, il ne ramène plus bien vers le bas l'os hyoïde et le larynx après la déglutition",
+   "clinique": "Repère du chirurgien : son tendon intermédiaire est relié à la gaine carotidienne et signale l'artère carotide et la veine jugulaire interne",
+   "memo": "Omo veut dire épaule : c'est le seul muscle de l'os hyoïde qui vient de la scapula, avec deux ventres et un coude",
+   "variantes": "Peut manquer ou être double ; naît parfois de la clavicule ; l'un des deux ventres peut être absent ou dédoublé",
+   "sources": [
+    "gray1918",
+    "kenhub-omo-hyoidien",
+    "elsevier-omo-hyoidien",
+    "tma-infrahyoidiens",
+    "kenhub-fr-cou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "rotateurs",
+   "resume": "Les plus profonds des muscles transversaires épineux : de tout petits faisceaux, surtout nets au thorax, tendus d'un processus transverse à la lame de la vertèbre du dessus.",
+   "origine": [
+    {
+     "texte": "Partie supérieure et postérieure du processus transverse d'une vertèbre, surtout thoracique",
+     "os": [
+      "vertebres-thoraciques"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord inférieur de la lame, jusqu'à la racine du processus épineux, de la vertèbre du dessus (rotateurs courts) ou de la suivante (rotateurs longs)",
+     "os": [
+      "vertebres-thoraciques"
+     ]
+    }
+   ],
+   "action": "Tiennent les vertèbres voisines et renseignent sur leur position ; d'un seul côté ils aident à tourner le tronc vers le côté opposé, des deux côtés à l'étendre",
+   "actions": [
+    {
+     "articulation": "rachis-thoracique",
+     "mouvement": "stabilisation",
+     "role": "principal",
+     "precision": "bras de levier trop court pour mouvoir : ils tiennent les vertèbres voisines"
+    },
+    {
+     "articulation": "rachis-thoracique",
+     "mouvement": "rotation-controlaterale",
+     "role": "accessoire",
+     "precision": "un seul côté, en renfort des multifides"
+    },
+    {
+     "articulation": "rachis-thoracique",
+     "mouvement": "extension",
+     "role": "accessoire",
+     "precision": "les deux côtés ensemble"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "rotation-controlaterale",
+     "role": "accessoire",
+     "precision": "faisceaux cervicaux inconstants, de même action"
+    }
+   ],
+   "synergistes": [
+    "multifides-du-thorax",
+    "multifides-du-cou",
+    "semi-epineux-du-thorax"
+   ],
+   "antagonistes": [],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux médiaux des rameaux postérieurs des nerfs spinaux, étage par étage (nerfs thoraciques pour l'essentiel)",
+    "racines": [
+     "T1",
+     "T2",
+     "T3",
+     "T4",
+     "T5",
+     "T6",
+     "T7",
+     "T8",
+     "T9",
+     "T10",
+     "T11"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux dorsaux des artères intercostales postérieures",
+    "arteres": [
+     "arteres-intercostales-posterieures"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Leur atteinte isolée passe inaperçue : minuscules, profonds et innervés étage par étage, ils n'ont qu'un rôle d'appoint derrière les multifides qui les recouvrent",
+   "clinique": null,
+   "memo": "Courts ou longs : le rotateur court saute à la vertèbre du dessus, le long en enjambe une ; onze paires au thorax",
+   "variantes": "Bien individualisés au thorax seulement (onze paires) ; inconstants au cou et aux lombes, où des faisceaux profonds du multifide les remplacent",
+   "sources": [
+    "gray1918",
+    "kenhub-rotateurs",
+    "elsevier-rotateurs",
+    "bha-dos",
+    "kenhub-fr-dos"
+   ],
+   "divergences": "Gray 1918 ne les décrit qu'au thorax ; pour d'autres ils existent aux trois étages, les faisceaux cervicaux et lombaires étant inconstants. Terminaison : lame, ou base du processus épineux selon les auteurs"
+  },
+  {
+   "id": "scalene-anterieur",
+   "resume": "Le scalène de devant, repère clé de la base du cou : le nerf phrénique descend sur lui, l'artère subclavière et le plexus brachial passent derrière.",
+   "origine": [
+    {
+     "texte": "Tubercules antérieurs des processus transverses de C3 à C6, par quatre tendons",
+     "os": [
+      "vertebre-c3",
+      "vertebre-c4",
+      "vertebre-c5",
+      "vertebre-c6"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Tubercule du muscle scalène antérieur (de Lisfranc), au bord interne et à la face supérieure de la première côte, en avant du sillon de l'artère subclavière",
+     "os": [
+      "premiere-cote"
+     ]
+    }
+   ],
+   "action": "Soulève la première côte à l'inspiration ; côtes fixes, un seul incline le cou de son côté et le tourne vers le côté opposé, les deux ensemble le fléchissent",
+   "actions": [
+    {
+     "articulation": "cotes",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "première côte"
+    },
+    {
+     "articulation": "respiration",
+     "mouvement": "inspiration",
+     "role": "accessoire",
+     "precision": "surtout en inspiration forcée"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "inclinaison",
+     "role": "principal",
+     "precision": "un seul côté, côtes fixes"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "flexion",
+     "role": "accessoire",
+     "precision": "les deux côtés ensemble"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "rotation-controlaterale",
+     "role": "accessoire",
+     "precision": "un seul côté"
+    }
+   ],
+   "synergistes": [
+    "scalene-moyen",
+    "scalene-posterieur",
+    "sterno-cleido-mastoidien"
+   ],
+   "antagonistes": [
+    "intercostaux-internes"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux antérieurs des nerfs cervicaux C4 à C6",
+    "racines": [
+     "C4",
+     "C5",
+     "C6"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cervicale ascendante, branche de l'artère thyroïdienne inférieure",
+    "arteres": [
+     "artere-thyroidienne-inferieure"
+    ]
+   },
+   "palpation": "Au-dessus de la clavicule, en arrière du sterno-cléido-mastoïdien, où il durcit à l'inspiration forcée",
+   "test": "Test global des scalènes : sujet couché, tête tournée du côté opposé, fléchir le cou contre une légère résistance posée sur le front",
+   "atteinte": "Hypertrophié ou contracturé, il rétrécit le défilé interscalénique et comprime le plexus brachial et l'artère subclavière : fourmillements et douleurs du bord ulnaire de la main, plus rarement troubles circulatoires",
+   "clinique": "Bloc interscalénique : l'anesthésique est injecté entre scalènes antérieur et moyen, à hauteur du cartilage cricoïde, pour opérer le membre supérieur ; le nerf phrénique, plaqué sur sa face antérieure, est tout proche",
+   "memo": "Veine devant, artère derrière : la veine subclavière passe en avant de lui, l'artère subclavière et le plexus brachial en arrière",
+   "variantes": "Un petit scalène (scalenus minimus) s'ajoute parfois derrière lui, de C7 au bord interne de la première côte et au dôme pleural",
+   "sources": [
+    "gray1918",
+    "kenhub-scalenes",
+    "elsevier-scalene-anterieur",
+    "tma-scalenes",
+    "physiopedia-scalenes",
+    "wikipedia-fr-scalene-anterieur",
+    "kenhub-fr-cou"
+   ],
+   "divergences": "Racines : C4-C6 (Kenhub, Complete Anatomy), C5-C6 (TeachMeAnatomy), C5-C7 (Physiopedia), C4-C7 (Wikipédia) ; Gray 1918 donne C2 à C7 pour l'ensemble des scalènes"
+  },
+  {
+   "id": "scalene-moyen",
+   "resume": "Le plus gros et le plus long des scalènes : il forme, avec l'antérieur, le défilé où passent le plexus brachial et l'artère subclavière.",
+   "origine": [
+    {
+     "texte": "Processus transverse de l'axis, souvent aussi de l'atlas",
+     "os": [
+      "axis",
+      "atlas"
+     ]
+    },
+    {
+     "texte": "Tubercules postérieurs des processus transverses de C3 à C7",
+     "os": [
+      "vertebre-c3",
+      "vertebre-c4",
+      "vertebre-c5",
+      "vertebre-c6",
+      "c7"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Face supérieure de la première côte, entre le tubercule de la côte et le sillon de l'artère subclavière",
+     "os": [
+      "premiere-cote"
+     ]
+    }
+   ],
+   "action": "Soulève la première côte à l'inspiration ; côtes fixes, incline le cou de son côté",
+   "actions": [
+    {
+     "articulation": "cotes",
+     "mouvement": "elevation",
+     "role": "principal",
+     "precision": "première côte"
+    },
+    {
+     "articulation": "respiration",
+     "mouvement": "inspiration",
+     "role": "accessoire",
+     "precision": "surtout en inspiration forcée"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "inclinaison",
+     "role": "principal",
+     "precision": "un seul côté, côtes fixes"
+    }
+   ],
+   "synergistes": [
+    "scalene-anterieur",
+    "scalene-posterieur",
+    "sterno-cleido-mastoidien"
+   ],
+   "antagonistes": [
+    "intercostaux-internes"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux antérieurs des nerfs cervicaux C3 à C8",
+    "racines": [
+     "C3",
+     "C4",
+     "C5",
+     "C6",
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cervicale ascendante, branche de l'artère thyroïdienne inférieure",
+    "arteres": [
+     "artere-thyroidienne-inferieure"
+    ]
+   },
+   "palpation": "Dans le triangle postérieur du cou, juste en arrière du scalène antérieur ; le sillon qui les sépare se cherche à hauteur du cartilage cricoïde",
+   "test": "Test global des scalènes : sujet couché, tête tournée du côté opposé, fléchir le cou contre une légère résistance posée sur le front",
+   "atteinte": "Contracturé ou hypertrophié, il resserre par l'arrière le défilé interscalénique et participe à la compression du plexus brachial et de l'artère subclavière : fourmillements et douleurs du bras et de la main",
+   "clinique": "Le nerf dorsal de la scapula et les racines hautes du nerf thoracique long (nerf du dentelé antérieur) traversent son corps charnu",
+   "memo": "Moyen par la place, premier par la taille : c'est le mur du fond du défilé des scalènes",
+   "variantes": "Un faisceau supplémentaire monte souvent jusqu'à l'atlas ; le scalène postérieur lui est parfois fusionné",
+   "sources": [
+    "gray1918",
+    "kenhub-scalenes",
+    "elsevier-scalene-moyen",
+    "tma-scalenes",
+    "physiopedia-scalenes",
+    "kenhub-fr-cou"
+   ],
+   "divergences": "Origine haute : l'axis pour Gray 1918 et TeachMeAnatomy, l'atlas en plus pour Kenhub et Complete Anatomy. Racines : C3 à C8 pour les auteurs récents ; C2 à C7 pour l'ensemble des scalènes chez Gray 1918"
+  },
+  {
+   "id": "semi-epineux-du-cou",
+   "resume": "Muscle transversaire épineux de la nuque, caché sous le semi-épineux de la tête : il relie les processus transverses thoraciques hauts aux épineuses cervicales.",
+   "origine": [
+    {
+     "texte": "Processus transverses des cinq ou six premières vertèbres thoraciques",
+     "os": [
+      "vertebre-t1",
+      "vertebre-t2",
+      "vertebre-t3",
+      "vertebre-t4",
+      "vertebre-t5",
+      "vertebre-t6"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Processus épineux de l'axis à C5",
+     "os": [
+      "axis",
+      "vertebre-c3",
+      "vertebre-c4",
+      "vertebre-c5"
+     ]
+    }
+   ],
+   "action": "Les deux ensemble étendent le cou ; un seul le tourne vers le côté opposé et l'incline un peu de son côté",
+   "actions": [
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "les deux côtés ensemble"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "rotation-controlaterale",
+     "role": "principal",
+     "precision": "un seul côté"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "inclinaison",
+     "role": "accessoire",
+     "precision": "un seul côté"
+    }
+   ],
+   "synergistes": [
+    "multifides-du-cou",
+    "splenius-du-cou",
+    "longissimus-du-cou"
+   ],
+   "antagonistes": [
+    "long-du-cou",
+    "sterno-cleido-mastoidien"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux médiaux des rameaux postérieurs des nerfs cervicaux inférieurs et thoraciques supérieurs",
+    "racines": [
+     "C6",
+     "C7",
+     "C8",
+     "T1",
+     "T2"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Artère cervicale profonde surtout ; rameaux des artères occipitale et vertébrale",
+    "arteres": [
+     "artere-cervicale-profonde",
+     "artere-occipitale",
+     "vertebrale"
+    ]
+   },
+   "palpation": null,
+   "test": "Extension du cou contre une résistance posée sur l'arc d'une vertèbre cervicale : elle le recrute, juste sous le point d'appui, plus que le splénius de la tête",
+   "atteinte": "Son activité baisse chez les sujets qui souffrent du cou, alors que le splénius de la tête, plus superficiel, devient hyperactif : le cou est moins bien tenu en extension",
+   "clinique": "La rééducation des cervicalgies cherche à le réactiver par des exercices d'extension contre une résistance localisée",
+   "memo": "Semi-épineux : à moitié seulement sur les épineuses, car il part des processus transverses. Ses faisceaux enjambent jusqu'à six vertèbres",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-semi-epineux-du-cou",
+    "elsevier-semi-epineux",
+    "physiopedia-semi-epineux-du-cou",
+    "physiopedia-splenius-tete",
+    "kenhub-fr-dos"
+   ],
+   "divergences": "Racines non chiffrées par les références (« nerfs cervicaux », « cervicaux inférieurs et thoraciques ») : niveaux indicatifs. Physiopedia ajoute une origine sur les processus articulaires de C4 à C7, que les autres attribuent au semi-épineux de la tête"
+  },
+  {
+   "id": "splenius-du-cou",
+   "resume": "Le petit frère du splénius de la tête, qu'il prolonge en bas et en dehors : il monte des épineuses thoraciques aux processus transverses des premières cervicales.",
+   "origine": [
+    {
+     "texte": "Processus épineux de T3 à T6, par une étroite bande tendineuse",
+     "os": [
+      "vertebre-t3",
+      "vertebre-t4",
+      "vertebre-t5",
+      "vertebre-t6"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Tubercules postérieurs des processus transverses des deux ou trois premières vertèbres cervicales (atlas, axis, parfois C3)",
+     "os": [
+      "atlas",
+      "axis",
+      "vertebre-c3"
+     ]
+    }
+   ],
+   "action": "Les deux ensemble étendent le cou ; un seul l'incline et le tourne de son côté",
+   "actions": [
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "les deux côtés ensemble"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "rotation-homolaterale",
+     "role": "principal",
+     "precision": "un seul côté"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "inclinaison",
+     "role": "accessoire",
+     "precision": "un seul côté"
+    }
+   ],
+   "synergistes": [
+    "splenius-tete",
+    "longissimus-du-cou",
+    "iliocostal-du-cou"
+   ],
+   "antagonistes": [
+    "long-du-cou",
+    "sterno-cleido-mastoidien"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux latéraux des rameaux postérieurs des nerfs cervicaux inférieurs",
+    "racines": [
+     "C5",
+     "C6",
+     "C7",
+     "C8"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Branche descendante de l'artère occipitale et artère cervicale profonde ; rameaux des artères vertébrale et transverse du cou",
+    "arteres": [
+     "artere-occipitale",
+     "artere-cervicale-profonde",
+     "vertebrale",
+     "artere-transverse-du-cou"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Indissociable en pratique du splénius de la tête : contracturé avec lui, il tire le cou en extension et en rotation de son côté ; nuque raide et douloureuse",
+   "clinique": null,
+   "memo": "Même bandage que le splénius de la tête, un étage plus bas : épineuses de T3 à T6, transverses de l'atlas à C3",
+   "variantes": "L'attache sur C3 est inconstante",
+   "sources": [
+    "gray1918",
+    "kenhub-splenius-du-cou",
+    "elsevier-splenius-du-cou",
+    "elsevier-rameaux-posterieurs-cervicaux",
+    "kenhub-fr-dos"
+   ],
+   "divergences": "Racines : « nerfs cervicaux inférieurs » (Kenhub, Complete Anatomy) ou « moyens et inférieurs » (Gray 1918), sans niveaux chiffrés : ceux donnés sont indicatifs"
+  },
+  {
+   "id": "sterno-hyoidien",
+   "resume": "Une mince lanière verticale de chaque côté de la ligne médiane du cou, du sternum à l'os hyoïde : le plus superficiel des muscles infra-hyoïdiens.",
+   "origine": [
+    {
+     "texte": "Face postérieure du manubrium sternal, extrémité médiale de la clavicule et ligament sternoclaviculaire postérieur",
+     "os": [
+      "manubrium-sternal",
+      "clavicule",
+      "ligament-sternoclaviculaire-posterieur"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Bord inférieur du corps de l'os hyoïde, en dedans de l'omo-hyoïdien",
+     "os": [
+      "hyoide"
+     ]
+    }
+   ],
+   "action": "Abaisse l'os hyoïde, et le larynx avec lui, après qu'ils sont montés pour avaler ; le fixe quand les muscles supra-hyoïdiens ouvrent la bouche",
+   "actions": [
+    {
+     "articulation": "os-hyoide",
+     "mouvement": "abaissement",
+     "role": "principal"
+    },
+    {
+     "articulation": "os-hyoide",
+     "mouvement": "stabilisation",
+     "role": "accessoire",
+     "precision": "s'oppose aux muscles qui élèvent l'os hyoïde"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "abaissement",
+     "role": "accessoire",
+     "precision": "le larynx redescend avec l'os hyoïde"
+    }
+   ],
+   "synergistes": [
+    "omo-hyoidien",
+    "sterno-thyroidien",
+    "thyrohyoidien"
+   ],
+   "antagonistes": [
+    "digastrique",
+    "stylohyoidien",
+    "mylohyoidien",
+    "geniohyoidien"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Anse cervicale (plexus cervical)",
+    "racines": [
+     "C1",
+     "C2",
+     "C3"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameau infra-hyoïdien de l'artère thyroïdienne supérieure",
+    "arteres": []
+   },
+   "palpation": "De part et d'autre de la ligne médiane du cou, entre l'incisure jugulaire du sternum et l'os hyoïde, en avant du larynx",
+   "test": null,
+   "atteinte": "Lésion de l'anse cervicale, surtout lors d'une chirurgie du cou : avec les autres muscles infra-hyoïdiens, il ne ramène plus bien vers le bas l'os hyoïde et le larynx après la déglutition",
+   "clinique": "Avec le sterno-thyroïdien, il sépare la veine jugulaire antérieure, en surface, de l'artère carotide commune, en profondeur",
+   "memo": "Du sternum à l'os hyoïde, tout droit : le premier ruban que l'on rencontre sous le platysma, au-devant du larynx",
+   "variantes": "Peut manquer, être double, ou recevoir un faisceau né de la clavicule (muscle cléido-hyoïdien)",
+   "sources": [
+    "gray1918",
+    "kenhub-sterno-hyoidien",
+    "elsevier-sterno-hyoidien",
+    "tma-infrahyoidiens",
+    "kenhub-fr-cou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "sterno-thyroidien",
+   "resume": "Un ruban large et court caché sous le sterno-hyoïdien, du sternum au cartilage thyroïde : il tire le larynx vers le bas et recouvre la glande thyroïde.",
+   "origine": [
+    {
+     "texte": "Face postérieure du manubrium sternal, sous l'attache du sterno-hyoïdien, et bord du premier cartilage costal",
+     "os": [
+      "manubrium-sternal",
+      "cartilage-costal-de-la-premiere-cote"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Ligne oblique de la lame du cartilage thyroïde",
+     "os": [
+      "cartilage-thyroide"
+     ]
+    }
+   ],
+   "action": "Abaisse le larynx après la déglutition et dans les sons graves ; en écartant le cartilage thyroïde de l'os hyoïde, élargit l'entrée du larynx à l'inspiration forcée",
+   "actions": [
+    {
+     "articulation": "larynx",
+     "mouvement": "abaissement",
+     "role": "principal"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "phonation",
+     "role": "accessoire",
+     "precision": "abaisse le larynx dans les sons graves"
+    },
+    {
+     "articulation": "os-hyoide",
+     "mouvement": "abaissement",
+     "role": "accessoire",
+     "precision": "avec les autres muscles infra-hyoïdiens"
+    }
+   ],
+   "synergistes": [
+    "sterno-hyoidien",
+    "omo-hyoidien"
+   ],
+   "antagonistes": [
+    "thyrohyoidien",
+    "stylopharyngien",
+    "digastrique"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Anse cervicale (plexus cervical)",
+    "racines": [
+     "C1",
+     "C2",
+     "C3"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameau infra-hyoïdien de l'artère thyroïdienne supérieure ; rameaux de l'artère linguale",
+    "arteres": []
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Lésion de l'anse cervicale, ou section du muscle pour atteindre le pôle supérieur de la thyroïde : le larynx redescend moins bien. Aucun retentissement fonctionnel de cette section n'a été démontré",
+   "clinique": "Plaqué sur le lobe latéral de la thyroïde, il limite, avec le sterno-hyoïdien, l'extension vers le haut d'une glande augmentée de volume",
+   "memo": "Sterno-thyroïdien puis thyrohyoïdien : deux étages d'une même lanière qui se relaient sur la ligne oblique du cartilage thyroïde",
+   "variantes": "Peut manquer ou être double ; un faisceau naît parfois du deuxième cartilage costal ; faisceaux accessoires vers le thyrohyoïdien ou le constricteur inférieur du pharynx",
+   "sources": [
+    "gray1918",
+    "kenhub-sterno-thyroidien",
+    "elsevier-sterno-thyroidien",
+    "tma-infrahyoidiens",
+    "kenhub-fr-cou"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "thyro-arytenoidien",
+   "resume": "Le muscle de la corde vocale : tendu d'avant en arrière dans le pli vocal, de l'angle du cartilage thyroïde à l'aryténoïde, il la raccourcit et la détend.",
+   "origine": [
+    {
+     "texte": "Moitié inférieure de l'angle rentrant du cartilage thyroïde et ligament cricothyroïdien médian voisin",
+     "os": [
+      "cartilage-thyroide",
+      "ligament-cricothyroide-median"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Base et face antéro-latérale du cartilage aryténoïde",
+     "os": [
+      "cartilage-arytenoide"
+     ]
+    },
+    {
+     "texte": "Muscle vocal (fibres profondes) : processus vocal de l'aryténoïde, le long du ligament vocal",
+     "os": [
+      "cartilage-arytenoide"
+     ]
+    },
+    {
+     "texte": "Partie thyro-épiglottique : fibres prolongées dans le pli aryépiglottique, jusqu'au bord de l'épiglotte",
+     "os": []
+    }
+   ],
+   "action": "Tire le cartilage aryténoïde vers l'avant : la corde vocale se raccourcit, s'épaissit et se détend, la voix descend. Aide aussi à accoler les cordes ; ses fibres profondes règlent finement leur tension",
+   "actions": [
+    {
+     "articulation": "larynx",
+     "mouvement": "phonation",
+     "role": "principal",
+     "precision": "raccourcit et détend la corde vocale : sons graves"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "fermeture",
+     "role": "accessoire",
+     "precision": "rotation médiale de l'aryténoïde : rapproche les cordes vocales"
+    },
+    {
+     "articulation": "larynx",
+     "mouvement": "tension",
+     "role": "accessoire",
+     "precision": "le muscle vocal, accolé au ligament vocal, ajuste finement la tension de la corde"
+    }
+   ],
+   "synergistes": [
+    "crico-arytenoidien-lateral",
+    "arytenoidien-transverse"
+   ],
+   "antagonistes": [
+    "cricothyroidien",
+    "crico-arytenoidien-posterieur"
+   ],
+   "innervation": {
+    "nerf": "nerf-vague-x",
+    "texte": "Nerf laryngé récurrent (nerf laryngé inférieur), branche du nerf vague (X)",
+    "racines": [
+     "X"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux laryngés des artères thyroïdiennes supérieure et inférieure",
+    "arteres": [
+     "artere-thyroidienne-inferieure"
+    ]
+   },
+   "palpation": null,
+   "test": "Pas de test direct : la mobilité des cordes vocales et des cartilages aryténoïdes s'observe en laryngoscopie",
+   "atteinte": "Paralysie du nerf laryngé récurrent : la corde vocale, privée de son muscle, perd son tonus et vibre mal ; voix enrouée, faible et vite fatiguée",
+   "clinique": "Ses fibres forment le corps même de la corde vocale : sans accolement ni tension convenables, la corde ne vibre pas",
+   "memo": "Cricothyroïdien tend, thyro-aryténoïdien détend : l'un allonge la corde pour l'aigu, l'autre la raccourcit pour le grave",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-thyro-arytenoidien",
+    "kenhub-crico-arytenoidien-posterieur",
+    "tma-muscles-larynx",
+    "elsevier-muscles-larynx"
+   ],
+   "divergences": "Le muscle vocal est tantôt décrit comme sa partie profonde (Gray 1918), tantôt comme un muscle à part ; Kenhub lui ajoute un filet venu du nerf laryngé externe"
+  },
+  {
+   "id": "epineux-du-cou",
+   "resume": "La partie cervicale, grêle et inconstante, de l'épineux : quelques fibres tendues d'épineuse à épineuse, du bas de la nuque vers l'axis.",
+   "origine": [
+    {
+     "texte": "Partie basse du ligament nuchal et processus épineux de C7, parfois de T1 et T2",
+     "os": [
+      "ligament-nuchal",
+      "c7",
+      "vertebre-t1",
+      "vertebre-t2"
+     ]
+    }
+   ],
+   "terminaison": [
+    {
+     "texte": "Processus épineux de l'axis, parfois de C3 et C4",
+     "os": [
+      "axis",
+      "vertebre-c3",
+      "vertebre-c4"
+     ]
+    }
+   ],
+   "action": "Les deux ensemble aident à étendre le cou ; un seul l'incline légèrement de son côté",
+   "actions": [
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "extension",
+     "role": "principal",
+     "precision": "les deux côtés ensemble ; muscle grêle, action faible"
+    },
+    {
+     "articulation": "rachis-cervical",
+     "mouvement": "inclinaison",
+     "role": "accessoire",
+     "precision": "un seul côté"
+    }
+   ],
+   "synergistes": [
+    "semi-epineux-du-cou",
+    "interepineux-du-cou",
+    "longissimus-du-cou"
+   ],
+   "antagonistes": [
+    "long-du-cou"
+   ],
+   "innervation": {
+    "nerf": null,
+    "texte": "Rameaux postérieurs des nerfs cervicaux inférieurs et des premiers nerfs thoraciques",
+    "racines": [
+     "C6",
+     "C7",
+     "C8",
+     "T1",
+     "T2"
+    ]
+   },
+   "vascularisation": {
+    "texte": "Rameaux des artères cervicale profonde et vertébrale, branches descendantes de l'artère occipitale",
+    "arteres": [
+     "artere-cervicale-profonde",
+     "vertebrale",
+     "artere-occipitale"
+    ]
+   },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Souvent absent ou réduit à quelques fibres sans que rien n'y paraisse : les autres extenseurs du cou font le travail",
+   "clinique": null,
+   "memo": "Épineux : d'épineuse à épineuse, au plus près de la ligne médiane ; c'est la colonne la plus médiale de l'érecteur du rachis",
+   "variantes": "Muscle inconstant, souvent mal individualisé ; il se confond parfois avec le semi-épineux du cou",
+   "sources": [
+    "gray1918",
+    "kenhub-epineux",
+    "elsevier-epineux-du-cou",
+    "kenhub-fr-dos"
+   ],
+   "divergences": "Origine : C7, parfois T1-T2 (Gray 1918), C7-T1 (Kenhub) ou C7 à T2 (Complete Anatomy). Terminaison : axis seul ou C2 à C4. Racines non chiffrées par les références : niveaux indicatifs"
+  }
+ ]
+}

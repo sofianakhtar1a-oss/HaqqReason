@@ -1,0 +1,1405 @@
+{
+ "sources": {
+  "gray1918": { "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral numérisé (Internet Archive) : muscles du tronc, de la ceinture scapulaire et de la région iliaque", "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt" },
+  "openstax-11-3": { "titre": "OpenStax, Anatomy and Physiology 2e, 11.3 Axial Muscles of the Head, Neck, and Back", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back" },
+  "openstax-11-4": { "titre": "OpenStax, Anatomy and Physiology 2e, 11.4 Axial Muscles of the Abdominal Wall, and Thorax", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax" },
+  "openstax-11-5": { "titre": "OpenStax, Anatomy and Physiology 2e, 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs" },
+  "openstax-11-6": { "titre": "OpenStax, Anatomy and Physiology 2e, 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs" },
+  "tma-paroi-abdominale": { "titre": "TeachMeAnatomy, The Anterolateral Abdominal Wall", "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/" },
+  "tma-paroi-posterieure": { "titre": "TeachMeAnatomy, The Posterior Abdominal Wall", "url": "https://teachmeanatomy.info/abdomen/muscles/posterior-wall/" },
+  "tma-plancher-pelvien": { "titre": "TeachMeAnatomy, The Pelvic Floor", "url": "https://teachmeanatomy.info/pelvis/muscles/pelvic-floor/" },
+  "tma-thorax": { "titre": "TeachMeAnatomy, Thoracic Muscles", "url": "https://teachmeanatomy.info/thorax/muscles/thoracic-cage/" },
+  "tma-pectoral": { "titre": "TeachMeAnatomy, Muscles of the Pectoral Region", "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/" },
+  "tma-dos-superficiel": { "titre": "TeachMeAnatomy, The Superficial Back Muscles", "url": "https://teachmeanatomy.info/back/muscles/superficial/" },
+  "tma-dos-intermediaire": { "titre": "TeachMeAnatomy, The Intermediate Back Muscles", "url": "https://teachmeanatomy.info/back/muscles/intermediate/" },
+  "tma-dos-profond": { "titre": "TeachMeAnatomy, The Intrinsic Back Muscles", "url": "https://teachmeanatomy.info/back/muscles/intrinsic" },
+  "tma-diaphragme": { "titre": "TeachMeAnatomy, The Diaphragm", "url": "https://teachmeanatomy.info/thorax/muscles/diaphragm/" },
+  "tma-iliococcygien": { "titre": "TeachMeAnatomy, Iliococcygeus", "url": "https://teachmeanatomy.info/encyclopaedia/i/iliococcygeus/" },
+  "tma-pubococcygien": { "titre": "TeachMeAnatomy, Pubococcygeus", "url": "https://teachmeanatomy.info/encyclopaedia/p/pubococcygeus/" },
+  "tma-coccygien": { "titre": "TeachMeAnatomy, Coccygeus", "url": "https://teachmeanatomy.info/encyclopaedia/c/coccygeus/" },
+  "tma-puborectal": { "titre": "TeachMeAnatomy, Puborectalis", "url": "https://teachmeanatomy.info/encyclopaedia/p/puborectalis/" },
+  "uams-abdomen": { "titre": "University of Arkansas for Medical Sciences, Anatomy Tables : Muscles of the Abdominal Region", "url": "https://medicine.uams.edu/neurobiology/education/medical-school-courses/human-structure-module/anatomy-tables/muscle-tables/muscles-of-the-abdominal-region/" },
+  "uams-dos": { "titre": "University of Arkansas for Medical Sciences, Anatomy Tables : Muscles of the Back Region", "url": "https://medicine.uams.edu/neurobiology/education/medical-school-courses/human-structure-module/anatomy-tables/muscle-tables/muscles-of-the-back-region/" },
+  "uams-thorax": { "titre": "University of Arkansas for Medical Sciences, Anatomy Tables : Muscles of the Thorax", "url": "https://medicine.uams.edu/neurobiology/education/medical-school-courses/human-structure-module/anatomy-tables/muscle-tables/muscles-of-the-thorax" },
+  "uams-bassin": { "titre": "University of Arkansas for Medical Sciences, Anatomy Tables : Muscles of the Pelvis and Perineum", "url": "https://medicine.uams.edu/neurobiology/education/medical-school-courses/human-structure-module/anatomy-tables/muscle-tables/muscles-of-the-pelvis-and-perineum/" },
+  "uams-membre-superieur": { "titre": "University of Arkansas for Medical Sciences, Anatomy Tables : Muscles of the Upper Limb", "url": "https://medicine.uams.edu/neurobiology/education/medical-school-courses/human-structure-module/anatomy-tables/muscle-tables/muscles-of-the-upper-limb/" },
+  "loyola-dos": { "titre": "Loyola University Chicago (LUMEN), Back Muscle Table", "url": "https://www.stritch.luc.edu/lumen/meded/grossanatomy/homepage/muscletables/backmuscletable.pdf" },
+  "dartmouth-thorax": { "titre": "O'Rahilly, Müller, Carpenter, Swenson, Basic Human Anatomy (Dartmouth), chap. 20 : The thoracic wall and mediastinum", "url": "https://humananatomy.host.dartmouth.edu/BHA/public_html/part_4/chapter_20.html" },
+  "lecturio-dos": { "titre": "Lecturio, Muscles of the Back", "url": "https://lecturio.com/concepts/muscles-of-the-back" },
+  "physiopedia-elevateur-anus": { "titre": "Physiopedia, Levator Ani Muscle", "url": "https://physio-pedia.com/Levator_Ani_Muscle" },
+  "elsevier-nerf-elevateur-anus": { "titre": "Elsevier, Complete Anatomy : Nerve to levator ani", "url": "https://elsevier.com/resources/anatomy/nervous-system/peripheral-nervous-system/nerve-to-levator-ani/18377" },
+  "kenhub-droit-abdomen": { "titre": "Kenhub, Rectus abdominis muscle", "url": "https://www.kenhub.com/en/library/anatomy/rectus-abdominis-muscle" },
+  "kenhub-paroi-abdominale": { "titre": "Kenhub, Anterior abdominal muscles", "url": "https://www.kenhub.com/en/library/anatomy/anterior-abdominal-muscles" },
+  "kenhub-pyramidal": { "titre": "Kenhub, Pyramidalis muscle", "url": "https://www.kenhub.com/en/library/anatomy/pyramidalis-muscle" },
+  "kenhub-oblique-externe": { "titre": "Kenhub, External abdominal oblique muscle", "url": "https://www.kenhub.com/en/library/anatomy/external-abdominal-oblique-muscle" },
+  "kenhub-oblique-interne": { "titre": "Kenhub, Internal abdominal oblique muscle", "url": "https://www.kenhub.com/en/library/anatomy/internal-abdominal-oblique-muscle" },
+  "kenhub-transverse-abdomen": { "titre": "Kenhub, Transversus abdominis muscle", "url": "https://www.kenhub.com/en/library/anatomy/transversus-abdominis-muscle" },
+  "kenhub-carre-lombes": { "titre": "Kenhub, Quadratus lumborum muscle", "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle" },
+  "kenhub-psoas": { "titre": "Kenhub, Psoas major muscle", "url": "https://www.kenhub.com/en/library/anatomy/psoas-major-muscle" },
+  "kenhub-iliaque": { "titre": "Kenhub, Iliacus muscle", "url": "https://www.kenhub.com/en/library/anatomy/iliacus-muscle" },
+  "kenhub-iliopsoas": { "titre": "Kenhub, Iliopsoas muscle", "url": "https://www.kenhub.com/en/library/anatomy/iliopsoas-muscle" },
+  "kenhub-diaphragme": { "titre": "Kenhub, Diaphragm", "url": "https://www.kenhub.com/en/library/anatomy/diaphragm" },
+  "kenhub-diaphragme-fr": { "titre": "Kenhub (en français), Diaphragme", "url": "https://www.kenhub.com/fr/library/anatomie/diaphragme" },
+  "kenhub-intercostaux": { "titre": "Kenhub, Intercostal muscles", "url": "https://www.kenhub.com/en/library/anatomy/intercostal-muscles" },
+  "kenhub-intercostaux-externes": { "titre": "Kenhub, External intercostal muscles", "url": "https://www.kenhub.com/en/library/anatomy/external-intercostal-muscles" },
+  "kenhub-intercostaux-internes": { "titre": "Kenhub, Internal intercostal muscles", "url": "https://www.kenhub.com/en/library/anatomy/internal-intercostal-muscles" },
+  "kenhub-intercostaux-intimes": { "titre": "Kenhub, Innermost intercostal muscles", "url": "https://www.kenhub.com/en/library/anatomy/innermost-intercostal-muscles" },
+  "kenhub-espaces-intercostaux": { "titre": "Kenhub, Intercostal spaces", "url": "https://www.kenhub.com/en/library/anatomy/intercostal-spaces" },
+  "kenhub-transverse-thorax": { "titre": "Kenhub, Transversus thoracis muscle", "url": "https://www.kenhub.com/en/library/anatomy/transversus-thoracis-muscle" },
+  "kenhub-elevateurs-cotes": { "titre": "Kenhub, Levatores costarum muscles", "url": "https://www.kenhub.com/en/library/anatomy/levatores-costarum-muscles" },
+  "kenhub-denteles-posterieurs": { "titre": "Kenhub, Serratus posterior muscles", "url": "https://www.kenhub.com/en/library/anatomy/serratus-posterior-muscles" },
+  "kenhub-grand-pectoral": { "titre": "Kenhub, Pectoralis major muscle", "url": "https://www.kenhub.com/en/library/anatomy/major-pectoralis-muscle" },
+  "kenhub-petit-pectoral": { "titre": "Kenhub, Pectoralis minor muscle", "url": "https://www.kenhub.com/en/library/anatomy/pectoralis-minor-muscle" },
+  "kenhub-subclavier": { "titre": "Kenhub, Subclavius muscle", "url": "https://www.kenhub.com/en/library/anatomy/subclavius-muscle" },
+  "kenhub-dentele-anterieur": { "titre": "Kenhub, Serratus anterior muscle", "url": "https://www.kenhub.com/en/library/anatomy/serratus-anterior-muscle" },
+  "kenhub-grand-dorsal": { "titre": "Kenhub, Latissimus dorsi muscle", "url": "https://www.kenhub.com/en/library/anatomy/latissimus-dorsi-muscle" },
+  "kenhub-trapeze": { "titre": "Kenhub, Trapezius muscle", "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle" },
+  "kenhub-rhomboides": { "titre": "Kenhub, Rhomboid muscles", "url": "https://www.kenhub.com/en/library/anatomy/rhomboid-muscles" },
+  "kenhub-dos-profond": { "titre": "Kenhub, Deep back muscles", "url": "https://www.kenhub.com/en/library/anatomy/intrinsic-back-muscles" },
+  "kenhub-dos-profond-fr": { "titre": "Kenhub (en français), Muscles profonds du dos", "url": "https://www.kenhub.com/fr/library/anatomie/muscles-profonds-du-dos" },
+  "kenhub-ilio-costal": { "titre": "Kenhub, Iliocostalis muscle", "url": "https://www.kenhub.com/en/library/anatomy/iliocostalis-muscle" },
+  "kenhub-longissimus": { "titre": "Kenhub, Longissimus muscle", "url": "https://www.kenhub.com/en/library/anatomy/longissimus-muscle" },
+  "kenhub-epineux": { "titre": "Kenhub, Spinalis muscle", "url": "https://www.kenhub.com/en/library/anatomy/spinalis-muscle" },
+  "kenhub-semi-epineux-thorax": { "titre": "Kenhub, Semispinalis thoracis muscle", "url": "https://www.kenhub.com/en/library/anatomy/semispinalis-thoracis-muscle" },
+  "kenhub-multifide": { "titre": "Kenhub, Multifidus muscle", "url": "https://www.kenhub.com/en/library/anatomy/multifidus-muscle" },
+  "kenhub-interepineux": { "titre": "Kenhub, Interspinales muscles", "url": "https://www.kenhub.com/en/library/anatomy/interspinales-muscles" },
+  "kenhub-elevateur-anus": { "titre": "Kenhub, Levator ani muscle", "url": "https://www.kenhub.com/en/library/anatomy/levator-ani" },
+  "kenhub-plancher-pelvien": { "titre": "Kenhub, Muscles of the pelvic floor", "url": "https://www.kenhub.com/en/library/anatomy/muscles-of-the-pelvic-floor" },
+  "kenhub-sphincter-anal-externe": { "titre": "Kenhub, External anal sphincter", "url": "https://www.kenhub.com/en/library/anatomy/external-anal-sphincter" }
+ },
+ "fiches": [
+  {
+   "id": "droit-abdomen",
+   "resume": "Le muscle des « abdominaux » : une longue bande verticale de chaque côté de la ligne blanche, qui enroule le tronc vers l'avant.",
+   "origine": [
+    { "texte": "Tendon latéral, le plus large : crête pubienne", "os": ["pubis"] },
+    { "texte": "Tendon médial : devant de la symphyse pubienne, où il s'entrecroise avec celui du côté opposé", "os": ["symphyse-pubienne"] }
+   ],
+   "terminaison": [
+    { "texte": "Face antérieure des cartilages costaux 5, 6 et 7, par trois languettes", "os": ["cartilage-costal-de-la-cinquieme-cote", "cartilage-costal-de-la-sixieme-cote", "cartilage-costal-de-la-septieme-cote"] },
+    { "texte": "Processus xiphoïde, par quelques fibres médiales", "os": ["processus-xiphoide"] }
+   ],
+   "action": "Fléchit le tronc en rapprochant le thorax du pubis ; comprime les viscères (toux, expiration forcée, défécation, accouchement) et retient le bassin, qu'il empêche de basculer en avant",
+   "actions": [
+    { "articulation": "rachis-lombaire", "mouvement": "flexion", "role": "principal" },
+    { "articulation": "rachis-thoracique", "mouvement": "flexion", "role": "principal" },
+    { "articulation": "abdomen", "mouvement": "compression", "role": "accessoire", "precision": "avec les muscles larges de la paroi" },
+    { "articulation": "respiration", "mouvement": "expiration", "role": "accessoire", "precision": "expiration forcée" },
+    { "articulation": "cotes", "mouvement": "abaissement", "role": "accessoire", "precision": "abaisse le devant du thorax vers le bassin" },
+    { "articulation": "bassin", "mouvement": "stabilisation", "role": "accessoire", "precision": "retient le bassin en rétroversion et le stabilise pendant la marche" }
+   ],
+   "synergistes": ["oblique-externe", "oblique-interne", "grand-psoas"],
+   "antagonistes": ["ilio-costal", "longissimus", "multifides-lombaire"],
+   "innervation": { "nerf": "nerfs-intercostaux", "texte": "Nerfs intercostaux T7 à T11 (thoraco-abdominaux) et nerf subcostal (T12)", "racines": ["T7", "T8", "T9", "T10", "T11", "T12"] },
+   "vascularisation": { "texte": "Artères épigastriques supérieure et inférieure (la principale) ; appoint des dernières intercostales postérieures et de la subcostale", "arteres": ["artere-epigastrique-superieure", "epigastrique-inferieure", "arteres-intercostales-posterieures", "artere-subcostale"] },
+   "palpation": "De part et d'autre de la ligne médiane du ventre ; il durcit quand le sujet, couché sur le dos, relève la tête et les épaules",
+   "test": "Sujet couché sur le dos : enroulement du tronc (redressement) contre la pesanteur, puis contre résistance",
+   "atteinte": "Paralysie ou grande faiblesse : se redresser de la position couchée devient difficile, la toux et les efforts de poussée perdent leur force, le bassin bascule en avant et la lordose lombaire se creuse. Diastasis : les deux muscles s'écartent de la ligne blanche (grossesse, obésité)",
+   "clinique": "Le lambeau du droit de l'abdomen (TRAM) a longtemps servi à reconstruire le sein ; le lambeau perforant de l'épigastrique inférieure (DIEP), qui épargne le muscle, tend à le remplacer",
+   "memo": "Trois intersections tendineuses le découpent en « tablettes de chocolat » : à l'ombilic, à la pointe du processus xiphoïde et à mi-chemin",
+   "variantes": "Insertion haute pouvant atteindre la 4e ou la 3e côte ; une ou deux intersections incomplètes sous l'ombilic",
+   "sources": ["gray1918", "kenhub-droit-abdomen", "kenhub-paroi-abdominale", "tma-paroi-abdominale", "uams-abdomen", "openstax-11-4"],
+   "divergences": "Innervation : T7 à T11 seuls pour TeachMeAnatomy, T6 à T12 dans une page de Kenhub ; la plupart retiennent T7 à T11 et le nerf subcostal (T12)"
+  },
+  {
+   "id": "grand-dorsal",
+   "resume": "Le plus large muscle du dos : un éventail tendu des lombes à l'humérus, qui ramène le bras en bas et en arrière.",
+   "origine": [
+    { "texte": "Processus épineux des six dernières vertèbres thoraciques (T7 à T12), sous le trapèze", "os": ["vertebre-t7", "vertebre-t8", "vertebre-t9", "vertebre-t10", "vertebre-t11", "vertebre-t12"] },
+    { "texte": "Lame postérieure du fascia thoraco-lombaire, qui le relie aux processus épineux lombaires et à la crête sacrale", "os": ["lame-posterieure-du-fascia-thoracolombaire", "vertebres-lombaires", "sacrum"] },
+    { "texte": "Tiers postérieur de la crête iliaque", "os": ["ilium"] },
+    { "texte": "Trois ou quatre dernières côtes, par des digitations engrenées avec celles de l'oblique externe", "os": ["neuvieme-cote", "dixieme-cote", "onzieme-cote", "douzieme-cote"] },
+    { "texte": "Angle inférieur de la scapula, par quelques fibres inconstantes", "os": ["scapula"] }
+   ],
+   "terminaison": [
+    { "texte": "Fond du sillon intertuberculaire de l'humérus, par un tendon plat qui contourne le bord inférieur du grand rond", "os": ["humerus"] }
+   ],
+   "action": "Ramène le bras levé vers le bas et l'arrière, le plaque contre le corps et le tourne en dedans ; bras fixés, il hisse le tronc (grimper, se soulever sur des béquilles)",
+   "actions": [
+    { "articulation": "epaule", "mouvement": "extension", "role": "principal" },
+    { "articulation": "epaule", "mouvement": "adduction", "role": "principal" },
+    { "articulation": "epaule", "mouvement": "rotation-mediale", "role": "principal" },
+    { "articulation": "scapula", "mouvement": "abaissement", "role": "accessoire", "precision": "abaisse le moignon de l'épaule par l'intermédiaire de l'humérus" },
+    { "articulation": "respiration", "mouvement": "expiration", "role": "accessoire", "precision": "se contracte à la toux" },
+    { "articulation": "respiration", "mouvement": "inspiration", "role": "accessoire", "precision": "bras fixés, soulève les dernières côtes" }
+   ],
+   "synergistes": ["grand-rond", "grand-pectoral", "triceps-brachial"],
+   "antagonistes": ["deltoide", "supra-epineux"],
+   "innervation": { "nerf": "nerf-thoracodorsal", "texte": "Nerf thoraco-dorsal, né du faisceau postérieur du plexus brachial", "racines": ["C6", "C7", "C8"] },
+   "vascularisation": { "texte": "Artère thoraco-dorsale ; rameaux perforants des dernières intercostales postérieures et des artères lombaires", "arteres": ["artere-thoracodorsale", "arteres-intercostales-posterieures", "arteres-lombaires"] },
+   "palpation": "Il forme, avec le grand rond, le pli postérieur de l'aisselle : on le saisit entre pouce et doigts quand le sujet abaisse le bras contre résistance",
+   "test": "Adduction du bras contre résistance à partir de l'abduction : son bord saille au pli postérieur de l'aisselle ; il durcit aussi quand le sujet tousse",
+   "atteinte": "Lésion du nerf thoraco-dorsal ou du plexus brachial : le relief du muscle et le pli postérieur de l'aisselle s'effacent ; la gêne reste modérée, mais grimper, ramer ou se soulever sur des béquilles devient difficile",
+   "clinique": "Son lambeau musculo-cutané, pédiculé sur les vaisseaux thoraco-dorsaux, sert à reconstruire le sein après une mastectomie",
+   "memo": "Latissimus veut dire « le plus large » : le muscle du grimpeur, du rameur et du nageur",
+   "variantes": "Nombre de vertèbres et de côtes d'origine variable ; arc axillaire (bandelette musculaire jetée en travers de l'aisselle) chez environ 7 % des sujets",
+   "sources": ["gray1918", "kenhub-grand-dorsal", "tma-dos-superficiel", "uams-dos", "loyola-dos", "openstax-11-5"],
+   "divergences": "Racines : C6 à C8 pour Gray et Kenhub, C7 et C8 pour les tables UAMS. Origine thoracique : T7 à T12 pour la plupart, dès T6 pour TeachMeAnatomy"
+  },
+  {
+   "id": "trapeze",
+   "resume": "Le grand muscle plat de la nuque et du haut du dos : il suspend l'épaule, hausse, rapproche et abaisse la scapula.",
+   "origine": [
+    { "texte": "Partie descendante : tiers médial de la ligne nuchale supérieure, protubérance occipitale externe et ligament nuchal", "os": ["occipital", "ligament-nuchal"] },
+    { "texte": "Partie transverse : processus épineux de C7 et des premières vertèbres thoraciques, ligament supra-épineux", "os": ["c7", "vertebre-t1", "vertebre-t2", "vertebre-t3", "ligament-supra-epineux"] },
+    { "texte": "Partie ascendante : processus épineux des vertèbres thoraciques suivantes, jusqu'à T12", "os": ["vertebre-t4", "vertebre-t5", "vertebre-t6", "vertebre-t7", "vertebre-t8", "vertebre-t9", "vertebre-t10", "vertebre-t11", "vertebre-t12"] }
+   ],
+   "terminaison": [
+    { "texte": "Partie descendante : bord postérieur du tiers latéral de la clavicule", "os": ["clavicule"] },
+    { "texte": "Partie transverse : bord médial de l'acromion et lèvre supérieure de l'épine de la scapula", "os": ["scapula"] },
+    { "texte": "Partie ascendante : tubercule de l'extrémité médiale de l'épine de la scapula, par une lame tendineuse", "os": ["scapula"] }
+   ],
+   "action": "Hausse l'épaule (partie descendante), tire la scapula vers la colonne (partie transverse) et l'abaisse (partie ascendante) ; fait pivoter la glène vers le haut pour lever le bras au-dessus de l'horizontale ; étend la tête",
+   "actions": [
+    { "articulation": "scapula", "mouvement": "elevation", "role": "principal", "precision": "partie descendante" },
+    { "articulation": "scapula", "mouvement": "retraction", "role": "principal", "precision": "partie transverse, avec les rhomboïdes" },
+    { "articulation": "scapula", "mouvement": "abaissement", "role": "principal", "precision": "partie ascendante" },
+    { "articulation": "scapula", "mouvement": "sonnette-laterale", "role": "principal", "precision": "parties descendante et ascendante, avec le dentelé antérieur" },
+    { "articulation": "tete", "mouvement": "extension", "role": "accessoire", "precision": "les deux côtés ensemble, épaules fixes" },
+    { "articulation": "rachis-cervical", "mouvement": "extension", "role": "accessoire" },
+    { "articulation": "rachis-cervical", "mouvement": "inclinaison", "role": "accessoire", "precision": "partie descendante d'un seul côté" },
+    { "articulation": "tete", "mouvement": "rotation-controlaterale", "role": "accessoire", "precision": "tourne la face du côté opposé" }
+   ],
+   "synergistes": ["elevateur-scapula", "grand-rhomboide", "petit-rhomboide", "dentele-anterieur"],
+   "antagonistes": ["petit-pectoral", "grand-dorsal"],
+   "innervation": { "nerf": "nerf-accessoire-xi", "texte": "Nerf accessoire (XI) pour la motricité ; rameaux du plexus cervical (C3, C4), surtout proprioceptifs", "racines": ["XI", "C3", "C4"] },
+   "vascularisation": { "texte": "Artère transverse du cou (branche superficielle) ; artère occipitale pour la partie haute, artère dorsale de la scapula pour la partie basse", "arteres": ["artere-transverse-du-cou", "branche-superficielle-de-l-artere-transverse-du-cou", "artere-occipitale", "branche-profonde-de-l-artere-transverse-du-cou"] },
+   "palpation": "Sous la peau, de la nuque à T12 ; son bord supérieur se pince entre le cou et l'épaule quand le sujet hausse les épaules",
+   "test": "Haussement des épaules contre la résistance des mains de l'examinateur ; couplé au test du sterno-cléido-mastoïdien, il situe la lésion du nerf accessoire",
+   "atteinte": "Paralysie du nerf accessoire : épaule tombante, ligne du cou asymétrique, muscle fondu, haussement de l'épaule faible et bras difficile à lever au-dessus de l'horizontale",
+   "clinique": "Le nerf accessoire traverse le triangle postérieur du cou juste sous la peau : une biopsie ganglionnaire ou la pose d'une voie veineuse jugulaire peuvent le blesser",
+   "memo": "Les deux trapèzes dessinent un losange, de l'occiput à T12 : le capuchon du moine. Trois directions de fibres, trois actions : hausser, rapprocher, abaisser",
+   "variantes": "Attaches thoraciques basses souvent réduites ; attache occipitale parfois absente ; insertion claviculaire d'étendue variable, pouvant rejoindre le sterno-cléido-mastoïdien",
+   "sources": ["gray1918", "kenhub-trapeze", "tma-dos-superficiel", "uams-dos", "loyola-dos", "openstax-11-5"],
+   "divergences": "Limite entre parties transverse et ascendante variable selon les auteurs (C7 à T3 ou T1 à T4 pour la partie transverse). Rameaux C3 et C4 : proprioceptifs seulement pour la plupart, en partie moteurs pour d'autres"
+  },
+  {
+   "id": "diaphragme",
+   "resume": "La coupole musculaire qui sépare le thorax de l'abdomen : le principal muscle de l'inspiration.",
+   "origine": [
+    { "texte": "Partie sternale : face postérieure du processus xiphoïde, par deux petits faisceaux", "os": ["processus-xiphoide"] },
+    { "texte": "Partie costale : face interne des six derniers cartilages costaux et des côtes voisines, en s'engrenant avec le transverse de l'abdomen", "os": ["cartilage-costal-de-la-septieme-cote", "cartilage-costal-de-la-huitieme-cote", "cartilage-costal-de-la-neuvieme-cote", "cartilage-costal-de-la-dixieme-cote", "onzieme-cote", "douzieme-cote"] },
+    { "texte": "Partie lombaire, piliers : le droit sur les corps de L1 à L3, le gauche sur L1 et L2, et sur les disques qui les séparent", "os": ["vertebre-l1", "vertebre-l2", "vertebre-l3", "ligament-longitudinal-anterieur"] },
+    { "texte": "Partie lombaire, ligaments arqués : le médial enjambe le grand psoas, le latéral le carré des lombes jusqu'à la 12e côte", "os": ["vertebre-l1", "douzieme-cote"] }
+   ],
+   "terminaison": [
+    { "texte": "Centre tendineux, lame fibreuse en forme de trèfle au sommet de la coupole, accolée au péricarde", "os": ["centre-tendineux"] }
+   ],
+   "action": "S'abaisse et s'aplatit en se contractant : le thorax s'agrandit vers le bas et l'air entre ; il soulève aussi les dernières côtes et, avec les abdominaux, augmente la pression dans l'abdomen (toux, défécation, accouchement)",
+   "actions": [
+    { "articulation": "respiration", "mouvement": "inspiration", "role": "principal" },
+    { "articulation": "cotes", "mouvement": "elevation", "role": "accessoire", "precision": "soulève les côtes basses quand le centre tendineux prend appui sur les viscères" },
+    { "articulation": "abdomen", "mouvement": "compression", "role": "accessoire", "precision": "poussée abdominale, avec les muscles de la paroi" }
+   ],
+   "synergistes": ["intercostaux-externes", "scalene-anterieur", "scalene-moyen"],
+   "antagonistes": ["transverse-abdomen", "oblique-interne", "oblique-externe", "intercostaux-internes"],
+   "innervation": { "nerf": null, "texte": "Nerf phrénique, un par hémi-coupole ; la périphérie reçoit des fibres sensitives des derniers nerfs intercostaux", "racines": ["C3", "C4", "C5"] },
+   "vascularisation": { "texte": "Artères phréniques inférieures surtout ; artères phréniques supérieures, musculo-phréniques et péricardiaco-phréniques, dernières intercostales", "arteres": ["artere-phrenique-inferieure", "arteres-phreniques-superieures", "artere-musculophrenique", "arteres-intercostales-posterieures"] },
+   "palpation": null,
+   "test": "Pas de test manuel : la radiographie montre une coupole paralysée surélevée, qui monte à l'inspiration au lieu de descendre (mouvement paradoxal)",
+   "atteinte": "Paralysie d'un nerf phrénique : la coupole de ce côté reste haute et monte à l'inspiration, souvent sans gêne. Paralysie des deux côtés : essoufflement à l'effort et en position couchée, fatigue, parfois besoin d'une ventilation assistée",
+   "clinique": "Hernie hiatale : l'estomac glisse dans le thorax par le hiatus œsophagien. Le hoquet est une contraction brusque et involontaire du muscle",
+   "memo": "« C3, C4, C5 : le diaphragme en vie. » Trois orifices, trois étages : veine cave en T8, œsophage en T10, aorte en T12",
+   "variantes": "Partie sternale parfois absente ; des interstices sans fibres (triangle sterno-costal en avant, trigone lombo-costal en arrière) sont des points faibles où passent les hernies",
+   "sources": ["gray1918", "kenhub-diaphragme", "kenhub-diaphragme-fr", "tma-diaphragme", "dartmouth-thorax", "uams-thorax", "openstax-11-4"],
+   "divergences": "Origine costale : six dernières côtes et leurs cartilages (Gray), côtes 7 à 12 (Kenhub) ou 6 à 12 (OpenStax). Foramen de la veine cave en T8, ou en regard du disque T8–T9 pour Gray"
+  },
+  {
+   "id": "grand-pectoral",
+   "resume": "Le grand éventail du devant de la poitrine : il rapproche le bras du corps, le tourne en dedans et le porte en avant.",
+   "origine": [
+    { "texte": "Chef claviculaire : moitié médiale de la face antérieure de la clavicule", "os": ["clavicule"] },
+    { "texte": "Chef sterno-costal : face antérieure du sternum et six premiers cartilages costaux", "os": ["manubrium-sternal", "corps-du-sternum", "cartilage-costal-de-la-premiere-cote", "cartilage-costal-de-la-deuxieme-cote", "cartilage-costal-de-la-troisieme-cote", "cartilage-costal-de-la-quatrieme-cote", "cartilage-costal-de-la-cinquieme-cote", "cartilage-costal-de-la-sixieme-cote"] },
+    { "texte": "Partie abdominale : lame antérieure de la gaine du droit de l'abdomen (aponévrose de l'oblique externe)", "os": ["gaine-du-droit"] }
+   ],
+   "terminaison": [
+    { "texte": "Crête du tubercule majeur de l'humérus (lèvre latérale du sillon intertuberculaire), par un tendon à deux lames dont les fibres se croisent", "os": ["humerus"] }
+   ],
+   "action": "Rapproche le bras du corps et le tourne en dedans ; son chef claviculaire porte le bras en avant, sa partie sterno-costale abaisse le bras levé ; bras fixés, il hisse le tronc et aide l'inspiration forcée",
+   "actions": [
+    { "articulation": "epaule", "mouvement": "adduction", "role": "principal" },
+    { "articulation": "epaule", "mouvement": "rotation-mediale", "role": "principal" },
+    { "articulation": "epaule", "mouvement": "flexion", "role": "principal", "precision": "chef claviculaire, jusqu'à l'horizontale" },
+    { "articulation": "epaule", "mouvement": "extension", "role": "accessoire", "precision": "partie sterno-costale : ramène vers le bas le bras levé en avant" },
+    { "articulation": "scapula", "mouvement": "protraction", "role": "accessoire", "precision": "attire le moignon de l'épaule en avant et en bas, par l'intermédiaire de l'humérus" },
+    { "articulation": "respiration", "mouvement": "inspiration", "role": "accessoire", "precision": "inspiration forcée, bras fixés" }
+   ],
+   "synergistes": ["grand-dorsal", "grand-rond", "subscapulaire", "coraco-brachial"],
+   "antagonistes": ["deltoide", "supra-epineux", "infra-epineux"],
+   "innervation": { "nerf": "nerf-pectoral-lateral", "texte": "Nerfs pectoraux latéral et médial, qui lui apportent des fibres de toutes les racines du plexus brachial", "racines": ["C5", "C6", "C7", "C8", "T1"] },
+   "vascularisation": { "texte": "Branches pectorales de l'artère thoraco-acromiale ; rameaux perforants de l'artère thoracique interne", "arteres": ["branches-pectorales-de-l-artere-thoraco-acromiale", "artere-thoraco-acromiale", "thoracique-interne"] },
+   "palpation": "Il forme le pli antérieur de l'aisselle, que l'on saisit entre pouce et doigts ; toute sa masse durcit quand le sujet presse ses mains l'une contre l'autre devant lui",
+   "test": "Rapprochement des bras contre résistance (mains pressées l'une contre l'autre, ou sur les hanches) : les deux chefs se dessinent et durcissent sous la peau",
+   "atteinte": "Paralysé (lésion des nerfs pectoraux ou du plexus brachial) ou absent : adduction et rotation médiale du bras affaiblies, relief de la poitrine effacé et asymétrique",
+   "clinique": "Syndrome de Poland : absence congénitale, partielle ou complète, du muscle d'un côté, souvent associée à des anomalies des doigts. Chez la femme, le sein repose sur son fascia",
+   "memo": "Trois origines (clavicule, sternum et côtes, abdomen), un seul tendon tordu sur lui-même : les fibres venues du bas se fixent le plus haut sur l'humérus",
+   "variantes": "Étendue des attaches sternales et costales variable ; partie abdominale petite ou absente ; absence possible de la partie sterno-costale, plus rarement du chef claviculaire",
+   "sources": ["gray1918", "kenhub-grand-pectoral", "tma-pectoral", "uams-membre-superieur", "openstax-11-5"],
+   "divergences": "Cartilages costaux d'origine : 1 à 6 (Kenhub), 2 à 6 (tables UAMS), 1 à 6 ou 7 (OpenStax) ; Gray note que le premier et le septième manquent souvent"
+  },
+  {
+   "id": "grand-psoas",
+   "resume": "Le long muscle tendu de la colonne lombaire au fémur : avec l'iliaque, c'est le plus puissant fléchisseur de la hanche.",
+   "origine": [
+    { "texte": "Corps vertébraux de T12 à L5 et disques qui les unissent, par cinq languettes reliées par des arcades fibreuses", "os": ["vertebre-t12", "vertebre-l1", "vertebre-l2", "vertebre-l3", "vertebre-l4", "vertebre-l5", "disque-intervertebral-t12-l1", "disque-intervertebral-l1-l2", "disque-intervertebral-l2-l3", "disque-intervertebral-l3-l4", "disque-intervertebral-l4-l5"] },
+    { "texte": "Face antérieure et bord inférieur des processus transverses (costiformes) des cinq vertèbres lombaires", "os": ["vertebre-l1", "vertebre-l2", "vertebre-l3", "vertebre-l4", "vertebre-l5"] }
+   ],
+   "terminaison": [
+    { "texte": "Petit trochanter du fémur, par un tendon qui passe sous le ligament inguinal, devant la hanche, et reçoit les fibres de l'iliaque", "os": ["femur"] }
+   ],
+   "action": "Fléchit la cuisse sur le bassin et la tourne un peu en dehors ; cuisse fixe, les deux psoas fléchissent le tronc sur les cuisses (se redresser du lit), un seul incline la colonne lombaire de son côté",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "flexion", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "accessoire" },
+    { "articulation": "rachis-lombaire", "mouvement": "flexion", "role": "accessoire", "precision": "fémurs fixes : redresse le tronc couché" },
+    { "articulation": "rachis-lombaire", "mouvement": "inclinaison", "role": "accessoire" }
+   ],
+   "synergistes": ["iliaque", "droit-femoral", "sartorius", "tenseur-fascia-lata"],
+   "antagonistes": ["grand-fessier", "biceps-femoral", "semi-tendineux", "semi-membraneux"],
+   "innervation": { "nerf": null, "texte": "Rameaux directs du plexus lombaire (rameaux antérieurs de L1 à L3), qui se forme dans l'épaisseur même du muscle", "racines": ["L1", "L2", "L3"] },
+   "vascularisation": { "texte": "Artères lombaires et branche lombaire de l'artère ilio-lombaire ; appoint des artères obturatrice, iliaque externe et fémorale", "arteres": ["arteres-lombaires", "artere-iliolombaire", "branche-lombaire-de-l-artere-iliolombaire", "artere-obturatrice", "iliaque-externe", "femorale"] },
+   "palpation": null,
+   "test": "Flexion de la hanche contre résistance, sujet assis, cuisse décollée du siège : on teste l'ilio-psoas en bloc",
+   "atteinte": "Paralysie (atteinte haute du plexus lombaire) : flexion de la hanche très faible, montée des marches et passage de la position couchée à la position assise difficiles. Muscle rétracté : hanche fixée en flexion, lordose lombaire accentuée",
+   "clinique": "Signe du psoas : la flexion de la cuisse contre résistance, ou son extension passive qui étire le muscle, réveille la douleur d'une appendicite, car l'appendice enflammé repose sur le psoas droit",
+   "memo": "Chez l'animal de boucherie, c'est le filet mignon. Psoas et iliaque finissent ensemble sur le petit trochanter : l'ilio-psoas, le muscle qui lève le genou",
+   "variantes": "Le petit psoas, muscle grêle posé devant lui, manque chez environ quatre personnes sur dix",
+   "sources": ["gray1918", "kenhub-psoas", "kenhub-iliopsoas", "tma-paroi-posterieure", "uams-abdomen", "openstax-11-6"],
+   "divergences": "Racines : L1 à L3 (Kenhub, TeachMeAnatomy), L2 et L3 (Gray), L2 à L4 (tables UAMS). Corps vertébraux d'origine : T12 à L5 (Gray) ou T12 à L4 (Kenhub)"
+  },
+  {
+   "id": "oblique-externe",
+   "resume": "Le plus superficiel des trois muscles larges du ventre : ses fibres descendent en avant, « comme les mains dans les poches ».",
+   "origine": [
+    { "texte": "Face externe des huit dernières côtes (5 à 12), par des digitations engrenées avec celles du dentelé antérieur en haut et du grand dorsal en bas", "os": ["cinquieme-cote", "sixieme-cote", "septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote", "douzieme-cote"] }
+   ],
+   "terminaison": [
+    { "texte": "Moitié antérieure de la lèvre externe de la crête iliaque, par ses fibres postérieures, presque verticales", "os": ["ilium"] },
+    { "texte": "Ligne blanche, du processus xiphoïde à la symphyse pubienne, par une large aponévrose qui passe devant le droit de l'abdomen", "os": ["ligne-blanche", "gaine-du-droit"] },
+    { "texte": "Tubercule et crête du pubis ; le bord inférieur de l'aponévrose, tendu depuis l'épine iliaque antéro-supérieure, forme le ligament inguinal", "os": ["pubis", "ligament-inguinal"] }
+   ],
+   "action": "Des deux côtés : fléchit le tronc, comprime les viscères et aide l'expiration forcée. D'un seul côté : incline le tronc de son côté et le fait tourner vers le côté opposé",
+   "actions": [
+    { "articulation": "rachis-thoracique", "mouvement": "rotation-controlaterale", "role": "principal", "precision": "avec l'oblique interne du côté opposé" },
+    { "articulation": "rachis-lombaire", "mouvement": "rotation-controlaterale", "role": "principal" },
+    { "articulation": "rachis-lombaire", "mouvement": "inclinaison", "role": "principal" },
+    { "articulation": "rachis-lombaire", "mouvement": "flexion", "role": "accessoire", "precision": "les deux côtés ensemble, avec le droit de l'abdomen" },
+    { "articulation": "rachis-thoracique", "mouvement": "flexion", "role": "accessoire" },
+    { "articulation": "abdomen", "mouvement": "compression", "role": "principal" },
+    { "articulation": "respiration", "mouvement": "expiration", "role": "accessoire", "precision": "expiration forcée" },
+    { "articulation": "cotes", "mouvement": "abaissement", "role": "accessoire" }
+   ],
+   "synergistes": ["oblique-interne", "droit-abdomen", "transverse-abdomen"],
+   "antagonistes": ["ilio-costal", "longissimus"],
+   "innervation": { "nerf": "nerfs-intercostaux", "texte": "Nerfs intercostaux T7 à T11 (thoraco-abdominaux) et nerf subcostal (T12)", "racines": ["T7", "T8", "T9", "T10", "T11", "T12"] },
+   "vascularisation": { "texte": "Dernières artères intercostales postérieures et artère subcostale ; artère circonflexe iliaque profonde", "arteres": ["arteres-intercostales-posterieures", "artere-subcostale"] },
+   "palpation": "Sur le flanc et le devant des dernières côtes, où ses digitations dessinent une ligne en dents de scie avec celles du dentelé antérieur ; il durcit quand le tronc tourne vers le côté opposé",
+   "test": "Sujet couché sur le dos : redressement du tronc avec rotation, l'épaule allant vers la hanche opposée, contre résistance",
+   "atteinte": "Paralysie ou faiblesse : rotation du tronc vers le côté opposé et efforts de poussée (toux, expiration forcée) diminués ; une paroi affaiblie expose aux hernies",
+   "clinique": "Son aponévrose forme le ligament inguinal et la paroi antérieure du canal inguinal ; l'anneau inguinal superficiel, par où sort le cordon spermatique, est une fente triangulaire de cette aponévrose, au-dessus de la crête pubienne",
+   "memo": "Obliques externe et interne se croisent en X : pour tourner le tronc vers la gauche, l'oblique externe droit travaille avec l'oblique interne gauche",
+   "variantes": "Nombre de digitations costales variable ; rares intersections tendineuses",
+   "sources": ["gray1918", "kenhub-oblique-externe", "tma-paroi-abdominale", "uams-abdomen", "openstax-11-4"],
+   "divergences": "Les tables UAMS ajoutent les nerfs ilio-hypogastrique et ilio-inguinal ; pour Kenhub, l'ilio-hypogastrique (L1) ne lui apporte que des fibres sensitives"
+  },
+  {
+   "id": "dentele-anterieur",
+   "resume": "Le muscle en dents de scie plaqué sur le côté du thorax : il avance la scapula, la colle aux côtes et la fait pivoter pour lever le bras.",
+   "origine": [
+    { "texte": "Face externe des huit ou neuf premières côtes, par des digitations charnues ; la première naît des côtes 1 et 2, les quatre dernières s'engrènent avec l'oblique externe", "os": ["premiere-cote", "deuxieme-cote", "troisieme-cote", "quatrieme-cote", "cinquieme-cote", "sixieme-cote", "septieme-cote", "huitieme-cote", "neuvieme-cote"] }
+   ],
+   "terminaison": [
+    { "texte": "Partie supérieure : face costale de l'angle supérieur de la scapula", "os": ["scapula"] },
+    { "texte": "Partie moyenne : face costale du bord médial de la scapula, sur presque toute sa longueur", "os": ["scapula"] },
+    { "texte": "Partie inférieure, la plus puissante : face costale de l'angle inférieur, où convergent les cinq ou six dernières digitations", "os": ["scapula"] }
+   ],
+   "action": "Tire la scapula vers l'avant autour du thorax (pousser, donner un coup de poing) et la maintient plaquée contre les côtes ; ses fibres basses font pivoter la glène vers le haut, ce qui permet de lever le bras au-dessus de l'horizontale",
+   "actions": [
+    { "articulation": "scapula", "mouvement": "protraction", "role": "principal" },
+    { "articulation": "scapula", "mouvement": "sonnette-laterale", "role": "principal", "precision": "fibres inférieures, avec le trapèze" },
+    { "articulation": "scapula", "mouvement": "stabilisation", "role": "principal", "precision": "plaque le bord médial contre le thorax" },
+    { "articulation": "cotes", "mouvement": "elevation", "role": "accessoire", "precision": "scapula fixe" },
+    { "articulation": "respiration", "mouvement": "inspiration", "role": "accessoire", "precision": "inspiration forcée, épaules fixées ; rôle modeste" }
+   ],
+   "synergistes": ["petit-pectoral", "trapeze", "grand-pectoral"],
+   "antagonistes": ["grand-rhomboide", "petit-rhomboide", "elevateur-scapula"],
+   "innervation": { "nerf": "nerf-thoracique-long", "texte": "Nerf thoracique long, qui descend à la surface du muscle", "racines": ["C5", "C6", "C7"] },
+   "vascularisation": { "texte": "Artère thoracique latérale ; artère thoracique supérieure en haut, branches de l'artère thoraco-dorsale en bas", "arteres": ["artere-thoracique-laterale", "artere-thoracodorsale"] },
+   "palpation": "Sur le côté du thorax, sous l'aisselle, entre le grand pectoral et le grand dorsal : ses digitations se dessinent chez le sujet maigre ou musclé qui pousse devant lui",
+   "test": "Le sujet pousse des deux mains contre un mur, coudes tendus : si le muscle est faible, le bord médial de la scapula se décolle du thorax",
+   "atteinte": "Paralysie du nerf thoracique long (chirurgie de l'aisselle, port de charges lourdes, étirement brutal du bras) : la scapula se décolle en aile (scapula alata) et le bras ne monte plus au-dessus de l'horizontale",
+   "clinique": "Le nerf thoracique long court à découvert sur la paroi latérale du thorax : il est exposé lors des curages ganglionnaires de l'aisselle",
+   "memo": "Le muscle du boxeur : il lance le coup de poing. Ses racines C5, C6, C7 sont celles qui lèvent les bras au ciel",
+   "variantes": "Dixième digitation chez environ une personne sur dix ; fibres basses parfois unies à l'oblique externe ; première digitation ou partie moyenne parfois absentes",
+   "sources": ["gray1918", "kenhub-dentele-anterieur", "tma-pectoral", "uams-membre-superieur", "uams-dos", "openstax-11-5"],
+   "divergences": "Nombre de côtes d'origine : huit ou neuf selon les sujets et les auteurs. Répartition des digitations entre les trois parties variable d'un ouvrage à l'autre"
+  },
+  {
+   "id": "oblique-interne",
+   "resume": "Le muscle large moyen du ventre : ses fibres montent en éventail depuis la crête iliaque, à angle droit de celles de l'oblique externe.",
+   "origine": [
+    { "texte": "Fascia thoraco-lombaire", "os": ["fascia-thoraco-lombaire"] },
+    { "texte": "Deux tiers antérieurs de la ligne intermédiaire de la crête iliaque", "os": ["ilium"] },
+    { "texte": "Moitié à deux tiers latéraux du ligament inguinal, ou plutôt, en profondeur, arcade ilio-pectinée", "os": ["ligament-inguinal", "arcade-iliopectinee"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord inférieur des trois ou quatre dernières côtes et de leurs cartilages, dans le prolongement des intercostaux internes", "os": ["dixieme-cote", "onzieme-cote", "douzieme-cote", "cartilage-costal-de-la-dixieme-cote"] },
+    { "texte": "Ligne blanche, par une aponévrose qui se dédouble autour du droit de l'abdomen dans ses trois quarts supérieurs", "os": ["ligne-blanche", "gaine-du-droit"] },
+    { "texte": "Crête et pecten du pubis, par le tendon conjoint (faux inguinale) formé avec le transverse", "os": ["pubis"] }
+   ],
+   "action": "Des deux côtés : fléchit le tronc, comprime les viscères et aide l'expiration forcée. D'un seul côté : incline le tronc et le fait tourner de son côté, avec l'oblique externe opposé",
+   "actions": [
+    { "articulation": "rachis-thoracique", "mouvement": "rotation-homolaterale", "role": "principal", "precision": "avec l'oblique externe du côté opposé" },
+    { "articulation": "rachis-lombaire", "mouvement": "rotation-homolaterale", "role": "principal" },
+    { "articulation": "rachis-lombaire", "mouvement": "inclinaison", "role": "principal" },
+    { "articulation": "rachis-lombaire", "mouvement": "flexion", "role": "accessoire", "precision": "les deux côtés ensemble, avec le droit de l'abdomen" },
+    { "articulation": "rachis-thoracique", "mouvement": "flexion", "role": "accessoire" },
+    { "articulation": "abdomen", "mouvement": "compression", "role": "principal" },
+    { "articulation": "respiration", "mouvement": "expiration", "role": "accessoire", "precision": "expiration forcée" },
+    { "articulation": "cotes", "mouvement": "abaissement", "role": "accessoire" }
+   ],
+   "synergistes": ["oblique-externe", "transverse-abdomen", "droit-abdomen"],
+   "antagonistes": ["ilio-costal", "longissimus"],
+   "innervation": { "nerf": "nerfs-intercostaux", "texte": "Nerfs intercostaux T7 à T11, nerf subcostal (T12), nerfs ilio-hypogastrique et ilio-inguinal (L1)", "racines": ["T7", "T8", "T9", "T10", "T11", "T12", "L1"] },
+   "vascularisation": { "texte": "Dernières artères intercostales postérieures, subcostale et lombaires ; artères épigastriques et circonflexe iliaque profonde", "arteres": ["arteres-intercostales-posterieures", "artere-subcostale", "arteres-lombaires", "artere-epigastrique-superieure", "epigastrique-inferieure"] },
+   "palpation": "Recouvert par l'oblique externe, il ne s'isole pas sous le doigt ; la paroi du flanc durcit quand le tronc tourne du même côté",
+   "test": "Sujet couché sur le dos : redressement du tronc avec rotation ; l'oblique interne travaille du côté vers lequel le tronc tourne",
+   "atteinte": "Paralysie ou faiblesse : rotation du tronc vers le côté atteint et efforts de poussée diminués ; le relâchement de ses fibres basses, qui enjambent le canal inguinal, favorise la hernie inguinale",
+   "clinique": "Ses fibres les plus basses accompagnent le cordon spermatique jusqu'au testicule : c'est le muscle crémaster, qui remonte le testicule quand on effleure la face médiale de la cuisse (réflexe crémastérien)",
+   "memo": "Ses fibres croisent celles de l'oblique externe à angle droit ; pour tourner le tronc, il fait équipe avec l'oblique externe du côté opposé",
+   "variantes": "Intersections tendineuses en regard des 10e et 11e cartilages ; faisceau supplémentaire pour le 9e cartilage ; parties iliaque et inguinale parfois séparées",
+   "sources": ["gray1918", "kenhub-oblique-interne", "tma-paroi-abdominale", "uams-abdomen", "openstax-11-4"],
+   "divergences": "Origine inguinale : moitié latérale du ligament (Gray), deux tiers latéraux (UAMS) ; Kenhub la situe sur l'arcade ilio-pectinée. Gray tient l'apport du nerf ilio-inguinal pour inconstant"
+  },
+  {
+   "id": "transverse-abdomen",
+   "resume": "Le plus profond des muscles larges : une ceinture de fibres horizontales qui fait le tour du ventre et le sangle.",
+   "origine": [
+    { "texte": "Face interne des six derniers cartilages costaux, par des digitations engrenées avec celles du diaphragme", "os": ["cartilage-costal-de-la-septieme-cote", "cartilage-costal-de-la-huitieme-cote", "cartilage-costal-de-la-neuvieme-cote", "cartilage-costal-de-la-dixieme-cote", "onzieme-cote", "douzieme-cote"] },
+    { "texte": "Fascia thoraco-lombaire, entre la 12e côte et la crête iliaque", "os": ["fascia-thoraco-lombaire"] },
+    { "texte": "Deux tiers à trois quarts antérieurs de la lèvre interne de la crête iliaque", "os": ["ilium"] },
+    { "texte": "Tiers latéral du ligament inguinal et fascia iliaque voisin", "os": ["ligament-inguinal"] }
+   ],
+   "terminaison": [
+    { "texte": "Ligne blanche, par une aponévrose qui passe derrière le droit de l'abdomen dans ses trois quarts supérieurs, devant lui plus bas", "os": ["ligne-blanche", "gaine-du-droit"] },
+    { "texte": "Crête et pecten du pubis, par le tendon conjoint (faux inguinale) formé avec l'oblique interne", "os": ["pubis"] }
+   ],
+   "action": "Rentre le ventre et comprime les viscères comme une gaine : expiration forcée, toux, miction, défécation, accouchement ; maintient la paroi de l'abdomen tendue",
+   "actions": [
+    { "articulation": "abdomen", "mouvement": "compression", "role": "principal" },
+    { "articulation": "respiration", "mouvement": "expiration", "role": "accessoire", "precision": "expiration forcée : refoule le diaphragme vers le haut" },
+    { "articulation": "rachis-lombaire", "mouvement": "rotation-homolaterale", "role": "accessoire", "precision": "action faible, avec l'oblique interne" }
+   ],
+   "synergistes": ["oblique-interne", "oblique-externe", "droit-abdomen"],
+   "antagonistes": ["diaphragme"],
+   "innervation": { "nerf": "nerfs-intercostaux", "texte": "Nerfs intercostaux T7 à T11, nerf subcostal (T12), nerfs ilio-hypogastrique et ilio-inguinal (L1)", "racines": ["T7", "T8", "T9", "T10", "T11", "T12", "L1"] },
+   "vascularisation": { "texte": "Dernières artères intercostales postérieures, subcostale et lombaires ; artères épigastriques et circonflexe iliaque profonde", "arteres": ["arteres-intercostales-posterieures", "artere-subcostale", "arteres-lombaires", "artere-epigastrique-superieure", "epigastrique-inferieure"] },
+   "palpation": null,
+   "test": "Le sujet rentre le ventre, comme pour rapprocher le nombril de la colonne, sans bouger ni le thorax ni le bassin",
+   "atteinte": "Paralysie ou relâchement : le ventre bombe, la toux et les efforts de poussée perdent leur force ; une paroi affaiblie expose aux hernies",
+   "clinique": "Sous son bord inférieur, le fascia transversalis ferme seul la paroi : là s'ouvre l'anneau inguinal profond, par où s'engagent les hernies inguinales indirectes",
+   "memo": "Transverse comme une ceinture : ses fibres horizontales sanglent le ventre. Trois muscles larges, trois directions : oblique, oblique croisée, horizontale",
+   "variantes": "Parfois fusionné avec l'oblique interne, exceptionnellement absent ; le cordon spermatique peut traverser son bord inférieur",
+   "sources": ["gray1918", "kenhub-transverse-abdomen", "tma-paroi-abdominale", "uams-abdomen", "openstax-11-4"],
+   "divergences": "Crête iliaque : trois quarts antérieurs (Gray, UAMS) ou deux tiers antérieurs (Kenhub). La rotation du tronc du même côté n'est donnée que par Kenhub"
+  },
+  {
+   "id": "iliaque",
+   "resume": "L'éventail charnu qui tapisse la fosse iliaque : il rejoint le tendon du grand psoas pour fléchir la hanche.",
+   "origine": [
+    { "texte": "Deux tiers supérieurs de la fosse iliaque et lèvre interne de la crête iliaque", "os": ["ilium"] },
+    { "texte": "Ligaments sacro-iliaque antérieur et ilio-lombaire, aile du sacrum", "os": ["ligament-sacro-iliaque-anterieur", "ligament-iliolombaire", "sacrum"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord latéral du tendon du grand psoas, avec lequel il gagne le petit trochanter du fémur", "os": ["tendon-grand-psoas", "femur"] },
+    { "texte": "Corps du fémur, sur 2 à 3 cm au-dessous et en avant du petit trochanter, par ses fibres les plus latérales", "os": ["femur"] }
+   ],
+   "action": "Fléchit la cuisse sur le bassin, avec le grand psoas ; cuisse fixe, il bascule le bassin en avant et aide à redresser le tronc couché",
+   "actions": [
+    { "articulation": "hanche", "mouvement": "flexion", "role": "principal" },
+    { "articulation": "hanche", "mouvement": "rotation-laterale", "role": "accessoire" },
+    { "articulation": "bassin", "mouvement": "flexion", "role": "accessoire", "precision": "fémur fixe : bascule le bassin en avant (antéversion)" }
+   ],
+   "synergistes": ["grand-psoas", "droit-femoral", "sartorius", "tenseur-fascia-lata"],
+   "antagonistes": ["grand-fessier", "biceps-femoral", "semi-tendineux", "semi-membraneux"],
+   "innervation": { "nerf": "nerf-femoral", "texte": "Nerf fémoral, par des rameaux nés dans la fosse iliaque (surtout L2 et L3)", "racines": ["L2", "L3", "L4"] },
+   "vascularisation": { "texte": "Branche iliaque de l'artère ilio-lombaire ; appoint des artères circonflexe iliaque profonde, obturatrice et fémorale", "arteres": ["artere-iliolombaire", "branche-iliaque-de-l-artere-iliolombaire", "artere-obturatrice", "femorale"] },
+   "palpation": null,
+   "test": "Flexion de la hanche contre résistance, sujet assis : on teste l'ilio-psoas en bloc, sans pouvoir isoler l'iliaque",
+   "atteinte": "Lésion du nerf fémoral dans le bassin : la flexion de la hanche faiblit, en plus de la paralysie du quadriceps. Muscle raccourci (station assise prolongée, sport sans étirements) : douleur de l'aine, hanche moins mobile, marche gênée",
+   "clinique": "Le tendon de l'ilio-psoas glisse devant la hanche sur une grande bourse séreuse, qui communique parfois avec l'articulation",
+   "memo": "Iliaque comme la fosse iliaque qu'il remplit ; avec le grand psoas, il forme l'ilio-psoas, le muscle qui lève le genou",
+   "variantes": "Petit faisceau ilio-capsulaire (iliaque mineur), tendu de l'épine iliaque antéro-inférieure à la capsule de la hanche ou à la ligne intertrochantérique",
+   "sources": ["gray1918", "kenhub-iliaque", "kenhub-iliopsoas", "tma-paroi-posterieure", "uams-abdomen", "openstax-11-6"],
+   "divergences": "Racines : L2 à L4, celles du nerf fémoral, dans la plupart des tableaux ; L2 et L3 seulement pour Gray et dans le texte de Kenhub. Origine étendue aux épines iliaques antérieures pour Gray et TeachMeAnatomy"
+  },
+  {
+   "id": "iliococcygien",
+   "resume": "La partie postérieure, mince, de l'élévateur de l'anus : une nappe tendue de la paroi du bassin au coccyx, qui soutient les viscères.",
+   "origine": [
+    { "texte": "Arcade tendineuse de l'élévateur de l'anus, épaississement du fascia de l'obturateur interne", "os": ["arcade-tendineuse-de-l-elevateur-de-l-anus"] },
+    { "texte": "Face interne de l'épine ischiatique", "os": ["ischium"] }
+   ],
+   "terminaison": [
+    { "texte": "Bords latéraux des deux dernières pièces du coccyx", "os": ["coccyx"] },
+    { "texte": "Ligament ano-coccygien, raphé médian tendu du coccyx à l'anus, où il rejoint celui du côté opposé", "os": [] }
+   ],
+   "action": "Soutient les viscères du bassin et soulève le plancher pelvien, tendu comme un hamac ; résiste aux poussées de l'abdomen (toux, effort)",
+   "actions": [
+    { "articulation": "bassin", "mouvement": "elevation", "role": "principal", "precision": "élève le plancher pelvien et le canal ano-rectal" },
+    { "articulation": "bassin", "mouvement": "stabilisation", "role": "principal", "precision": "soutient les viscères pelviens contre la pression abdominale" }
+   ],
+   "synergistes": ["pubococcygien", "pubo-anal", "coccygien"],
+   "antagonistes": [],
+   "innervation": { "nerf": null, "texte": "Nerf de l'élévateur de l'anus, né du plexus sacral (S3, S4) ; petit apport du nerf pudendal", "racines": ["S3", "S4"] },
+   "vascularisation": { "texte": "Artères glutéale inférieure, vésicale inférieure et pudendale interne", "arteres": ["artere-gluteale-inferieure", "artere-pudendale-interne"] },
+   "palpation": "Au toucher vaginal ou rectal seulement, sur la paroi latérale et postérieure du petit bassin",
+   "test": "Au toucher pelvien, on demande de serrer comme pour retenir un gaz : le plancher doit se soulever et se tendre sous le doigt",
+   "atteinte": "Étiré par l'accouchement, affaibli par l'âge, l'obésité ou les efforts de poussée répétés : le plancher pelvien s'affaisse, d'où descente d'organes (prolapsus) et fuites d'urine ou de selles",
+   "clinique": "Comme tout l'élévateur de l'anus, il est fait surtout de fibres lentes : contracté en permanence, il se renforce par réflexe à la toux, à l'éternuement ou au port d'une charge",
+   "memo": "Malgré son nom, il ne touche pas l'ilium : il naît du fascia de l'obturateur interne et de l'épine ischiatique",
+   "variantes": "Épaisseur très variable ; il peut être remplacé, en partie ou en totalité, par du tissu fibreux",
+   "sources": ["gray1918", "kenhub-elevateur-anus", "kenhub-plancher-pelvien", "tma-plancher-pelvien", "tma-iliococcygien", "uams-bassin", "physiopedia-elevateur-anus", "elsevier-nerf-elevateur-anus"],
+   "divergences": "Racines du nerf de l'élévateur de l'anus : S4 seul (Gray, Kenhub) ou S3 et S4 (UAMS, Elsevier). TeachMeAnatomy ajoute une insertion sur le centre tendineux du périnée"
+  },
+  {
+   "id": "pubo-anal",
+   "resume": "La fronde musculaire qui part du pubis et cravate par l'arrière la jonction du rectum et de l'anus : la clé de la continence. C'est le pubo-rectal des auteurs classiques.",
+   "origine": [
+    { "texte": "Face postérieure du corps du pubis, près de la symphyse, en dedans du pubococcygien", "os": ["pubis"] }
+   ],
+   "terminaison": [
+    { "texte": "Derrière la jonction ano-rectale, où il s'unit à celui du côté opposé en une anse en U, sans attache osseuse", "os": [] },
+    { "texte": "Paroi du canal anal : des fibres se mêlent à la partie profonde du sphincter externe et à la couche longitudinale du rectum", "os": [] }
+   ],
+   "action": "Tire la jonction ano-rectale vers le pubis et la coude à angle droit, ce qui retient les selles ; il se relâche pour laisser la défécation se faire",
+   "actions": [
+    { "articulation": "bassin", "mouvement": "fermeture", "role": "principal", "precision": "ferme l'angle ano-rectal : continence des selles" },
+    { "articulation": "bassin", "mouvement": "elevation", "role": "accessoire", "precision": "soulève l'anus et le plancher pelvien" }
+   ],
+   "synergistes": ["sphincter-anal-externe", "pubococcygien", "iliococcygien"],
+   "antagonistes": [],
+   "innervation": { "nerf": null, "texte": "Nerf de l'élévateur de l'anus (S3, S4) et rameaux du nerf pudendal (nerf rectal inférieur)", "racines": ["S3", "S4"] },
+   "vascularisation": { "texte": "Artères glutéale inférieure, vésicale inférieure et pudendale interne", "arteres": ["artere-gluteale-inferieure", "artere-pudendale-interne"] },
+   "palpation": "Au toucher rectal : sangle ferme sentie en arrière, au sommet du canal anal",
+   "test": "Au toucher rectal, on demande de retenir : la sangle se tend et tire le doigt vers l'avant ; à la poussée, elle doit au contraire se relâcher",
+   "atteinte": "Étiré ou désinséré du pubis lors d'un accouchement (forceps, expulsion longue, grosse tête fœtale) : l'angle ano-rectal s'ouvre, d'où fuites de gaz et de selles et descente du périnée",
+   "clinique": "L'échographie retrouve une lésion de l'élévateur de l'anus chez 13 à 36 % des femmes après un accouchement par voie basse",
+   "memo": "Une cravate autour du rectum, nouée au pubis : quand elle tire, le canal se coude et rien ne passe",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-elevateur-anus", "kenhub-plancher-pelvien", "kenhub-sphincter-anal-externe", "tma-plancher-pelvien", "tma-puborectal", "uams-bassin", "physiopedia-elevateur-anus"],
+   "divergences": "Nom : « pubo-anal » désigne ici le pubo-rectal (usage de Kenhub) ; d'autres réservent ce nom aux fibres du pubococcygien qui descendent entre les deux sphincters de l'anus jusqu'à la peau (Physiopedia). Racines : S4 seul, ou S3 et S4"
+  },
+  {
+   "id": "carre-lombes",
+   "resume": "Le muscle carré de la paroi postérieure de l'abdomen, tendu de la crête iliaque à la 12e côte : il incline le tronc et cale la dernière côte.",
+   "origine": [
+    { "texte": "Ligament ilio-lombaire", "os": ["ligament-iliolombaire"] },
+    { "texte": "Partie postérieure de la lèvre interne de la crête iliaque, sur 5 cm environ", "os": ["ilium"] }
+   ],
+   "terminaison": [
+    { "texte": "Moitié médiale du bord inférieur de la 12e côte", "os": ["douzieme-cote"] },
+    { "texte": "Sommet des processus transverses (costiformes) de L1 à L4, par quatre petits tendons", "os": ["vertebre-l1", "vertebre-l2", "vertebre-l3", "vertebre-l4"] }
+   ],
+   "action": "D'un seul côté : incline le tronc de son côté ou, thorax fixe, hausse la hanche. Des deux côtés : étend la colonne lombaire. Il abaisse et fixe la 12e côte, donnant un appui au diaphragme pendant l'inspiration",
+   "actions": [
+    { "articulation": "rachis-lombaire", "mouvement": "inclinaison", "role": "principal" },
+    { "articulation": "rachis-lombaire", "mouvement": "extension", "role": "accessoire", "precision": "les deux côtés ensemble" },
+    { "articulation": "cotes", "mouvement": "stabilisation", "role": "principal", "precision": "fixe et abaisse la 12e côte, point d'appui du diaphragme" },
+    { "articulation": "respiration", "mouvement": "inspiration", "role": "accessoire", "precision": "en calant la 12e côte" },
+    { "articulation": "bassin", "mouvement": "elevation", "role": "accessoire", "precision": "thorax fixe : hausse l'hémi-bassin de son côté" }
+   ],
+   "synergistes": ["oblique-externe", "oblique-interne", "ilio-costal"],
+   "antagonistes": [],
+   "innervation": { "nerf": null, "texte": "Nerf subcostal (T12) et rameaux antérieurs des nerfs lombaires L1 à L4", "racines": ["T12", "L1", "L2", "L3", "L4"] },
+   "vascularisation": { "texte": "Artères lombaires, artère subcostale et branche lombaire de l'artère ilio-lombaire", "arteres": ["arteres-lombaires", "artere-subcostale", "branche-lombaire-de-l-artere-iliolombaire", "artere-iliolombaire"] },
+   "palpation": "Dans le flanc, du bout des doigts posés juste au-dessus de la partie postérieure de la crête iliaque, en dehors de la masse des érecteurs du rachis",
+   "test": "Sujet couché : hausser la hanche, c'est-à-dire rapprocher le bassin des côtes, contre une traction exercée sur la jambe",
+   "atteinte": "Rarement paralysé isolément. Surmené ou contracturé, d'un seul côté, c'est une cause fréquente de lombalgie : douleur du flanc, raideur, bassin d'apparence déséquilibrée",
+   "clinique": "Le rein et le côlon reposent sur sa face antérieure, que croisent les nerfs ilio-hypogastrique et ilio-inguinal ; le ligament arqué latéral du diaphragme l'enjambe",
+   "memo": "Un carré entre la 12e côte, la crête iliaque et la colonne : il « hausse la hanche » et incline le tronc",
+   "variantes": "Un second plan de fibres, parfois, tendu des processus transverses des dernières vertèbres lombaires au bord inférieur de la 12e côte",
+   "sources": ["gray1918", "kenhub-carre-lombes", "tma-paroi-posterieure", "uams-abdomen", "openstax-11-4"],
+   "divergences": "Racines : T12 à L4 (Kenhub, TeachMeAnatomy, UAMS), T12 à L2 pour Gray. Les deux côtés ensemble : extension lombaire pour les auteurs récents, flexion du tronc pour Gray. Kenhub le dit tantôt inspirateur, tantôt expirateur accessoire"
+  },
+  {
+   "id": "coccygien",
+   "resume": "Le petit triangle musculaire plaqué sur le ligament sacro-épineux : il complète en arrière le plancher pelvien et retient le coccyx.",
+   "origine": [
+    { "texte": "Face interne de l'épine ischiatique et ligament sacro-épineux, auquel il adhère", "os": ["ischium", "ligament-sacro-epineux"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord latéral du coccyx et de la dernière pièce du sacrum", "os": ["coccyx", "sacrum"] }
+   ],
+   "action": "Ferme l'arrière du détroit inférieur du bassin et soutient les viscères avec l'élévateur de l'anus ; ramène en avant le coccyx repoussé par la défécation ou l'accouchement",
+   "actions": [
+    { "articulation": "bassin", "mouvement": "stabilisation", "role": "principal", "precision": "soutient les viscères et complète le plancher pelvien en arrière" },
+    { "articulation": "bassin", "mouvement": "flexion", "role": "accessoire", "precision": "tire le coccyx vers l'avant" }
+   ],
+   "synergistes": ["iliococcygien", "pubococcygien", "piriforme"],
+   "antagonistes": [],
+   "innervation": { "nerf": null, "texte": "Rameaux directs du plexus sacral (rameaux antérieurs de S4 et S5)", "racines": ["S4", "S5"] },
+   "vascularisation": { "texte": "Artères glutéale inférieure, vésicale inférieure et pudendale interne", "arteres": ["artere-gluteale-inferieure", "artere-pudendale-interne"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Pas de paralysie isolée décrite : son déficit se confond avec celui de tout le plancher pelvien (descente d'organes, incontinence)",
+   "clinique": null,
+   "memo": "Son autre nom dit son trajet : ischio-coccygien, de l'épine ischiatique au coccyx, doublé par le ligament sacro-épineux",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-plancher-pelvien", "tma-plancher-pelvien", "tma-coccygien", "uams-bassin", "elsevier-nerf-elevateur-anus"],
+   "divergences": "Racines : S4 et S5 (Gray, Kenhub, TeachMeAnatomy) ; S3 et S4 pour les tables UAMS, et Elsevier le rattache au nerf de l'élévateur de l'anus"
+  },
+  {
+   "id": "dentele-postero-inferieur",
+   "resume": "Une mince lame musculaire du bas du dos, sous le grand dorsal, tendue des épineuses aux quatre dernières côtes, qu'elle tire en bas et en arrière.",
+   "origine": [
+    { "texte": "Processus épineux de T11, T12, L1 et L2 (parfois L3) et ligament supra-épineux, par une fine aponévrose unie au fascia thoraco-lombaire", "os": ["vertebre-t11", "vertebre-t12", "vertebre-l1", "vertebre-l2", "ligament-supra-epineux", "fascia-thoraco-lombaire"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord inférieur des quatre dernières côtes (9 à 12), un peu en dehors de leur angle, par quatre digitations", "os": ["neuvieme-cote", "dixieme-cote", "onzieme-cote", "douzieme-cote"] }
+   ],
+   "action": "Tire les quatre dernières côtes en bas et en arrière ; ce faisant, il les fixe contre la traction du diaphragme",
+   "actions": [
+    { "articulation": "cotes", "mouvement": "abaissement", "role": "principal" },
+    { "articulation": "cotes", "mouvement": "stabilisation", "role": "accessoire", "precision": "fixe les dernières côtes, appui du diaphragme" },
+    { "articulation": "respiration", "mouvement": "expiration", "role": "accessoire", "precision": "expiration forcée ; rôle discuté" }
+   ],
+   "synergistes": ["carre-lombes", "intercostaux-internes", "transverse-du-thorax"],
+   "antagonistes": ["dentele-postero-superieur", "intercostaux-externes"],
+   "innervation": { "nerf": "nerfs-intercostaux", "texte": "Rameaux antérieurs des nerfs thoraciques T9 à T11 (nerfs intercostaux) et nerf subcostal (T12)", "racines": ["T9", "T10", "T11", "T12"] },
+   "vascularisation": { "texte": "Dernières artères intercostales postérieures, artère subcostale et premières artères lombaires", "arteres": ["arteres-intercostales-posterieures", "artere-subcostale", "arteres-lombaires"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Pas de déficit isolé connu : sa paralysie, noyée dans celle des derniers nerfs intercostaux, passe inaperçue",
+   "clinique": null,
+   "memo": "Dentelé comme une scie : quatre dents sur les quatre dernières côtes. Le dentelé postéro-supérieur élève, l'inférieur abaisse",
+   "variantes": "Nombre de digitations variable ; le muscle peut manquer",
+   "sources": ["gray1918", "kenhub-denteles-posterieurs", "tma-dos-intermediaire", "uams-dos", "loyola-dos", "lecturio-dos"],
+   "divergences": "Origine : jusqu'à L2 (Kenhub, UAMS) ou L3 (Gray, TeachMeAnatomy). Rôle respiratoire discuté : expirateur pour la plupart, inspirateur pour Gray parce qu'il fixe les côtes basses pendant que le diaphragme se contracte"
+  },
+  {
+   "id": "grand-rhomboide",
+   "resume": "Le losange musculaire tendu entre la colonne thoracique et le bord médial de la scapula, sous le trapèze : il ramène l'épaule en arrière.",
+   "origine": [
+    { "texte": "Processus épineux de T2 à T5 et ligament supra-épineux", "os": ["vertebre-t2", "vertebre-t3", "vertebre-t4", "vertebre-t5", "ligament-supra-epineux"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord médial de la scapula, de la racine de l'épine à l'angle inférieur, par une arcade tendineuse", "os": ["scapula"] }
+   ],
+   "action": "Rapproche la scapula de la colonne et l'élève ; fait basculer la glène vers le bas en tirant l'angle inférieur en dedans ; plaque le bord médial contre le thorax",
+   "actions": [
+    { "articulation": "scapula", "mouvement": "retraction", "role": "principal" },
+    { "articulation": "scapula", "mouvement": "sonnette-mediale", "role": "principal" },
+    { "articulation": "scapula", "mouvement": "elevation", "role": "accessoire" },
+    { "articulation": "scapula", "mouvement": "stabilisation", "role": "accessoire", "precision": "fixe la scapula au thorax pendant les mouvements du bras" }
+   ],
+   "synergistes": ["petit-rhomboide", "trapeze", "elevateur-scapula"],
+   "antagonistes": ["dentele-anterieur"],
+   "innervation": { "nerf": "nerf-dorsal-de-la-scapula", "texte": "Nerf dorsal de la scapula (C5, avec un apport de C4)", "racines": ["C4", "C5"] },
+   "vascularisation": { "texte": "Artère dorsale de la scapula (branche profonde de l'artère transverse du cou) ; rameaux dorsaux des premières intercostales postérieures", "arteres": ["branche-profonde-de-l-artere-transverse-du-cou", "artere-transverse-du-cou", "arteres-intercostales-posterieures"] },
+   "palpation": "Entre les épineuses de T2 à T5 et le bord médial de la scapula, à travers le trapèze, quand le sujet rapproche les deux scapulas",
+   "test": "Rapprochement des scapulas contre résistance : main sur la hanche, le sujet pousse le coude en arrière contre la main de l'examinateur",
+   "atteinte": "Lésion du nerf dorsal de la scapula : la scapula s'écarte de la colonne, son angle inférieur se décolle un peu et le rapprochement des épaules en arrière faiblit",
+   "clinique": "Son bord inférieur borde le triangle d'auscultation, zone mince entre trapèze, grand dorsal et scapula, où l'on écoute bien le poumon",
+   "memo": "Le muscle du « tiens-toi droit » : il tire les épaules en arrière. Grand en bas (T2 à T5), petit en haut (C7 et T1)",
+   "variantes": "Souvent uni au petit rhomboïde par ses bords",
+   "sources": ["gray1918", "kenhub-rhomboides", "tma-dos-superficiel", "uams-dos", "loyola-dos", "openstax-11-5"],
+   "divergences": "Racines : C5 seul pour Gray, UAMS et Lecturio ; C4 et C5 pour Kenhub"
+  },
+  {
+   "id": "ilio-costal",
+   "resume": "La colonne latérale des érecteurs du rachis : trois faisceaux relayés du bassin au cou, accrochés aux angles des côtes.",
+   "origine": [
+    { "texte": "Iliocostal des lombes : tendon commun des érecteurs du rachis, sur le sacrum et la partie postérieure de la crête iliaque", "os": ["sacrum", "ilium"] },
+    { "texte": "Iliocostal du thorax : bord supérieur de l'angle des six dernières côtes", "os": ["septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote", "douzieme-cote"] },
+    { "texte": "Iliocostal du cou : angle des côtes 3 à 6", "os": ["troisieme-cote", "quatrieme-cote", "cinquieme-cote", "sixieme-cote"] }
+   ],
+   "terminaison": [
+    { "texte": "Iliocostal des lombes : bord inférieur de l'angle des six ou sept dernières côtes", "os": ["sixieme-cote", "septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote", "douzieme-cote"] },
+    { "texte": "Iliocostal du thorax : angle des six premières côtes et processus transverse de C7", "os": ["premiere-cote", "deuxieme-cote", "troisieme-cote", "quatrieme-cote", "cinquieme-cote", "sixieme-cote", "c7"] },
+    { "texte": "Iliocostal du cou : tubercules postérieurs des processus transverses de C4 à C6", "os": ["vertebre-c4", "vertebre-c5", "vertebre-c6"] }
+   ],
+   "action": "Les deux côtés ensemble redressent et étendent la colonne ; un seul côté incline le tronc et le cou de son côté ; il freine aussi la flexion du tronc vers l'avant",
+   "actions": [
+    { "articulation": "rachis-lombaire", "mouvement": "extension", "role": "principal" },
+    { "articulation": "rachis-thoracique", "mouvement": "extension", "role": "principal" },
+    { "articulation": "rachis-cervical", "mouvement": "extension", "role": "accessoire", "precision": "iliocostal du cou" },
+    { "articulation": "rachis-lombaire", "mouvement": "inclinaison", "role": "principal" },
+    { "articulation": "rachis-thoracique", "mouvement": "inclinaison", "role": "principal" },
+    { "articulation": "rachis-cervical", "mouvement": "inclinaison", "role": "accessoire", "precision": "iliocostal du cou" }
+   ],
+   "synergistes": ["longissimus", "epineux", "carre-lombes", "multifides-lombaire"],
+   "antagonistes": ["droit-abdomen", "oblique-externe", "oblique-interne"],
+   "innervation": { "nerf": null, "texte": "Rameaux latéraux des rameaux postérieurs des nerfs spinaux, étagés le long du muscle (surtout thoraciques et premier lombaire)", "racines": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "L1"] },
+   "vascularisation": { "texte": "Artères segmentaires : rameaux dorsaux des intercostales postérieures, de la subcostale et des lombaires ; artère cervicale profonde pour la partie haute", "arteres": ["arteres-intercostales-posterieures", "artere-subcostale", "arteres-lombaires", "artere-cervicale-profonde"] },
+   "palpation": "Cordon le plus latéral de la masse charnue qui longe la colonne, senti aux lombes et sur les angles des côtes quand le sujet, à plat ventre, décolle le thorax",
+   "test": "Sujet à plat ventre : décoller la tête et le thorax de la table ; les érecteurs du rachis se contractent en bloc, on ne peut isoler l'ilio-costal",
+   "atteinte": "Jamais paralysé seul. Faiblesse des érecteurs du rachis : dos rond, tronc qui s'affaisse en avant et se redresse mal. Contracture d'un côté : lumbago, colonne raide et déviée",
+   "clinique": "Dans la lombalgie chronique, les muscles profonds du dos fondent et se fatiguent vite",
+   "memo": "Trois colonnes, de dehors en dedans : ilio-costal, longissimus, épineux. Celle-ci va de l'os iliaque aux côtes, d'où son nom",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-ilio-costal", "kenhub-dos-profond-fr", "tma-dos-profond", "uams-dos", "loyola-dos", "lecturio-dos", "openstax-11-3"],
+   "divergences": "Niveaux d'innervation variables selon les auteurs : C4 à S5 pour l'ensemble (tables UAMS), T1 à L1 d'après Lecturio. Kenhub rattache à l'iliocostal des lombes des fibres fixées aux processus transverses de L1 à L4"
+  },
+  {
+   "id": "iliocostal-des-lombes",
+   "resume": "Le faisceau lombaire de l'ilio-costal : il monte du sacrum et de la crête iliaque jusqu'aux angles des dernières côtes.",
+   "origine": [
+    { "texte": "Tendon commun des érecteurs du rachis : crête sacrale latérale et partie postérieure de la crête iliaque", "os": ["sacrum", "ilium"] },
+    { "texte": "Fascia thoraco-lombaire", "os": ["fascia-thoraco-lombaire"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord inférieur de l'angle des six ou sept dernières côtes, par autant de tendons plats", "os": ["sixieme-cote", "septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote", "douzieme-cote"] },
+    { "texte": "Processus transverses de L1 à L4 et lame moyenne du fascia thoraco-lombaire, par ses fibres profondes", "os": ["vertebre-l1", "vertebre-l2", "vertebre-l3", "vertebre-l4", "lame-moyenne-du-fascia-thoracolombaire"] }
+   ],
+   "action": "Les deux côtés ensemble étendent la colonne lombaire et redressent le tronc ; un seul côté incline le tronc de son côté",
+   "actions": [
+    { "articulation": "rachis-lombaire", "mouvement": "extension", "role": "principal" },
+    { "articulation": "rachis-lombaire", "mouvement": "inclinaison", "role": "principal" },
+    { "articulation": "rachis-thoracique", "mouvement": "extension", "role": "accessoire" },
+    { "articulation": "rachis-thoracique", "mouvement": "inclinaison", "role": "accessoire" }
+   ],
+   "synergistes": ["longissimus-du-thorax", "iliocostal-du-thorax", "carre-lombes", "multifides-lombaire"],
+   "antagonistes": ["droit-abdomen", "oblique-externe", "oblique-interne"],
+   "innervation": { "nerf": null, "texte": "Rameaux latéraux des rameaux postérieurs des derniers nerfs thoraciques et des premiers nerfs lombaires", "racines": ["T9", "T10", "T11", "T12", "L1", "L2", "L3"] },
+   "vascularisation": { "texte": "Rameaux dorsaux des artères lombaires, de la subcostale et des dernières intercostales postérieures", "arteres": ["arteres-lombaires", "artere-subcostale", "arteres-intercostales-posterieures"] },
+   "palpation": "Aux lombes, bord latéral de la masse charnue qui longe la colonne ; il durcit quand le sujet, à plat ventre, soulève le thorax",
+   "test": "Sujet à plat ventre : extension du tronc contre la pesanteur ; testé en bloc avec les autres érecteurs du rachis",
+   "atteinte": "Jamais paralysé seul. Sa contracture réflexe, d'un seul côté, participe au tableau du lumbago : douleur lombaire, colonne raide et déviée",
+   "clinique": null,
+   "memo": "Le pied de la colonne latérale : parti du bassin, il s'arrête aux angles des dernières côtes, où l'iliocostal du thorax prend le relais",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-ilio-costal", "kenhub-dos-profond-fr", "uams-dos", "lecturio-dos"],
+   "divergences": "Côtes d'insertion : six ou sept dernières (Gray), 5 à 12 (Kenhub), 7 à 12 (Lecturio). Innervation : T9 à L1 pour Lecturio ; les autres sources citent les rameaux thoraciques et lombaires sans préciser les niveaux"
+  },
+  {
+   "id": "longissimus",
+   "resume": "La colonne moyenne des érecteurs du rachis, la plus longue et la plus épaisse : elle court du sacrum jusqu'au processus mastoïde.",
+   "origine": [
+    { "texte": "Longissimus du thorax : tendon commun des érecteurs du rachis (sacrum, crête iliaque, processus épineux lombaires) et processus transverses lombaires", "os": ["sacrum", "ilium", "vertebres-lombaires"] },
+    { "texte": "Longissimus du cou : processus transverses des quatre ou cinq premières vertèbres thoraciques", "os": ["vertebre-t1", "vertebre-t2", "vertebre-t3", "vertebre-t4", "vertebre-t5"] },
+    { "texte": "Longissimus de la tête : processus transverses de T1 à T5 et processus articulaires des trois ou quatre dernières vertèbres cervicales", "os": ["vertebre-t1", "vertebre-t2", "vertebre-t3", "vertebre-t4", "vertebre-t5", "vertebre-c4", "vertebre-c5", "vertebre-c6", "c7"] }
+   ],
+   "terminaison": [
+    { "texte": "Longissimus du thorax : processus transverses de toutes les vertèbres thoraciques, neuf ou dix dernières côtes entre tubercule et angle, processus accessoires et transverses lombaires", "os": ["vertebres-thoraciques", "vertebres-lombaires", "troisieme-cote", "quatrieme-cote", "cinquieme-cote", "sixieme-cote", "septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote", "douzieme-cote"] },
+    { "texte": "Longissimus du cou : tubercules postérieurs des processus transverses de C2 à C6", "os": ["axis", "vertebre-c3", "vertebre-c4", "vertebre-c5", "vertebre-c6"] },
+    { "texte": "Longissimus de la tête : bord postérieur du processus mastoïde du temporal", "os": ["temporal"] }
+   ],
+   "action": "Les deux côtés ensemble étendent la colonne, le cou et la tête ; un seul côté incline le tronc et le cou de son côté ; le faisceau de la tête incline la tête et tourne la face du même côté",
+   "actions": [
+    { "articulation": "rachis-lombaire", "mouvement": "extension", "role": "principal" },
+    { "articulation": "rachis-thoracique", "mouvement": "extension", "role": "principal" },
+    { "articulation": "rachis-cervical", "mouvement": "extension", "role": "principal", "precision": "longissimus du cou" },
+    { "articulation": "tete", "mouvement": "extension", "role": "accessoire", "precision": "longissimus de la tête" },
+    { "articulation": "rachis-lombaire", "mouvement": "inclinaison", "role": "principal" },
+    { "articulation": "rachis-thoracique", "mouvement": "inclinaison", "role": "principal" },
+    { "articulation": "rachis-cervical", "mouvement": "inclinaison", "role": "accessoire" },
+    { "articulation": "tete", "mouvement": "inclinaison", "role": "accessoire", "precision": "longissimus de la tête" },
+    { "articulation": "tete", "mouvement": "rotation-homolaterale", "role": "accessoire", "precision": "longissimus de la tête" }
+   ],
+   "synergistes": ["ilio-costal", "epineux", "splenius-tete", "multifides-lombaire"],
+   "antagonistes": ["droit-abdomen", "oblique-externe", "oblique-interne"],
+   "innervation": { "nerf": null, "texte": "Rameaux postérieurs des nerfs spinaux cervicaux, thoraciques et lombaires, étagés le long du muscle", "racines": ["C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8", "T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "L1", "L2", "L3", "L4", "L5"] },
+   "vascularisation": { "texte": "Artères segmentaires : rameaux dorsaux des intercostales postérieures, de la subcostale et des lombaires ; artères cervicale profonde, vertébrale et occipitale pour le cou et la tête", "arteres": ["arteres-intercostales-posterieures", "artere-subcostale", "arteres-lombaires", "artere-cervicale-profonde", "vertebrale", "artere-occipitale"] },
+   "palpation": "Relief charnu qui longe la colonne à un travers de doigt des épineuses, surtout net aux lombes ; il se tend quand le sujet, à plat ventre, décolle la tête et le thorax",
+   "test": "Sujet à plat ventre : extension du tronc et de la tête contre la pesanteur, puis contre résistance ; testé en bloc avec les autres érecteurs du rachis",
+   "atteinte": "Jamais paralysé seul. Faiblesse des érecteurs du rachis : le tronc s'affaisse en avant et se redresse mal. Contracture : lumbago, colonne raide",
+   "clinique": "À la marche, les deux longissimus se contractent tour à tour pour tenir le bassin d'aplomb et la colonne stable",
+   "memo": "Longissimus : « le plus long ». Il s'accroche de proche en proche aux processus transverses, du sacrum au crâne",
+   "variantes": "La partie lombaire du longissimus du thorax est parfois décrite à part, sous le nom de longissimus des lombes",
+   "sources": ["gray1918", "kenhub-longissimus", "kenhub-dos-profond-fr", "tma-dos-profond", "uams-dos", "loyola-dos", "lecturio-dos", "openstax-11-3"],
+   "divergences": "Niveaux d'innervation : C1 à S1 pour les tables UAMS ; Lecturio détaille C1 à C3 (tête), C3 à T2 (cou) et les rameaux thoraciques pour le reste"
+  },
+  {
+   "id": "petit-rhomboide",
+   "resume": "Le petit jumeau du grand rhomboïde, juste au-dessus de lui : une bandelette tendue de C7 et T1 à la racine de l'épine de la scapula.",
+   "origine": [
+    { "texte": "Partie basse du ligament nuchal, processus épineux de C7 et de T1", "os": ["ligament-nuchal", "c7", "vertebre-t1"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord médial de la scapula, à hauteur de la racine de l'épine (petite surface triangulaire lisse)", "os": ["scapula"] }
+   ],
+   "action": "Rapproche la scapula de la colonne, l'élève un peu et fait basculer la glène vers le bas ; la maintient plaquée contre le thorax",
+   "actions": [
+    { "articulation": "scapula", "mouvement": "retraction", "role": "principal" },
+    { "articulation": "scapula", "mouvement": "sonnette-mediale", "role": "accessoire" },
+    { "articulation": "scapula", "mouvement": "elevation", "role": "accessoire" },
+    { "articulation": "scapula", "mouvement": "stabilisation", "role": "accessoire", "precision": "fixe la scapula au thorax pendant les mouvements du bras" }
+   ],
+   "synergistes": ["grand-rhomboide", "trapeze", "elevateur-scapula"],
+   "antagonistes": ["dentele-anterieur"],
+   "innervation": { "nerf": "nerf-dorsal-de-la-scapula", "texte": "Nerf dorsal de la scapula (C5, avec un apport de C4)", "racines": ["C4", "C5"] },
+   "vascularisation": { "texte": "Artère dorsale de la scapula (branche profonde de l'artère transverse du cou)", "arteres": ["branche-profonde-de-l-artere-transverse-du-cou", "artere-transverse-du-cou"] },
+   "palpation": "Sous le trapèze, entre l'épineuse saillante de C7 et la racine de l'épine de la scapula ; le doigt ne le distingue pas du grand rhomboïde",
+   "test": "Rapprochement des scapulas contre résistance, comme pour le grand rhomboïde, dont on ne peut le séparer",
+   "atteinte": "Lésion du nerf dorsal de la scapula : les deux rhomboïdes sont paralysés ensemble ; la scapula s'écarte de la colonne et son bord médial se décolle légèrement",
+   "clinique": null,
+   "memo": "Petit rhomboïde en haut, grand en bas : mêmes fibres obliques, même nerf, même travail",
+   "variantes": "Souvent uni au grand rhomboïde ; rare faisceau tendu jusqu'à l'os occipital (rhomboïde occipital)",
+   "sources": ["gray1918", "kenhub-rhomboides", "tma-dos-superficiel", "uams-dos", "loyola-dos", "openstax-11-5"],
+   "divergences": "Racines : C5 seul pour Gray et UAMS ; C4 et C5 pour Kenhub"
+  },
+  {
+   "id": "sphincter-anal-externe",
+   "resume": "L'anneau de muscle strié, volontaire, qui entoure le canal anal sur toute sa hauteur : il permet de retenir les selles et les gaz.",
+   "origine": [
+    { "texte": "En arrière : ligament ano-coccygien, qui l'amarre à la pointe du coccyx", "os": ["coccyx"] }
+   ],
+   "terminaison": [
+    { "texte": "En avant : centre tendineux du périnée (corps périnéal), où ses fibres croisent celles des muscles du périnée", "os": [] },
+    { "texte": "Pourtour de l'anus : peau de la marge anale pour sa partie sous-cutanée ; en haut, sa partie profonde se mêle au pubo-anal (pubo-rectal)", "os": [] }
+   ],
+   "action": "Ferme le canal anal : son tonus permanent, renforcé à volonté ou par réflexe (toux, effort), retient selles et gaz ; il se relâche pour la défécation",
+   "actions": [
+    { "articulation": "bassin", "mouvement": "fermeture", "role": "principal", "precision": "ferme l'anus : continence volontaire" },
+    { "articulation": "bassin", "mouvement": "stabilisation", "role": "accessoire", "precision": "fixe le centre tendineux du périnée et soutient le plancher pelvien" }
+   ],
+   "synergistes": ["pubo-anal", "pubococcygien"],
+   "antagonistes": [],
+   "innervation": { "nerf": "nerf-pudendal", "texte": "Nerf rectal inférieur, branche du nerf pudendal (S2 à S4) ; rameau périnéal du quatrième nerf sacral", "racines": ["S2", "S3", "S4"] },
+   "vascularisation": { "texte": "Artère rectale inférieure, branche de l'artère pudendale interne", "arteres": ["artere-pudendale-interne"] },
+   "palpation": "Au toucher rectal : anneau qui enserre le doigt sur les premiers centimètres du canal anal",
+   "test": "Au toucher rectal, on demande de serrer : la pression sur le doigt doit augmenter nettement. La stimulation de la marge anale le fait aussi se contracter (réflexe anal)",
+   "atteinte": "Déchirure lors d'un accouchement ou lésion du nerf pudendal : fuites de gaz puis de selles, surtout quand le besoin est pressant. Atteinte de la moelle sacrale ou de la queue de cheval : anus béant, réflexe anal aboli",
+   "clinique": "Il double en dehors le sphincter interne, lisse et involontaire ; l'espace entre les deux contient les glandes anales, qu'il faut parfois aborder chirurgicalement quand leurs canaux se bouchent",
+   "memo": "Externe = strié = volontaire (nerf pudendal) ; interne = lisse = automatique. Trois étages : sous-cutané, superficiel, profond",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-sphincter-anal-externe", "uams-bassin", "openstax-11-4", "physiopedia-elevateur-anus"],
+   "divergences": "Gray ne décrit que deux couches, superficielle et profonde ; les auteurs récents en comptent trois, avec une partie sous-cutanée. Racines : S2 à S4 par le nerf pudendal (Kenhub), surtout S4 pour Gray. Origine et terminaison sont affaire de convention pour un muscle annulaire"
+  },
+  {
+   "id": "epineux-du-thorax",
+   "resume": "Le mince faisceau le plus médial des érecteurs du rachis, collé aux processus épineux du thorax, qu'il relie de bas en haut.",
+   "origine": [
+    { "texte": "Processus épineux de T11, T12, L1 et L2, par trois ou quatre tendons", "os": ["vertebre-t11", "vertebre-t12", "vertebre-l1", "vertebre-l2"] }
+   ],
+   "terminaison": [
+    { "texte": "Processus épineux des vertèbres thoraciques hautes, de T2 à T8 environ (quatre à huit tendons selon les sujets)", "os": ["vertebre-t2", "vertebre-t3", "vertebre-t4", "vertebre-t5", "vertebre-t6", "vertebre-t7", "vertebre-t8"] }
+   ],
+   "action": "Les deux côtés ensemble étendent la colonne thoracique ; un seul côté l'incline un peu de son côté",
+   "actions": [
+    { "articulation": "rachis-thoracique", "mouvement": "extension", "role": "principal" },
+    { "articulation": "rachis-thoracique", "mouvement": "inclinaison", "role": "accessoire" },
+    { "articulation": "rachis-lombaire", "mouvement": "extension", "role": "accessoire", "precision": "charnière thoraco-lombaire" }
+   ],
+   "synergistes": ["longissimus-du-thorax", "iliocostal-du-thorax", "semi-epineux-du-thorax", "multifides-du-thorax"],
+   "antagonistes": ["droit-abdomen", "oblique-externe", "oblique-interne"],
+   "innervation": { "nerf": null, "texte": "Rameaux postérieurs des nerfs spinaux thoraciques et des premiers lombaires, étagés le long du muscle", "racines": ["T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "L1", "L2"] },
+   "vascularisation": { "texte": "Rameaux dorsaux des artères intercostales postérieures ; artères lombaires pour la partie basse", "arteres": ["arteres-intercostales-posterieures", "arteres-lombaires"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Jamais atteint isolément : son déficit se fond dans celui des érecteurs du rachis (dos qui s'arrondit, redressement faible)",
+   "clinique": null,
+   "memo": "Épineux : d'épineuse en épineuse. Des trois colonnes de l'érecteur du rachis, c'est la plus médiale et la plus grêle",
+   "variantes": "Nombre de tendons d'insertion variable (quatre à huit) ; souvent confondu en dehors avec le longissimus du thorax",
+   "sources": ["gray1918", "kenhub-epineux", "kenhub-dos-profond-fr", "tma-dos-profond", "uams-dos", "lecturio-dos"],
+   "divergences": "Niveaux d'innervation non précisés par la plupart des sources : ils suivent ici l'étendue du muscle ; les tables UAMS donnent C2 à L3 pour l'ensemble de l'épineux"
+  },
+  {
+   "id": "intercostaux",
+   "resume": "Les muscles qui comblent les onze espaces entre les côtes, en trois couches : ils raidissent la paroi du thorax et font monter ou descendre les côtes.",
+   "origine": [
+    { "texte": "Bord inférieur et sillon costal de la côte qui surplombe chaque espace, de la 1re à la 11e", "os": ["premiere-cote", "deuxieme-cote", "troisieme-cote", "quatrieme-cote", "cinquieme-cote", "sixieme-cote", "septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord supérieur de la côte située au-dessous, de la 2e à la 12e", "os": ["deuxieme-cote", "troisieme-cote", "quatrieme-cote", "cinquieme-cote", "sixieme-cote", "septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote", "douzieme-cote"] }
+   ],
+   "action": "Tiennent les espaces intercostaux tendus, sans qu'ils se creusent ni ne bombent pendant la respiration ; les externes élèvent les côtes à l'inspiration, les internes et les intimes les abaissent à l'expiration forcée",
+   "actions": [
+    { "articulation": "cotes", "mouvement": "stabilisation", "role": "principal", "precision": "raidissent les espaces intercostaux" },
+    { "articulation": "cotes", "mouvement": "elevation", "role": "principal", "precision": "intercostaux externes" },
+    { "articulation": "respiration", "mouvement": "inspiration", "role": "principal", "precision": "intercostaux externes" },
+    { "articulation": "cotes", "mouvement": "abaissement", "role": "principal", "precision": "intercostaux internes et intimes" },
+    { "articulation": "respiration", "mouvement": "expiration", "role": "accessoire", "precision": "expiration forcée : intercostaux internes et intimes" }
+   ],
+   "synergistes": ["diaphragme", "dentele-postero-superieur", "transverse-du-thorax"],
+   "antagonistes": [],
+   "innervation": { "nerf": "nerfs-intercostaux", "texte": "Nerfs intercostaux (rameaux antérieurs des nerfs thoraciques T1 à T11), chacun pour son espace", "racines": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11"] },
+   "vascularisation": { "texte": "Artères intercostales postérieures (aorte, intercostale suprême) et antérieures (thoracique interne, musculo-phrénique)", "arteres": ["arteres-intercostales", "arteres-intercostales-posterieures", "artere-intercostale-supreme", "thoracique-interne", "artere-musculophrenique"] },
+   "palpation": "Du bout du doigt, dans le creux qui sépare deux côtes",
+   "test": "Pas de test manuel : on regarde les espaces intercostaux pendant la respiration ; ils se creusent à l'inspiration quand les muscles sont faibles",
+   "atteinte": "Paralysie étendue (lésion de la moelle, maladie neuromusculaire) : la paroi se déforme à contretemps à chaque inspiration, la respiration ne repose plus que sur le diaphragme et la toux perd sa force. Un seul nerf lésé : simple bande d'insensibilité, sans gêne motrice",
+   "clinique": "Veine, artère et nerf intercostaux courent, dans cet ordre de haut en bas, sous le bord inférieur de chaque côte, entre couches interne et intime : une ponction de la plèvre se fait donc au ras du bord supérieur de la côte du dessous",
+   "memo": "Trois couches entre deux côtes : externes, internes, intimes. Les externes descendent en avant, « mains dans les poches » ; les deux autres les croisent",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-intercostaux", "kenhub-espaces-intercostaux", "tma-thorax", "dartmouth-thorax", "uams-thorax", "openstax-11-4"],
+   "divergences": "Rôle discuté : pour Gray, ils ne déplacent guère les côtes et servent surtout à raidir les espaces ; les ouvrages récents font des externes des inspirateurs, des internes et des intimes des expirateurs"
+  },
+  {
+   "id": "petit-pectoral",
+   "resume": "Le petit triangle caché sous le grand pectoral, tendu des côtes 3 à 5 au processus coracoïde : il abaisse et avance le moignon de l'épaule.",
+   "origine": [
+    { "texte": "Bord supérieur et face externe des côtes 3, 4 et 5, près de leurs cartilages, et fascia des muscles intercostaux voisins", "os": ["troisieme-cote", "quatrieme-cote", "cinquieme-cote"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord médial et face supérieure du processus coracoïde de la scapula, par un tendon plat", "os": ["scapula"] }
+   ],
+   "action": "Abaisse le moignon de l'épaule, tire la scapula en avant et en bas et la plaque contre le thorax, en faisant basculer la glène vers le bas ; scapula fixe, il soulève les côtes 3 à 5 à l'inspiration forcée",
+   "actions": [
+    { "articulation": "scapula", "mouvement": "abaissement", "role": "principal" },
+    { "articulation": "scapula", "mouvement": "protraction", "role": "principal", "precision": "avec le dentelé antérieur" },
+    { "articulation": "scapula", "mouvement": "sonnette-mediale", "role": "accessoire", "precision": "abaisse le bord latéral de la scapula en tirant sur le processus coracoïde" },
+    { "articulation": "scapula", "mouvement": "stabilisation", "role": "accessoire", "precision": "plaque la scapula contre la paroi du thorax" },
+    { "articulation": "cotes", "mouvement": "elevation", "role": "accessoire", "precision": "scapula fixe : côtes 3 à 5" },
+    { "articulation": "respiration", "mouvement": "inspiration", "role": "accessoire", "precision": "inspiration forcée" }
+   ],
+   "synergistes": ["dentele-anterieur", "subclavier", "grand-rhomboide"],
+   "antagonistes": ["trapeze"],
+   "innervation": { "nerf": "nerf-pectoral-medial", "texte": "Nerf pectoral médial, qui le traverse pour gagner le grand pectoral ; apport du nerf pectoral latéral par l'anse des pectoraux", "racines": ["C8", "T1"] },
+   "vascularisation": { "texte": "Branches pectorales de l'artère thoraco-acromiale ; artères thoraciques supérieure et latérale", "arteres": ["branches-pectorales-de-l-artere-thoraco-acromiale", "artere-thoraco-acromiale", "artere-thoracique-laterale"] },
+   "palpation": "Sous le processus coracoïde, à travers le grand pectoral relâché : cordon oblique vers les côtes 3 à 5",
+   "test": "Sujet couché sur le dos : porter le moignon de l'épaule vers l'avant, sans s'aider du bras, contre la main de l'examinateur",
+   "atteinte": "Paralysie isolée rare et peu gênante. C'est son raccourcissement qui pose problème : épaule enroulée en avant, bascule de la scapula limitée, d'où gêne pour lever le bras et conflit sous l'acromion",
+   "clinique": "Repère de l'aisselle : il divise l'artère axillaire en trois segments, et les faisceaux du plexus brachial passent sous son tendon, où ils peuvent être comprimés (une des formes du syndrome du défilé thoracique)",
+   "memo": "Trois côtes (3, 4, 5), un seul tendon sur le processus coracoïde, qu'il partage avec le coraco-brachial et le chef court du biceps",
+   "variantes": "Origine décalée d'une côte (2 à 4 ou 2 à 5) ; tendon parfois prolongé par-dessus le processus coracoïde jusqu'au tubercule majeur ; absent avec le grand pectoral dans le syndrome de Poland",
+   "sources": ["gray1918", "kenhub-petit-pectoral", "tma-pectoral", "uams-membre-superieur", "uams-thorax", "openstax-11-5"],
+   "divergences": "Racines : C8 et T1 (Gray, UAMS) ; Kenhub ajoute un apport du nerf pectoral latéral, soit C5 à T1 au total"
+  },
+  {
+   "id": "subclavier",
+   "resume": "Le petit muscle cylindrique caché sous la clavicule, tendu vers la première côte : il cale la clavicule contre le sternum.",
+   "origine": [
+    { "texte": "Jonction de la première côte et de son cartilage, par un tendon court et épais, devant le ligament costo-claviculaire", "os": ["premiere-cote", "cartilage-costal-de-la-premiere-cote"] }
+   ],
+   "terminaison": [
+    { "texte": "Sillon de la face inférieure de la clavicule, à son tiers moyen", "os": ["clavicule"] }
+   ],
+   "action": "Abaisse la clavicule et la tire en avant et en dedans, ce qui la maintient emboîtée dans l'articulation sterno-claviculaire pendant les mouvements de l'épaule",
+   "actions": [
+    { "articulation": "scapula", "mouvement": "stabilisation", "role": "principal", "precision": "cale la clavicule dans l'articulation sterno-claviculaire" },
+    { "articulation": "scapula", "mouvement": "abaissement", "role": "accessoire", "precision": "abaisse la clavicule et, avec elle, le moignon de l'épaule" },
+    { "articulation": "cotes", "mouvement": "elevation", "role": "accessoire", "precision": "clavicule fixe : soulève la première côte" }
+   ],
+   "synergistes": ["petit-pectoral"],
+   "antagonistes": ["trapeze", "sterno-cleido-mastoidien"],
+   "innervation": { "nerf": "nerf-subclavier", "texte": "Nerf subclavier, né du tronc supérieur du plexus brachial", "racines": ["C5", "C6"] },
+   "vascularisation": { "texte": "Rameau claviculaire de l'artère thoraco-acromiale ; artère supra-scapulaire", "arteres": ["artere-thoraco-acromiale", "artere-suprascapulaire"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Sa paralysie isolée passe inaperçue. Dans une fracture de la clavicule, il fait écran entre les fragments osseux et les vaisseaux subclaviers ou le plexus brachial",
+   "clinique": "Vaisseaux subclaviers et plexus brachial passent juste derrière lui, entre clavicule et première côte : ils peuvent y être pincés (syndrome costo-claviculaire, une des formes du défilé thoracique)",
+   "memo": "Sub-clavier : sous la clavicule. Un coussin entre l'os et les gros vaisseaux du bras",
+   "variantes": "Insertion possible sur le processus coracoïde, seule ou en plus de la clavicule",
+   "sources": ["gray1918", "kenhub-subclavier", "tma-pectoral", "uams-membre-superieur", "openstax-11-5"],
+   "divergences": "Racines : C5 et C6 (Gray, Kenhub) ; C5 seul pour les tables UAMS"
+  },
+  {
+   "id": "pubococcygien",
+   "resume": "La partie antérieure et principale de l'élévateur de l'anus : une sangle tendue du pubis au coccyx, de part et d'autre de l'urètre, du vagin et du rectum.",
+   "origine": [
+    { "texte": "Face postérieure du corps du pubis, en dehors du pubo-anal, et partie antérieure du fascia de l'obturateur interne", "os": ["pubis"] }
+   ],
+   "terminaison": [
+    { "texte": "Ligament ano-coccygien et coccyx, par ses fibres postérieures", "os": ["coccyx"] },
+    { "texte": "Centre tendineux du périnée, paroi du vagin ou capsule de la prostate, paroi du canal anal, par ses fibres médiales", "os": [] }
+   ],
+   "action": "Soutient la vessie, l'utérus ou la prostate et le rectum ; resserre la fente par où passent l'urètre, le vagin et le canal anal, et soulève le plancher pelvien quand la pression de l'abdomen augmente",
+   "actions": [
+    { "articulation": "bassin", "mouvement": "elevation", "role": "principal", "precision": "soulève le plancher pelvien et les viscères qu'il porte" },
+    { "articulation": "bassin", "mouvement": "fermeture", "role": "principal", "precision": "resserre le hiatus urogénital : continence urinaire" }
+   ],
+   "synergistes": ["iliococcygien", "pubo-anal", "coccygien", "sphincter-anal-externe"],
+   "antagonistes": [],
+   "innervation": { "nerf": null, "texte": "Nerf de l'élévateur de l'anus (S3, S4) ; rameaux périnéaux et rectal inférieur du nerf pudendal", "racines": ["S3", "S4"] },
+   "vascularisation": { "texte": "Artères glutéale inférieure, vésicale inférieure et pudendale interne", "arteres": ["artere-gluteale-inferieure", "artere-pudendale-interne"] },
+   "palpation": "Au toucher vaginal ou rectal : sangle sentie de chaque côté, près du pubis, qui se contracte quand le sujet retient",
+   "test": "Au toucher pelvien, on demande de serrer et de remonter le périnée : on apprécie la force, la tenue et la symétrie de la contraction",
+   "atteinte": "Étiré, dénervé ou arraché du pubis par l'accouchement : fuites d'urine à la toux et à l'effort, descente de la vessie, de l'utérus ou du rectum (prolapsus). Facteurs aggravants : âge, obésité, toux chronique, port de charges",
+   "clinique": "Cible de la rééducation périnéale : les exercices de Kegel consistent à le contracter cinq à dix secondes, par séries répétées chaque jour",
+   "memo": "Du pubis au coccyx, comme son nom l'indique : le hamac sur lequel reposent la vessie et le rectum",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-elevateur-anus", "kenhub-plancher-pelvien", "tma-plancher-pelvien", "tma-pubococcygien", "uams-bassin", "physiopedia-elevateur-anus", "elsevier-nerf-elevateur-anus"],
+   "divergences": "Découpage variable : certains y distinguent des faisceaux destinés au centre tendineux du périnée, au vagin (ou à la prostate) et à la paroi du canal anal, et parlent de muscle pubo-viscéral. Racines du nerf de l'élévateur de l'anus : S4 seul, ou S3 et S4"
+  },
+  {
+   "id": "pyramidal-de-l-abdomen",
+   "resume": "Un petit triangle musculaire inconstant, posé devant le bas du droit de l'abdomen, dans sa gaine : il tend la ligne blanche.",
+   "origine": [
+    { "texte": "Devant du pubis (crête pubienne) et ligaments antérieurs de la symphyse pubienne", "os": ["pubis", "symphyse-pubienne"] }
+   ],
+   "terminaison": [
+    { "texte": "Ligne blanche, à mi-distance environ entre le pubis et l'ombilic, par un sommet effilé", "os": ["ligne-blanche"] }
+   ],
+   "action": "Tend la ligne blanche en la tirant vers le bas",
+   "actions": [
+    { "articulation": "abdomen", "mouvement": "tension", "role": "principal", "precision": "tend la ligne blanche" },
+    { "articulation": "abdomen", "mouvement": "compression", "role": "accessoire", "precision": "appoint minime aux autres muscles de la paroi" }
+   ],
+   "synergistes": ["droit-abdomen"],
+   "antagonistes": [],
+   "innervation": { "nerf": null, "texte": "Nerf subcostal (rameau antérieur de T12)", "racines": ["T12"] },
+   "vascularisation": { "texte": "Artère épigastrique inférieure", "arteres": ["epigastrique-inferieure"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Son absence ou sa paralysie n'entraîne aucun trouble : quand il manque, le bas du droit de l'abdomen est simplement plus large",
+   "clinique": null,
+   "memo": "Une petite pyramide dont la base repose sur le pubis et la pointe monte sur la ligne blanche",
+   "variantes": "Absent chez environ une personne sur cinq, d'un côté ou des deux ; parfois double, ou plus haut que d'habitude",
+   "sources": ["gray1918", "kenhub-pyramidal", "kenhub-paroi-abdominale", "tma-paroi-abdominale", "uams-abdomen"],
+   "divergences": null
+  },
+  {
+   "id": "courts-elevateurs-des-cotes",
+   "resume": "Douze petits éventails de chaque côté, tendus d'un processus transverse à la côte située juste au-dessous, tout contre la colonne.",
+   "origine": [
+    { "texte": "Sommet des processus transverses de C7 et des onze premières vertèbres thoraciques (T1 à T11)", "os": ["c7", "vertebre-t1", "vertebre-t2", "vertebre-t3", "vertebre-t4", "vertebre-t5", "vertebre-t6", "vertebre-t7", "vertebre-t8", "vertebre-t9", "vertebre-t10", "vertebre-t11"] }
+   ],
+   "terminaison": [
+    { "texte": "Face externe de la côte située juste au-dessous, entre le tubercule et l'angle : de la 1re à la 12e côte", "os": ["premiere-cote", "deuxieme-cote", "troisieme-cote", "quatrieme-cote", "cinquieme-cote", "sixieme-cote", "septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote", "douzieme-cote"] }
+   ],
+   "action": "Soulèvent les côtes, faiblement car ils s'attachent tout près de leur pivot ; aident à incliner la colonne thoracique de leur côté et à la faire tourner",
+   "actions": [
+    { "articulation": "cotes", "mouvement": "elevation", "role": "principal" },
+    { "articulation": "respiration", "mouvement": "inspiration", "role": "accessoire", "precision": "rôle discuté" },
+    { "articulation": "rachis-thoracique", "mouvement": "inclinaison", "role": "accessoire" }
+   ],
+   "synergistes": ["longs-elevateurs-des-cotes", "intercostaux-externes", "dentele-postero-superieur"],
+   "antagonistes": ["intercostaux-internes", "transverse-du-thorax"],
+   "innervation": { "nerf": null, "texte": "Rameaux latéraux des rameaux postérieurs des nerfs spinaux de C8 à T11, un par muscle", "racines": ["C8", "T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11"] },
+   "vascularisation": { "texte": "Rameaux dorsaux des artères intercostales postérieures", "arteres": ["arteres-intercostales-posterieures"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Pas de déficit isolé connu : trop petits pour que leur paralysie se remarque",
+   "clinique": null,
+   "memo": "Élévateurs « courts » : chacun descend d'une vertèbre à la côte juste en dessous. Douze par côté, de C7 à T11",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-elevateurs-cotes", "kenhub-dos-profond", "kenhub-dos-profond-fr", "tma-dos-profond", "uams-thorax", "dartmouth-thorax"],
+   "divergences": "Innervation : rameaux postérieurs pour les auteurs récents (C8 à T11 pour Kenhub, C7 à T11 pour UAMS) ; Gray les range avec les muscles du thorax innervés par les nerfs intercostaux. Rôle inspirateur discuté : pour Gray, ils agissent surtout sur la colonne"
+  },
+  {
+   "id": "dentele-postero-superieur",
+   "resume": "Une mince lame musculaire du haut du dos, cachée sous les rhomboïdes, tendue des épineuses C7 à T3 aux côtes 2 à 5, qu'elle soulève.",
+   "origine": [
+    { "texte": "Partie basse du ligament nuchal, processus épineux de C7 et des deux ou trois premières vertèbres thoraciques, ligament supra-épineux, par une fine aponévrose", "os": ["ligament-nuchal", "c7", "vertebre-t1", "vertebre-t2", "vertebre-t3", "ligament-supra-epineux"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord supérieur des côtes 2 à 5, un peu en dehors de leur angle, par quatre digitations charnues", "os": ["deuxieme-cote", "troisieme-cote", "quatrieme-cote", "cinquieme-cote"] }
+   ],
+   "action": "Soulève les côtes 2 à 5 et aide ainsi l'inspiration profonde",
+   "actions": [
+    { "articulation": "cotes", "mouvement": "elevation", "role": "principal" },
+    { "articulation": "respiration", "mouvement": "inspiration", "role": "accessoire", "precision": "inspiration forcée ; rôle discuté" }
+   ],
+   "synergistes": ["intercostaux-externes", "courts-elevateurs-des-cotes", "scalene-posterieur"],
+   "antagonistes": ["dentele-postero-inferieur", "intercostaux-internes"],
+   "innervation": { "nerf": "nerfs-intercostaux", "texte": "Nerfs intercostaux 2 à 5 (rameaux antérieurs de T2 à T5)", "racines": ["T2", "T3", "T4", "T5"] },
+   "vascularisation": { "texte": "Artères intercostales postérieures des premiers espaces", "arteres": ["arteres-intercostales-posterieures"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Pas de déficit isolé connu : sa paralysie, noyée dans celle des nerfs intercostaux, passe inaperçue",
+   "clinique": "Syndrome scapulo-costal : son surmenage (téléphone coincé entre l'oreille et l'épaule) donne douleurs et fourmillements le long du bord médial de la scapula, irradiant vers le cou et le bras, à ne pas confondre avec une névralgie cervico-brachiale",
+   "memo": "Quatre dents sur les côtes 2 à 5, qu'il tire vers le haut ; le dentelé postéro-inférieur fait l'inverse sur les côtes 9 à 12",
+   "variantes": "Nombre de digitations variable ; le muscle peut manquer",
+   "sources": ["gray1918", "kenhub-denteles-posterieurs", "tma-dos-intermediaire", "uams-dos", "loyola-dos", "lecturio-dos"],
+   "divergences": "Côtes d'insertion : 2 à 5 (Gray, Kenhub, TeachMeAnatomy), 1 à 4 pour UAMS, 2 à 4 pour Loyola. Nerfs : T2 à T5 (Kenhub) ou T1 à T4 (UAMS, Lecturio)"
+  },
+  {
+   "id": "iliocostal-du-thorax",
+   "resume": "Le faisceau thoracique de l'ilio-costal : il relie les angles des six dernières côtes à ceux des six premières.",
+   "origine": [
+    { "texte": "Bord supérieur de l'angle des six dernières côtes (7 à 12), en dedans des tendons de l'iliocostal des lombes", "os": ["septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote", "douzieme-cote"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord supérieur de l'angle des six premières côtes et face postérieure du processus transverse de C7", "os": ["premiere-cote", "deuxieme-cote", "troisieme-cote", "quatrieme-cote", "cinquieme-cote", "sixieme-cote", "c7"] }
+   ],
+   "action": "Les deux côtés ensemble étendent la colonne thoracique ; un seul côté l'incline de son côté",
+   "actions": [
+    { "articulation": "rachis-thoracique", "mouvement": "extension", "role": "principal" },
+    { "articulation": "rachis-thoracique", "mouvement": "inclinaison", "role": "principal" }
+   ],
+   "synergistes": ["longissimus-du-thorax", "epineux-du-thorax", "iliocostal-des-lombes", "semi-epineux-du-thorax"],
+   "antagonistes": ["droit-abdomen", "oblique-externe", "oblique-interne"],
+   "innervation": { "nerf": null, "texte": "Rameaux latéraux des rameaux postérieurs des nerfs spinaux thoraciques", "racines": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12"] },
+   "vascularisation": { "texte": "Rameaux dorsaux des artères intercostales postérieures et de la subcostale", "arteres": ["arteres-intercostales-posterieures", "artere-subcostale"] },
+   "palpation": null,
+   "test": "Testé en bloc avec les érecteurs du rachis : sujet à plat ventre, extension du tronc contre la pesanteur",
+   "atteinte": "Jamais atteint isolément : sa faiblesse participe au dos rond et au défaut de redressement du tronc",
+   "clinique": null,
+   "memo": "Le relais du milieu : il part des côtes où s'arrête l'iliocostal des lombes et finit sur celles d'où part l'iliocostal du cou",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-ilio-costal", "kenhub-dos-profond-fr", "uams-dos", "lecturio-dos"],
+   "divergences": "Innervation : T2 à T9 pour Lecturio ; les autres sources parlent des rameaux postérieurs thoraciques sans préciser les niveaux"
+  },
+  {
+   "id": "intertransversaires-lateraux-des-lombes",
+   "resume": "De courts muscles tendus entre les processus transverses de deux vertèbres lombaires voisines ; innervés par les rameaux antérieurs, ils sont à part des vrais muscles du dos.",
+   "origine": [
+    { "texte": "Bord supérieur du processus transverse (costiforme) de la vertèbre lombaire sous-jacente, de L2 à L5", "os": ["vertebre-l2", "vertebre-l3", "vertebre-l4", "vertebre-l5"] }
+   ],
+   "terminaison": [
+    { "texte": "Parties ventrales : bord inférieur du processus transverse de la vertèbre sus-jacente, de L1 à L4", "os": ["vertebre-l1", "vertebre-l2", "vertebre-l3", "vertebre-l4"] },
+    { "texte": "Parties dorsales : processus accessoire de la vertèbre sus-jacente", "os": ["vertebre-l1", "vertebre-l2", "vertebre-l3", "vertebre-l4"] }
+   ],
+   "action": "Stabilisent l'une sur l'autre deux vertèbres lombaires voisines ; d'un seul côté, ils aident à incliner la colonne lombaire de leur côté",
+   "actions": [
+    { "articulation": "rachis-lombaire", "mouvement": "stabilisation", "role": "principal" },
+    { "articulation": "rachis-lombaire", "mouvement": "inclinaison", "role": "accessoire" }
+   ],
+   "synergistes": ["carre-lombes", "multifides-lombaire", "interepineux-des-lombes"],
+   "antagonistes": [],
+   "innervation": { "nerf": null, "texte": "Rameaux antérieurs des nerfs spinaux lombaires, à la différence des intertransversaires médiaux, innervés par les rameaux postérieurs", "racines": ["L1", "L2", "L3", "L4"] },
+   "vascularisation": { "texte": "Rameaux dorsaux des artères lombaires", "arteres": ["arteres-lombaires"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Pas de déficit isolé connu : leur paralysie, noyée dans celle des autres muscles lombaires, passe inaperçue",
+   "clinique": null,
+   "memo": "Inter-transversaires : entre deux processus transverses. Les latéraux reçoivent leurs nerfs des rameaux antérieurs, comme le carré des lombes voisin",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-dos-profond", "kenhub-dos-profond-fr", "uams-dos", "loyola-dos", "lecturio-dos"],
+   "divergences": "Innervation : rameaux antérieurs pour Gray ; Kenhub cite rameaux antérieurs et postérieurs pour l'ensemble des intertransversaires lombaires ; les tables UAMS et Loyola ne donnent que les rameaux postérieurs, sans distinguer latéraux et médiaux"
+  },
+  {
+   "id": "interepineux-des-lombes",
+   "resume": "De courts muscles pairs tendus d'un processus épineux lombaire au suivant, de chaque côté du ligament interépineux.",
+   "origine": [
+    { "texte": "Bord supérieur du processus épineux de la vertèbre lombaire sous-jacente, de L2 à L5", "os": ["vertebre-l2", "vertebre-l3", "vertebre-l4", "vertebre-l5"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord inférieur du processus épineux de la vertèbre sus-jacente, de L1 à L4", "os": ["vertebre-l1", "vertebre-l2", "vertebre-l3", "vertebre-l4"] }
+   ],
+   "action": "Stabilisent l'une sur l'autre deux vertèbres lombaires voisines et aident à étendre la colonne lombaire ; riches en capteurs d'étirement, ils renseignent sur la posture",
+   "actions": [
+    { "articulation": "rachis-lombaire", "mouvement": "stabilisation", "role": "principal" },
+    { "articulation": "rachis-lombaire", "mouvement": "extension", "role": "accessoire" }
+   ],
+   "synergistes": ["multifides-lombaire", "longissimus-du-thorax", "intertransversaires-lateraux-des-lombes"],
+   "antagonistes": ["droit-abdomen"],
+   "innervation": { "nerf": null, "texte": "Rameaux postérieurs des nerfs spinaux lombaires correspondants", "racines": ["L1", "L2", "L3", "L4", "L5"] },
+   "vascularisation": { "texte": "Rameaux dorsaux des artères lombaires", "arteres": ["arteres-lombaires"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Pas de déficit isolé connu : trop faibles pour mouvoir seuls la colonne, leur paralysie passe inaperçue",
+   "clinique": null,
+   "memo": "Inter-épineux : d'une épineuse à la suivante. Quatre paires aux lombes, six au cou, presque rien au thorax",
+   "variantes": "Une paire supplémentaire, parfois, entre T12 et L1 ou entre L5 et le sacrum",
+   "sources": ["gray1918", "kenhub-interepineux", "kenhub-dos-profond-fr", "uams-dos", "loyola-dos"],
+   "divergences": null
+  },
+  {
+   "id": "interepineux-du-thorax",
+   "resume": "De petits faisceaux inconstants entre deux processus épineux voisins, présents seulement aux deux extrémités de la colonne thoracique.",
+   "origine": [
+    { "texte": "Bord supérieur du processus épineux de la vertèbre sous-jacente : T2 en haut, T11 et T12 en bas", "os": ["vertebre-t2", "vertebre-t11", "vertebre-t12"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord inférieur du processus épineux de la vertèbre sus-jacente : T1 en haut, T10 et T11 en bas", "os": ["vertebre-t1", "vertebre-t10", "vertebre-t11"] }
+   ],
+   "action": "Stabilisent deux vertèbres voisines aux charnières cervico-thoracique et thoraco-lombaire ; leur effet d'extension est négligeable",
+   "actions": [
+    { "articulation": "rachis-thoracique", "mouvement": "stabilisation", "role": "principal" },
+    { "articulation": "rachis-thoracique", "mouvement": "extension", "role": "accessoire", "precision": "effet minime" }
+   ],
+   "synergistes": ["multifides-du-thorax", "epineux-du-thorax", "semi-epineux-du-thorax"],
+   "antagonistes": [],
+   "innervation": { "nerf": null, "texte": "Rameaux postérieurs des nerfs spinaux thoraciques correspondants", "racines": ["T1", "T2", "T10", "T11"] },
+   "vascularisation": { "texte": "Rameaux dorsaux des artères intercostales postérieures ; artère intercostale suprême en haut, artère subcostale en bas", "arteres": ["arteres-intercostales-posterieures", "artere-intercostale-supreme", "artere-subcostale"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit connu : souvent absents, ils n'ont pas de rôle moteur mesurable",
+   "clinique": null,
+   "memo": "Au thorax, les processus épineux se recouvrent comme des tuiles et la colonne bouge peu : les interépineux y sont presque inutiles, et le plus souvent absents",
+   "variantes": "Souvent absents ; quand ils existent : entre T1 et T2, parfois T2 et T3, et entre T11 et T12",
+   "sources": ["gray1918", "kenhub-interepineux", "kenhub-dos-profond-fr", "uams-dos", "loyola-dos"],
+   "divergences": "Niveaux : T1–T2, parfois T2–T3, et T11–T12 pour Gray ; Kenhub décrit en général trois paires, entre T1 et T2, T10 et T11, T11 et T12"
+  },
+  {
+   "id": "longissimus-du-thorax",
+   "resume": "La partie principale du longissimus et le plus gros des érecteurs du rachis : il s'étend du sacrum à la première vertèbre thoracique.",
+   "origine": [
+    { "texte": "Tendon commun des érecteurs du rachis : crête sacrale médiane, face postérieure du sacrum, partie postérieure de la crête iliaque, processus épineux lombaires", "os": ["sacrum", "ilium", "vertebres-lombaires"] },
+    { "texte": "Fibres lombaires profondes : aponévrose intermusculaire lombaire, ilium et ligament sacro-iliaque postérieur", "os": ["ilium", "ligament-sacro-iliaque-posterieur"] }
+   ],
+   "terminaison": [
+    { "texte": "Sommet des processus transverses de toutes les vertèbres thoraciques, par des tendons arrondis", "os": ["vertebre-t1", "vertebre-t2", "vertebre-t3", "vertebre-t4", "vertebre-t5", "vertebre-t6", "vertebre-t7", "vertebre-t8", "vertebre-t9", "vertebre-t10", "vertebre-t11", "vertebre-t12"] },
+    { "texte": "Neuf ou dix dernières côtes, entre le tubercule et l'angle, par des languettes charnues", "os": ["troisieme-cote", "quatrieme-cote", "cinquieme-cote", "sixieme-cote", "septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote", "douzieme-cote"] },
+    { "texte": "Processus accessoires et transverses (costiformes) des vertèbres lombaires", "os": ["vertebre-l1", "vertebre-l2", "vertebre-l3", "vertebre-l4", "vertebre-l5"] }
+   ],
+   "action": "Les deux côtés ensemble étendent la colonne lombaire et thoracique et redressent le tronc penché ; un seul côté incline le tronc de son côté",
+   "actions": [
+    { "articulation": "rachis-lombaire", "mouvement": "extension", "role": "principal" },
+    { "articulation": "rachis-thoracique", "mouvement": "extension", "role": "principal" },
+    { "articulation": "rachis-lombaire", "mouvement": "inclinaison", "role": "principal" },
+    { "articulation": "rachis-thoracique", "mouvement": "inclinaison", "role": "principal" }
+   ],
+   "synergistes": ["iliocostal-des-lombes", "iliocostal-du-thorax", "epineux-du-thorax", "multifides-lombaire"],
+   "antagonistes": ["droit-abdomen", "oblique-externe", "oblique-interne"],
+   "innervation": { "nerf": null, "texte": "Rameaux postérieurs des nerfs spinaux thoraciques et lombaires (rameaux latéraux, et intermédiaires aux lombes)", "racines": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "L1", "L2", "L3", "L4", "L5"] },
+   "vascularisation": { "texte": "Rameaux dorsaux des artères intercostales postérieures, de la subcostale et des lombaires ; artères sacrales latérales et médiane", "arteres": ["arteres-intercostales-posterieures", "artere-subcostale", "arteres-lombaires", "artere-sacrale-mediane"] },
+   "palpation": "Relief charnu le plus net de part et d'autre des épineuses lombaires et thoraciques basses ; il durcit quand le sujet, à plat ventre, décolle le thorax",
+   "test": "Sujet à plat ventre : extension du tronc contre la pesanteur, puis contre résistance ; testé avec les autres érecteurs du rachis",
+   "atteinte": "Jamais paralysé seul. Faiblesse des érecteurs du rachis : tronc qui s'affaisse en avant, redressement difficile. Contracture douloureuse : lumbago",
+   "clinique": "Quand le tronc se penche en avant, il se contracte en s'allongeant pour freiner la chute du buste ; en fin de flexion, sa seule tension passive retient la colonne",
+   "memo": "Le « long dorsal » des anciens : le plus gros cordon de part et d'autre des épineuses, celui que l'on masse dans le bas du dos",
+   "variantes": "Ses fibres lombaires sont parfois décrites comme un muscle à part, le longissimus des lombes",
+   "sources": ["gray1918", "kenhub-longissimus", "kenhub-dos-profond-fr", "uams-dos", "lecturio-dos"],
+   "divergences": "Côtes d'insertion : neuf ou dix dernières (Gray), 7 à 12 (Kenhub), 2 à 12 (Lecturio). Niveaux d'innervation donnés très différemment d'une source à l'autre : ils suivent ici l'étendue du muscle"
+  },
+  {
+   "id": "longs-elevateurs-des-cotes",
+   "resume": "Dans le bas du thorax, les élévateurs des côtes se dédoublent : un faisceau long saute une côte pour se fixer deux étages plus bas.",
+   "origine": [
+    { "texte": "Sommet des processus transverses des vertèbres thoraciques basses : ce sont les quatre derniers élévateurs des côtes qui se dédoublent", "os": ["vertebre-t7", "vertebre-t8", "vertebre-t9", "vertebre-t10"] }
+   ],
+   "terminaison": [
+    { "texte": "Face externe de la côte située deux étages plus bas, entre le tubercule et l'angle : les quatre dernières côtes", "os": ["neuvieme-cote", "dixieme-cote", "onzieme-cote", "douzieme-cote"] }
+   ],
+   "action": "Soulèvent les dernières côtes, faiblement ; aident à incliner la colonne thoracique de leur côté et à la faire tourner",
+   "actions": [
+    { "articulation": "cotes", "mouvement": "elevation", "role": "principal" },
+    { "articulation": "respiration", "mouvement": "inspiration", "role": "accessoire", "precision": "rôle discuté" },
+    { "articulation": "rachis-thoracique", "mouvement": "inclinaison", "role": "accessoire" }
+   ],
+   "synergistes": ["courts-elevateurs-des-cotes", "intercostaux-externes"],
+   "antagonistes": ["intercostaux-internes", "dentele-postero-inferieur"],
+   "innervation": { "nerf": null, "texte": "Rameaux latéraux des rameaux postérieurs des nerfs spinaux thoraciques du même niveau", "racines": ["T7", "T8", "T9", "T10"] },
+   "vascularisation": { "texte": "Rameaux dorsaux des artères intercostales postérieures", "arteres": ["arteres-intercostales-posterieures"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Pas de déficit isolé connu : trop petits pour que leur paralysie se remarque",
+   "clinique": null,
+   "memo": "Courts : la côte juste en dessous. Longs : ils sautent une côte. Chaque côte basse reçoit ainsi des fibres venues de deux vertèbres",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-elevateurs-cotes", "kenhub-dos-profond-fr", "lecturio-dos", "uams-thorax"],
+   "divergences": "Gray et Kenhub ne décrivent de faisceaux longs que pour les quatre derniers élévateurs, sans nommer les vertèbres (T7 à T10 par déduction) ; Lecturio n'en précise pas le niveau. Innervation : rameaux postérieurs pour les auteurs récents, nerfs intercostaux pour Gray"
+  },
+  {
+   "id": "multifides-du-thorax",
+   "resume": "La partie thoracique du multifide : des faisceaux obliques, courts et serrés, tendus des processus transverses aux processus épineux situés deux à quatre étages plus haut.",
+   "origine": [
+    { "texte": "Processus transverses des vertèbres thoraciques", "os": ["vertebres-thoraciques"] }
+   ],
+   "terminaison": [
+    { "texte": "Processus épineux des vertèbres situées deux à quatre étages plus haut ; les faisceaux superficiels sont les plus longs, les plus profonds unissent deux vertèbres voisines", "os": ["vertebres-thoraciques"] }
+   ],
+   "action": "Verrouille les vertèbres thoraciques les unes sur les autres pendant les mouvements ; les deux côtés ensemble étendent la colonne, un seul côté l'incline de son côté et la fait tourner vers le côté opposé",
+   "actions": [
+    { "articulation": "rachis-thoracique", "mouvement": "stabilisation", "role": "principal" },
+    { "articulation": "rachis-thoracique", "mouvement": "extension", "role": "accessoire" },
+    { "articulation": "rachis-thoracique", "mouvement": "rotation-controlaterale", "role": "accessoire" },
+    { "articulation": "rachis-thoracique", "mouvement": "inclinaison", "role": "accessoire" }
+   ],
+   "synergistes": ["semi-epineux-du-thorax", "rotateurs", "multifides-lombaire", "epineux-du-thorax"],
+   "antagonistes": ["droit-abdomen"],
+   "innervation": { "nerf": null, "texte": "Rameaux médiaux des rameaux postérieurs des nerfs spinaux thoraciques, étage par étage", "racines": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12"] },
+   "vascularisation": { "texte": "Rameaux dorsaux des artères intercostales postérieures et de la subcostale", "arteres": ["arteres-intercostales-posterieures", "artere-subcostale"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Pas de paralysie isolée décrite : son déficit se fond dans celui des muscles profonds du dos, avec une colonne moins bien tenue pendant les mouvements",
+   "clinique": null,
+   "memo": "Multifide : « fendu en nombreux faisceaux ». Il comble la gouttière entre processus épineux et transverses, sous le semi-épineux et sur les rotateurs",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-multifide", "kenhub-dos-profond-fr", "tma-dos-profond", "uams-dos", "loyola-dos"],
+   "divergences": "Longueur des faisceaux : un à quatre étages (Gray), deux à quatre (TeachMeAnatomy, UAMS), deux à cinq (Kenhub)"
+  },
+  {
+   "id": "multifides-lombaire",
+   "resume": "La partie lombaire du multifide, la plus épaisse : elle remplit la gouttière entre le sacrum et les épineuses lombaires et stabilise le bas de la colonne.",
+   "origine": [
+    { "texte": "Face postérieure du sacrum, jusqu'au quatrième foramen sacral, et aponévrose des érecteurs du rachis", "os": ["sacrum"] },
+    { "texte": "Épine iliaque postéro-supérieure et ligaments sacro-iliaques postérieurs", "os": ["ilium", "ligament-sacro-iliaque-posterieur"] },
+    { "texte": "Processus mamillaires des vertèbres lombaires", "os": ["vertebre-l1", "vertebre-l2", "vertebre-l3", "vertebre-l4", "vertebre-l5"] }
+   ],
+   "terminaison": [
+    { "texte": "Processus épineux des vertèbres lombaires, deux à quatre étages au-dessus de l'origine", "os": ["vertebre-l1", "vertebre-l2", "vertebre-l3", "vertebre-l4", "vertebre-l5"] }
+   ],
+   "action": "Stabilise les vertèbres lombaires les unes sur les autres ; les deux côtés ensemble étendent la colonne lombaire, un seul côté l'incline de son côté et la fait un peu tourner vers le côté opposé",
+   "actions": [
+    { "articulation": "rachis-lombaire", "mouvement": "stabilisation", "role": "principal" },
+    { "articulation": "rachis-lombaire", "mouvement": "extension", "role": "principal" },
+    { "articulation": "rachis-lombaire", "mouvement": "inclinaison", "role": "accessoire" },
+    { "articulation": "rachis-lombaire", "mouvement": "rotation-controlaterale", "role": "accessoire" }
+   ],
+   "synergistes": ["longissimus-du-thorax", "iliocostal-des-lombes", "interepineux-des-lombes", "multifides-du-thorax"],
+   "antagonistes": ["droit-abdomen", "oblique-externe"],
+   "innervation": { "nerf": null, "texte": "Rameaux médiaux des rameaux postérieurs des nerfs spinaux lombaires, étage par étage", "racines": ["L1", "L2", "L3", "L4", "L5"] },
+   "vascularisation": { "texte": "Rameaux dorsaux des artères lombaires ; artères sacrales latérales", "arteres": ["arteres-lombaires"] },
+   "palpation": "Dans la gouttière qui longe les épineuses lombaires et le sacrum, tout contre la ligne médiane, sous l'aponévrose des érecteurs du rachis",
+   "test": "Pas de test isolé : il se contracte avec les érecteurs du rachis lors de l'extension du tronc, sujet à plat ventre",
+   "atteinte": "Dans la lombalgie chronique, les muscles profonds du dos, multifide en tête, fondent et se fatiguent vite : les vertèbres lombaires sont moins bien tenues",
+   "clinique": null,
+   "memo": "Le hauban des vertèbres lombaires : c'est aux lombes que le multifide est le plus épais",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-multifide", "kenhub-dos-profond-fr", "tma-dos-profond", "uams-dos", "lecturio-dos"],
+   "divergences": "Niveaux d'innervation : rameaux lombaires pour Kenhub ; Lecturio donne C3 à S3 pour l'ensemble du multifide, les tables UAMS C1 à L5"
+  },
+  {
+   "id": "semi-epineux-du-thorax",
+   "resume": "De longs faisceaux obliques qui montent des processus transverses du milieu du thorax aux processus épineux du haut du thorax et du bas du cou.",
+   "origine": [
+    { "texte": "Processus transverses de T6 à T10", "os": ["vertebre-t6", "vertebre-t7", "vertebre-t8", "vertebre-t9", "vertebre-t10"] }
+   ],
+   "terminaison": [
+    { "texte": "Processus épineux des quatre premières vertèbres thoraciques et des deux dernières cervicales (C6 à T4)", "os": ["vertebre-c6", "c7", "vertebre-t1", "vertebre-t2", "vertebre-t3", "vertebre-t4"] }
+   ],
+   "action": "Les deux côtés ensemble étendent la colonne thoracique et la base du cou ; un seul côté fait tourner le tronc vers le côté opposé et l'incline un peu de son côté",
+   "actions": [
+    { "articulation": "rachis-thoracique", "mouvement": "extension", "role": "principal" },
+    { "articulation": "rachis-thoracique", "mouvement": "rotation-controlaterale", "role": "principal" },
+    { "articulation": "rachis-thoracique", "mouvement": "inclinaison", "role": "accessoire" },
+    { "articulation": "rachis-cervical", "mouvement": "extension", "role": "accessoire" }
+   ],
+   "synergistes": ["multifides-du-thorax", "rotateurs", "semi-epineux-du-cou", "epineux-du-thorax"],
+   "antagonistes": ["droit-abdomen", "oblique-externe"],
+   "innervation": { "nerf": null, "texte": "Rameaux médiaux des rameaux postérieurs des nerfs spinaux thoraciques", "racines": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10"] },
+   "vascularisation": { "texte": "Rameaux dorsaux des artères intercostales postérieures", "arteres": ["arteres-intercostales-posterieures"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Pas de paralysie isolée décrite : son déficit se fond dans celui des muscles profonds du dos (extension et rotation du tronc moins fermes)",
+   "clinique": null,
+   "memo": "Semi-épineux : il part des processus transverses et finit sur les épineuses. Ses fibres sautent cinq ou six vertèbres : les plus longues des transversaires épineux",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-semi-epineux-thorax", "kenhub-dos-profond-fr", "tma-dos-profond", "uams-dos", "lecturio-dos"],
+   "divergences": "Les tables UAMS font naître l'ensemble du semi-épineux des processus transverses de C7 à T12 ; Gray et Kenhub limitent la partie thoracique à T6–T10. Niveaux d'innervation non précisés : ils suivent ici l'étendue du muscle"
+  },
+  {
+   "id": "epineux",
+   "resume": "La colonne la plus médiale et la plus grêle des érecteurs du rachis : elle relie entre eux les processus épineux, surtout au thorax.",
+   "origine": [
+    { "texte": "Épineux du thorax : processus épineux de T11 à L2", "os": ["vertebre-t11", "vertebre-t12", "vertebre-l1", "vertebre-l2"] },
+    { "texte": "Épineux du cou : partie basse du ligament nuchal, processus épineux de C7, parfois de T1 et T2", "os": ["ligament-nuchal", "c7", "vertebre-t1", "vertebre-t2"] },
+    { "texte": "Épineux de la tête : processus épineux de C7 et de T1, par des fibres le plus souvent confondues avec le semi-épineux de la tête", "os": ["c7", "vertebre-t1"] }
+   ],
+   "terminaison": [
+    { "texte": "Épineux du thorax : processus épineux des vertèbres thoraciques hautes, de T2 à T8 environ", "os": ["vertebre-t2", "vertebre-t3", "vertebre-t4", "vertebre-t5", "vertebre-t6", "vertebre-t7", "vertebre-t8"] },
+    { "texte": "Épineux du cou : processus épineux de l'axis, parfois de C3 et C4", "os": ["axis", "vertebre-c3", "vertebre-c4"] },
+    { "texte": "Épineux de la tête : os occipital, entre les lignes nuchales, avec le semi-épineux de la tête", "os": ["occipital"] }
+   ],
+   "action": "Les deux côtés ensemble étendent la colonne thoracique et le cou ; un seul côté les incline légèrement de son côté",
+   "actions": [
+    { "articulation": "rachis-thoracique", "mouvement": "extension", "role": "principal" },
+    { "articulation": "rachis-cervical", "mouvement": "extension", "role": "accessoire", "precision": "épineux du cou" },
+    { "articulation": "tete", "mouvement": "extension", "role": "accessoire", "precision": "épineux de la tête, inconstant" },
+    { "articulation": "rachis-thoracique", "mouvement": "inclinaison", "role": "accessoire" }
+   ],
+   "synergistes": ["longissimus", "ilio-costal", "semi-epineux-du-thorax", "multifides-du-thorax"],
+   "antagonistes": ["droit-abdomen", "oblique-externe", "oblique-interne"],
+   "innervation": { "nerf": null, "texte": "Rameaux postérieurs des nerfs spinaux cervicaux, thoraciques et lombaires supérieurs, étagés le long du muscle", "racines": ["C2", "C3", "C4", "C5", "C6", "C7", "C8", "T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11", "T12", "L1", "L2", "L3"] },
+   "vascularisation": { "texte": "Rameaux dorsaux des artères intercostales postérieures et lombaires ; artères cervicale profonde, vertébrale et occipitale pour le cou et la tête", "arteres": ["arteres-intercostales-posterieures", "arteres-lombaires", "artere-cervicale-profonde", "vertebrale", "artere-occipitale"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Jamais atteint isolément : son déficit se fond dans celui des érecteurs du rachis (dos qui s'arrondit, redressement faible)",
+   "clinique": null,
+   "memo": "Épineux : d'épineuse en épineuse, au ras de la ligne médiane. Seule sa partie thoracique est constante",
+   "variantes": "Épineux du cou inconstant et grêle ; épineux de la tête le plus souvent fondu dans le semi-épineux de la tête",
+   "sources": ["gray1918", "kenhub-epineux", "kenhub-dos-profond-fr", "tma-dos-profond", "uams-dos", "loyola-dos", "lecturio-dos", "openstax-11-3"],
+   "divergences": "Épineux du cou : terminaison sur l'axis, parfois C3 et C4 (Gray), ou sur C2 à C4 (Kenhub). Niveaux d'innervation : C2 à L3 pour les tables UAMS, non précisés ailleurs"
+  },
+  {
+   "id": "intercostaux-externes",
+   "resume": "La couche superficielle des muscles intercostaux : onze lames dont les fibres descendent en avant, et qui soulèvent les côtes à l'inspiration.",
+   "origine": [
+    { "texte": "Bord inférieur de la côte sus-jacente, du tubercule costal en arrière jusqu'à la jonction avec le cartilage en avant (côtes 1 à 11)", "os": ["premiere-cote", "deuxieme-cote", "troisieme-cote", "quatrieme-cote", "cinquieme-cote", "sixieme-cote", "septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote"] }
+   ],
+   "terminaison": [
+    { "texte": "Lèvre externe du bord supérieur de la côte sous-jacente (côtes 2 à 12)", "os": ["deuxieme-cote", "troisieme-cote", "quatrieme-cote", "cinquieme-cote", "sixieme-cote", "septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote", "douzieme-cote"] },
+    { "texte": "En avant, la membrane intercostale externe les prolonge entre les cartilages, jusqu'au sternum", "os": ["membrane-intercostale-externe"] }
+   ],
+   "action": "Soulèvent les côtes et agrandissent le thorax à l'inspiration, surtout forcée ; au repos, ils tiennent les espaces intercostaux tendus",
+   "actions": [
+    { "articulation": "cotes", "mouvement": "elevation", "role": "principal" },
+    { "articulation": "respiration", "mouvement": "inspiration", "role": "principal", "precision": "surtout à l'inspiration profonde" },
+    { "articulation": "cotes", "mouvement": "stabilisation", "role": "accessoire", "precision": "raidissent les espaces intercostaux" }
+   ],
+   "synergistes": ["diaphragme", "scalene-anterieur", "courts-elevateurs-des-cotes", "dentele-postero-superieur"],
+   "antagonistes": ["intercostaux-internes", "intercostaux-intimes", "transverse-du-thorax"],
+   "innervation": { "nerf": "nerfs-intercostaux", "texte": "Nerfs intercostaux (rameaux antérieurs des nerfs thoraciques T1 à T11), chacun pour son espace", "racines": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11"] },
+   "vascularisation": { "texte": "Artères intercostales postérieures et antérieures, ces dernières nées de la thoracique interne et de la musculo-phrénique", "arteres": ["arteres-intercostales-posterieures", "artere-intercostale-supreme", "thoracique-interne", "artere-musculophrenique"] },
+   "palpation": "Du bout du doigt, dans l'espace entre deux côtes, sur le côté et l'arrière du thorax ; près du sternum, une membrane les remplace",
+   "test": "Pas de test isolé : on observe le soulèvement des côtes et l'ampliation du thorax à l'inspiration profonde",
+   "atteinte": "Paralysie étendue (lésion de la moelle, maladie neuromusculaire) : les espaces intercostaux se creusent à l'inspiration, le thorax ne s'agrandit plus et la respiration repose sur le seul diaphragme",
+   "clinique": null,
+   "memo": "Mêmes fibres que l'oblique externe de l'abdomen, qui les prolonge en bas : elles descendent en avant, « les mains dans les poches »",
+   "variantes": "Faisceau surnuméraire possible, tendu de la première côte à la 2e, 3e ou 4e (muscle supracostal)",
+   "sources": ["gray1918", "kenhub-intercostaux-externes", "kenhub-intercostaux", "tma-thorax", "dartmouth-thorax", "uams-thorax", "openstax-11-4"],
+   "divergences": "Pour Gray, ils ne déplacent guère les côtes et servent surtout à raidir les espaces ; les ouvrages récents en font des inspirateurs, actifs surtout à l'inspiration forcée"
+  },
+  {
+   "id": "intercostaux-internes",
+   "resume": "La couche moyenne des muscles intercostaux : onze lames dont les fibres croisent à angle droit celles des externes, et qui abaissent les côtes à l'expiration forcée.",
+   "origine": [
+    { "texte": "Sillon costal et cartilage de la côte sus-jacente, du bord du sternum en avant jusqu'à l'angle de la côte en arrière (côtes 1 à 11)", "os": ["premiere-cote", "deuxieme-cote", "troisieme-cote", "quatrieme-cote", "cinquieme-cote", "sixieme-cote", "septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord supérieur de la côte et du cartilage sous-jacents (côtes 2 à 12)", "os": ["deuxieme-cote", "troisieme-cote", "quatrieme-cote", "cinquieme-cote", "sixieme-cote", "septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote", "douzieme-cote"] },
+    { "texte": "En arrière, la membrane intercostale interne les prolonge de l'angle des côtes à la colonne", "os": ["membrane-intercostale-interne"] }
+   ],
+   "action": "Abaissent les côtes à l'expiration forcée (toux, souffle, chant) et tiennent les espaces intercostaux tendus ; leur partie antérieure, entre les cartilages, aiderait au contraire à soulever les côtes",
+   "actions": [
+    { "articulation": "cotes", "mouvement": "abaissement", "role": "principal", "precision": "partie située entre les côtes osseuses" },
+    { "articulation": "respiration", "mouvement": "expiration", "role": "principal", "precision": "expiration forcée" },
+    { "articulation": "cotes", "mouvement": "stabilisation", "role": "accessoire", "precision": "raidissent les espaces intercostaux" },
+    { "articulation": "cotes", "mouvement": "elevation", "role": "accessoire", "precision": "partie située entre les cartilages, près du sternum" },
+    { "articulation": "respiration", "mouvement": "inspiration", "role": "accessoire", "precision": "fibres parasternales, entre les cartilages" }
+   ],
+   "synergistes": ["intercostaux-intimes", "transverse-du-thorax", "oblique-interne", "dentele-postero-inferieur"],
+   "antagonistes": ["intercostaux-externes", "diaphragme"],
+   "innervation": { "nerf": "nerfs-intercostaux", "texte": "Nerfs intercostaux (rameaux antérieurs des nerfs thoraciques T1 à T11), chacun pour son espace", "racines": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11"] },
+   "vascularisation": { "texte": "Artères intercostales postérieures et antérieures ; rameaux de la thoracique interne, de la musculo-phrénique et du tronc costo-cervical", "arteres": ["arteres-intercostales-posterieures", "artere-intercostale-supreme", "thoracique-interne", "artere-musculophrenique", "tronc-costocervical"] },
+   "palpation": "Recouverts par les intercostaux externes, sauf près du sternum, entre les cartilages costaux, où seule une membrane les cache",
+   "test": "Pas de test isolé : on juge la force de l'expiration (toux, souffle)",
+   "atteinte": "Paralysie étendue (lésion de la moelle, maladie neuromusculaire) : toux et expiration forcée inefficaces, espaces intercostaux qui se déforment au gré des pressions",
+   "clinique": "Le paquet intercostal (veine, artère, nerf, de haut en bas) chemine à leur face profonde, dans le sillon costal, entre eux et les intercostaux intimes",
+   "memo": "Internes = expiration. Leurs fibres croisent celles des externes et se continuent en bas avec l'oblique interne de l'abdomen",
+   "variantes": null,
+   "sources": ["gray1918", "kenhub-intercostaux-internes", "kenhub-intercostaux", "kenhub-espaces-intercostaux", "tma-thorax", "dartmouth-thorax", "uams-thorax", "openstax-11-4"],
+   "divergences": "Sens de la description : origine sur la côte du dessus pour Gray et Kenhub, sur celle du dessous pour UAMS et OpenStax. Rôle : expirateurs pour la plupart ; pour Gray, simples tenseurs des espaces"
+  },
+  {
+   "id": "intercostaux-intimes",
+   "resume": "La couche profonde des muscles intercostaux, la plus mince : même direction de fibres que les internes, dont les sépare le paquet vasculo-nerveux intercostal.",
+   "origine": [
+    { "texte": "Face interne du sillon costal de la côte sus-jacente, en dedans de l'origine de l'intercostal interne, dans la partie moyenne de l'espace", "os": ["premiere-cote", "deuxieme-cote", "troisieme-cote", "quatrieme-cote", "cinquieme-cote", "sixieme-cote", "septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord supérieur de la côte sous-jacente, sur son versant interne", "os": ["deuxieme-cote", "troisieme-cote", "quatrieme-cote", "cinquieme-cote", "sixieme-cote", "septieme-cote", "huitieme-cote", "neuvieme-cote", "dixieme-cote", "onzieme-cote", "douzieme-cote"] }
+   ],
+   "action": "Tiennent tendue la paroi profonde de l'espace intercostal ; ils aideraient les intercostaux internes à abaisser les côtes à l'expiration forcée",
+   "actions": [
+    { "articulation": "cotes", "mouvement": "stabilisation", "role": "principal", "precision": "raidissent l'espace intercostal" },
+    { "articulation": "cotes", "mouvement": "abaissement", "role": "accessoire", "precision": "avec les intercostaux internes ; action mal établie" },
+    { "articulation": "respiration", "mouvement": "expiration", "role": "accessoire", "precision": "expiration forcée" }
+   ],
+   "synergistes": ["intercostaux-internes", "transverse-du-thorax"],
+   "antagonistes": ["intercostaux-externes"],
+   "innervation": { "nerf": "nerfs-intercostaux", "texte": "Nerfs intercostaux (rameaux antérieurs des nerfs thoraciques T1 à T11), chacun pour son espace", "racines": ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10", "T11"] },
+   "vascularisation": { "texte": "Artères intercostales postérieures et antérieures ; rameaux de la thoracique interne, de la musculo-phrénique et du tronc costo-cervical", "arteres": ["arteres-intercostales-posterieures", "artere-intercostale-supreme", "thoracique-interne", "artere-musculophrenique", "tronc-costocervical"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Pas de déficit isolé connu ; paralysés avec les autres intercostaux (lésion de la moelle), ils laissent la paroi se déformer à chaque mouvement respiratoire",
+   "clinique": "Veine, artère et nerf intercostaux passent entre eux et les intercostaux internes, à l'abri du bord inférieur de la côte ; en dedans, seul le fascia endothoracique les sépare de la plèvre",
+   "memo": "Intimes : les plus profonds. Avec les subcostaux en arrière et le transverse du thorax en avant, ils forment la troisième couche de la paroi",
+   "variantes": "Développement inégal : minces ou absents dans les premiers espaces, plus nets en bas, où ils se confondent parfois avec les subcostaux",
+   "sources": ["kenhub-intercostaux-intimes", "kenhub-intercostaux", "kenhub-espaces-intercostaux", "tma-thorax", "dartmouth-thorax", "uams-thorax", "openstax-11-4"],
+   "divergences": "Gray (1918) ne les décrit pas ; O'Rahilly y voit la partie des intercostaux internes située en dedans des vaisseaux, d'action inconnue. Kenhub, TeachMeAnatomy et OpenStax en font des expirateurs accessoires"
+  },
+  {
+   "id": "transverse-du-thorax",
+   "resume": "Un mince éventail plaqué derrière le sternum et les cartilages costaux, à l'intérieur du thorax : il abaisse les cartilages à l'expiration forcée.",
+   "origine": [
+    { "texte": "Face postérieure du tiers inférieur du corps du sternum et du processus xiphoïde ; extrémité sternale des cartilages costaux 4 à 7", "os": ["corps-du-sternum", "processus-xiphoide", "cartilage-costal-de-la-quatrieme-cote", "cartilage-costal-de-la-cinquieme-cote", "cartilage-costal-de-la-sixieme-cote", "cartilage-costal-de-la-septieme-cote"] }
+   ],
+   "terminaison": [
+    { "texte": "Bord inférieur et face interne des cartilages costaux 2 à 6, par quatre ou cinq digitations qui montent en éventail", "os": ["cartilage-costal-de-la-deuxieme-cote", "cartilage-costal-de-la-troisieme-cote", "cartilage-costal-de-la-quatrieme-cote", "cartilage-costal-de-la-cinquieme-cote", "cartilage-costal-de-la-sixieme-cote"] }
+   ],
+   "action": "Abaisse les cartilages costaux 2 à 6 à l'expiration forcée ; raidit la paroi antérieure du thorax",
+   "actions": [
+    { "articulation": "cotes", "mouvement": "abaissement", "role": "principal", "precision": "cartilages costaux 2 à 6" },
+    { "articulation": "respiration", "mouvement": "expiration", "role": "accessoire", "precision": "expiration forcée" },
+    { "articulation": "cotes", "mouvement": "stabilisation", "role": "accessoire", "precision": "raidit le plastron sterno-costal pendant l'inspiration" }
+   ],
+   "synergistes": ["intercostaux-internes", "intercostaux-intimes", "dentele-postero-inferieur"],
+   "antagonistes": ["intercostaux-externes", "diaphragme"],
+   "innervation": { "nerf": "nerfs-intercostaux", "texte": "Nerfs intercostaux 2 à 6 (rameaux antérieurs de T2 à T6)", "racines": ["T2", "T3", "T4", "T5", "T6"] },
+   "vascularisation": { "texte": "Rameaux sternaux de l'artère thoracique interne, qui descend à sa face antérieure", "arteres": ["thoracique-interne"] },
+   "palpation": null,
+   "test": null,
+   "atteinte": "Aucun déficit isolé connu : muscle mince, d'appoint, dont la paralysie passe inaperçue",
+   "clinique": "Repère du chirurgien cardiaque : l'artère thoracique interne, prélevée pour les pontages coronaires, descend devant lui ; libre au-dessus de son bord supérieur, elle est de plus en plus recouverte par ses fibres vers le bas",
+   "memo": "Le « triangulaire du sternum » des anciens. Ses fibres basses, horizontales, prolongent le transverse de l'abdomen : même couche, même nom",
+   "variantes": "Attaches très variables d'un sujet à l'autre, et même d'un côté à l'autre chez le même sujet",
+   "sources": ["gray1918", "kenhub-transverse-thorax", "tma-thorax", "dartmouth-thorax", "uams-thorax"],
+   "divergences": "Innervation : nerfs intercostaux 2 à 6 (TeachMeAnatomy, UAMS) ; Kenhub écrit tantôt 2 à 5, tantôt T2 à T6. Origine costale : cartilages 4 à 7 (Kenhub), ou ceux des trois ou quatre dernières vraies côtes (Gray)"
+  }
+ ]
+}

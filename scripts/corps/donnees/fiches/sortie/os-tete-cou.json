@@ -1,0 +1,3252 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918), texte intégral numérisé (Internet Archive) : ostéologie du crâne et des vertèbres, articulations, osselets, nez, larynx, dents",
+   "url": "https://ia600602.us.archive.org/26/items/anatomyofhumanbo1918gray/anatomyofhumanbo1918gray_djvu.txt"
+  },
+  "openstax-7-2": {
+   "titre": "OpenStax, Anatomy and Physiology 2e, 7.2 The Skull",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull"
+  },
+  "openstax-7-3": {
+   "titre": "OpenStax, Anatomy and Physiology 2e, 7.3 The Vertebral Column",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column"
+  },
+  "statpearls-crane": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Skull (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK499834/"
+  },
+  "statpearls-foramens": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Skull Foramen (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK546621/"
+  },
+  "statpearls-frontal": {
+   "titre": "StatPearls, Anatomy, Head and Neck: Frontal Bone (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK535424/"
+  },
+  "statpearls-occipital": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Occipital Bone, Artery, Vein, and Nerve (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK541093/"
+  },
+  "statpearls-maxillaire": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Maxilla (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK538527/"
+  },
+  "statpearls-mandibule": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Mandible (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK532292/"
+  },
+  "statpearls-zygomatique": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Zygomatic (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK544257/"
+  },
+  "statpearls-orbite": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Orbit Bones (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK531490/"
+  },
+  "statpearls-cervicales": {
+   "titre": "StatPearls, Anatomy, Head and Neck: Cervical Vertebrae (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK539734/"
+  },
+  "statpearls-atlanto-axoidienne": {
+   "titre": "StatPearls, Anatomy, Head and Neck: Atlantoaxial Joint (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK563271/"
+  },
+  "tma-foramens": {
+   "titre": "TeachMeAnatomy, The Cranial Foramina",
+   "url": "https://teachmeanatomy.info/head/osteology/cranial-foramina/"
+  },
+  "tma-temporal": {
+   "titre": "TeachMeAnatomy, The Temporal Bone",
+   "url": "https://teachmeanatomy.info/head/osteology/temporal-bone/"
+  },
+  "tma-mandibule": {
+   "titre": "TeachMeAnatomy, The Mandible",
+   "url": "https://teachmeanatomy.info/head/osteology/mandible/"
+  },
+  "tma-occipital": {
+   "titre": "TeachMeAnatomy, The Occipital Bone",
+   "url": "https://teachmeanatomy.info/head/osteology/occipital-bone/"
+  },
+  "tma-frontal": {
+   "titre": "TeachMeAnatomy, The Frontal Bone",
+   "url": "https://teachmeanatomy.info/head/osteology/frontal-bone/"
+  },
+  "tma-rachis-cervical": {
+   "titre": "TeachMeAnatomy, The Cervical Spine",
+   "url": "https://teachmeanatomy.info/neck/bones/cervical-spine/"
+  },
+  "radiopaedia-parietal": {
+   "titre": "Radiopaedia, Parietal bone",
+   "url": "https://radiopaedia.org/articles/parietal-bone"
+  },
+  "wikipedia-fr-temporal": {
+   "titre": "Wikipédia (fr), Os temporal : nomenclature française",
+   "url": "https://fr.wikipedia.org/wiki/Os_temporal"
+  },
+  "wikipedia-fr-vertebre-cervicale": {
+   "titre": "Wikipédia (fr), Vertèbre cervicale : nomenclature française",
+   "url": "https://fr.wikipedia.org/wiki/Vert%C3%A8bre_cervicale"
+  },
+  "statpearls-larynx": {
+   "titre": "StatPearls, Anatomy, Head and Neck: Larynx Cartilage (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK553185/"
+  },
+  "statpearls-hyoide": {
+   "titre": "StatPearls, Anatomy, Head and Neck: Hyoid Bone (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK539726/"
+  },
+  "statpearls-ethmoide": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Ethmoid Bone (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK544328/"
+  },
+  "statpearls-nez": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Nose (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK532870/"
+  },
+  "statpearls-fractures-nez": {
+   "titre": "StatPearls, Nasal Fractures (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK555912/"
+  },
+  "tma-hyoide": {
+   "titre": "TeachMeAnatomy, The Hyoid Bone",
+   "url": "https://teachmeanatomy.info/neck/bones/hyoid-bone/"
+  },
+  "tma-ethmoide": {
+   "titre": "TeachMeAnatomy, The Ethmoid Bone",
+   "url": "https://teachmeanatomy.info/head/osteology/ethmoid-bone/"
+  },
+  "tma-oreille-moyenne": {
+   "titre": "TeachMeAnatomy, The Middle Ear",
+   "url": "https://teachmeanatomy.info/head/organs/ear/middle-ear/"
+  },
+  "kenhub-osselets": {
+   "titre": "Kenhub, Auditory ossicles",
+   "url": "https://www.kenhub.com/en/library/anatomy/auditory-ossicles"
+  },
+  "radiopaedia-cornet-inferieur": {
+   "titre": "Radiopaedia, Inferior nasal concha",
+   "url": "https://radiopaedia.org/articles/inferior-nasal-concha"
+  },
+  "radiopaedia-palatin": {
+   "titre": "Radiopaedia, Palatine bone",
+   "url": "https://radiopaedia.org/articles/palatine-bone"
+  },
+  "radiopaedia-vomer": {
+   "titre": "Radiopaedia, Vomer",
+   "url": "https://radiopaedia.org/articles/vomer"
+  },
+  "kenhub-sphenoide": {
+   "titre": "Kenhub, Sphenoid bone",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-sphenoid-bone"
+  },
+  "wikipedia-fr-cartilage-septal": {
+   "titre": "Wikipédia (fr), Cartilage septal du nez : nomenclature française",
+   "url": "https://fr.wikipedia.org/wiki/Cartilage_septal_du_nez"
+  },
+  "statpearls-dents": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Teeth (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK557543/"
+  },
+  "statpearls-eruption": {
+   "titre": "StatPearls, Anatomy, Head and Neck, Tooth Eruption (NCBI Bookshelf)",
+   "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK549878/"
+  },
+  "kenhub-dents": {
+   "titre": "Kenhub, Teeth (vue d'ensemble, numérotation)",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-teeth"
+  },
+  "kenhub-incisives": {
+   "titre": "Kenhub, Incisors: structure and function",
+   "url": "https://www.kenhub.com/en/library/anatomy/incisors-structure-and-function"
+  },
+  "kenhub-canine": {
+   "titre": "Kenhub, Canine tooth",
+   "url": "https://www.kenhub.com/en/library/anatomy/canine-tooth"
+  },
+  "kenhub-premolaires": {
+   "titre": "Kenhub, Premolar teeth",
+   "url": "https://www.kenhub.com/en/library/anatomy/premolar-teeth"
+  },
+  "kenhub-molaires": {
+   "titre": "Kenhub, Molar tooth",
+   "url": "https://www.kenhub.com/en/library/anatomy/molar-tooth"
+  },
+  "wikipedia-fr-dent": {
+   "titre": "Wikipédia (fr), Dent (anatomie humaine) : nomenclature française, numérotation",
+   "url": "https://fr.wikipedia.org/wiki/Dent_(anatomie_humaine)"
+  },
+  "wikipedia-fr-incisive": {
+   "titre": "Wikipédia (fr), Incisive",
+   "url": "https://fr.wikipedia.org/wiki/Incisive"
+  },
+  "wikipedia-fr-canine": {
+   "titre": "Wikipédia (fr), Canine",
+   "url": "https://fr.wikipedia.org/wiki/Canine"
+  },
+  "wikipedia-fr-premolaire": {
+   "titre": "Wikipédia (fr), Prémolaire",
+   "url": "https://fr.wikipedia.org/wiki/Pr%C3%A9molaire"
+  },
+  "wikipedia-fr-molaire": {
+   "titre": "Wikipédia (fr), Molaire (dent)",
+   "url": "https://fr.wikipedia.org/wiki/Molaire_(dent)"
+  },
+  "tma-sphenoide": {
+   "titre": "TeachMeAnatomy, The Sphenoid Bone",
+   "url": "https://teachmeanatomy.info/head/osteology/sphenoid-bone/"
+  },
+  "wikipedia-fr-sphenoide": {
+   "titre": "Wikipédia (fr), Os sphénoïde : nomenclature française",
+   "url": "https://fr.wikipedia.org/wiki/Os_sph%C3%A9no%C3%AFde"
+  },
+  "wikipedia-fr-grand-cartilage-alaire": {
+   "titre": "Wikipédia (fr), Grand cartilage alaire : nomenclature française",
+   "url": "https://fr.wikipedia.org/wiki/Grand_cartilage_alaire"
+  }
+ },
+ "fiches": [
+  {
+   "id": "vertebres-cervicales",
+   "resume": "Les sept vertèbres du cou. C3 à C6 se ressemblent : petit corps, processus épineux bifide, processus transverses percés d'un foramen ; l'atlas (C1), l'axis (C2) et C7 ont leur propre fiche.",
+   "sorte": "groupe",
+   "articulations": [
+    {
+     "os": "occipital",
+     "nom": "Articulation atlanto-occipitale (par l'atlas, C1)",
+     "type": "condylaire"
+    },
+    {
+     "os": "atlas",
+     "nom": "Articulations atlanto-axoïdiennes, entre l'atlas et l'axis",
+     "type": "trochoïde et planes"
+    },
+    {
+     "os": "axis",
+     "nom": "Articulation C2-C3 : disque intervertébral et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "c7",
+     "nom": "Articulation C6-C7 : disque intervertébral et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-t1",
+     "nom": "Jonction cervico-thoracique C7-T1 : disque et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebres-thoraciques",
+     "nom": "Jonction cervico-thoracique, par C7 et T1",
+     "type": "symphyse et planes"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "Petit, plus large que profond ; sa face supérieure se relève de chaque côté en un uncus (processus unciforme), articulé avec le corps sus-jacent : articulation unco-vertébrale"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Court et bifide de C2 à C6, long et simple en C7 ; le ligament nuchal s'attache aux épineuses et les relie à l'occipital"
+    },
+    {
+     "nom": "Processus transverse",
+     "role": "Percé du foramen transversaire ; il finit par un tubercule antérieur (reste de côte) et un tubercule postérieur, unis par une gouttière où repose le nerf spinal"
+    },
+    {
+     "nom": "Processus articulaires",
+     "role": "Superposés de chaque côté en un massif articulaire ; facettes supérieures tournées en haut et en arrière, inférieures en bas et en avant : articulations zygapophysaires"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen transversaire",
+     "contenu": "Artère vertébrale (elle y entre le plus souvent en C6), veines vertébrales et plexus sympathique ; celui de C7, petit, ne contient d'ordinaire que des veines"
+    },
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Large et triangulaire : moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral",
+     "contenu": "Nerf spinal : les nerfs C1 à C7 sortent au-dessus de la vertèbre de même numéro, le nerf C8 sous C7"
+    }
+   ],
+   "ossification": "Trois points primaires par vertèbre (corps et deux moitiés de l'arc), dès la 7e-8e semaine ; l'arc se ferme en arrière la première année et se soude au corps vers 3 ans. Cinq points secondaires vers 16 ans, soudés vers 25 ans",
+   "palpation": "Sur la ligne médiane de la nuque, on sent surtout l'épineuse de C7 ; au-dessus, le ligament nuchal recouvre les épineuses courtes et se tend quand on penche la tête en avant",
+   "clinique": "Coup du lapin : l'hyperextension brutale du cou étire ou déchire le ligament longitudinal antérieur. Les hernies discales siègent surtout en C5-C6 et C6-C7 : douleur du cou, de l'épaule et du membre supérieur",
+   "memo": "Sept vertèbres au cou chez presque tous les mammifères, girafe comprise ; mais huit nerfs cervicaux",
+   "variantes": "Côte cervicale : la partie costale du processus transverse de C7 reste séparée et s'allonge. Le foramen transversaire de C7 est parfois double ou absent",
+   "sources": [
+    "gray1918",
+    "openstax-7-3",
+    "statpearls-cervicales",
+    "tma-rachis-cervical",
+    "wikipedia-fr-vertebre-cervicale"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "mandibule",
+   "resume": "L'os de la mâchoire inférieure, seul os mobile de la tête : un corps en fer à cheval qui porte les dents du bas, et deux branches montantes articulées avec les temporaux.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "temporal",
+     "nom": "Articulation temporo-mandibulaire",
+     "type": "condylaire à disque (charnière et glissement)"
+    },
+    {
+     "os": "dent-incisive-inferomediale",
+     "nom": "Articulation alvéolo-dentaire",
+     "type": "gomphose"
+    },
+    {
+     "os": "dent-incisive-inferolaterale",
+     "nom": "Articulation alvéolo-dentaire",
+     "type": "gomphose"
+    },
+    {
+     "os": "dent-canine-inferieure",
+     "nom": "Articulation alvéolo-dentaire",
+     "type": "gomphose"
+    },
+    {
+     "os": "premiere-premolaire-inferieure",
+     "nom": "Articulation alvéolo-dentaire",
+     "type": "gomphose"
+    },
+    {
+     "os": "deuxieme-premolaire-inferieure",
+     "nom": "Articulation alvéolo-dentaire",
+     "type": "gomphose"
+    },
+    {
+     "os": "premiere-molaire-inferieure",
+     "nom": "Articulation alvéolo-dentaire",
+     "type": "gomphose"
+    },
+    {
+     "os": "deuxieme-molaire-inferieure",
+     "nom": "Articulation alvéolo-dentaire",
+     "type": "gomphose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Protubérance mentonnière",
+     "role": "Saillie triangulaire du menton, au bas de la symphyse, là où les deux moitiés de l'os se sont soudées"
+    },
+    {
+     "nom": "Épines mentonnières",
+     "role": "Sur la face interne, près de la ligne médiane : le génio-glosse naît des épines supérieures, le génio-hyoïdien des inférieures"
+    },
+    {
+     "nom": "Ligne mylo-hyoïdienne",
+     "role": "Crête oblique de la face interne : origine du mylo-hyoïdien ; à son extrémité postérieure s'attachent le constricteur supérieur du pharynx et le raphé ptérygo-mandibulaire. Glande sublinguale au-dessus, submandibulaire au-dessous"
+    },
+    {
+     "nom": "Fosse digastrique",
+     "role": "Sous les épines mentonnières, de chaque côté de la ligne médiane : attache du ventre antérieur du digastrique"
+    },
+    {
+     "nom": "Ligne oblique",
+     "role": "Sur la face externe, du menton au bord antérieur de la branche : origine de l'abaisseur de la lèvre inférieure et de l'abaisseur de l'angle de la bouche ; le platysma s'insère au-dessous"
+    },
+    {
+     "nom": "Processus coronoïde",
+     "role": "Pointe antérieure de la branche : insertion du muscle temporal"
+    },
+    {
+     "nom": "Processus condylaire",
+     "role": "Tête (condyle) articulée avec le temporal par l'intermédiaire d'un disque ; sur le devant du col, la fossette ptérygoïdienne reçoit le ptérygoïdien latéral"
+    },
+    {
+     "nom": "Branche et angle",
+     "role": "Le masséter s'insère sur leur face latérale, le ptérygoïdien médial sur leur face médiale ; entre les deux, le ligament stylo-mandibulaire s'attache à l'angle"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen mandibulaire",
+     "contenu": "Nerf et vaisseaux alvéolaires inférieurs, qui entrent dans le canal mandibulaire ; la lingula, qui le borde, donne attache au ligament sphéno-mandibulaire"
+    },
+    {
+     "nom": "Canal mandibulaire",
+     "contenu": "Nerf et vaisseaux alvéolaires inférieurs, sous les racines des dents, jusqu'au foramen mentonnier"
+    },
+    {
+     "nom": "Foramen mentonnier",
+     "contenu": "Nerf et vaisseaux mentonniers ; sur la face externe, sous la deuxième prémolaire ou entre les deux prémolaires"
+    },
+    {
+     "nom": "Sillon mylo-hyoïdien",
+     "contenu": "Nerf et vaisseaux mylo-hyoïdiens, sous le foramen mandibulaire"
+    },
+    {
+     "nom": "Incisure mandibulaire",
+     "contenu": "Nerf et vaisseaux massétériques, entre le processus coronoïde et le processus condylaire"
+    }
+   ],
+   "ossification": "Ossification membraneuse, au contact du cartilage de Meckel, dès la 6e semaine : c'est le deuxième os à s'ossifier, après la clavicule. Les deux moitiés se soudent à la symphyse pendant la première année",
+   "palpation": "Le menton, le bord inférieur et l'angle se sentent sous la peau ; la tête de la mandibule se perçoit devant le tragus quand on ouvre et ferme la bouche",
+   "clinique": "Elle se casse souvent en deux endroits : devant un trait de fracture, il faut en chercher un second, volontiers du côté opposé. La tête peut se luxer hors de la fosse mandibulaire ; on la remet en place à la main",
+   "memo": "Le seul os de la tête qui bouge : il pivote comme une charnière et glisse vers l'avant",
+   "variantes": "L'angle change avec l'âge : très ouvert chez le nouveau-né, 110 à 120° chez l'adulte, il se rouvre vers 140° chez le vieillard. Le canal mandibulaire est parfois dédoublé, ce qui peut faire échouer une anesthésie",
+   "sources": [
+    "gray1918",
+    "statpearls-mandibule",
+    "tma-mandibule",
+    "openstax-7-2"
+   ],
+   "divergences": "Angle à la naissance : 175° pour Gray, environ 160° pour StatPearls. Foramen mentonnier : sous la deuxième prémolaire pour Gray, entre les deux prémolaires pour StatPearls"
+  },
+  {
+   "id": "frontal",
+   "resume": "L'os du front : une écaille bombée qui ferme la boîte crânienne en avant, et deux lames horizontales qui forment le toit des orbites.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "parietal",
+     "nom": "Suture coronale",
+     "type": "suture"
+    },
+    {
+     "os": "sphenoide",
+     "nom": "Suture sphéno-frontale",
+     "type": "suture"
+    },
+    {
+     "os": "os-ethmoide",
+     "nom": "Suture fronto-ethmoïdale (incisure ethmoïdale)",
+     "type": "suture"
+    },
+    {
+     "os": "os-nasaux",
+     "nom": "Suture fronto-nasale",
+     "type": "suture"
+    },
+    {
+     "os": "maxillaire",
+     "nom": "Suture fronto-maxillaire (processus frontal du maxillaire)",
+     "type": "suture"
+    },
+    {
+     "os": "os-lacrymal",
+     "nom": "Suture fronto-lacrymale",
+     "type": "suture"
+    },
+    {
+     "os": "zygomatique",
+     "nom": "Suture fronto-zygomatique",
+     "type": "suture"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Glabelle et arcades sourcilières",
+     "role": "Saillie médiane entre les sourcils, prolongée de chaque côté par une arcade, plus marquée chez l'homme"
+    },
+    {
+     "nom": "Bord supra-orbitaire",
+     "role": "Limite supérieure de l'entrée de l'orbite ; il se termine en dehors par le processus zygomatique, articulé avec l'os zygomatique"
+    },
+    {
+     "nom": "Ligne temporale",
+     "role": "Monte en arrière depuis le processus zygomatique ; la surface située sous elle appartient à la fosse temporale et donne origine au muscle temporal"
+    },
+    {
+     "nom": "Partie orbitaire",
+     "role": "Toit de l'orbite : fosse de la glande lacrymale en dehors, fossette trochléaire en dedans, où se fixe la poulie du muscle oblique supérieur de l'œil"
+    },
+    {
+     "nom": "Épine nasale",
+     "role": "Pointe médiane de la partie nasale : elle participe à la cloison du nez et soutient l'arête nasale"
+    },
+    {
+     "nom": "Crête frontale",
+     "role": "Médiane, sur la face interne : avec les lèvres du sillon du sinus sagittal supérieur qui la prolonge, elle donne attache à la faux du cerveau"
+    },
+    {
+     "nom": "Sinus frontaux",
+     "role": "Deux cavités inégales séparées par une cloison ; absentes à la naissance, bien développées vers 7-8 ans, elles se drainent vers le méat nasal moyen par le conduit fronto-nasal"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Incisure (ou foramen) supra-orbitaire",
+     "contenu": "Nerf et vaisseaux supra-orbitaires"
+    },
+    {
+     "nom": "Foramen ethmoïdal antérieur (avec l'ethmoïde)",
+     "contenu": "Nerf et vaisseaux ethmoïdaux antérieurs"
+    },
+    {
+     "nom": "Foramen ethmoïdal postérieur (avec l'ethmoïde)",
+     "contenu": "Nerf et vaisseaux ethmoïdaux postérieurs"
+    },
+    {
+     "nom": "Foramen cæcum (avec l'ethmoïde)",
+     "contenu": "Souvent borgne ; quand il est perméable, une veine émissaire du nez vers le sinus sagittal supérieur"
+    }
+   ],
+   "ossification": "Ossification membraneuse par deux points, un au-dessus de chaque orbite, à la fin du 2e mois. À la naissance, deux moitiés séparées par la suture métopique, qui s'efface dans l'enfance",
+   "palpation": "Le front, la glabelle et le bord supra-orbitaire se sentent sous la peau ; l'incisure supra-orbitaire se trouve sur ce bord, un peu en dedans de l'aplomb de la pupille",
+   "clinique": "Fracture du sinus frontal : le front s'enfonce ; si la paroi postérieure cède, la dure-mère peut se déchirer et du liquide cérébro-spinal couler par le nez. Une sinusite frontale négligée peut gagner l'orbite ou les méninges",
+   "memo": "Le front devant, le toit des orbites dessous : il s'articule avec douze os",
+   "variantes": "La suture métopique persiste chez l'adulte dans environ 5 % des cas (métopisme) ; le foramen supra-orbitaire n'est souvent qu'une incisure",
+   "sources": [
+    "gray1918",
+    "statpearls-frontal",
+    "tma-frontal",
+    "statpearls-orbite",
+    "statpearls-crane"
+   ],
+   "divergences": "Fermeture de la suture métopique : vers 8 ans pour Gray, dès 3 à 9 mois pour StatPearls (article sur le crâne)"
+  },
+  {
+   "id": "atlas",
+   "resume": "La première vertèbre cervicale : un anneau sans corps ni processus épineux, qui porte la tête et tourne autour de la dent de l'axis.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "occipital",
+     "nom": "Articulation atlanto-occipitale",
+     "type": "condylaire"
+    },
+    {
+     "os": "axis",
+     "nom": "Articulations atlanto-axoïdiennes : une médiane, avec la dent, et deux latérales",
+     "type": "trochoïde et planes"
+    },
+    {
+     "os": "vertebres-cervicales",
+     "nom": "Suite de la colonne cervicale, par l'axis",
+     "type": "trochoïde et planes"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Masses latérales",
+     "role": "Portent en haut une fossette articulaire concave et allongée pour le condyle occipital, en bas une facette presque plane pour l'axis"
+    },
+    {
+     "nom": "Arc antérieur",
+     "role": "Son tubercule antérieur donne attache au long du cou ; sa face postérieure porte la fossette de la dent, articulée avec la dent de l'axis"
+    },
+    {
+     "nom": "Arc postérieur",
+     "role": "Son tubercule postérieur, vestige de processus épineux, donne origine au petit droit postérieur de la tête"
+    },
+    {
+     "nom": "Tubercules du ligament transverse",
+     "role": "Sur la face médiale de chaque masse latérale : attache du ligament transverse de l'atlas, qui plaque la dent contre l'arc antérieur"
+    },
+    {
+     "nom": "Processus transverses",
+     "role": "Longs et saillants : bras de levier des muscles qui font tourner la tête"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon de l'artère vertébrale",
+     "contenu": "Sur l'arc postérieur, derrière la masse latérale : artère vertébrale et premier nerf cervical (nerf sub-occipital)"
+    },
+    {
+     "nom": "Foramen transversaire",
+     "contenu": "Artère et veines vertébrales, plexus sympathique"
+    },
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Divisé par le ligament transverse : la dent de l'axis en avant, la moelle spinale et ses méninges en arrière"
+    }
+   ],
+   "ossification": "Trois points : un par masse latérale (7e semaine), réunis en arrière vers 3-4 ans ; un pour l'arc antérieur, apparu vers la fin de la première année et soudé aux masses latérales entre 6 et 8 ans",
+   "palpation": null,
+   "clinique": "Fracture de Jefferson : une charge verticale sur la tête écrase les masses latérales et rompt les arcs ; le ligament transverse peut céder lui aussi. La moelle est le plus souvent épargnée à ce niveau",
+   "memo": "Il porte la tête comme le titan Atlas portait le ciel ; il n'a pas de corps : celui-ci est devenu la dent de l'axis",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "openstax-7-3",
+    "tma-rachis-cervical",
+    "statpearls-cervicales",
+    "statpearls-atlanto-axoidienne"
+   ],
+   "divergences": "Gray compte quatre articulations atlanto-axoïdiennes (deux pour la dent, deux latérales) ; les textes récents en décrivent trois, une médiane et deux latérales"
+  },
+  {
+   "id": "maxillaire",
+   "resume": "L'os de la mâchoire supérieure : il porte les dents du haut, forme l'essentiel du palais osseux et du plancher de l'orbite, et renferme le sinus maxillaire.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "frontal",
+     "nom": "Suture fronto-maxillaire",
+     "type": "suture"
+    },
+    {
+     "os": "os-ethmoide",
+     "nom": "Suture ethmoïdo-maxillaire",
+     "type": "suture"
+    },
+    {
+     "os": "os-nasaux",
+     "nom": "Suture naso-maxillaire",
+     "type": "suture"
+    },
+    {
+     "os": "zygomatique",
+     "nom": "Suture zygomatico-maxillaire",
+     "type": "suture"
+    },
+    {
+     "os": "os-lacrymal",
+     "nom": "Suture lacrymo-maxillaire",
+     "type": "suture"
+    },
+    {
+     "os": "cornet-nasal-inferieur",
+     "nom": "Union du cornet à la crête conchale et au bord du hiatus maxillaire",
+     "type": "suture"
+    },
+    {
+     "os": "os-palatin",
+     "nom": "Suture palato-maxillaire et suture palatine transverse",
+     "type": "suture"
+    },
+    {
+     "os": "vomer",
+     "nom": "Union du vomer à la crête nasale",
+     "type": "suture"
+    },
+    {
+     "os": "sphenoide",
+     "nom": "Contact sphéno-maxillaire, inconstant",
+     "type": "suture"
+    },
+    {
+     "os": "dent-incisive-superomediale",
+     "nom": "Articulation alvéolo-dentaire",
+     "type": "gomphose"
+    },
+    {
+     "os": "dent-incisive-superolaterale",
+     "nom": "Articulation alvéolo-dentaire",
+     "type": "gomphose"
+    },
+    {
+     "os": "dent-canine-superieure",
+     "nom": "Articulation alvéolo-dentaire",
+     "type": "gomphose"
+    },
+    {
+     "os": "premiere-premolaire-superieure",
+     "nom": "Articulation alvéolo-dentaire",
+     "type": "gomphose"
+    },
+    {
+     "os": "deuxieme-premolaire-superieure",
+     "nom": "Articulation alvéolo-dentaire",
+     "type": "gomphose"
+    },
+    {
+     "os": "premiere-molaire-superieure",
+     "nom": "Articulation alvéolo-dentaire",
+     "type": "gomphose"
+    },
+    {
+     "os": "deuxieme-molaire-superieure",
+     "nom": "Articulation alvéolo-dentaire",
+     "type": "gomphose"
+    },
+    {
+     "os": "cartilage-septal-nasal",
+     "nom": "Attache du bord inférieur du cartilage septal à la crête nasale",
+     "type": "union fibreuse"
+    },
+    {
+     "os": "processus-lateral-du-cartilage-septal",
+     "nom": "Attache du cartilage latéral au processus frontal",
+     "type": "union fibreuse"
+    },
+    {
+     "os": "grand-cartilage-alaire",
+     "nom": "Liaison au grand cartilage alaire par une membrane fibreuse, depuis le processus frontal",
+     "type": "union fibreuse"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps et sinus maxillaire",
+     "role": "Pyramide creusée du plus grand des sinus paranasaux (environ 15 mL), ouvert dans le méat nasal moyen ; son plancher descend au plus bas près de la première molaire"
+    },
+    {
+     "nom": "Processus frontal",
+     "role": "Monte entre l'os nasal et l'os lacrymal jusqu'au frontal ; il donne attache au ligament palpébral médial et à l'orbiculaire de l'œil, et borde en avant le sillon lacrymal"
+    },
+    {
+     "nom": "Processus zygomatique",
+     "role": "Saillie latérale rugueuse, articulée avec l'os zygomatique"
+    },
+    {
+     "nom": "Processus alvéolaire",
+     "role": "Arcade creusée de huit alvéoles par côté pour les dents du haut ; le buccinateur naît de sa face externe, en regard des molaires"
+    },
+    {
+     "nom": "Processus palatin",
+     "role": "Lame horizontale unie à celle du côté opposé par la suture palatine médiane : ensemble, elles forment les trois quarts antérieurs du palais osseux"
+    },
+    {
+     "nom": "Fosse canine",
+     "role": "Dépression de la face antérieure, en dehors de la bosse canine : origine de l'élévateur de l'angle de la bouche"
+    },
+    {
+     "nom": "Épine nasale antérieure",
+     "role": "Pointe médiane formée par les deux maxillaires, au bas de l'ouverture piriforme"
+    },
+    {
+     "nom": "Tubérosité maxillaire",
+     "role": "Bosse postérieure, derrière la dernière molaire ; elle s'articule avec le processus pyramidal du palatin et donne quelques fibres au ptérygoïdien médial"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen infra-orbitaire",
+     "contenu": "Nerf et vaisseaux infra-orbitaires, à la sortie du canal infra-orbitaire, environ 1 cm sous le bord de l'orbite"
+    },
+    {
+     "nom": "Canaux alvéolaires",
+     "contenu": "Nerfs et vaisseaux alvéolaires supérieurs postérieurs, destinés aux molaires"
+    },
+    {
+     "nom": "Canal incisif",
+     "contenu": "Nerf naso-palatin et rameau terminal de l'artère grande palatine"
+    },
+    {
+     "nom": "Sillon lacrymal (canal lacrymo-nasal)",
+     "contenu": "Conduit lacrymo-nasal, qui descend vers le méat nasal inférieur ; le canal est complété par l'os lacrymal et le cornet nasal inférieur"
+    },
+    {
+     "nom": "Sillon grand palatin (canal grand palatin, avec le palatin)",
+     "contenu": "Nerf grand palatin et vaisseaux palatins descendants"
+    },
+    {
+     "nom": "Hiatus maxillaire",
+     "contenu": "Large ouverture du sinus sur la paroi nasale, rétrécie par l'ethmoïde, le cornet nasal inférieur, le palatin et l'os lacrymal"
+    }
+   ],
+   "ossification": "Ossification membraneuse dès la 6e semaine, par deux points (maxillaire proprement dit et prémaxillaire, qui porte les incisives), réunis au début du 3e mois. Le sinus apparaît au 4e mois de la vie fœtale et n'atteint sa taille qu'après la seconde dentition",
+   "palpation": "Sous la pommette et au-dessus des dents du haut ; le foramen infra-orbitaire se cherche à 1 cm environ sous le bord inférieur de l'orbite",
+   "clinique": "Fractures de Le Fort : I détache le palais et l'arcade dentaire, II sépare une pyramide naso-maxillaire, III disjoint toute la face du crâne. Sinusite chronique : on aborde le sinus par sa paroi antérieure, près de la fosse canine (opération de Caldwell-Luc)",
+   "memo": "Il touche à tout : bouche (palais), nez (paroi latérale), orbite (plancher) et joue ; il s'articule avec neuf os",
+   "variantes": "Contact inconstant avec la grande aile ou le processus ptérygoïde du sphénoïde ; un rameau alvéolaire supérieur moyen, pour les prémolaires, n'existe pas toujours",
+   "sources": [
+    "gray1918",
+    "statpearls-maxillaire",
+    "openstax-7-2",
+    "statpearls-orbite"
+   ],
+   "divergences": "Part du palais osseux formée par les processus palatins : trois quarts pour Gray et OpenStax, deux tiers pour StatPearls. Artère du canal incisif : grande palatine pour Gray, sphéno-palatine pour StatPearls"
+  },
+  {
+   "id": "occipital",
+   "resume": "L'os de l'arrière et de la base du crâne, percé du foramen magnum par où le tronc cérébral se continue avec la moelle spinale ; ses deux condyles reposent sur l'atlas.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "parietal",
+     "nom": "Suture lambdoïde",
+     "type": "suture"
+    },
+    {
+     "os": "temporal",
+     "nom": "Suture occipito-mastoïdienne et synchondrose pétro-occipitale",
+     "type": "suture et synchondrose"
+    },
+    {
+     "os": "sphenoide",
+     "nom": "Synchondrose sphéno-occipitale, ossifiée entre 18 et 25 ans",
+     "type": "synchondrose"
+    },
+    {
+     "os": "atlas",
+     "nom": "Articulation atlanto-occipitale",
+     "type": "condylaire"
+    },
+    {
+     "os": "vertebres-cervicales",
+     "nom": "Jonction du crâne et de la colonne cervicale, par l'atlas",
+     "type": "condylaire"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Protubérance occipitale externe (inion)",
+     "role": "Saillie médiane de l'écaille ; le ligament nuchal s'attache sur elle et sur la crête occipitale externe qui en descend"
+    },
+    {
+     "nom": "Ligne nucale supérieure",
+     "role": "Attaches du trapèze, du ventre occipital de l'occipito-frontal, du sterno-cléido-mastoïdien et du splénius de la tête"
+    },
+    {
+     "nom": "Champ compris entre les lignes nucales supérieure et inférieure",
+     "role": "Insertion du semi-épineux de la tête et de l'oblique supérieur de la tête"
+    },
+    {
+     "nom": "Ligne nucale inférieure",
+     "role": "Insertion, sur elle et au-dessous d'elle, du grand et du petit droits postérieurs de la tête"
+    },
+    {
+     "nom": "Condyles occipitaux",
+     "role": "Deux surfaces ovales et convexes, de part et d'autre du foramen magnum, articulées avec l'atlas : c'est le mouvement du « oui »"
+    },
+    {
+     "nom": "Partie basilaire",
+     "role": "En haut, elle forme avec le sphénoïde le clivus, où repose le tronc cérébral ; en bas, le tubercule pharyngien donne attache au raphé du pharynx, et le long de la tête s'insère de chaque côté"
+    },
+    {
+     "nom": "Processus jugulaire",
+     "role": "Insertion du droit latéral de la tête ; son incisure jugulaire limite en arrière le foramen jugulaire"
+    },
+    {
+     "nom": "Protubérance occipitale interne",
+     "role": "Centre de l'éminence cruciforme : la faux du cerveau, la tente du cervelet et la faux du cervelet s'attachent aux lèvres des sillons des sinus sagittal supérieur, transverses et occipital"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen magnum",
+     "contenu": "Moelle allongée et méninges, artères vertébrales, artères spinales antérieure et postérieures, racines spinales des nerfs accessoires (XI) ; membrane tectoriale et ligaments alaires"
+    },
+    {
+     "nom": "Canal du nerf hypoglosse",
+     "contenu": "Nerf hypoglosse (XII) et rameau méningé de l'artère pharyngienne ascendante"
+    },
+    {
+     "nom": "Foramen jugulaire (avec le temporal)",
+     "contenu": "En avant le sinus pétreux inférieur ; au milieu les nerfs glosso-pharyngien (IX), vague (X) et accessoire (XI) ; en arrière le sinus sigmoïde, continué par la veine jugulaire interne"
+    },
+    {
+     "nom": "Canal condylaire (inconstant)",
+     "contenu": "Veine émissaire condylaire, qui rejoint le sinus sigmoïde"
+    }
+   ],
+   "ossification": "Le haut de l'écaille (au-dessus des lignes nucales) s'ossifie dans une membrane, tout le reste dans le cartilage. L'écaille et les parties latérales se soudent vers 4 ans, la partie basilaire vers 6 ans ; l'union au sphénoïde s'achève entre 18 et 25 ans",
+   "palpation": "La protubérance occipitale externe se sent sur la ligne médiane, à la jonction du crâne et de la nuque ; les lignes nucales supérieures s'en écartent de chaque côté",
+   "clinique": "Fracture de la base du crâne : une ecchymose apparaît derrière l'oreille (signe de Battle). Un trait qui atteint le foramen magnum menace les vaisseaux et les nerfs qui le traversent",
+   "memo": "Un grand trou pour le névraxe, deux condyles pour dire oui",
+   "variantes": "Le haut de l'écaille reste parfois séparé : os interpariétal. Le canal du nerf hypoglosse peut être dédoublé par une lamelle osseuse",
+   "sources": [
+    "gray1918",
+    "statpearls-occipital",
+    "tma-occipital",
+    "tma-foramens",
+    "openstax-7-2"
+   ],
+   "divergences": "Semi-épineux et oblique supérieur de la tête : entre les deux lignes nucales pour Gray, sur la ligne supérieure pour StatPearls ; TeachMeAnatomy place l'oblique supérieur sur la ligne inférieure dans son texte"
+  },
+  {
+   "id": "parietal",
+   "resume": "L'os pair de la voûte du crâne : une plaque à quatre bords et quatre angles qui forme, avec celle du côté opposé, le toit et les côtés de la boîte crânienne.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "frontal",
+     "nom": "Suture coronale",
+     "type": "suture"
+    },
+    {
+     "os": "occipital",
+     "nom": "Suture lambdoïde",
+     "type": "suture"
+    },
+    {
+     "os": "temporal",
+     "nom": "Suture squameuse et suture pariéto-mastoïdienne",
+     "type": "suture"
+    },
+    {
+     "os": "sphenoide",
+     "nom": "Suture sphéno-pariétale (grande aile)",
+     "type": "suture"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Bord sagittal",
+     "role": "Dentelé, il s'engrène avec le pariétal opposé : suture sagittale, du bregma (en avant) au lambda (en arrière)"
+    },
+    {
+     "nom": "Tubérosité pariétale",
+     "role": "Bosse de la face externe, là où l'ossification a commencé"
+    },
+    {
+     "nom": "Lignes temporales supérieure et inférieure",
+     "role": "La supérieure donne attache au fascia temporal ; l'inférieure marque la limite haute de l'origine du muscle temporal"
+    },
+    {
+     "nom": "Angle sphénoïdal",
+     "role": "Antéro-inférieur, coincé entre le frontal et la grande aile du sphénoïde (région du ptérion) ; sa face interne porte le sillon des rameaux antérieurs de l'artère méningée moyenne"
+    },
+    {
+     "nom": "Angle mastoïdien",
+     "role": "Postéro-inférieur, à l'astérion, où il rejoint l'occipital et la partie mastoïdienne du temporal ; sa face interne porte un sillon veineux, à la jonction des sinus transverse et sigmoïde"
+    },
+    {
+     "nom": "Sillon du sinus sagittal supérieur",
+     "role": "Le long du bord sagittal, sur la face interne ; la faux du cerveau s'attache à ses lèvres. Des fossettes granulaires le bordent, plus marquées chez le sujet âgé"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen pariétal (inconstant)",
+     "contenu": "Veine émissaire pariétale, vers le sinus sagittal supérieur ; parfois un rameau de l'artère occipitale"
+    }
+   ],
+   "ossification": "Ossification membraneuse par un seul point, apparu à la tubérosité pariétale vers la 8e semaine ; les angles s'ossifient en dernier : c'est à leur niveau que se trouvent les fontanelles",
+   "palpation": "Sous le cuir chevelu, sur le haut et le côté du crâne ; la tubérosité pariétale en est le point le plus saillant",
+   "clinique": "Au ptérion, où il rejoint le frontal, le temporal et le sphénoïde, le crâne est mince et l'artère méningée moyenne court juste dessous : un choc peut la rompre et provoquer un hématome extradural",
+   "memo": "Quatre bords, quatre angles, et quatre grandes sutures autour de lui : sagittale, coronale, lambdoïde, squameuse",
+   "variantes": "Le foramen pariétal manque souvent ou varie de taille ; l'os est parfois divisé en deux par une suture antéro-postérieure",
+   "sources": [
+    "gray1918",
+    "radiopaedia-parietal",
+    "openstax-7-2",
+    "statpearls-crane"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "temporal",
+   "resume": "L'os de la tempe et de l'oreille : il abrite l'oreille moyenne et l'oreille interne, s'articule avec la mandibule et livre passage au nerf facial et à l'artère carotide interne.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "occipital",
+     "nom": "Suture occipito-mastoïdienne et synchondrose pétro-occipitale",
+     "type": "suture et synchondrose"
+    },
+    {
+     "os": "parietal",
+     "nom": "Suture squameuse et suture pariéto-mastoïdienne",
+     "type": "suture"
+    },
+    {
+     "os": "sphenoide",
+     "nom": "Suture sphéno-squameuse et synchondrose sphéno-pétreuse",
+     "type": "suture et synchondrose"
+    },
+    {
+     "os": "zygomatique",
+     "nom": "Suture temporo-zygomatique, sur l'arcade zygomatique",
+     "type": "suture"
+    },
+    {
+     "os": "mandibule",
+     "nom": "Articulation temporo-mandibulaire",
+     "type": "condylaire à disque (charnière et glissement)"
+    },
+    {
+     "os": "etrier",
+     "nom": "Syndesmose tympano-stapédienne : la base de l'étrier dans la fenêtre du vestibule",
+     "type": "syndesmose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Partie squameuse (écaille)",
+     "role": "Plaque mince de la tempe : sa face externe appartient à la fosse temporale et donne origine au muscle temporal"
+    },
+    {
+     "nom": "Processus zygomatique",
+     "role": "Se porte en avant et forme l'arcade zygomatique avec l'os zygomatique ; le masséter s'attache à son bord inférieur et à sa face médiale, le fascia temporal à son bord supérieur"
+    },
+    {
+     "nom": "Fosse mandibulaire et tubercule articulaire",
+     "role": "Reçoivent la tête de la mandibule, par l'intermédiaire d'un disque ; le tubercule limite la fosse en avant"
+    },
+    {
+     "nom": "Processus mastoïde",
+     "role": "Saillie derrière l'oreille, creusée de cellules aériennes : attaches du sterno-cléido-mastoïdien, du splénius de la tête et du longissimus de la tête ; le ventre postérieur du digastrique naît de l'incisure mastoïdienne"
+    },
+    {
+     "nom": "Processus styloïde",
+     "role": "Longue épine d'où partent trois muscles (stylo-glosse, stylo-hyoïdien, stylo-pharyngien) et deux ligaments (stylo-hyoïdien, stylo-mandibulaire)"
+    },
+    {
+     "nom": "Partie pétreuse (ancien « rocher »)",
+     "role": "Pyramide de la base du crâne qui renferme l'oreille interne ; l'éminence arquée y marque le canal semi-circulaire antérieur, l'empreinte trigéminale loge le ganglion du nerf trijumeau"
+    },
+    {
+     "nom": "Tegmen tympani",
+     "role": "Mince lame osseuse qui sépare la caisse du tympan de la fosse crânienne moyenne"
+    },
+    {
+     "nom": "Partie tympanique",
+     "role": "Gouttière osseuse qui entoure le méat acoustique externe et engaine la base du processus styloïde"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Méat acoustique externe",
+     "contenu": "Conduit de l'oreille externe, long d'environ 2 cm, fermé au fond par la membrane tympanique"
+    },
+    {
+     "nom": "Méat acoustique interne",
+     "contenu": "Nerf facial (VII), nerf vestibulo-cochléaire (VIII) et artère labyrinthique"
+    },
+    {
+     "nom": "Canal facial et foramen stylo-mastoïdien",
+     "contenu": "Nerf facial (VII), qui sort du crâne par le foramen stylo-mastoïdien ; artère stylo-mastoïdienne"
+    },
+    {
+     "nom": "Canal carotidien",
+     "contenu": "Artère carotide interne et son plexus sympathique"
+    },
+    {
+     "nom": "Foramen jugulaire (avec l'occipital)",
+     "contenu": "Sinus pétreux inférieur ; nerfs glosso-pharyngien (IX), vague (X) et accessoire (XI) ; sinus sigmoïde, continué par la veine jugulaire interne, dont le bulbe occupe la fosse jugulaire"
+    },
+    {
+     "nom": "Fissure pétro-tympanique",
+     "contenu": "Artère tympanique antérieure ; elle loge le processus antérieur du marteau, et la corde du tympan sort par un canalicule accolé à son bord"
+    },
+    {
+     "nom": "Hiatus du canal du nerf grand pétreux",
+     "contenu": "Nerf grand pétreux et rameau pétreux de l'artère méningée moyenne"
+    },
+    {
+     "nom": "Canalicule tympanique",
+     "contenu": "Nerf tympanique, rameau du glosso-pharyngien (IX)"
+    },
+    {
+     "nom": "Canalicule mastoïdien",
+     "contenu": "Rameau auriculaire du nerf vague (X)"
+    },
+    {
+     "nom": "Foramen mastoïdien",
+     "contenu": "Veine émissaire mastoïdienne et rameau méningé de l'artère occipitale"
+    },
+    {
+     "nom": "Canal musculo-tubaire",
+     "contenu": "En haut le muscle tenseur du tympan, en bas la partie osseuse de la trompe auditive"
+    },
+    {
+     "nom": "Sillon du sinus sigmoïde",
+     "contenu": "Sinus sigmoïde, sur la face interne de la partie mastoïdienne"
+    }
+   ],
+   "ossification": "Huit points : écaille (membrane, 2e mois), anneau tympanique (membrane, 3e mois), quatre points pétro-mastoïdiens (cartilage, 5e-6e mois), deux pour le processus styloïde. L'écaille et la partie pétreuse se soudent la première année ; les cellules mastoïdiennes se creusent jusqu'à la puberté",
+   "palpation": "Le processus mastoïde se sent derrière le lobule de l'oreille ; l'arcade zygomatique se suit jusque devant l'oreille",
+   "clinique": "Une otite moyenne peut gagner les cellules mastoïdiennes (mastoïdite), puis la fosse crânienne moyenne et les méninges. Fracture du temporal : surdité, vertiges, paralysie faciale, saignement de l'oreille, ecchymose derrière l'oreille",
+   "memo": "Cinq parties : squameuse, pétreuse, mastoïdienne, tympanique, styloïde. Il renferme les trois plus petits os du corps : marteau, enclume, étrier",
+   "variantes": "Le processus styloïde, de longueur très variable, peut rester séparé de l'os ; long de 3 cm ou plus, il donne des douleurs de la gorge et de l'oreille (syndrome d'Eagle)",
+   "sources": [
+    "gray1918",
+    "tma-temporal",
+    "tma-foramens",
+    "statpearls-foramens",
+    "openstax-7-2",
+    "wikipedia-fr-temporal",
+    "statpearls-hyoide",
+    "kenhub-osselets"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "zygomatique",
+   "resume": "L'os de la pommette (ancien os malaire) : il fait le relief de la joue, borde l'orbite en dehors et en bas, et forme l'avant de l'arcade zygomatique.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "frontal",
+     "nom": "Suture fronto-zygomatique",
+     "type": "suture"
+    },
+    {
+     "os": "sphenoide",
+     "nom": "Suture sphéno-zygomatique (grande aile)",
+     "type": "suture"
+    },
+    {
+     "os": "temporal",
+     "nom": "Suture temporo-zygomatique, sur l'arcade zygomatique",
+     "type": "suture"
+    },
+    {
+     "os": "maxillaire",
+     "nom": "Suture zygomatico-maxillaire",
+     "type": "suture"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Face latérale",
+     "role": "Convexe, elle fait saillir la pommette ; le muscle grand zygomatique en naît"
+    },
+    {
+     "nom": "Processus frontal",
+     "role": "Monte le long du bord latéral de l'orbite jusqu'au frontal ; sur son versant orbitaire, le tubercule orbitaire (de Whitnall) reçoit le ligament palpébral latéral et l'expansion de l'élévateur de la paupière supérieure"
+    },
+    {
+     "nom": "Processus temporal",
+     "role": "Se porte en arrière à la rencontre du processus zygomatique du temporal : ensemble, ils forment l'arcade zygomatique"
+    },
+    {
+     "nom": "Bord postéro-inférieur",
+     "role": "Origine du muscle masséter, qui se poursuit le long de l'arcade"
+    },
+    {
+     "nom": "Face orbitaire",
+     "role": "Lisse et concave : elle forme une partie de la paroi latérale et du plancher de l'orbite, et s'unit en arrière à la grande aile du sphénoïde"
+    },
+    {
+     "nom": "Bord temporal",
+     "role": "Attache du fascia temporal"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramens zygomatico-orbitaires",
+     "contenu": "Sur la face orbitaire : entrée des deux rameaux du nerf zygomatique, branche du nerf maxillaire (V2)"
+    },
+    {
+     "nom": "Foramen zygomatico-facial",
+     "contenu": "Nerf et vaisseaux zygomatico-faciaux, vers la peau de la pommette"
+    },
+    {
+     "nom": "Foramen zygomatico-temporal",
+     "contenu": "Nerf zygomatico-temporal, vers la fosse temporale"
+    }
+   ],
+   "ossification": "Ossification membraneuse vers la 8e semaine : trois points dans la description classique, soudés vers le 5e mois de la vie fœtale ; un seul selon Mall",
+   "palpation": "C'est la saillie de la pommette ; on suit vers l'arrière l'arcade zygomatique jusque devant l'oreille",
+   "clinique": "Un coup sur la pommette peut le désunir de ses quatre voisins : fracture du complexe zygomatico-maxillaire. La sensibilité de la joue (nerf maxillaire, V2) diminue presque toujours, et il faut examiner l'œil, souvent atteint",
+   "memo": "L'os de la pommette : quatre voisins (frontal, sphénoïde, temporal, maxillaire) et une arcade tendue vers l'oreille",
+   "variantes": "Le foramen zygomatico-facial peut manquer ou être multiple (jusqu'à quatre) ; l'os est parfois divisé en deux par une suture supplémentaire",
+   "sources": [
+    "gray1918",
+    "statpearls-zygomatique",
+    "statpearls-orbite",
+    "openstax-7-2"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "axis",
+   "resume": "La deuxième vertèbre cervicale : sa dent, dressée sur le corps, sert de pivot à l'atlas et à la tête pour tourner à droite et à gauche.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "atlas",
+     "nom": "Articulations atlanto-axoïdiennes : une médiane, avec la dent, et deux latérales",
+     "type": "trochoïde et planes"
+    },
+    {
+     "os": "vertebre-c3",
+     "nom": "Articulation C2-C3 : disque intervertébral et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebres-cervicales",
+     "nom": "Suite de la colonne cervicale, par C3",
+     "type": "symphyse et planes"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Dent de l'axis (processus odontoïde)",
+     "role": "Pivot vertical : facette antérieure pour l'arc antérieur de l'atlas, sillon postérieur pour le ligament transverse ; le ligament de l'apex et les ligaments alaires la relient à l'occipital"
+    },
+    {
+     "nom": "Surfaces articulaires supérieures",
+     "role": "Larges, rondes, légèrement convexes, de part et d'autre de la dent : elles portent les masses latérales de l'atlas"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Gros, très solide et bifide ; le grand droit postérieur de la tête en naît"
+    },
+    {
+     "nom": "Processus transverses",
+     "role": "Très petits, à un seul tubercule ; leur foramen transversaire est oblique en haut et en dehors"
+    },
+    {
+     "nom": "Isthme (pars interarticularis)",
+     "role": "Pont osseux entre les processus articulaires supérieur et inférieur : c'est lui qui se rompt dans la fracture du pendu"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen transversaire",
+     "contenu": "Artère et veines vertébrales, plexus sympathique ; l'artère s'y coude en dehors pour gagner l'atlas"
+    },
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Moelle spinale et ses méninges"
+    }
+   ],
+   "ossification": "Cinq points primaires (corps, deux pour l'arc, deux pour la dent, réunis avant la naissance) et deux secondaires : le sommet de la dent, apparu vers 2 ans et soudé vers 12 ans, et la face inférieure du corps. La dent se soude au corps vers 6 ans",
+   "palpation": "L'atlas n'ayant pas de processus épineux, le sien est le premier que l'on sente sur la ligne médiane en descendant depuis l'occiput",
+   "clinique": "Fracture de la dent : près de 40 % des fractures de l'axis, souvent instable. Fracture du pendu : rupture des isthmes par hyperextension violente. Si le ligament transverse se relâche (polyarthrite rhumatoïde, trisomie 21), l'articulation devient instable",
+   "memo": "L'axe autour duquel on dit « non » : l'atlas et la tête pivotent sur sa dent",
+   "variantes": "Os odontoïdeum : la dent reste séparée du corps. Chez l'enfant, le noyau du sommet de la dent, pas encore soudé, peut être pris pour une fracture",
+   "sources": [
+    "gray1918",
+    "openstax-7-3",
+    "tma-rachis-cervical",
+    "statpearls-cervicales",
+    "statpearls-atlanto-axoidienne",
+    "tma-occipital"
+   ],
+   "divergences": "Soudure de la dent au corps : vers 6 ans pour StatPearls (4 à 6 ans selon l'article) ; Gray note qu'un reste de disque cartilagineux persiste longtemps au centre de la jonction"
+  },
+  {
+   "id": "cartilage-cricoide",
+   "resume": "Le cartilage de la base du larynx, le seul à former un anneau complet : étroit en avant, haut en arrière, comme une bague à chaton. Il répond à la sixième vertèbre cervicale.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "cartilage-thyroide",
+     "nom": "Articulation crico-thyroïdienne, avec la corne inférieure du cartilage thyroïde",
+     "type": "synoviale"
+    },
+    {
+     "os": "cartilage-arytenoide",
+     "nom": "Articulation crico-aryténoïdienne",
+     "type": "synoviale"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Arc",
+     "role": "Partie antérieure étroite (5 à 7 mm de haut) : origine du muscle crico-thyroïdien, attache du ligament crico-thyroïdien médian et d'une partie du constricteur inférieur du pharynx"
+    },
+    {
+     "nom": "Lame",
+     "role": "Plaque postérieure haute de 2 à 3 cm ; une crête médiane y donne attache aux fibres longitudinales de l'œsophage et sépare deux dépressions d'où naissent les crico-aryténoïdiens postérieurs"
+    },
+    {
+     "nom": "Surfaces articulaires aryténoïdiennes",
+     "role": "Deux facettes ovales et convexes sur le bord supérieur de la lame : les cartilages aryténoïdes y glissent et y pivotent"
+    },
+    {
+     "nom": "Surfaces articulaires thyroïdiennes",
+     "role": "Une petite facette ronde de chaque côté, à la jonction de l'arc et de la lame : le cricoïde y bascule sur les cornes inférieures du cartilage thyroïde, ce qui tend les cordes vocales"
+    },
+    {
+     "nom": "Bord supérieur",
+     "role": "Sur les côtés naît le crico-aryténoïdien latéral ; le cône élastique s'y attache"
+    },
+    {
+     "nom": "Bord inférieur",
+     "role": "Uni au premier anneau de la trachée par le ligament crico-trachéal"
+    }
+   ],
+   "ossification": "Cartilage hyalin, qui se calcifie puis s'ossifie avec l'âge, un peu plus tard que le cartilage thyroïde (celui-ci à partir de 25 ans environ)",
+   "palpation": "Anneau dur sous la proéminence laryngée, dont le sépare la dépression souple du ligament crico-thyroïdien",
+   "clinique": "Repère de l'abord d'urgence des voies aériennes : la crico-thyroïdotomie ouvre la membrane située juste au-dessus de son arc. La pression sur le cricoïde pendant l'intubation en séquence rapide vise à limiter les régurgitations ; son intérêt reste discuté",
+   "memo": "Une bague à chaton : l'anneau devant, le chaton derrière ; c'est le seul anneau complet du larynx",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-larynx"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "cartilage-thyroide",
+   "resume": "Le plus grand cartilage du larynx : deux lames soudées en avant comme un bouclier, dont l'angle saillant forme la pomme d'Adam et abrite les cordes vocales.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "cartilage-cricoide",
+     "nom": "Articulation crico-thyroïdienne, par les cornes inférieures",
+     "type": "synoviale"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Lames droite et gauche",
+     "role": "Deux plaques unies en avant ; leur angle est plus fermé chez l'homme (76° environ après la puberté) que chez la femme (94° environ)"
+    },
+    {
+     "nom": "Proéminence laryngée",
+     "role": "Saillie de l'angle antérieur (pomme d'Adam), plus marquée chez l'homme, surmontée de l'incisure thyroïdienne supérieure"
+    },
+    {
+     "nom": "Ligne oblique",
+     "role": "Crête de la face externe de chaque lame : attaches du sterno-thyroïdien, du thyro-hyoïdien et du constricteur inférieur du pharynx"
+    },
+    {
+     "nom": "Cornes supérieures",
+     "role": "Longues et fines : leur sommet est relié à l'os hyoïde par le ligament thyro-hyoïdien latéral"
+    },
+    {
+     "nom": "Cornes inférieures",
+     "role": "Courtes et épaisses : une petite facette médiale s'articule avec le côté du cartilage cricoïde"
+    },
+    {
+     "nom": "Face interne de l'angle",
+     "role": "Attaches de la tige de l'épiglotte (ligament thyro-épiglottique), des ligaments vestibulaires, des ligaments vocaux et des muscles thyro-aryténoïdiens et vocaux"
+    },
+    {
+     "nom": "Bord supérieur",
+     "role": "Attache de la membrane thyro-hyoïdienne, qui suspend le larynx à l'os hyoïde"
+    }
+   ],
+   "ossification": "Cartilage hyalin : il commence à s'ossifier vers 25 ans et peut être entièrement osseux vers 65 ans ; la calcification progresse de l'arrière vers l'avant",
+   "palpation": "La proéminence laryngée et l'incisure qui la surmonte se sentent au milieu du cou, en regard des quatrième et cinquième vertèbres cervicales",
+   "clinique": "Sa calcification progressive gêne l'échographie du larynx après 40 ans environ. Un cancer qui franchit la commissure antérieure des cordes vocales peut l'envahir et imposer une laryngectomie",
+   "memo": "Un bouclier ouvert en arrière : la pomme d'Adam devant, les cordes vocales tendues derrière son angle",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-larynx",
+    "statpearls-hyoide"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "hyoide",
+   "resume": "Petit os en U suspendu sous la mandibule, à la racine de la langue : il ne touche aucun autre os et sert d'ancrage aux muscles de la langue, du plancher de la bouche et du larynx.",
+   "sorte": "irregulier",
+   "articulations": [],
+   "reliefs": [
+    {
+     "nom": "Corps",
+     "role": "Lame quadrilatère médiane : sur sa face antérieure s'insèrent le génio-hyoïdien, le mylo-hyoïdien, le sterno-hyoïdien et l'omo-hyoïdien ; à son bord supérieur, la membrane thyro-hyoïdienne et quelques fibres du génio-glosse"
+    },
+    {
+     "nom": "Grandes cornes",
+     "role": "Prolongent le corps en arrière : origine de l'hyo-glosse et du constricteur moyen du pharynx, insertion du thyro-hyoïdien et, près du corps, du stylo-hyoïdien et du digastrique. Leur pointe reçoit le ligament thyro-hyoïdien latéral"
+    },
+    {
+     "nom": "Petites cornes",
+     "role": "Deux petits cônes à la jonction du corps et des grandes cornes : leur sommet reçoit le ligament stylo-hyoïdien, qui suspend l'os au processus styloïde du temporal"
+    }
+   ],
+   "ossification": "Six points : deux pour le corps, un par corne. Les grandes cornes s'ossifient à la fin de la vie fœtale, le corps peu après, les petites cornes la première ou la deuxième année. Les grandes cornes ne se soudent au corps qu'à l'âge mûr, et pas chez tous",
+   "palpation": "Entre le pouce et l'index, au-dessus du cartilage thyroïde et sous la mandibule : il se laisse déplacer d'un côté à l'autre",
+   "clinique": "Sa fracture, rare car la mandibule le protège, évoque une strangulation : on la recherche à l'autopsie, mais elle ne s'observe que dans un tiers des cas environ. Chez le vivant, elle rend douloureuses la parole et la déglutition",
+   "memo": "Le seul os qui ne s'articule avec aucun autre : il flotte, tenu par des muscles et des ligaments",
+   "variantes": "Forme et symétrie très variables d'une personne à l'autre ; la soudure des cornes au corps est inconstante",
+   "sources": [
+    "gray1918",
+    "statpearls-hyoide",
+    "tma-hyoide",
+    "openstax-7-2"
+   ],
+   "divergences": "Niveau : en regard de la troisième vertèbre cervicale pour TeachMeAnatomy, de la quatrième chez l'adulte pour StatPearls"
+  },
+  {
+   "id": "c7",
+   "resume": "La septième vertèbre cervicale, de transition vers le thorax : son long processus épineux, non bifide, fait saillie à la base de la nuque.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-c6",
+     "nom": "Articulation C6-C7 : disque intervertébral et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebres-cervicales",
+     "nom": "Suite de la colonne cervicale, par C6",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-t1",
+     "nom": "Jonction cervico-thoracique C7-T1 : disque et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebres-thoraciques",
+     "nom": "Jonction avec la colonne thoracique, par T1",
+     "type": "symphyse et planes"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Processus épineux",
+     "role": "Long, presque horizontal, non bifide, terminé par un tubercule où s'attache l'extrémité inférieure du ligament nuchal"
+    },
+    {
+     "nom": "Processus transverses",
+     "role": "Volumineux ; leur partie antérieure, grêle, représente une côte et peut rester indépendante : c'est la côte cervicale"
+    },
+    {
+     "nom": "Corps",
+     "role": "Plus gros que celui des vertèbres sus-jacentes : il annonce les vertèbres thoraciques"
+    },
+    {
+     "nom": "Processus articulaires inférieurs",
+     "role": "Leurs facettes s'articulent avec la première vertèbre thoracique, à la jonction cervico-thoracique"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen transversaire",
+     "contenu": "Petit : il ne livre passage qu'à des veines vertébrales ; l'artère vertébrale passe d'ordinaire en avant du processus transverse, sans le traverser"
+    },
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral C7-T1",
+     "contenu": "Huitième nerf cervical (C8), qui sort sous C7"
+    }
+   ],
+   "ossification": "Comme une vertèbre cervicale typique ; la partie costale du processus transverse a parfois son propre point (6e mois de la vie fœtale), soudé au reste entre 5 et 6 ans",
+   "palpation": "Première épineuse bien saillante au bas de la nuque : on la trouve en suivant la ligne médiane vers le bas, surtout tête penchée en avant",
+   "clinique": "Repère pour compter les épineuses. L'étage C6-C7 est un siège fréquent de hernie discale et, après un traumatisme en hyperextension, de luxation",
+   "memo": "Vertèbre proéminente : celle que le doigt accroche au bas de la nuque",
+   "variantes": "Côte cervicale ; foramen transversaire double ou absent d'un côté ou des deux ; facette inconstante pour la première côte",
+   "sources": [
+    "gray1918",
+    "openstax-7-3",
+    "statpearls-cervicales",
+    "tma-rachis-cervical",
+    "wikipedia-fr-vertebre-cervicale"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "cornet-nasal-inferieur",
+   "resume": "Fine lame osseuse enroulée sur elle-même, accrochée à la paroi latérale du nez : c'est le plus grand des trois cornets et le seul à être un os indépendant.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "maxillaire",
+     "nom": "Union à la crête conchale du maxillaire et, par le processus maxillaire, au bord du hiatus maxillaire",
+     "type": "suture"
+    },
+    {
+     "os": "os-palatin",
+     "nom": "Union à la crête conchale du palatin",
+     "type": "suture"
+    },
+    {
+     "os": "os-lacrymal",
+     "nom": "Suture lacrymo-conchale, par le processus lacrymal",
+     "type": "suture"
+    },
+    {
+     "os": "os-ethmoide",
+     "nom": "Union du processus ethmoïdal au processus unciné de l'ethmoïde",
+     "type": "suture"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Processus lacrymal",
+     "role": "Monte rejoindre le processus descendant de l'os lacrymal : il complète la paroi du canal lacrymo-nasal"
+    },
+    {
+     "nom": "Processus ethmoïdal",
+     "role": "Lame qui monte s'unir au processus unciné de l'ethmoïde, en travers de l'ouverture du sinus maxillaire"
+    },
+    {
+     "nom": "Processus maxillaire",
+     "role": "Lame recourbée en bas et en dehors : elle s'applique sur le maxillaire et ferme en partie la paroi médiale du sinus maxillaire"
+    },
+    {
+     "nom": "Face médiale",
+     "role": "Convexe, criblée d'orifices et creusée de sillons longitudinaux pour les vaisseaux"
+    },
+    {
+     "nom": "Bord inférieur et face latérale",
+     "role": "Le bord inférieur, libre et épais, et la face latérale, concave, surplombent le méat nasal inférieur, où s'ouvre le conduit lacrymo-nasal"
+    }
+   ],
+   "ossification": "Un seul point, vers le 5e mois de la vie fœtale, dans la paroi latérale de la capsule nasale cartilagineuse",
+   "palpation": null,
+   "clinique": "Le gonflement de sa partie antérieure est une cause fréquente de nez bouché, souvent associée à une déviation de la cloison. Une réduction chirurgicale trop large expose au syndrome du nez vide",
+   "memo": "Trois cornets de chaque côté : les deux du haut appartiennent à l'ethmoïde, seul celui du bas est un os à part",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-cornet-inferieur",
+    "openstax-7-2",
+    "statpearls-nez"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "enclume",
+   "resume": "L'osselet du milieu de la chaîne de l'oreille moyenne : il reçoit du marteau les vibrations du tympan et les transmet à l'étrier.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "marteau",
+     "nom": "Articulation incudo-malléaire",
+     "type": "en selle"
+    },
+    {
+     "os": "etrier",
+     "nom": "Articulation incudo-stapédienne",
+     "type": "sphéroïde"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps",
+     "role": "Logé dans le récessus épitympanique ; sa face antérieure porte une surface en selle pour la tête du marteau"
+    },
+    {
+     "nom": "Branche courte",
+     "role": "Dirigée en arrière : fixée dans la fosse de l'enclume par le ligament postérieur de l'enclume"
+    },
+    {
+     "nom": "Branche longue",
+     "role": "Descend parallèlement au manche du marteau, puis se coude en dedans"
+    },
+    {
+     "nom": "Processus lenticulaire",
+     "role": "Petit renflement au bout de la branche longue, articulé avec la tête de l'étrier"
+    }
+   ],
+   "ossification": "Dérive du premier arc pharyngien, comme le marteau. Les osselets sont entièrement ossifiés et de taille adulte dès la naissance",
+   "palpation": null,
+   "clinique": "La chaîne des osselets peut s'interrompre (traumatisme, otite chronique, malformation) : l'audition baisse ; on la corrige par un appareil auditif ou une reconstruction chirurgicale de la chaîne",
+   "memo": "Marteau, enclume, étrier, de dehors en dedans : le marteau frappe l'enclume, qui pousse l'étrier",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-osselets",
+    "tma-oreille-moyenne",
+    "statpearls-crane"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "marteau",
+   "resume": "Le premier et le plus gros des trois osselets de l'oreille moyenne : son manche est pris dans le tympan, dont il recueille les vibrations.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "enclume",
+     "nom": "Articulation incudo-malléaire",
+     "type": "en selle"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête",
+     "role": "Logée dans le récessus épitympanique ; sa face postérieure s'articule avec le corps de l'enclume"
+    },
+    {
+     "nom": "Col",
+     "role": "Étranglement sous la tête, en regard de la partie flaccide du tympan"
+    },
+    {
+     "nom": "Manche",
+     "role": "Enchâssé dans la membrane tympanique ; le tendon du muscle tenseur du tympan s'insère sur sa face médiale, près de son extrémité supérieure"
+    },
+    {
+     "nom": "Processus latéral",
+     "role": "Court relief fixé au haut du tympan ; les plis malléaires en partent"
+    },
+    {
+     "nom": "Processus antérieur",
+     "role": "Fine épine dirigée vers la fissure pétro-tympanique, à laquelle la relient des fibres ligamentaires"
+    }
+   ],
+   "ossification": "Dérive du premier arc pharyngien, comme l'enclume. Ossifié et de taille adulte dès la naissance",
+   "palpation": null,
+   "clinique": "Le muscle tenseur du tympan (nerf mandibulaire, V3) tire son manche en dedans et tend le tympan ; avec le muscle stapédien, il amortit les sons forts. Sa paralysie rend ces sons pénibles (hyperacousie)",
+   "memo": "Le marteau tient le tympan par le manche et frappe l'enclume par la tête",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-osselets",
+    "tma-oreille-moyenne",
+    "statpearls-crane"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "os-ethmoide",
+   "resume": "Os léger et creux, enchâssé entre les orbites : sa lame criblée laisse passer les nerfs de l'odorat, ses labyrinthes forment le haut des fosses nasales et la paroi médiale des orbites.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "frontal",
+     "nom": "Suture fronto-ethmoïdale (incisure ethmoïdale du frontal)",
+     "type": "suture"
+    },
+    {
+     "os": "sphenoide",
+     "nom": "Suture sphéno-ethmoïdale",
+     "type": "suture"
+    },
+    {
+     "os": "os-nasaux",
+     "nom": "Contact de la lame perpendiculaire avec la crête des os nasaux",
+     "type": "suture"
+    },
+    {
+     "os": "maxillaire",
+     "nom": "Suture ethmoïdo-maxillaire",
+     "type": "suture"
+    },
+    {
+     "os": "os-lacrymal",
+     "nom": "Suture ethmoïdo-lacrymale",
+     "type": "suture"
+    },
+    {
+     "os": "os-palatin",
+     "nom": "Suture palato-ethmoïdale, avec le processus orbitaire du palatin",
+     "type": "suture"
+    },
+    {
+     "os": "cornet-nasal-inferieur",
+     "nom": "Union du processus unciné au processus ethmoïdal du cornet",
+     "type": "suture"
+    },
+    {
+     "os": "vomer",
+     "nom": "Union de la lame perpendiculaire au vomer",
+     "type": "schindylèse"
+    },
+    {
+     "os": "cartilage-septal-nasal",
+     "nom": "Union du bord antéro-inférieur de la lame perpendiculaire au cartilage septal",
+     "type": "union ostéo-cartilagineuse"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Lame criblée",
+     "role": "Lame horizontale percée de trous, logée dans l'incisure ethmoïdale du frontal : toit des fosses nasales, elle porte les bulbes olfactifs"
+    },
+    {
+     "nom": "Crista galli",
+     "role": "Crête médiane dressée dans le crâne : attache antérieure de la faux du cerveau"
+    },
+    {
+     "nom": "Lame perpendiculaire",
+     "role": "Descend sur la ligne médiane et forme le haut de la cloison du nez, au-dessus du vomer et en arrière du cartilage septal"
+    },
+    {
+     "nom": "Labyrinthes ethmoïdaux",
+     "role": "Deux masses latérales creusées de cellules ethmoïdales : les antérieures et les moyennes s'ouvrent dans le méat moyen, les postérieures dans le méat supérieur"
+    },
+    {
+     "nom": "Lame orbitaire",
+     "role": "Paroi latérale du labyrinthe, mince comme du papier (lame papyracée) : la plus grande part de la paroi médiale de l'orbite"
+    },
+    {
+     "nom": "Cornets nasaux supérieur et moyen",
+     "role": "Deux lames enroulées de la face médiale du labyrinthe, qui surplombent les méats supérieur et moyen"
+    },
+    {
+     "nom": "Processus unciné",
+     "role": "Lamelle courbe qui descend du labyrinthe : elle ferme en partie l'ouverture du sinus maxillaire et rejoint le cornet nasal inférieur"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramens de la lame criblée",
+     "contenu": "Filets du nerf olfactif (I) ; une fente, à l'avant, livre passage au nerf ethmoïdal antérieur"
+    },
+    {
+     "nom": "Foramen ethmoïdal antérieur (avec le frontal)",
+     "contenu": "Nerf et vaisseaux ethmoïdaux antérieurs"
+    },
+    {
+     "nom": "Foramen ethmoïdal postérieur (avec le frontal)",
+     "contenu": "Nerf et vaisseaux ethmoïdaux postérieurs"
+    },
+    {
+     "nom": "Foramen cæcum (avec le frontal)",
+     "contenu": "Veine émissaire inconstante, du nez vers le sinus sagittal supérieur"
+    }
+   ],
+   "ossification": "Ossification dans le cartilage de la capsule nasale, par trois points : un par labyrinthe (4e-5e mois de la vie fœtale), un pour la lame perpendiculaire et la crista galli (première année) ; ils s'unissent au début de la deuxième année",
+   "palpation": null,
+   "clinique": "Fracture de la lame criblée : les filets olfactifs se rompent (anosmie) et le liquide cérébro-spinal peut couler par le nez, clair et d'un seul côté. Fracture du labyrinthe : de l'air passe dans l'orbite",
+   "memo": "Une passoire entre le nez et le cerveau : par ses trous descendent les filets de l'odorat",
+   "variantes": "La fosse olfactive est plus ou moins profonde (classification de Keros) : plus elle l'est, plus la chirurgie des sinus risque de perforer la base du crâne",
+   "sources": [
+    "gray1918",
+    "statpearls-ethmoide",
+    "tma-ethmoide",
+    "statpearls-orbite",
+    "openstax-7-2"
+   ],
+   "divergences": "Gray compte quinze os articulés, en comptant à part les deux cornets sphénoïdaux ; les textes actuels en retiennent treize"
+  },
+  {
+   "id": "os-lacrymal",
+   "resume": "Le plus petit et le plus fragile des os de la face : une lamelle à l'avant de la paroi médiale de l'orbite, creusée par la gouttière des voies lacrymales.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "frontal",
+     "nom": "Suture fronto-lacrymale",
+     "type": "suture"
+    },
+    {
+     "os": "os-ethmoide",
+     "nom": "Suture ethmoïdo-lacrymale, avec la lame orbitaire",
+     "type": "suture"
+    },
+    {
+     "os": "maxillaire",
+     "nom": "Suture lacrymo-maxillaire",
+     "type": "suture"
+    },
+    {
+     "os": "cornet-nasal-inferieur",
+     "nom": "Suture lacrymo-conchale, par le processus descendant",
+     "type": "suture"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Crête lacrymale postérieure",
+     "role": "Arête verticale de la face orbitaire : origine de la partie lacrymale du muscle orbiculaire de l'œil"
+    },
+    {
+     "nom": "Sillon lacrymal",
+     "role": "En avant de la crête ; uni au processus frontal du maxillaire, il forme la fosse du sac lacrymal"
+    },
+    {
+     "nom": "Hamulus lacrymal",
+     "role": "Petit crochet au bas de la crête : il s'articule avec le maxillaire et limite l'entrée du canal lacrymo-nasal"
+    },
+    {
+     "nom": "Processus descendant",
+     "role": "Rejoint le processus lacrymal du cornet nasal inférieur et complète la paroi du canal lacrymo-nasal"
+    },
+    {
+     "nom": "Face médiale (nasale)",
+     "role": "Répond au méat nasal moyen en avant ; en arrière, elle ferme des cellules ethmoïdales antérieures"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Fosse du sac lacrymal et canal lacrymo-nasal (avec le maxillaire)",
+     "contenu": "Sac lacrymal en haut, conduit lacrymo-nasal en bas, qui mène les larmes au méat nasal inférieur"
+    }
+   ],
+   "ossification": "Un seul point, vers la 12e semaine, dans la membrane qui recouvre la capsule nasale cartilagineuse",
+   "palpation": null,
+   "clinique": "Il borde les voies qui drainent les larmes vers le nez : si elles se bouchent, les larmes débordent sur la joue (larmoiement). Très mince, il est un point faible de la paroi médiale de l'orbite",
+   "memo": "L'os des larmes : sa gouttière loge le sac lacrymal",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "openstax-7-2",
+    "statpearls-orbite"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "os-nasaux",
+   "resume": "Deux petits os allongés, accolés sur la ligne médiane, qui forment l'arête osseuse du nez ; le reste de la pyramide nasale est fait de cartilages.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "frontal",
+     "nom": "Suture fronto-nasale",
+     "type": "suture"
+    },
+    {
+     "os": "maxillaire",
+     "nom": "Suture naso-maxillaire, avec le processus frontal du maxillaire",
+     "type": "suture"
+    },
+    {
+     "os": "os-ethmoide",
+     "nom": "Contact de la crête médiane des os nasaux avec la lame perpendiculaire",
+     "type": "suture"
+    },
+    {
+     "os": "processus-lateral-du-cartilage-septal",
+     "nom": "Attache du cartilage latéral au bord inférieur",
+     "type": "union fibreuse"
+    },
+    {
+     "os": "cartilage-septal-nasal",
+     "nom": "Attache du bord antérieur du cartilage septal, sous la suture internasale",
+     "type": "union fibreuse"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Bord supérieur",
+     "role": "Épais et dentelé, engrené dans l'incisure nasale du frontal : c'est la racine du nez (nasion)"
+    },
+    {
+     "nom": "Bord médial",
+     "role": "S'unit à l'os nasal opposé par la suture internasale ; il se prolonge en arrière par une crête qui prend part à la cloison du nez"
+    },
+    {
+     "nom": "Bord inférieur",
+     "role": "Mince : il donne attache au cartilage latéral du nez, qu'il recouvre un peu"
+    },
+    {
+     "nom": "Face interne",
+     "role": "Parcourue de haut en bas par un sillon qui loge un rameau du nerf naso-ciliaire (rameau nasal externe du nerf ethmoïdal antérieur)"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen nasal",
+     "contenu": "Une petite veine, au milieu de la face externe"
+    },
+    {
+     "nom": "Sillon ethmoïdal",
+     "contenu": "Rameau nasal externe du nerf ethmoïdal antérieur, issu du nerf naso-ciliaire (V1)"
+    }
+   ],
+   "ossification": "Un point par os, au début du 3e mois, dans la membrane qui recouvre l'avant de la capsule nasale cartilagineuse",
+   "palpation": "Entre le pouce et l'index, sous la racine du nez : arête dure, qui cède la place à mi-hauteur aux cartilages, plus souples",
+   "clinique": "Ce sont les os de la face le plus souvent fracturés. Après un coup sur le nez, il faut chercher un hématome de la cloison, à drainer sans tarder. La réduction se fait dans les deux premières semaines, avant que le cal ne fixe la déformation",
+   "memo": "L'arête du nez est en os, la pointe en cartilage : ce sont les os nasaux qui portent les lunettes",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-nez",
+    "statpearls-fractures-nez",
+    "openstax-7-2"
+   ],
+   "divergences": "L'article de StatPearls sur le nez mentionne un contact avec l'os lacrymal, que Gray ne retient pas : le processus frontal du maxillaire les sépare"
+  },
+  {
+   "id": "os-palatin",
+   "resume": "Os pair en forme de L, caché au fond des fosses nasales : sa lame horizontale termine le palais osseux en arrière, sa lame verticale tapisse la paroi latérale du nez jusqu'à l'orbite.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "maxillaire",
+     "nom": "Suture palato-maxillaire et suture palatine transverse",
+     "type": "suture"
+    },
+    {
+     "os": "sphenoide",
+     "nom": "Union des processus sphénoïdal, orbitaire et pyramidal au corps et au processus ptérygoïde du sphénoïde",
+     "type": "suture"
+    },
+    {
+     "os": "os-ethmoide",
+     "nom": "Suture palato-ethmoïdale, par le processus orbitaire",
+     "type": "suture"
+    },
+    {
+     "os": "cornet-nasal-inferieur",
+     "nom": "Union du cornet à la crête conchale",
+     "type": "suture"
+    },
+    {
+     "os": "vomer",
+     "nom": "Union du vomer à la crête nasale",
+     "type": "suture"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Lame horizontale",
+     "role": "Forme le quart postérieur du palais osseux et s'unit à celle du côté opposé par la suture palatine médiane ; près de son bord postérieur s'attache l'aponévrose du tenseur du voile du palais"
+    },
+    {
+     "nom": "Épine nasale postérieure",
+     "role": "Pointe médiane du bord postérieur du palais osseux : origine du muscle uvulaire"
+    },
+    {
+     "nom": "Lame perpendiculaire",
+     "role": "Monte le long de la paroi latérale du nez ; sa crête conchale porte le cornet nasal inférieur, sa crête ethmoïdale le cornet moyen"
+    },
+    {
+     "nom": "Processus pyramidal",
+     "role": "Coin logé entre les deux lames du processus ptérygoïde ; il complète la fosse ptérygoïde et donne quelques fibres au ptérygoïdien médial"
+    },
+    {
+     "nom": "Processus orbitaire",
+     "role": "Petit bloc creux au sommet de la lame perpendiculaire : il forme un coin du plancher de l'orbite, tout en arrière"
+    },
+    {
+     "nom": "Processus sphénoïdal",
+     "role": "Lamelle recourbée sous le corps du sphénoïde ; avec le processus orbitaire, il limite l'incisure sphéno-palatine"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen sphéno-palatin (incisure sphéno-palatine fermée par le corps du sphénoïde)",
+     "contenu": "Vaisseaux sphéno-palatins, nerf naso-palatin et nerfs nasaux postéro-supérieurs : passage de la fosse ptérygo-palatine vers la cavité nasale"
+    },
+    {
+     "nom": "Canal grand palatin (avec le maxillaire) et foramen grand palatin",
+     "contenu": "Nerf grand palatin et vaisseaux palatins descendants, qui gagnent le palais"
+    },
+    {
+     "nom": "Foramens petits palatins (processus pyramidal)",
+     "contenu": "Nerfs et vaisseaux petits palatins"
+    },
+    {
+     "nom": "Canal palato-vaginal (avec le sphénoïde)",
+     "contenu": "Nerf pharyngien, issu du ganglion ptérygo-palatin, et rameau pharyngien de l'artère maxillaire"
+    }
+   ],
+   "ossification": "Ossification membraneuse par un seul point, apparu entre la 6e et la 8e semaine",
+   "palpation": null,
+   "clinique": "Son foramen sphéno-palatin livre passage à l'artère sphéno-palatine, en cause dans les saignements de nez postérieurs : on peut la ligaturer ou la coaguler par voie endoscopique",
+   "memo": "Un L : la barre horizontale au palais, la barre verticale dans le nez",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "radiopaedia-palatin",
+    "openstax-7-2",
+    "statpearls-maxillaire",
+    "kenhub-sphenoide"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "vomer",
+   "resume": "Lame osseuse mince et médiane, en forme de soc de charrue, qui forme la partie postérieure et inférieure de la cloison du nez.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "sphenoide",
+     "nom": "Suture sphéno-vomérienne : le rostre du sphénoïde s'emboîte entre les ailes du vomer",
+     "type": "schindylèse"
+    },
+    {
+     "os": "os-ethmoide",
+     "nom": "Union de la moitié supérieure du bord antérieur à la lame perpendiculaire",
+     "type": "schindylèse"
+    },
+    {
+     "os": "maxillaire",
+     "nom": "Union du bord inférieur à la crête nasale des maxillaires",
+     "type": "suture"
+    },
+    {
+     "os": "os-palatin",
+     "nom": "Union du bord inférieur à la crête nasale des palatins",
+     "type": "suture"
+    },
+    {
+     "os": "cartilage-septal-nasal",
+     "nom": "Union de la moitié inférieure du bord antérieur au cartilage septal",
+     "type": "union ostéo-cartilagineuse"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Ailes du vomer",
+     "role": "Deux lèvres horizontales du bord supérieur, de part et d'autre de la gouttière qui reçoit le rostre du sphénoïde ; elles touchent les processus vaginaux du sphénoïde et les processus sphénoïdaux des palatins"
+    },
+    {
+     "nom": "Bord antérieur",
+     "role": "Le plus long : sa moitié supérieure se soude à la lame perpendiculaire de l'ethmoïde ; sa moitié inférieure, creusée en gouttière, reçoit le cartilage septal"
+    },
+    {
+     "nom": "Bord inférieur",
+     "role": "Posé sur la crête nasale que forment les maxillaires et les palatins"
+    },
+    {
+     "nom": "Bord postérieur",
+     "role": "Libre et concave : il sépare les deux choanes, orifices postérieurs des fosses nasales"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon naso-palatin",
+     "contenu": "Nerf et vaisseaux naso-palatins, qui descendent obliquement sur chaque face en direction du canal incisif"
+    }
+   ],
+   "ossification": "Deux lamelles membraneuses, de part et d'autre du cartilage de la cloison, apparues vers la 8e semaine ; unies par le bas au 3e mois, elles ne fusionnent presque complètement qu'à la puberté",
+   "palpation": null,
+   "clinique": "Avec le cartilage septal, il prend part aux déviations de la cloison du nez, fréquentes, qui gênent le passage de l'air ; on les corrige par septoplastie",
+   "memo": "Vomer, le soc de la charrue en latin : une lame qui partage le nez en deux",
+   "variantes": "Le sinus sphénoïdal s'étend parfois jusque dans le vomer",
+   "sources": [
+    "gray1918",
+    "radiopaedia-vomer",
+    "openstax-7-2",
+    "statpearls-nez"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "etrier",
+   "resume": "Le plus petit os du corps, dernier maillon de la chaîne des osselets : sa base, enchâssée dans la fenêtre du vestibule, transmet les vibrations aux liquides de l'oreille interne.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "enclume",
+     "nom": "Articulation incudo-stapédienne",
+     "type": "sphéroïde"
+    },
+    {
+     "os": "temporal",
+     "nom": "Syndesmose tympano-stapédienne : la base est fixée au pourtour de la fenêtre du vestibule par le ligament annulaire",
+     "type": "syndesmose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête",
+     "role": "Petite cupule articulée avec le processus lenticulaire de l'enclume"
+    },
+    {
+     "nom": "Col",
+     "role": "Sa face postérieure reçoit le tendon du muscle stapédien, qui tire la tête en arrière"
+    },
+    {
+     "nom": "Branches antérieure et postérieure",
+     "role": "Deux arcs qui relient le col à la base ; l'antérieure est la plus courte et la moins courbée"
+    },
+    {
+     "nom": "Base",
+     "role": "Plaque ovale (platine) fixée dans la fenêtre du vestibule, ou fenêtre ovale, par le ligament annulaire : c'est elle qui ébranle les liquides de l'oreille interne"
+    }
+   ],
+   "ossification": "Dérive du deuxième arc pharyngien, comme le processus styloïde. Ossifié et de taille adulte dès la naissance",
+   "palpation": null,
+   "clinique": "Otospongiose (otosclérose) : un os anormal bloque sa base dans la fenêtre du vestibule et l'audition baisse. Paralysie du nerf facial : le muscle stapédien ne retient plus l'étrier et les sons forts deviennent pénibles (hyperacousie)",
+   "memo": "Un étrier de cavalier miniature : une tête, deux branches, une platine ; c'est le plus petit os du corps",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-osselets",
+    "tma-oreille-moyenne",
+    "statpearls-crane"
+   ],
+   "divergences": "Articulation incudo-stapédienne : énarthrose (sphéroïde) pour Gray, qui signale que certains y voient une syndesmose ; Kenhub la dit simplement synoviale"
+  },
+  {
+   "id": "cartilage-arytenoide",
+   "resume": "Petit cartilage pair en forme de pyramide, posé sur le cricoïde à l'arrière du larynx : en glissant et en pivotant, il écarte ou rapproche les cordes vocales.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "cartilage-cricoide",
+     "nom": "Articulation crico-aryténoïdienne",
+     "type": "synoviale"
+    },
+    {
+     "os": "cartilages-cornicules",
+     "nom": "Union de l'apex au cartilage corniculé, parfois soudé à lui",
+     "type": "union cartilagineuse"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Base",
+     "role": "Concave, elle repose sur le bord supérieur de la lame du cricoïde"
+    },
+    {
+     "nom": "Processus vocal",
+     "role": "Angle antérieur de la base : attache du ligament vocal, armature de la corde vocale"
+    },
+    {
+     "nom": "Processus musculaire",
+     "role": "Angle latéral de la base : y tirent le crico-aryténoïdien postérieur, qui ouvre la glotte, et le crico-aryténoïdien latéral, qui la ferme"
+    },
+    {
+     "nom": "Apex",
+     "role": "Sommet recourbé en arrière et en dedans, coiffé par le cartilage corniculé"
+    },
+    {
+     "nom": "Face postérieure",
+     "role": "Concave : insertion des muscles aryténoïdiens transverse et obliques"
+    },
+    {
+     "nom": "Face antéro-latérale",
+     "role": "Attaches du ligament vestibulaire, du muscle vocal et du thyro-aryténoïdien"
+    }
+   ],
+   "ossification": "Cartilage hyalin, sauf l'apex, élastique ; il s'ossifie avec l'âge, un peu plus tard que le cartilage thyroïde",
+   "palpation": null,
+   "clinique": "Ses mouvements règlent l'ouverture de la glotte. Si le nerf laryngé récurrent est lésé, par exemple lors d'une chirurgie du cou, il ne bouge plus : la corde vocale reste immobile",
+   "memo": "Deux petites pyramides posées sur le chaton du cricoïde : elles pivotent, et les cordes vocales s'écartent ou se rejoignent",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-larynx",
+    "statpearls-cervicales"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "cartilages-cornicules",
+   "resume": "Deux minuscules nodules coniques (cartilages de Santorini) posés sur le sommet des cartilages aryténoïdes, dans l'épaisseur des plis ary-épiglottiques.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "cartilage-arytenoide",
+     "nom": "Union à l'apex du cartilage aryténoïde, parfois par soudure",
+     "type": "union cartilagineuse"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Sommet",
+     "role": "Prolonge l'apex du cartilage aryténoïde en arrière et en dedans"
+    },
+    {
+     "nom": "Tubercule corniculé",
+     "role": "Petite saillie que le cartilage soulève à l'arrière du pli ary-épiglottique, visible à l'endoscopie ; juste en avant, le tubercule cunéiforme répond au cartilage cunéiforme"
+    }
+   ],
+   "ossification": "Cartilage élastique, qui ne se calcifie guère avec l'âge",
+   "palpation": null,
+   "clinique": "À l'endoscopie du larynx, les tubercules corniculés et cunéiformes se voient comme deux reliefs du pli ary-épiglottique : ils servent de repères à l'arrière de l'entrée du larynx",
+   "memo": "Corniculé : une petite corne au sommet de chaque aryténoïde",
+   "variantes": "Parfois soudés aux cartilages aryténoïdes",
+   "sources": [
+    "gray1918",
+    "statpearls-larynx"
+   ],
+   "divergences": "Nature du cartilage : élastique pour Gray, hyalin pour StatPearls"
+  },
+  {
+   "id": "vertebre-c3",
+   "resume": "La troisième vertèbre cervicale, première des vertèbres cervicales typiques : petit corps, processus épineux bifide, processus transverses percés pour l'artère vertébrale.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "axis",
+     "nom": "Articulation C2-C3 : disque intervertébral, articulations zygapophysaires et unco-vertébrales",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-c4",
+     "nom": "Articulation C3-C4 : disque intervertébral, articulations zygapophysaires et unco-vertébrales",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebres-cervicales",
+     "nom": "Chaîne des vertèbres cervicales : l'axis au-dessus, C4 au-dessous",
+     "type": "symphyse et planes"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps",
+     "role": "Petit, plus large que profond ; ses bords latéraux se relèvent en deux uncus (processus unciformes), qui s'articulent avec le corps de l'axis"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Court et bifide, souvent à deux pointes inégales ; le ligament nuchal s'y attache"
+    },
+    {
+     "nom": "Processus transverses",
+     "role": "Percés du foramen transversaire, terminés par un tubercule antérieur et un tubercule postérieur ; entre les deux, une gouttière où repose le nerf spinal C3"
+    },
+    {
+     "nom": "Processus articulaires",
+     "role": "Réunis de chaque côté en un massif articulaire ; facettes supérieures tournées en haut et en arrière, inférieures en bas et en avant"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen transversaire",
+     "contenu": "Artère vertébrale, veines vertébrales et plexus sympathique"
+    },
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Large et triangulaire : moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral C2-C3",
+     "contenu": "Nerf spinal C3, qui sort au-dessus de la vertèbre de même numéro"
+    }
+   ],
+   "ossification": "Trois points primaires (corps et deux moitiés de l'arc) ; l'arc se soude au corps vers 3 ans. Cinq points secondaires vers 16 ans (sommets des processus, faces du corps), soudés vers 25 ans",
+   "palpation": "Épineuse courte, enfouie sous le ligament nuchal ; le corps se projette à peu près à la hauteur de l'os hyoïde",
+   "clinique": "Coup du lapin : dans un choc par l'arrière, la tête part en hyperextension et le ligament longitudinal antérieur, tendu devant les corps vertébraux, peut s'étirer ou se rompre",
+   "memo": "C3, derrière l'os hyoïde : la première vertèbre cervicale « comme les autres »",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "openstax-7-3",
+    "statpearls-cervicales",
+    "tma-rachis-cervical",
+    "tma-hyoide"
+   ],
+   "divergences": "Niveau de l'os hyoïde : C3 pour TeachMeAnatomy, C4 chez l'adulte pour StatPearls"
+  },
+  {
+   "id": "vertebre-c4",
+   "resume": "La quatrième vertèbre cervicale, typique : elle occupe le milieu du cou, à la hauteur où commence le larynx.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-c3",
+     "nom": "Articulation C3-C4 : disque intervertébral, articulations zygapophysaires et unco-vertébrales",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-c5",
+     "nom": "Articulation C4-C5 : disque intervertébral, articulations zygapophysaires et unco-vertébrales",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebres-cervicales",
+     "nom": "Chaîne des vertèbres cervicales : C3 au-dessus, C5 au-dessous",
+     "type": "symphyse et planes"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps",
+     "role": "Petit, plus large que profond ; sa face supérieure, creusée d'un côté à l'autre, se relève en deux uncus articulés avec le corps de C3"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Court et bifide ; le ligament nuchal s'y attache"
+    },
+    {
+     "nom": "Processus transverses",
+     "role": "Percés du foramen transversaire ; un tubercule antérieur et un tubercule postérieur encadrent la gouttière où repose le nerf spinal C4"
+    },
+    {
+     "nom": "Processus articulaires",
+     "role": "Un massif articulaire de chaque côté ; facettes supérieures tournées en haut et en arrière, inférieures en bas et en avant : articulations zygapophysaires"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen transversaire",
+     "contenu": "Artère vertébrale, veines vertébrales et plexus sympathique"
+    },
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Large et triangulaire : moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral C3-C4",
+     "contenu": "Nerf spinal C4, qui sort au-dessus de la vertèbre de même numéro"
+    }
+   ],
+   "ossification": "Trois points primaires (corps et deux moitiés de l'arc) ; l'arc se soude au corps vers 3 ans. Cinq points secondaires vers 16 ans (sommets des processus, faces du corps), soudés vers 25 ans",
+   "palpation": "Épineuse courte et profonde, sous le ligament nuchal : on la distingue mal de ses voisines",
+   "clinique": "La douleur du cou touche 10 à 30 % des gens ; elle vient souvent de l'arthrose des articulations zygapophysaires, d'une hernie discale ou d'un canal rétréci qui comprime une racine nerveuse",
+   "memo": "C4, le milieu du cou : le larynx s'étend devant C4, C5 et C6",
+   "variantes": "La partie costale du processus transverse a parfois son propre point d'ossification (décrit pour C4, C5 et C6)",
+   "sources": [
+    "gray1918",
+    "openstax-7-3",
+    "statpearls-cervicales",
+    "tma-rachis-cervical"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "vertebre-c5",
+   "resume": "La cinquième vertèbre cervicale, typique ; avec C6, elle encadre l'un des deux disques du cou les plus exposés aux hernies.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-c4",
+     "nom": "Articulation C4-C5 : disque intervertébral, articulations zygapophysaires et unco-vertébrales",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-c6",
+     "nom": "Articulation C5-C6 : disque intervertébral, articulations zygapophysaires et unco-vertébrales",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebres-cervicales",
+     "nom": "Chaîne des vertèbres cervicales : C4 au-dessus, C6 au-dessous",
+     "type": "symphyse et planes"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps",
+     "role": "Petit, plus large que profond ; deux uncus relèvent les bords latéraux de sa face supérieure et s'articulent avec le corps de C4"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Court et bifide ; le ligament nuchal s'y attache"
+    },
+    {
+     "nom": "Processus transverses",
+     "role": "Percés du foramen transversaire ; leurs tubercules antérieur et postérieur encadrent la gouttière où repose le nerf spinal C5"
+    },
+    {
+     "nom": "Processus articulaires",
+     "role": "Un massif articulaire de chaque côté, uni à C4 et à C6 par les articulations zygapophysaires"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen transversaire",
+     "contenu": "Artère vertébrale, veines vertébrales et plexus sympathique"
+    },
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Large et triangulaire : moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral C4-C5",
+     "contenu": "Nerf spinal C5, qui sort au-dessus de la vertèbre de même numéro"
+    }
+   ],
+   "ossification": "Trois points primaires (corps et deux moitiés de l'arc) ; l'arc se soude au corps vers 3 ans. Cinq points secondaires vers 16 ans (sommets des processus, faces du corps), soudés vers 25 ans",
+   "palpation": "Épineuse courte, sous le ligament nuchal ; le corps se projette derrière le larynx",
+   "clinique": "Hernie discale C5-C6 : après une flexion forcée du cou, le disque fait saillie et comprime une racine ; la douleur gagne le cou, l'épaule et le membre supérieur",
+   "memo": "C5-C6 et C6-C7 : les deux étages des hernies discales du cou",
+   "variantes": "La partie costale du processus transverse a parfois son propre point d'ossification (décrit pour C4, C5 et C6)",
+   "sources": [
+    "gray1918",
+    "openstax-7-3",
+    "statpearls-cervicales",
+    "tma-rachis-cervical"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "vertebre-c6",
+   "resume": "La sixième vertèbre cervicale : typique, mais repérable par son gros tubercule carotidien ; à sa hauteur, l'artère vertébrale entre dans les foramens transversaires et le larynx se termine.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-c5",
+     "nom": "Articulation C5-C6 : disque intervertébral, articulations zygapophysaires et unco-vertébrales",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "c7",
+     "nom": "Articulation C6-C7 : disque intervertébral, articulations zygapophysaires et unco-vertébrales",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebres-cervicales",
+     "nom": "Chaîne des vertèbres cervicales : C5 au-dessus, C7 au-dessous",
+     "type": "symphyse et planes"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tubercule carotidien (de Chassaignac)",
+     "role": "Tubercule antérieur du processus transverse, plus saillant que sur les autres vertèbres : repère chirurgical, au croisement des artères carotide commune, thyroïdienne inférieure et vertébrale"
+    },
+    {
+     "nom": "Corps",
+     "role": "Petit, plus large que profond, avec un uncus de chaque côté de sa face supérieure, articulé avec le corps de C5"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Court et bifide ; le ligament nuchal s'y attache"
+    },
+    {
+     "nom": "Processus transverses",
+     "role": "Percés du foramen transversaire ; la gouttière qui sépare leurs deux tubercules porte le nerf spinal C6"
+    },
+    {
+     "nom": "Processus articulaires",
+     "role": "Un massif articulaire de chaque côté, uni à C5 et à C7 par les articulations zygapophysaires"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen transversaire",
+     "contenu": "Artère vertébrale, qui y pénètre le plus souvent à ce niveau, veines vertébrales et plexus sympathique"
+    },
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Large et triangulaire : moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral C5-C6",
+     "contenu": "Nerf spinal C6, qui sort au-dessus de la vertèbre de même numéro"
+    }
+   ],
+   "ossification": "Trois points primaires (corps et deux moitiés de l'arc) ; l'arc se soude au corps vers 3 ans. Cinq points secondaires vers 16 ans (sommets des processus, faces du corps), soudés vers 25 ans",
+   "palpation": "Le tubercule carotidien se cherche en profondeur sur le côté du cou, à la hauteur du cartilage cricoïde",
+   "clinique": "Les étages C5-C6 et C6-C7 sont les plus touchés par les hernies discales du cou ; après un traumatisme en hyperextension, la luxation siège le plus souvent en C6-C7",
+   "memo": "C6, trois repères : tubercule carotidien, entrée de l'artère vertébrale, cartilage cricoïde",
+   "variantes": "L'artère vertébrale entre parfois dans les foramens transversaires à un autre niveau ; la partie costale du processus transverse a parfois son propre point d'ossification",
+   "sources": [
+    "gray1918",
+    "openstax-7-3",
+    "statpearls-cervicales",
+    "tma-rachis-cervical",
+    "wikipedia-fr-vertebre-cervicale"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "cartilage-septal-nasal",
+   "resume": "Lame de cartilage hyalin, à peu près quadrilatère, qui forme l'avant de la cloison du nez et soutient l'arête nasale.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "os-ethmoide",
+     "nom": "Union du bord postéro-supérieur à la lame perpendiculaire de l'ethmoïde",
+     "type": "union ostéo-cartilagineuse"
+    },
+    {
+     "os": "vomer",
+     "nom": "Union du bord postéro-inférieur à la gouttière du bord antérieur du vomer",
+     "type": "union ostéo-cartilagineuse"
+    },
+    {
+     "os": "maxillaire",
+     "nom": "Union du bord inférieur à la crête nasale des maxillaires",
+     "type": "union fibreuse"
+    },
+    {
+     "os": "os-nasaux",
+     "nom": "Attache du bord antérieur sous la suture internasale",
+     "type": "union fibreuse"
+    },
+    {
+     "os": "processus-lateral-du-cartilage-septal",
+     "nom": "Continuité avec les cartilages latéraux, le long de l'arête du nez",
+     "type": "continuité cartilagineuse"
+    },
+    {
+     "os": "grand-cartilage-alaire",
+     "nom": "Union lâche, par du tissu fibreux, avec les branches médiales des grands cartilages alaires",
+     "type": "union fibreuse"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Bord antéro-supérieur",
+     "role": "Soutient l'arête du nez : fixé en haut aux os nasaux, continu au milieu avec les cartilages latéraux, uni en bas aux branches médiales des grands cartilages alaires"
+    },
+    {
+     "nom": "Bord postéro-supérieur",
+     "role": "S'unit à la lame perpendiculaire de l'ethmoïde"
+    },
+    {
+     "nom": "Bord postéro-inférieur",
+     "role": "Reçu dans la gouttière du vomer, puis posé sur la crête nasale des maxillaires jusqu'à l'épine nasale antérieure"
+    },
+    {
+     "nom": "Processus postérieur (sphénoïdal)",
+     "role": "Languette qui se glisse en arrière entre le vomer et la lame perpendiculaire de l'ethmoïde, surtout chez l'enfant"
+    },
+    {
+     "nom": "Bord antéro-inférieur",
+     "role": "Libre : il n'atteint pas le bas de la cloison, dont la partie mobile est faite des branches médiales des grands cartilages alaires et de peau"
+    }
+   ],
+   "ossification": "Il ne s'ossifie pas ; le vomer et la lame perpendiculaire de l'ethmoïde s'ossifient à son contact, en arrière",
+   "palpation": "Entre deux doigts, sous les os nasaux : la cloison souple que l'on déplace en bougeant la pointe du nez",
+   "clinique": "Sa déviation, fréquente, gêne la respiration ; la septoplastie la corrige en gardant un cadre d'un centimètre de cartilage en haut et en avant, qui soutient le nez. Un hématome de la cloison doit être drainé vite : le cartilage peut se nécroser et l'arête s'effondrer (nez en selle)",
+   "memo": "La cloison du nez a trois pièces : cartilage septal devant, lame perpendiculaire de l'ethmoïde en haut, vomer en bas et en arrière",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-nez",
+    "statpearls-fractures-nez",
+    "wikipedia-fr-cartilage-septal"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "dent-canine-inferieure",
+   "resume": "La canine du bas : même forme pointue que celle du haut, en un peu plus petit ; avec elle, elle perce et déchire les aliments.",
+   "sorte": "dent",
+   "articulations": [
+    {
+     "os": "mandibule",
+     "nom": "Articulation alvéolo-dentaire : la racine est tenue dans son alvéole par le ligament alvéolo-dentaire",
+     "type": "gomphose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Couronne",
+     "role": "Conique, terminée par une seule cuspide ; plus petite que celle de la canine du haut"
+    },
+    {
+     "nom": "Racine",
+     "role": "Unique, longue, aplatie d'un côté à l'autre ; elle n'a d'ordinaire qu'un canal"
+    },
+    {
+     "nom": "Position",
+     "role": "Un peu plus près de la ligne médiane que la canine du haut"
+    }
+   ],
+   "ossification": "Éruption de la dent définitive vers 9-10 ans, avant la canine du haut",
+   "palpation": "Troisième dent du bas à partir de la ligne médiane (dents 33 et 43)",
+   "clinique": "Innervée par le rameau incisif du nerf alvéolaire inférieur (V3), qui poursuit son trajet dans l'os en avant du foramen mentonnier. Les fractures du corps de la mandibule passent souvent par son alvéole",
+   "memo": "Canine comme canis, le chien : la dent pointue, très développée chez les carnivores",
+   "variantes": "Racine parfois dédoublée, ce qui reste rare",
+   "sources": [
+    "gray1918",
+    "statpearls-dents",
+    "kenhub-dents",
+    "wikipedia-fr-dent",
+    "kenhub-canine",
+    "wikipedia-fr-canine",
+    "tma-mandibule"
+   ],
+   "divergences": "Âge d'éruption : 9-10 ans pour StatPearls, 11e-12e année pour Gray, qui ne distingue pas les deux mâchoires"
+  },
+  {
+   "id": "dent-canine-superieure",
+   "resume": "La canine du haut : une dent pointue à une seule cuspide et à très longue racine, faite pour percer et déchirer ; elle marque le coin de l'arcade dentaire.",
+   "sorte": "dent",
+   "articulations": [
+    {
+     "os": "maxillaire",
+     "nom": "Articulation alvéolo-dentaire : la racine est tenue dans son alvéole par le ligament alvéolo-dentaire",
+     "type": "gomphose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Couronne",
+     "role": "Conique, épaisse, terminée par une cuspide unique ; un bourrelet (cingulum) renfle sa face palatine, près du collet"
+    },
+    {
+     "nom": "Racine",
+     "role": "Unique, plus longue et plus épaisse que celle des incisives : elle peut atteindre 3 cm et soulève sur le maxillaire la bosse canine"
+    },
+    {
+     "nom": "Collet",
+     "role": "Limite entre la couronne, couverte d'émail, et la racine, couverte de cément"
+    }
+   ],
+   "ossification": "Éruption de la dent définitive vers 11-12 ans : c'est l'une des dernières à sortir, après la première prémolaire",
+   "palpation": "Troisième dent du haut à partir de la ligne médiane (dents 13 et 23), au coin de la bouche ; la bosse de sa racine se sent sous la lèvre",
+   "clinique": "Innervée par le nerf alvéolaire supérieur antérieur (V2). En dehors de la bosse de sa racine se creuse la fosse canine, par où l'on aborde chirurgicalement le sinus maxillaire",
+   "memo": "Une seule pointe, une seule racine, mais la plus longue de la bouche",
+   "variantes": "Racine très rarement dédoublée",
+   "sources": [
+    "gray1918",
+    "statpearls-dents",
+    "kenhub-dents",
+    "wikipedia-fr-dent",
+    "kenhub-canine",
+    "wikipedia-fr-canine",
+    "statpearls-maxillaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "dent-incisive-inferolaterale",
+   "resume": "L'incisive latérale du bas : presque identique à sa voisine centrale, à peine plus large ; elle coupe les aliments.",
+   "sorte": "dent",
+   "articulations": [
+    {
+     "os": "mandibule",
+     "nom": "Articulation alvéolo-dentaire : la racine est tenue dans son alvéole par le ligament alvéolo-dentaire",
+     "type": "gomphose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Couronne",
+     "role": "En ciseau, semblable à celle de l'incisive centrale du bas mais un peu plus large"
+    },
+    {
+     "nom": "Bord incisif",
+     "role": "Tranchant et droit ; il suit la courbe de l'arcade"
+    },
+    {
+     "nom": "Racine",
+     "role": "Unique, aplatie d'un côté à l'autre, parfois incurvée ; un canal, parfois deux. La dent mesure environ 21 mm"
+    }
+   ],
+   "ossification": "Éruption de la dent définitive vers 7-8 ans",
+   "palpation": "Deuxième dent du bas à partir de la ligne médiane (dents 32 et 42)",
+   "clinique": "Innervée par le rameau incisif du nerf alvéolaire inférieur (V3) ; son sang vient de l'artère incisive, branche terminale de l'artère alvéolaire inférieure. L'anesthésie du nerf alvéolaire inférieur à son entrée dans la mandibule endort toutes les dents du bas du même côté",
+   "memo": "En bas, l'incisive latérale est la plus large ; en haut, c'est la centrale",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-dents",
+    "kenhub-dents",
+    "wikipedia-fr-dent",
+    "kenhub-incisives",
+    "wikipedia-fr-incisive"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "dent-incisive-inferomediale",
+   "resume": "L'incisive centrale du bas : la plus petite des dents, étroite et symétrique, au bord tranchant ; c'est l'une des premières dents définitives à sortir.",
+   "sorte": "dent",
+   "articulations": [
+    {
+     "os": "mandibule",
+     "nom": "Articulation alvéolo-dentaire : la racine est tenue dans son alvéole par le ligament alvéolo-dentaire",
+     "type": "gomphose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Couronne",
+     "role": "En ciseau, étroite, à face vestibulaire lisse ; le cingulum de la face linguale est peu marqué"
+    },
+    {
+     "nom": "Bord incisif",
+     "role": "Tranchant et droit, fait pour couper"
+    },
+    {
+     "nom": "Racine",
+     "role": "Unique, très aplatie d'un côté à l'autre ; un canal, parfois deux. La dent mesure environ 21 mm"
+    }
+   ],
+   "ossification": "Éruption de la dent définitive vers 6-7 ans, en même temps que la première molaire",
+   "palpation": "Première dent du bas de part et d'autre de la ligne médiane (dents 31 et 41)",
+   "clinique": "Innervée par le rameau incisif du nerf alvéolaire inférieur (V3), prolongé dans l'os jusqu'à la ligne médiane. Chez le nourrisson, l'incisive centrale de lait du bas est en général la première dent à percer, entre 6 et 10 mois",
+   "memo": "La plus petite dent de la bouche, et l'une des premières définitives, vers 6-7 ans",
+   "variantes": "L'incisive de lait correspondante est parfois présente dès la naissance (dent natale)",
+   "sources": [
+    "gray1918",
+    "statpearls-dents",
+    "kenhub-dents",
+    "wikipedia-fr-dent",
+    "statpearls-eruption",
+    "kenhub-incisives"
+   ],
+   "divergences": "Cingulum : absent sur les incisives du bas pour Gray, présent sur la face linguale pour Kenhub"
+  },
+  {
+   "id": "dent-incisive-superolaterale",
+   "resume": "L'incisive latérale du haut : la même forme en pelle que l'incisive centrale, en plus étroit ; elle coupe les aliments à côté d'elle.",
+   "sorte": "dent",
+   "articulations": [
+    {
+     "os": "maxillaire",
+     "nom": "Articulation alvéolo-dentaire : la racine est tenue dans son alvéole par le ligament alvéolo-dentaire",
+     "type": "gomphose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Couronne",
+     "role": "Semblable à celle de l'incisive centrale mais plus étroite ; sa fosse palatine est plus creuse et son cingulum très marqué"
+    },
+    {
+     "nom": "Bord incisif",
+     "role": "Tranchant, fait pour couper"
+    },
+    {
+     "nom": "Racine",
+     "role": "Unique, effilée, incurvée vers l'arrière près de sa pointe ; un seul canal. La dent mesure environ 21 mm"
+    }
+   ],
+   "ossification": "Éruption de la dent définitive vers 8-9 ans",
+   "palpation": "Deuxième dent du haut à partir de la ligne médiane (dents 12 et 22)",
+   "clinique": "Innervée par le nerf alvéolaire supérieur antérieur (V2), comme l'incisive centrale et la canine ; son sang vient de l'artère alvéolaire supérieure antérieure. Le nerf naso-palatin innerve la muqueuse du palais située derrière les incisives",
+   "memo": "La petite sœur de l'incisive centrale, juste à côté d'elle",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-dents",
+    "kenhub-dents",
+    "wikipedia-fr-dent",
+    "kenhub-incisives"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "dent-incisive-superomediale",
+   "resume": "L'incisive centrale du haut : la plus large des incisives, une « palette » au bord tranchant, faite pour couper les aliments.",
+   "sorte": "dent",
+   "articulations": [
+    {
+     "os": "maxillaire",
+     "nom": "Articulation alvéolo-dentaire : la racine est tenue dans son alvéole par le ligament alvéolo-dentaire",
+     "type": "gomphose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Couronne",
+     "role": "En pelle, aplatie d'avant en arrière ; sa face palatine, concave, est bordée de deux crêtes marginales et renflée près du collet par le cingulum"
+    },
+    {
+     "nom": "Bord incisif",
+     "role": "Tranchant ; à l'éruption, il porte de petits festons (mamelons) que l'usure efface le plus souvent"
+    },
+    {
+     "nom": "Racine",
+     "role": "Unique, conique, à un seul canal. La dent mesure environ 22,5 mm, dont 10 à 11 pour la couronne"
+    }
+   ],
+   "ossification": "Éruption de la dent définitive vers 7-8 ans, un peu après l'incisive centrale du bas",
+   "palpation": "Première dent du haut de part et d'autre de la ligne médiane (dents 11 et 21)",
+   "clinique": "Innervée par le nerf alvéolaire supérieur antérieur (V2), qui descend dans la paroi antérieure du sinus maxillaire. Juste derrière elle s'ouvre le canal incisif, d'où sort le nerf naso-palatin, destiné à la muqueuse voisine du palais",
+   "memo": "Les « palettes » : les deux grandes dents du milieu du sourire",
+   "variantes": "Un écart entre les deux incisives centrales (diastème, les « dents du bonheur ») est fréquent",
+   "sources": [
+    "gray1918",
+    "statpearls-dents",
+    "kenhub-dents",
+    "wikipedia-fr-dent",
+    "kenhub-incisives",
+    "wikipedia-fr-incisive"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "deuxieme-molaire-inferieure",
+   "resume": "La deuxième molaire du bas, « dent de douze ans » : quatre ou cinq cuspides, deux racines, juste devant la dent de sagesse ; elle broie les aliments.",
+   "sorte": "dent",
+   "articulations": [
+    {
+     "os": "mandibule",
+     "nom": "Articulation alvéolo-dentaire : la racine est tenue dans son alvéole par le ligament alvéolo-dentaire",
+     "type": "gomphose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Couronne",
+     "role": "Large, à peu près cubique, faite pour broyer"
+    },
+    {
+     "nom": "Cuspides",
+     "role": "Quatre le plus souvent, parfois cinq"
+    },
+    {
+     "nom": "Racines",
+     "role": "Deux : une mésiale (antérieure), presque verticale, et une distale (postérieure), oblique en arrière"
+    }
+   ],
+   "ossification": "Éruption vers 11-13 ans, derrière la première molaire ; elle ne remplace aucune dent de lait",
+   "palpation": "Septième dent du bas à partir de la ligne médiane (dents 37 et 47)",
+   "clinique": "Innervée par le nerf alvéolaire inférieur (V3), qui court dans le canal mandibulaire sous ses racines. Derrière elle, la dent de sagesse du bas est la dent qui reste le plus souvent incluse",
+   "memo": "La dent de douze ans du bas : la dernière avant la dent de sagesse",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-dents",
+    "kenhub-dents",
+    "wikipedia-fr-dent",
+    "statpearls-eruption",
+    "kenhub-molaires"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "deuxieme-molaire-superieure",
+   "resume": "La deuxième molaire du haut, « dent de douze ans » : un peu plus petite que la première, à trois ou quatre cuspides et trois racines ; elle broie les aliments.",
+   "sorte": "dent",
+   "articulations": [
+    {
+     "os": "maxillaire",
+     "nom": "Articulation alvéolo-dentaire : la racine est tenue dans son alvéole par le ligament alvéolo-dentaire",
+     "type": "gomphose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Couronne",
+     "role": "Large, à peu près cubique, un peu plus petite que celle de la première molaire"
+    },
+    {
+     "nom": "Cuspides",
+     "role": "Trois ou quatre"
+    },
+    {
+     "nom": "Racines",
+     "role": "Trois : deux vestibulaires, presque parallèles, et une palatine, qui s'écarte vers le palais"
+    }
+   ],
+   "ossification": "Éruption vers 11-13 ans, derrière la première molaire ; elle ne remplace aucune dent de lait",
+   "palpation": "Septième dent du haut à partir de la ligne médiane (dents 17 et 27)",
+   "clinique": "Innervée par le nerf alvéolaire supérieur postérieur (V2), dont les filets pénètrent dans la face postérieure du maxillaire. Ses racines voisinent avec le plancher du sinus maxillaire",
+   "memo": "La dent de douze ans : elle sort six ans après la première molaire",
+   "variantes": "Un tubercule surnuméraire (tubercule de Bolk) soulève parfois sa face vestibulaire",
+   "sources": [
+    "gray1918",
+    "statpearls-dents",
+    "kenhub-dents",
+    "wikipedia-fr-dent",
+    "kenhub-molaires",
+    "wikipedia-fr-molaire",
+    "statpearls-maxillaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "deuxieme-premolaire-inferieure",
+   "resume": "La deuxième prémolaire du bas : une couronne à deux cuspides sur une seule racine, juste devant la première molaire ; elle écrase les aliments.",
+   "sorte": "dent",
+   "articulations": [
+    {
+     "os": "mandibule",
+     "nom": "Articulation alvéolo-dentaire : la racine est tenue dans son alvéole par le ligament alvéolo-dentaire",
+     "type": "gomphose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Couronne",
+     "role": "Deux cuspides séparées par un sillon : une vestibulaire, la plus grosse, et une linguale"
+    },
+    {
+     "nom": "Racine",
+     "role": "Unique, conique"
+    }
+   ],
+   "ossification": "Éruption vers 10-12 ans, à la place de la deuxième molaire de lait",
+   "palpation": "Cinquième dent du bas à partir de la ligne médiane (dents 35 et 45)",
+   "clinique": "Innervée par le nerf alvéolaire inférieur (V3). Le foramen mentonnier s'ouvre sous elle ou juste en avant : la pointe de sa racine est voisine du nerf mentonnier, qu'il faut ménager",
+   "memo": "Sous elle s'ouvre le foramen mentonnier, la sortie du nerf du menton",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-dents",
+    "kenhub-dents",
+    "wikipedia-fr-dent",
+    "kenhub-premolaires",
+    "wikipedia-fr-premolaire",
+    "statpearls-mandibule"
+   ],
+   "divergences": "Âge d'éruption : 10-12 ans pour StatPearls, 11-12 ans pour Kenhub, 10e année pour Gray"
+  },
+  {
+   "id": "deuxieme-premolaire-superieure",
+   "resume": "La deuxième prémolaire du haut : deux cuspides et, le plus souvent, une seule racine ; elle écrase les aliments devant les molaires.",
+   "sorte": "dent",
+   "articulations": [
+    {
+     "os": "maxillaire",
+     "nom": "Articulation alvéolo-dentaire : la racine est tenue dans son alvéole par le ligament alvéolo-dentaire",
+     "type": "gomphose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Couronne",
+     "role": "Deux cuspides séparées par un sillon : une vestibulaire et une palatine"
+    },
+    {
+     "nom": "Racine",
+     "role": "Habituellement unique, aplatie et creusée d'un sillon sur chaque face ; sa pointe est parfois bifide"
+    }
+   ],
+   "ossification": "Éruption vers 10-12 ans, à la place de la deuxième molaire de lait",
+   "palpation": "Cinquième dent du haut à partir de la ligne médiane (dents 15 et 25)",
+   "clinique": "Innervée par le nerf alvéolaire supérieur moyen (V2), qui n'existe pas toujours. Sa racine est proche du plancher du sinus maxillaire, qui s'étend des prémolaires à la troisième molaire",
+   "memo": "Deux pointes, une racine : la prémolaire type",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-dents",
+    "kenhub-dents",
+    "wikipedia-fr-dent",
+    "kenhub-premolaires",
+    "wikipedia-fr-premolaire",
+    "statpearls-maxillaire"
+   ],
+   "divergences": "Âge d'éruption : 10-12 ans pour StatPearls, 11-12 ans pour Kenhub, 10e année pour Gray"
+  },
+  {
+   "id": "grand-cartilage-alaire",
+   "resume": "Fine lame de cartilage souple, pliée en U autour de la narine : elle forme la pointe et l'aile du nez et maintient la narine ouverte.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "cartilage-septal-nasal",
+     "nom": "Union lâche des branches médiales au bord antérieur du cartilage septal, par du tissu fibreux",
+     "type": "union fibreuse"
+    },
+    {
+     "os": "processus-lateral-du-cartilage-septal",
+     "nom": "Union du bord supérieur de la branche latérale au cartilage latéral, par du tissu fibreux",
+     "type": "union fibreuse"
+    },
+    {
+     "os": "maxillaire",
+     "nom": "Liaison de la branche latérale au processus frontal du maxillaire, par une membrane fibreuse qui contient les petits cartilages alaires",
+     "type": "union fibreuse"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Branche médiale (crus médial)",
+     "role": "Accolée lâchement à celle du côté opposé : avec la peau, elles forment la partie mobile de la cloison (columelle), sous le cartilage septal"
+    },
+    {
+     "nom": "Branche latérale (crus latéral)",
+     "role": "Plaque ovale qui arme l'aile du nez ; une membrane fibreuse, où sont noyés trois ou quatre petits cartilages alaires, la relie en arrière au processus frontal du maxillaire"
+    },
+    {
+     "nom": "Jonction des deux branches",
+     "role": "Forme la pointe du nez ; une encoche sépare celle de droite de celle de gauche"
+    },
+    {
+     "nom": "Bord inférieur de la branche latérale",
+     "role": "Il n'atteint pas le bord de la narine : le bas de l'aile n'est fait que de tissu fibreux et graisseux recouvert de peau"
+    }
+   ],
+   "ossification": "Cartilage hyalin, qui ne s'ossifie pas ; il s'assouplit avec l'âge",
+   "palpation": "C'est lui que l'on pince en pinçant le bout du nez",
+   "clinique": "Avec l'âge, il se ramollit et ses attaches se relâchent : la pointe tombe, la valve nasale s'affaisse et le nez se bouche. En rhinoplastie, des greffons de cartilage peuvent le renforcer",
+   "memo": "Un fer à cheval autour de la narine : une branche dans la cloison, une branche dans l'aile, la pointe au sommet",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-nez",
+    "wikipedia-fr-grand-cartilage-alaire"
+   ],
+   "divergences": "Noms des deux parties : crus médial et latéral dans la nomenclature (branches), « ailes » médiale et latérale sur Wikipédia ; StatPearls ajoute une branche moyenne"
+  },
+  {
+   "id": "premiere-molaire-inferieure",
+   "resume": "La première molaire du bas, « dent de six ans » : une large couronne à cinq cuspides sur deux racines ; c'est l'une des toutes premières dents définitives.",
+   "sorte": "dent",
+   "articulations": [
+    {
+     "os": "mandibule",
+     "nom": "Articulation alvéolo-dentaire : la racine est tenue dans son alvéole par le ligament alvéolo-dentaire",
+     "type": "gomphose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Couronne",
+     "role": "Large, à peu près cubique : la table où s'écrasent les aliments"
+    },
+    {
+     "nom": "Cuspides",
+     "role": "Cinq le plus souvent"
+    },
+    {
+     "nom": "Racines",
+     "role": "Deux, aplaties : une mésiale (antérieure), presque verticale, qui contient deux canaux, et une distale (postérieure), oblique en arrière, à un seul canal large"
+    }
+   ],
+   "ossification": "Éruption vers 6-7 ans, derrière les molaires de lait : elle ne remplace aucune dent de lait",
+   "palpation": "Sixième dent du bas à partir de la ligne médiane (dents 36 et 46)",
+   "clinique": "Innervée par le nerf alvéolaire inférieur (V3), qui court dans le canal mandibulaire juste sous ses racines ; on l'anesthésie à son entrée dans l'os, au foramen mandibulaire",
+   "memo": "Deux racines en bas, trois en haut : c'est ce qui distingue les molaires des deux mâchoires",
+   "variantes": "Un tubercule surnuméraire (protostylide) existe parfois sur sa face vestibulaire",
+   "sources": [
+    "gray1918",
+    "statpearls-dents",
+    "kenhub-dents",
+    "wikipedia-fr-dent",
+    "statpearls-eruption",
+    "kenhub-molaires",
+    "wikipedia-fr-molaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "premiere-molaire-superieure",
+   "resume": "La première molaire du haut, « dent de six ans » : la plus grosse des molaires supérieures, à quatre cuspides et trois racines, pilier de la mastication.",
+   "sorte": "dent",
+   "articulations": [
+    {
+     "os": "maxillaire",
+     "nom": "Articulation alvéolo-dentaire : la racine est tenue dans son alvéole par le ligament alvéolo-dentaire",
+     "type": "gomphose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Couronne",
+     "role": "Large, à peu près cubique ; c'est en général la plus grosse des trois molaires du haut"
+    },
+    {
+     "nom": "Cuspides",
+     "role": "Quatre le plus souvent"
+    },
+    {
+     "nom": "Racines",
+     "role": "Trois, écartées : deux vestibulaires, presque parallèles, et une palatine, qui diverge vers le palais"
+    }
+   ],
+   "ossification": "Éruption vers 6-7 ans, derrière les molaires de lait : première dent définitive du haut, elle ne remplace aucune dent de lait",
+   "palpation": "Sixième dent du haut à partir de la ligne médiane (dents 16 et 26)",
+   "clinique": "Innervée par le nerf alvéolaire supérieur postérieur (V2). C'est au-dessus d'elle que le plancher du sinus maxillaire descend le plus bas : ses racines en sont toutes proches",
+   "memo": "La dent de six ans : la première dent définitive, et pour la vie",
+   "variantes": "Une petite cuspide supplémentaire, le tubercule de Carabelli, s'ajoute parfois sur sa face palatine",
+   "sources": [
+    "gray1918",
+    "statpearls-dents",
+    "kenhub-dents",
+    "wikipedia-fr-dent",
+    "statpearls-eruption",
+    "kenhub-molaires",
+    "statpearls-maxillaire"
+   ],
+   "divergences": null
+  },
+  {
+   "id": "premiere-premolaire-inferieure",
+   "resume": "La première prémolaire du bas : deux cuspides, dont une vestibulaire dominante, sur une seule racine ; elle fait la transition entre la canine et les dents qui broient.",
+   "sorte": "dent",
+   "articulations": [
+    {
+     "os": "mandibule",
+     "nom": "Articulation alvéolo-dentaire : la racine est tenue dans son alvéole par le ligament alvéolo-dentaire",
+     "type": "gomphose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Couronne",
+     "role": "Deux cuspides séparées par un sillon : la vestibulaire, la plus grosse, et la linguale, plus petite"
+    },
+    {
+     "nom": "Racine",
+     "role": "Unique, conique"
+    }
+   ],
+   "ossification": "Éruption vers 10-12 ans, à la place de la première molaire de lait",
+   "palpation": "Quatrième dent du bas à partir de la ligne médiane (dents 34 et 44)",
+   "clinique": "Innervée par le nerf alvéolaire inférieur (V3). Le foramen mentonnier s'ouvre en arrière de sa racine, entre les deux prémolaires ou sous la seconde : c'est le repère de l'anesthésie du nerf mentonnier",
+   "memo": "Entre canine et molaires : une grande pointe côté joue, une petite côté langue",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-dents",
+    "kenhub-dents",
+    "wikipedia-fr-dent",
+    "kenhub-premolaires",
+    "wikipedia-fr-premolaire",
+    "statpearls-mandibule"
+   ],
+   "divergences": "Âge d'éruption : 10-12 ans pour StatPearls, 10-11 ans pour Kenhub, 9e année pour Gray"
+  },
+  {
+   "id": "premiere-premolaire-superieure",
+   "resume": "La première prémolaire du haut : deux cuspides, juste derrière la canine ; c'est la prémolaire qui a le plus souvent deux racines.",
+   "sorte": "dent",
+   "articulations": [
+    {
+     "os": "maxillaire",
+     "nom": "Articulation alvéolo-dentaire : la racine est tenue dans son alvéole par le ligament alvéolo-dentaire",
+     "type": "gomphose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Couronne",
+     "role": "Deux cuspides séparées par un sillon : une vestibulaire, la plus grosse, et une palatine"
+    },
+    {
+     "nom": "Racines",
+     "role": "Le plus souvent deux, une vestibulaire et une palatine ; parfois une seule, creusée d'un sillon, rarement trois"
+    }
+   ],
+   "ossification": "Éruption vers 10-11 ans, à la place de la première molaire de lait",
+   "palpation": "Quatrième dent du haut à partir de la ligne médiane (dents 14 et 24)",
+   "clinique": "Innervée par le nerf alvéolaire supérieur moyen (V2), qui descend dans la paroi latérale du sinus maxillaire ; ce rameau n'existe pas toujours. Le sinus maxillaire commence au-dessus des prémolaires",
+   "memo": "Prémolaire, ou bicuspide : deux pointes, entre la canine qui déchire et les molaires qui broient",
+   "variantes": "Une, deux ou, rarement, trois racines",
+   "sources": [
+    "gray1918",
+    "statpearls-dents",
+    "kenhub-dents",
+    "wikipedia-fr-dent",
+    "kenhub-premolaires",
+    "wikipedia-fr-premolaire",
+    "statpearls-maxillaire"
+   ],
+   "divergences": "Âge d'éruption : 10-11 ans pour StatPearls et Kenhub, 9e année pour Gray"
+  },
+  {
+   "id": "processus-lateral-du-cartilage-septal",
+   "resume": "Plaque triangulaire de cartilage qui prolonge de chaque côté le cartilage septal, sous l'os nasal : c'est l'ancien « cartilage latéral du nez », flanc de la pyramide nasale.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "cartilage-septal-nasal",
+     "nom": "Continuité avec le bord antérieur du cartilage septal ; une fente étroite les sépare en bas",
+     "type": "continuité cartilagineuse"
+    },
+    {
+     "os": "os-nasaux",
+     "nom": "Attache du bord supérieur au bord inférieur de l'os nasal, qui le recouvre un peu",
+     "type": "union fibreuse"
+    },
+    {
+     "os": "maxillaire",
+     "nom": "Attache du bord supérieur au processus frontal du maxillaire",
+     "type": "union fibreuse"
+    },
+    {
+     "os": "grand-cartilage-alaire",
+     "nom": "Union du bord inférieur à la branche latérale du grand cartilage alaire, par du tissu fibreux",
+     "type": "union fibreuse"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Bord antérieur",
+     "role": "Épais : continu en haut avec le cartilage septal, il en est séparé en bas par une étroite fente"
+    },
+    {
+     "nom": "Bord supérieur",
+     "role": "Mince, glissé sous le bord inférieur de l'os nasal et fixé au processus frontal du maxillaire"
+    },
+    {
+     "nom": "Bord inférieur",
+     "role": "Uni au grand cartilage alaire ; avec la cloison et la tête du cornet nasal inférieur, il limite la valve nasale interne, le passage qui règle le débit d'air de chaque fosse nasale"
+    }
+   ],
+   "ossification": "Cartilage qui ne s'ossifie pas ; il reste d'une seule pièce avec le cartilage septal",
+   "palpation": "Sur le flanc du nez, juste sous l'os nasal : zone souple entre l'arête osseuse et l'aile",
+   "clinique": "Un traumatisme ou une chirurgie qui le désolidarise de la cloison peut faire s'affaisser la valve nasale interne : le nez se bouche. On la rouvre par des greffons d'écartement glissés entre lui et la cloison",
+   "memo": "En coupe, la cloison et ses deux processus latéraux dessinent un T : la barre soutient les flancs du nez",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-nez",
+    "statpearls-fractures-nez",
+    "wikipedia-fr-cartilage-septal"
+   ],
+   "divergences": "Gray et StatPearls en font un cartilage à part (cartilage latéral, « upper lateral ») ; la nomenclature actuelle le rattache au cartilage septal, dont il est le prolongement"
+  },
+  {
+   "id": "sphenoide",
+   "resume": "Os impair en forme de papillon, au centre de la base du crâne : il touche tous les autres os du crâne, loge l'hypophyse et livre passage au nerf optique et aux branches du nerf trijumeau.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "frontal",
+     "nom": "Suture sphéno-frontale",
+     "type": "suture"
+    },
+    {
+     "os": "parietal",
+     "nom": "Suture sphéno-pariétale, au ptérion",
+     "type": "suture"
+    },
+    {
+     "os": "temporal",
+     "nom": "Suture sphéno-squameuse et synchondrose sphéno-pétreuse",
+     "type": "suture et synchondrose"
+    },
+    {
+     "os": "occipital",
+     "nom": "Synchondrose sphéno-occipitale, ossifiée entre 18 et 25 ans",
+     "type": "synchondrose"
+    },
+    {
+     "os": "os-ethmoide",
+     "nom": "Suture sphéno-ethmoïdale",
+     "type": "suture"
+    },
+    {
+     "os": "zygomatique",
+     "nom": "Suture sphéno-zygomatique",
+     "type": "suture"
+    },
+    {
+     "os": "os-palatin",
+     "nom": "Union du corps et du processus ptérygoïde aux processus orbitaire, sphénoïdal et pyramidal du palatin",
+     "type": "suture"
+    },
+    {
+     "os": "vomer",
+     "nom": "Suture sphéno-vomérienne : le rostre s'emboîte entre les ailes du vomer",
+     "type": "schindylèse"
+    },
+    {
+     "os": "maxillaire",
+     "nom": "Contact sphéno-maxillaire, inconstant, avec la tubérosité du maxillaire",
+     "type": "suture"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps et sinus sphénoïdaux",
+     "role": "Bloc central creusé de deux sinus, ouverts dans le haut des fosses nasales ; sa face inférieure porte le rostre, emboîté dans le vomer"
+    },
+    {
+     "nom": "Selle turcique",
+     "role": "Loge de l'hypophyse (fosse hypophysaire), entre le tubercule de la selle en avant et le dos de la selle en arrière"
+    },
+    {
+     "nom": "Processus clinoïdes",
+     "role": "Antérieurs (sur les petites ailes) et postérieurs (aux angles du dos de la selle) : attaches de la tente du cervelet"
+    },
+    {
+     "nom": "Petites ailes",
+     "role": "Lames triangulaires qui séparent les fosses crâniennes antérieure et moyenne et forment l'arrière du toit de l'orbite ; leur racine borde le canal optique"
+    },
+    {
+     "nom": "Grandes ailes",
+     "role": "Plancher de la fosse crânienne moyenne, paroi latérale de l'orbite et fond de la fosse temporale ; le muscle temporal naît de leur face temporale, le ptérygoïdien latéral de leur face infra-temporale"
+    },
+    {
+     "nom": "Épine du sphénoïde",
+     "role": "Pointe postérieure de la grande aile : attaches du ligament sphéno-mandibulaire et du tenseur du voile du palais"
+    },
+    {
+     "nom": "Lame latérale du processus ptérygoïde",
+     "role": "Le ptérygoïdien latéral naît de sa face latérale, le ptérygoïdien médial de sa face médiale"
+    },
+    {
+     "nom": "Lame médiale du processus ptérygoïde",
+     "role": "Borde la choane ; son crochet, l'hamulus ptérygoïdien, sert de poulie au tendon du tenseur du voile du palais ; le constricteur supérieur du pharynx naît de son bord postérieur"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Canal optique",
+     "contenu": "Nerf optique (II) et artère ophtalmique"
+    },
+    {
+     "nom": "Fissure orbitaire supérieure",
+     "contenu": "Nerfs oculomoteur (III), trochléaire (IV) et abducens (VI) ; les trois branches du nerf ophtalmique (V1) : lacrymal, frontal, naso-ciliaire ; veine ophtalmique supérieure"
+    },
+    {
+     "nom": "Foramen rond",
+     "contenu": "Nerf maxillaire (V2)"
+    },
+    {
+     "nom": "Foramen ovale",
+     "contenu": "Nerf mandibulaire (V3), artère méningée accessoire, nerf petit pétreux, une veine émissaire"
+    },
+    {
+     "nom": "Foramen épineux",
+     "contenu": "Artère et veine méningées moyennes ; rameau méningé du nerf mandibulaire"
+    },
+    {
+     "nom": "Canal ptérygoïdien",
+     "contenu": "Nerf du canal ptérygoïdien (union du nerf grand pétreux et du nerf pétreux profond) et artère du même nom"
+    },
+    {
+     "nom": "Foramen déchiré (avec le temporal et l'occipital)",
+     "contenu": "Comblé de fibrocartilage chez le vivant ; l'artère carotide interne passe au-dessus de lui, et le nerf du canal ptérygoïdien traverse le fibrocartilage"
+    },
+    {
+     "nom": "Fissure orbitaire inférieure (avec le maxillaire)",
+     "contenu": "Nerf infra-orbitaire et nerf zygomatique, branches du nerf maxillaire (V2) ; vaisseaux infra-orbitaires"
+    },
+    {
+     "nom": "Sillon carotidien",
+     "contenu": "Artère carotide interne et sinus caverneux, sur le flanc du corps"
+    },
+    {
+     "nom": "Foramen veineux (inconstant)",
+     "contenu": "Une petite veine émissaire issue du sinus caverneux"
+    }
+   ],
+   "ossification": "Quatorze points (six pour la partie antérieure, huit pour la postérieure), surtout dans le cartilage ; les deux parties s'unissent au 7e-8e mois de la vie fœtale, les grandes ailes se soudent au corps la première année. Soudure à l'occipital entre 18 et 25 ans",
+   "palpation": null,
+   "clinique": "Les tumeurs de l'hypophyse s'opèrent par le nez, à travers le sinus sphénoïdal : cette voie trans-sphénoïdale évite d'ouvrir le crâne",
+   "memo": "Un papillon au centre du crâne : un corps, deux paires d'ailes et deux pattes (les processus ptérygoïdes)",
+   "variantes": "Sinus sphénoïdaux de taille très variable : minuscules à la naissance, ils n'atteignent leur volume qu'après la puberté. Le foramen veineux (de Vésale) est inconstant",
+   "sources": [
+    "gray1918",
+    "tma-sphenoide",
+    "kenhub-sphenoide",
+    "tma-foramens",
+    "statpearls-foramens",
+    "statpearls-orbite",
+    "wikipedia-fr-sphenoide"
+   ],
+   "divergences": "Gray compte douze os articulés (quatre impairs, quatre pairs) et signale un contact inconstant avec le maxillaire. Le nerf petit pétreux passe par le foramen ovale pour StatPearls et Kenhub, « parfois » seulement pour Gray"
+  }
+ ]
+}

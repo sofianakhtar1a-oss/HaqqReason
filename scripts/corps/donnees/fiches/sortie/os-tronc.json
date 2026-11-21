@@ -1,0 +1,3620 @@
+{
+ "sources": {
+  "gray1918": {
+   "titre": "Gray's Anatomy, 20e éd. (1918) : ostéologie du tronc et du bassin, repères de surface (Bartleby ; texte des sections également lu sur le miroir PubAnnotation)",
+   "url": "https://www.bartleby.com/lit-hub/anatomy-of-the-human-body/"
+  },
+  "statpearls-vertebres-thoraciques": {
+   "titre": "StatPearls — Anatomy, Back, Thoracic Vertebrae",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK459153/"
+  },
+  "statpearls-vertebres-lombaires": {
+   "titre": "StatPearls — Anatomy, Back, Lumbar Vertebrae",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK459278/"
+  },
+  "statpearls-dos": {
+   "titre": "StatPearls — Anatomy, Back",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK539746/"
+  },
+  "statpearls-sacrum": {
+   "titre": "StatPearls — Anatomy, Back, Sacral Vertebrae",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK551653/"
+  },
+  "statpearls-cotes": {
+   "titre": "StatPearls — Anatomy, Thorax, Ribs",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK538328/"
+  },
+  "statpearls-sternum": {
+   "titre": "StatPearls — Anatomy, Thorax, Sternum",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK541141/"
+  },
+  "statpearls-os-du-bassin": {
+   "titre": "StatPearls — Anatomy, Abdomen and Pelvis: Bones (Ilium, Ischium, and Pubis)",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK519524/"
+  },
+  "statpearls-pelvis": {
+   "titre": "StatPearls — Anatomy, Bony Pelvis and Lower Limb: Pelvis Bones",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK545204/"
+  },
+  "statpearls-articulations-du-bassin": {
+   "titre": "StatPearls — Anatomy, Bony Pelvis and Lower Limb: Pelvic Joints",
+   "url": "https://www.ncbi.nlm.nih.gov/books/NBK538523/"
+  },
+  "openstax-colonne": {
+   "titre": "OpenStax, Anatomy and Physiology 2e — 7.3 The Vertebral Column",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column"
+  },
+  "openstax-thorax": {
+   "titre": "OpenStax, Anatomy and Physiology 2e — 7.4 The Thoracic Cage",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+  },
+  "openstax-bassin": {
+   "titre": "OpenStax, Anatomy and Physiology 2e — 8.3 The Pelvic Girdle and Pelvis",
+   "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis"
+  },
+  "teachmeanatomy-cotes": {
+   "titre": "TeachMeAnatomy — The Ribs",
+   "url": "https://teachmeanatomy.info/thorax/bones/ribcage/"
+  },
+  "teachmeanatomy-sternum": {
+   "titre": "TeachMeAnatomy — The Sternum",
+   "url": "https://teachmeanatomy.info/thorax/bones/sternum/"
+  },
+  "teachmeanatomy-diaphragme": {
+   "titre": "TeachMeAnatomy — The Diaphragm",
+   "url": "https://teachmeanatomy.info/thorax/muscles/diaphragm/"
+  },
+  "teachmeanatomy-sacrum": {
+   "titre": "TeachMeAnatomy — The Sacrum",
+   "url": "https://teachmeanatomy.info/pelvis/bones/sacrum/"
+  },
+  "teachmeanatomy-coccyx": {
+   "titre": "TeachMeAnatomy — The Coccyx",
+   "url": "https://teachmeanatomy.info/pelvis/bones/coccyx/"
+  },
+  "teachmeanatomy-os-coxal": {
+   "titre": "TeachMeAnatomy — The Hip Bone",
+   "url": "https://teachmeanatomy.info/pelvis/bones/hip-bone/"
+  },
+  "kenhub-vertebres-thoraciques": {
+   "titre": "Kenhub — Thoracic vertebrae",
+   "url": "https://www.kenhub.com/en/library/anatomy/thoracic-vertebrae"
+  },
+  "kenhub-vertebres-lombaires": {
+   "titre": "Kenhub — Lumbar vertebrae",
+   "url": "https://www.kenhub.com/en/library/anatomy/lumbar-vertebrae"
+  },
+  "kenhub-sacrum": {
+   "titre": "Kenhub — Sacrum",
+   "url": "https://www.kenhub.com/en/library/anatomy/sacrum"
+  },
+  "kenhub-cotes": {
+   "titre": "Kenhub — Ribs",
+   "url": "https://www.kenhub.com/en/library/anatomy/the-ribs"
+  },
+  "kenhub-sternum": {
+   "titre": "Kenhub — Sternum",
+   "url": "https://www.kenhub.com/en/library/anatomy/sternum"
+  },
+  "kenhub-os-coxal": {
+   "titre": "Kenhub — Hip bone",
+   "url": "https://www.kenhub.com/en/library/anatomy/hip-bone"
+  },
+  "kenhub-articulations-costo-vertebrales": {
+   "titre": "Kenhub — Costovertebral joints",
+   "url": "https://www.kenhub.com/en/library/anatomy/costovertebral-joints"
+  },
+  "kenhub-articulations-sterno-costales": {
+   "titre": "Kenhub — Sternocostal joints",
+   "url": "https://www.kenhub.com/en/library/anatomy/sternocostal-joints"
+  },
+  "radiopaedia-plan-thoracique": {
+   "titre": "Radiopaedia — Thoracic plane",
+   "url": "https://radiopaedia.org/articles/thoracic-plane"
+  },
+  "wikipedia-fr-vertebre-thoracique": {
+   "titre": "Wikipédia (fr) — Vertèbre thoracique (nomenclature française)",
+   "url": "https://fr.wikipedia.org/wiki/Vertèbre_thoracique"
+  },
+  "wikipedia-fr-vertebre-lombaire": {
+   "titre": "Wikipédia (fr) — Vertèbre lombaire (nomenclature française)",
+   "url": "https://fr.wikipedia.org/wiki/Vertèbre_lombaire"
+  },
+  "wikipedia-fr-sacrum": {
+   "titre": "Wikipédia (fr) — Sacrum (nomenclature française)",
+   "url": "https://fr.wikipedia.org/wiki/Sacrum"
+  },
+  "wikipedia-fr-cote": {
+   "titre": "Wikipédia (fr) — Côte (os) (nomenclature française)",
+   "url": "https://fr.wikipedia.org/wiki/Côte_(os)"
+  },
+  "wikipedia-fr-sternum": {
+   "titre": "Wikipédia (fr) — Sternum (nomenclature française)",
+   "url": "https://fr.wikipedia.org/wiki/Sternum"
+  },
+  "wikipedia-fr-os-coxal": {
+   "titre": "Wikipédia (fr) — Os coxal (nomenclature française)",
+   "url": "https://fr.wikipedia.org/wiki/Os_coxal"
+  }
+ },
+ "fiches": [
+  {
+   "id": "sacrum",
+   "resume": "Cinq vertèbres soudées en un coin triangulaire, pointe en bas : la clé de voûte du bassin, enchâssée entre les deux os coxaux.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-l5",
+     "nom": "Articulation lombo-sacrale : disque L5-S1 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "os-coxal",
+     "nom": "Articulation sacro-iliaque, par la surface auriculaire (avec l'ilium, de chaque côté)",
+     "type": "plane en avant, syndesmose en arrière"
+    },
+    {
+     "os": "coccyx",
+     "nom": "Articulation sacro-coccygienne (apex et cornes sacrales)",
+     "type": "symphyse"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Base et promontoire",
+     "role": "Face supérieure de S1, qui porte le disque L5-S1 ; son bord antérieur saillant, le promontoire, marque l'entrée du petit bassin"
+    },
+    {
+     "nom": "Ailes du sacrum",
+     "role": "De part et d'autre de la base : le grand psoas et le tronc lombo-sacral les croisent, quelques fibres du muscle iliaque s'y attachent"
+    },
+    {
+     "nom": "Face pelvienne",
+     "role": "Concave ; quatre lignes transverses marquent la soudure des corps ; le piriforme naît en regard de S2 à S4, entre les foramens"
+    },
+    {
+     "nom": "Crête sacrale médiane",
+     "role": "Processus épineux soudés des trois ou quatre premières vertèbres sacrales ; attache du ligament supra-épineux"
+    },
+    {
+     "nom": "Crêtes sacrales médiales et latérales",
+     "role": "Processus articulaires et transverses soudés ; attache des ligaments sacro-iliaques postérieurs et, en bas, du ligament sacro-tubéral ; le multifide naît de la gouttière voisine"
+    },
+    {
+     "nom": "Surface auriculaire et tubérosité sacrale",
+     "role": "La surface, en forme d'oreille, s'articule avec l'ilium ; la tubérosité, rugueuse, juste en arrière, ancre les ligaments sacro-iliaques interosseux et postérieurs"
+    },
+    {
+     "nom": "Bord latéral, sous la surface auriculaire",
+     "role": "Attache des ligaments sacro-tubéral et sacro-épineux, du grand fessier en arrière et du muscle coccygien en avant"
+    },
+    {
+     "nom": "Cornes sacrales et apex",
+     "role": "Les cornes, processus articulaires inférieurs de S5, encadrent le hiatus sacral et rejoignent celles du coccyx ; l'apex porte la facette ovale destinée au coccyx"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramens sacraux antérieurs (quatre paires)",
+     "contenu": "Rameaux antérieurs des nerfs sacraux S1 à S4 ; branches des artères sacrales latérales"
+    },
+    {
+     "nom": "Foramens sacraux postérieurs (quatre paires)",
+     "contenu": "Rameaux postérieurs des nerfs sacraux S1 à S4"
+    },
+    {
+     "nom": "Canal sacral",
+     "contenu": "Racines sacrales de la queue de cheval et filum terminal ; le sac dural s'y termine en regard de S2"
+    },
+    {
+     "nom": "Hiatus sacral",
+     "contenu": "Ouverture inférieure du canal, par défaut de soudure des lames de S5 (parfois S4) : sortie des nerfs S5 ; porte d'entrée de l'anesthésie caudale"
+    }
+   ],
+   "ossification": "Trois points primaires par vertèbre sacrale, plus des points costaux pour les trois premières ; les pièces se soudent de bas en haut à partir de la puberté (les deux dernières vers 18 ans) et le sacrum est d'un seul bloc entre 25 et 30 ans",
+   "palpation": "La crête sacrale médiane se suit au fond du sillon médian jusqu'au processus épineux de S3, le plus saillant ; plus bas, les deux cornes encadrent le hiatus sacral",
+   "clinique": "Anesthésie caudale : l'aiguille franchit le hiatus sacral, repéré entre les deux cornes, pour gagner l'espace épidural. Chez le sujet âgé ostéoporotique, les fractures de fatigue des ailes passent souvent inaperçues sur les radiographies",
+   "memo": "Cinq vertèbres en une, quatre paires de foramens devant, quatre derrière : un coin enfoncé entre les deux os coxaux",
+   "variantes": "Vertèbre de transition lombo-sacrale, jusqu'à 12 % des personnes : L5 soudée au sacrum (sacralisation, six pièces) ou S1 restée libre (lombalisation, quatre pièces) ; canal sacral parfois ouvert en arrière sur une grande hauteur",
+   "sources": [
+    "gray1918",
+    "statpearls-sacrum",
+    "teachmeanatomy-sacrum",
+    "kenhub-sacrum",
+    "statpearls-articulations-du-bassin",
+    "wikipedia-fr-sacrum"
+   ],
+   "divergences": "Soudure des pièces : dès la puberté et finie entre 25 et 30 ans (Gray, StatPearls), seulement après 20 ans pour OpenStax. Articulation sacro-iliaque : simple synoviale pour Kenhub, synoviale en avant et syndesmose en arrière pour StatPearls"
+  },
+  {
+   "id": "vertebres-lombaires",
+   "resume": "Les cinq vertèbres des reins, L1 à L5 : les plus massives de la colonne, faites pour porter le tronc et le fléchir d'avant en arrière.",
+   "sorte": "groupe",
+   "articulations": [
+    {
+     "os": "vertebre-t12",
+     "nom": "Charnière thoraco-lombaire : disque T12-L1 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "sacrum",
+     "nom": "Charnière lombo-sacrale : disque L5-S1 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "Volumineux, en forme de rein, plus large que profond, sans fossette costale : il porte l'essentiel de la charge"
+    },
+    {
+     "nom": "Processus costiformes (transverses)",
+     "role": "Longs et grêles, homologues des côtes, placés en avant des processus articulaires ; attache du grand psoas et du carré des lombes"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Court, épais, quadrilatère, horizontal : l'aiguille de ponction lombaire passe entre deux d'entre eux"
+    },
+    {
+     "nom": "Processus articulaires",
+     "role": "Facettes supérieures concaves tournées en dedans, inférieures convexes tournées en dehors : elles guident la flexion-extension et bloquent la rotation"
+    },
+    {
+     "nom": "Processus mamillaire",
+     "role": "Tubercule du bord postérieur du processus articulaire supérieur ; attache du multifide"
+    },
+    {
+     "nom": "Processus accessoire",
+     "role": "Petite saillie à la racine du processus costiforme ; attache du longissimus et des intertransversaires"
+    },
+    {
+     "nom": "Pédicules, lames et isthme",
+     "role": "Pédicules courts et très solides, lames larges ; entre les processus articulaires supérieur et inférieur, l'isthme est le siège de la spondylolyse"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Triangulaire ; fin de la moelle spinale en L1-L2, puis racines de la queue de cheval dans le sac dural"
+    },
+    {
+     "nom": "Foramens intervertébraux",
+     "contenu": "Nerfs spinaux lombaires, chacun sous le pédicule de la vertèbre de même numéro (ancien nom : trous de conjugaison)"
+    }
+   ],
+   "ossification": "Trois points primaires par vertèbre (corps et deux demi-arcs), soudés entre 3 et 6 ans ; à la puberté, cinq points secondaires, plus deux pour les processus mamillaires ; soudure complète vers 25 ans",
+   "palpation": "Processus épineux au fond du sillon lombaire, creusé entre les deux masses musculaires ; leur emplacement est souvent marqué par de petites dépressions de la peau",
+   "clinique": "Ponction lombaire et rachianesthésie en L3-L4 ou L4-L5, sous la terminaison de la moelle. Les hernies discales siègent surtout en L4-L5 et L5-S1 et donnent une sciatique",
+   "memo": "Ni trou dans le processus transverse (cervicale), ni fossette costale (thoracique) : c'est une lombaire",
+   "variantes": "Quatre ou six vertèbres lombaires par sacralisation de L5 ou lombalisation de S1 ; côte lombaire sur L1 chez environ 2 % des personnes",
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-lombaires",
+    "kenhub-vertebres-lombaires",
+    "openstax-colonne",
+    "wikipedia-fr-vertebre-lombaire"
+   ],
+   "divergences": "Terminaison de la moelle chez l'adulte : L1 (StatPearls, Anatomy Back), environ L2 (StatPearls, Lumbar Vertebrae), L1-L2 pour la plupart des auteurs"
+  },
+  {
+   "id": "vertebres-thoraciques",
+   "resume": "Les douze vertèbres du dos, T1 à T12 : chacune porte une paire de côtes et forme avec elles l'arrière de la cage thoracique.",
+   "sorte": "groupe",
+   "articulations": [
+    {
+     "os": "c7",
+     "nom": "Charnière cervico-thoracique : disque C7-T1 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-l1",
+     "nom": "Charnière thoraco-lombaire : disque T12-L1 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "cotes-vraies",
+     "nom": "Articulations de la tête costale et costo-transversaires (côtes 1 à 7, vertèbres T1 à T7)",
+     "type": "plane"
+    },
+    {
+     "os": "fausses-cotes",
+     "nom": "Articulations de la tête costale et costo-transversaires (côtes 8 à 10, vertèbres T7 à T10)",
+     "type": "plane"
+    },
+    {
+     "os": "cotes-flottantes",
+     "nom": "Articulations de la tête costale seules (côtes 11 et 12, vertèbres T11 et T12)",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "En forme de cœur, un peu plus épais en arrière qu'en avant : l'empilement dessine la cyphose thoracique"
+    },
+    {
+     "nom": "Fossettes costales du corps",
+     "role": "Une demi-fossette en haut et une en bas de chaque côté : deux vertèbres voisines et leur disque reçoivent ensemble la tête d'une côte (fossette entière pour la 1re côte sur T1, fossette unique sur T10, T11 et T12)"
+    },
+    {
+     "nom": "Fossette costale du processus transverse",
+     "role": "À la face antérieure du sommet renflé du processus transverse, de T1 à T10 : elle reçoit le tubercule de la côte de même numéro"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Long, oblique en bas et en arrière ; de T5 à T8, chacun recouvre le suivant comme une tuile ; attache du trapèze, des rhomboïdes et du grand dorsal"
+    },
+    {
+     "nom": "Processus articulaires",
+     "role": "Facettes presque frontales (les supérieures regardent en arrière et un peu en dehors) : elles laissent tourner le tronc et freinent la flexion-extension"
+    },
+    {
+     "nom": "Lames",
+     "role": "Larges, épaisses, imbriquées de haut en bas : elles ferment le canal vertébral en arrière"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Petit et circulaire ; moelle spinale thoracique et ses méninges"
+    },
+    {
+     "nom": "Foramens intervertébraux",
+     "contenu": "Nerfs spinaux thoraciques, d'où naissent les nerfs intercostaux (ancien nom : trous de conjugaison)"
+    }
+   ],
+   "ossification": "Trois points primaires par vertèbre vers la 8e semaine de vie fœtale (les corps thoraciques bas s'ossifient les premiers) ; arc soudé au corps entre 3 et 6 ans ; cinq points secondaires à la puberté, soudés vers 25 ans",
+   "palpation": "Seuls les sommets des processus épineux se sentent, dans un sillon médian peu profond qui s'efface quand le dos s'arrondit ; on compte à partir de la saillie de C7 et T1",
+   "clinique": "Colonne raidie par les côtes : il faut un choc violent pour la fracturer, mais le canal, étroit, expose alors la moelle. Tassements ostéoporotiques et métastases y sont fréquents ; la charnière T11-L2 est la zone le plus souvent fracturée",
+   "memo": "Douze vertèbres, douze paires de côtes : une vertèbre qui porte des fossettes costales est une thoracique",
+   "variantes": "Onze ou treize paires de côtes déplacent la limite avec les lombaires ; une vertèbre de transition thoraco-lombaire se voit sur environ un scanner sur dix",
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-thoraciques",
+    "kenhub-vertebres-thoraciques",
+    "openstax-colonne",
+    "wikipedia-fr-vertebre-thoracique"
+   ],
+   "divergences": "T9 et T10 : Gray, Kenhub et TeachMeAnatomy donnent à T10 une fossette entière (la 10e côte ne touche alors que T10) ; StatPearls décrit comme habituelle une demi-fossette inférieure sur T9"
+  },
+  {
+   "id": "cotes-vraies",
+   "resume": "Les sept premières paires de côtes : chacune rejoint le sternum par son propre cartilage (côtes sternales).",
+   "sorte": "groupe",
+   "articulations": [
+    {
+     "os": "vertebres-thoraciques",
+     "nom": "Articulations de la tête costale et costo-transversaires, avec les vertèbres T1 à T7",
+     "type": "plane"
+    },
+    {
+     "os": "cartilages-costaux",
+     "nom": "Articulations costo-chondrales : chaque côte se prolonge par son cartilage, qui gagne le sternum",
+     "type": "synchondrose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête costale",
+     "role": "Deux surfaces articulaires séparées par une crête, pour deux vertèbres voisines et leur disque (une seule surface sur la 1re côte)"
+    },
+    {
+     "nom": "Col",
+     "role": "Segment aplati placé devant le processus transverse ; attache des ligaments costo-transversaires"
+    },
+    {
+     "nom": "Tubercule costal",
+     "role": "Une facette pour le processus transverse de la vertèbre de même numéro, une partie rugueuse pour le ligament costo-transversaire latéral"
+    },
+    {
+     "nom": "Angle costal",
+     "role": "Là où le corps change de direction et se tord sur lui-même ; attache des tendons de l'ilio-costal"
+    },
+    {
+     "nom": "Sillon costal",
+     "role": "Gouttière de la face interne, le long du bord inférieur : elle abrite le pédicule intercostal"
+    },
+    {
+     "nom": "Extrémité antérieure",
+     "role": "Cupule ovale où s'enchâsse le cartilage costal"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon costal",
+     "contenu": "De haut en bas : veine, artère et nerf intercostaux"
+    }
+   ],
+   "ossification": "Un point primaire près de l'angle à la fin du 2e mois de vie fœtale (6e et 7e côtes d'abord) ; épiphyses de la tête et du tubercule entre 16 et 20 ans, soudées vers 25 ans",
+   "palpation": "La 1re se cache sous la clavicule ; la 2e se trouve en glissant le doigt en dehors de l'angle sternal ; on compte les suivantes vers le bas",
+   "clinique": "Les côtes moyennes sont le plus souvent fracturées, juste en avant de l'angle, leur point faible. Trois côtes voisines ou plus, cassées chacune en deux endroits, détachent un volet thoracique qui s'enfonce à l'inspiration",
+   "memo": "Vraies parce qu'elles vont vraiment au sternum : sept paires, chacune avec son cartilage",
+   "variantes": "Côte cervicale surnuméraire, née de C7 au-dessus de la 1re côte : elle peut comprimer le plexus brachial et les vaisseaux subclaviers",
+   "sources": [
+    "gray1918",
+    "kenhub-cotes",
+    "teachmeanatomy-cotes",
+    "openstax-thorax",
+    "statpearls-cotes",
+    "wikipedia-fr-cote"
+   ]
+  },
+  {
+   "id": "sternum",
+   "resume": "L'os plat du milieu de la poitrine, en forme de dague : trois pièces superposées, manubrium, corps et processus xiphoïde.",
+   "sorte": "groupe",
+   "articulations": [
+    {
+     "os": "clavicule",
+     "nom": "Articulation sterno-claviculaire (incisure claviculaire du manubrium)",
+     "type": "en selle"
+    },
+    {
+     "os": "cartilages-costaux",
+     "nom": "Articulations sterno-costales, avec les cartilages des sept premières côtes",
+     "type": "synchondrose (1re), planes (2e à 7e)"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Incisure jugulaire",
+     "role": "Encoche du bord supérieur du manubrium, palpable à la base du cou entre les deux clavicules"
+    },
+    {
+     "nom": "Incisures claviculaires",
+     "role": "De part et d'autre de l'incisure jugulaire ; elles reçoivent l'extrémité médiale des clavicules"
+    },
+    {
+     "nom": "Angle sternal (angle de Louis)",
+     "role": "Crête transversale de la jonction manubrium-corps, en regard du 2e cartilage costal et du disque T4-T5 : point de départ du comptage des côtes"
+    },
+    {
+     "nom": "Incisures costales",
+     "role": "Sept de chaque côté : 1re sur le manubrium, 2e à cheval sur l'angle sternal, 3e à 6e sur le corps, 7e à la jonction du corps et du processus xiphoïde"
+    },
+    {
+     "nom": "Face antérieure",
+     "role": "Origine du grand pectoral de chaque côté ; chef sternal du sterno-cléido-mastoïdien sur le manubrium"
+    },
+    {
+     "nom": "Face postérieure",
+     "role": "Sterno-hyoïdien et sterno-thyroïdien sur le manubrium ; transverse du thorax au bas du corps et sur le processus xiphoïde"
+    },
+    {
+     "nom": "Processus xiphoïde",
+     "role": "Pointe inférieure, longtemps cartilagineuse ; attache du droit de l'abdomen, de la ligne blanche et du diaphragme"
+    }
+   ],
+   "ossification": "Six points : manubrium et 1re pièce du corps au 6e mois de vie fœtale, 2e et 3e pièces au 7e mois, 4e pendant la 1re année, processus xiphoïde entre 5 et 18 ans ; le corps est soudé à 25 ans, le processus xiphoïde s'y unit après 40 ans",
+   "palpation": "Sous-cutané sur toute sa hauteur : incisure jugulaire, ressaut de l'angle sternal, puis creux épigastrique où pointe le processus xiphoïde",
+   "clinique": "Sternotomie médiane : voie d'abord habituelle du cœur. Sa moelle rouge persiste toute la vie (ponction sternale). Une fracture, par choc direct ou décélération brutale, impose de rechercher une lésion du cœur ou des poumons",
+   "memo": "Une épée : manubrium veut dire poignée, le corps s'appelait « gladiolus » (petit glaive), xiphoïde signifie « en forme d'épée »",
+   "variantes": "Foramen sternal, trou rond du bas du corps né d'un défaut de fusion, chez environ une personne sur vingt (2,5 à 13,8 % selon les séries) ; processus xiphoïde bifide, perforé ou dévié ; fente sternale, très rare",
+   "sources": [
+    "gray1918",
+    "statpearls-sternum",
+    "teachmeanatomy-sternum",
+    "kenhub-sternum",
+    "openstax-thorax",
+    "wikipedia-fr-sternum"
+   ],
+   "divergences": "Niveau de l'angle sternal : disque T4-T5 (StatPearls, Wikipédia), bord inférieur de T4 (Kenhub, Radiopaedia). Jonction manubrio-sternale : symphyse, ou synchondrose devenant symphyse avec l'âge selon Wikipédia"
+  },
+  {
+   "id": "coccyx",
+   "resume": "La pointe de la colonne : quatre petites vertèbres rudimentaires soudées, dernier vestige de la queue, sous le sacrum.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "sacrum",
+     "nom": "Articulation sacro-coccygienne (base du coccyx et apex du sacrum, cornes reliées par un ligament)",
+     "type": "symphyse"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Base",
+     "role": "Facette ovale de la 1re pièce, unie à l'apex du sacrum par un mince disque fibro-cartilagineux"
+    },
+    {
+     "nom": "Cornes coccygiennes",
+     "role": "Montent vers les cornes sacrales, auxquelles un ligament les relie ; l'espace ainsi fermé livre passage au rameau postérieur du nerf S5"
+    },
+    {
+     "nom": "Processus transverses de la 1re pièce",
+     "role": "Rudimentaires ; attache du ligament sacro-coccygien latéral ; ils rejoignent parfois le bord du sacrum et ferment un orifice pour le rameau antérieur du nerf S5"
+    },
+    {
+     "nom": "Bords latéraux",
+     "role": "Attache des ligaments sacro-tubéral et sacro-épineux, du muscle coccygien en avant et du grand fessier en arrière"
+    },
+    {
+     "nom": "Face antérieure",
+     "role": "Ligament sacro-coccygien antérieur et élévateur de l'anus ; elle soutient la fin du rectum"
+    },
+    {
+     "nom": "Apex",
+     "role": "Arrondi ; attache du sphincter externe de l'anus et du ligament ano-coccygien"
+    }
+   ],
+   "ossification": "Un point par pièce : entre 1 et 4 ans pour la 1re, 5 et 10 ans pour la 2e, 10 et 15 ans pour la 3e, 14 et 20 ans pour la 4e ; les pièces se soudent ensuite, la 1re souvent après 25 ou 30 ans ; union tardive au sacrum, surtout chez la femme",
+   "palpation": "Au fond du pli interfessier, en arrière de l'anus, dans le prolongement de la crête sacrale",
+   "clinique": "Coccygodynie : douleur du coccyx en position assise, après une chute sur les fesses, un accouchement, ou par la pratique du vélo ou de l'aviron ; elle est dite chronique au-delà de trois mois. La fracture, due à une chute, se traite presque toujours sans opération",
+   "memo": "« Kokkyx », le coucou en grec : l'os a la forme de son bec",
+   "variantes": "Trois à cinq pièces ; la 1re reste souvent indépendante ; apex parfois bifide ou dévié sur le côté",
+   "sources": [
+    "gray1918",
+    "teachmeanatomy-coccyx",
+    "statpearls-articulations-du-bassin",
+    "openstax-colonne"
+   ]
+  },
+  {
+   "id": "ilium",
+   "resume": "La partie haute et évasée de l'os coxal : l'aile du bassin, dont la crête se sent sous la taille.",
+   "sorte": "groupe",
+   "articulations": [
+    {
+     "os": "sacrum",
+     "nom": "Articulation sacro-iliaque (surfaces auriculaires)",
+     "type": "plane en avant, syndesmose en arrière"
+    },
+    {
+     "os": "femur",
+     "nom": "Articulation coxo-fémorale : l'ilium forme le toit de l'acétabulum, un peu moins des deux cinquièmes de sa surface",
+     "type": "sphéroïde"
+    },
+    {
+     "os": "ischium",
+     "nom": "Soudure dans l'acétabulum (cartilage en Y jusqu'à la puberté)",
+     "type": "synchondrose puis synostose"
+    },
+    {
+     "os": "pubis",
+     "nom": "Soudure à l'éminence ilio-pubienne et dans l'acétabulum (cartilage en Y)",
+     "type": "synchondrose puis synostose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Crête iliaque",
+     "role": "Bord supérieur épais, tendu entre les épines iliaques antéro-supérieure et postéro-supérieure ; attache des muscles larges de l'abdomen, du carré des lombes, du grand dorsal et du fascia lata"
+    },
+    {
+     "nom": "Épine iliaque antéro-supérieure",
+     "role": "Attache du ligament inguinal et du sartorius ; le tenseur du fascia lata naît de son versant latéral"
+    },
+    {
+     "nom": "Épine iliaque antéro-inférieure",
+     "role": "Attache du tendon direct du droit fémoral et du ligament ilio-fémoral"
+    },
+    {
+     "nom": "Épines iliaques postérieures",
+     "role": "La supérieure ancre les ligaments sacro-iliaques postérieurs ; l'inférieure, au bout de la surface auriculaire, surplombe la grande incisure ischiatique"
+    },
+    {
+     "nom": "Fosse iliaque",
+     "role": "Face interne concave de l'aile ; origine du muscle iliaque"
+    },
+    {
+     "nom": "Face glutéale",
+     "role": "Trois lignes glutéales la partagent : grand fessier en arrière de la ligne postérieure, moyen fessier entre les lignes postérieure et antérieure, petit fessier entre les lignes antérieure et inférieure"
+    },
+    {
+     "nom": "Surface auriculaire et tubérosité iliaque",
+     "role": "La surface, en forme d'oreille, répond au sacrum ; la tubérosité, rugueuse, en arrière, ancre les ligaments sacro-iliaques interosseux et postérieurs"
+    },
+    {
+     "nom": "Ligne arquée",
+     "role": "Crête mousse qui sépare l'aile du corps de l'ilium et prend part au détroit supérieur du bassin"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Grande incisure ischiatique",
+     "contenu": "Fermée en grand foramen ischiatique par le ligament sacro-épineux : muscle piriforme, nerf sciatique, vaisseaux et nerfs glutéaux, nerf pudendal et vaisseaux pudendaux internes"
+    }
+   ],
+   "ossification": "Point primaire vers la 8e ou 9e semaine de vie fœtale, le premier de l'os coxal ; points secondaires de la crête et de l'épine antéro-inférieure à la puberté, soudés entre 20 et 25 ans ; union à l'ischium et au pubis dans l'acétabulum en fin d'adolescence",
+   "palpation": "La crête se suit sous la peau d'une épine à l'autre, mains sur les hanches ; l'épine antéro-supérieure pointe en avant, la postéro-supérieure se cache sous une fossette, au-dessus de la fesse",
+   "clinique": "La crête iliaque, superficielle, est le site habituel de la biopsie de moelle osseuse. La longueur réelle du membre inférieur se mesure de l'épine iliaque antéro-supérieure à la malléole médiale",
+   "memo": "Mettre les mains sur les hanches, c'est les poser sur les crêtes iliaques",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-os-coxal",
+    "teachmeanatomy-os-coxal",
+    "statpearls-os-du-bassin",
+    "openstax-bassin",
+    "wikipedia-fr-os-coxal"
+   ]
+  },
+  {
+   "id": "pubis",
+   "resume": "La partie avant et basse de l'os coxal : les deux pubis s'unissent sur la ligne médiane par la symphyse pubienne.",
+   "sorte": "groupe",
+   "articulations": [
+    {
+     "os": null,
+     "nom": "Symphyse pubienne, avec le pubis opposé (disque interpubien fibro-cartilagineux)",
+     "type": "symphyse"
+    },
+    {
+     "os": "femur",
+     "nom": "Articulation coxo-fémorale : le pubis forme le cinquième antéro-inférieur de l'acétabulum",
+     "type": "sphéroïde"
+    },
+    {
+     "os": "ilium",
+     "nom": "Soudure à l'éminence ilio-pubienne et dans l'acétabulum (cartilage en Y)",
+     "type": "synchondrose puis synostose"
+    },
+    {
+     "os": "ischium",
+     "nom": "Soudure des branches inférieures (branche ischio-pubienne, vers 7 ou 8 ans) et dans l'acétabulum",
+     "type": "synchondrose puis synostose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps et surface symphysaire",
+     "role": "Partie médiale aplatie ; sa surface ovale et striée s'unit au pubis opposé ; le long adducteur naît de sa face antérieure, juste sous la crête"
+    },
+    {
+     "nom": "Tubercule pubien",
+     "role": "Saillie à l'extrémité latérale de la crête ; attache médiale du ligament inguinal"
+    },
+    {
+     "nom": "Crête pubienne",
+     "role": "Bord supérieur du corps, entre symphyse et tubercule ; attache du droit de l'abdomen et du pyramidal"
+    },
+    {
+     "nom": "Pecten du pubis (ligne pectinéale)",
+     "role": "Arête de la branche supérieure, prolongée en arrière par la ligne arquée ; attache du ligament lacunaire et du tendon conjoint ; le pectiné naît de la surface située juste en avant"
+    },
+    {
+     "nom": "Branche supérieure",
+     "role": "Rejoint l'ilium à l'éminence ilio-pubienne et forme le haut du foramen obturé ; sa face inférieure porte le sillon obturateur"
+    },
+    {
+     "nom": "Branche inférieure",
+     "role": "Descend vers la branche de l'ischium (branche ischio-pubienne) ; origine du gracile, du court adducteur, d'une part du grand adducteur et de l'obturateur externe"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon obturateur (canal obturateur)",
+     "contenu": "Nerf et vaisseaux obturateurs, du bassin vers la loge médiale de la cuisse"
+    },
+    {
+     "nom": "Foramen obturé",
+     "contenu": "Bordé par le pubis et l'ischium ; fermé par la membrane obturatrice, sauf en haut, au canal obturateur"
+    }
+   ],
+   "ossification": "Point primaire dans la branche supérieure entre le 4e et le 5e mois de vie fœtale, le dernier de l'os coxal ; soudure à la branche de l'ischium vers 7 ou 8 ans ; point secondaire de la symphyse à la puberté, soudé entre 20 et 25 ans",
+   "palpation": "Le tubercule pubien se sent au bout médial du pli de l'aine ; la crête et la symphyse au bas du ventre, sur la ligne médiane",
+   "clinique": "Les fractures des branches du pubis sont fréquentes chez le sujet âgé après une simple chute : isolées, elles guérissent en 6 à 8 semaines sans opération, appui autorisé. La symphyse s'assouplit pendant la grossesse sous l'effet des hormones",
+   "memo": "Deux branches en V couché autour du foramen obturé ; les deux pubis se rejoignent devant, à la symphyse",
+   "variantes": "Selon le sexe : l'angle sous-pubien dépasse 80° chez la femme et reste inférieur à 70° chez l'homme",
+   "sources": [
+    "gray1918",
+    "kenhub-os-coxal",
+    "teachmeanatomy-os-coxal",
+    "statpearls-articulations-du-bassin",
+    "openstax-bassin",
+    "wikipedia-fr-os-coxal"
+   ]
+  },
+  {
+   "id": "cotes-flottantes",
+   "resume": "Les 11e et 12e paires de côtes : courtes, attachées seulement à la colonne, leur pointe reste libre dans la paroi de l'abdomen.",
+   "sorte": "groupe",
+   "articulations": [
+    {
+     "os": "vertebre-t11",
+     "nom": "Articulation de la tête de la 11e côte (fossette costale unique de T11)",
+     "type": "plane"
+    },
+    {
+     "os": "vertebre-t12",
+     "nom": "Articulation de la tête de la 12e côte (fossette costale unique de T12)",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête",
+     "role": "Une seule surface articulaire, assez grande, pour le corps de la vertèbre de même numéro"
+    },
+    {
+     "nom": "Absence de col et de tubercule",
+     "role": "Pas d'articulation costo-transversaire : la côte ne tient à la colonne que par sa tête"
+    },
+    {
+     "nom": "Corps",
+     "role": "Court et peu courbé ; angle discret et sillon costal peu profond sur la 11e, absents sur la 12e"
+    },
+    {
+     "nom": "Extrémité antérieure",
+     "role": "Effilée, coiffée d'un petit cartilage pointu qui se perd dans les muscles de la paroi abdominale"
+    },
+    {
+     "nom": "Attaches musculaires",
+     "role": "Diaphragme en dedans ; carré des lombes sur la 12e ; grand dorsal, dentelé postéro-inférieur et oblique externe en dehors"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon costal de la 11e côte",
+     "contenu": "Onzième pédicule intercostal ; sous la 12e côte, sans sillon, passent le nerf et les vaisseaux subcostaux"
+    }
+   ],
+   "ossification": "Deux points seulement, un pour le corps et un pour la tête : faute de tubercule, les épiphyses correspondantes manquent",
+   "palpation": "Leur pointe se sent dans le flanc, entre le rebord costal et la crête iliaque ; la 12e, parfois très courte, peut échapper au doigt",
+   "clinique": "Les fractures des côtes basses menacent le diaphragme et les organes qu'elles recouvrent, la rate surtout : il faut y penser devant un choc du flanc",
+   "memo": "Flottantes : amarrées à la colonne en arrière, libres en avant",
+   "variantes": "La 12e côte peut manquer (onze paires chez environ 3 % des sujets) ; une côte lombaire s'ajoute parfois sur L1",
+   "sources": [
+    "gray1918",
+    "kenhub-cotes",
+    "teachmeanatomy-cotes",
+    "statpearls-cotes",
+    "statpearls-vertebres-thoraciques"
+   ]
+  },
+  {
+   "id": "fausses-cotes",
+   "resume": "Les 8e, 9e et 10e paires : leur cartilage n'atteint pas le sternum et s'unit à celui de la côte du dessus pour former le rebord costal.",
+   "sorte": "groupe",
+   "articulations": [
+    {
+     "os": "vertebres-thoraciques",
+     "nom": "Articulations de la tête costale et costo-transversaires, avec les vertèbres T7 à T10",
+     "type": "plane"
+    },
+    {
+     "os": "cartilages-costaux",
+     "nom": "Articulations costo-chondrales : chaque côte se prolonge par son cartilage, fixé au cartilage sus-jacent",
+     "type": "synchondrose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête costale",
+     "role": "Deux surfaces articulaires sur la 8e et la 9e ; une seule sur la 10e, qui ne répond d'ordinaire qu'à T10"
+    },
+    {
+     "nom": "Tubercule costal",
+     "role": "Facette presque plane, tournée en bas et en arrière : la côte glisse sur le processus transverse et s'écarte en anse de seau"
+    },
+    {
+     "nom": "Angle costal",
+     "role": "Éloigné du tubercule ; attache de l'ilio-costal"
+    },
+    {
+     "nom": "Face interne",
+     "role": "Insertions costales du diaphragme et du transverse de l'abdomen"
+    },
+    {
+     "nom": "Face externe",
+     "role": "Oblique externe, grand dorsal et dentelé postéro-inférieur"
+    },
+    {
+     "nom": "Sillon costal",
+     "role": "Le long du bord inférieur : pédicule intercostal, qui gagne ensuite la paroi abdominale"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon costal",
+     "contenu": "De haut en bas : veine, artère et nerf intercostaux"
+    }
+   ],
+   "ossification": "Un point primaire près de l'angle à la fin du 2e mois de vie fœtale ; épiphyses de la tête et du tubercule entre 16 et 20 ans, soudées vers 25 ans",
+   "palpation": "On suit le rebord costal, formé par leurs cartilages, du creux épigastrique vers le flanc ; les côtes elles-mêmes se sentent sur le côté du thorax",
+   "clinique": "Côtes basses : leur mouvement en anse de seau élargit le thorax sur les côtés à l'inspiration. Leurs fractures peuvent déchirer le diaphragme et léser la rate à gauche",
+   "memo": "Fausses : elles n'arrivent au sternum que par procuration, accrochées au 7e cartilage",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cotes",
+    "teachmeanatomy-cotes",
+    "openstax-thorax",
+    "kenhub-articulations-costo-vertebrales"
+   ],
+   "divergences": "OpenStax compte parmi les fausses côtes les paires 8 à 12, côtes flottantes comprises ; l'usage français (repris ici) réserve le terme aux 8e, 9e et 10e"
+  },
+  {
+   "id": "ischium",
+   "resume": "La partie arrière et basse de l'os coxal : on s'assoit sur ses tubérosités.",
+   "sorte": "groupe",
+   "articulations": [
+    {
+     "os": "femur",
+     "nom": "Articulation coxo-fémorale : l'ischium forme le bas et l'arrière de l'acétabulum, un peu plus des deux cinquièmes",
+     "type": "sphéroïde"
+    },
+    {
+     "os": "ilium",
+     "nom": "Soudure dans l'acétabulum (cartilage en Y jusqu'à la puberté)",
+     "type": "synchondrose puis synostose"
+    },
+    {
+     "os": "pubis",
+     "nom": "Soudure des branches (branche ischio-pubienne, vers 7 ou 8 ans) et dans l'acétabulum",
+     "type": "synchondrose puis synostose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tubérosité ischiatique",
+     "role": "Origine des ischio-jambiers (semi-membraneux, semi-tendineux, chef long du biceps fémoral) et du grand adducteur ; attache du ligament sacro-tubéral ; appui de la position assise"
+    },
+    {
+     "nom": "Épine ischiatique",
+     "role": "Ligament sacro-épineux à son sommet, jumeau supérieur en dehors, muscle coccygien et élévateur de l'anus en dedans"
+    },
+    {
+     "nom": "Petite incisure ischiatique",
+     "role": "Sous l'épine ; poulie encroûtée de cartilage où se réfléchit le tendon de l'obturateur interne"
+    },
+    {
+     "nom": "Corps de l'ischium",
+     "role": "Forme le bas et l'arrière de l'acétabulum ; le carré fémoral naît de sa face externe, le long de la tubérosité"
+    },
+    {
+     "nom": "Branche de l'ischium",
+     "role": "Rejoint la branche inférieure du pubis sous le foramen obturé ; attache de l'obturateur externe, du grand adducteur et de l'ischio-caverneux"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Grande incisure ischiatique (au-dessus de l'épine)",
+     "contenu": "Fermée en grand foramen ischiatique par le ligament sacro-épineux : piriforme, nerf sciatique, nerf cutané postérieur de la cuisse, vaisseaux et nerfs glutéaux, pédicule pudendal"
+    },
+    {
+     "nom": "Petite incisure ischiatique",
+     "contenu": "Fermée en petit foramen ischiatique par les ligaments sacro-épineux et sacro-tubéral : tendon de l'obturateur interne et son nerf, pédicule pudendal qui regagne le périnée"
+    },
+    {
+     "nom": "Foramen obturé",
+     "contenu": "Bordé par l'ischium et le pubis ; nerf et vaisseaux obturateurs par le canal obturateur"
+    }
+   ],
+   "ossification": "Point primaire dans le corps au 3e mois de vie fœtale ; soudure à la branche inférieure du pubis vers 7 ou 8 ans ; point secondaire de la tubérosité à la puberté, soudé entre 20 et 25 ans",
+   "palpation": "Assis sur une chaise dure, on sent la tubérosité sous chaque fesse en se balançant d'un côté à l'autre",
+   "clinique": "Repère de l'accoucheur : la distance entre les deux épines ischiatiques est le passage le plus étroit de la filière pelvienne. Le nerf pudendal contourne l'épine, où on peut l'anesthésier",
+   "memo": "On ne s'assoit pas sur ses fesses mais sur ses ischions : les deux tubérosités ischiatiques",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-os-coxal",
+    "teachmeanatomy-os-coxal",
+    "statpearls-os-du-bassin",
+    "statpearls-pelvis",
+    "openstax-bassin"
+   ]
+  },
+  {
+   "id": "os-coxal",
+   "resume": "L'os de la hanche (ancien « os iliaque ») : ilium, ischium et pubis soudés autour de l'acétabulum, qui reçoit la tête du fémur.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "sacrum",
+     "nom": "Articulation sacro-iliaque (surface auriculaire de l'ilium)",
+     "type": "plane en avant, syndesmose en arrière"
+    },
+    {
+     "os": "femur",
+     "nom": "Articulation coxo-fémorale (acétabulum et tête du fémur)",
+     "type": "sphéroïde"
+    },
+    {
+     "os": null,
+     "nom": "Symphyse pubienne, avec l'os coxal opposé",
+     "type": "symphyse"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Acétabulum",
+     "role": "Cupule latérale où se rejoignent les trois pièces : surface semi-lunaire articulaire, fosse centrale pour le ligament de la tête fémorale, incisure inférieure fermée par le ligament transverse"
+    },
+    {
+     "nom": "Crête iliaque et épine iliaque antéro-supérieure",
+     "role": "Muscles de la paroi abdominale, fascia lata ; ligament inguinal, sartorius et tenseur du fascia lata sur l'épine"
+    },
+    {
+     "nom": "Épine iliaque antéro-inférieure",
+     "role": "Tendon direct du droit fémoral et ligament ilio-fémoral"
+    },
+    {
+     "nom": "Fosse iliaque et face glutéale",
+     "role": "Muscle iliaque en dedans ; grand, moyen et petit fessiers en dehors"
+    },
+    {
+     "nom": "Surface auriculaire et tubérosité iliaque",
+     "role": "La première répond au sacrum ; la seconde ancre les puissants ligaments sacro-iliaques"
+    },
+    {
+     "nom": "Épine ischiatique",
+     "role": "Sépare la grande et la petite incisure ischiatique ; attache du ligament sacro-épineux"
+    },
+    {
+     "nom": "Tubérosité ischiatique",
+     "role": "Ischio-jambiers, grand adducteur, ligament sacro-tubéral ; appui de la position assise"
+    },
+    {
+     "nom": "Tubercule pubien et pecten du pubis",
+     "role": "Ligament inguinal sur le tubercule ; le pecten prolonge la ligne arquée et borde le détroit supérieur du bassin"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen obturé",
+     "contenu": "Fermé par la membrane obturatrice ; en haut, le canal obturateur laisse passer le nerf et les vaisseaux obturateurs"
+    },
+    {
+     "nom": "Grande incisure ischiatique",
+     "contenu": "Grand foramen ischiatique : piriforme, nerf sciatique, vaisseaux et nerfs glutéaux supérieurs et inférieurs, nerf pudendal et vaisseaux pudendaux internes"
+    },
+    {
+     "nom": "Petite incisure ischiatique",
+     "contenu": "Petit foramen ischiatique : tendon de l'obturateur interne ; le pédicule pudendal y rentre vers le périnée"
+    }
+   ],
+   "ossification": "Huit points : trois primaires (ilium vers la 8e semaine de vie fœtale, ischium au 3e mois, pubis au 4e ou 5e mois) et cinq secondaires à la puberté ; branches ischio-pubiennes unies vers 7 ou 8 ans, cartilage en Y de l'acétabulum soudé entre 15 et 18 ans, os achevé entre 20 et 25 ans",
+   "palpation": "Crête iliaque et épines iliaques antéro-supérieure et postéro-supérieure sous la peau ; tubercule pubien au bas du ventre ; tubérosité ischiatique dans la fesse, en position assise",
+   "clinique": "Une fracture du bassin par choc violent saigne beaucoup, parfois plus de deux litres sans hémorragie visible : on pose d'emblée une ceinture pelvienne à hauteur des grands trochanters. C'est aussi l'os qui permet le mieux de déterminer le sexe d'un squelette",
+   "memo": "Trois os pour une hanche : l'ilium en haut, l'ischium en bas et en arrière, le pubis en avant, soudés en Y au fond de l'acétabulum",
+   "variantes": "Selon le sexe : chez la femme, grande incisure ischiatique plus ouverte, angle sous-pubien supérieur à 80° (moins de 70° chez l'homme), foramen obturé plus petit et triangulaire (ovale chez l'homme)",
+   "sources": [
+    "gray1918",
+    "kenhub-os-coxal",
+    "teachmeanatomy-os-coxal",
+    "openstax-bassin",
+    "statpearls-pelvis",
+    "wikipedia-fr-os-coxal"
+   ],
+   "divergences": "Sorte d'os : plat pour la tradition française (Wikipédia), irrégulier pour TeachMeAnatomy et Kenhub. Soudure du cartilage en Y : début vers 15 à 17 ans (TeachMeAnatomy), vers 18 ans (Gray)"
+  },
+  {
+   "id": "cartilages-costaux",
+   "resume": "Les baguettes de cartilage hyalin qui prolongent les côtes en avant : elles donnent au thorax son élasticité.",
+   "sorte": "groupe",
+   "articulations": [
+    {
+     "os": "cotes-vraies",
+     "nom": "Articulations costo-chondrales des côtes 1 à 7",
+     "type": "synchondrose"
+    },
+    {
+     "os": "fausses-cotes",
+     "nom": "Articulations costo-chondrales des côtes 8 à 10",
+     "type": "synchondrose"
+    },
+    {
+     "os": "sternum",
+     "nom": "Articulations sterno-costales des sept premiers cartilages",
+     "type": "synchondrose (1re), planes (2e à 7e)"
+    },
+    {
+     "os": "clavicule",
+     "nom": "Articulation sterno-claviculaire, à laquelle participe le bord supérieur du 1er cartilage",
+     "type": "en selle"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Extrémité latérale",
+     "role": "Enchâssée dans la cupule de l'extrémité antérieure de la côte, en continuité avec l'os"
+    },
+    {
+     "nom": "Extrémité médiale",
+     "role": "Continue avec le manubrium pour le 1er ; arrondie et logée dans une incisure du sternum du 2e au 7e ; effilée et unie au cartilage sus-jacent du 8e au 10e"
+    },
+    {
+     "nom": "Facettes interchondrales",
+     "role": "Talons des bords en regard, du 6e au 9e cartilage (parfois jusqu'au 10e) : petites articulations planes qui solidarisent le rebord costal"
+    },
+    {
+     "nom": "Face antérieure",
+     "role": "Grand pectoral sur les six ou sept premiers ; ligament costo-claviculaire et subclavier sur le 1er ; muscles larges de l'abdomen sur les suivants"
+    },
+    {
+     "nom": "Face postérieure",
+     "role": "Sterno-thyroïdien sur le 1er, transverse du thorax du 3e au 6e, diaphragme et transverse de l'abdomen sur les six ou sept derniers"
+    },
+    {
+     "nom": "Rebord costal",
+     "role": "Bord inférieur du thorax, dessiné par les cartilages 7 à 10 ; les deux rebords limitent l'angle infrasternal"
+    }
+   ],
+   "ossification": "Cartilage hyalin, jamais remplacé par de l'os ; il tend à se calcifier en surface chez le sujet âgé",
+   "palpation": "Le 2e se sent en dehors de l'angle sternal ; les 7e à 10e forment le rebord costal, que l'on suit du creux épigastrique jusqu'au flanc",
+   "clinique": "Dans le thorax en entonnoir (pectus excavatum), malformation la plus fréquente de la paroi thoracique, ils s'enfoncent avec le sternum ; dans le thorax en carène, ils le projettent en avant. Leur inflammation douloureuse est la costochondrite",
+   "memo": "Sept au sternum, trois au cartilage du dessus, deux libres : 7 + 3 + 2 = 12 paires",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-articulations-sterno-costales",
+    "statpearls-cotes",
+    "statpearls-sternum",
+    "openstax-thorax"
+   ]
+  },
+  {
+   "id": "corps-du-sternum",
+   "resume": "La pièce moyenne du sternum, la plus longue : une lame plate où s'attachent les cartilages des côtes 2 à 7.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "manubrium-sternal",
+     "nom": "Symphyse manubrio-sternale (angle sternal)",
+     "type": "symphyse"
+    },
+    {
+     "os": "processus-xiphoide",
+     "nom": "Synchondrose xipho-sternale",
+     "type": "synchondrose"
+    },
+    {
+     "os": "cartilage-costal-de-la-deuxieme-cote",
+     "nom": "2e articulation sterno-costale (demi-facette supérieure, complétée par celle du manubrium)",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-troisieme-cote",
+     "nom": "3e articulation sterno-costale",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-quatrieme-cote",
+     "nom": "4e articulation sterno-costale",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-cinquieme-cote",
+     "nom": "5e articulation sterno-costale",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-sixieme-cote",
+     "nom": "6e articulation sterno-costale",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-septieme-cote",
+     "nom": "7e articulation sterno-costale (demi-facette inférieure, complétée par celle du processus xiphoïde)",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Crêtes transversales",
+     "role": "Trois lignes de la face antérieure, en regard des 3e, 4e et 5e incisures costales : traces de la soudure des quatre sternèbres"
+    },
+    {
+     "nom": "Incisures costales",
+     "role": "Sur chaque bord : une demi-facette en haut (2e cartilage), quatre encoches (3e à 6e), une demi-facette en bas (7e) ; entre elles, de courts bords concaves répondent aux espaces intercostaux"
+    },
+    {
+     "nom": "Face antérieure",
+     "role": "Origine du chef sterno-costal du grand pectoral, de chaque côté de la ligne médiane"
+    },
+    {
+     "nom": "Face postérieure",
+     "role": "Légèrement concave ; origine du transverse du thorax à sa partie basse"
+    }
+   ],
+   "ossification": "Quatre sternèbres : la 1re s'ossifie au 6e mois de vie fœtale, les 2e et 3e au 7e mois, la 4e pendant la 1re année ; elles se soudent de bas en haut à partir de la puberté et ne font plus qu'un os à 25 ans",
+   "palpation": "Sous-cutané sur la ligne médiane, de l'angle sternal au creux épigastrique ; ses bords sont masqués par les grands pectoraux",
+   "clinique": "C'est lui que fend la sternotomie médiane et que traverse le trocart de ponction sternale. Un foramen sternal méconnu expose alors à blesser le cœur ou l'aorte. Le massage cardiaque peut le fracturer, surtout chez l'adulte",
+   "memo": "La lame de l'épée sternale (« gladiolus », le petit glaive), entre la poignée et la pointe",
+   "variantes": "Foramen sternal dans sa partie basse (2,5 à 13,8 % des personnes), par défaut de fusion des points d'ossification pairs ; corps plus court et plus mince chez la femme",
+   "sources": [
+    "gray1918",
+    "statpearls-sternum",
+    "teachmeanatomy-sternum",
+    "kenhub-sternum",
+    "kenhub-articulations-sterno-costales",
+    "wikipedia-fr-sternum"
+   ],
+   "divergences": "7e cartilage : à cheval sur le corps et le processus xiphoïde pour Gray et TeachMeAnatomy, sur le seul processus xiphoïde pour Kenhub, sur le corps pour OpenStax et StatPearls"
+  },
+  {
+   "id": "manubrium-sternal",
+   "resume": "La pièce supérieure du sternum, large et épaisse : elle porte les deux clavicules et les deux premiers cartilages costaux.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "clavicule",
+     "nom": "Articulation sterno-claviculaire (incisure claviculaire)",
+     "type": "en selle"
+    },
+    {
+     "os": "cartilage-costal-de-la-premiere-cote",
+     "nom": "1re articulation sterno-costale",
+     "type": "synchondrose"
+    },
+    {
+     "os": "cartilage-costal-de-la-deuxieme-cote",
+     "nom": "2e articulation sterno-costale (demi-facette inférieure du manubrium)",
+     "type": "plane"
+    },
+    {
+     "os": "corps-du-sternum",
+     "nom": "Symphyse manubrio-sternale (angle sternal)",
+     "type": "symphyse"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Incisure jugulaire",
+     "role": "Encoche médiane du bord supérieur, le plus épais ; attache du ligament interclaviculaire"
+    },
+    {
+     "nom": "Incisures claviculaires",
+     "role": "Surfaces ovales de part et d'autre de l'incisure jugulaire, pour l'extrémité sternale des clavicules"
+    },
+    {
+     "nom": "Incisure de la 1re côte",
+     "role": "Dépression du haut du bord latéral : le 1er cartilage costal s'y soude sans cavité articulaire"
+    },
+    {
+     "nom": "Face antérieure",
+     "role": "Origine du chef sternal du sterno-cléido-mastoïdien et du grand pectoral, de chaque côté"
+    },
+    {
+     "nom": "Face postérieure",
+     "role": "Origine du sterno-hyoïdien et du sterno-thyroïdien"
+    },
+    {
+     "nom": "Angle sternal (angle de Louis)",
+     "role": "Arête transversale de l'union au corps ; repère du 2e cartilage costal et du plan qui sépare médiastin supérieur et médiastin inférieur"
+    }
+   ],
+   "ossification": "Un point au 6e mois de vie fœtale, parfois deux ou davantage, superposés ; l'union osseuse avec le corps est rare, tardive et reste superficielle",
+   "palpation": "L'incisure jugulaire se sent à la base du cou, entre les saillies des clavicules ; en descendant sur la ligne médiane, le doigt bute sur le ressaut de l'angle sternal",
+   "clinique": "Le plan horizontal de l'angle sternal sépare médiastin supérieur et inférieur : il croise la concavité de la crosse de l'aorte, la bifurcation du tronc pulmonaire et la crosse de la veine azygos. Les fractures du sternum siègent le plus souvent à la jonction manubrio-sternale",
+   "memo": "Manubrium veut dire « poignée » : la poignée de l'épée sternale, tenue de chaque côté par une clavicule",
+   "variantes": "Deux petits points d'ossification épisternaux, inconstants, de part et d'autre de l'incisure jugulaire",
+   "sources": [
+    "gray1918",
+    "statpearls-sternum",
+    "teachmeanatomy-sternum",
+    "kenhub-sternum",
+    "radiopaedia-plan-thoracique"
+   ],
+   "divergences": "Niveau de l'angle sternal : disque T4-T5 (StatPearls), bord inférieur de T4 (Kenhub, Radiopaedia)"
+  },
+  {
+   "id": "processus-xiphoide",
+   "resume": "La pointe inférieure du sternum, petite et de forme variable, cartilagineuse chez le jeune, au creux de l'estomac.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "corps-du-sternum",
+     "nom": "Synchondrose xipho-sternale",
+     "type": "synchondrose"
+    },
+    {
+     "os": "cartilage-costal-de-la-septieme-cote",
+     "nom": "7e articulation sterno-costale (demi-facette de l'angle supéro-latéral, inconstante)",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Face antérieure",
+     "role": "Ligament costo-xiphoïdien antérieur et quelques fibres du droit de l'abdomen"
+    },
+    {
+     "nom": "Face postérieure",
+     "role": "Faisceaux sternaux du diaphragme, transverse du thorax, ligament costo-xiphoïdien postérieur"
+    },
+    {
+     "nom": "Bords latéraux",
+     "role": "Aponévroses des muscles larges de l'abdomen"
+    },
+    {
+     "nom": "Pointe",
+     "role": "Attache de la ligne blanche ; parfois bifide, perforée ou déviée"
+    },
+    {
+     "nom": "Demi-facette costale",
+     "role": "À l'angle supéro-latéral : elle complète, avec celle du corps du sternum, l'incisure du 7e cartilage costal"
+    }
+   ],
+   "ossification": "Un point entre 5 et 18 ans ; cartilagineux dans la jeunesse, il s'ossifie par le haut et ne se soude au corps du sternum qu'après 40 ans, parfois jamais",
+   "palpation": "Au fond du creux épigastrique, sous la jonction des deux rebords costaux ; sa pointe se projette vers T10",
+   "clinique": "Lors du massage cardiaque, des compressions mal placées peuvent le fracturer, avec un risque d'hémorragie interne grave : les mains s'appuient plus haut, sur le corps du sternum",
+   "memo": "Xiphoïde, « en forme d'épée » en grec : c'est la pointe du glaive sternal",
+   "variantes": "Forme très variable : large ou pointu, bifide (la variante la plus fréquente), perforé, recourbé ou dévié sur le côté",
+   "sources": [
+    "gray1918",
+    "statpearls-sternum",
+    "teachmeanatomy-sternum",
+    "kenhub-sternum",
+    "wikipedia-fr-sternum"
+   ],
+   "divergences": "Niveau : jonction xipho-sternale en regard de T9 (Wikipédia, Kenhub), pointe en T10 (TeachMeAnatomy). Ossification achevée vers 40 ans pour TeachMeAnatomy, entre 40 et 60 ans pour StatPearls"
+  },
+  {
+   "id": "vertebre-l1",
+   "resume": "La première lombaire, la plus petite des cinq : à la charnière du dos et des reins, en regard de la terminaison de la moelle spinale.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-t12",
+     "nom": "Disque T12-L1 et articulations zygapophysaires (charnière thoraco-lombaire)",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-l2",
+     "nom": "Disque L1-L2 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "Réniforme, le moins volumineux des corps lombaires ; les piliers du diaphragme s'y fixent en avant (le droit de L1 à L3, le gauche de L1 à L2)"
+    },
+    {
+     "nom": "Processus costiforme",
+     "role": "Le moins développé de la série lombaire, parfois remplacé par une côte lombaire ; attache du grand psoas et du carré des lombes"
+    },
+    {
+     "nom": "Processus articulaires supérieurs",
+     "role": "Facettes concaves tournées en dedans : elles emboîtent les processus inférieurs de T12, déjà de type lombaire"
+    },
+    {
+     "nom": "Processus mamillaire et processus accessoire",
+     "role": "Le premier, sur le processus articulaire supérieur, reçoit le multifide ; le second, à la racine du processus costiforme, le longissimus et les intertransversaires"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Épais, quadrilatère, horizontal ; avec celui de L2, il donne attache au muscle épineux du thorax"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Triangulaire ; cône médullaire, extrémité de la moelle spinale, entouré des premières racines de la queue de cheval"
+    },
+    {
+     "nom": "Foramen intervertébral L1-L2",
+     "contenu": "Nerf spinal L1, d'où naissent les nerfs ilio-hypogastrique et ilio-inguinal"
+    }
+   ],
+   "ossification": "Trois points primaires, cinq secondaires et deux pour les processus mamillaires ; le processus costiforme de L1 a parfois son propre point, qui peut rester libre et former une côte lombaire",
+   "palpation": "Son processus épineux suit celui de T12, en haut du sillon lombaire ; en avant, son corps se projette à la hauteur de l'extrémité antérieure du 9e cartilage costal",
+   "clinique": "Vertèbre de la charnière thoraco-lombaire (T11-L2), zone le plus souvent fracturée du rachis, entre un segment thoracique rigide et un segment lombaire mobile. Le plan transpylorique, qui passe par L1, croise le pylore",
+   "memo": "L1 : derrière, la moelle s'arrête (cône médullaire) ; devant, le pylore (plan transpylorique)",
+   "variantes": "Côte lombaire articulée avec L1 chez environ 2 % des personnes, à ne pas confondre avec un long processus costiforme",
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-lombaires",
+    "kenhub-vertebres-lombaires",
+    "teachmeanatomy-diaphragme",
+    "statpearls-dos",
+    "wikipedia-fr-vertebre-lombaire"
+   ],
+   "divergences": "Terminaison de la moelle chez l'adulte : L1 (StatPearls, Anatomy Back), environ L2 (StatPearls, Lumbar Vertebrae), L1-L2 (StatPearls, Sacral Vertebrae)"
+  },
+  {
+   "id": "vertebre-l2",
+   "resume": "La deuxième lombaire : au-dessous d'elle, le canal vertébral ne contient plus la moelle mais les racines de la queue de cheval.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-l1",
+     "nom": "Disque L1-L2 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-l3",
+     "nom": "Disque L2-L3 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "Réniforme, plus large que celui de L1 ; le pilier gauche du diaphragme s'arrête à son niveau, le droit descend jusqu'à L3"
+    },
+    {
+     "nom": "Processus costiforme",
+     "role": "Long, grêle, horizontal, implanté à l'union du pédicule et de la lame ; grand psoas en avant, carré des lombes en arrière"
+    },
+    {
+     "nom": "Processus articulaires",
+     "role": "Hauts et étroits (trapèze allongé vu de dos, comme en L1) ; facettes supérieures concaves regardant en dedans, inférieures convexes regardant en dehors"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Quadrilatère et horizontal ; dernier point d'attache du muscle épineux du thorax"
+    },
+    {
+     "nom": "Lames",
+     "role": "Plus hautes que larges, comme en L1 ; elles s'élargissent ensuite d'étage en étage"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Triangulaire ; racines de la queue de cheval dans le sac dural et, chez certains, pointe du cône médullaire"
+    },
+    {
+     "nom": "Foramen intervertébral L2-L3",
+     "contenu": "Nerf spinal L2, qui entre dans le plexus lombaire (nerfs génito-fémoral, cutané fémoral latéral, fémoral et obturateur)"
+    }
+   ],
+   "ossification": "Schéma lombaire : trois points primaires (corps et deux demi-arcs), cinq points secondaires à la puberté et deux points mamillaires ; os achevé vers 25 ans",
+   "palpation": "Son processus épineux se trouve deux étages au-dessus de celui de L4, lui-même situé sur la ligne des crêtes iliaques",
+   "clinique": "Limite de sécurité de la ponction lombaire : la moelle se termine vers L1-L2 chez l'adulte, plus bas (L2-L3) chez le nouveau-né ; on pique donc toujours au-dessous de L2, là où ne flottent plus que des racines",
+   "memo": "Sous L2, plus de moelle : seulement des racines, la « queue de cheval »",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-lombaires",
+    "kenhub-vertebres-lombaires",
+    "statpearls-dos",
+    "teachmeanatomy-diaphragme"
+   ]
+  },
+  {
+   "id": "vertebre-l3",
+   "resume": "La lombaire du milieu, celle qui sert de modèle : corps en rein, processus costiformes longs et horizontaux, épineuse carrée.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-l2",
+     "nom": "Disque L2-L3 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-l4",
+     "nom": "Disque L3-L4 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "Réniforme, à plateaux presque parallèles ; le pilier droit du diaphragme descend jusqu'à lui"
+    },
+    {
+     "nom": "Processus costiforme",
+     "role": "Long, grêle et horizontal, comme en L1 et L2 (ceux de L4 et L5 se relèvent) ; grand psoas et carré des lombes"
+    },
+    {
+     "nom": "Processus articulaires",
+     "role": "Facettes de contour carré vues de dos, presque sagittales : flexion et extension libres, rotation très limitée"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Épaisse lame quadrilatère horizontale ; il limite par en haut l'espace L3-L4, où l'on pique pour la ponction lombaire"
+    },
+    {
+     "nom": "Processus mamillaire et processus accessoire",
+     "role": "Attaches du multifide pour le premier, du longissimus et des intertransversaires pour le second"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Triangulaire ; racines de la queue de cheval, baignées de liquide cérébro-spinal dans le sac dural"
+    },
+    {
+     "nom": "Foramen intervertébral L3-L4",
+     "contenu": "Nerf spinal L3, qui participe aux nerfs fémoral et obturateur"
+    }
+   ],
+   "ossification": "Schéma lombaire : trois points primaires, soudure de l'arc au corps dans l'enfance, cinq points secondaires et deux points mamillaires à la puberté, soudés vers 25 ans",
+   "palpation": "Son processus épineux est juste au-dessus de celui de L4, qui se trouve sur la ligne des crêtes iliaques ; l'espace L3-L4 se sent entre les deux, dos arrondi",
+   "clinique": "L'espace L3-L4 est l'un des deux sites habituels de la ponction lombaire et de la rachianesthésie : l'aiguille entre dans le sac dural sans danger pour la moelle, les racines s'écartant devant elle",
+   "memo": "L3, le milieu des cinq : deux lombaires au-dessus, deux au-dessous",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-lombaires",
+    "kenhub-vertebres-lombaires",
+    "statpearls-dos",
+    "teachmeanatomy-diaphragme"
+   ]
+  },
+  {
+   "id": "vertebre-l4",
+   "resume": "La quatrième lombaire : son processus épineux est à la hauteur du sommet des crêtes iliaques, repère de la ponction lombaire.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-l3",
+     "nom": "Disque L3-L4 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-l5",
+     "nom": "Disque L4-L5 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "Massif ; le disque L4-L5, qu'il surmonte, est avec L5-S1 le siège le plus fréquent des hernies discales"
+    },
+    {
+     "nom": "Processus costiforme",
+     "role": "Incliné vers le haut et implanté plus en avant que sur les trois premières lombaires, sur le pédicule et l'arrière du corps"
+    },
+    {
+     "nom": "Processus articulaires",
+     "role": "Facettes de contour carré vues de dos ; les inférieures, convexes, s'engagent entre les processus supérieurs de L5"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Quadrilatère, horizontal, sur la ligne qui unit le sommet des deux crêtes iliaques"
+    },
+    {
+     "nom": "Lames",
+     "role": "Plus larges que hautes, à l'inverse de celles des lombaires hautes"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Triangulaire et large ; racines de la queue de cheval"
+    },
+    {
+     "nom": "Foramen intervertébral L4-L5",
+     "contenu": "Nerf spinal L4, partagé entre le plexus lombaire (nerfs fémoral et obturateur) et le tronc lombo-sacral"
+    }
+   ],
+   "ossification": "Schéma lombaire : trois points primaires, cinq secondaires et deux mamillaires ; aux lombaires basses, la soudure de l'arc au corps n'est complète que vers 6 ans",
+   "palpation": "Mains posées sur les crêtes iliaques, les pouces se rejoignent en arrière sur son processus épineux (ligne bicrête, dite de Tuffier)",
+   "clinique": "Ponction lombaire et rachianesthésie se font en L3-L4 ou L4-L5, de part et d'autre de son processus épineux. La hernie du disque L4-L5 est l'une des deux plus fréquentes et donne une sciatique",
+   "memo": "L4 : la ligne des crêtes iliaques ; l'aiguille de ponction passe juste au-dessus ou juste au-dessous",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-lombaires",
+    "kenhub-vertebres-lombaires",
+    "statpearls-os-du-bassin",
+    "statpearls-dos",
+    "openstax-colonne"
+   ],
+   "divergences": "Niveau de la ligne des crêtes iliaques : processus épineux de L4 (Gray), « près de L3-L4 » (StatPearls)"
+  },
+  {
+   "id": "vertebre-l5",
+   "resume": "La dernière lombaire, la plus massive : son corps en coin, plus haut en avant qu'en arrière, amorce l'angle entre la colonne et le sacrum.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-l4",
+     "nom": "Disque L4-L5 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "sacrum",
+     "nom": "Articulation lombo-sacrale : disque L5-S1 et articulations zygapophysaires avec S1",
+     "type": "symphyse et planes"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "Le plus volumineux de la colonne, cunéiforme : nettement plus haut en avant qu'en arrière, il crée l'angle lombo-sacral"
+    },
+    {
+     "nom": "Processus costiforme",
+     "role": "Court, épais, implanté sur le pédicule et sur le corps ; le ligament ilio-lombaire l'amarre à la crête iliaque et retient L5 sur la pente du sacrum"
+    },
+    {
+     "nom": "Processus articulaires inférieurs",
+     "role": "Très écartés, tournés presque vers l'avant : ils s'accrochent aux processus articulaires de S1 et empêchent L5 de glisser"
+    },
+    {
+     "nom": "Isthme (pars interarticularis)",
+     "role": "Pont osseux entre les processus articulaires supérieur et inférieur ; sa rupture est la spondylolyse"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Le plus petit des processus épineux lombaires"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Triangulaire, le plus large de la série lombaire ; racines sacrales de la queue de cheval"
+    },
+    {
+     "nom": "Foramen intervertébral L5-S1",
+     "contenu": "Nerf spinal L5, qui rejoint le tronc lombo-sacral"
+    }
+   ],
+   "ossification": "Schéma lombaire (trois points primaires, cinq secondaires, deux mamillaires) ; la soudure de l'arc au corps, la plus tardive de la colonne, n'est complète que vers 6 ans",
+   "palpation": "Son processus épineux, petit, se cherche au fond du creux médian, juste sous la ligne des crêtes iliaques et au-dessus de la crête sacrale",
+   "clinique": "Siège le plus fréquent de la spondylolyse et du spondylolisthésis : l'isthme rompu, le corps de L5 glisse en avant sur le sacrum. Le disque L5-S1 est, avec L4-L5, celui qui fait le plus souvent hernie",
+   "memo": "L5, un coin enfoncé entre la colonne et le sacrum : tout le poids du tronc passe par la charnière lombo-sacrale",
+   "variantes": "Sacralisation : le processus costiforme, élargi d'un côté ou des deux, se soude au sacrum, à l'ilium ou aux deux ; cette anomalie de transition peut être douloureuse (syndrome de Bertolotti)",
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-lombaires",
+    "kenhub-vertebres-lombaires",
+    "statpearls-pelvis",
+    "statpearls-articulations-du-bassin",
+    "wikipedia-fr-vertebre-lombaire"
+   ]
+  },
+  {
+   "id": "vertebre-t1",
+   "resume": "La première thoracique, à la charnière du cou et du dos : elle porte à elle seule la tête de la 1re côte, sur une fossette entière.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "c7",
+     "nom": "Disque C7-T1 et articulations zygapophysaires (charnière cervico-thoracique)",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-t2",
+     "nom": "Disque T1-T2 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "premiere-cote",
+     "nom": "Articulation de la tête de la 1re côte (fossette costale supérieure, entière) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "deuxieme-cote",
+     "nom": "Articulation de la tête de la 2e côte (demi-fossette costale inférieure)",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "Large transversalement comme celui d'une cervicale, avec une face supérieure concave, relevée sur les côtés (uncus)"
+    },
+    {
+     "nom": "Fossette costale supérieure",
+     "role": "Entière : elle reçoit à elle seule la tête de la 1re côte"
+    },
+    {
+     "nom": "Demi-fossette costale inférieure",
+     "role": "Reçoit la moitié supérieure de la tête de la 2e côte"
+    },
+    {
+     "nom": "Processus transverse",
+     "role": "Long ; sa fossette costale répond au tubercule de la 1re côte"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Épais, long, presque horizontal : aussi saillant que celui de C7, voire davantage ; attache du trapèze et du petit rhomboïde"
+    },
+    {
+     "nom": "Incisures vertébrales supérieures",
+     "role": "Plus profondes que sur les autres thoraciques ; elles bordent en bas le foramen de sortie du nerf C8"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Arrondi ; moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral C7-T1 (au-dessus)",
+     "contenu": "Nerf spinal C8, destiné au plexus brachial"
+    },
+    {
+     "nom": "Foramen intervertébral T1-T2 (au-dessous)",
+     "contenu": "Nerf spinal T1 : sa plus grande part monte vers le plexus brachial, le reste forme le 1er nerf intercostal"
+    }
+   ],
+   "ossification": "Trois points primaires (corps et deux demi-arcs) vers la 8e semaine de vie fœtale ; arc soudé au corps entre 3 et 6 ans ; cinq points secondaires à la puberté, soudés vers 25 ans",
+   "palpation": "C'est la seconde des deux saillies de la base de la nuque, juste sous C7 : de là se comptent les processus épineux thoraciques",
+   "clinique": "Pour numéroter les vertèbres sur une radiographie, T1 est celle qui porte la 1re côte ; une côte cervicale sur C7 fait décaler le compte d'un étage. Les nerfs C8 et T1, qui sortent au-dessus et au-dessous d'elle, commandent les petits muscles de la main",
+   "memo": "T1 : une fossette et demie de chaque côté ; toute la 1re côte et la moitié de la 2e",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-thoraciques",
+    "kenhub-vertebres-thoraciques",
+    "wikipedia-fr-vertebre-thoracique"
+   ]
+  },
+  {
+   "id": "vertebre-t10",
+   "resume": "La dixième thoracique : une seule fossette costale, entière, de chaque côté, pour la tête de la 10e côte.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-t9",
+     "nom": "Disque T9-T10 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-t11",
+     "nom": "Disque T10-T11 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "dixieme-cote",
+     "nom": "Articulation de la tête de la 10e côte (fossette costale unique, entière) et articulation costo-transversaire",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Fossette costale unique",
+     "role": "Entière, à cheval sur le corps et la face latérale du pédicule : elle reçoit toute la tête de la 10e côte ; pas de fossette inférieure"
+    },
+    {
+     "nom": "Processus transverse",
+     "role": "Court ; il porte la dernière fossette costale transversaire, pour le tubercule de la 10e côte, et l'ébauche des trois tubercules de T12"
+    },
+    {
+     "nom": "Corps vertébral",
+     "role": "Massif, proche du type lombaire"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Court, peu incliné"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Circulaire ; moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral T10-T11",
+     "contenu": "Nerf spinal T10, à l'origine du 10e nerf intercostal"
+    }
+   ],
+   "ossification": "Trois points primaires (corps et deux demi-arcs) vers la 8e semaine de vie fœtale ; arc soudé au corps entre 3 et 6 ans ; cinq points secondaires à la puberté, soudés vers 25 ans",
+   "palpation": "Processus épineux trois étages sous celui de T7, ou deux étages au-dessus de celui de T12, que l'on trouve en suivant la 12e côte",
+   "clinique": "Niveau du hiatus œsophagien du diaphragme, que traversent l'œsophage et les deux nerfs vagues. En avant, la pointe du processus xiphoïde se projette à sa hauteur",
+   "memo": "T10 : la 10e côte et rien qu'elle ; devant, l'œsophage passe le diaphragme",
+   "variantes": "Demi-fossette supérieure seulement, quand T9 porte une demi-fossette inférieure",
+   "sources": [
+    "gray1918",
+    "kenhub-vertebres-thoraciques",
+    "teachmeanatomy-cotes",
+    "teachmeanatomy-diaphragme",
+    "statpearls-vertebres-thoraciques",
+    "teachmeanatomy-sternum"
+   ],
+   "divergences": "Fossette entière et 10e côte articulée avec la seule T10 pour Gray, Kenhub et TeachMeAnatomy ; StatPearls décrit comme habituelle une 10e côte partagée entre T9 et T10"
+  },
+  {
+   "id": "vertebre-t11",
+   "resume": "La onzième thoracique : presque lombaire par son corps, avec une grande fossette pour la 11e côte et des processus transverses courts, sans facette.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-t10",
+     "nom": "Disque T10-T11 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-t12",
+     "nom": "Disque T11-T12 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "onzieme-cote",
+     "nom": "Articulation de la tête de la 11e côte (fossette costale unique) ; pas d'articulation costo-transversaire",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "Proche des corps lombaires par la forme et la taille"
+    },
+    {
+     "nom": "Fossette costale unique",
+     "role": "Grande, placée surtout sur le pédicule, épais et solide ; elle reçoit la tête de la 11e côte"
+    },
+    {
+     "nom": "Processus transverse",
+     "role": "Très court, tuberculé au sommet, sans fossette costale : la 11e côte n'a ni tubercule ni articulation costo-transversaire"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Court, presque horizontal"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Circulaire ; moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral T11-T12",
+     "contenu": "Nerf spinal T11, à l'origine du 11e et dernier nerf intercostal"
+    }
+   ],
+   "ossification": "Trois points primaires (corps et deux demi-arcs) vers la 8e semaine de vie fœtale ; arc soudé au corps entre 3 et 6 ans ; cinq points secondaires à la puberté, soudés vers 25 ans",
+   "palpation": "Processus épineux juste au-dessus de celui de T12, lui-même repéré en suivant la 12e côte vers la colonne",
+   "clinique": "Première vertèbre de la charnière thoraco-lombaire (T11-L2), zone le plus souvent fracturée du rachis : c'est là qu'un segment thoracique rigide rejoint un segment lombaire mobile",
+   "memo": "T11 et T12 : une seule fossette par côté, rien sur le processus transverse, des côtes flottantes",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-thoraciques",
+    "kenhub-vertebres-thoraciques",
+    "kenhub-articulations-costo-vertebrales"
+   ]
+  },
+  {
+   "id": "vertebre-t12",
+   "resume": "La douzième thoracique, vertèbre de transition : thoracique par le haut, lombaire par le bas, elle porte la 12e côte.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-t11",
+     "nom": "Disque T11-T12 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-l1",
+     "nom": "Disque T12-L1 et articulations zygapophysaires (charnière thoraco-lombaire)",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "douzieme-cote",
+     "nom": "Articulation de la tête de la 12e côte (fossette costale unique) ; pas d'articulation costo-transversaire",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Fossette costale unique",
+     "role": "Entière, sur le pédicule ; elle reçoit la tête de la 12e côte"
+    },
+    {
+     "nom": "Processus articulaires",
+     "role": "Les supérieurs, plans et frontaux, sont de type thoracique ; les inférieurs, convexes et tournés en dehors, de type lombaire : la rotation s'arrête ici"
+    },
+    {
+     "nom": "Processus transverse à trois tubercules",
+     "role": "Supérieur, inférieur et latéral : les deux premiers annoncent les processus mamillaire et accessoire des lombaires ; pas de fossette costale"
+    },
+    {
+     "nom": "Corps, lames et processus épineux",
+     "role": "Déjà lombaires : corps massif, lames courtes, épineuse courte, large et horizontale"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Moelle spinale, tout près de sa terminaison (cône médullaire en L1-L2)"
+    },
+    {
+     "nom": "Foramen intervertébral T12-L1",
+     "contenu": "Nerf spinal T12, à l'origine du nerf subcostal"
+    }
+   ],
+   "ossification": "Trois points primaires (ceux des corps thoraciques bas sont les premiers de la colonne, vers la 8e semaine de vie fœtale) ; arc soudé au corps entre 3 et 6 ans ; points secondaires à la puberté, soudés vers 25 ans",
+   "palpation": "On suit la 12e côte vers la colonne : elle mène à son processus épineux, court et horizontal comme celui d'une lombaire",
+   "clinique": "Niveau du hiatus aortique du diaphragme (aorte, conduit thoracique, veine azygos). Vertèbre charnière : le brusque changement d'orientation des facettes y concentre les contraintes, et T12 est avec L1 la vertèbre le plus souvent tassée ou fracturée",
+   "memo": "T12, la vertèbre à deux visages : facettes du haut thoraciques, facettes du bas lombaires",
+   "variantes": "Vertèbre de transition thoraco-lombaire (environ un scanner sur dix) : 12e côte très courte ou absente, ou côte supplémentaire sur L1",
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-thoraciques",
+    "kenhub-vertebres-thoraciques",
+    "teachmeanatomy-diaphragme",
+    "wikipedia-fr-vertebre-thoracique"
+   ]
+  },
+  {
+   "id": "vertebre-t2",
+   "resume": "La deuxième thoracique : la première à suivre le modèle commun, avec deux demi-fossettes costales de chaque côté du corps.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-t1",
+     "nom": "Disque T1-T2 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-t3",
+     "nom": "Disque T2-T3 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "deuxieme-cote",
+     "nom": "Articulation de la tête de la 2e côte (demi-fossette costale supérieure) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "troisieme-cote",
+     "nom": "Articulation de la tête de la 3e côte (demi-fossette costale inférieure)",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "Petit, encore proche d'un corps cervical par sa largeur ; un peu plus épais en arrière qu'en avant"
+    },
+    {
+     "nom": "Demi-fossette costale supérieure",
+     "role": "Forme, avec la demi-fossette inférieure de T1 et le disque T1-T2, la cavité qui reçoit la tête de la 2e côte"
+    },
+    {
+     "nom": "Demi-fossette costale inférieure",
+     "role": "Reçoit la partie haute de la tête de la 3e côte"
+    },
+    {
+     "nom": "Processus transverse",
+     "role": "Long et fort, dirigé en arrière et en dehors ; sa fossette costale s'articule avec le tubercule de la 2e côte"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Peu oblique ; attache du trapèze et du grand rhomboïde, dont l'origine s'étend de T2 à T5"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Circulaire ; moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral T2-T3",
+     "contenu": "Nerf spinal T2, à l'origine du 2e nerf intercostal"
+    }
+   ],
+   "ossification": "Trois points primaires (corps et deux demi-arcs) vers la 8e semaine de vie fœtale ; arc soudé au corps entre 3 et 6 ans ; cinq points secondaires à la puberté, soudés vers 25 ans",
+   "palpation": "Deuxième processus épineux sous la saillie de C7",
+   "clinique": "Repère des clichés du thorax : l'incisure jugulaire du sternum répond au disque T2-T3. Un tassement de T2 est inhabituel dans l'ostéoporose, qui frappe surtout le milieu du rachis thoracique et la charnière thoraco-lombaire : on y cherche d'abord une métastase ou un myélome",
+   "memo": "T2 : la première thoracique « comme les autres », avec ses deux demi-fossettes",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-thoraciques",
+    "kenhub-vertebres-thoraciques",
+    "statpearls-dos"
+   ]
+  },
+  {
+   "id": "vertebre-t3",
+   "resume": "La troisième thoracique : son processus épineux est à la hauteur de la racine de l'épine de la scapula.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-t2",
+     "nom": "Disque T2-T3 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-t4",
+     "nom": "Disque T3-T4 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "troisieme-cote",
+     "nom": "Articulation de la tête de la 3e côte (demi-fossette costale supérieure) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "quatrieme-cote",
+     "nom": "Articulation de la tête de la 4e côte (demi-fossette costale inférieure)",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "Prend la forme en cœur des thoraciques moyennes ; un peu plus épais en arrière qu'en avant"
+    },
+    {
+     "nom": "Demi-fossettes costales",
+     "role": "La supérieure reçoit, avec T2, la tête de la 3e côte ; l'inférieure, le haut de la tête de la 4e"
+    },
+    {
+     "nom": "Processus transverse",
+     "role": "Dirigé en arrière et en dehors ; sa fossette, concave, loge le tubercule convexe de la 3e côte"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Long, incliné vers le bas ; attache du trapèze et du grand rhomboïde"
+    },
+    {
+     "nom": "Processus articulaires",
+     "role": "Minces lamelles dressées dans un plan presque frontal : les facettes supérieures regardent en arrière, un peu en dehors et en haut"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Petit et circulaire ; moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral T3-T4",
+     "contenu": "Nerf spinal T3, à l'origine du 3e nerf intercostal"
+    }
+   ],
+   "ossification": "Trois points primaires (corps et deux demi-arcs) vers la 8e semaine de vie fœtale ; arc soudé au corps entre 3 et 6 ans ; cinq points secondaires à la puberté, soudés vers 25 ans",
+   "palpation": "Bras le long du corps, on suit l'épine de la scapula vers le dedans : sa racine est à la hauteur de ce processus épineux",
+   "clinique": "La racine de l'épine de la scapula se projette sur son processus épineux : c'est un repère pour compter les vertèbres thoraciques sur le dos, avant une anesthésie péridurale ou une infiltration. En arrière, la scissure oblique du poumon commence à peu près à ce niveau",
+   "memo": "T3 : l'épine de la scapula montre son processus épineux du doigt",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-thoraciques",
+    "kenhub-vertebres-thoraciques",
+    "statpearls-dos"
+   ]
+  },
+  {
+   "id": "vertebre-t4",
+   "resume": "La quatrième thoracique : son bord inférieur est dans le plan de l'angle sternal, qui partage le médiastin en deux étages.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-t3",
+     "nom": "Disque T3-T4 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-t5",
+     "nom": "Disque T4-T5 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "quatrieme-cote",
+     "nom": "Articulation de la tête de la 4e côte (demi-fossette costale supérieure) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "cinquieme-cote",
+     "nom": "Articulation de la tête de la 5e côte (demi-fossette costale inférieure)",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "En forme de cœur ; son plateau inférieur et le disque T4-T5 sont dans le plan horizontal de l'angle sternal"
+    },
+    {
+     "nom": "Demi-fossettes costales",
+     "role": "La supérieure reçoit, avec T3, la tête de la 4e côte ; l'inférieure, le haut de la tête de la 5e"
+    },
+    {
+     "nom": "Processus transverse",
+     "role": "Fort, renflé au sommet ; sa fossette costale s'articule avec le tubercule de la 4e côte"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Long, incliné vers le bas ; attache du trapèze et du grand rhomboïde"
+    },
+    {
+     "nom": "Lames",
+     "role": "Larges et épaisses, elles recouvrent celles de T5 comme des tuiles"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Petit et circulaire ; moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral T4-T5",
+     "contenu": "Nerf spinal T4, à l'origine du 4e nerf intercostal"
+    }
+   ],
+   "ossification": "Trois points primaires (corps et deux demi-arcs) vers la 8e semaine de vie fœtale ; arc soudé au corps entre 3 et 6 ans ; cinq points secondaires à la puberté, soudés vers 25 ans",
+   "palpation": "Processus épineux au fond du sillon médian du dos, un étage sous celui de T3 (racine de l'épine de la scapula)",
+   "clinique": "Le plan horizontal qui passe par l'angle sternal et le disque T4-T5 sépare médiastin supérieur et inférieur : il croise la concavité de la crosse de l'aorte, la bifurcation du tronc pulmonaire, la crosse de la veine azygos et le conduit thoracique, qui passe là de droite à gauche",
+   "memo": "T4-T5, c'est l'angle de Louis : 2e côte en avant, crosse de l'aorte au milieu, disque T4-T5 en arrière",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-thoraciques",
+    "kenhub-vertebres-thoraciques",
+    "radiopaedia-plan-thoracique",
+    "statpearls-sternum"
+   ],
+   "divergences": "Le plan de l'angle sternal passe par le bord inférieur de T4 (Radiopaedia, Kenhub) ou par le disque T4-T5 (StatPearls, Wikipédia)"
+  },
+  {
+   "id": "vertebre-t5",
+   "resume": "La cinquième thoracique : première des quatre vertèbres moyennes (T5 à T8), dont les longs processus épineux se recouvrent comme des tuiles.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-t4",
+     "nom": "Disque T4-T5 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-t6",
+     "nom": "Disque T5-T6 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "cinquieme-cote",
+     "nom": "Articulation de la tête de la 5e côte (demi-fossette costale supérieure) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "sixieme-cote",
+     "nom": "Articulation de la tête de la 6e côte (demi-fossette costale inférieure)",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "En forme de cœur, aussi profond que large ; son plateau supérieur porte le disque T4-T5, dans le plan de l'angle sternal"
+    },
+    {
+     "nom": "Demi-fossettes costales",
+     "role": "La supérieure reçoit, avec T4, la tête de la 5e côte ; l'inférieure, le haut de la tête de la 6e"
+    },
+    {
+     "nom": "Processus transverse",
+     "role": "Sa fossette costale s'articule avec le tubercule de la 5e côte"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Très long, très oblique, il recouvre celui de T6 ; limite inférieure de l'origine du grand rhomboïde"
+    },
+    {
+     "nom": "Processus articulaires",
+     "role": "Facettes planes, presque frontales : de T5 à T8, la rotation du tronc est la plus ample"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Petit et circulaire ; moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral T5-T6",
+     "contenu": "Nerf spinal T5, à l'origine du 5e nerf intercostal"
+    }
+   ],
+   "ossification": "Trois points primaires (corps et deux demi-arcs) vers la 8e semaine de vie fœtale ; arc soudé au corps entre 3 et 6 ans ; cinq points secondaires à la puberté, soudés vers 25 ans",
+   "palpation": "Processus épineux très incliné, difficile à isoler de ses voisins : on le compte à partir de T3 (épine de la scapula) ou de T7 (pointe de la scapula)",
+   "clinique": "La trachée se divise en deux bronches principales en regard de T4-T5, un peu plus bas en inspiration. Les vertèbres T5 à T8 sont les plus typiques du segment thoracique",
+   "memo": "T5 à T8 : les quatre épineuses en tuiles, les plus longues et les plus couchées",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-thoraciques",
+    "kenhub-vertebres-thoraciques",
+    "wikipedia-fr-vertebre-thoracique",
+    "statpearls-dos"
+   ]
+  },
+  {
+   "id": "vertebre-t6",
+   "resume": "La sixième thoracique : la vertèbre thoracique type, au milieu du segment le plus rigide de la colonne.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-t5",
+     "nom": "Disque T5-T6 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-t7",
+     "nom": "Disque T6-T7 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "sixieme-cote",
+     "nom": "Articulation de la tête de la 6e côte (demi-fossette costale supérieure) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "septieme-cote",
+     "nom": "Articulation de la tête de la 7e côte (demi-fossette costale inférieure)",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "En cœur, aussi profond que large, un peu plus épais en arrière ; l'aorte thoracique descendante longe son flanc gauche"
+    },
+    {
+     "nom": "Demi-fossettes costales",
+     "role": "La supérieure, près du pédicule, reçoit avec T5 la tête de la 6e côte ; l'inférieure, le haut de la tête de la 7e"
+    },
+    {
+     "nom": "Fossette costale du processus transverse",
+     "role": "Sur la face antérieure du sommet, renflé en massue ; concave, elle loge le tubercule de la 6e côte"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Long, triangulaire à la coupe, très oblique en bas et en arrière ; il recouvre celui de T7"
+    },
+    {
+     "nom": "Lames",
+     "role": "Larges, épaisses, imbriquées : elles ne laissent presque aucun intervalle entre les arcs vertébraux"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Petit et circulaire ; moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral T6-T7",
+     "contenu": "Nerf spinal T6, à l'origine du 6e nerf intercostal"
+    }
+   ],
+   "ossification": "Trois points primaires (corps et deux demi-arcs) vers la 8e semaine de vie fœtale ; arc soudé au corps entre 3 et 6 ans ; cinq points secondaires à la puberté, soudés vers 25 ans",
+   "palpation": "Seul le sommet du processus épineux se sent ; il se compte en remontant d'un étage depuis T7, repéré par la pointe de la scapula",
+   "clinique": "Segment le plus rigide du rachis et canal étroit : une fracture, qui suppose un choc violent, y menace d'emblée la moelle. L'aorte descendante, à gauche des corps de T3 à T7, est exposée lors de la pose de vis dans des pédicules étroits",
+   "memo": "Pour reconnaître une thoracique moyenne : corps en cœur, trou rond, épineuse en pente raide, fossettes pour les côtes",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-thoraciques",
+    "kenhub-vertebres-thoraciques",
+    "openstax-colonne"
+   ]
+  },
+  {
+   "id": "vertebre-t7",
+   "resume": "La septième thoracique : son processus épineux, à la hauteur de la pointe de la scapula, est le grand repère du milieu du dos.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-t6",
+     "nom": "Disque T6-T7 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-t8",
+     "nom": "Disque T7-T8 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "septieme-cote",
+     "nom": "Articulation de la tête de la 7e côte (demi-fossette costale supérieure) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "huitieme-cote",
+     "nom": "Articulation de la tête de la 8e côte (demi-fossette costale inférieure)",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "En cœur, plus volumineux que ceux des étages supérieurs"
+    },
+    {
+     "nom": "Demi-fossettes costales",
+     "role": "La supérieure reçoit, avec T6, la tête de la 7e côte, dernière vraie côte ; l'inférieure, le haut de la tête de la 8e, première fausse côte"
+    },
+    {
+     "nom": "Processus transverse",
+     "role": "Sa fossette costale, presque plane, répond au tubercule de la 7e côte, qui y glisse (mouvement en anse de seau des côtes basses)"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Long et très oblique ; le grand dorsal commence à s'y attacher, par-dessous le trapèze"
+    },
+    {
+     "nom": "Processus articulaires",
+     "role": "Facettes planes et presque frontales, comme sur toutes les thoraciques moyennes"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Petit et circulaire ; moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral T7-T8",
+     "contenu": "Nerf spinal T7, à l'origine du 7e nerf intercostal, premier des nerfs thoraco-abdominaux"
+    }
+   ],
+   "ossification": "Trois points primaires (corps et deux demi-arcs) vers la 8e semaine de vie fœtale ; arc soudé au corps entre 3 et 6 ans ; cinq points secondaires à la puberté, soudés vers 25 ans",
+   "palpation": "Bras le long du corps, la pointe (angle inférieur) de la scapula est à la hauteur de son processus épineux",
+   "clinique": "Bras le long du corps, la pointe de la scapula désigne son processus épineux : on compte les vertèbres à partir d'elle, par exemple avant une péridurale thoracique. Le milieu du rachis thoracique (T7-T8) est, avec la charnière thoraco-lombaire, le siège favori des tassements ostéoporotiques",
+   "memo": "T7 : la pointe de la scapula et la 7e côte, la dernière des vraies",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-thoraciques",
+    "kenhub-vertebres-thoraciques",
+    "kenhub-articulations-costo-vertebrales",
+    "statpearls-dos"
+   ]
+  },
+  {
+   "id": "vertebre-t8",
+   "resume": "La huitième thoracique : dernière des vertèbres moyennes aux épineuses en tuiles ; devant elle, la veine cave inférieure traverse le diaphragme.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-t7",
+     "nom": "Disque T7-T8 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-t9",
+     "nom": "Disque T8-T9 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "huitieme-cote",
+     "nom": "Articulation de la tête de la 8e côte (demi-fossette costale supérieure) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "neuvieme-cote",
+     "nom": "Articulation de la tête de la 9e côte (demi-fossette costale inférieure)",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "En cœur, de plus en plus massif vers le bas"
+    },
+    {
+     "nom": "Demi-fossettes costales",
+     "role": "La supérieure reçoit, avec T7, la tête de la 8e côte ; l'inférieure, le haut de la tête de la 9e"
+    },
+    {
+     "nom": "Processus transverse",
+     "role": "Plus court qu'aux étages supérieurs ; sa fossette, plane, répond au tubercule de la 8e côte"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Dernier des quatre processus longs et couchés qui se recouvrent (T5 à T8) ; au-dessous, ils raccourcissent et se redressent"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Petit et circulaire ; moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral T8-T9",
+     "contenu": "Nerf spinal T8, à l'origine du 8e nerf intercostal"
+    }
+   ],
+   "ossification": "Trois points primaires (corps et deux demi-arcs) vers la 8e semaine de vie fœtale ; arc soudé au corps entre 3 et 6 ans ; cinq points secondaires à la puberté, soudés vers 25 ans",
+   "palpation": "Processus épineux un étage sous celui de T7, lui-même repéré par la pointe de la scapula",
+   "clinique": "Niveau du foramen de la veine cave du diaphragme, le premier des trois orifices, avant l'œsophage (T10) et l'aorte (T12). L'artère d'Adamkiewicz, principale artère de la moelle basse, naît le plus souvent entre T8 et L1, à gauche",
+   "memo": "8-10-12 : veine cave en T8, œsophage en T10, aorte en T12",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-thoraciques",
+    "kenhub-vertebres-thoraciques",
+    "teachmeanatomy-diaphragme"
+   ]
+  },
+  {
+   "id": "vertebre-t9",
+   "resume": "La neuvième thoracique : vertèbre de passage, dont la demi-fossette inférieure manque souvent, la 10e côte ne s'articulant d'ordinaire qu'avec T10.",
+   "sorte": "irregulier",
+   "articulations": [
+    {
+     "os": "vertebre-t8",
+     "nom": "Disque T8-T9 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "vertebre-t10",
+     "nom": "Disque T9-T10 et articulations zygapophysaires",
+     "type": "symphyse et planes"
+    },
+    {
+     "os": "neuvieme-cote",
+     "nom": "Articulation de la tête de la 9e côte (demi-fossette costale supérieure) et articulation costo-transversaire",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Corps vertébral",
+     "role": "Massif, intermédiaire entre le cœur des thoraciques moyennes et le rein des lombaires"
+    },
+    {
+     "nom": "Demi-fossette costale supérieure",
+     "role": "Reçoit, avec T8 et le disque T8-T9, la tête de la 9e côte"
+    },
+    {
+     "nom": "Demi-fossette costale inférieure",
+     "role": "Inconstante : quand elle existe, elle reçoit le haut de la tête de la 10e côte"
+    },
+    {
+     "nom": "Processus transverse",
+     "role": "Court ; sa fossette, plane, répond au tubercule de la 9e côte"
+    },
+    {
+     "nom": "Processus épineux",
+     "role": "Plus court et moins incliné que ceux de T5 à T8 : l'obliquité diminue nettement de T9 à T12"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Foramen vertébral",
+     "contenu": "Circulaire ; moelle spinale et ses méninges"
+    },
+    {
+     "nom": "Foramen intervertébral T9-T10",
+     "contenu": "Nerf spinal T9, à l'origine du 9e nerf intercostal"
+    }
+   ],
+   "ossification": "Trois points primaires (corps et deux demi-arcs) vers la 8e semaine de vie fœtale ; arc soudé au corps entre 3 et 6 ans ; cinq points secondaires à la puberté, soudés vers 25 ans",
+   "palpation": "Processus épineux deux étages sous celui de T7, repéré par la pointe de la scapula",
+   "clinique": "En avant, la jonction xipho-sternale se projette à sa hauteur : elle marque le bas du corps du sternum et le fond du creux épigastrique",
+   "memo": "T9 : derrière le bas du sternum, là où commence le processus xiphoïde",
+   "variantes": "Chez certains sujets, T9 porte une demi-fossette inférieure et partage la tête de la 10e côte avec T10, qui ne garde alors qu'une demi-fossette supérieure",
+   "sources": [
+    "gray1918",
+    "statpearls-vertebres-thoraciques",
+    "kenhub-vertebres-thoraciques",
+    "wikipedia-fr-vertebre-thoracique"
+   ],
+   "divergences": "StatPearls donne la demi-fossette inférieure de T9 pour habituelle et son absence pour une variante ; Gray, Kenhub et Wikipédia disent l'inverse"
+  },
+  {
+   "id": "cartilage-costal-de-la-cinquieme-cote",
+   "resume": "Cartilage coudé du bas du sternum, attaché au corps en regard de sa dernière crête transversale.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "cinquieme-cote",
+     "nom": "Articulation costo-chondrale (le cartilage prolonge la côte)",
+     "type": "synchondrose"
+    },
+    {
+     "os": "corps-du-sternum",
+     "nom": "5e articulation sterno-costale",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Extrémité médiale",
+     "role": "Arrondie, logée dans la 5e incisure costale, en regard de la troisième et dernière crête transversale du corps du sternum"
+    },
+    {
+     "nom": "Coude",
+     "role": "Plus marqué que celui du 4e : la branche ascendante s'allonge de cartilage en cartilage"
+    },
+    {
+     "nom": "Face antérieure",
+     "role": "Grand pectoral près du sternum ; plus bas, insertion haute du droit de l'abdomen"
+    },
+    {
+     "nom": "Face postérieure",
+     "role": "Transverse du thorax"
+    }
+   ],
+   "ossification": "Cartilage hyalin, qui ne s'ossifie pas ; il se calcifie en surface chez le sujet âgé",
+   "palpation": "Troisième cartilage sous celui de l'angle sternal ; le 5e espace intercostal, au-dessous, se suit jusqu'à la ligne médio-claviculaire",
+   "clinique": "La chondrite costale, douleur de la jonction du cartilage avec le sternum que la pression reproduit, touche surtout les 2e à 5e cartilages : bénigne, elle imite une douleur cardiaque, qu'il faut écarter d'abord. Le droit de l'abdomen tire sur ce cartilage, avec le 6e et le 7e",
+   "memo": "5e, 6e, 7e : les trois cartilages où monte s'attacher le droit de l'abdomen",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-articulations-sterno-costales",
+    "teachmeanatomy-sternum",
+    "openstax-thorax"
+   ]
+  },
+  {
+   "id": "cartilage-costal-de-la-deuxieme-cote",
+   "resume": "Le cartilage de l'angle sternal : horizontal, il s'articule à la fois avec le manubrium et avec le corps du sternum.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "deuxieme-cote",
+     "nom": "Articulation costo-chondrale (le cartilage prolonge la côte)",
+     "type": "synchondrose"
+    },
+    {
+     "os": "manubrium-sternal",
+     "nom": "2e articulation sterno-costale (demi-facette du manubrium)",
+     "type": "plane"
+    },
+    {
+     "os": "corps-du-sternum",
+     "nom": "2e articulation sterno-costale (demi-facette du corps)",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Extrémité médiale",
+     "role": "Arrondie, reçue dans l'incisure formée par deux demi-facettes, l'une sur le manubrium, l'autre sur le corps du sternum"
+    },
+    {
+     "nom": "Ligament intra-articulaire",
+     "role": "Tendu de la pointe du cartilage à la jonction manubrio-sternale : il partage l'articulation en deux cavités synoviales, qui persistent jusque dans le grand âge"
+    },
+    {
+     "nom": "Face antérieure",
+     "role": "Grand pectoral, à l'extrémité sternale"
+    },
+    {
+     "nom": "Forme et direction",
+     "role": "Horizontal ; de même largeur d'un bout à l'autre, comme le 1er"
+    }
+   ],
+   "ossification": "Cartilage hyalin, qui ne s'ossifie pas ; il se calcifie en surface chez le sujet âgé",
+   "palpation": "Le plus facile à trouver : le doigt glisse en dehors de la crête de l'angle sternal et tombe sur lui",
+   "clinique": "Repère du comptage des côtes et des espaces intercostaux. Le 2e espace, juste au-dessous, est le lieu d'auscultation du foyer aortique à droite du sternum et du foyer pulmonaire à gauche",
+   "memo": "À cheval sur l'angle de Louis : une moitié sur le manubrium, une moitié sur le corps",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-articulations-sterno-costales",
+    "kenhub-sternum",
+    "teachmeanatomy-sternum",
+    "openstax-thorax"
+   ]
+  },
+  {
+   "id": "cartilage-costal-de-la-dixieme-cote",
+   "resume": "Le dernier cartilage du rebord costal, court et effilé : il se fixe au 9e, souvent par de simples fibres.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "dixieme-cote",
+     "nom": "Articulation costo-chondrale (le cartilage prolonge la côte)",
+     "type": "synchondrose"
+    },
+    {
+     "os": "cartilage-costal-de-la-neuvieme-cote",
+     "nom": "Articulation interchondrale (bord supérieur du 10e), souvent réduite à des fibres ; sa pointe s'unit au 9e cartilage",
+     "type": "plane ou fibreuse"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Extrémité médiale",
+     "role": "Pointue, unie au bord inférieur du 9e cartilage"
+    },
+    {
+     "nom": "Bord supérieur",
+     "role": "Petite saillie articulaire pour le talon du 9e cartilage"
+    },
+    {
+     "nom": "Face antérieure",
+     "role": "Recouverte par les muscles larges de l'abdomen"
+    },
+    {
+     "nom": "Face postérieure",
+     "role": "Diaphragme et transverse de l'abdomen"
+    }
+   ],
+   "ossification": "Cartilage hyalin, qui ne s'ossifie pas ; il se calcifie en surface chez le sujet âgé",
+   "palpation": "Au point le plus bas du rebord costal, sur le côté du ventre",
+   "clinique": "Le point le plus bas du rebord costal, sur ce cartilage, donne le plan subcostal, qui passe par L3. Mal tenu au cartilage du dessus, il peut glisser et irriter le nerf intercostal (syndrome de la côte glissante) : tirer le rebord costal vers l'avant, avec les doigts en crochet, reproduit la douleur",
+   "memo": "Le 10e ferme le rebord costal : après lui, les cartilages des 11e et 12e côtes restent libres",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "openstax-thorax",
+    "statpearls-cotes",
+    "teachmeanatomy-diaphragme"
+   ]
+  },
+  {
+   "id": "cartilage-costal-de-la-huitieme-cote",
+   "resume": "Premier cartilage qui n'atteint pas le sternum : sa pointe effilée se fixe au bord inférieur du 7e.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "huitieme-cote",
+     "nom": "Articulation costo-chondrale (le cartilage prolonge la côte)",
+     "type": "synchondrose"
+    },
+    {
+     "os": "cartilage-costal-de-la-septieme-cote",
+     "nom": "Articulation interchondrale (bord supérieur du 8e) ; sa pointe s'unit au 7e cartilage",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-neuvieme-cote",
+     "nom": "Articulation interchondrale (bord inférieur du 8e)",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Extrémité médiale",
+     "role": "Pointue, unie au bord inférieur du 7e cartilage"
+    },
+    {
+     "nom": "Bords",
+     "role": "Élargis là où ils se touchent : facettes interchondrales avec le 7e en haut et le 9e en bas"
+    },
+    {
+     "nom": "Face antérieure",
+     "role": "Recouverte par les muscles larges de l'abdomen, qui s'y attachent en partie"
+    },
+    {
+     "nom": "Face postérieure",
+     "role": "Diaphragme et transverse de l'abdomen"
+    }
+   ],
+   "ossification": "Cartilage hyalin, qui ne s'ossifie pas ; il se calcifie en surface chez le sujet âgé",
+   "palpation": "Sur le rebord costal, juste en dehors et au-dessous du 7e cartilage",
+   "clinique": "Il n'atteint pas le sternum et s'unit au 7e par du tissu fibreux. Si cette union se relâche, sa pointe glisse sous le cartilage du dessus et irrite le nerf intercostal : c'est le syndrome de la côte glissante, qui touche les 8e à 10e cartilages ; la manœuvre du crochet sur le rebord costal reproduit la douleur",
+   "memo": "Le 8e s'arrête en route : il s'accroche au 7e, comme le 9e au 8e et le 10e au 9e",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "openstax-thorax",
+    "statpearls-cotes",
+    "teachmeanatomy-diaphragme"
+   ]
+  },
+  {
+   "id": "cartilage-costal-de-la-neuvieme-cote",
+   "resume": "Cartilage du rebord costal dont la pointe sert de repère au plan transpylorique, à la hauteur de L1.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "neuvieme-cote",
+     "nom": "Articulation costo-chondrale (le cartilage prolonge la côte)",
+     "type": "synchondrose"
+    },
+    {
+     "os": "cartilage-costal-de-la-huitieme-cote",
+     "nom": "Articulation interchondrale (bord supérieur du 9e) ; sa pointe s'unit au 8e cartilage",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-dixieme-cote",
+     "nom": "Articulation interchondrale (bord inférieur du 9e), souvent réduite à des fibres",
+     "type": "plane ou fibreuse"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Extrémité médiale",
+     "role": "Pointue, unie au bord inférieur du 8e cartilage"
+    },
+    {
+     "nom": "Bords",
+     "role": "Facette interchondrale avec le 8e en haut ; talon du bord inférieur pour le 10e"
+    },
+    {
+     "nom": "Face antérieure",
+     "role": "Recouverte par les muscles larges de l'abdomen"
+    },
+    {
+     "nom": "Face postérieure",
+     "role": "Diaphragme et transverse de l'abdomen"
+    }
+   ],
+   "ossification": "Cartilage hyalin, qui ne s'ossifie pas ; il se calcifie en surface chez le sujet âgé",
+   "palpation": "Sa pointe se sent sur le rebord costal, là où le croise le bord latéral du muscle droit de l'abdomen",
+   "clinique": "À droite, la pointe de ce cartilage, là où le bord latéral du droit de l'abdomen croise le rebord costal, marque le fond de la vésicule biliaire : on y cherche le signe de Murphy. Le plan transpylorique qui la traverse passe aussi par L1, le pylore, le col du pancréas et les hiles des reins",
+   "memo": "9e cartilage, plan transpylorique, L1 : trois noms pour un même niveau",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-vertebres-lombaires",
+    "openstax-thorax",
+    "teachmeanatomy-diaphragme"
+   ]
+  },
+  {
+   "id": "cartilage-costal-de-la-premiere-cote",
+   "resume": "Le plus court et le plus large des cartilages costaux : il soude la 1re côte au manubrium, sans cavité articulaire.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "premiere-cote",
+     "nom": "Articulation costo-chondrale (le cartilage prolonge la côte)",
+     "type": "synchondrose"
+    },
+    {
+     "os": "manubrium-sternal",
+     "nom": "1re articulation sterno-costale",
+     "type": "synchondrose"
+    },
+    {
+     "os": "clavicule",
+     "nom": "Articulation sterno-claviculaire, dont il complète en bas la surface sternale",
+     "type": "en selle"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Extrémité médiale",
+     "role": "En continuité directe avec le manubrium : seule jonction sterno-costale sans cavité synoviale, presque immobile"
+    },
+    {
+     "nom": "Face antérieure",
+     "role": "Attache du ligament costo-claviculaire et origine du muscle subclavier ; grand pectoral près du sternum"
+    },
+    {
+     "nom": "Face postérieure",
+     "role": "Origine du sterno-thyroïdien"
+    },
+    {
+     "nom": "Forme et direction",
+     "role": "Court, de même largeur d'un bout à l'autre, légèrement descendant vers le sternum"
+    }
+   ],
+   "ossification": "Cartilage hyalin, qui ne s'ossifie pas ; il se calcifie en surface chez le sujet âgé",
+   "palpation": "Impalpable : il est caché derrière l'extrémité médiale de la clavicule",
+   "clinique": "Sa fixité solidarise la 1re côte et le manubrium : à l'inspiration, ils se soulèvent d'un seul bloc et entraînent le sternum en haut et en avant (mouvement en bras de pompe)",
+   "memo": "Le seul cartilage soudé au sternum sans articulation mobile : une synchondrose",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-articulations-sterno-costales",
+    "openstax-thorax",
+    "statpearls-cotes"
+   ]
+  },
+  {
+   "id": "cartilage-costal-de-la-quatrieme-cote",
+   "resume": "Cartilage coudé du milieu du sternum : il suit d'abord la direction de la côte, vers le bas, puis remonte vers le corps du sternum.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "quatrieme-cote",
+     "nom": "Articulation costo-chondrale (le cartilage prolonge la côte)",
+     "type": "synchondrose"
+    },
+    {
+     "os": "corps-du-sternum",
+     "nom": "4e articulation sterno-costale",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Extrémité médiale",
+     "role": "Arrondie, logée dans la 4e incisure costale, en regard de la deuxième crête transversale du corps du sternum"
+    },
+    {
+     "nom": "Coude",
+     "role": "Premier cartilage nettement angulaire : il prolonge un instant la côte, puis se redresse vers le sternum"
+    },
+    {
+     "nom": "Face antérieure",
+     "role": "Grand pectoral, à l'extrémité sternale"
+    },
+    {
+     "nom": "Face postérieure",
+     "role": "Transverse du thorax"
+    }
+   ],
+   "ossification": "Cartilage hyalin, qui ne s'ossifie pas ; il se calcifie en surface chez le sujet âgé",
+   "palpation": "Deuxième cartilage sous celui de l'angle sternal ; chez l'homme, le mamelon est un peu en dehors de lui, en regard du 4e espace",
+   "clinique": "À gauche, à hauteur de ce cartilage, la plèvre et le poumon s'écartent du sternum (incisure cardiaque) : le péricarde touche alors la paroi, ce qui donne la matité cardiaque à la percussion. Comme ceux du haut du thorax, il se calcifie souvent avec l'âge, image à ne pas confondre avec un nodule pulmonaire",
+   "memo": "À partir du 4e, les cartilages font un coude : ils descendent avec la côte, puis remontent au sternum",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-articulations-sterno-costales",
+    "teachmeanatomy-sternum",
+    "openstax-thorax"
+   ]
+  },
+  {
+   "id": "cartilage-costal-de-la-septieme-cote",
+   "resume": "Le plus long des cartilages costaux et le dernier à toucher le sternum, à la jonction du corps et du processus xiphoïde.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "septieme-cote",
+     "nom": "Articulation costo-chondrale (le cartilage prolonge la côte)",
+     "type": "synchondrose"
+    },
+    {
+     "os": "corps-du-sternum",
+     "nom": "7e articulation sterno-costale (demi-facette de l'angle inférieur du corps)",
+     "type": "plane"
+    },
+    {
+     "os": "processus-xiphoide",
+     "nom": "7e articulation sterno-costale (demi-facette du processus xiphoïde)",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-sixieme-cote",
+     "nom": "Articulation interchondrale (bord supérieur du 7e)",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-huitieme-cote",
+     "nom": "Articulation interchondrale (bord inférieur du 7e) ; la pointe du 8e s'y fixe",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Extrémité médiale",
+     "role": "Reçue dans l'incisure formée par le bas du corps du sternum et le processus xiphoïde ; une seule cavité synoviale ; ligaments costo-xiphoïdiens en avant et en arrière"
+    },
+    {
+     "nom": "Bords",
+     "role": "Deux facettes interchondrales : avec le 6e cartilage en haut, avec le 8e en bas"
+    },
+    {
+     "nom": "Face antérieure",
+     "role": "Droit de l'abdomen"
+    },
+    {
+     "nom": "Face postérieure",
+     "role": "Diaphragme et transverse de l'abdomen"
+    }
+   ],
+   "ossification": "Cartilage hyalin, qui ne s'ossifie pas ; il se calcifie en surface chez le sujet âgé",
+   "palpation": "Il borde de chaque côté le creux épigastrique : c'est le début du rebord costal, sous la pointe du sternum",
+   "clinique": "Les 7es cartilages droit et gauche limitent l'angle infrasternal, au sommet duquel pointe le processus xiphoïde. Les rebords costaux qui en partent sont le repère de la palpation du foie à droite et de la rate à gauche",
+   "memo": "Le 7e : le plus long, le dernier au sternum, le premier du rebord costal",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-articulations-sterno-costales",
+    "teachmeanatomy-sternum",
+    "openstax-thorax",
+    "statpearls-sternum"
+   ],
+   "divergences": "Attache sternale : à cheval sur le corps et le processus xiphoïde (Gray, TeachMeAnatomy), sur le seul processus xiphoïde (Kenhub), sur le corps (OpenStax, StatPearls)"
+  },
+  {
+   "id": "cartilage-costal-de-la-sixieme-cote",
+   "resume": "Dernier cartilage à gagner seul le corps du sternum ; son bord inférieur s'articule avec le 7e cartilage.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "sixieme-cote",
+     "nom": "Articulation costo-chondrale (le cartilage prolonge la côte)",
+     "type": "synchondrose"
+    },
+    {
+     "os": "corps-du-sternum",
+     "nom": "6e articulation sterno-costale",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-septieme-cote",
+     "nom": "Articulation interchondrale (bord inférieur du 6e, bord supérieur du 7e)",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Extrémité médiale",
+     "role": "Arrondie, logée dans la 6e incisure costale, la dernière du bord du corps, tout près de celle du 7e cartilage"
+    },
+    {
+     "nom": "Bord inférieur",
+     "role": "Porte, au sommet de sa convexité, un talon dont la facette lisse s'articule avec le 7e cartilage"
+    },
+    {
+     "nom": "Bord supérieur et face antérieure",
+     "role": "Grand pectoral ; droit de l'abdomen"
+    },
+    {
+     "nom": "Face postérieure",
+     "role": "Transverse du thorax ; premières insertions du diaphragme et du transverse de l'abdomen"
+    }
+   ],
+   "ossification": "Cartilage hyalin, qui ne s'ossifie pas ; il se calcifie en surface chez le sujet âgé",
+   "palpation": "Quatrième cartilage sous celui de l'angle sternal, à la naissance du rebord costal",
+   "clinique": "En avant, la scissure oblique de chaque poumon aboutit à ce cartilage : la ligne qui le relie au processus épineux de T3 projette la scissure sur la paroi, entre le lobe inférieur et le lobe supérieur (à gauche) ou moyen (à droite), utile pour situer une auscultation ou un foyer",
+   "memo": "Le 6e donne la main au 7e : premier des cartilages unis entre eux par une petite articulation",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-articulations-sterno-costales",
+    "teachmeanatomy-sternum",
+    "openstax-thorax"
+   ]
+  },
+  {
+   "id": "cartilage-costal-de-la-troisieme-cote",
+   "resume": "Premier cartilage attaché au seul corps du sternum ; il monte légèrement de la côte vers le sternum.",
+   "sorte": "cartilage",
+   "articulations": [
+    {
+     "os": "troisieme-cote",
+     "nom": "Articulation costo-chondrale (le cartilage prolonge la côte)",
+     "type": "synchondrose"
+    },
+    {
+     "os": "corps-du-sternum",
+     "nom": "3e articulation sterno-costale",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Extrémité médiale",
+     "role": "Arrondie, logée dans la 3e incisure costale, en regard de la première crête transversale du corps du sternum ; une seule cavité synoviale"
+    },
+    {
+     "nom": "Face antérieure",
+     "role": "Grand pectoral, à l'extrémité sternale"
+    },
+    {
+     "nom": "Face postérieure",
+     "role": "Transverse du thorax (du 3e au 6e cartilage)"
+    },
+    {
+     "nom": "Forme et direction",
+     "role": "Légèrement ascendant : c'est le premier cartilage qui remonte vers le sternum"
+    }
+   ],
+   "ossification": "Cartilage hyalin, qui ne s'ossifie pas ; il se calcifie en surface chez le sujet âgé",
+   "palpation": "Premier cartilage sous celui de l'angle sternal, contre le bord du sternum",
+   "clinique": "Avec le 2e, c'est le cartilage que touche le plus souvent le syndrome de Tietze : gonflement douloureux d'une jonction chondro-sternale, d'ordinaire d'un seul côté, qui guérit seul. La chondrite costale, sans gonflement, touche plutôt plusieurs cartilages, du 2e au 5e",
+   "memo": "Le 1er descend, le 2e est horizontal, le 3e monte : à partir de lui, tous les cartilages remontent vers le sternum",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-articulations-sterno-costales",
+    "teachmeanatomy-sternum",
+    "openstax-thorax"
+   ]
+  },
+  {
+   "id": "cinquieme-cote",
+   "resume": "Côte typique du milieu du thorax ; sous elle, le 5e espace intercostal gauche est celui où bat la pointe du cœur.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "vertebre-t4",
+     "nom": "Articulation de la tête costale (surface supérieure, la plus petite, sur la demi-fossette inférieure de T4)",
+     "type": "plane"
+    },
+    {
+     "os": "vertebre-t5",
+     "nom": "Articulation de la tête costale (surface inférieure, sur la demi-fossette supérieure de T5) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-cinquieme-cote",
+     "nom": "Articulation costo-chondrale (la côte se prolonge par son cartilage)",
+     "type": "synchondrose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête",
+     "role": "Surface supérieure pour T4, surface inférieure pour T5, de part et d'autre de la crête qui répond au disque T4-T5"
+    },
+    {
+     "nom": "Tubercule costal",
+     "role": "Facette convexe pour le processus transverse de T5"
+    },
+    {
+     "nom": "Angle costal",
+     "role": "Plus éloigné du tubercule que sur les côtes hautes ; attache de l'ilio-costal"
+    },
+    {
+     "nom": "Face externe",
+     "role": "Origine la plus basse du petit pectoral (côtes 3 à 5) ; digitation du dentelé antérieur ; première digitation de l'oblique externe (côtes 5 à 12)"
+    },
+    {
+     "nom": "Sillon costal",
+     "role": "Le long du bord inférieur de la face interne ; il abrite le 5e pédicule intercostal"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon costal",
+     "contenu": "De haut en bas : veine, artère et nerf du 5e espace intercostal"
+    }
+   ],
+   "ossification": "Un point primaire près de l'angle à la fin du 2e mois de vie fœtale ; épiphyses de la tête et du tubercule entre 16 et 20 ans, soudées vers 25 ans",
+   "palpation": "Troisième côte sous celle de l'angle sternal ; le bord inférieur du grand pectoral, à son attache, lui correspond",
+   "clinique": "Sous elle, le choc de pointe se palpe dans le 5e espace intercostal gauche, sur la ligne médio-claviculaire : déplacé en dehors ou vers le bas, il signale un cœur dilaté. Le 4e ou le 5e espace gauche est aussi la voie de la thoracotomie antéro-latérale de sauvetage",
+   "memo": "5e côte : sous elle bat la pointe du cœur, dans le 5e espace gauche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cotes",
+    "teachmeanatomy-cotes",
+    "openstax-thorax"
+   ]
+  },
+  {
+   "id": "deuxieme-cote",
+   "resume": "Bien plus longue que la première, encore peu inclinée : la côte de l'angle sternal, celle d'où l'on compte toutes les autres.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "vertebre-t1",
+     "nom": "Articulation de la tête costale (surface supérieure, la plus petite, sur la demi-fossette inférieure de T1)",
+     "type": "plane"
+    },
+    {
+     "os": "vertebre-t2",
+     "nom": "Articulation de la tête costale (surface inférieure, sur la demi-fossette supérieure de T2) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-deuxieme-cote",
+     "nom": "Articulation costo-chondrale (la côte se prolonge par son cartilage)",
+     "type": "synchondrose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête",
+     "role": "Deux surfaces séparées par une crête : la supérieure pour T1, l'inférieure pour T2"
+    },
+    {
+     "nom": "Tubercule et angle",
+     "role": "Tubercule articulé avec le processus transverse de T2 ; angle à peine marqué, tout près du tubercule ; corps non tordu"
+    },
+    {
+     "nom": "Tubérosité du muscle dentelé antérieur",
+     "role": "Rugosité du milieu de la face externe : fin de la 1re digitation et toute la 2e digitation du dentelé antérieur"
+    },
+    {
+     "nom": "Surface du scalène postérieur",
+     "role": "En arrière et au-dessus de la tubérosité ; terminaison du scalène postérieur"
+    },
+    {
+     "nom": "Face interne",
+     "role": "Lisse ; un court sillon costal, seulement en arrière"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon costal",
+     "contenu": "Court et postérieur : veine, artère et nerf du 2e espace intercostal"
+    }
+   ],
+   "ossification": "Un point primaire près de l'angle à la fin du 2e mois de vie fœtale ; épiphyses de la tête et du tubercule entre 16 et 20 ans, soudées vers 25 ans",
+   "palpation": "Le doigt qui glisse en dehors de l'angle sternal tombe sur son cartilage, puis sur la côte : c'est la plus haute que l'on puisse sentir en avant",
+   "clinique": "Point de départ de tout examen du thorax : de l'angle sternal, on gagne le 2e cartilage, puis l'on compte côtes et espaces vers le bas. Un angle sternal mal identifié fausse le compte, par exemple pour l'exsufflation à l'aiguille d'un pneumothorax",
+   "memo": "Angle de Louis = 2e côte : la seule que l'on trouve sans compter",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cotes",
+    "teachmeanatomy-cotes",
+    "openstax-thorax",
+    "statpearls-sternum",
+    "wikipedia-fr-cote"
+   ],
+   "divergences": "Tubérosité du dentelé antérieur : face externe pour Gray, face supérieure pour TeachMeAnatomy et Kenhub (sur cette côte encore peu inclinée, la face externe regarde en haut et en dehors)"
+  },
+  {
+   "id": "dixieme-cote",
+   "resume": "La dernière fausse côte : une seule surface articulaire sur la tête, pour T10, et le cartilage le plus bas du rebord costal.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "vertebre-t10",
+     "nom": "Articulation de la tête costale (surface unique, sur la fossette entière de T10) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-dixieme-cote",
+     "nom": "Articulation costo-chondrale (la côte se prolonge par son cartilage)",
+     "type": "synchondrose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête",
+     "role": "Une seule surface articulaire, pour la fossette entière de T10"
+    },
+    {
+     "nom": "Tubercule costal",
+     "role": "Petit ; facette plane pour le processus transverse de T10, le dernier à porter une fossette costale"
+    },
+    {
+     "nom": "Angle costal",
+     "role": "Très éloigné du tubercule ; attache de l'ilio-costal"
+    },
+    {
+     "nom": "Face externe",
+     "role": "Oblique externe, grand dorsal et dentelé postéro-inférieur"
+    },
+    {
+     "nom": "Face interne",
+     "role": "Diaphragme et transverse de l'abdomen"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon costal",
+     "contenu": "De haut en bas : veine, artère et nerf du 10e espace intercostal"
+    }
+   ],
+   "ossification": "Un point primaire près de l'angle à la fin du 2e mois de vie fœtale ; épiphyses de la tête et du tubercule entre 16 et 20 ans, soudées vers 25 ans",
+   "palpation": "Son cartilage forme le point le plus bas du rebord costal, sur le côté du ventre",
+   "clinique": "Sur la ligne axillaire moyenne, la plèvre descend jusqu'à elle alors que le poumon s'arrête à la 8e : une ponction pleurale plus basse risque le foie ou la rate. Brisée à gauche avec la 9e ou la 11e, elle fait craindre une rupture de la rate ; à droite, une plaie du foie",
+   "memo": "10e côte : une seule facette sur la tête, comme la 1re, la 11e et la 12e",
+   "variantes": "Tête à deux surfaces quand T9 porte une demi-fossette inférieure : la côte s'articule alors avec T9 et T10",
+   "sources": [
+    "gray1918",
+    "kenhub-cotes",
+    "teachmeanatomy-cotes",
+    "statpearls-cotes",
+    "kenhub-vertebres-thoraciques"
+   ],
+   "divergences": "Une seule vertèbre (T10) pour Gray, TeachMeAnatomy et Kenhub ; StatPearls décrit comme habituelle une tête partagée entre T9 et T10"
+  },
+  {
+   "id": "douzieme-cote",
+   "resume": "La dernière côte, flottante et de longueur très variable : ni col, ni tubercule, ni angle, ni sillon costal.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "vertebre-t12",
+     "nom": "Articulation de la tête costale (surface unique, sur la fossette de T12) ; pas d'articulation costo-transversaire",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête",
+     "role": "Grande surface articulaire unique, un peu inclinée vers le bas, pour la fossette de T12"
+    },
+    {
+     "nom": "Corps",
+     "role": "Court, étroit, presque rectiligne, sans angle ni sillon costal"
+    },
+    {
+     "nom": "Bord inférieur",
+     "role": "Attache du carré des lombes"
+    },
+    {
+     "nom": "Face externe",
+     "role": "Grand dorsal, dentelé postéro-inférieur, oblique externe"
+    },
+    {
+     "nom": "Face interne",
+     "role": "Insertion costale directe du diaphragme"
+    },
+    {
+     "nom": "Extrémité antérieure",
+     "role": "Pointue, libre dans la paroi postérieure de l'abdomen"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Bord inférieur",
+     "contenu": "Pas de sillon costal : le nerf subcostal (T12) et les vaisseaux subcostaux longent son bord inférieur"
+    }
+   ],
+   "ossification": "Deux points seulement : un pour le corps à la fin du 2e mois de vie fœtale, un pour la tête entre 16 et 20 ans, soudé vers 25 ans",
+   "palpation": "On la suit du flanc vers la colonne, sous la masse des muscles lombaires ; très courte, elle peut échapper au doigt",
+   "clinique": "En dedans, la plèvre descend sous elle : l'incision lombaire qui aborde le rein en longeant la 12e côte peut ouvrir la plèvre (pneumothorax). Courte et parfois impalpable, elle est confondue avec la 11e, d'où des erreurs de niveau ; brisée, elle peut léser le rein",
+   "memo": "La 12e : la plus simple des côtes, une baguette sans relief accrochée à T12",
+   "variantes": "Longueur très variable, parfois inférieure à celle de la 1re côte ; elle peut manquer (onze paires chez environ 3 % des sujets) ; à l'inverse, une côte lombaire s'ajoute parfois sur L1",
+   "sources": [
+    "gray1918",
+    "kenhub-cotes",
+    "teachmeanatomy-cotes",
+    "statpearls-cotes",
+    "statpearls-vertebres-thoraciques",
+    "wikipedia-fr-cote"
+   ]
+  },
+  {
+   "id": "huitieme-cote",
+   "resume": "La première fausse côte : son cartilage n'atteint pas le sternum et se fixe à celui de la 7e côte.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "vertebre-t7",
+     "nom": "Articulation de la tête costale (surface supérieure, la plus petite, sur la demi-fossette inférieure de T7)",
+     "type": "plane"
+    },
+    {
+     "os": "vertebre-t8",
+     "nom": "Articulation de la tête costale (surface inférieure, sur la demi-fossette supérieure de T8) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-huitieme-cote",
+     "nom": "Articulation costo-chondrale (la côte se prolonge par son cartilage)",
+     "type": "synchondrose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête",
+     "role": "Surface supérieure pour T7, surface inférieure pour T8"
+    },
+    {
+     "nom": "Tubercule costal",
+     "role": "Facette plane, qui glisse sur le dessus du processus transverse de T8"
+    },
+    {
+     "nom": "Angle costal",
+     "role": "Loin du tubercule ; attache de l'ilio-costal"
+    },
+    {
+     "nom": "Face externe",
+     "role": "Dernières digitations du dentelé antérieur ; oblique externe"
+    },
+    {
+     "nom": "Face interne",
+     "role": "Diaphragme et transverse de l'abdomen, près du cartilage"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon costal",
+     "contenu": "De haut en bas : veine, artère et nerf du 8e espace intercostal"
+    }
+   ],
+   "ossification": "Un point primaire près de l'angle à la fin du 2e mois de vie fœtale ; épiphyses de la tête et du tubercule entre 16 et 20 ans, soudées vers 25 ans",
+   "palpation": "Sur le côté du thorax, juste au-dessous de la 7e côte, que l'on repère à la pointe de la scapula ; en avant, son cartilage prolonge le rebord costal",
+   "clinique": "Sur la ligne médio-claviculaire, la plèvre descend jusqu'à elle alors que le poumon s'arrête à la 6e : entre les deux s'ouvre le récessus costo-diaphragmatique, où un épanchement pleural s'amasse d'abord et efface l'angle costo-phrénique sur la radiographie",
+   "memo": "8, 9, 10 : les fausses côtes, accrochées chacune au cartilage du dessus",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cotes",
+    "teachmeanatomy-cotes",
+    "kenhub-articulations-costo-vertebrales",
+    "openstax-thorax"
+   ]
+  },
+  {
+   "id": "neuvieme-cote",
+   "resume": "Fausse côte, la plus oblique de toutes ; la pointe de son cartilage marque le plan transpylorique.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "vertebre-t8",
+     "nom": "Articulation de la tête costale (surface supérieure, la plus petite, sur la demi-fossette inférieure de T8)",
+     "type": "plane"
+    },
+    {
+     "os": "vertebre-t9",
+     "nom": "Articulation de la tête costale (surface inférieure, sur la demi-fossette supérieure de T9) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-neuvieme-cote",
+     "nom": "Articulation costo-chondrale (la côte se prolonge par son cartilage)",
+     "type": "synchondrose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête",
+     "role": "Surface supérieure pour T8, surface inférieure pour T9 : c'est la dernière côte à deux surfaces articulaires"
+    },
+    {
+     "nom": "Tubercule costal",
+     "role": "Facette plane pour le processus transverse de T9"
+    },
+    {
+     "nom": "Angle costal",
+     "role": "Très éloigné du tubercule ; attache de l'ilio-costal"
+    },
+    {
+     "nom": "Face externe",
+     "role": "Oblique externe ; en arrière, dentelé postéro-inférieur (côtes 9 à 12)"
+    },
+    {
+     "nom": "Face interne",
+     "role": "Diaphragme et transverse de l'abdomen"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon costal",
+     "contenu": "De haut en bas : veine, artère et nerf du 9e espace intercostal"
+    }
+   ],
+   "ossification": "Un point primaire près de l'angle à la fin du 2e mois de vie fœtale ; épiphyses de la tête et du tubercule entre 16 et 20 ans, soudées vers 25 ans",
+   "palpation": "Sur le côté du thorax ; en avant, la pointe de son cartilage se sent sur le rebord costal, au bord latéral du muscle droit de l'abdomen",
+   "clinique": "À gauche, les 9e à 11e côtes couvrent la rate, dont le grand axe suit la 10e : leur fracture doit faire rechercher une rupture de la rate, parfois retardée de plusieurs jours. À droite, elles protègent le foie",
+   "memo": "9-10-11 : les trois côtes qui recouvrent la rate, à gauche",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cotes",
+    "teachmeanatomy-cotes",
+    "kenhub-vertebres-lombaires",
+    "statpearls-cotes"
+   ]
+  },
+  {
+   "id": "onzieme-cote",
+   "resume": "Première côte flottante : courte, sans col ni tubercule, sa pointe cartilagineuse se perd dans les muscles du flanc.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "vertebre-t11",
+     "nom": "Articulation de la tête costale (surface unique, sur la fossette de T11) ; pas d'articulation costo-transversaire",
+     "type": "plane"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête",
+     "role": "Grande surface articulaire unique, pour la fossette de T11, placée sur le pédicule"
+    },
+    {
+     "nom": "Corps",
+     "role": "Ni col ni tubercule ; angle peu marqué et sillon costal peu profond"
+    },
+    {
+     "nom": "Extrémité antérieure",
+     "role": "Pointue, coiffée d'un court cartilage libre dans la paroi de l'abdomen"
+    },
+    {
+     "nom": "Face externe",
+     "role": "Oblique externe, grand dorsal, dentelé postéro-inférieur"
+    },
+    {
+     "nom": "Face interne",
+     "role": "Insertion costale directe du diaphragme"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon costal",
+     "contenu": "Peu profond : veine, artère et nerf du 11e espace intercostal, le dernier"
+    }
+   ],
+   "ossification": "Deux points seulement : un pour le corps à la fin du 2e mois de vie fœtale, un pour la tête entre 16 et 20 ans, soudé vers 25 ans ; pas de point pour le tubercule, qui manque",
+   "palpation": "Sa pointe se sent dans le flanc, en arrière et au-dessous du rebord costal",
+   "clinique": "Fracturée à gauche, elle menace la rate ; à droite, le foie ; en arrière, avec la 12e, elle couvre le pôle supérieur du rein. Sa pointe libre se palpe sur le flanc et sert de repère aux incisions lombaires qui abordent le rein et la surrénale",
+   "memo": "Flottante mais pas libre : tenue par T11 en arrière, par les muscles de la paroi en avant",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cotes",
+    "teachmeanatomy-cotes",
+    "statpearls-cotes",
+    "teachmeanatomy-diaphragme"
+   ]
+  },
+  {
+   "id": "premiere-cote",
+   "resume": "La côte la plus courte, la plus large et la plus courbée : plate, presque horizontale, elle borde l'orifice supérieur du thorax sous la clavicule.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "vertebre-t1",
+     "nom": "Articulation de la tête costale (surface unique, sur la fossette entière de T1) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-premiere-cote",
+     "nom": "Articulation costo-chondrale (la côte se prolonge par son cartilage)",
+     "type": "synchondrose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête",
+     "role": "Petite, arrondie, à une seule surface articulaire, pour le corps de T1"
+    },
+    {
+     "nom": "Col et tubercule costal",
+     "role": "Col étroit ; tubercule épais et saillant sur le bord externe, articulé avec le processus transverse de T1 ; pas d'angle costal"
+    },
+    {
+     "nom": "Tubercule du muscle scalène antérieur (de Lisfranc)",
+     "role": "Sur la face supérieure, près du bord interne, entre les deux sillons vasculaires ; terminaison du scalène antérieur"
+    },
+    {
+     "nom": "Sillon de la veine subclavière",
+     "role": "En avant du tubercule du scalène antérieur"
+    },
+    {
+     "nom": "Sillon de l'artère subclavière",
+     "role": "En arrière du tubercule : artère subclavière et tronc inférieur du plexus brachial ; plus en arrière, surface rugueuse du scalène moyen"
+    },
+    {
+     "nom": "Bord externe",
+     "role": "Première digitation du dentelé antérieur"
+    },
+    {
+     "nom": "Extrémité antérieure",
+     "role": "La plus large et la plus épaisse de toutes les côtes ; à sa jonction avec le cartilage s'attachent le subclavier et le ligament costo-claviculaire"
+    },
+    {
+     "nom": "Face inférieure",
+     "role": "Lisse, sans sillon costal"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon de la veine subclavière",
+     "contenu": "Veine subclavière, en avant du scalène antérieur"
+    },
+    {
+     "nom": "Sillon de l'artère subclavière",
+     "contenu": "Artère subclavière et tronc inférieur du plexus brachial, entre le scalène antérieur et le scalène moyen"
+    }
+   ],
+   "ossification": "Un point primaire dans le corps à la fin du 2e mois de vie fœtale ; épiphyses de la tête et du tubercule entre 16 et 20 ans, soudées vers 25 ans",
+   "palpation": "Presque impalpable, cachée derrière la clavicule : c'est pourquoi l'on compte les côtes à partir de la 2e, repérée à l'angle sternal",
+   "clinique": "Syndrome du défilé thoraco-brachial : l'artère subclavière et le tronc inférieur du plexus brachial, qui croisent la côte entre les scalènes, peuvent y être comprimés, surtout par une côte cervicale. Bien protégée, elle se fracture rarement ; sa fracture peut léser le plexus brachial",
+   "memo": "V devant, A derrière : la Veine passe en avant du scalène antérieur, l'Artère en arrière, avec le plexus brachial",
+   "variantes": "Côte cervicale surnuméraire née de C7, au-dessus d'elle : jusqu'à 4 % des sujets dans une série radiologique",
+   "sources": [
+    "gray1918",
+    "kenhub-cotes",
+    "teachmeanatomy-cotes",
+    "statpearls-cotes",
+    "wikipedia-fr-cote",
+    "statpearls-vertebres-thoraciques"
+   ],
+   "divergences": "StatPearls lui prête « deux sillons costaux » et une articulation costo-claviculaire : il s'agit des deux sillons des vaisseaux subclaviers et du ligament costo-claviculaire, sans articulation véritable avec la clavicule"
+  },
+  {
+   "id": "quatrieme-cote",
+   "resume": "Côte typique du haut du thorax : chez l'homme, le mamelon se projette sur elle ou sur le 4e espace intercostal, juste au-dessous.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "vertebre-t3",
+     "nom": "Articulation de la tête costale (surface supérieure, la plus petite, sur la demi-fossette inférieure de T3)",
+     "type": "plane"
+    },
+    {
+     "os": "vertebre-t4",
+     "nom": "Articulation de la tête costale (surface inférieure, sur la demi-fossette supérieure de T4) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-quatrieme-cote",
+     "nom": "Articulation costo-chondrale (la côte se prolonge par son cartilage)",
+     "type": "synchondrose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête",
+     "role": "Surface supérieure pour T3, surface inférieure, plus grande, pour T4 ; la crête qui les sépare répond au disque T3-T4"
+    },
+    {
+     "nom": "Tubercule costal",
+     "role": "Partie articulaire, basse et médiale, convexe, qui tourne dans la fossette du processus transverse de T4 ; partie rugueuse, latérale, pour le ligament costo-transversaire latéral"
+    },
+    {
+     "nom": "Angle costal",
+     "role": "Le corps s'y coude et s'y tord ; un tendon de l'ilio-costal s'y attache, le longissimus entre l'angle et le tubercule"
+    },
+    {
+     "nom": "Face externe",
+     "role": "Petit pectoral (côtes 3 à 5) près du cartilage, digitation du dentelé antérieur plus en dehors"
+    },
+    {
+     "nom": "Bords",
+     "role": "Bord supérieur épais et arrondi, à deux lèvres pour les intercostaux externe et interne ; bord inférieur mince, longé par le sillon costal"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon costal",
+     "contenu": "De haut en bas : veine, artère et nerf du 4e espace intercostal"
+    }
+   ],
+   "ossification": "Un point primaire près de l'angle à la fin du 2e mois de vie fœtale ; épiphyses de la tête et du tubercule entre 16 et 20 ans, soudées vers 25 ans",
+   "palpation": "Deuxième côte sous celle de l'angle sternal ; chez l'homme, le mamelon est en regard du 4e espace intercostal, à 9 ou 10 cm de la ligne médiane",
+   "clinique": "La ligne horizontale du mamelon (4e-5e espace chez l'homme) borde en bas le triangle de sécurité où l'on pose un drain thoracique, sur la ligne axillaire moyenne et au bord supérieur d'une côte : plus bas, on risque le diaphragme, le foie ou la rate",
+   "memo": "4e côte, 4e espace : le niveau du mamelon chez l'homme",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cotes",
+    "teachmeanatomy-cotes",
+    "openstax-thorax"
+   ]
+  },
+  {
+   "id": "septieme-cote",
+   "resume": "La dernière vraie côte et la plus longue : son cartilage s'attache à la jonction du corps du sternum et du processus xiphoïde.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "vertebre-t6",
+     "nom": "Articulation de la tête costale (surface supérieure, la plus petite, sur la demi-fossette inférieure de T6)",
+     "type": "plane"
+    },
+    {
+     "os": "vertebre-t7",
+     "nom": "Articulation de la tête costale (surface inférieure, sur la demi-fossette supérieure de T7) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-septieme-cote",
+     "nom": "Articulation costo-chondrale (la côte se prolonge par son cartilage)",
+     "type": "synchondrose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête",
+     "role": "Surface supérieure pour T6, surface inférieure pour T7"
+    },
+    {
+     "nom": "Tubercule costal",
+     "role": "Facette presque plane, tournée en bas et en arrière, qui glisse sur le processus transverse de T7 : début du mouvement en anse de seau des côtes basses (7 à 10)"
+    },
+    {
+     "nom": "Angle costal",
+     "role": "Loin du tubercule ; attache de l'ilio-costal"
+    },
+    {
+     "nom": "Face externe",
+     "role": "Dentelé antérieur et oblique externe"
+    },
+    {
+     "nom": "Face interne",
+     "role": "Première des six côtes où s'attachent le diaphragme et le transverse de l'abdomen (cartilages et côtes 7 à 12)"
+    },
+    {
+     "nom": "Sillon costal",
+     "role": "Le long du bord inférieur : 7e pédicule intercostal"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon costal",
+     "contenu": "De haut en bas : veine, artère et nerf du 7e espace intercostal ; le nerf continue vers la paroi de l'abdomen"
+    }
+   ],
+   "ossification": "Avec la 6e, c'est la première côte à s'ossifier : point primaire près de l'angle à la fin du 2e mois de vie fœtale ; épiphyses de la tête et du tubercule entre 16 et 20 ans, soudées vers 25 ans",
+   "palpation": "Dans le dos, bras le long du corps, la pointe de la scapula la recouvre ; en avant, son cartilage forme le haut du rebord costal",
+   "clinique": "Bras le long du corps, la pointe de la scapula se projette sur elle : en arrière, c'est le repère pour compter les côtes, par exemple avant une ponction pleurale, faite au bord supérieur d'une côte sous le niveau de l'épanchement, car le paquet intercostal court sous la côte, dans son sillon",
+   "memo": "Sept vraies côtes : la 7e est la dernière à toucher le sternum, et la plus longue",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cotes",
+    "teachmeanatomy-cotes",
+    "kenhub-articulations-costo-vertebrales",
+    "teachmeanatomy-diaphragme"
+   ]
+  },
+  {
+   "id": "sixieme-cote",
+   "resume": "Côte typique ; son cartilage est le dernier à s'attacher au seul corps du sternum, et c'est l'une des deux côtes qui s'ossifient en premier.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "vertebre-t5",
+     "nom": "Articulation de la tête costale (surface supérieure, la plus petite, sur la demi-fossette inférieure de T5)",
+     "type": "plane"
+    },
+    {
+     "os": "vertebre-t6",
+     "nom": "Articulation de la tête costale (surface inférieure, sur la demi-fossette supérieure de T6) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-sixieme-cote",
+     "nom": "Articulation costo-chondrale (la côte se prolonge par son cartilage)",
+     "type": "synchondrose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête",
+     "role": "Surface supérieure pour T5, surface inférieure pour T6"
+    },
+    {
+     "nom": "Tubercule costal",
+     "role": "Dernière des facettes convexes, qui tournent dans une fossette concave (côtes 1 à 6) ; elle répond au processus transverse de T6"
+    },
+    {
+     "nom": "Angle costal",
+     "role": "Attache de l'ilio-costal ; entre l'angle et le tubercule, surface rugueuse du longissimus"
+    },
+    {
+     "nom": "Face externe",
+     "role": "Digitations du dentelé antérieur et de l'oblique externe, qui s'entrecroisent"
+    },
+    {
+     "nom": "Sillon costal",
+     "role": "Bien marqué ; les intercostaux s'attachent à ses lèvres"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon costal",
+     "contenu": "De haut en bas : veine, artère et nerf du 6e espace intercostal"
+    }
+   ],
+   "ossification": "Avec la 7e, c'est la première côte à s'ossifier : point primaire près de l'angle à la fin du 2e mois de vie fœtale ; épiphyses de la tête et du tubercule entre 16 et 20 ans, soudées vers 25 ans",
+   "palpation": "Quatrième côte sous celle de l'angle sternal ; chez le sujet musclé, la digitation la plus haute visible du dentelé antérieur lui correspond",
+   "clinique": "Toute plaie pénétrante entre le niveau du mamelon et le rebord costal est thoraco-abdominale : à l'expiration, le diaphragme remonte jusqu'à la 5e côte, et la lame qui passe sous la 6e peut traverser plèvre et diaphragme, puis toucher le foie, la rate ou l'estomac",
+   "memo": "6-8-10 : le bord inférieur du poumon croise la 6e côte en avant, la 8e sur le côté, la 10e en arrière",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cotes",
+    "teachmeanatomy-cotes",
+    "kenhub-articulations-costo-vertebrales"
+   ]
+  },
+  {
+   "id": "troisieme-cote",
+   "resume": "La première des côtes typiques : tête à deux surfaces, tubercule, angle net, corps tordu et sillon costal sur toute la longueur.",
+   "sorte": "plat",
+   "articulations": [
+    {
+     "os": "vertebre-t2",
+     "nom": "Articulation de la tête costale (surface supérieure, la plus petite, sur la demi-fossette inférieure de T2)",
+     "type": "plane"
+    },
+    {
+     "os": "vertebre-t3",
+     "nom": "Articulation de la tête costale (surface inférieure, sur la demi-fossette supérieure de T3) et articulation costo-transversaire",
+     "type": "plane"
+    },
+    {
+     "os": "cartilage-costal-de-la-troisieme-cote",
+     "nom": "Articulation costo-chondrale (la côte se prolonge par son cartilage)",
+     "type": "synchondrose"
+    }
+   ],
+   "reliefs": [
+    {
+     "nom": "Tête",
+     "role": "Deux surfaces séparées par une crête : la supérieure, plus petite, pour T2 ; l'inférieure pour T3 ; de la crête part le ligament intra-articulaire, vers le disque T2-T3"
+    },
+    {
+     "nom": "Col et tubercule costal",
+     "role": "Col aplati, long d'environ 2,5 cm, placé devant le processus transverse de T3 ; la facette convexe du tubercule s'articule avec ce processus"
+    },
+    {
+     "nom": "Angle costal",
+     "role": "Ligne rugueuse où le corps s'incurve et se tord ; attache d'un tendon de l'ilio-costal"
+    },
+    {
+     "nom": "Face externe",
+     "role": "Digitation du dentelé antérieur ; près du cartilage, origine la plus haute du petit pectoral (côtes 3 à 5)"
+    },
+    {
+     "nom": "Sillon costal",
+     "role": "Creusé à la face interne, le long du bord inférieur ; ses lèvres donnent attache aux muscles intercostaux"
+    }
+   ],
+   "foramens": [
+    {
+     "nom": "Sillon costal",
+     "contenu": "De haut en bas : veine, artère et nerf du 3e espace intercostal"
+    }
+   ],
+   "ossification": "Un point primaire près de l'angle à la fin du 2e mois de vie fœtale ; trois épiphyses (tête, parties articulaire et non articulaire du tubercule) entre 16 et 20 ans, soudées vers 25 ans",
+   "palpation": "Première côte sous celle de l'angle sternal : son cartilage se sent contre le bord du sternum ; plus en dehors, elle disparaît sous le grand pectoral",
+   "clinique": "À l'inspiration, les côtes hautes (1 à 6) pivotent autour de l'axe de leur col : leur extrémité antérieure s'élève et pousse le sternum en haut et en avant, comme un bras de pompe, ce qui agrandit le thorax d'avant en arrière",
+   "memo": "De la 3e à la 9e, toutes les côtes se ressemblent : la 3e ouvre la série des côtes typiques",
+   "variantes": null,
+   "sources": [
+    "gray1918",
+    "kenhub-cotes",
+    "teachmeanatomy-cotes",
+    "kenhub-articulations-costo-vertebrales",
+    "openstax-thorax"
+   ]
+  }
+ ]
+}

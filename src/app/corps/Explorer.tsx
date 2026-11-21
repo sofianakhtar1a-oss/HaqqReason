@@ -1,8 +1,12 @@
 "use client";
 
-import { Dumbbell, Eye, Focus, Minus, Pin, Plus, Scan, Search, Star, X } from "lucide-react";
+import { Dumbbell, Eye, Focus, Minus, Pin, Play, Plus, Scan, Search, Square, Star, X } from "lucide-react";
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { ELEMENTS, PAR_ID } from "@/lib/corps/catalogue";
+import { useFiche } from "@/lib/corps/fiches";
+import type { FicheMuscle } from "@/lib/corps/fiches/types";
+import { NOMS_ARTICULATIONS, NOMS_MOUVEMENTS } from "@/lib/corps/mouvement/articulations";
+import { type Action, programmeDe } from "@/lib/corps/mouvement/gestes";
 import { calqueDElement } from "@/lib/corps/modele/modele";
 import { basculerFavori, boite, estFavori, useEcorche } from "@/lib/corps/progression";
 import { nomRegion } from "@/lib/corps/quiz";
@@ -77,8 +81,39 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
   const [recherche, setRecherche] = useState("");
   const differee = useDeferredValue(recherche);
   const choisi = detail && PAR_ID.has(detail) ? PAR_ID.get(detail)! : null;
+  // Le geste en train de se jouer (l'action d'un muscle), pour la légende sous le nom.
+  const [geste, setGeste] = useState<Action | null>(null);
+  const { fiche: ficheChoisie } = useFiche(choisi?.id);
+  const actionsDuMuscle = ficheChoisie?.couche === "muscle" ? (ficheChoisie.fiche as FicheMuscle).actions : null;
 
   const choisir = (id: string | null) => nav.aller(id ? `explorer/${id}` : "explorer");
+
+  /** Montre sur le corps ce que fait le muscle choisi : une action, ou toutes ses actions principales à la suite. */
+  const jouer = (actions: Action[]) => {
+    if (!choisi || !actions.length) return;
+    const programme = programmeDe(choisi.id, actions, "g", { toutes: actions.length === 1 });
+    stage.poignee.current?.viser([choisi.id], { marge: 3.2, cote: "g" });
+    stage.poignee.current?.jouer(programme, {
+      etape: (rang) => {
+        const l = programme[rang]?.legende;
+        setGeste(l ? { articulation: l.articulation, mouvement: l.mouvement, role: "principal", precision: l.precision } : null);
+      },
+      fin: () => setGeste(null),
+    });
+  };
+  const arreter = () => {
+    stage.poignee.current?.arreter();
+    setGeste(null);
+  };
+  // On change de structure : le corps reprend la position anatomique.
+  const idChoisi = choisi?.id;
+  useEffect(
+    () => () => {
+      stage.poignee.current?.arreter();
+      setGeste(null);
+    },
+    [idChoisi, stage],
+  );
 
   // Le corps : les couches, les rayons X, la dissection, la carte de ce qu'on sait, la structure choisie.
   // Les surfaces d'insertion du muscle choisi : origines en rouge, terminaisons en bleu.
@@ -113,10 +148,14 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
       etats,
       isoler: isole && choisi ? [choisi.id, ...liees(choisi).map((x) => x.id)] : null,
       rotation: !choisi,
-      etiquette: survole ? { id: survole.element, texte: PAR_ID.get(survole.element)?.nom ?? "" } : choisi ? { id: choisi.id, texte: choisi.nom } : null,
+      etiquette: survole
+        ? { id: survole.element, texte: PAR_ID.get(survole.element)?.nom ?? "" }
+        : choisi
+          ? { id: choisi.id, texte: choisi.nom, sous: geste ? `${NOMS_ARTICULATIONS[geste.articulation] ?? geste.articulation} : ${(NOMS_MOUVEMENTS[geste.mouvement] ?? geste.mouvement).toLowerCase()}` : undefined }
+          : null,
       retrait: false,
     });
-  }, [stage, vraiesCouches, vraisCalques, voirAttaches, profondeurVue, etats, isole, choisi, survole]);
+  }, [stage, vraiesCouches, vraisCalques, voirAttaches, profondeurVue, etats, isole, choisi, survole, geste]);
 
   useEffect(() => {
     stage.surChoix((s) => {
@@ -240,8 +279,20 @@ export function Explorer({ stage, detail, nav }: { stage: Stage; detail: string 
           <Cartel
             e={choisi}
             latin={e.profil.latin}
+            aller={choisir}
+            jouer={(a) => jouer([a])}
             actions={
               <>
+                {actionsDuMuscle &&
+                  (geste ? (
+                    <button type="button" className="ec-bouton est-plein" onClick={arreter}>
+                      <Square size={14} aria-hidden="true" /> Arrêter
+                    </button>
+                  ) : (
+                    <button type="button" className="ec-bouton est-plein" onClick={() => jouer(actionsDuMuscle)} title="Le squelette fait le mouvement, le muscle se contracte.">
+                      <Play size={15} aria-hidden="true" /> Voir l’action
+                    </button>
+                  ))}
                 <button type="button" className="ec-bouton" aria-pressed={isole} onClick={() => setIsole((v) => !v)}>
                   <Focus size={15} aria-hidden="true" /> {isole ? "Tout montrer" : "Isoler"}
                 </button>

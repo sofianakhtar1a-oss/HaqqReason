@@ -6,7 +6,7 @@ import { ELEMENTS, PAR_ID, vautPour } from "../src/lib/corps/catalogue";
 import manifeste from "../src/lib/corps/modele/manifeste.json";
 import { CALQUES, Modele, calqueDElement } from "../src/lib/corps/modele/modele";
 import { lirePaquet, OCTETS_PAR_SOMMET } from "../src/lib/corps/modele/paquet";
-import { DDL } from "../src/lib/corps/mouvement/articulations";
+import { DDL, NOMS_ARTICULATIONS, NOMS_MOUVEMENTS } from "../src/lib/corps/mouvement/articulations";
 import { gesteDe, programmeDe } from "../src/lib/corps/mouvement/gestes";
 import { NB_AXIAUX, NB_LATERAUX, NB_SEGMENTS, type Pose, appliquer, numero, pointMesure, poser } from "../src/lib/corps/mouvement/squelette";
 import { ELEMENTS_APPRIS, IDS_CATEGORIES, niveauxDe, titreDuJoueur, TITRES } from "../src/lib/corps/niveaux";
@@ -214,6 +214,55 @@ ok("un mouvement sans course part de la position opposée (étendre le coude, me
 ok("le rachis s'incline du côté du muscle et tourne selon lui", gesteDe("rachis-lombaire", "inclinaison", "g")!.arrivee["lombaire.inclinaison"] > 0 && gesteDe("rachis-lombaire", "inclinaison", "d")!.arrivee["lombaire.inclinaison"] < 0 && gesteDe("rachis-cervical", "rotation-controlaterale", "g")!.arrivee["cervical.rotation"] < 0 && gesteDe("tete", "rotation-homolaterale", "g")!.arrivee["tete.rotation"] > 0);
 ok("l'opposition du pouce réunit trois mouvements", Object.keys(gesteDe("pouce-cmc", "opposition", "g")!.arrivee).length === 3);
 ok("un muscle sans articulation à mouvoir se contracte sur place", programmeDe("orbiculaire-de-l-oeil", [{ articulation: "paupiere", mouvement: "fermeture", role: "principal" }]).some((e) => e.surPlace) && programmeDe("biceps-brachial", [{ articulation: "coude", mouvement: "flexion", role: "principal" }]).every((e) => !e.surPlace));
+
+/* ---------- Les fiches enrichies ---------- */
+{
+  const bilan = lire("../src/lib/corps/fiches/bilan.json") as Record<string, [number, number]>;
+  const RACINE = /^(C[1-8]|T(1[0-2]|[1-9])|L[1-5]|S[1-5]|Co|I|II|III|IV|V|V1|V2|V3|VI|VII|VIII|IX|X|XI|XII)$/;
+  const existe = (id: string | null | undefined) => !id || PAR_ID.has(id);
+  for (const couche of ["os", "muscle", "artere", "tendon"] as const) {
+    const chemin = `../src/lib/corps/fiches/${couche}.json`;
+    if (!existsSync(new URL(chemin, import.meta.url))) continue;
+    const r = lire(chemin) as { sources: Record<string, { titre: string; url: string }>; fiches: Record<string, Record<string, unknown> & { sources: string[] }> };
+    const ids = Object.keys(r.fiches);
+    ok(`fiches ${couche} : chacune est une structure de la couche`, ids.every((id) => PAR_ID.get(id)?.couche === couche), ids.filter((id) => PAR_ID.get(id)?.couche !== couche).slice(0, 5).join());
+    ok(`fiches ${couche} : au moins deux sources réelles par fiche (sauf les tendons tirés de leur muscle)`, Object.values(r.fiches).every((f) => f.derive || (new Set(f.sources).size >= 2 && f.sources.every((c) => r.sources[c]?.url?.startsWith("http")))));
+    ok(`fiches ${couche} : le bilan est juste`, bilan[couche]?.[0] === ids.length);
+    const renvois: string[] = [];
+    for (const [id, f] of Object.entries(r.fiches)) {
+      const voir = (x: unknown, ou: string) => {
+        if (typeof x === "string" && !existe(x)) renvois.push(`${id}.${ou} → ${x}`);
+      };
+      for (const cle of ["synergistes", "antagonistes", "muscles"]) for (const x of (f[cle] as string[] | undefined) ?? []) voir(x, cle);
+      for (const cle of ["origine", "terminaison"]) for (const a of (f[cle] as { os?: string[] }[] | undefined) ?? []) for (const x of a.os ?? []) voir(x, cle);
+      const v = f.vascularisation as { arteres?: string[] } | undefined;
+      for (const x of v?.arteres ?? []) voir(x, "vascularisation");
+      for (const b of (f.branches as { artere?: string }[] | undefined) ?? []) voir(b.artere, "branches");
+      for (const a of (f.articulations as { os?: string }[] | undefined) ?? []) voir(a.os, "articulations");
+      voir((f.provenance as { artere?: string } | undefined)?.artere, "provenance");
+      voir((f.innervation as { nerf?: string } | undefined)?.nerf, "innervation");
+    }
+    ok(`fiches ${couche} : tous les renvois mènent à une structure`, renvois.length === 0, renvois.slice(0, 5).join(" ; "));
+    if (couche === "muscle") {
+      const muscles = Object.entries(r.fiches) as [string, { actions: { articulation: string; mouvement: string; role: string }[]; innervation: { racines: string[] } }][];
+      ok("chaque muscle a au moins une action principale et des racines valides", muscles.every(([, f]) => f.actions.some((a) => a.role === "principal") && f.innervation.racines.length > 0 && f.innervation.racines.every((x) => RACINE.test(x))));
+      const inconnus = new Set(muscles.flatMap(([, f]) => f.actions.flatMap((a) => [a.articulation in NOMS_ARTICULATIONS ? "" : a.articulation, a.mouvement in NOMS_MOUVEMENTS ? "" : a.mouvement])).filter(Boolean));
+      ok("chaque articulation et chaque mouvement des fiches a un nom à l'écran", inconnus.size === 0, [...inconnus].join());
+      const jouees = muscles.flatMap(([, f]) => f.actions).filter((a) => gesteDe(a.articulation, a.mouvement, "g")).length;
+      const total = muscles.flatMap(([, f]) => f.actions).length;
+      ok("le squelette joue au moins les trois quarts des actions des fiches", jouees / total >= 0.75, `${jouees}/${total}`);
+      ok("la fiche du biceps dit ce qu'il faut (flexion du coude, supination, nerf musculo-cutané, C5-C6)", (() => {
+        const b = r.fiches["biceps-brachial"] as unknown as { actions: { articulation: string; mouvement: string }[]; innervation: { nerf: string; racines: string[] } };
+        return b.actions.some((a) => a.articulation === "coude" && a.mouvement === "flexion") && b.actions.some((a) => a.mouvement === "supination") && b.innervation.nerf === "nerf-musculocutane" && b.innervation.racines.includes("C5") && b.innervation.racines.includes("C6");
+      })());
+    }
+    if (couche === "artere") {
+      const t = r.fiches["tronc-coeliaque"] as unknown as { branches: { artere: string }[] } | undefined;
+      ok("les branches du tronc cœliaque sont dans l'ordre (gastrique gauche, hépatique commune, splénique)", !t || t.branches.map((b) => b.artere).join() === "artere-gastrique-gauche,artere-hepatique-commune,artere-splenique");
+      ok("les artères qui se palpent disent où prendre le pouls", ["radiale", "carotide-commune", "femorale", "poplitee"].filter((id) => r.fiches[id]).every((id) => (r.fiches[id].pouls as { ou?: string } | null)?.ou));
+    }
+  }
+}
 
 console.log(echecs ? `\n${echecs} échec(s)` : "\nTout est vert.");
 process.exit(echecs ? 1 : 0);

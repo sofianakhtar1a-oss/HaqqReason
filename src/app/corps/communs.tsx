@@ -2,9 +2,12 @@
 
 import { Heart, Star, Volume2 } from "lucide-react";
 import { NOMS_NATURES, PAR_ID, nomDe } from "@/lib/corps/catalogue";
+import { useFiche } from "@/lib/corps/fiches";
 import { calqueDElement } from "@/lib/corps/modele/modele";
 import { nomRegion, nomSorte } from "@/lib/corps/quiz";
+import type { Action } from "@/lib/corps/mouvement/gestes";
 import type { Couche, Element } from "@/lib/corps/types";
+import { FicheEnrichie } from "./FicheEnrichie";
 import type { CalqueOptionnel, EtatStructure } from "./moteur/Corps3D";
 import { dire } from "./sons";
 
@@ -118,10 +121,19 @@ const NOM_COUCHE: Record<Couche, string> = { os: "Os", muscle: "Muscle", tendon:
 const PROFONDEURS = ["Superficiel", "Intermédiaire", "Profond"];
 const liste = (ids: string[] | undefined) => (ids ?? []).map((id) => nomDe(id)).join(", ");
 
-/** Le cartel d'une structure : comme l'étiquette d'une pièce de musée, puis tout ce qu'il faut savoir. */
-export function Cartel({ e, complet = true, latin = true, actions }: { e: Element; complet?: boolean; latin?: boolean; actions?: React.ReactNode }) {
+/**
+ * Le cartel d'une structure : comme l'étiquette d'une pièce de musée, puis tout ce qu'il faut savoir.
+ * `aller` : ouvrir une structure citée ; `jouer` : montrer sur le corps une action du muscle.
+ */
+export function Cartel({ e, complet = true, latin = true, actions, aller, jouer }: { e: Element; complet?: boolean; latin?: boolean; actions?: React.ReactNode; aller?: (id: string) => void; jouer?: (a: Action) => void }) {
+  // La fiche enrichie, quand elle est rédigée, remplace ce que la première version et l'atlas en disaient.
+  const { fiche } = useFiche(complet ? e.id : null);
   const lignes: [string, React.ReactNode][] = [];
-  if (e.couche === "muscle") {
+  if (fiche) {
+    if (e.loge) lignes.push(["Groupe", e.loge]);
+    if (e.couche === "muscle" && e.profondeur !== undefined) lignes.push(["Plan", PROFONDEURS[e.profondeur] ?? ""]);
+    if (e.chefs) lignes.push(["Chefs", String(e.chefs)]);
+  } else if (e.couche === "muscle") {
     // La fiche rédigée d'abord ; à défaut, ce que l'atlas sait : les os où il s'attache, son nerf.
     if (e.origine) lignes.push(["Origine", e.origine]);
     else if (e.origines?.length) lignes.push(["Origine", liste(e.origines)]);
@@ -134,15 +146,15 @@ export function Cartel({ e, complet = true, latin = true, actions }: { e: Elemen
     if (e.profondeur !== undefined) lignes.push(["Plan", PROFONDEURS[e.profondeur] ?? ""]);
     if (e.chefs) lignes.push(["Chefs", String(e.chefs)]);
   }
-  if (e.couche === "os") {
+  if (!fiche && e.couche === "os") {
     if (e.sorte) lignes.push(["Forme", nomSorte(e.sorte)]);
     if (e.articulations?.length) lignes.push(["S'articule avec", e.articulations.map((a) => nomDe(a)).join(", ")]);
   }
-  if (e.couche === "tendon") {
+  if (!fiche && e.couche === "tendon") {
     if (e.muscle) lignes.push(["Muscle", nomDe(e.muscle)]);
     if (e.attache) lignes.push(["Attache", e.attache]);
   }
-  if (e.couche === "artere") {
+  if (!fiche && e.couche === "artere") {
     if (e.provenance) lignes.push(["Naît de", nomDe(e.provenance)]);
     if (e.territoire) lignes.push(["Irrigue", e.territoire]);
   }
@@ -173,6 +185,8 @@ export function Cartel({ e, complet = true, latin = true, actions }: { e: Elemen
         )}
         {e.noms && e.noms.length > 0 && <p className="ec-cartel-aussi">Aussi : {e.noms.slice(0, 4).join(", ")}</p>}
       </header>
+      {actions && <div className="ec-cartel-actions">{actions}</div>}
+      {fiche && <FicheEnrichie charge={fiche} aller={aller} jouer={jouer} />}
       {complet && lignes.length > 0 && (
         <dl className="ec-cartel-lignes">
           {lignes.map(([k, v]) => (
@@ -183,13 +197,12 @@ export function Cartel({ e, complet = true, latin = true, actions }: { e: Elemen
           ))}
         </dl>
       )}
-      {complet && (e.memo || e.anecdote) && (
+      {complet && ((e.memo && !fiche) || e.anecdote) && (
         <div className="ec-cartel-notes">
-          {e.memo && <p className="ec-memo">{e.memo}</p>}
+          {e.memo && !fiche && <p className="ec-memo">{e.memo}</p>}
           {e.anecdote && <p className="ec-anecdote">{e.anecdote}</p>}
         </div>
       )}
-      {actions && <div className="ec-cartel-actions">{actions}</div>}
     </article>
   );
 }

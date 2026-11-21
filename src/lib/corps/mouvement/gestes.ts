@@ -43,6 +43,12 @@ function cibles(articulation: string, mouvement: string, cote: Cote): { ddl: Ddl
     return [];
   }
   if (articulation === "temporo-mandibulaire" && mouvement === "diduction") return un("machoire.diduction", inverse); // le menton part du côté opposé au muscle
+  // Fermer la bouche, mâcher : élever la mandibule ; l'ouvrir : l'abaisser.
+  if (articulation === "temporo-mandibulaire" && (mouvement === "fermeture" || mouvement === "mastication")) return un("machoire.ouverture", -1);
+  if (articulation === "temporo-mandibulaire" && mouvement === "ouverture") return un("machoire.ouverture", 1);
+  // Le larynx et le pharynx montent et descendent avec l'os hyoïde (la déglutition les élève).
+  if ((articulation === "larynx" || articulation === "pharynx") && (mouvement === "elevation" || mouvement === "deglutition")) return un("hyoide.elevation", 1);
+  if (articulation === "larynx" && mouvement === "abaissement") return un("hyoide.elevation", -1);
   if (articulation === "pouce-cmc" && mouvement === "opposition") return [...un("pouce.cmc-abduction", 1), ...un("pouce.cmc-flexion", 1), ...un("pouce.cmc-rotation", 1)];
   if (articulation === "genou" && mouvement.startsWith("rotation")) return un("genou.rotation", mouvement === "rotation-mediale" ? 1 : -1, { "genou.flexion": 80 });
   if (mouvement === "inclinaison" || mouvement === "rotation-homolaterale" || mouvement === "rotation-controlaterale") {

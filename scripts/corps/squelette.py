@@ -559,7 +559,8 @@ def mesurer():
         seg1 = "hallux-p1" if k == 1 else f"orteil{k}-p1"
         axe = unite(np.cross(unite(p1.mean(0) - tetes_mt[k]), Y))
         bout_o = p1[np.argmax(p1[:, 2])] + Z * 0.02
-        A[seg1] = {"p": tetes_mt[k], "flexion": oriente(axe, tetes_mt[k], bout_o, plante)}
+        # L'écartement se mesure par rapport à l'axe du 2e orteil : le gros orteil s'en écarte en dedans, les autres en dehors.
+        A[seg1] = {"p": tetes_mt[k], "flexion": oriente(axe, tetes_mt[k], bout_o, plante), "abduction": oriente(Y, tetes_mt[k], bout_o, -X if k == 1 else X)}
         suite = [("hallux-p2", p1, points(G("Distal phalanx of first finger of foot")))] if k == 1 else [(f"orteil{k}-p2", p1, points(G(f"Middle phalanx of {o} finger of foot"))), (f"orteil{k}-p3", points(G(f"Middle phalanx of {o} finger of foot")), points(G(f"Distal phalanx of {o} finger of foot")))]
         for seg, proximal, distal in suite:
             fin, a = bout_nuage(proximal, distal.mean(0) - proximal.mean(0), 0.2)

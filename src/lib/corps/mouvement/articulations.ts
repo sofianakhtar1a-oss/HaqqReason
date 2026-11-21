@@ -252,6 +252,18 @@ export const DDL: Ddl[] = [
   simple("pied.inversion", "subtalaire", "pied", "inversion", -18, 32, "eversion", "inversion"),
   simple("hallux.mtp", "hallux-mtp", "hallux-p1", "flexion", -70, 45, "extension", "flexion"),
   simple("hallux.ip", "hallux-ip", "hallux-p2", "flexion", 0, 80, "extension", "flexion"),
+  simple("hallux.ecart", "hallux-mtp", "hallux-p1", "abduction", -15, 15, "adduction", "abduction"),
+  {
+    id: "orteils.ecart",
+    articulation: "orteils-mtp",
+    moins: "adduction",
+    plus: "abduction",
+    min: -8,
+    max: 14,
+    lateral: true,
+    unite: "°",
+    effets: (["orteil3", "orteil4", "orteil5"] as const).map((o, k) => ({ segment: `${o}-p1`, pivot: `${o}-p1`, axe: `${o}-p1.abduction`, part: 0.6 + 0.2 * k })),
+  },
   ...ORTEILS.flatMap((o) => [
     simple(`${o}.mtp`, "orteils-mtp", `${o}-p1`, "flexion", -45, 40, "extension", "flexion"),
     simple(`${o}.ipp`, "orteils-ip", `${o}-p2`, "flexion", 0, 35, "extension", "flexion"),
@@ -303,6 +315,17 @@ export const NOMS_ARTICULATIONS: Record<string, string> = {
   "orteils-mtp": "Orteils (base)",
   "orteils-ip": "Orteils (bout)",
   oeil: "Œil",
+  // (celles que le squelette ne fait pas jouer : le muscle s'y contracte sur place)
+  cotes: "Côtes",
+  bassin: "Bassin",
+  visage: "Visage",
+  paupiere: "Paupière",
+  langue: "Langue",
+  "voile-du-palais": "Voile du palais",
+  pharynx: "Pharynx",
+  larynx: "Larynx",
+  oreille: "Oreille",
+  abdomen: "Abdomen",
 };
 
 export const NOMS_MOUVEMENTS: Record<string, string> = {
@@ -334,4 +357,13 @@ export const NOMS_MOUVEMENTS: Record<string, string> = {
   diduction: "Diduction",
   inspiration: "Inspiration",
   expiration: "Expiration",
+  fermeture: "Fermeture",
+  ouverture: "Ouverture",
+  compression: "Compression",
+  tension: "Mise en tension",
+  stabilisation: "Stabilisation",
+  expression: "Expression",
+  deglutition: "Déglutition",
+  phonation: "Phonation",
+  mastication: "Mastication",
 };
