@@ -1,0 +1,2297 @@
+{
+ "debut": 1,
+ "lexique": {
+  "yusuf": [
+   "Yusuf (prénom)",
+   "Yusuf",
+   "np"
+  ],
+  "lyon": [
+   "Lyon (ville de France)",
+   "Lyon",
+   "np"
+  ],
+  "france": [
+   "France",
+   "France",
+   "np"
+  ],
+  "london": [
+   "Londres",
+   "London",
+   "np"
+  ],
+  "sarah": [
+   "Sarah (prénom)",
+   "Sarah",
+   "np"
+  ],
+  "amira": [
+   "Amira (prénom)",
+   "Amira",
+   "np"
+  ],
+  "leo": [
+   "Leo (prénom)",
+   "Leo",
+   "np"
+  ],
+  "england": [
+   "Angleterre",
+   "England",
+   "np"
+  ],
+  "years": [
+   "ans (years old)",
+   "year",
+   "n",
+   "an"
+  ],
+  "old": [
+   "(years old : ans)",
+   "old",
+   "a"
+  ],
+  "aunt": [
+   "tante",
+   "aunt",
+   "n"
+  ],
+  "cousin": [
+   "cousine",
+   "cousin",
+   "n"
+  ],
+  "mother": [
+   "mère",
+   "mother",
+   "n"
+  ],
+  "mum": [
+   "maman",
+   "mum",
+   "n"
+  ],
+  "train": [
+   "train",
+   "train",
+   "n"
+  ],
+  "station": [
+   "gare",
+   "station",
+   "n"
+  ],
+  "sea": [
+   "mer",
+   "sea",
+   "n"
+  ],
+  "window": [
+   "fenêtre",
+   "window",
+   "n"
+  ],
+  "bus": [
+   "bus",
+   "bus",
+   "n"
+  ],
+  "park": [
+   "parc",
+   "park",
+   "n"
+  ],
+  "cat": [
+   "chat",
+   "cat",
+   "n"
+  ],
+  "dog": [
+   "chien",
+   "dog",
+   "n"
+  ],
+  "book": [
+   "livre",
+   "book",
+   "n"
+  ],
+  "books": [
+   "livres",
+   "book",
+   "n",
+   "livre"
+  ],
+  "story": [
+   "histoire",
+   "story",
+   "n"
+  ],
+  "pound": [
+   "livre sterling",
+   "pound",
+   "n"
+  ],
+  "pounds": [
+   "livres sterling",
+   "pound",
+   "n",
+   "livre sterling"
+  ],
+  "please": [
+   "s'il vous plaît",
+   "please",
+   "d"
+  ],
+  "market": [
+   "marché",
+   "market",
+   "n"
+  ],
+  "man": [
+   "vendeur",
+   "man",
+   "n",
+   "homme"
+  ],
+  "bread": [
+   "pain",
+   "bread",
+   "n"
+  ],
+  "cheese": [
+   "fromage",
+   "cheese",
+   "n"
+  ],
+  "apple": [
+   "pomme",
+   "apple",
+   "n"
+  ],
+  "sandwich": [
+   "sandwich",
+   "sandwich",
+   "n"
+  ],
+  "stalls": [
+   "étals",
+   "stall",
+   "n",
+   "étal"
+  ],
+  "dinosaur": [
+   "dinosaure",
+   "dinosaur",
+   "n"
+  ],
+  "dinosaurs": [
+   "dinosaures",
+   "dinosaur",
+   "n",
+   "dinosaure"
+  ],
+  "museum": [
+   "musée",
+   "museum",
+   "n"
+  ],
+  "skeleton": [
+   "squelette",
+   "skeleton",
+   "n"
+  ],
+  "neck": [
+   "cou",
+   "neck",
+   "n"
+  ],
+  "tail": [
+   "queue",
+   "tail",
+   "n"
+  ],
+  "teeth": [
+   "dents",
+   "tooth",
+   "n",
+   "dent"
+  ],
+  "room": [
+   "salle",
+   "room",
+   "n"
+  ],
+  "words": [
+   "mots",
+   "word",
+   "n",
+   "mot"
+  ],
+  "building": [
+   "bâtiment",
+   "building",
+   "n"
+  ],
+  "signs": [
+   "panneaux",
+   "sign",
+   "n",
+   "panneau"
+  ],
+  "rain": [
+   "pluie",
+   "rain",
+   "n"
+  ],
+  "floors": [
+   "étages",
+   "floor",
+   "n",
+   "étage"
+  ],
+  "driver": [
+   "conducteur",
+   "driver",
+   "n"
+  ],
+  "road": [
+   "rue",
+   "road",
+   "n"
+  ],
+  "bookshop": [
+   "librairie",
+   "bookshop",
+   "n"
+  ],
+  "bookshops": [
+   "librairies",
+   "bookshop",
+   "n",
+   "librairie"
+  ],
+  "chair": [
+   "chaise",
+   "chair",
+   "n"
+  ],
+  "paper": [
+   "papier",
+   "paper",
+   "n"
+  ],
+  "football": [
+   "football",
+   "football",
+   "n"
+  ],
+  "ball": [
+   "ballon",
+   "ball",
+   "n"
+  ],
+  "boys": [
+   "garçons",
+   "boy",
+   "n",
+   "garçon"
+  ],
+  "boy": [
+   "garçon",
+   "boy",
+   "n"
+  ],
+  "lake": [
+   "lac",
+   "lake",
+   "n"
+  ],
+  "ducks": [
+   "canards",
+   "duck",
+   "n",
+   "canard"
+  ],
+  "people": [
+   "gens",
+   "people",
+   "n"
+  ],
+  "sun": [
+   "soleil",
+   "sun",
+   "n"
+  ],
+  "name": [
+   "nom, prénom",
+   "name",
+   "n"
+  ],
+  "big": [
+   "grand",
+   "big",
+   "a"
+  ],
+  "small": [
+   "petit",
+   "small",
+   "a"
+  ],
+  "long": [
+   "long",
+   "long",
+   "a"
+  ],
+  "huge": [
+   "énorme",
+   "huge",
+   "a"
+  ],
+  "red": [
+   "rouge",
+   "red",
+   "a"
+  ],
+  "black": [
+   "noir",
+   "black",
+   "a"
+  ],
+  "green": [
+   "vert",
+   "green",
+   "a"
+  ],
+  "good": [
+   "bon",
+   "good",
+   "a"
+  ],
+  "new": [
+   "nouveau",
+   "new",
+   "a"
+  ],
+  "sad": [
+   "triste",
+   "sad",
+   "a"
+  ],
+  "hungry": [
+   "affamé",
+   "hungry",
+   "a"
+  ],
+  "funny": [
+   "drôle",
+   "funny",
+   "a"
+  ],
+  "easy": [
+   "facile",
+   "easy",
+   "a"
+  ],
+  "nice": [
+   "joli, agréable",
+   "nice",
+   "a"
+  ],
+  "beautiful": [
+   "beau",
+   "beautiful",
+   "a"
+  ],
+  "fresh": [
+   "frais",
+   "fresh",
+   "a"
+  ],
+  "sunny": [
+   "ensoleillé",
+   "sunny",
+   "a"
+  ],
+  "busy": [
+   "animé",
+   "busy",
+   "a"
+  ],
+  "dark": [
+   "sombre",
+   "dark",
+   "a"
+  ],
+  "exciting": [
+   "passionnant",
+   "exciting",
+   "a"
+  ],
+  "ready": [
+   "prêt",
+   "ready",
+   "a"
+  ],
+  "real": [
+   "vrai",
+   "real",
+   "a"
+  ],
+  "wet": [
+   "mouillé",
+   "wet",
+   "a"
+  ],
+  "grey": [
+   "gris",
+   "grey",
+   "a"
+  ],
+  "warm": [
+   "chaud",
+   "warm",
+   "a"
+  ],
+  "cool": [
+   "super",
+   "cool",
+   "a"
+  ],
+  "lives": [
+   "habite",
+   "live",
+   "v",
+   "habiter"
+  ],
+  "looks": [
+   "regarde",
+   "look",
+   "v",
+   "regarder"
+  ],
+  "sits": [
+   "est assis",
+   "sit",
+   "v",
+   "s'asseoir"
+  ],
+  "asks": [
+   "demande",
+   "ask",
+   "v",
+   "demander"
+  ],
+  "says": [
+   "dit",
+   "say",
+   "v",
+   "dire"
+  ],
+  "stops": [
+   "s'arrête",
+   "stop",
+   "v",
+   "s'arrêter"
+  ],
+  "goes": [
+   "va",
+   "go",
+   "v",
+   "aller"
+  ],
+  "go": [
+   "aller",
+   "go",
+   "v"
+  ],
+  "comes": [
+   "vient",
+   "come",
+   "v",
+   "venir"
+  ],
+  "come": [
+   "venir",
+   "come",
+   "v"
+  ],
+  "has": [
+   "a",
+   "have",
+   "v",
+   "avoir"
+  ],
+  "smells": [
+   "sent",
+   "smell",
+   "v",
+   "sentir"
+  ],
+  "love": [
+   "adore",
+   "love",
+   "v",
+   "adorer"
+  ],
+  "reads": [
+   "lit",
+   "read",
+   "v",
+   "lire"
+  ],
+  "learns": [
+   "apprend",
+   "learn",
+   "v",
+   "apprendre"
+  ],
+  "moves": [
+   "bouge",
+   "move",
+   "v",
+   "bouger"
+  ],
+  "roars": [
+   "rugit",
+   "roar",
+   "v",
+   "rugir"
+  ],
+  "jumps": [
+   "sursaute",
+   "jump",
+   "v",
+   "sauter"
+  ],
+  "laughs": [
+   "rit",
+   "laugh",
+   "v",
+   "rire"
+  ],
+  "take": [
+   "prendre",
+   "take",
+   "v"
+  ],
+  "sleeps": [
+   "dort",
+   "sleep",
+   "v",
+   "dormir"
+  ],
+  "buys": [
+   "achète",
+   "buy",
+   "v",
+   "acheter"
+  ],
+  "pays": [
+   "paie",
+   "pay",
+   "v",
+   "payer"
+  ],
+  "eat": [
+   "mangent",
+   "eat",
+   "v",
+   "manger"
+  ],
+  "play": [
+   "jouer",
+   "play",
+   "v"
+  ],
+  "plays": [
+   "joue",
+   "play",
+   "v",
+   "jouer"
+  ],
+  "kicks": [
+   "tape dans",
+   "kick",
+   "v",
+   "donner un coup de pied"
+  ],
+  "see": [
+   "voient",
+   "see",
+   "v",
+   "voir"
+  ],
+  "want": [
+   "veux",
+   "want",
+   "v",
+   "vouloir"
+  ],
+  "woman": [
+   "femme",
+   "woman",
+   "n"
+  ],
+  "backpack": [
+   "sac à dos",
+   "backpack",
+   "n"
+  ],
+  "knees": [
+   "genoux",
+   "knee",
+   "n",
+   "genou"
+  ],
+  "camera": [
+   "appareil photo",
+   "camera",
+   "n"
+  ],
+  "nervous": [
+   "nerveux",
+   "nervous",
+   "a"
+  ],
+  "happy": [
+   "content",
+   "happy",
+   "a"
+  ],
+  "children": [
+   "enfants",
+   "child",
+   "n",
+   "enfant"
+  ],
+  "hall": [
+   "hall",
+   "hall",
+   "n"
+  ],
+  "knows": [
+   "connaît",
+   "know",
+   "v",
+   "connaître"
+  ],
+  "idea": [
+   "idée",
+   "idea",
+   "n"
+  ],
+  "street": [
+   "rue",
+   "street",
+   "n"
+  ],
+  "slowly": [
+   "lentement",
+   "slowly",
+   "d"
+  ],
+  "clock": [
+   "horloge",
+   "clock",
+   "n"
+  ],
+  "phone": [
+   "téléphone",
+   "phone",
+   "n"
+  ],
+  "box": [
+   "cabine",
+   "box",
+   "n"
+  ],
+  "tall": [
+   "haute",
+   "tall",
+   "a"
+  ],
+  "falls": [
+   "tombe",
+   "fall",
+   "v",
+   "tomber"
+  ],
+  "tickets": [
+   "tickets",
+   "ticket",
+   "n",
+   "ticket"
+  ],
+  "shelves": [
+   "étagères",
+   "shelf",
+   "n",
+   "étagère"
+  ],
+  "finds": [
+   "trouve",
+   "find",
+   "v",
+   "trouver"
+  ],
+  "opens": [
+   "ouvre",
+   "open",
+   "v",
+   "ouvrir"
+  ],
+  "hard": [
+   "difficile",
+   "hard",
+   "a"
+  ],
+  "help": [
+   "aide",
+   "help",
+   "n"
+  ],
+  "picnic": [
+   "pique-nique",
+   "picnic",
+   "n"
+  ],
+  "weather": [
+   "temps",
+   "weather",
+   "n"
+  ],
+  "run": [
+   "courent",
+   "run",
+   "v",
+   "courir"
+  ],
+  "walk": [
+   "marchent",
+   "walk",
+   "v",
+   "marcher"
+  ],
+  "ride": [
+   "font du vélo",
+   "ride",
+   "v",
+   "faire du vélo"
+  ],
+  "bikes": [
+   "vélos",
+   "bike",
+   "n",
+   "vélo"
+  ],
+  "sees": [
+   "voit",
+   "see",
+   "v",
+   "voir"
+  ],
+  "apples": [
+   "pommes",
+   "apple",
+   "n",
+   "pomme"
+  ],
+  "cars": [
+   "voitures",
+   "car",
+   "n",
+   "voiture"
+  ],
+  "also": [
+   "aussi",
+   "also",
+   "d"
+  ],
+  "twelve": [
+   "douze",
+   "twelve",
+   "a"
+  ],
+  "hi": [
+   "salut",
+   "hi",
+   "d"
+  ],
+  "welcome": [
+   "bienvenue",
+   "welcome",
+   "d"
+  ],
+  "wow": [
+   "waouh",
+   "wow",
+   "d"
+  ],
+  "mmm": [
+   "mmm",
+   "mmm",
+   "d"
+  ],
+  "thanks": [
+   "merci",
+   "thanks",
+   "d"
+  ]
+ },
+ "pages": [
+  {
+   "p": [
+    [
+     {
+      "en": "Yusuf is twelve years old.",
+      "fr": "Yusuf a douze ans.",
+      "g": {
+       "is": [
+        "(is… years old : a)",
+        "be",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "He lives in Lyon, in France.",
+      "fr": "Il habite à Lyon, en France."
+     },
+     {
+      "en": "Today he is on a train to London.",
+      "fr": "Aujourd'hui, il est dans un train pour Londres.",
+      "g": {
+       "on": [
+        "dans (on a train)",
+        "on",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "The train goes under the sea.",
+      "fr": "Le train passe sous la mer."
+     },
+     {
+      "en": "Yusuf looks out of the window.",
+      "fr": "Yusuf regarde par la fenêtre.",
+      "g": {
+       "out": [
+        "par (out of)",
+        "out",
+        "d"
+       ],
+       "of": [
+        "(out of : par)",
+        "of",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "It is dark, but it is exciting.",
+      "fr": "Il fait sombre, mais c'est passionnant.",
+      "g": {
+       "is": [
+        "fait (it is dark)",
+        "be",
+        "v"
+       ],
+       "is#2": [
+        "est",
+        "be",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "Yusuf is a little nervous, but he is happy.",
+      "fr": "Yusuf est un peu nerveux, mais il est content.",
+      "g": {
+       "little": [
+        "un peu (a little)",
+        "little",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "His blue backpack is on his knees.",
+      "fr": "Son sac à dos bleu est sur ses genoux.",
+      "g": {
+       "blue": [
+        "bleu",
+        "blue",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "There is a camera in it.",
+      "fr": "Il y a un appareil photo dedans.",
+      "g": {
+       "is": [
+        "(there is : il y a)",
+        "be",
+        "v"
+       ],
+       "in": [
+        "dedans (in it)",
+        "in",
+        "r"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "His mother sits next to him.",
+      "fr": "Sa mère est assise à côté de lui.",
+      "g": {
+       "next": [
+        "à côté (next to)",
+        "next",
+        "d"
+       ],
+       "to": [
+        "(next to : à côté de)",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "\"Are you ready?\" she asks.",
+      "fr": "« Tu es prêt ? » demande-t-elle."
+     },
+     {
+      "en": "\"Yes, I am!\" says Yusuf.",
+      "fr": "« Oui, je le suis ! » dit Yusuf.",
+      "g": {
+       "am": [
+        "suis (je le suis)",
+        "be",
+        "v"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "The train stops in London.",
+      "fr": "Le train s'arrête à Londres."
+     },
+     {
+      "en": "His aunt Sarah is at the station.",
+      "fr": "Sa tante Sarah l'attend à la gare.",
+      "g": {
+       "is": [
+        "attend",
+        "be",
+        "v",
+        "être"
+       ],
+       "at": [
+        "à",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Next to her is his cousin Amira.",
+      "fr": "À côté d'elle se trouve sa cousine Amira.",
+      "g": {
+       "next": [
+        "à côté (next to)",
+        "next",
+        "d"
+       ],
+       "to": [
+        "(next to : à côté de)",
+        "to",
+        "r"
+       ],
+       "is": [
+        "se trouve",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     },
+     {
+      "en": "Amira is nine years old.",
+      "fr": "Amira a neuf ans.",
+      "g": {
+       "is": [
+        "(is… years old : a)",
+        "be",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "She has a big smile.",
+      "fr": "Elle a un grand sourire.",
+      "g": {
+       "smile": [
+        "sourire",
+        "smile",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"Hello, Yusuf! Welcome to London!\" says Sarah.",
+      "fr": "« Bonjour, Yusuf ! Bienvenue à Londres ! » dit Sarah."
+     },
+     {
+      "en": "\"Hi, Amira! Hello, Aunt Sarah!\" says Yusuf.",
+      "fr": "« Salut, Amira ! Bonjour, tante Sarah ! » dit Yusuf."
+     }
+    ]
+   ],
+   "titre": "Chapter 1 — The Train Under the Sea",
+   "titreFr": "Chapitre 1 — Le train sous la mer"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Mum goes home to Lyon on Monday morning.",
+      "fr": "Maman rentre à Lyon lundi matin.",
+      "g": {
+       "goes": [
+        "rentre",
+        "go",
+        "v",
+        "aller"
+       ],
+       "home": [
+        "chez elle (goes home)",
+        "home",
+        "d"
+       ],
+       "on": [
+        "(on Monday : lundi)",
+        "on",
+        "r"
+       ],
+       "monday": [
+        "lundi",
+        "Monday",
+        "n"
+       ],
+       "morning": [
+        "matin",
+        "morning",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Yusuf is a little sad.",
+      "fr": "Yusuf est un peu triste.",
+      "g": {
+       "little": [
+        "un peu (a little)",
+        "little",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "\"Come with us to the market!\" says Aunt Sarah.",
+      "fr": "« Venez avec nous au marché ! » dit tante Sarah.",
+      "g": {
+       "come": [
+        "venez",
+        "come",
+        "v",
+        "venir"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Borough Market is big and busy.",
+      "fr": "Borough Market est grand et animé.",
+      "g": {
+       "borough": [
+        "Borough (quartier de Londres)",
+        "Borough",
+        "np"
+       ]
+      }
+     },
+     {
+      "en": "There are many stalls.",
+      "fr": "Il y a beaucoup d'étals.",
+      "g": {
+       "are": [
+        "(there are : il y a)",
+        "be",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "It smells of fresh bread and cheese.",
+      "fr": "Cela sent le pain frais et le fromage.",
+      "g": {
+       "of": [
+        "(smells of : sent)",
+        "of",
+        "r"
+       ],
+       "smells": [
+        "sent (smells of)",
+        "smell",
+        "v",
+        "sentir"
+       ]
+      }
+     },
+     {
+      "en": "\"Mmm, it smells good!\" says Yusuf.",
+      "fr": "« Mmm, ça sent bon ! » dit Yusuf."
+     },
+     {
+      "en": "Amira is hungry.",
+      "fr": "Amira a faim.",
+      "g": {
+       "is": [
+        "(is hungry : a faim)",
+        "be",
+        "v"
+       ],
+       "hungry": [
+        "a faim",
+        "hungry",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "\"Excuse me, can I have a cheese sandwich, please?\" she asks the man.",
+      "fr": "« Excusez-moi, je peux avoir un sandwich au fromage, s'il vous plaît ? » demande-t-elle au vendeur.",
+      "g": {
+       "excuse": [
+        "excusez-moi (excuse me)",
+        "excuse",
+        "v",
+        "excuser"
+       ],
+       "me": [
+        "(excuse me : excusez-moi)",
+        "me",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "\"Of course!\" says the man. \"Here you go.\"",
+      "fr": "« Bien sûr ! » dit le vendeur. « Tenez. »",
+      "g": {
+       "of": [
+        "bien (of course)",
+        "of",
+        "r"
+       ],
+       "course": [
+        "(of course : bien sûr)",
+        "course",
+        "n"
+       ],
+       "here": [
+        "tenez (here you go)",
+        "here",
+        "d"
+       ],
+       "you": [
+        "(here you go : tenez)",
+        "you",
+        "p"
+       ],
+       "go": [
+        "(here you go : tenez)",
+        "go",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "\"How much is it?\" asks Amira.",
+      "fr": "« Ça coûte combien ? » demande Amira.",
+      "g": {
+       "how": [
+        "combien (how much)",
+        "how",
+        "c"
+       ],
+       "much": [
+        "(how much : combien)",
+        "much",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "\"Three pounds, please.\"",
+      "fr": "« Trois livres, s'il vous plaît. »"
+     }
+    ],
+    [
+     {
+      "en": "Yusuf wants an apple.",
+      "fr": "Yusuf veut une pomme.",
+      "g": {
+       "wants": [
+        "veut",
+        "want",
+        "v",
+        "vouloir"
+       ]
+      }
+     },
+     {
+      "en": "\"One red apple, please,\" he says.",
+      "fr": "« Une pomme rouge, s'il vous plaît », dit-il.",
+      "g": {
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "\"That's one pound.\"",
+      "fr": "« Ça fait une livre. »",
+      "g": {
+       "that's": [
+        "ça fait",
+        "be",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "\"Thank you!\" says Yusuf.",
+      "fr": "« Merci ! » dit Yusuf.",
+      "g": {
+       "thank": [
+        "merci (thank you)",
+        "thank",
+        "v"
+       ],
+       "you": [
+        "(thank you : merci)",
+        "you",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "\"You're welcome,\" says the man.",
+      "fr": "« De rien », dit le vendeur.",
+      "g": {
+       "you're": [
+        "(you're welcome : de rien)",
+        "be",
+        "v"
+       ],
+       "welcome": [
+        "de rien (you're welcome)",
+        "welcome",
+        "a"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 2 — Borough Market",
+   "titreFr": "Chapitre 2 — Le marché de Borough"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "It is Tuesday.",
+      "fr": "On est mardi.",
+      "g": {
+       "tuesday": [
+        "mardi",
+        "Tuesday",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Today they go to the Natural History Museum.",
+      "fr": "Aujourd'hui, ils vont au Muséum d'histoire naturelle.",
+      "g": {
+       "go": [
+        "vont",
+        "go",
+        "v",
+        "aller"
+       ],
+       "natural": [
+        "naturelle (Natural History)",
+        "natural",
+        "a"
+       ],
+       "history": [
+        "histoire (Natural History)",
+        "history",
+        "n"
+       ],
+       "they": [
+        "ils",
+        "they",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "The building is very big and beautiful.",
+      "fr": "Le bâtiment est très grand et magnifique.",
+      "g": {
+       "beautiful": [
+        "magnifique",
+        "beautiful",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "There are many children in the hall.",
+      "fr": "Il y a beaucoup d'enfants dans le hall.",
+      "g": {
+       "are": [
+        "(there are : il y a)",
+        "be",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "Inside, there is a huge skeleton.",
+      "fr": "À l'intérieur, il y a un énorme squelette.",
+      "g": {
+       "inside": [
+        "à l'intérieur",
+        "inside",
+        "d"
+       ],
+       "is": [
+        "(there is : il y a)",
+        "be",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "\"It is a dinosaur!\" says Amira.",
+      "fr": "« C'est un dinosaure ! » dit Amira."
+     },
+     {
+      "en": "\"I love dinosaurs!\"",
+      "fr": "« J'adore les dinosaures ! »",
+      "g": {
+       "love": [
+        "adore",
+        "love",
+        "v",
+        "adorer"
+       ]
+      }
+     },
+     {
+      "en": "Amira knows all the dinosaurs.",
+      "fr": "Amira connaît tous les dinosaures.",
+      "g": {
+       "all": [
+        "tous",
+        "all",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "It has a long neck and a long tail.",
+      "fr": "Il a un long cou et une longue queue.",
+      "g": {
+       "long": [
+        "long",
+        "long",
+        "a"
+       ],
+       "long#2": [
+        "longue",
+        "long",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "\"Look at the teeth!\" says Yusuf.",
+      "fr": "« Regarde les dents ! » dit Yusuf.",
+      "g": {
+       "look": [
+        "regarde",
+        "look",
+        "v"
+       ],
+       "at": [
+        "(look at : regarde)",
+        "at",
+        "r"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "In the next room, a dinosaur moves and roars!",
+      "fr": "Dans la salle suivante, un dinosaure bouge et rugit !",
+      "g": {
+       "next": [
+        "suivante",
+        "next",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Yusuf jumps.",
+      "fr": "Yusuf sursaute."
+     },
+     {
+      "en": "\"Wow!\" he says.",
+      "fr": "« Waouh ! » dit-il."
+     },
+     {
+      "en": "Amira laughs.",
+      "fr": "Amira rit."
+     },
+     {
+      "en": "\"Don't worry, Yusuf. It is not real!\"",
+      "fr": "« Ne t'inquiète pas, Yusuf. Ce n'est pas vrai ! »",
+      "g": {
+       "worry": [
+        "t'inquiète",
+        "worry",
+        "v",
+        "s'inquiéter"
+       ]
+      }
+     },
+     {
+      "en": "Later, they eat lunch in the café.",
+      "fr": "Plus tard, ils déjeunent au café.",
+      "g": {
+       "eat": [
+        "déjeunent (eat lunch)",
+        "eat",
+        "v",
+        "manger"
+       ],
+       "lunch": [
+        "(eat lunch : déjeunent)",
+        "lunch",
+        "n"
+       ],
+       "café": [
+        "café",
+        "café",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Amira reads the signs for Yusuf.",
+      "fr": "Amira lit les panneaux pour Yusuf.",
+      "g": {
+       "for": [
+        "pour",
+        "for",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Yusuf learns new words: neck, tail, teeth.",
+      "fr": "Yusuf apprend de nouveaux mots : cou, queue, dents.",
+      "g": {
+       "new": [
+        "nouveaux",
+        "new",
+        "a",
+        "nouveau"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 3 — The Dinosaur Museum",
+   "titreFr": "Chapitre 3 — Le musée des dinosaures"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "It is Wednesday, and it is raining.",
+      "fr": "On est mercredi, et il pleut.",
+      "g": {
+       "wednesday": [
+        "mercredi",
+        "Wednesday",
+        "n"
+       ],
+       "it#2": [
+        "il",
+        "it",
+        "p"
+       ],
+       "is#2": [
+        "(is raining : pleut)",
+        "be",
+        "v"
+       ],
+       "raining": [
+        "pleut",
+        "rain",
+        "v",
+        "pleuvoir"
+       ]
+      }
+     },
+     {
+      "en": "\"No park today!\" says Amira.",
+      "fr": "« Pas de parc aujourd'hui ! » dit Amira."
+     },
+     {
+      "en": "\"I have an idea. Let's take a bus.\"",
+      "fr": "« J'ai une idée. Prenons un bus. »",
+      "g": {
+       "let's": [
+        "(let's take : prenons)",
+        "let",
+        "v"
+       ],
+       "take": [
+        "prenons",
+        "take",
+        "v",
+        "prendre"
+       ]
+      }
+     },
+     {
+      "en": "The red bus has two floors.",
+      "fr": "Le bus rouge a deux étages.",
+      "g": {
+       "has": [
+        "a",
+        "have",
+        "v",
+        "avoir"
+       ]
+      }
+     },
+     {
+      "en": "Aunt Sarah buys three tickets.",
+      "fr": "Tante Sarah achète trois tickets.",
+      "g": {
+       "buys": [
+        "achète",
+        "buy",
+        "v",
+        "acheter"
+       ]
+      }
+     },
+     {
+      "en": "They go upstairs and sit at the front.",
+      "fr": "Ils montent à l'étage et s'assoient à l'avant.",
+      "g": {
+       "go": [
+        "montent",
+        "go",
+        "v",
+        "aller"
+       ],
+       "upstairs": [
+        "à l'étage",
+        "upstairs",
+        "d"
+       ],
+       "sit": [
+        "s'assoient",
+        "sit",
+        "v",
+        "s'asseoir"
+       ],
+       "front": [
+        "l'avant",
+        "front",
+        "n",
+        "avant"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "The bus moves slowly through the busy street.",
+      "fr": "Le bus avance lentement dans la rue animée.",
+      "g": {
+       "moves": [
+        "avance",
+        "move",
+        "v",
+        "avancer"
+       ]
+      }
+     },
+     {
+      "en": "London is grey and wet, but it looks nice from the bus.",
+      "fr": "Londres est grise et mouillée, mais elle a l'air jolie vue du bus.",
+      "g": {
+       "looks": [
+        "a l'air",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "from": [
+        "vue de",
+        "from",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Yusuf sees a tall clock and a red phone box.",
+      "fr": "Yusuf voit une grande horloge et une cabine téléphonique rouge.",
+      "g": {
+       "tall": [
+        "grande",
+        "tall",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Rain falls on the window.",
+      "fr": "La pluie tombe sur la fenêtre."
+     },
+     {
+      "en": "Yusuf likes the red bus, and he takes a photo.",
+      "fr": "Yusuf aime le bus rouge, et il prend une photo.",
+      "g": {
+       "likes": [
+        "aime",
+        "like",
+        "v",
+        "aimer"
+       ],
+       "takes": [
+        "prend",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "photo": [
+        "photo",
+        "photo",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"Excuse me, does this bus go to Charing Cross Road?\" asks Yusuf.",
+      "fr": "« Excusez-moi, ce bus va-t-il à Charing Cross Road ? » demande Yusuf.",
+      "g": {
+       "excuse": [
+        "excusez-moi (excuse me)",
+        "excuse",
+        "v",
+        "excuser"
+       ],
+       "me": [
+        "(excuse me : excusez-moi)",
+        "me",
+        "p"
+       ],
+       "does": [
+        "(question : va-t-il)",
+        "do",
+        "v"
+       ],
+       "charing": [
+        "Charing (nom de rue)",
+        "Charing",
+        "np"
+       ],
+       "cross": [
+        "Cross (nom de rue)",
+        "Cross",
+        "np"
+       ],
+       "road": [
+        "Road (rue)",
+        "road",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"Yes, it does,\" says the driver.",
+      "fr": "« Oui, il y va », dit le conducteur.",
+      "g": {
+       "does": [
+        "(it does : il y va)",
+        "do",
+        "v"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 4 — Rain, a Red Bus and a Bookshop",
+   "titreFr": "Chapitre 4 — La pluie, un bus rouge et une librairie"
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "The bookshop is old and small.",
+      "fr": "La librairie est vieille et petite.",
+      "g": {
+       "old": [
+        "vieille",
+        "old",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "It smells of paper, and it is warm inside.",
+      "fr": "Elle sent le papier, et il y fait chaud.",
+      "g": {
+       "of": [
+        "(smells of : sent)",
+        "of",
+        "r"
+       ],
+       "smells": [
+        "sent (smells of)",
+        "smell",
+        "v",
+        "sentir"
+       ]
+      }
+     },
+     {
+      "en": "A woman is at the desk.",
+      "fr": "Une femme est au comptoir.",
+      "g": {
+       "desk": [
+        "comptoir",
+        "desk",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Yusuf looks at the shelves.",
+      "fr": "Yusuf regarde les étagères.",
+      "g": {
+       "looks": [
+        "regarde",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(look at : regarde)",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "There are books everywhere.",
+      "fr": "Il y a des livres partout.",
+      "g": {
+       "are": [
+        "(there are : il y a)",
+        "be",
+        "v"
+       ],
+       "everywhere": [
+        "partout",
+        "everywhere",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "He opens a big book, but it is too hard.",
+      "fr": "Il ouvre un gros livre, mais il est trop difficile.",
+      "g": {
+       "big": [
+        "gros",
+        "big",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "\"Excuse me, I am looking for an easy book in English,\" says Yusuf.",
+      "fr": "« Excusez-moi, je cherche un livre facile en anglais », dit Yusuf.",
+      "g": {
+       "excuse": [
+        "excusez-moi (excuse me)",
+        "excuse",
+        "v",
+        "excuser"
+       ],
+       "me": [
+        "(excuse me : excusez-moi)",
+        "me",
+        "p"
+       ],
+       "looking": [
+        "cherche",
+        "look",
+        "v",
+        "chercher"
+       ],
+       "for": [
+        "(looking for : cherche)",
+        "for",
+        "r"
+       ],
+       "english": [
+        "anglais",
+        "English",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Amira looks at a book about dinosaurs.",
+      "fr": "Amira regarde un livre sur les dinosaures.",
+      "g": {
+       "looks": [
+        "regarde",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(look at : regarde)",
+        "at",
+        "r"
+       ],
+       "about": [
+        "sur",
+        "about",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "The woman smiles.",
+      "fr": "La femme sourit.",
+      "g": {
+       "smiles": [
+        "sourit",
+        "smile",
+        "v",
+        "sourire"
+       ]
+      }
+     },
+     {
+      "en": "\"Try this one. It is a funny story about a dog.\"",
+      "fr": "« Essaie celui-ci. C'est une histoire drôle sur un chien. »",
+      "g": {
+       "try": [
+        "essaie",
+        "try",
+        "v",
+        "essayer"
+       ],
+       "about": [
+        "sur",
+        "about",
+        "r"
+       ],
+       "one": [
+        "celui-ci (this one)",
+        "one",
+        "p"
+       ],
+       "this": [
+        "(this one : celui-ci)",
+        "this",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "\"How much is it?\" asks Yusuf.",
+      "fr": "« Il coûte combien ? » demande Yusuf.",
+      "g": {
+       "how": [
+        "combien (how much)",
+        "how",
+        "c"
+       ],
+       "much": [
+        "(how much : combien)",
+        "much",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "\"Five pounds, please.\"",
+      "fr": "« Cinq livres, s'il vous plaît. »"
+     },
+     {
+      "en": "Yusuf pays and says, \"Thank you!\"",
+      "fr": "Yusuf paie et dit : « Merci ! »",
+      "g": {
+       "thank": [
+        "merci (thank you)",
+        "thank",
+        "v"
+       ],
+       "you": [
+        "(thank you : merci)",
+        "you",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "A black cat sleeps on a chair.",
+      "fr": "Un chat noir dort sur une chaise."
+     },
+     {
+      "en": "\"The cat's name is Pudding,\" says the woman.",
+      "fr": "« Le chat s'appelle Pudding », dit la femme.",
+      "g": {
+       "cat's": [
+        "du chat",
+        "cat",
+        "n"
+       ],
+       "pudding": [
+        "Pudding (nom du chat)",
+        "Pudding",
+        "np"
+       ],
+       "is": [
+        "s'appelle (name is)",
+        "be",
+        "v"
+       ],
+       "name": [
+        "(name is : s'appelle)",
+        "name",
+        "n"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Thursday is sunny.",
+      "fr": "Jeudi, il y a du soleil.",
+      "g": {
+       "thursday": [
+        "jeudi",
+        "Thursday",
+        "n"
+       ],
+       "is": [
+        "il y a (is sunny)",
+        "be",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "The family goes to Hyde Park.",
+      "fr": "La famille va à Hyde Park.",
+      "g": {
+       "family": [
+        "famille",
+        "family",
+        "n"
+       ],
+       "goes": [
+        "va",
+        "go",
+        "v",
+        "aller"
+       ],
+       "hyde": [
+        "Hyde (nom de parc)",
+        "Hyde",
+        "np"
+       ]
+      }
+     },
+     {
+      "en": "The park is green and very big.",
+      "fr": "Le parc est vert et très grand."
+     },
+     {
+      "en": "The weather is warm.",
+      "fr": "Il fait chaud.",
+      "g": {
+       "is": [
+        "fait (it is warm)",
+        "be",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "Aunt Sarah has a picnic: bread, cheese and apples.",
+      "fr": "Tante Sarah a préparé un pique-nique : du pain, du fromage et des pommes.",
+      "g": {
+       "has": [
+        "a préparé",
+        "have",
+        "v",
+        "avoir"
+       ]
+      }
+     },
+     {
+      "en": "People run, walk and ride bikes.",
+      "fr": "Les gens courent, marchent et font du vélo.",
+      "g": {
+       "run": [
+        "courent",
+        "run",
+        "v",
+        "courir"
+       ]
+      }
+     },
+     {
+      "en": "There is a lake, and there are ducks on it.",
+      "fr": "Il y a un lac, et des canards dessus.",
+      "g": {
+       "is": [
+        "(there is : il y a)",
+        "be",
+        "v"
+       ],
+       "are": [
+        "(there are : il y a)",
+        "be",
+        "v"
+       ],
+       "on": [
+        "dessus (on it)",
+        "on",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Some boys play football near the lake.",
+      "fr": "Des garçons jouent au football près du lac.",
+      "g": {
+       "play": [
+        "jouent",
+        "play",
+        "v",
+        "jouer"
+       ]
+      }
+     },
+     {
+      "en": "Suddenly, a ball comes to Yusuf.",
+      "fr": "Soudain, un ballon arrive vers Yusuf.",
+      "g": {
+       "suddenly": [
+        "soudain",
+        "suddenly",
+        "d"
+       ],
+       "comes": [
+        "arrive",
+        "come",
+        "v",
+        "venir"
+       ]
+      }
+     },
+     {
+      "en": "He kicks it back.",
+      "fr": "Il le renvoie d'un coup de pied.",
+      "g": {
+       "kicks": [
+        "envoie d'un coup de pied",
+        "kick",
+        "v",
+        "donner un coup de pied"
+       ],
+       "back": [
+        "en retour (kicks back)",
+        "back",
+        "d"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "\"Thanks!\" says a boy.",
+      "fr": "« Merci ! » dit un garçon."
+     },
+     {
+      "en": "\"I'm Leo. What's your name?\"",
+      "fr": "« Moi, c'est Leo. Comment tu t'appelles ? »",
+      "g": {
+       "i'm": [
+        "moi c'est (I'm)",
+        "be",
+        "v"
+       ],
+       "what's": [
+        "comment (what's your name)",
+        "be",
+        "v"
+       ],
+       "your": [
+        "(what's your name : comment tu t'appelles)",
+        "your",
+        "p"
+       ],
+       "name": [
+        "(what's your name : t'appelles)",
+        "name",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "\"My name is Yusuf. I'm from France.\"",
+      "fr": "« Je m'appelle Yusuf. Je viens de France. »",
+      "g": {
+       "my": [
+        "je (my name is)",
+        "my",
+        "p"
+       ],
+       "name": [
+        "m'appelle (name is)",
+        "name",
+        "n"
+       ],
+       "is": [
+        "(my name is : je m'appelle)",
+        "be",
+        "v"
+       ],
+       "i'm": [
+        "je viens (I'm from)",
+        "be",
+        "v"
+       ],
+       "from": [
+        "(I'm from : je viens de)",
+        "from",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "\"Cool! Do you want to play with us?\" asks Leo.",
+      "fr": "« Super ! Tu veux jouer avec nous ? » demande Leo.",
+      "g": {
+       "do": [
+        "(question : est-ce que)",
+        "do",
+        "v"
+       ],
+       "want": [
+        "veux",
+        "want",
+        "v",
+        "vouloir"
+       ],
+       "play": [
+        "jouer",
+        "play",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "\"Yes, please!\" says Yusuf.",
+      "fr": "« Oui, avec plaisir ! » dit Yusuf."
+     },
+     {
+      "en": "Leo is twelve, too.",
+      "fr": "Leo a douze ans, lui aussi.",
+      "g": {
+       "is": [
+        "(is… : a)",
+        "be",
+        "v"
+       ]
+      }
+     },
+     {
+      "en": "Amira sits on a bench and smiles.",
+      "fr": "Amira s'assoit sur un banc et sourit.",
+      "g": {
+       "sits": [
+        "s'assoit",
+        "sit",
+        "v",
+        "s'asseoir"
+       ],
+       "bench": [
+        "banc",
+        "bench",
+        "n"
+       ],
+       "smiles": [
+        "sourit",
+        "smile",
+        "v",
+        "sourire"
+       ]
+      }
+     }
+    ]
+   ],
+   "titre": "Chapter 5 — A New Friend in Hyde Park",
+   "titreFr": "Chapitre 5 — Un nouvel ami à Hyde Park"
+  }
+ ]
+}

@@ -57,6 +57,7 @@ export type OrigineMot =
   | { type: "video"; titre: string; ref: string; t: number }
   | { type: "pdf"; titre: string; ref: string; page: number }
   | { type: "theme"; titre: string; ref: string }
+  | { type: "histoire"; titre: string; ref: string; page: number }
   | { type: "manuel"; titre: string };
 
 export type MotPerso = {

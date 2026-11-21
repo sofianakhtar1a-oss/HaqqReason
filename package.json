@@ -23,7 +23,8 @@
     "test:monde": "tsx tests/test-monde.mts",
     "test:corps": "tsx tests/test-corps.mts",
     "test:calame": "tsx tests/test-calame.mts",
-    "captures:monde": "node scripts/monde/captures.mjs"
+    "captures:monde": "node scripts/monde/captures.mjs",
+    "test:histoires": "tsx tests/test-histoires.mts"
   },
   "dependencies": {
     "@cantoo/pdf-lib": "^2.11.1",

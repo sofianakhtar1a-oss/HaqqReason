@@ -1,0 +1,1508 @@
+{
+ "debut": 7,
+ "lexique": {
+  "afraid": [
+   "effrayé, qui a peur",
+   "afraid",
+   "a"
+  ],
+  "arms": [
+   "bras",
+   "arm",
+   "n",
+   "bras"
+  ],
+  "asks": [
+   "demande",
+   "ask",
+   "v",
+   "demander"
+  ],
+  "bang": [
+   "bruit sec, détonation",
+   "bang",
+   "n"
+  ],
+  "batteries": [
+   "piles",
+   "battery",
+   "n",
+   "pile"
+  ],
+  "big": [
+   "grand, gros",
+   "big",
+   "a"
+  ],
+  "blows": [
+   "souffle",
+   "blow",
+   "v",
+   "souffler"
+  ],
+  "boat": [
+   "bateau",
+   "boat",
+   "n"
+  ],
+  "boats": [
+   "bateaux",
+   "boat",
+   "n",
+   "bateau"
+  ],
+  "box": [
+   "boîte",
+   "box",
+   "n"
+  ],
+  "bright": [
+   "vive, brillante",
+   "bright",
+   "a"
+  ],
+  "bucket": [
+   "seau",
+   "bucket",
+   "n"
+  ],
+  "calm": [
+   "calme",
+   "calm",
+   "a"
+  ],
+  "cat": [
+   "chat",
+   "cat",
+   "n"
+  ],
+  "clark": [
+   "Clark (nom de famille)",
+   "Clark",
+   "np"
+  ],
+  "climb": [
+   "montent",
+   "climb",
+   "v",
+   "grimper"
+  ],
+  "close": [
+   "ferme",
+   "close",
+   "v",
+   "fermer"
+  ],
+  "closes": [
+   "ferme",
+   "close",
+   "v",
+   "fermer"
+  ],
+  "clouds": [
+   "nuages",
+   "cloud",
+   "n",
+   "nuage"
+  ],
+  "coast": [
+   "côte",
+   "coast",
+   "n"
+  ],
+  "cold": [
+   "froid",
+   "cold",
+   "a"
+  ],
+  "come": [
+   "viens",
+   "come",
+   "v",
+   "venir"
+  ],
+  "coming": [
+   "arrive",
+   "come",
+   "v",
+   "venir"
+  ],
+  "dark": [
+   "sombre, noir",
+   "dark",
+   "a"
+  ],
+  "eats": [
+   "mange",
+   "eat",
+   "v",
+   "manger"
+  ],
+  "electricity": [
+   "électricité",
+   "electricity",
+   "n"
+  ],
+  "evening": [
+   "soir",
+   "evening",
+   "n"
+  ],
+  "face": [
+   "visage",
+   "face",
+   "n"
+  ],
+  "feet": [
+   "pattes, pieds",
+   "foot",
+   "n",
+   "pied"
+  ],
+  "fills": [
+   "remplit",
+   "fill",
+   "v",
+   "remplir"
+  ],
+  "finds": [
+   "trouve",
+   "find",
+   "v",
+   "trouver"
+  ],
+  "fish": [
+   "poisson",
+   "fish",
+   "n"
+  ],
+  "fishing": [
+   "pêche",
+   "fish",
+   "v",
+   "pêcher"
+  ],
+  "gives": [
+   "donne",
+   "give",
+   "v",
+   "donner"
+  ],
+  "goes": [
+   "va",
+   "go",
+   "v",
+   "aller"
+  ],
+  "good": [
+   "bon, bien",
+   "good",
+   "a"
+  ],
+  "grandfather's": [
+   "du grand-père",
+   "grandfather",
+   "n"
+  ],
+  "great": [
+   "grande",
+   "great",
+   "a"
+  ],
+  "hand": [
+   "main",
+   "hand",
+   "n"
+  ],
+  "happy": [
+   "content, heureux",
+   "happy",
+   "a"
+  ],
+  "harbour": [
+   "port",
+   "harbour",
+   "n"
+  ],
+  "hard": [
+   "fort, dur",
+   "hard",
+   "d"
+  ],
+  "help": [
+   "aider",
+   "help",
+   "v"
+  ],
+  "hero": [
+   "héros",
+   "hero",
+   "n"
+  ],
+  "hides": [
+   "se cache",
+   "hide",
+   "v",
+   "se cacher"
+  ],
+  "hit": [
+   "frappent",
+   "hit",
+   "v",
+   "frapper"
+  ],
+  "hits": [
+   "frappe",
+   "hit",
+   "v",
+   "frapper"
+  ],
+  "holds": [
+   "tient",
+   "hold",
+   "v",
+   "tenir"
+  ],
+  "hope": [
+   "espère",
+   "hope",
+   "v",
+   "espérer"
+  ],
+  "hug": [
+   "câlin",
+   "hug",
+   "n"
+  ],
+  "island": [
+   "île",
+   "island",
+   "n"
+  ],
+  "joe": [
+   "Joe (prénom)",
+   "Joe",
+   "np"
+  ],
+  "joe's": [
+   "de Joe",
+   "Joe",
+   "np"
+  ],
+  "joy": [
+   "joie",
+   "joy",
+   "n"
+  ],
+  "kitchen": [
+   "cuisine",
+   "kitchen",
+   "n"
+  ],
+  "know": [
+   "sais",
+   "know",
+   "v",
+   "savoir"
+  ],
+  "lantern": [
+   "lanterne",
+   "lantern",
+   "n"
+  ],
+  "laughs": [
+   "rit",
+   "laugh",
+   "v",
+   "rire"
+  ],
+  "light": [
+   "lumière",
+   "light",
+   "n"
+  ],
+  "lighthouse": [
+   "phare",
+   "lighthouse",
+   "n"
+  ],
+  "lights": [
+   "lumières",
+   "light",
+   "n",
+   "lumière"
+  ],
+  "lily": [
+   "Lily (prénom)",
+   "Lily",
+   "np"
+  ],
+  "little": [
+   "petit",
+   "little",
+   "a"
+  ],
+  "long": [
+   "longs, longues",
+   "long",
+   "a"
+  ],
+  "loud": [
+   "fort, bruyant",
+   "loud",
+   "a"
+  ],
+  "matches": [
+   "allumettes",
+   "match",
+   "n",
+   "allumette"
+  ],
+  "meow": [
+   "miaou",
+   "meow",
+   "n"
+  ],
+  "mia": [
+   "Mia (prénom)",
+   "Mia",
+   "np"
+  ],
+  "minutes": [
+   "minutes",
+   "minute",
+   "n",
+   "minute"
+  ],
+  "morning": [
+   "matin",
+   "morning",
+   "n"
+  ],
+  "mrs": [
+   "Madame",
+   "Mrs",
+   "n"
+  ],
+  "needs": [
+   "a besoin de",
+   "need",
+   "v",
+   "avoir besoin de"
+  ],
+  "night": [
+   "nuit",
+   "night",
+   "n"
+  ],
+  "old": [
+   "vieux, vieille",
+   "old",
+   "a"
+  ],
+  "omar": [
+   "Omar (prénom)",
+   "Omar",
+   "np"
+  ],
+  "opens": [
+   "ouvre",
+   "open",
+   "v",
+   "ouvrir"
+  ],
+  "past": [
+   "devant, au-delà de",
+   "past",
+   "r"
+  ],
+  "pebble": [
+   "Pebble (prénom du chat)",
+   "Pebble",
+   "np"
+  ],
+  "people": [
+   "gens",
+   "people",
+   "n"
+  ],
+  "purrs": [
+   "ronronne",
+   "purr",
+   "v",
+   "ronronner"
+  ],
+  "puts": [
+   "pose",
+   "put",
+   "v",
+   "poser, mettre"
+  ],
+  "radio": [
+   "radio",
+   "radio",
+   "n"
+  ],
+  "rain": [
+   "pluie",
+   "rain",
+   "n"
+  ],
+  "rocks": [
+   "rochers",
+   "rock",
+   "n",
+   "rocher"
+  ],
+  "room": [
+   "pièce",
+   "room",
+   "n"
+  ],
+  "runs": [
+   "court",
+   "run",
+   "v",
+   "courir"
+  ],
+  "sad": [
+   "triste",
+   "sad",
+   "a"
+  ],
+  "safe": [
+   "sain et sauf",
+   "safe",
+   "a"
+  ],
+  "sam": [
+   "Sam (prénom)",
+   "Sam",
+   "np"
+  ],
+  "say": [
+   "disent",
+   "say",
+   "v",
+   "dire"
+  ],
+  "says": [
+   "dit",
+   "say",
+   "v",
+   "dire"
+  ],
+  "scratches": [
+   "gratte",
+   "scratch",
+   "v",
+   "gratter"
+  ],
+  "sea": [
+   "mer",
+   "sea",
+   "n"
+  ],
+  "see": [
+   "voir",
+   "see",
+   "v"
+  ],
+  "sees": [
+   "voit",
+   "see",
+   "v",
+   "voir"
+  ],
+  "shakes": [
+   "tremble",
+   "shake",
+   "v",
+   "trembler"
+  ],
+  "shelf": [
+   "étagère",
+   "shelf",
+   "n"
+  ],
+  "shines": [
+   "brille",
+   "shine",
+   "v",
+   "briller"
+  ],
+  "shout": [
+   "crient",
+   "shout",
+   "v",
+   "crier"
+  ],
+  "shows": [
+   "montre",
+   "show",
+   "v",
+   "montrer"
+  ],
+  "sits": [
+   "est assis, s'assoit",
+   "sit",
+   "v",
+   "s'asseoir"
+  ],
+  "sleeps": [
+   "dort",
+   "sleep",
+   "v",
+   "dormir"
+  ],
+  "slowly": [
+   "lentement",
+   "slowly",
+   "d"
+  ],
+  "small": [
+   "petit",
+   "small",
+   "a"
+  ],
+  "stairs": [
+   "escalier",
+   "stairs",
+   "n"
+  ],
+  "starts": [
+   "commence",
+   "start",
+   "v",
+   "commencer"
+  ],
+  "stay": [
+   "reste",
+   "stay",
+   "v",
+   "rester"
+  ],
+  "storeroom": [
+   "débarras",
+   "storeroom",
+   "n"
+  ],
+  "storm": [
+   "tempête",
+   "storm",
+   "n"
+  ],
+  "strong": [
+   "fort",
+   "strong",
+   "a"
+  ],
+  "suddenly": [
+   "soudain",
+   "suddenly",
+   "d"
+  ],
+  "sun": [
+   "soleil",
+   "sun",
+   "n"
+  ],
+  "table": [
+   "table",
+   "table",
+   "n"
+  ],
+  "takes": [
+   "prend",
+   "take",
+   "v",
+   "prendre"
+  ],
+  "top": [
+   "sommet, haut",
+   "top",
+   "n"
+  ],
+  "torch": [
+   "lampe de poche",
+   "torch",
+   "n"
+  ],
+  "turns": [
+   "tourne",
+   "turn",
+   "v",
+   "tourner"
+  ],
+  "use": [
+   "me sers de",
+   "use",
+   "v",
+   "utiliser"
+  ],
+  "village": [
+   "village",
+   "village",
+   "n"
+  ],
+  "voice": [
+   "voix",
+   "voice",
+   "n"
+  ],
+  "wait": [
+   "attendent",
+   "wait",
+   "v",
+   "attendre"
+  ],
+  "warm": [
+   "chaud",
+   "warm",
+   "a"
+  ],
+  "waves": [
+   "vagues",
+   "wave",
+   "n",
+   "vague"
+  ],
+  "way": [
+   "chemin",
+   "way",
+   "n"
+  ],
+  "white": [
+   "blanc",
+   "white",
+   "a"
+  ],
+  "wind": [
+   "vent",
+   "wind",
+   "n"
+  ],
+  "window": [
+   "fenêtre",
+   "window",
+   "n"
+  ],
+  "windows": [
+   "fenêtres",
+   "window",
+   "n",
+   "fenêtre"
+  ],
+  "wooden": [
+   "en bois",
+   "wooden",
+   "a"
+  ],
+  "works": [
+   "fonctionne",
+   "work",
+   "v",
+   "travailler, fonctionner"
+  ],
+  "worried": [
+   "inquiet",
+   "worried",
+   "a"
+  ],
+  "yellow": [
+   "jaune",
+   "yellow",
+   "a"
+  ]
+ },
+ "pages": [
+  {
+   "titre": "Chapter 4 — The storm",
+   "titreFr": "Chapitre 4 — La tempête",
+   "p": [
+    [
+     {
+      "en": "One evening, Joe listens to the radio.",
+      "fr": "Un soir, Joe écoute la radio.",
+      "g": {
+       "listens": [
+        "écoute (listens to)",
+        "listen",
+        "v",
+        "écouter"
+       ],
+       "to": [
+        "(listens to : écoute)",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“A big storm is coming tonight,” says the radio.",
+      "fr": "« Une grosse tempête arrive ce soir », dit la radio."
+     },
+     {
+      "en": "“There is a strong wind and a lot of rain.”",
+      "fr": "« Il y a un vent fort et beaucoup de pluie. »",
+      "g": {
+       "a#2": [
+        "beaucoup (a lot of)",
+        "a",
+        "t"
+       ],
+       "lot": [
+        "(a lot of : beaucoup de)",
+        "lot",
+        "n"
+       ],
+       "of": [
+        "(a lot of : beaucoup de)",
+        "of",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Joe is worried.",
+      "fr": "Joe est inquiet."
+     },
+     {
+      "en": "“Sam is fishing tonight,” he says.",
+      "fr": "« Sam pêche ce soir », dit-il."
+     },
+     {
+      "en": "“I hope he comes home soon.”",
+      "fr": "« J'espère qu'il rentre vite. »",
+      "g": {
+       "comes": [
+        "rentre (comes home)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "home": [
+        "(comes home : rentre)",
+        "home",
+        "d"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“Mia, close the windows,” says Joe.",
+      "fr": "« Mia, ferme les fenêtres », dit Joe."
+     },
+     {
+      "en": "Mia closes all the windows.",
+      "fr": "Mia ferme toutes les fenêtres."
+     },
+     {
+      "en": "Dark clouds are coming over the sea.",
+      "fr": "De sombres nuages arrivent au-dessus de la mer.",
+      "g": {
+       "coming": [
+        "arrivent",
+        "come",
+        "v",
+        "venir"
+       ]
+      }
+     },
+     {
+      "en": "The wind blows hard.",
+      "fr": "Le vent souffle fort."
+     }
+    ],
+    [
+     {
+      "en": "The rain starts.",
+      "fr": "La pluie commence."
+     },
+     {
+      "en": "It hits the windows.",
+      "fr": "Elle frappe les fenêtres."
+     },
+     {
+      "en": "The waves are big and white.",
+      "fr": "Les vagues sont grosses et blanches."
+     },
+     {
+      "en": "The lighthouse shakes a little.",
+      "fr": "Le phare tremble un peu."
+     },
+     {
+      "en": "Pebble is not happy.",
+      "fr": "Pebble n'est pas content."
+     },
+     {
+      "en": "He hides under the table.",
+      "fr": "Il se cache sous la table."
+     },
+     {
+      "en": "“Don't be afraid, Pebble,” says Mia.",
+      "fr": "« N'aie pas peur, Pebble », dit Mia."
+     },
+     {
+      "en": "“Our light is strong.”",
+      "fr": "« Notre lumière est forte. »"
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Suddenly, there is a loud bang.",
+      "fr": "Soudain, il y a un grand bruit sec."
+     },
+     {
+      "en": "The lights in the kitchen go out.",
+      "fr": "Les lumières de la cuisine s'éteignent.",
+      "g": {
+       "go": [
+        "s'éteignent (go out)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "out": [
+        "(go out : s'éteignent)",
+        "out",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Everything is dark.",
+      "fr": "Tout est noir."
+     },
+     {
+      "en": "The wind is very loud.",
+      "fr": "Le vent est très fort."
+     },
+     {
+      "en": "Mia holds Pebble in her arms.",
+      "fr": "Mia serre Pebble dans ses bras."
+     },
+     {
+      "en": "“What is that?” asks Mia.",
+      "fr": "« Qu'est-ce que c'est ? » demande Mia."
+     }
+    ],
+    [
+     {
+      "en": "Joe finds a torch.",
+      "fr": "Joe trouve une lampe de poche."
+     },
+     {
+      "en": "“The electricity is off,” he says.",
+      "fr": "« Il n'y a plus d'électricité », dit-il."
+     },
+     {
+      "en": "He runs up the stairs.",
+      "fr": "Il monte l'escalier en courant."
+     },
+     {
+      "en": "He looks at the great light.",
+      "fr": "Il regarde la grande lumière.",
+      "g": {
+       "looks": [
+        "regarde (looks at)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(looks at : regarde)",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "It is dark too.",
+      "fr": "Elle est éteinte aussi.",
+      "g": {
+       "dark": [
+        "éteinte",
+        "dark",
+        "a",
+        "sombre, noir"
+       ]
+      }
+     },
+     {
+      "en": "“Oh no!” says Joe.",
+      "fr": "« Oh non ! » dit Joe."
+     }
+    ],
+    [
+     {
+      "en": "The old radio works with batteries.",
+      "fr": "La vieille radio fonctionne avec des piles."
+     },
+     {
+      "en": "“Hello, Joe! This is Sam,” says a voice.",
+      "fr": "« Allô, Joe ! Ici Sam », dit une voix.",
+      "g": {
+       "hello": [
+        "allô",
+        "hello",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“I am at sea in the storm.”",
+      "fr": "« Je suis en mer dans la tempête. »",
+      "g": {
+       "at": [
+        "en (at sea : en mer)",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“I cannot see the island!”",
+      "fr": "« Je ne vois pas l'île ! »"
+     },
+     {
+      "en": "Mia is very worried.",
+      "fr": "Mia est très inquiète."
+     },
+     {
+      "en": "“There are rocks near the island,” says Joe.",
+      "fr": "« Il y a des rochers près de l'île », dit Joe."
+     },
+     {
+      "en": "“Sam needs a light!”",
+      "fr": "« Sam a besoin d'une lumière ! »"
+     }
+    ]
+   ]
+  },
+  {
+   "titre": "Chapter 5 — Pebble has an idea",
+   "titreFr": "Chapitre 5 — Pebble a une idée",
+   "p": [
+    [
+     {
+      "en": "Joe's torch is small.",
+      "fr": "La lampe de poche de Joe est petite."
+     },
+     {
+      "en": "It is too small for the sea.",
+      "fr": "Elle est trop petite pour la mer."
+     },
+     {
+      "en": "“What can we do?” asks Mia.",
+      "fr": "« Que pouvons-nous faire ? » demande Mia."
+     },
+     {
+      "en": "“I do not know,” says Joe.",
+      "fr": "« Je ne sais pas », dit Joe.",
+      "g": {
+       "do": [
+        "(do not : ne… pas)",
+        "do",
+        "v",
+        "faire"
+       ]
+      }
+     },
+     {
+      "en": "He looks very sad.",
+      "fr": "Il a l'air très triste.",
+      "g": {
+       "looks": [
+        "a l'air",
+        "look",
+        "v",
+        "regarder, avoir l'air"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Suddenly, Pebble runs down the stairs.",
+      "fr": "Soudain, Pebble descend l'escalier en courant."
+     },
+     {
+      "en": "“Meow! Meow!”",
+      "fr": "« Miaou ! Miaou ! »"
+     },
+     {
+      "en": "He goes to a small dark room.",
+      "fr": "Il va dans une petite pièce sombre."
+     },
+     {
+      "en": "It is the storeroom.",
+      "fr": "C'est le débarras."
+     },
+     {
+      "en": "Pebble sits on an old wooden box.",
+      "fr": "Pebble s'assoit sur une vieille boîte en bois."
+     },
+     {
+      "en": "He scratches the box with his feet.",
+      "fr": "Il gratte la boîte avec ses pattes."
+     },
+     {
+      "en": "“What is it, Pebble?” asks Mia.",
+      "fr": "« Qu'y a-t-il, Pebble ? » demande Mia."
+     }
+    ],
+    [
+     {
+      "en": "Joe opens the box.",
+      "fr": "Joe ouvre la boîte."
+     },
+     {
+      "en": "Inside, there is an old lantern.",
+      "fr": "Dedans, il y a une vieille lanterne."
+     },
+     {
+      "en": "“This is my grandfather's lantern!” he says.",
+      "fr": "« C'est la lanterne de mon grand-père ! » dit-il."
+     },
+     {
+      "en": "“I never use it, but it is good.”",
+      "fr": "« Je ne m'en sers jamais, mais elle est en bon état. »",
+      "g": {
+       "good": [
+        "en bon état",
+        "good",
+        "a",
+        "bon"
+       ]
+      }
+     },
+     {
+      "en": "“Good cat, Pebble!” says Mia.",
+      "fr": "« Bon chat, Pebble ! » dit Mia."
+     },
+     {
+      "en": "She gives him a big hug.",
+      "fr": "Elle le serre fort dans ses bras."
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "Joe takes the lantern and some matches.",
+      "fr": "Joe prend la lanterne et des allumettes."
+     },
+     {
+      "en": "He lights the lantern.",
+      "fr": "Il allume la lanterne."
+     },
+     {
+      "en": "A warm yellow light fills the room.",
+      "fr": "Une chaude lumière jaune remplit la pièce."
+     },
+     {
+      "en": "“We can help Sam,” says Joe.",
+      "fr": "« Nous pouvons aider Sam », dit Joe."
+     },
+     {
+      "en": "“Come with me, Mia,” says Joe.",
+      "fr": "« Viens avec moi, Mia », dit Joe."
+     },
+     {
+      "en": "“Stay near me.”",
+      "fr": "« Reste près de moi. »"
+     }
+    ],
+    [
+     {
+      "en": "They climb the stairs in the dark.",
+      "fr": "Ils montent l'escalier dans le noir."
+     },
+     {
+      "en": "The wind is very loud.",
+      "fr": "Le vent est très fort."
+     },
+     {
+      "en": "The lighthouse shakes in the storm.",
+      "fr": "Le phare tremble dans la tempête."
+     },
+     {
+      "en": "Mia holds Joe's hand.",
+      "fr": "Mia tient la main de Joe."
+     },
+     {
+      "en": "Pebble runs in front of them.",
+      "fr": "Pebble court devant eux.",
+      "g": {
+       "in": [
+        "devant (in front of)",
+        "in",
+        "r"
+       ],
+       "front": [
+        "(in front of : devant)",
+        "front",
+        "n"
+       ],
+       "of": [
+        "(in front of : devant)",
+        "of",
+        "r"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "They are at the top.",
+      "fr": "Ils sont tout en haut."
+     },
+     {
+      "en": "Joe puts the lantern in the big window.",
+      "fr": "Joe pose la lanterne dans la grande fenêtre."
+     },
+     {
+      "en": "The light is small, but it is bright.",
+      "fr": "La lumière est petite, mais elle est vive."
+     },
+     {
+      "en": "“Please, Sam, see our light,” says Mia.",
+      "fr": "« S'il te plaît, Sam, vois notre lumière », dit Mia.",
+      "g": {
+       "see": [
+        "vois",
+        "see",
+        "v",
+        "voir"
+       ]
+      }
+     },
+     {
+      "en": "Mia and Joe wait.",
+      "fr": "Mia et Joe attendent."
+     },
+     {
+      "en": "They look at the dark sea.",
+      "fr": "Ils regardent la mer sombre.",
+      "g": {
+       "look": [
+        "regardent (look at)",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "at": [
+        "(look at : regarde)",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "The minutes are long.",
+      "fr": "Les minutes sont longues."
+     },
+     {
+      "en": "Pebble sits next to the lantern.",
+      "fr": "Pebble s'assoit à côté de la lanterne.",
+      "g": {
+       "next": [
+        "à côté (next to)",
+        "next",
+        "a"
+       ],
+       "to": [
+        "(next to : à côté de)",
+        "to",
+        "r"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "titre": "Chapter 6 — Sam sees the light",
+   "titreFr": "Chapitre 6 — Sam voit la lumière",
+   "p": [
+    [
+     {
+      "en": "Sam is in his boat.",
+      "fr": "Sam est dans son bateau."
+     },
+     {
+      "en": "The waves hit the boat.",
+      "fr": "Les vagues frappent le bateau."
+     },
+     {
+      "en": "The rain is on his face.",
+      "fr": "La pluie lui coule sur le visage."
+     },
+     {
+      "en": "It is very dark.",
+      "fr": "Il fait très noir."
+     },
+     {
+      "en": "He cannot see the coast.",
+      "fr": "Il ne voit pas la côte."
+     },
+     {
+      "en": "He is cold and afraid.",
+      "fr": "Il a froid et peur."
+     },
+     {
+      "en": "“Where is the island?” he says.",
+      "fr": "« Où est l'île ? » dit-il."
+     }
+    ],
+    [
+     {
+      "en": "Then he sees something.",
+      "fr": "Puis il voit quelque chose."
+     },
+     {
+      "en": "It is a small yellow light!",
+      "fr": "C'est une petite lumière jaune !"
+     },
+     {
+      "en": "“A light!” says Sam.",
+      "fr": "« Une lumière ! » dit Sam."
+     },
+     {
+      "en": "“It is the lighthouse!”",
+      "fr": "« C'est le phare ! »"
+     },
+     {
+      "en": "He turns the boat towards the light.",
+      "fr": "Il tourne le bateau vers la lumière."
+     },
+     {
+      "en": "The light is small, but it shows the way.",
+      "fr": "La lumière est petite, mais elle montre le chemin."
+     }
+    ],
+    [
+     {
+      "en": "Slowly, the boat goes past the rocks.",
+      "fr": "Lentement, le bateau passe devant les rochers."
+     },
+     {
+      "en": "Soon Sam sees the harbour.",
+      "fr": "Bientôt, Sam voit le port."
+     },
+     {
+      "en": "He is safe!",
+      "fr": "Il est sain et sauf !"
+     },
+     {
+      "en": "He takes the radio.",
+      "fr": "Il prend la radio."
+     },
+     {
+      "en": "“Joe, I see your light! Thank you!”",
+      "fr": "« Joe, je vois ta lumière ! Merci ! »",
+      "g": {
+       "thank": [
+        "merci (thank you)",
+        "thank",
+        "v",
+        "remercier"
+       ],
+       "you": [
+        "(thank you : merci)",
+        "you",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "In the lighthouse, Mia and Joe shout with joy.",
+      "fr": "Dans le phare, Mia et Joe crient de joie."
+     }
+    ]
+   ]
+  },
+  {
+   "titre": "Chapter 7 — Thank you, Pebble!",
+   "titreFr": "Chapitre 7 — Merci, Pebble !",
+   "p": [
+    [
+     {
+      "en": "The next morning, the storm is gone.",
+      "fr": "Le lendemain matin, la tempête est passée.",
+      "g": {
+       "gone": [
+        "passée (is gone)",
+        "go",
+        "v",
+        "aller, partir"
+       ]
+      }
+     },
+     {
+      "en": "The sun shines and the sea is calm.",
+      "fr": "Le soleil brille et la mer est calme."
+     },
+     {
+      "en": "The electricity is on again.",
+      "fr": "L'électricité est revenue.",
+      "g": {
+       "on": [
+        "en marche",
+        "on",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Sam is at home and he is happy.",
+      "fr": "Sam est chez lui et il est content.",
+      "g": {
+       "home": [
+        "chez lui",
+        "home",
+        "d"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Many boats come to Gull Island.",
+      "fr": "De nombreux bateaux viennent à Gull Island.",
+      "g": {
+       "come": [
+        "viennent",
+        "come",
+        "v",
+        "venir"
+       ],
+       "gull": [
+        "Gull (mouette)",
+        "gull",
+        "np",
+        "mouette"
+       ]
+      }
+     },
+     {
+      "en": "People from the village are on them.",
+      "fr": "Des gens du village sont à bord.",
+      "g": {
+       "on": [
+        "à bord de",
+        "on",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Mrs Clark, Lily and Omar are there too.",
+      "fr": "Mme Clark, Lily et Omar sont là aussi."
+     },
+     {
+      "en": "“Thank you, Mia! Thank you, Joe!” they say.",
+      "fr": "« Merci, Mia ! Merci, Joe ! » disent-ils.",
+      "g": {
+       "thank": [
+        "merci (thank you)",
+        "thank",
+        "v",
+        "remercier"
+       ],
+       "you": [
+        "(thank you : merci)",
+        "you",
+        "p"
+       ],
+       "thank#2": [
+        "merci (thank you)",
+        "thank",
+        "v",
+        "remercier"
+       ],
+       "you#2": [
+        "(thank you : merci)",
+        "you",
+        "p"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "Sam has a big fish in a bucket.",
+      "fr": "Sam a un gros poisson dans un seau."
+     },
+     {
+      "en": "“This is for the hero of the night,” he says.",
+      "fr": "« C'est pour le héros de la nuit », dit-il."
+     },
+     {
+      "en": "Pebble eats the fish and purrs.",
+      "fr": "Pebble mange le poisson et ronronne."
+     },
+     {
+      "en": "Everyone laughs.",
+      "fr": "Tout le monde rit."
+     }
+    ],
+    [
+     {
+      "en": "That evening, the great light turns again.",
+      "fr": "Ce soir-là, la grande lumière tourne de nouveau."
+     },
+     {
+      "en": "Joe puts the old lantern on a shelf.",
+      "fr": "Joe pose la vieille lanterne sur une étagère."
+     },
+     {
+      "en": "Pebble sleeps next to it at the top.",
+      "fr": "Pebble dort à côté, tout en haut.",
+      "g": {
+       "next": [
+        "à côté (next to)",
+        "next",
+        "a"
+       ],
+       "to": [
+        "(next to : à côté de)",
+        "to",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“Good night, little cat,” says Mia.",
+      "fr": "« Bonne nuit, petit chat », dit Mia.",
+      "g": {
+       "good": [
+        "bon (good night : bonne nuit)",
+        "good",
+        "a"
+       ],
+       "night": [
+        "(good night : bonne nuit)",
+        "night",
+        "n"
+       ],
+       "little": [
+        "petit",
+        "little",
+        "a"
+       ]
+      }
+     }
+    ]
+   ]
+  }
+ ]
+}

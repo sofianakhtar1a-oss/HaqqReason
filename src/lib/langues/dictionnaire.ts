@@ -53,6 +53,7 @@ export function libelleOrigine(o: OrigineMot): string {
   if (o.type === "video") return `Vidéo · ${o.titre}`;
   if (o.type === "pdf") return `PDF · ${o.titre}, p. ${o.page}`;
   if (o.type === "theme") return `Thème · ${o.titre}`;
+  if (o.type === "histoire") return `Histoire · ${o.titre}, p. ${o.page}`;
   return "Ajouté à la main";
 }
 

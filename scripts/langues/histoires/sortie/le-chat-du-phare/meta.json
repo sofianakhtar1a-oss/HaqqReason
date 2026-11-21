@@ -1,0 +1,19 @@
+{
+  "id": "le-chat-du-phare",
+  "titre": "The Lighthouse Cat",
+  "titreFr": "Le chat du phare",
+  "auteur": "HaqqReason",
+  "niveau": "A1",
+  "genre": "Aventure",
+  "resume": "Mia, dix ans, vit dans un phare sur une petite île avec son grand-père Joe et leur chat gris, Pebble. Un soir, une grosse tempête éteint la grande lumière alors que le bateau de Sam est encore en mer. Pebble connaît peut-être le secret qui peut tout sauver.",
+  "questions": [
+    { "q": "Où vit Mia ?", "o": ["Dans un phare, sur une petite île", "Dans une ferme au village", "Dans une grande ville"], "i": "Relis la première page.", "e": "Mia vit dans un phare, sur la petite île de Gull Island, avec son grand-père Joe." },
+    { "q": "Quel est le métier de Joe ?", "o": ["Il est gardien du phare", "Il est pêcheur", "Il est maître d'école"], "i": "Regarde la page 1.", "e": "Joe est le gardien du phare : il s'occupe de la grande lumière." },
+    { "q": "Comment Mia va-t-elle à l'école ?", "o": ["En bateau, avec Sam", "À pied", "En voiture"], "i": "Le chapitre 2 le raconte.", "e": "Chaque matin, Sam, le pêcheur, emmène Mia à l'école dans son petit bateau rouge." },
+    { "q": "Que répond Mia quand la maîtresse demande à quoi sert un phare ?", "o": ["Il aide les bateaux la nuit", "Il donne l'heure aux enfants", "Il garde les poissons"], "i": "C'est la leçon sur la mer, à la page 4.", "e": "Mia répond qu'un phare aide les bateaux la nuit et qu'il montre les rochers." },
+    { "q": "Que fait Joe chaque soir au sommet du phare ?", "o": ["Il allume la grande lumière", "Il prépare le dîner", "Il pêche des poissons"], "i": "Pense à la page 6.", "e": "Joe appuie sur un bouton et la grande lumière tourne sur la mer." },
+    { "q": "Que se passe-t-il pendant la tempête ?", "o": ["L'électricité s'arrête et la grande lumière s'éteint", "Le phare tombe dans la mer", "Pebble se perd sur l'île"], "i": "Lis la page 8.", "e": "Il y a un grand bruit, les lumières s'éteignent et la grande lumière du phare ne brille plus." },
+    { "q": "Où Pebble conduit-il Mia et Joe ?", "o": ["Au débarras, vers une vieille boîte", "Au sommet du phare", "Au port, près du bateau de Sam"], "i": "Chapitre 5.", "e": "Pebble va au débarras et gratte une vieille boîte en bois : elle contient la vieille lanterne." },
+    { "q": "Comment Sam rentre-t-il au port ?", "o": ["Il voit la petite lumière de la lanterne", "Il suit un autre bateau", "Il attend le matin"], "i": "Chapitre 6.", "e": "Sam voit une petite lumière jaune dans le noir : c'est la lanterne dans la fenêtre du phare. Il tourne son bateau vers elle et arrive sain et sauf." }
+  ]
+}

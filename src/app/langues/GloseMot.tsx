@@ -30,6 +30,8 @@ type Props = {
   onEcouter?: (t: number) => void;
   /** Langue du texte touché : l'anglais (traduit en français) ou le français (traduit en anglais). */
   langue?: "en" | "fr";
+  /** Le sens de la forme de base, quand il est déjà connu (histoires préparées) : pas besoin de le demander. */
+  sensBase?: string;
 };
 
 /** Ce que l'on range dans le dictionnaire pour le mot touché. */
@@ -62,6 +64,10 @@ export function GloseMot(p: Props) {
      Pour le dictionnaire, une forme conjuguée ou accordée reçoit aussi le sens de sa forme de base. */
   const ajouter = async () => {
     let m = mot;
+    if (p.sensBase && m.lemme && m.forme && m.lemme.toLowerCase() !== m.forme.toLowerCase()) {
+      ajouterMot({ ...m, fr: p.sensBase });
+      return;
+    }
     // Un verbe est toujours repris à l'infinitif : « would happen » donnerait sinon « se produirait ».
     if (langue === "en" && m.lemme && m.forme && (m.nature === "verbe" || m.lemme.toLowerCase() !== m.forme.toLowerCase())) {
       setEnCours(true);

@@ -26,6 +26,7 @@ const ORIGINES: { id: FiltreOrigine; nom: string }[] = [
   { id: "tous", nom: "Toutes origines" },
   { id: "video", nom: "Vidéos" },
   { id: "pdf", nom: "PDF" },
+  { id: "histoire", nom: "Histoires" },
   { id: "theme", nom: "Thèmes" },
   { id: "manuel", nom: "À la main" },
 ];

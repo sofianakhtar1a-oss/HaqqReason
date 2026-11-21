@@ -7,12 +7,18 @@ import { type DocumentLangue, ecrire, ecrireBlob, effacer, listerDocuments, lire
 import { cleOriginal } from "@/lib/langues/pdf";
 import { BoutonSupprimer, ChoixLangue } from "./communs";
 import { useTextes } from "@/lib/modules/textes-client";
+import { Bibliotheque } from "./histoires/Bibliotheque";
+import { LiseuseHistoire } from "./histoires/LiseuseHistoire";
 import { LiseusePdf } from "./LiseusePdf";
 
 /*
- * Lire : un PDF en anglais ou en français devient un livre où chaque mot se traduit dans l'autre langue.
- * Le texte est extrait ici, dans le navigateur ; seules les phrases à traduire sont envoyées.
+ * Lire : d'abord la bibliothèque d'histoires en anglais (A1 à C2), chaque mot traduit d'avance ;
+ * puis tes PDF, en anglais ou en français, où chaque mot se traduit dans l'autre langue.
+ * Le texte d'un PDF est extrait ici, dans le navigateur ; seules les phrases à traduire sont envoyées.
+ * Adresses : #lire, #lire/<document>, #lire/histoire/<histoire>.
  */
+
+const HISTOIRE = "histoire/";
 
 const nouvelId = () => (typeof crypto !== "undefined" && "randomUUID" in crypto ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`);
 
@@ -32,7 +38,7 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
   useArrivees(MAGASINS_DOCUMENTS, recharger);
 
   useEffect(() => {
-    if (!ouvert) return;
+    if (!ouvert || ouvert.startsWith(HISTOIRE)) return;
     let fini = false;
     void lireUn<DocumentLangue>("documents", ouvert).then((x) => {
       if (fini) return;
@@ -83,6 +89,10 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
     }
   };
 
+  if (ouvert?.startsWith(HISTOIRE)) {
+    const id = ouvert.slice(HISTOIRE.length);
+    return <LiseuseHistoire key={id} id={id} onFermer={() => onOuvrir(null)} onOuvrir={(autre) => onOuvrir(`${HISTOIRE}${autre}`)} />;
+  }
   if (courant && courant.id === ouvert) return <LiseusePdf key={courant.id} document={courant} onFermer={() => { onOuvrir(null); recharger(); }} />;
 
   return (
@@ -92,9 +102,13 @@ export function Lire({ ouvert, onOuvrir }: { ouvert: string | null; onOuvrir: (i
           <h2 id="titre-lire" className="lg-titre">
             {t("lire.titre")}
           </h2>
-          <p className="lg-chapo">{t("lire.chapo")}</p>
         </div>
       </div>
+
+      <Bibliotheque onOuvrir={(id) => onOuvrir(`${HISTOIRE}${id}`)} />
+
+      <h3 className="lg-sous-titre hs-pdf-titre">{t("lire.pdf")}</h3>
+      <p className="lg-chapo hs-pdf-chapo">{t("lire.chapo")}</p>
 
       {lecture ? (
         <div className="lg-travail" role="status">

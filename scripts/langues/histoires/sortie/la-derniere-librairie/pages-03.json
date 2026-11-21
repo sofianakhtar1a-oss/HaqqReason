@@ -1,0 +1,4044 @@
+{
+ "debut": 11,
+ "lexique": {
+  "summer": [
+   "été",
+   "summer",
+   "n"
+  ],
+  "september": [
+   "septembre",
+   "September",
+   "n"
+  ],
+  "weather": [
+   "temps",
+   "weather",
+   "n"
+  ],
+  "storm": [
+   "orage",
+   "storm",
+   "n"
+  ],
+  "arrived": [
+   "arriva",
+   "arrive",
+   "v",
+   "arriver"
+  ],
+  "wednesday": [
+   "mercredi",
+   "Wednesday",
+   "n"
+  ],
+  "night": [
+   "nuit",
+   "night",
+   "n"
+  ],
+  "rain": [
+   "pluie",
+   "rain",
+   "n"
+  ],
+  "harbour": [
+   "Harbour (nom de rue : port)",
+   "harbour",
+   "np"
+  ],
+  "street": [
+   "rue",
+   "street",
+   "n"
+  ],
+  "river": [
+   "rivière",
+   "river",
+   "n"
+  ],
+  "noah": [
+   "Noah (prénom)",
+   "Noah",
+   "np"
+  ],
+  "steady": [
+   "régulier",
+   "steady",
+   "a"
+  ],
+  "shop": [
+   "boutique",
+   "shop",
+   "n"
+  ],
+  "sound": [
+   "bruit",
+   "sound",
+   "n"
+  ],
+  "oak": [
+   "en chêne",
+   "oak",
+   "n"
+  ],
+  "bookcase": [
+   "bibliothèque",
+   "bookcase",
+   "n"
+  ],
+  "poetry": [
+   "poésie",
+   "poetry",
+   "n"
+  ],
+  "mrs": [
+   "Mme",
+   "Mrs",
+   "n"
+  ],
+  "okafor": [
+   "Okafor (nom de famille)",
+   "Okafor",
+   "np"
+  ],
+  "called": [
+   "appela",
+   "call",
+   "v",
+   "appeler"
+  ],
+  "leak": [
+   "fuite",
+   "leak",
+   "n"
+  ],
+  "slippers": [
+   "pantoufles",
+   "slipper",
+   "n",
+   "pantoufle"
+  ],
+  "dressing": [
+   "robe de chambre (dressing gown)",
+   "dressing",
+   "n"
+  ],
+  "gown": [
+   "(dressing gown : robe de chambre)",
+   "gown",
+   "n"
+  ],
+  "general": [
+   "général",
+   "general",
+   "n"
+  ],
+  "said": [
+   "dit",
+   "say",
+   "v",
+   "dire"
+  ],
+  "minutes": [
+   "minutes",
+   "minute",
+   "n",
+   "minute"
+  ],
+  "book": [
+   "livre",
+   "book",
+   "n"
+  ],
+  "zara": [
+   "Zara (prénom)",
+   "Zara",
+   "np"
+  ],
+  "wall": [
+   "mur",
+   "wall",
+   "n"
+  ],
+  "wooden": [
+   "en bois",
+   "wooden",
+   "a"
+  ],
+  "phone": [
+   "téléphone",
+   "phone",
+   "n"
+  ],
+  "nobody": [
+   "personne",
+   "nobody",
+   "p"
+  ],
+  "hands": [
+   "mains",
+   "hand",
+   "n",
+   "main"
+  ],
+  "open": [
+   "ouvrir",
+   "open",
+   "v"
+  ],
+  "o": [
+   "O (initiale)",
+   "O",
+   "np"
+  ],
+  "string": [
+   "ficelle",
+   "string",
+   "n"
+  ],
+  "oilcloth": [
+   "toile cirée",
+   "oilcloth",
+   "n"
+  ],
+  "gold": [
+   "doré",
+   "gold",
+   "a"
+  ],
+  "moment": [
+   "moment",
+   "moment",
+   "n"
+  ],
+  "envelope": [
+   "enveloppe",
+   "envelope",
+   "n"
+  ],
+  "letter": [
+   "lettre",
+   "letter",
+   "n"
+  ],
+  "silence": [
+   "silence",
+   "silence",
+   "n"
+  ],
+  "gracie": [
+   "Gracie (diminutif de Grace)",
+   "Gracie",
+   "np"
+  ],
+  "aloud": [
+   "à voix haute",
+   "aloud",
+   "d"
+  ],
+  "shelf": [
+   "étagère",
+   "shelf",
+   "n"
+  ],
+  "bookshop": [
+   "librairie",
+   "bookshop",
+   "n"
+  ],
+  "day": [
+   "jour",
+   "day",
+   "n"
+  ],
+  "eyes": [
+   "yeux",
+   "eye",
+   "n",
+   "œil"
+  ],
+  "rainy": [
+   "de pluie",
+   "rainy",
+   "a"
+  ],
+  "years": [
+   "années",
+   "year",
+   "n",
+   "année"
+  ],
+  "man": [
+   "homme",
+   "man",
+   "n"
+  ],
+  "morning": [
+   "matin",
+   "morning",
+   "n"
+  ],
+  "woman": [
+   "femme",
+   "woman",
+   "n"
+  ],
+  "london": [
+   "Londres",
+   "London",
+   "np"
+  ],
+  "train": [
+   "train",
+   "train",
+   "n"
+  ],
+  "ms": [
+   "Mme",
+   "Ms",
+   "n"
+  ],
+  "cat": [
+   "chat",
+   "cat",
+   "n"
+  ],
+  "white": [
+   "blanc",
+   "white",
+   "a"
+  ],
+  "hours": [
+   "heures",
+   "hour",
+   "n",
+   "heure"
+  ],
+  "whitcombe": [
+   "Whitcombe (nom de famille)",
+   "Whitcombe",
+   "np"
+  ],
+  "three": [
+   "trois",
+   "three",
+   "a"
+  ],
+  "mr": [
+   "M.",
+   "Mr",
+   "n"
+  ],
+  "hale": [
+   "Hale (nom de famille)",
+   "Hale",
+   "np"
+  ],
+  "paper": [
+   "papier",
+   "paper",
+   "n"
+  ],
+  "pocket": [
+   "poche",
+   "pocket",
+   "n"
+  ],
+  "belongs": [
+   "appartient",
+   "belong",
+   "v",
+   "appartenir"
+  ],
+  "english": [
+   "anglais",
+   "English",
+   "n"
+  ],
+  "thirty-four": [
+   "trente-quatre",
+   "thirty-four",
+   "a"
+  ],
+  "read": [
+   "lire",
+   "read",
+   "v"
+  ],
+  "saltmarsh": [
+   "Saltmarsh (nom de ville)",
+   "Saltmarsh",
+   "np"
+  ],
+  "bay": [
+   "Bay (la baie)",
+   "bay",
+   "np"
+  ],
+  "town": [
+   "ville",
+   "town",
+   "n"
+  ],
+  "someone": [
+   "quelqu'un",
+   "someone",
+   "p"
+  ],
+  "room": [
+   "salle",
+   "room",
+   "n"
+  ],
+  "auctioneer": [
+   "commissaire-priseur",
+   "auctioneer",
+   "n"
+  ],
+  "hand": [
+   "main",
+   "hand",
+   "n"
+  ],
+  "pounds": [
+   "livres (sterling)",
+   "pound",
+   "n",
+   "livre"
+  ],
+  "money": [
+   "argent",
+   "money",
+   "n"
+  ],
+  "okafor's": [
+   "d'Okafor",
+   "Okafor",
+   "np"
+  ],
+  "books": [
+   "livres",
+   "book",
+   "n",
+   "livre"
+  ],
+  "dr": [
+   "Dr",
+   "Dr",
+   "n"
+  ],
+  "bernard": [
+   "Bernard (nom de famille)",
+   "Bernard",
+   "np"
+  ],
+  "pickle": [
+   "Pickle (nom du chat)",
+   "Pickle",
+   "np"
+  ],
+  "help": [
+   "aide",
+   "help",
+   "n"
+  ],
+  "cats": [
+   "chats",
+   "cat",
+   "n",
+   "chat"
+  ],
+  "bad": [
+   "mauvaises",
+   "bad",
+   "a"
+  ],
+  "jokes": [
+   "blagues",
+   "joke",
+   "n",
+   "blague"
+  ],
+  "tolerated": [
+   "tolérées",
+   "tolerate",
+   "v",
+   "tolérer"
+  ]
+ },
+ "pages": [
+  {
+   "titre": "Chapter 10 — Behind the Bookcase",
+   "titreFr": "Chapitre 10 — Derrière la bibliothèque",
+   "p": [
+    [
+     {
+      "en": "Summer slipped into September, and the weather turned.",
+      "fr": "L’été glissa vers septembre, et le temps tourna.",
+      "g": {
+       "turned": [
+        "tourna",
+        "turn",
+        "v",
+        "tourner"
+       ],
+       "slipped": [
+        "glissa",
+        "slip",
+        "v",
+        "glisser"
+       ]
+      }
+     },
+     {
+      "en": "The first storm arrived on a Wednesday night, with rain so heavy that Harbour Street looked like a river.",
+      "fr": "Le premier orage arriva un mercredi soir, avec une pluie si forte que Harbour Street ressemblait à une rivière.",
+      "g": {
+       "looked": [
+        "ressemblait (looked like : ressemblait à)",
+        "look like",
+        "v",
+        "ressembler"
+       ],
+       "like": [
+        "(looked like : ressemblait à)",
+        "look like",
+        "x"
+       ],
+       "so": [
+        "si",
+        "so",
+        "d"
+       ],
+       "that": [
+        "que",
+        "that",
+        "c"
+       ],
+       "heavy": [
+        "forte",
+        "heavy",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Noah was locking up when he heard a steady drip, drip, drip from the back of the shop.",
+      "fr": "Noah fermait la boutique à clé quand il entendit un goutte-à-goutte régulier venant du fond.",
+      "g": {
+       "locking": [
+        "fermait à clé (locking up)",
+        "lock up",
+        "v",
+        "fermer à clé"
+       ],
+       "up": [
+        "(locking up : fermait à clé)",
+        "lock up",
+        "x"
+       ],
+       "drip": [
+        "goutte",
+        "drip",
+        "n"
+       ],
+       "back": [
+        "fond",
+        "back",
+        "n"
+       ],
+       "heard": [
+        "entendit",
+        "hear",
+        "v",
+        "entendre"
+       ]
+      }
+     },
+     {
+      "en": "The sound was coming from behind the great oak bookcase that held the poetry.",
+      "fr": "Le bruit venait de derrière la grande bibliothèque en chêne qui contenait la poésie.",
+      "g": {
+       "that": [
+        "qui",
+        "that",
+        "p"
+       ],
+       "held": [
+        "contenait",
+        "hold",
+        "v",
+        "contenir"
+       ],
+       "coming": [
+        "venait",
+        "come",
+        "v",
+        "venir"
+       ],
+       "great": [
+        "grande",
+        "great",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Mrs Okafor!” he called. “There’s a leak!”",
+      "fr": "« Madame Okafor ! appela-t-il. Il y a une fuite ! »",
+      "g": {
+       "there's": [
+        "il y a",
+        "there",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "She came down in her slippers and dressing gown, looking like a very small, very cross general.",
+      "fr": "Elle descendit en pantoufles et en robe de chambre, l’air d’un tout petit général très contrarié.",
+      "g": {
+       "came": [
+        "descendit (came down)",
+        "come down",
+        "v",
+        "descendre"
+       ],
+       "down": [
+        "(came down : descendit)",
+        "come down",
+        "x"
+       ],
+       "looking": [
+        "l'air",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "like": [
+        "de",
+        "like",
+        "r"
+       ],
+       "cross": [
+        "contrarié",
+        "cross",
+        "a"
+       ],
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“That bookcase hasn’t moved since 1983,” she said. “It weighs as much as a whale.”",
+      "fr": "« Cette bibliothèque n’a pas bougé depuis 1983, dit-elle. Elle pèse autant qu’une baleine. »",
+      "g": {
+       "as": [
+        "(as much as : autant que)",
+        "as",
+        "c"
+       ],
+       "as#2": [
+        "(as much as : autant que)",
+        "as",
+        "c"
+       ],
+       "much": [
+        "(as much as : autant que)",
+        "much",
+        "d"
+       ],
+       "weighs": [
+        "pèse",
+        "weigh",
+        "v",
+        "peser"
+       ],
+       "whale": [
+        "baleine",
+        "whale",
+        "n"
+       ],
+       "moved": [
+        "bougé",
+        "move",
+        "v",
+        "bouger"
+       ]
+      }
+     },
+     {
+      "en": "“Then I will empty it,” said Noah, rolling up his sleeves.",
+      "fr": "« Alors je vais la vider », dit Noah en retroussant ses manches.",
+      "g": {
+       "rolling": [
+        "retroussant (rolling up)",
+        "roll up",
+        "v",
+        "retrousser"
+       ],
+       "up": [
+        "(rolling up : retroussant)",
+        "roll up",
+        "x"
+       ],
+       "sleeves": [
+        "manches",
+        "sleeve",
+        "n",
+        "manche"
+       ],
+       "empty": [
+        "vider",
+        "empty",
+        "v"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "It took him forty minutes to take down every book.",
+      "fr": "Il lui fallut quarante minutes pour descendre tous les livres.",
+      "g": {
+       "took": [
+        "fallut (it took : il fallut)",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "take": [
+        "descendre (take down)",
+        "take down",
+        "v",
+        "descendre"
+       ],
+       "down": [
+        "(take down : descendre)",
+        "take down",
+        "x"
+       ],
+       "every": [
+        "tous les",
+        "every",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "Then he and Zara, who had come running when he phoned her, pushed the huge case away from the wall, inch by inch.",
+      "fr": "Puis lui et Zara, accourue dès qu’il lui avait téléphoné, écartèrent le gigantesque meuble du mur, centimètre par centimètre.",
+      "g": {
+       "phoned": [
+        "téléphoné",
+        "phone",
+        "v",
+        "téléphoner"
+       ],
+       "running": [
+        "accourue",
+        "run",
+        "v",
+        "courir"
+       ],
+       "inch": [
+        "centimètre (inch : pouce)",
+        "inch",
+        "n",
+        "pouce"
+       ],
+       "case": [
+        "meuble",
+        "case",
+        "n"
+       ],
+       "huge": [
+        "gigantesque",
+        "huge",
+        "a"
+       ],
+       "away": [
+        "(pushed away : écartèrent)",
+        "away",
+        "d"
+       ],
+       "who": [
+        "qui",
+        "who",
+        "p"
+       ],
+       "come": [
+        "(had come running : était accourue)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "pushed": [
+        "écartèrent",
+        "push",
+        "v",
+        "pousser"
+       ]
+      }
+     },
+     {
+      "en": "Behind it, a loose wooden panel hung crookedly from the wall.",
+      "fr": "Derrière, un panneau de bois mal fixé pendait de travers au mur.",
+      "g": {
+       "loose": [
+        "mal fixé",
+        "loose",
+        "a"
+       ],
+       "panel": [
+        "panneau",
+        "panel",
+        "n"
+       ],
+       "hung": [
+        "pendait",
+        "hang",
+        "v",
+        "pendre"
+       ],
+       "crookedly": [
+        "de travers",
+        "crookedly",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Noah shone his phone torch into the gap and froze.",
+      "fr": "Noah éclaira l’ouverture avec la lampe de son téléphone et se figea.",
+      "g": {
+       "shone": [
+        "éclaira",
+        "shine",
+        "v",
+        "éclairer"
+       ],
+       "torch": [
+        "lampe",
+        "torch",
+        "n"
+       ],
+       "gap": [
+        "ouverture",
+        "gap",
+        "n"
+       ],
+       "froze": [
+        "se figea",
+        "freeze",
+        "v",
+        "se figer"
+       ]
+      }
+     },
+     {
+      "en": "Wedged inside the hollow was a flat parcel, wrapped in oilcloth and tied with string, grey with dust.",
+      "fr": "Coincé à l’intérieur du creux se trouvait un paquet plat, enveloppé dans de la toile cirée et ficelé, gris de poussière.",
+      "g": {
+       "wedged": [
+        "coincé",
+        "wedge",
+        "v",
+        "coincer"
+       ],
+       "hollow": [
+        "creux",
+        "hollow",
+        "n"
+       ],
+       "flat": [
+        "plat",
+        "flat",
+        "a"
+       ],
+       "wrapped": [
+        "enveloppé",
+        "wrap",
+        "v",
+        "envelopper"
+       ],
+       "oilcloth": [
+        "toile cirée",
+        "oilcloth",
+        "n"
+       ],
+       "tied": [
+        "ficelé",
+        "tie",
+        "v",
+        "ficeler"
+       ],
+       "string": [
+        "ficelle",
+        "string",
+        "n"
+       ],
+       "grey": [
+        "gris",
+        "grey",
+        "a"
+       ],
+       "dust": [
+        "poussière",
+        "dust",
+        "n"
+       ],
+       "parcel": [
+        "paquet",
+        "parcel",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Zara,” he whispered. “Look at this.”",
+      "fr": "« Zara, murmura-t-il. Regarde ça. »",
+      "g": {
+       "look": [
+        "regarde",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "whispered": [
+        "murmura",
+        "whisper",
+        "v",
+        "murmurer"
+       ]
+      }
+     },
+     {
+      "en": "She peered in and let out a low whistle. “It must have been hidden for decades. Nobody could have reached that without moving the bookcase.”",
+      "fr": "Elle jeta un coup d’œil et laissa échapper un sifflement bas. « Ça doit être caché depuis des décennies. Personne n’aurait pu l’atteindre sans déplacer la bibliothèque. »",
+      "g": {
+       "peered": [
+        "jeta un coup d'œil",
+        "peer",
+        "v",
+        "regarder"
+       ],
+       "let": [
+        "laissa échapper (let out)",
+        "let out",
+        "v",
+        "laisser échapper"
+       ],
+       "out": [
+        "(let out : laissa échapper)",
+        "let out",
+        "x"
+       ],
+       "must": [
+        "doit (must have been : doit avoir été)",
+        "must",
+        "v"
+       ],
+       "have": [
+        "(must have been : doit avoir été)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "been": [
+        "(must have been : doit avoir été)",
+        "be",
+        "v",
+        "être"
+       ],
+       "hidden": [
+        "caché",
+        "hide",
+        "v",
+        "cacher"
+       ],
+       "decades": [
+        "décennies",
+        "decade",
+        "n",
+        "décennie"
+       ],
+       "could": [
+        "aurait pu",
+        "can",
+        "v",
+        "pouvoir"
+       ],
+       "have#2": [
+        "(could have reached : aurait pu atteindre)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "reached": [
+        "atteindre",
+        "reach",
+        "v",
+        "atteindre"
+       ],
+       "moving": [
+        "déplacer",
+        "move",
+        "v",
+        "déplacer"
+       ],
+       "whistle": [
+        "sifflement",
+        "whistle",
+        "n"
+       ],
+       "low": [
+        "bas",
+        "low",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“If it hadn’t rained tonight, I would never have looked,” said Noah.",
+      "fr": "« S’il n’avait pas plu ce soir, je n’aurais jamais regardé », dit Noah.",
+      "g": {
+       "hadn't": [
+        "n'avait pas",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "rained": [
+        "plu",
+        "rain",
+        "v",
+        "pleuvoir"
+       ],
+       "would": [
+        "aurais",
+        "would",
+        "v",
+        ""
+       ],
+       "have": [
+        "(would have looked : aurais regardé)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "looked": [
+        "regardé",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "tonight": [
+        "ce soir",
+        "tonight",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "His hands trembled as he lifted the parcel out.",
+      "fr": "Ses mains tremblèrent quand il sortit le paquet.",
+      "g": {
+       "trembled": [
+        "tremblèrent",
+        "tremble",
+        "v",
+        "trembler"
+       ],
+       "lifted": [
+        "sortit (lifted out)",
+        "lift out",
+        "v",
+        "sortir"
+       ],
+       "out": [
+        "(lifted out : sortit)",
+        "lift out",
+        "x"
+       ],
+       "parcel": [
+        "paquet",
+        "parcel",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Don’t open it,” said Zara. “Fetch Mrs O first.”",
+      "fr": "« Ne l’ouvre pas, dit Zara. Va d’abord chercher Mme O. »",
+      "g": {
+       "fetch": [
+        "va chercher",
+        "fetch",
+        "v",
+        "aller chercher"
+       ],
+       "first": [
+        "d'abord",
+        "first",
+        "d"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "titre": "Chapter 11 — A Rainy Day",
+   "titreFr": "Chapitre 11 — Pour un jour de pluie",
+   "p": [
+    [
+     {
+      "en": "Mrs Okafor knelt on the wet floor, ignoring the drip beside her, and untied the string with fingers that were not quite steady.",
+      "fr": "Mme Okafor s’agenouilla sur le sol mouillé, sans prêter attention au goutte-à-goutte à côté d’elle, et défit la ficelle de doigts mal assurés.",
+      "g": {
+       "knelt": [
+        "s'agenouilla",
+        "kneel",
+        "v",
+        "s'agenouiller"
+       ],
+       "wet": [
+        "mouillé",
+        "wet",
+        "a"
+       ],
+       "floor": [
+        "sol",
+        "floor",
+        "n"
+       ],
+       "ignoring": [
+        "sans prêter attention à",
+        "ignore",
+        "v",
+        "ignorer"
+       ],
+       "drip": [
+        "goutte-à-goutte",
+        "drip",
+        "n"
+       ],
+       "beside": [
+        "à côté de",
+        "beside",
+        "r"
+       ],
+       "untied": [
+        "défit",
+        "untie",
+        "v",
+        "défaire"
+       ],
+       "fingers": [
+        "doigts",
+        "finger",
+        "n",
+        "doigt"
+       ],
+       "that": [
+        "qui",
+        "that",
+        "p"
+       ],
+       "quite": [
+        "tout à fait",
+        "quite",
+        "d"
+       ],
+       "steady": [
+        "assurés",
+        "steady",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Under the oilcloth lay a slim book bound in dark green cloth, its gold lettering faded but still readable.",
+      "fr": "Sous la toile cirée reposait un mince livre relié de toile vert foncé, ses lettres dorées ternies mais encore lisibles.",
+      "g": {
+       "lay": [
+        "reposait",
+        "lie",
+        "v",
+        "reposer"
+       ],
+       "slim": [
+        "mince",
+        "slim",
+        "a"
+       ],
+       "bound": [
+        "relié",
+        "bind",
+        "v",
+        "relier"
+       ],
+       "dark": [
+        "foncé",
+        "dark",
+        "a"
+       ],
+       "cloth": [
+        "toile",
+        "cloth",
+        "n"
+       ],
+       "lettering": [
+        "lettres",
+        "lettering",
+        "n"
+       ],
+       "faded": [
+        "ternies",
+        "faded",
+        "a"
+       ],
+       "readable": [
+        "lisibles",
+        "readable",
+        "a"
+       ],
+       "its": [
+        "ses",
+        "its",
+        "t"
+       ],
+       "still": [
+        "encore",
+        "still",
+        "d"
+       ],
+       "green": [
+        "vert",
+        "green",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“Alice’s Adventures in Wonderland,” Zara read aloud. “Macmillan, 1865.”",
+      "fr": "« Alice’s Adventures in Wonderland, lut Zara à voix haute. Macmillan, 1865. »",
+      "g": {
+       "alice's": [
+        "d'Alice",
+        "Alice",
+        "np"
+       ],
+       "adventures": [
+        "aventures",
+        "adventure",
+        "n",
+        "aventure"
+       ],
+       "wonderland": [
+        "pays des merveilles",
+        "Wonderland",
+        "np"
+       ],
+       "in": [
+        "au",
+        "in",
+        "r"
+       ],
+       "read": [
+        "lut",
+        "read",
+        "v",
+        "lire"
+       ],
+       "aloud": [
+        "à voix haute",
+        "aloud",
+        "d"
+       ],
+       "macmillan": [
+        "Macmillan (maison d'édition)",
+        "Macmillan",
+        "np"
+       ]
+      }
+     },
+     {
+      "en": "For a moment, nobody spoke. Then Zara grabbed her phone with trembling hands.",
+      "fr": "Pendant un instant, personne ne parla. Puis Zara saisit son téléphone d’une main tremblante.",
+      "g": {
+       "spoke": [
+        "parla",
+        "speak",
+        "v",
+        "parler"
+       ],
+       "grabbed": [
+        "saisit",
+        "grab",
+        "v",
+        "saisir"
+       ],
+       "trembling": [
+        "tremblantes",
+        "tremble",
+        "v",
+        "trembler"
+       ],
+       "hands": [
+        "mains",
+        "hand",
+        "n",
+        "main"
+       ]
+      }
+     },
+     {
+      "en": "“Wait. The first printing was a disaster,” she said, scrolling quickly. “The illustrator hated how the pictures looked, so almost every copy was recalled and destroyed. Only about twenty are known to exist.”",
+      "fr": "« Attendez. Le premier tirage a été un désastre, dit-elle en faisant défiler rapidement l’écran. L’illustrateur détestait l’aspect des images, alors presque tous les exemplaires ont été rappelés et détruits. On n’en connaît qu’une vingtaine. »",
+      "g": {
+       "wait": [
+        "attendez",
+        "wait",
+        "v",
+        "attendre"
+       ],
+       "printing": [
+        "tirage",
+        "printing",
+        "n"
+       ],
+       "disaster": [
+        "désastre",
+        "disaster",
+        "n"
+       ],
+       "scrolling": [
+        "faisant défiler l'écran",
+        "scroll",
+        "v",
+        "faire défiler"
+       ],
+       "quickly": [
+        "rapidement",
+        "quickly",
+        "d"
+       ],
+       "illustrator": [
+        "illustrateur",
+        "illustrator",
+        "n"
+       ],
+       "hated": [
+        "détestait",
+        "hate",
+        "v",
+        "détester"
+       ],
+       "pictures": [
+        "images",
+        "picture",
+        "n",
+        "image"
+       ],
+       "looked": [
+        "avaient l'air",
+        "look",
+        "v",
+        "regarder"
+       ],
+       "copy": [
+        "exemplaire",
+        "copy",
+        "n"
+       ],
+       "recalled": [
+        "rappelés",
+        "recall",
+        "v",
+        "rappeler"
+       ],
+       "destroyed": [
+        "détruits",
+        "destroy",
+        "v",
+        "détruire"
+       ],
+       "known": [
+        "connus",
+        "know",
+        "v",
+        "connaître"
+       ],
+       "exist": [
+        "exister",
+        "exist",
+        "v"
+       ],
+       "twenty": [
+        "vingtaine",
+        "twenty",
+        "a"
+       ],
+       "so": [
+        "alors",
+        "so",
+        "c"
+       ],
+       "only": [
+        "seulement",
+        "only",
+        "d"
+       ],
+       "about": [
+        "environ",
+        "about",
+        "d"
+       ],
+       "every": [
+        "chaque",
+        "every",
+        "t"
+       ],
+       "almost": [
+        "presque",
+        "almost",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“Twenty,” repeated Noah. “And we have one?”",
+      "fr": "« Vingt, répéta Noah. Et on en a un ? »",
+      "g": {
+       "repeated": [
+        "répéta",
+        "repeat",
+        "v",
+        "répéter"
+       ],
+       "one": [
+        "un",
+        "one",
+        "p"
+       ]
+      }
+     },
+     {
+      "en": "Mrs Okafor was not listening. Something white was sticking out from between the pages: an envelope, and on it, in handwriting she knew better than her own, a single word, Gracie.",
+      "fr": "Mme Okafor n’écoutait pas. Quelque chose de blanc dépassait des pages : une enveloppe, et dessus, d’une écriture qu’elle connaissait mieux que la sienne, un seul mot, « Gracie ».",
+      "g": {
+       "listening": [
+        "écoutait",
+        "listen",
+        "v",
+        "écouter"
+       ],
+       "sticking": [
+        "dépassait (sticking out)",
+        "stick out",
+        "v",
+        "dépasser"
+       ],
+       "out": [
+        "(sticking out : dépassait)",
+        "stick out",
+        "x"
+       ],
+       "pages": [
+        "pages",
+        "page",
+        "n",
+        "page"
+       ],
+       "handwriting": [
+        "écriture",
+        "handwriting",
+        "n"
+       ],
+       "knew": [
+        "connaissait",
+        "know",
+        "v",
+        "connaître"
+       ],
+       "better": [
+        "mieux",
+        "well",
+        "d",
+        "bien"
+       ],
+       "own": [
+        "sienne",
+        "own",
+        "p"
+       ],
+       "single": [
+        "seul",
+        "single",
+        "a"
+       ],
+       "word": [
+        "mot",
+        "word",
+        "n"
+       ],
+       "gracie": [
+        "Gracie (diminutif de Grace)",
+        "Gracie",
+        "np"
+       ],
+       "white": [
+        "blanc",
+        "white",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "She read the letter in silence, and then she began to laugh and cry at the same time.",
+      "fr": "Elle lut la lettre en silence, puis elle se mit à rire et à pleurer en même temps.",
+      "g": {
+       "read": [
+        "lut",
+        "read",
+        "v",
+        "lire"
+       ],
+       "began": [
+        "se mit",
+        "begin",
+        "v",
+        "commencer"
+       ],
+       "cry": [
+        "pleurer",
+        "cry",
+        "v",
+        ""
+       ],
+       "laugh": [
+        "rire",
+        "laugh",
+        "v",
+        "rire"
+       ],
+       "time": [
+        "temps (at the same time : en même temps)",
+        "time",
+        "n"
+       ],
+       "same": [
+        "même",
+        "same",
+        "a"
+       ],
+       "at": [
+        "en",
+        "at",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“Gracie,” she read aloud, “if you have found this, then the shop must be in trouble, and I was right to hide it. Do not put it on a shelf. Sell it, and keep the bookshop. This is for a rainy day. Dan.”",
+      "fr": "« Gracie, lut-elle à voix haute, si tu as trouvé ceci, c’est que la librairie doit avoir des ennuis, et que j’avais raison de le cacher. Ne le mets pas sur une étagère. Vends-le, et garde la librairie. C’est pour un jour de pluie. Dan. »",
+      "g": {
+       "read": [
+        "lut",
+        "read",
+        "v",
+        "lire"
+       ],
+       "found": [
+        "trouvé",
+        "find",
+        "v",
+        "trouver"
+       ],
+       "trouble": [
+        "ennuis",
+        "trouble",
+        "n"
+       ],
+       "hide": [
+        "cacher",
+        "hide",
+        "v",
+        "cacher"
+       ],
+       "sell": [
+        "vends",
+        "sell",
+        "v",
+        "vendre"
+       ],
+       "keep": [
+        "garde",
+        "keep",
+        "v",
+        "garder"
+       ],
+       "rainy": [
+        "de pluie",
+        "rainy",
+        "a"
+       ],
+       "dan": [
+        "Dan (diminutif de Daniel)",
+        "Dan",
+        "np"
+       ],
+       "must": [
+        "doit",
+        "must",
+        "v"
+       ],
+       "then": [
+        "c'est que",
+        "then",
+        "d"
+       ],
+       "right": [
+        "raison",
+        "right",
+        "a"
+       ],
+       "put": [
+        "mets",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "do": [
+        "(do not : ne… pas)",
+        "do",
+        "v",
+        "faire"
+       ]
+      }
+     },
+     {
+      "en": "She wiped her eyes. “He always said he was saving something for a rainy day. For forty years, I assumed he meant an umbrella.”",
+      "fr": "Elle s’essuya les yeux. « Il disait toujours qu’il gardait quelque chose pour un jour de pluie. Pendant quarante ans, j’ai cru qu’il parlait d’un parapluie. »",
+      "g": {
+       "wiped": [
+        "s'essuya",
+        "wipe",
+        "v",
+        "essuyer"
+       ],
+       "saving": [
+        "gardait",
+        "save",
+        "v",
+        "mettre de côté"
+       ],
+       "assumed": [
+        "ai cru",
+        "assume",
+        "v",
+        "supposer"
+       ],
+       "meant": [
+        "parlait",
+        "mean",
+        "v",
+        "vouloir dire"
+       ],
+       "umbrella": [
+        "parapluie",
+        "umbrella",
+        "n"
+       ],
+       "always": [
+        "toujours",
+        "always",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“That man,” said Mrs Okafor, “could have told me forty years ago and saved me a great deal of worry.”",
+      "fr": "« Cet homme, dit Mme Okafor, aurait pu me le dire il y a quarante ans et m’épargner bien des soucis. »",
+      "g": {
+       "could": [
+        "aurait pu",
+        "can",
+        "v",
+        "pouvoir"
+       ],
+       "have": [
+        "(could have told : aurait pu dire)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "told": [
+        "dire",
+        "tell",
+        "v",
+        "dire"
+       ],
+       "saved": [
+        "épargner",
+        "save",
+        "v",
+        "épargner"
+       ],
+       "deal": [
+        "(a great deal of : beaucoup de)",
+        "deal",
+        "n"
+       ],
+       "great": [
+        "(a great deal of : beaucoup de)",
+        "great",
+        "a"
+       ],
+       "worry": [
+        "soucis",
+        "worry",
+        "n"
+       ],
+       "ago": [
+        "il y a",
+        "ago",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "“If he had told you, you might have spent it long ago,” said Noah.",
+      "fr": "« S’il vous l’avait dit, vous l’auriez peut-être dépensé depuis longtemps », dit Noah.",
+      "g": {
+       "might": [
+        "auriez peut-être",
+        "may",
+        "v",
+        ""
+       ],
+       "have": [
+        "(might have spent : auriez dépensé)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "spent": [
+        "dépensé",
+        "spend",
+        "v",
+        "dépenser"
+       ],
+       "long": [
+        "longtemps",
+        "long",
+        "d"
+       ],
+       "ago": [
+        "(long ago : depuis longtemps)",
+        "ago",
+        "d"
+       ],
+       "told": [
+        "dit",
+        "tell",
+        "v",
+        "dire"
+       ]
+      }
+     },
+     {
+      "en": "“I would have bought a sailing boat,” she admitted. “He knew me far too well.”",
+      "fr": "« J’aurais acheté un voilier, reconnut-elle. Il me connaissait beaucoup trop bien. »",
+      "g": {
+       "would": [
+        "aurais",
+        "would",
+        "v",
+        ""
+       ],
+       "have": [
+        "(would have bought : aurais acheté)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "bought": [
+        "acheté",
+        "buy",
+        "v",
+        "acheter"
+       ],
+       "sailing": [
+        "à voile (sailing boat : voilier)",
+        "sailing",
+        "a"
+       ],
+       "boat": [
+        "bateau (sailing boat : voilier)",
+        "boat",
+        "n"
+       ],
+       "admitted": [
+        "reconnut",
+        "admit",
+        "v",
+        "admettre"
+       ],
+       "knew": [
+        "connaissait",
+        "know",
+        "v",
+        "connaître"
+       ],
+       "far": [
+        "beaucoup",
+        "far",
+        "d"
+       ],
+       "too": [
+        "trop",
+        "too",
+        "d"
+       ],
+       "well": [
+        "bien",
+        "well",
+        "d"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "titre": "Chapter 12 — Small Print",
+   "titreFr": "Chapitre 12 — Les petits caractères",
+   "p": [
+    [
+     {
+      "en": "The next morning, a woman in a navy coat stepped off the London train, carrying a case the size of a loaf of bread.",
+      "fr": "Le lendemain matin, une femme en manteau bleu marine descendit du train de Londres, portant une mallette de la taille d’un pain.",
+      "g": {
+       "stepped": [
+        "descendit (stepped off)",
+        "step off",
+        "v",
+        "descendre"
+       ],
+       "off": [
+        "(stepped off : descendit de)",
+        "step off",
+        "x"
+       ],
+       "navy": [
+        "bleu marine",
+        "navy",
+        "a"
+       ],
+       "coat": [
+        "manteau",
+        "coat",
+        "n"
+       ],
+       "carrying": [
+        "portant",
+        "carry",
+        "v",
+        "porter"
+       ],
+       "case": [
+        "mallette",
+        "case",
+        "n"
+       ],
+       "size": [
+        "taille",
+        "size",
+        "n"
+       ],
+       "loaf": [
+        "pain",
+        "loaf",
+        "n"
+       ],
+       "bread": [
+        "(loaf of bread : pain)",
+        "bread",
+        "n"
+       ],
+       "next": [
+        "lendemain",
+        "next",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Ms Whitcombe worked for a famous auction house, but she had never examined anything beside a sleeping cat.",
+      "fr": "Mme Whitcombe travaillait pour une célèbre maison de ventes aux enchères, mais elle n’avait jamais rien examiné à côté d’un chat endormi.",
+      "g": {
+       "whitcombe": [
+        "Whitcombe (nom de famille)",
+        "Whitcombe",
+        "np"
+       ],
+       "worked": [
+        "travaillait",
+        "work",
+        "v",
+        "travailler"
+       ],
+       "famous": [
+        "célèbre",
+        "famous",
+        "a"
+       ],
+       "auction": [
+        "ventes aux enchères",
+        "auction",
+        "n"
+       ],
+       "house": [
+        "maison",
+        "house",
+        "n"
+       ],
+       "examined": [
+        "examiné",
+        "examine",
+        "v",
+        "examiner"
+       ],
+       "anything": [
+        "rien",
+        "anything",
+        "p"
+       ],
+       "beside": [
+        "à côté de",
+        "beside",
+        "r"
+       ],
+       "sleeping": [
+        "endormi",
+        "sleeping",
+        "a"
+       ],
+       "but": [
+        "mais",
+        "but",
+        "c"
+       ]
+      }
+     },
+     {
+      "en": "She put on white gloves, took out a magnifying glass and studied the book for almost two hours without saying a word.",
+      "fr": "Elle enfila des gants blancs, sortit une loupe et étudia le livre pendant près de deux heures sans dire un mot.",
+      "g": {
+       "put": [
+        "enfila (put on)",
+        "put on",
+        "v",
+        "enfiler"
+       ],
+       "on": [
+        "(put on : enfila)",
+        "put on",
+        "x"
+       ],
+       "took": [
+        "sortit (took out)",
+        "take out",
+        "v",
+        "sortir"
+       ],
+       "out": [
+        "(took out : sortit)",
+        "take out",
+        "x"
+       ],
+       "gloves": [
+        "gants",
+        "glove",
+        "n",
+        "gant"
+       ],
+       "magnifying": [
+        "(magnifying glass : loupe)",
+        "magnifying",
+        "a"
+       ],
+       "glass": [
+        "loupe",
+        "glass",
+        "n"
+       ],
+       "studied": [
+        "étudia",
+        "study",
+        "v",
+        "étudier"
+       ],
+       "saying": [
+        "dire",
+        "say",
+        "v",
+        "dire"
+       ],
+       "word": [
+        "mot",
+        "word",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "At last she looked up. “It is genuine. The paper, the binding and the printing errors all match.”",
+      "fr": "Enfin elle leva les yeux. « Il est authentique. Le papier, la reliure et les erreurs d’impression correspondent tous. »",
+      "g": {
+       "at": [
+        "(at last : enfin)",
+        "at last",
+        "d"
+       ],
+       "last": [
+        "enfin (at last)",
+        "at last",
+        "d"
+       ],
+       "looked": [
+        "leva les yeux (looked up)",
+        "look up",
+        "v",
+        "lever les yeux"
+       ],
+       "up": [
+        "(looked up : leva les yeux)",
+        "look up",
+        "x"
+       ],
+       "genuine": [
+        "authentique",
+        "genuine",
+        "a"
+       ],
+       "binding": [
+        "reliure",
+        "binding",
+        "n"
+       ],
+       "errors": [
+        "erreurs",
+        "error",
+        "n",
+        "erreur"
+       ],
+       "match": [
+        "correspondent",
+        "match",
+        "v",
+        "correspondre"
+       ],
+       "printing": [
+        "d'impression",
+        "printing",
+        "n"
+       ],
+       "paper": [
+        "papier",
+        "paper",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Daniel’s letter proves who owned the book,” said Ms Whitcombe gently. “As for the value…” She took a breath. “We would estimate it at between two hundred and fifty and three hundred and fifty thousand pounds.”",
+      "fr": "« La lettre de Daniel prouve à qui appartenait le livre, dit doucement Mme Whitcombe. Quant à sa valeur… » Elle inspira. « Nous l’estimerions entre deux cent cinquante et trois cent cinquante mille livres. »",
+      "g": {
+       "daniel's": [
+        "de Daniel",
+        "Daniel",
+        "np"
+       ],
+       "proves": [
+        "prouve",
+        "prove",
+        "v",
+        "prouver"
+       ],
+       "owned": [
+        "possédait",
+        "own",
+        "v",
+        "posséder"
+       ],
+       "gently": [
+        "doucement",
+        "gently",
+        "d"
+       ],
+       "estimate": [
+        "estimerions",
+        "estimate",
+        "v",
+        "estimer"
+       ],
+       "between": [
+        "entre",
+        "between",
+        "r"
+       ],
+       "took": [
+        "inspira (took a breath)",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "breath": [
+        "(took a breath : inspira)",
+        "breath",
+        "n"
+       ],
+       "as": [
+        "(as for : quant à)",
+        "as",
+        "r"
+       ],
+       "for": [
+        "(as for : quant à)",
+        "for",
+        "r"
+       ],
+       "who": [
+        "qui",
+        "who",
+        "p"
+       ],
+       "hundred": [
+        "cent",
+        "hundred",
+        "a"
+       ],
+       "thousand": [
+        "mille",
+        "thousand",
+        "a"
+       ],
+       "fifty": [
+        "cinquante",
+        "fifty",
+        "a"
+       ],
+       "pounds": [
+        "livres (sterling)",
+        "pound",
+        "n",
+        "livre"
+       ],
+       "value": [
+        "valeur",
+        "value",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Mrs Okafor sat down very suddenly on the stool by the till. “Well,” she said faintly, “that is a good deal more than an umbrella.”",
+      "fr": "Mme Okafor s’assit très brusquement sur le tabouret près de la caisse. « Eh bien, dit-elle faiblement, c’est bien plus qu’un parapluie. »",
+      "g": {
+       "sat": [
+        "s'assit (sat down)",
+        "sit down",
+        "v",
+        "s'asseoir"
+       ],
+       "down": [
+        "(sat down : s'assit)",
+        "sit down",
+        "x"
+       ],
+       "suddenly": [
+        "brusquement",
+        "suddenly",
+        "d"
+       ],
+       "stool": [
+        "tabouret",
+        "stool",
+        "n"
+       ],
+       "till": [
+        "caisse",
+        "till",
+        "n"
+       ],
+       "faintly": [
+        "faiblement",
+        "faintly",
+        "d"
+       ],
+       "well": [
+        "eh bien",
+        "well",
+        "d"
+       ],
+       "good": [
+        "(a good deal more : bien plus)",
+        "good",
+        "a"
+       ],
+       "deal": [
+        "(a good deal more : bien plus)",
+        "deal",
+        "n"
+       ],
+       "umbrella": [
+        "parapluie",
+        "umbrella",
+        "n"
+       ],
+       "more": [
+        "plus",
+        "more",
+        "d"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "News travels fast in a small town, and by lunchtime Mr Hale was standing in the doorway, red in the face.",
+      "fr": "Les nouvelles vont vite dans une petite ville, et à l’heure du déjeuner M. Hale se tenait dans l’entrée, le visage rouge.",
+      "g": {
+       "news": [
+        "nouvelles",
+        "news",
+        "n"
+       ],
+       "travels": [
+        "voyagent (vont)",
+        "travel",
+        "v",
+        "voyager"
+       ],
+       "fast": [
+        "vite",
+        "fast",
+        "d"
+       ],
+       "lunchtime": [
+        "l'heure du déjeuner",
+        "lunchtime",
+        "n"
+       ],
+       "standing": [
+        "se tenait",
+        "stand",
+        "v",
+        "se tenir"
+       ],
+       "doorway": [
+        "entrée",
+        "doorway",
+        "n"
+       ],
+       "red": [
+        "rouge",
+        "red",
+        "a"
+       ],
+       "face": [
+        "visage",
+        "face",
+        "n"
+       ],
+       "small": [
+        "petite",
+        "small",
+        "a"
+       ],
+       "town": [
+        "ville",
+        "town",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“That book was found inside my building,” he said. “Legally, it belongs to me.”",
+      "fr": "« Ce livre a été trouvé dans mon immeuble, dit-il. Légalement, il m’appartient. »",
+      "g": {
+       "found": [
+        "trouvé",
+        "find",
+        "v",
+        "trouver"
+       ],
+       "inside": [
+        "à l'intérieur de",
+        "inside",
+        "r"
+       ],
+       "legally": [
+        "légalement",
+        "legally",
+        "d"
+       ],
+       "belongs": [
+        "appartient",
+        "belong",
+        "v",
+        "appartenir"
+       ],
+       "building": [
+        "immeuble",
+        "building",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Does it?” said Mrs Okafor, pulling a folded paper out of her cardigan pocket. “Clause fourteen of our lease says that everything inside the premises belongs to the tenant. I taught English for thirty-four years, Mr Hale. I always read the small print.”",
+      "fr": "« Vraiment ? dit Mme Okafor en sortant un papier plié de la poche de son gilet. La clause quatorze de notre bail dit que tout ce qui se trouve dans les locaux appartient au locataire. J’ai enseigné l’anglais pendant trente-quatre ans, monsieur Hale. Je lis toujours les petits caractères. »",
+      "g": {
+       "does": [
+        "vraiment",
+        "do",
+        "v",
+        "faire"
+       ],
+       "pulling": [
+        "sortant (pulling out)",
+        "pull out",
+        "v",
+        "sortir"
+       ],
+       "out": [
+        "(pulling out : sortant)",
+        "pull out",
+        "x"
+       ],
+       "folded": [
+        "plié",
+        "fold",
+        "v",
+        "plier"
+       ],
+       "clause": [
+        "clause",
+        "clause",
+        "n"
+       ],
+       "fourteen": [
+        "quatorze",
+        "fourteen",
+        "a"
+       ],
+       "lease": [
+        "bail",
+        "lease",
+        "n"
+       ],
+       "says": [
+        "dit",
+        "say",
+        "v",
+        "dire"
+       ],
+       "that": [
+        "que",
+        "that",
+        "c"
+       ],
+       "premises": [
+        "locaux",
+        "premises",
+        "n"
+       ],
+       "tenant": [
+        "locataire",
+        "tenant",
+        "n"
+       ],
+       "taught": [
+        "ai enseigné",
+        "teach",
+        "v",
+        "enseigner"
+       ],
+       "small": [
+        "petits",
+        "small",
+        "a"
+       ],
+       "print": [
+        "caractères (small print : petits caractères)",
+        "print",
+        "n"
+       ],
+       "always": [
+        "toujours",
+        "always",
+        "d"
+       ],
+       "everything": [
+        "tout",
+        "everything",
+        "p"
+       ],
+       "cardigan": [
+        "gilet",
+        "cardigan",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Mr Hale opened his mouth, closed it again and walked out, and the little bell rang cheerfully behind him.",
+      "fr": "M. Hale ouvrit la bouche, la referma et sortit, et la petite clochette tinta gaiement derrière lui.",
+      "g": {
+       "opened": [
+        "ouvrit",
+        "open",
+        "v",
+        "ouvrir"
+       ],
+       "mouth": [
+        "bouche",
+        "mouth",
+        "n"
+       ],
+       "closed": [
+        "referma",
+        "close",
+        "v",
+        "fermer"
+       ],
+       "again": [
+        "de nouveau",
+        "again",
+        "d"
+       ],
+       "walked": [
+        "sortit (walked out)",
+        "walk out",
+        "v",
+        "sortir"
+       ],
+       "out": [
+        "(walked out : sortit)",
+        "walk out",
+        "x"
+       ],
+       "bell": [
+        "clochette",
+        "bell",
+        "n"
+       ],
+       "rang": [
+        "tinta",
+        "ring",
+        "v",
+        "sonner"
+       ],
+       "cheerfully": [
+        "gaiement",
+        "cheerfully",
+        "d"
+       ],
+       "little": [
+        "petite",
+        "little",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "“The sale will be on the twenty-fourth of October,” said Ms Whitcombe, packing up her gloves. “Until then, the book stays in our vault.”",
+      "fr": "« La vente aura lieu le vingt-quatre octobre, dit Mme Whitcombe en rangeant ses gants. D’ici là, le livre reste dans notre chambre forte. »",
+      "g": {
+       "sale": [
+        "vente",
+        "sale",
+        "n"
+       ],
+       "twenty-fourth": [
+        "vingt-quatrième",
+        "twenty-fourth",
+        "a"
+       ],
+       "october": [
+        "octobre",
+        "October",
+        "n"
+       ],
+       "packing": [
+        "rangeant (packing up)",
+        "pack up",
+        "v",
+        "ranger"
+       ],
+       "up": [
+        "(packing up : rangeant)",
+        "pack up",
+        "x"
+       ],
+       "until": [
+        "jusqu'à",
+        "until",
+        "r"
+       ],
+       "stays": [
+        "reste",
+        "stay",
+        "v",
+        "rester"
+       ],
+       "vault": [
+        "chambre forte",
+        "vault",
+        "n"
+       ],
+       "gloves": [
+        "gants",
+        "glove",
+        "n",
+        "gant"
+       ],
+       "then": [
+        "là (until then : d'ici là)",
+        "then",
+        "d"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "titre": "Chapter 13 — Going, Going, Gone",
+   "titreFr": "Chapitre 13 — Une fois, deux fois, adjugé",
+   "p": [
+    [
+     {
+      "en": "On the twenty-fourth of October, Mrs Okafor, Noah and Zara sat in the third row of a London saleroom, under a chandelier the size of a small car.",
+      "fr": "Le vingt-quatre octobre, Mme Okafor, Noah et Zara étaient assis au troisième rang d’une salle des ventes londonienne, sous un lustre de la taille d’une petite voiture.",
+      "g": {
+       "twenty-fourth": [
+        "vingt-quatre",
+        "twenty-fourth",
+        "a"
+       ],
+       "october": [
+        "octobre",
+        "October",
+        "n"
+       ],
+       "sat": [
+        "étaient assis",
+        "sit",
+        "v",
+        "s'asseoir"
+       ],
+       "third": [
+        "troisième",
+        "third",
+        "a"
+       ],
+       "row": [
+        "rang",
+        "row",
+        "n"
+       ],
+       "saleroom": [
+        "salle des ventes",
+        "saleroom",
+        "n"
+       ],
+       "chandelier": [
+        "lustre",
+        "chandelier",
+        "n"
+       ],
+       "size": [
+        "taille",
+        "size",
+        "n"
+       ],
+       "small": [
+        "petite",
+        "small",
+        "a"
+       ],
+       "car": [
+        "voiture",
+        "car",
+        "n"
+       ],
+       "under": [
+        "sous",
+        "under",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "Back in Saltmarsh Bay, half the town was crowded into the shop to watch the live stream, with Mr Patel in charge of the popcorn.",
+      "fr": "À Saltmarsh Bay, la moitié de la ville s’était entassée dans la boutique pour suivre la diffusion en direct, M. Patel étant chargé du pop-corn.",
+      "g": {
+       "back": [
+        "là-bas (back in : là-bas, à)",
+        "back",
+        "d"
+       ],
+       "half": [
+        "la moitié de",
+        "half",
+        "t"
+       ],
+       "crowded": [
+        "entassée",
+        "crowd",
+        "v",
+        "s'entasser"
+       ],
+       "live": [
+        "en direct",
+        "live",
+        "a"
+       ],
+       "stream": [
+        "diffusion",
+        "stream",
+        "n"
+       ],
+       "charge": [
+        "(in charge of : chargé de)",
+        "charge",
+        "n"
+       ],
+       "in": [
+        "(in charge of : chargé de)",
+        "in",
+        "r"
+       ],
+       "popcorn": [
+        "pop-corn",
+        "popcorn",
+        "n"
+       ],
+       "watch": [
+        "suivre",
+        "watch",
+        "v",
+        "regarder"
+       ],
+       "patel": [
+        "Patel (nom de famille)",
+        "Patel",
+        "np"
+       ]
+      }
+     },
+     {
+      "en": "Mrs Okafor wore her best green coat and clutched her handbag as if someone might steal it.",
+      "fr": "Mme Okafor portait son plus beau manteau vert et serrait son sac à main comme si quelqu’un risquait de le voler.",
+      "g": {
+       "wore": [
+        "portait",
+        "wear",
+        "v",
+        "porter"
+       ],
+       "best": [
+        "plus beau",
+        "good",
+        "a",
+        "bon"
+       ],
+       "clutched": [
+        "serrait",
+        "clutch",
+        "v",
+        "serrer"
+       ],
+       "handbag": [
+        "sac à main",
+        "handbag",
+        "n"
+       ],
+       "steal": [
+        "voler",
+        "steal",
+        "v"
+       ],
+       "might": [
+        "risquait",
+        "may",
+        "v",
+        ""
+       ],
+       "as": [
+        "comme",
+        "as",
+        "c"
+       ],
+       "if": [
+        "si",
+        "if",
+        "c"
+       ],
+       "green": [
+        "vert",
+        "green",
+        "a"
+       ],
+       "coat": [
+        "manteau",
+        "coat",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Noah could hardly breathe, and Zara was filming everything with a shaking hand.",
+      "fr": "Noah arrivait à peine à respirer, et Zara filmait tout d’une main tremblante.",
+      "g": {
+       "hardly": [
+        "à peine",
+        "hardly",
+        "d"
+       ],
+       "breathe": [
+        "respirer",
+        "breathe",
+        "v"
+       ],
+       "filming": [
+        "filmait",
+        "film",
+        "v",
+        "filmer"
+       ],
+       "shaking": [
+        "tremblante",
+        "shake",
+        "v",
+        "trembler"
+       ],
+       "everything": [
+        "tout",
+        "everything",
+        "p"
+       ],
+       "hand": [
+        "main",
+        "hand",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "“Lot one hundred and twelve,” said the auctioneer. “A first edition of Alice’s Adventures in Wonderland, 1865. Shall we start at one hundred thousand pounds?”",
+      "fr": "« Lot cent douze, dit le commissaire-priseur. Une édition originale d’Alice’s Adventures in Wonderland, 1865. Commençons-nous à cent mille livres ? »",
+      "g": {
+       "lot": [
+        "lot",
+        "lot",
+        "n"
+       ],
+       "auctioneer": [
+        "commissaire-priseur",
+        "auctioneer",
+        "n"
+       ],
+       "first": [
+        "originale (first edition : édition originale)",
+        "first",
+        "a"
+       ],
+       "edition": [
+        "édition",
+        "edition",
+        "n"
+       ],
+       "alice's": [
+        "d'Alice",
+        "Alice",
+        "np"
+       ],
+       "adventures": [
+        "aventures",
+        "adventure",
+        "n",
+        "aventure"
+       ],
+       "wonderland": [
+        "pays des merveilles",
+        "Wonderland",
+        "np"
+       ],
+       "in": [
+        "au",
+        "in",
+        "r"
+       ],
+       "shall": [
+        "commençons-nous",
+        "shall",
+        "v",
+        ""
+       ],
+       "start": [
+        "commencer",
+        "start",
+        "v",
+        ""
+       ],
+       "pounds": [
+        "livres (sterling)",
+        "pound",
+        "n",
+        "livre"
+       ],
+       "thousand": [
+        "mille",
+        "thousand",
+        "a"
+       ],
+       "hundred": [
+        "cent",
+        "hundred",
+        "a"
+       ],
+       "twelve": [
+        "douze",
+        "twelve",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Hands rose, phones rang, and numbers flew across the room faster than Noah could follow.",
+      "fr": "Des mains se levèrent, des téléphones sonnèrent, et les chiffres volèrent à travers la salle plus vite que Noah ne pouvait suivre.",
+      "g": {
+       "rose": [
+        "se levèrent",
+        "rise",
+        "v",
+        "se lever"
+       ],
+       "rang": [
+        "sonnèrent",
+        "ring",
+        "v",
+        "sonner"
+       ],
+       "numbers": [
+        "chiffres",
+        "number",
+        "n",
+        "chiffre"
+       ],
+       "flew": [
+        "volèrent",
+        "fly",
+        "v",
+        "voler"
+       ],
+       "across": [
+        "à travers",
+        "across",
+        "r"
+       ],
+       "faster": [
+        "plus vite",
+        "fast",
+        "d",
+        "vite"
+       ],
+       "follow": [
+        "suivre",
+        "follow",
+        "v",
+        "suivre"
+       ],
+       "hands": [
+        "mains",
+        "hand",
+        "n",
+        "main"
+       ],
+       "phones": [
+        "téléphones",
+        "phone",
+        "n",
+        "téléphone"
+       ],
+       "room": [
+        "salle",
+        "room",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Two hundred thousand. Two hundred and fifty. Three hundred.",
+      "fr": "Deux cent mille. Deux cent cinquante mille. Trois cent mille.",
+      "g": {
+       "two": [
+        "deux",
+        "two",
+        "a"
+       ],
+       "hundred": [
+        "cent",
+        "hundred",
+        "a"
+       ],
+       "thousand": [
+        "mille",
+        "thousand",
+        "a"
+       ],
+       "fifty": [
+        "cinquante",
+        "fifty",
+        "a"
+       ],
+       "three": [
+        "trois",
+        "three",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Then the bidding slowed down, and a long silence settled over the room.",
+      "fr": "Puis les enchères ralentirent, et un long silence s’installa dans la salle.",
+      "g": {
+       "bidding": [
+        "enchères",
+        "bidding",
+        "n"
+       ],
+       "slowed": [
+        "ralentirent (slowed down)",
+        "slow down",
+        "v",
+        "ralentir"
+       ],
+       "down": [
+        "(slowed down : ralentirent)",
+        "slow down",
+        "x"
+       ],
+       "long": [
+        "long",
+        "long",
+        "a"
+       ],
+       "silence": [
+        "silence",
+        "silence",
+        "n"
+       ],
+       "settled": [
+        "s'installa",
+        "settle",
+        "v",
+        "s'installer"
+       ]
+      }
+     },
+     {
+      "en": "“Three hundred and twenty thousand, on the telephone,” said the auctioneer. “Any advance on that? No? Going once…”",
+      "fr": "« Trois cent vingt mille, au téléphone, dit le commissaire-priseur. Une surenchère ? Non ? Une fois… »",
+      "g": {
+       "twenty": [
+        "vingt",
+        "twenty",
+        "a"
+       ],
+       "telephone": [
+        "téléphone",
+        "telephone",
+        "n"
+       ],
+       "advance": [
+        "surenchère",
+        "advance",
+        "n"
+       ],
+       "going": [
+        "(going once : une fois)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "once": [
+        "(going once : une fois)",
+        "once",
+        "d"
+       ],
+       "that": [
+        "cela",
+        "that",
+        "p"
+       ],
+       "any": [
+        "(any advance : une surenchère)",
+        "any",
+        "t"
+       ]
+      }
+     },
+     {
+      "en": "A man at the back of the room lifted one finger. “Three hundred and forty. Going twice…”",
+      "fr": "Un homme au fond de la salle leva un doigt. « Trois cent quarante mille. Deux fois… »",
+      "g": {
+       "back": [
+        "fond",
+        "back",
+        "n"
+       ],
+       "lifted": [
+        "leva",
+        "lift",
+        "v",
+        "lever"
+       ],
+       "finger": [
+        "doigt",
+        "finger",
+        "n"
+       ],
+       "forty": [
+        "quarante",
+        "forty",
+        "a"
+       ],
+       "going": [
+        "(going twice : deux fois)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "twice": [
+        "(going twice : deux fois)",
+        "twice",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "Mrs Okafor squeezed Noah’s hand so hard that he nearly cried out.",
+      "fr": "Mme Okafor serra la main de Noah si fort qu’il faillit crier.",
+      "g": {
+       "squeezed": [
+        "serra",
+        "squeeze",
+        "v",
+        "serrer"
+       ],
+       "hard": [
+        "fort",
+        "hard",
+        "d"
+       ],
+       "nearly": [
+        "faillit",
+        "nearly",
+        "d"
+       ],
+       "cried": [
+        "crier (cried out)",
+        "cry out",
+        "v",
+        "crier"
+       ],
+       "out": [
+        "(cried out : crier)",
+        "cry out",
+        "x"
+       ],
+       "so": [
+        "si",
+        "so",
+        "d"
+       ],
+       "that": [
+        "que",
+        "that",
+        "c"
+       ],
+       "noah's": [
+        "de Noah",
+        "Noah",
+        "np"
+       ]
+      }
+     },
+     {
+      "en": "The hammer came down. “Sold, for three hundred and forty thousand pounds!”",
+      "fr": "Le marteau s’abattit. « Adjugé, pour trois cent quarante mille livres ! »",
+      "g": {
+       "hammer": [
+        "marteau",
+        "hammer",
+        "n"
+       ],
+       "came": [
+        "s'abattit (came down)",
+        "come down",
+        "v",
+        "s'abattre"
+       ],
+       "down": [
+        "(came down : s'abattit)",
+        "come down",
+        "x"
+       ],
+       "sold": [
+        "adjugé",
+        "sell",
+        "v",
+        "vendre"
+       ]
+      }
+     },
+     {
+      "en": "Through Zara’s phone, they could hear the shop back home erupting like a stadium.",
+      "fr": "Par le téléphone de Zara, ils entendaient la boutique, là-bas, éclater comme un stade.",
+      "g": {
+       "through": [
+        "par",
+        "through",
+        "r"
+       ],
+       "zara's": [
+        "de Zara",
+        "Zara",
+        "np"
+       ],
+       "hear": [
+        "entendre",
+        "hear",
+        "v",
+        "entendre"
+       ],
+       "erupting": [
+        "éclatant",
+        "erupt",
+        "v",
+        "éclater"
+       ],
+       "stadium": [
+        "stade",
+        "stadium",
+        "n"
+       ],
+       "like": [
+        "comme",
+        "like",
+        "r"
+       ],
+       "back": [
+        "là-bas (back home)",
+        "back",
+        "d"
+       ],
+       "home": [
+        "(back home : là-bas)",
+        "home",
+        "d"
+       ],
+       "could": [
+        "pouvaient",
+        "can",
+        "v",
+        "pouvoir"
+       ]
+      }
+     },
+     {
+      "en": "Noah thought of the leak, the rain and the bookcase. If he had left it where it was, none of this would have happened.",
+      "fr": "Noah pensa à la fuite, à la pluie et à la bibliothèque. S’il l’avait laissée où elle était, rien de tout cela ne serait arrivé.",
+      "g": {
+       "thought": [
+        "pensa",
+        "think",
+        "v",
+        "penser"
+       ],
+       "leak": [
+        "fuite",
+        "leak",
+        "n"
+       ],
+       "rain": [
+        "pluie",
+        "rain",
+        "n"
+       ],
+       "left": [
+        "laissée",
+        "leave",
+        "v",
+        "laisser"
+       ],
+       "where": [
+        "où",
+        "where",
+        "c"
+       ],
+       "would": [
+        "serait",
+        "would",
+        "v",
+        ""
+       ],
+       "have": [
+        "(would have happened : serait arrivé)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "happened": [
+        "arrivé",
+        "happen",
+        "v",
+        "arriver"
+       ],
+       "none": [
+        "rien",
+        "none",
+        "p"
+       ],
+       "had": [
+        "(had left : avait laissée)",
+        "have",
+        "v",
+        "avoir"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "titre": "Chapter 14 — The Last Page",
+   "titreFr": "Chapitre 14 — La dernière page",
+   "p": [
+    [
+     {
+      "en": "The money for the building was handed over on the twenty-eighth of November, two days before Mr Hale’s deadline, and he signed the papers with a face like sour milk.",
+      "fr": "L’argent pour l’immeuble fut remis le vingt-huit novembre, deux jours avant l’échéance de M. Hale, qui signa les papiers avec une mine de lait tourné.",
+      "g": {
+       "handed": [
+        "remis (handed over)",
+        "hand over",
+        "v",
+        "remettre"
+       ],
+       "over": [
+        "(handed over : remis)",
+        "hand over",
+        "x"
+       ],
+       "twenty-eighth": [
+        "vingt-huitième",
+        "twenty-eighth",
+        "a"
+       ],
+       "november": [
+        "novembre",
+        "November",
+        "n"
+       ],
+       "deadline": [
+        "échéance",
+        "deadline",
+        "n"
+       ],
+       "days": [
+        "jours",
+        "day",
+        "n",
+        "jour"
+       ],
+       "hale's": [
+        "de M. Hale",
+        "Hale",
+        "np"
+       ],
+       "building": [
+        "immeuble",
+        "building",
+        "n"
+       ],
+       "signed": [
+        "signa",
+        "sign",
+        "v",
+        "signer"
+       ],
+       "papers": [
+        "papiers",
+        "paper",
+        "n",
+        "papier"
+       ],
+       "sour": [
+        "tourné (sour milk : lait tourné)",
+        "sour",
+        "a"
+       ],
+       "milk": [
+        "lait",
+        "milk",
+        "n"
+       ],
+       "face": [
+        "mine",
+        "face",
+        "n"
+       ],
+       "like": [
+        "comme",
+        "like",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“You could have saved yourself all this trouble,” he muttered, “if you had accepted my offer in the summer.”",
+      "fr": "« Vous auriez pu vous épargner tous ces ennuis, marmonna-t-il, si vous aviez accepté mon offre cet été. »",
+      "g": {
+       "could": [
+        "auriez pu",
+        "can",
+        "v",
+        "pouvoir"
+       ],
+       "have": [
+        "(could have saved : auriez pu épargner)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "saved": [
+        "épargner",
+        "save",
+        "v",
+        "épargner"
+       ],
+       "yourself": [
+        "vous",
+        "yourself",
+        "p"
+       ],
+       "trouble": [
+        "ennuis",
+        "trouble",
+        "n"
+       ],
+       "muttered": [
+        "marmonna",
+        "mutter",
+        "v",
+        "marmonner"
+       ],
+       "accepted": [
+        "accepté",
+        "accept",
+        "v",
+        "accepter"
+       ],
+       "offer": [
+        "offre",
+        "offer",
+        "n"
+       ],
+       "summer": [
+        "été",
+        "summer",
+        "n"
+       ],
+       "had": [
+        "aviez",
+        "have",
+        "v",
+        "avoir"
+       ]
+      }
+     },
+     {
+      "en": "“And I would have missed the best summer of my life,” said Mrs Okafor.",
+      "fr": "« Et j’aurais raté le plus bel été de ma vie », dit Mme Okafor.",
+      "g": {
+       "would": [
+        "aurais",
+        "would",
+        "v",
+        ""
+       ],
+       "have": [
+        "(would have missed : aurais raté)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "missed": [
+        "raté",
+        "miss",
+        "v",
+        "rater"
+       ],
+       "best": [
+        "plus bel",
+        "good",
+        "a",
+        "bon"
+       ],
+       "summer": [
+        "été",
+        "summer",
+        "n"
+       ],
+       "life": [
+        "vie",
+        "life",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“I am seventy-six,” Mrs Okafor told the town at a packed meeting in the church hall. “One day I will not be here, and a bookshop should not depend on one tiresome old woman.”",
+      "fr": "« J’ai soixante-seize ans, dit Mme Okafor à la ville lors d’une réunion bondée dans la salle paroissiale. Un jour je ne serai plus là, et une librairie ne devrait pas dépendre d’une seule vieille femme pénible. »",
+      "g": {
+       "seventy-six": [
+        "soixante-seize ans",
+        "seventy-six",
+        "a"
+       ],
+       "told": [
+        "dit",
+        "tell",
+        "v",
+        "dire"
+       ],
+       "packed": [
+        "bondée",
+        "packed",
+        "a"
+       ],
+       "meeting": [
+        "réunion",
+        "meeting",
+        "n"
+       ],
+       "church": [
+        "paroissiale",
+        "church",
+        "n"
+       ],
+       "hall": [
+        "salle",
+        "hall",
+        "n"
+       ],
+       "depend": [
+        "dépendre",
+        "depend",
+        "v",
+        "dépendre"
+       ],
+       "tiresome": [
+        "pénible",
+        "tiresome",
+        "a"
+       ],
+       "woman": [
+        "femme",
+        "woman",
+        "n"
+       ],
+       "one": [
+        "une seule",
+        "one",
+        "a"
+       ],
+       "should": [
+        "devrait",
+        "should",
+        "v",
+        ""
+       ],
+       "day": [
+        "jour",
+        "day",
+        "n"
+       ],
+       "old": [
+        "vieille",
+        "old",
+        "a"
+       ],
+       "will": [
+        "serai",
+        "will",
+        "v",
+        ""
+       ]
+      }
+     },
+     {
+      "en": "“So I am handing it over to you.”",
+      "fr": "« Alors je vous la confie. »",
+      "g": {
+       "so": [
+        "alors",
+        "so",
+        "c"
+       ],
+       "handing": [
+        "confie (handing over)",
+        "hand over",
+        "v",
+        "confier"
+       ],
+       "over": [
+        "(handing over : confie)",
+        "hand over",
+        "x"
+       ]
+      }
+     },
+     {
+      "en": "By Christmas, Okafor’s Books had become a cooperative, owned by more than four hundred members who each paid ten pounds for a share.",
+      "fr": "À Noël, Okafor’s Books était devenue une coopérative, détenue par plus de quatre cents membres qui avaient chacun payé dix livres pour une part.",
+      "g": {
+       "christmas": [
+        "Noël",
+        "Christmas",
+        "np"
+       ],
+       "become": [
+        "devenue",
+        "become",
+        "v",
+        "devenir"
+       ],
+       "cooperative": [
+        "coopérative",
+        "cooperative",
+        "n"
+       ],
+       "owned": [
+        "détenue",
+        "own",
+        "v",
+        "détenir"
+       ],
+       "members": [
+        "membres",
+        "member",
+        "n",
+        "membre"
+       ],
+       "each": [
+        "chacun",
+        "each",
+        "p"
+       ],
+       "paid": [
+        "payé",
+        "pay",
+        "v",
+        "payer"
+       ],
+       "share": [
+        "part",
+        "share",
+        "n"
+       ],
+       "pounds": [
+        "livres",
+        "pound",
+        "n",
+        "livre"
+       ],
+       "hundred": [
+        "cents",
+        "hundred",
+        "a"
+       ],
+       "four": [
+        "quatre",
+        "four",
+        "a"
+       ],
+       "ten": [
+        "dix",
+        "ten",
+        "a"
+       ],
+       "more": [
+        "plus",
+        "more",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "Dr Bernard ran the children’s corner, and Zara painted a mural of Pickle in a crown on the back wall.",
+      "fr": "La docteure Bernard s’occupait du coin des enfants, et Zara peignit sur le mur du fond une fresque de Pickle coiffé d’une couronne.",
+      "g": {
+       "ran": [
+        "s'occupait de",
+        "run",
+        "v",
+        "diriger"
+       ],
+       "children's": [
+        "des enfants",
+        "child",
+        "n",
+        "enfant"
+       ],
+       "corner": [
+        "coin",
+        "corner",
+        "n"
+       ],
+       "painted": [
+        "peignit",
+        "paint",
+        "v",
+        "peindre"
+       ],
+       "mural": [
+        "fresque",
+        "mural",
+        "n"
+       ],
+       "crown": [
+        "couronne",
+        "crown",
+        "n"
+       ],
+       "back": [
+        "fond",
+        "back",
+        "a"
+       ],
+       "wall": [
+        "mur",
+        "wall",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Mrs Okafor kept the title of Chief Troublemaker, which she said was the only job she had ever wanted.",
+      "fr": "Mme Okafor garda le titre de Cheffe des Fauteurs de troubles, qui était, disait-elle, le seul poste qu’elle ait jamais voulu.",
+      "g": {
+       "kept": [
+        "garda",
+        "keep",
+        "v",
+        "garder"
+       ],
+       "title": [
+        "titre",
+        "title",
+        "n"
+       ],
+       "chief": [
+        "Cheffe",
+        "chief",
+        "n"
+       ],
+       "troublemaker": [
+        "Fauteurs de troubles",
+        "troublemaker",
+        "n"
+       ],
+       "which": [
+        "qui",
+        "which",
+        "p"
+       ],
+       "only": [
+        "seul",
+        "only",
+        "a"
+       ],
+       "job": [
+        "poste",
+        "job",
+        "n"
+       ],
+       "ever": [
+        "jamais",
+        "ever",
+        "d"
+       ],
+       "wanted": [
+        "voulu",
+        "want",
+        "v",
+        "vouloir"
+       ],
+       "said": [
+        "disait",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "The following August, Noah opened an email with trembling fingers.",
+      "fr": "En août suivant, Noah ouvrit un e-mail d’une main tremblante.",
+      "g": {
+       "following": [
+        "suivant",
+        "following",
+        "a"
+       ],
+       "august": [
+        "août",
+        "August",
+        "n"
+       ],
+       "email": [
+        "e-mail",
+        "email",
+        "n"
+       ],
+       "trembling": [
+        "tremblantes",
+        "trembling",
+        "a"
+       ],
+       "fingers": [
+        "doigts",
+        "finger",
+        "n",
+        "doigt"
+       ],
+       "opened": [
+        "ouvrit",
+        "open",
+        "v",
+        "ouvrir"
+       ]
+      }
+     },
+     {
+      "en": "He had been accepted to study English Literature at the University of Bristol.",
+      "fr": "Il avait été admis pour étudier la littérature anglaise à l’université de Bristol.",
+      "g": {
+       "accepted": [
+        "admis",
+        "accept",
+        "v",
+        "accepter"
+       ],
+       "study": [
+        "étudier",
+        "study",
+        "v",
+        "étudier"
+       ],
+       "university": [
+        "université",
+        "university",
+        "n"
+       ],
+       "bristol": [
+        "Bristol (ville)",
+        "Bristol",
+        "np"
+       ],
+       "literature": [
+        "littérature",
+        "literature",
+        "n"
+       ],
+       "english": [
+        "anglaise",
+        "English",
+        "a"
+       ],
+       "been": [
+        "(had been accepted : avait été admis)",
+        "be",
+        "v",
+        "être"
+       ]
+      }
+     },
+     {
+      "en": "A year earlier, he could not have imagined wanting anything of the kind.",
+      "fr": "Un an plus tôt, il n’aurait pas pu imaginer vouloir quoi que ce soit de ce genre.",
+      "g": {
+       "earlier": [
+        "plus tôt",
+        "earlier",
+        "d"
+       ],
+       "could": [
+        "aurait pu",
+        "can",
+        "v",
+        "pouvoir"
+       ],
+       "have": [
+        "(could not have imagined : n'aurait pas pu imaginer)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "imagined": [
+        "imaginer",
+        "imagine",
+        "v",
+        "imaginer"
+       ],
+       "wanting": [
+        "vouloir",
+        "want",
+        "v",
+        "vouloir"
+       ],
+       "anything": [
+        "quoi que ce soit",
+        "anything",
+        "p"
+       ],
+       "kind": [
+        "genre",
+        "kind",
+        "n"
+       ],
+       "year": [
+        "an",
+        "year",
+        "n"
+       ],
+       "of": [
+        "de",
+        "of",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "He found Mrs Okafor up a ladder, rearranging the poetry shelf and singing out of tune.",
+      "fr": "Il trouva Mme Okafor en haut d’une échelle, en train de ranger le rayon poésie en chantant faux.",
+      "g": {
+       "found": [
+        "trouva",
+        "find",
+        "v",
+        "trouver"
+       ],
+       "ladder": [
+        "échelle",
+        "ladder",
+        "n"
+       ],
+       "rearranging": [
+        "en train de ranger",
+        "rearrange",
+        "v",
+        "réarranger"
+       ],
+       "poetry": [
+        "poésie",
+        "poetry",
+        "n"
+       ],
+       "shelf": [
+        "rayon",
+        "shelf",
+        "n"
+       ],
+       "singing": [
+        "chantant",
+        "sing",
+        "v",
+        "chanter"
+       ],
+       "tune": [
+        "(out of tune : faux)",
+        "tune",
+        "n"
+       ],
+       "out": [
+        "(out of tune : faux)",
+        "out",
+        "d"
+       ],
+       "of": [
+        "(out of tune : faux)",
+        "of",
+        "r"
+       ],
+       "up": [
+        "en haut de",
+        "up",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "“Don’t thank me,” she said when he told her. “Thank the leak.”",
+      "fr": "« Ne me remerciez pas, dit-elle quand il le lui annonça. Remerciez la fuite. »",
+      "g": {
+       "thank": [
+        "remerciez",
+        "thank",
+        "v",
+        "remercier"
+       ],
+       "told": [
+        "annonça",
+        "tell",
+        "v",
+        "annoncer"
+       ],
+       "leak": [
+        "fuite",
+        "leak",
+        "n"
+       ],
+       "when": [
+        "quand",
+        "when",
+        "c"
+       ]
+      }
+     },
+     {
+      "en": "“And the cat,” said Zara from the doorway, “who was right about Mr Hale, as always.”",
+      "fr": "« Et le chat, dit Zara depuis l’entrée, qui avait raison à propos de M. Hale, comme toujours. »",
+      "g": {
+       "doorway": [
+        "entrée",
+        "doorway",
+        "n"
+       ],
+       "who": [
+        "qui",
+        "who",
+        "p"
+       ],
+       "right": [
+        "raison",
+        "right",
+        "a"
+       ],
+       "always": [
+        "toujours",
+        "always",
+        "d"
+       ],
+       "as": [
+        "comme",
+        "as",
+        "c"
+       ]
+      }
+     },
+     {
+      "en": "That afternoon, Noah wrote a sign for the window: “Help wanted. Must love books. Must not mind cats. Bad jokes will still be tolerated.”",
+      "fr": "Cet après-midi-là, Noah écrivit une pancarte pour la vitrine : « On recherche de l’aide. Il faut aimer les livres. Il ne faut pas craindre les chats. Les mauvaises blagues seront toujours tolérées. »",
+      "g": {
+       "afternoon": [
+        "après-midi",
+        "afternoon",
+        "n"
+       ],
+       "wrote": [
+        "écrivit",
+        "write",
+        "v",
+        "écrire"
+       ],
+       "sign": [
+        "pancarte",
+        "sign",
+        "n"
+       ],
+       "window": [
+        "vitrine",
+        "window",
+        "n"
+       ],
+       "wanted": [
+        "recherché (help wanted : on recherche de l'aide)",
+        "want",
+        "v",
+        "vouloir"
+       ],
+       "mind": [
+        "craindre",
+        "mind",
+        "v",
+        ""
+       ],
+       "will": [
+        "seront",
+        "will",
+        "v",
+        ""
+       ],
+       "be": [
+        "être",
+        "be",
+        "v",
+        ""
+       ],
+       "still": [
+        "toujours",
+        "still",
+        "d"
+       ],
+       "love": [
+        "aimer",
+        "love",
+        "v"
+       ],
+       "books": [
+        "livres",
+        "book",
+        "n",
+        "livre"
+       ],
+       "that": [
+        "cet",
+        "that",
+        "t"
+       ]
+      }
+     }
+    ]
+   ]
+  }
+ ]
+}

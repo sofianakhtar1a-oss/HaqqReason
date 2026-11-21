@@ -1,0 +1,5805 @@
+{
+ "debut": 15,
+ "lexique": {
+  "dupin": [
+   "Dupin (prénom du détective)",
+   "Dupin",
+   "np"
+  ],
+  "d": [
+   "D— (le ministre)",
+   "D",
+   "np"
+  ],
+  "g": [
+   "G— (le préfet)",
+   "G",
+   "np"
+  ],
+  "minister": [
+   "ministre",
+   "minister",
+   "n"
+  ],
+  "prefect": [
+   "préfet",
+   "prefect",
+   "n"
+  ],
+  "letter": [
+   "lettre",
+   "letter",
+   "n"
+  ],
+  "hotel": [
+   "hôtel (demeure du ministre)",
+   "hotel",
+   "n"
+  ]
+ },
+ "pages": [
+  {
+   "p": [
+    [
+     {
+      "en": "“I mean to say,” continued Dupin, while I merely laughed at his last observations, “that if the Minister had been no more than a mathematician, the Prefect would have been under no necessity of giving me this check.",
+      "fr": "« Je veux dire, reprit Dupin tandis que je me contentais de rire de ses dernières remarques, que si le ministre n'avait été qu'un mathématicien, le préfet n'aurait pas eu à me présenter cet échec.",
+      "g": {
+       "mean": [
+        "veux dire (mean to say)",
+        "mean",
+        "v",
+        "signifier"
+       ],
+       "to": [
+        "(mean to say : veux dire)",
+        "to",
+        "x"
+       ],
+       "say": [
+        "(mean to say : veux dire)",
+        "say",
+        "v",
+        "dire"
+       ],
+       "continued": [
+        "reprit",
+        "continue",
+        "v",
+        "continuer"
+       ],
+       "merely": [
+        "simplement",
+        "merely",
+        "d"
+       ],
+       "laughed": [
+        "riais",
+        "laugh",
+        "v",
+        "rire"
+       ],
+       "at": [
+        "de (laugh at : rire de)",
+        "at",
+        "r"
+       ],
+       "observations": [
+        "remarques",
+        "observation",
+        "n",
+        "remarque"
+       ],
+       "no": [
+        "ne… que (no more than)",
+        "no",
+        "d"
+       ],
+       "more": [
+        "(no more than : seulement)",
+        "more",
+        "d"
+       ],
+       "than": [
+        "(no more than : seulement)",
+        "than",
+        "c"
+       ],
+       "mathematician": [
+        "mathématicien",
+        "mathematician",
+        "n"
+       ],
+       "under": [
+        "dans (under no necessity : sans avoir à)",
+        "under",
+        "r"
+       ],
+       "no#2": [
+        "aucune",
+        "no",
+        "t"
+       ],
+       "necessity": [
+        "nécessité",
+        "necessity",
+        "n"
+       ],
+       "giving": [
+        "donner",
+        "give",
+        "v",
+        "donner"
+       ],
+       "check": [
+        "revers, échec",
+        "check",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "I know him, however, as both mathematician and poet, and my measures were adapted to his capacity, with reference to the circumstances by which he was surrounded.",
+      "fr": "Pourtant je le connais à la fois comme mathématicien et comme poète, et mes dispositions étaient adaptées à ses capacités, eu égard aux circonstances dont il était entouré.",
+      "g": {
+       "know": [
+        "connais",
+        "know",
+        "v",
+        "connaître"
+       ],
+       "as": [
+        "comme",
+        "as",
+        "r"
+       ],
+       "mathematician": [
+        "mathématicien",
+        "mathematician",
+        "n"
+       ],
+       "poet": [
+        "poète",
+        "poet",
+        "n"
+       ],
+       "measures": [
+        "dispositions",
+        "measure",
+        "n",
+        "mesure"
+       ],
+       "adapted": [
+        "adaptées",
+        "adapt",
+        "v",
+        "adapter"
+       ],
+       "capacity": [
+        "capacités",
+        "capacity",
+        "n",
+        "capacité"
+       ],
+       "with": [
+        "(with reference to : eu égard à)",
+        "with",
+        "r"
+       ],
+       "reference": [
+        "(with reference to : eu égard à)",
+        "reference",
+        "n"
+       ],
+       "to#2": [
+        "(with reference to : eu égard à)",
+        "to",
+        "r"
+       ],
+       "circumstances": [
+        "circonstances",
+        "circumstance",
+        "n",
+        "circonstance"
+       ],
+       "surrounded": [
+        "entouré",
+        "surround",
+        "v",
+        "entourer"
+       ]
+      }
+     },
+     {
+      "en": "I knew him as a courtier, too, and as a bold intriguant.",
+      "fr": "Je le connaissais aussi comme courtisan, et comme intrigant audacieux.",
+      "g": {
+       "knew": [
+        "connaissais",
+        "know",
+        "v",
+        "connaître"
+       ],
+       "as": [
+        "comme",
+        "as",
+        "r"
+       ],
+       "courtier": [
+        "courtisan",
+        "courtier",
+        "n"
+       ],
+       "too": [
+        "aussi",
+        "too",
+        "d"
+       ],
+       "bold": [
+        "audacieux",
+        "bold",
+        "a"
+       ],
+       "intriguant": [
+        "intrigant",
+        "intriguant",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Such a man, I considered, could not fail to be aware of the ordinary policial modes of action.",
+      "fr": "Un tel homme, me disais-je, ne pouvait manquer de connaître les méthodes d'action habituelles de la police.",
+      "g": {
+       "man": [
+        "homme",
+        "man",
+        "n"
+       ],
+       "considered": [
+        "me disais",
+        "consider",
+        "v",
+        "considérer"
+       ],
+       "fail": [
+        "manquer (de)",
+        "fail",
+        "v",
+        "manquer"
+       ],
+       "to": [
+        "(fail to : manquer de)",
+        "to",
+        "x"
+       ],
+       "aware": [
+        "conscient",
+        "aware",
+        "a"
+       ],
+       "ordinary": [
+        "habituelles",
+        "ordinary",
+        "a"
+       ],
+       "policial": [
+        "de la police",
+        "policial",
+        "a"
+       ],
+       "modes": [
+        "méthodes",
+        "mode",
+        "n",
+        "mode"
+       ],
+       "action": [
+        "action",
+        "action",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He could not have failed to anticipate — and events have proved that he did not fail to anticipate — the waylayings to which he was subjected.",
+      "fr": "Il n'aurait pu manquer de prévoir — et les événements ont prouvé qu'il n'a pas manqué de prévoir — les guets-apens auxquels il était exposé.",
+      "g": {
+       "failed": [
+        "manqué",
+        "fail",
+        "v",
+        "manquer"
+       ],
+       "fail": [
+        "manquer",
+        "fail",
+        "v",
+        "manquer"
+       ],
+       "to": [
+        "(fail to : manquer de)",
+        "to",
+        "x"
+       ],
+       "to#3": [
+        "auxquels (to which)",
+        "to",
+        "r"
+       ],
+       "anticipate": [
+        "prévoir",
+        "anticipate",
+        "v",
+        "prévoir"
+       ],
+       "events": [
+        "événements",
+        "event",
+        "n",
+        "événement"
+       ],
+       "proved": [
+        "prouvé",
+        "prove",
+        "v",
+        "prouver"
+       ],
+       "waylayings": [
+        "guets-apens",
+        "waylaying",
+        "n",
+        "guet-apens"
+       ],
+       "subjected": [
+        "exposé",
+        "subject",
+        "v",
+        "soumettre"
+       ]
+      }
+     },
+     {
+      "en": "He must have foreseen, I reflected, the secret investigations of his premises.",
+      "fr": "Il avait dû pressentir, me disais-je, les investigations secrètes menées dans ses locaux.",
+      "g": {
+       "must": [
+        "avait dû",
+        "must",
+        "v"
+       ],
+       "foreseen": [
+        "pressenti",
+        "foresee",
+        "v",
+        "prévoir"
+       ],
+       "reflected": [
+        "me disais",
+        "reflect",
+        "v",
+        "réfléchir"
+       ],
+       "secret": [
+        "secrètes",
+        "secret",
+        "a"
+       ],
+       "investigations": [
+        "investigations",
+        "investigation",
+        "n",
+        "investigation"
+       ],
+       "premises": [
+        "locaux, demeure",
+        "premises",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "His frequent absences from home at night, which were hailed by the Prefect as certain aids to his success, I regarded only as ruses, to afford opportunity for thorough search to the police, and thus the sooner to impress them with the conviction to which G — , in fact, did finally arrive — the conviction that the letter was not upon the premises.",
+      "fr": "Ses absences fréquentes de chez lui la nuit, que le préfet saluait comme autant d'aides sûres à son succès, je ne les tenais que pour des ruses, destinées à laisser à la police l'occasion d'une fouille minutieuse, et à lui faire ainsi plus vite adopter la conviction à laquelle G— parvint en effet — la conviction que la lettre n'était pas dans les lieux.",
+      "g": {
+       "frequent": [
+        "fréquentes",
+        "frequent",
+        "a"
+       ],
+       "absences": [
+        "absences",
+        "absence",
+        "n",
+        "absence"
+       ],
+       "home": [
+        "chez lui (from home)",
+        "home",
+        "n"
+       ],
+       "at": [
+        "(at night : la nuit)",
+        "at",
+        "r"
+       ],
+       "night": [
+        "(at night : la nuit)",
+        "night",
+        "n"
+       ],
+       "hailed": [
+        "saluées",
+        "hail",
+        "v",
+        "saluer"
+       ],
+       "as": [
+        "comme",
+        "as",
+        "r"
+       ],
+       "certain": [
+        "sûres",
+        "certain",
+        "a"
+       ],
+       "aids": [
+        "aides",
+        "aid",
+        "n",
+        "aide"
+       ],
+       "success": [
+        "succès",
+        "success",
+        "n"
+       ],
+       "regarded": [
+        "tenais pour",
+        "regard",
+        "v",
+        "considérer"
+       ],
+       "ruses": [
+        "ruses",
+        "ruse",
+        "n",
+        "ruse"
+       ],
+       "afford": [
+        "offrir",
+        "afford",
+        "v",
+        "offrir"
+       ],
+       "opportunity": [
+        "l'occasion",
+        "opportunity",
+        "n"
+       ],
+       "thorough": [
+        "minutieuse",
+        "thorough",
+        "a"
+       ],
+       "search": [
+        "fouille",
+        "search",
+        "n"
+       ],
+       "police": [
+        "police",
+        "police",
+        "n"
+       ],
+       "sooner": [
+        "plus vite (the sooner)",
+        "soon",
+        "d",
+        "bientôt"
+       ],
+       "impress": [
+        "persuader (impress with)",
+        "impress",
+        "v",
+        "impressionner"
+       ],
+       "with": [
+        "(impress with : persuader de)",
+        "with",
+        "r"
+       ],
+       "conviction": [
+        "conviction",
+        "conviction",
+        "n"
+       ],
+       "in": [
+        "(in fact : en effet)",
+        "in",
+        "r"
+       ],
+       "fact": [
+        "(in fact : en effet)",
+        "fact",
+        "n"
+       ],
+       "did": [
+        "(did arrive : parvint effectivement)",
+        "do",
+        "v",
+        "faire"
+       ],
+       "finally": [
+        "finalement",
+        "finally",
+        "d"
+       ],
+       "arrive": [
+        "parvint",
+        "arrive",
+        "v",
+        "arriver"
+       ],
+       "upon": [
+        "dans",
+        "upon",
+        "r"
+       ],
+       "premises": [
+        "lieux, locaux",
+        "premises",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "I felt, also, that the whole train of thought, which I was at some pains in detailing to you just now, concerning the invariable principle of policial action in searches for articles concealed — I felt that this whole train of thought would necessarily pass through the mind of the Minister.",
+      "fr": "Je sentais aussi que tout ce fil de pensée, que je me suis donné quelque peine à vous exposer il y a un instant, au sujet du principe invariable de l'action policière dans la recherche d'objets cachés — je sentais que tout ce fil de pensée traverserait nécessairement l'esprit du ministre.",
+      "g": {
+       "felt": [
+        "sentais",
+        "feel",
+        "v",
+        "sentir"
+       ],
+       "whole": [
+        "tout",
+        "whole",
+        "a"
+       ],
+       "train": [
+        "fil (train of thought)",
+        "train",
+        "n"
+       ],
+       "thought": [
+        "pensée",
+        "thought",
+        "n"
+       ],
+       "at": [
+        "(at some pains : en prenant quelque peine)",
+        "at",
+        "r"
+       ],
+       "some": [
+        "(at some pains : en prenant quelque peine)",
+        "some",
+        "t"
+       ],
+       "pains": [
+        "peine (at some pains)",
+        "pain",
+        "n",
+        "peine"
+       ],
+       "detailing": [
+        "exposer en détail",
+        "detail",
+        "v",
+        "détailler"
+       ],
+       "just": [
+        "(just now : à l'instant)",
+        "just",
+        "d"
+       ],
+       "now": [
+        "(just now : à l'instant)",
+        "now",
+        "d"
+       ],
+       "concerning": [
+        "au sujet de",
+        "concerning",
+        "r"
+       ],
+       "invariable": [
+        "invariable",
+        "invariable",
+        "a"
+       ],
+       "policial": [
+        "policière",
+        "policial",
+        "a"
+       ],
+       "principle": [
+        "principe",
+        "principle",
+        "n"
+       ],
+       "action": [
+        "action",
+        "action",
+        "n"
+       ],
+       "searches": [
+        "recherches",
+        "search",
+        "n",
+        "recherche"
+       ],
+       "for": [
+        "de (searches for)",
+        "for",
+        "r"
+       ],
+       "articles": [
+        "objets",
+        "article",
+        "n",
+        "article"
+       ],
+       "concealed": [
+        "cachés",
+        "conceal",
+        "v",
+        "cacher"
+       ],
+       "necessarily": [
+        "nécessairement",
+        "necessarily",
+        "d"
+       ],
+       "pass": [
+        "traverser",
+        "pass",
+        "v",
+        "passer"
+       ],
+       "mind": [
+        "esprit",
+        "mind",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "It would imperatively lead him to despise all the ordinary nooks of concealment.",
+      "fr": "Elle le conduirait impérativement à dédaigner toutes les cachettes habituelles.",
+      "g": {
+       "it": [
+        "elle (cette réflexion)",
+        "it",
+        "p"
+       ],
+       "imperatively": [
+        "impérativement",
+        "imperatively",
+        "d"
+       ],
+       "lead": [
+        "conduire",
+        "lead",
+        "v",
+        "conduire"
+       ],
+       "despise": [
+        "dédaigner",
+        "despise",
+        "v",
+        "dédaigner"
+       ],
+       "ordinary": [
+        "habituelles",
+        "ordinary",
+        "a"
+       ],
+       "nooks": [
+        "recoins",
+        "nook",
+        "n",
+        "recoin"
+       ],
+       "concealment": [
+        "dissimulation",
+        "concealment",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He could not, I reflected, be so weak as not to see that the most intricate and remote recess of his hotel would be as open as his commonest closets to the eyes, to the probes, to the gimlets, and to the microscopes of the Prefect.",
+      "fr": "Il ne pouvait, me disais-je, être assez faible pour ne pas voir que le recoin le plus compliqué et le plus reculé de son hôtel serait aussi ouvert que ses placards les plus ordinaires aux yeux, aux sondes, aux vrilles et aux microscopes du préfet.",
+      "g": {
+       "reflected": [
+        "me disais",
+        "reflect",
+        "v",
+        "réfléchir"
+       ],
+       "so": [
+        "assez (so… as not to)",
+        "so",
+        "d"
+       ],
+       "weak": [
+        "faible",
+        "weak",
+        "a"
+       ],
+       "as": [
+        "pour (so… as not to : assez… pour ne pas)",
+        "as",
+        "c"
+       ],
+       "as#2": [
+        "aussi (as… as)",
+        "as",
+        "d"
+       ],
+       "as#3": [
+        "que (as… as)",
+        "as",
+        "c"
+       ],
+       "see": [
+        "voir",
+        "see",
+        "v",
+        "voir"
+       ],
+       "intricate": [
+        "compliqué",
+        "intricate",
+        "a"
+       ],
+       "remote": [
+        "reculé",
+        "remote",
+        "a"
+       ],
+       "recess": [
+        "recoin",
+        "recess",
+        "n"
+       ],
+       "open": [
+        "ouvert",
+        "open",
+        "a"
+       ],
+       "commonest": [
+        "plus ordinaires",
+        "common",
+        "a",
+        "commun"
+       ],
+       "closets": [
+        "placards",
+        "closet",
+        "n",
+        "placard"
+       ],
+       "eyes": [
+        "yeux",
+        "eye",
+        "n",
+        "œil"
+       ],
+       "probes": [
+        "sondes",
+        "probe",
+        "n",
+        "sonde"
+       ],
+       "gimlets": [
+        "vrilles",
+        "gimlet",
+        "n",
+        "vrille"
+       ],
+       "microscopes": [
+        "microscopes",
+        "microscope",
+        "n",
+        "microscope"
+       ]
+      }
+     },
+     {
+      "en": "I saw, in fine, that he would be driven, as a matter of course, to simplicity, if not deliberately induced to it as a matter of choice.",
+      "fr": "Je voyais, en somme, qu'il serait poussé, par la force des choses, vers la simplicité, sinon amené délibérément à la choisir.",
+      "g": {
+       "saw": [
+        "voyais",
+        "see",
+        "v",
+        "voir"
+       ],
+       "in": [
+        "(in fine : en somme)",
+        "in",
+        "r"
+       ],
+       "fine": [
+        "(in fine : en somme)",
+        "fine",
+        "n"
+       ],
+       "driven": [
+        "poussé",
+        "drive",
+        "v",
+        "pousser"
+       ],
+       "as": [
+        "(as a matter of course : par la force des choses)",
+        "as",
+        "r"
+       ],
+       "as#2": [
+        "(as a matter of choice : par choix)",
+        "as",
+        "r"
+       ],
+       "matter": [
+        "(as a matter of course : par la force des choses)",
+        "matter",
+        "n"
+       ],
+       "matter#2": [
+        "(as a matter of choice : par choix)",
+        "matter",
+        "n"
+       ],
+       "of": [
+        "(as a matter of course : par la force des choses)",
+        "of",
+        "r"
+       ],
+       "of#2": [
+        "(as a matter of choice : par choix)",
+        "of",
+        "r"
+       ],
+       "course": [
+        "(as a matter of course : par la force des choses)",
+        "course",
+        "n"
+       ],
+       "simplicity": [
+        "simplicité",
+        "simplicity",
+        "n"
+       ],
+       "deliberately": [
+        "délibérément",
+        "deliberately",
+        "d"
+       ],
+       "induced": [
+        "amené",
+        "induce",
+        "v",
+        "amener"
+       ],
+       "choice": [
+        "(as a matter of choice : par choix)",
+        "choice",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "You will remember, perhaps, how desperately the Prefect laughed when I suggested, upon our first interview, that it was just possible this mystery troubled him so much on account of its being so very self-evident.”",
+      "fr": "Vous vous souviendrez peut-être de la façon désespérée dont le préfet rit lorsque je suggérai, lors de notre premier entretien, qu'il était tout simplement possible que ce mystère le tourmentât tant à cause de son évidence même.",
+      "g": {
+       "remember": [
+        "vous souviendrez",
+        "remember",
+        "v",
+        "se souvenir"
+       ],
+       "desperately": [
+        "désespérément",
+        "desperately",
+        "d"
+       ],
+       "laughed": [
+        "rit",
+        "laugh",
+        "v",
+        "rire"
+       ],
+       "suggested": [
+        "suggérai",
+        "suggest",
+        "v",
+        "suggérer"
+       ],
+       "upon": [
+        "lors de",
+        "upon",
+        "r"
+       ],
+       "interview": [
+        "entretien",
+        "interview",
+        "n"
+       ],
+       "just": [
+        "simplement",
+        "just",
+        "d"
+       ],
+       "possible": [
+        "possible",
+        "possible",
+        "a"
+       ],
+       "mystery": [
+        "mystère",
+        "mystery",
+        "n"
+       ],
+       "troubled": [
+        "tourmentait",
+        "trouble",
+        "v",
+        "tourmenter"
+       ],
+       "so": [
+        "tant (so much)",
+        "so",
+        "d"
+       ],
+       "much": [
+        "(so much : tant)",
+        "much",
+        "d"
+       ],
+       "on": [
+        "(on account of : à cause de)",
+        "on",
+        "r"
+       ],
+       "account": [
+        "(on account of : à cause de)",
+        "account",
+        "n"
+       ],
+       "of": [
+        "(on account of : à cause de)",
+        "of",
+        "r"
+       ],
+       "its": [
+        "son",
+        "its",
+        "t"
+       ],
+       "so#2": [
+        "tellement (so very)",
+        "so",
+        "d"
+       ],
+       "self-evident": [
+        "évident par soi-même",
+        "self-evident",
+        "a"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“Yes,” said I, “I remember his merriment well.",
+      "fr": "« Oui, dis-je, je me souviens bien de son hilarité.",
+      "g": {
+       "said": [
+        "dis",
+        "say",
+        "v",
+        "dire"
+       ],
+       "remember": [
+        "me souviens",
+        "remember",
+        "v",
+        "se souvenir"
+       ],
+       "merriment": [
+        "hilarité",
+        "merriment",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "I really thought he would have fallen into convulsions.”",
+      "fr": "J'ai vraiment cru qu'il allait avoir des convulsions. »",
+      "g": {
+       "thought": [
+        "ai cru",
+        "think",
+        "v",
+        "penser"
+       ],
+       "fallen": [
+        "tombé",
+        "fall",
+        "v",
+        "tomber"
+       ],
+       "convulsions": [
+        "convulsions",
+        "convulsion",
+        "n"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "“The material world,” continued Dupin, “abounds with very strict analogies to the immaterial; and thus some color of truth has been given to the rhetorical dogma, that metaphor, or simile, may be made to strengthen an argument, as well as to embellish a description.",
+      "fr": "« Le monde matériel, reprit Dupin, abonde en analogies très strictes avec l'immatériel ; et c'est ainsi qu'une certaine apparence de vérité a été donnée au dogme rhétorique selon lequel la métaphore, ou la comparaison, peut servir à renforcer un argument aussi bien qu'à embellir une description.",
+      "g": {
+       "material": [
+        "matériel",
+        "material",
+        "a"
+       ],
+       "world": [
+        "monde",
+        "world",
+        "n"
+       ],
+       "continued": [
+        "reprit",
+        "continue",
+        "v",
+        "continuer"
+       ],
+       "abounds": [
+        "abonde",
+        "abound",
+        "v",
+        "abonder"
+       ],
+       "with": [
+        "en (abound with)",
+        "with",
+        "r"
+       ],
+       "strict": [
+        "strictes",
+        "strict",
+        "a"
+       ],
+       "analogies": [
+        "analogies",
+        "analogy",
+        "n",
+        "analogie"
+       ],
+       "immaterial": [
+        "immatériel",
+        "immaterial",
+        "a"
+       ],
+       "some": [
+        "une certaine",
+        "some",
+        "t"
+       ],
+       "color": [
+        "apparence",
+        "color",
+        "n"
+       ],
+       "truth": [
+        "vérité",
+        "truth",
+        "n"
+       ],
+       "given": [
+        "donnée",
+        "give",
+        "v",
+        "donner"
+       ],
+       "rhetorical": [
+        "rhétorique",
+        "rhetorical",
+        "a"
+       ],
+       "dogma": [
+        "dogme",
+        "dogma",
+        "n"
+       ],
+       "metaphor": [
+        "métaphore",
+        "metaphor",
+        "n"
+       ],
+       "simile": [
+        "comparaison",
+        "simile",
+        "n"
+       ],
+       "made": [
+        "amenée",
+        "make",
+        "v",
+        "faire"
+       ],
+       "strengthen": [
+        "renforcer",
+        "strengthen",
+        "v"
+       ],
+       "argument": [
+        "argument",
+        "argument",
+        "n"
+       ],
+       "as": [
+        "(as well as : aussi bien que)",
+        "as",
+        "c"
+       ],
+       "well": [
+        "(as well as : aussi bien que)",
+        "well",
+        "d"
+       ],
+       "embellish": [
+        "embellir",
+        "embellish",
+        "v"
+       ],
+       "description": [
+        "description",
+        "description",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "The principle of the vis inertiae, for example, seems to be identical in physics and metaphysics.",
+      "fr": "Le principe de la vis inertiae, par exemple, semble identique en physique et en métaphysique.",
+      "g": {
+       "principle": [
+        "principe",
+        "principle",
+        "n"
+       ],
+       "vis": [
+        "force (latin)",
+        "vis",
+        "n"
+       ],
+       "inertiae": [
+        "d'inertie (latin)",
+        "inertia",
+        "n"
+       ],
+       "for": [
+        "(for example : par exemple)",
+        "for",
+        "r"
+       ],
+       "example": [
+        "(for example : par exemple)",
+        "example",
+        "n"
+       ],
+       "seems": [
+        "semble",
+        "seem",
+        "v",
+        "sembler"
+       ],
+       "identical": [
+        "identique",
+        "identical",
+        "a"
+       ],
+       "physics": [
+        "physique",
+        "physics",
+        "n"
+       ],
+       "metaphysics": [
+        "métaphysique",
+        "metaphysics",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "It is not more true in the former, that a large body is with more difficulty set in motion than a smaller one, and that its subsequent momentum is commensurate with this difficulty, than it is, in the latter, that intellects of the vaster capacity, while more forcible, more constant, and more eventful in their movements than those of inferior grade, are yet the less readily moved, and more embarrassed and full of hesitation in the first few steps of their progress.",
+      "fr": "Il n'est pas plus vrai, dans le premier domaine, qu'un grand corps est mis en mouvement avec plus de difficulté qu'un plus petit, et que son élan ultérieur est proportionné à cette difficulté, qu'il ne l'est, dans le second, que les intelligences d'une plus vaste capacité, tout en étant plus puissantes, plus constantes et plus riches en événements dans leurs mouvements que celles d'un rang inférieur, sont pourtant les moins promptes à se mouvoir, plus embarrassées et pleines d'hésitation dans les tout premiers pas de leur progression.",
+      "g": {
+       "true": [
+        "vrai",
+        "true",
+        "a"
+       ],
+       "former": [
+        "le premier (domaine)",
+        "former",
+        "n"
+       ],
+       "large": [
+        "grand",
+        "large",
+        "a"
+       ],
+       "body": [
+        "corps",
+        "body",
+        "n"
+       ],
+       "difficulty": [
+        "difficulté",
+        "difficulty",
+        "n"
+       ],
+       "set": [
+        "mis",
+        "set",
+        "v",
+        "mettre"
+       ],
+       "motion": [
+        "mouvement",
+        "motion",
+        "n"
+       ],
+       "smaller": [
+        "plus petit",
+        "small",
+        "a",
+        "petit"
+       ],
+       "one": [
+        "celui",
+        "one",
+        "p"
+       ],
+       "subsequent": [
+        "ultérieur",
+        "subsequent",
+        "a"
+       ],
+       "momentum": [
+        "élan",
+        "momentum",
+        "n"
+       ],
+       "commensurate": [
+        "proportionné",
+        "commensurate",
+        "a"
+       ],
+       "with#2": [
+        "à (commensurate with)",
+        "with",
+        "r"
+       ],
+       "latter": [
+        "le second",
+        "latter",
+        "n"
+       ],
+       "intellects": [
+        "intelligences",
+        "intellect",
+        "n",
+        "intellect"
+       ],
+       "vaster": [
+        "plus vaste",
+        "vast",
+        "a",
+        "vaste"
+       ],
+       "capacity": [
+        "capacité",
+        "capacity",
+        "n"
+       ],
+       "while": [
+        "tout en étant (while)",
+        "while",
+        "c"
+       ],
+       "forcible": [
+        "puissantes",
+        "forcible",
+        "a"
+       ],
+       "constant": [
+        "constantes",
+        "constant",
+        "a"
+       ],
+       "eventful": [
+        "riches en événements",
+        "eventful",
+        "a"
+       ],
+       "movements": [
+        "mouvements",
+        "movement",
+        "n",
+        "mouvement"
+       ],
+       "those": [
+        "celles",
+        "those",
+        "p"
+       ],
+       "inferior": [
+        "inférieur",
+        "inferior",
+        "a"
+       ],
+       "grade": [
+        "rang",
+        "grade",
+        "n"
+       ],
+       "readily": [
+        "promptement",
+        "readily",
+        "d"
+       ],
+       "moved": [
+        "mues",
+        "move",
+        "v",
+        "mouvoir"
+       ],
+       "embarrassed": [
+        "embarrassées",
+        "embarrassed",
+        "a"
+       ],
+       "full": [
+        "pleines",
+        "full",
+        "a"
+       ],
+       "hesitation": [
+        "hésitation",
+        "hesitation",
+        "n"
+       ],
+       "steps": [
+        "pas",
+        "step",
+        "n",
+        "pas"
+       ],
+       "progress": [
+        "progression",
+        "progress",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Again: have you ever noticed which of the street signs, over the shop-doors, are the most attractive of attention?”",
+      "fr": "Encore une chose : avez-vous jamais remarqué quelles sont, parmi les enseignes des rues, au-dessus des portes des boutiques, celles qui attirent le plus l'attention ? »",
+      "g": {
+       "noticed": [
+        "remarqué",
+        "notice",
+        "v",
+        "remarquer"
+       ],
+       "which": [
+        "lesquelles",
+        "which",
+        "p"
+       ],
+       "of": [
+        "parmi (which of)",
+        "of",
+        "r"
+       ],
+       "street": [
+        "rue",
+        "street",
+        "n"
+       ],
+       "signs": [
+        "enseignes",
+        "sign",
+        "n",
+        "enseigne"
+       ],
+       "shop-doors": [
+        "portes de boutique",
+        "shop-door",
+        "n",
+        "porte de boutique"
+       ],
+       "attractive": [
+        "attirantes",
+        "attractive",
+        "a"
+       ],
+       "of#2": [
+        "pour (attractive of : attirant)",
+        "of",
+        "r"
+       ],
+       "attention": [
+        "attention",
+        "attention",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“I have never given the matter a thought,” I said.",
+      "fr": "« Je n'ai jamais songé à la question », dis-je.",
+      "g": {
+       "given": [
+        "songé",
+        "give",
+        "v",
+        "donner"
+       ],
+       "matter": [
+        "question",
+        "matter",
+        "n"
+       ],
+       "thought": [
+        "pensée (given a thought : songé)",
+        "thought",
+        "n"
+       ],
+       "said": [
+        "dis",
+        "say",
+        "v",
+        "dire"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“There is a game of puzzles,” he resumed, “which is played upon a map.",
+      "fr": "« Il existe un jeu d'énigmes, reprit-il, qui se joue sur une carte.",
+      "g": {
+       "game": [
+        "jeu",
+        "game",
+        "n"
+       ],
+       "puzzles": [
+        "énigmes",
+        "puzzle",
+        "n",
+        "énigme"
+       ],
+       "resumed": [
+        "reprit",
+        "resume",
+        "v",
+        "reprendre"
+       ],
+       "played": [
+        "joue",
+        "play",
+        "v",
+        "jouer"
+       ],
+       "map": [
+        "carte",
+        "map",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "One party playing requires another to find a given word — the name of town, river, state or empire — any word, in short, upon the motley and perplexed surface of the chart.",
+      "fr": "Un joueur demande à un autre de trouver un mot donné — le nom d'une ville, d'un fleuve, d'un État ou d'un empire — n'importe quel mot, bref, sur la surface bigarrée et confuse de la carte.",
+      "g": {
+       "one": [
+        "un",
+        "one",
+        "t"
+       ],
+       "party": [
+        "joueur",
+        "party",
+        "n"
+       ],
+       "playing": [
+        "jouant",
+        "play",
+        "v",
+        "jouer"
+       ],
+       "requires": [
+        "demande",
+        "require",
+        "v",
+        "exiger"
+       ],
+       "find": [
+        "trouver",
+        "find",
+        "v",
+        "trouver"
+       ],
+       "given": [
+        "donné",
+        "given",
+        "a"
+       ],
+       "word": [
+        "mot",
+        "word",
+        "n"
+       ],
+       "name": [
+        "nom",
+        "name",
+        "n"
+       ],
+       "town": [
+        "ville",
+        "town",
+        "n"
+       ],
+       "river": [
+        "fleuve",
+        "river",
+        "n"
+       ],
+       "state": [
+        "État",
+        "state",
+        "n"
+       ],
+       "empire": [
+        "empire",
+        "empire",
+        "n"
+       ],
+       "in": [
+        "(in short : bref)",
+        "in",
+        "r"
+       ],
+       "short": [
+        "(in short : bref)",
+        "short",
+        "a"
+       ],
+       "motley": [
+        "bariolée",
+        "motley",
+        "a"
+       ],
+       "perplexed": [
+        "confuse",
+        "perplexed",
+        "a"
+       ],
+       "surface": [
+        "surface",
+        "surface",
+        "n"
+       ],
+       "chart": [
+        "carte",
+        "chart",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "A novice in the game generally seeks to embarrass his opponents by giving them the most minutely lettered names; but the adept selects such words as stretch, in large characters, from one end of the chart to the other.",
+      "fr": "Un novice au jeu cherche généralement à embarrasser ses adversaires en leur donnant les noms écrits en lettres les plus fines ; mais l'adepte choisit des mots qui s'étendent, en grands caractères, d'un bout à l'autre de la carte.",
+      "g": {
+       "novice": [
+        "novice",
+        "novice",
+        "n"
+       ],
+       "game": [
+        "jeu",
+        "game",
+        "n"
+       ],
+       "generally": [
+        "généralement",
+        "generally",
+        "d"
+       ],
+       "seeks": [
+        "cherche",
+        "seek",
+        "v",
+        "chercher"
+       ],
+       "embarrass": [
+        "embarrasser",
+        "embarrass",
+        "v"
+       ],
+       "opponents": [
+        "adversaires",
+        "opponent",
+        "n",
+        "adversaire"
+       ],
+       "by": [
+        "en (by giving : en donnant)",
+        "by",
+        "r"
+       ],
+       "giving": [
+        "donnant",
+        "give",
+        "v",
+        "donner"
+       ],
+       "minutely": [
+        "très finement",
+        "minutely",
+        "d"
+       ],
+       "lettered": [
+        "écrits en lettres",
+        "letter",
+        "v",
+        "écrire en lettres"
+       ],
+       "names": [
+        "noms",
+        "name",
+        "n",
+        "nom"
+       ],
+       "adept": [
+        "adepte",
+        "adept",
+        "n"
+       ],
+       "selects": [
+        "choisit",
+        "select",
+        "v",
+        "choisir"
+       ],
+       "such": [
+        "des (such… as : des… qui)",
+        "such",
+        "t"
+       ],
+       "words": [
+        "mots",
+        "word",
+        "n",
+        "mot"
+       ],
+       "as": [
+        "(such… as : qui)",
+        "as",
+        "c"
+       ],
+       "stretch": [
+        "s'étendent",
+        "stretch",
+        "v",
+        "s'étendre"
+       ],
+       "large": [
+        "grands",
+        "large",
+        "a"
+       ],
+       "characters": [
+        "caractères",
+        "character",
+        "n",
+        "caractère"
+       ],
+       "end": [
+        "bout",
+        "end",
+        "n"
+       ],
+       "chart": [
+        "carte",
+        "chart",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "These, like the over-largely lettered signs and placards of the street, escape observation by dint of being excessively obvious; and here the physical oversight is precisely analogous with the moral inapprehension by which the intellect suffers to pass unnoticed those considerations which are too obtrusively and too palpably self-evident.",
+      "fr": "Ceux-ci, comme les enseignes et les affiches de la rue aux lettres démesurées, échappent à l'observation à force d'être excessivement évidents ; et ici l'inattention physique est exactement analogue à l'incompréhension morale par laquelle l'intelligence laisse passer inaperçues les considérations qui sont trop indiscrètement et trop palpablement évidentes.",
+      "g": {
+       "these": [
+        "ceux-ci",
+        "these",
+        "p"
+       ],
+       "over-largely": [
+        "démesurément",
+        "over-largely",
+        "d"
+       ],
+       "lettered": [
+        "écrites en lettres",
+        "letter",
+        "v",
+        "écrire en lettres"
+       ],
+       "signs": [
+        "enseignes",
+        "sign",
+        "n",
+        "enseigne"
+       ],
+       "placards": [
+        "affiches",
+        "placard",
+        "n",
+        "affiche"
+       ],
+       "street": [
+        "rue",
+        "street",
+        "n"
+       ],
+       "escape": [
+        "échappent à",
+        "escape",
+        "v",
+        "échapper"
+       ],
+       "observation": [
+        "l'observation",
+        "observation",
+        "n"
+       ],
+       "by": [
+        "(by dint of : à force de)",
+        "by",
+        "r"
+       ],
+       "dint": [
+        "(by dint of : à force de)",
+        "dint",
+        "n"
+       ],
+       "of#2": [
+        "(by dint of : à force de)",
+        "of",
+        "r"
+       ],
+       "excessively": [
+        "excessivement",
+        "excessively",
+        "d"
+       ],
+       "obvious": [
+        "évidents",
+        "obvious",
+        "a"
+       ],
+       "physical": [
+        "physique",
+        "physical",
+        "a"
+       ],
+       "oversight": [
+        "inattention",
+        "oversight",
+        "n"
+       ],
+       "precisely": [
+        "exactement",
+        "precisely",
+        "d"
+       ],
+       "analogous": [
+        "analogue",
+        "analogous",
+        "a"
+       ],
+       "with": [
+        "à (analogous with)",
+        "with",
+        "r"
+       ],
+       "moral": [
+        "morale",
+        "moral",
+        "a"
+       ],
+       "inapprehension": [
+        "incompréhension",
+        "inapprehension",
+        "n"
+       ],
+       "by#2": [
+        "par",
+        "by",
+        "r"
+       ],
+       "intellect": [
+        "intelligence",
+        "intellect",
+        "n"
+       ],
+       "suffers": [
+        "laisse (suffer to : permettre de)",
+        "suffer",
+        "v",
+        "souffrir"
+       ],
+       "pass": [
+        "passer",
+        "pass",
+        "v",
+        "passer"
+       ],
+       "unnoticed": [
+        "inaperçues",
+        "unnoticed",
+        "a"
+       ],
+       "considerations": [
+        "considérations",
+        "consideration",
+        "n",
+        "considération"
+       ],
+       "obtrusively": [
+        "indiscrètement",
+        "obtrusively",
+        "d"
+       ],
+       "palpably": [
+        "palpablement",
+        "palpably",
+        "d"
+       ],
+       "self-evident": [
+        "évidentes",
+        "self-evident",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "But this is a point, it appears, somewhat above or beneath the understanding of the Prefect.",
+      "fr": "Mais c'est là un point, semble-t-il, quelque peu au-dessus ou au-dessous de la compréhension du préfet.",
+      "g": {
+       "point": [
+        "point",
+        "point",
+        "n"
+       ],
+       "appears": [
+        "semble",
+        "appear",
+        "v",
+        "sembler"
+       ],
+       "somewhat": [
+        "quelque peu",
+        "somewhat",
+        "d"
+       ],
+       "beneath": [
+        "au-dessous de",
+        "beneath",
+        "r"
+       ],
+       "understanding": [
+        "compréhension",
+        "understanding",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He never once thought it probable, or possible, that the Minister had deposited the letter immediately beneath the nose of the whole world, by way of best preventing any portion of that world from perceiving it.",
+      "fr": "Jamais il ne jugea probable, ni même possible, que le ministre eût déposé la lettre juste sous le nez du monde entier, afin d'empêcher au mieux que quiconque en aperçût la moindre part.",
+      "g": {
+       "once": [
+        "(never once : jamais)",
+        "once",
+        "d"
+       ],
+       "thought": [
+        "jugea",
+        "think",
+        "v",
+        "penser"
+       ],
+       "probable": [
+        "probable",
+        "probable",
+        "a"
+       ],
+       "possible": [
+        "possible",
+        "possible",
+        "a"
+       ],
+       "deposited": [
+        "déposé",
+        "deposit",
+        "v",
+        "déposer"
+       ],
+       "immediately": [
+        "juste",
+        "immediately",
+        "d"
+       ],
+       "nose": [
+        "nez",
+        "nose",
+        "n"
+       ],
+       "whole": [
+        "entier",
+        "whole",
+        "a"
+       ],
+       "world": [
+        "monde",
+        "world",
+        "n"
+       ],
+       "by": [
+        "(by way of : afin de)",
+        "by",
+        "r"
+       ],
+       "way": [
+        "(by way of : afin de)",
+        "way",
+        "n"
+       ],
+       "of#2": [
+        "(by way of : afin de)",
+        "of",
+        "r"
+       ],
+       "best": [
+        "au mieux",
+        "well",
+        "d",
+        "bien"
+       ],
+       "preventing": [
+        "empêcher",
+        "prevent",
+        "v",
+        "empêcher"
+       ],
+       "any": [
+        "la moindre (any portion)",
+        "any",
+        "t"
+       ],
+       "portion": [
+        "part",
+        "portion",
+        "n"
+       ],
+       "from": [
+        "de (prevent from)",
+        "from",
+        "r"
+       ],
+       "perceiving": [
+        "apercevoir",
+        "perceive",
+        "v",
+        "apercevoir"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "“But the more I reflected upon the daring, dashing, and discriminating ingenuity of D — ; upon the fact that the document must always have been at hand, if he intended to use it to good purpose; and upon the decisive evidence, obtained by the Prefect, that it was not hidden within the limits of that dignitary’s ordinary search — the more satisfied I became that, to conceal this letter, the Minister had resorted to the comprehensive and sagacious expedient of not attempting to conceal it at all.",
+      "fr": "« Mais plus je réfléchissais à l'ingéniosité audacieuse, fougueuse et perspicace de D— ; au fait que le document avait dû toujours être à portée de main, s'il comptait s'en servir utilement ; et à la preuve décisive, obtenue par le préfet, qu'il n'était pas caché dans les limites de la fouille habituelle de ce dignitaire — plus je me convainquais que, pour dissimuler cette lettre, le ministre avait recouru à l'expédient global et sagace consistant à ne pas tenter de la dissimuler du tout.",
+      "g": {
+       "reflected": [
+        "réfléchissais",
+        "reflect",
+        "v",
+        "réfléchir"
+       ],
+       "upon": [
+        "à (reflect upon : réfléchir à)",
+        "upon",
+        "r"
+       ],
+       "daring": [
+        "audacieuse",
+        "daring",
+        "a"
+       ],
+       "dashing": [
+        "fougueuse",
+        "dashing",
+        "a"
+       ],
+       "discriminating": [
+        "perspicace",
+        "discriminating",
+        "a"
+       ],
+       "ingenuity": [
+        "ingéniosité",
+        "ingenuity",
+        "n"
+       ],
+       "fact": [
+        "fait",
+        "fact",
+        "n"
+       ],
+       "document": [
+        "document",
+        "document",
+        "n"
+       ],
+       "must": [
+        "avait dû",
+        "must",
+        "v"
+       ],
+       "at": [
+        "(at hand : à portée de main)",
+        "at",
+        "r"
+       ],
+       "hand": [
+        "(at hand : à portée de main)",
+        "hand",
+        "n"
+       ],
+       "intended": [
+        "comptait",
+        "intend",
+        "v",
+        "avoir l'intention"
+       ],
+       "use": [
+        "se servir de",
+        "use",
+        "v"
+       ],
+       "good": [
+        "(to good purpose : utilement)",
+        "good",
+        "a"
+       ],
+       "purpose": [
+        "(to good purpose : utilement)",
+        "purpose",
+        "n"
+       ],
+       "decisive": [
+        "décisive",
+        "decisive",
+        "a"
+       ],
+       "evidence": [
+        "preuve",
+        "evidence",
+        "n"
+       ],
+       "obtained": [
+        "obtenue",
+        "obtain",
+        "v",
+        "obtenir"
+       ],
+       "hidden": [
+        "caché",
+        "hide",
+        "v",
+        "cacher"
+       ],
+       "limits": [
+        "limites",
+        "limit",
+        "n",
+        "limite"
+       ],
+       "dignitary's": [
+        "de ce dignitaire",
+        "dignitary",
+        "n"
+       ],
+       "ordinary": [
+        "habituelle",
+        "ordinary",
+        "a"
+       ],
+       "search": [
+        "fouille",
+        "search",
+        "n"
+       ],
+       "satisfied": [
+        "convaincu",
+        "satisfied",
+        "a"
+       ],
+       "became": [
+        "devenais",
+        "become",
+        "v",
+        "devenir"
+       ],
+       "conceal": [
+        "dissimuler",
+        "conceal",
+        "v"
+       ],
+       "resorted": [
+        "recouru",
+        "resort",
+        "v",
+        "recourir"
+       ],
+       "comprehensive": [
+        "global",
+        "comprehensive",
+        "a"
+       ],
+       "sagacious": [
+        "sagace",
+        "sagacious",
+        "a"
+       ],
+       "expedient": [
+        "expédient",
+        "expedient",
+        "n"
+       ],
+       "attempting": [
+        "tenter",
+        "attempt",
+        "v",
+        "tenter"
+       ],
+       "at#2": [
+        "(at all : du tout)",
+        "at",
+        "r"
+       ],
+       "all": [
+        "(at all : du tout)",
+        "all",
+        "d"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“Full of these ideas, I prepared myself with a pair of green spectacles, and called one fine morning, quite by accident, at the Ministerial hotel.",
+      "fr": "« Plein de ces idées, je me munis d'une paire de lunettes vertes, et me rendis un beau matin, tout à fait par hasard, à l'hôtel du ministre.",
+      "g": {
+       "full": [
+        "plein",
+        "full",
+        "a"
+       ],
+       "ideas": [
+        "idées",
+        "idea",
+        "n",
+        "idée"
+       ],
+       "prepared": [
+        "munis",
+        "prepare",
+        "v",
+        "préparer"
+       ],
+       "pair": [
+        "paire",
+        "pair",
+        "n"
+       ],
+       "green": [
+        "vertes",
+        "green",
+        "a"
+       ],
+       "spectacles": [
+        "lunettes",
+        "spectacles",
+        "n"
+       ],
+       "called": [
+        "me rendis (call at : rendre visite)",
+        "call",
+        "v",
+        "rendre visite"
+       ],
+       "fine": [
+        "beau",
+        "fine",
+        "a"
+       ],
+       "morning": [
+        "matin",
+        "morning",
+        "n"
+       ],
+       "quite": [
+        "tout à fait",
+        "quite",
+        "d"
+       ],
+       "by": [
+        "(by accident : par)",
+        "by",
+        "r"
+       ],
+       "accident": [
+        "hasard",
+        "accident",
+        "n"
+       ],
+       "ministerial": [
+        "du ministre",
+        "ministerial",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "I found D — at home, yawning, lounging, and dawdling, as usual, and pretending to be in the last extremity of ennui.",
+      "fr": "Je trouvai D— chez lui, bâillant, paressant et lambinant, comme à l'accoutumée, et feignant d'être à la dernière extrémité d'ennui.",
+      "g": {
+       "found": [
+        "trouvai",
+        "find",
+        "v",
+        "trouver"
+       ],
+       "at": [
+        "(at home : chez lui)",
+        "at",
+        "r"
+       ],
+       "home": [
+        "(at home : chez lui)",
+        "home",
+        "n"
+       ],
+       "yawning": [
+        "bâillant",
+        "yawn",
+        "v",
+        "bâiller"
+       ],
+       "lounging": [
+        "paressant",
+        "lounge",
+        "v",
+        "paresser"
+       ],
+       "dawdling": [
+        "lambinant",
+        "dawdle",
+        "v",
+        "lambiner"
+       ],
+       "as": [
+        "(as usual : comme d'habitude)",
+        "as",
+        "c"
+       ],
+       "usual": [
+        "(as usual : comme d'habitude)",
+        "usual",
+        "a"
+       ],
+       "pretending": [
+        "feignant",
+        "pretend",
+        "v",
+        "feindre"
+       ],
+       "extremity": [
+        "extrémité",
+        "extremity",
+        "n"
+       ],
+       "ennui": [
+        "ennui",
+        "ennui",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He is, perhaps, the most really energetic human being now alive — but that is only when nobody sees him.",
+      "fr": "C'est peut-être l'être humain le plus réellement énergique qui soit aujourd'hui en vie — mais seulement quand personne ne le voit.",
+      "g": {
+       "really": [
+        "réellement",
+        "really",
+        "d"
+       ],
+       "energetic": [
+        "énergique",
+        "energetic",
+        "a"
+       ],
+       "human": [
+        "humain",
+        "human",
+        "a"
+       ],
+       "being": [
+        "être",
+        "being",
+        "n"
+       ],
+       "alive": [
+        "en vie",
+        "alive",
+        "a"
+       ],
+       "sees": [
+        "voit",
+        "see",
+        "v",
+        "voir"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“To be even with him, I complained of my weak eyes, and lamented the necessity of the spectacles, under cover of which I cautiously and thoroughly surveyed the whole apartment, while seemingly intent only upon the conversation of my host.",
+      "fr": "« Pour être quitte avec lui, je me plaignis de la faiblesse de mes yeux et déplorai la nécessité des lunettes, à l'abri desquelles j'examinai avec prudence et minutie toute la pièce, tout en paraissant uniquement absorbé par la conversation de mon hôte.",
+      "g": {
+       "even": [
+        "quitte (be even with)",
+        "even",
+        "a"
+       ],
+       "with": [
+        "(be even with : être quitte avec)",
+        "with",
+        "r"
+       ],
+       "complained": [
+        "me plaignis",
+        "complain",
+        "v",
+        "se plaindre"
+       ],
+       "weak": [
+        "faibles",
+        "weak",
+        "a"
+       ],
+       "eyes": [
+        "yeux",
+        "eye",
+        "n",
+        "œil"
+       ],
+       "lamented": [
+        "déplorai",
+        "lament",
+        "v",
+        "déplorer"
+       ],
+       "necessity": [
+        "nécessité",
+        "necessity",
+        "n"
+       ],
+       "spectacles": [
+        "lunettes",
+        "spectacles",
+        "n"
+       ],
+       "under": [
+        "(under cover of : à l'abri de)",
+        "under",
+        "r"
+       ],
+       "cover": [
+        "(under cover of : à l'abri de)",
+        "cover",
+        "n"
+       ],
+       "of#3": [
+        "(under cover of : à l'abri de)",
+        "of",
+        "r"
+       ],
+       "cautiously": [
+        "avec prudence",
+        "cautiously",
+        "d"
+       ],
+       "thoroughly": [
+        "avec minutie",
+        "thoroughly",
+        "d"
+       ],
+       "surveyed": [
+        "examinai",
+        "survey",
+        "v",
+        "examiner"
+       ],
+       "whole": [
+        "toute",
+        "whole",
+        "a"
+       ],
+       "apartment": [
+        "pièce",
+        "apartment",
+        "n"
+       ],
+       "while": [
+        "tout en (while)",
+        "while",
+        "c"
+       ],
+       "seemingly": [
+        "en apparence",
+        "seemingly",
+        "d"
+       ],
+       "intent": [
+        "absorbé",
+        "intent",
+        "a"
+       ],
+       "only": [
+        "uniquement",
+        "only",
+        "d"
+       ],
+       "upon": [
+        "par (intent upon : absorbé par)",
+        "upon",
+        "r"
+       ],
+       "conversation": [
+        "conversation",
+        "conversation",
+        "n"
+       ],
+       "host": [
+        "hôte",
+        "host",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“I paid especial attention to a large writing-table near which he sat, and upon which lay confusedly, some miscellaneous letters and other papers, with one or two musical instruments and a few books.",
+      "fr": "« J'accordai une attention particulière à une grande table à écrire, près de laquelle il était assis, et sur laquelle gisaient en désordre quelques lettres variées et autres papiers, avec un ou deux instruments de musique et quelques livres.",
+      "g": {
+       "large": [
+        "grande",
+        "large",
+        "a"
+       ],
+       "paid": [
+        "accordai",
+        "pay",
+        "v",
+        "payer"
+       ],
+       "especial": [
+        "particulière",
+        "especial",
+        "a"
+       ],
+       "attention": [
+        "attention",
+        "attention",
+        "n"
+       ],
+       "writing-table": [
+        "table à écrire",
+        "writing-table",
+        "n"
+       ],
+       "sat": [
+        "était assis",
+        "sit",
+        "v",
+        "s'asseoir"
+       ],
+       "lay": [
+        "gisaient",
+        "lie",
+        "v",
+        "être étendu"
+       ],
+       "confusedly": [
+        "en désordre",
+        "confusedly",
+        "d"
+       ],
+       "miscellaneous": [
+        "variées",
+        "miscellaneous",
+        "a"
+       ],
+       "letters": [
+        "lettres",
+        "letter",
+        "n",
+        "lettre"
+       ],
+       "papers": [
+        "papiers",
+        "paper",
+        "n",
+        "papier"
+       ],
+       "musical": [
+        "de musique",
+        "musical",
+        "a"
+       ],
+       "instruments": [
+        "instruments",
+        "instrument",
+        "n",
+        "instrument"
+       ],
+       "few": [
+        "quelques (a few)",
+        "few",
+        "a"
+       ],
+       "books": [
+        "livres",
+        "book",
+        "n",
+        "livre"
+       ]
+      }
+     },
+     {
+      "en": "Here, however, after a long and very deliberate scrutiny, I saw nothing to excite particular suspicion.",
+      "fr": "Ici, pourtant, après un long et très attentif examen, je ne vis rien qui éveillât un soupçon particulier.",
+      "g": {
+       "long": [
+        "long",
+        "long",
+        "a"
+       ],
+       "deliberate": [
+        "posé",
+        "deliberate",
+        "a"
+       ],
+       "scrutiny": [
+        "examen",
+        "scrutiny",
+        "n"
+       ],
+       "saw": [
+        "vis",
+        "see",
+        "v",
+        "voir"
+       ],
+       "excite": [
+        "éveiller",
+        "excite",
+        "v"
+       ],
+       "particular": [
+        "particulier",
+        "particular",
+        "a"
+       ],
+       "suspicion": [
+        "soupçon",
+        "suspicion",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“At length my eyes, in going the circuit of the room, fell upon a trumpery fillagree card-rack of pasteboard, that hung dangling by a dirty blue ribbon, from a little brass knob just beneath the middle of the mantel-piece.",
+      "fr": "« Enfin mes yeux, en faisant le tour de la pièce, tombèrent sur un porte-cartes de carton, au filigrane clinquant, qui pendait au bout d'un ruban bleu sale, attaché à un petit bouton de cuivre juste au-dessous du milieu de la cheminée.",
+      "g": {
+       "at": [
+        "(at length : enfin)",
+        "at",
+        "r"
+       ],
+       "length": [
+        "(at length : enfin)",
+        "length",
+        "n"
+       ],
+       "eyes": [
+        "yeux",
+        "eye",
+        "n",
+        "œil"
+       ],
+       "going": [
+        "faisant",
+        "go",
+        "v",
+        "aller"
+       ],
+       "circuit": [
+        "tour",
+        "circuit",
+        "n"
+       ],
+       "room": [
+        "pièce",
+        "room",
+        "n"
+       ],
+       "fell": [
+        "tombèrent",
+        "fall",
+        "v",
+        "tomber"
+       ],
+       "trumpery": [
+        "clinquant",
+        "trumpery",
+        "a"
+       ],
+       "fillagree": [
+        "de filigrane",
+        "filigree",
+        "a"
+       ],
+       "card-rack": [
+        "porte-cartes",
+        "card-rack",
+        "n"
+       ],
+       "pasteboard": [
+        "carton",
+        "pasteboard",
+        "n"
+       ],
+       "hung": [
+        "pendait",
+        "hang",
+        "v",
+        "pendre"
+       ],
+       "dangling": [
+        "se balançant",
+        "dangle",
+        "v",
+        "se balancer"
+       ],
+       "by": [
+        "au bout de (hung by)",
+        "by",
+        "r"
+       ],
+       "dirty": [
+        "sale",
+        "dirty",
+        "a"
+       ],
+       "blue": [
+        "bleu",
+        "blue",
+        "a"
+       ],
+       "ribbon": [
+        "ruban",
+        "ribbon",
+        "n"
+       ],
+       "from": [
+        "attaché à (hung from)",
+        "from",
+        "r"
+       ],
+       "little": [
+        "petit",
+        "little",
+        "a"
+       ],
+       "brass": [
+        "de cuivre",
+        "brass",
+        "n"
+       ],
+       "knob": [
+        "bouton",
+        "knob",
+        "n"
+       ],
+       "middle": [
+        "milieu",
+        "middle",
+        "n"
+       ],
+       "mantel-piece": [
+        "cheminée",
+        "mantel-piece",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "In this rack, which had three or four compartments, were five or six visiting cards and a solitary letter.",
+      "fr": "Dans ce porte-cartes, qui avait trois ou quatre compartiments, se trouvaient cinq ou six cartes de visite et une unique lettre.",
+      "g": {
+       "rack": [
+        "porte-cartes",
+        "rack",
+        "n"
+       ],
+       "compartments": [
+        "compartiments",
+        "compartment",
+        "n",
+        "compartiment"
+       ],
+       "were": [
+        "se trouvaient",
+        "be",
+        "v",
+        "être"
+       ],
+       "visiting": [
+        "de visite",
+        "visiting",
+        "a"
+       ],
+       "cards": [
+        "cartes",
+        "card",
+        "n",
+        "carte"
+       ],
+       "solitary": [
+        "unique",
+        "solitary",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "This last was much soiled and crumpled.",
+      "fr": "Cette dernière était très sale et froissée.",
+      "g": {
+       "last": [
+        "dernière (this last : celle-ci)",
+        "last",
+        "a"
+       ],
+       "much": [
+        "très",
+        "much",
+        "d"
+       ],
+       "soiled": [
+        "sale",
+        "soiled",
+        "a"
+       ],
+       "crumpled": [
+        "froissée",
+        "crumpled",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "It was torn nearly in two, across the middle — as if a design, in the first instance, to tear it entirely up as worthless, had been altered, or stayed, in the second.",
+      "fr": "Elle était déchirée presque en deux, en travers du milieu — comme si une intention, d'abord, de la déchirer entièrement en la jugeant sans valeur avait été modifiée, ou suspendue, dans un second temps.",
+      "g": {
+       "torn": [
+        "déchirée",
+        "tear",
+        "v",
+        "déchirer"
+       ],
+       "nearly": [
+        "presque",
+        "nearly",
+        "d"
+       ],
+       "across": [
+        "en travers de",
+        "across",
+        "r"
+       ],
+       "middle": [
+        "milieu",
+        "middle",
+        "n"
+       ],
+       "as": [
+        "(as if : comme si)",
+        "as",
+        "c"
+       ],
+       "as#2": [
+        "en tant que",
+        "as",
+        "r"
+       ],
+       "if": [
+        "(as if : comme si)",
+        "if",
+        "c"
+       ],
+       "design": [
+        "intention",
+        "design",
+        "n"
+       ],
+       "in#2": [
+        "(in the first instance : d'abord)",
+        "in",
+        "r"
+       ],
+       "first": [
+        "(in the first instance : d'abord)",
+        "first",
+        "a"
+       ],
+       "instance": [
+        "(in the first instance : d'abord)",
+        "instance",
+        "n"
+       ],
+       "tear": [
+        "déchirer",
+        "tear",
+        "v",
+        "déchirer"
+       ],
+       "entirely": [
+        "entièrement",
+        "entirely",
+        "d"
+       ],
+       "up": [
+        "(tear up : déchirer en morceaux)",
+        "up",
+        "x"
+       ],
+       "worthless": [
+        "sans valeur",
+        "worthless",
+        "a"
+       ],
+       "altered": [
+        "modifiée",
+        "alter",
+        "v",
+        "modifier"
+       ],
+       "stayed": [
+        "suspendue",
+        "stay",
+        "v",
+        "suspendre"
+       ],
+       "in#3": [
+        "dans (in the second : dans un second temps)",
+        "in",
+        "r"
+       ]
+      }
+     },
+     {
+      "en": "It had a large black seal, bearing the D — cipher very conspicuously, and was addressed, in a diminutive female hand, to D — , the minister, himself.",
+      "fr": "Elle portait un grand sceau noir, marqué très visiblement du chiffre de D—, et était adressée, d'une petite écriture féminine, à D— lui-même, le ministre.",
+      "g": {
+       "large": [
+        "grand",
+        "large",
+        "a"
+       ],
+       "black": [
+        "noir",
+        "black",
+        "a"
+       ],
+       "seal": [
+        "sceau",
+        "seal",
+        "n"
+       ],
+       "bearing": [
+        "portant",
+        "bear",
+        "v",
+        "porter"
+       ],
+       "cipher": [
+        "chiffre",
+        "cipher",
+        "n"
+       ],
+       "conspicuously": [
+        "bien en vue",
+        "conspicuously",
+        "d"
+       ],
+       "addressed": [
+        "adressée",
+        "address",
+        "v",
+        "adresser"
+       ],
+       "diminutive": [
+        "menue",
+        "diminutive",
+        "a"
+       ],
+       "female": [
+        "féminine",
+        "female",
+        "a"
+       ],
+       "hand": [
+        "écriture",
+        "hand",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "It was thrust carelessly, and even, as it seemed, contemptuously, into one of the uppermost divisions of the rack.",
+      "fr": "Elle était fourrée négligemment, et même, à ce qu'il semblait, avec mépris, dans l'une des cases les plus hautes du porte-cartes.",
+      "g": {
+       "thrust": [
+        "fourrée",
+        "thrust",
+        "v",
+        "enfoncer"
+       ],
+       "carelessly": [
+        "négligemment",
+        "carelessly",
+        "d"
+       ],
+       "as": [
+        "(as it seemed : à ce qu'il semblait)",
+        "as",
+        "c"
+       ],
+       "seemed": [
+        "semblait",
+        "seem",
+        "v",
+        "sembler"
+       ],
+       "contemptuously": [
+        "avec mépris",
+        "contemptuously",
+        "d"
+       ],
+       "one": [
+        "l'une",
+        "one",
+        "p"
+       ],
+       "uppermost": [
+        "les plus hautes",
+        "uppermost",
+        "a"
+       ],
+       "divisions": [
+        "cases",
+        "division",
+        "n",
+        "division"
+       ],
+       "rack": [
+        "porte-cartes",
+        "rack",
+        "n"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "“No sooner had I glanced at this letter, than I concluded it to be that of which I was in search.",
+      "fr": "« À peine eus-je jeté un coup d'œil à cette lettre que je conclus que c'était celle que je cherchais.",
+      "g": {
+       "no": [
+        "(no sooner… than : à peine… que)",
+        "no",
+        "d"
+       ],
+       "sooner": [
+        "(no sooner… than : à peine… que)",
+        "soon",
+        "d",
+        "bientôt"
+       ],
+       "glanced": [
+        "jeté un coup d'œil",
+        "glance",
+        "v",
+        "jeter un coup d'œil"
+       ],
+       "than": [
+        "(no sooner… than : que)",
+        "than",
+        "c"
+       ],
+       "concluded": [
+        "conclus",
+        "conclude",
+        "v",
+        "conclure"
+       ],
+       "that": [
+        "celle",
+        "that",
+        "p"
+       ],
+       "of": [
+        "(that of which : celle que)",
+        "of",
+        "r"
+       ],
+       "in": [
+        "(in search : à la recherche)",
+        "in",
+        "r"
+       ],
+       "search": [
+        "(in search : à la recherche)",
+        "search",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "To be sure, it was, to all appearance, radically different from the one of which the Prefect had read us so minute a description.",
+      "fr": "Certes, elle était, selon toute apparence, radicalement différente de celle dont le préfet nous avait lu une description si minutieuse.",
+      "g": {
+       "to": [
+        "(to be sure : certes)",
+        "to",
+        "x"
+       ],
+       "be": [
+        "(to be sure : certes)",
+        "be",
+        "v",
+        "être"
+       ],
+       "sure": [
+        "(to be sure : certes)",
+        "sure",
+        "a"
+       ],
+       "to#2": [
+        "(to all appearance : selon toute apparence)",
+        "to",
+        "r"
+       ],
+       "all": [
+        "(to all appearance : selon toute apparence)",
+        "all",
+        "t"
+       ],
+       "appearance": [
+        "(to all appearance : selon toute apparence)",
+        "appearance",
+        "n"
+       ],
+       "radically": [
+        "radicalement",
+        "radically",
+        "d"
+       ],
+       "different": [
+        "différente",
+        "different",
+        "a"
+       ],
+       "one": [
+        "celle",
+        "one",
+        "p"
+       ],
+       "of": [
+        "dont (of which)",
+        "of",
+        "r"
+       ],
+       "read": [
+        "lu",
+        "read",
+        "v",
+        "lire"
+       ],
+       "so": [
+        "si (so minute a)",
+        "so",
+        "d"
+       ],
+       "minute": [
+        "minutieuse",
+        "minute",
+        "a"
+       ],
+       "description": [
+        "description",
+        "description",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Here the seal was large and black, with the D — cipher; there it was small and red, with the ducal arms of the S — family.",
+      "fr": "Ici le sceau était grand et noir, au chiffre de D— ; là il était petit et rouge, aux armes ducales de la famille S—.",
+      "g": {
+       "seal": [
+        "sceau",
+        "seal",
+        "n"
+       ],
+       "large": [
+        "grand",
+        "large",
+        "a"
+       ],
+       "black": [
+        "noir",
+        "black",
+        "a"
+       ],
+       "cipher": [
+        "chiffre",
+        "cipher",
+        "n"
+       ],
+       "small": [
+        "petit",
+        "small",
+        "a"
+       ],
+       "red": [
+        "rouge",
+        "red",
+        "a"
+       ],
+       "ducal": [
+        "ducales",
+        "ducal",
+        "a"
+       ],
+       "arms": [
+        "armoiries",
+        "arms",
+        "n"
+       ],
+       "family": [
+        "famille",
+        "family",
+        "n"
+       ],
+       "s": [
+        "S— (initiale)",
+        "S",
+        "np"
+       ]
+      }
+     },
+     {
+      "en": "Here, the address, to the Minister, diminutive and feminine; there the superscription, to a certain royal personage, was markedly bold and decided; the size alone formed a point of correspondence.",
+      "fr": "Ici, l'adresse, au ministre, menue et féminine ; là, la suscription, à un certain personnage royal, était nettement hardie et résolue ; la taille seule formait un point de ressemblance.",
+      "g": {
+       "address": [
+        "adresse",
+        "address",
+        "n"
+       ],
+       "diminutive": [
+        "menue",
+        "diminutive",
+        "a"
+       ],
+       "feminine": [
+        "féminine",
+        "feminine",
+        "a"
+       ],
+       "superscription": [
+        "suscription (adresse)",
+        "superscription",
+        "n"
+       ],
+       "certain": [
+        "certain",
+        "certain",
+        "a"
+       ],
+       "royal": [
+        "royal",
+        "royal",
+        "a"
+       ],
+       "personage": [
+        "personnage",
+        "personage",
+        "n"
+       ],
+       "markedly": [
+        "nettement",
+        "markedly",
+        "d"
+       ],
+       "bold": [
+        "hardie",
+        "bold",
+        "a"
+       ],
+       "decided": [
+        "résolue",
+        "decided",
+        "a"
+       ],
+       "size": [
+        "taille",
+        "size",
+        "n"
+       ],
+       "alone": [
+        "seule",
+        "alone",
+        "a"
+       ],
+       "formed": [
+        "formait",
+        "form",
+        "v",
+        "former"
+       ],
+       "point": [
+        "point",
+        "point",
+        "n"
+       ],
+       "correspondence": [
+        "ressemblance",
+        "correspondence",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "But, then, the radicalness of these differences, which was excessive; the dirt; the soiled and torn condition of the paper, so inconsistent with the true methodical habits of D — , and so suggestive of a design to delude the beholder into an idea of the worthlessness of the document; these things, together with the hyper-obtrusive situation of this document, full in the view of every visiter, and thus exactly in accordance with the conclusions to which I had previously arrived; these things, I say, were strongly corroborative of suspicion, in one who came with the intention to suspect.",
+      "fr": "Mais, d'autre part, le caractère radical de ces différences, qui était excessif ; la saleté ; l'état sali et déchiré du papier, si incompatible avec les habitudes véritablement méthodiques de D—, et si évocateur d'un dessein de tromper l'observateur en lui faisant croire que le document ne valait rien ; toutes ces choses, jointes à la situation hyper-visible de ce document, en pleine vue de chaque visiteur, et donc en parfait accord avec les conclusions auxquelles j'étais parvenu auparavant ; ces choses, dis-je, corroboraient fortement le soupçon chez quelqu'un venu avec l'intention de soupçonner.",
+      "g": {
+       "then": [
+        "d'autre part (but, then)",
+        "then",
+        "d"
+       ],
+       "radicalness": [
+        "caractère radical",
+        "radicalness",
+        "n"
+       ],
+       "differences": [
+        "différences",
+        "difference",
+        "n",
+        "différence"
+       ],
+       "excessive": [
+        "excessif",
+        "excessive",
+        "a"
+       ],
+       "dirt": [
+        "saleté",
+        "dirt",
+        "n"
+       ],
+       "soiled": [
+        "sali",
+        "soiled",
+        "a"
+       ],
+       "torn": [
+        "déchiré",
+        "tear",
+        "v",
+        "déchirer"
+       ],
+       "condition": [
+        "état",
+        "condition",
+        "n"
+       ],
+       "paper": [
+        "papier",
+        "paper",
+        "n"
+       ],
+       "inconsistent": [
+        "incompatible",
+        "inconsistent",
+        "a"
+       ],
+       "true": [
+        "véritables",
+        "true",
+        "a"
+       ],
+       "methodical": [
+        "méthodiques",
+        "methodical",
+        "a"
+       ],
+       "habits": [
+        "habitudes",
+        "habit",
+        "n",
+        "habitude"
+       ],
+       "suggestive": [
+        "évocateur",
+        "suggestive",
+        "a"
+       ],
+       "design": [
+        "dessein",
+        "design",
+        "n"
+       ],
+       "delude": [
+        "tromper",
+        "delude",
+        "v"
+       ],
+       "beholder": [
+        "observateur",
+        "beholder",
+        "n"
+       ],
+       "into": [
+        "(delude into : en lui faisant croire à)",
+        "into",
+        "r"
+       ],
+       "idea": [
+        "idée",
+        "idea",
+        "n"
+       ],
+       "worthlessness": [
+        "absence de valeur",
+        "worthlessness",
+        "n"
+       ],
+       "document": [
+        "document",
+        "document",
+        "n"
+       ],
+       "things": [
+        "choses",
+        "thing",
+        "n",
+        "chose"
+       ],
+       "together": [
+        "(together with : jointes à)",
+        "together",
+        "d"
+       ],
+       "with#2": [
+        "(together with : jointes à)",
+        "with",
+        "r"
+       ],
+       "hyper-obtrusive": [
+        "hyper-visible",
+        "hyper-obtrusive",
+        "a"
+       ],
+       "situation": [
+        "situation",
+        "situation",
+        "n"
+       ],
+       "full": [
+        "en pleine (full in the view)",
+        "full",
+        "a"
+       ],
+       "view": [
+        "vue",
+        "view",
+        "n"
+       ],
+       "visiter": [
+        "visiteur",
+        "visiter",
+        "n"
+       ],
+       "exactly": [
+        "exactement",
+        "exactly",
+        "d"
+       ],
+       "in#2": [
+        "(in accordance with : en accord avec)",
+        "in",
+        "r"
+       ],
+       "accordance": [
+        "(in accordance with : en accord avec)",
+        "accordance",
+        "n"
+       ],
+       "with#3": [
+        "(in accordance with : en accord avec)",
+        "with",
+        "r"
+       ],
+       "conclusions": [
+        "conclusions",
+        "conclusion",
+        "n",
+        "conclusion"
+       ],
+       "which": [
+        "auxquelles (to which)",
+        "which",
+        "p"
+       ],
+       "previously": [
+        "auparavant",
+        "previously",
+        "d"
+       ],
+       "arrived": [
+        "parvenu",
+        "arrive",
+        "v",
+        "arriver"
+       ],
+       "say": [
+        "dis",
+        "say",
+        "v",
+        "dire"
+       ],
+       "strongly": [
+        "fortement",
+        "strongly",
+        "d"
+       ],
+       "corroborative": [
+        "corroboratifs",
+        "corroborative",
+        "a"
+       ],
+       "suspicion": [
+        "soupçon",
+        "suspicion",
+        "n"
+       ],
+       "in#3": [
+        "chez (in one who : chez quelqu'un qui)",
+        "in",
+        "r"
+       ],
+       "one": [
+        "quelqu'un",
+        "one",
+        "p"
+       ],
+       "came": [
+        "venu",
+        "come",
+        "v",
+        "venir"
+       ],
+       "intention": [
+        "intention",
+        "intention",
+        "n"
+       ],
+       "suspect": [
+        "soupçonner",
+        "suspect",
+        "v"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“I protracted my visit as long as possible, and, while I maintained a most animated discussion with the Minister upon a topic which I knew well had never failed to interest and excite him, I kept my attention really riveted upon the letter.",
+      "fr": "« Je prolongeai ma visite autant que possible et, tandis que j'entretenais avec le ministre une discussion des plus animées sur un sujet dont je savais bien qu'il n'avait jamais manqué de l'intéresser et de l'enflammer, je gardais mon attention vraiment rivée sur la lettre.",
+      "g": {
+       "protracted": [
+        "prolongeai",
+        "protract",
+        "v",
+        "prolonger"
+       ],
+       "visit": [
+        "visite",
+        "visit",
+        "n"
+       ],
+       "as": [
+        "(as long as possible : autant que possible)",
+        "as",
+        "d"
+       ],
+       "long": [
+        "(as long as possible : autant que possible)",
+        "long",
+        "d"
+       ],
+       "possible": [
+        "(as long as possible : autant que possible)",
+        "possible",
+        "a"
+       ],
+       "maintained": [
+        "entretenais",
+        "maintain",
+        "v",
+        "entretenir"
+       ],
+       "most": [
+        "des plus (a most animated)",
+        "most",
+        "d"
+       ],
+       "animated": [
+        "animée",
+        "animated",
+        "a"
+       ],
+       "discussion": [
+        "discussion",
+        "discussion",
+        "n"
+       ],
+       "topic": [
+        "sujet",
+        "topic",
+        "n"
+       ],
+       "knew": [
+        "savais",
+        "know",
+        "v",
+        "savoir"
+       ],
+       "failed": [
+        "manqué",
+        "fail",
+        "v",
+        "manquer"
+       ],
+       "interest": [
+        "intéresser",
+        "interest",
+        "v"
+       ],
+       "excite": [
+        "enflammer",
+        "excite",
+        "v"
+       ],
+       "kept": [
+        "gardais",
+        "keep",
+        "v",
+        "garder"
+       ],
+       "attention": [
+        "attention",
+        "attention",
+        "n"
+       ],
+       "riveted": [
+        "rivée",
+        "rivet",
+        "v",
+        "river"
+       ]
+      }
+     },
+     {
+      "en": "In this examination, I committed to memory its external appearance and arrangement in the rack; and also fell, at length, upon a discovery which set at rest whatever trivial doubt I might have entertained.",
+      "fr": "Dans cet examen, je gravai dans ma mémoire son aspect extérieur et sa disposition dans le porte-cartes ; et tombai aussi, enfin, sur une découverte qui dissipa tout doute insignifiant que j'aurais pu nourrir.",
+      "g": {
+       "examination": [
+        "examen",
+        "examination",
+        "n"
+       ],
+       "committed": [
+        "gravai (commit to memory : mémorisai)",
+        "commit",
+        "v",
+        "confier"
+       ],
+       "to": [
+        "(commit to memory : mémoriser)",
+        "to",
+        "r"
+       ],
+       "memory": [
+        "(commit to memory : mémoriser)",
+        "memory",
+        "n"
+       ],
+       "external": [
+        "extérieur",
+        "external",
+        "a"
+       ],
+       "appearance": [
+        "aspect",
+        "appearance",
+        "n"
+       ],
+       "arrangement": [
+        "disposition",
+        "arrangement",
+        "n"
+       ],
+       "rack": [
+        "porte-cartes",
+        "rack",
+        "n"
+       ],
+       "fell": [
+        "tombai",
+        "fall",
+        "v",
+        "tomber"
+       ],
+       "at": [
+        "(at length : enfin)",
+        "at",
+        "r"
+       ],
+       "length": [
+        "(at length : enfin)",
+        "length",
+        "n"
+       ],
+       "discovery": [
+        "découverte",
+        "discovery",
+        "n"
+       ],
+       "set": [
+        "(set at rest : dissipa)",
+        "set",
+        "v",
+        "mettre"
+       ],
+       "at#2": [
+        "(set at rest : dissipa)",
+        "at",
+        "r"
+       ],
+       "rest": [
+        "(set at rest : dissipa)",
+        "rest",
+        "n"
+       ],
+       "whatever": [
+        "tout (whatever doubt : tout doute)",
+        "whatever",
+        "t"
+       ],
+       "trivial": [
+        "insignifiant",
+        "trivial",
+        "a"
+       ],
+       "doubt": [
+        "doute",
+        "doubt",
+        "n"
+       ],
+       "entertained": [
+        "nourri",
+        "entertain",
+        "v",
+        "nourrir"
+       ]
+      }
+     },
+     {
+      "en": "In scrutinizing the edges of the paper, I observed them to be more chafed than seemed necessary.",
+      "fr": "En examinant les bords du papier, je les observai plus éraillés qu'il ne semblait nécessaire.",
+      "g": {
+       "scrutinizing": [
+        "examinant",
+        "scrutinize",
+        "v",
+        "examiner"
+       ],
+       "edges": [
+        "bords",
+        "edge",
+        "n",
+        "bord"
+       ],
+       "paper": [
+        "papier",
+        "paper",
+        "n"
+       ],
+       "observed": [
+        "observai",
+        "observe",
+        "v",
+        "observer"
+       ],
+       "chafed": [
+        "éraillés",
+        "chafed",
+        "a"
+       ],
+       "seemed": [
+        "semblait",
+        "seem",
+        "v",
+        "sembler"
+       ],
+       "necessary": [
+        "nécessaire",
+        "necessary",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "They presented the broken appearance which is manifested when a stiff paper, having been once folded and pressed with a folder, is refolded in a reversed direction, in the same creases or edges which had formed the original fold.",
+      "fr": "Ils présentaient cet aspect rompu qui se manifeste lorsqu'un papier raide, après avoir été plié une fois et pressé avec un plioir, est replié en sens inverse, selon les mêmes plis ou arêtes qui avaient formé le pli d'origine.",
+      "g": {
+       "presented": [
+        "présentaient",
+        "present",
+        "v",
+        "présenter"
+       ],
+       "broken": [
+        "rompu",
+        "broken",
+        "a"
+       ],
+       "appearance": [
+        "aspect",
+        "appearance",
+        "n"
+       ],
+       "manifested": [
+        "manifeste",
+        "manifest",
+        "v",
+        "manifester"
+       ],
+       "stiff": [
+        "raide",
+        "stiff",
+        "a"
+       ],
+       "paper": [
+        "papier",
+        "paper",
+        "n"
+       ],
+       "folded": [
+        "plié",
+        "fold",
+        "v",
+        "plier"
+       ],
+       "pressed": [
+        "pressé",
+        "press",
+        "v",
+        "presser"
+       ],
+       "folder": [
+        "plioir",
+        "folder",
+        "n"
+       ],
+       "refolded": [
+        "replié",
+        "refold",
+        "v",
+        "replier"
+       ],
+       "reversed": [
+        "inversé",
+        "reversed",
+        "a"
+       ],
+       "direction": [
+        "sens",
+        "direction",
+        "n"
+       ],
+       "same": [
+        "mêmes",
+        "same",
+        "a"
+       ],
+       "creases": [
+        "plis",
+        "crease",
+        "n",
+        "pli"
+       ],
+       "edges": [
+        "arêtes",
+        "edge",
+        "n",
+        "arête"
+       ],
+       "formed": [
+        "formé",
+        "form",
+        "v",
+        "former"
+       ],
+       "original": [
+        "d'origine",
+        "original",
+        "a"
+       ],
+       "fold": [
+        "pli",
+        "fold",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "This discovery was sufficient.",
+      "fr": "Cette découverte suffisait.",
+      "g": {
+       "discovery": [
+        "découverte",
+        "discovery",
+        "n"
+       ],
+       "sufficient": [
+        "suffisante",
+        "sufficient",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "It was clear to me that the letter had been turned, as a glove, inside out, re-directed, and re-sealed.",
+      "fr": "Il m'apparut clairement que la lettre avait été retournée, comme un gant, de l'intérieur vers l'extérieur, réadressée et recachetée.",
+      "g": {
+       "clear": [
+        "clair",
+        "clear",
+        "a"
+       ],
+       "turned": [
+        "retournée",
+        "turn",
+        "v",
+        "retourner"
+       ],
+       "glove": [
+        "gant",
+        "glove",
+        "n"
+       ],
+       "inside": [
+        "(inside out : à l'envers)",
+        "inside",
+        "d"
+       ],
+       "out": [
+        "(inside out : à l'envers)",
+        "out",
+        "d"
+       ],
+       "re-directed": [
+        "réadressée",
+        "re-direct",
+        "v",
+        "réadresser"
+       ],
+       "re-sealed": [
+        "recachetée",
+        "re-seal",
+        "v",
+        "recacheter"
+       ]
+      }
+     },
+     {
+      "en": "I bade the Minister good morning, and took my departure at once, leaving a gold snuff-box upon the table.",
+      "fr": "Je souhaitai le bonjour au ministre et pris congé aussitôt, laissant une tabatière d'or sur la table.",
+      "g": {
+       "bade": [
+        "souhaitai",
+        "bid",
+        "v",
+        "souhaiter"
+       ],
+       "good": [
+        "(good morning : bonjour)",
+        "good",
+        "a"
+       ],
+       "morning": [
+        "(good morning : bonjour)",
+        "morning",
+        "n"
+       ],
+       "took": [
+        "pris (took departure : pris congé)",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "departure": [
+        "(took my departure : congé)",
+        "departure",
+        "n"
+       ],
+       "at": [
+        "(at once : aussitôt)",
+        "at",
+        "r"
+       ],
+       "once": [
+        "(at once : aussitôt)",
+        "once",
+        "d"
+       ],
+       "leaving": [
+        "laissant",
+        "leave",
+        "v",
+        "laisser"
+       ],
+       "gold": [
+        "d'or",
+        "gold",
+        "a"
+       ],
+       "snuff-box": [
+        "tabatière",
+        "snuff-box",
+        "n"
+       ],
+       "table": [
+        "table",
+        "table",
+        "n"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "“The next morning I called for the snuff-box, when we resumed, quite eagerly, the conversation of the preceding day.",
+      "fr": "« Le lendemain matin je passai prendre la tabatière, et nous reprîmes, avec beaucoup d'entrain, la conversation de la veille.",
+      "g": {
+       "morning": [
+        "matin",
+        "morning",
+        "n"
+       ],
+       "called": [
+        "passai",
+        "call",
+        "v",
+        "passer"
+       ],
+       "for": [
+        "(call for : prendre)",
+        "for",
+        "r"
+       ],
+       "snuff-box": [
+        "tabatière",
+        "snuff-box",
+        "n"
+       ],
+       "resumed": [
+        "reprîmes",
+        "resume",
+        "v",
+        "reprendre"
+       ],
+       "quite": [
+        "très",
+        "quite",
+        "d"
+       ],
+       "eagerly": [
+        "avec entrain",
+        "eagerly",
+        "d"
+       ],
+       "conversation": [
+        "conversation",
+        "conversation",
+        "n"
+       ],
+       "preceding": [
+        "précédent",
+        "preceding",
+        "a"
+       ],
+       "day": [
+        "jour",
+        "day",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "While thus engaged, however, a loud report, as if of a pistol, was heard immediately beneath the windows of the hotel, and was succeeded by a series of fearful screams, and the shoutings of a terrified mob.",
+      "fr": "Pendant que nous y étions occupés, cependant, une forte détonation, comme d'un pistolet, se fit entendre juste sous les fenêtres de l'hôtel, et fut suivie d'une série de cris effrayants et des clameurs d'une foule terrifiée.",
+      "g": {
+       "engaged": [
+        "occupés",
+        "engaged",
+        "a"
+       ],
+       "loud": [
+        "forte",
+        "loud",
+        "a"
+       ],
+       "report": [
+        "détonation",
+        "report",
+        "n"
+       ],
+       "as": [
+        "(as if : comme)",
+        "as",
+        "c"
+       ],
+       "if": [
+        "(as if : comme)",
+        "if",
+        "c"
+       ],
+       "pistol": [
+        "pistolet",
+        "pistol",
+        "n"
+       ],
+       "heard": [
+        "entendue",
+        "hear",
+        "v",
+        "entendre"
+       ],
+       "immediately": [
+        "juste",
+        "immediately",
+        "d"
+       ],
+       "windows": [
+        "fenêtres",
+        "window",
+        "n",
+        "fenêtre"
+       ],
+       "succeeded": [
+        "suivie",
+        "succeed",
+        "v",
+        "suivre"
+       ],
+       "series": [
+        "série",
+        "series",
+        "n"
+       ],
+       "fearful": [
+        "effrayants",
+        "fearful",
+        "a"
+       ],
+       "screams": [
+        "cris",
+        "scream",
+        "n",
+        "cri"
+       ],
+       "shoutings": [
+        "clameurs",
+        "shouting",
+        "n",
+        "clameur"
+       ],
+       "terrified": [
+        "terrifiée",
+        "terrified",
+        "a"
+       ],
+       "mob": [
+        "foule",
+        "mob",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "D — rushed to a casement, threw it open, and looked out.",
+      "fr": "D— se précipita vers une croisée, l'ouvrit à la volée et regarda dehors.",
+      "g": {
+       "rushed": [
+        "se précipita",
+        "rush",
+        "v",
+        "se précipiter"
+       ],
+       "casement": [
+        "croisée",
+        "casement",
+        "n"
+       ],
+       "threw": [
+        "(threw open : ouvrit à la volée)",
+        "throw",
+        "v",
+        "jeter"
+       ],
+       "open": [
+        "(threw open : ouvrit à la volée)",
+        "open",
+        "a"
+       ],
+       "looked": [
+        "regarda",
+        "look",
+        "v",
+        "regarder"
+       ]
+      }
+     },
+     {
+      "en": "In the meantime, I stepped to the card-rack, took the letter, put it in my pocket, and replaced it by a fac-simile, (so far as regards externals,) which I had carefully prepared at my lodgings — imitating the D — cipher, very readily, by means of a seal formed of bread.",
+      "fr": "Pendant ce temps, je m'avançai vers le porte-cartes, pris la lettre, la glissai dans ma poche et la remplaçai par un fac-similé (pour ce qui est de l'extérieur) que j'avais soigneusement préparé à mon logement — imitant le chiffre de D— très aisément, au moyen d'un cachet fait de mie de pain.",
+      "g": {
+       "in": [
+        "(in the meantime : pendant ce temps)",
+        "in",
+        "r"
+       ],
+       "meantime": [
+        "(in the meantime : pendant ce temps)",
+        "meantime",
+        "n"
+       ],
+       "stepped": [
+        "m'avançai",
+        "step",
+        "v",
+        "avancer"
+       ],
+       "card-rack": [
+        "porte-cartes",
+        "card-rack",
+        "n"
+       ],
+       "took": [
+        "pris",
+        "take",
+        "v",
+        "prendre"
+       ],
+       "put": [
+        "glissai",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "in#2": [
+        "dans",
+        "in",
+        "r"
+       ],
+       "pocket": [
+        "poche",
+        "pocket",
+        "n"
+       ],
+       "replaced": [
+        "remplaçai",
+        "replace",
+        "v",
+        "remplacer"
+       ],
+       "fac-simile": [
+        "fac-similé",
+        "fac-simile",
+        "n"
+       ],
+       "so": [
+        "(so far as regards : pour ce qui est de)",
+        "so",
+        "d"
+       ],
+       "far": [
+        "(so far as regards : pour ce qui est de)",
+        "far",
+        "d"
+       ],
+       "as": [
+        "(so far as regards : pour ce qui est de)",
+        "as",
+        "c"
+       ],
+       "regards": [
+        "(so far as regards : pour ce qui est de)",
+        "regard",
+        "v",
+        "concerner"
+       ],
+       "externals": [
+        "l'extérieur",
+        "external",
+        "n",
+        "extérieur"
+       ],
+       "prepared": [
+        "préparé",
+        "prepare",
+        "v",
+        "préparer"
+       ],
+       "carefully": [
+        "soigneusement",
+        "carefully",
+        "d"
+       ],
+       "lodgings": [
+        "logement",
+        "lodging",
+        "n",
+        "logement"
+       ],
+       "imitating": [
+        "imitant",
+        "imitate",
+        "v",
+        "imiter"
+       ],
+       "cipher": [
+        "chiffre",
+        "cipher",
+        "n"
+       ],
+       "readily": [
+        "aisément",
+        "readily",
+        "d"
+       ],
+       "by#2": [
+        "(by means of : au moyen de)",
+        "by",
+        "r"
+       ],
+       "means": [
+        "(by means of : au moyen de)",
+        "means",
+        "n"
+       ],
+       "of": [
+        "(by means of : au moyen de)",
+        "of",
+        "r"
+       ],
+       "of#2": [
+        "de",
+        "of",
+        "r"
+       ],
+       "seal": [
+        "cachet",
+        "seal",
+        "n"
+       ],
+       "formed": [
+        "fait",
+        "form",
+        "v",
+        "former"
+       ],
+       "bread": [
+        "mie de pain",
+        "bread",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“The disturbance in the street had been occasioned by the frantic behavior of a man with a musket.",
+      "fr": "« Le tumulte dans la rue avait été causé par la conduite frénétique d'un homme armé d'un mousquet.",
+      "g": {
+       "man": [
+        "homme",
+        "man",
+        "n"
+       ],
+       "disturbance": [
+        "tumulte",
+        "disturbance",
+        "n"
+       ],
+       "street": [
+        "rue",
+        "street",
+        "n"
+       ],
+       "occasioned": [
+        "causé",
+        "occasion",
+        "v",
+        "causer"
+       ],
+       "frantic": [
+        "frénétique",
+        "frantic",
+        "a"
+       ],
+       "behavior": [
+        "conduite",
+        "behavior",
+        "n"
+       ],
+       "with": [
+        "armé de (with a musket)",
+        "with",
+        "r"
+       ],
+       "musket": [
+        "mousquet",
+        "musket",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He had fired it among a crowd of women and children.",
+      "fr": "Il l'avait déchargé au milieu d'une foule de femmes et d'enfants.",
+      "g": {
+       "fired": [
+        "déchargé",
+        "fire",
+        "v",
+        "tirer"
+       ],
+       "among": [
+        "au milieu de",
+        "among",
+        "r"
+       ],
+       "crowd": [
+        "foule",
+        "crowd",
+        "n"
+       ],
+       "women": [
+        "femmes",
+        "woman",
+        "n",
+        "femme"
+       ],
+       "children": [
+        "enfants",
+        "child",
+        "n",
+        "enfant"
+       ]
+      }
+     },
+     {
+      "en": "It proved, however, to have been without ball, and the fellow was suffered to go his way as a lunatic or a drunkard.",
+      "fr": "Il s'avéra toutefois qu'il n'était pas chargé de balle, et l'on laissa ce type s'en aller comme un fou ou un ivrogne.",
+      "g": {
+       "proved": [
+        "s'avéra",
+        "prove",
+        "v",
+        "prouver"
+       ],
+       "ball": [
+        "balle",
+        "ball",
+        "n"
+       ],
+       "fellow": [
+        "type",
+        "fellow",
+        "n"
+       ],
+       "suffered": [
+        "laissé libre",
+        "suffer",
+        "v",
+        "souffrir"
+       ],
+       "go": [
+        "(go his way : s'en aller)",
+        "go",
+        "v",
+        "aller"
+       ],
+       "way": [
+        "(go his way : s'en aller)",
+        "way",
+        "n"
+       ],
+       "lunatic": [
+        "fou",
+        "lunatic",
+        "n"
+       ],
+       "drunkard": [
+        "ivrogne",
+        "drunkard",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "When he had gone, D — came from the window, whither I had followed him immediately upon securing the object in view.",
+      "fr": "Lorsqu'il fut parti, D— revint de la fenêtre, vers laquelle je l'avais suivi aussitôt après m'être assuré l'objet que j'avais en vue.",
+      "g": {
+       "gone": [
+        "parti",
+        "go",
+        "v",
+        "aller"
+       ],
+       "came": [
+        "revint",
+        "come",
+        "v",
+        "venir"
+       ],
+       "window": [
+        "fenêtre",
+        "window",
+        "n"
+       ],
+       "whither": [
+        "vers laquelle",
+        "whither",
+        "d"
+       ],
+       "followed": [
+        "suivi",
+        "follow",
+        "v",
+        "suivre"
+       ],
+       "immediately": [
+        "aussitôt",
+        "immediately",
+        "d"
+       ],
+       "upon": [
+        "(immediately upon : dès)",
+        "upon",
+        "r"
+       ],
+       "securing": [
+        "m'être assuré",
+        "secure",
+        "v",
+        "s'assurer"
+       ],
+       "object": [
+        "objet",
+        "object",
+        "n"
+       ],
+       "in": [
+        "(in view : en vue)",
+        "in",
+        "r"
+       ],
+       "view": [
+        "(in view : en vue)",
+        "view",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Soon afterwards I bade him farewell.",
+      "fr": "Peu après, je lui fis mes adieux.",
+      "g": {
+       "afterwards": [
+        "après",
+        "afterwards",
+        "d"
+       ],
+       "bade": [
+        "(bade farewell : fis mes adieux)",
+        "bid",
+        "v",
+        "souhaiter"
+       ],
+       "farewell": [
+        "(bade farewell : fis mes adieux)",
+        "farewell",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "The pretended lunatic was a man in my own pay.”",
+      "fr": "Le prétendu fou était un homme à ma solde. »",
+      "g": {
+       "pretended": [
+        "prétendu",
+        "pretended",
+        "a"
+       ],
+       "man": [
+        "homme",
+        "man",
+        "n"
+       ],
+       "lunatic": [
+        "fou",
+        "lunatic",
+        "n"
+       ],
+       "in": [
+        "à (in my pay : à ma solde)",
+        "in",
+        "r"
+       ],
+       "own": [
+        "propre",
+        "own",
+        "a"
+       ],
+       "pay": [
+        "solde",
+        "pay",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“But what purpose had you,” I asked, “in replacing the letter by a fac-simile?",
+      "fr": "« Mais quel but aviez-vous, demandai-je, en remplaçant la lettre par un fac-similé ?",
+      "g": {
+       "what": [
+        "quel",
+        "what",
+        "t"
+       ],
+       "purpose": [
+        "but",
+        "purpose",
+        "n"
+       ],
+       "had": [
+        "aviez",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "asked": [
+        "demandai",
+        "ask",
+        "v",
+        "demander"
+       ],
+       "replacing": [
+        "remplaçant",
+        "replace",
+        "v",
+        "remplacer"
+       ],
+       "fac-simile": [
+        "fac-similé",
+        "fac-simile",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "Would it not have been better, at the first visit, to have seized it openly, and departed?”",
+      "fr": "N'eût-il pas mieux valu, lors de la première visite, la saisir ouvertement et partir ? »",
+      "g": {
+       "better": [
+        "mieux",
+        "good",
+        "a",
+        "bon"
+       ],
+       "at": [
+        "lors de",
+        "at",
+        "r"
+       ],
+       "visit": [
+        "visite",
+        "visit",
+        "n"
+       ],
+       "seized": [
+        "saisi",
+        "seize",
+        "v",
+        "saisir"
+       ],
+       "openly": [
+        "ouvertement",
+        "openly",
+        "d"
+       ],
+       "departed": [
+        "parti",
+        "depart",
+        "v",
+        "partir"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“D — ,” replied Dupin, “is a desperate man, and a man of nerve.",
+      "fr": "« D—, répondit Dupin, est un homme désespéré, et un homme de cran.",
+      "g": {
+       "replied": [
+        "répondit",
+        "reply",
+        "v",
+        "répondre"
+       ],
+       "man": [
+        "homme",
+        "man",
+        "n"
+       ],
+       "desperate": [
+        "prêt à tout",
+        "desperate",
+        "a"
+       ],
+       "nerve": [
+        "cran",
+        "nerve",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "His hotel, too, is not without attendants devoted to his interests.",
+      "fr": "Son hôtel, de plus, ne manque pas de serviteurs dévoués à ses intérêts.",
+      "g": {
+       "too": [
+        "de plus",
+        "too",
+        "d"
+       ],
+       "attendants": [
+        "serviteurs",
+        "attendant",
+        "n",
+        "serviteur"
+       ],
+       "devoted": [
+        "dévoués",
+        "devoted",
+        "a"
+       ],
+       "interests": [
+        "intérêts",
+        "interest",
+        "n",
+        "intérêt"
+       ]
+      }
+     },
+     {
+      "en": "Had I made the wild attempt you suggest, I might never have left the Ministerial presence alive.",
+      "fr": "Si j'avais tenté l'entreprise folle que vous suggérez, je n'aurais peut-être jamais quitté vivant la présence du ministre.",
+      "g": {
+       "had": [
+        "(had I made : si j'avais)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "made": [
+        "tenté (made an attempt : tenté)",
+        "make",
+        "v",
+        "faire"
+       ],
+       "wild": [
+        "folle",
+        "wild",
+        "a"
+       ],
+       "attempt": [
+        "entreprise",
+        "attempt",
+        "n"
+       ],
+       "suggest": [
+        "suggérez",
+        "suggest",
+        "v",
+        "suggérer"
+       ],
+       "left": [
+        "quitté",
+        "leave",
+        "v",
+        "quitter"
+       ],
+       "ministerial": [
+        "du ministre",
+        "ministerial",
+        "a"
+       ],
+       "presence": [
+        "présence",
+        "presence",
+        "n"
+       ],
+       "alive": [
+        "vivant",
+        "alive",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "The good people of Paris might have heard of me no more.",
+      "fr": "Les braves gens de Paris n'auraient plus entendu parler de moi.",
+      "g": {
+       "good": [
+        "braves",
+        "good",
+        "a"
+       ],
+       "people": [
+        "gens",
+        "people",
+        "n"
+       ],
+       "paris": [
+        "Paris",
+        "Paris",
+        "np"
+       ],
+       "heard": [
+        "entendu",
+        "hear",
+        "v",
+        "entendre"
+       ],
+       "no": [
+        "(no more : ne… plus)",
+        "no",
+        "d"
+       ],
+       "more": [
+        "(no more : ne… plus)",
+        "more",
+        "d"
+       ]
+      }
+     },
+     {
+      "en": "But I had an object apart from these considerations.",
+      "fr": "Mais j'avais un objectif distinct de ces considérations.",
+      "g": {
+       "object": [
+        "objectif",
+        "object",
+        "n"
+       ],
+       "apart": [
+        "(apart from : distinct de)",
+        "apart",
+        "d"
+       ],
+       "from": [
+        "(apart from : distinct de)",
+        "from",
+        "r"
+       ],
+       "considerations": [
+        "considérations",
+        "consideration",
+        "n",
+        "considération"
+       ]
+      }
+     },
+     {
+      "en": "You know my political prepossessions.",
+      "fr": "Vous connaissez mes partis pris politiques.",
+      "g": {
+       "know": [
+        "connaissez",
+        "know",
+        "v",
+        "connaître"
+       ],
+       "political": [
+        "politiques",
+        "political",
+        "a"
+       ],
+       "prepossessions": [
+        "partis pris",
+        "prepossession",
+        "n",
+        "prévention"
+       ]
+      }
+     },
+     {
+      "en": "In this matter, I act as a partisan of the lady concerned.",
+      "fr": "Dans cette affaire, j'agis en partisan de la dame concernée.",
+      "g": {
+       "matter": [
+        "affaire",
+        "matter",
+        "n"
+       ],
+       "act": [
+        "agis",
+        "act",
+        "v",
+        "agir"
+       ],
+       "as": [
+        "en",
+        "as",
+        "r"
+       ],
+       "partisan": [
+        "partisan",
+        "partisan",
+        "n"
+       ],
+       "lady": [
+        "dame",
+        "lady",
+        "n"
+       ],
+       "concerned": [
+        "concernée",
+        "concerned",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "For eighteen months the Minister has had her in his power.",
+      "fr": "Depuis dix-huit mois le ministre l'a en son pouvoir.",
+      "g": {
+       "for": [
+        "depuis",
+        "for",
+        "r"
+       ],
+       "eighteen": [
+        "dix-huit",
+        "eighteen",
+        "a"
+       ],
+       "months": [
+        "mois",
+        "month",
+        "n",
+        "mois"
+       ],
+       "had": [
+        "(has had : a eu)",
+        "have",
+        "v",
+        "avoir"
+       ],
+       "her": [
+        "la",
+        "her",
+        "p"
+       ],
+       "power": [
+        "pouvoir",
+        "power",
+        "n"
+       ]
+      }
+     }
+    ]
+   ]
+  },
+  {
+   "p": [
+    [
+     {
+      "en": "She has now him in hers — since, being unaware that the letter is not in his possession, he will proceed with his exactions as if it was.",
+      "fr": "Elle l'a désormais en son pouvoir à elle — puisque, ignorant que la lettre n'est pas en sa possession, il va poursuivre ses exigences comme si elle l'était.",
+      "g": {
+       "hers": [
+        "son pouvoir à elle",
+        "hers",
+        "p"
+       ],
+       "unaware": [
+        "ignorant",
+        "unaware",
+        "a"
+       ],
+       "possession": [
+        "possession",
+        "possession",
+        "n"
+       ],
+       "proceed": [
+        "poursuivre",
+        "proceed",
+        "v"
+       ],
+       "exactions": [
+        "exigences",
+        "exaction",
+        "n",
+        "exaction"
+       ],
+       "as": [
+        "(as if : comme si)",
+        "as",
+        "c"
+       ],
+       "if": [
+        "(as if : comme si)",
+        "if",
+        "c"
+       ]
+      }
+     },
+     {
+      "en": "Thus will he inevitably commit himself, at once, to his political destruction.",
+      "fr": "Ainsi se vouera-t-il inévitablement, d'emblée, à sa propre destruction politique.",
+      "g": {
+       "inevitably": [
+        "inévitablement",
+        "inevitably",
+        "d"
+       ],
+       "commit": [
+        "vouer",
+        "commit",
+        "v",
+        "engager"
+       ],
+       "at": [
+        "(at once : d'emblée)",
+        "at",
+        "r"
+       ],
+       "once": [
+        "(at once : d'emblée)",
+        "once",
+        "d"
+       ],
+       "political": [
+        "politique",
+        "political",
+        "a"
+       ],
+       "destruction": [
+        "ruine",
+        "destruction",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "His downfall, too, will not be more precipitate than awkward.",
+      "fr": "Sa chute, elle aussi, ne sera pas plus précipitée que gauche.",
+      "g": {
+       "downfall": [
+        "chute",
+        "downfall",
+        "n"
+       ],
+       "too": [
+        "elle aussi",
+        "too",
+        "d"
+       ],
+       "precipitate": [
+        "précipitée",
+        "precipitate",
+        "a"
+       ],
+       "awkward": [
+        "gauche",
+        "awkward",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "It is all very well to talk about the facilis descensus Averni; but in all kinds of climbing, as Catalani said of singing, it is far more easy to get up than to come down.",
+      "fr": "C'est bien joli de parler du facilis descensus Averni ; mais dans toutes sortes d'ascensions, comme Catalani le disait du chant, il est bien plus facile de monter que de redescendre.",
+      "g": {
+       "all": [
+        "(all very well : c'est bien joli)",
+        "all",
+        "d"
+       ],
+       "all#2": [
+        "toutes (all kinds)",
+        "all",
+        "t"
+       ],
+       "talk": [
+        "parler",
+        "talk",
+        "v",
+        "parler"
+       ],
+       "facilis": [
+        "facile (latin)",
+        "facilis",
+        "a"
+       ],
+       "descensus": [
+        "descente (latin)",
+        "descensus",
+        "n"
+       ],
+       "averni": [
+        "de l'Averne (latin)",
+        "Avernus",
+        "np"
+       ],
+       "kinds": [
+        "sortes",
+        "kind",
+        "n",
+        "sorte"
+       ],
+       "climbing": [
+        "ascension",
+        "climbing",
+        "n"
+       ],
+       "catalani": [
+        "Catalani (cantatrice)",
+        "Catalani",
+        "np"
+       ],
+       "said": [
+        "disait",
+        "say",
+        "v",
+        "dire"
+       ],
+       "singing": [
+        "chant",
+        "singing",
+        "n"
+       ],
+       "far": [
+        "bien (far more)",
+        "far",
+        "d"
+       ],
+       "easy": [
+        "facile",
+        "easy",
+        "a"
+       ],
+       "get": [
+        "(get up : monter)",
+        "get",
+        "v",
+        "obtenir"
+       ],
+       "up": [
+        "(get up : monter)",
+        "up",
+        "x"
+       ],
+       "come": [
+        "(come down : redescendre)",
+        "come",
+        "v",
+        "venir"
+       ],
+       "down": [
+        "(come down : redescendre)",
+        "down",
+        "x"
+       ]
+      }
+     },
+     {
+      "en": "In the present instance I have no sympathy — at least no pity — for him who descends.",
+      "fr": "Dans le cas présent, je n'ai aucune sympathie — du moins aucune pitié — pour celui qui descend.",
+      "g": {
+       "present": [
+        "présent",
+        "present",
+        "a"
+       ],
+       "instance": [
+        "cas",
+        "instance",
+        "n"
+       ],
+       "no": [
+        "aucune",
+        "no",
+        "t"
+       ],
+       "sympathy": [
+        "sympathie",
+        "sympathy",
+        "n"
+       ],
+       "at": [
+        "(at least : du moins)",
+        "at",
+        "r"
+       ],
+       "least": [
+        "(at least : du moins)",
+        "least",
+        "d"
+       ],
+       "pity": [
+        "pitié",
+        "pity",
+        "n"
+       ],
+       "him": [
+        "celui (him who)",
+        "him",
+        "p"
+       ],
+       "descends": [
+        "descend",
+        "descend",
+        "v",
+        "descendre"
+       ]
+      }
+     },
+     {
+      "en": "He is that monstrum horrendum, an unprincipled man of genius.",
+      "fr": "C'est ce monstrum horrendum, un homme de génie sans principes.",
+      "g": {
+       "man": [
+        "homme",
+        "man",
+        "n"
+       ],
+       "monstrum": [
+        "monstre (latin)",
+        "monstrum",
+        "n"
+       ],
+       "horrendum": [
+        "horrible (latin)",
+        "horrendum",
+        "a"
+       ],
+       "unprincipled": [
+        "sans principes",
+        "unprincipled",
+        "a"
+       ],
+       "genius": [
+        "génie",
+        "genius",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "I confess, however, that I should like very well to know the precise character of his thoughts, when, being defied by her whom the Prefect terms ‘a certain personage’ he is reduced to opening the letter which I left for him in the card-rack.”",
+      "fr": "J'avoue pourtant que je voudrais fort connaître la nature précise de ses pensées, lorsque, bravé par celle que le préfet nomme « un certain personnage », il en sera réduit à ouvrir la lettre que j'ai laissée pour lui dans le porte-cartes. »",
+      "g": {
+       "confess": [
+        "avoue",
+        "confess",
+        "v",
+        "avouer"
+       ],
+       "should": [
+        "(should like : voudrais)",
+        "should",
+        "v",
+        "devoir"
+       ],
+       "like": [
+        "(should like : voudrais)",
+        "like",
+        "v",
+        "aimer"
+       ],
+       "know": [
+        "connaître",
+        "know",
+        "v",
+        "connaître"
+       ],
+       "precise": [
+        "précise",
+        "precise",
+        "a"
+       ],
+       "character": [
+        "nature",
+        "character",
+        "n"
+       ],
+       "thoughts": [
+        "pensées",
+        "thought",
+        "n",
+        "pensée"
+       ],
+       "defied": [
+        "bravé",
+        "defy",
+        "v",
+        "braver"
+       ],
+       "her": [
+        "celle (her whom)",
+        "her",
+        "p"
+       ],
+       "terms": [
+        "nomme",
+        "term",
+        "v",
+        "nommer"
+       ],
+       "certain": [
+        "certain",
+        "certain",
+        "a"
+       ],
+       "personage": [
+        "personnage",
+        "personage",
+        "n"
+       ],
+       "reduced": [
+        "réduit",
+        "reduce",
+        "v",
+        "réduire"
+       ],
+       "opening": [
+        "ouvrir",
+        "open",
+        "v",
+        "ouvrir"
+       ],
+       "left": [
+        "ai laissée",
+        "leave",
+        "v",
+        "laisser"
+       ],
+       "card-rack": [
+        "porte-cartes",
+        "card-rack",
+        "n"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“How? did you put any thing particular in it?”",
+      "fr": "« Comment ? Y avez-vous mis quelque chose de particulier ? »",
+      "g": {
+       "did": [
+        "(question : avez-vous)",
+        "do",
+        "v",
+        "faire"
+       ],
+       "put": [
+        "mis",
+        "put",
+        "v",
+        "mettre"
+       ],
+       "any": [
+        "quelque (any thing)",
+        "any",
+        "t"
+       ],
+       "thing": [
+        "chose",
+        "thing",
+        "n"
+       ],
+       "particular": [
+        "de particulier",
+        "particular",
+        "a"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“Why — it did not seem altogether right to leave the interior blank — that would have been insulting.",
+      "fr": "« Eh bien — il ne me semblait pas tout à fait convenable de laisser l'intérieur en blanc — cela aurait été insultant.",
+      "g": {
+       "why": [
+        "eh bien",
+        "why",
+        "d"
+       ],
+       "did": [
+        "(did not : ne… pas)",
+        "do",
+        "v",
+        "faire"
+       ],
+       "seem": [
+        "sembler",
+        "seem",
+        "v",
+        "sembler"
+       ],
+       "altogether": [
+        "tout à fait",
+        "altogether",
+        "d"
+       ],
+       "right": [
+        "convenable",
+        "right",
+        "a"
+       ],
+       "leave": [
+        "laisser",
+        "leave",
+        "v",
+        "laisser"
+       ],
+       "interior": [
+        "intérieur",
+        "interior",
+        "n"
+       ],
+       "blank": [
+        "en blanc",
+        "blank",
+        "a"
+       ],
+       "insulting": [
+        "insultant",
+        "insulting",
+        "a"
+       ]
+      }
+     },
+     {
+      "en": "D — , at Vienna once, did me an evil turn, which I told him, quite good-humoredly, that I should remember.",
+      "fr": "D—, à Vienne, un jour, m'a joué un mauvais tour, dont je lui dis, tout à fait de bonne humeur, que je m'en souviendrais.",
+      "g": {
+       "vienna": [
+        "Vienne",
+        "Vienna",
+        "np"
+       ],
+       "once": [
+        "un jour",
+        "once",
+        "d"
+       ],
+       "did": [
+        "a joué (did a turn : joua)",
+        "do",
+        "v",
+        "faire"
+       ],
+       "evil": [
+        "mauvais",
+        "evil",
+        "a"
+       ],
+       "turn": [
+        "tour",
+        "turn",
+        "n"
+       ],
+       "told": [
+        "dis",
+        "tell",
+        "v",
+        "dire"
+       ],
+       "quite": [
+        "tout à fait",
+        "quite",
+        "d"
+       ],
+       "good-humoredly": [
+        "de bonne humeur",
+        "good-humoredly",
+        "d"
+       ],
+       "should": [
+        "(that I should remember : que je m'en souviendrais)",
+        "should",
+        "v",
+        "devoir"
+       ],
+       "remember": [
+        "me souviendrais",
+        "remember",
+        "v",
+        "se souvenir"
+       ]
+      }
+     },
+     {
+      "en": "So, as I knew he would feel some curiosity in regard to the identity of the person who had outwitted him, I thought it a pity not to give him a clue.",
+      "fr": "Aussi, sachant qu'il éprouverait quelque curiosité sur l'identité de la personne qui l'avait joué, je trouvai dommage de ne pas lui donner une piste.",
+      "g": {
+       "as": [
+        "puisque",
+        "as",
+        "c"
+       ],
+       "knew": [
+        "savais",
+        "know",
+        "v",
+        "savoir"
+       ],
+       "feel": [
+        "éprouver",
+        "feel",
+        "v",
+        "éprouver"
+       ],
+       "curiosity": [
+        "curiosité",
+        "curiosity",
+        "n"
+       ],
+       "in": [
+        "(in regard to : quant à)",
+        "in",
+        "r"
+       ],
+       "regard": [
+        "(in regard to : quant à)",
+        "regard",
+        "n"
+       ],
+       "to": [
+        "(in regard to : quant à)",
+        "to",
+        "r"
+       ],
+       "to#2": [
+        "de (not to give : de ne pas donner)",
+        "to",
+        "x"
+       ],
+       "identity": [
+        "identité",
+        "identity",
+        "n"
+       ],
+       "person": [
+        "personne",
+        "person",
+        "n"
+       ],
+       "outwitted": [
+        "berné",
+        "outwit",
+        "v",
+        "déjouer"
+       ],
+       "thought": [
+        "trouvai",
+        "think",
+        "v",
+        "penser"
+       ],
+       "pity": [
+        "dommage",
+        "pity",
+        "n"
+       ],
+       "give": [
+        "donner",
+        "give",
+        "v",
+        "donner"
+       ],
+       "clue": [
+        "piste",
+        "clue",
+        "n"
+       ]
+      }
+     },
+     {
+      "en": "He is well acquainted with my MS., and I just copied into the middle of the blank sheet the words —",
+      "fr": "Il connaît bien mon écriture, et je me suis contenté de copier au milieu de la feuille blanche les mots —",
+      "g": {
+       "acquainted": [
+        "familier",
+        "acquainted",
+        "a"
+       ],
+       "with": [
+        "de (acquainted with : familier de)",
+        "with",
+        "r"
+       ],
+       "ms": [
+        "manuscrit (écriture)",
+        "MS",
+        "n"
+       ],
+       "just": [
+        "simplement",
+        "just",
+        "d"
+       ],
+       "copied": [
+        "copié",
+        "copy",
+        "v",
+        "copier"
+       ],
+       "middle": [
+        "milieu",
+        "middle",
+        "n"
+       ],
+       "blank": [
+        "blanche",
+        "blank",
+        "a"
+       ],
+       "sheet": [
+        "feuille",
+        "sheet",
+        "n"
+       ],
+       "words": [
+        "mots",
+        "word",
+        "n",
+        "mot"
+       ]
+      }
+     }
+    ],
+    [
+     {
+      "en": "“‘ — — Un dessein si funeste, S’il n’est digne d’Atree, est digne de Thyeste.",
+      "fr": "« — — Un dessein si funeste, s'il n'est pas digne d'Atrée, est digne de Thyeste.",
+      "g": {
+       "un": [
+        "un",
+        "un",
+        "t"
+       ],
+       "dessein": [
+        "dessein, projet",
+        "dessein",
+        "n"
+       ],
+       "si": [
+        "aussi (si funeste)",
+        "si",
+        "d"
+       ],
+       "funeste": [
+        "funeste, fatal",
+        "funeste",
+        "a"
+       ],
+       "s'il": [
+        "si il",
+        "si",
+        "c"
+       ],
+       "n'est": [
+        "n'est pas",
+        "être",
+        "v",
+        "être"
+       ],
+       "digne": [
+        "digne",
+        "digne",
+        "a"
+       ],
+       "d'atree": [
+        "d'Atrée",
+        "Atrée",
+        "np"
+       ],
+       "est": [
+        "est",
+        "être",
+        "v",
+        "être"
+       ],
+       "de": [
+        "de",
+        "de",
+        "r"
+       ],
+       "thyeste": [
+        "Thyeste",
+        "Thyeste",
+        "np"
+       ]
+      }
+     },
+     {
+      "en": "They are to be found in Crebillon’s ‘Atree.’”",
+      "fr": "On les trouve dans l'Atrée de Crébillon. »",
+      "g": {
+       "are": [
+        "(are to be found : se trouvent)",
+        "be",
+        "v",
+        "être"
+       ],
+       "to": [
+        "(are to be found : se trouvent)",
+        "to",
+        "x"
+       ],
+       "be": [
+        "(are to be found : se trouvent)",
+        "be",
+        "v",
+        "être"
+       ],
+       "found": [
+        "(are to be found : se trouvent)",
+        "find",
+        "v",
+        "trouver"
+       ],
+       "crebillon's": [
+        "de Crébillon",
+        "Crébillon",
+        "np"
+       ],
+       "atree": [
+        "Atrée (tragédie)",
+        "Atrée",
+        "np"
+       ]
+      }
+     }
+    ]
+   ]
+  }
+ ]
+}

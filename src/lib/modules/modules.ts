@@ -314,7 +314,16 @@ const LANGUES: DefModule = {
       titre: "Lire",
       champs: [
         { cle: "lire.titre", libelle: "Titre", defaut: "Lire" },
-        { cle: "lire.chapo", libelle: "Introduction", defaut: "Un livre, un article ou un cours en PDF, mis en page pour la lecture. Touche un mot pour sa traduction, sélectionne un passage pour le traduire en entier.", long: true },
+        { cle: "histoires.titre", libelle: "Titre des histoires", defaut: "Les histoires" },
+        {
+          cle: "histoires.chapo",
+          libelle: "Introduction des histoires",
+          defaut: "{histoires} histoires en anglais, du tout premier niveau (A1) aux grands classiques (C2), soit {pages} pages. Touche un mot : sa traduction s'affiche aussitôt, avec celle de toute la phrase.",
+          long: true,
+          aide: "{histoires} et {pages} sont remplacés par les nombres réels.",
+        },
+        { cle: "lire.pdf", libelle: "Titre de la partie PDF", defaut: "Tes PDF" },
+        { cle: "lire.chapo", libelle: "Introduction des PDF", defaut: "Un livre, un article ou un cours en PDF, mis en page pour la lecture. Touche un mot pour sa traduction, sélectionne un passage pour le traduire en entier.", long: true },
         { cle: "lire.depot", libelle: "Zone de dépôt", defaut: "Choisis ou dépose un PDF" },
         { cle: "lire.vide", libelle: "Aucune lecture", defaut: "Aucune lecture pour l'instant. Un texte un peu en dessous de ton niveau est idéal : tu comprends l'essentiel, et chaque mot nouveau se retient mieux.", long: true },
       ],

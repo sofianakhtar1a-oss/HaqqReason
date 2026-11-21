@@ -4,6 +4,7 @@ const BASES = ["haqqreason-calame", "haqqreason-langues", "haqqreason-transcript
 const CLES = [
   "haqqreason-regles-anglais",
   "haqqreason-regles-suivi",
+  "haqqreason-histoires",
   "hr-favoris",
   "hr-historique",
   "hr-collections",
